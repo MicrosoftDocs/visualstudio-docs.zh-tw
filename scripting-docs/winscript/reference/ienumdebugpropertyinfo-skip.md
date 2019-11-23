@@ -42,6 +42,6 @@ HRESULT Skip(
 ## <a name="return-value"></a>傳回值  
  傳回有效的 `HRESULT`，通常是 `S_OK`。 傳回 `S_FALSE`，並將目前的專案指標設定為列舉的結尾，如果 `celt` 大於列舉值中剩餘的元素數目。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IEnumDebugPropertyInfo 介面](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [DebugPropertyInfo 結構](../../winscript/reference/debugpropertyinfo-structure.md)

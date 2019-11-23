@@ -51,6 +51,6 @@ HRESULT SetName(
   
  呼叫 `IProcessDebugManager::AddApplication` 方法之前，應該先呼叫這個方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

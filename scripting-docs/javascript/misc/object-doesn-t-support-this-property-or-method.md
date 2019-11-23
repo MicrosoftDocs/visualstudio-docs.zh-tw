@@ -24,7 +24,7 @@ ms.locfileid: "72573738"
 # <a name="object-doesnt-support-this-property-or-method"></a>物件不支援此屬性或方法
 您指定此物件沒有的屬性或方法。 並非所有物件都支援所有屬性和方法。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 檢查屬性和方法，確保沒有輸入錯誤。  
   
@@ -32,6 +32,6 @@ ms.locfileid: "72573738"
   
 - 如需詳細資訊，請參閱物件的文件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [物件物件](../../javascript/reference/object-object-javascript.md)   
  [JavaScript 物件](../../javascript/reference/javascript-objects.md)

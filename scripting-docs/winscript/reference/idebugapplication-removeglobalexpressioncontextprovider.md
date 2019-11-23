@@ -47,8 +47,8 @@ HRESULT RemoveGlobalExpressionContextProvider(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- @No__t_0 方法會移除此應用程式中的全域運算式內容提供者。  
+ `RemoveGlobalExpressionContextProvider` 方法會移除此應用程式中的全域運算式內容提供者。  
   
-## <a name="see-also"></a>請參閱  
- [IDebugApplication：： AddGlobalExpressionCoNtextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)    
+## <a name="see-also"></a>另請參閱  
+ [IDebugApplication：： AddGlobalExpressionCoNtextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)   
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)

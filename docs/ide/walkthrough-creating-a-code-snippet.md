@@ -26,7 +26,7 @@ ms.locfileid: "72647101"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>逐步解說：建立程式碼片段
 
-只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您可以選擇性地運用取代參數和專案參考。 使用 [程式碼片段管理員] ([工具] > [程式碼片段管理員]) 上的 [匯入] 按鈕，將程式碼片段匯入至您的 Visual Studio 安裝。
+只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您可以選擇性地運用取代參數和專案參考。 使用 [程式碼片段管理員] ([工具] **[程式碼片段管理員]**  > ) 上的 [匯入] 按鈕，將程式碼片段匯入至您的 Visual Studio 安裝。
 
 ## <a name="snippet-template"></a>程式碼片段範本
 
@@ -57,7 +57,7 @@ ms.locfileid: "72647101"
 3. 在 **Code** 元素的 **Languages** 屬性中，填入程式碼片段的語言。 針對 C#，請使用 **CSharp**，針對 Visual Basic 則請使用 **VB**。
 
    > [!TIP]
-   > 若要查看所有可用的語言值，請瀏覽[程式碼片段結構描述參考](code-snippets-schema-reference.md)頁面上的[程式碼元素屬性區段](code-snippets-schema-reference.md#attributes)。
+   > 若要查看所有可用的語言值，請瀏覽[程式碼片段結構描述參考](code-snippets-schema-reference.md#attributes)頁面上的[程式碼元素屬性區段](code-snippets-schema-reference.md)。
 
 4. 在 **Code** 元素的 **CDATA** 區段中新增程式碼片段。
 
@@ -166,7 +166,7 @@ ms.locfileid: "72647101"
 
 您可能會想要讓使用者取代部分的程式碼片段。 例如，您可能會想要讓使用者以其目前專案中的變數名稱，來取代現有的變數名稱。 您可以提供兩種類型的取代：常值和物件。 使用 [Literal 元素](code-snippets-schema-reference.md#literal-element)來識別整個包含在程式碼片段中，但可能會在插入程式碼後加以自訂之一小段程式碼的取代項目 (例如字串或數字值)。 使用 [Object 元素](code-snippets-schema-reference.md#object-element)來識別程式碼片段所需，但很可能是在程式碼片段本身之外定義的項目 (例如物件執行個體或控制項)。
 
-1. 若要讓使用者輕鬆取代數字以計算平方根，請修改 *SquareRoot.snippet* 檔案的 **Snippet** 元素，如下所示：
+1. 若要讓使用者輕鬆取代數字以計算平方根，請修改 **SquareRoot.snippet** 檔案的 *Snippet* 元素，如下所示：
 
    ```xml
    <Snippet>
@@ -202,7 +202,7 @@ ms.locfileid: "72647101"
 
 ## <a name="import-a-namespace"></a>匯入命名空間
 
-您可以透過包含 [Imports 元素](code-snippets-schema-reference.md#imports-element)來使用程式碼片段加入 `using` 指示詞 (C#) 或 `Imports` 陳述式 (Visual Basic)。 針對 .NET Framework 專案，您也可以使用 [References 元素](code-snippets-schema-reference.md#references-element)來將參考加入專案。
+您可以透過包含 `using`Imports 元素`Imports`來使用程式碼片段加入 [ 指示詞 (C#) 或 ](code-snippets-schema-reference.md#imports-element) 陳述式 (Visual Basic)。 針對 .NET Framework 專案，您也可以使用 [References 元素](code-snippets-schema-reference.md#references-element)來將參考加入專案。
 
 下列 XML 顯示的程式碼片段會使用 System.IO 命名空間中的 `File.Exists` 方法，因此會定義 **Imports** 元素來匯入 System.IO 命名空間。
 
@@ -228,6 +228,6 @@ ms.locfileid: "72647101"
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)

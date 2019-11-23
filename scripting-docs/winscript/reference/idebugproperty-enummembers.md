@@ -46,7 +46,7 @@ HRESULT EnumMembers (
  在用來解讀任何數值資訊的基數。  
   
  `refiid`  
- 在傳遞這個 IID 來篩選列舉值。 IID 是繼承自 `IDebugPropertyEnumType_All` 的其中一個 `IDebugPropertyEnumType` 介面。  
+ 在傳遞這個 IID 來篩選列舉值。 IID 是繼承自 `IDebugPropertyEnumType_All`的其中一個 `IDebugPropertyEnumType` 介面。  
   
  `ppEnum`  
  脫銷傳回列舉成員屬性的 `IEnumDebugPropertyInfo` 介面。  
@@ -54,8 +54,8 @@ HRESULT EnumMembers (
 ## <a name="return-value"></a>傳回值  
  傳回有效的 `HRESULT`，通常是 `S_OK`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
  [IDebugPropertyEnumType_All 介面](../../winscript/reference/idebugpropertyenumtype-all-interface.md)   
  [IEnumDebugPropertyInfo 介面](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

@@ -61,6 +61,6 @@ HRESULT SynchronousCallIntoThread(
 ## <a name="remarks"></a>備註  
  這個方法會提供一個機制，讓呼叫者在偵錯工具執行緒中執行程式碼。 語言引擎和主機通常會使用這個方法，在其單一執行緒的上執行無限制執行緒的物件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugApplicationThread 介面](../../winscript/reference/idebugapplicationthread-interface.md)   
  [IDebugThreadCall 介面](../../winscript/reference/idebugthreadcall-interface.md)

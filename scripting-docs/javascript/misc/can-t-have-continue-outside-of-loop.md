@@ -32,7 +32,7 @@ ms.locfileid: "72572375"
   
 - **for/in**迴圈。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 請確定**continue**語句出現在的主體內：  
   
@@ -44,7 +44,7 @@ ms.locfileid: "72572375"
 
   - **for/in**迴圈。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Continue 語句](../../javascript/reference/continue-statement-javascript.md)   
  [控制程式流程](../../javascript/controlling-program-flow-javascript.md)   
  [指令碼疑難排解](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

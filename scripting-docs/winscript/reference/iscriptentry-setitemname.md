@@ -52,6 +52,6 @@ HRESULT SetItemName(
   
  若為 `IScriptScriptlet` 物件（衍生自 `IScriptEntry`），這個方法會傳回 `E_FAIL`。 針對 `IScriptScriptlet` 物件，專案名稱是由[IActiveScriptAuthor：： AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)所設定，而且無法變更。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)

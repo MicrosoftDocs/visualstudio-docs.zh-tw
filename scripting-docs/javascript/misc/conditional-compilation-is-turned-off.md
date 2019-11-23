@@ -28,7 +28,7 @@ ms.locfileid: "72572936"
 /*@cc_on @*/  
 ```  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 將下列語句新增至條件式程式碼的開頭：  
   
@@ -36,7 +36,7 @@ ms.locfileid: "72572936"
     /*@cc_on @*/  
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [條件式編譯](../../javascript/advanced/conditional-compilation-javascript.md)   
  [條件式編譯變數](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
  [@cc_on 語句](../../javascript/reference/at-cc-on-statement-javascript.md)   

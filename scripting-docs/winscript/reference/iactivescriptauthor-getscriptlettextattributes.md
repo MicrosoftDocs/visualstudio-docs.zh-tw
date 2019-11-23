@@ -41,10 +41,10 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>參數  
  `pszCode`  
- [in，size_is （`cch`）]程式碼片段文字。 這個字串不一定要終止 null。  
+ [in、size_is （`cch`）]程式碼片段文字。 這個字串不一定要終止 null。  
   
  `cch`  
- 在@No__t_0 和 `pattr` 參數所使用的大小。  
+ 在`pszCode` 和 `pattr` 參數所使用的大小。  
   
  `pszDelimiter`  
  在程式碼片段後端分隔符號的位址。 從文字的資料流程剖析 `pszCode` 時，主機通常會使用分隔符號（例如兩個單引號）來偵測程式碼片段的結尾。 如果沒有使用分隔符號來識別程式碼片段的結尾，請將此參數設定為 Null。  
@@ -70,7 +70,7 @@ HRESULT GetScriptletTextAttributes(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)   
- [IActiveScriptAuthor：： GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)    
+ [IActiveScriptAuthor：： GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)   
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

@@ -24,10 +24,10 @@ ms.locfileid: "72576530"
 # <a name="expected-"></a>必須是 ']'
 您已對陣列元素進行參考，但未包含右括弧。 參考陣列元素的任何運算式都必須同時包含左右括弧。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 在參考陣列元素的運算式中加入右括弧。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用陣列](../../javascript/advanced/using-arrays-javascript.md)   
  [Array 物件](../../javascript/reference/array-object-javascript.md)

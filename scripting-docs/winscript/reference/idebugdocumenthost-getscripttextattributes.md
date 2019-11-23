@@ -72,6 +72,6 @@ HRESULT GetScriptTextAttributes(
 ## <a name="remarks"></a>備註  
  這個方法會傳回檔文字任意區塊的文字屬性。 主機可以接受 `E_NOTIMPL`，在此情況下會使用預設屬性。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHost 介面](../../winscript/reference/idebugdocumenthost-interface.md)   
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

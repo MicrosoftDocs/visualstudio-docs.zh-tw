@@ -65,6 +65,6 @@ HRESULT GetText(
 ## <a name="remarks"></a>備註  
  這個方法會抓取字元和（或）與字元位置範圍相關聯的字元屬性。 字元位置範圍是由字元位置和數個字元所指定。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)   
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

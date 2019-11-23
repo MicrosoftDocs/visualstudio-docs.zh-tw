@@ -42,8 +42,8 @@ ms.locfileid: "71481959"
 |*|星號，在項目的 Include/Exclude 區段中描述檔案規格時為萬用字元。|
 
 > [!NOTE]
-> 在某些情況下，您可能需要將雙引號（"）字元（例如在 @no__t 0 工作內使用時）加以轉義。
+> 在某些情況下，您可能需要將雙引號（"）字元（例如在 `Exec` 工作內使用時）換用。
 
 ## <a name="see-also"></a>另請參閱
-- [如何：在 MSBuild 中逸出特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)
+- [如何：在 MSBuild 中轉義特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

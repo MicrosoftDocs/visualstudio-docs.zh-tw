@@ -24,10 +24,10 @@ ms.locfileid: "72573423"
 # <a name="expected-"></a>必須是 ':'
 您嘗試使用三元條件運算子建立運算式，但未在第二個和第三個運算元之間包含冒號。 三元（三個運算元）條件運算子需要第二個（true）和第三個（false）運算元之間的冒號。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 在第二個和第三個運算元之間插入冒號。  
   
-## <a name="see-also"></a>請參閱  
- [條件（三元）運算子（？:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)    
+## <a name="see-also"></a>另請參閱  
+ [條件（三元）運算子（？:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
  [運算子](../../javascript/operators-javascript.md)

@@ -49,6 +49,6 @@ HRESULT SetBreakPoint(
 ## <a name="remarks"></a>備註  
  這個方法會在此程式碼內容中設定或清除中斷點。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugCodeCoNtext 介面](../../winscript/reference/idebugcodecontext-interface.md)   
  [BREAKPOINT_STATE 列舉](../../winscript/reference/breakpoint-state-enumeration.md)

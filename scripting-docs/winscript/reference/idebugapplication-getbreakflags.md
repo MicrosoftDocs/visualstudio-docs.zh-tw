@@ -53,6 +53,6 @@ HRESULT GetBreakFlags(
 ## <a name="remarks"></a>備註  
  這個方法會傳回應用程式目前的中斷旗標。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [APPBREAKFLAGS 列舉](../../winscript/reference/appbreakflags-enumeration.md)

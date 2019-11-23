@@ -53,14 +53,14 @@ HRESULT GetStatEx(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_NOTIMPL`|未執行方法。|  
+|`E_NOTIMPL`|此方法尚未實作。|  
   
 ## <a name="remarks"></a>備註  
  這個方法可讓自訂腳本引擎傳回對自訂主機有意義的統計資料。  
   
 > [!NOTE]
-> 這個方法目前未執行。  
+> 這個方法目前尚未實作。  
   
-## <a name="see-also"></a>請參閱  
- [IActiveScriptStats：： GetStat](../../winscript/reference/iactivescriptstats-getstat.md)    
+## <a name="see-also"></a>另請參閱  
+ [IActiveScriptStats：： GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
  [IActiveScriptStats 介面](../../winscript/reference/iactivescriptstats-interface.md)

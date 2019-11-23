@@ -30,10 +30,10 @@ new VBArray(safeArray);
   
  VBArray 是唯讀的，而且無法直接建立。 SafeArray 引數是 VBArray 值，必須先取得 VBArray 值，才能傳遞給 `VBArray` 的函式。 您只能從現有的 ActiveX 或其他物件中擷取此值，來達到這個目的。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 請確定您只將**VBArray**物件傳遞至**VBArray**的函式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VBArray 物件](../../javascript/reference/vbarray-object-javascript.md)   
  [使用陣列](../../javascript/advanced/using-arrays-javascript.md)

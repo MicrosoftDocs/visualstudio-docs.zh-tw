@@ -33,6 +33,6 @@ interface IActiveScriptProfilerCallback3 : IActiveScriptProfilerCallback2
 |------------|-----------------|  
 |[IActiveScriptProfilerCallback3::SetWebWorkerId 方法](../../winscript/reference/iactivescriptprofilercallback3-setwebworkerid-method.md)|通知分析工具有關此程式碼剖析會話所使用的背景工作識別碼。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptProfilerCallback 介面](../../winscript/reference/iactivescriptprofilercallback-interface.md)   
  [IActiveScriptProfilerCallback2 介面](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

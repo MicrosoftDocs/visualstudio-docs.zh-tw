@@ -45,7 +45,7 @@ WCF 程式庫的調試與調試類別庫類似。 如需詳細資訊，請參閱
 
 ## <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a>DLL 的 debug 設定
 
-當您使用 Visual Studio 專案範本建立應用程式時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動為 [Debug] 和 [發行] 組建設定建立必要的設定。 您可以視需要變更這些設定。 如需詳細資訊，請參閱下列文章：
+當您使用 Visual Studio 專案範本來建立應用程式時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動建立 [Debug] 和 [發行] 組建設定所需的設定。 您可以視需要變更這些設定。 如需詳細資訊，請參閱下列文章：
 
 - [C++ 偵錯設定的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [C# 偵錯設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)
@@ -60,13 +60,13 @@ WCF 程式庫的調試與調試類別庫類似。 如需詳細資訊，請參閱
 
 1. 在方案總管C++中選取 DLL專案，並選取 [**屬性**] 圖示，或以滑鼠右鍵按一下專案，然後選取 [**屬性**]。
 
-1. 在 [**屬性**] 窗格的 [**連結器**@no__t **-2] 下，針對**[可**調試元件**] 選取 **[是（/ASSEMBLYDEBUG）]** 。
+1. 在 [**屬性**] 窗格的 [**連結器** > ]**底下，針對**[可**調試元件**] 選取 **[是（/ASSEMBLYDEBUG）]** 。
 
 如需詳細資訊，請參閱[/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)。
 
 ### <a name="vxtskdebuggingdllprojectsexternal"></a>設定 C/C++ DLL 檔案位置
 
-若要對外部 DLL 進行偵錯工具，呼叫專案必須能夠找到 DLL、其[.pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)檔，以及 dll 所需的任何其他檔案。 您可以建立自訂群組建工作，將這些檔案複製到您*的 @no__t 1project 資料夾 > \Debug*輸出檔案夾，也可以手動複製檔案。
+若要對外部 DLL 進行偵錯工具，呼叫專案必須能夠找到 DLL、其[.pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)檔，以及 dll 所需的任何其他檔案。 您可以建立自訂群組建工作，將這些檔案複製到您的 *\<專案資料夾 > \Debug*輸出檔案夾，也可以手動複製檔案。
 
 針對 C/C++ projects，您可以在專案屬性頁中設定標頭和 LIB 檔案位置，而不是將它們複製到輸出檔案夾。
 
@@ -76,11 +76,11 @@ WCF 程式庫的調試與調試類別庫類似。 如需詳細資訊，請參閱
 
 1. 在 [**屬性**] 窗格頂端的 [設定]**底下，選取**[**所有**設定]。
 
-1. 在 [ **CC++/**  > **一般** >  個**額外的 Include 目錄**] 底下，指定具有標頭檔的資料夾。
+1. 在 [ **CC++ /**  > **一般** > **其他 Include 目錄**] 底下，指定具有標頭檔的資料夾。
 
-1. 在 **[** **連結器** >  一般  >  個**其他程式庫目錄**] 中，指定具有 LIB 檔案的資料夾。
+1. 在 [**連結器**] >  **[一般** > **其他程式庫] 目錄**中，指定具有 LIB 檔案的資料夾。
 
-1. 在 [**連結器** > **輸入** >  個其他相依性 **]** 底下，指定 LIB 檔案的完整路徑和檔案名。
+1. 在 [**連結器** > **輸入** > 其他相依性 **]** 底下，指定 LIB 檔案的完整路徑和檔案名。
 
 1. 選取 [確定]。
 
@@ -90,7 +90,7 @@ WCF 程式庫的調試與調試類別庫類似。 如需詳細資訊，請參閱
 
 開始進行調試之前，請務必先建立 DLL 的調試版本。 若要對 DLL 進行 debug 錯，呼叫應用程式必須能夠找到其[.pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)檔案和 DLL 所需的任何其他檔案。
 
-您可以建立自訂群組建工作，將 DLL 檔案複製到您的 *@no__t 1calling 專案資料夾 > \Debug*輸出檔案夾，也可以手動複製檔案。
+您可以建立自訂群組建工作，將 DLL 檔案複製到 *\<呼叫專案資料夾 > \Debug*輸出檔案夾，或者您可以手動複製檔案。
 
 請務必在正確的位置呼叫 DLL。 這看起來似乎很明顯，但如果呼叫應用程式找到並載入不同的 DLL 複本，偵錯工具將永遠不會叫用您所設定的中斷點。
 
@@ -106,14 +106,14 @@ WCF 程式庫的調試與調試類別庫類似。 如需詳細資訊，請參閱
 
 呼叫 DLL 的應用程式可以是：
 
-- 從 DLL 的相同或不同方案中的 @no__t 0 專案所產生的應用程式。
+- 從 DLL 的相同或不同方案中的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案所產生的應用程式。
 - 已在測試或實際執行電腦上部署並執行的現有應用程式。
 - 位於 Web 上並經由 URL 存取。
 - 具有內嵌 DLL 之網頁的 web 應用程式。
 
 若要從呼叫應用程式中進行 DLL 的偵錯工具，您可以：
 
-- 開啟呼叫應用程式的專案，然後選取 [ **Debug** > ] [**開始**進行偵錯工具] 或按**F5**開始進行調試。
+- 開啟呼叫應用程式的專案，然後選取 [ **Debug** > **開始進行調試**程式] 或按**F5**開始進行偵錯工具。
 
   或
 
@@ -130,9 +130,9 @@ WCF 程式庫的調試與調試類別庫類似。 如需詳細資訊，請參閱
 >[!NOTE]
 >您**可以在設計階段使用 [即時**運算] 視窗，並搭配大部分的專案類型。 SQL、Web 專案或腳本不支援。
 
-例如，若要在類別 `Class1` 中測試名為 `Test` 的方法：
+例如，若要在類別 `Class1`中測試名為 `Test` 的方法：
 
-1. 開啟 DLL 專案後，選取 [Debug **] @no__t** -2 **Windows** >  [**立即**] 或按**Ctrl**+**Alt**+**I**，開啟 [即時運算] 視窗。
+1. 開啟 DLL 專案後，選取 [Debug **] > ** **Windows** >  [**立即**] 或按**Ctrl**+**Alt**+**I**，開啟 [即時運算] 視窗。
 
 1. 在 [即時運算] 視窗中輸入下列C#程式碼，然後按**enter**，將類型 `Class1` 的物件具現化。 此 managed 程式碼適用C#于和 Visual Basic，並具有適當的語法變更：
 
@@ -160,7 +160,7 @@ WCF 程式庫的調試與調試類別庫類似。 如需詳細資訊，請參閱
 
 您也可以從 managed 呼叫專案中，對原生 DLL 進行調試。 如需詳細資訊，請參閱[如何對 managed 和機器碼進行調試](how-to-debug-managed-and-native-code.md)程式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [對 Managed 程式碼進行偵錯](../debugger/debugging-managed-code.md)
 - [準備 debug C++專案](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [C#, F#, and Visual Basic project types](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md) (C#、F# 和 Visual Basic 專案類型)

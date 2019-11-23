@@ -61,7 +61,7 @@ HRESULT AddTypeLib(
 ## <a name="remarks"></a>備註  
  這個方法會呼叫 `LoadTypeLib` 來載入類型程式庫。 成功時，這個方法會呼叫 `IActiveScriptAuthor::AddNamedItem` 來加入型別資訊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)   
- [IActiveScriptAuthor：： AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)    
+ [IActiveScriptAuthor：： AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
  [LoadTypeLib](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

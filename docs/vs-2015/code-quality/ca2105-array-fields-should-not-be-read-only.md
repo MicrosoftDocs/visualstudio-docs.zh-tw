@@ -29,21 +29,21 @@ ms.locfileid: "72666018"
 |-|-|
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
 |CheckId|CA2105|
-|Category|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
  持有陣列的公用或受保護欄位會宣告為唯讀。
 
 ## <a name="rule-description"></a>規則描述
- 當您將 `readonly` （在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中 `ReadOnly`）修飾詞套用至包含陣列的欄位時，無法將欄位變更為參考不同的陣列。 但是，儲存在唯讀欄位的陣列元素則可以變更。 根據可公開存取之唯讀陣列的元素，做出決策或執行作業的程式碼，可能會包含易受攻擊的安全性弱點。
+ 當您將 `readonly` （在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]中`ReadOnly`）修飾詞套用至包含陣列的欄位時，無法將欄位變更為參考不同的陣列。 但是，儲存在唯讀欄位的陣列元素則可以變更。 根據可公開存取之唯讀陣列的元素，做出決策或執行作業的程式碼，可能會包含易受攻擊的安全性弱點。
 
  請注意，具有公用欄位也會違反設計規則[CA1051：不要宣告可見的實例欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則所識別的安全性弱點，請勿依賴可公開存取之唯讀陣列的內容。 強烈建議您使用下列其中一個程式：
 
-- 將陣列取代為無法變更的強型別集合。 如需詳細資訊，請參閱<xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>。
+- 將陣列取代為無法變更的強型別集合。 如需詳細資訊，請參閱 <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>。
 
 - 將公用欄位取代為傳回私用陣列複本的方法。 因為您的程式碼不依賴複製，所以如果修改元素，就不會有任何危險。
 
@@ -53,7 +53,7 @@ ms.locfileid: "72666018"
  強烈建議您不要排除此規則的警告。 幾乎不會發生任何情況，因為唯讀欄位的內容並不重要。 如果您的案例是這種情況，請移除 `readonly` 修飾詞，而不要排除訊息。
 
 ## <a name="example"></a>範例
- 這個範例會示範違反此規則的危險。 第一個部分顯示類型為 `MyClassWithReadOnlyArrayField` 的範例程式庫，其中包含兩個不安全的欄位（`grades` 和 `privateGrades`）。 欄位 `grades` 是公用的，因此容易受到任何呼叫者的影響。 欄位 `privateGrades` 是私用的，但仍受到弱點的影響，因為 `GetPrivateGrades` 方法會將它傳回給呼叫者。 @No__t_1 方法會以安全的方式公開 [`securePrivateGrades`] 欄位。 它會宣告為私用，以遵循良好的設計實務。 第二個部分所顯示的程式碼會變更儲存在 `grades` 和 `privateGrades` 成員中的值。
+ 這個範例會示範違反此規則的危險。 第一個部分顯示的範例程式庫具有類型 `MyClassWithReadOnlyArrayField`，其中包含兩個不安全的欄位（`grades` 和 `privateGrades`）。 `grades` 的欄位是公用的，因此很容易受到任何呼叫者的影響。 `privateGrades` 的欄位是私用的，但仍有弱點，因為 `GetPrivateGrades` 方法會將它傳回給呼叫者。 `GetSecurePrivateGrades` 方法會以安全的方式公開 [`securePrivateGrades`] 欄位。 它會宣告為私用，以遵循良好的設計實務。 第二個部分所顯示的程式碼會變更儲存在 `grades` 和 `privateGrades` 成員中的值。
 
  範例類別庫會出現在下列範例中。
 
@@ -66,7 +66,7 @@ ms.locfileid: "72666018"
 
  此範例的輸出為：
 
- **在進行篡改之前：90、90、90私用成績：90、90、90安全等級、90、90、90** 
+ **在進行篡改之前：90、90、90私用成績：90、90、90安全等級、90、90、90**
 **在篡改之後：成績：90、555、90私用成績：90、555、90安全等級、90、90、90**
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

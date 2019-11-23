@@ -55,6 +55,6 @@ enum {
  EX_DBGPROP_INFO_DEBUGEXTPROP  
  初始化包含 `IDebugExtendedProperty` 介面的 `pDebugExtProp` 欄位。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ExtendedDebugPropertyInfo 結構](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   
  [IDebugExtendedProperty 介面](../../winscript/reference/idebugextendedproperty-interface.md)

@@ -52,6 +52,6 @@ HRESULT GetDescription(
 > [!NOTE]
 > 這個方法尚未實作。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDispError 介面](../../winscript/reference/idisperror-interface.md)   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

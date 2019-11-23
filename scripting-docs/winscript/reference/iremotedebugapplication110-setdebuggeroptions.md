@@ -37,8 +37,8 @@ HRESULT SetDebuggerOptions(        [in] enum SCRIPT_DEBUGGER_OPTIONS mask,      
  [SCRIPT_DEBUGGER_OPTIONS 列舉](../../winscript/reference/script-debugger-options-enumeration.md)遮罩。  
   
  `value`  
- [SCRIPT_DEBUGGER_OPTIONS 列舉](../../winscript/reference/script-debugger-options-enumeration.md)值。  
+ [SCRIPT_DEBUGGER_OPTIONS 的列舉](../../winscript/reference/script-debugger-options-enumeration.md)值。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IRemoteDebugApplication 介面](../../winscript/reference/iremotedebugapplication-interface.md)   
  [IRemoteDebugApplication110 介面](../../winscript/reference/iremotedebugapplication110-interface.md)

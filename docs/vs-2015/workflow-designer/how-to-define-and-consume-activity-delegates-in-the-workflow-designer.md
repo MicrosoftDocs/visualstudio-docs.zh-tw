@@ -17,27 +17,27 @@ ms.lasthandoff: 10/19/2019
 ms.locfileid: "72603860"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>HOW TO：定義並取用工作流程設計工具中的活動委派
-[!INCLUDE[net_v45](../includes/net-v45-md.md)] 包含用於 <xref:System.Activities.Statements.InvokeDelegate> 活動的全新設計工具。 這個設計工具可用來將委派指派給衍生自 <xref:System.Activities.ActivityDelegate> 的活動，例如 <xref:System.Activities.ActivityAction> 或 <xref:System.Activities.ActivityFunc%601>。
+[!INCLUDE[net_v45](../includes/net-v45-md.md)] 包含新的 <xref:System.Activities.Statements.InvokeDelegate> 活動設計工具。 這個設計工具可用來將委派指派給衍生自 <xref:System.Activities.ActivityDelegate> 的活動，例如 <xref:System.Activities.ActivityAction> 或 <xref:System.Activities.ActivityFunc%601>。
 
 ### <a name="define-an-activity-delegate"></a>定義活動委派
 
-1. 在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 中，**選取 [** 檔案]、[**新增**]、[**專案**]。 選取左側的 [**工作流程**] 節點，以及右側的 [**工作流程主控台應用程式**] 範本。 將專案命名為（如有需要），然後按一下 **[確定]** 。
+1. 在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]中，**選取 [** 檔案]、[**新增**]、[**專案**]。 選取左側的 [**工作流程**] 節點，以及右側的 [**工作流程主控台應用程式**] 範本。 將專案命名為（如有需要），然後按一下 **[確定]** 。
 
 2. 以滑鼠右鍵按一下**方案總管**中的專案，然後選取 [**加入**]、[**新增專案**]。 選取左側的 [**工作流程**] 節點，以及右側的 [**活動**] 範本。 將新活動命名為**MyForEach** ，然後按一下 **[確定]** 。 活動會在工作流程設計工具中開啟。
 
 3. 在工作流程設計工具中，按一下 [**引數**] 索引標籤。
 
-4. 按一下 [**建立引數**]。 將新引數命名為**Items**。
+4. 按一下 **[建立引數]** 。 將新引數命名為**Items**。
 
 5. 在 [**引數類型**] 資料行中，選取 **[T] 的陣列**。
 
-6. 在 [類型瀏覽器] 中，選取 [**物件**]。 按一下 **[確定]** 。
+6. 在 [類型瀏覽器] 中，選取 [**物件**]。 按一下 [確定]。
 
 7. 再次按一下 [**建立引數**]。 將新的引數命名為**主體**。 在新引數的 [**方向**] 資料行中，選取 [**屬性**]。
 
 8. 在 [引數類型] 資料行中，選取 **[流覽類型]** 。
 
-9. 在類型瀏覽器的 [**類型名稱**] 欄位中，輸入**ActivityAction** 。 在樹狀檢視中選取 [ **ActivityAction \<T >** ]。 在出現的下拉式清單中選取 **物件**，將  **ActivityAction \<Object >** 的類型指派給引數。
+9. 在類型瀏覽器的 [**類型名稱**] 欄位中，輸入**ActivityAction** 。 在樹狀檢視中選取**ActivityAction\<t >** 。 在出現的下拉式清單中選取 [**物件**]，將 [ActivityAction] 類型 **\<物件 >** 指派給引數。
 
 10. 從 [工具箱] 的 [**控制流程**] 區段，將 [<xref:System.Activities.Statements.While>] 活動拖曳至設計工具介面。
 
@@ -79,5 +79,5 @@ ms.locfileid: "72603860"
 
    當執行工作流程時，主控台將顯示以下資訊：
 
-   **1** 
+   **1**
    **abc**

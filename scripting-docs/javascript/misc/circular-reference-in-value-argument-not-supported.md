@@ -23,14 +23,14 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572344"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>不支援數值引數中的循環參考
-嘗試使用不正確值叫用 `JSON.stringify`。 @No__t_0 引數、陣列或物件，都包含迴圈參考。  
+嘗試使用不正確值叫用 `JSON.stringify`。 `value` 引數、陣列或物件，都包含迴圈參考。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 從引數中移除迴圈參考。  
   
 ## <a name="example"></a>範例  
- 此範例中的程式碼會造成執行階段錯誤，因為 `john` 具有 `mary` 的參考，而且 `mary` 具有 `john` 的參考。 若要移除迴圈參考，請從 `mary` 物件或 `john` 物件的 `sister` 屬性，移除或取消設定屬性 `brother`。  
+ 此範例中的程式碼會造成執行階段錯誤，因為 `john` 具有 `mary` 的參考，而且 `mary` 具有 `john`的參考。 若要移除迴圈參考，請從 `mary` 物件或 `john` 物件的 `sister` 屬性，移除或取消設定屬性 `brother`。  
   
 ```JavaScript  
 var john = new Object();  
@@ -42,7 +42,7 @@ mary.brother = john;
 var error = JSON.stringify(john);  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [JSON 物件](../../javascript/reference/json-object-javascript.md)   
- [JSON. parse](../../javascript/reference/json-parse-function-javascript.md)函式    
+ [JSON. parse](../../javascript/reference/json-parse-function-javascript.md)函式   
  [JavaScript 執行階段錯誤](../../javascript/reference/javascript-run-time-errors.md)

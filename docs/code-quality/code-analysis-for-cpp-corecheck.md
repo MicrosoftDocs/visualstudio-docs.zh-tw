@@ -28,17 +28,17 @@ ms.locfileid: "72745957"
 
 [C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)傳回已設定範圍的物件，而不是堆積配置（如果它有移動函數）。 請參閱[ C++核心指導方針 R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
 
-[C26403 RESET_OR_DELETE_OWNER](C26403.md)@No__t_1T > 指標 '% variable% ' 重設或明確刪除擁有者。 請參閱[ C++核心指導方針 R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
+[C26403 RESET_OR_DELETE_OWNER](C26403.md)重設或明確刪除擁有者\<T > 指標 '% variable% '。 請參閱[ C++核心指導方針 R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
 
-[C26404 DONT_DELETE_INVALID](C26404.md)請勿刪除可能處於無效狀態的擁有者 \<T >。 請參閱[ C++核心指導方針 R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
+[C26404 DONT_DELETE_INVALID](C26404.md)請勿刪除可能處於無效狀態的擁有者\<T >。 請參閱[ C++核心指導方針 R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
 
-[C26405 DONT_ASSIGN_TO_VALID](C26405.md)請勿指派給擁有者 \<T 可能處於有效狀態的 >。 請參閱[ C++核心指導方針 R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
+[C26405 DONT_ASSIGN_TO_VALID](C26405.md)請勿指派給擁有者\<T > 可能處於有效狀態。 請參閱[ C++核心指導方針 R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
 
-[C26406 DONT_ASSIGN_RAW_TO_OWNER](C26406.md)請勿將原始指標指派給擁有者 \<T >。 請參閱[ C++核心指導方針 R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
+[C26406 DONT_ASSIGN_RAW_TO_OWNER](C26406.md)請勿將原始指標指派給擁有者\<T >。 請參閱[ C++核心指導方針 R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
 
 [C26407 DONT_HEAP_ALLOCATE_UNNECESSARILY](C26407.md)偏好設定範圍的物件，不會不必要地進行堆積配置。 請參閱[ C++核心指導方針 R. 5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped)。
 
-[C26429 USE_NOTNull](C26429.md)符號 '% symbol% ' 從未針對 null 進行過測試，它可以標示為 not_null。 請參閱[ C++核心指導方針 F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value)。
+[C26429 USE_NOTNull](C26429.md)符號 '% symbol% ' 從未測試過 null，可以標示為 not_null。 請參閱[ C++核心指導方針 F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value)。
 
 [C26430 TEST_ON_ALL_PATHS](C26430.md)未在所有路徑上測試符號 '% symbol% ' 是否有 null。 請參閱[ C++核心指導方針 F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value)。
 
@@ -46,17 +46,17 @@ ms.locfileid: "72745957"
 
 ## <a name="raw_pointer-group"></a>RAW_POINTER 群組
 
-[C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md)請勿將配置或函式呼叫的結果指派給擁有者 \<T > 傳回值給原始指標;請改用 owner \<T >。 請參閱[ C++核心指導方針 I. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw)。
+[C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md)請勿將配置或函式呼叫的結果指派給擁有者\<T > 傳回值給原始指標;請改用 owner\<T >。 請參閱[ C++核心指導方針 I. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw)。
 
-[C26401 DONT_DELETE_NON_OWNER](c26401.md)請勿刪除不是擁有者 \<T > 的原始指標。 請參閱[ C++核心指導方針 I. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw)。
+[C26401 DONT_DELETE_NON_OWNER](c26401.md)請勿刪除不是擁有者\<T > 的原始指標。 請參閱[ C++核心指導方針 I. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw)。
 
-[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)   會傳回已設定範圍的物件，而不是堆積配置（如果它有移動函數）。 請參閱[ C++核心指導方針 R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
+如果[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md) ，  會傳回有範圍的物件，而不是堆積配置的（如果它有移動函數）。 請參閱[ C++核心指導方針 R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
 
 [C26408 NO_MALLOC_FREE](C26408.md)避免 malloc （）和 free （），建議使用 nothrow 版本的 new with delete。 請參閱[ C++核心指導方針 R. 10](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-mallocfree)。
 
-[C26409 NO_NEW_DELETE](C26409.md)請避免明確呼叫 new 和 delete，改為使用 std：： make_unique \<T >。 請參閱[ C++核心指導方針 R. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-newdelete)。
+[C26409 NO_NEW_DELETE](C26409.md)請避免明確呼叫 new 和 delete，請改用 std：： make_unique\<T >。 請參閱[ C++核心指導方針 R. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-newdelete)。
 
-[C26429 USE_NOTNull](C26429.md)符號 '% symbol% ' 從未針對 null 進行過測試，它可以標示為 not_null。 請參閱[ C++核心指導方針 F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value)。
+[C26429 USE_NOTNull](C26429.md)符號 '% symbol% ' 從未測試過 null，可以標示為 not_null。 請參閱[ C++核心指導方針 F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value)。
 
 [C26430 TEST_ON_ALL_PATHS](C26430.md)未在所有路徑上測試符號 '% symbol% ' 是否有 null。 請參閱[ C++核心指導方針 F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value)。
 
@@ -123,7 +123,7 @@ ms.locfileid: "72745957"
 
 [C26439 SPECIAL_NOEXCEPT](C26439.md)這種函數可能不會擲回。 將它宣告 `noexcept`。 請參閱[ C++核心指導方針 f. 6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept)。
 
-[C26440 DECLARE_NOEXCEPT](C26440.md)函數 '% symbol% ' 可以 `noexcept` 宣告。 請參閱[ C++核心指導方針 f. 6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept)。
+[C26440 DECLARE_NOEXCEPT](C26440.md)函數 '% symbol% ' 可以 `noexcept`宣告。 請參閱[ C++核心指導方針 f. 6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept)。
 
 [C26447 DONT_THROW_IN_NOEXCEPT](c26447.md)函式會宣告為**noexcept** ，但會呼叫可能會擲回例外狀況的函式。
 請參閱[ C++核心指導方針： F. 6：如果您的函式可能不會擲回，請將它宣告為 noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept)。
@@ -136,13 +136,13 @@ ms.locfileid: "72745957"
 
 [C26460 USE_CONST_REFERENCE_ARGUMENTS](c26460.md)函數 '% function% ' 的參考引數 '% 引數% ' 可以標記為 `const`。 請參閱[ C++核心指導方針。 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref)。
 
-[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md)：函數 '% function% ' 的指標引數 '% argument% ' 可以標記為 `const` 的指標。 請參閱[ C++核心指導方針。 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref)。
+[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md)：函數 '% function% ' 的指標引數 '% argument% ' 可以標記為 `const`的指標。 請參閱[ C++核心指導方針。 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref)。
 
-[C26462 USE_CONST_POINTER_FOR_VARIABLE](c26462.md)'% Variable% ' 所指向的值只會指派一次，並將其標示為 `const` 的指標。 請參閱[ C++核心指導方針。 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction)。
+[C26462 USE_CONST_POINTER_FOR_VARIABLE](c26462.md)'% Variable% ' 所指向的值只會指派一次，並將其標示為 `const`的指標。 請參閱[ C++核心指導方針。 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction)。
 
-[C26463 USE_CONST_FOR_ELEMENTS](c26463.md)陣列 '% array% ' 的元素只會指派一次，`const` mark 元素。 請參閱[ C++核心指導方針。 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction)。
+[C26463 USE_CONST_FOR_ELEMENTS](c26463.md)陣列 '% array% ' 的元素只會指派一次，`const`mark 元素。 請參閱[ C++核心指導方針。 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction)。
 
-[C26464 USE_CONST_POINTER_FOR_ELEMENTS](c26464.md)陣列 '% array% ' 的專案所指向的值只會指派一次，將元素標示為 `const` 的指標。 請參閱[ C++核心指導方針。 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction)。
+[C26464 USE_CONST_POINTER_FOR_ELEMENTS](c26464.md)陣列 '% array% ' 的專案所指向的值只會指派一次，將元素標示為 `const`的指標。 請參閱[ C++核心指導方針。 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction)。
 
 [C26496 USE_CONST_FOR_VARIABLE](c26496.md)變數 '% variable% ' 只指派一次，將它標示為 `const`。 請參閱[ C++核心指導方針。 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction)。
 
@@ -152,7 +152,7 @@ ms.locfileid: "72745957"
 
 ## <a name="type-group"></a>類型群組
 
-[C26465 NO_CONST_CAST_UNNECESSARY](c26465.md)不要使用 `const_cast` 將 `const` 轉型。 不需要 `const_cast`;此轉換不會移除常數性或變動性。 請參閱[ C++核心指導方針類型。 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast)。
+[C26465 NO_CONST_CAST_UNNECESSARY](c26465.md)不要使用 `const_cast` 將 `const`轉型。 不需要 `const_cast`;此轉換不會移除常數性或變動性。 請參閱[ C++核心指導方針類型。 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast)。
 
 [C26466 NO_STATIC_DOWNCAST_POLYMORPHIC](c26466.md)請勿使用 `static_cast` 向下轉換。 從多型類型轉換時，應該使用 dynamic_cast。 請參閱[ C++核心指導方針類型。 2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast)。
 
@@ -170,7 +170,7 @@ ms.locfileid: "72745957"
 
 [C26491 NO_STATIC_DOWNCAST](c26490.md)請勿使用 `static_cast` 向下轉換。 請參閱[ C++核心指導方針類型。 2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type)。
 
-[C26492 NO_CONST_CAST](c26492.md)不要使用 `const_cast` 將 `const` 轉型。 請參閱[ C++核心指導方針類型。 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type)。
+[C26492 NO_CONST_CAST](c26492.md)不用`const_cast`拋棄`const`。 請參閱[ C++核心指導方針類型。 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type)。
 
 [C26493 NO_CSTYLE_CAST](c26493.md)不要使用 C 樣式轉換。 請參閱[ C++核心指導方針類型 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type)。
 
@@ -193,15 +193,15 @@ ms.locfileid: "72745957"
 
 ## <a name="gsl-group"></a>GSL 群組
 
-[C26445 NO_SPAN_REF](c26445.md)@No__t_1 或 `std::string_view` 的參考可能會指出存留期的問題。
+[C26445 NO_SPAN_REF](c26445.md)`gsl::span` 或 `std::string_view` 的參考可能會指出存留期的問題。
 請參閱[ C++核心指導方針 GSL。 view： Views](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
 
 [C26446 USE_GSL_AT](c26446.md)偏好使用 `gsl::at()`，而不是取消核取的注標運算子。 請參閱[ C++核心指導方針：界限。4：不要使用不是界限檢查的標準程式庫函式和類型](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)。
 
 [C26448 USE_GSL_FINALLY](c26448.md)如果想要執行最後的動作，請考慮使用 `gsl::finally`。 請參閱[ C++核心指導方針： GSL. util：公用程式](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities)。
 
-當暫時失效時，從暫存建立的[C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
- `gsl::span` 或 `std::string_view` 將會無效。 請參閱[ C++核心指導方針： GSL： Views](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)。
+當暫時失效時，從暫存建立的[C26449 NO_SPAN_FROM_TEMPORARY](c26449.md)
+`gsl::span` 或 `std::string_view` 將會無效。 請參閱[ C++核心指導方針： GSL： Views](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)。
 
 ## <a name="deprecated-warnings"></a>已淘汰的警告
 
@@ -217,5 +217,5 @@ ms.locfileid: "72745957"
 - 26425 ASSIGNING_TO_STATIC
 - 26499 NO_LIFETIME_TRACKING
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [使用C++核心指導方針檢查](using-the-cpp-core-guidelines-checkers.md)

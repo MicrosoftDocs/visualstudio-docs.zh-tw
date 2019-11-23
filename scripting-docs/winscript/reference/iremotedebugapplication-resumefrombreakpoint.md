@@ -57,7 +57,7 @@ HRESULT ResumeFromBreakPoint(
 ## <a name="remarks"></a>備註  
  這個方法會繼續目前在中斷點中的應用程式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IRemoteDebugApplication 介面](../../winscript/reference/iremotedebugapplication-interface.md)   
  [BREAKRESUMEACTION 列舉](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION 列舉](../../winscript/reference/errorresumeaction-enumeration.md)

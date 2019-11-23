@@ -36,6 +36,6 @@ HRESULT GetCurrentDebuggerOptions([out] enum SCRIPT_DEBUGGER_OPTIONS* pCurrentOp
  `pCurrentOptions`  
  脫銷目前的選項。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IRemoteDebugApplication 介面](../../winscript/reference/iremotedebugapplication-interface.md)   
  [IRemoteDebugApplication110 介面](../../winscript/reference/iremotedebugapplication110-interface.md)

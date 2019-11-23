@@ -49,9 +49,9 @@ HRESULT onAttach(
 ## <a name="remarks"></a>備註  
  這個方法會處理事件，表示 debug 應用程式節點物件已附加至父節點。  
   
- @No__t_0 介面的實施者會引發此事件。  
+ `IDebugApplicationNode` 介面的實施者會引發此事件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugApplicationNodeEvents 介面](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents：： onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)    
+ [IDebugApplicationNodeEvents：： onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)   
  [IDebugApplicationNode 介面](../../winscript/reference/idebugapplicationnode-interface.md)

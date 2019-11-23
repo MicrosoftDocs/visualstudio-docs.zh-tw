@@ -35,7 +35,7 @@ ms.locfileid: "72018349"
 
 ### <a name="to-run-code-defect-analysis-on-native-code"></a>若要在機器碼上執行程式碼瑕疵分析
 
-1. 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中開啟示範解決方案。
+1. 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中開啟示範解決方案。
 
      示範解決方案現在會填入**方案總管**。
 
@@ -61,13 +61,13 @@ ms.locfileid: "72018349"
 
 1. 在 [ **View** ] 功能表上，按一下 [**錯誤清單**]。
 
-     根據您在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中選擇的開發人員設定檔而定，您可能必須指向 [ **View** ] 功能表上的 [**其他視窗**]，然後按一下 [**錯誤清單**]。
+     根據您在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中選擇的開發人員設定檔而定，您可能必須指向 [ **View** ] 功能表上的 [**其他視窗**]，然後按一下 [**錯誤清單**]。
 
 2. 在 **錯誤清單**中，按兩下下列警告：
 
      警告 C6230：語義不同類型之間的隱含轉換：在布林內容中使用 HRESULT。
 
-     [程式碼編輯器] 會在函數中顯示導致警告的那一行 `bool ProcessDomain()`。 此警告表示在預期布林結果的 ' if ' 語句中使用了 HRESULT。
+     [程式碼編輯器] 會在函式 `bool ProcessDomain()`中顯示造成警告的那一行。 此警告表示在預期布林結果的 ' if ' 語句中使用了 HRESULT。
 
 3. 請使用 SUCCEEDED 宏來更正這個警告。 您的程式碼應該類似下列程式碼：
 
@@ -87,7 +87,7 @@ ms.locfileid: "72018349"
 
 ### <a name="to-treat-warning-as-an-error"></a>將警告視為錯誤
 
-1. 在 Bug .cpp 檔案中，將下列 `#pragma` 語句加入至檔案的開頭，將警告 C6001 視為錯誤：
+1. 在錯誤 .cpp 檔案中，將下列 `#pragma` 語句加入至檔案的開頭，將警告 C6001 視為錯誤：
 
    ```cpp
    #pragma warning (error: 6001)
@@ -97,7 +97,7 @@ ms.locfileid: "72018349"
 
      在**錯誤清單**中，C6001 現在會顯示為錯誤。
 
-3. 藉由初始化 `i` 並 `j` 為0，來更正**錯誤清單**中剩餘的兩個 C6001 錯誤。
+3. 藉由初始化 `i` 並 `j` 為0，修正**錯誤清單**中剩餘的兩個 C6001 錯誤。
 
 4. 重建 CodeDefects 專案。
 
@@ -142,7 +142,7 @@ ms.locfileid: "72018349"
 
 ### <a name="to-use-source-code-annotation"></a>若要使用原始程式碼注釋
 
-1. 使用前置和後置條件（如下列範例所示），標注函式的正式參數和傳回值 `AddTail`：
+1. 使用前置和後置條件（如下列範例所示），標注函數 `AddTail` 的型式參數和傳回值：
 
    ```cpp
    [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
@@ -178,4 +178,5 @@ ms.locfileid: "72018349"
 
 ## <a name="see-also"></a>另請參閱
 
-[逐步解說：分析 Managed 程式碼的程式碼缺失 @ no__t-0 @ no__t-1 程式[代碼分析C++ （適用于 C/](../code-quality/code-analysis-for-c-cpp-overview.md) ）
+[逐步解說：分析 Managed 程式碼中的程式](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)代碼缺失
+[CC++ /的程式碼分析](../code-quality/code-analysis-for-c-cpp-overview.md)

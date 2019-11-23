@@ -39,7 +39,7 @@ HRESULT Next (
   
 #### <a name="parameters"></a>參數  
  `celt`  
- 在要抓取的 `DebugPropertyInfo`structures 數目。  
+ 在要抓取的 `DebugPropertyInfo`結構數目。  
   
  `rgelt`  
  脫銷已抓取 `DebugPropertyInfo` 結構的陣列。  
@@ -50,6 +50,6 @@ HRESULT Next (
 ## <a name="return-value"></a>傳回值  
  傳回有效的 `HRESULT`，通常是 `S_OK`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IEnumDebugPropertyInfo 介面](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [DebugPropertyInfo 結構](../../winscript/reference/debugpropertyinfo-structure.md)

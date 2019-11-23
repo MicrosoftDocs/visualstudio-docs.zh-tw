@@ -46,10 +46,10 @@ HRESULT InvokeEx(
  辨識成員。 使用 `GetDispID` 或 `GetNextDispID` 來取得分派識別碼。  
   
  `lcid`  
- 地區設定內容，用於解譯引數。 @No__t_0 會傳遞給 `InvokeEx`，讓物件能夠解讀其地區設定特有的引數。  
+ 地區設定內容，用於解譯引數。 `lcid` 會傳遞給 `InvokeEx`，讓物件能夠解讀其地區設定特有的引數。  
   
  `wFlags`  
- @No__t_0 的合法值如下：  
+ `wFlags` 的合法值如下：  
   
  DISPATCH_PROPERTYGET &#124; DISPATCH_METHOD &#124; DISPATCH_PROPERTYPUT &#124; DISPATCH_PROPERTYPUTREF &#124; DISPATCH_CONSTRUCT  
   
@@ -57,11 +57,11 @@ HRESULT InvokeEx(
   
 |值|意義|  
 |-----------|-------------|  
-|DISPATCH_METHOD|會叫用成員做為方法。 如果屬性具有相同的名稱，則可以同時設定此和 DISPATCH_PROPERTYGET 旗標（由 `IDispatch` 所定義）。|  
-|DISPATCH_PROPERTYGET|此成員會以屬性或資料成員的形式抓取（由 `IDispatch` 所定義）。|  
-|DISPATCH_PROPERTYPUT|成員會變更為屬性或資料成員（由 `IDispatch` 所定義）。|  
-|DISPATCH_PROPERTYPUTREF|成員是由參考指派來變更，而不是值指派。 只有當屬性接受物件（由 `IDispatch` 所定義）的參考時，此旗標才有效。|  
-|DISPATCH_CONSTRUCT|成員正當做函式使用。 （這是由 `IDispatchEx` 所定義的新值）。 @No__t_0 的合法值如下：<br /><br /> DISPATCH_PROPERTYGET DISPATCH_METHOD DISPATCH_PROPERTYPUT DISPATCH_PROPERTYPUTREF DISPATCH_CONSTRUCT|  
+|DISPATCH_METHOD|會叫用成員做為方法。 如果屬性具有相同的名稱，則可以設定這個和 DISPATCH_PROPERTYGET 旗標（由 `IDispatch`定義）。|  
+|DISPATCH_PROPERTYGET|此成員會以屬性或資料成員的形式抓取（由 `IDispatch`所定義）。|  
+|DISPATCH_PROPERTYPUT|成員會變更為屬性或資料成員（由 `IDispatch`所定義）。|  
+|DISPATCH_PROPERTYPUTREF|成員是由參考指派來變更，而不是值指派。 只有當屬性接受物件（由 `IDispatch`所定義）的參考時，此旗標才有效。|  
+|DISPATCH_CONSTRUCT|成員正當做函式使用。 （這是由 `IDispatchEx`所定義的新值）。 `wFlags` 的合法值如下：<br /><br /> DISPATCH_PROPERTYGET DISPATCH_METHOD DISPATCH_PROPERTYPUT DISPATCH_PROPERTYPUTREF DISPATCH_CONSTRUCT|  
   
  `pdp`  
  結構的指標，此結構包含引數陣列、指名引數之 DISPID 引數的陣列，以及陣列中項目數目的計數。 如需 DISPPARAMS 結構的完整描述，請參閱 `IDispatch` 檔。  
@@ -80,12 +80,12 @@ HRESULT InvokeEx(
 |||  
 |-|-|  
 |DISPATCH_CONSTRUCT|表示此專案正當做函式使用。|  
-|`pspCaller`|@No__t_0 允許物件存取呼叫者所提供的服務。 特定的服務可能由呼叫端本身處理，或委派給呼叫端的其他呼叫端。 例如，如果瀏覽器內的腳本引擎對外部物件進行 `InvokeEx` 呼叫，物件可以遵循 `pspCaller` 鏈，從腳本引擎或瀏覽器取得服務。 （請注意，呼叫鏈與建立鏈不同，也稱為容器鏈或網站鏈。 建立鏈可能可以透過一些其他機制（例如 `IObjectWithSite`）來使用）。|  
-|`this` 指標|在 `wFlags` 中設定 DISPATCH_METHOD 時，可能會有 "this" 值的 "指名的參數"。 DISPID 會是 DISPID_THIS，而且必須是第一個名為的參數。|  
+|`pspCaller`|`pspCaller` 允許物件存取呼叫者所提供的服務。 特定的服務可能由呼叫端本身處理，或委派給呼叫端的其他呼叫端。 例如，如果瀏覽器內的腳本引擎對外部物件進行 `InvokeEx` 呼叫，物件可以遵循 `pspCaller` 鏈，從腳本引擎或瀏覽器取得服務。 （請注意，呼叫鏈與建立鏈不同，也稱為容器鏈或網站鏈。 建立鏈可能可以透過一些其他機制（例如 `IObjectWithSite`）來使用）。|  
+|`this` 指標|當 DISPATCH_METHOD 在 `wFlags`中設定時，可能會有 "this" 值的「已具名引數」。 DISPID 將會 DISPID_THIS，而且必須是第一個名為的參數。|  
   
- @No__t_1 中未使用的 `riid` 參數已移除。  
+ `IDispatch::Invoke` 中未使用的 `riid` 參數已移除。  
   
- @No__t_1 中的 `puArgArr` 參數已移除。  
+ `IDispatch::Invoke` 中的 `puArgArr` 參數已移除。  
   
  如需下列範例，請參閱 `IDispatch::Invoke` 檔：  
   
@@ -108,11 +108,11 @@ HRESULT InvokeEx(
 |-|-|  
 |`S_OK`|成功。|  
 |DISP_E_BADPARAMCOUNT|提供給 DISPPARAMS 的元素數目與方法或屬性所接受的引數數目不同。|  
-|DISP_E_BADVARTYPE|@No__t_0 中的其中一個引數不是有效的 variant 類型。|  
+|DISP_E_BADVARTYPE|`rgvarg` 中的其中一個引數不是有效的 variant 類型。|  
 |DISP_E_EXCEPTION|應用程式必須引發例外狀況。 在此情況下，應該填入 `pei` 傳入的結構。|  
 |DISP_E_MEMBERNOTFOUND|要求的成員不存在，或呼叫 `InvokeEx` 嘗試設定唯讀屬性的值。|  
 |DISP_E_NONAMEDARGS|這項 `IDispatch` 的執行不支援具名引數。|  
-|DISP_E_OVERFLOW|@No__t_0 中的其中一個引數無法強制轉型為指定的類型。|  
+|DISP_E_OVERFLOW|`rgvarg` 中的其中一個引數無法強制轉型為指定的類型。|  
 |DISP_E_PARAMNOTFOUND|其中一個參數 Dispid 不會對應到方法上的參數。|  
 |DISP_E_TYPEMISMATCH|無法強制轉型一或多個引數。|  
 |DISP_E_UNKNOWNLCID|所叫用的成員會根據 LCID 來解讀字串引數，而且無法辨識 LCID。 如果不需要 LCID 來解讀引數，則不應傳回此錯誤。|  
@@ -136,7 +136,7 @@ VARIANT var;
    }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDispatchEx 介面](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx：： GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx：： GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

@@ -32,10 +32,10 @@ ms.locfileid: "72572262"
   
  角括弧中的名稱代表元件，而 "："、"/"、";" 和 "？" 是用來做為分隔符號的保留字元。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 請確定您只嘗試解碼有效的 Uri。 您無法將一般 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 字串解碼，因為它們可能包含不正確字元。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [DecodeURI 函數](../../javascript/reference/decodeuri-function-javascript.md)   
  [decodeURIComponent 函式](../../javascript/reference/decodeuricomponent-function-javascript.md)

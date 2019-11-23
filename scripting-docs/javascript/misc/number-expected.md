@@ -24,10 +24,10 @@ ms.locfileid: "72573749"
 # <a name="number-expected"></a>必須是數字
 您嘗試在類型的物件上叫用**valueOf** **方法，但**不是**數位**的值。 這種調用類型的物件必須是**Number**類型。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 只會在**number**類型的物件上叫用**valueOf** **方法。**  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [數位物件](../../javascript/reference/number-object-javascript.md)   
  [number 屬性 (Error)](../../javascript/reference/number-property-error-javascript.md)

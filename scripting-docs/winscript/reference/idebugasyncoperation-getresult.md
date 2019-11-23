@@ -38,7 +38,7 @@ HRESULT GetResult(
   
 #### <a name="parameters"></a>參數  
  `phrResult`  
- 脫銷如果作業已完成，`phrResult` 是 `IDebugSyncOperation::Execute` 的傳回值。  
+ 脫銷如果作業已完成，`phrResult` 是 `IDebugSyncOperation::Execute`的傳回值。  
   
  `ppunkResult`  
  脫銷如果作業已完成，`ppunkResult` 是作業所傳回的物件參數。  
@@ -52,8 +52,8 @@ HRESULT GetResult(
 |`E_PENDING`|作業尚未完成。|  
   
 ## <a name="remarks"></a>備註  
- 如果作業已完成，這個方法會從 `IDebugSyncOperation::Execute` 傳回 `HRESULT` 和物件參數。  
+ 如果作業已完成，這個方法會從 `IDebugSyncOperation::Execute`傳回 `HRESULT` 和物件參數。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugAsyncOperation 介面](../../winscript/reference/idebugasyncoperation-interface.md)   
  [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)

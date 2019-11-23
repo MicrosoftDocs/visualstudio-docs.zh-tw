@@ -55,11 +55,11 @@ HRESULT SetTextAttributes(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 在將文字加入檔之前，先在文字範圍上呼叫 `SetTextAttributes` 是錯誤的。 呼叫 `AddDBCSText`、`AddUnicodeText` 或 `AddDeferredText` 方法，將文字新增至檔。  
+ 在將文字加入檔之前，先在文字範圍上呼叫 `SetTextAttributes` 是錯誤的。 呼叫 `AddDBCSText`、`AddUnicodeText`或 `AddDeferredText` 方法，將文字新增至檔。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper：： AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
- [IDebugDocumentHelper：： AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
- [IDebugDocumentHelper：： AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+ [IDebugDocumentHelper：： AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper：： AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [IDebugDocumentHelper：： AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

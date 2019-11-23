@@ -53,7 +53,7 @@ HRESULT RemoveApplication(
 ## <a name="remarks"></a>備註  
  每當呼叫 `IProcessDebugManager::RemoveApplication` 時，進程 debug manager 就會呼叫這個方法。  
   
-## <a name="see-also"></a>請參閱  
- [IMachineDebugManagerCookie：： AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)    
+## <a name="see-also"></a>另請參閱  
+ [IMachineDebugManagerCookie：： AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   
  [IMachineDebugManagerCookie 介面](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

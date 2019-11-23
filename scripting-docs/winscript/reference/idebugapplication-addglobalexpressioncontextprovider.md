@@ -53,6 +53,6 @@ HRESULT AddGlobalExpressionContextProvider(
 ## <a name="remarks"></a>備註  
  這個方法會將全域運算式內容提供者加入此應用程式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)

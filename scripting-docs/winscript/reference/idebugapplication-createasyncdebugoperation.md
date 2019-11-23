@@ -53,7 +53,7 @@ HRESULT CreateAsyncDebugOperation(
 ## <a name="remarks"></a>備註  
  這個方法可讓語言引擎以非同步方式評估運算式，而不需要明確地與偵錯工具執行緒同步處理。 如需詳細資訊，請參閱[IDebugSyncOperation 介面](../../winscript/reference/idebugsyncoperation-interface.md)和[IDebugAsyncOperation 介面](../../winscript/reference/idebugasyncoperation-interface.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugSyncOperation 介面](../../winscript/reference/idebugsyncoperation-interface.md)   
  [IDebugAsyncOperation 介面](../../winscript/reference/idebugasyncoperation-interface.md)

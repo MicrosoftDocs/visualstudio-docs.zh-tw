@@ -37,7 +37,7 @@ ms.locfileid: "71933484"
         unittest.main()
     ```
 
-1. 視需要儲存檔案，然後使用 [測試] > [Windows] > [測試總管] 功能表命令，開啟 [測試總管]。
+1. 視需要儲存檔案，然後使用 [測試] **[Windows]**  >  **[測試總管]**  >  功能表命令，開啟 [測試總管]。
 
 1. [測試總管] 會搜尋要進行測試的專案，並將它們顯示如下。 按兩下測試會開啟其原始程式檔。
 
@@ -49,7 +49,7 @@ ms.locfileid: "71933484"
 
 1. 您也可以在 [搜尋] 欄位中輸入文字，以依據名稱來篩選測試。
 
-如需 @no__t 0 模組和撰寫測試的詳細資訊，請參閱[python 2.7 檔](https://docs.python.org/2/library/unittest.html)或[python 3.7 檔](https://docs.python.org/3/library/unittest.html)（python.org）。
+如需 `unittest` 模組和撰寫測試的詳細資訊，請參閱[python 2.7 檔](https://docs.python.org/2/library/unittest.html)或[python 3.7 檔](https://docs.python.org/3/library/unittest.html)（python.org）。
 
 ## <a name="run-tests"></a>執行測試
 
@@ -65,7 +65,7 @@ ms.locfileid: "71933484"
 
     ![test_A 通過狀態](../../media/unit-test-A-pass.png)
 
-- 失敗的測試會顯示紅色十字，以及會顯示測試執行的主控台輸出和 `unittest` 輸出的 [輸出] 連結：
+- 失敗的測試會顯示紅色十字，以及會顯示測試執行的主控台輸出和  **輸出的 [輸出]** `unittest` 連結：
 
     ![test_A 失敗狀態](../../media/unit-test-A-fail.png)
 
@@ -83,7 +83,7 @@ ms.locfileid: "71933484"
 
 ### <a name="known-issues"></a>已知問題
 
-- 當開始偵錯時，Visual Studio 會看似啟動並停止偵錯，然後再次啟動。 這是預期的行為。
+- 當開始偵錯時，Visual Studio 會看似啟動並停止偵錯，然後再次啟動。 此為預期性行為。
 - 針對多個測試所進行的偵錯都會獨立執行，這會中斷偵錯工作階段。
 - 當進行偵錯時，Visual Studio 會間歇性地無法啟動測試。 一般來說，再次嘗試對測試進行偵錯會成功。
 - 進行偵錯時，可以離開測試進入 `unittest` 實作。 一般而言，下一個步驟會執行至程式的結尾，並停止偵錯。

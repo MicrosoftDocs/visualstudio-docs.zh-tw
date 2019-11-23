@@ -24,11 +24,11 @@ ms.locfileid: "72572890"
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' 只可以出現在 'switch' 陳述式中一次
 您嘗試在 switch 語句中多次使用**default**語句。 預設案例一律為 switch 語句中的最後一個 case 語句（這是迴圈式案例）。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 從您的 `switch` 語句中移除任何額外的**預設**case 語句（在 switch 語句中最多使用一個預設 case 語句）。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Switch 語句](../../javascript/reference/switch-statement-javascript.md)   
  [控制程式流程](../../javascript/controlling-program-flow-javascript.md)   
  [JavaScript 保留字](../../javascript/reference/javascript-reserved-words.md)

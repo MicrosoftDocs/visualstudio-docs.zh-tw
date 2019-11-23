@@ -58,8 +58,8 @@ HRESULT HandleBreakPoint(
   
  這個方法會導致呼叫 `IApplicationDebugger::onHandleBreakPoint`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
- [IApplicationDebugger：： onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)    
+ [IApplicationDebugger：： onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)   
  [BREAKREASON 列舉](../../winscript/reference/breakreason-enumeration.md)   
  [BREAKRESUMEACTION 列舉](../../winscript/reference/breakresumeaction-enumeration.md)

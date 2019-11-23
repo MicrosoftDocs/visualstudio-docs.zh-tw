@@ -53,6 +53,6 @@ HRESULT onAddApplication(
 ## <a name="remarks"></a>備註  
  這個方法表示已將應用程式新增至執行中的應用程式清單。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IMachineDebugManagerEvents 介面](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
  [IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)

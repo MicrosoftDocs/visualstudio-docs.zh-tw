@@ -49,6 +49,6 @@ HRESULT CreateApplication(
 ## <a name="remarks"></a>備註  
  這個方法所建立的物件沒有名稱，而且不會加入至執行中的應用程式清單。 使用 [`IProcessDebugManager::AddApplication`] 將 debug 應用程式新增至應用程式清單。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IProcessDebugManager 介面](../../winscript/reference/iprocessdebugmanager-interface.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)
