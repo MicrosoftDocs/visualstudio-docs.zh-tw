@@ -21,18 +21,18 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576517"
 ---
-# <a name="expected-"></a>必須是 ' \@ '
+# <a name="expected-"></a>必須是 '\@'
 您嘗試使用 `@set` 語句來建立要搭配條件式編譯語句使用的變數，但未在變數名稱前面加上 @ 符號 " **@** "。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
-- 在變數名稱前面加上 @ 符號 " **@** "。 例如:  
+- 在變數名稱前面加上 @ 符號 " **@** "。 例如：  
   
     ```JavaScript  
     @set @myvar = 1  
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [@set 語句](../../javascript/reference/at-set-statement-javascript.md)   
  [條件式編譯](../../javascript/advanced/conditional-compilation-javascript.md)   
  [條件式編譯變數](../../javascript/advanced/conditional-compilation-variables-javascript.md)

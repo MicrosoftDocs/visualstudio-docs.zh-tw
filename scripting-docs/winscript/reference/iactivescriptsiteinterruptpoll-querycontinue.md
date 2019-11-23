@@ -45,10 +45,10 @@ HRESULT QueryContinue();
 |`S_FALSE`|此呼叫成功，且主機要求腳本終止。|  
   
 ## <a name="remarks"></a>備註  
- 除非 `S_OK` `QueryContinue` 方法的傳回值，否則託管的腳本應該會終止。 @No__t_0 的傳回值表示主機會明確要求腳本終止。  
+ 除非 `S_OK``QueryContinue` 方法的傳回值，否則託管的腳本應該會終止。 `S_FALSE` 的傳回值表示主機會明確要求腳本終止。  
   
  多執行緒主機可以使用 `IActiveScript::InterruptScriptThread` 方法來終止腳本。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptSiteInterruptPoll 介面](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

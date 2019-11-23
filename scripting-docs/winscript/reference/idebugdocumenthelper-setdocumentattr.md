@@ -49,6 +49,6 @@ HRESULT SetDocumentAttr(
 ## <a name="remarks"></a>備註  
  這個方法會設定此檔的屬性。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [TEXT_DOC_ATTR 常數](../../winscript/reference/text-doc-attr-constants.md)

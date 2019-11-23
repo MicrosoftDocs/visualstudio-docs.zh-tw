@@ -49,6 +49,6 @@ HRESULT StartDebugSession(
 ## <a name="remarks"></a>備註  
  這個方法會初始化具有指定之應用程式的 debug 會話。 偵錯工具應該先呼叫 `IRemoteDebugApplication::ConnectDebugger`，然後再從這個呼叫傳回。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugSessionProvider 介面](../../winscript/reference/idebugsessionprovider-interface.md)   
  [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)

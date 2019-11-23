@@ -53,9 +53,9 @@ HRESULT SetScriptState(
 ## <a name="remarks"></a>備註  
  如需腳本引擎狀態的詳細資訊，請參閱[Windows 腳本引擎](../../winscript/windows-script-engines.md)的腳本引擎狀態一節。  
   
-## <a name="see-also"></a>請參閱  
- [IActiveScript：： Clone](../../winscript/reference/iactivescript-clone.md)    
- [IActiveScript：： GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)    
- [IActiveScript：： InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)    
- [IActiveScriptParse：:P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)    
+## <a name="see-also"></a>另請參閱  
+ [IActiveScript：： Clone](../../winscript/reference/iactivescript-clone.md)   
+ [IActiveScript：： GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
+ [IActiveScript：： InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
+ [IActiveScriptParse：:P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

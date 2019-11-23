@@ -73,10 +73,10 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
    > 請務必按一下所收到電子郵件中的啟用連結。  否則，您將無法存取 CAST Highlight 訂用帳戶。 如果您在收件匣中沒看到這封電子郵件，請務必檢查垃圾郵件資料夾。
 
 ## <a name="eligibility"></a>資格
-| 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
+| 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 30 天評估 5 個應用程式|  否。  僅提供給新訂閱者使用          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise  | VL | 30 天評估 5 個應用程式|  否。  僅提供給新訂閱者使用          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 30 天評估 5 個應用程式|  No。  僅提供給新訂閱者使用          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise  | VL | 30 天評估 5 個應用程式|  No。  僅提供給新訂閱者使用          |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                             |  N/A          |
 | 含 GitHub Enterprise 的 Visual Studio Professional | VL                                       | 無法使用                                                             |  N/A          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A           |

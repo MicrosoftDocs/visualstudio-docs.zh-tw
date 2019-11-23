@@ -74,7 +74,7 @@ HRESULT hr;
    }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDispatchEx 介面](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx：： GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx：： GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

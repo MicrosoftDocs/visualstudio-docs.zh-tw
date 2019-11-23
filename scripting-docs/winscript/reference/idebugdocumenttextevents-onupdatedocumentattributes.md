@@ -49,6 +49,6 @@ HRESULT onUpdateDocumentAttributes(
 ## <a name="remarks"></a>備註  
  這個方法表示檔案屬性已變更。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentTextEvents 介面](../../winscript/reference/idebugdocumenttextevents-interface.md)   
  [TEXT_DOC_ATTR 常數](../../winscript/reference/text-doc-attr-constants.md)

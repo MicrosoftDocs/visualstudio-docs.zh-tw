@@ -48,6 +48,6 @@ HRESULT GetRoot(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IScriptNode 介面](../../winscript/reference/iscriptnode-interface.md)

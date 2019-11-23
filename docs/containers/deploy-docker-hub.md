@@ -49,7 +49,7 @@ Docker Hub 為您的映射存放庫提供便利的主機服務。 您可以輕�
 
 使用[Azure Pipelines](/azure/devops/pipelines/?view=azure-devops)設定持續整合與傳遞（CI/CD）。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [部署至 Azure App Service](deploy-app-service.md)
 [Visual Studio 容器工具](/visualstudio/containers/)。

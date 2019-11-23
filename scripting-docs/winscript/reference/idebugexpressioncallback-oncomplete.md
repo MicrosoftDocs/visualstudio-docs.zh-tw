@@ -46,6 +46,6 @@ HRESULT onComplete();
 ## <a name="remarks"></a>備註  
  當運算式評估完成時，會呼叫這個方法。 您可以從這個事件處理常式內呼叫 `IDebugExpression::GetResultAsString` 方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugExpressionCallBack 介面](../../winscript/reference/idebugexpressioncallback-interface.md)   
  [IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)

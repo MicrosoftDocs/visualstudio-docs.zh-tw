@@ -24,12 +24,12 @@ ms.locfileid: "72573399"
 # <a name="expected-constant"></a>必須是常數
 您嘗試在條件式編譯測試語句中使用（非條件式編譯）變數。 條件式編譯測試語句必須評估為常數。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 將變數取代為常值。  
   
 - 以條件式編譯變數取代變數。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [條件式編譯](../../javascript/advanced/conditional-compilation-javascript.md)   
  [條件式編譯變數](../../javascript/advanced/conditional-compilation-variables-javascript.md)

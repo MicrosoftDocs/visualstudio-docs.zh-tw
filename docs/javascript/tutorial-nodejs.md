@@ -58,7 +58,7 @@ npm 是 Node.js 的預設套件管理員。 套件管理員可讓程式設計人
 
 Express 是一種 Web 應用程式架構，用作 Node.js 的伺服器架構以建置 Web 應用程式。 Express 可讓您使用選擇不同的前端架構來建立 UI，例如 Pug (之前稱為 Jade)。 本教學課程中使用 Pug。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 * 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 
@@ -90,7 +90,7 @@ Visual Studio 可在「專案」中管理單一應用程式的檔案。 專案�
 1. 建立新的專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **Node.js**，然後選擇 [Create a new Basic Azure Node.js Express 4 application] \(建立新的基礎 Azure Node.js Express 4 應用程式\) (JavaScript)。 在出現的對話方塊中，選擇 [建立]。
+    按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **Node.js**，然後選擇 [Create a new Basic Azure Node.js Express 4 application] \(建立新的基礎 Azure Node.js Express 4 應用程式\) (JavaScript)。 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [基本的 Azure Node.js Express 4 應用程式]，然後選擇 [確定]。
@@ -186,7 +186,7 @@ IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
 
 1. 新增括弧，使其成為函式呼叫，`getData()`。
 
-1. 移除 `"data"` 前面的逗號 (`,`)，而且您會看到運算式上的綠色語法醒目提示。 將滑鼠停留在語法醒目提示上方。
+1. 移除 `,` 前面的逗號 (`"data"`)，而且您會看到運算式上的綠色語法醒目提示。 將滑鼠停留在語法醒目提示上方。
 
     ![檢視語法錯誤](../javascript/media/tutorial-nodejs-syntax-checking.png)
 
@@ -198,7 +198,7 @@ IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
 
     ![檢視錯誤清單](../javascript/media/tutorial-nodejs-error-list.png)
 
-1. 在 `"data"` 前面新增逗號 (`,`)，以修正程式碼。
+1. 在 `,` 前面新增逗號 (`"data"`)，以修正程式碼。
 
     更正後，程式碼行應該如下所示：`res.render('index', { title: 'Express', "data": getData() });`
 

@@ -46,6 +46,6 @@ HRESULT Detach();
 ## <a name="remarks"></a>備註  
  這個方法會從檔樹狀結構中移除這份檔。  
   
-## <a name="see-also"></a>請參閱  
- [IDebugDocumentHelper：： Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
+## <a name="see-also"></a>另請參閱  
+ [IDebugDocumentHelper：： Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)

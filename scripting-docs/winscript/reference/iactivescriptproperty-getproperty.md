@@ -57,7 +57,7 @@ HRESULT GetProperty(
 |SCRIPTPROP_INTEGERMODE|0x00003000|強制腳本引擎以整數模式分割，而不是浮點模式。|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|允許取代腳本引擎的字串比較功能。|  
 |SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|通知腳本引擎，不存在任何其他腳本引擎來參與全域物件。|  
-|SCRIPTPROP_INVOKEVERSIONING|0x00004000|強制 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎選取一組要支援的語言功能。 @No__t_0 腳本引擎所支援的預設語言功能集，相當於 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎5.7 版中出現的語言功能集。|  
+|SCRIPTPROP_INVOKEVERSIONING|0x00004000|強制 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎選取一組要支援的語言功能。 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎所支援的預設語言功能集，相當於 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎5.7 版中出現的語言功能集。|  
   
 ## <a name="return-value"></a>傳回值  
  傳回下列其中一個值：  
@@ -69,11 +69,11 @@ HRESULT GetProperty(
 |`E_UNEXPECTED`|不需要呼叫（例如，腳本引擎尚未載入或初始化）。|  
   
 ## <a name="remarks"></a>備註  
- 主機可以使用 SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION 屬性來通知腳本引擎，不會有其他腳本引擎參與全域物件。 例如，Internet Explorer 可以通知 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 引擎呈現的頁面只包含 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本。 因此，只有 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 引擎可以將新的屬性加入至全域物件視窗，而且沒有任何 Visual Basic Scripting Edition （VBScript）引擎可以執行相同的動作。 引擎可以忽略此旗標，也可以使用它來優化新增至全域物件之新成員的管理。  
+ 主機可以使用 [SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION] 屬性來通知腳本引擎，讓全域物件無法參與其他腳本引擎。 例如，Internet Explorer 可以通知 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 引擎呈現的頁面只包含 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本。 因此，只有 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 引擎可以將新的屬性加入至全域物件視窗，而且沒有任何 Visual Basic Scripting Edition （VBScript）引擎可以執行相同的動作。 引擎可以忽略此旗標，也可以使用它來優化新增至全域物件之新成員的管理。  
   
- 主機可以使用 [SCRIPTPROP_INVOKEVERSIONING] 屬性，選取當 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎啟動時所要支援的一組語言功能。 如果這個屬性設定為1（SCRIPTLANGUAGEVERSION_5_7），可用的語言功能就會與5.7 版 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎中所顯示的相同。 如果設定為2（SCRIPTLANGUAGEVERSION_5_8），可用的語言功能就是在版本5.7 中出現的功能，以及5.8 版中新增的功能。 根據預設，這個屬性會設定為0（SCRIPTLANGUAGEVERSION_DEFAULT），這相當於出現在5.7 版中的語言功能集，除非該主機支援不同的預設行為。 比方說，當 Internet Explorer 8 的檔案模式為「Internet Explorer 8 標準」模式時，Internet Explorer 8 預設會納入5.8 版所支援的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 語言功能 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎。  
+ 主機可以使用 [SCRIPTPROP_INVOKEVERSIONING] 屬性，選取 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎啟動時所要支援的一組語言功能。 如果這個屬性設定為1（SCRIPTLANGUAGEVERSION_5_7），可用的語言功能就會與 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎的5.7 版中所顯示的相同。 如果設定為2（SCRIPTLANGUAGEVERSION_5_8），可用的語言功能就是在版本5.7 中出現的功能，以及5.8 版中新增的功能。 根據預設，這個屬性會設定為0（SCRIPTLANGUAGEVERSION_DEFAULT），這相當於出現在5.7 版中的語言功能集，除非該主機支援不同的預設行為。 比方說，當 Internet Explorer 8 的檔案模式為「Internet Explorer 8 標準」模式時，Internet Explorer 8 預設會納入5.8 版所支援的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 語言功能 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [定義檔相容性](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))   
- [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)    
+ [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
  [版本資訊](../../javascript/reference/javascript-version-information.md)

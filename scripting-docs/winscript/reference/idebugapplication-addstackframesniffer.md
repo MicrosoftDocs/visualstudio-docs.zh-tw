@@ -53,7 +53,7 @@ HRESULT AddStackFrameSniffer(
 ## <a name="remarks"></a>備註  
  雖然語言引擎通常會呼叫這個方法，將其堆疊框架公開給偵錯工具，但其他實體也可能公開堆疊框架。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
- [IDebugApplication：： RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)    
+ [IDebugApplication：： RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
  [IDebugStackFrameSniffer 介面](../../winscript/reference/idebugstackframesniffer-interface.md)

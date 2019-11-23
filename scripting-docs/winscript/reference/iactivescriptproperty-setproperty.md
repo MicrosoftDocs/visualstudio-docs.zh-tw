@@ -57,7 +57,7 @@ HRESULT SetProperty(
 |SCRIPTPROP_INTEGERMODE|0x00003000|強制腳本引擎以整數模式分割，而不是浮點模式。 預設值是 `False`。|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|允許取代腳本引擎的字串比較功能。|  
 |SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|通知腳本引擎，不存在任何其他腳本引擎來參與全域物件。|  
-|SCRIPTPROP_INVOKEVERSIONING|0x00004000|強制 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎選取一組要支援的語言功能。 @No__t_0 腳本引擎所支援的預設語言功能集，相當於 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎5.7 版中出現的語言功能集。|  
+|SCRIPTPROP_INVOKEVERSIONING|0x00004000|強制 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎選取一組要支援的語言功能。 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎所支援的預設語言功能集，相當於 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎5.7 版中出現的語言功能集。|  
   
 ## <a name="return-value"></a>傳回值  
  傳回下列其中一個值：  
@@ -73,10 +73,10 @@ HRESULT SetProperty(
   
  若要啟用或停用自訂字串比較，請叫用 `SetProperty` 並傳入 `Object` 值。 您傳入的物件必須執行介面[IActiveScriptStringCompare 介面](../../winscript/reference/iactivescriptstringcompare-interface.md)。 每次執行字串比較函數時，都會呼叫[IActiveScriptStringCompare 介面](../../winscript/reference/iactivescriptstringcompare-interface.md)介面的[StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md)方法。  
   
- 若要選取 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎初始化時所要支援的一組語言功能，請叫用 `SetProperty` 並傳遞對應至要啟用 SCRIPTPROP_INVOKEVERSIONING 之語言功能集的值。 如果這個屬性設定為1（SCRIPTLANGUAGEVERSION_5_7），可用的語言功能就會與5.7 版 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎中所顯示的相同。 如果設定為2（SCRIPTLANGUAGEVERSION_5_8），可用的語言功能就是在版本5.7 中所顯示的新功能，以及5.8 版中新增的功能。 根據預設，這個屬性會設定為0（SCRIPTLANGUAGEVERSION_DEFAULT），這相當於出現在5.7 版中的語言功能集，除非該主機支援不同的預設行為。 例如，當 Internet Explorer 8 的預設檔案模式為「Internet Explorer 8 標準」模式時，Internet Explorer 8 會加入宣告5.8 版所支援的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 語言功能 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎。 將 Internet Explorer 8 檔案模式切換到 Internet Explorer 7 標準或「可執行模式」，會重設 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 的腳本引擎，僅支援5.7 版 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎中存在的語言功能集。  
+ 若要選取 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 的腳本引擎初始化時所要支援的一組語言功能，請叫用 `SetProperty` 並傳遞對應至要針對 SCRIPTPROP_INVOKEVERSIONING 啟用之語言功能集的值。 如果這個屬性設定為1（SCRIPTLANGUAGEVERSION_5_7），可用的語言功能就會與 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎的5.7 版中所顯示的相同。 如果設定為2（SCRIPTLANGUAGEVERSION_5_8），可用的語言功能就會顯示在版本5.7 中，以及5.8 版中新增的新功能。 根據預設，這個屬性會設定為0（SCRIPTLANGUAGEVERSION_DEFAULT），這相當於出現在5.7 版中的語言功能集，除非該主機支援不同的預設行為。 例如，當 Internet Explorer 8 的預設檔案模式為「Internet Explorer 8 標準」模式時，Internet Explorer 8 會加入宣告5.8 版所支援的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 語言功能 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎。 將 Internet Explorer 8 檔案模式切換到 Internet Explorer 7 標準或「可執行模式」，會重設 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 的腳本引擎，僅支援5.7 版 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎中存在的語言功能集。  
   
 > [!NOTE]
-> 只有在初始化 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎時，才應設定 SCRIPTPROP_INVOKEVERSIONING。  
+> 只有在初始化 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 腳本引擎時，才應該設定 SCRIPTPROP_INVOKEVERSIONING。  
   
 ## <a name="example"></a>範例  
  下列範例示範如何強制腳本引擎使用整數除法，以及如何允許比較函數的多載。  
@@ -100,7 +100,7 @@ scriptProperties.SetProperty(SCRIPTPROP_STRCOMPINST,
     System.IntPtr.Zero, ref vtStrCmpInstance);  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [定義檔相容性](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))   
- [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)    
+ [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
  [版本資訊](../../javascript/reference/javascript-version-information.md)

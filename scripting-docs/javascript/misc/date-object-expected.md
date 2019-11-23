@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572894"
 ---
 # <a name="date-object-expected"></a>必須是日期物件
-您嘗試在 `Date` 以外之類型的物件上，叫用**valueOf**方法的**資料**。 這種調用類型的物件必須是 `Date` 的類型。 例如:  
+您嘗試在 `Date`以外之類型的物件上，叫用**valueOf**方法的**資料**。 這種調用類型的物件必須是 `Date`的類型。 例如：  
   
 ```JavaScript  
 var o = new Object;  
@@ -30,11 +30,11 @@ o.f = Date.prototype.toString;
 o.f();  
 ```  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 只會在 `Date`**類型的物件**上叫用**valueOf**方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Date 物件](../../javascript/reference/date-object-javascript.md)   
- [GetDate 方法（Date）](../../javascript/reference/getdate-method-date-javascript.md)    
+ [GetDate 方法（Date）](../../javascript/reference/getdate-method-date-javascript.md)   
  [內建物件](../../javascript/intrinsic-objects-javascript.md)

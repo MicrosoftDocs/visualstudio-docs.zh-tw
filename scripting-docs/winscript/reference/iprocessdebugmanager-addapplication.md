@@ -53,6 +53,6 @@ HRESULT AddApplication(
 ## <a name="remarks"></a>備註  
  這個方法會將應用程式新增至機器偵錯工具中的執行中應用程式清單。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IProcessDebugManager 介面](../../winscript/reference/iprocessdebugmanager-interface.md)   
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

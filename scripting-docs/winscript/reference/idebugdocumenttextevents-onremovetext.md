@@ -53,6 +53,6 @@ HRESULT onRemoveText(
 ## <a name="remarks"></a>備註  
  這個方法表示文字已從檔中移除。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentTextEvents 介面](../../winscript/reference/idebugdocumenttextevents-interface.md)   
  [IDebugDocumentTextEvents::onInsertText](../../winscript/reference/idebugdocumenttextevents-oninserttext.md)

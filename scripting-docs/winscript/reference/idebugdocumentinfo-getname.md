@@ -54,6 +54,6 @@ HRESULT GetName(
 ## <a name="remarks"></a>備註  
  這個方法會傳回指定的檔案名稱。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentInfo 介面](../../winscript/reference/idebugdocumentinfo-interface.md)   
  [DOCUMENTNAMETYPE 列舉](../../winscript/reference/documentnametype-enumeration.md)

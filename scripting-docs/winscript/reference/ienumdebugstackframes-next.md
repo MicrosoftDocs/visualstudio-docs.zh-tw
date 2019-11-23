@@ -57,6 +57,6 @@ HRESULT Next(
 ## <a name="remarks"></a>備註  
  這個方法會抓取列舉序列中指定數目的區段。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IEnumDebugStackFrames 介面](../../winscript/reference/ienumdebugstackframes-interface.md)   
  [DebugStackFrameDescriptor 結構](../../winscript/reference/debugstackframedescriptor-structure.md)

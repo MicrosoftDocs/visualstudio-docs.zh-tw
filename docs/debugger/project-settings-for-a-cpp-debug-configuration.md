@@ -177,15 +177,15 @@ ms.locfileid: "72450383"
 |**對應匯出** ([/MAPINFO:EXPORTS](/cpp/build/reference/mapinfo-include-information-in-mapfile))|在對應檔中包含匯出函式。 預設設定為 [否]。 如需詳細資訊，請參閱 [/MAPINFO (將資訊包括在對應檔中)](/cpp/build/reference/mapinfo-include-information-in-mapfile) \(機器翻譯\)。|
 |**可偵錯組件** ([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|指定連結器 /ASSEMBLYDEBUG 選項的設定。 可能的值為：<br /><br /> -   **未發出可偵錯屬性**。<br />-   **正在進行執行階段追蹤並停用最佳化 (/ASSEMBLYDEBUG)** 。 這是預設設定。<br />-   **沒有執行階段追蹤並啟用最佳化 (/ASSEMBLYDEBUG:DISABLE)** 。<br />-    **\<從父代或專案預設值繼承>** 。<br />- 如需詳細資訊，請參閱 [/ASSEMBLYDEBUG (新增 DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute)。|
 
- 您可以使用 Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings 介面，以程式設計的方式在 [組態屬性] 資料夾 ([偵錯] 分類) 中變更這些設定。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>。
+ 您可以使用 Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings 介面，以程式設計的方式在 [組態屬性] 資料夾 ([偵錯] 分類) 中變更這些設定。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>。
 
 ## <a name="other-project-settings"></a>其他專案設定
 
-若要將專案類型（例如靜態程式庫和 Dll）進行偵錯工具，您的 Visual Studio 專案必須能夠找到正確的檔案。 當原始程式碼可供使用時，您可以將靜態程式庫和 Dll 當做個別專案新增至相同的方案，以便更輕鬆地進行偵錯工具。 如需建立這些專案類型的詳細資訊，請參閱[建立和使用動態連結程式庫（DLL）](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)和[使用靜態程式庫建立](/cpp/windows/walkthrough-creating-and-using-a-static-library-cpp)。 有原始程式碼可用時，您也可以**從現有**的程式碼**選擇 [** 檔案] [從**新**的  >  專案] @no__t，建立新的 Visual Studio 專案。
+若要將專案類型（例如靜態程式庫和 Dll）進行偵錯工具，您的 Visual Studio 專案必須能夠找到正確的檔案。 當原始程式碼可供使用時，您可以將靜態程式庫和 Dll 當做個別專案新增至相同的方案，以便更輕鬆地進行偵錯工具。 如需建立這些專案類型的詳細資訊，請參閱[建立和使用動態連結程式庫（DLL）](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)和[使用靜態程式庫建立](/cpp/windows/walkthrough-creating-and-using-a-static-library-cpp)。 有原始程式碼可用時，您也可以**從現有**的程式碼**選擇 [** 檔案] > [**新增** > 專案]，以建立新的 Visual Studio 專案。
 
 若要對專案外部的 Dll 進行偵錯工具，請參閱[偵錯工具 dll 專案](../debugger/debugging-dll-projects.md#vxtskdebuggingdllprojectsexternal)。 如果您需要對自己的 DLL 專案進行檢查，但無法存取呼叫應用程式的專案，請參閱[如何從 DLL 專案進行 debug](../debugger/how-to-debug-from-a-dll-project.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [對機器碼進行偵錯](../debugger/debugging-native-code.md)
 - [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)
 - [建立和管理C++專案](/cpp/ide/creating-and-managing-visual-cpp-projects)

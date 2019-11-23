@@ -41,7 +41,7 @@ HRESULT onDebuggerEvent(
  在物件的介面識別碼。  
   
  `punk`  
- 在事件物件，它會執行 `riid` 所定義的介面。  
+ 在事件物件，它會執行 `riid`所定義的介面。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -52,12 +52,12 @@ HRESULT onDebuggerEvent(
 |`E_NOTIMPL`|目前未執行方法。|  
   
 ## <a name="remarks"></a>備註  
- @No__t_0 的語義會定義完整的應用程式/偵錯工具。  
+ `IUnknown` 的語義會定義完整的應用程式/偵錯工具。  
   
  這個方法允許偵錯工具模型的自訂擴充功能;目前未執行。  
   
  呼叫 `IDebugApplication::FireDebuggerEvent` 時，會呼叫這個方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IApplicationDebugger 介面](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)

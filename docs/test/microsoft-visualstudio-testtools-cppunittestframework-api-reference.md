@@ -18,7 +18,7 @@ ms.locfileid: "71720518"
 
 本主題列出 `Microsoft::VisualStudio::CppUnitTestFramework` 命名空間的公用成員。 您可以使用這些 API 來撰寫以 Microsoft 原生單元測試架構為基礎的 C++ 單元測試。 本主題結尾有[使用範例](#example)。
 
-標頭檔和 lib 檔案位於 *@no__t 1Visual Studio 安裝資料夾 > \VC\Auxiliary\VS\UnitTest*。
+標頭和 lib 檔案位於 *\<Visual Studio 安裝資料夾 > \VC\Auxiliary\VS\UnitTest*。
 
 標頭和 lib 路徑會自動在原生測試專案中設定。
 
@@ -221,31 +221,31 @@ END_TEST_MODULE_ATTRIBUTE()
 TEST_OWNER(ownerAlias)
 ```
 
-以名稱 `Owner` 和 *ownerAlias* 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
+以名稱 `TEST_METHOD_ATTRIBUTE` 和 `Owner`ownerAlias*的屬性值定義*。
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
-以名稱 `Description` 和 *description* 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
+以名稱 `TEST_METHOD_ATTRIBUTE` 和 `Description`description*的屬性值定義*。
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
-以名稱 `Priority` 和 *priority* 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
+以名稱 `TEST_METHOD_ATTRIBUTE` 和 `Priority`priority*的屬性值定義*。
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
-以名稱 `WorkItem` 和 *workItem* 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
+以名稱 `TEST_METHOD_ATTRIBUTE` 和 `WorkItem`workItem*的屬性值定義*。
 
 ```cpp
 TEST_IGNORE()
 ```
 
-以名稱 `Ignore` 和 `true` 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
+以名稱 `TEST_METHOD_ATTRIBUTE` 和 `Ignore` 的屬性值定義 `true`。
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 

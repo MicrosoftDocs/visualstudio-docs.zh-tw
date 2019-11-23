@@ -1,5 +1,5 @@
 ---
-title: 必須是 ' @end ' |Microsoft Docs
+title: 必須是 '@end' |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -21,13 +21,13 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573445"
 ---
-# <a name="expected-end"></a>必須是 ' \@end '
-您嘗試建立有條件地編譯的程式碼區塊，但未在結尾包含<strong>@end</strong>語句。 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 語句可以透過在<strong>@if/ @end</strong>區塊內加以括住，藉以有條件地進行編譯。  
+# <a name="expected-end"></a>必須是 '\@end '
+您嘗試建立有條件地編譯的程式碼區塊，但未在結尾包含<strong>@end</strong>語句。 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 語句可以透過在<strong>@if/@end</strong>區塊內加以括住，藉以有條件地進行編譯。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 新增對應的<strong>@end</strong>語句。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [條件式編譯](../../javascript/advanced/conditional-compilation-javascript.md)   
  [條件式編譯變數](../../javascript/advanced/conditional-compilation-variables-javascript.md)

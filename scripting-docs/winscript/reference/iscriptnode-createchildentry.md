@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573609"
 ---
 # <a name="iscriptnode-createchildentry"></a>IScriptNode:: CreateChildEntry
-加入 `IScriptEntry` 的子實例。  
+加入 `IScriptEntry`的子實例。  
   
 ## <a name="syntax"></a>語法  
   
@@ -71,8 +71,8 @@ HRESULT CreateChildEntry(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- @No__t_0 介面表示網頁或其元素。 @No__t_0 介面（衍生自 `IScriptNode`）代表腳本區塊或函式物件。 @No__t_0 介面（衍生自 `IScriptEntry`）代表事件處理常式。  
+ `IScriptNode` 介面表示網頁或其元素。 `IScriptEntry` 介面（衍生自 `IScriptNode`）代表腳本區塊或函式物件。 `IScriptScriptlet` 介面（衍生自 `IScriptEntry`）代表事件處理常式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IScriptNode 介面](../../winscript/reference/iscriptnode-interface.md)   
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)

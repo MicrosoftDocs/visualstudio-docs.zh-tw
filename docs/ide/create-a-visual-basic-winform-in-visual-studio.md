@@ -72,17 +72,17 @@ ms.locfileid: "71681586"
    ![選擇 Windows Forms 應用程式 (.NET Framework) 的 Visual Basic 專案範本](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到你要尋找的項目嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
    >
-   > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
    > 接下來，在 Visual Studio 安裝程式中選擇 **.NET 桌面開發**工作負載。
    >
    > ![Visual Studio 安裝程式中的 .NET Core 工作負載](../ide/media/install-dot-net-desktop-env.png)
    >
-   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+   > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *HelloWorld*。 接著，選擇 [建立]。
+1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 **HelloWorld**。 接著，選擇 [建立]。
 
    ![在 [設定您的新專案] 視窗中，以 'HelloWorld' 命名您的專案](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
 
@@ -100,7 +100,7 @@ ms.locfileid: "71681586"
 
      ![按一下 [工具箱] 開啟 [工具箱] 視窗](../ide/media/vb-toolbox-toolwindow.png)
 
-     (如果未顯示 [工具箱] 快顯選項，您可以從功能表列開啟。 若要這麼做，請**參閱** > **工具箱**。 或按 **Ctrl**+**Alt**+**X**)。
+     (如果未顯示 [工具箱] 快顯選項，您可以從功能表列開啟。 若要這麼做，請**查看** > **工具箱**。 或按 **Ctrl**+**Alt**+**X**)。
 
 1. 按一下**釘選**圖示，以固定 [工具箱] 視窗。
 
@@ -129,7 +129,7 @@ ms.locfileid: "71681586"
 
 1. 從 [工具箱] 視窗中選取 [標籤] 控制項，然後將它拖放至表單的 [按一下這裡] 按鈕下方。
 
-1. 在 [**屬性**] 視窗的 [**設計**] 區段或 [ **（綁定）** ] 區段中，將 [ **Label1** ] 的名稱變更為 `lblHelloWorld`，然後按**enter**。
+1. 在 [**屬性**] 視窗的 [**設計**] 區段或 [（系結 **）** ] 區段中，將 [ **Label1** ] 的名稱變更為 `lblHelloWorld`，然後按**enter**鍵。
 
 ### <a name="add-code-to-the-form"></a>將程式碼新增至表單
 
@@ -137,7 +137,7 @@ ms.locfileid: "71681586"
 
       (或者，您可以在 [方案總管] 中展開 **Form1.vb**，然後按一下 **Form1**)。
 
-1. 在 [ **form1.vb] 視窗的 [** **私**用] 和 [**結束] 子**行之間，輸入或輸入 `lblHelloWorld.Text = "Hello World!"`，如下列螢幕擷取畫面所示：
+1. 在 [ **form1.vb] 視窗的 [** **私**用] 和 [**結束] 子**行之間，鍵入或輸入 `lblHelloWorld.Text = "Hello World!"`，如下列螢幕擷取畫面所示：
 
      ![將程式碼新增至表單](../ide/media/vb-add-code-to-the-form.png)
 
@@ -160,7 +160,7 @@ ms.locfileid: "71681586"
 若要深入了解，請繼續進行下列教學課程：
 
 > [!div class="nextstepaction"]
-> [教學課程：建立圖片檢視器 @ no__t-0
+> [教學課程：建立圖片檢視器](tutorial-1-create-a-picture-viewer.md)
 
 ## <a name="see-also"></a>另請參閱
 

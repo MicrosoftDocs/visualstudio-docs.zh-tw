@@ -57,7 +57,7 @@ HRESULT AddApplication(
 ## <a name="remarks"></a>備註  
  每當呼叫 `IProcessDebugManager::AddApplication` 時，進程 debug manager 就會呼叫這個方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IMachineDebugManagerCookie 介面](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
- [IMachineDebugManagerCookie：： RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)    
+ [IMachineDebugManagerCookie：： RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

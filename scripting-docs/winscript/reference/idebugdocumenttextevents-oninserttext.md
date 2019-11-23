@@ -53,6 +53,6 @@ HRESULT onInsertText(
 ## <a name="remarks"></a>備註  
  這個方法通常是由會逐漸載入內容的主控制項所呼叫，例如網頁瀏覽器。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentTextEvents 介面](../../winscript/reference/idebugdocumenttextevents-interface.md)   
  [IDebugDocumentTextEvents::onRemoveText](../../winscript/reference/idebugdocumenttextevents-onremovetext.md)

@@ -28,7 +28,7 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」的模組。 您
 此模組化設計的好處是，Visual Studio for Mac 可以擴充 -- 有許多擴充點可供自訂延伸模組套件建置之用。 目前的延伸模組套件範例包括支援 C# 和 F#、偵錯工具和專案範本。
 
 > [!NOTE]
-> 如果您有在增益集製作程式1.2 之前建立的增益集製作程式專案，您必須依照[這裡](https://mhut.ch/addinmaker/1.2)的步驟所述來遷移您的專案。
+> 如果您有在 Add-in Maker 1.2 之前建立的 Add-in Maker 專案，您需要依[這裡](https://mhut.ch/addinmaker/1.2)列出的步驟遷移專案。
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -155,7 +155,7 @@ public enum DateInserterCommands
 * 目標 Framework
 * 目標執行階段
 * VC 後端
-* Refactoring
+* 重構
 * 執行處理常式
 * 語法醒目提示
 
@@ -164,6 +164,6 @@ public enum DateInserterCommands
 > [!NOTE]
 > 我們目前正努力改善 Visual Studio for Mac 的擴充性情節。 如果您正在建立延伸模組並需要其他協助或相關資訊，或是想要提供意見反應，請填寫 [Visual Studio for Mac 延伸模組製作](https://aka.ms/vsmac-extensions-survey) \(英文\) 表單。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [開發 Visual Studio 延伸模組 (Windows 上)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

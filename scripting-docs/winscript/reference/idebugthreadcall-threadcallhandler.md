@@ -57,7 +57,7 @@ HRESULT ThreadCallHandler(
 ## <a name="remarks"></a>備註  
  這個方法會處理呼叫，以在偵錯工具執行緒中執行程式碼。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugThreadCall 介面](../../winscript/reference/idebugthreadcall-interface.md)   
- [IDebugApplication：： SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)    
+ [IDebugApplication：： SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)   
  [IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)

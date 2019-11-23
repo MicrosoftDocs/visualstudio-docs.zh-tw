@@ -42,6 +42,6 @@ HRESULT GetCount (
 ## <a name="return-value"></a>傳回值  
  傳回有效的 `HRESULT`，通常是 `S_OK`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IEnumDebugExtendedPropertyInfo 介面](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
  [ExtendedDebugPropertyInfo 結構](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

@@ -23,19 +23,19 @@ ms.locfileid: "71720795"
 ---
 # <a name="diagnosing-task-failures"></a>診斷工作失敗
 
-如果工作未記錄更特定的錯誤，則當 @no__t 衍生類別執行工具進程來傳回非零結束代碼時，就會發出 `MSB6006`。
+如果工作未記錄更特定的錯誤，則 <xref:Microsoft.Build.Utilities.ToolTask>衍生類別執行會傳回非零結束代碼的工具進程時，就會發出 `MSB6006`。
 
 ## <a name="identifying-the-failing-task"></a>識別失敗的工作
 
 當您遇到工作錯誤時，第一個步驟是識別失敗的工作。
 
-錯誤的文字會指定工具名稱（這是工作的 @no__t 所提供的易記名稱，或可執行檔的名稱）和數值結束代碼。 例如，在
+錯誤的文字會指定工具名稱（工作的執行 <xref:Microsoft.Build.Utilities.ToolTask.ToolName> 所提供的易記名稱，或可執行檔的名稱）和數值結束代碼。 例如，在
 
 ```text
 error MSB6006: "custom tool" exited with code 1.
 ```
 
-工具名稱為 `custom tool`，而結束代碼為 `1`。
+此工具名稱為 `custom tool`，且結束代碼為 `1`。
 
 ### <a name="command-line-builds"></a>命令列組建
 
@@ -49,11 +49,11 @@ Build FAILED.
   S:\MSB6006_demo\MSB6006_demo.csproj(19,5): error MSB6006: "custom tool" exited with code 1.
 ```
 
-此結果表示此錯誤發生在專案 `S:\MSB6006_demo\MSB6006_demo.csproj` 之檔案的第19行上，`S:\MSB6006_demo\MSB6006_demo.csproj`，在名為 `InvokeToolTask` 的目標中。
+此結果表示此錯誤發生在專案 `S:\MSB6006_demo\MSB6006_demo.csproj`中名為 `InvokeToolTask`之檔案 `S:\MSB6006_demo\MSB6006_demo.csproj`的第19行上所定義的工作中。
 
 ### <a name="in-visual-studio"></a>在 Visual Studio 中
 
-資料行 `Project`、`File` 和 `Line` 中的 Visual Studio 錯誤清單中提供相同的資訊。
+在 [資料行] `Project`、`File`和 `Line`的 [Visual Studio 錯誤清單] 中，會提供相同的資訊。
 
 ## <a name="finding-more-failure-information"></a>尋找更多失敗資訊
 

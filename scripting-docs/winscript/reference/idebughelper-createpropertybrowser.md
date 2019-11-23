@@ -61,7 +61,7 @@ HRESULT CreatePropertyBrowser(
 ## <a name="remarks"></a>備註  
  這個方法會傳回包裝 VARIANT 的屬性瀏覽器。  
   
-## <a name="see-also"></a>請參閱  
- [IDebugHelper：： CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)    
+## <a name="see-also"></a>另請參閱  
+ [IDebugHelper：： CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
  [IDebugHelper 介面](../../winscript/reference/idebughelper-interface.md)   
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)

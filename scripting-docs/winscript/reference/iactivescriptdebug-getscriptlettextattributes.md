@@ -73,9 +73,9 @@ HRESULT GetScriptletTextAttributes(
   
  提供這個呼叫的原因是程式碼片段傾向于運算式，而且可能會有與腳本區塊不同的語法。 如果它們具有相同的語法，則此方法的執行會與 `GetScriptTextAttributes` 方法的實作為相同。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptDebug 介面](../../winscript/reference/iactivescriptdebug-interface.md)   
- [IActiveScriptDebug：： GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)    
+ [IActiveScriptDebug：： GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)   
  [IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)   
- [IDebugDocumentText：： GetText](../../winscript/reference/idebugdocumenttext-gettext.md)    
+ [IDebugDocumentText：： GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

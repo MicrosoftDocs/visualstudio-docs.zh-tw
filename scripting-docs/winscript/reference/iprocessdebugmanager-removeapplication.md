@@ -49,6 +49,6 @@ HRESULT RemoveApplication(
 ## <a name="remarks"></a>備註  
  這個方法會從執行中的應用程式清單中移除應用程式。  
   
-## <a name="see-also"></a>請參閱  
- [IProcessDebugManager：： AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)    
+## <a name="see-also"></a>另請參閱  
+ [IProcessDebugManager：： AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
  [IProcessDebugManager 介面](../../winscript/reference/iprocessdebugmanager-interface.md)

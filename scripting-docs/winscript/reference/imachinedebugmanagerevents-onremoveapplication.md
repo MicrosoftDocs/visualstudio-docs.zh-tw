@@ -53,6 +53,6 @@ HRESULT onRemoveApplication(
 ## <a name="remarks"></a>備註  
  這個方法表示應用程式已從執行中的應用程式清單中移除。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IMachineDebugManagerEvents 介面](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
  [IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)

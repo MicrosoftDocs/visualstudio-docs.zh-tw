@@ -55,7 +55,7 @@ JSX 是 JavaScript 語法延伸模組，通常搭配 React 使用以描述 UI �
 
 Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它也可以轉換或封裝其他資源和資產。 它經常用來指定編譯器，例如 Babel 或 TypeScript，將 JSX 或 TypeScript 程式碼轉換為純文字 JavaScript。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 * 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 
@@ -85,7 +85,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 1. 建立新的專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，再鍵入 **Node.js**，然後選擇 [空白的 Node.js Web 應用程式] (JavaScript)。 在出現的對話方塊中，選擇 [建立]。
+    按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，再鍵入 **Node.js**，然後選擇 [空白的 Node.js Web 應用程式] (JavaScript)。 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]、輸入名稱 **NodejsWebAppBlank**，然後選擇 [確定]。

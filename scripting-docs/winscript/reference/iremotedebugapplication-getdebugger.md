@@ -49,6 +49,6 @@ HRESULT GetDebugger(
 ## <a name="remarks"></a>備註  
  這個方法會傳回目前已連接至應用程式的偵錯工具。  
   
-## <a name="see-also"></a>請參閱  
- [IRemoteDebugApplication：： ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)    
+## <a name="see-also"></a>另請參閱  
+ [IRemoteDebugApplication：： ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)   
  [IRemoteDebugApplication 介面](../../winscript/reference/iremotedebugapplication-interface.md)

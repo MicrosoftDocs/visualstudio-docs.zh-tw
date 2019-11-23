@@ -49,9 +49,9 @@ HRESULT onAddChild(
 ## <a name="remarks"></a>備註  
  當子節點加入至 debug 應用程式節點物件時，這個方法會處理事件。  
   
- @No__t_0 介面的實施者會引發此事件  
+ `IDebugApplicationNode` 介面的實施者會引發此事件  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugApplicationNodeEvents 介面](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents：： onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)    
+ [IDebugApplicationNodeEvents：： onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)   
  [IDebugApplicationNode 介面](../../winscript/reference/idebugapplicationnode-interface.md)

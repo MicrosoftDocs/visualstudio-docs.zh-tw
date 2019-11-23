@@ -26,7 +26,7 @@ ms.locfileid: "73428764"
 > [!IMPORTANT]
 > 本文需要 Vue.js 範本，該範本是從 Visual Studio 2017 15.8 版開始提供。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 * 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 
@@ -58,7 +58,7 @@ ms.locfileid: "73428764"
 1. 建立新的專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，再鍵入**基本 Vue.js**，然後選擇 [基本 Vue.js Web 應用程式] (JavaScript 或 TypeScript)。 在出現的對話方塊中，鍵入名稱 **basic-vuejs**，然後選擇 [建立]。
+    按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，再鍵入**基本 Vue.js**，然後選擇 [基本 Vue.js Web 應用程式] (JavaScript 或 TypeScript)。 在出現的對話方塊中，鍵入名稱 **basic-vuejs**，然後選擇 [建立]。
 
     ![Vue.js 範本](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
@@ -109,7 +109,7 @@ ms.locfileid: "73428764"
 
 1. 接著，選擇 [建置] > [建置方案] 來建置專案。 請檢查 [輸出] 視窗查看建置結果，然後從 [顯示輸出來源] 清單選擇 [建置]。
 
-    JavaScript Vue 專案範本（和較舊版本的 TypeScript 範本）會藉由設定 post 組建事件來使用 `build` npm 腳本。 如果您想要修改此設定，請從 Windows 檔案總管中開啟專案檔 ( *\<專案名稱\>.njsproj*)，並找出這行程式碼：
+    JavaScript Vue 專案範本（和較舊版本的 TypeScript 範本）會藉由設定 post 組建事件來使用 `build` npm 腳本。 如果您想要修改此設定，請從 Windows 檔案總管中開啟專案檔 (*專案名稱\<.njsproj\>)，並找出這行程式碼：
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>

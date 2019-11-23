@@ -29,12 +29,12 @@ var example = new Object();  // Create a new object called "example".
 var x = example();           // Try and call example as if it were a function.  
 ```  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 只在 `Function` 物件上呼叫**函數原型**方法。  
   
 - 請確定您使用函式呼叫運算子 `()` 只呼叫函數。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [函數物件](../../javascript/reference/function-object-javascript.md)   
  [prototype 屬性 (Object)](../../javascript/reference/prototype-property-object-javascript.md)

@@ -41,10 +41,10 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>參數  
  `pszCode`  
- [in，size_is （`cch`）]腳本區塊的文字。 這個字串不一定要終止 null。  
+ [in、size_is （`cch`）]腳本區塊的文字。 這個字串不一定要終止 null。  
   
  `cch`  
- 在@No__t_0 和 `pattr` 參數所使用的大小。  
+ 在`pszCode` 和 `pattr` 參數所使用的大小。  
   
  `pszDelimiter`  
  在腳本結尾分隔符號的位址。 從文字的資料流程剖析 `pszCode` 時，主機通常會使用分隔符號（例如兩個單引號）來偵測程式碼片段的結尾。 如果沒有用來識別腳本區塊結尾的分隔符號，請將此參數設為 Null。  
@@ -70,6 +70,6 @@ HRESULT GetScriptTextAttributes(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)   
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

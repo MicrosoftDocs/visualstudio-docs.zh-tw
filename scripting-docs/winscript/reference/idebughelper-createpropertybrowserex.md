@@ -65,7 +65,7 @@ HRESULT CreatePropertyBrowserEx(
 ## <a name="remarks"></a>備註  
  這個方法會傳回包裝 VARIANT 的屬性瀏覽器，並允許將 VARIANT 值或 VARTYPE 類型自訂轉換成字串。  
   
-## <a name="see-also"></a>請參閱  
- [IDebugHelper：： CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)    
+## <a name="see-also"></a>另請參閱  
+ [IDebugHelper：： CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   
  [IDebugHelper 介面](../../winscript/reference/idebughelper-interface.md)   
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)

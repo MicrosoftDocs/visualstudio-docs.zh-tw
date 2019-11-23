@@ -48,8 +48,8 @@ HRESULT GetApplication(
 |`E_NOTIMPL`|主機不直接支援調試。|  
   
 ## <a name="remarks"></a>備註  
- @No__t_0 方法提供一種方式，讓智慧型主機定義每個腳本所屬的應用程式物件。 腳本引擎應該嘗試呼叫這個方法來取得其包含的應用程式，並在失敗時 `IProcessDebugManager::GetDefaultApplication`。  
+ `GetApplication` 方法提供一種方式，讓智慧型主機定義每個腳本所屬的應用程式物件。 腳本引擎應該嘗試呼叫這個方法來取得其包含的應用程式，並在失敗時 `IProcessDebugManager::GetDefaultApplication`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptSiteDebug 介面](../../winscript/reference/iactivescriptsitedebug-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

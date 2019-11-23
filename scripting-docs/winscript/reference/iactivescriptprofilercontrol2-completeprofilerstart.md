@@ -46,6 +46,6 @@ HRESULT CompleteProfilerStart();
 ## <a name="remarks"></a>備註  
  呼叫 `IActiveScriptProfilerControl2::CompleteProfilerStart` 可確保已在呼叫堆疊中的函式的事件會被傳送。 當分析程式在目前索引標籤上的任何腳本引擎上啟動之後，就必須呼叫這個方法。可以針對任何腳本引擎呼叫方法。  
   
-## <a name="see-also"></a>請參閱  
- [IActiveScriptProfilerControl2：:P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)    
+## <a name="see-also"></a>另請參閱  
+ [IActiveScriptProfilerControl2：:P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
  [IActiveScriptProfilerControl2 介面](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

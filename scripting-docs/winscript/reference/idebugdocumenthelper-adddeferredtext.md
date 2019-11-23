@@ -52,15 +52,15 @@ HRESULT AddDeferredText(
 |`E_FAIL`|方法失敗。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法可讓主機延後提供要新增的字元，直到需要它們為止，同時允許 helper 產生精確的通知和大小資訊。 @No__t_0 參數是由主機定義的 cookie，代表文字的開始位置。 後續對 `IDebugDocumentText::GetText` 的呼叫必須提供此 cookie。 例如，在代表 DBCS 中文字的主控制項中，cookie 可以是位元組位移。  
+ 這個方法可讓主機延後提供要新增的字元，直到需要它們為止，同時允許 helper 產生精確的通知和大小資訊。 `dwTextStartCookie` 參數是由主機定義的 cookie，代表文字的開始位置。 後續對 `IDebugDocumentText::GetText` 的呼叫必須提供此 cookie。 例如，在代表 DBCS 中文字的主控制項中，cookie 可以是位元組位移。  
   
- 假設 `IDebugDocumentText::GetText` 的單一呼叫可以從 `AddDeferredText` 的多個呼叫中取得字元。 Helper 類別也可能會要求超過一次相同的延後字元範圍。  
+ 假設 `IDebugDocumentText::GetText` 的單一呼叫可以從 `AddDeferredText`的多個呼叫中取得字元。 Helper 類別也可能會要求超過一次相同的延後字元範圍。  
   
 > [!NOTE]
-> @No__t_0 的呼叫不應該與 `AddUnicodeText` 或 `AddDBCSText` 的呼叫混合使用。 如果發生這種情況，則會傳回 `E_FAIL`。  
+> `AddDeferredText` 的呼叫不應該與 `AddUnicodeText` 或 `AddDBCSText`的呼叫混合使用。 如果發生這種情況，則會傳回 `E_FAIL`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper：： AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
- [IDebugDocumentHelper：： AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+ [IDebugDocumentHelper：： AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper：： AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)

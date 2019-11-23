@@ -73,7 +73,7 @@ HRESULT GetInfoFromContext(
  `pichListAnchorPosition`  
  脫銷包含目前位置之內容的起始索引。 開始索引是相對於區塊的開頭。  
   
- 只有當 `dwListTypesRequested` 包含 SCRIPT_CMPL_MEMBERLIST、SCRIPT_CMPL_ENUMLIST 或 SCRIPT_CMPL_GLOBALLIST 時，才會填入此內容。 若為其他要求的清單類型，則結果為未定義。  
+ 只有當 `dwListTypesRequested` 包括 SCRIPT_CMPL_MEMBERLIST、SCRIPT_CMPL_ENUMLIST 或 SCRIPT_CMPL_GLOBALLIST 時，才會填入此內容。 若為其他要求的清單類型，則結果為未定義。  
   
  `pichFuncAnchorPosition`  
  脫銷包含目前位置之函式呼叫的起始索引。 開始索引是相對於區塊的開頭。  
@@ -83,7 +83,7 @@ HRESULT GetInfoFromContext(
  `pmemid`  
  脫銷函數的 MEMBERID，如 `IProvideMultipleClassInfo``ppunk` out 參數中的類型所定義。  
   
- 只有在 `dwListTypesRequested` 包含 SCRIPT_CMPL_PARAMLIST 時，才會填入此內容。  
+ 只有當 `dwListTypesRequested` 包含 SCRIPT_CMPL_PARAMLIST 時，才會填入此內容。  
   
  `piCurrentParameter`  
  脫銷包含目前位置之參數的索引。 如果目前的位置是在函式名稱上，則會傳回-1。  
@@ -102,6 +102,6 @@ HRESULT GetInfoFromContext(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IProvideMultipleClassInfo 介面](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)

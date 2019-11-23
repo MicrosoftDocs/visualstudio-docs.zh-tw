@@ -43,10 +43,10 @@ ms.locfileid: "72572532"
 |{n，}|n 個以上的重複|  
 |{n，m}|從 n 到 m 重複（含）|  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 請確定您的搜尋模式元素只包含合法的重複因素。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [正則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
  [正則運算式語法（JavaScript）](https://msdn.microsoft.com/library/1400241x)

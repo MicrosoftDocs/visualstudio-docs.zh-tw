@@ -28,7 +28,7 @@ ms.locfileid: "72572369"
 myFunction() = 42;  // Attempting to assign the value 42 to the result of the function call.  
 ```  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 請勿使用函式呼叫結果的值做為您可以*指派給*的東西。 不過，您可以將函式呼叫的結果指派*給變數*。  
   
@@ -42,7 +42,7 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     myFunction = new Function("return 42;");  
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [函數物件](../../javascript/reference/function-object-javascript.md)   
  [撰寫 JavaScript 程式碼](../../javascript/writing-javascript-code.md)   
  [函式](../../javascript/functions-javascript.md)

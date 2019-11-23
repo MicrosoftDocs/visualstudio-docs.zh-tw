@@ -37,7 +37,7 @@ ms.locfileid: "72985020"
 > [!NOTE]
 > 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 - 支援的 Windows 和 SharePoint 版本。
 
@@ -45,7 +45,7 @@ ms.locfileid: "72985020"
 
 首先，建立**空白的 SharePoint 專案**。 稍後，您將會在此專案中加入**應用程式頁面**專案。
 
-1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
+1. 啟動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
 2. 開啟 [**新增專案**] 對話方塊，展開您要使用之語言下的 [ **Office/SharePoint** ] 節點，然後選擇 [ **SharePoint 方案**] 節點。
 
@@ -103,7 +103,7 @@ ms.locfileid: "72985020"
 
      應用程式頁面程式碼檔案隨即在程式碼編輯器中開啟。
 
-2. 將下列方法加入 `SearchItems` 類別。 這個程式碼會藉由呼叫稍後將在本逐步解說中建立的方法，來處理 <xref:System.Web.UI.WebControls.DropDownList> 的 <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> 事件。
+2. 將下列方法加入 `SearchItems` 類別中。 這個程式碼會藉由呼叫稍後將在本逐步解說中建立的方法，來處理 <xref:System.Web.UI.WebControls.DropDownList> 的 <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> 事件。
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -113,12 +113,12 @@ ms.locfileid: "72985020"
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. 將下列方法加入 `SearchItems` 類別。 這個方法會逐一查看伺服器陣列上的所有網站，並搜尋目前使用者所建立或修改的專案。
+4. 將下列方法加入 `SearchItems` 類別中。 這個方法會逐一查看伺服器陣列上的所有網站，並搜尋目前使用者所建立或修改的專案。
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. 將下列方法加入 `SearchItems` 類別。 這個方法會顯示資料表中目前使用者所建立或修改的專案。
+5. 將下列方法加入 `SearchItems` 類別中。 這個方法會顯示資料表中目前使用者所建立或修改的專案。
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
@@ -151,7 +151,7 @@ ms.locfileid: "72985020"
 
 - [為 web 元件或應用程式頁面建立可重複使用的控制項](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[如何：建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)
-[應用程式 _layouts 頁面類型](/previous-versions/office/aa979604(v=office.14))
+如何：
+[應用程式 _Layouts 頁面類型](/previous-versions/office/aa979604(v=office.14))[建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)

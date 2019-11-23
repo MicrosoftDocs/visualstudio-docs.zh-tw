@@ -50,6 +50,6 @@ HRESULT ConnectDebugger(
 ## <a name="remarks"></a>備註  
  一次只能連接一個偵錯工具。 如果偵錯工具已經連接，這個方法就會失敗。  
   
-## <a name="see-also"></a>請參閱  
- [IRemoteDebugApplication：： GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)    
+## <a name="see-also"></a>另請參閱  
+ [IRemoteDebugApplication：： GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   
  [IRemoteDebugApplication 介面](../../winscript/reference/iremotedebugapplication-interface.md)

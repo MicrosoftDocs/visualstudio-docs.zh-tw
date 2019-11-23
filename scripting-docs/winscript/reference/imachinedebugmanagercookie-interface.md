@@ -27,7 +27,7 @@ ms.locfileid: "72573891"
   
  腳本偵錯工具會在進程 Debug Manager （PDM）上呼叫 `IDebugCookie::SetDebugCookie` 方法。 然後，PDM 會連同任何要求一起傳送此 cookie，以使用 `IMachineDebugManagerCookie` 介面的方法，在電腦 Debug Manager （MDM）中新增或移除腳本應用程式。 然後，MDM 會通知每個變更的偵錯工具，但具有該 cookie 的每一項。  
   
- 除了繼承自 `IUnknown` 的方法之外，`IMachineDebugManagerCookie` 介面也會公開下列方法。  
+ 除了繼承自 `IUnknown`的方法之外，`IMachineDebugManagerCookie` 介面也會公開下列方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
@@ -37,6 +37,6 @@ ms.locfileid: "72573891"
 |[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|傳回目前正在執行之應用程式清單的列舉值。|  
 |[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|從執行中的應用程式清單中移除應用程式。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IMachineDebugManager 介面](../../winscript/reference/imachinedebugmanager-interface.md)   
  [IDebugCookie 介面](../../winscript/reference/idebugcookie-interface.md)

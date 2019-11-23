@@ -49,6 +49,6 @@ HRESULT GetDocumentAttributes(
 ## <a name="remarks"></a>備註  
  這個方法會傳回檔的屬性。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)   
  [TEXT_DOC_ATTR 常數](../../winscript/reference/text-doc-attr-constants.md)

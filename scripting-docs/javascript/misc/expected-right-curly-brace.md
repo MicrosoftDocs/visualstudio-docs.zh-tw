@@ -24,10 +24,10 @@ ms.locfileid: "72577552"
 # <a name="expected-"></a>必須是 '}'
 您未包含用來標記函式主體、迴圈、程式碼區塊或物件初始化運算式結尾的右大括弧。 這個錯誤的其中一個範例是**for**迴圈，只有左括弧標記迴圈的主體。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 加入標記函數、迴圈、區塊或物件初始化運算式結尾的右大括弧。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [函數物件](../../javascript/reference/function-object-javascript.md)   
  [控制程式流程](../../javascript/controlling-program-flow-javascript.md)

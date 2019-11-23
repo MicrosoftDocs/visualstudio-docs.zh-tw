@@ -31,15 +31,15 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 如果您有參考 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的舊版 MSTest 測試專案，而您不想要移至較新的 MSTest NuGet 套件，請升級至 Visual Studio 2019 或 Visual Studio 2017。
 
-在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 您可以藉由執行解決方案的明確組建來還原套件（從最上層 Visual Studio 功能表中選取 [**組建**]  >  [**重建方案**]），或以滑鼠右鍵按一下方案，然後選取 [**還原 NuGet 套件**]啟用生活中的單元測試之前。
+在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 您可以藉由執行解決方案的明確組建（從最上層 Visual Studio 功能表中選取 [**組建**] > [**重建解決方案**]）來還原封裝，或是以滑鼠右鍵按一下方案並選取 [**還原 NuGet 套件**]，然後再啟用即時單元測試。
 
 ## <a name="net-core-support"></a>.NET Core 支援
 
 **Live Unit Testing 是否可以與 .NET Core 搭配使用？**
 
-可以。 Live Unit Testing 可以與 .NET Core 和 .NET Framework 搭配使用。
+是的。 Live Unit Testing 可以與 .NET Core 和 .NET Framework 搭配使用。
 
-## <a name="configuration"></a>Configuration
+## <a name="configuration"></a>組態
 
 **當我開啟 Live Unit Testing 時，為什麼它不會運作？**
 
@@ -85,11 +85,11 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 </Target>
 ```
 
-## <a name="error-messages-with-outputpath-or-outdir"></a>@No__t_0OutputPath > 或 \<OutDir > 的錯誤訊息
+## <a name="error-messages-with-outputpath-or-outdir"></a>\<OutputPath > 或 \<OutDir > 的錯誤訊息
 
 **當 Live Unit Testing 嘗試建立我的解決方案時，為什麼會收到下列錯誤：「.。。似乎會無條件地設定 `<OutputPath>` 或 `<OutDir>`。Live Unit Testing 不會從輸出元件執行測試」？**
 
-如果您解決方案的建置流程會無條件地覆寫 `<OutputPath>` 或 `<OutDir>`，使它非為 `<BaseOutputPath>` 的子目錄，即會發生此錯誤。 在這種情況下，Live Unit Testing 將無法運作，因為它也會覆寫這些值，以確保組建成品會卸除到 `<BaseOutputPath>` 下方的資料夾中。 如果您必須覆寫您想要在一般組建中卸除組建成品的位置，請根據 `<BaseOutputPath>` 有條件地覆寫 `<OutputPath>`。
+如果您解決方案的建置流程會無條件地覆寫 `<OutputPath>` 或 `<OutDir>`，使它非為 `<BaseOutputPath>` 的子目錄，即會發生此錯誤。 在這種情況下，Live Unit Testing 將無法運作，因為它也會覆寫這些值，以確保組建成品會卸除到 `<BaseOutputPath>` 下方的資料夾中。 如果您必須覆寫您想要在一般組建中卸除組建成品的位置，請根據 `<OutputPath>` 有條件地覆寫 `<BaseOutputPath>`。
 
 例如，如果您的組建會覆寫 `<OutputPath>`，如下所示：
 
@@ -136,7 +136,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 - 在 Live Unit Testing 中探索和執行測試會使用 `TestPlatform` 的第 2 版，而 [測試總管] 視窗則會使用第 1 版。 儘管如此，您在大多數情況下不會注意到任何差異。
 
-- [**測試瀏覽器**] 預設會在單一執行緒單元（STA）中執行測試，而 Live Unit Testing 會在多執行緒的公寓（MTA）中執行測試。 若要在 Live Unit Testing 於 STA 中執行 MSTest 測試，請利用可在 `MSTest.STAExtensions 1.0.3-beta` NuGet 封裝中找到的 `<STATestMethod>` 或 `<STATestClass>` 屬性，來裝飾測試方法或包含類別。 針對 NUnit，請使用 `<RequiresThread(ApartmentState.STA)>` 屬性來裝飾測試方法，而針對 xUnit，請使用 `<STAFact>` 屬性。
+- [**測試瀏覽器**] 預設會在單一執行緒單元（STA）中執行測試，而 Live Unit Testing 會在多執行緒的公寓（MTA）中執行測試。 若要在 Live Unit Testing 於 STA 中執行 MSTest 測試，請利用可在 `<STATestMethod>` NuGet 封裝中找到的 `<STATestClass>` 或 `MSTest.STAExtensions 1.0.3-beta` 屬性，來裝飾測試方法或包含類別。 針對 NUnit，請使用 `<RequiresThread(ApartmentState.STA)>` 屬性來裝飾測試方法，而針對 xUnit，請使用 `<STAFact>` 屬性。
 
 ## <a name="exclude-tests"></a>排除測試
 
@@ -215,6 +215,6 @@ public class Class1
 
 - 建立名為 `VS_UTE_DIAGNOSTICS` 的使用者層級環境變數，並將它設為 1 (或任何值)，然後重新啟動 Visual Studio。 現在您應該會在 Visual Studio 的 [輸出 - 測試] 索引標籤中看見許多記錄。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [即時單元測試](live-unit-testing.md)
