@@ -24,11 +24,11 @@ ms.locfileid: "72573670"
 # <a name="syntax-error-in-regular-expression-javascript"></a>規則運算式中的語法錯誤 (JavaScript)
 搜尋字串的結構違反了 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 正則運算式的一或多個語法規則。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 請確定正則運算式搜尋字串的結構遵守 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 正則運算式語法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [正則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
- [正則運算式語法（JavaScript）](https://msdn.microsoft.com/library/1400241x)    
+ [正則運算式語法（JavaScript）](https://msdn.microsoft.com/library/1400241x)   
  [compile 方法 (規則運算式)](../../javascript/reference/compile-method-regular-expression-javascript.md)
