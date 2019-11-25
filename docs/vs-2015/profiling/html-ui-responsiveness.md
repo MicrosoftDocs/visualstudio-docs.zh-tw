@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8078ad03661e8430158106aa2d0d40f844eb6c3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: af2b71dd2169500b1c4a75ed59292779959d31a0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824843"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299666"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI 回應性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "67824843"
   
      如果您要變更分析工具的分析目標，請選擇 [變更目標]  。  
   
-     ![變更分析目標](../profiling/media/js-tools-target.png "JS_Tools_Target")  
+     ![變更分析目標](../profiling/media/js-tools-target.png "|::ref1::|")  
   
      下列選項適用於分析目標：  
   
@@ -100,7 +100,7 @@ ms.locfileid: "67824843"
   
 8. 如果您加入了使用者標記，標記會出現在分析工具的 [檢視診斷工作階段時間軸](#Ruler) 中。 下圖顯示用來在程式碼中指定特定作業的單一使用者標記。  
   
-     ![顯示使用者標記的診斷尺規](../profiling/media/js-htmlvizprofiler-usermark.png "JS_HTMLVizProfiler_UserMark")  
+     ![顯示使用者標記的診斷尺規](../profiling/media/js-htmlvizprofiler-usermark.png "|::ref2::|")  
   
 9. 利用使用者標記、應用程式週期事件或圖表中看得到的資料，來識別時間軸中的關切區域及分析工具圖表。 下面是一些可協助您分析及使用圖表資料的指導方針：  
   
@@ -114,7 +114,7 @@ ms.locfileid: "67824843"
   
      下圖顯示具有反白顯示之感興趣的區域的 CPU 使用率圖表。  
   
-     ![CPU 使用率圖形](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
+     ![CPU 使用率圖表](../profiling/media/js-htmlvizprof-cpu-util.png "|::ref3::|")  
   
 11. 使用 [檢視時間軸詳細資料](#TimelineDetails) 以取得有關執行頻率太高或花費太多時間完成之事件的詳細資訊。 例如，請查看下列項目：  
   
@@ -157,7 +157,7 @@ if (performance && performance.mark) {
   
  下圖顯示具有單一使用者標記和其工具提示的診斷尺規。  
   
- ![顯示使用者標記的診斷尺規](../profiling/media/js-htmlvizprofiler-usermark.png "JS_HTMLVizProfiler_UserMark")  
+ ![顯示使用者標記的診斷尺規](../profiling/media/js-htmlvizprofiler-usermark.png "|::ref4::|")  
   
  您也可以在時間軸詳細資料檢視中，建立工具所產生的事件，以顯示兩個使用者標記之間經歷的時間。 下列程式碼會加入第二個使用者標記，以及執行兩個使用者標記之間所經歷的測量時間 (上一個程式碼會顯示第一個使用者標記)。  
   
@@ -172,7 +172,7 @@ if (performance.mark && performance.measure) {
   
  在時間軸詳細資料檢視中，持續時間測量會顯示成 [使用者測量]  事件，選取時會顯示詳細資訊。  
   
- ![時間軸詳細資料檢視中的使用者測量事件](../profiling/media/js-htmlvizprofiler-user-measure.png "JS_HTMLVizProfiler_User_Measure")  
+ ![時間軸詳細資料檢視中的使用者測量事件](../profiling/media/js-htmlvizprofiler-user-measure.png "|::ref5::|")  
   
 ## <a name="AnalyzeData"></a> 分析資料  
  下列章節提供有助於解譯出現在分析工具的資料相關資訊。  
@@ -182,7 +182,7 @@ if (performance.mark && performance.measure) {
   
  下圖顯示會針對數個應用程式週期事件顯示工具提示的範例診斷工作階段時間軸：  
   
- ![診斷工作階段時尺規](../profiling/media/js-htmlvizprof-ruler.png "JS_HTMLVizProf_Ruler")  
+ ![診斷工作階段尺規](../profiling/media/js-htmlvizprof-ruler.png "|::ref6::|")  
   
  時間軸顯示應用程式週期事件 (如啟用事件) 發生的時間，而且顯示可加入至程式碼的使用者標記 (使用者標記三角形)。 您可以選取事件，以顯示含有詳細資訊的工具提示。 如需使用者標記的詳細資訊，請參閱本主題中的 [標記程式碼以供分析](#ProfileMark) 。  
   
@@ -202,7 +202,7 @@ if (performance.mark && performance.measure) {
   
  這個範例顯示 CPU 使用率圖形的外觀：  
   
- ![CPU 使用率圖形](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
+ ![CPU 使用率圖表](../profiling/media/js-htmlvizprof-cpu-util.png "|::ref7::|")  
   
  使用這個圖形：  
   
@@ -227,7 +227,7 @@ if (performance.mark && performance.measure) {
   
   這個範例顯示視覺輸送量圖形的外觀：  
   
-  ![視覺輸送量圖形](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
+  ![視覺輸送量圖表](../profiling/media/js-htmlvizprof-vizthru.png "|::ref8::|")  
   
   使用視覺輸送量圖形：  
   
@@ -247,7 +247,7 @@ if (performance.mark && performance.measure) {
   
  這個範例顯示當選取 DOM Click 事件的事件接聽程式時，時間軸詳細資料圖形的外觀：  
   
- ![時間軸詳細資料圖形](../profiling/media/js-htmlvizprof-timelinedet.png "JS_HTMLVizProf_TimelineDet")  
+ ![時間軸詳細資料圖表](../profiling/media/js-htmlvizprof-timelinedet.png "|::ref9::|")  
   
  在上圖中，如果選取 [ **事件名稱** ] 一欄中的 [ **spinAction** ] 事件處理常式連結，就會帶領您前往原始程式碼中這個事件處理常式的所在位置。 在右窗格中，[ **回呼函式** ] 屬性可提供原始程式碼的相同連結。 其他屬性也會提供關於事件的資訊，例如相關的 DOM 項目。  
   
@@ -279,14 +279,14 @@ if (performance.mark && performance.measure) {
 ### <a name="FilterTimelineDetails"></a> 篩選時間軸詳細資料  
  您可以從特定事件的內容功能表中選取 [ **篩選事件** ]，在時間軸詳細資料中篩選並檢視特定事件。 選擇這個選項時，就會將時間軸和資料格檢視的範圍設定為選取的事件。 [CPU 使用率 (%)] 圖表中的選取範圍也會設定為特定事件。  
   
- ![將時間軸篩選至某個事件](../profiling/media/js-htmlvizprofiler-filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
+ ![篩選事件的時間軸](../profiling/media/js-htmlvizprofiler-filtertoevent.png "|::ref10::|")  
   
 ### <a name="FilterEvents"></a> 篩選事件  
  您可以從時間軸詳細資料圖表篩選掉一些事件以精煉資料，或是排除對效能方案而言不必要的資料。 您可以依事件名稱或事件持續時間進行篩選，或是依此處所說明的特定篩選條件進行篩選。  
   
  若要篩選掉影像解碼、理論式下載和 GC 事件，請從下方窗格中的篩選圖示取消選取 [背景活動]  選項。 由於這些事件幾乎都不必採取動作，因此預設並不會顯示。  
   
- ![篩選時間軸中的事件](../profiling/media/js-htmlvizprofiler-event-filter.png "JS_HTMLVizProfiler_Event_Filter")  
+ ![在時間軸上篩選事件](../profiling/media/js-htmlvizprofiler-event-filter.png "|::ref11::|")  
   
  若要篩選掉 HTTP 要求事件，請從下方窗格中的篩選圖示取消選取 [網路流量]  選項。 這些事件預設會在時間軸詳細資料圖表中顯示。  
   
@@ -300,11 +300,11 @@ if (performance.mark && performance.measure) {
 ### <a name="GroupFrames"></a> 依畫面格分組事件  
  您可以將出現在時間軸詳細資料檢視中的事件，分組成個別畫面格。 這些畫面格事件是工具產生的事件，代表繪畫事件之間所發生之所有 UI 執行緒工作最上層的事件容器。 若要啟用此檢視，請選取 [依畫面格分組最上層事件]  。  
   
- ![依畫面格分組最上層事件](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![依時段將最上層事件分組](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "|::ref12::|")  
   
  當您依畫面格分組事件時，時間軸詳細資料檢視中的每個最上層事件，各代表一個畫面格。  
   
- ![依畫面格分組的時間軸事件](../profiling/media/js-htmlvizprofiler-frame-grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
+ ![依時段分組的時間軸事件](../profiling/media/js-htmlvizprofiler-frame-grouping.png "|::ref13::|")  
   
 ## <a name="SaveSession"></a> 儲存診斷工作階段  
  在 Visual Studio 中，當您關閉與診斷工作階段相關聯的索引標籤時，可以儲存診斷工作階段。 已儲存的工作階段可以在稍後重新開啟。  
@@ -356,7 +356,7 @@ if (performance.mark && performance.measure) {
   
 ## <a name="Tips"></a> 其他資訊  
   
-- 請觀賞 Build 2013 大會中關於 UI 回應性分析工具的 [影片](http://channel9.msdn.com/Events/Build/2013/3-316) 。  
+- 請觀賞 Build 2013 大會中關於 UI 回應性分析工具的 [影片](https://channel9.msdn.com/Events/Build/2013/3-316) 。  
   
 - 讀取有關使用 JavaScript 針對 Windows 建置的 Windows 市集應用程式的效能提示。 如需詳細資訊，請參閱 [使用 JavaScript 的 Windows 市集應用程式的效能最佳做法](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx)。  
   
