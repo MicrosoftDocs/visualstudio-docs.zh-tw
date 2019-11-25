@@ -1,7 +1,7 @@
 ---
 title: 將 Node.js 應用程式發佈到 Linux App Service
 description: 您可以將 Visual Studio 中建立的 Node.js 應用程式發佈到 Azure 上的 Linux App Service
-ms.date: 11/1/2018
+ms.date: 11/22/2019
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e02e232f8ebfd9454842de5aabaa1706a0df6202
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
+ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695914"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74474011"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>將 Node.js 應用程式發佈到 Azure (Linux App Service)
 
@@ -36,7 +36,7 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
 > * 在 Azure 上建立 Linux App Service
 > * 部署至 Linux
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 * 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 
@@ -130,15 +130,17 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
     > [!WARNING]
     > App Service 部署流程會使用一組啟發學習法，來決定要嘗試和執行哪一種類型的應用程式。 如果在已部署的內容中偵測到 .*sln* 檔案，則會假設正在部署 MSBuild 型專案。 上述新增的設定會覆寫此邏輯，並明確指定這是 Node.js 應用程式。 若沒有此設定，當 .*sln* 檔案是部署至 App Service 之存放庫的一部分時，Node.js 應用程式將無法部署。
 
-7. 完成部署後，請開啟 App Service，然後選取 [部署選項]。
+7. Under **Application settings**, add another setting with a name of `WEBSITE_NODE_DEFAULT_VERSION` and a value of `8.9.0`.
+
+8. 完成部署後，請開啟 App Service，然後選取 [部署選項]。
 
     ![部署選項](../javascript/media/azure-deployment-options.png)
 
-8. 按一下 [選擇來源]，然後選擇 [GitHub]，並設定任何必要的權限。
+9. 按一下 [選擇來源]，然後選擇 [GitHub]，並設定任何必要的權限。
 
     ![GitHub 權限](../javascript/media/azure-choose-source.png)
 
-9. 選取要發佈的存放庫和分支，然後選取 [確定]。
+10. 選取要發佈的存放庫和分支，然後選取 [確定]。
 
     ![發佈到 Linux App Service](../javascript/media/azure-repo-and-branch.png)
 
@@ -173,7 +175,7 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
 * 如果 node.exe 處理序終止 (亦即，發生未處理的例外狀況)，容器就會重新啟動。
 * 當容器啟動時，它會執行各種不同的啟發學習法，來了解如何啟動 Node.js 處理序。 在 [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js) 上可以查看實作的詳細資料。
 * 您可以透過 SSH 連線至執行中的容器來進行調查。 使用 Azure 入口網站即可輕鬆完成此動作。 請選取 App Service，然後向下捲動工具清單，直到到達 [開發工具] 區段底下的 [SSH]。
-* 若要協助進行疑難排解，請移至 App Service 的 [診斷記錄檔] 設定，並將 [Docker 容器記錄] 設定從 [關閉] 變更為 [檔案系統]。 記錄檔建立在容器的 */home/LogFiles/*_docker.log* 下，而且可以使用 SSH 或 FTP(S) 在電腦上進行存取。
+* 若要協助進行疑難排解，請移至 App Service 的 [診斷記錄檔] 設定，並將 [Docker 容器記錄] 設定從 [關閉] 變更為 [檔案系統]。 記錄檔建立在容器的 */home/LogFiles/* _docker.log* 下，而且可以使用 SSH 或 FTP(S) 在電腦上進行存取。
 * 您可以將自訂網域名稱指派給網站，而不是預設指派的 *.azurewebsites.net URL。 如需詳細資料，請參閱[對應自訂網域](/azure/app-service/app-service-web-tutorial-custom-domain)主題。
 * 在移至生產環境之前，部署至預備網站以進行進一步測試是最佳做法。 如需如何設定此動作的詳細資料，請參閱[建立預備環境](/azure/app-service/web-sites-staged-publishing)主題。
 * 如需更多常見問題，請參閱 [Linux 上的 App Service 常見問題集](/azure/app-service/containers/app-service-linux-faq)。
