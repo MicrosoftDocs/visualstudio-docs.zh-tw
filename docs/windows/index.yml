@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 905fd0b3f9ad37125ae8cccd5dab30f0517d16a1
-  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
+  ms.openlocfilehash: 2b2fffb32ba16111449c2876769e70d9c687b976
+  ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 11/15/2019
-  ms.locfileid: "74119712"
+  ms.lasthandoff: 11/25/2019
+  ms.locfileid: "74473998"
 highlightedContent:
   items:
   - title: 設定與安裝
@@ -157,8 +157,8 @@ additionalContent:
     - title: 共同作業
       summary: 在共同作業的即時環境中，共用、編輯和偵錯程式碼。
       url: /visualstudio/liveshare/
-    - title: 使用容器進行開發
-      summary: 使用容器來隔離模組化元件，並改善延展性。
+    - title: 使用 Docker 容器開發
+      summary: 使用 Docker 容器隔離模組化元件及改善延展性。
       url: ../containers/index.yml
   - title: 工作負載
     items:
