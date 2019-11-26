@@ -36,7 +36,7 @@ ms.locfileid: "74300913"
 
  本總覽的其餘部分是逐步解說，介紹在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中建立和使用特定領域語言的基本作業。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  若要定義 DSL，您必須已安裝下列元件：
 
 |||
@@ -58,7 +58,7 @@ ms.locfileid: "74300913"
 
     ![建立 DSL 對話方塊](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
-4. 在 [**名稱**] 方塊中，輸入**FamilyTree**。 按一下 [**確定**]。
+4. 在 [**名稱**] 方塊中，輸入**FamilyTree**。 按一下 [確定]。
 
     [**網域指定的語言嚮導]** 隨即開啟，並顯示範本 DSL 解決方案的清單。
 
@@ -72,7 +72,7 @@ ms.locfileid: "74300913"
 
    - 選擇與您電腦中的任何應用程式無關的延伸模組，或是在您要安裝 DSL 的任何電腦上。 例如， **.docx**和**htm**會是無法接受的副檔名。
 
-   - 如果您已輸入的副檔名正用來做為 DSL，精靈將會警告您。 請考慮使用不同的副檔名。 您也可以重設 Visual Studio SDK Experimental 執行個體以清除舊的實驗設計工具。 請依序按一下 [開始]、[所有程式]、[Microsoft Visual Studio 2010 SDK]、[工具]，然後按一下 [重設 Microsoft Visual Studio 2010 Experimental 執行個體]。
+   - 如果您已輸入的副檔名正用來做為 DSL，精靈將會警告您。 請考慮使用不同的副檔名。 您也可以重設 Visual Studio SDK Experimental 執行個體以清除舊的實驗設計工具。 依序按一下 **開始**、**所有程式**、 **Microsoft Visual Studio 2010 SDK**、**工具**，然後**重設 Microsoft Visual Studio 2010 實驗實例**。
 
 7. 檢查其他頁面，然後按一下 **[完成]** 。
 
@@ -101,7 +101,7 @@ ms.locfileid: "74300913"
 
 #### <a name="to-experiment-with-the-dsl"></a>若要使用 DSL 進行實驗
 
-1. 在 [方案總管] 工具列中，按一下 [轉換所有範本]。 這會從 Dsldefinition.dsl 檔重新產生大部分的原始程式碼。
+1. 按一下 [方案總管] 工具列中的 [**轉換所有範本**]。 這會從 Dsldefinition.dsl 檔重新產生大部分的原始程式碼。
 
    > [!NOTE]
    > 每當您變更 Dsldefinition.dsl 檔時，必須先按一下 [**轉換所有範本**]，然後再重建方案。 您可以自動化此步驟。 如需詳細資訊，請參閱[如何自動化轉換所有範本](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。
@@ -216,7 +216,7 @@ ms.locfileid: "74300913"
 
     2. 在方案總管的工具列中，按一下 [**轉換所有範本**]。
 
-    3. 按 F5。 等到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗實例出現為止。
+    3. 請按 F5。 等到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗實例出現為止。
 
 4. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗實例中的調試方案中，開啟測試模型檔案。 從 [工具箱] 將專案拖曳至其上。 請注意，[DSL Explorer] 中的工具標題和類型名稱已變更。
 
@@ -394,7 +394,7 @@ ms.locfileid: "74300913"
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>若要重設 Visual Studio 實驗實例
 
-1. 請依序按一下 [開始]、[所有程式]、[Microsoft Visual Studio 2010 SDK]、[工具]，然後按一下 [重設 Microsoft Visual Studio 2010 Experimental 執行個體]。
+1. 依序按一下 **開始**、**所有程式**、 **Microsoft Visual Studio 2010 SDK**、**工具**，然後**重設 Microsoft Visual Studio 2010 實驗實例**。
 
 2. 重建您仍想要使用的任何實驗性 Dsl 或其他實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組。
 

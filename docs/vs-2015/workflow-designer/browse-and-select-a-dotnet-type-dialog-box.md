@@ -37,35 +37,35 @@ ms.locfileid: "74297619"
 
 #### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>若要從型別瀏覽器選取值或參考型別
 
-1. 在 [**型別名稱**] 方塊中，輸入您要使用之型別的名稱。
+1. 在 [**類型名稱**] 方塊中，輸入您要使用之類型的名稱。
 
-2. 請執行下列其中一項動作：
+2. 執行下列任一步驟：
 
-    - 一旦您要使用的型別名稱顯示在 [**型別名稱**] 方塊中，請按兩下該型別以選取。
+    - 一旦您要使用的型別名稱出現在 [**型別名稱**] 方塊的樹狀結構中，請按兩下該型別來選取它。
 
-    - 在 [**型別名稱**] 方塊中輸入足以識別您要使用之型別的唯一名稱，然後按 Enter 鍵選取該型別。
+    - 在 [**類型名稱**] 方塊中輸入足夠的字元，以唯一識別您想要使用的類型，然後按 enter 鍵以選取類型
 
 #### <a name="to-select-a-generic-type-from-the-type-browser"></a>若要從型別瀏覽器選取泛型型別
 
-1. 在 [**型別名稱**] 方塊中，輸入您要使用之型別的名稱。
+1. 在 [**類型名稱**] 方塊中，輸入您要使用之類型的名稱。
 
-2. 一旦您要使用的型別名稱顯示在 [**型別名稱**] 方塊中，請按一下該型別加以選取，下拉式方塊就會出現。
+2. 一旦您要使用的型別名稱出現在 [**型別名稱**] 方塊的樹狀結構中，請按一下該型別來選取它，這樣就會出現下拉式方塊。
 
-     選取您要使用的型別，即可關閉下拉式方塊中的泛型，然後按一下 [**確定**]。
+     從下拉式方塊中選取您要用來關閉 [一般] 的類型，然後按一下 **[確定]** 。
 
 ## <a name="types-displayed-in-the-type-browser"></a>型別瀏覽器中顯示的型別
- 型別瀏覽器中顯示的型別，可能會因型別瀏覽器啟動的方式而異。 如果型別瀏覽器是從 **vs2010** 內部某個工作流程專案啟動，預設就會顯示參考組件與參考專案中的所有型別。 如果型別瀏覽器是從 **vs2010** 專案系統外部 (例如在重新裝載的工作流程應用程式中，或是在獨立工作流程檔案中) 啟動，預設就會顯示 AppDomain 中載入之所有組件的型別。
+ 型別瀏覽器中顯示的型別，可能會因型別瀏覽器啟動的方式而異。 如果類型瀏覽器是從**vs2010**內的工作流程專案啟動，則預設會顯示參考元件和參考專案中的所有類型。 如果類型瀏覽器是從**vs2010**專案系統的外部啟動（例如在重新裝載工作流程應用程式或獨立工作流程檔案中），則會顯示從 AppDomain 載入之所有元件中的類型。
 
  活動設計工具開發人員可以篩選型別瀏覽器中的型別。 對於任何特定活動，可以只顯示一個子集的型別。 例如，在 <xref:System.Activities.Statements.TryCatch> 活動中，型別瀏覽器中只顯示衍生自 <xref:System.Exception> 的型別。
 
 ## <a name="filtering-search-results-in-the-type-browser"></a>篩選型別瀏覽器中的搜尋結果
- 在您輸入更多字元尋找符合型別的同時，[**型別名稱**] 方塊中的型別清單會縮短。 在已篩選清單中，只會顯示其完整限定名稱開頭是您輸入字串的型別，或是其簡短名稱開頭是您輸入字串的型別。
+ 當您輸入更多字元來尋找相符項時，[**類型名稱**] 方塊中的類型清單會變短。 在已篩選清單中，只會顯示其完整限定名稱開頭是您輸入字串的型別，或是其簡短名稱開頭是您輸入字串的型別。
 
  例如：
 
-1. 輸入 **Operation** 會與 <xref:System.OperationCanceledException> 相符，但不會有 <xref:System.InvalidOperationException>。 若要符合 <xref:System.InvalidOperationException>，一開始請輸入 System.I 或 Invalid。
+1. 輸入**作業**會符合 <xref:System.OperationCanceledException>，但不會 <xref:System.InvalidOperationException>。 若要符合 <xref:System.InvalidOperationException>，一開始請輸入 System.I 或 Invalid。
 
-2. 輸入 **Generic** 會與 <xref:System.GenericUriParser> 相符，但不會有 <xref:System.Collections.Generic> 命名空間中的型別。 若要搜尋 <xref:System.Collections.Generic> 命名空間中的型別，請輸入命名空間的完整限定名稱。
+2. 輸入**泛型**符合 <xref:System.GenericUriParser>，但不是 <xref:System.Collections.Generic> 命名空間中的類型。 若要搜尋 <xref:System.Collections.Generic> 命名空間中的型別，請輸入命名空間的完整限定名稱。
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>使用型別瀏覽器對話方塊選取服務合約
  選取服務合約型別時，型別瀏覽器只顯示具有 <xref:System.ServiceModel.ServiceContractAttribute> 屬性的型別。

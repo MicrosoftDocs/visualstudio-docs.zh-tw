@@ -96,7 +96,7 @@ class TestClass
 }
 ```
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 
 ```csharp
 using System.IO;
@@ -137,7 +137,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 
 ```csharp
 using System.Xml;
@@ -193,7 +193,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 
 ```csharp
 using System.Xml;
@@ -227,7 +227,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 
 ```csharp
 using System.IO;
@@ -266,7 +266,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 
 ```csharp
 using System.Xml;
@@ -299,7 +299,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 
 ```csharp
 using System.Xml;
@@ -365,7 +365,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 
 ```csharp
 using System.Xml;

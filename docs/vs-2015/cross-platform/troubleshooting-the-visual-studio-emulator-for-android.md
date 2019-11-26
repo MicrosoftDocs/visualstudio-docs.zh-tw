@@ -23,7 +23,7 @@ ms.locfileid: "74297642"
 > [!WARNING]
 > 安裝模擬器時，安裝程式會檢查執行軟體的必要元件。 如果必要元件不存在，則會顯示警告，但安裝時不需要這些元件。
 
- 此主題包括下列章節。
+ 本主題包含下列各節。
 
 - [開始之前](#BeforeYouStart)
 
@@ -31,7 +31,7 @@ ms.locfileid: "74297642"
 
 - [無法連接到網域或公司網路上的網路目的地](#DomainNetwork)
 
-- [當需要手動進行網路設定時，無法連接到網路目的地](#ManualNetworkConfig)
+- [當網路設定需要手動進行時，無法連接到網路目的地](#ManualNetworkConfig)
 
 - [模擬器啟動很慢、因逾時而無法啟動，或應用程式部署失敗](#SlowStart)
 
@@ -47,7 +47,7 @@ ms.locfileid: "74297642"
 
 - [無法將偵錯工具附加至 Xamarin 專案](#Skylake)
 
-- [模擬器無法執行使用 Google Play 服務的應用程式](#GooglePlay)
+- [模擬器無法執行使用 Google Play Services 的應用程式](#GooglePlay)
 
 - [無法拖放檔案、APK 或可刷新的 zip 檔案](#DragAndDrop)
 
@@ -145,7 +145,7 @@ ms.locfileid: "74297642"
 
    模擬器和 Windows 8 Hyper-V 需要支援第二層位址轉譯 (SLAT) 的 64 位元處理器。 針對 Intel，您基本上需要 Core i3、i5 或 i7 處理器 (或多個 Xeon 中的其中一個)。 AMD 晶片清單可在 [這裡](https://www.amd.com/en/support)取得。
 
-  1. 確定您的電腦符合[系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)。
+  1. 確定您的電腦符合 [系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)。
 
   2. 確認 [SLAT 工具](https://slatstatuscheck.codeplex.com/) 回報您的電腦支援 SLAT。
 
@@ -193,7 +193,7 @@ ms.locfileid: "74297642"
 
    下列產品可能需要升級，才能符合 Windows 8 合規性：VirtualBox、Virtual PC 7、VMWare、某些 VPN 用戶端、軟體防火牆、某些 Cisco VPN 用戶端版本，以及其他虛擬化系統。 請與有問題之虛擬化軟體的開發人員合作，並建議他們升級軟體，以與 Windows 8 和 Hyper-V 相容。
 
-   其中一個**因應措施**，是停用可能會干擾模擬器用來與 Visual Studio 通訊之虛擬網路的所有協力廠商驅動程式和應用程式。 這些應用程式可能包括：
+   其中一個 **因應措施**，是停用可能會干擾模擬器用來與 Visual Studio 通訊之虛擬網路的所有協力廠商驅動程式和應用程式。 這些應用程式可能包括：
 
   - 防毒應用程式 (連接到網路堆疊)
 
@@ -227,7 +227,7 @@ ms.locfileid: "74297642"
 
      - Link-Layer Topology Discovery Mapper I/O Driver
 
-     - Link-Layer Topology Discovery Responder
+     - [連結階層拓樸探索回應程式]
 
      - 網際網路通訊協定第 6 版 (TCP/IPv6)
 

@@ -22,7 +22,7 @@ ms.locfileid: "74301049"
 # <a name="extend-uml-models-and-diagrams"></a>Extend UML models and diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題摘要說明各種不同方式，可讓您擴充 Visual Studio 隨附的 UML 模型工具。 若要查看哪些版本的 Visual Studio 支援每種模型類型和工具，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+本主題摘要說明各種不同方式，可讓您擴充 Visual Studio 隨附的 UML 模型工具。 若要查看支援各種模型類型和工具的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
  在下列範例案例中，Fabrikam 設計並安裝了機場行李處理系統。 機場專案之間在基本設備與控制的軟體上有許多共通點。 但是其中也有些大相逕庭之處，例如輸送帶的配置、登機報到櫃檯、儲物箱和其他處理行李的設備。
 

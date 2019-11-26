@@ -39,7 +39,7 @@ ms.locfileid: "74299516"
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio Debugger 附加至執行中處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 執行處理序之後，請按一下 [偵錯] / [附加至處理序]，或按 **CTRL+ALT+P**，開啟 [附加至處理序] 對話方塊。
+您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 在進程執行之後，按一下 [ **Debug]/[附加至進程**] （或按**CTRL + ALT + P**）以開啟 [**附加至進程**] 對話方塊。
 
 您可以使用這項功能來對在本機或遠端電腦上執行的應用程式進行偵錯工具、同時進行多個進程的偵錯工具，或對 Visual Studio 中未建立的應用程式進行 debug。 當您想要對應用程式進行分析，但因為任何原因而未從附加偵錯工具的 Visual Studio 啟動應用程式時，這通常很有用。 例如，如果您在沒有偵錯工具的情況下執行應用程式，並遇到例外狀況，則您可能會附加至執行應用程式的進程以開始進行偵錯工具。
 
@@ -65,7 +65,7 @@ ms.locfileid: "74299516"
 
     2. 在 [選取程式碼類型] 對話方塊中，按一下 [偵錯這些程式碼類型] ，然後選取要偵錯的類型。
 
-    3. 按一下 [**確定**]。
+    3. 按一下 [確定] **Walkthrough: Calling Code in an VSTO Add-in from VBA**。
 
 4. 按一下 [附加]。
 
@@ -134,7 +134,7 @@ ms.locfileid: "74299516"
 |針對您未從 Visual Studio 啟動的 Windows 通用（UWP）、OneCore、HoloLens 或 IoT 應用程式進行 Debug|針對已安裝的應用程式套件進行偵錯|N/A|使用**debug/其他 Debug 目標/Debug 已安裝應用程式套件**，而不是**附加至進程**|
 
 > [!WARNING]
-> 若要附加至以 JavaScript 撰寫的 Windows 通用應用程式，您必須先啟用應用程式的偵錯功能。 請參閱 Windows 開發人員中心的[附加偵錯工具](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger)。
+> 若要附加至以 JavaScript 撰寫的 Windows 通用應用程式，您必須先啟用應用程式的偵錯功能。 請參閱 Windows 開發人員中心的 [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) 。
 
 > [!NOTE]
 > 偵錯工具若要附加至以 C++ 撰寫的程式碼，該程式碼必須發出 `DebuggableAttribute`。 您可以使用 [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) 連結器選項連結，將其自動加入程式碼。
@@ -170,7 +170,7 @@ ms.locfileid: "74299516"
 
    3. 在 [選取程式碼類型] 對話方塊中，選取 [偵錯這些程式碼類型] 以及之前附加失敗的程式碼類型。 清除任何其他程式碼。
 
-   4. 按一下 [**確定**]。 [選取程式碼類型] 對話框會關閉。
+   4. 按一下 [確定] **Walkthrough: Calling Code in an VSTO Add-in from VBA**。 [選取程式碼類型] 對話框會關閉。
 
    5. 在 [附加至處理序] 對話方塊中按一下 [附加]。
 

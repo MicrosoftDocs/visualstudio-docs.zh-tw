@@ -38,7 +38,7 @@ AP0000
 
 ASP.NET 會話狀態支援數種不同的會話狀態資料儲存選項： InProc、StateServer、SQLServer、Custom 和 Off。 建議您使用自訂模式在外部工作階段狀態存放區裝載資料，例如 [適用於 Redis 的 Azure 工作階段狀態提供者](https://go.microsoft.com/fwlink/?LinkId=401521)。
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 有一個建議的解決方案是在受控快取服務儲存工作階段狀態。 了解如何使用 [適用於 Redis 的 Azure 工作階段狀態提供者](https://go.microsoft.com/fwlink/?LinkId=401521) 來儲存工作階段狀態。 您也可以在其他位置儲存工作階段狀態，以確保應用程式可在雲端上進行調整。 若要深入了解替代解決方案，請參閱 [工作階段狀態模式](https://msdn.microsoft.com/library/ms178586)。
 
 ## <a name="run-method-should-not-be-async"></a>執行方法必須同步
@@ -53,7 +53,7 @@ AP1000
 ### <a name="reason"></a>原因
 在 [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 方法內部呼叫非同步方法會導致雲端服務執行階段回收背景工作角色。 當背景工作角色啟動時，便會在 [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 方法內執行所有程式。 結束 [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 方法會導致背景工作角色重新啟動。 當背景工作角色執行階段叫用非同步方法時，它會在非同步方法之後分派所有作業，然後返回。 這會使背景工作角色結束 [[[[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 方法並重新啟動。 在下一輪執行時，背景工作角色會再次叫用非同步方法並重新啟動，導致背景工作角色又再次回收。
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 將所有非同步作業放在 [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 方法外部。 然後從 [[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 方法內部呼叫重新建構後的非同步方法，例如 RunAsync().wait。 Azure Code Analysis 工具可協助您修正此問題。
 
 下列程式碼片段示範此問題的程式碼修正程式：
@@ -98,7 +98,7 @@ AP2000
 ### <a name="reason"></a>原因
 為加強安全性，Azure Active Directory 將以 SAS 驗證取代 ACS 驗證。 請參閱 [Azure Active Directory 是 ACS 的未來](https://cloudblogs.microsoft.com/enterprisemobility/2013/06/22/azure-active-directory-is-the-future-of-acs/) ，以取得轉換計畫的相關資訊。
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 在應用程式中使用 SAS 驗證。 下列範例顯示如何使用現有 SAS 權杖存取服務匯流排命名空間或實體。
 
 ```csharp
@@ -128,7 +128,7 @@ AP2002
 
 如果您呼叫的 **Receive** 不是使用其預設值，請確定 *ServerWaitTime* 值有超過一分鐘。 將 *ServerWaitTime* 設定為超過一分鐘可防止伺服器沒接收完訊息就逾時。
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 請參閱下列程式碼範例以了解建議用法。 如需詳細資訊，請參閱 [QueueClient.OnMessage 方法 (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx) 和 [QueueClient.Receive 方法 (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx)。
 
 若要改善 Azure 傳訊基礎結構的效能，請參閱設計模式 [非同步傳訊入門](https://msdn.microsoft.com/library/dn589781.aspx)。
@@ -228,7 +228,7 @@ AP2003
 ### <a name="reason"></a>原因
 使用非同步方法可實現應用程式並行效果，因為在執行每個呼叫時並不會封鎖主要執行緒。 使用服務匯流排傳訊方法時，需要花時間執行各項作業 (傳送、接收、刪除等)。 這個時間包括服務匯流排服務處理作業的時間加上要求和回覆的延遲時間。 若要增加每次的作業數目，就必須並行執行作業。 如需詳細資訊，請參閱[使用服務匯流排代理傳訊的效能改進最佳作法](https://msdn.microsoft.com/library/azure/hh528527.aspx)。
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 請參閱 [QueueClient 類別 (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.aspx) ，以取得如何使用建議的非同步方法的相關資訊。
 
 若要改善 Azure 傳訊基礎結構的效能，請參閱設計模式 [非同步傳訊入門](https://msdn.microsoft.com/library/dn589781.aspx)。
@@ -245,7 +245,7 @@ AP2004
 ### <a name="reason"></a>原因
 分割服務匯流排佇列和主題可增加效能輸送量和服務可用性，因為分割後的佇列或主題的整體輸送量不會再受限於單一訊息代理程式或訊息存放區的效能。 此外，即使訊息存放區暫時中斷也不會讓分割後的佇列或主題無法使用。 如需詳細資訊，請參閱 [分割訊息實體](https://msdn.microsoft.com/library/azure/dn520246.aspx)。
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 下列程式碼片段顯示如何分割訊息實體。
 
 ```csharp
@@ -272,7 +272,7 @@ AP3001
 
 如需在 Azure 儲存體上使用共用存取簽章的詳細指引，請參閱 [簡介資料表 SAS (共用存取簽章)、佇列 SAS 和 Blob SAS 的更新 - Microsoft Azure 儲存體團隊部落格 - 網站首頁 - MSDN 部落格](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/)。
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 移除用來設定共用存取原則開始時間的陳述式。 Azure Code Analysis 工具有提供此問題的修正程式。 如需安全性管理的詳細資訊，請參閱設計模式 [貼身金鑰模式](https://msdn.microsoft.com/library/dn568102.aspx)。
 
 下列程式碼片段示範此問題的程式碼修正程式。
@@ -304,7 +304,7 @@ AP3002
 
 如需在 Azure 儲存體上使用共用存取簽章的詳細資訊，請參閱 [簡介資料表 SAS (共用存取簽章)、佇列 SAS 和 Blob SAS 的更新 - Microsoft Azure 儲存體團隊部落格 - 網站首頁 - MSDN 部落格](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/)。
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 如需安全性管理的詳細資訊，請參閱設計模式 [貼身金鑰模式](https://msdn.microsoft.com/library/dn568102.aspx)。
 
 以下是未指定共用存取原則開始時間的範例。
@@ -354,7 +354,7 @@ CloudConfigurationManager 會讀取適合應用程式環境使用的組態檔。
 
 [CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 重新建構程式碼以使用 [CloudConfigurationManager 類別](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)。 Azure Code Analysis 工具有提供此問題的程式碼修正。
 
 下列程式碼片段示範此問題的程式碼修正程式。 取代
@@ -389,7 +389,7 @@ AP4001
 ### <a name="reason"></a>原因
 將連接字串硬式編碼不是個好辦法，因為這種方式會在需要快速變更連接字串時引發問題。 此外，如果需要將專案簽入至原始檔控制，硬式編碼的連接字串會引發安全性漏洞，因為在原始程式碼中就能檢視字串。
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 將連接字串儲存在組態檔或 Azure 環境中。
 
 * 若是獨立應用程式，請使用 app.config 來儲存連接字串設定。
@@ -412,11 +412,11 @@ AP5000
 
 從 WAD 1.3 (隨附於 Azure SDK 2.5) 開始，就無法再使用程式碼來設定診斷功能。 因此，您只能在套用或更新診斷延伸模組時提供組態。
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 使用診斷組態設計工具將診斷設定移至診斷組態檔 (若是 SDK 2.5 和更新版本，則為 diagnostics.wadcfg 或 diagnostics.wadcfgx)。 也建議您安裝 [Azure SDK 2.5](https://go.microsoft.com/fwlink/?LinkId=513188) 並使用最新的診斷功能。
 
-1. 在您要設定之角色的捷徑功能表上，選擇 [屬性]，然後選擇 [組態] 索引標籤。
-2. 在 [診斷] 區段中，確定已選取 [啟用診斷] 核取方塊。
+1. 在您要設定的角色的捷徑功能表上，選擇 [屬性]，然後選擇 [組態] 索引標籤。
+2. 在 [**診斷**] 區段，確定已選取 [**啟用診斷**] 核取方塊。
 3. 選擇 [設定] 按鈕。
 
    ![存取啟用診斷選項](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
@@ -435,7 +435,7 @@ AP6000
 ### <a name="reason"></a>原因
 DBContext 物件會保存每個呼叫的查詢結果。 在卸載應用程式網域後，才會處置靜態 DBContext 物件。 因此，靜態 DBContext 物件可能會耗用大量記憶體。
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 將 DBContext 宣告為區域變數或非靜態執行個體欄位、將它用於工作，然後讓它在使用後受到處置。
 
 下列 MVC 控制器類別範例顯示如何使用 DBContext 物件。

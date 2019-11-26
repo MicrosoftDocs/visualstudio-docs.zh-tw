@@ -41,13 +41,13 @@ ms.locfileid: "74301362"
 
     1. 下載並安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 擴充功能（如果您尚未這麼做）。 如需詳細資訊，請參閱[視覺效果和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=185579)。
 
-    2. 開啟 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [啟用 ModelBus]。
+    2. 開啟 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [**啟用 Modelbus**]。
 
     3. 在對話方塊中，選取 [**我想要將此 DSL 公開給 ModelBus**]。 如果您想要讓此 DSL 公開其模型，並使用其他 Dsl 的參考，您可以同時選取這兩個選項。
 
-    4. 按一下 [**確定**]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
+    4. 按一下 [確定]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
 
-    5. 按一下 [轉換所有範本]。
+    5. 按一下 [**轉換所有範本**]。
 
     6. 重建方案。
 
@@ -401,7 +401,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     ```
 
-3. 按下 CTRL+F5。
+3. 按 CTRL+F5 鍵。
 
 4. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗實例中，開啟 `Debugging\Sample.consume`。
 

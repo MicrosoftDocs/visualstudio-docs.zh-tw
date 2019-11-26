@@ -23,9 +23,9 @@ ms.locfileid: "74301202"
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>使用設定檔和造型自訂您的模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 中，您可以採用標準 UML 模型項目，例如類別和元件，針對特定用途自訂它們。 您可以套用 *「造型」* (stereotype) 到可以變更項目屬性清單的模型項目。 造型定義在稱為 *「設定檔」* (profile) 的集合內。
+在 Visual Studio 中，您可以採用標準 UML 模型項目，例如類別和元件，針對特定用途自訂它們。 您可以將造型*套用至模型專案，以*變更元素的屬性清單。 造型是在稱為*設定檔*的集合中定義。
 
- 若要查看哪些版本的 Visual Studio 支援此功能，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
  若要使用造型，請將套件連結至設定檔。 這可讓您將設定檔中定義的造型套用至套件中的項目。 某些設定檔會與 Visual Studio 一起安裝。 此外，您可以定義自己的設定檔。
 

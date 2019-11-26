@@ -24,7 +24,7 @@ ms.locfileid: "74293379"
 
 1. 請確定已安裝 Visual Studio 2015 和 Visual Studio 2015 SDK。 您可以從 [Microsoft Visual Studio 2013 SDK](https://my.visualstudio.com/Downloads?pid=1436)下載 VSSDK。
 
-2. 開啟您的自訂樣板專案。 您會看到訊息，通知您要升級專案。 按一下 [確定]，並等候升級完成。
+2. 開啟您的自訂樣板專案。 您會看到訊息，通知您要升級專案。 按一下 [確定] ，並等候升級完成。
 
 3. 在起始頁專案和控制項專案的專案屬性中，確定 [目標架構] 至少為 .NET Framework 4.5。
 

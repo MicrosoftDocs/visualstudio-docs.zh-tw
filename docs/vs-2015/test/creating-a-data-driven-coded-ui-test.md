@@ -22,7 +22,7 @@ ms.locfileid: "74302600"
 
 若要測試不同的情況，您可以使用不同的參數值，多次執行您的測試。 資料驅動自動程式碼 UI 測試是方便進行這項作業的方法。 您可以在資料來源中定義參數值，而且資料來源中的每個資料列都是自動程式碼 UI 測試的反覆項目。 整體測試結果將會根據所有反覆項目的結果。 例如，如果其中一個測試反覆項目失敗，則整體測試結果就是失敗。
 
- **需求**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -61,7 +61,7 @@ ms.locfileid: "74302600"
 
 5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後選擇 [執行測試]。 (快速鍵：Ctrl + R、T)。
 
-     [測試總管] 視窗中會顯示測試結果，而測試結果顯示測試成功還是失敗。 若要開啟 [測試總管] 視窗，請從 [測試]功能表中選擇 [Windows]，然後選擇 [測試總管]。
+     [測試總管] 視窗中會顯示測試結果，而測試結果顯示測試成功還是失敗。 若要開啟 [測試總管] 視窗，請從 [測試] 功能表中選擇 [視窗]，然後選擇 [測試總管]。
 
 6. 因為資料來源也可以用於判斷提示參數值 (測試用來確認預期的值)；讓我們加入判斷提示來驗證兩個數字的總和是否正確。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後依序選擇 [產生自動程式化 UI 測試的程式碼] 和 [使用自動程式化 UI 測試產生器]。
 
@@ -69,7 +69,7 @@ ms.locfileid: "74302600"
 
      ![對應 UI 文字控制項](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
 
-7. 加入判斷提示，以驗證總和的值是否正確。 選擇值為 **3** 的 [顯示文字]屬性，然後選擇 [加入判斷提示]。 使用 **AreEqual** 比較子，並確認比較值為 **3**。
+7. 加入判斷提示，以驗證總和的值是否正確。 選擇值為 **3** 的 [顯示文字] 屬性，然後選擇 [加入判斷提示]。 使用 **AreEqual** 比較子，並確認比較值為 **3**。
 
      ![設定判斷提示](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")
 
@@ -140,7 +140,7 @@ ms.locfileid: "74302600"
      現在，您可以在這個測試方法中使用此資料來源。
 
     > [!TIP]
-    > 請參閱其他資料來源類型 (例如 XML、SQL Express 和 Excel) 使用範例的＜問與答＞小節中的[資料來源屬性範例](#CreateDataDrivenCUIT_QA_DataSourceAttributes)。
+    > 如需使用其他資料來源類型 (例如 XML、SQL Express 和 Excel) 的範例，請參閱＜問與答＞小節中的[資料來源屬性範例](#CreateDataDrivenCUIT_QA_DataSourceAttributes)。
 
 2. 執行測試。
 
@@ -191,11 +191,11 @@ ms.locfileid: "74302600"
 
          ![使用自動程式化 UI 測試編輯器來協助程式碼](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
 
-    - 在 [屬性] 視窗中，開啟 [搜尋屬性]。 搜尋屬性 [名稱]值是程式碼中使用資料來源所操作的值。 例如，會將每個資料列的第一欄中的值指派給 `SearchProperties`：`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`。 對於三個反覆項目，這項測試會依序將搜尋屬性的 [名稱]值變更為3、5 和 6。
+    - 在 [屬性] 視窗中，開啟 [搜尋屬性]。 搜尋屬性 **Name** 值是程式碼中使用資料來源所操作的值。 例如，會將每個資料列的第一欄中的值指派給 `SearchProperties`：`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`。 對於三個反覆項目，這項測試會依序將搜尋屬性的 **Name** 值變更為 3、5 和 6。
 
          ![使用搜尋屬性來協助撰寫程式碼](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
 
-3. 儲存組態。
+3. 儲存方案。
 
 #### <a name="step-5--run-the-data-driven-test"></a>步驟 5 - 執行資料驅動測試
 
@@ -246,15 +246,15 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ```
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>問：為什麼無法修改 UIMap.Designer 檔案中的程式碼？
- **答：** 每次使用 [UIMap - 自動程式碼 UI 測試產生器] 產生程式碼時，都會覆寫您在 UIMapDesigner.cs 檔案中進行的任何程式碼變更。 在這個範例中，而且在大多數的情況下，可以對測試的原始程式碼檔案 (即 CodedUITest1.cs) 進行讓測試使用資料來源所需的程式碼變更。
+ **答**：每次您使用 [UIMap - 自動程式化 UI 測試產生器] 產生程式碼時，對 UIMapDesigner.cs 檔案中的程式碼所做的變更都會被覆寫。 在這個範例中，而且在大多數的情況下，可以對測試的原始程式碼檔案 (即 CodedUITest1.cs) 進行讓測試使用資料來源所需的程式碼變更。
 
  如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 UIMap.cs 檔案可用來覆寫 UIMapDesigner.cs 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
-- [自動程式碼 UI 測試的最佳作法](../test/best-practices-for-coded-ui-tests.md)
-- [自動程式碼 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
+- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

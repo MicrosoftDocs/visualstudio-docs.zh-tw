@@ -22,7 +22,7 @@ ms.locfileid: "74301186"
 在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK 建立之網域指定的語言 (DSL) 中，您可以變更使用者複製及貼上項目時所發生的情況。
 
 ## <a name="standard-copy-and-paste-behavior"></a>標準複製和貼上行為
- 若要啟用複製，請設定 [DSL 總管] 中 [編輯器] 節點的 [啟用複製貼上] 屬性。
+ 若要啟用複製，請在 [DSL Explorer] 中設定 [**編輯器**] 節點的 [**啟用複製貼**上] 屬性。
 
  根據預設，當使用者將項目複製到 [剪貼簿] 時，也會複製下列項目：
 
@@ -44,13 +44,13 @@ ms.locfileid: "74301186"
  如需使用程式碼自訂模型的詳細資訊，請參閱[在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
  **啟用或停用複製、剪下和貼上。**
-在 [DSL 總管] 中，設定 [編輯器] 節點的 [啟用複製貼上] 屬性。
+在 [DSL Explorer] 中，設定 [**編輯器**] 節點的 [**啟用複製貼**上] 屬性。
 
  **將連結複製到相同的目標。** 例如，若要讓複製的批註方塊連結至相同的主旨元素。
-將角色的 [傳播複本] 屬性設定為 [只將複本傳播至連結]。 如需詳細資訊，請參閱[自訂連結複製行為](#customizeLinks)。
+將角色的 [**傳播複本**] 屬性設定為 [**只將複本傳播至連結**]。 如需詳細資訊，請參閱[自訂連結複製行為](#customizeLinks)。
 
  複製連結的項目。 例如，當您複製新項目時，也會建立任何連結之註解方塊的複本。
-將角色的 [傳播複本] 屬性設定為 [將複本傳播至連結和相反角色扮演者]。 如需詳細資訊，請參閱[自訂連結複製行為](#customizeLinks)。
+將角色的 [**傳播複本**] 屬性設定為 [將**複本傳播至連結和相反角色扮演**者]。 如需詳細資訊，請參閱[自訂連結複製行為](#customizeLinks)。
 
  **複製並貼上，以快速複製元素。** 一般來說，您剛才複製的專案仍為選取狀態，而且您無法在其上貼上相同類型的元素。
 將 Element Merge 指示詞加入至網域類別，並加以設定，以正向合併至父類別。 這對拖曳作業會造成相同的影響。 如需詳細資訊，請參閱[自訂元素的建立和移動](../modeling/customizing-element-creation-and-movement.md)。
@@ -85,12 +85,12 @@ partial class MyDslClipboardCommandSet
  覆寫 `ClipboardCommandSet.ProcessOnPasteCommand()` 可在呼叫基底方法之後建立其他連結。
 
  **自訂可以將元素複製**到外部應用程式的格式，例如，將框線加入點陣圖表單。
-覆寫 DslPackage 專案中的 *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()`。
+覆寫 DslPackage 專案中的*MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()`。
 
  **自訂 copy 命令將元素複製到剪貼簿的方式，但不是在拖曳作業中。**
-覆寫 DslPackage 專案中的 *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()`。
+覆寫 DslPackage 專案中的*MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()`。
 
- **透過複製和貼上保留配置。**
+ **透過複製和貼上來保留圖形版面配置。**
 當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](https://go.microsoft.com/fwlink/?LinkId=213879)中的範例所示範。
 
  若要達成這個效果，請將圖形和連接線加入至複製的 ElementGroupPrototype。 最方便的覆寫方法是 ElementOperations.CreateElementGroupPrototype()。 若要執行這項操作，請將下列程式碼加入至 DSL 專案：
@@ -218,7 +218,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 請參閱[如何：加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。
 
 ## <a name="customizeLinks"></a>自訂連結複製行為
- 當使用者複製項目時，標準行為是所有內嵌項目也會一併複製。 您可以修改標準複製行為。 在 DSL 定義中，選取關聯性一端的角色，並在 [屬性] 視窗中設定 [傳播複本] 值。
+ 當使用者複製項目時，標準行為是所有內嵌項目也會一併複製。 您可以修改標準複製行為。 在 DSL 定義中，選取關聯性之一端的角色，然後在屬性視窗設定 [**傳播複製**值]。
 
  ![傳播網域角色的 Copy 屬性](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
 
@@ -377,7 +377,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 
  當使用者按下 CTRL+C 或使用 [複製] 功能表命令時，會呼叫 <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> 方法。 您可以在**DslPackage\Generated Code\CommandSet.cs**中查看其設定方式。 如需如何設定命令的詳細資訊，請參閱[如何：將命令新增至快捷方式功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
- 您可以在 DslPackage 專案中加入 *MyDsl*`ClipboardCommandSet` 的部分類別定義，來覆寫 ProcessOnMenuCopyCommand。
+ 您可以藉由在 DslPackage 專案中新增*MyDsl*`ClipboardCommandSet` 的部分類別定義來覆寫 ProcessOnMenuCopyCommand。
 
 ```csharp
 using System.Collections.Generic;

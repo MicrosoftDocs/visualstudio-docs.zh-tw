@@ -30,7 +30,7 @@ ms.locfileid: "74300655"
  若要下載及安裝此命令列公用程式，請移至 Microsoft 下載中心網站上的 [Visual Studio 2015 的並行視覺化檢視收集工具](https://www.microsoft.com/download/details.aspx?id=49103) ，並遵循指示進行。 根據預設，CVCollectionCmd.exe 會安裝在 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (x64 電腦上為 %ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\)。  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>使用 CVCollectionCmd 收集追蹤  
- 您可以使用 CVCollectionCmd 啟動應用程式，或將 CVCollectionCmd 附加至應用程式，來收集追蹤。 請參閱下列與選項相關的命令參考。 例如  
+ 您可以使用 CVCollectionCmd 啟動應用程式，或將 CVCollectionCmd 附加至應用程式，來收集追蹤。 請參閱下列與選項相關的命令參考。 例如：  
   
 ```  
 <Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data  
@@ -45,13 +45,13 @@ ms.locfileid: "74300655"
 |------------|-----------------|----------------|-------------------|  
 |查詢|傳回是否可以開始收集。|無|0，表示準備開始收集。<br /><br /> 1，表示收集已在進行中。<br /><br /> 2，表示收集不在進行中，但已啟用一個或多個所需的 [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) 工作階段。|  
 |啟動|在並行視覺化檢視下執行指定的處理序。|可執行檔的路徑。|0，表示執行成功。<br /><br /> 1，表示執行失敗，因為無法啟動目標應用程式。<br /><br /> 13，表示執行失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|  
-|附加|開始收集系統範圍追蹤；如果指定處理序，則附加至該處理序。|無。|0，表示附加成功。<br /><br /> 1，表示附加失敗，因為指定的處理序無效或模稜兩可。<br /><br /> 13，表示附加失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|  
-|中斷連結|停止收集。|無。|0，表示中斷連結成功。<br /><br /> 1，表示中斷連結失敗，因為目前正在收集。<br /><br /> 2，表示中斷連結失敗，因為無法停止收集。|  
+|附加|開始收集系統範圍追蹤；如果指定處理序，則附加至該處理序。|None。|0，表示附加成功。<br /><br /> 1，表示附加失敗，因為指定的處理序無效或模稜兩可。<br /><br /> 13，表示附加失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|  
+|中斷連結|停止收集。|None。|0，表示中斷連結成功。<br /><br /> 1，表示中斷連結失敗，因為目前正在收集。<br /><br /> 2，表示中斷連結失敗，因為無法停止收集。|  
 |分析|分析指定的追蹤。|CVTrace 檔案的完整路徑。|0，表示分析成功。<br /><br /> 1，表示無法開始分析，因為指定的追蹤是系統範圍追蹤，但未指定目標處理序。<br /><br /> 2，表示無法開始分析，因為追蹤不是系統範圍追蹤，但已指定處理序。<br /><br /> 3，表示分析失敗，因為指定的處理序無效。<br /><br /> 4，表示分析失敗，因為指定的 CVTrace 檔案無效。|  
-|LaunchArgs|指定目標可執行檔引數。 這個選項僅適用於 Launch 命令。|傳遞給應用程式的命令列引數。|無。|  
-|Outdir|指定要在其中儲存追蹤檔案的目錄。 適用於 Launch 和 Attach 命令。|目錄路徑或相對路徑。|無。|  
-|程序|指定執行 Attach 命令時要附加的處理序，或執行 Analyze 命令時要在追蹤中分析的處理序。 適用於 Attach 和 Analyze 命令。|處理序的 PID 或名稱。|無。|  
-|組態|指定組態檔的路徑 (如果需要預設值以外的收集設定)。   適用於 Launch、Attach 和 Analyze 命令。|XML 組態檔的目錄路徑或相對路徑。|無。|  
+|LaunchArgs|指定目標可執行檔引數。 這個選項僅適用於 Launch 命令。|傳遞給應用程式的命令列引數。|None。|  
+|Outdir|指定要在其中儲存追蹤檔案的目錄。 適用於 Launch 和 Attach 命令。|目錄路徑或相對路徑。|None。|  
+|處理程序|指定執行 Attach 命令時要附加的處理序，或執行 Analyze 命令時要在追蹤中分析的處理序。 適用於 Attach 和 Analyze 命令。|處理序的 PID 或名稱。|None。|  
+|組態|指定組態檔的路徑 (如果需要預設值以外的收集設定)。   適用於 Launch、Attach 和 Analyze 命令。|XML 組態檔的目錄路徑或相對路徑。|None。|  
   
 ## <a name="customizing-configuration-settings"></a>自訂組態設定  
  如果您使用 CVCollectionCmd 收集追蹤並想自訂收集設定，請使用組態檔指定這些設定。  
@@ -74,9 +74,9 @@ ms.locfileid: "74300655"
 |DeleteEtlsAfterAnalysis|指定符號伺服器的路徑。 如需詳細資訊，請參閱 [使用 Microsoft 符號伺服器取得偵錯符號檔](https://go.microsoft.com/fwlink/?LinkID=149389)。|目錄名稱或 URL。|  
 |Markers|包含標記提供者的清單。|可包含零個或多個 MarkerProvider 項目。|  
 |MarkerProvider|指定單一標記提供者。|必須包含下列項目：<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 可包含下列項目：<br /><br /> -   Categories<br />-   IsEnabled|  
-|層級|設定 MarkerProvider 的重要性層級。|-   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything|  
-|GUID|ETW 標記提供者的全域唯一識別項。|GUID。|  
-|Name|指定標記提供者的描述。|字串。|  
+|Level|設定 MarkerProvider 的重要性層級。|-   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything|  
+|Guid|ETW 標記提供者的全域唯一識別項。|GUID。|  
+|名稱|指定標記提供者的描述。|字串。|  
 |類別|指定標記提供者所收集的分類。|以逗號分隔字串表示多個數字或多個範圍的數字。|  
 |IsEnabled|設定值，決定是否啟用標記提供者進行收集。|-   True<br />-   False|  
 |FilterConfig|指定從收集篩選之 ETW 事件的組態選項清單。|可包含下列項目：<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  

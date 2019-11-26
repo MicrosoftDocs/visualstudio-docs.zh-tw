@@ -34,35 +34,35 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
 
 - [編輯單元測試專案的資訊清單](#CreateAndRunUnitTestWin8Tailored_Manifest)
 
-- [撰寫單元測試](#CreateAndRunUnitTestWin8Tailored_Code)
+- [撰寫單元測試的程式碼](#CreateAndRunUnitTestWin8Tailored_Code)
 
 - [執行單元測試](#CreateAndRunUnitTestWin8Tailored_Run)
 
   下列程序說明用來建立、執行和偵錯 Managed Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的單元測試之步驟。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  Visual Studio
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Create"></a> 建立單元測試專案
 
 #### <a name="to-create-a-unit-test-project-for-a-windows-store-app"></a>若要建立 Windows 市集應用程式的單元測試專案
 
-1. 從 [**檔案**] 功能表選擇 [**新增專案**]。
+1. 從 [ **檔案** ] 功能表選擇 [ **新增專案**]。
 
      [新增專案] 對話方塊隨即顯示。
 
-2. 在 [範本] 下，選擇您要用來建立單元測試的程式設計語言，然後選擇相關聯的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 單元測試程式庫。 例如，依序選擇 [**Visual C#** ]、[**Windows 市集**] 和 [**單元測試程式庫 (Windows 市集應用程式)** ]。
+2. 在 [範本] 下，選擇您要用來建立單元測試的程式設計語言，然後選擇相關聯的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 單元測試程式庫。 例如，依序選擇 [ **Visual C#** ]、[ **Windows 市集**] 和 [ **單元測試程式庫 (Windows 市集應用程式)** ]。
 
     > [!NOTE]
     > Visual Studio 包含 Visual C#、Visual Basic 和 Visual C++ 的單元測試程式庫範本。
 
-3. (選擇性) 在 [**名稱**] 文字方塊中，輸入 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]單元測試專案要使用的名稱。
+3. (選擇性) 在 [ **名稱** ] 文字方塊中，輸入 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]單元測試專案要使用的名稱。
 
 4. (選擇性) 在 [ **位置** ] 文字方塊中輸入路徑，或是選取 [ **瀏覽** ] 按鈕，以修改要建立專案的路徑。
 
-5. (選擇性) 在 [**方案**] 名稱文字方塊中，輸入您的方案要使用的名稱。
+5. (選擇性) 在 [ **方案** ] 名稱文字方塊中，輸入您的方案要使用的名稱。
 
-6. 保留選取 [**為方案建立目錄**] 選項，並選擇 [**確定**] 按鈕。
+6. 保留選取 [ **為方案建立目錄** ] 選項，並選擇 [ **確定** ] 按鈕。
 
      ![量身打造的單元測試程式庫](../test/media/unit-test-win8-1.png "Unit_Test_Win8_1")
 
@@ -75,13 +75,13 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
 
 #### <a name="to-edit-the-unit-test-projects-windows-store-application-manifest-file"></a>若要編輯單元測試專案的 Windows 市集應用程式資訊清單檔案
 
-1. 在 [方案總管] 中，於新的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]單元測試專案中，以滑鼠右鍵按一下 Package.appxmanifest 檔案並選擇 [**開啟**]。
+1. 在 [方案總管] 中，於新的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 單元測試專案中，以滑鼠右鍵按一下 Package.appxmanifest 檔案並選擇 [ **開啟**]。
 
      資訊清單設計工具隨即顯示，可供編輯。
 
-2. 在資訊清單設計工具中，選擇 [**功能**] 索引標籤。
+2. 在資訊清單設計工具中，選擇 [ **功能** ] 索引標籤。
 
-3. 在 [**功能**] 底下的清單中，選取您要讓單元測試及其所測試之程式碼具有的功能。 例如，如果單元測試需要且測試中的程式碼必須有存取網際網路的能力時，則選擇 [ **網際網路** ] 核取方塊。
+3. 在 [ **功能**] 底下的清單中，選取您要讓單元測試及其所測試之程式碼具有的功能。 例如，如果單元測試需要且測試中的程式碼必須有存取網際網路的能力時，則選擇 [ **網際網路** ] 核取方塊。
 
     > [!NOTE]
     > 您選取的功能應該只包含讓 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 單元測試正常運作的功能。 這些功能沒有必要包含不屬於要測試之 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的功能，並且通常應該是指定給受測 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的其中一組功能。
@@ -102,11 +102,11 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
 
 #### <a name="to-build-the-solution-and-run-the-unit-test-using-test-explorer"></a>若要使用測試總管建置方案與執行單元測試
 
-1. 在 [**測試**] 功能表上，選擇 [**Windows**]，然後選擇 [**測試總管**]。
+1. 在 [ **測試** ] 功能表上，選擇 [ **Windows**]，然後選擇 [ **測試總管**]。
 
      [測試總管] 隨即顯示，但沒有列出您的測試。
 
-2. 從 [**建置**] 功能表中，選擇 [**建置方案**]。
+2. 從 [ **建置** ] 功能表中，選擇 [ **建置方案**]。
 
      現在列出了您的單元測試。
 
@@ -119,16 +119,16 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
 3. 在 [測試總管] 中，選擇您建立的單元測試。
 
     > [!TIP]
-    > [測試總管] 會在 [**來源:** ] 旁邊提供原始程式碼的連結。
+    > [測試總管] 會在 [ **來源:** ] 旁邊提供原始程式碼的連結。
 
-4. 選擇 [**全部執行**]。
+4. 選擇 [ **全部執行**]。
 
      ![單元測試流覽&#45;器執行單元測試](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_CoNtextMenuRun")
 
     > [!TIP]
-    > 您可以選取 [測試總管] 中列出的一個或多個單元測試，然後以滑鼠右鍵按一下並選擇 [**執行選取的測試**]。
+    > 您可以選取 [測試總管] 中列出的一個或多個單元測試，然後以滑鼠右鍵按一下並選擇 [ **執行選取的測試**]。
     >
-    >  此外，您可以選擇 [**偵錯選取的測試**]、[**開啟測試**]，並使用 [**屬性**] 選項。
+    >  此外，您可以選擇 [ **偵錯選取的測試**]、[ **開啟測試**]，並使用 [ **屬性** ] 選項。
     >
     >  ![單元測試流覽&#45;器單向測試操作功能表](../test/media/unit-test-win8-unittestexplorer-contextmenu.png "Unit_Test_Win8_UnitTestExplorer_CoNtextMenu")
 
@@ -138,10 +138,10 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
 
 ## <a name="external-resources"></a>外部資源
 
-### <a name="videos"></a>視訊
+### <a name="videos"></a>Videos
  [Channel 9：Unit testing your Windows Store apps built using XAML (單元測試使用 XAML 建置的 Windows 市集應用程式)](https://go.microsoft.com/fwlink/?LinkId=226285)
 
-### <a name="forums"></a>論壇
+### <a name="forums"></a>Forums
  [Visual Studio 單元測試](https://go.microsoft.com/fwlink/?LinkId=224477)
 
 ### <a name="msdn-library"></a>MSDN Library

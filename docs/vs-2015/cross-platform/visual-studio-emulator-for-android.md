@@ -15,7 +15,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300774"
 ---
-# <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
+# <a name="visual-studio-emulator-for-android"></a>適用於 Android 的 Visual Studio 模擬器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式。 它提供虛擬化環境，讓您不需要實體裝置，便可以在其中偵錯及測試 Android 應用程式。 它也為您的應用程式原型提供一個隔離環境。  
@@ -24,13 +24,13 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
   
  您可以透過唯一的裝置設定檔，針對每個 Android 平台、螢幕解析度，以及 Visual Studio Emulator for Android 支援的其他硬體內容來測試應用程式。  
   
- 此主題包括下列章節。  
+ 本主題包含下列各節。  
   
 - [安裝及解除安裝](#Installing)  
   
 - [系統需求和回溯相容性](#Requirements)  
   
-- [Visual Studio Emulator for Android 的網路功能](#Networking)  
+- [Visual Studio 的 Android 模擬器網路功能](#Networking)  
   
 - [設定 Visual Studio 的 Android 模擬器](#Configuring)  
   
@@ -52,7 +52,7 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
 > [!NOTE]
 > 解除安裝 Visual Studio 不會解除安裝此模擬器。 您必須個別解除安裝模擬器。  
   
- 當您解除安裝 Visual Studio Emulator for Android 時，不會自動移除為了提供給模擬器使用所建立的 Hyper-V 虛擬乙太網路介面卡。 您可以手動移除這些虛擬介面卡 (若未使用)，方法是開啟 Hyper-V 管理員，從中選取一個模擬器 VHD 映像，再選擇 [網路] 索引標籤，然後為此索引標籤中所顯示的每個參數選擇 [移除]。  
+ 當您解除安裝 Visual Studio Emulator for Android 時，不會自動移除為了提供給模擬器使用所建立的 Hyper-V 虛擬乙太網路介面卡。 您可以手動移除這些虛擬介面卡 (若未使用)，方法是開啟 Hyper-V 管理員，從中選取一個模擬器 VHD 影像，再選擇 [網路] 索引標籤，然後為此索引標籤中所顯示的每個參數選擇 [移除]。  
   
 ## <a name="Requirements"></a> 系統需求和回溯相容性  
  如需 Visual Studio Emulator for Android 之硬體、軟體與組態需求的重要資訊，請參閱下列主題。  
@@ -112,4 +112,4 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 的 Android 模擬器系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [Visual Studio Emulator for Android 疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

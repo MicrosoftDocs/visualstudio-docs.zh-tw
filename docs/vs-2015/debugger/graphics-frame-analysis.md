@@ -18,7 +18,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300509"
 ---
-# <a name="graphics-frame-analysis"></a>圖形框架分析
+# <a name="graphics-frame-analysis"></a>圖形畫面格分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 使用 Visual Studio 圖形分析器中的圖形畫面格分析，分析和最佳化 Direct3D 遊戲或應用程式的轉譯效能。  
@@ -164,7 +164,7 @@ ms.locfileid: "74300509"
 ### <a name="windows-phone"></a>Windows Phone  
  只有 Windows Phone 8.1 一開始就隨附的 Windows Phone 話筒才支援時間戳記、阻擋查詢和 GPU 硬體計數器。 畫面格分析需要它們，才能播放圖形記錄檔。 Windows Phone 8 一開始就隨附的 Windows Phone 話筒不支援畫面格分析，即使話筒更新為 Windows Phone 8.1 也一樣。  
   
-## <a name="unsupported-scenarios"></a>不支援的情節  
+## <a name="unsupported-scenarios"></a>不支援的案例  
  畫面格分析的特定使用方式不受支援，或只是不好的主意。  
   
 ### <a name="warp"></a>WARP  
@@ -183,7 +183,7 @@ ms.locfileid: "74300509"
 > 這只適用於您正在使用的 Direct3D API 呼叫，而非功能層級。 只要使用的是 Direct3D 11、Direct3D 11.1 或 Direct3D 11.2 API，就可以使用任何您要的功能層級，而且畫面格分析也能夠運作。  
   
 ## <a name="Variants"></a> 變異  
- 畫面格分析對畫面格在播放期間的呈現方式，所進行的每項變更稱為 *「變異」* (variant)。 畫面格分析所檢查的變異，會對應至常見且相當簡單的變更，而您使用這些變更就可以改善應用程式的呈現效能或視覺品質，例如，減少紋理大小、使用紋理壓縮，或啟用不同類型的消除鋸齒。 變異會覆寫您應用程式的一般呈現內容和參數。 摘要如下：  
+ 畫面格分析對畫面格在播放期間的呈現方式，所進行的每項變更稱為「變異」(*variant*)。 畫面格分析所檢查的變異，會對應至常見且相當簡單的變更，而您使用這些變更就可以改善應用程式的呈現效能或視覺品質，例如，減少紋理大小、使用紋理壓縮，或啟用不同類型的消除鋸齒。 變異會覆寫您應用程式的一般呈現內容和參數。 摘要如下：  
   
 |變異|描述|  
 |-------------|-----------------|  

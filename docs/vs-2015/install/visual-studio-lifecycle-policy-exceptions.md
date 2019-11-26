@@ -24,7 +24,7 @@ Visual Studio 包含一組編譯器、語言、執行階段、環境和其他資
 ## <a name="external-components-that-follow-a-lifecycle-policy-other-than-the-visual-studio-policy"></a>遵循非 Visual Studio 原則之週期原則的外部元件  
  下表列出可能隨附於 Visual Studio (視 Visual Studio 軟體的特定版本而定)，並有各自的支援原則和時間範圍的 Microsoft 平台元件。  
   
-|產品系列|外部名稱|  
+|產品系列|EXTERNAL NAME|  
 |--------------------|-------------------|  
 |[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|.NET 3.5 SDK<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|.NET 4.5 SDK|  

@@ -21,7 +21,7 @@ C# 和 .NET (以 Unity 指令碼為基礎的技術) 持續接收到更新，因�
 
 隨著 Unity 2017.1 的發行，Unity 引進將其指令碼執行階段升級至 .NET 4.6 (C# 6 相容版本) 的實驗性版本。 在 Unity 2018.1 中，不再將 .NET 4.x 對等執行階段視為實驗性，現在會將舊版 .NET 3.5 對等執行階段視為舊版本。 而隨著 Unity 2018.3 的發行，Unity 預測會將已升級的指令碼執行階段設為預設選取項目，甚至進一步更新為 C# 7。 如需本藍圖的詳細資訊和最新更新，請閱讀 Unity 的[部落格文章](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)，或瀏覽其 [Experimental Scripting Previews 論壇](https://forum.unity.com/forums/experimental-scripting-previews.107/)。 在此同時，請參閱下列各節，來深入了解 .NET 4.x 指令碼執行階段現在可用的新功能。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 * [Unity 2017.1 或更新版本](https://unity3d.com/) (建議使用 2018.2)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
@@ -183,7 +183,7 @@ public string PlayerHealthUiText => $"Player health: {Health}";
 
 [非同步程式設計](https://docs.microsoft.com/dotnet/csharp/async)允許執行耗時作業，而不會讓您的應用程式變得無回應。 此功能也可讓您的程式碼先等待耗時作業完成，再繼續執行根據這些作業結果的程式碼。 例如，您可以等待載入檔案或完成網路作業。
 
-在 Unity 中，通常會使用[協同程式](https://docs.unity3d.com/Manual/Coroutines.html)完成非同步程式設計。 不過，從 C# 5 之後，在 .NET 開發中慣用的非同步程式設計方法已是搭配使用 `async` 和 `await` 關鍵字與 [System.Threading.Task](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task)的[工作非同步模式 (TAP)](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)。 總而言之，在 `async` 函數中，您可以 `await` (等待) 工作完成，而不需要封鎖更新應用程式的其餘部分：
+在 Unity 中，通常會使用[協同程式](https://docs.unity3d.com/Manual/Coroutines.html)完成非同步程式設計。 不過，從 C# 5 之後，在 .NET 開發中慣用的非同步程式設計方法已是搭配使用 [ 和 ](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) 關鍵字與 `async`System.Threading.Task`await`的[工作非同步模式 (TAP)](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task)。 總而言之，在 `async` 函數中，您可以 `await` (等待) 工作完成，而不需要封鎖更新應用程式的其餘部分：
 
 ```csharp
 // Unity coroutine
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 將遊戲匯出至 iOS 這類平台時，Unity 將使用其 IL2CPP 引擎以將 IL「轉換」為 C++ 程式碼，而且接著會使用目標平台的原生編譯器來編譯 C++ 程式碼。 在此情節中，有幾項不支援的 .NET 功能，例如反映的組件和 `dynamic` 關鍵字的用法。 雖然您可以利用自己的程式碼控制這些功能的使用，但是請注意，使用未以 Unity 和 IL2CPP 撰寫的協力廠商 DLL 和 SDK 可能會發生問題。 如需本主題的詳細資訊，請參閱 Unity 網站上的 [Scripting Restrictions](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) (指令碼限制) 文件。
 
-此外，如上述 Json.NET 範例所述，Unity 將嘗試在 IL2CPP 匯出程序期間去除未使用的程式碼。  While this typically isn't an issue, with libraries that use Reflection, it can accidentally strip out properties or methods that will be called at run time that can't be determined at export time.  若要修正這些問題，請將 **link.xml** 檔案新增至專案，而專案包含不要對其執行去除程序的組件和命名空間清單。  如需完整詳細資料，請參閱[位元組程式碼去除的 Unity 文件](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
+此外，如上述 Json.NET 範例所述，Unity 將嘗試在 IL2CPP 匯出程序期間去除未使用的程式碼。  雖然這通常不是問題，但如果程式庫使用反映，它可能會不小心去除在執行時間呼叫的屬性或方法，而無法在匯出時間判斷。  若要修正這些問題，請將 **link.xml** 檔案新增至專案，而專案包含不要對其執行去除程序的組件和命名空間清單。  如需完整詳細資料，請參閱[位元組程式碼去除的 Unity 文件](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
 
 ## <a name="net-4x-sample-unity-project"></a>.NET 4.x 範例 Unity 專案
 

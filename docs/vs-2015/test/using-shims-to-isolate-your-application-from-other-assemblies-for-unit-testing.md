@@ -18,13 +18,13 @@ ms.locfileid: "74301426"
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>使用填充碼將應用程式與其他組件隔離，方便進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-填充碼類型**是 Microsoft Fakes Framework 兩項技術的其中一個，讓您輕鬆地隔離待測元件與環境。 填充碼會將指向特定方法的呼叫轉向至您撰寫來做為測試一部分的程式碼。 有許多方法會取決於外部條件傳回不同的結果，不過填充碼會受您的測試所控制，並且可在每個呼叫中傳回一致的結果。 這可讓您更容易撰寫測試。
+填充碼類型**是 Microsoft Fakes Framework 兩項技術的其中一個，讓您輕鬆地隔離待測元件與環境。 Shim 會讓對特定方法的呼叫轉向至您撰寫為測試一部分的程式碼。 有許多方法會取決於外部條件傳回不同的結果，不過填充碼會受您的測試所控制，並且可在每個呼叫中傳回一致的結果。 這可讓您的測試更容易撰寫。
 
- 使用填充碼來隔離您的程式碼以及不屬於方案的組件。 若要互相隔離方案的元件，我們建議您使用虛設常式。
+ 使用 Shim 來隔離您的程式碼與不屬於方案的組件。 若要隔離您方案的各個元件，建議您使用 stub。
 
  如需概觀和快速入門指南，請參閱[使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)。
 
- **需求**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -68,7 +68,7 @@ using (ShimsContext.Create()
 
 1. 在方案總管中，展開單元測試專案的 [參考]。
 
-    - 如果您在 Visual Basic 中工作，必須先選取 [方案總管] 工具列中的 [**顯示所有檔案**]，才能看見 [參考] 清單。
+    - 如果您在 Visual Basic 中工作，必須先選取方案總管工具列中的 [顯示所有檔案]，才能看見 [參考] 清單。
 
 2. 選取包含您要用於建立填充碼之類別定義的組件。 例如，如果您要填充日期時間，請選取 System.dll。
 

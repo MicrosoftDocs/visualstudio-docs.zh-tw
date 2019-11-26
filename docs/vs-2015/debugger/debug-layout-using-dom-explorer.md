@@ -114,7 +114,7 @@ ms.locfileid: "74298383"
 11. 若要得知如何套用 margin-left 規則，請選擇 [計算] 索引標籤，然後查看 margin-left 規則底下的內容。 您可以看到此規則已設定 5em 值，但是計算值為 66.66px 或 146.66px (視您的目標裝置而定)。  
   
     > [!TIP]
-    > [計算] 索引標籤會顯示 margin-left 規則設定於 hub.css 的 `..hubpage .hub. section4 .sub-image-row img` CSS 選取器中。 在本示範應用程式中，這就是您需要修正的位置。  
+    > [**計算**] 索引標籤會顯示邊界左邊的規則是在 `..hubpage .hub. section4 .sub-image-row img` CSS 選取器中設定，在 hub. css 中找到。 在本示範應用程式中，這就是您需要修正的位置。  
   
      您也可以使用 [配置] 索引標籤來測試修改配置值的結果。  
   

@@ -23,7 +23,7 @@ ms.locfileid: "74301347"
 
 Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致性。
 
- 若要查看哪些版本的 Visual Studio 支援這些功能之每一項，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看支援每項功能的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="key-tasks"></a>主要工作
  使用下列工作來驗證您的軟體。

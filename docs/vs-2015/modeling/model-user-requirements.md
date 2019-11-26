@@ -25,7 +25,7 @@ ms.locfileid: "74302779"
 
 Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達到其目標所扮演的角色，幫助您了解、討論和溝通使用者需求。 需求模型是這些圖表的其中一組，各著重於使用者需求的不同層面。 如需視訊示範，請參閱︰ [Modeling the Business Domain](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)(模型化商務網域)。
 
- 若要查看哪些版本的 Visual Studio 支援每種模型類型，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看支援各類型之模型的 Visual Studio 版本，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
  需求模型可協助您：
 
@@ -134,7 +134,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 |深入了解|讀取|
 |--------------------|----------|
-|尋找需求類別的更多詳細資訊|[UML 類別圖：方針](../modeling/uml-class-diagrams-guidelines.md)|
+|尋找需求類別的更多詳細資訊|[UML 類別圖表：方針](../modeling/uml-class-diagrams-guidelines.md)|
 |概念性類別圖上的項目|[UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)|
 |如何透過概念性類別開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
@@ -157,12 +157,12 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 |深入了解|讀取|
 |--------------------|----------|
-|尋找和記錄靜態商務規則的更多詳細資訊|[UML 類別圖：方針](../modeling/uml-class-diagrams-guidelines.md)|
+|尋找和記錄靜態商務規則的更多詳細資訊|[UML 類別圖表：方針](../modeling/uml-class-diagrams-guidelines.md)|
 |概念性類別圖上的項目|[UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)|
 |如何開發遵守商務規則的程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
- 有數種類別的服務需求品質。 包括下列各項：
+ 有數種類別的服務需求品質。 其包括：
 
 - 效能
 
@@ -202,8 +202,8 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 |深入了解|讀取|
 |--------------------|----------|
-|如何定義商務工作流程的詳細資訊|[UML 活動圖：方針](../modeling/uml-activity-diagrams-guidelines.md)|
-|活動圖上的項目|[UML 活動圖：參考](../modeling/uml-activity-diagrams-reference.md)|
+|如何定義商務工作流程的詳細資訊|[UML 活動圖表：方針](../modeling/uml-activity-diagrams-guidelines.md)|
+|活動圖上的項目|[UML 活動圖表：參考](../modeling/uml-activity-diagrams-reference.md)|
 |如何透過活動圖開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="Sequences"></a>顯示使用者與您系統之間的互動
@@ -219,8 +219,8 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 |深入了解|讀取|
 |--------------------|----------|
-|如何定義互動的詳細資訊|[UML 循序圖：方針](../modeling/uml-sequence-diagrams-guidelines.md)|
-|循序圖上的項目|[UML 循序圖：參考](../modeling/uml-sequence-diagrams-reference.md)|
+|如何定義互動的詳細資訊|[UML 順序圖表：方針](../modeling/uml-sequence-diagrams-guidelines.md)|
+|循序圖上的項目|[UML 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md)|
 |如何透過循序圖開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="using-a-model-to-reduce-inconsistencies"></a>使用模型來減少不一致

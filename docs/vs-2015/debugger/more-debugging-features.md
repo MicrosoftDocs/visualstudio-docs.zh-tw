@@ -32,7 +32,7 @@ ms.locfileid: "74300533"
  [在偵錯時檢查 XAML 屬性](../debugger/inspect-xaml-properties-while-debugging.md)  
  描述 [即時視覺化樹狀結構] 和 [即時屬性總管] 工具的使用。  
   
- [偵錯設定及準備](../debugger/debugger-settings-and-preparation.md)  
+ [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)  
  說明在不同內容中使用偵錯工具時可能需要的不同設定。  
   
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)  
@@ -41,7 +41,7 @@ ms.locfileid: "74300533"
  [Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)  
  討論 Just-In-Time 偵錯，這種偵錯可以自動在執行於 Visual Studio 外部的程式損毀時，啟動偵錯工具。  
   
- [逐步解說：於設計時偵錯](../debugger/walkthrough-debugging-at-design-time.md)  
+ [逐步解說：在設計階段進行偵錯](../debugger/walkthrough-debugging-at-design-time.md)  
  示範如何在應用程式沒有執行時，使用 Visual Studio [即時運算] 視窗執行函式或副程式。 
   
  [編輯後繼續](../debugger/edit-and-continue.md)  

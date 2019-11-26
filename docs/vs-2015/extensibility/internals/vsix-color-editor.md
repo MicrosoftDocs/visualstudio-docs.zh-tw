@@ -67,7 +67,7 @@ ms.locfileid: "74295436"
   
 - 作用中  
   
-- 非使用中  
+- 非作用中  
   
 - MouseOver  
   

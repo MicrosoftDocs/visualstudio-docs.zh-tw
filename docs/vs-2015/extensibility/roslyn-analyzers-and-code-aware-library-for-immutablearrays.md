@@ -20,7 +20,7 @@ ms.locfileid: "74298381"
 
 [.NET Compiler Platform](https://github.com/dotnet/roslyn) （"Roslyn"）可協助您建立程式碼感知程式庫。 程式碼感知程式庫提供您可以使用的功能和工具（Roslyn 分析器），協助您以最佳方式使用程式庫，或避免發生錯誤。 本主題說明如何建立真實世界的 Roslyn 分析器，以在使用 [[筆尖：不可變的集合](https://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca)] NuGet 套件時攔截常見的錯誤。 此範例也會示範如何為分析器所找到的程式碼問題提供代碼解析。 使用者會在 Visual Studio 燈泡 UI 中看到程式碼修正，並可自動套用程式碼的修正。
 
-## <a name="getting-started"></a>快速入門
+## <a name="getting-started"></a>使用者入門
 若要建立此範例，您需要下列各項：
 
 - Visual Studio 2015 （非 Express Edition）或更新版本。 您可以使用免費的[Visual Studio Community 版本](https://www.visualstudio.com/products/visual-studio-community-vs)

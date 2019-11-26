@@ -55,37 +55,37 @@ ms.locfileid: "74300253"
 
 |**圖表**|**顯示**|
 |-----------------|---------------|
-|[UML 活動圖：參考](../modeling/uml-activity-diagrams-reference.md)|商務程序中動作與參與者之間的工作流程|
+|[UML 活動圖表：參考](../modeling/uml-activity-diagrams-reference.md)|商務程序中動作與參與者之間的工作流程|
 |[UML 元件圖表：參考](../modeling/uml-component-diagrams-reference.md)|系統、其介面、通訊埠和關聯性的元件|
 |[UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)|系統及其關聯性中用來儲存和交換資料的類型|
-|[UML 循序圖：參考](../modeling/uml-sequence-diagrams-reference.md)|物件、元件、系統或行動之間的互動順序|
+|[UML 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md)|物件、元件、系統或行動之間的互動順序|
 |[UML 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md)|系統支援的使用者目標和工作|
 
- 若要查看哪些版本的 Visual Studio 支援每種圖表類型，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看哪些版本的 Visual Studio 支援每種類型的圖表，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
  若要將系統或現有程式碼的架構視覺化，請建立下列圖表：
 
 |**圖表**|**顯示**|
 |-----------------|---------------|
 |[分層圖：方針](../modeling/layer-diagrams-guidelines.md)<br /><br /> [分層圖：參考](../modeling/layer-diagrams-reference.md)|系統的高階架構|
-|Code Map<br /><br /> [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)|現有程式碼中的相依性和其他關聯性|
+|程式碼對應<br /><br /> [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)|現有程式碼中的相依性和其他關聯性|
 |程式碼產生的類別圖<br /><br /> [使用類別圖表 (類別設計工具)](../ide/working-with-class-diagrams-class-designer.md)|.NET 程式碼中的類型及其關聯性|
 
 ## <a name="common-tasks"></a>一般工作
 
-|**本文**|**工作**|
+|**本文**|**Task**|
 |---------------|--------------|
-|[建立 UML 模型專案和圖表](../modeling/create-uml-modeling-projects-and-diagrams.md)|**建立模型** 並加入圖表。|
+|[建立 UML 模型專案和圖表](../modeling/create-uml-modeling-projects-and-diagrams.md)|**建立模型**並新增圖表。|
 |[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)|**繪製圖表**以編輯模型。|
 |[定義套件和命名空間](../modeling/define-packages-and-namespaces.md)|**建立封裝**，將模型分割成不同小組成員可以處理的單位。|
 |[從 UML 類別圖表產生程式碼](../modeling/generate-code-from-uml-class-diagrams.md)|**從C#類別圖表產生程式碼**以開始執行。|
-|[使用設定檔和造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|使用造型的**自訂模型項目**，針對特殊用途擴充標準 UML 模型項目。|
-|[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)|**建立模型項目和工作項目之間的連結**，幫助您追蹤與特定模型部分相關的工作、測試案例、Bug、需求、問題或其他類型的工作。|
+|[使用設定檔和造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|使用造型**自訂模型**專案，以針對特定目的擴充標準 UML 模型元素。|
+|[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)|**建立模型元素與工作專案之間的連結**，協助您追蹤工作、測試案例、bug、需求、問題，或與模型的特定部分相關聯的其他工作類型。|
 |[將圖表匯出為影像](../modeling/export-diagrams-as-images.md)|**儲存您的模型和圖表**，讓您可以與其他使用者共用，包括未使用 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]。|
 
 ## <a name="related-tasks"></a>相關工作
 
-|**本文**|**工作**|
+|**本文**|**Task**|
 |---------------|--------------|
 |[視覺化程式碼](../modeling/visualize-code.md)|建立 Code Map 和分層圖，藉此深入了解不熟悉的程式碼。|
 |[模型使用者需求](../modeling/model-user-requirements.md)|使用模型來釐清和溝通使用者的需求。|

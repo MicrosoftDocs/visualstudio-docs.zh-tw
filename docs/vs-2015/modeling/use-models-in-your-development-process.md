@@ -23,7 +23,7 @@ ms.locfileid: "74298259"
 
 在 Visual Studio 中，您可以使用模型來協助您了解並變更系統、應用程式或元件。 模型可以協助您將系統運作的領域視覺化、釐清使用者的需求、定義系統的架構、分析程式碼，以及確定您的程式碼符合需求。 請參閱[Channel 9 影片：透過模型化改善架構](https://go.microsoft.com/fwlink/?LinkID=252078)。
 
- 若要查看哪些版本的 Visual Studio 支援每種模型類型，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看支援各類型之模型的 Visual Studio 版本，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="how-to-use-models"></a>如何使用模型
  模型可以藉由許多方式協助您：

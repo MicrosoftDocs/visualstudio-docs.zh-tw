@@ -38,7 +38,7 @@ ms.locfileid: "74174133"
 9. 如需詳細資訊，請瀏覽 WhiteSource Bolt [常見問題集頁面](https://bolt.whitesourcesoftware.com/azure/faq/) \(英文\)。 
 
 ## <a name="eligibility"></a>資格
-[WhiteSource Bolt](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) is now available free in the [Visual Studio Marketplace. 
+[WhiteSource 的螺栓](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance)現在可在 [Visual Studio Marketplace 免費使用。 
 
 ## <a name="support-resources"></a>支援資源
 - 需要 WhiteSource Bolt 的說明嗎？  在 https://www.whitesourcesoftware.com/vse_whitesource_bolt/ 與 WhiteSource Bolt 代表即時聊天

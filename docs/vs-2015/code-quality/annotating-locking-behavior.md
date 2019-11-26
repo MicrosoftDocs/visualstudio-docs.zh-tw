@@ -67,7 +67,7 @@ ms.locfileid: "74295821"
 ## <a name="locking-annotations"></a>鎖定注釋  
  下表列出鎖定注釋。  
   
-|註釋|描述|  
+|Annotation|描述|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的獨佔鎖定計數遞增 1。|  
 |`_Acquires_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的鎖定計數遞增 1。|  
@@ -91,7 +91,7 @@ ms.locfileid: "74295821"
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>未公開之鎖定物件的 SAL 內在變數  
  某些鎖定物件不會由相關聯的鎖定函式的實作為公開。  下表列出 SAL 內部變數，這些變數會啟用在未公開的鎖定物件上運作之函式的註釋。  
   
-|註釋|描述|  
+|Annotation|描述|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|描述取消微調鎖定。|  
 |`_Global_critical_region_`|描述關鍵區域。|  
@@ -101,7 +101,7 @@ ms.locfileid: "74295821"
 ## <a name="shared-data-access-annotations"></a>共用資料存取注釋  
  下表列出共用資料存取的註釋。  
   
-|註釋|描述|  
+|Annotation|描述|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|標註變數，並指出只要存取變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|  
 |`_Interlocked_`|標注變數，相當於 `_Guarded_by_(_Global_interlock_)`。|  

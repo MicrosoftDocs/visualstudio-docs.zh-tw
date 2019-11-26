@@ -30,7 +30,7 @@ ms.locfileid: "74300892"
 
 2. [更新 Package.tt 中的套件版本號碼](#version)。 每當變更 Commands.vsct 時都必須這麼做
 
-3. [在 CommandSet 類別中撰寫方法](#CommandSet)使命令可見以及定義您要命令執行的動作。
+3. [在 CommandSet 類別中撰寫方法](#CommandSet)，讓命令可見，並定義您希望命令執行的動作。
 
    如需範例，請參閱[視覺效果和模型化 SDK 網站](https://go.microsoft.com/fwlink/?LinkID=185579)。
 
@@ -61,9 +61,9 @@ ms.locfileid: "74300892"
 
 #### <a name="to-add-the-command"></a>加入命令
 
-1. 在 [方案總管]中，開啟 DslPackage專案之下的 Commands.vsct。
+1. 在**方案總管**的 [ **DslPackage** ] 專案下，開啟 .vsct。
 
-2. 在 `Commands` 項目中，定義一或多個按鈕和群組。 *「按鈕」* (button) 是功能表上的一個項目。 *「群組」* (group) 是功能表中的一個區段。 若要定義這些項目，請加入下列項目：
+2. 在 `Commands` 項目中，定義一或多個按鈕和群組。 *按鈕*是功能表上的專案。 *群組*是功能表中的一節。 若要定義這些項目，請加入下列項目：
 
     ```
     <!-- Define a group - a section in the menu -->
@@ -117,7 +117,7 @@ ms.locfileid: "74300892"
     </Symbols>
     ```
 
-5. 將 `{000...000}` 取代為識別您群組和功能表項目的 GUID。 若要取得新的 GUID，請使用 [工具]功能表上的 [建立 GUID]工具。
+5. 將 `{000...000}` 取代為識別您群組和功能表項目的 GUID。 若要取得新的 GUID，請使用 [**工具**] 功能表上的 [**建立 guid** ] 工具。
 
     > [!NOTE]
     > 如果您加入更多群組或功能表項目，您就可以使用相同的 GUID。 不過，您必須為 `IDSymbols` 使用新的值。
@@ -139,7 +139,7 @@ ms.locfileid: "74300892"
 
 #### <a name="to-update-the-packagett-file"></a>更新 Package.tt 檔
 
-1. 在 [方案總管]的 DslPackage專案中，在 [GeneratedCode]資料夾中開啟 Package.tt 檔。
+1. 在**方案總管**中，于**DslPackage**專案的**GeneratedCode**資料夾中，開啟 Package.tt 檔案。
 
 2. 找出 `ProvideMenuResource` 屬性。
 
@@ -324,9 +324,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 #### <a name="to-exercise-the-command"></a>執行命令
 
-1. 在 [方案總管]工具列上，按一下 [轉換所有範本]。
+1. 在 [**方案總管**] 工具列上，按一下 [**轉換所有範本**]。
 
-2. 按 **F5** 以重新建置方案，然後在實驗組建中開始偵錯網域指定的語言。
+2. 按下**F5**以重建方案，並開始在實驗性組建中對特定領域語言進行偵測。
 
 3. 在實驗組建中，開啟範例圖表。
 
@@ -339,11 +339,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 請確定實驗範例具有此 DSL 的正確副檔名。 若要檢查副檔名，請在 Visual Studio 的主要執行個體中開啟 DslDefinition.dsl。 然後在 DSL Explorer 中，以滑鼠右鍵按一下 [編輯器] 節點，然後按一下 [屬性]。 在 [屬性] 視窗中，檢查 FileExtension 屬性。
 
-- 您是否已[遞增套件版本號碼](#version)？
+- 您是否[遞增套件版本號碼](#version)？
 
 - 在 OnStatus 方法的開頭設定中斷點。 在圖表的任何部分上按一下滑鼠右鍵時，它應該會中斷。
 
-   **未呼叫 OnStatus 方法**：
+   **不會呼叫 OnStatus 方法**：
 
   - 請確定您的 CommandSet 程式碼中的 GUID 和 ID 符合 Commands.vsct 的 Symbols 區段中的 GUID 和 ID。
 

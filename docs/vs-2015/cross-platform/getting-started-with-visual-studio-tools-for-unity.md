@@ -16,7 +16,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299829"
 ---
-# <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
+# <a name="getting-started-with-visual-studio-tools-for-unity"></a>開始使用 Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在本節中，您將學習如何安裝 Visual Studio Tools for Unity 和設定您的 Unity 專案以使用 Visual Studio。  
@@ -24,7 +24,7 @@ ms.locfileid: "74299829"
 > [!IMPORTANT]
 > Unity 5.2 加入對 Visual Studio Tools for Unity 2.1 的內建支援，可簡化專案安裝。 若要利用這一點，您的 Windows 上必須有 Unity 5.2.0 版或更高版本，和 Visual Studio Tools for Unity 2.1 版或更高版本。  
   
-## <a name="prerequisites"></a>先決條件  
+## <a name="prerequisites"></a>必要條件  
  若要使用 Visual Studio Tools for Unity，您需要：  
   
 - 支援擴充功能的 **Visual Studio** 版本，例如 Visual Studio Community、Professional、Premium 或 Enterprise。 您可以免費下載 Visual Studio Community。  
@@ -73,7 +73,7 @@ ms.locfileid: "74299829"
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - 設定 Unity Editor 使用 Visual Studio Tools for Unity  
  若要讓您的專案能使用 Visual Studio Tools for Unity，只要將 Visual Studio 設定做為其外部指令碼編輯器。 在 Unity 編輯器中，在主功能表上選擇 **[編輯]、[喜好設定]** ；然後在 [Unity 喜好設定] 對話方塊中，選擇 [外部工具]。 接下來，將 [外部指令碼編輯器] 屬性設為您想要使用的 Visual Studio 版本 (必須安裝這版 Visual Studio 的 Visual Studio Tools for Unity)，並確定已設定 [編輯器附加] 屬性。  
   
- 若要確定現在已啟用對 Visual Studio Tools for Unity 的內建支援，請參閱 [關於 Unity] 對話方塊。 In the Unity editor, on the main menu, choose **[說明]、[關於 Unity]** 如果 Visual Studio Tools for Unity 已安裝並正確設定，您會看到在 [關於 Unity] 對話方塊的左下角顯示訊息。  
+ 若要確定現在已啟用對 Visual Studio Tools for Unity 的內建支援，請參閱 [關於 Unity] 對話方塊。 In the Unity editor, on the main menu, choose **[說明]、[關於 Unity]** 。如果 Visual Studio Tools for Unity 已安裝並正確設定，您會看到在 [關於 Unity] 對話方塊。  
   
  最後，請確定已透過 **[組建設定]** 頁面設定組建目標，並已啟用 [指令碼偵錯] 。  
   
@@ -109,7 +109,7 @@ ms.locfileid: "74299829"
  ![在 Visual Studio 中開啟您的 unity 專案。](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   
 ## <a name="next-steps"></a>後續步驟  
- 如需了解如何在 Visual Studio 中使用及偵錯 Unity 專案，請參閱[使用 Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md)。  
+ 如需了解如何在 Visual Studio 中使用及偵錯 Unity 專案，請參閱 [Using Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Unity 首頁 (英文)](https://unity.com/)

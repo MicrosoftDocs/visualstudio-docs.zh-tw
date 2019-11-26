@@ -28,7 +28,7 @@ ms.locfileid: "74299811"
   
  一旦您已安裝使用 iOS 進行建置的工具，請參閱本主題以取得可在 Visual Studio 及 Mac 上進行 iOS 開發快速設定和更新遠端代理程式的方式。  
   
- [必要條件](#Prerequisites)  
+ [先決條件](#Prerequisites)  
   
  [安裝 iOS 適用的遠端代理程式](#Install)  
   
@@ -36,7 +36,7 @@ ms.locfileid: "74299811"
   
  [在 Visual Studio 中設定遠端代理程式](#ConfigureVS)  
   
- [產生新的安全 PIN 碼](#GeneratePIN)  
+ [Generate a new security PIN](#GeneratePIN)  
   
  [產生新的伺服器憑證](#GenerateCert)  
   
@@ -188,7 +188,7 @@ ms.locfileid: "74299811"
 ## <a name="GenerateCert"></a> 產生新的伺服器憑證  
  為了安全性目的，使用遠端代理程式配對出的 Visual Studio 伺服器憑證會與 Mac 的 IP 或主機名稱相關。 如果上述值有所變更，您就必須產生新的伺服器憑證，然後重新使用新值來設定 Visual Studio。  
   
-#### <a name="to-generate-a-new-server-certificate"></a>若要產生新的伺服器憑證  
+#### <a name="to-generate-a-new-server-certificate"></a>產生新的伺服器憑證  
   
 1. 停止 vcremote 代理程式。  
   

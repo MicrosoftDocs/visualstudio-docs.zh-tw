@@ -45,7 +45,7 @@ ms.locfileid: "74289849"
 
  如果您從模型中刪除項目，則會自動刪除它參與的任何關聯性，並更新另一端的屬性。
 
- 如果「UML 規格」將多重性 0..1 指派給屬性，則值可能是 `null`。 多重性的最大值大於 1 時，表示 .NET 屬性的類型為`IEnumerable<`*類型*`>`。
+ 如果「UML 規格」將多重性 0..1 指派給屬性，則值可能是 `null`。 最大值大於1的多重性表示 .NET 屬性的類型為： `IEnumerable<`*類型*`>`。
 
  如需有關如何遍歷關聯性的詳細資訊，請參閱[使用 UML API 導覽關聯](../modeling/navigate-relationships-with-the-uml-api.md)性。
 
@@ -128,7 +128,7 @@ foreach (IShape<IInterface> in
 
 - 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟模型專案和其圖表，然後存取內容。 如需詳細資訊，請參閱[使用 VISUAL STUDIO API 來開啟 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)
 - [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)

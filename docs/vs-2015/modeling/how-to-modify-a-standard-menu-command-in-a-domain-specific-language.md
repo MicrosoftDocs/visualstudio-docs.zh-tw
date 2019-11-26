@@ -22,11 +22,11 @@ ms.locfileid: "74300872"
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用網域指定的語言修改標準功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以針對 DSL 中自動定義的一些標準命令，修改其行為。 例如，您可修改 [剪下] 以排除機密資訊。 若要執行這項操作，您可以覆寫命令集類別中的方法。 這些類別是在 DslPackage 專案的 CommandSet.cs 檔中定義，並且衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
+您可以針對 DSL 中自動定義的一些標準命令，修改其行為。 例如，您可以修改「**剪**下」，使其不會排除機密資訊。 若要執行這項操作，您可以覆寫命令集類別中的方法。 這些類別是在 DslPackage 專案的 CommandSet.cs 檔中定義，並且衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
 
  簡而言之，若要修改命令：
 
-1. [找出您可以修改的命令](#what)。
+1. [探索您可以修改的命令](#what)。
 
 2. [建立適當命令集類別的部分](#extend)宣告。
 
