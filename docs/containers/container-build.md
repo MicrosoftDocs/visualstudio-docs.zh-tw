@@ -8,7 +8,7 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.openlocfilehash: 6b96f23bc7bcd7e6d970025b23f89f572d07daf1
 ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/25/2019
 ms.locfileid: "74473997"
