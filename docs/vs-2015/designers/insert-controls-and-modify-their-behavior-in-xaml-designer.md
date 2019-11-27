@@ -23,12 +23,12 @@ ms.locfileid: "74300842"
 
  **本主題內容：**
 
-- [將控制項加入畫板](#Insert)
+- [將控制項加入至畫板](#Insert)
 
 - [讓控制項執行動作](#Modify)
 
 ## <a name="Insert"></a> 將控制項加入至畫板
- 您可以從 [資產] 面板中將控制項拖曳至 [畫板] 上，然後在 [屬性] 視窗中加以修改。
+ 您可以從 [資產] 面板中將控制項拖曳至 [畫板]上，然後在 [屬性] 視窗中加以修改。
 
  ![Blend &#45;資產&#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")
 
@@ -72,7 +72,7 @@ ms.locfileid: "74300842"
 
  **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Blend 秘訣：使用行為簡介第1部分](https://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904)。
 
-### <a name="events"></a>「事件」
+### <a name="events"></a>事件
  如需最大的彈性，請處理 *「事件」* (event)。 您將必須撰寫一些程式碼。
 
  **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[新增滑鼠事件](https://www.youtube.com/watch?v=2PMxAlb-x_E)。
