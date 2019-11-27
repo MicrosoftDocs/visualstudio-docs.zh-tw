@@ -122,14 +122,14 @@ ms.locfileid: "74297131"
   
      ![移至效能事件的應用程式代碼](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
-     現在您可以檢閱其他記錄值、呼叫堆疊、逐步執行程式碼，或使用 [IntelliTrace] 視窗[在「時間」中向後或向前移動至其他方法](../debugger/intellitrace.md) (這些方法是在此效能事件期間呼叫的)。  
+     現在您可以檢閱其他記錄值、呼叫堆疊、逐步執行程式碼，或使用 [IntelliTrace] 視窗 [在「時間」中向後或向前移動至其他方法](../debugger/intellitrace.md) (這些方法是在此效能事件期間呼叫的)。  
   
 ### <a name="ExceptionData"></a> 例外狀況資料  
  檢閱針對您的 App 所記錄的擲回之例外狀況。 您可以將具有相同類型和呼叫堆疊的例外狀況群組在一起，這樣就可以只看到最新的例外狀況。  
   
 ##### <a name="to-start-debugging-from-an-exception"></a>從例外狀況開始偵錯  
   
-1. 在 [例外狀況資料] 下，檢閱記錄的例外狀況事件、其類型、訊息，以及發生例外狀況的時間。 若要更深入發掘程式碼，請從例外狀況群組中最近發生的事件開始偵錯。  
+1. 在 [例外狀況資料]下，檢閱記錄的例外狀況事件、其類型、訊息，以及發生例外狀況的時間。 若要更深入發掘程式碼，請從例外狀況群組中最近發生的事件開始偵錯。  
   
      ![從例外狀況事件開始調試](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
@@ -139,7 +139,7 @@ ms.locfileid: "74297131"
   
      ![從例外狀況事件移至應用程式程式碼](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
-     現在您可以檢閱其他記錄值、呼叫堆疊，或使用 [IntelliTrace] 視窗[在「時間」中向後或向前移動至其他記錄的事件](../debugger/intellitrace.md)、相關程式碼以及在這些時間點上記錄的值。  
+     現在您可以檢閱其他記錄值、呼叫堆疊，或使用 [IntelliTrace] 視窗 [在「時間」中向後或向前移動至其他記錄的事件](../debugger/intellitrace.md)、相關程式碼以及在這些時間點上記錄的值。  
   
     |**資料行**|**顯示的內容**|  
     |----------------|-------------------|  
@@ -225,7 +225,7 @@ ms.locfileid: "74297131"
 |**資料行**|**顯示的內容**|  
 |----------------|-------------------|  
 |**ID**|執行緒 ID 編號|  
-|**名稱**|執行緒名稱。 未命名的執行緒會顯示為「\<沒有名稱>」。|  
+|**Name**|執行緒名稱。 未命名的執行緒會顯示為「\<沒有名稱>」。|  
 |**開始時間**|執行緒的建立時間|  
 |**結束時間**|執行緒的完成時間|  
   
@@ -258,7 +258,7 @@ ms.locfileid: "74297131"
 |----------------|-------------------|  
 |**模組名稱**|模組檔案名稱|  
 |**模組路徑**|載入模組的磁碟位置|  
-|**模組 ID**|版本特定且提供給相符符號 (PDB) 檔案之模組的唯一識別項。 請參閱[尋找符號 (.pdb) 檔和原始程式檔](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470)。|  
+|**模組 ID**|版本特定且提供給相符符號 (PDB) 檔案之模組的唯一識別項。 請參閱 [Finding symbol (.pdb) files and source files](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470)。|  
   
 ### <a name="where-can-i-get-more-information"></a>哪裡可以取得詳細資訊？  
  [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)  

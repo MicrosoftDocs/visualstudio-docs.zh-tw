@@ -24,7 +24,7 @@ ms.locfileid: "74291267"
 
 本逐步解說示範如何建立獨立的 shell 解決方案、自訂 [說明] 工具視窗，以及建立安裝程式來安裝獨立的 shell。  
   
-## <a name="prerequisites"></a>先決條件  
+## <a name="prerequisites"></a>必要條件  
  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱[VISUAL STUDIO SDK](../extensibility/visual-studio-sdk.md)。 若要部署獨立的 shell，您也必須使用 Visual Studio Shell （獨立模式）可轉散發套件。  
   
 ## <a name="creating-an-isolated-shell-solution"></a>建立獨立的 Shell 解決方案  
@@ -216,7 +216,7 @@ ms.locfileid: "74291267"
   
     7. 啟動顯示 .bmp  
   
-5. 按一下 [**加入專案輸出**] 按鈕，然後新增**MyVSShellStub/主要輸出**。 按一下 [**確定**]。  
+5. 按一下 [**加入專案輸出**] 按鈕，然後新增**MyVSShellStub/主要輸出**。 按一下 [確定] **Walkthrough: Calling Code in an VSTO Add-in from VBA**。  
   
 6. 在左窗格的 [**目的地電腦**] 底下，以滑鼠右鍵按一下 [ **Fabrikam 音樂編輯器 [INSTALLDIR]]** 節點，然後新增名為 [**擴充**功能] 的**新資料夾**。  
   

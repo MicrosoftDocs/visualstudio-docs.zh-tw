@@ -7,19 +7,19 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 7eae92f7c65208dfeda9cd19e14eaa627e12a22a
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.openlocfilehash: 0232b37d08901bcc04c9d66facfe6850a9852e88
+ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74142185"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74485500"
 ---
-有了 Visual Studio，您就可以輕鬆地建立、調試和執行容器化的 ASP.NET Core 應用程式，並將其發佈至 Azure Container Registry （ACR）、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們將發佈到 ACR。
+有了 Visual Studio，您就可以輕鬆地建立、偵測及執行容器化的 .NET、ASP.NET 和 ASP.NET Core 應用程式，並將其發佈至 Azure Container Registry （ACR）、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們會將 ASP.NET Core 應用程式發佈到 ACR。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* 已安裝**網頁程式開發**、**Azure Tools** 工作負載及(或) **.NET Core 跨平台開發** 工作負載的 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+* 已安裝[網頁程式開發](https://visualstudio.microsoft.com/downloads)、**Azure Tools** 工作負載及(或) **.NET Core 跨平台開發** 工作負載的 **Visual Studio 2019**
 * 適用於 .NET Core 2.2 開發的 [.NET Core 2.2 開發工具](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 * 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊免費試用](https://azure.microsoft.com/offers/ms-azr-0044p/)。
 
@@ -73,26 +73,6 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 
 [輸出] 視窗中的 [容器工具] 選項會顯示要採取哪些動作。
 
-從 [工具] > [NuGet 套件管理員]、[套件管理員主控台] 功能表開啟 [套件管理員主控台] (PMC)。
-
-產生的應用程式 Docker 映像，會標記為 *dev*。 此映像以 *microsoft/dotnet* 基底映像的 *2.2-aspnetcore-runtime* 標籤為基礎。 在 [套件管理員主控台] (PMC) 視窗中，執行 `docker images` 命令。 這會顯示電腦上的映像：
-
-```console
-REPOSITORY        TAG                     IMAGE ID      CREATED         SIZE
-hellodockertools  dev                     d72ce0f1dfe7  30 seconds ago  255MB
-microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
-```
-
-> [!NOTE]
-> **dev** 映像未包含應用程式二進位檔案和其他內容，因為 [偵錯] 組態會使用磁碟區掛接來提供反覆編輯和偵錯體驗。 若要建立包含所有內容的生產映像，請使用 [發行] 組態。
-
-在 PMC 中執行 `docker ps` 命令。 請注意是使用容器來執行應用程式：
-
-```console
-CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
-cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
-```
-
 ## <a name="containers-window"></a>容器視窗
 
 如果您有 Visual Studio 2019 16.4 版或更新版本，您可以使用 [**容器**] 視窗來查看您的電腦上執行中的容器，以及您可用的映射。
@@ -102,6 +82,8 @@ cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago  
 您可以在方便的位置（例如編輯器底下）移動 [**容器**] 視窗，方法是將它移到視窗放置參考後面，然後遵循。
 
 在視窗中，尋找您的容器並逐步執行每個索引標籤，以查看環境變數、埠對應、記錄和檔案系統。
+
+![[容器] 視窗的螢幕擷取畫面](../../media/overview/vs-2019/container-tools-window.png)
 
 如需詳細資訊，請參閱[在 Visual Studio 中查看和診斷容器和映射](../../view-and-diagnose-containers.md)。
 

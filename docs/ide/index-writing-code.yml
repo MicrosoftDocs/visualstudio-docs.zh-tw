@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Organize and edit code in Visual Studio
-summary: Learn about working with code projects, using code editor features, and maintaining consistent code style.
+title: 在 Visual Studio 中組織和編輯程式碼
+summary: 瞭解如何處理程式碼專案、使用程式碼編輯器功能，以及維護一致的程式碼樣式。
 metadata:
   title: 程式碼編輯器功能
-  description: Learn about code editing features in Visual Studio.
+  description: 瞭解 Visual Studio 中的程式碼編輯功能。
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
@@ -17,7 +17,7 @@ metadata:
   ms.lasthandoff: 11/22/2019
   ms.locfileid: "74316434"
 landingContent:
-- title: Open or create a project
+- title: 開啟或建立專案
   linkLists:
   - linkListType: tutorial
     links:
@@ -29,7 +29,7 @@ landingContent:
     links:
     - text: 使用 Visual Studio 而不使用專案或方案
       url: develop-code-in-visual-studio-without-projects-or-solutions.md
-- title: Use editing features
+- title: 使用編輯功能
   linkLists:
   - linkListType: overview
     links:
@@ -39,15 +39,15 @@ landingContent:
       url: navigating-code.md
     - text: 產生及修正程式嗎
       url: code-generation-in-visual-studio.md
-    - text: Use IntelliSense for code completion
+    - text: 使用 IntelliSense 來完成程式碼
       url: using-intellisense.md
-    - text: Manage code style preferences
+    - text: 管理程式碼樣式喜好設定
       url: code-styles-and-code-cleanup.md
     - text: 程式碼分析
       url: ../code-quality/roslyn-analyzers-overview.md
     - text: IntelliCode
       url: /visualstudio/intellicode/intellicode-visual-studio
-- title: Get started with programming languages
+- title: 開始使用程式設計語言
   linkLists:
   - linkListType: tutorial
     links:

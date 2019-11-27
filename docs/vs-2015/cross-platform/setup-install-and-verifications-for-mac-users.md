@@ -6,12 +6,12 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 14da8fab1b3190d77951298ac7d1a130c85f6135
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 703ee752a9f16f0abc5e4813707890a6d17947af
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297707"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538945"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>針對 Mac 使用者的設定、安裝和驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "74297707"
   
 3. 遵循 [安裝和設定 Xamarin.iOS](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (xamarin.com) 上的指示，下載並安裝 Xamarin。  
   
-4. 當您在 Windows 和 Mac 電腦上完成安裝 Xamarin 之後，請依照[使用 XMA 連線到 Mac (英文)](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/?pivots=windows#Connecting_to_the_Mac_Using_XMA) (xamarin.com) 上的指示執行，如此就能在 Windows 電腦上透過 Visual Studio 使用 iOS 和 Mac。  
+4. 當您在 Windows 和 Mac 電腦上完成安裝 Xamarin 之後，請依照[使用 XMA 連線到 Mac (英文)](/xamarin/ios/get-started/installation/windows/connecting-to-mac) (xamarin.com) 上的指示執行，如此就能在 Windows 電腦上透過 Visual Studio 使用 iOS 和 Mac。  
   
 ## <a name="windows"></a> 在 Parallels 內設定 Windows (Visual Studio 和 Xamarin)  
   
@@ -75,13 +75,13 @@ ms.locfileid: "74297707"
     > [!NOTE]
     > 請確定將 Xamarin 更新為版本 4.0.3.214 或更高版本，以避免發生舊版 Xamarin 授權的問題。  如果您嘗試檢查更新，並看到關於 Microsoft 建置工具的錯誤，請參閱 [Xamarin 論壇](https://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015)上的討論。
   
-6. 當您在 Windows 和 Mac 電腦上完成安裝 Xamarin 之後，請依照[使用 XMA 連線到 Mac (英文)](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/?pivots=windows#Connecting_to_the_Mac_Using_XMA) (xamarin.com) 上的指示執行，如此就能透過 Visual Studio 使用 iOS。  
+6. 當您在 Windows 和 Mac 電腦上完成安裝 Xamarin 之後，請依照[使用 XMA 連線到 Mac (英文)](/xamarin/ios/get-started/installation/windows/connecting-to-mac) (xamarin.com) 上的指示執行，如此就能透過 Visual Studio 使用 iOS。  
   
 ## <a name="verify"></a> 驗證您的環境  
  安裝程式完成之後，請花幾分鐘的時間來確認一切就緒，以便體驗 Xamarin 開發。  
   
 ### <a name="xamarin-studio"></a>Xamarin Studio  
- 首先，請確定當您巡覽至所提供的連結時，選取了右上角的 [Xamarin Studio]，以查看 Xamarin 文件的正確版本：  
+ 首先，請確定當您巡覽至所提供的連結時，選取了右上角的 [Xamarin Studio] ，以查看 Xamarin 文件的正確版本：  
   
  ![選取 Xamarin Studio 以查看 Xamarin.com 上的正確檔](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")  
   
@@ -98,7 +98,7 @@ ms.locfileid: "74297707"
 4. 透過 [在模擬器中偵錯文件](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (xamarin.com)，驗證 iOS 模擬器中的偵錯作業。  
   
 ### <a name="visual-studio"></a>Visual Studio  
- 首先，請確定當您巡覽至所提供的連結時，選取了右上角的 [Visual Studio]，以查看 Xamarin 文件的正確版本：  
+ 首先，請確定當您巡覽至所提供的連結時，選取了右上角的 [Visual Studio] ，以查看 Xamarin 文件的正確版本：  
   
  ![選取 Visual Studio 以查看 Xamarin.com 上的正確檔](../cross-platform/media/crossplat-xamarin-mac-2.png "CrossPlat Xamarin Mac 2")  
   
@@ -108,7 +108,7 @@ ms.locfileid: "74297707"
   
 1. 遵循 [建立 Android 專案](https://github.com/xamarin/docs-archive/tree/master/Recipes/android/general/projects/create_an_android_project) (xamarin.com) 上的指示，驗證 Android 專案的建立作業。  
   
-2. 驗證 Android 設計工具：在方案總管的 Android 專案中，開啟 [資源] > [配置] > [Main.axml] 檔案。  
+2. 驗證 Android 設計工具：在 [方案總管] 的 Android 專案中，開啟 [資源] > [配置] > [Main.axml] 檔案。  
   
    - 如果您收到錯誤，指出「安裝的 Android SDK 太舊」，請在該訊息中按一下 [開啟 Android SDK]，然後選取可用的最新 SDK 版本。 請注意，您必須以系統管理員身分執行 Visual Studio，來更新 SDK。  
   
@@ -116,7 +116,7 @@ ms.locfileid: "74297707"
   
    **iOS**  
   
-4. 請確定您的 Mac 在網路上可用並搭配 Visual Studio，如 [使用 XMA 連接到到 Mac](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/?pivots=windows#Connecting_to_the_Mac_Using_XMA) (xamarin.com) 中所述。  
+4. 請確定您的 Mac 在網路上可用並搭配 Visual Studio，如 [使用 XMA 連接到到 Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac) (xamarin.com) 中所述。  
   
 5. 遵循 [建立 iOS](https://github.com/xamarin/docs-archive/tree/master/Recipes/ios/general/projects/create_an_ios_project) (xamarin.com) 上的指示，驗證 iOS 專案的建立作業。  
   

@@ -72,9 +72,9 @@ ms.locfileid: "74297731"
   
         ![選取 [跨&#45;平臺行動開發] 底下的 [Xamarin] 選項](../cross-platform/media/cross-plat-xamarin-setup-2.png "跨平臺 Xamarin 設定2")  
   
-   2. 針對 Windows 8+：[跨平台行動開發] > [Microsoft Visual Studio Emulator for Android]。 注意：如果您要使用 Windows 7 或舊版電腦，或在 Mac 上執行 Windows，請務必「取消核取」這個選項。 請參閱步驟 5 之後的＜Windows 電腦上的模擬器相關注意事項＞。 如果您只想在 Android 實體裝置上進行偵錯，也可以讓此選項保留未核取狀態。  
+   2. 針對 Windows 8+：[跨平台行動開發] > [Android 版 Microsoft Visual Studio 模擬器]。 注意：如果您要使用 Windows 7 或舊版電腦，或在 Mac 上執行 Windows，請務必「取消核取」這個選項。 請參閱步驟 5 之後的＜Windows 電腦上的模擬器相關注意事項＞。 如果您只想在 Android 實體裝置上進行偵錯，也可以讓此選項保留未核取狀態。  
   
-   3. (選擇性) 如果您想要以 Windows 裝置為目標，另請核取 [Windows 及 Web 程式開發] > [通用 Windows 應用程式開發工具] 及 (或) [Windows 8.1 及 Windows Phone 8.0/8.1 工具]。 其中包括安裝模擬器映像的選項，需要較長的時間下載；您可以稍後隨時返回 Visual Studio 安裝程式以加入這些選項。  
+   3. (選擇性) 如果您打算以 Windows 裝置為目標，也要核取 [Windows 及 Web 程式開發] > [通用 Windows 應用程式開發工具] 及 (或) [Windows 8.1 及 Windows Phone 8.0/8.1 工具]。 其中包括安裝模擬器映像的選項，需要較長的時間下載；您可以稍後隨時返回 Visual Studio 安裝程式以加入這些選項。  
   
 4. 按一下 [安裝] 按鈕，允許處理序執行。 同樣地，這需要一些時間才能完成，在這段期間，您可以繼續進行 Mac 設定指示，並瀏覽[了解 Xamarin 的行動裝置開發](../cross-platform/learn-about-mobile-development-with-xamarin.md)。  
   

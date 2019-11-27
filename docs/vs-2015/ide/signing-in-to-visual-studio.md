@@ -35,7 +35,7 @@ ms.locfileid: "74301221"
 
 - **延長 Visual Studio 試用期** - 您可以額外使用 90 天的 Visual Studio Professional 或 Visual Studio Enterprise，而不受限於 30 天的試用期。
 
-- **使用和 MSDN 或 VSO 訂閱相關聯的帳戶，就可以解除鎖定 Visual Studio**。 請參閱[如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
+- **使用和 MSDN 或 VSO 訂閱相關聯的帳戶，就可以解除鎖定 Visual Studio**。 請參閱 [如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
 
 - 對於同一個帳戶不會再次提示輸入認證，即可在 IDE 中**自動連接到 Azure 和 Visual Studio Team Services 等服務** 。
 

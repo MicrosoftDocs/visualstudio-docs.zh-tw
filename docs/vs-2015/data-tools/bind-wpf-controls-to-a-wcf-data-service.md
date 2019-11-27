@@ -44,7 +44,7 @@ ms.locfileid: "74299411"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "74299411"
 
      Visual Studio 會建立 `AdventureWorksService` 專案。
 
-6. 在**方案總管**中的 **Default.aspx** 上按一下滑鼠右鍵，並選取 [刪除]。 在此逐步解說中不需要此檔案。
+6. 在 [方案總管] 中，以滑鼠右鍵按一下 **Default.aspx**，並選取 [刪除]。 在此逐步解說中不需要此檔案。
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>建立服務的實體資料模型
  若要使用 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]將資料公開給應用程式，您必須定義服務的資料模型。 此 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] 支援兩種類型的資料模型：實體資料模型，以及使用執行 <xref:System.Linq.IQueryable%601> 介面的 common language runtime （CLR）物件所定義的自訂資料模型。 在此逐步解說中，您要建立資料模型的實體資料模型。
@@ -95,9 +95,9 @@ ms.locfileid: "74299411"
 
      [實體資料模型精靈] 隨即開啟。
 
-4. 在 [選擇模型內容] 頁面中，按一下 [從資料庫產生]，然後按 [下一步]。
+4. 在 [選擇模型內容] 頁面中，按一下 [從資料庫產生]，然後按一下 [下一步]。
 
-5. 在 [選擇資料連接] 頁面中，選取下列其中一個選項：
+5. 在 [選擇資料連線] 頁面中，選取下列其中一個選項：
 
     - 若下拉式清單中有提供 AdventureWorksLT 範例資料庫的資料連接，請選取此資料連接。
 
@@ -107,7 +107,7 @@ ms.locfileid: "74299411"
 
 7. 在 [選擇您的資料庫物件] 頁面中，展開 [資料表]，然後選取 **SalesOrderHeader** 資料表。
 
-8. 按一下 [完成]。
+8. 按一下 **[完成]** 。
 
 ## <a name="create-the-service"></a>建立服務
  建立 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]，將實體資料模型中的資料公開給 WPF 應用程式。
@@ -116,7 +116,7 @@ ms.locfileid: "74299411"
 
 1. 在 [專案] 功能表中，選取 [新增新項目]。
 
-2. 在 [已安裝的範本] 清單中，按一下 [Web]，然後選取 [WCF 資料服務] 專案項目。
+2. 在 [已安裝的範本] 清單中，按一下 [ **Web**]，然後選取 [ **WCF 資料服務**] 專案專案。
 
 3. 在 [**名稱**] 方塊中，輸入 `AdventureWorksService.svc`，然後按一下 [**新增**]。
 
@@ -141,7 +141,7 @@ ms.locfileid: "74299411"
 
 #### <a name="to-create-the-wpf-client-application"></a>建立 WPF 用戶端應用程式
 
-1. 在**方案總管**中，在方案上按一下滑鼠右鍵，再按一下 [加入]，然後選取 [新增專案]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下方案節點，然後按一下 [新增]，然後選取 [新增專案]。
 
 2. 在 [新增專案] 對話方塊中，展開 [Visual C#] 或 [Visual Basic]，然後選取 [視窗]。
 
@@ -161,7 +161,7 @@ ms.locfileid: "74299411"
 
 7. 在精靈的 [選擇資料來源類型] 頁面中，選取 [服務]，然後按一下 [下一步]。
 
-8. 在 [新增服務參考] 對話方塊中，按一下 [探索]。
+8. 在  **[加入服務參考]** 對話方塊中，按一下  **[探索]** 。
 
      Visual Studio 會在目前的解決方案中搜尋可用的服務，並將 `AdventureWorksService.svc` 新增至 [**服務**] 方塊中的可用服務清單。
 
@@ -171,16 +171,16 @@ ms.locfileid: "74299411"
 
      Visual Studio 會下載服務資訊，然後返回**資料來源**設定 wizard。
 
-11. 選擇 [加入服務參考] 頁面中，按一下 [完成]。
+11. 在 [新增服務參考] 頁面中按一下 [完成]。
 
-     Visual Studio 會將代表服務所傳回之資料的節點，加入至 [資料來源] 視窗。
+     Visual Studio 會將代表服務所傳回之資料的節點，新增至 [資料來源] 視窗。
 
 ## <a name="define-the-user-interface-of-the-window"></a>定義視窗的使用者介面
  透過在 WPF 設計工具中修改 XAML，將數個按鈕加入至視窗。 在此逐步解說的稍後內容中，您會加入程式碼，讓使用者使用這些按鈕檢視及更新銷售記錄。
 
 #### <a name="to-create-the-window-layout"></a>建立視窗配置
 
-1. 在**方案總管**中，按兩下 MainWindow.xaml。
+1. 在**方案總管**中，按兩下 [mainwindow.xaml]。
 
      隨即會在 WPF 設計工具中開啟視窗。
 
@@ -221,7 +221,7 @@ ms.locfileid: "74299411"
 
      此動作可避免 Visual Studio 在下一個步驟中建立這些節點的資料繫結控制項。 在此逐步解說中，假設終端使用者不需要看到此資料。
 
-4. 從 [資料來源] 視窗將 [SalesOrderHeaders] 節點拖曳至包含按鈕的資料列底下的資料格列。
+4. 從 [資料來源] 視窗將 [SalesOrderHeaders] 節點拖曳至包含按鈕之資料列下方的資料格列。
 
     Visual Studio 會產生 XAML 和程式碼，其可建立一組繫結至 [產品] 資料表之資料的控制項。 如需所產生 XAML 和程式碼的詳細資訊，請參閱將[WPF 控制項系結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。
 
@@ -273,7 +273,7 @@ ms.locfileid: "74299411"
      [!code-vb[Data_WPFWCF#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#4)]
 
 ## <a name="saving-changes-to-sales-records"></a>儲存銷售記錄的變更
- 加入程式碼，讓使用者可以使用 [儲存變更] 按鈕檢視及儲存銷售記錄的變更。
+ 加入程式碼，讓使用者可以使用 [**儲存變更**] 按鈕來查看和儲存銷售記錄的變更。
 
 #### <a name="to-add-the-ability-to-save-changes-to-sales-records"></a>加入可儲存銷售記錄變更的功能
 
@@ -291,13 +291,13 @@ ms.locfileid: "74299411"
 
 #### <a name="to-test-the-application"></a>若要測試應用程式
 
-1. 在 [建置] 功能表中，按一下 [建置方案]。 確認方案建置無誤。
+1. 在 [**建立**] 功能表上，按一下 [**建立方案**]。 確認方案建置無誤。
 
 2. 按**Ctrl + F5**。
 
      Visual Studio 會啟動 **AdventureWorksService** 專案而不進行偵錯。
 
-3. 在**方案總管**中，在 **AdventureWorksSalesEditor** 上按一下滑鼠右鍵。
+3. 在 [方案總管] 中，以滑鼠右鍵按一下 **AdventureWorksSalesEditor**。
 
 4. 在操作功能表的 [偵錯] 下方，按一下 [啟動新執行個體]。
 
@@ -307,7 +307,7 @@ ms.locfileid: "74299411"
 
     - 您可以按一下 **>** 或 **<** 按鈕，巡覽其他銷售記錄。
 
-5. 在其中一個銷售記錄中，在 [註解] 方塊中輸入部分文字，然後按一下 [儲存變更]。
+5. 在其中一個銷售記錄中，在 [註解] 方塊中鍵入部分文字，然後按一下 [儲存變更]。
 
 6. 關閉應用程式，然後從 Visual Studio 再次啟動應用程式。
 
@@ -320,7 +320,7 @@ ms.locfileid: "74299411"
 
 - 了解如何使用 Visual Studio 中的 [資料來源] 視窗，將 WPF 控制項繫結程序至其他資料來源類型。 如需詳細資訊，請參閱將[WPF 控制項系結至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)。
 
-- 學習如何使用 Visual Studio 中的 [資料來源] 視窗，顯示 WPF 控制項中的相關資料 (也就是具有父子關聯性中的資料)。 如需詳細資訊，請參閱[逐步解說：在 WPF 應用程式中顯示相關資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)。
+- 了解如何使用 Visual Studio 中的 [資料來源] 視窗，顯示 WPF 控制項中的相關資料 (也就是父子關聯性中的資料)。 如需詳細資訊，請參閱[逐步解說：在 WPF 應用程式中顯示相關資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)。
 
 ## <a name="see-also"></a>另請參閱
  [將 wpf 控制項系結至中的資料 Visual Studio 將](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [wpf](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)控制項系結至資料集 Visual Studio 將 wpf 控制項系結至[dataset](../data-tools/bind-wpf-controls-to-a-dataset.md) [總覽](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) [Entity Framework 總覽](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) [wpf 和 Silverlight 設計工具總覽](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)[資料](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)系結總覽

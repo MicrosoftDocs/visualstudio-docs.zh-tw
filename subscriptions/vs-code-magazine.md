@@ -6,12 +6,12 @@ manager: lank
 ms.date: 10/13/2019
 ms.topic: conceptual
 description: 瞭解 Visual Studio 訂用帳戶中所包含的程式碼雜誌權益。
-ms.openlocfilehash: 6f120bae88a7d613873a9d350e411842904e700e
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099600"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491663"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中包含的程式碼雜誌
 
@@ -39,11 +39,11 @@ CODE 雜誌是領先的獨立軟體發展人員雜誌，涵蓋所有平臺上的
       > ![程式碼雜誌訂用帳戶詳細資料](_img/vs-code-magazine/vs-code-magazine-details.png "訂用帳戶詳細資料和價格")
 6. 接下來，您必須提供您的訂閱者資訊和傳遞位址。  （即使是數位訂用帳戶，也需要傳遞位址，因為它支援履行、供應專案選取和數位存取程式）。
 7. 如果您居住在美國以外的地區，並選擇接收印刷的雜誌訂用帳戶，系統可能會要求您提供帳單位址和付款資訊，以涵蓋出貨的成本。 
-8. 您可以按一下核取方塊，以加入宣告程式碼 HTML Newletter。
+8. 您可以按一下核取方塊，選擇撰寫 HTML 電子報的程式碼。
    > [!div class="mx-imgBorder"]
    > ![程式碼雜誌訂閱者資訊](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "訂閱者資訊與遞送位址")
 9. 按一下 [**下單**] 來完成您的訂用帳戶。  
-完成訂用帳戶訂單後，您會看到確認頁面，其中包含您可以用來查看所收到問題的連結： https://codemag.com/my/fulfillment 。 
+完成訂用帳戶訂單後，您會看到確認頁面，其中包含您可以用來查看所收到問題的連結： https://codemag.com/my/fulfillment。 
 
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |

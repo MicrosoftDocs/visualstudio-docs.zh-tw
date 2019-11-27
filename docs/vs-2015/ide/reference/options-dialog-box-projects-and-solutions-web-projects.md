@@ -26,7 +26,7 @@ ms.locfileid: "74297865"
  根據預設，當您在 Visual Studio 中執行 Web 專案時 (例如，使用 F5 或 Ctrl+F5)，Visual Studio 會使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [Visual Studio 中 ASP.NET Web 專案的 Web 伺服器](https://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328)。
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫此說明頁時，主要是以 [**Web 設定**] 為考量。 若要檢視或變更您的設定，請在 [**工具**] 功能表上選擇 [**匯入和匯出設定**]。 如需詳細資訊，請參閱[在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+> 根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫此說明頁時，主要是以 [Web 設定] 為考量。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
 
 ## <a name="settings"></a>設定
  **使用 web sites 和專案的64位版本 IIS Express**選取此選項可使用 IIS Express，而不是 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [IIS Express 簡介](https://weblogs.asp.net/scottgu/introducing-iis-express)和 [IIS Express 概觀](https://docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview)。 預設會停用這個選項。

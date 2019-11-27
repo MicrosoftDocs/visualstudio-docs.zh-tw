@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b9f55f0dc7d2b0a9fb57fa6177cd8a250f6f62
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 10a325c75179ed6917e1772bb9e17f2237e4ee17
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024826"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538947"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 
@@ -95,7 +95,7 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 ![CodeLens：取得 TFVC 中的程式碼變更記錄](../ide/media/codelens-code-changes.png)
 
-預設的時間週期為 12 個月。 如果程式碼儲存在 Team Foundation Server 中，您就可以執行 [TFSConfig 命令](/tfs/server/ref/command-line/tfsconfig-cmd) 與 [CodeIndex 命令](../ide/codeindex-command.md) 和 **/indexHistoryPeriod** 旗標，變更此時間週期。
+預設的時間週期為 12 個月。 如果程式碼儲存在 Team Foundation Server 中，您就可以執行 [TFSConfig 命令](/azure/devops/server/command-line/tfsconfig-cmd) 與 [CodeIndex 命令](../ide/codeindex-command.md) 和 **/indexHistoryPeriod** 旗標，變更此時間週期。
 
 若要查看所有變更的詳細記錄，包括一年多前的記錄，請選擇 [顯示所有檔案變更]：
 
@@ -266,7 +266,7 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 - 請確定 CodeLens 已開啟。 移至 [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens]。
 
-- 如果您的程式碼儲存在 TFS 中，請務必使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/tfs/server/ref/command-line/tfsconfig-cmd)，確定程式碼索引已開啟。
+- 如果您的程式碼儲存在 TFS 中，請務必使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/azure/devops/server/command-line/tfsconfig-cmd)，確定程式碼索引已開啟。
 
 - 唯有當工作項目連結到程式碼，且您擁有開啟工作項目連結的權限時，才會出現與 DevOps 相關的指標。 確認您擁有[小組成員權限](/azure/devops/organizations/security/view-permissions?view=vsts)。
 
@@ -348,7 +348,7 @@ CodeLens 不支援安裝不同版本的 Lync 或 Skype。 它們可能尚未對�
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>問：我是否可以管理 CodeLens 處理程式碼的方式，以顯示記錄和連結項目？
 
-**答：** 可以。 如果您的程式碼位於 TFS，請使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/tfs/server/ref/command-line/tfsconfig-cmd)。
+**答：** 可以。 如果您的程式碼位於 TFS，請使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/azure/devops/server/command-line/tfsconfig-cmd)。
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>問：當我初次開啟解決方案時，我的 CodeLens 測試指標不再顯示在檔案中。 該如何加以載入？
 

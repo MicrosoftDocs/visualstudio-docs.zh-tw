@@ -27,7 +27,7 @@ ms.locfileid: "74316475"
 
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>指定目標的輸入和輸出
 
-- 使用 `Target` 項目的 `Inputs` 和 `Outputs` 屬性。 例如:
+- 使用 `Inputs` 項目的 `Outputs` 和 `Target` 屬性。 例如：
 
   ```xml
   <Target Name="Build"
@@ -67,7 +67,7 @@ ms.locfileid: "74316475"
 這個專案檔同時包含 `Convert` 和 `Build` 目標。 `GenerateContentFiles` 和 `BuildHelp` 工作分別放在 `Convert` 和 `Build`目標，以便能以累加方式建置每個目標。 藉由使用 `Output` 項目，`GenerateContentFiles` 工作的輸出會放在 `ContentFile` 項目清單，在這裡它們可以作為 `BuildHelp` 工作的輸入。 這樣使用 `Output` 項目，會自動提供一個工作的輸出作為另一個工作的輸入，您便不需要以手動方式在每個工作列出個別項目或項目清單。
 
 > [!NOTE]
-> 雖然 `GenerateContentFiles` 目標可以以累加方式建置，該目標的所有輸出永遠必須作為 `BuildHelp` 目標的輸入。 當您使用 `Output` 項目時，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會自動提供一個目標的所有輸出，作為另一個目標的輸入。
+> 雖然 `GenerateContentFiles` 目標可以以累加方式建置，該目標的所有輸出永遠必須作為 `BuildHelp` 目標的輸入。 當您使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 項目時，`Output` 會自動提供一個目標的所有輸出，作為另一個目標的輸入。
 
 ```xml
 <Project DefaultTargets="Build"

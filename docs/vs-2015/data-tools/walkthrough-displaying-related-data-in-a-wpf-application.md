@@ -41,7 +41,7 @@ ms.locfileid: "74299582"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
@@ -73,12 +73,12 @@ ms.locfileid: "74299582"
 
 6. 在 [名稱] 方塊中，輸入 `AdventureWorksOrdersViewer`。
 
-7. 按一下 [**確定**]。
+7. 按一下 [確定] **Walkthrough: Calling Code in an VSTO Add-in from VBA**。
 
      Visual Studio 會建立 `AdventureWorksOrdersViewer` 專案。
 
 ## <a name="creating-an-entity-data-model-for-the-application"></a>建立應用程式的實體資料模型
- 建立資料繫結控制項之前，您必須先定義應用程式的資料模型，並將其加入至 [資料來源] 視窗。 在此逐步解說中，資料模型是實體資料模型。
+ 建立資料繫結控制項之前，您必須先定義應用程式的資料模型，並將其新增至 [資料來源] 視窗。 在此逐步解說中，資料模型是實體資料模型。
 
 #### <a name="to-create-an-entity-data-model"></a>建立實體資料模型
 
@@ -88,7 +88,7 @@ ms.locfileid: "74299582"
 
 3. 在 [**選擇資料庫模型**] 頁面上，按一下 [**實體資料模型**]，然後按 **[下一步]** 。
 
-4. 按一下 [**選擇模型內容**] 頁面上的 [**從資料庫產生**]，再按 [**下一步**]。
+4. 在 [**選擇模型內容**] 頁面上，按一下 [**從資料庫產生**]，然後按 **[下一步]** 。
 
 5. 在 [**選擇您的資料連線**] 頁面上，執行下列其中一項：
 
@@ -96,7 +96,7 @@ ms.locfileid: "74299582"
 
       -或-
 
-   - 按一下 [新增連接]，建立與 AdventureWorksLT 資料庫的連接。
+   - 按一下 [**新增**連線]，然後建立與 AdventureWorksLT 資料庫的連接。
 
      請確定已選取 [**將 app.config 中的實體連接設定儲存為**] 選項，然後按 **[下一步]** 。
 
@@ -106,7 +106,7 @@ ms.locfileid: "74299582"
 
    - **SalesOrderHeader**
 
-7. 按一下 [完成]。
+7. 按一下 **[完成]** 。
 
 8. 建置專案。
 
@@ -115,13 +115,13 @@ ms.locfileid: "74299582"
 
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>若要建立資料繫結控制項，以顯示訂單記錄
 
-1. 在**方案總管**中，按兩下 MainWindow.xaml。
+1. 在**方案總管**中，按兩下 [mainwindow.xaml]。
 
     隨即會在 WPF 設計工具中開啟視窗。
 
 2. 編輯 XAML，使**Height**和**Width**屬性設定為800
 
-3. 在 [資料來源] 視窗中，按一下 [SalesOrderHeaders] 節點的下拉式功能表，然後選取 [詳細資料]。
+3. 在 **資料來源** 視窗中，按一下  **salesorderheaders**  節點的下拉式功能表，然後選取 **詳細資料**。
 
 4. 展開 [SalesOrderHeaders] 節點。
 

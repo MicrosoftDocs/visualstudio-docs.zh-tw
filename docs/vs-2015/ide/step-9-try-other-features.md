@@ -36,7 +36,7 @@ ms.locfileid: "74299979"
 - 加入當玩家找到配對項目時的音效、當玩家發現不相符的兩個圖示時的另一種音效，以及當程式再次隱藏圖示時的第三種音效。
 
     > [!TIP]
-    > 若要播放音效，您可以使用 System.media 命名空間。 如需詳細資訊，請參閱[在 Windows Form 應用程式中播放音效 (C#.NET)](https://www.youtube.com/watch?v=qOh4ooHg1UU&feature=youtu.be) 或[如何在 Visual Basic 中播放音訊](https://www.youtube.com/watch?v=-4oPDeQrtMs&feature=youtu.be)。
+    > 若要播放音效，您可以使用 System.media 命名空間。 如需詳細資訊，請參閱 [Play Sounds in Windows Forms App (C# .NET)](https://www.youtube.com/watch?v=qOh4ooHg1UU&feature=youtu.be) (在 Windows Forms 應用程式中播放音效 (C# .NET)) 或 [How To Play Audio In Visual Basic](https://www.youtube.com/watch?v=-4oPDeQrtMs&feature=youtu.be) (如何在 Visual Basic 中播放音訊)。
 
 - 使戲局變大，可讓遊戲變得更困難。
 
@@ -49,6 +49,6 @@ ms.locfileid: "74299979"
 
 - 如果您碰到程式開發的問題，請嘗試發表問題至 MSDN 論壇。 請參閱 [Visual Basic 論壇](https://social.msdn.microsoft.com/Forums/en-US/home)和 [Visual C# 論壇](https://social.msdn.microsoft.com/Forums/en-US/home)。
 
-- 其中提供了很好的免費視訊學習資源。 若要了解在 Visual Basic 程式設計的詳細資訊，請參閱[Visual Basic 基礎：適用於徹底初學者的開發](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)。 若要深入了解如何在 Visual C# 程式設計，請參閱 [C# Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)(Visual C# 基礎：徹底初學者開發)。
+- 其中提供了很好的免費視訊學習資源。 若要深入了解如何在 Visual Basic 程式設計，請參閱 [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Visual Basic 基礎：徹底初學者開發)。 若要深入了解如何在 Visual C# 程式設計，請參閱 [C# Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)(Visual C# 基礎：徹底初學者開發)。
 
-- 若要返回上一個教學課程的步驟，請參閱[步驟 8：加入方法以確認玩家是否贏了](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)。
+- 若要返回上一個教學課程步驟，請參閱[步驟 8：新增方法以驗證玩家是否贏了](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)。

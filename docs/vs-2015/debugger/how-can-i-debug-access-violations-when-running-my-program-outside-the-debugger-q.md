@@ -33,8 +33,8 @@ ms.locfileid: "74299255"
 問題說明  
  我的程式在 Visual Studio 環境裡執行正常，但是當我以 Windows 作業系統獨立執行它時，它會產生存取違規。 我該如何偵錯這個問題？  
   
-## <a name="solution"></a>方案  
- 設定 [Just-in-time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)選項並獨立執行您的程式，直到發生存取違規為止。 接著，在 [存取違規] 對話方塊裡，您可以按一下 [取消] 來啟動偵錯工具。  
+## <a name="solution"></a>解決方案  
+ 設定 [ 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)選項並獨立執行您的程式，直到發生存取違規為止。 然後，在 [存取違規] 對話方塊中，您可以按一下 [取消] 來啟動偵錯工具。  
   
  請參閱知識庫 (Knowledge Base) 文件 Q133174「How to Locate Where a General Protection (GP) Fault Occurs」。 您可以在 MSDN Library CD 上找到知識庫文章，或搜尋[http://support.microsoft.com/](https://support.microsoft.com/)。  
   

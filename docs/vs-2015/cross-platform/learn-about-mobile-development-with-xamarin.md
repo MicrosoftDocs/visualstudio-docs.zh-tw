@@ -84,13 +84,13 @@ ms.locfileid: "74299771"
   
  若要在不需要使用實體裝置的情況下偵錯跨平台應用程式，您必須使用下列工具：  
   
-1. **Android 模擬器**： ：根據您使用的 Windows 版本，建議使用 Microsoft Visual Studio Emulator for Android 或 Xamarin Player，這兩個模擬器都提供快速效能，並支援各種裝置功能：  
+1. **Android 模擬器：** ：根據您使用的 Windows 版本，建議使用 Microsoft Visual Studio Emulator for Android 或 Xamarin Player，這兩個模擬器都提供快速效能，並支援各種裝置功能：  
   
     - **Windows 8+ 電腦** ：強烈建議使用隨 Visual Studio 安裝的 Microsoft [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)。  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) 影片 (Channel9，5 分 55 秒) 提供概觀和示範。  
   
     - **Windows 7 或舊版/在 Mac OS X 上執行的 Windows**：使用 [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com)。  
   
-2. **Apple iOS 模擬器**： ：若要深入了解，請閱讀 [iOS 模擬器使用者入門](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com)。  
+2. **Apple 的 iOS 模擬器** ：若要深入了解，請閱讀 [iOS 模擬器使用者入門](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com)。  
   
 3. **Microsoft 的 Windows Phone 模擬器** 若要深入了解，請閱讀 [Windows Phone 8 的 Windows Phone 模擬器](https://msdn.microsoft.com/library/dn632391.aspx)。  
   

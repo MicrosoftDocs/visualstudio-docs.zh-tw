@@ -38,7 +38,7 @@ ms.locfileid: "74297581"
   
 1. 檢查是否已安裝最新的 Android SDK 工具，方法是移至 [工具] > [Android] > [Android SDK 管理員]，然後安裝最新版的 Android SDK Tools、Android SDK Platform-Tools 和 Android SDK Build-Tools 元件。 請注意，不一定要安裝最新的 Android API 層級；您所需的 API 取決於您想要做為目標的平台層級。 通常，安裝 Xamarin，將會安裝它所需的平台層級。  
 
-2. 驗證 Android 設計工具：在方案總管的 Android 專案中，開啟 [資源] > [配置] > [Main.axml] 檔案。 (如果您並未直接看見此檔案，請嘗試在 [方案總管] 中進行搜尋；它只存在於 Android 專案，而不在 iOS 專案中)。  
+2. 驗證 Android 設計工具：在 [方案總管] 的 Android 專案中，開啟 [資源] > [配置] > [Main.axml] 檔案。 (如果您並未直接看見此檔案，請嘗試在 [方案總管] 中進行搜尋；它只存在於 Android 專案，而不在 iOS 專案中)。  
   
     - 如果您收到錯誤，指出「安裝的 Android SDK 太舊」，請在該訊息中按一下 [開啟 Android SDK]，然後選取可用的最新 SDK 版本，如先前步驟 1 所述。 
   
@@ -50,7 +50,7 @@ ms.locfileid: "74297581"
   
     - 根據您的目標 Android 版本選取適當的模擬器；如果您已將 Android 開發裝置連接到電腦，也會在此處看到該裝置列於模擬器一旁：  
   
-        - Windows 8 及更新版本：如下所示，在 Visual Studio 的 [偵錯] 下拉式清單中選取 [VS Emulator] 目標，然後按 **F5**鍵啟動偵錯工具。 如需詳細資訊，請參閱 [Visual Studio Emulator for Android 簡介](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (Visual Studio ALM 部落格)。 若在讓模擬器運作時發生問題，請參閱 [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。 您也可以選取 [工具] > [Visual Studio Emulator for Android...]，為模擬器建立新的裝置設定檔。  
+        - Windows 8 及更新版本：如下所示，在 Visual Studio 的 [偵錯] 下拉式清單中選取 [VS Emulator] 目標，然後按 **F5**鍵啟動偵錯工具。 如需詳細資訊，請參閱 [Visual Studio Emulator for Android 簡介](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (Visual Studio ALM 部落格)。 若在讓模擬器運作時發生問題，請參閱 [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。 您也可以選取 [工具] > [Android 版 Visual Studio 模擬器...]，為模擬器建立新的裝置設定檔。  
   
              ![選取 Android 的 Visual Studio 模擬器做為 debug 目標](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin 驗證3")  
   
@@ -109,6 +109,6 @@ ms.locfileid: "74297581"
   
 1. 在 [控制台] 中開啟 [程式和功能]，選擇 [Xamarin] 項目，然後按一下 [變更]。  
   
-2. 在出現的 Xamarin 安裝精靈中，按一下 [下一步]，然後按一下 [變更]。  
+2. 在出現的 Xamarin 安裝精靈中，按一下 [下一步] ，然後按一下 [變更]。  
   
 3. 在要安裝的選擇性功能清單中，展開 [Xamarin for Visual Studio 2015]，選擇 [將安裝在本機磁碟機]，然後按一下 [下一步] 繼續新增此功能。

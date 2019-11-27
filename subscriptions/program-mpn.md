@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: 有關提供哪些訂用帳戶、套用哪些規則，以及 MPN 中提供多少訂用帳戶的詳細資料。
-ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816563"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491665"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳戶
 
@@ -57,7 +57,7 @@ ms.locfileid: "72816563"
 
 Visual Studio Professional (MPN) 訂閱者也可以下載並使用軟體進行開發，包括 SQL Server Developer Edition。
 
-Visual Studio Professional （MPN）訂用帳戶不包括 Azure DevOps Services 權益、Azure DevTest individiaul 點數、技術支援、訓練，或 Visual Studio 訂用帳戶提供的其他訂閱者權益以商業的形式提供。
+Visual Studio Professional （MPN）訂用帳戶不包括 Azure DevOps Services 權益、Azure DevTest 個人點數、技術支援、訓練，或提供的 Visual Studio 訂閱所提供的其他訂閱者權益合理.
 
 ## <a name="internal-use-only-restriction"></a>僅供內部使用限制
 
@@ -73,7 +73,7 @@ MPN 規則規定，所有視為方案權益提供的軟體僅能供內部使用�
 
 - [MPN 程式系統管理員指南](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) - 包括如何將 Visual Studio 訂用帳戶指派給 MPN 員工的說明。
 - [將 Visual Studio 訂用帳戶指派給 MPN 員工](manage-mpn-subscriptions.md)
-- [使用條款](http://www.microsoft.com/useterms/) - 透過 MPN 提供的 Visual Studio 訂用帳戶受到 Visual Studio 訂用帳戶非賣品 (NFR) 使用者授權合約的約束。
+- [使用條款](https://www.microsoft.com/useterms/) - 透過 MPN 提供的 Visual Studio 訂用帳戶受到 Visual Studio 訂用帳戶非賣品 (NFR) 使用者授權合約的約束。
 
 ## <a name="next-steps"></a>後續步驟
 

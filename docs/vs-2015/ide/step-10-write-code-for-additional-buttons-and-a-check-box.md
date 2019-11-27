@@ -21,7 +21,7 @@ ms.locfileid: "74295803"
 
 現在，您可以準備完成其他四個方法。 您可以複製及貼上此程式碼，但如果想要充分學習本教學課程，請輸入程式碼並使用 IntelliSense。
 
- 這個程式碼會在您之前加入的按鈕上加入功能。 若沒有這個程式碼，按鈕就不會有任何作用。 按鈕會在其 `Click` 事件中使用程式碼 (而核取方塊會使用 `CheckChanged` 事件)，在您啟動控制項時執行不同的動作。 例如，`clearButton_Click` 事件會在您選擇 [**清除圖片**] 按鈕時啟動，藉由將目前影像的 `Image` 屬性設為 `null` (或 `nothing`) 清除該影像。 程式碼中的每個事件都包括註解，用於說明程式碼的功能。
+ 這個程式碼會在您之前加入的按鈕上加入功能。 若沒有這個程式碼，按鈕就不會有任何作用。 按鈕會在其 `Click` 事件中使用程式碼 (而核取方塊會使用 `CheckChanged` 事件)，在您啟動控制項時執行不同的動作。 例如，`clearButton_Click` 事件會在您選擇 [清除圖片] 按鈕時啟動，藉由將目前影像的 `Image` 屬性設為 `null` (或 `nothing`) 清除該影像。 程式碼中的每個事件都包括註解，用於說明程式碼的功能。
 
  ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 5](https://go.microsoft.com/fwlink/?LinkId=205216)或[教學課程1：建立C#圖片檢視器-影片 5](https://go.microsoft.com/fwlink/?LinkId=205206)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 

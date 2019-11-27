@@ -105,7 +105,7 @@ ms.locfileid: "74294727"
  如果您使用 URL 發行，請確定目的地電腦已啟用 FrontPage Server Extensions。  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>錯誤訊息：無法建立網站 '\<網站 > '。 未安裝與 FrontPage Server Extensions 通訊的元件。  
- 請確定您已在要發佈的電腦上安裝 Microsoft Visual Studio Web Authoring Component。 若為 Express 使用者，預設不會安裝此元件。 如需詳細資訊，請參閱[http://go.microsoft.com/fwlink/?LinkId=102310](https://go.microsoft.com/fwlink/?LinkId=102310)。  
+ 請確定您已在要發佈的電腦上安裝 Microsoft Visual Studio Web Authoring Component。 若為 Express 使用者，預設不會安裝此元件。 如需詳細資訊，請參閱 [http://go.microsoft.com/fwlink/?LinkId=102310](https://go.microsoft.com/fwlink/?LinkId=102310)。  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>錯誤訊息：找不到檔案 ' Microsoft. Windows. 通用控制項，版本 = 6.0.0.0，Culture = *，PublicKeyToken = 6595b64144ccf1df，ProcessorArchitecture =\*，類型 = win32 '  
  當您嘗試發行已啟用視覺樣式的 WPF 應用程式時，會出現此錯誤訊息。 若要解決此問題，請參閱[如何：發行已啟用視覺化樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)。  

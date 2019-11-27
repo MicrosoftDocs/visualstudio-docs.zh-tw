@@ -42,7 +42,7 @@ ms.locfileid: "74299425"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "74299425"
      Visual Studio 會建立 `AdventureWorksProductsEditor` 專案。
 
 ## <a name="create-a-dataset-for-the-application"></a>建立應用程式的資料集
- 建立資料繫結控制項之前，您必須先定義應用程式的資料模型，並將其加入至 [資料來源] 視窗。 在此逐步解說中，您會建立資料集做為資料模型。
+ 建立資料繫結控制項之前，您必須先定義應用程式的資料模型，並將其新增至 [資料來源] 視窗。 在此逐步解說中，您會建立資料集做為資料模型。
 
 #### <a name="to-create-a-dataset"></a>建立資料集
 
@@ -87,11 +87,11 @@ ms.locfileid: "74299425"
 
      [資料來源組態精靈] 隨即開啟。
 
-3. 在 [**選擇資料來源類型**] 頁面上，選取 [**資料庫**]，再按 [**下一步**]。
+3. 在 [選擇資料來源類型] 頁面上，選取 [資料庫]，然後按一下 [下一步]。
 
-4. 在 [**選擇資料庫模型**] 頁面上，選取 [**資料集**]，再按 [**下一步**]。
+4. 在 [選擇資料庫模型] 頁面上，選取 [資料集]，然後按一下 [下一步]。
 
-5. 在 [選擇資料連接] 頁面中，選取下列其中一個選項：
+5. 在 [選擇資料連線] 頁面中，選取下列其中一個選項：
 
     - 若下拉式清單中有提供 AdventureWorksLT 範例資料庫的資料連線，請選取此資料連線，然後按一下 [下一步]。
 
@@ -101,9 +101,9 @@ ms.locfileid: "74299425"
 
 7. 在 [選擇您的資料庫物件] 頁面中，展開 [資料表]，然後選取 **Product (SalesLT)** 資料表。
 
-8. 按一下 [完成]。
+8. 按一下 **[完成]** 。
 
-     Visual Studio 隨即將新的 AdventureWorksLTDataSet.xsd 檔案加入至專案，並將對應的 [AdventureWorksLTDataSet] 項目加入至 [資料來源] 視窗。 AdventureWorksLTDataSet.xsd 檔案會定義名稱為 `AdventureWorksLTDataSet` 的類型資料集，以及名稱為 `ProductTableAdapter` 的 TableAdapter。 在此逐步解說稍後的內容中，您會使用 `ProductTableAdapter` 將資料填入資料集，並將變更儲存回資料庫。
+     Visual Studio 會將新的 Adventureworksltdataset.xsd 新增至專案，並將對應的**adventureworksltdataset.xsd**專案加入至 [**資料來源**] 視窗。 AdventureWorksLTDataSet.xsd 檔案會定義名稱為 `AdventureWorksLTDataSet` 的類型資料集，以及名稱為 `ProductTableAdapter` 的 TableAdapter。 在此逐步解說稍後的內容中，您會使用 `ProductTableAdapter` 將資料填入資料集，並將變更儲存回資料庫。
 
 9. 建置專案。
 
@@ -112,28 +112,28 @@ ms.locfileid: "74299425"
 
 #### <a name="to-load-product-rows-that-have-photos"></a>載入具有相片的產品資料列
 
-1. 在**方案總管**中，按兩下 AdventureWorksLTDataSet.xsd 檔案。
+1. 在**方案總管**中，按兩下 [adventureworksltdataset.xsd] 檔案。
 
      DataSet 設計工具隨即開啟。
 
-2. 在設計工具中，在 [Fill,GetData()] 查詢上按一下滑鼠右鍵，然後選取 [設定]。
+2. 在設計工具中，以滑鼠右鍵按一下 [**填滿]、[，] （）** 查詢，然後選取 [**設定**]。
 
      [TableAdapter 組態精靈] 隨即開啟。
 
-3. 在 [輸入 SQL 陳述式] 頁面中，將下列 WHERE 子句加在文字方塊中 `SELECT` 陳述式的後面。
+3. 在 [輸入 SQL 陳述式] 頁面中，將下列 WHERE 子句新增至文字方塊中 `SELECT` 陳述式的後面。
 
     ```
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4. 按一下 [完成]。
+4. 按一下 **[完成]** 。
 
 ## <a name="define-the-user-interface"></a>定義使用者介面
  透過在 WPF 設計工具中修改 XAML，將數個按鈕加入至視窗。 在此逐步解說稍後的內容中，您會加入程式碼，讓使用者使用這些按鈕捲動及儲存產品記錄的變更。
 
 #### <a name="to-define-the-user-interface-of-the-window"></a>定義視窗的使用者介面
 
-1. 在**方案總管**中，按兩下 MainWindow.xaml。
+1. 在**方案總管**中，按兩下 [mainwindow.xaml]。
 
      隨即在 WPF 設計工具中開啟視窗。
 
@@ -177,9 +177,9 @@ ms.locfileid: "74299425"
     > [!NOTE]
     > 根據預設，[資料來源] 視窗中表示圖片的項目，會將其預設控制項設定為 [無]。 這是因為圖片是以位元組陣列儲存在資料庫中，且位元組陣列可以包含任何項目，從簡單位元組陣列到大型應用程式的可執行檔。
 
-5. 從 [資料來源] 視窗將 [Product] 節點拖曳至包含按鈕的資料列底下的資料格列。
+5. 從 [資料來源] 視窗將 [產品] 節點拖曳至包含按鈕之資料列下方的資料格列。
 
-     Visual Studio 會產生 XAML，其定義了一組繫結至 **Products** 資料表之資料的控制項。 此外還會產生載入資料的程式碼。 如需所產生 XAML 和程式碼的詳細資訊，請參閱將[WPF 控制項系結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。
+     Visual Studio 會產生 XAML，其定義一組繫結至 [產品] 資料表之資料的控制項。 此外還會產生載入資料的程式碼。 如需所產生 XAML 和程式碼的詳細資訊，請參閱將[WPF 控制項系結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。
 
 6. 在設計工具中，按一下 [Product ID] 標籤旁邊的文字方塊。
 
@@ -237,13 +237,13 @@ ms.locfileid: "74299425"
 
      隨即建置應用程式並執行。 驗證下列各項：
 
-    - 文字方塊會從具有相片的第一個產品記錄顯示資料。 此產品具有產品 ID 713，以及名稱 **Long-Sleeve Logo Jersey, S**。
+    - 文字方塊會從具有相片的第一個產品記錄顯示資料。 此產品具有產品識別碼 713，以及名稱 **Long-Sleeve Logo Jersey, S**。
 
     - 您可以按一下 **>** 或 **<** 按鈕，巡覽其他產品記錄。
 
-2. 在其中一個產品記錄中，變更 **Size** 值，然後按一下 [儲存變更]。
+2. 在其中一個產品記錄中，變更 [大小] 值，然後按一下 [儲存變更]。
 
-3. 關閉應用程式，然後在 Visual Studio 中按 **F5** 鍵，以重新啟動應用程式。
+3. 關閉應用程式，然後在 Visual Studio 中按 **F5**，以重新啟動應用程式。
 
 4. 巡覽至您剛變更的產品記錄，確認變更已保存。
 
@@ -254,7 +254,7 @@ ms.locfileid: "74299425"
 
 - 了解如何使用 Visual Studio 中的 [資料來源] 視窗，將 WPF 控制項繫結程序至其他資料來源類型。 如需詳細資訊，請參閱將[WPF 控制項系結至 WCF 資料服務](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)。
 
-- 學習如何使用 Visual Studio 中的 [資料來源] 視窗，顯示 WPF 控制項中的相關資料 (也就是具有父子關聯性中的資料)。 如需詳細資訊，請參閱[逐步解說：在 WPF 應用程式中顯示相關資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)。
+- 了解如何使用 Visual Studio 中的 [資料來源] 視窗，顯示 WPF 控制項中的相關資料 (也就是父子關聯性中的資料)。 如需詳細資訊，請參閱[逐步解說：在 WPF 應用程式中顯示相關資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)。
 
 ## <a name="see-also"></a>另請參閱
  [將 wpf 控制項系結至中的資料 Visual Studio 將](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [wpf 控制項](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)系結至 Visual Studio [WPF 和 Silverlight Designer](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)中 Visual Studio 資料[集工具內](../data-tools/dataset-tools-in-visual-studio.md)的資料總覽資料系結[總覽](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

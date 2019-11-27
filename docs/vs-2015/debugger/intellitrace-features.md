@@ -38,7 +38,7 @@ ms.locfileid: "74298955"
   
  Visual Studio Enterprise 版本 (而非 Visual Studio Professional 或 Community 版本) 中提供 IntelliTrace。  
   
- 若要確認已開啟 IntelliTrace，請開啟 [工具] / [選項] / [IntelliTrace] 選項頁面。 預設應該會選取 [啟用 IntelliTrace]。  
+ 若要確認 IntelliTrace 已開啟，請開啟 [**工具]/[選項]/[IntelliTrace**選項] 頁面。 預設應該會選取 [啟用 IntelliTrace]。  
   
 > [!NOTE]
 > [IntelliTrace] 選項頁面上所有設定的範圍是整個 Visual Studio，而不是個別專案或方案。 這些設定的變更會套用至所有 Visual Studio 執行個體、所有偵錯工作階段，以及所有專案或方案。  
@@ -46,10 +46,10 @@ ms.locfileid: "74298955"
 ## <a name="ChooseEvents"></a>選擇 IntelliTrace 記錄的事件  
  您可以開啟或關閉特定 IntelliTrace 事件的記錄。  
   
- 如果您正在偵錯，請停止偵錯。 移至 [工具] / [選項] / [IntelliTrace] / [IntelliTrace 事件]。 選擇您要 IntelliTrace 記錄的事件。  
+ 如果您正在偵錯，請停止偵錯。 移至 [**工具]/[選項]/[intellitrace]/[Intellitrace 事件**]。 選擇您要 IntelliTrace 記錄的事件。  
   
 ## <a name="GoingFurther"></a>收集 IntelliTrace 事件和呼叫資訊  
- 這預設不會予以啟用，但 IntelliTrace 可以記錄方法呼叫和事件。 若要啟用方法呼叫的收集，請移至 [工具] / [選項] / [IntelliTrace] / [一般]，然後選取 [IntelliTrace 事件和呼叫資訊]。  
+ 這預設不會予以啟用，但 IntelliTrace 可以記錄方法呼叫和事件。 若要啟用方法呼叫的收集，請移至 [**工具]/[選項]/[intellitrace/一般**]，然後選取 [ **IntelliTrace 事件和呼叫資訊**]。  
   
  這可讓您查看呼叫堆疊記錄，並在程式碼中逐步返回及逐步前進。 IntelliTrace 會記錄資料 (例如方法名稱、方法進入點與結束點，以及特定參數值與傳回值)。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "74298955"
 > 限制 IntelliTrace 所記錄的事件清單，以及將所收集的模組數目保持為最小值，即可減少效能額外負荷。 如需詳細資訊，請參閱[控制 IntelliTrace 記錄多少呼叫資訊](../debugger/intellitrace-features.md#ControlCallData)。  
   
 ### <a name="using-the-navigation-gutter"></a>使用巡覽邊  
- 您可以使用出現在程式碼視窗左邊的巡覽邊。 如果您看不到巡覽邊，請移至 [工具] / [選項] / [IntelliTrace] / [進階]，然後選取 [在偵錯模式中顯示巡覽邊]。  
+ 您可以使用出現在程式碼視窗左邊的巡覽邊。 如果您沒有看到導覽裝訂邊，請移至 [**工具]/[選項]/[IntelliTrace]/[Advanced**]，然後選取 **[在 Debug 模式中顯示導覽裝訂邊]** 。  
   
  巡覽邊可讓您以歷程偵錯模式向前及向後移動方法呼叫和事件。 如需歷程偵錯的詳細資訊，請參閱[歷程偵錯](../debugger/historical-debugging.md)。 它有一些命令：  
   
@@ -76,21 +76,21 @@ ms.locfileid: "74298955"
  只有在已啟用方法呼叫資訊時，才能搜尋方法。 您可以搜尋特定行或方法的 IntelliTrace 歷程。 偵錯工具執行停止時，以滑鼠右鍵按一下函式主體來查看操作功能表，然後按一下 [在 IntelliTrace 中搜尋這一行] 或 [在 IntelliTrace 中搜尋這個方法]。  
   
 ### <a name="ControlCallData"></a> 控制 IntelliTrace 記錄多少呼叫資訊  
- IntelliTrace 預設會記錄您方案所使用之所有模組的資訊。 您可以設定 IntelliTrace 只記錄您感興趣之模組的呼叫資訊。 在 [工具] / [選項] / [IntelliTrace] / [模組] 中，您可以指定要包括的模組或要從 IntelliTrace 排除的模組。 IntelliTrace 只會收集源自所指定模組的事件，以及在您感興趣的模組內發生的方法呼叫。  
+ IntelliTrace 預設會記錄您方案所使用之所有模組的資訊。 您可以設定 IntelliTrace 只記錄您感興趣之模組的呼叫資訊。 在 [**工具]/[選項]/[IntelliTrace]/[模組**] 中，您可以指定要包含的模組或要從 IntelliTrace 排除的模組。 IntelliTrace 只會收集源自所指定模組的事件，以及在您感興趣的模組內發生的方法呼叫。  
   
  若要加入多個模組，請在字串開頭或結尾使用萬用字元 *。 模組名稱必須使用檔案名稱，而非組件名稱。 不接受檔案路徑。  
   
  嘗試將模組數目保持為最小值。 因為要收集的資料比較少，所以效能會更好。 因為通過的資料較少，所以 UI 中的雜訊也會較少。  
   
 ## <a name="SaveSession"></a>將 IntelliTrace 資料儲存至檔案  
- 如果您正在進行偵錯，而且應用程式處於中斷狀態，則可以移至 [偵錯] / [IntelliTrace] / [儲存 IntelliTrace 工作階段] 來儲存 IntelliTrace 已收集的資料。 已停用此功能表項目，因此，如果應用程式仍在執行，或您已停止偵錯，則無法儲存 IntelliTrace 已收集的資料。  
+ 您可以在進行偵錯工具時，將 IntelliTrace 已收集的資料儲存到**Debug/IntelliTrace/Save IntelliTrace 會話**，而且應用程式處於中斷狀態。 已停用此功能表項目，因此，如果應用程式仍在執行，或您已停止偵錯，則無法儲存 IntelliTrace 已收集的資料。  
   
- 移至 [工具] / [選項] / [IntelliTrace] / [進階]，然後選取 [將 IntelliTrace 記錄儲存在這個目錄]，即可設定 IntelliTrace 自動儲存至檔案。 您也可以設定為產生的檔案所設定的大小，而這樣會讓 IntelliTrace 在空間不足時覆寫較舊的資料。 自動儲存 IntelliTrace 工作階段時，以及 Visual Studio 裝載處理序 (vshost.exe) 開啟時，Visual Studio 會針對每個工作階段建立兩個檔案。  
+ 您可以前往 [**工具]/[選項]/[IntelliTrace]/[Advanced** ]，然後選取 [**將 intellitrace 記錄儲存在這個目錄中**]，將 intellitrace 設定為自動儲存至檔案。 您也可以設定為產生的檔案所設定的大小，而這樣會讓 IntelliTrace 在空間不足時覆寫較舊的資料。 自動儲存 IntelliTrace 工作階段時，以及 Visual Studio 裝載處理序 (vshost.exe) 開啟時，Visual Studio 會針對每個工作階段建立兩個檔案。  
   
 > [!TIP]
 > 為了節省磁碟空間，當您不再需要它們時，請關閉自動儲存檔案。 系統不會刪除所有現有檔案。 您一律可以從內容功能表依需要儲存至檔案。  
   
- 將 IntelliTrace 資料儲存至檔案時，IntelliTrace 從中收集的每個處理序都會有一個 .itrace 檔案。 之後，移至 [檔案] / [開啟] / [檔案]，然後從 [開啟檔案] 對話方塊中選取 .itrace 檔案，即可在 Visual Studio 中開啟 .itrace 檔案。 如需詳細資訊，請參閱[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)。  
+ 將 IntelliTrace 資料儲存至檔案時，IntelliTrace 從中收集的每個處理序都會有一個 .itrace 檔案。 接著，您可以前往 [檔案] **/[開啟/** 檔案]，然後從 [開啟檔案] 對話方塊中選取 .itrace 檔案，以在 Visual Studio 中開啟 .itrace 檔案。 如需詳細資訊，請參閱[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)。  
   
 ## <a name="blogs"></a>部落格  
  [Visual Studio Enterprise 2015 中的 IntelliTrace (英文)](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)  

@@ -85,7 +85,7 @@ ms.locfileid: "74299762"
 
     - 請確認 [版本] 欄位設為 [最新穩定版] 。
 
-    - 按一下 [安裝]。
+    - 按一下 **[安裝]** 。
 
     - ![尋找並安裝 Newtonsoft NuGet 套件](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
 
@@ -279,11 +279,11 @@ ms.locfileid: "74299762"
 
 1. 以滑鼠右鍵按一下 **WeatherApp.Droid** 專案，然後選取 [設定為啟始專案]，以將其設為啟始專案。
 
-2. 在 Visual Studio 工具列中，即會將 **WeatherApp.Droid** 列為目標專案。 選取其中一個 Android 模擬器進行偵錯，並按 **F5**。 建議您使用 **VS 模擬器**的其中一個選項，以 Android 版 Visual Studio 模擬器選項執行應用程式。
+2. 在 Visual Studio 工具列中，即會將 **WeatherApp.Droid** 列為目標專案。 選取其中一個 Android 模擬器進行偵錯，並按 **F5**。 建議您使用 **VS 模擬器** 的其中一個選項，以 Android 版 Visual Studio 模擬器選項執行應用程式。
 
      ![選取 VS 模擬器偵錯工具目標](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")
 
-3. 在模擬器中啟動應用程式時，請按一下 [獲知天氣] 按鈕。 您應該會看到按鈕的文字更新為**芝加哥，IL**，即為從天氣資料服務擷取的資料 *Title* 屬性。
+3. 在模擬器中啟動應用程式時，請按一下 [獲知天氣] 按鈕。 您應該會看到按鈕的文字更新為 **芝加哥，IL**，即為從天氣資料服務擷取的資料 *Title* 屬性。
 
      ![點擊按鈕前後的氣象應用程式](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin FormsGuide 8")
 
