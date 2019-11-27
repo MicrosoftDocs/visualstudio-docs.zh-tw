@@ -46,9 +46,9 @@ ms.locfileid: "74297950"
 
  請在開發過程中，於整個應用程式生命週期的不同詳細資料層級建立模型。 您可以將模型項目連結至 Team Foundation Server 工作項目和開發計劃，來追蹤需求、工作、測試案例、Bug 和其他與模型相關聯的工作。 請參閱[案例：使用視覺化和模型化來變更您的設計](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)。
 
- 若要查看支援每項功能的 Visual Studio 版本，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看支援各項功能的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
-## <a name="to"></a>若要
+## <a name="to"></a>進行
 
 |||
 |-|-|
@@ -65,7 +65,7 @@ ms.locfileid: "74297950"
 
 |**模型類型和一般用法**|
 |-------------------------------------|
-|**程式碼對應**<br /><br /> Code Map 可協助您查看程式碼中的組織和關聯性。<br /><br /> 一般用法：<br /><br /> -檢查程式碼，以便進一步瞭解其結構和其相依性、如何更新，以及估計提議變更的成本。<br /><br /> 請參閱：<br /><br /> -   [對應方案之間的](../modeling/map-dependencies-across-your-solutions.md)相依性<br />-   [使用 code map 來對應用程式進行 debug](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)|
+|**Code Map**<br /><br /> Code Map 可協助您查看程式碼中的組織和關聯性。<br /><br /> 一般用法：<br /><br /> -檢查程式碼，以便進一步瞭解其結構和其相依性、如何更新，以及估計提議變更的成本。<br /><br /> 請參閱：<br /><br /> -   [對應方案之間的](../modeling/map-dependencies-across-your-solutions.md)相依性<br />-   [使用 code map 來對應用程式進行 debug](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)|
 |**分層圖**<br /><br /> 分層圖可讓您將應用程式的結構定義成一組圖層或區塊，其中含有明確相依性。 您可以執行驗證，藉此探索程式碼中相依性之間的衝突，以及探索分層圖上描述的相依性之衝突。<br /><br /> 一般用法：<br /><br /> -在應用程式的生命週期內，透過許多變更來穩定其結構。<br />-在將變更簽入程式碼之前，探索意外的相依性衝突。<br /><br /> 請參閱：<br /><br /> -   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖：參考](../modeling/layer-diagrams-reference.md)<br />-   [使用圖層圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|
 |**UML 模型**<br /><br /> UML 模型具有幾種檢視，包含類別、元件、使用案例、活動和循序圖表。 您可以自訂 UML 以符合您的應用程式定義域。 例如，您可以將標記、其他資訊和條件約束附加到模型項目。 您也可以定義會在模型上作業的工具。 請參閱[為您的應用程式建立模型](../modeling/create-models-for-your-app.md)。<br /><br /> 一般用法：<br /><br /> -描述需求和設計。 您可以快速地將 UML 應用在任何應用程式的開發作業。 請參閱[在開發過程中使用模型](../modeling/use-models-in-your-development-process.md)。<br />-產生或設定應用程式的測試或部分。 您必須完成某些工作，才能自訂標記法和開發產生範本或可設定的應用程式。 請參閱[從模型產生和設定您的應用程式](../modeling/generate-and-configure-your-app-from-models.md)。<br />-適用于較小專案中的一般描述和程式碼產生或設定。|
 |**特定領域語言 (DSL)**<br /><br /> DSL 是您為特定目的所設計的標記法。 在 Visual Studio 中，通常會以圖形表示。<br /><br /> 一般用法：<br /><br /> -產生或設定應用程式的元件。 開發標記法和工具必須進行一些工作。 此結果會比自訂 UML 更適用您的定義域。<br />-適用于大型專案或產品線，其中開發 DSL 和其工具的投資會由其在多個專案中使用而傳回。<br /><br /> 請參閱：<br /><br /> [適用于 Visual Studio 網域特定語言的 -   模型 SDK](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|

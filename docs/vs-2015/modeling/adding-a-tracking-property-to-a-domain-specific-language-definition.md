@@ -45,7 +45,7 @@ ms.locfileid: "74292647"
 
 - 在 [**屬性**] 視窗中，當追蹤屬性位於 [已更新的使用者] 狀態時，其值會以粗體字顯示。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  開始進行本逐步解說之前，您必須先安裝下列元件：
 
 |||
@@ -141,7 +141,7 @@ ms.locfileid: "74292647"
 
 #### <a name="to-transform-the-text-templates"></a>轉換文字模板
 
-1. 在 [方案總管]工具列上，按一下 [轉換所有範本]。
+1. 在 [**方案總管**] 工具列上，按一下 [**轉換所有範本**]。
 
 2. 系統會重新產生解決方案的程式碼，並儲存 Dsldefinition.dsl 檔。 如需定義檔之 XML 格式的詳細資訊，請參閱[dsldefinition.dsl 檔。](../modeling/the-dsldefinition-dsl-file.md)
 
@@ -722,9 +722,9 @@ ms.locfileid: "74292647"
 
 #### <a name="to-exercise-the-language"></a>若要練習語言
 
-1. 在 **的**[建置]**功能表上，按一下** [重建方案]{5}。
+1. 在 [建置] 功能表上，按一下 [重建方案]。
 
-2. 按一下 [**偵錯**] 功能表上的 [**開始偵錯**]。
+2. 按一下 [偵錯] 功能表上的 [開始偵錯]。
 
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 的實驗性組建會開啟包含空白測試檔案的「**調試**程式」方案。
 

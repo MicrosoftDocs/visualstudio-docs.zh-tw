@@ -54,7 +54,7 @@ ms.locfileid: "74295915"
 ## <a name="controlling-what-is-installed"></a>控制安裝哪些元件  
  如果您想要控制您的使用者可以安裝的元件，有兩個選項：系統管理員檔案安裝和命令列選項。 如果您的目標是限制使用者可以從 Visual Studio 安裝程式經驗選擇的內容，請選取系統管理員檔案安裝。 如果您想要建立初始設定，但允許使用者選擇他們自己的 Visual Studio 安裝程式經驗，請選取命令列參數。  
   
- 如需系統管理員檔案經驗的詳細資訊，請參閱[如何：建立和執行 Visual Studio 自動安裝](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)以及[如何：部署 Visual Studio 時會自動套用產品金鑰](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)。  如需命令列控制項的詳細資訊，請參閱[使用命令列參數安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)頁面。  
+ 如需系統管理員檔案經驗的詳細資訊，請參閱 [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) 和 [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)。  如需命令列控制項的詳細資訊，請參閱[使用命令列參數安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)頁面。  
   
 ## <a name="specifying-customer-feedback-settings"></a>指定客戶回函設定  
 
@@ -71,6 +71,6 @@ ms.locfileid: "74295915"
 |-----------|-----------------|  
 |[如何：安裝特定版本的 Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|描述如何安裝目前版本 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的特定設定。|  
 |[如何：建立和執行 Visual Studio 的自動安裝](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|說明如何以自動模式安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|  
-|[做法：部署 Visual Studio 時會自動套用產品金鑰](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|說明如何在部署至多部電腦時套用產品金鑰。|  
+|[如何：部署 Visual Studio 時會自動套用產品金鑰](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|說明如何在部署至多部電腦時套用產品金鑰。|  
 |[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)|提供有關如何針對擁有或無法存取網際網路的網路環境，管理本機說明安裝的資訊。|  
 |[安裝 Visual Studio](../install/install-visual-studio-2015.md)|提供描述如何安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]之主題的指示和連結。|

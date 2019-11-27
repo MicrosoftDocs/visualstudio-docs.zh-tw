@@ -20,7 +20,7 @@ ms.locfileid: "74298756"
 
 在本節中，您將進一步了解 Visual Studio Tools for Unity 所提供的功能，及如何使用這些功能更有效率地使用 Unity。  
   
- 透過 Visual Studio Tools for Unity (*VSTU*)，您可以使用 Visual Studio 以 C# 撰寫遊戲和編輯器指令碼，然後使用其強大的偵錯工具來尋找及修正錯誤。 最新版的 VSTU 包含 Unity ShaderLab 著色器語言的語法著色、更佳的偵錯工具視覺化，以及 MonoBehavior 精靈的改良式程式碼產生。 VSTU 也會將您的 Unity 專案檔案、主控台訊息和啟動遊戲的功能整合到 Visual Studio 中，以便您可以在撰寫程式碼時，花較少的時間來切換 Unity Editor。  
+ 透過 Visual Studio Tools for Unity (*VSTU*)，您可以在 C# 中使用 Visual Studio 來撰寫遊戲和編輯器指令碼，然後使用其強大的偵錯工具來尋找及修正錯誤。 最新版的 VSTU 包含 Unity ShaderLab 著色器語言的語法著色、更佳的偵錯工具視覺化，以及 MonoBehavior 精靈的改良式程式碼產生。 VSTU 也會將您的 Unity 專案檔案、主控台訊息和啟動遊戲的功能整合到 Visual Studio 中，以便您可以在撰寫程式碼時，花較少的時間來切換 Unity Editor。  
   
  請繼續閱讀，以進一步了解這些功能。  
   

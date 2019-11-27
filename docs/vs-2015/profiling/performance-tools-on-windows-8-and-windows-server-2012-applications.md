@@ -136,7 +136,7 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
    **在遠端電腦上收集 TIP 資料**  
   
-   若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 **%VSInstallDir%\_\_\Team Tools\Performance Tools\Setups** 資料夾中，將 _vs\<profiler_ **\_** 平台> _\<_ _語言>_ **.exe** 檔案複製到遠端電腦並加以安裝。 您無法使用 [Visual Studio 遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)下載封裝的程式碼剖析工具。  
+   若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 **%VSInstallDir%\_\_\Team Tools\Performance Tools\Setups** 資料夾中，將 _vs\<profiler_ **\_** 平台> _\<_ _語言>_ **.exe** 檔案複製到遠端電腦並加以安裝。 您無法使用 [Visual Studio 遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
   
    您可以使用 [VSPerfCmd](../profiling/vsperfcmd.md) 或 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 收集程式碼剖析資料。  
   

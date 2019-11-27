@@ -77,9 +77,9 @@ ms.locfileid: "74299278"
   
  如需 [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]的 [編輯後繼續] 中支援之編輯的詳細資訊，請參閱支援的程式[代碼變更（C#）](../debugger/supported-code-changes-csharp.md)。 如需特定錯誤或警告的詳細資訊，您可以在 MSDN [Visual C# IDE 論壇](https://go.microsoft.com/fwlink/?LinkId=214693)上搜尋或張貼。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
-1. 從 [**偵錯**] 功能表上選擇 [**復原**]，復原變更。  
+1. 從 [ **偵錯** ] 功能表上選擇 [ **復原** ]，復原變更。  
   
      -或-  
   

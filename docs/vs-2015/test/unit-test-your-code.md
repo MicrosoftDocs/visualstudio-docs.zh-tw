@@ -41,7 +41,7 @@ ms.locfileid: "74301435"
 ## <a name="key-tasks"></a>主要工作
  下列主題可協助您了解及建立單元測試：
 
-|工作|相關主題|
+|工作|相關的主題|
 |-----------|-----------------------|
 |**快速入門和逐步解說：** 使用下列主題從程式碼範例來了解 Visual Studio 中的單元測試。|-   [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [將單元測試加入至現有的 C++ 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [使用測試總管針對機器碼執行單元測試](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|
 |**使用測試總管進行單元測試：** 了解測試總管如何協助建立更具生產力且更有效率的單元測試。|-   [單元測試基本概念](../test/unit-test-basics.md)<br />-   [建立單元測試專案](../test/create-a-unit-test-project.md)<br />-   [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)<br />-   [安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)<br />-   [升級 Visual Studio 2010 的單元測試](https://msdn.microsoft.com/9bb75856-f68a-4de2-a084-b08a947a1172)|
@@ -49,8 +49,8 @@ ms.locfileid: "74301435"
 |**對 C++ 程式碼進行單元測試**|-   [使用適用於 C++ 的 Microsoft 單元測試架構撰寫適用於 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**隔離單元測試**|-   [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**使用程式碼涵蓋範圍來識別您的專案程式碼的哪個部分，是使用單元測試進行測試：** 了解 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 測試工具的程式碼涵蓋範圍功能。|-   [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**在單元測試中運用負載測試來執行壓力與效能分析**：您可以建立負載測試，並將單元測試加入其中，以便找出應用程式中的效能與壓力問題。 **注意：** 若要建立和使用負載測試，您必須安裝 Visual Studio Enterprise。|-   [建立和編輯負載測試](https://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [如何：將 Web 效能測試和單元測試加入負載測試情節](https://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [如何：將 Web 效能測試和單元測試從負載測試情節中移除](https://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|
-|**設立並嚴守品質大門**：您可以樹立品質大門，確定程式碼在簽入之前都必須先經過測試，以確保程式碼的品質。|-   [設立並嚴守品質閘門](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|
+|**在單元測試中運用負載測試來執行壓力與效能分析：** 您可以建立負載測試，並將單元測試加入其中，以便找出應用程式中的效能與壓力問題。 **注意：** 若要建立和使用負載測試，您必須安裝 Visual Studio Enterprise。|-   [建立和編輯負載測試](https://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [如何：將 Web 效能測試和單元測試加入負載測試情節](https://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [如何：將 Web 效能測試和單元測試從負載測試情節中移除](https://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|
+|**設立並嚴守品質閘門：** 您可以樹立品質閘門，確定程式碼在簽入之前都必須先經過測試，以確保程式碼的品質。|-   [設立並嚴守品質閘門](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|
 |**擴充單元測試類型：** 您可以在測試中加入可能不存在單元測試架構中的功能。 例如，您可以加入測試屬性，以便指定測試是否應該以一般使用者身分執行。 或者，您也可以擴充架構，以便將資料列屬性加入至方法並且在測試內部使用該資料列的資料。|如需如何擴充單元測試架構的範例程式碼，請參閱下列 [Microsoft 網站](https://go.microsoft.com/fwlink/?LinkId=185591)。|
 |**設定測試選項：** 例如，您可以指定儲存測試結果的位置。|[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
@@ -70,10 +70,10 @@ ms.locfileid: "74301435"
 
 ## <a name="external-resources"></a>外部資源
 
-### <a name="videos"></a>視訊
+### <a name="videos"></a>Videos
  [Channel 9：Unit testing your Windows Store apps built using XAML (單元測試使用 XAML 建置的 Windows 市集應用程式)](https://go.microsoft.com/fwlink/?LinkId=226285)
 
-### <a name="forums"></a>論壇
+### <a name="forums"></a>Forums
  [Visual Studio 單元測試](https://go.microsoft.com/fwlink/?LinkId=224477)
 
 ### <a name="guidance"></a>指引

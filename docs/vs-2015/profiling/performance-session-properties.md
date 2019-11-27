@@ -25,7 +25,7 @@ ms.locfileid: "74290116"
 
 [效能工作階段] 可以讓您進行設定，以決定如何對應用程式進行程式碼剖析。 它也會儲存針對程式碼剖析工作階段所產生的報告。  
   
- **需求**  
+ **Requirements**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -66,7 +66,7 @@ ms.locfileid: "74290116"
   
   如需詳細資訊，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)  
   
-## <a name="binary"></a>二元  
+## <a name="binary"></a>Binary  
  這些設定可以讓您指定是否要將已檢測的二進位檔重新配置到另一個位置。 例如，如果您正在剖析 My.DLL 並選擇不要重新配置已檢測的二進位檔，則會建立名為 My.Orig.DLL 的 My.DLL 備份複本。 接著會插入探查來修改 My.DLL 以收集資料。 如果您決定要重新配置已檢測的二進位檔，則不會重新命名原始二進位檔，而且會將已檢測的二進位檔複製到指定的位置供檢測期間使用。  
   
  如需詳細資訊，請參閱[如何：指定要啟動的二進位檔](../profiling/how-to-specify-the-binary-to-start.md)  
@@ -74,7 +74,7 @@ ms.locfileid: "74290116"
 ## <a name="tier-interactions"></a>階層互動  
  如需詳細資訊，請參閱[收集階層互動資料](../profiling/collecting-tier-interaction-data.md)  
   
-## <a name="instrumentation"></a>測試設備  
+## <a name="instrumentation"></a>檢測設備  
  這些設定可以讓您收集 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 網頁中 JScript 程式碼的效能資料，並指定您希望在檢測處理序前後發生的任何 [檢測前置] 和 [檢測後續] 事件。  
   
  如需詳細資訊，請參閱：  

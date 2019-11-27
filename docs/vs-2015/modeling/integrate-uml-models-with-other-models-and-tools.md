@@ -71,7 +71,7 @@ UML 模型可以與其他模型及網域指定的語言整合。
 
    如需詳細資訊，請參閱[在模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)和[如何：加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。
 
-## <a name="samples"></a>範例
+## <a name="samples"></a>Samples
  請參閱程式碼範例將[UML 專案連結至圖表或其他](https://go.microsoft.com/fwlink/?LinkId=213813)檔案。 此範例讓使用者將檔案拖曳到任何 UML 項目，並稍後按兩下檔案項目以開啟檔案。 例如，您可以將活動圖表連結至使用案例項目。 圖示會顯示哪些項目具有連結。
 
  這個程式碼範例會示範下列技術：

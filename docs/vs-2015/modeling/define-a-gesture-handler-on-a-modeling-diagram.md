@@ -29,26 +29,26 @@ ms.locfileid: "74299301"
 ## <a name="requirements"></a>需求
  請參閱 [需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。
 
- 若要查看哪些版本的 Visual Studio 支援此功能，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="creating-a-gesture-handler"></a>建立軌跡處理常式
  若要定義 UML 設計工具的軌跡處理常式，您必須建立一個類別來定義軌跡處理常式的行為，並將該類別內嵌在 Visual Studio 整合擴充功能 (VSIX)。 VSIX 會做為容器，可安裝該處理常式。 定義軌跡處理程式有兩個替代方法：
 
-- **使用專案範本在它自己的 VSIX 建立軌跡處理常式。** 這是較快的方法。 它適用於您不想結合您的處理常式與其他類型的擴充功能時，例如驗證擴充功能、自訂工具箱項目或功能表命令。
+- **使用專案範本在自己的 VSIX 中建立軌跡處理常式。** 這是較快的方法。 它適用於您不想結合您的處理常式與其他類型的擴充功能時，例如驗證擴充功能、自訂工具箱項目或功能表命令。
 
-- **建立個別的軌跡處理常式和 VSIX 專案。** 如果您想要將數種類型的擴充功能合併成相同的 VSIX，即可使用此方法。 比方說，如果軌跡處理常式預期模型要觀察特定的條件約束，您可以將它內嵌至與驗證方法相同的 VSIX。
+- **建立個別的手勢處理常式和 VSIX 專案。** 如果您想要將數種類型的擴充功能合併成相同的 VSIX，即可使用此方法。 比方說，如果軌跡處理常式預期模型要觀察特定的條件約束，您可以將它內嵌至與驗證方法相同的 VSIX。
 
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>在自己的 VSIX 中建立軌跡處理常式
 
-1. 在 [新增專案] 對話方塊中，於 [模型專案] 之下，選取 [軌跡擴充功能]。
+1. 在 [新增專案] 對話方塊中，於 [模型專案]之下，選取 [軌跡擴充功能]。
 
 2. 在新的專案開啟 **.cs** 檔案，並修改 `GestureExtension` 類別來實作軌跡處理常式。
 
-    如需詳細資訊，請參閱[實作軌跡處理常式](#Implementing)。
+    如需詳細資訊，請參閱 [實作軌跡處理常式](#Implementing)。
 
-3. 按 F5 測試軌跡處理常式。 如需詳細資訊，請參閱[執行軌跡處理常式](#Executing)。
+3. 按 F5 測試軌跡處理常式。 如需詳細資訊，請參閱 [執行軌跡處理常式](#Executing)。
 
-4. 將軌跡處理常式安裝在另一部電腦上，方法是複製專案所建立的**bin\\\*\\\*.vsix**檔案。 如需詳細資訊，請參閱[安裝和解除安裝擴充功能](#Installing)。
+4. 將軌跡處理常式安裝在另一部電腦上，方法是複製專案所建立的**bin\\\*\\\*.vsix**檔案。 如需詳細資訊，請參閱 [安裝和解除安裝擴充功能](#Installing)。
 
    以下是替代程序：
 
@@ -56,9 +56,9 @@ ms.locfileid: "74299301"
 
 1. 在新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案或現有的方案中，建立類別庫專案。
 
-   1. 在 [檔案] 功能表上，依序選擇 [新增] 和 [專案]。
+   1. 在 [檔案] 功能表，選擇 [新增]、[專案]。
 
-   2. 在 [已安裝的範本] 下，依序展開 [Visual C#] 或 [Visual Basic]，然後在中間的資料行中選擇 [類別庫]。
+   2. 在 [已安裝的範本]下，依序展開 [Visual C#] 或 [Visual Basic]，然後在中間的資料行中選擇 [類別庫]。
 
 2. 將下列參考加入您的專案。
 
@@ -198,7 +198,7 @@ ms.locfileid: "74299301"
 
    ```
 
-    如需要在方法中放入什麼的詳細資訊，請參閱[實作軌跡處理常式](#Implementing)。
+    如需要在方法中放入什麼的詳細資訊，請參閱 [實作軌跡處理常式](#Implementing)。
 
    您必須將功能表命令加入 VSIX 專案，期將會做為安裝命令的容器。 如果您想要，可以在相同的 VSIX 中包含其他元件。
 
@@ -208,7 +208,7 @@ ms.locfileid: "74299301"
 
 2. 除非您的方案已經包含 VSIX 專案，否則請建立一個。
 
-    1. 在 [方案總管] 中，在方案的捷徑功能表上，選擇 [新增] 和 [新增專案]。
+    1. 在 [方案總管]中，在方案的捷徑功能表上，選擇 [新增]和 [新增專案]。
 
     2. 在 [已安裝的範本]下，依序展開 [Visual C#] 或 [Visual Basic]，然後選取 [擴充性]。 在中間的資料行中，選擇 [VSIX 專案]。
 
@@ -243,7 +243,7 @@ ms.locfileid: "74299301"
 
    - 您如有多個專案，請確定已將 VSIX 專案設定為解決方案的啟始專案。
 
-   - 在 [方案總管] 中，在啟始專案或唯一專案的捷徑功能表上，選擇 [屬性]。 在 [專案屬性編輯器] 中，選擇 [**調試**程式] 索引標籤。請確定 [**啟動外部程式**] 欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：
+   - 在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性]。 在 [專案屬性編輯器] 中，選擇 [**調試**程式] 索引標籤。請確定 [**啟動外部程式**] 欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -322,7 +322,7 @@ ms.locfileid: "74299301"
      如果您的來源物件是從 [UML 模型瀏覽器] 或另一個 UML 圖表拖曳的 UML 元素，請參閱[從 IDataObject 取得 uml 模型](../modeling/get-uml-model-elements-from-idataobject.md)專案。
 
 ### <a name="writing-the-code-of-the-methods"></a>撰寫方法的程式碼
- 如需有關如何撰寫程式碼來讀取和更新模型的詳細資訊，請參閱[使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)。
+ 如需有關如何撰寫程式碼來讀取和更新模型的詳細資訊，請參閱 [Programming with the UML API](../modeling/programming-with-the-uml-api.md)。
 
  如需在拖曳作業中存取模型資訊的詳細資訊，請參閱[從 IDataObject 取得 UML 模型元素](../modeling/get-uml-model-elements-from-idataobject.md)。
 
@@ -355,7 +355,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
 1. 在您的電腦中，尋找 VSIX 專案所建置的 **.vsix** 檔案。
 
-    1. 在**方案總管**之 VSIX 專案的捷徑功能表上，選擇 [在 Windows 檔案總管開啟資料夾]。
+    1. 在 **方案總管**之 VSIX 專案的捷徑功能表上，選擇 [在 Windows 檔案總管開啟資料夾]。
 
     2. 找出 **\*\\** _yourproject。_ 的 bin\\
 
@@ -371,7 +371,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
 #### <a name="to-uninstall-an-extension"></a>解除安裝擴充功能
 
-1. 在 [工具] 功能表中選擇 [擴充功能和更新]。
+1. 在 [ **工具** ] 功能表中選擇 [ **擴充功能和更新**]。
 
 2. 展開 [已安裝的擴充功能]。
 

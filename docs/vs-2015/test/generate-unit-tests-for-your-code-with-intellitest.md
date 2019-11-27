@@ -118,7 +118,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
  當您加入判斷提示並重新執行 IntelliTest 時，其會檢查該判斷提示是否正確，若不正確，測試即會失敗。
 
 ### <a name="NoRun"></a> 問： 是否可以產生參數化的單元測試而不需先執行 IntelliTest?
- **答：** 可以，只要以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] 即可。
+ **答：** 可以，只要以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest]即可。
 
  ![以&#45;滑鼠右鍵按一下編輯器，選擇 [建立 IntelliTest]](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")
 
@@ -127,7 +127,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
  ![使用 MSTest default 建立 IntelliTest](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")
 
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>問： 是否可以使用其他單元測試架構搭配 IntelliTest？
- **答：** 可以，請遵循[尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest]。 於此處選取您已安裝的架構：
+ **答：** 可以，請遵循 [尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest]。 於此處選取您已安裝的架構：
 
  ![選取 IntelliTest 的其他單元測試架構](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")
 

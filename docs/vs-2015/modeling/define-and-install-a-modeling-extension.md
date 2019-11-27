@@ -27,7 +27,7 @@ ms.locfileid: "74298715"
 ## <a name="requirements"></a>需求
  請參閱 [需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。
 
- 若要查看哪些版本的 Visual Studio 支援此功能，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="creating-a-modeling-extension-solution"></a>建立模型擴充功能方案
  若要定義模型擴充功能，您必須建立包含這些專案的方案：
@@ -42,7 +42,7 @@ ms.locfileid: "74298715"
 
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>建立功能表命令、軌跡處理常式或驗證的類別庫專案
 
-1. 在 [檔案] 功能表上，依序選擇 [新增] 和 [專案]。
+1. 在 [檔案] 功能表，選擇 [新增]、[專案]。
 
 2. 在 [已安裝的範本]下，選取 [Visual C#] 或 [Visual Basic]，然後選擇 [類別庫]。
 
@@ -58,7 +58,7 @@ ms.locfileid: "74298715"
 
 3. 將 VSIX 專案設定為方案的啟始專案。
 
-    - 在方案總管中，於 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案]。
+    - 在方案總管中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案]。
 
 4. 開啟 **source.extension.vsixmanifest**。 此檔案會在資訊清單編輯器中開啟。
 

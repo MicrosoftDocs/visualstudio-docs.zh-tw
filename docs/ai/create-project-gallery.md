@@ -31,7 +31,7 @@ Azure Machine Learning 與 Visual Studio Tools for AI 整合。 您可以使用�
 
 2. 在伺服器總管中以滑鼠右鍵按一下 [Azure Machine Learning] 節點，然後選取 [登入] 並遵循指示進行，以登入您的 Azure Machine Learning 訂用帳戶。
 
-    ![login](media/create-project-gallery/azureml-login.png)
+    ![登入](media/create-project-gallery/azureml-login.png)
 
 3. 選取 [AI Tools] (AI 工具) > [Azure Machine Learning 範例庫]。
 

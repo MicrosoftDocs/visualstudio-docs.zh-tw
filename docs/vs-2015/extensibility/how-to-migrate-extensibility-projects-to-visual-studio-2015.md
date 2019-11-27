@@ -45,7 +45,7 @@ ms.locfileid: "74295548"
   
 2. 選取專案中的 VS SDK 參考元件，並以滑鼠右鍵按一下並**移除**，以將其移除。  
   
-3. 新增 VS SDK 參考元件的 NuGet 版本。  仍在 [**方案總管參考**] 節點中，開啟 [**管理 NuGet 套件 ...** ] .  如果您想要深入瞭解此對話方塊，請參閱[使用對話方塊管理 NuGet 套件](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)。 VS SDK 參考元件會在[nuget.org](https://www.nuget.org/) by [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)發行。  
+3. 新增 VS SDK 參考元件的 NuGet 版本。  仍在 [**方案總管參考**] 節點中，開啟 [**管理 NuGet 套件 ...** ] 對話方塊中，新增使用者帳戶。  如果您想要深入瞭解此對話方塊，請參閱[使用對話方塊管理 NuGet 套件](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)。 VS SDK 參考元件會在[nuget.org](https://www.nuget.org/) by [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)發行。  
   
 4. 使用**nuget.org**作為您的**套件來源**，搜尋符合所需參考元件（例如： VisualStudio）的 nuget 套件名稱，並將它安裝在您的專案中。  NuGet 可能會加入多個參考元件，以便滿足初始元件的相依性。  
   

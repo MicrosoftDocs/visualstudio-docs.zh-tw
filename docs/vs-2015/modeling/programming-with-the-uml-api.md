@@ -22,7 +22,7 @@ ms.locfileid: "74296059"
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 的 UML API 可讓您撰寫程式碼，以建立、讀取和更新 UML 模型和圖表。 若要查看哪些版本的 Visual Studio 支援 UML 模型，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+Visual Studio 的 UML API 可讓您撰寫程式碼，以建立、讀取和更新 UML 模型和圖表。 若要查看哪些 Visual Studio 版本支援 UML 模型，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
  除了應用程式開發介面參考頁面之外，下列主題也會描述應用程式開發介面。
 
@@ -51,18 +51,18 @@ Visual Studio 的 UML API 可讓您撰寫程式碼，以建立、讀取和更新
 ## <a name="the-api-assemblies"></a>應用程式開發介面組件
  下表摘錄了可為 UML 工具提供擴充性的組件，以及建議您使用的命名空間。
 
-|Assembly|命名空間|提供存取權給：|
+|組件|命名空間|提供存取權給：|
 |--------------|----------------|-------------------------|
 |Microsoft.VisualStudio.Uml.Interfaces|(全部)|UML 類型。|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|VisualStudio. Microsoft.visualstudio.architecturetools.layer.validator 擴充性 Uml|[建立方法](../modeling/create-elements-and-relationships-in-uml-models.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[圖表和圖形](../modeling/display-a-uml-model-on-diagrams.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[模型專案](../modeling/read-a-uml-model-in-program-code.md)|
-|Microsoft.VisualStudio.Modeling.Sdk.[版本]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[功能表命令延伸](../modeling/define-a-menu-command-on-a-modeling-diagram.md)模組。<br /><br /> [連結的復原異動](../modeling/link-uml-model-updates-by-using-transactions.md)。|
+|Microsoft.VisualStudio.Modeling.Sdk.[版本]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[功能表命令延伸](../modeling/define-a-menu-command-on-a-modeling-diagram.md)模組。<br /><br /> [連結的復原交易](../modeling/link-uml-model-updates-by-using-transactions.md)。|
 ||<xref:Microsoft.VisualStudio.Modeling.Validation>|[驗證](../modeling/define-validation-constraints-for-uml-models.md)|
 ||(其他命名空間)|建議僅供進階使用。|
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本]|<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement>|軌跡[處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)。|
 ||(其他命名空間)|建議僅供進階使用。|
-|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[連結至工作項目](../modeling/define-a-work-item-link-handler.md)。|
+|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[工作專案的連結](../modeling/define-a-work-item-link-handler.md)。|
 |Microsoft.TeamFoundation.WorkItemTracking.Client|Microsoft.TeamFoundation.WorkItemTracking.Client|[工作專案及其欄位](../modeling/define-a-work-item-link-handler.md)。|
 |Microsoft.TeamFoundation.Client|Microsoft.TeamFoundation.Client|[工作專案及其欄位](../modeling/define-a-work-item-link-handler.md)。|
 |System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[針對 MEF 元件匯出和匯入](../modeling/define-and-install-a-modeling-extension.md)|

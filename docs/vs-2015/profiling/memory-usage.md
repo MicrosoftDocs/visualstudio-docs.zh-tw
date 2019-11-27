@@ -23,13 +23,13 @@ ms.locfileid: "74298359"
   
 - 您可以分析一份快照，了解物件類型對於記憶體使用的相對影響，並找出應用程式中無效率使用記憶體的程式碼。  
   
-- 您也可以比較 (差異比對) 應用程式的兩個快照，找出造成記憶體使用量隨著時間逐漸增加的程式碼部分。  
+- 您也可以比較 (「差異比對」(Diff)) 應用程式的兩個快照，找出造成記憶體使用量隨著時間逐漸增加的程式碼部分。  
   
   下圖顯示 Visual Studio 2015 Update 1 中的 [診斷工具] 視窗：  
   
   ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-  除了可以在**記憶體使用量**工具中收集任何時間的記憶體快照之外，您還可以使用 Visual Studio 偵錯工具，來控制調查效能問題時要如何執行應用程式。 設定中斷點、逐步偵錯、全部中斷和其他偵錯工具動作，都可以協助您將效能調查工作集中在最相關的程式碼路徑上。 在應用程式執行時進行這些動作，可排除您不感興趣之程式碼的干擾，並可大幅縮短診斷問題所需的時間。  
+  除了可以在 **記憶體使用量** 工具中收集任何時間的記憶體快照之外，您還可以使用 Visual Studio 偵錯工具，來控制調查效能問題時要如何執行應用程式。 設定中斷點、逐步偵錯、全部中斷和其他偵錯工具動作，都可以協助您將效能調查工作集中在最相關的程式碼路徑上。 在應用程式執行時進行這些動作，可排除您不感興趣之程式碼的干擾，並可大幅縮短診斷問題所需的時間。  
   
   您也可以在偵錯工具外部使用記憶體工具。 請參閱 [Memory Usage without Debugging](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)。  
   
@@ -41,13 +41,13 @@ ms.locfileid: "74298359"
 ## <a name="analyze-memory-use-with-the-debugger"></a>使用偵錯工具分析記憶體使用量  
   
 > [!NOTE]
-> 由於收集記憶體資料可能會影響原生或混合模式應用程式的偵錯效能，因此預設會停用記憶體快照。 若要啟用原生或混合模式應用程式的快照，請啟動偵錯工作階段 (快速鍵：**F5**)。 在顯示 [診斷工具] 視窗時，選擇 [記憶體使用量] 索引標籤，然後選擇 [啟用快照]。  
+> 由於收集記憶體資料可能會影響原生或混合模式應用程式的偵錯效能，因此預設會停用記憶體快照。 若要啟用原生或混合模式應用程式的快照，請啟動偵錯工作階段 (快速鍵： **F5**)。 在顯示 [診斷工具] 視窗時，選擇 [記憶體使用量] 索引標籤，然後選擇 [啟用快照]。  
 >   
 > ![啟用快照集](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
-> 停止 (快速鍵：**Shift + F5**) 並重新啟動偵錯。  
+> 停止 (快速鍵： **Shift + F5**) 並重新啟動偵錯。  
   
- 每當您想要擷取記憶體的狀態時，請選擇 [記憶體使用量] 摘要工具列上的 [擷取快照]。  
+ 每當您想要擷取記憶體的狀態時，請選擇 [記憶體使用量] 摘要工具列上的 [擷取快照] 。  
   
  ![製作快照集](../profiling/media/dbgdiag-mem-mixedtoolbar-takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")  
   
@@ -60,7 +60,7 @@ ms.locfileid: "74298359"
   
  每個資料列的資料行則取決於您在專案屬性中選擇的偵錯模式：.NET、原生或混合 (.NET 和原生)。  
   
-- [Managed 物件] 和 [原生配置] 資料行顯示擷取快照時 .NET 和原生記憶體中的物件數目。  
+- [Managed 物件]和 [原生配置] 資料行顯示擷取快照時 .NET 和原生記憶體中的物件數目。  
   
 - [Managed 堆積大小] 和 [原生堆積大小] 資料行顯示 .NET 和原生堆積中的位元組數目。  
   
@@ -110,7 +110,7 @@ ms.locfileid: "74298359"
   
      ![實例視圖](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
   
-- 在 [檢視模式] 清單中選擇 [堆疊檢視]，以查看所選類型的配置堆疊。  
+- 在 [檢視模式] 清單中選擇 [堆疊檢視] ，以查看所選類型的配置堆疊。  
   
      ![堆疊視圖](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   

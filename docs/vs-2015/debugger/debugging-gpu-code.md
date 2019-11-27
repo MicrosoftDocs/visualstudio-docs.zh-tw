@@ -37,7 +37,7 @@ ms.locfileid: "74298287"
   
 - 在 [標準] 工具列的 [偵錯類型] 清單中，選擇 [僅限 GPU]。  
   
-- 在 [**方案總管**] 中，於專案的捷徑功能表上選擇 [**屬性**]。 在 [屬性頁] 對話方塊中，選取 [偵錯]，然後在 [偵錯工具類型] 清單中選取 [僅限 GPU]。  
+- 在 [方案總管] 中，在專案的捷徑功能表上選擇 [屬性]。 在 [屬性頁] 對話方塊中，選取 [偵錯]，然後在 [偵錯工具類型] 清單中選取 [僅限 GPU]。  
   
 ## <a name="launching-and-attaching-to-applications"></a>啟動和附加至應用程式  
  您可以使用 Visual Studio 偵錯命令啟動和停止 GPU 偵錯。 如需詳細資訊，請參閱[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。 您也可以將 GPU 偵錯工具附加至執行中的處理序，但是只有在該處理序執行 GPU 程式碼時才能這樣做。 如需詳細資訊，請參閱[附加至](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)執行中的進程。  
@@ -63,7 +63,7 @@ ms.locfileid: "74298287"
 - [如何：使用 GPU 執行緒視窗](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>資料同步處理的例外狀況  
- 偵錯工具可能在執行期間識別出幾個資料同步處理的情況。 當偵測到某種情況時，偵錯工具就會進入中斷模式。 有兩個選項可供您使用：[中斷] 或 [繼續]。 使用 [例外狀況] 對話方塊可以設定偵錯工具是否要偵測這些情況，以及要針對哪些情況中斷。 如需詳細資訊，請參閱[使用偵錯工具管理例外](../debugger/managing-exceptions-with-the-debugger.md)狀況。 您也可以使用 [**選項**] 對話方塊指定，如果寫入的資料不會變更資料的值，則偵錯工具應該忽略例外狀況。 如需詳細資訊，請參閱 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
+ 偵錯工具可能在執行期間識別出幾個資料同步處理的情況。 當偵測到某種情況時，偵錯工具就會進入中斷模式。 有兩個選項可供您使用：[中斷] 或 [繼續]。 使用 [例外狀況] 對話方塊可以設定偵錯工具是否要偵測這些情況，以及要針對哪些情況中斷。 如需詳細資訊，請參閱[使用偵錯工具管理例外](../debugger/managing-exceptions-with-the-debugger.md)狀況。 您也可以使用 [**選項**] 對話方塊來指定如果寫入的資料不會變更資料的值，則偵錯工具應該忽略例外狀況。 如需詳細資訊，請參閱 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
   
 ## <a name="troubleshooting"></a>疑難排解  
   

@@ -19,7 +19,7 @@ ms.locfileid: "74292544"
 # <a name="run-unit-tests-on-uml-extensions"></a>在 UML 擴充功能上執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-為了協助在連續變更之後保持您程式碼的穩定，建議您撰寫單元測試，並在一般建置流程時執行它們。 如需詳細資訊，請參閱[單元測試您的程式碼](../test/unit-test-your-code.md)。 若要設定 Visual Studio 模型擴充功能的測試，您需要一些重要資訊。 摘要說明：
+為了協助在連續變更之後保持您程式碼的穩定，建議您撰寫單元測試，並在一般建置流程時執行它們。 如需詳細資訊，請參閱 [Unit Test Your Code](../test/unit-test-your-code.md)。 若要設定 Visual Studio 模型擴充功能的測試，您需要一些重要資訊。 歸納起來：
 
 - [設定 VSIX 擴充功能的單元測試](#Host)
 
@@ -46,7 +46,7 @@ ms.locfileid: "74292544"
 ## <a name="requirements"></a>需求
  請參閱 [需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。
 
- 若要查看哪些版本的 Visual Studio 支援此功能，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="Host"></a>設定 VSIX 擴充功能的單元測試
  模型擴充功能中的方法通常會使用已開啟的圖表。 這些方法使用 MEF 匯入，例如 **IDiagramContext** 和 **ILinkedUndoContext**。 執行測試之前，您的測試環境必須先設定這個內容。
@@ -57,7 +57,7 @@ ms.locfileid: "74292544"
 
     1. **UML 擴充功能專案。** 您通常會使用命令、手勢或驗證專案範本，來建立這個專案。 例如，請參閱[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。
 
-    2. **單元測試專案。** 如需詳細資訊，請參閱[單元測試您的程式碼](../test/unit-test-your-code.md)。
+    2. **單元測試專案。** 如需詳細資訊，請參閱 [Unit Test Your Code](../test/unit-test-your-code.md)。
 
 2. 建立含有 UML 模型專案的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案。 您將會使用這個方案做為測試的初始狀態。 它應該與您在其中撰寫 UML 擴充功能和其單元測試的方案區隔開來。 如需詳細資訊，請參閱[建立 UML 模型專案和圖表](../modeling/create-uml-modeling-projects-and-diagrams.md)。
 
@@ -68,7 +68,7 @@ ms.locfileid: "74292544"
         <CopyOutputSymbolsToOutputDirectory>true</CopyOutputSymbolsToOutputDirectory>
     ```
 
-     若要編輯 .csproj 檔案做為文字，請在方案總管的專案捷徑功能表上選擇 [卸載專案]。 然後選擇 [編輯 ….csproj]。 在您編輯過文字之後，請選擇 [重新載入專案]。
+     若要編輯 .csproj 檔案做為文字，請在方案總管的專案捷徑功能表上選擇 [卸載專案] 。 然後選擇 [編輯 ….csproj]。 在您編輯過文字之後，請選擇 [重新載入專案]。
 
 4. 在 UML 擴充功能專案中，於 **Properties\AssemblyInfo.cs**中加入下行。 這樣可讓單元測試存取您想要測試的方法：
 

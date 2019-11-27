@@ -43,9 +43,9 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
   
 1. 開啟您想要偵錯的專案，然後按一下[偵錯/開始偵錯] (或工具列上的 [開始] 或 **F5**)。  
   
-2. [偵錯工具]視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯/Windows/顯示診斷工具]。  
+2. [偵錯工具] 視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯/Windows/顯示診斷工具]。  
   
-3. 執行您要收集資料的案例。  
+3. 執行您要收集其資料的案例。  
   
     在執行工作階段時，您可以看到事件、程序記憶體和 CPU 使用量的相關資訊。  
   
@@ -101,19 +101,19 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
   
 |||  
 |-|-|  
-|![步驟1](../profiling/media/procguid-1.png "ProcGuid_1")|時間軸會顯示程式碼剖析工作階段的長度、應用程式週期啟用事件，以及使用者標記。|  
+|![步驟1](../profiling/media/procguid-1.png "ProcGuid_1")|時間軸會顯示分析工作階段的長度、應用程式週期啟用事件，以及使用者標記。|  
 |![步驟2](../profiling/media/procguid-2.png "ProcGuid_2")|您可以拖曳藍色巡覽列，選取時間軸的區域，將報告限制在時間軸的一部分。|  
-|![步驟3](../profiling/media/procguid-3.png "ProcGuid_3")|這項工具會顯示一個或多個主要圖表。 如果您的診斷工作階段是使用多項工具所建立，則會顯示所有主要圖表。|  
-|![步驟4](../profiling/media/procguid-4.png "ProcGuid_4")|您可以摺疊和展開個別圖表。|  
-|![步驟5](../profiling/media/procguid-6.png "ProcGuid_6")|當您的資料包含來自多項工具的資訊時，該工具的詳細資料會收集在索引標籤之下。|  
-|![步驟6](../profiling/media/procguid-6a.png "ProcGuid_6a")|這項工具可以有一個或多個詳細資料檢視。 檢視會經過特定時間軸區域篩選。|  
+|![步驟3](../profiling/media/procguid-3.png "ProcGuid_3")|可顯示一或多份主要圖表的一項工具。 如果您的診斷工作階段透過多項工具建立，則會顯示所有主要圖表。|  
+|![步驟4](../profiling/media/procguid-4.png "ProcGuid_4")|您可以摺疊及展開各個圖表。|  
+|![步驟5](../profiling/media/procguid-6.png "ProcGuid_6")|如果您的資料包含來自多項工具的資訊，則索引標籤底下都會列出工具的詳細資料。|  
+|![步驟6](../profiling/media/procguid-6a.png "ProcGuid_6a")|可包含一或多個詳細資料檢視的一項工具。 檢視會經過所選時間軸區域篩選。|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>將另一部裝置設定為分析目標  
- 除了從 Visual Studio 專案啟動您的應用程式之外，您也可以在替代目標上執行診斷工作階段。 例如，您可能想要在從 Windows 市集安裝的應用程式版本上診斷效能問題。  
+ 除了從 Visual Studio 專案啟動應用程式以外，您還可以在替代目標中執行診斷工作階段。 例如，您可能想要在從 Windows 市集安裝的應用程式版本上診斷效能問題。  
   
  ![選擇診斷工具分析目標](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
- 您可以啟動裝置上已安裝的應用程式，也可以將診斷工具附加至已在執行中的某些應用程式。 當您選擇 [執行中的應用程式] 或 [已安裝的應用程式] 時，您可以從指定部署目標上所探索到的應用程式清單中選取應用程式。  
+ 您可以啟動裝置上已安裝的應用程式，也可以將診斷工具附加至已在執行中的某些應用程式。 當您選擇 [執行中的應用程式] 或 [已安裝的應用程式] 時，您可以從指定的部署目標上探索到的應用程式清單中選取應用程式。  
   
  ![選擇正在執行或已安裝的應用程式進行診斷](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
   

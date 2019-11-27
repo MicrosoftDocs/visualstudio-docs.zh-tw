@@ -51,7 +51,7 @@ ms.locfileid: "74293616"
   
 7. 在 Windows 檔案總管中，以滑鼠右鍵按一下包含擴充功能內容的資料夾和兩個 XML 檔案，並按一下 [傳送到]，然後按一下 [壓縮的 (zipped) 資料夾]。  
   
-8. 將產生的 .zip 檔案重新命名為*檔案名稱*.vsix，其中*檔案名稱*是安裝封裝的可轉散發檔案名稱。  
+8. 將產生的 .zip 檔案重新命名為 *檔案名稱*.vsix，其中 *檔案名稱* 是安裝封裝的可轉散發檔案名稱。  
   
 ## <a name="see-also"></a>另請參閱  
  [運送 Visual Studio 延伸](../extensibility/shipping-visual-studio-extensions.md)模組   

@@ -21,7 +21,7 @@ ms.locfileid: "74297457"
 
 Visual Basic 支援 XML 常值，這表示您可以直接將 XML 片段併入您的 Visual Basic 程式碼中。 如需詳細資訊，請參閱[XML 常值總覽](https://go.microsoft.com/fwlink/?LinkId=140325)。
 
- 如果 Visual Basic 專案中的 XSD 檔包含 XML 常值，您就可以在 XML 結構描述總管中檢視 XML 結構描述集。 若要檢視與 XML 常值相關的結構描述集，請以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的 XML 節點，然後選取 [**在結構描述總管中顯示**]。
+ 如果 Visual Basic 專案中的 XSD 檔包含 XML 常值，您就可以在 XML 結構描述總管中檢視 XML 結構描述集。 若要查看與 XML 常值相關聯的架構集，請以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的 XML 節點，然後選取 [**在架構瀏覽器中顯示**]。
 
  ![Visual Basic XML 常值;XML 架構瀏覽器](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer1.gif "VBXMLLiteralsWithXMLSchemaExplorer1")
 

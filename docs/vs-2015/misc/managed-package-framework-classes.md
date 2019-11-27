@@ -28,7 +28,7 @@ Managed 封裝架構 (MPF) 類別可用來使用 Managed 程式碼建立 VSPacka
 ## <a name="mpf-namespaces"></a>MPF 命名空間  
  下表列出 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]所提供的 MPF 命名空間。  
   
-|命名空間|內容|  
+|命名空間|目錄|  
 |----------------|--------------|  
 |<xref:Microsoft.VisualStudio>|包含處理 COM 錯誤、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 常數和 Win32 視窗的有用類別。|  
 |<xref:Microsoft.VisualStudio.Package>|包含 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案、編輯器和 MSBuild 的 Managed 程式碼包裝函式。|  

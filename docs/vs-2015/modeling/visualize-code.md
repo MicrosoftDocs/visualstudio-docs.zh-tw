@@ -35,9 +35,9 @@ ms.locfileid: "74301319"
 
   這些工具也可協助您更輕鬆地與專案相關人員通訊。 例如，您可以使用 UML 類別圖建立常用詞彙，與專案的專案關係人、使用者和小組成員討論系統。
 
-  若要查看支援每項功能的 Visual Studio 版本，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+  若要查看支援各項功能的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
-## <a name="what-do-you-want-to-do"></a>請您指定選項。
+## <a name="what-do-you-want-to-do"></a>您想要做什麼事？
 
 |||
 |-|-|

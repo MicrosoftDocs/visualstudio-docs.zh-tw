@@ -1,5 +1,5 @@
 ---
-title: 16bpp Render Target Format Variant | Microsoft Docs
+title: 16bpp 呈現目標格式變數 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
@@ -15,35 +15,35 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188584"
 ---
-# <a name="16-bpp-render-target-format-variant"></a>16 bpp Render Target Format Variant
+# <a name="16-bpp-render-target-format-variant"></a>16 bpp 呈現目標格式變異
 將所有呈現目標和背景緩衝區的像素格式設定為 DXGI_FORMAT_B5G6R5_UNORM。
 
-## <a name="interpretation"></a>解譯
- A render target or back buffer typically uses a 32 bpp (32 bits per pixel) format such as B8G8R8A8_UNORM. 32-bpp formats can consume a large amount of memory bandwidth. Because the B5G6R5_UNORM format is a 16-bpp format that's half the size of 32-bpp formats, using it can relieve pressure on memory bandwidth, but at the cost of reduced color fidelity.
+## <a name="interpretation"></a>解讀
+ 轉譯目標或背景緩衝區通常會使用 32 bpp （每圖元32位）格式，例如 B8G8R8A8_UNORM。 32-bpp 格式可能會耗用大量的記憶體頻寬。 由於 B5G6R5_UNORM 格式是 16 bpp 格式，其大小為 32-bpp 格式的一半，因此使用它可以減輕記憶體頻寬的壓力，但代價是降低色彩精確度。
 
- 如果此變異顯示大量的效能提高，則可能表示您的應用程式耗用太多記憶體頻寬。 You can gain significant performance improvement, especially when the profiled frame had a significant amount of overdraw or alpha-blending.
+ 如果此變異顯示大量的效能提高，則可能表示您的應用程式耗用太多記憶體頻寬。 您可以大幅改善效能，尤其是當分析的框架具有大量的過度繪製或 Alpha 混合時。
 
-A 16-bpp render target format can reduce memory band with usage when your application has the following conditions:
-- Doesn't require high-fidelity color reproduction.
-- Doesn't require an alpha channel.
-- Doesn't often have smooth gradients (which are susceptible to banding artifacts under reduced color fidelity).
+當您的應用程式具有下列條件時，16 bpp 轉譯目標格式可以使用使用量來減少記憶體頻：
+- 不需要高精確度的色彩複製。
+- 不需要 Alpha 色板。
+- 通常不會有平滑的漸層（其容易受到色彩精確度降低）。
 
-Other strategies to reduce memory bandwidth include:
-- Reduce the amount of overdraw or alpha-blending.
-- Reduce the dimensions of the frame buffer.
-- Reduce dimensions of texture resources.
-- Reduce compressions of texture resources.
+降低記憶體頻寬的其他策略包括：
+- 減少過度繪製或 Alpha 混合的數量。
+- 減少框架緩衝區的維度。
+- 減少材質資源的維度。
+- 減少材質資源的壓縮。
 
 像往常一樣，您需要考慮所有這些最佳化伴隨的影像品質取捨。
 
-Applications that are a part of a swap chain have a back buffer format (DXGI_FORMAT_B5G6R5_UNORM) that doesn't support 16 bpp. These swap chains are created by using `D3D11CreateDeviceAndSwapChain` or `IDXGIFactory::CreateSwapChain`. To work around this limitation, do the following steps:
-1. Create a B5G6R5_UNORM format render target by using `CreateTexture2D` and render to that target.
-2. Copy the render target onto the swap-chain backbuffer by drawing a full-screen quad with the render target as your source texture.
-3. Call Present on your swap chain.
+屬於交換鏈之一部分的應用程式具有不支援 16 bpp 的回溯緩衝區格式（DXGI_FORMAT_B5G6R5_UNORM）。 這些交換鏈是使用 `D3D11CreateDeviceAndSwapChain` 或 `IDXGIFactory::CreateSwapChain`所建立。 若要解決這項限制，請執行下列步驟：
+1. 使用 `CreateTexture2D` 並轉譯至該目標，建立 B5G6R5_UNORM 格式呈現目標。
+2. 以轉譯目標繪製全螢幕四個作為來源材質，將呈現目標複製到交換鏈 backbuffer 上。
+3. 呼叫存在於您的交換鏈上。
 
-   If this strategy saves more bandwidth than is consumed by copying the render target to the swap-chain backbuffer, then rendering performance is improved.
+   如果此策略節省的頻寬比將轉譯目標複製到交換鏈 backbuffer 所耗用的更多，則轉譯效能也會改善。
 
-   GPU architectures that use tiled rendering techniques can see significant performance benefits by using a 16 bpp frame buffer format. This improvement is because a larger portion of the frame buffer can fit in each tile's local frame buffer cache. 並排的呈現架構有時出現在行動電話話筒和平板電腦的 GPU 中；它們很少出現在此範圍之外。
+   使用並排顯示呈現技術的 GPU 架構，可以使用 16 bpp 的框架緩衝區格式，來查看明顯的效能優勢。 這項改善是因為框架緩衝區的較大部分可以放入每個磚的本機框架緩衝區快取中。 並排的呈現架構有時出現在行動電話話筒和平板電腦的 GPU 中；它們很少出現在此範圍之外。
 
 ## <a name="remarks"></a>備註
  每次呼叫可建立呈現目標的 `ID3D11Device::CreateTexture2D` 時，都會將呈現目標格式重設為 DXGI_FORMAT_B5G6R5_UNORM。 特別是 pDesc 中所傳遞的 D3D11_TEXTURE2D_DESC 物件描述呈現目標時，會覆寫此格式；亦即：
@@ -58,7 +58,7 @@ Applications that are a part of a swap chain have a back buffer format (DXGI_FOR
  因為 B5G6R5 格式沒有 Alpha 色板，所以此變異不會保留 Alpha 內容。 如果您應用程式的呈現需要呈現目標中有 Alpha 色板，則不能只是切換至 B5G6R5 格式。
 
 ## <a name="example"></a>範例
- The **16 bpp Render Target Format** variant can be reproduced for render targets created by using `CreateTexture2D` by using code like this:
+ 您可以使用類似如下的程式碼，針對使用 `CreateTexture2D` 所建立的呈現目標，重現**16 Bpp 呈現目標格式**變異：
 
 ```cpp
 D3D11_TEXTURE2D_DESC target_description;

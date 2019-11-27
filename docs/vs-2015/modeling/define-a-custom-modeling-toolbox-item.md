@@ -23,7 +23,7 @@ ms.locfileid: "74299297"
 
 若要讓您根據常用的模式輕鬆建立項目或項目群組，您可以將新工具加入 Visual Studio 中的模型圖表工具箱。 您可以將這些工具箱項目散發給其他 Visual Studio 使用者。
 
- 若要查看哪些版本的 Visual Studio 支援此功能，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
  自訂工具會在圖表建立一或多個新項目。 例如，您可以製作自訂工具來建立項目，例如這些項目：
 
@@ -42,7 +42,7 @@ ms.locfileid: "74299297"
 
     - 這些項目彼此之間可以具有關聯性，也可以擁有子項目，例如通訊埠、屬性、作業或連接。
 
-2. 使用您要指定給新工具的名稱來儲存此圖表。 請使用 [檔案] 功能表上的 [另存為...]。
+2. 使用您要指定給新工具的名稱來儲存此圖表。 **在 [檔案**] 功能表上，使用 [**儲存 ...]As**。
 
 3. 使用 Windows 檔案總管將這兩個圖表檔複製到下列資料夾或任何子資料夾：
 
@@ -129,14 +129,14 @@ ms.locfileid: "74299297"
 |---------------|-------------|
 |displayName|此工具箱項目的名稱。|
 |tabName|工作箱索引標籤，其中應顯示該項目。 您可以針對這類圖表指定一般索引標籤的名稱，或是不同的名稱。|
-|影像|點陣圖（ **.bmp**）檔案的位置，其高度和寬度必須為16，而色彩深度為24位。|
+|image|點陣圖（ **.bmp**）檔案的位置，其高度和寬度必須為16，而色彩深度為24位。|
 |f1Keyword|尋找說明主題的關鍵字。|
-|工具提示|此工具的工具提示。|
+|tooltip (工具提示)|此工具的工具提示。|
 
  您可以在 Visual Studio 中編輯此點陣圖檔，並且在 [屬性] 視窗中將其高度和寬度設定為 16。
 
 > [!NOTE]
-> 如果您嘗試單獨使用圖表檔之後開始使用 .tbxinfo 檔，可能會發現該工具箱內同時包含舊版和新版的工具箱項目。 如果此 .tbxinfo 檔中圖表檔的名稱輸入錯誤，也會發生這種情況。 如果發生這種情況，請在該工具箱的捷徑功能表中選擇 [重設工具箱]。 自訂的工具箱項目將會消失。 重新啟動 Visual Studio，然後正確的自訂項目將會出現。
+> 如果您嘗試單獨使用圖表檔之後開始使用 .tbxinfo 檔，可能會發現該工具箱內同時包含舊版和新版的工具箱項目。 如果此 .tbxinfo 檔中圖表檔的名稱輸入錯誤，也會發生這種情況。 如果發生這種情況，請在 [工具箱] 的快捷方式功能表上選擇 [**重設工具箱**]。 自訂的工具箱項目將會消失。 重新啟動 Visual Studio，然後正確的自訂項目將會出現。
 
 ## <a name="Extension"></a>如何散發 Visual Studio 延伸模組中的工具箱專案
  您可以將工具箱專案封裝成 Visual Studio 延伸模組（VSIX），以將它們散發給其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用者。 您可以將命令、設定檔和其他擴充功能封裝到同一個 VSIX 檔。 如需詳細資訊，請參閱[部署 Visual Studio 延伸](https://go.microsoft.com/fwlink/?LinkId=160780)模組。
@@ -147,7 +147,7 @@ ms.locfileid: "74299297"
 
 1. [建立及測試一或多個自訂工具](#DefineTool)。
 
-2. [建立 .tbxinfo 檔](#tbxinfo)，該檔案會參考此工具。
+2. [建立](#tbxinfo)參考工具的 .tbxinfo 檔案。
 
 3. 開啟現有的 Visual Studio 擴充功能專案。
 
@@ -155,13 +155,13 @@ ms.locfileid: "74299297"
 
      定義新的 Visual Studio 擴充功能專案。
 
-    1. 在 [檔案] 功能表上，依序選擇 [新增] 和 [專案]。
+    1. 在 [檔案] 功能表，選擇 [新增]、[專案]。
 
-    2. 在 [新增專案] 對話方塊中的 [已安裝的範本] 底下，選擇 [Visual C#]、[擴充性]、[VSIX 專案]。
+    2. 在 [**新增專案**] 對話方塊的 [**已安裝的範本**] 底下，選擇 [**視覺效果C#**  **、擴充性、** **VSIX 專案**]。
 
 4. 將您的工具箱定義加入此專案。 包含 **.tbxinfo**檔案、圖表檔案、點陣圖檔案和任何資源檔，並確定這些檔案已包含在 VSIX 中。
 
-    - 在 [方案總管] 中的 VSIX 專案捷徑功能表上，選擇 [加入]、[現有項目]。 在此對話方塊中，設定 [類型的物件: 所有檔案]。 尋找此檔案，將它們全部選取，然後選擇 [加入]。
+    - 在方案總管中，在 VSIX 專案的快捷方式功能表上，選擇 [**加入**]、[**現有專案**]。 在對話方塊中，設定 [**下列類型的物件：所有**檔案]。 找出檔案，選取 [全部]，然後選擇 [**新增**]。
 
         > [!NOTE]
         > 在此專案中，您無法在此模型編輯器開啟該圖表檔。
@@ -176,9 +176,9 @@ ms.locfileid: "74299297"
 
 6. 開啟 **source.extension.vsixmanifest**。 它會在擴充功能資訊清單編輯器中開啟。
 
-7. 請在 [中繼資料] 下，加入此自訂工具的描述。
+7. 在 [**中繼資料**] 底下，新增自訂工具的描述。
 
-     在 [資產] 底下，選擇 [新增]，然後設定此對話方塊中的欄位如下：
+     在 [**資產**] 下，選擇 [**新增**]，然後在對話方塊中設定欄位，如下所示：
 
     - **輸入** = **自訂延伸模組類型**
 
@@ -203,9 +203,9 @@ ms.locfileid: "74299297"
 
 1. 在 Windows 檔案總管或 Visual Studio 中開啟此 `.vsix` 檔案。
 
-2. 在出現的對話方塊中選擇 [安裝]。
+2. 在出現的對話方塊中選擇 [**安裝**]。
 
-3. 若要解除安裝或暫時停用此擴充功能，請從 [工具] 功能表開啟 [擴充功能和更新]。
+3. 若要卸載或暫時停用擴充功能，請從 [**工具**] 功能表開啟 [**擴充功能和更新**]。
 
 ## <a name="localization"></a>當地語系化
  您可以讓擴充功能安裝在另一部電腦上時，以目標電腦的語言顯示工具名稱和工具提示。
@@ -231,7 +231,7 @@ ms.locfileid: "74299297"
 ## <a name="other-toolbox-operations"></a>其他工具箱作業
  通常在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 中，您可以重新命名工具、移動到不同的工具箱索引標籤和刪除工具，藉此個人化此工具箱。 但是，對於以本主題描述的程序所建立的自訂模型工具，並不會保存這些變更。 當您重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 時，自訂工具將以其定義的名稱和工具箱位置再次出現。
 
- 除此之外，如果您執行 [重設工具箱] 命令，自訂工具將會消失。 不過，在您重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 之後，這些工具將再次出現。
+ 此外，如果您執行 [**重設工具箱**] 命令，您的自訂工具將會消失。 不過，在您重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 之後，這些工具將再次出現。
 
 ## <a name="see-also"></a>另請參閱
  [擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[定義設定檔以擴充 uml](../modeling/define-a-profile-to-extend-uml.md) [在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)[定義 uml 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)

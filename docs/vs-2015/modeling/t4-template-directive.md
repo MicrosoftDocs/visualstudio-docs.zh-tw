@@ -45,7 +45,7 @@ ms.locfileid: "74298143"
 
  有效值： ""，不因文化特性而異，這是預設值。
 
- 以 xx-XX 字串形式表示的文化特性。 例如，en-US、ja-JP、de-CH、de-DE。 如需詳細資訊，請參閱<xref:System.Globalization.CultureInfo?displayProperty=fullName>。
+ 以 xx-XX 字串形式表示的文化特性。 例如，en-US、ja-JP、de-CH、de-DE。 如需詳細資訊，請參閱 <xref:System.Globalization.CultureInfo?displayProperty=fullName>。
 
  culture 屬性會指定當運算式區塊轉換為文字時所要使用的文化特性。
 
@@ -62,7 +62,7 @@ debug="true"
 
  針對設計階段範本，中繼程式碼檔案會寫入您的 **% TEMP%** 目錄。
 
- 若要執行偵錯工具的設計階段範本，請儲存文字範本，然後在 [方案總管] 中開啟文字範本的捷徑功能表，並選擇 [**偵錯 T4 範本**]。
+ 若要在偵錯工具中執行設計階段範本，請儲存文字模板，然後在方案總管中開啟文字模板的快捷方式功能表，然後選擇 [ **Debug T4 template**]。
 
 ## <a name="hostspecific-attribute"></a>hostspecific 屬性
  範例：
@@ -75,7 +75,7 @@ hostspecific="true"
 
  如果您將這個屬性值設定為 `true`，就會有名為 `Host` 的屬性加入至文字範本所產生的類別中。 屬性是轉換引擎主控制項的參考，而且會宣告為[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。 如果您定義了自訂主應用程式，則可以將它轉換為自訂主應用程式類型。
 
- 由於這個屬性的類型依主應用程式的類型而定，因此只有在撰寫僅限搭配特定主應用程式使用的文字範本時才有用處。 它適用於[設計階段範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不適用於[執行階段範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ 由於這個屬性的類型依主應用程式的類型而定，因此只有在撰寫僅限搭配特定主應用程式使用的文字範本時才有用處。 它適用于[設計階段範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不適用於[執行時間範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
  當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如：
 

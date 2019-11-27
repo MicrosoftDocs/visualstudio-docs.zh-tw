@@ -47,7 +47,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
   
  **Events** 選項了解下列核心關鍵字作為提供者名稱：  
   
- **處理序**  
+ **Process**  
  處理序事件  
   
  **Thread**  

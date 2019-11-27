@@ -374,12 +374,12 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 
 |功能|Windows 市集應用程式|Windows Phone 應用程式|
 |-------------|------------------------|------------------------|
-|執行測試的目標|本機或遠端電腦。 當您使用自動化測試案例執行測試時，可指定遠端電腦。 請參閱[在 Microsoft Test Manager 中自動化測試案例](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42)。|模擬器或裝置。 請參閱本主題中的 [問：我只能在模擬器上執行測試，還是也可以使用實體裝置？](#TestingPhoneAppsCodedUI_EmulatorDevice)|
+|執行測試的目標|本機或遠端電腦。 當您使用自動化測試案例執行測試時，可指定遠端電腦。 請參閱 [在 Microsoft Test Manager 中自動化測試案例](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42)。|模擬器或裝置。 請參閱本主題中的 [問：我只能在模擬器上執行測試，還是也可以使用實體裝置？](#TestingPhoneAppsCodedUI_EmulatorDevice)|
 |從命令列執行|不需要使用設定檔案來指定目標。|不需要使用 Runsettings 檔案來指定目標。|
 |殼層控制項的特製化類別|[DirectUIControl](/previous-versions/dn248208(v=vs.140))|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|
 |XAML 應用程式中的 WebView 控制項|如果使用 Html* 特製化類別與 HTML 項目互動，則支援。 請參閱<xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|不支援。|
-|從 MTM 執行自動化測試|支援。|不支援。|
-|資料驅動型測試|如需使用外部資料來源及使用測試方法上之 DataSource 屬性的相關資訊，請參閱[資料驅動型測試](../test/creating-a-data-driven-coded-ui-test.md)。|使用測試方法上的 DataRow 屬性以內嵌方式指定資料。 請參閱本主題中的 [在 Windows Phone 應用程式上使用資料驅動型自動程式碼 UI 測試](#TestingPhoneAppsCodedUI_DataDriven) 。|
+|從 MTM 執行自動化測試|支援：|不支援。|
+|資料驅動型測試|如需使用外部資料來源及使用測試方法上之 DataSource 屬性的相關資訊，請參閱 [資料驅動型測試](../test/creating-a-data-driven-coded-ui-test.md) 。|使用測試方法上的 DataRow 屬性以內嵌方式指定資料。 請參閱本主題中的 [在 Windows Phone 應用程式上使用資料驅動型自動程式碼 UI 測試](#TestingPhoneAppsCodedUI_DataDriven) 。|
 
 ## <a name="external-resources"></a>外部資源
  Microsoft Visual Studio 應用程式生命週期管理部落格： [使用自動程式碼 UI 來測試以 XAML 為基礎的 Windows Phone 應用程式](https://devblogs.microsoft.com/devops/using-coded-ui-to-test-xaml-based-windows-phone-apps/#comments)

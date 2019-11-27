@@ -23,7 +23,7 @@ ms.locfileid: "74302953"
 # <a name="legacy-workflow-activities"></a>舊版工作流程活動
 [!INCLUDE[wf](../includes/wf-md.md)] 包含一組預設的活動，可提供控制流程、條件、事件處理、狀態管理，以及與應用程式和服務進行通訊的功能。 設計工作流程時，您可以使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 系統提供的活動，或者建立自訂活動。
 
- 下表列出 [!INCLUDE[wf2](../includes/wf2-md.md)] 架構全新的活動集。 許多 (但非全部) 活動都是由活動設計工具所表示，這些工具可以從  **的 [** 工具箱[!INCLUDE[wfd2](../includes/wfd2-md.md)]] 存取。 若要建立活動，請將它的設計工具從 [**工具箱**] 拖放到設計介面上。
+ 下表列出 [!INCLUDE[wf2](../includes/wf2-md.md)] 架構全新的活動集。 這些活動的許多（但非全部）都是由活動設計工具所表示，可以從 [!INCLUDE[wfd2](../includes/wfd2-md.md)]的 [**工具箱**] 存取。 若要建立活動，請將它的設計**工具**從 [工具箱] 拖曳到設計介面上。
 
 |活動|描述|
 |--------------|-----------------|
@@ -59,7 +59,7 @@ ms.locfileid: "74302953"
 |[SynchronizationScopeActivity](https://go.microsoft.com/fwlink?LinkID=65057)|在同步化領域中循序執行所包含的活動。 [使用 SynchronizationScopeActivity 活動](https://go.microsoft.com/fwlink?LinkID=65085)[!INCLUDE[crdefault](../includes/crdefault-md.md)]。|
 |[TerminateActivity](https://go.microsoft.com/fwlink?LinkID=65058)|讓您能夠在發生錯誤狀況時立即結束工作流程的作業。 [使用 TerminateActivity 活動](https://go.microsoft.com/fwlink?LinkID=65086)[!INCLUDE[crdefault](../includes/crdefault-md.md)]。|
 |[ThrowActivity](https://go.microsoft.com/fwlink?LinkID=65059)|讓您能夠擷取擲回的商務例外狀況，做為工作流程其中繼資料程序的一部分。 [使用 ThrowActivity 活動](https://go.microsoft.com/fwlink?LinkID=65087)[!INCLUDE[crdefault](../includes/crdefault-md.md)]。|
-|[TransactionScopeActivity](https://go.microsoft.com/fwlink?LinkID=65093)|提供交易和例外狀況處理的架構。 如需詳細資訊，請參閱[使用 TransactionScopeActivity 活動](https://go.microsoft.com/fwlink?LinkID=65088)。|
+|[TransactionScopeActivity](https://go.microsoft.com/fwlink?LinkID=65093)|提供交易和例外處理的架構。 如需詳細資訊，請參閱[使用 TransactionScopeActivity 活動](https://go.microsoft.com/fwlink?LinkID=65088)。|
 |[WebServiceFaultActivity](https://go.microsoft.com/fwlink?LinkID=65046)|讓您將 Web 服務錯誤的發生頻率製成模型。 [使用 WebServiceFaultActivity 活動](https://go.microsoft.com/fwlink?LinkID=65089)[!INCLUDE[crdefault](../includes/crdefault-md.md)]。|
 |[WebServiceInputActivity](https://go.microsoft.com/fwlink?LinkID=65047)|從 Web 服務接收資料。 [使用 WebServiceInputActivity 活動](https://go.microsoft.com/fwlink?LinkID=65090)[!INCLUDE[crdefault](../includes/crdefault-md.md)]。|
 |[WebServiceOutputActivity](https://go.microsoft.com/fwlink?LinkID=65048)|回應對工作流程提出的 Web 服務要求。 [使用 WebServiceOutputActivity 活動](https://go.microsoft.com/fwlink?LinkID=65092)[!INCLUDE[crdefault](../includes/crdefault-md.md)]。|

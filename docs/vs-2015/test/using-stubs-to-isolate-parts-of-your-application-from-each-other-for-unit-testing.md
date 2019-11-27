@@ -15,10 +15,10 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301394"
 ---
-# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用虛設常式隔離應用程式的各個組件，方便進行單元測試
+# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用 Stub 來隔離應用程式的各個部分以便進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-「虛設常式類型」*是 Microsoft Fakes Famework 提供的兩項技術之一，可讓您輕鬆地隔離測試中元件與它所呼叫的其他元件。 虛設常式是在測試期間取代另一個元件的一小段程式碼。 使用虛設常式的優點是它會傳回一致的結果，讓測試更容易撰寫。 即使其他元件還無法運作，您仍然可以執行測試。
+「虛設常式類型」*是 Microsoft Fakes Famework 提供的兩項技術之一，可讓您輕鬆地隔離測試中元件與它所呼叫的其他元件。 Stub 是在測試期間取代其他元件的一小段程式碼。 使用 stub 的好處就是可傳回一致的結果，讓測試更容易撰寫。 即使其他元件還無法運作，您仍然可以執行測試。
 
  如需 Fakes 的概觀和快速入門指南，請參閱[使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "74301394"
 
  因為您必須能夠利用這種方式建構程式碼才能使用虛設常式，因此通常可以使用虛設常式隔離應用程式中不同的部分。 為了隔離虛設常式與您無法控制的其他組件 (例如 System.dll)，通常會使用填充碼。 請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。
 
- **需求**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -155,7 +155,7 @@ analyzer = new StockAnalyzer(new StockFeed())
 
 1. 在方案總管中，展開單元測試專案的 [參考]。
 
-    - 如果您在 Visual Basic 中工作，必須先選取 [方案總管] 工具列中的 [**顯示所有檔案**]，才能看見 [參考] 清單。
+    - 如果您在 Visual Basic 中工作，必須先選取方案總管工具列中的 [顯示所有檔案]，才能看見 [參考] 清單。
 
 2. 選取包含您要用於建立虛設常式之介面定義的組件。
 

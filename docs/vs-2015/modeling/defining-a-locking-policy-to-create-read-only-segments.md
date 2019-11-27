@@ -81,12 +81,12 @@ partition.SetLocks(Locks.Delete);
 |-----------|------------------------------------------|
 |無|無限制。|
 |屬性|無法變更元素的網域屬性。 這不適用於關聯性中網域類別的角色所產生的屬性。|
-|新增|無法在資料分割或存放區中建立新的元素和連結。<br /><br /> 不適用於 `ModelElement`。|
-|Move|如果 `element.IsLocked(Move)` 為 true，或 `targetPartition.IsLocked(Move)` 為 true，則無法在分割區之間移動元素。|
+|Add|無法在資料分割或存放區中建立新的元素和連結。<br /><br /> 不適用於 `ModelElement`。|
+|移動|如果 `element.IsLocked(Move)` 為 true，或 `targetPartition.IsLocked(Move)` 為 true，則無法在分割區之間移動元素。|
 |刪除|如果已在專案本身上設定此鎖定，或在任何要傳播刪除的專案上（例如內嵌專案和圖形），則無法刪除元素。<br /><br /> 您可以使用 `element.CanDelete()` 來探索是否可以刪除元素。|
 |重新排列|無法變更 roleplayer 的連結順序。|
 |RolePlayer|無法變更來源為此元素的連結集合。 例如，新的專案無法內嵌在此元素底下。 這不會影響此元素為目標的連結。<br /><br /> 如果這個元素是連結，其來源和目標不會受到影響。|
-|全部：|其他值的位 OR。|
+|全部|其他值的位 OR。|
 
 ## <a name="locking-policies"></a>鎖定原則
  身為 DSL 的作者，您可以定義*鎖定原則*。 鎖定原則會審核 SetLocks （）的作業，因此您可以防止設定特定鎖定或強制設定特定鎖定。 一般來說，您會使用鎖定原則來防止使用者或開發人員不小心 contravening 使用的 DSL，如同您可以 `private`宣告變數的方式一樣。

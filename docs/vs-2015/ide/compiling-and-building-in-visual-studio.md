@@ -32,7 +32,7 @@ ms.locfileid: "74300260"
 |建置方法|優點|詳細資訊|
 |------------------|--------------|--------------------------|
 |使用 IDE|- 您可以更輕鬆地立即建立和執行組建。<br />- 您可以針對 C++ 和 C# 專案執行多處理器組建。<br />- 您可以自訂建置系統的某些層面。|[在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|
-|執行 MSBuild 命令列|- 您可以建置專案，而不需要安裝 Visual Studio。<br />- 您可以針對所有專案類型執行多處理器組建。<br />- 您可以自訂大部分的建置系統。|[MSBuild](../msbuild/msbuild.md)|
+|執行 MSBuild 命令列|- 您可以建置專案，而不需要安裝 Visual Studio。<br />- 您可以針對所有專案類型執行多處理器組建。<br />- 您可以自訂大部分的建置系統。|[ MSBuild](../msbuild/msbuild.md)|
 |使用 Team Foundation Build|-  您可以自動化您的建置流程。 例如，您可以每晚或在每次簽入程式碼時建置一或多個專案。 您也可以在共用的組置伺服器上建置專案，而不是在開發電腦上建置。<br />- 您可以快速指定您想要建置的程式碼、想要執行的測試，和其他常見的選項。<br />- 您可以修改建置工作流程，並視需要建立建置活動執行深入自訂的工作。|[建置應用程式](/azure/devops/pipelines/index)|
 
 ## <a name="building-from-the-ide"></a>從 IDE 建置

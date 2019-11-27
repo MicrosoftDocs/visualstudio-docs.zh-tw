@@ -46,15 +46,15 @@ ms.locfileid: "74295739"
 
      ![顯示 TableLayoutPanel 控制項的屬性視窗](../ide/media/express-controlspropwin.png "Express_ControlsPropWin")顯示 TableLayoutPanel 控制項的屬性視窗
 
-5. 在 [**屬性**] 視窗的工具列上選擇 [**字母順序**] 按鈕。 這會造成 [**屬性**] 視窗中的屬性清單以字母順序顯示，可讓您輕鬆地找到本教學課程中的屬性。
+5. 在 [屬性] 視窗的工具列上，選擇 [字母順序] 按鈕。 這會造成 [屬性] 視窗中的屬性清單以字母順序顯示，可讓您輕鬆地找到本教學課程中的屬性。
 
 6. 控制項選取器是 [屬性] 視窗頂端的下拉式清單。 在此範例中，它顯示已選取一個稱為 `tableLayoutPanel1` 的控制項。 您可以從 [Windows Form 設計工具] 或從控制項選取器中選擇區域，以選取控制項。 現在已選取 `TableLayoutPanel`，請尋找 **Dock** 屬性並選擇 [停駐]，此屬性應該設定為 [無]。 請注意，值旁邊會出現下拉箭號。 選擇箭號，然後選取 [填滿] 按鈕 (中間的大型按鈕)，如下圖所示。
 
      已![選取填滿的屬性視窗](../ide/media/express-docktable.png "Express_DockTable")已選取填滿的屬性視窗
 
-     Visual Studio 中的「停駐」是指在 IDE 中，將視窗附加至另一個視窗或區域。 例如，[屬性] 視窗可以浮動，也就是未連接，可在 Visual Studio 內自由浮動，也可以固定於 [**方案總管**]。
+     Visual Studio 中的「停駐」是指在 IDE 中，將視窗附加至另一個視窗或區域。 例如，[屬性] 視窗可以取消停駐 (也就是未附加，可在 Visual Studio 內自由浮動)，也可以固定於 [方案總管] 中。
 
-7. 將 TableLayoutPanel [**Dock**] 屬性設定為 [**Fill**] 之後，面板會填滿整個表單。 如果您再次調整表單的大小，TableLayoutPanel 會停駐不動，並調整大小來填滿表單。
+7. 將 TableLayoutPanel **Dock** 屬性設定為 [Fill] 之後，面板會填滿整個表單。 如果您再次調整表單的大小，TableLayoutPanel 會停駐不動，並調整大小來填滿表單。
 
     > [!NOTE]
     > TableLayoutPanel 就像 Microsoft Office Word 中的表格 (具有列和欄)，且單一儲存格可以跨越多個列和欄。 每一個儲存格中放置一個控制項 (例如按鈕、核取方塊或標籤)。 您的 TableLayoutPanel 將具有一個橫跨整個上方資料列的 `PictureBox` 控制項、在左下方儲存格有一個 `CheckBox` 控制項，以及在右下方儲存格中則有四個 `Button` 控制項。

@@ -57,11 +57,11 @@ ms.locfileid: "74298049"
 
  自訂元件的完整清單如下所示：
 
-|功能集|元件|
+|功能集|Components|
 |------------------|----------------|
 |**更新**|Visual Studio 2015 Update 3|
 |**程式語言**|Visual C++<br />Visual F#<br />Python Tools for Visual Studio|
-|**Windows 和 Web 開發**|ClickOnce 發行工具<br />LightSwitch<br />Microsoft Office Developer Tools<br />Microsoft SQL Server Data Tools<br /> Microsoft Web 開發人員工具<br />PowerShell Tools for Visual Studio （協力廠商）<br />Silverlight 開發套件<br />通用 Windows App 開發工具<br />Windows 10 工具和 SDK<br />Windows 8.1 和 Windows Phone 8.0 工具<br />Windows 8.1 工具和 SDK|
+|**Windows 和 Web 開發**|ClickOnce 發行工具<br />LightSwitch<br />Microsoft Office Developer Tools<br />Microsoft SQL Server Data Tools<br /> Microsoft Web Developer 工具<br />PowerShell Tools for Visual Studio （協力廠商）<br />Silverlight 開發套件<br />通用 Windows 應用程式開發工具<br />Windows 10 工具和 SDK<br />Windows 8.1 及 Windows Phone 8.0/8.1 工具<br />Windows 8.1 工具和 SDK|
 |**跨平台行動開發**|C#/.NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />適用於 iOS / Android 的 Visual C++ 行動開發<br />Clang with Microsoft CodeGen|
 |**一般工具和軟體發展工具組**|Android 原生開發工具組（協力廠商）<br /> Android SDK [協力廠商]<br />Android SDK 安裝程式 Api （協力廠商）<br />Apache Ant （協力廠商）<br /> JAVA SE 開發套件（協力廠商）<br /> Joyent node.js （協力廠商）|
 |**通用工具**|適用于 Windows 的 Git （協力廠商）<br />適用于 Visual Studio 的 GitHub 延伸模組（協力廠商）<br /> Visual Studio 擴充性工具|
@@ -78,7 +78,7 @@ ms.locfileid: "74298049"
 |--------------------------------------|----------------|
 |備份檔案和目錄|SeBackupPrivilege|
 |偵錯程式|SeDebugPrivilege|
-|管理稽核和安全性記錄檔|SeSecurityPrivilege|
+|管理稽核及安全性記錄|SeSecurityPrivilege|
 
  如需本機系統管理員帳戶需求的詳細資訊，請參閱知識庫文件 [如果安裝帳戶並沒有特定使用者權限，SQL Server 安裝會失敗](https://support.microsoft.com/kb/2000257)。
 
@@ -119,7 +119,7 @@ ms.locfileid: "74298049"
 
 #### <a name="to-install-optional-components"></a>若要安裝選用元件
 
-1. 在 [控制台] 的 [程式和功能] 頁面上，選擇要在其中加入一個或多個元件的產品版本，然後選擇 [變更]。
+1. 在 [控制台]的 [程式和功能] 頁面上，選擇要在其中加入一個或多個元件的產品版本，然後選擇 [變更]。
 
 2. 在安裝精靈中，選擇 [修改]，然後選擇您要安裝的元件。
 
@@ -132,7 +132,7 @@ ms.locfileid: "74298049"
 
 1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 功能表列上，依序選擇 [說明]、[加入和移除說明內容]。
 
-2. 在 [Microsoft Help Viewer] 的 [管理內容] 索引標籤上，選取適用於您說明內容的安裝來源。
+2. 在 [Microsoft 說明檢視器] 的 [管理內容]索引標籤上，選取適用於您說明內容的安裝來源。
 
 3. 如果您要尋找特定的說明集合，請在 [搜尋] 文字方塊中輸入名稱或關鍵字，然後按 **Enter**。
 
@@ -147,7 +147,7 @@ ms.locfileid: "74298049"
 
 #### <a name="to-automatically-check-for-service-releases"></a>自動檢查版本更新服務
 
-1. 在功能表列上選擇 [**工具**]、[**選項**]。
+1. 在功能表列上選擇 [工具]、[選項]。
 
 2. 在 [選項] 對話方塊中，展開 [環境]，然後選取 [擴充功能和更新]。 確定已選取 [自動檢查更新] 核取方塊，然後選擇 [確定]。
 
@@ -163,7 +163,7 @@ ms.locfileid: "74298049"
 
 #### <a name="to-repair-visual-studio"></a>若要修復 Visual Studio
 
-1. 在 [控制台] 的 [程式和功能] 頁面上，選取要修復的產品版本，然後選擇 [變更]。
+1. 在 [控制台]的 [程式和功能] 頁面上，選取要修復的產品版本，然後選擇 [變更]。
 
 2. 在安裝精靈中，依序選擇 [修復]、[下一步]，然後依照其餘指示進行。
 

@@ -110,11 +110,11 @@ ms.locfileid: "74300564"
   
     如果您是在遠端伺服器上執行遠端偵錯程式，您可以用滑鼠右鍵按一下 [遠端偵錯程式] 應用程式，然後選擇 [**以系統管理員身分執行**] （或者，您可以將遠端偵錯程式當做服務執行）。如果您不是在遠端伺服器上執行，只要正常啟動就可以了。
   
-2. 當您第一次啟動遠端工具 (或在設定之前)，[遠端偵錯組態] 對話方塊隨即出現。  
+2. 當您第一次啟動遠端工具（或設定之前）時，[**遠端偵錯**程式設定 dalog] 方塊隨即出現。  
   
     ![RemoteDebuggerConfWizardPage](../debugger/media/remotedebuggerconfwizardpage.png "RemoteDebuggerConfWizardPage")  
   
-3. 如果沒有安裝 Windows 服務應用程式開發介面 (只有在 Windows Server 2008 R2 上才會發生這種情況)，請選擇 [安裝] 按鈕。  
+3. 如果未安裝 Windows 服務 API （這只會發生在 Windows Server 2008 R2），請選擇 [**安裝**] 按鈕。  
   
 4. 選取您想要在遠端工具上使用的網路類型。 必須至少選取一種網路類型。 如果此電腦經由網域連線，您就必須選擇第一個項目。 如果此電腦經由工作群組或家用群組連線，您就需要視情況選擇第二個或第三個項目。  
   
@@ -126,14 +126,14 @@ ms.locfileid: "74300564"
   
     遠端偵錯程式現在正在等候連接。 記下所顯示的伺服器名稱和埠號碼，因為您稍後將會用到 Visual Studio 中的設定。  
   
-   當您完成偵錯工具並需要停止遠端偵錯程式時，請按一下視窗上的 [檔案] **/** [結束]。 您可以從 [開始] 功能表或從命令列將其重新啟動：  
+   當您完成偵錯工具並需要停止遠端偵錯程式時，請按一下視窗上的 [檔案] **/** [結束]。 您可以從 [**開始**] 功能表或從命令列重新開機它：  
   
    **\<Visual Studio 安裝目錄 > \Common7\IDE\Remote 偵錯工具\\< x86、x64 或 Appx\msvsmon.exe**。  
   
 ## <a name="configure-the-remote-debugger"></a>設定遠端偵錯工具  
  在您第一次啟動遠端偵錯工具後，可以變更其組態的某些部分。
   
-- 若要讓其他使用者能夠連線到遠端偵錯工具，請選擇 [工具] / [權限]。 您必須具有系統管理員權限才能授與或拒絕使用權限。
+- 若要讓其他使用者能夠連線到遠端偵錯程式，請選擇 [**工具]/[許可權**]。 您必須具有系統管理員權限才能授與或拒絕使用權限。
 
   > [!IMPORTANT]
   > 您可以在與 Visual Studio 電腦上使用的使用者帳戶不同的使用者帳戶下執行遠端偵錯程式，但必須將不同的使用者帳戶新增至遠端偵錯程式的許可權。 
@@ -166,7 +166,7 @@ ms.locfileid: "74300564"
   
 6. 如果可以啟動服務，您就會看到 [您已順利完成 Visual Studio 遠端偵錯工具組態精靈]。 如果無法啟動服務，您就會看到 [無法完成 Visual Studio 遠端偵錯工具組態精靈]。 此頁面也會提供啟動服務所需遵循的一些祕訣。  
   
-7. 按一下 [完成]。  
+7. 按一下 **[完成]** 。  
   
    此時 [遠端偵錯工具] 會以服務方式執行。 您可以前往 [控制台] / [服務] ，然後尋找 [Visual Studio 2015 遠端偵錯工具]。  
   
@@ -210,7 +210,7 @@ ms.locfileid: "74300564"
   
     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
-8. 開始偵錯 ([偵錯] / [開始偵錯]，或 **F5**)。  
+8. 開始調試（**Debug/Start 調試**，或**F5**）。  
   
 9. 可執行檔會自動部署到遠端電腦。  
   
@@ -280,7 +280,7 @@ ms.locfileid: "74300564"
   
  從 Visual Studio 2013 Update 2 開始，您可以使用下列的 msvsmon 命令列參數，以便在 Managed 程式碼中使用遠端符號：`Msvsmon / /FallbackLoadRemoteManagedPdbs`  
   
- 如需詳細資訊，請參閱遠端偵錯的說明 (在 [遠端偵錯工具] 視窗中按 **F1**，或按一下 [協助] / [使用量])。 如需詳細資訊，請參閱 [Visual Studio 2012 和 2013 中的 .NET 遠端符號載入變更](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)  
+ 如需詳細資訊，請參閱遠端偵錯程式說明（在遠端偵錯程式視窗中按**F1** ，或按一下 [說明] **/[使用**方式]）。 如需詳細資訊，請參閱 [Visual Studio 2012 和 2013 中的 .NET 遠端符號載入變更](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)  
   
 ## <a name="bkmk_winstoreAzure"></a>在 Windows Store 和 Azure 應用程式上進行遠端偵錯  
  如需有關使用 Windows Store 應用程式進行遠端檢查的詳細資訊，請參閱[從 Visual Studio 在遠端裝置上進行偵錯工具和測試 Windows 儲存應用程式](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx)。  

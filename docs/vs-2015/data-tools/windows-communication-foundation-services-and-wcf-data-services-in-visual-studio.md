@@ -238,7 +238,7 @@ Visual Studio 提供使用 Windows Communication Foundation （WCF）和 [!INCLU
 |[逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|提供逐步示範如何在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中建立和使用 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]。|
 |[使用 WCF 開發工具](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|討論如何在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中建立和測試 WCF 服務。|
 |[如何：加入、更新或移除服務參考](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|描述如何新增、更新或移除專案中的 WCF 服務。|
-|[如何：加入、更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|討論如何參考和使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中的 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]。|
+|[如何：新增、更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|討論如何參考和使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中的 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]。|
 |[服務參考的疑難排解](../data-tools/troubleshooting-service-references.md)|提供服務參考時可能發生的一些常見錯誤，以及如何預防它們。|
 |[偵錯 WCF 服務](../debugger/debugging-wcf-services.md)|說明您在對 WCF 服務進行調試時可能會遇到的常見調試問題和技巧。|
 |[Windows Communication Foundation Authentication 服務總覽](https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|描述如何使用 WCF 來提供網站的角色服務。|

@@ -18,7 +18,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74296842"
 ---
-# <a name="visual-studio-samples"></a>Visual Studio Samples
+# <a name="visual-studio-samples"></a>Visual Studio 範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在 [MSDN Code Gallery](https://go.microsoft.com/fwlink/?LinkID=127810) 網站找到 Visual Studio 範例。

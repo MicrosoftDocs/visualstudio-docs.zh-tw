@@ -26,7 +26,7 @@ ms.locfileid: "74299485"
 # <a name="create-custom-views-of-native-objects"></a>建立原生物件的自訂檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio Natvis 架構可讓您自訂 Visual Studio 在偵錯工具變數視窗 (例如 [監看式]、[區域變數] 和[資料提示] 視窗) 中顯示原生類型的方式。  
+Visual Studio Natvis 架構可讓您自訂 Visual Studio 在偵錯工具變數視窗 (例如 [監看式]、[區域變數]和[資料提示] 視窗) 中顯示原生類型的方式。  
 
  Natvis 會取代舊版 Visual Studio 使用的 **autoexp.dat** 檔案，並提供 XML 語法、更佳診斷、版本設定和多重檔案支援。  
 
@@ -109,7 +109,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 在偵錯工具變數�
 
 - Natvis 運算式是在正在視覺化之物件的內容 (而非目前的堆疊框架) 中進行評估。 例如，如果您在 Natvis 運算式中使用 `x` ，其指的是正在視覺化的物件中名為 `x` 的欄位，而不是目前執行函式中名為 `x` 的區域變數。 您無法存取 Natvis 運算式中的區域變數，但可存取全域變數。  
 
-- Natvis 運算式不允許函式評估或副作用。 這表示已忽略函式呼叫和指派運算子。 由於[偵錯工具內建函式](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state)沒有副作用，因此可自由地從任何 Natvis 運算式加以呼叫，即使不允許其他函式呼叫亦然。  
+- Natvis 運算式不允許函式評估或副作用。 這表示已忽略函式呼叫和指派運算子。 由於 [偵錯工具內建函式](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) 沒有副作用，因此可自由地從任何 Natvis 運算式加以呼叫，即使不允許其他函式呼叫亦然。  
 
   若要控制運算式在變數視窗中的顯示方式，您可以使用主題中[格式C++ ](../debugger/format-specifiers-in-cpp.md)規範的[格式](../debugger/format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers)規範一節中所述的任何格式規範。 請注意，Natvis 會在內部使用虛擬化專案時，忽略格式規範，例如 ArrayItems 擴充中的 `Size` 運算式。  
 
@@ -336,7 +336,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 在偵錯工具變數�
  ![使用 StringView 視覺化 CStringT 資料](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
-> 請注意，運算式 `{m_pszData,su}` 包含 C++ 格式規範 `su` 來以 Unicode 字串顯示值。 如需詳細資訊，請參閱 [C++ 中的格式規範](../debugger/format-specifiers-in-cpp.md)。  
+> 請注意，運算式 `{m_pszData,su}` 包含 C++ 格式規範 `su` 來以 Unicode 字串顯示值。 如需詳細資訊，請參閱 [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) 。  
 
 ### <a name="BKMK_Expand"></a> Expand  
  當使用者在變數視窗中展開時，可使用 `Expand` 節點自訂視覺化類型的子系。 它接受定義子項目的子節點清單。  
@@ -445,7 +445,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 在偵錯工具變數�
 
  您現在可以使用 `[]` 運算子搭配 `IndexListItems` 擴充，例如 `vector[i]`。 `[]` 運算子可用於將使用 `ArrayItems` 或 `IndexListItems`的任何一維陣列視覺化，即使該類型本身不允許這個運算子 (例如 `CATLArray`)。  
 
- `ArrayItems` 和 `IndexListItems` 之間的唯一差異在於，`ValueNode` 需要第 i<sup></sup> 個項目的完整運算式具有隱含 `$i` 參數。  
+ `ArrayItems` 和 `IndexListItems` 之間的唯一差異在於， `ValueNode` 需要第 i<sup></sup> 個項目的完整運算式具有隱含 `$i` 參數。  
 
 #### <a name="BKMK_LinkedListItems_expansion"></a> LinkedListItems 展開  
  如果視覺化類型代表連結清單，則偵錯工具可以使用 `LinkedListItems` 節點顯示其子系。 以下是使用這個功能之 `CAtlList` 類型的視覺化：  
@@ -596,7 +596,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 在偵錯工具變數�
 ```  
 
 ### <a name="BKMK_UIVisualizer"></a> UIVisualizer  
- `UIVisualizer` 項目會向偵錯工具註冊圖形視覺化檢視外掛程式。 圖形視覺化檢視外掛程式會建立對話方塊或其他介面，以適用於其資料類型的方式來顯示變數或物件。 視覺化檢視外掛程式必須撰寫做為 [VSPackage](../extensibility/internals/vspackages.md)，而且需要公開可由偵錯工具使用的服務。 natvis 檔案包含外掛程式的註冊資訊，例如其名稱、公開之服務的 GUID，以及可視覺化的類型。  
+ `UIVisualizer` 項目會向偵錯工具註冊圖形視覺化檢視外掛程式。 圖形視覺化檢視外掛程式會建立對話方塊或其他介面，以適用於其資料類型的方式來顯示變數或物件。 視覺化檢視外掛程式必須撰寫做為 [VSPackage](../extensibility/internals/vspackages.md) ，而且需要公開可由偵錯工具使用的服務。 natvis 檔案包含外掛程式的註冊資訊，例如其名稱、公開之服務的 GUID，以及可視覺化的類型。  
 
  以下是 UIVisualizer 項目的範例：  
 

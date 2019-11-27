@@ -21,9 +21,9 @@ ms.locfileid: "74299472"
 
  現在有了通用 Windows 平台之後，您的應用程式就能以多種個裝置系列為目標。 如需通用 Windows App 的詳細資訊，請查看本 [平台指南](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx)。
 
-- [移轉現有 C#/VB Windows 市集 8.1 或 Windows Phone 8.1 應用程式](#MigrateCSharp)以使用通用 Windows 平台。
+- [移轉現有 C#/VB Windows 市集 8.1 或 Windows Phone 8.1 應用程式](#MigrateCSharp) 以使用通用 Windows 平台。
 
-- [移轉現有 C++ Windows 市集 8.1 或 Windows Phone 8.1 應用程式](#MigrateCPlusPlus)以使用通用 Windows 平台。
+- [移轉現有 C++ Windows 市集 8.1 或 Windows Phone 8.1 應用程式](#MigrateCPlusPlus) 以使用通用 Windows 平台。
 
 - [您必須變更現有使用 Visual Studio 2015 CTP 所建立的通用 Windows 應用程式](#PreviousVersions)。
 
@@ -244,7 +244,7 @@ ms.locfileid: "74299472"
 
 17. 使用 NuGet 管理員加回您在前述步驟中刪除的封裝。
 
-     您現在必須遵循步驟，為您的 Windows 市集 8.1 或 Windows Phone 8.1 專案[更新封裝資訊清單檔](#PackageManifest)。
+     您現在必須遵循步驟，為您的 Windows 市集 8.1 或 Windows Phone 8.1 專案 [更新封裝資訊清單檔](#PackageManifest) 。
 
 ## <a name="MigrateCPlusPlus"></a>遷移您C++的 Windows Store 8.1 或 Windows Phone 8.1 應用程式以使用通用 Windows 平臺
 
@@ -321,7 +321,7 @@ ms.locfileid: "74299472"
 
 7. 在方案總管中，以滑鼠右鍵按一下專案檔，然後從內容功能表中選擇 [重新載入專案]。 您專案中的所有檔案現在應該都顯示在方案總管中。
 
-     您現在必須遵循步驟，為您的 Windows 市集 8.1 或 Windows Phone 8.1 專案[更新封裝資訊清單檔](#PackageManifest)。
+     您現在必須遵循步驟，為您的 Windows 市集 8.1 或 Windows Phone 8.1 專案 [更新封裝資訊清單檔](#PackageManifest) 。
 
 ## <a name="PackageManifest"></a>更新您所有 Windows Store 8.1 或 Windows Phone 8.1 專案的封裝資訊清單檔
  您必須更新方案中每個專案的封裝資訊清單檔。
@@ -585,7 +585,7 @@ ms.locfileid: "74299472"
 
 17. 您需要先移除一些隱藏檔案，才能重新開啟方案。
 
-    1. 開啟檔案總管，並按一下工具列中的 [檢視]，然後選取 [隱藏項目] 和 [副檔名]。 在您的電腦上開啟此資料夾：您的解決方案位置的 \<路徑 >\\. vs\\{Project Name} \v14。 如果檔案的副檔名是 .suo，則請予以刪除。
+    1. 開啟檔案總管，並按一下工具列中的 [檢視] ，然後選取 [隱藏項目] 和 [副檔名]。 在您的電腦上開啟此資料夾：您的解決方案位置的 \<路徑 >\\. vs\\{Project Name} \v14。 如果檔案的副檔名是 .suo，則請予以刪除。
 
     2. 現在，請回到您方案所在的資料夾。 開啟方案中現有專案的任何資料夾。 如果其中任何專案資料夾內檔案的副檔名為 .csproj.user 或 .vbproj.user，則請予以刪除。
 
@@ -743,7 +743,7 @@ ms.locfileid: "74299472"
 
     您現在可以編寫、建置和偵錯應用程式。
 
-    若您的通用 Windows 應用程式已有單元測試專案，也必須遵循[這些步驟](#MigrateUnitTest)。
+    若您的通用 Windows 應用程式已有單元測試專案，也必須遵循 [這些步驟](#MigrateUnitTest)。
 
 ### <a name="RCUpdate10CPlusPlus"></a>更新您C++的專案以使用最新的通用 Windows 平臺
 
@@ -810,7 +810,7 @@ ms.locfileid: "74299472"
 
          您現在可以編寫、建置和偵錯應用程式。
 
-         若您的通用 Windows 應用程式已有單元測試專案，也必須遵循[這些步驟](#MigrateUnitTest)。
+         若您的通用 Windows 應用程式已有單元測試專案，也必須遵循 [這些步驟](#MigrateUnitTest)。
 
 ## <a name="MigrateUnitTest"></a>使用 Visual Studio 2015 RC 建立的通用 Windows 應用程式之現有單元測試專案所需的變更
  若是使用 Visual Studio 2015 RC 建立 Windows 10 通用應用程式的單元測試專案，您必須另外對您的專案檔案進行這些額外的變更，才能利用最新版 Visual Studio 2015 所提供的這些測試專案。 所需的變更會根據您用來建立應用程式的語言而不同：

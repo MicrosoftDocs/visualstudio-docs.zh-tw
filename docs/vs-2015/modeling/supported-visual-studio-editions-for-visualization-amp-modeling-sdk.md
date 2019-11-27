@@ -44,7 +44,7 @@ ms.locfileid: "74298158"
 - Visual Studio Shell (隔離模式) 可轉散發套件
 
 > [!NOTE]
-> 若要讓 DSL 能夠在 Shell 產品上執行，您必須設定擴充功能資訊清單中的 [支援的 VS 版本] 欄位。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
+> 若要讓 DSL 能夠在 Shell 產品上執行，您必須在擴充功能資訊清單中設定**支援的 VS Edition**欄位。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
 
 ## <a name="see-also"></a>另請參閱
  [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

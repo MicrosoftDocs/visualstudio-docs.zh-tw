@@ -45,7 +45,7 @@ ms.locfileid: "74301024"
 
   您必須在想要執行圖層擴充功能的電腦上安裝適合的 Visual Studio 版本。 如需詳細資訊，請參閱[部署圖層模型擴充](../modeling/deploy-a-layer-model-extension.md)功能。
 
-  若要查看支援分層圖的 Visual Studio 版本，請參閱[支援 Architecture and Modeling Tools 的版本](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+  若要查看哪些 Visual Studio 版本支援分層圖，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="in-this-section"></a>本節內容
  [將命令和軌跡新增至分層圖](../modeling/add-commands-and-gestures-to-layer-diagrams.md)

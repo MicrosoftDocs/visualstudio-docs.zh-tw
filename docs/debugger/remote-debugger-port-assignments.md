@@ -1,5 +1,5 @@
 ---
-title: Remote Debugger Port Assignments | Microsoft Docs
+title: 遠端偵錯程式埠指派 |Microsoft Docs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.topic: reference
@@ -48,10 +48,10 @@ Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>64 位元作業系統上的遠端偵錯工具連接埠
 ::: moniker range=">=vs-2019"
- When the 64-bit version of the remote debugger is started, it uses the main port (4024) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4025 (the main port number incremented by 1). 如果您執行 32 位元遠端偵錯工具，它會使用 4024，而不會使用 4025。
+ 當64位版本的遠端偵錯程式啟動時，預設會使用主要端口（4024）。  如果您要對32位進程進行偵錯工具，64位版本的遠端偵錯程式會在埠4025上啟動32位版本的遠端偵錯程式（以1遞增的主要端口號碼）。 如果您執行 32 位元遠端偵錯工具，它會使用 4024，而不會使用 4025。
 ::: moniker-end
 ::: moniker range="vs-2017"
- When the 64-bit version of the remote debugger is started, it uses the main port (4022) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4023 (the main port number incremented by 1). 如果您執行 32 位元遠端偵錯工具，它會使用 4022，而不會使用 4023。
+ 當64位版本的遠端偵錯程式啟動時，預設會使用主要端口（4022）。  如果您要對32位進程進行偵錯工具，64位版本的遠端偵錯程式會在埠4023上啟動32位版本的遠端偵錯程式（以1遞增的主要端口號碼）。 如果您執行 32 位元遠端偵錯工具，它會使用 4022，而不會使用 4023。
 :::moniker-end
 
  此連接埠可從命令列設定：**Msvsmon /wow64port \<連接埠號碼>** 。
@@ -72,4 +72,4 @@ Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|
 
 ## <a name="see-also"></a>請參閱
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [遠端偵錯](../debugger/remote-debugging.md)

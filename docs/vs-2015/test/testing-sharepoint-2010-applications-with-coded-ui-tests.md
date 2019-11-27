@@ -20,26 +20,26 @@ ms.locfileid: "74298016"
 
 在 SharePoint 應用程式中包含自動程式碼 UI 測試，可讓您驗證整個應用程式 (包括其 UI 控制項) 是否正常運作。 自動程式碼 UI 測試也可以驗證使用者介面中的值和邏輯。
 
- **需求**
+ **Requirements**
 
 - Visual Studio Enterprise
 
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>有關自動程式碼 UI 測試，還有什麼是我應該知道的?
  若要深入了解使用自動程式化 UI 測試的優點，請參閱[使用使用者介面自動化測試程式碼](../test/use-ui-automation-to-test-your-code.md)和[使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試 (英文)](https://go.microsoft.com/fwlink/?LinkID=255196)。
 
- **注意事項**
+ **備註**
 
 - ![必要條件 prereq](../test/media/prereq.png "Prereq")SharePoint 應用程式的自動程式碼 UI 測試僅支援 SharePoint 2010。
 
 - ![必要條件 prereq](../test/media/prereq.png "Prereq")不支援 SharePoint 應用程式中的 Visio 和 PowerPoint 2010 控制項。
 
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>建立 SharePoint 應用程式的自動程式碼 UI 測試
- 為您的 SharePoint 2010 應用程式[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)的方式，與為其他類型應用程式建立測試的方式相同。 所有控制項都可在 Web 編輯介面上錄製和播放。 選取分類和 Web 組件的介面都是標準的 Web 控制項。
+ 為您的 SharePoint 2010 應用程式[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) 的方式，與為其他類型應用程式建立測試的方式相同。 所有控制項都可在 Web 編輯介面上錄製和播放。 選取分類和 Web 組件的介面都是標準的 Web 控制項。
 
  ![SharePoint web 元件](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
 
 > [!NOTE]
-> 如果您正在錄製動作，請在產生程式碼之前驗證動作。 由於有多個行為與滑鼠停留相關聯，因此它預設為開啟狀態。 從您的自動程式碼 UI 測試中移除多餘的停留動作時務必小心。 您可以編輯用於測試的程式碼來進行這項作業，或是使用[自動程式碼 UI 測試編輯器](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
+> 如果您正在錄製動作，請在產生程式碼之前驗證動作。 由於有多個行為與滑鼠停留相關聯，因此它預設為開啟狀態。 從您的自動程式碼 UI 測試中移除多餘的停留動作時務必小心。 您可以編輯用於測試的程式碼來進行這項作業，或是使用 [自動程式碼 UI 測試編輯器](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
 
 ## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>在 SharePoint 應用程式中包含 Office 2010 控制項的測試
  若要在 SharePoint 應用程式中啟用某些 Office 2010 Web 組件的自動化，則必須稍微修改程式碼。

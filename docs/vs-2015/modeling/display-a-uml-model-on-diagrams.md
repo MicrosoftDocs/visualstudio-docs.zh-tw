@@ -21,7 +21,7 @@ ms.locfileid: "74296013"
 # <a name="display-a-uml-model-on-diagrams"></a>在圖表上顯示 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 擴充功能的程式碼中，您可以控制模型項目在圖表上顯示的方式。 若要查看哪些版本的 Visual Studio 支援 UML 模型，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+在 Visual Studio 擴充功能的程式碼中，您可以控制模型項目在圖表上顯示的方式。 若要查看哪些 Visual Studio 版本支援 UML 模型，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 本主題內容：
 - [若要在圖表上顯示元素](#Display)
@@ -39,13 +39,13 @@ ms.locfileid: "74296013"
 ## <a name="Display"></a>若要在圖表上顯示元素
  當您建立項目 (例如，使用案例或動作) 時，使用者可以在 [UML 模型總管] 中看見該項目，但是該項目不一定會自動出現在圖表中。 在某些情況下，您必須撰寫程式碼來顯示它。 下表摘要說明一些替代方式。
 
-|項目的類型|例如|若要顯示此內容，您的程式碼必須|
+|項目的類型|例如：|若要顯示此內容，您的程式碼必須|
 |---------------------|-----------------|-------------------------------------|
 |分類器|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|在指定的圖表上建立相關聯的圖形。 您可以為每一個分類器建立任意數目的圖形。<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> 針對此圖表頂端的圖形，請將 `parentShape` 設為 `null`。<br /><br /> 在某一個圖形內顯示另一個圖形。<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);`**注意：** 如果您在**ILinkedUndo**交易內執行顯示，此方法有時不會傳回任何 `IShape`。 但是會正確建立此圖形，並且可以使用 `IElement.Shapes().` 存取。|
 |分類器的子系|屬性、作業、<br /><br /> 組件、通訊埠|自動 - 不需要程式碼。<br /><br /> 它會做為父系的一部分顯示。|
 |行為|互動 (序列)、<br /><br /> 活動|將行為繫結至適當的圖表。<br /><br /> 每一個行為每次最多可以繫結至一個圖表。<br /><br /> 例如：<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |行為的子系|生命線、訊息、動作、物件節點|自動 - 不需要程式碼。<br /><br /> 它會在此父系繫結至圖表時顯示。|
-|Relationship|關聯、一般化、流程、相依性|自動 - 不需要程式碼。<br /><br /> 它會在兩端都顯示的每一個圖表上顯示。|
+|關聯性|關聯、一般化、流程、相依性|自動 - 不需要程式碼。<br /><br /> 它會在兩端都顯示的每一個圖表上顯示。|
 
 ## <a name="GetShapes"></a>存取代表元素的圖形
  圖形，其代表項目屬於下列類型：
@@ -54,7 +54,7 @@ ms.locfileid: "74296013"
 
  `IShape<` *ElementType* `>`
 
- 其中*項目類型*是此模型項目的類型，例如 `IClass` 或 `IUseCase`。
+ 其中*ElementType*是模型元素的類型，例如 `IClass` 或 `IUseCase`。
 
 |||
 |-|-|
@@ -75,7 +75,7 @@ ms.locfileid: "74296013"
 |`anIShape.Move(x, y, [width], [height])`|移動圖形或調整大小。|
 |`IDiagram.EnsureVisible( IEnumerable<IShape> shapes, bool zoomToFit = false)`|啟動此視窗並捲動該圖表，以便所有指定的圖形都能呈現。 這些圖形全都必須在此圖表上。 如果 `zoomToFit` 為 true，該圖表即會視需要縮放，使所有圖形都能呈現。|
 
- 如需範例，請參閱[定義對齊命令](#AlignCommand)。
+ 如需範例，請參閱[定義對齊方式命令](#AlignCommand)。
 
 ## <a name="Removing"></a>若要從圖表中移除圖形
  您可以刪除一些項目類型的圖形，而不需刪除該項目。

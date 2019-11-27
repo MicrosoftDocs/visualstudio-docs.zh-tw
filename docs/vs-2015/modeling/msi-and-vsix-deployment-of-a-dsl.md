@@ -56,7 +56,7 @@ ms.locfileid: "74297733"
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>卸載使用 VSX 安裝的 DSL
 
-1. 在 [工具]功能表上，按一下 [擴充管理員]。
+1. 在 [**工具**] 功能表上，按一下 [**擴充管理員**]。
 
 2. 展開 [已安裝的擴充功能]。
 
@@ -121,7 +121,7 @@ ms.locfileid: "74297733"
 
 10. 在 Windows Explorer 中，于您的安裝專案中找出建立的 MSI 檔案。
 
-     將 MSI 檔案複製到您要安裝 DSL 的電腦。 按兩下 MSI 檔案。 安裝程式會執行。
+     將 MSI 檔案複製到您要安裝 DSL 的電腦。 按兩下 MSI 檔案。 執行安裝程式。
 
 11. 在目的電腦中，建立副檔名為 DSL 的新檔案。 確認：
 

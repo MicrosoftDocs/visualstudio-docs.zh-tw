@@ -20,12 +20,12 @@ ms.locfileid: "74297993"
 
 包含建立於 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 中之自動程式碼 UI 測試的測試專案在 Visual Studio 2012 中開啟時，會以無訊息模式修復。 如果已將測試專案簽入原始檔控制，則專案檔會簽出此修復。 一旦修復，這些包含自動程式碼 UI 測試的測試專案可以再次用於 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]。
 
- **需求**
+ **Requirements**
 
 - Visual Studio Enterprise
 
 > [!NOTE]
-> Visual Studio 包含一個以上的測試專案類型。 如果您要建立新的自動程式碼 UI 測試，則必須在自動程式碼 UI 測試專案類型中建立。 如需詳細資訊，請參閱[從舊版 Visual Studio 升級測試](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。
+> Visual Studio 包含一個以上的測試專案類型。 如果您要建立新的自動程式碼 UI 測試，則必須在自動程式碼 UI 測試專案類型中建立。 如需詳細資訊，請參閱 [從舊版 Visual Studio 升級測試](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。
 
 > [!WARNING]
 > 當您在[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 或 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 連同 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 中開啟測試專案，則必須重建包含自動程式碼 UI 測試的 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]個測試專案。
@@ -39,7 +39,7 @@ ms.locfileid: "74297993"
 > [!CAUTION]
 > 在自動程式碼 UI 測試專案中有一個和參考相關的已知問題並未出現在 [方案總管] 中。 如需詳細資訊，請參閱包含在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 安裝媒體上的讀我檔案。
 
-|自動程式碼 UI 功能|問題|方案|
+|自動程式碼 UI 功能|問題|解決方案|
 |----------------------------|-----------|--------------|
 |[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中不支援 Silverlight UI 測試|**建置將會失敗**<br /><br /> 如果您有 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2，並已針對 Silverlight 應用程式建立自動程式碼 UI 測試專案，這些專案無法在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中開啟。|建議您只在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 管理這些專案。|
 |[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中不支援 Firefox UI 測試。|**建置會成功，測試回合將會失敗**<br /><br /> 如果您有 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2，並已針對 Firefox 中的 web 應用程式建立自動程式碼 UI 測試專案，這些專案無法在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中開啟。|建議您只在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 管理這些專案。|
