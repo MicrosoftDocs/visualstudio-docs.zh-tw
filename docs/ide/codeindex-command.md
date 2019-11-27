@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 378a5965f8ca9e9cc2d1c7214180e99f080d7873
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bec6c997a73d0b163ec0857ddd3a3380f26793bf
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72630953"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538521"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 
@@ -60,7 +60,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ## <a name="examples"></a>範例
 
 > [!NOTE]
-> 此處所描述的範例公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點與事件均屬虛構。  並非影射任何真實的公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點或事件。
+> 此處所描述之範例公司、組織、產品、網域名稱、電子郵件地址、標誌、人員、地點及事件均屬虛構，  並非影射任何真實的公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點或事件。
 
 若要查看程式碼索引狀態和組態：
 
@@ -125,4 +125,4 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ## <a name="see-also"></a>請參閱
 
 - [尋找 CodeLens 的程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [使用 TFSConfig 管理伺服器組態](/tfs/server/ref/command-line/tfsconfig-cmd)
+- [使用 TFSConfig 管理伺服器組態](/azure/devops/server/command-line/tfsconfig-cmd)

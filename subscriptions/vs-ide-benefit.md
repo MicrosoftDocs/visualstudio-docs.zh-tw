@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/14/2019
 ms.topic: conceptual
 description: 了解如何下載和安裝 Visual Studio 訂用帳戶中所含的 Visual Studio IDE。
-ms.openlocfilehash: 74f7de0272130f88c683dcabefaecccf1554ab12
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: fd140dfe1853e6799a960fd8e251a566954bf143
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099640"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491598"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 權益
 
@@ -41,9 +41,9 @@ ms.locfileid: "74099640"
    > [!div class="mx-imgBorder"]
    > ![自訂 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10. 按一下 [安裝]。
+10. 按一下 **[安裝]** 。
 
-11. 安裝完成時，您可以選擇修改安裝，或啟動 Visual Studio。  按一下 [啟動] 開始使用。  如果您安裝了多個版本，將會列出。
+11. 安裝完成時，您可以選擇修改安裝，或啟動 Visual Studio。  按一下 [啟動] 開始使用。  如果您已安裝多個版本，則會列出它們。
     > [!div class="mx-imgBorder"]
     > ![啟動 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "74099640"
 | Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  [是]          |
 | 含 GitHub Enterprise 的 Visual Studio Enterprise   | VL | 可用       |  [是]          |
 | Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 可用                                                            |  [是]          |
-| 使用 GitHub Enterprise 的 Visual Studio Professional | VL   | 可用              |  [是]          |
+| 含 GitHub Enterprise 的 Visual Studio Professional | VL   | 可用              |  [是]          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  [是]         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 

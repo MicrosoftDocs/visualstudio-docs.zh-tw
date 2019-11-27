@@ -33,7 +33,7 @@ ms.locfileid: "74294674"
 
 如果您無法使用 Visual Studio 部署您的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，或需要使用 advanced 部署功能（例如受信任的應用程式部署），您應該使用 Mage.exe 命令列工具來建立您的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 資訊清單。 本逐步解說說明如何使用命令列版本（Mage.exe）或資訊清單產生和編輯工具的圖形化版本（Mageui.exe）來建立 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署。  
   
-## <a name="prerequisites"></a>先決條件  
+## <a name="prerequisites"></a>必要條件  
  這個逐步解說有一些必要條件和選項，您必須在建立部署之前選擇。  
   
 - 安裝 Mage.exe 和 Mageui.exe。  
@@ -50,11 +50,11 @@ ms.locfileid: "74294674"
   
 - 判斷應用程式是否需要更高的信任層級。  
   
-     如果您的應用程式需要完全信任（例如，使用者系統的完整存取權），您可以使用 Mage.exe 的 `-TrustLevel` 選項來設定此項。 如果您想要定義應用程式的自訂許可權集合，可以從另一個資訊清單複製 [網際網路] 或 [內部網路] 許可權區段，修改它以符合您的需求，然後使用文字編輯器或 Mageui.exe 將它加入至應用程式資訊清單。 如需詳細資訊，請參閱[受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。  
+     如果您的應用程式需要完全信任（例如，使用者系統的完整存取權），您可以使用 Mage.exe 的 `-TrustLevel` 選項來設定此項。 如果您想要定義應用程式的自訂許可權集合，可以從另一個資訊清單複製 [網際網路] 或 [內部網路] 許可權區段，修改它以符合您的需求，然後使用文字編輯器或 Mageui.exe 將它加入至應用程式資訊清單。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
 - 取得 Authenticode 憑證。  
   
-     您應該使用 Authenticode 憑證來簽署您的部署。 您可以使用 Visual Studio、Mageui.exe 或 MakeCert 和 Pvk2Pfx 工具來產生測試憑證，也可以從憑證授權單位單位（CA）取得憑證。 如果您選擇使用信任的應用程式部署，您也必須在所有用戶端電腦上執行一次憑證的安裝。 如需詳細資訊，請參閱[受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。  
+     您應該使用 Authenticode 憑證來簽署您的部署。 您可以使用 Visual Studio、Mageui.exe 或 MakeCert 和 Pvk2Pfx 工具來產生測試憑證，也可以從憑證授權單位單位（CA）取得憑證。 如果您選擇使用信任的應用程式部署，您也必須在所有用戶端電腦上執行一次憑證的安裝。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
     > [!NOTE]
     > 您也可以使用可從憑證授權單位單位取得的 CNG 憑證來簽署您的部署。  

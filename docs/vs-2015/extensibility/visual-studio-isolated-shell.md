@@ -58,9 +58,9 @@ Visual Studio 獨立模式 shell 可讓您建立獨立的應用程式，以便�
 |----------------------|-------------|  
 |IDE 功能|匯入/匯出設定<br /><br /> 工具箱控制項安裝程式<br /><br /> 工作清單 & 錯誤清單<br /><br /> 輸出視窗<br /><br /> 起始頁<br /><br /> 屬性視窗<br /><br /> 工具箱<br /><br /> 底下提供說明，包括方案總管<br /><br /> 書籤視窗<br /><br /> 類別檢視<br /><br /> 物件瀏覽器<br /><br /> 命令視窗<br /><br /> 文件大綱<br /><br /> 資源檢視<br /><br /> 外部工具<br /><br /> Windows Communication Foundation （WCF）加入服務參考<br /><br /> 語言整合式查詢（LINQ）支援|  
 |編輯器/設計工具|程式碼流覽工具（整合尋找、來源定義、繼承）<br /><br /> IntelliSense<br /><br /> 智慧標籤<br /><br /> 程式碼片段管理員<br /><br /> 程式碼片段<br /><br /> 重構<br /><br /> 整齊清單<br /><br /> IntelliSense 篩選<br /><br /> 程式碼定義視窗<br /><br /> 應用程式設計工具<br /><br /> Windows Form 設計工具<br /><br /> Windows Presentation Foundation （WPF）設計工具|  
-|偵錯|C#運算式評估工具<br /><br /> 本機調試<br /><br /> Managed 調試<br /><br /> 編輯後繼續<br /><br /> 跨執行緒的調試<br /><br /> 項<br /><br /> 資料提示方塊<br /><br /> 原生調試<br /><br /> 腳本調試<br /><br /> Interop 調試<br /><br /> 及時（JIT）調試<br /><br /> 多進程的偵錯工具<br /><br /> XSLT 偵錯<br /><br /> 附加至本機進程<br /><br /> 追蹤點<br /><br /> 中斷點條件約束|  
-|資料|伺服器總管（僅限資料）<br /><br /> 資料系結至本機資料（。MDF 或.MDB<br /><br /> 資料系結至物件<br /><br /> 資料系結至 Web 服務<br /><br /> 一組完整的資料控制項<br /><br /> XML 編輯器<br /><br /> 資料系結至本機資料庫伺服器<br /><br /> 資料來源視窗|  
-|Web|HTML 編輯器<br /><br /> 網頁瀏覽器<br /><br /> Web Form 設計工具<br /><br /> 網站專案<br /><br /> Web 應用程式專案|  
+|偵錯|C#運算式評估工具<br /><br /> 本機調試<br /><br /> Managed 調試<br /><br /> 編輯後繼續<br /><br /> 跨執行緒的調試<br /><br /> 視覺效果<br /><br /> 資料提示方塊<br /><br /> 原生調試<br /><br /> 指令碼偵錯<br /><br /> Interop 調試<br /><br /> 及時（JIT）調試<br /><br /> 多進程的偵錯工具<br /><br /> XSLT 偵錯<br /><br /> 附加至本機進程<br /><br /> 追蹤點<br /><br /> 中斷點條件約束|  
+|Data|伺服器總管（僅限資料）<br /><br /> 資料系結至本機資料（。MDF 或.MDB<br /><br /> 資料系結至物件<br /><br /> 資料系結至 Web 服務<br /><br /> 一組完整的資料控制項<br /><br /> XML 編輯器<br /><br /> 資料系結至本機資料庫伺服器<br /><br /> 資料來源視窗|  
+|Web|HTML 編輯器<br /><br /> Web 瀏覽器<br /><br /> Web Form 設計工具<br /><br /> 網站專案<br /><br /> Web 應用程式專案|  
 |擴充性|使用 Vspackage 和 MEF 元件|  
   
 ## <a name="see-also"></a>另請參閱  

@@ -24,7 +24,7 @@ ms.locfileid: "74298107"
 
 使用這些指令碼，您可以佈建網站的自訂版本 (也稱為開發和測試環境)，以做臨時使用。 例如，您可以在 Azure 虛擬機器上或網站的預備位置上設定網站的特定版本，以執行測試套件、重現錯誤、測試錯誤修正、試驗提議的變更，或設定用來進行示範或展示的自訂環境。 在建立用來發佈專案的指令碼後，您可以視需要重新執行指令碼來重建相同環境，或對 Web 應用程式的自有組建執行指令碼以建立用於測試的自訂環境。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 * Azure SDK 2.3 或更新版本。 請參閱 [Visual Studio 下載](https://go.microsoft.com/fwlink/?LinkID=624384)。 (要產生 Web 專案的指令碼並不需要用到 Azure SDK。 這項功能是供 Web 專案使用，而非供雲端服務中的 Web 角色使用。)
 * Azure PowerShell 0.7.4 或更新版本。 請參閱 [如何安裝和設定 Azure PowerShell](/powershell/azure/overview)。
@@ -40,7 +40,7 @@ ms.locfileid: "74298107"
 
 ## <a name="scripts-that-visual-studio-generates"></a>Visual Studio 所產生的指令碼
 
-Visual Studio 會產生名為 **PublishScripts** 的方案層級資料夾，並內含兩個 Windows PowerShell 檔案，一個是用於虛擬機器或網站的發佈指令碼，一個是含有可在指令碼中使用之函式的模組。 Visual Studio 也會產生 JSON 格式的檔案，以指定您要部署之專案的詳細資料。
+Visual Studio 會產生一個解決方案層級的資料夾 (稱為 **PublishScripts**)，其中包含兩個 Windows PowerShell 檔案、您的虛擬機器或網站的發行指令碼，以及含有指令碼中可用函數的模組。 Visual Studio 也會產生 JSON 格式的檔案，以指定您要部署之專案的詳細資料。
 
 ### <a name="windows-powershell-publish-script"></a>Windows PowerShell 發佈指令碼
 
@@ -52,7 +52,7 @@ Visual Studio 所產生的 Windows PowerShell 模組包含發佈指令碼所使�
 
 ### <a name="json-configuration-file"></a>JSON 組態檔
 
-JSON 檔案建立在 [組態] 資料夾，其包含的組態資料可確切指定要部署至 Azure 的資源。 Visual Studio 所產生之檔案的名稱是 project-name-WAWS-dev.json (如果您建立網站) 或 project name-VM-dev.json (如果您建立虛擬機器)。 以下是建立網站時所產生之 JSON 組態檔的範例。 其中大多數的值都簡單易懂。 網站名稱是由 Azure 產生，因此可能不符合您的專案名稱。
+JSON 檔案建立於 **Configurations** 資料夾中，而且包含可明確指定要部署至 Azure 資源的組態資料。 Visual Studio 所產生之檔案的名稱是 project-name-WAWS-dev.json (如果您建立網站) 或 project name-VM-dev.json (如果您建立虛擬機器)。 以下是建立網站時所產生之 JSON 組態檔的範例。 其中大多數的值都簡單易懂。 網站名稱是由 Azure 產生，因此可能不符合您的專案名稱。
 
 ```json
 {

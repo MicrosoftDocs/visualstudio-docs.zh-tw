@@ -29,7 +29,7 @@ ms.locfileid: "74299912"
 
 - 使用版面配置將控制項放置在表單上。
 
-- 將 [**開啟檔案**] 和 [**色彩**] 對話方塊加入至表單。
+- 將 [開啟檔案] 和 [色彩] 對話方塊新增至表單。
 
 - 使用 IntelliSense 和程式碼片段撰寫程式碼。
 
@@ -52,13 +52,13 @@ ms.locfileid: "74299912"
 
 |標題|描述|
 |-----------|-----------------|
-|[步驟 1：建立 Windows Form 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)|從建立 Windows Forms 應用程式專案開始。|
+|[步驟 1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)|從建立 Windows Forms 應用程式專案開始。|
 |[步驟 2：執行您的程式](../ide/step-2-run-your-program.md)|執行您在上一個步驟中建立的 Windows Forms 應用程式。|
-|[步驟 3：設定您的表單屬性](../ide/step-3-set-your-form-properties.md)|使用 [**屬性**] 視窗變更表單的外觀。|
+|[步驟 3：設定您的表單屬性](../ide/step-3-set-your-form-properties.md)|使用 [屬性] 視窗變更表單的外觀。|
 |[步驟 4：使用 TableLayoutPanel 控制項來配置您的表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|新增 `TableLayoutPanel` 控制項至表單。|
-|[步驟 5：將控制項加入您的表單](../ide/step-5-add-controls-to-your-form.md)|將控制項 (例如 `PictureBox` 控制項和 `CheckBox` 控制項) 新增至表單。 將按鈕加入至表單。|
+|[步驟 5：將控制項新增至您的表單](../ide/step-5-add-controls-to-your-form.md)|將控制項 (例如 `PictureBox` 控制項和 `CheckBox` 控制項) 新增至表單。 將按鈕加入至表單。|
 |[步驟 6：命名您的按鈕控制項](../ide/step-6-name-your-button-controls.md)|將按鈕重新命名為更有意義的名稱。|
-|[步驟 7：將對話方塊元件加入您的表單](../ide/step-7-add-dialog-components-to-your-form.md)|將 **OpenFileDialog** 元件和 **ColorDialog** 元件新增至表單。|
+|[步驟 7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)|將 **OpenFileDialog** 元件和 **ColorDialog** 元件新增至表單。|
 |[步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|使用 IntelliSense 工具撰寫程式碼。|
 |[步驟 9：檢閱、註解和測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)|檢閱和測試程式碼。 視需要加入註解。|
 |[步驟 10：撰寫其他按鈕和核取方塊的程式碼](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|使用 IntelliSense 撰寫程式碼讓其他按鈕和核取方塊發揮作用。|

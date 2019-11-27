@@ -20,7 +20,7 @@ ms.locfileid: "74300022"
 
 在 Visual Studio 中以專案為基礎的即時程式碼分析器，API 作者可以將特定領域的程式碼分析當做其 NuGet 套件的一部分來傳送。  因為這些分析器是由 .NET Compiler Platform （代號為 "Roslyn"）所提供，所以當您在程式程式碼完成時（不會再等待建立程式碼來探索問題），它們可能會在您的程式碼中產生警告。  分析器也可以透過 Visual Studio 燈泡提示來呈現自動程式碼修正，讓您立即清除程式碼
 
-## <a name="getting-started"></a>快速入門
+## <a name="getting-started"></a>使用者入門
 [Roslyn 即時程式碼分析器簡介和逐步解說](https://msdn.microsoft.com/magazine/dn879356.aspx)
 
 [新增程式碼修正逐步解說：提供使用者針對分析器問題的修正](https://msdn.microsoft.com/magazine/dn904670.aspx)

@@ -121,7 +121,7 @@ JSON 組態檔會指定待部署項目的詳細資料。 它會包含您在建�
 }
 ```
 
-您可以編輯 JSON 組態檔來變更部署項目。 [網站] 區段是必要項目，但 [資料庫] 區段是選用項目。
+您可以編輯 JSON 組態檔來變更部署項目。 webSite 是必要區段，database 是選擇性區段。
 
 ## <a name="next-steps"></a>後續步驟
 如需詳細資訊，請參閱 [Publish-WebApplicationVM (Windows PowerShell 指令碼)](vs-azure-tools-publish-webapplicationvm.md)

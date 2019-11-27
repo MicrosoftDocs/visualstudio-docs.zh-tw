@@ -29,18 +29,18 @@ ms.locfileid: "74297829"
 
 [屬性頁] 可讓您存取專案設定。 您可以使用 [屬性頁] 中所顯示的頁面來變更專案屬性。
 
- 若要存取專案屬性，請選取 [方案總管] 中的專案節點。 在 [專案] 功能表上，按一下 [屬性]。
+ 若要存取專案屬性，請選取方案總管中的專案節點。 在 [專案] 功能表上，按一下 [屬性]。
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 
- 下列頁面和選項會出現在 [屬性頁] 中。
+ [屬性頁] 中隨即出現下列頁面和選項。
 
 ## <a name="configuration-and-platform-page"></a>組態和平台頁面
  您可以使用下列選項，來選取要顯示或修改的組態和平台。
 
  設定指定要顯示或修改的設定。 這些設定包括 [偵錯]\(預設值)、[發行]、[所有組態] 或使用者定義的組態。 如需詳細資訊，請參閱[偵錯和發行專案組態](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。
 
- **平臺**指定要顯示或修改的平臺設定。 這些設定包括 [任何 CPU] ([!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式的預設值)、[x64]、[ARM]、[x86] 或使用者定義的平台。 如需詳細資訊，請參閱[偵錯和發行專案組態](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。
+ **平臺**指定要顯示或修改的平臺設定。 這些設定包括 [任何 CPU]\([!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式的預設值)、[x64]、[ARM]、[x86] 或使用者定義的平台。 如需詳細資訊，請參閱[偵錯和發行專案組態](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。
 
 ## <a name="general-page"></a>一般頁面
  您可以使用下列選項，來設定專案的一般屬性。

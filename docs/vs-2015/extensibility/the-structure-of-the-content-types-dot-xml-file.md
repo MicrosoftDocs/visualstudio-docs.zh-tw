@@ -31,7 +31,7 @@ ms.locfileid: "74301232"
 ## <a name="attributes-and-elements"></a>屬性和項目  
  下列各節將描述根項目及其屬性和子項目。  
   
-### <a name="root-element"></a>根項目  
+### <a name="root-element"></a>Root 元素  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -50,7 +50,7 @@ ms.locfileid: "74301232"
 | http://schemas.openformats.org/package/2006/content-types | 內容類型架構的位置。 |
   
 ### <a name="child-elements"></a>子元素  
- `Types` 元素可以包含任意數目的 `Default` 元素。  
+ `Types` 元素可以包含不限數目的 `Default` 元素。  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -68,14 +68,14 @@ ms.locfileid: "74301232"
   
 |副檔名|ContentType|  
 |---------------|-----------------|  
-|.txt|文字/純文字|  
-|.pkgdef|文字/純文字|  
+|.txt|text/plain|  
+|.pkgdef|text/plain|  
 |xml|text/xml|  
 |extension.vsixmanifest|text/xml|  
 |htm 或 html|text/html|  
 |.rtf|應用程式/rtf|  
 |pdf|應用程式/pdf|  
-|gif|影像/gif|  
+|gif|image/gif|  
 |jpg 或 jpeg|影像/jpg|  
 |tiff|影像/tiff|  
 |vsix|應用程式/zip|  

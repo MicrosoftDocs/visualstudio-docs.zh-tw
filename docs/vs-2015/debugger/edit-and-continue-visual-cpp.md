@@ -25,7 +25,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301050"
 ---
-# <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
+# <a name="edit-and-continue-visual-c"></a>編輯後繼續 (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在 Visual C++ 專案中，使用 [編輯後繼續]。 如需 [編輯後繼續] 限制的相關資訊，請參閱支援的程式[代碼變更（C++）](../debugger/supported-code-changes-cpp.md) 。  

@@ -38,10 +38,10 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
     UI 的左方窗格會顯示目前已部署至計算模擬器的服務，以及每個服務正在執行的角色執行個體。 您可以選擇將在右窗格中顯示生命週期、記錄和診斷資訊的服務或角色。 如果您將焦點放在包含視窗的上邊界時，它會展開以填滿右方窗格。
 
-3. 選取 [偵錯] 功能表中的命令，並在您的程式碼中設定中斷點，來逐步執行應用程式。 在偵錯工具中逐步執行應用程式時，窗格會隨著應用程式的目前狀態而更新。 當您停止偵錯時，應用程式部署會遭到刪除。 如果您的應用程式包含 Web 角色，而且您已設定 [啟動] 動作屬性來啟動 Web 瀏覽器，Visual Studio 會在瀏覽器中啟動您的 Web 應用程式。 如果您變更服務組態中角色的執行個體數目，您必須停止雲端服務，然後重新啟動偵錯，以便對此角色的新執行個體進行偵錯。
+3. 選取 [偵錯] 功能表中的命令，並在您的程式碼中設定中斷點，來逐步執行應用程式。 在偵錯工具中逐步執行應用程式時，窗格會隨著應用程式的目前狀態而更新。 當您停止偵錯時，應用程式部署會遭到刪除。 如果應用程式包含 Web 角色，而且已將 [啟動動作] 屬性設定為啟動 Web 瀏覽器，Visual Studio 便會在瀏覽器中啟動 Web 應用程式。 如果您變更服務組態中角色的執行個體數目，您必須停止雲端服務，然後重新啟動偵錯，以便對此角色的新執行個體進行偵錯。
 
     > [!NOTE]
-    > 停止執行或偵錯您的服務時，不會停止本機計算模擬器和儲存體模擬器。 您必須從通知區域明確停止它們。
+    > 當您停止執行或偵錯服務時，並不會停止本機計算模擬器和儲存體模擬器。 您必須從通知區域明確停止它們。
 
 ## <a name="debug-a-cloud-service-in-azure"></a>測試 Azure 中的雲端服務進行偵錯
 
@@ -68,7 +68,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
 ### <a name="to-attach-the-debugger-to-a-cloud-service-in-azure"></a>將偵錯工具附加至在 Azure 中的雲端服務
 
-1. 在伺服器總管中，展開雲端服務的節點。
+1. 在 [伺服器總管] 中，展開雲端服務的節點。
 
 2. 開啟您要附加的角色或角色執行個體的捷徑功能表，然後選取 [附加偵錯工具]。
 
@@ -78,7 +78,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
 3. 將偵錯工具附加至執行個體之後，如往常般進行偵錯。 偵錯工具會自動附加至符合角色之適當的主機處理序。 根據角色，偵錯工具會附加至 w3wp.exe、WaWorkerHost.exe 或 WaIISHost.exe。 若要確認偵錯工具附加的程序，請展開 [伺服器總管] 中的執行個體節點。 如需有關 Azure 程序的詳細資訊，請參閱[ Azure 角色架構](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/)。
 
-    ![選取程式碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
+    ![選取代碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
 4. 若要識別附加偵錯工具的處理序，請開啟 [處理序] 對話方塊，在功能表列上依序選擇 [偵錯] > [Windows]、[處理序]。 （鍵盤： Ctrl + Alt + Z）若要卸離特定進程，請開啟其快捷方式功能表，然後選取 [卸**離進程**]。 或者，在「伺服器總管」中找出執行個體節點、尋找處理序、開啟其捷徑功能表，然後選取 [中斷處理序連結]。
 
@@ -127,7 +127,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
 4. 在 [附加至處理序] 對話方塊中，選取 [選取] 以將結果清單限制為只顯示您要偵錯的程式碼類型。 您可以對 32 位元或 64 位元受控碼、機器碼或兩者進行偵錯。
 
-    ![選取程式碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
+    ![選取代碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
 5. 選取您想要在虛擬機器上偵錯的處理序，然後選取 [附加]。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱[在 Visual Studio 中偵錯一或多個處理序](https://msdn.microsoft.com/library/jj919165.aspx)和 [Azure 角色架構](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/)。
 
@@ -148,7 +148,7 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
     ![建立 ASP.NET Web 專案對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
     > [!NOTE]
-    > 如果您還沒登入，將會要求您登入 Azure 帳戶。
+    > 如果您尚未登入，系統會要求您登入 Azure 帳戶。
 
 3. 選取虛擬機器的各種設定，然後選取 [確定]。 如需詳細資訊，請參閱 [虛擬機器](https://go.microsoft.com/fwlink/?LinkId=623033) 。
 
@@ -172,7 +172,7 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
 
     ![發佈設定](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
-7. 如果稍早已部署專案，請在 [檔案發佈選項] 中，選取 [移除目的地的額外檔案]。
+7. 如果先前已部署專案，請在 [**檔案發行選項**] 中，選取 [**移除目的地的其他檔案**]。
 
 8. 專案發佈之後，在「伺服器總管」中的虛擬機器操作功能表上，選取 [附加偵錯工具...]
 
@@ -182,7 +182,7 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
 
 9. 在 [附加至處理序] 對話方塊中，選取 [選取] 以將結果清單限制為只顯示您要偵錯的程式碼類型。 您可以對 32 位元或 64 位元受控碼、機器碼或兩者進行偵錯。
 
-    ![選取程式碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
+    ![選取代碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
 10. 選取您想要在虛擬機器上偵錯的處理序，然後選取 [附加]。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱 [在 Visual Studio 中偵錯一或多個處理序](https://msdn.microsoft.com/library/jj919165.aspx) 。
 

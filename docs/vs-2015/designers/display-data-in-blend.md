@@ -32,7 +32,7 @@ ms.locfileid: "74294578"
 - [在市集或 Phone 應用程式中顯示即時資料](#LiveStore)
 
 ## <a name="Scratch"></a> 產生範例資料
- 若要產生範例資料，請開啟 XAML 文件。 在 [資料] 面板中，選擇 [建立範例資料]![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") 按鈕，然後選擇 [新增範例資料]。
+ 若要產生範例資料，請開啟 XAML 文件。 在 [**資料**] 面板中，選擇 [**建立範例資料**![ ](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") ] 按鈕，然後選擇 [**新增範例資料**]。
 
  在 [資料] 面板中定義資料結構，然後將它繫結至任何頁面上的 UI 項目。
 
@@ -49,7 +49,7 @@ ms.locfileid: "74294578"
 ## <a name="Existing"></a> 從類別產生範例資料
  如果您已經建立可描述資料結構的類別，可以從中產生範例資料。
 
- 若要從類別產生範例資料，請開啟 XAML 文件，接著在 [資料] 面板中，按一下 [建立範例資料]![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") 按鈕，然後按一下 [從類別建立範例資料]。
+ 若要從類別產生範例資料，請開啟 XAML 檔，然後在 [**資料**] 面板中，按一下 [**建立範例資料**![ ](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") ] 按鈕，然後按一下 [**從類別建立範例資料**]。
 
  **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[從類別建立範例資料](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML)。
 

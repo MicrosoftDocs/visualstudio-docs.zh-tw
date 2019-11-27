@@ -24,7 +24,7 @@ Cloud Explorer 可讓您從 Visual Studio 內檢視您的 Azure 資源和資源�
 
 與 [Azure 入口網站](https://go.microsoft.com/fwlink/p/?LinkID=525040)相同，Cloud Explorer 也是建立在 Azure Resource Manager 堆疊的基礎上。 因此，Cloud Explorer 了解 Azure 資源群組之類的資源，以及邏輯應用程式和 API 應用程式之類的 Azure 服務，並且支援[角色型存取控制](/azure/role-based-access-control/role-assignments-portal) (RBAC)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 * Visual Studio 2015 與[Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657)。
 * Microsoft Azure 帳戶 - 如果您沒有帳戶，您可以[申請免費試用](https://go.microsoft.com/fwlink/?LinkId=623901)，或是[啟用您的 Visual Studio 訂閱者權益](https://go.microsoft.com/fwlink/?LinkId=623901)。

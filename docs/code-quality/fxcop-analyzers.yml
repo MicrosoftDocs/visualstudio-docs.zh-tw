@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Migrate from legacy analysis (FxCop) to source analysis (FxCop analyzers)
-summary: Learn how to analyze code for the first time or how to migrate from binary analysis (FxCop) to the new way of analyzing managed code using source analysis (FxCop analyzers).
+title: 從舊版分析（FxCop）遷移至來源分析（FxCop 分析器）
+summary: 瞭解如何第一次分析程式碼，或如何從二進位分析（FxCop）遷移至使用來源分析（FxCop 分析器）分析 managed 程式碼的新方式。
 metadata:
-  title: FxCop migration documentation
-  description: Learn how to move from legacy binary analysis (FxCop) to source analysis (FxCop analyzers) when you analyze code.
+  title: FxCop 遷移檔
+  description: 瞭解如何在分析程式碼時，從舊版二進位分析（FxCop）移至來源分析（FxCop 分析器）。
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -20,31 +20,31 @@ metadata:
   ms.lasthandoff: 11/22/2019
   ms.locfileid: "74316382"
 landingContent:
-- title: Introduction to code analysis
+- title: 程式碼分析簡介
   linkLists:
   - linkListType: overview
     links:
-    - text: Overview of code analyzers
+    - text: 程式碼分析器的總覽
       url: roslyn-analyzers-overview.md
   - linkListType: download
     links:
-    - text: Install code analyzers
+    - text: 安裝程式碼分析器
       url: install-roslyn-analyzers.md
   - linkListType: how-to-guide
     links:
-    - text: Set rule severity and suppress errors
+    - text: 設定規則嚴重性和隱藏錯誤
       url: use-roslyn-analyzers.md
-    - text: Command-line usage
+    - text: 命令列使用方式
       url: use-roslyn-analyzers.md#command-line-usage
-- title: Migrate off legacy analysis
+- title: 遷移舊版分析
   linkLists:
   - linkListType: overview
     links:
-    - text: What's different
+    - text: 有何不同
       url: roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis
   - linkListType: get-started
     links:
-    - text: FAQ about FxCop analyzers
+    - text: FxCop 分析器的常見問題
       url: fxcop-analyzers-faq.md
   - linkListType: download
     links:
@@ -52,15 +52,15 @@ landingContent:
       url: install-fxcop-analyzers.md
   - linkListType: how-to-guide
     links:
-    - text: Configure FxCop analyzers
+    - text: 設定 FxCop 分析器
       url: configure-fxcop-analyzers.md
-    - text: Use predefined rule sets
+    - text: 使用預先定義的規則集
       url: analyzer-rule-sets.md
   - linkListType: reference
     links:
-    - text: Ported and unported rules
+    - text: 已移植和 unported license 規則
       url: fxcop-rule-port-status.md
-- title: Other types of code analysis
+- title: 其他類型的程式碼分析
   linkLists:
   - linkListType: overview
     links:

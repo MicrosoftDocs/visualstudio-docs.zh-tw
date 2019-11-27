@@ -83,7 +83,7 @@ ms.locfileid: "74294695"
 - CertMgr.exe，這是 Internet Explorer 的元件，因此存在於 Windows 98 和所有更新版本上。 如需詳細資訊，請參閱[certmgr.msc .exe （憑證管理員工具）](https://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb)。  
   
 ### <a name="create-a-clickonce-application"></a>建立 ClickOnce 應用程式  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式是 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 用戶端應用程式，並結合描述應用程式及提供安裝參數的資訊清單檔案。 您可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 中的 [發行] 命令 ，將程式變成 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 應用程式。 或者，您可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 隨附的工具，產生 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]部署所需的所有檔案。 如需詳細步驟[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式是 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 用戶端應用程式，並結合描述應用程式及提供安裝參數的資訊清單檔案。 您可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 中的 [發行] 命令 ，將程式變成 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]應用程式。 或者，您可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 隨附的工具，產生 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]部署所需的所有檔案。 如需詳細步驟[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
  信任的應用程式部署是 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]所特有，並且僅能與 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式搭配使用。  
   

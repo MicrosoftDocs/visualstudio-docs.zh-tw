@@ -29,7 +29,7 @@ ms.locfileid: "74297818"
 
   - \* windows.net
 
-  - *.microsoftonline.com
+  - \* microsoftonline.com
 
   - *.visualStudio.com
 

@@ -32,7 +32,7 @@ ms.locfileid: "74297115"
 >
 > 您可以透過 **Monitor** 模式執行代理程式，即可在 IntelliTrace 資料中收集效能相關事件。 **Monitor** 模式的效能影響低於 **Trace** 模式或 **IntelliTrace 獨立收集器**。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。 請參閱[使用 Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md)。
 
- **需求**
+ **Requirements**
 
 - .NET Framework 3.5、4 或 4.5
 
@@ -47,7 +47,7 @@ ms.locfileid: "74297115"
 
 - [如何開始？](#GetStarted)
 
-- [如何取得大部分的資料，而不會讓應用程式變慢？](#Minimizing)
+- [如何取得大部分的資料，而不會讓 App 變慢？](#Minimizing)
 
 - [我還可以在哪裏取得 IntelliTrace 資料？](#WhereElse)
 
@@ -383,7 +383,7 @@ ms.locfileid: "74297115"
 
 - 從 Visual Studio Enterprise 中的 IntelliTrace 偵錯工具會話，參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
-- 從 Microsoft Test Manager 中的測試工作階段，請參閱[如何：收集 IntelliTrace 資料以協助偵錯困難的問題](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015)。
+- 從 Microsoft Test Manager 中的測試工作階段，請參閱 [如何：收集 IntelliTrace 資料以協助偵錯困難的問題](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015)。
 
 ## <a name="where-can-i-get-more-information"></a>哪裡可以取得詳細資訊？
  [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)

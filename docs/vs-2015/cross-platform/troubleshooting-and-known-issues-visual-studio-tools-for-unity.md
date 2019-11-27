@@ -31,7 +31,7 @@ ms.locfileid: "74297666"
   
 1. 從您的 Unity 專案中刪除舊的方案和專案檔。 在您的 Unity 專案根目錄中，找出並刪除所有 Visual Studio .sln 和 .*proj 檔。  
   
-2. 將 Visual Studio Tools for Unity 套件匯入 Unity 專案。 如需如何匯入 VSTU 套件的相關資訊，請參閱[使用者入門](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md)頁面上的＜設定 Visual Studio Tools for Unity＞。  
+2. 將 Visual Studio Tools for Unity 套件匯入 Unity 專案。 如需如何匯入 VSTU 套件的相關資訊，請參閱 [使用者入門](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) 頁面上的＜設定 Visual Studio Tools for Unity＞。  
   
 3. 產生新的方案和專案檔。 如果您想要立即產生檔案，請在 Unity Editor 主功能表上，選擇 [Visual Studio Tools]、[Generate Project Files]。 否則，您可以視需要略過這個步驟；當您選擇 [Visual Studio Tools]、[Open in Visual Studio]時，Visual Studio Tools for Unity 會自動產生新檔案。  
   

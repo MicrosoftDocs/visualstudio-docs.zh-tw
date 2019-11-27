@@ -54,7 +54,7 @@ ms.locfileid: "74294327"
  ![](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png "717956a8-b6a5-4e37-8af3-70bcfc78c82a") ![](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png "8fbbbb21-be83-4cf6-903b-3a49f00c9860")
 
 ### <a name="draw-a-straight-line"></a>繪製直線
- 使用 [畫筆] 工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")，或 [線條] 工具 ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf")。
+ 使用 [**畫筆**] ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")工具，或 [線條![ ](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf")] 工具。
 
  **使用畫筆工具**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")
 
@@ -65,36 +65,36 @@ ms.locfileid: "74294327"
  在畫板上，從想要讓線條開始的地方拖曳起，然後再於想要線條結束的點上放開。
 
 ### <a name="draw-a-curve"></a>繪製曲線
- 使用 [畫筆] 工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")。
+ 使用 [**畫筆**] ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")工具。
 
  在畫板上，按一次可定義線條的起始點，然後按一下並拖曳指標可建立所需的曲線。
 
  如果您想要關閉路徑，請按一下線條的第一個點。
 
 ### <a name="change-the-shape-of-a-curve"></a>變更曲線的形狀
- 使用 [直接選取] 工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362")。
+ 使用 [**直接選取**] ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362")工具。
 
  按一下圖形，然後拖曳圖形上的任一點可變更曲線圖形。
 
 ### <a name="draw-a-free-form-path"></a>繪製任意形狀的路徑
- 使用 [鉛筆] 工具 ![](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f-46c9-b012-987ee63450cd")。
+ 使用 [**鉛筆**] ![](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f-46c9-b012-987ee63450cd")工具。
 
  在畫板上，繪製任意形狀的路徑，就像使用真正的鉛筆一樣。
 
 ### <a name="remove-part-of-a-path"></a>移除路徑的一部分
- 使用 [直接選取] 工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362")。
+ 使用 [**直接選取**] ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362")工具。
 
  選取包含所要刪除線段的路徑，然後按一下 [刪除] 按鈕。
 
 ### <a name="remove-a-point-in-a-path"></a>移除路徑中的點
- 使用 [選取] 工具 ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")，和 [畫筆] 工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")。
+ 使用 [**選取**] ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")工具和 [**畫筆**] ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")工具。
 
- 使用 [選取] 工具 ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") 來選取路徑。 然後，使用 [畫筆] 工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") 按一下您要移除的點。
+ 使用 [**選取**] ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")工具來選取路徑。 然後，使用 [**畫筆**] ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")工具按一下您要移除的點。
 
 ### <a name="add-a-point-to-a-path"></a>將點加入至路徑
- 使用 [選取] 工具 ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")，和 [畫筆] 工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")。
+ 使用 [**選取**] ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")工具和 [**畫筆**] ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")工具。
 
- 使用 [選取] 工具 ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") 來選取路徑。 使用 [畫筆] 工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") 按一下路徑上您要加入點的任何位置。
+ 使用 [**選取**] ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")工具來選取路徑。 使用 [**畫筆**] ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")工具按一下路徑上您要加入點的任何位置。
 
 ## <a name="Convert"></a> 將圖形轉換成路徑
  若要以修改路徑的相同方式來修改圖形，請將圖形轉換為路徑。

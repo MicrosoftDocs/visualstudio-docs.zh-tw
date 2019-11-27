@@ -36,7 +36,7 @@ ms.locfileid: "74300729"
  啟動載入器會先偵測是否已安裝所有必要條件。 如果未安裝必要條件，啟動載入器會先顯示授權合約。 接著，在使用者接受授權合約之後，就會開始安裝必要條件。 不過，如果啟動載入器偵測到所有必要條件，就會直接啟動應用程式安裝程式。  
   
 ## <a name="creating-custom-packages"></a>建立自訂套件  
- 您可以使用 Visual Studio 中的 XML 編輯器產生資訊清單。 如需詳細資訊，請參閱 [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) 與 [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md)。 若要查看建立啟動載入器套件的範例，請參閱[逐步解說：建立自訂啟動載入器以顯示隱私權提示](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)。  
+ 您可以使用 Visual Studio 中的 XML 編輯器產生資訊清單。 如需詳細資訊，請參閱 [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) 與 [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md)。 如需查看建立啟動載入器套件的範例，請參閱 [Walkthrough: Creating a Custom Bootstrapper to Show a Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)。  
   
  若要建立啟動載入器套件，您必須將可轉散發套件以 EXE 或 MSI 檔案形式提供給啟動載入器資訊清單產生器。 啟動載入器資訊清單產生器接著會建立下列檔案：  
   
@@ -70,7 +70,7 @@ ms.locfileid: "74300729"
   
   `package.xml`  
   
-  最後，將可轉散發檔案複製到啟動載入器資料夾位置中。 如需詳細資訊，請參閱[如何：建立當地語系化啟動載入器套件](../deployment/how-to-create-a-localized-bootstrapper-package.md)。  
+  最後，將可轉散發檔案複製到啟動載入器資料夾位置中。 如需詳細資訊，請參閱 [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md)。  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  

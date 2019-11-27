@@ -1,5 +1,5 @@
 ---
-title: How to Roundtrip Extensions
+title: 如何往返擴充功能
 ms.date: 06/25/2017
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
@@ -15,93 +15,93 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74316493"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>How to: Make extensions compatible with Visual Studio 2017 and Visual Studio 2015
+# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>如何：讓擴充功能與 Visual Studio 2017 和 Visual Studio 2015 相容
 
-This document explains how to make extensibility projects round-trip between Visual Studio 2015 and Visual Studio 2017. After completing this upgrade, a project will be able to open, build, install, and run in both Visual Studio 2015 and Visual Studio 2017. As a reference, some extensions that can round-trip between Visual Studio 2015 and Visual Studio 2017 can be found in the [VS SDK extensibility samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+本檔說明如何在 Visual Studio 2015 和 Visual Studio 2017 之間進行擴充性專案的往返。 完成此升級之後，專案將能夠在 Visual Studio 2015 和 Visual Studio 2017 中開啟、建立、安裝及執行。 如需參考，您可以在[VS SDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples)擴充性範例中找到一些可以在 Visual Studio 2015 和 Visual Studio 2017 之間來回往返的延伸模組。
 
-If you only intend to build in Visual Studio 2017, but want the output VSIX to run in both Visual Studio 2015 and Visual Studio 2017, then refer to the [Extension migration document](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
-
-> [!NOTE]
-> Due to changes in Visual Studio between versions, some things that worked in one version don't work in another. Ensure that the features you are trying to access are available in both versions or the extension will have unexpected results.
-
-Here is an outline of the steps you'll complete in this document to round-trip a VSIX:
-
-1. Import correct NuGet packages.
-2. Update Extension Manifest:
-    * Installation target
-    * Prerequisites
-3. Update CSProj:
-    * Update `<MinimumVisualStudioVersion>`.
-    * Add the `<VsixType>` property.
-    * Add the debugging property `($DevEnvDir)` 3 times.
-    * Add conditions for importing build tools and targets.
-
-4. Build and Test
-
-## <a name="environment-setup"></a>Environment setup
-
-This document assumes that you have the following installed on your machine:
-
-* Visual Studio 2015 with the VS SDK installed
-* Visual Studio 2017 with the Extensibility workload installed
-
-## <a name="recommended-approach"></a>Recommended approach
-
-It is highly recommended to start this upgrade with Visual Studio 2015, instead of Visual Studio 2017. The main benefit of developing in Visual Studio 2015 is to ensure that you do not reference assemblies that are not available in Visual Studio 2015. If you do development in Visual Studio 2017, there is a risk that you might introduce a dependency on an assembly that only exists in Visual Studio 2017.
-
-## <a name="ensure-there-is-no-reference-to-projectjson"></a>Ensure there is no reference to project.json
-
-Later in this document, we will insert conditional import statements in to your * *.csproj* file. This won't work if your NuGet references are stored in *project.json*. As such, it is advised to move all NuGet references to the *packages.config* file.
-If your project contains a *project.json* file:
-
-* Take a note of the references in *project.json*.
-* From the **Solution Explorer**, delete the *project.json* file from the project. This deletes the *project.json* file and removes it from the project.
-* Add the NuGet references back in to the project:
-  * Right-click on the **Solution** and choose **Manage NuGet Packages for Solution**.
-  * Visual Studio automatically creates the *packages.config* file for you.
+如果您只想要在 Visual Studio 2017 中建立，但希望輸出 VSIX 同時在 Visual Studio 2015 和 Visual Studio 2017 中執行，則請參閱[延伸模組遷移檔](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。
 
 > [!NOTE]
-> If your project contained EnvDTE packages, they may need to be added by right clicking on **References** selecting **Add reference** and adding the appropriate reference. Using NuGet packages may create errors while trying to build your project.
+> 由於版本之間 Visual Studio 的變更，因此在某個版本中運作的某些專案不會在另一個版本中執行。 請確認您嘗試存取的功能在這兩個版本中都可使用，否則延伸模組將會產生非預期的結果。
 
-## <a name="add-appropriate-build-tools"></a>Add appropriate build tools
+以下是您將在本檔中完成的步驟概述，以反復存取 VSIX：
 
-We need to be sure to add build tools that will allow us to build and debug appropriately. Microsoft has created an assembly for this called Microsoft.VisualStudio.Sdk.BuildTasks.
+1. 匯入正確的 NuGet 套件。
+2. 更新延伸模組資訊清單：
+    * 安裝目標
+    * 必要條件
+3. 更新 .Csproj：
+    * 更新 `<MinimumVisualStudioVersion>`。
+    * 新增 `<VsixType>` 屬性。
+    * 將 [調試] 屬性加入 `($DevEnvDir)` 3 次。
+    * 新增匯入組建工具和目標的條件。
 
-To build and deploy a VSIXv3 in both Visual Studio 2015 and 2017, you will require the following NuGet packages:
+4. 組建和測試
 
-版本 | Built Tools
+## <a name="environment-setup"></a>環境設定
+
+本檔假設您已在電腦上安裝下列各項：
+
+* 已安裝 VS SDK 的 Visual Studio 2015
+* 已安裝擴充性工作負載的 Visual Studio 2017
+
+## <a name="recommended-approach"></a>建議的方法
+
+強烈建議使用 Visual Studio 2015 來啟動此升級，而不是 Visual Studio 2017。 在 Visual Studio 2015 中進行開發的主要優點，是為了確保您不會參考 Visual Studio 2015 中未提供的元件。 如果您在 Visual Studio 2017 中進行開發，則可能會對只存在於 Visual Studio 2017 中的元件引入相依性。
+
+## <a name="ensure-there-is-no-reference-to-projectjson"></a>請確定沒有對專案的參考。 json
+
+稍後在本檔中，我們會在您的 * *.csproj*檔案中插入條件式匯入語句。 如果您的 NuGet 參考儲存在*專案 json*中，這將無法正常執行。 因此，建議您將所有 NuGet 參考移至*封裝 .config*檔案。
+如果您的專案包含*專案 json*檔案：
+
+* 記下*專案. json*中的參考。
+* 從**方案總管**，刪除專案中的*專案. json*檔案。 這會刪除*專案. json*檔案，並將它從專案中移除。
+* 將 NuGet 參考重新加入至專案：
+  * 以滑鼠右鍵按一下**方案**，然後選擇 [**管理方案的 NuGet 套件**]。
+  * Visual Studio 會自動為您建立*封裝 .config*檔案。
+
+> [!NOTE]
+> 如果您的專案包含 EnvDTE 套件，您可能需要以滑鼠右鍵按一下 [**參考**]，然後選取 [新增**參考**] 並新增適當的參考來新增它們。 使用 NuGet 套件時，可能會在嘗試建立您的專案時產生錯誤。
+
+## <a name="add-appropriate-build-tools"></a>新增適當的組建工具
+
+我們必須確定新增組建工具，讓我們能夠適當地建立和進行偵錯工具。 Microsoft 已建立這個名為 VisualStudio 的元件。 BuildTasks。
+
+若要在 Visual Studio 2015 和2017中建立及部署 VSIXv3，您將需要下列 NuGet 套件：
+
+版本 | 建立的工具
 --- | ---
-Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
-Visual Studio 2017 | Microsoft.VSSDK.BuildTool
+Visual Studio 2015 | VisualStudio. BuildTasks 14。0
+Visual Studio 2017 | VSSDK. BuildTool
 
 方法如下：
 
-* Add the NuGet package Microsoft.VisualStudio.Sdk.BuildTasks.14.0 to your project.
-* If your project does not contain Microsoft.VSSDK.BuildTools, add it.
-* Ensure the Microsoft.VSSDK.BuildTools version is 15.x or greater.
+* 將 VisualStudio NuGet 套件新增至您的專案。
+* 如果您的專案不包含 VSSDK. BuildTools，請將它加入。
+* 請確定 VSSDK. BuildTools 版本為 15. x 或更高。
 
-## <a name="update-extension-manifest"></a>Update extension manifest
+## <a name="update-extension-manifest"></a>更新延伸模組資訊清單
 
-### <a name="1-installation-targets"></a>1. Installation targets
+### <a name="1-installation-targets"></a>1. 安裝目標
 
-We need to tell Visual Studio what versions to target for building a VSIX. Typically, these references are either to version 14.0 (Visual Studio 2015), version 15.0 (Visual Studio 2017), or version 16.0 (Visual Studio 2019). In our case, we want to build a VSIX that will install an extension for both, so we need to target both versions. If you want your VSIX to build and install on versions earlier than 14.0, this can be done by setting the earlier version number; however, version 10.0 and earlier are no longer supported.
+我們需要告訴 Visual Studio 要以何種版本做為建立 VSIX 的目標。 這些參考通常是14.0 版（Visual Studio 2015）、15.0 版（Visual Studio 2017）或版本16.0 （Visual Studio 2019）。 在我們的案例中，我們想要建立一個 VSIX 來安裝兩者的延伸模組，因此我們需要以這兩個版本為目標。 如果您想要在14.0 之前的版本上建立和安裝 VSIX，可以藉由設定舊版號碼來完成此作業。不過，已不再支援10.0 版和更早版本。
 
-* Open the *source.extension.vsixmanifest* file in Visual Studio.
-* Open the **Install Targets** tab.
-* Change the **Version Range** to [14.0, 17.0). The '[' tells Visual Studio to include 14.0 and all versions past it. The  ')' tells Visual Studio to include all versions up to, but not including, version 17.0.
-* Save all changes and close all instances of Visual Studio.
+* 在 Visual Studio 中，開啟*extension.vsixmanifest*檔案。
+* 開啟 [**安裝目標**] 索引標籤。
+* 將**版本範圍**變更為 [14.0，17.0）。 ' [' 會告訴 Visual Studio 包含14.0 和所有過去的版本。 '） ' 會告知 Visual Studio 包含17.0 版以上的所有版本，但不包括在內。
+* 儲存所有變更，並關閉 Visual Studio 的所有實例。
 
-![Installation Targets Image](media/visual-studio-installation-targets-example.png)
+![安裝目標映射](media/visual-studio-installation-targets-example.png)
 
-### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Adding Prerequisites to the *extension.vsixmanifest* file
+### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. 將必要條件新增至*extension.vsixmanifest*檔案
 
-We need the Visual Studio Core Editor as a prerequisite. Open Visual Studio and use the updated manifest designer to insert the prerequisites.
+我們需要 Visual Studio 核心編輯器做為必要條件。 開啟 Visual Studio，並使用更新的資訊清單設計工具來插入必要條件。
 
-To do this manually:
+若要手動執行此動作：
 
-* Navigate to the project directory in File Explorer.
-* Open the *extension.vsixmanifest* file with a text editor.
-* Add the following tag:
+* 流覽至 [檔案瀏覽器] 中的專案目錄。
+* 使用文字編輯器開啟*extension.vsixmanifest*檔案。
+* 新增下列標記：
 
 ```xml
 <Prerequisites>
@@ -112,38 +112,38 @@ To do this manually:
 * 儲存並關閉檔案。
 
 > [!NOTE]
-> You may need to manually edit the Prerequisite version to ensure it is compatible with all versions of Visual Studio 2017. This is because the designer will insert the minimum version as your current version of Visual Studio (for example, 15.0.26208.0). However, since other users may have an earlier version, you will want to manually edit this to 15.0.
+> 您可能需要手動編輯先決條件版本，以確保它與所有版本的 Visual Studio 2017 相容。 這是因為設計工具會將最小版本插入 Visual Studio 您目前的版本（例如，15.0.26208.0）。 不過，由於其他使用者可能會有較舊的版本，因此您會想要手動將此編輯為15.0。
 
-At this point, your manifest file should look something like this:
+此時，您的資訊清單檔看起來應該像這樣：
 
-![Prerequisites Example](media/visual-studio-prerequisites-example.png)
+![必要條件範例](media/visual-studio-prerequisites-example.png)
 
-## <a name="modify-the-project-file-myprojectcsproj"></a>Modify the project file (myproject.csproj)
+## <a name="modify-the-project-file-myprojectcsproj"></a>修改專案檔（myproject .csproj）
 
-It is highly recommended to have a reference to a modified .csproj open while doing this step. You can find several examples [here](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Select any extensibility sample, find the *.csproj* file for reference and execute the following steps:
+強烈建議您在執行此步驟時，參考已修改的 .csproj 開啟。 您可以在[這裡](https://github.com/Microsoft/VSSDK-Extensibility-Samples)找到幾個範例。 選取任何擴充性範例，尋找 *.csproj*檔案以供參考，然後執行下列步驟：
 
-* Navigate to the project directory in **File Explorer**.
-* Open the *myproject.csproj* file with a text editor.
+* 流覽至 [檔案**瀏覽器**] 中的專案目錄。
+* 使用文字編輯器開啟*myproject*檔案。
 
-### <a name="1-update-the-minimumvisualstudioversion"></a>1. Update the MinimumVisualStudioVersion
+### <a name="1-update-the-minimumvisualstudioversion"></a>1. 更新 MinimumVisualStudioVersion
 
-* Set the minimum visual studio version to `$(VisualStudioVersion)` and add a conditional statement for it. Add these tags if they do not exist. Ensure the tags are set as below:
+* 將最小的 visual studio 版本設定為 `$(VisualStudioVersion)`，並為其新增條件陳述式。 新增這些標記（如果不存在）。 請確定標記設定如下：
 
 ```xml
 <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
 <MinimumVisualStudioVersion>$(VisualStudioVersion)</MinimumVisualStudioVersion>
 ```
 
-### <a name="2-add-the-vsixtype-property"></a>2. Add the VsixType property.
+### <a name="2-add-the-vsixtype-property"></a>2. 加入 VsixType 屬性。
 
-* Add the following tag `<VsixType>v3</VsixType>` to a property group.
+* 將下列標記 `<VsixType>v3</VsixType>` 新增至屬性群組。
 
 > [!NOTE]
-> It is recommended to add this below the `<OutputType></OutputType>` tag.
+> 建議您將此新增至 `<OutputType></OutputType>` 標籤下方。
 
-### <a name="3-add-the-debugging-properties"></a>3. Add the debugging properties
+### <a name="3-add-the-debugging-properties"></a>3. 加入調試屬性
 
-* Add the following property group:
+* 新增下列屬性群組：
 
 ```xml
 <PropertyGroup>
@@ -153,7 +153,7 @@ It is highly recommended to have a reference to a modified .csproj open while do
 </PropertyGroup>
 ```
 
-* Delete all instances of the following code example from the *.csproj* file and any *.csproj.user* files:
+* 從 *.csproj*檔案和任何 *.csproj. user*檔案中，刪除下列程式碼範例的所有實例：
 
 ```xml
 <StartAction>Program</StartAction>
@@ -161,56 +161,56 @@ It is highly recommended to have a reference to a modified .csproj open while do
 <StartArguments>/rootsuffix Exp</StartArguments>
 ```
 
-### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. Add conditions to the build tools imports
+### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. 將條件新增至組建工具匯入
 
-* Add additional conditional statements to the `<import>` tags that have a Microsoft.VSSDK.BuildTools reference. Insert `'$(VisualStudioVersion)' != '14.0' And` at the front of the condition statement. These statements will appear in the header and footer of the csproj file.
+* 將額外的條件陳述式加入至 VSSDK BuildTools 參考的 `<import>` 標記。 在條件陳述式的前方插入 `'$(VisualStudioVersion)' != '14.0' And`。 這些語句會出現在 .csproj 檔案的頁首和頁尾中。
 
-例如:
+例如：
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
-* Add additional conditional statements to the `<import>` tags that have a Microsoft.VisualStudio.Sdk.BuildTasks.14.0. Insert `'$(VisualStudioVersion)' == '14.0' And` at the front of the condition statement. These statements will appear in the header and footer of the csproj file.
+* 將其他條件陳述式加入至具有 VisualStudio 的 `<import>` 標記中。 在條件陳述式的前方插入 `'$(VisualStudioVersion)' == '14.0' And`。 這些語句會出現在 .csproj 檔案的頁首和頁尾中。
 
-例如:
+例如：
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
-* Add additional conditional statements to the `<Error>` tags that have a Microsoft.VSSDK.BuildTools reference. Do this by inserting `'$(VisualStudioVersion)' != '14.0' And` at the front of the condition statement. These statements will appear in the footer of the csproj file.
+* 將額外的條件陳述式加入至 VSSDK BuildTools 參考的 `<Error>` 標記。 若要這麼做，請在條件陳述式的前方插入 `'$(VisualStudioVersion)' != '14.0' And`。 這些語句會出現在 .csproj 檔案的頁尾中。
 
-例如:
+例如：
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* Add additional conditional statements to the `<Error>` tags that have a Microsoft.VisualStudio.Sdk.BuildTasks.14.0. Insert `'$(VisualStudioVersion)' == '14.0' And` at the front of the condition statement. These statements will appear in the footer of the csproj file.
+* 將其他條件陳述式加入至具有 VisualStudio 的 `<Error>` 標記中。 在條件陳述式的前方插入 `'$(VisualStudioVersion)' == '14.0' And`。 這些語句會出現在 .csproj 檔案的頁尾中。
 
-例如:
+例如：
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
-* Save the csproj file and close it.
+* 儲存 .csproj 檔案並加以關閉。
 
-## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2017"></a>Test the extension installs in Visual Studio 2015 and Visual Studio 2017
+## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2017"></a>在 Visual Studio 2015 和 Visual Studio 2017 中測試延伸模組安裝
 
-At this point, your project should be ready to build a VSIXv3 that can install on both Visual Studio 2015 and Visual Studio 2017.
+此時，您的專案應該已準備好建立可在 Visual Studio 2015 和 Visual Studio 2017 上安裝的 VSIXv3。
 
-* Open your project in Visual Studio 2015.
-* Build your project and confirm in the output that a VSIX builds correctly.
-* Navigate to your project directory.
-* Open the *\bin\Debug* folder.
-* Double-click on the VSIX file and install your extension on Visual Studio 2015 and Visual Studio 2017.
-* Make sure that you can see the extension in **Tools** > **Extensions and Updates** in the **Installed** section.
-* Attempt to run/use the extension to check that it works.
+* 在 Visual Studio 2015 中開啟您的專案。
+* 建立您的專案，並在輸出中確認 VSIX 已正確建立。
+* 流覽至您的專案目錄。
+* 開啟 [ *\bin\Debug* ] 資料夾。
+* 按兩下 VSIX 檔案，並在 Visual Studio 2015 和 Visual Studio 2017 上安裝您的擴充功能。
+* 請確定您可以在 [**已安裝**] 區段中的 [**工具**] > [**延伸模組和更新**] 中看到延伸模組。
+* 嘗試執行/使用延伸模組來檢查其是否正常運作。
 
-![Find a VSIX](media/finding-a-VSIX-example.png)
+![尋找 VSIX](media/finding-a-VSIX-example.png)
 
 > [!NOTE]
-> If your project hangs with the message **opening the file**, force shut down Visual Studio, navigate to your project directory, show hidden folders, and delete the *.vs* folder.
+> 如果您的專案在**開啟**檔案的訊息停止回應，請強制關閉 Visual Studio、流覽至您的專案目錄、顯示隱藏的資料夾，然後刪除*vs*資料夾。
  

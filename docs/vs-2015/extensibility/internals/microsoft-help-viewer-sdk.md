@@ -49,7 +49,7 @@ ms.locfileid: "74300714"
 
   Visual Studio 商標套件支援的控制項：
 
-- 「連結」
+- 連結
 
 - CodeSnippet
 
@@ -452,7 +452,7 @@ some F# code
 |功能：|**意見反應、頁尾和標誌**|
 |用法:|提供意見反應控制項給客戶，以透過電子郵件提供有關目前主題的意見反應。  內容的著作權文字。  標誌定義。|
 |**目**|**值（這些字串可以修改以符合內容採用者的需求）。**|
-|詳情|© 2013 Microsoft Corporation。 著作權所有，並保留一切權利。|
+|詳情|© 2013 Microsoft Corporation. 著作權所有，並保留一切權利。|
 |SendFeedback|\<href = "{0}" {1}> 將此主題的意見反應傳送給 Microsoft\<。|
 |No-results-found-feedbacklink||
 |LogoTitle|[!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]|
@@ -473,7 +473,7 @@ some F# code
 |LinkTableTitle|連結資料表|
 |TopicEnuLinkText|請參閱本主題\</a > 的英文版，這可在您的電腦上取得。|
 |TopicOnlineLinkText|觀看本主題 \<href = "{0}" {1}> online\</a >|
-|OnlineText|Online|
+|OnlineText|線上|
 |功能：|**Video 音訊控制項**|
 |用法:|顯示影片內容的元素和文字|
 |**目**|**值**|
@@ -510,7 +510,7 @@ some F# code
 |HomePageNoBooksInstalled|在您的電腦上找不到任何內容。|
 |HomePageHelpSettings|說明內容設定|
 |HomePageHelpSettingsText|\<p > 您目前的設定是本機說明。 [說明檢視器] 會顯示您已在電腦上安裝的內容。\<br/> 若要變更說明內容的來源，請在 [Visual Studio] 功能表列上，選擇 [\<範圍樣式 = "{0}" > 說明]，將 [說明喜好設定]\</span >。\<br/>\</p >|
-|1Mb|大小|
+|1Mb|MB|
 
  **商標 .js**
 
@@ -555,7 +555,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**檔案**|**用法**|**顯示的內容來源**|
+|**檔案**|**使用**|**顯示的內容來源**|
 |首頁 .htm|此頁面會顯示目前已安裝的內容，以及任何其他適合使用者呈現其內容的訊息。  此檔案有其他中繼資料屬性 "Microsoft.Help.Id" content = "-1"，這會將此內容放在本機內容目錄的頂端。||
 ||< META_HOME_PAGE_TITLE_ADD/>|商標 .xml、tag \<HomePageTitle >|
 ||< HOME_PAGE_INTRODUCTION_SECTION_ADD/>|商標 .xml、tag \<HomePageIntroduction >|
@@ -590,7 +590,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**檔案**|**用法**|**範例**|
+|**檔案**|**使用**|**範例**|
 |清除 .gif|用來呈現可折迭的區域||
 |footer_slice .gif|頁尾簡報||
 |info_icon .gif|顯示資訊時使用|免責聲明|
@@ -690,7 +690,7 @@ some F# code
 
  本逐步解說示範如何將說明內容併入 Visual Studio Shell 應用程式中，然後加以部署。
 
- **需求**
+ **Requirements**
 
 1. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]
 

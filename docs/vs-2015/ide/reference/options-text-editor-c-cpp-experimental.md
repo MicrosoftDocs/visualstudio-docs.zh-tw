@@ -23,12 +23,12 @@ ms.locfileid: "74297859"
 
 藉由變更這些選項，您可以變更進行 C 或 C++ 程式設計時之 IntelliSense 和瀏覽資料庫的相關行為。
 
- 若要存取這個頁面，請在 [選項] 對話方塊的左窗格中依序展開 [文字編輯器] 和 [C/C++]，然後選擇 [實驗]。
+ 若要存取這個頁面，請在 [選項] 對話方塊的左窗格中依序展開 [文字編輯器]和 [C/C++]，然後選擇 [實驗]。
 
  Visual Studio 2015 Update 1 RC 安裝提供這些功能。
 
 > [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱[在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
 ## <a name="browsingnavigation"></a>瀏覽/巡覽
  **啟用新的資料庫引擎**這應該會自動加速資料庫擴展，並讓 [**移至定義**] 和 [**尋找所有參考**] 等作業的所有資料庫作業更快速（不會遺失精確度）。 (只要關閉並重新開啟您的方案，即可套用變更，而不必重新啟動 Visual Studio)。

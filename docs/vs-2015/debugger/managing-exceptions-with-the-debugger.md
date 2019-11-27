@@ -54,20 +54,20 @@ ms.locfileid: "74301093"
 - 如果您曾設定 [Just My Code](../debugger/just-my-code.md)，且偵錯工具設定為在非由使用者程式碼所處理的任何例外狀況時中斷。  
   
 > [!NOTE]
-> ASP.NET 具有最上層例外狀況處理常式，這會在瀏覽器中顯示錯誤頁面。 它不會中斷執行，除非 [Just My Code] 已開啟。 如需範例，請參閱下方的[設定偵錯工具繼續處理使用者未處理的例外狀況](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled)。  
+> ASP.NET 具有最上層例外狀況處理常式，這會在瀏覽器中顯示錯誤頁面。 它不會中斷執行，除非 [Just My Code] 已開啟。 如需範例，請參閱下列 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 。  
   
 > [!NOTE]
 > 在 Visual Basic 應用程式中，即使使用 On Error 樣式的錯誤處理常式，偵錯工具還是會將所有錯誤都當成例外狀況管理。  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>藉由 [例外狀況設定] 視窗管理例外狀況  
- 您可以使用 [例外狀況設定] 視窗來指定哪些例外狀況 (或例外狀況的集合) 會導致偵錯工具中斷，並指定在哪個點上您會想要中斷。 您可以新增或刪除例外狀況，或指定要中斷的例外狀況。 在經由 [偵錯] / [Windows] / [例外狀況設定] 開啟方案時，此視窗隨即開啟。  
+ 您可以使用 [例外狀況設定] 視窗來指定哪些例外狀況 (或例外狀況的集合) 會導致偵錯工具中斷，並指定在哪個點上您會想要中斷。 您可以新增或刪除例外狀況，或指定要中斷的例外狀況。 在經由 [偵錯] / [Windows] / [例外狀況設定]開啟方案時，此視窗隨即開啟。  
   
  您可以使用 [例外狀況設定] 工具列中的 [搜尋] 視窗，尋找特定的例外狀況，或使用搜尋來篩選特定命名空間 (例如 [System.IO])。  
   
 ### <a name="setting-the-debugger-to-break-when-an-exception-is-thrown"></a>設定偵錯工具在擲回例外狀況時中斷  
  偵錯工具可以在擲回例外狀況的位置中斷執行，讓您可以在叫用處理常式之前有機會檢查例外狀況。  
   
- 在 [例外狀況設定] 視窗中，展開例外狀況分類的節點 (例如，[Common Language Runtime 例外狀況] 表示.NET 例外狀況)，並選取該類別目錄內的特定例外狀況核取方塊 (例如 [System.AccessViolationException])。 您也可以選取例外狀況的整個類別。  
+ 在 [例外狀況設定] 視窗中，展開例外狀況分類的節點 (例如，[Common Language Runtime 例外狀況]表示.NET 例外狀況)，並選取該類別目錄內的特定例外狀況核取方塊 (例如 [System.AccessViolationException])。 您也可以選取例外狀況的整個類別。  
   
  ![已檢查 AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
   
@@ -91,7 +91,7 @@ ms.locfileid: "74301093"
    }  
    ```  
   
-    當您在偵錯工具中執行此程式碼時，如果您在 [例外狀況設定] 中核取了 [AccessViolationException]，則執行會在 `throw` 行中斷。 然後，您可以繼續執行。 主控台應該會顯示這兩行：  
+    當您在偵錯工具中執行此程式碼時，如果您在 [例外狀況設定] **try/catch** 中核取了 [AccessViolationException]，則執行會在 `throw` 行中斷。 然後，您可以繼續執行。 主控台應該會顯示這兩行：  
   
    ```  
    caught exception  
@@ -142,7 +142,7 @@ ms.locfileid: "74301093"
    ![還原例外狀況設定中的預設值](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
 ### <a name="BKMK_UserUnhandled"></a>設定偵錯工具以在使用者未處理的例外狀況時繼續  
- 如果您正在偵錯具有 [Just My Code](../debugger/just-my-code.md) 的 .NET 或 JavaScript 程式碼，則可以告知偵錯工具不中斷使用者程式碼中未處理，但在其他地方處理的例外狀況。  
+ 如果您正在偵錯具有 [Just My Code](../debugger/just-my-code.md)的 .NET 或 JavaScript 程式碼，則可以告知偵錯工具不中斷使用者程式碼中未處理，但在其他地方處理的例外狀況。  
   
 1. 在 [例外狀況設定] 視窗中，開啟內容功能表，方法是在視窗中按一下滑鼠右鍵，然後選取 [顯示行]。 (如果您關閉了 [Just My Code]，您就不會看到這個命令。)  
   

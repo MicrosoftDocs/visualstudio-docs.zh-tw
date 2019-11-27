@@ -56,7 +56,7 @@ ms.locfileid: "74298302"
   
     ![在組建定義中設定符號路徑 TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-    如需更多關於符號的資訊，請參閱[發佈符號資料](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
+    如需更多關於符號的資訊，請參閱 [發佈符號資料](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
   
 4. 加入這個 MSBuild 引數可以將 TFS 和符號位置加入建置資訊清單檔案中：  
   
@@ -110,7 +110,7 @@ ms.locfileid: "74298302"
 ### <a name="ManualBuild"></a> 建立建置資訊清單，以使用 Visual Studio 進行手動組建  
  遵循下列步驟自動建立專案的建置資訊清單 (BuildInfo.config 檔案)，並將檔案放在專案的輸出資料夾中。 此檔案在輸出資料夾中會顯示為 "*ProjectName*.BuildInfo.config"，但在發行 App 之後，部署資料夾中的相同檔案會重新命名為 "BuildInfo.config"。  
   
-1. 在 [方案總管] 中上傳您的 Web 專案。  
+1. 在 [方案總管]中上傳您的 Web 專案。  
   
 2. 開啟專案檔 (.csproj、.vbproj)。 加入下列程式碼行：  
   
@@ -149,7 +149,7 @@ ms.locfileid: "74298302"
  如果使用其他方法來部署 App，請確定將建置資訊清單的名稱從 "*ProjectName*.BuildInfo.config" 重新命名為 "BuildInfo.config"，並將其放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。  
   
 ## <a name="step-3-monitor-your-app"></a>步驟 3：監視 App  
- 在 Web 伺服器上設定應用程式效能監視功能，以便監視 App 是否發生問題、記錄診斷事件，以及將這些事件儲存至 IntelliTrace 記錄檔。 請參閱[監視發行是否發生部署問題](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
+ 在 Web 伺服器上設定應用程式效能監視功能，以便監視 App 是否發生問題、記錄診斷事件，以及將這些事件儲存至 IntelliTrace 記錄檔。 請參閱 [監視發行是否發生部署問題](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
   
 ## <a name="InvestigateEvents"></a>步驟 4：找到問題  
  您需要在開發電腦或其他電腦上安裝 Visual Studio Enterprise，才能檢閱記錄的事件並使用 IntelliTrace 偵錯程式碼。 您也可以使用 CodeLens、偵錯工具對應和 Code Map 等工具協助診斷問題。  
@@ -158,7 +158,7 @@ ms.locfileid: "74298302"
   
 1. 在 Visual Studio Enterprise 2013 中開啟 IntelliTrace 記錄檔 (.iTrace 檔案)。 如果同一部電腦上也安裝了 Visual Studio Enterprise，則只需按兩下該檔案。  
   
-2. 如果專案不是在方案中建置的，請選擇 [**開啟方案**]，讓 Visual Studio 自動開啟相符的方案或專案。 [問： IntelliTrace 記錄檔缺少我所部署應用程式的相關資訊。為什麼會發生這種情況？我該怎麼辦？](#InvalidConfigFile)  
+2. 如果專案不是在方案中建置的，請選擇 [開啟方案] ，讓 Visual Studio 自動開啟相符的方案或專案。 [問： IntelliTrace 記錄檔缺少我所部署應用程式的相關資訊。為什麼會發生這種情況？我該怎麼辦？](#InvalidConfigFile)  
   
      在開啟相符的方案或專案時，Visual Studio 會自動擱置所有暫止的變更。 如需關於這個擱置集的詳細資料，請查看 [輸出] 視窗或 [Team Explorer]。  
   
@@ -202,11 +202,11 @@ ms.locfileid: "74298302"
   
      ![移至效能事件的應用程式代碼](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
-     現在您可以檢閱其他記錄值、呼叫堆疊、逐步執行程式碼，或使用 [IntelliTrace] 視窗[在「時間」中向後或向前移動至其他方法](../debugger/intellitrace.md) (這些方法是在此效能事件期間呼叫的)。 [IntelliTrace 記錄檔中的其他所有事件和資訊為何？](../debugger/using-saved-intellitrace-data.md)[我還可以從這裡做些什麼？](#WhatElse)[需要有關效能事件的詳細資訊嗎？](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)  
+     現在您可以檢閱其他記錄值、呼叫堆疊、逐步執行程式碼，或使用 [IntelliTrace] 視窗 [在「時間」中向後或向前移動至其他方法](../debugger/intellitrace.md) (這些方法是在此效能事件期間呼叫的)。 [IntelliTrace 記錄檔中的其他所有事件和資訊為何？](../debugger/using-saved-intellitrace-data.md)[我還可以從這裡做些什麼？](#WhatElse)[需要有關效能事件的詳細資訊嗎？](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)  
   
 ### <a name="diagnose-an-exception"></a>診斷例外狀況  
   
-1. 在 [例外狀況資料] 下，檢閱記錄的例外狀況事件、其類型、訊息，以及發生例外狀況的時間。 若要更深入發掘程式碼，請從例外狀況群組中最近發生的事件開始偵錯。  
+1. 在 [例外狀況資料]下，檢閱記錄的例外狀況事件、其類型、訊息，以及發生例外狀況的時間。 若要更深入發掘程式碼，請從例外狀況群組中最近發生的事件開始偵錯。  
   
      ![從例外狀況事件開始調試](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
@@ -216,7 +216,7 @@ ms.locfileid: "74298302"
   
      ![從例外狀況事件移至應用程式程式碼](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
-     現在您可以檢閱其他記錄值、呼叫堆疊，或使用 [IntelliTrace] 視窗[在「時間」中向後或向前移動至其他記錄的事件](../debugger/intellitrace.md)、相關程式碼以及在這些時間點上記錄的值。 [IntelliTrace 記錄檔中的其他所有事件和資訊為何？](../debugger/using-saved-intellitrace-data.md)  
+     現在您可以檢閱其他記錄值、呼叫堆疊，或使用 [IntelliTrace] 視窗 [在「時間」中向後或向前移動至其他記錄的事件](../debugger/intellitrace.md)、相關程式碼以及在這些時間點上記錄的值。 [IntelliTrace 記錄檔中的其他所有事件和資訊為何？](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="WhatElse"></a> 我還能如何處理？  
   
@@ -237,7 +237,7 @@ ms.locfileid: "74298302"
   
  如果使用 TFS 且此資訊不在建置資訊清單 (BuildInfo.config 檔案) 中，Visual Studio 會在您目前連接的 TFS 上尋找相符的原始檔和符號。 如果 Visual Studio 找不到正確的 TFS 或相符的原始檔，系統會提示您選擇其他 TFS。  
   
-#### <a name="InvalidConfigFile"></a> 問：IntelliTrace 記錄檔缺少我所部署應用程式的相關資訊。 為什麼會發生這種情況？ 該怎麼做？  
+#### <a name="InvalidConfigFile"></a> 問：IntelliTrace 記錄檔缺少我所部署應用程式的相關資訊。 為什麼會發生這種情況？ 我該怎麼處理？  
  當您從開發電腦部署或部署期間未連接至 TFS 時，即會發生此情況。  
   
 1. 移至專案的部署資料夾。  
@@ -280,7 +280,7 @@ ms.locfileid: "74298302"
   
   - **Git**  
   
-    - **GitSourceControl**：**GitSourceControl** 結構描述的位置  
+    - **GitSourceControl**： **GitSourceControl** 結構描述的位置  
   
     - **RepositoryUrl**：您的 Team Foundation Server、專案集合和 Git 儲存機制的 URI  
   
@@ -304,7 +304,7 @@ ms.locfileid: "74298302"
   
    您的建置系統 ( `"TeamBuild"` 或 `"MSBuild"`) 和下列必要屬性的相關資訊：  
   
-  - **BuildLabel** (適用於 TeamBuild)：組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱[使用組建編號提供有意義的名稱給已完成的組建](https://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
+  - **BuildLabel** (適用於 TeamBuild)：組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱 [使用組建編號提供有意義的名稱給已完成的組建](https://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
   
   - **SymbolPath** (建議使用)：以分號分隔之符號 (PDB 檔案) 位置的 URI 清單。 這些 URI 可以是 URL 或 UNC。 這樣可讓 Visual Studio 更容易找到相符的符號以協助您進行偵錯。  
   
@@ -364,7 +364,7 @@ ms.locfileid: "74298302"
      ![從已遷移的&#45;原始檔控制開啟](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 #### <a name="WhatWorkspace"></a>問：什麼是工作區？  
- **答：** 您的[工作區用於儲存來源的複本](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)，您可以在簽入網路之前個別開發及測試該複本。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。  
+ **答：** 您的 [工作區用於儲存來源的複本](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) ，您可以在簽入網路之前個別開發及測試該複本。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。  
   
 #### <a name="UntrustedSymbols"></a> 問：我為什麼收到有關未受信任符號的訊息？  
  ![使用不受信任的符號路徑進行 Debug？](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  

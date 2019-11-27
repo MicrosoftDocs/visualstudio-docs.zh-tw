@@ -348,7 +348,7 @@ protected override void Dispose(bool disposing)
 
  在登錄中填入兩個值：
 
-|Name|輸入|資料|描述|
+|Name|輸入|Data|描述|
 |----------|----------|----------|-----------------|
 |類別|REG_SZ|GUID|建立用來識別類別目錄的 GUID|
 |封裝|REG_SZ|GUID|支援類別目錄之 VSPackage 服務的 GUID|
@@ -360,7 +360,7 @@ protected override void Dispose(bool disposing)
 
  在登錄中填入兩個值：
 
-|Name|輸入|資料|描述|
+|Name|輸入|Data|描述|
 |----------|----------|----------|-----------------|
 |類別|REG_SZ|GUID|建立用來識別類別目錄的 GUID|
 |封裝|REG_SZ|GUID|支援類別目錄之 VSPackage 服務的 GUID|

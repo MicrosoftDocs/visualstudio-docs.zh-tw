@@ -200,7 +200,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
     ![[新增實體] 按鈕](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. 在 [新增實體] 對話方塊中，輸入 **PartitionKey** 和 **RowKey** 屬性的值。
+1. 在 [**加入實體**] 對話方塊中，輸入 [**PartitionKey**] 和 [**RowKey**] 屬性的值。
 
     ![[新增實體] 對話方塊](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -213,7 +213,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 1. 若要開啟查詢產生器，請開啟資料表進行檢視。
 1. 選取資料表檢視工具列上的 [查詢產生器] 按鈕。
 
-    [查詢產生器] 對話方塊會隨即出現。 下圖顯示建置於查詢產生器中的查詢。
+    [查詢產生器] 對話方塊隨即出現。 下圖顯示建置於查詢產生器中的查詢。
 
     ![查詢產生器](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. 當您完成查詢建置時，請關閉對話方塊。 產生的查詢文字格式會出現在文字方塊中做為 WCF Data Services 篩選條件。
@@ -249,7 +249,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
 ## <a name="add-storage-accounts-by-using-server-explorer"></a>使用 [伺服器總管] 新增儲存體帳戶
 
-有兩種方式可以使用 [伺服器總管] 新增儲存體帳戶。 您可以在您的 Azure 訂用帳戶中建立儲存體帳戶，也可以連結現有的儲存體帳戶。
+使用 [伺服器總管] 時，有兩種方式可用來新增儲存體帳戶。 您可以在您的 Azure 訂用帳戶中建立儲存體帳戶，也可以連結現有的儲存體帳戶。
 
 ### <a name="to-create-a-storage-account-by-using-server-explorer"></a>使用伺服器總管建立儲存體帳戶
 
@@ -259,7 +259,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
    * 您要加入儲存體帳戶的 Azure 訂用帳戶。
    * 您想要用於新儲存體帳戶的名稱。
-   * 區域或同質群組 (例如美國西部或東亞)。
+   * 區域或同質群組 (例如 [美國西部] 或 [東亞])。
    * 您要用於儲存體帳戶的複寫類型，例如本地備援。
 
    ![建立 Azure 儲存體帳戶](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
@@ -277,7 +277,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
    * 您想要連結的現有儲存體帳戶名稱。
    * 選取之儲存體帳戶的金鑰。 當您選取儲存體帳戶時，通常會提供這個值給您。 如果您想要 Visual Studio 記住儲存體帳戶金鑰，請選取 [記住帳戶金鑰] 核取方塊。
-   * 要用於連接至儲存體帳戶的通訊協定，例如 HTTP、HTTPS 或自訂端點。 如需有關自訂端點的詳細資訊，請參閱[如何設定連接字串](https://msdn.microsoft.com/library/azure/ee758697.aspx) 。
+   * 用以連接到儲存體帳戶的通訊協定，例如 HTTP、HTTPS 或自訂端點。 如需有關自訂端點的詳細資訊，請參閱[如何設定連接字串](https://msdn.microsoft.com/library/azure/ee758697.aspx) 。
 
 ### <a name="to-view-the-secondary-endpoints"></a>檢視次要端點
 

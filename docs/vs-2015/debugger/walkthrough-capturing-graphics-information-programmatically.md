@@ -30,7 +30,7 @@ ms.locfileid: "74296900"
 - 如果呈現問題很難預期以及在手動測試中擷取，但是可以在執行階段使用應用程式狀態資訊，透過程式設計方式進行預測，請呼叫 `CaptureCurrentFrame`。  
   
 ## <a name="CaptureDX11_2"></a> Windows 8.1 中的程式設計擷取  
- 這部分的逐步解說示範如何在 Windows 8.1 上使用 DirectX 11.2 API 的應用程式中進行程式設計擷取 (使用穩固擷取方法)。 如需如何在 Windows 8.0 上使用舊版 DirectX 之應用程式中使用程式設計擷取的詳細資訊，請參閱本逐步解說稍後的 [Windows 8.0 (含) 以前版本的程式設計擷取](#CaptureDX11_1)。  
+ 這部分的逐步解說示範如何在 Windows 8.1 上使用 DirectX 11.2 API 的應用程式中進行程式設計擷取 (使用穩固擷取方法)。 如需如何在於 Windows 8.0 上使用舊版 DirectX 的應用程式中，使用程式設計擷取的資訊，請參閱本逐步解說稍後的 [Programmatic capture in Windows 8.0 and earlier](#CaptureDX11_1) 。  
   
  本節顯示如何執行這些工作：  
   
@@ -58,7 +58,7 @@ ms.locfileid: "74296900"
     ```  
   
     > [!IMPORTANT]
-    > 請勿包括標頭檔 vsgcapture.h，其支援 Windows 8.0 和更早版本上的程式設計式捕捉，以便在您的 Windows 8.1 apps 中執行程式設計的捕捉。 此標頭與 DirectX 11.2 不相容。 如果在包含 d3d11_2 .h 標頭之後包含此檔案，則編譯器會發出警告。 如果 d3d11_2 .h 之前包含 vsgcapture.h，應用程式將不會啟動。  
+    > 請勿包括標頭檔 vsgcapture.h (其支援 Windows 8.0 (含) 以前版本上的程式設計擷取)，以在 Windows 8.1 應用程式中執行程式設計擷取。 此標頭與 DirectX 11.2 不相容。 如果在包含 d3d11_2 .h 標頭之後包含此檔案，則編譯器會發出警告。 如果 d3d11_2 .h 之前包含 vsgcapture.h，應用程式將不會啟動。  
   
     > [!NOTE]
     > 如果在電腦上安裝 2010 年 6 月 DirectX SDK，而且專案的 Include 路徑包含 `%DXSDK_DIR%includex86`，請將它移至 Include 路徑結尾。 請對程式庫路徑執行相同的處理。  

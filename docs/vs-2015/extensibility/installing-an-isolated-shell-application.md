@@ -31,7 +31,7 @@ ms.locfileid: "74301160"
   
   本檔中的所有範例程式碼都來自于 [ [Shell 部署範例](https://go.microsoft.com/fwlink/?LinkId=262245)]，您可以從 MSDN 網站上的程式碼庫下載。 此範例會顯示執行上述每個步驟的結果。  
   
-## <a name="prerequisites"></a>先決條件  
+## <a name="prerequisites"></a>必要條件  
  若要執行本主題所述的程式，您的電腦上必須安裝下列工具。  
   
 - Visual Studio SDK  

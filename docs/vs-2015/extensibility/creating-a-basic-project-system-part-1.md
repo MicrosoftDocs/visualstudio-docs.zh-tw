@@ -57,7 +57,7 @@ ms.locfileid: "74295491"
   
 - 執行基本範本參數替代。  
   
-## <a name="prerequisites"></a>先決條件  
+## <a name="prerequisites"></a>必要條件  
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
  您也必須下載[適用于專案的 Managed 封裝架構](https://archive.codeplex.com/?p=mpfproj12)原始程式碼。 將檔案解壓縮到您即將建立之解決方案可存取的位置。  
@@ -162,7 +162,7 @@ ms.locfileid: "74295491"
   
     在**方案總管**中，展開的 [**範本**] 資料夾應該會如下所示：  
   
-    範本  
+    樣板  
   
     專案  
   

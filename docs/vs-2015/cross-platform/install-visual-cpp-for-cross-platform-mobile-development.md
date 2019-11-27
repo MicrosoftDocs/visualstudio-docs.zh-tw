@@ -38,7 +38,7 @@ ms.locfileid: "74299798"
   
   若要建置特定裝置平台的應用程式，有幾個額外的需求：  
   
-- Windows Phone 模擬器與 Microsoft Visual Studio Emulator for Android 需要可執行 Hyper-V 的電腦。 您必須先啟用 Windows 中的 HYPER-V 功能，才能安裝和執行模擬器。 如需詳細資訊，請參閱模擬器的[系統需求](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)。  
+- Windows Phone 模擬器與 Microsoft Visual Studio Emulator for Android 需要可執行 Hyper-V 的電腦。 您必須先啟用 Windows 中的 HYPER-V 功能，才能安裝和執行模擬器。 如需詳細資訊，請參閱模擬器的 [系統需求](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)。  
   
 - 搭配 Android SDK 的 x86 Android 模擬器在可執行 Intel HAXM 驅動程式的電腦上效能最佳。 此驅動程式需要 Intel x64 處理器並支援 VT-x 和執行停用位元。 如需詳細資訊，請參閱 [Intel® 硬體加速執行管理器安裝指示 - Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=536385)。  
   
@@ -115,7 +115,7 @@ ms.locfileid: "74299798"
   
    依預設，安裝程式會將 Apache Ant 放在 C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps 中。  
   
-- [Microsoft Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/)  
+- [Android 版 Microsoft Visual Studio 模擬器](https://visualstudio.microsoft.com/vs/msft-android-emulator/)  
   
    您可以從 Visual Studio 組件庫安裝和更新 Microsoft Visual Studio Emulator for Android。  
   
@@ -131,7 +131,7 @@ ms.locfileid: "74299798"
   
 3. 若要變更工具所使用的路徑，請核取路徑旁的核取方塊，並在文字方塊中編輯資料夾路徑。 您也可以使用瀏覽按鈕 ( **...** )，開啟 [選取位置] 對話方塊並選擇資料夾。  
   
-4. 選擇 [確定]，儲存自訂工具資料夾的位置。  
+4. 選擇 [確定] ，儲存自訂工具資料夾的位置。  
   
 ## <a name="see-also"></a>另請參閱  
  [安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   

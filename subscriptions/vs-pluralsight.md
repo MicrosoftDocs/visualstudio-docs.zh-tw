@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsight 訓練課程訂用帳戶。
-ms.openlocfilehash: 7db7858b95ca0b78ea54cebc394c3d57de53305a
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 26e9227fbd3852e4e9115e06e2882fe6358831a3
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161952"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491299"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -31,7 +31,7 @@ ms.locfileid: "74161952"
    >
    > **「請注意：如果您先前透過 Visual Studio 訂閱啟用其他 Pluralsight 供應項目，此代碼可能無法讓您建立新的 Pluralsight 帳戶。」**
 
-2. 您會收到已順利擷取優待券代碼的通知。  按一下 [啟動]。
+2. 您會收到已成功擷取優待券代碼的通知。  按一下 [啟動]。
 
 3. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。
    - 在表單中提供要求的連絡資訊
@@ -78,7 +78,7 @@ ms.locfileid: "74161952"
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>問：我有 Visual Studio Enterprise 訂用帳戶，但沒有在 [權益] 頁面上看到 [Pluralsight] 磚。 出了什麼問題？
-答：並非所有的 Visual Studio Enterprise 訂用帳戶都包含 Pluralsight 權益。  請檢查[資格表格](#eligibility)，以了解您的訂用帳戶是否符合資格。
+答：並非所有的 Visual Studio Enterprise 訂用帳戶都包含 Pluralsight 權益。  請檢查[資格資料表](#eligibility)，以查看您的訂用帳戶是否符合資格。
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>問：我是否可以存取任何自訂的學習播放清單或頻道？
 答：是，Visual Studio 訂閱者可存取專家頻道，作為 Pluralsight 訓練權益的一部分。 這些頻道是由 Microsoft 專家特別策劃，以利使用者學習 .Net、Azure、DevOps 及行動性領域的知識。 請透過 Visual Studio 訂用帳戶入口網站 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 啟動您的 Pluralsight 權益，才能在 Pluralsight 登陸頁面上存取下列頻道 –
