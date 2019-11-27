@@ -43,10 +43,10 @@ CODE 雜誌是領先的獨立軟體發展人員雜誌，涵蓋所有平臺上的
    > [!div class="mx-imgBorder"]
    > ![程式碼雜誌訂閱者資訊](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "訂閱者資訊與遞送位址")
 9. 按一下 [**下單**] 來完成您的訂用帳戶。  
-完成訂用帳戶訂單後，您會看到確認頁面，其中包含您可以用來查看所收到問題的連結： https://codemag.com/my/fulfillment。 
+完成訂用帳戶訂單後，您會看到確認頁面，其中包含您可以用來查看所收到問題的連結： https://codemag.com/my/fulfillment 。 
 
 ## <a name="eligibility"></a>資格
-| 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
+| 訂用帳戶層級                                                 |     通道                                            | 的優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  否          |
 | 含 GitHub Enterprise 的 Visual Studio Enterprise   | VL| 可用       |  否          |

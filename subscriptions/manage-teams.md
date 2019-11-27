@@ -37,5 +37,5 @@ Visual Studio 訂用帳戶系統管理員必須負責確保與 Visual Studio 授
 深入了解系統管理員的責任：
 - [系統管理員責任](admin-responsibilities.md)
 - [清查生產前環境](admin-inventory.md)
-- [追蹤使用者指派及處理訂單](assignments-orders.md)
+- [追蹤使用者指派和處理訂單](assignments-orders.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量

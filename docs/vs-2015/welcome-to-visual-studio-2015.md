@@ -81,16 +81,16 @@ ms.locfileid: "74537953"
 ### <a name="check-in-your-code"></a>簽入您的程式碼
  如果您在小組中工作，也需要共用最新版的程式碼，小組中的所有成員才能使用相同的程式碼基底。 Visual Studio 與 Visual Studio Team Services 或 Team Foundation Server 緊密整合，提供 Git 或 TFVC (Team Foundation Version Control) 版本控制。 使用 Visual Studio Team Services 可將程式碼儲存在雲端，而不需要維護本機伺服器。 如果您想要有內部部署伺服器，請使用 Team Foundation Server。 每次建立程式碼專案時，都可以選擇將專案加入版本控制。 若要了解哪一個版本控制系統最適合您的需求，請參閱： [使用版本控制](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)。
 
-### <a name="build-your-app"></a>建置您的應用程式
+### <a name="build-your-app"></a>建置應用程式
  您可以 [在本機建置應用程式](./ide/compiling-and-building-in-visual-studio.md) ，並確定它是否運作正常。 然後使用 [偵錯工具](./debugger/debugging-in-visual-studio.md) 來修正與您的應用程式相關的任何問題。 您也可以在共用組建伺服器或雲端中建置專案。 自動化建置流程，來建置您的小組開發人員已簽入版本控制的程式碼。 例如，您可以每晚或在每次簽入程式碼時建置一或多個專案。
 
 ### <a name="test-your-app"></a>測試您的應用程式
- [建立單元測試](./test/unit-test-your-code.md) 以改進您應用程式的品質。 這些測試可以在您每次簽入時執行，以及當做建置的一部分來執行。
+ [建立單元測試](./test/unit-test-your-code.md)以改進您應用程式的品質。 這些測試可以在您每次簽入時執行，以及當做建置的一部分來執行。
 
- 規劃、建立及執行您應用程式的手動和自動化測試。 使用 Visual Studio Team Services 時，測試計畫、套件、測試案例和您的測試結果會儲存在雲端，使用 Team Foundation Server 時，則會儲存在內部部署。 進一步了解 [測試應用程式](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)。
+ 規劃、建立及執行您應用程式的手動和自動化測試。 使用 Visual Studio Team Services 時，測試計畫、套件、測試案例和您的測試結果會儲存在雲端，使用 Team Foundation Server 時，則會儲存在內部部署。 進一步了解[測試應用程式](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)。
 
 ### <a name="deliver-your-teams-code-faster"></a>更快交付小組的程式碼
- 移除小組成員之間的障礙，並改進共同作業。 進一步自動化應用程式的發行，將應用程式發行至開發的每個階段，再一直發行至生產環境。 即時監視您的應用程式效能和可用性。 收集有關客戶實際上如何使用您的應用程式的即時使用狀況資料。 如需詳細資訊，請參閱 [DevOps 與 應用程式開發週期管理](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) 。
+ 移除小組成員之間的障礙，並改進共同作業。 進一步自動化應用程式的發行，將應用程式發行至開發的每個階段，再一直發行至生產環境。 即時監視您的應用程式效能和可用性。 收集有關客戶實際上如何使用您的應用程式的即時使用狀況資料。 如需詳細資訊，請參閱 [DevOps 與應用程式生命週期管理](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)。
 
 ## <a name="whats-new"></a>新功能
 

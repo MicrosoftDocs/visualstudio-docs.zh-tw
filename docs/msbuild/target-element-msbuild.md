@@ -51,7 +51,7 @@ ms.locfileid: "74491612"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
- 下列章節說明屬性、子元素和父元素。
+ 下列各節描述屬性、子項目和父項目。
 
 ### <a name="attributes"></a>屬性
 
@@ -92,16 +92,16 @@ ms.locfileid: "74491612"
 
  若因目標的 `Condition` 屬性評估為 `false` 而略過該目標，如果稍後在組建中叫用該目標且其 `Condition` 屬性在該時點評估為 `true`，則仍會執行該目標。
 
- 在 MSBuild 4 之前，`Target` 會傳回 `Outputs` 屬性中所指定的任何項目。  若要這樣做，MSBuild 必須記錄這些項目，以防組建中後續的工作需要用到它們。 由於沒有任何方法可指出哪些目標具有呼叫端所要求的輸出，因此，MSBuild 會在所有叫用的 `Outputs` 上累積來自所有 `Target` 的所有項目。 這會導致含有大量輸出項目的組建問題範圍擴大。
+ 在 MSBuild 4 之前，`Target` 會傳回 `Outputs` 屬性中所指定的任何項目。  若要這樣做，MSBuild 必須記錄這些項目，以防組建中後續的工作需要用到它們。 由於沒有任何方法可指出哪些目標具有呼叫端所要求的輸出，因此，MSBuild 會在所有叫用的 `Target` 上累積來自所有 `Outputs` 的所有項目。 這會導致含有大量輸出項目的組建問題範圍擴大。
 
- 如果使用者在專案中的任何 `Returns` 項目上指定 `Target`，則只有具 `Target` 屬性的 `Returns` 會記錄這些項目。
+ 如果使用者在專案中的任何 `Target` 項目上指定 `Returns`，則只有具 `Returns` 屬性的 `Target` 會記錄這些項目。
 
  `Target` 可能同時包含 `Outputs` 屬性和 `Returns` 屬性。  `Outputs` 會與 `Inputs` 搭配使用，以判斷目標是否為最新狀態。 如果有 `Returns`，即會覆寫 `Outputs` 的值，來判斷要將哪些項目傳回給呼叫端。  如果 `Returns` 不存在，則會將 `Outputs` 開放給呼叫端使用，但稍早所述的案例除外。
 
  在 MSBuild 4 之前，任何時候，只要 `Target` 在其 `Outputs` 中包含多個對相同項目的參考，就會記錄這些重複項目。 若含有大量輸出和許多專案相依性的組建數量非常多，這會造成大量記憶體的浪費，因為重複項目不具任何用途。 將 `KeepDuplicateOutputs` 屬性設為 `true` 時，就會記錄這些重複項目。
 
 ## <a name="example"></a>範例
- 下列程式碼範例示範執行 `Target` 工作的 `Csc` 項目。
+ 下列程式碼範例示範執行 `Csc` 工作的 `Target` 項目。
 
 ```xml
 <Target Name="Compile" DependsOnTargets="Resources" Returns="$(TargetPath)">

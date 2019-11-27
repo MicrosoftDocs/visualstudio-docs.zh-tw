@@ -34,9 +34,9 @@ ms.locfileid: "74491555"
 |----------------------------------|------------------------| - |
 | `MSBuildBinPath` | 保留 | 目前使用的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 二進位檔所在資料夾的絕對路徑 (例如 *C:\Windows\Microsoft.Net\Framework\\\<versionNumber>* )。 如果您必須參考 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 目錄中的檔案，這個屬性會相當實用。<br /><br /> 不要在這個屬性中包含結尾的反斜線。 |
 | `MSBuildExtensionsPath` | 已知 | 於 .NET Framework 4 中引入：`MSBuildExtensionsPath` 和 `MSBuildExtensionsPath32` 兩者的預設值並無差異。 您可以將環境變數 `MSBUILDLEGACYEXTENSIONSPATH` 設定為非 null 值，藉此啟用舊版中 `MSBuildExtensionsPath` 之預設值的行為。<br /><br /> 在 .NET Framework 3.5 (含) 以前版本中，`MSBuildExtensionsPath` 的預設值會指向 *\Program Files\\* 或 *\Program Files (x86)* 資料夾下 MSBuild 子資料夾的路徑 (根據目前處理序的位元而定)。 例如，若是 64 位元電腦上的 32 位元處理序，這個屬性會指向 *\Program Files (x86)* 資料夾。 若是 64 位元電腦上的 64 位元處理序，這個屬性會指向 *\Program Files* 資料夾。<br /><br /> 不要在這個屬性中包含結尾的反斜線。<br /><br /> 這個位置是放置目標檔案的理想位置。 例如，您的目標檔案可以安裝於 *\Program Files\MSBuild\MyFiles\Northwind.targets*，然後使用下面這個 XML 程式碼匯入專案檔中：<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` |
-| `MSBuildExtensionsPath32` | 已知 | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]\Program Files*或*\Program Files (x86)*資料夾下* 子資料夾的路徑。 路徑一律指向 32 位元電腦上的 32 位元 *\Program Files (x86)* 資料夾，以及 64 位元電腦上的 *\Program Files*。 請參閱 `MSBuildExtensionsPath` 和 `MSBuildExtensionsPath64`。<br /><br /> 不要在這個屬性中包含結尾的反斜線。 |
-| `MSBuildExtensionsPath64` | 已知 | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]\Program Files*資料夾下* 子資料夾的路徑。 若是 64 位元電腦，這個路徑永遠指向 *\Program Files* 資料夾。 若是 32 位元電腦，這個路徑是空白的。 請參閱 `MSBuildExtensionsPath` 和 `MSBuildExtensionsPath32`。<br /><br /> 不要在這個屬性中包含結尾的反斜線。 |
-| `MSBuildLastTaskResult` | 保留 | 如果前述工作順利完成且沒有任何錯誤 (即使有警告)，則為 `true`，如果前述工作發生錯誤，則為 `false`。 通常在工作中發生錯誤時，錯誤會在該專案中最後發生。 因此，這個屬性的值絕不會是 `false`，但下列情節除外：<br /><br /> - 將 `ContinueOnError`Task 項目 (MSBuild)[ 的 ](../msbuild/task-element-msbuild.md) 屬性設為 `WarnAndContinue` (或 `true`) 或 `ErrorAndContinue` 時。<br /><br /> - 當 `Target` 具有 [OnError 項目 (MSBuild)](../msbuild/onerror-element-msbuild.md) 作為子項目時。 |
+| `MSBuildExtensionsPath32` | 已知 | *\Program Files* 或 *\Program Files (x86)* 資料夾下 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 子資料夾的路徑。 路徑一律指向 32 位元電腦上的 32 位元 *\Program Files (x86)* 資料夾，以及 64 位元電腦上的 *\Program Files*。 請參閱＜`MSBuildExtensionsPath`＞和＜`MSBuildExtensionsPath64`＞。<br /><br /> 不要在這個屬性中包含結尾的反斜線。 |
+| `MSBuildExtensionsPath64` | 已知 | *\Program Files* 資料夾下 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 子資料夾的路徑。 若是 64 位元電腦，這個路徑永遠指向 *\Program Files* 資料夾。 若是 32 位元電腦，這個路徑是空白的。 請參閱＜`MSBuildExtensionsPath`＞和＜`MSBuildExtensionsPath32`＞。<br /><br /> 不要在這個屬性中包含結尾的反斜線。 |
+| `MSBuildLastTaskResult` | 保留 | 如果前述工作順利完成且沒有任何錯誤 (即使有警告)，則為 `true`，如果前述工作發生錯誤，則為 `false`。 通常在工作中發生錯誤時，錯誤會在該專案中最後發生。 因此，這個屬性的值絕不會是 `false`，但下列情節除外：<br /><br /> - 將 [Task 項目 (MSBuild)](../msbuild/task-element-msbuild.md) 的 `ContinueOnError` 屬性設為 `WarnAndContinue` (或 `true`) 或 `ErrorAndContinue` 時。<br /><br /> - 當 `Target` 具有 [OnError 項目 (MSBuild)](../msbuild/onerror-element-msbuild.md) 作為子項目時。 |
 | `MSBuildNodeCount` | 保留 | 建置時使用的並行處理序數目上限。 這是您在命令列中為 **-maxcpucount** 指定的值。 如果您已指定 **-maxcpucount**，但未指定值，則 `MSBuildNodeCount` 會指定電腦中的處理器數目。 如需詳細資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)和[平行建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。 |
 | `MSBuildProgramFiles32` | 保留 | 32 位元程式資料夾的位置，例如 *C:\Program Files (x86)* 。<br /><br /> 不要在這個屬性中包含結尾的反斜線。 |
 | `MSBuildProjectDefaultTargets` | 保留 | `DefaultTargets` 項目的 `Project` 屬性中所指定目標的完整清單。 例如，下列 `Project` 項目的 `MSBuildDefaultTargets` 屬性值為 `A;B;C`。<br /><br /> `<Project DefaultTargets="A;B;C" >` |
@@ -65,14 +65,14 @@ ms.locfileid: "74491555"
 * VisualStudioProject
 * Target
 * PropertyGroup
-* 輸出
+* Output
 * ItemGroup
 * UsingTask
 * ProjectExtensions
 * OnError
 * ImportGroup
 * 當您想要套用原生保護時，選擇
-* When
+* 時間
 * Otherwise
 
 ## <a name="see-also"></a>請參閱
