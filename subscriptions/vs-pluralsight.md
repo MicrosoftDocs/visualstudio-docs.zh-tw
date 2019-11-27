@@ -31,7 +31,7 @@ ms.locfileid: "74491299"
    >
    > **「請注意：如果您先前透過 Visual Studio 訂閱啟用其他 Pluralsight 供應項目，此代碼可能無法讓您建立新的 Pluralsight 帳戶。」**
 
-2. 您會收到已成功擷取優待券代碼的通知。  按一下 [啟動]。
+2. 您會收到已順利擷取優待券代碼的通知。  按一下 [啟動]。
 
 3. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。
    - 在表單中提供要求的連絡資訊
@@ -54,7 +54,7 @@ ms.locfileid: "74491299"
 
 ## <a name="eligibility"></a>資格
 
-|                          訂用帳戶層級                          |     通道      |    優勢    |   可續約？   |
+|                          訂用帳戶層級                          |     通道      |    的優點    |   可續約？   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | VL, Azure, 零售 |   6 個月    | 是<sup>2</sup> |
 |          含 GitHub Enterprise 的 Visual Studio Enterprise          | VL  |   6 個月    | 是<sup>2</sup> |
@@ -63,7 +63,7 @@ ms.locfileid: "74491299"
 |              Visual Studio Test Professional (標準訂用帳戶)              |    VL, 零售     |   3 個月    | 是<sup>2</sup>  |
 |                      MSDN 平台 (標準)                       |    VL, 零售     |   3 個月    | 是<sup>2</sup>  |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) |       Azure       | 無法使用 |       NA       |
-|             Visual Studio Enterprise (NFR<sup>1</sup>)              |      計畫      | 無法使用 |       NA       |
+|             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Program      | 無法使用 |       NA       |
 ||
 
 <sup>1</sup>  *包括：禁止轉售（NFR）、Visual Studio 產業夥伴（VSIP）、BizSpark、MCT Software & 服務開發人員、MCT 軟體 & 服務、最有價值專家（MVP）、區域主管（RD）、Microsoft 合作夥伴網路（MPN）、FTE、假設。*

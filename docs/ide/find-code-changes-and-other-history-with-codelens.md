@@ -61,7 +61,7 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 3. 若要開啟包含參考的檔案，請按兩下參考。
 
-### <a name="code-maps"></a>Code Map
+### <a name="code-maps"></a>程式碼對應
 
 若要查看此程式碼與其參考之間的關聯性，請[建立 Code Map](../modeling/map-dependencies-across-your-solutions.md)。 在 Code Map 捷徑功能表中，選取 [顯示所有參考]。
 

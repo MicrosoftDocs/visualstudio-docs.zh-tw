@@ -35,17 +35,17 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 7. 建立發行者顯示名稱。  這會是您的客戶看到且與您的應用程式、增益集和服務建立關聯的唯一名稱。
 8. 提供您的連絡資訊和慣用電子郵件語言，然後按一下 [下一步]。
 9. 系統可能會要求您驗證密碼。  輸入它，然後按一下 [登入]。
-10. 在 [Registration - Payment] (註冊 - 付款) 頁面上，貼上您先前複製至 [促銷代碼] 欄位的程式碼。  此頁面會更新，以顯示 [不須付款]。  按 [下一步]。
+10. 在 [Registration - Payment] (註冊 - 付款) 頁面上，貼上您先前複製至 [促銷代碼] 欄位的程式碼。  此頁面會更新，以顯示 [不須付款]。  按 [ **下一步**]。
 11. 檢閱您的帳戶資訊，並檢閱應用程式開發人員協議，然後按一下此核取方塊，指出您接受條款和條件。  然後按一下 [完成]。
 12. 按一下 [移至儀表板] 開始使用 Windows 開發人員帳戶！
 
 ## <a name="eligibility"></a>資格
-| 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
+| 訂用帳戶層級                                                 |     通道                                            | 的優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 包含       |  [是]|
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | VL  | 包含       |  [是]|
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 包含                                                            |[是]|
-| 含 GitHub Enterprise 的 Visual Studio Professional | VL                                        | 包含                                                            |[是]|
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 已併入       |  是|
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | VL  | 已併入       |  是|
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 已併入                                                            |是|
+| 含 GitHub Enterprise 的 Visual Studio Professional | VL                                        | 已併入                                                            |是|
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                            |  NA|
 | MSDN 平台 (標準)                                          | VL, 零售                                              |  無法使用                                            |  NA|
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
@@ -59,8 +59,8 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="support-resources"></a>支援資源
-- 需要使用 Windows 開發人員帳戶的說明嗎？  請參閱 [Windows 開發人員中心](https://developer.microsoft.com/windows/support)的[支援](https://developer.microsoft.com/windows)資源。
-- [Windows 程式開發](/windows/)
+- 需要使用 Windows 開發人員帳戶的說明嗎？  請參閱 [Windows 開發人員中心](https://developer.microsoft.com/windows)的[支援](https://developer.microsoft.com/windows/support)資源。
+- [Windows 開發](/windows/)
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 

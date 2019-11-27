@@ -29,7 +29,7 @@ FxCop 分析器 NuGet 套件包含預先定義的規則集和 EditorConfig 檔�
 - 所有規則
 - 資料流程
 - 設計
-- 文件
+- Documentation
 - 全球化
 - 互通性
 - 性
@@ -38,7 +38,7 @@ FxCop 分析器 NuGet 套件包含預先定義的規則集和 EditorConfig 檔�
 - 從 FxCop 移植
 - 可靠性
 - 安全性
-- 使用方式
+- 使用
 
 這些規則的每個類別都有一個 EditorConfig 或規則集檔案，可：
 

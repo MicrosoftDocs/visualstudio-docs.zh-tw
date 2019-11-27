@@ -41,7 +41,7 @@ ms.locfileid: "74491598"
    > [!div class="mx-imgBorder"]
    > ![自訂 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10. 按一下 **[安裝]** 。
+10. 按一下 [安裝]。
 
 11. 安裝完成時，您可以選擇修改安裝，或啟動 Visual Studio。  按一下 [啟動] 開始使用。  如果您已安裝多個版本，則會列出它們。
     > [!div class="mx-imgBorder"]
@@ -59,13 +59,13 @@ ms.locfileid: "74491598"
 
 ## <a name="eligibility"></a>資格
 
-| 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
+| 訂用帳戶層級                                                 |     通道                                            | 的優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  [是]          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | VL | 可用       |  [是]          |
-| Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 可用                                                            |  [是]          |
-| 含 GitHub Enterprise 的 Visual Studio Professional | VL   | 可用              |  [是]          |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  [是]         |
+| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  是          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | VL | 可用       |  是          |
+| Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 可用                                                            |  是          |
+| 含 GitHub Enterprise 的 Visual Studio Professional | VL   | 可用              |  是          |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  是         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 
 <sup>1</sup>  *包括：禁止轉售（NFR）、Visual Studio 產業夥伴（VSIP）、Microsoft 合作夥伴網路（MPN）、FTE、MCT Software & 服務開發人員、BizSpark、想像、最有價值專家（MVP）、區域主管（RD）。 排除： MCT Software & Services。*

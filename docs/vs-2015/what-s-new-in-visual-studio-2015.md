@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 036ad2171c3b117049635247a980cd0f8411d887
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297555"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538978"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 的新功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "74297555"
 
 本頁的重點在於說明自 Visual Studio 2013 RTM 以後新增的一些最重要功能，包括其中一個 Visual Studio 2013 更新第一次引進的功能。 如需 Visual Studio 2015 新功能的完整清單，請參閱 [版本資訊](https://www.visualstudio.com/news/vs2015-vs)。
 
-若要深入瞭解 Visual Studio ALM 中的許多改進功能和新功能，請參閱[TFS 2015 的新](/tfs/server/whats-new?view=vsts#tfs-2015-rtm)功能。
+若要深入瞭解 Visual Studio ALM 中的許多改進功能和新功能，請參閱[TFS 2015 的新](/azure/devops/server/whats-new#tfs-2015)功能。
 
 ## <a name="a-new-setup-experience"></a>新的安裝經驗
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "74297555"
  使用 C#、Visual Basic、C++ 或 JavaScript 建立這些 [通用 Windows 應用程式](https://msdn.microsoft.com/library/dn975273.aspx)。
 
 ### <a name="web"></a>Web
- ASP.NET 5 是 MVC、WebAPI 和 SignalR 的重大更新，可以在 Windows、Mac 和 Linux 上執行。  ASP.NET 5 是全新的設計，提供您可組合的簡式 .NET 堆疊，讓您建置現代化的雲端應用程式。 Visual Studio 2015 工具與常用 Web 開發工具 (例如 Bower 和 Grunt) 更緊密整合。 若要開始使用，請參閱  [.NET Web 開發及工具部落格](https://devblogs.microsoft.com/aspnet/)上的多篇部落格文章。
+ ASP.NET 5 是 MVC、WebAPI 及 SignalR 的重大更新，可以在 Windows、Mac 及 Linux 上執行。  ASP.NET 5 是全新的設計，提供您可組合的簡式 .NET 堆疊，讓您建置現代化的雲端應用程式。 Visual Studio 2015 工具與常用 Web 開發工具 (例如 Bower 和 Grunt) 更緊密整合。 若要開始使用，請參閱  [.NET Web 開發及工具部落格](https://devblogs.microsoft.com/aspnet/)上的多篇部落格文章。
 
 ### <a name="classic-desktop-and-windows-store"></a>傳統桌面和 Windows 市集
  Visual Studio 2015 仍會繼續支援傳統桌上型電腦及 Windows 市集的開發工作。 隨著 Windows 進化，Visual Studio 也跟著進化。  在 Visual Studio 2015 中，.NET 及 C++ 的程式庫及語言均有大幅改進，而且所有 Windows 版本皆適用這些改良功能。
@@ -139,8 +139,8 @@ ms.locfileid: "74297555"
 
 下列新的或改進的工具可對程式碼執行不同類型的診斷和分析：
 
-### <a name="perftips"></a>效能提示
- 效能提示顯示偵錯期間方法的執行時間，可讓您快速發現瓶頸，而不需要叫用分析工具。 若要開始使用，請參閱 [效能提示：Performance Information at-a-glance while Debugging with Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/) (效能提示：使用 Visual Studio 偵錯時的效能資訊一覽)
+### <a name="perftips"></a>「效能提示」
+ 效能提示顯示偵錯期間方法的執行時間，可讓您快速發現瓶頸，而不需要叫用分析工具。 若要開始，請參閱 [效能提示：使用 Visual Studio 偵錯，效能資訊快速檢視](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)。
 
 ### <a name="error-list"></a>錯誤清單
  錯誤清單現在支援對任何資料行進行篩選。 該清單也可以隨著您的輸入調整，以顯示整個 C# 或 Visual Basic 方案中之錯誤、警告和程式碼分析的即時檢視，就算程式碼變更產生了數千項警告也沒有問題。 新的錯誤清單可回溯相容於現有的使用量。 如需詳細資訊，請參閱 [Error List Window](./ide/reference/error-list-window.md)。
@@ -179,7 +179,7 @@ ms.locfileid: "74297555"
 ### <a name="notification-hub"></a>通知中樞
  通知中區的使用者介面已經過簡化，方便您快速掃描。 已加入其他種類的通知，包括效能問題、轉譯問題和當機，而且您現在可以告訴 Visual Studio 停止顯示通知。 如需詳細資訊，請參閱 [Visual Studio 通知](./ide/visual-studio-notifications.md)。
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens：找出您的程式碼發生了什麼事（僅限 Enterprise 和 Professional edition）
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens：了解您的程式碼的狀態 (僅限 Enterprise 和 Professional 版)
  尋找程式碼的相關資訊而不需要離開編輯器，讓您可以專注於工作。 您可以檢閱儲存在 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 中之程式碼的變更，以及工作項目、Bug、程式碼檢閱等其他記錄。
 
  在 Visual Studio Professional 和 Visual Studio Professional 中，您現在可以：
@@ -190,7 +190,7 @@ ms.locfileid: "74297555"
 
 - 查看顯示變更您程式碼之人員的圖表。 這可協助您找出小組變更的模式，並評估其影響。
 
-   ![CodeLens：請參閱程式碼變更歷程記錄做為圖表](./ide/media/codelens.png "CodeLens")
+   ![CodeLens：請參閱程式碼變更歷程記錄作為圖形](./ide/media/codelens.png "CodeLens")
 
 - 輕鬆地查看上次變更程式碼的時間。
 
@@ -252,19 +252,19 @@ ms.locfileid: "74297555"
 
  只要按一下標題列上的黃色笑臉，讓我們知道您所喜歡的功能，然後按一下 [傳送笑臉] 按鈕就可以了。
 
- 就這麼容易！ 我們會將您的意見反應分送給相關團隊鼓舞他們的士氣，讓他們有更多的能量構思更能符合您需要的功能。
+ 您現在已完成整個作業！ 我們會將您的意見反應分送給相關團隊鼓舞他們的士氣，讓他們有更多的能量構思更能符合您需要的功能。
 
 ### <a name="send-a-frown"></a>傳送苦臉
  了解產品需要改進的項目，有助於我們管理我們的待處理項目，並將注意力優先集中在對客戶而言最重要的項目上。 您如有不喜歡的功能，可以直接在 IDE 中使用 [傳送苦臉] 功能告訴我們。 方法也同樣十分簡單：
 
- 只要按一下標題列上的黃色笑臉，然後再按一下 [傳送苦臉]就可以了。 請告訴我們您不喜歡的原因，然後按一下 [傳送苦臉] 按鈕。 如需詳細資訊，請參閱[告訴我們](./ide/talk-to-us.md)。
+ 只要按一下標題列上的黃色笑臉，然後再按一下 [傳送苦臉]就可以了。 請告訴我們您不喜歡的原因，然後按一下 [傳送苦臉] 按鈕。 如需詳細資訊，請參閱 [Talk to Us](./ide/talk-to-us.md)。
 
 ### <a name="report-crashes-hangs-and-performance-issues"></a>回報當機、無回應及效能問題
  有些時候，傳送苦臉中的簡短文字並無法盡述您為什麼不喜歡某項功能。 當您有無回應、當機或效能問題時，您可以使用傳送苦臉後所顯示的對話方塊，列下重現步驟、當機傾印或追蹤檔案。
 
  首先，請依照前述步驟傳送苦臉。 接著在隨後顯示的對話方塊上，您可以使用任何預設標籤，或是建立您自己的標籤來標記您的意見反應。 使用標籤可以協助我們將您的意見反應分立到正確的功能團隊。 從 [選擇類別] 下拉式清單中，選取可代表您回報之問題的選項，然後遵循所示步驟重現問題。 此外也會提供如何使用 Visual Studio 提供意見反應的詳細步驟。 如需詳細資訊，請參閱[Visual Studio 傳送笑臉指示](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [使用 Apache Cordova 建置跨平台應用程式](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)

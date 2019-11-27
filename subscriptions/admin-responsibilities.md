@@ -39,5 +39,5 @@ Visual Studio 訂用帳戶允許開發小組成員安裝和使用軟體來設計
 深入了解系統管理員的責任：
 - [清查生產前環境](admin-inventory.md)
 - [管理大型小組及外部承攬人](manage-teams.md)
-- [追蹤使用者指派及處理訂單](assignments-orders.md)
+- [追蹤使用者指派和處理訂單](assignments-orders.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量
