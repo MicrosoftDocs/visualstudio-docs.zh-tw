@@ -1410,6 +1410,8 @@
         - name: 回報問題狀態和常見問題集
           displayName: Developer Community
           href: ide/report-a-problem.md
+        - name: 增加修正效能問題的機會
+          href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
         - name: 建立包含所有呼叫堆疊的 Visual Studio 處理序小型傾印
           displayName: Create minidumps with call stacks
           href: ide/report-a-problem-minidumps.md

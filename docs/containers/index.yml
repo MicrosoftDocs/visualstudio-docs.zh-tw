@@ -1,5 +1,4 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+## YamlMime:Landing
 title: Visual Studio 中的容器工具
 metadata:
   title: Docker 容器開發工具文件
@@ -9,116 +8,64 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-azure
   ms.topic: landing-page
-  ms.date: 02/15/2019
+  ms.date: 11/25/2019
   ms.author: ghogen
-sections:
-  - title: ''
-    items:
-      - type: paragraph
-        text: 探索 Docker 和 Kubernetes 工具，以及用於管理以容器為基礎之開發專案的 Azure 服務。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: container-tools.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
-            title: 快速入門：Visual Studio 中的 Docker
-          - href: tutorial-multicontainer.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
-            title: 具有 Docker Compose 的多容器應用程式
-          - href: /visualstudio/install/build-tools-container
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: 在容器中執行建置工具
-          - href: tutorial-kubernetes-tools.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_kubernetes.svg'
-            title: 適用於 Kubernetes 的 Visual Studio Tools
-  - title: .NET Core
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: /dotnet/core/docker/intro-net-docker
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
-            title: .NET 和 Docker 簡介
-          - href: /dotnet/core/docker/docker-basics-dotnet-core
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
-            title: 了解 Docker 基本知識
-          - href: /dotnet/core/docker/building-net-docker-images
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: 建置 Docker 映像
-          - href: /aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_web.svg'
-            title: ASP.NET 容器工具
-          - href: 'https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker'
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
-            title: 部署到 Azure Container Registry
-          - href: /dotnet/standard/containerized-lifecycle-architecture/
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-            title: 微服務架構指南
-  - title: Azure
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: /azure/aks
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/ContainerService.svg'
-            title: Azure Kubernetes Service (AKS)
-          - href: /azure/dev-spaces
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/AzureDevSpaceController_50x.svg'
-            title: Azure Dev Spaces
-          - href: /azure/container-instances/container-instances-tutorial-prepare-app
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/ContainerInstances.svg'
-            title: Azure 容器執行個體
-          - href: /azure/container-registry/
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/container-registry.svg'
-            title: Azure Container Registry
-          - href: /azure/docker
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
-            title: Azure 上的 Docker
-  - title: 視訊
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: 'https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111'
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_video.svg'
-            title: Channel 9：Docker 開發
+landingContent:
+  - title: 關於部署
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Visual Studio 中的容器工具
+            url: overview.md
+  - title: 開始使用
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Visual Studio 中的 Docker
+            url: container-tools.md
+          - text: 在容器中執行建置工具
+            url: /visualstudio/install/build-tools-container
+          - text: 適用於 Kubernetes 的 Visual Studio Tools
+            url: tutorial-kubernetes-tools.md
+  - title: 開發容器化應用程式
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: 具有 Docker Compose 的多容器應用程式
+            url: tutorial-multicontainer.md
+          - text: 容器中的 React.js 應用程式
+            url: container-tools-react.md
+          - text: 偵錯 Docker 應用程式
+            url: edit-and-refresh.md
+  - title: 部署 Docker 容器
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: 部署到 Azure Container Registry
+            url: hosting-web-apps-in-docker.md
+          - text: 部署到 Azure App Service
+            url: deploy-app-service.md
+          - text: 發佈至 Docker Hub
+            url: deploy-docker-hub.md
+  - title: 容器開發工作
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: 作法：設定組建和偵錯環境
+            url: container-build.md
+          - text: 作法：檢視及診斷容器
+            url: view-and-diagnose-containers.md
+          - text: 作法：針對容器開發工具進行疑難排解
+            url: troubleshooting-docker-errors.md
+  - title: 容器工具設定
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: 容器啟動設定
+            url: container-launch-settings.md
+          - text: 容器 MSBuild 屬性
+            url: container-msbuild-properties.md
+          - text: Docker Compose MSBuild 屬性
+            url: docker-compose-properties.md
+          - text: 設定容器工具
+            url: container-tools-configure.md
