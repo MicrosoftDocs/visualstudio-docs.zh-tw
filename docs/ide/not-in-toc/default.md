@@ -20,7 +20,7 @@ ms.locfileid: "72662031"
 
 我們似乎找不到您要找的內容，對此我們深感抱歉。 您可以透過此頁面底部的按鈕，留下意見反應來協助我們改善內容。
 
-## <a name="cursor-position"></a>資料指標位置
+## <a name="cursor-position"></a>滑鼠游標位置
 
 如果您在尋找鍵盤或 API 名稱的 F1 說明，在按下 **F1** 之前，請務必確認游標位在文字內或在文字的開頭。 如果仍然無效，請從[實用連結](#useful-links)清單中進行選取，或在 https://docs.microsoft.com 上執行搜尋。
 
