@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6b96f23bc7bcd7e6d970025b23f89f572d07daf1
-ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
-ms.translationtype: HT
+ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
+ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74473997"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74549948"
 ---
 # <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>使用 Visual Studio 或命令列建立和偵測容器化應用程式
 
@@ -60,27 +60,9 @@ ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 
 最後一個階段會從 `base`重新開始，並包含 `COPY --from=publish` 將已發行的輸出複製到最終的映射。 此程式可讓最終影像變得很小，因為它不需要包含 `sdk` 映射中的所有組建工具。
 
-## <a name="faster-builds-for-the-debug-configuration"></a>更快速的 Debug 設定組建
-
-有數項優化可 Visual Studio 執行，協助處理容器化專案的組建程式效能。 容器化應用程式的組建流程並不簡單，只要遵循 Dockerfile 中所述的步驟即可。 在容器中建立的速度會比在本機電腦上建立的速度慢很多。  因此，當您在**Debug**設定中建立時，Visual Studio 實際上會在本機電腦上建立您的專案，然後使用磁片區掛接將輸出檔案夾共用至容器。 已啟用此優化的組建稱為*快速*模式組建。
-
-在**快速**模式中，Visual Studio 會以指示 Docker 只建立 `base` 階段的引數來呼叫 `docker build`。  Visual Studio 會處理其餘的進程，而不考慮 Dockerfile 的內容。 因此，當您修改 Dockerfile （例如自訂容器環境或安裝其他相依性）時，您應該在第一個階段中進行修改。  在 Dockerfile 的 `build`、`publish`或 `final` 階段中的任何自訂步驟都不會執行。
-
-只有當您在**Debug**設定中建立時，才會發生此效能優化。 在**發行**設定中，組建會依照 Dockerfile 中指定的方式出現在容器中。
-
-如果您想要在 Dockerfile 指定時停用效能優化和組建，請在專案檔中將**ContainerDevelopmentMode**屬性設定為 [**一般**]，如下所示：
-
-```xml
-<PropertyGroup>
-   <ContainerDevelopmentMode>Regular</ContainerDevelopmentMode>
-</PropertyGroup>
-```
-
-若要還原效能優化，請從專案檔中移除屬性。
-
 ## <a name="building-from-the-command-line"></a>從命令列建立
 
-您可以使用 `docker build` 或 `MSBuild`，從命令列建立。
+如果您想要在 Visual Studio 外部建立，您可以使用 `docker build` 或 `MSBuild` 從命令列建立。
 
 ### <a name="docker-build"></a>docker 組建
 
@@ -100,7 +82,7 @@ docker build -f Dockerfile ..
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-當您從 Visual Studio IDE 建立方案時，您會看到類似于 [**輸出**] 視窗中所顯示的輸出。 請一律使用 `/p:Configuration=Release`，因為在 Visual Studio 使用多階段組建優化的情況下，建立**Debug**設定時的結果可能不會如預期般執行。
+當您從 Visual Studio IDE 建立方案時，您會看到類似于 [**輸出**] 視窗中所顯示的輸出。 請一律使用 `/p:Configuration=Release`，因為在 Visual Studio 使用多階段組建優化的情況下，建立**Debug**設定時的結果可能不會如預期般執行。 請參閱[調試](#debugging)。
 
 如果您使用 Docker Compose 專案，請使用命令來建立映射：
 
@@ -110,7 +92,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="project-warmup"></a>專案準備
 
-這些是為專案選取 Docker 設定檔時所發生的一連串步驟（也就是在載入專案或新增 Docker 支援時），以便改善後續執行的效能（**f5**或**Ctrl**+**f5**）。 這可在 **工具**  > **選項** 下設定 > **容器工具**。 以下是在背景執行的工作：
+[*專案*準備] 是指為專案選取 Docker 設定檔時（也就是在載入專案或加入 Docker 支援時）會發生的一系列步驟，以便改善後續執行的效能（**f5**或**Ctrl**+**f5**）。 這可在 **工具**  > **選項** 下設定 > **容器工具**。 以下是在背景執行的工作：
 
 - 檢查 Docker Desktop 是否已安裝且正在執行。
 - 確定 Docker Desktop 已設定為與專案相同的作業系統。
@@ -162,6 +144,22 @@ ASP.NET Core 會尋找符合*Https*資料夾下元件名稱的憑證，這就是
 
 ## <a name="debugging"></a>偵錯
 
+在**Debug**設定中建立時，有數個 Visual Studio 執行的優化作業，有助於處理容器化專案的組建程式效能。 容器化應用程式的組建流程並不簡單，只要遵循 Dockerfile 中所述的步驟即可。 在容器中建立的速度會比在本機電腦上建立的速度慢很多。  因此，當您在**Debug**設定中建立時，Visual Studio 實際上會在本機電腦上建立您的專案，然後使用磁片區掛接將輸出檔案夾共用至容器。 已啟用此優化的組建稱為*快速*模式組建。
+
+在**快速**模式中，Visual Studio 會以指示 Docker 只建立 `base` 階段的引數來呼叫 `docker build`。  Visual Studio 會處理其餘的進程，而不考慮 Dockerfile 的內容。 因此，當您修改 Dockerfile （例如自訂容器環境或安裝其他相依性）時，您應該在第一個階段中進行修改。  在 Dockerfile 的 `build`、`publish`或 `final` 階段中的任何自訂步驟都不會執行。
+
+只有當您在**Debug**設定中建立時，才會發生此效能優化。 在**發行**設定中，組建會依照 Dockerfile 中指定的方式出現在容器中。
+
+如果您想要在 Dockerfile 指定時停用效能優化和組建，請在專案檔中將**ContainerDevelopmentMode**屬性設定為 [**一般**]，如下所示：
+
+```xml
+<PropertyGroup>
+   <ContainerDevelopmentMode>Regular</ContainerDevelopmentMode>
+</PropertyGroup>
+```
+
+若要還原效能優化，請從專案檔中移除屬性。
+
  當您啟動調試（**F5**）時，可能的話，會重複使用先前啟動的容器。 如果您不想要重複使用先前的容器，您可以使用 Visual Studio 中的 [**重建**] 或 [**清除**] 命令，強制 Visual Studio 使用全新的容器。
 
 執行偵錯工具的進程視專案和容器作業系統的類型而定：
@@ -182,9 +180,8 @@ Visual Studio 使用自訂容器進入點，視專案類型和容器作業系統
 |-|-|
 | **Linux 容器** | 進入點是 `tail -f /dev/null`，這是無限期等候，讓容器保持執行狀態。 當應用程式透過偵錯工具啟動時，它就是負責執行應用程式的偵錯工具（也就是 `dotnet webapp.dll`）。 如果在未進行偵錯工具的情況下啟動，則工具會執行 `docker exec -i {containerId} dotnet webapp.dll` 來執行應用程式。|
 | **Windows 容器**| 進入點類似于執行偵錯工具的 `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus`，因此正在接聽連接。 同樣地，偵錯工具會執行應用程式，並在未進行偵測的情況下啟動 `docker exec` 命令。 針對 .NET Framework web 應用程式，進入點會稍有不同，其中 `ServiceMonitor` 會新增至命令。|
-  
-> [!NOTE]
-> 容器進入點只能在 docker 撰寫專案中修改，而不能在單一容器專案中修改。
+
+容器進入點只能在 docker 撰寫專案中修改，而不能在單一容器專案中修改。
 
 ## <a name="next-steps"></a>後續步驟
 

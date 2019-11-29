@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0a16f9501b9ce1e7c69eaa8f2460a50affd6d579
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 1d7c7ada277d9b9f7259b8ab07d93c48294b252c
+ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888717"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74549969"
 ---
 # <a name="install-build-tools-into-a-container"></a>將 Build Tools 安裝至容器
 
@@ -134,6 +134,9 @@ ms.locfileid: "72888717"
    > 請參閱 [Windows 容器版本相容性](/virtualization/windowscontainers/deploy-containers/version-compatibility) \(部分機器翻譯\) 以查看各種主機 OS 版本所支援的容器 OS 版本，並參閱[容器的已知問題](build-tools-container-issues.md)以了解已知問題。
 
    ::: moniker-end
+   
+   > [!NOTE]
+   > 錯誤碼 `3010` 用來指出需要重新開機的成功，如需詳細資訊，請參閱[MsiExec 錯誤訊息](/windows/win32/msi/error-codes)。
 
 1. 從該目錄內執行下列命令。
 
