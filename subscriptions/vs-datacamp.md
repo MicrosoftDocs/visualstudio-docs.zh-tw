@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/13/2019
 ms.topic: conceptual
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 DataCamp 訓練課程訂用帳戶。
-ms.openlocfilehash: ea889814373fa7c970e905bb4a845d5ca67c92e7
-ms.sourcegitcommit: 6f25855de9db455e6d38bc105057d2ed1e7454b9
+ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199872"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706885"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 DataCamp 訓練課程權益
 合格的 Visual Studio 訂閱包含 DataCamp 訂閱。  透過 DataCamp，您可以輕鬆從瀏覽器學習所需的所有資料科學技能。 您可以選擇何時學習及學習內容。 不需要安裝任何軟體且沒有任何特殊硬體需求，學習資料科學比以往更容易。
@@ -28,7 +28,7 @@ ms.locfileid: "74199872"
    > [!NOTE]
    > 當您開始建立帳戶時，可能會收到下列錯誤訊息：「糟糕！  您的促銷代碼無效或已到期。」  由於您的促銷代碼會在建立後的數分鐘到期，因此可能發生這個情況。  若您收到此訊息，只要回到[權益](https://my.visualstudio.com/benefits)頁面並按一下 DataCamp 權益磚上的 [啟用] 連結即可。
 
-4. 建立帳戶之後，您可以選擇學習路徑。  選項包括：
+4. 建立帳戶之後，您可以選擇學習路徑。  這些選項包括：
     - Start learning R for Data Science (開始學習適用於資料科學的 R)
     - Start learning Python for Data Science (開始學習適用於資料科學的 Python)
     - Develop your Data Science Skillset (開發您的資料科學技能集)
@@ -50,13 +50,13 @@ ms.locfileid: "74199872"
    > [!div class="mx-imgBorder"]
    > ![DataCamp 開始使用](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
-您可以隨時停止，並在下一個工作階段繼續訓練。  只要前往 [http://www.datacamp.com](http://www.datacamp.com)，並登入。  您會看到儀表板，並可以直接從暫停的地方繼續訓練。 只要按一下 [Continue Track] (繼續路徑) 即可。
+您可以隨時停止，並在下一個工作階段繼續訓練。  只要前往 [https://www.datacamp.com](https://www.datacamp.com)，並登入。  您會看到儀表板，並可以直接從暫停的地方繼續訓練。 只要按一下 [Continue Track] (繼續路徑) 即可。
 
 > [!div class="mx-imgBorder"]
 > ![DataCamp 繼續訓練](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>資格
-| 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
+| 訂用帳戶層級                                                 |     通道                                            | 的優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 3 個月       |  No。  僅提供給新訂閱者使用          |
 | 含 GitHub Enterprise 的 Visual Studio Enterprise   | VL | 3 個月       |  No。  僅提供給新訂閱者使用          |
