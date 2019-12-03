@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 824b928c9f89b98f9026059b824fce84969bf69a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 69b4f38ae43bacd5324b30a3970047b39c32fe99
+ms.sourcegitcommit: 669fc9e397476d7a1d2cda5999710d415f7d6e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189096"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74688851"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中撰寫 C/C++ 的單元測試
 
@@ -79,7 +79,7 @@ C++ 單元測試專案支援 [CodeLens](../ide/find-code-changes-and-other-histo
 
 ### <a name="link-to-object-or-library-files"></a>連結至物件或程式庫檔案
 
-若測試程式碼沒有匯出您要測試的函式，您可以將輸出 .obj 或 .lib 檔案新增至測試專案的相依性。 請參閱[將測試連結至物件或程式庫檔案](how-to-use-microsoft-test-framework-for-cpp.md)。
+若測試程式碼沒有匯出您要測試的函式，您可以將輸出 .obj 或 .lib 檔案新增至測試專案的相依性。 請參閱[將測試連結至物件或程式庫檔案](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#same_project)。
 
 ### <a name="add-include-directives-for-header-files"></a>針對標頭檔新增 #include 指示詞
 
@@ -87,7 +87,7 @@ C++ 單元測試專案支援 [CodeLens](../ide/find-code-changes-and-other-histo
 
 ![新增 include 指示詞](media/cpp-add-includes-test-project.png)
 
-若要避免必須在原始檔的每個 include 語句中輸入完整路徑，您可以在**Project** > **屬性**中加入必要的資料夾， > **C/C++**  > **一般** > **其他包含目錄**。
+若要避免必須在原始檔的每個 include 語句中輸入完整路徑，您可以在**Project** > **屬性**中加入必要的資料夾， > **C/C++**  > **一般** > **其他 include 目錄**。
 
 ### <a name="write-test-methods"></a>撰寫測試方法
 
