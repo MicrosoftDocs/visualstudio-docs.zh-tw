@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 975b9ca88a775e08b97cccf1d1580a96ac4d9d65
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777905"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810120"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -198,7 +198,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ### <a name="pinnable-properties-tool"></a>可固定屬性工具
 
-**16.4 的新**功能：現在，使用新的可固定屬性工具進行偵錯工具時，可以更容易識別物件的屬性。 只要將游標停留在您想要在 [監看式]、[自動變數] 和 [區域變數] 視窗的 [偵錯工具] 視窗中顯示的屬性上方，按一下釘選圖示，即可立即在視窗頂端看到您要尋找的資訊！
+**16.4 的新**功能：現在，使用新的可固定屬性工具進行偵錯工具時，可以更輕鬆地依屬性來識別物件。 只要將游標暫留在您想要在 [監看式]、[自動變數] 和 [區域變數] 視窗的 [偵錯工具] 視窗中顯示的屬性上方，選取釘選圖示，即可立即在視窗頂端看到您要尋找的資訊！
 
    ![動畫，顯示如何使用可固定屬性工具釘選 Visual Studio 偵錯工具中的屬性](media/vs-2019/debugger-pinnable-properties.gif)
 

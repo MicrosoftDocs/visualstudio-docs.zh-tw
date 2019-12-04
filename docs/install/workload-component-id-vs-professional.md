@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/22/2019
+ms.date: 12/03/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f66af6b269aa0efd9d780243702b651090953e3c
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
-ms.translationtype: HT
+ms.openlocfilehash: 48410a40518fdd1d94b8415987b04f76de4cc0b3
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037550"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797273"
 ---
 # <a name="visual-studio-professional-component-directory"></a>Visual Studio Professional 元件目錄
 
@@ -44,7 +44,7 @@ ms.locfileid: "66037550"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

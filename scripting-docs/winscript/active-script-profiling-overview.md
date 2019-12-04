@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ce6f7fe29fca2cd17c3dfcce76dac40e422aba4
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 3b85410af965fdb9fe4785efe2cf12051e19436e
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572726"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797362"
 ---
 # <a name="active-script-profiling-overview"></a>動態指令碼分析概觀
 [動態指令碼分析工具介面](../winscript/reference/active-script-profiler-interfaces.md)可啟用指令碼引擎的分析。 動態指令碼分析包含下列各部分：  
@@ -27,7 +27,7 @@ ms.locfileid: "72572726"
   
 - 主機  
   
-- 程式碼剖析工具  
+- Profiler  
   
 ## <a name="language-engine"></a>語言引擎  
  語言引擎會執行指令碼。 它提供的方法可啟用指令碼在執行時的分析。 啟用分析時，語言引擎可接受分析工具 COM 物件的類別識別碼 (CLSID) 作為引數。 它會建立分析工具 COM 物件的執行個體，然後在發生各種事件時呼叫分析工具。  
@@ -40,8 +40,8 @@ ms.locfileid: "72572726"
 ## <a name="host"></a>主機  
  主機會建立語言引擎，並提供具有要執行之指令碼的語言引擎。 智慧主機也提供偵錯工具或分析工具可使用的文件內容，以在您偵錯或分析時提供更好的資訊。  
   
-## <a name="profiler"></a>程式碼剖析工具  
- 分析工具會在發生各種事件時收到來自語言引擎的呼叫。 分析工具必須註冊為 COM 物件，並且必須實作 [IActiveScriptProfilerCallback 介面](../winscript/reference/iactivescriptprofilercallback-interface.md)介面。  
+## <a name="profiler"></a>Profiler  
+ 分析工具會在發生各種事件時收到來自語言引擎的呼叫。 分析工具必須註冊為 COM 物件，而且必須執行[IActiveScriptProfilerCallback 介面](../winscript/reference/iactivescriptprofilercallback-interface.md)。  
   
 ## <a name="see-also"></a>請參閱  
  [動態指令碼分析工具介面](../winscript/reference/active-script-profiler-interfaces.md)
