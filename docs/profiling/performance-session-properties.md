@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c8a5058d52684ec08e13641953c789c244f2fa9
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910152"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772198"
 ---
 # <a name="performance-session-properties"></a>效能工作階段屬性
 
@@ -32,7 +33,7 @@ ms.locfileid: "72910152"
 
 這些設定可以讓您選取程式碼剖析方法、加入 .NET 物件集合和存留期資料，和指定預設的報告位置和命名慣例。
 
-如需詳細資訊，請參閱:
+如需詳細資訊，請參閱＜＞。
 
 [操作說明：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
 
@@ -67,11 +68,11 @@ ms.locfileid: "72910152"
 
 如需詳細資訊，請參閱[收集階層互動資料](../profiling/collecting-tier-interaction-data.md)
 
-## <a name="instrumentation"></a>測試設備
+## <a name="instrumentation"></a>檢測設備
 
 這些設定可以讓您收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 網頁中 JScript 程式碼的效能資料，並指定您希望在檢測處理序前後發生的任何 [檢測前置] 和 [檢測後續] 事件。
 
-如需詳細資訊，請參閱:
+如需詳細資訊，請參閱＜＞。
 
 [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
@@ -87,7 +88,7 @@ ms.locfileid: "72910152"
 
 在剖析期間，您可以收集來自事件追蹤提供者的資料。 您可以使用 *VSPerfReport.exe* 命令列工具的 `/calltrace` 選項來檢視此資料。 如需 Windows 事件追蹤 (ETW) 的詳細資訊，請參閱[關於事件追蹤 (About Event Tracing)](/windows/win32/etw/about-event-tracing)。
 
-如需詳細資訊，請參閱:
+如需詳細資訊，請參閱＜＞。
 
 [操作說明：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
@@ -103,7 +104,7 @@ ms.locfileid: "72910152"
 
 這些設定可以讓您指定 [VSInstr](../profiling/vsinstr.md) 命令列程式碼剖析工具的一個或多個選項，便能將選項加入至檢測程序。 您也可以指定當應用程式使用超過一個以上版本時，要進行程式碼剖析的 Common Runtime 版本。
 
-如需詳細資訊，請參閱:
+如需詳細資訊，請參閱＜＞。
 
 [操作說明︰指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 

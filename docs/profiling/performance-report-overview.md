@@ -10,14 +10,15 @@ ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 04abc2de21469b696df1365b001b60b9b3ba5e8c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432014"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772228"
 ---
 # <a name="performance-report-overview"></a>效能報表概觀
 您可以在 Visual Studio Team System Development Edition 整合式開發環境 (IDE) 的 [效能報告] 視窗中檢視效能工作階段的程式碼剖析資料。 程式碼剖析資料儲存在 .vsp 和 .vsps 檔案中。 [報表檢視] 視窗可讓您檢視和分析應用程式效能問題。
@@ -89,10 +90,10 @@ ms.locfileid: "63432014"
 
 - **顯示查詢** - 顯示或隱藏自訂查詢控制項。
 
--  - 將報告連同其目前的分析儲存成 .vsps 檔案。
+- - 將報告連同其目前的分析儲存成 .vsps 檔案。
 
 - **匯出** - 將目前的報告儲存在 .CVS 格式或 .XML 格式檔案，提供選項以儲存不同的檢視。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)
 - [效能報告檢視](../profiling/performance-report-views.md)

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：指定要啟動的二進位檔 | Microsoft Docs
+title: 如何：指定要啟動的二進位檔 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,16 +11,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a03bf203e5078bdbdf6327ec7bda186613a25c03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fd3379b9769cfd6bfe1335b12545e635a9bde782
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996140"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778683"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>HOW TO：指定要啟動的二進位檔
+# <a name="how-to-specify-the-binary-to-start"></a>如何：指定要啟動的二進位檔
 
 若要剖析二進位檔 (如 DLL)，您必須在 [\<目標> 屬性頁] 對話方塊中輸入資訊。 這項資訊會指示 DLL 專案可以在何處找到呼叫的應用程式。
 
@@ -38,6 +39,6 @@ ms.locfileid: "62996140"
 
 7. 按一下 [確定]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)

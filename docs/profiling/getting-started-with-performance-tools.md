@@ -9,14 +9,15 @@ ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2602996e6c823888b272129ea0c2414534a4e1f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: faba7a6d2e698e919c0f0adca6fa574838b8b3c4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969663"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779203"
 ---
 # <a name="getting-started-with-performance-tools"></a>效能工具使用者入門
 
@@ -28,7 +29,7 @@ Visual Studio 提供數種方式供您收集、檢視和分析程式碼效能資
 
 若要快速分析專案、應用程式或 ASP.NET 網站，請選取 [偵錯] > [效能分析工具]，然後選取 [效能精靈]。 如需詳細指示，請參閱[效能分析的初學者指南](../profiling/beginners-guide-to-cpu-sampling.md)和[如何：收集網站的效能資料](../profiling/how-to-collect-performance-data-for-a-web-site.md)。
 
-若要手動指定及設定效能分析工作階段，請選取 [偵錯] > [分析工具] > [效能總管]。 使用 [效能總管] 中的 [目標] 資料夾和 [屬性] 頁面以設定工作階段。 如需相關指示，請參閱[如何：手動建立效能工作階段](../profiling/how-to-manually-create-performance-sessions.md)。
+若要手動指定及設定效能分析工作階段，請選取 [偵錯] > [分析工具] > [效能總管]。 使用 [效能總管] 中的 [目標] 資料夾和 [屬性] 頁面以設定工作階段。 如需指示，請參閱[如何：手動建立效能工作階段](../profiling/how-to-manually-create-performance-sessions.md)。
 
 **另請參閱：**
 

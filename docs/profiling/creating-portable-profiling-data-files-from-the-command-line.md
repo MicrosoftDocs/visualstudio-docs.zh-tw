@@ -6,14 +6,15 @@ ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b156de17c1f2ee43ccc215cf3723e14acd3c36b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8caa1a4976da39b155edde36d538ca193bd1addd
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405809"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779489"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>從命令列建立可移植的分析資料檔案
 若要更輕鬆地共用分析資料，您可以使用 [VSPerfReport](../profiling/vsperfreport.md) 命令列工具，將分析回合的符號內嵌到 .*vsp* 檔案。
@@ -39,6 +40,6 @@ ms.locfileid: "63405809"
 
 - 在命令提示字元視窗中，鍵入下列命令：
 
-   \<路徑><strong>VSPerfReport \<</strong>VSP 檔案> **/SummaryFile** [**/Output:**\<檔案名稱>]
+   \<路徑><strong>VSPerfReport \<</strong>VSP 檔案> **/SummaryFile** [ **/Output:** \<檔案名稱>]
 
    .*vsps* 檔案預設會使用 .*vsp* 檔案的基底名稱進行命名。 您可以使用 **Output** 選項來指定替代名稱。

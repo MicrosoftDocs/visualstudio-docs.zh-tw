@@ -15,16 +15,17 @@ ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 181bcf665ce905bff20f98be19d4a789cfe530c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c4ae54d6b90166de31c338a5e606eaf31ecd6cc
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431576"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779164"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>HOW TO：為執行中的處理序附加和中斷連結效能工具
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：為執行中的處理序附加和中斷連結效能工具
 程式碼剖析工具可以用來附加至或中斷連結執行中的處理序，以協助取樣與蒐集效能資料。 當您想要避免蒐集應用程式載入時間的資料，或是在處理序進入特定狀態後監視其效能時，就可以使用這種方法來執行處理序的程式碼剖析。
 
 > [!NOTE]
@@ -48,7 +49,7 @@ ms.locfileid: "63431576"
 
 2. 按一下您要附加至的處理序名稱。
 
-3. 按一下 [附加] 。
+3. 按一下 [附加]。
 
 ### <a name="to-detach-from-a-running-process"></a>若要從執行中處理序中斷連結
 
@@ -60,9 +61,9 @@ ms.locfileid: "63431576"
 
 3. 按一下 [中斷連結]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [控制資料收集](../profiling/controlling-data-collection.md)
 - [效能工作階段概觀](../profiling/performance-session-overview.md)
-- [如何：開始和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [操作說明︰啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)
 - [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

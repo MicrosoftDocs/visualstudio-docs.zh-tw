@@ -12,14 +12,15 @@ ms.assetid: 6593fa82-181e-4009-a0ed-02aa24c2c063
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 049e1163f54dfcdfe2338faa59ae8c37c3114fa7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1420aa9f92e8ef7564478499c78393510ad61c23
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422044"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778033"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>從命令列使用分析工具
 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的命令列工具，在命令提示字元分析應用程式，並使用批次檔和指令碼將程式碼剖析自動化。 您也可以在命令提示字元產生報告檔。 您可以使用輕量型獨立分析工具，在未安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的的電腦上收集資料。
@@ -31,13 +32,13 @@ ms.locfileid: "63422044"
 
 | 工作 | 相關內容 |
 | - | - |
-| **設定符號位置：** 若要顯示函式和參數的名稱，分析工具必須要有已經分析二進位檔的符號 (.*pdb*) 檔存取權。 這些檔案應該包含 Microsoft 作業系統的符號檔，以及您想要在分析中檢視的應用程式。 您可以使用公用 Microsoft 符號伺服器，確定您有適用於 Microsoft 二進位檔的正確 .*pdb* 檔。 | -   [如何：從命令列指定符號檔位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md) |
-| **分析應用程式：** 您用來分析目標應用程式的命令列工具與選項，取決於應用程式的類型、分析方法，以及目標為受控或原生應用程式。 | -   [從命令列使用分析方法](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)<br />-   [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)<br />-   [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)<br />-   [分析服務](../profiling/command-line-profiling-of-services.md) |
-| **建立 .xml 和 .csv 報表：** 在命令提示字元進行分析，會建立可在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的介面中檢視的資料檔案。 您也可以使用 VSPerfReport 命令列工具，產生 .*xml* 或逗號分隔值 (.*csv*) 的資料檔案。 | -   [從命令列建立分析工具報告](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
-| **在沒有 Visual Studio 的電腦上分析程式碼：** 您可以使用分析工具的獨立分析工具，在未安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的電腦上收集應用程式的資料。 | -   [如何：安裝獨立分析工具](../profiling/how-to-install-the-stand-alone-profiler.md) |
+| **設定符號位置︰** 若要顯示函式和參數的名稱，分析工具必須要有已經程式碼剖析二進位檔的符號 (.*pdb*) 檔存取權。 這些檔案應該包含 Microsoft 作業系統的符號檔，以及您想要在分析中檢視的應用程式。 您可以使用公用 Microsoft 符號伺服器，確定您有適用於 Microsoft 二進位檔的正確 .*pdb* 檔。 | -   [如何：從命令列指定符號檔位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md) |
+| **分析應用程式：** 您用來分析目標應用程式的命令列工具與選項，取決於應用程式的類型、程式碼剖析工具以及目標為 Managed 或原生應用程式。 | -   [從命令列使用分析方法](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)<br />-   [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)<br />-   [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)<br />-   [分析服務](../profiling/command-line-profiling-of-services.md) |
+| **建立 .xml 和 .csv 報表：** 在命令提示自原進行程式碼剖析，會建立可在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的介面中檢視的資料檔案。 您也可以使用 VSPerfReport 命令列工具，產生 .*xml* 或逗號分隔值 (.*csv*) 的資料檔案。 | -   [從命令列建立分析工具報告](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
+| **在沒有 Visual Studio 的電腦上分析程式碼︰** 您可以使用程式碼剖析工具的獨立分析工具，在未安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的電腦上收集應用程式的資料。 | -   [如何：安裝獨立分析工具](../profiling/how-to-install-the-stand-alone-profiler.md) |
 
 ## <a name="reference"></a>參考資料
 - [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [效能總管](../profiling/performance-explorer.md)

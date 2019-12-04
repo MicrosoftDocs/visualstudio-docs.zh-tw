@@ -6,14 +6,15 @@ ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f452dcb473abf87d8992f36f5326973937e85e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967868"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778241"
 ---
 # <a name="status"></a>狀態
 *VSPerfCmd.exe* **Status** 選項會顯示分析工具和任何目前已分析處理序的狀態資訊。
@@ -27,7 +28,7 @@ VSPerfCmd.exe /Status
 ```
 
 #### <a name="parameters"></a>參數
- 無
+ None
 
 ## <a name="remarks"></a>備註
  **Status** 選項會顯示分析工具的下列狀態資訊。
@@ -58,7 +59,7 @@ VSPerfCmd.exe /Status
 
  **具有監視存取權的使用者** 列出可存取分析工具的使用者名稱。 使用 VSPerfCmd.exe **Admin** 選項，其他使用者就可以獲授與存取權
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)

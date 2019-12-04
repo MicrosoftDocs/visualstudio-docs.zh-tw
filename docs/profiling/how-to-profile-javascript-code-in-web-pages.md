@@ -1,5 +1,5 @@
 ---
-title: HOW TO：分析網頁中的 JavaScript 程式碼 | Microsoft Docs
+title: 如何：分析網頁中的 JavaScript 程式碼 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +9,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 07c628b3c1f0be1c7ecc615dcae44f7736aa884e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539357"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775302"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>HOW TO：分析網頁中的 JavaScript 程式碼
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>如何：分析網頁中的 JavaScript 程式碼
 
 Visual Studio 分析工具可以使用檢測分析方法，針對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式、任意網頁或 JavaScript 應用程式中執行的 JavaScript 程式碼來收集效能資料。 需要 Internet Explorer 8 或更新版本。
 
@@ -37,13 +38,13 @@ Visual Studio 分析工具可以使用檢測分析方法，針對 [!INCLUDE[vste
 
 1. 在 Visual Studio 中開啟 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 專案。
 
-2. 按一下 [分析]  功能表上的 [啟動效能精靈] 。
+2. 按一下 [分析] 功能表上的 [啟動效能精靈]。
 
-3. 在 [效能精靈] 的第一個頁面上，指定 [檢測]  程式碼剖析方法，然後按一下 [下一步] 。
+3. 在 [效能精靈] 的第一個頁面上，指定 [檢測] 程式碼剖析方法，然後按一下 [下一步]。
 
-4. 在精靈的第二個頁面上，確定已在目標清單中選取目前專案，然後按一下 [下一步] 
+4. 在精靈的第二個頁面上，確定已在目標清單中選取目前專案，然後按一下 [下一步]
 
-5. 在精靈的第三個頁面上，選取 [分析 JavaScript]  核取方塊，然後按一下 [下一步] 。
+5. 在精靈的第三個頁面上，選取 [分析 JavaScript] 核取方塊，然後按一下 [下一步]。
 
 6. 在精靈的第四個頁面上，按一下 [完成]，以在瀏覽器中啟動 Web 應用程式。
 
@@ -55,17 +56,17 @@ Visual Studio 分析工具可以使用檢測分析方法，針對 [!INCLUDE[vste
 
 1. 開啟 Visual Studio。
 
-2. 按一下 [分析]  功能表上的 [啟動效能精靈] 。
+2. 按一下 [分析] 功能表上的 [啟動效能精靈]。
 
-3. 在 [效能精靈] 的第一個頁面上，指定 [檢測]  程式碼剖析方法，然後按一下 [下一步] 。
+3. 在 [效能精靈] 的第一個頁面上，指定 [檢測] 程式碼剖析方法，然後按一下 [下一步]。
 
-4. 在精靈的第二個頁面上，按一下 ASP.NET 或 JavaScript 應用程式，然後按一下 [下一步] 
+4. 在精靈的第二個頁面上，按一下 ASP.NET 或 JavaScript 應用程式，然後按一下 [下一步]
 
 5. 在精靈的第三個頁面上：
 
-    1. 在 [您要使用哪個 URL 或路徑執行應用程式?]  方塊中輸入網頁的 URL。
+    1. 在 [您要使用哪個 URL 或路徑執行應用程式?] 方塊中輸入網頁的 URL。
 
-    2. 選取 [分析 JavaScript]  核取方塊，然後按一下 [下一步] 。
+    2. 選取 [分析 JavaScript] 核取方塊，然後按一下 [下一步]。
 
 6. 在精靈的第四個頁面上，按一下 [完成]，以在瀏覽器中啟動網頁。
 

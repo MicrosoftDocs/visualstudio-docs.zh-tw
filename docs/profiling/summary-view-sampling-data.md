@@ -9,14 +9,15 @@ ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b346047ff52c994e76a322a5afa0494259277163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 649d0e9e5b32c124cfa962f45e4d128e4a32210f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438471"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778202"
 ---
 # <a name="summary-view---sampling-data"></a>摘要檢視 - 取樣資料
 [摘要] 檢視顯示有關程式碼剖析執行時效能耗費最多資源的函式資訊。 如需包括通知連結和報表清單描述在內的詳細資訊，請參閱[摘要檢視](../profiling/summary-view.md)。
@@ -32,7 +33,7 @@ ms.locfileid: "63438471"
 
  [最忙碌路徑] 的每個函式都包含下列資料︰
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**名稱**|函式的名稱。|
 |**內含樣本 %**|此函式或由此函式呼叫的函式執行時發生的所有樣本百分比。|
@@ -45,11 +46,11 @@ ms.locfileid: "63438471"
 
  [執行最多個別工作的函式] 的每個函式都包含下列資料︰
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**名稱**|函式的名稱。|
 |**專有樣本 %**|當函式正在執行其函式主體中的程式碼時，在程式碼剖析執行時收集到的所有樣本百分比。 不包括此函式所呼叫的函式正在執行時所收集到的樣本百分比。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [摘要檢視 - .NET 記憶體資料](../profiling/summary-view-dotnet-memory-data.md)
 - [摘要檢視 - 檢測資料](../profiling/summary-view-instrumentation-data.md)

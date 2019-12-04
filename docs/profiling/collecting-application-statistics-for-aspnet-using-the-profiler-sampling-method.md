@@ -9,14 +9,15 @@ ms.assetid: f8383ab1-eb49-4d3f-8608-d8b4d51a81be
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6ff7f1596d9b3336cb7fdbc02de7d1bc10172f94
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a2cae807a8d833cf2653ea23616eeb819673229e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405756"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773240"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>收集 ASP.NET Web 應用程式的統計資料
 

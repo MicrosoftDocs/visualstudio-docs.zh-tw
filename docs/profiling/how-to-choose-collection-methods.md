@@ -1,5 +1,5 @@
 ---
-title: 作法：選擇收集方法 | Microsoft Docs
+title: 如何：選擇收集方法 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +9,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe046f07a27a9fdcf07fc891f7c264a45a3d61c
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744732"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776341"
 ---
-# <a name="how-to-choose-collection-methods"></a>作法：選擇收集方法
+# <a name="how-to-choose-collection-methods"></a>如何：選擇收集方法
 
 Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測和並行。 您也可以使用取樣或檢測方法來收集 .NET 記憶體配置和存留期資料。
 
@@ -30,7 +31,7 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 
 - 在精靈的第一個頁面上，選取下列其中一個選項︰
 
-| 選項 | 說明 |
+| 選項 | 描述 |
 |----------------------------| - |
 | **CPU 取樣** | 收集對初始分析和 CPU 使用率問題分析有用的應用程式統計資料。 |
 | **檢測** | 收集對重點分析和輸入/輸出效能問題分析有用的詳細計時資料。 |
@@ -41,7 +42,7 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 
 ### <a name="to-select-a-collection-method-using-performance-explorer"></a>使用 [效能總管] 選取收集方法
 
-1. 在 [效能總管]  工具列上，按一下 [方法]  下拉式清單旁的箭號。
+1. 在 [效能總管] 工具列上，按一下 [方法] 下拉式清單旁的箭號。
 
 2. 按一下您偏好的收集方法。
 
@@ -49,13 +50,13 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 
 ### <a name="to-select-the-sampling-or-instrumentation-method-using-performance-session-properties"></a>使用效能工作階段屬性選取取樣或檢測方法
 
-1. 在 [效能總管]  中，選取效能工作階段。
+1. 在 [效能總管] 中，選取效能工作階段。
 
      效能工作階段檔案名稱的副檔名為 .*psess*。
 
-2. 以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]  。
+2. 以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。
 
-3. 在 [屬性頁]  中，按一下 [一般]  頁面。
+3. 在 [屬性頁] 中，按一下 [一般] 頁面。
 
 4. 按一下您偏好的收集方法。
 
@@ -65,31 +66,31 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 
 ### <a name="to-select-net-memory-data-collection-by-using-performance-session-properties"></a>使用效能工作階段屬性選取 .NET 記憶體資料收集
 
-1. 在 [效能總管]  中，選取效能工作階段。
+1. 在 [效能總管] 中，選取效能工作階段。
 
      效能工作階段檔案名稱的副檔名為 .psess。
 
-2. 以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]  。
+2. 以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。
 
-3. 在 [屬性頁]  中，按一下 [一般]  頁面。
+3. 在 [屬性頁] 中，按一下 [一般] 頁面。
 
-4. 按一下 [取樣]  或 [檢測]  。
+4. 按一下 [取樣] 或 [檢測]。
 
-5. 按一下 [收集 .NET 物件配置資訊]  以收集 .NET Framework 物件配置的大小和數目。
+5. 按一下 [收集 .NET 物件配置資訊] 以收集 .NET Framework 物件配置的大小和數目。
 
-6. (選擇性) 按一下 [同時收集 .NET 物件存留期的資訊]  ，以收集回收物件記憶體的記憶體回收層代相關資料。
+6. (選擇性) 按一下 [同時收集 .NET 物件存留期的資訊]，以收集回收物件記憶體的記憶體回收層代相關資料。
 
      如需收集 .NET 記憶體資料時可用之其他選項的詳細資訊，請參閱[收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)。
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>使用效能工作階段屬性選取並行資料收集
 
-1. 在 [效能總管]  中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]  。
+1. 在 [效能總管]中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。
 
-2. 在 [屬性頁]  中，按一下 [一般]  頁面。
+2. 在 [屬性頁] 中，按一下 [一般] 頁面。
 
-3. 按一下 [並行]  。
+3. 按一下 [並行]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)
 [了解取樣資料值](../profiling/understanding-sampling-data-values.md)

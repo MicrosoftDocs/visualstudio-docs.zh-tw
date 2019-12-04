@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f86ae2e14067a645bb39a1c8fdc0421f415a9e6
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681140"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771688"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 快速進行網站分析
 
@@ -100,7 +101,7 @@ ms.locfileid: "68681140"
 
 您可以將本節中的任何下列選項加入至稍早所列的命令，但 **vsperfaspnetcmd /shutdown** 命令除外。
 
-|選項|說明|
+|選項|描述|
 |------------|-----------------|
 |**/Output:** `VspFile`|根據預設，會使用檔案名稱 **PerformanceReport.vsp** 在目前目錄中建立程式碼剖析資料 (.*vsp*) 檔案。 您可以使用 /output 選項指定不同的位置、 檔案名稱，或兩者。|
 |**/PackSymbols:Off**|根據預設，VsPerfASPNETCmd 會將符號 (函式和參數名稱等等) 嵌入 .*vsp* 檔。 內嵌符號會讓程式碼剖析資料檔案變得非常大。 如果當您分析資料時，可以存取含有符號的 .*pdb* 檔案，請使用 /packsymbols:off 選項以停用內嵌符號。|

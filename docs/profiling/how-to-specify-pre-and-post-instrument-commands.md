@@ -1,5 +1,5 @@
 ---
-title: HOW TO：指定檢測前置和檢測後續命令 | Microsoft Docs
+title: 如何：指定檢測前置和檢測後續命令 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +12,17 @@ ms.assetid: 6a8d5340-1d1b-4d81-88dd-8e1f435eb828
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dec06f7f45666845dfcc7080ed4b18db8baba993
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 22ad5558ed01e5bb1b8d12b7a4cc65b4d677d0cd
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539052"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778709"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>HOW TO：指定檢測前置和檢測後續命令
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>如何：指定檢測前置和檢測後續命令
 
 您可以指定要在檢測效能工作階段中的二進位檔之前或之後執行的命令。 任何可從命令列發出的命令都可以指定為檢測前置或檢測後續事件。 例如，您可以在檢測二進位檔之後執行的批次檔中，指定使用強式名稱金鑰自動重新簽署組件的命令。
 
@@ -33,7 +34,7 @@ ms.locfileid: "62539052"
 
 ## <a name="to-specify-pre-instrument-commands"></a>指定檢測前置命令
 
-1. 請執行下列其中一個步驟：
+1. 執行下列步驟：
 
     - 若要針對效能工作階段中的所有二進位檔指定檢測前置命令，請在 [效能總管] 中選取效能工作階段節點，然後按一下滑鼠右鍵並選取 [屬性]。
 
@@ -44,7 +45,7 @@ ms.locfileid: "62539052"
 3. 在 [檢測前置事件] 底下的 [命令列] 文字方塊中輸入命令。
 
     > [!NOTE]
-    > 您可以按一下 [命令列] 方塊旁的省略符號按鈕 **(...)**，以瀏覽並選取適當的 .exe、.cmd 或 .bat 檔案。
+    > 您可以按一下 [命令列] 方塊旁的省略符號按鈕 **(...)** ，以瀏覽並選取適當的 .exe、.cmd 或 .bat 檔案。
 
 4. 按一下 [確定]。
 
@@ -52,7 +53,7 @@ ms.locfileid: "62539052"
 
 ## <a name="to-specify-post-instrument-commands"></a>指定檢測後續命令
 
-1. 請執行下列其中一個步驟：
+1. 執行下列步驟：
 
     - 若要針對效能工作階段中的所有二進位檔指定檢測後續命令，請在 [效能總管] 中選取效能工作階段節點，然後按一下滑鼠右鍵並選取 [屬性]。
 
@@ -63,12 +64,12 @@ ms.locfileid: "62539052"
 3. 在 [檢測後續事件] 底下的 [命令列] 文字方塊中輸入命令。
 
     > [!NOTE]
-    > 您可以按一下 [命令列] 方塊旁的省略符號按鈕 **(...)**，以瀏覽並選取適當的 .exe、.cmd 或 .bat 檔案。
+    > 您可以按一下 [命令列] 方塊旁的省略符號按鈕 **(...)** ，以瀏覽並選取適當的 .exe、.cmd 或 .bat 檔案。
 
 4. 按一下 [確定]。
 
      若要停止執行命令但不將它移除，請選取 [從檢測中排除] 核取方塊。 若要修改編譯器或連結器設定，請使用專案屬性頁。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)

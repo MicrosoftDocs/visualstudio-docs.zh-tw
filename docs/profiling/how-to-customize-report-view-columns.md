@@ -1,5 +1,5 @@
 ---
-title: HOW TO：自訂報表檢視資料行 | Microsoft Docs
+title: 如何：自訂報表檢視資料行 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,16 +11,17 @@ ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e5fd58603e287de31fab35375e9441f9113fb025
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973925"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778969"
 ---
-# <a name="how-to-customize-report-view-columns"></a>HOW TO：自訂報表檢視資料行
+# <a name="how-to-customize-report-view-columns"></a>如何：自訂報表檢視資料行
 Visual Studio Team System Development 版的效能工具已完全整合至整合式開發環境 (Integrated Development Environment，IDE)，可提供流暢的使用者經驗。 下列清單是可透過新增、移除及重新排列資料行來自訂的代表性檢視︰
 
 - [模組檢視](../profiling/modules-view.md)
@@ -31,7 +32,7 @@ Visual Studio Team System Development 版的效能工具已完全整合至整合
 
 - [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view.md)
 
-- [呼叫者/被呼叫者檢視](../profiling/caller-callee-view.md)
+- [呼叫端/被呼叫端檢視](../profiling/caller-callee-view.md)
 
 - [呼叫樹狀圖檢視](../profiling/call-tree-view.md)
 

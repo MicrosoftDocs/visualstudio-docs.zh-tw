@@ -8,14 +8,15 @@ ms.assetid: be75b03c-7af5-4abe-a54a-6ee5479ad877
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f9ae8f5cfeb3e5bcaf223e84f25007ebea646da2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a5492d2bbd33e6b250b564532c929234d748506c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967842"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778228"
 ---
 # <a name="stopprofile"></a>StopProfile
 `StopProfile` 函式會將所指定分析層級的計數器設定為 0 (關閉)。
@@ -33,7 +34,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 
  指出可套用效能資料收集的分析層級。 下列 **PROFILE_CONTROL_LEVEL** 列舉程式可以用來指出可套用效能資料收集的三種層級的其中一種：
 
-|列舉值|說明|
+|列舉值|描述|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|全域層級設定會影響分析執行中的所有處理序和執行緒。|
 |PROFILE_PROCESSLEVEL|處理序層級設定會影響屬於所指定處理序的所有執行緒。|
@@ -46,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值
  此函式會使用 **PROFILE_COMMAND_STATUS** 列舉來指出成功或失敗。 傳回值可以是下列其中一個：
 
-|列舉值|說明|
+|列舉值|描述|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|分析項目識別碼不存在。|
 |PROFILE_ERROR_LEVEL_NOEXIST|指定的分析層級不存在。|
@@ -106,5 +107,5 @@ void ExerciseStopProfile()
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)

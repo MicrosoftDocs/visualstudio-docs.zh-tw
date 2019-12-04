@@ -1,5 +1,5 @@
 ---
-title: HOW TO：收集 Windows 計數器資料 | Microsoft Docs
+title: 如何：收集 Windows 計數器資料 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +12,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 730345edb42ff3d14608bdcce91bc7b97c4bb478
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c85187fd54d61fdf40956c8aee3c0a222d95a313
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973847"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776315"
 ---
-# <a name="how-to-collect-windows-counter-data"></a>HOW TO：收集 Windows 計數器資料
+# <a name="how-to-collect-windows-counter-data"></a>如何：收集 Windows 計數器資料
 
 Windows 計數器是程式碼剖析期間可以設定的間隔收集的系統效能計數器。 在程式碼剖析工具報告的 [標記] 檢視中，每個收集間隔會有一個標示為 [自動標記] 的資料列。 該資料列包含以該間隔描述效能計數器值的資料行。 若要將分析限制於兩個特定標記之間的時段，請選取標記並按一下滑鼠右鍵，然後從捷徑功能表中選取 [篩選依據]  >  [標記]。
 
@@ -46,7 +47,7 @@ Windows 計數器是程式碼剖析期間可以設定的間隔收集的系統效
 
 8. 按一下 [套用]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)
 [效能工作階段屬性](../profiling/performance-session-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：指定其他的檢測選項 | Microsoft Docs
+title: 如何：指定其他的檢測選項 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,16 +11,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2d1f7e912ed5960c52e3f0bfa40fe9b87e91a2e6
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539136"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778696"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>HOW TO：指定其他的檢測選項
+# <a name="how-to-specify-additional-instrumentation-options"></a>如何：指定其他的檢測選項
 
 您可以使用 Visual Studio IDE 或使用命令列工具來檢測二進位檔。 如果是從 IDE 中檢測二進位檔，您可以為 [VSInstr](../profiling/vsinstr.md) 工具指定其他的檢測選項，藉以控制檢測期間所收集的資料量。 這些選項可以在工作階段或目標層級中使用。 例如，若要在檢測程序期間包含或排除特定函式，請在目標層級使用其他的檢測選項。
 
@@ -39,7 +40,7 @@ ms.locfileid: "62539136"
 
 4. 按一下 [確定]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)
 [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

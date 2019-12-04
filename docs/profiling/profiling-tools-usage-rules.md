@@ -6,14 +6,15 @@ ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 15b5789a04b4a94156ebec33e525eafe4e22f296
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 51c4f1384a58b19ad9a6a4f46ad0131158cc967c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745289"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778345"
 ---
 # <a name="profiling-tools-usage-rules"></a>程式碼剖析工具使用規則
 程式碼剖析工具使用分類中的效能規則提供的指引，可最有效地使用分析工具來收集資料。

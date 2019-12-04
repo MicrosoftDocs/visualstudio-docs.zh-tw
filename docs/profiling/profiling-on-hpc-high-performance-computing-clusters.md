@@ -17,20 +17,21 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 867350c1a786971a25256bbe8f60ac2bfca14a19
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910317"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772116"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>在 HPC (高效能運算) 叢集上進行分析
 
 您可以使用 Visual Studio 分析工具的取樣方法，在 Microsoft Windows HPC 叢集的計算節點上進行分析。 如需有關 HPC 的詳細資訊，請參閱 Microsoft 網站上的 [Windows HPC](https://azure.microsoft.com/solutions/big-compute/)。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 若要在 HPC 計算節點上進行程式碼剖析，您必須執行下列動作︰
 
@@ -133,7 +134,7 @@ ms.locfileid: "72910317"
 |**遠端工作目錄**|指定由個別計算節點上處理序執行個體使用的資料夾路徑。|
 |**部署位置**|指定 HPC 伺服器用以佈置部署映像的目錄路徑。|
 
-### <a name="advanced-properties"></a>進階屬性
+### <a name="advanced-properties"></a>進階內容
 
 | 屬性 | 描述 |
 |---------------------------------------| - |

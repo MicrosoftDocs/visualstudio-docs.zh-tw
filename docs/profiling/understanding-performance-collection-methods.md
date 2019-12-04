@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821222"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778085"
 ---
 # <a name="understand-performance-collection-methods"></a>了解效能收集方法
 
@@ -25,7 +26,7 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
 > [!NOTE]
 > Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |[取樣](#sampling)|收集應用程式所執行的工作相關統計資料。|
 |[檢測](#instrumentation)|收集有關每個函式呼叫的詳細計時資訊。|
@@ -54,7 +55,7 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
 
 [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
 
-## <a name="instrumentation"></a>測試設備
+## <a name="instrumentation"></a>檢測設備
 
 檢測分析方法可收集已進行程式碼剖析的應用程式中詳細的函式呼叫計時資料。 檢測分析適用於下列項目：
 
@@ -129,7 +130,7 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
 
 [階層互動檢視](../profiling/tier-interaction-views.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [如何：收集網站的效能資料](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 [效能分析的初學者指南](../profiling/beginners-guide-to-performance-profiling.md)

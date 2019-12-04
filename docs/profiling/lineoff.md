@@ -6,14 +6,15 @@ ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b4de8aa278adab0127f3a39d9adcf105f906e152
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ac671c3b0ba40c462403b2afa850c3936156d6d2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995327"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774122"
 ---
 # <a name="lineoff"></a>LineOff
 根據預設，分析工具會在您使用取樣分析方法時，收集原始程式碼行號和位移資料行號。 VSPerfCmd 的 **LineOff** 選項在使用 VSPerfCmd 啟動應用程式時，會停用行號資料收集。 指定 [LineOff] 時，分析資料會收集至函式層級。
@@ -27,12 +28,12 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ```
 
 #### <a name="parameters"></a>參數
- 無
+ None
 
 ## <a name="required-options"></a>必要選項
  **LineOff** 選項只能用在包含 [啟動] 選項的命令列中。
 
- **Launch:**`AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
+ **啟動：** `AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
 
 ## <a name="example"></a>範例
  這個範例會啟動應用程式和分析工具，並停用程式碼層級的取樣。
@@ -42,7 +43,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /LineOff
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)

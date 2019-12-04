@@ -13,14 +13,15 @@ ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc3721c00816d7cab9af3a4c14e427f4218d15d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7f066d6c9476f0a44a23e59ff2b715a6df9975ba
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969676"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779190"
 ---
 # <a name="functions-view"></a>函式檢視
 [函式] 檢視會列出分析期間呼叫的函式。
@@ -31,7 +32,7 @@ ms.locfileid: "62969676"
 
  [函式] 檢視中可用的資料行取決於用來收集資料的分析方法 (取樣或檢測)，以及是否在分析回合中收集 .NET 記憶體資料。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [函式檢視](../profiling/functions-view-sampling-data.md)
 - [函式檢視](../profiling/functions-view-instrumentation-data.md)
 - [函式檢視 - 檢測](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

@@ -11,22 +11,23 @@ ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5330ea0494636130f3bc28c28d0e46bfc524bfb8
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 26819be7cd001e87a6f94ac97d29c8a5e67f3932
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024655"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777695"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007：避免使用例外狀況進行控制流程
 
 |||
 |-|-|
-|規則 ID|DA0007|
+|規則識別碼|DA0007|
 |Category|.NET Framework 使用方式|
-|分析方法|All|
+|分析方法|全部|
 |訊息|一致地擲回大量例外狀況。 請考慮在程式邏輯中減少使用例外狀況。|
 |訊息類型|警告|
 

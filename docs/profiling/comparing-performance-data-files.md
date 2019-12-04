@@ -9,14 +9,15 @@ ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9802bc92a857192ce144432114a8add2c1becba8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788515"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777851"
 ---
 # <a name="compare-performance-data-files"></a>比較效能資料檔案
 
@@ -34,4 +35,4 @@ ms.locfileid: "62788515"
 
 ## <a name="in-this-section"></a>本節內容
 
-[如何：比較效能資料檔案](../profiling/how-to-compare-performance-data-files.md)
+[操作說明：比較效能資料檔案](../profiling/how-to-compare-performance-data-files.md)

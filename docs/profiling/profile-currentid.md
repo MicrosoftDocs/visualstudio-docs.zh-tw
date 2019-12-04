@@ -8,16 +8,17 @@ ms.assetid: 55ccf665-a05e-48c3-adf7-7714c0a9aaef
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 747922bf52bee18b20aeba95f7d549c890afceea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 63b44bee152acbf5529acfcadaa49a19e9feb52b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972430"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778358"
 ---
-# <a name="profilecurrentid"></a>PROFILE_CURRENTID
+# <a name="profile_currentid"></a>PROFILE_CURRENTID
 PROFILE_CURRENTID 在對 NameProfile、StartProfile、StopProfile、SuspendProfile 和 ResumeProfile 函式的呼叫中，會傳回執行緒識別碼或處理序識別碼的虛擬語彙基元。 使用它會讓函式在目前的執行緒或處理序上作業，而不是特別指定的執行緒或處理序。
 
 ## <a name="example"></a>範例
@@ -57,7 +58,7 @@ void ExerciseProfileCurrentID()
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [NameProfile](../profiling/nameprofile.md)
 - [ResumeProfile](../profiling/resumeprofile.md)

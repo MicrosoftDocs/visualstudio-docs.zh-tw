@@ -9,20 +9,21 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3bf4f5fd7ab18efb13e1c52847daf647e908b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968772"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778137"
 ---
 # <a name="tier-interactions-view"></a>階層互動檢視
 
 階層互動分析提供透過 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 與資料庫通訊的多介層應用程式函式執行時間的其他資訊。 只針對同步函式呼叫收集資料。
 
-**需求**
+**Requirements**
 
 - Visual Studio 企業版
 
@@ -36,7 +37,7 @@ ms.locfileid: "62968772"
 
 ## <a name="master-pane"></a>主要窗格
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**名稱**|- 對於最上層資料列，為已進行分析的處理序或網頁名稱。<br />- 對於資料庫連接資料列，為裝載資料庫的伺服器名稱。|
 |**資料庫**|資料庫的名稱 (僅資料庫連接資料列)。|
@@ -48,7 +49,7 @@ ms.locfileid: "62968772"
 
 ## <a name="database-connection-details-pane"></a>資料庫連接詳細資料窗格
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**命令文字**|要求的 SQL 查詢。|
 |**查詢計數**|執行該查詢的次數。|

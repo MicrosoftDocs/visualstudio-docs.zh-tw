@@ -10,24 +10,25 @@ ms.assetid: 228872da-77d0-4da5-b455-ac57fb1867c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 46dfce74e02faffb90cf5984651968633c27a16d
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 3b8352095bcf31c137d391c2ed2e832d34e0ec7b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910611"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779346"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024：過多 GC CPU 時間
 
 |||
 |-|-|
-|規則 ID|DA0024|
+|規則識別碼|DA0024|
 |Category|.NET Framework 使用方式|
-|程式碼剖析方法|All|
+|程式碼剖析方法|全部|
 |訊息|% Time in GC 非常高。 有過高的記憶體回收負荷。|
-|規則型別|警告|
+|規則類型|警告|
 
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。
 

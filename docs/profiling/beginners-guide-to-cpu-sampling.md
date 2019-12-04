@@ -13,14 +13,15 @@ ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b175eec9d17624f2b7225d1aac428926310734
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: c6a5a0eb84e4f06fd1b4dd248a1bce952b2c7197
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128223"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779801"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 取樣的初級開發人員指南
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [取樣] 資料。
@@ -32,7 +33,7 @@ ms.locfileid: "71128223"
 
  依指定的間隔，[取樣] 方法會收集在應用程式中執行函式的詳細資訊。 在您完成執行程式碼剖析後，程式碼剖析資料的 [摘要] 檢閱會顯示最常使用的函式呼叫樹狀圖，稱為 [最忙碌路徑]，其中在應用程式中的大部分工作都已執行。 此檢視也列出正在執行最多個別工作的函式，並提供讓您用來專注於取樣工作階段特定區段的時間軸圖形。
 
- 如果 [取樣] 沒有提供您所需的資料，則其他程式碼剖析工具集合方法可提供不同種類的資訊，這可能會很有幫助。 如需這些其他方法的詳細資訊，請參閱[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)。
+ 如果 [取樣] 沒有提供您所需的資料，則其他程式碼剖析工具集合方法可提供不同種類的資訊，這可能會很有幫助。 如需這類其他方法的詳細資訊，請參閱[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)。
 
 > [!TIP]
 > 如果您剖析呼叫 Windows 函式的程式碼，您應該要確定您有最新的 .*pdb* 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確認您擁有所需檔案的詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。
@@ -68,17 +69,17 @@ ms.locfileid: "71128223"
 
  建議您先檢查 [最忙碌路徑]，接著檢查執行最多工作之函式的清單，最後使用 [摘要時間表] 來專注於其他函式以開始分析資料。 您也可以在 [錯誤清單] 視窗中檢視分析建議和警告。
 
- 請注意此取樣方法可能無法提供您所需的資訊。 例如，只有在應用程式執行使用者模式程式碼時才會收集樣本。 因此，取樣不會擷取某些功能，例如輸入和輸出作業。 [程式碼剖析工具] 提供讓您專注於重要資料的數個收集方法。 如需其他方法的詳細資訊，請參閱[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)。
+ 請注意此取樣方法可能無法提供您所需的資訊。 例如，只有在應用程式執行使用者模式程式碼時才會收集樣本。 因此，取樣不會擷取某些功能，例如輸入和輸出作業。 [程式碼剖析工具] 提供讓您專注於重要資料的數個收集方法。 如需這類其他方法的詳細資訊，請參閱[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)。
 
  圖中的每個編號區域與程序中的步驟相關。
 
- ![用於取樣的摘要報表檢視](../profiling/media/summary_sampling.png "Summary_Sampling")
+ ![取樣的摘要報表檢視](../profiling/media/summary_sampling.png "Summary_Sampling")
 
 #### <a name="to-analyze-sampling-data"></a>分析取樣資料
 
 1. 在 [摘要] 檢閱中，[最忙碌路徑] 會顯示應用程式呼叫樹狀圖中具有最多內含樣本的分支。 這是在收集資料時最活躍的執行路徑。 最高內含值指出產生呼叫樹狀圖的演算法可以最佳化。 在程式碼中尋找位於路徑中該值最低的函式。 請注意，此路徑也會包含系統函式或外部模組中的函式。
 
-     ![程式碼剖析工具的最忙碌路徑](../profiling/media/profiler_hotpath.png "Profiler_HotPath")
+     ![Profiler 最忙碌路徑](../profiling/media/profiler_hotpath.png "Profiler_HotPath")
 
     1. [內含樣本] 表示函式及其呼叫的任何函式已完成多少工作。 最高內含計數指向整體耗費最多資源的函式。
 
@@ -100,7 +101,7 @@ ms.locfileid: "71128223"
 
      若要重新分析某個區段，請在 [摘要時間表] 方塊內部選取區段，然後按一下 [依選取範圍篩選]。
 
-     ![效能摘要檢視時間表](../profiling/media/performancesummary.png "PerformanceSummary")
+     ![效能摘要視圖時間軸](../profiling/media/performancesummary.png "PerformanceSummary")
 
 4. 分析工具也會使用一組規則來建議改善分析回合的方式，並且識別可能的效能問題。 如果找到問題，就會在 [錯誤清單] 視窗中顯示警告。 若要開啟 [錯誤清單] 視窗，請在 [檢視] 功能表上，按一下 [錯誤清單]。
 
@@ -123,7 +124,7 @@ ms.locfileid: "71128223"
 
      新視窗隨即開啟並顯示比較結果。 如需如何使用比較檢視的詳細資訊，請參閱[如何：比較效能資料檔案](../profiling/how-to-compare-performance-data-files.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [效能總管](../profiling/performance-explorer.md)
 - [快速入門](../profiling/getting-started-with-performance-tools.md)
 - [概觀](../profiling/overviews-performance-tools.md)

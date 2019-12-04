@@ -6,14 +6,15 @@ ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dad42d9bd4919e90f3ef3bd84ee156cd510e311
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 46b47f9b615c824d25e931cd3d05f5d2a04257ba
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910238"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777317"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 *VSPerfCmd.exe* **Events** 選項會控制 Windows 事件追蹤 (ETW) 記錄。 ETW 資料會儲存至與分析工具資料檔案不同的 .etl 檔案。 使用 [VSPerfReport](../profiling/vsperfreport.md) /summary:etw 命令，即可透過報表形式來檢視資料。

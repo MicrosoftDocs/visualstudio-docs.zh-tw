@@ -11,21 +11,22 @@ ms.assetid: 3987e21a-5b4f-45e4-8a33-6b3f0a472c08
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a1ddeb2b12d592c93bb0e5b88ba76c1b01c3c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9ce982c7a98fd12749c66c89e47bd895d2fb6a5d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936549"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777682"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010：GetHashCode 高度耗費資源
 
 |||
 |-|-|
-|規則 ID|DA0010|
-|分類|.NET Framework 使用方式|
+|規則識別碼|DA0010|
+|Category|.NET Framework 使用方式|
 |分析方法|取樣<br /><br /> .NET 記憶體|
 |訊息|GetHashCode 函式應該便宜，而且不會配置任何記憶體。 盡可能降低雜湊碼函式的複雜度。|
 |訊息類型|警告|

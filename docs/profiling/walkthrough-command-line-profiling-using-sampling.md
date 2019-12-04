@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 20804e6ada568828ea1850ae249d9bf0d24855e0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 09272c8cf2dff02d3be024b9c3eeab8b51f56df7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189271"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777968"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：使用取樣進行命令列分析
 
@@ -29,7 +30,7 @@ ms.locfileid: "73189271"
 - 使用命令列工具和取樣來剖析應用程式。
 - 分析取樣的分析結果，找出並修正效能問題。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 - 對 [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)] 有中等程度的了解
 - 對使用命令列工具有中等程度的了解

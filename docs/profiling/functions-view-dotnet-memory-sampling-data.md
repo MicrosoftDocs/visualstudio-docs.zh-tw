@@ -8,22 +8,23 @@ ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: b0e8c14779f9f7b3f14fab2dfc1022db0319aeb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cce13da0c2dfee61d70da8bc288d1f0ff4690deb
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974055"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780035"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>函式檢視 - .NET 記憶體取樣資料
 使用取樣方法所收集之 .NET 記憶體配置分析資料的 [函式] 檢視，會列出已在分析回合期間配置記憶體的函式，並報告配置大小和數目。
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**處理序 ID**|分析執行的處理序 ID (PID)。|
-|**處理序名稱**|處理序的名稱。|
+|**處理序名稱**|處理程序的名稱。|
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
 |**原始程式檔**|含有這個函式定義的原始程式檔。|
@@ -39,7 +40,7 @@ ms.locfileid: "62974055"
 |**專有位元組**|此函式但非其子函式所配置的記憶體位元組數目。|
 |**專有位元組 %**|在分析執行配置的所有記憶體位元組中，屬於此函式的專屬位元組百分比。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [函式檢視 - 檢測](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 - [函式檢視](../profiling/functions-view-sampling-data.md)
 - [函式檢視](../profiling/functions-view-instrumentation-data.md)

@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f2668d5b60fba429613975cc24e751dbe07f87b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830861"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778046"
 ---
 # <a name="understand-sampling-data-values"></a>了解取樣資料值
 
@@ -49,7 +50,7 @@ Visual Studio 分析工具的「取樣」分析方法會依設定的間隔來中
 
 就程式碼剖析執行時的專有樣本總數，函式或資料範圍的專有樣本所佔的百分比。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
 [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)

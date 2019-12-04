@@ -1,5 +1,5 @@
 ---
-title: 分析工具命令列：獨立應用程式的計時詳細資料
+title: Profiler 命令列：獨立應用程式的計時資料詳細資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,15 @@ ms.assetid: 4017d9d1-d609-4f41-8e4e-976abae746b3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 13bc632d70b3d477b70f6e947e55d5c82c6ab064
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: a0c0fae312b5c193774d9acf8934a0688b2ed69e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262883"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779606"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>使用分析工具命令列收集獨立應用程式的詳細計時資料
 本節說明從命令列使用檢測方法收集用戶端 (獨立) 元件之詳細效能資料的程序和選項。

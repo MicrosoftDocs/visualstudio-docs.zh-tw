@@ -11,14 +11,15 @@ ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ebcb58f1bbab478f60f446527dad1611b295996
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6e5bd33d9924784220addafca85a63f550df02c7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969754"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779255"
 ---
 # <a name="function-details-view"></a>函式詳細資料檢視
 [函式詳細資料檢視] 視窗會顯示下列資訊︰
@@ -37,7 +38,7 @@ ms.locfileid: "62969754"
 
 ## <a name="cost-distribution-bar-chart"></a>成本分配橫條圖
 
-### <a name="performance-metrics"></a>效能度量
+### <a name="performance-metrics"></a>效能標準
  在 [效能度量] 下拉式清單中，您可以指定出現在檢視中的值。 所提供的值取決於程式碼剖析資料檔案中所使用的程式碼剖析方法。 括號中的名稱是 [函式效能詳細資料] 資料表中資料列的名稱。
 
 ### <a name="bar-chart"></a>長條圖
@@ -70,7 +71,7 @@ ms.locfileid: "62969754"
 ## <a name="function-performance-details"></a>函式效能詳細資料
  [函式效能詳細資料] 資料表會提供所選取函式效能度量的摘要資料。 數值和百分比都會顯示。 您可以指定出現在 [效能度量] 清單中圖表和詳細資料表內的程式碼剖析資料。
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**專有**|- 執行函式主體時發生的效能度量數目。|
 |**對內呼叫**|- 在所選取函式呼叫的函式中發生的效能度量數目。|
@@ -88,7 +89,7 @@ ms.locfileid: "62969754"
 |-|-|
 |**內含樣本 (收集的樣本)**|- 若為呼叫函式，則為此呼叫函式呼叫所選取函式時收集的樣本數目。<br />- 若為函式主體，則為選取的函式執行本身的程式碼時所收集的樣本數目。<br />- 若為所呼叫函式，則為所呼叫函式因為選取的函式呼叫而執行時收集的樣本數目。|
 
-### <a name="instrumentation"></a>測試設備
+### <a name="instrumentation"></a>檢測設備
  下表說明效能度量清單中的值，是使用檢測設備方法收集到的程式碼剖析資料 。
 
 |||
