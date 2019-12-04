@@ -6,14 +6,15 @@ ms.assetid: 275aacba-b2af-4d34-8931-ee30d777a256
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fba5c02846fa13cb0929a63e4007acb7db58535
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 4b7b60ad871f40e06e2a8fbf6782773ce6596f31
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262982"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779671"
 ---
 # <a name="collect-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>使用分析工具命令列收集服務的並行資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的並行方法可讓您收集資源爭用資料和執行緒活動資料，顯示 CPU 使用率、執行緒爭用、執行緒移轉、同步處理延遲、重疊 IO 區域 和其他系統事件。

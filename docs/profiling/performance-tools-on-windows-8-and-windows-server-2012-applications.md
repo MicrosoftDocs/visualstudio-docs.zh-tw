@@ -5,14 +5,15 @@ ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bb5442d12899436076f6b60e8fd7e807b19e4f82
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189331"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778423"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
 

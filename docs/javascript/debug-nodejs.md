@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
-ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
+ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73913006"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777929"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行偵錯
 
@@ -111,7 +111,7 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的用戶端偵錯工具支
 
     若要在轉換檔案中尋找特定程式碼，請使用**Ctrl**+**F** （**編輯** > **尋找並取代** > **快速尋找**）。
 
-    針對用戶端程式代碼，若要在 TypeScript 檔案或 JSX 檔中叫用中斷點，通常需要使用[來源對應](#generate_source_maps)。 來源對應必須正確設定，才能支援 Visual Studio 中的調試。
+    針對用戶端程式代碼，若要叫用 TypeScript 檔案中的中斷點， *vue*或 JSX 檔案通常需要使用[來源對應](#generate_source_maps)。 來源對應必須正確設定，才能支援 Visual Studio 中的調試。
 
 2. 在 Visual Studio 中選取您的目標瀏覽器做為 debug 目標，然後按下**Ctrl**+**F5** （**debug** > **啟動但不進行調試**程式），以在瀏覽器中執行應用程式。
 
@@ -127,7 +127,6 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的用戶端偵錯工具支
     > 從 Visual Studio 2017 開始，一旦您依照下列步驟第一次附加至進程，您可以選擇 [ **Debug** ] > [重新**附加至進程**]，快速地重新附加至相同的進程。
 
 4. 在 [**附加至進程**] 對話方塊中，取得您可以附加至之瀏覽器實例的篩選清單。
-
     ::: moniker range=">=vs-2019"
     在 Visual Studio 2019 中，于 [**附加至**] 欄位中選擇目標瀏覽器、 **javascript （Chrome）** 或**JAVAscript （Microsoft Edge-Chromium）** 的正確偵錯工具，在篩選方塊中輸入**Chrome**或**Edge**以篩選搜尋結果。
     ::: moniker-end

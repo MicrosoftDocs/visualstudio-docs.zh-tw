@@ -10,14 +10,15 @@ ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fd4e411fdb9b49a67f5fbddb27d2a0102cdc755
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cfb0d9ae2d677b1cc9dc828ffaecd5c0f71bfd5b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794390"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772284"
 ---
 # <a name="performance-report-views"></a>效能報告檢視
 本節提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具報表和檢視的參考資訊。 程式碼剖析資料檔案的檢視會顯示在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境 (IDE) 中， 報表則由 [VSPerfReport](../profiling/vsperfreport.md) 命令列工具產生。
@@ -45,11 +46,11 @@ ms.locfileid: "62794390"
 
 - [並行視覺化檢視](../profiling/concurrency-visualizer.md)
 
- 使用並行方法所產生且包含執行緒執行資料的程式碼剖析資料檔案之檢視和報告的參考資訊。
+ 使用並行方法所產生且包含執行緒執行資料的分析資料檔案之檢視和報告的參考資訊。
 
 - [階層互動檢視](../profiling/tier-interactions-view.md)
 
  包含階層互動資料的程式碼剖析資料檔案之互動檢視和報告的參考資訊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)

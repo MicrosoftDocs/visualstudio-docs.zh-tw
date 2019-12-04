@@ -9,14 +9,15 @@ ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e0d4cdfd393961566a0aef0c649e6ff788fdc8ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d9f0c9a3259186e1581a4673cdc18d1554e92b3c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403627"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778488"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 函式會將字串指派給指定的處理序或執行緒。
@@ -49,7 +50,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
   指出可套用效能資料收集的分析層級。 下列 **PROFILE_CONTROL_LEVEL** 值可以用來指出可套用效能資料收集的三種層級的其中一種：
 
-|列舉值|說明|
+|列舉值|描述|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|全域層級設定會影響分析執行中的所有處理序和執行緒。|
 |PROFILE_PROCESSLEVEL|處理序層級設定會影響屬於所指定處理序的所有執行緒。|
@@ -62,7 +63,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值
  此函式會使用 **PROFILE_COMMAND_STATUS** 列舉來指出成功或失敗。 傳回值可以是下列其中一個：
 
-|列舉值|說明|
+|列舉值|描述|
 |----------------|-----------------|
 |NAME_ERROR_ID_NOEXIST|指定的分析項目不存在。|
 |NAME_ERROR_INVALID_NAME|名稱無效。|
@@ -90,7 +91,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
 |||
 |-|-|
-|**標頭**|包含 *VSPerf.h*|
+|**標題**|包含 *VSPerf.h*|
 |**程式庫**|使用 *VSPerf.lib*|
 |**Unicode**|實作為 `NameProfileW` (Unicode) 和 `NameProfileA` (ANSI)。|
 
@@ -132,5 +133,5 @@ void ExerciseNameProfile()
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)

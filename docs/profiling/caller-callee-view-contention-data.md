@@ -8,14 +8,15 @@ ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d14296ab4218cbcab0d508f47b0f38f3c50a94f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777329"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779736"
 ---
 # <a name="callercallee-view----contention-data"></a>呼叫端/被呼叫端檢視 - 爭用資料
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的爭用資訊。 [呼叫端/被呼叫端] 檢視包含三個方格。
@@ -26,7 +27,7 @@ ms.locfileid: "62777329"
 
  **目前的函式所呼叫的函式**會顯示在下方方格中，並顯示所選取函式之被呼叫端 (子) 函式 (由目前函式所呼叫) 的爭用資訊。
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**Type**|函式的內容︰<br /><br /> -   **0** - 目前的函式<br />-   **1** - 呼叫目前函式的函式<br />-   **2** - 目前的函式所呼叫的函式<br /><br /> 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|
 |**專有封鎖時間**|- 如果是目前的函式，即為此函式已遭封鎖而無法執行函式主體中之程式碼的時間。 不包括函式所呼叫之函式的封鎖時間。<br />- 如果是呼叫端函式，即為目前函式專有封鎖時間的部分，這會發生在此函式呼叫目前的函式時。<br />- 如果是被呼叫端函式，即為此函式已遭封鎖，而無法在目前函式呼叫此函式時執行本身程式碼的時間。 不包括被呼叫端函式所呼叫之子函式的封鎖時間。|
@@ -43,11 +44,11 @@ ms.locfileid: "62777329"
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
 |**處理序 ID**|發生爭用之處理序的處理序 ID (PID)。|
-|**處理序名稱**|處理序的名稱。|
+|**處理序名稱**|處理程序的名稱。|
 |**根函式名稱**|目前函式的名稱。 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|
 |**原始程式檔**|含有這個函式定義的原始程式檔。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
 - [呼叫者/被呼叫者檢視](../profiling/caller-callee-view.md)
 - [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)

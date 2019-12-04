@@ -8,14 +8,15 @@ ms.assetid: c7f647bb-c5a3-4708-9f9d-33c0fd6e2e96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 579887c22df16d555c3f309b4326740060aefc1f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42398e044bfc06e41249b15ac9baeebcaebd19f6
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442228"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774252"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>指令指標 (IP) 檢視 - 取樣資料
 取樣資料的 IP 檢視會針對在程式碼剖析執行期間收集樣本時直接執行的組件指令，列出效能資料。
@@ -23,10 +24,10 @@ ms.locfileid: "63442228"
 > [!NOTE]
 > Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**處理序 ID**|分析執行的處理序 ID (PID)。|
-|**處理序名稱**|處理序的名稱。|
+|**處理序名稱**|處理程序的名稱。|
 |**模組名稱**|包含該指令的模組名稱。|
 |**模組路徑**|包含該指令的模組路徑。|
 |**原始程式檔**|包含此指令的原始程式檔。|
@@ -41,5 +42,5 @@ ms.locfileid: "63442228"
 |**專有樣本**|當正在執行指令時所收集的總樣本數。|
 |**專有樣本 %**|執行程式碼剖析期間，執行指令時所收集的所有樣本的百分比。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [指令指標 (IP) 檢視 - 取樣](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

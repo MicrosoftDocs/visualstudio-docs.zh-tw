@@ -10,14 +10,15 @@ ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: efadc6917f565f5449a76b6a8b91b309356a00bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1607e594b6456d4da4396069d589160230b39680
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797918"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778332"
 ---
 # <a name="resource-contentions-view---contention-data"></a>資源爭用檢視 - 爭用資料
 資源爭用檢視列出爭用事件來源的資源爭用資料。 因為另一個執行緒中的函式已取得資源的獨佔存取權，所以會強制執行緒中的函式等候存取資源，而發生爭用事件。 每項資源都是呼叫樹狀圖的根節點，會顯示導致爭用事件的函式執行路徑。
@@ -39,7 +40,7 @@ ms.locfileid: "62797918"
 
 ## <a name="navigating-the-resource-allocation-view"></a>巡覽資源分派檢視
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**名稱**|資源或函式的名稱。|
 |**專有封鎖時間**|-   對於資源，是指遭到封鎖而無法存取資源並導致執行緒等候的總時間。<br />-   對於函式，是指當函式在執行函式主體中的程式碼時，這些函式執行個體遭到封鎖而無法存取父資源的時間。 不包括由該函式所呼叫函式的封鎖時間。|
@@ -55,5 +56,5 @@ ms.locfileid: "62797918"
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
 |**處理序 ID**|函式於該處理序中執行的處理序 ID (PID)。|
-|**處理序名稱**|處理序的名稱。|
+|**處理序名稱**|處理程序的名稱。|
 |**原始程式檔**|含有這個函式定義的原始程式檔。|

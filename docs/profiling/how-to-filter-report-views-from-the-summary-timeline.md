@@ -1,21 +1,22 @@
 ---
-title: HOW TO：從摘要時間軸篩選報表檢視 | Microsoft Docs
+title: 如何：從摘要時間軸篩選報表檢視 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 57065a7b258e8f9a2491332250cb38919bcb7910
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 191e54189677abc7d89d5f50064ceda6f2669f03
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973795"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778943"
 ---
-# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>HOW TO：從摘要時間軸篩選報表檢視
+# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>如何：從摘要時間軸篩選報表檢視
 您可以在 [摘要] 檢視的時間軸圖形中指定一個時間區段，來篩選效能報告中顯示的資料。 當您篩選報告時，系統會對分析資料檔進行分析，以只包含您指定的時間區段。
 
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>從摘要時間軸圖形篩選分析報告

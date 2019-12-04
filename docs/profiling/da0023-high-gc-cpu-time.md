@@ -10,24 +10,25 @@ ms.assetid: aba875fe-9cbc-418d-a2c4-6eb47519a5bb
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e0d8fa6ec96c31ff78d037c97afdc2c093889dd
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: f0dd45486f526954d7dfce45cd607ff6196eae00
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911943"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777643"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023：高 GC CPU 時間
 
 |||
 |-|-|
-|規則 ID|DA0023|
+|規則識別碼|DA0023|
 |Category|.NET Framework 使用方式|
-|程式碼剖析方法|All|
+|程式碼剖析方法|全部|
 |訊息|% Time in GC 相當高。 這表示過多的記憶體回收負擔可能會影響應用程式的回應性。 您可以收集 .NET 記憶體配置資料和物件存留期資訊，更了解應用程式所使用之記憶體配置的模式。|
-|規則型別|告知性|
+|規則類型|告知性|
 
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。
 

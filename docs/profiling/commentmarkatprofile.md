@@ -9,14 +9,15 @@ ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e67f41bc4e30f0790e672a241dfe478a13ded9b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51028dce1d60c0d01c83cee509a1ed7321855437
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407556"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777838"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` 方法會在 .*vsp* 檔案中插入時間戳記值、數字標記和註解字串。 時間戳記值可以用來同步處理外部事件。 針對要插入的標記和註解，包含 CommentMarkAtProfile 函式之執行緒的分析必須是 ON。
@@ -46,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值
  此函式會使用 **PROFILE_COMMAND_STATUS** 列舉來指出成功或失敗。 傳回值可以是下列其中一個：
 
-|列舉值|說明|
+|列舉值|描述|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|參數小於或等於 0。 會保留這些值。 不會記錄標記和註解。|
 |MARK_ERROR_MODE_NEVER|呼叫函式時，分析模式設定為 NEVER。 不會記錄標記和註解。|
@@ -69,7 +70,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 
 |||
 |-|-|
-|**標頭**|包含 *VSPerf.h*|
+|**標題**|包含 *VSPerf.h*|
 |**程式庫**|使用 *VSPerf.lib*|
 |**Unicode**|實作為 CommentMarkAtProfileW (Unicode) 和 CommentMarkAtProfileA (ANSI)。|
 
@@ -114,5 +115,5 @@ void ExerciseCommentMarkAtProfile(void)
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)

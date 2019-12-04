@@ -11,14 +11,15 @@ ms.assetid: a0c3be92-c263-4678-9fb9-bafead3bd5f5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f0071e98c9e36f3af11d318f480b4b9c6ec4cc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 89dadc3213620b668160752e919679cccead90bc
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822816"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778020"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio 分析工具 API 參考 (原生)
 Visual Studio 分析工具 API 可讓您以程式設計方式控制收集的資料量，並在分析期間插入時間戳記和設定檔標記。 若要使用原生 API，您可以在您的專案中包含 *VSPerf.h* 標頭檔，並新增 *VSPerf.lib*。
@@ -45,7 +46,7 @@ Visual Studio 分析工具 API 可讓您以程式設計方式控制收集的資�
 
 [PROFILE_CURRENTID](../profiling/profile-currentid.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [分析工具 API](../profiling/profiling-tools-apis.md)
 - [逐步解說：使用分析工具 API](../profiling/walkthrough-using-profiler-apis.md)

@@ -9,14 +9,15 @@ ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d0655c0faf57a72d6e99ba65f9f84db059e5fe0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 558cef408ceca48a55563ae31f2399da0e951b8e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406020"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779749"
 ---
 # <a name="call-tree-view---sampling-data"></a>呼叫樹狀圖檢視 - 取樣資料
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。
@@ -36,10 +37,10 @@ ms.locfileid: "63406020"
 
  設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 若要將根節點重設回原始節點，請在 [呼叫樹狀圖檢視] 視窗上按一下滑鼠右鍵，然後選取 [重設根目錄]。
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**處理序 ID**|分析執行的處理序 ID (PID)。|
-|**處理序名稱**|處理序的名稱。|
+|**處理序名稱**|處理程序的名稱。|
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
 |**原始程式檔**|含有這個函式定義的原始程式檔。|
@@ -52,7 +53,7 @@ ms.locfileid: "63406020"
 |**內含樣本**|在呼叫樹狀圖中父函式呼叫此函式時，在此函式中所收集的樣本數目。 此數目包含在此函式所呼叫之函式中所收集的樣本。|
 |**內含樣本 %**|在呼叫樹狀圖中父函式呼叫此函式時，屬於此函式之內含樣本佔分析執行中所有樣本的百分比。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
 - [呼叫樹狀結構檢視 - 分析工具取樣資料](../profiling/call-Tree-view-sampling-data.md)
 - [呼叫樹狀圖檢視 - 取樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

@@ -15,14 +15,15 @@ ms.assetid: 5e26e0fd-383b-4fb6-a29d-a458d8232828
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9208a274c9dc50226452bbe9d2235d8dbf9b42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9c90d070a3b7125143eda5fd8666b1a4f64312b3
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995353"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778631"
 ---
 # <a name="instruction-pointers-ips-view"></a>指令指標 (IP) 檢視
 [指令指標] 檢視可讓您查看取樣程式碼剖析期間所執行的特定指標。
@@ -33,7 +34,7 @@ ms.locfileid: "62995353"
 
  對於 .NET 記憶體資料，[程式行] 檢視會識別用於配置記憶體的指令。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view-sampling-data.md)
 - [指令指標 (IP) 檢視 - 取樣](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 - [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view-contention-data.md)

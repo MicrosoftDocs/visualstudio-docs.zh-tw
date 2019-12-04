@@ -9,19 +9,20 @@ ms.assetid: be79ec41-f1dd-4984-993f-5c2962355a32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b284a53d930fc7882b9a2a9a3bde8d5334ea13ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798437"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771526"
 ---
 # <a name="resource-contention-data-views"></a>資源爭用資料檢視
 本節包含程式碼剖析工具資料檔案的檢視與報告，而此檔案含有執行緒爭用分析資料。
 
-## <a name="in-this-section"></a>本節內容
+## <a name="in-this-section"></a>本章節內容
 - [摘要檢視 - 分析爭用資料](../profiling/resource-contention-data-views.md)
 
  顯示分析資料的圖形化時間軸，並列出參與最多封鎖事件的函式和資源。

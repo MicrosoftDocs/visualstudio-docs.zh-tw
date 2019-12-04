@@ -8,14 +8,15 @@ ms.assetid: 6631ab87-0e62-4c76-a063-4ea7222b07da
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c654bbcc9db696d78e651414bfa89d6ad1e2f3e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000063"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774076"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>程式行檢視 - .NET 記憶體取樣資料
 使用取樣方法之 .NET 記憶體配置分析資料的 [程式行] 檢視，會列出在執行分析期間配置記憶體的陳述式。 資料行也包含配置的大小和數量。
@@ -40,10 +41,10 @@ ms.locfileid: "63000063"
 
   根據定義，陳述式不會呼叫其他函式。 因此只會列出互斥值。
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**處理序 ID**|分析執行的處理序 ID (PID)。|
-|**處理序名稱**|處理序的名稱。|
+|**處理序名稱**|處理程序的名稱。|
 |**模組名稱**|包含陳述式的模組名稱。|
 |**模組路徑**|包含陳述式的模組路徑。|
 |**原始程式檔**|包含陳述式的原始程式檔。|
@@ -54,11 +55,11 @@ ms.locfileid: "63000063"
 |**原始程式碼結尾行**|發生配置的原始程式檔中的結尾行號。|
 |**原始程式碼開頭字元**|發生配置的原始程式檔行中，起始字元的位移。|
 |**原始程式碼結尾字元**|發生配置的原始程式檔行中，結尾字元的位移。|
-|**程式行名稱**|分析工具產生的程式行識別項，該程式行使用下列語法：`Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number Start,Character Start`**]**|
+|**程式行名稱**|分析工具產生的程式行識別項，該程式行使用下列語法：`Source File` **;[** `Line Number Start` **,** `Character Start` **]->;[** `Line Number Start,Character Start` **]**|
 |**專有配置**|已在此行中建立的物件總數。|
 |**專有配置 %**|分析執行期間，配置於此行中的物件佔所有已建立物件的百分比。|
 |**專有位元組**|在執行分析期間配置於此行中的記憶體位元組，佔所配置記憶體之所有位元組的百分比。|
 |**專有位元組 %**|在執行分析期間配置於此行中的記憶體位元組，佔所配置記憶體之所有位元組的百分比。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [程式行檢視](../profiling/lines-view-sampling-data.md)

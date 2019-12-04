@@ -1,21 +1,22 @@
 ---
-title: VSPerfCmd：將分析工具附加至原生服務以取得並行資料
+title: VSPerfCmd：將 profiler 附加至原生服務以取得並行資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 283a1ee1-b43e-4daf-95ae-1311925a42a8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: faa47183040d376724de48fb71f07710cfe51f8f
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 705e55363f4f8657da20fe66cd4369188f133cdb
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033079"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776604"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>作法：使用命令列將分析工具附加至原生服務以收集並行資料
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至原生服務以收集並行資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至原生 (C/C++) 服務，並使用取樣方法收集處理序和執行緒並行資料。
 
 > [!NOTE]
@@ -31,7 +32,7 @@ ms.locfileid: "67033079"
 
 #### <a name="to-attach-the-profiler-to-a-native-service"></a>將分析工具附加至原生服務
 
-1. 如果服務未執行，請啟動服務。
+1. 如果服務未執行，請啟動該服務。
 
 2. 在命令提示字元中輸入下列命令，以啟動程式碼剖析工具︰
 
@@ -44,7 +45,7 @@ ms.locfileid: "67033079"
    > [!NOTE]
    > 大多數服務都需要 **/user** 和 **/crosssession** 選項。
 
-   | 選項 | 說明 |
+   | 選項 | 描述 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`UserName` | 指定要授與程式碼剖析工具存取權之帳戶的選擇性網域和使用者名稱。 |
    | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 |
@@ -65,7 +66,7 @@ ms.locfileid: "67033079"
 
 - 下表中成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 ( **/globalon**) 或停止 ( **/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 ( **/processon**) 或停止 ( **/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|

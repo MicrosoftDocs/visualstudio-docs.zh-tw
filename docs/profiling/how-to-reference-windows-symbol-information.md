@@ -1,5 +1,5 @@
 ---
-title: HOW TO：參考 Windows 符號資訊 | Microsoft Docs
+title: 如何：參考 Windows 符號資訊 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,17 @@ ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b5c90b2451780458982ba73a0e04672fa2e507
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 28bbd4b584d679c03c58ba8532ced3f28f16d6aa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422832"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774909"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>HOW TO：參考 Windows 符號資訊
+# <a name="how-to-reference-windows-symbol-information"></a>如何：參考 Windows 符號資訊
 Visual Studio 程式碼剖析工具會使用符號 (.*pdb*) 檔案來解析符號名稱，例如程式二進位檔案中的函式名稱。 您可以遵循下列步驟來自動下載並更新本機電腦上之 Windows 版本的正確 .*pdb* 檔案。
 
 > [!NOTE]
@@ -44,8 +45,8 @@ Visual Studio 程式碼剖析工具會使用符號 (.*pdb*) 檔案來解析符�
 
      **C:\SymbolCache**
 
-     您也可以按一下省略符號按鈕 (**...**)，然後從 [瀏覽資料夾] 對話方塊選取一個目錄。
+     您也可以按一下省略符號按鈕 ( **...** )，然後從 [瀏覽資料夾] 對話方塊選取一個目錄。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [設定效能工作階段](../profiling/configuring-performance-sessions.md)
-- [如何：序列化符號資訊](../profiling/how-to-serialize-symbol-information.md)
+- [操作說明：序列化符號資訊](../profiling/how-to-serialize-symbol-information.md)

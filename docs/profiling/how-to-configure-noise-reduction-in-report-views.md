@@ -1,5 +1,5 @@
 ---
-title: HOW TO：在報表檢視中設定減少雜訊 | Microsoft Docs
+title: 如何：在報表檢視中設定減少雜訊 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +12,17 @@ ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b55587bfde894c6104d805d9aae291191d1200ae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439152"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776328"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>HOW TO：在報表檢視中設定減少雜訊
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在報表檢視中設定減少雜訊
 效能報告可透過限制 [呼叫樹狀圖] 檢視和 [配置] 檢視中呈現的資料量來減少雜訊。 藉由減少雜訊，效能問題將更為顯著。 在分析效能報告時，這一點非常有用。
 
  減少雜訊組態選項包括下列設定︰
@@ -76,8 +77,8 @@ ms.locfileid: "63439152"
 
 4. 按一下 [確定]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [自訂效能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)
-- [如何：從檢測排除或包含精簡函式](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
+- [操作說明：從檢測排除或包含精簡函式](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
 - [呼叫樹狀圖檢視](../profiling/call-tree-view.md)
 - [配置檢視](../profiling/dotnet-memory-allocations-view.md)

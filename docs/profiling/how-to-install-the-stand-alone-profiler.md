@@ -9,14 +9,15 @@ ms.assetid: cae81c95-83cd-4ab6-8a98-84ef977a2f6d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eacf41d20164e4526e4f7bf5c2493dde0a00a2b3
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 05611b74049307fc0d7c038ecdb275f70c983501
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189360"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778917"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>如何：安裝獨立分析工具
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供命令列型獨立分析工具，不用安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 即可執行。 當電腦未安裝或無法安裝開發環境時，就會發生這種情況。 例如，您不應該在生產環境的網頁伺服器上安裝開發環境。
@@ -42,7 +43,7 @@ ms.locfileid: "73189360"
 
 4. 將 **_NT_SYMBOL_PATH** 變數設為 **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols** ，以設定符號伺服器
 
-5. 使用系統環境變數設定好符號伺服器之後，在新的命令提示字元處執行命令列分析工具。 這可讓新的環境變數生效。 在命令提示字元視窗中，鍵入下列命令：
+5. 使用系統環境變數設定好符號伺服器之後，在新的命令提示字元處執行命令列分析工具。 這可讓新的環境變數生效。 在命令提示字元視窗中輸入下列命令：
 
     **start %COMSPEC%**
 

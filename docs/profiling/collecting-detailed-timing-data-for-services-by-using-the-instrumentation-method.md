@@ -1,19 +1,20 @@
 ---
-title: 分析工具命令列：檢測以取得服務計時詳細資料
+title: Profiler 命令列：取得服務時間詳細資料的檢測
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e9271974857da4fffa7d053afdb2b160fb72ede4
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 915999dbad4cb24fe25fd182c093b8e83e11314e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033052"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779593"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>從分析工具命令列使用檢測方法收集服務的詳細計時資料
 本節描述從命令列使用檢測方法收集 Windows 服務之詳細效能資料的程序和選項。

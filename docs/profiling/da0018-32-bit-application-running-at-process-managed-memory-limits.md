@@ -10,24 +10,25 @@ ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: cadf5f605b78dd82ddf205ecfb5b0beded92a59f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d7bebd25f499131b4beda109ebb9ac468c2435b1
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910524"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780061"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式
 
 |||
 |-|-|
-|規則 ID|DA0018|
+|規則識別碼|DA0018|
 |Category|分析工具使用方式|
 |程式碼剖析方法|取樣|
 |訊息|Managed 記憶體配置接近 32 位元處理序的預設限制。 您的應用程式可能是記憶體繫結。|
-|規則型別|警告|
+|規則類型|警告|
 
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。
 

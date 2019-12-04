@@ -10,14 +10,15 @@ ms.assetid: 874c3b1c-88d8-479a-bb35-1291d9aa8e67
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 76adb2a5355800889939afd41075c261270b02aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 679fd9fd039fa903f5df5a479fa4f0e119bb7a9c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968050"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778163"
 ---
 # <a name="thread-details-view---contention-data"></a>執行緒詳細資料檢視 - 爭用資料
 執行緒詳細資料檢視會在時間軸圖形顯示因爭用資源，而在程式碼剖析執行選取的執行緒中造成的封鎖事件。 因為另一個執行緒已鎖定資源的存取權時，所以會強制該執行緒暫停執行而發生封鎖事件。

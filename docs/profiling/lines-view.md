@@ -12,14 +12,15 @@ ms.assetid: 71ec0781-6031-4e17-af09-f50226018437
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfb1780cfb8a64ebe20fc45f02992e60d7bb201
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000076"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773977"
 ---
 # <a name="lines-view"></a>程式行檢視
 [程式行] 檢視僅適用於使用取樣方法收集的分析工具資料。 此檢視不適用於使用檢測收集的資料。
@@ -42,7 +43,7 @@ ms.locfileid: "63000076"
 
 - 此陳述式在原始程式檔中結束的字元。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [程式行檢視](../profiling/lines-view-sampling-data.md)
 - [程式行檢視 - 取樣](../profiling/lines-view-dotnet-memory-sampling-data.md)
 - [程式行檢視](../profiling/lines-view-contention-data.md)

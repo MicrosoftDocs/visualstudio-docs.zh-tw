@@ -11,14 +11,15 @@ ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a641fffe45203885bd44951aea35b3c5677f5e85
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: a50567a101d77ed6498aaae13a5fe5556d9c1056
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911178"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777708"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005：常見的 GC2 集合
 

@@ -10,24 +10,25 @@ ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b4ddedf68d082c8de50a38f759c5db0a594d00
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: d8e0218b01a162a3af8c35009bc8e733f5c386ef
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024671"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777498"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：鎖定爭用的比率很高
 
 |||
 |-|-|
-|規則 ID|DA0038|
+|規則識別碼|DA0038|
 |Category|.NET Framework 使用方式|
-|程式碼剖析方法|取樣<br /><br /> 測試設備<br /><br /> .NET 記憶體|
+|程式碼剖析方法|取樣<br /><br /> 檢測設備<br /><br /> .NET 記憶體|
 |訊息|發生高比率的 .NET 鎖定爭用。 請執行並行分析來調查此鎖定爭用的原因。|
-|規則型別|內容|
+|規則類型|資訊|
 
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 25 個樣本才能觸發此規則。
 

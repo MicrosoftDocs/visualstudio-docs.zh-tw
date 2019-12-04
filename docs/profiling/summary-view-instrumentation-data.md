@@ -8,14 +8,15 @@ ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d53eef12c1c2dc59d8c442a040f721af75e7b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2f52f80cad4ce7678a832a7b76a75d8f2fd4460e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557046"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778215"
 ---
 # <a name="summary-view---instrumentation-data"></a>摘要檢視 - 檢測資料
 [摘要] 檢視顯示有關程式碼剖析執行時效能耗費最多資源的函式資訊。 如需包括通知連結和報表清單描述在內的詳細資訊，請參閱[摘要檢視](../profiling/summary-view.md)。
@@ -28,7 +29,7 @@ ms.locfileid: "62557046"
 
  [最忙碌路徑] 的每個函式都包含下列資料︰
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**名稱**|函式的名稱。|
 |**功能內含耗用 (Elapsed Inclusive) 時間 %**|在程式碼剖析執行時，該函式花費在執行其函式主體和其所呼叫函式中程式碼的所有時間百分比。|
@@ -39,11 +40,11 @@ ms.locfileid: "62557046"
 
  [含有最多個別工作的函式] 的每個函式都包含下列資料︰
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**名稱**|函式的名稱。|
 |**專有時間 %**|在程式碼剖析執行時，該函式花費在執行其函式主體中程式碼的所有時間百分比。 不包括該函式所呼叫函式中所花費的時間。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [摘要檢視 - 取樣資料](../profiling/summary-view-sampling-data.md)
 - [摘要檢視 - .NET 記憶體資料](../profiling/summary-view-dotnet-memory-data.md)

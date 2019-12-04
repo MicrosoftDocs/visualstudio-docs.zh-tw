@@ -1,5 +1,5 @@
 ---
-title: HOW TO：設定權限 | Microsoft Docs
+title: 如何︰設定權限 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e40438b6b14414371adaba6cb7eafc6377ae1187
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539181"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774585"
 ---
-# <a name="how-to-set-permissions"></a>HOW TO：設定權限
+# <a name="how-to-set-permissions"></a>如何：設定權限
 
 本文說明電腦的系統管理員如何將分析所需的安全性權限，授與在該電腦上沒有系統管理員權限的使用者或群組。
 
@@ -119,7 +120,7 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
 
    指定的使用者登入之後，不需要有系統管理員權限就可以使用程式碼剖析工具。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)
 [VSPerfCmd](../profiling/vsperfcmd.md)

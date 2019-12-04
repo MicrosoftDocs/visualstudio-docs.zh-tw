@@ -9,14 +9,15 @@ ms.assetid: a47f2bf2-186d-4120-bb79-34e2f3a1ee42
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a3bcc9dabbd325674e0731adaf4fcfb5b1abcbb
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: c5fd11f12f368c266dd19577925db7cec1867e39
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189398"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779541"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>獨立應用程式的命令列分析
 本節說明從命令列使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集獨立 (用戶端) 應用程式之效能資料的程序和選項。

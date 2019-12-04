@@ -11,22 +11,23 @@ ms.assetid: a7cc7613-ad5f-48c8-bd2b-56372cc12dfc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a83ad65232e75ffa74b66035e5c01a8491b426
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 0d93de6ce901bfe4d72628f778b18420beb5ebee
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983696"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779502"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001：使用 StringBuilder 進行串連
 
 |||
 |-|-|
-|規則 ID|DA0001|
+|規則識別碼|DA0001|
 |Category|.NET Framework 使用方式|
-|分析方法|取樣<br /><br /> 測試設備|
+|分析方法|取樣<br /><br /> 檢測設備|
 |訊息|請考慮使用 StringBuilder 來進行字串串連|
 |訊息類型|警告|
 

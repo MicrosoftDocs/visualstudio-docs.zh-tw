@@ -6,14 +6,15 @@ ms.assetid: 7c81e88b-a748-4cf5-a7a1-3429608e1b54
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b2e269ec292aaf37b8d0c707fa27ff8268a1f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e14fef1cfdc2dfc5f0d737ac09a08d90ab1de309
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969704"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776975"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
 **GC** 選項啟用 .NET Framework 記憶體配置和物件存留期資料的收集。 **GC** 選項只能與取樣分析方法搭配使用，並且只能與 **Launch** 選項搭配使用。
@@ -36,7 +37,7 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 ## <a name="required-options"></a>必要選項
  **GC** 選項只能與 **Launch** 選項搭配使用。
 
- **Launch:**`AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
+ **啟動：** `AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
 
 ## <a name="example"></a>範例
  下列範例會啟動應用程式，並收集 .NET Framework 記憶體配置資料。
@@ -45,7 +46,7 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 VSPerfCmd.exe /Launch:TestApp.exe /gc
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)

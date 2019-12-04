@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 09/24/2019
+ms.date: 12/03/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,27 +15,27 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211327"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777905"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
-**已針對[16.3 版本](/visualstudio/releases/2019/release-notes/)更新**
+**已針對[16.4 版本](/visualstudio/releases/2019/release-notes/)更新**
 
 >[!div class="button"]
 >[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
-使用 Visual Studio 2019，您會獲得同類產品中最佳的工具和服務，任何開發人員、任何應用程式及任何平台均適用。 無論您是第一次使用 Visual Studio，或是已使用多年，你都會很喜歡這個新版本！
+使用 Visual Studio 2019，您會獲得同類產品中最佳的工具和服務，任何開發人員、任何應用程式及任何平台均適用。 無論您是第一次使用 Visual Studio，或是已使用多年，這個新版本還是有許多好用的功能！
 
 以下是新增功能的概要回顧：
 
-* **[開發](#develop)** ：透過提升的效能、即時程式碼清除及更好的搜尋結果，以專注於目標並保持生產力。
-* **[共同作業](#collaborate)** ：透過 Git 優先工作流程、即時編輯和偵錯，以及直接在 Visual Studio 中檢閱程式碼，享受自然的共同作業。
-* **[偵錯](#debug)** ：反白顯示並巡覽至特定值、最佳化記憶體使用，然後自動建立應用程式執行的快照集。
+* **[開發](#develop)** ：透過改良的效能、即時程式碼清理和更好的搜尋結果，保持焦點和生產力。
+* **[共同](#collaborate)** 作業：透過 Git 優先工作流程、即時編輯和偵錯工具，以及直接在 Visual Studio 中撰寫程式碼的方式，享用自然合作。
+* **[Debug](#debug)** ：反白顯示並流覽至特定值、優化記憶體使用，以及自動執行應用程式的快照集。
 
 如需此版本中所有新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes/)。
 
@@ -55,11 +55,11 @@ ms.locfileid: "71211327"
 
 ### <a name="refactorings"></a>重構
 
-C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的程式碼。 它們以燈泡的方式顯示隱藏的建議，且包含動作，如將成員移動至介面或基底類別、調整命名空間以符合資料夾結構、將 foreach 迴圈轉換為 Linq 查詢等等。
+C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的程式碼。 它們顯示為燈泡中的建議，且包含動作，如將成員移動至介面或基底類別、調整命名空間以符合資料夾結構、將 foreach 迴圈轉換為 Linq 查詢等等。
 
    ![Visual Studio 2019 中的重構體驗動畫](media/vs-2019/refactorings.gif)
 
-只要按下 **Ctrl+.** ，就能輕易的叫出重構的內容， 然後選取您想要採取的動作。
+只要按下 **Ctrl+.** ，來叫用重構 然後選取您想要採取的動作。
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -69,10 +69,10 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 以下是 Visual Studio IntelliCode 可協助提高生產力的幾種方式：
 
-* 提供由內容感知而完整程式碼的功能
+* 提供內容感知的程式碼完成
 * 引導開發人員遵守所屬團隊的模式與風格
 * 找出難以捕捉的程式碼問題
-* 引導注意力放在真正重要的區域，以專注檢閲它們的程式碼
+* 將注意力放在真正重要的區域，專注在程式碼檢閱上
 
 一開始以 Visual Studio 的延伸模組形式提供 IntelliCode 預覽時，我們僅支援 C#。 現在，我們也新增了對 C++ 和 XAML 的「內建」支援，以作為 **16.1 版的新功能** (不過，對 C++ 和 TypeScript/JavaScript 的支援目前仍為預覽狀態)。
 
@@ -94,9 +94,9 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 ### <a name="per-monitor-aware-pma-rendering"></a>個別監視器感知 (PMA) 轉譯
 
-如果您所使用的監視器設定為不同的縮放比例，或從遠端連線到具有不同於您主要裝置設定的縮放顯示比例的機器，您可能會發現 Visual Studio 的顯示模糊，或以錯誤的比例轉譯。
+如果您以不同顯示比例因素設定監視器，或從遠端連線到具有不同於您主要裝置顯示比例因素的機器，您可能會發現 Visual Studio 的顯示模糊，或以錯誤的比例轉譯。
 
-隨著Visual Studio 2019 的發行，我們將 Visual Studio 調整為可識別顯示器設定（PMA）的應用程式。 現在，不論您使用的顯示縮放比例為何，Visual Studio 均可正確轉譯。
+Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為個別監視器感知 (PMA) 應用程式。 現在，不論您使用的顯示縮放比例為何，Visual Studio 均可正確轉譯。
 
    ![Visual Studio 2019 中的個別監視器感知 (PMA) 轉譯](media/vs-2019/pma-dpi-scaling.png)
 
@@ -104,13 +104,13 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 ### <a name="test-explorer"></a>測試總管
 
-**16.2 中的新功能**：我們已經更新測試總管以提供更有效的大型測試集處理方式、更容易篩選及探索的命令，將播放列表加上索引，以及可讓您微調要顯示哪些測試資訊的可自訂欄。
+**16.2 的新**功能：我們已更新測試瀏覽器，以提供更佳的大型測試集處理、更輕鬆的篩選、更容易探索的命令、索引標籤式播放清單，以及可自訂的資料行，讓您微調要顯示的測試資訊。
 
    ![顯示測試總管中的使用者介面改良功能的螢幕擷取畫面](media/vs-2019/test-explorer-ui.png)
 
 ### <a name="net-core"></a>.NET Core
 
-**16.3 的新**功能：我們已包含 .NET Core 3.0 的支援。 跨平臺、開放原始&mdash;碼，並受到 Microsoft 的完整支援。 
+**16.3 的新**功能：我們已包含 .net Core 3.0 的支援。 跨平臺、開放原始碼&mdash;，並受到 Microsoft 的完整支援。
 
 如需詳細資訊，請參閱[宣佈 .Net Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/)的 blog 文章。
 
@@ -132,11 +132,11 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 開始視窗也包含開啟專案或解決方案、開啟本機資料夾，或建立新專案的選項。
 
-如需詳細資訊，請參閱 [Get to code:How we designed the new Visual Studio start window](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (開始撰寫程式碼：我們如何設計新的 Visual Studio 啟動視窗) 部落格文章。
+如需詳細資訊，請參閱[取得程式碼：我們如何設計新的 Visual Studio 開始視窗的](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/)blog 文章。
 
 ### <a name="live-share"></a>Live Share
 
-[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 這項開發人員服務可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當流暢且安全。
+[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 這項開發人員服務可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。
 
 Visual Studio 2019 預設會安裝這項服務。
 
@@ -154,13 +154,13 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ## <a name="debug"></a>偵錯
 
-檢視下列影片以深入了解如何在進行偵錯時使用精確的目標設定來校正。 <br><br>*影片長度：3.54 分鐘*
+檢視下列影片以深入了解如何在進行偵錯時使用精確目標設定來集中精力。 <br><br>*影片長度：3.54 分鐘*
 
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>效能提升
 
-我們採用獨一無二的 C++ 資料中斷點，並加以修改以用於 .NET Core 應用程式。
+我們採用僅一次的專屬 C++ 資料中斷點，並加以修改以用於 .NET Core 應用程式。
 
    ![在 Visual Studio 2019 中顯示偵錯資料中斷點的動畫](media/vs-2019/debug-data-breakpoints.gif)
 
@@ -178,7 +178,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
    ![Visual Studio 2019 中的新 [監看式] 視窗和格式值功能](media/search-watch-window.png)
 
-如需詳細資訊，請參閱 [Enhanced in Visual Studio 2019:Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Visual Studio 2019 的增強功能：在監看式、自動變數和區域變數視窗中搜尋物件和屬性) 部落格文章。
+如需詳細資訊，請參閱[Visual Studio 2019 中的增強功能：在監看式、自動變數和區域變數 Windows blog 文章中搜尋物件和屬性](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/)。
 
 ### <a name="snapshot-debugger"></a>快照集偵錯工具
 
@@ -192,9 +192,15 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ### <a name="microsoft-edge-insider-support"></a>Microsoft Edge Insider 支援
 
-**16.2 中的新功能**：您可以透過使用 [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) 瀏覽器，在 JavaScript 應用程式中設定中斷點並啟動偵錯工作階段。 當您這樣做的時候，Visual Studio 會在已啟用偵錯功能的情況下開啟新的瀏覽器視窗，讓您可以用來在 Visual Studio 內逐步執行應用程式 JavaScript。
+**16.2 的新**功能：您可以在 JavaScript 應用程式中設定中斷點，並使用[Microsoft Edge](https://www.microsoftedgeinsider.com/)測試人員瀏覽器啟動 debug 會話。 當您這樣做的時候，Visual Studio 會在已啟用偵錯功能的情況下開啟新的瀏覽器視窗，讓您可以用來在 Visual Studio 內逐步執行應用程式 JavaScript。
 
    ![瀏覽器中顯示 JavaScript 程式碼轉譯的螢幕擷取畫面](media/vs-2019/edge-chromium-breakpoint.png)
+
+### <a name="pinnable-properties-tool"></a>可固定屬性工具
+
+**16.4 的新**功能：現在，使用新的可固定屬性工具進行偵錯工具時，可以更容易識別物件的屬性。 只要將游標停留在您想要在 [監看式]、[自動變數] 和 [區域變數] 視窗的 [偵錯工具] 視窗中顯示的屬性上方，按一下釘選圖示，即可立即在視窗頂端看到您要尋找的資訊！
+
+   ![動畫，顯示如何使用可固定屬性工具釘選 Visual Studio 偵錯工具中的屬性](media/vs-2019/debugger-pinnable-properties.gif)
 
 ## <a name="whats-next"></a>後續步驟
 
@@ -210,7 +216,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 * 如果您遇到停止回應、當機或其他效能問題，則可以使用[回報問題](how-to-report-a-problem-with-visual-studio.md)工具，輕鬆地與我們分享重現步驟和支援檔案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Visual Studio 2019 版本資訊](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 SDK 的新功能](../extensibility/whats-new-visual-studio-2019-sdk.md)

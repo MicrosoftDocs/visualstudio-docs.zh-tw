@@ -6,14 +6,15 @@ ms.assetid: 1deed23e-b31b-4714-982f-08ceebfc3096
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bc0c1b5245817a8946b1ccbd0fb244b3f0608c6e
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f5af6b366a1181187c23327449ade8e03e30107f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189325"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778059"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>使用效能規則分析資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的效能警告指出，正在進行程式碼剖析的應用程式中發生問題，可能會降低程式執行速度。 警告也可能表示您可能需要變更收集方法，以收集更有用的資料。 效能警告會在程式碼剖析工作階段中自動產生。 在 Visual Studio 中開啟程式碼剖析資料檔案時，警告會出現在 [錯誤清單] 視窗中。 您可以在 [錯誤清單] 視窗中找到問題的原始程式碼，並可以顯示有關錯誤的詳細資訊，例如有關如何解決問題的資訊。 您也可以將您不想要的警告停用。

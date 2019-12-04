@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b04b2d2c3c23b444d011d81002f7f22a12b1ebf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777856"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779866"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>從命令列新增階層互動資料
 
@@ -31,7 +32,7 @@ ms.locfileid: "62777856"
 
 **在遠端電腦上收集 TIP 資料**
 
-若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** 資料夾中，複製 **vs_profiler\_**_\<平台>_**\_**_\<語言>_**.exe** 檔案並安裝到遠端電腦。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
+若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** 資料夾中，複製 **vs_profiler\_** _\<平台>_ **\_** _\<語言>_ **.exe** 檔案並安裝到遠端電腦。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
 
 **TIP 報告**
 
@@ -116,7 +117,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession
     ```
 
-8. 如有必要，請啟動服務。
+8. 視需要啟動服務。
 
 9. 將程式碼剖析工具附加至服務。 輸入下列命令：
 

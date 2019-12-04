@@ -6,14 +6,15 @@ ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 479f7e1cbd85c0421497020ae1fc108154ca639a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fffcab1d841840c15957e8dae0ff0f87b20de28d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968310"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771595"
 ---
 # <a name="targetclr"></a>TargetCLR
 **TargetCLR** 選項指定當應用程式載入多個 CLR 版本時要分析的 Common Language Runtime (CLR) 版本。
@@ -32,9 +33,9 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ## <a name="required-options"></a>必要選項
  **TargetCLR** 選項僅能與 [啟動] 或 [附加] 選項一起使用。
 
- **Launch:**`AppName` 啟動指定的應用程式並開始分析。
+ **啟動：** `AppName` 啟動指定的應用程式，並開始進行分析。
 
- **Attach：**`PID` 開始分析指定的處理序。
+ **附加：** `PID` 開始分析指定的進程。
 
 ## <a name="example"></a>範例
  本例使用 TargetCLR 選項確定分析的 CLR 版本是 4.0.11003。

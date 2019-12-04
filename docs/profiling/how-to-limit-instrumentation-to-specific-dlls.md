@@ -1,5 +1,5 @@
 ---
-title: HOW TO：限制檢測特定 DLL | Microsoft Docs
+title: 如何：限制檢測特定 DLL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,16 +7,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 066262a3fae35e82904b011165813e9dd75d9987
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980911"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778813"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>HOW TO：限制檢測特定 DLL
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>如何：限制檢測特定 DLL
 
 您可以藉由使用檢測程式碼剖析方法，將程式碼剖析資料的收集限制在應用程式中的一或多個 DLL。 若要對應用程式中的一或多個 DLL 進行分析，請建立包含 .*dll* 檔案作為目標的效能工作階段。 您可以將要進行分析的 DLL 指定成 Visual Studio 方案中的專案，或是指定成獨立的二進位檔案。
 
@@ -36,7 +37,7 @@ ms.locfileid: "62980911"
 
 7. 從 [加入目標專案] 清單中，選取您要用來執行 DLL 的可執行專案。
 
-     選擇性。 您可以加入要進行程式碼剖析的其他任何 DLL 專案。
+     選擇項。 您可以加入要進行程式碼剖析的其他任何 DLL 專案。
 
 8. 如果不要對某個已加入的專案收集資料，請以滑鼠右鍵按一下該專案的名稱，然後再清除 [檢測] 核取方塊。
 
@@ -54,7 +55,7 @@ ms.locfileid: "62980911"
 
     - 在 [可執行檔路徑] 中，鍵入要執行 .*dll* 之可執行檔 (.*exe*) 的路徑和檔名。 您也可以按一下省略符號按鈕 (...)，在 [要啟動的可執行檔] 對話方塊中尋找檔案。
 
-    - 選擇性。 在 [命令列的引數] 中，輸入要傳給可執行檔的任何命令列引數。 如有必要，請在 [工作目錄] 中指定應用程式的工作目錄。
+    - 選擇項。 在 [命令列的引數] 中，輸入要傳給可執行檔的任何命令列引數。 如有必要，請在 [工作目錄] 中指定應用程式的工作目錄。
 
     - 按 [ **下一步**]。
 
@@ -62,12 +63,12 @@ ms.locfileid: "62980911"
 
 6. 按一下 [完成] 結束精靈，並將新的效能工作階段顯示在 [效能總管] 視窗中。
 
-7. 選擇性。 若要新增其他 .*dll* 檔案，請以滑鼠右鍵按一下 [目標]，然後選取 [新增目標二進位檔]。 接著再從 [加入目標二進位檔] 對話方塊選取檔案。
+7. 選擇項。 若要新增其他 .*dll* 檔案，請以滑鼠右鍵按一下 [目標]，然後選取 [新增目標二進位檔]。 接著再從 [加入目標二進位檔] 對話方塊選取檔案。
 
     > [!NOTE]
     > 請勿指定執行 DLL 的可執行檔 (.*exe*)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [控制資料收集](../profiling/controlling-data-collection.md)
-[如何：限制檢測特定函式](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+[如何：限制檢測特定](../profiling/how-to-limit-instrumentation-to-specific-functions.md)函式
