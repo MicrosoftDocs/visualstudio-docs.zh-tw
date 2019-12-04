@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支援權益。
-ms.openlocfilehash: f88cf221f47f2b8aa89a733a4794e424ac938261
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161977"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706988"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用並使用 Visual Studio 訂用帳戶中的技術支援權益
 如果產品仍在[支援生命週期](https://support.microsoft.com/lifecycle/search)的主要支援階段中，Visual Studio 訂用帳戶技術支援權益可為其解決**非生產環境**中的協助修正問題。 自權益啟用的 1 年內，Visual Studio Enterprise 標準和年度雲端訂用帳戶可接收四個事件，而 Visual Studio Professional 標準和年度雲端訂用帳戶可接收兩個事件。 您必須在訂用帳戶為最新狀態時啟用權益。
@@ -54,7 +54,7 @@ Visual Studio IDE 和 Azure DevOps Server 等開發人員工具將透過 Visual 
 > 若要使用英文以外語言啟用您的支援帳戶，請從[此清單](https://support.microsoft.com/help/14084/activate-support-contract)選擇您的國家/地區。
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>如何使用您的權益來提交事件
-設定好**合約識別碼**和**存取識別碼**之後，您可以透過下列方式使用這些識別碼來提交技術支援事件：[線上](http://support.microsoft.com/oas/) (需要登入)、透過 [Azure 入口網站](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)，或撥打所在國家/地區的技術支援服務電話號碼。 如果您是線上提交事件，可以選擇讓 Microsoft 技術支援人員回電給您。
+設定好**合約識別碼**和**存取識別碼**之後，您可以透過下列方式使用這些識別碼來提交技術支援事件：[線上](https://support.microsoft.com/oas/) (需要登入)、透過 [Azure 入口網站](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)，或撥打所在國家/地區的技術支援服務電話號碼。 如果您是線上提交事件，可以選擇讓 Microsoft 技術支援人員回電給您。
 
 ### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>您的合約識別碼和存取識別碼已與帳戶建立關聯，並可使用該帳戶登入並線上提交技術支援人員事件嗎？
 線上提交事件時，系統會先提示您登入。 請使用已知與合約識別碼和存取識別碼建立關聯的帳戶登入。 在支援工作流程的步驟 3 中，會顯示與您帳戶相關聯的現有支援方案權益。 只要選取該方案並繼續提交案例即可。 直到方案所指定限制數量或方案的到期日 (視何者較早發生) 為止，您都可以提交事件。 一旦剩餘事件顯示 "0" 或您的方案過期，方案就不再有效。
@@ -109,14 +109,14 @@ Visual Studio IDE 和 Azure DevOps Server 等開發人員工具將透過 Visual 
 
 ## <a name="eligibility"></a>資格
 
-| 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
+| 訂用帳戶層級                                                 |     通道                                            | 的優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 4 個事件       |  [是]|
-| 含 GitHub Enterprise 的 Visual Studio Enterprise | VL | 4 個事件       |  [是]|
-| Visual Studio Professional (Standard) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |[是]         |
-| 含 GitHub Enterprise 的 Visual Studio Professional | VL                                     | 2 個事件                                                          |[是]         |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  [是]         |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | [是]         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 4 個事件       |  是|
+| 含 GitHub Enterprise 的 Visual Studio Enterprise | VL | 4 個事件       |  是|
+| Visual Studio Professional (Standard) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |是         |
+| 含 GitHub Enterprise 的 Visual Studio Professional | VL                                     | 2 個事件                                                          |是         |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  是         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | 是         |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 ||
 

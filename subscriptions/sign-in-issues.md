@@ -6,21 +6,21 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: 了解登入 Visual Studio 訂用帳戶時可能遇到的問題
-ms.openlocfilehash: b138e1aad5221a1fe7aacd7fc916e6dfffb08a47
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: dea81a57501f791ba9d40a95c5305f9aedcc3b49
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377810"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706859"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>登入 Visual Studio 訂用帳戶的問題
 若要使用 Visual Studio 訂用帳戶，您必須先登入。  視您的訂用帳戶而定，您可能已使用 Microsoft 帳戶 (MSA) 或 Azure Active Directory (AAD) 身分識別加以設定。  本文將討論一些登入訂用帳戶時可能會遇到的問題。
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>無法使用工作/學校電子郵件地址建立 Microsoft 帳戶 (MSA)
-在 Azure AD 中設定電子郵件網域時，不再允許使用工作/學校電子郵件地址建立新個人 Microsoft 帳戶 (MSA) 的功能。 這代表什麼呢？ 如果您的組織使用 Office 365 或是 Microsoft 中依賴 Azure AD 的其他商務服務，而且您已在 Azure AD 租用戶中新增網域名稱，則使用者再也無法使用網域中的電子郵件地址建立新個人 Microsoft 帳戶。
+在 Azure AD 中設定電子郵件網域時，不再允許使用工作/學校電子郵件地址建立新個人 Microsoft 帳戶 (MSA) 的功能。 這代表什麼意義？ 如果您的組織使用 Office 365 或是 Microsoft 中依賴 Azure AD 的其他商務服務，而且您已在 Azure AD 租用戶中新增網域名稱，則使用者再也無法使用網域中的電子郵件地址建立新個人 Microsoft 帳戶。
 
 ### <a name="why-was-this-change-made"></a>為什麼要進行這項變更？
-擁有以工作地址作為使用者名稱的個人 Microsoft 帳戶，對終端使用者和 IT 部門來說都充滿了問題。 例如︰
+擁有以工作地址作為使用者名稱的個人 Microsoft 帳戶，對終端使用者和 IT 部門來說都充滿了問題。 例如：
 - 使用者可能認為其個人 Microsoft 帳戶符合商務規範，而且當他們將商務文件儲存到其 OneDrive 時符合規範
 - 離開組織的使用者通常無法再存取其工作電子郵件地址。 當他們這麼做時，如果已忘記其密碼，可能無法回到其個人的 Microsoft 帳戶。 另一方面，其 IT 部門可以重設他們的密碼，並進入離職員工的個人帳戶。
 - IT 部門對於帳戶擁有權及安全性具有錯誤的認知。 但是，使用者只需要將程式碼往返其工作電子郵件地址一次，並且可以在未來隨時重新命名其帳戶。
@@ -39,7 +39,7 @@ ms.locfileid: "68377810"
    > ![支援的工作/學校帳戶](_img/sign-in-issues/existing-account.png)
 
 ### <a name="are-existing-accounts-affected"></a>現有的帳戶是否受到影響？
-此處所述的註冊封鎖只會禁止建立新帳戶。 它對已擁有使用工作/學校電子郵件地址之 Microsoft 帳戶的使用者沒有任何影響。 如果您已處在這種情況下，我們可讓您更輕鬆地重新命名個人 Microsoft 帳戶。 本[技術支援文章](http://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account)提供簡單的逐步指引。 重新命名您的個人 Microsoft 帳戶表示變更使用者名稱，並不會影響您的工作電子郵件或登入 Office 365 等商務服務的方式。 它也不會影響您的個人資料，只會變更您的登入方式。 您可以使用其他 (個人) 電子郵件地址、從 Microsoft 取得新的 @outlook.com 電子郵件地址，或使用您的電話號碼作為新使用者名稱。
+此處所述的註冊封鎖只會禁止建立新帳戶。 它對已擁有使用工作/學校電子郵件地址之 Microsoft 帳戶的使用者沒有任何影響。 如果您已處在這種情況下，我們可讓您更輕鬆地重新命名個人 Microsoft 帳戶。 本[技術支援文章](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account)提供簡單的逐步指引。 重新命名您的個人 Microsoft 帳戶表示變更使用者名稱，並不會影響您的工作電子郵件或登入 Office 365 等商務服務的方式。 它也不會影響您的個人資料，只會變更您的登入方式。 您可以使用其他 (個人) 電子郵件地址、從 Microsoft 取得新的 @outlook.com 電子郵件地址，或使用您的電話號碼作為新使用者名稱。
 
 > [!NOTE]
 > 比方說，如果您的 IT 部門要求您使用工作/學校電子郵件來建立個人 Microsoft 帳戶以存取頂級支援等 Microsoft 商務服務，則請先洽詢管理員小組，再重新命名您的帳戶。
@@ -57,7 +57,7 @@ ms.locfileid: "68377810"
 ### <a name="what-is-aliasing"></a>別名處理是什麼？
 「別名處理」一詞指的是使用不同身分識別來登入 Windows (或您的 Active Directory) 並存取電子郵件的使用者。
 
-當公司使用 Microsoft Online Service 做為其目錄登入使用 (例如 JohnD@contoso.com)，但使用者使用別名或易記名稱存取其電子郵件帳戶 (例如 John.Doe@contoso.com) 時，就會發生別名處理。 針對透過大量授權服務中心 (VLSC) 管理其訂用帳戶的客戶，這會導致不成功的登入體驗，因為提供的電子郵件地址 (John.Doe@contoso.com) 不符合成功透過 [公司或學校帳戶] 選項驗證所需的目錄地址 (JohnD@contoso.com)。
+當公司使用 Microsoft Online Service 做為其目錄登入使用 (例如 JohnD@contoso.com)，但使用者使用別名或易記名稱存取其電子郵件帳戶 (例如 John.Doe@contoso.com) 時，就會發生別名處理。 對於透過大量授權服務中心（VLSC）管理其訂用帳戶的許多客戶，這可能會導致登入失敗，因為提供的電子郵件地址（John.Doe@contoso.com）與透過 [工作或學校帳戶] 選項成功驗證所需的目錄位址（JohnD@contoso.com）不符。
 
 ### <a name="what-options-do-i-have"></a>我有哪些選項？
 從訂閱者觀點來看，先與您的系統管理員合作以了解您公司的身分識別設定非常重要。 如果有需要，您的系統管理員可能必須從其系統管理入口網站更新您的帳戶設定，或您可能需要使用您的公司電子郵件地址建立 Microsoft 帳戶 (MSA)。 採取建立 MSA 的步驟之前，請先就採取此步驟可能涉及的任何原則或問題洽詢您的系統管理員。 

@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
-ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
+ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74549948"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706825"
 ---
-# <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>使用 Visual Studio 或命令列建立和偵測容器化應用程式
+# <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio 如何建立容器化應用程式
 
-無論您是從 Visual Studio IDE 建立，或是設定命令列組建，都必須知道 Visual Studio 組建如何使用 Dockerfile 來建立您的專案。  基於效能考慮，Visual Studio 會遵循容器化應用程式的特殊流程。 當您藉由修改 Dockerfile 自訂您的組建流程時，瞭解 Visual Studio 組建專案的方式特別重要。
+無論您是從 Visual Studio IDE 建立，或是設定命令列組建，都必須知道 Visual Studio 如何使用 Dockerfile 來建立您的專案。  基於效能考慮，Visual Studio 會遵循容器化應用程式的特殊流程。 當您藉由修改 Dockerfile 自訂您的組建流程時，瞭解 Visual Studio 組建專案的方式特別重要。
 
 當 Visual Studio 建立不使用 Docker 容器的專案時，它會在本機電腦上叫用 MSBuild，並在本機方案資料夾下的資料夾（通常是 `bin`）中產生輸出檔案。 不過，針對容器化的專案，組建程式會考慮 Dockerfile 的指示來建立容器化應用程式。 Visual Studio 使用的 Dockerfile 會分成多個階段。 此程式依賴 Docker 的*多階段組建*功能。
 
@@ -84,7 +84,7 @@ MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 
 當您從 Visual Studio IDE 建立方案時，您會看到類似于 [**輸出**] 視窗中所顯示的輸出。 請一律使用 `/p:Configuration=Release`，因為在 Visual Studio 使用多階段組建優化的情況下，建立**Debug**設定時的結果可能不會如預期般執行。 請參閱[調試](#debugging)。
 
-如果您使用 Docker Compose 專案，請使用命令來建立映射：
+如果您使用 Docker Compose 專案，請使用此命令來建立映射：
 
 ```cmd
 msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-compose.dcproj
@@ -99,7 +99,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 - 在 Dockerfile 的第一個階段中提取映射（大部分 Dockerfile 中的 `base` 階段）。  
 - 建立 Dockerfile 並啟動容器。
 
-只有**快速**模式才會進行準備，因此執行中的容器將會掛接應用程式資料夾磁片區，而且對應用程式所做的任何變更都不應使容器失效。 因此可大幅改善偵錯工具效能，並縮短長時間執行工作（例如提取大型映射）的等候時間。
+準備工作只會在**快速**模式中執行，因此執行中的容器將會裝載應用程式資料夾。 這表示對應用程式所做的任何變更都不會使容器無效。 因此可大幅改善偵錯工具效能，並縮短長時間執行工作（例如提取大型映射）的等候時間。
 
 ## <a name="volume-mapping"></a>磁片區對應
 
