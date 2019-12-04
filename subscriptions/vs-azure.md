@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: 瞭解如何啟用 Visual Studio 訂用帳戶中所含的 Azure DevTest 個人點數權益。
-ms.openlocfilehash: 25bb97675c65244258c217901a010ab2211554d0
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983773"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810048"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  有了[每月 Azure DevTest 的個別點數](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，azure 就是您用於開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
@@ -39,25 +39,25 @@ ms.locfileid: "73983773"
 
 
 ## <a name="eligibility"></a>資格
-|                 訂用帳戶等級/方案                 |           優勢           |                         可續約？                          |
+|                 訂用帳戶等級/方案                 |           的優點           |                         可續約？                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             [是]                             |
-|              含 GitHub Enterprise 的 Visual Studio Enterprise               |     每月信用點數 $150 美元     |                             [是]                             |
+|              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             是                             |
+|              含 GitHub Enterprise 的 Visual Studio Enterprise               |     每月信用點數 $150 美元     |                             是                             |
 |               Visual Studio Enterprise 每月               |        無法使用        |                                                             |
-|             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             [是]
-|              含 GitHub Enterprise 的 Visual Studio Professional              |     每月信用點數 $150 美元     |                             [是]                             |
+|             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             是
+|              含 GitHub Enterprise 的 Visual Studio Professional              |     每月信用點數 $150 美元     |                             是                             |
 |              Visual Studio Professional 每月              |        無法使用        |                                                             |
-|                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             [是]                             |
-|                        MSDN 平台                        |     每月信用點數 $100 美元     |                             [是]                             |
-|               Visual Studio Enterprise - NFR\*               |     每月信用點數 $150 美元     |                             [是]                             |
-|                Visual Studio Enterprise - FTE                |     每月信用點數 $150 美元     |                             [是]                             |
-|     Visual Studio Enterprise - Microsoft 合作夥伴網路     |     每月信用點數 $150 美元     |                             [是]                             |
+|                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             是                             |
+|                        MSDN 平台                        |     每月信用點數 $100 美元     |                             是                             |
+|               Visual Studio Enterprise - NFR\*               |     每月信用點數 $150 美元     |                             是                             |
+|                Visual Studio Enterprise - FTE                |     每月信用點數 $150 美元     |                             是                             |
+|     Visual Studio Enterprise - Microsoft 合作夥伴網路     |     每月信用點數 $150 美元     |                             是                             |
 |    Visual Studio Professional - Microsoft 合作夥伴網路    |        無法使用        |                                                             |
 |        Visual Studio Enterprise – Imagine (Standard)         |        無法使用        |                                                             |
 |         Visual Studio Enterprise – Imagine (Premium)         |        無法使用        |                                                             |
-|             Visual Studio Enterprise – BizSpark              |     每月信用點數 $150 美元     |                             [是]                             |
-|      Visual Studio Enterprise – MCT 軟體與服務      |     每月信用點數 $100 美元     |                             [是]                             |
-| Visual Studio Enterprise – MCT 軟體與服務開發人員 |     每月信用點數 $150 美元     |                             [是]                             |
+|             Visual Studio Enterprise – BizSpark              |     每月信用點數 $150 美元     |                             是                             |
+|      Visual Studio Enterprise – MCT 軟體與服務      |     每月信用點數 $100 美元     |                             是                             |
+| Visual Studio Enterprise – MCT 軟體與服務開發人員 |     每月信用點數 $150 美元     |                             是                             |
 
 *包括禁止轉售 (NFR)、最有價值專家 (MVP)、區域經理 (RD)、Visual Studio 產業夥伴 (VSIP)
 
@@ -74,6 +74,9 @@ ms.locfileid: "73983773"
 3. 提交支援事件。
 
 如需完整的詳細資料，請瀏覽[技術支援](vs-tech-support.md)文件。
+
+### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>問：如何擁有我使用我的 Azure DevTest 個別點數所建立的智慧財產權？
+答：在該公司提供的資源上建立的智慧財產，就是提供資源之公司的智慧財產。 因此，如果您透過雇主收到您的 Visual Studio 訂用帳戶，則會套用其智慧財產原則。 
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>問：我收到一則訊息，指出我的 Azure 存取權很快將會結束。  我要怎麼做才能繼續使用 Azure？
 答：您收到這封電子郵件的原因，是因為您使用與您的 Visual Studio 訂用帳戶相關聯的 Azure 權益，而該訂用帳戶已過期或已被移除。  若要繼續使用 Azure，您有數個選項：
