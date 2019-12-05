@@ -8,14 +8,14 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951037"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853512"
 ---
-# <a name="overview-suggest-a-feature"></a>概觀：建議功能
+# <a name="suggest-a-feature-for-visual-studio"></a>提出 Visual Studio 功能建議
 
 除了 [Visual Studio Developer Community](https://developercommunity.visualstudio.com) (Visual Studio 開發人員社群) 目前回報問題的功能之外，我們也推出了建議功能的新體驗。 這是可讓您直接參與 Visual Studio 工程工作流程的新方式。
 
@@ -127,6 +127,6 @@ User Voice 與開發人員社群中的投票系統，在運作上有著顯著差
 
 回應時間會取決於您的意見反應當時所處的狀態。 請檢閱本文件中的狀態說明以了解回應時間。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Introducing 'Suggest a Feature' in Developer Community (Visual Studio blog)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral) (開發人員社群中的「建議功能」簡介 (Visual Studio 部落格))
