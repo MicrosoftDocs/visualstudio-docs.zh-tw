@@ -1,5 +1,5 @@
 ---
-title: 教學課程：對 C# 程式碼進行偵錯
+title: 教學課程： C# Debug 程式碼
 description: 了解如何啟動 Visual Studio 偵錯工具，逐步執行程式碼並檢查資料。
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 11/27/2018
@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98238aeee0662f61e8edc3b1f155dafd09e2301a
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 1c7237d8d8bf66273078049a41a3193af0026792
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180444"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830015"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 C# 程式碼進行偵錯
 
-本文以逐步解說介紹 Visual Studio 偵錯工具的功能。 如果您希望檢視偵錯工具功能的概要，請參閱[偵錯工具簡介](../../debugger/debugger-feature-tour.md)。 當您「偵錯您的應用程式」  ，通常表示您正在執行附加偵錯工具的應用程式。 執行此作業時，偵錯工具會提供許多方式來查看您程式碼所執行的功能。 您可以逐步執行程式碼並查看儲存在變數中的值、可以設定變數的監看式以查看值變更、可以檢查程式碼的執行路徑，查看是否正在執行程式碼的分支，依此類推。 如果這是您第一次嘗試偵錯程式碼，您可能需要先閱讀[適用於徹底初學者偵錯](../../debugger/debugging-absolute-beginners.md)，再瀏覽本文。
+本文以逐步解說介紹 Visual Studio 偵錯工具的功能。 如果您希望檢視偵錯工具功能的概要，請參閱[偵錯工具簡介](../../debugger/debugger-feature-tour.md)。 當您「偵錯您的應用程式」，通常表示您正在執行附加偵錯工具的應用程式。 執行此作業時，偵錯工具會提供許多方式來查看您程式碼所執行的功能。 您可以逐步執行程式碼並查看儲存在變數中的值、可以設定變數的監看式以查看值變更、可以檢查程式碼的執行路徑，查看是否正在執行程式碼的分支，依此類推。 如果這是您第一次嘗試偵錯程式碼，您可能需要先閱讀[適用於徹底初學者偵錯](../../debugger/debugging-absolute-beginners.md)，再瀏覽本文。
 
-雖然示範應用程式是 C#，但大多數功能也適用於 C++、Visual Basic、F#、Python、JavaScript 及 Visual Studio 支援的其他語言 (F# 不支援「編輯後繼續」。 F# 和 JavaScript 不支援 [自動變數]  視窗)。 螢幕擷取畫面則使用 C# 表示。
+雖然示範應用程式是 C#，但大多數功能也適用於 C++、Visual Basic、F#、Python、JavaScript 及 Visual Studio 支援的其他語言 (F# 不支援「編輯後繼續」。 F# 和 JavaScript 不支援 [自動變數] 視窗)。 螢幕擷取畫面則使用 C# 表示。
 
 在本教學課程中，您將進行下列作業：
 
@@ -36,7 +36,7 @@ ms.locfileid: "70180444"
 > * 檢查資料提示和偵錯工具視窗中的變數
 > * 檢查呼叫堆疊
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
 
 ::: moniker range=">=vs-2019"
 
@@ -61,31 +61,28 @@ ms.locfileid: "70180444"
 
 ::: moniker-end
 
-如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具]   > [取得工具與功能...]  ，以開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發]  工作負載，然後選擇 [修改]  。
+如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發] 工作負載，然後選擇 [修改]。
 
 ## <a name="create-a-project"></a>建立專案
 
 1. 開啟 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟 [搜尋] 方塊，鍵入**主控台**，選擇 [範本]  ，然後選擇 [建立新的主控台應用程式 (.NET Framework) 專案]  。 在出現的對話方塊中鍵入名稱，例如 **get-started-debugging**，然後選擇 [建立]  。
+    按 **Esc** 關閉開始視窗。 輸入**Ctrl + Q**來開啟搜尋方塊，輸入**主控台**，選擇 [**範本**]，然後選擇 [**建立新的主控台應用程式（.Net Core）] 專案**或 [**建立新的主控台應用程式（.NET Framework）] 專案**。 在出現的對話方塊中鍵入名稱，例如 **get-started-debugging**，然後選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案]   > [新增]   > [專案]  。 在 [新增專案]  對話方塊左窗格的 [Visual C#]  下，選擇 [Windows Desktop]  ，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]  。 然後，鍵入 **get-started-debugging** 之類的名稱，並按一下 [確定]  。
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊左窗格的 [Visual C#] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。 然後，鍵入 **get-started-debugging** 之類的名稱，並按一下 [確定]。
     ::: moniker-end
 
-    如果您看不到 [主控台應用程式 (.NET Framework)]  專案範本，請移至 [工具]   > [取得工具與功能...]  ，其會開啟 Visual Studio 安裝程式。 選擇 [.NET 桌面開發]  工作負載，然後選擇 [修改]  。
+    如果您看不到 [主控台應用程式 (.NET Framework)] 專案範本，請移至 [工具] > [取得工具與功能...]，其會開啟 Visual Studio 安裝程式。 選擇 [.NET 桌面開發] 工作負載，然後選擇 [修改]。
 
     Visual Studio 會建立專案。
 
-1. 在 *Program.cs* 中，取代下列程式碼
+1. 在*Program.cs*中，取代所有的預設程式碼
 
     ```csharp
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    // ...
 
     namespace get_started_debugging
     {
@@ -185,7 +182,7 @@ ms.locfileid: "70180444"
 
 ## <a name="start-the-debugger"></a>啟動偵錯工具！
 
-1. 按下 **F5** 鍵 ([偵錯] > [開始偵錯]  ) 或在偵錯工具列中按下 [開始偵錯]  按鈕 ![開始偵錯](../../debugger/media/dbg-tour-start-debugging.png "開始偵錯")。
+1. 按**F5** （**debug > 開始進行調試**），或在調試工具列中，按 [**開始**調試] 按鈕![開始進行調試](../../debugger/media/dbg-tour-start-debugging.png "開始偵錯")。
 
      **F5** 鍵會啟動應用程式並將偵錯工具附加至應用程式處理序，但目前我們還沒有做任何特別動作來檢查程式碼。 因此應用程式只會載入，且您會看到主控台輸出。
 
@@ -200,7 +197,7 @@ ms.locfileid: "70180444"
 
      在本教學課程中，我們將使用偵錯工具仔細查看這個應用程式，並了解偵錯工具功能。
 
-2. 按下紅色的停止 ![停止偵錯](../../debugger/media/dbg-tour-stop-debugging.png "停止偵錯") 按鈕來停止偵錯工具。
+2. 按下紅色的 [停止![停止調試](../../debugger/media/dbg-tour-stop-debugging.png "停止偵錯")程式] 按鈕來停止偵錯工具。
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>設定中斷點，並啟動偵錯工具
 
@@ -212,7 +209,7 @@ ms.locfileid: "70180444"
 
     中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。
 
-2. 按 **F5** 鍵或 [開始偵錯]  按鈕 ![開始偵錯](../../debugger/media/dbg-tour-start-debugging.png "開始偵錯")，應用程式會啟動，而偵錯工具會執行到您設定中斷點的程式碼行。
+2. 按**F5**或 [**開始調試**程式] 按鈕![開始](../../debugger/media/dbg-tour-start-debugging.png "開始偵錯")進行偵測，應用程式會啟動，而偵錯工具會執行到您設定中斷點的程式程式碼。
 
     ![設定並叫用中斷點](../csharp/media/get-started-set-breakpoint.gif)
 
@@ -226,32 +223,32 @@ ms.locfileid: "70180444"
 
 在大部分情況下，我們會在這裡使用鍵盤快速鍵，因為這是在偵錯工具中快速執行應用程式的好方法 (功能表命令等對等命令會顯示在括弧內)。
 
-1. 在 `Main` 方法的 `shape.Draw`方法呼叫中暫停時，請按下 **F11** 鍵 (或選擇 [偵錯] > [逐步執行]  ) 推進至 `Rectangle` 類別的程式碼。
+1. 在 `Main` 方法的 `shape.Draw`方法呼叫中暫停時，請按下 **F11** 鍵 (或選擇 [偵錯] > [逐步執行]) 推進至 `Rectangle` 類別的程式碼。
 
-     ![使用 F11 鍵來逐步執行程式碼](../csharp/media/get-started-f11.png "F11 鍵逐步執行")
+     ![使用 F11 逐步執行程式碼](../csharp/media/get-started-f11.png "F11 逐步執行")
 
-     F11 鍵是**逐步執行**命令，可將應用程式執行一次往前推進一個陳述式。 F11 鍵是以最詳細的方式檢查執行流程的好方法。 (若要更快速地在程式碼中移動，我們也會示範一些其他選項。)根據預設，偵錯工具會略過非使用者程式碼 (如果您想要更多的詳細資料，請參閱 [Just My Code](../../debugger/just-my-code.md))。
+     F11 鍵是**逐步執行**命令，可將應用程式執行一次往前推進一個陳述式。 F11 鍵是以最詳細的方式檢查執行流程的好方法 （若要更快速地透過程式碼移動，我們也會示範一些其他選項）。根據預設，偵錯工具會略過非使用者程式碼（如果您需要更多詳細資料，請參閱[Just My Code](../../debugger/just-my-code.md)）。
 
-2. 按幾次 **F10** 鍵 (或選擇 [偵錯] > [不進入函式]  )，直到偵錯工具在 `base.Draw` 方法呼叫上停止為止，然後再次按下 **F10** 鍵。
+2. 按幾次 **F10** 鍵 (或選擇 [偵錯] > [不進入函式])，直到偵錯工具在 `base.Draw` 方法呼叫上停止為止，然後再次按下 **F10** 鍵。
 
-     ![使用 F10 鍵不進入程式碼](../csharp/media/get-started-step-over.png "F10 鍵不進入函式")
+     ![使用 F10 來跳過程式碼](../csharp/media/get-started-step-over.png "F10 不進入函式")
 
      請注意，這次偵錯工具不會逐步執行基底類別 (`Shape`) 的 `Draw` 方法。 **F10** 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中的函式或方法 (此程式碼仍會執行)。 藉由在 `base.Draw` 方法呼叫上按 **F10** 鍵 (而非 **F11** 鍵)，我們略過了 `base.Draw` 的實作程式碼 (現在對我們不太重要)。
 
 ## <a name="navigate-code-using-run-to-click"></a>使用 [執行至點選處] 來巡覽程式碼
 
-1. 在程式碼編輯器中，向下捲動並停留在 `Triangle` 類別的 `Console.WriteLine` 方法上，直到綠色的 [執行至點選處]  按鈕 ![執行至點選處](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") 出現在左側為止。 按鈕的工具提示會顯示「執行到這裡」。
+1. 在 [程式碼編輯器] 中，在 [`Triangle`] 類別的 [`Console.WriteLine`] 方法上向下移動，然後將滑鼠停留在 [![執行](../../debugger/media/dbg-tour-run-to-click.png "處 runtoclick")] 按鈕的綠色**執行**，直到左邊出現為止。 按鈕的工具提示會顯示「執行到這裡」。
 
-     ![使用 [執行至點選處] 功能](../csharp/media/get-started-run-to-click.png "執行至點選處")
+     ![使用 [執行至] 按一下功能](../csharp/media/get-started-run-to-click.png "執行至點選處")
 
    > [!NOTE]
-   > [執行至點選處]  按鈕是 [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)] 的新功能。 如果您沒有看到綠色箭號按鈕，請在此範例中改用 **F11** 鍵，將偵錯工具推進到正確的位置。
+   > [執行至點選處] 按鈕是 [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)] 的新功能。 如果您沒有看到綠色箭號按鈕，請在此範例中改用 **F11** 鍵，將偵錯工具推進到正確的位置。
 
-2. 按一下 [執行至點選處]  按鈕 ![執行至點選處](../../debugger/media/dbg-tour-run-to-click.png "RunToClick")。
+2. 按一下 [**執行] 按一下**[![執行] 按鈕，然後按一下](../../debugger/media/dbg-tour-run-to-click.png "處 runtoclick")。
 
-    使用此按鈕類似於設定暫時中斷點。 [執行至點選處]  方便您在應用程式程式碼的可見區域內快速瀏覽 (您可以按一下任何開啟的檔案)。
+    使用此按鈕類似於設定暫時中斷點。 [執行至點選處] 方便您在應用程式程式碼的可見區域內快速瀏覽 (您可以按一下任何開啟的檔案)。
 
-    偵錯工具將會推進到 `Triangle` 類別的 `Console.WriteLine` 方法實作。
+    偵錯工具將會推進到 `Triangle` 類別的 `Console.WriteLine` 方法實作。 （如果偵錯工具會先在您稍早設定的中斷點上暫停，請使用 [執行] 再次**按一下**以讓偵錯工具前進到 `Console.WriteLine`）。
 
     當暫停時，您會發現有錯字！ "Drawing a trangle" 輸出的拼字錯誤。 在偵錯工具中執行應用程式時，我們可以於此處加以修正。
 
@@ -266,19 +263,19 @@ ms.locfileid: "70180444"
 
 ## <a name="step-out"></a>跳離函式
 
-假設您已完成檢查 `Triangle` 類別中的 `Draw` 方法，而您想要離開該函式，但保留在偵錯工具中。 您可以使用 [跳離函式]  命令完成這項動作。
+假設您已完成檢查 `Triangle` 類別中的 `Draw` 方法，而您想要離開該函式，但保留在偵錯工具中。 您可以使用 [跳離函式] 命令完成這項動作。
 
-1. 按下 **Shift** + **F11** (或 [偵錯] > [跳離函式]  )。
+1. 按下 **Shift** + **F11** (或 [偵錯] > [跳離函式])。
 
      此命令會繼續執行應用程式 (並往前推進偵錯工具)，直到目前的函式傳回為止。
 
-     您應該會回到 `Main` 方法的 `foreach` 迴圈。
+     您應該會回到 `Main` 方法的 `foreach` 迴圈。 如果不是，請按第二次**Shift** + **F11**鍵。
 
 ## <a name="restart-your-app-quickly"></a>快速重新啟動您的應用程式
 
-按一下偵錯工具列中的 [重新啟動]  ![重新啟動應用程式](../../debugger/media/dbg-tour-restart.png "RestartApp") 按鈕 (**Ctrl** + **Shift** + **F5**)。
+按一下 [偵錯工具] 工具列中的 [**重新開機**![重新開機應用程式](../../debugger/media/dbg-tour-restart.png "RestartApp")] 按鈕（**Ctrl** + **Shift** + **F5**）。
 
-相對於停止應用程式並重新啟動偵錯工具，按下 [重新啟動]  可讓您節省時間。 偵錯工具會在執行程式碼叫用的第一個中斷點處暫停。
+相對於停止應用程式並重新啟動偵錯工具，按下 [重新啟動] 可讓您節省時間。 偵錯工具會在執行程式碼叫用的第一個中斷點處暫停。
 
 在 `shape.Draw()` 方法上，偵錯工具會在您設定的中斷點處再次停止。
 
@@ -290,58 +287,58 @@ ms.locfileid: "70180444"
 
 1. 展開 `shape` 物件以查看其屬性 (例如 `Height` 屬性，其值為 0)。
 
-1. 按幾次 **F10** 鍵 (或 [偵錯]   > [不進入函式]  )，在 `foreach` 迴圈中逐一查看一次，然後在 `shape.Draw()` 再次暫停。
+1. 按幾次 **F10** 鍵 (或 [偵錯] > [不進入函式])，在 `foreach` 迴圈中逐一查看一次，然後在 `shape.Draw()` 再次暫停。
 
 1. 將滑鼠再次停留在圖形物件上，且這次您會看到類型為 `Triangle` 的新物件。
 
-     ![檢視資料提示](../csharp/media/get-started-data-tip.gif "檢視資料提示")
+     ![查看資料提示](../csharp/media/get-started-data-tip.gif "查看資料提示")
 
     很多時候，您會希望在偵錯時快速檢查變數的屬性值，以查看其是否如您預期的儲存值，而資料提示是很適合的方法。
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>使用 [自動變數] 和 [區域變數] 視窗來檢查變數
 
-1. 查看程式碼編輯器底部的 [自動變數]  視窗。
+1. 查看程式碼編輯器底部的 [自動變數] 視窗。
 
-    如果已關閉，選擇 [偵錯]   > [視窗]   > [自動變數]  在偵錯工具暫停時將其開啟。
+    如果已關閉，選擇 [偵錯] > [視窗] > [自動變數] 在偵錯工具暫停時將其開啟。
 
 1. 展開 `shapes` 物件。
 
-     ![檢查 [自動變數] 視窗中的變數](../csharp/media/get-started-autos-window.png "[自動變數] 視窗")
+     ![檢查 [自動變數] 視窗中的變數](../csharp/media/get-started-autos-window.png "自動變數視窗")
 
-    在 [自動變數]  視窗中，您會看到變數及其目前的值。 [自動變數]  視窗會顯示在目前行或前述行 (請查看文件以了解語言特定行為) 中使用的所有變數。
+    在 [自動變數] 視窗中，您會看到變數及其目前的值。 [自動變數] 視窗會顯示在目前行或前述行 (請查看文件以了解語言特定行為) 中使用的所有變數。
 
-1. 接下來，在 [自動變數]  視窗旁的索引標籤中查看 [區域變數]  視窗。
+1. 接下來，在 [自動變數] 視窗旁的索引標籤中查看 [區域變數] 視窗。
 
-    [區域變數]  視窗會顯示位在目前[範圍](https://www.wikipedia.org/wiki/Scope_(computer_science))中的變數，即為目前執行內容。
+    [區域變數] 視窗會顯示位在目前[範圍](https://www.wikipedia.org/wiki/Scope_(computer_science))中的變數，即為目前執行內容。
 
 ## <a name="set-a-watch"></a>設定監看式
 
-1. 在主要程式碼編輯器視窗中，以滑鼠右鍵按一下 `shapes` 物件，並選擇 [新增監看式]  。
+1. 在主要程式碼編輯器視窗中，以滑鼠右鍵按一下 `shapes` 物件，並選擇 [新增監看式]。
 
-    [監看式]  視窗隨即在程式碼編輯器底部開啟。 您可以使用 [監看式]  視窗來指定您要留意的變數 (或運算式)。
+    [監看式] 視窗隨即在程式碼編輯器底部開啟。 您可以使用 [監看式] 視窗來指定您要留意的變數 (或運算式)。
 
-    現在，您已於 `shapes` 物件上設定監看式，當您在偵錯工具中移動時，就可以看到其值的變更。 不同於其他變數視窗，[監看式]  視窗一律會顯示所監看的變數 (它們在超出範圍時會呈現灰色)。
+    現在，您已於 `shapes` 物件上設定監看式，當您在偵錯工具中移動時，就可以看到其值的變更。 不同於其他變數視窗，[監看式] 視窗一律會顯示所監看的變數 (它們在超出範圍時會呈現灰色)。
 
 ## <a name="examine-the-call-stack"></a>檢查呼叫堆疊
 
-1. 在 `foreach` 迴圈中暫停時，按一下 [呼叫堆疊]  視窗，此視窗預設會在右下方的窗格中開啟。
+1. 在 `foreach` 迴圈中暫停時，按一下 [呼叫堆疊] 視窗，此視窗預設會在右下方的窗格中開啟。
 
-    如果已關閉，選擇 [偵錯]   > [視窗]   > [呼叫堆疊]  在偵錯工具暫停時將其開啟。
+    如果已關閉，選擇 [偵錯] > [視窗] > [呼叫堆疊] 在偵錯工具暫停時將其開啟。
 
-2. 按幾下 **F11** 鍵，直到您看到偵錯工具在程式碼編輯器中 `Triangle` 類別的 `Base.Draw` 方法中暫停為止。 查看 [呼叫堆疊]  視窗。
+2. 按幾下 **F11** 鍵，直到您看到偵錯工具在程式碼編輯器中 `Triangle` 類別的 `Base.Draw` 方法中暫停為止。 查看 [呼叫堆疊] 視窗。
 
     ![檢查呼叫堆疊](../csharp/media/get-started-call-stack.png "ExamineCallStack")
 
-    [呼叫堆疊]  視窗會顯示方法和函式的呼叫順序。 第一行會顯示目前的函式 (此應用程式中的 `Triangle.Draw` 方法)。 第二行會顯示已從 `Main` 方法呼叫 `Triangle.Draw`，依此類推。
+    [呼叫堆疊] 視窗會顯示方法和函式的呼叫順序。 第一行會顯示目前的函式 (此應用程式中的 `Triangle.Draw` 方法)。 第二行會顯示已從 `Main` 方法呼叫 `Triangle.Draw`，依此類推。
 
    > [!NOTE]
-   > [呼叫堆疊]  視窗類似於某些 IDE (例如 Eclipse) 中的 [偵錯] 檢視方塊。
+   > [呼叫堆疊] 視窗類似於某些 IDE (例如 Eclipse) 中的 [偵錯] 檢視方塊。
 
     呼叫堆疊是檢查並了解應用程式執行流程的好方法。
 
     您可以按兩下某一行的程式碼來查看其原始程式碼，這也會變更偵錯工具所檢查的目前範圍。 此動作不會讓偵錯工具往前推進。
 
-    您也可以從 [呼叫堆疊]  視窗使用滑鼠右鍵功能表來執行其他動作。 例如，您可以在指定的函式中插入中斷點，使用 [執行至游標處]  讓偵錯工具往前推進，並檢查原始程式碼。 如需詳細資訊，請參閱[如何：檢查呼叫堆疊](../../debugger/how-to-use-the-call-stack-window.md)。
+    您也可以從 [呼叫堆疊] 視窗使用滑鼠右鍵功能表來執行其他動作。 例如，您可以在指定的函式中插入中斷點，使用 [執行至游標處] 讓偵錯工具往前推進，並檢查原始程式碼。 如需詳細資訊，請參閱[如何：檢查呼叫堆疊](../../debugger/how-to-use-the-call-stack-window.md)。
 
 ## <a name="change-the-execution-flow"></a>變更執行流程
 

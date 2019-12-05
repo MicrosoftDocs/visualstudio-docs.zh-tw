@@ -1,7 +1,7 @@
 ---
 title: 意見反應選項
 description: 我們想要知道您對於改善我們產品和文件的看法；以下是將意見反應傳送給我們的方式。
-ms.date: 04/25/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.custom: seoapril2019
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 34fcf81b7c7314716144bc77202d7b98525a8e4f
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919079"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853486"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 意見反應選項
 
@@ -34,7 +34,7 @@ ms.locfileid: "72919079"
 
 ![Visual Studio 2019 IDE 中的傳送意見反應圖示](./media/vs-2019/send-feedback-icon.png)
 
-接下來，Visual Studio 會在瀏覽器中開啟[開發人員社群](https://developercommunity.visualstudio.com) \(英文\) 頁面，您可以登入以回報問題。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)。
+接下來，Visual Studio 開啟[開發人員社區](https://developercommunity.visualstudio.com)介面，您可以在此登入以回報問題。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)。
 
 ::: moniker-end
 
@@ -44,38 +44,34 @@ ms.locfileid: "72919079"
 
 ![Visual Studio 2019 IDE 中的傳送意見反應圖示](./media/send-feedback-icon.png)
 
-接下來，Visual Studio 會在瀏覽器中開啟[開發人員社群](https://developercommunity.visualstudio.com) \(英文\) 頁面，您可以登入以回報問題。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)。
+接下來，Visual Studio 開啟[開發人員社區](https://developercommunity.visualstudio.com)介面，您可以在此登入以回報問題。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)。
 
 ::: moniker-end
 
-## <a name="make-a-suggestion"></a>提供建議
+## <a name="suggest-a-feature"></a>建議功能
 
 ::: moniker range="vs-2019"
 
-若有任何我們可以新增或改善的部分，請使用 [建議功能] 工具來讓我們了解。 在 Visual Studio 中，選擇右上角的意見反應圖示，或從功能表列選擇 [說明] > [傳送意見反應] > [建議功能]。
+如果您有想法或建議讓 Visual Studio 更好，請使用**建議功能**工具讓我們知道。 在 Visual Studio 中，選擇右上角的意見反應圖示，或從功能表列選擇 [說明] > [傳送意見反應] > [建議功能]。
 
-接下來，Visual Studio 會在瀏覽器中開啟 [開發人員社群](https://developercommunity.visualstudio.com) \(英文\) 頁面，您可以登入以分享您的想法。 如需詳細資訊，請參閱[提出 Visual Studio 功能建議](suggest-a-feature.md)。
+接下來，Visual Studio 開啟[開發人員社區](https://developercommunity.visualstudio.com)介面，您可以在這裡登入以分享您的想法。 如需詳細資訊，請參閱[提出 Visual Studio 功能建議](suggest-a-feature.md)。
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-若有任何我們可以改善的部分，請使用 [提供建議] 工具來讓我們了解。 在 Visual Studio 中，選擇搜尋方塊旁的意見反應圖示，或從功能表列選擇 [說明] > [傳送意見反應] > [提供建議]。
+如果您有想法或建議讓 Visual Studio 更好，請使用**提供建議**工具讓我們知道。 在 Visual Studio 中，選擇搜尋方塊旁的意見反應圖示，或從功能表列選擇 [說明] > [傳送意見反應] > [提供建議]。
 
-接下來，Visual Studio 會在瀏覽器中開啟 [開發人員社群](https://developercommunity.visualstudio.com) \(英文\) 頁面，您可以登入以分享您的想法。 如需詳細資訊，請參閱[提出 Visual Studio 功能建議](suggest-a-feature.md)。
+接下來，Visual Studio 開啟 [[開發人員](https://developercommunity.visualstudio.com)] [社區] 頁面，您可以在此登入以分享您的想法。 如需詳細資訊，請參閱[提出 Visual Studio 功能建議](suggest-a-feature.md)。
 
 ::: moniker-end
-
-### <a name="rate-this-product"></a>為此產品評分
-
-Visual studio 發行前版本有 [為此產品評分] 功能表項目，產品發行版本則沒有。 請使用 [為此產品評分] 功能表項目，傳送您所執行之發行前版本的品質意見反應。
 
 ## <a name="improve-the-documentation"></a>改善文件
 
 您有兩種方式可以協助我們改善文件：
 
-* 選擇頁面底部的 [此頁面有所助益嗎？] 意見反應按鈕。 您可以在所有文件頁面上找到這個按鈕。
-* 使用您的 GitHub 帳戶，在 [docs.microsoft.com](/visualstudio/) 上針對任何 Visual Studio 頁面提供意見反應。 若要執行此操作，請選擇 [傳送意見反應] > [此頁面] 按鈕，該按鈕同樣位於頁面的底部。
+* 使用任何檔頁面右上方的 [**此頁面有説明嗎？** 回應工具]。
+* 使用您的 GitHub 帳戶，在 [docs.microsoft.com](/visualstudio/) 上針對任何 Visual Studio 頁面提供意見反應。 若要這麼做，請選擇任何檔頁面底部的 [**傳送關於** > **此頁面**的意見反應] 按鈕。
 
 ## <a name="contact-microsoft-support"></a>連絡 Microsoft 支援
 
@@ -94,12 +90,11 @@ Microsoft 支援服務可能因當時的價格、條款和條件而有所變更�
 
 若您想要與其他開發人員共用問題和解答，請考慮在下列社群網站與他們取得聯繫：
 
-* Visual Studio [Developer Community](https://developercommunity.visualstudio.com) (Visual Studio 開發人員社群)
 * [MSDN 論壇](https://social.msdn.microsoft.com/Forums/home)
 * [Reddit](https://www.reddit.com/r/VisualStudio/) 上的 Visual Studio
 * [堆疊溢位](https://stackoverflow.com/search?q=visual+studio+-code)
 
-您也可以在 [開發人員程式碼範例](https://code.msdn.microsoft.com/)網站上檢視其他開發人員的程式碼和分享您自己的範例。
+您也可以在 [[流覽程式碼範例]](/samples/browse/)頁面上，查看其他開發人員的程式碼，並分享您自己的範例。
 
 ## <a name="see-also"></a>請參閱
 
