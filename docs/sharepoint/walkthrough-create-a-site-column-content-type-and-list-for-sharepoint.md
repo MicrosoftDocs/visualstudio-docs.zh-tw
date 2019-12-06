@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e78594a98066dec6cedff6da6f3f1de823bec796
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cc6782e4a83f259eb17632addec36c7804b27858
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985009"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879345"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>逐步解說：建立 SharePoint 的網站資料行、內容類型和清單
   下列程式示範如何建立自訂 SharePoint 網站資料行（或*欄位*），以及使用網站資料行的內容類型。 它也會顯示如何建立使用新內容類型的清單。
@@ -41,7 +41,7 @@ ms.locfileid: "72985009"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
  您需要下列元件才能完成此逐步解說：
 
 - 支援的 Windows 和 SharePoint 版本。
@@ -54,33 +54,48 @@ ms.locfileid: "72985009"
 #### <a name="to-create-the-project"></a>建立專案
 
 1. 在 **[[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 檔案**] 功能表上，選擇 [**新增** > **專案**]。
+::: moniker range="=vs-2017"
+2. 在 [**新增專案**] 對話方塊中，于 **[ C#視覺效果**] 或 [ **Visual Basic**] 底下，展開 [ **Office/SharePoint** ] 節點，然後選取 [ **SharePoint 方案**]。
 
-2. 在 [**新增專案**] 對話方塊的 [**視覺效果C#**  ] 或 [ **Visual Basic**] 底下，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010**]。
+3. 在 [**範本**] 窗格中，針對您已安裝的特定 sharepoint 版本選擇**sharepoint 空白專案**。 例如，如果您有 SharePoint 2016 安裝，請選取 [ **sharepoint 2016-空白專案**] 範本。  
 
-3. 在 [**範本**] 窗格中，選擇 [ **SharePoint 2010 專案**]，將專案名稱**變更為 [** 實務]，然後選擇 [**確定]** 按鈕。
+4. 將專案的名稱**變更為 [** 實務]，然後選擇 [**確定]** 按鈕。
 
-     SharePoint 2010 專案範本是一個空的專案，在此範例中會用來包含稍後新增的網站資料行和其他專案專案。
+5. 在 [**指定網站和安全性層級進行偵錯工具**] 對話方塊中，輸入您要加入新的自訂欄位專案之本機 SharePoint 網站的 URL，或使用預設位置（`http://<`*SystemName*`>/)`。
 
-4. 在 [**指定網站和安全性層級進行偵錯工具**] 頁面上，輸入您要加入新的自訂欄位專案之本機 SharePoint 網站的 URL，或使用預設位置（`http://<`*SystemName*`>/)`。
+6. 在 [**此 SharePoint 方案的信任層級為何？** ] 區段中，使用預設值 [**部署為沙箱化方案**]。
+
+     如需沙箱和伺服器陣列方案的詳細資訊，請參閱[沙箱化方案考慮](../sharepoint/sandboxed-solution-considerations.md)。
+
+7. 選擇 [完成] 按鈕。 專案現在會列在**方案總管**中。
+::: moniker-end
+::: moniker range=">=vs-2019"
+2.  在 [**建立新專案**] 對話方塊中，選取您已安裝之特定 sharepoint 版本的**sharepoint 空白專案**。 例如，如果您有 SharePoint 2016 安裝，請選取 [ **sharepoint 2016-空白專案**] 範本。
+    [!INCLUDE[new-project-dialog-search](../sharepoint/includes/new-project-dialog-search-md.md)]
+
+3. 將專案的名稱**變更為 [** 實務]，然後選擇 [**建立**] 按鈕。
+
+4. 在 [**指定網站和安全性層級進行偵錯工具**] 對話方塊中，輸入您要加入新的自訂欄位專案之本機 SharePoint 網站的 URL，或使用預設位置（`http://<`*SystemName*`>/)`。
 
 5. 在 [**此 SharePoint 方案的信任層級為何？** ] 區段中，使用預設值 [**部署為沙箱化方案**]。
 
      如需沙箱和伺服器陣列方案的詳細資訊，請參閱[沙箱化方案考慮](../sharepoint/sandboxed-solution-considerations.md)。
 
-6. 選擇 [**完成]** 按鈕。 專案現在會列在**方案總管**中。
+6. 選擇 [完成] 按鈕。 專案現在會列在**方案總管**中。
+::: moniker-end
 
 #### <a name="to-add-site-columns"></a>若要新增網站資料行
 
-1. 加入新的網站資料行。 若要這麼做，請在**方案總管** **中，開啟**[實務] 的快捷方式功能表，然後選擇 [**加入** > **新專案**]。
+1. 加入新的網站資料行。 若要這麼做，請在**方案總管**中，以滑鼠**按右鍵 [實務**] 專案，然後選擇 [**加入** > **新專案**]。
 
-2. 在 [**加入新專案**] 對話方塊中，選擇 [**網站資料行**]，將名稱變更為 [**患者名稱**]，然後選擇 [**新增**] 按鈕。
+2. 在 [**加入新專案**] 對話方塊中，選擇 [**網站資料行**]，將名稱變更為**PatientName**，然後選擇 [**加入**] 按鈕。
 
-3. 在 [網站] 資料行的 [ *Elements* ] 檔案中，將 [**類型**] 設定保留為 [**文字**]，然後將 [**群組**] 設定變更為 [實務**網站欄**]。 完成時，網站資料行的*Elements .xml*檔案看起來應該類似下列範例。
+3. 在 [網站] 資料行的 [ *Elements* ] 檔案中，將 [**類型**] 設定保留為 [**文字**]，將 [**群組**] 設定變更為 [實習**網站] 欄**。 完成時，網站資料行的*Elements .xml*檔案看起來應該類似下列範例。
 
     ```xml
     <Field
          ID="{f9ba60d1-5631-41fb-b016-a38cf48eef63}"
-         Name="Clinic - Patient Name"
+         Name="PatientName"
          DisplayName="Patient Name"
          Type="Text"
          Required="FALSE"
@@ -88,7 +103,11 @@ ms.locfileid: "72985009"
     </Field>
     ```
 
-4. 使用相同的程式，將兩個以上的網站資料行新增至專案： [**患者 ID** ] （類型 = "Integer"）和**醫生名稱**（類型 = "Text"）。 將其 [群組] 值設定為 [實習**網站] 欄**。
+    > [!TIP]
+    > 如果您在 [網站] 資料行的名稱中使用 camel 大小寫，Visual Studio 會自動為您新增 DisplayName 中的空格。
+    > 建議您不要在網站資料行名稱中使用空格，因為當您嘗試將解決方案部署至 SharePoint 時，可能會造成問題。
+
+4. 使用相同的程式，將兩個以上的網站資料行加入至專案： **PatientID** （類型 = "Integer"）和**DoctorName** （類型 = "Text"）。 將其 [群組] 值設定為 [實習**網站] 欄**。
 
 ## <a name="create-a-custom-content-type"></a>建立自訂內容類型
  接下來，根據 [連絡人] 內容類型建立內容類型，其中包含您在上一個程式中建立的網站資料行。 藉由在現有內容類型上建立內容類型的基礎，您可以節省時間，因為基底內容類型會提供數個網站欄供新的內容類型使用。
@@ -133,11 +152,11 @@ ms.locfileid: "72985009"
 
 2. 在功能表列中，選擇 [專案] > [加入新項目]。
 
-3. 在 [**視覺C#效果**] 或 [ **Visual Basic**] 底下，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
+3. 在 [**視覺C#效果**] 或 [ **Visual Basic**] 底下，展開 [ **SharePoint** ] 節點。
 
 4. 在 [**範本**] 窗格中，選擇 [**清單**] 範本，將名稱變更為 [**病人**]，然後選擇 [**新增**] 按鈕。
 
-5. 保留 [**根據預設值自訂清單** **（空白）** ]，然後選擇 [**完成]** 按鈕。
+5. 保留 [**根據預設設定自訂清單**] **（自訂清單）** ，然後選擇 [**完成]** 按鈕。
 
 6. 在 [清單設計工具] 中，選擇 [**內容類型**] 按鈕以顯示 [**內容類型設定**] 對話方塊。
 
@@ -151,9 +170,9 @@ ms.locfileid: "72985009"
 
     - 患者名稱
 
-    - 家用電話
+    - 住家電話
 
-    - 位址
+    - 電子郵件
 
     - 醫生姓名
 
@@ -170,7 +189,7 @@ ms.locfileid: "72985009"
 
 10. 在 [**患者識別碼**] 和 [**患者名稱**] 方塊旁，選取 [**必要**] 核取方塊。
 
-11. 在 [ **Views** ] 索引標籤上，選擇空白資料列以建立視圖。 輸入**患者詳細資料**。
+11. 在 [ **Views** ] 索引標籤上，選擇空白資料列以建立視圖。 在 [ **View Name** ] 資料行底下的空白資料列中，輸入**患者詳細資料**。
 
      在 [ **Views** ] 索引標籤上，您可以指定要顯示在 SharePoint 清單中的資料行。
 
@@ -184,9 +203,9 @@ ms.locfileid: "72985009"
 
     - 患者名稱
 
-    - 家用電話
+    - 住家電話
 
-    - 位址
+    - 電子郵件
 
     - 醫生姓名
 
