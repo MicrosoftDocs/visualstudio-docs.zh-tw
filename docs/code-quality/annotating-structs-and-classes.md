@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 93c6826f2903f30fbbdcb9c40ec5f695df32ac05
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 70dc130633e9f191811748b2ab316ad339ad4277
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747056"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879252"
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
 
@@ -39,7 +39,7 @@ ms.locfileid: "72747056"
 
 - `_Field_range_(low, high)`
 
-     欄位位於 `low` 到 `high` 的範圍內（含）。  相當於使用適當的前置或後置條件套用至已標註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`。
+     欄位位於 `low` 到 `high`的範圍內（含）。  相當於使用適當的前置或後置條件套用至已標註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`。
 
 - `_Field_size_(size)`、`_Field_size_opt_(size)`、`_Field_size_bytes_(size)``_Field_size_bytes_opt_(size)`
 
@@ -59,7 +59,7 @@ ms.locfileid: "72747056"
 
 - `_Struct_size_bytes_(size)`
 
-     適用于結構或類別宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如:
+     適用于結構或類別宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如：
 
     ```cpp
 
@@ -81,11 +81,9 @@ ms.locfileid: "72747056"
 
 ```cpp
 #include <sal.h>
-// For FIELD_OFFSET macro
-#include <windows.h>
 
 // This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
-_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+_Struct_size_bytes_(__builtin_offsetof(MyBuffer, buffer) + bufferSize * sizeof(int))
 struct MyBuffer
 {
     static int MaxBufferSize;
@@ -99,8 +97,9 @@ struct MyBuffer
 
     _Field_range_(1, MaxBufferSize)
     int bufferSize;
+    
     _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
-    int buffer[0];
+    int buffer[]; // Using C99 Flexible array member
 };
 ```
 
@@ -108,7 +107,7 @@ struct MyBuffer
 
 - `_Field_z_` 相當於 `_Null_terminated_`。  [名稱] 欄位 `_Field_z_` 指定 [名稱] 欄位是以 null 結束的字串。
 - `bufferSize` 的 `_Field_range_` 會指定 `bufferSize` 的值應該在1和 `MaxBufferSize` （兩者皆包含）中。
-- @No__t_0 和 `_Field_size_` 注釋的最終結果是相同的。 針對具有類似配置的結構或類別，`_Field_size_` 較容易閱讀和維護，因為它的參考和計算比對等的 `_Struct_size_bytes_` 注釋少。 `_Field_size_` 不需要轉換成位元組大小。 如果 [位元組大小] 是唯一的選項，例如，針對 void 指標欄位，可以使用 `_Field_size_bytes_`。 如果 `_Struct_size_bytes_` 和 `_Field_size_` 都存在，則兩者都可供工具使用。 如果這兩個批註不同意，該怎麼辦。
+- `_Struct_size_bytes_` 和 `_Field_size_` 注釋的最終結果是相同的。 針對具有類似配置的結構或類別，`_Field_size_` 較容易閱讀和維護，因為它的參考和計算比對等的 `_Struct_size_bytes_` 注釋少。 `_Field_size_` 不需要轉換成位元組大小。 如果 [位元組大小] 是唯一的選項，例如，針對 void 指標欄位，可以使用 `_Field_size_bytes_`。 如果 `_Struct_size_bytes_` 和 `_Field_size_` 都存在，則兩者都可供工具使用。 如果這兩個批註不同意，該怎麼辦。
 
 ## <a name="see-also"></a>請參閱
 
