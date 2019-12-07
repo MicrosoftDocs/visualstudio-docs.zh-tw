@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0024716875dce7e81567d60a6e61069be64ec185
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911449"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903861"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>停用 Just-In-Time 偵錯工具
 
 當執行中的應用程式發生錯誤，並防止應用程式繼續執行時，[即時偵錯工具] 對話方塊可能會開啟。
 
-即時偵錯工具可讓您選擇啟動 Visual Studio 來進行錯誤的偵測。 您必須安裝[Visual Studio](https://visualstudio.microsoft.com/)或另一個已選取的偵錯工具，才能查看錯誤的詳細資訊，或嘗試進行調試。
+即時偵錯工具可讓您選擇啟動 Visual Studio 來進行錯誤的偵測。 您必須安裝 Visual Studio 或另一個已選取的偵錯工具，才能查看錯誤的詳細資訊，或嘗試進行調試。
 
-如果您是 Visual Studio 使用者，而且想要嘗試進行錯誤的檢查，請參閱[使用即時偵錯工具進行 debug](../debugger/debug-using-the-just-in-time-debugger.md)。 如果您無法修正錯誤，或想要讓即時偵錯工具無法開啟，您可以[從 Visual Studio 停](debug-using-the-just-in-time-debugger.md#BKMK_Enabling)用即時的偵測。
+如果您已經是 Visual Studio 使用者，而且想要嘗試進行錯誤的檢查，請參閱[使用即時偵錯工具進行 debug](../debugger/debug-using-the-just-in-time-debugger.md)。 如果您無法修正錯誤，或想要讓即時偵錯工具無法開啟，您可以[從 Visual Studio 停](debug-using-the-just-in-time-debugger.md#BKMK_Enabling)用即時的偵測。
 
 如果您已安裝 Visual Studio，但不再這麼做，您可能需要[從 Windows 登錄中停用即時的調試](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry)。
 
