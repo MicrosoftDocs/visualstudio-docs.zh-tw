@@ -5,12 +5,12 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: d61e7f47fde06c12b6b133ced76e5a8d72d220b0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74528431"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903990"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何增加修正效能問題的機率
 
@@ -40,7 +40,7 @@ Visual Studio 是一個大型、複雜的平臺，支援多種語言、專案類
 
 -   [高 CPU：](#slowness-and-high-cpu-issues)非預期的高 CPU 使用量長時間
 
-## <a name="crashes"></a>發生
+## <a name="crashes"></a>損毀
 當進程（Visual Studio）意外終止時，就會發生損毀。
 
 **直接重現損毀**
@@ -116,9 +116,9 @@ VS 會變得沒有回應一段頗長的時間。
 **未知的無回應**
 
 如果無回應以無法預期的方式來進行資訊清單，在下一次出現時，啟動 Visual Studio 的新實例，並從該實例回報問題。
-在 [[記錄] 畫面](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)中，請務必選取已停止回應的 Visual Studio 會話。
+在 [[記錄] 畫面](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)中，請務必選取沒有回應的 Visual Studio 會話。
 
-如果在系統管理員模式中啟動了無回應的 Visual Studio 實例，則第二個實例也必須以系統管理員模式啟動。
+如果沒有回應的 Visual Studio 實例是在系統管理員模式中啟動，則第二個實例也必須以系統管理員模式啟動。
 
 >[!NOTE] 
 > **最寶貴的意見反應：** 在此情況下，最寶貴的意見反應是在無回應時所捕捉到的堆積傾印。
