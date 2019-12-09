@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a98164488d548a15c07e67b9a02cad2341f7300b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 243766d78f25491f465a712b37dc5fab16c8a985
+ms.sourcegitcommit: 916bbe1d77c9253424daa86c71c40f5e1ec74400
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985655"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74945077"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 增益集的登錄專案
   部署使用 Visual Studio 建立的 VSTO 增益集時，您必須建立一組特定的登錄項目。 這些登錄項目可提供讓 Microsoft Office 應用程式探索及載入 VSTO 增益集的資訊。
@@ -40,48 +40,39 @@ ms.locfileid: "72985655"
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>為目前使用者和所有使用者註冊 VSTO 增益集
  VSTO 增益集安裝完成後，可以使用兩種方法註冊：
 
-- 僅限目前使用者（亦即，只有在安裝 VSTO 增益集時，登入電腦的使用者才能使用）。 在此情況下，會在**HKEY_CURRENT_USER**下建立登錄專案。
+- 僅限目前使用者（亦即，只有在安裝 VSTO 增益集時，登入電腦的使用者才能使用）。 在此情況下，登錄專案會建立在**HKEY_CURRENT_USER**之下。
 
-- 針對所有使用者（也就是登入電腦的任何使用者都可以使用 VSTO 增益集）。 在此情況下，登錄專案會建立在**HKEY_LOCAL_MACHINE**底下。
+- 針對所有使用者（也就是登入電腦的任何使用者都可以使用 VSTO 增益集）。 在此情況下，登錄專案會建立在**HKEY_LOCAL_MACHINE**之下。
 
   以 Visual Studio 建立的所有 VSTO 增益集都能註冊以供目前的使用者使用。 不過，只有在特定情況下，才能註冊 VSTO 增益集讓所有使用者使用。 這些情況取決於電腦上的 Microsoft Office 版本以及 VSTO 增益集的部署方式。
-
-### <a name="microsoft-office-version"></a>Microsoft Office 版本
- Office 應用程式可以載入在**HKEY_LOCAL_MACHINE**或**HKEY_CURRENT_USER**之下註冊的 VSTO 增益集。
-
- 若要載入註冊于**HKEY_LOCAL_MACHINE**底下的 VSTO 增益集，電腦必須安裝更新套件976477。 如需詳細資訊，請參閱 [http://go.microsoft.com/fwlink/?LinkId=184923](https://support.microsoft.com/help/976811/a-2007-office-system-application-does-not-load-an-add-in-that-is-devel)。
 
 ### <a name="deployment-type"></a>部署類型
  如果您使用 ClickOnce 部署 VSTO 增益集，VSTO 增益集只能註冊供目前使用者使用， 這是因為 ClickOnce 僅支援在**HKEY_CURRENT_USER**下建立索引鍵。 如果希望讓電腦的所有使用者都能使用註冊的 VSTO 增益集，則必須使用 Windows Installer 部署 VSTO 增益集。 如需這些部署類型的詳細資訊，請參閱[使用 ClickOnce 部署 office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)和[使用 Windows Installer 部署 office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。
 
 ## <a name="registry-entries"></a>登錄項目
- 所需的 VSTO 增益集登錄專案位於所有應用程式（Visio 除外）的下列登錄機碼底下，其中*根目錄*為**HKEY_CURRENT_USER**或**HKEY_LOCAL_MACHINE**。
+ 必要的 VSTO 增益集登錄專案位於下列登錄機碼底下，其中*根* **HKEY_CURRENT_USER**或**HKEY_LOCAL_MACHINE**取決於安裝是每個使用者或每部電腦。
 
- **所有應用程式 (Visio 除外)**
+|Office 應用程式|組態路徑|
+|------------------|------------------|
+|Visio|*Root*\Software\Microsoft\\*Visio*\ADDINS\\*增益集識別碼*|
+|所有其他|*根*\Software\Microsoft\Office\\*Office 應用程式名稱*\ADDINS\\*增益集識別碼*|
 
-|Office 版本|組態路徑|
-|--------------------|------------------------|
-|32 位元|*根*\Software\Microsoft\Office\\*應用程式名稱*\ADDINS\\*增益集識別碼*|
-|64 位元|*根*\Software\Wow6432Node\Microsoft\Office\\*應用程式名稱*\ADDINS\\*增益集識別碼*|
-
- **Visio**
-
-|Office 版本|組態路徑|
-|--------------------|------------------------|
-|32 位元|*根*\Software\Microsoft\Visio\Addins\\*增益集識別碼*|
-|64 位元|*根*\Software\Wow6432Node\Visio\Addins\\*增益集識別碼*|
+> [!NOTE]
+> 如果安裝程式是以64位 Windows 為目標，則應該包含兩個登錄專案，一個在*根*\Software\Microsoft 底下，另一個在*根*\Software 下，\\**WOW6432Node**\Microsoft hive。  這是因為使用者可以在電腦上使用32位或64位版本的 Office。
+>
+>如需詳細資訊，請參閱[Registry 中的32位和64位應用程式資料](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
 
  下表列出此登錄機碼下的項目。
 
-|進入|輸入|值|
+|進入|類型|{2&gt;值&lt;2}|
 |-----------|----------|-----------|
 |**說明**|REG_SZ|必要項。 VSTO 增益集的簡短描述。<br /><br /> 當使用者在 Microsoft Office 應用程式之 [選項] 對話方塊的 [增益集] 窗格中選取 VSTO 增益集時，即會顯示這個描述。|
 |**FriendlyName**|REG_SZ|必要項。 這是 Microsoft Office 應用程式的 [COM 增益集] 對話方塊中，所顯示之 VSTO 增益集的描述性名稱。 預設值為 VSTO 增益集 ID。|
-|**LoadBehavior**|REG_DWORD|必要項。 可指定應用程式何時嘗試載入 VSTO 增益集和 VSTO 增益集目前狀態 (載入或卸載) 的值。<br /><br /> 這個項目預設會設定為 3，指定在啟動時載入 VSTO 增益集。 如需詳細資訊，請參閱[LoadBehavior values](#LoadBehavior)。 **注意：** 如果使用者停用 VSTO 增益集，該動作會修改**HKEY_CURRENT_USER**登錄區中的**LoadBehavior**值。 針對每個使用者，HKEY_CURRENT_USER hive 中**LoadBehavior**值的值會覆寫**HKEY_LOCAL_MACHINE** hive 中定義的預設**LoadBehavior** 。|
+|**LoadBehavior**|REG_DWORD|必要項。 可指定應用程式何時嘗試載入 VSTO 增益集和 VSTO 增益集目前狀態 (載入或卸載) 的值。<br /><br /> 這個項目預設會設定為 3，指定在啟動時載入 VSTO 增益集。 如需詳細資訊，請參閱[LoadBehavior values](#LoadBehavior)。 **注意：** 如果使用者停用 VSTO 增益集，該動作會修改**HKEY_CURRENT_USER**登錄 hive 中的**LoadBehavior**值。 針對每個使用者，HKEY_CURRENT_USER hive 中**LoadBehavior**值的值會覆寫**HKEY_LOCAL_MACHINE** hive 中定義的預設**LoadBehavior** 。|
 |**Manifest**|REG_SZ|必要項。 VSTO 增益集部署資訊清單的完整路徑。 路徑可以是本機電腦上的位置、網路共用 (UNC) 或 Web 伺服器 (HTTP)。<br /><br /> 如果使用 Windows Installer 來部署解決方案，您必須在 **資訊清單** 路徑前加上前置詞 **file:///** 。 您也必須將字串 **&#124;vstolocal** （也就是後面接著**vstolocal**的 **&#124;** 管道字元）附加到此路徑的結尾。 如此可以確保解決方案是從安裝資料夾載入，而不是從 ClickOnce 快取載入。 如需詳細資訊，請參閱[使用 Windows Installer 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。 **注意：** 當您在開發電腦上建立 VSTO 增益集時，Visual Studio 會自動將 **&#124;vstolocal**字串附加至這個登錄專案。|
 
 ### <a name="OutlookEntries"></a>Outlook 表單區域的登錄專案
- 如果您在 Outlook 的 VSTO 增益集中建立自訂表單區域，則必須使用額外的登錄項目向 Outlook 註冊這個表單區域。 系統會在表單區域所支援之各個訊息類別的不同登錄機碼下建立這些項目。 這些登錄機碼位於下列位置，其中*根目錄*為**HKEY_CURRENT_USER**或**HKEY_LOCAL_MACHINE**。
+ 如果您在 Outlook 的 VSTO 增益集中建立自訂表單區域，則必須使用額外的登錄項目向 Outlook 註冊這個表單區域。 系統會在表單區域所支援之各個訊息類別的不同登錄機碼下建立這些項目。 這些登錄機碼位於下列位置，其中*Root*是**HKEY_CURRENT_USER**或**HKEY_LOCAL_MACHINE**。
 
  *根*\Software\Microsoft\Office\Outlook\FormRegions\\*message 類別*
 
