@@ -1,18 +1,18 @@
 ---
 title: 安裝 Visual Studio 2019 for Mac
 description: 如何安裝 Visual Studio 2019 for Mac 及其他跨平台開發所需元件的指示。
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 1ace600f9c4582e99c6fa324cb9dcc61593d3d97
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: dd6afc69c2a7e513358c69eafeacb49fcb06dd52
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716777"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983975"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安裝 Visual Studio 2019 for Mac
 
@@ -57,7 +57,7 @@ ms.locfileid: "73716777"
 |---------|---------|---------|---------|
 |**使用 Xamarin 的應用程式**| Xamarin.Forms|選取**Android**和**iOS**平臺 |您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/) |
 ||僅限 iOS|選取**iOS**平臺|您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/)|
-||僅限 Android|選取**Android**平臺|請注意，您也應該選取相關的相依性|
+||僅 Android|選取 [**Android**] 平台|請注意，您也必須選取有相依性的開發工具。|
 ||僅限 Mac|選取**macOS （Cocoa）** 平臺|您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/)|
 |**.NET Core 應用程式**|         |選取 [ **.Net Core**平臺]。|         |
 |**ASP.NET Core Web 應用程式**|         |選取 [ **.Net Core**平臺]。|         |

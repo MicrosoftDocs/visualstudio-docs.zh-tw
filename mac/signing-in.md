@@ -1,16 +1,16 @@
 ---
 title: 登入 Visual Studio for Mac
 description: 如何登入 Visual Studio for Mac
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 96a113e21fe2e2e11da0e156ba9578c632e648ae
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213668"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983664"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>登入 Visual Studio for Mac
 
@@ -61,7 +61,7 @@ Visual Studio for Mac 支援將多個帳戶新增至您的個人化帳戶。 這
 
 3. 當您完成時，請選擇 [儲存變更]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [登入 Visual Studio (Windows 上)](/visualstudio/ide/signing-in-to-visual-studio)
 - [使用多個使用者帳戶 (Windows 上的 Visual Studio)](/visualstudio/ide/work-with-multiple-user-accounts)

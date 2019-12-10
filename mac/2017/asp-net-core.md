@@ -1,17 +1,17 @@
 ---
 title: 開始使用 ASP.NET Core
 description: 本文說明如何在 Visual Studio for Mac 中開始使用 ASP.NET，包括安裝及建立新的專案。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 6260233d564421ce3fc32c9700c4430989a4f53b
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
-ms.translationtype: HT
+ms.openlocfilehash: b1e29e4df6ea31d99a99590f3e56ed6feac791e1
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493728"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984891"
 ---
 # <a name="getting-started-with-aspnet-core"></a>開始使用 ASP.NET Core
 
@@ -23,7 +23,7 @@ ms.locfileid: "67493728"
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中建立 ASP.NET Core 應用程式
 
-開啟 Visual Studio for Mac。 在歡迎頁面上選取 [新增專案...] 
+開啟 Visual Studio for Mac。 在歡迎頁面上選取 [新增專案...]
 
 ![[新增專案] 對話方塊](media/asp-net-core-image1.png)
 
@@ -38,11 +38,11 @@ ms.locfileid: "67493728"
 
 ![ASP.NET 專案選項](media/asp-net-core-image11.png)
 
-選取 [ASP.NET Core 空白 Web 應用程式]  ，然後按 [下一步]  。 提供專案名稱，然後按 [建立]  。 這會建立新的 ASP.NET Core 應用程式，看起來應該類似下面的影像：
+選取 [ASP.NET Core 空白 Web 應用程式]，然後按 [下一步]。 提供專案名稱，然後按 [建立]。 這會建立新的 ASP.NET Core 應用程式，看起來應該類似下面的影像：
 
 ![新的 ASP.NET Core 空白專案檢視](media/asp-net-core-image4.png)
 
-「ASP.NET Core 空白 Web 應用程式」建立的 Web 應用程式含有兩個預設檔案：**Program.cs** 和 **Startup.cs**，其說明如下。 它也會建立相依性資料夾，其中包含專案的 NuGet 套件相依性，例如 ASP.NET Core、.NET Core 架構和用來建置專案的 MSBuild 目標：
+ASP.NET Core 空白 Web 應用程式建立的 Web 應用程式含有兩個預設檔案：**Program.cs** 和 **Startup.cs**，其說明如下。 它也會建立相依性資料夾，其中包含專案的 NuGet 套件相依性，例如 ASP.NET Core、.NET Core 架構和用來建置專案的 MSBuild 目標：
 
 ![顯示相依性的 Solution Pad](media/asp-net-core-image12.png)
 
@@ -66,9 +66,9 @@ public static void Main(string[] args)
 
 ASP.NET Core 應用程式會透過 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 的執行個體設定和啟動主機，在其 Main 方法中建立 Web 伺服器。 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中會使用下列組態：
 
-* `UseKestrel`：指定應用程式將使用 Kestrel 伺服器
+* `UseKestrel`：指定應用程式將使用的 Kestrel 伺服器
 * `UseContentRoot(Directory.GetCurrentDirectory())`：當應用程式從 Web 專案的根資料夾啟動時，使用這個資料夾作為應用程式的內容根目錄
-* `.UseIISIntegration()`：指定應用程式應該與 IIS 搭配運作。 若要搭配使用 IIS 與 ASP.NET Core，必須同時指定 `UseKestrel` 和 `UseIISIntegration`。
+* `.UseIISIntegration()`：指定應用程式應該使用 IIS。 若要搭配使用 IIS 與 ASP.NET Core，必須同時指定 `UseKestrel` 和 `UseIISIntegration`。
 * `.UseStartup<Startup>()`：指定啟動類別。
 
   Build 和 Run 方法會建置裝載應用程式的 IWebHost，並使其開始接聽傳入的 HTTP 要求。
@@ -120,7 +120,7 @@ public class Startup
 
 ![執行應用程式](media/asp-net-core-image5.png)
 
-Visual Studio for Mac 會使用隨機的連接埠來啟動您的 Web 專案。 若要找出這個連接埠，請開啟應用程式輸出，其列在 [檢視] > [板]  底下。 您應該尋找的輸出類似如下：
+Visual Studio for Mac 會使用隨機的連接埠來啟動您的 Web 專案。 若要找出這個連接埠，請開啟應用程式輸出，其列在 [檢視] > [板] 底下。 您應該尋找的輸出類似如下：
 
 ![顯示接聽連接埠的應用程式輸出](media/asp-net-core-image6.png)
 
@@ -128,19 +128,19 @@ Visual Studio for Mac 會使用隨機的連接埠來啟動您的 Web 專案。 �
 
 ![顯示文字的瀏覽器](media/asp-net-core-image7.png)
 
-## <a name="adding-a-controller"></a>新增控制器
+## <a name="adding-a-controller"></a>加入控制器
 
 ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式，為應用程式的每個部分提供責任的邏輯分隔。 MVC 包含下列項目：
 
 - **模型**：代表應用程式資料的類別。
-- **檢視**：顯示應用程式的使用者介面 (通常是模型資料)。
+- **檢視**：顯示應用程式的使用者介面 (這通常是模型資料)。
 - **控制器**：用來處理瀏覽器要求、回應使用者輸入和互動的類別。
 
 如需使用 MVC 的詳細資訊，請參閱 [ASP.NET Core MVC 的概觀](/aspnet/core/mvc/overview)指南。
 
 若要新增控制器，請執行下列作業：
 
-1. 以滑鼠右鍵按一下專案名稱，然後選取 [新增] > [新增檔案]  。 選取 [一般] > [空白類別]  ，然後輸入控制器名稱：
+1. 以滑鼠右鍵按一下專案名稱，然後選取 [新增] > [新增檔案]。 選取 [一般] > [空白類別]，然後輸入控制器名稱：
 
     ![[新增檔案] 對話方塊](media/asp-net-core-image8.png)
 
@@ -167,9 +167,9 @@ ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式�
     }
     ```
 
-3. 以滑鼠右鍵按一下 [相依性]  資料夾，然後選取 [新增套件...]  ，將 `Microsoft.AspNetCore.Mvc` 相依性新增至專案。
+3. 以滑鼠右鍵按一下 [相依性] 資料夾，然後選取 [新增套件...]，將 `Microsoft.AspNetCore.Mvc` 相依性新增至專案。
 
-4. 使用搜尋方塊來瀏覽 NuGet 程式庫以找出 `Microsoft.AspNetCore.Mvc`，然後選取 [新增套件]  。 這可能需要幾分鐘的時間來完成安裝，而且系統可能會提示您接受所需相依性的各種授權：
+4. 使用搜尋方塊來瀏覽 NuGet 程式庫以找出 `Microsoft.AspNetCore.Mvc`，然後選取 [新增套件]。 這可能需要幾分鐘的時間來完成安裝，而且系統可能會提示您接受所需相依性的各種授權：
 
     ![新增 Nuget](media/asp-net-core-image9.png)
 

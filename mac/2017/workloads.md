@@ -1,16 +1,16 @@
 ---
 title: Visual Studio for Mac 工作負載
 description: 本文說明可在 Visual Studio for Mac 中使用的各種工作負載，包括 Xamarin 行動應用程式、ASP.NET Core，以及適用於遊戲的 Unity。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 12/05/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 959af3acf8c6da1437ffc6efd66e984902e9e94a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a189abf6b46acbf708b1a56fb33d5a50cd3d740c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985437"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985112"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio for Mac 工作負載
 

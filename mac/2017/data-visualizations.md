@@ -1,17 +1,17 @@
 ---
 title: 偵錯 - 資料視覺效果
 description: 偵錯是程式設計中常見且必要的一部分。 Visual Studio for Mac 包含整個套件的功能，可讓偵錯變容易。 本篇文章探討在偵錯工具中檢查物件時，可檢視的不同資料視覺效果。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932353"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984752"
 ---
 # <a name="data-visualizations"></a>資料視覺效果
 
@@ -38,7 +38,7 @@ Rectangle/RectangleF 或 iOS 和 Mac 的 CGRect 會顯示尺寸和原點。 與�
 
 ![矩形視覺效果](media/data-visualizations-image12.png)
 
-## <a name="coordinate"></a>座標
+## <a name="coordinate"></a>協調
 座標會繪製在地圖上，並將位置釘選到中央：
 
 [座標視覺效果](media/data-visualizations-image13.png)
@@ -72,7 +72,7 @@ Rectangle/RectangleF 或 iOS 和 Mac 的 CGRect 會顯示尺寸和原點。 與�
 ### <a name="medium-length-strings"></a>中等長度字串：
 ![中度字串視覺效果](media/data-visualizations-image19.png)
 
-### <a name="editor"></a>編輯器：
+### <a name="editor"></a>編輯：
 
 ![編輯器視覺效果](media/data-visualizations-image21.png)
 
@@ -101,7 +101,7 @@ IEnumerable 會列舉所有值；透過按一下 [顯示值] 按鈕，即可檢�
 * **IntPtr**
   * 這會顯示 IntPtr 的十六進位表示法。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [檢查 [自動] 視窗和 [本機] 視窗中的變數 (Windows 上的 Visual Studio)](/visualstudio/debugger/autos-and-locals-windows)
 - [檢視視覺化檢視中的字串 (Windows 上的 Visual Studio)](/visualstudio/debugger/string-visualizer-dialog-box)

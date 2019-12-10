@@ -1,18 +1,18 @@
 ---
-title: Accessibility
+title: 協助工具
 description: 本文介紹 Visual Studio for Mac 中的協助工具功能及其啟用方式。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 19104cb090ff2a115afefe994bd53c93d2baaf5d
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: c0f056643a8cea0c9a5eca9801d2bd008e0793a8
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714431"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984873"
 ---
-# <a name="accessibility"></a>Accessibility
+# <a name="accessibility"></a>協助工具
 
 除了 macOS 中的功能和公用程式之外，Visual Studio for Mac 具有下列功能，可讓身心障礙人士更方便存取：
 

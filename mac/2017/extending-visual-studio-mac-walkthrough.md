@@ -1,16 +1,16 @@
 ---
 title: 擴充 Visual Studio for Mac 逐步解說
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: cbf0d99bd87b31484b6c74e9a6d67ac88dc5ba99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998502"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985034"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>擴充 Visual Studio for Mac 逐步解說
 
@@ -136,6 +136,6 @@ ms.locfileid: "62998502"
 
     ![插入日期螢幕擷取畫面](media/extending-visual-studio-mac-addin12.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立您的第一個延伸模組 (Windows 上的 Visual Studio)](/visualstudio/extensibility/extensibility-hello-world)

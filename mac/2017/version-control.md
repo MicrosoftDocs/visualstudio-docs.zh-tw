@@ -1,16 +1,16 @@
 ---
 title: 版本控制
 description: 在 Visual Studio for Mac 中使用 Git 和 Subversion。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: 0505177e01afd701fe5506df7dd0fc2a2e1f859c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 47b51306f8d0916eccd7db3a4740843bb7efba85
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986527"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984736"
 ---
 # <a name="version-control"></a>版本控制
 
@@ -33,6 +33,6 @@ Visual Studio for Mac 同時支援 Git 和 Subversion 版本控制系統。 下�
 * [設定 Subversion 存放庫](set-up-subversion-repository.md)
 * [使用 Subversion](working-with-subversion.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-* [Visual Studio 中的版本控制 (Windows 上)](/visualstudio/version-control/)
+* [Visual Studio (Windows) 中的版本控制](/visualstudio/version-control/)

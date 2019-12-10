@@ -1,16 +1,16 @@
 ---
 title: 管理應用程式資源
 description: 本文與說明如何在 Visual Studio for Mac 中為各種平台管理應用程式資源的多篇指南有關
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: e4182bdcc8e2a97b152d5548b07cd03a152607ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c3572edc46d4f69a338ba655b32254126a7fce9c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997197"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985283"
 ---
 # <a name="managing-app-resources"></a>管理應用程式資源
 
@@ -37,6 +37,6 @@ Xamarin.Forms 程式碼可在多個平台上執行；每個平台都有屬於自
 
 * [使用影像](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [管理應用程式資源 (Windows 上的 Visual Studio)](/visualstudio/ide/managing-application-resources-dotnet)

@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 79570fe403c12c89860a67683456a3d6ca3d3f01
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189609"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955032"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
@@ -42,7 +42,7 @@ ms.locfileid: "73189609"
 * **[Windows 應用程式開發](#windows-app-development)** 。 在 Visual Studio 2017 中，您可以使用 UWP 範本建立適用於所有 Windows 10 裝置 (電腦、平板電腦、手機、Xbox、HoloLens、Surface Hub 等) 的單一專案。
 * **[行動應用程式開發](#mobile-app-development)** 。 Xamarin 將您的多平台行動需求整合到一個核心程式碼基底和一組技術，讓您能快速創新並獲得成果。
 * **[跨平台開發](#cross-platform-development)** 。 將軟體順暢地提供給任何目標平台。 透過 Redgate Data Tools 將 DevOps 程序延伸到 SQL Server，並從 Visual Studio 安全地將資料庫部署自動化。 或者，使用 .NET Core 來撰寫在未修改的情況下跨 Windows、Linux 和 macOS 作業系統執行的應用程式和程式庫
-* **[遊戲開發](#games-development)** 。 透過 Visual Studio Tools for Unity (VSTU)，您可以在 C# 中使用 Visual Studio 來撰寫遊戲和編輯器指令碼，然後使用其強大的偵錯工具來尋找及修正錯誤。
+* **[遊戲開發](#games-development)** 。 透過 Visual Studio Tools for Unity (VSTU)，您可以使用 Visual Studio 以 C# 撰寫遊戲和編輯器指令碼，然後使用其強大的偵錯工具來尋找及修正錯誤。
 * **[AI 開發](#ai-development)** 。 有了 Visual Studio Tools for AI，您就可以使用 Visual Studio 的生產力功能來加速 AI 的創新。 建置、測試及部署與 Azure Machine Learning 無縫整合的深度學習/AI 解決方案，以獲得強固的測試功能。
 
 > [!NOTE]
@@ -226,7 +226,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢視快照集](../debugger/view-historical-application-state.md)頁面。
 
-### <a name="containerization"></a>容器化
+### <a name="containerization"></a>集裝箱化
 
 容器提供您更高的應用程式密度和更低的部署成本，並提高生產力和 DevOps 彈性。
 
@@ -389,6 +389,6 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 * [Visual Studio 2017 SDK 的新功能](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
 * [Visual C++ 的新功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# 的新功能](/dotnet/csharp/whats-new)
-* [Team Foundation Server 的新功能](/tfs/server/whats-new?view=vsts)
+* [Team Foundation Server 的新功能](/azure/devops/server/whats-new)
 * [Visual Studio for Mac 的新功能](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Visual Studio 2019 的新功能](whats-new-visual-studio-2019.md)

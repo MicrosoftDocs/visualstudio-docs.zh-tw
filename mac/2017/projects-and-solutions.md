@@ -1,16 +1,16 @@
 ---
 title: 專案和方案
 description: 本文件概述 Visual Studio for Mac 中的專案和方案。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 6ae37b7256b1cefe2bfbd2174135b013b1aa37cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d0cf61c94161e6d6bef6cd580e5fb342a177c1c4
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987995"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983517"
 ---
 # <a name="projects-and-solutions"></a>專案和方案
 
@@ -24,6 +24,6 @@ Visual Studio for Mac 提供  _Solution Pad_  以顯示整個開放方案的�
 
 按兩下專案或方案名稱，或者按一下滑鼠右鍵並瀏覽至 [選項]，即可管理專案和方案的屬性。 [管理方案和專案屬性](managing-solutions-and-project-properties.md)一文提供這些選項的詳細資訊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio (Windows)中的方案和專案](/visualstudio/ide/solutions-and-projects-in-visual-studio)

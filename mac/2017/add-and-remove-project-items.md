@@ -1,18 +1,18 @@
 ---
-title: 新增和移除專案項目
+title: 加入及移除專案項目
 description: 本文件描述如何在 Visual Studio for Mac 中新增和移除專案項目
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
-ms.openlocfilehash: dc37b3a376b99c39d4216ba0ae2b05d707d11484
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 94bb56fba0b90f29c291bc2c4b95976810dd21c6
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933280"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983613"
 ---
-# <a name="adding-and-removing-project-items"></a>新增和移除專案項目
+# <a name="adding-and-removing-project-items"></a>加入及移除專案項目
 
 您可以在 [Solution Pad] 的專案節點上按一下滑鼠右鍵，並瀏覽至 [新增] > [新增檔案]，以將新的專案項目新增至您的專案中：
 
@@ -24,7 +24,7 @@ ms.locfileid: "62933280"
 
 ## <a name="adding-existing-files"></a>新增現有檔案
 
-您可以將現有檔案新增至專案，方法是以滑鼠右鍵按一下專案節點，然後選取 [新增] > [新增檔案...]。或者，若要新增整個資料夾，請選取 [新增] > [新增現有資料夾...]。這會顯示檔案瀏覽器，可讓您搜尋系統是否有要新增的必要項目。
+以滑鼠右鍵按一下專案節點，然後選取 [**新增] > [加入**檔案]，即可將現有的檔案加入至專案。或者，若要新增整個資料夾，請選取 [**新增] > [加入現有資料夾**]。這會顯示 [檔案瀏覽器]，讓您在系統中搜尋要新增的必要專案。
 
 ## <a name="removing-items"></a>移除項目
 
@@ -39,6 +39,6 @@ ms.locfileid: "62933280"
 * **刪除** - 從專案和磁碟中移除項目。
 * **從專案中移除** - 從專案中移除項目，但不會從磁碟中移除項目
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Visual Studio (Windows)中的方案和專案](/visualstudio/ide/solutions-and-projects-in-visual-studio)

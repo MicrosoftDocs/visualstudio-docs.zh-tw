@@ -1,22 +1,22 @@
 ---
 title: 建立新的專案和方案
 description: 本文描述如何在 Visual Studio for Mac 中建立專案和方案
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 00814f006c265a3c16cd3d4bd6bc004754016a27
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 0149c43f628e3a65f9fd85565919886bde609b07
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692417"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983639"
 ---
 # <a name="creating-new-projects-and-solutions"></a>建立新的專案和方案
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>從範本建立新的專案和方案
 
-可以隨時使用預先定義的範本來建立方案。 若要以此方式建立方案，請瀏覽至 [檔案] > [新增方案]  ，選取所需的平台，然後選取所需的範本：
+可以隨時使用預先定義的範本來建立方案。 若要以此方式建立方案，請瀏覽至 [檔案] > [新增方案]，選取所需的平台，然後選取所需的範本：
 
 ![建立新的方案](media/projects-and-solutions-image0.png)
 
@@ -24,7 +24,7 @@ ms.locfileid: "67692417"
 
 透過使用內容動作或功能表列，即可巡覽 [方案總管]。
 
-若要將新的專案加入方案，請以滑鼠右鍵按一下方案名稱，然後選取 [新增] > [新增專案]  以顯示 [新增專案] 對話方塊：
+若要將新的專案加入方案，請以滑鼠右鍵按一下方案名稱，然後選取 [新增] > [新增專案] 以顯示 [新增專案] 對話方塊：
 
 ![新增專案](media/projects-and-solutions-image4.png)
 
@@ -38,6 +38,6 @@ Visual Studio 的登陸頁面會顯示您最近使用的專案清單：
 
 您可以使用 [篩選] 方塊篩選這份清單，或從清單中移除個別項目。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立方案和專案 (Windows 上的 Visual Studio)](/visualstudio/ide/creating-solutions-and-projects)
