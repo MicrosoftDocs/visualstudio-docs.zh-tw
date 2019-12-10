@@ -1,17 +1,17 @@
 ---
 title: 解除安裝 Visual Studio for Mac
 description: 解除安裝 Visual Studio for Mac 和相關工具的指示。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: ef9b609b74b878a2d9bdafb087481ad1c6e79a70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 78bf7fce98f2a77e05a3fbbd31afcf3f20d97a9f
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986843"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985132"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
 
@@ -102,7 +102,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
 
-您可能也想要移除下列包含各種 Xamarin 檔案和資料夾的目錄。 不過，這麼做之前，您應該知道此目錄包含 Android 簽署金鑰。 如需詳細資訊，請參閱**[解除安裝 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)** 一節：
+您可能也想要移除下列包含各種 Xamarin 檔案和資料夾的目錄。 不過，這麼做之前，您應該知道此目錄包含 Android 簽署金鑰。 如需詳細資訊，請參閱 **[解除安裝 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)** 一節：
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin
@@ -221,6 +221,6 @@ rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [解除安裝 Visual Studio (Windows 上)](/visualstudio/install/uninstall-visual-studio)

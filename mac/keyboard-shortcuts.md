@@ -2,19 +2,19 @@
 title: 預設鍵盤快速鍵
 description: 此文章列出 Visual Studio for Mac 中的預設鍵盤快速鍵
 ms.date: 03/14/2019
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: af7fa16100f31a6c4042e40bf8f270be9a78d2ec
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71273324"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984557"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的預設鍵盤快速鍵
 
-如需鍵盤協助工具的相關資訊，請參閱[如何：使用鍵盤巡覽](~/accessibility-keyboard.md)。
+如需鍵盤協助工具的相關資訊，請參閱[如何：使用鍵盤導覽](~/accessibility-keyboard.md)。
 
 只需使用適當的鍵盤快速鍵，您就可以在 Visual Studio for Mac 中存取各種命令。 本檔列出**Visual Studio for Mac**金鑰系結配置的預設快捷方式。 如需如何變更按鍵繫結關係配置的相關詳細資訊，請參閱[自訂 IDE](~/customizing-the-ide.md#key-bindings)。 您也可以使用 [Visual Studio for Mac] > [喜好設定] 功能表項目，然後在 [喜好設定] 視窗中選擇 [環境] > [按鍵繫結關係] 以自訂命令的捷徑。
 
@@ -39,12 +39,12 @@ ms.locfileid: "71273324"
 |啟用或停用中斷點|**⌥⌘/** , **⌘F9**|
 |暫停|**⌥⌘P**, **⌥⌘L5**|
 |移除所有中斷點|**⇧⌘F9**|
-|執行至游標處|**⌘F10**|
+|執行至資料指標處|**⌘F10**|
 |設定 Next 陳述式|**⇧⌘F10**|
 |顯示下一個陳述式|**⌥\***|
 |逐步執行|**⇧⌘I**, **⌘F11**|
-|跳離函式|**⇧⌘U**, **⇧⌘F11**|
-|不進入函式|**⇧⌘O**, **F10**|
+|跳出|**⇧⌘U**, **⇧⌘F11**|
+|逐程序|**⇧⌘O**, **F10**|
 |切換中斷點|**⌘\\** , **F9**|
 |檢視中斷點|**⌥⌘B**|
 
@@ -66,7 +66,7 @@ ms.locfileid: "71273324"
 |縮排選取範圍|**⌘]**|
 |貼上|**⌘V**|
 |偏好設定|**⌘,**|
-|取消復原|**⇧⌘Z**|
+|重做|**⇧⌘Z**|
 |重新命名|**⌘R**, **F2**|
 |全選|**⌘A**|
 |顯示程式碼產生|**⌘I**|
@@ -83,13 +83,13 @@ ms.locfileid: "71273324"
 |命令|鍵盤快速鍵|
 |-|-|
 |F# 互動|**⌃⌥C**|
-|F# 互動|**⌃⌥F**|
+|F# Interactive|**⌃⌥F**|
 |重新啟動 F# 互動|**⌃⌥R**|
 |將行傳送至 F# 互動|**⌃⌥L**|
 |傳送參考到 F# 互動|**⌃⌥P**|
 |將選取範圍傳送至 F# 互動|**⌃⏎**|
 
-## <a name="file"></a>檔案
+## <a name="file"></a>File
 
 |命令|鍵盤快速鍵|
 |-|-|
@@ -99,8 +99,8 @@ ms.locfileid: "71273324"
 |新增檔案|**⌘N**|
 |新增方案|**⇧⌘N**|
 |開啟|**⌘O**|
-|的|**⌘P**|
-|結束|**⌘Q**|
+|Print|**⌘P**|
+|Quit|**⌘Q**|
 |還原|**⌘U**|
 |儲存|**⌘S**|
 |全部儲存|**⇧⌘S**|
@@ -127,13 +127,13 @@ ms.locfileid: "71273324"
 |組建|**⌘K**, **⇧F6**|
 |全部建置|**⌘B**, **F6**|
 |清除|**⇧⌘K**|
-|重建|**⌃⌘K**|
+|Rebuild|**⌃⌘K**|
 |全部重建|**⌃⌘B**|
 |開始偵錯|**⌘⏎**, **F5**|
 |啟動但不偵錯|**⌥⌘⏎**, **⌃F5**|
-|停止|**⇧⌘⏎**, **⇧F5**|
+|結束|**⇧⌘⏎**, **⇧F5**|
 
-## <a name="refactoring"></a>重構
+## <a name="refactoring"></a>Refactoring
 
 |命令|鍵盤快速鍵|
 |-|-|
@@ -156,7 +156,7 @@ ms.locfileid: "71273324"
 |移至類型|**⇧⌘T**|
 |巡覽至|**⌘.**|
 |檔案中取代|**⌥⇧⌘F**|
-|將|**⌥⌘F**|
+|取代|**⌥⌘F**|
 
 ## <a name="text-editor"></a>文字編輯器
 
@@ -190,7 +190,7 @@ ms.locfileid: "71273324"
 |往右一個字元|**⌃F**|
 |前往文件開頭|**⌘↑**|
 |前往行開頭|**⌘←**, **⌃A**|
-|前往文件結尾|**⌘↓**|
+|移至文件結尾|**⌘↓**|
 |前往行結尾|**⌘→**, **⌃E**|
 |前往成對括弧|**⇧⌘\\**|
 |前往下一行|**⌃N**|
@@ -253,7 +253,7 @@ ms.locfileid: "71273324"
 
 ## <a name="macos-key-symbols-lookup"></a>macOS 按鍵符號查找
 
-|符號|Key|
+|符號|索引鍵|
 |-|-|
 |⌘|**Command** (**cmd**)|
 |⌥|**Option** (**alt**)|
@@ -270,6 +270,6 @@ ms.locfileid: "71273324"
 |␣|**空格鍵**|
 |⇥|**Tab**|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的鍵盤快速鍵 (Windows 上)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

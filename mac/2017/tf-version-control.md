@@ -1,17 +1,17 @@
 ---
 title: Team Foundation Version Control (TFVC)
 description: 使用 Team Foundation 版本控制 (TFVC) 從 Visual Studio for Mac 連線到 Team Foundation Server/Azure DevOps。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: e45f80ab1a5aab4969b01a2fddcfd88d9dc4eff7
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: b7b160d58cead031a0eece2a522501d8c2060bd2
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716128"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985194"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>連線到 Team Foundation 版本控制
 
@@ -194,7 +194,7 @@ TFVC 延伸模組的更新會定期進行。 若要存取更新，請從功能�
 - 取得最新版本
 - 取得特定版本
 - 存回和取出檔案
-- 鎖定和解除鎖定檔案
+- 鎖定和取消鎖定檔案
 - 新增、刪除和重新命名檔案
 - 檢視記錄
 - 比較變更。
@@ -237,7 +237,7 @@ TFVC 延伸模組的更新會定期進行。 若要存取更新，請從功能�
 下列選項可用來向伺服器進行驗證：
 
 - OAuth
-- 基本
+- Basic
 - Ntlm
 
 為了使用基本驗證，您必須遵循下列步驟以在 Azure DevOps Services 中啟用**替代驗證認證**：

@@ -2,15 +2,15 @@
 title: Azure
 description: 從 Visual Studio for Mac 內將 Azure 資料儲存體、驗證及推播通知新增至行動應用程式
 ms.assetid: 3E5ADF4A-6655-42AD-BFC1-CE5E437C457B
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
-ms.openlocfilehash: 1fd646c1d0ac444d1c4675715562efe73b7d6554
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 45e00869e8393b0b074e3eefc403b95c5498377e
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932916"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983234"
 ---
 # <a name="azure"></a>Azure
 

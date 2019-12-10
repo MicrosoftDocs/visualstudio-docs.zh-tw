@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 243766d78f25491f465a712b37dc5fab16c8a985
-ms.sourcegitcommit: 916bbe1d77c9253424daa86c71c40f5e1ec74400
+ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74945077"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955045"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 增益集的登錄專案
   部署使用 Visual Studio 建立的 VSTO 增益集時，您必須建立一組特定的登錄項目。 這些登錄項目可提供讓 Microsoft Office 應用程式探索及載入 VSTO 增益集的資訊。
@@ -50,7 +50,7 @@ ms.locfileid: "74945077"
  如果您使用 ClickOnce 部署 VSTO 增益集，VSTO 增益集只能註冊供目前使用者使用， 這是因為 ClickOnce 僅支援在**HKEY_CURRENT_USER**下建立索引鍵。 如果希望讓電腦的所有使用者都能使用註冊的 VSTO 增益集，則必須使用 Windows Installer 部署 VSTO 增益集。 如需這些部署類型的詳細資訊，請參閱[使用 ClickOnce 部署 office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)和[使用 Windows Installer 部署 office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。
 
 ## <a name="registry-entries"></a>登錄項目
- 必要的 VSTO 增益集登錄專案位於下列登錄機碼底下，其中*根* **HKEY_CURRENT_USER**或**HKEY_LOCAL_MACHINE**取決於安裝是每個使用者或每部電腦。
+ 必要的 VSTO 增益集登錄專案位於下列登錄機碼底下，其中*根* **HKEY_CURRENT_USER**或**HKEY_LOCAL_MACHINE**取決於目前使用者或所有使用者的安裝。
 
 |Office 應用程式|組態路徑|
 |------------------|------------------|
@@ -58,7 +58,9 @@ ms.locfileid: "74945077"
 |所有其他|*根*\Software\Microsoft\Office\\*Office 應用程式名稱*\ADDINS\\*增益集識別碼*|
 
 > [!NOTE]
-> 如果安裝程式是以64位 Windows 為目標，則應該包含兩個登錄專案，一個在*根*\Software\Microsoft 底下，另一個在*根*\Software 下，\\**WOW6432Node**\Microsoft hive。  這是因為使用者可以在電腦上使用32位或64位版本的 Office。
+> 如果安裝程式是以64位 Windows 上的所有使用者為目標，建議包含兩個登錄專案，一個在 HKEY_LOCAL_MACHINE \Software\Microsoft 底下，另一個位於 HKEY_LOCAL_MACHINE \Software\\**WOW6432Node**\Microsoft hive 底下。 這是因為使用者可以在電腦上使用32位或64位版本的 Office。
+>
+>如果安裝程式是以目前的使用者為目標，則不需要將它安裝到 WOW6432Node，因為 HKEY_CURRENT_USER 的 \Software 路徑是共用的。
 >
 >如需詳細資訊，請參閱[Registry 中的32位和64位應用程式資料](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
 

@@ -1,17 +1,17 @@
 ---
 title: Visual Studio for Mac 教學課程
 description: Visual Studio for Mac 提供整合式的開發環境，以在 macOS 上建置 .NET 應用程式，包括 ASP.NET Core 網站，和適用於 iOS、Android、Mac 和 Xamarin.Forms 的 Xamarin 專案。
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 60691ef47b3a3dfdb2fa1148507697a27a99ef7b
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 6d2f0f891f704d3762bc0967da466960ee5170ee
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213726"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984712"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac 導覽
 
@@ -36,13 +36,13 @@ Visual Studio for Mac 支援下列幾種開發作業：
 
 Visual Studio for Mac 分成數個區段，以便管理應用程式檔案和設定、建立應用程式程式碼及偵錯。
 
-## <a name="getting-started"></a>使用者入門
+## <a name="getting-started"></a>入門
 
 當您啟動 Visual Studio 2019 for Mac 時，新的使用者會看到登入視窗。 使用您的 Microsoft 帳戶登入以啟動付費授權 (如果有的話) 或 Azure 訂用帳戶的連結。 您可以稍後再按 [ **Visual Studio > 登入**] 功能表項目，稍後再**進行**登入：
 
 ![登入 Microsoft 帳戶](media/ide-tour-2019-start-signin.png)
 
-接著，您可以選擇自訂 IDE，方法是選取您慣用的鍵盤快速鍵：Visual Studio for Mac、Visual Studio、Visual Studio Code 或 Xcode：
+接著，您可以選擇您偏好的鍵盤快速鍵來自訂 IDE： Visual Studio for Mac、Visual Studio、Visual Studio Code 或 Xcode：
 
 ![選取您最愛的鍵盤快速鍵](media/ide-tour-2019-keyboard-shortcut.png)
 
@@ -108,7 +108,7 @@ NuGet 是適用於 .NET 開發最受歡迎的套件管理員。 使用 Visual St
 * 已更新 IntelliSense UI
 * 改良的尋找/取代
 * 程式碼片段支援 
-* 格式選取
+* 格式選取項目
 * 內嵌燈泡
 
 如需在 Visual Studio for Mac 中使用來源編輯器的詳細資訊，請參閱[原始檔編輯器](/visualstudio/mac/source-editor)檔。
@@ -117,9 +117,9 @@ NuGet 是適用於 .NET 開發最受歡迎的套件管理員。 使用 Visual St
 
 ![釘選索引標籤](media/ide-tour-tabpin.png)
 
-## <a name="refactoring"></a>重構
+## <a name="refactoring"></a>Refactoring
 
-Visual Studio for Mac 提供兩種有用的方式來重構程式碼：內容動作和來源分析。 您可以在[重構](/visualstudio/mac/refactoring)一文中閱讀有關它們的深入資訊。
+Visual Studio for Mac 提供兩種有用的方式來重構程式碼：內容動作和原始檔分析。 您可以在[重構](/visualstudio/mac/refactoring)一文中閱讀有關它們的深入資訊。
 
 ## <a name="debugging"></a>偵錯
 
@@ -150,6 +150,6 @@ Visual Studio for Mac 與 Git 和子版本原始檔控制系統整合。 進行�
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio IDE (Windows 上)](/visualstudio/ide/visual-studio-ide)

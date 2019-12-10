@@ -1,16 +1,16 @@
 ---
 title: 自訂組建系統
 description: 本文簡要介紹 Visual Studio for Mac MSBuild 組建系統
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 0c2a4590b15faa2573ccab3ff51ff5cd54e177ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932827"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983443"
 ---
 # <a name="customizing-the-build-system"></a>自訂組建系統
 
@@ -78,7 +78,7 @@ MSBuild 中有兩種基本資料類型：*項目*和*屬性*，下列各節會�
 
 可以使用 `$()` 語法從運算式參考屬性。 例如，`$(Foo)` 會評估為 `Foo` 屬性的值。 如果尚未設定屬性，它會評估為空字串，而且不會產生任何錯誤。
 
-#### <a name="items"></a>項目
+#### <a name="items"></a>Items
 
 項目提供一種以清單或集合輸入組建系統的處理方法，通常代表檔案。 每個項目都包含項目「類型」、項目「規格」和選擇性的任意「中繼資料」。 請注意，MSBuild 不會在個別項目上運作，而是對指定類型的所有項目 (稱為項目「集」) 執行
 

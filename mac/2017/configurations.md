@@ -1,16 +1,16 @@
 ---
 title: 了解組建組態
 description: 本文描述 Visual Studio for Mac 中的各種組建組態
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 9902b62b7d62ae2490bc8c32848ffea657f0963d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824410"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983590"
 ---
 # <a name="understanding-build-configurations"></a>了解組建組態
 
@@ -22,7 +22,7 @@ ms.locfileid: "67824410"
 
 ## <a name="solution-configurations"></a>方案組態
 
-類似於專案組態，方案組態是用來建立整個專案的自訂組態。 透過使用 [設定對應]  索引標籤下的 [組建] > [設定]  項目，您可以為每個方案項目指派目標設定，如下圖所示：
+類似於專案組態，方案組態是用來建立整個專案的自訂組態。 透過使用 [設定對應] 索引標籤下的 [組建] > [設定] 項目，您可以為每個方案項目指派目標設定，如下圖所示：
 
 ![組態對應選項](media/projects-and-solutions-image3.png)
 
@@ -32,11 +32,11 @@ ms.locfileid: "67824410"
 
 在舊版的 Xamarin Studio 中，您可以選取此選項將專案設定為**啟始專案**，這是使用全域執行/偵錯命令時所執行/偵錯的專案。 這在專案板中是以粗體字表示專案名稱。
 
-在 Visual Studio for Mac 中，您可以設定「回合組態」  ，而不是設定啟始專案。 回合組態顯示在組建組態選取器旁邊的工具列下拉式清單中，如下所示：
+在 Visual Studio for Mac 中，您可以設定「回合組態」，而不是設定啟始專案。 回合組態顯示在組建組態選取器旁邊的工具列下拉式清單中，如下所示：
 
 ![回合組態下拉式清單](media/projects-and-solutions-image8.png)
 
-回合組態是一組執行選項，具有一個名稱和數個基於不同目的定義在專案中的組態。 回合組態會在專案層級定義，並且會針對每個可執行專案自動建立一個預設組態，但是您可以新增所需數目的組態。 特定專案類型會自動產生其他的回合組態。 例如，watchOS 專案可能會產生「概覽和通知組態」  。
+回合組態是一組執行選項，具有一個名稱和數個基於不同目的定義在專案中的組態。 回合組態會在專案層級定義，並且會針對每個可執行專案自動建立一個預設組態，但是您可以新增所需數目的組態。 特定專案類型會自動產生其他的回合組態。 例如，watchOS 專案可能會產生「概覽和通知組態」。
 
 組態可以與其他開發人員共用 (在此情況下，組態會儲存在 .csproj 檔案)，或保留在本機中 (在此情況下，它們會儲存在 .user 檔案)。
 
@@ -67,6 +67,6 @@ Android 專案的回合組態可讓您指定執行專案或對專案進行偵錯
   * 模式 (概覽、通知)
   * 通知承載
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [了解組建組態 (Windows 上的 Visual Studio)](/visualstudio/ide/understanding-build-configurations)

@@ -1,17 +1,17 @@
 ---
 title: 解除安裝 Visual Studio for Mac
 description: 解除安裝 Visual Studio for Mac 和相關工具的指示。
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 7d86e5abbb25d8c348f550d28618aae614725471
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 58c4395e1569f6ca444a8b1fdcd2b8906d3fdb75
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211517"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984075"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
 
@@ -245,6 +245,6 @@ Visual Studio 2019 for Mac Preview 已啟動為個別的預覽，可讓您繼續
 rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [解除安裝 Visual Studio (Windows 上)](/visualstudio/install/uninstall-visual-studio)

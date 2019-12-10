@@ -1,16 +1,16 @@
 ---
 title: 管理專案中的參考
 description: 本文描述如何在 Visual Studio for Mac 中管理專案參考
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: 54e07d3c170859405ef584b884547dad335788f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f9925954083c7fe64ad29c7cfed618a84d7a6386
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997204"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984857"
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 
@@ -43,7 +43,7 @@ NuGet 是適用於 .NET 開發最受歡迎的套件管理員。 Visual Studio fo
 
 如需使用 NuGet 套件的詳細資訊，請參閱[在專案中包含 NuGet 套件](nuget-walkthrough.md)逐步解說。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [管理參考 (Windows 上的 Visual Studio)](/visualstudio/ide/managing-references-in-a-project)
 - [使用 NuGet 和延伸模組 SDK 兩種方式新增參考 (Windows 上的 Visual Studio)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)

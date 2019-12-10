@@ -1,16 +1,16 @@
 ---
 title: 編輯器佈景主題
 description: 本文描述如何編輯編輯器的佈景主題，或新增您自己的 Visual Studio for Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.openlocfilehash: 0b9b9ba5697b68aab87133d05a8f8112decb3b09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6aa4868f5e9c5fbaa4fb58258c70ce672edf2e30
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998399"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984826"
 ---
 # <a name="editor-themes"></a>編輯器佈景主題
 

@@ -2,21 +2,21 @@
 title: 搭配 Visual Studio for Mac 使用 VoiceOver
 description: 搭配 Visual Studio for Mac 使用 macOS VoiceOver 導覽
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 590C325D-AAD0-4889-B1DB-A1090BBFBE89
-ms.openlocfilehash: 0645d0f00445c70d8d6b768063b3e9be219a0a83
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: 8f5cfc4c05ed3911370782185475b23112207c62
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71274405"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985074"
 ---
 # <a name="using-voiceover-with-visual-studio-for-mac"></a>搭配 Visual Studio for Mac 使用 VoiceOver
 
 需要螢幕閱讀程式的使用者將受益于 macOS VoiceOver。 Visual Studio for Mac 可以使用一般 VoiceOver 命令來存取。
 
-## <a name="how-to-enable-and-use-voiceover"></a>作法：啟用和使用 VoiceOver
+## <a name="how-to-enable-and-use-voiceover"></a>如何：啟用及使用 VoiceOver
 
 若要啟用或停用 VoiceOver，請按 **&#8984;F5**
 
@@ -26,10 +26,10 @@ VoiceOver 命令會在本指南中以**vo_金鑰_** 的形式出現，而**Vo**�
 
 以下是 Visual Studio for Mac 的一些常見 VoiceOver 命令清單：
 
-|功能|描述|快速鍵|
+|特殊功能|描述|快速鍵|
 |-------|-----------|--------|
-|定位|流覽 UI 的所有元素|**VO →**， **VO ←**|
-|定位|逐步執行或跳出 UI 元素|**VO ⇧↓**， **VO ⇧↑**|
+|瀏覽|流覽 UI 的所有元素|**VO →**， **VO ←**|
+|瀏覽|逐步執行或跳出 UI 元素|**VO ⇧↓**， **VO ⇧↑**|
 |自己|選取焦點中的控制項或與其互動|**VO ␣**|
 |自己|與 Visual Studio for Mac 功能表列互動|**VO M**|
 
