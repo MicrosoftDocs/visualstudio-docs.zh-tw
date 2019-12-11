@@ -46,6 +46,8 @@
           href: using-breakpoints.md
         - name: 針對中斷點進行疑難排解
           href: troubleshooting-breakpoints.md
+        - name: '針對 C# 資料中斷點進行疑難排解'
+          href: troubleshoot-data-breakpoint-errors.md
     - name: 資料檢查
       items:
         - name: 在偵錯工具視窗中檢查資料
