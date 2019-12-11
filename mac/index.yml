@@ -5,16 +5,16 @@ brand: visual-studio
 metadata:
   title: Visual Studio for Mac 文件 | Microsoft Docs
   description: 本文介紹 Visual Studio for Mac 的功能。
-  author: asb3993
-  ms.author: amburns
+  author: heiligerdankgesang
+  ms.author: dominicn
   ms.date: 09/18/2019
   ms.topic: hub-page
-  ms.openlocfilehash: a5fbbf15cc9d753ef5c47a584ac25a9ca7ef7ca8
-  ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+  ms.openlocfilehash: 2ba2e1348a3abf5c914e1c686e5fd00ff186d9c0
+  ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74829953"
+  ms.lasthandoff: 12/10/2019
+  ms.locfileid: "74985042"
 highlightedContent:
   items:
   - title: 安裝 Visual Studio for Mac
