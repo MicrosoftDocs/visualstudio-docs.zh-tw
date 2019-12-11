@@ -3,8 +3,8 @@ documentType: LandingData
 title: Visual Studio for Mac 文件
 metadata:
   description: 本文介紹 Visual Studio 2017 for Mac 的功能。
-  author: conceptdev
-  ms.author: crdun
+  author: heiligerdankgesang
+  ms.author: dominicn
   ms.date: 02/06/2019
   ms.topic: landing-page
   ms.prod: visual-studio-mac
