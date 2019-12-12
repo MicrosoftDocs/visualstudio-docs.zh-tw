@@ -36,7 +36,7 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
 > * 在 Azure 上建立 Linux App Service
 > * 部署至 Linux
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 * 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 
@@ -130,7 +130,7 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
     > [!WARNING]
     > App Service 部署流程會使用一組啟發學習法，來決定要嘗試和執行哪一種類型的應用程式。 如果在已部署的內容中偵測到 .*sln* 檔案，則會假設正在部署 MSBuild 型專案。 上述新增的設定會覆寫此邏輯，並明確指定這是 Node.js 應用程式。 若沒有此設定，當 .*sln* 檔案是部署至 App Service 之存放庫的一部分時，Node.js 應用程式將無法部署。
 
-7. Under **Application settings**, add another setting with a name of `WEBSITE_NODE_DEFAULT_VERSION` and a value of `8.9.0`.
+7. 在 [**應用程式設定**] 下，新增另一個名稱為 `WEBSITE_NODE_DEFAULT_VERSION` 且值為 `8.9.0`的設定。
 
 8. 完成部署後，請開啟 App Service，然後選取 [部署選項]。
 
@@ -180,7 +180,7 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
 * 在移至生產環境之前，部署至預備網站以進行進一步測試是最佳做法。 如需如何設定此動作的詳細資料，請參閱[建立預備環境](/azure/app-service/web-sites-staged-publishing)主題。
 * 如需更多常見問題，請參閱 [Linux 上的 App Service 常見問題集](/azure/app-service/containers/app-service-linux-faq)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 在本教學課程中，您已了解如何建立 Linux App Service，以及將 Node.js 應用程式部署至服務。 您可能想要深入了解 Linux App Service。
 

@@ -6,14 +6,15 @@ ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35f506aadfcceebcbcf0dd4f6ec5b6dc33107
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cd9748d88a9398792274c386a42bdaa3ce48ba70
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552859"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777786"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>從命令列建立基本的分析報表
 本文描述基本的 VSPerfReport 命令，它們會從 .*vsp* 或 .*vsps* 分析資料檔案產生逗號分隔值 (.*csv*) 的報表。 如需所有報表選項的說明，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。
@@ -23,7 +24,7 @@ ms.locfileid: "62552859"
 
  **VSPerfReport** `VSPFile` **/Summary:All** 產生可供 .*vsp* 或 .*vsps* 檔案使用的所有報表。
 
- **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...] 產生指定的報表類型。
+ **VSPerfReport** `VSPFile` **/Summary:** `ReportType`[,`ReportType`...] 產生指定的報表類型。
 
  **VSPerfReport** `VSPFile` **/CallTrace** 產生列出每個資料收集事件的報表。 僅檢測。
 
