@@ -9,14 +9,15 @@ ms.assetid: 81e88162-b88a-40b6-8b85-a232c8096a47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d13a3db996537005c0d4ec67b85c185ac2841cc0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19412d184377637c29f34b2fe3ffd033f176b97c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447247"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779294"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Windows 事件追蹤 (ETW) 報表
 Windows 事件追蹤 (ETW) 報表會列出 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具之效能工作階段中所記錄的 ETW 事件。 ETW 資料會收集在二進位 (.*etl*) 檔案中。
@@ -30,7 +31,7 @@ Windows 事件追蹤 (ETW) 報表會列出 [!INCLUDE[vsprvs](../code-quality/inc
 
 - 您可以使用 **VSReport/Summary:ETW** 命令來產生 ETW 報表。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**時間戳記**|識別事件發生的時間。|
 |**處理序 ID**|識別已產生事件的處理序。|
