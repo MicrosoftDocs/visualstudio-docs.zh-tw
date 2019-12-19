@@ -1,5 +1,5 @@
 ---
-title: DA0039：極高比率的鎖定爭用 | Microsoft Docs
+title: DA0039：非常高比率的鎖定爭用 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,18 +20,18 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300074"
 ---
-# <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039：鎖定競爭的比率極高
+# <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039：鎖定爭用的比率非常高
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新檔，請參閱 [DA0039：極高比率的鎖定爭用](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions)。  
+如需 Visual Studio 的最新檔，請參閱[DA0039：非常高的鎖定爭用率](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions)。  
   
 |||  
 |-|-|  
-|規則 ID|DA0039|  
+|規則識別碼|DA0039|  
 |分類|.NET Framework 使用方式|  
-|分析方法|取樣<br /><br /> 測試設備<br /><br /> .NET 記憶體|  
+|分析方法|取樣<br /><br /> 檢測設備<br /><br /> .NET 記憶體|  
 |訊息|發生非常高比率的 .NET 鎖定爭用。 請執行並行分析來調查此鎖定爭用的原因。|  
-|規則型別|警告|  
+|規則類型|警告|  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 25 個樣本才能觸發此規則。  
   
@@ -50,9 +50,9 @@ ms.locfileid: "74300074"
  在分析執行期間所做的測量指出有非常大量的鎖定爭用時，就會引發這個規則。 鎖定爭用會延遲等待鎖定的執行緒執行。 即使是在較低階的硬體上執行的單元測試或負載測試中相當少量的鎖定爭用也還是應該進行調查。  
   
 > [!NOTE]
-> 當分析資料中報告的鎖定爭用比率很高但不是極高時，會引發 [DA0038：會引發高比率的鎖定爭用](../profiling/da0038-high-rate-of-lock-contentions.md) 資訊訊息，而不是此警告訊息。  
+> 當分析資料中報告的鎖定爭用比率很高但不是極高時，會引發 [DA0038︰高比率的鎖定爭用](../profiling/da0038-high-rate-of-lock-contentions.md)資訊訊息而不是此警告訊息。  
   
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
  按兩下訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。  尋找 **.NET CLR LocksAndThreads\Contention Rate / sec** 欄。 判斷是否有特定的程式執行階段，當中的鎖定爭用比其他階段更繁重。  
   
- 只有當您不使用並行分析方法時，才會引發此規則。 並行分析方法是用來診斷應用程式中與鎖定爭用相關效能問題的最佳工具。 收集並行分析資料可了解應用程式的鎖定行為。 這包括了解哪些鎖定嚴重爭用、執行緒執行時間因為等候爭用的鎖定而延遲多久，以及哪些特定的程式碼有關係。 並行設定檔會收集所有鎖定爭用的資料，包括原生 Windows 功能的鎖定行為、.NET Framework 類別，以及您的應用程式所參考的任何其他協力廠商程式庫。 如需從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 進行並行分析的相關資訊，請參閱[收集執行緒和處理序並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)。 如需從命令列進行並行分析的相關資訊連結，請參閱[從命令列使用分析方法](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)的＜使用並行方法收集資源爭用和執行緒活動資料＞一節。
+ 只有當您不使用並行分析方法時，才會引發此規則。 並行分析方法是用來診斷應用程式中與鎖定爭用相關效能問題的最佳工具。 收集並行分析資料可了解應用程式的鎖定行為。 這包括了解哪些鎖定嚴重爭用、執行緒執行時間因為等候爭用的鎖定而延遲多久，以及哪些特定的程式碼有關係。 並行設定檔會收集所有鎖定爭用的資料，包括原生 Windows 功能的鎖定行為、.NET Framework 類別，以及您的應用程式所參考的任何其他協力廠商程式庫。 如需從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 進行並行分析的相關資訊，請參閱[收集執行緒和處理序並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)。 如需從命令列進行並行分析的相關資訊連結，請參閱 **[從命令列使用分析方法](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)** 的＜使用並行方法收集資源爭用和執行緒活動資料＞一節。
