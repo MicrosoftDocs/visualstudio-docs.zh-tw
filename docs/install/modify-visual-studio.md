@@ -3,7 +3,7 @@ title: 修改 Visual Studio 2017
 titleSuffix: ''
 description: 了解如何逐步修改 Visual Studio。
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 12/03/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - changing Visual Studio
 - customize Visual Studio
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 23e44479bedfdb44b2375baae9f342f47b38700b
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: 554b7a01ee4a7a8834c86c8a2c7e15b9cf331cf5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810083"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565834"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>透過新增或移除工作負載和元件來修改 Visual Studio
 
@@ -35,7 +35,7 @@ ms.locfileid: "74810083"
 
 ::: moniker range="vs-2017"
 
-我們不僅讓您可以更輕鬆地將 Visual Studio 個人化以配合您要完成的工作，也讓您可以更輕鬆地自訂 Visual Studio。 若要這樣做，請啟動新的 Visual Studio 安裝程式並進行所需的變更。
+我們不僅讓您可以更輕鬆地將 Visual Studio 個人化以配合您要完成的工作，也讓您可以更輕鬆地自訂 Visual Studio。 若要這麼做，請開啟新的 Visual Studio 安裝程式，並進行所需的變更。
 
 ::: moniker-end
 
@@ -44,24 +44,12 @@ ms.locfileid: "74810083"
 >[!IMPORTANT]
 >若要安裝、更新或修改 Visual Studio，您必須以具有系統管理權限的帳戶登入。 如需詳細資訊，請參閱[使用者權限和 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
 
-## <a name="modify-workloads"></a>修改工作負載
-
-::: moniker range="vs-2017"
-
- [工作負載](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/)包含您使用的程式設計語言或平台所需功能。 您可以使用工作負載來修改 Visual Studio，以便在需要時支援您要執行的工作。
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
- 工作負載包含您使用之程式設計語言或平台所需的功能。 您可以使用工作負載來修改 Visual Studio，以便在需要時支援您要執行的工作。
-
-::: moniker-end
-
 >[!NOTE]
-> 下列程序假設您已具備網際網路連線。
+> 下列程式假設您有網際網路連線。
 >
 > 如需如何修改先前所建立 Visual Studio [離線安裝](create-an-offline-installation-of-visual-studio.md)的詳細資訊，請參閱[更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)頁面和[控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)頁面。
+
+## <a name="open-the-visual-studio-installer"></a>開啟 Visual Studio 安裝程式
 
 ::: moniker range="vs-2017"
 
@@ -74,21 +62,14 @@ ms.locfileid: "74810083"
      >[!TIP]
      >在某些電腦上，Visual Studio 安裝程式可能會列在 **"M"** 字母下方，成為 [Microsoft Visual Studio 安裝程式]。<br/><br/> 您也可以在下列位置找到 Visual Studio 安裝程式：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. 按一下或點選以啟動安裝程式，然後選擇 [修改]。
+1. 開啟安裝程式，然後選擇 [**修改**]。
 
      ![啟動或修改 Visual Studio](media/modify-visual-studio.png "修改 Visual Studio 2017")
 
-     如果您有擱置的更新，則 [修改] 按鈕會在不同的位置。 因此，您可以修改而不需要更新 Visual Studio (如果您選擇這麼做)。 按一下 [更多]，然後選擇 [修改]。
-
-     ![更新或修改 Visual Studio](media/modify-or-update-visual-studio.png "更新或修改 Visual Studio 2017")
-
-1. 從 [工作負載] 畫面，選取或取消選取您想要安裝或解除安裝的工作負載。
-
-    ![Visual Studio 2017 安裝程式對話方塊](media/modify-workloads.png "選擇 Visual Studio 2017 中的工作負載")
-
-1. 再次選擇 [修改]。
-
-1. 新的工作負載和元件安裝之後，請選擇 [啟動]。
+     > [!IMPORTANT]
+     > 如果您有擱置的更新，則 [修改] 按鈕會在不同的位置。 因此，您可以修改而不需要更新 Visual Studio (如果您選擇這麼做)。 按一下 [更多]，然後選擇 [修改]。
+     >
+     > ![更新或修改 Visual Studio](media/modify-or-update-visual-studio.png "更新或修改 Visual Studio 2017")
 
 ::: moniker-end
 
@@ -111,7 +92,40 @@ ms.locfileid: "74810083"
 
      ![更新或修改 Visual Studio](media/vs-2019/vs-installer-modify.png "更新或修改 Visual Studio 2019")
 
-1. 在 [工作負載] 索引標籤中，選取或取消選取您想要安裝或解除安裝的工作負載。
+     > [!IMPORTANT]
+     > 如果您有擱置的更新，則 [修改] 按鈕會在不同的位置。 如此一來，您就可以修改 Visual Studio，而不需要更新它。 選擇 [**更多**]，然後選擇 [**修改**]。
+     >
+     > ![更新或修改 Visual Studio](media/vs-2019/modify-update-visual-studio.png "更新或修改 Visual Studio 2019")
+
+::: moniker-end
+
+## <a name="modify-workloads"></a>修改工作負載
+
+::: moniker range="vs-2017"
+
+ [工作負載](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/)包含您使用的程式設計語言或平台所需功能。 您可以使用工作負載來修改 Visual Studio，以便在需要時支援您要執行的工作。
+
+1. 在 Visual Studio 安裝程式中，選擇 **工作負載** 索引標籤，然後選取或取消選取您想要的工作負載。
+
+    ![Visual Studio 2017 安裝程式對話方塊](media/modify-workloads.png "選擇 Visual Studio 2019 中的工作負載")
+
+1. 選擇接受預設的 [在下載時安裝] 選項還是 [全部下載後安裝] 選項。
+
+    ![Visual Studio 2017 安裝程式選項](media/vs-2019/vs-installer-choose-install-or-download.png "選擇在下載時安裝，或先下載並于稍後安裝")
+
+    如果您想要下載後再安裝，則 [全部下載後安裝] 選項會很方便。
+
+1. 選擇 [修改]。
+
+1. 安裝新的工作負載之後，請從 [Visual Studio 安裝程式] 中選擇 [**啟動**] 以開啟 Visual Studio。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+ 工作負載包含您使用之程式設計語言或平台所需的功能。 您可以使用工作負載來修改 Visual Studio，以便在需要時支援您要執行的工作。
+
+1. 在 [Visual Studio 安裝程式] 中，選擇 [**工作負載**] 索引標籤，然後選取或取消選取您想要的工作負載。
 
     ![Visual Studio 2019 安裝程式對話方塊](media/vs-2019/vs-installer-modify-workloads.png "選擇 Visual Studio 2019 中的工作負載")
 
@@ -123,13 +137,17 @@ ms.locfileid: "74810083"
 
 1. 選擇 [修改]。
 
-1. 安裝新的工作負載和元件後，請選擇 Visual Studio 安裝程式的 [啟動]。
+1. 安裝新的工作負載之後，請從 [Visual Studio 安裝程式] 中選擇 [**啟動**] 以開啟 Visual Studio。
 
 ::: moniker-end
 
 ## <a name="modify-individual-components"></a>修改個別元件
 
-如果您不想要安裝工作負載來自訂 Visual Studio 安裝，請選擇 Visual Studio 安裝程式的 [個別元件] 索引標籤，選取您想要的並遵循提示作業。
+如果您不想要使用工作負載來自訂您的 Visual Studio 安裝，請選擇 Visual Studio 安裝程式中的 [**個別元件**] 索引標籤，選取您要的元件，然後依照提示進行。
+
+## <a name="modify-language-packs"></a>修改語言套件
+
+根據預設，安裝程式會在第一次執行時符合作業系統的語言。 不過，您可以隨時視需要變更語言。 若要這麼做，請選擇 Visual Studio 安裝程式中的 **語言套件** 索引標籤，選取您偏好的語言，然後依照提示進行。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

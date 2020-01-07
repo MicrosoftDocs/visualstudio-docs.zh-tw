@@ -15,19 +15,19 @@ helpviewer_keywords:
 - virtual functions, Properties window
 - Properties window
 ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4701f5ea882ab2fbb75f11bc3cc6d85fc92b4b8e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d1be1d4fa9f1b088547bb21dfb64254209783d7e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655687"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565704"
 ---
-# <a name="properties-window"></a>屬性視窗
+# <a name="properties-window"></a>[屬性] 視窗
 
 使用這個視窗來檢視和變更設計階段屬性，以及位於編輯器和設計工具中的選定物件的事件。 您也可以使用 [屬性] 視窗來編輯和檢視檔案、專案和解決方案屬性。 您可以在 [檢視] 功能表上找到 [屬性] 視窗。 您也可以按 **F4**，或在搜尋方塊中鍵入**屬性**來開啟它。
 
@@ -39,7 +39,7 @@ ms.locfileid: "72655687"
 列出目前選取的物件。 只能看見使用中編輯器或設計工具的物件。 當您選取多個物件時，只會顯示所有選取物件共用的屬性。
 
 已分類\
-依分類列出所選取物件的所有屬性和屬性值。 您可以摺疊分類來縮減可見屬性的數目。 當您展開或摺疊分類時，您會在分類名稱的左邊看到加號 (+) 或減號 (-)。 分類是依字母順序列出。
+依分類列出所選取物件的所有屬性和屬性值。 您可以摺疊分類來縮減可見屬性的數目。 在展開或摺疊類別目錄時，您可以在類別目錄名稱的左邊看到加號 (+) 或減號 (-)。 分類是依字母順序列出。
 
 字母順序\
 依字母順序排序所選物件的所有設計階段屬性和事件。 若要編輯未呈暗灰色的屬性，按一下其右邊的儲存格，並輸入變更。
@@ -72,7 +72,7 @@ ms.locfileid: "72655687"
 > 這個 [屬性] 視窗工具列控制項，只有在 [類別檢視] 是 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 專案內容的使用中視窗時才可使用。
 
 描述窗格\
-顯示屬性類型和屬性的簡短描述。 您可以使用捷徑功能表上使用 [描述] 命令，關閉及開啟屬性的描述。
+顯示屬性類型和屬性的簡短描述。 您可以使用快速鍵功能表上的 [描述] 命令，來關閉和開啟屬性的描述。
 
 > [!NOTE]
 > 這個 [屬性] 視窗工具列控制項，在設計工具裡編輯 XAML 檔案時無法使用。

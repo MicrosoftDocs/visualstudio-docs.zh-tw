@@ -1,5 +1,5 @@
 ---
-title: 索引標籤、所有語言、文字編輯器、選項
+title: 選項、文字編輯器、所有語言、索引標籤
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -36,24 +36,24 @@ helpviewer_keywords:
 - Code Editor, indenting
 - Code Editor, tabs
 ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45cee31df08461731c14e2ac1fdef8456a882800
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0fc169960cf757e4e334d5f77b06ff70b0d6da7c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666363"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594743"
 ---
-# <a name="options-text-editor-all-languages-tabs"></a>索引標籤、所有語言、文字編輯器、選項
+# <a name="options-text-editor-all-languages-tabs"></a>選項、文字編輯器、所有語言、索引標籤
 
 編輯樣式表時，這個對話方塊可讓您變更程式碼編輯器的預設行為。 這些設定也適用於以程式碼編輯器為基礎的其他編輯器，例如 HTML 設計工具的來源檢視。 若要顯示這些選項，請從 [工具] 功能表選取 [選項]。 在 [文字編輯器] 資料夾內，展開 [所有語言] 子資料夾，然後選擇 [定位點]。
 
 > [!CAUTION]
-> 此頁面會設定所有開發語言的預設選項。 請記住，重設此對話方塊中的選項，會將所有語言中的 [定位點] 選項重設為此處所選的選項。 若只要變更單一語言的文字編輯器選項，請展開該語言的子資料夾，然後選取其選項頁面。
+> 此頁面設定所有開發語言的預設選項。 請記住，重設此對話方塊中的選項，會將所有語言中的 [定位點] 選項重設為此處所選的選項。 若只要變更單一語言的文字編輯器選項，請展開該語言的子資料夾，然後選取其選項頁面。
 
 如果在特定程式設計語言的 [定位點] 頁面上選取不同的設定，則針對不同的 [縮排] 選項會顯示「個別文字格式的縮排設定彼此衝突」訊息，並且針對不同的 [定位點] 選項會顯示「個別文字格式的定位點設定彼此衝突」訊息。 例如，如果針對 Visual Basic 選取了 [智慧縮排] 選項，但針對 Visual C++ 選取 [區塊縮排]。
 
@@ -67,13 +67,13 @@ None
 
 選取時，新行會自動縮排。 插入點會放在與前一行相同的起始點。
 
-智慧型
+智慧
 
 選取時，新行的位置會符合程式碼內容，依據其他程式碼格式設定，以及您開發語言的 IntelliSense 慣例。 此選項不適用於所有開發語言。
 
 例如，左大括弧 ( { ) 和右大括弧 ( } ) 之間的行，可能會自動從對齊的大括弧位置縮排一個額外的定位停駐點。
 
-## <a name="tabs"></a>定位點
+## <a name="tabs"></a>索引標籤
 
 定位點大小
 

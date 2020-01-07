@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a92d5a593c67f54b50649a48b8f973bbfbff8958
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: b0551162a00437b01c7357dfdac16462aad8f2fc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694938"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597382"
 ---
 # <a name="property-functions"></a>屬性函式
 
@@ -149,7 +149,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 
 以下是 MSBuild 屬性函式的清單：
 
-|函式簽章|說明|
+|函式簽章|描述|
 |------------------------|-----------------|
 |double Add(double a, double b)|將兩個雙精度浮點數相加。|
 |long Add(long a, long b)|將兩個長整數相加。|
@@ -273,7 +273,7 @@ Windows 64 位元作業系統會維護 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node
 |RegistryView.Registry64|64 位元應用程式登錄檢視。|
 |RegistryView.Default|符合應用程式執行所在之處理序的登錄檢視。|
 
-下列為範例。
+範例如下。
 
  ```fundamental
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
@@ -338,7 +338,7 @@ Output:
 -->
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)
 

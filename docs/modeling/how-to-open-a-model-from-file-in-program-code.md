@@ -2,17 +2,17 @@
 title: 如何：在程式碼中開啟檔案的模型
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d39543a388c112cf13a5841e4fe825717597d5c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fae71f748f1f64480c046ae157e1fbca0dd0bec9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661184"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594613"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程式碼中開啟檔案的模型
 
@@ -33,7 +33,7 @@ ms.locfileid: "72661184"
 > [!NOTE]
 > 目標 framework 不應 **.NET Framework 4 用戶端設定檔**。
 
-## <a name="references"></a>reference
+## <a name="references"></a>參考
 
 將這些參考新增至您的 Visual Studio 應用程式專案：
 
@@ -49,7 +49,7 @@ ms.locfileid: "72661184"
 
 這些是您應該識別的類別：
 
-- *YourDslRootClass* -這是您 `DslDefinition.dsl` 中的根類別名稱。
+- *YourDslRootClass* -這是您 `DslDefinition.dsl`中的根類別名稱。
 
 - *YourDslName* `SerializationHelper`-此類別定義于 DSL 專案的 `SerializationHelper.cs` 中。
 

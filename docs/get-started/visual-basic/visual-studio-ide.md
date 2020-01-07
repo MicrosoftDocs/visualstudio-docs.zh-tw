@@ -4,19 +4,19 @@ ms.date: 11/15/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 554311f7b7af5c104b48f5a4901677595d60ab41
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647832"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596043"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>歡迎使用 Visual Studio IDE | Visual Basic
 
@@ -104,7 +104,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - 搜尋方塊
 
-   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，搜尋方塊提供的結果可開啟 Visual Studio 安裝程式來安裝工作負載或個別元件。
+   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，搜尋方塊提供的結果可開啟 Visual Studio 安裝程式，安裝工作負載或個別元件。
 
    > [!TIP]
    > 按 **Ctrl**+**Q** 是啟動搜尋方塊的捷徑。
@@ -277,7 +277,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker range="vs-2017"
 
-1. 在 Visual Studio 功能表列上，選擇 [檔案] > [新增專案]。
+1. 在 [Visual Studio] 功能表列上 **，選擇 [** 檔案] > [**新增專案**]。
 
    ![功能表列上的 [檔案] > [新增專案]](media/file-new-project-menu.png)
 
@@ -341,7 +341,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker range=">=vs-2019"
 
-1. 在 Visual Studio 功能表列上，選擇 [檔案] > [新增專案]。
+1. 在 [Visual Studio] 功能表列上 **，選擇 [** 檔案] > [**新增專案**]。
 
    ![功能表列上的 [檔案] > [新增專案]](media/vs-2019/file-new-project.png)
 

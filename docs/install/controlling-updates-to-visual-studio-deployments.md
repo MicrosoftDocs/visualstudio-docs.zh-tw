@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d4ce4621fc2fa32f2730c0ce6cdd0618a44386b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2cdf4d4e6fb90b18c8141d1d176629539a0a4f8b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974178"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570579"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>控制網路型 Visual Studio 部署的更新
 
@@ -30,7 +30,7 @@ ms.locfileid: "62974178"
 
 根據預設，即使從網路共用中部署安裝，Visual Studio 仍然會持續在線上尋找更新。 如果有可用的更新，使用者即可安裝它。 從 Web 下載離線配置中找不到的任何已更新內容。
 
-如果您想要直接控制 Visual Studio 如何查看更新，則可以修改它所尋找的位置。 您也可以控制您的使用者要更新的目標版本。 若要這麼做，請遵循下列步驟：
+如果您想要直接控制 Visual Studio 如何查看更新，則可以修改它所尋找的位置。 您也可以控制您的使用者要更新的目標版本。 若要執行此作業，請遵循下列步驟：
 
 1. 建立離線配置：
 
@@ -123,7 +123,7 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [安裝 Visual Studio](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

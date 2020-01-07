@@ -7,17 +7,17 @@ helpviewer_keywords:
 - building multiple projects in parallel
 - msbuild, building projects in parallel
 ms.assetid: c8c9aadc-33ad-4aa1-b07d-b879e9eabda0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48f02e9e2f051bbdb77b0d567d79d8793787cf1c
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 7ee3cace6940b4fe402595cfba7b316a273c1d50
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911274"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593391"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>使用 MSBuild 同時建置多個專案
 您可以使用 MSBuild 透過讓專案平行執行的方式，加快建置多個專案的速度。 若要平行執行組建，您可以使用多核心或多處理器電腦上的下列設定：

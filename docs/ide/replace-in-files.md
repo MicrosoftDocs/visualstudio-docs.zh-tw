@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text searches, replacing text
 - find and replace
 - replace in files
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a30fdbc13222ac23146595af1984b27aeed0f758
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621852"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585622"
 ---
 # <a name="replace-in-files"></a>檔案中取代
 
@@ -51,7 +51,7 @@ ms.locfileid: "72621852"
 
 若要將 [尋找目標] 方塊中的字串執行個體取代為其他字串，請在 [取代為] 方塊中輸入取代字串。 若要刪除 [尋找目標] 方塊中的字串執行個體，請將此欄位保留空白。 開啟清單即可顯示您最近搜尋的 20 筆字串。 如果您想要在取代字串中使用一或多個規則運算式，請選擇相鄰的 [運算式產生器] 按鈕。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。
 
-## <a name="look-in"></a>查詢
+## <a name="look-in"></a>[查詢]
 
 [查詢] 下拉式清單中所選擇的選項，可決定 [檔案中取代] 只會搜尋目前作用中的檔案，還是會搜尋所有儲存在特定資料夾內的檔案。 從清單中選取搜尋範圍、輸入資料夾路徑，或按一下 [瀏覽 (...)] 按鈕，顯示 [選擇搜尋資料夾] 對話方塊，然後選擇要搜尋的資料夾集合。 您也可以直接在 [查詢] 方塊中輸入路徑。
 

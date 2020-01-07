@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d956115da6b129263ee236109e278ac19db63a62
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 51e33d5f9b20230b056c017c9067bb4b2acafce6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747629"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597187"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>從您的程式碼建立相依性圖表
 
@@ -70,7 +70,7 @@ ms.locfileid: "72747629"
 
 4. 使用 [**架構**] 功能表為方案建立新的相依性圖表
 
-5. 選取 Code Map 上的所有節點（使用_Ctrl_  + _A_，或按_Shift_鍵，然後按一下、拖曳和放開，以使用 [線寬] 選取範圍。
+5. 選取 Code Map 上的所有節點（使用_Ctrl_ + _A_，或按_Shift_鍵，然後按一下、拖曳和放開，以使用 [線寬] 選取範圍。
 
 6. 將選取的元素拖放或複製並貼上至新的相依性驗證圖表。
 
@@ -87,7 +87,7 @@ ms.locfileid: "72747629"
 
 |**若要**|**請遵循下列步驟**|
 |-|-|
-|建立單一成品的圖層|<ol><li>將專案從這些來源拖曳至相依性圖表：<br /><br /> <ul><li>**方案總管**<br /><br />         例如，您可以拖曳檔案或專案。</li><li>Code Map<br /><br />         請參閱[對應方案之間](../modeling/map-dependencies-across-your-solutions.md)的相依性，並[使用 code map 來對應用程式進行 debug](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**類別檢視**或**物件瀏覽器**</li></ul><br />     圖層會出現在圖表上，並且連結到成品。</li><li>重新命名圖層以反映相關程式碼或成品的責任。</li></ol> **重要事項：** 將二進位檔案拖曳至相依性圖表並不會自動將其參考加入至模型專案。 您必須手動加入您要驗證模型專案的二進位檔案。 **若要將二進位檔案加入至模型專案** <ol><li>在**方案總管**中，開啟模型專案的快捷方式功能表，然後選擇 [**加入現有專案**]。</li><li>在 [**加入現有專案**] 對話方塊中，流覽至二進位檔案並加以選取，然後選擇 **[確定]** 。     二進位檔案會出現在模型專案中。</li><li>在**方案總管**中，選擇您已加入的二進位檔案，然後按**F4**開啟 [**屬性**] 視窗。</li><li>在每個二進位檔案上，將 [**組建動作**] 屬性設定為 [**驗證**]。</li></ol>|
+|建立單一成品的圖層|<ol><li>將專案從這些來源拖曳至相依性圖表：<br /><br /> <ul><li>**方案總管**<br /><br />         例如，您可以拖曳檔案或專案。</li><li>程式碼對應<br /><br />         請參閱[對應方案之間](../modeling/map-dependencies-across-your-solutions.md)的相依性，並[使用 code map 來對應用程式進行 debug](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**類別檢視**或**物件瀏覽器**</li></ul><br />     圖層會出現在圖表上，並且連結到成品。</li><li>重新命名圖層以反映相關程式碼或成品的責任。</li></ol> **重要事項：** 將二進位檔案拖曳至相依性圖表並不會自動將其參考加入至模型專案。 您必須手動加入您要驗證模型專案的二進位檔案。 **若要將二進位檔案加入至模型專案** <ol><li>在**方案總管**中，開啟模型專案的快捷方式功能表，然後選擇 [**加入現有專案**]。</li><li>在 [**加入現有專案**] 對話方塊中，流覽至二進位檔案並加以選取，然後選擇 **[確定]** 。     二進位檔案會出現在模型專案中。</li><li>在**方案總管**中，選擇您已加入的二進位檔案，然後按**F4**開啟 [**屬性**] 視窗。</li><li>在每個二進位檔案上，將 [**組建動作**] 屬性設定為 [**驗證**]。</li></ol>|
 |為所有選取的成品建立單一圖層|同時將所有成品拖曳至相依性圖表。<br /><br /> 圖層隨即出現在圖表上，並且連結到所有成品。|
 |為每個選取的成品建立圖層|按住**SHIFT**鍵，同時將所有成品拖曳至相依性圖表。 **注意：** 如果您使用**SHIFT**鍵來選取某個範圍的專案，請在選取成品之後釋放該金鑰。 將成品至拖曳圖表時，再次按住該鍵不放。 <br /><br /> 每個成品的圖層隨即出現在圖表上，並且連結到個別成品。|
 |將成品加入至圖層|將成品拖曳至圖層。|

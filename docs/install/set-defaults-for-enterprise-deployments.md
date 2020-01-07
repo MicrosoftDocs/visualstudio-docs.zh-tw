@@ -11,19 +11,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9B7B4608-7A3F-4FF4-BDCE-42D9F7CE6DBA
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f1ddb1f1d39255c14e03d114891145c8f2dece5
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: 305b0398550a64722f6029a3d50082e6397643cb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551183"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594522"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>設定 Visual Studio 企業部署的預設值
 
@@ -50,7 +50,7 @@ ms.locfileid: "69551183"
 
 您可以設定下列登錄值：
 
-| **名稱** | **類型** | **預設值** | **描述** |
+| **Name** | **Type** | **Default** | **描述** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | 儲存套件資訊清單和套件承載 (後者為選擇性) 的目錄。 如需詳細資訊，請參閱[停用或移動套件快取](disable-or-move-the-package-cache.md)頁面。 |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | 保留套件承載，即使已安裝它們。 您可以隨時變更該值。 停用原則將移除您所修復或修改之執行個體的任何已快取套件承載。 如需詳細資訊，請參閱[停用或移動套件快取](disable-or-move-the-package-cache.md)頁面。 |
@@ -63,7 +63,7 @@ ms.locfileid: "69551183"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [安裝 Visual Studio](install-visual-studio.md)
 - [停用或移動套件快取](disable-or-move-the-package-cache.md)

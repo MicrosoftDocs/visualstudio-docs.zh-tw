@@ -2,17 +2,17 @@
 title: 管理測試控制器和測試代理程式
 ms.date: 09/18/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 530a3d7ac205988639ed1346f823d889f56adffb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652919"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584409"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>管理測試控制器和測試代理程式
 
@@ -114,10 +114,10 @@ ms.locfileid: "72652919"
 
 測試代理程式的狀態可以是下列其中一個值：
 
-|狀態|描述|
+|Status|描述|
 |-|-----------------|
 |正在執行測試|執行測試|
-|就緒|可執行測試或收集資料與診斷資訊|
+|Ready|可執行測試或收集資料與診斷資訊|
 |離線|無法執行測試或收集資料與診斷資訊|
 |已中斷連接|測試代理程式未啟動|
 

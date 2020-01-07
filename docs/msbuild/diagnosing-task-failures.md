@@ -9,17 +9,17 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b77ea7ce288ead0af3d6a9879cab2216ffd6247d
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+ms.openlocfilehash: 89dcb8bddf2c92406ad5eff952d1f4050d7f9262
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720795"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593274"
 ---
 # <a name="diagnosing-task-failures"></a>診斷工作失敗
 

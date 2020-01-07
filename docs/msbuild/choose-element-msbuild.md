@@ -14,22 +14,22 @@ helpviewer_keywords:
 - <Choose> Element [MSBuild]
 - Choose Element [MSBuild]
 ms.assetid: 7b8b025a-d944-4f5c-9018-c89fc2ef146d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 316343e355f9cf3070f04660d89f9fbfd15484d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 966e942fbd32841bbfe0a429c8623da09dcbbd0f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954865"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593365"
 ---
 # <a name="choose-element-msbuild"></a>Choose 項目 (MSBuild)
 評估子項目，以選取一組要評估的 `ItemGroup` 項目和/或 `PropertyGroup` 項目。
 
- \<Project> \<Choose> \<When> \<Choose> ...\<Otherwise> \<Choose> ...
+ \<專案 > \<當 \<> 選擇 \< 時，選擇 > > ... \<> 選擇 \<。
 
 ## <a name="syntax"></a>語法
 
@@ -48,18 +48,18 @@ ms.locfileid: "62954865"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|說明|
+|項目|描述|
 |-------------|-----------------|
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|選擇性項目。<br /><br /> 指定只有當所有 `When` 項目的條件評估為 `false` 時，才需評估的程式碼 `PropertyGroup` 和 `ItemGroup` 項目的區塊。 `Choose` 項目中可能有零或一個 `Otherwise` 項目，而且它必須是最後一個項目。|
-|[When](../msbuild/when-element-msbuild.md)|必要項目。<br /><br /> 指定 `Choose` 項目可能要選取的程式碼區塊。 `Choose` 項目中可能有一或多個 `When` 項目。|
+|[When](../msbuild/when-element-msbuild.md)|必要項目。<br /><br /> 指定 `Choose` 元素的可能程式碼區塊以選取。 `Choose` 項目中可能有一或多個 `When` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 說明 |
+| 項目 | 描述 |
 | - | - |
 | [Otherwise](../msbuild/otherwise-element-msbuild.md) | 指定如果所有 `When` 項目的條件評估為 `false`，才需執行的程式碼區塊。 |
 | [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
-| [When](../msbuild/when-element-msbuild.md) | 指定 `Choose` 項目可能要選取的程式碼區塊。 |
+| [When](../msbuild/when-element-msbuild.md) | 指定 `Choose` 元素的可能程式碼區塊以選取。 |
 
 ## <a name="remarks"></a>備註
  `Choose`、`When` 和 `Otherwise` 元素會一起用來提供選取一個程式碼區段的方式，以執行一些可能的替代方案。 如需詳細資訊，請參閱[條件式建構](../msbuild/msbuild-conditional-constructs.md)。
@@ -112,6 +112,6 @@ ms.locfileid: "62954865"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [條件式建構](../msbuild/msbuild-conditional-constructs.md)
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

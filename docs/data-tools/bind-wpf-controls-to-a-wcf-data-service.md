@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: ef13f400ff762818eb97396c51330d755c0203c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924558"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586961"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 
@@ -40,7 +40,7 @@ ms.locfileid: "72924558"
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 您需要下列元件才能完成此逐步解說：
 
@@ -265,7 +265,7 @@ ms.locfileid: "72924558"
 
 1. 在 [**建立**] 功能表上，按一下 [**建立方案**]。 確認方案建置無誤。
 
-2. 按**Ctrl** +**F5**。
+2. 按**Ctrl**+**F5**。
 
      Visual Studio 會啟動 **AdventureWorksService** 專案而不進行偵錯。
 

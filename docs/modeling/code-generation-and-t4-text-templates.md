@@ -10,17 +10,17 @@ helpviewer_keywords:
 - code generation
 - text templates
 - generating code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8d3684ac79ce0dde8641e11a455238d927f2adb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f0eba8b4850ee845414084ef766fce30f9efd7e6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748512"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597200"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>程式碼產生和 T4 文字範本
 
@@ -42,7 +42,7 @@ T4 文字模板有兩種：執行時間和設計階段。
 
 此外，範本也包含程式碼片段。 您可以使用這些片段來重複文字區段、建立條件式區段，以及顯示應用程式的資料。
 
-為產生輸出，應用程式會呼叫範本所產生的函式。 例如:
+為產生輸出，應用程式會呼叫範本所產生的函式。 例如：
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();

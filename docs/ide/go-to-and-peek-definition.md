@@ -8,17 +8,17 @@ helpviewer_keywords:
 - peek definition
 - type definition [Visual Studio]
 - member definition [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d78614966a33421aac707f370f2b18e62e4b3d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ef13b959d4e106b451ea0cfb336835059667ce4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603537"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592070"
 ---
 # <a name="view-type-and-member-definitions"></a>檢視型別與成員的定義
 

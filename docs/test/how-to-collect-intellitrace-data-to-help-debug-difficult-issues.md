@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], difficult issues using IntelliTrace
 - Test Runner, InteliTrace
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c6670f9ff83a16eb793f7e7bd6fb5913a96093c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 826d16fa316340226df042b0d762d923c43d39c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664814"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594769"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>如何：收集 IntelliTrace 資料以協助偵錯困難的問題
 
@@ -106,7 +106,7 @@ IntelliTrace 檔中收集的資料可縮短重現及診斷程式碼錯誤所需�
 12. 如果您要使用 Microsoft Test Manager，請選擇 [儲存]。 如果您要使用 Visual Studio，請選擇 [確定]。 針對測試設定，現在已經設定和儲存 IntelliTrace 設定。
 
     > [!NOTE]
-    > 若要重設此診斷資料配接器的組態，在 Visual Studio 中請選擇 [重設為預設組態]，在 Microsoft Test Manager 中則選擇 [重設為預設值]。
+    > 若要重設此診斷資料配接器的組態，在 Visual Studio 中請選擇 [重設為預設組態] ****，在 Microsoft Test Manager 中則選擇 [重設為預設值]**** 。
 
 ## <a name="see-also"></a>請參閱
 

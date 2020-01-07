@@ -2,17 +2,17 @@
 title: 定義圖案和連接器
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d715f6ac9fe2ac06f0f1f35c9319093d8257dc8d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd95c467f0cfcc997fe419abacb1811e02b468b2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653907"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589665"
 ---
 # <a name="define-shapes-and-connectors"></a>定義圖形和連接器
 

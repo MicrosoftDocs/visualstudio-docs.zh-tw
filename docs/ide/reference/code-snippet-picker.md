@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Code Snippet Picker
 - IntelliSense code snippets, Code Snippet Picker
 - code snippets, Code Snippet Picker
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8be7783d7c68867b181bafa7ec0874fbb231519
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb03da430f43bbfd5c7398c147560a9c823f8811
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654610"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570488"
 ---
 # <a name="code-snippet-picker"></a>程式碼片段選擇器
 
@@ -56,7 +56,7 @@ Visual Studio 程式碼編輯器提供了 [程式碼片段選擇器]，讓您只
 
 ## <a name="see-also"></a>請參閱
 
-- [使用程式碼片段的最佳作法](../../ide/best-practices-for-using-code-snippets.md)
+- [使用程式碼片段的最佳做法](../../ide/best-practices-for-using-code-snippets.md)
 - [Visual Basic IntelliSense 程式碼片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [在程式碼中設定書籤](../../ide/setting-bookmarks-in-code.md)
 - [如何：使用範圍陳述式程式碼片段](../../ide/how-to-use-surround-with-code-snippets.md)

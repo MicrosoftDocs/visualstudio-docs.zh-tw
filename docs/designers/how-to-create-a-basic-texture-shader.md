@@ -3,17 +3,17 @@ title: 如何：建立基本材質著色器
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b4aa042e3ba51621e43ee2f531364135179c02
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac74155b8de4669d959d9b14e9be20ada2ec51d9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635879"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589470"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>如何：建立基本材質著色器
 

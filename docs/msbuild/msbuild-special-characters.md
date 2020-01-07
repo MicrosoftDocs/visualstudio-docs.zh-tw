@@ -7,17 +7,17 @@ helpviewer_keywords:
 - escape
 - MSBuild Escape Characters
 ms.assetid: 545e6a59-1093-4514-935e-78679a46fb3c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf312c1b73dbed58cc261c77a74555d00b0b04ba
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
-ms.translationtype: HT
+ms.openlocfilehash: 5f18339dbbddb09e44e8c5fa53ba517f3d60c025
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195067"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566055"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild 特殊字元
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 保留一些針對特定內容中特殊用法的字元。 如果您想要在保留這些字元的內容中按字面使用這些字元，只需要將其逸出即可。 比方說，星號僅在項目定義的 `Include` 和 `Exclude` 屬性，以及 `CreateItem` 呼叫中具有特殊意義。 如果您想要將這些內容之一的星號顯示為星號，則必須將其逸出。 而在其他內容中，您只要在想要顯示的位置鍵入星號即可。
@@ -33,10 +33,10 @@ ms.locfileid: "67195067"
 |$|%24|參考屬性|
 |@|%40|參考項目清單|
 |'|%27|條件和其他運算式|
-|;|%3B|清單分隔字元|
-|?|%3F|`Include` 和 `Exclude` 屬性中的檔案名稱萬用字元|
+|；|%3B|清單分隔字元|
+|？|%3F|`Include` 和 `Exclude` 屬性中的檔案名稱萬用字元|
 |*|%2A|用於 `Include` 和 `Exclude` 屬性中的檔案名稱萬用字元|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [進階概念](../msbuild/msbuild-advanced-concepts.md)
 - [項目](../msbuild/msbuild-items.md)

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Advanced Settings for Services dialog box
 ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed0ce1eecbd9bcc9508f6fc884220a59eb428df0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652775"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585674"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>服務對話方塊的進階設定
 用戶端應用程式服務簡化了從 Windows Forms 和 Windows Presentation Foundation (WPF) 應用程式對 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登入、角色和設定檔服務的存取。 您可以使用 [專案設計工具] 的 [服務] 頁面來設定用戶端應用程式服務。 如需 [服務] 頁面的詳細資訊，請參閱[專案設計工具、服務頁](../../ide/reference/services-page-project-designer.md)。
@@ -28,7 +28,7 @@ ms.locfileid: "72652775"
 
 ## <a name="task-list"></a>工作清單
 
-- [操作說明：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>UIElement 清單
 
@@ -40,10 +40,10 @@ ms.locfileid: "72652775"
 
 當您呼叫 <xref:System.Web.Security.RolePrincipal.IsInRole%2A> 方法時，角色提供者會存取已快取的角色值或角色服務。 若要以程式設計方式清除快取，並強制執行這個方法以存取遠端服務，請呼叫 <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A> 方法。
 
- **使用自訂連接字串** 指定用戶端服務提供者是否將使用自訂資料存放區來進行本機快取。 根據預設，服務提供者將使用本機檔案系統來進行快取。 選取此選項將自動以預設連接字串填入文字方塊。 您可以讓預設連接字串繼續自動產生及使用 SQL Server Compact Edition 資料庫，也可以指定現有 SQL Server 資料庫的連接字串。 如需詳細資訊，請參閱[如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)。 預設會清除這個選項。
+ **使用自訂連接字串** 指定用戶端服務提供者是否將使用自訂資料存放區來進行本機快取。 根據預設，服務提供者將使用本機檔案系統來進行快取。 選取此選項將自動以預設連接字串填入文字方塊。 您可以讓預設連接字串繼續自動產生及使用 SQL Server Compact Edition 資料庫，也可以指定現有 SQL Server 資料庫的連接字串。 如需詳細資訊，請參閱 [How to: Configure Client Application Services](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)。 預設會清除這個選項。
 
 ## <a name="see-also"></a>請參閱
 
 - [用戶端應用程式服務](/dotnet/framework/common-client-technologies/client-application-services)
-- [專案設計工具、服務頁面](../../ide/reference/services-page-project-designer.md)
-- [操作說明：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [專案設計工具、服務頁](../../ide/reference/services-page-project-designer.md)
+- [如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)

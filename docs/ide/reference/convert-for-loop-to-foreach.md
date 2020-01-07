@@ -2,19 +2,19 @@
 title: 重構程式碼以將 for 迴圈轉換成 foreach 陳述式
 ms.date: 05/10/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d35897bd928166410ffd950534277cfac2c06b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3539bae5bb2174fa4728fb8b277cce4ce9c48eb9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654546"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570241"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>重構以在 for 迴圈與 foreach 陳述式之間轉換
 
@@ -35,11 +35,11 @@ ms.locfileid: "72654546"
 
 將 [for](/dotnet/csharp/language-reference/keywords/for) 迴圈轉換為 [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) 陳述式的理由包括：
 
-- 除了當作用來存取項目的索引之外，您不會在迴圈內使用區域迴圈變數。
+- 除了當作用來存取項目的索引之外，您不會在迴圈內使用本機迴圈變數。
 
 - 您想要簡化程式碼，以及降低初始設定式、條件及迭代器區段中發生邏輯錯誤的可能性。
 
-### <a name="how-to-use-it"></a>如何使用
+### <a name="how-to-use-it"></a>使用方式
 
 1. 將插入號放在 `for` 關鍵字中。
 
@@ -63,11 +63,11 @@ ms.locfileid: "72654546"
 
 將 [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) 陳述式轉換為 [for](/dotnet/csharp/language-reference/keywords/for) 迴圈的理由包括：
 
-- 除了存取項目之外，您想要在迴圈內使用區域迴圈變數來進行其他工作。
+- 除了存取項目之外，您想要在迴圈內使用本機迴圈變數來進行其他工作。
 
-- 您[透過多維度陣列反覆運算](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays)，並想要對陣列元素有更多控制權。
+- 您[透過多維度陣列反覆運算](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays)，並想要陣列元素的更多控制權。
 
-### <a name="how-to-use-it"></a>如何使用
+### <a name="how-to-use-it"></a>使用方式
 
 1. 將插入號放在 `foreach` 或 `For Each` 關鍵字中。
 

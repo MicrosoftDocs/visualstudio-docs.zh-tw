@@ -6,17 +6,17 @@ helpviewer_keywords:
 - best practices, MSBuild
 - MSBuild, best practices
 ms.assetid: 90ef8693-e921-410a-a377-fe4d13f58c48
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ad0bd131251259b375a4300807825205da2c6ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b1aee1a6ae3abc06846523df9470ad75d316a50b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931499"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592083"
 ---
 # <a name="msbuild-best-practices"></a>MSBuild 最佳做法
 我們建議用來撰寫 MSBuild 指令碼的最佳作法如下：
@@ -31,5 +31,5 @@ ms.locfileid: "62931499"
 
 - 當您選取項目時，請避免使用萬用字元， 而要明確地指定檔案。 這樣會比較容易追蹤當您新增或刪除檔案時，可能發生的錯誤。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [進階概念](../msbuild/msbuild-advanced-concepts.md)

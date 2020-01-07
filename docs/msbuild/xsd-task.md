@@ -15,17 +15,17 @@ helpviewer_keywords:
 - XSD task (MSBuild (C++))
 - MSBuild (C++), XSD task
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec51406aec9aec8981e5517480e4cd07bc80ffb1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 31c256e02901d4f7dd7de6f14e9f650626feac25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748019"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565782"
 ---
 # <a name="xsd-task"></a>XSD 工作
 包裝 XML 結構描述定義工具 (*xsd.exe*)，其會從來源產生結構描述或類別檔案。
@@ -62,7 +62,7 @@ ms.locfileid: "72748019"
 
      可以選擇 **CS** (C#，此為預設值)、**VB** (Visual Basic) 或 **JS** (JScript)。 您可以對實作 `System.CodeDom.Compiler.CodeDomProvider Class` 的類別指定完整名稱。
 
-- **Namespace**
+- **命名空間**
 
      選擇性的 **String** 參數。
 
