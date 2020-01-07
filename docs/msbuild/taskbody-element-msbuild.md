@@ -11,20 +11,20 @@ helpviewer_keywords:
 - TaskBody element [MSBuild]
 - <TaskBody> element [MSBuild]
 ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f788df1dd3cad2baddd6d2966b04195af01fe7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ac4e04c1a75fe7afdebc984381e17d7e55913fd4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938957"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594977"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody 元素 (MSBuild)
-包含傳遞至 `UsingTask` `TaskFactory` 的資料。 如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。
+包含傳遞至 `UsingTask` `TaskFactory`的資料。 如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。
 
  \<Project> \<UsingTask> \<TaskBody>
 
@@ -39,19 +39,19 @@ ms.locfileid: "62938957"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
-|`Evaluate`|選擇性的 Boolean 屬性。<br /><br /> 如果為 `true`，當具現化工作時，MSBuild 會評估所有內部元素，並且展開項目和屬性，然後才將資訊傳遞給 `TaskFactory`。|
+|`Evaluate`|選擇性的布林值屬性。<br /><br /> 如果為 `true`，當具現化工作時，MSBuild 會評估所有內部元素，並且展開項目和屬性，然後才將資訊傳遞給 `TaskFactory`。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|說明|
+|項目|描述|
 |-------------|-----------------|
-|資料|`TaskBody` 標籤之間的文字會逐字傳送給 `TaskFactory`。|
+|Data|`TaskBody` 標籤之間的文字會逐字傳送給 `TaskFactory`。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 說明 |
+| 項目 | 描述 |
 | - | - |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | 提供一種方式，在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中登錄工作。 專案中可能有零或多個 `UsingTask` 項目。 |
 
@@ -71,7 +71,7 @@ ms.locfileid: "62938957"
 </UsingTask>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

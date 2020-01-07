@@ -2,17 +2,17 @@
 title: 免於套用 Windows 資訊保護
 ms.date: 06/01/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab08ea1f3a4c66c026de781f2d39a0bc9d08af96
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8b4eb454f641b5bef7273464d605fb194f650790
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650873"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588560"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>設定 Visual Studio 作為 WIP 豁免應用程式
 

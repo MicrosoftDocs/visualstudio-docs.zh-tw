@@ -6,17 +6,17 @@ f1_keywords:
 - msvse_settingsdesigner.err.nameblank
 helpviewer_keywords:
 - application settings [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4215987ee0a61935efe27ab927d826cc1c6ff9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654624"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593703"
 ---
 # <a name="manage-application-settings-net"></a>管理應用程式設定 (.NET)
 
@@ -72,7 +72,7 @@ ms.locfileid: "72654624"
 
 例如，您可以將檔案 (例如 *SpecialSettings.settings*) 新增至專案中。 雖然 `SpecialSettings` 類別不會出現在 `My` 命名空間中，但是 [檢視程式碼] 仍可讀取包含 `Partial Class SpecialSettings`的自訂設定檔。
 
-[設定設計工具] 首先會搜尋專案系統所建立的 *Settings.settings* 檔案，也就是 [專案設計工具]在 [設定] 索引標籤中所顯示的預設檔案。[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案的 *Settings.settings* 位於 *My Project* 資料夾，而 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 專案的這個檔案則位於 *Properties* 資料夾。 然後，[專案設計工具] 會搜尋專案根資料夾中的其他設定檔。 因此，您應該將自訂設定檔放在此。 如果您將 *.settings* 檔案新增至專案中的其他地方，[專案設計工具] 就無法找到該檔案。
+[**設定設計**工具] 會先搜尋專案系統所建立的設定檔案 *。* 這個檔案是 [**設定**] 索引標籤中的 [**專案設計**工具] 所顯示的預設*檔案。 [設定]* 位於 [*我的專案*] 資料夾中，用於 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案和 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 專案的 [*屬性*] 資料夾中。 然後，[專案設計工具] 會搜尋專案根資料夾中的其他設定檔。 因此，您應該將自訂設定檔放在此。 如果您將 *.settings* 檔案新增至專案中的其他地方，[專案設計工具] 就無法找到該檔案。
 
 ## <a name="access-or-change-application-settings-at-run-time-in-visual-basic"></a>在 Visual Basic 中於執行階段存取或變更應用程式設定
 
@@ -102,6 +102,6 @@ Properties.Settings.Default.Save();
 
 如需透過 `Settings` 類別存取應用程式設定的一般資訊，請參閱[應用程式設定概觀 (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview)。 如需逐一查看設定的詳細資訊，請參閱此 [論壇文章](https://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [存取應用程式設定 (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

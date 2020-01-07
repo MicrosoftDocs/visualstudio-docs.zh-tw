@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee858c7c17798f327d323f632d4cb9e8a77b6712
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 5c9136b5047f835ecbf56df71bb226b5f56a6e19
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924533"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586948"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 
@@ -52,10 +52,10 @@ ms.locfileid: "72924533"
 
 | 資料來源 | 產生可將控制項繫結至資料來源的 XAML | 產生可將資料填入資料來源的程式碼 |
 | - | - | - |
-| 資料集 | [是] | [是] |
-| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | [是] | [是] |
-| 服務 | [是] | 否 |
-| Object | [是] | 否 |
+| 資料集 | 是 | 是 |
+| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | 是 | 是 |
+| 服務 | 是 | 否 |
+| 物件 | 是 | 否 |
 
 ### <a name="datasets"></a>資料集
 

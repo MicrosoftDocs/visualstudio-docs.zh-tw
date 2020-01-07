@@ -3,17 +3,17 @@ title: XML 文件屬性 (屬性視窗)
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99102248a9456de3a2b3aeba28e54de4299fae40
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604149"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592421"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 文件屬性，屬性視窗
 
@@ -28,7 +28,7 @@ ms.locfileid: "72604149"
 
 **輸入**
 
-與 XSLT 樣式表相關聯的輸入文件。 **啟動 xslt**命令會使用它，例如， **XML**  >  在不進行偵錯工具的情況下**啟動 xslt**。 您可以使用 [流覽] （ **...** ）按鈕來選取檔。
+與 XSLT 樣式表相關聯的輸入文件。 **啟動 xslt**命令會使用它，例如， **XML** > 在不進行偵錯工具的情況下**啟動 xslt**。 您可以使用 [流覽] （ **...** ）按鈕來選取檔。
 
 只有在編輯器中開啟 XSLT 檔案時，才會顯示這個屬性。
 

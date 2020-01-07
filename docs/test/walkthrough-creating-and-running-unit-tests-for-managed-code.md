@@ -8,17 +8,17 @@ helpviewer_keywords:
 - unit tests, generating
 - unit tests, running
 - unit tests, authoring
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-author: jillre
-ms.openlocfilehash: 317b014ae0ef684dfc5f7ff73247d6186846a860
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b1ec115dd960799a1242a0d60bd793d671facb18
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659664"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590705"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：為受控碼建立和執行單元測試
 
@@ -30,11 +30,11 @@ ms.locfileid: "72659664"
 
 1. 開啟 Visual Studio。
 
-2. 在 [檔案] 功能表上，選取 [新增] > [專案]。
+2. **在 [檔案**] 功能表上，選取 [**新增**>**專案**]。
 
    [ **新增專案** ] 對話方塊隨即出現。
 
-3. 在 [Visual C#] > [.NET Core] 類別下方，選擇 [主控台應用程式 (.NET Core)] 專案範本。
+3. 在 [ **Visual C#**  > **.net Core** ] 分類底下，選擇 [**主控台應用程式（.net core）** ] 專案範本。
 
 4. 將專案命名為 **Bank**，然後按一下 [確定]。
 
@@ -175,7 +175,7 @@ ms.locfileid: "72659664"
 
 6. 在 [參考管理員] 對話方塊中，展開 [專案] 並選取 [方案]，然後選取 [Bank] 項目。
 
-7. 選擇 [確定]。
+7. 選擇 [ **確定**]。
 
 ## <a name="create-the-test-class"></a>建立測試類別
 

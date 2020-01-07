@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 826dbefea0a2eb7fa9758631abaf6e5da84d6862
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eb91ffd6ad626a148c3f3ad71c307fc0d0df2c75
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443408"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585895"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>具有 RoslynCodeTaskFactory 的 MSBuild 內嵌工作
 類似於 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md)，RoslynCodeTaskFactory 使用跨平台 Roslyn 編譯器來產生用於作為內嵌工作的記憶體中工作組件。  RoslynCodeTaskFactory 工作以 .NET Standard 為目標，並且可以使用 .NET Framework 和 .NET Core 執行階段，以及 Linux 和 Mac OS 等其他平台。
@@ -54,7 +54,7 @@ ms.locfileid: "63443408"
 
 `DoNothing` 工作的其餘項目是空的，它們的用途是用來說明內嵌工作的順序和結構。 本主題後續內容中將提供更強固的範例。
 
-- `ParameterGroup` 項目是選擇性的。 指定時，它將會宣告工作的參數。 如需輸入和輸出參數的詳細資訊，請參閱本主題稍後的[輸入和輸出參數](#input-and-output-parameters)。
+- `ParameterGroup` 元素為選擇性。 指定時，它將會宣告工作的參數。 如需輸入和輸出參數的詳細資訊，請參閱本主題稍後的[輸入和輸出參數](#input-and-output-parameters)。
 
 - `Task` 項目會描述並包含工作原始程式碼。
 
@@ -67,7 +67,7 @@ ms.locfileid: "63443408"
 > [!NOTE]
 > `Task` 項目包含的項目皆為工作 Factory (在此案例中為程式碼工作 Factory) 特定。
 
-### <a name="code-element"></a>程式碼項目
+### <a name="code-element"></a>程式碼元素
 `Task` 項目內顯示的最後一個子項目是 `Code` 項目。 `Code` 項目會包含或尋找您想要編譯為工作的程式碼。 您放入 `Code` 項目的內容取決於您要撰寫工作的方式。
 
 `Language` 屬性會指定您用來撰寫程式碼的語言。 可接受的值為 `cs` (適用於 C#)、`vb` (適用於 Visual Basic)。
@@ -253,6 +253,6 @@ Log.LogError("Hello, world!");
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作](../msbuild/msbuild-tasks.md)
 - [逐步解說：建立內嵌工作](../msbuild/walkthrough-creating-an-inline-task.md)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86cab4db7c732aeb33d9adf61bfdcb2c4563da57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de209e0a940fe7f7c64644cea37de3762df0d643
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647052"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588547"
 ---
 # <a name="features-of-the-code-editor"></a>程式碼編輯器的功能
 

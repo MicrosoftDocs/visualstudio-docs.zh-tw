@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, walkthroughs
 - load tests, correlating dynamic parameters
 ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 265d1510cd4c8a47478344ba06efcf5e4f43f946
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664981"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589639"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>在 Web 效能測試中修正無法偵測的動態參數
 
@@ -265,4 +265,4 @@ ms.locfileid: "72664981"
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>問：我是否需要設定 Visual Studio 來偵測動態參數？
 
-**答：** 預設 Visual Studio 組態是在您錄製 Web 效能測試時偵測動態參數。 但如果您的 Visual Studio 選項已設定成不偵測動態參數，或是受測的 Web 應用程式會由其他動態參數修改，您仍然可以從 Web 效能測試編輯器中執行動態參數偵測。
+**答：** 預設 Visual Studio 組態是在您錄製 Web 效能測試時偵測動態參數。 但如果您的 Visual Studio 選項已設定成不偵測動態參數，或是受測的 Web 應用程式會由其他動態參數修改，您仍然可以從 Web 效能測試編輯器中執行動態參數偵錯。

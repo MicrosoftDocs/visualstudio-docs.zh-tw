@@ -6,17 +6,17 @@ helpviewer_keywords:
 - class diagrams, copying elements to Office documents
 - Office documents [Visual Studio]
 ms.assetid: c43061ad-d258-46b1-be66-f97a312e86d5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82228d924b2f475d9a9f7e607ccf902f2b4eaa0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2d08b45d913270bdc43c01b0baf92abc3589927
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631851"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592239"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>如何：將類別圖表元素複製到 Microsoft Office 文件
 
