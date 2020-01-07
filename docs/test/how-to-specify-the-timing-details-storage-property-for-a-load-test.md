@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
 ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b8ef3edb592b003a8c42ef954129c3bafd3ffc8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fbd3b2a7d7e56870a994af288f5887f1d86256af
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653334"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591641"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>如何：指定負載測試回合設定的計時詳細資料儲存區屬性
 
@@ -29,7 +29,7 @@ ms.locfileid: "72653334"
   > [!NOTE]
   > 必須選取 [所有個別細節] 選項，才能在負載測試結果中啟用虛擬使用者資料資訊。 如需詳細資訊，請參閱[在詳細資料檢視中分析虛擬使用者活動](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。
 
-- **無：** 不收集任何個別計時詳細資料， 但仍會收集平均值。
+- **無：** 不收集任何個別計時詳細資料。 但仍會收集平均值。
 
 - **僅限統計資料：** 儲存個別計時資料，但只以百分位數資料形式儲存。 這樣可以節省空間資源。
 
