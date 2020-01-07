@@ -3,17 +3,17 @@ title: 什麼是 WPF？
 ms.date: 04/16/2018
 ms.topic: conceptual
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8cc1ea22c5cdbe85bf1d24d1641709c5fe5da7a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: eb58a1a7bee7b07cc9b5434f7fa3e6bd295060d2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187140"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589535"
 ---
 # <a name="get-started-with-wpf"></a>開始使用 WPF
 
@@ -23,7 +23,7 @@ Windows Presentation Foundation (WPF) 是建立桌面用戶端應用程式的 UI
 
 ## <a name="where-should-i-start"></a>我該從哪裡開始？
 
-|主旨|文章|
+|Subject|文章|
 |-|-|
 |我想直接開始|[逐步解說：我的第一個 WPF 傳統型應用程式](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |我想要比較 XAML 設計工具...|[在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../xaml-tools/designing-xaml-in-visual-studio.md)|

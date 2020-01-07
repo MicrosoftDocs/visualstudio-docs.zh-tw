@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild (C++), CL task
 - CL task (MSBuild (C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f7704ebee49af51c5cbeff118d2eed8e08ace30
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747348"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593352"
 ---
 # <a name="cl-task"></a>CL 工作
 包裝 Microsoft C++編譯器工具（ *cl .exe*）。 編譯器會產生可執行檔 ( *.exe*)、動態連結程式庫 ( *.dll*) 檔案或程式碼模組 ( *.netmodule*) 檔案。 如需詳細資訊，請參閱[編譯器選項](/cpp/build/reference/compiler-options)。

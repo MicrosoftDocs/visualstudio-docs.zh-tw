@@ -2,17 +2,17 @@
 title: 在自動程式化 UI 測試中使用 HTML5 控制項
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: e9118dc94019f40289730be78c28777fb86d89db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 13f5da784a43df5146a66ca868bb6add9a702906
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659772"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585583"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 
@@ -77,7 +77,7 @@ ms.locfileid: "72659772"
 > [!NOTE]
 > 如果您使用 -30s 或 +30s 標籤倒轉或向前快轉視訊時，會彙總以搜尋至適當的時間。
 
-## <a name="progressbar"></a>進度列
+## <a name="progressbar"></a>ProgressBar
 **ProgressBar 控制項：** ProgressBar 是不可互動的控制項。 您可以在此控制項的 `Value` 和 `Max` 屬性上加入判斷提示。 如需詳細資訊，請參閱 [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress)。
 
 ![HTML5 ProgressBar 控制項](../test/media/codedui_html5_progressbar.png)

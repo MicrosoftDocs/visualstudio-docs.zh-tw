@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 391dff6540bcea26f63d8ea88f344455722b742a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748226"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565899"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 網域指定的語言（DSL）是由其 DSL 定義檔所定義，以及您可能會撰寫的任何自訂程式碼。 DSL 解決方案中的大部分程式碼都是從這個檔案產生的。
@@ -22,7 +22,7 @@ ms.locfileid: "72748226"
  本主題說明 DSL 定義的核心功能。
 
 ## <a name="the-dsl-definition"></a>DSL 定義
- 當您開啟 `Dsl\DslDefinition.dsl` 時，Visual Studio 視窗會類似下圖。
+ 當您開啟 `Dsl\DslDefinition.dsl`時，Visual Studio 視窗會類似下圖。
 
  ![dsl 設計工具](../modeling/media/dsl_designer.png)
 
@@ -128,7 +128,7 @@ ms.locfileid: "72748226"
  當您在 DSL 定義中建立關聯性時，會將屬性和關聯性名稱指定為預設值。 不過，您可以變更它們。
 
 ## <a name="multiplicities"></a>多重性
- 多重性會指定在網域關聯性中可以有多少個元素具有相同的角色。 在此範例中，**目錄**角色的「零對多（0 \*）多重性」設定會指定「**發行者**」網域類別的任何實例，都可以有您想要提供的**PublisherCatalog**關係連結數目。
+ 多重性會指定在網域關聯性中可以有多少個元素具有相同的角色。 在此範例中，**目錄**角色的「零對多（0\*）多重性」設定會指定「**發行者**」網域類別的任何實例，都可以有您想要提供的**PublisherCatalog**關係連結數目。
 
  藉由在圖表上輸入或修改 [**屬性**] 視窗中的 [`Multiplicity`] 屬性，來設定角色的多重性。 下表描述這個屬性的設定。
 

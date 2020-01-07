@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659795"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585596"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 
@@ -54,10 +54,10 @@ ms.locfileid: "72659795"
 
 ::: moniker-end
 
-2. 執行測試之後，若要查看已執行的行，請選擇 [![Show 程式碼涵蓋範圍著色] 圖示，](../test/media/codecoverage-showcoloringicon.png) 在 [程式**代碼涵蓋範圍結果**] 視窗中**顯示程式碼涵蓋範圍著色**。 根據預設，測試所涵蓋的程式碼會以淺藍色反白顯示。
+2. 執行測試之後，若要查看已執行的行，請選擇 [![顯示程式碼涵蓋範圍著色] 圖示，](../test/media/codecoverage-showcoloringicon.png) 在 [程式**代碼涵蓋範圍結果**] 視窗中**顯示程式碼涵蓋範圍著色**。 根據預設，測試所涵蓋的程式碼會以淺藍色反白顯示。
 
    > [!TIP]
-   > 若要變更色彩或使用粗體，請選擇 [**工具**] [ > **選項**] [ > **環境**]  >  [字型**和色彩**]  >  [**顯示設定：文字編輯器**]。 在 [**顯示專案**] 下，調整 [涵蓋範圍] 專案的設定，例如 [**涵蓋範圍未觸及] 區域**。
+   > 若要變更色彩或使用粗體，請選擇 [**工具**] [ > **選項**] [ > **環境**] > [字型**和色彩**] > [**顯示設定：文字編輯器**]。 在 [**顯示專案**] 下，調整 [涵蓋範圍] 專案的設定，例如 [**涵蓋範圍未觸及] 區域**。
    >
    > ![程式碼涵蓋範圍字型和色彩](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "72659795"
 
 例如，假設您在執行輸入 "2" 的測試時發現特定函式的涵蓋範圍是 50%。 當您第二次輸入 "-2" 執行測試時，您會在涵蓋範圍著色檢視中看見函式涵蓋範圍多了另外的 50%。 現在您合併了兩個測試回合的結果，而報告和涵蓋範圍檢視也顯示涵蓋範圍是該函式的 100%。
 
-若要這樣做，請使用 ![[程式碼涵蓋範圍] 視窗中的合併按鈕圖示](../test/media/codecoverage-mergeicon.png) **合併程式碼涵蓋範圍結果**。 您可以選擇最近的回合或匯入之結果的任何組合。 如果您要合併匯出的結果，必須先匯入結果。
+使用 [程式碼涵蓋範圍] 視窗中的 [合併] 按鈕 ![圖示](../test/media/codecoverage-mergeicon.png)**合併程式碼涵蓋範圍結果**來執行此動作。 您可以選擇最近的回合或匯入之結果的任何組合。 如果您要合併匯出的結果，必須先匯入結果。
 
 使用 [匯出程式碼涵蓋範圍結果]，儲存合併作業的結果。
 
@@ -124,7 +124,7 @@ ms.locfileid: "72659795"
 > [!TIP]
 > 排除類別並不會排除其衍生類別。
 
-例如:
+例如：
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
@@ -282,17 +282,17 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
    ::: moniker range="vs-2017"
 
-   在 Windows 的 [開始] 功能表中，選擇 [Visual Studio 2017] >[VS 2017 開發人員命令提示字元]。
+   在 Windows [**開始**] 功能表中，選擇 [**適用于 VS 2017 的** **Visual Studio 2017** > 開發人員命令提示字元]。
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   在 Windows 的 [開始] 功能表中，選擇 [Visual Studio 2019] >[VS 2019 開發人員命令提示字元]。
+   在 Windows [**開始**] 功能表中，選擇 [**適用于 VS 2019 的** **Visual Studio 2019** > 開發人員命令提示字元]。
 
    ::: moniker-end
 
-2. 在命令提示字元中執行下列命令：
+2. 在命令提示字元執行下列命令：
 
    ```shell
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage

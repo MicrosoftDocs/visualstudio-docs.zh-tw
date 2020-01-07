@@ -4,17 +4,17 @@ ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
 - CSharp
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6a8fd65c9f7c498f06b0776f0cd61ebc5ce48182
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c83494fe6a23d4c072581c68f7b759aa9a6e6be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642928"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586896"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
 
@@ -26,7 +26,7 @@ ms.locfileid: "72642928"
 
 這個範例會使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。 如果該產品的 ADO.NET 資料提供者支援 Entity Framework，則也應該與其他 SQL database 產品搭配使用。
 
-1. 如果您沒有 SQL Server Express LocalDB，請從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或透過**Visual Studio 安裝程式**進行安裝。 在**Visual Studio 安裝程式**中，您可以將 SQL Server Express LocalDB 安裝為 **.net 桌面開發**工作負載的一部分，或作為個別元件。
+1. 如果您沒有 SQL Server Express LocalDB，請從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或透過**Visual Studio 安裝程式**進行安裝。 在 Visual Studio 安裝程式中，您可以安裝 SQL Server Express LocalDB 作為 **.NET 桌面開發**工作負載的一部分，或是作為個別的元件。
 
 2. 依照下列步驟安裝 Northwind 範例資料庫：
 
@@ -46,7 +46,7 @@ ms.locfileid: "72642928"
 
 1. 在 Visual Studio 中，建立新C#的**WPF 應用程式**專案。
 
-2. 新增 Entity Framework 6 的 NuGet 套件。 在 **方案總管**中，選取 專案 節點。 在主功能表中，選擇 [**專案**]  >  [**管理 NuGet 封裝**]。
+2. 新增 Entity Framework 6 的 NuGet 套件。 在 **方案總管**中，選取 專案 節點。 在主功能表中，選擇 [**專案**] > [**管理 NuGet 封裝**]。
 
      ![管理 NuGet 套件功能表項目](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
@@ -72,19 +72,19 @@ ms.locfileid: "72642928"
 
     ![選擇模型的資料庫物件](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. Wizard 會產生代表C# Entity Framework 模型的類別。 類別是簡單的C#類別，而且是我們對 WPF 使用者介面進行 databind 的功能。 *.Edmx*檔案會描述關聯性和其他中繼資料，以便將類別與資料庫中的物件相關聯。 *Tt*檔案是 T4 範本，會產生可在模型上運作的程式碼，並將變更儲存至資料庫。 您可以在 [Northwind_model] 節點下的**方案總管**中查看所有這些檔案：
+5. Wizard 會產生代表C# Entity Framework 模型的類別。 類別是簡單的C#類別，而且是我們對 WPF 使用者介面進行 databind 的功能。 *.Edmx*檔案會描述關聯性和其他中繼資料，以便將類別與資料庫中的物件相關聯。 *Tt*檔案是 T4 範本，會產生可在模型上運作的程式碼，並將變更儲存至資料庫。 您可以在 [Northwind_model] 節點底下的**方案總管**中查看所有這些檔案：
 
       ![方案總管 EF 模型檔案](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
     *.Edmx*檔案的設計工具介面可讓您修改模型中的某些屬性和關聯性。 在本逐步解說中，我們不會使用此設計工具。
 
-6. *Tt*檔案是一般用途，而且您需要調整其中一項來使用 WPF 資料系結，這需要 ObservableCollections。 在**方案總管**中，展開 [Northwind_model] 節點，直到您找到*Northwind_model。* （請確定您不在中 *。CoNtext.tt*檔案，其位於 *.edmx*檔案正下方）。
+6. *Tt*檔案是一般用途，而且您需要調整其中一項來使用 WPF 資料系結，這需要 ObservableCollections。 在**方案總管**中，展開 [Northwind_model] 節點，直到您找到 [ *Northwind_model. tt*] 為止。 （請確定您不在中 *。CoNtext.tt*檔案，其位於 *.edmx*檔案正下方）。
 
    - 將兩個出現的 <xref:System.Collections.ICollection> 取代為 <xref:System.Collections.ObjectModel.ObservableCollection%601>。
 
    - 將第一次出現的 <xref:System.Collections.Generic.HashSet%601> 取代為51行周圍的 <xref:System.Collections.ObjectModel.ObservableCollection%601>。 請勿取代第二次出現的 HashSet。
 
-   - 以 <xref:System.Collections.ObjectModel> 取代唯一出現的 <xref:System.Collections.Generic> （大約在第431行）。
+   - 以 <xref:System.Collections.ObjectModel>取代唯一出現的 <xref:System.Collections.Generic> （大約在第431行）。
 
 7. 按**Ctrl**+**Shift**+**B**以建立專案。 當組建完成時，[資料來源] wizard 可以看到模型類別。
 
@@ -94,7 +94,7 @@ ms.locfileid: "72642928"
 
 您可以撰寫自己的資料系結程式碼，但更容易讓 Visual Studio 為您執行此作業。
 
-1. 從主功能表中，選擇 [**專案**]  >  [**加入新的資料來源**]，以顯示 [**資料來源設定向導]** 。 選擇 [**物件**]，因為您要系結至模型類別，而不是系結至資料庫：
+1. 從主功能表中，選擇 [**專案**] > [**加入新的資料來源**]，以顯示 [**資料來源設定向導]** 。 選擇 [**物件**]，因為您要系結至模型類別，而不是系結至資料庫：
 
      ![具有物件來源的資料來源設定向導](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
@@ -114,7 +114,7 @@ ms.locfileid: "72642928"
         </Grid.RowDefinitions>
     ```
 
-5. 現在開啟*mainwindow.xaml* ，讓您在設計工具中進行流覽。 這會導致 [**資料來源**] 視窗顯示為 [**工具箱**] 旁 [Visual Studio] 視窗邊界中的選項。 按一下索引標籤以開啟視窗，或按**Shift** +**Alt** +**D** ，或選擇  **View**   > **其他 Windows**  > **資料來源**。 我們要在自己的個別文字方塊中，顯示 Customers 類別中的每個屬性。 首先，按一下 [ **Customers** ] 下拉式方塊中的箭號，然後選擇 [**詳細資料**]。 然後，將節點拖曳至設計介面的中間部分，讓設計工具知道您想要將它放在中間列。 如果您錯置它，您可以稍後在 XAML 中手動指定資料列。 根據預設，控制項會以垂直方式放在 grid 元素中，但此時您可以在表單上排列它們。 例如，將 [**名稱**] 文字方塊放在位址上方，可能是合理的。 本文的範例應用程式會重新排序欄位，並將它們重新排列成兩個數據行。
+5. 現在開啟*mainwindow.xaml* ，讓您在設計工具中進行流覽。 這會導致 [**資料來源**] 視窗顯示為 [**工具箱**] 旁 [Visual Studio] 視窗邊界中的選項。 按一下索引標籤以開啟視窗，或按**Shift**+**Alt**+**D** ，或選擇  **View**  > **其他 Windows** > **資料來源**。 我們要在自己的個別文字方塊中，顯示 Customers 類別中的每個屬性。 首先，按一下 [ **Customers** ] 下拉式方塊中的箭號，然後選擇 [**詳細資料**]。 然後，將節點拖曳至設計介面的中間部分，讓設計工具知道您想要將它放在中間列。 如果您錯置它，您可以稍後在 XAML 中手動指定資料列。 根據預設，控制項會以垂直方式放在 grid 元素中，但此時您可以在表單上排列它們。 例如，將 [**名稱**] 文字方塊放在位址上方，可能是合理的。 本文的範例應用程式會重新排序欄位，並將它們重新排列成兩個數據行。
 
      ![客戶資料來源系結至個別控制項](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
@@ -146,7 +146,7 @@ ms.locfileid: "72642928"
 
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>調整頁面設計並為新的客戶和訂單新增網格
 
-Visual Studio 所產生的預設排列不適合您的應用程式，因此您將在 XAML 中手動進行一些變更。 您也需要一些「表單」（實際上是格線），讓使用者加入新的客戶或訂單。 為了能夠加入新的客戶和訂單，您需要一組不是資料系結至 `CollectionViewSource` 的個別文字方塊。 您將會在處理常式方法中設定 Visible 屬性，以控制使用者在任何指定時間看到的方格。 最後，您會在 [訂單] 方格中的每個資料列加入 [刪除] 按鈕，讓使用者能夠刪除個別訂單。
+Visual Studio 所產生的預設排列不適合您的應用程式，因此您將在 XAML 中手動進行一些變更。 您也需要一些「表單」（實際上是格線），讓使用者加入新的客戶或訂單。 為了能夠加入新的客戶和訂單，您需要一組不是資料系結至 `CollectionViewSource`的個別文字方塊。 您將會在處理常式方法中設定 Visible 屬性，以控制使用者在任何指定時間看到的方格。 最後，您會在 [訂單] 方格中的每個資料列加入 [刪除] 按鈕，讓使用者能夠刪除個別訂單。
 
 首先，將這些樣式加入至*mainwindow.xaml*中的 `Windows.Resources` 元素：
 
@@ -417,7 +417,7 @@ Visual Studio 所產生的預設排列不適合您的應用程式，因此您將
 
 ### <a name="add-command-handlers-to-the-mainwindow-class"></a>將命令處理常式新增至 Mainwindow.xaml 類別
 
-程式碼後置是最小的，但 add 和 delete 方法除外。 導覽是藉由在 CollectionViewSource 的 View 屬性上呼叫方法來執行。 @No__t_0 顯示如何依循序執行串聯刪除。 我們必須先刪除與其相關聯的 Order_Details。 @No__t_0 會將新的客戶或訂單加入至集合，或只是以使用者在文字方塊中所做的變更來更新現有的客戶或訂單。
+程式碼後置是最小的，但 add 和 delete 方法除外。 導覽是藉由在 CollectionViewSource 的 View 屬性上呼叫方法來執行。 `DeleteOrderCommandHandler` 顯示如何依循序執行串聯刪除。 我們必須先刪除與其相關聯的 Order_Details。 `UpdateCommandHandler` 會將新的客戶或訂單加入至集合，或只是以使用者在文字方塊中所做的變更來更新現有的客戶或訂單。
 
 將這些處理常式方法加入至*MainWindow.xaml.cs*中的 mainwindow.xaml 類別。 如果您的 [Customers] 資料表的 CollectionViewSource 有不同的名稱，則您需要調整每個方法中的名稱：
 

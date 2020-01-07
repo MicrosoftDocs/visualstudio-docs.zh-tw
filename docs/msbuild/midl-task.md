@@ -21,17 +21,17 @@ helpviewer_keywords:
 - MSBuild (C++), MIDL task
 - MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2ad8163b86742da99be2a2a626eab58d27cb22b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911242"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592148"
 ---
 # <a name="midl-task"></a>MIDL 工作
 包裝 Microsoft 介面定義語言 (MIDL) 編譯器工具 (midl.exe)。 如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考)。
@@ -87,7 +87,7 @@ ms.locfileid: "72911242"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    |值|命令列選項|
+    |{2&gt;值&lt;2}|命令列選項|
     |-----------|--------------------------|
     |**Signed**|**/char signed**|
     |**Unsigned**|**/char unsigned**|
@@ -111,7 +111,7 @@ ms.locfileid: "72911242"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    |值|命令列選項|
+    |{2&gt;值&lt;2}|命令列選項|
     |-----------|--------------------------|
     |**無**|**/error none**|
     |**EnableCustom**|**/error**|
@@ -167,7 +167,7 @@ ms.locfileid: "72911242"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    |值|命令列選項|
+    |{2&gt;值&lt;2}|命令列選項|
     |-----------|--------------------------|
     |**無**|**/client none**|
     |**Stub**|**/client stub**|
@@ -182,7 +182,7 @@ ms.locfileid: "72911242"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    |值|命令列選項|
+    |{2&gt;值&lt;2}|命令列選項|
     |-----------|--------------------------|
     |**無**|**/server none**|
     |**Stub**|**/server stub**|
@@ -285,7 +285,7 @@ ms.locfileid: "72911242"
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/sstub** 選項。 另請參閱此表格中的 **ClientStubFile** 參數。
 
-- **Source**
+- **來源**
 
      必要的 `ITaskItem[]` 參數。
 
@@ -299,7 +299,7 @@ ms.locfileid: "72911242"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    |值|命令列選項|
+    |{2&gt;值&lt;2}|命令列選項|
     |-----------|--------------------------|
     |**NotSet**|*\<none>*|
     |**1**|**/Zp1**|
@@ -333,7 +333,7 @@ ms.locfileid: "72911242"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    |值|命令列選項|
+    |{2&gt;值&lt;2}|命令列選項|
     |-----------|--------------------------|
     |**NotSet**|*\<none>*|
     |**Win32**|**/env win32**|
@@ -356,7 +356,7 @@ ms.locfileid: "72911242"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    |值|命令列選項|
+    |{2&gt;值&lt;2}|命令列選項|
     |-----------|--------------------------|
     |**NewFormat**|**/newtlb**|
     |**OldFormat**|**/oldtlb**|
@@ -405,7 +405,7 @@ ms.locfileid: "72911242"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    |值|命令列選項|
+    |{2&gt;值&lt;2}|命令列選項|
     |-----------|--------------------------|
     |**0**|**/W0**|
     |**1**|**/W1**|
