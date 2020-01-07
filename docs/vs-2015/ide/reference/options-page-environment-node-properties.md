@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6c7b6370793068ff07f30066ddd51b72dcc924b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668707"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595016"
 ---
 # <a name="options-page-environment-node-properties"></a>環境節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "72668707"
 ## <a name="general"></a>一般
  `DTE.Properties("Environment", "General")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |ShowStatusBar|Get/Set (布林值)|決定狀態列是否為可見。|
 |WindowMenuContainsNItems|Get/Set (短整數)|決定 Windows 功能表底部包含文件視窗的方式。|
@@ -42,7 +42,7 @@ ms.locfileid: "72668707"
 ## <a name="add-inmacros-security"></a>增益集/巨集安全性
  `DTE.Properties("Environment", "AddinMacrosSecurity")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |MacrosEnabled|Get/Set (布林值)|允許執行巨集。|
 |AddinsEnabled|Get/Set (布林值)|允許載入增益集。|
@@ -51,7 +51,7 @@ ms.locfileid: "72668707"
 ## <a name="documents"></a>文件
  `DTE.Properties("Environment", "Documents")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |ReuseSavedActiveDocWindow|Get/Set (布林值)|決定如果已儲存目前文件，開啟新檔案時是否要重複使用目前的文件視窗。 `false` 表示每一個文件都要在新的文件視窗中開啟。|
 |DetectFileChangesOutsideIDE|Get/Set (布林值)|決定當作業系統通知 IDE 磁碟上的檔案已做修改時，環境是否自動重新載入在 IDE 中開啟的檔案。|
@@ -68,7 +68,7 @@ ms.locfileid: "72668707"
 ## <a name="extension-manager"></a>擴充管理員
  `DTE.Properties("Environment", "ExtensionManager")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |EnableAdminExtensions|Get/Set (布林值)|以系統管理員認證執行 Visual Studio 時，載入個別使用者的擴充功能。 變更這個值之後，必須重新啟動 Visual Studio。|
 |EnableOnline|Get/Set (布林值)|允許存取 Visual Studio 組件庫中的擴充功能。|
@@ -77,7 +77,7 @@ ms.locfileid: "72668707"
 ## <a name="find-and-replace"></a>尋找和取代
  `DTE.Properties("Environment", "FindAndReplace")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |ShowWarningMessages|Get/Set (布林值)|顯示警告訊息。|
 |InitializeFromEditor|Get/Set (布林值)|以編輯器中的文字自動填入 [尋找目標]  方塊。|
@@ -87,7 +87,7 @@ ms.locfileid: "72668707"
 ## <a name="import-and-export-settings"></a>匯入和匯出設定
  `DTE.Properties("Environment", "Import and Export Settings")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |TrackTeamSettings|Get/Set (布林值)|使用 TeamSettingsFile 所指定檔案中的設定。|
 |TeamSettingsFile|Get/Set (字串)|具有小組設定之檔案的名稱。|
@@ -96,21 +96,21 @@ ms.locfileid: "72668707"
 ## <a name="international-settings"></a>國際設定
  `DTE.Properties("Environment", "International")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |語言|Get/Set (字串)|Visual Studio 目前語言的 LCID 值。|
 
 ## <a name="keyboard"></a>鍵盤
  `DTE.Properties("Environment", "Keyboard")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |配置|Get/Set (字串)|傳回包含內建配置的字串、包含所載入之 .vsk 檔完整路徑的字串，如果沒有載入 .vsk 檔，則傳回 "(Default)"。|
 
 ## <a name="projects-and-solution"></a>專案和方案
  `DTE.Properties("Environment", "ProjectsAndSolution")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |OnRunOrPreview|Get/Set (字串)|決定 IDE 是否先將一切存檔，然後再預覽或執行所建置的專案。|
 |ProjectsLocation|Get/Set (字串)|決定 [新增專案]  對話方塊儲存新專案的預設目錄。|
@@ -133,9 +133,9 @@ ms.locfileid: "72668707"
 ## <a name="startup"></a>啟動
  `DTE.Properties("Environment", "Startup")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
-|OnStartUp|Get/Set (列舉)|從 <xref:EnvDTE.vsStartUp> 啟動時所採取的動作，值為 0 到 5：<br /><br /> -   0：開啟首頁<br />-   1：載入上次載入的方案<br />-   2：顯示 [開啟專案]  對話方塊<br />-   3：顯示 [新增專案]  對話方塊<br />-   4：顯示空白環境<br />-   5：顯示起始頁|
+|OnStartUp|Get/Set (列舉)|從 <xref:EnvDTE.vsStartUp> 啟動時所採取的動作，值為 0 到 5：<br /><br /> -   0：開啟首頁<br />-   1：載入上次載入的方案<br />-   2：顯示 [開啟專案]  對話方塊<br />-   3：顯示 [新增專案]  對話方塊<br />-   4：顯示空白環境<br />-   5：顯示起始畫面|
 |StartPageRSSUrl|Get/Set (字串)|啟動時所使用之 RSS 摘要的 URL。|
 |StartPageRefreshDownloadedContent|Get/Set (布林值)|每隔 StartPageRefreshInterval 中所指定的間隔之後，重新整理起始頁。|
 |StartPageRefreshInterval|Get/Set (短整數)|重新整理起始頁的間隔，以分鐘為單位。|
@@ -143,7 +143,7 @@ ms.locfileid: "72668707"
 ## <a name="tasklist"></a>TaskList
  `DTE.Properties("Environment", "TaskList")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |ConfirmTaskDeletion|Get/Set (布林值)|指定在刪除 [工作清單]  中的工作時，是否顯示確認方塊。|
 |WarnOnAddingHiddenItem|Get/Set (布林值)|指定加入不會顯示的使用者工作時，是否對您發出警告。|
@@ -153,7 +153,7 @@ ms.locfileid: "72668707"
 ## <a name="web-browser"></a>網頁瀏覽器
  `DTE.Properties("Environment", "WebBrowser")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 |------------------------|-----------|-----------------|
 |HomePage|Get/Set (字串)|代表首頁 URL。|
 |SearchPage|Get/Set (字串)|代表搜尋網頁 URL。|
@@ -161,4 +161,9 @@ ms.locfileid: "72668707"
 |ViewSourceExternalProgram|Get/Set (字串)|外部來源檢視器的路徑。|
 
 ## <a name="see-also"></a>另請參閱
- [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)[判斷選項頁上的屬性專案名稱](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)選項[頁面、字型和色彩節點屬性](../../ide/reference/options-page-fonts-and-colors-node-properties.md)[選項頁、文字編輯器節點屬性](../../ide/reference/options-page-text-editor-node-properties.md)[環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)
+
+- [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [在選項頁中決定屬性項目的名稱](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [字型和色彩節點屬性、選項頁面](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
+- [文字編輯器節點屬性、選項頁面](../../ide/reference/options-page-text-editor-node-properties.md)
+- [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)
