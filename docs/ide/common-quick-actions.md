@@ -3,20 +3,20 @@ title: 一般的快速動作
 description: 和 Visual Basic 的C#最熱門快速動作包括修正拼錯的關鍵字或符號、解決合併衝突、移除必要的匯入、產生類型、引入區域變數等等。
 ms.date: 03/28/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652254"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585518"
 ---
 # <a name="common-quick-actions"></a>一般的快速動作
 
@@ -30,7 +30,7 @@ ms.locfileid: "72652254"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>修正拼字錯誤的符號或關鍵字
 
-如果您不小心拼錯 Visual Studio 中的類型或關鍵字，這個快速動作會自動加以修正。 您會在燈泡功能表中看到這些專案，例如 **"Change ' \<misspelled word > ' 變更為 ' \<correct word > '"** 。 例如:
+如果您不小心拼錯 Visual Studio 中的類型或關鍵字，這個快速動作會自動加以修正。 您會在燈泡功能表中看到這些專案，因為「**變更」\<拼錯的單字 > '\<正確的字 > '** 」。 例如：
 
 ```csharp
 // Before
@@ -686,7 +686,7 @@ if (value is null)
 
 | 診斷識別碼 | 適用語言 | 支援版本 |
 | ------- | -------------------- | ---------------- |
-| IDE0039 | C# 7.0+ | Visual Studio 2017 版本15。 和更新版本 |
+| IDE0039 | C# 7.0+ | Visual Studio 2017 版本15。 及更新版本 |
 
 ### <a name="introduce-pattern-matching"></a>引進模式比對
 

@@ -7,19 +7,19 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: dd6afc69c2a7e513358c69eafeacb49fcb06dd52
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 633f8358b85b030c125bc632ff759d92e508cfaf
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983975"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404956"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安裝 Visual Studio 2019 for Mac
 
 若要開始在 macOS 上開發原生、跨平台的 .NET 應用程式，請遵循下方步驟安裝 Visual Studio 2019 for Mac。
 
  > [!div class="button"]
- > [下載 Visual Studio for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
+ > [下載 Visual Studio for Mac](https://aka.ms/vsmac)
 
 ## <a name="requirements"></a>需求
 
@@ -53,7 +53,7 @@ ms.locfileid: "74983975"
    如果您不想要安裝所有平台，請使用以下指南以協助您決定要安裝的平台：
 
 
-|應用程式類型  |Target  |選取  |備註  |
+|應用程式類型  |Target  |選取  |注意事項  |
 |---------|---------|---------|---------|
 |**使用 Xamarin 的應用程式**| Xamarin.Forms|選取**Android**和**iOS**平臺 |您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/) |
 ||僅限 iOS|選取**iOS**平臺|您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/)|

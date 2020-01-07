@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 131cc61614c9f3e814cca5bcbc0ff6db303414cf
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: d46b2042755df9f9f0e1abcb43c07a5318c92593
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253749"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595146"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>在設計階段解析組件
 當您透過 [加入參考] 對話方塊的 [.NET] 索引標籤加入組件的參考時，參考會指向中繼參考組件，也就是說，這個組件會包含所有類型和簽章資訊，但不一定會包含任何程式碼。 [.NET] 索引標籤會列出對應至 .NET Framework 中執行階段組件的參考組件。 此外，它列出的參考組件會對應至協力廠商使用的已註冊 AssemblyFoldersEx 資料夾中的執行階段組件。
@@ -36,5 +36,5 @@ ms.locfileid: "71253749"
 
  現在隨附於 .NET Framework SDK 的目標套件包含 Framework 版本中所有執行階段組件的清單，稱為轉散發 (redist) 清單，使組建系統無法針對錯誤的組件版本解析類型。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [進階概念](../msbuild/msbuild-advanced-concepts.md)

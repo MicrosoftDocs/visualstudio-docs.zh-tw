@@ -3,17 +3,17 @@ title: XML 編輯器架構快取
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aae5749d57dd1c9aaca8748ed02bdbb5587cade6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668734"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592486"
 ---
 # <a name="schema-cache"></a>結構描述快取
 
@@ -23,25 +23,25 @@ XML 編輯器也可以尋找位於方案中的架構、[檔**屬性**] 視窗的
 
 下表描述使用 XML 編輯器安裝的架構。
 
-| Filename | 描述 |
+| {2&gt;檔案名稱&lt;2} | 描述 |
 |-| - |
 | *目錄 .xsd* | XML 編輯器結構描述目錄檔案的結構描述。 如需結構描述目錄的詳細資訊，請參閱下方。 |
-| *DotNetConfig .xsd* | Web.config 檔案的架構，"<http://schemas.microsoft.com/.NETConfiguration/v2.0>"。 |
-| *msbuild.exe* | MSBuild make 檔案 "<http://schemas.microsoft.com/developer/msbuild/2003>" 的架構。 |
+| *DotNetConfig .xsd* | Web.config 檔案的架構，`http://schemas.microsoft.com/.NETConfiguration/v2.0`。 |
+| *msbuild.exe* | MSBuild make 檔案的架構，`http://schemas.microsoft.com/developer/msbuild/2003`。 |
 | *msdata .xsd* | <xref:System.Data.DataSet> 類別所加入之 XSD 附註的結構描述 urn:schemas-microsoft-com:xml-msdata。 |
 | *msxsl .xsd* | Microsoft XSLT 指令碼區塊擴充程式的結構描述 urn:schemas-microsoft-com:xslt。 |
 | *SnippetFormat .xsd* | 程式碼片段 XML 檔案的結構描述。 如需範例，請參閱 *% VSInstallDirVC#% \ \Expansions*。 |
-| *Soap 1.1 .xsd* | 簡單物件存取通訊協定（SOAP）1.1 的架構， http://schemas.xmlsoap.org/soap/envelope/ 。 |
+| *Soap 1.1 .xsd* | 簡單物件存取通訊協定（SOAP）1.1 的架構，`http://schemas.xmlsoap.org/soap/envelope/`。 |
 | *Soap 1.2 .xsd* | 簡易物件存取通訊協定 1.2 的結構描述。 |
-| *SiteMapSchema .xsd* | ASP.NET 網站地圖 XML 檔案 "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>" 的架構。 |
-| *wsdl.exe* | Web 服務描述語言的架構， http://schemas.xmlsoap.org/wsdl/ 。 |
-| *xenc .xsd* | XML 加密的架構， http://www.w3.org/2000/09/xmldsig# 。 |
-| *xhtml. xsd* | XHTML http://www.w3.org/1999/xhtml 的架構。 |
-| *xlink .xsd* | XLink 1.0 的架構， http://www.w3.org/1999/xlink 。 |
-| *xml .xsd* | 描述 xml： space 和 xml： lang 屬性的架構， http://www.w3.org/XML/1998/namespace 。 |
-| *xmlsig .xsd* | XML 數位簽章的架構， http://www.w3.org/2000/09/xmldsig# 。 |
-| *xsdschema .xsd* | 描述 XSD 本身的架構， http://www.w3.org/2001/XMLSchema 。 |
-| *xslt .xsd* | XML 轉換的架構， http://www.w3.org/1999/XSL/Transform 。 |
+| *SiteMapSchema .xsd* | ASP.NET 網站地圖 XML 檔案的架構，`http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`。 |
+| *wsdl.exe* | Web 服務描述語言的架構，`http://schemas.xmlsoap.org/wsdl/`。 |
+| *xenc .xsd* | XML 加密的架構，`http://www.w3.org/2000/09/xmldsig#`。 |
+| *xhtml. xsd* | XHTML `http://www.w3.org/1999/xhtml`的架構。 |
+| *xlink .xsd* | XLink 1.0 的架構，`http://www.w3.org/1999/xlink`。 |
+| *xml .xsd* | 描述 xml： space 和 xml： lang 屬性的架構，`http://www.w3.org/XML/1998/namespace`。 |
+| *xmlsig .xsd* | XML 數位簽章的架構，`http://www.w3.org/2000/09/xmldsig#`。 |
+| *xsdschema .xsd* | 描述 XSD 本身的架構，`http://www.w3.org/2001/XMLSchema`。 |
+| *xslt .xsd* | XML 轉換的架構，`http://www.w3.org/1999/XSL/Transform`。 |
 
 ## <a name="update-schemas-in-the-cache"></a>更新快取中的架構
 
@@ -64,7 +64,7 @@ XML 編輯器亦支援結構描述快取目錄中任意數目的結構描述目�
 
 - VSInstallDir
 
-- 系統
+- System
 
 - ProgramFiles
 
@@ -110,7 +110,7 @@ XML 編輯器亦支援結構描述快取目錄中任意數目的結構描述目�
 
 ### <a name="to-change-the-schema-cache-location"></a>變更結構描述快取位置
 
-1. 從 [**工具**] 功能表選取 [**選項**]。
+1. 請從 [工具] 功能表上，選取 [選項]。
 
 2. 展開 [**文字編輯器**]，展開 [ **XML**]，然後按一下 [**其他**]。
 

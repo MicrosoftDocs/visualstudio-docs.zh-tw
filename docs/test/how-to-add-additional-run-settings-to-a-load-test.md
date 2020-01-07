@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, run settings, adding
 - load tests, run settings
 ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d4b22b0a1127af423e97e2dc88ebbea5bf1748e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: adcb50d2c6800c5ce64ab2b7cf16ce9d2a25aaaa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664871"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584500"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>如何：將其他回合設定新增至負載測試
 
@@ -40,7 +40,7 @@ ms.locfileid: "72664871"
 
 5. 在 [屬性] 視窗中，使用 [名稱] 屬性的文字方塊來提供新回合設定的名稱，此名稱描述回合設定的目的 (例如，**回合設定：執行五分鐘**)。
 
-6. 使用 [屬性視窗] 變更回合設定。 例如，將執行持續時間變更為 **00:05:00**，以執行測試五分鐘。
+6. 使用 [屬性視窗] 變更回合設定。 例如，將執行持續期間變更為 [00:05:00] 以執行測試五分鐘。
 
     > [!NOTE]
     > 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。

@@ -8,19 +8,19 @@ helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 783cdf5cef127a39958f14a2dc5ece9a45fcee62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655713"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567641"
 ---
-# <a name="options-dialog-box-projects-and-solutions--general"></a>選項對話方塊：專案和解決方案 \> 一般
+# <a name="options-dialog-box-projects-and-solutions--general"></a>選項對話方塊：專案和方案 \> 一般
 
 您可以使用此頁面定義與專案和解決方案有關的 Visual Studio 行為。 若要存取這些選項，請選取 [工具] > [選項] 來展開 [專案和方案]，然後選取 [一般]。
 
@@ -28,11 +28,11 @@ ms.locfileid: "72655713"
 
 ## <a name="always-show-error-list-if-build-finishes-with-errors"></a>建置完成但發生錯誤時一律顯示錯誤清單
 
-只有在無法建置專案時，才在建置完成時開啟 [錯誤清單]。 這樣會顯示在建置過程中發生的錯誤。 清除此選項時，仍然會發生錯誤，但是建置完成時不會開啟視窗。 這個選項預設為啟用。
+只有在無法建置專案時，才在建置完成時開啟 [錯誤清單]。 這樣會顯示在建置過程中發生的錯誤。 清除此選項時，仍然會發生錯誤，但是建置完成時不會開啟視窗。 此選項預設為啟用。
 
 ## <a name="track-active-item-in-solution-explorer"></a>在 [方案總管] 中追蹤使用中的項目
 
-選取此選項時，方案總管會自動開啟並選取使用中的項目。 隨著您使用專案或方案中的不同檔案，或設計工具中的不同元件，選取的項目也會變更。 如果清除這個選項，方案總管中的選取項目就不會自動變更。 這個選項預設為啟用。
+選取此選項時，方案總管會自動開啟並選取使用中的項目。 隨著您使用專案或方案中的不同檔案，或設計工具中的不同元件，選取的項目也會變更。 如果清除這個選項，方案總管中的選取項目就不會自動變更。 此選項預設為啟用。
 
 ## <a name="show-advanced-build-configurations"></a>顯示進階建置組態
 
@@ -96,8 +96,8 @@ ms.locfileid: "72655713"
 
 ::: moniker-end
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [選項對話方塊：專案和解決方案 \> 位置](projects-solutions-locations-options.md)
+- [選項對話方塊：專案和方案 \> 位置](projects-solutions-locations-options.md)
 - [選項對話方塊、專案和方案、建置並執行](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [選項對話方塊、專案和方案、Web 專案](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

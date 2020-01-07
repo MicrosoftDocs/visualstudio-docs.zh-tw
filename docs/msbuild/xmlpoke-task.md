@@ -11,17 +11,17 @@ helpviewer_keywords:
 - XmlPoke task [MSBuild]
 - MSBuild, XmlPoke task
 ms.assetid: 6ba1953c-be3b-4df8-8561-e133408f8270
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eb87a279da834004e599a49b33d0c1b32355269
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f44ce4736900fde35716ca3ec9dabb2d55c6df51
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777612"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588378"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 工作
 
@@ -31,7 +31,7 @@ ms.locfileid: "62777612"
 
  下表說明 `XmlPoke` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`Namespaces`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢前置詞的命名空間。 `Namespaces` 是一個 XML 程式碼片段，由 `Namespace` 元素與 `Prefix` 和 `Uri` 屬性組成。 屬性 `Prefix` 會指定前置詞與 `Uri` 屬性中指定的命名空間建立關聯。 請勿使用空的 `Prefix`。|
 |`Query`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢。|
@@ -79,7 +79,7 @@ ms.locfileid: "62777612"
 
 `dn` 在這裡的用途是預設命名空間的假造命名空間前置詞。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

@@ -16,24 +16,24 @@ helpviewer_keywords:
 - validating data, datasets
 - updating datasets, validating data
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f370e55c600baa3f017f6bbb58feab38c23e51ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ed115e851e9c2291dfc9d00f4bb36f670a7f3e00
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648101"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586064"
 ---
 # <a name="validate-data-in-datasets"></a>驗證資料集中的資料
 驗證資料是確認在資料物件中輸入的值符合資料集架構內之條件約束的程式。 驗證程式也會確認這些值都遵循為您的應用程式所建立的規則。 在將更新傳送至基礎資料庫之前，先驗證資料是很好的作法。 這可減少錯誤，以及應用程式與資料庫之間的可能往返次數。
 
 您可以藉由在資料集內建立驗證檢查，確認寫入資料集的資料是有效的。 不論執行更新的方式為何，資料集都可以檢查資料，無論是直接由表單中的控制項、元件內，或是以其他方式進行。 因為資料集是您應用程式的一部分（不同于資料庫後端），所以它是建立應用程式特定驗證的邏輯位置。
 
-將驗證新增至應用程式的最佳位置是在資料集的部分類別檔案中。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 中，開啟**DataSet 設計工具**，然後按兩下您要建立驗證的資料行或資料表。 此動作會自動建立 <xref:System.Data.DataTable.ColumnChanging> 或 <xref:System.Data.DataTable.RowChanging> 事件處理常式。
+將驗證新增至應用程式的最佳位置是在資料集的部分類別檔案中。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]中，開啟**DataSet 設計工具**，然後按兩下您要建立驗證的資料行或資料表。 此動作會自動建立 <xref:System.Data.DataTable.ColumnChanging> 或 <xref:System.Data.DataTable.RowChanging> 事件處理常式。
 
 ## <a name="validate-data"></a>驗證資料
 資料集內的驗證會以下列方式完成：
@@ -44,12 +44,12 @@ ms.locfileid: "72648101"
 
 - 藉由建立索引鍵、唯一的條件約束等，做為資料集實際架構定義的一部分。
 
-- 藉由設定 <xref:System.Data.DataColumn> 物件的屬性，例如 <xref:System.Data.DataColumn.MaxLength%2A>、<xref:System.Data.DataColumn.AllowDBNull%2A> 和 <xref:System.Data.DataColumn.Unique%2A>。
+- 藉由設定 <xref:System.Data.DataColumn> 物件的屬性，例如 <xref:System.Data.DataColumn.MaxLength%2A>、<xref:System.Data.DataColumn.AllowDBNull%2A>和 <xref:System.Data.DataColumn.Unique%2A>。
 
 當記錄中發生變更時，<xref:System.Data.DataTable> 物件會引發數個事件：
 
-- @No__t_0 和 <xref:System.Data.DataTable.ColumnChanged> 事件會在每次變更個別資料行期間和之後引發。 當您想要驗證特定資料行中的變更時，<xref:System.Data.DataTable.ColumnChanging> 事件會很有用。 建議變更的相關資訊會以引數的形式傳遞至事件。
-- @No__t_0 和 <xref:System.Data.DataTable.RowChanged> 事件會在資料列中的任何變更期間和之後引發。 @No__t_0 事件較一般。 這表示資料列中的某處發生了變更，但您不知道哪個資料行已變更。
+- <xref:System.Data.DataTable.ColumnChanging> 和 <xref:System.Data.DataTable.ColumnChanged> 事件會在每次變更個別資料行期間和之後引發。 當您想要驗證特定資料行中的變更時，<xref:System.Data.DataTable.ColumnChanging> 事件會很有用。 建議變更的相關資訊會以引數的形式傳遞至事件。
+- <xref:System.Data.DataTable.RowChanging> 和 <xref:System.Data.DataTable.RowChanged> 事件會在資料列中的任何變更期間和之後引發。 <xref:System.Data.DataTable.RowChanging> 事件較一般。 這表示資料列中的某處發生了變更，但您不知道哪個資料行已變更。
 
 根據預設，資料行的每個變更都因此引發四個事件。 第一個是要變更之特定資料行的 <xref:System.Data.DataTable.ColumnChanging> 和 <xref:System.Data.DataTable.ColumnChanged> 事件。 接下來是 <xref:System.Data.DataTable.RowChanging> 和 <xref:System.Data.DataTable.RowChanged> 事件。 如果對資料列進行多項變更，則會針對每個變更引發事件。
 
@@ -60,11 +60,11 @@ ms.locfileid: "72648101"
 
 當記錄更新時，<xref:System.Data.DataTable> 物件會引發事件，您可以在發生變更和變更之後，回應這些事件。
 
-如果您的應用程式使用具類型的資料集，您可以建立強型別的事件處理常式。 這會加入四個額外的類型事件，您可以在其中建立處理常式： `dataTableNameRowChanging`、`dataTableNameRowChanged`、`dataTableNameRowDeleting` 和 `dataTableNameRowDeleted`。 這些具類型的事件處理常式會傳遞引數，其中包含您資料表的資料行名稱，讓程式碼更容易寫入和讀取。
+如果您的應用程式使用具類型的資料集，您可以建立強型別的事件處理常式。 這會加入四個額外的類型事件，您可以在其中建立處理常式： `dataTableNameRowChanging`、`dataTableNameRowChanged`、`dataTableNameRowDeleting`和 `dataTableNameRowDeleted`。 這些具類型的事件處理常式會傳遞引數，其中包含您資料表的資料行名稱，讓程式碼更容易寫入和讀取。
 
 ## <a name="data-update-events"></a>資料更新事件
 
-|Event - 事件|描述|
+|Event|描述|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|正在變更資料行中的值。 事件會將資料列和資料行傳遞給您，以及建議的新值。|
 |<xref:System.Data.DataTable.ColumnChanged>|資料行中的值已變更。 事件會將資料列和資料行傳遞給您，以及建議的值。|
@@ -73,16 +73,16 @@ ms.locfileid: "72648101"
 |<xref:System.Data.DataTable.RowDeleting>|正在刪除資料列。 事件會將資料列傳遞給您，以及指出正在執行哪種類型的動作（delete）的值。|
 |<xref:System.Data.DataTable.RowDeleted>|已刪除資料列。 事件會將資料列傳遞給您，以及指出正在執行哪種類型的動作（delete）的值。|
 
-@No__t_0、<xref:System.Data.DataTable.RowChanging> 和 <xref:System.Data.DataTable.RowDeleting> 事件會在更新程式期間引發。 您可以使用這些事件來驗證資料，或執行其他類型的處理。 因為在這些事件期間正在進行更新，所以您可以藉由擲回例外狀況來取消它，這會使更新無法完成。
+<xref:System.Data.DataTable.ColumnChanging>、<xref:System.Data.DataTable.RowChanging>和 <xref:System.Data.DataTable.RowDeleting> 事件會在更新程式期間引發。 您可以使用這些事件來驗證資料，或執行其他類型的處理。 因為在這些事件期間正在進行更新，所以您可以藉由擲回例外狀況來取消它，這會使更新無法完成。
 
-@No__t_0、<xref:System.Data.DataTable.RowChanged> 和 <xref:System.Data.DataTable.RowDeleted> 事件是更新順利完成時所引發的通知事件。 當您想要根據成功的更新採取進一步的動作時，這些事件會很有用。
+<xref:System.Data.DataTable.ColumnChanged>、<xref:System.Data.DataTable.RowChanged> 和 <xref:System.Data.DataTable.RowDeleted> 事件是更新順利完成時所引發的通知事件。 當您想要根據成功的更新採取進一步的動作時，這些事件會很有用。
 
 ## <a name="validate-data-during-column-changes"></a>在資料行變更期間驗證資料
 
 > [!NOTE]
 > **DataSet 設計工具**會建立可將驗證邏輯加入至資料集的部分類別。 設計工具產生的資料集不會刪除或變更部分類別中的任何程式碼。
 
-當資料行中的值因回應 <xref:System.Data.DataTable.ColumnChanging> 事件而變更時，您可以驗證資料。 當引發時，這個事件會傳遞事件引數（<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>），其中包含目前資料行所建議的值。 根據 `e.ProposedValue` 的內容，您可以：
+當資料行中的值因回應 <xref:System.Data.DataTable.ColumnChanging> 事件而變更時，您可以驗證資料。 當引發時，這個事件會傳遞事件引數（<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>），其中包含目前資料行所建議的值。 根據 `e.ProposedValue`的內容，您可以：
 
 - 不執行任何動作以接受建議的值。
 
@@ -110,7 +110,7 @@ ms.locfileid: "72648101"
 
 1. 在 [DataSet 設計工具] 中開啟資料集。 如需詳細資訊，請參閱[逐步解說：在 DataSet 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
-2. 按兩下您想要驗證之資料表的標題列。 此動作會建立 <xref:System.Data.DataTable> 的部分類別檔案。
+2. 按兩下您想要驗證之資料表的標題列。 此動作會建立 <xref:System.Data.DataTable>的部分類別檔案。
 
     > [!NOTE]
     > **DataSet 設計工具**不會自動建立 <xref:System.Data.DataTable.RowChanging> 事件的事件處理常式。 您必須建立方法來處理 <xref:System.Data.DataTable.RowChanging> 事件，並執行程式碼來連結資料表的初始化方法中的事件。
@@ -138,7 +138,7 @@ ms.locfileid: "72648101"
     ```
 
 ## <a name="to-retrieve-changed-rows"></a>若要取出已變更的資料列
-資料表中的每個資料列都有一個 <xref:System.Data.DataRow.RowState%2A> 屬性，可使用 <xref:System.Data.DataRowState> 列舉中的值來追蹤該資料列的目前狀態。 您可以藉由呼叫 <xref:System.Data.DataSet> 或 <xref:System.Data.DataTable> 的 `GetChanges` 方法，從資料集或資料表傳回已變更的資料列。 您可以藉由呼叫 dataset 的 <xref:System.Data.DataSet.HasChanges%2A> 方法，在呼叫 `GetChanges` 之前，確認有變更存在。
+資料表中的每個資料列都有一個 <xref:System.Data.DataRow.RowState%2A> 屬性，可使用 <xref:System.Data.DataRowState> 列舉中的值來追蹤該資料列的目前狀態。 您可以藉由呼叫 <xref:System.Data.DataSet> 或 <xref:System.Data.DataTable>的 `GetChanges` 方法，從資料集或資料表傳回已變更的資料列。 您可以藉由呼叫 dataset 的 <xref:System.Data.DataSet.HasChanges%2A> 方法，在呼叫 `GetChanges` 之前，確認有變更存在。
 
 > [!NOTE]
 > 在您將變更認可至資料集或資料表（藉由呼叫 <xref:System.Data.DataSet.AcceptChanges%2A> 方法）之後，`GetChanges` 方法不會傳回任何資料。 如果您的應用程式需要處理已變更的資料列，您必須先處理這些變更，然後再呼叫 `AcceptChanges` 方法。
@@ -151,7 +151,7 @@ ms.locfileid: "72648101"
 
 - 呼叫資料集的 <xref:System.Data.DataSet.GetChanges%2A> 方法。
 
-     下列範例會建立名為 `changedRecords` 的新資料集，並在其中填入另一個稱為 `dataSet1` 的資料集的已變更記錄。
+     下列範例會建立名為 `changedRecords` 的新資料集，並在其中填入另一個稱為 `dataSet1`的資料集的已變更記錄。
 
      [!code-csharp[VbRaddataEditing#14](../data-tools/codesnippet/CSharp/validate-data-in-datasets_2.cs)]
      [!code-vb[VbRaddataEditing#14](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_2.vb)]
@@ -160,7 +160,7 @@ ms.locfileid: "72648101"
 
 - 呼叫 DataTable 的 <xref:System.Data.DataTable.GetChanges%2A> 方法。
 
-     下列範例會建立稱為 `changedRecordsTable` 的新資料表，並在其中填入另一個稱為 `dataTable1` 的資料表中已變更的記錄。
+     下列範例會建立稱為 `changedRecordsTable` 的新資料表，並在其中填入另一個稱為 `dataTable1`的資料表中已變更的記錄。
 
      [!code-csharp[VbRaddataEditing#15](../data-tools/codesnippet/CSharp/validate-data-in-datasets_3.cs)]
      [!code-vb[VbRaddataEditing#15](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_3.vb)]
@@ -191,7 +191,7 @@ ms.locfileid: "72648101"
 
 - 藉由傳入您想要傳回之資料列的 <xref:System.Data.DataRowVersion>，來存取資料行的值。
 
-     下列範例示範如何使用 <xref:System.Data.DataRowVersion> 值來取得 <xref:System.Data.DataRow> 中 `CompanyName` 欄位的原始值：
+     下列範例示範如何使用 <xref:System.Data.DataRowVersion> 值來取得 <xref:System.Data.DataRow>中 `CompanyName` 欄位的原始值：
 
      [!code-csharp[VbRaddataEditing#21](../data-tools/codesnippet/CSharp/validate-data-in-datasets_6.cs)]
      [!code-vb[VbRaddataEditing#21](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_6.vb)]
@@ -202,7 +202,7 @@ ms.locfileid: "72648101"
 
 - 存取資料行的值，然後將參數加入至索引，以指出您要傳回的資料列版本。
 
-     下列範例顯示如何使用 <xref:System.Data.DataRowVersion> 值，取得 <xref:System.Data.DataRow> 中 `CompanyName` 欄位的目前值：
+     下列範例顯示如何使用 <xref:System.Data.DataRowVersion> 值，取得 <xref:System.Data.DataRow>中 `CompanyName` 欄位的目前值：
 
      [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
      [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]

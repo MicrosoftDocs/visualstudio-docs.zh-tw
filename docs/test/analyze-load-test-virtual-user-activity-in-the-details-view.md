@@ -8,15 +8,15 @@ helpviewer_keywords:
 - virtual user activity chart
 - load test, virtual user activity chart
 ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bba807eae2a7767b9b4271d0df48e962a2113285
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0289ff0d4a20eacc4f6801d9300d39df594bc79e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665363"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591230"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>在負載測試分析器的詳細資料檢視中分析負載測試虛擬使用者活動
 
@@ -47,7 +47,7 @@ ms.locfileid: "72665363"
 
 - **只顯示有記錄檔的結果**：僅顯示具有關聯測試記錄檔的測試結果。
 
-- **顯示成功的結果**：顯示成功的結果。
+- **顯示順利完成的結果** 顯示順利完成的結果。
 
 - **顯示有錯誤的結果** 顯示具有錯誤的結果，這些錯誤可協助偵錯。
 

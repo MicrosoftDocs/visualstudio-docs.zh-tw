@@ -13,22 +13,22 @@ helpviewer_keywords:
 - <Otherwise> Element [MSBuild]
 - Otherwise Element [MSBuild]
 ms.assetid: de3997e9-1595-4263-a886-95530b56a319
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee2dd064b556596f27ae2130697cdd9435d8185
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 460a02b3e2115c7ccb91258ffe960668e64fb363
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963737"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594838"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 元素 (MSBuild)
 指定只有當所有 `When` 項目的條件評估為 `false` 時，才需執行的程式碼區塊。
 
- \<Project> \<Choose> \<When> \<Choose> ...\<Otherwise> \<Choose> ...
+ \<專案 > \<當 \<> 選擇 \< 時，選擇 > > ... \<> 選擇 \<。
 
 ## <a name="syntax"></a>語法
 
@@ -48,15 +48,15 @@ ms.locfileid: "62963737"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|說明|
+|項目|描述|
 |-------------|-----------------|
-|[Choose](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子項目，以選取一個要執行的程式碼區段。 `Otherwise` 元素中可能有零個或多個 `Choose` 元素。|
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 項目。 `Otherwise` 項目中可能有零或多個 `ItemGroup` 項目。|
+|[Choose](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子元素，以選取要執行的一個程式碼區段。 `Otherwise` 元素中可能有零個或多個 `Choose` 元素。|
+|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 元素。 `Otherwise` 元素中可能有零個或多個 `ItemGroup` 元素。|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 項目。 `Otherwise` 元素中可能有零個或多個 `PropertyGroup` 元素。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|說明|
+|項目|描述|
 |-------------|-----------------|
 |[Choose](../msbuild/choose-element-msbuild.md)|評估子元素，以選取要執行的一個程式碼區段。|
 
@@ -113,6 +113,6 @@ ms.locfileid: "62963737"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [條件式建構](../msbuild/msbuild-conditional-constructs.md)
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

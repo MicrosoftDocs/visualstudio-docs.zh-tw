@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load test, iterations
 - load tests, scenarios
 ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae0f75ac19f858cba9de1e2d75d4ef5529da1d75
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e95ca27ace50c7b28d1ffb1d3fc02589daddee2d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665163"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590978"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>在負載測試情節中設定測試反覆項目
 
@@ -62,7 +62,7 @@ ms.locfileid: "72665163"
     > [!NOTE]
     > 對 [測試反覆項目數目上限] 屬性使用值 0，表示沒有反覆項目上限。
 
-6. 完成變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [測試反覆項目數目上限] 值來執行負載測試。
+6. 屬性變更完成之後，選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [測試反覆項目數目上限] 值來執行負載測試。
 
 ## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>為情節指定測試反覆項目間的考慮時間
 
@@ -87,7 +87,7 @@ ms.locfileid: "72665163"
 
 4. 在 [測試反覆項目間的考慮時間] 屬性值中，輸入數字，代表啟動下一個測試反覆項目之前的等候秒數。
 
-5. 完成變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [測試反覆項目間的考慮時間] 值來執行負載測試。
+5. 屬性變更完成之後，選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [測試反覆項目間的考慮時間] 值來執行負載測試。
 
 ## <a name="see-also"></a>請參閱
 

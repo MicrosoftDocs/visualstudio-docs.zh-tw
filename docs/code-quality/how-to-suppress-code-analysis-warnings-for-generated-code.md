@@ -3,19 +3,19 @@ title: 隱藏所產生程式碼的程式碼分析違規
 ms.date: 05/13/2019
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39daa50254f2d1b69514d4065e582154e9ceb6b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ab2ffce28103059414cef8f1b556152485a12ff
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649397"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587429"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>作法：隱藏所產生之程式碼的程式碼分析警告
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>如何：隱藏所產生程式碼的程式碼分析警告
 
 產生的程式碼包含由 managed 程式碼編譯器或協力廠商工具加入至專案的程式碼。 您可能想要查看程式碼分析在產生的程式碼中探索到的規則違規。 不過，由於您無法查看及維護包含違規的程式碼，因此您可能不會想要查看它們。
 
@@ -32,5 +32,5 @@ ms.locfileid: "72649397"
 
 3. 選取 [**隱藏產生的程式碼的結果**] 核取方塊。
 
-> [!NOTE]
-> 您只能隱藏舊版分析的警告。 目前，您無法從[分析器](roslyn-analyzers-overview.md)隱藏程式碼分析警告。
+> [!IMPORTANT]
+> 您只能隱藏舊版分析的警告。 具有此設定的屬性頁已被取代，將在未來的產品版本中移除。 目前，您無法從[分析器](roslyn-analyzers-overview.md)隱藏程式碼分析警告。

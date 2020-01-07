@@ -5,8 +5,8 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,20 +14,20 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 50afd9ffd72c37510997176f103f3b269f29fcf2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649316"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587442"
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 
 指出警告不適用時，通常會很有用。 這會向小組成員表示已審查程式碼，而且可以隱藏警告。 原始碼隱藏專案（ISS）會使用 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性來隱藏警告。 屬性可以放在靠近產生警告之程式碼區段的位置。 您可以在原始程式檔中輸入來加入 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性，或者您可以在**錯誤清單**的警告上使用快捷方式功能表，自動將它加入。
 
-@No__t_0 屬性是條件式屬性，只有在編譯時期定義 CODE_ANALYSIS 編譯符號時，才會包含在 managed 程式碼元件的 IL 中繼資料中。
+<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性是條件式屬性，只有在編譯時期定義了 CODE_ANALYSIS 編譯符號時，才會包含在 managed 程式碼元件的 IL 中繼資料中。
 
-在C++/cli 中，使用宏 CA \_SUPPRESS \_MESSAGE 或標頭檔中的 ca \_GLOBAL \_SUPPRESS_MESSAGE 來新增屬性。
+在C++/cli 中，使用宏 CA\_隱藏標頭檔中\_訊息或 CA\_全域\_SUPPRESS_MESSAGE 來新增屬性。
 
 > [!NOTE]
 > 您不應該在發行組建上使用「原始碼隱藏式」，以避免意外傳送原始碼抑制中繼資料。 此外，由於原始碼隱藏的處理成本，應用程式的效能可能會降低。
@@ -35,7 +35,7 @@ ms.locfileid: "72649316"
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> 如果您將專案遷移至 Visual Studio 2017，可能會突然遇到大量的程式碼分析警告。 如果您還沒準備好修正警告，可以選擇 [**分析**]  > **執行程式碼分析，並隱藏**作用中的問題，藉以隱藏所有警示。
+> 如果您將專案遷移至 Visual Studio 2017，可能會突然遇到大量的程式碼分析警告。 如果您還沒準備好修正警告，可以選擇 [**分析**] > **執行程式碼分析，並隱藏**作用中的問題，藉以隱藏所有警示。
 >
 > ![執行程式碼分析並隱藏 Visual Studio 中的問題](media/suppress-active-issues.png)
 
@@ -44,7 +44,7 @@ ms.locfileid: "72649316"
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> 如果您將專案遷移至 Visual Studio 2019，可能會突然遇到大量的程式碼分析警告。 如果您還沒準備好修正警告，可以選擇 [**分析**]  >  [**建立] 和 [隱藏**作用中的問題] 來隱藏所有警示。
+> 如果您將專案遷移至 Visual Studio 2019，可能會突然遇到大量的程式碼分析警告。 如果您還沒準備好修正警告，可以選擇 [**分析**] > [**建立] 和 [隱藏**作用中的問題] 來隱藏所有警示。
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ ms.locfileid: "72649316"
 
 當您從 **錯誤清單**中的程式碼分析警告的內容或右鍵功能表中選擇 **隱藏** 時，會在您的程式碼或專案的全域隱藏專案檔案中加入 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性。
 
-@No__t_0 屬性具有下列格式：
+<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性具有下列格式：
 
 ```vb
 <Scope:SuppressMessage("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")>
@@ -78,17 +78,17 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **範圍**-隱藏警告的目標。 如果未指定目標，則會將它設定為屬性的目標。 支援的[範圍](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope)包括下列各項：
 
-  - `module`
+  - `module`-此範圍會隱藏對元件的警告。 它是套用至整個專案的全域隱藏專案。
 
-  - `resource`
+  - `resource`-（僅限[舊版 FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md) ）此範圍會抑制診斷資訊中寫入模組（元件）一部分之資源檔的警告。 Roslyn 分析器診斷的C#/VB 編譯器不會讀取/遵守此範圍，只會分析原始程式檔。
 
-  - `type`
+  - `type`-此範圍會隱藏對類型的警告。
 
-  - `member`
+  - `member`-此範圍會隱藏對成員的警告。
 
   - `namespace`-此範圍會針對命名空間本身隱藏警告。 它不會針對命名空間中的類型隱藏警告。
 
-  - `namespaceanddescendants`-（Visual Studio 2019 的新功能）這個範圍會隱藏命名空間及其所有子系符號中的警告。 舊版分析會忽略 `namespaceanddescendants` 值。
+  - `namespaceanddescendants`-（需要編譯器 3.x. x 版或更高版本，以及 Visual Studio 2019）此範圍會隱藏命名空間及其所有子系符號中的警告。 舊版分析會忽略 `namespaceanddescendants` 值。
 
 - **Target** -用來指定隱藏警告之目標的識別碼。 它必須包含完整的專案名稱。
 
@@ -96,11 +96,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 程式碼分析警告會在套用 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性的層級上隱藏。 例如，您可以在元件、模組、型別、成員或參數層級套用屬性。 這樣做的目的是要將隱藏專案資訊緊密地放在違規發生的程式碼中。
 
-隱藏式的一般形式包括規則分類和規則識別碼，其中包含規則名稱的選擇性人可讀取標記法。 例如:
+隱藏式的一般形式包括規則分類和規則識別碼，其中包含規則名稱的選擇性人可讀取標記法。 例如：
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-如果將原始碼隱藏式中繼資料降到最低，有很嚴格的效能考慮，則可以省略規則名稱。 規則類別和其規則識別碼會形成一個足夠的唯一規則識別碼。 例如:
+如果將原始碼隱藏式中繼資料降到最低，有很嚴格的效能考慮，則可以省略規則名稱。 規則類別和其規則識別碼會形成一個足夠的唯一規則識別碼。 例如：
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -112,7 +112,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 在某些情況下，您可能會想要隱藏特定的違規實例，例如，未來的程式碼不會自動從程式碼分析規則中排除。 某些程式碼分析規則可讓您使用 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性的 `MessageId` 屬性來執行這項操作。 一般來說，特定符號（本機變數或參數）上違規的舊版規則會遵守 `MessageId` 屬性。 [CA1500： VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md)是這類規則的範例。 不過，在可執行程式碼（非符號）上違規的舊版規則並不會遵守 `MessageId` 屬性。 此外，.NET Compiler Platform （"Roslyn"）分析器不會遵守 `MessageId` 屬性。
 
-若要隱藏規則的特定符號違規，請指定 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性之 `MessageId` 屬性的符號名稱。 下列範例顯示的程式碼有兩個[CA1500： VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) &mdash;one 用於 `name` 變數，另一個用於 `age` 變數。 只會隱藏 `age` 符號的違規。
+若要隱藏規則的特定符號違規，請指定 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性之 `MessageId` 屬性的符號名稱。 下列範例顯示具有兩個 CA1500 的程式碼[： VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md)&mdash;一個用於 `name` 變數，另一個用於 `age` 變數。 只會隱藏 `age` 符號的違規。
 
 ```vb
 Public Class Animal

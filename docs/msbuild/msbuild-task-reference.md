@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00af44212dd142dd94629f886a50b9646488af3b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d050aa095868e229887e4928285d746e1b5906a5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747274"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593872"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
 
@@ -229,7 +229,7 @@ ms.locfileid: "72747274"
 
 - [ResolveComReference 工作](../msbuild/resolvecomreference-task.md)
 
- 取得一或多個類型程式庫名稱或 *.tlb* 檔案的清單，並將那些類型程式庫解析至磁碟上的位置。
+ 取得一或多個類型程式庫名稱的清單或 *.tlb* 檔案，並將那些類型程式庫解析至磁碟上的位置。
 
 - [ResolveKeySource 工作](../msbuild/resolvekeysource-task.md)
 
@@ -249,7 +249,7 @@ ms.locfileid: "72747274"
 
 - [SGen 工作](../msbuild/sgen-task.md)
 
- 針對指定組件中的類型建立 XML 序列化組件。
+ 針對指定組件中的型別建立 XML 序列化組件。
 
 - [SignFile 工作](../msbuild/signfile-task.md)
 
@@ -261,7 +261,7 @@ ms.locfileid: "72747274"
 
 - [UnregisterAssembly 工作](../msbuild/unregisterassembly-task.md)
 
- 針對 COM Interop 用途將指定的組件取消註冊。
+ 針對 COM Interop 用途取消註冊指定的組件。
 
 - [Unzip 工作](../msbuild/unzip-task.md)
 

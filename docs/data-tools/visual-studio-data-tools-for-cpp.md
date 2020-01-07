@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - CPP
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 33c91a7c21a04624d71692d12b7a7f15a16e1d67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2be19729b61831e6f15ff40b6b4e1d7b4b0bb541
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639510"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586051"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>適用於 C++ 的 Visual Studio 資料工具
 
@@ -41,7 +41,7 @@ ms.locfileid: "72639510"
 
 4. 下載 ODBC Windows SDK 範例，並將它解壓縮到新的位置。 這個範例會顯示用來連接到資料庫併發出查詢和命令的基本 ODBC 命令。 您可以在[Microsoft 開放式資料庫連接（ODBC）](/sql/odbc/microsoft-open-database-connectivity-odbc)中深入瞭解這些功能。 當您第一次載入方案時（它位於C++資料夾中），Visual Studio 將會提供將解決方案升級至目前 Visual Studio 版本的功能。 按一下 [ **是**]。
 
-5. 若要使用 native client，您需要它的*頭*檔和*lib*檔案。 這些檔案包含 SQL Server 所特有的函式和定義，除了 SQL .h 中定義的 ODBC 函數之外。 在 [**專案** > **屬性**]  >  [**VC + + 目錄**] 中，新增下列 include 目錄：
+5. 若要使用 native client，您需要它的*頭*檔和*lib*檔案。 這些檔案包含 SQL Server 所特有的函式和定義，除了 SQL .h 中定義的 ODBC 函數之外。 在 [**專案** > **屬性**] > [ **VC + + 目錄**] 中，新增下列 include 目錄：
 
    **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
 
@@ -58,7 +58,7 @@ ms.locfileid: "72639510"
 
     請注意，此範例不會實際使用任何 native client 功能，因此不需要執行上述步驟來進行編譯和執行。 但是專案現在已設定為可供您使用這種功能。 如需詳細資訊，請參閱 [SQL Server Native Client 程式設計](/sql/relational-databases/native-client/sql-server-native-client)。
 
-7. 指定要在 ODBC 子系統中使用的驅動程式。 此範例會將中的驅動程式連接字串屬性傳遞為命令列引數。 在 [**專案** > **屬性**]  >  [**調試**] 中，新增下列命令引數：
+7. 指定要在 ODBC 子系統中使用的驅動程式。 此範例會將中的驅動程式連接字串屬性傳遞為命令列引數。 在 [**專案** > **屬性**] > [**調試**] 中，新增下列命令引數：
 
    ```cpp
    DRIVER="SQL Server Native Client 11.0"

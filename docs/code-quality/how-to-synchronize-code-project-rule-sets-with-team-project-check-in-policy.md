@@ -5,19 +5,19 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a765bcdd6eefbb5c256603bb73c0684c8782f803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649389"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587403"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>作法：同步處理常式代碼專案規則集與 Azure DevOps 專案簽入原則
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>如何：將程式碼專案規則集與 Azure DevOps 專案簽入原則同步處理
 
 您可以藉由指定規則集，將程式碼專案的程式碼分析設定同步處理至 Azure DevOps 專案的簽入原則，其方式是在簽入原則的規則集中指定至少包含規則。 您的開發人員主管可以通知您簽入原則的規則集名稱和位置。 您可以使用下列其中一個選項，以確保專案的程式碼分析會使用正確的規則集：
 
@@ -33,7 +33,7 @@ ms.locfileid: "72649389"
 
 1. 在**方案總管**中，以滑鼠右鍵按一下程式碼專案，然後按一下 [**屬性**]。
 
-2. 按一下 [程式**代碼分析**]。
+2. 按一下 [程式碼分析]。
 
 ::: moniker range="vs-2017"
 
@@ -53,17 +53,17 @@ ms.locfileid: "72649389"
 
 2. 在**方案總管**中，以滑鼠右鍵按一下程式碼專案，然後按一下 [**屬性**]。
 
-3. 按一下 [程式**代碼分析**]。
+3. 按一下 [程式碼分析]。
 
 ::: moniker range="vs-2017"
 
-4. 在 [**執行此規則集**] 清單中，按一下 [ **\<Browse >** ]。
+4. 在 **執行此規則集** 清單中，按一下 **\<流覽 >** 。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. 在 [作用中**規則**] 清單中，按一下 [ **\<Browse >** ]。
+4. 在 作用中**規則** 清單中，按一下 **\<流覽 >** 。
 
 ::: moniker-end
 

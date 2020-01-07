@@ -10,17 +10,17 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df842f83f92afe8a8f747135632eb30a715d43f
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: d38f87970d5f9ff6d90befc61073cc4ed3d4ca92
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888507"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589821"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>如何：在您的遊戲或應用程式中使用3D 資產
 

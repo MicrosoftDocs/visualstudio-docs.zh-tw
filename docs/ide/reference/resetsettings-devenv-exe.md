@@ -8,17 +8,17 @@ helpviewer_keywords:
 - /ResetSettings Devenv switch
 - settings [Visual Studio], resetting
 ms.assetid: 1d41021c-6f58-4bd5-b122-d1c995812192
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3549801001ba8df60634884dc58137a8fa77d905
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655569"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593859"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -35,7 +35,7 @@ ms.locfileid: "72655569"
 devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 
 - *SettingsFile*
 

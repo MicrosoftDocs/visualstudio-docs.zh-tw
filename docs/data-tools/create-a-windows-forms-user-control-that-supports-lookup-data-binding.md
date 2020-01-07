@@ -10,17 +10,17 @@ helpviewer_keywords:
 - LookupBindingPropertiesAttribute class, examples
 - user controls [Visual Basic], creating
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2c6542ac89f82443cbe4245862473861c94da3cd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642664"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586792"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>建立支援查閱資料繫結的 Windows Forms 使用者控制項
 
@@ -54,7 +54,7 @@ ms.locfileid: "72642664"
 
 - 建立表單以顯示新控制項中的資料。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -76,7 +76,7 @@ ms.locfileid: "72642664"
 
 第一個步驟是建立**Windows Forms 應用程式**專案。
 
-1. **在 Visual Studio 的 [檔案**] 功能表上，選取 [**新增** > **專案**]。
+1. 在 Visual Studio 中，於 [檔案] 功能表上選取 [新增] > [專案]。
 
 2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
@@ -155,7 +155,7 @@ ms.locfileid: "72642664"
 
 6. 在 [資料 UI 自訂選項] 對話方塊中，從 [相關聯的控制項] 清單中選取 **LookupBox**。
 
-7. 按一下 [確定]。
+7. 按一下 [ **確定**]。
 
 8. 按一下 [CustomerID] 資料行上的下拉式箭頭，並選擇 **LookupBox**。
 
