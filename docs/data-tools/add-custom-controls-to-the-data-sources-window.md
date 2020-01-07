@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: b6334d233ccb2c4453d117b6bdfe942b6ea092e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd4791e118d22aab1126987461547f9fa2fec317
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648923"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587104"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>將自訂控制項加入 [資料來源] 視窗
 
@@ -39,7 +39,7 @@ ms.locfileid: "72648923"
 2. 在 [**資料來源**] 視窗中，按一下屬於您加入至視窗之資料來源中的專案，然後按一下該專案的下拉式功能表。
 
    > [!TIP]
-   > 如果 [資料來源] 視窗未開啟，請選取 [ **View**  > **其他 Windows**  > **資料來源**] 來開啟它。
+   > 如果 [資料來源] 視窗未開啟，請選取 [ **View** > **其他 Windows** > **資料來源**] 來開啟它。
 
 3. 在下拉式功能表中，按一下 [**自訂**]。 下列其中一個對話方塊隨即開啟：
 
@@ -60,7 +60,7 @@ ms.locfileid: "72648923"
     > [!NOTE]
     > 如果您要選取的控制項並未出現在 [**關聯的控制項**] 方塊中，您就必須將控制項加入清單中。 如需詳細資訊，請參閱[新增相關聯的控制項](#add-associated-controls)。
 
-6. 按一下 [確定]。
+6. 按一下 [ **確定**]。
 
 7. 在 [**資料來源**] 視窗中，按一下您剛關聯一個或多個控制項之資料類型的專案，然後按一下該專案的下拉式功能表。
 
@@ -89,7 +89,7 @@ ms.locfileid: "72648923"
     > [!NOTE]
     > 只有位於目前方案或參考元件內的控制項，才可以加入至相關聯控制項的清單。 （控制項也必須執行上表中的其中一個資料系結屬性。）若要將資料系結至 [資料來源] 視窗中無法使用的自訂控制項，請將控制項從 [**工具箱**] 拖曳至設計介面，然後將 [**資料來源**] 視窗中的專案拖曳至控制項上。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [[資料 UI 自訂選項] 對話方塊](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

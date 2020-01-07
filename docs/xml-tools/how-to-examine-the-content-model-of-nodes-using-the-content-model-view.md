@@ -3,17 +3,17 @@ title: 在 XML 架構設計工具中使用內容模型視圖檢查節點
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c109d167534dc969ae34c55d16f2ee55e34fe3aa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5a7e6e311a4fbd02973edf94c6eb117f69d6cea
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645892"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592707"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>如何：使用內容模型視圖檢查節點的內容模型
 

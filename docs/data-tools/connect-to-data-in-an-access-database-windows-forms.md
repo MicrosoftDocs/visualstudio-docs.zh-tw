@@ -7,23 +7,23 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: deb163779110c50560787b35ad7744f90f6a7f36
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924523"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586857"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>連線至 Access 資料庫中的資料
 
 您可以使用 Visual Studio 連接到 Access 資料庫（ *.mdb*檔案或 *.accdb*檔案）。 在您定義連線後，資料就會出現在 [資料來源] 視窗中。 您可以從該處將資料表或 views 拖曳到設計介面上。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 若要使用這些程式，您需要 Windows Forms 或 WPF 專案，以及 Access 資料庫（ *.accdb*檔案）或 access 2000-2003 資料庫（ *.mdb*檔案）。 依照對應您的檔案類型的程序進行。
 
@@ -33,7 +33,7 @@ ms.locfileid: "72924523"
 
 1. 在 Visual Studio 中開啟 Windows Forms 或 WPF 應用程式專案。
 
-2. 若要開啟 [**資料來源**] 視窗，請在 [ **View** ] 功能表上，選取 [**其他 Windows**  > **資料來源**]。
+2. 若要開啟 [**資料來源**] 視窗，請在 [ **View** ] 功能表上，選取 [**其他 Windows** > **資料來源**]。
 
    ![檢視其他視窗資料來源](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "72924523"
 
 1. 在 Visual Studio 中開啟 Windows Forms 或 WPF 應用程式專案。
 
-2. 在 [ **View** ] 功能表上，選取 [**其他 Windows**  > **資料來源**]。
+2. 在 [ **View** ] 功能表上，選取 [**其他 Windows** > **資料來源**]。
 
    ![檢視其他視窗資料來源](../data-tools/media/viewdatasources.png)
 

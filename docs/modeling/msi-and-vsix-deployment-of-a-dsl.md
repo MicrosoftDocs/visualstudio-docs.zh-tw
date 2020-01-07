@@ -2,17 +2,17 @@
 title: DSL 的 MSI 和 VSIX 部署
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 96922848adf053e3b728196a445407f3d5f86428
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984443"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590185"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 您可以在自己的電腦或其他電腦上安裝特定領域語言。 Visual Studio 必須已安裝在目的電腦上。
@@ -35,9 +35,9 @@ ms.locfileid: "72984443"
 
    1. 在**方案總管**中，以滑鼠右鍵按一下**DslPackage**專案，然後按一下 [**在檔案瀏覽器中開啟資料夾**]。
 
-   2. 找出 **\* \\ yourproject。的 bin \\** **。DslPackage .vsix**
+   2. 找出 **\*\\yourproject。的 bin\\** **。DslPackage .vsix**
 
-2. 將 .vsix 檔案複製到您要安裝 DSL 的目的電腦 **。** 這可以是您自己的電腦或另一部電腦。
+2. 將 .vsix 檔案複製到您要安裝 DSL 的目的電腦 **。** 這可以是您自己的電腦或其他電腦。
 
    - 目的電腦必須具有在執行時間支援 Dsl 的其中一個 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 版本。 如需詳細資訊，請參閱[支援的 Visual Studio 版本 & 模型 SDK 的視覺效果](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)。
 
@@ -53,13 +53,13 @@ ms.locfileid: "72984443"
 
 ### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>卸載使用 VSX 安裝的 DSL
 
-1. 在 [工具] 功能表中選擇 [擴充功能和更新]。
+1. 在 [ **工具** ] 功能表中選擇 [ **擴充功能和更新**]。
 
 2. 展開 [已安裝的擴充功能]。
 
 3. 選取用來定義 DSL 的延伸模組，然後按一下 [**卸載**]。
 
-   在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以藉由從下列位置刪除檔案來移除擴充功能：
+   在很少見的情況下，錯誤的擴充功能會無法載入，並且在錯誤視窗中建立報表，但不會顯示在擴充管理員中。 在此情況下，您可以藉由從下列位置刪除檔案來移除擴充功能：
 
    *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
@@ -76,7 +76,7 @@ ms.locfileid: "72984443"
 
    1. 開啟 DslPackage\source.extension.tt
 
-   2. 在 `<SupportedProducts>` 之前插入下列這一行：
+   2. 在 `<SupportedProducts>`之前插入下列這一行：
 
        ```xml
        <InstalledByMsi>true</InstalledByMsi>
@@ -90,7 +90,7 @@ ms.locfileid: "72984443"
 
        - 描述
 
-       - 版本
+       - {2&gt;版本&lt;2}
 
    - 按一下 **編輯器** 節點，然後在 屬性視窗中，按一下 **圖示**。 設定值以參考**DslPackage\Resources**中的圖示檔，例如**file .ico**
 
@@ -102,11 +102,11 @@ ms.locfileid: "72984443"
 
     Visual Studio 將會建立名為**CreateMsiSetupProject. vdproj**的檔案。
 
-6. 在 Windows Explorer 中，將 Dsl \\ *. vdproj 複製到名為 Setup 的新資料夾。
+6. 在 Windows Explorer 中，將 Dsl\\*. vdproj 複製到名為 Setup 的新資料夾。
 
     （如有需要，您現在可以從 Dsl 專案中排除 CreateMsiSetupProject.tt）。
 
-7. 在**方案總管**中，以現有專案的形式新增**安裝程式 \* \\ vdproj** 。
+7. 在**方案總管**中，以現有專案的形式新增**安裝程式 \*\\vdproj** 。
 
 8. 在 [**專案**] 功能表上，按一下 [專案相依性 **]** 。
 
@@ -118,9 +118,9 @@ ms.locfileid: "72984443"
 
 10. 在 Windows Explorer 中，于您的安裝專案中找出建立的 MSI 檔案。
 
-     將 MSI 檔案複製到您要安裝 DSL 的電腦。 按兩下 MSI 檔案。 安裝程式會執行。
+     將 MSI 檔案複製到您要安裝 DSL 的電腦。 按兩下 MSI 檔案。 執行安裝程式。
 
-11. 在目的電腦中，建立副檔名為 DSL 的新檔案。 確認：
+11. 在目的電腦中，建立副檔名為 DSL 的新檔案。 驗證：
 
     - 在 Windows Explorer 清單視圖中，檔案會以您定義的圖示和描述顯示。
 

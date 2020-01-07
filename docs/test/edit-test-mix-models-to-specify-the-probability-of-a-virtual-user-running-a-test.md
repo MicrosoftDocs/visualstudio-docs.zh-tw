@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d9c678f1ec5cc984bff8e7f77d3ed95c9d579bfb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 62c817a2df6c56f70ab2217292feeb545cf66c85
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644451"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593209"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>編輯測試混合模型以指定虛擬使用者執行測試的可能性
 
@@ -36,7 +36,7 @@ ms.locfileid: "72644451"
 
 ## <a name="tasks"></a>工作
 
-|工作|相關主題|
+|工作|相關的主題|
 |-|-----------------------|
 |**指定負載測試的測試混合：** 建立負載測試時，您可以在 [新增負載測試精靈] 中指定負載測試的設定。 在 [新增負載測試精靈] 中，您可以選擇要加入至初始情節的現有 Web 和單元測試。 當您將測試加入至情節之後，就可以指定情節的測試混合。<br /><br /> 使用負載模型選項，可以讓您對進行負載測試中的網站或應用程式，更為準確地預測其預期真實使用情況。 這是相當重要的，因為不是奠基於準確負載模型的負載測試，可能會產生誤導的結果。|-   [模擬網站或應用程式的預期實際使用情況](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**編輯測試混合模型：** 您可以使用 [負載測試編輯器]，將負載測試情節變更為使用其中一種測試混合模型。||
@@ -73,7 +73,7 @@ ms.locfileid: "72644451"
 
 7. (選擇性) 使用核取方塊並選取所要的測試，指定要初始化或結束的 Web 效能與單元測試。 如需詳細資訊，請參閱[模擬網站或應用程式的預期實際使用情況](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)。
 
-8. 選擇 [確定]。
+8. 選擇 [ **確定**]。
 
      [屬性] 視窗隨即為 [測試混合類型] 屬性顯示新的測試混合模型。
 

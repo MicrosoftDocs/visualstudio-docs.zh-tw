@@ -1,5 +1,5 @@
 ---
-title: HOW TO：從組建中排除檔案 | Microsoft Docs
+title: 如何：從組建中排除檔案 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - MSBuild, excluding files
 - wildcards, MSBuild
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16b11d2c54c500bc2b4e7d52e0bc5a46492ab5e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c55033d253b5c7dfeb2bed968f2418637ca3f0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446566"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75576052"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>HOW TO：從組建中排除檔案
+# <a name="how-to-exclude-files-from-the-build"></a>如何：從組建中排除檔案
 在專案檔中，您可以使用萬用字元，來包含一個目錄中的所有檔案或巢狀目錄集合做為組建的輸入。 不過，目錄中可能有一個您不想包含來建置輸入的檔案，或者巢狀目錄集合中可能有一個您不想包含的目錄。 您可以明確地從輸入清單中排除該檔案或目錄。 專案中也可能有一個您只想在符合特定條件的情況下包含的檔案。 您可以明確地宣告要在組建中包含檔案的條件。
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>從組建的輸入中排除檔案或目錄
@@ -122,7 +122,7 @@ ms.locfileid: "63446566"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [項目](../msbuild/msbuild-items.md)
-- [MSBuild](../msbuild/msbuild.md)
+- [ MSBuild](../msbuild/msbuild.md)
 - [如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: fd6d6dca2680dcfcaa42912333b080c428ba78d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: ffe383d2195feb6689954a8ec858b196bae8c06a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659854"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565990"
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 
@@ -40,7 +40,7 @@ ms.locfileid: "72659854"
 
 下列文章可協助您了解及建立單元測試：
 
-|工作|相關主題|
+|工作|相關的主題|
 |-|-----------------------|
 |**快速入門和**逐步解說：從程式碼範例瞭解 Visual Studio 中的單元測試。|- [逐步解說：針對 managed 程式碼建立及執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [如何：將單元測試新增至C++應用程式](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
 |**使用測試總管進行單元測試：** 了解測試總管如何協助建立更具生產力且更有效率的單元測試。|- [單元測試基本概念](../test/unit-test-basics.md)<br />- [建立單元測試專案](../test/create-a-unit-test-project.md)<br />- [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)<br />- [安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)|

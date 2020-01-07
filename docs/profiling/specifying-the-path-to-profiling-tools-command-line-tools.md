@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 087407f511c038a369694beca8a9fe4ecc2ff7b7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: f66ed17aec8c6e5303ea61741021dd25032fcb37
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771568"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406307"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>指定分析工具命令列工具的路徑
 
@@ -22,9 +22,7 @@ ms.locfileid: "74771568"
 
 ## <a name="32-bit-computers"></a>32 位元電腦
 
-::: moniker range="vs-2017"
- 針對機器碼，Visual Studio 分析工具 API 位在 *VSPerf.dll* 中。 標頭檔 (*VSPerf.h*) 和匯入程式庫 (*VSPerf.lib*) 位在 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 目錄中。
-::: moniker-end
+針對機器碼，Visual Studio 分析工具 API 位在 *VSPerf.dll* 中。 標頭檔 (*VSPerf.h*) 和匯入程式庫 (*VSPerf.lib*) 位在 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 目錄中。
 
  針對受控碼，分析工具 API 位在 *Microsoft.VisualStudio.Profiler.dll* 中。 這個 DLL 位於 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄。
 
@@ -32,12 +30,14 @@ ms.locfileid: "74771568"
 
 在 64 位元電腦上，則會根據已進行程式碼剖析之應用程式的目標平台指定路徑。
 
-::: moniker range="vs-2017"
 - 若是 32 位元應用程式，預設程式碼剖析工具目錄是：
 
-     (原生) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
+     自有*Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*
+     
+     受控*Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
 - 若是 64 位元應用程式，預設程式碼剖析工具目錄是：
 
-     (原生) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
-::: moniker-end
+     自有*Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
+
+     受控*Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*

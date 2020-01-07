@@ -12,23 +12,23 @@ helpviewer_keywords:
 - Transactions namespace
 - saving data
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b3262b6123a496cda7025e369c99193ea8b6fd2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0efdda51a52b18697828e1772eb4a71435753e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641104"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586233"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>逐步解說：儲存異動中的資料
 
 本逐步解說示範如何使用 <xref:System.Transactions> 命名空間，將資料儲存在交易中。 在此逐步解說中，您將建立 Windows Forms 應用程式。 您將使用 [資料來源設定向導]，在 Northwind 範例資料庫中建立兩個數據表的資料集。 您會將資料繫結控制項加入至 Windows form，而您將修改 BindingNavigator 的 [儲存] 按鈕的程式碼，以更新 TransactionScope 內的資料庫。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -50,7 +50,7 @@ ms.locfileid: "72641104"
 
 第一個步驟是建立**Windows Forms 應用程式**。
 
-1. **在 Visual Studio 的 [檔案**] 功能表上，選取 [**新增** > **專案**]。
+1. 在 Visual Studio 中，於 [檔案] 功能表上選取 [新增] > [專案]。
 
 2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
@@ -96,11 +96,11 @@ ms.locfileid: "72641104"
 
 2. 從 [資料來源] 視窗，將 [客戶] 主節點拖曳至 **Form1**。
 
-   <xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、`CustomersTableAdapter`、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator> 會出現在元件匣中。
+   <xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、`CustomersTableAdapter`、<xref:System.Windows.Forms.BindingSource>和 <xref:System.Windows.Forms.BindingNavigator> 會出現在元件匣中。
 
 3. 將 [相關**orders** ] 節點（而非 [主要**orders** ] 節點，但 [ **Fax** ] 資料行下方的相關子資料工作表節點）拖曳至**CustomersDataGridView**下方的表單。
 
-   <xref:System.Windows.Forms.DataGridView> 隨即出現在表單上。 @No__t_0 和 <xref:System.Windows.Forms.BindingSource> 會出現在元件匣中。
+   <xref:System.Windows.Forms.DataGridView> 隨即出現在表單上。 `OrdersTableAdapter` 和 <xref:System.Windows.Forms.BindingSource> 會出現在元件匣中。
 
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>將參考加入至 System.object 元件
 
@@ -108,7 +108,7 @@ ms.locfileid: "72641104"
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>加入 System.Transactions DLL 檔案的參考
 
-1. 在 [**專案**] 功能表上，選取 [**加入參考**]。
+1. 在 [專案] 功能表上，選取 [新增參考]。
 
 2. 選取 [系統] [**交易**] （在 [ **.net** ] 索引標籤上），然後選取 **[確定]** 。
 
@@ -116,7 +116,7 @@ ms.locfileid: "72641104"
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>修改 BindingNavigator 的 [SaveItem] 按鈕中的程式碼
 
-針對第一個放置在表單上的資料表，預設會將程式碼新增至 <xref:System.Windows.Forms.BindingNavigator> 上 [儲存] 按鈕的 `click` 事件。 您必須手動加入程式碼以更新所有其他資料表。 在此逐步解說中，我們會將現有的儲存程式碼從 [儲存] 按鈕的 click 事件處理常式重構。 我們也會建立一些方法，以根據是否需要加入或刪除資料列來提供特定的更新功能。
+針對第一個放置在表單上的資料表，預設會將程式碼新增至 <xref:System.Windows.Forms.BindingNavigator>上 [儲存] 按鈕的 `click` 事件。 您必須手動加入程式碼以更新所有其他資料表。 在此逐步解說中，我們會將現有的儲存程式碼從 [儲存] 按鈕的 click 事件處理常式重構。 我們也會建立一些方法，以根據是否需要加入或刪除資料列來提供特定的更新功能。
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>修改自動產生的儲存程式碼
 

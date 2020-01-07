@@ -11,19 +11,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 47793cff733d84634c79355fb7639dbdad1cd82f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 276eff442891f70b9eea76e9167b07f798af2d6a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974231"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591459"
 ---
 # <a name="disable-or-move-the-package-cache"></a>停用或移動套件快取
 
@@ -46,17 +46,17 @@ ms.locfileid: "62974231"
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
 ```
 
-您也可以設定 `KeepDownloadedPayloads` [登錄原則](set-defaults-for-enterprise-deployments.md)來在安裝、修改或修復 Visual Studio 之前停用快取。
+您也可以在安裝、修改或修復 Visual Studio 之前，設定 `KeepDownloadedPayloads` 登錄[原則](set-defaults-for-enterprise-deployments.md)來停用快取。
 
 ## <a name="move-the-package-cache"></a>移動套件快取
 
 常見的系統組態是將 Windows 安裝在 SSD 上，並針對開發需求 (例如原始程式碼、程式二進位檔等) 使用容量較大的硬碟。 如果您想要離線工作，可以改為移動套件快取。
 
-若要這麼做，目前的唯一方式是在安裝、修改或修復 Visual Studio 之前設定 `CachePath` [登錄原則](set-defaults-for-enterprise-deployments.md)。
+目前，只有在安裝、修改或修復 Visual Studio 之前，設定 `CachePath` 登錄[原則](set-defaults-for-enterprise-deployments.md)時，才可以執行此動作。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [安裝 Visual Studio](install-visual-studio.md)
 * [設定企業部署的預設值](set-defaults-for-enterprise-deployments.md)

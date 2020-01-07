@@ -1,17 +1,17 @@
 ---
-title: Microsoft Azure 權益 | Microsoft Docs
+title: Microsoft Azure 權益 |Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: 瞭解如何啟用 Visual Studio 訂用帳戶中所含的 Azure DevTest 個人點數權益。
-ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: a6d0eee97ddf2d3a5a35af60ba6c6daf8bcc8425
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810048"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405267"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  有了[每月 Azure DevTest 的個別點數](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，azure 就是您用於開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
@@ -23,19 +23,23 @@ ms.locfileid: "74810048"
    > [!div class="mx-imgBorder"]
    > ![Azure 磚](_img/vs-azure/vs-azure-tile.png)
 
-3. 如果您沒有現有的 Azure 訂用帳戶，系統將會要求您填入建立 Azure 訂用帳戶所需的資訊、按一下核取方塊以接受條款和條件，然後按一下 [註冊]：
+3. 如果您沒有現有的 Azure 訂用帳戶，系統會要求您填入所需的資訊，以建立您的 Azure 訂用帳戶。  第一個步驟是提供您的個人資訊，然後按 **[下一步]** 。
    > [!div class="mx-imgBorder"]
-   > ![Azure 註冊](_img/vs-azure/vs-azure-sign-up-cropped.png) 如果您有現有的訂用帳戶，請按一下核取方塊來接受合約，然後按一下 [註冊]。
+   > ![Azure 註冊](_img/vs-azure/vs-azure-about-you.png)
 
-4. 您的帳戶就緒時，可以選擇 Azure 支援方案 (個別銷售)，或開始使用您的 Azure 訂用帳戶。
+4. 接下來，您必須使用簡單的驗證碼來驗證您的身分識別。 提供您的電話號碼，並選擇是否要以文字或電話接收程式碼。  輸入您收到的程式碼，然後按一下 [**驗證代碼**]。   
    > [!div class="mx-imgBorder"]
-   > ![Azure 準備就緒](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+   > ![Azure 準備就緒](_img/vs-azure/vs-azure-identity.png)
 
-5. 「Azure 儀表板快速入門中心」將會載入。  
+5. 在最後一個步驟中，按一下核取方塊以接受條款，然後按一下 [**註冊**]。  這樣就全部完成了！
    > [!div class="mx-imgBorder"]
-   > ![Azure 儀表板](_img/vs-azure/vs-azure-dashboard-quickstart.png) 
+   > ![Azure 準備就緒](_img/vs-azure/vs-azure-agreement.png)
 
-6. 將 [Azure 入口網站](https://portal.azure.com)加上書籤，方便您在未來進行存取。
+0. 「Azure 儀表板快速入門中心」將會載入。  
+   > [!div class="mx-imgBorder"]
+   > ![Azure 儀表板](_img/vs-azure/vs-azure-quick-start.png) 
+
+0. 將[Azure 入口網站](https://portal.azure.com)加入書簽，以便日後輕鬆存取。
 
 
 ## <a name="eligibility"></a>資格

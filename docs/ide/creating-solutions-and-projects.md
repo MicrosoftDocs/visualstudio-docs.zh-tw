@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747970"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589743"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -88,11 +88,11 @@ ms.locfileid: "72747970"
 
 ### <a name="to-create-an-empty-solution"></a>建立空的方案
 
-1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上，選擇 [檔案] >  [新增] >  [專案]。
 
 ::: moniker range="vs-2017"
 
-2. 在左窗格 ([範本]) 中，從展開的清單中選擇 [其他專案類型] > [Visual Studio 解決方案]。
+2. 在左側（[**範本**]）窗格中，選擇 [**其他專案類型**] > 展開清單中的 [ **Visual Studio 方案**]。
 
 3. 在中間窗格選擇 [空白方案]。
 

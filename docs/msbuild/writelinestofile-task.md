@@ -13,17 +13,17 @@ helpviewer_keywords:
 - WriteLinesToFile task [MSBuild]
 - MSBuild, WriteLinesToFile task
 ms.assetid: 9c8862ac-8da5-4437-9430-ecc30421f1c9
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cfe294e94acce70f48b96265b3edc491b37e668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cf7f36d0876b1f757dee1a752c8461745783a21e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777889"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595328"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 工作
 將所指定項目的路徑寫入至指定的文字檔。
@@ -31,12 +31,12 @@ ms.locfileid: "62777889"
 ## <a name="task-parameters"></a>工作參數
  下表說明 `WriteLinestoFile` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`File`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要寫入項目的檔案。|
-|`Lines`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要寫入至檔案的項目。|
+|`Lines`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要寫入至檔案的項目。|
 |`Overwrite`|選擇性的 `Boolean` 參數。<br /><br /> 如果 `true`，則工作會覆寫檔案中的任何現有內容。|
-|`Encoding`|選擇性的 `String` 參數。<br /><br /> 選取字元編碼 (例如，"Unicode")。  請參閱 <xref:System.Text.Encoding>。|
+|`Encoding`|選擇性的 `String` 參數。<br /><br /> 選取字元編碼 (例如，"Unicode")。  另請參閱<xref:System.Text.Encoding>。|
 |`WriteOnlyWhenDifferent`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，則會先讀取指定的目標檔案 (如果存在)，以便與已經寫入的工作進行比較。 如果相同，則不會將檔案寫入到磁碟，而且將會保留時間戳記。|
 
 ## <a name="remarks"></a>備註
@@ -91,6 +91,6 @@ dotnet %~dp0$(AssemblyName).dll %*
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

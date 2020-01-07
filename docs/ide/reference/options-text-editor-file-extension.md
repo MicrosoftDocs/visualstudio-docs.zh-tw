@@ -1,5 +1,5 @@
 ---
-title: 副檔名、文字編輯器、選項
+title: 選項、文字編輯器、副檔名
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - Options dialog box
 - Editing Experience, selecting
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b023ad4b14d6c890c14726f645a2ebf3c99f6f7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3711a87d84e25fd6f790cee62ecb71b2b046d0be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666256"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596199"
 ---
-# <a name="options-text-editor-file-extension"></a>副檔名、文字編輯器、選項
+# <a name="options-text-editor-file-extension"></a>選項、文字編輯器、副檔名
 
 這個選項對話方塊可讓您指定 Visual Studio 整合式開發環境 (IDE) 要如何處理含特定副檔名的所有檔案。 您可以針對輸入的每個**副檔名**，選取一種編輯體驗。 這可讓您選擇要用來開啟特定類型文件的 IDE 編輯器或設計工具。 若要顯示這些選項，請從 [工具] 功能表上選擇 [選項]，展開 [文字編輯器] 節點，然後選取 [副檔名]。
 
@@ -38,7 +38,7 @@ ms.locfileid: "72666256"
 
 選取要用來開啟此檔案副檔名文件的 IDE 編輯器或設計工具。 如果您選取的選項「具有編碼方式」，則每次開啟這類文件時，就會顯示一個對話方塊供您選取編碼配置。
 
-**新增**
+**[新增]**
 
 可將包含指定 [副檔名] 和 [編輯體驗] 的項目新增至 [副檔名清單]。
 

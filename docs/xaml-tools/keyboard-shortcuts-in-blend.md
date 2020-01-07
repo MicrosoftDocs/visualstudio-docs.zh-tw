@@ -4,23 +4,23 @@ titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8245790cb1a5f5211828b2feaa2fd862c83bfe9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4c72795b80ebb176b3dcfb4fe26b633946e3bb98
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666833"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592942"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的鍵盤快速鍵
 
 ## <a name="project-shortcuts"></a>專案快速鍵
 
-|若要執行這項操作|請這樣做|
+|若要執行此工作|請執行|
 |----------------|-------------|
 |建立新專案|**Ctrl**+**Shift**+**N**|
 |開啟專案或解決方案 (非網站)|**Ctrl**+**Shift**+**O**|
@@ -33,14 +33,14 @@ ms.locfileid: "72666833"
 
 ## <a name="document-shortcuts"></a>文件快速鍵
 
-|若要執行這項操作|請這樣做|
+|若要執行此工作|請執行|
 |----------------|-------------|
 |切換開啟的文件|**Ctrl**+**Tab**|
 |儲存使用中的文件|**Ctrl**+**S**|
 |儲存所有文件|**Ctrl**+**Shift**+**S**|
 |關閉使用中的文件|**Ctrl**+**W**|
 |關閉所有開啟的文件|**Ctrl**+**Shift**+**W**|
-|復原上一個動作|**Ctrl**+Z|
+|恢復上一個動作|**Ctrl**+Z|
 |取消復原上一個復原的動作|**Ctrl**+Y or **Ctrl**+**Shift**+**Z**|
 |建立設計階段註釋|**Ctrl**+**Shift**+**T**|
 |剪下|**Ctrl**+**X**|
@@ -52,7 +52,7 @@ ms.locfileid: "72666833"
 
 ## <a name="object-shortcuts"></a>物件快速鍵
 
-|若要執行這項操作|請這樣做|
+|若要執行此工作|請執行|
 |----------------|-------------|
 |建立新項目|**Ctrl**+**N**|
 |重複物件|按住 **Alt** 鍵並拖曳物件|
@@ -93,7 +93,7 @@ ms.locfileid: "72666833"
 
 ## <a name="view-shortcuts"></a>檢視快速鍵
 
-|若要執行這項操作|請這樣做|
+|若要執行此工作|請執行|
 |----------------|-------------|
 |切換 [設計]、[程式碼] 與 [分割] 檢視|**F11**|
 |放大畫板|**Ctrl**+**等號** ( **=** )|
@@ -109,7 +109,7 @@ ms.locfileid: "72666833"
 
 ## <a name="workspace-shortcuts"></a>工作區快速鍵
 
-|若要執行這項操作|請這樣做|
+|若要執行此工作|請執行|
 |----------------|-------------|
 |切換 [動畫] 和 [設計] 工作區|**Ctrl**+**F11**|
 |顯示或隱藏 [資產] 面板|**Ctrl**+**句點**|

@@ -4,17 +4,17 @@ ms.date: 04/04/2018
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets reference
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b2c0410e9e1934e8e0a3c9c31c568f1e832c0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d380346b7e049a6ffc4e8d03a5be27983de10249
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649089"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587234"
 ---
 # <a name="code-analysis-rule-set-reference"></a>程式碼分析規則集參考
 

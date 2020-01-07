@@ -6,17 +6,17 @@ helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22aa04bb41363eebc20257236515634f5e7e14ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7d62e1824d72933d8cb5c3c345ed8788435a6f20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931511"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592096"
 ---
 # <a name="msbuild-batching"></a>MSBuild 批次處理
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能夠根據項目中繼資料，將項目清單分割成不同的類別或批次，然後針對每個批次一次執行一個目標或工作。
@@ -99,7 +99,7 @@ ms.locfileid: "62931511"
 
 如需屬性函式的詳細資訊，請參閱[屬性函式](../msbuild/property-functions.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [ItemMetadata 項目 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

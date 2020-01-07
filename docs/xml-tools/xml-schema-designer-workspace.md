@@ -3,17 +3,17 @@ title: XML 結構描述設計工具工作空間
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6e5efc4c192fbb9debeb9dd5f9ccf1eaec69efa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4cf86dd39e010424b25916deec8cdebd23ee1c1b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608268"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592369"
 ---
 # <a name="xml-schema-designer-workspace-views"></a>XML 架構設計工具工作區視圖
 
@@ -37,7 +37,7 @@ XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可�
 
 - 在 XSD Explorer 中執行搜尋，然後按一下 [摘要] 結果窗格上的 [**將反白顯示的節點新增至工作區**] 按鈕。 如需詳細資訊，請參閱[搜尋架構集](../xml-tools/searching-the-schema-set.md)。
 
-## <a name="switch-views"></a>切換視圖
+## <a name="switch-views"></a>切換檢視
 
 若要切換檢視，請使用下列其中一項：
 
@@ -47,4 +47,4 @@ XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可�
 
 - 開始檢視頁上的浮水印，或空白內容模型檢視或圖表檢視上的浮水印。
 
-- 快速鍵： **ctrl** +**1**用於 [開始] 視圖 **，Ctrl** +**2**用於圖形視圖，而 [內容模型] 視圖則按**ctrl** +**3** 。
+- 快速鍵： **ctrl**+**1**用於 [開始] 視圖 **，Ctrl**+**2**用於圖形視圖，而 [內容模型] 視圖則按**ctrl**+**3** 。

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af3685288c00e27bb63cd45c682ab8b6354f4e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622105"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596368"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 
@@ -31,7 +31,7 @@ ms.locfileid: "72622105"
 
 ## <a name="escape-character"></a>逸出字元
 
-Visual Studio 命令的逸出字元是插入號 (^)。 逸出字元表示緊接著的字元會解譯為常值字元，而不是控制字元。 這可用來在參數或參數的值中嵌入一般引號 (")、空格、前置斜線、插入號或任何其他常值字元，但參數名稱除外。 例如:
+Visual Studio 命令的逸出字元是插入號 (^)。 逸出字元表示緊接著的字元會解譯為常值字元，而不是控制字元。 這可用來在參數或參數的值中嵌入一般引號 (")、空格、前置斜線、插入號或任何其他常值字元，但參數名稱除外。 例如：
 
 ```
 >Edit.Find ^^t /regex
@@ -52,7 +52,7 @@ Visual Studio 命令的逸出字元是插入號 (^)。 逸出字元表示緊接�
 | [評估陳述式](../../ide/reference/evaluate-statement-command.md) | 評估並顯示指定的陳述式。 |
 | [Find](../../ide/reference/find-command.md) | 使用 [尋找和取代] 控制項提供的選項子集，搜尋檔案。 |
 | [檔案中尋找](../../ide/reference/find-in-files-command.md) | 使用 [尋找和取代] [檔案中尋找](../../ide/find-in-files.md)。 |
-| [移至](../../ide/reference/go-to-command.md) | 將游標移至指定的程式行。 |
+| [到](../../ide/reference/go-to-command.md) | 將游標移至指定的程式行。 |
 | [列出呼叫堆疊](../../ide/reference/list-call-stack-command.md) | 顯示目前的呼叫堆疊。 |
 | [列出反組譯碼](../../ide/reference/list-disassembly-command.md) | 開始偵錯處理序，並可讓您指定處理錯誤的方式。 |
 | [列出記憶體](../../ide/reference/list-memory-command.md) | 顯示指定的記憶體範圍的內容。 |

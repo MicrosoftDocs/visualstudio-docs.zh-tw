@@ -1,5 +1,5 @@
 ---
-title: HOW TO：選取要建置的檔案 | Microsoft Docs
+title: 如何：選取要建置的檔案 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - MSBuild, including files
 - Include attribute [MSBuild]
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a9ad869fc091035de711ec59e20d10fd0af5e21b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386179"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574609"
 ---
-# <a name="how-to-select-the-files-to-build"></a>HOW TO：選取要建置的檔案
+# <a name="how-to-select-the-files-to-build"></a>如何：選取要建置的檔案
 建置包含數個檔案的專案時，您可以在專案檔中分別列出每個檔案，或是您可以使用萬用字元來包含一個目錄或巢狀目錄集合中的所有檔案。
 
 ## <a name="specify-inputs"></a>指定輸入
@@ -169,6 +169,6 @@ ms.locfileid: "63386179"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)
 - [項目](../msbuild/msbuild-items.md)

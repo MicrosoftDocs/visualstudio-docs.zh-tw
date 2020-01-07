@@ -2,17 +2,17 @@
 title: 產生方法覆寫
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 075c7dc49ffba1d67bbb5b62d313f50b5d09e956
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3c3a8f4eaf863fd8174ff70339fffc80141fc38d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668438"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569240"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>在 Visual Studio 中產生覆寫
 

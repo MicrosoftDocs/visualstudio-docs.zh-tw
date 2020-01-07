@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae3478aef733d106fa075a51edce4af91b404149
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 01ce9401174a26d58b7ef88d536a24bfb9017154
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939309"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595081"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>從 IDE 中啟動組建
 自訂專案系統必須使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 來啟動組建。 本文說明此需求的原因，並概述相關程序。

@@ -5,19 +5,19 @@ ms.date: 07/03/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2433f18f9980657ced5f5ddb274f5aa2a7671a60
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: e4c496d433f1e6f78f5738ad31ccd32ba0b8c734
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888604"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588482"
 ---
 # <a name="known-issues-for-containers"></a>容器的已知問題
 
@@ -50,7 +50,7 @@ ms.locfileid: "72888604"
 
 ## <a name="build-tools-container"></a>建置工具容器
 
-當您使用建置工具容器時，可能會發生下列已知問題。 若要查看問題是否已獲得修正，或是否有其他已知問題，請瀏覽 [https://developercommunity.visualstudio.com](https://developercommunity.visualstudio.com )。
+當您使用建置工具容器時，可能會發生下列已知問題。 若要查看問題是否已獲得修正，或是否有其他已知問題，請瀏覽 https://developercommunity.visualstudio.com 。
 
 * 在[某些情況](https://github.com/Microsoft/vstest/issues/940)下，IntelliTrace 在容器內可能無法運作。
 * 在適用於 Windows 的 Docker 舊版上，預設容器映像大小只有 20 GB，因此無法容納「建置工具」。 依照[變更映像大小的指示](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits)增加到 127 GB 以上。

@@ -7,12 +7,12 @@ ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: b25285ff3060734ee18085d7a9e89cd0d0c43439
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 2ccef07a2889f66df3e7f217ea292b61ffc0008f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984412"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405468"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>疑難排解：更新程式發生錯誤，正在抓取資訊
 
@@ -24,4 +24,5 @@ ms.locfileid: "74984412"
 - 如果您繼續看到此錯誤訊息，若 **.dmg** 仍在您的機器上 (或者您可以從 [visualstudio.com](https://visualstudio.microsoft.com/vs/mac/) 下載)，您也可以嘗試使用安裝程式來更新
   - 安裝程式會更新您機器上任何已安裝的元件。
   - 藉由重新執行安裝程式，您也可以安裝先前未安裝的任何遺漏元件。
-- 您也可以藉由刪除位在 `~/Library/Caches/VisualStudio/7.0/TempDownload/index.xml` 的檔案，以嘗試清除快取檔案。
+- 您也可以藉由刪除位在 `~/Library/Caches/VisualStudio/8.0/TempDownload/index.xml` 的檔案，以嘗試清除快取檔案。
+- 如果您使用的是舊版 Visual Studio for Mac，`VisualStudio` 目錄下可能會有其他版本號碼。 也請刪除這些路徑中的 `index.xml` 檔案。

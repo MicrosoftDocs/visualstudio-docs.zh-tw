@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Windows Forms Designer options
 - Options dialog box, Windows Forms Designer
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 16dfd7aed9e3a3586d32f3a4456451b96d8b9f09
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2a72b27dc2277501d0e0957c8b89b551f4d6852d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655804"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568057"
 ---
-# <a name="options-dialog-box-windows-forms-designer"></a>選項對話方塊：Windows Form 設計工具
+# <a name="options-dialog-box-windows-forms-designer"></a>選項對話方塊： Windows Form 設計工具
 
 [Windows Form 設計工具] 選項頁面可讓您在 Visual Studio 中設定 Windows Form 設計工具的格線和其他功能的喜好設定。 從 [工具] 功能表，開啟 [選項] 對話方塊。
 
@@ -50,7 +50,7 @@ ms.locfileid: "72655804"
 **自動開啟智慧標籤**\
 決定控制項和元件是否顯示智慧標籤。 並非所有控制項和元件都支援智慧標籤。
 
-## <a name="refactoring"></a>重構
+## <a name="refactoring"></a>Refactoring
 
 **重新命名時啟用重構**\
 當設定為 `true` 時，系統會在您從 [屬性] 視窗或 [文件大綱] 視窗中重新命名元件時執行重新命名重構作業。
