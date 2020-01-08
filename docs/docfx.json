@@ -93,7 +93,12 @@
       "featureFlags": [
         "enable_uhf_ppe"
       ],
-      "disable_contribution_on_translation_quality": ["MT"]
+      "disable_contribution_on_translation_quality": [
+        "MT",
+        "MTE75",
+        "MTE95",
+        "Blank"
+      ]
     },
     "fileMetadata": {
       "ms.prod": {
