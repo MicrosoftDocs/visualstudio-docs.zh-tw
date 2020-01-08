@@ -11,17 +11,17 @@ helpviewer_keywords:
 - pre-defined command aliases
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f56161e1fd89ce29924368b6029ee12c17e75a65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747706"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596407"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -35,16 +35,16 @@ ms.locfileid: "72747706"
 
 |命令名稱：|Alias|完整名稱|
 |------------------|-----------|-------------------|
-|[列印命令](../../ide/reference/print-command.md)|?|Debug.Print|
+|[列印命令](../../ide/reference/print-command.md)|？|Debug.Print|
 |[快速監看式命令](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |新增專案|AddProj|File.AddNewProject|
 |[別名命令](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
 |自動變數視窗|自動|Debug.Autos|
-|中斷點視窗|bl|Debug.Breakpoints|
+|[中斷點] 視窗|bl|Debug.Breakpoints|
 |切換中斷點|bp|Debug.ToggleBreakPoint|
 |[呼叫堆疊] 視窗|CallStack|Debug.CallStack|
 |清除書籤|ClearBook|Edit.ClearBookmarks|
-|關閉|關閉|File.Close|
+|Close|Close|File.Close|
 |關閉所有文件|CloseAll|Window.CloseAllDocuments|
 |全部清除|cls|Edit.ClearAll|
 |命令模式|cmd|View.CommandWindow|
@@ -57,7 +57,7 @@ ms.locfileid: "72747706"
 |刪除至行開頭 (BOL)|DelBOL|Edit.DeleteToBOL|
 |刪除至行結尾 (EOL)|DelEOL|Edit.DeleteToEOL|
 |刪除水平空白|DelHSp|Edit.DeleteHorizontalWhitespace|
-|設計工具檢視|設計工具|View.ViewDesigner|
+|檢視表設計工具|designer|View.ViewDesigner|
 |[列出記憶體命令](../../ide/reference/list-memory-command.md) (浮點數格式)|df|Debug.ListMemory/Format:Float|
 |反組譯碼視窗|disasm|Debug.Disassembly|
 |[列出記憶體命令](../../ide/reference/list-memory-command.md) (八位元組格式)|dq|Debug.ListMemory /Format:EightBytes|
@@ -66,7 +66,7 @@ ms.locfileid: "72747706"
 |結束|結束|File.Exit|
 |格式化選取範圍|格式|Edit.FormatSelection|
 |全螢幕|全螢幕|View.FullScreen|
-|[啟動命令](../../ide/reference/start-command.md)|G|Debug.Start|
+|[啟動命令](../../ide/reference/start-command.md)|g|Debug.Start|
 |[移至命令](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |移至大括號|GotoBrace|Edit.GotoBrace|
 |F1Help|說明|Help.F1Help|
@@ -79,11 +79,11 @@ ms.locfileid: "72747706"
 |列出成員|ListMembers|Edit.ListMembers|
 |[區域變數] 視窗|本機|Debug.Locals|
 |[記錄命令視窗輸出命令](../../ide/reference/log-command-window-output-command.md)|記錄檔|Tools.LogCommandWindowOutput|
-|命令視窗標記模式|mark|Tools.CommandWindowMarkMode|
+|命令視窗標記模式|號|Tools.CommandWindowMarkMode|
 |記憶體視窗|Memory Memory1|Debug.Memory1|
 |記憶體視窗 2|Memory2|Debug.Memory2|
 |記憶體視窗 3|Memory3|Debug.Memory3|
-|記憶體視窗 4|Memory4|Debug.Memory4|
+|記憶體視窗 4|記憶體4|Debug.Memory4|
 |[設定基數命令](../../ide/reference/set-radix-command.md)|n|Debug.SetRadix|
 |[ShowWebBrowser 命令](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
 |下一個書籤|NextBook|Edit.NextBookmark|
@@ -92,37 +92,37 @@ ms.locfileid: "72747706"
 |[開啟檔案命令](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[開啟專案命令](../../ide/reference/open-project-command.md)|op|File.OpenProject|
 |摺疊至定義/取消大綱|OutlineDefs StopOutlining|Edit.CollapseToDefinitions|
-|不進入函式|p|Debug.StepOver|
+|逐程序|p|Debug.StepOver|
 |參數資訊|ParamInfo|Edit.ParameterInfo|
 |跳離函式|pr|Debug.StepOut|
 |上一個書籤|PrevBook|Edit.PreviousBookmark|
 |列印檔案|print|File.Print|
 |屬性視窗|props|View.PropertiesWindow|
-|停止|q|Debug.StopDebugging|
-|取消復原|redo|Edit.Redo|
+|結束|q|Debug.StopDebugging|
+|重做|redo|Edit.Redo|
 |暫存器視窗|暫存器|Debug.Registers|
 |執行至游標處|rtc|Debug.RunToCursor|
 |儲存選取的項目|儲存|File.SaveSelectedItems|
 |全部儲存|SaveAll|File.SaveAll|
 |另存新檔|SaveAs|File.SaveSelectedItemsAs|
-|[Shell 命令](../../ide/reference/shell-command.md)|Shell|Tools.Shell|
+|[殼層命令](../../ide/reference/shell-command.md)|shell (殼層)|Tools.Shell|
 |停止在檔案中尋找|StopFind|Edit.FindInFiles /stop|
 |交換錨點|SwapAnchor|Edit.SwapAnchor|
 |逐步執行|t|Debug.StepInto|
 |將選取範圍空白鍵轉定點|空白鍵轉定位鍵|Edit.TabifySelection|
 |工作清單視窗|TaskList|View.TaskList|
-|執行緒視窗|執行緒|Debug.Threads|
+|[執行緒] 視窗|執行緒|Debug.Threads|
 |水平並排|TileH|Window.TileHorizontally|
 |垂直並排|TileV|Window.TileVertically|
 |切換書籤|ToggleBook|Edit.ToggleBookmark|
-|[工具箱] 視窗|工具箱|View.Toolbox|
+|[工具箱] 視窗|toolbox (工具箱)|View.Toolbox|
 |[列出反組譯碼命令](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |設成大寫|Ucase|Edit.MakeUppercase|
 |復原|undo|Edit.Undo|
 |將選取範圍定位點轉空白|Untabify|Edit.UntabifySelection|
-|監看式視窗|監看式|Debug.WatchN|
+|監看視窗|觀看|Debug.WatchN|
 |切換自動換行|WordWrap|Edit.ToggleWordWrap|
-|列出處理序|&#124;|Debug.ListProcesses|
+|列出處理程序|&#124;|Debug.ListProcesses|
 |[列出執行緒命令](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
 ## <a name="see-also"></a>請參閱

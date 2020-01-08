@@ -4,17 +4,17 @@ ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, faq
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdc30d0299e83423474c673b9d32e019885c2d52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603884"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573244"
 ---
 # <a name="code-analysis-faq"></a>程式碼分析常見問題
 
@@ -47,7 +47,7 @@ ms.locfileid: "72603884"
 
 **問**：以 .NET Compiler Platform 為基礎的程式碼分析是否可在持續整合（CI）組建中運作？
 
-**答**：是。 針對從 NuGet 封裝安裝的分析器，這些規則會[在組建階段強制執行](roslyn-analyzers-overview.md#build-errors)，包括在 CI 組建期間。 CI 組建中使用的分析器會遵循規則集和 EditorConfig 檔中的規則設定。 目前內建在 Visual Studio 中的程式碼分析器無法做為 NuGet 套件使用，因此這些規則無法在 CI 組建中強制執行。
+**答**: 是。 針對從 NuGet 封裝安裝的分析器，這些規則會[在組建階段強制執行](roslyn-analyzers-overview.md#build-errors)，包括在 CI 組建期間。 CI 組建中使用的分析器會遵循規則集和 EditorConfig 檔中的規則設定。 目前內建在 Visual Studio 中的程式碼分析器無法做為 NuGet 套件使用，因此這些規則無法在 CI 組建中強制執行。
 
 ## <a name="ide-analyzers-versus-stylecop"></a>IDE 分析器與 Stylecop 能夠的比較
 

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - code [Visual Studio], outlining
 - code [Visual Studio], hiding
 - outlining code
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 791663c04d1c1e79eebaed39d339d8d118ffeaae
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 781c9a6bc30f7d3a29bcb89e743600e6b29e6445
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748858"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585752"
 ---
 # <a name="outlining"></a>大綱
 
@@ -51,9 +51,9 @@ ms.locfileid: "72748858"
 |摺疊區塊︰\<邏輯界限>|（C++）折迭包含插入點之函式中的區域。 例如，如果插入點落在迴圈內，則會隱藏迴圈。|
 |\<邏輯結構> 中的全部摺疊|（C++）折迭函數內的所有結構。|
 
-您也可以使用 Visual Studio SDK 來定義您想要展開或摺疊的文字區域。 請參閱[逐步解說：大綱](../extensibility/walkthrough-outlining.md)。
+您也可以使用 Visual Studio SDK 來定義您想要展開或摺疊的文字區域。 請參閱[逐步解說︰大綱](../extensibility/walkthrough-outlining.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [原始檔編輯器 (Visual Studio for Mac)](/visualstudio/mac/source-editor)

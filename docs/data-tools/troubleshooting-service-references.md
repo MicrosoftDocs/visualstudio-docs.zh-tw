@@ -11,17 +11,17 @@ helpviewer_keywords:
 - service references [Visual Studio], troubleshooting
 - WCF services, troubleshooting
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 28ff14f10cd6ad5612551bb65b7b17f0280358f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639594"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586116"
 ---
 # <a name="troubleshoot-service-references"></a>針對服務參考進行疑難排解
 
@@ -60,9 +60,9 @@ ms.locfileid: "72639594"
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>[產生的類別] 設定的存取層級無效
 
-將 [**設定服務參考**] 對話方塊中的 [**產生的類別的存取層級**] 選項設定為 [**內部**] 或 [ **Friend** ]，可能不一定會有效。 雖然此選項會在對話方塊中顯示，但產生的支援類別是以 `Public` 的存取層級來產生。
+將 [**設定服務參考**] 對話方塊中的 [**產生的類別的存取層級**] 選項設定為 [**內部**] 或 [ **Friend** ]，可能不一定會有效。 雖然此選項會在對話方塊中顯示，但產生的支援類別是以 `Public`的存取層級來產生。
 
-這是已知的特定類型限制，例如使用 <xref:System.Xml.Serialization.XmlSerializer> 進行序列化的。
+這是已知的特定類型限制，例如使用 <xref:System.Xml.Serialization.XmlSerializer>進行序列化的。
 
 ## <a name="error-debugging-service-code"></a>偵錯工具服務程式代碼時發生錯誤
 
@@ -90,7 +90,7 @@ ms.locfileid: "72639594"
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services 不會顯示在瀏覽器中
 
-當它嘗試在 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] 中查看資料的 XML 表示時，Internet Explorer 可能會將資料錯誤解譯為 RSS 摘要。 請確定 [顯示 RSS 摘要] 的選項已停用。
+當它嘗試在 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]中查看資料的 XML 表示時，Internet Explorer 可能會將資料錯誤解譯為 RSS 摘要。 請確定 [顯示 RSS 摘要] 的選項已停用。
 
 若要修正此錯誤，請停用 RSS 摘要：
 

@@ -3,16 +3,16 @@ title: 設定多個啟始專案
 description: 本文描述如何設定多個專案以在執行或偵錯時啟動。
 author: sayedihashimi
 ms.author: sayedha
-ms.date: 02/21/2019
+ms.date: 12/13/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 3c7c3e00615463ba657ad93022f60ca856e026d6
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 46e6447e07d2ee8439fcd86f5d1519beaa1e4609
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872375"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406687"
 ---
 # <a name="set-multiple-startup-projects"></a>設定多個啟始專案
 
@@ -22,15 +22,15 @@ Visual Studio for Mac 可讓您指定要在對解決方案進行偵錯或執行�
 
 1. 在 [Solution Pad] 中，選取解決方案 (最上層節點)。
 
-2. 以滑鼠右鍵按一下解決方案節點，然後選取 [設定啟始專案]  ：
+2. 以滑鼠右鍵按一下解決方案節點，然後選取 [設定啟始專案]：
 
    ![選取 [設定啟始專案]](media/startup-proj-ctx-menu.png)
 
-3. [建立解決方案回合組態]  對話方塊隨即開啟。 此對話方塊可讓您為解決方案建立新的具名解決方案回合組態。 您可以使用任何名稱。 預設名稱為 `Multiple Projects`。
+3. [建立解決方案回合組態] 對話方塊隨即開啟。 此對話方塊可讓您為解決方案建立新的具名解決方案回合組態。 您可以使用任何名稱。 預設名稱為 `Multiple Projects`。
 
    ![[建立解決方案回合組態] 對話方塊](media/create-sln-run-config.png)
 
-4. 選取 [建立回合組態]  。 [解決方案選項]  對話方塊隨即開啟，並已選取新的解決方案回合組態：
+4. 選取 [建立回合組態]。 [解決方案選項] 對話方塊隨即開啟，並已選取新的解決方案回合組態：
 
    ![[解決方案選項] 對話方塊](media/sln-options-run-config-multi-projects.png)
 
@@ -38,7 +38,7 @@ Visual Studio for Mac 可讓您指定要在對解決方案進行偵錯或執行�
 
    ![已選取專案的 [解決方案選項] 對話方塊](media/sln-options-run-config-multi-projects-configured.png)
 
-6. 選取 [確定]  。 新的解決方案回合組態會被設定為作用中的回合組態：
+6. 選取 [確定]。 新的解決方案回合組態會被設定為作用中的回合組態：
 
    ![設定為在偵錯或執行時，要啟動多個專案的解決方案](media/startup-project-configured.png)
 

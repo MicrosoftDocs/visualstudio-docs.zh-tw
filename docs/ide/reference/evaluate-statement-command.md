@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Debug.EvaluateStatement command
 - Evaluate Statement command
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 753044ec79642b7ded0d07740c61f5ac2828d6d1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2b6333b6b57891065b42c2d56e3acfe68b315de
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654428"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595653"
 ---
 # <a name="evaluate-statement-command"></a>評估陳述式命令
 
@@ -30,7 +30,7 @@ ms.locfileid: "72654428"
 >Debug.EvaluateStatement text
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 
 `text`
 

@@ -8,21 +8,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ab4b1597ea9f91a1b5081e89fd4cb77e0d8c63
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9bf9a7e613a482167a01739320282f9ba8fdea26
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647152"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596888"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>逐步解說：以使用時產生功能進行測試優先開發
 
-本主題示範如何使用支援「測試優先」開發的[使用時產生](../ide/visual-csharp-intellisense.md#generate-from-usage)功能。
+本主題示範如何使用 [Generate From Usage](../ide/visual-csharp-intellisense.md#generate-from-usage) 功能，支援「測試先行」開發方式。
 
  *「測試先行」開發方式* (Test-first development) 這種軟體設計方法，要先根據產品規格撰寫單元測試，再撰寫測試成功所需要的原始程式碼。 Visual Studio 支援測試先行開發方式的做法是，當您第一次在測試案例中參考類型和成員時，先以原始程式碼產生新的類型和成員，再定義它們。
 

@@ -6,21 +6,21 @@ f1_keywords:
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES_COMPONENTS
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES COMPONENTS
 ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14ca8baa34de7763608641d9269b1721058c5af2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f1a7030b6c351407814314ccd41e0e2ed6a880e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649869"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593105"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>[系統活動] 索引標籤，選擇工具箱專案對話方塊
 
-[**選擇工具箱專案**] 對話方塊的這個索引標籤會顯示您可以使用的 WINDOWS WORKFLOW FOUNDATION （WF）活動、範本和專案的清單。 若要顯示此清單，請選取 [**工具**] 功能表中的 **[選擇工具箱專案**]，或以滑鼠右鍵按一下 [**工具箱**]，然後選取 **[選擇專案**] 以顯示 [**選擇工具箱專案**] 對話方塊，然後選取其 **[系統活動**] 索引標籤。此清單中包含來自系統的工作流程活動、system.servicemodel 和 Presentation 元件，以及不過，根據預設，只會選取系統提供的活動，以及透過 [**工具箱**] 中顯示的其他元件所新增的活動。 當您在對話方塊上按一下 **[確定]** 時，會自動檢查最近新增的活動並出現在 [**工具箱**] 中。 此外，這些專案會出現在 [**工具箱**] 中的新類別底下，其對應至活動/專案/範本所在的命名空間。
+[**選擇工具箱專案**] 對話方塊的這個索引標籤會顯示您可以使用的 WINDOWS WORKFLOW FOUNDATION （WF）活動、範本和專案的清單。 若要顯示這份清單，請從 [**工具**] 功能表選取 **[選擇工具箱專案**]，或以滑鼠右鍵按一下 [**工具箱**] 並選取 **[選擇專案**] 顯示 [**選擇工具箱專案**] 對話方塊，然後選取其 [系統] [**活動**] 索引標籤。此清單中包含來自 system.web、system.servicemodel 和 system.string 元件的工作流程活動;不過，根據預設，只會選取系統提供的活動，以及透過 [**工具箱**] 中顯示的其他元件所新增的活動。 當您在對話方塊上按一下 **[確定]** 時，會自動檢查最近新增的活動並出現在 [**工具箱**] 中。 此外，這些專案會出現在 [**工具箱**] 中的新類別底下，其對應至活動/專案/範本所在的命名空間。
 
 > [!WARNING]
 > 如果嘗試加入的組件並未包含任何工作流程活動，就會顯示錯誤對話方塊，說明該組件沒有包含任何活動。
@@ -29,7 +29,7 @@ ms.locfileid: "72649869"
 
 篩選會在每個索引標籤上完成，而且無法透過 [ **.Net 元件**] 索引標籤新增工作流程活動。請透過 [**系統**] 索引標籤本身新增。
 
-您可以從這個對話方塊索引標籤取消核取不想在 [**工具箱**] 中看到的任何專案，或者您也可以使用 [**工具箱**] 中的 [**刪除**] 右鍵功能表選項，取消參考元件，而不會將專案從**工具箱**。
+您可以從這個對話方塊索引標籤取消核取不想在 [**工具箱**] 中看到的任何專案，或者您也可以使用 [**工具箱**] 中的 [**刪除**] 右鍵功能表選項，取消參考元件，而不會從 [**工具箱**] 中移除該專案。
 
 利用拖放到設計工具的方式為活動建立執行個體，就會自動將包含該項目的組件加入至參考組件清單。 此外，如果活動參考某個組件 C，並不會將 C 加入至參考組件清單。 元件 C 必須在 GAC 或與活動 B 相同的目錄中。在獨立的情況下，元件必須在 GAC 中，或是在 VS 的探查路徑中。 唯有如此，才可在工作流程設計工具介面上拖放活動。
 

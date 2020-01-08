@@ -4,17 +4,17 @@ ms.date: 10/19/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - automated testing, lab management, test lab
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 223e494181eed4e137e096f13127c450e41c8db5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: bd6e9b2d9ea408e451b7032a00c3c96fb0ef2b58
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653073"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566822"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>使用 Azure Test Plans 而非 Lab Management 進行自動化測試
 

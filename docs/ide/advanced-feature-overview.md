@@ -2,17 +2,17 @@
 title: 進階功能
 ms.date: 06/01/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2283da7c212102ac948ea368bb95315344d2274e
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: f3ece317d753cb5c4b0b4e5b0e02707a088e8917
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919106"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591732"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 

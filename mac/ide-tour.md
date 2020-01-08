@@ -3,15 +3,15 @@ title: Visual Studio for Mac 教學課程
 description: Visual Studio for Mac 提供整合式的開發環境，以在 macOS 上建置 .NET 應用程式，包括 ASP.NET Core 網站，和適用於 iOS、Android、Mac 和 Xamarin.Forms 的 Xamarin 專案。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 12/13/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 6d2f0f891f704d3762bc0967da466960ee5170ee
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984712"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405823"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac 導覽
 
@@ -123,7 +123,7 @@ Visual Studio for Mac 提供兩種有用的方式來重構程式碼：內容動�
 
 ## <a name="debugging"></a>偵錯
 
-Visual Studio for Mac 具有原生偵錯工具，能夠支援 Xamarin.iOS、 Xamarin.Mac 和 Xamarin.Android 應用程式的偵錯。 Visual Studio for Mac 使用 Mono Soft Debugger，它實作到 Mono 執行階段之中，讓 IDE 能跨所有平台進行 Managed 程式碼的偵錯。 如需偵錯的詳細資訊，請瀏覽[偵錯](/visualstudio/mac/debugging)一文。
+Visual Studio for Mac 具有支援 .NET Core、.NET Framework、Unity 和 Xamarin 專案的偵錯工具。 Visual Studio for Mac 使用 .NET Core 偵錯工具和 Mono 軟偵錯工具，讓 IDE 在所有平臺上都能跨受控碼進行偵錯工具。 如需偵錯的詳細資訊，請瀏覽[偵錯](/visualstudio/mac/debugging)一文。
 
 偵錯工具包含適用于特殊類型的豐富視覺化檢視，例如字串、色彩、Url，以及大小、座標和貝茲曲線。
 

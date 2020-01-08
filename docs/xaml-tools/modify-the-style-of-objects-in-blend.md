@@ -3,17 +3,17 @@ title: 修改物件的樣式
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 225a9e85493711a1e2903c1f6a632ae68f31136f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668829"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592949"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>在 Blend for Visual Studio 中修改物件的樣式
 
@@ -75,7 +75,7 @@ ms.locfileid: "72668829"
 
 > [!NOTE]
 > 您無法為每一個類型的控制項建立樣式或範本。 如果控制項不支援此項，階層連結按鈕就不會出現在畫板上。
-> 若要回到主文件的編輯範圍，請按一下 [將範圍傳回] ![將範圍傳回圖示](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png)。
+> 若要回到主文件的編輯範圍，請按一下 [**將範圍**傳回]，![將範圍傳回圖示](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png)。
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>將樣式或範本套用至控制項
 
@@ -93,7 +93,7 @@ ms.locfileid: "72668829"
 
 ![滑鼠移至上方狀態](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**觀看短片：** ![播放按鈕](../designers/media/bldadminconsoleinitialconfigicon.PNG) [管理 WPF 控制項的狀態](https://www.youtube.com/watch?v=m0PlkF5i6uw) \(英文\)。
+**觀看短片： ![[播放]** 按鈕](../designers/media/bldadminconsoleinitialconfigicon.PNG)[管理 WPF 控制項的狀態](https://www.youtube.com/watch?v=m0PlkF5i6uw)。
 
 ## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>資源：建立色彩、樣式和範本，之後重複使用這些項目
 

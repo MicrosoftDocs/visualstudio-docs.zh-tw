@@ -13,27 +13,27 @@ helpviewer_keywords:
 - MSBuild, ResolveCOMReference task
 - ResolveCOMReference task [MSBuild]
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecefab48babc2938a4995ec8232e0aa7a06dae3c
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 3fdc6c6ccd58bcc83cc37ff3a9f7888af837ed6e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681103"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595198"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 工作
 
-取得一或多個類型程式庫名稱或 *.tlb* 檔案的清單，並將那些類型程式庫解析至磁碟上的位置。
+取得一或多個類型程式庫名稱的清單或 *.tlb* 檔案，並將那些類型程式庫解析至磁碟上的位置。
 
 ## <a name="parameters"></a>參數
 
  下表說明 `ResolveCOMReference` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`DelaySign`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則將公開金鑰放在組件中。 如為 `false`，則完整簽署組件。|
 |`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 環境變數組陣列，以等號分隔。 這些變數是在規則環境區塊以外傳遞至繁衍的 *tlbimp.exe* 和 *aximp.exe*，或選擇性地覆寫。|
@@ -49,15 +49,15 @@ ms.locfileid: "68681103"
 |`StateFile`|選擇性的 `String` 參數。<br /><br /> 指定 COM 元件時間戳記的快取檔案。 如果沒有，則每次執行都會重新產生所有的包裝函式。|
 |`TargetFrameworkVersion`|選擇性的 `String` 參數。<br /><br /> 指定專案目標 Framework 版本。<br /><br /> 預設為 `String.Empty`。 這表示不篩選以目標 Framework 為基礎的參考。|
 |`TargetProcessorArchitecture`|選擇性的 `String` 參數。<br /><br /> 指定慣用的目標處理器架構。 平移後，傳遞至 *tlbimp.exe*/machine 旗標。<br /><br /> 參數值應該是 <xref:Microsoft.Build.Utilities.ProcessorArchitecture> 的成員。|
-|`TypeLibFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定 COM 參考的類型程式庫檔案路徑。 此參數中包含的項目可能包含項目中繼資料。 如需詳細資訊，請參閱下面的 [TypeLibFiles 項目中繼資料](#typelibfiles-item-metadata)一節。|
-|`TypeLibNames`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要解析的類型程式庫名稱。 此參數中包含的項目必須包含某些項目中繼資料。 如需詳細資訊，請參閱下面的 [TypeLibNames 項目中繼資料](#typelibnames-item-metadata)一節。|
+|`TypeLibFiles`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定 COM 參考的類型程式庫檔案路徑。 此參數中包含的項目可能包含項目中繼資料。 如需詳細資訊，請參閱下面的 [TypeLibFiles 項目中繼資料](#typelibfiles-item-metadata)一節。|
+|`TypeLibNames`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要解析的類型程式庫名稱。 此參數中包含的項目必須包含某些項目中繼資料。 如需詳細資訊，請參閱下面的 [TypeLibNames 項目中繼資料](#typelibnames-item-metadata)一節。|
 |`WrapperOutputDirectory`|選擇性的 `String` 參數。<br /><br /> 產生的 interop 組件在磁碟上所在位置。 如未指定此項目中繼資料，工作會使用專案檔所在目錄的絕對路徑。|
 
 ## <a name="typelibnames-item-metadata"></a>TypeLibNames 項目中繼資料
 
  下表描述將項目傳遞給 `TypeLibNames` 參數的可用項目中繼資料。
 
-|中繼資料|說明|
+|中繼資料|描述|
 |--------------|-----------------|
 |`GUID`|必要的項目中繼資料。<br /><br /> 類型程式庫的 GUID。 如未指定此項目中繼資料，則工作會失敗。|
 |`VersionMajor`|必要的項目中繼資料。<br /><br /> 類型程式庫的主要版本。 如未指定此項目中繼資料，則工作會失敗。|
@@ -70,7 +70,7 @@ ms.locfileid: "68681103"
 
  下表描述將項目傳遞給 `TypeLibFiles` 參數的可用項目中繼資料。
 
-|中繼資料|說明|
+|中繼資料|描述|
 |--------------|-----------------|
 |`EmbedInteropTypes`|選擇性的 `Boolean` 參數。<br /><br />  若為 `true`，就會將 Interop 類型從這個參考直接內嵌到您的組件中，而不是產生 Interop DLL。|
 |`WrapperTool`|選擇性項目中繼資料。<br /><br /> 指定為此類型程式庫產生組件包裝函式使用的包裝函式工具。 如未指定此項目中繼資料，工作會使用預設的包裝函式工具 "tlbimp"。 可用且不區分大小寫的 TypeLib 選項有：<br /><br /> -   `Primary`：當您想要使用 COM 元件已產生的主要 Interop 組件時，請使用此包裝函式工具。 當您使用此包裝函式工具時，請勿指定包裝函式的輸出目錄，因為這會造成工作失敗。<br />-   `TLBImp`：當您想要產生 COM 元件的 Interop 組件時，請使用此包裝函式工具。<br />-   `AXImp`：當您想要產生 ActiveX 控制項的 Interop 組件時，請使用此包裝函式工具。|
@@ -84,7 +84,7 @@ ms.locfileid: "68681103"
 
 COM DLL 無須在機器上註冊，此工作便能運作。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

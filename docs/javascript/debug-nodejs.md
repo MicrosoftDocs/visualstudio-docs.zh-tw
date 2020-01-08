@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777929"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678970"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行偵錯
 
@@ -44,7 +44,7 @@ ms.locfileid: "74777929"
 ## <a name="debug-client-side-script"></a>偵錯用戶端指令碼
 
 ::: moniker range=">=vs-2019"
-Visual Studio 僅提供適用于 Chrome 和 Microsoft Edge （Chromium）的用戶端偵錯工具支援。 在某些情節中，偵錯工具會自動叫用 JavaScript 和 TypeScript 程式碼以及 HTML 檔案內嵌指令碼的中斷點。 如需在 ASP.NET apps 中進行用戶端腳本的偵錯工具，請參閱[Microsoft Edge 中的偵錯工具 JavaScript](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/)和此[適用于 Google Chrome 的文章](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome)。
+Visual Studio 僅提供適用于 Chrome 和 Microsoft Edge （Chromium）的用戶端偵錯工具支援。 在某些情節中，偵錯工具會自動叫用 JavaScript 和 TypeScript 程式碼以及 HTML 檔案內嵌指令碼的中斷點。 如需在 ASP.NET apps 中進行用戶端腳本的偵錯工具，請參閱[Microsoft Edge 中的偵錯工具 JavaScript](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/)和此[適用于 Google Chrome 的文章](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome)。 如需在 ASP.NET Core 中調試 TypeScript，另請參閱[使用 TypeScript 建立 ASP.NET Core 應用程式](tutorial-aspnet-with-typescript.md)。
 ::: moniker-end
 ::: moniker range="vs-2017"
 Visual Studio 僅提供 Chrome 和 Internet Explorer 的用戶端偵錯工具支援。 在某些情節中，偵錯工具會自動叫用 JavaScript 和 TypeScript 程式碼以及 HTML 檔案內嵌指令碼的中斷點。 如需在 ASP.NET apps 中進行用戶端腳本的偵錯工具，請參閱[Google Chrome 中 ASP.NET 專案的用戶端偵錯工具](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/)的 blog 文章。
@@ -86,7 +86,7 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的用戶端偵錯工具支
 
     `msedge --remote-debugging-port=9222`
 
-    或
+    或者，
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -187,7 +187,7 @@ Visual Studio 能夠在 JavaScript 來源檔案上使用及產生來源對應。
 
 若要設定來源對應的進階設定，請使用 *tsconfig.json* 或 TypeScript 專案的專案設定，但不要同時使用這兩者。
 
-若要使用 Visual Studio 來啟用偵錯工具，您必須確定所產生來源對應中的來源檔案參考是否正確（這可能需要測試）。 例如，如果您使用 webpack，則來源對應檔中的參考會包含*webpack:///* 前置詞，這可防止 Visual Studio 尋找 TYPESCRIPT 或 JSX 原始程式檔。 具體來說，當您修正此問題以進行調試時，必須將來源檔案（例如*app.config*）的參考從*webpack:///./app.tsx*之類的專案變更為類似 */app.tsx*，以啟用偵錯工具（path 是相對於您的原始程式檔）。 下列範例示範如何在 webpack 中設定來源對應，這是最常見的 browserify 之一，因此可與 Visual Studio 搭配使用。
+若要使用 Visual Studio 來啟用偵錯工具，您必須確定所產生來源對應中的來源檔案參考是否正確（這可能需要測試）。 例如，如果您使用 webpack，則來源對應檔中的參考會包含*webpack:///* 前置詞，這可防止 Visual Studio 尋找 TYPESCRIPT 或 JSX 原始程式檔。 具體來說，當您修正此問題以進行偵錯工具時，必須將來源檔案（例如*app.config*）的參考從*webpack:///./app.tsx*之類的專案變更為類似 */app.tsx*的專案，以啟用偵錯工具（相對於您的來源檔案的路徑）。 下列範例示範如何在 webpack 中設定來源對應，這是最常見的 browserify 之一，因此可與 Visual Studio 搭配使用。
 
 （僅限 Webpack）如果您要在 JSX 檔案的 TypeScript 中設定中斷點（而不是轉換 JavaScript 檔案），則必須更新您的 webpack 設定。 例如，在*webpack-config.js*中，您可能需要取代下列程式碼：
 
@@ -236,7 +236,7 @@ Visual Studio 能夠在 JavaScript 來源檔案上使用及產生來源對應。
 * **inlineSources**：在單一檔案中的來源對應旁發出來源;需要設定*inlineSourceMap*或*sourceMap* 。
 * **mapRoot**：指定偵錯工具應尋找來源對應（ *.map*）檔案的位置，而不是預設位置。 如果執行階段 *.map* 檔案必須與 *.js* 檔案位於不同的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至 *.map* 檔案的位置。
 * **sourceMap**：產生對應的 *.map*檔案。
-* **sourceRoot**：指定偵錯工具應尋找 TypeScript 檔案的位置，而不是來源位置。 如果執行階段原始檔所在位置必須不同於設計階段時的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至來源檔案所在的位置。
+* **sourceRoot**：指定偵錯工具應尋找 TypeScript 檔案的位置，而不是來源位置。 如果執行階段原始檔所在位置必須不同於設計階段時的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至原始檔所在的位置。
 
 如需編譯器選項的詳細資料，請參閱 TypeScript 手冊上的 [Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html) (編譯器選項) 頁面。
 
@@ -248,7 +248,7 @@ Visual Studio 能夠在 JavaScript 來源檔案上使用及產生來源對應。
 
 * **產生來源**對應（相當於*Tsconfig*中的**sourceMap** ）：產生對應*的 .map*檔案。
 * **指定來源對應的根目錄**（相當於*Tsconfig*中的**mapRoot** ）：指定偵錯工具應該尋找對應檔案的位置，而不是所產生的位置。 如果執行階段 *.map* 檔案必須與 .js 檔案位於不同的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至對應檔案所在的位置。
-* **指定 typescript 檔案的根目錄**（相當於*Tsconfig*中的**sourceRoot** ）：指定偵錯工具應尋找 TypeScript 檔案的位置，而不是來源位置。 如果執行階段原始檔所在位置必須不同於設計階段時的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至來源檔案所在的位置。
+* **指定 typescript 檔案的根目錄**（相當於*Tsconfig*中的**sourceRoot** ）：指定偵錯工具應尋找 TypeScript 檔案的位置，而不是來源位置。 如果執行階段原始檔所在位置必須不同於設計階段時的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至原始檔所在的位置。
 
 ## <a name="debug-javascript-in-dynamic-files-using-razor-aspnet"></a>使用 Razor (ASP.NET) 偵錯動態檔案中的 JavaScript
 

@@ -2,17 +2,17 @@
 title: T4 範本指示詞
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 410bc879ff4822f19436794d3cb99732be9d413e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983697"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591836"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 
@@ -96,7 +96,7 @@ hostspecific="true"
 
 由於這個屬性的類型依主應用程式的類型而定，因此只有在撰寫僅限搭配特定主應用程式使用的文字範本時才有用處。 它適用于[設計階段範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不適用於[執行時間範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
-當 `hostspecific` `true`，而且您使用 Visual Studio 時，您可以將 `this.Host` 轉換成 IServiceProvider，以存取 Visual Studio 功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如:
+當 `hostspecific` `true`，而且您使用 Visual Studio 時，您可以將 `this.Host` 轉換成 IServiceProvider，以存取 Visual Studio 功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如：
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -134,7 +134,7 @@ Content of myFile is:
 
 `language` 屬性會指定要用於語句和運算式區塊中之原始程式碼的語言（[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]）。 從中產生輸出的中繼程式碼檔會使用這個語言。 這個語言與範本產生的語言無關，它可以是任何種類的文字。
 
-例如:
+例如：
 
 ```vb
 <#@ template language="VB" #>

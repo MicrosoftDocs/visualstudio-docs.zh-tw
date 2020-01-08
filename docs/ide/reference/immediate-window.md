@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Immediate window
 - first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5f804c22090fa79586549db00b13d824a54690
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662534"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568954"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 
@@ -90,7 +90,7 @@ ms.locfileid: "72662534"
 
 在 [即時運算] 視窗中發出 Visual Studio 命令時，必須輸入大於符號 (>)。 使用**向上鍵**和**向下鍵**，捲動並檢視先前使用的命令。
 
-|工作|方案|範例|
+|工作|解決方案|範例|
 |----------|--------------|-------------|
 |評估運算式。|在運算式前面加上問號 (?)。|`? a+b`|
 |在即時模式中時，暫時進入命令模式 (以執行單一命令)。|輸入命令，並在前面加上大於符號 (>)。|`>alias`|

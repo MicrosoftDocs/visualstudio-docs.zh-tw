@@ -10,17 +10,17 @@ helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ca3d54a7e2643baebe44e0f2756d6ae65eb228d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747791"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565600"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>專案設計工具，參考頁 (Visual Basic)
 
@@ -48,7 +48,7 @@ ms.locfileid: "72747791"
 
 這份清單會顯示專案中的所有參考 (不論使用或未使用)。
 
- **新增**
+ **[新增]**
 
 按一下此按鈕，即可將參考或 Web 參考新增至 [參考] 清單。
 

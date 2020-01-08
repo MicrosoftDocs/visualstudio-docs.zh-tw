@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, RemoveDuplicates task
 - RemoveDuplicates task [MSBuild]
 ms.assetid: 481cbab6-73ff-488c-aba5-2c09f9eb1e04
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 027e1f4894660b0198ed8a6df862e66e41cde409
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 235f96b3d67b0ad2e3c3bd1c486c5c9f2eeb86c2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811611"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596004"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates 工作
 從指定的項目集合中移除重複項目。
@@ -31,10 +31,10 @@ ms.locfileid: "62811611"
 ## <a name="parameters"></a>參數
  下表說明 `RemoveDuplicates` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`Filtered`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含已移除所有重複項目的項目集合。 系統會保存輸入項目的順序，保留每個重複項目的第一個執行個體。|
-|`Inputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要從中移除重複項目的項目集合。|
+|`Inputs`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要從中移除重複項目的項目集合。|
 
 ## <a name="remarks"></a>備註
  此工作不區分大小寫，而且在判斷重複項目時不會比較項目中繼資料。
@@ -89,7 +89,7 @@ ms.locfileid: "62811611"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [工作](../msbuild/msbuild-tasks.md)

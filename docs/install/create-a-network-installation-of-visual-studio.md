@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca393af528abc7f685ceca83ac4c59ebb75dedfe
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: e7bc45db427a517a9208833cc5be6977bfc62d03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189486"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591472"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
@@ -39,21 +39,21 @@ ms.locfileid: "73189486"
 
 若要取得 Visual Studio 2017 的啟動載入器，請參閱[Visual Studio 舊版](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
 
-您的安裝程式可執行檔 &mdash;or 更明確，啟動載入器檔案 &mdash;should 相符，或類似于下列其中一項。
+您的安裝程式可執行檔&mdash;或更具體來說，啟動載入器檔案&mdash;應符合或類似下列其中一項。
 
-| 版本 | Filename |
+| 版本 | {2&gt;檔案名稱&lt;2} |
 |-------------|-----------------------|
 |Visual Studio 企業版 | **vs_enterprise.exe** |
 |Visual Studio Professional | **vs_professional.exe** |
 |Visual Studio Build Tools   | **vs_buildtools .exe** |
 
-其他支援的啟動載入器包括**vs_feedbackclient**、 **vs_teamexplorer**、 **vs_testagent**、 **vs_testcontroller**和**vs_testprofessional**.exe。
+其他支援的啟動載入器包括**vs_feedbackclient .exe**、 **vs_teamexplorer .exe**、 **vs_testagent .exe**、 **vs_testcontroller .exe**和**vs_testprofessional .exe**。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-您的安裝程式可執行檔 &mdash;or 更明確，啟動載入器檔案 &mdash;should 相符，或類似下列其中一項。
+您的安裝程式可執行檔&mdash;或更明確，啟動載入器檔案&mdash;應符合或類似下列其中一項。
 
 |版本 | 下載|
 |-------------|-----------------------|
@@ -61,7 +61,7 @@ ms.locfileid: "73189486"
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 | Visual Studio Build Tools   | [**vs_buildtools .exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
-其他支援的啟動載入器包括[vs_teamexplorer .exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe)、 [vs_testagent](https://aka.ms/vs/16/release/vs_testagent.exe)和[vs_testcontroller](https://aka.ms/vs/16/release/vs_testcontroller.exe)。
+其他支援的啟動載入器包括[vs_teamexplorer .exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe)、 [vs_testagent .exe](https://aka.ms/vs/16/release/vs_testagent.exe)和[vs_testcontroller .exe](https://aka.ms/vs/16/release/vs_testcontroller.exe)。
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ ms.locfileid: "73189486"
 
 您可以修改 response.json，以設定安裝程式執行時所使用的預設值。  例如，您可以設定 `response.json` 檔案來自動選取所選的一組特定工作負載。 如需詳細資訊，請參閱[使用回應檔自動安裝 Visual Studio](automated-installation-with-response-file.md)。
 
-而且，如果您遇到 Visual Studio 啟動載入器發生問題，當您將它與回應 json 檔案配對時擲回錯誤，請參閱[當您安裝或使用視覺效果時，針對網路相關錯誤進行疑難排解一節中的「無法從父進程剖析識別碼」一節。Studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)頁面，以取得如何執行的詳細資訊。
+而且，如果您遇到 Visual Studio 啟動載入器發生問題，當您將它與回應 json 檔案配對時擲回錯誤，請參閱[當您安裝或使用 Visual Studio 時，針對網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)一節中的「無法從父進程剖析識別碼」一節，以取得執行作業的詳細資訊。
 
 ## <a name="copy-the-layout-to-a-network-share"></a>將配置複製到網路共用
 

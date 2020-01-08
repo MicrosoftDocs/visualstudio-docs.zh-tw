@@ -6,17 +6,17 @@ helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, separating Datasets and TableAdapters
 ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9198378c5acf492216e2bebaceb210073766ea23
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8df444646512ecd4dba866fccf6da5fdf7a8bab3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648191"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586220"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>將資料集和 TableAdapter 分成不同的專案
 具類型的資料集已經過增強，因此可以在不同的專案中產生[tableadapter](create-and-configure-tableadapters.md)和 dataset 類別。 這可讓您快速分隔應用層，並產生多層式資料應用程式。

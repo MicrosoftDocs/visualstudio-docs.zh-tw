@@ -2,8 +2,8 @@
 title: 產生類別或類型
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d561a77006b83d366506b48d3a164ada380b1a24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660069"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595627"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>在 Visual Studio 中產生類別或類型
 
@@ -51,8 +51,8 @@ ms.locfileid: "72660069"
       - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 圖示。
-      - 按一下 ![錯誤燈泡](media/error-bulb.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
+      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 出現的圖示。
+      - 按一下 ![錯誤燈泡](media/error-bulb.png) 圖示，如果文字游標已經在具有紅色曲線的行上，此圖示就會出現在左邊界上。
 
       ![「產生類別」預覽](media/class-preview-cs.png)
 
@@ -72,9 +72,9 @@ ms.locfileid: "72660069"
 
    選取 | 描述
    --- | ---
-   Access | 將類型設定為擁有 [預設]內部 或 [公用] 存取權。
+   存取 | 將類型設定為擁有 [預設]內部 或 [公用] 存取權。
    類型 | 這可以設定為 [類別] 或 [結構]。
-   [屬性] | 此名稱無法變更且將是您已經輸入的名稱。
+   Name | 此名稱無法變更且將是您已經輸入的名稱。
    專案 | 如果您的方案中有多個專案，則您可以選擇要將類別/結構放在哪個專案中。
    檔案名稱 | 您可以建立新檔案，或是將類型新增至現有的檔案。
 

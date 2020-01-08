@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Toolbox [Visual Studio]
 - custom controls [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5311c9a910c3140d5a5053a42befe7ed7f5b1278
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7decdb80cd06b1af3230b2926c4ebd37b48e422
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651130"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596446"
 ---
 # <a name="toolbox"></a>工具箱
 
@@ -61,13 +61,13 @@ ms.locfileid: "72651130"
 
 ## <a name="create-and-distribute-custom-toolbox-controls"></a>建立和散發自訂工具箱控制項
 
-您可以使用以 [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) 或 [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md) 為基礎的專案範本，以開始建立自訂 [工具箱] 控制項。 您接著可以將自訂控制項發佈給小組成員，或使用[工具箱控制項安裝程式](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)將它發佈到網路上。
+您可以使用以 [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) 或 [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md) 為基礎的專案範本，以開始建立自訂 [工具箱] 控制項。 您接著可以將自訂控制項發佈給小組成員，或使用[工具箱控制項安裝程式](https://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)將它發佈到網路上。
 
 ## <a name="help-on-toolbox-tabs"></a>工具箱索引標籤上的說明
 
 下列主題提供一些可用 [工具箱] 索引標籤的詳細資訊：
 
-- [資料索引標籤、工具箱](../../ide/reference/toolbox-data-tab.md)
+- [工具箱、資料索引標籤](../../ide/reference/toolbox-data-tab.md)
 - [工具箱、元件索引標籤](../../ide/reference/toolbox-components-tab.md)
 - [HTML 索引標籤、工具箱](../../ide/reference/toolbox-html-tab.md)
 

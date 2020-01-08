@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Code Editor, displaying URLs
 - editors, displaying URLs
 ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9814614ae752a670a8b707e6fd701a5fa151f481
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aefabb480830f7fc649bc73d47a3b47594100616
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668584"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569084"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>如何：以連結方式顯示編輯器中的 URL
 
@@ -37,7 +37,7 @@ ms.locfileid: "72668584"
 
 3. 若只要變更單一語言的選項，請展開該語言的資料夾，並選擇 [一般]。
 
-     -或-
+     —或—
 
      若要變更所有語言的選項，請展開 [所有語言] 資料夾，並選擇 [一般]。
 

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0921d89caa6428c45dc2522e78f58bde50f84be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654451"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569659"
 ---
 # <a name="error-list-window"></a>錯誤清單視窗
 
@@ -70,11 +70,11 @@ ms.locfileid: "72654451"
 
 您可以使用 [錯誤清單] 工具列右邊的 [搜尋錯誤清單] 文字方塊，從錯誤清單中找出特定錯誤。 您可以在錯誤清單中任何可見的資料行上搜尋，而搜尋結果永遠是依據有排序優先順序的資料行排序，而不是依據套用的查詢或篩選條件。 當 [錯誤清單] 顯示時，如果您選擇 **Esc** 鍵，則可以清除搜尋詞彙和篩選的搜尋結果。 您也可以按一下文字方塊右邊的 **X** 將它清除。
 
-## <a name="save"></a>Save
+## <a name="save"></a>儲存
 
 您可以複製錯誤清單並將它儲存到檔案。 選取您要複製的錯誤，以滑鼠右鍵按一下選取範圍，然後在操作功能表中選取 [複製]。 然後您可以將錯誤貼至檔案。 如果您將錯誤貼至 Excel 試算表，欄位會顯示為不同的資料行。
 
-## <a name="ui-element-list"></a>UI 項目清單
+## <a name="ui-element-list"></a>UI 元素清單
 
 嚴重性
 
@@ -92,10 +92,10 @@ ms.locfileid: "72654451"
 
 會顯示目前專案的名稱。
 
-檔案
+File
 
 會顯示檔案名稱。
 
-線
+行
 
 會顯示發生錯誤的行。

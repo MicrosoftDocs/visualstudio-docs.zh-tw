@@ -23,17 +23,17 @@ helpviewer_keywords:
 - Call Stack window, show on code map
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 736b203feb5b1a640d7865b92a6d3ad191397d26
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4a918cc94cd242c74b672ff65c3d5093f111a25f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985040"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593300"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 
@@ -71,7 +71,7 @@ ms.locfileid: "72985040"
 
 - [使用對應尋找 bug](#FindBugs)
 
-- [問 & A](#QA)
+- [問與答](#QA)
 
   如需您在處理 code map 時可使用的命令和動作的詳細資訊，請參閱[流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)。
 
@@ -79,7 +79,7 @@ ms.locfileid: "72985040"
 
 1. 開始偵錯。 （鍵盤： **F5**）
 
-2. 當您的應用程式進入中斷模式，或您逐步執行函式之後，請選擇 [ **Code Map**]。 （鍵盤： **Ctrl**  + **Shift**  +  **`** ）
+2. 當您的應用程式進入中斷模式，或您逐步執行函式之後，請選擇 [ **Code Map**]。 （鍵盤： **Ctrl** + **Shift** +  **`** ）
 
      ![選擇 [Code Map] 開始對應堆疊呼叫](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -178,7 +178,7 @@ ms.locfileid: "72985040"
 
 - **如何? 停止對應自動加入新的呼叫堆疊嗎？**
 
-   選擇 [![&#45; ] 按鈕會在 [對應] 工具列上，Code Map 自動](../debugger/media/debuggermap_automaticupdateicon.gif)顯示呼叫堆疊。 若要以手動方式將目前的呼叫堆疊加入至地圖，請按**Ctrl**  + **Shift**  +  **`** 。
+   選擇 [![&#45; ] 按鈕會在 [對應] 工具列上，Code Map 自動](../debugger/media/debuggermap_automaticupdateicon.gif) 顯示呼叫堆疊。 若要以手動方式將目前的呼叫堆疊加入至地圖，請按**Ctrl** + **Shift** +  **`** 。
 
    當您正在進行調試時，地圖會繼續反白顯示對應上的現有呼叫堆疊。
 

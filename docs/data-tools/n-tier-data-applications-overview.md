@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data tier
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80b6f89d9c074d7d17c258263c03e97334e6fd90
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 21233b94350823b1f765aa33f9304c10c43e0535
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648281"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586376"
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構 (N-Tier) 資料應用程式概觀
 多*層式*資料應用程式是分割成多*層*的資料應用程式。 多層式應用程式也稱為「分散式應用程式」和「多層式應用程式」，可將處理分隔成在用戶端與伺服器之間散發的離散層。 當您開發可存取資料的應用程式時，您應該在組成應用程式的各層之間有清楚的分隔。
@@ -57,16 +57,16 @@ Visual Studio 包含數項功能，可協助開發人員建立多層式應用程
 
 下圖顯示 Visual Studio 中可用的功能和技術，以及它們可能符合多層式應用程式仲介層的位置。
 
-![Middle 層元件 ](../data-tools/media/ntiermid.png) 中介層
+![中介層元件](../data-tools/media/ntiermid.png) 仲介層
 
 中介層通常會使用資料連線來連接到資料層。 此資料連線通常會儲存在資料存取元件中。
 
 ## <a name="data-tier"></a>資料層
-*資料層*基本上是儲存應用程式資料的伺服器（例如，執行 SQL Server 的伺服器）。
+*資料層* 基本上是儲存應用程式資料的伺服器 (例如，執行 SQL Server 的伺服器)。
 
 下圖顯示 Visual Studio 中可用的功能和技術，以及可能適用于多層式架構應用程式資料層的位置。
 
-![Data 層元件 ](../data-tools/media/ntierdatatier.png) 資料層
+![資料層元件](../data-tools/media/ntierdatatier.png) 資料層
 
 資料層無法直接從展示層中的用戶端存取。 相反地，仲介層中的資料存取元件會用於簡報和資料層之間的通訊。
 

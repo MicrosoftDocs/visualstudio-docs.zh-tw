@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Options dialog box, international settings
 - languages, specifying default
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e55c0e81877c2735571705a2b2d2529b0fa3a74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1526e1c49636f4883392caa63966714625d066d6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666995"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595510"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>選項對話方塊：環境 \> 國際設定
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - log Command window output command
 - View.LogCommandWindowOutput command
 ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2056cf335f2cf6024e6ebb4b5daff72e54dd9d50
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610437"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568655"
 ---
 # <a name="log-command-window-output-command"></a>記錄命令視窗輸出命令
 
@@ -30,7 +30,7 @@ ms.locfileid: "72610437"
 Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 
 `filename`\
 選擇項。 記錄檔的名稱。 根據預設，檔案會建立在使用者的設定檔資料夾中。 如果檔案名稱已經存在，就會將記錄附加至現有的檔案結尾。 如果未指定任何檔案，則會使用最近指定的檔案。 如果沒有先前的檔案存在，會建立預設記錄檔，稱為 cmdline.log。
@@ -38,7 +38,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 > [!TIP]
 > 若要變更儲存記錄檔的位置，請輸入檔案的完整路徑，如果路徑包含任何空格則以引號括住。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換機
 
 /on\
 選擇項。 開始在指定的檔案中記錄 [命令] 視窗，並將新資訊附加至檔案。

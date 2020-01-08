@@ -5,12 +5,12 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 57d956a426e791fcc84d5972f564cd554d6e72f8
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903990"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406099"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何增加修正效能問題的機率
 
@@ -39,6 +39,8 @@ Visual Studio 是一個大型、複雜的平臺，支援多種語言、專案類
 -   [緩慢問題：](#slowness-and-high-cpu-issues)VS 中的任何特定動作速度低於所需
 
 -   [高 CPU：](#slowness-and-high-cpu-issues)非預期的高 CPU 使用量長時間
+
+-   [跨進程問題：](#out-of-process-issues)Visual Studio 衛星進程所造成的問題
 
 ## <a name="crashes"></a>損毀
 當進程（Visual Studio）意外終止時，就會發生損毀。
@@ -171,6 +173,23 @@ VS 會變得沒有回應一段頗長的時間。
 **先進的效能追蹤**
 
 在「報告-問題」工具中的追蹤收集功能，足以應付大部分的情況。 但有時候需要更多的追蹤收集控制權（例如，具有較大緩衝區大小的追蹤），在此情況下，PerfView 是很棒的工具可供使用。 使用 PerfView 工具手動錄製效能追蹤的步驟，請參閱使用[PerfView 記錄效能](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView)追蹤頁面。
+
+## <a name="out-of-process-issues"></a>跨進程問題
+
+> [!NOTE]
+> 從 Visual Studio 2019 16.3 版開始，跨進程記錄檔會自動附加至使用「回報問題」工具提交的意見反應。 不過，如果問題直接重現，遵循下列步驟仍然可以協助新增額外的資訊，以協助您更進一步診斷問題。
+
+有一些附屬程式會平行執行以 Visual Studio，並從主要 Visual Studio 程式外部提供各種功能。 如果其中一個附屬進程發生錯誤，通常會在 Visual Studio 端上看到為 ' StreamJsonRpc. RemoteInvocationException ' 或 ' StreamJsonRpc. ConnectionLostException '。
+
+導致這些類型的問題最具動作的是，提供可依照下列步驟來收集的其他記錄：
+
+1.  如果這是可直接重現的問題，請從刪除 **% temp%/servicehub/logs**資料夾開始。 如果您無法重現此問題，請將此資料夾保持不變，並忽略下列專案符號：
+
+    -   將全域環境變數**ServiceHubTraceLevel**設定為**All**
+    -   重現問題。
+
+2.  在[這裡](https://aka.ms/vscollect)下載 Microsoft Visual Studio 和 .NET Framework 記錄收集工具。
+3.  執行工具。 這會將 zip 檔案輸出至 **% temp%/vslogs.zip**。 請將該檔案附加到您的意見反應。
 
 ## <a name="see-also"></a>請參閱
 

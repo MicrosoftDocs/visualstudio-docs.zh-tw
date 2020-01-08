@@ -3,17 +3,17 @@ title: HOW TO：建立 XML 片段
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb511ba6f2eea9c56be4e826c3b689856c22214a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: df3c2592036f085fcf89d80bcefb1a469b3c1e15
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645932"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592746"
 ---
 # <a name="how-to-create-xml-snippets"></a>如何：建立 XML 片段
 
@@ -56,9 +56,9 @@ XML 編輯器可以用來建立新的 XML 片段。 該編輯器包括名為 Sni
 </SnippetTypes>
 ```
 
-@No__t_0 類型會決定當您叫用 [**插入程式碼片段**] 命令時，程式碼片段是否出現。 @No__t_0 類型會決定當您叫**用 [環繞于**] 命令時，是否顯示程式碼片段。
+`Expansion` 類型會決定當您叫用 [**插入程式碼片段**] 命令時，程式碼片段是否出現。 `SurroundsWith` 類型會決定當您叫**用 [環繞于**] 命令時，是否顯示程式碼片段。
 
-### <a name="code-element"></a>程式碼項目
+### <a name="code-element"></a>程式碼元素
 
 `Code` 項目定義叫用片段時將插入的 XML 文字。
 

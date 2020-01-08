@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 25978ae5fa76afc7cd43c9ccc243f25712495ddd
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: ce5e4d1e8ed3505d1f971ef209c7e05ba85e0d69
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879278"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75402038"
 ---
 # <a name="annotating-locking-behavior"></a>註釋鎖定行為
 為了避免多執行緒程式中發生並行 Bug，請務必遵循適當的鎖定規範並使用 SAL 註釋。
@@ -64,7 +64,7 @@ SAL 支援多種不同的鎖定基本類型，例如關鍵區段、Mutex、微�
 ## <a name="locking-annotations"></a>鎖定注釋
 下表列出鎖定注釋。
 
-|Annotation|描述|
+|註釋|描述|
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的獨佔鎖定計數遞增 1。|
 |`_Acquires_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的鎖定計數遞增 1。|
@@ -73,7 +73,7 @@ SAL 支援多種不同的鎖定基本類型，例如關鍵區段、Mutex、微�
 |`_Create_lock_level_(name)`|將符號 `name` 宣告為鎖定層級的陳述式，如此該符號就可以在註釋 `_Has_Lock_level_` 和 `_Lock_level_order_` 中使用。|
 |`_Has_lock_kind_(kind)`|標注任何物件，以精簡資源物件的類型資訊。 有時候，一般類型會用於不同種類的資源，而多載類型則不足以區別各種資源間的語義需求。 以下是預先定義的 `kind` 參數清單：<br /><br /> `_Lock_kind_mutex_`<br /> Mutex 的鎖定種類識別碼。<br /><br /> `_Lock_kind_event_`<br /> 事件的鎖定種類識別碼。<br /><br /> `_Lock_kind_semaphore_`<br /> 信號的鎖定種類識別碼。<br /><br /> `_Lock_kind_spin_lock_`<br /> 微調鎖定的鎖定種類識別碼。<br /><br /> `_Lock_kind_critical_section_`<br /> 重要區段的鎖定種類識別碼。|
 |`_Has_lock_level_(name)`|標註鎖定物件，並為其指定 `name` 的鎖定層級。|
-|`_Lock_level_order_(name1, name2)`|語句，提供 `name1` 和 `name2`之間的鎖定順序。  在具有層級 `name2` 的鎖定之前，必須先取得具有層級 `name1` 的鎖定|
+|`_Lock_level_order_(name1, name2)`|語句，提供 `name1` 和 `name2`之間的鎖定順序。  在具有層級 `name2`的鎖定之前，必須先取得具有層級 `name1` 的鎖定。|
 |`_Post_same_lock_(expr1, expr2)`|為函式加上附註，並指出並後製狀態下，`expr1` 和 `expr2` 這兩個鎖定會視為是相同的鎖定物件。|
 |`_Releases_exclusive_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的獨佔鎖定計數遞減 1。|
 |`_Releases_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的鎖定計數遞減 1。|
@@ -88,7 +88,7 @@ SAL 支援多種不同的鎖定基本類型，例如關鍵區段、Mutex、微�
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>未公開之鎖定物件的 SAL 內在變數
 某些鎖定物件不會由相關聯的鎖定函式的實作為公開。  下表列出 SAL 內部變數，這些變數會啟用在未公開的鎖定物件上運作之函式的註釋。
 
-|Annotation|描述|
+|註釋|描述|
 |----------------|-----------------|
 |`_Global_cancel_spin_lock_`|描述取消微調鎖定。|
 |`_Global_critical_region_`|描述關鍵區域。|
@@ -98,7 +98,7 @@ SAL 支援多種不同的鎖定基本類型，例如關鍵區段、Mutex、微�
 ## <a name="shared-data-access-annotations"></a>共用資料存取注釋
 下表列出共用資料存取的註釋。
 
-|Annotation|描述|
+|註釋|描述|
 |----------------|-----------------|
 |`_Guarded_by_(expr)`|標註變數，並指出只要存取變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|
 |`_Interlocked_`|標注變數，相當於 `_Guarded_by_(_Global_interlock_)`。|
@@ -108,7 +108,7 @@ SAL 支援多種不同的鎖定基本類型，例如關鍵區段、Mutex、微�
 ## <a name="smart-lock-and-raii-annotations"></a>Smart Lock 和 RAII 注釋
 智慧鎖定通常會包裝原生鎖定並管理其存留期。 下表列出可以搭配智慧型鎖定和 RAII 編碼模式使用的注釋，並支援 `move` 的語法。
 
-|Annotation|描述|
+|註釋|描述|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|告訴分析器假設已取得智慧鎖定。 此批註需要參考鎖定類型做為其參數。|
 |`_Analysis_assume_smart_lock_released_`|告知分析器假設已釋放智慧型鎖定。 此批註需要參考鎖定類型做為其參數。|

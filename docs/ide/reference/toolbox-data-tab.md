@@ -1,5 +1,5 @@
 ---
-title: 工具箱, 資料索引標籤
+title: 工具箱、資料索引標籤
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Data tab, Toolbox
 - data [Visual Studio], Toolbox
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34707c39a14650023c9caa701813de65999010ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644618"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590250"
 ---
 # <a name="toolbox-data-tab"></a>工具箱, 資料索引標籤
 
@@ -30,7 +30,7 @@ ms.locfileid: "72644618"
 
 若要直接前往元件的 .NET 參考頁面，請在 [工具箱] 中的項目上，或是設計工具匣的元件項目上按 **F1**。
 
-|[屬性]|描述|
+|Name|描述|
 |----------|-----------------|
 |<xref:System.Data.DataSet>|將具類型或不具類型資料集的執行個體新增至表單或元件。 當您將此物件拖曳至設計工具時，會顯示一個對話方塊，讓您選取現有具類型資料集類別，或指定您想要建立的不具類型的空白新資料集。 **注意：** 您不要使用 [工具箱] 上的 <xref:System.Data.DataSet> 物件來建立新的具類型資料集結構描述和類別。 如需詳細資訊，請參閱[建立和設定資料集](../../data-tools/create-and-configure-datasets-in-visual-studio.md)。|
 |<xref:System.Windows.Forms.DataGridView>|以表格形式顯示資料，是一項功能強大並具彈性的方式。|

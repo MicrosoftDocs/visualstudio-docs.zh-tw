@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649468"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587533"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：建立或更新標準程式碼分析簽入原則
 
@@ -39,7 +39,7 @@ ms.locfileid: "72649468"
 
 1. 在 [**原始檔控制**] 對話方塊中，選取 [**簽入原則**] 索引標籤。
 
-1. 執行下列任一步驟：
+1. 請執行下列其中一項動作：
 
     - 按一下 **[新增]** 以建立新的簽入原則。
 
@@ -61,7 +61,7 @@ ms.locfileid: "72649468"
 
 - 選取 [Microsoft 標準規則集]。
 
-- 按一下 [**從原始檔控制 \<Select 規則集]，以選取自訂規則集 .。。>** 。 然後，在原始檔控制瀏覽器中輸入規則集的版本控制路徑。 版本控制路徑的語法為：
+- 按一下 [ **\<從原始檔控制選取規則集]，選取自訂規則集 .。。>** 。 然後，在原始檔控制瀏覽器中輸入規則集的版本控制路徑。 版本控制路徑的語法為：
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
@@ -69,4 +69,4 @@ ms.locfileid: "72649468"
 
 ## <a name="see-also"></a>請參閱
 
-- [建立和使用程式碼分析簽入原則](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [為受控碼實作自訂程式碼分析簽入原則](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

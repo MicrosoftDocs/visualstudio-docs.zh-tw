@@ -13,17 +13,17 @@ helpviewer_keywords:
 - ResolveKeySource task [MSBuild]
 - MSBuild, ResolveKeySource task
 ms.assetid: 449f06c2-e9aa-4236-ab1e-c45c25452b2e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 123c45ed23743335a1c4db2000dd241cb92ce291
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 09b3917e1c67014a780d11e2ae9a944844e63e25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810632"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595185"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource 工作
 決定強式名稱金鑰來源。
@@ -31,7 +31,7 @@ ms.locfileid: "62810632"
 ## <a name="task-parameters"></a>工作參數
  下表說明 `ResolveKeySource` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`AutoClosePasswordPromptShow`|選擇性的 `Int32` 參數。<br /><br /> 取得或設定顯示倒數計時訊息的時間 (以秒為單位)。|
 |`AutoClosePasswordPromptTimeout`|選擇性的 `Int32` 參數。<br /><br /> 取得或設定關閉密碼提示對話方塊前的等候時間，以秒為單位。|
@@ -47,6 +47,6 @@ ms.locfileid: "62810632"
 ## <a name="remarks"></a>備註
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

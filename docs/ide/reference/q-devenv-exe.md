@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /? switch
 - Devenv, command-line help
 ms.assetid: fd8fd6b2-1304-4d06-8118-6629666801fb
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcad6aa0cfe516eb342b397fb5a3effcda874647
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f23765ac4ee58b20af26bd100a0d167b2873582
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655675"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565730"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 

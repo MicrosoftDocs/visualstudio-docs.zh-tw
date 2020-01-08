@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: a71f507aa5ce524e01b2120594ace634056d0850
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568847"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587468"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>如何：產生程式碼度量資料
 
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-您可以藉由指定 `/p:MetricsOutputFile=<filename>` 來覆寫輸出檔名稱。 您也可以藉由指定 `/p:LEGACY_CODE_METRICS_MODE=true`，取得[舊版的程式](#previous-versions)代碼計量資料。 例如：
+您可以藉由指定 `/p:MetricsOutputFile=<filename>`來覆寫輸出檔名稱。 您也可以藉由指定 `/p:LEGACY_CODE_METRICS_MODE=true`，取得[舊版的程式](#previous-versions)代碼計量資料。 例如：
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -263,7 +263,7 @@ Visual Studio 2015 包含一個也稱為「*公制*」的命令列程式碼計�
 
 其他度量（例如 `CyclomaticComplexity` 和 `MaintainabilityIndex` 使用與先前的*公制*版本相同的公式，但新的工具會計算 `IOperations` （邏輯來源指示）的數目，而不是中繼語言（IL）指令。 數位會與 Visual Studio IDE 和舊版的*公制*所產生的數目稍有不同。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用程式碼度量結果視窗](../code-quality/working-with-code-metrics-data.md)
 - [程式碼度量值](../code-quality/code-metrics-values.md)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7660eba181c0a08ea3736c36e84bc7c9a574e10
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fe49ee90dba3edd0e2777817c4903c6101a1b47
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642247"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586766"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows Forms 應用程式中建立查閱資料表
 
@@ -24,11 +24,11 @@ ms.locfileid: "72642247"
 
 將父資料表的主要節點（從 [[資料來源] 視窗](add-new-data-sources.md#data-sources-window)）拖曳至表單上已系結至相關子資料工作表中之資料行的控制項，即可建立查閱資料表。
 
-例如，假設 sales 資料庫中的 `Orders` 資料表。 @No__t_0 資料表中的每筆記錄都包含 `CustomerID`，以指出哪個客戶下訂單。 @No__t_0 是指向 `Customers` 資料表中客戶記錄的外鍵。 在此案例中，您會展開 [**資料來源**] 視窗中的 [`Orders`] 資料表，並將主要節點設定為 [**詳細**資料]。 然後，將 [`CustomerID`] 資料行設定為使用 <xref:System.Windows.Forms.ComboBox> （或支援查閱系結的任何其他控制項），然後將 [`Orders`] 節點拖曳至表單上。 最後，將 [`Customers`] 節點拖曳至系結至相關資料行的控制項，在此案例中，<xref:System.Windows.Forms.ComboBox> 系結至 `CustomerID` 資料行。
+例如，假設 sales 資料庫中的 `Orders` 資料表。 `Orders` 資料表中的每筆記錄都包含 `CustomerID`，以指出哪個客戶下訂單。 `CustomerID` 是指向 `Customers` 資料表中客戶記錄的外鍵。 在此案例中，您會展開 [**資料來源**] 視窗中的 [`Orders`] 資料表，並將主要節點設定為 [**詳細**資料]。 然後，將 [`CustomerID`] 資料行設定為使用 <xref:System.Windows.Forms.ComboBox> （或支援查閱系結的任何其他控制項），然後將 [`Orders`] 節點拖曳至表單上。 最後，將 [`Customers`] 節點拖曳至系結至相關資料行的控制項，在此案例中，<xref:System.Windows.Forms.ComboBox> 系結至 `CustomerID` 資料行。
 
 ## <a name="to-databind-a-lookup-control"></a>若要將查閱控制項進行 databind
 
-1. 在您的專案開啟的情況下，選擇 [ **View**  > **其他 Windows**  > **資料來源**] 來開啟 [**資料來源**] 視窗。
+1. 在您的專案開啟的情況下，選擇 [ **View** > **其他 Windows** > **資料來源**] 來開啟 [**資料來源**] 視窗。
 
     > [!NOTE]
     > 在 [**資料來源**] 視窗中，查閱資料表需要有兩個相關的資料表或物件。 如需詳細資訊，請參閱[dataset 中的關聯](relationships-in-datasets.md)性。
@@ -44,7 +44,7 @@ ms.locfileid: "72642247"
 
 5. 將 [主要子資料工作表] 節點從 [**資料來源**] 視窗拖曳至表單上。
 
-     資料系結控制項（具有描述性標籤）和工具區域（<xref:System.Windows.Forms.BindingNavigator>）會出現在表單上。 [資料集](../data-tools/dataset-tools-in-visual-studio.md)、 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator> 會出現在元件匣中。
+     資料系結控制項（具有描述性標籤）和工具區域（<xref:System.Windows.Forms.BindingNavigator>）會出現在表單上。 [資料集](../data-tools/dataset-tools-in-visual-studio.md)、 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)、<xref:System.Windows.Forms.BindingSource>和 <xref:System.Windows.Forms.BindingNavigator> 會出現在元件匣中。
 
 6. 現在，將 [主要父資料表] 節點從 [**資料來源**] 視窗直接拖曳至查閱控制項（<xref:System.Windows.Forms.ComboBox>）。
 

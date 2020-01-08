@@ -12,12 +12,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb99cf487995859b9623f11b3559f1b5e7e3ca7
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018349"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75401025"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>逐步解說：分析 C/C++ 程式碼的缺失
 
@@ -28,7 +28,7 @@ ms.locfileid: "72018349"
 - 將警告視為錯誤。
 - 標注原始程式碼以改善程式碼缺失分析。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
 
 - [示範範例](../code-quality/demo-sample.md)的複本。
 - 對 C/C++的基本瞭解。
@@ -49,7 +49,7 @@ ms.locfileid: "72018349"
 
      [ **CodeDefects 屬性頁**] 對話方塊隨即顯示。
 
-5. 按一下 [程式**代碼分析**]。
+5. 按一下 [程式碼分析]。
 
 6. 按一下 [**啟用 C/C++ on Build 的程式碼分析**] 核取方塊。
 
@@ -59,7 +59,7 @@ ms.locfileid: "72018349"
 
 ### <a name="to-analyze-code-defect-warnings"></a>若要分析程式碼瑕疵警告
 
-1. 在 [ **View** ] 功能表上，按一下 [**錯誤清單**]。
+1. 在 [檢視] 功能表上，按一下 [錯誤清單]。
 
      根據您在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中選擇的開發人員設定檔而定，您可能必須指向 [ **View** ] 功能表上的 [**其他視窗**]，然後按一下 [**錯誤清單**]。
 
@@ -67,9 +67,9 @@ ms.locfileid: "72018349"
 
      警告 C6230：語義不同類型之間的隱含轉換：在布林內容中使用 HRESULT。
 
-     [程式碼編輯器] 會在函式 `bool ProcessDomain()`中顯示造成警告的那一行。 此警告表示在預期布林結果的 ' if ' 語句中使用了 HRESULT。
+     [程式碼編輯器] 會在函式 `bool ProcessDomain()`中顯示造成警告的那一行。 此警告表示在預期布林結果的 ' if ' 語句中使用了 `HRESULT`。  這通常是錯誤的，因為從它傳回的 `S_OK` HRESULT 是表示成功的，但轉換成布林值時，它會評估為 `false`。
 
-3. 請使用 SUCCEEDED 宏來更正這個警告。 您的程式碼應該類似下列程式碼：
+3. 使用 `SUCCEEDED` 宏來更正這個警告，當 `HRESULT` 傳回值表示成功時，會轉換成 `true`。 您的程式碼應該類似下列程式碼：
 
    ```cpp
    if (SUCCEEDED (ReadUserAccount()) )
@@ -111,7 +111,7 @@ ms.locfileid: "72018349"
 
      [**批註屬性頁**] 對話方塊隨即顯示。
 
-3. 按一下 [程式**代碼分析**]。
+3. 按一下 [程式碼分析]。
 
 4. 選取 [**啟用 C/C++ on Build 的程式碼分析**] 核取方塊。
 
@@ -128,11 +128,11 @@ ms.locfileid: "72018349"
 8. 若要修正這個警告，請使用 ' if ' 語句來測試傳回值。 您的程式碼應該類似下列程式碼：
 
    ```cpp
-   if (NULL != newNode)
+   if (nullptr != newNode)
    {
-   newNode->data = value;
-   newNode->next = 0;
-   node->next = newNode;
+       newNode->data = value;
+       newNode->next = 0;
+       node->next = newNode;
    }
    ```
 
@@ -142,14 +142,10 @@ ms.locfileid: "72018349"
 
 ### <a name="to-use-source-code-annotation"></a>若要使用原始程式碼注釋
 
-1. 使用前置和後置條件（如下列範例所示），標注函數 `AddTail` 的型式參數和傳回值：
+1. 標注函式的型式參數和傳回值 `AddTail` 以指出指標值可能為 null：
 
    ```cpp
-   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
-   (
-   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
-   int value
-   )
+   _Ret_maybenull_ LinkedList* AddTail(_Maybenull_ LinkedList* node, int value)
    ```
 
 2. 重建注釋專案。
@@ -160,23 +156,20 @@ ms.locfileid: "72018349"
 
      此警告表示傳入函式的節點可能是 null，而表示引發警告的行號。
 
-4. 若要修正這個警告，請使用 ' if ' 語句來測試傳回值。 您的程式碼應該類似下列程式碼：
+4. 若要修正這個警告，請使用函式開頭的 ' if ' 語句來測試傳入的值。 您的程式碼應該類似下列程式碼：
 
    ```cpp
-   . . .
-   LinkedList *newNode = NULL;
-   if (NULL == node)
+   if (nullptr == node)
    {
-        return NULL;
-        . . .
+        return nullptr;
    }
    ```
 
 5. 重建注釋專案。
 
-     專案建立時不會出現任何警告或錯誤。
+     專案現在會建立，而不會出現任何警告或錯誤。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [逐步解說：分析 Managed 程式碼中的程式](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)代碼缺失
 [CC++ /的程式碼分析](../code-quality/code-analysis-for-c-cpp-overview.md)

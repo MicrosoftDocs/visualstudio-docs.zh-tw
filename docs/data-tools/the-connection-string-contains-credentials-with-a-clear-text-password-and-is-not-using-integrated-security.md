@@ -3,17 +3,17 @@ title: 連接字串包含具有純文字密碼的認證，並且不使用整合�
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a8cb18e84263d7b7144764d007a2928956fc77b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9c807266182b419dc0967288715a187042f83b1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641029"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586168"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>連接字串包含具有純文字密碼的認證，並且不使用整合式安全性
 
@@ -24,7 +24,7 @@ ms.locfileid: "72641029"
 > [!WARNING]
 > 將 [連線] 屬性的 [應用程式設定] 屬性明確設定為 [False]，會將密碼新增到 DBML 檔案中。
 
-## <a name="save-options"></a>儲存選項
+## <a name="save-options"></a>[儲存] 選項
 
 - 若要儲存含有敏感性資訊的連接字串，請選擇 [**是]** 。
 

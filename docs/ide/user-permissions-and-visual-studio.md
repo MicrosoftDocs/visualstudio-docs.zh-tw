@@ -1,5 +1,5 @@
 ---
-title: 以系統管理員身分執行
+title: '[以系統管理員身分執行]'
 ms.date: 06/05/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 - user permissions
 - administrative privileges
 - permissions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6086485ef20330de7971297f52a112d5183ee4a2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.openlocfilehash: d00bc1912991992a2aeb966680c7777c47df0549
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647340"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565223"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 
@@ -55,7 +55,7 @@ ms.locfileid: "72647340"
 
 1. 開啟 [開始] 功能表，然後捲動至 Visual Studio 2017。
 
-1. 從 **Visual Studio 2017** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多] >[以系統管理員身分執行]。
+1. 從**Visual Studio 2017**的滑鼠右鍵或操作功能表中，選取 [**更多**> 以**系統管理員身分執行**]。
 
    在 Visual Studio 啟動時， **(系統管理員)** 會顯示在標題列的產品名稱之後。
 
@@ -65,7 +65,7 @@ ms.locfileid: "72647340"
 
 1. 開啟 [開始] 功能表，然後捲動至 Visual Studio 2019。
 
-1. 從 **Visual Studio 2019** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多] >[以系統管理員身分執行]。
+1. 從**Visual Studio 2019**的滑鼠右鍵或操作功能表中，選取 [**更多**> 以**系統管理員身分執行**]。
 
    在 Visual Studio 啟動時， **(系統管理員)** 會顯示在標題列的產品名稱之後。
 

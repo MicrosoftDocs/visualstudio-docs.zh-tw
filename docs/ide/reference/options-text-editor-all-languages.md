@@ -1,5 +1,5 @@
 ---
-title: 選項，文字編輯器，所有語言
+title: 選項、文字編輯器、所有語言
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -37,24 +37,24 @@ helpviewer_keywords:
 - line numbers
 - virtual space
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ab23911baab30c7617525d318795b1be708bb9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9815bdec94ce32a3bfcc170dd95d834bc43ea58f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747843"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566874"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>選項對話方塊：文字編輯器 \> 所有語言
 
 編輯樣式表時，這個對話方塊可讓您變更程式碼編輯器的預設行為。 這些設定也適用於以程式碼編輯器為基礎的其他編輯器，例如 HTML 設計工具的來源檢視。 若要開啟此對話方塊，請從 [工具] 功能表選取 [選項]。 在 [文字編輯器] 資料夾內，展開 [所有語言] 子資料夾，然後選擇 [一般]。
 
 > [!CAUTION]
-> 此頁面會設定所有開發語言的預設選項。 請記住，重設此對話方塊中的選項，會將所有語言中的 [一般] 選項重設為此處所選的選項。 若只要變更單一語言的文字編輯器選項，請展開該語言的子資料夾，然後選取其選項頁面。
+> 此頁面設定所有開發語言的預設選項。 請記住，重設此對話方塊中的選項，會將所有語言中的 [一般] 選項重設為此處所選的選項。 若只要變更單一語言的文字編輯器選項，請展開該語言的子資料夾，然後選取其選項頁面。
 
 當某些程式設計語言的 [一般] 選項頁面上已經選取某個選項，但其他程式設計語言尚未選取時，會顯示呈現灰色的核取記號。
 
@@ -119,7 +119,7 @@ ms.locfileid: "72747843"
 
 - 清除此選項時，則「剪下」命令會移除空白行。 不過，會保留剪貼簿裡的資料。 因此，如果您稍後使用 [貼上] 命令，則會貼上最近複製到剪貼簿的內容。 如果先前沒有複製任何項目，則不會貼上任何內容。
 
-某行不是空白行時，這個設定對複製或剪下沒有作用。 如果沒有選取任何範圍，則會複製或剪下整行。 如果您稍後貼上，則會貼上整行的文字及其行尾字元。
+當行不是空白時，此設定對 [複製] 或 [剪下] 沒有影響。 如果沒有選取任何範圍，則會複製或剪下整行。 如果您稍後貼上，則會貼上整行的文字及其行尾字元。
 
 > [!TIP]
 > 若要顯示空格、定位點和行尾的指示器，並進而區分縮排行與完全空白的行，請從 [編輯] 功能表選取 [進階]，並選擇 [檢視空格]。

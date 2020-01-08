@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83edb231819a47c3c8a6f7a1943ae9086e06467d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8a10252d8465373c8637681763e59511b1e2d621
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653891"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596667"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自訂指示詞處理器
 
@@ -54,7 +54,7 @@ ms.locfileid: "72653891"
 
          **內容類型** = **VSPackage**
 
-         *目前專案 \< 的***來源專案** =  >
+         *目前專案 \<的***來源專案** = >
 
     2. 按一下 [**選取的版本**]，然後檢查您要指示詞處理器可供使用的安裝類型。
 
@@ -66,11 +66,11 @@ ms.locfileid: "72653891"
 
     2. 在 [方案總管] 中選取它，然後設定其屬性，如下所示：
 
-         @No__t_1**內容**的**組建動作**
+         **建置動作** = **內容**
 
          **複製到輸出目錄** = **一律複製**
 
-         **包含在 VSIX**  = **True**
+         **包含在 VSIX** = **True**
 
     3. 設定 VSIX 的名稱，並確定 ID 是唯一的。
 
@@ -89,11 +89,11 @@ ms.locfileid: "72653891"
 
 5. 將下列參考加入至專案：
 
-    - **VisualStudio. TextTemplating. \* 0**
+    - **VisualStudio. TextTemplating.\*0**
 
-    - **VisualStudio. TextTemplating 介面。 \* 0**
+    - **VisualStudio. TextTemplating 介面。\*0**
 
-    - **VisualStudio. TextTemplating. .Vshost.exe. \* 0**
+    - **VisualStudio. TextTemplating. .Vshost.exe.\*0**
 
 6. 將自訂指示詞處理器類別加入至專案。
 
@@ -124,7 +124,7 @@ ms.locfileid: "72653891"
 
 - 將 `IsDirectiveSupported` 的名稱傳遞給 `true` 方法時，此方法必須傳回 `CustomDirective`。
 
-- 如果您在 [擴充管理員] 中看不到延伸模組，但系統不允許您安裝它，請從 **%localappdata%\Microsoft\VisualStudio \\ \* .0 \** 延伸模組 \\ 中刪除延伸模組。
+- 如果您在 [擴充管理員] 中看不到延伸模組，但系統不允許您安裝它，請從 **%localappdata%\Microsoft\VisualStudio\\\*.0 \** 延伸模組\\中刪除延伸模組。
 
 - 開啟 .vsix 檔並檢查其內容。 若要開啟它，請將副檔名變更為 .zip。 確認其中是否包含 .dll、.pkgdef 和 extension.vsixmanifest 檔案。 extension.vsixmanifest 檔案在 SupportedProducts 節點中應包含適當清單，而在 Content 節點底下也應包含 VsPackage 節點。
 
@@ -164,7 +164,7 @@ ms.locfileid: "72653891"
 
 2. 在 regedit 中巡覽至
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \*. 0 \ TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\\\*. 0 \ TextTemplating\DirectiveProcessors**
 
     如果您想要在 Visual Studio 的實驗版本中安裝指示詞處理器，請在 "11.0" 之後插入 "Exp"。
 
@@ -182,18 +182,18 @@ ms.locfileid: "72653891"
 
    如果自訂指示詞處理器不在 GAC 中，則登錄子機碼看起來應該如下表所示：
 
-|[屬性]|輸入|資料|
+|Name|類型|Data|
 |-|-|-|
-|(預設值)|REG_SZ|(值未設定)|
-|執行個體|REG_SZ|**\<Namespace 名稱 >。\<Class 名稱 >**|
-|程式碼基底|REG_SZ|**\<Your 路徑 > \\ < 元件名稱 \>**|
+|(預設)|REG_SZ|(值未設定)|
+|類別|REG_SZ|**\<命名空間名稱 >。\<類別名稱 >**|
+|程式碼基底|REG_SZ|**\<您的路徑 >\\< 元件名稱\>**|
 
  如果組件在 GAC 中，則登錄子機碼看起來應該如下表所示：
 
-|[屬性]|輸入|資料|
+|Name|類型|Data|
 |-|-|-|
-|(預設值)|REG_SZ|(值未設定)|
-|執行個體|REG_SZ|\<**您的完整類別名稱**>|
+|(預設)|REG_SZ|(值未設定)|
+|類別|REG_SZ|\<**您的完整類別名稱**>|
 |Assembly|REG_SZ|\<**GAC 中的元件名稱**>|
 
 ## <a name="see-also"></a>請參閱

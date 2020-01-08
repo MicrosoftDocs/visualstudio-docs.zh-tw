@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a12da7c7cae7e862d670b3f62fb801920f34e1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7ec659bfee9253dfb198c2747e1b5d7fb6b78f2b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666732"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596550"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>使用 TextTransform 公用程式產生檔案
 
@@ -50,7 +50,7 @@ TextTransform 位於下列目錄：
 
 在舊版的 Visual Studio 中，檔案會在下列位置中找到：
 
-**\Program Files （x86） \Common Files\Microsoft Shared\TextTemplating \{version}**
+**\Program Files （x86） \Common Files\Microsoft Shared\TextTemplating\{版本}**
 
 其中 {version} 取決於安裝的先前版本。
 
@@ -64,19 +64,19 @@ TextTransform [<options>] <templateName>
 
 ### <a name="parameters"></a>參數
 
-|**引數**|**說明**|
+|**引數**|**描述**|
 |-|-|
 |`templateName`|識別您想要轉換的範本檔案名。|
 
-|**選項**|**說明**|
+|**選項**|**描述**|
 |-|-|
-|**-out** \<filename >|寫入轉換輸出的目標檔案。|
-|**-r** \<assembly >|用來編譯和執行文字模板的元件。|
-|**-u** \<namespace >|用來編譯範本的命名空間。|
+|**-out** \<檔案名 >|寫入轉換輸出的目標檔案。|
+|**-r** \<元件 >|用來編譯和執行文字模板的元件。|
+|**-u** \<命名空間 >|用來編譯範本的命名空間。|
 |**-I** \<includedirectory >|目錄，其中包含指定之文字模板中包含的文字模板。|
 |**-P** \<referencepath >|目錄，用來搜尋文字模板中指定的元件，或使用 **-r**選項。<br /><br /> 例如，若要包含用於 Visual Studio API 的元件，請使用<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName >！\<className >！\<assemblyName&#124;程式碼基底 >|指示詞處理器的名稱、完整類型名稱和元件，可以用來處理文字模板內的自訂指示詞。|
-|**-a** [processorName]！[directiveName]!\<parameterName >！\<parameterValue >|指定指示詞處理器的參數值。 如果您只指定參數名稱和值，則所有指示詞處理器都可使用參數。 如果您指定指示詞處理器，則參數僅適用于指定的處理器。 如果您指定指示詞名稱，只有在處理指定的指示詞時，才可以使用參數。<br /><br /> 若要從指示詞處理器或文字模板存取參數值，請使用[ITextTemplatingEngineHost. ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\))。 在文字模板中，在範本指示詞中包含 `hostspecific`，並在 `this.Host` 上叫用訊息。 例如:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`<br /><br /> 請一律輸入 '！ ' 標記，即使您省略選擇性的處理器和指示詞名稱也一樣。 例如:<br /><br /> `-a !!param!value`|
+|**-a** [processorName]！[directiveName]!\<parameterName >！\<parameterValue >|指定指示詞處理器的參數值。 如果您只指定參數名稱和值，則所有指示詞處理器都可使用參數。 如果您指定指示詞處理器，則參數僅適用于指定的處理器。 如果您指定指示詞名稱，只有在處理指定的指示詞時，才可以使用參數。<br /><br /> 若要從指示詞處理器或文字模板存取參數值，請使用[ITextTemplatingEngineHost. ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\))。 在文字模板中，在範本指示詞中包含 `hostspecific`，並在 `this.Host`上叫用訊息。 例如：<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`。<br /><br /> 請一律輸入 '！ ' 標記，即使您省略選擇性的處理器和指示詞名稱也一樣。 例如：<br /><br /> `-a !!param!value`|
 |**-h**|提供協助。|
 
 ## <a name="related-topics"></a>相關主題

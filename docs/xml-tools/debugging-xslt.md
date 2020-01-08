@@ -2,19 +2,19 @@
 title: 將 XSLT 程式碼進行偵錯工具的方式
 ms.date: 03/05/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: bb358efb711211d58525afb8d30d5cb4cad6b2e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6f4a1ce60f04bcea6e21b52db9347a95292dab2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646077"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592850"
 ---
 # <a name="debugging-xslt"></a>偵錯 XSLT
 
@@ -33,7 +33,7 @@ ms.locfileid: "72646077"
 
 1. 在 Visual Studio 中開啟樣式表單或 XML 檔案。
 
-1. 從 [ **XML** ] 功能表中選取 [**啟動 XSLT 調試**]，或按**Alt** +**F5**。
+1. 從 [ **XML** ] 功能表中選取 [**啟動 XSLT 調試**]，或按**Alt**+**F5**。
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>從使用 XSLT 的應用程式進行 Debug
 
@@ -76,7 +76,7 @@ namespace ConsoleApplication
       XslCompiledTransform xslt = new XslCompiledTransform(true);
 
       // Compile the style sheet.
-      xslt.Load(stylesheet)
+      xslt.Load(stylesheet);
 
       // Execute the XSLT transform.
       FileStream outputStream = new FileStream(outputFile, FileMode.Append);

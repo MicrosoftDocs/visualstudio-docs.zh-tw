@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <Property> Element [MSBuild]
 - Property Element [MSBuild]
 ms.assetid: 69ab08ab-3e76-41dd-a01b-49aa1d2e0cac
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c011e700eb93293ae5fa0b08db5f486ea85ad5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 99970bfbc955fe972d5e3c9a4e38ae6f57e0e0bf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002458"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597421"
 ---
 # <a name="property-element-msbuild"></a>Property 元素 (MSBuild)
 包含使用者定義的屬性名稱和值。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個屬性，都必須指定為 `PropertyGroup` 項目的子系。
@@ -41,7 +41,7 @@ ms.locfileid: "63002458"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 
@@ -50,7 +50,7 @@ ms.locfileid: "63002458"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|說明|
+|項目|描述|
 |-------------|-----------------|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|屬性的群組項目。|
 
@@ -72,6 +72,6 @@ ms.locfileid: "63002458"
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

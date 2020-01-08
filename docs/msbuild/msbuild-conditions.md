@@ -11,28 +11,28 @@ helpviewer_keywords:
 - MSBuild, conditions
 - conditions [MSBuild]
 ms.assetid: 9d7aa308-b667-48ed-b4c9-a61e49eb0a85
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf77e4630cd52e8dcb354b5625ae24eabc9d8ae9
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 9576bdf06593ae3cde3bc29e2585a7ab475671a3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912076"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566614"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 條件
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 支援一組只要允許 `Condition` 屬性就能套用的特定條件。 下表說明這些條件。
 
 |條件|描述|
 |---------------|-----------------|
-|'`stringA`' == '`stringB`'|如果 `stringA` 等於 `stringB`，即會評估為 `true`。<br /><br /> 例如:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。|
-|'`stringA`' != '`stringB`'|如果 `stringA` 不等於 `stringB`，即會評估為 `true`。<br /><br /> 例如:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。|
+|'`stringA`' == '`stringB`'|如果 `stringA` 等於 `stringB`，即會評估為 `true`。<br /><br /> 例如：<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。|
+|'`stringA`' != '`stringB`'|如果 `stringA` 不等於 `stringB`，即會評估為 `true`。<br /><br /> 例如：<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。|
 |\<、>、\<=、>=|評估運算元的數值。 如果關聯式評估為 true，即會傳回 `true`。 運算元必須評估為十進位或十六進位數字。 十六進位數字必須以 "0x" 開頭。 **注意︰** 在 XML 中，必須逸出字元 `<` 和 `>`。 符號 `<` 是以 `&lt;` 表示。 符號 `>` 是以 `&gt;` 表示。|
-|Exists('`stringA`')|如果有名稱為 `stringA` 的檔案或資料夾存在，即會評估為 `true`。<br /><br /> 例如:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。|
-|HasTrailingSlash ('`stringA`')|如果指定的字串包含尾端反斜線 (\\) 或斜線 (/) 字元，即會評估為 `true`。<br /><br /> 例如:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。|
+|Exists('`stringA`')|如果有名稱為 `stringA` 的檔案或資料夾存在，即會評估為 `true`。<br /><br /> 例如：<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。|
+|HasTrailingSlash ('`stringA`')|如果指定的字串包含尾端反斜線 (\\) 或斜線 (/) 字元，即會評估為 `true`。<br /><br /> 例如：<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。|
 |!|如果運算元評估為 `false`，即會評估為 `true`。|
 |及|如果這兩個運算元都評估為 `true`，即會評估為 `true`。|
 |或|如果至少有一個運算元評估為 `true`，即會評估為 `true`。|

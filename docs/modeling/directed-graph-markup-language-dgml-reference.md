@@ -2,17 +2,17 @@
 title: 有向圖形標記語言 (DGML) 參考
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 292ba29e1902053b04f70052989e4eb0efff5b19
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 2363e5131dd499dd85a5822ed15e2bfe473f1e1c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983682"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596632"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>有向圖形標記語言 (DGML) 參考
 
@@ -33,15 +33,15 @@ ms.locfileid: "73983682"
 
    下列清單說明您可以加入的選擇性屬性：
 
-   `Background` - 地圖背景的色彩
+   `Background`-地圖背景的色彩
 
-   `BackgroundImage` - 要做為地圖背景之影像檔的位置。
+   `BackgroundImage`-要當做地圖背景使用之影像檔案的位置。
 
-   `GraphDirection` - 在地圖設定為樹狀配置 (`Sugiyama`) 時排列節點，使大部分的連結能夠朝指定的方向排列：`TopToBottom`、`BottomToTop`、`LeftToRight` 或 `RightToLeft`。 請參閱[變更地圖版面](../modeling/browse-and-rearrange-code-maps.md#Selecting)配置。
+   `GraphDirection`-當地圖設定為樹狀配置（`Sugiyama`）時，排列節點，讓大部分的連結以指定的方向流動： `TopToBottom`、`BottomToTop`、`LeftToRight`或 `RightToLeft`。 請參閱[變更地圖版面](../modeling/browse-and-rearrange-code-maps.md#Selecting)配置。
 
-   `Layout` - 將地圖設定為下列配置：`None`、`Sugiyama` (樹狀配置)、`ForceDirected` (快速叢集) 或 `DependencyMatrix`。 請參閱[變更地圖版面](../modeling/browse-and-rearrange-code-maps.md#Selecting)配置。
+   `Layout`-將地圖設定為下列配置： [`None`]、[`Sugiyama` （樹狀配置）]、[`ForceDirected` （快速叢集）] 或 [`DependencyMatrix`]。 請參閱[變更地圖版面](../modeling/browse-and-rearrange-code-maps.md#Selecting)配置。
 
-   `NeighborhoodDistance` - 在地圖設定為樹狀配置或快速叢集配置時，僅顯示距所選節點在指定連結數量 (1-7) 之遠的連結。 請參閱[變更地圖版面](../modeling/browse-and-rearrange-code-maps.md#Selecting)配置。
+   `NeighborhoodDistance`-當對應設定為 [樹狀配置] 或 [快速叢集配置] 時，只顯示與所選節點的指定數目（1-7）連結相同的節點。 請參閱[變更地圖版面](../modeling/browse-and-rearrange-code-maps.md#Selecting)配置。
 
    範例：
 
@@ -90,7 +90,7 @@ ms.locfileid: "73983682"
 
    這個項目必須包括下列屬性：
 
-   `Id` - 節點的唯一名稱以及 `Label` 屬性的預設值 (如果未指定個別的 `Label` 屬性)。 此名稱必須符合參考該節點之連結的 `Source` 或 `Target` 屬性。
+   `Id`-節點的唯一名稱，以及 `Label` 屬性的預設值（如果未指定個別的 `Label` 屬性）。 此名稱必須符合參考該節點之連結的 `Source` 或 `Target` 屬性。
 
    下列清單會描述一些您可以加入的選擇性屬性：
 
@@ -98,13 +98,13 @@ ms.locfileid: "73983682"
 
    樣式屬性。 請參閱 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。
 
-   `Category` - 分類的名稱，這個分類識別共用此屬性的項目。 如需詳細資訊，請參閱 `<Category/>` 項目。
+   `Category`-識別共用這個屬性之元素的分類名稱。 如需詳細資訊，請參閱 `<Category/>` 項目。
 
-   `Property` - 屬性的名稱，這個屬性識別具有相同屬性值的項目。 如需詳細資訊，請參閱 `<Property/>` 項目。
+   `Property`-識別具有相同屬性值之元素的屬性名稱。 如需詳細資訊，請參閱 `<Property/>` 項目。
 
    `Group` - 如果節點中包含其他節點，請將此屬性設定為 `Expanded` 或 `Collapsed`，以顯示或隱藏其內容。 此時必須要有 `<Link/>` 項目，用以加入 `Category="Contains"` 屬性，以及將父節點指定為來源節點，將子節點指定為目標節點。 請參閱[群組程式碼元素](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes)。
 
-   `Visibility` - 請將此屬性設為 `Visible`、`Hidden` 或 `Collapsed`。 使用`System.Windows.Visibility`。 請參閱[隱藏或顯示節點和連結](../modeling/browse-and-rearrange-code-maps.md#HidingShowing)。
+   `Visibility`-將此屬性設定為 `Visible`、`Hidden`或 `Collapsed`。 使用`System.Windows.Visibility`。 請參閱[隱藏或顯示節點和連結](../modeling/browse-and-rearrange-code-maps.md#HidingShowing)。
 
    `Reference` - 請將此屬性設為連結到文件或 URL。 請參閱[將檔或 Url 連結至程式碼專案和連結](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences)。
 
@@ -153,19 +153,19 @@ ms.locfileid: "73983682"
 
    這個項目必須包括下列屬性：
 
-   `Source` - 連結的來源節點
+   `Source`-連結的來源節點
 
    `Target` - 連結的目標節點
 
    下列清單會描述一些您可以加入的選擇性屬性：
 
-   `Label` - 連結的顯示名稱
+   `Label`-連結的顯示名稱
 
    樣式屬性。 請參閱 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。
 
-   `Category` - 分類的名稱，這個分類識別共用此屬性的項目。 如需詳細資訊，請參閱 `<Category/>` 項目。
+   `Category`-識別共用這個屬性之元素的分類名稱。 如需詳細資訊，請參閱 `<Category/>` 項目。
 
-   `Property` - 屬性的名稱，這個屬性識別具有相同屬性值的項目。 如需詳細資訊，請參閱 `<Property/>` 項目。
+   `Property`-識別具有相同屬性值之元素的屬性名稱。 如需詳細資訊，請參閱 `<Property/>` 項目。
 
    範例：
 
@@ -214,7 +214,7 @@ ms.locfileid: "73983682"
 
    `Label` - 方便讀者理解的分類名稱。
 
-   `BasedOn` - 目前項目的 `<Category/>` 所繼承自的父分類。
+   `BasedOn`-目前專案的 `<Category/>` 繼承的父類別。
 
    在這個項目的範例中，`FailedTest` 分類會從 `Stroke` 分類繼承 `PassedTest` 屬性。 請參閱[編輯 DGML 檔案以自訂 code map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)中的「建立階層式類別」。
 
@@ -265,9 +265,9 @@ ms.locfileid: "73983682"
 
    這個項目必須包括下列屬性：
 
-  - `Id` - 屬性 (Property) 的唯一名稱以及 `Label` 屬性 (Attribute) 的預設值 (如果未指定個別的 `Label` 屬性 (Attribute))。
+  - `Id`-屬性的唯一名稱，以及 `Label` 屬性的預設值（如果未指定個別的 `Label` 屬性）。
 
-  - `DataType` - 屬性所儲存的資料類型
+  - `DataType`-屬性所儲存的資料類型
 
     如果您想要讓屬性出現在 [**屬性**] 視窗中，請使用 [`Label`] 屬性來指定屬性的顯示名稱。
 

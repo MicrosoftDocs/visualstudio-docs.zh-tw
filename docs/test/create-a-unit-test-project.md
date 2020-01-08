@@ -2,17 +2,17 @@
 title: 建立單元測試專案
 ms.date: 01/29/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 30edc1a894a64fb7b9d8b988cafaed14aeaebfdd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 313083090c94c94f4e196e87f3bf6cf6df36e118
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665115"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565249"
 ---
 # <a name="create-a-unit-test-project"></a>建立單元測試專案
 

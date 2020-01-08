@@ -7,17 +7,17 @@ helpviewer_keywords:
 - analyzers
 - Roslyn analyzers
 - code analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 388667485f27b59e46a1c39d95b37ddc413240ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649143"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587273"
 ---
 # <a name="overview-of-source-code-analyzers"></a>原始程式碼分析器的總覽
 
@@ -25,7 +25,7 @@ ms.locfileid: "72649143"
 
 - 有些分析器內建 Visual Studio。 這些分析器的診斷識別碼（或程式碼）的格式為 IDExxxx，例如 IDE0067。 大部分的內建分析器都會檢查程式[代碼樣式](../ide/code-styles-and-code-cleanup.md)，而您可以在 [[文字編輯器](../ide/code-styles-and-code-cleanup.md)] [選項] 頁面或在[EditorConfig](../ide/editorconfig-code-style-settings-reference.md)檔案中設定喜好設定。 幾個內建分析器會查看程式碼品質。
 
-- 您可以將其他分析器安裝為 NuGet 套件或 Visual Studio 延伸模組。 例如:
+- 您可以將其他分析器安裝為 NuGet 套件或 Visual Studio 延伸模組。 例如：
 
   - [FxCop 分析器](../code-quality/install-fxcop-analyzers.md)，Microsoft 建議的程式碼品質分析器
   - 協力廠商分析器，例如[stylecop 能夠](https://www.nuget.org/packages/StyleCop.Analyzers/)、 [Roslynator](https://www.nuget.org/packages/Roslynator/)、 [XUnit 分析器](https://www.nuget.org/packages/xunit.analyzers/)和[Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
@@ -40,7 +40,7 @@ ms.locfileid: "72649143"
 
 Roslyn 分析器的來源分析會取代 managed 程式碼的[舊版分析](../code-quality/code-analysis-for-managed-code-overview.md)。 許多舊版分析規則都已經改寫為 Roslyn 程式碼分析器。 對於較新的專案範本，例如 .NET Core 和 .NET Standard 專案，舊版分析甚至無法使用。
 
-如同舊版分析規則違規，原始程式碼分析違規會出現在 Visual Studio 的 [錯誤清單] 視窗中。 此外，原始程式碼的分析違規也會在程式碼編輯器中顯示為*波浪線*在違規程序代碼之下。 波形曲線色彩取決於規則的[嚴重性設定](../code-quality/use-roslyn-analyzers.md#rule-severity)。 下圖顯示三個違規 &mdash;one 紅色、一個綠色和一個灰色：
+如同舊版分析規則違規，原始程式碼分析違規會出現在 Visual Studio 的 [錯誤清單] 視窗中。 此外，原始程式碼的分析違規也會在程式碼編輯器中顯示為*波浪線*在違規程序代碼之下。 波形曲線色彩取決於規則的[嚴重性設定](../code-quality/use-roslyn-analyzers.md#rule-severity)。 下圖顯示三個違規&mdash;一個紅色、一個綠色和一個灰色：
 
 ![Visual Studio 中的程式碼編輯器中的波浪線](media/diagnostics-severity-colors.png)
 

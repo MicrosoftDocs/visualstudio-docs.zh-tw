@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, common project items
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb759ba9571e16d0030f1fd6baf6d4feb03efb2e
-ms.sourcegitcommit: 510529f2f86a9897ed5767973e60c99c0d3a77a6
+ms.openlocfilehash: b10768d5ab291981dc77af650de61eb9496dfda5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73956150"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596147"
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，項目是一個或多個檔案的具名參考。 項目包含中繼資料，例如檔案名稱、路徑和版本號碼。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有專案類型都有共同的數個項目。 這些項目會在 *Microsoft.Build.CommonTypes.xsd* 檔案中定義。
@@ -34,24 +34,24 @@ ms.locfileid: "73956150"
 |項目中繼資料名稱|描述|
 |---------------|-----------------|
 |提示路徑|選擇性字串。 組件的相對或絕對路徑。|
-|[屬性]|選擇性字串。 組件的顯示名稱，例如，"System.Windows.Forms"。|
+|Name|選擇性字串。 組件的顯示名稱，例如，"System.Windows.Forms"。|
 |融合名稱|選擇性字串。 指定項目的簡單或強式融合名稱。<br /><br /> 當這個屬性存在時，就可以節省時間，因為不需要開啟組件檔案就能取得融合名稱。|
 |特定版本|選擇性布林值。 指定是否應僅參考融合名稱中的版本。|
 |別名|選擇性字串。 參考的任何別名。|
-|Private|選擇性布林值。 指定是否應將參考複製到輸出資料夾。 此屬性與 Visual Studio IDE 中參考的 [複製到本機] 屬性相符。|
+|私人|選擇性布林值。 指定是否應將參考複製到輸出資料夾。 此屬性與 Visual Studio IDE 中參考的 [複製到本機] 屬性相符。|
 
 ### <a name="comreference"></a>COM 參考
  代表專案中的 COM (未受管理) 元件參考。 此項目僅適用於 .NET 專案。
 
 |項目中繼資料名稱|描述|
 |---------------|-----------------|
-|[屬性]|選擇性字串。 元件的顯示名稱。|
+|Name|選擇性字串。 元件的顯示名稱。|
 |GUID|必要的字串。 元件的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|
 |VersionMajor|必要的字串。 元件的版本號碼主要部分。 例如，如果完整版本號碼為"5.46"，則主要部分為 "5"。|
 |VersionMinor|必要的字串。 元件版本號碼的次要部分。 例如，如果完整版本號碼為"5.46"，則次要部分為 "46"。|
 |LCID|選擇性字串。 元件的地區設定識別碼。|
 |包裝函式工具|選擇性字串。 用於元件的包裝函式工具名稱，例如 "tlbimp"。|
-|隔離|選擇性布林值。 指定元件是否為免註冊元件。|
+|外掛式|選擇性布林值。 指定元件是否為免註冊元件。|
 
 ### <a name="comfilereference"></a>COM 檔案參考
  代表傳遞給 [ResolveComReference](resolvecomreference-task.md) 目標之 `TypeLibFiles` 參數的類型程式庫清單。 此項目僅適用於 .NET 專案。
@@ -65,7 +65,7 @@ ms.locfileid: "73956150"
 
 |項目中繼資料名稱|描述|
 |---------------|-----------------|
-|[屬性]|必要的字串。 資訊清單檔案的基底名稱。|
+|Name|必要的字串。 資訊清單檔案的基底名稱。|
 |提示路徑|必要的字串。 資訊清單檔案的相對路徑。|
 
 ### <a name="projectreference"></a>專案參考
@@ -73,9 +73,9 @@ ms.locfileid: "73956150"
 
 |項目中繼資料名稱|描述|
 |---------------|-----------------|
-|[屬性]|選擇性字串。 參考的顯示名稱。|
+|Name|選擇性字串。 參考的顯示名稱。|
 |專案|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|
-|封裝|選擇性字串。 所參考的專案檔路徑。|
+|套件|選擇性字串。 所參考的專案檔路徑。|
 |ReferenceOutputAssembly|選擇性布林值。 如果設定為 `false`，則不會將參考之專案的輸出，以[參考](#reference)的方式包含在此專案中，但仍然可確保其他專案會在此專案之前建置。 預設值為 `true`。|
 
 ### <a name="compile"></a>編譯
@@ -136,8 +136,8 @@ ms.locfileid: "73956150"
 
 | 項目中繼資料名稱 | 描述 |
 |-----------------------| - |
-| 包含 | 成為 `AssemblyMetadataAttribute` 屬性（attribute）中的第一個參數（索引鍵）。 |
-| 值 | 必要的字串。 成為 `AssemblyMetadataAttribute` 屬性（attribute）中的第二個參數（值）。 |
+| Include | 成為 `AssemblyMetadataAttribute` 屬性（attribute）中的第一個參數（索引鍵）。 |
+| {2&gt;值&lt;2} | 必要的字串。 成為 `AssemblyMetadataAttribute` 屬性（attribute）中的第二個參數（值）。 |
 
 > [!NOTE]
 > 這僅適用于使用 .NET Core SDK 的專案。
@@ -148,7 +148,7 @@ ms.locfileid: "73956150"
 ### <a name="codeanalysisimport"></a>程式碼分析匯入
  代表要匯入的 FxCop 專案。
 
-### <a name="import"></a>匯入
+### <a name="import"></a>[匯入]
  代表應該由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器匯入命名空間的組件。
 
 ## <a name="see-also"></a>請參閱

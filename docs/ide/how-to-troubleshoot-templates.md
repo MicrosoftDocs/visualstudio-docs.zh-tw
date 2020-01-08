@@ -4,15 +4,15 @@ ms.date: 01/02/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0dbdb2854833f7c28866aa3d6ec0a685803adb3d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656545"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591381"
 ---
 # <a name="how-to-troubleshoot-templates"></a>如何：針對範本進行疑難排解
 
@@ -45,7 +45,7 @@ ms.locfileid: "72656545"
 1. 確認 *vstemplate* 檔案的 XML 遵守範本結構描述。 如需 *vstemplate* 結構描述的詳細資訊，請參閱[範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)。
 
     > [!NOTE]
-    > 撰寫 *vstemplate* 檔案時若要取得 IntelliSense 支援，請在 `VSTemplate` 元素中新增 `xmlns` 屬性並為它指派 http://schemas.microsoft.com/developer/vstemplate/2005 值。
+    > 撰寫 *vstemplate* 檔案時若要取得 IntelliSense 支援，請在 `VSTemplate` 元素中新增 `xmlns` 屬性並為它指派 `http://schemas.microsoft.com/developer/vstemplate/2005` 值。
 
 1. 儲存並關閉 *vstemplate* 檔案。
 

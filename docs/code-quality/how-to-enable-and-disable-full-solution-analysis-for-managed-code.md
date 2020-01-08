@@ -4,17 +4,17 @@ ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f7837b1e5ea5b84e1ee1197bf6f8c40d0863c3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d699dd74315cfc36820c1cdb4120543e0290b1a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649450"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587507"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>如何：啟用和停用 managed 程式碼的完整解決方案分析
 
@@ -34,7 +34,7 @@ ms.locfileid: "72649450"
 
 1. 若要開啟 [**選項**] 對話方塊，請在 Visual Studio 的功能表列上，選擇 [**工具**] [ > **選項**]。
 
-1. 在 [**選項**] 對話方塊中，選擇 [**文字編輯器**]**C#** [ > ] 或 [**基本** > **Advanced**]。
+1. 在 [**選項**] 對話方塊中，選擇 [**文字編輯器**] > **C#** 或 [**基本**] > [ **Advanced**]。
 
 1. 選取 [**啟用完整解決方案分析**] 核取方塊以啟用完整解決方案分析，或清除方塊來停用它。 當您完成時，請選擇 **[確定]** 。
 

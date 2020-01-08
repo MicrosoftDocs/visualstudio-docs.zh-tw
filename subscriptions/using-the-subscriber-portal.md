@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶入口網站上提供給您的完整權益
-ms.openlocfilehash: 7f1d3654aa49b53a1bb8543c28f6edb517c265bf
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 13266e018f122ae2b890e8c92bff71ce3016de75
+ms.sourcegitcommit: 36e874928f2933762d2fc6888a46236e376455d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74705821"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75546222"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>使用訂閱者入口網站 - my.visualstudio.com
 
 Visual Studio 訂閱者入口網站 ([https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)) 是您可以完整運用 Visual Studio 訂用帳戶權益的單一位置。
 
-若要使用入口網站，您必須以和訂閱相關聯的身分識別登入。  這可能是您的 Microsoft 帳戶 (MSA)，或是由組織 (例如您的雇主或學校) 提供給您的電子郵件地址。  了解[登入](signing-in.md)。
+若要使用入口網站，您必須以和訂閱相關聯的身分識別登入。  這可能是您的 Microsoft 帳戶（MSA）或組織提供給您的電子郵件地址，例如您的雇主或學校。  了解[登入](signing-in.md)。
 
 入口網站一共整理為六個頁面。  每個頁面都能讓您存取包含在您訂閱中各種不同的產品或服務。  六個頁面為 [權益]、[下載]、[產品金鑰]、[訂閱]、[支援] 及 [Marketplace]。
 

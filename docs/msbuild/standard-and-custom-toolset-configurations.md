@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8d3e78e4bd49c36174280c62ca8f24cdbd7f648
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 76596d752ae2e552088fff607142abb215e9147b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440028"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595068"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準和自訂工具組的設定
 MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用程式專案。 MSBuild 包含標準的工具組，但您也可以建立自訂工具組。 如需如何指定工具組的相關資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
@@ -52,7 +52,7 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
 
 Visual Studio 2017 及更新版本不會使用登錄機碼作為 MSBuild 的路徑。 若為與 Visual Studio 2017 一同安裝，且為 15.0 版之前的 MSBuild，下列登錄機碼會指定 MSBuild.exe 的安裝路徑。
 
-|登錄機碼|機碼名稱|字串索引鍵值|
+|登錄機碼|索引鍵名稱|字串索引鍵值|
 |------------------|--------------|----------------------|
 |**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\** |**MSBuildToolsPath**|**.NET Framework 2.0 安裝路徑**|
 |**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**.NET Framework 3.5 安裝路徑**|
@@ -108,9 +108,9 @@ Visual Studio 2017 及更新版本不會使用登錄機碼作為 MSBuild 的路�
 
 - **$(MSBuildBinPath)** 設定為 `ToolsPath` 值，是在登錄或定義 `ToolsVersion` 的組態檔中指定。 登錄或組態檔中的 `$(MSBuildToolsPath)` 設定會指定核心工作和目標的位置。 在專案檔中，這會對應至 $(MSBuildBinPath) 屬性，也會對應至 $(MSBuildToolsPath) 屬性。
 
-- `$(MSBuildToolsPath)` 是保留的屬性，由組態檔中指定的 MSBuildToolsPath 屬性提供。 (這個屬性會取代 `$(MSBuildBinPath)`。 不過，為相容性之故會執行 `$(MSBuildBinPath)`。)自訂工具組必須定義 `$(MSBuildToolsPath)` 或 `$(MSBuildBinPath)`，但不能同時定義兩者，除非它們有相同的值。
+- `$(MSBuildToolsPath)` 是保留的屬性，由組態檔中指定的 MSBuildToolsPath 屬性提供。 (這個屬性會取代 `$(MSBuildBinPath)`。 不過，`$(MSBuildBinPath)` 是為了相容性而執行。）自訂工具組必須定義 `$(MSBuildToolsPath)` 或 `$(MSBuildBinPath)`，但不能同時定義兩者，除非兩者都有相同的值。
 
   您也可以使用新增 MSBuildToolsPath 屬性時所用的相同語法，在組態檔中新增自訂的工具版本特定屬性。 為使專案檔能夠使用這些自訂屬性，請使用和組態檔指定的值名稱相同的名稱。 您可以在設定檔中定義工具組，但不能定義子工具組。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

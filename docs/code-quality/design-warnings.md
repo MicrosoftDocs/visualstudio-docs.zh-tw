@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, design warnings
 - warnings, design
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc714a4663505fe2a40cc145e8c8ca3c7bf86a1e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 301b829341eeb859030afabbf2225ea833e99a22
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649678"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587676"
 ---
 # <a name="design-warnings"></a>設計警告
 
@@ -31,10 +31,10 @@ ms.locfileid: "72649678"
 | - | - |
 | [CA1000：不要在泛型型別上宣告靜態成員](../code-quality/ca1000.md) | 呼叫泛型類型的靜態成員時，必須為類型指定類型引數。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定類型引數。 在上述兩種情況下，指定型別引數的語法不同且容易混淆。 |
 | [CA1001：具有可處置欄位的類型應該是可處置的](../code-quality/ca1001.md) | 類別會宣告並實作為 IDisposable 類型的實例欄位，而類別不會執行 IDisposable。 宣告 IDisposable 欄位的類別會間接擁有 Unmanaged 資源，且應實作 IDisposable 介面。 |
-| [CA1002：不要公開泛型清單](../code-quality/ca1002.md) | < （Of \< （T >） >）是泛型集合，專為效能而非繼承所設計。 因此，List 不包含任何虛擬成員。 應該改為公開專為繼承所設計的泛型集合。 |
+| [CA1002：不要公開泛型清單](../code-quality/ca1002.md) | < （Of \<（T >） >）是泛型集合，專為效能而非繼承所設計。 因此，List 不包含任何虛擬成員。 應該改為公開專為繼承所設計的泛型集合。 |
 | [CA1003：必須使用一般事件處理常式執行個體](../code-quality/ca1003.md) | 類型包含會傳回 void 的委派，其簽章包含兩個參數（第一個是物件，第二個是可指派給 EventArgs 的類型），而包含的元件目標 .NET Framework 2.0。 |
 | [CA1004：泛型方法應該提供類型參數](../code-quality/ca1004.md) | 推斷是指如何利用傳遞到泛型方法的引數類型，而不是利用型別引數的明確規格，來決定泛型方法的型別引數。 若要啟用推斷，泛型方法的參數簽章必須包含與方法之型別參數具有相同類型的參數。 在上述情形中，不必指定類型引數。 當您對所有型別參數使用推斷時，呼叫泛型和非泛型實例方法的語法完全相同;這可簡化泛型方法的可用性。 |
-| [CA1005：避免在泛型型別上包含過多參數](../code-quality/ca1005.md) | 泛型類型所包含的類型參數越多，就越難了解並記住每個類型參數所代表的含意。 通常會有一個型別參數（如清單 \<T >），而在某些情況下有兩個型別參數，如字典 \<TKey，TValue >。 不過，如果存在兩個以上的類型參數，則對大多數使用者而言都會變得難以理解。 |
+| [CA1005：避免在泛型型別上包含過多參數](../code-quality/ca1005.md) | 泛型類型所包含的類型參數越多，就越難了解並記住每個類型參數所代表的含意。 通常會有一個型別參數（如清單\<T >），而在某些情況下有兩個類型參數，如字典\<TKey、TValue > 中所示。 不過，如果存在兩個以上的類型參數，則對大多數使用者而言都會變得難以理解。 |
 | [CA1006：不要在成員簽章中巢狀化泛型類型](../code-quality/ca1006.md) | 巢狀型別引數就是也是泛型類型的型別引數。 若要呼叫其簽章含有巢狀型別引數的成員，則使用者必須具現化 (Instantiate) 一個泛型類型，並將這個類型傳遞給第二個泛型類型的建構函式。 必要程序及語法十分複雜，且應予以避免。 |
 | [CA1007：建議在適當時使用泛型](../code-quality/ca1007.md) | 外部可見的方法包含 System.Object 類型的傳址參數。 使用泛型方法可讓所有類型 (遵守條件約束) 傳遞給方法，而不需要先將類型轉型為傳址參數類型。 |
 | [CA1008：列舉值中應該要有值為零的成員](../code-quality/ca1008.md) | 如同其他實值類型一般，未初始化的列舉其預設值為零。 有效值屬性化列舉應該使用值零來定義成員，讓預設值是列舉的有效值。 如果已套用 FlagsAttribute 屬性的列舉定義零值成員，則其名稱應該是 "None"，以表示列舉中未設定任何值。 |
@@ -84,11 +84,11 @@ ms.locfileid: "72649678"
 | [CA1057：字串 URI 多載呼叫 System.Uri 多載](../code-quality/ca1057.md) | 類型會宣告方法多載，這些方法多載的差別只在於以 System.Uri 參數取代字串參數。 接受字串參數的多載不會呼叫接受 URI 參數的多載。 |
 | [CA1058：類型不應該擴充特定基底類型](../code-quality/ca1058.md) | 外部可見的類型會延伸某些基底類型 (Base Type)。 請使用其他作法。 |
 | [CA1059：成員不應該公開特定的具象類型](../code-quality/ca1059.md) | 具象類型就是具有完整實作 (Implementation) 且因此能加以具現化 (Instantiated) 的類型。 若要讓成員能廣泛使用，請使用建議的介面來取代具象類型。 |
-| [CA1060：將 P/Invokes 移到 NativeMethods 類別](../code-quality/ca1060.md) | 平台叫用方法（例如，以 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中使用 Declare 關鍵字所定義的 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 或方法）會存取非受控碼。 這些方法應該是 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 類別。 |
+| [CA1060：將 P/Invokes 移到 NativeMethods 類別](../code-quality/ca1060.md) | 平台叫用方法（例如，以 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中使用 Declare 關鍵字所定義的 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 或方法）會存取非受控碼。 這些方法應該是 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 類別。 |
 | [CA1061：不要隱藏基底類別方法](../code-quality/ca1061.md) | 只有在衍生方法的參數簽章因類型衍生時比基底方法參數簽章中的類型還要弱時，基底類型中的方法才會被衍生類型中的相同具名方法所隱藏。 |
 | [CA1062：必須驗證公用方法的引數](../code-quality/ca1062.md) | 所有傳遞至外部可見方法的參考引數都應經過 null 檢查。 |
 | [CA1063：必須正確實作 IDisposable](../code-quality/ca1063.md) | 所有的 IDisposable 類型都需正確地實作 Dispose 模式。 |
-| [CA1064：例外狀況必須是公用](../code-quality/ca1064.md) | 內部例外狀況只會在自己的內部範圍內顯示。 當例外狀況超出內部範圍後，只能使用基本例外狀況來攔截例外狀況。 如果內部例外狀況繼承自 <xref:System.Exception?displayProperty=fullName>、<xref:System.SystemException?displayProperty=fullName> 或 <xref:System.ApplicationException?displayProperty=fullName>，則外部程式碼將不會有足夠的資訊來知道該如何處理例外狀況。 |
+| [CA1064：例外狀況必須是公用](../code-quality/ca1064.md) | 內部例外狀況只會在自己的內部範圍內顯示。 當例外狀況超出內部範圍後，只能使用基本例外狀況來攔截例外狀況。 如果內部例外狀況是繼承自 <xref:System.Exception?displayProperty=fullName>、<xref:System.SystemException?displayProperty=fullName>或 <xref:System.ApplicationException?displayProperty=fullName>，外部程式碼將不會有足夠的資訊來知道該如何處理例外狀況。 |
 | [CA1065：不要在非預期的位置中引發例外狀況](../code-quality/ca1065.md) | 不可擲回例外狀況 (Exception) 的方法卻擲回例外狀況。 |
 | [CA1068： CancellationToken 參數必須是最後的](../code-quality/ca1068.md) | 方法的 CancellationToken 參數不是最後一個參數。 |
 | [CA2210：組件應該具備有效的強式名稱](../code-quality/ca2210.md) | 強式名稱可避免用戶端在不知情的狀況下，載入已遭他人修改的組件。 除了極少數的案例以外，您都應該避免部署沒有強式名稱的組件。 如果您共用或散發未正確簽署的組件，表示這個組件或許已遭他人修改，通用語言執行平台可能不會載入組件，或是使用者可能必須停用電腦上的驗證作業。 |

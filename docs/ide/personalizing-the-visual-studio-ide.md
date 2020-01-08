@@ -2,17 +2,17 @@
 title: 自訂 IDE
 ms.date: 11/20/2017
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6bf00573febda06aba4d12184a416341879bac7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 39c9edbf5e96a59912c0cf16d7b4178f6fba2a62
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666811"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585739"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>將 Visual Studio IDE 個人化
 
@@ -52,7 +52,7 @@ ms.locfileid: "72666811"
 
 ::: moniker range="vs-2017"
 
-## <a name="start-page"></a>起始頁
+## <a name="start-page"></a>開始頁面
 
 若要為您和小組建立自訂起始頁，請參閱[自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)。
 

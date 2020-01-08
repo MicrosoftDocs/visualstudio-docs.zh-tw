@@ -1,5 +1,5 @@
 ---
-title: Customize code maps by editing the DGML files
+title: 藉由編輯 DGML 檔案自訂 Code Map
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,19 +15,19 @@ helpviewer_keywords:
 - dependency graphs, customizing
 - graph documents, grouping nodes
 - dependency graphs, assigning categories and properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ace7da233f135aa795d73d43a5e10e411c0d646f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2b79fd73713de535c11062fd6396abde6b1a0131
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748474"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590510"
 ---
-# <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
+# <a name="customize-code-maps-by-editing-the-dgml-files"></a>藉由編輯 DGML 檔案自訂 Code Map
 
 若要自訂 Code Map，您可以編輯其有向圖形標記語言（.dgml）檔案。 例如，您可以編輯項目來指定自訂樣式、指派節點和連結的屬性與分類，或將文件或 URL 連結至程式碼項目或連結。 如需 DGML 元素的詳細資訊，請參閱有向[圖形標記語言（DGML）參考](../modeling/directed-graph-markup-language-dgml-reference.md)。
 
@@ -47,7 +47,7 @@ ms.locfileid: "72748474"
 
     若要加入新的群組，請找出 `<Nodes>` 區段。 加入新的 `<Node/>` 項目。
 
-3. 在 `<Node/>` 項目中加入 `Group` 屬性，指定群組呈現為展開或摺疊的狀態。 例如:
+3. 在 `<Node/>` 項目中加入 `Group` 屬性，指定群組呈現為展開或摺疊的狀態。 例如：
 
    ```xml
    <Nodes>
@@ -64,7 +64,7 @@ ms.locfileid: "72748474"
 
    - `Category` 屬性，指定群組程式碼項目與其子程式碼項目之間的 `Contains` 關聯性
 
-     例如:
+     例如：
 
    ```xml
    <Links>
@@ -96,7 +96,7 @@ ms.locfileid: "72748474"
     Stroke="StrokeValue"
     ```
 
-     例如:
+     例如：
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -201,7 +201,7 @@ ms.locfileid: "72748474"
     Shape="ShapeFilePathLocation"
     ```
 
-     例如:
+     例如：
 
     ```xml
     <Nodes>
@@ -236,7 +236,7 @@ ms.locfileid: "72748474"
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     例如:
+     例如：
 
     ```xml
     <Links>
@@ -266,7 +266,7 @@ ms.locfileid: "72748474"
 
 2. 在 `<Style/>` 項目中加入包含 `<Condition/>` 屬性的 `Expression` 項目，以指定傳回布林值的運算式。
 
-    例如:
+    例如：
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -286,35 +286,35 @@ ms.locfileid: "72748474"
 
     這個運算式會使用下列 Backus-Naur 格式 (BNF) 語法：
 
-    \<Expression >：： = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "（" \<Expression > "）" &#124; \<MemberBindings > &#124; \<Literal > &#124; 1Number >
+    \<運算式 >：： = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "（"\<Expression > "）" &#124; \<MemberBindings > &#124; \<常值&#124; > \<Number >
 
-    \<BinaryExpression >：： = \<Expression > \<Operator > \<Expression >
+    \<BinaryExpression >：： = \<運算式 > \<運算子 > \<運算式 >
 
-    \<UnaryExpression >：： = "！" \<Expression > &#124; "+" \<Expression > &#124; "-" \<Expression >
+    \<UnaryExpression >：： = "！" \<運算式 > &#124; "+" \<運算式 > &#124; "-" \<運算式 >
 
-    \<Operator >：： = "<" &#124; "\< =" &#124; "=" &#124; "> =" &#124; ">" &#124; "！ =" &#124; "或&#124; " "，以及&#124; " "+ &#124; " "* &#124; " "/ &#124; " "-"
+    \<運算子 >：： = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "！ =" &#124; "或&#124; " "和" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    \<MemberBindings >：： = \<MemberBindings > &#124; \<MemberBinding > "." \<MemberBinding >
+    \<MemberBindings >：： = \<MemberBindings > &#124; \<m b g > "." \<m b g >
 
-    \<MemberBinding >：： = \<MethodCall > &#124; \<PropertyGet >
+    \<M b g >：： = \<MethodCall > &#124; \<PropertyGet >
 
-    \<MethodCall >：： = \<Identifier > "（" \<MethodArgs > "）"
+    \<MethodCall >：： = \<識別碼 > "（" \<MethodArgs > "）"
 
     \<PropertyGet >：： = Identifier
 
-    \<MethodArgs >：： = \<Expression > &#124; \<Expression > "，" \<MethodArgs &#124; > \<empty >
+    \<MethodArgs >：： = \<運算式 > &#124; \<expression > "，" \<MethodArgs > &#124; \<empty >
 
-    \<Identifier >：： = [^。 ]*
+    \<識別碼 >：： = [^。 ]*
 
-    \<Literal >：： = 單引號或雙引號括住的字串常值
+    \<常值 >：： = 單引號或雙引號括住的字串常值
 
-    \<Number >：： = 具有選擇性小數點的數位字串
+    \<數位 >：： = 具有選擇性小數點的數位字串
 
     您可以指定多個 `<Condition/>` 元素，這必須全部為 true 才能套用樣式。
 
 3. 在 `<Condition/>` 項目的下一行加入一個或多個 `<Setter/>` 項目來指定 `Property` 屬性與固定的 `Value` 屬性，或加入計算的 `Expression` 屬性，以套用至符合條件的對應、程式碼項目或連結。
 
-    例如:
+    例如：
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -442,7 +442,7 @@ ms.locfileid: "72748474"
 
 1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。
 
-2. 找出該程式碼項目的 `<Node/>` 項目。 指定此屬性的名稱及值。 例如:
+2. 找出該程式碼項目的 `<Node/>` 項目。 指定此屬性的名稱及值。 例如：
 
     ```xml
     <Nodes>
@@ -464,7 +464,7 @@ ms.locfileid: "72748474"
 
 2. 找出同時包含來源程式碼項目與目標程式碼項目名稱的 `<Link/>` 項目。
 
-3. 在 `<Node/>` 項目中，指定屬性名稱及其值。 例如:
+3. 在 `<Node/>` 項目中，指定屬性名稱及其值。 例如：
 
     ```xml
     <Links>
@@ -489,7 +489,7 @@ ms.locfileid: "72748474"
 
 - 找出您要的程式碼項目之 `<Node/>` 項目。
 
-- 在 `<Node/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如:
+- 在 `<Node/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如：
 
     ```xml
     <Nodes>
@@ -511,7 +511,7 @@ ms.locfileid: "72748474"
 
 2. 找出同時包含來源程式碼項目與目標程式碼項目名稱的 `<Link/>` 項目。
 
-3. 在 `<Link/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如:
+3. 在 `<Link/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如：
 
     ```xml
     <Links>
@@ -533,7 +533,7 @@ ms.locfileid: "72748474"
 
 2. 加入父分類的 `<Category/>` 項目，然後將 `BasedOn` 屬性加入至子分類的 `<Category/>` 項目。
 
-     例如:
+     例如：
 
     ```xml
     <Nodes>
@@ -582,7 +582,7 @@ ms.locfileid: "72748474"
      > [!NOTE]
      > 每個項目只能有一個 `Reference` 屬性。
 
-     例如:
+     例如：
 
    ```xml
    <Nodes>
@@ -607,7 +607,7 @@ ms.locfileid: "72748474"
 
       4. 使用 `Label` 屬性來指定程式碼專案的 [**移至參考**] 快捷方式功能表上的顯示文字。
 
-      例如:
+      例如：
 
    ```xml
    <Nodes>

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD], debugging workflows
 - Workflow Designer [WFD], debugging workflows
 ms.assetid: d71308cf-d464-4536-8711-0d0a8eadb255
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7432e02a4c8e133d7d758909a7ea851f90b88841
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4b8de1ff9875d175c956a45b87d459d0943e783c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650564"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597057"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>使用工作流程設計工具的調試工作流程
 
@@ -33,13 +33,13 @@ ms.locfileid: "72650564"
 - 使用遠端偵錯。 如需使用遠端偵錯程式的詳細資訊，請參閱[如何：啟用遠端偵錯](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100))。
 
    > [!NOTE]
-   > 如果工作流應用程式的目標為 x86 架構，並裝載在執行64位作業系統的電腦上，則除非遠端電腦上已安裝 Visual Studio，或工作流程應用程式的目標變更為，**否則遠端偵錯程式將無法運作。任何 CPU**。
+   > 如果工作流應用程式的目標為 x86 架構，並裝載在執行64位作業系統的電腦上，則除非遠端電腦上已安裝 Visual Studio，或工作流程應用程式的目標變更為 [**任何 CPU**]，否則遠端偵錯程式將無法運作。
 
 ## <a name="step-through-code"></a>逐步執行程式碼
 
 - **逐步**執行：按**F11**逐步進入活動。 偵錯工具會逐步執行任何已定義的處理常式。 如果沒有定義處理常式，則不進入該活動；若為包含其他活動的複合活動，則逐步執行第一個執行中活動。
 
-- **跳出：** 按下**Shift** +**F11**跳出活動。 逐步跳出活動會將目前活動及其同層級活動執行到完成。 接著偵錯工具會在目前活動的父代上中斷。 從程式碼處理常式逐步跳出時，偵錯工具會在處理常式所關聯的活動上中斷。
+- **跳出：** 按下**Shift**+**F11**跳出活動。 逐步跳出活動會將目前活動及其同層級活動執行到完成。 接著偵錯工具會在目前活動的父代上中斷。 從程式碼處理常式逐步跳出時，偵錯工具會在處理常式所關聯的活動上中斷。
 
 - 不進入函式：按**F10** **跳過活動**。 跳出複合活動時，偵錯工具在複合活動的第一個可執行子系上中斷。 不進入非複合活動 (例如，<xref:System.Activities.Statements.Assign> 活動) 時，偵錯工具會執行活動及其相關聯的處理常式，並在下一個活動上中斷。 如果執行的活動是複合活動中最後一個子活動，則在執行後，偵錯工具會在父活動上中斷。
 

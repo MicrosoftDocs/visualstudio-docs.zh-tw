@@ -7,17 +7,17 @@ helpviewer_keywords:
 - response times in load tests
 - load test results, response times
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5fbaa3f8f322bc6633e4f5081ba4cae38b581b95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cf8bc1205658899a51cf1a50e83a9a8b34034b25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653289"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594314"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>作法：使用負載測試分析器在負載測試中檢視網頁回應時間
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>如何：使用負載測試分析器在負載測試中檢視網頁回應時間
 
 每個網頁載入所花的時間稱為「回應時間」。 當您建立 Web 效能測試時，可以在 Web 效能測試中為每一個網頁要求設定回應時間目標。
 
@@ -59,7 +59,7 @@ ms.locfileid: "72653289"
    |**最大值**|頁面回應時間的最大值。<br /><br /> 根據預設並未收集這個資料。 若要收集此資料，請在 [負載測試編輯器] 的 [回合設定] 節點下，選取回合設定節點予以變更。 在 [屬性] 視窗中的 [計時詳細資料儲存區] 屬性，選取 [所有個別細節]。|
    |**標準差**|根據預設，標準差資料並未收集。 若要收集此資料，請在 [負載測試編輯器] 的 [回合設定] 節點下，選取回合設定節點予以變更。 在 [屬性] 視窗中的 [計時詳細資料儲存區] 屬性，選取 [所有個別細節]。|
    |**頁面時間**|對網頁發出的所有要求的平均回應時間。|
-   |**目標**|頁面時間目標。 這是頁面的常數值。 **注意：** 只有在定義了 Web 效能測試要求的目標時，才會顯示「頁面時間目標」。|
+   |**目標**|頁面時間目標。 這是頁面的常數值。 **注意：** 只有在定義了 Web 效能測試之要求的目標時，才會顯示「頁面時間目標」。|
    |**% 符合目標**|對符合回應時間目標的網頁發出的要求百分比。|
 
    如需詳細資訊，請參閱[在資料表檢視中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
@@ -84,14 +84,14 @@ ms.locfileid: "72653289"
 
     資料隨即加入至圖形。
 
-7. (選擇性) 針對 [平均頁面時間]、[頁面回應時間目標] 和 [總頁數] 重複上述步驟。
+7. 選擇性針對 [**平均頁面時間**]、[**頁面回應時間目標**] 和 [**總頁數**] 重複上一個步驟。
 
    > [!NOTE]
    > [頁面回應時間目標] 為一常數。
 
    如需詳細資訊，請參閱[在圖形檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在資料表檢視中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 - [如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)

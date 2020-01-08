@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2157a6142f95b6ffe34503a8ee80419fcb9ca506
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 990b9541e22040b53a5f509fc358013dca777906
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018820"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594431"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
 
@@ -32,7 +32,7 @@ ms.locfileid: "72018820"
 
 ::: moniker range="vs-2017"
 
-**15.3 中的新功能**：如果您在最初建立網路配置時已選取部分配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
+**15.3 的新**功能：如果您在第一次建立網路設定時選取了部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
 
 ::: moniker-end
 
@@ -42,7 +42,7 @@ ms.locfileid: "72018820"
 
 ::: moniker-end
 
-如果您在檔案共用上裝載配置，則應該更新配置的私用複本（例如 c:\VSLayout），然後在下載所有更新的內容之後，將它複製到您的檔案共用（例如，\\server \ products \ VS）。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
+如果您在檔案共用上裝載配置，則應該更新配置的私用複本（例如，c:\VSLayout），然後在下載所有更新的內容之後，將它複製到您的檔案共用（例如 \\server\products\VS）。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
 
 讓我們以一些範例來逐步解說如何在建立後更新配置：
 
@@ -64,7 +64,7 @@ ms.locfileid: "72018820"
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* 以下是如何新增額外的工作負載和當地語系化語言  (這個命令會新增「Azure 開發」工作負載)。現在，Managed 桌面和 Azure 都會包含在此配置中。  所有這些工作負載也會包含英文和德文的語言資源。  而且，配置會更新為最新的可用版本。
+* 以下是如何新增額外的工作負載和當地語系化語言  （此命令會新增*Azure 開發*工作負載）。 現在，受管理的桌面和 Azure 都會包含在此配置中。  所有這些工作負載也會包含英文和德文的語言資源。  而且，配置會更新為最新的可用版本。
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
@@ -73,9 +73,9 @@ ms.locfileid: "72018820"
     > [!IMPORTANT]
     > 即使您將所新增選擇性元件包含在[回應檔案](automated-installation-with-response-file.md)的「新增」區段中，更新作業也不會安裝這些元件。 這是因為新增作業不會在更新期間使用。
     >
-    > **因應措施**：在升級後執行個別修改作業，以安裝遺漏的元件。
+    > 因應**措施：在升級之後執行個別**的修改作業，以安裝遺失的元件。
 
-* 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。 (這個命令會新增「ASP.NET 與網頁程式開發」工作負載)。現在，受控桌面、Azure 以及 ASP.NET 與網頁程式開發工作負載都會包含在此配置中。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
+* 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。 （此命令會新增*ASP.NET 和 網頁程式開發*工作負載）。 現在，受管理的桌面、Azure 和 ASP.NET & 的 Web 開發工作負載會包含在此版面配置中。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
@@ -167,7 +167,7 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [安裝 Visual Studio](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
