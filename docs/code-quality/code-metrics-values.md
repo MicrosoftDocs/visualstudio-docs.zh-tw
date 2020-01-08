@@ -4,17 +4,17 @@ ms.date: 11/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db72d5daebd32e53fb690aaa6ad80dc35e68e7a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6caf63b2d1fb6b9206fe43da5c7a63818fd299f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622428"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587692"
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 
@@ -34,7 +34,7 @@ ms.locfileid: "72622428"
 
 - **繼承深度**-指出繼承自另一個類別的不同類別數目，一直回到基類。 繼承深度與類別結合性相似之處在于，基底類別中的變更可能會影響其繼承的任何類別。 這個數位愈大，繼承越深入，而基類修改的可能性也會導致中斷性變更。 如需繼承的深度，較低的值是良好的，而高值則不正確。
 
-- **類別**結合-透過參數、區域變數、傳回型別、方法呼叫、泛型或樣板具現化、基類、介面執行、外部型別上定義的欄位和屬性，測量與唯一類別的結合修飾符. 良好的軟體設計規定型別和方法應該具有高一致性和低耦合。 高結合性表示很容易重複使用和維護的設計，因為它在其他類型上有許多相關性。 如需詳細資訊，請參閱[類別](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/)結合 blog 文章。
+- **類別**結合-透過參數、本機變數、傳回型別、方法呼叫、泛型或樣板具現化、基類、介面執行、外部型別上定義的欄位，以及屬性裝飾，測量與唯一類別的結合。 良好的軟體設計規定型別和方法應該具有高一致性和低耦合。 高結合性表示很容易重複使用和維護的設計，因為它在其他類型上有許多相關性。 如需詳細資訊，請參閱[類別](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/)結合 blog 文章。
 
 - 程式**程式碼**-指出程式碼中的大約行數。 計數是以 IL 程式碼為基礎，因此不是原始程式檔中的確切行數。 較高的計數可能表示類型或方法嘗試執行太多工作，因此應該加以分割。 它也可能表示類型或方法可能難以維護。
 

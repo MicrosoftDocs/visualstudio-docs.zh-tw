@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a52983b1a3def85d5785d0aa3f7abf99e0317c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3623a0c2380188cbb16f6186bddc3f3f2f0c3bd7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652302"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590588"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>將自訂屬性新增至相依性圖表
 
@@ -22,7 +22,7 @@ ms.locfileid: "72652302"
 
 ## <a name="non-visible-properties"></a>非可見屬性
 
-如果您只想要讓程式碼將值附加至相依性圖表中的任何元素，則不需要定義 MEF 元件。 在[ILayerElement](/previous-versions/ff644511(v=vs.140))中，有一個名為 `Properties` 的字典。 只要將可封送處理的值加入至任何圖層項目的字典中即可。 這些物件將會儲存為相依性圖表的一部分。
+如果您只想要讓程式碼將值附加至相依性圖表中的任何元素，則不需要定義 MEF 元件。 在 [ILayerElement](/previous-versions/ff644511(v=vs.140)) 中, 有一個名為`Properties`的字典。 只要將可封送處理的值加入至任何圖層項目的字典中即可。 這些物件將會儲存為相依性圖表的一部分。
 
 ## <a name="editable-properties"></a>可編輯屬性
 

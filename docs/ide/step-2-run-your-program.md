@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f31153dab172451681b5e1eb8292f505141c2ff9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 9ee63c88bdca5f096fb5fbb8f36be0e2af8fbade
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950721"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588742"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>步驟2：執行您的圖片檢視器應用程式
 
@@ -63,7 +63,7 @@ ms.locfileid: "71950721"
 
 * 若要回到上一個教學課程步驟，請參閱[步驟1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [教學課程2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
 * [教學課程3：建立配對遊戲](tutorial-3-create-a-matching-game.md)

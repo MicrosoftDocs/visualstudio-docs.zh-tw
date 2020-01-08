@@ -15,17 +15,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ca611d7ae1faa86ae7878b2f824ce27b9872713
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ffa561667ea31f215306c7cac4b9820d7b386b5c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621573"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590081"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
@@ -34,26 +34,26 @@ ms.locfileid: "72621573"
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中的專案和方案](/visualstudio/mac/projects-and-solutions)。
 
-## <a name="projects"></a>專案
+## <a name="projects"></a>Projects
 
 當您在 Visual Studio 中建立應用程式或網站時，您會從*專案*開始。 就邏輯方面而言，專案包含編譯成可執行檔、程式庫或網站的所有檔案。 這些檔案可以包含原始程式碼、圖示、影像、資料檔案等等。 專案也包含編譯器設定和其他組態檔，這些是您的程式與其通訊的各種服務或元件所需的項目。
 
 ### <a name="project-file"></a>專案檔
 
-Visual Studio 使用[msbuild](../msbuild/msbuild.md)來建立方案中的每個專案，而且每個專案都包含一個 MSBuild 專案檔案。 副檔名會反映專案的類型，例如C#專案（.csproj）、Visual Basic 專案（. vbproj）或資料庫專案（.dbproj）。 專案檔是一份 XML 檔，其中包含 MSBuild 為了建立您的專案所需的所有資訊和指示，包括內容、平台需求、版本設定資訊、網頁伺服器或資料庫伺服器設定，以及要執行的工作。
+Visual Studio 使用[msbuild](../msbuild/msbuild.md)來建立方案中的每個專案，而且每個專案都包含一個 MSBuild 專案檔案。 副檔名會反映專案的類型，例如C#專案（.csproj）、Visual Basic 專案（. vbproj）或資料庫專案（.dbproj）。 專案檔是一份 XML 檔，其中包含 MSBuild 為了建立您的專案所需的所有資訊和指示，包括內容、平臺需求、版本設定資訊、網頁伺服器或資料庫伺服器設定，以及要執行.
 
-專案檔是以[MSBUILD XML 架構](../msbuild/msbuild-project-file-schema-reference.md)為基礎。 若要查看 Visual Studio 中較新的[sdk 樣式專案檔案](../msbuild/how-to-use-project-sdk.md)的內容，請以滑鼠右鍵按一下**方案總管**中的專案節點，然後選取 **編輯 \<projectname \>** 。 若要查看該樣式的 .NET Framework 和其他專案的內容，請先卸載專案（在**方案總管**中的專案節點上按一下滑鼠右鍵，然後選取 **[卸載專案**]）。 然後，以滑鼠右鍵按一下專案，然後選擇 [**編輯 \<projectname \>** ]。
+專案檔是以[MSBUILD XML 架構](../msbuild/msbuild-project-file-schema-reference.md)為基礎。 若要查看 Visual Studio 中較新的[sdk 樣式專案](../msbuild/how-to-use-project-sdk.md)檔的內容，請以滑鼠右鍵按一下**方案總管**中的專案節點，然後選取 [**編輯 \<專案名稱\>** ]。 若要查看該樣式的 .NET Framework 和其他專案的內容，請先卸載專案（在**方案總管**中的專案節點上按一下滑鼠右鍵，然後選取 **[卸載專案**]）。 然後，以滑鼠右鍵按一下專案，然後選擇 [**編輯] \<專案名稱\>** 。
 
 > [!NOTE]
 > 您不需要在 Visual Studio 中使用方案或專案來編輯、建立和偵錯工具代碼。 您可以只在 Visual Studio 中開啟包含原始程式檔的資料夾並開始編輯。 如需詳細資訊，請參閱[在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
 
-## <a name="solutions"></a>方案
+## <a name="solutions"></a>解決方案
 
 「方案」內所含的專案。 儘管名稱為方案，但其並非「解答」。 方案僅是一或多個相關專案的容器、組建資訊、Visual Studio 視窗設定、任何未與特定專案建立關聯的其他檔案。 方案由具有自己獨特格式的文字檔 (副檔名為 *.sln*) 所描述，並不適合手動編輯。
 
 Visual Studio 使用兩種檔案類型 ( *.sln* 和 *.suo*) 來儲存方案的設定。
 
-|副檔名|[屬性]|描述|
+|副檔名|Name|描述|
 |---------------|----------|-----------------|
 |.sln|Visual Studio 方案|將專案、專案項目和方案項目組織到方案中。|
 |.suo|方案使用者選項|儲存使用者層級設定和自訂項目，例如中斷點。|

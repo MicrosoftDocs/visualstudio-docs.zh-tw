@@ -8,17 +8,17 @@ helpviewer_keywords:
 - member notation
 - notation, association
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd1bb86e13fb5f5b654ad4f4e1ee7fe7a243f1f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f706acfbaee7c6170f74bc655f9172ff6bdd3b4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647737"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592265"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>如何：在類別設計工具中變更為成員標記法或關聯標記法
 

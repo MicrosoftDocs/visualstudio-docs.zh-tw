@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f19fbfb82a74de0f0eedf784483ecaeccc9a5fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c60dffc7bb47336ae36e64a366def3c4dce06213
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648414"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586580"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何：新增、更新或移除 WCF 資料服務參考
 *服務參考*可讓專案存取一或多個 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。 使用 [**加入服務參考**] 對話方塊，在本機、區域網路或網際網路上搜尋目前解決方案中的 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。
@@ -70,7 +70,7 @@ ms.locfileid: "72648414"
     服務用戶端（proxy）會產生，而描述服務的中繼資料則會新增*至 app.config 檔案*。
 
 ## <a name="update-a-service-reference"></a>更新服務參考
-@No__t_0 的實體資料模型有時會變更。 發生這種情況時，您必須更新服務參考。
+[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 的實體資料模型有時會變更。 發生這種情況時，您必須更新服務參考。
 
 ### <a name="to-update-a-service-reference"></a>若要更新服務參考
 
@@ -92,4 +92,4 @@ ms.locfileid: "72648414"
 
 ## <a name="see-also"></a>請參閱
 
-- [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation 服務及 Visual Studio 中的 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

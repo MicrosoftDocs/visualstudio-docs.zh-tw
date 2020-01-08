@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, for distributed load tests
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4704ae4d6a43eb3ac23b928b26515b545164e495
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3129aa5139533db0783c168c3489e071fe9339b5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653646"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589133"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>如何：建立分散式負載測試的測試組態檔案
 
@@ -124,7 +124,7 @@ Visual Studio 的測試設定會儲存在檔案中。 測試設定會定義有�
     |**網路模擬：** 您可以使用測試設定指定要對測試加上人為的網路負載。 網路模擬可藉由模擬特定網路連線速度 (如撥號連線)，對電腦的對外通訊產生影響。 **注意：** 網路模擬無法用以增加網路連線速度。|負載測試會忽略網路模擬配接器。 因為負載測試會改用負載測試情節的網路混合中指定的設定。<br /><br /> 如需詳細資訊，請參閱[指定虛擬網路類型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。||
     |**系統資訊：** 測試設定可設定為包含系統資訊診斷和資料收集器執行所在電腦的相關系統資訊。 透過測試設定，系統資訊會指定於測試結果中。|![資訊圖示](../test/media/vc364f4.gif)<br /><br /> 您可以同時從負載代理程式和待測系統收集系統資訊。|不需任何設定，即可收集這項資訊。|
     |**測試影響：** 您可以收集在測試案例執行時，應用程式程式碼使用了哪些方法的相關資訊。 您可以將這項資訊對照開發人員對應用程式程式碼所做的變更，判斷有哪些測試受到這些開發變更的影響。|負載測試不會收集測試影響資料。||
-    |**視訊錄製器：** 您可以在執行自動化測試時，建立桌面工作階段的視訊錄製。 這在檢視自動程式碼 UI 測試的使用者動作時可能很有用。 視訊可協助其他小組成員找出難以重現的應用程式問題。 **注意：** 遠端執行測試時，除非代理程式以互動式處理序模式執行，否則視訊錄製器將無法運作。|![重要圖示](../test/media/vc364f3.gif) **警告：** 不建議使用視訊錄製器配接器進行負載測試。|[如何：使用測試設定在測試期間包含螢幕和聲音錄製](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**視訊錄製器：** 您可以在執行自動化測試時，建立桌面工作階段的視訊錄製。 這在檢視自動程式碼 UI 測試的使用者動作時可能很有用。 視訊可協助其他小組成員找出難以重現的應用程式問題。 **注意：** 遠端執行測試時，除非代理程式以互動式處理序模式執行，否則視訊錄製器將無法運作。|![重要圖示](../test/media/vc364f3.gif)**警告：** 我們不建議使用影片錄製器介面卡進行負載測試。|[如何：使用測試設定在測試期間包含螢幕和聲音錄製](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. 選擇 [部署]。
 

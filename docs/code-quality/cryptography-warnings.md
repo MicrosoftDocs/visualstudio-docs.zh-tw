@@ -3,17 +3,17 @@ title: 密碼編譯警告
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d96723ea-a293-488d-b9db-adb437e50cdd
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2414a12c00b7d496e09f01982783a90874721cdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 78923dfd2873b53790421cde3fe01f024e267202
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649686"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587691"
 ---
 # <a name="cryptography-warnings"></a>密碼編譯警告
 密碼編譯警告透過正確使用加密來支援更安全的程式庫與應用程式。 這些警告有助於防止在程式中出現安全性問題。 如果停用這些警告中的任一個，則您應該清楚地在程式碼中標示理由，同時也要通知指定的安全主管有關您的開發專案。

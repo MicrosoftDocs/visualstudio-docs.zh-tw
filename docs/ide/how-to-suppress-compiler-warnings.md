@@ -3,17 +3,17 @@ title: 隱藏專案和 NuGet 套件的編譯器警告
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cbcef86187ad03545066f3c595d00b56f83be5c5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747953"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591420"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：隱藏編譯器警告
 
@@ -43,7 +43,7 @@ ms.locfileid: "72747953"
 
 1. 選擇 [組態屬性] 分類，並選擇 [C/C++] 分類，然後選擇 [進階] 頁面。
 
-1. 請執行下列其中一個步驟：
+1. 執行下列步驟：
 
     - 在 [停用特定警告] 方塊中，指定您想要隱藏並以分號分隔之警告的錯誤碼。
 
@@ -87,7 +87,7 @@ ms.locfileid: "72747953"
     ```
 
    > [!NOTE]
-   > .NET Core 專案不包含預設的組建組態屬性群組。 若要隱藏.NET Core 專案中的警告，請手動將組建組態區段加入至檔案中。 例如:
+   > .NET Core 專案不包含預設的組建組態屬性群組。 若要隱藏.NET Core 專案中的警告，請手動將組建組態區段加入至檔案中。 例如：
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">

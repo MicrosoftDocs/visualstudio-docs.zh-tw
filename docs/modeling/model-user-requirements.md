@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658405"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590237"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 
@@ -60,7 +60,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 商務規則是未與特定使用案例相關聯的需求，而且應該會在系統中觀察到。
 
-許多商務規則是概念性類別間之關聯性的條件約束。 您可以將這些*靜態商務規則*撰寫為與概念類別圖上相關類別相關聯的批註。 例如:
+許多商務規則是概念性類別間之關聯性的條件約束。 您可以將這些*靜態商務規則*撰寫為與概念類別圖上相關類別相關聯的批註。 例如：
 
 ![附加至 Order 類別之註解的規則。](../modeling/media/uml_reqmcd2.png)
 
@@ -78,7 +78,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 ## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
-有數種類別的服務需求品質。 包括下列各項：
+有數種類別的服務需求品質。 其包括：
 
 - 效能
 

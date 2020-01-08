@@ -1,22 +1,22 @@
 ---
-title: 如何：將類別圖表加入至專案 (類別設計工具)
+title: 如何：將類別圖加入專案 (類別設計工具)
 ms.date: 05/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f7a909196a3b345b39c006e9bf7cd6a52c9bde
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 87a6c1e996d820724138b6bf38c6440193a4c26b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188980"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588833"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>如何：將類別圖表新增到專案
 

@@ -8,8 +8,8 @@ f1_keywords:
 helpviewer_keywords:
 - surround with
 - code snippets
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 09f6e2e9b4b89c7e6fd1fe9a342d4fd05b12e7a9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747973"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585414"
 ---
 # <a name="code-snippets"></a>程式碼片段
 
@@ -31,7 +31,7 @@ ms.locfileid: "72747973"
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[程式碼片段 (Visual Studio for Mac)](/visualstudio/mac/snippets)。
 
-程式碼片段可使用的語言包括 C#、C++、Visual Basic、XML 和 T-SQL 等等。 若要查看某個語言所有可用的已安裝程式碼片段，請從 [**工具**] 功能表開啟 [**程式碼片段管理員**] （或按**ctrl**+**K**， **ctrl**+**B**），然後從下拉式選單中選擇語言功能表。
+程式碼片段可使用的語言包括 C#、C++、Visual Basic、XML 和 T-SQL 等等。 若要查看某個語言所有可用的已安裝程式碼片段，請從 [**工具**] 功能表開啟 [**程式碼片段管理員**] （或按**ctrl**+**K**， **ctrl**+**B**），然後從頂端的下拉式功能表中選擇語言。
 
 ![[程式碼片段管理員] 對話方塊](media/code-snippets-manager.png)
 
@@ -60,7 +60,7 @@ finally
 }
 ```
 
-插入此程式碼片段的方式是在程式碼視窗的右鍵功能表 (操作功能表) 中依序按一下 [插入程式碼片段] 和 [Visual C#]，接著輸入 `tryf`，然後按 **Tab**。或者，您可以輸入 `tryf` 並按 **TAB** 兩次。
+若要插入此程式碼片段，您可以在程式碼視窗的右鍵功能表（操作功能表）中按一下 [**插入程式碼片段**]，然後在 [  **C#視覺效果**] 上輸入 `tryf`，然後按**tab**鍵。或者，您可以輸入 `tryf`，然後按兩次**tab**鍵。
 
 範圍陳述式程式碼片段的範例：在 C++中，捷徑 `if` 可用作插入程式碼片段或範圍陳述式程式碼片段。 如果您選取一行程式碼 (例如 `return FALSE;`)，然後選擇 [Surround With] \(範圍陳述式\) > [if]，程式碼片段隨即在此行周圍展開：
 
@@ -95,7 +95,7 @@ End Property
 
 如果您變更 `newPropertyValue` 為 `m_property`，則會變更每個 `newPropertyValue` 的執行個體。 如果您在屬性宣告中變更 `String` 為 `Int`，則已設定方法中的值也會變更為 `Int`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)
 - [如何：散發程式碼片段](../ide/how-to-distribute-code-snippets.md)

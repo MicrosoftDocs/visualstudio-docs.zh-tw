@@ -8,17 +8,17 @@ helpviewer_keywords:
 - managed code, code analysis errors
 - code analysis, policy errors
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a5322fa4b55d29d791f4aef99037c79d67fa45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610847"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587780"
 ---
 # <a name="code-analysis-application-errors"></a>程式碼分析應用程式錯誤
 
@@ -33,7 +33,7 @@ ms.locfileid: "72610847"
 |[CA0052](ca0052.md)|未選取要分析的目標。|
 |[CA0053](ca0053.md)|無法載入規則元件。|
 |[CA0054](ca0054.md)|自訂規則元件包含不正確 XML 資源。|
-|[CA0055](ca0055.md)|無法載入檔案： \<path >|
+|[CA0055](ca0055.md)|無法載入檔案：\<路徑 >|
 |[CA0056](ca0056.md)|專案檔具有不正確的分析工具版本。|
 |[CA0057](ca0057.md)|違規無法對應到目前的目標和規則集。|
 |[CA0058](ca0058.md)|無法載入參考的元件。|
@@ -58,5 +58,5 @@ ms.locfileid: "72610847"
 
 ## <a name="related-sections"></a>相關章節
 
-- [程式碼分析原則錯誤](../code-quality/code-analysis-policy-errors.md)
+- [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
 - [分析 Managed 程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - File.OpenFile command
 - of command
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 811667e89f01728c5a7516f5e7f7a12d448c6311
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666437"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591511"
 ---
 # <a name="open-file-command"></a>開啟檔案命令
 
@@ -31,13 +31,13 @@ ms.locfileid: "72666437"
 File.OpenFile filename [/e:editorname]
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 
 `filename`
 
 必要項。 要開啟之檔案的完整或部分路徑和檔名。 包含空格的路徑必須包含在引號中。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換機
 
 /e:`editorname`
 

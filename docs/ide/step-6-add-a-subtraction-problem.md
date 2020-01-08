@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4789248a129bcd41452af1184418f9f59ede7595
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: c3c6eed20fc1f2b76c02865c2a5f6b21cde1ae51
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72562573"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589990"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步驟 6：加入減法問題
 在本教學課程的第六個部分中，您將加入減法問題並學習如何執行下列工作：
@@ -61,7 +61,7 @@ ms.locfileid: "72562573"
 
      您可以透過多種方式呼叫 Random 類別的 `Next()` 方法，也就是您在本教學課程前段中命名為 "randomizer" 的方法。 能夠以多種方式呼叫的方法稱為「多載」(Overload)，您可以使用 IntelliSense 來了解這些方法。 再看一次 `Next()` 方法的 [IntelliSense] 視窗工具提示。
 
-     ![IntelliSense 視窗工具提示 ](../ide/media/express_overloads.png)<br/>
+     ![IntelliSense 視窗工具提示](../ide/media/express_overloads.png)<br/>
 ***IntelliSense*** *視窗工具提示*
 
      工具提示會顯示 [(+ 2 多載)]，也就是說，您可以透過另外兩種方式呼叫 `Next()` 方法。 多載包含不同數目或類型的引數，因此彼此之間的運作方式會稍有不同。 例如，某個方法可能會接受單一整數引數，且其中一個多載可能會接受一個整數和一個字串。 您可以依據需要的功能選擇正確的多載。 當您將程式碼新增至 `StartTheQuiz()` 方法時，只要輸入 `randomizer.Next(`，[IntelliSense] 視窗就會顯示詳細資訊。 若要循環瀏覽這些多載，請選擇**向上鍵**和**向下鍵**，如下圖所示：

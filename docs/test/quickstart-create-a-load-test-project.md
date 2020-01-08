@@ -4,15 +4,15 @@ ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - load testing, quickstart
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8d74072c506c4ce48ee93b759ba24aff23aa9419
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4f186e8c10d894b98e789480046d43fc957edd8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646676"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566406"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入門：建立負載測試專案
 
@@ -46,7 +46,7 @@ ms.locfileid: "72646676"
 
 1. 開啟 Visual Studio。
 
-2. 從功能表列選擇 [檔案] > [新增] > [專案]。
+2. 從功能表**欄選擇 [** 檔案] > [**新增**>**專案**]。
 
    [ **新增專案** ] 對話方塊隨即開啟。
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7afdae8e98dba33184889fe314725e634e3bfa7
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: e249f2ad765063c54df08466bef15b8e443af1bf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314062"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591719"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
 
@@ -26,7 +26,7 @@ ms.locfileid: "72314062"
 
 - 當使用者選擇該按鈕時，應用程式會開啟 [<xref:System.Windows.Forms.OpenFileDialog>] 方塊。
 
-- 如果使用者開啟圖片檔案，應用程式會在 <xref:System.Windows.Forms.PictureBox> 中顯示該圖片。
+- 如果使用者開啟圖片檔案，應用程式會在 <xref:System.Windows.Forms.PictureBox>中顯示該圖片。
 
 IDE 提供一個功能強大的工具，稱為 IntelliSense，可幫助您撰寫程式碼。 當您鍵入程式碼時，IDE 會針對您輸入的部分文字，開啟包含建議的自動完成的方塊。
 
@@ -36,14 +36,14 @@ IntelliSense 會嘗試決定接下來要執行的動作，並自動跳至您從�
 
 1. 移至 **Windows Forms 設計工具**，然後按兩下 [顯示圖片] 按鈕。 IDE 會立即進入程式碼設計工具並移動游標，使其位於您先前加入的 `showButton_Click()` （或 `ShowButton_Click()`）方法內。
 
-1. 在兩個大括弧 `{ }` 之間的空白行上鍵入 `i` （在 Visual Basic 中，請在 `Private Sub...` 和 `End Sub` 之間的空白行上輸入）。**IntelliSense**視窗隨即開啟，如下圖所示。
+1. 在兩個大括弧 `{ }` 之間的空白行上鍵入 `i` （在 Visual Basic 中，請在 `Private Sub...` 和 `End Sub`之間的空白行上輸入）。**IntelliSense**視窗隨即開啟，如下圖所示。
 
     ![包含 Visual C&#35; 程式碼的 IntelliSense](../ide/media/express_ifintellisense.png)
 
     > [!NOTE]
     > 您的程式碼可能不會以 "camelCase" 字母顯示事件處理常式。
 
-1. [ **IntelliSense** ] 視窗應該會反白顯示 `if` 的文字。 （如果沒有，請輸入小寫的 `f`，它會是）。請注意 [ **IntelliSense** ] 視窗旁的 [*工具提示*] 方塊如何顯示，以及描述 [ **if 語句的程式碼片段**]。 （在 Visual Basic 中，工具提示也會指出這是程式碼片段，但有稍微不同的用語）。您想要使用該程式碼片段，因此選擇**Tab**鍵將 `if` 插入程式碼中。 然後再次選擇 **Tab** 鍵來使用 `if` 程式碼片段。 (如果您選擇其他位置並造成 [IntelliSense] 視窗消失，請按退格鍵刪除 `i` 並重新鍵入，[IntelliSense] 視窗就會再次開啟)。
+1. [ **IntelliSense** ] 視窗應該會反白顯示 `if`的文字。 （如果沒有，請輸入小寫的 `f`，它會是）。請注意 [ **IntelliSense** ] 視窗旁的 [*工具提示*] 方塊如何顯示，以及描述 [ **if 語句的程式碼片段**]。 （在 Visual Basic 中，工具提示也會指出這是程式碼片段，但有稍微不同的用語）。您想要使用該程式碼片段，因此選擇**Tab**鍵將 `if` 插入程式碼中。 然後再次選擇 **Tab** 鍵來使用 `if` 程式碼片段。 (如果您選擇其他位置並造成 [IntelliSense] 視窗消失，請按退格鍵刪除 `i` 並重新鍵入，[IntelliSense] 視窗就會再次開啟)。
 
     ![Visual C&#35; 程式碼](../ide/media/express_highlighttrue.png)
 
@@ -101,7 +101,7 @@ IntelliSense 會嘗試決定接下來要執行的動作，並自動跳至您從�
 
 ## <a name="next-steps"></a>後續步驟
 
-* 若要移至下一個教學課程步驟，請參閱 **[步驟9：審查、批註和測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)** 。
+* 若要移至下一個教學課程步驟，請參閱**[步驟9：審查、批註和測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)**。
 
 * 若要返回上一個教學課程步驟，請參閱[步驟 7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)。
 

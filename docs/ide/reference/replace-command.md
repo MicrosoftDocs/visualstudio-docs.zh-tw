@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.Replace command
 - Replace command
 ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b13dee4ec87a0a4c2735d9523bff093046c5b38c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 620e55938a9c96393d8cd7de6f238d3f98715d29
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747777"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596680"
 ---
 # <a name="replace-command"></a>取代命令
 使用在 [尋找和取代] 視窗 [檔案中取代] 索引標籤提供的選項子集，取代檔案中的文字。
@@ -31,7 +31,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 [/wild|/regex] [/word]
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 `findwhat`
 
 必要項。 要比對的文字。
@@ -40,7 +40,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
 必要項。 要用來取代相符文字的文字。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換機
 /all 或 /a
 
 選擇項。 以取代文字來取代所有出現的搜尋文字。

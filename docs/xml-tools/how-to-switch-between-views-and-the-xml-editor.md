@@ -3,17 +3,17 @@ title: 如何：在視圖和 XML 編輯器之間切換
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8049806d14abc8e22154a763e982ce5c86304b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54e43b00c877f5453d1dc28bbc9d5546fcef056f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601883"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592618"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>如何：在視圖和 XML 編輯器之間切換
 
@@ -33,6 +33,6 @@ ms.locfileid: "72601883"
 
 5. 若要使用工具列從內容模型視圖切換到 [開始] 視圖，請按一下 XSD 工具列上的 [**開始視圖**] 按鈕。
 
-6. 若要使用快速鍵在不同的視圖之間切換，請按**ctrl** +**1**作為 [開始] 視圖，針對 [圖形] 視圖按**ctrl** +**2** ，並針對 [內容模型] 視圖按**ctrl** +**3** 。
+6. 若要使用快速鍵在不同的視圖之間切換，請按**ctrl**+**1**作為 [開始] 視圖，針對 [圖形] 視圖按**ctrl**+**2** ，並針對 [內容模型] 視圖按**ctrl**+**3** 。
 
 7. 若要從內容模型視圖移至 XML 編輯器，請以滑鼠右鍵按一下節點，然後選取操作功能表中的 [**查看程式碼**]。

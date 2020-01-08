@@ -3,17 +3,17 @@ title: XML 結構描述設計工具開始檢視
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1978760aba90b884099085c995372f9612be3c8a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f05c3023a246ba193c98cb1b01984a54fdaa0ebb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608496"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592525"
 ---
 # <a name="start-view"></a>開始檢視
 
@@ -35,15 +35,15 @@ ms.locfileid: "72608496"
 
 您可以從 [XML 架構設計工具] 工具列的 [開始] 視圖、[[內容模型] 視圖](../xml-tools/content-model-view.md)和 [[圖形] 視圖](../xml-tools/graph-view.md)之間流覽。
 
-![XML 結構描述設計工具工具列](../xml-tools/media/xsdstartviewtoolbar.gif)
+![XML 結構描述設計工具列](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 當開始檢視為作用中時，下列 XSD 設計工具工具列的按鈕將會啟用：
 
 |選項|描述|
 |-|-----------------|
-|**顯示開始視圖**|切換至開始檢視。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl** +**1**。|
-|**顯示內容模型視圖**|切換至內容模型檢視。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl** +**2**。|
-|**顯示圖表視圖**|切換至圖表檢視。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl** +**3**。|
+|**顯示開始視圖**|切換至開始檢視。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl**+**1**。|
+|**顯示內容模型視圖**|切換至內容模型檢視。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl**+**2**。|
+|**顯示圖表視圖**|切換至圖表檢視。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl**+**3**。|
 
 ## <a name="see-also"></a>請參閱
 

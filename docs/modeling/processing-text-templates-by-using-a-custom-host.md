@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, in application or VS extension
 - text templates, custom directive hosts
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 171eb8810d74df5c1058ba055e598d04f9164633
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f7ecd6508df780f570d10b3d615094fae15209d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658295"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591680"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>使用自訂主機處理文字範本
 
@@ -48,10 +48,10 @@ string output = engine.ProcessTemplate(templateString, host);
 
  主應用程式必須能夠記錄錯誤、解析組件和 Include 檔的參考、提供可在其中執行範本的應用程式定義域，以及為每個指示詞呼叫適當的指示詞處理器。
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 是在 **\* TextTemplating**中定義的，而[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))是在 .0 中定義的。 **\*. 0 .dll**中。
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 是在 **\*TextTemplating**中定義的，而[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))是在 .0 中定義的。 **\*. 0 .dll**中。
 
-## <a name="in-this-section"></a>本節內容
- [逐步解說：建立自訂文字模板主機 ](../modeling/walkthrough-creating-a-custom-text-template-host.md) 會示範如何建立自訂文字模板主控制項，讓文字模板功能可供 Visual Studio 外使用。
+## <a name="in-this-section"></a>本章節內容
+ [逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)示範如何建立自訂文字模板主控制項，讓文字模板功能可在 Visual Studio 外使用。
 
 ## <a name="reference"></a>參考資料
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

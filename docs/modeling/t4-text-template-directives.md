@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text templates, output directive
 - text templates, directives
 - text templates, template directive
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fd13f92af80e985a6942d05f66cc64b01138955
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7ceb5139ff133a0005efafd5dc96f20e22b73cf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606086"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591823"
 ---
 # <a name="t4-text-template-directives"></a>T4 文字範本指示詞
 

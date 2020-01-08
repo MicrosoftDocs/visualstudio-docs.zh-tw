@@ -1,21 +1,21 @@
 ---
-title: 作法：從 XML 結構描述產生 XML 片段
+title: HOW TO：從 XML 結構描述產生 XML 片段
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae55428b61053fbd255446833cb20aec3da79b6e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ec320018cc64e774751c312ca4cdeb94a6d53a9c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645373"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592681"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>作法：從 XML 架構產生 XML 程式碼片段
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：從 XML 架構產生 XML 程式碼片段
 
 XML 編輯器能夠從 XML 架構定義語言（XSD）架構產生 XML 程式碼片段。 例如，當您在撰寫 XML 檔案時，您可以按**tab**鍵，使用從該專案的架構資訊產生的 XML 資料來填入元素。
 
@@ -60,13 +60,13 @@ XML 編輯器能夠從 XML 架構定義語言（XSD）架構產生 XML 程式碼
 
      [ **XSD 架構**] 對話方塊隨即顯示。
 
-4. 按一下 [新增]。
+4. 按一下 [加入]。
 
      [**開啟 XSD 架構**] 對話方塊隨即顯示。
 
 5. 選取架構檔案，然後按一下 [**開啟**]。
 
-6. 按一下 [確定]。
+6. 按一下 [ **確定**]。
 
      XML 架構現在與 XML 檔相關聯。
 
@@ -90,7 +90,7 @@ XML 編輯器能夠從 XML 架構定義語言（XSD）架構產生 XML 程式碼
 
 4. 按**tab**鍵以根據其架構資訊產生 `Contact` 元素的 XML 資料。
 
-## <a name="input"></a>Input
+## <a name="input"></a>輸入
 
 下列結構描述檔案由逐步教學使用。
 
@@ -154,7 +154,7 @@ XML 編輯器能夠從 XML 架構定義語言（XSD）架構產生 XML 程式碼
 </Contact>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 程式碼片段](../xml-tools/xml-snippets.md)
-- [如何：使用 XML 程式碼片段 ](../xml-tools/how-to-use-xml-snippets.md)
+- [如何：使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)

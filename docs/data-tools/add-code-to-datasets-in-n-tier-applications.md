@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - n-tier applications, extending DataSets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0002339b0a1aa2200894d701f04f343193376c4b
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 3d35ff68144e92af12f2ee6284076118493c6be9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807040"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587117"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
 

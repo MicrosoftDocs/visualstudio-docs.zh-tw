@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb059a9175c61c238abf0881cd96e4179fcf6f65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7a37dbb4d9754641b4bcca826ff0ec77c7298d9b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748174"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594002"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 身為網域指定的語言 (DSL) 的作者，您可以定義驗證條件約束，以驗證使用者建立的模型是否有意義。 例如，如果您的 DSL 允許使用者繪製人們與其祖先的家譜，您可以撰寫條件約束，確保孩子的出生日期晚於父母的出生日期。
@@ -82,7 +82,7 @@ ms.locfileid: "72748174"
 
     ValidationCategories 指定何時執行方法。
 
-   例如:
+   例如：
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -125,7 +125,7 @@ public partial class ParentsHaveChildren
 
  請注意有關這個程式碼的下列重點：
 
-- 您可以將驗證方法加入至網域類別或網域關聯性。 這些類型的程式碼位於**Dsl\Generated Code\Domain \* .cs**中。
+- 您可以將驗證方法加入至網域類別或網域關聯性。 這些類型的程式碼位於**Dsl\Generated Code\Domain\*.cs**中。
 
 - 每個驗證方法會套用至其類別和子類別的每一個執行個體。 在網域關聯性的案例中，每個執行個體是兩個模型項目之間的連結。
 
@@ -144,7 +144,7 @@ public partial class ParentsHaveChildren
 ## <a name="validation-categories"></a>驗證分類
  在 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> 屬性中，您可以指定何時應執行驗證方法。
 
-|Category|執行|
+|分類|執行|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|使用者叫用 [驗證] 功能表命令時。|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|開啟模型檔時。|
@@ -173,11 +173,11 @@ public partial class Person
         { ...
 ```
 
- **匯總驗證條件約束。** 若要以可預測的順序套用驗證，請在擁有者類別上定義單一驗證方法，例如模型的根項目。 這個方法也可讓您將多份錯誤報告彙總成一個訊息。
+ **匯總驗證條件約束。** 若要依預期的順序套用驗證，請在擁有者類別 (例如模型的根項目) 上定義一個驗證方法。 這個方法也可讓您將多份錯誤報告彙總成一個訊息。
 
  其缺點在於合併的方法比較難管理，並且條件約束必須具有相同的 `ValidationCategories`。 因此，建議您盡可能以不同的方法來保留每個條件約束。
 
- **傳遞內容快取中的值。** 內容參數具有字典，您可以在其中放置任意值。 在執行驗證期間都可以使用此字典。 例如，某個驗證方法可能會將錯誤計數保留在內容中，然後使用該內容以避免錯誤視窗中出現太多重複的訊息。 例如:
+ **傳遞內容快取中的值。** 內容參數具有字典，可供您置入任意值。 在執行驗證期間都可以使用此字典。 例如，某個驗證方法可能會將錯誤計數保留在內容中，然後使用該內容以避免錯誤視窗中出現太多重複的訊息。 例如：
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -193,7 +193,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  如果將網域關聯性角色的多重性設定為 1..* 或 1..1，但使用者未建立此關聯性的連結，則會出現驗證錯誤訊息。
 
- 例如，如果您的 DSL 具有類別 Person 和城鎮，且關聯性 PersonLivesInTown 與關聯性**1.. \\** * 在城鎮角色上，然後針對每個沒有城鎮的人，就會出現錯誤訊息。
+ 例如，如果您的 DSL 具有類別 Person 和城鎮，且關聯性 PersonLivesInTown 與關聯性**1..\\** * 在城鎮角色上，然後針對每個沒有城鎮的人，就會出現錯誤訊息。
 
 ## <a name="running-validation-from-program-code"></a>從程式碼執行驗證
  您可以存取或建立 ValidationController 來執行驗證。 如果您想要在錯誤視窗中向使用者顯示錯誤，請使用附加至圖表 DocData 的 ValidationController。 例如，如果您要撰寫功能表命令，可以使用命令集類別中的 `CurrentDocData.ValidationController`：
@@ -213,7 +213,7 @@ partial class MyLanguageCommandSet
 
  如需詳細資訊，請參閱[如何：將命令新增至快捷方式功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
- 您也可以建立獨立的驗證控制器，自行管理錯誤。 例如:
+ 您也可以建立獨立的驗證控制器，自行管理錯誤。 例如：
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -327,9 +327,9 @@ validationController.ValidateCustom
 
  但是，不建議使用這些方法。 通常比較好的做法是，讓使用者決定如何修正無效的模型。
 
- **調整變更，將模型還原為有效。** 例如，如果使用者將屬性設定為超過允許的上限，您可以將屬性重設為最大值。 若要達成目標，請定義規則。 如需詳細資訊，請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。
+ **調整變更，將模型還原為有效。** 例如，如果使用者將屬性設得超過允許的上限，您可以將屬性重設為最大值。 若要達成目標，請定義規則。 如需詳細資訊，請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。
 
- **如果嘗試了不正確變更，則回復交易。** 您也可以為此用途定義規則，但在某些情況下，可以覆寫屬性處理常式**OnValueChanging （）** ，或覆寫方法（例如 `OnDeleted().` 來回複交易），如需詳細資訊，請使用 `this.Store.TransactionManager.CurrentTransaction.Rollback().`，請參閱[Domain 屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。
+ **如果嘗試了不正確變更，則回復交易。** 您也可以為此用途定義規則，但在某些情況下，可以覆寫屬性處理常式**OnValueChanging （）** ，或覆寫方法（例如 `OnDeleted().` 來回複交易），如需詳細資訊，請使用 `this.Store.TransactionManager.CurrentTransaction.Rollback().`，請參閱[網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。
 
 > [!WARNING]
 > 確定使用者知道已調整或已復原變更。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`

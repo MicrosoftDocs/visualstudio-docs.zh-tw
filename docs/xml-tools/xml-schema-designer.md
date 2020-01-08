@@ -3,17 +3,17 @@ title: XML 結構描述設計工具
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ffdf63ee-faa6-45b7-bbf9-a5644dc8aca2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90fc2474a7ede44d6407c527b2ea547ba4c3c055
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0ee8f2976ae7ca4504aa9fe6bd0f6cb895b7576d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608238"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592356"
 ---
 # <a name="xml-schema-designer-overview"></a>XML 架構設計工具總覽
 

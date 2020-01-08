@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654204"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590549"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>在組建進程中叫用文字轉換
 
@@ -51,7 +51,7 @@ ms.locfileid: "72654204"
   - VisualStudio. TextTemplating. 15.0 .dll
 
 > [!TIP]
-> 如果您在組建伺服器上執行 TextTemplating 組建目標時，取得 CodeAnalysis 方法的 `MissingMethodException`，請確定 Roslyn 元件位於名為*Roslyn*的目錄中，其位於與組建可執行檔相同的目錄中（例如， *msbuild.exe*）。
+> 如果您在組建伺服器上執行 TextTemplating 組建目標時，取得 CodeAnalysis 方法的 `MissingMethodException`，請確定 Roslyn 元件位於名為*Roslyn*的目錄中，其位於與組建可執行檔相同的目錄中（例如*msbuild.exe*）。
 
 ## <a name="edit-the-project-file"></a>編輯專案檔
 
@@ -198,7 +198,7 @@ ms.locfileid: "72654204"
 </ItemGroup>
 ```
 
-如果您也要使用 [**全部轉換**] 或 [執行單一檔案產生器] 來轉換 Visual Studio 內的範本，則不建議指定 OutputFileName 或 OutputFilePath。 根據您觸發轉換的方式而定，您會得到不同的檔案路徑。 這可能會造成混淆。
+如果您也要使用 [**全部轉換**] 或 [執行單一檔案產生器] 來轉換 Visual Studio 內的範本，則不建議指定 OutputFileName 或 OutputFilePath。 根據您觸發轉換的方式而定，您會得到不同的檔案路徑。 這可能會令人困惑。
 
 ## <a name="add-reference-and-include-paths"></a>新增參考和包含路徑
 
@@ -252,7 +252,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> 只有在您使用 MSBuild 時，`ResolveParameterValue` 才會從 `T4ParameterValues` 取得資料。 當您使用 Visual Studio 轉換範本時，參數會有預設值。
+> `ResolveParameterValue` 只有在您使用 MSBuild 時，才會從 `T4ParameterValues` 取得資料。 當您使用 Visual Studio 轉換範本時，參數會有預設值。
 
 ## <a name="msbuild"></a>在 assembly 和 include 指示詞中使用專案屬性
 

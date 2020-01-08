@@ -3,17 +3,17 @@ title: XSLT 效能
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2866e9b19ea2b79bf8435d81c93443bb20ff4fec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79d865a426af2c089bfcc6bd1e733b4ecc185077
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645912"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592278"
 ---
 # <a name="the-xslt-profiler"></a>XSLT 分析工具
 
@@ -30,7 +30,7 @@ XSLT 分析工具是 Visual Studio 的一部分，而且可在 [ **XML** ] 功�
 
 1. 在 Visual Studio 中開啟 XSLT 文件。
 
-2. 在功能表列上，選擇 [ **XML**  >  分析] [**XSLT**]。
+2. 在功能表列上，選擇 [ **XML** > 分析] [ **XSLT**]。
 
 3. 提供輸入 XML 文件。 如果尚未開啟任何 XML 文件，系統會提示您開啟檔案。
 

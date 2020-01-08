@@ -17,17 +17,17 @@ helpviewer_keywords:
 - MSBuild, DownloadFile task
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
-author: Mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cde5e140bb9dd2019de684124f69096d2022fe0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821426"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590471"
 ---
 # <a name="downloadfile-task"></a>DownloadFile 工作
 使用超文字傳輸通訊協定 (HTTP)，下載指定的檔案。
@@ -38,14 +38,14 @@ ms.locfileid: "62821426"
 ## <a name="parameters"></a>參數
 下表說明 `DownloadFile` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`DestinationFileName`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數<br /><br /> 要用於已下載檔案的名稱。  根據預設，檔案名稱衍生自 `SourceUrl` 或遠端伺服器。|
 |`DestinationFolder`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定檔案下載的目的地資料夾。  如果資料夾不存在，則會予以建立。|
 |`DownloadedFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 輸出參數。<br /><br /> 指定已下載的檔案。|
 |`Retries`|選擇性的 `Int32` 參數。<br /><br /> 指定如果所有先前的嘗試均失敗，要嘗試下載多少次。 預設值為零。|
 |`RetryDelayMilliseconds`|選擇性的 `Int32` 參數。<br /><br /> 指定任何必要重試之間的延遲 (毫秒)。 預設值為 5000。|
-|`SkipUnchangedFiles`|選擇性的 `Boolean` 參數。<br /><br /> 如果 `true`，則會略過下載未變更的檔案。 預設值為 `true`。 如果檔案根據遠端伺服器而具有相同的大小和相同的上次修改時間，`DownloadFile` 工作即會將檔案視為未變更。 <br /><br />**注意：** 並非所有 HTTP 伺服器都指出檔案的上次修改日期會造成再次下載檔案。|
+|`SkipUnchangedFiles`|選擇性的 `Boolean` 參數。<br /><br /> 如果 `true`，則會略過下載未變更的檔案。 預設值為 `true`。 如果檔案根據遠端伺服器而具有相同的大小和相同的上次修改時間，`DownloadFile` 工作即會將檔案視為未變更。 <br /><br />**注意：** 並非所有 HTTP 伺服器都指出檔案的上次修改日期會再次下載檔案。|
 |`SourceUrl`|必要的 `String` 參數。<br /><br /> 指定要下載的 URL。|
 
 ## <a name="remarks"></a>備註
@@ -72,6 +72,6 @@ ms.locfileid: "62821426"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

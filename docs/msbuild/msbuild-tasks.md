@@ -6,17 +6,17 @@ helpviewer_keywords:
 - tasks
 - MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90b6731cf75a1825139aba57fe8491cd7cb0253f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3a6bc01ee1f692a4da0cf1921de757236651a177
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004555"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593794"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 工作
 組建平台必須能夠在建置程序期間執行任意數目的動作。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會使用「工作」來執行這些動作。 工作是 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 用來執行不可部分完成之建置作業的可執行程式碼單元。
@@ -64,8 +64,8 @@ ms.locfileid: "63004555"
 ## <a name="overridden-tasks"></a>覆寫的工作
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會在數個位置中尋找工作。 第一個位置是在儲存於 .NET Framework 目錄中副檔名為 *.OverrideTasks* 的檔案中。 這些檔案中的工作會覆寫任何其他具有相同名稱的工作，包括專案檔中的工作。 第二個位置是在 .NET Framework 目錄中副檔名為 *.Tasks* 的檔案中。 如果在這兩個位置中找不到工作，就會使用專案檔中的工作。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
-- [MSBuild](../msbuild/msbuild.md)
+- [ MSBuild](../msbuild/msbuild.md)
 - [工作撰寫](../msbuild/task-writing.md)
 - [內嵌工作](../msbuild/msbuild-inline-tasks.md)

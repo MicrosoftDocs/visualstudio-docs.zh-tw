@@ -6,21 +6,21 @@ f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5eac3c2a45f1e220415f7512e601f4bf034c4dd7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189808"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597109"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>瀏覽並選取 .NET 類型對話方塊
 
-在 [**屬性**] 視窗、對話方塊或設計工具（例如 [變數設計工具]）中，當您選取 [從資料類型清單**流覽類型]** 時，會是 [**流覽並選取 .net 類型**] 對話方塊（在縮寫形式中稱為「類型」瀏覽器」）。 在這個對話方塊中，您可以從組件與專案的樹狀檢視中選擇型別。
+在 [**屬性**] 視窗、對話方塊或設計工具（例如 [變數設計工具]）中，當您選取 [從資料類型清單**流覽類型]** 時，會是 [**流覽並選取 .net 類型**] 對話方塊（在縮寫形式中稱為「類型瀏覽器」）。 在這個對話方塊中，您可以從組件與專案的樹狀檢視中選擇型別。
 
 有幾個使用者案例會採用這個對話方塊，包括下列：
 
@@ -39,7 +39,7 @@ ms.locfileid: "73189808"
 
 1. 在 [**類型名稱**] 方塊中，輸入您要使用之類型的名稱。
 
-2. 執行下列任一步驟：
+2. 請執行下列其中一項動作：
 
     - 一旦您要使用的型別名稱出現在 [**型別名稱**] 方塊的樹狀結構中，請按兩下該型別來選取它。
 
@@ -63,7 +63,7 @@ ms.locfileid: "73189808"
 
 當您輸入更多字元來尋找相符項時，[**類型名稱**] 方塊中的類型清單會變短。 只有 fullyqualified 名稱開頭為您所輸入字串的類型，或以您所輸入的字串開頭的類型，才會出現在篩選清單中。
 
-例如:
+例如：
 
 1. 輸入**作業**會符合 <xref:System.OperationCanceledException>，但不會 <xref:System.InvalidOperationException>。 若要符合 <xref:System.InvalidOperationException>，一開始請輸入 System.I 或 Invalid。
 

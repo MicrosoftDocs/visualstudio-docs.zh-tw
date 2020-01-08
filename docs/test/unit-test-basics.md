@@ -4,17 +4,17 @@ ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e594136fe79d38268999099231791364d1082a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e78b021e41caf584a74172cbdf00135e525df265
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659898"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590497"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -120,7 +120,7 @@ public void Withdraw(double amount)
 
 **將單元測試專案加入方案：**
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下方案，然後選擇 [新增] > [新增專案]。
+1. 在**方案總管**中，以滑鼠右鍵按一下方案，然後選擇 [**加入** > **新增** **專案**]。
 
 ::: moniker range="vs-2017"
 
@@ -151,7 +151,7 @@ public void Withdraw(double amount)
 
    3. 在 [參考管理員] 對話方塊上，開啟 [方案] 節點，然後選擇 [專案]。 選取程式碼專案名稱，然後關閉對話方塊。
 
-每個單元測試專案包含的類別都可反映程式碼專案中的類別名稱。 在本例中，`AccountsTests` 專案可能包含下列類別：
+每個單元測試專案包含的類別都可反映程式碼專案中的類別名稱。 在本例中， `AccountsTests` 專案可能包含下列類別：
 
 - `AccountInfoTests` 類別包含 `AccountInfo` 專案中 `Accounts` 類別的單元測試方法。
 
@@ -229,7 +229,7 @@ public void My_Test ()
 }
 ```
 
-## <a name="run-tests-in-test-explorer"></a>在 [測試總管] 中執行測試
+## <a name="run-tests-in-test-explorer"></a>在測試總管中執行測試
 
 在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果看不到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]，並選擇 [Windows]，然後選擇 [測試總管]。
 
@@ -309,16 +309,16 @@ public void My_Test ()
 
 **問：如何偵錯單元測試？**
 
-**答：** 您可以使用 [測試總管] 來啟動測試的偵錯工作階段。 使用 Visual Studio 偵錯工具逐步執行程式碼可讓您順暢地在單元測試和受測專案之間來回進行。 啟動偵錯：
+**答：** 您可以使用 [測試總管] 來啟動測試的偵錯工作階段。 使用 Visual Studio 偵錯工具逐步執行程式碼可讓您順暢地在單元測試和受測專案之間來回進行。 開始偵錯：
 
-1. 在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。
+1. 在 Visual Studio 編輯器中，在要偵錯的一或多個測試方法內設定中斷點。
 
     > [!NOTE]
-    > 由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。
+    > 由於測試方法可以依照任何順序執行，請在要偵錯的所有測試方法內設定中斷點。
 
 2. 在 [測試總管] 中選取測試方法，然後從捷徑功能表中選擇 [偵錯選取的測試]。
 
-進一步了解 [偵錯單元測試](../debugger/debugger-feature-tour.md)的詳細資料。
+進一步了解[偵錯單元測試](../debugger/debugger-feature-tour.md)的詳細資料。
 
 **問：如果我使用 TDD，要如何從我的測試產生程式碼？**
 
@@ -338,7 +338,7 @@ public void My_Test ()
 > [!NOTE]
 > 這些程序只適用於透過 Managed 程式碼適用的 Microsoft 單元測試架構所撰寫的測試方法。 如果您使用不同的架構，請參閱架構文件的同等功能。
 
-例如，假設我們將不需要的方法加入至名為 `CheckingAccount` 的 `AddIntegerHelper`類別。 `AddIntegerHelper` 會加入兩個整數。
+例如，假設我們將不需要的方法加入至名為 `CheckingAccount` 的 `AddIntegerHelper` 類別。 `AddIntegerHelper` 會加入兩個整數。
 
 若要為 `AddIntegerHelper` 方法建立資料驅動型測試，我們會先建立名為 *AccountsTest.accdb* 的 Access 資料庫和名為 `AddIntegerHelperData` 的資料表。 `AddIntegerHelperData` 資料表會定義可指定加法之第一個和第二個運算元的資料行，和可指定預期結果的資料行。 我們在多個資料列中填入適當的值。
 
@@ -369,7 +369,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 您可以在方案中的所選測試或所有測試上執行程式碼涵蓋範圍。 [程式碼涵蓋範圍結果] 視窗會顯示線條、函式、類別、命名空間及模組所運用的產品程式碼區塊的百分比。
 
-若要在方案中執行測試方法的程式碼涵蓋範圍，請選擇 [**測試**]  > **分析所有測試的程式碼涵蓋範圍**。
+若要在方案中執行測試方法的程式碼涵蓋範圍，請選擇 [**測試**] > **分析所有測試的程式碼涵蓋範圍**。
 
 涵蓋範圍結果會出現在 [程式碼涵蓋範圍結果] 視窗中。
 

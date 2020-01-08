@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], structures
 ms.assetid: bad18ab6-d956-47a6-a413-811cc26db5f5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65fb4738b3124daf48b501c6db416d3803da32ec
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748910"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590680"
 ---
 # <a name="c-structures-in-class-designer"></a>C++類別設計工具中的結構
 
@@ -34,7 +34,7 @@ struct MyStructure
 
 類別圖表中的 C++ 結構圖形外觀和運作方式類似類別圖形，不同之處在於標籤會讀為 **Struct**，而且有方角而非圓角。
 
-|程式碼項目|類別設計工具檢視|
+|程式碼元素|類別設計工具檢視|
 |------------------| - |
 |`struct StructureName {};`|**StructureName**<br /><br /> 結構|
 

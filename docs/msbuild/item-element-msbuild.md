@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Item Element [MSBuild]
 - <Item> Element [MSBuild]
 ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d94058f1f14f1da644cff672d73cd77e0840c68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 730e7d317ffa3fd5a450978f35659df3fe5629f3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006791"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573660"
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
 包含使用者定義的項目及其中繼資料。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個項目，都必須指定為 `ItemGroup` 項目的子系。
@@ -66,7 +66,7 @@ ms.locfileid: "63006791"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Include`|選擇性屬性。<br /><br /> 要包含在項目清單中的檔案或萬用字元。|
 |`Exclude`|選擇性屬性。<br /><br /> 要從項目清單中排除的檔案或萬用字元。|
@@ -79,13 +79,13 @@ ms.locfileid: "63006791"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|說明|
+|項目|描述|
 |-------------|-----------------|
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|使用者定義的項目中繼資料索引鍵，其中含有項目中繼資料值。 項目中可能有零個或多個 `ItemMetadata` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|說明|
+|項目|描述|
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|項目的群組項目。|
 
@@ -118,7 +118,7 @@ ms.locfileid: "63006791"
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [項目](../msbuild/msbuild-items.md)
 - [通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)

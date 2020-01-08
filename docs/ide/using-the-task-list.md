@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - task list
 - Visual Studio, task list
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c0e4c3a19358d9b29e4d7d3616c6718117e059
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647322"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594223"
 ---
 # <a name="use-the-task-list"></a>使用工作清單
 
@@ -30,9 +30,9 @@ ms.locfileid: "72647322"
 
 ## <a name="the-task-list-window"></a>工作清單視窗
 
-當 [工作清單] 開啟時，會出現在應用程式視窗的底部。
+當 [工作清單]  開啟時，會出現在應用程式視窗的底部。
 
-若要開啟 [工作清單]，請選取 [檢視] > [工作清單]，或從鍵盤按 **Ctrl**+ **\\** ,**T**鍵。
+若要開啟 [工作清單]，請選取 [檢視] > [工作清單]，或從鍵盤按 **Ctrl**+**\\**,**T**鍵。
 
 ![工作清單視窗](../ide/media/vs2015_task_list.png)
 
@@ -44,7 +44,7 @@ ms.locfileid: "72647322"
 
 ## <a name="user-tasks"></a>使用者工作
 
-使用者工作功能已在 Visual Studio 2015 中移除。 當您開啟的方案有來自 Visual Studio 2013 和更舊版本的使用者工作資料時， *.suo* 檔案中的使用者工作資料並不會受影響，但使用者工作不會顯示在工作清單中。
+使用者工作功能已在 Visual Studio 2015 中移除。 當您開啟的方案有來自 Visual Studio 2013 和更舊版本的使用者工作資料時，*.suo* 檔案中的使用者工作資料並不會受影響，但使用者工作不會顯示在工作清單中。
 
 如果想要繼續存取及更新您的使用者工作資料，請在 Visual Studio 2013 中開啟專案，然後將任何使用者工作的內容複製到您的慣用專案管理工具 (例如 Team Foundation Server)。
 
@@ -92,13 +92,13 @@ ms.locfileid: "72647322"
 
 ### <a name="c-todo-comments"></a>C++ TODO 註解
 
-[工作清單] 中預設會顯示 C++ TODO 註解。
+[工作清單]  中預設會顯示 C++ TODO 註解。
 
 若要關閉 C++ TODO 命令，請在 [工具] 功能表上，選擇 [選項] > [文字編輯器] > [C/C++] > [檢視] > [列舉註解工作]，然後將值設定為 **false**。
 
-## <a name="shortcuts"></a>快速鍵
+## <a name="shortcuts"></a>捷徑
 
-「捷徑」是 [工作清單] 中會追蹤的程式碼中書籤。 它的圖示與一般書籤不同。 按兩下 [工作清單] 中的捷徑，即可移至程式碼中對應的位置。
+「捷徑」是 [工作清單] 中會追蹤的程式碼中書籤。 它的圖示與一般書籤不同。 按兩下 [工作清單]  中的捷徑，即可移至程式碼中對應的位置。
 
 ![Visual Studio 工作清單捷徑圖示](../ide/media/vs2015_task_list_bookmark.png)
 
@@ -106,7 +106,7 @@ ms.locfileid: "72647322"
 
 若要建立捷徑，請將指標插入要放置捷徑的程式碼中。 選擇 [編輯] > [書籤] > [新增工作清單捷徑]，或按 **Ctrl**+**K**、**Ctrl**+**H**。
 
-若要在程式碼中巡覽捷徑，請在清單中選擇捷徑，然後從捷徑功能表中選擇 [下一個工作] 或 [上一個工作] 。
+若要在程式碼中巡覽捷徑，請在清單中選擇捷徑，然後從捷徑功能表中選擇 [下一個工作]  或 [上一個工作]  。
 
 ## <a name="see-also"></a>請參閱
 

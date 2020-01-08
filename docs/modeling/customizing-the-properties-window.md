@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e0a8393a65d4c0e1549a6617971b0adb8c1df7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b2cd7d4598040721d3c5b6acb7844f668c72ea09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653969"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589691"
 ---
 # <a name="customize-the-properties-window"></a>自訂屬性視窗
 
@@ -26,13 +26,13 @@ ms.locfileid: "72653969"
 
 當您在 DSL 定義中設定屬性的名稱時，它的顯示名稱會自動設定為名稱的複本。 如果您寫了 Pascal 大小寫名稱，例如 "FuelGauge"，則顯示名稱會自動包含空格：「燃料測計」。 不過，您可以將 [顯示名稱] 明確設定為另一個值。
 
-**描述**。 定義域屬性的描述會出現在兩個地方：
+**\[描述\]** 。 定義域屬性的描述會出現在兩個地方：
 
 - 當使用者選取屬性時，位於 [屬性] 視窗的底部。 您可以使用它向使用者說明屬性所代表的內容。
 
 - 在產生的程式碼中。 如果您使用檔功能來解壓縮 API 檔，它會在 API 中顯示為此屬性的描述。
 
-**分類**. 分類是屬性視窗中的標題。
+**分類**。 分類是屬性視窗中的標題。
 
 ## <a name="expose-style-features"></a>公開樣式功能
 
@@ -40,7 +40,7 @@ ms.locfileid: "72653969"
 
 以滑鼠右鍵按一下 DSL 定義中的圖形類別，指向 [新增] [**公開**]，然後選擇功能。
 
-在圖形上，您可以公開**FillColor**、 **OutlineColor**、 **TextColor**、 **OutlineDashStyle**、 **OutlineThickness**和**FillGradientMode**屬性。 在 [連接器] 上，您可以 `,` [**TextColor**]、[ **DashStyle**] 和 [**粗細**] 屬性公開**色彩**。 在圖表上，您可以公開**FillColor**和**TextColor**屬性。
+在圖形上，您可以公開**FillColor**、 **OutlineColor**、 **TextColor**、 **OutlineDashStyle**、 **OutlineThickness**和**FillGradientMode**屬性。 在 [連接器] 上，您可以`,`[ **TextColor**]、[ **DashStyle**] 和 [**粗細**] 屬性公開**色彩**。 在圖表上，您可以公開**FillColor**和**TextColor**屬性。
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>轉送：顯示相關元素的屬性
 
@@ -52,7 +52,7 @@ ms.locfileid: "72653969"
 
 當使用者選取圖形或連接器，或 Explorer 中的元素時，屬性視窗中會顯示下列屬性：
 
-- 在模型專案的網域類別上定義的網域屬性，包括在基類中定義的屬性。 例外狀況是您已設定為可**流覽**`False` 的網域屬性。
+- 在模型專案的網域類別上定義的網域屬性，包括在基類中定義的屬性。 例外狀況是您已設定為可**流覽**`False`的網域屬性。
 
 - 透過關聯性（其多重性為 0 ..1）連結的元素名稱。 即使您尚未定義關聯性的連接器對應，這也會提供一個方便的方法來查看選擇性的連結元素。
 
@@ -62,7 +62,7 @@ ms.locfileid: "72653969"
 
 ### <a name="add-property-forwarding"></a>新增屬性轉送
 
-若要轉送屬性，請定義網欄位型別描述元。 如果您有兩個網域類別之間的網域關聯性，您可以使用網欄位型別描述元，將第一個類別中的網域屬性設定為第二個網域類別中的網域屬性值。 例如，如果您在**Book**網域類別和**作者**網域類別之間有關聯性，則可以使用網欄位型別描述元，讓書籍**作者**的**Name**屬性顯示在屬性視窗中，當使用者選取書籍。
+若要轉送屬性，請定義網欄位型別描述元。 如果您有兩個網域類別之間的網域關聯性，您可以使用網欄位型別描述元，將第一個類別中的網域屬性設定為第二個網域類別中的網域屬性值。 例如，如果您有一個**book**網域類別和一個**作者**網域類別之間的關聯性，則可以使用網欄位型別描述元，讓書籍**作者**的**Name**屬性在使用者選取本書時，出現在屬性視窗中。
 
 > [!NOTE]
 > 屬性轉送只會影響使用者編輯模型時的屬性視窗。 它不會在接收類別上定義網域屬性。 如果您想要在 DSL 定義的其他部分或程式碼中存取轉送的網域屬性，您必須存取轉送元素。
@@ -146,7 +146,7 @@ ms.locfileid: "72653969"
 
 您可以使用屬性視窗中的**自訂屬性**專案，在屬性上設定屬性。
 
-@No__t_0 的類型必須衍生自第二個參數中指定的類型。 第二個參數應該是 <xref:System.Drawing.Design.UITypeEditor> 或 <xref:System.ComponentModel.ComponentEditor>。 如需詳細資訊，請參閱<xref:System.ComponentModel.EditorAttribute>。
+`AnEditor` 的類型必須衍生自第二個參數中指定的類型。 第二個參數應該是 <xref:System.Drawing.Design.UITypeEditor> 或 <xref:System.ComponentModel.ComponentEditor>。 如需詳細資訊，請參閱<xref:System.ComponentModel.EditorAttribute>。
 
 您可以指定自己的編輯器或 .NET 編輯器，例如 <xref:System.Windows.Forms.Design.FileNameEditor> 或 <xref:System.Drawing.Design.ImageEditor>。 例如，使用下列程式來擁有屬性，讓使用者可以在其中輸入檔案名。
 
@@ -177,7 +177,7 @@ ms.locfileid: "72653969"
 
 您可以定義自己的編輯器。 您可以這樣做，讓使用者編輯您已定義的類型，或以特殊方式編輯標準類型。 例如，您可以允許使用者輸入代表公式的字串。
 
-您可以藉由撰寫衍生自 <xref:System.Drawing.Design.UITypeEditor> 的類別來定義編輯器。 您的類別必須覆寫：
+您可以藉由撰寫衍生自 <xref:System.Drawing.Design.UITypeEditor>的類別來定義編輯器。 您的類別必須覆寫：
 
 - <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>，以與使用者互動並更新屬性值。
 
@@ -188,7 +188,7 @@ ms.locfileid: "72653969"
 > [!NOTE]
 > 在**Dsl**專案的不同程式碼檔案中新增程式碼。
 
-例如:
+例如：
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -226,7 +226,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 (typeof(MyTypeConverter))]
 ```
 
-定義衍生自 <xref:System.ComponentModel.TypeConverter> 的類別。 在**Dsl**專案的個別檔案中新增程式碼。 例如:
+定義衍生自 <xref:System.ComponentModel.TypeConverter> 的類別。 在**Dsl**專案的個別檔案中新增程式碼。 例如：
 
 ```csharp
 /// <summary>

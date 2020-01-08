@@ -11,21 +11,21 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b73e193f1bb3082a353e004200d437a74f508941
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641152"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586207"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>使用 TableAdapter DBDirect 方法儲存資料
 
-本逐步解說提供詳細的指示，說明如何使用 TableAdapter 的 DBDirect 方法，直接針對資料庫執行 SQL 語句。 TableAdapter 的 DBDirect 方法可讓您妥善控制您的資料庫更新。 您可以使用它們來執行特定的 SQL 語句和預存程式，方法是呼叫應用程式所需的個別 `Insert`、`Update` 和 `Delete` 方法（而不是執行 UPDATE、INSERT 的多載 `Update` 方法）。、和 DELETE 子句全都在單一呼叫中）。
+本逐步解說提供詳細的指示，說明如何使用 TableAdapter 的 DBDirect 方法，直接針對資料庫執行 SQL 語句。 TableAdapter 的 DBDirect 方法可讓您妥善控制您的資料庫更新。 您可以使用它們來執行特定的 SQL 語句和預存程式，方法是呼叫應用程式所需的個別 `Insert`、`Update`和 `Delete` 方法（而不是在單一呼叫中執行 UPDATE、INSERT 和 DELETE 子句的多載 `Update` 方法）。
 
 在這個逐步解說期間，您將了解如何：
 
@@ -39,7 +39,7 @@ ms.locfileid: "72641152"
 
 - 新增方法來直接存取資料庫，並執行插入、更新和刪除。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -61,7 +61,7 @@ ms.locfileid: "72641152"
 
 第一個步驟是建立**Windows Forms 應用程式**。
 
-1. **在 Visual Studio 的 [檔案**] 功能表上，選取 [**新增** > **專案**]。
+1. 在 Visual Studio 中，於 [檔案] 功能表上選取 [新增] > [專案]。
 
 2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
@@ -109,7 +109,7 @@ ms.locfileid: "72641152"
 
 若要在 Windows form 上建立資料繫結控制項，請將 [主要**區域**] 節點從 [**資料來源**] 視窗拖曳至表單上。
 
-<xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、`RegionTableAdapter`、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator> 會出現在元件匣中。
+<xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、`RegionTableAdapter`、<xref:System.Windows.Forms.BindingSource>和 <xref:System.Windows.Forms.BindingNavigator> 會出現在元件匣中。
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>加入會呼叫個別 TableAdapter DbDirect 方法的按鈕
 
@@ -117,7 +117,7 @@ ms.locfileid: "72641152"
 
 2. 在每個按鈕上，設定下列 [名稱] 及 [文字] 屬性。
 
-    |[屬性]|Text|
+    |Name|文字|
     |----------|----------|
     |`InsertButton`|**插入**|
     |`UpdateButton`|**更新**|

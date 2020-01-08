@@ -14,17 +14,17 @@ helpviewer_keywords:
 - data [Visual Studio], retrieving
 - data [Visual Studio], datasets
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fcecafaa36aabf3249bacf0788c2d19f945ad1b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a79f7b781944bb93a60794e748eefb9375723384
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648481"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586623"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 TableAdapter 填入資料集
 
@@ -52,18 +52,18 @@ Tableadapter 是設計工具產生的元件，可連接至資料庫、執行查�
 
 ![用戶端應用程式中的資料流程](../data-tools/media/clientdatadiagram.gif)
 
-雖然 Tableadapter 是使用**DataSet 設計工具**所設計，但 TableAdapter 類別並不會產生為 <xref:System.Data.DataSet> 的嵌套類別。 它們位於每個資料集特有的個別命名空間中。 例如，如果您有一個名為 `NorthwindDataSet` 的資料集，則與 `NorthwindDataSet` 中 <xref:System.Data.DataTable>s 相關聯的 Tableadapter 會在 `NorthwindDataSetTableAdapters` 命名空間中。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新實例。 例如:
+雖然 Tableadapter 是使用**DataSet 設計工具**所設計，但 TableAdapter 類別並不會產生為 <xref:System.Data.DataSet>的嵌套類別。 它們位於每個資料集特有的個別命名空間中。 例如，如果您有一個名為 `NorthwindDataSet`的資料集，則與 `NorthwindDataSet` 中 <xref:System.Data.DataTable>s 相關聯的 Tableadapter 會在 `NorthwindDataSetTableAdapters` 命名空間中。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新實例。 例如：
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
 
 ## <a name="associated-datatable-schema"></a>相關聯的 DataTable 架構
 
-當您建立 TableAdapter 時，您會使用初始查詢或預存程式來定義 TableAdapter 相關聯 <xref:System.Data.DataTable> 的架構。 您可以藉由呼叫 TableAdapter 的 `Fill` 方法（它會填入 TableAdapter 相關聯的 <xref:System.Data.DataTable>），來執行這個初始查詢或預存程式。 對 TableAdapter 的主查詢進行的任何變更都會反映在相關聯之資料表的架構中。 例如，從主要查詢中移除資料行時，也會從相關聯的資料表中移除資料行。 如果 TableAdapter 上的任何其他查詢使用 SQL 語句來傳回不在主要查詢中的資料行，則設計工具會嘗試同步處理主要查詢與其他查詢之間的資料行變更。
+當您建立 TableAdapter 時，您會使用初始查詢或預存程式來定義 TableAdapter 相關聯 <xref:System.Data.DataTable>的架構。 您可以藉由呼叫 TableAdapter 的 `Fill` 方法（它會填入 TableAdapter 相關聯的 <xref:System.Data.DataTable>），來執行這個初始查詢或預存程式。 對 TableAdapter 的主查詢進行的任何變更都會反映在相關聯之資料表的架構中。 例如，從主要查詢中移除資料行時，也會從相關聯的資料表中移除資料行。 如果 TableAdapter 上的任何其他查詢使用 SQL 語句來傳回不在主要查詢中的資料行，則設計工具會嘗試同步處理主要查詢與其他查詢之間的資料行變更。
 
 ## <a name="tableadapter-update-commands"></a>TableAdapter 更新命令
 
-TableAdapter 的更新功能取決於**Tableadapter Wizard**的主要查詢中有多少可用的資訊。 例如，設定為從多個資料表提取值的 Tableadapter （使用 `JOIN`）、純量值、views 或彙總函式的結果，一開始並不會有將更新傳回基礎資料庫的能力。 不過，您可以在 [**屬性**] 視窗中，手動設定 `INSERT`、`UPDATE` 和 `DELETE` 命令。
+TableAdapter 的更新功能取決於**Tableadapter Wizard**的主要查詢中有多少可用的資訊。 例如，設定為從多個資料表提取值的 Tableadapter （使用 `JOIN`）、純量值、views 或彙總函式的結果，一開始並不會有將更新傳回基礎資料庫的能力。 不過，您可以在 [**屬性**] 視窗中，手動設定 `INSERT`、`UPDATE`和 `DELETE` 命令。
 
 ## <a name="tableadapter-queries"></a>TableAdapter 查詢
 
@@ -85,7 +85,7 @@ Tableadapter 會封裝已設定的 <xref:System.Data.Common.DataAdapter> 類別�
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter 方法和屬性
 
-TableAdapter 類別不是 .NET 型別。 這表示您無法在檔或**物件瀏覽器**中查閱它。 當您使用稍早所述的其中一個嚮導時，就會在設計階段建立此檔案。 建立時指派給 TableAdapter 的名稱是以您要使用的資料表名稱為基礎。 例如，當您根據名為 `Orders` 的資料庫中的資料表建立 TableAdapter 時，會將 TableAdapter 命名為 `OrdersTableAdapter`。 您可以使用**DataSet 設計工具**中的**name**屬性來變更 TableAdapter 的類別名稱。
+TableAdapter 類別不是 .NET 型別。 這表示您無法在檔或**物件瀏覽器**中查閱它。 當您使用稍早所述的其中一個嚮導時，就會在設計階段建立此檔案。 建立時指派給 TableAdapter 的名稱是以您要使用的資料表名稱為基礎。 例如，當您根據名為 `Orders`的資料庫中的資料表建立 TableAdapter 時，會將 TableAdapter 命名為 `OrdersTableAdapter`。 您可以使用**DataSet 設計工具**中的**name**屬性來變更 TableAdapter 的類別名稱。
 
 以下是 Tableadapter 常用的方法和屬性：
 
@@ -99,16 +99,16 @@ TableAdapter 類別不是 .NET 型別。 這表示您無法在檔或**物件瀏�
 
 ## <a name="tableadapter-update-method"></a>TableAdapter 更新方法
 
-Tableadapter 使用資料命令來讀取及寫入資料庫。 使用 TableAdapter 的初始 `Fill` （main）查詢做為建立相關聯資料表之架構的基礎，以及與 `TableAdapter.Update` 方法相關聯的 `InsertCommand`、`UpdateCommand` 和 `DeleteCommand` 命令。 呼叫 TableAdapter 的 `Update` 方法，會執行原本已設定 TableAdapter 時所建立的語句，而不是您使用 [ **TableAdapter 查詢設定] Wizard**新增的其中一個額外查詢。
+Tableadapter 使用資料命令來讀取及寫入資料庫。 使用 TableAdapter 的初始 `Fill` （main）查詢做為建立相關聯資料表之架構的基礎，以及與 `TableAdapter.Update` 方法相關聯的 `InsertCommand`、`UpdateCommand`和 `DeleteCommand` 命令。 呼叫 TableAdapter 的 `Update` 方法，會執行原本已設定 TableAdapter 時所建立的語句，而不是您使用 [ **TableAdapter 查詢設定] Wizard**新增的其中一個額外查詢。
 
 當您使用 TableAdapter 時，它會有效地使用您通常會執行的命令來執行相同的作業。 例如，當您呼叫介面卡的 `Fill` 方法時，介面卡會在其 `SelectCommand` 屬性中執行資料命令，並使用資料讀取器（例如 <xref:System.Data.SqlClient.SqlDataReader>）將結果集載入至資料表。 同樣地，當您呼叫介面卡的 `Update` 方法時，它會針對資料表中每個已變更的記錄，執行適當的命令（在 [`UpdateCommand`]、[`InsertCommand`] 和 [`DeleteCommand` 屬性] 中）。
 
 > [!NOTE]
-> 如果主要查詢中有足夠的資訊，則在產生 TableAdapter 時，預設會建立 `InsertCommand`、`UpdateCommand` 和 `DeleteCommand` 命令。 如果 TableAdapter 的主查詢不是單一資料表 `SELECT` 語句，則設計工具可能無法產生 `InsertCommand`、`UpdateCommand` 和 `DeleteCommand`。 如果未產生這些命令，當您執行 `TableAdapter.Update` 方法時，可能會收到錯誤。
+> 如果主要查詢中有足夠的資訊，則在產生 TableAdapter 時，預設會建立 `InsertCommand`、`UpdateCommand`和 `DeleteCommand` 命令。 如果 TableAdapter 的主查詢不是單一資料表 `SELECT` 語句，則設計工具可能無法產生 `InsertCommand`、`UpdateCommand`和 `DeleteCommand`。 如果未產生這些命令，當您執行 `TableAdapter.Update` 方法時，可能會收到錯誤。
 
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods
 
-除了 `InsertCommand`、`UpdateCommand` 和 `DeleteCommand` 之外，也會使用您可以直接對資料庫執行的方法來建立 Tableadapter。 您可以直接呼叫這些方法（`TableAdapter.Insert`、`TableAdapter.Update` 和 `TableAdapter.Delete`），以運算元據庫中的資料。 這表示您可以從程式碼呼叫這些個別方法，而不是呼叫 `TableAdapter.Update` 來處理針對關聯資料表暫止的插入、更新和刪除。
+除了 `InsertCommand`、`UpdateCommand`和 `DeleteCommand`之外，也會使用您可以直接對資料庫執行的方法來建立 Tableadapter。 您可以直接呼叫這些方法（`TableAdapter.Insert`、`TableAdapter.Update`和 `TableAdapter.Delete`），以運算元據庫中的資料。 這表示您可以從程式碼呼叫這些個別方法，而不是呼叫 `TableAdapter.Update` 來處理針對關聯資料表暫止的插入、更新和刪除。
 
 如果您不想要建立這些直接方法，請將 TableAdapter 的**GenerateDbDirectMethods**屬性設定為 `false` （在 [**屬性**] 視窗中）。 新增至 TableAdapter 的其他查詢是獨立查詢，它們不會產生這些方法。
 
@@ -135,7 +135,7 @@ TableAdapterManager 類別不是 .NET 型別。 因此，您無法在檔中查�
 
 ## <a name="security"></a>安全性
 
-當您使用 CommandType 屬性設定為 <xref:System.Data.CommandType.Text> 的資料命令時，請仔細檢查從用戶端傳送的資訊，再將它傳遞至您的資料庫。 惡意的使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取權或藉此破壞資料庫。 將使用者輸入傳送至資料庫之前，請務必確認該資訊是否有效。 最佳做法是盡可能使用參數化查詢或預存程式。
+當您使用 CommandType 屬性設定為 <xref:System.Data.CommandType.Text>的資料命令時，請仔細檢查從用戶端傳送的資訊，再將它傳遞至您的資料庫。 惡意使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取或破壞資料庫。 將使用者輸入傳送至資料庫之前，請務必確認該資訊是否有效。 最佳做法是盡可能使用參數化查詢或預存程式。
 
 ## <a name="see-also"></a>請參閱
 

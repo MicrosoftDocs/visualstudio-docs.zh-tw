@@ -3,23 +3,23 @@ title: 逐步解說：建立逼真的 3D 撞球
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95125e2f808dde634435e4eeb2254e397fceb140
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 866f91303c224f8330a4d2be76f3d29331fcb346
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634550"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589912"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>逐步解說：建立逼真的 3D 撞球
 
 本逐步解說示範如何在 Visual Studio 中使用著色器設計工具與影像編輯器，建立逼真的 3D 撞球。 結合數種著色器技術與適當的紋理資源，達成 3D 撞球的外觀。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 您需要下列元件和技能才能完成此逐步解說：
 

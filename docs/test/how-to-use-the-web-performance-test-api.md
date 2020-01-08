@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Web performance tests, using the API
 - APIs, Web performance tests
 ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d22c1962727d22af965c879de3ae5fea6d4e54af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e869bc46997ffb6ebecae2aa3e49c3cb6b2582fa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653303"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594326"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>如何：使用 Web 效能測試 API
 
@@ -58,7 +58,7 @@ ms.locfileid: "72653303"
         > [!NOTE]
         > 您可以從外掛程式公開任意數目的屬性，只要讓這些屬性成為公用、可設定且屬於基底型別 (例如整數、布林或字串) 的屬性即可。 您之後也可以使用 [屬性] 視窗來編輯 Web 效能測試外掛程式屬性。
 
-    4. 選擇 [確定]。
+    4. 選擇 [ **確定**]。
 
 9. 執行您的 Web 效能測試。
 

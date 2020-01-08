@@ -3,19 +3,19 @@ title: LINQ to SQL 類別之間的關聯性（O/R 設計工具）
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 13443dd25719caad5002b29a33975a0dbc5850f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fb81cf17de86a11d2373f6a545b3efc78e65ada9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641893"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586467"
 ---
-# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>作法：建立 LINQ to SQL 類別之間的關聯（O/R 設計工具）
+# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>如何：建立 LINQ to SQL 類別之間的關聯（O/R 設計工具）
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 中實體類別 (Class) 之間的關聯，與資料庫中資料表之間的關聯性 (Relationship) 類似。 您可以使用 [關聯編輯器] 對話方塊建立實體類別之間的關聯。
 
 使用 [關聯編輯器] 對話方塊建立關聯時，必須選取父類別和子類別。 父類別是包含主索引鍵的實體類別，而子類別是包含外部索引鍵的實體類別。 例如，如果建立了對應至 `Northwind Customers` 和 `Orders` 資料表的實體類別，則 `Customer` 類別會是父類別，而 `Order` 類別會是子類別。
@@ -24,13 +24,13 @@ ms.locfileid: "72641893"
 > 當您將資料表從**伺服器總管**或**資料庫總管**拖曳至**物件關聯式設計工具**（**O/R 設計**工具）時，會根據資料庫中現有的外鍵關聯性，自動建立關聯。
 
 ## <a name="association-properties"></a>關聯屬性
-建立關聯之後，當您在 [O/R 設計工具] 中選取該關聯時，[屬性] 視窗中會出現一些可設定的屬性。 (關聯就是相關類別之間的線條)。下表提供關聯屬性的說明。
+建立關聯之後，當您在 [O/R 設計工具] 中選取該關聯時，[屬性] 視窗中會出現一些可設定的屬性。 （關聯是相關類別之間的線條）。下表提供關聯屬性的描述。
 
 |屬性|描述|
 |--------------|-----------------|
 |**基數**|控制關聯是一對多還是一對一。|
-|**子屬性**|指定是否要在父代 (Parent) 上建立屬性，這個屬性是位於關聯的外部索引鍵端上之子記錄的集合或參考。 例如，在 `Customer` 和 `Order` 之間的關聯中，如果**子屬性**設定為**True**，則會在父類別上建立名為 `Orders` 的屬性。|
-|**父屬性**|子類別上參考相關父類別的屬性。 例如，在 `Customer` 和 `Order` 之間的關聯中，會在 `Order` 類別上建立一個名為 `Customer` 的屬性，而該屬性會參考訂單的相關聯客戶。|
+|**子屬性**|指定是否要在父代 (Parent) 上建立屬性，這個屬性是位於關聯的外部索引鍵端上之子記錄的集合或參考。 例如，在 `Customer` 和 `Order`之間的關聯中，如果**子屬性**設定為**True**，則會在父類別上建立名為 `Orders` 的屬性。|
+|**父屬性**|子類別上參考相關父類別的屬性。 例如，在 `Customer` 和 `Order`之間的關聯中，會在 `Order` 類別上建立一個名為 `Customer` 的屬性，而該屬性會參考訂單的相關聯客戶。|
 |**參與屬性**|顯示關聯屬性，並提供**省略符號**按鈕 (...) 來重新開啟 [關聯編輯器] 對話方塊。|
 |**唯一**|指定外部目標資料行是否具有唯一性條件約束 (Constraint)。|
 
@@ -46,10 +46,10 @@ ms.locfileid: "72641893"
 
 5. 按一下 [確定] 建立關聯。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [逐步解說：建立 LINQ to SQL 類別 ](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [逐步解說：建立 LINQ to SQL 類別](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [DataContext 方法 (O/R 設計工具)](../data-tools/datacontext-methods-o-r-designer.md)
-- [如何：代表主鍵 ](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)
+- [如何：表示主索引鍵](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)

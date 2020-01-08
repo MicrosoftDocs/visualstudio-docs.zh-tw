@@ -2,17 +2,17 @@
 title: T4 輸出指示詞
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1da8ec010e878ff80a9f46748993705b87193d99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606219"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591810"
 ---
 # <a name="t4-output-directive"></a>T4 輸出指示詞
 
@@ -39,7 +39,7 @@ ms.locfileid: "72606219"
 
  預設值為 **.cs。**
 
- 範例： `<#@ output extension=".txt" #>`
+ 範例：`<#@ output extension=".txt" #>`
 
  `<#@ output extension=".htm" #>`
 
@@ -50,7 +50,7 @@ ms.locfileid: "72606219"
  可接受的值：任何有效的副檔名。
 
 ## <a name="encoding-attribute"></a>encoding 屬性
- 指定要在產生輸出檔案時使用的編碼。 例如:
+ 指定要在產生輸出檔案時使用的編碼。 例如：
 
  `<#@ output encoding="utf-8"#>`
 
@@ -68,6 +68,6 @@ ms.locfileid: "72606219"
 
  `utf-32`
 
- `0` (系統預設值)
+ `0` （系統預設值）
 
  一般而言，您可以使用 <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName> 所傳回之任何編碼的 WebName 字串或 CodePage 號碼。

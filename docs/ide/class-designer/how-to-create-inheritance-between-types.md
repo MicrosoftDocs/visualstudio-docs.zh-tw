@@ -8,17 +8,17 @@ helpviewer_keywords:
 - inheritance, relationship defining
 - relationships, defining inheritance
 ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8a7d7f3facf1408f87ef23dfa8ed8462195c172
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fbf540056318e092db13521dc80478cc7eb91948
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647721"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590367"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>如何：在類別設計工具中建立類型之間的繼承
 

@@ -3,17 +3,17 @@ title: 混合最小規則規則集
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c72b9526e667216a6791470353ce78132c2a0a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ddb4b5b80ab33e0136b14ce824f5be1b8cb9f6a3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649238"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587325"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 
@@ -86,13 +86,13 @@ Microsoft 混合最小規則著重于支援 Common Language Runtime 之C++專案
 |[C28182](../code-quality/c28182.md)|取值的指標為 NULL。 指標所包含的 NULL 值與另一個指標相同。|
 |[C28202](../code-quality/c28202.md)|非靜態成員的參考不合法|
 |[C28203](../code-quality/c28203.md)|類別成員的參考模稜兩可。|
-|[C28205](../code-quality/c28205.md)|\_Success 在不合法的內容中使用 \_ 或 \_On \_failure \_|
+|[C28205](../code-quality/c28205.md)|\_成功\_ 或 \_在不合法的內容中使用\_失敗\_|
 |[C28206](../code-quality/c28206.md)|左運算元指向結構，請使用 '->'|
 |[C28207](../code-quality/c28207.md)|左運算元是結構，請使用 '.'|
 |[C28210](../code-quality/c28210.md)|_On_failure_ 內容的註釋不能在明確 pre context 中|
 |[C28211](../code-quality/c28211.md)|SAL_context 需要靜態內容名稱|
 |[C28212](../code-quality/c28212.md)|註釋需要指標運算式|
-|[C28213](../code-quality/c28213.md)|@No__t_0Use \_decl \_annotations \_ 注釋必須用來參考先前的宣告，而不需要修改。|
+|[C28213](../code-quality/c28213.md)|\_使用\_extended-decl-modifier-seq\_注釋\_ 批註必須用來參考先前的宣告，而不需要修改。|
 |[C28214](../code-quality/c28214.md)|屬性參數名稱必須是 p1...p9|
 |[C28215](../code-quality/c28215.md)|typefix 不能套用到已經有 typefix 的參數|
 |[C28216](../code-quality/c28216.md)|checkReturn 註釋只適用於特定函式參數的後置條件。|
@@ -134,7 +134,7 @@ Microsoft 混合最小規則著重于支援 Common Language Runtime 之C++專案
 |[C28267](../code-quality/c28267.md)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤。|
 |[C28272](../code-quality/c28272.md)|函式參數的註釋在檢查時，與函式宣告不一致|
 |[C28273](../code-quality/c28273.md)|對於函式，線索與函式宣告不一致|
-|[C28275](../code-quality/c28275.md)|@No__t_0Macro \_value \_ 的參數為 null|
+|[C28275](../code-quality/c28275.md)|\_宏\_值\_ 的參數為 null|
 |[C28279](../code-quality/c28279.md)|找到符號的 'begin'，但沒有相符的 'end'|
 |[C28280](../code-quality/c28280.md)|找到符號的 'end'，但沒有相符的 'begin'|
 |[C28282](../code-quality/c28282.md)|格式字串必須在前置條件中|

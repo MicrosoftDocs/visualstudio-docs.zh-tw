@@ -4,19 +4,19 @@ description: ''
 ms.date: 07/03/2019
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a1a9c1a8db0c4f3481e1edf220412612d70064a8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 539b21c474f9c119427e7f74192e80e7686b299c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825181"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588523"
 ---
 # <a name="advanced-example-for-containers"></a>容器的進階範例
 
@@ -211,7 +211,7 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [將建置工具安裝至容器](build-tools-container.md)
 * [容器的已知問題](build-tools-container-issues.md)

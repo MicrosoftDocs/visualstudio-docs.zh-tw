@@ -4,15 +4,15 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7cbb8c9be8ed56294d865d2612a8d79fcdb39df8
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919124"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589782"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 建立可攜式自訂編輯器設定
 
@@ -24,14 +24,14 @@ ms.locfileid: "72919124"
 
 當您在 Visual Studio 中將 EditorConfig 檔案新增至專案時，會根據 EditorConfig 設定將新行的程式碼格式化。 除非您執行下列其中一個命令，否則不會變更現有程式碼的格式：
 
- - 程式[代碼清理](../ide/code-styles-and-code-cleanup.md)（**ctrl** +**K**， **ctrl** +**E**），它會套用任何空白字元設定（例如縮排樣式）和選取的程式碼樣式設定，例如如何排序 `using` 指示詞。
- - 在預設設定檔中**編輯**> **Advanced** >**格式檔**（或**ctrl** +**K**， **ctrl** +**D** ），這只會套用空白字元設定，例如縮排樣式。
+ - 程式[代碼清理](../ide/code-styles-and-code-cleanup.md)（**ctrl**+**K**， **ctrl**+**E**），它會套用任何空白字元設定（例如縮排樣式）和選取的程式碼樣式設定，例如如何排序 `using` 指示詞。
+ - 在預設設定檔中**編輯**> **Advanced** >**格式檔**（或**ctrl**+**K**， **ctrl**+**D** ），這只會套用空白字元設定，例如縮排樣式。
 
  ::: moniker-end
 
 ::: moniker range="=vs-2017"
 
-當您在 Visual Studio 中將 EditorConfig 檔案新增至專案時，會根據 EditorConfig 設定將新行的程式碼格式化。 除非您執行格式化檔（**編輯** > **Advanced**  > **格式檔**，或**ctrl** +**K**， **ctrl** +**D** ，否則不會變更現有程式碼的格式。預設設定檔）。 格式化檔只會影響空白字元設定（例如縮排樣式），除非您已設定格式檔來[執行額外的程式碼清除](../ide/code-styles-and-code-cleanup.md#apply-code-styles)。
+當您在 Visual Studio 中將 EditorConfig 檔案新增至專案時，會根據 EditorConfig 設定將新行的程式碼格式化。 除非您執行格式化檔（**編輯** > **Advanced** > **格式檔**，或在預設設定檔中**按+** **ctrl**+**D** **），否則**現有程式碼的格式設定不會變更。 格式化檔只會影響空白字元設定（例如縮排樣式），除非您已設定格式檔來[執行額外的程式碼清除](../ide/code-styles-and-code-cleanup.md#apply-code-styles)。
 
  ::: moniker-end
 
@@ -72,7 +72,7 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](https://editorconfig.o
 
 ## <a name="add-and-remove-editorconfig-files"></a>新增及移除 EditorConfig 檔案
 
-當您將 EditorConfig 檔案新增至專案或程式碼基底之後，您撰寫的任何新程式碼都會根據 EditorConfig 檔案設定格式。 不過，在您格式化檔或執行程式[代碼清理](../ide/code-styles-and-code-cleanup.md)之前，新增 EditorConfig 檔案並不會將現有的樣式轉換成新的樣式。 例如，如果您在檔案中使用了定位字元設定格式的縮排，而且新增了以空格縮排的 EditorConfig 檔案，縮排字元不會自動轉換為空格。 當您格式化檔時（**編輯** > **Advanced**  > **格式檔**或**ctrl** +**K**， **ctrl** +**D**），EditorConfig 檔案中的空白字元設定會套用至現有的程式程式碼。
+當您將 EditorConfig 檔案新增至專案或程式碼基底之後，您撰寫的任何新程式碼都會根據 EditorConfig 檔案設定格式。 不過，在您格式化檔或執行程式[代碼清理](../ide/code-styles-and-code-cleanup.md)之前，新增 EditorConfig 檔案並不會將現有的樣式轉換成新的樣式。 例如，如果您在檔案中使用了定位字元設定格式的縮排，而且新增了以空格縮排的 EditorConfig 檔案，縮排字元不會自動轉換為空格。 當您格式化檔（**編輯** > **Advanced** > **格式檔** 或**ctrl**+**K**， **ctrl**+**D**）時，EditorConfig 檔中的空白字元設定會套用至現有的程式程式碼。
 
 如果您從專案或程式碼基底移除了 EditorConfig 檔案，且想要依照全域編輯器設定為新的程式碼設定格式，就必須關閉並重新開啟任何開啟的程式碼檔案。
 

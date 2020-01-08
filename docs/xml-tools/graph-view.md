@@ -1,19 +1,19 @@
 ---
-title: XML 結構描述設計工具圖形檢視
+title: XML 結構描述設計工具圖表檢視
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b19f8f64bc4fe63d111f4d5c61e96d6fff88a14b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb71196dfbaf371e66131bf1e4b22584d3dbf0c3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646043"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592863"
 ---
 # <a name="graph-view"></a>圖形檢視
 
@@ -21,7 +21,7 @@ ms.locfileid: "72646043"
 
 下圖顯示的設計介面中包含六個全域節點的圖表檢視。
 
-![XML 結構描述設計工具圖形檢視](../xml-tools/media/xsddesigner_graphview.gif)
+![XML 結構描述設計工具圖表檢視](../xml-tools/media/xsddesigner_graphview.gif)
 
 ## <a name="design-surface"></a>設計介面
 
@@ -33,7 +33,7 @@ ms.locfileid: "72646043"
 
 如果設計介面是空白的，則會顯示 [XML 編輯器]、[ **Xml 架構瀏覽器**] 和 [浮水印]。 *浮水印*是所有 XSD 設計工具視圖的連結清單。
 
-![XSD 設計工具；圖形檢視](../xml-tools/media/xsdgraphviewwatermark.gif)
+![XSD 設計工具；圖表檢視](../xml-tools/media/xsdgraphviewwatermark.gif)
 
 如果結構描述集發生錯誤，清單結尾會顯示以下文字：「使用錯誤清單檢視與修正結構描述集中的錯誤」。
 
@@ -89,7 +89,7 @@ ms.locfileid: "72646043"
 |-|-----------------|
 |**新增所有參考**|加入所有參考群組的節點，並且畫出箭號代表兩者之間的關聯性。|
 
-## <a name="properties-window"></a>屬性視窗
+## <a name="properties-window"></a>[屬性] 視窗
 
 使用內容（以滑鼠右鍵按一下）功能表一開始開啟 [**屬性**] 視窗。 根據預設，[**屬性**] 視窗會出現在 Visual Studio 的右下角。 當您按一下在內容模型視圖中呈現的節點時，該節點的屬性會顯示在 [**屬性**] 視窗中。
 
@@ -97,20 +97,20 @@ ms.locfileid: "72646043"
 
 圖表檢視作用中時，會啟用下列 XSD 工具列按鈕。
 
-![XML 結構描述設計工具工具列](../xml-tools/media/xsdgraphviewtoolbar.gif)
+![XML 結構描述設計工具列](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |選項|描述|
 |-|-----------------|
-|**顯示開始視圖**|切換至 [[開始] 視圖](../xml-tools/start-view.md)。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl** +**1**。|
-|**顯示內容模型視圖**|切換至[內容模型視圖](../xml-tools/content-model-view.md)。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl** +**2**。|
-|**顯示圖表視圖**|切換至[圖表視圖](../xml-tools/graph-view.md)。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl** +**3**。|
+|**顯示開始視圖**|切換至 [[開始] 視圖](../xml-tools/start-view.md)。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl**+**1**。|
+|**顯示內容模型視圖**|切換至[內容模型視圖](../xml-tools/content-model-view.md)。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl**+**2**。|
+|**顯示圖表視圖**|切換至[圖表視圖](../xml-tools/graph-view.md)。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl**+**3**。|
 |**清除工作區**|清除工作空間和設計介面。|
 |**從工作區移除**|從工作空間和設計介面移除選取的節點。|
 |**從工作區移除所有但不選取**|從工作空間和設計介面移除未選取的節點。 內容模型檢視和圖表檢視會啟用此選項。|
-|**由左至右**|將圖表檢視中的配置變更為從左至右以階層表示節點。 這個選項可以使用鍵盤快速鍵存取： **Alt** +**向右箭**號。|
-|**由右至左**|將圖表檢視中的配置變更為從右至左以階層表示節點。 這個選項可以使用鍵盤快速鍵存取： **Alt** +**向左鍵**。|
-|**從上到下**|將圖表檢視中的配置變更為從上至下以階層表示節點。 此選項可以使用鍵盤快速鍵存取： **Alt** +**向下鍵**。|
-|**從下到上**|將圖表檢視中的配置變更為從下至上以階層表示節點。 這個選項可以使用鍵盤快速鍵存取： **Alt** +**向上箭**號。|
+|**由左至右**|將圖表檢視中的配置變更為從左至右以階層表示節點。 這個選項可以使用鍵盤快速鍵存取： **Alt**+**向右箭**號。|
+|**由右至左**|將圖表檢視中的配置變更為從右至左以階層表示節點。 這個選項可以使用鍵盤快速鍵存取： **Alt**+**向左鍵**。|
+|**從上到下**|將圖表檢視中的配置變更為從上至下以階層表示節點。 此選項可以使用鍵盤快速鍵存取： **Alt**+**向下鍵**。|
+|**從下到上**|將圖表檢視中的配置變更為從下至上以階層表示節點。 這個選項可以使用鍵盤快速鍵存取： **Alt**+**向上箭**號。|
 
 ## <a name="panscroll"></a>移動瀏覽/捲動
 

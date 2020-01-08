@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8673cb816cfd03aa5bb0f2c6ffb7aa5205a8372e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 95275f90af0fbf6f002a7e3a127e7d7ca7d08a39
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006773"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573777"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 可讓您使用 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素來靜態宣告專案檔中的項目。 不過，您只能在項目層級新增中繼資料，即使所有項目的中繼資料都相同也是如此。 從 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 開始，名為 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) 的專案元素可克服這項限制。 *ItemDefinitionGroup* 可讓您定義一組項目定義，這些項目定義會將預設的中繼資料值，新增到具名項目類型中的所有項目。
@@ -251,5 +251,5 @@ ItemDefinitionGroup 元素中所定義的中繼資料可被稍後的 ItemDefinit
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [批次處理](../msbuild/msbuild-batching.md)

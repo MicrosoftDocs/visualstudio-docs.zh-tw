@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 328b600a21adf274d1d016f595438eb5622ee853
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae2b7d81b1f166e6cc97debc3291661d59ee6960
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663739"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594028"
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 
@@ -35,7 +35,7 @@ Visual Studio 可以協助您保持軟體與使用者需求和系統架構的一
 
 |**分類**|**Links**|
 |-|-|
-|**影片**|![link 到影片 ](../data-tools/media/playvideo.gif) [Channel 9： Doug 七：程式碼瞭解和使用 Visual Studio 2010 的系統設計](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![link 到影片 ](../data-tools/media/playvideo.gif) [Channel 9：架構應用程式](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application)）|
+|**影片**|![連結至影片](../data-tools/media/playvideo.gif) [Channel 9： Doug 七：程式碼瞭解和使用 Visual Studio 2010 的系統設計](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![連結到影片](../data-tools/media/playvideo.gif) [Channel 9：架構應用程式](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application)）|
 |**論壇**|- [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)擴充性|
 
 ## <a name="see-also"></a>請參閱

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, scenarios
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54159ca7b0d99e0bba7e7b048138ffacf6ab5b0b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2011438f1fcb0230cde0de527216456553e7c64
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652960"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584435"
 ---
 # <a name="load-test-scenario-properties"></a>負載測試情節屬性
 
@@ -26,7 +26,7 @@ ms.locfileid: "72652960"
 
 |屬性|定義|
 |-|----------------|
-|**名稱**|情節的名稱。|
+|**Name**|情節的名稱。|
 
 ## <a name="mix"></a>混合
 
@@ -48,7 +48,7 @@ ms.locfileid: "72652960"
 |**新使用者的百分比**|數值，指定情節中新使用者或初次造訪者的百分比。<br /><br />如需詳細資訊，請參閱[如何：指定使用 Web 快取資料之虛擬使用者的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)。|
 |**考慮特性**|指定情節是否會使用 [常態分佈]，或考慮特性是 [開啟] 或 [關閉]。<br /><br />如需詳細資訊，請參閱[編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)。|
 
-## <a name="timing"></a>計時
+## <a name="timing"></a>時間
 
 |屬性|定義|
 |-|----------------|

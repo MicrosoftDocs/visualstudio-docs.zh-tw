@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, best practices
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 174059a3b5053602c7f5d21f7b663d0a48bbe709
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e71029a185d1b3fea1812b2a4b1cf7bf20effff8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665282"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565158"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>自動程式化 UI 測試的最佳做法
 

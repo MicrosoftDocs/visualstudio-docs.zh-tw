@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, disable
 - disable code analysis
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb1a41642e405046459f6196a98cd6290a217223
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d25254cabecd88c6e876646c3c276503aadf7eb7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649655"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587663"
 ---
 # <a name="how-to-disable-source-code-analysis-for-managed-code"></a>如何停用 managed 程式碼的原始程式碼分析
 
@@ -27,7 +27,7 @@ ms.locfileid: "72649655"
 
 - NuGet 分析器套件與 VSIX 或內建分析器的比較
 
-  目前，您無法停用內建分析器的即時程式碼分析，例如，規則識別碼 IDE0067。 同樣地，您無法針對已安裝為 Visual Studio 延伸模組（VSIX）一部分的分析器停用即時程式碼分析。 若要隱藏內建和 VSIX 分析器的錯誤和警告，請選擇 [**分析**]  > **組建，並隱藏**功能表列上的 [作用中問題]。 您*可以*針對安裝為 NuGet 套件一部分的分析器，停用即時和建立時間分析。
+  目前，您無法停用內建分析器的即時程式碼分析，例如，規則識別碼 IDE0067。 同樣地，您無法針對已安裝為 Visual Studio 延伸模組（VSIX）一部分的分析器停用即時程式碼分析。 若要隱藏內建和 VSIX 分析器的錯誤和警告，請選擇 [**分析**] > **組建，並隱藏**功能表列上的 [作用中問題]。 您*可以*針對安裝為 NuGet 套件一部分的分析器，停用即時和建立時間分析。
 
 - 來源分析與舊版分析
 
@@ -45,19 +45,19 @@ ms.locfileid: "72649655"
 - 若要停用即時來源分析，請取消核取 [**在即時分析執行**] 選項。
 
 > [!NOTE]
-> 內建和以 VSIX 為基礎的分析器會繼續提供程式碼的即時分析，即使未核取 [**在即時分析上執行**] 也一樣。 如果您想要隱藏這些分析器的錯誤和警告，請選擇 [**分析**]  > **組建，並隱藏**功能表列上的 [作用中問題]。
+> 內建和以 VSIX 為基礎的分析器會繼續提供程式碼的即時分析，即使未核取 [**在即時分析上執行**] 也一樣。 如果您想要隱藏這些分析器的錯誤和警告，請選擇 [**分析**] > **組建，並隱藏**功能表列上的 [作用中問題]。
 
 ## <a name="net-framework-projects"></a>.NET Framework 專案
 
 若要針對安裝為 NuGet 套件一部分的分析器關閉原始程式碼分析，請將下列一個或多個 MSBuild 屬性新增至[專案](../ide/solutions-and-projects-in-visual-studio.md#project-file)檔。
 
-| MSBuild 屬性 | 描述 | Default |
+| MSBuild 屬性 | 描述 | 預設值 |
 | - | - | - |
 | `RunAnalyzersDuringBuild` | 控制以 NuGet 為基礎的分析器是否在組建階段執行。 | `true` |
 | `RunAnalyzersDuringLiveAnalysis` | 控制以 NuGet 為基礎的分析器在設計階段是否即時分析程式碼。 | `true` |
 | `RunAnalyzers` | 在組建和設計階段停用以 NuGet 為基礎的分析器。 這個屬性優先于 `RunAnalyzersDuringBuild` 和 `RunAnalyzersDuringLiveAnalysis`。 | `true` |
 
-例如：
+範例：
 
 ```xml
 <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
@@ -71,7 +71,7 @@ ms.locfileid: "72649655"
 
 ## <a name="source-analysis"></a>來源分析
 
-您無法在 Visual Studio 2017 中關閉[來源分析](roslyn-analyzers-overview.md)。 如果您想要從錯誤清單清除分析器錯誤，您可以選擇 [**分析**]  >  [**執行程式碼分析] 和 [隱藏**] 功能表列上的 [作用中問題]，以隱藏所有目前的違規。 如需詳細資訊，請參閱[隱藏違規](use-roslyn-analyzers.md#suppress-violations)。
+您無法在 Visual Studio 2017 中關閉[來源分析](roslyn-analyzers-overview.md)。 如果您想要從錯誤清單清除分析器錯誤，您可以選擇 [**分析**] > [**執行程式碼分析] 和 [隱藏**] 功能表列上的 [作用中問題]，以隱藏所有目前的違規。 如需詳細資訊，請參閱[隱藏違規](use-roslyn-analyzers.md#suppress-violations)。
 
 從 Visual Studio 2019 16.3 版開始，您可以關閉以 NuGet 為基礎的原始碼分析。 請考慮升級至 Visual Studio 2019。
 

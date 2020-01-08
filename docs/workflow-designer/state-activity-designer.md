@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: c0e4657f8d3fde29c49c4505c8512726c60f1593
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: f1a95808ec19edba01b266ccd280603bcc4321dc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649931"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593144"
 ---
 # <a name="state-activity-designer"></a>狀態活動設計工具
 
@@ -29,7 +29,7 @@ ms.locfileid: "72649931"
 
 下表顯示可使用工作流程設計工具設定的 <xref:System.Activities.Statements.State> 屬性，並說明如何在設計工具中使用它們。 其中一些屬性可以在屬性方格中進行編輯，有些可以在設計工具介面上編輯。
 
-|屬性名稱|必要項|使用量|
+|內容名稱|必要|使用|
 |-|--------------|-|
 |<xref:System.Activities.Statements.State.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.State> 活動設計工具在標頭中的易記名稱。 預設值為**State**。 此值可在屬性方格中編輯，或是直接在活動設計工具的標頭上編輯。 <xref:System.Activities.Statements.State.DisplayName%2A> 可用於階層連結巡覽，顯示在工作流程設計工具的頂端。<br /><br /> 雖然 <xref:System.Activities.Statements.State.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.State.Entry%2A>|False|指定此狀態在轉換時發生的動作。 展開 [<xref:System.Activities.Statements.State>] 活動時，您可以從 [**工具箱**] 拖曳活動並放到狀態的 [**專案**] 區段，藉此設定此值。|

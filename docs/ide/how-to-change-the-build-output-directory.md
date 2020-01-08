@@ -1,24 +1,24 @@
 ---
-title: HOW TO：變更組建輸出目錄
+title: 如何：變更組建輸出目錄
 ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 732e48bf5cbea8534cc5c90ac5af80df0cc93e7b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238178"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594379"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>作法：變更組建輸出目錄
+# <a name="how-to-change-the-build-output-directory"></a>如何：變更組建輸出目錄
 
 您可以根據組態 (針對偵錯及/或版本) 指定專案所產生的輸出位置。
 
@@ -58,7 +58,7 @@ ms.locfileid: "71238178"
 >
 > ![Visual Studio 2019 中的 [建置] 組態選擇器](media/build-configuration-chooser.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [專案設計工具、建置頁面 (C#)](../ide/reference/build-page-project-designer-csharp.md)
 - [一般屬性頁面 (專案)](/cpp/build/reference/general-property-page-project)

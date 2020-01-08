@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8651b3a11b9db82d4c52ff600706b51855881f02
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0836fdb085ab33b2a646d9774c94bd859b5ca5ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665058"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590302"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>編輯負載模式以建構虛擬使用者活動模型
 
@@ -79,11 +79,11 @@ ms.locfileid: "72665058"
 
   在下列表格中，有個範例會說明具有下列屬性設定的以目標為依據模式：
 
-|屬性群組|屬性|值|
+|內容群組|屬性|{2&gt;值&lt;2}|
 |-|--------------|-|
-|效能計數器|Category|處理器|
+|效能計數器|分類|處理器|
 |效能計數器|電腦|ContosoServer1|
-|效能計數器|計數器|% Processor Time|
+|效能計數器|計數器|% 處理器時間|
 |效能計數器|執行個體|_Total|
 |效能計數器的目標範圍|高端|90|
 |效能計數器的目標範圍|低端|70|
@@ -107,7 +107,7 @@ ms.locfileid: "72665058"
 
 ## <a name="tasks"></a>工作
 
-|工作|相關主題|
+|工作|相關的主題|
 |-|-----------------------|
 |**指定負載測試的初始負載模式：** 當您使用 [新增負載測試精靈] 來建立負載測試時，就會選取負載模式。|-   [變更負載模式](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |**編輯負載測試的負載模式：** 建立負載測試之後，您就可以在 [負載測試編輯器] 中編輯負載模式。|-   [如何：指定步驟負載模式的逐步遞增時間屬性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|

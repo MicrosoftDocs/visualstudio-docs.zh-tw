@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
 - rule sets
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b904fd484135943228b2d8ac21e2df0d1c02e34
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9f23b2badb40effd4222e21ab9e67b2907513c2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649513"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587546"
 ---
 # <a name="customize-a-rule-set"></a>自訂規則集
 
@@ -24,7 +24,7 @@ ms.locfileid: "72649513"
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>從現有的規則集建立自訂規則集
 
-若要建立自訂規則集，您可以在 [**規則集編輯器**] 中開啟內建的規則集。 您可以從該處新增或移除特定規則，也可以變更違反規則時所發生的動作 &mdash;for 範例、顯示警告或錯誤。
+若要建立自訂規則集，您可以在 [**規則集編輯器**] 中開啟內建的規則集。 您可以從該處新增或移除特定規則，也可以變更違反規則時所發生的動作&mdash;例如，顯示警告或錯誤。
 
 1. 在**方案總管**中，以滑鼠右鍵按一下專案，然後選取 [**屬性**]。
 
@@ -46,7 +46,7 @@ ms.locfileid: "72649513"
 
      \-或-
 
-   - 選取 [ **\<Browse >** ]，指定不在清單中的現有規則集。
+   - 選取 **[\<流覽 >]** ，指定不在清單中的現有規則集。
 
 4. 選取 [**開啟**] 以在規則集編輯器中顯示規則。
 
@@ -57,7 +57,7 @@ ms.locfileid: "72649513"
 
 您可以從 [**新增**檔案] 對話方塊建立新的規則集檔案：
 
-1. 選取 **[file**]  >  個新**的  >  檔案**，或按**Ctrl**+**N**。
+1. 選取 **[** 檔案] > **新** ** > 檔案**，或按**Ctrl**+**N**。
 
 2. 在 [**新增**檔案] 對話方塊中，選取左側的 **[一般**] 類別，然後選取 [程式**代碼分析規則集**]。
 
@@ -76,13 +76,13 @@ ms.locfileid: "72649513"
 
 ::: moniker range="vs-2017"
 
-3. 從 [**執行此規則集**] > 選取 [ **\<Choose 多個規則集**]。
+3. 從 [**執行此規則集**] 選取 **\<選擇多個規則集 >** 。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. 從作用中的**規則**選取 [ **\<Choose 多個規則集] >** 。
+3. 選取 \<從作用中**規則**選擇**多個規則集 >** 。
 
 ::: moniker-end
 
@@ -98,7 +98,7 @@ ms.locfileid: "72649513"
 
 ## <a name="rule-precedence"></a>規則優先順序
 
-- 如果相同的規則在具有不同嚴重性的規則集內列出兩次以上，則編譯器會產生錯誤。 例如:
+- 如果相同的規則在具有不同嚴重性的規則集內列出兩次以上，則編譯器會產生錯誤。 例如：
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -111,9 +111,9 @@ ms.locfileid: "72649513"
 
 - 如果相同的規則在具有*相同*嚴重性的規則集內列出兩次以上，您可能會在**錯誤清單**中看到下列警告：
 
-   **CA0063：無法載入規則集檔案 ' \[your]。規則集 ' 或其相依規則集的其中一個。檔案不符合規則集架構。**
+   **CA0063：無法載入規則集檔案 '\[您的] 或其中一個相依規則集檔案。檔案不符合規則集架構。**
 
-- 如果規則集包含使用**Include**標記設定的子規則，而子系和父規則集同時列出相同的規則，但具有不同的嚴重性，則會優先使用父系規則集的嚴重性。 例如:
+- 如果規則集包含使用**Include**標記設定的子規則，而子系和父規則集同時列出相同的規則，但具有不同的嚴重性，則會優先使用父系規則集的嚴重性。 例如：
 
    ```xml
    <!-- Parent rule set -->

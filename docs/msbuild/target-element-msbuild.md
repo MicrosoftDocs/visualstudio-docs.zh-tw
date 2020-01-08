@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Target element [MSBuild]
 - <Target> element [MSBuild]
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1748064482e13eba95e9aa83e9cb04c93b8066f
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c69ee5758d5c6e513af853a8d7589057c6537956
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491612"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566419"
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
 包含一組可循序執行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作。
@@ -51,7 +51,7 @@ ms.locfileid: "74491612"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
- 下列各節描述屬性、子項目和父項目。
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
 

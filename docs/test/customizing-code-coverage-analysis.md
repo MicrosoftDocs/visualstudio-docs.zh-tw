@@ -2,17 +2,17 @@
 title: 自訂程式碼涵蓋範圍分析
 ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: d90292d339c87c74892d715f2a376b5159226dd7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665068"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590328"
 ---
 # <a name="customize-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 
@@ -51,7 +51,7 @@ ms.locfileid: "72665068"
 
 ::: moniker range="vs-2017"
 
-若要關閉和開啟自訂設定，請在 [測試] > [測試設定] 功能表中取消選取或選取檔案。
+若要關閉和關閉自訂設定，請取消選取或選取 [**測試**>**測試設定**] 功能表中的檔案。
 
 ![Visual Studio 2017 中具有自訂設定檔的測試設定功能表](../test/media/codecoverage-settingsfile.png)
 
@@ -109,14 +109,14 @@ ms.locfileid: "72665068"
 | - | - |
 | ModulePath | 符合元件名稱或檔案路徑所指定的元件。 |
 | 公司名稱 | 符合**Company**屬性的元件。 |
-| 公開金鑰 | 依據公開金鑰標記比對已簽署的元件。 |
+| PublicKeyToken | 依據公開金鑰標記比對已簽署的元件。 |
 | 原始程式檔 | 依據專案定義所在之來源檔案的路徑名稱比對元素。 |
 | 屬性 | 符合具有指定之屬性的元素。 指定屬性的完整名稱，例如 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`。<br/><br/>如果您排除 <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 屬性，則會從程式碼涵蓋範圍分析中排除使用語言功能 (例如 `async`、`await`、`yield return`) 和自動實作屬性的程式碼。 若要排除真正產生的程式碼，只要排除 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性即可。 |
-| 功能 | 依照完整限定名稱（包括參數清單）來比對程式、函式或方法。 您也可以使用[正則運算式](#regular-expressions)來比對部分的名稱。<br/><br/>例如：<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` （C++） |
+| 函數 | 依照完整限定名稱（包括參數清單）來比對程式、函式或方法。 您也可以使用[正則運算式](#regular-expressions)來比對部分的名稱。<br/><br/>範例：<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` （C++） |
 
 ### <a name="regular-expressions"></a>規則運算式
 
-包含和排除節點使用與萬用字元不同的規則運算式。 所有相符項目皆不區分大小寫。 一些範例如下：
+包含和排除節點使用與萬用字元不同的規則運算式。 所有相符項目皆不區分大小寫。 以下列出一些範例：
 
 - **.\*** 會比對任何字元的字串
 

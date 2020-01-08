@@ -4,24 +4,24 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61f69163e4458c62b9f114eca72c954a2317076b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9ac9fb023797db98f3b83aa4da7b92e71f0e71e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652372"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590614"
 ---
 # <a name="access-models-from-text-templates"></a>從文字模板存取模型
 
 藉由使用文字模板，您可以建立以特定領域語言模型為基礎的報表檔案、原始程式碼檔案和其他文字檔。 如需文字模板的基本資訊，請參閱程式[代碼產生和 T4 文字模板](../modeling/code-generation-and-t4-text-templates.md)。 當您要對 DSL 進行偵錯工具時，文字模板會在實驗模式下工作，而且也會在您已部署 DSL 的電腦上工作。
 
 > [!NOTE]
-> 當您建立 DSL 方案時，會在調試專案中產生範例文字模板 **\* tt**檔案。 當您變更網域類別的名稱時，這些範本將無法再使用。 不過，它們包含您所需的基本指示詞，並提供可更新以符合 DSL 的範例。
+> 當您建立 DSL 方案時，會在調試專案中產生範例文字模板 **\*tt**檔案。 當您變更網域類別的名稱時，這些範本將無法再使用。 不過，它們包含您所需的基本指示詞，並提供可更新以符合 DSL 的範例。
 
  若要從文字模板存取模型：
 
@@ -89,7 +89,7 @@ Here is a list of elements in the model:
 
  請注意：
 
-1. @No__t_0 和 `validation` 參數是以 ";" 分隔，而且不能有任何其他分隔符號或空格。
+1. `filename` 和 `validation` 參數是以 ";" 分隔，而且不能有任何其他分隔符號或空格。
 
 2. 驗證分類清單會決定要執行的驗證方法。 多個類別應以 "&#124;" 分隔，而且不能有其他分隔符號或空格。
 
@@ -138,7 +138,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>動態載入模型
  如果您想要在執行時間決定要載入的模型，您可以在程式碼中以動態方式載入模型檔案，而不是使用 DSL 特定的指示詞。
 
- 不過，DSL 特定指示詞的其中一個功能是匯入 DSL 命名空間，讓範本程式碼可以使用該 DSL 中定義的網域類別。 因為您不使用指示詞，所以您必須為所有可能載入的模型加入 **\<assembly >** 和 **\<import >** 指示詞。 如果您可能載入的不同模型都是相同 DSL 的所有實例，這就很簡單。
+ 不過，DSL 特定指示詞的其中一個功能是匯入 DSL 命名空間，讓範本程式碼可以使用該 DSL 中定義的網域類別。 因為您不使用指示詞，所以您必須為您可能載入的所有模型，加入 **\<元件 >** 和 **\<匯入 >** 指示詞。 如果您可能載入的不同模型都是相同 DSL 的所有實例，這就很簡單。
 
  若要載入檔案，最有效的方法是使用 Visual Studio ModelBus。 在典型的案例中，您的文字模板會使用 DSL 特定的指示詞，以一般方式載入第一個模型。 該模型會包含另一個模型的 ModelBus 參考。 您可以使用 ModelBus 來開啟參考的模型，並存取特定的元素。 如需詳細資訊，請參閱[在文字模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WCF services
 - WCF services, walkthrough
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e2954d333ae3fe0dc6ff1c221d1e450eb9bf51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d3f2e80ff3e2b94c46d1e2658c40bccf2e6c365
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639463"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586012"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>逐步解說：在 Windows Forms 中建立簡單的 WCF 服務
 
@@ -35,7 +35,7 @@ ms.locfileid: "72639463"
 
 ::: moniker range="vs-2017"
 
-2. 在 [檔案] 功能表上，依序選擇 [新增]和 [專案] >。
+2. 在 [檔案 **] 功能表上，選擇 [** **新增**] [>**專案**]。
 
 3. 在 **新增專案** 對話方塊中，展開  **Visual Basic**或 **C#視覺效果**節點，然後依序選擇  **wcf** 和  **wcf 服務程式庫**。
 
@@ -67,7 +67,7 @@ ms.locfileid: "72639463"
 
    ![IService1 檔案](../data-tools/media/wcf2.png)
 
-   尋找下列程式程式碼：
+   找出下列這一行：
 
    [!code-csharp[WCFWalkthrough#4](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.cs)]
    [!code-vb[WCFWalkthrough#4](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.vb)]
@@ -83,7 +83,7 @@ ms.locfileid: "72639463"
 
    ![Service1 檔案](../data-tools/media/wcf3.png)
 
-   尋找下列程式程式碼：
+   找出下列這一行：
 
    [!code-vb[WCFWalkthrough#5](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.vb)]
    [!code-csharp[WCFWalkthrough#5](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.cs)]

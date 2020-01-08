@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reserved properties
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bd54e97535c281d50119fdc7aa759d0704fa9e1
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 1ab4c18006834cc1bef6841864e42609e09bc3a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491555"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585830"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild 保留和已知屬性
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供一組預先定義的屬性，用來儲存專案檔和 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 二進位檔的相關資訊。 這些屬性的評估方式與其他 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 屬性相同。 例如，若要使用 `MSBuildProjectFile` 屬性，請輸入 `$(MSBuildProjectFile)`。

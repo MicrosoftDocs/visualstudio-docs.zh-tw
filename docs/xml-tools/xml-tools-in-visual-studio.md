@@ -27,17 +27,17 @@ helpviewer_keywords:
 - XSL, style sheets
 - XMLDataDocument class
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9412d89ee7d9ad1412f0eaf9fe9341e336a65e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 87a5f069d5255a744e256bc9f7d1b48a135e85d8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668713"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592304"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具
 
