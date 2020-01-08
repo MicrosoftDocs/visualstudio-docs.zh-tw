@@ -19,7 +19,7 @@ ms.locfileid: "72668734"
 
 XML 編輯器提供位於 *%VSInstallDir%\xml\Schemas* 目錄中的架構快取。 架構快取對於您電腦上的所有使用者都是通用的，而且包含用於 IntelliSense 和 XML 檔驗證的標準 XML 架構。
 
-XML 編輯器也可以尋找位於方案中的結構描述，檔案**[屬性]** 視窗的 **[結構描述]** 欄位中所指定的架構，以及 `xsi:schemaLocation` 和 `xsi:noNamespaceSchemaLocation` 屬性所識別的架構。
+XML 編輯器也可以尋找位於方案中的結構描述、文件 [屬性] 視窗之 [結構描述] 欄位中所指定的結構描述，以及 `xsi:schemaLocation` 和 `xsi:noNamespaceSchemaLocation` 屬性所識別的結構描述。
 
 下表描述使用 XML 編輯器安裝的架構。
 
