@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573593"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
-加入程式碼片段做為 `IScriptNode` 的子實例。  
+加入程式碼片段做為 `IScriptNode`的子實例。  
   
 ## <a name="syntax"></a>語法  
   
@@ -49,10 +49,10 @@ HRESULT CreateChildHandler(
  在要與程式碼片段建立關聯的預設名稱位址。  
   
  `prgpszNames`  
- [in，size_is （`cpszNames`）]主機上完整名稱的識別碼清單。  
+ [in、size_is （`cpszNames`）]主機上完整名稱的識別碼清單。  
   
  `cpszNames`  
- 在@No__t_0 參數中的識別碼數目。  
+ 在`prgpszNames` 參數中的識別碼數目。  
   
  `pszEvent`  
  在識別與程式碼片段相關聯之事件名稱的緩衝區位址。  
@@ -68,7 +68,7 @@ HRESULT CreateChildHandler(
  在函式物件的類型資訊。  
   
  `iMethodSignature`  
- 在@No__t_0 參數中的函式索引。  
+ 在`ITypeInfo``ptiSignature` 參數中的函式索引。  
   
  `isn`  
  在父系中子系的索引。  
@@ -89,6 +89,6 @@ HRESULT CreateChildHandler(
 ## <a name="remarks"></a>備註  
  程式碼片段會指定事件處理常式。 這個方法會建立程式碼片段（如果它是由代表網頁的 `IScriptNode` 物件所呼叫）。 如果其他介面呼叫這個方法，則不會成功。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IScriptNode 介面](../../winscript/reference/iscriptnode-interface.md)   
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)

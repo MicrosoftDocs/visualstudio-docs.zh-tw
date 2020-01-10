@@ -11,17 +11,17 @@ helpviewer_keywords:
 - FindInList task [MSBuild]
 - MSBuild, FindInList task
 ms.assetid: d49b9f84-52a2-4242-9269-b741a7a7e9f7
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c2f6c5f14f6eff818a265e097f02e2bc76c7372
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 650683c047f7df6422e25ef5b23201a2660b3125
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996661"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591121"
 ---
 # <a name="findinlist-task"></a>FindInList 工作
 在指定的清單中，尋找擁有相符 itemspec 的項目。
@@ -29,7 +29,7 @@ ms.locfileid: "62996661"
 ## <a name="parameters"></a>參數
  下表描述 [FindInList 工作](../msbuild/findinlist-task.md)的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`CaseSensitive`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，搜尋會區分大小寫；否則不區分大小寫。 預設值為 `true`。|
 |`FindLastMatch`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，則傳回最後一個相符項目；否則傳回第一個相符項目。 預設值為 `false`。|
@@ -41,6 +41,6 @@ ms.locfileid: "62996661"
 ## <a name="remarks"></a>備註
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

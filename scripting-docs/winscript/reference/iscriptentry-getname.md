@@ -37,7 +37,7 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>參數  
  `pbstr`  
- 脫銷@No__t_0 腳本區塊所表示的物件名稱。 如果專案不代表單一物件，則會傳回 Null。  
+ 脫銷`IScriptEntry` 腳本區塊所表示的物件名稱。 如果專案不代表單一物件，則會傳回 Null。  
   
  子專案代表單一函式物件。  
   
@@ -50,6 +50,6 @@ HRESULT GetName(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b02b1e5bac7f39bcabb9cdc9b5c3acabe169827b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8de964bebb59507da06bb4444ffd6067ffc43b63
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655079"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299351"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,10 +42,10 @@ Visual Studio 模型化和視覺化 SDK （VMSDK）提供數個層級，您可�
 |不同類別的模型專案在圖表上看起來類似，共用屬性，例如初始高度和寬度、色彩、工具提示。|使用圖形或連接器類別之間的繼承。 衍生的圖形與衍生的網域類別之間的對應會繼承父代的對應詳細資料。<br /><br /> 或者，將不同的網域類別對應至相同的 shape 類別。|
 |模型專案的類別是由不同的圖形內容所顯示。|將一個以上的圖形類別對應至相同的網域類別。 當您建立方案時，請遵循錯誤報表，並提供要求的程式碼來決定要使用哪一個圖形。|
 |圖形色彩或其他功能（例如字型）表示目前狀態。|請參閱[更新圖形和連接器以反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)。<br /><br /> 建立可更新已公開屬性的規則。 請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。<br /><br /> 或者，使用 OnAssociatedPropertyChanged （）來更新未公開的功能，例如連結箭號或字型。|
-|圖形上的圖示會變更以指出狀態。|在 [DSL 詳細資料] 視窗中設定裝飾專案對應的可見度。 在相同位置上找出數個影像裝飾專案。 請參閱[更新圖形和連接器以反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)。<br /><br /> 或者，覆寫 `ImageField.GetDisplayImage()`。 請參閱 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField> 中的範例。|
+|圖形上的圖示會變更以指出狀態。|在 [DSL 詳細資料] 視窗中設定裝飾專案對應的可見度。 在相同位置上找出數個影像裝飾專案。 請參閱[更新圖形和連接器以反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)。<br /><br /> 或者，覆寫 `ImageField.GetDisplayImage()`。 請參閱 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>中的範例。|
 |在任何圖形上設定背景影像|覆寫 InitializeInstanceResources （）以加入錨定的 ImageField。 請參閱[自訂圖表上的呈現](../modeling/customizing-presentation-on-the-diagram.md)。|
 |將圖形嵌套到任何深度|設定遞迴內嵌樹狀結構。 定義 BoundsRules 以包含圖形。 請參閱[自訂圖表上的呈現](../modeling/customizing-presentation-on-the-diagram.md)。|
-|在專案界限上的固定點附加連接器。|定義內嵌的終端機元素，以圖表上的小型埠表示。 使用 BoundsRules 來就地修正埠。 請參閱[視覺效果和模型化 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)中的線路圖表範例。|
+|在專案界限上的固定點附加連接器。|定義內嵌的終端機元素，以圖表上的小型埠表示。 使用 BoundsRules 來就地修正埠。 請參閱[視覺效果和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=186128)中的線路圖表範例。|
 |文字欄位：顯示衍生自其他值的值。|將文字裝飾專案對應至計算或自訂的儲存網域屬性。 如需詳細資訊，請參閱[計算和自訂儲存體屬性](../modeling/calculated-and-custom-storage-properties.md)。|
 |在模型專案之間或在圖形之間傳播變更|請參閱[以特定領域語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。|
 |將變更傳播至存放區以外的資源，例如其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組。|請參閱[事件處理常式會將變更傳播到模型外部](../modeling/event-handlers-propagate-changes-outside-the-model.md)。|
@@ -74,5 +74,5 @@ Visual Studio 模型化和視覺化 SDK （VMSDK）提供數個層級，您可�
 |允許協力廠商擴充您的 DSL，並控制延伸模組。|[使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [使用 DSL 程式庫共用 DSL 之間的類別](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [定義鎖定原則來建立唯讀區段](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
 |||
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)[撰寫程式碼，以](../modeling/writing-code-to-customise-a-domain-specific-language.md)[針對 Visual Studio 網域特定語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)的特定領域語言模型化 SDK

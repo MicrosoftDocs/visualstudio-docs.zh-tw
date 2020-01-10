@@ -10,24 +10,25 @@ ms.assetid: 01011eec-5930-43b3-980d-2cb01e2ca7f6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5499ff9451d3068cdef0e32dee45a6f6c7f63c71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 87e7c6b2d94602eca9e81098bb50bd0330b2bcd9
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425482"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779385"
 ---
-# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017：高比率的使用中記憶體分頁到磁碟
+# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017：作用中的記憶體分頁至磁碟的比率很高
 
 |||
 |-|-|
-|規則 ID|DA0017|
-|分類|記憶體和分頁|
+|規則識別碼|DA0017|
+|Category|記憶體和分頁|
 |程式碼剖析方法|全部|
 |訊息|發生高比率的使用中記憶體分頁到磁碟。 您的應用程式可能是記憶體繫結。|
-|規則型別|資訊|
+|規則類型|資訊|
 
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。
 
@@ -37,7 +38,7 @@ ms.locfileid: "63425482"
 ## <a name="rule-description"></a>規則描述
 
 > [!NOTE]
-> 當使用中記憶體的分頁程度達到很高的量時，就會引發這個資訊性規則。 在發生極高的分頁程度時，就會引發警告規則 [DA0014：極高比率的使用中記憶體分頁到磁碟](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)。
+> 當使用中記憶體的分頁程度達到很高的量時，就會引發這個資訊性規則。 在發生極高的分頁程度時，則會引發警告規則 [DA0014︰極高比率的使用中記憶體分頁到磁碟](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)。
 
  過度分頁至磁碟可能是因為實體記憶體不足。 如果分頁作業控制使用分頁檔案所在的實體磁碟，則可能降低相同磁碟上其他應用程式導向之磁碟作業的速度。
 

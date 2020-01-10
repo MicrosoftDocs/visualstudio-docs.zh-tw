@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e38e89ee5572f5ba552f3b6807a3edab5012a727
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 14911cda4cfc2be5fece6005a879427c10529bbc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669596"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298915"
 ---
 # <a name="install-a-uml-profile"></a>安裝 UML 設定檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "72669596"
 
  如果您收到已使用設定檔建立的 UML 模型，則除非您安裝相同的設定檔，否則不會顯示一些屬性。
 
- 設定檔分散在 Visual Studio 延伸模組內。 延伸模組也可能包含其他功能 (例如功能表命令)。 如需詳細資訊，請參閱[管理 Visual Studio 延伸](http://go.microsoft.com/fwlink/?LinkId=160728)模組。
+ 設定檔分散在 Visual Studio 延伸模組內。 延伸模組也可能包含其他功能 (例如功能表命令)。 如需詳細資訊，請參閱[管理 Visual Studio 延伸](https://go.microsoft.com/fwlink/?LinkId=160728)模組。
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>在電腦上安裝 UML 設定檔
 
@@ -45,5 +45,5 @@ ms.locfileid: "72669596"
 
 2. 按一下您要移除的延伸模組，然後按一下 [**停**用] 或 [**卸載**]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用設定檔和造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)[定義要擴充 UML 的設定檔](../modeling/define-a-profile-to-extend-uml.md)

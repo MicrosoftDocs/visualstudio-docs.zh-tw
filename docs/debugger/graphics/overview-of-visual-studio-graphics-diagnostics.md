@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae62a380e4e0feb23a901a4fc6a2628fcd8c6a0c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734930"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187923"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷概觀
 Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應用程式中的轉譯和效能問題。 圖形診斷可以在 Windows 電腦或遠端電腦或裝置上本機執行的應用程式上使用。
@@ -52,7 +52,7 @@ Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應�
 ### <a name="gpu-usage"></a>GPU 使用量
  圖形診斷也可以分析 Direct3D 應用程式的效能。 因為記錄圖形事件詳細資料會扭曲程式碼分析資料，所以這與擷取圖形分析器要檢查的畫面格不同。
 
- 如需詳細資訊，請參閱 [GPU 使用量](/visualstudio/profiling/gpu-usage)。
+ 如需詳細資訊，請參閱 [GPU 使用量](../../profiling/gpu-usage.md)。
 
 ### <a name="directx-control-panel"></a>DirectX 控制台
  DirectX 控制台是可以用來變更 DirectX 行為的 DirectX 元件。例如，您可以啟用 DirectX 執行階段元件的偵錯版本，選取要報告的偵錯訊息種類和禁止某些圖形硬體功能去模擬功能很少的硬體。 這個 DirectX 控制層級可以協助您偵錯及測試 DirectX 應用程式。 您可以從 Visual Studio 存取 DirectX 控制台。

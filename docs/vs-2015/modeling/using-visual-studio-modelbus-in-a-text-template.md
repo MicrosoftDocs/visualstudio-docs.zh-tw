@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9fba077637103a0447f2cbc4393cb30916b6eef4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0d18103d2990b2734e4db1d1e7dc4261e08e7a7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659394"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301362"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>使用文字範本中的 Visual Studio ModelBus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "72659394"
 
 1. 如果目標 DSL 解決方案沒有**ModelBusAdapter**專案，請使用 Modelbus 延伸模組 wizard 建立一個：
 
-    1. 下載並安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 擴充功能（如果您尚未這麼做）。 如需詳細資訊，請參閱[視覺效果和模型化 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+    1. 下載並安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 擴充功能（如果您尚未這麼做）。 如需詳細資訊，請參閱[視覺效果和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=185579)。
 
     2. 開啟 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [**啟用 Modelbus**]。
 
@@ -150,7 +150,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 ```
 
- 執行此文字模板時，`SourceDsl` 指示詞會將檔案載入 `Sample.source`。 從 `this.ModelRoot` 開始，此範本可以存取該模型的元素。 程式碼可以使用該 DSL 的網域類別和屬性。
+ 執行此文字模板時，`SourceDsl` 指示詞會將檔案載入 `Sample.source`。 從 `this.ModelRoot`開始，此範本可以存取該模型的元素。 程式碼可以使用該 DSL 的網域類別和屬性。
 
  此外，此範本也可以解析 ModelBus 參考。 當參考指向目標模型時，元件指示詞可讓程式碼使用該模型 DSL 的網域類別和屬性。
 
@@ -184,7 +184,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. 在 DSL 定義圖中，以滑鼠右鍵按一下圖表的空白部分，而不在頂端附近，然後按一下 [**啟用 Modelbus**]。
 
-   - 如果您看不到 [**啟用 Modelbus**]，則必須下載並安裝 VMSDK Modelbus 擴充功能。 請在 VMSDK 網站上找到它：[視覺效果和模型化 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+   - 如果您看不到 [**啟用 Modelbus**]，則必須下載並安裝 VMSDK Modelbus 擴充功能。 請在 VMSDK 網站上找到它：[視覺效果和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=185579)。
 
 3. 在 [**啟用 Modelbus** ] 對話方塊中，選取 [將**此 DSL 公開給 Modelbus**]，然後按一下 **[確定]** 。
 
@@ -210,7 +210,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 5. 在 `DslPackage` 專案中，將專案參考新增至 `T4ModelBusAdapter`。
 
-6. 在 DslPackage\source.extension.tt 中，將下面這一行新增到 `<Content>` 底下。
+6. 在 DslPackage\source.extension.tt 中，將下面這一行新增到 `<Content>`底下。
 
     `<MefComponent>|T4ModelBusAdapter|</MefComponent>`
 
@@ -270,7 +270,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 3. 在 DSL 定義圖中，以滑鼠右鍵按一下圖表，然後按一下 [**啟用 ModelBus**]。 在對話方塊中，選取 [**啟用此 DSL 以使用 ModelBus**]。
 
-4. 在類別 `ExampleElement` 中，加入新的網域屬性 `MBR`，然後在屬性視窗中，將其類型設定為 [`ModelBusReference`]。
+4. 在類別 `ExampleElement`中，加入新的網域屬性 `MBR`，然後在屬性視窗中，將其類型設定為 [`ModelBusReference`]。
 
 5. 以滑鼠右鍵按一下圖表上的網域屬性，然後按一下 [**編輯 ModelBusReference 特定屬性**]。 在對話方塊中，選取**模型元素**。
 
@@ -288,13 +288,13 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 #### <a name="create-a-modelbus-reference-to-another-file-in-the-solution"></a>在方案中建立另一個檔案的 ModelBus 參考
 
-1. 在 MBConsumer 方案中，按下 CTRL + F5。 @No__t_0 的實驗實例會在**MBConsumer\Debugging**專案中開啟。
+1. 在 MBConsumer 方案中，按下 CTRL + F5。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗實例會在**MBConsumer\Debugging**專案中開啟。
 
 2. 新增範例的複本。提供給**MBConsumer\Debugging**專案。 這是必要的，因為 ModelBus 參考必須參考同一個方案中的檔案。
 
    1. 以滑鼠右鍵按一下 [調試] 專案，指向 [**加入**]，然後按一下 [**現有專案**]。
 
-   2. 在 [**新增專案**] 對話方塊中，將篩選準則設定為 [所有檔案] **（\*. \*）** 。
+   2. 在 [**新增專案**] 對話方塊中，將篩選準則設定為 [所有檔案] **（\*.\*）** 。
 
    3. 流覽至 `MBProvider\Debugging\Sample.provide`，然後按一下 [**新增**]。
 
@@ -304,13 +304,13 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 5. 儲存檔案。
 
-    （尚未關閉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗實例。）
+    （尚未關閉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗實例。）
 
    您已建立一個模型，其中包含另一個模型中專案的 ModelBus 參考。
 
 #### <a name="resolve-a-modelbus-reference-in-a-text-template"></a>解析文字模板中的 ModelBus 參考
 
-1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗實例中，開啟範例文字模板檔案。 設定其內容，如下所示。
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗實例中，開啟範例文字模板檔案。 設定其內容，如下所示。
 
     ```
     <#@ template debug="true" hostspecific="true" language="C#"
@@ -366,7 +366,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 #### <a name="resolve-a-modelbus-reference-in-a-gesture-handler"></a>解析手勢處理常式中的 ModelBus 參考
 
-1. 如果正在執行，請關閉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗實例。
+1. 如果正在執行，請關閉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗實例。
 
 2. 新增名為 MBConsumer\Dsl\Custom.cs 的檔案，並將其內容設定如下。
 
@@ -401,13 +401,13 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     ```
 
-3. 按下 CTRL+F5。
+3. 按 CTRL+F5 鍵。
 
-4. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗實例中，開啟 `Debugging\Sample.consume`。
+4. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗實例中，開啟 `Debugging\Sample.consume`。
 
 5. 按兩下一個圖形。
 
      如果您已在該元素上設定 MBR，則會開啟參考的模型，並選取所參考的元素。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用 Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)程式[代碼產生和 T4 文字模板](../modeling/code-generation-and-t4-text-templates.md)來整合模型

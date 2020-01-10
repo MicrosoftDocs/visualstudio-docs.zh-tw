@@ -14,15 +14,15 @@ helpviewer_keywords:
 - protection
 description: 了解如何使用 Visual Studio 中免費的 Dotfuscator Community 保護您的 .NET 應用程式。
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
-author: Joe-Sewell-PreEmptive
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 18e2ee678e5cf71693d12d4ddeb6af51f55a870b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7db6a1d5e9b83e63c178b6881ed38fb655248f25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652431"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596823"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 

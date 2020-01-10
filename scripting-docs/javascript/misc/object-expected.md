@@ -24,7 +24,7 @@ ms.locfileid: "72573727"
 # <a name="object-expected"></a>必須是物件
 您嘗試對非 `Object` 類型的物件叫用方法或屬性，或在需要 `Object` 時傳遞非 `Object` 類型的引數。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 只能對 `Object` 類型的物件叫用方法或屬性。  
   
@@ -46,6 +46,6 @@ ms.locfileid: "72573727"
     }  
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [物件物件](../../javascript/reference/object-object-javascript.md)   
  [物件和陣列](../../javascript/objects-and-arrays-javascript.md)

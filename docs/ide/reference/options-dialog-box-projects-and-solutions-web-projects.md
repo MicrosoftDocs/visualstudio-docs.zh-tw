@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa4d5013aea15bec9b2d7c308836ef5e9d212a65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bae8a8679a3295f665a15cc6b088cc93aaababd9
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747865"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919195"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 
@@ -27,7 +27,7 @@ ms.locfileid: "72747865"
 
 **將 64 位元版本的 IIS Express 用於網站和專案**
 
-選取此選項會使用 IIS Express，而不使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [IIS Express 簡介](http://go.microsoft.com/?linkid=9747914)和 [IIS Express 概觀](http://go.microsoft.com/?linkid=9747915)。
+選取此選項會使用 IIS Express，而不使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [IIS Express 簡介](https://weblogs.asp.net/scottgu/introducing-iis-express)和 [IIS Express 概觀](/iis/extensions/introduction-to-iis-express/iis-express-overview)。
 
 **當錯誤清單中有錯誤時，在執行 Web 應用程式前提出警告**
 

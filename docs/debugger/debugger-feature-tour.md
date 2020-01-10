@@ -1,9 +1,9 @@
 ---
 title: 偵錯工具簡介
 description: 使用 Visual Studio 偵錯工具開始偵錯應用程式
-ms.custom: seoapril2019
+ms.custom: ''
 ms.date: 04/08/2019
-ms.topic: quickstart
+ms.topic: tutorial
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06665aa6a30d67e27f654e92029dcbd3d2aea2ef
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 89debcfdeec2c9d363c6935bd2cfdd1ebf403f76
+ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72349739"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73599307"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio 偵錯工具初探
 
@@ -124,7 +124,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 如需有關使用功能和功能限制的詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。
 
-若要在偵錯工具期間修改 XAML 程式碼，請參閱[使用 Xaml 熱重載來撰寫和](xaml-hot-reload.md)偵測執行 xaml 程式碼。
+若要在偵錯工具期間修改 XAML 程式碼，請參閱[使用 Xaml 熱重載來撰寫和](../xaml-tools/xaml-hot-reload.md)偵測執行 xaml 程式碼。
 
 ## <a name="inspect-variables-with-data-tips"></a>使用資料提示來檢查變數
 

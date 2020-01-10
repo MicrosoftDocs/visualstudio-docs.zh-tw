@@ -12,17 +12,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0570dcc4b3cc79f2c882d5ddd4f10dc79a21332b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ab048fe69ca89086e9811e5277dccb86aeee6194
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664535"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300858"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何建立和套用資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體中 (稱為資源)。 樣式可讓您設定項目屬性，並重複使用這些設定，以確保多個項目有一致的外觀。 [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) 可以定義控制項的外觀，也可以當作資源來套用。 如需詳細資訊，請參閱[快速入門：設定控制項的樣式](http://go.microsoft.com/fwlink/?LinkID=248239)和[快速入門：控制項範本](http://go.microsoft.com/fwlink/?LinkID=247982)。
+XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體中 (稱為資源)。 樣式可讓您設定項目屬性，並重複使用這些設定，以確保多個項目有一致的外觀。 [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) 可以定義控制項的外觀，也可以當作資源來套用。 如需詳細資訊，請參閱[快速入門：設定控制項的樣式](https://go.microsoft.com/fwlink/?LinkID=248239)和[快速入門：控制項範本](https://go.microsoft.com/fwlink/?LinkID=247982)。
 
  每當您從現有的屬性 ([Style](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx) 或 `ControlTemplate`) 建立新資源時，[建立資源] 對話方塊都可讓您定義應用程式層級、文件層級或元素層級的資源。 這些層級會決定您可以使用資源的位置。 例如，如果您在項目層級定義資源，該資源只能套用至用來建立資源的項目。 您也可以選擇將資源儲存在資源字典中，資源字典是您可以在其他專案中重複使用的個別檔案。
 
@@ -54,7 +54,7 @@ XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體
 
 1. 在 [文件大綱] 視窗中，選擇您要套用資源的項目。
 
-2. 執行下列任一步驟：
+2. 請執行下列其中一項動作：
 
    - 將資源套用至屬性。 在 [屬性] 視窗中，選擇屬性值旁邊的屬性標記、選擇 [本機資源] 或 [系統資源]，然後從出現的清單中選擇可用的資源。
 
@@ -65,7 +65,7 @@ XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體
      > [!NOTE]
      > [編輯範本] 可用來套用控制項範本。 [編輯其他範本] 可用來套用其他範本類型。
 
-     資源可套用至任何相容位置。 例如，筆刷資源可以套用至 <xref:Windows.UI.Xaml.Controls.TextBox> 控制項的 **Foreground** 屬性。
+     資源可套用至任何相容位置。 例如，筆刷資源可以套用至 **控制項的**Foreground<xref:Windows.UI.Xaml.Controls.TextBox> 屬性。
 
 ### <a name="to-edit-a-resource"></a>編輯資源
 
@@ -75,5 +75,5 @@ XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體
 
 3. 修改資源的選項。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

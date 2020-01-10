@@ -1,21 +1,21 @@
 ---
-title: HOW TO：設定目標和工作 | Microsoft Docs
+title: 如何：設定目標和工作 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2f8f1bc76789ef80c1138efb94bda42442702c05
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946660"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596342"
 ---
-# <a name="how-to-configure-targets-and-tasks"></a>HOW TO：設定目標和工作
+# <a name="how-to-configure-targets-and-tasks"></a>如何：設定目標和工作
 不論開發電腦的環境是哪一種，您都可以將選取的 MSBuild 工作設定為在所針對的環境中執行。 例如，當您使用 64 位元電腦來建置以 32 位元架構為目標的應用程式時，就會在 32 位元處理程序中執行選取的工作。
 
 > [!NOTE]
@@ -107,5 +107,5 @@ MSBuild 會在執行工作之前，先檢查看看它是否是指定為在目前
 > [!NOTE]
 > 工作參數是在父節點的內容中評估，不是工作主機的內容。 執行階段或架構相依的環境變數 (例如「程式檔案」位置) 將評估為符合父節點的值。 不過，如果工作直接讀取相同的環境變數，它會正確地在工作主機的內容中進行評估。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [設定目標和工作](../msbuild/configuring-targets-and-tasks.md)

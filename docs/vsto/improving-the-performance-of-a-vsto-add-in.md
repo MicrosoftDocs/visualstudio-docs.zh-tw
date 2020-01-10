@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79f1c4a55321a1b039cc2702b1040e2ab9d4ac9d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: dd7b8f7b88040c7b80dcc6c40dc168a51890d8d2
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255634"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661844"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>改善 VSTO 增益集的效能
   最佳化您為 Office 應用程式建立的 VSTO 增益集，您可以提供使用者更好的體驗，讓他們快速地啟動、關閉、開啟項目及執行其他工作。 如果是 Outlook 適用的 VSTO 增益集，您還可以減少 VSTO 增益集因為效能不佳而停用的機率。 實作下列策略可以提升 VSTO 增益集的效能：
@@ -28,7 +28,7 @@ ms.locfileid: "71255634"
 
 - [在不同的執行緒中執行耗費資源的作業](#Perform)。
 
-  如需如何優化 Outlook VSTO 增益集的詳細資訊，請參閱[讓 VSTO 增益集保持啟用的效能準則](http://go.microsoft.com/fwlink/?LinkID=266503)。
+  如需如何優化 Outlook VSTO 增益集的詳細資訊，請參閱[讓 VSTO 增益集保持啟用的效能準則](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled)。
 
 ## <a name="Load"></a> 視需要載入 VSTO 增益集
  您可以設定只在下列情況下才載入 VSTO 增益集：
@@ -51,13 +51,13 @@ ms.locfileid: "71255634"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>設定 Windows Installer 方案視需要載入 VSTO 增益集
 
-1. 在登錄中，設定`LoadBehavior`項目 **_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _增益集 ID_** 機碼**0x10**。
+1. 在登錄中，將根 \Software\Microsoft\Office 的 `LoadBehavior` 專案 **\\_ApplicationName_\Addins\\_增益集識別碼_** 金鑰設定為**0x10**。
 
      如需詳細資訊，請參閱[VSTO 增益集的登錄專案](../vsto/registry-entries-for-vsto-add-ins.md)。
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>設定方案，在偵錯方案時視需要載入 VSTO 增益集
 
-1. 建立設定的指令碼`LoadBehavior`項目 **_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _增益集 ID_** 機碼**0x10**。
+1. 建立腳本，以將根 \Software\Microsoft\Office 的 `LoadBehavior` 專案 **\\_ApplicationName_\Addins\\_增益集識別碼_** 金鑰設定為**0x10**。
 
      下列程式碼顯示此指令碼範例。
 
@@ -79,9 +79,9 @@ ms.locfileid: "71255634"
 
     ```
 
-     如需如何在C#專案中建立建立後事件的詳細資訊，請[參閱如何：指定組建事件&#40;C&#35; &#41; ](../ide/how-to-specify-build-events-csharp.md)。
+     如需如何在C#專案中建立建立後事件的詳細資訊，請參閱[如何：指定組建事件&#40;C&#35;](../ide/how-to-specify-build-events-csharp.md)。
 
-     如需如何在 Visual Basic 專案中建立建立後事件的詳細資訊，請參閱[如何：指定組建事件&#40;Visual Basic&#41; ](../ide/how-to-specify-build-events-visual-basic.md)。
+     如需如何在 Visual Basic 專案中建立建立後事件的詳細資訊，請參閱[如何：指定組建&#40;事件 Visual Basic&#41;](../ide/how-to-specify-build-events-visual-basic.md)。
 
 ## <a name="Publish"></a>使用 Windows Installer 發行 Office 方案
  如果您使用 Windows Installer 發行方案，則當 VSTO 增益集載入時，Visual Studio 2010 Tools for Office runtime 會略過下列步驟。
@@ -98,9 +98,9 @@ ms.locfileid: "71255634"
   如需詳細資訊，請參閱[使用 Windows Installer 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。
 
 ## <a name="Bypass"></a>略過功能區反映
- 如果您使用[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]來建立解決方案，請確定您的使用者已在部署方案時，安裝最新版本的 Visual Studio 2010 Tools for Office runtime。 舊版的 VSTO 執行時間會反映到解決方案元件，以找出功能區自訂。 此程序會使得 VSTO 增益集載入的速度更加緩慢。
+ 如果您使用 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]建立解決方案，請確定您的使用者已在部署方案時，安裝最新版的 Visual Studio 2010 Tools for Office runtime。 舊版的 VSTO 執行時間會反映到解決方案元件，以找出功能區自訂。 此程序會使得 VSTO 增益集載入的速度更加緩慢。
 
- 或者，您可以避免任何版本的 Visual Studio 2010 Tools for Office runtime 使用反映來識別功能區自訂。 若要遵循此策略，請`CreateRibbonExtensibility`覆寫方法，並明確傳回功能區物件。 如果您的 VSTO 增益集未包含任何功能區自訂`null` ，則會傳回方法內的。
+ 或者，您可以避免任何版本的 Visual Studio 2010 Tools for Office runtime 使用反映來識別功能區自訂。 若要遵循此策略，請覆寫 `CreateRibbonExtensibility` 方法，並明確傳回功能區物件。 如果您的 VSTO 增益集未包含任何功能區自訂，則會在方法內傳回 `null`。
 
  下列範例會根據欄位的值傳回功能區物件。
 
@@ -113,7 +113,7 @@ ms.locfileid: "71255634"
 > [!NOTE]
 > 所有呼叫 Office 物件模型的程式碼，都必須在主執行緒中執行。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [需求-載入 VSTO 增益集](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)
 - [延遲-載入 Office 增益集中的 CLR](https://blogs.msdn.microsoft.com/andreww/2008/04/19/delay-loading-the-clr-in-office-add-ins/)

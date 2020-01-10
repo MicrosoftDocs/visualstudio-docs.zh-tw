@@ -8,14 +8,14 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 920dea4e81ca2ce0c562bb6d77582fd5e3753663
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 331dabfe8e219383fdc04187482b17b9048886a9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660575"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302579"
 ---
-# <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式化 UI 測試功能
+# <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式碼 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果您實作自動程式化 UI 測試架構的支援，就可以更輕鬆地測試您的控制項。 您可以用累加方式加入不斷增加的支援層級。 您可以從支援錄製和播放以及屬性驗證開始。 您可以依此為建置基礎，讓自動程式碼 UI 測試產生器能夠辨識控制項的自訂屬性，並提供自訂類別，以從產生的程式碼存取那些屬性。 您也可以協助自動程式化 UI 測試產生器，以較接近所錄製動作之意圖的方式來擷取動作。
@@ -519,7 +519,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 
 #### <a name="to-debug-your-property-provider-or-action-filter"></a>偵錯內容提供者或動作篩選
 
-1. 建置延伸模組套件的偵錯版本，將 .dll 和.pdb 檔案複製到 %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages。
+1. 建置擴充套件的偵錯版本，將 .dll 和.pdb 檔案複製到 %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages。
 
 2. 執行您的應用程式 (不在偵錯工具中)。
 
@@ -536,9 +536,9 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ## <a name="external-resources"></a>外部資源
 
 ### <a name="guidance"></a>指引
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:System.Windows.Forms.AccessibleObject>
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)

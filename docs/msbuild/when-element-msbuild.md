@@ -13,22 +13,22 @@ helpviewer_keywords:
 - <When> Element [MSBuild]
 - When Element [MSBuild]
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c94844e9860f1de9be92c1e23580e314ada367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 481be1f0e9c5444e56c95b13e938cda1d541af71
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777954"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566893"
 ---
 # <a name="when-element-msbuild"></a>When 元素 (MSBuild)
-指定 `Choose` 項目可能要選取的程式碼區塊。
+指定 `Choose` 元素的可能程式碼區塊以選取。
 
- \<Project> \<Choose> \<When> \<Choose> ...\<Otherwise> \<Choose> ...
+ \<專案 > \<當 \<> 選擇 \< 時，選擇 > > ... \<> 選擇 \<。
 
 ## <a name="syntax"></a>語法
 
@@ -45,21 +45,21 @@ ms.locfileid: "62777954"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |條件|必要屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|說明|
+|項目|描述|
 |-------------|-----------------|
-|[Choose](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子元素，以選取要執行的一個程式碼區段。 `Choose` 項目中可能有零個或多個 `When` 項目。|
+|[Choose](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子元素，以選取要執行的一個程式碼區段。 `Choose` 元素中可能有零個或多個 `When` 元素。|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 元素。 `ItemGroup` 元素中可能有零個或多個 `When` 元素。|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 項目。 `When` 元素中可能有零個或多個 `PropertyGroup` 元素。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|說明|
+|項目|描述|
 |-------------|-----------------|
 |[Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)|評估子元素，以選取要執行的一個程式碼區段。|
 
@@ -116,6 +116,6 @@ ms.locfileid: "62777954"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [條件式建構](../msbuild/msbuild-conditional-constructs.md)
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

@@ -11,23 +11,23 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc954fe372ccd571151ab6ea09e9c1e3db96206a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5c9136b5047f835ecbf56df71bb226b5f56a6e19
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648765"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586948"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 
 您可以透過將資料繫結至 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 控制項，對應用程式的使用者顯示資料。 若要建立這些資料繫結控制項，您可以將專案從 [**資料來源**] 視窗拖曳至 Visual Studio 中的 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]。 本主題描述可用來建立資料繫結 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 應用程式的一些最常用工作、工具和類別。
 
-如需如何在 Visual Studio 中建立資料繫結控制項的一般資訊，請參閱將控制項系結[至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。 如需 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 資料繫結的詳細資訊，請參閱[資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)。
+如需如何在 Visual Studio 中建立資料繫結控制項的一般資訊，請參閱將控制項系結[至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。 如需 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 資料繫結的詳細資訊，請參閱[資料繫結概觀](/dotnet/desktop-wpf/data/data-binding-overview)。
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>將 WPF 控制項繫結至資料的工作
 
@@ -52,10 +52,10 @@ ms.locfileid: "72648765"
 
 | 資料來源 | 產生可將控制項繫結至資料來源的 XAML | 產生可將資料填入資料來源的程式碼 |
 | - | - | - |
-| 資料集 | [是] | [是] |
-| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | [是] | [是] |
-| 服務 | [是] | 否 |
-| Object | [是] | 否 |
+| 資料集 | 是 | 是 |
+| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | 是 | 是 |
+| 服務 | 是 | 否 |
+| 物件 | 是 | 否 |
 
 ### <a name="datasets"></a>資料集
 

@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573679"
 ---
 # <a name="string-expected"></a>必須是字串
-您嘗試在 `String` 以外之類型的物件上叫用**valueOf** **方法，而不是。** 這種調用類型的物件必須是 `String` 的類型。  
+您嘗試在 `String`以外之類型的物件上叫用**valueOf** **方法，而不是。** 這種調用類型的物件必須是 `String`的類型。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
-- 只會在 `String` 類型的物件上叫用**valueOf** **方法。**  
+- 只會在 `String`類型的物件上叫用**valueOf** **方法。**  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [String 物件](../../javascript/reference/string-object-javascript.md)   
  [toString 方法 (Object)](../../javascript/reference/tostring-method-object-javascript.md)

@@ -50,6 +50,6 @@ HRESULT RemoveNamedItem(
 ## <a name="remarks"></a>備註  
  [IActiveScript：： AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)是用來將 `NamedItem` 物件插入腳本撰寫引擎的命名空間。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)

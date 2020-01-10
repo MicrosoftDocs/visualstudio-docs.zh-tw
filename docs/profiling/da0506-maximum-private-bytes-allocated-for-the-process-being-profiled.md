@@ -10,39 +10,40 @@ ms.assetid: e9c43554-9a85-4d98-9fa4-3b19986e7b62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3ae6b45d910723f04cf8b828cbce62f8fdc1a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7600e65beb3035fac6d5ea58b25f6965d681f83a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935902"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779307"
 ---
-# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506：為所分析的處理序配置的最大私用位元組
+# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506：為進行程式碼剖析的處理序所配置的最大私用位元組
 
 |||
 |-|-|
-|規則 ID|DA0506|
-|分類|資源監視|
+|規則識別碼|DA0506|
+|Category|資源監視|
 |程式碼剖析方法|全部|
 |訊息|收集此資訊僅供參考之用。 Process Private Bytes 計數器會測量所分析的處理序配置的虛擬記憶體。 報告的值是所有測量間隔所觀察到最大值。|
-|規則型別|資訊|
+|規則類型|資訊|
 
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。
 
 ## <a name="rule-description"></a>規則描述
  此訊息報告處理序目前已配置的虛擬記憶體最大數量，以位元組 (私用位元組) 為單位。 私用位元組表示只能由處理序內執行的執行緒存取的處理序所配置的虛擬記憶體位置。
 
- 對於在 32 位元電腦上執行的 32 位元處理序，處理序位址空間之私用部分的上限是 2 GB。 使用 [/3 GB](http://go.microsoft.com/fwlink/?LinkId=177831) Boot.ini 參數，32 位元處理序就可以取得最大 3 GB 的虛擬記憶體。 在 64 位元電腦上執行的 32 位元處理序可以取得高達 4 GB 的私用虛擬記憶體。
+ 對於在 32 位元電腦上執行的 32 位元處理序，處理序位址空間之私用部分的上限是 2 GB。 使用 [/3 GB](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) Boot.ini 參數，32 位元處理序就可以取得最大 3 GB 的虛擬記憶體。 在 64 位元電腦上執行的 32 位元處理序可以取得高達 4 GB 的私用虛擬記憶體。
 
  在 64 位元電腦上執行的 64 位元處理序可以取得高達 8 TB 的私用虛擬記憶體。
 
  報告的值是所分析的處理序作用中之所有測量間隔的最大值。
 
- 如需處理序位址空間的詳細資訊，請參閱《Windows 記憶體管理》文件中的[虛擬位址空間 (英文)](http://go.microsoft.com/fwlink/?LinkId=177832) 。
+ 如需處理序位址空間的詳細資訊，請參閱《Windows 記憶體管理》文件中的[虛擬位址空間 (英文)](/windows/win32/memory/virtual-address-space) 。
 
 ## <a name="how-to-use-rule-data"></a>如何使用規則資料
  使用報告的值可比較程式不同版本或組建的效能，或了解不同分析情節中的應用程式效能。
 
- 處理序私用位元組的最大值，如果接近處理序位址空間可以成長到多大的架構限制，可能會導致記憶體不足的例外狀況。 如需詳細資訊，請參閱 MSDN Magazine 中的[調查記憶體問題 (英文)](http://go.microsoft.com/fwlink/?LinkID=177833)。
+ 處理序私用位元組的最大值，如果接近處理序位址空間可以成長到多大的架構限制，可能會導致記憶體不足的例外狀況。 如需詳細資訊，請參閱 MSDN Magazine 中的[調查記憶體問題 (英文)](https://msdn.microsoft.com/magazine/cc163528.aspx)。

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - updating datasets, errors
 - concurrency control, walkthroughs
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6096e8919d21a93af0dbf6beea2f263bd500d26c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 462d0a9beb88a8fb6d73bf0672bb012c75b8ea93
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648435"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586597"
 ---
 # <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
 
@@ -45,7 +45,7 @@ ms.locfileid: "72648435"
 
 7. 攔截錯誤，然後顯示記錄的不同版本，讓使用者判斷是否要繼續並更新資料庫，或取消更新。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -67,7 +67,7 @@ ms.locfileid: "72648435"
 
 一開始先建立新的 Windows Forms 應用程式：
 
-1. **在 Visual Studio 的 [檔案**] 功能表上，選取 [**新增** > **專案**]。
+1. 在 Visual Studio 中，於 [檔案] 功能表上選取 [新增] > [專案]。
 
 2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
@@ -112,7 +112,7 @@ ms.locfileid: "72648435"
 
 4. 將資料表拖曳至表單的空白區域。
 
-     名為**CustomersDataGridView**的 <xref:System.Windows.Forms.DataGridView> 控制項和名為**CustomersBindingNavigator**的 <xref:System.Windows.Forms.BindingNavigator> 會加入至系結至 <xref:System.Windows.Forms.BindingSource> 的表單。 這會接著系結至 NorthwindDataSet 中的 Customers 資料表。
+     名為**CustomersDataGridView**的 <xref:System.Windows.Forms.DataGridView> 控制項和名為**CustomersBindingNavigator**的 <xref:System.Windows.Forms.BindingNavigator> 會加入至系結至 <xref:System.Windows.Forms.BindingSource>的表單。 這會接著系結至 NorthwindDataSet 中的 Customers 資料表。
 
 ## <a name="test-the-form"></a>測試表單
 
@@ -122,7 +122,7 @@ ms.locfileid: "72648435"
 
      表單隨即出現，其中會顯示 [Customers] 資料表中的資料，其中會填入 [<xref:System.Windows.Forms.DataGridView>] 控制項。
 
-2. 在 [**調試**] 功能表上，選取 [**停止調試**]。
+2. 在 [偵錯] 功能表上，選取 [停止偵錯]。
 
 ## <a name="handle-concurrency-errors"></a>處理並行錯誤
 
@@ -153,7 +153,7 @@ ms.locfileid: "72648435"
 當您嘗試執行更新並引發例外狀況時，通常會想要利用引發的例外狀況所提供的資訊來執行某個動作。 在本節中，您會新增嘗試更新資料庫的程式碼。 您也會處理任何可能引發的 <xref:System.Data.DBConcurrencyException>，以及任何其他例外狀況。
 
 > [!NOTE]
-> @No__t_0 和 `ProcessDialogResults` 方法稍後會在逐步解說中新增。
+> `CreateMessage` 和 `ProcessDialogResults` 方法稍後會在逐步解說中新增。
 
 1. 在 `Form1_Load` 方法底下新增下列程式碼：
 
@@ -191,7 +191,7 @@ ms.locfileid: "72648435"
 
 2. 表單出現後，讓它保持執行並切換至 Visual Studio IDE。
 
-3. 在 [ **View** ] 功能表上，選擇 [**伺服器總管**]。
+3. 在 [檢視] 功能表上，選擇 [伺服器總管]。
 
 4. 在**伺服器總管**中，展開您的應用程式正在使用的連線，然後展開 [**資料表]** 節點。
 

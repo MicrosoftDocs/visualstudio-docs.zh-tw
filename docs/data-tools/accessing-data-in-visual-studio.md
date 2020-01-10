@@ -2,24 +2,22 @@
 title: 資料存取和工具
 ms.date: 11/04/2016
 ms.topic: conceptual
-f1_keywords:
-- "80025080"
 helpviewer_keywords:
 - data [Visual Studio]
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 07c7c9db37a951b689e28e87a02c7f41a667685b
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4087541b11b240f455dc6c0109ef44c0cb8d72ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807057"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587091"
 ---
 # <a name="access-data-in-visual-studio"></a>使用 Visual Studio 存取資料
 
@@ -67,18 +65,18 @@ ms.locfileid: "72807057"
 
 ::: moniker range="vs-2017"
 
-許多資料庫廠商和協力廠商都支援 NuGet 套件的 Visual Studio 整合。 您可以在 nuget.org 上探索供應專案，或透過 Visual Studio 中的 NuGet 套件管理員（**工具** > **nuget 套件管理員** > **管理解決方案的 nuget 套件**）。 其他資料庫產品會與 Visual Studio 整合做為擴充功能。 您可以在[Visual Studio Marketplace](https://marketplace.visualstudio.com/)或流覽至 [**工具**]  >  [擴充功能**和更新**]，然後在對話方塊的左窗格中選取 [**線上**]，以流覽這些供應專案。 如需詳細資訊，請參閱[適用于 Visual Studio 的相容資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
+許多資料庫廠商和協力廠商都支援 NuGet 套件的 Visual Studio 整合。 您可以在 nuget.org 上探索供應專案，或透過 Visual Studio 中的 NuGet 套件管理員（**工具** > **nuget 套件管理員** > **管理解決方案的 nuget 套件**）。 其他資料庫產品會與 Visual Studio 整合做為擴充功能。 您可以在[Visual Studio Marketplace](https://marketplace.visualstudio.com/)或流覽至 [**工具**] > [擴充功能**和更新**]，然後在對話方塊的左窗格中選取 [**線上**]，以流覽這些供應專案。 如需詳細資訊，請參閱[適用于 Visual Studio 的相容資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-許多資料庫廠商和協力廠商都支援 NuGet 套件的 Visual Studio 整合。 您可以在 nuget.org 上探索供應專案，或透過 Visual Studio 中的 NuGet 套件管理員（**工具** > **nuget 套件管理員** > **管理解決方案的 nuget 套件**）。 其他資料庫產品會與 Visual Studio 整合做為擴充功能。 您可以在[Visual Studio Marketplace](https://marketplace.visualstudio.com/)或流覽至 [**擴充**功能]  >  [**管理延伸**模組]，然後在對話方塊的左窗格中選取 [**線上**]，以流覽這些供應專案。 如需詳細資訊，請參閱[適用于 Visual Studio 的相容資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
+許多資料庫廠商和協力廠商都支援 NuGet 套件的 Visual Studio 整合。 您可以在 nuget.org 上探索供應專案，或透過 Visual Studio 中的 NuGet 套件管理員（**工具** > **nuget 套件管理員** > **管理解決方案的 nuget 套件**）。 其他資料庫產品會與 Visual Studio 整合做為擴充功能。 您可以在[Visual Studio Marketplace](https://marketplace.visualstudio.com/)或流覽至 [**擴充**功能] > [**管理延伸**模組]，然後在對話方塊的左窗格中選取 [**線上**]，以流覽這些供應專案。 如需詳細資訊，請參閱[適用于 Visual Studio 的相容資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ::: moniker-end
 
 > [!NOTE]
-> SQL Server 2005 的延伸支援已于2016年4月12日結束。 不保證 Visual Studio 2015 和更新版本中的資料工具會繼續與 SQL Server 2005 搭配使用。 如需詳細資訊，請參閱[SQL Server 2005 的終止支援公告](https://www.microsoft.com/sql-server/sql-server-2005)。
+> SQL Server 2005 的延長支援已於 2016 年 4 月 12 日結束。 不保證 Visual Studio 2015 和更新版本中的資料工具會繼續與 SQL Server 2005 搭配使用。 如需詳細資訊，請參閱[SQL Server 2005 的終止支援公告](https://www.microsoft.com/sql-server/sql-server-2005)。
 
 ## <a name="net-languages"></a>.NET 語言
 
@@ -106,7 +104,7 @@ ms.locfileid: "72807057"
 
 [資料集](../data-tools/dataset-tools-in-visual-studio.md)這三種模型化技術中最舊的一種。 其設計主要是用於快速開發「資料的表單」應用程式，其中您不會處理大量資料，或執行複雜的查詢或轉換。 DataSet 物件是由 DataTable 和 DataRow 物件所組成，其邏輯上類似于 .NET 物件的 SQL database 物件。 對於以 SQL 資料來源為基礎的相對簡單應用程式，資料集可能仍然是不錯的選擇。
 
-不需要使用任何一種技術。 在某些情況下，尤其是效能非常重要的情況下，您可以直接使用 DataReader 物件從資料庫讀取，並將您需要的值複製到集合物件中，例如 List \<T >。
+不需要使用任何一種技術。 在某些情況下，尤其是效能非常重要的情況下，您可以直接使用 DataReader 物件從資料庫讀取，並將您需要的值複製到集合物件中，例如 List\<T >。
 
 ## <a name="native-c"></a>原生 C++
 
@@ -116,7 +114,7 @@ C++取用 rest 服務的程式可以使用[ C++ rest SDK](https://github.com/Mic
 
 C++使用 Microsoft Azure 儲存體的程式可以使用[Microsoft Azure 儲存體用戶端](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP)。
 
-@No__t_0Visual Studio 的資料模型化不會提供的 ORM C++層。 [ODB](https://www.codesynthesis.com/products/odb/)是受歡迎的開放原始碼 ORM C++。
+Visual Studio 的C++資料模型化&mdash;不會提供的 ORM 層。 [ODB](https://www.codesynthesis.com/products/odb/)是受歡迎的開放原始碼 ORM C++。
 
 若要深入瞭解如何從C++應用程式連線到資料庫，請參閱[Visual Studio C++data tools for ](../data-tools/visual-studio-data-tools-for-cpp.md)。 如需舊版視覺C++資料存取技術的詳細資訊，請參閱[資料存取](/cpp/data/data-access-in-cpp)。
 
@@ -134,24 +132,24 @@ C++使用 Microsoft Azure 儲存體的程式可以使用[Microsoft Azure 儲存�
 
 ## <a name="related-topics"></a>相關主題
 
-[MICROSOFT AI 平臺](https://azure.microsoft.com/overview/ai-platform/?v=17.42w)&mdash;Provides microsoft 智慧型雲端的簡介，包括 Cortana Analytics Suite 和物聯網的支援。
+[MICROSOFT AI 平臺](https://azure.microsoft.com/overview/ai-platform/?v=17.42w)&mdash;提供 microsoft 智慧型雲端的簡介，包括 Cortana Analytics Suite 和物聯網的支援。
 
-[Microsoft Azure 儲存體](/azure/storage/)&mdash;Describes Azure 儲存體，以及如何使用 Azure blob、資料表、佇列和檔案來建立應用程式。
+[Microsoft Azure 儲存體](/azure/storage/)&mdash;描述 Azure 儲存體，以及如何使用 Azure blob、資料表、佇列和檔案來建立應用程式。
 
-[Azure SQL Database](/azure/sql-database/) &mdash;Describes 如何連接到 Azure SQL Database，也就是關係資料庫即服務。
+[Azure SQL Database](/azure/sql-database/)&mdash;說明如何連接至 Azure SQL Database （關係資料庫即服務）。
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) &mdash;Describes 工具，可簡化資料連線應用程式和資料庫的設計、探索、測試和部署。
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)&mdash;描述可簡化資料連線應用程式和資料庫之設計、探索、測試和部署的工具。
 
-[ADO.NET](/dotnet/framework/data/adonet/index) &mdash;Describes ADO.NET 架構，以及如何使用 ADO.NET 類別來管理應用程式資料，以及與資料來源和 XML 互動。
+[ADO.NET](/dotnet/framework/data/adonet/index)&mdash;描述 ADO.NET 架構，以及如何使用 ADO.NET 類別來管理應用程式資料，以及與資料來源和 XML 互動。
 
-[ADO.NET Entity Framework](/ef/ef6/) &mdash;Describes 如何建立資料應用程式，讓開發人員可以針對概念模型進行程式設計，而不是直接針對關係資料庫。
+[ADO.NET Entity Framework](/ef/ef6/)的&mdash;描述如何建立資料應用程式，讓開發人員可以針對概念模型進行程式設計，而不是直接針對關係資料庫。
 
 [WCF Data Services 4.5](/dotnet/framework/data/wcf/index)&mdash;描述如何使用 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 在 web 或內部網路上部署資料服務，以執行[開放式資料通訊協定（OData）](https://www.odata.org/)。
 
-[Office 方案中的資料](../vsto/data-in-office-solutions.md)&mdash;Contains 主題的連結，說明資料在 office 方案中的運作方式。 這包括架構導向的程式設計、資料快取，以及伺服器端資料存取的相關資訊。
+[Office 方案中的資料](../vsto/data-in-office-solutions.md)&mdash;包含說明資料在 office 方案中如何運作的主題連結。 這包括架構導向的程式設計、資料快取，以及伺服器端資料存取的相關資訊。
 
-[LINQ （語言整合式查詢）](/dotnet/csharp/linq/) &mdash;Describes 內建于C#和 Visual Basic 的查詢功能，以及用來查詢關係資料庫、XML 檔、資料集和記憶體內部集合的一般模型。
+[LINQ （語言整合式查詢）](/dotnet/csharp/linq/)&mdash;描述內建于C#和 Visual Basic 的查詢功能，以及查詢關係資料庫、XML 檔、資料集和記憶體中集合的一般模型。
 
-[Visual Studio 中的 Xml 工具](../xml-tools/xml-tools-in-visual-studio.md)&mdash;Discusses 使用 xml 資料、調試 XSLT、.net XML 功能，以及 xml 查詢的架構。
+[Visual Studio 中的 Xml 工具](../xml-tools/xml-tools-in-visual-studio.md)&mdash;討論如何使用 xml 資料、調試 XSLT、.net XML 功能，以及 xml 查詢的架構。
 
-[Xml 檔和資料](/dotnet/standard/data/xml/index)&mdash;Provides 概述一組完整且整合的類別，以在 .net 中使用 XML 檔和資料。
+[Xml 檔和資料](/dotnet/standard/data/xml/index)&mdash;提供一組完整且整合的類別，以在 .net 中使用 XML 檔和資料。

@@ -1,25 +1,25 @@
 ---
 title: 安裝 Visual Studio 2019 for Mac
 description: 如何安裝 Visual Studio 2019 for Mac 及其他跨平台開發所需元件的指示。
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 3e4a41567b02807dce280426daf59e30ed1876eb
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 633f8358b85b030c125bc632ff759d92e508cfaf
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211452"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404956"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安裝 Visual Studio 2019 for Mac
 
 若要開始在 macOS 上開發原生、跨平台的 .NET 應用程式，請遵循下方步驟安裝 Visual Studio 2019 for Mac。
 
  > [!div class="button"]
- > [下載 Visual Studio for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
+ > [下載 Visual Studio for Mac](https://aka.ms/vsmac)
 
 ## <a name="requirements"></a>需求
 
@@ -42,7 +42,7 @@ ms.locfileid: "71211452"
 
     [![安裝程式會檢查您系統的已安裝元件](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
-5. 系統會出現要求您確認隱私權和授權條款的警示。 請點擊連結並閱讀；如果您同意即可按 [繼續] ：
+5. 系統會出現要求您確認隱私權和授權條款的警示。 請前往連結並加以閱讀；如果您同意即可按 [繼續]：
 
     [![前往隱私權和條款的連結；如果您同意，請繼續執行](media/install-privacy.png)](media/install-privacy.png#lightbox)
 
@@ -53,7 +53,7 @@ ms.locfileid: "71211452"
    如果您不想要安裝所有平台，請使用以下指南以協助您決定要安裝的平台：
 
 
-|應用程式類型  |目標  |選取  |注意  |
+|應用程式類型  |Target  |選取  |注意事項  |
 |---------|---------|---------|---------|
 |**使用 Xamarin 的應用程式**| Xamarin.Forms|選取**Android**和**iOS**平臺 |您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/) |
 ||僅限 iOS|選取**iOS**平臺|您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/)|
@@ -66,7 +66,7 @@ ms.locfileid: "71211452"
 
 
 7. 選取完成之後，請按 [安裝] 按鈕。
-8. 安裝程式會顯示下載和安裝 Visual Studio for Mac 以及所選取的工作負載的進度。 系統會提示您輸入密碼，以授與安裝所需的許可權。：
+8. 安裝程式會顯示下載和安裝 Visual Studio for Mac 的進度，並顯示選取的工作負載。 系統會提示您輸入密碼，以授與安裝所需的許可權。：
 
     [![選擇您想要安裝的選擇性工作負載功能](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
@@ -76,9 +76,9 @@ ms.locfileid: "71211452"
 
     [![選擇您想要使用的鍵盤快速鍵](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
-如果您在公司環境安裝時發生網路問題，請檢閱[在防火牆或 Proxy 後方安裝](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server)指示。
+如果您在公司環境安裝時發生網路問題，請檢閱[在防火牆或 Proxy 後方安裝](/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server)指示。
 
-深入了解[版本資訊](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)中的變更。
+深入了解[版本資訊](/visualstudio/releasenotes/vs2019-mac-relnotes)中的變更。
 
 > [!NOTE]
 > 如果您在原始安裝期間選擇不安裝平台或工具 (在步驟 #6 中取消選取它)，當您稍後想要新增元件時，必須再次執行安裝程式。
@@ -93,7 +93,7 @@ ms.locfileid: "71211452"
 
 ## <a name="next-steps"></a>後續步驟
 
-安裝 Visual Studio for Mac 可讓您開始撰寫應用程式的程式碼。 提供以下指南以協助您完成編寫和部署專案的後續步驟。
+安裝 Visual Studio for Mac 可讓您開始撰寫應用程式的程式碼。 以下指示提供您下一步撰寫及部署專案的逐步指示。
 
 ### <a name="ios"></a>iOS
 
@@ -104,7 +104,7 @@ ms.locfileid: "71211452"
 
 1. [使用 Xamarin Android SDK 管理員](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs) \(英文\)
 2. [Android SDK 模擬器](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/) \(英文\)
-4. [設定您的裝置以進行開發](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/) \(英文\)
+4. [設定您的裝置以進行開發](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 應用程式、ASP.NET Core Web 應用程式、Unity 遊戲開發
 
@@ -114,6 +114,6 @@ ms.locfileid: "71211452"
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [安裝 Visual Studio (在 Windows 上)](/visualstudio/install/install-visual-studio)

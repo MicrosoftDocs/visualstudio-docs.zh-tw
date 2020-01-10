@@ -15,44 +15,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 6dfffdf0c12ea2a8f14769f26bb40a3943579248
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "70222648"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187588"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具流覽程式碼
 
-Visual Studio 偵錯工具可協助您流覽程式碼，以檢查應用程式的狀態，並顯示其執行流程。 您可以使用鍵盤快速鍵、偵錯工具命令、中斷點和其他功能，快速取得您想要檢查的程式碼。 熟悉偵錯工具導覽命令和快捷方式可讓您更快速且更輕鬆地尋找和解決應用程式問題。  如果這是您第一次嘗試偵錯工具代碼，您可能會想要在進行本文之前，先閱讀適用于徹底初學者和[偵錯工具技術和工具](../debugger/write-better-code-with-visual-studio.md) [的偵錯工具](../debugger/debugging-absolute-beginners.md)。
+Visual Studio 偵錯工具可協助您流覽程式碼，以檢查應用程式的狀態，並顯示其執行流程。 您可以使用鍵盤快速鍵、偵錯工具命令、中斷點和其他功能，快速取得您想要檢查的程式碼。 熟悉偵錯工具導覽命令和快捷方式可讓您更快速且更輕鬆地尋找和解決應用程式問題。  如果這是您第一次嘗試偵錯工具代碼，您可能會想要在進行本文之前，先閱讀適用于徹底初學者和[偵錯工具技術和工具](../debugger/write-better-code-with-visual-studio.md)[的偵錯工具](../debugger/debugging-absolute-beginners.md)。
 
-## <a name="basic-debugging"></a>基本偵錯
+## <a name="get-into-break-mode"></a>進入「中斷模式」
 
-若要在附加偵錯工具的情況下啟動應用程式，請按**F5**、選取 [ **Debug** ]  >  [**開始調試**]，或選取 [Visual Studio] 工具列中的綠色箭號。
+在*中斷模式*中，應用程式執行會在函式、變數和物件保留在記憶體中時暫停。 一旦偵錯工具處於中斷模式，您就可以流覽程式碼。 快速進入中斷模式最常見的方式是：
 
- ![DBG&#95;基本&#95;概念&#95;開始調試](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")
+- 按**F10**或**F11**開始程式碼逐步執行。 這可讓您快速找到應用程式的進入點，然後您可以繼續按下步驟命令以流覽程式碼。
 
-當您正在進行偵錯工具時，黃色醒目提示會顯示接下來要執行的程式程式碼。
+- [執行至特定位置或](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)函式，例如，藉由[設定中斷點](using-breakpoints.md)並啟動您的應用程式。
 
- ![DBG&#95;基本&#95;中斷&#95;模式](../debugger/media/dbg_basics_break_mode.png "中斷模式")
+   例如，在 Visual Studio 的程式碼編輯器中，您可以使用 [**執行至游標處**] 命令來啟動應用程式、附加偵錯工具，並進入中斷模式，然後按**F11**流覽程式碼。
 
-大部分的偵錯工具視窗（例如**模組**和**監看**式視窗）只有在偵錯工具執行時才可使用。 某些偵錯工具功能（例如在 [**區域變數**] 視窗中查看變數值或在 [**監看**式] 視窗中評估運算式）只有在偵錯工具于中斷點暫停（也稱為*中斷模式*）時才可以使用。
+   ![執行至游標處並逐步執行程式碼](../debugger/media/navigate-code-code-stepping.gif "執行至游標處並逐步執行程式碼")
 
-在中斷模式中，應用程式執行會在函式、變數和物件保留在記憶體中時暫停。 您可以檢查元素的位置和狀態，以尋找違規或 bug。 針對某些專案類型，您也可以在中斷模式中進行應用程式的調整。 如需顯示這些功能的影片，請參閱[使用偵錯工具消費者入門](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6)。
+在中斷模式下，您可以使用各種命令來流覽您的程式碼。 在中斷模式中，您可以檢查變數的值，以尋找違規或 bug。 針對某些專案類型，您也可以在中斷模式中進行應用程式的調整。
 
-如果您在未載入來源或符號（ *.pdb*）檔案的程式碼中中斷，偵錯工具會顯示 [找**不到原始**程式檔] 或 [找**不到符號**] 頁面，協助您尋找和載入檔案。 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。 如果您無法載入符號檔或原始程式檔，您仍然可以在 [反組解碼 **] 視窗中，對元件**指令進行 debug。
+大部分的偵錯工具視窗（例如**模組**和**監看**式視窗）只有在偵錯工具附加至您的應用程式時才可使用。 某些偵錯工具功能（例如在 [**區域變數**] 視窗中查看變數值，或在 [**監看**式] 視窗中評估運算式）只有在偵錯工具暫停時才可以使用（也就是在中斷模式下）。
 
-您不一定都需要在一開始就啟動應用程式來啟動偵錯工具。 您也可以按**F11**逐步執行程式碼，按**F10**以不[進入](#BKMK_Step_into__over__or_out_of_the_code)程式[代碼](#BKMK_Step_over_Step_out)，或[執行至特定位置或功能](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)。
+> [!NOTE]
+> 如果您中斷未載入來源或符號（ *.pdb*）檔案的程式碼，偵錯工具會顯示 [找**不到原始**程式檔] 或 [找**不到符號**] 頁面，協助您尋找和載入檔案。 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。 如果您無法載入符號檔或原始程式檔，您仍然可以在 [反組解碼 **] 視窗中，對元件**指令進行 debug。
 
 ## <a name="step-through-code"></a>逐步執行程式碼
 
 偵錯工具步驟命令可協助您檢查應用程式狀態，或深入瞭解其執行流程。
 
-如果您需要在應用程式中尋找進入點，請從**F10**或**F11**開始。
-
 ### <a name="BKMK_Step_into__over__or_out_of_the_code"></a>逐行逐步執行程式碼
 
-若要在偵錯工具時停止每一行程式碼或語句，請使用**Debug**  > **逐步**執行，或按**F11**鍵。
+若要在進行調試時停止每個語句，請使用**Debug** > **逐步**執行，或按**F11**鍵。
 
 偵錯工具會逐步執行程式碼語句，而不是實體行。 例如 `if` 子句可以寫在一行上：
 
@@ -73,11 +72,11 @@ Visual Studio 偵錯工具可協助您流覽程式碼，以檢查應用程式的
 [ **逐步執行** ] 會在巢狀函式呼叫中逐步執行最深的巢狀函式。 例如，如果您在 `Func1(Func2())` 之類的呼叫中使用 [**逐步**執行]，偵錯工具就會逐步執行 `Func2` 的函式。
 
 >[!TIP]
->當您執行每一行程式碼時，您可以將滑鼠停留在變數上以查看其值，或使用 [[區域變數](autos-and-locals-windows.md)] 和[[監看](watch-and-quickwatch-windows.md)式] 視窗來監看這些值的變更。 您也可以在逐步執行函式時，以視覺化方式追蹤呼叫堆疊。 請參閱在進行[調試時，呼叫堆疊上的對應方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。
+>當您執行每一行程式碼時，您可以將滑鼠停留在變數上以查看其值，或使用 [[區域變數](autos-and-locals-windows.md)] 和[[監看](watch-and-quickwatch-windows.md)式] 視窗來監看這些值的變更。 您也可以在逐步執行函式時，以視覺化方式追蹤[呼叫堆疊](how-to-use-the-call-stack-window.md)。 （僅適用于 Visual Studio Enterprise，請參閱在[偵錯工具時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)）。
 
 ### <a name="BKMK_Step_over_Step_out"></a>逐步執行程式碼並略過一些功能
 
-在進行偵錯工具時，您可能不在意函式，或者您知道它的運作方式，就像是經過妥善測試的程式庫程式碼。 您可以使用下列命令來略過程式碼。 函式仍會執行，但偵錯工具會略過它們。
+在進行偵錯工具時，您可能不在意函式，或者您知道它的運作方式，就像是經過妥善測試的程式庫程式碼。 在程式碼逐步執行時，您可以使用下列命令來略過程式碼。 函式仍會執行，但偵錯工具會略過它們。
 
 |鍵盤命令|[調試] 功能表命令|描述|
 |----------------------|------------------|-----------------|
@@ -133,7 +132,7 @@ Visual Studio 的中斷點提供一組豐富的其他功能，例如條件式中
 ![執行以按一下](../debugger/media/dbg-run-to-click.png "執行至點選處")
 
 > [!NOTE]
-> 從 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 開始 **，即可按一下 [執行**]。
+> 從 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]開始 **，即可按一下 [執行**]。
 
 ### <a name="manually-break-into-code"></a>手動中斷程式碼
 

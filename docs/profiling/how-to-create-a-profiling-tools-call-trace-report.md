@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立分析工具呼叫追蹤報表 | Microsoft Docs
+title: 如何：建立分析工具呼叫追蹤報表 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +9,17 @@ ms.assetid: 7640520a-7d3c-456c-b184-872a5d2f82f3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dfe32847a37453b6a24a58538b2642fba66e4971
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4b184310d837193679a1a5eacf2fbae4ecf29caa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439120"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778982"
 ---
-# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>HOW TO：建立程式碼剖析工具呼叫追蹤報表
+# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>如何：建立分析工具呼叫追蹤報表
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的「呼叫追蹤報表」會列出您應用程式函式每個進入點和結束點的計時資訊，以及您的函式對其他函式的每次呼叫。 只有使用檢測方法收集分析資料時，呼叫追蹤報表才能用於資料分析。
 
 > [!NOTE]
@@ -28,7 +29,7 @@ ms.locfileid: "63439120"
 
 1. 開啟 [命令提示字元] 視窗。
 
-2. 在命令提示字元中輸入下列命令：
+2. 請在命令提示字元中輸入下列命令：
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**
 
@@ -38,6 +39,6 @@ ms.locfileid: "63439120"
     |*VSPFile*|分析資料檔 (.*vsp* 或 .*vsps*)。 可接受完整和部分路徑。|
     |Xml|產生 XML 格式化報表。|
 
-## <a name="see-also"></a>另請參閱
-- [如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+## <a name="see-also"></a>請參閱
+- [如何：收集 Windows 事件追蹤（ETW）資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 - [分析工具 API](../profiling/profiling-tools-apis.md)

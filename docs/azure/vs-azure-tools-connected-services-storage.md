@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 649f99911726e562f9602fe6697591ec6cfb96eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ca65086ce7ce09a1ca288c2f5cd04c31e00f8e95
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560982"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911902"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>使用 Visual Studio 的已連接服務加入 Azure 儲存體
 
@@ -67,14 +67,14 @@ ms.locfileid: "62560982"
 
 當您完成對話方塊時，Visual Studio 會加入參考並修改某些組態檔。 特定變更會視專案類型而定：
 
-- ASP.NET 專案 - [發生什麼事 - ASP.NET 專案](http://go.microsoft.com/fwlink/p/?LinkId=513126)
-- ASP.NET Core 專案 - [發生什麼事 - ASP.NET 5 專案](http://go.microsoft.com/fwlink/p/?LinkId=513124)
-- 雲端服務專案 (Web 角色和背景工作角色) - [發生什麼事 - 雲端服務專案](http://go.microsoft.com/fwlink/p/?LinkId=516965)
+- ASP.NET 專案 - [發生什麼事 - ASP.NET 專案](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
+- ASP.NET Core 專案 - [發生什麼事 - ASP.NET 5 專案](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
+- 雲端服務專案 (Web 角色和背景工作角色) - [發生什麼事 - 雲端服務專案](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
 - WebJob 專案 - [發生什麼事 - WebJob 專案](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [MSDN 論壇：Azure 儲存體](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Microsoft Azure 儲存體小組部落格 (英文)](http://blogs.msdn.com/b/windowsazurestorage/)
-- [Azure 儲存體文件](https://docs.microsoft.com/azure/storage/)
+- [MSDN 論壇： Azure 儲存體](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [Microsoft Azure 儲存體小組部落格 (英文)](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+- [Azure 儲存體文件](/azure/storage/)
 - [已連線的服務 (Visual Studio for Mac)](/visualstudio/mac/connected-services)

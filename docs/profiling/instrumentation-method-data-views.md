@@ -9,14 +9,15 @@ ms.assetid: 481f7579-f784-49ef-bb6c-2944e9d6ab42
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0da4ea0080bfbfb3e4192902f63f50a640b14c8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995377"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774159"
 ---
 # <a name="instrumentation-method-data-views"></a>檢測方法資料檢視
 本節包含使用檢測方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。
@@ -34,7 +35,7 @@ ms.locfileid: "62995377"
 
  依模組來組織程式碼剖析資料並列出模組中函式的程式碼剖析資料。
 
-- [呼叫者/被呼叫者檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)
+- [呼叫端/被呼叫端檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)
 
  顯示所選取函式父代和子函式的程式碼剖析資料。
 
@@ -64,5 +65,5 @@ ms.locfileid: "62995377"
 
  使用執行緒爭用方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)

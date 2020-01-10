@@ -1,16 +1,16 @@
 ---
 title: 適用于 Windows 使用者的 Visual Studio for Mac
 description: 介紹 Visual Studio for Mac 中的協助工具功能，以及如何啟用它們。
-author: alclark
-ms.author: alcl
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/25/2019
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
-ms.openlocfilehash: 3306cdec93b501ad2006bbee2ceca3bf42514fe9
-ms.sourcegitcommit: 7739f36507b4762eea83c692102bdc5188460f28
+ms.openlocfilehash: b414026ba7297dd6c93fecdf56d9a9c58c99f294
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71314483"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984267"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>適用于 Windows 使用者的 Visual Studio for Mac
 
@@ -20,9 +20,9 @@ ms.locfileid: "71314483"
 
 身為開發人員，許多人都習慣使用鍵盤來進行您的工作和導覽。 鍵盤上的某些按鍵在 Mac 和 Windows 電腦之間是共通的。 您可以 forgiven，以為鍵盤動作（例如複製和貼上）使用相同的按鍵組合。 這不一定都是如此。 幸好，您可以在 Visual Studio for Mac 中變更您的金鑰系結，以與 Windows 中 Visual Studio 的系結緊密相符。
 
-第一次執行 Visual Studio for Mac 時，您會看到 [鍵盤快速鍵] 選取視窗：![金鑰系結視窗](media/ide-tour-2019-keyboard-shortcut.png)
+第一次執行 Visual Studio for Mac 您將會看到 [鍵盤快速鍵] 選取視窗： ![索引鍵系結 視窗](media/ide-tour-2019-keyboard-shortcut.png)
 
-如果您稍後想要變更金鑰系結，您可以在 喜好設定：![按鍵系結喜好設定](media/customizing-the-ide-image10a.png)
+如果您稍後想要變更金鑰系結，您可以在 [喜好設定： ![索引鍵系結] 喜好設定中找到設定](media/customizing-the-ide-image10a.png)
 
 請務必注意，macOS 會使用 Windows 的不同全系統快捷方式。 變更按鍵系結喜好設定可讓您在 Visual Studio for Mac 中使用熟悉的 Windows 快捷方式。 不過，在 macOS 的其他區域中，您必須熟悉 macOS 快捷方式。
 
@@ -34,9 +34,9 @@ MacOS 命令（則是⌘）輔助按鍵通常可以取代 Windows 中的控制�
 |貼上                  |`Ctrl + V`               |`⌘ + V`             |
 |剪下                    |`Ctrl + X`               |`⌘ + X`             |
 |復原                   |`Ctrl + Z`               |`⌘ + Z`             |
-|Redo                   |`Ctrl + Shift + Z`       |`⌘ + Shift + Z`     |
+|重做                   |`Ctrl + Shift + Z`       |`⌘ + Shift + Z`     |
 |刪除資料指標右方 |`Delete`                 |`fn + Backspace`    |
-|刪除單字            |`Ctrl + Delete`          |`fn + ⌥ + Backspace`|
+|刪除詞彙            |`Ctrl + Delete`          |`fn + ⌥ + Backspace`|
 
 > [!TIP]
 > 您可以在[Apple 支援網站](https://support.apple.com/en-us/HT201236)上找到完整的 macOS 快捷方式清單。
@@ -48,7 +48,7 @@ MacOS 中的功能表與 Windows 中的功能表有不同的組織方式。 Visu
 |工作                   |Visual Studio (Windows)                                              |Visual Studio for Mac                |
 |-----------------------|---------------------------------------------------------------------|-------------------------------------|
 |喜好設定（選項）  |工具 > 選項 。                                                   |Visual Studio > 喜好設定 。       |
-|延伸模組             |延伸模組 > 管理延伸模組                                       |Visual Studio > 延伸模組 。        |
+|擴充功能             |延伸模組 > 管理延伸模組                                       |Visual Studio > 延伸模組 。        |
 |版面配置                |視窗 > 套用視窗版面配置 > [選取版面配置]                       |View > [選取版面配置]               |
 |更新                |協助 > 檢查更新                                             |Visual Studio > 檢查是否有更新 。 |
 |NuGet 封裝管理員  |> NuGet 套件管理員 > 管理 NuGet 套件或解決方案的工具 。 |專案 > 管理 NuGet 套件 。   |

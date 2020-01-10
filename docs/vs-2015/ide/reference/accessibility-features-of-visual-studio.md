@@ -12,12 +12,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fbf7c539c8bf1290aff92edf876ac4c437fd1c68
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ff7d0e7a26c9e8fa6abe984353d3368ca1f6a36a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670289"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296101"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的協助工具功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "72670289"
 - 自動完成方法和參數
 
 > [!IMPORTANT]
-> 本節中的資訊僅適用於美國地區的 Microsoft 產品授權使用者。 如果您在美國以外的地區取得本產品，您可以使用軟體套件隨附的子公司資訊卡，或者您可以前往 [Microsoft 支援服務的 [與我們連絡]](http://support.microsoft.com/ContactUs) 頁面，並按一下 [尋找世界各地的 Microsoft 分公司 ]  連結 (靠近頁面底部)。 此頁面提供 Microsoft 支援服務的電話號碼和地址清單。 您可以連絡當地分公司，以了解當地是否有提供本節所描述的產品和服務類型。 協助工具資訊也有提供其他語言，包括日文及法文。
+> 本節中的資訊僅適用於美國地區的 Microsoft 產品授權使用者。 如果您在美國以外的地區取得本產品，您可以使用軟體套件隨附的子公司資訊卡，或者您可以前往 [Microsoft 支援服務的 [與我們連絡]](https://support.microsoft.com/contactus/) 頁面，並按一下 [尋找世界各地的 Microsoft 分公司 ]  連結 (靠近頁面底部)。 此頁面提供 Microsoft 支援服務的電話號碼和地址清單。 您可以連絡當地分公司，以了解當地是否有提供本節所描述的產品和服務類型。 協助工具資訊也有提供其他語言，包括日文及法文。
 
  如需詳細資訊，請參閱下列主題：
 

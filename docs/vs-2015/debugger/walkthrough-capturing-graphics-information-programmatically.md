@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：以程式設計方式擷取圖形資訊 |Microsoft Docs
+title: 逐步解說：以程式設計方式捕捉圖形資訊 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1eaa3547733432715c5362b20030fe3d4a886900
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444341"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296900"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>逐步解說：以程式設計方式擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ ms.locfileid: "63444341"
     ```  
   
     > [!IMPORTANT]
-    > 不包含標頭檔 vsgcapture.h—which 支援程式設計擷取 Windows 8.0 上及更早版本，若要在 Windows 8.1 應用程式中執行程式設計擷取。 此標頭與 DirectX 11.2 不相容。 如果此檔案包含之後會包含 d3d11_2.h 標頭，則編譯器會發出警告。 如果包含 vsgcapture.h d3d11_2.h 之前，將不會啟動應用程式。  
+    > 請勿包括標頭檔 vsgcapture.h (其支援 Windows 8.0 (含) 以前版本上的程式設計擷取)，以在 Windows 8.1 應用程式中執行程式設計擷取。 此標頭與 DirectX 11.2 不相容。 如果在包含 d3d11_2 .h 標頭之後包含此檔案，則編譯器會發出警告。 如果 d3d11_2 .h 之前包含 vsgcapture.h，應用程式將不會啟動。  
   
     > [!NOTE]
     > 如果在電腦上安裝 2010 年 6 月 DirectX SDK，而且專案的 Include 路徑包含 `%DXSDK_DIR%includex86`，請將它移至 Include 路徑結尾。 請對程式庫路徑執行相同的處理。  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
- 因為 Windows Phone 8.1 SDK 不包含 DXProgrammableCapture.h 標頭，您將需要定義`IDXGraphicsAnalysis`，讓您可以使用介面自行`BeginCapture()`和`EndCapture()`方法。 包括上一節中所述的其他標頭。  
+ 因為 Windows Phone 8.1 SDK 不包含 Dxprogrammablecapture.h 標頭，所以您必須自行定義 `IDXGraphicsAnalysis` 介面，才能使用 `BeginCapture()` 和 `EndCapture()` 方法。 包括上一節中所述的其他標頭。  
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>定義 IDXGraphicsAnalysis 介面  
   
@@ -85,7 +85,7 @@ ms.locfileid: "63444341"
  您需要先取得 DXGI 偵錯介面，才能從 DirectX 11.2 擷取圖形資訊。  
   
 > [!IMPORTANT]
-> 當使用程式設計擷取時，您仍然必須執行您的應用程式在圖形診斷下 (中的 alt+f5 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) 或底下[命令列擷取工具](../debugger/command-line-capture-tool.md)。  
+> 使用程式設計捕獲時，您仍然必須在 [圖形診斷] 下執行應用程式（[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中的 Alt + F5），或在[命令列捕獲工具](../debugger/command-line-capture-tool.md)底下執行。  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>取得 IDXGraphicsAnalysis 介面  
   
@@ -145,7 +145,7 @@ ms.locfileid: "63444341"
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>準備電腦以使用程式設計擷取  
  程式設計擷取 API 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的遠端工具來提供擷取功能。 要執行應用程式的電腦必須已安裝遠端工具，即使在本機電腦上使用程式設計擷取也是一樣。 當您在本機電腦上執行程式設計擷取時，不需要執行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
- 若要在於電腦上執行的應用程式中使用遠端擷取 API，則需要先在該電腦上安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 遠端工具。 不同版本的遠端工具支援不同的硬體平台。 如需如何安裝遠端工具的資訊，請參閱 Microsoft 下載網站的 [遠端工具下載頁面](http://go.microsoft.com/fwlink/p/?LinkId=246691) 。  
+ 若要在於電腦上執行的應用程式中使用遠端擷取 API，則需要先在該電腦上安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 遠端工具。 不同版本的遠端工具支援不同的硬體平台。 如需如何安裝遠端工具的資訊，請參閱 Microsoft 下載網站的 [遠端工具下載頁面](https://go.microsoft.com/fwlink/p/?LinkId=246691) 。  
   
  或者， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會安裝必要元件來執行 32 位元應用程式的遠端擷取。  
   
@@ -182,7 +182,7 @@ ms.locfileid: "63444341"
   
    如果您未執行此步驟，則檔案名稱為 default.vsglog。 如果您未定義 `DONT_SAVE_VSGLOG_TO_TEMP`，則檔案的位置是與暫存目錄相對的位置；否則，它是與工作目錄相對的位置，或在另一個位置中 (如果您已指定絕對檔案名稱)。  
   
-  針對[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式，暫存目錄的位置是專門針對每個使用者及應用程式，而且通常中的位置，例如 C:\users\\*username*\AppData\Local\Packages\\ *套件系列名稱*\TempState\\。 傳統型應用程式，暫存目錄的位置是每位使用者特有而且通常位於的位置，例如 C:\Users\\*使用者名稱*\AppData\Local\Temp\\。  
+  針對 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式，臨時目錄的位置是每個使用者和應用程式所特有，通常位於 C:\users\\*username*\AppData\Local\Packages\\*套件系列名稱*\TempState\\的位置。 針對桌面應用程式，臨時目錄的位置是每個使用者特有的，通常位於 C:\Users\\*username*\AppData\Local\Temp\\之類的位置。  
   
 > [!NOTE]
 > 若要寫入至特定位置，您必須具有寫入至該位置的權限；否則會發生錯誤。 請記住，在寫入資料的位置方面， [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的限制多於桌面應用程式，而且可能需要進行額外設定才能寫入至特定位置。  
@@ -196,9 +196,9 @@ ms.locfileid: "63444341"
 ## <a name="next-steps"></a>後續步驟  
  此逐步解說示範如何透過程式設計方式擷取圖形資訊。 下一步是考慮此選項：  
   
-- 了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
+- 了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[總覽](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：擷取圖形資訊](../debugger/walkthrough-capturing-graphics-information.md)   
+ [逐步解說：捕捉圖形資訊](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [命令列擷取工具](../debugger/command-line-capture-tool.md)

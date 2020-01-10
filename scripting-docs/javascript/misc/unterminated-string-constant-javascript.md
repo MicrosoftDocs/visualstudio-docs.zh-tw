@@ -27,10 +27,10 @@ ms.locfileid: "72575884"
 > [!NOTE]
 > 您可以使用成對的單引號或雙引號。 雙引號可以包含在以單引號括住的字串中，而且單引號可以包含在以雙引號括住的字串中。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 在字串結尾加上右引號。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [String 物件](../../javascript/reference/string-object-javascript.md)   
  [toString 方法 (Object)](../../javascript/reference/tostring-method-object-javascript.md)

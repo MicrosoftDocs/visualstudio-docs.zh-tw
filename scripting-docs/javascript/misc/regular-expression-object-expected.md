@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573709"
 ---
 # <a name="regular-expression-object-expected"></a>必須是規則運算式物件
-您嘗試在 `RegExp` 以外的類型物件上叫用**RegExp**或**RegExp. valueOf**方法。 這種調用類型的物件必須是 `RegExp` 的類型。  
+您嘗試在 `RegExp`以外的類型物件上叫用**RegExp**或**RegExp. valueOf**方法。 這種調用類型的物件必須是 `RegExp`的類型。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
-- 只在 `RegExp` 類型的物件上叫用**RegExp**或**RegExp. valueOf**方法。  
+- 只在 `RegExp`類型的物件上叫用**RegExp**或**RegExp. valueOf**方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [正則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
  [正則運算式語法（JavaScript）](https://msdn.microsoft.com/library/1400241x)

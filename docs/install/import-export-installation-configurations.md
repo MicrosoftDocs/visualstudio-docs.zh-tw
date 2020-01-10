@@ -11,19 +11,19 @@ helpviewer_keywords:
 - export installation configuration
 - install Visual Studio
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8150aa3369eb385ebad865d261f9e8c2d71d7dbe
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
-ms.translationtype: HT
+ms.openlocfilehash: dddd34c9d57497a011f58bdb643c670ed84f6ded
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65849027"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596849"
 ---
 # <a name="import-or-export-installation-configurations"></a>匯入或匯出安裝組態
 
@@ -70,7 +70,7 @@ ms.locfileid: "65849027"
 
 ## <a name="automatically-install-missing-components"></a>自動安裝遺漏的元件
 
-**Visual Studio 2019 的新功能**：將 .vsconfig 檔案儲存到方案根目錄，並接著開啟方案時，Visual Studio 會自動偵測哪些元件遺失，並提示您安裝它們。
+**Visual Studio 2019 的新**功能：當您將 .vsconfig 檔案儲存至方案根目錄，然後開啟方案時，Visual Studio 會自動偵測哪些元件遺失，並提示您進行安裝。
 
 ![[方案總管] 建議使用其他元件](../install/media/vs-2019/solution-explorer-config-file.png)
 
@@ -78,7 +78,7 @@ ms.locfileid: "65849027"
 
 1. 以滑鼠右鍵按一下您的方案檔案。
 
-1. 選擇 [新增] > [安裝組態檔]。
+1. 選擇 [**新增**>**安裝設定檔**]。
 
 1. 確認您要儲存 .vsconfig 檔案的位置，然後選擇 [檢閱詳細資料]。
 
@@ -91,7 +91,7 @@ ms.locfileid: "65849027"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [建立 Visual Studio 的網路安裝](create-a-network-installation-of-visual-studio.md)
 * [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)

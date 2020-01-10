@@ -1,5 +1,5 @@
 ---
-title: HOW TO：限制檢測特定函式 | Microsoft Docs
+title: 如何：限制檢測特定函式 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,16 +8,17 @@ ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 826031c2030c2ed8662ff98517a36c1a7ade3cde
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34a63645933a173e449cf4292cc3d014cc3ec740
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386640"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775315"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>HOW TO：限制檢測特定函式
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：限制檢測特定函式
 您可以透過在 [效能工作階段] 或目標二進位檔屬性頁的 [進階] 頁面中設定選項，將檢測和資料收集限制在一或多個函式：
 
 - 如果您在效能工作階段屬性頁上指定函式，則在該工作階段所有已檢測的二進位檔上，都只會檢測這些函式。
@@ -41,7 +42,7 @@ ms.locfileid: "63386640"
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace`**::**`FunctionName`。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。
+    `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace` **::** `FunctionName`。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如， **/include:MyNS::\\** * 可指定 MyNS 命名空間中的所有函式。
 
    > [!NOTE]
    > 若要列出二進位檔中的函式，請在分析工具安裝目錄中開啟命令提示字元視窗 (請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md))，然後鍵入 **vsinstr /DumpFuncs**
@@ -52,7 +53,7 @@ ms.locfileid: "63386640"
 
 2. 以滑鼠右鍵按一下二進位檔名稱，然後按一下 [屬性]。
 
-    [屬性頁] 對話方塊隨即顯示。
+    [屬性頁] 對話方塊隨即出現。
 
 3. 在 [屬性頁] 對話方塊中，按一下 [進階]。
 
@@ -60,12 +61,12 @@ ms.locfileid: "63386640"
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace`**::**`FunctionName`。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。
+    `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace` **::** `FunctionName`。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如， **/include:MyNS::\\** * 可指定 MyNS 命名空間中的所有函式。
 
    > [!NOTE]
    > 若要列出二進位檔中的函式，請在分析工具安裝目錄中開啟命令提示字元視窗 (請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md))，然後鍵入 **vsinstr /DumpFuncs**
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [控制資料收集](../profiling/controlling-data-collection.md)
-- [如何：限制檢測特定 DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)
-- [如何：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)
+- [操作說明：限制檢測特定 DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)
+- [操作說明：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)

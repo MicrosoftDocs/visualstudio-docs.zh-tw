@@ -15,24 +15,24 @@ caps.latest.revision: 4
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2c200c7db90f3cad12c1188af88f4651d2f2d44c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1c18a08986bf8e4aa30969a9d30d740fb68e978c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663383"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297475"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>作法：建立 PolicyActivity 規則集 (舊版)
 本主題描述當使用以 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標的舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 時，如何建立原則活動規則集。
 
- 當您從 [**工具箱**] 將 [**原則**] 活動專案拖曳至工作流程設計介面之後，您會想要選取現有的規則，或為[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)活動建立新的規則集。 您可以使用 [[選取規則集] 對話方塊（舊版）](../workflow-designer/select-rule-set-dialog-box-legacy.md)來選取現有的規則集，並使用 [[規則集編輯器] 對話方塊（舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)來建立規則集。
+ 當您從 [**工具箱**] 將 [**原則**] 活動專案拖曳至工作流程設計介面之後，您會想要選取現有的規則，或為[PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019)活動建立新的規則集。 您可以使用 [[選取規則集] 對話方塊（舊版）](../workflow-designer/select-rule-set-dialog-box-legacy.md)來選取現有的規則集，並使用 [[規則集編輯器] 對話方塊（舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)來建立規則集。
 
 > [!NOTE]
-> 您可以按兩下工作流程設計介面上的[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)活動，直接開啟 [[規則集編輯器] 對話方塊（舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)對話方塊。
+> 您可以按兩下工作流程設計介面上的[PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019)活動，直接開啟 [[規則集編輯器] 對話方塊（舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)對話方塊。
 
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>若要選取或建立 PolicyActivity 活動的規則集
 
-1. 以滑鼠右鍵按一下[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)，然後按一下 [**屬性**] 以開啟 [**屬性**] 視窗。
+1. 以滑鼠右鍵按一下[PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019)，然後按一下 [**屬性**] 以開啟 [**屬性**] 視窗。
 
 2. 按一下  **rulesetreference**  屬性。
 
@@ -63,4 +63,4 @@ ms.locfileid: "72663383"
 9. 完成後，請按一下 [確定]。
 
 ## <a name="see-also"></a>另請參閱
- [使用原則活動](http://go.microsoft.com/fwlink?LinkID=65004)[舊版工作流程活動](../workflow-designer/legacy-workflow-activities.md)的[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) [選取規則集對話方塊（舊版）](../workflow-designer/select-rule-set-dialog-box-legacy.md) [規則集編輯器對話方塊（舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)
+ [使用原則活動](https://go.microsoft.com/fwlink?LinkID=65004)[舊版工作流程活動](../workflow-designer/legacy-workflow-activities.md)的[PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [選取規則集對話方塊（舊版）](../workflow-designer/select-rule-set-dialog-box-legacy.md) [規則集編輯器對話方塊（舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)

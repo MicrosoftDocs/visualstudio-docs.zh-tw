@@ -46,6 +46,6 @@ HRESULT Abort();
 ## <a name="remarks"></a>備註  
  這個方法會以最早的機會停止運算式評估。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugExpression 介面](../../winscript/reference/idebugexpression-interface.md)   
  [IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)

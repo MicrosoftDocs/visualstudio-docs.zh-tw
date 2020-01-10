@@ -18,21 +18,21 @@ helpviewer_keywords:
 - saving data
 - TableAdapters
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e8d5d8e3091b464084df065bb7b889db9fc2194f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fe408c090dbdc2157cd52977d4bbed66cfe9109
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648518"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586688"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>以 TableAdapter 直接存取資料庫
 
-除了 `InsertCommand`、`UpdateCommand` 和 `DeleteCommand` 之外，也會使用可直接對資料庫執行的方法來建立 Tableadapter。 您可以呼叫這些方法（`TableAdapter.Insert`、`TableAdapter.Update` 和 `TableAdapter.Delete`）直接運算元據庫中的資料。
+除了 `InsertCommand`、`UpdateCommand`和 `DeleteCommand`之外，也會使用可直接對資料庫執行的方法來建立 Tableadapter。 您可以呼叫這些方法（`TableAdapter.Insert`、`TableAdapter.Update`和 `TableAdapter.Delete`）直接運算元據庫中的資料。
 
 如果您不想要建立這些直接方法，請將 TableAdapter 的 `GenerateDbDirectMethods` 屬性設定為 [**屬性**] 視窗中的 [`false`]。 如果除了 TableAdapter 的主查詢之外，還有任何查詢新增至 TableAdapter，它們就是不會產生這些 `DbDirect` 方法的獨立查詢。
 

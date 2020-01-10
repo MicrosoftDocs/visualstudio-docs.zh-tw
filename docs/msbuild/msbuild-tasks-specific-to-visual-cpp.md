@@ -10,20 +10,20 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, tasks specific to C++
 ms.assetid: 05410f0c-7356-4692-bc00-20664421c9ff
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6ea400d7473fae27ac4b17d9e3692748db549f3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 89f7d8465b2078d4c0c1ce86894edb834581596d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748063"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593820"
 ---
 # <a name="msbuild-tasks-specific-to-c"></a>特定的 MSBuild 工作C++
-提供在建置流程期間執行之程式碼的工作。 當C++安裝時，除了與 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 一起安裝的工作之外，還可以使用下列作業。 如需詳細資訊，請參閱[MSBuild （C++）總覽](/cpp/build/msbuild-visual-cpp-overview)。
+提供在建置流程期間執行之程式碼的工作。 當C++安裝時，除了與 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]一起安裝的工作之外，還可以使用下列作業。 如需詳細資訊，請參閱[MSBuild （C++）總覽](/cpp/build/msbuild-visual-cpp-overview)。
 
  除了適用於每個工作的參數之外，每個工作也會有下列參數。
 

@@ -1,18 +1,18 @@
 ---
 title: 更新 Visual Studio for Mac
 description: 將 Visual Studio for Mac 更新為最新版本的指示。
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 06/20/2018
 ms.technology: vs-ide-install
 ms.assetid: BC836802-CC65-41F7-BAEC-A42AED0371A9
 hide_comments: false
-ms.openlocfilehash: 26b943d94f11adbc4415e552d2a6b3a73bb95c81
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: 092cf0c8794d143a6e563183fdea96fd5e6cf8cc
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328374"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985142"
 ---
 # <a name="update-visual-studio-2017-for-mac-version-7-to-visual-studio-2019-for-mac-version-80"></a>將 Visual Studio 2017 for Mac (7 版) 更新為 Visual Studio 2019 for Mac (8.0 版)
 
@@ -22,9 +22,9 @@ Visual Studio 2019 for Mac 有許多新改善：全新 C# 編輯器、全新啟�
 - [Visual Studio 2019 for Mac 8.1 版現已推出 (以及 8.2 的 Preview)](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-version-8-1-is-now-available-and-a-preview-for-8-2/)
 
 > [!IMPORTANT]
-> Visual Studio 2017 for Mac **7.7.3 版**有已知問題，更新程式會持續顯示 [擷取更新資訊時發生錯誤]。 如果發生此問題，請[下載 Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)，並遵循步驟以[安裝](https://docs.microsoft.com/visualstudio/mac/installation?view=vsmac-2019) Visual Studio 2019 for Mac。 請注意，這會覆寫您的現有 Visual Studio 2017 for Mac 執行個體。
+> Visual Studio 2017 for Mac **7.7.3 版**有已知問題，更新程式會持續顯示 [擷取更新資訊時發生錯誤]。 如果發生此問題，請[下載 Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)，並遵循步驟以[安裝](/visualstudio/mac/installation?view=vsmac-2019) Visual Studio 2019 for Mac。 請注意，這會覆寫您的現有 Visual Studio 2017 for Mac 執行個體。
 
-若要取得最新版本，您可以瀏覽至 [Visual Studio] > [檢查更新]  ，以使用[更新程式](https://docs.microsoft.com/visualstudio/mac/update?view=vsmac-2017)：
+若要取得最新版本，您可以瀏覽至 [Visual Studio] > [檢查更新]，以使用[更新程式](/visualstudio/mac/update?view=vsmac-2017)：
 
 ![更新程式對話方塊](media/update-vsmac-updater.png)
 

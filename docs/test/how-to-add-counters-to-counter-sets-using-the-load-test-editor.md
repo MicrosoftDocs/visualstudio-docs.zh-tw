@@ -7,15 +7,15 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7e547e3dfc863e3459cc0e5c575d394f83582f6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b83d9c3624a4a268bfeba8a02b224fb9813ad7d1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644350"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594325"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器將計數器新增至計數器集合
 
@@ -57,7 +57,7 @@ ms.locfileid: "72644350"
 
      選取 [所有計數器] 選項按鈕，選取所有可用的計數器。
 
-7. 選擇 [確定]。
+7. 選擇 [ **確定**]。
 
     > [!NOTE]
     > 另一個將計數器加入至計數器集合的方法是，選擇現有的計數器或計數器類別，選擇 [複製]，然後將它們貼至另一個計數器集合節點。 如果也複製了其他不需要的計數器，可以予以刪除。

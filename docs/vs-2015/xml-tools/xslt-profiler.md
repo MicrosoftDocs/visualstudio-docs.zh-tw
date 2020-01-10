@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d090e5c570eb2700e3493ffd80f256c76d0d52ec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 93ae9c58e0f9a366727f8a5aac08b8d3887f2e7f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669315"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406723"
 ---
 # <a name="xslt-profiler"></a>XSLT 分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ XSLT 分析工具是一種效能分析工具，可協助您開發並偵錯 XSLT 
 
  ![XSLT 分析工具](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
 
- XSLT 分析工具第一次引入是做為 Visual Studio 2008 的增益集。 如需詳細資訊，請參閱 XSLT Profiler 上的相關資源一節，[以取得 Visual Studio 二月 8 Community Technical Preview](http://go.microsoft.com/fwlink/?LinkId=142987)頁面。
+ XSLT 分析工具第一次引入是做為 Visual Studio 2008 的增益集。 如需詳細資訊，請參閱[XSLT Profiler 載入](https://marketplace.visualstudio.com/items?itemName=SinanUssakli-MSFT.XSLTProfilerAddin)宏。
 
 > [!NOTE]
 > 有些出現的畫面可能與 Visual Studio 2010 中的畫面不一樣，但在這些文件中卻一樣，這是因為有些視覺項目是在 Visual Studio 2008 之後變更的。

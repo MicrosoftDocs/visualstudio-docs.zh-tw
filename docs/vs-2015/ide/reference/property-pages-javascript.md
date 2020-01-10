@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1fe8acd8628fcbd40e9c675558379049fd6658b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ffb1298981481bde063de898dc81c02dad548888
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665737"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297829"
 ---
 # <a name="property-pages-javascript"></a>JavaScript、屬性頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ ms.locfileid: "72665737"
 
  **要啟動的偵錯工具**指定偵錯工具的預設主控制項。
 
-- 選取 [本機電腦]，在 Visual Studio 主機電腦上啟動應用程式。 如需詳細資訊，請參閱[在本機電腦上執行應用程式](http://go.microsoft.com/fwlink/?LinkId=234912)。
+- 選取 [本機電腦]，在 Visual Studio 主機電腦上啟動應用程式。 如需詳細資訊，請參閱[在本機電腦上執行應用程式](https://go.microsoft.com/fwlink/?LinkId=234912)。
 
-- 選取 [模擬器]，在模擬器中啟動應用程式。 如需詳細資訊，請參閱[在模擬器中執行應用程式](http://go.microsoft.com/fwlink/?LinkId=234913)。
+- 選取 [模擬器]，在模擬器中啟動應用程式。 如需詳細資訊，請參閱[在模擬器中執行應用程式](https://go.microsoft.com/fwlink/?LinkId=234913)。
 
-- 選取 [遠端電腦]，在遠端電腦上啟動應用程式。 如需遠端偵錯的詳細資訊，請參閱[在遠端電腦上執行應用程式](http://go.microsoft.com/fwlink/?LinkId=234914)。
+- 選取 [遠端電腦]，在遠端電腦上啟動應用程式。 如需遠端偵錯的詳細資訊，請參閱[在遠端電腦上執行應用程式](https://go.microsoft.com/fwlink/?LinkId=234914)。
 
   **啟動應用程式**指定當您按下 F5 或按一下 [ **Debug**]、[**開始進行調試**程式] 時，是否要啟動應用程式。 選取 [是] 啟動應用程式；否則選取 [否]。 如果選取 [否]，即使您使用不同的方法啟動應用程式，還是可以對它進行偵錯。
 

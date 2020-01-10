@@ -16,23 +16,23 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 33ca9f91c9b1105af43af21a91f25be13e153aa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 158908c45d33781bc9f983950d5558a23481ad37
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648453"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586571"
 ---
 # <a name="hierarchical-update"></a>階層式更新
 
 *階層式更新*指的是將更新的資料（從包含兩個或多個相關資料表的資料集）傳回資料庫，同時維護參考完整性規則的程式。 *參考完整性*指的是資料庫中的條件約束所提供的一致性規則，可控制插入、更新和刪除相關記錄的行為。 例如，它的參考完整性會強制建立客戶記錄，然後才允許為該客戶建立訂單。  如需資料集中關聯性的詳細資訊，請參閱[dataset 中的關聯](../data-tools/relationships-in-datasets.md)性。
 
-階層式更新功能會使用 `TableAdapterManager` 來管理具型別資料集中的 `TableAdapter`s。 @No__t_0 元件是 Visual Studio 產生的類別，而不是 .NET 類型。 當您從 [**資料來源**] 視窗將資料表拖曳至 Windows FORM 或 WPF 頁面時，Visual Studio 會將 TableAdapterManager 類型的變數新增至表單或頁面，而您會在元件匣的設計工具中看到它。 如需 `TableAdapterManager` 類別的詳細資訊，請參閱[tableadapter](../data-tools/create-and-configure-tableadapters.md)的 TableAdapterManager 參考一節。
+階層式更新功能會使用 `TableAdapterManager` 來管理具型別資料集中的 `TableAdapter`。 `TableAdapterManager` 元件是 Visual Studio 產生的類別，而不是 .NET 類型。 當您從 [**資料來源**] 視窗將資料表拖曳至 Windows FORM 或 WPF 頁面時，Visual Studio 會將 TableAdapterManager 類型的變數新增至表單或頁面，而您會在元件匣的設計工具中看到它。 如需 `TableAdapterManager` 類別的詳細資訊，請參閱[tableadapter](../data-tools/create-and-configure-tableadapters.md)的 TableAdapterManager 參考一節。
 
 根據預設，資料集會將相關的資料表視為「僅限關聯」，這表示它不會強制執行 foreign key 條件約束。 您可以在設計階段使用**DataSet 設計工具**來修改該設定。 選取兩個數據表之間的關聯線，以顯示 [**關聯**] 對話方塊。 您在此所做的變更將決定在將相關資料表中的變更傳送回資料庫時，`TableAdapterManager` 的行為。
 
@@ -58,7 +58,7 @@ ms.locfileid: "72648453"
 
 ## <a name="set-the-order-to-perform-updates"></a>設定要執行更新的順序
 
-設定執行更新的順序會設定在資料集的所有資料表中儲存所有已修改資料所需的個別插入、更新和刪除的順序。 啟用階層式更新時，會先執行插入，然後再更新，然後再刪除。 @No__t_0 提供 `UpdateOrder` 屬性，可以設定為先執行更新，然後再插入，然後再刪除。
+設定執行更新的順序會設定在資料集的所有資料表中儲存所有已修改資料所需的個別插入、更新和刪除的順序。 啟用階層式更新時，會先執行插入，然後再更新，然後再刪除。 `TableAdapterManager` 提供 `UpdateOrder` 屬性，可以設定為先執行更新，然後再插入，然後再刪除。
 
 > [!NOTE]
 > 請務必瞭解更新順序全都包含在內。 也就是說，在執行更新時，會針對資料集內的所有資料表執行插入，然後刪除。
@@ -80,7 +80,7 @@ ms.locfileid: "72648453"
 
 從 [資料來源] 視窗置放項目後，程式碼會自動新增至 `Form_Load` 事件，以填入每個資料表 (`TableAdapter.Fill` 方法)。 程式碼也會新增至 <xref:System.Windows.Forms.BindingNavigator> 的 [儲存] 按鈕 Click 事件，以將資料集的資料存回資料庫 (`TableAdapterManager.UpdateAll` 方法)。
 
-產生的儲存程式碼也包含一行會呼叫 `CustomersBindingSource.EndEdit` 方法的程式碼。 更具體來說，它會呼叫第一個 <xref:System.Windows.Forms.BindingSource>that 新增至表單的 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 方法。 換句話說，只會針對從 [**資料來源**] 視窗拖曳至表單上的第一個資料表產生此程式碼。 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼叫會認可目前正在編輯的所有資料繫結控制項中，所有正在進行的變更。 因此，當資料繫結控制項還有焦點時，您可以按一下 [儲存] 按鈕，就會在實際儲存 (`TableAdapterManager.UpdateAll` 方法) 之前，先認可該控制項中所有暫止的編輯項目。
+產生的儲存程式碼也包含一行會呼叫 `CustomersBindingSource.EndEdit` 方法的程式碼。 更具體來說，它會呼叫新增至表單之第一個 <xref:System.Windows.Forms.BindingSource>的 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 方法。 換句話說，只會針對從 [**資料來源**] 視窗拖曳至表單上的第一個資料表產生此程式碼。 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼叫會認可目前正在編輯的所有資料繫結控制項中，所有正在進行的變更。 因此，當資料繫結控制項還有焦點時，您可以按一下 [儲存] 按鈕，就會在實際儲存 (`TableAdapterManager.UpdateAll` 方法) 之前，先認可該控制項中所有暫止的編輯項目。
 
 > [!NOTE]
 > **DataSet 設計工具**只會針對第一個放入表單上的資料表加入 `BindingSource.EndEdit` 程式碼。 因此，您必須對表單上每個關聯資料表，加入一行程式碼以呼叫 `BindingSource.EndEdit` 方法。 在此逐步說明中，這表示您必須加入 `OrdersBindingSource.EndEdit` 方法的呼叫。
@@ -114,7 +114,7 @@ ms.locfileid: "72648453"
 
 根據預設，當您建立包含相關資料表的資料集時，會產生 `TableAdapterManager` 類別。 若要防止產生類別，請將資料集的 [`Hierarchical Update`] 屬性值變更為 [false]。 當您將具有關聯性的資料表拖曳至 Windows Form 或 WPF 頁面的設計介面時，Visual Studio 會宣告類別的成員變數。 如果您不使用資料系結，就必須手動宣告變數。
 
-@No__t_0 類別不是 .NET 型別。 因此，您無法在檔中查閱。 它是在設計階段建立，做為資料集建立過程的一部分。
+`TableAdapterManager` 類別不是 .NET 型別。 因此，您無法在檔中查閱。 它是在設計階段建立，做為資料集建立過程的一部分。
 
 以下是 `TableAdapterManager` 類別的常用方法和屬性：
 

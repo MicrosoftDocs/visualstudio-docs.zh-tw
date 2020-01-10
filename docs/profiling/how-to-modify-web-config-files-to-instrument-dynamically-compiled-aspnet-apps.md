@@ -1,21 +1,22 @@
 ---
-title: Web.Config 檔案：檢測並分析動態編譯的 ASP.NET Web 應用程式
+title: Web.config 檔案：檢測 & 分析動態編譯的 ASP.NET web 應用程式
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: e1e0f6377da52a0f1b26a6f50db44efc9a847f30
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 6fb67a5b0da186bd87b9e5c39204e3acccc0529f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032942"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775394"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>作法：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具檢測方法從動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式收集詳細執行時間資料、.NET 記憶體配置資料，以及 .NET 物件存留期資料。
 
  本主題描述如何修改 *web.config* 組態檔，以啟用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的檢測和分析。
@@ -139,7 +140,7 @@ ms.locfileid: "67032942"
    | 屬性名稱 | 屬性值 |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
-   | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
+   | **值** | `PerformanceToolsFolder` **\VSInstr.Exe** |
 
 4. 加入另一個 **add** 項目做為 **appSettings** 項目的子系。
 
@@ -148,7 +149,7 @@ ms.locfileid: "67032942"
    |屬性名稱|屬性值|
    |--------------------|---------------------|
    |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|
-   |**value**|`PerformanceToolsFolder`|
+   |**值**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` 是程式碼剖析工具可執行檔的路徑。 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
 
@@ -219,6 +220,6 @@ ms.locfileid: "67032942"
 
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：檢測動態編譯的 ASP.NET 應用程式並收集詳細計時資料](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 - [如何：檢測動態編譯的 ASP.NET 應用程式並收集記憶體資料](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

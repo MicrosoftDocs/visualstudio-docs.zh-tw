@@ -2,21 +2,21 @@
 title: 從網域指定的語言產生程式碼
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5000b8b6150fe630959f4cc4bbc58617e98d4a3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662027"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596576"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>從網域指定的語言產生程式碼
 
-Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 提供一種強大的方式，可從模型中所代表的資料產生程式碼、檔、設定檔和其他成品。 您可以使用 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 來建立一組代表資料的類別，也可以在名稱和屬性反映該資料的類別中撰寫文字模板。
+Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 提供一種強大的方式，可從模型中所代表的資料產生程式碼、檔、設定檔和其他成品。 您可以使用 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]來建立一組代表資料的類別，也可以在名稱和屬性反映該資料的類別中撰寫文字模板。
 
 例如，Fabrikam 有客戶名稱和電子郵件地址的 XML 檔案。 他們的開發人員建立了一個模型，其中 Customer 是一個類別，其中包含屬性名稱和電子郵件。 它們會撰寫數個文字模板來處理資料，包括此片段會產生所有客戶的資料表做為 HTML 網頁的一部分：
 
@@ -28,21 +28,21 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 提供一種強大的�
 <# } #>  </table>
 ```
 
-處理客戶資料庫時，會將 XML 檔案讀入模型存放區中。 使用 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 建立的指示詞*處理器*，可將 Customer 類別提供給文字模板中的程式碼使用。 許多文字模板都可以針對相同的存放區來執行。
+處理客戶資料庫時，會將 XML 檔案讀入模型存放區中。 使用 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]建立的指示詞*處理器*，可將 Customer 類別提供給文字模板中的程式碼使用。 許多文字模板都可以針對相同的存放區來執行。
 
-文字模板是 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 的必備要素。 它們可用來產生領域模型專案的原始程式碼，以及用來將工具與 Visual Studio 整合的 VSPackage 和控制項。
+文字模板是 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]的必備要素。 它們可用來產生領域模型專案的原始程式碼，以及用來將工具與 Visual Studio 整合的 VSPackage 和控制項。
 
-本節討論一些建立、修改和調試 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 中使用之文字模板的方式。
+本節討論一些建立、修改和調試 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]中使用之文字模板的方式。
 
-## <a name="in-this-section"></a>本節內容
+## <a name="in-this-section"></a>本章節內容
 
 [從文字模板存取模型](../modeling/accessing-models-from-text-templates.md)\
 提供有關在文字模板中參考特定領域語言的基本資訊。
 
-[逐步解說：@No__t_1 存取模型的文字模板進行偵錯工具 ](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
+[逐步解說：對存取模型的文字模板進行偵錯工具](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)\
 描述如何在參照特定領域語言的文字模板上進行疑難排解和偵錯工具。
 
-[逐步解說：將主機連接至產生的指示詞處理器 ](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md) \
+[逐步解說：將主機連接至產生的](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)指示詞處理器\
 說明如何將自訂主機連接至產生的指示詞處理器。
 
 [DslTextTransform 命令](../modeling/the-dsltexttransform-command.md)\

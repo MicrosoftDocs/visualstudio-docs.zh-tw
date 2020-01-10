@@ -6,21 +6,21 @@ f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dfdbe972034920869908c1bac1cb349c98d96d3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650715"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597109"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>瀏覽並選取 .NET 類型對話方塊
 
-在 [**屬性**] 視窗、對話方塊或設計工具（例如 [變數設計工具]）中，當您選取 [從資料類型清單**流覽類型]** 時，會是 [**流覽並選取 .net 類型**] 對話方塊（在縮寫形式中稱為「類型」瀏覽器」）。 在這個對話方塊中，您可以從組件與專案的樹狀檢視中選擇型別。
+在 [**屬性**] 視窗、對話方塊或設計工具（例如 [變數設計工具]）中，當您選取 [從資料類型清單**流覽類型]** 時，會是 [**流覽並選取 .net 類型**] 對話方塊（在縮寫形式中稱為「類型瀏覽器」）。 在這個對話方塊中，您可以從組件與專案的樹狀檢視中選擇型別。
 
 有幾個使用者案例會採用這個對話方塊，包括下列：
 
@@ -31,7 +31,7 @@ ms.locfileid: "72650715"
 - 在 <xref:System.Activities.Statements.TryCatch> 活動上加入 catch 時。
 
 > [!NOTE]
-> 型別瀏覽器可以顯示 Visual Basic 不規則陣列型別，而不是多維陣列型別。 如需詳細資訊，請參閱[不規則陣列](http://go.microsoft.com/fwlink/?LinkId=195226)和[多維陣列](http://go.microsoft.com/fwlink/?LinkId=195227)。
+> 型別瀏覽器可以顯示 Visual Basic 不規則陣列型別，而不是多維陣列型別。 如需詳細資訊，請參閱[不規則陣列](/previous-versions/visualstudio/visual-studio-2008/hkhhsz9t(v=vs.90))和[多維陣列](/previous-versions/visualstudio/visual-studio-2008/d2de1t93(v=vs.90))。
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>從型別瀏覽器選取值或參考型別
 
@@ -39,7 +39,7 @@ ms.locfileid: "72650715"
 
 1. 在 [**類型名稱**] 方塊中，輸入您要使用之類型的名稱。
 
-2. 執行下列任一步驟：
+2. 請執行下列其中一項動作：
 
     - 一旦您要使用的型別名稱出現在 [**型別名稱**] 方塊的樹狀結構中，請按兩下該型別來選取它。
 
@@ -63,7 +63,7 @@ ms.locfileid: "72650715"
 
 當您輸入更多字元來尋找相符項時，[**類型名稱**] 方塊中的類型清單會變短。 只有 fullyqualified 名稱開頭為您所輸入字串的類型，或以您所輸入的字串開頭的類型，才會出現在篩選清單中。
 
-例如:
+例如：
 
 1. 輸入**作業**會符合 <xref:System.OperationCanceledException>，但不會 <xref:System.InvalidOperationException>。 若要符合 <xref:System.InvalidOperationException>，一開始請輸入 System.I 或 Invalid。
 
@@ -75,4 +75,4 @@ ms.locfileid: "72650715"
 
 ## <a name="see-also"></a>請參閱
 
-- [使用活動設計工具](../workflow-designer/using-the-activity-designers.md)
+- [使用活動設計工具](control-flow-activity-designers.md)

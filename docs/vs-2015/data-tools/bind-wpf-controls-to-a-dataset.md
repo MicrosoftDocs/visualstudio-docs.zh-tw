@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 70dfaa5671f589c02560a554a6d50611c5364c82
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f0ad4ea108cb0ec3b874c7f360be2e1f0e25ef45
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651192"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299425"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>將 WPF 控制項繫結至資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +42,12 @@ ms.locfileid: "72651192"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- 對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以從[CodePlex 網站](http://go.microsoft.com/fwlink/?linkid=87843)下載 AdventureWorksLT 資料庫。
+- 對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以從[CodePlex 網站](https://go.microsoft.com/fwlink/?linkid=87843)下載 AdventureWorksLT 資料庫。
 
   預先了解下列概念也有助於完成此逐步解說 (但非必要)：
 
@@ -60,7 +60,7 @@ ms.locfileid: "72651192"
 ## <a name="create-the-project"></a>建立專案
  建立新的 WPF 專案。 此專案將顯示產品記錄。
 
-#### <a name="to-create-the-project"></a>建立專案
+#### <a name="to-create-the-project"></a>若要建立專案
 
 1. 啟動 Visual Studio。
 
@@ -101,7 +101,7 @@ ms.locfileid: "72651192"
 
 7. 在 [選擇您的資料庫物件] 頁面中，展開 [資料表]，然後選取 **Product (SalesLT)** 資料表。
 
-8. 按一下 [ **完成**]。
+8. 按一下 **[完成]** 。
 
      Visual Studio 會將新的 Adventureworksltdataset.xsd 新增至專案，並將對應的**adventureworksltdataset.xsd**專案加入至 [**資料來源**] 視窗。 AdventureWorksLTDataSet.xsd 檔案會定義名稱為 `AdventureWorksLTDataSet` 的類型資料集，以及名稱為 `ProductTableAdapter` 的 TableAdapter。 在此逐步解說稍後的內容中，您會使用 `ProductTableAdapter` 將資料填入資料集，並將變更儲存回資料庫。
 
@@ -126,7 +126,7 @@ ms.locfileid: "72651192"
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4. 按一下 [ **完成**]。
+4. 按一下 **[完成]** 。
 
 ## <a name="define-the-user-interface"></a>定義使用者介面
  透過在 WPF 設計工具中修改 XAML，將數個按鈕加入至視窗。 在此逐步解說稍後的內容中，您會加入程式碼，讓使用者使用這些按鈕捲動及儲存產品記錄的變更。
@@ -192,7 +192,7 @@ ms.locfileid: "72651192"
 
 1. 在設計工具中，按兩下視窗介面上的 **<** 按鈕。
 
-     Visual Studio 會開啟程式碼後置檔案，並建立 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件的新 `backButton_Click` 事件處理常式。
+     Visual Studio 會開啟程式碼後置檔案，並建立 `backButton_Click` 事件的新 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件處理常式。
 
 2. 修改 `Window_Loaded` 事件處理常式，使 `ProductViewSource`、`AdventureWorksLTDataSet` 和 `AdventureWorksLTDataSetProductTableAdapter` 位於方法之外，且整個表單都可以存取。 請只將這些設為全域格式，並在 `Window_Loaded` 事件處理常式中指派它們，如下所示：
 
@@ -218,7 +218,7 @@ ms.locfileid: "72651192"
 
 1. 在設計工具中，按兩下 [儲存變更] 按鈕。
 
-     Visual Studio 會開啟程式碼後置檔案，並建立 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件的新 `saveButton_Click` 事件處理常式。
+     Visual Studio 會開啟程式碼後置檔案，並建立 `saveButton_Click` 事件的新 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件處理常式。
 
 2. 將下列程式碼加入至 `saveButton_Click` 事件處理常式：
 
@@ -256,5 +256,5 @@ ms.locfileid: "72651192"
 
 - 了解如何使用 Visual Studio 中的 [資料來源] 視窗，顯示 WPF 控制項中的相關資料 (也就是父子關聯性中的資料)。 如需詳細資訊，請參閱[逐步解說：在 WPF 應用程式中顯示相關資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [將 wpf 控制項系結至中的資料 Visual Studio 將](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [wpf 控制項](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)系結至 Visual Studio [WPF 和 Silverlight Designer](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)中 Visual Studio 資料[集工具內](../data-tools/dataset-tools-in-visual-studio.md)的資料總覽資料系結[總覽](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

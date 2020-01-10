@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, overriding ToolsVersion setting
 - MSBuild, building solutions with
 ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 151e714a00a3030c2ed502a739c54c28e5ae75d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1706d0e82139da5962fbb43610cdecd6b1477ad1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006745"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590484"
 ---
 # <a name="override-toolsversion-settings"></a>覆寫 ToolsVersion 設定
 您可以使用三種方式中的其中一種來變更專案和方案的工具組︰
@@ -123,7 +123,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     4. 否則，請使用目前的 `ToolsVersion`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [多目標](../msbuild/msbuild-multitargeting-overview.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

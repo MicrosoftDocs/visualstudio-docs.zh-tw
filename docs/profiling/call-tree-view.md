@@ -13,16 +13,17 @@ ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c28ef62629011b222ae1a846c04cbf4cdff17d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440250"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773331"
 ---
-# <a name="call-tree-view"></a>呼叫樹狀圖檢視
+# <a name="call-tree-view"></a>呼叫樹狀圖檢閱
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出其所呼叫的所有函式，以及這些函式呼叫的效能資料。
 
  [呼叫樹狀圖] 檢視也可展開並反白顯示花最多時間或最常取樣的函式的執行路徑。 若要顯示效能資源使用最多的路徑，請以滑鼠右鍵按一下函式，然後按一下 [展開最忙碌路徑]。
@@ -48,7 +49,7 @@ ms.locfileid: "63440250"
 
 - [呼叫樹狀圖檢視](../profiling/call-tree-view-contention-data.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [效能報告檢視](../profiling/performance-report-views.md)
 - [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)
 - [了解取樣資料值](../profiling/understanding-sampling-data-values.md)

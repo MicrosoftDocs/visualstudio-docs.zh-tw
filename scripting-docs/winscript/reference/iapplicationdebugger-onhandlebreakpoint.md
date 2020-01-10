@@ -45,7 +45,7 @@ HRESULT onHandleBreakPoint(
  在中斷點的原因。  
   
  `pError`  
- 在當 `br` 的值為 BREAKREASON_ERROR 時，所提供的執行階段錯誤資訊。  
+ 在BREAKREASON_ERROR `br` 的值時提供的執行階段錯誤資訊。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -57,10 +57,10 @@ HRESULT onHandleBreakPoint(
 ## <a name="remarks"></a>備註  
  當叫用中斷點並呼叫 `IDebugApplication::HandleBreakPoint` 時，就會呼叫這個方法。  
   
- 應用程式會保持擱置，直到偵錯工具 IDE 呼叫 `IRemoteDebugApplication::ResumeFromBreakPoint` 為止。  
+ 應用程式會保持擱置，直到偵錯工具 IDE 呼叫 `IRemoteDebugApplication::ResumeFromBreakPoint`為止。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IApplicationDebugger 介面](../../winscript/reference/iapplicationdebugger-interface.md)   
- [IDebugApplication：： HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)    
- [IRemoteDebugApplication：： ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)    
+ [IDebugApplication：： HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
+ [IRemoteDebugApplication：： ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
  [BREAKREASON 列舉](../../winscript/reference/breakreason-enumeration.md)

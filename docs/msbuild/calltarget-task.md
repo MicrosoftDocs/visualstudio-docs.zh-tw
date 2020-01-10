@@ -11,17 +11,17 @@ helpviewer_keywords:
 - CallTarget task [MSBuild]
 - MSBuild, CallTarget task
 ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7aac5078f5fec4da59538543a9d6123f4473c03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1bad6ab828af1f62818636b3af11232294256c03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823263"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593378"
 ---
 # <a name="calltarget-task"></a>CallTarget 工作
 叫用專案檔內指定的目標。
@@ -29,7 +29,7 @@ ms.locfileid: "62823263"
 ## <a name="task-parameters"></a>工作參數
  下表說明 `CallTarget` 工作的參數。
 
-| 參數 | 說明 |
+| 參數 | 描述 |
 |---------------------------| - |
 | `RunEachTargetSeparately` | 選擇性 `Boolean` 輸入參數。<br /><br /> 如果為 `true`，每個目標會呼叫一次 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎。 如果為 `false`，會呼叫一次 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎以建置所有目標。 預設值為 `false`。 |
 | `TargetOutputs` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含所有建置目標的輸出。 |
@@ -61,6 +61,6 @@ ms.locfileid: "62823263"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [目標](../msbuild/msbuild-targets.md)

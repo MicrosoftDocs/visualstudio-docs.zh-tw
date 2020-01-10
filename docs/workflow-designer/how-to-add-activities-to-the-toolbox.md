@@ -3,17 +3,17 @@ title: 工作流程設計工具-how to：將活動新增至工具箱
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83c2f1ed4db7a7a80e9f5b9e9861c4faa86cbdfa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d3cde4f3a41a1a07f982f85c0c19e9f16b047068
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650359"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593924"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>HOW TO：將活動新增至工具箱
 
@@ -52,7 +52,7 @@ ms.locfileid: "72650359"
 
 4. 選取元件，然後按一下 **[確定]** 。 自訂活動元件會加到元件清單中，而且會自動選取。
 
-    1. 按一下 **[確定**] 以關閉對話方塊。
+    1. 按一下 **[確定]** 關閉對話方塊。
 
 5. 若要顯示 [工具箱]，請從 [ **View** ] 功能表選取 [**工具箱**]。
 

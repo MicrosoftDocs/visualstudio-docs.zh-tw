@@ -30,11 +30,11 @@ ms.locfileid: "72576577"
   
 - 識別碼名稱不能是保留字。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 避免使用不屬於 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 語言定義的字元。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [變數](../../javascript/variables-javascript.md)   
  [特殊字元](../../javascript/advanced/special-characters-javascript.md)   
  [資料類型](../../javascript/data-types-javascript.md)

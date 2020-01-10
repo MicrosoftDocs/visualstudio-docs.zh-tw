@@ -1,17 +1,17 @@
 ---
 title: JavaScript 和 TypeScript
 description: Visual Studio for Mac 中 Javascript 支援的相關資訊
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 7839b3ed777de134bea835c94c428166ea4430f4
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: cc10cd6125dc19571424358fd1ce9de46f7d86c5
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107859"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984895"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript 和 TypeScript 支援
 
@@ -23,11 +23,11 @@ Visual Studio for Mac 透過語法醒目提示、程式碼格式化以及 Intell
 
 ## <a name="adding-a-javascript-file"></a>新增 JavaScript 檔案
 
-JavaScript 檔案最常透過 [新增檔案]  對話方塊新增至 ASP.NET Core 專案。 若要新增 javascript 檔案，請以滑鼠右鍵按一下您的專案，並移至 [新增] > [新增檔案]  ：
+JavaScript 檔案最常透過 [新增檔案] 對話方塊新增至 ASP.NET Core 專案。 若要新增 javascript 檔案，請以滑鼠右鍵按一下您的專案，並移至 [新增] > [新增檔案]：
 
 ![將新檔案新增至專案](media/javascript-image1.png)
 
-從 [新增檔案]  對話方塊中，選取 [Web] > [空白 JS 檔案]  或 [Web] > [TypeScript 檔案]  。 指定名稱，然後選擇 [新增]  ：
+從 [新增檔案] 對話方塊中，選取 [Web] > [空白 JS 檔案] 或 [Web] > [TypeScript 檔案]。 指定名稱，然後選擇 [新增]：
 
 ![從範本建立新的 typescript 檔案](media/javascript-image2.png)
 
@@ -43,6 +43,6 @@ Visual Studio for Mac 中的 Javascript intellisense 可以型別推斷、JSDoc 
 
     ![新增 TypeScript 定義檔](media/javascript-image3.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [JavaScript IntelliSense (Windows 上的 Visual Studio)](/visualstudio/ide/javascript-intellisense)

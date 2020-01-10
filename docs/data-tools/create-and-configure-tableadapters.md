@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], TableAdapters
 - data [Visual Studio], creating table adapters
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f1403d61dd7a0d36401e449806fdafa6adc533b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e5a557aeeee3fca2bef0367a630dfaca04b3a74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648610"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586779"
 ---
 # <a name="create-and-configure-tableadapters"></a>建立和設定 TableAdapter
 
@@ -54,7 +54,7 @@ Tableadapter 會提供您的應用程式與資料庫之間的通訊。 它們會
 從已選取預存程序將參數對應至資料表中對應的資料行。 例如，如果您的預存程式接受名為 `@CompanyName` 的參數，並將它傳遞給資料表中的 `CompanyName` 資料行，請將 `@CompanyName` 參數的**Source 資料行**設定為 `CompanyName`。
 
 > [!NOTE]
-> 指派給 SELECT 命令的預存程式，是藉由呼叫您在 wizard 的下一個步驟中命名的 TableAdapter 方法來執行。 預設方法是 `Fill`，因此通常用來執行 SELECT 程式的程式碼是 `TableAdapter.Fill(tableName)`。 如果您從 `Fill` 變更預設名稱，請將 `Fill` 替換為您指派的名稱，並以 TableAdapter 的實際名稱取代 "TableAdapter" （例如，`CustomersTableAdapter`）。
+> 指派給 SELECT 命令的預存程式，是藉由呼叫您在 wizard 的下一個步驟中命名的 TableAdapter 方法來執行。 預設方法是 `Fill`，因此通常用來執行 SELECT 程式的程式碼是 `TableAdapter.Fill(tableName)`。 如果您從 `Fill`變更預設名稱，請將 `Fill` 替換為您指派的名稱，並以 TableAdapter 的實際名稱取代 "TableAdapter" （例如，`CustomersTableAdapter`）。
 
 - 選取 [**建立方法以直接將更新傳送至資料庫**] 選項相當於將 [`GenerateDBDirectMethods`] 屬性設定為 [true]。 當原始 SQL 陳述式未提供足夠的資訊，或查詢不是可更新的查詢時，就無法使用此選項。 例如，在**聯結**查詢和傳回單一（純量）值的查詢中，可能會發生這種情況。
 
@@ -74,7 +74,7 @@ Wizard 中的**Advanced 選項**可讓您：
 
 您可以使用 [TableAdapter 查詢設定] Wizard 來建立和編輯 TableAdapter 的其他查詢。 這些額外的查詢必須符合資料表架構，除非它們傳回純量值。  每個額外的查詢都有您指定的名稱。
 
-下列範例說明如何呼叫名為 `FillByCity` 的其他查詢：
+下列範例說明如何呼叫名為 `FillByCity`的其他查詢：
 
 `CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, "Seattle")`
 
@@ -82,7 +82,7 @@ Wizard 中的**Advanced 選項**可讓您：
 
 1. 在 [DataSet 設計工具] 中開啟資料集。
 
-2. 如果您要建立新的查詢，請將**查詢**物件從 [**工具箱**] 的 [**資料集**] 索引標籤拖曳至 <xref:System.Data.DataTable>，或從 TableAdapter 的快捷方式功能表選取 [**加入查詢**]。 您也可以將**查詢**物件拖曳至**DataSet 設計工具**的空白區域，以建立沒有相關聯 <xref:System.Data.DataTable> 的 TableAdapter。 這些查詢只能傳回單一（純量）值，或對資料庫執行 UPDATE、INSERT 或 DELETE 命令。
+2. 如果您要建立新的查詢，請將**查詢**物件從 [**工具箱**] 的 [**資料集**] 索引標籤拖曳至 <xref:System.Data.DataTable>，或從 TableAdapter 的快捷方式功能表選取 [**加入查詢**]。 您也可以將**查詢**物件拖曳至**DataSet 設計工具**的空白區域，以建立沒有相關聯 <xref:System.Data.DataTable>的 TableAdapter。 這些查詢只能傳回單一（純量）值，或對資料庫執行 UPDATE、INSERT 或 DELETE 命令。
 
 3. 在 [**選擇您的資料連線**] 畫面上，選取或建立查詢將使用的連接。
 

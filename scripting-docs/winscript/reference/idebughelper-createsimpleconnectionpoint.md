@@ -41,7 +41,7 @@ HRESULT CreateSimpleConnectionPoint(
  在要包裝的 `IDispatch` 物件。  
   
  `ppscp`  
- 脫銷包裝 `pdisp` 的事件介面。  
+ 脫銷包裝 `pdisp`的事件介面。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -53,6 +53,6 @@ HRESULT CreateSimpleConnectionPoint(
 ## <a name="remarks"></a>備註  
  傳回包裝指定 `IDispatch` 的事件介面（請參閱[ISimpleConnectionPoint 介面](../../winscript/reference/isimpleconnectionpoint-interface.md)）。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugHelper 介面](../../winscript/reference/idebughelper-interface.md)   
  [ISimpleConnectionPoint 介面](../../winscript/reference/isimpleconnectionpoint-interface.md)

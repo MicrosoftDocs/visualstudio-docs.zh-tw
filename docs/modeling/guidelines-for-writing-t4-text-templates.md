@@ -2,17 +2,17 @@
 title: 撰寫 T4 文字範本的方針
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b1a8c70a0e7ec95e0545ecf3caf932f582b3c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667281"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596537"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>撰寫 T4 文字範本的方針
 
@@ -115,7 +115,7 @@ MyProject
 
 允許自訂程式碼：提供擴充點。
 
-請考慮在 \< # + 類別功能區塊 # > 中產生虛擬方法。 這可讓您在許多內容中使用單一範本，而不需要修改。 除了修改範本，您還可以建立衍生類別，以提供最小的額外邏輯。 衍生的類別可以是一般程式碼，或者它可以是執行時間範本。
+請考慮在 \<# + 類別功能區塊 # > 中產生虛擬方法。 這可讓您在許多內容中使用單一範本，而不需要修改。 除了修改範本，您還可以建立衍生類別，以提供最小的額外邏輯。 衍生的類別可以是一般程式碼，或者它可以是執行時間範本。
 
 例如，在 MyStandardRunTimeTemplate.tt 中：
 
@@ -139,7 +139,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 從文字產生中分隔資料收集。
 
-請嘗試避免混合計算和文字區塊。 在每個文字模板中，使用第一個 \< # 程式碼區塊 # > 來設定變數，並執行複雜的計算。 從第一個文字區塊向下到範本的結尾，或第一個 \< # + 類別功能區塊 # >，避免長運算式，並避免迴圈和條件，除非它們包含文字區塊。 這種作法可讓範本更容易閱讀和維護。
+請嘗試避免混合計算和文字區塊。 在每個文字模板中，使用第一個 \<# 程式碼區塊 # > 來設定變數，並執行複雜的計算。 從第一個文字區塊向下到範本的結尾，或第一個 \<# + 類別功能區塊 # >，避免長運算式，並避免迴圈和條件，除非它們包含文字區塊。 這種作法可讓範本更容易閱讀和維護。
 
 請勿使用包含檔案的 `.tt`。
 
@@ -151,7 +151,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 請考慮使用具類型的模型。
 
-雖然您可以為模型建立 XML 或資料庫架構，但建立特定領域語言（DSL）可能會很有用。 DSL 的優點是它會產生類別來表示架構中的每個節點，以及代表屬性的屬性。 這表示您可以根據商務模型來進行程式設計。 例如:
+雖然您可以為模型建立 XML 或資料庫架構，但建立特定領域語言（DSL）可能會很有用。 DSL 的優點是它會產生類別來表示架構中的每個節點，以及代表屬性的屬性。 這表示您可以根據商務模型來進行程式設計。 例如：
 
 ```
 Team Members:

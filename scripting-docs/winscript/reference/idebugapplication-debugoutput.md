@@ -51,6 +51,6 @@ HRESULT DebugOutput(
   
  這個方法會導致呼叫 `IApplicationDebugger::onDebugOutput`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)

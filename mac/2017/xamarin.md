@@ -1,16 +1,16 @@
 ---
 title: Xamarin
 description: '使用 Visual Studio for Mac 中的 Xamarin 可讓您建立以 iOS、Mac、Android、tvOS 和 watchOS 為目標的跨平台應用程式 '
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c9b150c55e54b851e96e3bfb22e5e9a77646f7d7
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: bba9d3490c12e661277b82dd08d6d7862ec3a8aa
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872262"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983465"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 行動裝置應用程式開發
 
@@ -32,7 +32,7 @@ iOS 設計工具已與 Visual Studio for Mac 完全整合在一起，以視覺�
 
 ![iOS 分鏡腳本設計工具](media/intro-image30.png)
 
-如需使用 iOS 詳細資訊，請參閱 [Designer](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos) (設計工具) 指南。
+如需使用 iOS 詳細資訊，請參閱 [Designer](/xamarin/ios/user-interface/designer/?tabs=macos) (設計工具) 指南。
 
 ### <a name="mac"></a>Mac
 
@@ -45,7 +45,7 @@ Xamarin 提供可讓您建立美觀 Mac 應用程式的原生 Mac API 繫結。
 > [!Note]
 > 這些產品只能搭配 Visual Studio Enterprise 訂閱使用。
 
-### <a name="profiler"></a>程式碼剖析工具
+### <a name="profiler"></a>Profiler
 
 Xamarin Profiler 有三種工具可供分析所用。 [Xamarin Profiler 簡介](/xamarin/tools/profiler/index?tabs=macos)指南探討這些工具測量的內容，以及它們如何分析您的應用程式，並釐清每個畫面上顯示的資料意義。
 

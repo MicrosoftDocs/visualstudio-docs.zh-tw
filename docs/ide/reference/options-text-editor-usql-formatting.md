@@ -8,23 +8,23 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.Indentation
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.General
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e57470c1afa0fad97265bdcebff4fd9a2a0a43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666671"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568265"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>選項、文字編輯器、U-SQL、格式化
 
 使用 [格式化] 選項頁面，可設定在程式碼編輯器中用於程式碼格式化的選項。 若要存取此選項頁面，請選擇 [工具] > [選項]。 在 [選項] 對話方塊中，選擇 [文字編輯器] > [U-SQL] > [格式化]。
 
-## <a name="general-page"></a>[一般] 頁面
+## <a name="general-page"></a>一般頁面
 
 ### <a name="general-settings"></a>一般設定
 

@@ -9,14 +9,15 @@ ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870282"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779879"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
 
@@ -30,21 +31,18 @@ ms.locfileid: "68870282"
 
  Visual Studio 分析工具可讓您限制資料收集。 本逐步解說所提供的範例說明如何使用分析工具 API 來限制資料收集。 Visual Studio 分析工具提供用於控制應用程式內資料收集的 API。
 
- ::: moniker range=">=vs-2019"
- 針對機器碼，Visual Studio 分析工具 API 位在 *VSPerf.dll* 中。 標頭檔 (*VSPerf.h*) 和匯入程式庫 (*VSPerf.lib*) 位在 *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* 目錄中。  針對 64 位元應用程式，資料夾為 *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK*
- ::: moniker-end
  ::: moniker range="vs-2017"
  針對機器碼，Visual Studio 分析工具 API 位在 *VSPerf.dll* 中。 標頭檔 (*VSPerf.h*) 和匯入程式庫 (*VSPerf.lib*) 位在 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 目錄中。  針對 64 位元應用程式，資料夾為 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
  ::: moniker-end
 
  針對受控碼，分析工具 API 位在 *Microsoft.VisualStudio.Profiler.dll* 中。 這個 DLL 位於 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄。 針對 64 位元應用程式，資料夾為 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*。 如需詳細資訊，請參閱[分析工具](/previous-versions/ms242704(v=vs.140))。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
  本逐步解說假設您所選擇的開發環境設定成支援偵錯和取樣。 下列主題概述這些必要條件：
 
-- [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
+- [操作說明：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
 
-- [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)
+- [操作說明：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)
 
  根據預設，啟動分析工具時，分析工具會收集全域層級的資料。 程式開頭的下列程式碼會關閉全域分析。
 
@@ -126,15 +124,15 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>在 Visual Studio IDE 中收集和檢視資料
 
-1. 開啟 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。 在 [分析]  功能表上，指向 [分析工具]  ，然後選取 [新增效能工作階段]  。
+1. 開啟 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。 在 [分析] 功能表上，指向 [分析工具]，然後選取 [新增效能工作階段]。
 
-2. 在 [效能總管]  視窗中，將已編譯的二進位檔新增至 [目標]  清單。 以滑鼠右鍵按一下 [目標]  ，然後選取 [新增目標二進位檔]  。 在 [新增目標二進位檔]  對話方塊中，找到二進位檔，然後按一下 [開啟]  。
+2. 在 [效能總管] 視窗中，將已編譯的二進位檔新增至 [目標] 清單。 以滑鼠右鍵按一下 [目標]，然後選取 [新增目標二進位檔]。 在 [新增目標二進位檔] 對話方塊中，找到二進位檔，然後按一下 [開啟]。
 
-3. 在 [效能總管]  工具列的 [方法]  清單中，選取 [檢測]  。
+3. 在 [效能總管] 工具列的 [方法] 清單中，選取 [檢測]。
 
-4. 按一下 [啟動並啟用分析]  。
+4. 按一下 [啟動並啟用分析]。
 
-    分析工具會檢測和執行二進位檔，並建立效能報表檔案。 效能報表檔案會出現在 [效能總管]  的 [報表]  節點中。
+    分析工具會檢測和執行二進位檔，並建立效能報表檔案。 效能報表檔案會出現在 [效能總管] 的 [報表] 節點中。
 
 5. 開啟產生的效能報表檔案。
 
@@ -154,11 +152,11 @@ DataCollection.CurrentId);
 
      **VsPerfCLREnv /traceon**
 
-3. 輸入下列命令：**VSInstr \<>.exe**
+3. 輸入下列命令：**VSInstr \<檔案名稱>.exe**
 
 4. 輸入下列命令：**VSPerfCmd /start:trace /output:\<檔案名稱>.vsp**
 
-5. 輸入下列命令：**VSPerfCmd /globaloff**
+5. 輸入下列命令： **VSPerfCmd /globaloff**
 
 6. 執行程式。
 
@@ -168,7 +166,7 @@ DataCollection.CurrentId);
 
      在目前目錄中，會使用產生的效能資料來建立 .*csv* 檔案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼剖析工具](/previous-versions/ms242704(v=vs.140))
 - [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)

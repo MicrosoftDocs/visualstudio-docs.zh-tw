@@ -6,21 +6,21 @@ helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e644fd6fc521318512bbc5dd25838a379af78a9
-ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
-ms.translationtype: HT
+ms.openlocfilehash: 4f1b0e774d70c5787a7221aa0dfa7b0834dac7e3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141162"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588287"
 ---
 # <a name="customize-your-build"></a>自訂組建
 
-使用標準建置程序 (匯入 Microsoft.Common.props  和 Microsoft.Common.targets  ) 的 MSBuild 專案有幾個擴充性攔截程序，可以用來自訂您的建置程序。
+使用標準建置程序 (匯入 Microsoft.Common.props 和 Microsoft.Common.targets) 的 MSBuild 專案有幾個擴充性攔截程序，可以用來自訂您的建置程序。
 
 ## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>將引數新增至專案的命令列 MSBuild 引動過程
 
@@ -179,7 +179,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 
 MSBuild 在建置方案檔時，會先在內部將其轉換成專案檔，再建置該檔案。 產生的專案檔會在定義任何目標之前匯入 `before.{solutionname}.sln.targets`，並在匯入目標之後匯入 `after.{solutionname}.sln.targets`，包括安裝到 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` 和 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` 目錄的目標。
 
-例如，您可以在建置 *MyCustomizedSolution.sln* 之後，定義新的目標來寫入自訂記錄訊息，方法是在名為 after.MyCustomizedSolution.sln.targets  的相同目錄中建立一個檔案，其中包含：
+例如，您可以在建置 *MyCustomizedSolution.sln* 之後，定義新的目標來寫入自訂記錄訊息，方法是在名為 after.MyCustomizedSolution.sln.targets 的相同目錄中建立一個檔案，其中包含：
 
 ```xml
 <Project>
@@ -189,7 +189,7 @@ MSBuild 在建置方案檔時，會先在內部將其轉換成專案檔，再建
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 

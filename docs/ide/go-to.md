@@ -7,25 +7,25 @@ helpviewer_keywords:
 - code editor, go to line
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a810e96b410c0f1f6f5d6ffdaa07b1e007abd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654646"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593781"
 ---
 # <a name="find-code-using-go-to-commands"></a>使用移至命令來尋找程式碼
 
 Visual Studio 的 [移至] 命令會對程式碼執行焦點式搜尋，協助您快速找出指定的項目。 您可以透過簡潔的整合介面，移至特定行、類型、符號、檔案和成員。
 
-## <a name="how-to-use-it"></a>如何使用
+## <a name="how-to-use-it"></a>使用方式
 
-輸入 | 功能
+輸入 | 函數
 ------------ | ---
 **鍵盤** | 按 **Ctrl**+**T** 或 **Ctrl**+ **,**
 **滑鼠** | 選取 [編輯] > [移至] > [Go To All (移至全部)]
@@ -53,7 +53,7 @@ Visual Studio 的 [移至] 命令會對程式碼執行焦點式搜尋，協助�
 若要縮小搜尋範圍至特定類型的程式碼項目，您可以在 [搜尋] 方塊中指定前置詞，或選取五個篩選條件圖示的其中一個：
 
 前置詞 | 圖示 | 快速鍵 | 描述
-:-: | - | - | -
+：-: | - | - | -
 :| ![行圖示](media/gotoall-line-icon.png) | **Ctrl**+**G** | 移至指定的行號
 f| ![檔案圖示](media/gotoall-files-icon.png) | **Ctrl**+**1**、**Ctrl**+**F** | 移至指定的檔案
 r| ![最近使用的檔案圖示](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**、**Ctrl**+**R** | 移至指定的最近瀏覽檔案

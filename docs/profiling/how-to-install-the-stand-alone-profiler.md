@@ -1,5 +1,5 @@
 ---
-title: HOW TO：安裝獨立分析工具 | Microsoft Docs
+title: 如何：安裝獨立分析工具 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +9,17 @@ ms.assetid: cae81c95-83cd-4ab6-8a98-84ef977a2f6d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac7a0ace5c4d6e31516d372baabec9883603300
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 05611b74049307fc0d7c038ecdb275f70c983501
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426837"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778917"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>HOW TO：安裝獨立分析工具
+# <a name="how-to-install-the-stand-alone-profiler"></a>如何：安裝獨立分析工具
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供命令列型獨立分析工具，不用安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 即可執行。 當電腦未安裝或無法安裝開發環境時，就會發生這種情況。 例如，您不應該在生產環境的網頁伺服器上安裝開發環境。
 
 > [!NOTE]
@@ -42,7 +43,7 @@ ms.locfileid: "63426837"
 
 4. 將 **_NT_SYMBOL_PATH** 變數設為 **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols** ，以設定符號伺服器
 
-5. 使用系統環境變數設定好符號伺服器之後，在新的命令提示字元處執行命令列分析工具。 這可讓新的環境變數生效。 在命令提示字元視窗中，鍵入下列命令：
+5. 使用系統環境變數設定好符號伺服器之後，在新的命令提示字元處執行命令列分析工具。 這可讓新的環境變數生效。 在命令提示字元視窗中輸入下列命令：
 
     **start %COMSPEC%**
 
@@ -51,9 +52,9 @@ ms.locfileid: "63426837"
 
 6. 使用 [VSPerfReport](../profiling/vsperfreport.md) 工具將符號序列化成分析資料 (.vsp) 檔案。 使用 **VSPerfReport /summary:all /packsymbols** 參數。 如未在資料檔案中插入符號，請確定設定了 _NT_SYMBOL_PATH 環境變數。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)
 - [逐步解說：使用取樣進行命令列分析](../profiling/walkthrough-command-line-profiling-using-sampling.md)
-- [逐步解說：使用檢測進行命令列分析](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications)
-- [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)
+- [逐步解說：使用檢測進行命令列分析](command-line-profiling-of-stand-alone-applications.md)
+- [操作說明：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

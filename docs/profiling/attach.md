@@ -6,14 +6,15 @@ ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f080957774b33ca00787f061708426a62bd7768f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 634169607a7d581de1b1332d78e8d5abde1a722e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440299"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773735"
 ---
 # <a name="attach"></a>附加
 *VSPerfCmd.exe* **Attach** 選項會開始進行處理序識別碼 (PID) 所指定之執行中處理序的樣本分析。
@@ -37,18 +38,18 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Crosssession** 在登入工作階段以外的工作階段中，啟用分析應用程式。 如果指定 **Start** 選項和 **Crosssession** 選項，則為必要項目。
 
- **Start:**`Method` 初始化命令列分析工具工作階段，並設定指定的分析方法。
+ **Start：** `Method` 初始化命令列 profiler 會話，並設定指定的分析方法。
 
  **TargetCLR** 指定要在分析工作階段中載入多個版本時分析的 .NET Framework Common Language Runtime (CLR) 版本。 預設會分析第一個載入的版本。
 
  **GlobalOn GlobalOff** 繼續 (**GlobalOn**) 或暫停 (**GlobalOff**) 分析，但未結束分析工作階段。
 
- **ProcessOn：**`PID` **ProcessOff:**`PID` 繼續 (**ProcessOn**) 或暫停 (**ProcessOff**) 所指定處理序的分析。
+ **ProcessOn：** `PID` **ProcessOff：** 針對指定的進程，`PID` 繼續（**ProcessOn**）或暫停（**ProcessOff**）程式碼剖析。
 
 ## <a name="interval-options"></a>間隔選項
  下列其中一個取樣間隔選項可以指定於 Attach 命令列上。 預設取樣間隔為 10,000,000 個處理器時脈週期。
 
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`] 指定取樣間隔的數目和類型。
+ **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[<strong>:</strong>Events]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`] 指定取樣間隔的數目和類型。
 
 - **Timer** - 每 `Cycles` 個處理器時脈週期取樣一次。 如果未指定 `Cycles`，會使用 10,000,000 個週期。
 
@@ -56,7 +57,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
 - **Sys** - 對作業系統每呼叫 `Events` 次取樣一次。 如果未指定 `Events`，則會使用 10 次系統呼叫。
 
-- **Counter** - `Name` 所指定的 CPU 效能計數器每 `Reload` 個數目就取樣一次。 選擇性，`FriendlyName` 可以指定要作為分析工具報表中資料行標頭的字串。
+- **Counter** - `Name` 所指定的 CPU 效能計數器每 `Reload` 個數目就取樣一次。 選擇性，`FriendlyName` 可以指定要作為分析工具報表中資料行標題的字串。
 
 ## <a name="example"></a>範例
  此範例示範如何附加至處理序識別碼為 12345 的執行中應用程式執行個體。
@@ -66,7 +67,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Attach:12345
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)

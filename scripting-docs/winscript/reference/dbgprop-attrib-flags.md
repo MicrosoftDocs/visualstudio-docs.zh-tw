@@ -109,6 +109,6 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
 ## <a name="remarks"></a>備註  
  這些旗標也可用來篩選物件的子系。 其值可與位元 OR 結合。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)   
  [DebugPropertyInfo 結構](../../winscript/reference/debugpropertyinfo-structure.md)

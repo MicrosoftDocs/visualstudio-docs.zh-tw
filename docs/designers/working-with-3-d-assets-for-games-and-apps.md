@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55986a703bd53318f8c0f74b8cf661412a82b716
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634004"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589795"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>使用 3D 資產來打造遊戲和應用程式
 
@@ -46,11 +46,11 @@ DirectX 應用程式通常會結合程式設計邏輯、DirectX API 和高階著
 您可以使用 Visual Studio 著色器設計工具 (即圖形式著色器設計工具) 來建立自訂視覺效果，而不需要知道 HLSL 程式設計。
 
 > [!NOTE]
-> 如需如何開始 DirectX 程式設計的詳細資訊，請參閱 [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633)。 如需如何偵錯 DirectX 應用程式的詳細資訊，請參閱[圖形診斷 (偵錯 DirectX 圖形)](../debugger/graphics/visual-studio-graphics-diagnostics.md)。
+> 如需如何開始 DirectX 程式設計的詳細資訊，請參閱 [DirectX](/windows/win32/directx)。 如需如何偵錯 DirectX 應用程式的詳細資訊，請參閱[圖形診斷 (偵錯 DirectX 圖形)](../debugger/graphics/visual-studio-graphics-diagnostics.md)。
 
 ## <a name="directx-version-compatibility"></a>DirectX 版本相容性
 
-Visual Studio 使用 DirectX 轉譯 2D 和 3D 資產。 您可以選取 DirectX 11 轉譯器或 Windows Advanced Rasterization Platform (WARP) 軟體轉譯器。 DirectX 11 轉譯器對 DirectX 11 和 DirectX 10 GPU 提供高效能硬體加速呈現轉譯。 WARP 轉譯器有助於確定您的資產適用於各種不同的電腦，包含未配備現代化圖形硬體的電腦，以及具有整合式圖形硬體的電腦。 如需 WARP 的詳細資訊，請參閱 [Windows Advanced Rasterization Platform (WARP) 指南](http://go.microsoft.com/fwlink/p/?LinkId=224634)。
+Visual Studio 使用 DirectX 轉譯 2D 和 3D 資產。 您可以選取 DirectX 11 轉譯器或 Windows Advanced Rasterization Platform (WARP) 軟體轉譯器。 DirectX 11 轉譯器對 DirectX 11 和 DirectX 10 GPU 提供高效能硬體加速呈現轉譯。 WARP 轉譯器有助於確定您的資產適用於各種不同的電腦，包含未配備現代化圖形硬體的電腦，以及具有整合式圖形硬體的電腦。 如需 WARP 的詳細資訊，請參閱 [Windows Advanced Rasterization Platform (WARP) 指南](/windows/win32/direct3darticles/directx-warp)。
 
 ## <a name="related-topics"></a>相關主題
 

@@ -2,15 +2,15 @@
 title: 使用 macOS 協助工具選項
 description: 使用 macOS 協助工具選項和功能，例如高對比、鍵盤導覽和 VoiceOver
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 598FC25A-6DA3-44BB-B128-AD979E9F86EA
-ms.openlocfilehash: 82d6d34c78efb425dfdb832cae3efd6c2bbcc425
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 095a65ab27bdcac6521eb771dcca1936b87409cd
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342464"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985082"
 ---
 # <a name="accessibility-features-of-macos"></a>MacOS 的協助工具功能
 
@@ -20,7 +20,7 @@ macOS 是可存取的作業系統，有許多功能可協助使用者進行不�
 
 在 Visual Studio for Mac 中，輔助技術的支援預設為關閉。 若要啟用協助工具支援：
 
-1. 移至**Visual Studio （功能表）**  >  個**喜好**設定 @no__t**其他**，然後選取 **協助工具**。
+1. 移至**Visual Studio （功能表）**  > **喜好**設定 > [**其他**]，然後選取 [**協助工具**]。
 
 1. 選取 [**啟用協助工具**] 核取方塊。
 

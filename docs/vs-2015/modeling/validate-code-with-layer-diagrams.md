@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 45aa7c9807ba08751a354c336b646aa7f7ce641b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659382"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301361"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>使用分層圖驗證程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "72659382"
 
   若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
-  您可以在 Visual Studio 中的開放分層圖或從命令提示字元手動驗證程式碼。 您也可以在執行本機組建或 Team Foundation Build 時自動驗證程式碼。 請參閱[Channel 9 影片：使用分層圖設計和驗證您的架構](http://go.microsoft.com/fwlink/?LinkID=252073)。
+  您可以在 Visual Studio 中的開放分層圖或從命令提示字元手動驗證程式碼。 您也可以在執行本機組建或 Team Foundation Build 時自動驗證程式碼。 請參閱[Channel 9 影片：使用分層圖設計和驗證您的架構](https://go.microsoft.com/fwlink/?LinkID=252073)。
 
 > [!IMPORTANT]
 > 如果您要以 Team Foundation Build 執行圖層驗證，您也必須在您的組建伺服器上安裝相同版本的 Visual Studio。
@@ -99,7 +99,7 @@ ms.locfileid: "72659382"
 2. 若要查看每個錯誤的來源，請按兩下 [**錯誤清單**] 視窗中的錯誤。
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可能會顯示 Code Map，而非錯誤來源。 如果程式碼具有並非由圖層圖表所指定的組件相依性，或是程式碼遺失了圖層圖表所指定的相依性，則會出現此情況。 請檢閱 Code Map 或程式碼，以判斷相依性是否應存在。 如需 code map 的詳細資訊，請參閱[對應方案之間](../modeling/map-dependencies-across-your-solutions.md)的相依性。
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可能會顯示 Code Map，而不是錯誤的來源。 如果程式碼具有並非由圖層圖表所指定的組件相依性，或是程式碼遺失了圖層圖表所指定的相依性，則會出現此情況。 請檢閱 Code Map 或程式碼，以判斷相依性是否應存在。 如需 code map 的詳細資訊，請參閱[對應方案之間](../modeling/map-dependencies-across-your-solutions.md)的相依性。
 
 3. 若要管理錯誤，請參閱[管理驗證錯誤](#ManageErrors)。
 
@@ -137,7 +137,7 @@ ms.locfileid: "72659382"
      msbuild /p:ValidateArchitecture=true
      ```
 
-     發生的任何錯誤都將列出。 如需 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 的詳細資訊，請參閱[msbuild](../msbuild/msbuild.md)和[msbuild Task](../msbuild/msbuild-task.md)。
+     發生的任何錯誤都將列出。 如需 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]的詳細資訊，請參閱[msbuild](../msbuild/msbuild.md)和[msbuild Task](../msbuild/msbuild-task.md)。
 
    如需驗證錯誤的詳細資訊，請參閱[瞭解並解決圖層驗證錯誤](#UnderstandingValidationErrors)。
 
@@ -195,7 +195,7 @@ ms.locfileid: "72659382"
 
     `/p:ValidateArchitecture=true`
 
-   如需驗證錯誤的詳細資訊，請參閱[瞭解並解決圖層驗證錯誤](#UnderstandingValidationErrors)。 如需 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的詳細資訊，請參閱：
+   如需驗證錯誤的詳細資訊，請參閱[瞭解並解決圖層驗證錯誤](#UnderstandingValidationErrors)。 如需有關 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的詳細資訊，請參閱：
 
 - [建置應用程式](/azure/devops/pipelines/index)
 
@@ -243,5 +243,5 @@ ms.locfileid: "72659382"
 
 ## <a name="security"></a>安全性
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)

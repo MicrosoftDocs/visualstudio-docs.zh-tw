@@ -17,12 +17,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 367af4965c1e5a744a7ba6c801d74bc194a70ebb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8e5e004d2e337900d88f72d92bfd439103b87e0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662175"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297841"
 ---
 # <a name="prerequisites-dialog-box"></a>必要條件對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "72662175"
 |-------------|-----------------|
 |**建立安裝程式以安裝必要條件元件**|將必要條件元件包含在應用程式的安裝程式 (Setup.exe) 中，才能在安裝應用程式之前，依照相依性的順序進行安裝。 根據預設，這個選項是選取的。 如果沒有選取這個選項，則不會建立 Setup.exe。|
 |**選擇要安裝的必要條件**|指定是否要安裝元件，例如 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]、Crystal Reports 等。<br /><br /> 例如，選取 [SQL Server 2005 Express Edition SP2]  旁的核取方塊，即指定安裝程式確認這個元件是否已安裝在目標電腦上，如果尚未安裝就會進行安裝。<br /><br /> 如需各個必要條件套件的詳細資訊，請參閱本主題稍後的「必要條件資訊」表格。|
-|**檢查 Microsoft Update 以取得更多可轉散發元件**|按一下這個連結會帶您前往[啟動載入器套件轉散發元件](http://go.microsoft.com/fwlink/?LinkId=208835)網站，以檢查更新。|
+|**檢查 Microsoft Update 以取得更多可轉散發元件**|按一下這個連結會帶您前往[啟動載入器套件轉散發元件](https://go.microsoft.com/fwlink/?LinkId=208835)網站，以檢查更新。|
 |**從元件廠商的網站下載必要條件**|指定從廠商的網站安裝必要條件元件。 這是預設選項。|
 |**從應用程式的相同位置下載必要條件**|指定從應用程式的相同位置安裝必要條件元件。 這個選項會將所有的必要條件套件複製到發行位置。 必要條件套件必須放在開發電腦上，這個選項才能正常運作。|
 |**從下列位置下載必要條件**|指定從您選取的位置安裝必要條件元件。 您可以使用 [瀏覽]  按鈕來選取位置。|
@@ -58,7 +58,7 @@ ms.locfileid: "72662175"
 |**Microsoft Visual Studio 2010 Report Viewer**|本套件會安裝報表檢視器控制項，可以將大量的資料報表加入至 Windows Form 和 ASP.NET 應用程式。|
 |**Microsoft Visual Studio 2010 for Office Runtime (x86 和 x64)**|Visual Studio 中的 Office Developer Tools 提供便於使用的整合式工具，可搭配 Microsoft Office 建立自訂商務方案。 您可以建立使用 Office 應用程式做為使用者介面的 Managed 智慧型用戶端解決方案。 這些工具讓開發人員能夠建立易於部署與維護的安全方案。<br /><br /> 如需詳細資訊，請參閱[如何：使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。|
 |**SQL Server 2005 Express Edition SP2 (x86)**|這個套件會安裝 Microsoft SQL Server 2005 Express Edition SP2，這是以 [!INCLUDE[sqprsqext](../../includes/sqprsqext-md.md)] 為基礎的資料庫應用程式。 SQL Server Express 是 Microsoft SQL Server Desktop Engine (MSDE) 的取代項目。 SQL Server Express 是免費的而且可轉散發 (依合約規定)，可以當做用戶端資料庫以及基本伺服器資料庫。 與 SQL Server 2005 相同，除了以下幾個不同處：<br /><br /> -   不支援企業功能。<br />-   只限於一個 CPU。<br />-   緩衝區集區的記憶體限制為 1 GB。<br />-   資料庫大小上限為 4 GB。|
-|**SQL Server 2008 Express**|此套件會安裝 Microsoft SQL Server 2008 Express (Microsoft SQL Server 2008 的免費版本)，這是小型網路、伺服器或桌面應用程式的理想資料庫。 它可以免費用於開發和生產環境。 隨同應用程式散發 SQL Server 2008 Express 時，必須有免費的註冊。<br /><br /> 啟動載入器的行為如下：<br /><br /> -   如果電腦已有 SQL Server 2008 Express (含) 以後版本，則電腦會保持在 SQL Server 2008 Express (含) 以後版本。<br />-   如果電腦沒有任何 SQL Server 2008 Express (含) 以後版本，則套件會安裝最新版的 SQL Server 2008 Express SP1。<br /><br /> 若要深入了解 SQL Server 2008 Express，請瀏覽 [http://go.microsoft.com/fwlink/?LinkId=183586](http://go.microsoft.com/fwlink/?LinkId=183586)。|
+|**SQL Server 2008 Express**|此套件會安裝 Microsoft SQL Server 2008 Express (Microsoft SQL Server 2008 的免費版本)，這是小型網路、伺服器或桌面應用程式的理想資料庫。 它可以免費用於開發和生產環境。 隨同應用程式散發 SQL Server 2008 Express 時，必須有免費的註冊。<br /><br /> 啟動載入器的行為如下：<br /><br /> -   如果電腦已有 SQL Server 2008 Express (含) 以後版本，則電腦會保持在 SQL Server 2008 Express (含) 以後版本。<br />-   如果電腦沒有任何 SQL Server 2008 Express (含) 以後版本，則套件會安裝最新版的 SQL Server 2008 Express SP1。<br /><br /> 若要深入了解 SQL Server 2008 Express，請瀏覽 [http://go.microsoft.com/fwlink/?LinkId=183586](https://go.microsoft.com/fwlink/?LinkId=183586)。|
 |**Visual C++ 2010 執行階段程式庫 (IA64)**|這個套件會安裝適用於 Itanium 架構的 Visual C++ 執行階段程式庫，以提供 Microsoft Windows 作業系統程式設計所需的常式。 這些常式會自動執行 C 和 C++ 語言所未提供的許多常見的程式設計工作。<br /><br /> 如需詳細資訊，請參閱 [C 執行階段程式庫參考](https://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)。|
 |**Visual C++ 2010 執行階段程式庫 (x64)**|這個套件會安裝適用於 x64 作業系統的 Visual C++ 執行階段程式庫，以提供 Microsoft Windows 作業系統程式設計所需的常式。 這些常式會自動執行 C 和 C++ 語言所未提供的許多常見的程式設計工作。<br /><br /> 如需詳細資訊，請參閱 [C 執行階段程式庫參考](https://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)。|
 |**Visual C++ 2010 執行階段程式庫 (x86)**|這個套件會安裝適用於 x86 作業系統的 Visual C++ 執行階段程式庫，以提供 Microsoft Windows 作業系統程式設計所需的常式。 這些常式會自動執行 C 和 C++ 語言所未提供的許多常見的程式設計工作。<br /><br /> 如需詳細資訊，請參閱 [C 執行階段程式庫參考](https://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)。|
@@ -66,4 +66,4 @@ ms.locfileid: "72662175"
 |**Windows Installer 4.5**|這個套件會安裝 Microsoft Windows Installer 可轉散發套件 4.5 版，以允許安裝 Windows Installer 安裝專案。|
 
 ## <a name="see-also"></a>另請參閱
- [[發行] 頁面、[專案設計工具] ](../../ide/reference/publish-page-project-designer.md) [Application 部署必要條件](../../deployment/application-deployment-prerequisites.md) [Redistributing .NET Framework](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) 64 位應用程式的必要條件 [Deploying ](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Studio 多目標簡要](../../ide/visual-studio-multi-targeting-overview.md)
+ [發行頁面、專案設計](../../ide/reference/publish-page-project-designer.md)工具[應用程式部署必要條件](../../deployment/application-deployment-prerequisites.md)轉散發 [.NET Framework](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) [部署64位應用程式的必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Visual Studio 多目標總覽](../../ide/visual-studio-multi-targeting-overview.md)

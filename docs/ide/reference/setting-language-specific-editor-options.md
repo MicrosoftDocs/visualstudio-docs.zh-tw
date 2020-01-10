@@ -6,17 +6,17 @@ helpviewer_keywords:
 - editor options
 - configure editor
 - editor settings
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa197a855b2a4f0c33520c6b8c1a01311ab6b72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645282"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590835"
 ---
 # <a name="set-language-specific-editor-options"></a>設定語言專用編輯器的選項
 

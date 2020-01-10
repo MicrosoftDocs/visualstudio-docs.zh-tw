@@ -13,17 +13,17 @@ helpviewer_keywords:
 - CreateItem task [MSBuild]
 - MSBuild, CreateItem task
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 369bad5a66ac4a3c41a1a3e22941b11ef27902d2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b722604249b9c395f06bb038102d731fafe2efc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385908"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590068"
 ---
 # <a name="createitem-task"></a>CreateItem 工作
 使用輸入項目填入項目集合。 這可將項目從一個清單複製到另一個。
@@ -34,10 +34,10 @@ ms.locfileid: "63385908"
 ## <a name="attributes"></a>屬性
  下表說明 `CreateItem` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`AdditionalMetadata`|選擇性 `String` 陣列參數。<br /><br /> 指定要附加至輸出項目的其他中繼資料。  使用下列語法來指定項目的中繼資料名稱和值：<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> 您應該使用分號來分隔多個中繼資料名稱/值組。 如果名稱或值包含分號或其他任何特殊字元，則必須逸出它們。 如需詳細資訊，請參閱[如何：在 MSBuild 中逸出特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)。|
-|`Exclude`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定要從輸出項目集合中排除的項目。 此參數可以包含萬用字元規格。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)和[如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。|
+|`Exclude`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定要從輸出項目集合中排除的項目。 此參數可以包含萬用字元規格。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)和[如何︰從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。|
 |`Include`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要包含在輸出項目集合中的項目。 此參數可以包含萬用字元規格。|
 |`PreserveExistingMetadata`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `True`，僅會套用其他中繼資料 (如果它們還不存在)。|
 
@@ -76,6 +76,6 @@ ms.locfileid: "63385908"
 |---------------------|--------------|
 |`MySourceItemsWithMetadata`|file1.resx (`MyMetadata="Hello"`)<br /><br /> file2.resx (`MyMetadata="Hello"`)|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

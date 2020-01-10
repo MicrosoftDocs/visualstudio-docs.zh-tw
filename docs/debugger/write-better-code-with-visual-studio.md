@@ -42,7 +42,7 @@ ms.locfileid: "72000171"
 
 建立應用程式：
 
-1. 開啟 Visual Studio，然後**選擇 [** 檔案  >  個**新**的  >  個**專案**]。 在 **[ C#視覺效果**] 底下，選擇 [ **Windows 桌面**] 或 [ **.net Core**]，然後在中間窗格中選擇**主控台應用程式**。
+1. 開啟 Visual Studio，然後**選擇 [** 檔案 > **新增** > **專案**]。 在 **[ C#視覺效果**] 底下，選擇 [ **Windows 桌面**] 或 [ **.net Core**]，然後在中間窗格中選擇**主控台應用程式**。
 
     > [!NOTE]
     > 如果您沒有看到 [主控台應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發] (或 [.NET Core 跨平台開發]) 工作負載，然後選擇 [修改]。
@@ -184,15 +184,15 @@ namespace Console_Parse_JSON
 
 ## <a name="check-the-light-bulb"></a>檢查燈泡！
 
-第一個紅色波浪線代表編譯時期錯誤。 將滑鼠停留在其上方，您就會看到 ```The name `Encoding` does not exist in the current context``` 的訊息。
+第一個紅色波浪線代表編譯時期錯誤。 將滑鼠停留在其上方，您就會看到 ```The name `Encoding` does not exist in the current context```的訊息。
 
-請注意，此錯誤顯示左下方的燈泡圖示。 除了螺絲起子圖示 ![screwdriver 圖示 @ no__t-1，燈泡圖示 ![light 燈泡圖示 @ no__t-3 代表可協助您修正或重構程式碼內嵌的快速動作。 燈泡代表您*應該*修正的問題。 螺絲起子適用于您可能選擇修正的問題。 使用第一個建議的修正程式，按一下左側的 [**使用系統**] 解決此錯誤。
+請注意，此錯誤顯示左下方的燈泡圖示。 除了螺絲起子圖示 ![螺絲起子圖示](../ide/media/screwdriver-icon.png)，燈泡圖示 ![燈泡圖示](../ide/media/light-bulb-icon.png) 代表可協助您修正或重構程式碼內嵌的快速動作。 燈泡代表您*應該*修正的問題。 螺絲起子適用于您可能選擇修正的問題。 使用第一個建議的修正程式，按一下左側的 [**使用系統**] 解決此錯誤。
 
 ![使用燈泡來修正程式碼](../debugger/media/write-better-code-missing-include.png)
 
-當您按一下此專案時，Visual Studio 會在*Program.cs*檔案的頂端加入 `using System.Text` 語句，紅色的波浪線就會消失。 （如果您不確定建議的修正程式，請選擇右側的 [**預覽變更**] 連結，然後再套用修正程式）。
+當您按一下此專案時，Visual Studio 會在*Program.cs*檔案頂端加入 `using System.Text` 語句，紅色的波浪線就會消失。 （如果您不確定建議的修正程式，請選擇右側的 [**預覽變更**] 連結，然後再套用修正程式）。
 
-先前的錯誤是通常會藉由將新的 `using` 語句加入至您的程式碼來修正的常見錯誤。 這一種常見的類似錯誤，例如 ```The type or namespace `Name` cannot be found.```，這類錯誤可能表示遺漏元件參考（以滑鼠右鍵按一下專案、選擇 [**加入** > **參考**]）、拼錯的名稱，或遺失您需要的程式庫若要加入（ C#針對，請以滑鼠右鍵按一下專案，然後選擇 [**管理 NuGet 套件**]）。
+先前的錯誤是通常會藉由將新的 `using` 語句加入至程式碼來修正的常見錯誤。 這個問題有數個常見的類似錯誤，例如 ```The type or namespace `Name` cannot be found.``` 這類錯誤可能表示遺漏元件參考（以滑鼠右鍵按一下專案、選擇 [**加入** > **參考**]）、拼錯的名稱，或您需要新增的遺漏程式庫（針對，以C#滑鼠右鍵按一下專案，然後選擇 [**管理 NuGet 封裝**]）。
 
 ## <a name="fix-the-remaining-errors-and-warnings"></a>修正其餘的錯誤和警告
 
@@ -200,7 +200,7 @@ namespace Console_Parse_JSON
 
 ![類型轉換錯誤](../debugger/media/write-better-code-conversion-error.png)
 
-由於程式碼分析器無法猜出您的意圖，因此不會有任何燈泡可協助您進行這次。 若要修正此錯誤，您必須知道程式碼的意圖。 在此範例中，因為您嘗試將 `points` 新增至 `totalpoints`，所以不太難看到 `points` 應該是數值（整數）值。
+由於程式碼分析器無法猜出您的意圖，因此不會有任何燈泡可協助您進行這次。 若要修正此錯誤，您必須知道程式碼的意圖。 在此範例中，因為您嘗試將 `points` 加入 `totalpoints`，所以不太難看到 `points` 應該是數值（整數）值。
 
 若要修正這個錯誤，請變更 `User` 類別的 `points` 成員，如下所示：
 
@@ -222,7 +222,7 @@ internal int points;
 
 ![未指派變數的警告訊息](../debugger/media/write-better-code-warning-message.png)
 
-一般而言，這代表需要修正的問題。 不過，在範例應用程式中，您實際上是在還原序列化過程中將資料儲存在 `points` 變數中，然後將該值加入至 `totalpoints` 資料成員。 在此範例中，您知道程式碼的意圖，並且可以安全地忽略此警告。 不過，如果您想要消除警告，可以取代下列程式碼：
+一般而言，這代表需要修正的問題。 不過，在範例應用程式中，您實際上是在還原序列化程式期間將資料儲存在 `points` 變數中，然後將該值加入 `totalpoints` 資料成員中。 在此範例中，您知道程式碼的意圖，並且可以安全地忽略此警告。 不過，如果您想要消除警告，可以取代下列程式碼：
 
 ```csharp
 item.totalpoints = users[i].points;
@@ -243,11 +243,11 @@ item.totalpoints += users[i].points;
 
 按下 **F5** ([偵錯] > [開始偵錯]) 或在偵錯工具列中按下 [開始偵錯] 按鈕 ![開始偵錯](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")。
 
-此時，範例應用程式會擲回 @no__t 0 的例外狀況（執行階段錯誤）。 也就是說，應用程式會在嘗試序列化的資料上以淺的方式來進行。 由於您是在 debug 模式中啟動應用程式（已附加偵錯工具），因此偵錯工具的例外狀況 Helper 會直接帶您前往擲回例外狀況的程式碼，並提供有用的錯誤訊息。
+此時，範例應用程式會擲回 `SerializationException` 例外狀況（執行階段錯誤）。 也就是說，應用程式會在嘗試序列化的資料上以淺的方式來進行。 由於您是在 debug 模式中啟動應用程式（已附加偵錯工具），因此偵錯工具的例外狀況 Helper 會直接帶您前往擲回例外狀況的程式碼，並提供有用的錯誤訊息。
 
 ![發生 SerializationException](../debugger/media/write-better-code-serialization-exception.png)
 
-錯誤訊息會指示 `4o` 的值無法剖析為整數。 因此，在此範例中，您知道資料不正確： `4o` 應該 `40`。 不過，如果您不能控制實際案例中的資料（假設您是從 web 服務取得），那麼您該怎麼做呢？ 如何修正此問題？
+錯誤訊息會指示您 `4o` 的值無法剖析為整數。 因此，在此範例中，您知道資料不正確：應該 `40``4o`。 不過，如果您不能控制實際案例中的資料（假設您是從 web 服務取得），那麼您該怎麼做呢？ 如何修正此問題？
 
 當您遇到例外狀況時，您需要詢問（並回答）幾個問題：
 
@@ -255,7 +255,7 @@ item.totalpoints += users[i].points;
 
 * 這是您的使用者可能會遇到的例外狀況嗎？
 
-如果是前者，請修正 bug。 （在範例應用程式中，這表示會修正錯誤的資料）。如果是後者，您可能需要使用 @no__t 0 區塊來處理常式代碼中的例外狀況（我們會在下一節中探討其他可能的策略）。 在範例應用程式中，取代下列程式碼：
+如果是前者，請修正 bug。 （在範例應用程式中，這表示會修正錯誤的資料）。如果是後者，您可能需要使用 `try/catch` 區塊來處理常式代碼中的例外狀況（我們會在下一節中探討其他可能的策略）。 在範例應用程式中，取代下列程式碼：
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -275,13 +275,13 @@ catch (SerializationException)
 }
 ```
 
-@No__t 0 區塊有一些效能成本，因此您只會在需要時才使用它們，也就是在應用程式的發行版本中可能發生的情況，以及（b）方法的檔指出您應該檢查是否有例外狀況（suming 檔已完成！）。 在許多情況下，您可以適當地處理例外狀況，而使用者也不需要知道它。
+`try/catch` 區塊有一些效能成本，因此您只會在需要時才使用它們，也就是在應用程式的發行版本中可能發生的情況，以及（b）方法的檔指出您應該檢查是否有例外狀況（假設檔已完成！）。 在許多情況下，您可以適當地處理例外狀況，而使用者也不需要知道它。
 
 以下是例外狀況處理的幾個重要秘訣：
 
 * 請避免使用空的 catch 區塊，例如 `catch (Exception) {}`，這不會採取適當的動作來公開或處理錯誤。 空白或不具資訊性的 catch 區塊可以隱藏例外狀況，而且可能會讓您的程式碼更容易進行 debug，而不是更輕鬆。
 
-* 針對在範例應用程式中擲回例外狀況的特定函式（`ReadObject`），使用 `try/catch` 區塊。 如果您在較大的程式碼區塊周圍使用它，最後會隱藏錯誤的位置。 例如，請勿在對 @no__t 父函式的呼叫前後使用 `try/catch` 區塊，如下所示，否則您不會知道發生例外狀況的確切位置。
+* 針對在範例應用程式中擲回例外狀況（`ReadObject`的特定函式，請使用 `try/catch` 區塊。 如果您在較大的程式碼區塊周圍使用它，最後會隱藏錯誤的位置。 例如，請勿在呼叫父函式 `ReadToObject`時使用 `try/catch` 區塊，如下所示，否則您不會知道發生例外狀況的確切位置。
 
     ```csharp
     // Don't do this
@@ -296,7 +296,7 @@ catch (SerializationException)
 
 * 針對您在應用程式中包含的不熟悉函式，特別是與外部資料互動的函式（例如 web 要求），請參閱檔，以查看函式可能會擲回的例外狀況。 這可能是適當的錯誤處理和用於偵測應用程式的重要資訊。
 
-針對範例應用程式，請將 `4o` 變更為 `40`，以修正 @no__t 1 方法中的 `SerializationException`。
+針對範例應用程式，將 `4o` 變更為 `40`，以修正 `GetJsonData` 方法中的 `SerializationException`。
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>使用 assert 來闡明您的程式碼意圖
 
@@ -306,7 +306,7 @@ catch (SerializationException)
 
 您可以在此輸出中看到不是正確的東西。 第三筆記錄的**name**和**lastname**是空白的！
 
-這是一項很好的時機，可以說出有用的程式碼撰寫作法，通常是使用量過低的，也就是在函式中使用 `assert` 的語句。 藉由新增下列程式碼，您可以加入執行時間檢查，以確保 `firstname` 和 `lastname` 不 `null`。 取代 `UpdateRecords` 方法中的下列程式碼：
+這是一個很好的時機，可以說是一種很有用的編碼做法，也就是在函式中使用 `assert` 語句。 藉由新增下列程式碼，您可以加入執行時間檢查，以確保不會 `null``firstname` 和 `lastname`。 取代 `UpdateRecords` 方法中的下列程式碼：
 
 ```csharp
 if (existingUser == false)
@@ -339,18 +339,18 @@ if (existingUser == false)
 按一下偵錯工具列中的 [重新啟動] ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp") 按鈕 (**Ctrl** + **Shift** + **F5**)。
 
 > [!NOTE]
-> 只有在 Debug 組建中，`assert` 的程式碼才會是作用中狀態。
+> `assert` 程式碼只在 Debug 組建中為作用中。
 
 當您重新開機時，偵錯工具會在 `assert` 語句上暫停，因為運算式 `users[i].firstname != null` 會評估為 `false`，而不是 `true`。
 
 ![Assert 解析為 false](../debugger/media/write-better-code-using-assert.png)
 
-[@No__t-0] 錯誤指出您需要調查的問題。 `assert` 可以涵蓋許多您不一定會看到例外狀況的案例。 在此範例中，使用者不會看到例外狀況，而 @no__t 0 值會在記錄清單中新增為 `firstname`。 這可能會在稍後造成問題（例如您在主控台輸出中看到），而且可能會比較難進行調試。
+`assert` 錯誤指出您需要調查的問題。 `assert` 可以涵蓋許多您不一定會看到例外狀況的案例。 在此範例中，使用者不會看到例外狀況，而且會在您的記錄清單中加入 `firstname` 的 `null` 值。 這可能會在稍後造成問題（例如您在主控台輸出中看到），而且可能會比較難進行調試。
 
 > [!NOTE]
-> 在您對 `null` 值呼叫方法的情況下，會產生 @no__t 1 的結果。 您通常會想要避免針對一般例外狀況（也就是未系結至特定程式庫函式的例外狀況）使用 `try/catch` 區塊。 任何物件都可以擲回 `NullReferenceException`。 如果您不確定，請參閱程式庫函式的檔。
+> 在您呼叫 `null` 值上之方法的案例中，`NullReferenceException` 的結果。 您通常會想要避免使用 `try/catch` 區塊進行一般例外狀況，也就是未系結至特定程式庫函式的例外狀況。 任何物件都可以擲回 `NullReferenceException`。 如果您不確定，請參閱程式庫函式的檔。
 
-在進行偵錯工具的過程中，保留特定的 `assert` 語句是很好的，直到您知道需要用實際的程式碼修正來取代它為止。 假設您決定使用者可能會在應用程式的發行組建中遇到例外狀況。 在這種情況下，您必須重構程式碼，以確保您的應用程式不會擲回嚴重例外狀況，或導致其他錯誤。 因此，若要修正此程式碼，請取代下列程式碼：
+在進行偵錯工具的過程中，保留特定的 `assert` 語句是很好的，直到您知道需要以實際的程式碼修正來取代它為止。 假設您決定使用者可能會在應用程式的發行組建中遇到例外狀況。 在這種情況下，您必須重構程式碼，以確保您的應用程式不會擲回嚴重例外狀況，或導致其他錯誤。 因此，若要修正此程式碼，請取代下列程式碼：
 
 ```csharp
 if (existingUser == false)
@@ -366,9 +366,9 @@ if (existingUser == false && users[i].firstname != null && users[i].lastname != 
     User user = new User();
 ```
 
-藉由使用此程式碼，您可以滿足您的程式碼需求，並確認具有 `firstname` 或 @no__t 1 值（`null`）的記錄不會加入至資料。
+藉由使用此程式碼，您可以滿足您的程式碼需求，並確定具有 `firstname` 或 `lastname` 值 `null` 的記錄不會加入至資料中。
 
-在此範例中，我們在迴圈內新增了兩個 @no__t 0 的語句。 一般來說，使用 `assert` 時，最好在函式或方法的進入點（開頭）新增 `assert` 語句。 您目前正在查看範例應用程式中的 `UpdateRecords` 方法。 在此方法中，如果其中一個方法引數 `null`，您就知道您有問題，因此請在函式的進入點使用 `assert` 語句來檢查它們。
+在此範例中，我們在迴圈內新增了兩個 `assert` 語句。 一般來說，使用 `assert`時，最好是在函式或方法的進入點（開頭）新增 `assert` 語句。 您目前正在查看範例應用程式中的 `UpdateRecords` 方法。 在此方法中，如果其中一個方法引數 `null`，您就會知道您有問題，因此請在函式的進入點使用 `assert` 語句來檢查它們。
 
 ```csharp
 public static void UpdateRecords(List<User> db, User[] users)
@@ -377,9 +377,9 @@ public static void UpdateRecords(List<User> db, User[] users)
     Debug.Assert(users != null);
 ```
 
-針對上述語句，您的目的是要載入現有的資料（`db`），並在更新任何專案之前，先取出新的資料（`users`）。
+針對上述語句，您的目的是要載入現有的資料（`db`）並抓取新的資料（`users`），然後再更新任何專案。
 
-您可以使用 `assert` 搭配任何類型的運算式來解析成 `true` 或 `false`。 例如，您可以加入如下列的 `assert` 語句。
+您可以使用 `assert` 搭配任何類型的運算式，以解析成 `true` 或 `false`。 例如，您可以加入 `assert` 語句，如下所示。
 
 ```csharp
 Debug.Assert(users[0].points > 0);

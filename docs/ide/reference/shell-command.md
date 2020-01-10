@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Shell, launching exe files
 - Visual Studio, executables from
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 502bb7b1ab6236fd88c7c6dbc789737e50686d89
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747749"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565873"
 ---
 # <a name="shell-command"></a>Shell 命令
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 內啟動可執行程式。
@@ -34,7 +34,7 @@ ms.locfileid: "72747749"
 Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 `path`
 
 必要項。 要執行之檔案或要開啟之文件的路徑和檔案名稱。 如果指定的檔案不在 PATH 環境變數的其中一個目錄中，則需要完整路徑。
@@ -43,7 +43,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
 選擇項。 任何要傳遞給已叫用程式的引數。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換機
 /commandwindow [或] /command [或] /c [或] /cmd
 
 選擇項。 指定可執行檔的輸出會顯示在 [命令] 視窗中。

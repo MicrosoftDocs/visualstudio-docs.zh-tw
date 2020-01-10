@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1352da002b16c736ce20a9fbaf7cdc26b258b718
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b25d23b7c65742ffddadbe178d7550dc1794414a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657618"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296326"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>對應方案之間的相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "72657618"
 
  **部分影片如下**：
 
-- [透過視覺化了解程式碼相依性](http://go.microsoft.com/fwlink/?LinkID=252065)
+- [透過視覺化了解程式碼相依性](https://go.microsoft.com/fwlink/?LinkID=252065)
 
-- [以圖形呈現變更的影響](http://go.microsoft.com/fwlink/?LinkID=252068)
+- [以圖形呈現變更的影響](https://go.microsoft.com/fwlink/?LinkID=252068)
 
-- [使用 Code Map 了解複雜的程式碼](http://go.microsoft.com/fwlink/?LinkID=259869)
+- [使用 Code Map 了解複雜的程式碼](https://go.microsoft.com/fwlink/?LinkID=259869)
 
 ## <a name="GetStarted"></a> 開始使用 Code Map
  **若要使用 Code Map，您將需要**：
@@ -232,7 +232,7 @@ ms.locfileid: "72657618"
 
      若要查看程式碼中的成員，但不會出現在對應上，請按一下群組左上角的 [**重新擷取子**系] 圖示![重新擷取子系圖示](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon")。
 
-6. 若要查看與對應上之項目相關的其他項目，請選取一個，在 Code Map 工具列上選擇 [顯示相關] ，然後選取要加入對應的相關項目類型。 或者，選取一或多個項目，開啟捷徑功能表，然後針對要加入對應的相關項目類型選擇 [顯示] 選項。 例如：
+6. 若要查看與對應上之項目相關的其他項目，請選取一個，在 Code Map 工具列上選擇 [顯示相關] ，然後選取要加入對應的相關項目類型。 或者，選取一或多個項目，開啟捷徑功能表，然後針對要加入對應的相關項目類型選擇 [顯示] 選項。 例如:
 
      對於 **組件**，選擇：
 
@@ -346,7 +346,7 @@ ms.locfileid: "72657618"
 
  -或-
 
- 若要將對應儲存為特定專案的一部分，請在 [對應] 工具列上，選擇 [**共用**]，**將**\<*CodeMapName* > **.dgml 放入**，然後選擇要儲存對應的專案。
+ 若要將對應儲存為特定專案的一部分，請在 [對應] 工具列上，選擇 [**共用**]，**將**\<*CodeMapName*> **.dgml 放入**，然後選擇要儲存對應的專案。
 
  ![將對應移至另一個專案](../modeling/media/codemapsmovemapmenu.png "CodeMapsMoveMapMenu")
 
@@ -373,7 +373,7 @@ ms.locfileid: "72657618"
 
 2. 瀏覽至儲存檔案的位置。
 
-3. 為 Code Map 命名。 請確定 [**存檔類型**] 方塊設定為 [ **xps 檔案（\* .xps）** ]。 選擇 [儲存]。
+3. 為 Code Map 命名。 請確定 [**存檔類型**] 方塊設定為 [ **xps 檔案（\*.xps）** ]。 選擇 [儲存]。
 
 ## <a name="what-else-can-i-do"></a>我還可以做什麼？
 

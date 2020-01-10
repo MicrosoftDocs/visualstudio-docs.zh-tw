@@ -3,17 +3,17 @@ title: HOW TO：選取要使用的 XML 結構描述
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275def786a93d42e6b8e110d3b3d785a24e948b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2acafe0c782b39bb7aa345b5456df7238703cb20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601903"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592642"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>如何：選取要使用的 XML 架構
 
@@ -34,7 +34,7 @@ XML 編輯器提供位於 *%VSInstallDir%\xml\Schemas*目錄中的架構快取�
 
    ![XML 檔案的架構屬性](media/properties-schemas.png)
 
-   [ [XML 架構] 對話方塊](xml-schemas-dialog-box.md)隨即開啟。 對話方塊會列出具有的所有架構。架構快取中的*xsd*擴充功能（包括*目錄 .xml*檔案中所參考的架構），以及目前方案中的任何架構、在 Visual Studio 中開啟、在 `xsd:schemaLocation` 屬性中參考，或在**架構**中參考property.
+   [ [XML 架構] 對話方塊](xml-schemas-dialog-box.md)隨即開啟。 對話方塊會列出具有的所有架構。架構快取中的*xsd*擴充功能（包括*目錄 .xml*檔案中所參考的架構），以及目前方案中的任何架構、在 Visual Studio 中開啟、在 `xsd:schemaLocation` 屬性中參考，或在 [**架構**] 屬性中參考。
 
 3. 請進行下列任一操作，以選取用於驗證的結構描述：
 
@@ -44,7 +44,7 @@ XML 編輯器提供位於 *%VSInstallDir%\xml\Schemas*目錄中的架構快取�
 
    - 選取 [ **XML 架構**] 對話方塊中所列的多個架構，然後以滑鼠右鍵按一下並選取 [**使用此架構**]。
 
-4. 選擇 [確定]。
+4. 選擇 [ **確定**]。
 
    選取的架構清單會複製回 [**架構**檔] 屬性。
 

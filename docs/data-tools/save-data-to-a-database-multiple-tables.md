@@ -11,17 +11,17 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], updating
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bcb551cdcd5b2505c6ac536a440fcc3e70464bfb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d4dd98a622a3aa09b2ec11f4f3521ce1839ce8c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648200"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586246"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>將資料儲存至資料庫 (多個資料表)
 
@@ -41,7 +41,7 @@ ms.locfileid: "72648200"
 
 - 修改程式碼，以將資料集中更新的資料傳送回資料庫。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -95,7 +95,7 @@ ms.locfileid: "72648200"
 
 ## <a name="set-the-controls-to-be-created"></a>設定要建立的控制項
 
-在此逐步解說中，`Customers` 資料表中的資料是在**詳細**資料配置中，其中的資料會顯示在個別控制項中。 @No__t_0 資料表中的資料是在 <xref:System.Windows.Forms.DataGridView> 控制項中顯示的**方格**配置中。
+在此逐步解說中，`Customers` 資料表中的資料是在**詳細**資料配置中，其中的資料會顯示在個別控制項中。 `Orders` 資料表中的資料是在 <xref:System.Windows.Forms.DataGridView> 控制項中顯示的**方格**配置中。
 
 ### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>在資料來源視窗中設定項目的卸除類型
 
@@ -109,14 +109,14 @@ ms.locfileid: "72648200"
 
 1. 從 [資料來源] 視窗，將 [客戶] 主節點拖曳至 **Form1**。
 
-     會在表單上顯示具有描述性的資料繫結控制項，以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>)。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、`CustomersTableAdapter`、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator> 會出現在元件匣中。
+     會在表單上顯示具有描述性的資料繫結控制項，以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>)。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、`CustomersTableAdapter`、<xref:System.Windows.Forms.BindingSource>和 <xref:System.Windows.Forms.BindingNavigator> 會出現在元件匣中。
 
 2. 從 [資料來源] 視窗將關聯的 [Orders] 節點拖曳至 [Form1]。
 
     > [!NOTE]
     > 關聯的 [Orders] 節點位於 [Fax] 節點之下，而且是 [Customers] 節點的子節點。
 
-     <xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 @No__t_0 和 <xref:System.Windows.Forms.BindingSource> 會出現在元件匣中。
+     <xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 `OrdersTableAdapter` 和 <xref:System.Windows.Forms.BindingSource> 會出現在元件匣中。
 
 ## <a name="add-code-to-update-the-database"></a>新增程式碼以更新資料庫
 
@@ -127,7 +127,7 @@ ms.locfileid: "72648200"
 
 ### <a name="to-add-update-logic-to-the-application"></a>將更新邏輯加入至應用程式
 
-1. 選取 <xref:System.Windows.Forms.BindingNavigator> 上的 **儲存** 按鈕。 這會開啟 [程式碼編輯器] 至 `bindingNavigatorSaveItem_Click` 事件處理常式。
+1. 選取 <xref:System.Windows.Forms.BindingNavigator>上的 **儲存** 按鈕。 這會開啟 [程式碼編輯器] 至 `bindingNavigatorSaveItem_Click` 事件處理常式。
 
 2. 替換事件處理常式中的程式碼，以呼叫相關 TableAdapters 的 `Update` 方法。 下列程式碼會先建立三個暫存資料表，以保留 <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>、<xref:System.Data.DataRowState.Added> 及 <xref:System.Data.DataRowState.Modified>) 的更新資訊。 更新會以正確的循序執行。 程式碼看起來應該如下所示：
 

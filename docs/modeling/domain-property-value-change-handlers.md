@@ -4,17 +4,17 @@ ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46bf3d8a188899e27e7a83d875cf970583858ba8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653785"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594704"
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 
@@ -24,7 +24,7 @@ ms.locfileid: "72653785"
 
 網域指定的語言的每個網域屬性會由巢狀於父網域類別內的類別來處理。 其名稱遵循*PropertyName*PropertyHandler 的格式。 您可以在 [檔案**Dsl\Generated] Code\DomainClasses.cs**中檢查此屬性處理常式類別。 在這個類別中，會在值變更前立即呼叫 `OnValueChanging()`，並在值變更後立即呼叫 `OnValueChanged()`。
 
-例如，假設您有一個名為 `Comment` 的網域類別，其中具有名為 `Text` 的字串網域屬性和名為 `TextLengthCount` 的整數屬性。 若要讓 `TextLengthCount` 一律包含 `Text` 字串的長度，您可以在 Dsl 專案的個別檔案中撰寫下列程式碼：
+例如，假設您有一個名為 `Comment` 的網域類別，其中具有名為 `Text` 的字串網域屬性和名為 `TextLengthCount`的整數屬性。 若要讓 `TextLengthCount` 一律包含 `Text` 字串的長度，您可以在 Dsl 專案的個別檔案中撰寫下列程式碼：
 
 ```csharp
 // Domain Class "Comment":

@@ -1,17 +1,17 @@
 ---
 title: 自訂 IDE
 description: Visual Studio for Mac 可以使用各種方式加以自訂，讓使用者能夠在符合其效率與審美需求的環境中開發應用程式。 本主題探討 Visual Studio for Mac 可調整以符合您需求的各種方式。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: b8386e5d27c2ddf6abd93ac93266f58869cd6c79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931870"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984776"
 ---
 # <a name="customizing-the-ide"></a>自訂 IDE
 
@@ -29,8 +29,8 @@ Visual Studio for Mac 可以使用各種方式加以自訂，讓使用者能夠�
 
 Visual Studio for Mac 以下列 14 種語言進行當地語系化，使它可供更多開發人員存取：
 
-* 簡體中文 - 中國
-* 繁體中文 - 台灣
+* 簡體中文 (中國)
+* 繁體中文 (台灣)
 * 捷克文
 * 法文
 * 德文
@@ -132,6 +132,6 @@ Visual Studio for Mac 可讓您並排開啟文字編輯器，或以卸離的浮�
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將 Visual Studio IDE 個人化 (在 Windows 上)](/visualstudio/ide/personalizing-the-visual-studio-ide)

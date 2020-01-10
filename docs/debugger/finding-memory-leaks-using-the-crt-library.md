@@ -1,11 +1,8 @@
 ---
-title: 尋找記憶體流失的 CRT 程式庫 |Microsoft Docs
+title: 使用 CRT 程式庫尋找記憶體流失 |Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - breakpoints, on memory allocation
@@ -29,24 +26,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7fdfedbb2f632bdb0fcaa05c7f0fb282a8fcd2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13a346aa0212f4830c2c88ed866b674fc19d30bd
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849977"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404985"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>尋找 CRT 程式庫的記憶體流失問題
 
-記憶體流失是最細微和硬偵測的錯誤以 C /C++應用程式。 記憶體流失結果失敗，無法正確解除配置先前配置的記憶體。 只有少許記憶體流失可能不會在一開始，注意到，但經過一段時間可能會導致舉凡損毀時記憶體不足所執行的應用程式的效能不佳的徵狀。 負責建立有關哪一個應用程式的混淆到遺漏的應用程式，會用完所有可用的記憶體可能會造成其他應用程式當機。 即使是無害的記憶體流失可能表示應該解決其他問題。
+記憶體流失是 C/C++應用程式中最微妙且難以偵測的錯誤。 記憶體流失的原因是無法正確地解除配置先前配置的記憶體。 一開始可能不會注意到小型的記憶體流失，但經過一段時間後，可能會導致應用程式用盡記憶體時，效能不佳的徵兆。 洩漏的應用程式若使用所有可用的記憶體，可能會導致其他應用程式損毀，並對應用程式的責任造成混淆。 即使是無害的記憶體流失，也可能表示其他應該更正的問題。
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]偵錯工具和 C 執行階段程式庫 (CRT) 可協助您偵測和找出記憶體流失。
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具和 C 執行時間程式庫（CRT）可協助您偵測並找出記憶體流失的問題。
 
 ## <a name="enable-memory-leak-detection"></a>啟用記憶體流失偵測
 
-偵測記憶體流失的主要工具是 C /C++偵錯工具和 C 執行階段程式庫 (CRT) 偵錯堆積函式。
+偵測記憶體流失的主要工具是 C/C++偵錯工具和 c 執行時間程式庫（CRT）的 debug 堆積函數。
 
-若要啟用所有偵錯堆積函式，包括下列的陳述式，在您C++程式中的，依下列順序：
+若要啟用所有的 debug 堆積函式，請依照下列順序C++在程式中包含下列語句：
 
 ```cpp
 #define _CRTDBG_MAP_ALLOC
@@ -54,33 +51,33 @@ ms.locfileid: "62849977"
 #include <crtdbg.h>
 ```
 
-`#define` 陳述式會將 CRT 堆積函式的基底版本對應到偵錯版本。 如果您省略`#define`陳述式，記憶體流失傾印將會是[較不詳細](#interpret-the-memory-leak-report)。
+`#define` 陳述式會將 CRT 堆積函式的基底版本對應到偵錯版本。 如果您省略 `#define` 語句，記憶體流失傾印將會[較不詳細](#interpret-the-memory-leak-report)。
 
-包括*crtdbg.h*對應`malloc`並`free`為其偵錯版本中，函式[_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)並[_free_dbg](/cpp/c-runtime-library/reference/free-dbg)，可追蹤記憶體配置和解除配置。 這種對應只會發生在偵錯組建 (具有 `_DEBUG`) 中。 發行的組建使用一般的 `malloc` 和 `free` 函式。
+包括*crtdbg.h 裡*會將 `malloc` 和 `free` 函數對應至其 debug 版本， [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)和[_free_dbg](/cpp/c-runtime-library/reference/free-dbg)，以追蹤記憶體配置和解除配置。 這種對應只會發生在偵錯組建 (具有 `_DEBUG`) 中。 發行的組建使用一般的 `malloc` 和 `free` 函式。
 
-您已啟用偵錯堆積函式，使用先前的陳述式之後，以撥打[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)之前顯示的記憶體流失報告應用程式結束時的應用程式結束點。
+使用上述語句啟用 debug 堆積函數之後，請在應用程式結束點之前呼叫[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) ，以在應用程式結束時顯示記憶體流失的報告。
 
 ```cpp
 _CrtDumpMemoryLeaks();
 ```
 
-如果您的應用程式會有數個結束，您不需要以手動方式放置`_CrtDumpMemoryLeaks`在每個結束點。 若要讓自動呼叫`_CrtDumpMemoryLeaks`在每個結束點，以撥打`_CrtSetDbgFlag`在您的應用程式，如下所示的位元欄位的開頭：
+如果您的應用程式有數個結束，您就不需要在每個結束點手動放置 `_CrtDumpMemoryLeaks`。 若要在每個結束點上自動呼叫 `_CrtDumpMemoryLeaks`，請在應用程式開頭處呼叫 `_CrtSetDbgFlag`，其中包含位欄位，如下所示：
 
 ```cpp
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
 ```
 
-根據預設， `_CrtDumpMemoryLeaks` 會將記憶體流失報告輸出至 [輸出]  視窗的 [偵錯]  窗格。 如果您使用程式庫，該程式庫可能會重設輸出至其他位置。
+根據預設， `_CrtDumpMemoryLeaks` 會將記憶體流失報告輸出至 [輸出] 視窗的 [偵錯] 窗格。 如果您使用程式庫，該程式庫可能會重設輸出至其他位置。
 
-您可以使用`_CrtSetReportMode`將報告重新導向到其他位置，或回到**輸出**視窗如下所示：
+您可以使用 `_CrtSetReportMode` 將報表重新導向至另一個位置，或回到 [**輸出**] 視窗，如下所示：
 
 ```cpp
 _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```
 
-## <a name="interpret-the-memory-leak-report"></a>解譯記憶體流失報告
+## <a name="interpret-the-memory-leak-report"></a>解讀記憶體流失報告
 
-如果您的應用程式未定義`_CRTDBG_MAP_ALLOC`， [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)會顯示如下所示的記憶體流失報告：
+如果您的應用程式未定義 `_CRTDBG_MAP_ALLOC`， [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)會顯示記憶體流失報告，如下所示：
 
 ```cmd
 Detected memory leaks!
@@ -90,7 +87,7 @@ Dumping objects ->
 Object dump complete.
 ```
 
-如果您的應用程式定義`_CRTDBG_MAP_ALLOC`，記憶體流失報告看起來像：
+如果您的應用程式定義 `_CRTDBG_MAP_ALLOC`，記憶體流失報告看起來會像這樣：
 
 ```cmd
 Detected memory leaks!
@@ -101,23 +98,23 @@ normal block at 0x00780E80, 64 bytes long.
 Object dump complete.
 ```
 
-第二份報表顯示的檔名和行號，第一次配置流失的記憶體位置。
+第二份報表會顯示第一次配置洩漏記憶體的檔案名和行號。
 
-您的定義，zda bude `_CRTDBG_MAP_ALLOC`，會顯示記憶體流失報告：
+無論您是否定義 `_CRTDBG_MAP_ALLOC`，記憶體流失報告都會顯示：
 
-- 記憶體配置編號，這是`18`範例
-- 區塊型別，`normal`在範例中。
-- 十六進位記憶體位置，`0x00780E80`在範例中。
-- 區塊大小`64 bytes`在範例中。
+- 記憶體配置編號，在範例中 `18`
+- 範例中的區塊類型 `normal`。
+- 在範例中 `0x00780E80` 的十六進位記憶體位置。
+- 區塊的大小，在範例中 `64 bytes`。
 - 區塊中前 16 個位元組的資料 (十六進位格式)。
 
-記憶體區塊類型*正常*，*用戶端*，或*CRT*。 *「一般區塊」* (Normal Block) 是您的程式所配置的一般記憶體。 *「用戶端區塊」* (Client Block) 是 MFC 程式專為需要解構函式的物件所使用的一種特殊類型的記憶體區塊。 MFC 的 `new` 運算子會根據所建立的物件來建立一般區塊或用戶端區塊。
+記憶體區塊類型為*normal*、 *client*或*CRT*。 *「一般區塊」* (Normal Block) 是您的程式所配置的一般記憶體。 *「用戶端區塊」* (Client Block) 是 MFC 程式專為需要解構函式的物件所使用的一種特殊類型的記憶體區塊。 MFC 的 `new` 運算子會根據所建立的物件來建立一般區塊或用戶端區塊。
 
-*「CRT 區塊」* (CRT Block) 則是 CRT 程式庫配置來供自身使用的記憶體區塊。 CRT 程式庫會處理這些區塊，解除配置，因此 CRT 區塊就不會出現記憶體流失報告中，除非有嚴重的問題，CRT 程式庫。
+*「CRT 區塊」* (CRT Block) 則是 CRT 程式庫配置來供自身使用的記憶體區塊。 CRT 程式庫會處理這些區塊的解除配置，因此 CRT 區塊不會出現在記憶體流失報告中，除非 CRT 程式庫有嚴重的問題。
 
-另外還有兩種絕對不會出現在記憶體流失報告中的記憶體區塊。 A*釋放的區塊*是已發行，因此依定義未流失的記憶體。 *忽略區塊*是您已明確標記為要從記憶體流失報告中排除的記憶體。
+另外還有兩種絕對不會出現在記憶體流失報告中的記憶體區塊。 「*可用區塊*」是已釋放的記憶體，因此定義不會洩漏。 「*忽略區塊*」是指您已明確標記為要從記憶體流失報告中排除的記憶體。
 
-上述的技術找出記憶體流失的記憶體配置以標準 crt`malloc`函式。 如果您的程式可讓您配置的記憶體使用C++`new`運算子，不過，您可能只會看到的檔名和行號所在`operator new`呼叫`_malloc_dbg`記憶體流失報告中。 若要建立更有用的記憶體流失報告，您可以撰寫如下所示的報告進行配置的那一行巨集：
+上述技巧會識別使用標準 CRT `malloc` 函式所配置記憶體的記憶體流失。 不過，如果您的C++程式使用 `new` 運算子配置記憶體，您可能只會看到 `operator new` 在記憶體流失報告中 `_malloc_dbg` 呼叫的檔案名和行號。 若要建立更有用的記憶體流失報告，您可以撰寫如下所示的宏來報告進行配置的那一行：
 
 ```cpp
 #ifdef _DEBUG
@@ -129,7 +126,7 @@ Object dump complete.
 #endif
 ```
 
-現在您可以取代`new`運算子使用`DBG_NEW`巨集程式碼中的。 在偵錯組建`DBG_NEW`會使用多載的全域`operator new`接受其他參數區塊類型、 檔案和行號。 多載`new`呼叫`_malloc_dbg`記錄的額外資訊。 記憶體流失報告顯示的檔名和行號遺漏的物件配置的位置。 發行組建仍使用預設`new`。 此技術的範例如下：
+現在您可以在程式碼中使用 `DBG_NEW` 宏來取代 `new` 運算子。 在 debug 組建中，`DBG_NEW` 會使用全域 `operator new` 的多載，以取得區塊類型、檔案和行號的其他參數。 `new` 的多載會呼叫 `_malloc_dbg` 來記錄額外的資訊。 記憶體流失報告會顯示配置遺漏物件的檔案名和行號。 發行組建仍然會使用預設 `new`。 以下是此技巧的範例：
 
 ```cpp
 // debug_new.cpp
@@ -159,7 +156,7 @@ void main() {
 }
 ```
 
-當您在 Visual Studio 中執行此程式碼偵錯工具、 呼叫`_CrtDumpMemoryLeaks`產生的報表**輸出**視窗，如下所示：
+當您在 Visual Studio 偵錯工具中執行此程式碼時，`_CrtDumpMemoryLeaks` 的呼叫會在 [**輸出**] 視窗中產生報告，如下所示：
 
 ```Output
 Detected memory leaks!
@@ -170,34 +167,36 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```
 
-此輸出外洩的配置是在第 20 行上的報表*debug_new.cpp*。
+此輸出報告遺漏的配置是在*debug_new .cpp*的第20行。
 
 >[!NOTE]
->我們不建議您建立名為前置處理器巨集`new`，或任何其他的語言關鍵字。
+>我們不建議您建立名為 `new`或任何其他 language 關鍵字的預處理器宏。
 
-## <a name="set-breakpoints-on-a-memory-allocation-number"></a>記憶體配置編號上設定中斷點
+## <a name="set-breakpoints-on-a-memory-allocation-number"></a>在記憶體配置編號上設定中斷點
 
-記憶體配置編號會指出流失的記憶體區塊是何時配置的。 比方說，18，記憶體配置編號區塊會是記憶體的 18 的應用程式執行期間配置區塊。 CRT 報告會算所有配置的記憶體區塊執行時，包括由 CRT 程式庫和其他程式庫，例如 MFC 的配置。 因此，記憶體配置區塊第 18 號可能會不 18 您程式碼所配置的記憶體區塊。
+記憶體配置編號會指出流失的記憶體區塊是何時配置的。 例如，記憶體配置編號為18的區塊，是在應用程式執行期間所配置的第18個記憶體區塊。 CRT 報表會計算執行期間所有的記憶體區塊配置，包括 CRT 程式庫和其他程式庫（例如 MFC）的配置。 因此，記憶體配置區塊編號18可能不是您的程式碼所配置的第18個記憶體區塊。
 
 您可以使用配置編號在記憶體配置上設定中斷點。
 
 **使用監看式視窗設定記憶體配置中斷點：**
 
-1. 靠近您的應用程式的開頭設定中斷點並開始偵錯。
+1. 在接近應用程式開頭處設定中斷點，並開始進行偵錯工具。
 
-1. 當應用程式的中斷點處暫停時，開啟**監看式**視窗中的選取**偵錯** > **Windows** > **監看式 1**(或**監看式 2**，**監看式 3**，或**監看式 4**)。
+1. 當應用程式在中斷點暫停時，請選取 [ **Debug** ] > **Windows** > **watch 1** （或**watch 2**、 **Watch 3**或**watch 4**）來開啟 **[監看**式] 視窗。
 
-1. 在 **監看式**視窗中，輸入`_crtBreakAlloc`中**名稱**資料行。
+1. 在 [**監看**式] 視窗的 [**名稱**] 欄中，輸入 `_crtBreakAlloc`。
 
-   如果您使用多執行緒的 DLL 版本的 CRT 程式庫 （/MD 選項），加入內容運算子： `{,,ucrtbased.dll}_crtBreakAlloc`
+   如果您使用的是 CRT 程式庫（/MD 選項）的多執行緒 DLL 版本，請新增內容運算子： `{,,ucrtbased.dll}_crtBreakAlloc`
+   
+   請確定已載入偵錯工具符號。 否則 `_crtBreakAlloc` 會*回報為 [* 無法辨識]。
 
 1. 按 **Enter** 鍵。
 
-   偵錯工具會評估呼叫，並將結果放在 [值]  欄中。 如果您尚未在記憶體配置上設定任何中斷點，此值將會是 **-1**。
+   偵錯工具會評估呼叫，並將結果放在 [值] 欄中。 如果您尚未在記憶體配置上設定任何中斷點，此值將會是 **-1**。
 
-1. 在 **值**資料行值取代為您想要偵錯工具中斷的記憶體配置的配置編號。
+1. 在 [**值**] 資料行中，將值取代為您想要偵錯工具中斷之記憶體配置的配置編號。
 
-記憶體配置編號上設定中斷點之後，繼續進行偵錯。 請務必在相同的情況下執行，因此不會變更的記憶體配置編號。 當程式在特定的記憶體配置中斷時，使用**呼叫堆疊**視窗和其他偵錯工具視窗，判斷記憶體配置的條件。 然後，您可以繼續執行，觀察物件會發生什麼事，並判斷為什麼它不正確解除配置。
+在記憶體配置編號上設定中斷點之後，請繼續進行 debug。 請務必在相同的條件下執行，因此記憶體配置編號不會變更。 當您的程式在指定的記憶體配置中斷時，請使用 [**呼叫堆疊**] 視窗和其他偵錯工具視窗來判斷配置記憶體所用的條件。 然後，您可以繼續執行以觀察物件會發生什麼情況，並判斷它為何未正確解除配置。
 
 在物件上設定資料中斷點可能也很有用。 如需詳細資訊，請參閱[使用中斷點](../debugger/using-breakpoints.md)。
 
@@ -214,22 +213,23 @@ _CrtSetBreakAlloc(18);
 ```
 
 ## <a name="compare-memory-states"></a>比較記憶體狀態
- 另一種尋找記憶體流失的技術，是使用在關鍵點的應用程式記憶體狀態之快照。 若要在指定的時間點的記憶體狀態的快照集應用程式中，建立`_CrtMemState`結構，並將它傳遞給`_CrtMemCheckpoint`函式。
+
+另一種尋找記憶體流失的技術，是使用在關鍵點的應用程式記憶體狀態之快照。 若要取得應用程式中指定點的記憶體狀態快照，請建立 `_CrtMemState` 結構，並將它傳遞給 `_CrtMemCheckpoint` 函數。
 
 ```cpp
 _CrtMemState s1;
 _CrtMemCheckpoint( &s1 );
 ```
 
-`_CrtMemCheckpoint`函式填入該結構的目前記憶體狀態快照集。
+`_CrtMemCheckpoint` 函數會以目前記憶體狀態的快照填入結構。
 
-若要輸出的內容`_CrtMemState`結構，則會傳遞至結構`_ CrtMemDumpStatistics`函式：
+若要輸出 `_CrtMemState` 結構的內容，請將結構傳遞給 `_ CrtMemDumpStatistics` 函數：
 
 ```cpp
 _CrtMemDumpStatistics( &s1 );
 ```
 
-`_ CrtMemDumpStatistics` 輸出看起來的記憶體狀態傾印：
+`_ CrtMemDumpStatistics` 會輸出如下所示的記憶體狀態傾印：
 
 ```cmd
 0 bytes in 0 Free Blocks.
@@ -252,14 +252,16 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
    _CrtMemDumpStatistics( &s3 );
 ```
 
-`_CrtMemDifference` 比較記憶體狀態`s1`並`s2`，並傳回結果中的 (`s3`) 也就是之間的差異`s1`和`s2`。
+`_CrtMemDifference` 會比較 `s1` 和 `s2` 的記憶體狀態，並傳回（`s3`）中的結果，這是 `s1` 和 `s2`之間的差異。
 
-尋找記憶體流失的其中一種技術一開始會放置`_CrtMemCheckpoint`呼叫的開始和結束您的應用程式，然後使用`_CrtMemDifference`比較的結果。 如果`_CrtMemDifference`顯示有記憶體流失，您可以新增更多`_CrtMemCheckpoint`呼叫將您的程式使用二進位搜尋，直到您已隔離流失的來源。
+尋找記憶體流失的一項技術，一開始會先將 `_CrtMemCheckpoint` 呼叫放在應用程式的開頭和結尾，然後使用 `_CrtMemDifference` 來比較結果。 如果 `_CrtMemDifference` 顯示記憶體流失，您可以使用二進位搜尋來新增更多 `_CrtMemCheckpoint` 呼叫來分割您的程式，直到您隔離出遺漏的來源為止。
 
 ## <a name="false-positives"></a>誤報
- `_CrtDumpMemoryLeaks` 如果文件庫會將內部配置標記為一般的區塊，而不是 CRT 區塊或用戶端區塊時，就可以提供誤報的記憶體流失。 在這種情況下， `_CrtDumpMemoryLeaks` 無法區分使用者配置和內部程式庫配置。 如果在您呼叫 `_CrtDumpMemoryLeaks`之後執行程式庫配置的全域解構函式，則每個內部程式庫配置都會報告為記憶體流失。 標準範本程式庫的版本早於 Visual Studio.NET 可能會導致`_CrtDumpMemoryLeaks`來報告這類的誤判。
 
-## <a name="see-also"></a>另請參閱
+ 如果程式庫將內部配置標記為一般區塊，而不是 CRT 區塊或用戶端區塊，`_CrtDumpMemoryLeaks` 可以提供錯誤的記憶體流失指示。 在這種情況下， `_CrtDumpMemoryLeaks` 無法區分使用者配置和內部程式庫配置。 如果在您呼叫 `_CrtDumpMemoryLeaks`之後執行程式庫配置的全域解構函式，則每個內部程式庫配置都會報告為記憶體流失。 早于 Visual Studio .NET 的標準範本程式庫版本可能會導致 `_CrtDumpMemoryLeaks` 報告這類誤報。
+
+## <a name="see-also"></a>請參閱
+
 - [CRT 偵錯堆積詳細資料](../debugger/crt-debug-heap-details.md)
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [對機器碼進行偵錯](../debugger/debugging-native-code.md)

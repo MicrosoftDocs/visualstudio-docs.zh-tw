@@ -40,7 +40,7 @@ HRESULT EnumCodeContextsOfPosition(
   
 #### <a name="parameters"></a>參數  
  `dwSourceContext`  
- 在提供給 `IActiveScriptParse::ParseScriptText` 或 `IActiveScriptParse::AddScriptlet` 的來源內容。  
+ 在提供給 `IActiveScriptParse::ParseScriptText` 或 `IActiveScriptParse::AddScriptlet`的來源內容。  
   
  `uCharacterOffset`  
  在相對於腳本文字開頭的字元位移。  
@@ -61,6 +61,6 @@ HRESULT EnumCodeContextsOfPosition(
 ## <a name="remarks"></a>備註  
  智慧型主機會使用這個方法來委派 `IDebugDocumentContext::EnumCodeContexts` 方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptDebug 介面](../../winscript/reference/iactivescriptdebug-interface.md)   
  [IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)

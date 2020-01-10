@@ -19,15 +19,15 @@ helpviewer_keywords:
 - set up Dotfuscator
 description: 了解如何安裝 Visual Studio 中隨附的免費 Dotfuscator Community。
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
-author: Joe-Sewell-PreEmptive
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f4ff951ee202f706ab3b8553cff83519e36c86ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb659976126713a11594ad1b4aeb536510744c38
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652423"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596810"
 ---
 # <a name="install-dotfuscator-community"></a>安裝 Dotfuscator Community
 

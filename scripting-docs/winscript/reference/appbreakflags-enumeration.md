@@ -37,9 +37,9 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 |成員|值|描述|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|語言引擎應該會在具有 BREAKREASON_DEBUGGER_BLOCK 的所有線程上立即中斷。|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|語言引擎應該會立即在所有具有 BREAKREASON_DEBUGGER_BLOCK 的執行緒上中斷。|  
 |APPBREAKFLAG_DEBUGGER_HALT|0x00000002|語言引擎應該會立即中斷 BREAKREASON_DEBUGGER_HALT。|  
-|APPBREAKFLAG_STEP|0x00010000|語言引擎應該會在 BREAKREASON_STEP 的逐步執行執行緒中立即中斷。|  
+|APPBREAKFLAG_STEP|0x00010000|語言引擎應該會在逐步執行執行緒中，使用 BREAKREASON_STEP 立即中斷。|  
 |APPBREAKFLAG_NESTED|0x00020000|應用程式會在中斷點上進行嵌套的執行。|  
 |APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|偵錯工具會在來源層級逐步執行。|  
 |APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|偵錯工具會在位元組程式碼層級逐步執行。|  
@@ -50,6 +50,6 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
 ## <a name="remarks"></a>備註  
  某些旗標指定語言引擎應該在下一個機會中斷，而其他旗標則指定偵錯工具的逐步執行模式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
  [BREAKREASON 列舉](../../winscript/reference/breakreason-enumeration.md)

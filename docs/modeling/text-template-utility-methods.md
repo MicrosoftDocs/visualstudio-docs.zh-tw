@@ -4,21 +4,21 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - text templates, utility methods
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e6426ea57fbdbec6ec47a4f6348463b88b250e0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c55da4d58b717bc4d42b6fafdd084067b7e21a31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606014"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591758"
 ---
 # <a name="text-template-utility-methods"></a>文字範本公用程式方法
 
-當您在 Visual Studio 文字模板中撰寫程式碼時，一定會有數種方法可供您使用。 這些方法會在 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> 中定義。
+當您在 Visual Studio 文字模板中撰寫程式碼時，一定會有數種方法可供您使用。 這些方法會在 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>中定義。
 
 > [!TIP]
 > 您也可以在一般（未預先處理的）文字模板中，使用主機環境所提供的其他方法和服務。 例如，您可以解析檔案路徑、記錄錯誤，並取得 Visual Studio 和任何載入的封裝所提供的服務。 如需詳細資訊，請參閱[從文字模板存取 Visual Studio](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\))。
@@ -53,7 +53,7 @@ while (i-- > 0)
 
 在具有嵌套控制項結構的長程式碼區塊內使用其中一種公用程式方法，而不是運算式區塊，可能會很有説明。
 
-@No__t_0 和 `WriteLine()` 方法有兩個多載，一個會採用單一字串參數，另一個則採用複合格式字串，再加上要包含在字串中的物件陣列（例如 `Console.WriteLine()` 方法）。 @No__t_0 的下列兩個用法在功能上是相同的：
+`Write()` 和 `WriteLine()` 方法有兩個多載，一個會採用單一字串參數，另一個則採用複合格式字串，再加上要包含在字串中的物件陣列（例如 `Console.WriteLine()` 方法）。 `WriteLine()` 的下列兩個用法在功能上是相同的：
 
 ```
 <#
@@ -69,7 +69,7 @@ while (i-- > 0)
 
 ## <a name="indentation-methods"></a>縮排方法
 
-您可以使用縮排方法來格式化文字模板的輸出。 @No__t_0 類別具有 `CurrentIndent` 字串屬性，它會顯示文字模板中目前的縮排，以及已加入的縮圖清單 `indentLengths` 欄位。 您可以使用 `PushIndent()` 方法加入縮排，並使用 `PopIndent()` 方法來減去縮排。 如果您想要移除所有縮排，請使用 `ClearIndent()` 方法。 下列程式碼區塊顯示這些方法的用法：
+您可以使用縮排方法來格式化文字模板的輸出。 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> 類別具有 `CurrentIndent` 字串屬性，它會顯示文字模板中目前的縮排，以及已加入的縮圖清單 `indentLengths` 欄位。 您可以使用 `PushIndent()` 方法加入縮排，並使用 `PopIndent()` 方法來減去縮排。 如果您想要移除所有縮排，請使用 `ClearIndent()` 方法。 下列程式碼區塊顯示這些方法的用法：
 
 ```
 <#
@@ -119,7 +119,7 @@ Hello
 
 `<#@template ... hostspecific="true" #>`
 
-@No__t_0 的類型取決於範本執行所在的主機類型。 在 Visual Studio 中執行的範本中，您可以將 `this.Host` 轉換成 `IServiceProvider`，以取得 IDE 等服務的存取權。 例如:
+`this.Host` 的類型取決於範本執行所在的主機類型。 在 Visual Studio 中執行的範本中，您可以將 `this.Host` 轉換成 `IServiceProvider`，以取得 IDE 等服務的存取權。 例如：
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
@@ -128,7 +128,7 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 
 ## <a name="using-a-different-set-of-utility-methods"></a>使用一組不同的公用程式方法
 
-做為文字產生程式的一部分，您的範本檔案會轉換為類別，而此類別一律會命名為 `GeneratedTextTransformation`and 繼承自 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。 如果您想要改為使用一組不同的方法，您可以撰寫自己的類別，並在範本指示詞中指定它。 您的類別必須繼承自 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。
+做為文字產生程式的一部分，您的範本檔案會轉換成類別，其一律會命名為 `GeneratedTextTransformation`，並繼承自 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。 如果您想要改為使用一組不同的方法，您可以撰寫自己的類別，並在範本指示詞中指定它。 您的類別必須繼承自 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。
 
 ```
 <#@ template inherits="MyUtilityClass" #>

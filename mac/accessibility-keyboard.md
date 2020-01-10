@@ -2,15 +2,15 @@
 title: Visual Studio for Mac 中的鍵盤導覽
 description: 使用 Visual Studio for Mac 與鍵盤命令
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
-ms.openlocfilehash: aad28b9cf9c697b05d43f2869ec8327ea6294b4f
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 74c3fddad7c7db8f5f190dcc94f08a36ddf3cd54
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342352"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985102"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的鍵盤導覽
 
@@ -26,9 +26,9 @@ Visual Studio for Mac 可由鍵盤使用者使用最常見的 macOS 鍵盤快速
 
 Visual Studio for Mac 具有各種工作的鍵盤快速鍵範圍。 您可以如下所示，查看和編輯這些快捷方式：
 
-1. 選取 **[Visual Studio （功能表）** ]  >  個**喜好設定&#8984;（、）** 。
+1. 選取 [ **Visual Studio （功能表）** ] > **喜好設定（&#8984;，）** 。
 
-1. 移至 [**環境**]  >  個索引**鍵**系結。
+1. 移至 **環境** > **金鑰**系結。
 
 1. 在清單中滾動，或搜尋快捷方式或命令。
 
@@ -43,7 +43,7 @@ Visual Studio for Mac 具有各種工作的鍵盤快速鍵範圍。 您可以如
 
 ## <a name="useful-keyboard-shortcuts"></a>實用的鍵盤快速鍵
 
-|功能         |描述                                   |快速鍵         |
+|特殊功能         |描述                                   |快速鍵         |
 |----------------|----------------------------------------------|-----------------|
 |導覽 UI   |在 UI 的所有元素之間移動。               |**⇥**、 **⇧⇥**    |
 |自己        |選取目前為焦點的控制項。         |**␣**            |

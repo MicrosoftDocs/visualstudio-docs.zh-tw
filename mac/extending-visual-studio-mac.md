@@ -1,23 +1,23 @@
 ---
 title: 擴充 Visual Studio for Mac
 description: Visual Studio for Mac 的特性與功能可以使用稱為延伸模組套件的模組來擴充。 本指南的第一個部分會建立簡單的 Visual Studio for Mac 延伸模組套件，在文件中插入日期和時間。 本指南的第二個部分則介紹延伸模組套件系統的基本概念，和形成 Visual Studio for Mac 基礎的一些核心應用程式開發介面。
-author: alanjclark
-ms.author: alcl
-ms.date: 05/07/2019
+author: heiligerdankgesang
+ms.author: dominicn
+ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 102b03caf2880d9b1311bb757eaf92aad84f8c81
+ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691651"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75735827"
 ---
 # <a name="extending-visual-studio-for-mac"></a>擴充 Visual Studio for Mac
 
-Visual Studio for Mac 包含一組稱為「延伸模組套件」  的模組。 您可以使用延伸模組套件，為 Visual Studio for Mac 引入新功能，例如支援其他語言或新的專案範本。
+Visual Studio for Mac 包含一組稱為「延伸模組套件」的模組。 您可以使用延伸模組套件，為 Visual Studio for Mac 引入新功能，例如支援其他語言或新的專案範本。
 
-延伸模組套件會從其他延伸模組套件的「延伸模組」  點建置。 擴充點是可擴充區域的預留位置，例如功能表或 IDE 命令的清單。 延伸模組套件可以從擴充點建置，方法是註冊一個稱為延伸模組的結構化資料節點，例如新的功能表項目或新的命令。 每個擴充點會接受特定類型的延伸模組，例如「命令」  、「板」  或「檔案範本」  。 包含延伸模組的模組，稱為「增益集主機」  ，因為它可以由其他延伸模組套件加以擴充。
+延伸模組套件會從其他延伸模組套件的「延伸模組」點建置。 擴充點是可擴充區域的預留位置，例如功能表或 IDE 命令的清單。 延伸模組套件可以從擴充點建置，方法是註冊一個稱為延伸模組的結構化資料節點，例如新的功能表項目或新的命令。 每個擴充點會接受特定類型的延伸模組，例如「命令」、「板」或「檔案範本」。 包含延伸模組的模組，稱為「增益集主機」，因為它可以由其他延伸模組套件加以擴充。
 
 若要自訂 Visual Studio for Mac，您可以建立一個延伸模組套件，從 Visual Studio for Mac 現有程式庫內的增益集主機中所包含的擴充點建置，如下列圖所示：
 
@@ -28,7 +28,7 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」  的模組。 �
 此模組化設計的好處是，Visual Studio for Mac 可以擴充 -- 有許多擴充點可供自訂延伸模組套件建置之用。 目前的延伸模組套件範例包括支援 C# 和 F#、偵錯工具和專案範本。
 
 > [!NOTE]
-> 如果您有在 Add-in Maker 1.2 之前建立的 Add-in Maker 專案，您需要依[這裡](https://mhut.ch/addinmaker/1.2)列出的步驟遷移專案。
+> 如果您有在增益集製作程式1.2 之前建立的增益集製作程式專案，您必須依照[這裡](https://mhut.ch/addinmaker/1.2)的步驟所述來遷移您的專案。
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -36,7 +36,7 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」  的模組。 �
 
 ## <a name="attribute-files"></a>屬性檔
 
-延伸模組套件會將其名稱、版本、相依性以及其他資訊的相關中繼資料儲存在 C# 屬性。 增益集製作程式會建立兩個檔案 `AddinInfo.cs` 和 `AssemblyInfo.cs`，來儲存和組織這項資訊。 延伸模組套件必須在其「`Addin` 屬性」  中指定唯一的識別碼和命名空間：
+延伸模組套件會將其名稱、版本、相依性以及其他資訊的相關中繼資料儲存在 C# 屬性。 增益集製作程式會建立兩個檔案 `AddinInfo.cs` 和 `AssemblyInfo.cs`，來儲存和組織這項資訊。 延伸模組套件必須在其「`Addin` 屬性」中指定唯一的識別碼和命名空間：
 
 ```csharp
 [assembly:Addin (
@@ -72,10 +72,10 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」  的模組。 �
 
  ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
-  <command id="DateInserter.DateInserterCommands.InsertDate"
+  <Command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
             _description="Insert the current date"
-            defaulthandler="DateInserter.InsertDateHandler" />
+            defaultHandler="DateInserter.InsertDateHandler" />
 </Extension>
 ```
 
@@ -92,15 +92,15 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」  的模組。 �
 
 ```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
-  <commanditem id="DateInserter.DateInserterCommands.InsertDate" />
+  <CommandItem id="DateInserter.DateInserterCommands.InsertDate" />
 </Extension>
 ```
 
-CommandItem 將其 `id` 屬性中指定的命令放入功能表。 此 CommandItem 會擴充 `/MonoDevelop/Ide/MainMenu/Edit` 擴充點，讓命令的標籤出現在 [編輯] 功能表  。 請注意，CommandItem 中的識別碼對應到命令節點 (`InsertDate`) 的識別碼。 如果移除 CommandItem，[插入日期]  選項就會從 [編輯] 功能表消失。
+CommandItem 將其 `id` 屬性中指定的命令放入功能表。 此 CommandItem 會擴充 `/MonoDevelop/Ide/MainMenu/Edit` 擴充點，讓命令的標籤出現在 [編輯] 功能表。 請注意，CommandItem 中的識別碼對應到命令節點 (`InsertDate`) 的識別碼。 如果移除 CommandItem，[插入日期] 選項就會從 [編輯] 功能表消失。
 
 ### <a name="command-handlers"></a>命令處理常式
 
-`InsertDateHandler` 是 `CommandHandler` 類別的延伸模組。 它覆寫兩個方法：`Update` 和 `Run`。 每當命令顯示在功能表中或透過按鍵繫結執行時，便會查詢 `Update`。 藉由變更資訊物件，您可以停用命令或讓它成為不可見、填入陣列命令等等。 這個 `Update` 方法會停用命令，如果它找不到作用中的「文件」  與「文字編輯器」  來插入文字：
+`InsertDateHandler` 是 `CommandHandler` 類別的延伸模組。 它覆寫兩個方法：`Update` 和 `Run`。 每當命令顯示在功能表中或透過按鍵繫結執行時，便會查詢 `Update`。 藉由變更資訊物件，您可以停用命令或讓它成為不可見、填入陣列命令等等。 這個 `Update` 方法會停用命令，如果它找不到作用中的「文件」與「文字編輯器」來插入文字：
 
 ```csharp
 protected override void Update (CommandInfo info)
@@ -129,13 +129,13 @@ public enum DateInserterCommands
 }
 ```
 
-命令和 CommandItem 現已繫結在一起，從 [編輯] 功能表  選取 CommandItem 時，CommandItem 會呼叫命令。
+命令和 CommandItem 現已繫結在一起，從 [編輯] 功能表選取 CommandItem 時，CommandItem 會呼叫命令。
 
 ## <a name="ide-apis"></a>IDE API
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-如需可供開發的區域範圍資訊，請參閱 [Extension Tree Reference](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) (延伸模組樹狀目錄參考) 和 [API Overview](http://monodevelop.com/Developers/Articles/API_Overview) (API 概觀)。 建置進階延伸模組套件時，也請參閱 [Developer Articles](http://monodevelop.com/Developers/Articles) (開發人員文章)。 以下是自訂區域的部分清單：
+如需可供開發的區域範圍資訊，請參閱 [Extension Tree Reference](https://www.monodevelop.com/developers/articles/extension-tree-reference/) (延伸模組樹狀目錄參考) 和 [API Overview](https://www.monodevelop.com/developers/articles/api-overview/) (API 概觀)。 建置進階延伸模組套件時，也請參閱 [Developer Articles](https://www.monodevelop.com/developers/articles/) (開發人員文章)。 以下是自訂區域的部分清單：
 
 * 板
 * 按鍵繫結配置
@@ -155,7 +155,7 @@ public enum DateInserterCommands
 * 目標 Framework
 * 目標執行階段
 * VC 後端
-* 重構
+* Refactoring
 * 執行處理常式
 * 語法醒目提示
 
@@ -174,15 +174,15 @@ Visual Studio for Mac [引進新的原生 Cocoa 文字編輯器 UI](https://aka.
 
 在處理 Visual Studio for Mac 特定的擴充功能之前，先深入了解共用編輯器本身會有所幫助。 以下是提供相關詳細資訊的幾個資源：
 
-* [Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
-* [編輯器中的 MEF](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor) \(部分機器翻譯\)
-* [深入探索編輯器](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
-* [語言服務及編輯器擴充點](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Managed Extensibility Framework](/dotnet/framework/mef/index)
+* [編輯器中的 MEF](/visualstudio/extensibility/managed-extensibility-framework-in-the-editor) \(部分機器翻譯\)
+* [深入探索編輯器](/visualstudio/extensibility/inside-the-editor)
+* [語言服務及編輯器擴充點](/visualstudio/extensibility/language-service-and-editor-extension-points)
 * [編輯器架構影片簡介](https://www.youtube.com/watch?v=PkYVztKjO9A) \(英文\)
 
-有了這些資源之後，您必須熟悉的主要概念為 [`ITextBuffer`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) 和 [`ITextView`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview)：
+有了這些資源之後，您必須熟悉的主要概念為 [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) 和 [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview)：
 
-* `ITextBuffer` 是可隨時間變更的文字記憶體內代表。 `ITextBuffer`上的 `CurrentSnapshot` 屬性會傳回緩衝區 (`ITextSnapshot` 執行個體) 目前內容的「不可變」  代表。 對緩衝區進行變更時，CurrentSnapshot 屬性會更新為最新版本。 分析器可以檢查任何執行緒上的文字快照集，且其內容保證永遠不會變更。
+* `ITextBuffer` 是可隨時間變更的文字記憶體內代表。 `ITextBuffer`上的 `CurrentSnapshot` 屬性會傳回緩衝區 (`ITextSnapshot` 執行個體) 目前內容的「不可變」代表。 對緩衝區進行變更時，CurrentSnapshot 屬性會更新為最新版本。 分析器可以檢查任何執行緒上的文字快照集，且其內容保證永遠不會變更。
 
 * `ITextView` 是 `ITextBuffer` 如何在編輯器控項畫面中轉譯的 UI 代表。 它有其文字緩衝區的參考，以及 `Caret`、`Selection`和其他 UI 相關的概念。
 
@@ -193,6 +193,6 @@ Visual Studio for Mac [引進新的原生 Cocoa 文字編輯器 UI](https://aka.
 > [!NOTE]
 > 我們目前正努力改善 Visual Studio for Mac 的擴充性情節。 如果您正在建立延伸模組並需要其他協助或相關資訊，或是想要提供意見反應，請填寫 [Visual Studio for Mac 延伸模組製作](https://aka.ms/vsmac-extensions-survey) \(英文\) 表單。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [開發 Visual Studio 延伸模組 (Windows 上)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

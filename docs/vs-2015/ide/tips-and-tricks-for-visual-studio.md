@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d17a053a5620996f3462e2c79e0b68bd374adccd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 432a0eddece867972e5c5159f734b4589c22e218
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654841"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299920"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 秘訣和訣竅
 
@@ -143,6 +143,6 @@ ms.locfileid: "72654841"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 部落格](http://blogs.msdn.com/b/visualstudio)
-- [Visual Studio 秘訣和訣竅部落格](http://blogs.msdn.com/b/zainnab)
-- [Channel 9 上的 Visual Studio 工具箱](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+- [Visual Studio 部落格](https://devblogs.microsoft.com/visualstudio/)
+- [Visual Studio 秘訣和訣竅部落格](https://blogs.msdn.microsoft.com/zainnab/)
+- [Channel 9 上的 Visual Studio 工具箱](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox)

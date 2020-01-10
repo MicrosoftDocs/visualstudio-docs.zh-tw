@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573692"
 ---
 # <a name="return-statement-outside-of-function"></a>函式外部的 'return' 陳述式
-您在程式碼的全域範圍中使用了 `return` 語句。 @No__t_0 語句應該只會出現在函式的主體內。  
+您在程式碼的全域範圍中使用了 `return` 語句。 `return` 語句應該只會出現在函式的主體內。  
   
  使用 `()` 運算子叫用函數是運算式。 所有運算式都有值;`return` 語句用來指定函數所傳回的值。 一般的形式如下：  
   
@@ -37,11 +37,11 @@ return [ expression ];
   
  如果函式傳回，因為它到達函式主體的結尾，而未執行 `return` 語句，則傳回的值會是**未定義**的值（這表示函數結果不能當做較大運算式的一部分使用）。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 從程式碼的主要主體（全域範圍）移除 `return` 語句。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [return 陳述式](../../javascript/reference/return-statement-javascript.md)   
  [函數物件](../../javascript/reference/function-object-javascript.md)   
  [caller 屬性 (Function)](../../javascript/reference/caller-property-function-javascript.md)

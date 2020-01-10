@@ -12,17 +12,17 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 66a9cdab1284d015e2ea76162d240b6a1232d90f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c0fa4e92c62ffb5b9c41cf5e297ed11ca63c38e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669923"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298715"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>定義和安裝模型擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 中，您可以定義模型圖表的擴充功能。 使用這種方式，您可以調整圖表和模型，以符合您自己的需求。 例如，您可以定義功能表命令、UML 設定檔、驗證條件約束和工具箱項目。 您可以在單一擴充功能中定義數個元件。 您也可以使用 [Visual Studio 整合擴充功能 (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780)格式，將這些擴充功能散發給其他 Visual Studio 使用者。 您可以在 Visual Studio 中使用 VSIX 專案建立 VSIX。
+在 Visual Studio 中，您可以定義模型圖表的擴充功能。 使用這種方式，您可以調整圖表和模型，以符合您自己的需求。 例如，您可以定義功能表命令、UML 設定檔、驗證條件約束和工具箱項目。 您可以在單一擴充功能中定義數個元件。 您也可以使用 [Visual Studio 整合擴充功能 (VSIX)](https://go.microsoft.com/fwlink/?LinkId=160780)格式，將這些擴充功能散發給其他 Visual Studio 使用者。 您可以在 Visual Studio 中使用 VSIX 專案建立 VSIX。
 
 ## <a name="requirements"></a>需求
  請參閱 [需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。
@@ -42,7 +42,7 @@ ms.locfileid: "72669923"
 
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>建立功能表命令、軌跡處理常式或驗證的類別庫專案
 
-1. 在 [檔案] 功能表上，依序選擇 [新增]和 [專案]。
+1. 在 [檔案] 功能表，選擇 [新增]、[專案]。
 
 2. 在 [已安裝的範本]下，選取 [Visual C#] 或 [Visual Basic]，然後選擇 [類別庫]。
 
@@ -116,7 +116,7 @@ ms.locfileid: "72669923"
 
     1. 在方案總管中，於專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾]。
 
-    2. 找出 **\* \\** _yourproject。_ 的 bin \\
+    2. 找出 **\*\\** _yourproject。_ 的 bin\\
 
 2. 將 **.vsix** 檔案複製到要安裝擴充功能的目標電腦。 這可以是您自己的電腦或另一部電腦。
 
@@ -136,9 +136,9 @@ ms.locfileid: "72669923"
 
 3. 選取擴充功能，然後按一下 [解除安裝]。
 
-   在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在這種情況下，您可以從下列位置移除延伸模組，其中 *% LocalAppData%* 通常是*DriveName*： \Users \\*UserName*\AppData\Local：
+   在很少見的情況下，錯誤的擴充功能會無法載入，並且在錯誤視窗中建立報表，但不會顯示在擴充管理員中。 在這種情況下，您可以從下列位置移除延伸模組，其中 *% LocalAppData%* 通常是*DriveName*： \Users\\*UserName*\AppData\Local：
 
-   *% LocalAppData%* **\Microsoft\VisualStudio \\ [version] \Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio\\[version] \Extensions**
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [定義設定檔以擴充 uml](../modeling/define-a-profile-to-extend-uml.md) [定義自訂模型工具箱專案](../modeling/define-a-custom-modeling-toolbox-item.md)[定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

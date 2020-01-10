@@ -6,17 +6,17 @@ helpviewer_keywords:
 - multiple processors
 - MSBuild, multiple processor systems
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 065b11b689189f5ad833ce642cfcfc94da06f83d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bd377318d92989f7e1341d166b2ca3d3978a148d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747194"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595234"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>使用多個處理器來建置專案
 MSBuild 可運用有多個處理器或多核心處理器的系統。 針對每個可用的處理器會建立個別的建置流程。 例如，如果系統具備四個處理器，則會建立四個建置流程。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可同時處理這些建置，因此將縮短整體的建置時間。 不過，平行建置會對建置處理序的發生方式帶來一些改變。 本主題將討論這些變更。
@@ -31,7 +31,7 @@ MSBuild 可運用有多個處理器或多核心處理器的系統。 針對每�
  在平行建置中，錯誤和例外狀況可以發生在與它們在非平行建置中不一樣的時間，且當其中一個專案無法建置時，另一個專案會繼續建置。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 不會停止與失敗的專案平行建置的任何專案建置。 其他專案仍會繼續建置，直到它們成功或失敗為止。 不過，如果已啟用 <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A>，則即使發生錯誤，還是不會停止任何建置。
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>C++專案（. .vcxproj）和方案（.sln）檔案
- @No__t_0 專案（ *. .vcxproj*）和方案（ *.sln*）檔案都可以傳遞至[MSBuild](../msbuild/msbuild-task.md)工作。 針對 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案，會呼叫 VCWrapperProject，並接著建立內部 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案。 針對 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 方案，會建立 SolutionWrapperProject，並接著建立內部 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案。 在這兩種情況下，產生的專案會視為與任何其他 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案相同。
+ [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案（ *. .vcxproj*）和方案（ *.sln*）檔案都可以傳遞至[MSBuild](../msbuild/msbuild-task.md)工作。 針對 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案，會呼叫 VCWrapperProject，並接著建立內部 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案。 針對 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 方案，會建立 SolutionWrapperProject，並接著建立內部 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案。 在這兩種情況下，產生的專案會視為與任何其他 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案相同。
 
 ## <a name="multi-process-execution"></a>多處理序執行
  幾乎所有建置相關活動都需要目前的目錄在整個建置流程期間維持一致，以避免路徑相關錯誤。 因此，專案無法在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中不同的執行緒上執行，因為它們可能會導致建立多個目錄。

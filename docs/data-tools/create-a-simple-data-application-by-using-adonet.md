@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648736"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586870"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單的資料應用程式
 
@@ -27,11 +27,11 @@ ms.locfileid: "72648736"
 > [!IMPORTANT]
 > 為了簡化程式碼，它不會包含已準備好投入生產環境的例外狀況處理。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 若要建立應用程式，您需要：
 
-- Visual Studio。
+- Visual Studio.
 
 - SQL Server Express LocalDB。 如果您沒有 SQL Server Express LocalDB，可以從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)進行安裝。
 
@@ -84,7 +84,7 @@ ms.locfileid: "72648736"
 
    ![[巡覽] 對話方塊](../data-tools/media/simpleappnav.png)
 
-|瀏覽表單的控制項|內容|
+|瀏覽表單的控制項|屬性|
 | - |----------------|
 |按鈕|Name = btnGoToAdd|
 |按鈕|Name = btnGoToFillOrCancel|
@@ -94,7 +94,7 @@ ms.locfileid: "72648736"
 
 ![新增客戶以及下訂單](../data-tools/media/simpleappnewcust.png)
 
-|NewCustomer 表單的控制項|內容|
+|NewCustomer 表單的控制項|屬性|
 | - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
@@ -109,7 +109,7 @@ ms.locfileid: "72648736"
 
 ![填寫或取消訂單](../data-tools/media/simpleappcancelfill.png)
 
-|FillOrCancel 表單的控制項|內容|
+|FillOrCancel 表單的控制項|屬性|
 | - |----------------|
 |TextBox|Name = txtOrderID|
 |按鈕|Name = btnFindByOrderID|
@@ -122,7 +122,7 @@ ms.locfileid: "72648736"
 ## <a name="store-the-connection-string"></a>儲存連接字串
 當您的應用程式嘗試開啟資料庫的連接時，應用程式必須存取連接字串。 若要避免在每個表單上手動輸入字串，請將字串儲存在*專案的 app.config*檔案中，並建立方法，以便在從應用程式中的任何表單呼叫方法時，傳回字串。
 
-以滑鼠右鍵按一下**伺服器總管**中的 [**銷售**資料] 連接，然後選擇 [**屬性**]，即可找到連接字串。 找出**ConnectionString**屬性，然後使用**ctrl** +**A**、 **ctrl** +**C**來選取字串，並將其複製到剪貼簿。
+以滑鼠右鍵按一下**伺服器總管**中的 [**銷售**資料] 連接，然後選擇 [**屬性**]，即可找到連接字串。 找出**ConnectionString**屬性，然後使用**ctrl**+**A**、 **ctrl**+**C**來選取字串，並將其複製到剪貼簿。
 
 1. 如果C#您使用的是，請在**方案總管**中，展開專案底下的 [**屬性**] 節點，然後開啟 [**設定**] 檔案。
     如果您使用 Visual Basic，請在**方案總管**中按一下 [**顯示所有**檔案]，展開 [**我的專案**] 節點，然後開啟 [**配置**檔案]。
@@ -229,7 +229,7 @@ ms.locfileid: "72648736"
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]
 
-## <a name="test-your-application"></a>測試您的應用程式
+## <a name="test-your-application"></a>測試應用程式
 
 在您編碼每一個 Click 事件處理常式，然後完成撰寫程式碼之後，選取 **F5** 鍵來建置及測試您的應用程式。
 

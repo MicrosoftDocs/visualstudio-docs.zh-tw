@@ -3,17 +3,17 @@ title: 數學節點
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594adb7f726c29c9344dbd437479e74ef484118c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 75c1b3b9c515defde9eceac1a370f40b0acbd2c8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635070"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589392"
 ---
 # <a name="math-nodes"></a>數學節點
 
@@ -24,10 +24,10 @@ ms.locfileid: "72635070"
 
 ## <a name="math-node-reference"></a>數學節點參考
 
-|節點|詳細資料|內容|
+|節點|詳細資料|屬性|
 |----------|-------------|----------------|
 |**Abs**|根據每個元件計算指定輸入的絕對值。<br /><br /> 對於輸入 `X` 的每個元件，負值都會轉成正值，以讓結果的每個元件都有正值。<br /><br /> **輸入：**<br /><br /> `X`：`float`、`float2`、`float3` 或 `float4`<br /> 這些值可以決定絕對值。<br /><br /> `Output:`<br /><br /> `Output`：與輸入 `X` 相同<br /> 依每個元件而定的絕對值。|None|
-|**新增**|根據每個元件計算指定輸入的整體元件總和。<br /><br /> 對於結果的每個元件，會將輸入 `X` 與輸入 `Y` 的對應元件相加。<br /><br /> **輸入：**<br /><br /> `X`：`float`、`float2`、`float3` 或 `float4`<br /> 要相加的其中一個值。<br /><br /> `Y`：與輸入 `X` 相同<br /> 要相加的其中一個值。<br /><br /> **輸出：**<br /><br /> `Output`：與輸入 `X` 相同<br /> 每個元件的總和。|None|
+|**[新增]**|根據每個元件計算指定輸入的整體元件總和。<br /><br /> 對於結果的每個元件，會將輸入 `X` 與輸入 `Y` 的對應元件相加。<br /><br /> **輸入：**<br /><br /> `X`：`float`、`float2`、`float3` 或 `float4`<br /> 要相加的其中一個值。<br /><br /> `Y`：與輸入 `X` 相同<br /> 要相加的其中一個值。<br /><br /> **輸出：**<br /><br /> `Output`：與輸入 `X` 相同<br /> 每個元件的總和。|None|
 |**天花板**|根據每個元件計算指定輸入的上限。<br /><br /> 值的上限是指大於或等於該值的最小整數。<br /><br /> **輸入：**<br /><br /> `X`：`float`、`float2`、`float3` 或 `float4`<br /> 要計算上限的值。<br /><br /> **輸出：**<br /><br /> `Output`：與輸入 `X` 相同<br /> 每個元件的上限。|None|
 |**夾鉗**|將指定輸入的每個元件限縮在預先定義的範圍內。<br /><br /> 對於結果的每個元件，低於定義範圍的值都會視為等於該範圍中的最小值，高於定義範圍的值則會視為等於該範圍中的最大值，而範圍內的值則不會變更。<br /><br /> **輸入：**<br /><br /> `X`：`float`、`float2`、`float3` 或 `float4`<br /> 要限縮的值。<br /><br /> **輸出：**<br /><br /> `Output`：與輸入 `X` 相同<br /> 每個元件限縮後的值。|**最大值**<br /> 範圍內最大的可能值。<br /><br /> **最小值**<br /> 範圍內最小的可能值。|
 |**Cos**|根據每個元件，以弧度為單位計算指定輸入的餘弦函數。<br /><br /> 對於結果的每個元件，會計算對應元件的餘弦函數 (弧度中所提供)。 結果之元件的值在 [-1, 1] 範圍內。<br /><br /> **輸入：**<br /><br /> `X`：`float`、`float2`、`float3` 或 `float4`<br /> 要以弧度為單位計算餘弦函數的值。<br /><br /> **輸出：**<br /><br /> `Output`：與輸入 `X` 相同<br /> 每個元件的餘弦函數。|None|

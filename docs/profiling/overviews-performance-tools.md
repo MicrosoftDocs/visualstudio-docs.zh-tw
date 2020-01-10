@@ -6,14 +6,15 @@ ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dcce2a7a505c5ac5aa1db3232055f8b37b7e64ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794384"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772663"
 ---
 # <a name="overviews-performance-tools"></a>概觀 (效能工具)
 本節提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的概念與術語概觀；您可以使用這套工具來測量開發中應用程式的效能特性。
@@ -55,7 +56,7 @@ ms.locfileid: "62794384"
 
  了解在 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 上收集取樣資料以及剖析跨工作階段應用程式時，可能會遇到的問題與必須執行的步驟。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [快速入門](../profiling/getting-started-with-performance-tools.md)
 - [效能總管](../profiling/performance-explorer.md)

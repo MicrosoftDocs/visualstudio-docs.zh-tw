@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09222971ea5150b280014d85f801a82a8eccc5d2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2721798ee9f0c7e006acdedbecaecbd56068be3f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406151"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911211"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>並行視覺化檢視命令列公用程式 (CVCollectionCmd)
 您可以使用並行視覺化檢視命令列公用程式 (*CVCollectionCmd.exe*) 從命令列收集追蹤，以便在 Visual Studio 的並行視覺化檢視中進行檢視。 此工具可在未安裝 Visual Studio 的電腦上使用。
 
 > [!NOTE]
-> 從 Visual Studio 2013 開始，並行視覺化檢視是選擇性擴充功能。 (先前它包含在 Visual Studio 中。)您可以從下載中心下載 [Visual Studio 2015 並行視覺化檢視收集工具](http://www.microsoft.com/download/details.aspx?id=49103)。
+> 從 Visual Studio 2013 開始，並行視覺化檢視是選擇性擴充功能。 （先前已包含在 Visual Studio 中）。您可以從下載中心下載[適用于 Visual Studio 2015 的並行視覺化檢視集合工具](https://www.microsoft.com/download/details.aspx?id=49103)。
 
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>下載並行視覺化檢視命令列公用程式
- 若要下載及安裝此命令列公用程式，請移至 Microsoft 下載中心網站上的 [Visual Studio 2015 的並行視覺化檢視收集工具](http://www.microsoft.com/download/details.aspx?id=49103) ，並遵循指示進行。 根據預設，*CVCollectionCmd.exe* 會安裝在 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (x64 電腦上為 %ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\)。
+ 若要下載及安裝此命令列公用程式，請移至 Microsoft 下載中心網站上的 [Visual Studio 2015 的並行視覺化檢視收集工具](https://www.microsoft.com/download/details.aspx?id=49103) ，並遵循指示進行。 根據預設，*CVCollectionCmd.exe* 會安裝在 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (x64 電腦上為 %ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\)。
 
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>使用 CVCollectionCmd 收集追蹤
  您可以使用 CVCollectionCmd 啟動應用程式，或將 CVCollectionCmd 附加至應用程式，來收集追蹤。 請參閱下列與選項相關的命令參考。 例如
@@ -38,9 +38,9 @@ ms.locfileid: "63406151"
 
  **CvCollectionCmd /?**
 
-|選項|說明|參數|傳回值|
+|選項|描述|參數|傳回值|
 |------------|-----------------|----------------|-------------------|
-|查詢|傳回是否可以開始收集。|無|0，表示準備開始收集。<br /><br /> 1，表示收集已在進行中。<br /><br /> 2，表示收集不在進行中，但已啟用一或多個所需的 [ETW](/dotnet/framework/wcf/samples/etw-tracing) 工作階段。|
+|查詢|傳回是否可以開始收集。|None|0，表示準備開始收集。<br /><br /> 1，表示收集已在進行中。<br /><br /> 2，表示收集不在進行中，但已啟用一或多個所需的 [ETW](/dotnet/framework/wcf/samples/etw-tracing) 工作階段。|
 |啟動|在並行視覺化檢視下執行指定的處理序。|可執行檔的路徑。|0，表示執行成功。<br /><br /> 1，表示執行失敗，因為無法啟動目標應用程式。<br /><br /> 13，表示執行失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|
 |附加|開始收集系統範圍追蹤；如果指定處理序，則附加至該處理序。|無。|0，表示附加成功。<br /><br /> 1，表示附加失敗，因為指定的處理序無效或模稜兩可。<br /><br /> 13，表示附加失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|
 |中斷連結|停止收集。|無。|0，表示中斷連結成功。<br /><br /> 1，表示中斷連結失敗，因為目前正在收集。<br /><br /> 2，表示中斷連結失敗，因為無法停止收集。|
@@ -61,19 +61,19 @@ ms.locfileid: "63406151"
 ### <a name="configuration-file-tags"></a>組態檔標記
  組態檔採用 XML 格式。 以下是有效的標記和值：
 
-| 標記 | 說明 | 值 |
+| Tag | 描述 | 值 |
 |-------------------------| - | - |
 | 組態 | 標示整個組態檔。 | 必須包含下列項目：<br /><br /> -   MinorVersion<br />-   MajorVersion |
 | MajorVersion | 指定組態檔的主要版本。 | [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 專案必須是 1。 如果不是 1，公用程式將無法運作。 |
 | MinorVersion | 指定組態檔的次要版本。 | [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 專案必須是 0。 如果不是 0，公用程式將無法運作。 |
 | IncludeEnvSymbolPath | 設定值，決定是否使用環境符號路徑 (_NT_SYMBOL_PATH)。 | -   True<br />-   False |
 | DeleteEtlsAfterAnalysis | 設定值，決定是否在分析完成時刪除 ETL 檔案。 | -   True<br />-   False |
-| DeleteEtlsAfterAnalysis | 指定符號伺服器的路徑。 如需詳細資訊，請參閱 [使用 Microsoft 符號伺服器取得偵錯符號檔](http://go.microsoft.com/fwlink/?LinkID=149389)。 | 目錄名稱或 URL。 |
+| DeleteEtlsAfterAnalysis | 指定符號伺服器的路徑。 如需詳細資訊，請參閱 [使用 Microsoft 符號伺服器取得偵錯符號檔](/windows/win32/dxtecharts/debugging-with-symbols)。 | 目錄名稱或 URL。 |
 | Markers | 包含標記提供者的清單。 | 可包含零個或多個 MarkerProvider 項目。 |
 | MarkerProvider | 指定單一標記提供者。 | 必須包含下列項目：<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 可包含下列項目：<br /><br /> -   Categories<br />-   IsEnabled |
 | 層級 | 設定 MarkerProvider 的重要性層級。 | -   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything |
-| Guid | ETW 標記提供者的全域唯一識別項。 | GUID。 |
-| 名稱 | 指定標記提供者的描述。 | 字串。 |
+| GUID | ETW 標記提供者的全域唯一識別項。 | GUID。 |
+| [屬性] | 指定標記提供者的描述。 | 字串。 |
 | 分類 | 指定標記提供者所收集的分類。 | 以逗號分隔字串表示多個數字或多個範圍的數字。 |
 | IsEnabled | 設定值，決定是否啟用標記提供者進行收集。 | -   True<br />-   False |
 | FilterConfig | 指定從收集篩選之 ETW 事件的組態選項清單。 | 可包含下列項目：<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO |

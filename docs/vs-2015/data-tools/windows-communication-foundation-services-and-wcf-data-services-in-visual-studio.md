@@ -33,26 +33,26 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49c2dc46a3e78c5823e569aec80a3166c6e30c04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c366ce44ab65ded62370dd3c219473089d5ca111
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657821"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299562"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 提供使用 Windows Communication Foundation （WCF）和 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 的工具，這是用來建立分散式應用程式的 Microsoft 技術。 本主題提供 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 觀點的服務簡介。 如需完整的檔，請參閱[WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)。
+Visual Studio 提供使用 Windows Communication Foundation （WCF）和 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]的工具，這是用來建立分散式應用程式的 Microsoft 技術。 本主題提供 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 觀點的服務簡介。 如需完整的檔，請參閱[WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)。
 
 ## <a name="what-is-wcf"></a>什麼是 WCF？
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 是統一的架構，可建立安全、可靠、交易和互通的分散式應用程式。 它會取代舊版的處理序間通訊技術，例如，.ASMX Web 服務、.NET 遠端處理、企業服務（DCOM）和 MSMQ。 WCF 將所有這些技術的功能整合在統一的程式設計模型下。 這可簡化開發分散式應用程式的體驗。
 
 #### <a name="what-are-wcf-data-services"></a>WCF Data Services 的內容
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 是開放式資料（OData）通訊協定標準的執行。  WCF Data Services 可讓您將表格式資料公開為一組 REST Api，可讓您使用標準 HTTP 動詞命令（例如 GET、POST、PUT 或 DELETE）來傳回資料。 在伺服器端上，WCF Data Services 由[ASP.NET Web API](http://www.asp.net/web-api)取代，以建立新的 OData 服務。 WCF Data Services 用戶端程式庫會持續成為在 .NET 應用程式中使用 OData 服務的最佳選擇，Visual Studio **（ &#124; Project 加入服務參考**）。 如需詳細資訊，請參閱 [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)。
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 是開放式資料（OData）通訊協定標準的執行。  WCF Data Services 可讓您將表格式資料公開為一組 REST Api，可讓您使用標準 HTTP 動詞命令（例如 GET、POST、PUT 或 DELETE）來傳回資料。 在伺服器端上，WCF Data Services 由[ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis)取代，以建立新的 OData 服務。 WCF Data Services 用戶端程式庫會持續成為在 .NET 應用程式中使用 OData 服務的最佳選擇，Visual Studio **（ &#124; Project 加入服務參考**）。 如需詳細資訊，請參閱 [WCF Data Services 4.5](https://go.microsoft.com/fwlink/?LinkID=119952)。
 
 ### <a name="wcf-programming-model"></a>WCF 程式設計模型
- WCF 程式設計模型是以兩個實體之間的通訊為基礎： WCF 服務和 WCF 用戶端。 程式設計模型會封裝在 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 的 <xref:System.ServiceModel> 命名空間中。
+ WCF 程式設計模型是以兩個實體之間的通訊為基礎： WCF 服務和 WCF 用戶端。 程式設計模型會封裝在 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]的 <xref:System.ServiceModel> 命名空間中。
 
 #### <a name="wcf-service"></a>WCF 服務
  WCF 服務是以定義服務與用戶端之間合約的介面為基礎。 它會標示 <xref:System.ServiceModel.ServiceContractAttribute> 屬性，如下列程式碼所示：
@@ -102,7 +102,7 @@ Visual Studio 提供使用 Windows Communication Foundation （WCF）和 [!INCLU
  若要深入瞭解 WCF 服務主機，請參閱[Wcf 服務主機（WcfSvcHost .exe）](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e)。
 
 #### <a name="wcf-test-client"></a>WCF 測試用戶端
- [WCF 測試用戶端] 工具可讓您輸入測試參數、將該輸入提交至 WCF 服務，以及查看服務傳回的回應。 當您將它與 WCF 服務主機結合時，它可提供便利的服務測試體驗。 您可以在 \Common7\IDE 資料夾中找到此工具，這是安裝在 C 磁片磁碟機中的 Visual Studio 2015： **C:\Program Files （x86） \Microsoft Visual Studio 14.0 \ Common7\IDE \\** 。
+ [WCF 測試用戶端] 工具可讓您輸入測試參數、將該輸入提交至 WCF 服務，以及查看服務傳回的回應。 當您將它與 WCF 服務主機結合時，它可提供便利的服務測試體驗。 您可以在 \Common7\IDE 資料夾中找到此工具，這是安裝在 C 磁片磁碟機中的 Visual Studio 2015： **C:\Program Files （x86） \Microsoft Visual Studio 14.0 \ Common7\IDE\\** 。
 
  當您按 F5 來進行 WCF 服務專案的偵錯工具時，WCF 測試用戶端會開啟並顯示在設定檔案中定義的服務端點清單。 您可以測試參數並啟動服務，並重複此程式來持續測試及驗證您的服務。
 
@@ -152,11 +152,11 @@ Visual Studio 提供使用 Windows Communication Foundation （WCF）和 [!INCLU
 
 2. 搜尋檔案中的 `<Client>` 標記。
 
-3. 在 `<Client>` 標籤下方搜尋 `<Endpoint>` 開頭的標記。
+3. 在 `<Client>` 標籤下方搜尋 `<Endpoint>`開頭的標記。
 
      如果服務參考提供多個端點，則會有兩個以上的 `<Endpoint` 標記。
 
-4. 在 `<EndPoint>` 標記內，您會發現 `name="`*SomeService* `"` 參數（其中*SomeService*代表端點名稱）。 這是可傳遞給服務參考之函式的 `endpointConfigurationName As String` 多載的端點名稱。
+4. 在 `<EndPoint>` 標記內，您會發現 `name="`*SomeService*`"` 參數（其中*SomeService*代表端點名稱）。 這是可傳遞給服務參考之函式的 `endpointConfigurationName As String` 多載的端點名稱。
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>如何：以非同步方式呼叫服務方法
  Windows Communication Foundation （WCF）服務中的大部分方法可能會以同步或非同步方式呼叫。 以非同步方式呼叫方法，可讓您的應用程式在呼叫速度較慢的連接時，仍可繼續運作。
@@ -234,21 +234,21 @@ Visual Studio 提供使用 Windows Communication Foundation （WCF）和 [!INCLU
 
 |標題|描述|
 |-----------|-----------------|
-|[逐步解說：在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|逐步示範如何在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中建立和使用 WCF 服務。|
-|[逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|提供逐步示範如何在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中建立和使用 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]。|
-|[使用 WCF 開發工具](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|討論如何在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中建立和測試 WCF 服務。|
+|[逐步解說：在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|逐步示範如何在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中建立和使用 WCF 服務。|
+|[逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|提供逐步示範如何在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中建立和使用 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]。|
+|[使用 WCF 開發工具](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|討論如何在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中建立和測試 WCF 服務。|
 |[如何：加入、更新或移除服務參考](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|描述如何新增、更新或移除專案中的 WCF 服務。|
-|[如何：新增、更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|討論如何參考和使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]。|
+|[如何：新增、更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|討論如何參考和使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中的 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]。|
 |[服務參考的疑難排解](../data-tools/troubleshooting-service-references.md)|提供服務參考時可能發生的一些常見錯誤，以及如何預防它們。|
 |[偵錯 WCF 服務](../debugger/debugging-wcf-services.md)|說明您在對 WCF 服務進行調試時可能會遇到的常見調試問題和技巧。|
 |[Windows Communication Foundation Authentication 服務總覽](https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|描述如何使用 WCF 來提供網站的角色服務。|
 |[逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|提供用於建立具類型資料集以及將 TableAdapter 和資料集程式碼分成多個專案的逐步指示。|
 |[設定服務參考對話方塊](../data-tools/configure-service-reference-dialog-box.md)|描述 [**設定服務參考**] 對話方塊的使用者介面元素。|
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
  <xref:System.ServiceModel>
 
  <xref:System.Data.Services>
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

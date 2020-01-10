@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e65f2f33d9c7b034da6b58f32280c95a96bacd7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5884dcd3f9e3cb8f1910d2e23ec80f910ed2fc9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651249"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301005"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>建立 UML 模型專案和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ UML 模型可協助您了解、討論及設計軟體系統。 Visual Studio 提�
  UML 模型圖表與圖層圖表可以只存在於模型專案內部。 每個模型專案都包含共用的 UML 模型和數個 UML 圖表。 每個圖表都是模型的部分檢視。 UML 模型包含 UML 圖表上的所有元素，而且可以使用 [UML 模型總管] 來檢視。 如需模型及其與圖表關聯性的詳細資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。 如需版本控制下之模型專案的相關資訊，請參閱[在版本控制下管理模型和圖表](../modeling/manage-models-and-diagrams-under-version-control.md)和[建立模型方案的結構](../modeling/structure-your-modeling-solution.md)
 
 > [!NOTE]
-> 還有另一種圖表，也就是 .NET 類別圖表，可用來將程式碼視覺化。 如需詳細資訊，請參閱[設計和查看類別和類型](http://go.microsoft.com/fwlink/?LinkId=142231)。
+> 還有另一種圖表，也就是 .NET 類別圖表，可用來將程式碼視覺化。 如需詳細資訊，請參閱[設計和查看類別和類型](https://go.microsoft.com/fwlink/?LinkId=142231)。
 
 ## <a name="CreatingModelingDiagrams"></a>在模型專案中建立圖表
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
@@ -80,7 +80,7 @@ UML 模型可協助您了解、討論及設計軟體系統。 Visual Studio 提�
 
 2. 在 [專案] 功能表中，按一下 [加入新項目]。
 
-3. 在 [**加入新專案-** *\<project 名稱 >* ] 對話方塊的 [**範本**] 底下，按一下模型圖表類型，例如 [ **UML 元件圖**]。
+3. 在 [**加入新專案-** *\<專案名稱 >* ] 對話方塊的 [**範本**] 底下，按一下模型圖表類型，例如 [ **UML 元件圖**]。
 
 4. 輸入圖表的名稱，然後按一下 [**新增**]。
 
@@ -152,8 +152,8 @@ UML 模型可協助您了解、討論及設計軟體系統。 Visual Studio 提�
 
 |**問題**|**都會**|**解決方法**|
 |---------------|----------------|--------------------|
-|無法開啟或載入至方案的模型專案。<br /><br /> 畫面顯示下列訊息：<br /><br /> 「方案中的一個或多個專案未正確載入。 如需詳細資訊，請參閱 [輸出] 視窗。」<br /><br /> [輸出] 視窗會顯示下列訊息：<br /><br /> 「*ModelingProjectFilenameAndPath*。 .modelproj：錯誤：無法辨識的 Guid 格式。」|模型專案具有相同名稱且位於相同方案中專案的參考。<br /><br /> 例如，圖層會連結至具有相同名稱且位於相同方案中的專案。|使用文字編輯器來開啟模型專案檔案，接著移除參考，然後再次嘗試開啟模型專案。<br /><br /> 若要避免這個問題，請勿加入具有相同名稱的專案參考。 確定專案具有唯一名稱。|
+|無法開啟或載入至方案的模型專案。<br /><br /> 隨即顯示下列訊息：<br /><br /> 「方案中的一個或多個專案未正確載入。 如需詳細資訊，請參閱 [輸出] 視窗。」<br /><br /> [輸出] 視窗會顯示下列訊息：<br /><br /> 「*ModelingProjectFilenameAndPath*。 .modelproj：錯誤：無法辨識的 Guid 格式。」|模型專案具有相同名稱且位於相同方案中專案的參考。<br /><br /> 例如，圖層會連結至具有相同名稱且位於相同方案中的專案。|使用文字編輯器來開啟模型專案檔案，接著移除參考，然後再次嘗試開啟模型專案。<br /><br /> 若要避免這個問題，請勿加入具有相同名稱的專案參考。 確定專案具有唯一名稱。|
 |已加入、複製或拖曳至其他模型專案或方案中其他位置的圖表，其中項目已遺失。<br /><br /> -或-<br /><br /> 在嘗試開啟圖表時，會顯示下列訊息：<br /><br /> -「因為圖表中的某些圖形或連接器的定義不存在於此專案中，所以其已遺失。 可能是在關閉圖表時從模型中刪除了定義，或是已將圖表複製到另一個不包含這些定義的專案。<br /><br /> -或-<br /><br /> -「此檔由另一個專案開啟。」|圖表檔案已從模型專案加入、拖曳，或複製至其他模型專案或方案中其他位置。|若要複製圖表檔案，請建立新的圖表，然後將來源圖表中的項目複製到新的圖表。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)[結構您的模型化方案](../modeling/structure-your-modeling-solution.md)

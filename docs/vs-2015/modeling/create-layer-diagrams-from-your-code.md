@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 138f818eab34b0b1860c7daa85f1b6814888fc9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3e6cd77e785adb59fc8b2cf3b28724ed0efe1ae3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652851"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300274"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>從程式碼建立分層圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "72652851"
 
 |**若要**|**請遵循下列步驟**|
 |------------|----------------------------|
-|建立單一成品的圖層|<ol><li>將項目從下列來源拖曳至分層圖：<br /><br /> <ul><li>**方案總管**<br /><br />         例如，您可以拖曳檔案或專案。</li><li>Code Map<br /><br />         請參閱[對應方案之間](../modeling/map-dependencies-across-your-solutions.md)的相依性，並[使用 code map 來對應用程式進行 debug](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**類別檢視**或**物件瀏覽器**</li></ul><br />     圖層會出現在圖表上，並且連結到成品。</li><li>重新命名圖層以反映相關程式碼或成品的責任。</li></ol> **重要事項：** 將二進位檔案拖曳至圖層圖表並不會自動將其參考加入至模型專案。 您必須手動加入您要驗證模型專案的二進位檔案。 **若要將二進位檔案加入至模型專案** <ol><li>在**方案總管**中，開啟模型專案的快捷方式功能表，然後選擇 [**加入現有專案**]。</li><li>在 [**加入現有專案**] 對話方塊中，流覽至二進位檔案並加以選取，然後選擇 **[確定]** 。     二進位檔案會出現在模型專案中。</li><li>在**方案總管**中，選擇您已加入的二進位檔案，然後按**F4**開啟 [**屬性**] 視窗。</li><li>在每個二進位檔案上，將 [**組建動作**] 屬性設定為 [**驗證**]。</li></ol>|
+|建立單一成品的圖層|<ol><li>將項目從下列來源拖曳至分層圖：<br /><br /> <ul><li>**方案總管**<br /><br />         例如，您可以拖曳檔案或專案。</li><li>程式碼對應<br /><br />         請參閱[對應方案之間](../modeling/map-dependencies-across-your-solutions.md)的相依性，並[使用 code map 來對應用程式進行 debug](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**類別檢視**或**物件瀏覽器**</li></ul><br />     圖層會出現在圖表上，並且連結到成品。</li><li>重新命名圖層以反映相關程式碼或成品的責任。</li></ol> **重要事項：** 將二進位檔案拖曳至圖層圖表並不會自動將其參考加入至模型專案。 您必須手動加入您要驗證模型專案的二進位檔案。 **若要將二進位檔案加入至模型專案** <ol><li>在**方案總管**中，開啟模型專案的快捷方式功能表，然後選擇 [**加入現有專案**]。</li><li>在 [**加入現有專案**] 對話方塊中，流覽至二進位檔案並加以選取，然後選擇 **[確定]** 。     二進位檔案會出現在模型專案中。</li><li>在**方案總管**中，選擇您已加入的二進位檔案，然後按**F4**開啟 [**屬性**] 視窗。</li><li>在每個二進位檔案上，將 [**組建動作**] 屬性設定為 [**驗證**]。</li></ol>|
 |為所有選取的成品建立單一圖層|同時將所有成品拖曳至分層圖。<br /><br /> 圖層隨即出現在圖表上，並且連結到所有成品。|
 |為每個選取的成品建立圖層|按住**SHIFT**鍵，同時將所有成品拖曳至圖層圖表。 **注意：** 如果您使用**SHIFT**鍵來選取某個範圍的專案，請在選取成品之後釋放該金鑰。 將成品至拖曳圖表時，再次按住該鍵不放。 <br /><br /> 每個成品的圖層隨即出現在圖表上，並且連結到個別成品。|
 |將成品加入至圖層|將成品拖曳至圖層。|
@@ -135,5 +135,5 @@ ms.locfileid: "72652851"
 
 - [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>請參閱
- [Channel 9 影片：使用圖層圖表設計和驗證您的架構](http://go.microsoft.com/fwlink/?LinkID=252073)[圖層圖表：參考](../modeling/layer-diagrams-reference.md)[分層圖：方針](../modeling/layer-diagrams-guidelines.md)[使用分層圖來驗證](../modeling/validate-code-with-layer-diagrams.md)程式碼[視覺化](../modeling/visualize-code.md)
+## <a name="see-also"></a>另請參閱
+ [Channel 9 影片：使用圖層圖表設計和驗證您的架構](https://go.microsoft.com/fwlink/?LinkID=252073)[圖層圖表：參考](../modeling/layer-diagrams-reference.md)[分層圖：方針](../modeling/layer-diagrams-guidelines.md)[使用分層圖來驗證](../modeling/validate-code-with-layer-diagrams.md)程式碼[視覺化](../modeling/visualize-code.md)

@@ -1,17 +1,17 @@
 ---
 title: Visual Studio for Mac 教學課程
 description: Visual Studio for Mac 提供整合式的開發環境，以在 macOS 上建置 .NET 應用程式，包括 ASP.NET Core 網站，和適用於 iOS、Android、Mac 和 Xamarin.Forms 的 Xamarin 專案。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 43b7918dfba6ff1d8076d3173900ecdc1b1223a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998384"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984979"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac 導覽
 
@@ -39,11 +39,11 @@ Visual Studio for Mac 支援下列幾種開發作業：
 
 Visual Studio for Mac 分成數個區段，以便管理應用程式檔案和設定、建立應用程式程式碼及偵錯。
 
-## <a name="welcome-screen"></a>歡迎畫面
+## <a name="welcome-screen"></a>歡迎使用畫面
 
 啟動時，Visual Studio for Mac 會顯示*歡迎畫面*：
 
-![歡迎畫面](media/ide-tour-image1.png)
+![歡迎使用畫面](media/ide-tour-image1.png)
 
 歡迎畫面包含下列區段：
 
@@ -94,9 +94,9 @@ NuGet 是適用於 .NET 開發最受歡迎的套件管理員。 使用 Visual St
 
 在應用程式中使用 NuGet 套件的相關資訊，可於[在專案中包含 NuGet 專案](/visualstudio/mac/nuget-walkthrough)一文中找到。
 
-## <a name="refactoring"></a>重構
+## <a name="refactoring"></a>Refactoring
 
-Visual Studio for Mac 提供兩種有用的方式來重構程式碼：內容動作和來源分析。 您可以在[重構](/visualstudio/mac/refactoring)一文中閱讀有關它們的深入資訊。
+Visual Studio for Mac 提供兩種有用的方式來重構程式碼：內容動作和原始檔分析。 您可以在[重構](/visualstudio/mac/refactoring)一文中閱讀有關它們的深入資訊。
 
 ## <a name="debugging"></a>偵錯
 
@@ -122,6 +122,6 @@ Visual Studio for Mac 與 Git 和子版本原始檔控制系統整合。 進行�
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio IDE (Windows 上)](/visualstudio/ide/visual-studio-ide)

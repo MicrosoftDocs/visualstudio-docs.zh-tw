@@ -9,19 +9,19 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b683e2d266e065ce9fcf7caa1943cd44d1bd9be6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8eb2d4f5b025be6f68860c18d1c14da017aaf3fe
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664729"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294327"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 XAML 設計工具中， *「圖形」* (Shape) 正如您所預期。 例如：矩形、圓形或橢圓形。 *「路徑」* (path) 是圖形的更靈活版本。 您可以執行像是調整形狀，或將圖形合併在一起形成新的圖形等動作。
 
- 圖形與路徑都會使用向量圖形，因此可以適切地調整為高解析度顯示。 如果您想要深入了解向量圖形，請參閱 [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) 或 [vector graphics](http://www.webopedia.com/TERM/V/vector_graphics.html)。
+ 圖形與路徑都會使用向量圖形，因此可以適切地調整為高解析度顯示。 如果您想要深入了解向量圖形，請參閱 [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) 或 [vector graphics](https://www.webopedia.com/TERM/V/vector_graphics.html)。
 
  **本主題內容：**
 
@@ -130,5 +130,5 @@ ms.locfileid: "72664729"
 
  **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：建立裁剪路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232) \(英文\)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用 Blend for Visual Studio 建立 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

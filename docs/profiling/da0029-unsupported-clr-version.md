@@ -13,24 +13,25 @@ ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a3855b8975684b088b2838a866db36e6ec19e665
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dbc0bfcdb49557e56711b60dca11977a3504d907
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936283"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777511"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029：不支援的 CLR 版本
 
 |||
 |-|-|
-|規則 ID|DA0029|
-|分類|分析工具使用方式|
+|規則識別碼|DA0029|
+|Category|分析工具使用方式|
 |程式碼剖析方法|從命令列進行程式碼剖析|
 |訊息|在收集期間偵測到不支援的 CLR 版本。 可能無法正確解析 Managed 符號。|
-|規則型別|資訊。|
+|規則類型|資訊。|
 
 ## <a name="cause"></a>原因
  您嘗試使用分析工具不支援的 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] 來分析應用程式。

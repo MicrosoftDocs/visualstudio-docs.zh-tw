@@ -8,17 +8,17 @@ helpviewer_keywords:
 - class diagrams, keyboard shortcuts
 - class diagrams, mouse shortcuts
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fa62baf020751a175b24f47a93b3e7280fb76fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6df4932a1043c984509632951ba67864fefe31ce
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647655"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590757"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>類別圖表和類別細節視窗中的鍵盤和滑鼠快速鍵
 
@@ -30,9 +30,9 @@ ms.locfileid: "72647655"
 
 |滑鼠組合|內容|描述|
 | - |-------------|-----------------|
-|按兩下|圖案項目|開啟程式碼編輯器。|
-|按兩下|棒棒糖符號連接器|展開/摺疊棒棒糖符號。|
-|按兩下|棒棒糖符號連接器標籤|叫用 [顯示介面] 命令。|
+|連按兩下|圖案項目|開啟程式碼編輯器。|
+|連按兩下|棒棒糖符號連接器|展開/摺疊棒棒糖符號。|
+|連按兩下|棒棒糖符號連接器標籤|叫用 [顯示介面] 命令。|
 |滑鼠滾輪|類別圖表|垂直捲動。|
 |**Shift** + 滑鼠滾輪|類別圖表|水平捲動。|
 |**Ctrl** + 滑鼠滾輪|類別圖表|縮放。|
@@ -56,7 +56,7 @@ ms.locfileid: "72647655"
 
 類別圖表中可支援下列鍵盤動作：
 
-|機碼|內容|描述|
+|索引鍵|內容|描述|
 |---------|-------------|-----------------|
 |**方向鍵**|在類型圖形內|圖形內容的樹狀樣式瀏覽 (支援圖案循環)。 如果可展開目前的項目，則向左和向右鍵可展開/摺疊該項目；如果不可展開目前的項目，則向左和向右鍵會瀏覽至父系 (請參閱樹狀檢視瀏覽，以了解詳細的行為)。|
 |**方向鍵**|最上層的圖形|移動圖表上的圖形。|
@@ -89,7 +89,7 @@ ms.locfileid: "72647655"
 
 |||
 |-|-|
-|機碼|結果|
+|索引鍵|結果|
 |**,** (逗號)|如果游標位於參數資料列中，輸入逗號會將游標移至下一個參數的 [名稱] 欄位。 如果游標位於某個方法的最後一個參數資料列中，輸入逗號會將游標移至 \<新增參數> 欄位中，讓您用以建立新的參數。<br /><br /> 如果資料指標位於 [類別細節] 視窗中的其他位置，鍵入逗號就會在目前欄位中新增一個逗號。|
 |**;** (分號) 或 **)** (右括弧)|在 [類別細節] 視窗方格中，將資料指標移至下一個成員資料列的 [名稱] 欄位。|
 |**Tab**|將游標移到下一個欄位，先從左到右移動，然後由上而下。 如果要從某個您已鍵入文字的欄位移動資料指標，[類別細節] 視窗會先處理該文字，若沒有產生錯誤，則會儲存該文字。<br /><br /> 如果游標位於空白欄位，例如 \<新增參數>，Tab 鍵會將游標移至下一個資料列的第一個欄位。|
@@ -105,4 +105,4 @@ ms.locfileid: "72647655"
 - [建立及設定類型成員](creating-and-configuring-type-members.md)
 - [如何只使用鍵盤](../reference/how-to-use-the-keyboard-exclusively.md)
 - [Visual Studio 中的預設鍵盤快速鍵](../default-keyboard-shortcuts-in-visual-studio.md)
-- [鍵盤快速鍵 (Blend)](../../designers/keyboard-shortcuts-in-blend.md)
+- [鍵盤快速鍵 (Blend)](../../xaml-tools/keyboard-shortcuts-in-blend.md)

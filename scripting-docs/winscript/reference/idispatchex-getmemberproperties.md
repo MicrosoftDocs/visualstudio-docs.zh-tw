@@ -66,8 +66,8 @@ HRESULT GetMemberProperties(
 |fdexPropDynamicType|成員是動態的，而且可以在物件的存留期間變更。|  
 |fdexPropCanCall|您可以使用 DISPATCH_METHOD，將成員當做方法來呼叫。|  
 |fdexPropCannotCall|無法使用 DISPATCH_METHOD 將成員當做方法來呼叫。|  
-|fdexPropCanConstruct|您可以使用 DISPATCH_CONSTRUCT，將成員當做「函式」呼叫。|  
-|fdexPropCannotConstruct|無法使用 DISPATCH_CONSTRUCT 將成員當做「函式」呼叫。|  
+|fdexPropCanConstruct|您可以使用 DISPATCH_CONSTRUCT，將成員當做函式呼叫。|  
+|fdexPropCannotConstruct|無法使用 DISPATCH_CONSTRUCT 將成員當做函式呼叫。|  
 |fdexPropCanSourceEvents|成員可以引發事件。|  
 |fdexPropCannotSourceEvents|成員無法引發事件。|  
   
@@ -96,7 +96,7 @@ BSTR bstrName;
    }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDispatchEx 介面](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx：： GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx：： GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

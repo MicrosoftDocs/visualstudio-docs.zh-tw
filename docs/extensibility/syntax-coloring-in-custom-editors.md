@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4302f463d93776d17be0251e6194375c15adc19
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a62fd7a8ab0673d6a6020fb7d73f04488ff23485
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718760"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188851"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>自訂編輯器中的語法著色
 Visual Studio 環境 SDK 編輯器，包括核心編輯器，請使用語言服務來識別特定的語法專案，並以指定的檔視圖色彩來顯示它們。
@@ -52,7 +52,7 @@ Visual Studio 環境 SDK 編輯器，包括核心編輯器，請使用語言服�
 3. 使用 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 所傳回的顏色標示資訊來重新繪製並顯示其文字。
 
 > [!NOTE]
-> 除了使用語言服務的著色器之外，VSPackage 還可以選擇使用一般用途的 Visual Studio 環境 SDK 文字著色機制。 如需此機制的詳細資訊，請參閱[使用字型和色彩](../extensibility/using-fonts-and-colors.md)。
+> 除了使用語言服務的著色器之外，VSPackage 還可以選擇使用一般用途的 Visual Studio 環境 SDK 文字著色機制。 如需此機制的詳細資訊，請參閱[使用字型和色彩](/visualstudio/extensibility/using-fonts-and-colors?view=vs-2015)。
 
 ## <a name="see-also"></a>請參閱
 

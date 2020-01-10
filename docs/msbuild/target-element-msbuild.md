@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Target element [MSBuild]
 - <Target> element [MSBuild]
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b9910a677f5442e10c62a0623043033edd899c3
-ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
-ms.translationtype: HT
+ms.openlocfilehash: c69ee5758d5c6e513af853a8d7589057c6537956
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141181"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566419"
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
 包含一組可循序執行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作。
@@ -41,7 +41,7 @@ ms.locfileid: "67141181"
         BeforeTargets="Targets"
         AfterTargets="Targets"
         DependsOnTargets="DependentTarget"
-        Condition="'String A' == 'String B'">
+        Condition="'String A' == 'String B'"
         Label="Label">
     <Task>... </Task>
     <PropertyGroup>... </PropertyGroup>
@@ -55,14 +55,14 @@ ms.locfileid: "67141181"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Name`|必要屬性。<br /><br /> 目標的名稱。|
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如果條件評估為 `false`，目標將不會執行目標或 `DependsOnTargets` 屬性中所設定之任何目標的主體。 如需條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
-|`Inputs`|選擇性屬性。<br /><br /> 構成此目標輸入的檔案。 若有多個檔案，則會以分號分隔。 檔案的時間戳記將會與 `Outputs` 中的檔案時間戳記相比較，以判斷 `Target` 是否為最新狀態。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)、[如何：以累加方式建置](../msbuild/how-to-build-incrementally.md)和[轉換](../msbuild/msbuild-transforms.md)。|
-|`Outputs`|選擇性屬性。<br /><br /> 構成此目標輸出的檔案。 若有多個檔案，則會以分號分隔。 檔案的時間戳記將會與 `Inputs` 中的檔案時間戳記相比較，以判斷 `Target` 是否為最新狀態。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)、[如何：以累加方式建置](../msbuild/how-to-build-incrementally.md)和[轉換](../msbuild/msbuild-transforms.md)。|
+|`Inputs`|選擇性屬性。<br /><br /> 構成此目標輸入的檔案。 若有多個檔案，則會以分號分隔。 檔案的時間戳記將會與 `Outputs` 中的檔案時間戳記相比較，以判斷 `Target` 是否為最新狀態。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)、[如何：累加建置](../msbuild/how-to-build-incrementally.md)及[轉換](../msbuild/msbuild-transforms.md)。|
+|`Outputs`|選擇性屬性。<br /><br /> 構成此目標輸出的檔案。 若有多個檔案，則會以分號分隔。 檔案的時間戳記將會與 `Inputs` 中的檔案時間戳記相比較，以判斷 `Target` 是否為最新狀態。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)、[如何：累加建置](../msbuild/how-to-build-incrementally.md)及[轉換](../msbuild/msbuild-transforms.md)。|
 |`Returns`|選擇性屬性。<br /><br /> 將可供叫用此目標的工作 (例如 MSBuild 工作) 使用的項目組。 若有多個目標，則會以分號分隔。 如果檔案中的目標沒有 `Returns` 屬性，即會基於此目的改用 Outputs 屬性。|
-|`KeepDuplicateOutputs`|選擇性的 Boolean 屬性。<br /><br /> 如果是 `true`，即會記錄多個對目標 Returns 中相同項目的參考。  根據預設，此屬性為 `false`。|
+|`KeepDuplicateOutputs`|選擇性的布林值屬性。<br /><br /> 如果是 `true`，即會記錄多個對目標 Returns 中相同項目的參考。  根據預設，此屬性為 `false`。|
 |`BeforeTargets`|選擇性屬性。<br /><br /> 以分號分隔的目標名稱清單。  指定時，表示此目標應該在指定的一或多個目標之前執行。 這讓專案作者能夠擴充現有的目標組，而不需直接修改它們。 如需詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)。|
 |`AfterTargets`|選擇性屬性。<br /><br /> 以分號分隔的目標名稱清單。 指定時，表示此目標應該在指定的一或多個目標之後執行。 這讓專案作者能夠擴充現有的目標組，而不需直接修改它們。 如需詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)。|
 |`DependsOnTargets`|選擇性屬性。<br /><br /> 必須在此目標執行之前，或發生最上層相依性分析之前執行的目標。 若有多個目標，則會以分號分隔。|
@@ -70,7 +70,7 @@ ms.locfileid: "67141181"
 
 ### <a name="child-elements"></a>子元素
 
-| 元素 | 說明 |
+| 項目 | 描述 |
 | - | - |
 | [Task](../msbuild/task-element-msbuild.md) | 建立並執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的執行個體。 目標中可能有零或多個工作。 |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | 包含一組使用者定義的 `Property` 項目。 從 .NET Framework 3.5 開始，`Target` 項目可以包含 `PropertyGroup` 項目。 |
@@ -79,9 +79,9 @@ ms.locfileid: "67141181"
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 說明 |
+| 項目 | 描述 |
 | - | - |
-| [專案](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
+| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
 
 ## <a name="remarks"></a>備註
  在執行階段指定要執行的第一個目標。 目標可以相依於其他目標。 例如，適用於部署的目標相依於適用於編譯的目標。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎會依其在 `DependsOnTargets` 屬性中出現的順序，從左到右依序執行相依性。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。
@@ -117,6 +117,6 @@ ms.locfileid: "67141181"
 </Target>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [目標](../msbuild/msbuild-targets.md)
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

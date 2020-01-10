@@ -46,6 +46,6 @@ HRESULT onComplete();
 ## <a name="remarks"></a>備註  
  這個方法會指示結果可從 `IDebugAsyncOperation` 物件取得。 事件會在偵錯工具執行緒中引發。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugAsyncOperationCallBack 介面](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
  [IDebugAsyncOperation 介面](../../winscript/reference/idebugasyncoperation-interface.md)

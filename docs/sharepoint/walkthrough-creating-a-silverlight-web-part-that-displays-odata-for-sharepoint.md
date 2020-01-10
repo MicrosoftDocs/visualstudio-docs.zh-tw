@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 859944c51be0abf2e6a326a06a5e4432a69ee4ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd2e42f48a6881b533a2f098e47ac92511b85aa3
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655929"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984830"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>逐步解說：建立可顯示 SharePoint 之 OData 的 Silverlight web 元件
-  SharePoint 2010 會透過 OData 來公開其清單資料。 在 SharePoint 中，OData 服務是由 RESTful 服務 ListData 所執行。 本逐步解說示範如何建立主控 Silverlight 應用程式的 SharePoint web 元件。 Silverlight 應用程式會使用 ListData 來顯示 SharePoint 公告清單資訊。 如需詳細資訊，請參閱[SharePoint FOUNDATION REST 介面](http://go.microsoft.com/fwlink/?LinkId=225999)和[開放式資料通訊協定](http://go.microsoft.com/fwlink/?LinkId=226000)。
+  SharePoint 2010 會透過 OData 來公開其清單資料。 在 SharePoint 中，OData 服務是由 RESTful 服務 ListData 所執行。 本逐步解說示範如何建立主控 Silverlight 應用程式的 SharePoint web 元件。 Silverlight 應用程式會使用 ListData 來顯示 SharePoint 公告清單資訊。 如需詳細資訊，請參閱[SharePoint FOUNDATION REST 介面](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14))和[開放式資料通訊協定](https://www.odata.org/)。
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -228,7 +228,7 @@ ms.locfileid: "72655929"
      Silverlight web 元件現在應該會顯示來自 SharePoint 網站的公告資料。 根據預設，頁面會儲存在 SharePoint 的 [網站頁面] 清單中。
 
     > [!NOTE]
-    > 在跨網域存取 Silverlight 中的資料時，Silverlight 會防範可用來入侵 web 應用程式的安全性弱點。 如果您在存取 Silverlight 中的遠端資料時遇到問題，請參閱[讓服務可跨網域界限使用](http://go.microsoft.com/fwlink/?LinkId=223276)。
+    > 在跨網域存取 Silverlight 中的資料時，Silverlight 會防範可用來入侵 web 應用程式的安全性弱點。 如果您在存取 Silverlight 中的遠端資料時遇到問題，請參閱[讓服務可跨網域界限使用](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95))。
 
 ## <a name="see-also"></a>請參閱
 - [建立 SharePoint 的 web 元件](../sharepoint/creating-web-parts-for-sharepoint.md)

@@ -9,16 +9,16 @@ metadata:
   ms.topic: landing-page
   f1_keywords:
   - vs.projectpropertypages.codeanalysis
-  author: gewarren
-  ms.author: gewarren
+  author: jillre
+  ms.author: jillfra
   manager: jillfra
   ms.date: 09/24/2019
-  ms.openlocfilehash: 0b86e42acaab7cf50443cc404eb81c257c9e352e
-  ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+  ms.openlocfilehash: 5ee1fc570d60dd5ff6a8aaabb4d2443cd878bbac
+  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "72535874"
+  ms.lasthandoff: 11/22/2019
+  ms.locfileid: "74316382"
 landingContent:
 - title: 程式碼分析簡介
   linkLists:

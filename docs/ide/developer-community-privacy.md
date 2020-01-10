@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1856d6421dc61ada2f3040e4fdeed880a6ab201
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652488"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75775877"
 ---
 # <a name="developer-community-data-privacy"></a>開發人員社群資料隱私權
 
@@ -25,7 +25,7 @@ ms.locfileid: "72652488"
 
 如果您擔心揭露您的身分，請[建立新的 Microsoft 帳戶](https://signup.live.com/)，這不會揭露關於您的任何詳細資料。 使用此帳戶來建立您的報表。
 
-## <a name="data-privacy"></a>資料隱私權
+## <a name="data-privacy"></a>資料隱私性
 
 如果您擔心資料隱私權，請不要在一律公開的初始報表標題或內容中放置您想要保持私用的任何項目。 相反地，請建立報表，然後注意您會在個別的留言中私下傳送詳細資料。 建立問題報表後，您就能夠指定誰可以查看回覆和附件：
 
@@ -81,8 +81,8 @@ ms.locfileid: "72652488"
   - 傾印檔案
 
 > [!NOTE]
-> 只有當您透過提交內含的問題報告來提供許可權時，才會將記錄檔、螢幕擷取畫面和記錄資料傳送至 Microsoft。 您可以看到哪些檔案包含在 [回報問題] 視窗的 [摘要] 步驟中（請參閱此附注中包含的螢幕擷取畫面）。 收集的記錄檔和檔案會儲存在% temp% 資料夾中，並且會在每次上傳後定期清除。 如果您不想要在問題報告中包含記錄檔，請先從% temp% 資料夾中刪除檔案，然後再提交報告。
-  > ![Report 問題-收集的記錄摘要 ](media/report-a-problem-logs-collected.png)
+> 您所傳送的記錄檔、螢幕擷取畫面和記錄資料，可能會大幅增加 Microsoft 對您問題的瞭解和回應。  因此，我們建議您將其包含在內。 為了保護您的隱私權，任何附加的記錄檔、螢幕擷取畫面和記錄資料，只會在您透過提交所包含的問題報告來提供許可權時，傳送給 Microsoft。 您可以在提交報告之前，看到哪些檔案包含在 [回報問題] 視窗的 [摘要] 步驟中。 您可以取消核取 [摘要] 步驟中的 [附加系統記錄]，以排除報表中的系統記錄檔。 如需參考，請參閱下列螢幕擷取畫面。 
+  > ![回報問題-收集的記錄摘要](media/report-a-problem-logs-collected.png)
 
 
 ## <a name="see-also"></a>請參閱

@@ -3,17 +3,17 @@ title: 逐步解說：使用 XSLT IntelliSense
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 606c4ad307de46d19989d14e2c660cc0286cb803
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: adeab012e78d5f49ca94d1d8135aaf491839c767
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604369"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592434"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>逐步解說：使用 XSLT IntelliSense
 
@@ -152,7 +152,7 @@ ms.locfileid: "72604369"
     </xsl:stylesheet>
     ```
 
-2. 在 `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` 之後插入游標，然後按**enter**。 接著開始輸入下列 `xsl:namespace-alias` 項目：
+2. 在 `<xsl:stylesheet version="1.0">` 之後插入游標，然後按**enter**。 接著開始輸入下列 `xsl:namespace-alias` 項目：
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>

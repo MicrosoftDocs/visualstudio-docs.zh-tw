@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1068c87a8979b853dd27de1b35e2449d7f96eaf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 47bcda57d4446b69096405a54e238e696df24d50
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664322"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300808"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend 中的鍵盤快速鍵和輔助按鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "72664322"
 
    ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")出現在具有快捷方式的功能表項目旁邊的快速鍵
 
-  如需協助工具和功能的詳細資訊，請參閱 [Accessibility at Microsoft](http://go.microsoft.com/fwlink/?LinkId=75069) (Microsoft 協助工具)。
+  如需協助工具和功能的詳細資訊，請參閱 [Accessibility at Microsoft](https://go.microsoft.com/fwlink/?LinkId=75069) (Microsoft 協助工具)。
 
 ## <a name="modifier-keys"></a>輔助按鍵
  某些鍵盤快速鍵沒有相關的功能表項目，這代表您不能使用 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 使用者介面來找出它們。 下列主題列出可修改工具行為或修改動作 (如調整物件大小) 的快速鍵：

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, user activities
 - load tests, modeling scenarios
 ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 944b0bf52cd6a7c3459f0be2a06b437796f57b37
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fa323d275628fe580763709884552754acfba81
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665035"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593235"
 ---
 # <a name="edit-load-test-scenarios"></a>編輯負載測試情節
 
@@ -45,7 +45,7 @@ ms.locfileid: "72665035"
 
 ## <a name="tasks"></a>工作
 
-|工作|相關主題|
+|工作|相關的主題|
 |-|-----------------------|
 |**在情節中新增人工互動暫停：** 考慮時間是用來模擬造成人們在與網站互動時必須等待的人類行為。 考慮時間會發生在 Web 效能測試的各個要求之間，以及負載情節中各個測試反覆項目之間。 在負載測試中使用考慮時間，有助於建立更精確的負載模擬。|-   [編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)|
 |**為情節指定虛擬使用者數目：** 您可以設定負載模式屬性，以指定在負載測試期間調整模擬使用者負載的方式。 您可取得三種內建的負載模式：常數、逐步執行和以目標為依據。 請根據您的負載測試目標，選擇負載模式並將屬性調整為適當的層級。|-   [編輯負載模式以模型化虛擬使用者活動](../test/edit-load-patterns-to-model-virtual-user-activities.md)|

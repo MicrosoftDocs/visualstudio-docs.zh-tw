@@ -3,17 +3,17 @@ title: XSLT 偵錯工具視窗
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae37db21072e81a5940f09f085bf261839686a69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646081"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592876"
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面（XSLT）
 
@@ -25,7 +25,7 @@ ms.locfileid: "72646081"
 
 [本機] 視窗會顯示樣式表中定義之任何變數的相關資訊。 [本機] 視窗包含資訊的三個資料行：
 
-**名稱**
+**Name**
 
 此資料行包含目前範圍中所有區域變數的名稱。 節點集具有樹狀目錄控制項，您可以向下切入以查看其子資料夾。
 
@@ -39,7 +39,7 @@ ms.locfileid: "72646081"
 
 [本機] 視窗還顯示追蹤 XSLT 轉換內容之預先定義的內容變數。 下表說明 XSLT 偵錯工具使用之預先定義的內容變數。
 
-|[屬性]|描述|
+|Name|描述|
 |-|-----------------|
 |`last()`|內容大小。|
 |`position()`|內容節點的位置或索引編號 (相對於內容大小)。|
@@ -58,13 +58,13 @@ ms.locfileid: "72646081"
 > [!NOTE]
 > XSLT 偵錯工具沒有任何警告，因此它們永遠不會出現在**工作清單**中。
 
-## <a name="breakpoints-window"></a>中斷點視窗
+## <a name="breakpoints-window"></a>[中斷點] 視窗
 
 [中斷點] 視窗會顯示目前專案中的所有中斷點。 當視窗在檢視表中時如果加入中斷點，則視窗會自動更新以顯示新中斷點。
 
 [中斷點] 視窗應與其他 Visual Studio 偵錯工具的作用方式相同。
 
-## <a name="watch-window"></a>監看式視窗
+## <a name="watch-window"></a>監看視窗
 
 [監看式] 視窗用於評估變數。 您還可變更變數的值。
 

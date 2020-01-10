@@ -1,16 +1,16 @@
 ---
 title: 工作註解
 description: 新增程式碼的工作註解
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: 3caef73ba46afd8eaf90826540248cb2d5c4efef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4f7f3d1567972c3841af6deb37677a7e01cdb825
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987090"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985168"
 ---
 # <a name="task-comments"></a>工作註解
 
@@ -28,6 +28,6 @@ Visual Studio for Mac 透過在 [工作清單] 板中醒目提示這些標記來
 
 ![工作清單板](media/source-editor-image11.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用工作清單 (Windows 上的 Visual Studio)](/visualstudio/ide/using-the-task-list)

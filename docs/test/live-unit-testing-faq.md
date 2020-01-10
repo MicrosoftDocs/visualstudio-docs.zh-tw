@@ -4,16 +4,16 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing FAQ
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8db8264268eb04edc3140d0e2a6ece5896692e38
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653043"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591537"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
@@ -31,15 +31,15 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 如果您有參考 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的舊版 MSTest 測試專案，而您不想要移至較新的 MSTest NuGet 套件，請升級至 Visual Studio 2019 或 Visual Studio 2017。
 
-在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 您可以藉由執行解決方案的明確組建來還原套件（從最上層 Visual Studio 功能表中選取 [**組建**]  >  [**重建方案**]），或以滑鼠右鍵按一下方案，然後選取 [**還原 NuGet 套件**]啟用生活中的單元測試之前。
+在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 您可以藉由執行解決方案的明確組建（從最上層 Visual Studio 功能表中選取 [**組建**] > [**重建解決方案**]）來還原封裝，或是以滑鼠右鍵按一下方案並選取 [**還原 NuGet 套件**]，然後再啟用即時單元測試。
 
 ## <a name="net-core-support"></a>.NET Core 支援
 
 **Live Unit Testing 是否可以與 .NET Core 搭配使用？**
 
-可以。 Live Unit Testing 可以與 .NET Core 和 .NET Framework 搭配使用。
+是， Live Unit Testing 可以與 .NET Core 和 .NET Framework 搭配使用。
 
-## <a name="configuration"></a>Configuration
+## <a name="configuration"></a>組態
 
 **當我開啟 Live Unit Testing 時，為什麼它不會運作？**
 
@@ -85,15 +85,26 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 </Target>
 ```
 
-## <a name="error-messages-with-outputpath-or-outdir"></a>@No__t_0OutputPath > 或 \<OutDir > 的錯誤訊息
+## <a name="error-messages-with-outputpath-outdir-or-intermediateoutputpath"></a>\<OutputPath >、\<OutDir > 或 \<IntermediateOutputPath 的錯誤訊息 >
 
 **當 Live Unit Testing 嘗試建立我的解決方案時，為什麼會收到下列錯誤：「.。。似乎會無條件地設定 `<OutputPath>` 或 `<OutDir>`。Live Unit Testing 不會從輸出元件執行測試」？**
 
-如果您解決方案的建置流程會無條件地覆寫 `<OutputPath>` 或 `<OutDir>`，使它非為 `<BaseOutputPath>` 的子目錄，即會發生此錯誤。 在這種情況下，Live Unit Testing 將無法運作，因為它也會覆寫這些值，以確保組建成品會卸除到 `<BaseOutputPath>` 下方的資料夾中。 如果您必須覆寫您想要在一般組建中卸除組建成品的位置，請根據 `<BaseOutputPath>` 有條件地覆寫 `<OutputPath>`。
+如果您的解決方案的組建程式具有指定應產生二進位檔之位置的自訂邏輯，您就會收到這個錯誤。 根據預設，二進位檔的位置取決於 `<OutputPath>`、`<OutDir>` 或 `<IntermediateOutputPath>`，以及 `<BaseOutputPath>` 或 `<BaseIntermediateOutputPath>`。
 
-例如，如果您的組建會覆寫 `<OutputPath>`，如下所示：
+Live Unit Testing 會覆寫這些變數，以確保組建成品會卸載至 Live Unit Testing 成品資料夾，如果您的組建進程也會覆寫這些變數，則會失敗。
 
-```xml 
+有兩個主要的方法可以成功建立 Live Unit Testing。 如需更輕鬆的組建設定，您可以將輸出路徑作為 `<BaseIntermediateOutputPath>`的基礎。 如需更複雜的設定，您可以 `<LiveUnitTestingBuildRootPath>`的輸出路徑作為基礎。
+
+### <a name="overriding-outputpathintermediateoutputpath-conditionally-based-on-baseoutputpath-baseintermediateoutputpath"></a>根據 `<BaseOutputPath>`/ `<BaseIntermediateOutputPath>`，有條件地覆寫 `<OutputPath>`/`<IntermediateOutputPath>`。
+
+> [!NOTE]
+> 若要使用此方法，每個專案都必須能夠彼此獨立建立。 在組建期間，沒有另一個專案的專案參考成品。 在執行時間期間，沒有一個專案會從另一個專案動態載入元件（例如，呼叫 `Assembly.Loadfile("..\..\Project2\Release\Project2.dll")`）。
+
+在組建期間，Live Unit Testing 會自動覆寫 `<BaseOutputPath>`/`<BaseIntermediateOutputPath>` 變數以作為 Live Unit Testing 成品資料夾的目標。
+
+例如，如果您的組建會覆寫 <OutputPath>，如下所示：
+
+```xml
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -103,7 +114,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 則您可以使用下列 XML 來取代它：
 
-```xml 
+```xml
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -115,6 +126,46 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 這能確保 `<OutputPath>` 位於 `<BaseOutputPath>` 資料夾內。
 
 請勿直接在建置流程中覆寫 `<OutDir>`，請改為覆寫 `<OutputPath>` 以將組建成品卸除到特定位置。
+
+### <a name="overriding-your-properties-based-on-the-liveunittestingbuildrootpath-property"></a>根據 `<LiveUnitTestingBuildRootPath>` 屬性來覆寫屬性。
+
+> [!NOTE]
+> 在這種方法中，您必須謹慎處理在構件資料夾下新增的檔案，而這些檔案在組建期間不會產生。 下列範例顯示將 [封裝] 資料夾放置於 [成品] 底下時的執行動作。 由於在組建期間不會產生這個資料夾的內容，因此**不應該變更**MSBuild 屬性。
+
+在 Live Unit Testing 組建期間，`<LiveUnitTestingBuildRootPath>` 屬性會設定為 Live Unit Testing 成品 資料夾的位置。
+
+例如，假設您的專案有此處所示的結構。
+
+```
+.vs\...\lut\0\b
+artifacts\{binlog,obj,bin,nupkg,testresults,packages}
+src\{proj1,proj2,proj3}
+tests\{testproj1,testproj2}
+Solution.sln
+```
+在 Live Unit Testing 組建期間，`<LiveUnitTestingBuildRootPath>` 屬性會設定為 `.vs\...\lut\0\b`的完整路徑。 如果專案定義對應至方案目錄 `<ArtifactsRoot>` 屬性，您可以更新 MSBuild 專案，如下所示：
+
+```xml
+<Project>
+    <PropertyGroup Condition="'$(LiveUnitTestingBuildRootPath)' == ''">
+        <SolutionDir>$([MSBuild]::GetDirectoryNameOfFileAbove(`$(MSBuildProjectDirectory)`, `YOUR_SOLUTION_NAME.sln`))\</SolutionDir>
+
+        <ArtifactsRoot>Artifacts\</ArtifactsRoot>
+        <ArtifactsRoot Condition="'$(LiveUnitTestingBuildRootPath)' != ''">$(LiveUnitTestingBuildRootPath)</ArtifactsRoot>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <BinLogPath>$(ArtifactsRoot)\BinLog</BinLogPath>
+        <ObjPath>$(ArtifactsRoot)\Obj</ObjPath>
+        <BinPath>$(ArtifactsRoot)\Bin</BinPath>
+        <NupkgPath>$(ArtifactsRoot)\Nupkg</NupkgPath>
+        <TestResultsPath>$(ArtifactsRoot)\TestResults</TestResultsPath>
+
+        <!-- Note: Given that a build doesn't generate packages, the path should be relative to the solution dir, rather than artifacts root, which will change during a Live Unit Testing build. -->
+        <PackagesPath>$(SolutionDir)\artifacts\packages</PackagesPath>
+    </PropertyGroup>
+</Project>
+```
 
 ## <a name="build-artifact-location"></a>組建成品位置
 
@@ -133,8 +184,6 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 - Live Unit Testing 不會建立新的應用程式定義域來執行測試，但從 [測試總管] 視窗中執行的測試會建立新的應用程式定義域。
 
 - Live Unit Testing 會循序執行每個測試組件中的測試。 在 [**測試瀏覽器**] 中，您可以選擇平行執行多個測試。
-
-- 在 Live Unit Testing 中探索和執行測試會使用 `TestPlatform` 的第 2 版，而 [測試總管] 視窗則會使用第 1 版。 儘管如此，您在大多數情況下不會注意到任何差異。
 
 - [**測試瀏覽器**] 預設會在單一執行緒單元（STA）中執行測試，而 Live Unit Testing 會在多執行緒的公寓（MTA）中執行測試。 若要在 Live Unit Testing 於 STA 中執行 MSTest 測試，請利用可在 `MSTest.STAExtensions 1.0.3-beta` NuGet 封裝中找到的 `<STATestMethod>` 或 `<STATestClass>` 屬性，來裝飾測試方法或包含類別。 針對 NUnit，請使用 `<RequiresThread(ApartmentState.STA)>` 屬性來裝飾測試方法，而針對 xUnit，請使用 `<STAFact>` 屬性。
 

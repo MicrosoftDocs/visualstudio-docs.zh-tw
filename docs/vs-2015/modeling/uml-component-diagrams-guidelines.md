@@ -15,17 +15,17 @@ caps.latest.revision: 37
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7abc869ebebf4ca2ae8aa1776eaae75f1543176b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652266"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297157"
 ---
-# <a name="uml-component-diagrams-guidelines"></a>UML 元件圖表：方針
+# <a name="uml-component-diagrams-guidelines"></a>UML 元件圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 中，您可以繪製*元件圖*來顯示軟體系統的結構。 如需影片示範，請參閱[使用元件圖設計實體結構](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)。
+在 Visual Studio 中，您可以繪製*元件圖*來顯示軟體系統的結構。 如需影片示範，請參閱[使用元件圖設計實體結構](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)。
 
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -47,7 +47,7 @@ ms.locfileid: "72652266"
 |其他圖表|協助您討論和溝通設計的以下方面|
 |-------------------|--------------------------------------------------------------------|
 |UML 循序圖表|-系統元件之間的互動<br />-元件內的部分互動和之間的互動。<br /><br /> 如需詳細資訊，請參閱[UML 順序圖表：方針](../modeling/uml-sequence-diagrams-guidelines.md)。|
-|UML 類別圖表|-元件的介面。 類別圖可讓您將詳細說明介面的方法。<br />-跨元件介面的參數所傳送的資料。<br /><br /> 如需詳細資訊，請參閱[UML 類別圖：方針](../modeling/uml-class-diagrams-guidelines.md)。|
+|UML 類別圖|-元件的介面。 類別圖可讓您將詳細說明介面的方法。<br />-跨元件介面的參數所傳送的資料。<br /><br /> 如需詳細資訊，請參閱[UML 類別圖：方針](../modeling/uml-class-diagrams-guidelines.md)。|
 |活動圖|-元件為了回應傳入訊息而執行的內部處理。<br /><br /> 如需詳細資訊，請參閱[UML 活動圖：方針](../modeling/uml-activity-diagrams-guidelines.md)。|
 |圖層圖表|-元件的邏輯架構層。<br /><br /> 如需詳細資訊，請參閱[分層圖：參考](../modeling/layer-diagrams-reference.md)。|
 
@@ -332,5 +332,5 @@ ms.locfileid: "72652266"
 
   您可以使用相依性箭號的名稱，來表示特定類型的用法。 若要設定名稱，請以滑鼠右鍵按一下箭號，再按一下 [**屬性**]，然後在 [屬性] 視窗中設定 [**名稱**] 欄位。
 
-## <a name="see-also"></a>請參閱
- [編輯 uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md) [uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md) [uml 順序圖表](../modeling/uml-sequence-diagrams-reference.md)：參考 uml[使用案例圖](../modeling/uml-use-case-diagrams-reference.md)：參考 uml[類別圖](../modeling/uml-class-diagrams-reference.md)：參考[uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md) [影片：使用元件圖設計實體結構](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
+## <a name="see-also"></a>另請參閱
+ [編輯 uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md) [uml 元件圖](../modeling/uml-component-diagrams-reference.md)：參考 uml[順序圖](../modeling/uml-sequence-diagrams-reference.md)：參考 uml[使用案例圖](../modeling/uml-use-case-diagrams-reference.md)：參考 uml[類別圖](../modeling/uml-class-diagrams-reference.md)：參考[Uml 元件圖](../modeling/uml-component-diagrams-reference.md)：參考[影片：使用元件圖設計實體結構](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)

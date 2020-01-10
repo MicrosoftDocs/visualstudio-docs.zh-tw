@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load test results, analyzing threshold violations
 - thresholds in load tests
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ffff5818c5d3c7085ef3bebcc29c31a363a09b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665335"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591277"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用負載測試分析器來分析負載測試中的臨界值規則違規
 
@@ -34,14 +34,14 @@ ms.locfileid: "72665335"
 
 臨界值違規資料表會顯示最前面的 1,000 個違規。 下表包含這些資料行：
 
-|Column|描述|預設為可見|
+|資料行|描述|預設為可見|
 |-|-|-|
-|時間|負載測試期間發生違規的時間。|[是]|
-|電腦|發生違規之測試中的電腦名稱。 **注意：** 當您在 Rig 上執行負載測試時，這很重要。|[是]|
-|Category|發生違規之效能計數器的分類。|[是]|
-|計數器|發生違規之效能計數器的名稱。|[是]|
-|執行個體|發生違規的效能計數器執行個體。|[是]|
-|訊息|描述臨界值違規的訊息。 例如，**值 5 超過 0 的關鍵臨界值**。|[是]|
+|時間|負載測試期間發生違規的時間。|是|
+|電腦|發生違規之測試中的電腦名稱。 **注意：** 當您在 Rig 上執行負載測試時，這很重要。|是|
+|分類|發生違規之效能計數器的分類。|是|
+|計數器|發生違規之效能計數器的名稱。|是|
+|執行個體|發生違規的效能計數器執行個體。|是|
+|訊息|描述臨界值違規的訊息。 例如，**值 5 超過 0 的關鍵臨界值**。|是|
 
 > [!NOTE]
 > 選擇資料行標頭即可排序資料表。

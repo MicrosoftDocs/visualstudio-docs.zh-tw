@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - automated tests, testing UI interface
 - coded UI test
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6491a6b9ac9312befbf0c8c6c3fb0f293885ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3bd667579d9ff0645e7dd2753278257a9796709
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659868"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585635"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>使用自動程式化 UI 測試來測試您的程式碼
 
@@ -124,7 +124,7 @@ ms.locfileid: "72659868"
     }
     ```
 
-6. 新增其他動作和判斷提示。
+6. 加入其他動作和判斷提示。
 
    將游標放在測試方法中的適當點，然後在捷徑功能表上選擇 [產生自動程式化 UI 測試的程式碼]。 將會在該點插入新的程式碼。
 
@@ -132,7 +132,7 @@ ms.locfileid: "72659868"
 
      開啟 *UIMap.uitest*。 此檔案會在 [自動程式化 UI 測試編輯器] 中開啟，而您可以在其中編輯所錄製的任何一串動作，以及編輯您的判斷提示。
 
-     ![自動程式碼 UI 測試編輯器](../test/media/cuit_editor_edit.png)
+     ![自動程式化 UI 測試編輯器](../test/media/cuit_editor_edit.png)
 
      如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
 

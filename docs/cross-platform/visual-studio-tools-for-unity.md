@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Tools for Unity | Microsoft Docs
 ms.custom: ''
-ms.date: 07/03/2018
+ms.date: 10/25/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d04f197b9114f87c0ebdfa54088d41a958d4584a
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777699"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797124"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 
@@ -27,7 +27,7 @@ Unity 編輯器適合用來組合您的遊戲世界，但無法在該編輯器�
 
 不僅如此，Visual Studio Tools for Unity 還與 Unity Editor 緊密整合，因此您可以花較少時間來回切換執行簡單工作，它也提供 Unity 特有的提升產能功能，並將 Unity 文件放在您可以隨時取得的位置。
 
-## <a name="overview"></a>總覽
+## <a name="overview"></a>概觀
 
 瀏覽[使用 Visual Studio 組建 Unity 遊戲](https://visualstudio.microsoft.com/vs/unity-tools/) 網頁以取得使用 Visual Studio for Unity 開發的優點概觀，或繼續下面的步驟以深入了解 Visual Studio Tools for Unity 的主要功能：
 
@@ -47,6 +47,12 @@ Visual Studio Tools for Unity 支援預期從 Visual Studio 取得的強大[偵�
 * 在監看式視窗中評估複雜的運算式。
 * 檢查及修改變數和引數的值。
 * 向下切入至複雜的物件和資料結構。
+
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>適用于 Unity 的 Roslyn 診斷和快速修正
+
+撰寫更好的程式碼，以 Visual Studio 深入瞭解 Unity 專案，以取得最佳作法。
+
+![VS 重構字串與 CompareTag 的比較](media/unity-diagnostics.png)
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 

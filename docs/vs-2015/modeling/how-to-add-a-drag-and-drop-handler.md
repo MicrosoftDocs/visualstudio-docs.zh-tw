@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 244bfeb48a0c0a572cc58e2544cfb0f4336441c8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6ca68005f71d642650a2d9b024a16883de5eaddf
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671654"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298941"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：加入拖放處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "72671654"
 
 - 前兩節說明定義軌跡處理程式的替代方法：
 
-  - 藉[由覆寫 ShapeElement 方法來定義手勢處理常式](#overrideShapeElement)。 您可以覆寫 `OnDragDrop`、`OnDoubleClick`、`OnDragOver` 和其他方法。
+  - 藉[由覆寫 ShapeElement 方法來定義手勢處理常式](#overrideShapeElement)。 `OnDragDrop`、`OnDoubleClick`、`OnDragOver`和其他方法都可以覆寫。
 
   - [使用 MEF 定義手勢處理常式](#MEF)。 如果您想讓協力廠商的開發人員能夠自行定義要加入至您的 DSL 的處理常式，請使用這個方法。 使用者可以在安裝您的 DSL 之後，選擇安裝協力廠商擴充功能。
 
@@ -48,7 +48,7 @@ using System.Linq;
 
  在新檔案中，針對應該回應拖曳作業的圖形或圖表類別定義部分類別。 覆寫下列方法：
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>- 當滑鼠指標在拖曳作業期間進入圖形時，會呼叫這個方法。 您的方法應該會檢查使用者拖曳的項目，並設定 Effect 屬性，指出使用者是否可將項目放在此圖形上。 Effect 屬性決定游標移至此圖形上的外觀，並決定當使用者放開滑鼠按鈕時，是否呼叫 `OnDragDrop()`。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>-在拖曳作業期間，滑鼠指標進入圖形時，會呼叫這個方法。 您的方法應該會檢查使用者拖曳的項目，並設定 Effect 屬性，指出使用者是否可將項目放在此圖形上。 Effect 屬性決定游標移至此圖形上的外觀，並決定當使用者放開滑鼠按鈕時，是否呼叫 `OnDragDrop()`。
 
   ```csharp
   partial class MyShape // MyShape generated from DSL Definition.
@@ -65,7 +65,7 @@ using System.Linq;
 
   ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> - 如果 `OnDragOver(DiagramDragEventArgs e)` 之前將 `e.Effect` 設定為非 `None` 值，使用者在滑鼠指標停留在此圖形或圖表上時若放開滑鼠按鈕，則會呼叫這個方法。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> –如果 `OnDragOver(DiagramDragEventArgs e)` 先前將 `e.Effect` 設定為 `None`以外的值，則當滑鼠指標停留在此圖形或圖表上時，就會呼叫這個方法。
 
   ```csharp
   public override void OnDragDrop(DiagramDragEventArgs e)
@@ -82,7 +82,7 @@ using System.Linq;
 
   ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> - 當使用者按兩下圖形或圖表時，會呼叫這個方法。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> –當使用者按兩下圖形或圖表時，會呼叫這個方法。
 
    如需詳細資訊，請參閱[如何：攔截圖形或](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)裝飾專案的點擊。
 
@@ -136,11 +136,11 @@ using System.Linq;
 
  若要探索拖曳來源資訊的可用格式，請在偵錯模式中執行程式碼，並在 `OnDragOver()` 或 `CanDragDrop()` 的進入點設定中斷點。 檢查 `DiagramDragEventArgs` 參數的值。 這項資訊提供下列兩種格式：
 
-- <xref:System.Windows.Forms.IDataObject> `Data` –此屬性會攜帶來源物件的序列化版本，通常會採用一個以上的格式。 其最有用的函式包括：
+- <xref:System.Windows.Forms.IDataObject>`Data` –此屬性會攜帶來源物件的序列化版本，通常會採用一個以上的格式。 其最有用的函式包括：
 
   - diagramEventArgs.Data.GetDataFormats() - 列出您可以解碼的拖曳物件格式。 例如，如果使用者從桌面拖曳檔案，可用的格式包括檔案名稱 ("`FileNameW`")。
 
-  - `diagramEventArgs.Data.GetData(format)` - 解碼指定格式的拖曳物件。 將物件轉換成適當的類型。 例如:
+  - `diagramEventArgs.Data.GetData(format)` –以指定的格式將拖曳的物件解碼。 將物件轉換成適當的類型。 例如：
 
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -161,7 +161,7 @@ using System.Linq;
 
    若要接受 UML 圖形，請實驗並判斷 UML 圖形的 GUID。 請記住，任一圖表上通常有多種項目類型。 另請記住，從 DSL 或 UML 圖表拖曳的物件是圖形，而不是模型項目。
 
-  `DiagramDragEventArgs` 也具有屬性，指出目前的滑鼠指標位置，以及使用者是否按下 CTRL、ALT 或 SHIFT 鍵。
+  `DiagramDragEventArgs` 也有屬性，可指出目前的滑鼠指標位置，以及使用者是否按下 CTRL、ALT 或 SHIFT 鍵。
 
 ## <a name="getOriginal"></a>如何取得已拖曳元素的原始
  事件引數的 `Data` 和 `Prototype` 屬性只包含拖曳圖形的參考。 通常，如果您要在衍生自原型的目標 DSL 中以特定方式建立物件，您需要取得原始拖曳項目的存取權，例如讀取檔案內容，或巡覽至圖形所表示的模型項目。  您可以使用 Visual Studio 模型匯流排來協助達成此目標。
@@ -170,7 +170,7 @@ using System.Linq;
 
 1. 使 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型匯流排可存取來源 DSL：
 
-    1. 如果尚未安裝 Visual Studio 模型匯流排擴充功能，請下載並進行安裝。 如需詳細資訊，請參閱[視覺效果和模型化 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+    1. 如果尚未安裝 Visual Studio 模型匯流排擴充功能，請下載並進行安裝。 如需詳細資訊，請參閱[視覺效果和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=185579)。
 
     2. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [**啟用 Modelbus**]。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定]。 新專案 "ModelBus" 會隨即加入至 DSL 方案。
 
@@ -587,5 +587,5 @@ namespace Company.CompartmentDrag  // EDIT.
 
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [自訂複製行為](../modeling/customizing-copy-behavior.md)[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)

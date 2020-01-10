@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7c34e9cae335af12f59e6c25d5fb3c24e5c1749
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6fae0bb2cca6f6f8a4ffb4e5af58473d041a12eb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659349"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301334"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio 架構工具指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,4 +23,4 @@ ms.locfileid: "72659349"
 
  內容是由 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Ranger 所建立，這個特殊群組具有來自 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 產品小組、Microsoft 服務、Microsoft 最有價值專家（Mvp）的成員，以及 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的社區主管。
 
- [按一下這裡以下載架構工具指引。](http://go.microsoft.com/fwlink/?LinkID=191984)
+ [按一下這裡以下載架構工具指引。](https://go.microsoft.com/fwlink/?LinkID=191984)

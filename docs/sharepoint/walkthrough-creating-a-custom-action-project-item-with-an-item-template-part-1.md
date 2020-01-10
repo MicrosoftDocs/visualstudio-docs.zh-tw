@@ -1,5 +1,5 @@
 ---
-title: 建立自訂動作專案項目包含項目範本，第 1 部分
+title: 使用專案範本建立自訂動作專案專案（第1部分）
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,189 +15,189 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e00d87079fe4986dc378540c1456508c2afa0b7
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4a114345363deb9c5ddd0f5a4141cd7d99f0ac1c
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401120"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189174"
 ---
-# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目
-  您可以擴充 Visual Studio 中的 SharePoint 專案系統，藉由建立您自己的專案項目類型。 在本逐步解說中，您將建立可新增至 SharePoint 專案，以在 SharePoint 網站上建立的自訂動作專案項目。 自訂動作會將功能表項目**站台動作**的 SharePoint 網站的功能表。
+# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說：使用專案範本建立自訂動作專案專案（第1部分）
+  您可以藉由建立您自己的專案專案類型，在 Visual Studio 中擴充 SharePoint 專案系統。 在此逐步解說中，您將建立可加入 SharePoint 專案的專案專案，以便在 SharePoint 網站上建立自訂動作。 自訂動作會將功能表項目加入至 SharePoint 網站的 [**網站動作**] 功能表。
 
  本逐步解說將示範下列工作：
 
-- 建立 Visual Studio 擴充功能定義新類型的自訂動作的 SharePoint 專案項目。 新的專案項目類型會實作數個自訂的功能︰
+- 建立 Visual Studio 延伸模組，為自訂動作定義新類型的 SharePoint 專案專案。 新的專案專案類型會執行數個自訂功能：
 
-  - 做為起點的專案項目，例如在 Visual Studio 中顯示自訂動作的設計工具相關的其他工作的捷徑功能表。
+  - 快捷方式功能表，做為與專案專案相關之其他工作的起點，例如在 Visual Studio 中顯示自訂動作的設計工具。
 
-  - 開發人員變更特定屬性的專案項目和包含它的專案時執行的程式碼。
+  - 當開發人員變更專案專案的特定屬性和包含它的專案時，所執行的程式碼。
 
-  - 中的專案項目旁邊會出現自訂圖示**方案總管 中**。
+  - 出現在**方案總管**之專案專案旁邊的自訂圖示。
 
-- 建立 Visual Studio 項目範本的專案項目。
+- 建立專案專案的 Visual Studio 專案範本。
 
-- 建置 Visual Studio 擴充功能 (VSIX) 封裝來部署專案項目範本和延伸模組組件。
+- 建立 Visual Studio 擴充功能（VSIX）封裝，以部署專案專案範本和擴充元件。
 
-- 偵錯和測試的專案項目。
+- 正在對專案專案進行調試和測試。
 
-  這是獨立的逐步解說。 完成本逐步解說之後，您可以藉由將項目範本的精靈來增強的專案項目。 如需詳細資訊，請參閱[逐步解說：建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。
+  這是一種獨立的逐步解說。 完成本逐步解說之後，您可以藉由將 wizard 新增至專案範本，來增強專案專案。 如需詳細資訊，請參閱[逐步解說：使用專案範本建立自訂動作專案專案（第2部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。
 
 > [!NOTE]
-> 您可以下載範例，以從[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，示範如何建立工作流程的自訂活動。
+> 您可以從[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities)下載範例，其中顯示如何為工作流程建立自訂活動。
 
-## <a name="prerequisites"></a>必要條件
- 您需要完成這個逐步解說在開發電腦上的下列元件：
+## <a name="prerequisites"></a>Prerequisites
+ 您需要在開發電腦上有下列元件，才能完成此逐步解說：
 
-- 支援的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。
+- 支援的 Microsoft Windows、SharePoint 和 Visual Studio 版本。
 
-- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本逐步解說會使用 SDK 中的**Vsix 專案**範本來建立 vsix 封裝，以部署專案專案。 如需詳細資訊，請參閱[Visual Studio 中的擴充 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
 
-  下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：
+  下列概念的知識很有説明，但並非必要，無法完成逐步解說：
 
-- 在 SharePoint 中的自訂動作。 如需詳細資訊，請參閱 <<c0> [ 自訂動作](http://go.microsoft.com/fwlink/?LinkId=177800)。
+- SharePoint 中的自訂動作。 如需詳細資訊，請參閱[自訂動作](/previous-versions/office/developer/sharepoint-2010/ms458635(v=office.14))。
 
-- 在 Visual Studio 中的項目範本。 如需詳細資訊，請參閱[建立專案和項目範本](../ide/creating-project-and-item-templates.md)。
+- Visual Studio 中的專案範本。 如需詳細資訊，請參閱[建立專案和項目範本](../ide/creating-project-and-item-templates.md)。
 
 ## <a name="create-the-projects"></a>建立專案
- 若要完成此逐步解說中，您需要建立三個專案：
+ 若要完成此逐步解說，您需要建立三個專案：
 
-- VSIX 專案。 此專案建立 VSIX 封裝部署的 SharePoint 專案項目。
+- VSIX 專案。 此專案會建立 VSIX 封裝來部署 SharePoint 專案專案。
 
-- 專案的項目範本。 此專案會建立可用來將 SharePoint 專案項目新增至 SharePoint 專案項目範本。
+- 專案範本專案。 這個專案會建立一個專案範本，可用來將 SharePoint 專案專案加入至 SharePoint 專案。
 
-- 類別庫專案。 此專案會實作 Visual Studio 擴充功能可定義 SharePoint 專案項目的行為。
+- 類別庫專案。 這個專案會執行定義 SharePoint 專案專案行為的 Visual Studio 延伸模組。
 
-  開始本逐步解說建立的專案。
+  藉由建立專案來啟動逐步解說。
 
-#### <a name="to-create-the-vsix-project"></a>若要建立 VSIX 專案
+#### <a name="to-create-the-vsix-project"></a>建立 VSIX 專案
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
+2. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
 
-3. 在頂端的清單**新的專案**對話方塊方塊中，請確定 **.NET Framework 4.5**已選取。
+3. 在 [**新增專案**] 對話方塊頂端的清單中，確認已選取 [ **.NET Framework 4.5** ]。
 
-4. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**節點。
+4. 在 [**新增專案**] 對話方塊中，展開 **[ C#視覺效果**] 或 [ **Visual Basic** ] 節點，然後選擇 [擴充性 **] 節點。**
 
     > [!NOTE]
-    > **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
+    > 只有在您安裝 Visual Studio SDK 時，才能使用擴充**性節點。** 如需詳細資訊，請參閱本主題稍早的必要條件一節。
 
-5. 選擇**VSIX 專案**範本。
+5. 選擇 [ **VSIX 專案**] 範本。
 
-6. 在 [**名稱**方塊中，輸入**CustomActionProjectItem**，然後選擇 **[確定]** ] 按鈕。
+6. 在 [**名稱**] 方塊中，輸入**CustomActionProjectItem**，然後選擇 [**確定]** 按鈕。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**CustomActionProjectItem**專案加入**方案總管 中**。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將**CustomActionProjectItem**專案新增至**方案總管**。
 
-#### <a name="to-create-the-item-template-project"></a>若要建立專案項目範本
+#### <a name="to-create-the-item-template-project"></a>若要建立專案範本專案
 
-1. 中**方案總管**，開啟方案節點的捷徑功能表，選擇**新增**，然後選擇**新專案**。
+1. 在**方案總管**中，開啟 [方案] 節點的快捷方式功能表，選擇 [**加入**]，然後選擇 [**新增專案**]。
 
-2. 在頂端的清單**新的專案**對話方塊方塊中，請確定 **.NET Framework 4.5**已選取。
+2. 在 [**新增專案**] 對話方塊頂端的清單中，確認已選取 [ **.NET Framework 4.5** ]。
 
-3. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**節點。
+3. 在 [**新增專案**] 對話方塊中，展開 **[ C#視覺效果**] 或 [ **Visual Basic** ] 節點，然後選擇 [擴充性 **] 節點。**
 
-4. 在專案範本清單中，選擇**C# 項目範本**或是**Visual Basic 項目範本**範本。
+4. 在專案範本清單中，選擇 [  **C#專案] 範本**或 [ **Visual Basic 專案**] 範本範本。
 
-5. 在 [**名稱**方塊中，輸入**ItemTemplate**，然後選擇 **[確定]** ] 按鈕。
+5. 在 [**名稱**] 方塊中，輸入**ItemTemplate**，然後選擇 [**確定]** 按鈕。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**ItemTemplate**專案加入方案。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將**ItemTemplate**專案新增至方案。
 
 #### <a name="to-create-the-extension-project"></a>若要建立擴充功能專案
 
-1. 中**方案總管**，開啟方案節點的捷徑功能表，選擇**新增**，然後選擇**新專案**。
+1. 在**方案總管**中，開啟 [方案] 節點的快捷方式功能表，選擇 [**加入**]，然後選擇 [**新增專案**]。
 
-2. 在頂端的清單**新的專案**對話方塊方塊中，請確定 **.NET Framework 4.5**已選取。
+2. 在 [**新增專案**] 對話方塊頂端的清單中，確認已選取 [ **.NET Framework 4.5** ]。
 
-3. 在**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，並選擇**Windows** ] 節點，然後選擇 [ **類別庫**專案範本。
+3. 在 [**新增專案**] 對話方塊中，展開 **[ C#視覺效果**] 或 [ **Visual Basic** ] 節點，選擇 [ **Windows** ] 節點，然後選擇 [**類別庫**] 專案範本。
 
-4. 在 [**名稱**方塊中，輸入**ProjectItemDefinition**，然後選擇 **[確定]** ] 按鈕。
+4. 在 [**名稱**] 方塊中，輸入**ProjectItemDefinition**，然後選擇 [**確定]** 按鈕。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**ProjectItemDefinition**專案加入方案，並開啟預設 Class1 的程式碼檔案。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將**ProjectItemDefinition**專案新增至方案，並開啟預設的 Class1 程式碼檔案。
 
-5. 從專案刪除 Class1 的程式碼檔案。
+5. 從專案中刪除 Class1 程式碼檔案。
 
 ## <a name="configure-the-extension-project"></a>設定擴充功能專案
- 您撰寫程式碼以定義 SharePoint 專案項目類型之前，您必須新增程式碼檔案和擴充功能專案的組件參考。
+ 在撰寫程式碼來定義 SharePoint 專案專案類型之前，您必須先將程式碼檔案和元件參考加入擴充功能專案中。
 
 #### <a name="to-configure-the-project"></a>若要設定專案
 
-1. 中**方案總管**，開啟捷徑功能表**ProjectItemDefinition**專案，選擇**新增**，然後選擇**新項目**。
+1. 在**方案總管**中，開啟**ProjectItemDefinition**專案的快捷方式功能表，選擇 [**加入**]，然後選擇 [**新增專案**]。
 
-2. 在專案項目清單中，選擇**程式碼檔案**。
+2. 在專案專案清單中，選擇 [程式**代碼**檔案]。
 
-3. 在 **名稱**方塊中，輸入名稱**CustomAction**適當檔案名稱副檔名，然後選擇 **新增**按鈕。
+3. 在 [**名稱**] 方塊中，輸入具有適當副檔名的名稱**CustomAction** ，然後選擇 [**新增**] 按鈕。
 
-4. 在 [**方案總管] 中**，開啟捷徑功能表**ProjectItemDefinition**專案，，然後選擇**加入參考**。
+4. 在**方案總管**中，開啟**ProjectItemDefinition**專案的快捷方式功能表，然後選擇 [**加入參考**]。
 
-5. 在**參考管理員-ProjectItemDefinition**對話方塊方塊中，選擇**組件**節點，然後選擇**Framework**節點。
+5. 在 [**參考管理員-ProjectItemDefinition** ] 對話方塊中，選擇 [**元件**] 節點，然後選擇 [**架構**] 節點。
 
-6. 選取每個下列組件旁邊的核取方塊：
+6. 選取下列每個元件旁的核取方塊：
 
     - System.ComponentModel.Composition
 
     - System.Windows.Forms
 
-7. 選擇**延伸模組**節點中，選取 Microsoft.VisualStudio.Sharepoint 組件旁邊的核取方塊，然後選擇**確定** 按鈕。
+7. 選擇 [**擴充**功能] 節點，選取 [VisualStudio] 元件旁的核取方塊，然後選擇 [**確定]** 按鈕。
 
-## <a name="define-the-new-sharepoint-project-item-type"></a>定義新的 SharePoint 專案項目類型
- 建立類別，實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>介面來定義新的專案項目類型的行為。 每當您想要定義新類型的專案項目時，請實作這個介面。
+## <a name="define-the-new-sharepoint-project-item-type"></a>定義新的 SharePoint 專案專案類型
+ 建立可執行 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 介面的類別，以定義新專案專案類型的行為。 每當您想要定義新類型的專案專案時，就會執行此介面。
 
-#### <a name="to-define-the-new-sharepoint-project-item-type"></a>若要定義新的 SharePoint 專案項目類型
+#### <a name="to-define-the-new-sharepoint-project-item-type"></a>若要定義新的 SharePoint 專案專案類型
 
-1. 在 ProjectItemDefinition 專案中，開啟 CustomAction 的程式碼檔案。
+1. 在 ProjectItemDefinition 專案中，開啟 CustomAction 程式碼檔案。
 
-2. 此檔案中的程式碼取代為下列程式碼。
+2. 將此檔案中的程式碼取代為下列程式碼。
 
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/CSharp/customactionprojectitem/projectitemtypedefinition/customaction.cs#1)]
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb#1)]
 
-## <a name="create-an-icon-for-the-project-item-in-solution-explorer"></a>在 [方案總管] 中建立專案項目的圖示
- 當您建立自訂的 SharePoint 專案項目時，您可以在與專案項目關聯的影像 （圖示或點陣圖）。 此映像，則中的專案項目旁邊會出現**方案總管 中**。
+## <a name="create-an-icon-for-the-project-item-in-solution-explorer"></a>在方案總管中建立專案專案的圖示
+ 當您建立自訂 SharePoint 專案專案時，您可以將影像（圖示或點陣圖）與專案專案建立關聯。 此影像會顯示在**方案總管**中的專案專案旁邊。
 
- 在下列程序中，您可以建立專案項目的圖示和延伸模組組件中內嵌的圖示。 這個圖示由參考<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>的`CustomActionProjectItemTypeProvider`您稍早建立的類別。
+ 在下列程式中，您會建立專案專案的圖示，並將圖示內嵌在擴充元件中。 這個圖示是由您稍早建立之 `CustomActionProjectItemTypeProvider` 類別的 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute> 所參考。
 
-#### <a name="to-create-a-custom-icon-for-the-project-item"></a>若要建立自訂專案項目圖示
+#### <a name="to-create-a-custom-icon-for-the-project-item"></a>若要建立專案專案的自訂圖示
 
-1. 中**方案總管**，開啟捷徑功能表**ProjectItemDefinition**專案中，選擇 **新增**，然後選擇 **新項目...** .
+1. 在**方案總管**中，開啟**ProjectItemDefinition**專案的快捷方式功能表，選擇 [**加入**]，然後選擇 [**新增專案**]。
 
-2. 在專案項目清單中，選擇**圖示檔**項目。
+2. 在專案專案清單中，選擇**圖示**檔專案。
 
     > [!NOTE]
-    > 在 Visual Basic 專案中，您必須選擇**一般**節點以顯示**圖示檔**項目。
+    > 在 Visual Basic 專案中，您必須選擇 [**一般**] 節點來顯示**圖示**檔案專案。
 
-3. 在 [**名稱**方塊中，輸入**CustomAction_SolutionExplorer.ico**，然後選擇**新增**] 按鈕。
+3. 在 [**名稱**] 方塊中，輸入**CustomAction_SolutionExplorer**，然後選擇 [**新增**] 按鈕。
 
-     在中，開啟 [新增] 圖示**影像編輯器**。
+     [**影像編輯器**] 中會開啟新的圖示。
 
-4. 編輯 16x16 的圖示檔案版本，使其具有您可以辨識，並再儲存 圖示檔的設計。
+4. 編輯16x16 版本的圖示檔，使其具有可辨識的設計，然後儲存圖示檔。
 
-5. 在 **方案總管**，選擇**CustomAction_SolutionExplorer.ico**。
+5. 在**方案總管**中，選擇 [ **CustomAction_SolutionExplorer**]。
 
-6. 在 [**屬性**] 視窗中，選擇箭號旁**建置動作**屬性。
+6. 在 [**屬性**] 視窗中，選擇 [**組建動作**] 屬性旁的箭號。
 
-7. 在出現的清單，選擇**內嵌資源**。
+7. 在出現的清單中，選擇 [**內嵌資源**]。
 
 ## <a name="checkpoint"></a>檢查點
- 此時在逐步解說中，所有程式碼的專案項目現在是在專案中。 建置專案，以檢查它編譯正確無誤。
+ 在本逐步解說的這個階段中，專案專案的所有程式碼現在都在專案中。 建立專案，以確認它會編譯而不會發生錯誤。
 
 #### <a name="to-build-your-project"></a>建置您的專案
 
-1. 開啟捷徑功能表**ProjectItemDefinition**專案，然後選擇**建置**。
+1. 開啟**ProjectItemDefinition**專案的快捷方式功能表，然後選擇 [**組建**]。
 
-## <a name="create-a-visual-studio-item-template"></a>建立 Visual Studio 項目範本
- 若要啟用其他開發人員使用您的專案項目，您必須建立專案範本或項目範本。 開發人員在 Visual Studio 中使用這些範本，建立您的專案項目執行個體，藉由建立新的專案，或藉由將現有的專案中的項目。 此逐步解說中，使用 ItemTemplate 專案來設定您的專案項目。
+## <a name="create-a-visual-studio-item-template"></a>建立 Visual Studio 專案範本
+ 若要讓其他開發人員使用您的專案專案，您必須建立專案範本或專案範本。 開發人員會在 Visual Studio 中使用這些範本，方法是建立新的專案，或將專案加入至現有的專案，藉此建立專案專案的實例。 在此逐步解說中，使用 ItemTemplate 專案來設定您的專案專案。
 
-#### <a name="to-create-the-item-template"></a>若要建立項目範本
+#### <a name="to-create-the-item-template"></a>若要建立專案範本
 
-1. 從 ItemTemplate 專案刪除 Class1 的程式碼檔案。
+1. 從 ItemTemplate 專案中刪除 Class1 程式碼檔案。
 
-2. 在 ItemTemplate 專案中，開啟*ItemTemplate.vstemplate*檔案。
+2. 在 ItemTemplate 專案中，開啟*itemtemplate .vstemplate*檔案。
 
-3. 檔案的內容取代為下列 XML 中，然後儲存並關閉檔案。
+3. 以下列 XML 取代檔案的內容，然後儲存並關閉檔案。
 
     > [!NOTE]
-    > 下列 XML 是 Visual C# 項目範本。 如果您要建立 Visual Basic 項目範本，將值取代`ProjectType`具有項目`VisualBasic`。
+    > 下列 XML 適用于視覺效果C#專案範本。 如果您要建立 Visual Basic 專案範本，請使用 `VisualBasic`取代 `ProjectType` 元素的值。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -218,15 +218,15 @@ ms.locfileid: "66401120"
     </VSTemplate>
     ```
 
-     此檔案定義的內容和行為的項目範本。 此檔案內容的相關資訊，請參閱[Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)。
+     此檔案會定義專案範本的內容和行為。 如需這個檔案內容的詳細資訊，請參閱[Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)。
 
-4. 中**方案總管 中**，開啟捷徑功能表**ItemTemplate**專案，選擇**新增**，然後選擇**新項目**。
+4. 在**方案總管**中，開啟**ItemTemplate**專案的快捷方式功能表，選擇 [**加入**]，然後選擇 [**新增專案**]。
 
-5. 在 **加入新項目**對話方塊方塊中，選擇**文字檔**範本。
+5. 在 [**加入新專案**] 對話方塊中，選擇 [**文字檔**] 範本。
 
-6. 在 [**名稱**方塊中，輸入**CustomAction.spdata**，然後選擇**新增**] 按鈕。
+6. 在 [**名稱**] 方塊中，輸入**CustomAction .spdata**，然後選擇 [**新增**] 按鈕。
 
-7. 新增下列 XML 來*CustomAction.spdata*檔案，然後儲存並關閉檔案。
+7. 將下列 XML 新增至*CustomAction .spdata*檔案，然後儲存並關閉檔案。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -238,15 +238,15 @@ ms.locfileid: "66401120"
     </ProjectItem>
     ```
 
-     此檔案包含的專案項目所包含之檔案的相關資訊。 `Type`的屬性`ProjectItem`項目必須設定為相同的字串傳遞給<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>專案項目定義上 (`CustomActionProjectItemTypeProvider`您稍早在本逐步解說中建立的類別)。 如需有關的內容 *.spdata*檔，請參閱[SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)。
+     此檔案包含專案專案所包含之檔案的相關資訊。 `ProjectItem` 元素的 `Type` 屬性必須設定為傳遞至專案專案定義（您稍早在本逐步解說中建立的 `CustomActionProjectItemTypeProvider` 類別）之 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> 的相同字串。 如需有關 *.spdata*檔內容的詳細資訊，請參閱[SharePoint 專案專案架構參考](../sharepoint/sharepoint-project-item-schema-reference.md)。
 
-8. 中**方案總管 中**，開啟捷徑功能表**ItemTemplate**專案，選擇**新增**，然後選擇**新項目**。
+8. 在**方案總管**中，開啟**ItemTemplate**專案的快捷方式功能表，選擇 [**加入**]，然後選擇 [**新增專案**]。
 
-9. 在 **加入新項目**對話方塊方塊中，選擇**XML 檔案**範本。
+9. 在 [**加入新專案**] 對話方塊中，選擇 [ **XML**檔案] 範本。
 
-10. 在 [**名稱**方塊中，輸入**Elements.xml**，然後選擇**新增**] 按鈕。
+10. 在 [**名稱**] 方塊中，輸入**Elements .xml**，然後選擇 [**新增**] 按鈕。
 
-11. 內容取代*Elements.xml*檔案包含下列 XML，然後儲存並關閉檔案。
+11. 以下列 XML 取代*元素 .xml*檔案的內容，然後儲存並關閉檔案。
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -262,21 +262,21 @@ ms.locfileid: "66401120"
     </Elements>
     ```
 
-     這個檔案會定義預設的自訂動作上建立的功能表項目**站台動作**的 SharePoint 網站的功能表。 當使用者選擇功能表項目時，在指定的 URL`UrlAction`項目會開啟網頁瀏覽器中。 如需詳細資訊的 XML 項目可用來定義自訂動作，請參閱[自訂動作定義](http://go.microsoft.com/fwlink/?LinkId=177801)。
+     這個檔案會定義預設的自訂動作，以在 SharePoint 網站的 [**網站動作**] 功能表上建立功能表項目。 當使用者選擇功能表項目時，會在網頁瀏覽器中開啟 `UrlAction` 元素中指定的 URL。 如需您可以用來定義自訂動作之 XML 元素的詳細資訊，請參閱[自訂動作定義](/sharepoint/dev/schema/custom-action-definition-schema)。
 
-12. （選擇性） 開啟*ItemTemplate.ico*檔案，並修改它，使其具有可辨識的設計。 此圖示會顯示中的專案項目旁邊**加入新項目** 對話方塊。
+12. （選擇性）開啟*ItemTemplate .ico*檔案並加以修改，使其具有可辨識的設計。 這個圖示會顯示在 [**加入新專案**] 對話方塊中的專案專案旁邊。
 
-13. 在 [**方案總管] 中**，開啟捷徑功能表**ItemTemplate**專案，，然後選擇**卸載專案**。
+13. 在**方案總管**中，開啟**ItemTemplate**專案的快捷方式功能表，然後選擇 **[卸載專案**]。
 
-14. 開啟捷徑功能表**ItemTemplate**同樣地，專案，然後選擇**編輯 ItemTemplate.csproj**或是**編輯 ItemTemplate.vbproj**。
+14. 再次開啟**ItemTemplate**專案的快捷方式功能表，然後選擇 [**編輯 itemtemplate .csproj** ] 或 [**編輯 itemtemplate. vbproj**]。
 
-15. 找出下列`VSTemplate`專案檔中的項目。
+15. 在專案檔中找出下列 `VSTemplate` 元素。
 
     ```xml
     <VSTemplate Include="ItemTemplate.vstemplate">
     ```
 
-16. 取代此項`VSTemplate`項目與下列 XML 中，然後將儲存和關閉檔案。
+16. 以下列 XML 取代此 `VSTemplate` 元素，然後儲存並關閉檔案。
 
     ```xml
     <VSTemplate Include="ItemTemplate.vstemplate">
@@ -284,137 +284,137 @@ ms.locfileid: "66401120"
     </VSTemplate>
     ```
 
-     `OutputSubPath`項目會指定當您建置專案時，項目範本建立所在的路徑中的其他資料夾。 此處指定的資料夾，確保項目範本會提供，客戶開啟時，才**加入新項目**對話方塊方塊中，展開**SharePoint**節點，然後選擇  **2010年**節點。
+     當您建立專案時，`OutputSubPath` 專案會在路徑下指定其他資料夾。 此處指定的資料夾可確保只有當客戶開啟 [**加入新專案**] 對話方塊、展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點時，專案範本才會可用。
 
-17. 在 [**方案總管] 中**，開啟捷徑功能表**ItemTemplate**專案，，然後選擇**重新載入專案**。
+17. 在**方案總管**中，開啟**ItemTemplate**專案的快捷方式功能表，然後選擇 [**重載專案**]。
 
-## <a name="create-a-vsix-package-to-deploy-the-project-item"></a>建立 VSIX 封裝，來部署專案項目
- 若要建立 VSIX 封裝部署擴充功能，請在解決方案中使用 VSIX 專案。 首先，設定 VSIX 套件藉由修改 source.extension.vsixmanifest 檔案中包含在 VSIX 專案。 建立方案，然後建立 VSIX 封裝。
+## <a name="create-a-vsix-package-to-deploy-the-project-item"></a>建立 VSIX 封裝以部署專案專案
+ 若要部署擴充功能，請使用方案中的 VSIX 專案來建立 VSIX 封裝。 首先，藉由修改包含在 VSIX 專案中的 extension.vsixmanifest 檔案來設定 VSIX 封裝。 然後，藉由建立方案來建立 VSIX 封裝。
 
-#### <a name="to-configure-and-create-the-vsix-package"></a>若要設定及建立 VSIX 封裝
+#### <a name="to-configure-and-create-the-vsix-package"></a>設定和建立 VSIX 封裝
 
-1. 在 **方案總管**，開啟捷徑功能表**source.extension.vsixmanifest** CustomActionProjectItem 專案中的檔案，然後選擇 **開啟**。
+1. 在**方案總管**中，開啟 CustomActionProjectItem 專案中**extension.vsixmanifest**檔案的快捷方式功能表，然後選擇 [**開啟**]。
 
-     Visual Studio 會在資訊清單編輯器中開啟檔案。 Source.extension.vsixmanifest 檔案中會是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。
+     Visual Studio 會在資訊清單編輯器中開啟檔案。 Extension.vsixmanifest 檔案是所有 VSIX 封裝所需之 extension.vsixmanifest 檔案的基礎。 如需這個檔案的詳細資訊，請參閱[VSIX 延伸模組架構1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。
 
-2. 在  **Product Name**方塊中，輸入**自訂動作專案項目**。
+2. 在 [**產品名稱**] 方塊中，輸入**自訂動作專案**專案。
 
-3. 在 **作者**方塊中，輸入**Contoso**。
+3. 在 [**作者**] 方塊中，輸入**Contoso**。
 
-4. 在 **描述**方塊中，輸入**SharePoint 專案項目，表示自訂動作**。
+4. 在 [**描述**] 方塊中，輸入**代表自訂動作的 SharePoint 專案專案**。
 
-5. 在 [**資產**索引標籤上，選擇**新增**] 按鈕。
+5. 在 [**資產**] 索引標籤上，選擇 [**新增**] 按鈕。
 
-     **加入新資產** 對話方塊隨即出現。
+     [**加入新資產**] 對話方塊隨即出現。
 
-6. 在 **型別**清單中，選擇**Microsoft.VisualStudio.ItemTemplate**。
-
-    > [!NOTE]
-    > 這個值會對應到`ItemTemplate`extension.vsixmanifest 檔案中的項目。 此項目可識別包含專案項目範本的 VSIX 套件中的子資料夾。 如需詳細資訊，請參閱 < [ItemTemplate 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))。
-
-7. 在 **來源**清單中，選擇**目前方案中的專案**。
-
-8. 在 [**專案**清單中，選擇**ItemTemplate**，然後選擇 **[確定]** ] 按鈕。
-
-9. 在 **資產**索引標籤上，選擇**新增**按鈕一次。
-
-     **加入新資產** 對話方塊隨即出現。
-
-10. 在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。
+6. 在 [**類型**] 清單中，選擇 [ **VisualStudio**]。
 
     > [!NOTE]
-    > 這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 這個值會對應至 extension.vsixmanifest 檔案中的 `ItemTemplate` 元素。 這個元素會識別包含專案專案範本之 VSIX 封裝中的子資料夾。 如需詳細資訊，請參閱[ItemTemplate 元素（VSX 架構）](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))。
 
-11. 在 **來源**清單中，選擇**目前方案中的專案**。
+7. 在 [**來源**] 清單中，選擇 [**目前方案] 中的專案**。
 
-12. 在 **專案**清單中，選擇**ProjectItemDefinition**。
+8. 在 [**專案**] 清單中，選擇 [ **ItemTemplate**]，然後選擇 [**確定]** 按鈕。
 
-13. 選擇 [確定]  按鈕。
+9. 在 [**資產**] 索引標籤中，再次選擇 [**新增**] 按鈕。
 
-14. 在功能表列上選擇 **建置** > **建置方案**，然後確認專案編譯無誤。
+     [**加入新資產**] 對話方塊隨即出現。
 
-15. 請確定 CustomActionProjectItem 專案建置輸出資料夾包含 CustomActionProjectItem.vsix 檔案。
+10. 在 [**類型**] 清單中，選擇 [ **VisualStudio [microsoft.visualstudio.mefcomponent]** ]。
 
-     根據預設，會將組建輸出資料夾...包含 CustomActionProjectItem 專案資料夾下的 \bin\Debug 資料夾。
+    > [!NOTE]
+    > 這個值會對應至 extension.vsixmanifest 檔案中的 `MefComponent` 元素。 這個元素會指定 VSIX 封裝中的擴充元件名稱。 如需詳細資訊，請參閱[[Microsoft.visualstudio.mefcomponent] 元素（VSX 架構）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
-## <a name="test-the-project-item"></a>測試的專案項目
- 您現在已準備好測試的專案項目。 首先，啟動偵錯 CustomActionProjectItem 方案在 Visual Studio 的實驗執行個體。 然後，測試**自訂動作**Visual Studio 的實驗執行個體中的 SharePoint 專案中的專案項目。 最後，建置並執行 SharePoint 專案，以確認自訂動作會在如預期般運作。
+11. 在 [**來源**] 清單中，選擇 [**目前方案] 中的專案**。
 
-#### <a name="to-start-debugging-the-solution"></a>若要啟動偵錯方案
+12. 在 [**專案**] 清單中，選擇 [ **ProjectItemDefinition**]。
 
-1. 使用系統管理認證，重新啟動 Visual Studio，然後開啟 CustomActionProjectItem 解決方案。
+13. 選擇 [ **確定** ] 按鈕。
 
-2. 開啟 CustomAction 的程式碼檔案，然後再將中斷點新增至程式碼中的第一行`InitializeType`方法。
+14. 在功能表列上，選擇 [**組建**] [ > ] [**組建方案**]，然後確認專案編譯無誤。
 
-3. 選擇**F5**鍵開始偵錯。
+15. 請確定 CustomActionProjectItem 專案的組建輸出檔案夾包含 CustomActionProjectItem .vsix 檔案。
 
-     Visual Studio 會 %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\Custom 動作專案 Item\1.0 安裝擴充功能，並啟動 Visual Studio 的實驗執行個體。 在 Visual Studio 這個執行個體中，您將測試專案項目。
+     根據預設，組建輸出檔案夾為.。包含 CustomActionProjectItem 專案之資料夾下的 \bin\Debug 資料夾。
 
-#### <a name="to-test-the-project-item-in-visual-studio"></a>若要在 Visual Studio 中測試的專案項目
+## <a name="test-the-project-item"></a>測試專案專案
+ 您現在已準備好測試專案專案。 首先，在 Visual Studio 的實驗實例中，開始對 CustomActionProjectItem 方案進行調試。 然後，在 Visual Studio 的實驗實例中，測試 SharePoint 專案中的**自訂動作**專案專案。 最後，建立並執行 SharePoint 專案，以確認自訂動作是否如預期般運作。
 
-1. 在實驗性 Visual Studio 執行個體，在功能表列上，選擇**檔案** > **新增** > **專案**。
+#### <a name="to-start-debugging-the-solution"></a>開始對方案進行調試
 
-2. 依序展開**Visual C#** 或**Visual Basic** （取決於支援的語言項目範本），展開**SharePoint**，然後選擇  **2010年**節點。
+1. 使用系統管理認證重新開機 Visual Studio，然後開啟 CustomActionProjectItem 解決方案。
 
-3. 在專案範本清單中，選擇**SharePoint 2010 專案**。
+2. 開啟 CustomAction 程式碼檔案，然後將中斷點新增至 `InitializeType` 方法中的第一行程式碼。
 
-4. 在 [**名稱**方塊中，輸入**CustomActionTest**，然後選擇 **[確定]** ] 按鈕。
+3. 選擇**F5**鍵開始進行調試。
 
-5. 在 [ **SharePoint 自訂精靈**，輸入您想要用於偵錯時，網站的 URL，然後選擇**完成**] 按鈕。
+     Visual Studio 會將擴充功能安裝至%UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\Custom 動作專案 Item\1.0，並啟動 Visual Studio 的實驗實例。 您將在 Visual Studio 的這個實例中測試專案專案。
 
-6. 在 **方案總管 中**，開啟專案節點的捷徑功能表，選擇**新增**，然後選擇 **新項目**。
+#### <a name="to-test-the-project-item-in-visual-studio"></a>若要在 Visual Studio 中測試專案專案
 
-7. 在 **加入新項目**對話方塊方塊中，選擇**2010年**節點底下**SharePoint**節點。
+1. 在 Visual Studio 的實驗實例中，于功能表列**上選擇 [** 檔案] [檔案] [ > **新增** > **專案**]。
 
-     確認**自訂動作**項目會出現在清單中的專案項目。
+2. 展開 **[ C#視覺效果**] 或 [ **Visual Basic** ] （視專案範本支援的語言而定），展開 [ **SharePoint**]，然後選擇 [ **2010** ] 節點。
 
-8. 選擇**自訂動作**項目，然後再選擇**新增** 按鈕。
+3. 在專案範本清單中，選擇 [ **SharePoint 2010 專案**]。
 
-     Visual Studio 會加入名為的項目**CustomAction1**至您的專案，並開啟*Elements.xml*在編輯器中的檔案。
+4. 在 [**名稱**] 方塊中，輸入**CustomActionTest**，然後選擇 [**確定]** 按鈕。
 
-9. 確認 Visual Studio 的其他執行個體中的程式碼是在您稍早在設定的中斷點上停止`InitializeType`方法。
+5. 在 [ **SharePoint 自訂]** 中，輸入您要用來進行偵錯工具的網站 URL，然後選擇 [**完成]** 按鈕。
 
-10. 選擇**F5**鍵繼續偵錯專案。
+6. 在**方案總管**中，開啟專案節點的快捷方式功能表，選擇 [**加入**]，然後選擇 [**新增專案**]。
 
-11. 中的 Visual Studio 實驗執行個體中**方案總管] 中**，開啟捷徑功能表**CustomAction1**節點，然後選擇 [**檢視自訂動作設計工具**.
+7. 在 [**加入新專案**] 對話方塊中，選擇 [ **SharePoint** ] 節點底下的 [ **2010** ] 節點。
 
-12. 確認訊息方塊隨即出現，然後選擇 [**確定**] 按鈕。
+     確認**自訂動作**專案出現在專案專案清單中。
 
-     您可以使用這個快顯功能表提供適用於開發人員，例如顯示自訂動作的設計工具的其他選項或命令。
+8. 選擇 [**自訂動作**] 專案，然後選擇 [**新增**] 按鈕。
 
-13. 在功能表列上選擇 **檢視** > **輸出**。
+     Visual Studio 會將名為**CustomAction1**的專案新增至您的專案，並在編輯器中開啟*元素 .xml*檔案。
 
-     **輸出**視窗隨即開啟。
+9. 確認 Visual Studio 的另一個實例中的程式碼會在您稍早于 `InitializeType` 方法中設定的中斷點上停止。
 
-14. 在 **方案總管**，開啟捷徑功能表**CustomAction1**項目，然後再變更其名稱**MyCustomAction**。
+10. 選擇**F5**鍵繼續進行專案的 debug。
 
-     在 [**輸出**] 視窗中，確認訊息隨即出現。 此訊息會寫入由<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemNameChanged>中所定義的事件處理常式`CustomActionProjectItemTypeProvider`類別。 您可以處理此事件和其他專案項目事件來實作自訂行為，當開發人員修改專案項目。
+11. 在 Visual Studio 的實驗實例中，于**方案總管**中開啟 [ **CustomAction1** ] 節點的快捷方式功能表，然後選擇 [**查看自訂動作設計**工具]。
+
+12. 確認出現訊息方塊，然後選擇 [**確定]** 按鈕。
+
+     您可以使用這個快捷方式功能表來為開發人員提供其他選項或命令，例如顯示自訂動作的設計工具。
+
+13. 在功能表列上，選擇 [**視圖**] [ > **輸出**]。
+
+     [**輸出**] 視窗隨即開啟。
+
+14. 在**方案總管**中，開啟**CustomAction1**專案的快捷方式功能表，然後將其名稱變更為**MyCustomAction**。
+
+     在 [**輸出**] 視窗中，會出現確認訊息。 這則訊息是由您在 `CustomActionProjectItemTypeProvider` 類別中定義的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemNameChanged> 事件處理常式所寫入。 當開發人員修改專案專案時，您可以處理這個事件和其他專案專案事件，以執行自訂行為。
 
 #### <a name="to-test-the-custom-action-in-sharepoint"></a>若要在 SharePoint 中測試自訂動作
 
-1. 在 Visual Studio 的實驗性執行個體，開啟*Elements.xml*子系的檔案**MyCustomAction**專案項目。
+1. 在 Visual Studio 的實驗實例中，開啟**MyCustomAction**專案專案子系的*元素 .xml*檔案。
 
-2. 在  *Elements.xml*檔案，進行下列變更，然後再儲存檔案：
+2. 在*Elements .xml*檔案中，進行下列變更，然後儲存檔案：
 
-    - 在 `CustomAction`項目，設定`Id`GUID 或其他唯一的字串屬性，如下列範例所示：
+    - 在 `CustomAction` 元素中，將 `Id` 屬性設定為 GUID 或一些其他的唯一字串，如下列範例所示：
 
         ```xml
         Id="cd85f6a7-af2e-44ab-885a-0c795b52121a"
         ```
 
-    - 在 `CustomAction`項目，設定`Title`屬性，如下列範例所示：
+    - 在 `CustomAction` 元素中，設定 `Title` 屬性，如下列範例所示：
 
         ```xml
         Title="SharePoint Developer Center"
         ```
 
-    - 在 `CustomAction`項目，設定`Description`屬性，如下列範例所示：
+    - 在 `CustomAction` 元素中，設定 `Description` 屬性，如下列範例所示：
 
         ```xml
         Description="Opens the SharePoint Developer Center Web site."
         ```
 
-    - 在 `UrlAction`項目，設定`Url`屬性，如下列範例所示：
+    - 在 `UrlAction` 元素中，設定 `Url` 屬性，如下列範例所示：
 
         ```xml
         Url="https://docs.microsoft.com/sharepoint/dev/"
@@ -422,39 +422,39 @@ ms.locfileid: "66401120"
 
 3. 選擇 **F5** 鍵。
 
-     自訂動作會封裝並部署到 SharePoint 網站中指定**站台 URL**專案屬性。 Web 瀏覽器中開啟此站台的預設頁面。
+     自訂動作會封裝並部署到專案的 [**網站 URL** ] 屬性中所指定的 SharePoint 網站。 網頁瀏覽器會開啟至此網站的預設頁面。
 
     > [!NOTE]
-    > 如果**指令碼偵錯已停用** 對話方塊出現時，選擇**是**按鈕以繼續進行偵錯專案。
+    > 如果出現 [**腳本調試已停用**] 對話方塊，請選擇 [**是]** 按鈕以繼續進行專案的 debug。
 
-4. 上**站台動作**功能表上，選擇**SharePoint 開發人員中心**，確認瀏覽器會開啟網站 https://docs.microsoft.com/sharepoint/dev/，然後關閉網頁瀏覽器。
+4. 在 [**網站動作**] 功能表上，選擇 [ **SharePoint 開發人員中心**]，確認瀏覽器開啟網站 https://docs.microsoft.com/sharepoint/dev/ ，然後關閉網頁瀏覽器。
 
-## <a name="clean-up-the-development-computer"></a>清除開發電腦
- 完成測試的專案項目之後，請從 Visual Studio 的實驗執行個體中移除專案項目範本。
+## <a name="clean-up-the-development-computer"></a>清理開發電腦
+ 在您完成專案專案的測試之後，請從 Visual Studio 的實驗實例中移除專案專案範本。
 
-#### <a name="to-clean-up-the-development-computer"></a>清除開發電腦
+#### <a name="to-clean-up-the-development-computer"></a>清理開發電腦
 
-1. 在實驗性 Visual Studio 執行個體，在功能表列上，選擇**工具** > **擴充功能和更新**。
+1. 在 Visual Studio 的實驗實例中，選擇功能表列上的 [**工具**] > [**擴充功能和更新**]。
 
-     [擴充功能和更新]  對話方塊隨即開啟。
+     [擴充功能和更新] 對話方塊隨即開啟。
 
-2. 在延伸模組清單中，選擇**自訂動作專案項目**，然後選擇**解除安裝** 按鈕。
+2. 在擴充功能清單中，選擇 [**自訂動作**] [專案專案]，然後選擇 [**卸載**] 按鈕。
 
-3. 在出現的對話方塊中，選擇**是**按鈕，以確認您想要解除安裝擴充功能。
+3. 在出現的對話方塊中，選擇 [**是**] 按鈕以確認您要卸載擴充功能。
 
-4. 選擇**立即重新啟動**按鈕以完成解除安裝。
+4. 選擇 [**立即重新開機**] 按鈕以完成卸載。
 
-5. 關閉 Visual Studio 的實驗執行個體和 CustomActionProjectItem 方案已開啟的執行個體。
+5. 關閉 Visual Studio 的實驗實例，以及開啟 CustomActionProjectItem 方案的實例。
 
 ## <a name="next-steps"></a>後續步驟
- 完成此逐步解說之後，您可以新增項目範本的精靈。 當使用者將自訂動作專案項目新增至 SharePoint 專案中時，精靈就會收集資訊的動作 （例如其位置和時的動作會選擇所要巡覽的 URL），並將這項資訊來*Elements.xml*新的專案項目中的檔案。 如需詳細資訊，請參閱[逐步解說：建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。
+ 完成本逐步解說之後，您可以將 wizard 加入專案範本。 當使用者將自訂動作專案新增至 SharePoint 專案時，嚮導會收集動作的相關資訊（例如，在選擇動作時要流覽至的位置和 URL），並將這項資訊新增至新的中的*Elements 檔案。* 專案專案。 如需詳細資訊，請參閱[逐步解說：使用專案範本建立自訂動作專案專案（第2部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [逐步解說：建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)
-- [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)
-- [建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
+- [逐步解說：使用專案範本建立自訂動作專案專案（第2部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)
+- [定義自訂 SharePoint 專案專案類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)
+- [為 SharePoint 專案專案建立專案範本和專案範本](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)
-- [Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [圖示影像編輯器](/cpp/windows/image-editor-for-icons)
-- [建立圖示或其他影像&#40;圖示影像編輯器&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)
+- [為圖示建立圖示或其他&#40;影像影像編輯器&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

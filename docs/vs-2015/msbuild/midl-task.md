@@ -27,17 +27,17 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e007830a91f0450f6c26c6c175196db308e3a43
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191565"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300210"
 ---
 # <a name="midl-task"></a>MIDL 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-包裝 Microsoft 介面定義語言 (MIDL) 編譯器工具 midl.exe。 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜MIDL 命令列參考＞。  
+包裝 Microsoft 介面定義語言 (MIDL) 編譯器工具 midl.exe。 如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜MIDL 命令列參考＞。  
   
 ## <a name="parameters"></a>參數  
  下表說明 **MIDL** 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。  
@@ -48,7 +48,7 @@ ms.locfileid: "68191565"
   
      將目錄加入要在其中搜尋匯入的 IDL 檔案、包含的標頭檔及應用程式組態檔 (ACF) 的目錄清單。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/I** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/I** 選項。  
   
 - **AdditionalOptions**  
   
@@ -56,7 +56,7 @@ ms.locfileid: "68191565"
   
      命令列選項清單。 例如 **"** _/option1 /option2 /option#_ "。 使用此參數，來指定任何其他 MIDL 工作參數未表示的命令列選項。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜MIDL 命令列參考＞。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜MIDL 命令列參考＞。  
   
 - **ApplicationConfigurationMode**  
   
@@ -64,7 +64,7 @@ ms.locfileid: "68191565"
   
      如果是 `true`，可讓您在 IDL 檔案中使用某些 ACF 關鍵字。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/app_config** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/app_config** 選項。  
   
 - **ClientStubFile**  
   
@@ -72,7 +72,7 @@ ms.locfileid: "68191565"
   
      指定 RPC 介面的用戶端 Stub 檔案名稱。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/cstub** 選項。 另請參閱此表格中的 **ServerStubFile** 參數。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/cstub** 選項。 另請參閱此表格中的 **ServerStubFile** 參數。  
   
 - **CPreprocessOptions**  
   
@@ -80,7 +80,7 @@ ms.locfileid: "68191565"
   
      指定要傳遞至 C/C++ 前置處理器的選項。 指定以空格分隔的前置處理器選項清單。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/cpp_opt** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/cpp_opt** 選項。  
   
 - **DefaultCharType**  
   
@@ -96,7 +96,7 @@ ms.locfileid: "68191565"
     |**Unsigned**|**/char unsigned**|  
     |**Ascii**|**/char ascii7**|  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/char** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/char** 選項。  
   
 - **DllDataFileName**  
   
@@ -104,7 +104,7 @@ ms.locfileid: "68191565"
   
      指定針對 Proxy DLL 所產生之 *dlldata* 檔案的檔名。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/dlldata** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/dlldata** 選項。  
   
 - **EnableErrorChecks**  
   
@@ -120,7 +120,7 @@ ms.locfileid: "68191565"
     |**EnableCustom**|**/error**|  
     |**All**|**/error all**|  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error** 選項。  
   
 - **ErrorCheckAllocations**  
   
@@ -128,7 +128,7 @@ ms.locfileid: "68191565"
   
      如果是 `true`，即會檢查有無記憶體不足的錯誤。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error allocation** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error allocation** 選項。  
   
 - **ErrorCheckBounds**  
   
@@ -136,7 +136,7 @@ ms.locfileid: "68191565"
   
      如果是 `true`，即會根據傳輸長度規格來檢查不一致的各種陣列大小。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error bounds_check** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error bounds_check** 選項。  
   
 - **ErrorCheckEnumRange**  
   
@@ -152,7 +152,7 @@ ms.locfileid: "68191565"
   
      如果是 `true`，即會檢查未將任何 Null 參考指標傳遞到用戶端 Stub。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error ref** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error ref** 選項。  
   
 - **ErrorCheckStubData**  
   
@@ -160,7 +160,7 @@ ms.locfileid: "68191565"
   
      如果是 `true`，即會產生 Stub，來攔截伺服器端的解除封送處理例外狀況，並將它們傳播回用戶端。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error stub_data** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error stub_data** 選項。  
   
 - **GenerateClientFiles**  
   
@@ -175,7 +175,7 @@ ms.locfileid: "68191565"
     |**無**|**/client none**|  
     |**Stub**|**/client stub**|  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/client** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/client** 選項。  
   
 - **GenerateServerFiles**  
   
@@ -190,7 +190,7 @@ ms.locfileid: "68191565"
     |**無**|**/server none**|  
     |**Stub**|**/server stub**|  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/server** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/server** 選項。  
   
 - **GenerateStublessProxies**  
   
@@ -198,7 +198,7 @@ ms.locfileid: "68191565"
   
      如果是 `true`，即會透過物件介面的 Stubless Proxies 一併產生完全解譯的 Stub。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/Oicf** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/Oicf** 選項。  
   
 - **GenerateTypeLibrary**  
   
@@ -206,7 +206,7 @@ ms.locfileid: "68191565"
   
      如果是 `true`，就不會產生類型程式庫 (.tlb) 檔案。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/notlb** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/notlb** 選項。  
   
 - **HeaderFileName**  
   
@@ -214,7 +214,7 @@ ms.locfileid: "68191565"
   
      指定所產生的標頭檔名稱。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/h** or **/header** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/h** or **/header** 選項。  
   
 - **IgnoreStandardIncludePath**  
   
@@ -222,7 +222,7 @@ ms.locfileid: "68191565"
   
      如果是 `true`，則 MIDL 工作只會搜尋使用 **AdditionalIncludeDirectories** 參數指定的目錄，並忽略目前的目錄以及 INCLUDE 環境變數所指定的目錄。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/no_def_idir** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/no_def_idir** 選項。  
   
 - **InterfaceIdentifierFileName**  
   
@@ -230,7 +230,7 @@ ms.locfileid: "68191565"
   
      針對 COM 介面指定「介面識別項檔」  的名稱。 這會覆寫透過在 IDL 檔名中加入 "_i.c" 而取得的預設名稱。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/iid** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/iid** 選項。  
   
 - **LocaleID**  
   
@@ -238,7 +238,7 @@ ms.locfileid: "68191565"
   
      指定「地區設定識別項」  ，讓您能夠在輸入檔、檔案名稱和目錄路徑中使用國際字元。 指定十進位的地區設定識別項。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/lcid** 選項。 另請參閱 MSDN 上的＜Microsoft 提供的地區設定識別項＞。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/lcid** 選項。 另請參閱 MSDN 上的＜Microsoft 提供的地區設定識別項＞。  
   
 - **MkTypLibCompatible**  
   
@@ -246,7 +246,7 @@ ms.locfileid: "68191565"
   
      如果是 `true`，則輸入檔的格式必須與 mktyplib.exe 2.03 版相容。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/mktyplib203** 選項。 另請參閱 MSDN 網站上的＜ODL 檔案語法＞。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/mktyplib203** 選項。 另請參閱 MSDN 網站上的＜ODL 檔案語法＞。  
   
 - **OutputDirectory**  
   
@@ -254,7 +254,7 @@ ms.locfileid: "68191565"
   
      指定 MIDL 工作寫入輸出檔的預設目錄。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/out** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/out** 選項。  
   
 - **PreprocessorDefinitions**  
   
@@ -262,7 +262,7 @@ ms.locfileid: "68191565"
   
      指定一或多個「定義」  ；也就是要傳遞到 C 前置處理器的名稱和選擇性的值，如同透過 `#define` 指示詞。 每個定義的格式是 *name[=value]* 。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/D** 選項。 另請參閱此表格中的 **UndefinePreprocessorDefinitions** 參數。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/D** 選項。 另請參閱此表格中的 **UndefinePreprocessorDefinitions** 參數。  
   
 - **ProxyFileName**  
   
@@ -270,7 +270,7 @@ ms.locfileid: "68191565"
   
      針對 COM 介面指定介面 Proxy 檔案的名稱。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/proxy** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/proxy** 選項。  
   
 - **RedirectOutputAndErrors**  
   
@@ -278,7 +278,7 @@ ms.locfileid: "68191565"
   
      將輸出 (例如錯誤訊息和警告) 從標準輸出重新導向到指定的檔案。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/o** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/o** 選項。  
   
 - **ServerStubFile**  
   
@@ -286,7 +286,7 @@ ms.locfileid: "68191565"
   
      指定 RPC 介面的伺服器 Stub 檔案名稱。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/sstub** 選項。 另請參閱此表格中的 **ClientStubFile** 參數。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/sstub** 選項。 另請參閱此表格中的 **ClientStubFile** 參數。  
   
 - **Source**  
   
@@ -310,7 +310,7 @@ ms.locfileid: "68191565"
     |**4**|**/Zp4**|  
     |**8**|**/Zp8**|  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/Zp** 選項。 **/Zp** 選項相當於 **/pack** 選項和較舊的 **/align** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/Zp** 選項。 **/Zp** 選項相當於 **/pack** 選項和較舊的 **/align** 選項。  
   
 - **SuppressCompilerWarnings**  
   
@@ -318,7 +318,7 @@ ms.locfileid: "68191565"
   
      如果是 `true`，即會隱藏來自 MIDL 工作的警告訊息。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/no_warn** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/no_warn** 選項。  
   
 - **SuppressStartupBanner**  
   
@@ -326,7 +326,7 @@ ms.locfileid: "68191565"
   
      如果是 `true`，當工作開始時，會防止顯示著作權和版本號碼訊息。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/nologo** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/nologo** 選項。  
   
 - **TargetEnvironment**  
   
@@ -343,7 +343,7 @@ ms.locfileid: "68191565"
     |**Itanium**|**/env ia64**|  
     |**X64**|**/env x64**|  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/env** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/env** 選項。  
   
 - **TrackerLogDirectory**  
   
@@ -364,7 +364,7 @@ ms.locfileid: "68191565"
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/newtlb** 和 **/oldtlb** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/newtlb** 和 **/oldtlb** 選項。  
   
 - **TypeLibraryName**  
   
@@ -372,7 +372,7 @@ ms.locfileid: "68191565"
   
      指定類型程式庫檔案的名稱。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/tlb** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/tlb** 選項。  
   
 - **UndefinePreprocessorDefinitions**  
   
@@ -380,7 +380,7 @@ ms.locfileid: "68191565"
   
      將名稱傳遞到 C 前置處理器 (如同透過 `#undefine` 指示詞)，藉以移除名稱所有先前的定義。 指定一或多個先前定義的名稱。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/U** 選項。 另請參閱此表格中的 **PreprocessorDefinitions** 參數。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/U** 選項。 另請參閱此表格中的 **PreprocessorDefinitions** 參數。  
   
 - **ValidateAllParameters**  
   
@@ -388,7 +388,7 @@ ms.locfileid: "68191565"
   
      如果是 `true`，即會產生其他錯誤檢查資訊，以便在執行階段用來執行完整性檢查。 如果是 `false`，則不會產生錯誤檢查資訊。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/robust** 和 **/no_robust** 選項。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/robust** 和 **/no_robust** 選項。  
   
 - **WarnAsError**  
   
@@ -398,7 +398,7 @@ ms.locfileid: "68191565"
   
      如果未指定 **WarningLevel** MIDL 工作參數，就會將預設層級 (層級 1) 上的警告視為錯誤。  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/WX** 選項。 另請參閱此表格中的 **WarningLevel** 參數。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/WX** 選項。 另請參閱此表格中的 **WarningLevel** 參數。  
   
 - **WarningLevel**  
   
@@ -416,7 +416,7 @@ ms.locfileid: "68191565"
     |**3**|**/W3**|  
     |**4**|**/W4**|  
   
-     如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/W** 選項。 另請參閱此表格中的 **WarnAsError** 參數。  
+     如需詳細資訊，請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/W** 選項。 另請參閱此表格中的 **WarnAsError** 參數。  
   
 ## <a name="remarks"></a>備註  
   

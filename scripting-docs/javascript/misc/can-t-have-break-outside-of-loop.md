@@ -30,11 +30,11 @@ break labelname;
   
  當您使用嵌套迴圈或 `switch` 語句，而且需要中斷不是最內層的迴圈時，您只需要有標記形式的**break**關鍵字。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 請確定**break**關鍵字出現在封閉式迴圈或 switch 語句內。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [break 陳述式](../../javascript/reference/break-statement-javascript.md)   
  [控制程式流程](../../javascript/controlling-program-flow-javascript.md)   
  [指令碼疑難排解](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

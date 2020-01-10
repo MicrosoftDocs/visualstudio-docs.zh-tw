@@ -22,14 +22,14 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8a0654936ac102891981ecbee43430172487628
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dd2b2d19e55cbaf9af63ddeafdbdf9f6d677c5bc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646125"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301619"
 ---
-# <a name="layer-diagrams-reference"></a>圖層圖表：參考
+# <a name="layer-diagrams-reference"></a>分層圖：參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 中，您可以使用*分層圖*，以視覺化方式呈現系統的高階邏輯架構。 分層圖會將您系統中的實體成品組織成邏輯的抽象群組，稱為「*圖層*」。 您可以使用圖層來說明成品或系統主要元件所執行的主要工作。 每個圖層也可以包含巢狀圖層以描述更詳細的工作。
@@ -48,7 +48,7 @@ ms.locfileid: "72646125"
 
 - 在開發和維護您的程式碼期間，藉由在簽入及建置作業包含驗證，強化預期的架構。
 
-  本主題描述分層圖中可以使用的項目。 如需如何建立和繪製圖層圖表的詳細資訊，請參閱[分層圖：方針](../modeling/layer-diagrams-guidelines.md)。 如需有關分層模式的詳細資訊，請造訪[& 實務的模式網站](http://go.microsoft.com/fwlink/?LinkId=145794)。
+  本主題描述分層圖中可以使用的項目。 如需如何建立和繪製圖層圖表的詳細資訊，請參閱[分層圖：方針](../modeling/layer-diagrams-guidelines.md)。 如需有關分層模式的詳細資訊，請造訪[& 實務的模式網站](https://go.microsoft.com/fwlink/?LinkId=145794)。
 
 ## <a name="reading-layer-diagrams"></a>閱讀分層圖
  ![分層圖上的元素](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
@@ -94,5 +94,5 @@ ms.locfileid: "72646125"
     |**支援驗證**|若**為 True**，則圖層驗證程式可以驗證專案是否符合此元素的相依性。<br /><br /> 如果**為 False**，則連結不會參與圖層驗證程式。<br /><br /> 如需詳細資訊，請參閱[分層圖：方針](../modeling/layer-diagrams-guidelines.md)。|
     |**識別碼**|連結成品的參考|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [建立應用程式模型](../modeling/create-models-for-your-app.md)

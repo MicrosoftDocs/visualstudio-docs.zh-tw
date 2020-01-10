@@ -9,17 +9,17 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92fe7d47a74112fb804770cca356084fa79fe1e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654205"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594405"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>管理 Visual Studio 的延伸模組
 
@@ -31,7 +31,7 @@ ms.locfileid: "72654205"
 
 ## <a name="extensions-and-updates-dialog-box"></a>[擴充功能和更新] 對話方塊
 
-使用 [延伸模組和更新] 對話方塊，即可安裝和管理 Visual Studio 延伸模組。 若要開啟 [擴充功能和更新] 對話方塊，請選擇 [工具]  > [擴充功能和更新]，或是在 [快速啟動] 搜尋方塊中輸入**擴充功能**。
+使用 [延伸模組和更新] 對話方塊，即可安裝和管理 Visual Studio 延伸模組。 若要開啟 [擴充功能和更新] 對話方塊，請選擇 [工具] > [擴充功能和更新]，或是在 [快速啟動] 搜尋方塊中輸入**擴充功能**。
 
 ::: moniker-end
 
@@ -57,7 +57,7 @@ ms.locfileid: "72654205"
 
 1. 在 [工具] > [延伸模組和更新] 中，尋找您想要安裝的延伸模組。 如果您知道擴充功能的名稱或部分名稱，則可以在 [**搜尋**] 視窗中搜尋。
 
-2. 選取 [**下載**]。
+2. 選取 [下載]。
 
    延伸模組將會排程安裝。 Visual Studio 的所有實例都已關閉之後，您的擴充功能就會安裝。
 
@@ -81,7 +81,7 @@ ms.locfileid: "72654205"
 
 1. 在 [延伸模組] > [管理延伸模組] 中，尋找您想要安裝的擴充功能。 (如果您知道延伸模組的名稱或部分名稱，則可以在 [搜尋] 視窗中搜尋)。
 
-2. 選取 [**下載**]。
+2. 選取 [下載]。
 
    延伸模組將會排程安裝。 Visual Studio 的所有實例都已關閉之後，您的擴充功能就會安裝。
 
@@ -89,7 +89,7 @@ ms.locfileid: "72654205"
 
 ### <a name="install-without-using-the-manage-extensions-dialog-box"></a>不使用 [管理延伸模組] 對話方塊進行安裝
 
-在 Visual Studio Marketplace 以外的位置中，可能也會提供已封裝在 .vsix 檔案中的延伸模組。 **延伸**模組  >  **管理延伸**模組 對話方塊無法偵測這些檔案，但您可以按兩下該檔案，或選取檔案並按下**enter**，以安裝 *.vsix 檔案。* 接下來只需遵循指示進行。 安裝擴充功能之後，您就能使用 [管理擴充功能] 對話方塊來將它啟用、停用或解除安裝。
+在 Visual Studio Marketplace 以外的位置中，可能也會提供已封裝在 .vsix 檔案中的延伸模組。 **延伸**模組 > **管理延伸**模組 對話方塊無法偵測這些檔案，但您可以按兩下該檔案，或選取檔案並按下**enter**，以安裝 *.vsix 檔案。* 接下來只需遵循指示進行。 安裝擴充功能之後，您就能使用 [管理擴充功能] 對話方塊來將它啟用、停用或解除安裝。
 
 > [!NOTE]
 > - Visual Studio Marketplace 包含 VSIX 和 MSI 擴充功能。 [管理延伸模組] 對話方塊無法啟用或停用以 MSI 為基礎的延伸模組。
@@ -106,13 +106,13 @@ ms.locfileid: "72654205"
 
 ## <a name="per-user-and-administrative-extensions"></a>個別使用者和管理延伸模組
 
-大部分的擴充功能都是個別使用者，而且會安裝在 *%LocalAppData%\Microsoft\VisualStudio \\ < Visual Studio 版本 \> \extensions \\*  資料夾中。 一些延伸模組則是管理延伸模組，安裝於 *\<Visual Studio 安裝資料夾>\Common7\IDE\Extensions\\* 資料夾中。
+大部分的擴充功能都是個別使用者，而且會安裝在 *%LocalAppData%\Microsoft\VisualStudio\\< Visual Studio 版本\>\Extensions\\*  資料夾中。 一些延伸模組則是管理延伸模組，安裝於 *\<Visual Studio 安裝資料夾>\Common7\IDE\Extensions\\* 資料夾中。
 
 若要保護您的系統以避免可能包含錯誤或惡意程式碼的擴充功能，您可以限制只在使用一般使用者權限執行 Visual Studio 時才能載入個別使用者擴充功能。 這表示以較高的許可權執行 Visual Studio 時，會停用每個使用者的延伸模組。
 
 限制每個使用者擴充功能的載入時間：
 
-1. 開啟 [擴充功能選項] 頁面（[**工具**] [ > **選項**]  >  [**環境** > **延伸**模組）]
+1. 開啟 [擴充功能選項] 頁面（[**工具**] [ > **選項**] > [**環境** > **延伸**模組）]
 
 2. 清除 [**以系統管理員身分執行時載入每個使用者擴充**功能] 核取方塊。
 
@@ -182,13 +182,13 @@ ms.locfileid: "72654205"
 
 ::: moniker range="vs-2017"
 
-您可以使用 [工具] > [延伸模組和更新] 對話方塊來執行這些範例相關工作：
+您可以使用 **工具**> **擴充功能和更新** 對話方塊來執行這些範例相關工作：
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-您可以使用 [延伸模組] > [管理延伸模組] 對話方塊來執行這些範例相關工作：
+您可以使用 **擴充**功能 > **管理擴充**功能 對話方塊來執行這些範例相關工作：
 
 ::: moniker-end
 

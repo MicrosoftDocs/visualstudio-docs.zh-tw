@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：部署專案工作清單定義 |Microsoft Docs
+title: 逐步解說：將專案部署工作清單定義 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7ea7063ce432841e812312b7c7c36721a7d2d099
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0b7f1b0668af8218017c5cc96712384ed5f275c
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784209"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661879"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>逐步解說：部署專案工作清單定義
 
@@ -25,154 +25,154 @@ ms.locfileid: "62784209"
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 - 支援的 Microsoft Windows 和 SharePoint 版本。
 
-- Visual Studio 2017 或 Azure 的 DevOps 服務。
+- Visual Studio 2017 或 Azure DevOps Services。
 
 ## <a name="create-a-sharepoint-list"></a>建立 SharePoint 清單
 
 建立 SharePoint 清單專案，並將清單定義與工作產生關聯。
 
-1. 開啟**新的專案**對話方塊方塊中，展開**SharePoint**節點，然後選擇**2010年**節點。
+1. 開啟 [**新增專案**] 對話方塊，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
-2. 在 [**範本**] 窗格中，選擇**SharePoint 2010 專案**範本，將專案命名為**ProjectTaskList**，然後選擇 [ **[確定]**] 按鈕。
+2. 在 [**範本**] 窗格中，選擇 [ **SharePoint 2010] 專案**範本，將專案命名為**ProjectTaskList**，然後選擇 [**確定]** 按鈕。
 
-     **SharePoint 自訂精靈**隨即出現。
+     [ **SharePoint 自訂嚮導]** 隨即出現。
 
-3. 指定您用於偵錯的本機 SharePoint 網站選擇**部署為伺服陣列方案**選項按鈕，然後再選擇**完成** 按鈕。
+3. 指定用於進行偵錯工具的本機 SharePoint 網站，選擇 [**部署為數組方案**] 選項按鈕，然後選擇 [**完成]** 按鈕。
 
-4. 開啟專案的捷徑功能表，然後選擇**新增** > **新項目**。
+4. 開啟專案的快捷方式功能表，然後選擇 [**加入** > **新專案**]。
 
-5. 在**範本** 窗格中，選擇**清單**範本，然後選擇**新增** 按鈕。
+5. 在 [**範本**] 窗格中，選擇 [**清單**] 範本，然後選擇 [**新增**] 按鈕。
 
-     **SharePoint 自訂精靈**隨即出現。
+     [ **SharePoint 自訂嚮導]** 隨即出現。
 
-6. 在 **您想要讓清單顯示什麼名稱？** 方塊中，輸入**專案工作清單**。
+6. 在 [**您要為清單顯示什麼名稱？** ] 方塊中，輸入**Project 工作清單**。
 
-7. 選擇**建立不可自訂的清單，根據現有清單類型**選項按鈕，，然後在其清單中，選擇**工作**，然後選擇**完成** 按鈕。
+7. 選擇 [**根據現有的清單類型建立不可自訂的清單**] 按鈕，然後在其清單中**選擇 [工作]，然後**選擇 [**完成]** 按鈕。
 
-     會出現在清單、 功能和封裝**方案總管 中**。
+     清單、功能和套件會出現在**方案總管**中。
 
-## <a name="add-an-event-receiver"></a>加入事件接收器
+## <a name="add-an-event-receiver"></a>新增事件接收器
 
-在工作清單中，您可以加入事件接收器，以便自動設定工作的到期日和描述。 下列程序會做為事件接收者，將簡單的事件處理常式加入至清單執行個體。
+在工作清單中，您可以加入事件接收器，以便自動設定工作的到期日和描述。 下列程式會將簡單的事件處理常式加入至清單實例，做為事件接收器。
 
-1. 開啟專案節點的捷徑功能表，選擇 **新增**，然後選擇**新項目**。
+1. 開啟專案節點的快捷方式功能表，選擇 [**加入**]，然後選擇 [**新增專案**]。
 
-2. 在 SharePoint 範本清單中，選擇**事件接收器**範本，並將它命名**ProjectTaskListEventReceiver**。
+2. 在 SharePoint 範本清單中，選擇 [**事件接收器**] 範本，然後將它命名為**ProjectTaskListEventReceiver**。
 
-     **SharePoint 自訂精靈**隨即出現。
+     [ **SharePoint 自訂嚮導]** 隨即出現。
 
-3. 在上**選擇事件接收器設定**頁面上，選擇**清單項目事件**作為中的事件接收器類型**您要何種類型的事件接收器**清單。
+3. 在 [**選擇事件接收器設定**] 頁面上，選擇 [**清單專案事件**] 做為事件接收器類型，在 [**您要哪一種類型的事件接收器？** ] 清單中。
 
-4. 在 **何種項目應該做為事件來源**清單中，選擇**工作**。
+4. 在 [**哪個專案應該是事件來源**] 清單中，**選擇 [** 工作]。
 
-5. 在要處理的事件清單中，選取核取方塊旁**項目已加入**，然後選擇**完成** 按鈕。
+5. 在 [要處理的事件清單] 中，選取 [**已加入專案**] 旁的核取方塊，然後選擇 [**完成]** 按鈕。
 
-     新的事件接收器節點，會使用名為的程式碼檔案加入至專案**ProjectTaskListEventReceiver**。
+     新的事件接收器節點會加入至專案，其中包含名為**ProjectTaskListEventReceiver**的程式碼檔案。
 
-6. 將程式碼加入`ItemAdded`方法中的**ProjectTaskListEventReceiver**程式碼檔案。 每次加入新的工作，就會到期日] 和 [描述預設值新增至工作。 由於預設日期是 2009 年 7 月 1 日。
+6. 將程式碼新增至**ProjectTaskListEventReceiver**程式碼檔案中的 `ItemAdded` 方法。 每次加入新的工作時，就會將預設的到期日和描述新增至工作。 預設到期日為2009年7月1日。
 
      [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
      [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
 
 ## <a name="customize-the-project-task-list-feature"></a>自訂專案工作清單功能
 
-當您建立 SharePoint 方案時，Visual Studio 會自動建立預設的功能的專案項目。 您可以使用功能設計工具中自訂 SharePoint 網站的專案工作清單設定。
+當您建立 SharePoint 方案時，Visual Studio 會自動建立預設專案專案的功能。 您可以使用 [功能設計工具] 自訂 SharePoint 網站的 [專案工作清單] 設定。
 
-1. 在 **方案總管**，展開**功能**。
+1. 在**方案總管**中，展開 [**功能**]。
 
-2. 開啟捷徑功能表**Feature1**，然後選擇**檢視表設計工具**。
+2. 開啟**Feature1**的快捷方式功能表，然後選擇 [ **View Designer**]。
 
-3. 在 **標題**方塊中，輸入**專案工作清單功能**。
+3. 在 [**標題**] 方塊中，輸入**Project 工作清單功能**。
 
-4. 在 **領域**清單中，選擇**Web**。
+4. 在 [**範圍**] 清單中，選擇 [ **Web**]。
 
-5. 在 [**屬性**] 視窗中，輸入**1.0.0.0**做為值**版本**屬性。
+5. 在 [**屬性**] 視窗中，輸入**1.0.0.0**作為 [**版本**] 屬性的值。
 
-## <a name="customize-the-project-task-list-package"></a>自訂專案工作清單中的封裝
+## <a name="customize-the-project-task-list-package"></a>自訂專案工作清單封裝
 
-當您建立 SharePoint 專案時，Visual Studio 會自動加入包含預設專案項目加入封裝的功能。 您可以使用封裝設計工具自訂 SharePoint 網站的專案工作清單設定。
+當您建立 SharePoint 專案時，Visual Studio 會自動將包含預設專案專案的功能加入至封裝。 您可以使用 [封裝設計工具] 自訂 SharePoint 網站的專案工作清單設定。
 
-1. 在  **SolutionExplorer**，開啟捷徑功能表**封裝**，然後選擇 **檢視表設計工具**。
+1. 在 [ **SolutionExplorer**] 中，開啟 [**封裝**] 的快捷方式功能表，然後選擇 [**視圖設計**工具]。
 
-2. 在 **名稱**方塊中，輸入**ProjectTaskListPackage**。
+2. 在 [**名稱**] 方塊中，輸入**ProjectTaskListPackage**。
 
-3. 選取 **重設 Web 伺服器**核取方塊。
+3. 選取 [**重設網頁伺服器**] 核取方塊。
 
-## <a name="build-and-test-the-project-task-list"></a>建置和測試專案工作清單
+## <a name="build-and-test-the-project-task-list"></a>建立和測試專案工作清單
 
-當您執行專案時，會開啟 SharePoint 網站。 不過，您必須以手動方式瀏覽至工作清單的位置。
+當您執行專案時，SharePoint 網站隨即開啟。 不過，您必須手動流覽至工作清單的位置。
 
-1. 選擇**F5**建置和部署專案工作清單的索引鍵。
+1. 選擇**F5**鍵以建立和部署您的專案工作清單。
 
      SharePoint 網站隨即開啟。
 
-2. 選擇**首頁** 索引標籤。
+2. 選擇 [**首頁**] 索引標籤。
 
-3. 在左提要欄位中，選擇**專案工作清單**連結。
+3. 在左側邊欄中，選擇 [**專案工作清單**] 連結。
 
-     專案工作清單 頁面隨即出現。
+     [專案工作清單] 頁面隨即出現。
 
-4. 在 [**清單工具**索引標籤上，選擇**項目**] 索引標籤。
+4. 在 [**清單工具**] 索引標籤中，選擇 [**專案**] 索引標籤。
 
-5. 在 [**項目**群組中，選擇**新項目**] 按鈕。
+5. 在 [**專案**] 群組中，選擇 [**新增專案**] 按鈕。
 
-6. 在 **標題**文字方塊中，輸入**Task1**。
+6. 在 [**標題**] 文字方塊中，輸入**Task1**。
 
-7. 選擇**儲存** 按鈕。
+7. 選擇 [**儲存**] 按鈕。
 
-     站台會重新整理之後， **Task1**工作會顯示 2009 年 7 月 1 日到期日。
+     重新整理網站之後， **Task1**工作會顯示，且到期日為7/1/2009。
 
-8. 選擇**Task1**。
+8. 選擇 [ **Task1**]。
 
-     工作的詳細的檢視隨即出現，並描述可讓您顯示 「 這是重要的工作 」。
+     工作的詳細觀點隨即出現，且描述會顯示「這是重要工作」。
 
 ## <a name="deploy-the-project-task-list"></a>部署專案工作清單
 
-您建置和測試專案工作清單之後，您可以部署它*本機系統*或是*遠端系統*。 在本機系統是您用以開發方案，在同一部電腦，而遠端系統為不同的電腦。
+建立並測試專案工作清單之後，您可以將它部署到*本機系統*或*遠端系統*。 本機系統是您開發解決方案所在的同一部電腦，而遠端系統則是不同的電腦。
 
-### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>若要部署到本機系統的專案工作清單
+### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>將專案工作清單部署至本機系統
 
-在 Visual Studio 功能表列上選擇 **建置** > **部署方案**。
+在 [Visual Studio] 功能表列上，選擇 [**組建** > **部署方案**]。
 
-Visual Studio 回收 IIS 應用程式集區、 撤銷方案的任何現有版本，將複製的方案套件 (*.wsp*) 到 SharePoint 的檔案，然後再啟動它的功能。 您現在可以在 SharePoint 中使用的解決方案。 如需有關部署組態步驟的詳細資訊，請參閱[How to:編輯 SharePoint 部署組態](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)。
+Visual Studio 回收 IIS 應用程式集區、撤銷任何現有的方案版本、將方案套件（ *.wsp*）檔案複製到 SharePoint，然後啟動其功能。 您現在可以在 SharePoint 中使用此方案。 如需部署設定步驟的詳細資訊，請參閱[如何：編輯 SharePoint 部署](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)設定。
 
-### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>若要部署到遠端系統的專案工作清單
+### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>將專案工作清單部署到遠端系統
 
-1. 在 Visual Studio 功能表列上選擇 **建置** > **發行**。
+1. 在 [Visual Studio] 功能表列上，選擇 [**組建** > **發行**]。
 
-2. 在 **發佈**對話方塊方塊中，選擇**發行至檔案系統**選項按鈕。
+2. 在 [**發行**] 對話方塊中，選擇 [**發行至檔案系統**] 選項按鈕。
 
-     您可以變更的目標位置**發佈**對話方塊中，選擇省略符號按鈕![省略符號圖示](../sharepoint/media/ellipsisicon.gif "省略符號圖示")，然後巡覽至另一個位置。
+     您可以選擇省略號按鈕![省略號圖示](../sharepoint/media/ellipsisicon.gif "省略符號圖示")，然後流覽至另一個位置，以變更 [**發行**] 對話方塊中的目標位置。
 
-3. 選擇**發佈** 按鈕。
+3. 選擇 [**發行**] 按鈕。
 
-     A *.wsp*方案建立檔案。
+     隨即會為方案建立 *.wsp*檔案。
 
-4. 複製 *.wsp*遠端 SharePoint 系統的檔案。
+4. 將 *.wsp*檔案複製到遠端 SharePoint 系統。
 
-5. 使用 PowerShell`Add-SPUserSolution`命令，以將套件安裝在遠端 SharePoint 安裝。 (用於陣列方案`Add-SPSolution`命令。)
+5. 使用 PowerShell `Add-SPUserSolution` 命令，將套件安裝在遠端 SharePoint 安裝上。 （如果是伺服器陣列方案，請使用 `Add-SPSolution` 命令）。
 
-     例如， `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp` 。
+     例如，`Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`。
 
-6. 使用 PowerShell`Install-SPUserSolution`命令來部署解決方案。 (用於陣列方案`Install-SPSolution`命令。)
+6. 使用 PowerShell `Install-SPUserSolution` 命令來部署解決方案。 （如果是伺服器陣列方案，請使用 `Install-SPSolution` 命令）。
 
-     例如， `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName` 。
+     例如，`Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`。
 
-     如需有關遠端部署的詳細資訊，請參閱[使用的解決方案](http://go.microsoft.com/fwlink/?LinkId=217680)並[加入和部署的方案，在 SharePoint 2010 中使用 PowerShell](http://go.microsoft.com/fwlink/?LinkId=217682)。
+     如需遠端部署的詳細資訊，請參閱在 SharePoint 2010 中[使用解決方案](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14))，以及使用[PowerShell 新增和部署解決方案](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx)。
 
 ## <a name="next-steps"></a>後續步驟
 
-您可以深入了解如何自訂和部署 SharePoint 方案，從下列主題：
+您可以從下列主題深入瞭解如何自訂和部署 SharePoint 方案：
 
-- [逐步解說：建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
+- [逐步解說：建立 SharePoint 的網站資料行、內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
 - [如何：建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)
 
-- [Windows PowerShell for SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=217684)
+- [適用于 SharePoint Server 2010 的 Windows PowerShell](/powershell/module/sharepoint-server)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

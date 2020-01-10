@@ -6,14 +6,15 @@ ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979675"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778267"
 ---
 # <a name="start"></a>啟動
 **Start** 選項是一個 *VSPerfCmd.exe* 選項，可將分析工具初始化為指定的分析方法。
@@ -38,14 +39,14 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>必要選項
  在命令列上指定 **Start** 時，務必要指定 **Output** 選項。
 
- **輸出：**`filename` 指定輸出檔名稱。
+ **輸出：** `filename` 指定輸出檔名稱。
 
 ## <a name="exclusive-options"></a>專屬選項
  在命令列上，下列選項只能和 **Start** 選項一起使用。
 
  **CrossSession**&#124;**CS** 啟用跨處理序分析。 支援 **CrossSession** 和 **CS** 這兩個選項名稱。
 
- **User:**[`domain\`]`username` 可讓用戶端透過指定的帳戶存取監視器。
+ **User:** [`domain\`]`username` 可讓用戶端透過指定的帳戶存取監視器。
 
  **WinCounter:** `Path` [**Automark**:`n`] **WinCounter** 可指定 Windows 效能計數器，作為標記包含在分析資料檔案中。 **AutoMark** 以毫秒指定資料檔案之間的收集間隔。
 
@@ -54,7 +55,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **Status** **Status** 適用於已分析的那些處理序。 其會列出處理序和執行緒，以及其目前的分析狀態 (開啟/關閉)。 例如，如果已停止處理序，**Status** 並不會在報表中指出這點。 **Status** 會顯示該處理序是否已進行程式碼剖析。
 
- **Shutdown**[**:**`Timeout`] 關閉分析工具。
+ **Shutdown**[ **:** `Timeout`] 關閉分析工具。
 
 ## <a name="example"></a>範例
  下列範例示範如何使用 *VSPerfCmd.exe* **Start** 選項來初始化分析工具。
@@ -64,7 +65,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)

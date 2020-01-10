@@ -1,5 +1,5 @@
 ---
-title: DA0024：過度的記憶體回收 CPU 時間 | Microsoft Docs
+title: DA0024：過多 GC CPU 時間 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,20 +13,20 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d40377c28e0987ac902ab8aa5cf778715eb899cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e0414e8bc4b5789f08751749b52f870c7c5e5167
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435843"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300096"
 ---
-# <a name="da0024-excessive-gc-cpu-time"></a>DA0024：超過 GC CPU 時間
+# <a name="da0024-excessive-gc-cpu-time"></a>DA0024：過多 GC CPU 時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則 Id |DA0024 |  
-|類別目錄 |.NET Framework 使用方式 |  
-|程式碼剖析方法 |所有 |  
-|訊息 | %Time in GC 是非常高。 有過量的記憶體回收額外負荷。|  
+規則識別碼 |DA0024 |  
+|Category |。NET Framework 使用方式 |  
+|程式碼剖析方法 |全部 |  
+|訊息 |% Time in GC 非常高。 有過量的記憶體回收額外負荷。|  
 |規則類型 |警告 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
@@ -42,9 +42,9 @@ ms.locfileid: "63435843"
  相較於應用程式總處理時間，當花費在記憶體回收的時間量過高時，就會引發此規則。  
   
 > [!NOTE]
-> 相較於應用程式總處理時間，當有很高比例但不過高的時間花費在記憶體回收時，則會引發 [DA0023：高記憶體回收 CPU 時間](../profiling/da0023-high-gc-cpu-time.md)警告而不是此規則。  
+> 相較於應用程式總處理時間，當有很高比例但不過高的時間花費在記憶體回收時，則會引發 [DA0023︰高 GC CPU 時間](../profiling/da0023-high-gc-cpu-time.md)警告而不是此規則。  
   
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
- 按兩下 [錯誤清單] 視窗中的訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。 尋找 **.NET CLR Memory\\% Time in GC** 欄。 判斷是否有特定的程式執行階段，當中的 Managed 記憶體回收負荷比其他階段還繁重。 比較 % Time in GC 的值與在 **# of Gen 0 Collections**、**# of Gen 1 Collections**、**# of Gen 2 Collections** 值中報告的記憶體回收速率。  
+ 按兩下 [錯誤清單] 視窗中的訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。 尋找 **.NET CLR Memory\\% Time in GC** 欄。 判斷是否有特定的程式執行階段，當中的 Managed 記憶體回收負荷比其他階段還繁重。 比較 % Time in GC 的值與在 **# of Gen 0 Collections**、 **# of Gen 1 Collections**、 **# of Gen 2 Collections** 值中報告的記憶體回收速率。  
   
- % Time in GC 值會嘗試報告應用程式花費在執行記憶體回收的時間量與處理總量成比例的時間。 請注意，有時候 % Time in GC 值可能會報告非常高的值，但不是因為有過多記憶體回收。 如需 % Time in GC 值計算方式的詳細資訊，請參閱 MSDN 上 **Maoni 部落格**的[不同工具報告的效能資料之間的差異 – 4 (英文)](http://go.microsoft.com/fwlink/?LinkId=177863) 文章。 如果發生分頁錯誤或應用程式在記憶體回收期間由電腦上其他較高優先順序的工作優先佔用，% Time in GC 計數器會反映這些額外的延遲。
+ % Time in GC 值會嘗試報告應用程式花費在執行記憶體回收的時間量與處理總量成比例的時間。 請注意，有時候 % Time in GC 值可能會報告非常高的值，但不是因為有過多記憶體回收。 如需 % Time in GC 值計算方式的詳細資訊，請參閱 MSDN 上 [Maoni 部落格](https://go.microsoft.com/fwlink/?LinkId=177863)的**不同工具報告的效能資料之間的差異 – 4 (英文)** 文章。 如果發生分頁錯誤或應用程式在記憶體回收期間由電腦上其他較高優先順序的工作優先佔用，% Time in GC 計數器會反映這些額外的延遲。

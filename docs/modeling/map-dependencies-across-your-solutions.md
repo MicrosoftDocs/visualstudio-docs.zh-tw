@@ -11,17 +11,17 @@ helpviewer_keywords:
 - code visualization [Visual Studio]
 - dependencies, visualizing
 - dependency graphs
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ecc8ae714dfb35281029a9d6e240a148e7c9511
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 45fb9b1a08dc54257f24f469d3a717b82faccf45
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913349"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661549"
 ---
 # <a name="map-dependencies-with-code-maps"></a>對應程式碼對應的相依性
 
@@ -38,7 +38,7 @@ ms.locfileid: "70913349"
 
 - 方案C#或元件（ *.dll*或 *.exe*）中的視覺效果或 Visual Basic
 
-- 原生或 managed C C++或 Visual C++專案中的程式碼、標頭檔（ `#include` *.h*或）或二進位檔
+- Visual C++專案中的原C++生或 managed C 或程式碼、標頭檔（ *.h*或 `#include`）或二進位檔
 
 - 由 .NET 模組製作的 Microsoft Dynamics AX X++ 專案和組件
 
@@ -49,7 +49,7 @@ ms.locfileid: "70913349"
 
 若要在 Visual Studio 中建立 Code Map，請先安裝**Code map**和**Live Dependency 驗證**元件：
 
-1. 開啟**Visual Studio 安裝程式**。 您可以從 Windows 的 [開始] 功能表開啟它，或選取 [**工具** > ] [**取得工具和功能**]，在 Visual Studio
+1. 開啟**Visual Studio 安裝程式**。 您可以從 Windows 的 [開始] 功能表開啟它，或選取 [**工具**]  >  [**取得工具和功能**]，在 Visual Studio
 
 1. 選取 [個別元件] 索引標籤。
 
@@ -78,13 +78,13 @@ ms.locfileid: "70913349"
 
    您方案的 [**方案專案**] 資料夾中會出現空白對應。
 
-同樣地，您可以藉由選取[**架構** > ] > [**新增程式碼對應** **] 或 [** 檔案] [**新增** > 檔案]，建立新的 Code Map 檔案，而不將它加入
+同樣地，您可以建立新的 Code Map 檔案，而不將其新增至您的方案，方法是選取 [**架構**]  > **新的 Code map**或**file**  > **新** **的  >  檔案**。
 
 ## <a name="generate-a-code-map-for-your-solution"></a>為您的解決方案產生 Code Map
 
 若要查看方案中的所有相依性：
 
-1. 在功能表列上，選擇 [**架構** > ] [**產生方案的 Code Map**]。 如果您的程式碼在上一次建立之後未曾變更，您可以選取 [**架構** > ] [**產生方案的 code Map]，而不需要建立**。
+1. 在功能表列上，選擇 [**架構**]  >  [**產生方案的 Code Map**]。 如果您的程式碼在上一次建立之後未曾變更，您可以選取 [**架構**]  > **產生方案的 code Map，而不需要建立**。
 
    ![產生程式碼對應命令](../modeling/media/codemapsarchitecturemenu.png)
 
@@ -162,7 +162,7 @@ ms.locfileid: "70913349"
 
    ![選取您要對應的項目](../modeling/media/codemapsselectinsolutionexplorer.png)
 
-1. 在**方案總管 中**工具列上，選擇**Code Map 上顯示**![建立新圖表中選取節點 按鈕](../modeling/media/createnewgraphfromselectedbutton.gif)。 或者，開啟一個或一組專案的快捷方式功能表，然後選擇 [**在 Code Map 上顯示**]。
+1. 在 [**方案總管**] 工具列上，選擇 [**在 Code Map 上顯示**]，![Create [從選取的節點新增圖形] 按鈕 ](../modeling/media/createnewgraphfromselectedbutton.gif)。 或者，開啟一個或一組專案的快捷方式功能表，然後選擇 [**在 Code Map 上顯示**]。
 
    您也可以將專案從 [**方案總管**]、[**類別檢視**] 或 [**物件瀏覽器**] 拖曳至[新](#add-a-code-map)的或現有的 Code Map。 若要包含專案的父階層，請在拖曳專案時按住**Ctrl**鍵，或使用 [Code Map] 工具列上的 [**包含父代**] 按鈕，指定預設動作。 您也可以從外部 Visual Studio （例如從**Windows Explorer**）拖曳元件檔。
 
@@ -177,13 +177,13 @@ ms.locfileid: "70913349"
 
    ![展開 Code Map 中的節點](../modeling/media/dependencygraph_containment.png)
 
-   若要展開所有專案，請使用**Ctrl** + **A**選取它們，然後開啟對應的快捷方式功能表並選擇 [**群組** > **展開**]。 不過，如果展開所有群組會產生無法使用的對應或記憶體問題，則無法使用此選項。
+   若要展開所有專案，請使用**Ctrl** +**A**選取它們，然後開啟對應的快捷方式功能表，並選擇 [**群組** > **展開**]。 不過，如果展開所有群組會產生無法使用的對應或記憶體問題，則無法使用此選項。
 
 5. 如有需要，請繼續展開您感興趣的專案，向下到類別和成員層級。
 
    ![將群組展開至類別與成員](../modeling/media/codemapsexpandtoclassandmember.png)
 
-   若要查看程式碼中的成員，但不會出現在對應上，請按一下群組![左上角的](../modeling/media/dependencygraph_deletednodesicon.png) [**重新擷取子**系] 圖示重新擷取子系圖示。
+   若要查看程式碼中的成員，但不會顯示在地圖上，請按一下 [**重新擷取子**系] 圖示，![Refetch 群組左上角的 [子系] 圖示 ](../modeling/media/dependencygraph_deletednodesicon.png)。
 
 6. 若要查看與對應上之項目相關的其他項目，請選取一個，在 Code Map 工具列上選擇 [顯示相關] ，然後選取要加入對應的相關項目類型。 或者，選取一個或多個專案，開啟快捷方式功能表，然後針對要加入對應的相關專案類型選擇 [**顯示**] 選項。 例如：
 
@@ -228,7 +228,7 @@ ms.locfileid: "70913349"
 
     ![顯示此成員呼叫的方法](../modeling/media/codemapsshowrelatedmethods.png)
 
-7. 對應會顯示關聯性。 在此範例中，地圖會顯示`Find`方法所呼叫的方法，以及它們在方案或外部的位置。
+7. 對應會顯示關聯性。 在此範例中，地圖會顯示 `Find` 方法所呼叫的方法，以及它們在方案或外部的位置。
 
    ![顯示與 Code Map 之間的相依性](../modeling/media/codemapsspecificdependenciesintro.png)
 
@@ -238,7 +238,7 @@ ms.locfileid: "70913349"
 
 ## <a name="see-also"></a>另請參閱
 
-- [影片：利用 Visual Studio 2015 code map 瞭解程式碼的設計](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
+- [影片：瞭解使用 Visual Studio 2015 code map 的程式碼設計 ](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)
 - [在偵錯時於呼叫堆疊上對應方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)

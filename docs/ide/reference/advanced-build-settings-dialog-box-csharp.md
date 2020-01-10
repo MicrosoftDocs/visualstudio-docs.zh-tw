@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78817f65197c2dd295a6f2202f913c48b54e1ed9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f25f9d96cd8de8dcb140c79c7dfb3a7a5981986c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748810"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595848"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>[高級組建設定] 對話方塊C#（）
 
@@ -62,7 +62,7 @@ ms.locfileid: "72748810"
 
 **偵錯資訊**
 
-指定編譯器所產生的偵錯資訊類型。 如需如何設定應用程式效能偵錯的資訊，請參閱[使映像偵錯更容易](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug)。 此設定具有下列選項：
+指定編譯器所產生的偵錯資訊類型。 如需如何設定應用程式效能偵錯的資訊，請參閱[使映像偵錯更容易](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug)。 此設定具有以下選項：
 
 - **none**
 

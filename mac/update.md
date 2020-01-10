@@ -1,17 +1,17 @@
 ---
 title: 更新 Visual Studio for Mac
 description: 更新 Visual Studio for Mac 以及存取預覽版本的指示。
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 383bf38b26b4961df61dca2a1bf1d4efda335d81
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: ccfcf04816727800501dada64e73d6ce35876674
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211506"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984548"
 ---
 # <a name="update-visual-studio-for-mac"></a>更新 Visual Studio for Mac
 
@@ -56,6 +56,6 @@ Visual Studio for Mac 提供兩個通道來取得這些最新版本：
 
 如果您遇到更新程式的問題，請嘗試遵循[更新程式疑難排解](updater-troubleshooting.md)指南中的步驟。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [更新 Visual Studio (Windows 上)](/visualstudio/install/update-visual-studio)

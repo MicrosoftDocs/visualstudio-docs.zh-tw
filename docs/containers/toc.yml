@@ -36,7 +36,7 @@
           href: container-tools-configure.md
     - name: 概念
       items:
-        - name: 建置容器化應用程式
+        - name: Visual Studio 如何建置容器化應用程式
           href: container-build.md
     - name: 疑難排解
       href: troubleshooting-docker-errors.md

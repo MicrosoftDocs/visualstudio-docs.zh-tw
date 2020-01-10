@@ -4,17 +4,17 @@ ms.date: 08/31/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5b136c91873c0af60705ea361a19e53f28e06b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 748dfc592fbf7a3b9737e9f418362067b92bb8ff
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653048"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594288"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Live Unit Testing 的使用者入門
 
@@ -24,7 +24,7 @@ Live Unit Testing 可以用來測試以 .NET Framework 或 .NET Core 為目標�
 
 您可以從 GitHub 的 [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) 存放庫下載完整 C# 方案。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 本教學課程需要您已安裝具有 **.Net Core 跨平臺開發**工作負載的 Visual Studio Enterprise edition。
 
@@ -144,13 +144,13 @@ Live Unit Testing 可以用來測試以 .NET Framework 或 .NET Core 為目標�
 
    ![選擇 UTF-8 編碼](media/lut-start/utf8-encoding.png)
 
-10. 從最上層的 Visual Studio 功能表，選取 [建置]  >  [重建方案]，以編譯單元測試專案。
+10. 從最上層的 Visual Studio 功能表，選取 [建置] >  [重建方案]，以編譯單元測試專案。
 
 您已為其建立類別庫以及一些單元測試。 您現在已完成使用 Live Unit Testing 所需的準備工作。
 
 ## <a name="enable-live-unit-testing"></a>啟用 Live Unit Testing
 
-到目前為止，雖然您已撰寫 StringLibrary 類別庫的測試，但尚未執行。 Live Unit Testing 會在啟用之後自動執行它們。 若要這麼做，請執行下列作業：
+到目前為止，雖然您已撰寫 StringLibrary 類別庫的測試，但尚未執行。 Live Unit Testing 會在啟用之後自動執行它們。 若要這樣做，請執行以下動作：
 
 1. （選擇性）選取包含 StringLibrary 程式碼的程式碼視窗。 這是 *Class1.cs* (適用於 C# 專案) 或 *Class1.vb* (適用於 Visual Basic 專案) （此步驟可讓您在啟用 Live Unit Testing 之後，以視覺化方式檢查測試結果和程式碼涵蓋範圍的範圍）。
 

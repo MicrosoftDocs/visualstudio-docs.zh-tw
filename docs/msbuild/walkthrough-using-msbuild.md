@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445303"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567290"
 ---
 # <a name="walkthrough-use-msbuild"></a>逐步解說：使用 MSBuild
 
@@ -40,12 +40,12 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
     ::: moniker range=">=vs-2019"
     按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **winforms**，然後選擇 [建立新的 Windows Forms App (.NET Framework)]。 在出現的對話方塊中選擇 [建立]。
 
-    在 [名稱]  方塊中，輸入 `BuildApp`。 輸入方案的 [位置]，例如 *D:\\*。 接受預設的 [解決方案]、[解決方案名稱] \(**BuildApp**\) 和 [架構]。
+    在 [名稱] 方塊中，輸入 `BuildApp`。 輸入方案的 [位置]，例如 *D:\\* 。 接受預設的 [解決方案]、[解決方案名稱] \(**BuildApp**\) 和 [架構]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#] > [Windows Desktop]，然後選擇 [Windows Forms App (.NET Framework)]。 然後選擇 [確定]。
+    從頂端功能表列中，選擇 [檔案] >  [新增] >  [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#] > [Windows Desktop]，然後選擇 [Windows Forms App (.NET Framework)]。 然後選擇 [確定]。
 
-    在 [名稱]  方塊中，輸入 `BuildApp`。 輸入方案的 [位置]，例如 *D:\\*。 接受 [為方案建立目錄] (已選取)、[加入至原始檔控制] (未選取) 及 [方案名稱] (**BuildApp**) 的預設值。
+    在 [名稱] 方塊中，輸入 `BuildApp`。 輸入方案的 [位置]，例如 *D:\\* 。 接受 [為方案建立目錄] (已選取)、[加入至原始檔控制] (未選取) 及 [方案名稱] (**BuildApp**) 的預設值。
     ::: moniker-end
 
 1. 按一下 [確定] 或 [建立] 來建立專案檔。
@@ -255,7 +255,7 @@ $(PropertyName)
 
 ### <a name="reserved-properties"></a>保留的屬性
 
- MSBuild 保留一些屬性名稱來儲存專案檔和 MSBuild 二進位檔案的相關資訊。 MSBuildToolsPath 是保留的屬性範例。 保留的屬性是使用 $ 標記法來參考，如同任何其他屬性。 如需詳細資訊，請參閱[如何：參考專案檔的名稱或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和已知的屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
+ MSBuild 保留一些屬性名稱來儲存專案檔和 MSBuild 二進位檔案的相關資訊。 MSBuildToolsPath 是保留的屬性範例。 保留的屬性是使用 $ 標記法來參考，如同任何其他屬性。 如需詳細資訊，請參閱[如何：參考專案檔的名稱或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
 
 ### <a name="environment-variables"></a>環境變數
 
@@ -324,7 +324,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 </ItemGroup>
 ```
 
- 定義一個包含兩個項目的項目群組。 Compile 項目類型有兩個值：*Program.cs* 和 *Properties\AssemblyInfo.cs*。
+ 定義一個包含兩個項目的項目群組。 Compile 項目類型具有兩個值：*Program.cs* 和 *Properties\AssemblyInfo.cs*。
 
  下列程式碼會在一個 Include 屬性中宣告這兩個檔案 (以分號分隔)，藉以建立相同的項目類型。
 
@@ -444,7 +444,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- 將副檔名為 *.cs* 的所有檔案加入至 Compile 項目類型，但名稱包含 *Designer* 字串的檔案除外。 如需更多範例，請參閱[如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。
+ 將副檔名為 *.cs* 的所有檔案加入至 Compile 項目類型，但名稱包含 *Designer* 字串的檔案除外。 如需更多範例，請參閱[如何︰從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。
 
 Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Include 屬性所加入的項目 (Item)。 例如，套用至物件的
 
@@ -600,9 +600,9 @@ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Includ
 
 ## <a name="whats-next"></a>後續步驟
 
- 若要了解如何逐步建立簡單的專案檔，請嘗試[逐步解說︰從頭建立 MSBuild 專案檔案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。
+ 若要了解如何逐步建立簡單的專案檔，請嘗試[逐步解說︰從頭開始建立 MSBuild 專案檔](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [MSBuild 概觀](../msbuild/msbuild.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

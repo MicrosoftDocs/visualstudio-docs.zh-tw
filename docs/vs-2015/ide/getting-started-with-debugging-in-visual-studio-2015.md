@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 08e317555042bbc63707cc6eccd0177e78b6ddcc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fe8b158fd870b83b39b9d316e68582f2726d89bb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645671"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300194"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015 中的偵錯入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,7 +170,7 @@ Visual Studio 2015 提供一組強大的整合式專案建置和偵錯工具。 
 
  ![Visual Studio 2015 條件式中斷點](../ide/media/vs-ide-gs-debug-breakpoint-conditional.PNG "|::ref23::|")
 
- 如需宣告運算式用於評估條件中斷點之方式的詳細資料，請觀看 Channel9 的影片 [Breakpoint Configuration Experience in Visual Studio 2015](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) (Visual Studio 2015 的中斷點組態體驗)。
+ 如需宣告運算式用於評估條件中斷點之方式的詳細資料，請觀看 Channel9 的影片 [Breakpoint Configuration Experience in Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) (Visual Studio 2015 的中斷點組態體驗)。
 
 ### <a name="inspecting-your-code-at-run-time"></a>在執行階段檢查您的程式碼
  當您執行的程式碼叫用中斷點而且中止時，您可以檢查變數和呼叫堆疊來判斷發生了什麼狀況。 這些是在您預期會看見的範圍內的值嗎？ 呼叫的順序正確嗎？

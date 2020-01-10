@@ -3,41 +3,41 @@ title: MSBuild 字彙表
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0b5feaa70a79a534af45c67e61b300feb1188bf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c3d5f9e402750978b1201c6b2a5b1ef0659e8789
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926349"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593664"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 字彙表
 
 這些詞彙可用來說明 Microsoft Build Engine (MSBuild) 及其元件。
 
-## <a name="glossary"></a>字彙表
+## <a name="glossary"></a>字彙
 
 AssemblyFoldersEx\
 一個登錄位置，協力廠商可在其中儲存每個架構版本的路徑，而他們支援設計階段的解決方案可期望在這些架構路徑中找到參考組件。
 
 批次處理\
-批次處理表示會根據項目中繼資料，將項目分割成不同的類別 (稱為「批次」  )，然後使用每個批次一次執行一或多個目標。 MSBuild 批次處理相當於 for 迴圈建構。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。
+批次處理表示會根據項目中繼資料，將項目分割成不同的類別 (稱為「批次」)，然後使用每個批次一次執行一或多個目標。 MSBuild 批次處理相當於 for 迴圈建構。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。
 
 建置範圍\
 建置範圍會說明一個 MSBuild 物件 (例如，全域屬性)，而專案及多專案組建中所建立的任何子專案可能會看見此物件。
 
 子專案\
-請參閱＜專案，子系＞  。
+請參閱＜專案，子系＞。
 
 條件\
 您可以有條件地定義許多 MSBuild 項目，也就是，項目中會出現 `Condition` 屬性。 除非條件判斷值為 `true`，否則會忽略條件式項目的內容。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。
 
 定義，項目\
-請參閱＜項目定義＞  。
+請參閱＜項目定義＞。
 
 發出項目\
 在組建的執行階段，可以透過具有子系 `Output` 項目 (Element) (內含 `ItemName` 屬性) 的工作來建立或修改項目 (Item)。 此工作即稱為「發出」新的項目。
@@ -52,13 +52,13 @@ AssemblyFoldersEx\
 執行是專案建置的第二個階段。 此階段會建置所選取的目標並執行工作。 相較於屬性和項目的評估值，可建立或修改它們。
 
 函式，屬性\
-請參閱＜屬性函式＞  。
+請參閱＜屬性函式＞。
 
 函式，項目\
 請參閱＜項目函式＞。
 
 項目\
-項目 (Item) 是建置系統的輸入，會根據它們的項目 (Element) 名稱分組到項目 (Item) 類型。 項目通常代表檔案。 由於項目是根據其所屬的項目類型來命名，因此可交換使用「項目」  和「項目值」  等詞彙。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
+項目 (Item) 是建置系統的輸入，會根據它們的項目 (Element) 名稱分組到項目 (Item) 類型。 項目通常代表檔案。 由於項目是根據其所屬的項目類型來命名，因此可交換使用「項目」和「項目值」等詞彙。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
 項目定義\
 項目定義群組包含要將預設中繼資料加入任何項目類型的項目定義。 如同已知的中繼資料，預設的中繼資料會與指定項目類型的所有項目相關聯。 您可以在項目定義中明確覆寫預設的中繼資料。 如需詳細資訊，請參閱[項目定義](../msbuild/item-definitions.md)。
@@ -67,7 +67,7 @@ AssemblyFoldersEx\
 項目函式會在專案中取得項目的相關資訊。 這些函式會簡化取得 Distinct() 項目的方式，速度比執行項目迴圈還快。 有一些函式可用來管理項目路徑和字串。 如需詳細資訊，請參閱 [Item 函式](../msbuild/item-functions.md)。
 
 項目中繼資料\
-請參閱＜中繼資料，項目＞  。
+請參閱＜中繼資料，項目＞。
 
 項目類型\
 項目類型是具名的項目清單，可用來做為工作的參數。 工作會使用項目值來執行建置程序的步驟。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
@@ -131,7 +131,7 @@ MSBuild 工作會在專案建置期間建立子專案。 這個新的專案是�
 在設計階段用來建立應用程式的組件。 您可以從參考組件中移除實際的程式碼和私用介面，僅留下中繼資料和公用介面。
 
 登錄屬性\
-請參閱＜屬性，登錄＞  。
+請參閱＜屬性，登錄＞。
 
 目標\
 目標會以特殊順序將工作分組，並公開專案檔的區段做為建置程序的進入點。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。
@@ -167,8 +167,8 @@ MSBuild 工作會在專案建置期間建立子專案。 這個新的專案是�
 轉換是從一個項目集合到另一個的一對一轉換。 除了啟用專案來轉換項目集合，轉換還能讓目標識別其輸入和輸出之間的直接對應。 如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。
 
 已知的中繼資料\
-請參閱＜中繼資料，已知＞  。
+請參閱＜中繼資料，已知＞。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [MSBuild](../msbuild/msbuild.md)
+- [ MSBuild](../msbuild/msbuild.md)

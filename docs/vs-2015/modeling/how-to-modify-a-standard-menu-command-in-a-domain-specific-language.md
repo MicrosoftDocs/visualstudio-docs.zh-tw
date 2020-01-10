@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6a821899eb660fb8448b541f9c1be082351dacc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 989367d395abb56e4f57c4aa2694b5f4ef17fb6e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662588"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300872"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用網域指定的語言修改標準功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "72662588"
 
 #### <a name="to-discover-what-commands-you-can-modify"></a>找出您可以修改的命令
 
-1. 在 `DslPackage` 專案中，開啟 `GeneratedCode\CommandSet.cs`。 此C#檔案可在方案總管中找到 `CommandSet.tt` 的子公司。
+1. 在 `DslPackage` 專案中，開啟 `GeneratedCode\CommandSet.cs`。 此C#檔案可在方案總管中找到 `CommandSet.tt`的子公司。
 
 2. 在此檔案中尋找名稱結尾為 "`CommandSet`" 的類別，例如 `Language1CommandSet` 和 `Language1ClipboardCommandSet`。
 
@@ -65,9 +65,9 @@ ms.locfileid: "72662588"
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. 在**DslPackage**中，建立名為**Custom Code**的資料夾。 在此資料夾中，建立名為 `CommandSet.cs` 的新類別檔案。
+2. 在**DslPackage**中，建立名為**Custom Code**的資料夾。 在此資料夾中，建立名為 `CommandSet.cs`的新類別檔案。
 
-3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如:
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：
 
     ```
     using System;
@@ -80,7 +80,7 @@ ms.locfileid: "72662588"
      **注意**如果您使用類別檔案範本來建立新檔案，您必須更正命名空間和類別名稱。
 
 ## <a name="override"></a>覆寫命令方法
- 大部分的命令有兩個相關聯的方法：名稱類似 `ProcessOnStatus` 。決定是否應該顯示和啟用命令。 這個方法會在使用者以滑鼠右鍵按一下圖表時呼叫，應該會快速執行並且不進行任何變更。 `ProcessOnMenu` 。會在使用者按一下命令時呼叫，而且應該執行命令的功能。 您可能想覆寫其中一個或兩個方法。
+ 大部分的命令有兩個相關聯的方法：名稱類似 `ProcessOnStatus`。決定是否應該顯示和啟用命令。 這個方法會在使用者以滑鼠右鍵按一下圖表時呼叫，應該會快速執行並且不進行任何變更。 `ProcessOnMenu`。會在使用者按一下命令時呼叫，而且應該執行命令的功能。 您可能想覆寫其中一個或兩個方法。
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>變更命令何時顯示在功能表上
  覆寫 ProcessOnStatus 。方法. 這個方法應該設定其參數 MenuCommand 的 Visible 和 Enabled 屬性。 命令通常會檢視 this.CurrentSelection 以判斷是否會套用至所選項目，也可能檢視其屬性以判斷是否可在其目前的狀態中套用命令。
@@ -138,17 +138,17 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - `this.CurrentSelection` 使用者以滑鼠右鍵按一下的圖形，一律會包含在此圖形和連接線清單中。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。
 
-- 如果使用者按一下圖表的空白部分，`this.IsDiagramSelected()`  -  `true`。
+- 如果使用者按一下圖表的空白部分，`this.IsDiagramSelected()` - `true`。
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - 使用者未選取多個圖形
+- `this.IsSingleSelection()`-使用者未選取多個圖形
 
-- `this.SingleSelection` - 使用者以滑鼠右鍵按一下的圖形或圖表
+- `this.SingleSelection`-使用者以滑鼠右鍵按一下的圖形或圖表
 
-- `shape.ModelElement as MyLanguageElement` - 以圖形表示的模型項目。
+- `shape.ModelElement as MyLanguageElement`-以圖形表示的模型專案。
 
   如需如何從元素導覽至專案，以及如何建立物件和連結的詳細資訊，請參閱[在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
-## <a name="see-also"></a>請參閱
- <xref:System.ComponentModel.Design.MenuCommand>[撰寫程式碼以自訂域特定語言的](../modeling/writing-code-to-customise-a-domain-specific-language.md)[做法如何：將命令新增至快捷方式功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)[逐步解說：從選取的專案取得資訊](../misc/walkthrough-getting-information-from-a-selected-link.md) [vspackage 如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md) [Visual Studio命令資料表（.Vsct）](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔案[.Vsct XML 架構參考](../extensibility/vsct-xml-schema-reference.md) [VMSDK –線路圖表範例。廣泛的 DSL 自訂](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)[範例程式碼：線路圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+## <a name="see-also"></a>另請參閱
+ <xref:System.ComponentModel.Design.MenuCommand>[撰寫程式碼以自訂域特定語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)的作法[：將命令新增至快捷方式功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)[逐步解說：從選取的連結取得資訊](../misc/walkthrough-getting-information-from-a-selected-link.md) [vspackage 如何將使用者介面專案新增](../extensibility/internals/how-vspackages-add-user-interface-elements.md) [Visual Studio 命令資料表（）.Vsct） Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [.Vsct XML 架構參考](../extensibility/vsct-xml-schema-reference.md)

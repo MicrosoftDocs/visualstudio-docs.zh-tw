@@ -1,6 +1,6 @@
 ---
 title: 即時 ASP.NET Azure 虛擬機器和擴展集
-description: 了解如何使用快照偵錯工具設定快照點及檢視快照集。
+description: 了解如何設定快照集，以及使用快照偵錯工具檢視快照集。
 ms.custom: ''
 ms.date: 02/06/2019
 ms.topic: conceptual
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 52ce973f1521f3ca9ba83513f6711287c49db7bb
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: ef314cf78c685251496274309af91e3bb2108a1b
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415772"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776113"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>使用快照偵錯工具針對 Azure 虛擬機器上的即時 ASP.NET 應用程式和 Azure 虛擬機器擴展集進行偵錯
 
@@ -33,24 +33,27 @@ ms.locfileid: "68415772"
 > * 設定快照點及檢視快照
 > * 設定記錄點
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
 
-* 適用于 Azure 虛擬機器 (VM) 和 Azure 虛擬機器擴展集的快照偵錯工具僅適用于使用**azure 開發工作負載**的 Visual Studio 2019 Enterprise 或更高版本。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具]底下找到它。)
+* 適用于 Azure 虛擬機器（VM）和 Azure 虛擬機器擴展集的快照偵錯工具僅適用于使用**azure 開發工作負載**的 Visual Studio 2019 Enterprise 或更高版本。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具]底下找到它。)
 
-    如果尚未安裝, 請安裝[Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
+    如果尚未安裝，請安裝[Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
 
-* 快照集集合適用于下列 Azure 虛擬 Machines\Virtual 機器擴展集 web 應用程式:
+* 快照集集合適用于下列 Azure 虛擬 Machines\Virtual 機器擴展集 web 應用程式：
   * 執行 .NET Framework 4.6.1 或更新版本的 ASP.NET 應用程式。
   * 在 Windows 上執行 .NET Core 2.0 或更新版本的 ASP.NET Core 應用程式。
 
+  > [!NOTE]
+  >  在32位 Windows 上執行的 Visual Studio Enterprise 將無法查看快照集。
+
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>開啟專案並啟動快照偵錯工具
 
-1. 開啟想要進行快照集偵錯的專案。
+1. 開啟想要行快照集偵錯的專案。
 
     > [!IMPORTANT]
-    > 若要建立快照集的偵錯工具, 您必須開啟發行至 Azure 虛擬 Machine\Virtual 機擴展集服務的*相同版本原始程式碼*。
+    > 若要建立快照集的偵錯工具，您必須開啟發行至 Azure 虛擬 Machine\Virtual 機擴展集服務的*相同版本原始程式碼*。
 
-1. 選擇 [偵錯] > [附加快照偵錯工具]。選取您的 web 應用程式部署所在的 Azure 虛擬 Machine\Virtual 機擴展集和 Azure 儲存體帳戶, 然後按一下 [**附加**]。 快照偵錯工具也支援[Azure Kubernetes Service](debug-live-azure-kubernetes.md)和[Azure App Service](debug-live-azure-applications.md)。
+1. 選擇 [ **Debug > 附加快照偵錯工具**...]。選取您的 web 應用程式部署所在的 Azure 虛擬 Machine\Virtual 機擴展集和 Azure 儲存體帳戶，然後按一下 [**附加**]。 快照偵錯工具也支援[Azure Kubernetes Service](debug-live-azure-kubernetes.md)和[Azure App Service](debug-live-azure-applications.md)。
 
     ![從 [偵錯] 功能表啟動快照偵錯工具](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -58,25 +61,25 @@ ms.locfileid: "68415772"
 
     > [!IMPORTANT]
     > 第一次為 VM 選取 [附加快照偵錯工具] 時，IIS 會自動重新啟動。
-    > 第一次為您的虛擬機器擴展集選取 [**附加快照偵錯工具**] 時, 需要手動升級虛擬機器擴展集的每個實例。
+    > 第一次為您的虛擬機器擴展集選取 [**附加快照偵錯工具**] 時，需要手動升級虛擬機器擴展集的每個實例。
 
     > [!NOTE]
-    > (Visual Studio 2019 16.2 版和更新版本)快照偵錯工具已啟用 Azure 雲端支援。 請確定您選取的 Azure 資源和 Azure 儲存體帳戶都來自相同的雲端。 如果您有關于企業[Azure 合規性](https://azure.microsoft.com/overview/trusted-cloud/)設定的問題, 請洽詢您的 azure 系統管理員。
+    > （Visual Studio 2019 16.2 版和更新版本）快照偵錯工具已啟用 Azure 雲端支援。 請確定您選取的 Azure 資源和 Azure 儲存體帳戶都來自相同的雲端。 如果您有關于企業[Azure 合規性](https://azure.microsoft.com/overview/trusted-cloud/)設定的問題，請洽詢您的 azure 系統管理員。
 
-    **模組**的中繼資料一開始不會啟用, 流覽至 web 應用程式, [**開始收集**] 按鈕將會變成作用中狀態。 Visual Studio 現在已經處於快照集偵錯模式。
+    **模組**的中繼資料一開始不會啟用，流覽至 web 應用程式，[**開始收集**] 按鈕將會變成作用中狀態。 Visual Studio 現在已經處於快照集偵錯模式。
 
     ![快照集偵錯模式](../debugger/media/snapshot-message.png)
 
     > [!NOTE]
-    > 若為 VMSS, 使用者必須在第一次附加快照偵錯工具之後, 手動升級其虛擬機器擴展集中的實例。
+    > 若為 VMSS，使用者必須在第一次附加快照偵錯工具之後，手動升級其虛擬機器擴展集中的實例。
 
-    **模組** 視窗會顯示所有模組都已載入 Azure 虛擬 Machine\Virtual 機擴展集的時間 (選擇  **Debug > Windows > 模組** 以開啟此視窗)。
+    **模組** 視窗會顯示所有模組都已載入 Azure 虛擬 Machine\Virtual 機擴展集的時間（選擇  **Debug > Windows > 模組** 以開啟此視窗）。
 
     ![檢查 [模組] 視窗](../debugger/media/snapshot-modules.png)
 
 ## <a name="set-a-snappoint"></a>設定快照點
 
-1. 在 [程式碼編輯器] 中, 按一下您想要設定快照點的一行程式碼旁邊的左邊裝訂邊。 請確定它是您知道將會執行的程式碼。
+1. 在 [程式碼編輯器] 中，按一下您想要設定快照點的一行程式碼旁邊的左邊裝訂邊。 請確定它是您知道將會執行的程式碼。
 
     ![設定快照點](../debugger/media/snapshot-set-snappoint.png)
 
@@ -89,7 +92,7 @@ ms.locfileid: "68415772"
 
 ## <a name="take-a-snapshot"></a>建立快照集
 
-設定快照點之後, 您可以前往網站的瀏覽器視圖, 並執行標示為的程式程式碼, 或等待使用者從網站的使用方式產生一個快照, 以手動產生快照集。
+設定快照點之後，您可以前往網站的瀏覽器視圖，並執行標示為的程式程式碼，或等待使用者從網站的使用方式產生一個快照，以手動產生快照集。
 
 ## <a name="inspect-snapshot-data"></a>檢查快照集資料
 
@@ -103,7 +106,7 @@ ms.locfileid: "68415772"
 
     您可以從這個檢視，將滑鼠移至變數上方以檢視 DataTips、使用 [區域]、[監看式]，以及 [呼叫堆疊] 視窗，也可以評估運算式。
 
-    網站本身仍然是即時的, 使用者不會受到影響。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合] 以重新開啟快照點。
+    網站本身仍然是即時的，使用者不會受到影響。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合] 以重新開啟快照點。
 
 您也可以將更多快照點新增至應用程式，並使用 [更新集合] 按鈕將它們開啟。
 
@@ -111,7 +114,7 @@ ms.locfileid: "68415772"
 
 ## <a name="set-a-conditional-snappoint"></a>設定條件式快照點
 
-如果您難以在應用程式中重新建立特定狀態, 請考慮使用條件式快照點。 條件式快照點可協助您控制何時製作快照集, 例如當變數包含您想要檢查的特定值時。 您可以使用運算式、篩選或叫用次數設定條件。
+如果您難以在應用程式中重新建立特定狀態，請考慮使用條件式快照點。 條件式快照點可協助您控制何時製作快照集，例如當變數包含您想要檢查的特定值時。 您可以使用運算式、篩選或叫用次數設定條件。
 
 #### <a name="to-create-a-conditional-snappoint"></a>建立條件式快照點
 

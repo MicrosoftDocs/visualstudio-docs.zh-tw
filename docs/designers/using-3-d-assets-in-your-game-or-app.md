@@ -10,17 +10,17 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d38f87970d5f9ff6d90befc61073cc4ed3d4ca92
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634539"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589821"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>如何：在您的遊戲或應用程式中使用3D 資產
 
@@ -97,7 +97,7 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 |屬性|描述|
 |--------------|-----------------|
-|**壓縮**|指定用於輸出檔案的壓縮類型。<br /><br /> 可用的選項如下：<br /><br /> -   **不壓縮**<br />-   **BC1_UNORM 壓縮**<br />-   **BC1_UNORM_SRGB 壓縮**<br />-   **BC2_UNORM 壓縮**<br />-   **BC2_UNORM_SRGB 壓縮**<br />-   **BC3_UNORM 壓縮**<br />-   **BC3_UNORM_SRGB 壓縮**<br />-   **BC4_UNORM 壓縮**<br />-   **BC4_SNORM 壓縮**<br />-   **BC5_UNORM 壓縮**<br />-   **BC5_SNORM 壓縮**<br />-   **BC6H_UF16 壓縮**<br />-   **BC6H_SF16 壓縮**<br />-   **BC7_UNORM 壓縮**<br />-   **BC7_UNORM_SRGB 壓縮**<br /><br /> 如需不同 DirectX 版本所支援壓縮格式的資訊，請參閱 [DXGI 程式設計指南](http://go.microsoft.com/fwlink/p/?LinkId=246265)。|
+|**壓縮**|指定用於輸出檔案的壓縮類型。<br /><br /> 可用的選項如下：<br /><br /> -   **不壓縮**<br />-   **BC1_UNORM 壓縮**<br />-   **BC1_UNORM_SRGB 壓縮**<br />-   **BC2_UNORM 壓縮**<br />-   **BC2_UNORM_SRGB 壓縮**<br />-   **BC3_UNORM 壓縮**<br />-   **BC3_UNORM_SRGB 壓縮**<br />-   **BC4_UNORM 壓縮**<br />-   **BC4_SNORM 壓縮**<br />-   **BC5_UNORM 壓縮**<br />-   **BC5_SNORM 壓縮**<br />-   **BC6H_UF16 壓縮**<br />-   **BC6H_SF16 壓縮**<br />-   **BC7_UNORM 壓縮**<br />-   **BC7_UNORM_SRGB 壓縮**<br /><br /> 如需不同 DirectX 版本所支援壓縮格式的資訊，請參閱 [DXGI 程式設計指南](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews)。|
 |轉換成預乘的 Alpha 格式|[是] 在輸出檔案中將影像轉換成預乘的 Alpha 格式，否則為 [否]。 只會變更輸出檔案，來源影像並不會變更。|
 |**產生 Mips**|[是] 在建置時產生完整 MIP 鏈結，並將它併入輸出檔案中；否則為 [否]。 如果為 [否]，而且原始程式檔已包含 MIP 對應鏈結，則輸出檔案會有 MIP 鏈結；否則，輸出檔案沒有 MIP 鏈結。|
 |**內容輸出**|指定輸出檔案的名稱。 **重要事項：** 變更輸出檔案的副檔名並不會影響其檔案格式。|
@@ -122,7 +122,7 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 ### <a name="use-textures-and-images"></a>使用紋理和影像
 
-Direct3D 提供用於建立紋理資源的函式。 在 Direct3D 11 中，D3DX11 公用程式庫提供其他直接從影像檔建立紋理資源和資源檢視的函式。 如需如何在 Direct3D 11 中建立紋理資源的詳細資訊，請參閱[紋理](http://go.microsoft.com/fwlink/p/?LinkID=246267)。 如需如何使用 D3DX11 程式庫從影像檔建立紋理資源或資源檢視的詳細資訊，請參閱[如何從檔案初始化紋理](http://go.microsoft.com/fwlink/p/?LinkId=246268)。
+Direct3D 提供用於建立紋理資源的函式。 在 Direct3D 11 中，D3DX11 公用程式庫提供其他直接從影像檔建立紋理資源和資源檢視的函式。 如需如何在 Direct3D 11 中建立紋理資源的詳細資訊，請參閱[紋理](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures)。 如需如何使用 D3DX11 程式庫從影像檔建立紋理資源或資源檢視的詳細資訊，請參閱[如何從檔案初始化紋理](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures-how-to)。
 
 ### <a name="use-3d-models"></a>使用 3D 模型
 
@@ -130,7 +130,7 @@ Direct3D 11 未提供用於從 3D 模型建立資源的函式。 而是，您需
 
 ### <a name="use-shaders"></a>使用著色器
 
-Direct3D 提供用於建立著色器資源，並將它們繫結至可程式化圖形管線的函式。 如需如何在 Direct3D 中建立著色器資源並將它繫結至管線的詳細資訊，請參閱 [HLSL 程式設計指南](http://go.microsoft.com/fwlink/p/?LinkID=261521)。
+Direct3D 提供用於建立著色器資源，並將它們繫結至可程式化圖形管線的函式。 如需如何在 Direct3D 中建立著色器資源並將它繫結至管線的詳細資訊，請參閱 [HLSL 程式設計指南](/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide)。
 
 在可程式化圖形管線中，管線的每個階段都必須將結果提供給管線的下一個階段，而該結果是使用下一個階段可了解的方式進行格式化。 因為著色器設計工具只能建立像素著色器，所以這表示此結果是取決於您的應用程式，以確保它所接收的資料為預期的格式。 數個可程式化著色器階段發生在像素著色器之前，並執行幾何轉換：端點著色器、輪廓著色器、網域著色器和幾何著色器。 不可程式化鑲嵌式階段也發生在像素著色器之前。 不管上述哪個階段是直接優先於像素著色器之前，都必須要提供下列格式的結果：
 

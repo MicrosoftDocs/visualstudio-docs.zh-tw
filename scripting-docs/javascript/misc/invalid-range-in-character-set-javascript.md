@@ -22,17 +22,17 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576626"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>不正確的字元集範圍 (JavaScript)
-您嘗試使用不正確字元集範圍來建立正則運算式。 字元集的範圍必須僅限單一字元，例如 a-z 或 0-9;您不能在字元集中包含字元類別（例如 \w）。 範圍中的第一個字元也必須位於範圍中的第二個字元之前。 例如:  
+您嘗試使用不正確字元集範圍來建立正則運算式。 字元集的範圍必須僅限單一字元，例如 a-z 或 0-9;您不能在字元集中包含字元類別（例如 \w）。 範圍中的第一個字元也必須位於範圍中的第二個字元之前。 例如：  
   
 ```JavaScript  
 var good = /[a-z]/;     // A valid character range - a comes before z.  
 var notGood = /[z-a]/;  // An invalid character range - z does not come before a.  
 ```  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 請只使用單一字元來撰寫正則運算式字元集，並確定它們是以正確的順序排列。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [正則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
  [正則運算式語法（JavaScript）](https://msdn.microsoft.com/library/1400241x)

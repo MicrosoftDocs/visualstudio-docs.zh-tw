@@ -1,0 +1,118 @@
+### YamlMime:Hub
+title: Visual Studio 訂閱文件
+summary: Visual Studio 訂閱權益包含存取開發人員工具、雲端服務，以及軟體、訓練及支援，以滿足您的開發及測試需求。
+brand: visual-studio
+metadata:
+  title: Visual Studio 訂閱
+  description: Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS、Android 及 Linux 等慣用平台及裝置上，建立、部署與管理絕佳的應用程式。 訂閱即享有使用開發人員工具、雲端服務與軟體及訓練的權益，還可取得滿足您開發與測試需求的支援。
+  ms.topic: hub-page
+  author: evanwindom
+  ms.author: lank
+  manager: lank
+  ms.date: 12/04/2019
+  ms.openlocfilehash: bde855a1550f304df07c22262d7cb07094b5bc9e
+  ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 12/06/2019
+  ms.locfileid: "74883830"
+highlightedContent:
+  items:
+  - title: Visual Studio 訂閱的新功能
+    itemType: whats-new
+    url: ~/whats-new-in-subscriptions.md
+  - title: 如何使用訂閱者入口網站
+    itemType: how-to-guide
+    url: ~/using-the-subscriber-portal.md
+  - title: 如何使用系統管理員入口網站
+    itemType: how-to-guide
+    url: ~/using-admin-portal.md
+conceptualContent:
+  title: 開始使用
+  items:
+  - title: 使用權益
+    links:
+    - text: Azure 點數
+      url: ~/vs-azure.md
+      itemType: get-started
+    - text: 軟體下載
+      url: ~/software-download-list.md
+      itemType: get-started
+    footerLink:
+      url: ~/vs-azure.md
+      text: 更多資訊
+  - title: 熱門資源
+    links:
+    - text: 比較選項和定價
+      url: https://visualstudio.microsoft.com/vs/pricing
+      itemType: overview
+    - text: Visual Studio 系統管理與訂閱支援
+      url: https://visualstudio.microsoft.com/support/support-overview-vs
+      itemType: overview
+  - title: 訂閱入口網站存取權
+    links:
+    - text: 訂閱者
+      url: https://my.visualstudio.com/
+      itemType: get-started
+    - text: 系統管理員
+      url: https://manage.visualstudio.com/
+      itemType: get-started
+tools:
+  title: 可用產品
+  summary: 這些只是透過 Visual Studio 訂閱提供的部分產品
+  items:
+  - title: Azure
+    imageSrc: https://docs.microsoft.com/media/logos/logo_azure.svg
+    url: /azure/
+  - title: Visual Studio IDE
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-ide.svg
+    url: /visualstudio/windows/
+  - title: Azure DevOps Services
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+    url: /azure/devops/
+  - title: Visual Studio Code
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-code.svg
+    url: https://code.visualstudio.com/docs
+  - title: Visual Studio for Mac
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
+    url: /visualstudio/mac/
+  - title: Visual Studio 應用程式中心
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mobile-center.svg
+    url: /appcenter/
+additionalContent:
+  sections:
+  - title: 權益詳細資料
+    summary: 您的訂閱可能包含這些權益
+    items:
+    - title: 開發人員工具
+      links:
+      - text: Visual Studio
+        url: ~/vs-ide-benefit.md
+        note: (包括 Visual Studio for Mac)
+    - title: 雲端服務
+      links:
+      - text: Azure 開發/測試
+        url: ~/vs-azure-payg.md
+      - text: Visual Studio 應用程式中心
+        url: ~/vs-visual-studio-app-center.md
+      - text: Azure DevOps Server 及 CAL
+        url: ~/vs-vsts.md
+      - text: Office 365 開發人員訂閱
+        url: ~/vs-office-dev.md
+      - text: Windows 開發人員帳戶
+        url: ~/vs-windows-dev.md
+    - title: 訓練及支援
+      links:
+      - text: LinkedIn Premium
+        url: ~/vs-linkedin-learning.md
+        note: (商務、技術與創意)
+      - text: Pluralsight
+        url: ~/vs-pluralsight.md
+        note: (雲端、設計、行動及資料)
+      - text: Data Camp
+        url: ~/vs-datacamp.md
+        note: (資料科學與 AI)
+      - text: Microsoft 專業技術援事件
+        url: ~/vs-tech-support.md
+      - text: Azure 社群
+        url: ~/vs-azure-community.md

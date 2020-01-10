@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e23bf15796a8ff581a8a017687f90084c338e74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8ea828cd0cba0bdab60a1f7cf4f74dbf20bd01d2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649016"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587130"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用程式碼分析規則集編輯器
 
@@ -27,7 +27,7 @@ ms.locfileid: "72649016"
 |-|-|
 |警告|會在**錯誤清單**中產生警告，而且也會在組建階段。|
 |錯誤|在**錯誤清單**以及在組建時間產生錯誤。|
-|資訊|在**錯誤清單**中產生訊息。|
+|Info|在**錯誤清單**中產生訊息。|
 |Hidden|使用者看不到違規。 不過，IDE 會收到違規的通知。|
 |None|此規則已隱藏。 其行為與規則已從規則集移除時相同。|
 
@@ -51,8 +51,8 @@ ms.locfileid: "72649016"
 |Toolbar 控制項|描述|
 |---------------------|-----------------|
 |[全部展開]|顯示所有群組中的規則。|
-|**全部折迭**|隱藏所有群組中的規則。|
-|**Group By**|指定分組規則所依據的欄位。 按一下  **\<None >** 以顯示不含群組的規則。|
+|**全部摺疊**|隱藏所有群組中的規則。|
+|**Group By**|指定分組規則所依據的欄位。 按一下 [ **\<無] >** 以顯示不含群組的規則。|
 |**資料行選項**|指定要顯示的規則欄位。|
 |**隱藏不適用於目前解決方案的規則**|顯示或隱藏與方案不屬於相同目標型別的規則。|
 |**顯示可以產生程式碼分析錯誤的規則**|顯示或隱藏已指派錯誤動作的規則。|
@@ -69,10 +69,10 @@ ms.locfileid: "72649016"
 
 |欄位|描述|
 |-----------|-----------------|
-|**ID**|規則的識別碼。|
+|**ID**|規則的識別項。|
 |**分類**|除了規則集的成員資格之外，程式碼分析規則也會依類別目錄分組。 如需詳細資訊，請參閱程式[代碼分析警告](../code-quality/code-analysis-for-managed-code-warnings.md)。|
-|**名稱**|規則的標題。|
-|**Namespace**|規則的命名空間。|
+|**Name**|規則的標題。|
+|**命名空間**|規則的命名空間。|
 |**目標型別**|指出規則適用于原生、managed 或資料庫程式碼。|
 |**動作**|在程式碼分析執行中違反規則時所採取的動作。 您可以編輯 [**動作**] 欄位。|
 |**來源規則集**|包含規則的規則集。|

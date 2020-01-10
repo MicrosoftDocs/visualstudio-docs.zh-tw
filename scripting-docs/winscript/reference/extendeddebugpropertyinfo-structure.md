@@ -66,7 +66,7 @@ typedef struct ExtendedDebugPropertyInfo{
  列舉，指定 debug 屬性屬性的旗標。  
   
  `pDebugProp`  
- 與這個 `ExtendedDebugPropertyInfo` 對應的 `IDebugProperty` 物件。  
+ 與這個 `ExtendedDebugPropertyInfo`對應的 `IDebugProperty` 物件。  
   
  `nDISPID`  
  分派識別碼。  
@@ -81,11 +81,11 @@ typedef struct ExtendedDebugPropertyInfo{
  屬性值的實際資料位元組。  
   
  `pDebugExtProp`  
- 與這個 `ExtendedDebugPropertyInfo` 對應的 `IDebugExtendedProperty` 物件。  
+ 與這個 `ExtendedDebugPropertyInfo`對應的 `IDebugExtendedProperty` 物件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [DebugPropertyInfo 結構](../../winscript/reference/debugpropertyinfo-structure.md)   
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)   
  [IDebugExtendedProperty 介面](../../winscript/reference/idebugextendedproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

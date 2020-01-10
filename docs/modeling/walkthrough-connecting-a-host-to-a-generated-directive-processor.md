@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: ff92396b1ef82d0246012251c7b2c3633cd9886b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a27b856b9c5129f725381afa34bd134009002216
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663683"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593976"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連線至產生的指示詞處理器
 
@@ -37,14 +37,14 @@ ms.locfileid: "72663683"
 
 - 使用產生的指示詞處理器來測試自訂主機。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 若要定義 DSL，您必須已安裝下列元件：
 
 | | |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
 | Visual Studio Visualization and Modeling SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "72663683"
 
      [**加入參考**] 對話方塊隨即開啟，並顯示 [ **.net** ] 索引標籤。
 
-3. 新增下列參考：
+3. 加入下列參考：
 
     - VisualStudio。建立 Sdk 11。0
 
@@ -118,7 +118,7 @@ ms.locfileid: "72663683"
     Imports Microsoft.Win32
     ```
 
-5. 找出屬性 `StandardAssemblyReferences` 的程式碼，並取代為下列程式碼：
+5. 找出屬性 `StandardAssemblyReferences`的程式碼，並取代為下列程式碼：
 
     > [!NOTE]
     > 在此步驟中，您會加入主機將支援之產生的指示詞處理器所需的元件參考。
@@ -154,7 +154,7 @@ ms.locfileid: "72663683"
     }
     ```
 
-6. 找出函數 `ResolveDirectiveProcessor` 的程式碼，並以下列程式碼取代：
+6. 找出函數 `ResolveDirectiveProcessor`的程式碼，並以下列程式碼取代：
 
     > [!IMPORTANT]
     > 此程式碼包含您要連接之產生的指示詞處理器名稱的硬式編碼參考。 您可以輕鬆地簡化此程式，在此情況下，它會尋找登錄中列出的所有指示詞處理器，並嘗試尋找相符的。 在此情況下，主機會使用任何產生的指示詞處理器。
@@ -312,7 +312,7 @@ ms.locfileid: "72663683"
     #>
     ```
 
-3. 在程式碼中，使用您在第一個程式中建立的設計特定語言，將 \<YOUR PATH > 取代為 Sample 檔案的路徑。
+3. 在程式碼中，使用您在第一個程式中建立之設計特定語言的 Sample 檔案路徑，取代 \<您的路徑 >。
 
 4. 儲存並關閉檔案。
 

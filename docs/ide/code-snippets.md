@@ -8,8 +8,8 @@ f1_keywords:
 helpviewer_keywords:
 - surround with
 - code snippets
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: fa42d9c404aaf75fda03731183abf3d585869b07
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647557"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585414"
 ---
 # <a name="code-snippets"></a>程式碼片段
 
@@ -31,7 +31,7 @@ ms.locfileid: "72647557"
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[程式碼片段 (Visual Studio for Mac)](/visualstudio/mac/snippets)。
 
-程式碼片段可使用的語言包括 C#、C++、Visual Basic、XML 和 T-SQL 等等。 若要查看某個語言所有可用的已安裝程式碼片段，請從 [**工具**] 功能表開啟 [**程式碼片段管理員**] （或按**ctrl** +**K**， **ctrl** +**B**），然後從下拉式功能表中選擇語言在頂端。
+程式碼片段可使用的語言包括 C#、C++、Visual Basic、XML 和 T-SQL 等等。 若要查看某個語言所有可用的已安裝程式碼片段，請從 [**工具**] 功能表開啟 [**程式碼片段管理員**] （或按**ctrl**+**K**， **ctrl**+**B**），然後從頂端的下拉式功能表中選擇語言。
 
 ![[程式碼片段管理員] 對話方塊](media/code-snippets-manager.png)
 
@@ -41,7 +41,7 @@ ms.locfileid: "72647557"
 
 - 以滑鼠右鍵按一下操作功能表，或是從程式碼編輯器中，選擇 [片段] > [插入程式碼片段]
 
-- 從鍵盤按**ctrl** +**K**，**ctrl** +**X**
+- 從鍵盤按**ctrl**+**K**，**ctrl**+**X**
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>擴充程式碼片段和範圍陳述式程式碼片段
 
@@ -102,6 +102,6 @@ End Property
 - [使用程式碼片段的最佳做法](../ide/best-practices-for-using-code-snippets.md)
 - [針對程式碼片段進行疑難排解](../ide/troubleshooting-snippets.md)
 - [C# 程式碼片段](../ide/visual-csharp-code-snippets.md)
-- [Visual C++ 程式碼片段](../ide/visual-cpp-code-snippets.md)
+- [C++程式碼片段](../ide/visual-cpp-code-snippets.md)
 - [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)
 - [程式碼片段 (Visual Studio for Mac)](/visualstudio/mac/snippets)

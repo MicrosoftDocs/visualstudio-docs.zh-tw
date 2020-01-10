@@ -2,17 +2,17 @@
 title: 實作介面
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45265c10677b8d3eadc27eb3b6e22c69bb5299be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7d420bd0d42e89476696966f7eda94a19893fc23
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658922"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595549"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>在 Visual Studio 中實作介面
 
@@ -46,8 +46,8 @@ ms.locfileid: "72658922"
       - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 圖示。
-      - 按一下 ![錯誤燈泡](media/error-bulb.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
+      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 出現的圖示。
+      - 按一下 ![錯誤燈泡](media/error-bulb.png) 圖示，如果文字游標已經在具有紅色曲線的行上，此圖示就會出現在左邊界上。
 
 3. 從下拉功能表選取 [實作介面]。
 
@@ -70,7 +70,7 @@ ms.locfileid: "72658922"
    > [!TIP]
    > (僅限 C#) 使用 [明確實作介面] 選項以在每個產生的方法前面加上介面名稱，來避免名稱發生衝突。
    >
-   > ![「明確實作介面」結果](media/interface-explicitresult-cs.png);
+   > ![「明確實作介面」結果](media/interface-explicitresult-cs.png)；
 
 ## <a name="see-also"></a>請參閱
 

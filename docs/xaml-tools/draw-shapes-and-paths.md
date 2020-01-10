@@ -4,17 +4,17 @@ titleSuffix: Blend for Visual Studio
 ms.date: 07/31/2019
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd722e6b8690ef5ff059b69db1fbc467eec7ca3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 29c74f74bbee19e414b3ee32948f3ca5338e8d53
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650927"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592984"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 
@@ -22,7 +22,7 @@ ms.locfileid: "72650927"
 
 圖形與路徑使用向量圖形，因此可以配合高解析度顯示妥善調整。
 
-## <a name="draw-a-shape"></a>繪製圖形
+## <a name="draw-a-shape"></a>繪製形狀
 
 在 [資產] 視窗中尋找圖形。
 
@@ -88,7 +88,7 @@ ms.locfileid: "72650927"
 
 若要以修改路徑的相同方式來修改圖形，請將圖形轉換為路徑。 選取圖形，然後選取 [格式] > [路徑] > [轉換成路徑]。
 
-**觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) (使用路徑：將圖形轉換成路徑)。
+**觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png)[使用路徑：將圖形轉換成路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。
 
 > [!NOTE]
 > [轉換成路徑] 目前不適用於 `TargetPlatformVersion` 至少為 10.0.16299.0 或更新版本的 UWP 應用程式。
@@ -103,9 +103,9 @@ ms.locfileid: "72650927"
 |-|-|-|-|
 |![合併前的兩個圖形](../designers/media/b1_1.png)|合併前的兩個圖形|![交集](../designers/media/b1_4.png)|交集|
 |![聯集](../designers/media/b1_2.png)|聯集|![排除重疊](../designers/media/b1_5.png)|排除重疊|
-|![分割](../designers/media/b1_3.png)|分割|![差集](../designers/media/b1_6.png)|差集|
+|![Divide](../designers/media/b1_3.png)|Divide|![Subtract](../designers/media/b1_6.png)|Subtract|
 
-**觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Combine paths](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195) (使用路徑：合併路徑)。
+**觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png)[使用路徑：合併路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。
 
 ## <a name="create-a-compound-path"></a>建立複合路徑
 
@@ -115,7 +115,7 @@ ms.locfileid: "72650927"
 
 ![中斷複合路徑](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
-**觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Create a compound path](https://www.youtube.com/watch?v=Io5bC0-nH6Q) (使用路徑：建立複合路徑)。
+**觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png)[使用路徑：建立複合路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。
 
 ## <a name="create-a-clipping-path"></a>建立裁剪路徑
 
@@ -123,4 +123,4 @@ ms.locfileid: "72650927"
 
 ![裁剪路徑](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
-**觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Create a clipping path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232) (使用路徑：建立裁剪路徑)。
+**觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png)[使用路徑：建立裁剪路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。

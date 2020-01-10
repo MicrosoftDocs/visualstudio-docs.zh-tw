@@ -3,8 +3,8 @@ title: 將 Get 方法轉換為屬性；將屬性轉換為 Get 方法
 ms.date: 01/26/2018
 ms.topic: reference
 ms.devlang: csharp
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac33db013a8cea11b373e4104bf2d58a1b22cef4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6e3807f3902cbd0d2718f249f15cd268fb81ac51
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654517"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570228"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>將 Get 方法轉換為屬性 / 將屬性轉換為 Get 方法的重構
 

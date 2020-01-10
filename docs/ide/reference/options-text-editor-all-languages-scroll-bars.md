@@ -27,23 +27,23 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XAML.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da66270d29778e48d89d713e36c6c717e5f86d89
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666374"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588794"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>選項、文字編輯器、所有語言、捲軸
 這個對話方塊可讓您變更程式碼編輯器捲軸的預設行為。 若要顯示這些選項，請從 [工具] 功能表選取 [選項]。 在 [文字編輯器] 資料夾內，展開 [所有語言] 子資料夾，然後選擇 [捲軸]。
 
 > [!CAUTION]
-> 此頁面會設定所有開發語言的預設選項。 重設此對話方塊中的選項，會將所有語言中的 [捲軸] 選項重設為此處所選選項。 若只要變更單一語言的文字編輯器選項，請展開該語言的子資料夾，然後選取其選項頁面。
+> 此頁面設定所有開發語言的預設選項。 重設此對話方塊中的選項，會將所有語言中的 [捲軸] 選項重設為此處所選選項。 若只要變更單一語言的文字編輯器選項，請展開該語言的子資料夾，然後選取其選項頁面。
 
 ## <a name="show-horizontal-scroll-bar"></a>顯示水平捲軸
 
@@ -53,7 +53,7 @@ ms.locfileid: "72666374"
 
 選取時，會顯示垂直捲軸；您可以上下捲動來檢視位於編輯器檢視區域外的項目。 如果未顯示垂直捲軸，您可以使用 Page Up、Page Down 鍵和方向鍵來捲動。
 
-## <a name="display"></a>顯示器
+## <a name="display"></a>顯示
 
 ### <a name="show-annotations-over-vertical-scroll-bar"></a>在垂直捲軸上顯示註釋
 

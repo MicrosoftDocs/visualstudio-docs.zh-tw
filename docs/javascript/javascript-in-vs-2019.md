@@ -11,18 +11,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 3000510c6bb6079629a3df05909417593569c932
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3412e1d27a365a6c6302c56ada865f33a436b639
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553251"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888625"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>Visual Studio 2019 中的 JavaScript 和 TypeScript
 
 ## <a name="overview"></a>總覽
 
-Visual Studio 2019 為 JavaScript 開發提供了豐富的支援，既可以直接使用 JavaScript，也可以使用 [TypeScript 程式設計語言](http://www.typescriptlang.org)，這種語言是為了提供更有效率且更有趣的 JavaScript 開發體驗而開發的，尤其是在開發大規模的專案時。 您可以在 Visual Studio 中為許多應用程式類型和服務撰寫 JavaScript 或 TypeScript 程式碼。
+Visual Studio 2019 為 JavaScript 開發提供了豐富的支援，既可以直接使用 JavaScript，也可以使用 [TypeScript 程式設計語言](http://www.typescriptlang.org/)，這種語言是為了提供更有效率且更有趣的 JavaScript 開發體驗而開發的，尤其是在開發大規模的專案時。 您可以在 Visual Studio 中為許多應用程式類型和服務撰寫 JavaScript 或 TypeScript 程式碼。
 
 ## <a name="javascript-language-service"></a>JavaScript 語言服務
 
@@ -42,4 +42,4 @@ Visual Studio 2019 提供了幾種將 TypeScript 編譯整合到專案中的選�
 
 ## <a name="projects"></a>專案
 
-Visual Studio 2019 中已不再支援 UWP JavaScript 應用程式。 您無法建立或開啟 JavaScript UWP 專案 (具有 *.jsproj* 副檔名的檔案)。 您可以使用我們有關[建立可在 Windows 上正常運作之 Progressive Web App (PWA)](https://docs.microsoft.com/microsoft-edge/progressive-web-apps/get-started) 的文件。
+Visual Studio 2019 中已不再支援 UWP JavaScript 應用程式。 您無法建立或開啟 JavaScript UWP 專案 (具有 *.jsproj* 副檔名的檔案)。 您可以使用我們有關[建立可在 Windows 上正常運作之 Progressive Web App (PWA)](/microsoft-edge/progressive-web-apps/get-started) 的文件。

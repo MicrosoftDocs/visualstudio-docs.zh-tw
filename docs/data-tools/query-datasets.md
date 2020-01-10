@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 056d88790cda6e763ebd0531d61f7007d16d82eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4080866de58e17c5e11ed01d61740c2f83aed9a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648239"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586337"
 ---
 # <a name="query-datasets"></a>查詢資料集
 若要搜尋資料集中的特定記錄，請使用 DataTable 上的 `FindBy` 方法，撰寫您自己的 foreach 語句以迴圈處理資料表的 Rows 集合，或使用[LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
@@ -35,7 +35,7 @@ ms.locfileid: "72648239"
 
 - 若要找出資料列，請呼叫使用資料表主鍵的強型別 `FindBy` 方法。
 
-     在下列範例中，`CustomerID` 資料行是 `Customers` 資料表的主要索引鍵。 這表示會 `FindByCustomerID` 產生的 `FindBy` 方法。 此範例示範如何使用產生的 `FindBy` 方法，將特定 <xref:System.Data.DataRow> 指派給變數。
+     在下列範例中，`CustomerID` 資料行是 `Customers` 資料表的主要索引鍵。 這表示會 `FindByCustomerID`產生的 `FindBy` 方法。 此範例示範如何使用產生的 `FindBy` 方法，將特定 <xref:System.Data.DataRow> 指派給變數。
 
      [!code-csharp[VbRaddataEditing#18](../data-tools/codesnippet/CSharp/query-datasets_1.cs)]
      [!code-vb[VbRaddataEditing#18](../data-tools/codesnippet/VisualBasic/query-datasets_1.vb)]
@@ -74,9 +74,9 @@ ms.locfileid: "72648239"
 
 - 具有 `Customers` 資料表且名為 `NorthwindDataSet` 之資料集的實例。
 
-- @No__t_0 資料表。
+- `Orders` 資料表。
 
-- 名為 `FK_Orders_Customers`relating 兩個數據表的關聯性。
+- 與兩個數據表相關的 `FK_Orders_Customers`關聯性。
 
 此外，這兩個數據表都必須填入資料，以供傳回任何記錄。
 

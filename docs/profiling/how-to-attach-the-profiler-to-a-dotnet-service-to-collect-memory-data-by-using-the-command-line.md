@@ -7,16 +7,17 @@ ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: fa054367ee8953c433512b6c4bcb0964637a1b74
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 94ea4f38ccebc1015419e2254b06033fa17a09a8
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746292"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777014"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>作法：使用命令列將分析工具附加至 .NET 服務以收集記憶體資料
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至 .NET 服務以收集記憶體資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至 .NET Framework 服務，並收集記憶體資料。 您可以收集記憶體配置數目和大小的相關資料，也可以收集記憶體物件存留期的相關資料。
 
 > [!NOTE]
@@ -53,7 +54,7 @@ ms.locfileid: "66746292"
 
 4. 重新啟動電腦，以設定進行新的環境組態。
 
-5. 如有必要，請啟動服務。
+5. 視需要啟動服務。
 
 6. 開啟 [命令提示字元] 視窗。 如有必要，請將分析工具路徑新增至 PATH 環境變數。
 
@@ -70,7 +71,7 @@ ms.locfileid: "66746292"
    > [!NOTE]
    > **/User** 和 **/crosssession** 選項通常是服務的必要選項。
 
-   | 選項 | 說明 |
+   | 選項 | 描述 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | 指定擁有處理序之帳戶的網域和使用者名稱。 如果以登入的使用者之外的使用者身分執行處理序，就需要這個選項。 處理序擁有者會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [使用者名稱] 欄。 |
    | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 如果 ASP.NET 應用程式是在不同的工作階段中執行，就需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [工作階段識別碼] 欄。 **/crosssession** 可縮寫成 **/CS**。 |
@@ -86,7 +87,7 @@ ms.locfileid: "66746292"
 
    - 指定服務的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序識別碼和名稱。
 
-   - **targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 選擇性。
+   - **targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 選擇項。
 
 ## <a name="control-data-collection"></a>控制資料收集
  當服務執行時，您可以使用 *VSPerfCmd.exe* 選項停止和開始將資料寫入至分析工具資料檔案。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。
@@ -95,7 +96,7 @@ ms.locfileid: "66746292"
 
 - 下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 ( **/globalon**) 或停止 ( **/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 ( **/processon**) 或停止 ( **/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
@@ -124,6 +125,6 @@ ms.locfileid: "66746292"
 
 4. 重新啟動電腦。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [分析服務](../profiling/command-line-profiling-of-services.md)
 - [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

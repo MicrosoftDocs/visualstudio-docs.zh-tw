@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 971b5d178a777b7a0021eda4bfccab06727981ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 1e861c31fa2959c3bace008af7937f6686b2705f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665007"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589652"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試
 
@@ -35,7 +35,7 @@ ms.locfileid: "72665007"
 
 ![UI 測試編輯器](../test/media/uitesteditor.png)
 
-1. [尋找](../ide/finding-and-replacing-text.md)可協助您找出 UI 動作和控制項。
+1. [尋找](../ide/finding-and-replacing-text.md) 可協助您找出 UI 動作和控制項。
 
 2. **刪除** 可移除不必要的 UI 動作。
 

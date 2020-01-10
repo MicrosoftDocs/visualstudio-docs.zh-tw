@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 77220ef55871d59bf8c8810547fccae5399869ce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2439f280ee590f1b13e339b69c6f3f147bb1ea39
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665683"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297808"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>選項對話方塊、環境、快速啟動
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "72665683"
 
  您可以使用下列快速鍵，限制搜尋特定分類。
 
-|Category|快速鍵|快速鍵描述|
+|類別|快速鍵|快速鍵描述|
 |--------------|--------------|--------------------------|
 |最近使用|@mru<br /><br /> 例如：`@mru font`|最多顯示您 [最近用過的函式] 的五個項目。|
 |Menus|@menu<br /><br /> 例如：`@menu font`|限制搜尋功能表項目。|
@@ -47,7 +47,7 @@ ms.locfileid: "72665683"
 ## <a name="show-previous-results"></a>顯示先前的結果
  根據預設，您輸入的搜尋字詞不會在搜尋工作階段之間保留。 如果您搜尋某個字詞，然後將游標移出 [快速啟動] 區域再移回，則會清除搜尋字串。 若要保留搜尋結果，請移至 [選項] 對話方塊，並選擇 [快速啟動]，然後選取 [啟用快速啟動時顯示前一個搜尋的搜尋結果]。 核取方塊。 下次您執行搜尋、離開 [快速啟動] 區域並返回時，[快速啟動] 將會保留上次使用的搜尋字詞，也會顯示搜尋結果。
 
- 如需使用 [快速啟動] 的最新祕訣和訣竅，請參閱 [Visual Studio 部落格](http://go.microsoft.com/fwlink/?LinkId=236054)。
+ 如需使用 [快速啟動] 的最新祕訣和訣竅，請參閱 [Visual Studio 部落格](https://go.microsoft.com/fwlink/?LinkId=236054)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [一般使用者介面元素（Visual Studio）](../../ide/reference/general-user-interface-elements-visual-studio.md) [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)

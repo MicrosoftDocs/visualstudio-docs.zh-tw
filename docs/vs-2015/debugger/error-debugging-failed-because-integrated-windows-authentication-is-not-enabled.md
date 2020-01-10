@@ -1,5 +1,5 @@
 ---
-title: 錯誤：偵錯失敗，因為未啟用整合式的 Windows 驗證 |Microsoft Docs
+title: 錯誤：因為未啟用整合式 Windows 驗證，所以調試失敗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,14 +19,14 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 074c6c1cace31797e46a192ec0891f1e13dac22b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4c8c83676c8f01891aed97e931581c65b799e61e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684266"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299786"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>錯誤：偵錯失敗，原因是未啟用整合式 Windows 驗證
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>錯誤：偵錯失敗，因為整合式 Windows 驗證沒有啟用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 因為驗證錯誤，所以無法對要求偵錯之使用者進行驗證。 這種情形可能會在您嘗試逐步執行 Web 應用程式或 XML Web Service 時發生。 造成這個錯誤的原因之一是未啟用整合式 Windows 驗證。 若要啟用該驗證，請遵循「若要啟用整合式 Windows 驗證」內所述的步驟進行。  
@@ -71,13 +71,13 @@ ms.locfileid: "65684266"
   
 2. 如果您先前未開啟 [Windows 驗證] 和 [II6 管理相容性]，請遵循下列步驟來執行此動作：  
   
-    1. 按一下 **開始**，按一下**控制台**，然後按一下 **程式**。  
+    1. 依序按一下 [**開始**] 和 [**控制台**]，然後按一下 [**程式**]。  
   
     2. 按一下 [程式和功能] 下的 [開啟或關閉 Windows 功能]。  
   
          [使用者帳戶控制] 對話方塊隨即出現，並詢問您是否同意繼續進行。  
   
-    3. 按一下 [ **繼續**]。  
+    3. 按一下 [繼續]。  
   
          [Windows 功能] 對話方塊隨即出現。  
   
@@ -118,6 +118,6 @@ ms.locfileid: "65684266"
 10. 關閉 [Internet Information Services (IIS) 管理員] 視窗。  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Microsoft 摘要式驗證](http://go.microsoft.com/fwlink/?LinkId=77938)   
- [執行 Windows Vista 與 IIS 7.0 上的 Web 應用程式與 Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [偵錯工具 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [Microsoft 摘要式驗證](https://go.microsoft.com/fwlink/?LinkId=77938)   
+ [在 Windows Vista 上使用 IIS 7.0 和 Visual Studio 執行 Web 應用程式](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

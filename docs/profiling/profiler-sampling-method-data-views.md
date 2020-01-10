@@ -9,14 +9,15 @@ ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 622a088506fe913c834e7de8807dc167f6ab0fc9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431993"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772154"
 ---
 # <a name="profiler-sampling-method-data-views"></a>分析工具取樣方法資料檢視
 本節包含使用取樣方法所產生的分析工具資料檔案之檢視和報告的參考資訊。
@@ -75,5 +76,5 @@ ms.locfileid: "63431993"
 
  包含 .NET 記憶體資料的分析工具資料檔案之檢視和報告的參考資訊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [認識取樣資料值](../profiling/understanding-sampling-data-values.md)

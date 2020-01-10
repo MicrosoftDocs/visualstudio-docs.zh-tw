@@ -13,35 +13,35 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93aef1e4466bd88d87ebce71161dcd1665178317
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a632b90e89e58c26ec72083fe3f4ed9223826dae
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663356"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302845"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>規則條件編輯器對話方塊 (舊版)
-本主題描述如何在舊版 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 中使用 [**規則條件編輯器**] 對話方塊。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。
+本主題描述如何在舊版 [!INCLUDE[wfd1](../includes/wfd1-md.md)]中使用 [**規則條件編輯器**] 對話方塊。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。
 
  您可以使用 [**規則條件編輯器**] 對話方塊來建立和修改宣告式規則條件。 這些規則條件會公開為以下 Windows Workflow Foundation 全新活動中的屬性：
 
-- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
 
-- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
 
-- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
 
-- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
 
-- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
 
-- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
 
   您可以使用 [[選取條件] 對話方塊（舊版）](../workflow-designer/select-condition-dialog-box-legacy.md)來存取 [**規則條件編輯器**] 對話方塊。
 
   下表描述 [**規則條件編輯器**] 對話方塊的使用者介面（UI）元素。
 
-|UI 項目|描述|
+|UI 元素|描述|
 |----------------|-----------------|
 |**條件**|輸入規則條件的運算式。|
 |**還行**|按一下以儲存規則條件。|
@@ -55,7 +55,7 @@ ms.locfileid: "72663356"
 
 - 關係運算子：==、=、!=
 
-- 比較運算子： <、\< =、>、> =
+- 比較運算子： <、\<=、>、> =
 
 - 算術運算子：+、-、*、/、MOD
 
@@ -79,7 +79,7 @@ ms.locfileid: "72663356"
 
   this.i == 1U (解析為不帶正負號的整數)
 
-  如需條件的詳細資訊，請參閱[在工作流程中使用條件](http://go.microsoft.com/fwlink?LinkID=65009)。
+  如需條件的詳細資訊，請參閱[在工作流程中使用條件](https://go.microsoft.com/fwlink?LinkID=65009)。
 
-## <a name="see-also"></a>請參閱
- [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033) [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017) [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039) [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049) [選取條件對話方塊（舊版）](../workflow-designer/select-condition-dialog-box-legacy.md) [使用工作流程中的條件](http://go.microsoft.com/fwlink?LinkID=65009)（[適用于 Windows Workflow 的舊版設計工具）基礎 UI](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)說明
+## <a name="see-also"></a>另請參閱
+ [IfElseActivity](https://go.microsoft.com/fwlink?LinkID=65033) [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017) [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039) [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049) [選取條件對話方塊（舊版）](../workflow-designer/select-condition-dialog-box-legacy.md) [使用工作流程中的條件](https://go.microsoft.com/fwlink?LinkID=65009) [Windows Workflow Foundation UI 說明的舊版設計](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)工具

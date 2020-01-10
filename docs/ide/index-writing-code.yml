@@ -1,21 +1,21 @@
 ### YamlMime:Landing
-title: 編輯 Visual Studio 中的程式碼
-summary: 瞭解如何編輯工作，例如開啟專案、使用程式碼編輯器功能，以及維護一致的程式碼樣式。
+title: 在 Visual Studio 中組織和編輯程式碼
+summary: 瞭解如何處理程式碼專案、使用程式碼編輯器功能，以及維護一致的程式碼樣式。
 metadata:
   title: 程式碼編輯器功能
   description: 瞭解 Visual Studio 中的程式碼編輯功能。
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
-  author: gewarren
-  ms.author: gewarren
+  author: jillre
+  ms.author: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 30345839ca1c5f4f07b3c36415f7aad277693069
-  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
+  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "72516822"
+  ms.lasthandoff: 11/22/2019
+  ms.locfileid: "74316434"
 landingContent:
 - title: 開啟或建立專案
   linkLists:

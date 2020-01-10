@@ -23,9 +23,9 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573802"
 ---
 # <a name="invalid-replacer-argument"></a>無效的取代子引數
-嘗試使用不正確引數來叫用 `JSON.stringify`。 @No__t_0 引數必須是函式或陣列。  
+嘗試使用不正確引數來叫用 `JSON.stringify`。 `replacer` 引數必須是函式或陣列。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 將 `replacer` 引數變更為函式或陣列。  
   
@@ -44,7 +44,7 @@ var memberfilter = new Object();
 var jsontext = JSON.stringify(contact, memberfilter, "\t");  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [JSON 物件](../../javascript/reference/json-object-javascript.md)   
- [JSON. parse](../../javascript/reference/json-parse-function-javascript.md)函式    
+ [JSON. parse](../../javascript/reference/json-parse-function-javascript.md)函式   
  [JavaScript 執行階段錯誤](../../javascript/reference/javascript-run-time-errors.md)

@@ -24,14 +24,14 @@ ms.locfileid: "72573396"
 # <a name="expected--javascript"></a>必須是 '=' (JavaScript)
 您嘗試建立要搭配條件式編譯語句使用的變數，但未在變數與您要指派給它的值之間放置等號。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
-- 新增等號。 例如:  
+- 新增等號。 例如：  
   
     ```JavaScript  
     @set @myvar1 = 1  
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [條件式編譯](../../javascript/advanced/conditional-compilation-javascript.md)   
  [條件式編譯變數](../../javascript/advanced/conditional-compilation-variables-javascript.md)

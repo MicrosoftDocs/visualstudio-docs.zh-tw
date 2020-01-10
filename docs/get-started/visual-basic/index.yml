@@ -6,7 +6,7 @@ metadata:
   description: 使用 Visual Studio 建立 Visual Basic 應用程式。
   ms.custom: seodec18
   ms.topic: landing-page
-  ms.date: 09/20/2019
+  ms.date: 11/19/2019
   ms.author: ghogen
   author: ghogen
   manager: jillfra
@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - VB
-  ms.openlocfilehash: 729388bf6eaa799580576b12076dc3da880a6386
-  ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+  ms.openlocfilehash: 3462f85ea571e163617c6c5f315a28c98342acab
+  ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/04/2019
-  ms.locfileid: "71962850"
+  ms.lasthandoff: 11/19/2019
+  ms.locfileid: "74188609"
 landingContent:
 - title: 開始使用
   linkLists:
@@ -31,6 +31,10 @@ landingContent:
     links:
     - text: 開始引導式導覽
       url: visual-studio-ide.md
+  - linkListType: quickstart
+    links:
+    - text: 建立 "Hello World" 主控台應用程式
+      url: ../../ide/quickstart-visual-basic-console.md
 - title: 建立 Visual Basic 應用程式
   linkLists:
   - linkListType: tutorial

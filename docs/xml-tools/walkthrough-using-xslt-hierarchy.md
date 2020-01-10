@@ -2,15 +2,15 @@
 title: 逐步解說：使用 XSLT 階層
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 9f3fe246189313dcc04176e2971ad448a1b2cff8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 892c166504b9a33fdcbbe0af2605e8268a2b06e7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604436"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592447"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>逐步解說：使用 XSLT 階層
 
@@ -103,11 +103,11 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
     </xsl:stylesheet>
     ```
 
-4. 在指令 `<xsl:include href="xslincludefile.xsl" />` 新增中斷點。
+4. 在指令 `<xsl:include href="xslincludefile.xsl" />`新增中斷點。
 
 5. 開始偵錯。
 
-6. 當偵錯工具在指令 `<xsl:include href="xslincludefile.xsl" />` 停止時，請按 [**逐步**執行] 按鈕。 在參考的樣式表單中，可以繼續進行調試。 您會看見階層，同時設計工具會顯示正確的路徑。
+6. 當偵錯工具在指令 `<xsl:include href="xslincludefile.xsl" />`停止時，請按 [**逐步**執行] 按鈕。 在參考的樣式表單中，可以繼續進行調試。 您會看見階層，同時設計工具會顯示正確的路徑。
 
 ## <a name="see-also"></a>請參閱
 

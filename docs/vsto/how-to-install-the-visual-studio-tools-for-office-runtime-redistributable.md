@@ -1,5 +1,5 @@
 ---
-title: 作法：安裝 Visual Studio Tools for Office 執行時間可轉散發套件
+title: 如何：安裝 Visual Studio Tools for Office 執行時間可轉散發套件
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 08/14/2019
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d9bb53fbdc3d6766dab47c654f0a43ad902b2f3
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 801486e7c0abfa2cb91f7fb7237cf3a48e8bc916
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551834"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985912"
 ---
-# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>作法：安裝 Visual Studio Tools for Office 執行時間可轉散發套件
-  您必須在執行使用 Microsoft Office 開發人員工具[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]所建立之解決方案的每部電腦上, 安裝適用于 Office runtime 的 Visual Studio 2010 工具。 當您安裝 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 Microsoft Office 時，此執行階段會自動安裝。 如需詳細資訊, 請參閱[Visual Studio Tools for Office 執行時間安裝案例](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。
+# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>如何：安裝 Visual Studio Tools for Office 執行時間可轉散發套件
+  Visual Studio 2010 Tools for Office runtime 必須安裝在執行解決方案的每部電腦上，而這些方案是使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中的 Microsoft Office 開發人員工具所建立。 當您安裝 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 Microsoft Office 時，此執行階段會自動安裝。 如需詳細資訊，請參閱[Visual Studio Tools for Office 執行時間安裝案例](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -40,19 +40,19 @@ ms.locfileid: "69551834"
 
 1. 請安裝 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本。
 
-    - 若要下載[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], 請參閱[Microsoft .NET Framework 4 (Web 安裝程式)](http://go.microsoft.com/fwlink/?LinkId=178957)。
+    - 若要下載 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]，請參閱[Microsoft .NET Framework 4 （Web 安裝程式）](https://www.microsoft.com/download/details.aspx?id=17851)。
 
-    - 若要下載[!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)], 請參閱[Microsoft .NET Framework 4 用戶端設定檔 (Web 安裝程式)](http://go.microsoft.com/fwlink/?LinkId=178958)。
+    - 若要下載 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]，請參閱[Microsoft .NET Framework 4 Client Profile （Web 安裝程式）](https://www.microsoft.com/download/details.aspx?id=17113)。
 
-    - 若要下載[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], 請參閱[Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)。
+    - 若要下載 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]，請參閱[Microsoft .NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653)。
 
-2. 執行*vstor_redist*以安裝[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。
+2. 執行*vstor_redist*以安裝 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。
 
-     您可以從[適用于 Office runtime 的 Visual Studio 2010 工具](http://go.microsoft.com/fwlink/?LinkId=140384)下載這些安裝檔。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的必要條件符合 .NET Framework 的必要條件。
+     您可以從[適用于 Office runtime 的 Visual Studio 2010 工具](https://www.microsoft.com/download/details.aspx?id=56961)下載這些安裝檔。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的必要條件符合 .NET Framework 的必要條件。
 
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 包含語言套件。 如果您的 Windows 安裝設定為英文以外的語言，您可以使用在 Windows 上的相同語言顯示執行階段訊息。 同樣地，如果終端使用者安裝 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，然後在安裝設定為英文以外之語言的 Windows 上執行您的方案，則執行階段訊息會以和 Windows 使用的相同語言顯示。 在某些情況下，您可能需要額外的語言套件。 例如, 如果您的 Windows 複本使用多個語言設定, 或在安裝[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]後切換至另一種語言, 則您可能需要其他語言套件。 您可以在[適用于 Microsoft Office 系統 (版本4.0 執行時間) 語言套件的 Microsoft Visual Studio 2010 工具](http://go.microsoft.com/fwlink/?LinkId=140386)中找到語言套件。
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 包含語言套件。 如果您的 Windows 安裝設定為英文以外的語言，您可以使用在 Windows 上的相同語言顯示執行階段訊息。 同樣地，如果終端使用者安裝 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，然後在安裝設定為英文以外之語言的 Windows 上執行您的方案，則執行階段訊息會以和 Windows 使用的相同語言顯示。 在某些情況下，您可能需要額外的語言套件。 例如，如果您的 Windows 複本使用多個語言設定，或您在已經安裝 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]之後切換到另一種語言，您可能需要其他語言套件。 您可以在[適用于 Microsoft Office 系統（版本4.0 執行時間）語言套件的 Microsoft Visual Studio 2010 工具](https://www.microsoft.com/download/details.aspx?id=54246)中找到語言套件。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [開始&#40;在 Visual Studio 中進行 Office 開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [如何：設定電腦以開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)

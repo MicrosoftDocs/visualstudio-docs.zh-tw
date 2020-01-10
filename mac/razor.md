@@ -6,16 +6,16 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: d9a9df56074cde8735b54c12bbbf15a79e727497
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: fe9ef921ccfc42b77bd08925805aeac6f4aec777
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962917"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715884"
 ---
 # <a name="create-razor-web-apps"></a>建立 Razor web 應用程式
 
-本指南提供建立您的第一個 Razor web 應用程式的簡介。 如需更深入的指引，請參閱[ASP.NET Core 中的 Razor Pages 簡介](https://docs.microsoft.com/aspnet/core/razor-pages/index)。
+本指南提供建立您的第一個 Razor web 應用程式的簡介。 如需更深入的指引，請參閱[ASP.NET Core 中的 Razor Pages 簡介](/aspnet/core/razor-pages/index)。
 
 Visual Studio for Mac 提供對 Razor 編輯的支援，包含 *.cshtml* 檔案中的 IntelliSense 和語法醒目提示。 Mac 8.3 + Visual Studio 2019 的新功能是在 Razor 檔案中具有內容感知 IntelliSense 的能力，因此您會收到符合您目前在檔中編輯之語言的 IntelliSense。
 
@@ -26,7 +26,7 @@ Visual Studio for Mac 提供對 Razor 編輯的支援，包含 *.cshtml* 檔案�
 1. 在 [歡迎使用] 畫面上，選取 [**新增**] 以建立新的專案：
 
    ![Visual Studio for Mac [新增] 對話方塊](media/razor-new.png)
-1. 在 [**新增專案**] 對話方塊中，移至 [ **.net Core**]  > **應用**程式  > **Web 應用程式**，然後選取 **[下一步]** ：
+1. 在 [**新增專案**] 對話方塊中，移至 [ **.net Core** ] > **App** > **Web 應用程式**，然後選取 **[下一步]** ：
 
    ![Razor 專案範本](media/razor-new-project1.png)
 1. 選取您的 .NET Core 目標 framework （建議為2.2 版或更新版本），然後選取 **[下一步]** 。 選擇專案的名稱，並在必要時新增 Git 支援。 選取 [**建立**] 以建立專案。
@@ -36,7 +36,7 @@ Visual Studio for Mac 提供對 Razor 編輯的支援，包含 *.cshtml* 檔案�
    Visual Studio for Mac 會在 [程式碼配置] 視窗中開啟您的專案。
 1. 使用**Command + Option + F5**執行專案，而不進行任何偵錯工具。
 
-   Visual Studio 啟動[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)，開啟瀏覽器以 `https://localhost:5001`，並顯示您的第一個 Razor web 應用程式。
+   Visual Studio 啟動[Kestrel](/aspnet/core/fundamentals/servers/kestrel)，開啟瀏覽器以 `https://localhost:5001`，並顯示您的第一個 Razor web 應用程式。
 
    ![Safari 中的 Razor Web 應用程式](media/razor-webapp.png)
 
@@ -47,10 +47,10 @@ Razor web 應用程式包含下列元件。
 ### <a name="pages-folder"></a>Pages 資料夾
 
 此資料夾包含專案的網頁，以及每個的程式碼後置：
-   - @No__t-1 HTML 標籤和 Razor 語法的 *. cshtml*檔案。
-   - 用於處理頁面事件之程式C#代碼後置的 *@no__t 1.cshtml.cs*檔案。
+   - HTML 標籤和 Razor 語法的 *\*cshtml*檔案。
+   - 程式C#代碼後置的 *\*cshtml.cs*檔案，用來處理頁面事件。
 
-支援檔案的名稱以底線開頭。 例如，_Layout.cshtml 檔案會設定所有頁面通用的 UI 元素。 此檔案會設定頁面頂端的導覽功能表和底部的著作權注意事項。 如需詳細資訊，請參 [ASP.NET 中的配置](https://docs.microsoft.com/aspnet/core/mvc/views/layout)。
+支援檔案的名稱以底線開頭。 例如，_Layout.cshtml 檔案會設定所有頁面通用的 UI 元素。 此檔案會設定頁面頂端的導覽功能表和底部的著作權注意事項。 如需詳細資訊，請參 [ASP.NET 中的配置](/aspnet/core/mvc/views/layout)。
 
 ### <a name="launch-settings"></a>啟動設定
 
@@ -60,20 +60,20 @@ Razor web 應用程式包含下列元件。
 
 *AppSettings*包含設定資料，例如連接字串。
 
-如需設定的詳細資訊，請參閱[ASP.NET 中](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/index)的設定指南。
+如需設定的詳細資訊，請參閱[ASP.NET 中](/aspnet/core/fundamentals/configuration/index)的設定指南。
 
 ### <a name="wwwroot-folder"></a>wwwroot 資料夾
 
-此資料夾包含靜態檔案，例如 HTML、JavaScript 和 CSS 檔案。 如需詳細資訊，請參閱 [ASP.NET Core 中的靜態檔案](https://docs.microsoft.com/aspnet/core/fundamentals/static-files)。
+此資料夾包含靜態檔案，例如 HTML、JavaScript 和 CSS 檔案。 如需詳細資訊，請參閱 [ASP.NET Core 中的靜態檔案](/aspnet/core/fundamentals/static-files)。
 
 ### <a name="programcs"></a>Program.cs
 
-此檔案包含程式的進入點。 如需詳細資訊，請參閱 [ASP.NET Core Web 主機](https://docs.microsoft.com/aspnet/core/fundamentals/host/web-host)。
+此檔案包含程式的進入點。 如需詳細資訊，請參閱 [ASP.NET Core Web 主機](/aspnet/core/fundamentals/host/web-host)。
 
 ### <a name="startupcs"></a>Startup.cs
 
-此檔案包含設定應用程式行為的程式碼，例如應用程式是否需要同意 cookie。 如需詳細資訊，請參閱 [ASP.NET Core 中的應用程式啟動](https://docs.microsoft.com/aspnet/core/fundamentals/startup)。
+此檔案包含設定應用程式行為的程式碼，例如應用程式是否需要同意 cookie。 如需詳細資訊，請參閱 [ASP.NET Core 中的應用程式啟動](/aspnet/core/fundamentals/startup)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-如需建立 Razor web 應用程式的更完整指南，請參閱[ASP.NET Core 中的 Razor Pages 簡介](https://docs.microsoft.com/aspnet/core/razor-pages/index)。
+如需建立 Razor web 應用程式的更完整指南，請參閱[ASP.NET Core 中的 Razor Pages 簡介](/aspnet/core/razor-pages/index)。

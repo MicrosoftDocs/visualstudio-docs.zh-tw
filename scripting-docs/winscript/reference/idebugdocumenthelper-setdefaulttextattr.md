@@ -47,8 +47,8 @@ HRESULT SetDefaultTextAttr(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 除非此方法變更了預設屬性，否則腳本區塊外部文字的預設屬性會是 SOURCETEXT_ATTR_NONSOURCE。 使用者介面可以使用此資訊，將腳本區塊以外的文字標示為唯讀。  
+ 除非此方法變更了預設屬性，否則腳本區塊外部文字的預設屬性會 SOURCETEXT_ATTR_NONSOURCE。 使用者介面可以使用此資訊，將腳本區塊以外的文字標示為唯讀。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

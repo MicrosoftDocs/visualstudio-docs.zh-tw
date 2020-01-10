@@ -13,14 +13,15 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6bead46c52ed2bc33572e0eacc6f3f0219e72e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ce16f65947fd69b5a54e564ba6bec061bc68e328
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970092"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777373"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 記憶體配置檢視
 [配置] 檢視會列出在分析回合期間建立的類型。 每種類型都是呼叫樹狀圖的根節點，可顯示導致類型配置的函式執行路徑。
@@ -38,11 +39,11 @@ ms.locfileid: "62970092"
 
 - 若要顯示最常使用的路徑，請以滑鼠右鍵按一下類型或函式，然後按一下 [展開最忙碌路徑]。
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**名稱**|已配置類型或函式的名稱。|
 |**處理序 ID**|分析執行的處理序 ID (PID)。|
-|**處理序名稱**|處理序的名稱。|
+|**處理序名稱**|處理程序的名稱。|
 |**模組名稱**|包含類型或函式的模組名稱。|
 |**模組路徑**|包含類型或函式的模組路徑。|
 |**原始程式檔**|包含類型或函式定義的原始程式檔。|

@@ -47,8 +47,8 @@ HRESULT SetDebugDocumentHost(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- @No__t_0 介面用於智慧型主機語法著色、提取延後的文字，以及針對新建立的檔內容傳回控制物件。  
+ `IDebugDocumentHost` 介面用於智慧型主機語法著色、提取延後的文字，以及針對新建立的檔內容傳回控制物件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHost 介面](../../winscript/reference/idebugdocumenthost-interface.md)

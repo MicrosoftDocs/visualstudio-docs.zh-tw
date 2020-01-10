@@ -56,6 +56,6 @@ HRESULT GetResultAsDebugProperty(
   
  這個方法會傳回 `S_OK`，而如果 `Abort` 中止作業，`phrResult` 會傳回 `E_ABORT`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugExpression 介面](../../winscript/reference/idebugexpression-interface.md)   
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)

@@ -6,17 +6,17 @@ f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
 - external tools [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1caf72ea2dccd9dfe2978726834e8066a9f5b56b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652397"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591290"
 ---
 # <a name="manage-external-tools"></a>管理外部工具
 
@@ -61,7 +61,7 @@ ms.locfileid: "72652397"
 
 以下是在定義外部工具時可以使用的引數完整清單：
 
-|[屬性]|引數|描述|
+|Name|引數|描述|
 |----------|--------------|-----------------|
 |項目路徑|$(ItemPath)|目前檔案的完整檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
 |項目目錄|$(ItemDir)|目前檔案的目錄 (磁碟機 + 路徑)。|

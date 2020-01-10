@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter, creating
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a1940cda15d1ac5515e25b1e1e997f13a32d6e53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f196c3850c9413a7c68fd1fe67af50273915f249
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653690"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589171"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：建立診斷資料配接器
 
@@ -32,7 +32,7 @@ ms.locfileid: "72653690"
 
 以下是您在建立診斷資料配接器時可以使用之關鍵事件的部分清單。 如需診斷資料配接器事件的完整清單，請參閱抽象 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 類別。
 
-|Event - 事件|描述|
+|Event|描述|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|啟動測試回合|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|結束測試回合|
@@ -58,7 +58,7 @@ ms.locfileid: "72653690"
 
    2. 選擇 [.NET] 並尋找 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**。
 
-   3. 選擇 [確定]。
+   3. 選擇 [ **確定**]。
 
 3. 新增組件 **Microsoft.VisualStudio.QualityTools.Common**。
 
@@ -66,7 +66,7 @@ ms.locfileid: "72653690"
 
    2. 選擇 [/.NET]，尋找 **Microsoft.VisualStudio.QualityTools.Common.dll**。
 
-   3. 選擇 [確定]。
+   3. 選擇 [ **確定**]。
 
 4. 將下列 `using` 指示詞新增至您的類別檔案：
 

@@ -8,17 +8,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.selectcursordialog
 helpviewer_keywords:
 - Domain-Specific Language, toolbox
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8099773dbbfdd06e4ce806401400bf3d2443b57f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e8e9fc3a9ecbadc47c3390d2d4a9b504a316658
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747598"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589717"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 
@@ -69,7 +69,7 @@ Editor
 
 3. 將 [**工具箱圖示**] 屬性設定為參考16x16 點陣圖。
 
-     如果您想要定義新的圖示，請在 [ **Dsl\Resources** ] 資料夾的方案總管中建立點陣圖檔案。 檔案應具有下列屬性值：**組建動作** = **內容**;[**複製到輸出目錄**]  =  [不要**複製**]。
+     如果您想要定義新的圖示，請在 [ **Dsl\Resources** ] 資料夾的方案總管中建立點陣圖檔案。 檔案應具有下列屬性值：**組建動作** = **內容**;[**複製到輸出目錄**] = [不要**複製**]。
 
 4. **針對 [元素] 工具：** 設定工具的 [**類別**] 屬性，以參考對應至圖形的實體網域類別。
 
@@ -154,12 +154,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  連接產生器包含一個或多個 Link Connect 指示詞，可指定網域關聯性以及來源和目標項目。 例如，在 [工作流程] 方案範本中，您可以在 [ **DSL Explorer**] 中看到**CommentReferencesSubjectsBuilder** 。 此連接產生器包含一個名為**CommentReferencesSubjects**的 link connect 指示詞，它會對應至網域關聯性**CommentReferencesSubjects**。 此 Link Connect 指示詞包含指向 `Comment` 網域類別的來源角色指示詞，以及指向 `FlowElement` 網域類別的目標角色指示詞。
 
 ### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>使用連接產生器限制來源和目標角色
- 您可以使用連接產生器，限制特定類別在指定網域關聯性之來源角色或目標角色中的發生次數。 例如，您可以有一個基底網域類別，內含對另一個網域類別的網域關聯性，但您可能不想讓該基底類別的所有衍生類別在該關聯性中具有相同角色。 在工作流程方案中，有四個實體領域類別（**StartPoint**、**端點**、 **MergeBranch**和**同步**處理）直接繼承自抽象網域類別**FlowElement**，以及兩個具體的間接繼承自它的網域類別（**Task**和**ObjectInState**）。 還有一個**流程**參考關聯性，它會採用其來源角色和目標角色中的**FlowElement**網域類別。 不過，**端點**網域類別的實例不應該是**流程**關聯性實例的來源，也不應該**StartPoint**類別的實例是**流程**關聯性實例的目標。 **FlowBuilder**連接產生器具有名為**Flow**的連結 connect 指示詞，可指定哪些網域類別可以播放來源角色（**Task**、 **MergeBranch**、 **StartPoint**和**同步**處理），以及可以播放目標角色（**MergeBranch**、**端點**和**同步**處理）。
+ 您可以使用連接產生器，限制特定類別在指定網域關聯性之來源角色或目標角色中的發生次數。 例如，您可以有一個基底網域類別，內含對另一個網域類別的網域關聯性，但您可能不想讓該基底類別的所有衍生類別在該關聯性中具有相同角色。 在工作流程方案中，有四個實體領域類別（**StartPoint**、**端點**、 **MergeBranch**和**同步**處理）直接繼承自抽象網域類別**FlowElement**，以及間接繼承自它的兩個實體領域類別（**Task**和**ObjectInState**）。 還有一個**流程**參考關聯性，它會採用其來源角色和目標角色中的**FlowElement**網域類別。 不過，**端點**網域類別的實例不應該是**流程**關聯性實例的來源，也不應該**StartPoint**類別的實例是**流程**關聯性實例的目標。 **FlowBuilder**連接產生器具有名為**Flow**的連結 connect 指示詞，可指定哪些網域類別可以播放來源角色（**Task**、 **MergeBranch**、 **StartPoint**和**同步**處理），以及哪些可以扮演目標角色（**MergeBranch**、**端點**和**同步**處理）。
 
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>使用多個 Link Connect 指示詞的連接產生器
  您可以將多個 Link Connect 指示詞加入至連接產生器。 這可協助您隱藏使用者對領域模型的一些複雜性，並讓 [**工具箱**] 變得過於雜亂。 您可以針對數個不同的網域關聯性，將多個 Link Connect 指示詞加入至一個連接產生器。 不過，您應該將執行類似功能的網域關聯性合併在一起。
 
- 在工作流程方案中，**流程**連接工具是用來繪製**流程**和**ObjectFlow**網域關聯性的實例。 **FlowBuilder**連接產生器除了先前所述的**流程**連結 connect 指示詞之外，還有兩個名為**ObjectFlow**的連結 connect 指示詞。 這些指示詞會指定**ObjectFlow**關聯性的實例可以在**ObjectInState**網域類別的實例之間繪製，或從**ObjectInState**的**實例建立到**工作的實例，但不能在兩個工作**的實例，或**從**工作的實例到** **ObjectInState**的實例。 不過，可能會在工作的兩個實例之間繪製**流程**關聯性的**實例。** 如果您編譯並執行工作流程方案，您可以看到將**流程**從**ObjectInState**實例繪製**至工作實例建立** **ObjectFlow**的實例，但在兩個實例之間繪製**流程** **工作會建立** **流程**的實例。
+ 在工作流程方案中，**流程**連接工具是用來繪製**流程**和**ObjectFlow**網域關聯性的實例。 **FlowBuilder**連接產生器除了先前所述的**流程**連結 connect 指示詞之外，還有兩個名為**ObjectFlow**的連結 connect 指示詞。 這些指示詞會指定**ObjectFlow**關聯性的實例可以在**ObjectInState**網域類別的實例之間繪製，或是從**ObjectInState**的**實例建立到**工作的實例，而不是在工作的兩個實例**之間，或是** **從工作的**實例到**ObjectInState**的實例。 不過，可能會在工作的兩個實例之間繪製**流程**關聯性的**實例。** 如果您編譯並執行工作流程方案，您可以看到從**ObjectInState**實例到工作實例的繪製**流程**會建立**ObjectFlow**的實例，但**在工作的**兩個實例之間繪製**流程**，**會建立** **流程**的實例。
 
 ### <a name="custom-code-for-connection-builders"></a>連接產生器的自訂程式碼
  使用者介面中有四個核取方塊，用於定義連接產生器的不同自訂類型：

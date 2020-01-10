@@ -10,48 +10,48 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec9009f3c331da608c22d38f35a08e157e878771
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af1fa0222be9630a495a43204d7a973341190131
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312973"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186663"
 ---
-# <a name="extend-the-editor-and-language-services"></a>編輯器和語言服務延伸
-您可以將語言服務功能 （例如 IntelliSense) 新增至您自己的編輯器，並擴充 Visual Studio 程式碼編輯器的大部分功能。  您可以擴充的完整清單，請參閱 <<c0> [ 語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)。
+# <a name="extend-the-editor-and-language-services"></a>擴充編輯器和語言服務
+您可以將語言服務功能（例如 IntelliSense）新增至您自己的編輯器，並擴充 Visual Studio 程式碼編輯器的大部分功能。  如需您可以擴充之內容的完整清單，請參閱[語言服務和編輯器延伸模組點](../extensibility/language-service-and-editor-extension-points.md)。
 
- 您可以使用 Managed Extensibility Framework (MEF)，以擴充編輯器的大部分功能。 例如，如果您想要擴充的編輯器功能的語法著色，您可以撰寫 MEF*元件部分*，定義要為其不同的色彩，以及您所想要處理的分類。 此編輯器也支援多個擴充功能的相同功能。
+ 您可以使用 Managed Extensibility Framework （MEF）來擴充大部分的編輯器功能。 例如，如果您想要擴充的編輯器功能是語法著色，您可以撰寫 MEF*元件部分*，以定義您想要不同色彩的分類，以及您要如何處理它們。 編輯器也支援相同功能的多個延伸模組。
 
- 編輯器展示層為基礎的 Windows Presentation Framework (WPF)。 WPF 圖形程式庫提供彈性的文字格式設定，並提供視覺效果，例如圖形和動畫。
+ 編輯器展示層是以 Windows Presentation Framework （WPF）為基礎。 WPF 提供圖形程式庫來進行彈性的文字格式設定，同時也提供圖形和動畫等視覺效果。
 
- Visual Studio SDK 提供稱為介面卡*填充碼*支援是針對較早版本所撰寫的 Vspackage。 不過，如果您有現有的 VSPackage，建議其更新為新的技術，來取得較佳的效能和可靠性。
+ Visual Studio SDK 會提供稱為「*填充*碼」的介面卡，以支援針對較早版本所撰寫的 vspackage。 不過，如果您有現有的 VSPackage，建議您將其更新為新的技術，以取得更佳的效能和可靠性。
 
 ## <a name="related-topics"></a>相關主題
 
 |標題|描述|
 |-----------|-----------------|
-|[語言服務及編輯器擴充功能入門](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|說明如何建立編輯器延伸模組。|
-|[在編輯器內](../extensibility/inside-the-editor.md)|描述編輯器的一般結構，並列出其部分功能。|
-|[在編輯器中 managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)|說明如何使用 Managed Extensibility Framework (MEF) 使用編輯器。|
-|[語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)|列出編輯器 的擴充點。 擴充點代表可擴充的編輯器功能。|
-|[逐步解說：建立檢視裝飾、 命令和設定 （分欄輔助線）](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|逐步解說，並說明建置繪製資料行輔助線，協助您保持為特定的顯示寬度的程式碼檢視裝飾。  也會顯示讀取和寫入設定，以及宣告和實作，您可以從 [命令] 視窗叫用的命令。|
+|[開始使用語言服務和編輯器延伸模組](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|說明如何建立編輯器的延伸模組。|
+|[在編輯器中](../extensibility/inside-the-editor.md)|描述編輯器的一般結構，並列出其部分功能。|
+|[在編輯器中 Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)|說明如何搭配使用 Managed Extensibility Framework （MEF）與編輯器。|
+|[語言服務和編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)|列出編輯器的擴充點。 擴充點代表可以擴充的編輯器功能。|
+|[逐步解說：建立視圖裝飾、命令和設定（資料行輔助線）](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|逐步解說並說明如何建立可繪製資料行輔助線的視圖裝飾，以協助您將程式碼保持在特定的顯示寬度。  也會顯示讀取和寫入設定，以及宣告和執行可從命令視窗叫用的命令。|
 |[編輯器匯入](../extensibility/editor-imports.md)|列出擴充功能可以匯入的服務。|
-|[調整傳統的程式碼編輯器](../extensibility/adapting-legacy-code-to-the-editor.md)|說明不同的方式，來調整 (預先 Visual Studio 2010) 來擴充編輯器的舊版程式碼。|
-|[移轉舊版語言服務](../extensibility/internals/migrating-a-legacy-language-service.md)|說明如何將基礎的 VSPackage 語言服務。|
-|[逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|示範如何將內容類型連結至檔案的副檔名。|
-|[逐步解說：建立邊界字符](../extensibility/walkthrough-creating-a-margin-glyph.md)|示範如何將圖示新增至邊界。|
-|[逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)|示範如何使用*標記*反白顯示文字。|
-|[逐步解說：將大綱](../extensibility/walkthrough-outlining.md)|示範如何新增特定種類的大括號的大綱。|
-|[逐步解說：顯示對稱的括號](../extensibility/walkthrough-displaying-matching-braces.md)|示範如何反白顯示對稱的括號。|
-|[逐步解說：顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|示範如何顯示 QuickInfo 快顯視窗描述項目，例如屬性、 方法和事件的程式碼。|
-|[逐步解說：顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)|示範如何顯示簽章中提供的參數類型與數量的相關資訊的快顯功能表。|
-|[逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)|示範如何實作陳述式完成。|
-|[逐步解說：實作程式碼片段](../extensibility/walkthrough-implementing-code-snippets.md)|示範如何實作程式碼片段擴充。|
-|[逐步解說：顯示燈泡建議](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|示範如何顯示燈泡，如程式碼的建議。|
-|[逐步解說：搭配編輯器擴充功能使用 shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|示範如何在 VSPackage 中的功能表命令相關聯的 MEF 元件。|
-|[逐步解說：編輯器擴充功能搭配使用攠摝坫](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|示範如何在 VSPackage 中的功能表捷徑關聯為 MEF 元件。|
-|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|提供 Managed Extensibility Framework (MEF) 的相關資訊。|
-|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|提供 Windows Presentation Foundation (WPF) 的相關資訊。|
+|[將舊版程式碼調整為編輯器](/visualstudio/extensibility/adapting-legacy-code-to-the-editor?view=vs-2015)|說明調整舊版程式碼（預先 Visual Studio 2010）以擴充編輯器的不同方式。|
+|[遷移舊版語言服務](../extensibility/internals/migrating-a-legacy-language-service.md)|說明如何遷移以 VSPackage 為基礎的語言服務。|
+|[逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|顯示如何將內容類型連結至副檔名。|
+|[逐步解說：建立邊界字元](../extensibility/walkthrough-creating-a-margin-glyph.md)|顯示如何將圖示新增至邊界。|
+|[逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)|示範如何使用*標記*來反白顯示文字。|
+|[逐步解說：加入大綱](../extensibility/walkthrough-outlining.md)|示範如何新增特定大括弧類型的大綱。|
+|[逐步解說：顯示成對的大括弧](../extensibility/walkthrough-displaying-matching-braces.md)|顯示如何反白顯示成對的括弧。|
+|[逐步解說：顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|示範如何顯示描述程式碼專案（例如屬性、方法和事件）的 QuickInfo 快顯視窗。|
+|[逐步解說：顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)|示範如何顯示快顯視窗，以提供簽章中參數數目和類型的相關資訊。|
+|[逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)|顯示如何執行語句完成。|
+|[逐步解說：執行程式碼片段](../extensibility/walkthrough-implementing-code-snippets.md)|示範如何執行程式碼片段擴充。|
+|[逐步解說：顯示燈泡建議](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|顯示如何顯示程式碼建議的淺燈泡。|
+|[逐步解說：搭配編輯器延伸模組使用 shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|示範如何將 VSPackage 中的功能表命令與 MEF 元件產生關聯。|
+|[逐步解說：搭配使用快速鍵與編輯器延伸模組](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|顯示如何將 VSPackage 中的功能表快捷方式與 MEF 元件產生關聯。|
+|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|提供 Managed Extensibility Framework （MEF）的相關資訊。|
+|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|提供 Windows Presentation Foundation （WPF）的相關資訊。|
 
 ## <a name="reference"></a>參考資料
  Visual Studio 編輯器包含下列命名空間。

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e59ee1305c0c482686505959aac7187902906086
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748902"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596745"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>使用類別設計工具C++中的程式碼
 
@@ -39,14 +39,14 @@ ms.locfileid: "72748902"
 
 - 結構
 
-- 列舉
+- Enum
 
 - 巨集 (會顯示巨集的後處理檢視)
 
 - Typedef
 
 > [!NOTE]
-> 這與 UML 類別圖不同，後者可在「模型專案」中建立。 如需詳細資訊，請參閱 [UML 類別圖表：參考](../../modeling/create-uml-modeling-projects-and-diagrams.md)。
+> 這與 UML 類別圖不同，後者可在「模型專案」中建立。 如需詳細資訊，請參閱 [UML 類別圖表：參考](../../modeling/what-s-new-for-design-in-visual-studio.md)。
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>針對類型解析與顯示問題進行疑難排解
 
@@ -84,7 +84,7 @@ ms.locfileid: "72748902"
 
 ### <a name="troubleshoot-other-error-messages"></a>針對其他錯誤訊息進行疑難排解
 
-您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 請參閱 [Visual Studio 類別設計工具論壇](http://go.microsoft.com/fwlink/?linkid=160754)。
+您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 請參閱 [Visual Studio 類別設計工具論壇](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner)。
 
 ## <a name="limitations-for-c-code-elements"></a>C++ 程式碼項目限制
 

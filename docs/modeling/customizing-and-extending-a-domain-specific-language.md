@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e6346f960efe1cd3af6ad9cbd070227d9171f01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9040e65d3e9acce101ee6b481c2cd27d24285169
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654025"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597161"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>自訂及擴充特定領域語言
 
@@ -37,10 +37,10 @@ Visual Studio 模型化和視覺化 SDK （VMSDK）提供數個層級，您可�
 |不同類別的模型專案在圖表上看起來類似，共用屬性，例如初始高度和寬度、色彩、工具提示。|使用圖形或連接器類別之間的繼承。 衍生的圖形與衍生的網域類別之間的對應會繼承父代的對應詳細資料。<br /><br /> 或者，將不同的網域類別對應至相同的 shape 類別。|
 |模型專案的類別是由不同的圖形內容所顯示。|將一個以上的圖形類別對應至相同的網域類別。 當您建立方案時，請遵循錯誤報表，並提供要求的程式碼來決定要使用哪一個圖形。|
 |圖形色彩或其他功能（例如字型）表示目前狀態。|請參閱[更新圖形和連接器以反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)。<br /><br /> 建立可更新已公開屬性的規則。 請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。<br /><br /> 或者，使用 OnAssociatedPropertyChanged （）來更新未公開的功能，例如連結箭號或字型。|
-|圖形上的圖示會變更以指出狀態。|在 [DSL 詳細資料] 視窗中設定裝飾專案對應的可見度。 在相同位置上找出數個影像裝飾專案。 請參閱[更新圖形和連接器以反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)。<br /><br /> 或者，覆寫 `ImageField.GetDisplayImage()`。 請參閱 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField> 中的範例。|
+|圖形上的圖示會變更以指出狀態。|在 [DSL 詳細資料] 視窗中設定裝飾專案對應的可見度。 在相同位置上找出數個影像裝飾專案。 請參閱[更新圖形和連接器以反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)。<br /><br /> 或者，覆寫 `ImageField.GetDisplayImage()`。 請參閱 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>中的範例。|
 |在任何圖形上設定背景影像|覆寫 InitializeInstanceResources （）以加入錨定的 ImageField。|
 |將圖形嵌套到任何深度|設定遞迴內嵌樹狀結構。 定義 BoundsRules 以包含圖形。|
-|在專案界限上的固定點附加連接器。|定義內嵌的終端機元素，以圖表上的小型埠表示。 使用 BoundsRules 來就地修正埠。 請參閱[視覺效果和模型化 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)中的線路圖表範例。|
+|在專案界限上的固定點附加連接器。|定義內嵌的終端機元素，以圖表上的小型埠表示。 使用 BoundsRules 來就地修正埠。 請參閱[視覺效果和模型化 SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)中的線路圖表範例。|
 |文字欄位：顯示衍生自其他值的值。|將文字裝飾專案對應至計算或自訂的儲存網域屬性。 如需詳細資訊，請參閱[計算和自訂儲存體屬性](../modeling/calculated-and-custom-storage-properties.md)。|
 |在模型專案之間或在圖形之間傳播變更|請參閱[以特定領域語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。|
 |將變更傳播至存放區以外的資源，例如其他 Visual Studio 延伸模組。|請參閱[事件處理常式會將變更傳播到模型外部](../modeling/event-handlers-propagate-changes-outside-the-model.md)。|

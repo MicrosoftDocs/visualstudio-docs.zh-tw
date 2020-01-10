@@ -1,5 +1,5 @@
 ---
-title: 偵錯混合模式應用程式 |Microsoft Docs
+title: 偵測混合模式應用程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,12 +25,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9c8e9f36e7118b1681701f6c8ac60a5bc851308f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b462d5d0c449b8e47c936242908e5bbe6e433429
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65691350"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298316"
 ---
 # <a name="debugging-mixed-mode-applications"></a>偵錯混合模式應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "65691350"
   
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>在混合模式偵錯中啟用 C++ 編輯後繼續  
   
-- 若要在 Visual Studio 2013 中使用 C++ 的「編輯後繼續」，您必須還原成舊版偵錯引擎。 請參閱 Microsoft 應用程式生命週期管理部落格上的 [Switching to Managed Compatibility Mode in Visual Studio 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/switching-to-managed-compatibility-mode-in-visual-studio-2013.aspx) (在 Visual Studio 2013 中切換成受控相容性模式)。  
+- 若要在 Visual Studio 2013 中使用 C++ 的「編輯後繼續」，您必須還原成舊版偵錯引擎。 請參閱 Microsoft 應用程式生命週期管理部落格上的 [Switching to Managed Compatibility Mode in Visual Studio 2013](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/) (在 Visual Studio 2013 中切換成受控相容性模式)。  
   
 ## <a name="property-evaluation-in-mixed-mode-applications"></a>混合模式應用程式的屬性評估  
  在混合模式應用程式中，偵錯工具所進行的屬性評估是一種極耗資源的作業。 如此一來，像逐步執行之類的偵錯作業就會顯得相當慢。 如需詳細資訊，請參閱[逐步執行](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)。 如果您在混合模式偵錯的效能非常低，可以考慮關閉偵錯視窗的屬性評估。  

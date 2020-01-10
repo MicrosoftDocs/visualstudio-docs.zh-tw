@@ -1,28 +1,28 @@
 ---
-title: 使用訂閱者入口網站 - http://my.visualstudio.com | Microsoft Docs
+title: 使用訂閱者入口網站 - https://my.visualstudio.com | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶入口網站上提供給您的完整權益
-ms.openlocfilehash: 5ca5d3a2dcdf04e54159c746b93368b7d56be0da
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 13266e018f122ae2b890e8c92bff71ce3016de75
+ms.sourcegitcommit: 36e874928f2933762d2fc6888a46236e376455d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095317"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75546222"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>使用訂閱者入口網站 - my.visualstudio.com
 
 Visual Studio 訂閱者入口網站 ([https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)) 是您可以完整運用 Visual Studio 訂用帳戶權益的單一位置。
 
-若要使用入口網站，您必須以和訂閱相關聯的身分識別登入。  這可能是您的 Microsoft 帳戶 (MSA)，或是由組織 (例如您的雇主或學校) 提供給您的電子郵件地址。  了解[登入](signing-in.md)。
+若要使用入口網站，您必須以和訂閱相關聯的身分識別登入。  這可能是您的 Microsoft 帳戶（MSA）或組織提供給您的電子郵件地址，例如您的雇主或學校。  了解[登入](signing-in.md)。
 
 入口網站一共整理為六個頁面。  每個頁面都能讓您存取包含在您訂閱中各種不同的產品或服務。  六個頁面為 [權益]、[下載]、[產品金鑰]、[訂閱]、[支援] 及 [Marketplace]。
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmc_idomsftdocs"></a>[權益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-包含在您訂閱中的工具和服務，都會在 [權益] 頁面上以「磚」的形式顯示。  訂閱並不一定會包含全部的權益。 磚可分為三個類別：工具、專業開發、支援。  
+包含在您訂閱中的工具和服務，都會在 [權益] 頁面上以「磚」的形式顯示。  訂閱並不一定會包含全部的權益。 磚會分組為三個類別：[工具]、[專業開發] 及 [支援]。  
 
 ### <a name="tools"></a>工具
 您可以在 [工具] 類別找到核心開發工具，例如 Visual Studio IDE、Azure DevOps，以及由我們合作夥伴所提供的工具。  您也會看到 Azure 和 Visual Studio App Center 等服務。

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - walkthrough [Visual Studio ALM], visualizing code
 - walkthrough [Visual Studio ALM], modeling software
 - walkthroughs [Visual Studio ALM], modeling software
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 927b1105d0ab1234f63bd08a6f4a5ac0c078bb5e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 371eadd1438d33601b90ebfae0432c20841c313c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670826"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591979"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 
@@ -81,10 +81,10 @@ Lucerne 則維持一個相當大型且複雜的系統集合，其中有些系統
 
 ||**使用者需求模型化**|**商務程序模型化**|**系統架構與設計**|**程式碼視覺化與探索**|**驗證**|
 |------|-|-|-|-|-|
-|領域特定語言 (DSL) 圖表|[是]|[是]|[是]|||
-|相依性圖表，圖層驗證|||[是]|[是]|[是]|
-|Code Map|||[是]|[是]|[是]|
-|類別設計工具 (以程式碼為基礎)||||[是]||
+|領域特定語言 (DSL) 圖表|是|是|是|||
+|相依性圖表，圖層驗證|||是|是|是|
+|Code Map|||是|是|是|
+|類別設計工具 (以程式碼為基礎)||||是||
 
 若要繪製相依性圖表，您必須建立模型專案做為現有方案的一部分或新的解決方案。 這些圖表必須在模型專案中建立。
 相依性圖表上的專案位於模型專案中，但不會儲存在一般模型中。 由程式碼建立的 Code Map 與 .NET 類別圖表則位在模型專案之外。
@@ -144,8 +144,8 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
 |**地圖或圖表**|**顯示**|
 |-|-|
-|*Code Map*<br /><br /> 請參閱：<br /><br /> - [對應方案之間的](../modeling/map-dependencies-across-your-solutions.md)相依性<br />- [流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)<br />-  藉[由編輯 DGML 檔案自訂 code map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|程式碼中的相依性及其他關聯性<br /><br /> 例如，Dinner Now 可能一開始會檢閱組件 Code Map，以取得組件及其相依性的概觀。 他們可以深入研究此地圖，以探索這些組件中的命名空間及類別。<br /><br /> Dinner Now 也可以建立地圖，以探索程式碼中的特定區域及其他種類的關聯性。 他們可以使用 [方案總管] 來尋找並選取其感興趣的區域及關聯性。|
-|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱[如何：將類別圖表新增至專案 (類別設計工具)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|程式碼中的現有類別|
+|*Code Map*<br /><br /> 請參閱：<br /><br /> - [對應方案之間的](../modeling/map-dependencies-across-your-solutions.md)相依性<br />- [流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)<br />- 藉[由編輯 DGML 檔案自訂 code map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|程式碼中的相依性及其他關聯性<br /><br /> 例如，Dinner Now 可能一開始會檢閱組件 Code Map，以取得組件及其相依性的概觀。 他們可以深入研究此地圖，以探索這些組件中的命名空間及類別。<br /><br /> Dinner Now 也可以建立地圖，以探索程式碼中的特定區域及其他種類的關聯性。 他們可以使用 [方案總管] 來尋找並選取其感興趣的區域及關聯性。|
+|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|程式碼中的現有類別|
 
  例如，開發人員建立了 Code Map。 接著調整其範圍以便將焦點放在新情節會影響的區域。 這些區域在地圖上會處於選取及醒目提示的狀態：
 
@@ -165,14 +165,14 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
 |**圖表**|**描述**|
 |-|-|
-|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱[如何：將類別圖表新增至專案 (類別設計工具)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|程式碼中的現有類別。|
+|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|程式碼中的現有類別。|
 
 ### <a name="ValidatingCode"></a>讓程式碼與設計保持一致
  Dinner Now 必須確定已更新的程式碼與設計保持一致。 他們會建立描述系統中功能層的相依性圖表、指定它們之間允許的相依性，以及將方案成品關聯至這些圖層。
 
 |**圖表**|**描述**|
 |-|-|
-|*相依性圖表*<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立](../modeling/create-layer-diagrams-from-your-code.md)相依性圖表<br />-  相依性[圖表：參考](../modeling/layer-diagrams-reference.md)<br />-  相依性[圖表：方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 相依性圖表會將 Visual Studio 方案中的成品組織並對應到稱為「*圖層*」的抽象群組。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 相依性圖表適用于描述系統的預定設計，並根據該設計來驗證不斷演變的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要查看現有的相依性，請以滑鼠右鍵按一下相依性圖表介面，然後按一下 [產生相依性 **]** 。 若要指定預定的相依性，請繪製新相依性。|
+|*相依性圖表*<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立](../modeling/create-layer-diagrams-from-your-code.md)相依性圖表<br />- 相依性[圖表：參考](../modeling/layer-diagrams-reference.md)<br />- 相依性[圖表：方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 相依性圖表會將 Visual Studio 方案中的成品組織並對應到稱為「*圖層*」的抽象群組。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 相依性圖表適用于描述系統的預定設計，並根據該設計來驗證不斷演變的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要查看現有的相依性，請以滑鼠右鍵按一下相依性圖表介面，然後按一下 [產生相依性 **]** 。 若要指定預定的相依性，請繪製新相依性。|
 
 例如，下列相依性圖表描述圖層之間的相依性，以及與每個圖層相關聯的成品數目：
 
@@ -240,7 +240,7 @@ Dinner Now 擁有大型自動化測試集合，因為這些測試幾乎仍適用
 
 - [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)
 
-- [使用版本控制](http://go.microsoft.com/fwlink/?LinkID=525605)
+- [使用版本控制](/azure/devops/repos/tfvc/overview?view=azure-devops)
 
 - [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
 
@@ -329,8 +329,8 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 |**圖表**|**描述**|
 |-|-|
-|相依性圖表|系統的邏輯架構。 使用相依性驗證，確保程式碼與設計保持一致。<br /><br /> 若要協助您識別現有的相依性或預定的相依性，請建立 Code Map 並將相關的專案群組在一起。 若要建立相依性圖表，請參閱：<br /><br /> - [從您的程式碼建立](../modeling/create-layer-diagrams-from-your-code.md)相依性圖表<br />-  相依性[圖表：方針](../modeling/layer-diagrams-guidelines.md)|
-|類別圖表 (以程式碼為基礎)|特定專案程式碼中的現有類別。<br /><br /> 若要修改程式碼中的現有類別並將其視覺化，請使用 [類別設計工具]。<br /><br /> 請參閱[如何：將類別圖表新增至專案 (類別設計工具)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|
+|相依性圖表|系統的邏輯架構。 使用相依性驗證，確保程式碼與設計保持一致。<br /><br /> 若要協助您識別現有的相依性或預定的相依性，請建立 Code Map 並將相關的專案群組在一起。 若要建立相依性圖表，請參閱：<br /><br /> - [從您的程式碼建立](../modeling/create-layer-diagrams-from-your-code.md)相依性圖表<br />- 相依性[圖表：方針](../modeling/layer-diagrams-guidelines.md)|
+|類別圖表 (以程式碼為基礎)|特定專案程式碼中的現有類別。<br /><br /> 若要修改程式碼中的現有類別並將其視覺化，請使用 [類別設計工具]。<br /><br /> 請參閱 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|
 
 ### <a name="DefineClasses"></a> 定義類型的詞彙：類別圖表
  類別圖表定義參與系統的實體、詞彙或概念，以及彼此的關聯性。 例如，您可以在開發期間使用這些圖表來描述每個類別的屬性及作業，不論其實作語言或樣式為何。
@@ -396,9 +396,9 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 #### <a name="relationship-to-other-diagrams"></a>與其他圖表的關聯性
 
-|**圖表**|**說明**|
+|**圖表**|**描述**|
 |-|-|
-|相依性圖表|定義與類別相關的系統邏輯架構。<br /><br /> 使用相依性驗證，確保程式碼與設計保持一致。<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立](../modeling/create-layer-diagrams-from-your-code.md)相依性圖表<br />-  相依性[圖表：參考](../modeling/layer-diagrams-reference.md)<br />-  相依性[圖表：方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|
+|相依性圖表|定義與類別相關的系統邏輯架構。<br /><br /> 使用相依性驗證，確保程式碼與設計保持一致。<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立](../modeling/create-layer-diagrams-from-your-code.md)相依性圖表<br />- 相依性[圖表：參考](../modeling/layer-diagrams-reference.md)<br />- 相依性[圖表：方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|
 |Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要識別類別、其關聯性及方法，請建立會顯示這些項目的 Code Map。<br /><br /> 請參閱：<br /><br /> - [對應方案之間的](../modeling/map-dependencies-across-your-solutions.md)相依性|
 
 ### <a name="DescribeLayers"></a>描述邏輯架構：相依性圖表
@@ -470,7 +470,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 #### <a name="relationship-to-other-diagrams"></a>與其他圖表的關聯性
 
-|**圖表**|**說明**|
+|**圖表**|**描述**|
 |-|-|
 |Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要建立圖層，請產生 Code Map，然後在地圖上將項目分組為可能的圖層。 將 [群組] 從 [對應] 拖曳至 [相依性] 圖表。<br /><br /> 請參閱：<br /><br /> - [對應方案之間的](../modeling/map-dependencies-across-your-solutions.md)相依性<br />- [流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)|
 
@@ -478,7 +478,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 |**分類**|**Links**|
 |-|-|
-|**論壇**|- [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**論壇**|- [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
 ## <a name="see-also"></a>請參閱
 

@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652813"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588625"
 ---
 # <a name="language-conventions"></a>語言慣例
 
@@ -37,12 +37,12 @@ Visual Studio 中 EditorConfig 的語言慣例分為兩類：適用於 Visual Ba
 
 `option_name = value:severity`
 
-您可以針對每個語言慣例，指定一個定義是否有偏好的樣式和偏好樣式使用時機的值。 許多規則都會接受 `true` （偏好使用此樣式）或 `false` （不偏好此樣式）的值。 其他規則會接受 `when_on_single_line` 或 `never` 之類的值。 第二個部分、指定 [[嚴重性]](#severity-levels) 的規則。
+您可以針對每個語言慣例，指定一個定義是否有偏好的樣式和偏好樣式使用時機的值。 許多規則都會接受 `true` （偏好使用此樣式）或 `false` （不偏好此樣式）的值。 其他規則會接受 `when_on_single_line` 或 `never`之類的值。 第二個部分、指定 [[嚴重性]](#severity-levels) 的規則。
 
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> 因為分析器會強制語言慣例，所以您也可以流量分析器的預設設定語法來設定其嚴重性。 語法會採用 `dotnet_diagnostic.<rule ID>.severity = <severity>` 的格式，例如 `dotnet_diagnostic.IDE0040.severity = silent`。 如需詳細資訊，請參閱[在 EditorConfig 檔案中設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)。
+> 因為分析器會強制語言慣例，所以您也可以流量分析器的預設設定語法來設定其嚴重性。 語法會採用 `dotnet_diagnostic.<rule ID>.severity = <severity>`的格式，例如 `dotnet_diagnostic.IDE0040.severity = silent`。 如需詳細資訊，請參閱[在 EditorConfig 檔案中設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)。
 
 ::: moniker-end
 
@@ -66,7 +66,7 @@ Severity | 作用
 
 若要變更程式碼樣式慣例：
 
-1. 將滑鼠停留在編輯器中的波浪線上，然後開啟顯示的燈泡功能表。 選擇 [**設定] 或 [隱藏問題**]  > **設定 \<rule 識別碼 > 程式碼樣式**。
+1. 將滑鼠停留在編輯器中的波浪線上，然後開啟顯示的燈泡功能表。 選擇 [**設定] 或 [隱藏問題**] > **設定 \<規則識別碼 > 程式碼樣式**。
 
    ![從 Visual Studio 中的燈泡功能表設定程式碼樣式](media/vs-2019/configure-code-style.png)
 
@@ -76,7 +76,7 @@ Severity | 作用
 
    Visual Studio 在 EditorConfig 檔案中新增或修改設定，如 [預覽] 方塊所示。
 
-若要變更程式碼樣式違規的嚴重性，請遵循相同的步驟，但選擇 [**設定 \<rule 識別碼 > 嚴重性**]，而不是 [**設定 \<rule 識別碼] > [程式碼樣式**]。 如需詳細資訊，請參閱[自動設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)。
+若要變更程式碼樣式違規的嚴重性，請遵循相同的步驟，但選擇 [**設定 \<規則識別碼 > 嚴重性**]，而不是 [**設定 \<規則識別碼] > [程式碼樣式**]。 如需詳細資訊，請參閱[自動設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)。
 
 ::: moniker-end
 

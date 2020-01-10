@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, configuring run settings
 ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 35da7997e5a0e3260064e6f3de7ac4f9e0740fa4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ffc9d6c2e563fcd16a61e91eaa94889de8607efc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665228"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595978"
 ---
 # <a name="configure-load-test-run-settings"></a>設定負載測試回合設定
 
@@ -29,7 +29,7 @@ ms.locfileid: "72665228"
 
 ## <a name="tasks"></a>工作
 
-|工作|相關主題|
+|工作|相關的主題|
 |-|-|
 |**將其他回合設定新增至負載測試：** 除了執行 [新增負載測試精靈] 時所建立的回合設定以外，您還可以將其他回合設定新增至負載測試，以便在不同的狀況下執行測試。|-   [如何：將其他回合設定新增至負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**指定要搭配負載測試使用的使用中回合設定：** 您可以使用 [負載測試編輯器] 來選取想要搭配負載測試使用的回合設定。 現用回合設定可由 "[Active]" 後置字元加以識別。|-   [如何：選取負載測試的使用中回合設定](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|

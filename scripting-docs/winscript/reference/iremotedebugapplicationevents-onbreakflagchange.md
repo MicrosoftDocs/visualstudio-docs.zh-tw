@@ -53,6 +53,6 @@ HRESULT OnBreakFlagChange(
 ## <a name="remarks"></a>備註  
  當中斷旗標變更時，這個方法會處理事件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IRemoteDebugApplicationEvents 介面](../../winscript/reference/iremotedebugapplicationevents-interface.md)   
  [APPBREAKFLAGS 列舉](../../winscript/reference/appbreakflags-enumeration.md)

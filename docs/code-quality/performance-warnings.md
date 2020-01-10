@@ -10,17 +10,17 @@ helpviewer_keywords:
 - performance, warnings
 - managed code analysis warnings, performance warnings
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ebbe15bdcef27b7b19474b2c42f0b62741fd53a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 42f188901db72378acfd1dee8e22c9a2261b8eb9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649160"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587247"
 ---
 # <a name="performance-warnings"></a>效能警告
 效能警告支援高效能程式庫和應用程式。
@@ -31,7 +31,7 @@ ms.locfileid: "72649160"
 | - | - |
 | [CA1800：不要執行不必要的轉型](../code-quality/ca1800.md) | 重複轉型會降低效能，尤其是在精簡型態的反覆運算陳述式中執行轉型時。 |
 | [CA1801：必須檢閱未使用的參數](../code-quality/ca1801.md) | 方法簽章包括不用於方法主體中的參數； |
-| [CA1802：建議在適當時使用常值](../code-quality/ca1802.md) | 欄位會宣告為靜態和唯讀（在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中為 Shared 和 ReadOnly），並使用在編譯時期可的值進行初始化。 因為指派給目標欄位的值是在編譯時期可，所以請將宣告變更為 const （[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中的 Const）欄位，以便在編譯時期（而不是在執行時間）計算該值。 |
+| [CA1802：建議在適當時使用常值](../code-quality/ca1802.md) | 欄位會宣告為靜態和唯讀（在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中為 Shared 和 ReadOnly），並使用在編譯時期可的值進行初始化。 因為指派給目標欄位的值是在編譯時期可，所以請將宣告變更為 const （[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中的 Const）欄位，以便在編譯時期（而不是在執行時間）計算該值。 |
 | [CA1804：必須移除未使用的區域變數](../code-quality/ca1804.md) | 未使用的區域變數和不必要的設定，會增加組件的大小並降低效能。 |
 | [CA1806：不要忽略方法的結果](../code-quality/ca1806.md) | 已建立但從未使用的新物件，或已呼叫建立並傳回新字串的方法，但從未使用過新字串，或元件物件模型（COM）或 P/Invoke 方法會傳回從未使用的 HRESULT 或錯誤碼。 |
 | [CA1809：避免在方法中包含過多區域變數](../code-quality/ca1809.md) | 常見的效能最佳化作法是在處理器暫存器中儲存值，而非記憶體，這稱為「註冊 (Enregistering) 值」。  若要增加 enregistered 所有區域變數的機率，請將本機變數的數目限制為64。 |

@@ -1,5 +1,5 @@
 ---
-title: '&lt;簽章&gt;項目 （ClickOnce 部署） |Microsoft Docs'
+title: '&lt;Signature&gt; 元素（ClickOnce 部署） |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -15,14 +15,14 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df18b63ff306525cba74ef0932c97edd64eee797
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db696546fdd64199753054b38fa2ac554f6a774f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68198112"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295079"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;簽章&gt;項目 （ClickOnce 部署）
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature&gt; 元素（ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 包含對此部署資訊清單進行數位簽章時所需的資訊。  
@@ -37,12 +37,12 @@ ms.locfileid: "68198112"
 ```  
   
 ## <a name="remarks"></a>備註  
- 使用包裹簽章為部署資訊清單簽署是選擇性的但建議使用。 如需有關簽署 XML 檔案，請參閱全球資訊網協會建議事項 「 XML 簽章語法和處理，」 所述[ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/)。  
+ 使用信封簽名來簽署部署資訊清單是選擇性的，但建議使用。 如需簽署 XML 檔案的詳細資訊，請參閱[http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/)所述的「xml 簽章語法和處理」全球資訊網協會建議。  
   
- 如果您想要登入您的資訊清單，就必須提供雜湊的所有檔案。 無法簽署資訊清單的檔案，不會進行雜湊，因為使用者無法驗證雜湊檔案的內容。  
+ 如果您想要簽署資訊清單，則必須提供所有檔案的雜湊。 無法簽署含有未雜湊之檔案的資訊清單，因為使用者無法確認未雜湊檔案的內容。  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例說明`Signature`中所使用的部署資訊清單中的項目[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署。  
+ 下列程式碼範例說明 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署中所使用之部署資訊清單中的 `Signature` 元素。  
   
 ```  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  

@@ -24,13 +24,13 @@ ms.locfileid: "72576486"
 # <a name="expected--in-regular-expression-javascript"></a>在規則運算式中必須是 ']' (JavaScript)
 您嘗試建立正則運算式比對的字元類別，但未包含右括弧。 個別的常值字元組合可以組合成字元類別，方法是將它們放在方括弧內。 字元類別符合其中包含的任何一個字元。 例如，/[abc]/符合任何一個字母 "a"、"b" 或 "c"。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 在正則運算式中加入右括弧。  
   
     > [!NOTE]
-    > 如果您想要比對單一括弧，請使用反斜線-\\ [-因此不會 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 將它解讀為特殊字元。  
+    > 如果您想要比對單一括弧，請使用反斜線-\\[-因此不會 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]將它解讀為特殊字元。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [正則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
  [正則運算式語法（JavaScript）](https://msdn.microsoft.com/library/1400241x)

@@ -1,5 +1,5 @@
 ---
-title: 移至行
+title: 跳至指定行
 ms.date: 05/18/2018
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code, locating lines
 - Go To Line dialog box
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d70df94b8b15037b9c4ce6f7830faa50f2d6c7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0ac8b07e5e788a258e39cce5209b33c0190b08bf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748737"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569188"
 ---
 # <a name="go-to-line-dialog-box"></a>移至行對話方塊
 

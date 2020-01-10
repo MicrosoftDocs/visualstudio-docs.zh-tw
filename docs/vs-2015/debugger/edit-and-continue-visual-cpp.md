@@ -1,5 +1,5 @@
 ---
-title: 編輯後繼續 (Visual C++) |Microsoft Docs
+title: 編輯後繼續（Visual C++） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,34 +18,34 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 752454f9a52807766d6eef5b2563a7b70ca0f4dd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fef02f08ac635687eaaf071188ba0455c6389d9e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697387"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301050"
 ---
-# <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
+# <a name="edit-and-continue-visual-c"></a>編輯後繼續 (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以在 Visual C++ 專案中，使用 [編輯後繼續]。 請參閱[支援的程式碼變更 (C++)](../debugger/supported-code-changes-cpp.md)如需編輯後繼續的限制。  
+您可以在 Visual C++ 專案中，使用 [編輯後繼續]。 如需 [編輯後繼續] 限制的相關資訊，請參閱支援的程式[代碼變更（C++）](../debugger/supported-code-changes-cpp.md) 。  
   
- 從 Visual Studio 2015 Update 1 開始，您現在可以使用 編輯後繼續在 Windows 市集C++應用程式和 DirectX 應用程式，因為它現在支援 **/ZI**編譯器參數和 **/bigobj**切換。 您也可以使用編譯的二進位檔使用 編輯後繼續 **/FASTLINK**切換。  
+ 從 Visual Studio 2015 Update 1 開始，您現在可以在 Windows Store C++應用程式和 DirectX 應用程式中使用 [編輯後繼續]，因為它現在支援使用 **/Bigobj**參數的 **/zi**編譯器參數。 您也可以使用 [編輯後繼續] 搭配使用**以/fastlink 所**參數所編譯的二進位檔。  
   
- 其他 Update 1 改進功能包括新的可取消等待對話方塊，以及當檔案不支援 [編輯後繼續] 時的通知。 如需有關 Update 1 改進功能的詳細資訊，請參閱[改進C++編輯後繼續在 Visual Studio 2015 Update 1 中](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx)。  
+ 其他 Update 1 改進功能包括新的可取消等待對話方塊，以及當檔案不支援 [編輯後繼續] 時的通知。 如需 Update 1 改良功能的詳細資訊，請參閱[Visual Studio 2015 Update 1 中的 [編輯後繼續] C++的改善](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/)。  
   
  在 Visual Studio 2013 Update 3 中推出的 [/Zo (增強最佳化偵錯)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) 編譯器選項會將額外資訊新增至不使用 [/Od (停用 (偵錯))](https://msdn.microsoft.com/library/aafb762y.aspx) 選項編譯之二進位碼檔案的 .pdb (符號) 檔案。  
   
- **/Zo**會停用編輯後繼續。 請參閱[如何：對最佳化程式碼進行偵錯](../debugger/how-to-debug-optimized-code.md)。  
+ **/Zo**會停用 [編輯後繼續]。 請參閱[如何：對最佳化程式碼進行偵錯](../debugger/how-to-debug-optimized-code.md)。  
   
 ## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> 啟用或停用編輯後繼續  
  如果您不希望在目前的偵錯工作階段中套用正在編輯的程式碼內容，您可能需要停用 [編輯後繼續] 的自動引動過程。 您也可以重新啟用自動的 [編輯後繼續]。  
   
 1. 在 [ **工具** ] 功能表上選擇 [ **選項**]。  
   
-2. 在 [選項]  對話方塊中，選取 [偵錯/一般] 。  
+2. 在 [選項] 對話方塊中，選取 [偵錯/一般]。  
   
-3. 在 [編輯後繼續]  群組中，選取或清除 [啟用原生編輯後繼續]  核取方塊。  
+3. 在 [編輯後繼續] 群組中，選取或清除 [啟用原生編輯後繼續] 核取方塊。  
   
    修改這個設定會影響您處理的所有專案。 變更這個設定之後不需要重建應用程式。 即使在進行偵錯時，也可以變更設定。 如果您從命令列或 makefile 建置應用程式，但是在 Visual Studio 環境中進行偵錯，只要您設定了 **/ZI** 選項，就仍然可以使用 [編輯後繼續]。  
   
@@ -54,14 +54,14 @@ ms.locfileid: "65697387"
   
  當您明確套用程式碼變更，而程式仍處於中斷模式時，則不會執行。  
   
-- 若要明確套用程式碼變更，請在 [偵錯]  功能表上，選擇 [套用程式碼變更] 。  
+- 若要明確套用程式碼變更，請在 [偵錯] 功能表上，選擇 [套用程式碼變更]。  
   
 ## <a name="BKMK_How_to_stop_code_changes"></a> 如何停止程式碼變更  
  當 [編輯後繼續] 正在套用程式碼變更時，您可以停止該作業。  
   
  若要停止套用程式碼變更：  
   
-- 在 [偵錯]  功能表上，選擇 [停止套用程式碼變更] 。  
+- 在 [偵錯] 功能表上，選擇 [停止套用程式碼變更]。  
   
   只有套用程式碼變更時，才能看見這個功能表項目。  
   

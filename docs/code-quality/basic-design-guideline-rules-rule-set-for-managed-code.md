@@ -3,17 +3,17 @@ title: 適用於 Managed 程式碼的基本設計方針規則規則集
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: adc461e9620641084ce8a7fabc7b5a06c8a3bb73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cf30e3294c1a96e64efd47ffd14f03328ebec62c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608829"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573180"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本設計方針規則規則集
 

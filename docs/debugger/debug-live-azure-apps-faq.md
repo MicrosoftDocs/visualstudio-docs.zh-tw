@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211209"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911399"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中快照集偵錯的常見問題集
 
@@ -31,7 +31,7 @@ ms.locfileid: "71211209"
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>快照偵錯工具如何載入符號？
 
-快照偵錯工具要求在本機有您應用程式的相符符號，或將符號部署至您的 Azure App Service。 (目前不支援內嵌的 PDB。)快照偵錯工具會自動從您的 Azure App Service 下載符號。 從 Visual Studio 2017 15.2 版開始，部署至 Azure App Service 也會部署您應用程式的符號。
+快照偵錯工具要求在本機有您應用程式的相符符號，或將符號部署至您的 Azure App Service。 （目前不支援內嵌的 Pdb）。快照偵錯工具會自動從您的 Azure App Service 下載符號。 從 Visual Studio 2017 15.2 版開始，部署至 Azure App Service 也會部署您應用程式的符號。
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>快照偵錯工具是否可用於應用程式的發行組建？
 
@@ -125,7 +125,7 @@ ms.locfileid: "71211209"
 
    - 伺服器憑證
       - 對應的伺服器憑證指紋會部署為 Azure KeyVault 的秘密。 VS 會嘗試在對應至虛擬機器或虛擬機器擴展集資源的區域中，尋找或建立具有前置詞 MSVSAZ * 的 KeyVault。 因此，所有部署到該區域的虛擬機器或虛擬機器擴展集資源，將會共用相同的 KeyVault。
-      - 若要刪除伺服器憑證指紋密碼，請移至 Azure 入口網站，並在裝載資源的相同區域中尋找 MSVSAZ * KeyVault。 刪除應該加上標籤的密碼`remotedebugcert<<ResourceName>>`
+      - 若要刪除伺服器憑證指紋密碼，請移至 Azure 入口網站，並在裝載資源的相同區域中尋找 MSVSAZ * KeyVault。 刪除應該加上標籤的密碼 `remotedebugcert<<ResourceName>>`
       - 您也必須透過 PowerShell 從您的資源刪除伺服器密碼。
 
       針對虛擬機器：
@@ -181,7 +181,7 @@ ms.locfileid: "71211209"
 
 - Azure 入口網站 > 您的虛擬機器/虛擬機器擴展集資源 blade > 延伸模組 > 卸載 VMDiagnosticsSettings 擴充功能
 
-- 來自[Az powershell](https://docs.microsoft.com/powershell/azure/overview)的 powershell Cmdlet
+- 來自[Az powershell](/powershell/azure/overview)的 powershell Cmdlet
 
    虛擬機器：
 
@@ -196,7 +196,7 @@ ms.locfileid: "71211209"
       Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
    ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [使用快照偵錯工具來進行即時 ASP.NET 應用程式的 Debug](../debugger/debug-live-azure-applications.md)

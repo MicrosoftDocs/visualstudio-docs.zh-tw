@@ -47,7 +47,7 @@ HRESULT Abort();
 ## <a name="remarks"></a>備註  
  這個方法通常會從偵錯工具執行緒中呼叫，以取消沒有回應的作業。 這個方法會在呼叫 `IDebugSyncOperation` 物件上的 `InProgressAbort` 方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugAsyncOperation 介面](../../winscript/reference/idebugasyncoperation-interface.md)   
- [IDebugAsyncOperation：： Start](../../winscript/reference/idebugasyncoperation-start.md)    
+ [IDebugAsyncOperation：： Start](../../winscript/reference/idebugasyncoperation-start.md)   
  [IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)

@@ -9,19 +9,19 @@ helpviewer_keywords:
 - automate
 - installation
 - command-line
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: eb822a275f55b8c0f833f0c284aba2fd663a27fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 43a4212a9faf0b7fef3395a847e8c614507e56df
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974445"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588524"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>如何在回應檔中定義設定
 
@@ -156,6 +156,7 @@ vs_enterprise.exe --in customInstall.json
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
+* [當您安裝或使用 Visual Studio 時，針對網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md)

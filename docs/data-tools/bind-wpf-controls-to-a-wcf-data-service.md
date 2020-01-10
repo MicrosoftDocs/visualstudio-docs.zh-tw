@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 15a34fdc4486a013999a6b53e34117008396c955
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: ef13f400ff762818eb97396c51330d755c0203c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807007"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586961"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 
@@ -40,7 +40,7 @@ ms.locfileid: "72807007"
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 您需要下列元件才能完成此逐步解說：
 
@@ -56,7 +56,7 @@ ms.locfileid: "72807007"
 
 - 實體資料模型及 ADO.NET Entity Framework。 如需詳細資訊，請參閱[Entity Framework 總覽](/dotnet/framework/data/adonet/ef/overview)。
 
-- WPF 資料繫結。 如需詳細資訊，請參閱[資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)。
+- WPF 資料繫結。 如需詳細資訊，請參閱[資料繫結概觀](/dotnet/desktop-wpf/data/data-binding-overview)。
 
 ## <a name="create-the-service-project"></a>建立服務專案
 
@@ -265,7 +265,7 @@ ms.locfileid: "72807007"
 
 1. 在 [**建立**] 功能表上，按一下 [**建立方案**]。 確認方案建置無誤。
 
-2. 按**Ctrl** +**F5**。
+2. 按**Ctrl**+**F5**。
 
      Visual Studio 會啟動 **AdventureWorksService** 專案而不進行偵錯。
 
@@ -301,4 +301,4 @@ ms.locfileid: "72807007"
 - [將 WPF 控制項繫結至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)
 - [WCF 總覽（.NET Framework）](/dotnet/framework/data/wcf/wcf-data-services-overview)
 - [Entity Framework 總覽（.NET Framework）](/dotnet/framework/data/adonet/ef/overview)
-- [資料系結總覽（.NET Framework）](/dotnet/framework/wpf/data/data-binding-overview)
+- [資料系結總覽（.NET Framework）](/dotnet/desktop-wpf/data/data-binding-overview)

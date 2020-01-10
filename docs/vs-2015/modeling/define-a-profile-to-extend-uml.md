@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e621297b36d75a0e48baed4ab24d50abd5e61663
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bdb6620f8d73bf7fae7b7dbb1b92af38e71345b6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668683"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295669"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>定義要擴充 UML 的設定檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "72668683"
 
  數個設定檔會與支援的 Visual Studio 版本一起安裝。 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。 如需有關這些設定檔以及如何套用造型的詳細資訊，請參閱[使用設定檔和造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)。
 
- 您可以定義專屬設定檔來調整 UML 並將其擴充至專屬商業領域或架構。 例如:
+ 您可以定義專屬設定檔來調整 UML 並將其擴充至專屬商業領域或架構。 例如：
 
 - 如果您經常定義網站，則可以定義專屬設定檔，以提供可套用至類別圖中類別的 «網頁» 造型。 您接著可以使用類別圖來規劃網站。 每個 «網頁» 類別都會有頁面內容、樣式等的額外屬性。
 
@@ -76,7 +76,7 @@ ms.locfileid: "72668683"
 6. 將擴充檔傳送給 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的其他使用者，以安裝在其電腦上。
 
 ## <a name="AddProfile"></a>如何將設定檔新增至 Visual Studio 延伸模組
- 若要安裝設定檔，以及讓您將它傳送給其他使用者，則必須將設定檔加入 Visual Studio 擴充功能。 如需詳細資訊，請參閱[部署 Visual Studio 延伸](http://go.microsoft.com/fwlink/?LinkId=160780)模組。
+ 若要安裝設定檔，以及讓您將它傳送給其他使用者，則必須將設定檔加入 Visual Studio 擴充功能。 如需詳細資訊，請參閱[部署 Visual Studio 延伸](https://go.microsoft.com/fwlink/?LinkId=160780)模組。
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>在新的 Visual Studio 擴充功能中定義設定檔
 
@@ -105,7 +105,7 @@ ms.locfileid: "72668683"
 
 5. 在 [**資產**] 頁面上，新增描述設定檔的資料列：
 
-   - 按一下 [新增]。 在 [**加入新資產**] 對話方塊中設定欄位，如下所示。
+   - 按一下 **[新增]** 。 在 [**加入新資產**] 對話方塊中設定欄位，如下所示。
 
    - 將**類型**設定為 `Microsoft.VisualStudio.UmlProfile`
 
@@ -139,7 +139,7 @@ ms.locfileid: "72668683"
 
     - `extension.vsixmanifest`
 
-    - `[Content_Types].xml` - 使用方括號，輸入此處所示的這個名稱
+    - `[Content_Types].xml`-輸入此名稱，如下所示，並以方括弧括住
 
 2. 編輯 `[Content_Types].xml` 以包含下列文字。 請注意，它包含每個副檔名的項目。
 
@@ -196,7 +196,7 @@ ms.locfileid: "72668683"
     > [!NOTE]
     > 如果您是使用 Visual Studio 擴充功能專案來建置擴充功能，請使用 [方案總管] 將新的資料夾加入專案。
 
-3. 將新目錄的名稱變更為當地語系化文化特性的 ISO 簡短程式碼 (例如 `bg` 代表保加利亞文或 `fr` 代表法文)。 您應該使用中性文化特性代碼，通常為兩個字母，而不是特定文化特性 (例如 `fr-CA`)。 如需文化特性代碼的詳細資訊，請參閱[cultureinfo.getcultures 方法](http://go.microsoft.com/fwlink/?LinkId=160782)，它會提供完整的文化特性代碼清單。
+3. 將新目錄的名稱變更為當地語系化文化特性的 ISO 簡短程式碼 (例如 `bg` 代表保加利亞文或 `fr` 代表法文)。 您應該使用中性文化特性代碼，通常為兩個字母，而不是特定文化特性 (例如 `fr-CA`)。 如需文化特性代碼的詳細資訊，請參閱[cultureinfo.getcultures 方法](https://go.microsoft.com/fwlink/?LinkId=160782)，它會提供完整的文化特性代碼清單。
 
 4. 將預設設定檔的複本加入新的目錄。 請不要變更其檔案名稱。
 
@@ -220,7 +220,7 @@ ms.locfileid: "72668683"
 7. 建置 Visual Studio 擴充功能，方法是建置擴充功能專案或壓縮所有檔案 (如前面小節所述)。
 
 ## <a name="Schema"></a>設定檔的結構
- UML 設定檔的 XSD 檔案可以在下列範例中找到：[設定造型和設定檔 xsd](http://go.microsoft.com/fwlink/?LinkID=213811)。 為了協助您編輯設定檔，請將 `.xsd` 檔案安裝在下列位置：
+ UML 設定檔的 XSD 檔案可以在下列範例中找到：[設定造型和設定檔 xsd](https://go.microsoft.com/fwlink/?LinkID=213811)。 為了協助您編輯設定檔，請將 `.xsd` 檔案安裝在下列位置：
 
  **%ProgramFiles%\Microsoft Visual Studio [版本] \Xml\Schemas**
 
@@ -251,14 +251,14 @@ ms.locfileid: "72668683"
 
  每個設定檔都包含三個主要區段。 它們以反向順序顯示如下：
 
-- `<propertyTypes>` - 用於 stereotypes 區段中所定義屬性的類型清單。
+- `<propertyTypes>`-用於造型區段中所定義之屬性的類型清單。
 
-- `<metaclasses>` - 套用此設定檔中造型的模型項目類型清單 (例如 IClass、IInterface、IOperation、IDependency)。
+- `<metaclasses>`-此設定檔中的造型所適用的模型專案類型清單，例如 IClass、IInterface、IOperation、IDependency。
 
-- `<stereotypes>` - 造型定義。 每個定義都包括加入目標模型項目之屬性的名稱和類型。
+- `<stereotypes>`-造型定義。 每個定義都包括加入目標模型項目之屬性的名稱和類型。
 
 #### <a name="property-types"></a>屬性類型
- @No__t_0 區段會宣告 `<stereotypes>` 區段中用於屬性的類型清單。 有兩種屬性類型：外部和列舉。
+ `<propertyTypes>` 區段會宣告 `<stereotypes>` 區段中用於屬性的類型清單。 有兩種屬性類型：外部和列舉。
 
  外部類型宣告標準 .NET 類型的完整名稱：
 
@@ -312,7 +312,7 @@ ms.locfileid: "72668683"
 > [!NOTE]
 > Moniker 名稱的開頭必須是 `/yourProfileName/`，其中 `yourProfileName` 定義於設定檔的 `name` 屬性中 (在此範例中為 "CSharpProfile")。 Moniker 的結尾是 metaclasses 區段中其中一個項目的名稱。
 
- 每個造型都可以列出零或多個屬性，並且會將這些屬性加入套用它的任何模型項目。 @No__t_0 包含 `<propertyTypes>` 區段中所定義之其中一個類型的連結。 連結必須是參照 `<externalTypeMoniker>` 的 `<externalType>,` 或參照 `<enumerationTypeMoniker>` 的 `<enumerationType>`。 同樣地，連結的開頭是您設定檔的名稱。
+ 每個造型都可以列出零或多個屬性，並且會將這些屬性加入套用它的任何模型項目。 `<propertyType>` 包含 `<propertyTypes>` 區段中所定義之其中一個類型的連結。 連結必須是參照 `<externalTypeMoniker>` 的 `<externalType>,` 或參照 `<enumerationTypeMoniker>` 的 `<enumerationType>`。 同樣地，連結的開頭是您設定檔的名稱。
 
 ```
   <properties>
@@ -347,7 +347,7 @@ ms.locfileid: "72668683"
 
 2. 確定每個 Moniker 名稱的格式都是 /profileName/nodeName。 profileName 是根設定檔節點中 name 屬性的值。 nodeName 是 metaclass、externalType 或 enumerationType 的 name 屬性值。
 
-3. 請確定語法如這裡所述，並如_drive_ **： \Program Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles \\** 中所示。
+3. 請確定語法如這裡所述，並如_drive_ **： \Program Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** 中所示。
 
 4. 解除安裝錯誤擴充功能。 在 [工具] 功能表上，按一下 [擴充功能和更新]。
 
@@ -356,13 +356,13 @@ ms.locfileid: "72668683"
 5. 重建 VSIX 檔案，並在 Windows 檔案總管中開啟它進行重新安裝。 重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。
 
    延伸模組不會出現在 [擴充管理員] 中，但當您嘗試重新安裝時，會出現下列訊息：**已將延伸模組安裝到所有適用的產品。**
-   1. 從*LocalAppData*\Microsoft\VisualStudio \\ [version] \Extensions\ 的子資料夾中移除延伸模組檔案。
+   1. 從*LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\ 的子資料夾中移除延伸模組檔案。
 
    - 若要查看*LocalAppData*，您必須在 Windows Explorer 資料夾選項的 [視圖] 索引標籤中，設定 [顯示隱藏的檔案和資料夾]。
 
-   - *LocalAppData*通常位於 C:\Users \\ 使用者*名稱*\AppData\Local\
+   - *LocalAppData*通常位於 C:\Users\\使用者*名稱*\AppData\Local\
 
 6. 重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。
 
-## <a name="see-also"></a>請參閱
- [將造型加入 uml 模型](../modeling/add-stereotypes-to-uml-model-elements.md)專案[使用設定檔和造型標準造型自訂模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)範例：依造型[為](../modeling/standard-stereotypes-for-uml-models.md) [uml 元素著色](http://go.microsoft.com/fwlink/?LinkID=213841)[範例：設定造型、設定檔 XSD](http://go.microsoft.com/fwlink/?LinkID=213811)
+## <a name="see-also"></a>另請參閱
+ [將造型加入 uml 模型](../modeling/add-stereotypes-to-uml-model-elements.md)專案[使用設定檔和造型標準造型自訂模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)範例：依造型[為](../modeling/standard-stereotypes-for-uml-models.md) [uml 元素著色](https://go.microsoft.com/fwlink/?LinkID=213841)[範例：設定造型、設定檔 XSD](https://go.microsoft.com/fwlink/?LinkID=213811)

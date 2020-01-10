@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e7d7548eef3fd6ca6a21bb8c2fe5cb23e27df1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 36c2790378f91c4217dbca2cf190ae6e649a03c3
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650609"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189760"
 ---
 # <a name="control-flow-activity-designers"></a>Control Flow 活動設計工具
 
@@ -47,7 +47,7 @@ ms.locfileid: "72650609"
 
 如需其他類型的活動設計工具，請參閱下列主題：
 
- [使用活動設計工具](../workflow-designer/using-the-activity-designers.md)
+ [使用活動設計工具](control-flow-activity-designers.md)
 
  [流程圖](../workflow-designer/flowchart-activity-designers.md)
 
@@ -65,4 +65,4 @@ ms.locfileid: "72650609"
 
 ## <a name="external-resources"></a>外部資源
 
-- [使用活動設計工具](../workflow-designer/using-the-activity-designers.md)
+- [使用活動設計工具](control-flow-activity-designers.md)

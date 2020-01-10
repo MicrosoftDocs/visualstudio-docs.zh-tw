@@ -1,7 +1,7 @@
 ---
 title: 針對網路或 Proxy 錯誤進行疑難排解
 description: 針對您在使用防火牆或 Proxy 伺服器的情況下安裝或使用 Visual Studio 時可能會遇到的網路或 Proxy 相關錯誤，尋找解決方案。
-ms.date: 05/22/2019
+ms.date: 10/29/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - list of domains, locations, URLs, Visual Studio
 - proxy errors, Visual Studio
 ms.assetid: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7879efca149c31fbe3114b0ddfcba2f2a347f5e6
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 44f18e64db08efa848c498f8956d61a79c24846d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062792"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594457"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>當您安裝或使用 Visual Studio 時，針對網路相關錯誤進行疑難排解
 
@@ -133,9 +133,22 @@ Visual Studio 使用傳輸層安全性 (TLS) 1.2 通訊協定連線到網路資�
   > [!NOTE]
   > 此清單可能不含私人擁有的 NuGet 伺服器 URL。 您可以在 %APPData%\Nuget\NuGet.Config 中檢查您所使用的 NuGet 伺服器。
 
+## <a name="error-failed-to-parse-id-from-parent-process"></a>錯誤：「無法從父進程剖析識別碼」
+
+當您使用 Visual Studio 啟動載入器和網路磁碟機機上的回應. json 檔案時，可能會遇到這個錯誤訊息。 錯誤的來源是 Windows 中的使用者帳戶控制（UAC）。
+
+以下是可能發生此錯誤的原因：對應的網路磁碟機機或[UNC](/dotnet/standard/io/file-path-formats#unc-paths)共用已連結至使用者的存取權杖。 當啟用 UAC 時，會建立兩個使用者[存取權杖](/windows/win32/secauthz/access-tokens)：一個*具備*系統管理員存取權，另一個則*沒有*系統管理員存取權。 建立網路磁碟機機或共用時，會連結到該使用者的目前存取權杖。 因為啟動載入器必須以系統管理員的身分執行，所以如果磁片磁碟機或共用未連結到具有系統管理員存取權的使用者存取權杖，就無法存取網路磁碟機或共用。
+
+### <a name="to-fix-this-error"></a>修正此錯誤
+
+您可以使用 `net use` 命令，也可以變更 UAC 群組原則設定。 如需這些因應措施以及如何執行這些因應措施的詳細資訊，請參閱下列 Microsoft 支援文章：
+
+* [當 UAC 設定為 Windows 中的 [提示認證] 時，無法從提高許可權的提示字元使用對應的磁片磁碟機](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [在 Windows 作業系統中開啟使用者帳戶控制之後，程式可能無法存取某些網路位置](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

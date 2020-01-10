@@ -1,5 +1,5 @@
 ---
-title: HOW TO：比較效能資料檔案 | Microsoft Docs
+title: 如何：比較效能資料檔案 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,21 +11,22 @@ ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 101512cb15bca022e5e3b473c84bd433a7269e15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c6dc9d485f6f40eb345ade8f9680be9e0b948106
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973899"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778995"
 ---
-# <a name="how-to-compare-performance-data-files"></a>HOW TO：比較效能資料檔案
+# <a name="how-to-compare-performance-data-files"></a>如何：比較效能資料檔案
 您可以透過建立比較 (「差異」) 報表或檢視，來比較兩個不同的分析工具資料檔案 (.*vsp* 或 .*vsps*) 的結果。 比較會顯示相較於另一個程式碼剖析工作階段所發生的差異、效能衰退和改進。
 
- 差異報告提供資料的資料表檢視。 資料表提供差異或相對於基準的變更。 這是透過判斷舊值、基準值和新分析中的結果值之間的差異計算而來。
+ 差異報告提供資料的資料表檢視。 表格會呈現相對於基準的差異或變更。 這是透過判斷舊值、基準值和新分析中的結果值之間的差異計算而來。
 
- 程式碼剖析工具資料的比較可以根據程式碼中的函式、應用程式中的模組、程式行、指令指標 (IP) 及型別。
+ 分析工具資料的比較可以根據程式碼中的函式、應用程式中的模組、程式行、指令指標 (IP) 及型別。
 
  設定臨界值可減少雜訊，並以指定的數量篩選掉資料列的資料表檢視中未變更的資料。
 

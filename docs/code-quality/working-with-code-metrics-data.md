@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code metrics results
 - code metrics results window
 - results window, code metrics
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0824fe608ad1bac86ef904702bd1be907bc9ce7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649000"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587078"
 ---
 # <a name="use-the-code-metrics-results-window"></a>使用程式碼度量結果視窗
 
@@ -30,9 +30,9 @@ ms.locfileid: "72649000"
 
 您可以使用下列其中一個功能表順序來顯示 [程式碼計量結果] 視窗：
 
-- 在 [**分析**] 功能表上，選擇 [ **Windows** >  程式**代碼計量結果**]。
+- 在 [**分析**] 功能表上，選擇 [ **Windows** > 程式**代碼計量結果**]。
 
-- 在 [ **View** ] 功能表上，選擇 [**其他 Windows** >  程式**代碼計量結果**]。
+- 在 [ **View** ] 功能表上，選擇 [**其他 Windows** > 程式**代碼計量結果**]。
 
 [程式**代碼度量] 結果**視窗隨即開啟，即使它沒有包含任何結果。
 

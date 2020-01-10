@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab60524f854b3974d383cb7d8ab37470195fc85e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 619840f417c922b4019bafffca8d66c9b1c939e2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668216"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596862"
 ---
 # <a name="build-page-project-designer-c"></a>專案設計工具、建置頁 (C#)
 
@@ -100,7 +100,7 @@ ms.locfileid: "72668216"
 
 封鎖編譯器產生一或多個警告的功能。 請以逗號或分號分隔多個警告編號。 如需詳細資訊，請參閱 [/nowarn (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option)。
 
-## <a name="treat-warnings-as-errors"></a>警告視為錯誤
+## <a name="treat-warnings-as-errors"></a>將警告視為錯誤
 
 您可以使用下列設定，指定要將哪些警告視為錯誤。 請選取下列其中一個選項，以指出在何種情況下當建置出現警告時要傳回錯誤。 如需詳細資訊，請參閱 [/warnaserror (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)。
 

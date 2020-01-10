@@ -15,17 +15,17 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: abcc83a301553ee0c6141502c25903ef2153258b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 692859008891439e4af3d751306bfd3ee6d351e8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658492"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298993"
 ---
-# <a name="uml-activity-diagrams-guidelines"></a>UML 活動圖表：方針
+# <a name="uml-activity-diagrams-guidelines"></a>UML 活動圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 中，您可以繪製活動圖表，將商務程序或軟體演算法描述成為經過一系列動作的工作流程。 人員、軟體元件或裝置皆可執行這些動作。 如需示範影片，請參閱：[使用活動圖表來捕捉商務工作流程](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)。
+在 Visual Studio 中，您可以繪製活動圖表，將商務程序或軟體演算法描述成為經過一系列動作的工作流程。 人員、軟體元件或裝置皆可執行這些動作。 如需示範影片，請參閱：[使用活動圖表來捕捉商務工作流程](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)。
 
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -295,11 +295,11 @@ ms.locfileid: "72658492"
 
  客戶已提供完整且有效的詳細資料，以便正確處理信用卡所需。
 
- 後置條件可以表示動作發生之前與之後的狀態關聯性。 例如:
+ 後置條件可以表示動作發生之前與之後的狀態關聯性。 例如：
 
  利率是先前的兩倍。
 
- 您可以以更正式的樣式撰寫後置條件，參考動作中處理之資料的特定屬性。 例如:
+ 您可以以更正式的樣式撰寫後置條件，參考動作中處理之資料的特定屬性。 例如：
 
  `InvoiceTotal == Sum(OrderItem.MenuItem.Price)`
 
@@ -398,7 +398,7 @@ ms.locfileid: "72658492"
 
 - 附加註解至輸入或輸出連接。
 
-  - 若要區分此描述與一般批註，您可以使用 < \<**轉換**> > 或 < \<**選取範圍**> > 來開始批註。
+  - 若要區分此描述與一般批註，您可以使用 <\<**轉換**> > 或 <\<**選取範圍**> > 來開始批註。
 
 - 請在個別的活動圖表中詳細指定轉換或選取。
 
@@ -426,5 +426,5 @@ ms.locfileid: "72658492"
 
    您也可以為物件節點，以及在個別的輸入和輸出連接上定義選取。 如先前的程式所示定義選取活動，然後設定 [物件] 節點或 [輸入] 或 [輸出] [釘選] 的 [**選取範圍**] 屬性。
 
-## <a name="see-also"></a>請參閱
- [編輯 uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md) [uml 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md) [uml 元件圖](../modeling/uml-component-diagrams-reference.md)：參考 uml[使用案例圖](../modeling/uml-use-case-diagrams-reference.md)：參考 uml[類別圖：](../modeling/uml-class-diagrams-reference.md)參考[uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md) [影片：使用活動圖表來捕捉商務工作流程](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
+## <a name="see-also"></a>另請參閱
+ [編輯 uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md) [uml 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md) [uml 元件圖](../modeling/uml-component-diagrams-reference.md)：參考 uml[使用案例圖](../modeling/uml-use-case-diagrams-reference.md)：參考 uml[類別圖](../modeling/uml-class-diagrams-reference.md)：參考[Uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md)[影片：使用活動圖表來捕捉商務工作流程](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)

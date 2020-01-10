@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
 helpviewer_keywords:
 - code analysis, rule sets
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3bcce1b923b7c34ab5b163938999c0fdaeca649
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13a49f208fe3c60dfb8b9e20c83675cc43f1efb1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649031"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587169"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用規則集分組程式碼分析規則
 
@@ -58,7 +58,7 @@ ms.locfileid: "72649031"
 
 ## <a name="specify-a-rule-set-for-a-project"></a>指定專案的規則集
 
-專案的規則集是由 Visual Studio 專案檔中的**CodeAnalysisRuleSet**屬性所指定。 例如:
+專案的規則集是由 Visual Studio 專案檔中的**CodeAnalysisRuleSet**屬性所指定。 例如：
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

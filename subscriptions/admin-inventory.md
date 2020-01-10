@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: 了解系統管理員要進行生產前清查的責任
-ms.openlocfilehash: d400e216d81601583dc08f66f1a6a185cbe41b91
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 97a7a95354cd4d5d85581830830705bc328f2311
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68420549"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491707"
 ---
 # <a name="inventory-of-pre-production-environment"></a>清查生產前環境
 Visual Studio 訂用帳戶透過計算使用者　(而不是裝置) 來簡化資產管理。
@@ -33,5 +33,5 @@ Visual Studio 系統管理員必須將 Visual Studio 訂用帳戶指派給**特�
 深入了解系統管理員的責任：
 - [系統管理員責任](admin-responsibilities.md)
 - [管理大型小組及外部承攬人](manage-teams.md)
-- [追蹤使用者指派及處理訂單](assignments-orders.md)
+- [追蹤使用者指派和處理訂單](assignments-orders.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量

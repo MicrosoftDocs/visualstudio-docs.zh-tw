@@ -1,5 +1,5 @@
 ---
-title: 作法：產生安裝程式的登錄資訊 |Microsoft Docs
+title: 如何：產生安裝程式的登錄資訊 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,35 +12,35 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 931950c399d853fc6296bf56e9fce0619c0e7e41
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d4395732cd8d3fbc71ac902801c71270ff446470
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328829"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981973"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>作法：產生安裝程式的登錄資訊
+# <a name="how-to-generate-registry-information-for-an-installer"></a>如何：產生安裝程式的登錄資訊
 
-*RegPkg.exe*公用程式可用來產生 managed VSPackage 註冊資訊清單。 資訊清單可以併入 Windows 安裝程式安裝套件。 RegPkg 也可以產生的檔案，可以包含在安裝程式來源檔案是根據[Windows Installer XML 工具組](http://go.microsoft.com/fwlink/?LinkId=62238)。
+*RegPkg*公用程式可以用來產生 managed VSPackage 的註冊資訊清單。 資訊清單可以併入 Windows Installer 安裝套件中。 RegPkg 也可以根據[WINDOWS INSTALLER XML 工具](https://wixtoolset.org/)組，產生可包含在安裝程式來源檔案中的檔案。
 
 > [!IMPORTANT]
-> RegPkg 產生專屬於您的開發系統的路徑名稱，因此每次您使用 RegPkg 時，您必須編輯輸出需要使用適當的 Windows Installer 格式屬性。 例如，`InprocServer32` 值應該 *\<SystemFolder\>mscoree.dll*路徑應該使用 *\<#filekey\>* 和 *\<$componentkey\>* 。 調整的輸出，如此一來支援安裝在不同的磁碟機，或在不同的目錄、 本地化的目錄名稱，以及使用者可以選擇的路徑中的 Windows 電腦。 如需詳細資訊，請參閱 <<c0> [ 格式化](http://go.microsoft.com/fwlink/?LinkId=71120)Windows Installer SDK 中。 如果您依照您的開發系統路徑 RegPkg 慣例 — 例如，檔案識別碼的格式*File_\<檔名\>* — 您需要進行較少的變更。
+> RegPkg 會產生您的開發系統特有的路徑名稱，因此您每次使用 RegPkg 時，都必須編輯輸出以使用適當的 Windows Installer 格式屬性。 例如，`InprocServer32` 值應該是 *\<SystemFolder\>mscoree.dll* ，而路徑應該使用 *\<#filekey*\>和 *\<$componentkey* \>。 以這種方式調整輸出，可支援將 Windows 安裝在不同的磁片磁碟機或不同的目錄、當地語系化的目錄名稱，以及使用者可以選擇的路徑中的電腦。 如需詳細資訊，請參閱在 Windows Installer SDK 中[格式化](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp)。 如果您遵循開發系統路徑的 RegPkg 慣例（例如，表單 File_ 的檔案識別碼 *\<filename\>* ），則需要進行較少的變更。
 
-## <a name="to-create-a-registration-manifest"></a>若要建立的註冊資訊清單
+## <a name="to-create-a-registration-manifest"></a>若要建立註冊資訊清單
 
-- 執行與 RegPkg **/regfile**切換。 提供任何其他參數、 輸出檔的名稱和路徑的 VSPackage。
+- 使用 **/regfile**參數執行 RegPkg。 提供任何其他參數、輸出檔的名稱，以及 VSPackage 的路徑。
 
-     例如，在命令提示字元中，您會輸入像下面這樣：
+     例如，在命令提示字元中，您會輸入如下所示的內容：
 
     ```
     <Visual Studio SDK installation path>\VisualStudioIntegration\Tools\Bin\RegPkg /regfile:MyRegFile.reg MyPackage.dll
     ```
 
-## <a name="to-view-a-registration-manifest"></a>若要檢視的註冊資訊清單
+## <a name="to-view-a-registration-manifest"></a>若要查看註冊資訊清單
 
-- 在任何文字編輯器中開啟的註冊資訊清單。
+- 在任何文字編輯器中開啟註冊資訊清單。
 
-     下列範例是 RegPkg 建立的 IronPython 語言服務的註冊資訊清單：
+     下列範例是 RegPkg 針對 IronPython 語言服務所建立的註冊資訊清單：
 
     ```
     REGEDIT4
@@ -99,19 +99,19 @@ ms.locfileid: "66328829"
 
 ## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>若要建立 Windows Installer XML 工具組包含檔案
 
-- 執行與 RegPkg **/wixfile**切換。 提供任何其他參數、 輸出檔的名稱和路徑的 VSPackage。
+- 使用 **/wixfile**參數執行 RegPkg。 提供任何其他參數、輸出檔的名稱，以及 VSPackage 的路徑。
 
-     例如，在命令提示字元中，您會輸入像下面這樣：
+     例如，在命令提示字元中，您會輸入如下所示的內容：
 
     ```
     <Visual Studio SDK installation path>\VisualStudioIntegration\Tools\Bin\RegPkg /codebase /wixfile:IronPython.LanguageService.wxi ..\bin\Release\IronPython.LanguageService.dll
     ```
 
-## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>若要檢視 Windows Installer XML 工具組包含檔案
+## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>若要查看 Windows Installer XML 工具組包含檔案
 
-- 開啟 Windows Installer XML 工具組包含檔案在任何文字編輯器中。
+- 在任何文字編輯器中開啟 Windows Installer XML 工具組包含檔案。
 
-     下列範例是 IronPython 語言服務 RegPkg 建立的 include 檔案：
+     下列範例是 RegPkg 為 IronPython 語言服務建立的 include 檔案：
 
     ```xml
     <Include>
@@ -181,7 +181,7 @@ ms.locfileid: "66328829"
     </Include>
     ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [註冊 Vspackage](../../extensibility/registering-and-unregistering-vspackages.md)
 - [VSPackage](../../extensibility/internals/vspackages.md)

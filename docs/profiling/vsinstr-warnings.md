@@ -12,21 +12,22 @@ ms.assetid: 47512bc9-a8e9-4628-883a-d9888edab786
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b03b1350b4125262bedfd7fa5284c13d6d38a2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f1a0cba29caeda01de1154430af7a0d94bcfc2a5
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822900"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779944"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出 *VSInstr.exe* 工具所發出的警告。 若要隱藏警告訊息使其不出現，您可以使用 NOWARN 選項以及警告編號。
 
-|警告編號|說明|
+|警告編號|描述|
 |--------------------|-----------------|
-|**VSP1026**|不參考 MSCorLib 的程式庫不支援涵蓋範圍。 此情況常見於可攜式程式庫。<br /><br />[/EnableCodeCoverage](/visualstudio/test/vstest-console-options) 命令列選項是 .NET Core 的必要選項。|
+|**VSP1026**|不參考 MSCorLib 的程式庫不支援涵蓋範圍。 此情況常見於可攜式程式庫。<br /><br />[/EnableCodeCoverage](../test/vstest-console-options.md) 命令列選項是 .NET Core 的必要選項。|
 |**VSP2000**|內部錯誤。 無法取得這個可執行檔的模組檔案名稱。|
 |**VSP2001**|\<組件名稱> 是具備強式名稱的組件。 必須重新簽署後才能執行。<br /><br /> 檢測簽署的組件之後，就會發生這個警告。 您可以使用 *sn.exe* 工具來重新簽署二進位檔，或暫時關閉強式名稱需求。 如需詳細資訊，請參閱 [Sn.exe (強式名稱工具)](/dotnet/framework/tools/sn-exe-strong-name-tool)。|
 |**VSP2002**|在檔案 \<filename> 中找不到函式 \<funcname><br /><br /> 如果在指定的檔案中找不到函式，就會發生這個警告。|
@@ -43,5 +44,5 @@ ms.locfileid: "62822900"
 |**VSP2013**|這個映像必須當做 32 位元處理序執行才能進行檢測。 已更新 CLR 標頭旗標以反映這種情況。<br /><br /> 分析工具可修改二進位檔，這樣一來 64 位元作業系統就可以在 WOW64 模擬器中開啟 32 位元處理序。 針對程式庫 (DLL)，如果它們在現有的 64 位元處理序中載入，這可能會失敗。 這個警告會通知使用者此相依性。|
 |**VSP2014**|產生的已經過檢測的映像似乎無效，可能無法執行。<br /><br /> 當最後已經過檢測的組件具有無效的 PE 標頭時，會出現此訊息。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSInstr](../profiling/vsinstr.md)

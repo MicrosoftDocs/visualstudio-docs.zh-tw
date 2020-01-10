@@ -3,17 +3,17 @@ title: 逐步解說：建置應用程式
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 570dd2044346ace8a51096a04842ea88de0a8803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647166"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594145"
 ---
 # <a name="walkthrough-build-an-application"></a>逐步解說：建置應用程式
 
@@ -65,7 +65,7 @@ ms.locfileid: "72647166"
 
 ### <a name="build-the-solution"></a>建置方案
 
-- 在功能表列上，選擇 [**組建** > **組建方案**]，或按**Ctrl** +**Shift** +**B**。
+- 在功能表列上，選擇 [**組建** > **組建方案**]，或按**Ctrl**+**Shift**+**B**。
 
     [輸出] 視窗顯示組建的結果。 組建成功。
 
@@ -75,7 +75,7 @@ ms.locfileid: "72647166"
 
 1. 在 C# 專案中，開啟 *ExpenseReportPage.xaml.cs* 檔案。 在 **ExpenseReportPage** 方法中，新增下列程式碼：`int i;`。
 
-    OR
+    或
 
     在 Visual Basic 專案中，開啟 *ExpenseReportPage.xaml.vb* 檔案。 在自訂的建構函式 **Public Sub New...** 中，新增下列程式碼：`Dim i`。
 
@@ -154,7 +154,7 @@ ms.locfileid: "72647166"
 
      組建資訊包含組建的開始時間 (位於開頭) 以及檔案的處理順序。 這項資訊也包含 Visual Studio 在建置期間執行的實際編譯器語法。
 
-     例如，在 C# 組建中，[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) 選項會列出您稍早在本主題中指定的警告碼 **1762**，以及其他三個警告。
+     例如，在C#組建中， [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)選項會列出您稍早在本主題中指定的警告碼**0168**，以及其他三個警告。
 
      在 Visual Basic 組建中，[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) 不包含要排除的特定警告，因此不會出現任何警告。
 

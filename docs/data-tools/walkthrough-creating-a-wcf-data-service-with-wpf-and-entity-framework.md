@@ -11,17 +11,17 @@ helpviewer_keywords:
 - ADO.NET Data Services, Visual Studio
 - WCF data services in Visual Studio
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c17872b7fcfd0ecfa7c927880980fce79f432451
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9abdeee9a785a8bccf6cbb580c87bae4fa313036
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648082"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585986"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務
 在本逐步解說中，會示範如何建立裝載於 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的簡單 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，並從 Windows Forms 應用程式存取此服務。
@@ -32,7 +32,7 @@ ms.locfileid: "72648082"
 
 - 建立代表 Northwind 資料庫中 `Customers` 資料表的 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]。
 
-- 建立 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
+- 建立[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
 
 - 建立用戶端應用程式，並加入 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]的參考。
 
@@ -40,7 +40,7 @@ ms.locfileid: "72648082"
 
 - 您可以選擇在應用程式中加入篩選功能。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
 1. 如果您沒有 SQL Server Express LocalDB，請從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或透過**Visual Studio 安裝程式**進行安裝。 在**Visual Studio 安裝程式**中，您可以將 SQL Server Express LocalDB 安裝為**資料儲存和處理**工作負載的一部分，或作為個別元件。
@@ -66,7 +66,7 @@ ms.locfileid: "72648082"
 
 ### <a name="to-create-the-web-project"></a>建立 Web 專案
 
-1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上，選擇 [檔案] >  [新增] >  [專案]。
 
 2. 展開 [新增專案] 對話方塊中的 [Visual Basic] 或 [Visual C#] 和 [Web] 節點，然後選擇 [ASP.NET Web 應用程式] 範本。
 
@@ -132,11 +132,11 @@ ms.locfileid: "72648082"
      [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
 
-6. 在功能表列上，選擇 [ **Debug** ]  >  [**啟動但不進行調試**] 來執行服務。 此時會開啟瀏覽器視窗，並顯示服務的 XML 架構。
+6. 在功能表列上，選擇 [ **Debug** ] > [**啟動但不進行調試**] 來執行服務。 此時會開啟瀏覽器視窗，並顯示服務的 XML 架構。
 
 7. 在**網址**列中，輸入**NorthwindCustomers**URL 結尾處的 `Customers`，然後選擇**enter**鍵。
 
-     [@No__t_0] 資料表中之資料的 XML 標記法隨即出現。
+     [`Customers`] 資料表中之資料的 XML 標記法隨即出現。
 
     > [!NOTE]
     > 在某些情況中，Internet Explorer 會將資料錯譯為 RSS 摘要 (RSS Feed)。 您必須確定顯示 RSS 摘要的選項已停用。 如需詳細資訊，請參閱[針對服務參考進行疑難排解](../data-tools/troubleshooting-service-references.md)。
@@ -178,7 +178,7 @@ ms.locfileid: "72648082"
 
 ### <a name="to-enable-data-binding-to-the-service"></a>若要啟用對服務的資料繫結
 
-1. 在功能表列上，選擇 [ **View**  > **其他 Windows**  > **資料來源**]。
+1. 在功能表列上，選擇 [ **View** > **其他 Windows** > **資料來源**]。
 
    [資料來源] 視窗隨即開啟。
 
@@ -236,7 +236,7 @@ ms.locfileid: "72648082"
 
 8. 由您在步驟 4 中加入的程式碼中，選取 `http://localhost:53161/NorthwindCustomers.svc/` 並取代為您剛剛複製的 URL。
 
-9. 在功能表列上，選擇 [ **Debug** ]  >  [**開始進行調試**程式] 以執行應用程式。 客戶資訊隨即顯示。
+9. 在功能表列上，選擇 [ **Debug** ] > [**開始進行調試**程式] 以執行應用程式。 客戶資訊隨即顯示。
 
    現在您會有一個工作應用程式，會顯示來自 NorthwindCustomers 服務的客戶清單。 如果您想要透過服務公開額外的資料，可以將 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 修改為包含來自 Northwind 資料庫的額外資料表。
 
@@ -282,7 +282,7 @@ ms.locfileid: "72648082"
 
 4. 在前述的程式碼中，將 `http://localhost:53161/NorthwindCustomers.svc` 取代為 `Form1_Load` 事件處理常式中的 URL。
 
-5. 在功能表列上，選擇 [ **Debug** ]  >  [**開始進行調試**程式] 以執行應用程式。
+5. 在功能表列上，選擇 [ **Debug** ] > [**開始進行調試**程式] 以執行應用程式。
 
 6. 在文字方塊中輸入 **London**，然後選擇該按鈕。 接著，就會只顯示 London 的客戶。
 

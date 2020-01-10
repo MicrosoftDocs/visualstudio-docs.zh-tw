@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eaaaacdcc5cf7e3044505f7cdb7aeb2e7e3e7078
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 33689ed44f4228411243d3b9716a2407b751d32b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871973"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300639"
 ---
 # <a name="concurrency-visualizer-sdk"></a>並行視覺化檢視 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用並行視覺化檢視 SDK 檢測原始程式碼，以便在並行視覺化檢視中顯示其他資訊。 您可以在程式碼中將其他資料與階段和事件關聯。 這些額外的視覺效果稱為*標記*。  如需入門逐步解說，請參閱[並行視覺化檢視 SDK 簡介](http://go.microsoft.com/fwlink/?LinkId=235405)。
+您可以使用並行視覺化檢視 SDK 檢測原始程式碼，以便在並行視覺化檢視中顯示其他資訊。 您可以在程式碼中將其他資料與階段和事件關聯。 這些額外的視覺效果稱為*標記*。  如需入門逐步解說，請參閱[並行視覺化檢視 SDK 簡介](https://go.microsoft.com/fwlink/?LinkId=235405)。
 
 ## <a name="properties"></a>屬性
  旗標、範圍和訊息各有兩個屬性︰分類和重要性。 在 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中，您可以使用這些屬性來篩選顯示的標記集。 此外，這些屬性會影響標記的視覺化表示。 例如，旗標的大小用來表示重要性。 此外，色彩用來表示分類。
@@ -31,7 +31,7 @@ ms.locfileid: "68871973"
 
 ### <a name="c-and-visual-basic"></a>C# 和 Visual Basic
 
-在C#、Visual basic 和其他 managed 程式碼中, 藉由呼叫[標記](/previous-versions/hh694099(v=vs.140))類別中的方法, 來使用預設提供者。 它會公開用來產生標記的四種方法:[WriteFlag](/previous-versions/hh694185(v=vs.140))、 [EnterSpan](/previous-versions/hh694205(v=vs.140))、 [WriteMessage](/previous-versions/hh694161(v=vs.140))和[WriteAlert](/previous-versions/hh694180(v=vs.140))。 視您是否要使用屬性的預設值而定，這些函式有多個多載。  最簡單的多載採用只有字串的參數，指定事件的描述。 描述會顯示在並行視覺化檢視報表中。
+在 C#、Visual Basic 和其他受控程式碼中，透過呼叫 [Markers](/previous-versions/hh694099(v=vs.140)) 類別中的方法來使用預設提供者。 它會公開四種產生標記的方法： [WriteFlag](/previous-versions/hh694185(v=vs.140))、 [EnterSpan](/previous-versions/hh694205(v=vs.140))、 [WriteMessage](/previous-versions/hh694161(v=vs.140))和[WriteAlert](/previous-versions/hh694180(v=vs.140))。 視您是否要使用屬性的預設值而定，這些函式有多個多載。  最簡單的多載採用只有字串的參數，指定事件的描述。 描述會顯示在並行視覺化檢視報表中。
 
 #### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>將 SDK 支援新增至C#或 Visual Basic 專案
 
@@ -78,19 +78,19 @@ ms.locfileid: "68871973"
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 專案中使用新的標記提供者
 
-1. 建立[microsoft.concurrencyvisualizer.instrumentation.markerwriter>](/previous-versions/hh694138(v=vs.140))物件。 建構函式取用 GUID。
+1. 建立 [MarkerWriter](/previous-versions/hh694138(v=vs.140)) 物件。 建構函式取用 GUID。
 
 2. 若要註冊提供者，請開啟並行視覺化檢視的 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。  選取 [標記] 索引標籤，然後選擇 [加入新提供者] 按鈕。 在 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>在 C++ 或 C 專案中使用新的標記提供者
 
-1. 使用 `CvInitProvider` 函式來初始化 PCV_PROVIDER。 此函式會採用 GUID * 和\*PCV_PROVIDER。
+1. 使用 `CvInitProvider` 函式來初始化 PCV_PROVIDER。 此函式會採用 GUID *，並 PCV_PROVIDER\*。
 
 2. 若要註冊提供者，請開啟 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。 選取 [標記] 索引標籤，然後選擇 [加入新提供者] 按鈕。 在此對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 專案中使用標記系列
 
-1. 若要使用新的[microsoft.concurrencyvisualizer.instrumentation.markerseries>](/previous-versions/hh694127(v=vs.140)), 請先使用[microsoft.concurrencyvisualizer.instrumentation.markerwriter>](/previous-versions/hh694138(v=vs.140))物件建立它, 然後直接從新的數列產生標記事件。
+1. 若要使用新的 [MarkerSeries](/previous-versions/hh694127(v=vs.140))，請先使用 [MarkerWriter](/previous-versions/hh694138(v=vs.140)) 物件來建立它，然後直接從新系列產生標記事件。
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries(″Series 1″);
@@ -128,4 +128,4 @@ ms.locfileid: "68871973"
 |[C++ 程式庫參考](../profiling/cpp-library-reference.md)|描述 C++ 的並行視覺化檢視 API。|
 |[C 程式庫參考](../profiling/c-library-reference.md)|描述 C 的並行視覺化檢視 API。|
 |[檢測](/previous-versions/hh694104(v=vs.140))|描述 Managed 程式碼的並行視覺化檢視 API。|
-|[並行視覺化檢視](../profiling/concurrency-visualizer.md)|使用並行方法所產生且包含執行緒執行資料的分析資料檔案之檢視和報告的參考資訊。|
+|[並行視覺化檢視](../profiling/concurrency-visualizer.md)|使用並行方法所產生且包含執行緒執行資料的程式碼剖析資料檔案之檢視和報告的參考資訊。|

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - code [Visual Studio], outlining
 - code [Visual Studio], hiding
 - outlining code
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61772ead029dccaff9b1090a469865fcc3742df6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 781c9a6bc30f7d3a29bcb89e743600e6b29e6445
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666827"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585752"
 ---
 # <a name="outlining"></a>大綱
 
@@ -48,8 +48,8 @@ ms.locfileid: "72666827"
 |取消大綱|(**Ctrl**+**M**、**Ctrl**+**P**) - 移除整份文件的所有大綱資訊。|
 |取消隱藏目前的|(**Ctrl**+**M**、**Ctrl**+**U**) - 移除目前所選取使用者定義區域的大綱資訊。 在 Visual Basic 中無法使用。|
 |摺疊至定義|(**Ctrl**+**M**、**Ctrl**+**O**) - 摺疊所有類型的成員。|
-|摺疊區塊︰\<邏輯界限>|(Visual C++) 摺疊包含插入點之函式中的區域。 例如，如果插入點落在迴圈內，則會隱藏迴圈。|
-|\<邏輯結構> 中的全部摺疊|(Visual C++) 摺疊函式內的所有結構。|
+|摺疊區塊︰\<邏輯界限>|（C++）折迭包含插入點之函式中的區域。 例如，如果插入點落在迴圈內，則會隱藏迴圈。|
+|\<邏輯結構> 中的全部摺疊|（C++）折迭函數內的所有結構。|
 
 您也可以使用 Visual Studio SDK 來定義您想要展開或摺疊的文字區域。 請參閱[逐步解說︰大綱](../extensibility/walkthrough-outlining.md)。
 

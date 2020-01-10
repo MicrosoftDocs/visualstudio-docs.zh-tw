@@ -9,17 +9,17 @@ helpviewer_keywords:
 - naming warnings
 - warnings, naming
 ms.assetid: f97223ce-1d39-4134-81c9-fff2c75d979b
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afcaca34c937cc5a90c78a6f4de69ec395df4f42
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6d1e40b809f27292f2a808458584837913d881f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649187"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587299"
 ---
 # <a name="naming-warnings"></a>命名警告
 

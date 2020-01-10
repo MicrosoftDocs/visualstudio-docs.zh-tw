@@ -3,15 +3,15 @@ title: 在專案中包含 NuGet 套件
 description: 本檔涵蓋如何使用 Visual Studio for Mac 在專案中包含 NuGet 套件。 它會逐步尋找和下載套件，以及介紹 IDE 整合功能。
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/18/2019
+ms.date: 11/01/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 55b4691a7adb03d4ee8fd5e05e7bd9d7daa28f13
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213696"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74127221"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中安裝和管理 NuGet 套件
 
@@ -19,7 +19,7 @@ Visual Studio for Mac 中的 NuGet 套件管理員 UI 可讓您輕鬆地安裝�
 
 本文描述如何在專案中包含 NuGet 套件，並示範讓處理序順暢處理的工具鏈。
 
-如需在 Visual Studio for Mac 中使用 NuGet 的簡介， [請參閱快速入門：在 Visual Studio for Mac 中安裝和使用套件](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
+如需在 Visual Studio for Mac 中使用 NuGet 的簡介，請參閱[快速入門：在 Visual Studio for Mac 中安裝和使用套件](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
 
 ## <a name="find-and-install-a-package"></a>尋找並安裝套件
 
@@ -27,7 +27,7 @@ Visual Studio for Mac 中的 NuGet 套件管理員 UI 可讓您輕鬆地安裝�
 
     ![新增 NuGet 套件內容動作](media/nuget-walkthrough-packages-menu.png)
 
-2. 這會啟動 [**管理 NuGet 封裝**] 視窗。 確定對話方塊左上角的 [來源] 下拉式設定為`nuget.org`[]。
+2. 這會啟動 [**管理 NuGet 封裝**] 視窗。 請確定對話方塊左上角的 [來源] 下拉式設定為 [`nuget.org`]，以便您搜尋中央 NuGet 套件存放庫。
 
     ![列出 NuGet 套件](media/nuget-walkthrough-add-packages1.png)
 
@@ -59,7 +59,7 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>更新套件
 
-封裝更新可以一次完成，方法是以滑鼠右鍵按一下 [相依性 **]** 節點（Xamarin 專案的 [**封裝**] 節點），或在每個封裝上個別進行。 當有新版本的 NuGet 套件可供使用時，更新圖示就![會以圓形](media/nuget-walkthrough-update-icon.png)顯示向上箭號。
+封裝更新可以一次完成，方法是以滑鼠右鍵按一下 [相依性 **]** 節點（Xamarin 專案的 [**封裝**] 節點），或在每個封裝上個別進行。 當有新版本的 NuGet 套件可供使用時，就會以 circle](media/nuget-walkthrough-update-icon.png)![向上箭號來顯示更新圖示。
 
 以滑鼠右鍵按一下 [相依性] 以存取內容功能表，然後選擇 [**更新** **]** 以更新所有套件：
 
@@ -71,6 +71,7 @@ using Newtonsoft.Json;
 
 方案層級也會提供 [更新] 和 [還原] 選項，而且這些選項會影響方案中的所有專案。
 
+### <a name="locating-outdated-packages"></a>尋找過時的封裝
 從 [solution pad] 中，您可以查看目前已安裝的套件版本，並以滑鼠右鍵按一下要更新的套件。
 
 ![包含更新、移除、重新整理選項的套件功能表](media/nuget-walkthrough-PackageMenu.png)
@@ -84,9 +85,35 @@ using Newtonsoft.Json;
 * **更新** - 檢查來源伺服器，然後下載較新版本 (如果已存在)。
 * **移除** - 從這個專案中移除套件，並從專案的參考中移除相關組件。
 
+## <a name="manage-packages-for-the-solution"></a>管理解決方案的套件
+
+管理解決方案的套件可讓同時處理多個專案更方便。
+
+1. 以滑鼠右鍵按一下方案，然後選取 [**管理 NuGet 套件 ...** ]：
+
+    ![管理解決方案的 NuGet 套件](media/nuget-walkthrough-manage-packages-solution.png)
+
+1. 在管理解決方案的套件時，UI 可讓您選取受作業影響的專案：
+
+    ![管理解決方案套件時的專案選取器](media/nuget-walkthrough-add-to-projects.png)
+
+### <a name="consolidate-tab"></a>[合併] 索引標籤
+
+在具有多個專案的解決方案中工作時，最佳作法是確定您在每個專案中使用相同的 NuGet 套件，也會使用該套件的相同版本號碼。 當您選擇管理解決方案的套件時，Visual Studio for Mac 可以在套件管理員 UI 中提供 [**合併**] 索引標籤，以協助簡化這項作業。 使用此索引標籤，您可以輕鬆地查看方案中不同專案使用具有不同版本號碼的套件：
+
+![套件管理員 UI [合併] 索引標籤](media/nuget-walkthrough-consolidate-tab.png)
+
+在此範例中，NuGetDemo 專案是使用 Microsoft.entityframeworkcore 2.20，而 NuGetDemo 則是使用 Microsoft. Microsoft.entityframeworkcore 2.2.6。 若要合併套件版本，請執行下列動作：
+
+- 在 [專案] 清單中選取要更新的專案。
+- 在 [**新版本**] 清單中選取要在所有這些專案中使用的版本，例如 [microsoft.entityframeworkcore 3.0.0]。
+- 選取 [**合併套件**] 按鈕。
+
+套件管理員會將選取的套件版本安裝到所有已選取的專案中，之後套件就不會再出現在 [合併] 索引標籤上。
+
 ## <a name="adding-package-sources"></a>新增套件來源
 
-一開始會從 nuget.org 擷取可用於安裝的套件。不過，您可以將其他套件位置新增至 Visual Studio for Mac。 這適用於測試您自己正在開發的 NuGet 套件，或在公司或組織內使用私用 NuGet 伺服器。
+一開始會從 nuget.org 中取得可供安裝的套件。不過，您可以將其他封裝位置新增至 Visual Studio for Mac。 這適用於測試您自己正在開發的 NuGet 套件，或在公司或組織內使用私用 NuGet 伺服器。
 
 在 Visual Studio for Mac 中，巡覽至 [Visual Studio] > [喜好設定] > [NuGet] > [來源] 來檢視和編輯套件來源清單。 請注意，來源可以是遠端伺服器 (由 URL 指定) 或本機目錄。
 
@@ -112,6 +139,6 @@ NuGet 文件討論 [using NuGet without committing packages to source control](/
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [在 Visual Studio 中安裝並使用套件 (Windows 上)](/nuget/quickstart/install-and-use-a-package-in-visual-studio)

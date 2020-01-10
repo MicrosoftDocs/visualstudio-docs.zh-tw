@@ -7,17 +7,17 @@ helpviewer_keywords:
 - data [Visual Studio], LINQ to Entities
 - data [Visual Studio], querying an EDM
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab73d46ddedb0afc62b0825852fefbaa78875864
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 272f2f5e04ad8d87da45c98ed38c30751658d5c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72638312"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585908"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>使用概念模型（WCF Data Services）
 

@@ -12,14 +12,15 @@ ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 89b3e7492e0f5155dd1c36f0140f6a1ad11db027
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 89d9146b3f724b4883f21a43689a495eef252777
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829966"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778514"
 ---
 # <a name="modules-view"></a>模組檢視
 模組檢視會列出分析資料的模組。 每個模組都是階層式樹狀結構的根節點。 模組的已分析函式列在模組節點之下。 如果使用取樣方法收集分析資料，則行資訊會列在函式節點下，而指令指標資料則列在行節點下。
@@ -30,7 +31,7 @@ ms.locfileid: "62829966"
 
  [模組] 檢視中可用的資料行取決於用來收集資料的分析方法 (取樣或檢測)，以及是否在分析回合中收集 .NET 記憶體資料。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [模組檢視](../profiling/modules-view-sampling-data.md)
 - [模組檢視](../profiling/modules-view-instrumentation-data.md)
 - [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)

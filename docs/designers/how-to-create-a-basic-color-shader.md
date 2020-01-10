@@ -3,17 +3,17 @@ title: 如何：建立基本色彩著色器
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db97199518d4f7f023696b085d0f66dc81394511
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 162632f0043d23fb111a9e455c1100f9506924a8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72636400"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589509"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>如何：建立基本色彩著色器
 

@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ee281e2cabcbce4f950188465163769caae7b2bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657235"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297977"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "72657235"
 
  **Requirements**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 ### <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>在 [測試總管] 中分析單元測試的程式碼涵蓋範圍
 
@@ -50,7 +50,7 @@ ms.locfileid: "72657235"
 >   如果使用 Unmanaged 程式碼 (機器碼)，請使用偵錯組建。
 >   - 請務必為每個組件產生 .pdb (符號) 檔。
 >
->   如果沒有得到預期的結果，請參閱[針對程式碼涵蓋範圍進行 疑難排解](../test/troubleshooting-code-coverage.md)。 執行個體時提供 SQL Server 登入。 更新程式碼後不要忘記再次執行程式碼涵蓋範圍。 修改程式碼後或執行測試時，並不會自動更新涵蓋範圍結果和程式碼著色。
+>   如果沒有得到預期的結果，請參閱[針對程式碼涵蓋範圍進行 疑難排解](../test/troubleshooting-code-coverage.md)。 。 更新程式碼後不要忘記再次執行程式碼涵蓋範圍。 修改程式碼後或執行測試時，並不會自動更新涵蓋範圍結果和程式碼著色。
 
 ## <a name="reporting-in-blocks-or-lines"></a>區塊或行報告
  程式碼涵蓋範圍以「區塊」(Block) 計算。 一個區塊是只有一個進入點及一個結束點的程式碼片段。  如果程式的控制流程在測試回合期間通過區塊，該區塊即屬於覆蓋的區塊。 區塊使用次數不會影響結果。
@@ -96,7 +96,7 @@ ms.locfileid: "72657235"
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>在程式碼涵蓋範圍結果中排除項目
  如果程式碼是從文字範本產生的，您可能會想要將程式碼中的特定項目從排除涵蓋範圍分數中排除。 將 `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` 屬性加入至下列任一程式碼項目：類別、結構、方法、屬性、屬性 setter 或 getter、事件。 請注意，排除類別並不會排除其衍生類別。
 
- 例如:
+ 例如：
 
 ```csharp
 
@@ -281,7 +281,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>外部資源
 
 ### <a name="guidance"></a>指引
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)[疑難排解程式碼涵蓋範圍](../test/troubleshooting-code-coverage.md)[對程式碼進行單元測試](../test/unit-test-your-code.md)

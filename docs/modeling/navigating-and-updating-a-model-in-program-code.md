@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7273019d837a9cc13f6ffb306946372f11ec1f7f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658352"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566172"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 
@@ -42,7 +42,7 @@ ms.locfileid: "72658352"
 
 ## <a name="navigation"></a>導覽模型
 
-### <a name="properties"></a>內容
+### <a name="properties"></a>屬性
  您在 DSL 定義中定義的網域屬性會變成您可以在程式碼中存取的屬性：
 
  `Person henry = ...;`
@@ -64,7 +64,7 @@ ms.locfileid: "72658352"
 
  `FamilyTreeModel ftree = henry.FamilyTreeModel;`
 
- 關聯性之相反端的屬性一律是交互的。 建立或刪除連結時，會更新兩個元素上的角色屬性。 下列運算式（使用 `System.Linq` 的延伸模組）對於範例中的 ParentsHaveChildren 關聯性一律為 true：
+ 關聯性之相反端的屬性一律是交互的。 建立或刪除連結時，會更新兩個元素上的角色屬性。 下列運算式（使用 `System.Linq`的延伸模組）對於範例中的 ParentsHaveChildren 關聯性一律為 true：
 
  `(Person p) => p.Children.All(child => child.Parents.Contains(p))`
 
@@ -84,7 +84,7 @@ ms.locfileid: "72658352"
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- 還有其他方法可存取連結。 例如:
+ 還有其他方法可存取連結。 例如：
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -108,7 +108,7 @@ ms.locfileid: "72658352"
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="metadata"></a>存取類別資訊
- 您可以取得有關 DSL 定義的類別、關聯性和其他方面的資訊。 例如:
+ 您可以取得有關 DSL 定義的類別、關聯性和其他方面的資訊。 例如：
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -199,13 +199,13 @@ using (Transaction t =
 
  有三種方式可建立關聯性的實例。 這三種方法的每一個都有相同的效果：
 
-- 設定來源角色扮演者的屬性。 例如:
+- 設定來源角色扮演者的屬性。 例如：
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- 設定目標角色扮演者的屬性。 例如:
+- 設定目標角色扮演者的屬性。 例如：
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -215,7 +215,7 @@ using (Transaction t =
 
        此角色的多重性為 `0..*`，因此我們將新增至集合。
 
-- 明確地建立關聯性的實例。 例如:
+- 明確地建立關聯性的實例。 例如：
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -227,7 +227,7 @@ using (Transaction t =
 
 ## <a name="deleteelements"></a>刪除元素
 
-藉由呼叫 `Delete()` 來刪除元素：
+藉由呼叫 `Delete()`來刪除元素：
 
 `henry.Delete();`
 
@@ -235,7 +235,7 @@ using (Transaction t =
 
 - 元素的關聯性連結。 例如，`edward.Parents` 將不再包含 `henry`。
 
-- @No__t_0 旗標為 true 之角色的元素。 例如，顯示元素的圖形將會被刪除。
+- `PropagatesDelete` 旗標為 true 之角色的元素。 例如，顯示元素的圖形將會被刪除。
 
 根據預設，每個內嵌關聯性在目標角色上都有 `PropagatesDelete` true。 刪除 `henry` 並不會刪除 `familyTree`，但 `familyTree.Delete()` 會刪除所有 `Persons`。
 
@@ -262,7 +262,7 @@ using (Transaction t =
 
  這三種方法都有相同的效果。 您只需要使用其中一個。
 
- 如果角色具有 0 ..1 或 1 ..1 多重性，您可以將它設定為 `null` 或另一個值：
+ 如果角色具有 0 ..1 或 1 ..1 多重性，您可以將它設定為 `null`或另一個值：
 
  `edward.FamilyTreeModel = null;`//或：
 
@@ -285,8 +285,8 @@ using (Transaction t =
 
  `link.MoveBefore(role, nextLink);`
 
-## <a name="locks"></a>鎖定
- 鎖定可能會防止您的變更。 您可以在個別專案、資料分割和存放區上設定鎖定。 如果其中有任何層級的鎖定防止您想要進行的變更類型，則在您嘗試時可能會擲回例外狀況。 您可以使用元素來探索鎖定是否已設定。GetLocks （），這是在命名空間中定義 <xref:Microsoft.VisualStudio.Modeling.Immutability> 的擴充方法。
+## <a name="locks"></a> 鎖定
+ 鎖定可能會防止您的變更。 您可以在個別專案、資料分割和存放區上設定鎖定。 如果其中有任何層級的鎖定防止您想要進行的變更類型，則在您嘗試時可能會擲回例外狀況。 您可以使用元素來探索鎖定是否已設定。GetLocks （），這是在命名空間中定義 <xref:Microsoft.VisualStudio.Modeling.Immutability>的擴充方法。
 
  如需詳細資訊，請參閱[定義鎖定原則以建立唯讀區段](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)。
 
@@ -331,11 +331,11 @@ using (Transaction t = targetDiagram.Store.
 |接點|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|
 |圖表|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|
 
- 圖表上的元素通常代表模型專案。 通常（但不一定），<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> 代表網域類別實例，而 <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> 則代表網域關聯性實例。 @No__t_0 關聯性會將「節點」或「連結」圖形連結至它所代表的模型元素。
+ 圖表上的元素通常代表模型專案。 通常（但不一定），<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> 代表網域類別實例，而 <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> 則代表網域關聯性實例。 <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> 關聯性會將「節點」或「連結」圖形連結至它所代表的模型元素。
 
  每個「節點」或「連結」圖形都屬於一個圖表。 「二元連結」圖形連接兩個「節點」圖形。
 
- 圖形在兩個集合中可以有子圖形。 @No__t_0 集內的圖形僅限於其父系的周框方塊。 @No__t_0 清單中的圖形可能會出現在父代外或部分外部（例如標籤或埠）。 圖表沒有 `RelativeChildShapes`，而且沒有任何 `Parent`。
+ 圖形在兩個集合中可以有子圖形。 `NestedChildShapes` 集內的圖形僅限於其父系的周框方塊。 `RelativeChildShapes` 清單中的圖形可能會出現在父代外或部分外部（例如標籤或埠）。 圖表沒有 `RelativeChildShapes`，而且沒有任何 `Parent`。
 
 ### <a name="views"></a>在圖形與元素之間流覽
  領域模型專案和圖形元素都是由 <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> 關聯性所關聯。
@@ -469,7 +469,7 @@ partial class MyDiagram
 }
 ```
 
- 如果您提供一個以上的圖形，請使用 `AbsoluteBounds` 設定其相對位置。
+ 如果您提供一個以上的圖形，請使用 `AbsoluteBounds`設定其相對位置。
 
  您也可以使用這個方法來設定連接器的色彩和其他公開屬性。
 

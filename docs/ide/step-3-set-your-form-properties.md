@@ -1,5 +1,5 @@
 ---
-title: 步驟 3：設定表單屬性
+title: 步驟 3：設定您的表單屬性
 ms.date: 08/30/2019
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870179243f99501cac7aaa68ce9929ae589ba79e
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 1be9af1badba19932c5d713bb4134448ccf84caf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118957"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591745"
 ---
-# <a name="step-3-set-your-form-properties"></a>步驟 3：設定表單屬性
+# <a name="step-3-set-your-form-properties"></a>步驟 3：設定您的表單屬性
 
 接下來，您要使用 [屬性] 視窗變更表單的外觀。
 
@@ -28,7 +28,7 @@ ms.locfileid: "71118957"
 1. 選擇表單 [Form1] 內的任何位置來選取它。 查看 [屬性] 視窗，現在應該會顯示表單的屬性。 表單有各種屬性。 例如，您可以設定前景和背景色彩、表單頂端顯示的標題文字、表單的大小和其他屬性。
 
    > [!NOTE]
-   > 如果 [**屬性**] 視窗沒有出現，請選擇工具列上的 [**停止調試**程式] 按鈕，或直接關閉視窗，以停止您的應用程式。 如果應用程式已停止，而您仍然看不到 [**屬性**] 視窗，請在功能表列上選擇 [**視圖** > **屬性視窗]** 。
+   > 如果 [**屬性**] 視窗沒有出現，請選擇工具列上的 [**停止調試**程式] 按鈕，或直接關閉視窗，以停止您的應用程式。 如果應用程式已停止，而您仍然看不到 [**屬性**] 視窗，請在功能表列上選擇 [**視圖**] [ > **屬性視窗]** 。
 
 1. 選取表單之後，在 [屬性] 視窗中尋找 [文字] 屬性。 根據清單排序的方式，您可能需要向下捲動。 選擇 [文字]，鍵入 **Picture Viewer**，然後選擇 **Enter**。  您的表單現在應該會在其標題列中顯示 [文字**圖片檢視器**]，而 [**屬性**] 視窗看起來應該類似下列螢幕擷取畫面。
 
@@ -55,7 +55,7 @@ ms.locfileid: "71118957"
 
    - 在工具列上選擇 [開始偵錯] 按鈕，如下所示。
 
-      ![開始調試工具列按鈕](../ide/media/express_icondebug.png)<br>
+      ![開始調試 工具列按鈕](../ide/media/express_icondebug.png)<br>
      ***開始調試****工具列按鈕*
 
      就像之前一樣，IDE 會建立並執行您的應用程式，而視窗隨即出現。
@@ -66,17 +66,17 @@ ms.locfileid: "71118957"
 
    - 在功能表列上，依序選擇 [偵錯] > [停止偵錯]。
 
-   - 使用您的鍵盤，然後按**Shift** + **F5**。
+   - 使用鍵盤，然後按**Shift**+**F5**。
 
    - 選擇 [**圖片檢視器**] 視窗右上角的 [ **X** ] 按鈕。
 
 ## <a name="next-steps"></a>後續步驟
 
-* 若要移至下一個教學課程步驟 **，請參閱[步驟4：使用 TableLayoutPanel 控制項](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** 來配置您的表單。
+* 若要移至下一個教學課程步驟，請參閱 **[步驟4：使用 TableLayoutPanel 控制項來配置表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** 。
 
-* 若要回到上一個教學課程步驟，請參閱[步驟 2：執行您的圖片查看](../ide/step-2-run-your-program.md)器應用程式。
+* 若要回到上一個教學課程步驟，請參閱[步驟2：執行您的圖片檢視器應用程式](../ide/step-2-run-your-program.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-* [教學課程 2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
-* [教學課程 3：建立配對遊戲](tutorial-3-create-a-matching-game.md)
+* [教學課程2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
+* [教學課程3：建立配對遊戲](tutorial-3-create-a-matching-game.md)

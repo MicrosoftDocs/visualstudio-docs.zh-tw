@@ -8,17 +8,17 @@ helpviewer_keywords:
 - File.AddExistingItem command
 - Add Existing Item command
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89910a9504f587f97b0555f7f0d5ef7257ab4ae4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4d49f0fde7bbf13a1219296420b84970f4350860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748832"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585700"
 ---
 # <a name="add-existing-item-command"></a>加入現有項目命令
 將現有檔案新增至目前的方案，並開啟它。
@@ -29,11 +29,11 @@ ms.locfileid: "72748832"
 File.AddExistingItem filename [/e:editorname]
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 `filename`\
 必要項。 要新增至目前方案之項目的完整路徑和檔案名稱 (含副檔名)。 如果檔案路徑或檔案名稱包含空格，請使用引號括住完整路徑。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換機
 /e: `editorname`\
 選擇項。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式] 對話方塊。
 

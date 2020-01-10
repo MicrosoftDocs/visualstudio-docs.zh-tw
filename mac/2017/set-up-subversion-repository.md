@@ -1,16 +1,16 @@
 ---
 title: 設定 Subversion 存放庫
 description: 在 Visual Studio for Mac 中使用 Subversion。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: 7dfb5c645125afc1485c1422909e52741507b327
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7133ffd01d8f384efa91d95bc8ea05aa75b7dd0d
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988256"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985224"
 ---
 # <a name="set-up-a-subversion-repository"></a>設定 Subversion 存放庫
 
@@ -56,6 +56,6 @@ Subversion 安裝至電腦後，請使用下列步驟在 SVN 中發佈您的專�
 
 8. 現在應該可以在版本控制功能表中看到所有可用的版本控制命令。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 Subversion](working-with-subversion.md)

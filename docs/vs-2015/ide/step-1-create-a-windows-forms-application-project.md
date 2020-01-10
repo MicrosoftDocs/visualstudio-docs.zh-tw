@@ -9,23 +9,23 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9cf0177efe373933f8c34e1600658160f489a64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9651c04c1d94459052d92cdda0afa58e344b650
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667345"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295794"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>步驟 1：建立 Windows Forms 應用程式專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 建立圖片檢視器的第一個步驟是建立 Windows Forms 應用程式專案。
 
- ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 1](http://go.microsoft.com/fwlink/?LinkId=205209)或[教學課程1：在C#影片1中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205199)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 1](https://go.microsoft.com/fwlink/?LinkId=205209)或[教學課程1：在C#影片1中建立圖片檢視器](https://go.microsoft.com/fwlink/?LinkId=205199)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ### <a name="to-create-a-windows-forms-application-project"></a>若要建立 Windows Forms 應用程式專案
 
-1. 在功能表列上，選擇 [ **檔案**]、[ **新增**]、[ **專案**]。 對話方塊看起來會像這樣。
+1. 在功能表列上，依序選擇 檔案、新增和 專案。 對話方塊看起來會像這樣。
 
      [![新增專案] 對話方塊](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts")[新增專案] 對話方塊
 

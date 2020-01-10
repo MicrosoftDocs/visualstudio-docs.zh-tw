@@ -2,15 +2,15 @@
 title: 設定 IDE 協助工具選項
 description: 在 Visual Studio for Mac 中設定協助工具選項的簡介
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
-ms.openlocfilehash: b0bafdefe65d4bbfe616d51913096faaaf033eb2
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: aece4bec978b609dd1fd5f67d2562bd87f847a3a
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342320"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985128"
 ---
 # <a name="set-ide-accessibility-options"></a>設定 IDE 協助工具選項
 
@@ -23,15 +23,15 @@ ms.locfileid: "71342320"
 1. 選擇 [ **View （功能表）** ]，然後選取 [**放大&#8984;（+）** ] 或 [**縮小] （&#8984;-）** 。
 
 > [!TIP]
-> 若要將內容重設為預設大小，您可以選擇 [**視圖] （功能表）**  >  [**一般大小&#8984;（0）** ]。
+> 若要將內容重設為預設大小，您可以選擇 [ **View （menu）** ] > [**一般大小]&#8984;（0）** 。
 
 ## <a name="change-the-content-font-and-size"></a>變更內容字型和大小
 
 在 Visual Studio for Mac 中，您可以自訂大部分 pad 中的內容字型和大小。 方式如下：
 
-1. 移至**Visual Studio （功能表）**  >  個喜好設定 ... **(&#8984;,)** .
+1. 移至**Visual Studio （功能表）**  > **喜好設定 .。。(&#8984;,)** .
 
-1. 在 [**喜好**設定] 中，移至 [**環境**] @no__t **-2 字型**。
+1. 在 [**喜好**設定] 中，移至 [**環境** **] > 字型**。
 
 1. 針對**文字編輯器**、**一般 Pad 文字**或**輸出板內容**，選取 [字型和大小] 按鈕。
 
@@ -44,9 +44,9 @@ ms.locfileid: "71342320"
 
 某些使用者可能會發現預設色彩配置不符合其對比或色彩需求。 Visual Studio for Mac 有多個使用者可以選取的替代主題，包括兩個高對比主題。
 
-1. 移至**Visual Studio （功能表）**  >  個喜好設定 ... **(&#8984;,)** .
+1. 移至**Visual Studio （功能表）**  > **喜好設定 .。。(&#8984;,)** .
 
-1. 在 [**喜好**設定] 中，移至 [**文字編輯器**]  > **色彩主題**。
+1. 在 **喜好**設定 中，移至 **文字編輯器** > **色彩主題**。
 
 1. 選取您想要的主題。
 

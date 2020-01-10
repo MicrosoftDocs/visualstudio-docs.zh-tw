@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ad57a05e45b7e9acd3db455f0a8849166dc3c735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c56eb091e6d4efbe33dc8f05d5040272307c274
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654754"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299912"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +39,7 @@ ms.locfileid: "72654754"
 
   ![您在本教學課程中建立的圖片](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone") 您在本教學課程中建立的圖片
 
-  若要下載這個範例的完整版，請參閱 [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (完整的圖片檢視器教學課程範例)。
-
-  ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[如何：在 Visual Basic 中建立圖片檢視器？](http://go.microsoft.com/fwlink/?LinkId=205207)或[如何：在中C#建立圖片檢視器？](http://go.microsoft.com/fwlink/?LinkId=205198)。
+  ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[如何：在 Visual Basic 中建立圖片檢視器？](https://go.microsoft.com/fwlink/?LinkId=205207)或[如何：在中C#建立圖片檢視器？](https://go.microsoft.com/fwlink/?LinkId=205198)。
 
 > [!NOTE]
 > 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。 本教學課程中同時涵蓋 Visual C# 和 Visual Basic，所以請將焦點放在您使用的程式語言專屬資訊。

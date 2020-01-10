@@ -12,28 +12,28 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 41b589526fb1f864c97571db893506bc612893ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d408f21555deee835cd8f00926bb9c73fd3167f3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660613"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302655"
 ---
-# <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式化 UI 測試編輯器，編輯自動程式化 UI 測試
+# <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式碼 UI 測試編輯器，編輯自動程式碼 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 自動程式碼 UI 測試編輯器可讓您輕鬆地修改自動程式碼 UI 測試。 您可以使用自動程式碼 UI 測試編輯器，尋找、檢視和編輯測試方法和 UI 動作的屬性。 此外，您也可以使用 UI 控制項對應，檢視和編輯其對應的控制項。
 
  **Requirements**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 ## <a name="why-should-i-do-this"></a>為什麼我應該這麼做？
  比起使用程式碼編輯器以您的自動程式碼 UI 測試方法編輯程式碼，使用自動程式碼 UI 更為快速且更有效率。 在自動程式碼 UI 測試編輯器中，您可以使用工具列和捷徑功能表，快速找出和修改與 UI 動作和控制項相關聯的屬性值。 例如，您可以使用自動程式碼 UI 測試編輯器的工具列來執行下列命令：
 
  ![UI 測試編輯器](../test/media/uitesteditor.png "UITestEditor")
 
-1. [尋找](../ide/finding-and-replacing-text.md)可協助您找出 UI 動作和控制項。
+1. [尋找](../ide/finding-and-replacing-text.md) 可協助您找出 UI 動作和控制項。
 
 2. [刪除](#CodedUITestEditor_DeleteUIActions) 可移除不必要的 UI 動作。
 
@@ -52,7 +52,7 @@ ms.locfileid: "72660613"
 9. [全部尋找](#CodedUITestEditor_LocateDecendants) 可協助您驗證應用程式控制項的控制項屬性和重大變更。
 
 ## <a name="how-do-i-do-this"></a>我要怎麼做？
- 在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中，開啟附屬於您自動程式碼 UI 測試專案中自動程式碼 UI 測試的 UIMap.uitest 檔案，將在自動程式碼 UI 測試編輯器中自動顯示自動程式碼 UI 測試。 下列程序描述如何使用編輯器的工具列和捷徑功能表，找出並編輯您的測試方法、UI 動作的屬性及控制項。
+ 在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中，開啟附屬於您自動程式碼 UI 測試專案中自動程式碼 UI 測試的 UIMap.uitest 檔案，將在自動程式碼 UI 測試編輯器中自動顯示自動程式碼 UI 測試。 下列程序描述如何使用編輯器的工具列和捷徑功能表，找出並編輯您的測試方法、UI 動作的屬性及控制項。
 
 ## <a name="open-a-coded-ui-test"></a>開啟自動程式碼 UI 測試
  您可以使用自動程式碼 UI 測試編輯器，檢視和編輯 Visual C# 和 Visual Basic 型自動程式碼 UI 測試。
@@ -65,7 +65,7 @@ ms.locfileid: "72660613"
 > 當您在 [ **UI 動作** ] 窗格中選取位在方法的 UI 動作時，對應控制項即會反白顯示。 您也可以修改 UI 動作或控制項屬性。
 
  *我看不到* 自動程式碼 UI 測試編輯器。
-您可能使用 2012 之前的 Visual Studio Enterprise 版本。 透過 MSDN 訂閱，自動程式碼 UI 測試編輯器也可在 Visual Studio 2010 Feature Pack 2 中取得。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](http://go.microsoft.com/fwlink/?LinkID=204119)。
+您可能使用 2012 之前的 Visual Studio Enterprise 版本。 透過 MSDN 訂閱，自動程式碼 UI 測試編輯器也可在 Visual Studio 2010 Feature Pack 2 中取得。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://go.microsoft.com/fwlink/?LinkID=204119)。
 
 ## <a name="CodedUITestEditor_EditActionAndControlProperties"></a> 修改 UI 動作屬性和其對應的控制項屬性
  使用自動程式碼 UI 測試編輯器，您可以快速找出並檢視測試方法中的所有 UI 動作。 當您在編輯器中選取 UI 動作時，會自動反白顯示對應的控制項。 同樣地，如果選取控制項時，會反白顯示相關聯的 UI 動作。 當您選取 UI 動作或控制項時，可以輕鬆地使用 [屬性] 視窗來修改與其對應的屬性。
@@ -82,7 +82,7 @@ ms.locfileid: "72660613"
 
  例如，開發人員可能已在受測試之應用程式的原始程式碼中將按鈕控制項上的 [ **(ID)** ] 從"idSubmit" 變更為 "idLogin"。 一旦變更了應用程式中的 [ **(ID)** ] 屬性，自動程式碼 UI 測試將找不到按鈕控制項而失敗。 在此情況下，測試人員可以開啟 [ **搜尋屬性** ] 集合，並變更 [ **識別碼** ] 屬性，以符合開發人員在應用程式中使用的新值。 測試人員也可以將 [ **易記名稱** ] 屬性值從 “Submit” 變更為 “Login”。 藉由進行這項變更，自動程式碼 UI 測試編輯器中的相關聯 UI 動作會從「選擇 [提交] 按鈕」更新為「選擇 [登入] 按鈕」。
 
- 完成您的修改之後，選擇 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 工具列上的 [儲存]，儲存 UIMap.Designer 檔案的變更。
+ 完成您的修改之後，選擇 **工具列上的 [** 儲存 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ]，儲存 UIMap.Designer 檔案的變更。
 
  *我還應該知道什麼？*
  **祕訣**
@@ -91,7 +91,7 @@ ms.locfileid: "72660613"
 
 - ![秘訣](../test/media/tip.png "提示")若要復原您所做的屬性變更，請從 [**編輯**] 功能表中選取 [**復原**]，或按 Ctrl + Z。
 
-- ![秘訣](../test/media/tip.png "提示")您可以使用 [自動程式碼 UI 測試編輯器] 工具列中的 [**尋找**] 按鈕，開啟 Visual Studio 中的 [尋找和取代] 工具。 接著，您可以使用 [尋找] 控制項，找出自動程式碼 UI 測試編輯器中的 UI 動作。 例如，您可以嘗試尋找「按一下 [登入] 按鈕」。 在大型測試中，這樣做很有用。 請注意，您無法在自動程式碼 UI 測試編輯器的 [尋找和取代] 工具中使用取代功能。 如需詳細資訊，請參閱[尋找和取代文字](../ide/finding-and-replacing-text.md)中的＜尋找控制項＞。
+- ![秘訣](../test/media/tip.png "提示")您可以使用 [自動程式碼 UI 測試編輯器] 工具列中的 [**尋找**] 按鈕，開啟 Visual Studio 中的 [尋找和取代] 工具。 接著，您可以使用 [尋找] 控制項，找出自動程式碼 UI 測試編輯器中的 UI 動作。 例如，您可以嘗試尋找「按一下 [登入] 按鈕」。 在大型測試中，這樣做很有用。 請注意，您無法在自動程式碼 UI 測試編輯器的 [尋找和取代] 工具中使用取代功能。 如需詳細資訊，請參閱 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)中的＜尋找控制項＞。
 
 - ![秘訣](../test/media/tip.png "提示")有時候，可能很難以將控制項位於受測應用程式 UI 中的位置視覺化。 自動程式碼 UI 測試編輯器的其中一項功能，就是您可以選取 UI 控制項對應中列出的控制項，並檢視其在受測試應用程式中的位置。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][尋找受測應用程式中的 UI 控制項](#CodedUITestEditor_LocateUIControl)，位於這個主題更下面的位置。
 
@@ -203,15 +203,15 @@ ms.locfileid: "72660613"
 ## <a name="external-resources"></a>外部資源
 
 ### <a name="guidance"></a>指引
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-### <a name="faq"></a>常見問題 (FAQ)
- [自動程式碼 UI 測試常見問題集 - 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>常見問題集
+ [自動程式碼 UI 測試常見問題集 - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [自動程式碼 UI 測試常見問題集 - 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [自動程式碼 UI 測試常見問題集 - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>論壇
- [Visual Studio 使用者介面自動化測試 (包括 CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio UI 自動化測試 (包括 CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
-## <a name="see-also"></a>請參閱
- [使用 UI 自動化來測試程式碼](../test/use-ui-automation-to-test-your-code.md)[建立](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)自動程式化 Ui 測試建立[資料驅動式自動程式化 Ui 測試](../test/creating-a-data-driven-coded-ui-test.md)[從現有的動作記錄產生自動程式化 Ui 測試](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[逐步解說：建立、編輯和維護自動程式化 ui 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+## <a name="see-also"></a>另請參閱
+ [使用 UI 自動化來測試程式碼](../test/use-ui-automation-to-test-your-code.md)[建立](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)自動程式化 Ui 測試建立[資料驅動式自動程式化 Ui 測試](../test/creating-a-data-driven-coded-ui-test.md)[從現有的動作記錄產生自動程式化 Ui 測試](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[逐步解說：建立、編輯和維護](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)自動程式化 ui 測試

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
 - multi-project templates
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8ad04a557ee4b0a359efebfbe7a70d8a85db4551
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655842"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591082"
 ---
 # <a name="how-to-create-multi-project-templates"></a>如何：建立多專案範本
 
@@ -46,14 +46,14 @@ ms.locfileid: "72655842"
 
 多專案範本的根 *vstemplate* 檔案與單一專案範本在下列幾點有所不同：
 
-- **VSTemplate** 項目的 **Type** 屬性具有 **ProjectGroup** 值，而非 **Project**。 例如:
+- **VSTemplate** 項目的 **Type** 屬性具有 **ProjectGroup** 值，而非 **Project**。 例如：
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- **TemplateContent** 項目包含 **ProjectCollection** 項目，它具有一或多個 **ProjectTemplateLink** 項目可定義所包含專案的 vstemplate 檔案路徑。 例如:
+- **TemplateContent** 項目包含 **ProjectCollection** 項目，它具有一或多個 **ProjectTemplateLink** 項目可定義所包含專案的 vstemplate 檔案路徑。 例如：
 
     ```xml
     <TemplateContent>
@@ -69,7 +69,7 @@ ms.locfileid: "72655842"
     ```
 
 > [!TIP]
-> 如果您只希望多專案範本顯示在新的 [專案] 對話方塊中而不是它包含的個別專案中，請將內部範本標記為 [[隱藏]](../extensibility/hidden-element-visual-studio-templates.md)。 例如:
+> 如果您只希望多專案範本顯示在新的 [專案] 對話方塊中而不是它包含的個別專案中，請將內部範本標記為 [[隱藏]](../extensibility/hidden-element-visual-studio-templates.md)。 例如：
 >
 > ```xml
 > <VSTemplate Type="Project" ... >

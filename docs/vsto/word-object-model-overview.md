@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1b8ae7c56cf6f7cb20dd237c9106498a752e267
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254971"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985384"
 ---
 # <a name="word-object-model-overview"></a>Word 物件模型總覽
   當您在 Visual Studio 中開發 Word 解決方案時，會與 Word 物件模型互動。 組成這個物件模型的類別和介面，是由 Word 的主要 Interop 組件所提供，並在 <xref:Microsoft.Office.Interop.Word> 命名空間中定義。
@@ -119,16 +119,16 @@ ms.locfileid: "71254971"
  如需 Word 物件模型的完整資訊，您可以參閱 Word 主要 Interop 組件 (PIA) 參考和 Visual Basic for Applications (VBA) 物件模型參考。
 
 ### <a name="primary-interop-assembly-reference"></a>主要 interop 元件參考
- Word PIA 參考文件說明 Word 主要 Interop 組件中的類型。 本檔可從下列位置取得：[Word 2010 主要 interop 元件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。
+ Word PIA 參考文件說明 Word 主要 Interop 組件中的類型。 本檔可從下列位置取得： [Word 2010 主要 interop 元件參考](../vsto/office-primary-interop-assemblies.md)。
 
- 如需 Word PIA 設計的詳細資訊，例如 PIA 中類別和介面的差異以及 PIA 中的事件的執行方式，請參閱[Office 主要 interop 元件中的類別和介面總覽](http://go.microsoft.com/fwlink/?LinkId=189592)。
+ 如需 Word PIA 設計的詳細資訊，例如 PIA 中類別和介面的差異以及 PIA 中的事件的執行方式，請參閱[Office 主要 interop 元件中的類別和介面總覽](/previous-versions/office/office-12/ms247299(v=office.12))。
 
 ### <a name="vba-object-model-reference"></a>VBA 物件模型參考
- VBA 物件模型參考記載公開給 VBA 程式碼時的 Word 物件模型。 如需詳細資訊，請參閱[Word 2010 物件模型參考](http://go.microsoft.com/fwlink/?LinkId=199772)。
+ VBA 物件模型參考記載公開給 VBA 程式碼時的 Word 物件模型。 如需詳細資訊，請參閱[Word 2010 物件模型參考](/office/vba/api/overview/Word/object-model)。
 
- VBA 物件模型參考中的所有物件和成員都會對應至 Word PIA 中的類型和成員。 例如，VBA 物件模型參考中的檔物件會對應至 Word PIA <xref:Microsoft.Office.Interop.Word.Document>中的物件。 雖然 VBA 物件模型參考提供大部分屬性、方法和事件的程式碼範例，但如果您想要在以 Visual Studio 建立的 Word 專案中使用這些程式碼範例，則必須將這個參考中的 VBA 程式碼轉譯為 Visual Basic 或 Visual C#。
+ VBA 物件模型參考中的所有物件和成員都會對應至 Word PIA 中的類型和成員。 例如，VBA 物件模型參考中的檔物件會對應至 Word PIA 中的 <xref:Microsoft.Office.Interop.Word.Document> 物件。 雖然 VBA 物件模型參考提供大部分屬性、方法和事件的程式碼範例，但如果您想要在以 Visual Studio 建立的 Word 專案中使用這些程式碼範例，則必須將這個參考中的 VBA 程式碼轉譯為 Visual Basic 或 Visual C#。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Office 主要 interop 元件](../vsto/office-primary-interop-assemblies.md)
 - [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)
 - [使用檔](../vsto/working-with-documents.md)

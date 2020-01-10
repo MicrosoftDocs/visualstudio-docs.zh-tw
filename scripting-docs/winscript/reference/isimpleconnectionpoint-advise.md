@@ -53,6 +53,6 @@ HRESULT Advise(
 ## <a name="remarks"></a>備註  
  這個方法會建立簡單連接點物件與用戶端接收之間的連接。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ISimpleConnectionPoint 介面](../../winscript/reference/isimpleconnectionpoint-interface.md)   
  [ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)

@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfc59dd43ac3eed433f92af2cdd0aefe40392c4a
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: b37b60f50351496faceb97190ae0d173eba3a5f4
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72571576"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983262"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-開始在腳本引擎上進行程式碼剖析。 腳本引擎會呼叫[CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)來建立 profiler 物件的實例。  
+開始在腳本引擎上進行程式碼剖析。 腳本引擎會呼叫[CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)來建立 profiler 物件的實例。  
   
 ## <a name="syntax"></a>語法  
   

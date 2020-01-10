@@ -4,15 +4,15 @@ ms.date: 08/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms Designer, get started
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 419e5ddb5d915307130a6fdadd795ce5b3236033
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07526637f2d8083f37f55aa3da36bb01479db087
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634137"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589834"
 ---
 # <a name="walkthrough-get-started-with-windows-forms-designer"></a>逐步解說：開始使用 Windows Form 設計工具
 
@@ -69,7 +69,7 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
     `SplitContainer` 控制項會固定到 DemoCalculator 控制項的界限。
 
     > [!NOTE]
-    > 有數個控制項提供智慧標籤以協助設計。 如需詳細資訊，請參閱[逐步解說：使用 Windows Forms 控制項中的智慧標籤執行一般工作](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls)。
+    > 有數個控制項提供智慧標籤以協助設計。 如需詳細資訊，請參閱[逐步解說：在 Windows Forms 控制項上使用智慧標籤執行一般](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls)工作。
 
 5. 選取面板之間的垂直框線，然後將它向右拖曳，來使左側面板佔據大部分的空間。
 
@@ -257,7 +257,7 @@ DemoCalculator 控制項上的按鈕具有事件處理常式，可用來實作�
 
 ## <a name="test-the-control"></a>測試控制項
 
-由於 DemoCalculator 控制項是繼承自 <xref:System.Windows.Forms.UserControl> 類別，您可以使用 **UserControl 測試容器**來測試它的行為。 如需詳細資訊，請參閱[如何：測試 UserControl 的執行階段行為](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)。
+由於 DemoCalculator 控制項是繼承自 <xref:System.Windows.Forms.UserControl> 類別，您可以使用 **UserControl 測試容器**來測試它的行為。 如需詳細資訊，請參閱[如何：測試 UserControl 的執行時間行為](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)。
 
 1. 按 **F5** 以在 [UserControl 測試容器] 中建置並執行 DemoCalculator 控制項。
 
@@ -291,7 +291,7 @@ DemoCalculator 控制項可以用於其他複合控制項或是表單上。 下�
 
 2. 將 **DemoCalculator** 控制項從 [工具箱] 拖曳到您的表單上。 將控制項移至表單的左上角。 當控制項接近表單的框線時，畫面上將會出現「對齊線」。 對齊線會指出表單的 `Padding` 屬性和控制項的 `Margin` 屬性之間的距離。 將控制項置於對齊線所指示的位置。
 
-   如需詳細資訊，請參閱[逐步解說：使用對齊線來排列控制項](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines)。
+   如需詳細資訊，請參閱[逐步解說：使用對齊線排列控制項](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines)。
 
 3. 從 [工具箱] 拖曳 `Button` 控制項，並將它置於表單上。
 
@@ -311,7 +311,7 @@ DemoCalculator 控制項可以用於其他複合控制項或是表單上。 下�
 
 本文已示範如何建構簡易計算機的使用者介面。 若要繼續，您可以實作計算機邏輯來延伸其功能，然後[使用 ClickOnce 發佈應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。 或者，您可以繼續進行不同的教學課程並[使用 Windows Forms 建立圖片檢視器](../ide/tutorial-1-create-a-picture-viewer.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Windows Forms 控制項](/dotnet/framework/winforms/controls/)
 - [適用於 Windows Forms 控制項的協助工具](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)

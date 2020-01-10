@@ -1,26 +1,26 @@
 ---
 title: 建立網路型安裝
 description: 了解如何建立網路安裝點以在企業內部署 Visual Studio。
-ms.date: 10/11/2019
+ms.date: 10/29/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: e7bc45db427a517a9208833cc5be6977bfc62d03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516330"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591472"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
@@ -39,21 +39,21 @@ ms.locfileid: "72516330"
 
 若要取得 Visual Studio 2017 的啟動載入器，請參閱[Visual Studio 舊版](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
 
-您的安裝程式可執行檔 &mdash;or 更明確，啟動載入器檔案 &mdash;should 相符，或類似于下列其中一項。
+您的安裝程式可執行檔&mdash;或更具體來說，啟動載入器檔案&mdash;應符合或類似下列其中一項。
 
-| 版本 | Filename |
+| 版本 | {2&gt;檔案名稱&lt;2} |
 |-------------|-----------------------|
 |Visual Studio 企業版 | **vs_enterprise.exe** |
 |Visual Studio Professional | **vs_professional.exe** |
 |Visual Studio Build Tools   | **vs_buildtools .exe** |
 
-其他支援的啟動載入器包括**vs_feedbackclient**、 **vs_teamexplorer**、 **vs_testagent**、 **vs_testcontroller**和**vs_testprofessional**.exe。
+其他支援的啟動載入器包括**vs_feedbackclient .exe**、 **vs_teamexplorer .exe**、 **vs_testagent .exe**、 **vs_testcontroller .exe**和**vs_testprofessional .exe**。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-您的安裝程式可執行檔 &mdash;or 更明確，啟動載入器檔案 &mdash;should 相符，或類似下列其中一項。
+您的安裝程式可執行檔&mdash;或更明確，啟動載入器檔案&mdash;應符合或類似下列其中一項。
 
 |版本 | 下載|
 |-------------|-----------------------|
@@ -61,7 +61,7 @@ ms.locfileid: "72516330"
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 | Visual Studio Build Tools   | [**vs_buildtools .exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
-其他支援的啟動載入器包括[vs_teamexplorer .exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe)、 [vs_testagent](https://aka.ms/vs/16/release/vs_testagent.exe)和[vs_testcontroller](https://aka.ms/vs/16/release/vs_testcontroller.exe)。
+其他支援的啟動載入器包括[vs_teamexplorer .exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe)、 [vs_testagent .exe](https://aka.ms/vs/16/release/vs_testagent.exe)和[vs_testcontroller .exe](https://aka.ms/vs/16/release/vs_testcontroller.exe)。
 
 ::: moniker-end
 
@@ -88,8 +88,9 @@ ms.locfileid: "72516330"
 
 ## <a name="modify-the-responsejson-file"></a>修改 response.json 檔案
 
-您可以修改 response.json，以設定安裝程式執行時所使用的預設值。  例如，您可以設定 `response.json` 檔案來自動選取所選的一組特定工作負載。
-如需詳細資訊，請參閱[使用回應檔自動安裝 Visual Studio](automated-installation-with-response-file.md)。
+您可以修改 response.json，以設定安裝程式執行時所使用的預設值。  例如，您可以設定 `response.json` 檔案來自動選取所選的一組特定工作負載。 如需詳細資訊，請參閱[使用回應檔自動安裝 Visual Studio](automated-installation-with-response-file.md)。
+
+而且，如果您遇到 Visual Studio 啟動載入器發生問題，當您將它與回應 json 檔案配對時擲回錯誤，請參閱[當您安裝或使用 Visual Studio 時，針對網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)一節中的「無法從父進程剖析識別碼」一節，以取得執行作業的詳細資訊。
 
 ## <a name="copy-the-layout-to-a-network-share"></a>將配置複製到網路共用
 
@@ -219,7 +220,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 > [!IMPORTANT]
 > 為了防止發生錯誤，完整安裝路徑請務必少於 80 個字元。
->
+
 > [!TIP]
 > 作為批次檔的一部分執行時，`--wait` 選項可確保 `vs_enterprise.exe` 程序先等到安裝完成，再傳回結束代碼。
 >
@@ -287,6 +288,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 - [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 - [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)
+- [當您安裝或使用 Visual Studio 時，針對網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md)
 - [控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 - [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)
 - [在維護基底上時更新 Visual Studio](update-servicing-baseline.md)

@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6585fbfa7c16e710633e81841b4c8eb380f9f564
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 00ac30cc7e9ee3aff0dd64f015a4b4954972c09a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669718"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295527"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>編輯 UML 模型和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -320,23 +320,11 @@ ms.locfileid: "72669718"
 
 - 若要將附註和說明加入模型項目，您可以建立註解，然後將它們連結至項目。
 
-- 若要整齊地對齊圖表上的資料行或資料列圖形，您可以安裝 [對齊圖形] 命令。 這是以 UML 擴充功能範例的形式提供： [uml：用來對齊圖形的命令](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)
-
 ### <a name="to-export-a-diagram-as-an-image"></a>將圖表匯出為影像
  如需詳細資訊，請參閱將[圖表匯出為影像](../modeling/export-diagrams-as-images.md)。
 
 ## <a name="extensions"></a>擴充 UML 設計工具
  您可以將新功能加入 UML 工具，以及調整圖表標記法使其符合您自己的需求。 如需詳細資訊，請參閱[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)。
 
- 有數個範例擴充功能可用。 您可以只安裝並使用它們，也可以使用它們的原始程式碼做為您專屬擴充功能的基礎。 範例包括：
-
-|||
-|-|-|
-|[對齊圖形](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)|可協助您清理圖表的功能表命令。|
-|[連結至檔](http://code.msdn.microsoft.com/Link-UML-elements-to-0adbf5a8)|將任何 UML 項目連結至 Word 標題、PowerPoint 投影片、任何類型的檔案、UML 圖表或其他 UML 項目。 透過拖曳，即可輕鬆地建立連結。 稍後，您可以按兩下項目來查看已連結的項目。 例如，您可以將使用案例連結至 Word 規格或詳細活動圖，以及分鏡腳本投影片的動作。|
-|[快速進入](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)|使用文字項目，快速建立模型。 用於擷取會議中的想法。|
-|[依造型的色彩](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|根據造型將類別上色。 您可以輕鬆地擴充程式碼，使其適用於您自己的造型。|
-|[領域模型](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4)|方便商業模型的預設值。 預設會顯示不帶箭頭的關聯，而且作業不會出現在類別中。|
-
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [建立 UML 模型專案和圖表](../modeling/create-uml-modeling-projects-and-diagrams.md)[分析和模型化架構](../modeling/analyze-and-model-your-architecture.md)[為您的應用程式建立模型](../modeling/create-models-for-your-app.md)

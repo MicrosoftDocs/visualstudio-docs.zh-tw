@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39c90a8550736c945f04467e9366a73039cfa2b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670482"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300739"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 ### <a name="UserDefined"></a> 使用者定義的變數、函式和物件
  變更 JavaScript 檔時，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 會掃描已開啟及已參考的文件，以判斷所有可用的程式碼資源。 這包括您建立的變數、函式和物件。 隨後 JavaScript IntelliSense 便可以使用這些資源。
 
- 如需使用者定義之變數、函式和物件的詳細資訊，請參閱 MSDN 網站上的[建立您自己的物件](http://go.microsoft.com/fwlink/?LinkId=108671)。
+ 如需使用者定義之變數、函式和物件的詳細資訊，請參閱 MSDN 網站上的[建立您自己的物件](https://go.microsoft.com/fwlink/?LinkId=108671)。
 
 ### <a name="External"></a> 外部檔案參考
  您可以加入外部檔案參考的各種類型，以便在您的程式碼中提供 IntelliSense 支援。 外部檔案參考可能是指令碼參考、參考指示詞或是使用參考群組指定。
@@ -283,6 +283,6 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 - [擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)
 - [識別項的陳述式完成](../ide/statement-completion-for-identifiers.md)
 - [XML 文件註解](../ide/xml-documentation-comments-javascript.md)
-- [關於 DHTML 物件模型](http://go.microsoft.com/fwlink/?LinkID=92344) \(英文\)
+- [關於 DHTML 物件模型](https://go.microsoft.com/fwlink/?LinkID=92344) \(英文\)
 - [列出成員](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8) \(機器翻譯\)
-- [SRC 屬性 &#124; src 屬性](http://go.microsoft.com/fwlink/?LinkId=92345)
+- [SRC 屬性 &#124; src 屬性](https://go.microsoft.com/fwlink/?LinkId=92345)

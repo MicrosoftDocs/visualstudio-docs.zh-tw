@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Data Sources window
 - displaying data
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7257bd25adf32b7529d2c5e1dc6d2a753d9b2458
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9e0746de34a16dc181baff3c8b843b123c2ae434
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648849"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587026"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>將控制項繫結至 Visual Studio 中的資料
 
@@ -32,12 +32,12 @@ ms.locfileid: "72648849"
 
 | 資料來源 | **Windows Form 設計工具**的拖放功能支援 | **WPF 設計工具**的拖放功能支援 | **Silverlight Designer** 的拖放功能支援 |
 | - | - | - | - |
-| 資料集 | [是] | [是] | 否 |
-| 實體資料模型 | 是<sup>1</sup> | [是] | [是] |
+| 資料集 | 是 | 是 | 否 |
+| 實體資料模型 | 是<sup>1</sup> | 是 | 是 |
 | LINQ to SQL 類別 | 否<sup>2</sup> | 否<sup>2</sup> | 否<sup>2</sup> |
-| 服務 (包括 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、WCF 服務和 Web 服務) | [是] | [是] | [是] |
-| Object | [是] | [是] | [是] |
-| SharePoint | [是] | [是] | [是] |
+| 服務 (包括 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、WCF 服務和 Web 服務) | 是 | 是 | 是 |
+| 物件 | 是 | 是 | 是 |
+| SharePoint | 是 | 是 | 是 |
 
 1. 使用**實體資料模型**wizard 來產生模型，然後將這些物件拖曳至設計工具。
 
@@ -45,7 +45,7 @@ ms.locfileid: "72648849"
 
 ## <a name="data-sources-window"></a>資料來源視窗
 
-資料來源可在 [資料來源] 視窗中以項目形式用於專案。 當表單設計介面是專案中的使用中視窗時，您也可以選擇 [ **View**  > **其他 Windows**  > **資料來源**] 來開啟它（當專案開啟時），即可看到這個視窗。 您可以從這個視窗拖曳專案，以建立系結至基礎資料的控制項，而且您也可以用滑鼠右鍵按一下來設定資料來源。
+資料來源可在 [資料來源] 視窗中以項目形式用於專案。 當表單設計介面是專案中的使用中視窗時，您也可以選擇 [ **View** > **其他 Windows** > **資料來源**] 來開啟它（當專案開啟時），即可看到這個視窗。 您可以從這個視窗拖曳專案，以建立系結至基礎資料的控制項，而且您也可以用滑鼠右鍵按一下來設定資料來源。
 
 ![資料來源視窗](../data-tools/media/raddata-data-sources-window.png)
 
@@ -57,7 +57,7 @@ ms.locfileid: "72648849"
 
 |工作|詳細資訊|
 |----------| - |
-|開啟 [資料來源] 視窗。|在編輯器中開啟設計介面，然後選擇 [ **View**  > **Data 來源**]。|
+|開啟 [資料來源] 視窗。|在編輯器中開啟設計介面，然後選擇 [ **View** > **Data 來源**]。|
 |將資源來源新增至專案。|[新增資料來源](../data-tools/add-new-data-sources.md)|
 |設定當您從 [資料來源] 視窗中將項目拖曳到設計工具時建立的控制項。|[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |修改與 [資料來源] 視窗中之項目相關聯的控制項清單。|[將自訂控制項新增至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)|

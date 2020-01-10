@@ -2,22 +2,22 @@
 title: 使用填充碼隔離應用程式以進行單元測試
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-author: jillre
+author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 5a6ae8bf090f1e3a06dc83cf619f691e8d51f4c0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659754"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585531"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>使用填充碼來隔離您的應用程式進行單元測試
 
-**填充碼類型**是 Microsoft Fakes Framework 用來讓您將測試中的元件與環境隔離的兩項技術之一。 填充碼會將指向特定方法的呼叫轉向至您撰寫來做為測試一部分的程式碼。 有許多方法會取決於外部條件傳回不同的結果，不過填充碼會受您的測試所控制，並且可在每個呼叫中傳回一致的結果。 這可讓您更輕鬆地撰寫測試。
+**填充碼類型**是 Microsoft Fakes Framework 用來讓您將測試中的元件與環境隔離的兩項技術之一。 Shim 會讓對特定方法的呼叫轉向至您撰寫為測試一部分的程式碼。 有許多方法會取決於外部條件傳回不同的結果，不過填充碼會受您的測試所控制，並且可在每個呼叫中傳回一致的結果。 這可讓您更輕鬆地撰寫測試。
 
 使用*填充*碼，將您的程式碼與不屬於方案的元件隔離。 若要隔離解決方案的元件，請使用*存根*。
 
@@ -92,7 +92,7 @@ public void Y2kCheckerTest() {
 
 ### <a name="write-a-test-with-shims"></a>撰寫含填充碼的測試
 
-在您的測試程式碼中，請插入您要假造之方法的「繞道」。 例如:
+在您的測試程式碼中，請插入您要假造之方法的「繞道」。 例如：
 
 ```csharp
 [TestClass]
@@ -464,7 +464,7 @@ ShimMyClass.BehaveAsNotImplemented();
 
 假設您想要在驗證傳遞至方法的檔案名之後，將文字寫入檔案系統。 在這種情況下，您會在填充碼方法的中間呼叫原始方法。
 
-解決這個問題的第一種方法是使用委派和 `ShimsContext.ExecuteWithoutShims()` 包裝原始方法的呼叫，如下列程式碼所示：
+解決這個問題的第一種方法是使用委派和 `ShimsContext.ExecuteWithoutShims()`包裝原始方法的呼叫，如下列程式碼所示：
 
 ```csharp
 // unit test code
@@ -501,9 +501,9 @@ shim = (fileName, content) => {
 ShimFile.WriteAllTextStringString = shim;
 ```
 
-## <a name="systemenvironment"></a>System. 環境
+## <a name="systemenvironment"></a>System.Environment
 
-若要 <xref:System.Environment?displayProperty=fullName> 填充碼，請將下列內容新增至**Assembly**元素後面的 fakes 檔案：
+若要 <xref:System.Environment?displayProperty=fullName>填充碼，請將下列內容新增至**Assembly**元素後面的 fakes 檔案：
 
 ```xml
 <ShimGeneration>
@@ -525,4 +525,4 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 - [使用 Microsoft Fakes 隔離測試中的程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Peter Provost's blog: Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) (Peter Provost 部落格︰Visual Studio 2012 填充碼)
-- [Video (1h16): Testing untestable code with fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837) (影片 (1 小時 16 分鐘)：在 Visual Studio 2012 中使用 Fakes 測試不可測試的程式碼)
+- [Video (1h16): Testing untestable code with fakes in Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411) (影片 (1 小時 16 分鐘)：在 Visual Studio 2012 中使用 Fakes 測試不可測試的程式碼)

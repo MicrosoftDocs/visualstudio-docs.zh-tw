@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72536073"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188626"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>在 Visual Studio 中瞭解偵錯工具的生產力秘訣和訣竅
 
@@ -41,7 +41,7 @@ ms.locfileid: "72536073"
 
 ## <a name="edit-xaml-code-and-continue-debugging"></a>編輯 XAML 程式碼並繼續進行偵錯工具
 
-若要在偵錯工具期間修改 XAML 程式碼，請參閱[使用 Xaml 熱重載來撰寫和](xaml-hot-reload.md)偵測執行 xaml 程式碼。
+若要在偵錯工具期間修改 XAML 程式碼，請參閱[使用 Xaml 熱重載來撰寫和](../xaml-tools/xaml-hot-reload.md)偵測執行 xaml 程式碼。
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>難以重現的 Debug 問題
 
@@ -140,6 +140,7 @@ ms.locfileid: "72536073"
 
     您也可以在 [[平行堆疊] 視窗](../debugger/get-started-debugging-multithreaded-apps.md)中，查看執行緒的位置。
 
+::: moniker range="vs-2017"
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>檢查 web 服務和網路資源（UWP）的承載
 
 在 UWP 應用程式中，您可以使用 `Windows.Web.Http` API 來分析執行的網路作業。 您可以使用此工具來協助調試 web 服務和網路資源。 若要使用此工具，請選取 [ **Debug > Performance Profiler**]。 選取 [**網路**]，然後選擇 [**啟動**]。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集] 以產生報表。
@@ -151,6 +152,7 @@ ms.locfileid: "72536073"
 ![網路使用量工具中的詳細資訊](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 如需詳細資訊，請參閱[網路使用量](../profiling/network-usage.md)。
+::: moniker-end
 
 ## <a name="modules_window"></a>更熟悉偵錯工具如何附加至您的應用程式（C#、 C++、Visual Basic、 F#）
 

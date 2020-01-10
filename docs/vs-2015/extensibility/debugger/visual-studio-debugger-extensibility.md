@@ -11,41 +11,41 @@ ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e337e87d162ac59cc6bb45676c1411692dd1a3bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0b8d37954bf238b2ed1323bf021fded94ec0c584
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675258"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983660"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio 偵錯工具的擴充性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio 包含具全面互動性的來源的程式碼偵錯工具，提供功能強大且容易使用的工具來追蹤您的程式中的 bug。 偵錯工具已完整支援 Visual Basic 中， C#，C /C++，和 JavaScript。 不過，透過[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]，也就是可從[Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453)、 其他程式設計語言可支援在相同的豐富功能的偵錯工具中。  
+Visual Studio 包含完全互動式的原始程式碼偵錯工具，提供強大且便於使用的工具，以追蹤程式中的 bug。 偵錯工具具有 Visual Basic、 C#、C/C++和 JavaScript 的完整支援。 不過，透過[Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=21835)提供的 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]，其他程式設計語言也可以在偵錯工具中支援，而且具有相同的豐富功能。  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具，在開啟，正在進行偵錯的語言專屬的偵錯元件是常見的前端 （也就是使用者介面）。 新的語言，取得所需的所有支援的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具是建立必要的後端元件，例如偵錯引擎 (DE)。 這是 where[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]傳入。  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 偵錯工具是常見的前端（也就是使用者介面），而後者則是針對所要進行調試的語言。 針對新語言，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 偵錯工具支援所需的一切都是建立必要的後端元件，例如 debug engine （DE）。 這就是 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 的進入位置。  
   
- [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]包含所有的完整參考[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]建立新的裝置所需的項目。 此外，還有範例和可幫助您入門的教學課程。  
+ [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 包含建立新的 DE 所需之所有 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 元素的完整參考。 此外，還有一些範例和教學課程可協助您開始著手。  
   
- 偵錯支援的語言專案系統的端對端範例，請參閱 < [IronPython 範例](https://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089)。  
+ 如需具有偵錯工具支援之語言專案系統的端對端範例，請參閱[IronPython 範例](https://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089)。  
   
- 下列各節說明如何使用偵錯工具來擴充[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]。  
+ 下列各節說明如何使用 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]擴充偵錯工具。  
   
-## <a name="in-this-section"></a>本節內容  
- [快速入門](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)  
- 說明[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯的供應項目，以及如何安裝 SDK。  
+## <a name="in-this-section"></a>本章節內容  
+ [使用者入門](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)  
+ 說明 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 的調試功能，以及如何安裝 SDK。  
   
  [建立自訂的偵錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- 文件的自訂 DE 程序，來卸離 DE DE 正在準備您的程式。  
+ 記載自訂的刪除程式，從準備您的計畫，到解除卸離的過程。  
   
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
- 說明您的電腦必須撰寫的運算式評估工具。  
+ 說明您是否必須撰寫運算式評估工具。  
   
  [選擇偵錯引擎的實作策略](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)  
- 討論如何實作您的裝置。  
+ 討論如何執行您的 DE。  
   
  [參考資料](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
- 文件[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯 API。  
+ 記錄 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 的調試 API。  
   
  [範例](../../extensibility/debugger/visual-studio-debugging-samples.md)  
- 包含連結的通用語言執行階段運算式評估工具範例和偵錯引擎範例。
+ 包含 common language runtime 運算式評估工具範例和 debug engine 範例的連結。

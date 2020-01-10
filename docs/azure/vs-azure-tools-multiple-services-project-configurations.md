@@ -9,14 +9,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253425"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911801"
 ---
-# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>在 Visual Studio 中設定 Azure 專案，以便使用多個服務組態
+# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>在 Visual Studio 中設定您的 Azure 專案以使用多個服務設定
 
 Visual Studio 中的 Azure 雲端服務專案包含三個組態檔：`ServiceDefinition.csdef`、`ServiceConfiguration.Local.cscfg` 和 `ServiceConfiguration.Cloud.cscfg`：
 
@@ -55,7 +55,7 @@ Web 角色預設會啟用診斷。 Azure 雲端服務專案和儲存體帳戶已
 
 ## <a name="settings-page"></a>設定頁面
 
-在 [設定] 頁面上，您可以利用成對的名稱和數值形式將設定加入組態。 在角色中執行的程式碼可以使用[Azure Managed 程式庫](http://go.microsoft.com/fwlink?LinkID=171026)所提供的類別（尤其是[GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx)方法），在執行時間讀取您的設定值。
+在 [設定] 頁面上，您可以利用成對的名稱和數值形式將設定加入組態。 在角色中執行的程式碼可以使用[Azure Managed 程式庫](/previous-versions/azure/dn602775(v=azure.11))所提供的類別（尤其是[GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100))方法），在執行時間讀取您的設定值。
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>設定儲存體帳戶的連接字串
 
@@ -95,7 +95,7 @@ Web 角色通常會有一個位於連接埠 80 的 HTTP 端點。 另一方面�
 
 ## <a name="certificates-page"></a>憑證頁面
 
-[憑證] 屬性頁面會將憑證的相關資訊新增至您的服務組態。 請注意，您的憑證不會與您的服務一起封裝；您必須透過 [Azure 入口網站](http://portal.azure.com)將憑證分別上傳至 Azure。
+[憑證] 屬性頁面會將憑證的相關資訊新增至您的服務組態。 請注意，您的憑證不會與您的服務一起封裝；您必須透過 [Azure 入口網站](https://portal.azure.com)將憑證分別上傳至 Azure。
 
 在這裡新增憑證會將憑證的相關資訊新增至您的服務組態。 憑證不會與您的服務一起封裝；您必須透過 Azure 入口網站分別上傳憑證。
 

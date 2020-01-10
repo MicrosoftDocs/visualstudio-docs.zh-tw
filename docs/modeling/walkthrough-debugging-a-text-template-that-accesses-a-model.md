@@ -2,17 +2,17 @@
 title: 逐步解說：偵錯存取模型的文字範本
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344a9331ed63d2da27379770305905ecf5edee77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f592cfbd46e0f4fc3a64ecaabadf17a6754480c0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666964"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593521"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>逐步解說：偵錯存取模型的文字範本
 當您修改或加入特定領域語言方案中的文字模板時，您可能會在引擎將範本轉換成原始程式碼時，或在編譯產生的程式碼時收到錯誤。 下列逐步解說示範您可以執行哪些動作來進行文字模板的調試。
@@ -93,7 +93,7 @@ ms.locfileid: "72666964"
 
      **名為 ' DebuggingTestLanguageDirectiveProcessor ' 的處理器不支援名為 ' modelRoot ' 的指示詞。轉換將不會執行。**
 
-     在此情況下，指示詞呼叫包含不正確的指示詞名稱。 您已指定 `modelRoot` 做為指示詞名稱，但 `DebuggingTestLanguage` 正確的指示詞名稱。
+     在此情況下，指示詞呼叫包含不正確的指示詞名稱。 您已指定 `modelRoot` 做為指示詞名稱，但 `DebuggingTestLanguage`正確的指示詞名稱。
 
 3. 按兩下 [**錯誤清單**] 視窗中的錯誤，跳至程式碼。
 
@@ -157,13 +157,13 @@ ms.locfileid: "72666964"
 
      (C#)
 
-     **編譯轉換： VisualStudio. TextTemplating \<GUID >。GeneratedTextTransformation ' 不包含 ' Examplemodel.store.customer ' 的定義**
+     **編譯轉換： VisualStudio. TextTemplating\<GUID >。GeneratedTextTransformation ' 不包含 ' Examplemodel.store.customer ' 的定義**
 
      （Visual Basic）
 
-     **正在編譯轉換： ' Examplemodel.store.customer ' 不是 ' VisualStudio. TextTemplating \<GUID > 的成員。GeneratedTextTransformation'.**
+     **正在編譯轉換： ' Examplemodel.store.customer ' 不是 ' VisualStudio. TextTemplating\<GUID > 的成員。GeneratedTextTransformation'.**
 
-     在此情況下，文字模板程式碼會包含不正確的屬性名稱。 您已指定 `ExampleModel` 做為屬性名稱，但 `LibraryModel` 正確的屬性名稱。 您可以在提供的參數中找到正確的屬性名稱，如下列程式碼所示：
+     在此情況下，文字模板程式碼會包含不正確的屬性名稱。 您已指定 `ExampleModel` 做為屬性名稱，但 `LibraryModel`正確的屬性名稱。 您可以在提供的參數中找到正確的屬性名稱，如下列程式碼所示：
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
@@ -173,7 +173,7 @@ ms.locfileid: "72666964"
 
 4. 若要修正程式碼，請將文字模板程式碼中的屬性名稱變更為 `LibraryModel`。
 
-     所做的變更已醒目標示。
+     所做的變更已醒目提示。
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>

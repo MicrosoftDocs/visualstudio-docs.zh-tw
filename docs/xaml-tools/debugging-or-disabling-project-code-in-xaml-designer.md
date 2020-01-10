@@ -3,15 +3,15 @@ title: 偵錯或停用 XAML 設計工具的專案程式碼
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bac142e413e1fdfcd088585a139019f26b041d98
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ce29bcef43877ec8a41235545652278645cad123
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650957"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592991"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>偵錯或停用 XAML 設計工具的專案程式碼
 
@@ -98,4 +98,4 @@ ms.locfileid: "72650957"
 
 ## <a name="see-also"></a>請參閱
 
-- [在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)
+- [在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](designing-xaml-in-visual-studio.md)

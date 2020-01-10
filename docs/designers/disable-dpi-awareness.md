@@ -2,16 +2,16 @@
 title: 在 Visual Studio 中停用 DPI 感知
 description: 討論在 HDPI 監視器上 Windows Form 設計工具的限制，以及如何以非 DPI 感知處理序方式執行 Visual Studio。
 ms.date: 04/05/2019
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: a368108f1b8f9682151ed8c7b0a6d8b83b1b8a1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e7a5a5871b66fd388d7c5a9f774a22163d06729
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637413"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589561"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>在 Visual Studio 中停用 DPI 感知
 
@@ -29,7 +29,7 @@ Visual Studio 中的 **Windows Form 設計工具**不支援縮放比例。 這�
 
 ![Visual Studio 中的資訊列以非 DPI 感知模式重新啟動](./media/scaling-gold-bar.png)
 
-主顯示器上的 [讀取調整] 訊息**設定為 200% （192 DPI）。這可能會導致在設計工具視窗中呈現問題。**
+主顯示器上的 [讀取調整] 訊息**設定為200% （192 DPI）。這可能會導致在設計工具視窗中呈現問題。**
 
 > [!NOTE]
 > 此資訊列是在 Visual Studio 2017 版本 15.8 引入的。
@@ -68,7 +68,7 @@ Visual Studio 中的 **Windows Form 設計工具**不支援縮放比例。 這�
 > [!NOTE]
 > 若您正在使用 Visual Studio Professional 或 Enterprise 版本，請在項目中將 **Community** 替換成 **Professional** 或 **Enterprise**。 同時也請視需要替換磁碟機代號。
 
-**類型**： REG_SZ
+**類型**：REG_SZ
 
 **值**： DPIUNAWARE
 

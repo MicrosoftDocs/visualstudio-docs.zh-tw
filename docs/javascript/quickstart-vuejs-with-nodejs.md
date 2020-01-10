@@ -1,11 +1,10 @@
 ---
-title: 快速入門：建立您的第一個 Vue.js 應用程式
+title: 快速入門：建立您的第一個 Vue 應用程式
 description: 在本快速入門中，您會在 Visual Studio 中使用適用於 Visual Studio 的 Node.js 工具建立 Vue.js 應用程式
-ms.custom: seodec18
-ms.date: 09/24/2018
+ms.custom: ''
+ms.date: 10/31/2019
 ms.topic: quickstart
 ms.devlang: javascript
-ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
-ms.translationtype: HT
+ms.openlocfilehash: 5f7b877d825a573b935a9bf0f2c907ec2ce6f808
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226485"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428764"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Vue.js 應用程式
 
@@ -59,7 +58,7 @@ ms.locfileid: "65226485"
 1. 建立新的專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，再鍵入**基本 Vue.js**，然後選擇 [基本 Vue.js Web 應用程式] (JavaScript 或 TypeScript)。 在出現的對話方塊中，鍵入名稱 **basic-vuejs**，然後選擇 [建立]。
+    按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，再鍵入**基本 Vue.js**，然後選擇 [基本 Vue.js Web 應用程式] (JavaScript 或 TypeScript)。 在出現的對話方塊中，鍵入名稱 **basic-vuejs**，然後選擇 [建立]。
 
     ![Vue.js 範本](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
@@ -104,9 +103,13 @@ ms.locfileid: "65226485"
 
 1. (僅限 TypeScript 專案) 從 Visual Studio 中，選擇 [建置] > [清除方案]。
 
+    ::: moniker range=">=vs-2019"
+    在 Visual Studio 2019 隨附的 TypeScript 範本中，略過此步驟。
+    ::: moniker-end
+
 1. 接著，選擇 [建置] > [建置方案] 來建置專案。 請檢查 [輸出] 視窗查看建置結果，然後從 [顯示輸出來源] 清單選擇 [建置]。
 
-    Vue.js 專案範本會設定建置後事件來使用 `build` npm 指令碼。 如果您想要修改此設定，請從 Windows 檔案總管中開啟專案檔 (*\<專案名稱\>.njsproj*)，並找出這行程式碼：
+    JavaScript Vue 專案範本（和較舊版本的 TypeScript 範本）會藉由設定 post 組建事件來使用 `build` npm 腳本。 如果您想要修改此設定，請從 Windows 檔案總管中開啟專案檔 (*專案名稱\<.njsproj\>)，並找出這行程式碼：
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>
@@ -119,6 +122,8 @@ ms.locfileid: "65226485"
    在主控台中，您會看到一則訊息：「正在啟動程式開發伺服器」。
 
    接著，應用程式會在瀏覽器中開啟。
+   
+   如果您沒有看到正在執行的應用程式，請重新整理頁面。
 
    ![在瀏覽器中執行的 Vue.js 應用程式](../javascript/media/vuejs-running-app.png)
 
@@ -128,6 +133,6 @@ ms.locfileid: "65226485"
 
 ## <a name="next-steps"></a>後續步驟
 
-- 逐步進行 [Node.js 和 Express 的教學課程](../nodejs/tutorial-nodejs.md)
-- 逐步進行 [Node.js 和 React 的教學課程](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
+- 逐步進行 [Node.js 和 Express 的教學課程](tutorial-nodejs.md)
+- 逐步進行 [Node.js 和 React 的教學課程](tutorial-nodejs-with-react-and-jsx.md)
 - [將應用程式部署至 Linux App Service](../javascript/publish-nodejs-app-azure.md)

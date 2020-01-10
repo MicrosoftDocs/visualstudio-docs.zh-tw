@@ -1,5 +1,5 @@
 ---
-title: 在自訂編輯器中檢視的文件資料和文件 |Microsoft Docs
+title: 自訂編輯器中的檔資料和檔視圖 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,39 +10,39 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7574fad343e2966ab9a8782d472a0491bd29767b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2aa8779a069f4b001743326470f69f3cb35a8c10
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348093"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568883"
 ---
-# <a name="document-data-and-document-view-in-custom-editors"></a>文件資料和自訂編輯器中的文件檢視
-自訂編輯器是由兩個部分所組成： 文件資料物件和文件檢視物件。 如名稱所示，文件資料物件會表示要顯示的文字資料。 同樣地，文件檢視物件 （或 「 檢視 」） 表示要在其中顯示文件資料物件的一或多個 windows。
+# <a name="document-data-and-document-view-in-custom-editors"></a>自訂編輯器中的檔資料和檔視圖
+自訂編輯器是由兩個部分組成：檔資料物件和檔視圖物件。 顧名思義，檔資料物件代表要顯示的文字資料。 同樣地，document view 物件（或 "view"）代表要在其中顯示檔資料物件的一個或多個視窗。
 
-## <a name="document-data-object"></a>文件資料物件
- 文件資料物件是文字的文字緩衝區中的資料表示法。 它是 COM 物件，其中儲存文件文字和其他資訊。 文件資料物件也會處理文件持續性，並讓其資料的多個檢視。 如需詳細資訊，請參閱
+## <a name="document-data-object"></a>檔資料物件
+ 檔資料物件是文字緩衝區中文字的資料標記法。 它是儲存檔文字和其他資訊的 COM 物件。 檔資料物件也會處理檔持續性，並啟用其資料的多個視圖。 如需詳細資訊，請參閱
 
- <xref:EnvDTE80.Window2.DocumentData%2A> 並[文件 Windows](../extensibility/internals/document-windows.md)。
+ <xref:EnvDTE80.Window2.DocumentData%2A> 和[文件視窗](../extensibility/internals/document-windows.md)。
 
- 自訂編輯器和設計工具，可以選擇使用<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>物件或他們自己自訂的緩衝區。 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 遵循簡化的內嵌模型的標準編輯器、 支援多個檢視，並提供用來管理多個檢視的事件介面。
+ 自訂編輯器和設計工具可以選擇使用 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 物件或其本身的自訂緩衝區。 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 遵循標準編輯器的簡化內嵌模型、支援多個視圖，並提供用來管理多個視圖的事件介面。
 
-## <a name="document-view-object"></a>文件檢視物件
- 顯示程式碼和其他文字視窗就所謂的文件 檢視。 當您建立的編輯器時，您可以選擇其中一個單一檢視，顯示的單一視窗中的文字。 或者，您可以選擇多個檢視，其中的文字會顯示在一個以上的視窗。 您的選擇取決於您的應用程式。 例如，如果您需要編輯並排顯示，您會選擇多個檢視。 每個檢視是整合式的開發環境 (IDE) 執行文件資料表 (RDT) 中的項目相關聯。 檢視 windows 屬於任何專案或<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>物件。
+## <a name="document-view-object"></a>Document view 物件
+ 顯示程式碼和其他文字的視窗稱為「檔視圖」或「視圖」。 當您建立編輯器時，您可以選擇單一視圖，其中的文字會顯示在單一視窗中。 或者，您可以選擇多個 view，其中的文字會顯示在一個以上的視窗中。 您的選擇取決於您的應用程式。 例如，如果您需要並存編輯，您可以選擇多個 view。 每個視圖都會與執行檔資料表（RDT）的整合式開發環境（IDE）中的專案相關聯。 View 視窗屬於專案或 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 物件。
 
- 如果您的編輯器支援多個檢視的文件資料物件，則您的文件資料和文件檢視物件必須不同。 否則，可以將它們分組在一起。 如需詳細資訊，請參閱 <<c0> [ 支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)。
+ 如果您的編輯器支援多個檔資料物件的視圖，則您的檔資料和檔視圖物件必須是獨立的。 否則，您可以將它們群組在一起。 如需詳細資訊，請參閱[支援多個檔視圖](../extensibility/supporting-multiple-document-views.md)。
 
- IDE 會通知所執行的文件資料表中的每個項目相符的項目識別項 (ItemID) 檢視關於事件 （例如，包含文件方案已關閉時）。 如需詳細資訊，請參閱[執行文件表格](../extensibility/internals/running-document-table.md)。
+ 藉由比對執行中檔資料表中每個專案的專案識別碼（ItemID），IDE 會通知有關事件的查看（例如，當包含檔的方案關閉時）。 如需這種情況的詳細資訊，請參閱執行[檔資料表](../extensibility/internals/running-document-table.md)。
 
- 有兩個選項用於建立自訂編輯器的檢視。 其中一個是就地啟用模型中，檢視裝載在視窗中使用 ActiveX 控制項或文件資料物件的位置。 第二個是簡化的內嵌模型，檢視所裝載[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>實作來處理視窗命令。 如需就地啟用模型的資訊，請參閱 <<c0> [ 就地啟用](../extensibility/in-place-activation.md)。 簡化的內嵌模型的相關資訊，請參閱[簡化嵌入](../extensibility/simplified-embedding.md)。
+ 有兩個選項可供您建立自訂編輯器的視圖。 其中一個是就地啟用模型，其中的 view 會使用 ActiveX 控制項或檔資料物件裝載在視窗中。 第二個是簡化的內嵌模型，其中的 view 是由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 裝載，而 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 則是實作為處理視窗命令。 如需就地啟用模型的詳細資訊，請參閱就地[啟用](/visualstudio/misc/in-place-activation?view=vs-2015)。 如需簡化的內嵌模型的詳細資訊，請參閱[簡化](../extensibility/simplified-embedding.md)的內嵌。
 
-## <a name="see-also"></a>另請參閱
-- [支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)
+## <a name="see-also"></a>請參閱
+
+- [支援多個檔視圖](../extensibility/supporting-multiple-document-views.md)
 - [簡化嵌入](../extensibility/simplified-embedding.md)
-- [如何：將檢視附加至文件資料](../extensibility/how-to-attach-views-to-document-data.md)
-- [文件鎖定持有者管理](../extensibility/document-lock-holder-management.md)
-- [單一和多重索引標籤的檢視](../extensibility/single-and-multi-tab-views.md)
-- [儲存標準文件](../extensibility/internals/saving-a-standard-document.md)
-- [持續性和執行的 document 資料表](../extensibility/internals/persistence-and-the-running-document-table.md)
-- [判斷哪一個編輯器在專案中開啟檔案](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
-- [編輯器 factory](../extensibility/editor-factories.md)
+- [如何：將視圖附加至檔資料](../extensibility/how-to-attach-views-to-document-data.md)
+- [檔鎖定持有者管理](../extensibility/document-lock-holder-management.md)
+- [單一和多重索引標籤的視圖](../extensibility/single-and-multi-tab-views.md)
+- [儲存標準檔](../extensibility/internals/saving-a-standard-document.md)
+- [持續性和執行中的檔資料表](../extensibility/internals/persistence-and-the-running-document-table.md)
+- [判斷哪些編輯器會在專案中開啟檔案](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)

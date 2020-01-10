@@ -6,23 +6,24 @@ ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: e78aa662d8bd90f3b2d11766d3a43f42dc1bbccf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0871be57934b8a970efbca413fae4d1e3d90a625
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994974"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772129"
 ---
 # <a name="profile-aspnet-load-tests"></a>對 ASP.NET 負載測試進行分析
 您可以從針對 ASP.NET 網站專案執行的自動化 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 網路測試來收集程式碼剖析資料。 您可以收集取樣和階層互動資料。 如需詳細資訊，請參閱下列主題：
 
-- [(NIB) 如何︰從 Web 效能測試編輯器在 Web 應用程式執行效能工作階段](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
+- [(NIB) 如何︰從 Web 效能測試編輯器在 Web 應用程式執行效能工作階段 ((NIB) How to: Run a Performance Session on a Web Application from the Web Performance Test Editor)](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
 
 - [如何：在 Visual Studio 中使用測試設定來設定 ASP.NET 分析工具以進行負載測試](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [認識取樣資料值](../profiling/understanding-sampling-data-values.md)
 - [使用效能規則分析資料](../profiling/using-performance-rules-to-analyze-data.md)
 - [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)

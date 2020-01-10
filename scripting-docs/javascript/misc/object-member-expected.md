@@ -24,10 +24,10 @@ ms.locfileid: "72573721"
 # <a name="object-member-expected"></a>必須是物件成員
 您嘗試對物件的資料成員執行作業，但該成員不存在。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 請確定您已正確輸入資料成員的名稱。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [物件物件](../../javascript/reference/object-object-javascript.md)   
  [物件和陣列](../../javascript/objects-and-arrays-javascript.md)

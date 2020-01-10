@@ -2,17 +2,17 @@
 title: XML 編輯器
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7898ff0a592ff8aaf6c6a44672024e13e2f0221
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10741daffff2213e8ababde2395663e78241fdc4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608349"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592395"
 ---
 # <a name="xml-editor"></a>XML 編輯器
 

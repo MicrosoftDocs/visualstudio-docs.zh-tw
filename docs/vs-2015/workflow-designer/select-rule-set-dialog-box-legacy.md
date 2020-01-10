@@ -13,21 +13,21 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 24f17d6f07840f666dd1bb130be172ffa9d22cd3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24594edc9be8589acfbe99e92b5952e1ebfdcc9a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663322"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301446"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>選取規則集對話方塊 (舊版)
-本主題描述如何在舊版 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 中使用 [**選取規則集**] 對話方塊。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。
+本主題描述如何在舊版 [!INCLUDE[wfd1](../includes/wfd1-md.md)]中使用 [**選取規則集**] 對話方塊。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。
 
- [**選取規則集**] 對話方塊是用來選取可與[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)活動搭配使用的規則集。 如需如何存取 [**選取規則集**] 對話方塊的相關資訊，請參閱[如何：建立 PolicyActivity 規則集（舊版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。
+ [**選取規則集**] 對話方塊是用來選取可與[PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019)活動搭配使用的規則集。 如需如何存取 [**選取規則集**] 對話方塊的相關資訊，請參閱[如何：建立 PolicyActivity 規則集（舊版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。
 
  下表描述 [**選取規則集**] 對話方塊的使用者介面（UI）元素。
 
-|UI 項目|描述|
+|UI 元素|描述|
 |----------------|-----------------|
 |**新增功能。**|按一下以開啟 [[規則集編輯器] 對話方塊（舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)以建立新的規則條件。|
 |**編輯 。**|按一下以開啟 [[規則集編輯器] 對話方塊（舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)以編輯選取的規則條件。|
@@ -41,7 +41,7 @@ ms.locfileid: "72663322"
 > [!WARNING]
 > 舊版 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 的規則編輯器，它所針對的 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 不支援多重目標。
 
- 如需條件的詳細資訊，請參閱[在工作流程中使用條件](http://go.microsoft.com/fwlink?LinkID=65009)。
+ 如需條件的詳細資訊，請參閱[在工作流程中使用條件](https://go.microsoft.com/fwlink?LinkID=65009)。
 
-## <a name="see-also"></a>請參閱
- [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) [規則集編輯器對話方塊（舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [使用](http://go.microsoft.com/fwlink?LinkID=65004)[工作流程中的條件](http://go.microsoft.com/fwlink?LinkID=65009)PolicyActivity 活動
+## <a name="see-also"></a>另請參閱
+ [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [規則集編輯器對話方塊（舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [使用](https://go.microsoft.com/fwlink?LinkID=65004)[工作流程中的條件](https://go.microsoft.com/fwlink?LinkID=65009)PolicyActivity 活動

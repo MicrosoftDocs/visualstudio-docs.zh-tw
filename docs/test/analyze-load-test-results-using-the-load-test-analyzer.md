@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, analyzing test results
 - load tests, managing test results
 ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 62f93d75e9b0dc92f6bcbe86e09a39f96f9518a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9300dd1ebeaee9d87d2527dbc49fa66e319970c1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665346"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591225"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>使用負載測試分析器分析負載測試結果
 

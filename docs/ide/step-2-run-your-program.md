@@ -1,5 +1,5 @@
 ---
-title: 步驟 2:執行您的圖片檢視器應用程式
+title: 步驟2：執行您的圖片檢視器應用程式
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
@@ -10,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f31153dab172451681b5e1eb8292f505141c2ff9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 9ee63c88bdca5f096fb5fbb8f36be0e2af8fbade
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950721"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588742"
 ---
-# <a name="step-2-run-your-picture-viewer-app"></a>步驟 2:執行您的圖片檢視器應用程式
+# <a name="step-2-run-your-picture-viewer-app"></a>步驟2：執行您的圖片檢視器應用程式
 
-當您建立 Windows Forms 應用程式專案時，實際上會建立一個執行的程式。 在本教學課程中，您的圖片檢視器應用程式尚不會執行太多 @ no__t-0although。 目前，它會顯示一個空白視窗，顯示標題列中的 [ **Form1** ]。
+當您建立 Windows Forms 應用程式專案時，實際上會建立一個執行的程式。 在本教學課程中，您的圖片檢視器應用程式並不會有太多&mdash;，不過它將會。 目前，它會顯示一個空白視窗，顯示標題列中的 [ **Form1** ]。
 
 以下是執行應用程式的方式。 
 
@@ -31,17 +31,17 @@ ms.locfileid: "71950721"
 
     - 在工具列上，選擇 [**開始調試**] 按鈕，如下所示：
 
-      @no__t 0Start 調試的工具列按鈕 @ no__t-1<br>
+      ![開始調試 工具列按鈕](../ide/media/express_icondebug.png)<br>
       ***開始調試****工具列按鈕*
 
 1. Visual Studio 會執行您的應用程式，而名為**Form1**的視窗隨即出現。 下列螢幕擷取畫面顯示您剛建立的應用程式。 應用程式正在執行，您很快就會新增到其中。
 
-     執行 @ no__t 的 @no__t 0Windows Forms 應用程式-1<br>
+     ![Windows Forms 應用程式正在執行](../ide/media/express_firstrun.png)<br>
 ***Windows Forms 應用程式*** *，執行*
 
 1. 回到 Visual Studio 的整合式開發環境（IDE），然後查看新的工具列。 當您執行應用程式時，工具列上會出現其他按鈕。 這些按鈕可讓您執行停止和啟動應用程式之類的動作，並協助您追蹤任何可能發生的錯誤（bug）。 在此範例中，我們會使用它來啟動和停止應用程式。
 
-     @no__t 0Debugging 工具列 @ no__t-1<br>
+     ![調試](../ide/media/express_debugtoolbar.png) 的工具列<br>
 ***調試****工具列*
 
 1. 使用下列其中一種方法來停止您的應用程式：
@@ -50,7 +50,7 @@ ms.locfileid: "71950721"
 
     - 在功能表列上，依序選擇 [偵錯] > [停止偵錯]。
 
-    - 使用您的鍵盤，然後按**Shift**+**F5**。
+    - 使用鍵盤，然後按**Shift**+**F5**。
 
     - 選擇 [Form1] 視窗右上角的 **X** 按鈕。
 
@@ -59,11 +59,11 @@ ms.locfileid: "71950721"
 
 ## <a name="next-steps"></a>後續步驟
 
-* 若要移至下一個教學課程步驟，請參閱 ** @ no__t-1Step 3：設定您的表單內容 @ no__t-0 @ no__t-1。
+* 若要移至下一個教學課程步驟，請參閱 **[步驟3：設定您的表單內容](../ide/step-3-set-your-form-properties.md)** 。
 
-* 若要回到上一個教學課程步驟，請參閱[步驟 1：建立 Windows Forms 應用程式專案 @ no__t-0。
+* 若要回到上一個教學課程步驟，請參閱[步驟1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-* [教學課程 2：建立計時的數學測驗 @ no__t-0
-* [教學課程 3：建立配對遊戲 @ no__t-0
+* [教學課程2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
+* [教學課程3：建立配對遊戲](tutorial-3-create-a-matching-game.md)

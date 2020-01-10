@@ -30,10 +30,10 @@ ms.locfileid: "72572549"
   
 - 不存在的物件屬性。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 使用**var**語句宣告變數（如 `var` x;）。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [變數](../../javascript/variables-javascript.md)   
  [變數範圍](../../javascript/advanced/variable-scope-javascript.md)

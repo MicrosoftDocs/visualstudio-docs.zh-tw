@@ -23,19 +23,19 @@ caps.latest.revision: 55
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 88c72ecaf44855badfd42456d9818f2ba9168a49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c5906084fc7db96ddf304e8362bf7692dac62d5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661719"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297144"
 ---
-# <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
+# <a name="uml-sequence-diagrams-guidelines"></a>UML 循序圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 中，您可以繪製*順序圖表*來顯示互動。 互動是類別、元件、子系統或行動之一般執行個體間的一連串訊息。
 
- UML 循序圖是 UML 模型的一部分，而且只存在於 UML 模型專案內。 若要建立 UML 順序圖表，請在 [**架構**] 功能表上，按一下 [**新增 UML 或分層圖**]。 深入瞭解[uml 順序圖表元素](../modeling/uml-sequence-diagrams-reference.md)或[uml 模型圖](../modeling/edit-uml-models-and-diagrams.md)的一般功能。 如需影片示範，請參閱[使用順序圖表的草繪互動（2010）](http://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams)。
+ UML 循序圖是 UML 模型的一部分，而且只存在於 UML 模型專案內。 若要建立 UML 順序圖表，請在 [**架構**] 功能表上，按一下 [**新增 UML 或分層圖**]。 深入瞭解[uml 順序圖表元素](../modeling/uml-sequence-diagrams-reference.md)或[uml 模型圖](../modeling/edit-uml-models-and-diagrams.md)的一般功能。 如需影片示範，請參閱[使用順序圖表的草繪互動（2010）](https://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams)。
 
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -73,7 +73,7 @@ ms.locfileid: "72661719"
 #### <a name="lifelines-and-types"></a>生命線和類型
  您在循序圖中繪製的生命線可以代表系統中元件或類別的一般執行個體。 您可以從類型建立生命線、從生命線建立類型，並在 UML 類別圖和 UML 元件圖上顯示類型。 如需詳細資訊，請參閱[類別和生命線](#ClassesAndLifelines)。
 
-#### <a name="parameter-types"></a>參數型別
+#### <a name="parameter-types"></a>參數類型
  您也可以在 UML 類別圖中描述參數類型以及生命線之間傳送之訊息中所使用的傳回值。
 
 #### <a name="use-case-details"></a>使用案例詳細資料
@@ -115,7 +115,7 @@ ms.locfileid: "72661719"
 3. 若要顯示來自未知事件來源 (9) 或廣播給未知收件者 (10) 的訊息，請繪製圖表上傳送至空白空間或從中接收的非同步訊息。 這些訊息稱為*找到的訊息*（9）和*遺失的訊息*（10）。
 
     > [!NOTE]
-    > 若要移動已遺失或找到訊息的生命線群組，請遵循下列步驟來選取生命線，然後移動它們：在這些生命線周圍繪製矩形，或按住**CTRL**鍵同時按一下每個生命線。 如果您使用 [**全選**] 或**CTRL** +**A**來選取所有生命線，然後移動它們，則附加至這些生命線的任何遺失或找到的訊息都不會移動。 如果發生此案例，則您可以分別移動這些訊息。
+    > 若要移動已遺失或找到訊息的生命線群組，請遵循下列步驟來選取生命線，然後移動它們：在這些生命線周圍繪製矩形，或按住**CTRL**鍵同時按一下每個生命線。 如果您使用 [**全選**] 或**CTRL**+**A**來選取所有生命線，然後移動它們，則附加至這些生命線的任何遺失或找到的訊息都不會移動。 如果發生此案例，則您可以分別移動這些訊息。
 
 4. 為送至相同元件或系統的每個主要訊息，繪製循序圖。
 
@@ -179,7 +179,7 @@ ms.locfileid: "72661719"
 
 - 使用**同步**工具來描述傳送者等候接收者傳迴響應的互動（3）。
 
-     **@No__t_1 \<return > >** 箭號將會顯示在執行發生的結尾。 它指出將控制權傳回給寄件者。
+     **<\<傳回 > >** 箭號將會顯示在執行發生的結尾。 它指出將控制權傳回給寄件者。
 
 - 使用**非同步**工具來描述可以立即繼續執行的互動，而不需要等待接收者（4）。
 
@@ -442,5 +442,5 @@ ms.locfileid: "72661719"
 
 5. 若要將新訊息加入片段中，請使用訊息工具，或進行複製並貼上。
 
-## <a name="see-also"></a>請參閱
- [Uml 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md)[編輯 uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md) [Uml 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md) [Uml 類別圖：參考](../modeling/uml-class-diagrams-reference.md) [Uml 元件圖](../modeling/uml-component-diagrams-reference.md)：參考[uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md) [影片：使用順序圖表繪製互動](http://go.microsoft.com/fwlink/?LinkId=201113)
+## <a name="see-also"></a>另請參閱
+ [Uml 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md)[編輯 uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md) [Uml 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md) [Uml 類別圖：](../modeling/uml-class-diagrams-reference.md)參考 uml[元件圖：參考](../modeling/uml-component-diagrams-reference.md) [Uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md)[影片：使用順序圖表進行草繪互動](https://go.microsoft.com/fwlink/?LinkId=201113)

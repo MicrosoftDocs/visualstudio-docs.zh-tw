@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, logging
 ms.assetid: 9aea2e76-8f60-4234-913d-598e7bbad808
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99bbb6ba880ace8b21ae6b6009ee84cffee79485
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 24a769f6d0b9aa847899c02c951921dc77bac21a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856039"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592187"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild 中的記錄
 記錄功能提供一種方式讓您能夠監視組建的進度。 記錄功能會擷取記錄檔中建置事件、訊息、警告和錯誤。
@@ -41,5 +41,5 @@ ms.locfileid: "62856039"
 
  概述如何建立自訂的轉送記錄器。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [平行建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) 描述如何透過讓專案平行執行的方式，加快建置多個專案的速度。

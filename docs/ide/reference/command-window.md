@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75792518eadc5449f070b90f3f1e8c2da38bf2b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748788"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570345"
 ---
 # <a name="command-window"></a>命令視窗
 [命令] 視窗是用來直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中執行命令或別名。 您可以執行功能表命令以及不會出現在任何功能表上的命令。 若要顯示 [命令] 視窗，請從 [檢視] 功能表中選擇 [其他視窗]，然後選取 [命令視窗]。
@@ -44,7 +44,7 @@ ms.locfileid: "72748788"
 ## <a name="entering-commands"></a>輸入命令
 大於符號 (`>`) 會出現在 [命令] 視窗的左邊緣作為新行的提示。 使用向上鍵和向下鍵來捲動先前所發出的命令。
 
-|工作|方案|範例|
+|工作|解決方案|範例|
 |----------|--------------|-------------|
 |評估運算式。|在運算式前面加上問號 (`?`)。|`? myvar`|
 |切換至 [即時運算] 視窗。|將 `immed` 輸入到視窗但沒有大於符號 (>)|`immed`|

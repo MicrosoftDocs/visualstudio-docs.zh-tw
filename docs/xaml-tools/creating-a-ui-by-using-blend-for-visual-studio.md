@@ -5,17 +5,17 @@ ms.date: 07/31/2019
 ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3955d494d4c04e85eba0541c0cf09749e8ab4de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2b9f38d83befcf49ecd3de8da3a2cd26ff3ab46
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649714"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593005"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio 概觀
 
@@ -62,7 +62,7 @@ Blend for Visual Studio 是 Visual Studio 的元件。 若要安裝 Blend，請�
 
 ## <a name="assets-window"></a>資產視窗
 
-[資產] 視窗包含所有可用的控制項，類似於 Visual Studio 的**工具箱**。 除了控制項之外，您還可以在 [資產] 視窗中找到可新增至畫板的所有項目，包括樣式、媒體、行為和效果。 若要開啟 [資產] 視窗中，請選擇 [檢視] > [資產] 視窗，或按 **Ctrl** + **Alt**+**X**。
+[資產] 視窗包含所有可用的控制項，類似於 Visual Studio 的**工具箱**。 除了控制項之外，您還可以在 [資產] 視窗中找到可新增至畫板的所有項目，包括樣式、媒體、行為和效果。 若要開啟 [資產] 視窗中，請選擇 [檢視] > [資產] 視窗，或按 **Ctrl**+**Alt**+**X**。
 
 ![Blend for Visual Studio 的 [資產] 視窗](media/blend-assets-window.png)
 

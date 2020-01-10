@@ -6,17 +6,18 @@ manager: lank
 ms.date: 08/07/2019
 ms.topic: conceptual
 description: 了解如何開始使用訂閱系統管理入口網站管理組織的 Visual Studio 訂閱。
-ms.openlocfilehash: 6ee33bfaf47452a1213cd5def206e47aee790fc3
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
-ms.translationtype: HT
+ms.openlocfilehash: 484ecdca3435ee725853932acd66e307c2eb3cbe
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490699"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879304"
 ---
-# <a name="overview-of-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio 訂閱管理入口網站
+# <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 訂閱系統管理員入口網站的總覽
+
 Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管理您組織的訂用帳戶。 
 
-## <a name="important-considerations"></a>重要考量︰
+## <a name="important-considerations"></a>重要的考量
 在您使用 Visual Studio 訂閱管理入口網站時，請牢記下列事項：
 - **Visual Studio 訂用帳戶依使用者授權。** 每位訂閱者可以基於開發和測試用途在任意數量的電腦上使用軟體。
 - 根據貴組織購買的 Visual Studio 訂用帳戶，**僅為每位訂閱者指派一個訂用帳戶層級**。 如果您的訂閱者獲派超過一個以上的訂閱等級，請編輯他們的設定，讓他們只擁有一個等級。
@@ -41,7 +42,7 @@ Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管
 > ![Visual Studio 訂用帳戶管理入口網站訂閱者頁面](_img/using-admin-portal/subscribers-page.png)
 
 ## <a name="the-details-page"></a>詳細資料頁面
-如需目前檢視的合約詳細資訊，請選取 [詳細資料] 索引標籤。它會顯示合約狀態、購買帳戶、組織詳細資料、超級系統管理員和其他相關資訊。
+如需您所要查看之合約的詳細資訊，請選取 [詳細資料] 索引標籤。它會顯示合約狀態、購買帳戶、組織詳細資料、超級管理員和其他相關資訊。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 訂用帳戶管理入口網站詳細資料頁面](_img/using-admin-portal/details-page.png)
 
@@ -56,5 +57,5 @@ Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管
 - [系統管理員責任概觀](admin-responsibilities.md)
 - [清查生產前環境](admin-inventory.md)
 - [管理大型小組及外部承攬人](manage-teams.md)
-- [追蹤使用者指派及處理訂單](assignments-orders.md)
+- [追蹤使用者指派和處理訂單](assignments-orders.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量

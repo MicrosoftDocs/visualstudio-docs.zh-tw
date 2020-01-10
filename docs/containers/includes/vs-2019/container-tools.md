@@ -7,16 +7,16 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 124f60a4a632115625524b4e30ab28f795d41660
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 0232b37d08901bcc04c9d66facfe6850a9852e88
+ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70312117"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74485500"
 ---
-有了 Visual Studio，您就可以輕鬆地建立、調試和執行容器化的 ASP.NET Core 應用程式，並將其發佈至 Azure Container Registry （ACR）、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們將發佈到 ACR。
+有了 Visual Studio，您就可以輕鬆地建立、偵測及執行容器化的 .NET、ASP.NET 和 ASP.NET Core 應用程式，並將其發佈至 Azure Container Registry （ACR）、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們會將 ASP.NET Core 應用程式發佈到 ACR。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 已安裝**網頁程式開發**、**Azure Tools** 工作負載及(或) **.NET Core 跨平台開發** 工作負載的 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -25,7 +25,7 @@ ms.locfileid: "70312117"
 
 ## <a name="installation-and-setup"></a>安裝和設定
 
-若要安裝 Docker，請先檢閱 [Docker Desktop for Windows：What to know before you install](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install) (安裝前須知) 中的資訊。 接下來，安裝 [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)。
+針對 Docker 安裝，請先參閱適用于[Windows 的 Docker Desktop 中的資訊：安裝之前的須知](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)事項。 接下來，安裝 [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)。
 
 ## <a name="add-a-project-to-a-docker-container"></a>將專案新增至 Docker 容器
 
@@ -73,25 +73,19 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 
 [輸出] 視窗中的 [容器工具] 選項會顯示要採取哪些動作。
 
-從 [工具] > [NuGet 套件管理員]、[套件管理員主控台] 功能表開啟 [套件管理員主控台] (PMC)。
+## <a name="containers-window"></a>容器視窗
 
-產生的應用程式 Docker 映像，會標記為 *dev*。 此映像以 *microsoft/dotnet* 基底映像的 *2.2-aspnetcore-runtime* 標籤為基礎。 在 [套件管理員主控台] (PMC) 視窗中，執行 `docker images` 命令。 這會顯示電腦上的映像：
+如果您有 Visual Studio 2019 16.4 版或更新版本，您可以使用 [**容器**] 視窗來查看您的電腦上執行中的容器，以及您可用的映射。
 
-```console
-REPOSITORY        TAG                     IMAGE ID      CREATED         SIZE
-hellodockertools  dev                     d72ce0f1dfe7  30 seconds ago  255MB
-microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
-```
+使用 IDE 中的 [搜尋] 方塊開啟 [**容器**] 視窗（按**Ctrl**+**Q**以使用它），輸入 `container`，然後從清單中選擇 [**容器**] 視窗。
 
-> [!NOTE]
-> **dev** 映像未包含應用程式二進位檔案和其他內容，因為 [偵錯] 組態會使用磁碟區掛接來提供反覆編輯和偵錯體驗。 若要建立包含所有內容的生產映像，請使用 [發行] 組態。
+您可以在方便的位置（例如編輯器底下）移動 [**容器**] 視窗，方法是將它移到視窗放置參考後面，然後遵循。
 
-在 PMC 中執行 `docker ps` 命令。 請注意是使用容器來執行應用程式：
+在視窗中，尋找您的容器並逐步執行每個索引標籤，以查看環境變數、埠對應、記錄和檔案系統。
 
-```console
-CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
-cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
-```
+![[容器] 視窗的螢幕擷取畫面](../../media/overview/vs-2019/container-tools-window.png)
+
+如需詳細資訊，請參閱[在 Visual Studio 中查看和診斷容器和映射](../../view-and-diagnose-containers.md)。
 
 ## <a name="publish-docker-images"></a>發行 Docker 映像
 
@@ -103,12 +97,12 @@ cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago  
 1. 選擇 [建立新的 Azure Container Registry]，然後按一下 [發佈]。
 1. 在 [建立新的 Azure Container Registry] 中填入您想要的值。
 
-    | 設定      | 建議的值  | 說明                                |
+    | 設定      | 建議的值  | 描述                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS 首碼** | 全域唯一的名稱 | 用以唯一識別容器登錄的名稱。 |
     | **訂用帳戶** | 選擇您的訂用帳戶 | 要使用的 Azure 訂用帳戶。 |
     | **[資源群組](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中建立容器登錄的資源群組名稱。 選擇 [新增] 以建立新的資源群組。|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | 標準 | 容器登錄的服務層  |
+    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standard | 容器登錄的服務層  |
     | **登錄位置** | 接近您的位置 | 在[區域](https://azure.microsoft.com/regions/)中選擇您附近的 [位置]，或選擇將會使用容器登錄的其他服務所接近的位置。 |
 
     ![Visual Studio 的 [建立 Azure Container Registry] 對話方塊][0]

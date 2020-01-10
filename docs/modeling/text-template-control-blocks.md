@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 128be69d356b371cc34f5e089df25546428bc83f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef39e82ea1abe95b3bea799545ed7fbf5b766fd3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606081"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591784"
 ---
 # <a name="text-template-control-blocks"></a>文字範本控制區塊
 控制區塊可讓您在文字範本撰寫程式碼，以便產生不同的輸出。 有三種類型的控制區塊，是使用左括號來區別：
@@ -117,7 +117,7 @@ Some text.
 > [!NOTE]
 > 類別功能控制區塊後面不得接著相同的範本檔案中的標準控制區塊。 不過，這項限制不適用於使用 `<#@include#>` 指示詞的結果。 每個包含的檔案的類別功能區塊後可以有標準區塊。
 
- 您可以建立函式，其會透過在類別功能控制區塊內內嵌文字和運算式區塊來產生輸出。 例如:
+ 您可以建立函式，其會透過在類別功能控制區塊內內嵌文字和運算式區塊來產生輸出。 例如：
 
 ```
 <#+
@@ -145,7 +145,7 @@ Some text.
 
  使用控制區塊時，您應該記住下列考量：
 
-- **語言.** 您可以在文字範本中使用 C# 或 Visual Basic 程式碼。 預設語言是 C# 中，但是您可以使用 `template` 指示詞的 `language` 參數指定 Visual Basic。 （如需 `template` 指示詞的詳細資訊，請參閱[T4 文字模板](../modeling/t4-text-template-directives.md)指示詞）。
+- **語言。** 您可以在文字範本中使用 C# 或 Visual Basic 程式碼。 預設語言是 C# 中，但是您可以使用 `template` 指示詞的 `language` 參數指定 Visual Basic。 （如需 `template` 指示詞的詳細資訊，請參閱[T4 文字模板](../modeling/t4-text-template-directives.md)指示詞）。
 
      您在控制區塊中使用的語言，與您在文字範本中產生的文字的語言或格式無關。 您可以使用 Visual Basic 程式碼產生 C#，反之亦然。
 

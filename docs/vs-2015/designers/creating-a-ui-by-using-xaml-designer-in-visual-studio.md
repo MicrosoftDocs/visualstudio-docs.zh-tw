@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1c5d0770115fffd8c81078fd0e3d187ec5d3c5ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 879d8457a0f5fd4bf63a2d69a4f3f026ce4c6fe1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657940"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294669"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,14 +128,14 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
   **將範圍傳回 pageRoot**：[文件大綱] 視窗頂端顯示向上箭號符號的選項，可將文件大綱傳回到前一個範圍。 只有您在樣式或樣板的範圍內時，選定範圍才適用。
 
-## <a name="properties-window"></a>屬性視窗
+## <a name="properties-window"></a>[屬性] 視窗
  [屬性] 視窗可讓您設定控制項的屬性值。 看起來如下：
 
  ![屬性視窗](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
- [屬性] 視窗的頂端有各種選項。 您可以使用 [名稱] 方塊，變更目前選取項目的名稱。 在左上角，有一個代表目前選取項目的圖示。 若要依分類或依字母順序排列屬性，請按一下 [排列依據]清單中的 [分類]、[名稱] 或 [來源] 。 若要查看控制項的事件清單，請按一下顯示閃電符號的 [事件] 按鈕。 若要搜尋屬性，請在 [搜尋屬性] 方塊中開始輸入屬性的名稱。 在您輸入文字時，[屬性] 視窗會顯示符合搜尋的屬性。 有些屬性可讓您藉由選取向下箭號按鈕來設定進階屬性。 如需使用屬性和處理事件的詳細資訊，請參閱 [快速入門：新增控制項和處理事件](http://go.microsoft.com/fwlink/?LinkID=247983)
+ [屬性] 視窗的頂端有各種選項。 您可以使用 [名稱] 方塊，變更目前選取項目的名稱。 在左上角，有一個代表目前選取項目的圖示。 若要依分類或依字母順序排列屬性，請按一下 [排列依據]清單中的 [分類]、[名稱] 或 [來源] 。 若要查看控制項的事件清單，請按一下顯示閃電符號的 [事件] 按鈕。 若要搜尋屬性，請在 [搜尋屬性] 方塊中開始輸入屬性的名稱。 在您輸入文字時，[屬性] 視窗會顯示符合搜尋的屬性。 有些屬性可讓您藉由選取向下箭號按鈕來設定進階屬性。 如需使用屬性和處理事件的詳細資訊，請參閱 [快速入門：新增控制項和處理事件](https://go.microsoft.com/fwlink/?LinkID=247983)
 
  每個屬性值的右邊是顯示為方塊符號的 *「屬性標記」* (Property Marker)。 屬性標記的有無表示屬性是否已套用資料繫結或資源。 例如，白色方塊符號表示預設值，黑色方塊符號通常表示已套用本機資源，而橙色方塊通常表示已套用資料繫結。 當您按一下屬性標記時，您可以巡覽至樣式定義、開啟資料繫結產生器，或開啟資源選擇器。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  使用[中的元素 XAML 設計工具](../designers/working-with-elements-in-xaml-designer.md)[如何建立和套用資源](../designers/how-to-create-and-apply-a-resource.md)[逐步解說：系結至中的資料 XAML 設計工具](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

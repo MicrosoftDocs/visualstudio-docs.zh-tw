@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8c261d903868df887d99c10182ed134c79c552b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 89ca4c02a1cbb1171619060b9478b5f2d3ccaa36
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671760"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295723"
 ---
-# <a name="step-5-add-controls-to-your-form"></a>步驟 5：將控制項加入至您的表單
+# <a name="step-5-add-controls-to-your-form"></a>步驟 5：將控制項加入您的表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在這個步驟中，您要將控制項 (例如 `PictureBox` 控制項和 `CheckBox` 控制項) 新增至表單。 接著，您要將按鈕加入至表單。
 
- ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 2](http://go.microsoft.com/fwlink/?LinkId=205211)或[教學課程1：在C#影片2中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205200)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 2](https://go.microsoft.com/fwlink/?LinkId=205211)或[教學課程1：在C#影片2中建立圖片檢視器](https://go.microsoft.com/fwlink/?LinkId=205200)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ### <a name="to-add-controls-to-your-form"></a>若要將控制項加入至表單
 

@@ -15,22 +15,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 872f7c594344af2c59ebe7f8d1fbd1a640dd2190
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a2a3f4429341ecdba26dab2f95415332f9cb2eca
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728833"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187261"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 可能會發生此訊息，是因為遠端電腦上的遠端偵錯「監視」設定不正確，或遠端電腦因為網路問題或防火牆出現而無法存取。
 
 > [!IMPORTANT]
-> 如果您認為您因為產品錯誤而收到此訊息，請將[此問題](../ide/how-to-report-a-problem-with-visual-studio.md)回報給 Visual Studio。 如果您需要更多協助，請參閱 [Talk to Us](../ide/talk-to-us.md) 與 Microsoft 連絡。
+> 如果您認為您因為產品錯誤而收到此訊息，請將[此問題](../ide/how-to-report-a-problem-with-visual-studio.md)回報給 Visual Studio。 如果您需要更多協助，請參閱 [Talk to Us](../ide/feedback-options.md) 與 Microsoft 連絡。
 
 ## <a name="specificerrors"></a>詳細的錯誤訊息是什麼？
 
-@No__t_0 訊息為泛型。 通常，錯誤字串中會包含更特定的訊息，並可協助您找出問題的原因，或搜尋更精確的修正程式。 以下是附加至主要錯誤訊息的一些較常見的錯誤訊息：
+`Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` 訊息為泛型。 通常，錯誤字串中會包含更特定的訊息，並可協助您找出問題的原因，或搜尋更精確的修正程式。 以下是附加至主要錯誤訊息的一些較常見的錯誤訊息：
 
 - [偵錯工具無法連接到遠端電腦。偵錯工具無法解析指定的電腦名稱稱](#cannot_connect)
 - [遠端偵錯程式拒絕連接要求](#rejected)

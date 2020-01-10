@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 偵錯範例 |Microsoft Docs
+title: Visual Studio 的調試範例 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e43c2b38d1da055a1a0a4533acc61cb3b8e6760
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea408640b47b04041e99b9a4bff2605b6231a92f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348302"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981225"
 ---
-# <a name="visual-studio-debugging-samples"></a>Visual Studio 偵錯範例
-兩個範例會示範如何擴充 Visual Studio 偵錯工具使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。
+# <a name="visual-studio-debugging-samples"></a>Visual Studio 的調試範例
+兩個範例示範如何使用 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]擴充 Visual Studio 偵錯工具。
 
-- 偵錯工具運算式評估工具範例提供 managed 語言，包含在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]視窗中，按一下**範例**索引標籤上，按一下 **所有**或**C#** 語言，然後再按一下清單中**偵錯工具**。
+- Managed 語言的偵錯工具運算式評估工具範例包含在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]中。 在 [[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]] 視窗中，按一下 [**範例**] 索引卷**C#** 標，按一下語言清單中的 [**全部**] 或，然後按一下 [**偵錯工具**]。
 
-- Visual Studio 偵錯引擎範例，原生語言，可在 MSDN Code Gallery 上。 如需詳細資訊，請參閱 < [Visual Studio 偵錯引擎範例](http://go.microsoft.com/fwlink/?LinkId=150236)Microsoft 網站上。
+- 您可以從 MSDN 程式碼庫取得適用于原生語言的 Visual Studio Debug Engine 範例。 如需詳細資訊，請參閱 Microsoft 網站上的[Visual Studio debug engine sample](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e) 。

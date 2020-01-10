@@ -10,15 +10,15 @@ helpviewer_keywords:
 - load tests, counter sets
 - load tests, threshold rules
 ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 493295bdbcd1b4906aedf6dca54e264e8ae5e8c6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 440bc01b52269c477d9d2f2194fd831041f1d20d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659958"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596316"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>在負載測試中指定電腦的計數器集合與臨界值規則
 
@@ -37,9 +37,9 @@ ms.locfileid: "72659958"
 
 ## <a name="tasks"></a>工作
 
-|工作|相關主題|
+|工作|相關的主題|
 |-|-----------------------|
-|**管理負載測試的計數器集合：** 建立負載測試之後，您就可以在 [負載測試編輯器] 中編輯 [計數器集合]。 對應計數器集合包含選擇您要從中收集效能資料的電腦集合，並指派一組計數器集合收集每一部個別電腦。 您可以在 [負載測試編輯器] 中管理計數器。|-   [如何：管理計數器集合](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
+|**管理負載測試的計數器集合：** 建立負載測試之後，您就可以在 [負載測試編輯器] 中編輯 [計數器集合]。 對應計數器集合包含選擇您要從中收集效能資料的電腦集合，並指派一組計數器集合收集每一部個別電腦。 請在 [負載測試編輯器] 中管理計數器。|-   [如何：管理計數器集合](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**將計數器集合新增至負載測試：** 當您使用 [新增負載測試精靈] 建立負載測試時，可以新增初始的計數器集合。 這些都會為您的負載測試提供一組預先定義的計數器集合。 當您建立負載測試之後，您可以使用 [負載測試編輯器] 將新的計數器加入至現有的計數器集合。|-   [如何：將計數器新增至計數器集合](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [如何：新增自訂計數器集合](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**為負載測試指定使用計數器的臨界值規則：** 臨界值規則是設定在單獨之效能計數器上的規則，用來監視負載測試期間的系統資源使用狀況。 計數器集合定義包含許多關鍵效能計數器之預先定義的臨界值規則。 負載測試中的臨界值規則會將效能計數器值與常數值或其他效能計數器值做比較。|-   [如何：新增臨界值規則](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
 |**為計數器集合對應的電腦指派易記名稱：** 您可以新增電腦標記，讓您將容易辨認的名稱套用至電腦。 這些標記會顯示在 [負載測試編輯器] 樹狀目錄的 [計數器集合對應] 節點中。 更重要的是，這些標記會顯示在 Excel 報表中，可協助專案關係人識別電腦在負載測試中扮演的角色，例如 "Web Server1 in lab2" 或 "SQL Server2 in Phoenix office"。<br /><br /> 如需詳細資訊，請參閱[針對測試比較或趨勢分析報告負載測試結果](../test/compare-load-test-results.md)。||

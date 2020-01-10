@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961727"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678957"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本來建立 Flask 應用程式
 
-**上一步：[建立 Visual Studio 專案和方案](learn-flask-visual-studio-step-01-project-solution.md)**
+**上一個步驟：[建立 Visual Studio 專案和解決方案](learn-flask-visual-studio-step-01-project-solution.md)**
 
 本教學課程步驟 1 會產生一個 Flask 應用程式。此應用程式為單一檔案，其中包含單一頁面與所有程式碼。 若要考慮進一步開發，最好是將程式碼重構，並為頁面範本建立結構。 特別是，您會想要將應用程式檢視程式碼與其他方面 (例如起始程式碼) 分開。
 
@@ -84,7 +84,7 @@ ms.locfileid: "62961727"
 
 7. 選取 [偵錯] > [開始偵錯] (**F5**)，或使用工具列上的 [網頁伺服器] 按鈕 (您看到的瀏覽器可能會有所不同)，以啟動應用程式並開啟瀏覽器。 同時嘗試 / 和 /home URL 路由。
 
-8. 您也可以在程式碼的各個不同部分設定中斷點，然後重新啟動應用程式以依照該啟動順序。 例如，在 *runserver.py* 和 *HelloFlask\_* init_*.py* 的前幾行上設定中斷點，並在 *views.py* 的 `return "Hello Flask!"` 行上設定中斷點。 接著，重新啟動應用程式 ([偵錯] > [重新啟動]、**Ctrl**+**F5** 或以下所示的工具列按鈕)，然後逐步執行 (**F10**) 程式碼，或使用 **F5** 從每個中斷點執行。
+8. 您也可以在程式碼的各個不同部分設定中斷點，然後重新啟動應用程式以依照該啟動順序。 例如，在 *runserver.py* 和 *HelloFlask\_* init_ *.py* 的前幾行上設定中斷點，並在 *views.py* 的 `return "Hello Flask!"` 行上設定中斷點。 接著，重新啟動應用程式 ([偵錯] > [重新啟動]、**Ctrl**+**F5** 或以下所示的工具列按鈕)，然後逐步執行 (**F10**) 程式碼，或使用 **F5** 從每個中斷點執行。
 
     ![Visual Studio 中偵錯工具列上的重新啟動按鈕](media/debugging-restart-toolbar-button.png)
 
@@ -98,7 +98,7 @@ ms.locfileid: "62961727"
 
     ![Visual Studio 狀態列上的原始檔控制變更按鈕](media/flask/step02-source-control-changes-button.png)
 
-1. 在 [Team Explorer] 中，輸入 "Refactor code" (重構程式碼) 之類的訊息，然後選取 [全部認可]。 當認可完成時，您會看到下列訊息：**認可於本機建立的 \<雜湊>。同步以將您的變更與伺服器共用。** 如果您想要將變更推送至遠端存放庫，請選取 [同步]，然後選取 [傳出的認可] 底下的 [推送]。 您也可以在累積多個本機認可之後，再推送至遠端。
+1. 在 [Team Explorer] 中，輸入 "Refactor code" (重構程式碼) 之類的訊息，然後選取 [全部認可]。 當認可完成時，您會看到訊息**認可 \<雜湊 > 在本機建立。同步處理以與伺服器共用您的變更。** 如果您想要將變更推送至遠端存放庫，請選取 [同步]，然後選取 [傳出的認可] 底下的 [推送]。 您也可以在累積多個本機認可之後，再推送至遠端。
 
     ![在 [Team Explorer] 中將認可推送至遠端](media/flask/step02-source-control-push-to-remote.png)
 
@@ -195,19 +195,15 @@ ms.locfileid: "62961727"
 
 1. 將變更認可至原始檔控制，並視需要更新遠端存放庫，如[步驟 2-1](#commit-to-source-control)所述。
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>問題：頁面範本是否必須位於個別檔案中？
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>問題：頁面範本是否一定要位於個別檔案中？
 
-回答：雖然範本通常會維護於個別的 HTML 檔案中，但您也可以使用內嵌範本。 不過，還是建議您使用個別的檔案，以在標記和程式碼之間維持清楚的分隔。
+回答：雖然範本通常會維護於個別的 HTML 檔案中，您也可以使用內嵌範本。 不過，還是建議您使用個別的檔案，以在標記和程式碼之間維持清楚的分隔。
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>問題：範本必須使用 .html 副檔名嗎？
+### <a name="question-must-templates-use-the-html-file-extension"></a>問題：範本一定要使用 .html 副檔名嗎？
 
-回答：頁面範本檔案的 *.html* 副檔名完全是選擇性的，因為您一定會在 `render_template` 函式第一個引數中識別該檔案的確切相對路徑。 不過，Visual Studio (與其他編輯器) 通常會針對 *.html* 檔案為您提供程式碼完成和語法色彩等功能，其重要性超過頁面範本不一定是 HTML 的事實。
+回答：頁面範本檔案的 *.html* 副檔名完全是選擇性的，因為您一律是在 `render_template` 函式的第一個引數中識別檔案的確切相對路徑。 不過，Visual Studio (與其他編輯器) 通常會針對 *.html* 檔案為您提供程式碼完成和語法色彩等功能，其重要性超過頁面範本不一定是 HTML 的事實。
 
 實際上，當您在處理 Flask 專案時，Visual Studio 會自動偵測出您正在編輯的 HTML 檔案實際上是 Flask 範本，然後提供一些自動完成功能。 例如，當您開始鍵入 Flask 頁面範本註解 (`{#`) 時，Visual Studio 會自動提供結尾的 `#}` 字元。 [註解選取範圍] 與 [取消註解選取範圍] 命令 (位在 [編輯] > [進階] 功能表和工具列上) 也會使用範本註解，而不是 HTML 註解。
-
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>問題：當我執行專案時，看到找不到範本的錯誤。 出了什麼問題？
-
-回答：如果您看到找不到範本的錯誤，請確定已將應用程式新增至 Flask 專案位於 `INSTALLED_APPS` 清單的 *settings.py* 中。 若沒有該項目，Flask 就不知道要查看應用程式的 *templates* 資料夾。
 
 ### <a name="question-can-templates-be-organized-into-further-subfolders"></a>問題：是否可以將範本組織成進一步的子資料夾？
 
@@ -220,5 +216,5 @@ ms.locfileid: "62961727"
 
 ## <a name="go-deeper"></a>深入了解
 
-- [Flask 快速入門 - 轉譯範本](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) \(英文\) (flask.pocoo.org)
-- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- [Flask 快速入門 - 轉譯範本](https://flask.palletsprojects.com/en/1.0.x/quickstart/#rendering-templates) \(英文\) (flask.pocoo.org)
+- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask) \(英文\)

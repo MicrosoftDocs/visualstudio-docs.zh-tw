@@ -6,21 +6,21 @@ helpviewer_keywords:
 - code, understanding
 - code, visualizing
 - code, exploring
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 073a91e9bafca41192a12a20a7c06ff89644085f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56b938321c2b6d1161052ac2358547d72a6bf4e7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663707"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593989"
 ---
 # <a name="visualize-code"></a>視覺化程式碼
 
-您可以使用 Visual Studio 的視覺化和模型工具，以利了解現有的程式碼，並描述您的應用程式。 這可讓您以視覺化方式了解變更會如何影響程式碼，並幫助您評估因這些變更所導致的工作和風險。 例如:
+您可以使用 Visual Studio 的視覺化和模型工具，以利了解現有的程式碼，並描述您的應用程式。 這可讓您以視覺化方式了解變更會如何影響程式碼，並幫助您評估因這些變更所導致的工作和風險。 例如：
 
 - 若要了解程式碼中的關聯性，請以視覺化方式對應這些關聯性。
 
@@ -36,9 +36,9 @@ ms.locfileid: "72663707"
 
 |||
 |-|-|
-|**瞭解程式碼及其關聯性：**<br /><br /> 對應特定程式碼片段之間的關聯性。<br /><br /> 查看整個方案的程式碼中的關聯性概觀。|- [對應方案之間的](../modeling/map-dependencies-across-your-solutions.md)相依性<br />- [使用 code map 來對應用程式進行 debug](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />在進行[調試時，-  在呼叫堆疊上對應方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**瞭解程式碼及其關聯性：**<br /><br /> 對應特定程式碼片段之間的關聯性。<br /><br /> 查看整個方案的程式碼中的關聯性概觀。|- [對應方案之間的](../modeling/map-dependencies-across-your-solutions.md)相依性<br />- [使用 code map 來對應用程式進行 debug](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />在進行[調試時，- 在呼叫堆疊上對應方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**瞭解類別結構：**<br /><br /> 從程式碼建立類別圖，將專案中的類別結構視覺化。|[如何：將類別圖表新增至專案 (類別設計工具)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
-|**描述高階系統設計，並根據這種設計來驗證程式代碼：**<br /><br /> 藉由建立相依性圖表來描述高階系統設計及其預定的相依性。 針對此設計驗證程式碼，以確定程式碼中的相依性與設計保持一致。|- [從您的程式碼建立](../modeling/create-layer-diagrams-from-your-code.md)相依性圖表<br />-  相依性[圖表：參考](../modeling/layer-diagrams-reference.md)<br />-  相依性[圖表：方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|
+|**描述高階系統設計，並根據這種設計來驗證程式代碼：**<br /><br /> 藉由建立相依性圖表來描述高階系統設計及其預定的相依性。 針對此設計驗證程式碼，以確定程式碼中的相依性與設計保持一致。|- [從您的程式碼建立](../modeling/create-layer-diagrams-from-your-code.md)相依性圖表<br />- 相依性[圖表：參考](../modeling/layer-diagrams-reference.md)<br />- 相依性[圖表：方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="see-also"></a>請參閱
 

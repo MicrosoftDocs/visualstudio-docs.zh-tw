@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2c1a799663d33e61977c5416ad199bce8bce545
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b103c2611216a5024d600aafba212919592ff3b3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62420378"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300665"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>行為錯誤之多執行緒應用程式的一般模式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ ms.locfileid: "62420378"
   
  如下圖所示，並行視覺化檢視也可以在 [CPU 使用率檢視] 中顯示出這個徵兆，檢視中雖然有多個執行緒，但是應用程式還是只使用一個邏輯核心。  
   
- 如需詳細資訊，請參閱 「 效能模式 1:用來識別鎖定爭用 」 中 Hazim Shafi[平行效能工具為 Windows](http://go.microsoft.com/fwlink/?LinkID=160569) MSDN 部落格網站上的部落格。  
+ 如需詳細資訊，請參閱 Hazim Shafi 在 MSDN 部落格網站上的 [Windows 的平行效能工具](https://go.microsoft.com/fwlink/?LinkID=160569)中發表的＜效能模式 1：識別鎖定爭用＞(英文)。  
   
  ![鎖定爭用](../profiling/media/lockcontention-2.png "LockContention_2")  
   
 ## <a name="uneven-workload-distribution"></a>工作負載分佈不均  
- ![工作負載不均](../profiling/media/unevenworkload-1.png "UnevenWorkLoad_1")  
+ ![工作負載不平均](../profiling/media/unevenworkload-1.png "UnevenWorkLoad_1")  
   
  當應用程式中幾個平行執行緒發生不規則的工作分佈時，典型的階梯型執行模式會顯示為每個執行緒都完成工作，如上圖所示。並行視覺化檢視通常會為每個並行執行緒顯示非常接近的開始時間。 不過，這些執行緒通常會以不規則的方式，而不是同時結束的方式結束。 此模式表示一組平行執行緒之間的工作分佈不規則，而這可能會導致效能降低。 這類問題的最佳方法是重新評估演算法如何在平行執行緒之間分割工作。  
   
  如下圖所示，並行視覺化檢視也可以在 [CPU 使用率檢視] 中逐步降低的 CPU 使用率顯示出此徵兆。  
   
- ![工作負載不均](../profiling/media/unevenworkload-2.png "UnevenWorkload_2")  
+ ![工作負載不平均](../profiling/media/unevenworkload-2.png "UnevenWorkload_2")  
   
 ## <a name="oversubscription"></a>過度訂閱  
- ![過度訂閱](../profiling/media/oversubscription.png "Oversubscription")  
+ ![過度訂閱](../profiling/media/oversubscription.png "過度訂閱")  
   
  在過度訂閱的案例中，處理序中的作用中執行緒數目大於系統上可用的邏輯核心數目。 上圖顯示過度訂閱的結果，在所有作用中的執行緒中都有顯著的先佔級區。 此外，圖例顯示大部分的時間都花費在先佔 (在本例中為 84%)。 這可能表示處理序正要求系統執行比邏輯核心數還多的並行執行緒。 不過，這也可能表示系統上的其他處理序正使用認定為此處理序可用的資源。  
   
@@ -57,12 +57,12 @@ ms.locfileid: "62420378"
 - 評估您的處理序如何判斷在此工作階段期間執行的適當執行緒數目。 如果您的處理序直接計算作用中的平行執行緒數目，請考慮修改該演算法，能夠更正確地計算系統上可用的邏輯核心數目。 如果您使用並行執行階段、工作平行程式庫或 PLINQ，這些程式庫會執行計算執行緒數目的工作。  
   
 ## <a name="inefficient-io"></a>無效率 I/O  
- ![無效率 I/O](../profiling/media/inefficient-io.png "Inefficient_IO")  
+ ![無效率&#47;的 i/o](../profiling/media/inefficient-io.png "Inefficient_IO")  
   
  過度使用或濫用 I/O 是應用程式缺乏效率的常見原因。 請參考上圖。 可見時間軸分析顯示 42% 的可見執行緒時間是由 I/O 使用。 時間軸顯示大量 I/O，表示分析的應用程式經常會被 I/O 所阻塞。 若要查看 I/O 種類和阻塞程式位置的詳細資料，請放大有問題的區域、檢查可見時間軸分析，然後按一下特定的 I/O 區塊以查看目前的呼叫堆疊。  
   
 ## <a name="lock-convoys"></a>鎖定護送  
- ![鎖定護送](../profiling/media/lock-convoys.png "Lock_Convoys")  
+ ![鎖定群組](../profiling/media/lock-convoys.png "Lock_Convoys")  
   
  當應用程式以先到先服務的順序取得鎖定時，以及當鎖定的抵達速率高於取得速率時，就會發生鎖定護送。 這兩項條件的組合會導致鎖定的要求開始堵塞。 解決這個問題的一個方法是使用「不公平」的鎖定，或使用能提供第一個執行緒存取權以找出處於未鎖定狀態之鎖定的鎖定。 上圖顯示這個護送行為。 若要解決這個問題，請嘗試減少同步處理物件的爭用，並嘗試使用不公平的鎖定。  
   

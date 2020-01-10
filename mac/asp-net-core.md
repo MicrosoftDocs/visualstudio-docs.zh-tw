@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913322"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405014"
 ---
 # <a name="getting-started-with-aspnet-core"></a>開始使用 ASP.NET Core
 
@@ -42,7 +42,7 @@ ms.locfileid: "70913322"
 
 ![新的 ASP.NET Core 空白專案檢視](media/asp-net-core-2019-empty-project.png)
 
-ASP.NET Core 空白範本會建立有兩個預設檔案的 Web 應用程式：**Program.cs** 和 **Startup.cs**，其說明如下。 它也會建立相依性資料夾，其中包含專案的 NuGet 套件相依性，例如 ASP.NET Core、.NET Core 架構和用來建置專案的 MSBuild 目標：
+ASP.NET Core 空白範本會建立具有兩個預設檔案的 web 應用程式： **Program.cs**和**Startup.cs**，如下所述。 它也會建立相依性資料夾，其中包含專案的 NuGet 套件相依性，例如 ASP.NET Core、.NET Core 架構和用來建置專案的 MSBuild 目標：
 
 ![顯示相依性的 Solution Pad](media/asp-net-core-2019-solution-dependencies.png)
 
@@ -70,9 +70,9 @@ ASP.NET Core 應用程式會透過 [`WebHostBuilder`](/aspnet/core/fundamentals/
 
 不過，您也可以新增其他組態，例如：
 
-* `UseKestrel`：指定應用程式將使用 Kestrel 伺服器
+* `UseKestrel`：指定應用程式將使用的 Kestrel 伺服器
 * `UseContentRoot(Directory.GetCurrentDirectory())`：當應用程式從 Web 專案的根資料夾啟動時，使用這個資料夾作為應用程式的內容根目錄
-* `.UseIISIntegration()`：指定應用程式應該與 IIS 搭配運作。 若要搭配使用 IIS 與 ASP.NET Core，必須同時指定 `UseKestrel` 和 `UseIISIntegration`。
+* `.UseIISIntegration()`：指定應用程式應該使用 IIS。 若要搭配使用 IIS 與 ASP.NET Core，必須同時指定 `UseKestrel` 和 `UseIISIntegration`。
 
 ### <a name="startupcs"></a>Startup.cs
 
@@ -118,9 +118,9 @@ ASP.NET Core 應用程式會透過 [`WebHostBuilder`](/aspnet/core/fundamentals/
 
 預先建立範本的 `Configure` 方法是為了執行一些作業而建立的。 首先，它會設定例外狀況處理頁面以供開發期間使用。 然後，它會以簡單的 "Hello World" 傳送回應給要求網頁。
 
-現在，無需新增任何其他程式碼，即可執行這個簡單的 Hello, World 專案。 若要執行應用程式，並在瀏覽器中檢視它，請按工具列中的 [播放] (三角形) 按鈕：
+現在，無需新增任何其他程式碼，即可執行這個簡單的 Hello, World 專案。 若要執行應用程式，您可以使用 [播放] 按鈕的下拉式清單選取您想要在哪一個瀏覽器上執行應用程式，或直接按 [播放] （三角形）按鈕來使用預設瀏覽器：
 
-![執行應用程式](media/asp-net-core-2019-run-debug.png)
+![瀏覽器執行](media/asp-net-web-picker.png)
 
 Visual Studio for Mac 會使用隨機的連接埠來啟動您的 Web 專案。 若要找出這個連接埠，請開啟應用程式輸出，其列在 [檢視] > [板] 底下。 您應該尋找的輸出類似如下：
 
@@ -130,12 +130,12 @@ Visual Studio for Mac 會使用隨機的連接埠來啟動您的 Web 專案。 �
 
 ![顯示文字的瀏覽器](media/asp-net-core-image7.png)
 
-## <a name="adding-a-controller"></a>新增控制器
+## <a name="adding-a-controller"></a>加入控制器
 
 ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式，為應用程式的每個部分提供責任的邏輯分隔。 MVC 包含下列項目：
 
 - **模型**：代表應用程式資料的類別。
-- **檢視**：顯示應用程式的使用者介面 (通常是模型資料)。
+- **檢視**：顯示應用程式的使用者介面 (這通常是模型資料)。
 - **控制器**：用來處理瀏覽器要求、回應使用者輸入和互動的類別。
 
 如需使用 MVC 的詳細資訊，請參閱 [ASP.NET Core MVC 的概觀](/aspnet/core/mvc/overview)指南。

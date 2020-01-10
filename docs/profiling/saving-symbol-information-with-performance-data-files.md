@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf78c94f8982af78d0f393c9cb5b878bef27d87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939504"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778293"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用效能資料檔案儲存符號資訊
 
@@ -59,7 +60,7 @@ VsPerfReport -clearpackedsymbols filename.vsp
 
 VsPerfReport -packsymbols -summary:all filename.vsp
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [儲存和匯出效能工具資料](../profiling/saving-and-exporting-performance-tools-data.md)
 [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)

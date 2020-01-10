@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1d218f5f560a7ae2c95d7e7ae0e20002f922e257
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d5373ae27797aa3bfe4627fb84ce393dce9e910
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602079"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300892"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：在捷徑功能表中加入命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "72602079"
 
 3. [在 CommandSet 類別中撰寫方法](#CommandSet)，讓命令可見，並定義您希望命令執行的動作。
 
-   如需範例，請參閱[視覺效果和模型化 SDK 網站](http://go.microsoft.com/fwlink/?LinkID=185579)。
+   如需範例，請參閱[視覺效果和模型化 SDK 網站](https://go.microsoft.com/fwlink/?LinkID=185579)。
 
 > [!NOTE]
 > 您也可以覆寫 CommandSet.cs 中的方法，即可修改部分現有命令 (例如剪下、貼上、全選和列印) 的行為。 如需詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
@@ -143,12 +143,12 @@ ms.locfileid: "72602079"
 
 2. 找出 `ProvideMenuResource` 屬性。
 
-3. 遞增屬性的 `version` 參數，這是第二個參數。 您可以依需要明確撰寫參數名稱以提醒您其用途。 例如:
+3. 遞增屬性的 `version` 參數，這是第二個參數。 您可以依需要明確撰寫參數名稱以提醒您其用途。 例如：
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
 ## <a name="CommandSet"></a>定義命令的行為
- 您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常會 *\<YourDslName >* `CommandSet`。 以驗證類別的名稱並檢查其內容開頭非常有用。
+ 您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常是 *\<YourDslName >* `CommandSet`。 以驗證類別的名稱並檢查其內容開頭非常有用。
 
  命令集類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
 
@@ -160,9 +160,9 @@ ms.locfileid: "72602079"
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. 在**DslPackage**中，建立名為 [**自訂程式碼**] 的資料夾。 在此資料夾中，建立名為 `CommandSet.cs` 的新類別檔案。
+2. 在**DslPackage**中，建立名為 [**自訂程式碼**] 的資料夾。 在此資料夾中，建立名為 `CommandSet.cs`的新類別檔案。
 
-3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如:
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -196,7 +196,7 @@ namespace Company.Language1 /* Make sure this is correct */
  您必須定義兩個方法，一個用來決定內容功能表上何時會顯示命令，另一個用來執行命令。 這些方法不是覆寫；您須另行在命令清單中註冊方法。
 
 ### <a name="define-when-the-command-will-be-visible"></a>定義命令何時可見
- 針對每個命令，定義一個 `OnStatus...` 方法，以決定命令是否會出現在功能表上，以及是否要啟用或呈現為灰色。設定 `MenuCommand` 的 `Visible` 和 `Enabled` 屬性，如下列範例所示。 呼叫此方法是為了在每次使用者以滑鼠右鍵按一下圖表時都建構捷徑功能表，因此它必須快速運作。
+ 針對每個命令，定義一個 `OnStatus...` 方法，以決定命令是否會出現在功能表上，以及是否要啟用或呈現為灰色。設定 `MenuCommand`的 `Visible` 和 `Enabled` 屬性，如下列範例所示。 呼叫此方法是為了在每次使用者以滑鼠右鍵按一下圖表時都建構捷徑功能表，因此它必須快速運作。
 
  在本範例中，只有在使用者選取特定類型的圖形時才可見到命令，且只在至少其中一個所選項目處於特定狀態時才會啟用命令。 此範例是根據「類別圖 DSL」範本，而 ClassShape 和 ModelClass 是在 DSL 中所定義的類型：
 
@@ -225,15 +225,15 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 - `this.CurrentSelection` 此清單中一律包含使用者以滑鼠右鍵按一下的圖形。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。
 
-- 如果使用者按一下圖表的空白部分，`this.IsDiagramSelected()`  -  `true`。
+- 如果使用者按一下圖表的空白部分，`this.IsDiagramSelected()` - `true`。
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - 使用者未選取多個物件
+- `this.IsSingleSelection()`-使用者未選取多個物件
 
-- `this.SingleSelection` - 使用者以滑鼠右鍵按一下的圖形或圖表
+- `this.SingleSelection`-使用者以滑鼠右鍵按一下的圖形或圖表
 
-- `shape.ModelElement as MyLanguageElement` - 以圖形表示的模型項目。
+- `shape.ModelElement as MyLanguageElement`-以圖形表示的模型專案。
 
   如同一般方針，使 `Visible` 屬性相依於選取的項目，並使 `Enabled` 屬性相依於所選項目的狀態。
 
@@ -300,7 +300,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > 如果您變更 VSCT 檔的 Symbols 區段，您必須也將這些宣告變更為相符。 您也應在 Package.tt 中遞增版本號碼
 
- 將功能表命令註冊為此命令集的一部分。 圖表初始化時會呼叫 `GetMenuCommands()` 一次：
+ 將功能表命令註冊為此命令集的一部分。 初始化圖表時，會呼叫 `GetMenuCommands()` 一次：
 
 ```
 protected override IList<MenuCommand> GetMenuCommands()
@@ -359,5 +359,5 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 確定已解除安裝舊版套件。
 
-## <a name="see-also"></a>請參閱
- [撰寫程式碼以自訂域特定語言的](../modeling/writing-code-to-customise-a-domain-specific-language.md)[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)[範例程式碼：線路圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+## <a name="see-also"></a>另請參閱
+ [撰寫程式碼以自訂域特定語言的](../modeling/writing-code-to-customise-a-domain-specific-language.md)[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)

@@ -11,23 +11,24 @@ ms.assetid: 4d85bdd6-b571-47e0-afd6-ba3764e4eed5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb4ac65442d9dbcb384ee3765f6fa827e3fa5d8
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 9e097d6d8c9a7b82fac53fd37951644eb7eb5e59
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306154"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779528"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值型別的 Equals()
+# <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值類型的 Equals()
 
 |||
 |-|-|
-|規則 ID|DA0006|
+|規則識別碼|DA0006|
 |Category|.NET Framework 使用方式|
 |分析方法|取樣|
-|Message|覆寫實值型別的 Equals 和相等運算子。|
+|訊息|覆寫實值型別的 Equals 和相等運算子。|
 |訊息類型|警告|
 
 ## <a name="cause"></a>原因
@@ -36,7 +37,7 @@ ms.locfileid: "72306154"
 ## <a name="rule-description"></a>規則描述
  對於實值型別而言，Equals 的繼承實作會使用 <xref:System.Reflection> 程式庫，並比較類型中所有欄位的內容。 但是 Reflection 相當耗費運算資源，而且可能不需要比較每個欄位是否相等。 如果希望使用者比較或排序執行個體，或是使用它們作為雜湊表索引鍵，則您的實值型別應該實作 Equals。 如果您的程式設計語言支援運算子多載，則也應該提供相等和不等運算子的實作。
 
- 如需如何覆寫 Equals 和等號比較運算子的詳細資訊，請參閱[實作 Equals 和相等運算子 (==) 的方針](http://go.microsoft.com/fwlink/?LinkId=177818)。
+ 如需如何覆寫 Equals 和等號比較運算子的詳細資訊，請參閱[實作 Equals 和相等運算子 (==) 的方針](/dotnet/standard/design-guidelines/equality-operators)。
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
- 如需實作 Equals 和等號比較運算子的範例，請參閱程式碼分析規則 [CA1815：覆寫實值型別上的 Equals 和等號比較運算子](../code-quality/ca1815.md)
+ 如需實作 Equals 和相等運算子的範例，請參閱程式碼分析規則 [CA1815：必須覆寫實值型別上的 Equals 方法和相等運算子](../code-quality/ca1815.md)

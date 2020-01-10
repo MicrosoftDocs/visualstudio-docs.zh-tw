@@ -28,17 +28,17 @@ helpviewer_keywords:
 - Text Editor [Visual Studio]
 - editors, global settings
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7d7ebab51a3edfeb84a95609c6bdad581b6753
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666216"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568408"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>選項對話方塊：文字編輯器 \> 一般
 
@@ -72,7 +72,7 @@ ms.locfileid: "72666216"
 
 選取 [在預覽檢視中開啟定義] 核取方塊，以在視窗中顯示元素的定義，而不需從您目前在程式碼編輯器中的位置尋覽到他處。
 
-## <a name="display"></a>顯示器
+## <a name="display"></a>顯示
 
 ### <a name="selection-margin"></a>選取範圍邊界
 

@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ed601f6b3bfeba4d7aebed5955b340fb28908c74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac6ce00002e40c6d8bd1d5db65b8c7bb5e6bc7cd
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660199"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299834"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ ms.locfileid: "72660199"
 
  以下是您需要的軟體清單：
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads)
+- [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725)。 請務必從選擇性功能清單中選取通用 Windows 應用程式開發工具。 如果沒有這些工具，您將無法建立通用應用程式。
+- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725)。 請務必從選擇性功能清單中選取通用 Windows 應用程式開發工具。 如果沒有這些工具，您將無法建立通用應用程式。
 
   安裝這個軟體之後，您也需要 [啟用 Windows 10 裝置](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) 進行開發。 (您不再需要取得每部 Windows 10 裝置的開發人員授權)。
 
@@ -55,7 +55,7 @@ ms.locfileid: "72660199"
   如果您的開發平台為 Windows 10，則只能使用 XAML 設計工具。
 
 ## <a name="universal-windows-apps"></a>通用 Windows 應用程式
- 從 C#、Visual Basic、C++ 或 JavaScript 中，選擇您慣用的開發語言，以 [建立適用於 Windows 10 的通用 Windows 應用程式](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 或觀賞 [此快速入門影片](http://channel9.msdn.com/Series/ConnectOn-Demand/229)。
+ 從 C#、Visual Basic、C++ 或 JavaScript 中，選擇您慣用的開發語言，以 [建立適用於 Windows 10 的通用 Windows 應用程式](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 或觀賞 [此快速入門影片](https://channel9.msdn.com/Series/ConnectOn-Demand/229)。
 
  若您現有的 Windows 市集 8.1 應用程式、Windows Phone 8.1 應用程式或通用 Windows 應用程式是以 Visual Studio 2015 RC 所建立，請 [移轉這些現有的應用程式](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) ，以使用最新版的通用 Windows 平台。
 

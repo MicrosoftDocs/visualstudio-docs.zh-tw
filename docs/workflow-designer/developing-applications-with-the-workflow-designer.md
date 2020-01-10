@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD]
 - Workflow Designer [WFD], overview
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b689628983c50fc891c5a3ebe6a0df5c952468d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 51c38a16ddbdca376dbc9788ca49783c7956d101
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650536"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597083"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>使用工作流程設計工具開發應用程式
 
@@ -31,7 +31,7 @@ ms.locfileid: "72650536"
 
 若要使用 Visual Studio 中的工作流程專案範本，請先安裝**Windows Workflow Foundation**元件。
 
-1. 開啟 Visual Studio 安裝程式。 藉由選取 [**工具**]  >  [**取得工具和功能**] 中的 [Visual Studio]，即可快速開啟它。
+1. 開啟 Visual Studio 安裝程式。 藉由選取 [**工具**] > [**取得工具和功能**] 中的 [Visual Studio]，即可快速開啟它。
 
 1. 在 Visual Studio 安裝程式中，選取 [**個別元件**] 索引標籤。
 

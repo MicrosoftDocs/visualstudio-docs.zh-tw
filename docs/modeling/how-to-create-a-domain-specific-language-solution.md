@@ -8,22 +8,22 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools], creating domain-specific language
 - Domain-Specific Language Tools, creating solutions
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93e51a1daee6e9635305f4d8a5d275106af7947e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 175da19782927f8c84b9fae0e6d9820a22bd891a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609387"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594665"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：建立網域指定的語言方案
 特定領域語言（DSL）是使用特製化的 Visual Studio 解決方案所建立。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 在您可以開始此程式之前，請先安裝下列元件：
 
@@ -114,7 +114,7 @@ ms.locfileid: "72609387"
 
  **使用現有的強式名稱金鑰**如果您想要整合 DSL 與另一個元件，請使用此選項。
 
- 如需強式命名的詳細資訊，請參閱[建立和使用強式名稱的元件](http://go.microsoft.com/fwlink/?LinkId=186073)。
+ 如需強式命名的詳細資訊，請參閱[建立和使用強式名稱的元件](/dotnet/standard/assembly/create-use-strong-named)。
 
 ## <a name="see-also"></a>請參閱
 

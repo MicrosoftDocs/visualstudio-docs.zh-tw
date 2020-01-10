@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e529e0ed4407343a9e233a08293bfc1bbd8458d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bcd5a4996db4a5e374baabe4f52d5fd1dbac2e5e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663006"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301127"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,7 @@ private int Square(int i)
  如需控制區塊的詳細資訊，請參閱[文字模板控制區塊](../modeling/text-template-control-blocks.md)。
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>類別功能區塊可以包含文字區塊。
- 您可以撰寫可產生文字的方法。 例如:
+ 您可以撰寫可產生文字的方法。 例如：
 
 ```
 List of Squares:
@@ -191,7 +191,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如:
+ 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如：
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -242,9 +242,9 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- 將檔案**載入為可導覽的模型**。 功能較強大的方法是將資料讀取為您文字範本程式碼可以巡覽的模型。 例如，您可以載入 XML 檔案，並使用 XPath 運算式對其進行巡覽。 您也可以使用[xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)來建立一組可供您讀取 XML 資料的類別。
+ 將檔案**載入為可導覽的模型**。 功能較強大的方法是將資料讀取為您文字範本程式碼可以巡覽的模型。 例如，您可以載入 XML 檔案，並使用 XPath 運算式對其進行巡覽。 您也可以使用[xsd.exe](https://go.microsoft.com/fwlink/?LinkId=178765)來建立一組可供您讀取 XML 資料的類別。
 
- **在圖表或表單中編輯模型檔案。** [!INCLUDE[dsl](../includes/dsl-md.md)] 提供的工具可讓您將模型編輯為圖表或 Windows form。 這樣可以更輕鬆地與所產生應用程式的使用者討論此模型。 [!INCLUDE[dsl](../includes/dsl-md.md)] 也會建立一組反映模型結構的強型別類別。 如需詳細資訊，請參閱[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
+ **在圖表或表單中編輯模型檔案。** [!INCLUDE[dsl](../includes/dsl-md.md)] 提供的工具可讓您將模型編輯為圖表或 Windows form。 這樣可以更輕鬆地與所產生應用程式的使用者討論此模型。 [!INCLUDE[dsl](../includes/dsl-md.md)] 也會建立一組強型別的類別，以反映模型的結構。 如需詳細資訊，請參閱[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
 
  **使用 UML 模型**。 您可以透過 UML 模型來產生程式碼。 這樣的優點是可以使用熟悉標記法，以圖表形式來編輯模型。 而且，您不需要設計圖表。 如需詳細資訊，請參閱[從 UML 模型產生](../modeling/generate-files-from-a-uml-model.md)檔案。
 

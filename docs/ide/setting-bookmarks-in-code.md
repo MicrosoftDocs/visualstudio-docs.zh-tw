@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ac1e911b00c79c64b77dca30b89a1bec74723f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621628"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595432"
 ---
 # <a name="set-bookmarks-in-code"></a>在程式碼中設定書籤
 

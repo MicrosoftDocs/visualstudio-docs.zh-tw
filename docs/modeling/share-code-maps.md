@@ -2,17 +2,17 @@
 title: 匯出和儲存 code map
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 991773953338e38331bad45bfa1149aeb27c748b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 57989de2cca3582b3193a7b55b81d1d444dcf1c1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670808"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591927"
 ---
 # <a name="share-code-maps"></a>共用 Code Map
 
@@ -24,7 +24,7 @@ ms.locfileid: "72670808"
 
 -或-
 
-若要將對應儲存為特定專案的一部分，請在 [對應] 工具列上，選擇 [**共用**]  > **將 \<CodeMapName > .dgml 移至**，然後選擇您要儲存對應的專案。
+若要將對應儲存為特定專案的一部分，請在 對應 工具列上，選擇 **共用** > **將 \<> CodeMapName 移至**，然後選擇您要儲存對應的專案。
 
 ![將對應移至其他專案](../modeling/media/codemapsmovemapmenu.png)
 
@@ -43,7 +43,7 @@ Visual Studio 會將對應儲存為 *.dgml*檔案，讓您可以與 Visual Studi
 
 當您將 Code Map 匯出為影像時，可以將它複製到其他應用程式，例如 Microsoft Word 或 PowerPoint。
 
-1. 在 [Code Map] 工具列上 ，選擇 [**以影像形式共用  >  電子郵件**] 或 [**複製影像**]。
+1. 在 [Code Map] 工具列上 ，選擇 [**以影像形式共用 > 電子郵件**] 或 [**複製影像**]。
 
 2. 將影像貼入另一個應用程式中。
 
@@ -55,7 +55,7 @@ Visual Studio 會將對應儲存為 *.dgml*檔案，讓您可以與 Visual Studi
 
 2. 瀏覽至儲存檔案的位置。
 
-3. 為 Code Map 命名。 請確定 [**存檔類型**] 方塊設定為 [ **xps 檔案（\* .xps）** ]。 選擇 [儲存]。
+3. 為 Code Map 命名。 請確定 [**存檔類型**] 方塊設定為 [ **xps 檔案（\*.xps）** ]。 選擇 [儲存]。
 
 ## <a name="see-also"></a>請參閱
 

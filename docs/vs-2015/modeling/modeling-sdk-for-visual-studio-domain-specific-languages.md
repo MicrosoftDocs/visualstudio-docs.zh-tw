@@ -12,12 +12,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b67f74397b8f3c3e410c4282d8a74b7309bc1bc9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 505c17635c80a165a7a094d3ce2bec3c32bd7101
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668642"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297682"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - 網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ ms.locfileid: "72668642"
   您可以自訂及擴充這些功能。 您的擴充功能會進行整合，整合後仍然可以更新 DSL 定義和重新產生功能，而不會遺失您的擴充功能。
 
 ## <a name="samples-and-the-latest-information"></a>範例和最新資訊
- [下載 Visual Studio 2015 的模型 SDK](http://www.microsoft.com/download/details.aspx?id=48148)
+ [下載 Visual Studio 2015 的模型 SDK](https://www.microsoft.com/download/details.aspx?id=48148)
 
- Visual Studio 適用于模型化 SDK 的[範例](http://go.microsoft.com/fwlink/?LinkId=186128)。
+ Visual Studio 適用于模型化 SDK 的[範例](https://go.microsoft.com/fwlink/?LinkId=186128)。
 
- 如需有關 advanced 技術和疑難排解的指引，請造訪[VISUAL STUDIO DSL & 模型化工具](http://go.microsoft.com/fwlink/?LinkID=186074)擴充性論壇。
+ 如需有關 advanced 技術和疑難排解的指引，請造訪[VISUAL STUDIO DSL & 模型化工具](https://go.microsoft.com/fwlink/?LinkID=186074)擴充性論壇。
 
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
  [開始使用特定領域語言](../modeling/getting-started-with-domain-specific-languages.md)
 
  [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)

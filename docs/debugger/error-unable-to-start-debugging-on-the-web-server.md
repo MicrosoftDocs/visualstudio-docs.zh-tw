@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c976f14a4250741d166c189c53a1b8cae8ea891a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2f0e3666c313c55df605cd7b79199827765f40f3
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736711"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404362"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在 Web 伺服器上啟動偵錯
 
@@ -41,7 +41,7 @@ ms.locfileid: "72736711"
 
 ## <a name="specificerrors"></a>詳細的錯誤訊息是什麼？
 
-@No__t_0 訊息為泛型。 通常，錯誤字串中會包含更特定的訊息，並可協助您找出問題的原因，或搜尋更精確的修正程式。 以下是附加至主要錯誤訊息的一些較常見的錯誤訊息：
+`Unable to start debugging on the Web server` 訊息為泛型。 通常，錯誤字串中會包含更特定的訊息，並可協助您找出問題的原因，或搜尋更精確的修正程式。 以下是附加至主要錯誤訊息的一些較常見的錯誤訊息：
 
 - [IIS 不會列出符合啟動 url 的網站](#IISlist)
 - [未正確設定網頁伺服器](#web_server_config)
@@ -52,6 +52,7 @@ ms.locfileid: "72736711"
 - [無法啟動 ASP.NET 的調試](#aspnet)
 - [偵錯工具無法連接到遠端電腦](#cannot_connect)
 - [請參閱常見組態錯誤的說明。執行偵錯工具外部網頁即可提供詳細資訊。](#see_help)
+- [不支援操作。未知的錯誤： *errornumber*](#operation_not_supported)
 
 ## <a name="IISlist"></a>IIS 不會列出符合啟動 url 的網站
 
@@ -76,7 +77,7 @@ ms.locfileid: "72736711"
 ## <a name="msvsmon"></a> Microsoft Visual Studio 遠端偵錯監視 (msvsmon.exe) 似乎沒有在遠端電腦上執行
 
 - 如果您要在遠端電腦上進行偵錯工具，請確定您已[安裝，且正在執行遠端偵錯程式](../debugger/remote-debugging.md)。 如果訊息提及防火牆，請確定[防火牆中的正確埠](../debugger/remote-debugger-port-assignments.md)已開啟，特別是當您使用協力廠商防火牆時。
-- 如果您使用 HOSTS 檔案，請確定它已正確設定。 例如，如果使用**F5**進行偵錯工具（而不是**附加至進程**），則 HOSTS 檔案必須包含與專案屬性中相同的專案 URL、 **> Web > 伺服器**或屬性的屬性 **> Debug**，視您的專案類型。
+- 如果您使用 HOSTS 檔案，請確定它已正確設定。 例如，如果使用**F5** （而不是 **附加至進程**）來進行偵錯工具，則主機檔案必須包含與專案屬性相同的專案 URL， **> Web > 伺服器** 或 **屬性 > Debug**，視您的專案類型而定。
 
 ## <a name="server_error"></a>遠端伺服器傳回錯誤
 
@@ -106,6 +107,10 @@ ms.locfileid: "72736711"
 
 - 如果無法運作，或您正在遠端進行偵錯工具，請遵循[檢查 IIS](#vxtbshttpservererrorsthingstocheck)設定中的步驟。
 
+## <a name="operation_not_supported"></a>不支援操作。 未知的錯誤： *errornumber*
+
+如果您要進行 URL 重寫，請測試基本的 web.config，而不會重寫 URL。 請參閱[檢查您的 IIS](#vxtbshttpservererrorsthingstocheck)設定中的 URL 重寫模組的相關**注意事項**。
+
 ## <a name="vxtbshttpservererrorsthingstocheck"></a>檢查您的 IIS 設定
 
 採取這裡詳述的步驟來解決此問題，而且在嘗試再次進行 debug 之前，您可能也需要重設 IIS。 若要這麼做，請開啟提升許可權的命令提示字元，然後輸入 `iisreset`。
@@ -125,7 +130,7 @@ ms.locfileid: "72736711"
 
 * 檢查您的 Web 應用程式資料夾是否具有正確的許可權。
 
-    請確定您為 IIS_IUSRS、IUSR 或特定使用者提供 Web 應用程式資料夾的[[讀取] 和 [執行](/iis/manage/configuring-security/application-pool-identities)] 許可權。 請修正問題，並重新啟動應用程式集區。
+    請確定您提供 IIS_IUSRS、IUSR 或與[應用程式集](/iis/manage/configuring-security/application-pool-identities)區相關聯的特定使用者，以取得 Web 應用程式資料夾的讀取和執行許可權。 請修正問題，並重新啟動應用程式集區。
 
 * 請確定 IIS 上已安裝正確的 ASP.NET 版本。
 

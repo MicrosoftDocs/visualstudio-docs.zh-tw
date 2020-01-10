@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, Touch task
 - Touch task [MSBuild]
 ms.assetid: 8a978645-1393-4904-ae69-42afabd8c109
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96bf92f6e0649a2d1eedda63d6159c3de95ae6bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4d34d8edca64987f9b6c4648bef1f239aca4d5ba
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938852"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594938"
 ---
 # <a name="touch-task"></a>Touch 工作
 設定檔案的存取和修改時間。
@@ -31,7 +31,7 @@ ms.locfileid: "62938852"
 ## <a name="parameters"></a>參數
  下表說明 `Touch` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`AlwaysCreate`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，工作會建立任何不存在的檔案。|
 |`Files`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要碰觸的檔案集合。|
@@ -63,6 +63,6 @@ ms.locfileid: "62938852"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

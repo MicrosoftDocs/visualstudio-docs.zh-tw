@@ -6,14 +6,15 @@ ms.assetid: 5e286e61-4548-42cf-a635-e608c5edbe2b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 78d5b39908bc0ffa39533c22ea4effcbe97397b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ab01f67d44e8c6e0cc13eaf9b0046695a0132e65
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794213"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778501"
 ---
 # <a name="output"></a>Output
 [輸出] 選項指定效能工作階段的分析資料檔案名稱。 [輸出] 必須搭配 [啟動] 選項。
@@ -30,7 +31,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>必要選項
  [輸出] 選項必須搭配 [啟動] 選項。
 
- **Start:**`Method` 指定輸出檔名稱。
+ **Start：** `Method` 指定輸出檔名稱。
 
 ## <a name="example"></a>範例
  在以下範例中，分析資料檔案是建立在目前的目錄中。
@@ -39,7 +40,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)

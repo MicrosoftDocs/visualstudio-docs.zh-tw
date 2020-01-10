@@ -6,17 +6,17 @@ helpviewer_keywords:
 - typed datasets, creating
 - datasets, creating
 - datasets, configuring
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44023543f1f7b57352448755de942af1c0c712ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8222b1985ab7f765be9b06fdd6abf7cb1e1cb2dc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642397"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586909"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>如何：在 Visual Studio 中建立和設定資料集
 
@@ -84,7 +84,7 @@ ms.locfileid: "72642397"
 
 2. 將 [<xref:System.Data.DataTable>] 類別從 [**工具箱**] 的 [**資料集**] 索引標籤拖曳至 [ **DataSet 設計工具**]。
 
-3. 加入資料行以定義您的資料表。 以滑鼠右鍵按一下資料表，然後選擇 [**加入** >  資料**行**]。 如有必要，請使用 [**屬性**] 視窗來設定資料行的資料類型和索引鍵。
+3. 加入資料行以定義您的資料表。 以滑鼠右鍵按一下資料表，然後選擇 [**加入** > 資料**行**]。 如有必要，請使用 [**屬性**] 視窗來設定資料行的資料類型和索引鍵。
 
 獨立資料表必須在獨立資料表中執行 `Fill` 邏輯，讓您可以將資料填入其中。 如需填入獨立資料表的詳細資訊，請參閱[從 DataAdapter 填入資料集](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter)。
 

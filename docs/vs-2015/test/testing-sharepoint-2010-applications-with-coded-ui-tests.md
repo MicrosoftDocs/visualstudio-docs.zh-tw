@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f9df50094676eea5694a29362772c9c44fa456b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 73dd0e406e8e0a00260d922e38dee70135c3645d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660392"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298016"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,10 +22,10 @@ ms.locfileid: "72660392"
 
  **Requirements**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>有關自動程式碼 UI 測試，還有什麼是我應該知道的?
- 若要深入了解使用自動程式化 UI 測試的優點，請參閱[使用使用者介面自動化測試程式碼](../test/use-ui-automation-to-test-your-code.md)和[使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試 (英文)](http://go.microsoft.com/fwlink/?LinkID=255196)。
+ 若要深入了解使用自動程式化 UI 測試的優點，請參閱[使用使用者介面自動化測試程式碼](../test/use-ui-automation-to-test-your-code.md)和[使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試 (英文)](https://go.microsoft.com/fwlink/?LinkID=255196)。
 
  **備註**
 
@@ -53,7 +53,7 @@ ms.locfileid: "72660392"
 > [!WARNING]
 > 若在任何 Excel 儲存格中輸入文字，後面接著方向鍵動作，則這類動作無法正確錄製。 使用滑鼠選取儲存格。
 
- 如果您錄製空儲存格上的動作，則必須按兩下儲存格然後執行一組文字作業，藉此修改程式碼。 由於在儲存格中按一下，再接著任何鍵盤動作都會啟動儲存格內的 `textarea` ，因此必須這樣做。 僅錄製空儲存格上的 `setvalue` 會搜尋 `editbox` ，但是在按下儲存格之前它並不存在。 例如:
+ 如果您錄製空儲存格上的動作，則必須按兩下儲存格然後執行一組文字作業，藉此修改程式碼。 由於在儲存格中按一下，再接著任何鍵盤動作都會啟動儲存格內的 `textarea` ，因此必須這樣做。 僅錄製空儲存格上的 `setvalue` 會搜尋 `editbox` ，但是在按下儲存格之前它並不存在。 例如：
 
 ```csharp
 Mouse.DoubliClick(uiItemCell,new Point(31,14));
@@ -104,7 +104,7 @@ uiGridKeyboardInputEdit.Text=value;
 
 1. 確定您已安裝 Visual Studio 2012.1 或更新版本。
 
-2. 安裝 [適用於 Silverlight 的 Microsoft Visual Studio UI 測試外掛程式](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4)。
+2. 安裝 [適用於 Silverlight 的 Microsoft Visual Studio UI 測試外掛程式](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudioUITestPluginforSilverlight)。
 
 3. 安裝 [Fiddler](http://www.fiddler2.com/fiddler2/)。 這是擷取和記錄 HTTP 流量的簡單工具。
 
@@ -124,24 +124,24 @@ uiGridKeyboardInputEdit.Text=value;
 
 5. 您應該確認產生的程式碼參考 Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll。
 
-     如需詳細資訊，請參閱 [使用 Visual Studio 2012 進行 SharePoint 2010 UI 測試](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)
+     如需詳細資訊，請參閱 [使用 Visual Studio 2012 進行 SharePoint 2010 UI 測試](https://devblogs.microsoft.com/devops/ui-testing-sharepoint-2010-with-visual-studio-2012/)
 
 ## <a name="external-resources"></a>外部資源
 
 ### <a name="blogs"></a>部落格
- [使用 Visual Studio 2012 進行 SharePoint 2010 UI 測試](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)
+ [使用 Visual Studio 2012 進行 SharePoint 2010 UI 測試](https://devblogs.microsoft.com/devops/ui-testing-sharepoint-2010-with-visual-studio-2012/)
 
- [了解自動程式碼 UI 測試中 Silverlight 控制項的搜尋邏輯](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/understanding-the-search-logic-for-silverlight-controls-in-coded-ui-test.aspx)
+ [了解自動程式碼 UI 測試中 Silverlight 控制項的搜尋邏輯](https://tapas-techsnips.blogspot.com/)
 
- [擷取 Silverlight 控制項的屬性](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/fetching-property-of-a-silverlight-control.aspx)
+ [擷取 Silverlight 控制項的屬性](https://tapas-techsnips.blogspot.com/)
 
- [自動程式碼 UI 測試的內容索引](http://blogs.msdn.com/b/mathew_aniyan/archive/2010/02/11/content-index-for-coded-ui-test.aspx)
+ [自動程式碼 UI 測試的內容索引](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
 ### <a name="guidance"></a>指引
- [使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)
+ [使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試 (英文)](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="forum"></a>論壇
- [Visual Studio ALM + Team Foundation Server 部落格](http://go.microsoft.com/fwlink/?LinkID=254496)
+ [Visual Studio ALM + Team Foundation Server 部落格 (英文)](https://go.microsoft.com/fwlink/?LinkID=254496)
 
-## <a name="see-also"></a>請參閱
- [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md) [Web 效能和負載測試 sharepoint 2010 和2013應用程式](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)[建立 sharepoint 方案](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)[驗證和](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)偵測 sharepoint 程式碼[建立和偵錯工具解決方案](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)[分析 SharePoint 應用程式的效能](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
+## <a name="see-also"></a>另請參閱
+ [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md) [Web 效能和負載測試 sharepoint 2010 和2013應用程式](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)[建立 sharepoint 方案](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)[驗證和](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)偵測 sharepoint 程式碼[建立和](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)程式碼剖析 sharepoint 方案[分析 sharepoint 應用程式的效能](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

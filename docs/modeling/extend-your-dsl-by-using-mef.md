@@ -2,17 +2,17 @@
 title: 使用 MEF 擴充您的 DSL
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f42186915ade2a518506f5f6ccc55b3599a3ba99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8e4898ba6c87f25b38a6c3e42032412d69d8ece
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657519"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596602"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
 
@@ -129,7 +129,7 @@ ms.locfileid: "72657519"
 
    - 這個元件的名稱通常會以 "結尾。Dsl .dll」。
 
-   - 如果您有 DSL 專案的存取權，您可以在目錄 DSL 底下找到元件檔 **\\bin \\ \***
+   - 如果您有 DSL 專案的存取權，您可以在目錄**DSL\\bin\\** 下找到元件檔案 \*
 
    - 如果您具有 DSL VSIX 檔案的存取權，您可以將 VSIX 檔案的副檔名變更為 ".zip"，以尋找元件。 將 .zip 檔案解壓縮。
 
@@ -157,7 +157,7 @@ ms.locfileid: "72657519"
 
    1. 在 [ **extension.vsixmanifest**] 中，按一下 [**加入參考**]
 
-   2. 在對話方塊中，按一下 [**新增**承載]，然後找出 DSL 的 VSIX 檔案。 VSIX 檔案內建于 DSL 解決方案中， **DslPackage \\bin \\ \*** 。
+   2. 在對話方塊中，按一下 [**新增**承載]，然後找出 DSL 的 VSIX 檔案。 VSIX 檔案建置於 DSL 解決方案中， **DslPackage\\bin\\\*** 。
 
        這可讓使用者同時安裝 DSL 和您的延伸模組。 如果使用者已安裝 DSL，則只會安裝您的延伸模組。
 
@@ -175,7 +175,7 @@ ms.locfileid: "72657519"
 
 ### <a name="menu-commands"></a>功能表命令
 
-若要撰寫功能表命令，請定義用來執行 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> 的類別，並使用在 DSL 中定義的屬性（名為*dsl* `CommandExtension`）來建立類別的前置詞。 您可以撰寫一個以上的功能表命令類別。
+若要撰寫功能表命令，請定義用來執行 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> 的類別，並使用在 DSL 中定義的屬性（名為*dsl*`CommandExtension`）來建立類別的前置詞。 您可以撰寫一個以上的功能表命令類別。
 
 每當使用者以滑鼠右鍵按一下圖表時，就會呼叫 `QueryStatus()`。 它應該會檢查目前的選取範圍，並設定 `command.Enabled` 以指出命令是否適用。
 

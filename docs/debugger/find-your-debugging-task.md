@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
+ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349699"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73599285"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>在 Visual Studio 中尋找您的偵錯工具工作
 
@@ -43,11 +43,15 @@ ms.locfileid: "72349699"
 
 ### <a name="pause-code-inside-a-loop-at-a-certain-iteration"></a>在特定反復專案中暫停迴圈內部的程式碼
 
-使用 [叫用**計數**] 做為條件來設定中斷點。 如需詳細資訊，請參閱[計數](using-breakpoints.md#hit-count)。
+使用 [叫用**計數**] 做為條件來設定中斷點。 如需詳細資訊，請參閱[計數](using-breakpoints.md#set-a-hit-count-condition)。
 
 ### <a name="pause-code-at-the-start-of-a-function-when-you-know-the-function-name-but-not-its-location"></a>當您知道函式名稱但不是它的位置時，在函式的開頭暫停程式碼
 
 您可以使用函式中斷點來執行此動作。 如需詳細資訊，請參閱設定函式[中斷點](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file)。
+
+### <a name="pause-code-at-the-start-of-multiple-functions-with-the-same-name"></a>在具有相同名稱的多個函式開頭暫停程式碼
+
+當您有多個具有相同名稱的函式時（在不同的專案中有多載函式或函數），您可以使用函式[中斷點](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file)。
 
 ### <a name="manage-and-keep-track-of-your-breakpoints"></a>管理和持續追蹤您的中斷點
 
@@ -99,13 +103,21 @@ ms.locfileid: "72349699"
 
 ## <a name="additional-tasks"></a>其他工作
 
+### <a name="fix-an-exception"></a>修正例外狀況
+
+請參閱[修正例外](write-better-code-with-visual-studio.md#fix-an-exception)狀況。
+
 ### <a name="edit-code-during-a-debugging-session"></a>在偵錯工具期間編輯程式碼
 
-使用 [[編輯後繼續](edit-and-continue.md)]。 若是 XAML，請使用[Xaml 熱重載](xaml-hot-reload.md)。
+使用 [[編輯後繼續](edit-and-continue.md)]。 若是 XAML，請使用[Xaml 熱重載](../xaml-tools/xaml-hot-reload.md)。
 
 ### <a name="send-messages-to-the-output-window-without-modifying-code"></a>將訊息傳送至 [輸出] 視窗而不修改程式碼
 
 設定追蹤點。 如需詳細資訊，請參閱[使用追蹤點](using-tracepoints.md)。
+
+## <a name="view-the-order-in-which-functions-are-called"></a>查看函數的呼叫順序
+
+請參閱[如何觀看呼叫堆疊](how-to-use-the-call-stack-window.md)。
 
 ### <a name="debug-on-remote-machines"></a>在遠端電腦上進行調試
 

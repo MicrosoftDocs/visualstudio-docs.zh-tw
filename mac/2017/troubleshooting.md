@@ -2,16 +2,16 @@
 title: 疑難排解
 description: Visual Studio for Mac 使用者的常見問題及解決方法。
 ms.topic: troubleshooting
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6073e0bf2a601bf5183798a1df4fd835d0b93427
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987026"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985158"
 ---
 # <a name="troubleshooting"></a>疑難排解
 
@@ -47,6 +47,6 @@ ms.locfileid: "62987026"
 
 請注意，只有在例外狀況有內部例外狀況時，才會顯示其中一些區段。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [IDE 錯誤疑難排解資源 (Windows 上的 Visual Studio)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

@@ -69,7 +69,7 @@ HRESULT DefineScriptBlock(
   
  在已加入文字（例如使用 `IDebugDocumentHelper::AddDBCSText` 方法）之後，但在剖析腳本區塊之前，應該呼叫 `DefineScriptBlock` 方法（例如，使用 `IActiveScriptParse ::ParseScriptText` 方法）。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper：： AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+ [IDebugDocumentHelper：： AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

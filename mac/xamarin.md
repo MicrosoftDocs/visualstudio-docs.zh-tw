@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211481"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714475"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 行動裝置應用程式開發
 
@@ -22,7 +22,7 @@ ms.locfileid: "71211481"
 
 若要啟用 XAML 熱重載，可以在**Visual Studio > 喜好設定 > 專案 > Xamarin 熱重載** 上，勾選 **啟用 Xamarin 熱重載** 核取方塊。
 
-如需有關熱重載的詳細資訊，請參閱檔中的適用于[Xamarin 的 XAML 熱重載指南](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload)。
+如需有關熱重載的詳細資訊，請參閱檔中的適用于[Xamarin 的 XAML 熱重載指南](/xamarin/xamarin-forms/xaml/hot-reload)。
 
 ## <a name="android"></a>Android
 
@@ -40,7 +40,7 @@ iOS 設計工具已與 Visual Studio for Mac 完全整合在一起，以視覺�
 
 ![iOS 分鏡腳本設計工具](media/intro-image30.png)
 
-如需使用 iOS 詳細資訊，請參閱 [Designer](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos) (設計工具) 指南。
+如需使用 iOS 詳細資訊，請參閱 [Designer](/xamarin/ios/user-interface/designer/?tabs=macos) (設計工具) 指南。
 
 ### <a name="mac"></a>Mac
 

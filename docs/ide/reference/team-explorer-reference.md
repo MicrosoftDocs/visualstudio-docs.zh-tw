@@ -5,18 +5,18 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945068"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538579"
 ---
 # <a name="team-explorer-reference"></a>Team Explorer 參考
 
 本文提供 **Team Explorer** 中各項功能的相關 Azure DevOps 文章連結。
 
-您可以使用 **Team Explorer** 工具視窗協調與其他小組成員合作開發專案時的程式碼撰寫工作，以及管理指派給您、小組或專案的工作。 **Team Explorer** 會將 Visual Studio 連線到 Git 和 GitHub 存放庫、Team Foundation 版本控制 (TFVC) 存放庫，以及裝載於 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 或內部部署 [Azure DevOps Server](/tfs/index) (之前稱為 TFS) 的專案。 您可以管理原始程式碼、工作項目和組建。
+您可以使用 **Team Explorer** 工具視窗協調與其他小組成員合作開發專案時的程式碼撰寫工作，以及管理指派給您、小組或專案的工作。 **Team Explorer** 會將 Visual Studio 連線到 Git 和 GitHub 存放庫、Team Foundation 版本控制 (TFVC) 存放庫，以及裝載於 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 或內部部署 [Azure DevOps Server](/azure/devops/index-all) (之前稱為 TFS) 的專案。 您可以管理原始程式碼、工作項目和組建。
 
 ## <a name="home-page"></a>首頁
 
@@ -106,6 +106,6 @@ ms.locfileid: "62945068"
 | - | - | - |
 | [安全性、群組成員資格](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[安全性、原始檔控制 (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[工作項目區域](/azure/devops/organizations/settings/set-area-paths)<br/>[工作項目反覆項目](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[入口網站設定](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[專案警示](/azure/devops/notifications/howto-manage-team-notifications) | [安全性、群組成員資格](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[原始檔控制 (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[流程範本管理員](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Git 全域設定](/azure/devops/repos/git/git-config)<br/>[Git 存放庫設定](/azure/devops/repos/git/git-config) |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在 Team Explorer 中連線到專案](../../ide/connect-team-project.md)

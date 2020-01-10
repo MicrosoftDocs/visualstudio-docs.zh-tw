@@ -13,12 +13,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51b546e953cae80b7a1871b72a1f0b0613c77342
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 955103b6d28e90321fb45c23825f0c2a25362208
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659327"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301319"
 ---
 # <a name="visualize-code"></a>視覺化程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,22 +37,22 @@ ms.locfileid: "72659327"
 
   若要查看支援各項功能的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
-## <a name="what-do-you-want-to-do"></a>請您指定選項。
+## <a name="what-do-you-want-to-do"></a>您想要做什麼事？
 
 |||
 |-|-|
-|**瞭解程式碼及其關聯性：**<br /><br /> 對應特定程式碼片段之間的關聯性。<br /><br /> 查看整個方案的程式碼中的關聯性概觀。<br /><br /> **注意**：在這一版的 Visual Studio 中，會使用「 *Code Map* 」一詞來取代「相依性*圖形*」。|-   [對應方案之間的](../modeling/map-dependencies-across-your-solutions.md)相依性<br />-   [使用 code map 來對應用程式進行 debug](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />在進行[調試時，-    在呼叫堆疊上對應方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**瞭解程式碼及其關聯性：**<br /><br /> 對應特定程式碼片段之間的關聯性。<br /><br /> 查看整個方案的程式碼中的關聯性概觀。<br /><br /> **注意**：在本版 Visual Studio 中，會以 *Code Map* 一詞取代 *「相依性圖形」* (Dependency Graph)。|-   [對應方案之間的](../modeling/map-dependencies-across-your-solutions.md)相依性<br />-   [使用 code map 來對應用程式進行 debug](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />在進行[調試時，-   在呼叫堆疊上對應方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**瞭解類別結構：**<br /><br /> 從程式碼建立類別圖，將專案中的類別結構視覺化。|[如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**描述高階系統設計，並根據這種設計來驗證程式代碼：**<br /><br /> 藉由建立分層圖，描述高階系統設計及其預計相依性。 針對此設計驗證程式碼，以確定程式碼中的相依性與設計保持一致。|-   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-    [Layer 圖：參考](../modeling/layer-diagrams-reference.md)<br />-    [Layer 圖：方針](../modeling/layer-diagrams-guidelines.md)<br />-   [使用圖層圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|
-|**傳達使用者需求和架構：**<br /><br /> 藉由繪製下列 UML 圖表：活動、元件、類別、順序和使用案例，建立使用者需求和軟體系統架構的模型。|-   [為您的應用程式建立模型](../modeling/create-models-for-your-app.md)<br />-   [模型使用者需求](../modeling/model-user-requirements.md)<br />-    為[您的應用程式架構建立模型](../modeling/model-your-app-s-architecture.md)|
+|**描述高階系統設計，並根據這種設計來驗證程式代碼：**<br /><br /> 藉由建立分層圖，描述高階系統設計及其預計相依性。 針對此設計驗證程式碼，以確定程式碼中的相依性與設計保持一致。|-   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖：參考](../modeling/layer-diagrams-reference.md)<br />-   [分層圖：方針](../modeling/layer-diagrams-guidelines.md)<br />-   [使用圖層圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|
+|**傳達使用者需求和架構：**<br /><br /> 藉由繪製下列 UML 圖表：活動、元件、類別、順序和使用案例，建立使用者需求和軟體系統架構的模型。|-   [為您的應用程式建立模型](../modeling/create-models-for-your-app.md)<br />-   [模型使用者需求](../modeling/model-user-requirements.md)<br />-   為[您的應用程式架構建立模型](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="external-resources"></a>外部資源
 
 |**分類**|**Links**|
 |------------------|---------------|
-|**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**技術文件和日誌**|[MSDN 架構論壇](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格 (英文)](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**技術文件和日誌**|[MSDN 架構論壇](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>另請參閱
- [案例：使用視覺效果和模型化來變更您的設計 ](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)[分析和模型化架構](../modeling/analyze-and-model-your-architecture.md)[建立模型的應用程式](../modeling/create-models-for-your-app.md)[模型使用者需求](../modeling/model-user-requirements.md)[模型您的應用程式架構](../modeling/model-your-app-s-architecture.md)[在開發中使用模型進程](../modeling/use-models-in-your-development-process.md)
+ [案例：使用視覺化和模型](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)[分析和](../modeling/analyze-and-model-your-architecture.md)模型化架構來變更您[的設計建立模型應用程式](../modeling/create-models-for-your-app.md)[模型使用者需求](../modeling/model-user-requirements.md)[模型應用程式的架構](../modeling/model-your-app-s-architecture.md)[在開發流程中使用模型](../modeling/use-models-in-your-development-process.md)

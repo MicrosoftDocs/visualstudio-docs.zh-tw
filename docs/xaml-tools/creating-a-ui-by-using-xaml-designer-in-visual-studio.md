@@ -9,21 +9,21 @@ f1_keywords:
 - VS.DocumentOutline
 - Blend.Start.Dev12
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0f43222e593b836f44a84e5f64642403f0263ca5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 912468cf95b7b5a4b611fb568048c2ba62cc635d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649705"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592998"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>使用 XAML 設計工具建立 UI
 
 Visual Studio 中的「XAML 設計工具」和 Blend for Visual Studio 提供視覺化介面，可協助您設計以 XAML 為基礎的應用程式，例如 WPF、UWP 及 Xamarin.Forms 應用程式。 您可以藉由從 [工具箱] 視窗 (在 Blend for Visual Studio 的 [資產] 視窗中) 拖曳控制項，並在 [屬性] 視窗中設定屬性，為您的應用程式建立使用者介面。 您也可以在 [XAML] 檢視中直接編輯 XAML。
 
-如果是進階使用者，您甚至可以[自訂 XAML 設計工具](../extensibility/xaml-designer-extensibility-migration.md)。
+如果是進階使用者，您甚至可以[自訂 XAML 設計工具](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md)。
 
 ## <a name="xaml-designer-workspace"></a>XML 設計工具工作區
 
@@ -33,7 +33,7 @@ XAML 設計工具提供 [XAML] 檢視和同步處理的 [設計] 檢視，來顯
 
 ### <a name="design-view"></a>設計檢視
 
-在 [設計] 檢視中，含有畫板的視窗是作用中視窗，您可以使用它作為主要工作介面。 您可以使用它，透過新增、繪製或修改元素，以視覺化方式設計您應用程式中的頁面。 如需詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。 下圖顯示 [設計] 檢視中的畫板。
+在 [設計] 檢視中，含有「畫板」(Artboard) 的視窗是作用中視窗，可做為主要工作介面。 您可以使用它，透過新增、繪製或修改元素，以視覺化方式設計您應用程式中的頁面。 如需詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。 下圖顯示 [設計] 檢視中的畫板。
 
 ![XAML 設計工具的 [設計] 檢視](media/xaml-artboard.png)
 
@@ -138,11 +138,11 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 [文件大綱]/[物件與時間軸] 視窗頂端顯示向上箭號符號的選項，可移至前一個範圍。 只有您在樣式或樣板的範圍內時，選定範圍才適用。
 
-## <a name="properties-window"></a>屬性視窗
+## <a name="properties-window"></a>[屬性] 視窗
 
-[屬性] 視窗可讓您設定控制項的屬性值。 看起來如下：
+[屬性] 視窗可讓您設定控制項的屬性值。 以下是它看起來的樣子：
 
-![屬性視窗](media/xaml-designer-properties-window.png)
+![[屬性] 視窗](media/xaml-designer-properties-window.png)
 
 [屬性] 視窗的頂端有各種選項：
 

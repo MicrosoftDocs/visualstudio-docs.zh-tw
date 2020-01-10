@@ -15,14 +15,14 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
-ms.openlocfilehash: ca2e44c41952a251d747f80fe27732c1d9dbd18b
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: c1e8a0ca18a857a71fb9cfb6b79a18fef40191a4
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481943"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919157"
 ---
-# <a name="collect-an-etl-trace-with-perfview"></a>利用 PerfView 收集 ETL 追蹤
+# <a name="collect-an-etl-trace-with-perfview"></a>收集使用 PerfView 的 ETL 追蹤
 
 PerfView 是建立 ETL (事件追蹤記錄檔) 檔案的工具，它是以適合為某些 Visual Studio 問題進行疑難排解的 [Windows 事件追蹤](/windows/desktop/ETW/event-tracing-portal) 為基礎。 當您回報問題時，產品小組偶爾會要求您執行 PerfView 來收集其他資訊。
 
@@ -42,4 +42,4 @@ PerfView 是建立 ETL (事件追蹤記錄檔) 檔案的工具，它是以適合
 
 PerfView 只會儲存適合其緩衝區的最新資料。 因此，請在 Visual Studio 開始凍結或變慢後，嘗試停止收集。 遇到問題後請勿收集超過 30 秒。
 
-如需詳細資訊，請觀看 [Channel9 的 PerfView 教學課程影片](http://channel9.msdn.com/Series/PerfView-Tutorial/PerfView-Tutorial-1-Collecting-data-with-the-Run-command)。
+如需詳細資訊，請觀看 [Channel9 的 PerfView 教學課程影片](https://channel9.msdn.com/Series/PerfView-Tutorial/PerfView-Tutorial-1-Collecting-data-with-the-Run-command)。

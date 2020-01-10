@@ -21,22 +21,22 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e14ce5ac1e0596947e69d20e14a3dc1e7ff4f1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eeb5375d636ef16fde658b88dbf662cdd9f1e27d
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62421053"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983811"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>程式碼剖析 HPC (高效能運算) 叢集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用 [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] 或 [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] 程式碼剖析工具的取樣方法，在 Microsoft Windows HPC 叢集的計算節點上進行程式碼剖析。 如需 HPC 的詳細資訊，請參閱[Big Compute:HPC 與 Batch](https://azure.microsoft.com/solutions/big-compute/) Microsoft 網站上。  
+您可以使用 [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] 或 [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] 程式碼剖析工具的取樣方法，在 Microsoft Windows HPC 叢集的計算節點上進行程式碼剖析。 如需 HPC 的詳細資訊，請參閱 Microsoft 網站上的[Big Compute： hpc & Batch](https://azure.microsoft.com/solutions/big-compute/) 。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>Prerequisites  
  若要在 HPC 計算節點上進行程式碼剖析，您必須執行下列動作︰  
   
-- 在和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 相同的電腦上安裝 Microsoft HPC Pack 2008。 電腦不一定要是 HPC 叢集的一部分。 您可以在 [Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkID=177414)安裝 HPC Pack。  
+- 在和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 相同的電腦上安裝 Microsoft HPC Pack 2008。 電腦不一定要是 HPC 叢集的一部分。 您可以在 [Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=2800)安裝 HPC Pack。  
   
 - 在 HPC 計算節點上安裝 [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 和獨立版本的程式碼剖析工具。 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 和獨立分析工具的安裝程式均於 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 安裝媒體上提供。 **注意**：您必須在安裝 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 之後以及安裝程式碼剖析工具之前，重新啟動電腦。  
   
@@ -55,8 +55,8 @@ ms.locfileid: "62421053"
 |||  
 |-|-|  
 |*%HeadNode%*|叢集前端節點的名稱。|  
-|*%FxPath%*|[!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 安裝程式的路徑。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]安裝媒體的路徑是：WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|獨立版本的程式碼剖析工具安裝程式路徑。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]安裝媒體的路徑是：Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|[!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 安裝程式的路徑。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 安裝媒體的路徑是︰WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|獨立版本的程式碼剖析工具安裝程式路徑。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 安裝媒體的路徑是︰Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>在 HPC 計算節點上進行程式碼剖析  
  您可以使用 HPC 效能精靈來指定 HPC 叢集和目標資訊，以設定程式碼剖析工作階段。 您可以在效能工作階段屬性頁中指定其他選項。 程式碼剖析工具會自動部署必要的目標二進位檔，並啟動分析工具和 HPC 應用程式。  
@@ -99,7 +99,7 @@ ms.locfileid: "62421053"
   
          若要進行程式碼剖析的處理序在 HPC 叢集中特定節點上執行，請選取 [依節點排列的設定檔] 選項，然後從下拉式清單中選取該節點。  
   
-8. 按 [下一步] 。  
+8. 按 [ **下一步**]。  
   
 9. 在精靈的第五個頁面上，您可以選擇立即啟動分析工具和程式碼剖析處理序，或稍後使用 [效能總管] 來啟動程式碼剖析。  
   
@@ -141,7 +141,7 @@ ms.locfileid: "62421053"
 |--------------|-----------------|  
 |**專案名稱**|目前 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 專案或解決方案的名稱。|  
 |**於分析工具停止時清除**|為 true 時，會將已部署至執行目錄的二進位檔移除。 此步驟不會移除由使用者程式建立的檔案和目錄。 如果是由 IDE 建立執行目錄和部署目錄，IDE 會嘗試加以移除，但不是由 IDE 所部署的檔案，則不會嘗試移除。|  
-|**其他要部署的檔案**|以分號分隔清單指定任何其他檔案，以部署在計算節點上。 您可以按一下省略符號按鈕 (**...**)，使用對話方塊來選取多個檔案。|  
+|**其他要部署的檔案**|以分號分隔清單指定任何其他檔案，以部署在計算節點上。 您可以按一下省略符號按鈕 ( **...** )，使用對話方塊來選取多個檔案。|  
 |**MPIExec 命令**|指定會啟動 MPI 應用程式的應用程式。 預設值為 **mpiexec.exe**|  
 |**MPIExec 引數**|指定要傳遞至 mpiexec.exe 命令的引數。|  
 |**叢集上的要求節點**|在執行應用程式的叢集上，指定節點數目。|  

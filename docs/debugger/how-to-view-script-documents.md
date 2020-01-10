@@ -1,6 +1,6 @@
 ---
 title: 如何：查看指令檔 |Microsoft Docs
-ms.date: 01/08/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +15,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7696122cc9f0d431f310b8d6efb10819af995823
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5e362e0504c4ed2584bbbbea687fe3c58fc79edb
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731856"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714435"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>如何：查看指令檔（JavaScript）
 
 伺服器端腳本檔會顯示在方案總管中。 只有在您處於偵錯模式或中斷模式時，才會看得見用戶端指令碼檔。 用戶端腳本檔案會出現在 [**腳本**檔] 節點中。
 
+針對動態產生頁面的某些應用程式類型，當您從瀏覽器中載入的指令檔設定中斷點時，進入中斷模式和 debug 會比較容易。 同樣地，您可以從載入的指令檔加入 `debugger` 語句，進入中斷模式。 本文說明如何查看這些檔。
+
 > [!NOTE]
-> 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 之前，從伺服器端腳本產生的用戶端腳本檔案會出現在 [腳本瀏覽器] 視窗中。
+> 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]之前，從伺服器端腳本產生的用戶端腳本檔案會出現在 [腳本瀏覽器] 視窗中。
 
 ### <a name="to-view-a-server-side-script-document"></a>若要檢視伺服器端指令碼文件
 

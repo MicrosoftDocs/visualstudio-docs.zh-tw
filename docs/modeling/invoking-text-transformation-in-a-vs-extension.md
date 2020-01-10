@@ -2,17 +2,17 @@
 title: 叫用 VS 擴充功能中的文字轉換
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8729a96d236fd565f31c827ebff6911dbc0b81d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667759"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594587"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>叫用 Visual Studio 延伸模組中的文字轉換
 
@@ -130,7 +130,7 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
-編譯器警告會出現在 Visual Studio 錯誤視窗中，而且也會產生 `ErrorCallback` 的呼叫。
+編譯器警告會出現在 Visual Studio 錯誤視窗中，而且也會產生 `ErrorCallback`的呼叫。
 
 ## <a name="reference-parameters"></a>傳址參數
 

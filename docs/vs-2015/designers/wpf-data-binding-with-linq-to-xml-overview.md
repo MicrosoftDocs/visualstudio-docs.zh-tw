@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 09c0c26a75d6881f06e67fa84f30ac7279bddf33
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 751840960288f46c0a1ca09ebe80a2b8e7603359
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663898"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299533"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>WPF 資料繫結與 LINQ to XML 概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,5 +88,5 @@ ms.locfileid: "72663898"
 
  若要實作 WPF 動態繫結，動態屬性將搭配 <xref:System.Windows.Data> 命名空間 (特別是 <xref:System.Windows.Data.Binding> 類別) 所提供的功能使用。
 
-## <a name="see-also"></a>請參閱
- 使用[工作流程標記](http://go.microsoft.com/fwlink/?LinkId=98685)[在 wpf](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) [資料系結（Wpf）](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)中 LINQ to XML [LINQ to XML 動態屬性](../designers/linq-to-xml-dynamic-properties.md)XAML[的 wpf 資料](../designers/wpf-data-binding-with-linq-to-xml.md)系結
+## <a name="see-also"></a>另請參閱
+ 使用[工作流程標記](https://go.microsoft.com/fwlink/?LinkId=98685)[在 wpf](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) [資料系結（Wpf）](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)中 LINQ to XML [LINQ to XML 動態屬性](../designers/linq-to-xml-dynamic-properties.md)XAML[的 wpf 資料](../designers/wpf-data-binding-with-linq-to-xml.md)系結

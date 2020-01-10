@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0008f443139d968664d2cc4b4e3e3bef6ecb9ba
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fe144e8de67264c9d89f6a240ef815afac9a4655
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649521"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587559"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>如何：設定 managed 程式碼的舊版分析
 
@@ -29,9 +29,9 @@ ms.locfileid: "72649521"
 
 ## <a name="configure-a-rule-set-for-a-net-framework-project"></a>為 .NET Framework 專案設定規則集
 
-1. 開啟專案屬性頁上的 [程式**代碼分析**] 索引標籤。 您可以透過下列其中一種方式來執行這項操作：
+1. 開啟專案屬性頁上的 [程式**代碼分析**] 索引標籤。 您可以使用下列其中一種方法執行這個動作：
 
-   - 在 **方案總管**中，選取專案。 在功能表列上，選取 [**分析**]  >  設定 **\<projectname > 的程式** **代碼分析** > 。
+   - 在 [方案總管] 中，選取專案。 在功能表列上，選取 [**分析**] > 設定 **\<專案名稱 > 的程式** **代碼分析** > 。
 
    - 以滑鼠右鍵按一下**方案總管**中的專案，然後選取 [**屬性**]，再選取 [程式**代碼分析**] 索引標籤。
 
@@ -39,13 +39,13 @@ ms.locfileid: "72649521"
 
 ::: moniker range="vs-2017"
 
-3. 若要在每次使用選取的設定建立專案時執行程式碼分析，請選取 [**在組建上啟用程式碼分析**]。 您也可以手動執行程式碼分析，方法是選取 [**分析**] [ > ] [**執行程式碼**分析]  > **在 \<Projectname > 上執行程式碼分析**。
+3. 若要在每次使用選取的設定建立專案時執行程式碼分析，請選取 [**在組建上啟用程式碼分析**]。 您也可以手動執行程式碼分析，方法是選取 [**分析**] > [**執行程式碼分析**] >  **\<專案名稱 > 上執行程式碼分析**。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. 若要在每次使用選取的設定建立專案時執行程式碼分析，請選取 [**二進位分析器**] 區段中的 [**在組建上執行**]。 您也可以手動執行程式碼分析，方法是選取 [**分析**] [ > ] [**執行程式碼**分析]  > **在 \<Projectname > 上執行程式碼分析**。
+3. 若要在每次使用選取的設定建立專案時執行程式碼分析，請選取 [**二進位分析器**] 區段中的 [**在組建上執行**]。 您也可以手動執行程式碼分析，方法是選取 [**分析**] > [**執行程式碼分析**] >  **\<專案名稱 > 上執行程式碼分析**。
 
 ::: moniker-end
 
@@ -66,11 +66,11 @@ ms.locfileid: "72649521"
 
 ::: moniker-end
 
-    - 選取您想要使用的規則集。
+   - 選取您想要使用的規則集。
 
-    - 選取 [ **\<Browse >** ]，尋找不在清單中的現有自訂規則集。
+   - 選取 **\<流覽 >** 以尋找不在清單中的現有自訂規則集。
 
-    - 定義[自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)。
+   - 定義[自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)。
 
 ## <a name="specify-rule-sets-for-multiple-projects-in-a-solution"></a>為方案中的多個專案指定規則集
 

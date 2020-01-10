@@ -1,19 +1,19 @@
 ---
 title: 更新程式在擷取資訊時發生錯誤
 description: 當您看到錯誤 [擷取更新資訊時發生錯誤] 時，該如何修正的指示。 在 Visual Studio 2017 for Mac 中
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 8825BBAD-65C0-480F-9868-A01E64F28250
-ms.openlocfilehash: 6996bd56571c75f31893d7df5b8237fc52b378ae
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 2ff0703171f5854baed2dd9be3767571a930bcb7
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824078"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983491"
 ---
-# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>疑難排解：更新程式在擷取資訊時發生錯誤
+# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>疑難排解：更新程式發生錯誤，正在抓取資訊
 
 在極少數情況下，當您嘗試[更新 Visual Studio for Mac](update.md) 時，您可能會看到顯示錯誤訊息 [擷取更新資訊時發生錯誤]。 如果發生此錯誤，請嘗試下列步驟來修正：
 

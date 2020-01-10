@@ -2,17 +2,17 @@
 title: 使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 24e4ee35f21b7477e9b3d601305bd6534a16d9e0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 104bdcc7a3f609456d521e710ac6ec2aeda2bb75
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659791"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585570"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>使用不同的網頁瀏覽器搭配自動程式化 UI 測試
 
@@ -53,7 +53,7 @@ ms.locfileid: "72659791"
 
 ::: moniker range="vs-2017"
 
-1. 在 [工具] 功能表中選擇 [擴充功能和更新]。
+1. 在 [ **工具** ] 功能表中選擇 [ **擴充功能和更新**]。
 
 2. 在 [擴充功能和更新] 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
 

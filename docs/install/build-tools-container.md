@@ -6,19 +6,19 @@ ms.date: 07/03/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24e27c8ca2c75e2345bea4f4393fcb00bba1a0d8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: cdec0c6059775f4542e7b012709e20ad45c249cc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821715"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595965"
 ---
 # <a name="install-build-tools-into-a-container"></a>將 Build Tools 安裝至容器
 
@@ -30,9 +30,9 @@ ms.locfileid: "67821715"
 
 ## <a name="before-you-begin"></a>開始之前
 
-假設您已熟悉下列 [Docker](https://www.docker.com/what-docker) 功能。 若不熟悉如何在 Windows 上執行 Docker，請了解如何[在 Windows 上安裝並設定 Docker 引擎](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) \(部分機器翻譯\)。
+假設您已熟悉下列 [Docker](https://www.docker.com/what-docker) 功能。 若不熟悉如何在 Windows 上執行 Docker，請了解如何[在 Windows 上安裝並設定 Docker 引擎](/virtualization/windowscontainers/manage-docker/configure-docker-daemon) \(部分機器翻譯\)。
 
-下面的基底映像是範例，因此可能無法適用於您的系統。 閱讀 [Windows 容器版本相容性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)以決定您應該為您的環境使用哪個基底映像。
+下面的基底映像是範例，因此可能無法適用於您的系統。 閱讀 [Windows 容器版本相容性](/virtualization/windowscontainers/deploy-containers/version-compatibility)以決定您應該為您的環境使用哪個基底映像。
 
 ## <a name="create-and-build-the-dockerfile"></a>建立並建置 Dockerfile
 
@@ -93,7 +93,7 @@ ms.locfileid: "67821715"
    >
    > Visual Studio 2017 15.8 或更早版本 (任何產品) 無法在 mcr.microsoft.com/windows/servercore:1809 (或更新版本) 上正確安裝。 不會顯示錯誤。
    >
-   > 請參閱 [Windows 容器版本相容性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) \(部分機器翻譯\) 以查看各種主機 OS 版本所支援的容器 OS 版本，並參閱[容器的已知問題](build-tools-container-issues.md)以了解已知問題。
+   > 請參閱 [Windows 容器版本相容性](/virtualization/windowscontainers/deploy-containers/version-compatibility) \(部分機器翻譯\) 以查看各種主機 OS 版本所支援的容器 OS 版本，並參閱[容器的已知問題](build-tools-container-issues.md)以了解已知問題。
 
    ::: moniker-end
 
@@ -131,9 +131,12 @@ ms.locfileid: "67821715"
    > [!WARNING]
    > 如果您讓映像直接以 microsoft/windowsservercore 為基礎，.NET Framework 可能無法正確安裝且不會指出任何安裝錯誤。 安裝完成之後，可能無法執行受控碼。 相反地，讓您的映像以 [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) 或更新版本為基礎。 另請注意，標記為 4.8 或更新版的映像可能會使用 PowerShell 作為預設 `SHELL`，導致 `RUN` 和 `ENTRYPOINT` 指令失敗。
    >
-   > 請參閱 [Windows 容器版本相容性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) \(部分機器翻譯\) 以查看各種主機 OS 版本所支援的容器 OS 版本，並參閱[容器的已知問題](build-tools-container-issues.md)以了解已知問題。
+   > 請參閱 [Windows 容器版本相容性](/virtualization/windowscontainers/deploy-containers/version-compatibility) \(部分機器翻譯\) 以查看各種主機 OS 版本所支援的容器 OS 版本，並參閱[容器的已知問題](build-tools-container-issues.md)以了解已知問題。
 
    ::: moniker-end
+   
+   > [!NOTE]
+   > 錯誤碼 `3010` 用來指出需要重新開機的成功，如需詳細資訊，請參閱[MsiExec 錯誤訊息](/windows/win32/msi/error-codes)。
 
 1. 從該目錄內執行下列命令。
 
@@ -189,7 +192,7 @@ ms.locfileid: "67821715"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [容器的進階範例](advanced-build-tools-container.md)
 * [容器的已知問題](build-tools-container-issues.md)

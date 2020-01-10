@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 849862f98fb90cdd742e1794ecb57c35a9aaca73
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3a805942e85540b776ceacd972a09a71bb80cbb4
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745588"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911590"
 ---
 # <a name="debug-64-bit-applications"></a>偵錯 64 位元應用程式
 您可以對本機電腦或遠端電腦上執行的 64 位元應用程式進行偵錯。
@@ -54,7 +54,7 @@ ms.locfileid: "72745588"
 
 ## <a name="see-also"></a>請參閱
 
-- [64 位元應用程式](https://docs.microsoft.com/dotnet/framework/64-bit-apps)
+- [64 位元應用程式](/dotnet/framework/64-bit-apps)
 - [Configuring Programs for 64-Bit](/cpp/build/configuring-programs-for-64-bit-visual-cpp) (為 64 位元設定程式)
 - [Visual Studio IDE 64 位元支援](../ide/visual-studio-ide-64-bit-support.md)
 - [使用傾印檔案](../debugger/using-dump-files.md)

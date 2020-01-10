@@ -37,7 +37,7 @@ HRESULT Start(
   
 #### <a name="parameters"></a>參數  
  `pdecb`  
- 在回呼，表示運算式評估完成的時間。 如果 `NULL` 此參數，則不會引發任何事件，而且用戶端必須使用 `QueryIsComplete` 輪詢運算式狀態。  
+ 在回呼，表示運算式評估完成的時間。 如果 `NULL`此參數，則不會引發任何事件，而且用戶端必須使用 `QueryIsComplete`輪詢運算式狀態。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -49,6 +49,6 @@ HRESULT Start(
 ## <a name="remarks"></a>備註  
  這個方法會開始評估運算式。  
   
-## <a name="see-also"></a>請參閱  
- [IDebugExpression：： Abort](../../winscript/reference/idebugexpression-abort.md)    
+## <a name="see-also"></a>另請參閱  
+ [IDebugExpression：： Abort](../../winscript/reference/idebugexpression-abort.md)   
  [IDebugExpression 介面](../../winscript/reference/idebugexpression-interface.md)

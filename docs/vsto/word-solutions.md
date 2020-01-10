@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cef71cc5f6c4e25d04e6045be7059d81c06b484
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c2d3b9ea3257db11eed766079b169a7bc81fe28a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254933"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985372"
 ---
 # <a name="word-solutions"></a>Word 方案
   Visual Studio 提供的專案範本，可用以建立 Microsoft Office Word 的文件層級自訂和 VSTO 增益集。 您可以使用這些解決方案自動化 Word、擴充 Word 功能和自訂 Word 使用者介面 (UI)。 如需檔層級自訂和 VSTO 增益集之間差異的詳細資訊，請參閱[Office 方案開發&#40;總覽&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -58,26 +58,26 @@ ms.locfileid: "71254933"
 ## <a name="doclevel"></a>開發 Word 的檔層級自訂
  Microsoft Office Word 文件層級自訂是由與特定文件相關聯的組件所組成。 組件通常是透過自訂 UI 及自動化 Word 來擴充文件。 不同於與 Word 本身相關聯的 VSTO 增益集，您在自訂中實作的功能只有在 Word 中開啟相關聯的文件時才能使用。
 
- 若要建立 Word 的文件層級自訂專案，請使用 Visual Studio [新增專案] 對話方塊中的 Word 文件或 Word 範本專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)中建立 Office 專案。
+ 若要建立 Word 的文件層級自訂專案，請使用 Visual Studio [新增專案] 對話方塊中的 Word 文件或 Word 範本專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
  如需檔層級自訂如何工作的詳細資訊，請閱讀[檔層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)。
 
 ### <a name="word-customization-programming-model"></a>Word 自訂程式設計模型
  當您建立 Word 文件層級專案時，Visual Studio 會產生名為 `ThisDocument`的類別，這是解決方案的基礎。 這個類別代表與解決方案相關聯的文件，並提供撰寫程式碼的起點。
 
- 如需檔層級`ThisDocument`專案中可用之類別和其他功能的詳細資訊，請參閱[程式檔層級自訂](../vsto/programming-document-level-customizations.md)。
+ 如需您可以在檔層級專案中使用之 `ThisDocument` 類別和其他功能的詳細資訊，請參閱[程式檔層級自訂](../vsto/programming-document-level-customizations.md)。
 
 ## <a name="applevel"></a>開發 Word 的 VSTO 增益集
  Microsoft Office Word 的 VSTO 增益集是由 Word 載入的組件所組成。 組件通常是透過自訂 UI 及自動化 Word 來擴充 Word。 不同于與特定檔相關聯的檔層級自訂，您在 VSTO 增益集中所執行的功能不會限制為任何單一檔。
 
- 若要建立 Word 的 VSTO 增益集專案，請使用 Visual Studio [新增專案] 對話方塊中的 Word 增益集專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)中建立 Office 專案。
+ 若要建立 Word 的 VSTO 增益集專案，請使用 Visual Studio [新增專案] 對話方塊中的 Word 增益集專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
  如需 VSTO 增益集運作方式的一般資訊，請參閱 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。
 
 ### <a name="word-add-in-programming-model"></a>Word 增益集程式設計模型
  當您建立 Word VSTO 增益集專案時，Visual Studio 會產生名為 `ThisAddIn`的類別，這是方案的基礎。 這個類別會提供撰寫程式碼的起點，還會向 VSTO 增益集公開 Word 物件模型。
 
- 如需您可以在`ThisAddIn` VSTO 增益集中使用之類別和其他功能的詳細資訊，請參閱[Program VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
+ 如需您可以在 VSTO 增益集中使用之 `ThisAddIn` 類別和其他功能的詳細資訊，請參閱[PROGRAM VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
 
 ## <a name="UI"></a>自訂 Word 的使用者介面
  有幾種不同的方式可以自訂 Word 的使用者介面。 有些選項適用於所有專案類型，有些選項則僅限 VSTO 增益集或文件層級自訂使用。
@@ -95,7 +95,7 @@ ms.locfileid: "71254933"
 
 |工作|如需詳細資訊|
 |----------|--------------------------|
-|在文件中加入執行窗格。|[動作窗格總覽](../vsto/actions-pane-overview.md)<br /><br /> [如何：將執行窗格新增至 Word 檔或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|
+|在文件中加入執行窗格。|[動作窗格總覽](../vsto/actions-pane-overview.md)<br /><br /> [如何：將執行窗格加入 Word 檔或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|
 |在文件介面中加入擴充的 XMLNode 和 XMLNodes 控制項。|[如何：將 XMLNode 控制項新增至 Word 檔](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [如何：將 XMLNodes 控制項新增至 Word 檔](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|
 
 ### <a name="options-for-vsto-add-ins"></a>VSTO 增益集的選項
@@ -115,4 +115,4 @@ ms.locfileid: "71254933"
 |[逐步解說：建立 Word 的第一個檔層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|示範如何建立 Word 的基本文件層級自訂。|
 |[逐步解說：建立 Word 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|示範如何建立 Word 的基本 VSTO 增益集。|
 |[逐步解說：在 VSTO 增益集的執行時間中將控制項加入檔](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|示範如何使用 VSTO 增益集，於執行階段在文件中加入 Windows Form 按鈕和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。|
-|[Office 開發中的 Word 2010](http://go.microsoft.com/fwlink/?LinkId=199020)|提供有關開發 Word 解決方案 (不限於使用 Visual Studio 的 Office 程式開發) 之文章和參考文件的連結。|
+|[Office 開發中的 Word 2010](/previous-versions/office/developer/office-2010/ff601860(v=office.14))|提供有關開發 Word 解決方案 (不限於使用 Visual Studio 的 Office 程式開發) 之文章和參考文件的連結。|

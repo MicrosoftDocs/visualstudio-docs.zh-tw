@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - TypeCollectionEditor.UI
 ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0a9bf604749524d76b8046d60de75d4b5844cc4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 023d049c5256abe6212dd65df78cd67151be94a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649786"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593053"
 ---
 # <a name="type-collection-editor-dialog-box"></a>型別集合編輯器對話方塊
 

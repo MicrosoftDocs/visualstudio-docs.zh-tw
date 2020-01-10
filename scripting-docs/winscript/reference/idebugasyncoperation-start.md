@@ -48,10 +48,10 @@ HRESULT Start(
 |`E_UNEXPECTED`|作業已暫止。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會導致 `IDebugSyncOperation::Execute` 在從 `IDebugSyncOperation::GetTargetThread` 取得的執行緒中以非同步方式呼叫。 只有在偵錯工具執行緒內，才會呼叫這個方法。否則，它將不會傳回，直到作業完成為止。  
+ 這個方法會導致 `IDebugSyncOperation::Execute` 在從 `IDebugSyncOperation::GetTargetThread`取得的執行緒中以非同步方式呼叫。 只有在偵錯工具執行緒內，才會呼叫這個方法。否則，它將不會傳回，直到作業完成為止。  
   
-## <a name="see-also"></a>請參閱  
- [IDebugAsyncOperation：： Abort](../../winscript/reference/idebugasyncoperation-abort.md)    
+## <a name="see-also"></a>另請參閱  
+ [IDebugAsyncOperation：： Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
  [IDebugAsyncOperation 介面](../../winscript/reference/idebugasyncoperation-interface.md)   
- [IDebugSyncOperation：： Execute](../../winscript/reference/idebugsyncoperation-execute.md)    
+ [IDebugSyncOperation：： Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)

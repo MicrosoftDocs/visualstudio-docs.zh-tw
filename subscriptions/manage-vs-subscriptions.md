@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
-ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
-ms.translationtype: HT
+ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493349"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706976"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
@@ -43,7 +43,7 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 ## <a name="renewing-my-subscriptions"></a>續訂訂閱
 
 **標準訂閱**
-- Microsoft Store：如果您是從 [Microsoft 市集](http://www.microsoft.com/store)購買訂閱，即可在同樣的位置更新憑證。
+- Microsoft 市集：如果您是從 [Microsoft 市集](https://www.microsoft.com/store)購買訂閱，即可在同樣的位置更新憑證。
 - 大量授權：如果您的公司是透過大量授權購買訂閱，則應該由系統管理員連絡轉銷商以更新您的訂閱。
 
 **雲端訂用帳戶：** 雲端訂用帳戶不需要續約。 只要訂閱已付費，即持續有效。
@@ -69,10 +69,10 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 您可以輕鬆地變更設定檔中的連絡人資訊與喜好設定。
 
 1. 在訂閱者入口網站右上角，按一下您的名稱。
-2. 按一下 [編輯設定檔]  按鈕。
-3. 在 [關於]  索引標籤中，您可以變更名稱、電子郵件、國家/地區、設定檔圖片和連絡人喜好設定。 在 [喜好設定]  索引標籤中，您可以選取慣用的語言、日期和時間模式、時區以及使用者介面主題。
-4. 完成變更時，請按一下 [儲存]  。
-5. 按一下瀏覽器的 [返回]  按鈕，返回「權益」頁面。
+2. 按一下 [編輯設定檔] 按鈕。
+3. 在 [關於] 索引標籤中，您可以變更名稱、電子郵件、國家/地區、設定檔圖片和連絡人喜好設定。 在 [喜好設定] 索引標籤中，您可以選取慣用的語言、日期和時間模式、時區以及使用者介面主題。
+4. 完成變更時，請按一下 [儲存]。
+5. 按一下瀏覽器的 [返回] 按鈕，返回「權益」頁面。
 
 ### <a name="setting-communications-preferences"></a>設定通訊喜好設定
 如果您想要接收關於您的訂閱和權益的定期更新 (包括 Visual Studio 訂閱電子報)，請[更新您的喜好設定](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)，方法是選取您 Visual Studio 設定檔中的 [Visual Studio 訂閱] 核取方塊。 您隨時可以變更這些設定和取消訂閱。 
@@ -88,18 +88,18 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 若要新增其他帳戶：
 
 1. 使用您的 Microsoft 帳戶 (MSA) 登入[訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
-2. 按一下 [訂閱]  索引標籤。
-3. 在 [相關連結]  中，選擇 [新增其他帳戶]  。
-4. 輸入您的公司帳戶/學校帳戶電子郵件地址，然後按一下 [新增]  。
+2. 按一下 [訂閱] 索引標籤。
+3. 在 [相關連結] 中，選擇 [新增其他帳戶]。
+4. 輸入您的公司帳戶/學校帳戶電子郵件地址，然後按一下 [新增]。
 
-新增其他帳戶之後，您可以按一下 [訂閱]  索引標籤，然後選擇 [相關連結]  區段中的適當選項，隨時更新帳戶或將其移除。
+新增其他帳戶之後，您可以按一下 [訂閱] 索引標籤，然後選擇 [相關連結] 區段中的適當選項，隨時更新帳戶或將其移除。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>問：如果我未更新訂閱，Microsoft 會保留我的資料多久？
 答：根據購買管道，Microsoft 維護客戶資料的時間長度不一。
 
-| 通道                                                | 持續時間 (天數) |
+| 頻道                                                | 持續時間 (天數) |
 |--------------------------------------------------------|-----------------|
 |    零售 (例如透過 Microsoft Store)               |    360          |
 |    大量授權服務中心 (VLSC)              |    180          |

@@ -9,19 +9,19 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ab16750694e1bc8bb74afa7d22d899dc492d7c7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54e4713abef096d5a23cf1ebf74a9d90db0d6409
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671794"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295739"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步驟 4：使用 TableLayoutPanel 控制項來配置您的表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在此步驟中，您會將 `TableLayoutPanel` 控制項新增至表單。 TableLayoutPanel 有助於正確對齊稍後加入至表單中的控制項。
 
- ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 2](http://go.microsoft.com/fwlink/?LinkId=205211)或[教學課程1：在C#影片2中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205200)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 2](https://go.microsoft.com/fwlink/?LinkId=205211)或[教學課程1：在C#影片2中建立圖片檢視器](https://go.microsoft.com/fwlink/?LinkId=205200)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>若要使用 TableLayoutPanel 控制項來配置您的表單
 
@@ -69,13 +69,13 @@ ms.locfileid: "72671794"
 
      ![TableLayoutPanel](../ide/media/express-tablepanel.png "Express_TablePanel")工作TableLayoutPanel 工作
 
-10. 選擇 [編輯資料列與資料行] 工作以顯示 [資料行和資料列樣式] 視窗。 選擇 [資料行 1]，並將其大小設定為 15% (藉由確定已選取 [百分比] 按鈕，並在 [百分比] 方塊中輸入 `15`) （這是您將在稍後的教學課程中使用的 `NumericUpDown` 控制項）。選擇 [ **Column2** ]，並將它設定為 [85%]。 還不要選擇 [確定] 按鈕，因為視窗將會關閉 (但如果這樣做，您還是可以使用工作清單來重新開啟視窗)。
+10. 選擇 [編輯資料列與資料行] 工作以顯示 [資料行和資料列樣式] 視窗。 選擇 [資料行 1]，並將其大小設定為 15% (藉由確定已選取 [百分比] 按鈕，並在 [百分比]`15`**方塊中輸入**) （這是您將在稍後的教學課程中使用的 `NumericUpDown` 控制項）。選擇 [ **Column2** ]，並將它設定為 [85%]。 還不要選擇 [確定] 按鈕，因為視窗將會關閉 (但如果這樣做，您還是可以使用工作清單來重新開啟視窗)。
 
      ![TableLayoutPanel 資料行和資料列樣式](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup")TableLayoutPanel 資料行和資料列樣式
 
 11. 從視窗頂端的 [顯示] 下拉式清單中，選擇 [資料列]。 將 [資料列 1] 設定為 90%，並將 [資料列 2] 設定為 10%。
 
-12. 選擇 [ **確定** ] 按鈕。 TableLayoutPanel 現在應該具有大型的上方資料列、小型的下方資料列和大型的右邊資料行。 您可以在表單中選取 tableLayoutPanel1 並拖曳資料列和資料行的框線，來調整 TableLayoutPanel 中的資料列和資料行大小。
+12. 選擇 [確定] 按鈕。 TableLayoutPanel 現在應該具有大型的上方資料列、小型的下方資料列和大型的右邊資料行。 您可以在表單中選取 tableLayoutPanel1 並拖曳資料列和資料行的框線，來調整 TableLayoutPanel 中的資料列和資料行大小。
 
      已重設![大小之 TableLayoutPanel 的 Form1](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel")已調整大小之 TableLayoutPanel 的 Form1
 

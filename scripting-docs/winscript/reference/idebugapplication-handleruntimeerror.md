@@ -68,9 +68,9 @@ HRESULT HandleRuntimeError(
 > [!NOTE]
 > 雖然在執行時間錯誤中，執行緒可能會呼叫語言引擎來執行這類工作，例如列舉堆疊框架或評估運算式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [IActiveScriptErrorDebug 介面](../../winscript/reference/iactivescripterrordebug-interface.md)   
- [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)    
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
  [BREAKRESUMEACTION 列舉](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION 列舉](../../winscript/reference/errorresumeaction-enumeration.md)

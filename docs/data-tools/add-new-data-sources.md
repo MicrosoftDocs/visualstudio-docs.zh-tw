@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99e9d9d466ae32d86b64b17738c96c245bda8f96
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 555d32eb295e944060d2efe0b843e9d157b7c675
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648891"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587052"
 ---
 # <a name="add-new-data-sources"></a>新增新資料來源
 
@@ -46,7 +46,7 @@ ms.locfileid: "72648891"
 建立資料來源之後，它會出現在 [**資料來源**] 工具視窗中。
 
 > [!TIP]
-> 若要開啟 **資料來源** 視窗，請確定您的專案已開啟，然後按**Shift** +**Alt** +**D** ，或選擇  **View**   > **其他 Windows**  > **資料來源**。
+> 若要開啟 **資料來源** 視窗，請確定您的專案已開啟，然後按**Shift**+**Alt**+**D** ，或選擇  **View**  > **其他 Windows** > **資料來源**。
 
 您可以從 [**資料來源**] 視窗，將資料來源拖曳至表單設計介面或控制項。 這會產生可顯示資料存放區資料的未定案程式碼。
 
@@ -60,13 +60,13 @@ ms.locfileid: "72648891"
 
 ### <a name="dataset"></a>資料集
 
-若要將資料集建立為數據源，請選取 [**專案**]  >  [**加入新的資料來源**]，以執行 [**資料來源設定]** 。 選擇 [**資料庫**資料來源類型]，然後遵循提示來指定新的或現有的資料庫連接，或資料庫檔案。
+若要將資料集建立為數據源，請選取 [**專案**] > [**加入新的資料來源**]，以執行 [**資料來源設定]** 。 選擇 [**資料庫**資料來源類型]，然後遵循提示來指定新的或現有的資料庫連接，或資料庫檔案。
 
 ### <a name="entity-classes"></a>實體類別
 
 若要建立 Entity Framework 模型做為資料來源：
 
-1. 執行**實體資料模型 Wizard**來建立實體類別。 選取 [**專案**]  >  [**加入新專案**]  > **ADO.NET 實體資料模型**。
+1. 執行**實體資料模型 Wizard**來建立實體類別。 選取 [**專案**] > [**加入新專案**] > **ADO.NET 實體資料模型**。
 
    ![新 Entity Framework 模型專案專案](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 

@@ -45,6 +45,6 @@ HRESULT PrepareProfilerStop();
 ## <a name="remarks"></a>備註  
  呼叫 `IActiveScriptProfilerControl2::PrepareProfilerStop` 可確保呼叫堆疊中函式的事件會被傳送。 在您于目前索引標籤上的任何腳本引擎上停止分析之前，必須先呼叫這個方法。可以針對任何腳本引擎呼叫方法。  
   
-## <a name="see-also"></a>請參閱  
- [IActiveScriptProfilerControl2：： CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)    
+## <a name="see-also"></a>另請參閱  
+ [IActiveScriptProfilerControl2：： CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
  [IActiveScriptProfilerControl2 介面](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

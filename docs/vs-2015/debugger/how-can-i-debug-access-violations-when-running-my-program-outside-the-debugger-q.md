@@ -20,12 +20,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cfdf356d21558f2024cb83e00bdfc930284b1d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce5b21f92eecf2e8929c142bc1ee32e20d386335
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68164115"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299255"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>在偵錯工具外執行我的程式時，如何偵錯存取違規？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ ms.locfileid: "68164115"
 問題說明  
  我的程式在 Visual Studio 環境裡執行正常，但是當我以 Windows 作業系統獨立執行它時，它會產生存取違規。 我該如何偵錯這個問題？  
   
-## <a name="solution"></a>方案  
- 設定 [ 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)選項並獨立執行您的程式，直到發生存取違規為止。 然後，在 [存取違規]  對話方塊中，您可以按一下 [取消]  來啟動偵錯工具。  
+## <a name="solution"></a>解決方案  
+ 設定 [ 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)選項並獨立執行您的程式，直到發生存取違規為止。 然後，在 [存取違規] 對話方塊中，您可以按一下 [取消] 來啟動偵錯工具。  
   
- 請參閱知識庫 (Knowledge Base) 文件 Q133174「How to Locate Where a General Protection (GP) Fault Occurs」。 您可以在 MSDN Library CD 上或藉由搜尋找到知識庫文件[ http://support.microsoft.com/ ](http://support.microsoft.com/)。  
+ 請參閱知識庫 (Knowledge Base) 文件 Q133174「How to Locate Where a General Protection (GP) Fault Occurs」。 您可以在 MSDN Library CD 上找到知識庫文章，或搜尋[http://support.microsoft.com/](https://support.microsoft.com/)。  
   
 ## <a name="see-also"></a>另請參閱  
  [對機器碼進行偵錯的常見問題集](../debugger/debugging-native-code-faqs.md)   

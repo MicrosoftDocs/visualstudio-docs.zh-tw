@@ -6,14 +6,15 @@ ms.assetid: 20c35949-1f29-4282-ac75-4e6c237d71bc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 036b13a7fea5d64e23e2b7d5ccbd8a7b17f91176
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3b6d01a95b7e0872d6bb36c6d9f3917bc6a05b3b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777046"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779814"
 ---
 # <a name="args"></a>Args
 VSPerfCmd.exe **Args** 選項指定要傳遞至 **Launch** 子命令的目標應用程式的引數清單。
@@ -30,7 +31,7 @@ VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
  `Arguments` **Launch** 命令的目標應用程式引數清單。
 
 ## <a name="required-options"></a>必要選項
- **Launch:**`AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
+ **啟動：** `AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
 
 ## <a name="example"></a>範例
  下列範例使用 **Args** 選項將引數傳遞至 TestApp.exe。
@@ -40,7 +41,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Args:"123, 'Hello World'"
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)

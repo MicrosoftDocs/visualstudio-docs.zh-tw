@@ -4,19 +4,19 @@ ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ca48b0510c36bd0d5528cda5d4514f12763ee243
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632862"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594860"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>歡迎使用 Visual Studio IDE | C\#
 
@@ -46,7 +46,7 @@ ms.locfileid: "72632862"
 > [了解如何使用程式碼編輯器](tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [了解專案與解決方案](tutorial-projects-solutions.md)
+> [了解專案與解決方案](../tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>請參閱
 

@@ -2,17 +2,17 @@
 title: MSBuild 15 的現有應用程式更新 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 8d4e7d84768307964b495e8c5e97e7731b0622a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306246"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597135"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15 的現有應用程式更新
 
@@ -38,7 +38,7 @@ ms.locfileid: "72306246"
 
 #### <a name="use-nuget-packages-preferred"></a>使用 NuGet 套件 (慣用)
 
-這些指示假設您使用 [PackageReference 樣式的 NuGet 參考](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files)。
+這些指示假設您使用 [PackageReference 樣式的 NuGet 參考](/nuget/consume-packages/package-references-in-project-files)。
 
 變更您的專案檔案，以從其 NuGet 套件參考 MSBuild 組件。 指定 `ExcludeAssets=runtime` 以告訴 NuGet，只有在建置時需要組件，且不應複製到輸出目錄。
 

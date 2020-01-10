@@ -3,17 +3,17 @@ title: 使用紋理和影像
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d59b7c2c52cc0fe230a6e9c5c7c89db56d065aff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633708"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589860"
 ---
 # <a name="work-with-textures-and-images"></a>使用紋理和影像
 

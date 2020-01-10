@@ -6,23 +6,23 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14b44a16f6652fe8d94669f99107ebe59b790a0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639175"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585947"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>逐步解說：自訂實體類別的插入、更新和刪除行為
 
 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供視覺化設計介面，可用來建立和編輯以資料庫中的物件為基礎的 LINQ to SQL 類別（實體類別）。 藉由使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，您可以使用 LINQ 技術來存取 SQL 資料庫。 如需詳細資訊，請參閱 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)。
 
-根據預設，執行更新的邏輯是由 LINQ to SQL 執行時間提供。 執行時間會根據資料表的架構（資料行定義和主鍵資訊），建立預設的 `Insert`、`Update` 和 `Delete` 語句。 如果您不希望使用預設行為，則可以設定更新行為，並指定用特定的預存程序來執行處理資料庫資料時所需的插入、更新和刪除作業。 未產生預設行為時 (例如，實體類別是對應至檢視時)，同樣可以這樣做。 此外，在資料庫需要透過預存程序進行資料表存取時，也可以覆寫預設更新行為。 如需詳細資訊，請參閱[使用預存程式自訂作業](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)。
+根據預設，執行更新的邏輯是由 LINQ to SQL 執行時間提供。 執行時間會根據資料表的架構（資料行定義和主鍵資訊），建立預設的 `Insert`、`Update`和 `Delete` 語句。 如果您不希望使用預設行為，則可以設定更新行為，並指定用特定的預存程序來執行處理資料庫資料時所需的插入、更新和刪除作業。 未產生預設行為時 (例如，實體類別是對應至檢視時)，同樣可以這樣做。 此外，在資料庫需要透過預存程序進行資料表存取時，也可以覆寫預設更新行為。 如需詳細資訊，請參閱[使用預存程式自訂作業](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)。
 
 > [!NOTE]
 > 此逐步解說需要使用 Northwind 資料庫的 **InsertCustomer**、**UpdateCustomer** 和 **DeleteCustomer** 預存程序。
@@ -45,7 +45,7 @@ ms.locfileid: "72639175"
 
 - 將 `Customer` 類別設定為使用預存程式來執行插入、更新和刪除。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -71,7 +71,7 @@ ms.locfileid: "72639175"
 
 ### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>若要建立包含 LINQ to SQL 類別的新 Windows Forms 應用程式專案
 
-1. **在 Visual Studio 的 [檔案**] 功能表上，選取 [**新增** > **專案**]。
+1. 在 Visual Studio 中，於 [檔案] 功能表上選取 [新增] > [專案]。
 
 2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
@@ -201,7 +201,7 @@ ms.locfileid: "72639175"
 
 8. 選取 [自訂] 清單中的 [InsertCustomers] 方法。
 
-9. 按一下 [套用] 儲存所選取類別和行為的設定。
+9. 按一下 [套用] 儲存所選類別和行為的設定。
 
     > [!NOTE]
     > 完成每一項變更後按一下 [套用]，即可繼續設定每個類別/行為組合的行為。 如果您**在按一下 [** 套用] 之前變更了類別或行為，則會出現警告對話方塊，提供套用任何變更的機會。
@@ -219,7 +219,7 @@ ms.locfileid: "72639175"
     > [!NOTE]
     > 根據預設，方法引數會對應至同名的類別屬性。 如果屬性名稱變更，使得資料表與實體類別之間不再對應，則您可能需要選取當 **O/R 設計工具**無法判斷正確的對應時，所要對應的對等類別屬性。 此外，如果方法引數沒有可對應的有效類別屬性，可以將 [類別屬性] 值設定為 [(無)]。
 
-14. 按一下 [套用] 儲存所選取類別和行為的設定。
+14. 按一下 [套用] 儲存所選類別和行為的設定。
 
 15. 選取 [行為] 清單中的 [刪除]。
 
@@ -229,7 +229,7 @@ ms.locfileid: "72639175"
 
 18. 將 [Original_CustomerID] 方法引數對應至 [CustomerID (Original)] 類別屬性。
 
-19. 按一下 [確定]。
+19. 按一下 [ **確定**]。
 
 > [!NOTE]
 > 雖然這不是這個特定逐步解說的問題，但值得注意的是，LINQ to SQL 會自動處理在插入期間的身分識別（自動遞增）、rowguidcol （資料庫產生的 GUID）和時間戳記資料行的資料庫產生值。update. 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動將 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 設定為 `true`，並 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 為下列其中一項：[自動同步. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)，[自動同步. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)或[自動同步. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。

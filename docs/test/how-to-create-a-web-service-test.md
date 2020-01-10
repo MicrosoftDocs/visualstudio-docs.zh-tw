@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Web services [Visual Studio ALM], creating
 - service tests, Web
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bbc7423c3f08665109c17d25d43ae6d9d652100
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7a6e42d6d92a74a0fc8be96c966b9146b7888b9e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653602"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589093"
 ---
 # <a name="how-to-create-a-web-service-test"></a>如何：建立 Web 服務測試
 
@@ -23,7 +23,7 @@ ms.locfileid: "72653602"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-下列程序使用 Commerce Starter Kit 內所包含的 Web 服務。 您可以從 [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469) 下載它。
+下列程序使用 Commerce Starter Kit 內所包含的 Web 服務。 您可以從 [ASP.NET Commerce Starter Kit](https://sourceforge.net/projects/ppcsk/) 下載它。
 
 **Requirements**
 

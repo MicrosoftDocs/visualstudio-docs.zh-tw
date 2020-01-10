@@ -2,19 +2,19 @@
 title: 預覽程式碼變更
 ms.date: 12/16/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: 485a127faa8228ce5ef17a6208e9cc4e7e50e1b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f45b186153b4cc046d35fd941f6a80e108476fc0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666789"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585765"
 ---
 # <a name="preview-changes-window"></a>[預覽變更] 視窗
 

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 385d58834aa96a3ad9e2002020dd1ce4fda3c87f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1132a7a0363e2d508d6eff1026192aad3407fca4
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000020"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189248"
 ---
 # <a name="work-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
@@ -41,7 +41,7 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 | [互動式視窗](interactive-repl-for-r-in-visual-studio.md) | 針對 R 提供完整的 REPL 體驗，並能夠輕鬆地在互動式視窗中執行來源檔案中的程式碼。 | N/A |
 | [視覺化資料](visualizing-data-with-r-in-visual-studio.md) | 繪圖是 R 體驗不可或缺的一部分，而 RTVS 支援多種獨立的繪圖視窗，每個視窗都擁有自己的記錄，並可以在視窗之間移動繪圖。 繪圖可以儲存為點陣圖或 PDF 檔案，或是以點陣圖或中繼檔的形式複製到剪貼簿。  | N/A |
 | [變數總管](variable-explorer.md) | 以全域或套件特定的範圍檢視變數，並能夠檢視可排序的資料表，以及匯出為 CSV。 | N/A |
-| [功能完整的偵錯](debugging-r-in-visual-studio.md) | 包含與互動式視窗的整合。 | [Visual Studio 偵錯](/visualstudio/debugger/debugger-feature-tour) |
+| [功能完整的偵錯](debugging-r-in-visual-studio.md) | 包含與互動式視窗的整合。 | [Visual Studio 偵錯](../debugger/debugger-feature-tour.md) |
 
 另請參閱[常見問題集](faq.md)。
 
@@ -51,8 +51,8 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 
 ## <a name="send-us-your-feedback"></a>將您的意見反應傳送給我們！
 
-1. **GitHub 問題**：連絡 RTVS 小組的最佳方式，就是[在 GitHub 上提問](https://github.com/Microsoft/RTVS/issues)，或是使用 [R 工具]  >  [意見反應] 功能表。
+1. **GitHub 問題**：連絡 RTVS 小組的最佳方式，就是[在 GitHub 上提問](https://github.com/Microsoft/RTVS/issues)，或是使用 [R 工具]   >  [意見反應]  功能表。
 
-1. **傳送笑臉/苦臉**：[R 工具]  >  [意見反應] 功能表是快速傳送意見反應，以及附加 RTVS 記錄檔，協助診斷問題最快的方式。 (若您想要個別傳送記錄檔，其位於 *%temp%/RTVSlogs.zip* 之中)。若透過 [說明]  >  [意見反應]  >  [設定] 功能表命令或在是安裝期間選擇退出 Visual Studio 遙測，將會停用記錄。
+1. **傳送笑臉/苦臉**：[R 工具]   >  [意見反應]  功能表是快速傳送意見反應，以及附加 RTVS 記錄檔，協助診斷問題最快的方式。 (若您想要個別傳送記錄檔，其位於 *%temp%/RTVSlogs.zip* 之中)。若透過 [說明]   >  [意見反應]   >  [設定]  功能表命令或在是安裝期間選擇退出 Visual Studio 遙測，將會停用記錄。
 
 1. **電子郵件**：您可以透過 *rtvsuserfeedback (at) microsoft.com*，將意見反應直接傳送給小組。

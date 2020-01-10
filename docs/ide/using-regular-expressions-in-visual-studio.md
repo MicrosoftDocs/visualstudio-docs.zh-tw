@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fd8af330d0cdab84d944dc453dbfe66208608f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647326"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568616"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 
@@ -33,7 +33,7 @@ Visual Studio 會使用 [.NET 規則運算式](/dotnet/standard/base-types/regul
 
 |用途|運算式|範例|
 |-------------|----------------|-------------|
-|比對任何單一字元 (分行符號除外)。 如需詳細資訊，請參閱[任何字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-)。|執行個體時提供 SQL Server 登入。|`a.o` 比對「關於」中的「aro」和「關於」中的「abo」，但不符合「跨」中的「acro」|
+|比對任何單一字元 (分行符號除外)。 如需詳細資訊，請參閱[任何字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-)。|。|`a.o` 比對「關於」中的「aro」和「關於」中的「abo」，但不符合「跨」中的「acro」|
 |比對先前運算式中零個或多個項目 (比對的字元越多越好)。 如需詳細資訊，請參閱[比對零或多次](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-)。|*|`a*r` 會比對 "rack" 中的 "r"、"ark" 中的 "ar"，以及 "aardvark" 中的 "aar"|
 |比對任何字元零或多次。|.*|`c.*e` 會比對 "racket" 中的 "cke"、"comment" 中的 "comme"，以及 "code" 中的 "code"|
 |比對先前運算式中一個或多個項目 (比對的字元越多越好)。 如需詳細資訊，請參閱[比對一或多次](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-)。|+|`e+d` 符合「送紙器」中的 "eed" 和「淡出」中的 "ed"|
@@ -58,7 +58,7 @@ Visual Studio 會使用 [.NET 規則運算式](/dotnet/standard/base-types/regul
 |比對任何[空白字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` 符合「公用介面」一詞|
 |比對任何[十進位數字字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d` 符合 "wd40" 中的 "4" 和 "0"|
 
-@No__t_0，結合一些運算子和結構以符合十六進位數位的範例正則運算式。 這個運算式會比對 "對 0xc67f"，但不符合 "0xc67g"。
+`\b0[xX]([0-9a-fA-F]+\)\b`，結合一些運算子和結構以符合十六進位數位的範例正則運算式。 這個運算式會比對 "對 0xc67f"，但不符合 "0xc67g"。
 
 > [!TIP]
 > 在 Windows 作業系統中，大部分的程式行都是以 "\r\n" 結尾 (歸位字元後面接著新行)。 這些字元並不可見，但會出現在編輯器中，並傳遞至 .NET 正則運算式服務。

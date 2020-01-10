@@ -11,17 +11,17 @@ helpviewer_keywords:
 - XmlPeek task [MSBuild]
 - MSBuild, XmlPeek task
 ms.assetid: 19196031-a3bc-41b5-9c4a-f2572630e179
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19b8273617955092519bf16f0aa5b3fbea86218a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e10cf26ad23e6fe4c881f68ad87bc80d04f2cf8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777817"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590965"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 工作
 從 XML 檔案傳回 XPath 查詢所指定的值。
@@ -29,7 +29,7 @@ ms.locfileid: "62777817"
 ## <a name="parameters"></a>參數
  下表說明 `XmlPeek` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`Namespaces`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢前置詞的命名空間。|
 |`Query`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢。|
@@ -40,6 +40,6 @@ ms.locfileid: "62777817"
 ## <a name="remarks"></a>備註
  除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

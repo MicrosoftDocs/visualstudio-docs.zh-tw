@@ -10,17 +10,17 @@ helpviewer_keywords:
 - File.OpenProject command
 - Open Project command
 ms.assetid: baa85f86-041b-49f4-9ced-0c397dc180e1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c84a2dcd99ef7cff9b5f37a1c69f235582a7973
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666420"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565808"
 ---
 # <a name="open-project-command"></a>開啟專案命令
 
@@ -32,7 +32,7 @@ ms.locfileid: "72666420"
 File.OpenProject filename
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 
 `filename`
 

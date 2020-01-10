@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: da86a6cf2e561fdc7e642a76b84b4e604bec12d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651235"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300253"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 模型圖表可幫助您了解、釐清和溝通程式碼和軟體必須支援之使用者需求的想法。 例如，您可以使用整合模組化語言 (UML) 之使用案例圖、活動圖、類別圖和循序圖描述和溝通使用者需求。 若要描述和溝通系統的功能，您可以使用 UML 元件圖、類別圖、活動圖和循序圖。
 
- 請參閱[Channel 9 影片：透過模型化改善架構](http://go.microsoft.com/fwlink/?LinkID=252078)。
+ 請參閱[Channel 9 影片：透過模型化改善架構](https://go.microsoft.com/fwlink/?LinkID=252078)。
 
  您可在這個版本中建立下列 UML 圖表：
 
@@ -68,7 +68,7 @@ ms.locfileid: "72651235"
 |**圖表**|**顯示**|
 |-----------------|---------------|
 |[分層圖：方針](../modeling/layer-diagrams-guidelines.md)<br /><br /> [分層圖：參考](../modeling/layer-diagrams-reference.md)|系統的高階架構|
-|Code Map<br /><br /> [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)|現有程式碼中的相依性和其他關聯性|
+|程式碼對應<br /><br /> [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)|現有程式碼中的相依性和其他關聯性|
 |程式碼產生的類別圖<br /><br /> [使用類別圖表 (類別設計工具)](../ide/working-with-class-diagrams-class-designer.md)|.NET 程式碼中的類型及其關聯性|
 
 ## <a name="common-tasks"></a>一般工作
@@ -98,4 +98,4 @@ ms.locfileid: "72651235"
 
 |**分類**|**Links**|
 |------------------|---------------|
-|**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://go.microsoft.com/fwlink/?LinkId=184721)|

@@ -4,17 +4,17 @@ ms.date: 08/03/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9791e2dbb6d4a82a49539216eda53d217140bd52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 06362bcf00bc35fdef701e26fe03694b038e88b1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649330"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587455"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>在 Visual Studio 中安裝 FxCop 分析器
 
@@ -34,7 +34,7 @@ Microsoft 建立了一組稱為[CodeAnalysis](https://www.nuget.org/packages/Mic
 
 2. 選取 [安裝]。
 
-   Visual Studio 會安裝最新版本的 CodeAnalyzers. FxCopAnalyzers 套件。 元件會出現在**方案總管**的 [**參考**]  > **分析器**底下。
+   Visual Studio 會安裝最新版本的 CodeAnalyzers. FxCopAnalyzers 套件。 元件會出現在**方案總管**的 [**參考**] > **分析器**底下。
 
    ![方案總管中的分析器節點](media/solution-explorer-analyzers-node.png)
 
@@ -72,7 +72,7 @@ Microsoft 建立了一組稱為[CodeAnalysis](https://www.nuget.org/packages/Mic
 
 | Visual Studio 版本 | FxCop 分析器套件版本 |
 | - | - |
-| Visual Studio 2019 （所有版本）<br />Visual Studio 2017 15.8 版和更新版本 | [新版](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
+| Visual Studio 2019 （所有版本）<br />Visual Studio 2017 15.8 版和更新版本 | [最新](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017 版本15.5 至15。7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
 | Visual Studio 2017 版本15.3 至15。4 | [2.3.0-Beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
 | Visual Studio 2017 版本15.0 至15。2 | [2.0.0-Beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
@@ -86,7 +86,7 @@ Microsoft 建立了一組稱為[CodeAnalysis](https://www.nuget.org/packages/Mic
 
 在 Visual Studio 2017 15.5 版和更新版本上，您可以安裝[Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)延伸模組，其中包含 managed 專案的所有 FxCop 分析器。
 
-1. 在 Visual Studio 中，選取 [**工具**] [>] [**擴充功能和更新**]。
+1. 在 Visual Studio 中，選取 [**工具**] > [**擴充功能和更新**]。
 
    [擴充功能和更新] 對話方塊隨即開啟。
 
@@ -105,7 +105,7 @@ Microsoft 建立了一組稱為[CodeAnalysis](https://www.nuget.org/packages/Mic
 
 [Microsoft Code Analysis 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019)延伸模組包含 managed 專案的所有 FxCop 分析器。 若要安裝此延伸模組：
 
-1. 在 Visual Studio 中，選取 [**擴充**功能 >] [**管理延伸**模組]。
+1. 在 Visual Studio 中，選取 **擴充**功能 > **管理延伸**模組。
 
    [**管理延伸**模組] 對話方塊隨即開啟。
 
@@ -120,7 +120,7 @@ Microsoft 建立了一組稱為[CodeAnalysis](https://www.nuget.org/packages/Mic
 
 ::: moniker-end
 
-4. 選取 [**下載**]。
+4. 選取 [下載]。
 
    已下載延伸模組。
 
@@ -142,13 +142,13 @@ Microsoft 建立了一組稱為[CodeAnalysis](https://www.nuget.org/packages/Mic
 
 ::: moniker range="vs-2017"
 
-如果您想要檢查是否已安裝延伸模組，請選取 [**工具**] [ > ] [**擴充功能和更新**]。 在 [**擴充功能和更新**] 對話方塊中，選取左側的 [**已安裝**] 類別，然後依名稱搜尋延伸模組。
+如果您想要檢查是否已安裝延伸模組，請選取 [**工具**] > [**擴充功能和更新**]。 在 [**擴充功能和更新**] 對話方塊中，選取左側的 [**已安裝**] 類別，然後依名稱搜尋延伸模組。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-如果您想要檢查是否已安裝延伸模組，請選取 [**擴充**功能  > ] [**管理延伸**模組]。 在 [**管理擴充**功能] 對話方塊中，選取左側的 [**已安裝**] 類別，然後依名稱搜尋延伸模組。
+如果您想要檢查是否已安裝延伸模組，請選取 [**延伸**模組] > [**管理延伸**模組]。 在 [**管理擴充**功能] 對話方塊中，選取左側的 [**已安裝**] 類別，然後依名稱搜尋延伸模組。
 
 ::: moniker-end
 

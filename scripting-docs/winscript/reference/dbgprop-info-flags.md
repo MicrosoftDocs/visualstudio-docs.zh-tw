@@ -65,6 +65,6 @@ enum {
  DBGPROP_INFO_AUTOEXPAND  
  指定值欄位應包含此類型物件的自動擴充值（如果有的話）。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [DebugPropertyInfo 結構](../../winscript/reference/debugpropertyinfo-structure.md)   
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)

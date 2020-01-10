@@ -10,24 +10,25 @@ ms.assetid: ebf5d9b3-a1ac-4688-8f0f-39a85f4dd15f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cd10bd9eb834a3ca41fce38baf11e36b13fe0734
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 36350b59a3d70f8553fddc5f58bf5c79716fa3aa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936418"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777656"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021：高比率的 Gen 1 記憶體回收
 
 |||
 |-|-|
-|規則 ID|DA0021|
-|分類|.NET Framework 使用方式|
+|規則識別碼|DA0021|
+|Category|.NET Framework 使用方式|
 |分析方法|全部|
 |訊息|發生相當高比率的 Gen 1 記憶體回收。 如果您設計讓大部分程式的資料結構配置並持續一段很長的時間，這通常不是問題。 不過，如果這不是預期的行為，您的應用程式可能正鎖定物件。 如果您不確定，可以收集 .NET 記憶體配置資料和物件存留期資訊，了解應用程式所使用之記憶體配置的模式。|
-|規則型別|資訊|
+|規則類型|資訊|
 
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。
 
@@ -39,11 +40,11 @@ ms.locfileid: "62936418"
 
  第 0 代中的物件通常會以頻繁且非常有效率的方式回收。 第 1 代中的物件則不會以太頻繁也不會太有效率的方式回收。 最後，在第 2 代中長時間執行的物件則不會太常回收。 第 2 代回收，是執行完整的記憶體回收，也是最耗費資源的作業。
 
- 發生太高比例的第 1 代記憶體回收時，就會引發此規則。 如果有太多存留期相當短的物件在第 0 代回收之後存留下來，但接著就能在第 1 代回收中回收，則記憶體管理的成本可能會變得過高。 如需詳細資訊，請參閱 MSDN 網站上 Rico Mariani's Performance Tidbits 的[中間存留期危機 (英文)](http://go.microsoft.com/fwlink/?LinkId=177835) 文章。
+ 發生太高比例的第 1 代記憶體回收時，就會引發此規則。 如果有太多存留期相當短的物件在第 0 代回收之後存留下來，但接著就能在第 1 代回收中回收，則記憶體管理的成本可能會變得過高。 如需詳細資訊，請參閱 MSDN 網站上 Rico Mariani's Performance Tidbits 的[中間存留期危機 (英文)](https://blogs.msdn.microsoft.com/ricom/2003/12/04/mid-life-crisis/) 文章。
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
  按兩下 [錯誤清單] 視窗中的訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。 尋找 **.NET CLR Memory\\# of Gen 0 Collections** 和 **.NET CLR Memory\\# of Gen 1 Collections** 欄。 判斷是否有特定的程式執行階段，當中的記憶體回收較頻繁發生。 比較這些值與 **% Time in GC** 欄，查看 Managed 記憶體配置的模式是否會造成過多的記憶體管理負擔。
 
  若要了解應用程式之 Managed 記憶體使用方式的模式，請執行 .NET 記憶體配置設定檔再次進行分析，並要求測量「物件存留期」。
 
- 如需如何改善記憶體回收效能的詳細資訊，請參閱 Microsoft 網站上的[記憶體回收行程的基礎概念和效能提示 (英文)](http://go.microsoft.com/fwlink/?LinkId=148226)。 如需有關自動記憶體回收之額外負荷的詳細資訊，請參閱[大型物件堆積的面目 (英文)](http://go.microsoft.com/fwlink/?LinkId=177836)。
+ 如需如何改善記憶體回收效能的詳細資訊，請參閱 Microsoft 網站上的[記憶體回收行程的基礎概念和效能提示 (英文)](/previous-versions/dotnet/articles/ms973837(v=msdn.10))。 如需有關自動記憶體回收之額外負荷的詳細資訊，請參閱[大型物件堆積的面目 (英文)](https://msdn.microsoft.com/magazine/cc534993.aspx)。

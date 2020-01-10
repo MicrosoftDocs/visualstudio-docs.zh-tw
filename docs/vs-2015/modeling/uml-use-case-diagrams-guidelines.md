@@ -15,19 +15,19 @@ caps.latest.revision: 38
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2d3434236908771cbc2149e766b841e7bcf4cb4e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7c9ccd5285f9a2744704c0ee13094a1dac31c53b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667837"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302843"
 ---
-# <a name="uml-use-case-diagrams-guidelines"></a>UML 使用案例圖表：方針
+# <a name="uml-use-case-diagrams-guidelines"></a>UML 使用案例圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 中，您可以繪製*使用案例圖*來總結使用您的應用程式或系統的人員，以及他們可以使用它來做什麼。 若要建立 UML 使用案例圖，請在 [**架構**] 功能表上，按一下 [**新增 UML 或分層圖**]。
 
- 如需示範影片，請參閱[將功能組織成使用案例](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)。
+ 如需示範影片，請參閱[將功能組織成使用案例](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases)。
 
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -166,11 +166,11 @@ ms.locfileid: "72667837"
 
  您可以變更這些多重性。
 
- 例如:
+ 例如：
 
  ![顯示多對多多重性的使用案例](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
 
-- 若要指出相同類別的幾個動作專案可以納入使用案例的單一出現位置，請將關聯的動作專案結尾處的多重性設定為**1.. \*** 。
+- 若要指出相同類別的幾個動作專案可以納入使用案例的單一出現位置，請將關聯的動作專案結尾處的多重性設定為**1..\*** 。
 
    在此圖中，一家或多家餐廳可以參與提供相同餐點訂購服務的工作。
 
@@ -190,7 +190,7 @@ ms.locfileid: "72667837"
 
    - **1**表示此角色只有一個實例參與每個連結。
 
-   - **1. \*** 以指出此角色的一個或多個實例參與每個連結。
+   - **1.\*** 以指出此角色的一個或多個實例參與每個連結。
 
    - **0 ..1** ，表示參與是選擇性的。
 
@@ -200,7 +200,7 @@ ms.locfileid: "72667837"
 > 許多小組並未在使用案例圖上放置多重性資訊，而是讓多重性保留預設值 1。 他們會在使用案例的個別描述中提供此資訊。 在此情況下，將會隱藏使用案例圖中的所有多重性。
 
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>在多個圖表上使用執行者或使用案例
- 您可以在數個圖表上顯示相同的執行者和使用案例。 例如:
+ 您可以在數個圖表上顯示相同的執行者和使用案例。 例如：
 
 - 您可以在不同的圖表中描述與某個執行者相關的不同使用案例。
 
@@ -270,7 +270,7 @@ ms.locfileid: "72667837"
 
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>連結至共用文件、OneNote 項目或網頁
 
-1. 取得此共用項目的 URL。 例如，這可以是開頭為「\\ \\」的網路檔案路徑，或是開頭為 ' HTTP://' 的網頁或 Sharepoint URL，或是從 ' onenote： ' 開始的 OneNote 區段、頁面或段落的連結。
+1. 取得此共用項目的 URL。 例如，這可以是開頭為「\\\\」的網路檔案路徑，或是開頭為 ' HTTP://' 的網頁或 Sharepoint URL，或是從 ' onenote： ' 開始的 OneNote 區段、頁面或段落的連結。
 
 2. 在 [工具箱] 中 **，按一下 [成品]，然後**按一下 [使用案例] 圖表。
 
@@ -280,7 +280,7 @@ ms.locfileid: "72667837"
 > 按兩下成品，即可開啟成品連結的圖表或文件。
 
 ### <a name="linking-use-cases-to-work-items"></a>將使用案例連結至工作項目
- 如果您的專案使用 [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)]，而且您有 [!INCLUDE[esprtfc](../includes/esprtfc-md.md)]，則可以將每個使用案例連結至 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中的工作專案。 若要瞭解如何建立這些連結，請參閱[連結模型元素和工作專案](../modeling/link-model-elements-and-work-items.md)。
+ 如果您的專案使用 [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)]，而且您有 [!INCLUDE[esprtfc](../includes/esprtfc-md.md)]，則可以將每個使用案例連結至 [!INCLUDE[esprfound](../includes/esprfound-md.md)]中的工作專案。 若要瞭解如何建立這些連結，請參閱[連結模型元素和工作專案](../modeling/link-model-elements-and-work-items.md)。
 
  這樣可讓您：
 
@@ -440,5 +440,5 @@ ms.locfileid: "72667837"
 
  ![子系統會顯示不同版本的系統](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
 
-## <a name="see-also"></a>請參閱
- [模型使用者需求](../modeling/model-user-requirements.md) [uml 順序圖表：方針](../modeling/uml-sequence-diagrams-guidelines.md)[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md) [UML 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md) [Uml 類別圖：參考](../modeling/uml-class-diagrams-reference.md) [uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md) [uml活動圖表：指導方針](../modeling/uml-activity-diagrams-guidelines.md)[影片：將功能組織成使用案例](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)
+## <a name="see-also"></a>另請參閱
+ [模型使用者需求](../modeling/model-user-requirements.md) [uml 順序圖表：方針](../modeling/uml-sequence-diagrams-guidelines.md)[編輯 Uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md) [UML 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md) [Uml 類別圖：參考](../modeling/uml-class-diagrams-reference.md) [uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md) [uml 活動圖：方針](../modeling/uml-activity-diagrams-guidelines.md)[影片：將功能組織成使用案例](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases)

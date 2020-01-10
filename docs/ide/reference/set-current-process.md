@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Debug.SetCurrentProcess command
 - Set Current Process command
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d8c313eebc8623156dd7a575060397ee6e16a9d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a3440c66d79fef3eac3744681870c9ce1ed0e97b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748642"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593547"
 ---
 # <a name="set-current-process"></a>設定目前處理序
 將指定的處理序設為偵錯工具中的使用中處理序。
@@ -27,7 +27,7 @@ ms.locfileid: "72748642"
 Debug.SetCurrentProcess index
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 `index`
 
 必要項。 處理序的索引。

@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: eb0bbc0cdf7aff548053c813cdf1b29ed1fed080
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913314"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830001"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 
@@ -57,7 +57,7 @@ ms.locfileid: "70913314"
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>選項 1：使用 [新增專案] 對話方塊
 
-1. 按一下 [新增專案] 對話方塊左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
+1. 按一下 [新增專案] 對話方塊的左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
 
    ![按一下 [新增專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結](../media/vs-open-visual-studio-installer-generic.png)
 
@@ -99,13 +99,13 @@ ms.locfileid: "70913314"
    >
    > ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回這個「[建立專案](#create-a-project)」程序中的第 2 步。
 
 1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *WhatIsYourName*。 接著，選擇 [建立]。
 
    ![在 [設定您的新專案] 視窗中，以 'WhatIsYourName' 命名您的專案](./media/vs-2019/vb-name-your-project-whatname.png)
 
-   Visual Studio 會隨即開啟您的新專案。
+   Visual Studio 會開啟您的新專案。
 
 ::: moniker-end
 
@@ -132,6 +132,8 @@ ms.locfileid: "70913314"
 
    ![程式碼視窗顯示 What Is Your Name 程式碼](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
+1. 使用綠色的 [**開始**] 按鈕，或按**F5**來建立並執行您的第一個應用程式。
+
 1. 主控台視窗開啟時，請輸入您的名稱。 主控台視窗應該類似下列螢幕擷取畫面：
 
    ![主控台視窗顯示 What Is Your Name、時間和日期，以及「請按任意鍵繼續」訊息](media/vb-console-what-name.png)
@@ -148,7 +150,7 @@ ms.locfileid: "70913314"
      Console.WriteLine(vbCrLf + "What is your name? ")
      Dim name = Console.ReadLine()
      Dim currentDate = DateTime.Now
-     Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}")
+     Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}!")
      Console.Write(vbCrLf + "Press any key to exit... ")
      Console.ReadKey(True)
     ```
@@ -156,6 +158,8 @@ ms.locfileid: "70913314"
     此程式碼取代現有的 <xref:System.Console.WriteLine%2A>、<xref:System.Console.Write%2A> 和 <xref:System.Console.ReadKey%2A> 陳述式。
 
    ![程式碼視窗顯示 What Is Your Name 程式碼](./media/vs-2019/vb-codewindow-what-name-dark.png)
+
+1. 使用綠色的 [**開始**] 按鈕，或按**F5**來建立並執行您的第一個應用程式。
 
 1. 主控台視窗開啟時，請輸入您的名稱。 主控台視窗應該類似下列螢幕擷取畫面：
 
@@ -208,7 +212,7 @@ ms.locfileid: "70913314"
 
 1. 在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
 
-   然後，在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *WhatIsYourName*。 接著，選擇 [建立]。
+   然後，在 [**設定您的新專案**] 視窗的 [**專案名稱**] 方塊中，輸入或輸入*CalculateThis* 。 接著，選擇 [建立]。
 
 1. 在 `Module Program` 行與 `End Module` 行之間輸入下列程式碼：
 
@@ -264,7 +268,7 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 > [!div class="nextstepaction"]
 > [在 Visual Studio 中使用 Visual Basic 和 .NET Core SDK 來建置程式庫](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Visual Basic 語言逐步解說](/dotnet/visual-basic/walkthroughs)
 * [Visual Basic 語言參考](/dotnet/visual-basic/language-reference/index)

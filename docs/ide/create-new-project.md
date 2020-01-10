@@ -6,17 +6,17 @@ f1_keywords:
 - vs.newproject
 helpviewer_keywords:
 - projects [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a35302e8f749563ab173e7be15e944f8462fdb18
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77a6a33a1dde4d779a56c9ee559ecfd3b20dfbfb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652656"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585466"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>在 Visual Studio 中建立新專案
 
@@ -59,7 +59,7 @@ ms.locfileid: "72652656"
 
 ![在 VS 2019 的 [開始] 視窗中建立新的專案](media/vs-2019/start-window-create-new-project.png)
 
-如已開啟 Visual Studio 開發環境，您就可以選擇功能表列的 [檔案] > [新增] > [專案]，或按一下工具列的 [新增專案] 按鈕，建立新的專案。
+如果 Visual Studio 開發環境已開啟，您可以在功能表列**上選擇 [** 檔案] > [**新增**>**專案**]，或按一下工具列上的 [**新增專案**] 按鈕，以建立新的專案。
 
 ![Visual Studio 2019 的 [新增專案] 按鈕](media/vs-2019/new-project-button.png)
 

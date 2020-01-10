@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8ea68c2a4c643a9fc06d9d831008a7ee8b684c2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 63b6b9479347b076b7bd9e350e80e4bfa2a36d69
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653361"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594821"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>如何：指定負載測試回合設定的採樣速率
 
@@ -48,7 +48,7 @@ ms.locfileid: "72653361"
 
 4. 在 [採樣速率] 屬性中輸入時間值，表示負載測試將按此頻率收集效能計數器資料。
 
-5. 完成變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後您就可以使用新的 [採樣速率] 值來執行負載測試。
+5. 屬性變更完成之後，選擇 [檔案] 功能表上的 [儲存]。 然後您就可以使用新的 [採樣速率] 值來執行負載測試。
 
 ## <a name="see-also"></a>請參閱
 

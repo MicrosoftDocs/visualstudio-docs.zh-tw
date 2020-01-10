@@ -11,17 +11,17 @@ helpviewer_keywords:
 - command aliases
 - alias command
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fdcc816510642c7800b6fbeacfa3fcdeff5e0b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 031f1a4bab1acee3f3d0999b17c0b607f7808df9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748802"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596901"
 ---
 # <a name="alias-command"></a>別名命令
 針對完整命令、完整命令和引數或其他別名，建立新的別名。
@@ -35,14 +35,14 @@ ms.locfileid: "72748802"
 Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 `aliasname`\
 選擇項。 新別名的名稱。 如果未提供 `aliasname` 的值，則會出現目前別名和其定義清單。
 
 `aliasstring`\
 選擇項。 完整命令名稱或現有別名，以及任何您想要建立為別名的參數。 如果未提供 `aliasstring` 的值，則會顯示所指定別名的別名和別名字串。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換機
 /delete 或 /del 或 /d\
 選擇項。 刪除指定的別名，並移除它不進行自動完成。
 

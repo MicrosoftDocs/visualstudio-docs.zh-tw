@@ -18,28 +18,28 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf25f5e0239eafd5594c38f7f3701114558b55cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b4bcd1f1f023c9e439fb870c9e31f07aa5be215d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671691"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299557"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要定義網域指定的語言 (DSL)，請從範本建立 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
 
- 如果您不熟悉 Dsl，建議您透過**DSL 工具實驗室**來進行，您可以在此網站中找到： [Visualizaton 和模型化 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+ 如果您不熟悉 Dsl，建議您透過**DSL 工具實驗室**來進行，您可以在此網站中找到： [Visualizaton 和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a>選取範本方案
  若要定義 DSL，您必須已安裝下列元件：
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
  若要建立新的網域指定語言，請使用 [網域指定的語言] 專案範本建立新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案。
 
@@ -82,13 +82,13 @@ ms.locfileid: "72671691"
 
 4. 您可以調整其他頁面上的設定，或是保留預設值。
 
-5. 按一下 [ **完成**]。
+5. 按一下 **[完成]** 。
 
     精靈會建立包含兩個或三個專案的方案，並從 DSL 定義產生程式碼。
 
    這時使用者介面類似以下圖片。
 
-   ![dsl 設計工具](../modeling/media/dsl-designer.png "dsl_designer")
+   ![DSL 設計工具](../modeling/media/dsl-designer.png "dsl_designer")
 
    此方案定義網域指定的語言。 如需詳細資訊，請參閱[特定領域語言工具使用者介面的總覽](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)。
 
@@ -609,7 +609,7 @@ ms.locfileid: "72671691"
  另請參閱 how [to：變更特定領域語言的命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。
 
 ## <a name="trouble"></a>疑難排解
- 下表列出在設計 DSL 時會遇到的一些最常見的問題，以及對其方案的建議事項。 您可以在[視覺效果工具 Extensibililty 論壇](http://go.microsoft.com/fwlink/?LinkId=186074)取得更多建議。
+ 下表列出在設計 DSL 時會遇到的一些最常見的問題，以及對其方案的建議事項。 您可以在[視覺效果工具 Extensibililty 論壇](https://go.microsoft.com/fwlink/?LinkId=186074)取得更多建議。
 
 |問題|建議|
 |-------------|----------------|
@@ -622,5 +622,5 @@ ms.locfileid: "72671691"
 |變更組件名稱之後未出現 DSL 的工具箱。|檢查並更新**DslPackage\GeneratedCode\Package.tt**如需詳細資訊，請參閱[如何：變更特定領域語言的命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。|
 |DSL 的工具箱未出現，但是我未變更組件名稱。<br /><br /> 或者，出現一個訊息方塊，回報載入擴充功能失敗。|重設實驗執行個體，然後重建方案。<br /><br /> 1. 在 Windows [開始] 功能表的 [**所有程式**] 底下，依序展開 [[!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)]] 和 [**工具**]，然後按一下 **[重設 Microsoft Visual Studio 實驗實例**]。<br />2. 在 [[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**組建**] 功能表上，按一下 [**重建方案**]。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用特定領域語言消費者入門](../modeling/getting-started-with-domain-specific-languages.md)[建立以 Windows Forms 為基礎](../modeling/creating-a-windows-forms-based-domain-specific-language.md)的特定領域語言建立[以 WPF 為基礎](../modeling/creating-a-wpf-based-domain-specific-language.md)的特定領域語言

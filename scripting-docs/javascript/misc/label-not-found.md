@@ -24,13 +24,13 @@ ms.locfileid: "72573787"
 # <a name="label-not-found"></a>找不到標籤
 您已對不存在的標籤進行參考。 標籤可以用來標示程式碼區塊，但在指定的範圍內，必須是唯一的。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 請檢查並確定您未拼錯標籤名稱。  
   
 - 請確定已在目前的範圍中定義的標籤（包括轉寄定義），都參考了所有的 label。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [標記的語句](../../javascript/reference/labeled-statement-javascript.md)   
  [Switch 語句](../../javascript/reference/switch-statement-javascript.md)   
  [break 陳述式](../../javascript/reference/break-statement-javascript.md)   

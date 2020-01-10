@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576868"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
-@No__t_0 方法會使用名稱和初始屬性來初始化 debug document helper。  
+`Init` 方法會使用名稱和初始屬性來初始化 debug document helper。  
   
 ## <a name="syntax"></a>語法  
   
@@ -63,7 +63,7 @@ HRESULT Init(
   
  這份檔不會出現在樹狀結構中，直到呼叫 `IDebugDocumentHelper::Attach` 為止。  
   
-## <a name="see-also"></a>請參閱  
- [IDebugDocumentHelper：： Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
+## <a name="see-also"></a>另請參閱  
+ [IDebugDocumentHelper：： Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [TEXT_DOC_ATTR 常數](../../winscript/reference/text-doc-attr-constants.md)

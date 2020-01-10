@@ -9,19 +9,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e90eb90f79d717e45e558fe5151d9e27534bee95
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935408"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594496"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>用於偵測及管理 Visual Studio 執行個體的工具
 
@@ -29,10 +29,10 @@ ms.locfileid: "62935408"
 
 ## <a name="detecting-existing-visual-studio-instances"></a>偵測現有的 Visual Studio 執行個體
 
-我們提供數種工具來協助您偵測及管理用戶端電腦上已安裝的 Visual Studio 執行個體︰
+我們提供許多工具來協助您偵測和管理用戶端電腦上已安裝的 Visual Studio 執行個體︰
 
 * [vswhere](https://github.com/microsoft/vswhere) \(英文\)：這個內建於 Visual Studio 中，也能以個別發佈方式取得的可執行檔，可協助您在特定機器上找到所有 Visual Studio 執行個體的位置。
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell)：PowerShell 指令碼，使用安裝程式組態 API 來識別已安裝的 Visual Studio 執行個體。
+* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell)︰PowerShell 指令碼，使用安裝程式組態 API 來識別已安裝的 Visual Studio 執行個體。
 * [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples)：C# 和 C++ 範例，示範如何使用安裝程式組態 API 來查詢現有安裝。
 
 此外，[安裝程式組態 API](<xref:Microsoft.VisualStudio.Setup.Configuration>) 還提供介面，讓想要建置其專屬公用程式的開發人員查閱 Visual Studio 執行個體。
@@ -60,7 +60,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 
 1. 如果您有開啟的 Visual Studio 執行個體，請將其關閉。
 
-1. 啟動 `regedit.exe`。
+1. 啟動`regedit.exe`。
 
 1. 選取 `HKEY_LOCAL_MACHINE` 節點。
 
@@ -80,6 +80,6 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

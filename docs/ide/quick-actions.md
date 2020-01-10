@@ -2,20 +2,20 @@
 title: 快速動作、燈泡及螺絲起子
 ms.date: 03/28/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 18df1378218d2188ee78d1b1b2a991e35f5ed689
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666761"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596953"
 ---
 # <a name="quick-actions"></a>快速動作
 
@@ -50,7 +50,7 @@ ms.locfileid: "72666761"
 
 ## <a name="icons"></a>圖示
 
-當有快速動作可用時，顯示的圖示會指出可用的修正或重構類型。 「螺絲起子」![螺絲起子圖示](media/screwdriver-icon.png)圖示表示有可變更程式碼的動作，但不一定要使用。 「黃色燈泡」![燈泡圖示](media/light-bulb-icon.png)圖示表示有「應」執行的動作，以改善程式碼。 「錯誤燈泡」![錯誤燈泡圖示](media/error-light-bulb-icon.png)圖示表示有動作可修正您程式碼中的錯誤。
+當有快速動作可用時，顯示的圖示會指出可用的修正或重構類型。 *螺絲起子*![螺絲起子圖示](media/screwdriver-icon.png) 圖示表示有動作可以變更程式碼，但您不應該使用它們。 *黃色*燈泡 ![燈泡圖示](media/light-bulb-icon.png) 圖示表示有一些*動作可供您用*來改善程式碼。 *錯誤*燈泡 ![錯誤燈泡圖示](media/error-light-bulb-icon.png) 圖示表示有可在程式碼中修正錯誤的動作。
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>顯示燈泡或螺絲起子
 

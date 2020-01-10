@@ -9,14 +9,15 @@ ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 359d36ed7eb74394e63af39cdbc9986b02385f8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7ead219ddf482af5917842118d386c6fefe67973
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403611"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772710"
 ---
 # <a name="modules-view---sampling-data"></a>模組檢視 - 取樣資料
 取樣資料的模組檢視，依據分析資料中取樣的模組來分組顯示效能資料。 每個模組都是階層式樹狀結構的根。 模組的取樣函式列在模組節點之下。
@@ -26,11 +27,11 @@ ms.locfileid: "63403611"
 
  如果收集樣本的時候正在執行函式 (即函式在呼叫堆疊最上方)，則執行中的原始程式行和指令位址會列在函式節點之下。 因為資料是在執行程式行或指令時，針對原始程式行或指令指標來收集資料，所以程式行資料和指令資料的內含值和專屬值一律相同。
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**名稱**|模組、函式、行號或指令指標位址的名稱。|
 |**處理序 ID**|分析執行的處理序 ID (PID)。|
-|**處理序名稱**|處理序的名稱。|
+|**處理序名稱**|處理程序的名稱。|
 |**模組名稱**|包含該函式、程式行或指令指標的模組名稱。|
 |**模組路徑**|包含該模組、函式、程式行或指令指標的模組路徑。|
 |**原始程式檔**|含有這個函式定義的原始程式檔。|
@@ -40,7 +41,7 @@ ms.locfileid: "63403611"
 |**專有樣本**|-   對於函式，這是此函式直接在其中執行的呼叫堆疊樣本數，亦即此函式在呼叫堆疊最上方的樣本數量。<br />-   對於模組，這是模組中函式之專有樣本的總和。<br />-   對於程式行或指令，這是此程式行或指令正在其中執行的樣本數量。|
 |**專有樣本 %**|-   對於函式或模組，這是分析執行中此函式或模組的專有樣本佔所有樣本的百分比。<br />-   對於程式行或指令，這是分析執行中，其中正在執行此程式行或指令之所有樣本的百分比。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)
 - [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [模組檢視](../profiling/modules-view-instrumentation-data.md)

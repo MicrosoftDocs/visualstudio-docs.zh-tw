@@ -1,5 +1,5 @@
 ---
-title: 錯誤：Web 伺服器未正確設定 |Microsoft Docs
+title: 錯誤：未正確設定 web 伺服器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,12 +18,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 643be465aab889b1f31e8fa75dba68261444bc31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f5df9fb04849fce94d1a82748f2fc88f9577667
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203204"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297434"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>錯誤：未正確設定 Web 伺服器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "68203204"
   
 - 嘗試偵錯已複製到不同電腦、已手動重新命名或已移動的 .NET Web 應用程式。  
   
-- 沒有足夠的 IIS 連接。 如需將網站部署至 IIS 的詳細資訊，請參閱 [建立網站](http://www.iis.net/learn/get-started/getting-started-with-iis/create-a-web-site)。  
+- 沒有足夠的 IIS 連接。 如需將網站部署至 IIS 的詳細資訊，請參閱 [建立網站](https://docs.microsoft.com/iis/get-started/getting-started-with-iis/create-a-web-site)。  
   
 - 如果您嘗試偵錯 ASP.NET 應用程式，請參閱 [發行至 IIS](https://docs.asp.net/en/latest/publishing/iis.html) ，取得部署到執行 IIS 8 或更高版本之遠端電腦的指示，或參閱 [Remote Debugging ASP.NET on a Remote IIS 7.5 Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) 取得部署到執行 IIS 7.5 之遠端電腦的指示。  
   

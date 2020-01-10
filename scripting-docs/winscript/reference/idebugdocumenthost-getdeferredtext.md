@@ -44,10 +44,10 @@ HRESULT GetDeferredText(
  在主機定義的 cookie，代表文字的開始位置。  
   
  `pcharText`  
- [in、out]字元文本緩衝區。 如果 `NULL` 此參數，則這個方法不會傳回字元。  
+ [in、out]字元文本緩衝區。 如果 `NULL`此參數，則這個方法不會傳回字元。  
   
  `pstaTextAttr`  
- [in、out]字元屬性緩衝區。 如果 `NULL` 此參數，則這個方法不會傳回屬性。  
+ [in、out]字元屬性緩衝區。 如果 `NULL`此參數，則這個方法不會傳回屬性。  
   
  `pcNumChars`  
  [in、out]表示傳回的實際字元/屬性數目。 呼叫這個方法之前，必須將這個參數設定為零。  
@@ -61,7 +61,7 @@ HRESULT GetDeferredText(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_NOTIMPL`|未執行方法。|  
+|`E_NOTIMPL`|此方法尚未實作。|  
   
 ## <a name="remarks"></a>備註  
  如果主機未呼叫 `IDebugDocumentHelper::AddDeferredText`，這個方法可能會傳回 `E_NOTIMPL`。  
@@ -69,7 +69,7 @@ HRESULT GetDeferredText(
 > [!NOTE]
 > 這個方法會傳回原始檔案中的文字。 主機不會追蹤檔的編輯或其他變更。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHost 介面](../../winscript/reference/idebugdocumenthost-interface.md)   
- [IDebugDocumentHelper：： AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+ [IDebugDocumentHelper：： AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

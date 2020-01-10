@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data access [Visual Studio], objects
 - saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5208b7764949f6ba6d3e862c7a2102608afb7e24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 509910730d4da095b6db622212716a8f958495d7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648206"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586259"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>從物件中將資料儲存至資料庫
 
@@ -36,7 +36,7 @@ ms.locfileid: "72648206"
 |TableAdapter DBDirect 方法|描述|
 | - |-----------------|
 |`TableAdapter.Insert`|將新記錄加入至資料庫，並可讓您傳入個別的資料行值做為方法參數。|
-|`TableAdapter.Update`|更新資料庫中的現有記錄。 @No__t_0 方法會採用原始和新的資料行值做為方法參數。 原始的值是用來尋找原始記錄，而新值則是用來更新該記錄。<br /><br /> @No__t_0 方法也可用來將資料集的變更重新協調回資料庫，方法是將 <xref:System.Data.DataSet>、<xref:System.Data.DataTable>、<xref:System.Data.DataRow> 或 <xref:System.Data.DataRow>s 陣列當做方法參數。|
+|`TableAdapter.Update`|更新資料庫中的現有記錄。 `Update` 方法會採用原始和新的資料行值做為方法參數。 原始的值是用來尋找原始記錄，而新值則是用來更新該記錄。<br /><br /> `TableAdapter.Update` 方法也用來將資料集的變更重新協調回資料庫，方法是將 <xref:System.Data.DataSet>、<xref:System.Data.DataTable>、<xref:System.Data.DataRow>或 <xref:System.Data.DataRow>的陣列當做方法參數。|
 |`TableAdapter.Delete`|根據當做方法參數傳入的原始資料行值，從資料庫中刪除現有的記錄。|
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>若要將新記錄從物件儲存至資料庫
@@ -74,7 +74,7 @@ ms.locfileid: "72648206"
 
 ## <a name="net-security"></a>.NET 安全性
 
-您必須擁有在資料庫的資料表上執行選取的 `INSERT`、`UPDATE` 或 `DELETE` 的許可權。
+您必須擁有在資料庫的資料表上執行選取的 `INSERT`、`UPDATE`或 `DELETE` 的許可權。
 
 ## <a name="see-also"></a>請參閱
 

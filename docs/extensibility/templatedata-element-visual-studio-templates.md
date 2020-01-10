@@ -1,5 +1,5 @@
 ---
-title: TemplateData 項目 （Visual Studio 範本） |Microsoft Docs
+title: TemplateData 元素（Visual Studio 範本） |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,17 +13,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9647330aaca2c2ae91aa7e461da17cf4dc3f8c3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b122857a4d916379c070e923ed0753b01287f08b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316668"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718860"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 項目 (Visual Studio 範本)
-將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。
+將範本分類，並定義該範本在 [新增專案] 或 [加入新項目] 對話方塊中顯示的方式。
 
- \<VSTemplate> \<TemplateData>
+ \<.Vstemplate > \<TemplateData >
 
 ## <a name="syntax"></a>語法
 
@@ -43,46 +43,46 @@ ms.locfileid: "66316668"
 ### <a name="attributes"></a>屬性
  無。
 
-### <a name="child-elements"></a>子元素
+### <a name="child-elements"></a>子項目
 
 | 項目 | 描述 |
 | - | - |
-| [名稱](../extensibility/name-element-visual-studio-templates.md) | 必要項目。<br /><br /> 指定範本的名稱，因為它會出現在其中一個**新的專案**或**加入新項目**對話方塊。 |
-| [描述](../extensibility/description-element-visual-studio-templates.md) | 必要項目。<br /><br /> 指定範本的描述中所顯示的樣子**新的專案**或**加入新項目** 對話方塊。 |
-| [圖示](../extensibility/icon-element-visual-studio-templates.md) | 必要項目。<br /><br /> 指定的路徑和檔名做為圖示時，就會出現在其中一個映像檔的**新的專案**或**加入新項目**對話方塊中，範本。 |
-| [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | 必要項目。<br /><br /> 將分類的專案範本，使其出現在中指定的群組**新的專案** 對話方塊。 |
-| [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 將分類專案範本，使它出現在中指定的子類別目錄之下**新的專案** 對話方塊。 |
-| [TemplateID](../extensibility/templateid-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定範本 id。 |
-| [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定範本的群組識別碼。 |
-| [SortOrder](../extensibility/sortorder-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定值，因為它會出現在其中一個用來排列的範本，在相同類別中，其他範本之間**新的專案**或是**加入新項目** 對話方塊。 |
-| [CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定是否要包含的資料夾建立在具現化的專案。 |
-| [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 建立時，請指定 Visual Studio 專案系統會產生的專案或項目的名稱。 |
-| [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定 Visual Studio 專案系統是否會在建立時產生的預設名稱的專案或項目。 |
-| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定專案是否可以建立為暫存專案 (Visual Studio 2017 只)。 |
-| [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定是否**瀏覽** 按鈕位於**新的專案**對話方塊，讓使用者可以輕鬆地修改儲存新專案的預設目錄。 |
-| [Hidden](../extensibility/hidden-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定是否在該範本會出現**新的專案**或**加入新項目** 對話方塊。 |
-| [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定的數目會顯示在範本的父類別**新的專案** 對話方塊。 |
+| [名稱](../extensibility/name-element-visual-studio-templates.md) | 必要項目。<br /><br /> 指定範本出現在 [**新增專案**] 或 [**加入新專案**] 對話方塊中的名稱。 |
+| [說明](../extensibility/description-element-visual-studio-templates.md) | 必要項目。<br /><br /> 指定範本出現在 [**新增專案**] 或 [**加入新專案**] 對話方塊中的描述。 |
+| [圖示](../extensibility/icon-element-visual-studio-templates.md) | 必要項目。<br /><br /> 指定影像檔案的路徑和檔案名，做為範本出現在 [**新增專案**] 或 [**加入新專案**] 對話方塊中的圖示。 |
+| [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | 必要項目。<br /><br /> 將專案範本分類，使其出現在 [**新增專案**] 對話方塊中的指定群組底下。 |
+| [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 將專案範本分類，使其出現在 [**新增專案**] 對話方塊中指定的子類別之下。 |
+| [TemplateID](../extensibility/templateid-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定範本識別碼。 |
+| [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定範本群組識別碼。 |
+| [SortOrder](../extensibility/sortorder-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定一個值，用來排列範本，在相同類別目錄中的其他範本中，因為它出現在 [**新增專案**] 或 [**加入新專案**] 對話方塊中。 |
+| [CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定是否要在具現化專案時建立包含的資料夾。 |
+| [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定在建立專案或專案時，Visual Studio 專案系統將為其產生的名稱。 |
+| [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定 Visual Studio 專案系統是否會在建立專案或專案時，產生其預設名稱。 |
+| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定是否可以將專案建立為暫存專案（僅限 Visual Studio 2017）。 |
+| [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定 [**新增專案**] 對話方塊中是否有 [**流覽]** 按鈕，讓使用者可以輕鬆地修改儲存新專案的預設目錄。 |
+| [隱含](../extensibility/hidden-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定範本是否會出現在 [**新增專案**] 或 [**加入新專案**] 對話方塊中。 |
+| [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定要在 [**新增專案**] 對話方塊中顯示範本的父類別目錄數目。 |
 | [LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | 選擇性項目。 |
-| [LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md) | 選擇性項目。<br /><br /> 指定是否**位置**中的文字方塊**新的專案** 對話方塊中已啟用、 停用，或隱藏專案範本。 |
-| [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 如果範本只支援特定的最小版本和更新的版本，如果有的話，.NET framework，請使用此項目。 |
-| [SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定樣板是否支援 web 專案的主版頁面。 |
-| [SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定樣板是否支援程式碼分離或程式碼後置頁面模型中，web 專案。 |
-| [SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定是否範本是相同的多種語言，以及是否**語言**選項可從**新的專案** 對話方塊。 |
-| [TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定專案範本的目標平台。 這個項目可讓您指定的專案範本用來建立[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]應用程式。 |
+| [LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md) | 選擇性項目。<br /><br /> 指定專案範本的 [**新增專案**] 對話方塊中的 [**位置**] 文字方塊是否為 [已啟用]、[已停用] 或 [隱藏]。 |
+| [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 如果範本僅支援特定的最小版本，以及 .NET Framework 的更新版本，請使用此元素。 |
+| [SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定範本是否支援 Web 專案的主版頁面。 |
+| [SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定範本是否支援 Web 專案的程式碼分離或程式碼後置頁面模型。 |
+| [SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定多個語言的範本是否相同，以及是否可從 [**新增專案**] 對話方塊使用 [**語言**] 選項。 |
+| [TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定專案範本的目標平台。 此元素會指定用來建立 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式的專案範本。 |
 
 ### <a name="parent-elements"></a>父項目
 
 |項目|描述|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要項目。<br /><br /> 包含專案範本、 項目範本，或入門套件的所有中繼資料。|
+|[.Vstemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要項目。<br /><br /> 包含專案範本、專案範本或入門套件的所有中繼資料。|
 
 ## <a name="remarks"></a>備註
- `TemplateData` 是必要項目。
+ `TemplateData` 是必要的元素。
 
- 如果您未包含選擇性的項目，則會使用該元素的預設值。
+ 如果您未包含選擇性專案，則會使用該元素的預設值。
 
 ## <a name="example"></a>範例
- 下列範例顯示的專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。
+ 下列範例會顯示 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 應用程式之專案範本的中繼資料。
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -108,6 +108,6 @@ ms.locfileid: "66316668"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

@@ -37,7 +37,7 @@ HRESULT SetName(
   
 #### <a name="parameters"></a>參數  
  `psz`  
- 在@No__t_0 物件的新名稱。  
+ 在`IScriptEntry` 物件的新名稱。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -48,6 +48,6 @@ HRESULT SetName(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)

@@ -8,23 +8,23 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9b6c91e6074e34a8207325e25f4a48b94dd037ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639449"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586025"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>逐步解說：使用 DataSet 設計工具建立資料集
 
 在本逐步解說中，您會使用**DataSet 設計工具**來建立資料集。 本文會引導您完成建立新專案的程式，並在其中加入新的**資料集**專案。 您將學習如何在不使用 wizard 的情況下，以資料庫中的資料表為基礎來建立資料表。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -44,7 +44,7 @@ ms.locfileid: "72639449"
 
 ## <a name="create-a-new-windows-forms-application-project"></a>建立新的 Windows Forms 應用程式專案
 
-1. **在 Visual Studio 的 [檔案**] 功能表上，選取 [**新增** > **專案**]。
+1. 在 Visual Studio 中，於 [檔案] 功能表上選取 [新增] > [專案]。
 
 2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 

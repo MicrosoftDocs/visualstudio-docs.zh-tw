@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d0ad3ac3c4efa6be136fa85ee0c8abbe3632e53f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958448"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985204"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Flask Web 架構
 
-[Flask](http://flask.pocoo.org/) 是一個輕量型的 Python Web 應用程式架構，可提供 URL 路由和頁面轉譯的基本要素。
+[Flask](https://palletsprojects.com/p/flask/) 是一個輕量型的 Python Web 應用程式架構，可提供 URL 路由和頁面轉譯的基本要素。
 
 Flask 被稱為「微」架構，因為它並不直接提供表單驗證、資料庫抽象、驗證等功能。 這類功能會改由稱為 Flask「延伸模組」的特殊 Python 套件提供。 這些延伸模組與 Flask 緊密整合，因此看起來就像 Flask 本身的一部分一樣。 例如，Flask 本身並不提供頁面範本引擎。 如本教學課程中所示範，範本化功能是由 Jinja 和 Jade 等延伸模組所提供。
 
@@ -38,7 +38,7 @@ Flask 被稱為「微」架構，因為它並不直接提供表單驗證、資�
 > [!Note]
 > 本教學課程與 [Flask 快速入門](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)的差異在於，您可以深入了解 Flask，以及如何使用各種不同 Flask 專案範本，以便為自己的專案提供更廣泛的起點。 例如，專案範本會在建立專案時自動安裝 Flask 套件，而不像快速入門中所示，需要您手動安裝套件。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 - Windows 上具有下列選項的 Visual Studio 2017 或更新版本：
   - **Python 開發** 工作負載 (安裝程式的 [工作負載] 索引標籤)。 如需相關指示，請參閱[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
@@ -59,16 +59,16 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
     - **名稱**：將 Visual Studio 專案名稱設定為 **BasicProject**。 此名稱也會用於 Flask 專案。
     - **位置**：指定要在其中建立 Visual Studio 解決方案和專案的位置。
     - **方案名稱**：設定為 **LearningFlask**，這適用於本教學課程中作為多專案容器的解決方案。
-    - **建立解決方案的目錄**：維持在設定狀態 (預設)。
+    - **為解決方案建立目錄**：設定維持不變 (預設值)。
     - **建立新的 Git 存放庫**：選取此選項 (預設為清除)，以便 Visual Studio 在建立解決方案時一併建立本機 Git 存放庫。 若您沒有看到此選項，請執行 Visual Studio 安裝工具，並在 [程式碼工具] 下的 [個別元件] 索引標籤上新增 **Git for Windows** 和 **Visual Studio 的 GitHub 延伸模組**。
 
 1. 隨後 Visual Studio 會以對話方塊提示您，指出**此專案需要外部套件** (如下所示)。 之所以會出現此對話方塊，是因為範本包含參考最新 Flask 1.x 套件的 *requirements.txt* 檔案。 (選取 [顯示必要套件] 來查看確切相依性)。
 
     ![提示指出專案需要外部套件](media/tutorials-common/step01-requirements-prompt-install-myself.png)
 
-1. 選取 [我將自行安裝] 選項。 您很快便會建立虛擬環境，以確定它已從原始檔控制中排除。 (環境隨時可以從 *requirements.txt* 建立。)
+1. 選取 [我將自行安裝] 選項。 您很快便會建立虛擬環境，以確定它已從原始檔控制中排除。 (環境隨時可以從 *requirements.txt* 建立)。
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>步驟 1-2：檢查 Git 控制項並發佈到遠端存放庫
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>步驟 1-2：檢查 Git 控制項並發佈至遠端存放庫
 
 因為您已在 [新專案] 對話方塊中選取 [建立新的 Git 存放庫]，所以在建立流程完成時，系統便會立即對本機原始檔控制認可此專案。 在此步驟中，您將能熟悉 Visual Studio 的 Git 控制項，以及用來處理原始檔控制的 [Team Explorer] 視窗。
 
@@ -102,15 +102,15 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
 > [!Tip]
 > 若要在 Team Explorer 內快速瀏覽，請選取標題 (在上面影像中標為 [變更] 或 [推送]) 以查看可用頁面的快顯功能表。
 
-### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>問題：從專案一開始就使用原始檔控制有哪些優點？
+### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>問題：從專案一開始就使用原始檔控制會有哪些優點？
 
-回答：首先，從一開始就使用原始檔控制 (特別是在您也使用遠端存放庫時)，可為專案提供頻繁的異地備份。 不同於只在本機檔案系統上維護專案，原始檔控制也能提供完整的變更記錄，並能輕易將單一檔案或整個專案還原至先前的狀態。 該變更記錄可協助判斷迴歸 (測試失敗) 的原因。 此外，原始檔控制在有多人一起處理專案的情況下是不可或缺的，因為它可管理覆寫並提供衝突解決方式。 最後，原始檔控制基本上是一種自動化的形式，可為您妥善設定自動化建置、測試和發行管理。 它確實是針對專案採用 DevOps 的第一步；由於其門檻非常低，因此實在沒有什麼原因不在一開始便使用原始檔控制。
+回答：首先，從一開始就使用原始檔控制 (特別是在您也使用遠端存放庫時)，可為專案提供頻繁的離站備份。 不同於只在本機檔案系統上維護專案，原始檔控制也能提供完整的變更記錄，並能輕易將單一檔案或整個專案還原至先前的狀態。 該變更記錄可協助判斷迴歸 (測試失敗) 的原因。 此外，原始檔控制在有多人一起處理專案的情況下是不可或缺的，因為它可管理覆寫並提供衝突解決方式。 最後，原始檔控制基本上是一種自動化的形式，可為您妥善設定自動化建置、測試和發行管理。 它確實是針對專案採用 DevOps 的第一步；由於其門檻非常低，因此實在沒有什麼原因不在一開始便使用原始檔控制。
 
-如需以自動化進行原始檔控制的進一步討論，請參閱 [The Source of Truth:The Role of Repositories in DevOps](https://msdn.microsoft.com/magazine/mt763232) (原始檔的真相：DevOps 中存放庫的角色)；MSDN Magazine 中專為行動應用程式撰寫的這篇文章也適用於 Web 應用程式。
+如需原始檔控制作為自動化的進一步討論，請參閱 MSDN Magazine 針對行動應用程式 (但也同樣適用於 Web 應用程式) 所撰寫的文章：[本質來源：存放庫在 DevOps 中的角色](https://msdn.microsoft.com/magazine/mt763232) \(英文\)。
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>問題：我能夠避免 Visual Studio 自動認可新專案嗎？
 
-回答：可以。 若要停用自動認可，請移至 [Team Explorer] 中的 [設定] 頁面，選取 [Git] > [全域設定]，清除標示為 [預設在合併後認可變更] 的選項，然後選取 [更新]。
+回答：是。 若要停用自動認可，請移至 [Team Explorer] 中的 [設定] 頁面，選取 [Git] > [全域設定]，清除標示為 [預設在合併後認可變更] 的選項，然後選取 [更新]。
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>步驟 1-3：建立虛擬環境並將它從原始檔控制中排除
 
@@ -126,9 +126,9 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
 
 1. 選取 [建立] 來接受預設值。 (您可以視需要變更虛擬環境的名稱，這只會變更其子資料夾的名稱，但 `env` 為標準慣例)。
 
-1. 在出現提示時同意賦與系統管理員權限，然後在 Visual Studio 下載並安裝套件時耐心等待幾分鐘，這對於 Flask 及其相依性來說，意謂著會在超過 100 個子資料夾中擴增數千個檔案。 您可以在 Visual Studio 的 [輸出] 視窗中查看進度。 您可在等候期間思考下方的＜問題＞小節。 您也可以在 [Flask 安裝](http://flask.pocoo.org/docs/1.0/installation/#installation) \(英文\) 頁面 (flask.pcocoo.org) 上查看 Flask 相依性的描述。
+1. 在出現提示時同意賦與系統管理員權限，然後在 Visual Studio 下載並安裝套件時耐心等待幾分鐘，這對於 Flask 及其相依性來說，意謂著會在超過 100 個子資料夾中擴增數千個檔案。 您可以在 Visual Studio 的 [輸出] 視窗中查看進度。 您可在等候期間思考下方的＜問題＞小節。 您也可以在 [Flask 安裝](https://flask.palletsprojects.com/en/1.0.x/installation/#installation) \(英文\) 頁面 (flask.pcocoo.org) 上查看 Flask 相依性的描述。
 
-1. 在 Visual Studio Git 控制項 (位於狀態列) 上，選取變更指標 (顯示 **99&#42;**)，這會在 Team Explorer 中開啟 [變更] 頁面。
+1. 在 Visual Studio Git 控制項 (位於狀態列) 上，選取變更指標 (顯示 **99&#42;** )，這會在 [Team Explorer] 中開啟 [變更] 頁面。
 
     建立虛擬環境帶來了數千個變更，但是並不需要將其中任何一個變更包含在原始檔控制中，因為您 (或複製專案的任何其他人) 隨時可從 *requirements.txt* 重新建立環境。
 
@@ -142,7 +142,7 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>問題：為什麼我要建立虛擬環境？
 
-回答：虛擬環境是隔離應用程式確切相依性的絕佳方法。 這類隔離方式可避免在全域 Python 環境中發生衝突，並協助測試和共同作業。 隨著您持續開發應用程式，不免會帶入許多有用的 Python 套件。 透過將套件留在專案特定的虛擬環境中，您可以輕鬆更新專案中描述該環境的 *requirements.txt* 檔案 (其包含在原始檔控制中)。 將專案複製到任何其他電腦 (包括建置伺服器、部署伺服器及其他開發電腦) 時，只要使用 *requirements.txt* 就能輕鬆重新建立環境 (這就是為何環境不需要位於原始檔控制中的原因)。 如需詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
+答案：虛擬環境是隔離應用程式確切相依性的絕佳方法。 這類隔離方式可避免在全域 Python 環境中發生衝突，並協助測試和共同作業。 隨著您持續開發應用程式，不免會帶入許多有用的 Python 套件。 透過將套件留在專案特定的虛擬環境中，您可以輕鬆更新專案中描述該環境的 *requirements.txt* 檔案 (其包含在原始檔控制中)。 將專案複製到任何其他電腦 (包括建置伺服器、部署伺服器及其他開發電腦) 時，只要使用 *requirements.txt* 就能輕鬆重新建立環境 (這就是為何環境不需要位於原始檔控制中的原因)。 如需詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>問題：我要如何移除已認可至原始檔控制的虛擬環境？
 
@@ -150,7 +150,7 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
 
 再來，請開啟命令視窗，巡覽至包含虛擬環境資料夾 (例如 *env*) 的資料夾 (例如 *BasicProject*)，然後執行 `git rm -r env`。 接著，從命令列 (`git commit -m 'Remove venv'`) 認可那些變更，或是從 [Team Explorer] 的 [變更] 頁面認可它們。
 
-## <a name="step-1-4-examine-the-boilerplate-code"></a>步驟 1-4：檢查重複使用程式碼
+## <a name="step-1-4-examine-the-boilerplate-code"></a>步驟 1-4：檢查未定案程式碼
 
 1. 建立完專案之後，您就會在 [方案總管] 中看到解決方案和專案，其中專案只包含 *app.py* 和 *requirements.txt* 這兩個檔案：
 
@@ -190,13 +190,13 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
         return "Hello World!"
     ```
 
-### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>問題：Flask 類別的 __name__ 引數有什麼用途？
+### <a name="question-what-is-the-purpose-of-the-__name__-argument-to-the-flask-class"></a>問題：Flask 類別的 __name__ 引數有什麼用途？
 
-答：此引數是應用程式模組或套件的名稱，可告訴 Flask 該去哪裡尋找範本、靜態檔案，以及其他屬於應用程式的資源。 對於包含在單一模組中的應用程式來說，`__name__` 一律是正確的值。 此引數對於需要偵錯資訊的延伸模組來說，也相當重要。 如需詳細資訊和額外的引數，請參閱 [Flask 類別文件](http://flask.pocoo.org/docs/1.0/api/#flask.Flask) \(英文\) (flask.pocoo.org)。
+回答：此引數是應用程式模組或套件的名稱，可告訴 Flask 該去哪裡尋找範本、靜態檔案，以及其他屬於應用程式的資源。 對於包含在單一模組中的應用程式來說，`__name__` 一律是正確的值。 此引數對於需要偵錯資訊的延伸模組來說，也相當重要。 如需詳細資訊和額外的引數，請參閱 [Flask 類別文件](https://flask.palletsprojects.com/en/1.0.x/api/#flask.Flask) \(英文\) (flask.pocoo.org)。
 
 ### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>問題：一個函式是否可以有多個路由裝飾項目？
 
-答：可以，如果同一個函式為多個路由提供服務，您可以視需要使用任意數目的裝飾項目。 例如，若要將 `hello` 函式同時用於 "/" 和 "/hello"，請使用下列程式碼：
+回答：是，如果同一個函式為多個路由提供服務，您可以視需要使用任意數目的裝飾項目。 例如，若要將 `hello` 函式同時用於 "/" 和 "/hello"，請使用下列程式碼：
 
 ```python
 @app.route('/')
@@ -210,7 +210,7 @@ def hello():
 
 ### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>問題：Flask 如何與變數 URL 路由和查詢參數搭配運作？
 
-答：在路由中，您可以在任何變數上標記 `<variable_name>`，而 Flask 就會使用具名引數將該變數傳遞給函式。 變數可以是 URL 路徑的一部分，或放在查詢參數中。 例如，格式為 `'/hello/<name>` 的路由會為函式產生名為 `name` 的字串引數，而在路由中使用 `?message=<msg>` 則會剖析針對 "message=" 查詢參數提供的值，並將它傳遞給函式作為 `msg`：
+回答：在路由中，您可以在任何變數上標示 `<variable_name>`，而 Flask 就會使用具名引數將該變數傳遞給函式。 變數可以是 URL 路徑的一部分，或放在查詢參數中。 例如，格式為 `'/hello/<name>` 的路由會為函式產生名為 `name` 的字串引數，而在路由中使用 `?message=<msg>` 則會剖析針對 "message=" 查詢參數提供的值，並將它傳遞給函式作為 `msg`：
 
 ```python
 @app.route('/hello/<name>?message=<msg>')
@@ -218,15 +218,15 @@ def hello(name, msg):
     return "Hello " + name + "! Message is " + msg + "."
 ```
 
-若要變更類型，請在變數前面加上 `int`、`float`、`path` (可接受使用斜線來描述資料夾名稱) 及 `uuid`。 如需詳細資料，請參閱 Flask 文件中的[變數規則](http://flask.pocoo.org/docs/1.0/quickstart/#variable-rules) \(英文\)。
+若要變更類型，請在變數前面加上 `int`、`float`、`path` (可接受使用斜線來描述資料夾名稱) 及 `uuid`。 如需詳細資料，請參閱 Flask 文件中的[變數規則](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules) \(英文\)。
 
-您也可以透過 `request.args` 屬性提供查詢參數，特別是透過 `request.args.get` 方法。 如需詳細資訊，請參閱 Flask 文件中的[要求物件](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object) \(英文\)。
+您也可以透過 `request.args` 屬性提供查詢參數，特別是透過 `request.args.get` 方法。 如需詳細資訊，請參閱 Flask 文件中的[要求物件](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object) \(英文\)。
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>問題：Visual Studio 是否可以在我安裝其他套件之後，從虛擬環境產生 requirements.txt 檔案？
 
-回答：可以。 展開 [Python 環境] 節點，以滑鼠右鍵按一下虛擬環境，然後選取 [產生 requirements.txt] 命令。 在您修改環境時，最好定期使用此命令，並將對 *requirements.txt* 的變更，連同依存於該環境的任何其他程式碼變更認可至原始檔控制。 如果您在組建伺服器上設定持續整合，每當您修改環境時，都應該產生該檔案並認可變更。
+回答：是。 展開 [Python 環境] 節點，以滑鼠右鍵按一下虛擬環境，然後選取 [產生 requirements.txt] 命令。 在您修改環境時，最好定期使用此命令，並將對 *requirements.txt* 的變更，連同依存於該環境的任何其他程式碼變更認可至原始檔控制。 如果您在組建伺服器上設定持續整合，每當您修改環境時，都應該產生該檔案並認可變更。
 
-## <a name="step-1-5-run-the-project"></a>Step 1-5：執行專案
+## <a name="step-1-5-run-the-project"></a>步驟 1-5：執行專案
 
 1. 在 Visual Studio 中，選取 [偵錯] > [開始偵錯] (**F5**) 或使用工具列上的 [網頁伺服器] 按鈕 (您所看到的瀏覽器可能會不同)：
 
@@ -242,7 +242,7 @@ def hello(name, msg):
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>問題：使用 [偵錯] 功能表命令和使用專案 Python 子功能表上的伺服器命令，兩者有何差異？
 
-回答：除了 [偵錯] 功能表命令與工具列按鈕之外，您也可以使用專案操作功能表上的 [Python] > [執行伺服器] 或 [Python] > [執行偵錯伺服器] 命令來啟動伺服器。 這兩個命令都會開啟主控台視窗，您可在該處看到執行中伺服器的本機 URL (localhost:port)。 不過，您必須使用該 URL 手動開啟瀏覽器，執行偵錯伺服器並不會自動啟動 Visual Studio 偵錯工具。 您可以視需要使用 [偵錯] > [附加至處理序] 命令，於稍後將偵錯工具附加至執行中的處理序。
+回答：除了 [偵錯] 功能表命令與工具列按鈕之外，您也可以使用專案內容功能表上的 [Python] > [執行伺服器]或 [Python] > [執行偵錯伺服器] 命令來啟動伺服器。 這兩個命令都會開啟主控台視窗，您可在該處看到執行中伺服器的本機 URL (localhost:port)。 不過，您必須使用該 URL 手動開啟瀏覽器，執行偵錯伺服器並不會自動啟動 Visual Studio 偵錯工具。 您可以視需要使用 [偵錯] > [附加至處理序] 命令，於稍後將偵錯工具附加至執行中的處理序。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -253,5 +253,5 @@ def hello(name, msg):
 
 ## <a name="go-deeper"></a>深入了解
 
-- [Flask 快速入門](http://flask.pocoo.org/docs/1.0/quickstart/) \(英文\) (flask.pocoo.org)
-- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- [Flask 快速入門](https://flask.palletsprojects.com/en/1.0.x/quickstart/) \(英文\) (flask.pocoo.org)
+- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask) \(英文\)

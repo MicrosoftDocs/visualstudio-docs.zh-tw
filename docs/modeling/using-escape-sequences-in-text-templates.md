@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, escape sequences
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e03f5eafc00b8431725ed06da10371a93692fb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83e6e5cf163037077d0517e5f7ea460f9124f27c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662923"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594041"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>在文字模板中使用 escape 序列
 
@@ -32,7 +32,7 @@ ms.locfileid: "72662923"
 
 - 如果文字模板標記前面加上偶數的 escape （\\）字元，則範本剖析器會包含一半的逸出字元，並包含序列做為文字模板標記。 例如，如果文字模板中有四個換用字元，則產生的檔案中將會有兩個 "\\" 字元。
 
-- 如果文字模板標記前面加上奇數的 escape （\\）字元，則範本剖析器會包含一半的 "\\" 字元加上標記本身（\< # 或 # >）。 標記不會被視為文字模板標記。
+- 如果文字模板標記前面加上奇數的 escape （\\）字元，則範本剖析器會包含一半的 "\\" 字元加上標記本身（\<# 或 # >）。 標記不會被視為文字模板標記。
 
 - 如果 escape （\\）字元在任何序列中的任何位置出現，而不是將控制字元或引號（ C#僅限）轉義，則會直接輸出該字元。
 

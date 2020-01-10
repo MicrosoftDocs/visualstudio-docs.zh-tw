@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660c93c5e1ee6b41369ebbfc9f43c4c047042589
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652406"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597265"
 ---
 # <a name="about-domain-specific-languages"></a>關於網域指定的語言
 
@@ -74,7 +74,7 @@ DSL 的一般應用就是產生程式碼或其他成品。 當您定義 DSL 時�
 
 ### <a name="notation"></a>Notation
 
-網域指定的語言必須具有一組合理的元素，而且可以輕鬆地定義和擴充，以代表特定領域的結構。 標記法包含圖形（表示元素）和連接器（表示專案之間的關聯性），其位於圖形化圖表介面上。 在 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 中，可以擴充和調整圖形，以代表特定領域語言的元素。
+網域指定的語言必須具有一組合理的元素，而且可以輕鬆地定義和擴充，以代表特定領域的結構。 標記法包含圖形（表示元素）和連接器（表示專案之間的關聯性），其位於圖形化圖表介面上。 在 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]中，可以擴充和調整圖形，以代表特定領域語言的元素。
 
 ### <a name="domain-model"></a>領域模型
 

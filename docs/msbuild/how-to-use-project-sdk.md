@@ -1,22 +1,22 @@
 ---
-title: 作法：參考 MSBuild 專案 SDK | Microsoft Docs
+title: 如何：參考 MSBuild 專案 SDK | Microsoft Docs
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, SDKs, SDK
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172dfae63fbfb95432a1635490ac703f7bbd9021
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
-ms.translationtype: HT
+ms.openlocfilehash: d40e437763ba3eb75daa80a3a1bbf55ba9d896c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852232"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574453"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>作法：使用 MSBuild 專案 SDK
+# <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 專案 SDK
 
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 版導入「專案 SDK」的概念，簡化了需要匯入屬性和目標之軟體開發套件的使用。
 
@@ -107,7 +107,7 @@ ms.locfileid: "67852232"
    此解析程式會找出 `Microsoft.NET.Sdk` 和 `Microsoft.NET.Sdk.Web` 等屬於產品一部分的專案 SDK。
 3. 預設的解析程式，可解析使用 MSBuild 安裝的 SDK。
 
-以 NuGet 為基礎的 SDK 解析程式支援在您的 [global.json](https://docs.microsoft.com/dotnet/core/tools/global-json) 中指定版本，讓您可以在一個位置控制專案 SDK 版本，而不需要在個別的專案中指定：
+以 NuGet 為基礎的 SDK 解析程式支援在您的 [global.json](/dotnet/core/tools/global-json) 中指定版本，讓您可以在一個位置控制專案 SDK 版本，而不需要在個別的專案中指定：
 
 ```json
 {
@@ -120,7 +120,7 @@ ms.locfileid: "67852232"
 
 在建置期間每個專案 SDK 都只能使用一個版本。  如果您參考同一個專案 SDK 的兩個不同版本，MSBuild 會發出警告。  如果您的 *global.json* 中已經指定了版本，建議您**不要**再於專案中指定版本。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [自訂組建](../msbuild/customize-your-build.md)

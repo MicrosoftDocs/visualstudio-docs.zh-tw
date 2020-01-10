@@ -3,21 +3,21 @@ title: XML 結構描述設計工具內容模型檢視
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67453571963ae22910842be0021e008632942de5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 830dbdda0027551a25747235e6ad9dffbbc11b23
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661532"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592909"
 ---
 # <a name="content-model-view"></a>內容模型檢視
 
-內容模型檢視提供區域和全域結構描述節點及其元件的圖形表示，包括簡單和複雜類型、項目、模型群組、屬性和屬性群組。 XML 註解和處理指示無法在內容模型檢視中檢視。 內容模型視圖包含兩個面板： [**工作區**] 面板，其中包含[XML 架構設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)中的節點清單，以及您可以在其中查看**工作區中所選取架構節點內容模型的設計介面**面板。 內容模型檢視也包含 XML 結構描述設計工具工具列和階層連結列。
+內容模型檢視提供區域和全域結構描述節點及其元件的圖形表示，包括簡單和複雜類型、項目、模型群組、屬性和屬性群組。 XML 註解和處理指示無法在內容模型檢視中檢視。 內容模型視圖包含兩個面板： [**工作區**] 面板，其中包含[XML 架構設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)中的節點清單，以及您可以在其中看到 [**工作區**] 面板中所選取架構節點之內容模型的設計介面。 內容模型檢視也包含 XML 結構描述設計工具工具列和階層連結列。
 
 在下圖中，[**工作區**] 面板包含六個架構節點。 [**工作區**] 面板中已選取 [`purchaseOrder`] 節點，並顯示在設計介面中。
 
@@ -69,7 +69,7 @@ ms.locfileid: "72661532"
 |**檢視程式碼**|在 XML 編輯器中開啟包含選取之節點的檔案。 在 xml**架構瀏覽器**中選取的專案也會在 xml 編輯器中選取。|
 |**屬性視窗**|開啟 [**屬性**] 視窗（如果尚未開啟）。 這個視窗會顯示與節點有關的資訊。|
 
-## <a name="properties-window"></a>屬性視窗
+## <a name="properties-window"></a>[屬性] 視窗
 
 使用滑鼠右鍵（內容）功能表一開始開啟 [**屬性**] 視窗。 根據預設，[**屬性**] 視窗會出現在 Visual Studio 的右下角。 當您按一下在內容模型視圖中呈現的節點時，該節點的屬性會顯示在 [**屬性**] 視窗中。
 
@@ -77,13 +77,13 @@ ms.locfileid: "72661532"
 
 當內容模型檢視正在作用中時，會啟用下列 XSD 設計工具工具列的按鈕。
 
-![XML 結構描述設計工具工具列](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
+![XML 結構描述設計工具列](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |選項|描述|
 |-|-----------------|
-|**顯示開始視圖**|切換至 [[開始] 視圖](../xml-tools/start-view.md)。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl** +**1**。|
-|**顯示內容模型視圖**|切換至[內容模型視圖](../xml-tools/content-model-view.md)。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl** +**2**。|
-|**顯示圖表視圖**|切換至[圖表視圖](../xml-tools/graph-view.md)。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl** +**3**。|
+|**顯示開始視圖**|切換至 [[開始] 視圖](../xml-tools/start-view.md)。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl**+**1**。|
+|**顯示內容模型視圖**|切換至[內容模型視圖](../xml-tools/content-model-view.md)。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl**+**2**。|
+|**顯示圖表視圖**|切換至[圖表視圖](../xml-tools/graph-view.md)。 這個視圖可以使用鍵盤快速鍵存取： **Ctrl**+**3**。|
 |**清除工作區**|清除工作空間和設計介面。|
 |**從工作區移除**|從工作空間和設計介面移除選取的節點。|
 |**從工作區移除所有但不選取**|從工作空間和設計介面移除未選取的節點。|

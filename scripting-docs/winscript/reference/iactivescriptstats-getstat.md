@@ -61,6 +61,6 @@ HRESULT GetStat(
 ## <a name="remarks"></a>備註  
  這個方法會傳回其中一個標準腳本統計資料。  
   
-## <a name="see-also"></a>請參閱  
- [IActiveScriptStats：： GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)    
+## <a name="see-also"></a>另請參閱  
+ [IActiveScriptStats：： GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
  [IActiveScriptStats 介面](../../winscript/reference/iactivescriptstats-interface.md)

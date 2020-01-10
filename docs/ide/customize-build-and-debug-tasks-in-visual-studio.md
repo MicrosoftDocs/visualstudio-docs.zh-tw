@@ -8,17 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9101db18c8c61f249d9f0b818a75024270a079
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d10b02908c63d177149f9113c37f71813ee09dc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652568"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567433"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>針對「開啟資料夾」自訂建置及對工作進行偵錯
 
@@ -28,7 +28,7 @@ Visual Studio 知道如何執行許多不同的語言和程式碼基底，但它
 
 使用下列 *.json* 檔案來自定您無專案的程式碼基底：
 
-|檔案名稱|用途|
+|[檔案名稱]|用途|
 |-|-|
 |*tasks.vs.json*|指定自訂建置命令和編譯器參數，以及任意 (非建置相關) 工作。<br>透過 [方案總管] 的右鍵功能表項目 [設定工作] 來存取。|
 |*launch.vs.json*|針對偵錯指定命令列引數。<br>透過 [方案總管] 的右鍵功能表項目 [偵錯並啟動設定] 來存取。|

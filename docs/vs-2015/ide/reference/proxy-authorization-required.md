@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7456e60b42b18ad706b951ee58ca5c33f05cabc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 848817691d7fae32f2240e3d6cac4451c4ce58c4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665722"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297818"
 ---
 # <a name="proxy-authorization-required"></a>所需的 Proxy 授權
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ ms.locfileid: "72665722"
 
 - 重新啟動 Visual Studio。 應該會出現 [Proxy 驗證] 對話方塊。 在對話方塊中輸入您的認證。
 
-- 如果上述步驟無法解決問題，這可能是因為您的 Proxy 伺服器沒有提示輸入 http://go.microsoft.com 位址的認證，而是提示輸入 *.visualStudio.com 位址的認證。 對於這些伺服器，您必須將下列 Url 新增至允許清單，以解除封鎖 Visual Studio 中的所有登入案例：
+- 如果上述步驟無法解決問題，這可能是因為您的 Proxy 伺服器沒有提示輸入 https://go.microsoft.com 位址的認證，而是提示輸入 *.visualStudio.com 位址的認證。 對於這些伺服器，您必須將下列 Url 新增至允許清單，以解除封鎖 Visual Studio 中的所有登入案例：
 
   - \* windows.net
 
-  - *.microsoftonline.com
+  - \* microsoftonline.com
 
-  - *.visualstudio.com
+  - *.visualStudio.com
 
   - *.microsoft.com
 
   - *.live.com
 
-- 您可以從允許清單中移除 http://go.microsoft.com 位址，如此一來，當 Visual Studio 重新開機時，[proxy 驗證] 對話方塊會同時顯示 http://go.microsoft.com 位址和伺服器端點。
+- 您可以從允許清單中移除 https://go.microsoft.com 位址，如此一來，當 Visual Studio 重新開機時，[proxy 驗證] 對話方塊會同時顯示 https://go.microsoft.com 位址和伺服器端點。
 
 - 如果您想要在 proxy 中使用預設認證，請執行下列動作：
 
@@ -51,6 +51,6 @@ ms.locfileid: "72665722"
       </defaultProxy>
       ```
 
-      在 `proxyaddress="<http://<yourproxy:port#>` 中，為您的網路插入正確的 proxy 位址。
+      在 `proxyaddress="<http://<yourproxy:port#>`中，為您的網路插入正確的 proxy 位址。
 
-- 遵循[此 blog 文章](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx)中的指示，加入可讓您使用 proxy 的程式碼。
+- 遵循[此 blog 文章](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/)中的指示，加入可讓您使用 proxy 的程式碼。

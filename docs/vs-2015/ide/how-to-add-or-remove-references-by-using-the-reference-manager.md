@@ -23,14 +23,14 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04b6573b6cd04b5a061a40025a9872d9972e35cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645489"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300156"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用參考管理員新增或移除參考
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>How to: Add or Remove References By Using the Reference Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 針對由您本身、Microsoft 或其他公司所開發的元件，您可以使用 [參考管理員] 對話方塊新增並管理這些元件的參考。 如果您正在開發通用 Windows app，您的專案會自動參考所有正確的 Windows SDK DLL。 如果您正在開發 .NET 應用程式，您的專案會自動參考 mscorlib.dll。 某些 .NET API 是在您手動加入的元件中公開。 您必須手動加入對 COM 元件或自訂元件的參考。
@@ -54,7 +54,7 @@ ms.locfileid: "72645489"
 - 瀏覽，包含 [最近] 子群組。
 
 ## <a name="assemblies-tab"></a>組件索引標籤
- [組件] 索引標籤會列出可供參考的所有 .NET Framework 組件。 [組件] 索引標籤不會列出全域組件快取 (GAC) 中的任何組件，因為 GAC 中的組件是執行階段環境的一部分。 如果您部署或複製的應用程式中包含在 GAC 中註冊之元件的參考，則不論 [複製到本機] 設定為何，該組件都不會隨著應用程式一起部署或複製。 如需詳細資訊，請參閱[專案參考](http://go.microsoft.com/fwlink/?LinkId=238512)。
+ [組件] 索引標籤會列出可供參考的所有 .NET Framework 組件。 [組件] 索引標籤不會列出全域組件快取 (GAC) 中的任何組件，因為 GAC 中的組件是執行階段環境的一部分。 如果您部署或複製的應用程式中包含在 GAC 中註冊之元件的參考，則不論 [複製到本機] 設定為何，該組件都不會隨著應用程式一起部署或複製。 如需詳細資訊，請參閱[專案參考](https://go.microsoft.com/fwlink/?LinkId=238512)。
 
  當您手動將參考加入任一個 EnvDTE 命名空間 (EnvDTE、EnvDTE80、EnvDTE90、EnvDTE90a 或 EnvDTE100) 的參考時，請在 [屬性] 視窗中將參考的 [內嵌 Interop 類型] 屬性設定成 False。 如果將此屬性設成 True，可能會導致組建問題，因為某些 EnvDTE 屬性是無法內嵌的。
 
@@ -215,5 +215,5 @@ ms.locfileid: "72645489"
 ## <a name="search"></a>搜尋
  [參考管理員] 對話方塊中的搜尋列會在成為焦點的索引標籤上運作。 好比說，如果使用者在 [方案] 索引標籤成為焦點時於搜尋列中鍵入 "System"，除非方案擁有包含 "System" 的專案名稱，否則搜尋不會傳回任何結果。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [筆尖操作說明：使用 [加入參考] 對話方塊來加入或移除參考](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)[管理專案中的參考](../ide/managing-references-in-a-project.md)

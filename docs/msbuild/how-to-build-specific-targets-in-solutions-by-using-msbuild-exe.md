@@ -7,19 +7,19 @@ helpviewer_keywords:
 - msbuild.exe, building specific targets in a solution
 - MSBuild, msbuild.exe
 ms.assetid: f46feb9b-4c16-4fec-b6e1-36a959692ba3
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c04d12ccc17424a2f938c04751d4e3d4c9f05f
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 921b5d2d4aad7cfe48b7f6cc9cb802fde9520e19
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263782"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585254"
 ---
-# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>作法：使用 MSBuild.exe 在方案中建置特定目標
+# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>如何：使用 MSBuild.exe 在方案中建置特定目標
 您可以使用 *MSBuild.exe*，在方案中建置特定專案的特定目標。
 
 #### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>在方案中建置特定專案的特定目標
@@ -41,8 +41,8 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 除非您需要這個內部檢視，否則請勿以此環境變數設定來建置。 此設定可能會在解決方案中建置專案時造成問題。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [命令列參考](../msbuild/msbuild-command-line-reference.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
-- [MSBuild](../msbuild/msbuild.md)
+- [ MSBuild](../msbuild/msbuild.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

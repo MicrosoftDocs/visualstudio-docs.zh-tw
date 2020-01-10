@@ -3,20 +3,20 @@ title: 將類型移到對應的檔案重構
 description: 將類型移到具有相同名稱的個別檔案。 以滑鼠右鍵按一下類型、選取 [快速動作與重構]，然後為 [移動類型] 選取 <TypeName>.cs。
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba822981ade5ebdc191732e0a32b02a9a4005fb4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba082e90c2447d1da7510ce16f888f67a52b5ac0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666480"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585267"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>將類型移到對應的檔案重構
 
@@ -34,7 +34,7 @@ ms.locfileid: "72666480"
 
 ## <a name="how-to"></a>操作說明
 
-1. 將游標放在其中定義它的類型名稱內。 例如:
+1. 將游標放在其中定義它的類型名稱內。 例如：
 
    ```csharp
    class Person

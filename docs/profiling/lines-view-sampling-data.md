@@ -8,14 +8,15 @@ ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed2c552baa07bf0f3d2a395cbdfbf1d5346178c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ff4d851937111400002de531696b9b69aec20ba9
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435608"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778579"
 ---
 # <a name="lines-view---sampling-data"></a>程式行檢視 - 取樣資料
 取樣資料的 [程式行] 檢視會針對在執行分析期間收集樣本時執行的陳述式，列出效能資料。
@@ -41,10 +42,10 @@ ms.locfileid: "63435608"
 
   根據定義，陳述式不會呼叫其他函式。 因此只會列出互斥值。
 
-|資料行|說明|
+|資料行|描述|
 |------------|-----------------|
 |**處理序 ID**|分析執行的處理序 ID (PID)。|
-|**處理序名稱**|處理序的名稱。|
+|**處理序名稱**|處理程序的名稱。|
 |**模組名稱**|包含該函式行的模組名稱。|
 |**模組路徑**|包含該函式行的模組路徑。|
 |**原始程式檔**|包含此函式行的原始程式檔。|
@@ -55,9 +56,9 @@ ms.locfileid: "63435608"
 |**原始程式碼結尾行**|收集這個樣本的原始程式檔中的結尾行號。|
 |**原始程式碼開頭字元**|收集這個樣本的原始程式檔行中，起始字元的位移。|
 |**原始程式碼結尾字元**|收集這個樣本的原始程式檔行中，結尾字元的位移。|
-|**程式行名稱**|分析工具產生的程式行識別項，該程式行使用下列語法：`Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number End`**,**`Character End`**]**|
+|**程式行名稱**|分析工具產生的程式行識別項，該程式行使用下列語法：`Source File` **;[** `Line Number Start` **,** `Character Start` **]->;[** `Line Number End` **,** `Character End` **]**|
 |**專有樣本**|當正在執行函式行時所收集的總樣本數。|
 |**專有樣本 %**|執行分析期間，執行函式行時所收集的所有樣本的百分比。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [程式行檢視 - 取樣](../profiling/lines-view-dotnet-memory-sampling-data.md)

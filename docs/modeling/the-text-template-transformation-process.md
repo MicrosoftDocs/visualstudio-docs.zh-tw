@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 518c06f8630ad9fa7742f7b3e85ac27263cd0a86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605799"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565860"
 ---
 # <a name="the-text-template-transformation-process"></a>文字範本轉換流程
 文字模板轉換程式會接受文字模板檔案做為輸入，並產生新的文字檔做為輸出。 例如，您可以使用文字模板來產生 Visual Basic 或C#程式碼，也可以產生 HTML 報表。
@@ -27,9 +27,9 @@ ms.locfileid: "72605799"
 
 |元件|描述|可自訂（是/否）|
 |-|-|-|
-|搜尋引擎優化|引擎元件控制文字模板轉換進程|否。|
-|主機|主機是引擎與使用者環境之間的介面。 Visual Studio 是文字轉換程式的主機。|可以。 您可以撰寫自訂主機。|
-|指示詞處理器|指示詞處理器是在文字模板中處理指示詞的類別。 您可以使用指示詞，從輸入來源將資料提供給文字模板。|可以。 您可以撰寫自訂指示詞處理器|
+|引擎|引擎元件控制文字模板轉換進程|No。|
+|主機|主機是引擎與使用者環境之間的介面。 Visual Studio 是文字轉換程式的主機。|是， 您可以撰寫自訂主機。|
+|指示詞處理器|指示詞處理器是在文字模板中處理指示詞的類別。 您可以使用指示詞，從輸入來源將資料提供給文字模板。|是， 您可以撰寫自訂指示詞處理器|
 
 ## <a name="the-engine"></a>引擎
  引擎會以字串的形式接收來自主機的範本，以處理轉換進程中使用的所有檔案。 然後，引擎會要求主機找出任何自訂指示詞處理器和環境的其他層面。 然後，引擎會編譯並執行產生的轉換類別。 引擎會將產生的文字傳回到主機，這通常會將文字儲存至檔案。

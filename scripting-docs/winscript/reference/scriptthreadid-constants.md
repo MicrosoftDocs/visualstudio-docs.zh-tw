@@ -42,10 +42,10 @@ typedef DWORD SCRIPTTHREADID;
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|所有線程。|  
   
 ## <a name="remarks"></a>備註  
- @No__t_0 類型是由 `IActiveScript::GetCurrentScriptThreadID`、`IActiveScript::GetScriptThreadID`、`IActiveScript::GetScriptThreadState` 和 `IActiveScript::InterruptScriptThread` 所使用，但常數只能由 `IActiveScript::GetScriptThreadState` 和 `IActiveScript::InterruptScriptThread` 使用。  
+ `SCRIPTTHREADID` 類型是由 `IActiveScript::GetCurrentScriptThreadID`、`IActiveScript::GetScriptThreadID`、`IActiveScript::GetScriptThreadState`和 `IActiveScript::InterruptScriptThread`所使用，但常數只能由 `IActiveScript::GetScriptThreadState` 和 `IActiveScript::InterruptScriptThread`使用。  
   
-## <a name="see-also"></a>請參閱  
- [IActiveScript：： GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)    
- [IActiveScript：： GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)    
- [IActiveScript：： GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)    
+## <a name="see-also"></a>另請參閱  
+ [IActiveScript：： GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   
+ [IActiveScript：： GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)   
+ [IActiveScript：： GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

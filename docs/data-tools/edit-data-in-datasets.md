@@ -9,17 +9,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], editing data
 - data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98b19d889ab9afc651939b27120ad132d8332c14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b51b5b4be12f76e2237ff93659617e1c1843722a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648504"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586649"
 ---
 # <a name="edit-data-in-datasets"></a>編輯資料集中的資料
 編輯資料表中的資料，就像您在任何資料庫中編輯資料表中的資料一樣。 此程式可以包含插入、更新和刪除資料表中的記錄。 在資料系結表單中，您可以指定哪些欄位可供使用者編輯。 在這些情況下，資料系結基礎結構會處理所有變更追蹤，以便稍後將變更傳送回資料庫。 如果您以程式設計方式對資料進行編輯，而且想要將這些變更傳回至資料庫，則必須使用為您執行變更追蹤的物件和方法。
@@ -27,7 +27,7 @@ ms.locfileid: "72648504"
 除了變更實際資料以外，您也可以查詢 <xref:System.Data.DataTable> 以傳回特定的資料列。 例如，您可以查詢個別的資料列、特定的資料列版本（原始和建議的資料列）、已變更的資料列，或有錯誤的資料列。
 
 ## <a name="to-edit-rows-in-a-dataset"></a>編輯資料集中的資料列
-若要編輯 <xref:System.Data.DataTable> 中的現有資料列，您必須找出您想要編輯的 <xref:System.Data.DataRow>，然後將更新的值指派給所需的資料行。
+若要編輯 <xref:System.Data.DataTable>中的現有資料列，您必須找出您想要編輯的 <xref:System.Data.DataRow>，然後將更新的值指派給所需的資料行。
 
 如果您不知道您想要編輯之資料列的索引，請使用 `FindBy` 方法，依主要金鑰進行搜尋：
 
@@ -42,23 +42,23 @@ ms.locfileid: "72648504"
 ## <a name="to-insert-new-rows-into-a-dataset"></a>若要將新的資料列插入 dataset
 使用資料繫結控制項的應用程式通常會透過[BindingNavigator 控制項](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)上的 [**加入新**的] 按鈕來加入新的記錄。
 
-若要手動將新記錄加入至資料集，請在 DataTable 上呼叫方法來建立新的資料列。 然後，將資料列新增至 <xref:System.Data.DataTable> 的 <xref:System.Data.DataRow> 集合（<xref:System.Data.DataTable.Rows%2A>）：
+若要手動將新記錄加入至資料集，請在 DataTable 上呼叫方法來建立新的資料列。 然後，將資料列新增至 <xref:System.Data.DataTable>的 <xref:System.Data.DataRow> 集合（<xref:System.Data.DataTable.Rows%2A>）：
 
 [!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
 [!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]
 
-為了保留資料集將更新傳送至資料來源所需的資訊，請使用 <xref:System.Data.DataRow.Delete%2A> 方法來移除資料表中的資料列。 例如，如果您的應用程式使用 TableAdapter （或 <xref:System.Data.Common.DataAdapter>），TableAdapter 的 `Update` 方法會刪除資料庫中具有 <xref:System.Data.DataRowState.Deleted> <xref:System.Data.DataRow.RowState%2A> 的資料列。
+為了保留資料集將更新傳送至資料來源所需的資訊，請使用 <xref:System.Data.DataRow.Delete%2A> 方法來移除資料表中的資料列。 例如，如果您的應用程式使用 TableAdapter （或 <xref:System.Data.Common.DataAdapter>），TableAdapter 的 `Update` 方法會刪除資料庫中具有 <xref:System.Data.DataRowState.Deleted><xref:System.Data.DataRow.RowState%2A> 的資料列。
 
 如果您的應用程式不需要將更新傳送回資料來源，則可以直接存取資料列集合（<xref:System.Data.DataRowCollection.Remove%2A>）來移除記錄。
 
 #### <a name="to-delete-records-from-a-data-table"></a>若要從資料表中刪除記錄
 
-- 呼叫 <xref:System.Data.DataRow> 的 <xref:System.Data.DataRow.Delete%2A> 方法。
+- 呼叫 <xref:System.Data.DataRow>的 <xref:System.Data.DataRow.Delete%2A> 方法。
 
      這個方法不會實際移除記錄。 相反地，它會標示要刪除的記錄。
 
     > [!NOTE]
-    > 如果您取得 <xref:System.Data.DataRowCollection> 的 count 屬性，則產生的計數會包含已標示為要刪除的記錄。 若要取得未標示為要刪除之記錄的精確計數，您可以對集合進行迴圈查看每筆記錄的 <xref:System.Data.DataRow.RowState%2A> 屬性。 （標記為刪除的記錄具有 <xref:System.Data.DataRowState.Deleted> 的 <xref:System.Data.DataRow.RowState%2A>。）或者，您也可以建立資料集的資料檢視，以便根據資料列狀態進行篩選，並從該處取得 count 屬性。
+    > 如果您取得 <xref:System.Data.DataRowCollection>的 count 屬性，則產生的計數會包含已標示為要刪除的記錄。 若要取得未標示為要刪除之記錄的精確計數，您可以對集合進行迴圈查看每筆記錄的 <xref:System.Data.DataRow.RowState%2A> 屬性。 （標記為刪除的記錄具有 <xref:System.Data.DataRowState.Deleted>的 <xref:System.Data.DataRow.RowState%2A>。）或者，您也可以建立資料集的資料檢視，以便根據資料列狀態進行篩選，並從該處取得 count 屬性。
 
 下列範例顯示如何呼叫 <xref:System.Data.DataRow.Delete%2A> 方法，將 `Customers` 資料表中的第一個資料列標記為已刪除：
 
@@ -70,7 +70,7 @@ ms.locfileid: "72648504"
 
 在每個資料列中，追蹤變更的方式有兩種：
 
-- 每個資料列都包含其 <xref:System.Data.DataRow.RowState%2A> 的相關資訊（例如，<xref:System.Data.DataRowState.Added>、<xref:System.Data.DataRowState.Modified>、<xref:System.Data.DataRowState.Deleted> 或 <xref:System.Data.DataRowState.Unchanged>）。
+- 每個資料列都包含其 <xref:System.Data.DataRow.RowState%2A> 的相關資訊（例如，<xref:System.Data.DataRowState.Added>、<xref:System.Data.DataRowState.Modified>、<xref:System.Data.DataRowState.Deleted>或 <xref:System.Data.DataRowState.Unchanged>）。
 
 - 每個已變更的資料列都包含該資料列的多個版本（<xref:System.Data.DataRowVersion>）、原始版本（變更前）和目前版本（變更之後）。 在暫止變更的期間（您可以回應 <xref:System.Data.DataTable.RowChanging> 事件的時間），也會提供第三個版本（也就是建議的版本）。
 
@@ -80,7 +80,7 @@ ms.locfileid: "72648504"
 
 - 呼叫資料集的 <xref:System.Data.DataSet.HasChanges%2A> 方法，以檢查是否有變更的資料列。
 
-下列範例示範如何檢查 <xref:System.Data.DataSet.HasChanges%2A> 方法的傳回值，以偵測名為 `NorthwindDataset1` 的資料集是否有任何已變更的資料列：
+下列範例示範如何檢查 <xref:System.Data.DataSet.HasChanges%2A> 方法的傳回值，以偵測名為 `NorthwindDataset1`的資料集是否有任何已變更的資料列：
 
 [!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
 [!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]
@@ -98,7 +98,7 @@ ms.locfileid: "72648504"
 [!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
 
 ## <a name="to-locate-rows-that-have-errors"></a>找出有錯誤的資料列
-使用個別資料行和資料列時，您可能會遇到錯誤。 您可以檢查 `HasErrors` 屬性，以判斷 <xref:System.Data.DataSet>、<xref:System.Data.DataTable> 或 <xref:System.Data.DataRow> 中是否有錯誤。
+使用個別資料行和資料列時，您可能會遇到錯誤。 您可以檢查 `HasErrors` 屬性，以判斷 <xref:System.Data.DataSet>、<xref:System.Data.DataTable>或 <xref:System.Data.DataRow>中是否有錯誤。
 
 1. 檢查 `HasErrors` 屬性，以查看資料集中是否有任何錯誤。
 

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, Message task
 - Message task [MSBuild]
 ms.assetid: 2293309d-42b6-46dc-9684-8c146f66bc28
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5efcc41a82cab32172aa395b488535f2777b9e13
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: c5a2e2a1adb810a8468d318298747eec226846df
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681161"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592174"
 ---
 # <a name="message-task"></a>Message 工作
 在建置期間記錄訊息。
@@ -31,7 +31,7 @@ ms.locfileid: "68681161"
 ## <a name="parameters"></a>參數
  下表說明 `Message` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`Importance`|選擇性的 `String` 參數。<br /><br /> 指定訊息的重要性。 此參數的值可以是 `high`、`normal` 或 `low`。 預設值為 `normal`。|
 |`Text`|選擇性的 `String` 參數。<br /><br /> 要記錄的錯誤文字。|
@@ -58,6 +58,6 @@ ms.locfileid: "68681161"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)

@@ -7,15 +7,15 @@ f1_keywords:
 dev_langs:
 - CSharp
 - VB
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7aace70ce773c9051367bf88bea1d798eb069bcf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1abe14c443432d0da0ab0c53b33f9321034228be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668629"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592928"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>在 XAML 設計工具中繫結至資料
 
@@ -23,7 +23,7 @@ ms.locfileid: "72668629"
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>若要建立類別以做為資料來源
 
-1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
+1. 在 [檔案] 功能表上，依序選擇 [新增] 和 [專案] > 。
 
 1. 在 [新增專案] 對話方塊中，選擇 [Visual C#] 或 [Visual Basic] 節點，並展開 [Windows 桌面] 節點，然後選擇 [WPF 應用程式] 範本。
 

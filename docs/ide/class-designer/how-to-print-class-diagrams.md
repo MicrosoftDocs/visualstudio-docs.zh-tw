@@ -6,17 +6,17 @@ helpviewer_keywords:
 - printing [Visual Studio], class diagrams
 - class diagrams, printing
 ms.assetid: 62c87425-3446-41fb-943c-1f86397883c8
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 211cb0aab89dd148b408efaef9c40f5bc25c41aa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f259a36cb35b69954d99a2104903fb973930af42
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631559"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596693"
 ---
 # <a name="how-to-print-class-diagrams"></a>如何：列印類別圖表
 

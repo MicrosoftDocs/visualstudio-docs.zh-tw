@@ -2,8 +2,8 @@
 title: 擷取介面重構
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 15da8bdf1a3df60a7ad4816ce578ec5672c85ecf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654421"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595666"
 ---
 # <a name="extract-an-interface-refactoring"></a>擷取介面重構
 
@@ -64,7 +64,7 @@ ms.locfileid: "72654421"
    | **新檔名** | 產生的檔案名稱，該檔案會包含介面。 與介面名稱一樣，此名稱會預設為 I*ClassName*，其中 *ClassName* 是您在上方選取的類別名稱。 您也可以選取 [Add to current file] \(新增至目前的檔案\) 選項。 |
    | **選取公用成員以形成介面** | 要擷取到介面中的項目。 您可以視需要選取所需數量的項目。 |
 
-4. 選擇 [確定]。
+4. 選擇 [ **確定**]。
 
    系統會在指定名稱的檔案中建立介面。 此外，您選取的類別會實作該介面。
 

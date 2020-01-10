@@ -6,17 +6,17 @@ helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 860f322724618ddb99bd9ab39eeefa488d9a71c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666898"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593482"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 文字範本包含將透過它產生的文字。 例如，建立網頁的範本將會包含 "\<html > ..."以及 HTML 網頁的所有其他標準部分。 插入至範本的是*控制區塊*，也就是程式碼的片段。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。
@@ -155,7 +155,7 @@ private int Square(int i)
  如需控制區塊的詳細資訊，請參閱[文字模板控制區塊](../modeling/text-template-control-blocks.md)。
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>類別功能區塊可以包含文字區塊。
- 您可以撰寫可產生文字的方法。 例如:
+ 您可以撰寫可產生文字的方法。 例如：
 
 ```
 List of Squares:
@@ -185,7 +185,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如:
+ 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如：
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -236,9 +236,9 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- 將檔案**載入為可導覽的模型**。 功能較強大的方法是將資料讀取為您文字範本程式碼可以巡覽的模型。 例如，您可以載入 XML 檔案，並使用 XPath 運算式對其進行巡覽。 您也可以使用[xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)來建立一組可供您讀取 XML 資料的類別。
+ 將檔案**載入為可導覽的模型**。 功能較強大的方法是將資料讀取為您文字範本程式碼可以巡覽的模型。 例如，您可以載入 XML 檔案，並使用 XPath 運算式對其進行巡覽。 您也可以使用[xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)來建立一組可供您讀取 XML 資料的類別。
 
- **在圖表或表單中編輯模型檔案。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 提供的工具可讓您將模型編輯為圖表或 Windows form。 這樣可以更輕鬆地與所產生應用程式的使用者討論此模型。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 也會建立一組反映模型結構的強型別類別。 如需詳細資訊，請參閱[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
+ **在圖表或表單中編輯模型檔案。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 提供的工具可讓您將模型編輯為圖表或 Windows form。 這樣可以更輕鬆地與所產生應用程式的使用者討論此模型。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 也會建立一組強型別的類別，以反映模型的結構。 如需詳細資訊，請參閱[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>設計階段範本中的相對檔案路徑
  在[設計階段文字模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)中，如果您想要參考與文字模板相對之位置中的檔案，請使用 `this.Host.ResolvePath()`。 您也必須在 `hostspecific="true"` 指示詞中設定 `template`：

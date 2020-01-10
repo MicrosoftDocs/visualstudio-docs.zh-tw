@@ -46,6 +46,6 @@ HRESULT Detach();
 ## <a name="remarks"></a>備註  
  這個方法會從專案樹狀結構中移除這個應用程式節點。  
   
-## <a name="see-also"></a>請參閱  
- [IDebugApplicationNode：： Attach](../../winscript/reference/idebugapplicationnode-attach.md)    
+## <a name="see-also"></a>另請參閱  
+ [IDebugApplicationNode：： Attach](../../winscript/reference/idebugapplicationnode-attach.md)   
  [IDebugApplicationNode 介面](../../winscript/reference/idebugapplicationnode-interface.md)

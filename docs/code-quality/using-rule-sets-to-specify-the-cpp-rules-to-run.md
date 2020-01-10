@@ -18,7 +18,7 @@ ms.locfileid: "72445617"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>使用規則集指定要執行C++的規則
 
-在 Visual Studio 中，您可以建立和修改自訂*規則集*，以符合與程式碼分析相關聯的特定專案需求。 預設的規則集會儲存在 `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets` 中。
+在 Visual Studio 中，您可以建立和修改自訂*規則集*，以符合與程式碼分析相關聯的特定專案需求。 預設的規則集會儲存在 `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`中。
 
 **Visual Studio 2017 15.7 版和更新版本：** 您可以使用任何文字編輯器來建立自訂規則集，並將其套用在命令列組建中，不論您使用的組建系統為何。 如需詳細資訊，請參閱[/analyze：規則集](/cpp/build/reference/analyze-code-analysis)。
 
@@ -38,7 +38,7 @@ ms.locfileid: "72445617"
 
      \-或-
 
-   - 選擇 **\<Browse .。。>** ，指定不在清單中的現有規則集。
+   - 選擇 **\<流覽 .。。>** ，指定不在清單中的現有規則集。
 
 4. 選擇 [**開啟**] 以顯示規則集編輯器中的規則。
 
@@ -66,7 +66,7 @@ ms.locfileid: "72445617"
 
 - 若要折迭所有群組中的規則，**請選擇 [全部折**迭]。
 
-- 若要變更規則分組依據的欄位，請從 [**分組方式**] 清單中選擇欄位。 若要顯示未分組的規則，請選擇 [ **\<None >** ]。
+- 若要變更規則分組依據的欄位，請從 [**分組方式**] 清單中選擇欄位。 若要顯示未分組的規則，請選擇 [ **\<無] >** 。
 
 - 若要在規則資料行中新增或移除欄位，請選擇 [**資料行選項**]。
 
@@ -82,7 +82,7 @@ ms.locfileid: "72445617"
 
 ## <a name="to-create-a-rule-set-in-a-text-editor"></a>在文字編輯器中建立規則集
 
-您可以在文字編輯器中建立自訂規則集，並將它儲存在任何具有 @no__t 0 擴充功能的位置，然後使用[/analyze：規則集](/cpp/build/reference/analyze-code-analysis)編譯器選項來套用。
+您可以在文字編輯器中建立自訂規則集，並將它儲存在任何具有 `.ruleset` 副檔名的位置，然後使用[/analyze：規則集](/cpp/build/reference/analyze-code-analysis)編譯器選項來套用。
 
 下列範例顯示基本的規則集檔案，可供您做為起點：
 

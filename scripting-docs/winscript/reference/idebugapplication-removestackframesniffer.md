@@ -47,9 +47,9 @@ HRESULT RemoveStackFrameSniffer(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- @No__t_0 方法會從此應用程式移除堆疊框架列舉值提供者。  
+ `RemoveStackFrameSniffer` 方法會從此應用程式移除堆疊框架列舉值提供者。  
   
-## <a name="see-also"></a>請參閱  
- [IDebugApplication：： AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)    
+## <a name="see-also"></a>另請參閱  
+ [IDebugApplication：： AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)   
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugStackFrameSniffer 介面](../../winscript/reference/idebugstackframesniffer-interface.md)

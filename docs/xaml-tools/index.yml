@@ -7,15 +7,15 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-designers
   ms.topic: landing-page
-  author: gewarren
-  ms.author: gewarren
+  author: jillre
+  ms.author: jillfra
   ms.date: 10/10/2019
-  ms.openlocfilehash: 8daaad2dcabfb3636e91d81368e4d56666e37e30
-  ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+  ms.openlocfilehash: 45f9459ff4778b58ae3d553a03b2e5c1773614b6
+  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/24/2019
-  ms.locfileid: "72888554"
+  ms.lasthandoff: 11/22/2019
+  ms.locfileid: "74316419"
 landingContent:
 - title: 了解 XAML
   linkLists:

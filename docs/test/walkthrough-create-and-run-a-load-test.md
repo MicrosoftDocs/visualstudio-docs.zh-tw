@@ -7,15 +7,15 @@ helpviewer_keywords:
 - unit tests, load test walkthrough
 - load tests, walkthrough
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 78bce7f8a05032fa8654021d89598ede67fa08c0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1c2ade11d4bffc3c9fdf812cb38d21cd742c9845
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659682"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590848"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>逐步解說：建立和執行包含單元測試的負載測試
 
@@ -47,7 +47,7 @@ ms.locfileid: "72659682"
 
      [加入新的專案] 對話方塊隨即顯示。
 
-3. 在 [加入新的專案] 對話方塊中，展開 [Visual C#]，然後選擇 [測試]。 在範本清單中，選擇 [Web 效能和負載測試專案]，然後在 [名稱] 欄位中，鍵入 `BankLoadTest`。 選擇 [確定]。
+3. 在 [加入新的專案] 對話方塊中，展開 [Visual C#]，然後選擇 [測試]。 在範本清單中，選擇 [Web 效能和負載測試專案]，然後在 [名稱] 欄位中，鍵入 `BankLoadTest`。 選擇 [ **確定**]。
 
      BankLoadTest Web 效能和負載測試專案會加入至方案。
 

@@ -16,17 +16,17 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 996f0336742441e565d16b0fe491e846d0d24329
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654122"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590523"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 
@@ -39,12 +39,12 @@ ms.locfileid: "72654122"
 |**圖表**|**顯示**|
 |-|-|
 |[相依性圖表︰方針](../modeling/layer-diagrams-guidelines.md)<br /><br /> [相依性圖表︰參考](../modeling/layer-diagrams-reference.md)|系統的高階架構|
-|Code Map<br /><br /> [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)|現有程式碼中的相依性和其他關聯性|
+|程式碼對應<br /><br /> [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)|現有程式碼中的相依性和其他關聯性|
 |程式碼產生的類別圖<br /><br /> [使用類別圖表 (類別設計工具)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|.NET 程式碼中的類型及其關聯性|
 
 ## <a name="related-tasks"></a>相關工作
 
-|**本文**|**Task**|
+|**主題**|**Task**|
 |-|-|
 |[視覺化程式碼](../modeling/visualize-code.md)|建立 code map 和相依性圖表，以進一步瞭解不熟悉的程式碼。|
 |[模型使用者需求](../modeling/model-user-requirements.md)|使用模型來釐清和溝通使用者的需求。|
@@ -55,5 +55,5 @@ ms.locfileid: "72654122"
 
 ## <a name="resources"></a>資源
 
-- [Visual Studio 視覺效果 & 模型工具論壇](http://go.microsoft.com/fwlink/?LinkId=184720)
+- [Visual Studio 視覺效果 & 模型工具論壇](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)
 - [Visual Studio 擴充性論壇](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

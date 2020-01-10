@@ -44,6 +44,6 @@ HRESULT OnFunctionEnterByName(
 ## <a name="remarks"></a>備註  
  針對 DOM 呼叫，腳本引擎會呼叫這個方法，而不是呼叫[IActiveScriptProfilerCallback：： OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)。 這是因為 DOM 中有大量的唯一方法和屬性。  
   
-## <a name="see-also"></a>請參閱  
- [IActiveScriptProfilerCallback2：： OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)    
+## <a name="see-also"></a>另請參閱  
+ [IActiveScriptProfilerCallback2：： OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)   
  [IActiveScriptProfilerCallback2 介面](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

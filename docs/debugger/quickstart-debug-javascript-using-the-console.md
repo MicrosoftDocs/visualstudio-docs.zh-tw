@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a92daf09f033da020fe54369a20483686c72f81
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ad037a0e71bc2156fe1c604d183a5e02ae914688
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730424"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187557"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用主控台的 Debug JavaScript
 
@@ -44,7 +44,7 @@ ms.locfileid: "72730424"
 > [!TIP]
 > 如果 [JavaScript 主控台] 視窗已關閉，請選擇 [偵錯]>  >  以重新開啟。 只有在指令碼偵錯工作階段期間，才會出現此視窗。
 
-使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱重新整理[應用程式（JavaScript）](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯工具功能的詳細資訊，例如使用 DOM 總管和設定中斷點，請參閱[快速入門： Visual Studio 中的 DEBUG HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)和[debug apps](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)。
+使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱重新整理[應用程式（JavaScript）](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯工具功能的詳細資訊，例如使用 DOM 總管和設定中斷點，請參閱[快速入門： Visual Studio 中的 DEBUG HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)和[debug apps](debugging-windows-store-and-windows-universal-apps.md)。
 
 ## <a name="InteractiveConsole"></a> 使用 JavaScript 主控台視窗進行偵錯
 下列步驟會建立 `FlipView` App，並顯示如何以互動方式為 JavaScript 程式碼錯誤偵錯。
@@ -250,7 +250,7 @@ ms.locfileid: "72730424"
 您也可以使用 `cd` 命令來切換執行內容，但是必須知道另一個執行內容的名稱，而且您使用的參考必須在範圍內。 [目標] 清單提供更好的方式讓您存取其他執行內容。
 
 ## <a name="see-also"></a>請參閱
-- [在 Visual Studio 中偵錯應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [在 Visual Studio 中偵錯應用程式](debugging-windows-store-and-windows-universal-apps.md)
 - [JavaScript 主控台命令](../debugger/javascript-console-commands.md?view=vs-2017)
 - [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)

@@ -1,16 +1,16 @@
 ---
 title: 啟用訂用帳戶
 description: 本文章說明如何使用您的 Microsoft 帳戶來啟用您的訂用帳戶，並解除 Visual Studio for Mac 中功能的鎖定
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 7acef72e3e1768d0250e0dd7ff2b587277d133ec
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: c3f8aef1b784b0261eeba6408a8cef0144e5fcac
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872306"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984995"
 ---
 # <a name="enable-subscription"></a>啟用訂用帳戶
 
@@ -44,6 +44,6 @@ Visual Studio for Mac 提供三種不同的訂用帳戶層級供您選擇，可�
 
 如果已針對沒有網際網路連線的電腦購買了 Visual Studio Enterprise 2017 for Mac，則可以在不啟用的狀況下繼續使用 Visual Studio for Mac，但無法使用 Xamarin 偵測器、Xamarin Profiler 和內嵌組件功能。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [登入 Visual Studio (Windows 上)](/visualstudio/ide/signing-in-to-visual-studio)

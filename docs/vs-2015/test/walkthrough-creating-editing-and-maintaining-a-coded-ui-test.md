@@ -8,28 +8,28 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2891a01590f2970fc2e68ea7bc2d57506b12d26b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657112"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302058"
 ---
-# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>逐步解說：建立、編輯和維護自動程式化 UI 測試
+# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>逐步解說：建立、編輯和維護自動程式碼 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在這個逐步解說中，您將建立簡單的 Windows Presentation Foundation (WPF) 應用程式，以示範如何建立、編輯和維護自動程式化 UI 測試。 本逐步解說提供解決方案用來修正各種因時間問題和控制項重構而中斷的測試。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  在本逐步解說中，您將會需要：
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 ### <a name="create-a-simple-wpf-application"></a>建立簡單 WPF 應用程式
 
 1. 在 [檔案] 功能表上，指向 [新增]，然後選取 [專案]。
 
-     [ **新增專案** ] 對話方塊隨即出現。
+     此時會出現 [新增專案] 對話方塊。
 
 2. 在 [已安裝] 窗格中，展開 [Visual C#]，然後選取 [Windows 桌面]。
 
@@ -41,7 +41,7 @@ ms.locfileid: "72657112"
 
 6. 指定要儲存專案的資料夾。 在 [位置] 文字方塊中輸入資料夾的名稱。
 
-7. 選擇 [確定]。
+7. 選擇 [ **確定**]。
 
      WPF Designer for Visual Studio 隨即開啟，並顯示專案的 MainWindow。
 
@@ -133,7 +133,7 @@ ms.locfileid: "72657112"
 
 5. 在中間窗格中選取 [自動程式化 UI 測試專案] 範本。
 
-6. 選擇 [確定]。
+6. 選擇 [ **確定**]。
 
      在 [方案總管] 中，名為 **CodedUITestProject1** 的新自動程式化 UI 測試專案會加入至您的方案。
 
@@ -141,7 +141,7 @@ ms.locfileid: "72657112"
 
 7. 選取 [錄製動作、編輯 UI 對應或加入判斷提示] 選項，然後選擇 [確定]。
 
-     [UIMap – 自動程式化 UI 測試產生器] 隨即顯示，並將 Visual Studio 視窗最小化。
+     [UIMap – 自動程式碼 UI 測試產生器] 隨即顯示，並將 Visual Studio 視窗最小化。
 
      如需對話方塊選項的詳細資訊，請參閱[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。
 
@@ -151,7 +151,7 @@ ms.locfileid: "72657112"
 
      您可以視需要暫停錄製 (例如，如果您需要處理傳入的電子郵件)。
 
-     ![暫停錄製](../test/media/cuit.png "CUIT")
+     ![暫停錄製](../test/media/cuit.png "CUIT_")
 
     > [!WARNING]
     > 將會錄製所有在桌面上執行的動作。 如果您執行的動作可能會導致在錄製中包括敏感性資料，則請暫停錄製。
@@ -368,23 +368,23 @@ ms.locfileid: "72657112"
 
 ## <a name="external-resources"></a>外部資源
 
-### <a name="videos"></a>視訊
- ![影片](../data-tools/media/playvideo.gif "連結 playvideo")自動[程式碼 UI 測試的連結-deepdive-episode1-gettingstarted-deepdive-episode1-gettingstarted-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)
+### <a name="videos"></a>Videos
+ ![影片](../data-tools/media/playvideo.gif "連結 playvideo")自動[程式碼 UI 測試的連結-deepdive-episode1-gettingstarted-deepdive-episode1-gettingstarted-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
 
- ![影片](../data-tools/media/playvideo.gif "連結 playvideo")自動[程式碼 UI 測試的連結-deepdive-episode1-gettingstarted-deepdive-episode2-maintainenceanddebugging-deepdive-episode2-maintainenceanddebugging](http://go.microsoft.com/fwlink/?LinkID=230574)
+ ![影片](../data-tools/media/playvideo.gif "連結 playvideo")自動[程式碼 UI 測試的連結-deepdive-episode1-gettingstarted-deepdive-episode2-maintainenceanddebugging-deepdive-episode2-maintainenceanddebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
 
- ![影片](../data-tools/media/playvideo.gif "連結 playvideo")自動[程式碼 UI 測試的連結-deepdive-episode1-gettingstarted-deepdive-episode3-handcoding-deepdive-episode3-handcoding](http://go.microsoft.com/fwlink/?LinkID=230575)
+ ![影片](../data-tools/media/playvideo.gif "連結 playvideo")自動[程式碼 UI 測試的連結-deepdive-episode1-gettingstarted-deepdive-episode3-handcoding-deepdive-episode3-handcoding](https://go.microsoft.com/fwlink/?LinkID=230575)
 
 ### <a name="hands-on-lab"></a>實習課程
- [MSDN 虛擬實驗室：使用 Visual Studio 2010 建立自動程式碼 UI 測試簡介](http://go.microsoft.com/fwlink/?LinkID=22508)
+ [MSDN 虛擬實驗室：使用 Visual Studio 2010 建立自動程式碼 UI 測試簡介](https://go.microsoft.com/fwlink/?LinkID=22508)
 
-### <a name="faq"></a>常見問題 (FAQ)
- [自動程式碼 UI 測試常見問題集 - 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>常見問題集
+ [自動程式碼 UI 測試常見問題集 - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [自動程式碼 UI 測試常見問題集 - 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [自動程式碼 UI 測試常見問題集 - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>論壇
- [Visual Studio 使用者介面自動化測試 (包括 CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio UI 自動化測試 (包括 CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)[消費者入門 WPF 設計](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b)工具支援的設定[和平臺自動程式化 Ui 測試和動作記錄](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)[使用自動程式碼 UI 測試編輯器編輯](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)自動程式化 ui 測試

@@ -15,17 +15,17 @@ helpviewer_keywords:
 - XML documents, reading
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6dec7cad50d818d4b2418442d8196cb8b5ff046a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f89645b9d5ec8ab0f69fad4fea5a399d8e6764d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641381"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586324"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>將 XML 資料讀入資料集
 
@@ -113,7 +113,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
 此應用程式的使用者介面包含下列各項：
 
-- @No__t_0 控制項，會將 XML 檔案的內容顯示為數據。
+- <xref:System.Windows.Forms.DataGridView> 控制項，會將 XML 檔案的內容顯示為數據。
 
 - 顯示 XML 檔案之 XML 架構的 <xref:System.Windows.Forms.TextBox> 控制項。
 
@@ -141,14 +141,14 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
     |-------------|--------------|-------------|
     |`TextBox1`|**多行**|`true`|
     ||[ScrollBars]|**垂直**|
-    |`Button1`|**名稱**|`ReadXmlButton`|
-    ||**Text**|`Read XML`|
-    |`Button2`|**名稱**|`ShowSchemaButton`|
-    ||**Text**|`Show Schema`|
+    |`Button1`|**Name**|`ReadXmlButton`|
+    ||**文字**|`Read XML`|
+    |`Button2`|**Name**|`ShowSchemaButton`|
+    ||**文字**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>建立接收 XML 資料的資料集
 
-在此步驟中，您會建立名為 `authors` 的新資料集。 如需有關資料集的詳細資訊，請參閱[Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。
+在此步驟中，您會建立名為 `authors`的新資料集。 如需有關資料集的詳細資訊，請參閱[Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。
 
 1. 在 **方案總管**中，選取  **Form1** 的原始程式檔，然後選取 **方案總管** 工具列上的 **視圖設計**工具 按鈕。
 
@@ -158,7 +158,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
      **DataSet1**會新增至元件匣。
 
-4. 在 [**屬性**] 視窗中，設定 `AuthorsDataSet` 的 [**名稱**] 和 [<xref:System.Data.DataSet.DataSetName%2A>] 屬性。
+4. 在 [**屬性**] 視窗中，設定`AuthorsDataSet`的 [**名稱**] 和 [<xref:System.Data.DataSet.DataSetName%2A>] 屬性。
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>建立事件處理常式，以將 XML 檔案讀取至資料集
 
@@ -179,7 +179,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>建立事件處理常式，以在文字方塊中顯示架構
 
-[**顯示架構**] 按鈕會建立以架構填入的 <xref:System.IO.StringWriter> 物件，並顯示在 <xref:System.Windows.Forms.TextBox>control 中。
+[**顯示架構**] 按鈕會建立一個已填入架構的 <xref:System.IO.StringWriter> 物件，並顯示在 [<xref:System.Windows.Forms.TextBox>] 控制項中。
 
 1. 在**方案總管**中，選取 [ **Form1**]，然後選取 [**視圖設計**工具] 按鈕。
 

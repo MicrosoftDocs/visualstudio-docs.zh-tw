@@ -1,18 +1,18 @@
 ---
-title: 管理專案和方案屬性
+title: 管理專案與方案屬性
 description: 本文說明如何在 Visual Studio for Mac 中管理專案和方案的屬性
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
-ms.openlocfilehash: 8d6a45f8cdd46483dda5ef252a6235e7eb2f0a04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 514792804515541b7e4f64359a08e9c6093c5018
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997293"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985263"
 ---
-# <a name="managing-project-and-solution-properties"></a>管理專案和方案屬性
+# <a name="managing-project-and-solution-properties"></a>管理專案與方案屬性
 
 ## <a name="project-options"></a>專案選項
 
@@ -46,6 +46,6 @@ Xamarin.iOS 具有與套件組合簽署相關的選項，例如要使用的必�
 
 ![方案選項](media/projects-and-solutions-image7.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [管理專案和方案屬性 (Windows 上的 Visual Studio)](/visualstudio/ide/managing-project-and-solution-properties)

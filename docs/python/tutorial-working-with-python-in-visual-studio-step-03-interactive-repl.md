@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7b2de511b0d24df9c4e156ccef37ff053005af98
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 51723d22cd72de8333fca9b83c1643117a7413e5
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450441"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986220"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>步驟 3：使用互動式 REPL 視窗
 
@@ -25,7 +25,7 @@ ms.locfileid: "72450441"
 適用於 Python 的 Visual Studio **互動式**視窗提供一個豐富的「讀取、求值、輸出」迴圈 (REPL) 體驗，可大幅縮短一般「編輯-建置-偵錯」循環。 **互動式**視窗提供 Python 命令列之 REPL 體驗的所有功能。 它也讓在 Visual Studio 編輯器中與原始程式檔交換程式碼變得極為簡單，而使用命令列來執行此作業則會十分麻煩。
 
 > [!NOTE]
-> 針對 REPL 的問題，請務必安裝 `ipython` 和 `ipykernel` 套件，而如需安裝套件的說明，則請參閱 [Python 環境套件索引標籤](https://docs.microsoft.com/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab)。
+> 針對 REPL 的問題，請務必安裝 `ipython` 和 `ipykernel` 套件，而如需安裝套件的說明，則請參閱 [Python 環境套件索引標籤](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab)。
 
 1. 在 [方案總管] 中以滑鼠右鍵按一下專案的 Python 環境 (例如較早圖形中顯示的 [Python 3.6 (32 位元)])，然後選取 [開啟互動式視窗]，以開啟**互動式**視窗。 您可以透過互動方式從 Visual Studio 主功能表選取 [檢視] > [其他視窗] > [Python 互動式視窗]。
 
@@ -54,7 +54,7 @@ ms.locfileid: "72450441"
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. 選取 *.py*檔案中的 `import`、`from` 和 @no__t 2 函式語句，並按一下滑鼠右鍵，然後選取 [**傳送至互動式**] （或按**Ctrl**+**enter**）。 程式碼片段會立即貼入至**互動式**視窗並執行。 因為程式碼已定義函式，所以您可以藉由呼叫下列幾次來快速測試該函式：
+1. 選取 *.py*檔案中的 `import`、`from`和 `make_dot_string` 函式語句，並按一下滑鼠右鍵，然後選取 [**傳送至互動式**] （或按**Ctrl**+**enter**）。 程式碼片段會立即貼入至**互動式**視窗並執行。 因為程式碼已定義函式，所以您可以藉由呼叫下列幾次來快速測試該函式：
 
     ![將程式碼傳送至互動式視窗並進行測試](media/vs-getting-started-python-14-interactive4.png)
 

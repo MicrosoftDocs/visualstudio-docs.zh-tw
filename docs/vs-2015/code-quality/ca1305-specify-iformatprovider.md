@@ -29,7 +29,7 @@ ms.locfileid: "72661433"
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|
-|Category|Microsoft。全球化|
+|分類|Microsoft。全球化|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -61,21 +61,21 @@ ms.locfileid: "72661433"
  當您確定預設的文化特性/格式提供者是正確的選擇，而且程式碼維護性不是重要的開發優先順序時，可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 在下列範例中，`BadMethod` 會造成這項規則的兩個違規。 `GoodMethod` 藉由將不因文化特性（culture）傳遞至 <xref:System.String.Compare%2A> 來更正第一個違規，並藉由將目前文化特性傳遞至 <xref:System.String.ToLower%2A> 來更正第二個違規，因為 `string3` 會向使用者顯示。
+ 在下列範例中，`BadMethod` 會造成這項規則的兩個違規。 `GoodMethod` 藉由將不因文化特性（culture）傳遞至 <xref:System.String.Compare%2A>來更正第一個違規，並藉由將目前文化特性傳遞至 <xref:System.String.ToLower%2A> 來更正第二個違規，因為 `string3` 會向使用者顯示。
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 
 ## <a name="example"></a>範例
- 下列範例顯示 <xref:System.DateTime> 類型所選取之預設 <xref:System.IFormatProvider> 的目前文化特性的效果。
+ 下列範例顯示 <xref:System.DateTime> 類型選取之預設 <xref:System.IFormatProvider> 上目前文化特性的效果。
 
  [!code-csharp[FxCop.Globalization.IFormatProvider#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.IFormatProvider/cs/FxCop.Globalization.IFormatProvider.cs#1)]
 
  此範例會產生下列輸出。
 
- **6/4/1900 12:15:12 PM** 
+ **6/4/1900 12:15:12 PM**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>相關規則
  [CA1304：必須指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [筆尖：使用 CultureInfo 類別](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

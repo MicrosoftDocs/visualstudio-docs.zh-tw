@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcbe7a132f7e2f6f7d72cfd2ba210e5edba21b57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e33ab59660263a5053642c95ec62ab36663f8e7b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654098"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984297"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 在使用 Visual Studio 視覺效果和模型化 SDK 建立的特定領域語言（DSL）中，您可以改變使用者複製和貼上專案時所發生的情況。
@@ -86,7 +86,7 @@ partial class MyDslClipboardCommandSet
 覆寫 DslPackage 專案中的*MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()`。
 
  **透過複製和貼上來保留圖形版面配置。**
-當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](http://go.microsoft.com/fwlink/?LinkId=213879)中的範例所示範。
+當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)中的範例所示範。
 
  若要達成這個效果，請將圖形和連接線加入至複製的 ElementGroupPrototype。 最方便的覆寫方法是 ElementOperations.CreateElementGroupPrototype()。 若要執行這項操作，請將下列程式碼加入至 DSL 專案：
 
@@ -142,7 +142,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **在選擇的位置貼上圖形，例如目前的游標位置。**
-當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](http://go.microsoft.com/fwlink/?LinkId=213879)中的範例所示範。
+當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)中的範例所示範。
 
  若要達成這個效果，請覆寫 `ClipboardCommandSet.ProcessOnMenuPasteCommand()` 以使用特定位置版本的 `ElementOperations.Merge()`。 若要執行這項操作，請在 DslPackage 專案中加入下列程式碼：
 
@@ -556,6 +556,6 @@ namespace Company.MyDsl
 
 - [自訂項目的建立和移動](../modeling/customizing-element-creation-and-movement.md)
 - [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [範例： VMSDK 電路圖表範例](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [範例： VMSDK 電路圖表範例](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：使用取樣進行命令列分析 | Microsoft Docs
+title: 逐步解說：使用取樣進行命令列剖析 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09272c8cf2dff02d3be024b9c3eeab8b51f56df7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433617"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777968"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：使用取樣進行命令列分析
 
@@ -29,11 +30,11 @@ ms.locfileid: "63433617"
 - 使用命令列工具和取樣來剖析應用程式。
 - 分析取樣的分析結果，找出並修正效能問題。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
 
 - 對 [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)] 有中等程度的了解
 - 對使用命令列工具有中等程度的了解
-- 一份 [PeopleTrax 範例](/visualstudio/profiling/performance-explorer)
+- 一份 [PeopleTrax 範例](performance-explorer.md)
 - 若要處理剖析所提供的資訊，您手邊最好有偵錯符號資訊。
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>使用取樣方法進行命令列分析
@@ -97,7 +98,7 @@ ms.locfileid: "63433617"
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [效能工作階段概觀](../profiling/performance-session-overview.md)
 [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

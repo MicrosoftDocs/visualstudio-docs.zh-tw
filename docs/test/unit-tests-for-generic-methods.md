@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 94b27423a93a0ad67aa924e8d8bac9eac1a7e3c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 2158c889aefc85c908aa9ee42d45858fd11d557e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659820"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590809"
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的單元測試
 

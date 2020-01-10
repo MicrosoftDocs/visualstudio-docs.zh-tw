@@ -20,17 +20,17 @@ helpviewer_keywords:
 - Visual Studio, call hierarchy window
 - class view
 - object browser
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc7ade360ac586f09eb838057251172be5d0e81
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b73a4660c9e0dad66ceb73c04852601765174264
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647298"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594197"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>使用不同的工具視窗來檢視程式碼結構
 
@@ -85,7 +85,7 @@ ms.locfileid: "72647298"
 |**移至定義**|如果開啟的專案中未定義該項目，便在原始程式碼或 [物件瀏覽器] 中尋找該項目的定義。|
 |**瀏覽定義**|在 [物件瀏覽器] 中顯示所選項目。|
 |**尋找所有參考**|尋找目前所選物件項目，並在 [尋找結果] 視窗中顯示結果。|
-|**對類型篩選** (僅限 Managed 程式碼)|僅顯示所選類型或命名空間。 您可以選擇 [尋找] 方塊旁的 [清除尋找]\(**X**)按鈕來移除篩選。|
+|**對類型篩選** (僅限 Managed 程式碼)|僅顯示所選類型或命名空間。 您可以選擇 [尋找] 方塊旁的 [清除尋找] (**X**) 按鈕來移除篩選。|
 |**複製**|複製項目的完整名稱。|
 |**依字母順序排序**|依名稱照字母順序列出類型與成員。|
 |**依成員類型排序**|依類型列出類型與成員 (例如類別在介面前面、介面在委派前面、方法在屬性前面)。|
@@ -141,7 +141,7 @@ ms.locfileid: "72647298"
 
 [物件瀏覽器] 的左窗格會顯示組件。 您可以展開組件以顯示其包含的命名空間，然後展開命名空間以顯示其包含的類型。 選取類型時，其成員 (例如屬性及方法) 將會列於右窗格中。 右下方的窗格會顯示有關所選項目的詳細資訊。
 
-您可以使用視窗頂端的 [搜尋] 方塊，搜尋特定項目。 搜尋不區分大小寫。 搜尋結果會顯示在左窗格中。 若要清除搜尋，請選擇 [搜尋] 方塊旁的 [清除搜尋]\(**X**)按鈕。
+您可以使用視窗頂端的 [搜尋] 方塊，搜尋特定項目。 搜尋不區分大小寫。 搜尋結果會顯示在左窗格中。 若要清除搜尋，請選擇 [搜尋] 方塊旁的 [清除搜尋] (**X**) 按鈕。
 
 [物件瀏覽器] 會持續追蹤您選取的項目，您可以使用工具列上的 [向前] 和 [向後] 按鈕，在選取的項目之間巡覽。
 

@@ -10,19 +10,19 @@ helpviewer_keywords:
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 89f34d027ec238b1e34724924ffb163267d56dc0
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
-ms.translationtype: HT
+ms.openlocfilehash: 0508715637a3ac03c1377d3a337a6ded41a906de
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026476"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590926"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 系統管理員指南
 
@@ -40,7 +40,7 @@ ms.locfileid: "70026476"
 
 * 決定您的服務需求。
 
-  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 如需詳細資訊，請參閱 [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)頁面的＜Enterprise 與 Professional 客戶的支援選項＞一節，以及[如何：在維護基底上時更新 Visual Studio](update-servicing-baseline.md)頁面。
+  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 如需詳細資訊，請參閱[Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)頁面的「***企業和專業客戶的支援選項***」一節，以及[如何：在服務基準頁面上更新 Visual Studio](update-servicing-baseline.md) 。
 
   如果您打算套用服務更新和累積的功能更新，您可以選擇最新版本。
 
@@ -62,7 +62,7 @@ ms.locfileid: "70026476"
 
 * 決定您的服務需求。
 
-  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 如需詳細資訊，請參閱 [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)頁面的＜對舊版 Visual Studio 的支援＞一節，以及[如何：在維護基底上時更新 Visual Studio](update-servicing-baseline.md)頁面。
+  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 如需詳細資訊，請參閱[Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)頁面的***舊版 Visual Studio 的支援***一節，以及[如何：在服務基準頁面上更新 Visual Studio](update-servicing-baseline.md) 。
 
   如果您打算套用服務更新和累積的功能更新，您可以選擇最新版本。
 
@@ -158,7 +158,7 @@ ms.locfileid: "70026476"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [命令列參數範例](command-line-parameter-examples.md)
 * [安裝 Visual Studio 離線安裝所需的憑證](install-certificates-for-visual-studio-offline.md)

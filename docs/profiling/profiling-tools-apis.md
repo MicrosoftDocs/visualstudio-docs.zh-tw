@@ -6,14 +6,15 @@ ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e724b9d5891d9e716be064e0b3b9404455c770fc
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: ed4fef32c04d68f37df71101447a4e24f39eecba
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870298"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772073"
 ---
 # <a name="profiling-tools-apis"></a>程式碼剖析工具 API
 
@@ -37,6 +38,6 @@ ms.locfileid: "68870298"
 
 [控制資料收集](../profiling/controlling-data-collection.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [效能總管](../profiling/performance-explorer.md)

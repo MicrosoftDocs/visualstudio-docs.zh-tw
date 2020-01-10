@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 838f2d4d01372cf99d898c4e0d6584bb838c4f9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655283"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292339"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>將造型加入 UML 模型項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,5 +81,6 @@ ms.locfileid: "72655283"
 
          您只能對某些類型的圖表執行這項作業。
 
-## <a name="see-also"></a>請參閱
- [定義設定檔以擴充 uml](../modeling/define-a-profile-to-extend-uml.md) [使用設定檔和造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)透過造型[定義套件和命名空間](../modeling/define-packages-and-namespaces.md)[色彩 UML 類別](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)
+## <a name="see-also"></a>另請參閱
+ [定義設定檔以擴充 UML](../modeling/define-a-profile-to-extend-uml.md)使用設定檔和造型[定義套件和命名空間](../modeling/define-packages-and-namespaces.md)來[自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)
+

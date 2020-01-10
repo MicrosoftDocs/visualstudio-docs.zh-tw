@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, logging
 ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdae6abf3af71967357319addd755a31721053ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6b47010a68520379afd8e0d969fa99169cb1ff0b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653424"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588950"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>如何：使用負載測試編輯器指定測試失敗是否會儲存至測試記錄
 
@@ -39,7 +39,7 @@ ms.locfileid: "72653424"
 
 4. 在 [測試失敗時儲存記錄檔] 屬性中，選取 [True] 或 [False] 以指定情節中的測試失敗時，是否要儲存測試記錄。
 
-     完成變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。
+     屬性變更完成之後，選擇 [檔案] 功能表上的 [儲存]。
 
      您可以使用 [負載測試分析器] 的 [資料表] 檢視來檢視儲存在記錄檔中的資料。 如需詳細資訊，請參閱[在資料表檢視中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
 

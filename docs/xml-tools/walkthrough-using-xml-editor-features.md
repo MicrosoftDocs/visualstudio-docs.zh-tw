@@ -3,17 +3,17 @@ title: 逐步解說：使用 XML 編輯器功能
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce7997e1002ced50dc4d8203d522feb0a6bbb49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2cf35730b70fc8c8bbec392c73b444b6e8e0aaa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604453"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592460"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>逐步解說：使用 XML 編輯器功能
 
@@ -34,13 +34,13 @@ ms.locfileid: "72604453"
 
      [ **XSD 架構**] 對話方塊隨即顯示。
 
-4. 按一下 [新增]。
+4. 按一下 [加入]。
 
      [**開啟 XSD 架構**] 對話方塊隨即顯示。
 
 5. 選取*雇用的 .xsd*檔案，然後按一下 [**開啟**]。
 
-6. 按一下 [確定]。
+6. 按一下 [ **確定**]。
 
      XML 結構描述現在已與 XML 文件相關聯。 XML 結構描述用於驗證文件。 它也由 IntelliSense 用於填入有效項目的成員清單。
 
@@ -70,7 +70,7 @@ ms.locfileid: "72604453"
 
 5. 鍵入 `>` 以關閉標記。
 
-6. 編輯器會加入結束標記。 加入的結束標記會帶有波浪底線，表示驗證錯誤。 **工具提示**會顯示訊息：**The 元素 ' employee ' 的內容不完整。需要 ' ID '** 。
+6. 編輯器會加入結束標記。 加入的結束標記會帶有波浪底線，表示驗證錯誤。 **工具提示**會顯示訊息：「 **Employee」元素的內容不完整。必須是 ' ID '** 。
 
 7. 輸入 `<`，然後從成員清單中選取 [ **ID** ]。 然後鍵入 `>`。
 
@@ -78,7 +78,7 @@ ms.locfileid: "72604453"
 
 8. 輸入**abc**。
 
-     **Abc**文字具有波浪底線。 **工具提示**會顯示訊息：**根據 ' ID ' 元素的資料類型，其值無效**。
+     **Abc**文字具有波浪底線。 **工具提示**會顯示訊息：**根據其資料類型，' ID ' 元素具有不正確值**。
 
 9. 以滑鼠右鍵按一下 ID 元素，然後選取 [**移至定義**]。
 
@@ -86,7 +86,7 @@ ms.locfileid: "72604453"
 
 10. 返回 XML 檔案，並將**abc**文字取代為**123**。
 
-     [波浪底線] 和 [**工具提示**] 會在 [ID] 元素值下清除。 員工結束標記的**工具提示**現在會顯示訊息：**The 元素 ' employee ' 的內容不完整。必須是 ' 雇用-日期 '** 。
+     [波浪底線] 和 [**工具提示**] 會在 [ID] 元素值下清除。 Employee 結束標記的**工具提示**現在會顯示訊息：「 **Employee」元素的內容不完整。必須是 ' 雇用-日期 '** 。
 
 11. 將游標放在識別碼結束標記之後，輸入 `<`，從成員清單中選取 [**雇用日期**]，然後輸入 `>`。
 
@@ -96,7 +96,7 @@ ms.locfileid: "72604453"
 
 ## <a name="to-format-the-xml-document"></a>格式化 XML 文件
 
-- 選取 [XML 編輯器] 工具列上的 [**格式化檔**] 按鈕，或按**Ctrl** +**E**，**D**。
+- 選取 [XML 編輯器] 工具列上的 [**格式化檔**] 按鈕，或按**Ctrl**+**E**，**D**。
 
    ![Visual Studio 中的 XML 檔按鈕格式](media/format-xml-document.png)
 
@@ -104,7 +104,7 @@ ms.locfileid: "72604453"
 
 ## <a name="to-save-the-xml-document"></a>儲存 XML 文件
 
-1. 從 [**檔案**] 功能表中，選取 [**另存**新檔]。
+1. 從 [檔案] 功能表中選取 [另存新檔]。
 
      [**另存**新檔] 對話方塊隨即顯示。 預設檔案名為 *' XMLFile1 '* 。
 
@@ -130,6 +130,6 @@ ms.locfileid: "72604453"
 </xs:schema>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 編輯器](../xml-tools/xml-editor.md)

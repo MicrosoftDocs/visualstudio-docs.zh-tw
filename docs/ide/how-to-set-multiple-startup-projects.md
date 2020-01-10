@@ -1,38 +1,38 @@
 ---
-title: 作法：設定多個啟始專案
+title: 如何：設定多個啟動專案
 ms.date: 06/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - startup projects, setting multiple startup projects
 ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
 ms.technology: vs-ide-compile
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be2f782d8dcdbf81ca2446a73ac7f13dea4f2ef9
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: c5cfa0b7a94b4bec07e313ce7d6e031f9e1a2a56
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416781"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588339"
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>作法：設定多個啟始專案
+# <a name="how-to-set-multiple-startup-projects"></a>如何：設定多個啟動專案
 
 Visual Studio 可讓您指定在啟動偵錯工具時應執行的多個專案。
 
 ## <a name="to-set-multiple-startup-projects"></a>設定多個啟動專案
 
-1. 在 [方案總管]  中，選取方案 (最上層節點)。
+1. 在 [方案總管] 中，選取方案 (最上層節點)。
 
-2. 選擇方案節點的內容 (以滑鼠右鍵按一下) 功能表，然後選擇 [屬性]  。 [方案屬性頁]  對話方塊隨即出現。
+2. 選擇方案節點的內容 (以滑鼠右鍵按一下) 功能表，然後選擇 [屬性]。 [方案屬性頁] 對話方塊隨即出現。
 
-3. 展開 [通用屬性]  節點，然後選擇 [啟始專案]  。
+3. 展開 [通用屬性] 節點，然後選擇 [啟始專案]。
 
-4. 選擇 [多個啟始專案]  選項並設定適當的動作。
+4. 選擇 [多個啟始專案] 選項並設定適當的動作。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
 - [建立解決方案及專案](../ide/creating-solutions-and-projects.md)

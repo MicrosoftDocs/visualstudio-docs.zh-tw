@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, generating templates from templates
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a9afe2670bb086627407a9f1bc674edfc2fe354
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1460b03a027a2b33844edc7d617f8b5f21208772
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605462"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594639"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>如何：使用逸出序列從範本產生範本
 您可以建立文字模板，以建立另一個文字模板作為其產生的文字輸出。 若要這樣做，您必須使用 escape 序列來界定文字模板標記。 如果您不使用 escape 序列，則產生的文字模板會有預先定義的意義。 如需在文字模板中使用 escape 序列的詳細資訊，請參閱[在文字模板中使用 Escape 序列](../modeling/using-escape-sequences-in-text-templates.md)。
@@ -31,7 +31,7 @@ ms.locfileid: "72605462"
     ```
 
 ## <a name="example"></a>範例
- 下列範例會使用換用字元，從文字模板產生文字模板。 @No__t_0 指示詞會將目的地檔案類型設定為文字模板檔案類型（tt）。
+ 下列範例會使用換用字元，從文字模板產生文字模板。 `output` 指示詞會將目的地檔案類型設定為文字模板檔案類型（tt）。
 
 ```csharp
 \<#@ output extension=".tt" \#>

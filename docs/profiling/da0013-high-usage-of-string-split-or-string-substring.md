@@ -1,5 +1,5 @@
 ---
-title: DA0013：String.Split 或 String.Substring 的高用量 | Microsoft Docs
+title: DA0013：String.Split 或 String.Substring 的用量高 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,24 +14,25 @@ ms.assetid: f501f423-bef9-4e08-bf96-c9ac9957e5a2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 83ddc7462b703ef28a52b531aa379b46198516df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d42469ac5236a41eda96af5d1fe896a5ed84a321
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936466"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779399"
 ---
-# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013：String.Split 或 String.Substring 的高用量
+# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013：String.Split 或 String.Substring 的用量高
 
 |||
 |-|-|
-|規則 ID|DA0013|
-|分類|.NET Framework 使用方式指導|
+|規則識別碼|DA0013|
+|Category|.NET Framework 使用方式指導|
 |分析方法|取樣|
 |訊息|考慮減少使用 String.Split 和 String.Substring 函式。|
-|規則型別|警告|
+|規則類型|警告|
 
 ## <a name="cause"></a>原因
  呼叫 System.String.Split 或 System.String.Substring 方法是分析資料的重要部分。 如果您要測試某個子字串是否存在字串中，請考慮使用 System.String.IndexOf 或 System.String.IndexOfAny。

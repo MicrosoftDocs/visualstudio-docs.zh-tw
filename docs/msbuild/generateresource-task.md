@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, GenerateResource task
 - GenerateResource task [MSBuild]
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b47c3315236dc228d3c561c4a3e0f333f5c9600
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c0e83cc04b309a940f5aa4c5a36099f10afddcc3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007089"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594796"
 ---
 # <a name="generateresource-task"></a>GenerateResource 工作
 在 *.txt* 與 *.resx* (XML 資源格式) 檔案，以及 Common Language Runtime 二進位 *.resources* 檔案 (可以內嵌在執行階段二進位可執行檔，或是編譯到附屬組件中) 之間轉換。 此工作一般用來將 *.txt* 或 *.resx* 檔轉換為 *.resources* 檔。 `GenerateResource` 工作的功能類似於 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)。
@@ -31,20 +31,20 @@ ms.locfileid: "63007089"
 ## <a name="parameters"></a>參數
 下表說明 `GenerateResource` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
-|`AdditionalInputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 包含此工作所執行相依性檢查的其他輸入。 例如，專案與目標檔案通常應為輸入，如有所更新時，就會重新產生所有資源。|
+|`AdditionalInputs`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 包含此工作所執行相依性檢查的其他輸入。 例如，專案與目標檔案通常應為輸入，如有所更新時，就會重新產生所有資源。|
 |`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 指定環境變數的名稱/值組陣列，該名稱/值組除了 (或選擇性覆寫) 一般環境區塊之外，還應該傳遞至繁衍的 *resgen.exe*。|
-|`ExcludedInputPaths`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定項目陣列，這會指定要在最新狀態檢查期間忽略所追蹤輸入的路徑。|
+|`ExcludedInputPaths`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定項目陣列，這會指定要在最新狀態檢查期間忽略所追蹤輸入的路徑。|
 |`ExecuteAsTool`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會從適當目標 Framework 跨處理序執行 *tlbimp.exe* 和 *aximp.exe*，以產生必要的包裝函式組件。 此參數允許多目標的 `ResolveComReferences`。|
 |`FilesWritten`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含寫入至磁碟的所有檔案名稱。 這包括快取檔案 (如果有的話)。 此參數對於 Clean 的實作很有用。|
 |`MinimalRebuildFromTracking`|選擇性的 `Boolean` 參數。<br /><br /> 取得或設定參數，指定是否將使用追蹤式累加建置。 如果為 `true`，會開啟累加建置，否則會強制重建。|
-|`NeverLockTypeAssemblies`|選擇性的 `Boolean` 參數。<br /><br /> 取得或設定布林值，該值可指定是否要建立新的 [AppDomain](/dotnet/api/system.appdomain) 以評估資源 (*.resx*) 檔 (true)，或者只有在資源檔參考使用者的組件 (false) 時建立新的 [AppDomain](/dotnet/api/system.appdomain)。|
+|`NeverLockTypeAssemblies`|選擇性的 `Boolean` 參數。<br /><br /> 取得或設定布林值，該值可指定是否要建立新的 [AppDomain](/dotnet/api/system.appdomain) 以評估資源 ( *.resx*) 檔 (true)，或者只有在資源檔參考使用者的組件 (false) 時建立新的 [AppDomain](/dotnet/api/system.appdomain)。|
 |`OutputResources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定所產生檔案 (例如 *.resources* 檔案) 的名稱。 如果未指定名稱，會使用符合的輸入檔名稱，且建立的 *.resources* 檔案會置於包含該輸入檔的目錄中。|
 |`PublicClass`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會建立強型別資源類別做為公用類別。|
 |`References`|選擇性的 `String[]` 參數。<br /><br /> 要從中載入 *.resx* 檔案類型的參考。 *.resx* 檔案資料項目可能具有 .NET 類型。 讀取 *.resx* 檔案時，必須解析此類型。 一般而言，使用標準型別載入規則即可順利解析。 如果您提供 `References` 中的組件，則會優先使用它們。<br /><br /> 強型別資源不需要此參數。|
 |`SdkToolsPath`|選擇性的 `String` 參數。<br /><br /> 指定 SDK 工具 (例如 *resgen.exe*) 的路徑。|
-|`Sources`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要轉換的項目。 傳遞給此參數的項目必須具有下列其中一個副檔名︰<br /><br /> -   *.txt*：指定文字檔的副檔名以進行轉換。 文字檔只能包含字串資源。<br />-   *.resx*：指定 XML 型資源檔的副檔名以進行轉換。<br />-   *.restext*：指定和 *.txt* 相同的格式。 如果您想要清楚地區分包含資源的原始程式檔和建置流程中的其他原始程式檔，這個不同的副檔名會很有用。<br />-   *.resources*：指定資源檔的副檔名以進行轉換。|
+|`Sources`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要轉換的項目。 傳遞給此參數的項目必須具有下列其中一個副檔名︰<br /><br /> -   .txt︰指定文字檔的副檔名以進行轉換。 文字檔只能包含字串資源。<br />-   .resx︰指定 XML 資源檔的副檔名以進行轉換。<br />-   .restext︰指定和 *.txt* 相同的格式。 如果您想要清楚地區分包含資源的原始程式檔和建置流程中的其他原始程式檔，這個不同的副檔名會很有用。<br />-   .resources︰指定資源檔的副檔名以進行轉換。|
 |`StateFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定選擇性快取檔案的路徑，這個檔案可用來加速 *.resx* 輸入檔中連結的相依性檢查。|
 |`StronglyTypedClassName`|選擇性的 `String` 參數。<br /><br /> 指定強型別資源類別的類別名稱。 如果未指定此參數，則會使用資源檔的基底名稱。|
 |`StronglyTypedFilename`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定原始程式檔的檔案名稱。 如果未指定此參數，則會使用類別名稱做為基底檔案名稱，副檔名則依語言而定。 例如：*MyClass.cs*。|
@@ -94,6 +94,6 @@ ms.locfileid: "63007089"
 
 沒有 \<LogicalName > 中繼資料時，則會將資源命名為 *myAssembly.myResource.resources*。  此範例僅適用於 Visual Basic 和 Visual C# 建置流程。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

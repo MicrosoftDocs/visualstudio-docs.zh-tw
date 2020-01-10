@@ -1,20 +1,20 @@
 ---
 title: 程式碼片段
 description: 如何使用程式碼片段在 Visual Studio for Mac 中有效率進行程式設計
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 2def790511a69dc7b5cab8a5020f488e58b85db9
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 96344b72dd27095f8b9060078112fb767b1338fc
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693006"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984816"
 ---
 # <a name="code-snippets"></a>程式碼片段
 
-程式碼片段通常稱為「程式碼範本」  ，適用於具效率的程式設計，因為它們允許插入和編輯預先撰寫的程式碼區塊。 使用程式碼片段可便於迅速新增常見模式，或甚至在您是開發人員但不確定語法時學習新的模式。 有針對 C#、F#、HTML、XML、Python 和 Razor 提供的範本。
+程式碼片段通常稱為「程式碼範本」，適用於具效率的程式設計，因為它們允許插入和編輯預先撰寫的程式碼區塊。 使用程式碼片段可便於迅速新增常見模式，或甚至在您是開發人員但不確定語法時學習新的模式。 有針對 C#、F#、HTML、XML、Python 和 Razor 提供的範本。
 
 本節說明如何在程式碼中建立、插入和使用程式碼片段。
 
@@ -30,23 +30,23 @@ ms.locfileid: "67693006"
 
   [![工具箱中的程式碼片段](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **插入範本命令** &ndash; 目前未設定任何用於插入範本的預設按鍵繫結關係。 若要建立按鍵繫結關係，請瀏覽至 [Visual Studio] > [喜好設定] > [按鍵繫結關係]  ，並搜尋 `template`。 這允許將想要的按鍵繫結關係新增至 [編輯繫結] 欄位，然後按一下 [套用]  ：
+- **插入範本命令** &ndash; 目前未設定任何用於插入範本的預設按鍵繫結關係。 若要建立按鍵繫結關係，請瀏覽至 [Visual Studio] > [喜好設定] > [按鍵繫結關係]，並搜尋 `template`。 這允許將想要的按鍵繫結關係新增至 [編輯繫結] 欄位，然後按一下 [套用]：
 
   ![插入範本命令](media/source-editor-image15.png)
 
 ## <a name="creating-a-new-template"></a>建立新範本
 
-雖然您可以使用和編輯多個各種語言的現有範本，但也可以新增範本，方法是巡覽至 [Visual Studio] > [喜好設定] > [文字編輯器] > [程式碼片段]  ：
+雖然您可以使用和編輯多個各種語言的現有範本，但也可以新增範本，方法是巡覽至 [Visual Studio] > [喜好設定] > [文字編輯器] > [程式碼片段]：
 
 ![插入新範本](media/source-editor-image12.png)
 
-按 [新增]  或 [編輯]  按鈕以建立或編輯程式碼片段。
+按 [新增] 或 [編輯] 按鈕以建立或編輯程式碼片段。
 
 ## <a name="keywords-in-code-snippets"></a>程式碼片段中的關鍵字
 
 將程式碼片段插入編輯器中之後，所有已定義的關鍵字都會以醒目提示方式顯示，您可以藉由使用 Tab 鍵在它們之間移動來編輯它們。 關鍵字的作用就像程式碼片段中的「變數」，若要定義關鍵字，請在關鍵字名稱的前後加上一個貨幣符號 `$`。 
 
-以下顯示 [編輯範本]  視窗，其中正在編輯內建的 `prop` 程式碼片段。 此程式碼片段包含兩個關鍵字 &ndash; `$type$` 和 `$name$` &ndash;在視窗右側可以設定進一步的屬性 (例如預設值和工具提示)：
+以下顯示 [編輯範本] 視窗，其中正在編輯內建的 `prop` 程式碼片段。 此程式碼片段包含兩個關鍵字 &ndash; `$type$` 和 `$name$` &ndash;在視窗右側可以設定進一步的屬性 (例如預設值和工具提示)：
 
 ![[編輯範本] 視窗](media/source-editor-image12z.png)
 
@@ -57,8 +57,8 @@ ms.locfileid: "67693006"
 - **描述** &ndash; 程式碼片段用途的說明。
 - **MIME** &ndash; 控制可用程式碼片段的檔案類型。
 - **Is expandable template** \(是可擴充的範本\) &ndash; 請務必選取此選項，如此才可藉由輸入捷徑，在游標位置插入程式碼片段。
-- **Is surround with template** \(是範圍陳述式範本\) &ndash; 若要在編輯器的 [範圍陳述式]  內容功能表中列出此捷徑，請選取此選項。
-- **範本文字** &ndash; 將插入到編輯器中的實際程式碼片段。 定義關鍵字預留位置時，可藉由以貨幣符號括住語彙基元來定義，例如： `$type$`.
+- **Is surround with template** \(是範圍陳述式範本\) &ndash; 若要在編輯器的 [範圍陳述式] 內容功能表中列出此捷徑，請選取此選項。
+- **範本文字** &ndash; 將插入到編輯器中的實際程式碼片段。 定義關鍵字預留位置時，可藉由以貨幣符號括住語彙基元來定義，例如： `$type$`。
 - **關鍵字屬性面板** &ndash; 在視窗右側，使用頂端的下拉式清單來選擇關鍵字 (例如 `type`)，然後編輯預設值和工具提示等屬性。
 
 ## <a name="using-keywords-in-the-editor"></a>在編輯器中使用關鍵字
@@ -81,13 +81,13 @@ ms.locfileid: "67693006"
 
 您可以在程式碼片段中使用兩個保留關鍵字：
 
-- `$selected$` &ndash; 如果已為程式碼片段選取 [Is surround with template] \(是範圍陳述式範本\)  ，就會以選擇程式碼片段時在編輯器中以醒目提示方式顯示的文字取代此關鍵字。
+- `$selected$` &ndash; 如果已為程式碼片段選取 [Is surround with template] \(是範圍陳述式範本\)，就會以選擇程式碼片段時在編輯器中以醒目提示方式顯示的文字取代此關鍵字。
 - `$end$` &ndash; 當使用者完成程式碼片段中的關鍵字編輯時，游標將會放在 `$end$` 關鍵字的位置。
 
 上一節中的 `for` 程式碼片段即是這兩個保留關鍵字的範例。
 
 如需詳細資訊，請參閱 [Visual Studio 程式碼片段參考](/visualstudio/ide/code-snippets-schema-reference#keywords)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼片段 (Windows 上的 Visual Studio)](/visualstudio/ide/code-snippets)

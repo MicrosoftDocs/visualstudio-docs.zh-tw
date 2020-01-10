@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f96909d3051e18fe3992e68b44b2948d1e23ebd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2d9b958dacfb35877abc9ad1e83a349e43a7af0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670128"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296875"
 ---
 # <a name="walkthrough-building-an-application"></a>逐步解說：建置應用程式
 
@@ -22,9 +22,9 @@ ms.locfileid: "72670128"
 
 藉由完成本逐步解說，您將更熟悉使用 Visual Studio 建置應用程式時可設定的幾個選項。 您將針對一個範例應用程式建立自訂組建組態、隱藏特定警告訊息、增加建置輸出資訊，以及執行其他工作。
 
-此主題包括下列章節：
+本主題包含下列各節：
 
-[安裝範例應用程式](../ide/walkthrough-building-an-application.md#BKMK_installapp)
+[安裝範例應用程式](../ide/walkthrough-building-an-application.md)
 
 [建立自訂組建組態](../ide/walkthrough-building-an-application.md#BKMK_CreateBuildConfig)
 
@@ -34,11 +34,7 @@ ms.locfileid: "72670128"
 
 [在輸出視窗中顯示其他組建詳細資料](../ide/walkthrough-building-an-application.md#BKMK_outputdetails)
 
-[建立發行組建](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)
-
-## <a name="BKMK_installapp"></a> 安裝範例應用程式
-
-您將使用 [延伸模組和更新] 對話方塊，從 Microsoft 網站上的範例庫尋找並安裝[建置 WPF 應用程式簡介](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE)範例。 此範例庫提供各種範例專案和程式碼，可供您在規劃和開發應用程式時進行下載和檢閱。
+[建立發行組建](../ide/walkthrough-building-an-application.md)
 
 #### <a name="to-install-the-sample-application"></a>安裝範例應用程式
 
@@ -68,13 +64,13 @@ ms.locfileid: "72670128"
 
      ![[新增專案] 對話方塊，已安裝的範例](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
-     OR
+     或
 
      將方案命名為 `IntroWPFvb` (Visual Basic)。
 
      ![[新增專案] 對話方塊，Visual Basic 範例](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
 
-4. 選擇 [ **確定** ] 按鈕。
+4. 選擇 [確定] 按鈕。
 
 ## <a name="BKMK_CreateBuildConfig"></a> 建立自訂組建組態
 
@@ -100,7 +96,7 @@ ms.locfileid: "72670128"
 
     ![[新增方案平臺] 對話方塊](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
-6. 選擇 [ **確定** ] 按鈕。
+6. 選擇 [確定] 按鈕。
 
    使用中的方案組態已變更為 [測試]，且使用中的方案平台設定為 [x64]。
 
@@ -134,7 +130,7 @@ ms.locfileid: "72670128"
 
 #### <a name="to-hide-a-specific-visual-c-warning"></a>隱藏特定 Visual C# 警告
 
-1. 在**方案總管**中，選擇頂層專案節點。
+1. 在方案總管中，選擇頂層專案節點。
 
 2. 在功能表列上選擇 [ **檢視**]、[ **屬性頁**]。
 
@@ -154,7 +150,7 @@ ms.locfileid: "72670128"
 
 #### <a name="to-suppress-all-visual-basic-build-warnings"></a>隱藏所有 Visual Basic 建置警告
 
-1. 在**方案總管**中，選擇頂層專案節點。
+1. 在方案總管中，選擇頂層專案節點。
 
 2. 在功能表列上選擇 [ **檢視**]、[ **屬性頁**]。
 
@@ -206,7 +202,7 @@ ms.locfileid: "72670128"
 
    如需詳細資訊，請參閱[如何：檢閱、儲存和設定建置記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
-## <a name="BKMK_releasebuild"></a> 建立發行組建
+## <a name="create-a-release-build"></a>建立發行組建
 
 您可以建置已針對交付最佳化的範例應用程式版本。 針對發行組建，您將指定在開始建置之前將可執行檔複製到網路共用。
 
@@ -233,9 +229,9 @@ ms.locfileid: "72670128"
 
 6. 建置應用程式。
 
-     ![[建立] 功能表上的 [建立方案] 命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![[建置] 功能表上的 [建置方案] 命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>若要指定 Visual C \# 的發行組建
+#### <a name="to-specify-a-release-build-for-visual-c"></a>若要指定 Visual C\# 的發行組建
 
 1. 開啟 [專案設計工具]。
 
@@ -256,13 +252,13 @@ ms.locfileid: "72670128"
 
 6. 建置應用程式。
 
-    ![[建立] 功能表上的 [建立方案] 命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+    ![[建置] 功能表上的 [建置方案] 命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
    可執行檔會複製到您指定的網路路徑。 其路徑為 \\\myserver\builds\\<檔名>.exe。
 
    恭喜︰您已成功完成本逐步解說。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [逐步解說：建置專案 (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
 - [ASP.NET Web 應用程式專案先行編譯概觀](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)

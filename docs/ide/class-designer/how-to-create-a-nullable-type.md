@@ -6,20 +6,20 @@ helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 671b2230daafbbdf92edda2ba1a671b688723796
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647862"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592226"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>如何：在類別設計工具中建立可為 Null 的型別
 
@@ -45,11 +45,11 @@ ms.locfileid: "72647862"
 
 1. 在類別圖表中，展開現有類別，或建立新的類別。
 
-2. 若要將類別新增至專案，請按一下 [類別圖表] 功能表上的 [新增]  >  [新增類別]。
+2. 若要將類別新增至專案，請按一下 [類別圖表] 功能表上的 [新增] >  [新增類別]。
 
 3. 若要展開類別圖形，請按一下 [類別圖表] 功能表上的 [展開]。
 
-4. 選取類別圖形。 在 [類別圖表] 功能表上，按一下 [新增]  >  [欄位]。 接著，在類別圖形和 [類別細節] 視窗中，即會出現一個新欄位 (預設名稱為 [欄位])。
+4. 選取類別圖形。 在 [類別圖表] 功能表上，按一下 [新增] >  [欄位]。 接著，在類別圖形和 [類別細節] 視窗中，即會出現一個新欄位 (預設名稱為 [欄位])。
 
 5. 在 [類別細節] 視窗 (或類別圖形本身) 的 [名稱] 資料行中，將新欄位的名稱變更為有效且有意義的名稱。
 

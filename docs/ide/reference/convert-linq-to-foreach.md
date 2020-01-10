@@ -3,19 +3,19 @@ title: 重構程式碼以將 LINQ 查詢轉換為 foreach 陳述式
 description: 將以查詢語法撰寫的任何 LINQ 查詢語法轉換為 foreach 陳述式。
 ms.date: 05/15/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a618285e1981171eb8f5f2f435fb23d412296b5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb2cdf96d7f7829ff6a6d1394160548da2adae7f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654538"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595744"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>重構以將 LINQ 轉換為 foreach 陳述式
 
@@ -25,7 +25,7 @@ ms.locfileid: "72654538"
 
 - C#
 
-## <a name="how-to-use-it"></a>如何使用
+## <a name="how-to-use-it"></a>使用方式
 
 1. 選取開頭為 `from` 的整個 LINQ 查詢。
 

@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f26d81c3ac80b889f90e2a729545f0db0e52fa1a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5abbb647f93c991d2de626a84e82f47e03f6f71e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660236"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299621"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "72660236"
 
 - 建立呈現 Northwind 資料庫中的 Customers 資料表的 [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]。
 
-- 建立 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]。
+- 建立[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]。
 
 - 建立用戶端應用程式，並加入 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]的參考。
 
@@ -40,12 +40,12 @@ ms.locfileid: "72660236"
 
 - 您可以選擇在應用程式中加入篩選功能。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
 - Northwind 範例資料庫。
 
-     如果您的開發電腦上沒有這個資料庫，則可以從 [Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkID=98088)下載。 如需指示，請參閱[下載範例資料庫](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)。
+     如果您的開發電腦上沒有這個資料庫，則可以從 [Microsoft 下載中心](https://go.microsoft.com/fwlink/?LinkID=98088)下載。 如需指示，請參閱[下載範例資料庫](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)。
 
 ## <a name="creating-the-service"></a>建立服務
  若要建立 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]，請加入 Web 專案、建立 [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]，然後透過模型建立服務。
@@ -94,7 +94,7 @@ ms.locfileid: "72660236"
 7. 在 [選擇您的版本] 頁面上，選擇 [Entity Framework 5.0] 選項按鈕，然後選擇 [下一步] 按鈕。
 
    > [!NOTE]
-   > 除了使用最新版的 Entity Framework 6 與 WCF 服務之外，您還需要安裝 WCF Data Services Entity Framework Provider NuGet 套件。 請參閱搭配[使用 WCF Data Services 5.6.0 版與 Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx)。
+   > 除了使用最新版的 Entity Framework 6 與 WCF 服務之外，您還需要安裝 WCF Data Services Entity Framework Provider NuGet 套件。 請參閱搭配[使用 WCF Data Services 5.6.0 版與 Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/)。
 
 8. 展開 [選擇您的資料庫物件] 頁面上的 [資料表] 節點，選取 [客戶] 核取方塊，然後選擇 [完成] 按鈕。
 
@@ -238,7 +238,7 @@ ms.locfileid: "72660236"
 
 1. 在 [方案總管] 中，開啟 [Form1.vb] 或 [Form1.cs] 節點的捷徑功能表，然後選擇 [開啟]。
 
-2. 從 [工具箱] 將 <xref:System.Windows.Forms.TextBox> 控制項和 <xref:System.Windows.Forms.Button> 控制項新增至表單。
+2. 從 [工具箱]<xref:System.Windows.Forms.TextBox><xref:System.Windows.Forms.Button> 將 **控制項和** 控制項新增至表單。
 
 3. 開啟 [<xref:System.Windows.Forms.Button>] 控制項的快捷方式功能表，並選擇 [ **View Code**]，然後在 `Button1_Click` 事件處理常式中加入下列程式碼：
 
@@ -275,5 +275,5 @@ ms.locfileid: "72660236"
 
 6. 在文字方塊中輸入 **London**，然後選擇該按鈕。 接著，就會只顯示 London 的客戶。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [Windows Communication Foundation 服務和 WCF Data Services Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) [如何：新增、更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

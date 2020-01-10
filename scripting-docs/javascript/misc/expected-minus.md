@@ -24,10 +24,10 @@ ms.locfileid: "72577559"
 # <a name="expected--"></a>必須是 '-'
 您嘗試建立正則運算式常值，但未包含其中一個斜線（/）。 就像字串常值是以字元的形式寫入一組引號內，正則運算式常值會以一對斜線（/）字元內的字元來表示。  
   
-### <a name="to-correct-this-error"></a>更正這個錯誤  
+### <a name="to-correct-this-error"></a>若要改正這項錯誤  
   
 - 插入終止的正斜線，以標示正則運算式的結尾。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [正則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
  [正則運算式語法（JavaScript）](https://msdn.microsoft.com/library/1400241x)

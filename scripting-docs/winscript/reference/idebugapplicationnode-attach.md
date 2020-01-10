@@ -47,8 +47,8 @@ HRESULT Attach(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會使用 `pdanParent` 做為父系，將此應用程式節點加入至專案樹狀結構。 如果 `NULL` `pdanParent`，此應用程式節點將會是最上層節點。  
+ 這個方法會使用 `pdanParent` 做為父系，將此應用程式節點加入至專案樹狀結構。 如果 `NULL``pdanParent`，此應用程式節點將會是最上層節點。  
   
-## <a name="see-also"></a>請參閱  
- [IDebugApplicationNode：:D etach](../../winscript/reference/idebugapplicationnode-detach.md)    
+## <a name="see-also"></a>另請參閱  
+ [IDebugApplicationNode：:D etach](../../winscript/reference/idebugapplicationnode-detach.md)   
  [IDebugApplicationNode 介面](../../winscript/reference/idebugapplicationnode-interface.md)

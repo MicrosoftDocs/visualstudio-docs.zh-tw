@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d902403b111e92f302ff907a29eaaa99ee181058
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4c58dbb32ef0a476ac7e22a840e27e389c710f97
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737994"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188288"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>從 Visual Studio 部署 UWP 應用程式
 
@@ -118,4 +118,4 @@ Visual Studio 部署功能會建立並註冊在目標裝置上使用 Visual Stud
 
 - [進階遠端部署選項](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [對已安裝的應用程式套件進行偵錯](../debugger/debug-installed-app-package.md)
-- [從 Visual Studio 執行應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [從 Visual Studio 執行應用程式](debugging-windows-store-and-windows-universal-apps.md)

@@ -6,14 +6,15 @@ ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab218f8dabb2b4360c1be17d809399a752f7cc2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972406"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778384"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 和 ProcessOff
 VSPerfCmd.exe 的 **ProcessOff** 和 **ProcessOn** 子命令會暫停和繼續分析命令列分析工作階段中指定的處理序。 **ProcessOff** 會停止分析處理序，**ProcessOn** 則開始分析處理序。
@@ -41,20 +42,20 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  `PID` 開始或停止處理序的整數識別碼。 處理序識別碼會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上。
 
 ## <a name="required-subcommands"></a>必要的子命令
- 無
+ None
 
 ## <a name="valid-subcommands"></a>有效的子命令
  您可以在也包含下列子命令的命令列上指定 **ProcessOn** 和 **ProcessOff**。
 
- **Start:**`Method` 初始化命令列分析工作階段，並設定指定的分析方法。
+ **Start：** `Method` 初始化命令列分析會話，並設定指定的分析方法。
 
- **Launch:**`AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
+ **啟動：** `AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
 
- **Attach：**`PID` 開始分析指定的處理序。
+ **Attach：** `PID` 開始分析指定的進程。
 
  **GlobalOff**&#124;**GlobalOn** 在命令列分析工作階段中，停止或開始分析所有處理序。
 
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`停止或開始對指定的執行緒進行分析 (僅檢測方法)。
+ {**ThreadOff**&#124;**ThreadOn**} **：** `TID` 會停止或啟動指定之執行緒的分析（僅限檢測方法）。
 
 ## <a name="example"></a>範例
  在此範例中，**ProcessOff** 子命令是用來收集應用程式啟動的分析資料。
@@ -71,7 +72,7 @@ VSPerfCmd /Shutdown
 
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)

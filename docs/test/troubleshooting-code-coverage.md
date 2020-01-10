@@ -2,17 +2,17 @@
 title: 針對程式碼涵蓋範圍進行疑難排解
 ms.date: 11/04/2016
 ms.topic: troubleshooting
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 9a7e90310df3e9e2e73b653fdc651ba266e679ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: bd70394262a2dd19ebf32f57549b9d2b3e8ee92a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659884"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565971"
 ---
 # <a name="troubleshoot-code-coverage"></a>對程式碼涵蓋範圍進行疑難排解
 
@@ -58,7 +58,7 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
 
 解決方式&mdash;請確定您的組建設定會產生 *.pdb* 檔。 如果建置專案時沒有更新 *.pdb* 檔案，請開啟專案屬性，選取 [組建] 頁面，選擇 [進階]，然後檢查 [偵錯資訊]。
 
-針對C++專案，請確定產生的 .pdb 檔案具有完整的偵錯工具資訊。 開啟 [專案屬性]，並確認 [產生的**調試**程式 **]  > ** [ >  產生的檢查] 設定為**產生針對共用和發行優化的 debug 資訊（/debug： FULL）** 。
+針對C++專案，請確定產生的 .pdb 檔案具有完整的偵錯工具資訊。 開啟 [專案屬性]，並確認 [產生的**調試**程式 **] > ** [ > 產生的檢查] 設定為**產生針對共用和發行優化的 debug 資訊（/debug： FULL）** 。
 
 如果 *.pdb* 和 *.dll* 或 *.exe* 檔案在不同的位置，請將 *.pdb* 檔複製到同一個目錄中。 將程式碼涵蓋範圍引擎設定成搜尋另一個位置的 *.pdb* 檔也是可行的。 如需詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
 

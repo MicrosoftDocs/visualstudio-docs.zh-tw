@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8c43e42d63208c1119f1f545697a57173fdd7a
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 615b112c8ad3e35449a1e3a6c2817db9c7699a73
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72313958"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589977"
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名您的按鈕控制項
 
@@ -74,7 +74,7 @@ ms.locfileid: "72313958"
 1. 若要再加入一個方法，在 [Windows Forms 設計工具] 中開啟 **CheckBox** 控制項的程式碼檔案，讓 IDE 加入 `checkBox1_CheckedChanged()` 方法。 每當使用者選取或清除核取方塊時就會呼叫該方法。
 
    > [!TIP]
-   > 在應用程式上工作時，您通常會在程式碼編輯器和**Windows Form 設計工具**之間移動。 IDE 可讓您在專案中輕鬆巡覽。 在 Visual Basic 中按兩下*Form1.cs* C# *或在*功能表列上，選擇 [**視圖**]  >  [**設計**工具]，以使用**方案總管**開啟**Windows Form 設計工具**。
+   > 在應用程式上工作時，您通常會在程式碼編輯器和**Windows Form 設計工具**之間移動。 IDE 可讓您在專案中輕鬆巡覽。 在 Visual Basic 中按兩下*Form1.cs* C# *或在*功能表列上，選擇 [**視圖**] > [**設計**工具]，以使用**方案總管**開啟**Windows Form 設計工具**。
 
     下列顯示您在程式碼編輯器中看到的新程式碼。
 

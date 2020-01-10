@@ -1,17 +1,17 @@
 ---
 title: 在專案中包含 NuGet 套件
 description: 本文件涵蓋如何在 Xamarin 專案中包含 NuGet 套件。 它會逐步尋找和下載套件，以及介紹 IDE 整合功能。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9e4699a1d4e2826cad205ce89ab46812cd5c4b2d
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 728a225f4a1d14af986039cae7cb2fc8a493ecc9
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692806"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983299"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
 
@@ -31,27 +31,27 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 
 ## <a name="adding-a-package"></a>新增套件
 
-在 Visual Studio for Mac 中開啟專案時，以滑鼠右鍵按一下 [Solution Pad]  中的 [套件]  資料夾，然後選取 [新增套件]  ：
+在 Visual Studio for Mac 中開啟專案時，以滑鼠右鍵按一下 [Solution Pad] 中的 [套件] 資料夾，然後選取 [新增套件]：
 
 ![新增 NuGet 套件內容動作](media/nuget-walkthrough-PackagesMenu.png)
 
-這會啟動 [新增套件]  視窗。 確定 [來源] 下拉式清單設定為 `nuget.org`：
+這會啟動 [新增套件] 視窗。 確定 [來源] 下拉式清單設定為 `nuget.org`：
 
 ![來源清單下拉式清單](media/nuget-walkthrough-Source.png)
 
-開啟視窗時，會從預設套件來源載入套件清單：nuget.org。初始結果如下：
+當視窗開啟時，它會從預設套件來源載入套件清單： nuget.org。初始結果如下所示：
 
 ![列出 NuGet 套件](media/nuget-walkthrough-AddPackages1.png)
 
-使用右上角的 [搜尋] 方塊來尋找特定套件，例如 `azure`。 當您發現想要使用的套件時，請選取它，然後按一下 [新增套件]  按鈕開始安裝。
+使用右上角的 [搜尋] 方塊來尋找特定套件，例如 `azure`。 當您發現想要使用的套件時，請選取它，然後按一下 [新增套件] 按鈕開始安裝。
 
 [新增 Azure NuGet 套件](media/nuget-walkthrough-AddPackages2.png)
 
 套件在下載之後就會新增至您的專案。 會如下變更方案：
 
-* [參考]  節點將包含屬於 NuGet 套件一部分的所有組件清單。
-* [套件]  節點會顯示您已下載的每個 NuGet 套件。 您可以更新或移除此清單中的套件。
-* **packages.config** 檔案將會新增至專案。 IDE 使用此 XML 檔案來追蹤這個專案中所參考的套件版本。 這個檔案不應該手動進行編輯，但您應該將它保留在版本控制中。 請注意，可以使用 project.json 檔案，而不要使用 packages.config 檔案。 project.json 檔案是支援可轉移還原之 NuGet 3 引進的新套件檔案格式。 如需 project.json 的詳細資訊，請參閱 [NuGet 文件](https://docs.microsoft.com/NuGet/Schema/Project-Json)。 需要手動新增 project.json 檔案，以及先關閉並重新開啟專案，再將 project.json 檔案用於 Visual Studio for Mac 中。
+* [參考] 節點將包含屬於 NuGet 套件一部分的所有組件清單。
+* [套件] 節點會顯示您已下載的每個 NuGet 套件。 您可以更新或移除此清單中的套件。
+* **packages.config** 檔案將會新增至專案。 IDE 使用此 XML 檔案來追蹤這個專案中所參考的套件版本。 這個檔案不應該手動進行編輯，但您應該將它保留在版本控制中。 請注意，可以使用 project.json 檔案，而不要使用 packages.config 檔案。 project.json 檔案是支援可轉移還原之 NuGet 3 引進的新套件檔案格式。 如需 project.json 的詳細資訊，請參閱 [NuGet 文件](/NuGet/Schema/Project-Json)。 需要手動新增 project.json 檔案，以及先關閉並重新開啟專案，再將 project.json 檔案用於 Visual Studio for Mac 中。
 
 ## <a name="using-nuget-packages"></a>使用 NuGet 套件
 
@@ -71,9 +71,9 @@ using Newtonsoft.Json;
 
 ## <a name="package-updates"></a>套件更新
 
-以滑鼠右鍵按一下 [套件]  節點，或分別以滑鼠右鍵按一下每個元件，即可一次完成所有套件更新。
+以滑鼠右鍵按一下 [套件] 節點，或分別以滑鼠右鍵按一下每個元件，即可一次完成所有套件更新。
 
-以滑鼠右鍵按一下 [套件]  來存取操作功能表：
+以滑鼠右鍵按一下 [套件] 來存取操作功能表：
 
 ![套件功能表](media/nuget-walkthrough-PackagesMenu.png)
 
@@ -93,13 +93,13 @@ using Newtonsoft.Json;
 
 ## <a name="adding-package-sources"></a>新增套件來源
 
-一開始會從 nuget.org 擷取可用於安裝的套件。不過，您可以將其他套件位置新增至 Visual Studio for Mac。 這適用於測試您自己正在開發的 NuGet 套件，或在公司或組織內使用私用 NuGet 伺服器。
+一開始會從 nuget.org 中取得可供安裝的套件。不過，您可以將其他封裝位置新增至 Visual Studio for Mac。 這適用於測試您自己正在開發的 NuGet 套件，或在公司或組織內使用私用 NuGet 伺服器。
 
-在 Visual Studio for Mac 中，巡覽至 [Visual Studio] > [喜好設定] > [NuGet] > [來源]  來檢視和編輯套件來源清單。 請注意，來源可以是遠端伺服器 (由 URL 指定) 或本機目錄。
+在 Visual Studio for Mac 中，巡覽至 [Visual Studio] > [喜好設定] > [NuGet] > [來源] 來檢視和編輯套件來源清單。 請注意，來源可以是遠端伺服器 (由 URL 指定) 或本機目錄。
 
 ![套件來源](media/nuget-walkthrough-PackageSource.png)
 
-按一下 [新增]  設定新來源。 輸入套件來源的易記名稱和 URL (或檔案路徑)。 如果來源是安全網頁伺服器，也請輸入使用者名稱和密碼，否則請將這些項目留白：
+按一下 [新增] 設定新來源。 輸入套件來源的易記名稱和 URL (或檔案路徑)。 如果來源是安全網頁伺服器，也請輸入使用者名稱和密碼，否則請將這些項目留白：
 
 ![新增套件來源](media/nuget-walkthrough-PackageSource2.png)
 
@@ -119,6 +119,6 @@ NuGet 文件討論 [using NuGet without committing packages to source control](/
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [在 Visual Studio 中安裝並使用套件 (Windows 上)](/nuget/quickstart/install-and-use-a-package-in-visual-studio)

@@ -61,6 +61,6 @@ HRESULT SynchronousCallInDebuggerThread(
 ## <a name="remarks"></a>備註  
  語言引擎和主機通常會使用這個方法，在其單一執行緒的上執行無限制執行緒的物件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugThreadCall 介面](../../winscript/reference/idebugthreadcall-interface.md)

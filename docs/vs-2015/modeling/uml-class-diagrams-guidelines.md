@@ -17,14 +17,14 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 804678985ae30d833b57fe7589f0903cf1edb291
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652268"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297280"
 ---
-# <a name="uml-class-diagrams-guidelines"></a>UML 類別圖表：方針
+# <a name="uml-class-diagrams-guidelines"></a>UML 類別圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 中，您可以使用*UML 類別圖*來分別描述資料類型及其關聯性和其執行方式。 該圖表可用來重點描述類別的邏輯方面，而非實作。
@@ -34,7 +34,7 @@ ms.locfileid: "72652268"
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 > [!NOTE]
-> 本主題說明 UML 類別圖。 另外有一種類別圖，您可建立並用來視覺化程式碼。 請參閱[設計和查看類別和類型](http://go.microsoft.com/fwlink/?LinkId=142231)。
+> 本主題說明 UML 類別圖。 另外有一種類別圖，您可建立並用來視覺化程式碼。 請參閱[設計和查看類別和類型](https://go.microsoft.com/fwlink/?LinkId=142231)。
 
 ## <a name="Using"></a>使用 UML 類別圖
  您可以將 UML 類別圖用於各種目的：
@@ -50,7 +50,7 @@ ms.locfileid: "72652268"
 ### <a name="relationship-to-other-diagrams"></a>與其他圖表的關聯性
  UML 類別圖通常與其他模型圖表一起繪製，以提供它們所使用的類型說明。 在每一種情況下，任何圖表都沒有隱含類型的實體表示。
 
- 活動圖表
+ 活動圖
 
  通過「物件節點」的資料類型。
 
@@ -134,7 +134,7 @@ ms.locfileid: "72652268"
 ### <a name="getting-types-from-other-diagrams"></a>從其他圖表取得類型
  您可以讓來自其他圖表的類型出現在 UML 類別圖上。
 
- UML 類別圖表
+ UML 類別圖
 
  您可以讓類別出現在多個 UML 類別圖上。 當您已在一個圖表上建立類別時，請從 [ **UML 模型瀏覽器**] 將該類別拖曳至另一個圖表。
 
@@ -142,7 +142,7 @@ ms.locfileid: "72652268"
 
  例如，您可以在一個圖表上顯示「餐點訂購」和餐廳「菜單」之間的關聯，而在其他圖表上顯示「餐點訂購」和「付款」之間的關聯。
 
- 元件圖
+ 元件圖表
 
  如果您已在元件圖表中的元件上定義介面，您可以將介面從 [ **UML 模型瀏覽器**] 拖曳至類別圖。 在類別圖中，您可以定義介面中所包含的方法。
 
@@ -180,7 +180,7 @@ ms.locfileid: "72652268"
 
 - 在模型中定義的類型。
 
-- 範本類型的參數化值，\<Parameter > 寫入的範本。 請參閱[範本類型](#Templates)。
+- 範本類型的參數化值，\<參數 > 寫入的範本。 請參閱[範本類型](#Templates)。
 
   您也可以撰寫尚未在模型中定義的類型名稱。 名稱將列在 [UML 模型瀏覽器] 的 [**未指定的類型**] 底下。
 
@@ -262,7 +262,7 @@ visibility attribute-name : Type
 visibility operation-name (parameter1 : Type1, ...) : Type
 ```
 
- 例如:
+ 例如：
 
 ```
 + AddItem (item : MenuItem, quantity : Integer) : Boolean
@@ -289,7 +289,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  不過，您只能在 [**屬性**] 視窗中設定 [**是靜態**] 和 [**是抽象**屬性]。
 
 #### <a name="full-signature"></a>完整簽章
- 編輯屬性 (Attribute) 或作業的簽章時，部分其他屬性 (Property) 可能出現在行的結尾、每個參數之後。 它們在大括號 {…} 之中顯示。 您可以編輯或加入這些屬性。 例如:
+ 編輯屬性 (Attribute) 或作業的簽章時，部分其他屬性 (Property) 可能出現在行的結尾、每個參數之後。 它們在大括號 {…} 之中顯示。 您可以編輯或加入這些屬性。 例如：
 
 ```
 + AddItems (items: MenuItem [1..*] {unique, ordered})
@@ -322,7 +322,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  屬性是從其他屬性或關聯的值計算得出的。
 
- "/" 出現在屬性的名稱之前。 例如:
+ "/" 出現在屬性的名稱之前。 例如：
 
 ```
 /TotalPrice: Integer
@@ -351,7 +351,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   如需這些屬性和其他屬性的完整詳細資料，請參閱[UML 類別圖上的關聯屬性](../modeling/properties-of-associations-on-uml-class-diagrams.md)。
 
 ### <a name="navigability"></a>巡覽性
- 當您繪製關聯時，它的一端會有箭頭，表示可在該方向巡覽關聯。 如果類別圖代表軟體類別，而關聯代表指標或參考，這會很有用。 不過，使用類別圖代表實體和關聯或商務概念時，它與代表巡覽性比較不相關。 在這種情況下，您可能會偏好繪製不帶箭頭的關聯。 若要這麼做，您可以將關聯兩端的 **[可流覽] 屬性設定**為 True。 若要簡化此作業，您可以下載程式代碼範例[UML 網域模型](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4)化。
+ 當您繪製關聯時，它的一端會有箭頭，表示可在該方向巡覽關聯。 如果類別圖代表軟體類別，而關聯代表指標或參考，這會很有用。 不過，使用類別圖代表實體和關聯或商務概念時，它與代表巡覽性比較不相關。 在這種情況下，您可能會偏好繪製不帶箭頭的關聯。 若要這麼做，您可以將關聯兩端的 **[可流覽] 屬性設定**為 True。
 
 ### <a name="attributes-and-associations"></a>屬性和關聯
  關聯是顯示屬性的圖示方式。 例如，您可以繪製從「餐廳」到「菜單」的關聯，而不是建立具有類型為「菜單」之屬性的「餐廳」類別。
@@ -472,5 +472,5 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
      如需如何設定這些屬性和自訂所提供範本的詳細資訊，請參閱[從 UML 類別圖產生程式碼](../modeling/generate-code-from-uml-class-diagrams.md)。
 
-## <a name="see-also"></a>請參閱
- [編輯 uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md) [uml 類別圖：參考](../modeling/uml-class-diagrams-reference.md)[模型使用者需求](../modeling/model-user-requirements.md) [Uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md) [uml 順序圖表](../modeling/uml-sequence-diagrams-reference.md)：參考 uml[使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md) [uml元件圖：參考](../modeling/uml-component-diagrams-reference.md)
+## <a name="see-also"></a>另請參閱
+ [編輯 uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md) [uml 類別圖：參考](../modeling/uml-class-diagrams-reference.md)[模型使用者需求](../modeling/model-user-requirements.md) [Uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md) [uml 順序圖表](../modeling/uml-sequence-diagrams-reference.md)：參考 Uml[使用案例圖](../modeling/uml-use-case-diagrams-reference.md)：參考[uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md)

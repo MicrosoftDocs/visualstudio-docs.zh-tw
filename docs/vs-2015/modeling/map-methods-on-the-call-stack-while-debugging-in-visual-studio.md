@@ -30,12 +30,12 @@ caps.latest.revision: 43
 author: MikeJo5000
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 81ae908c29b45b09d2ecec84c3189e6fb4e7a45b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2a2c6e95822794394dbdfc7f53104b31b7c17ea9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657594"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296080"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "72657594"
 
 - 可以偵錯的程式碼，例如 Visual C# .NET、Visual Basic .NET、C++、JavaScript 或 X++
 
-  請參閱：[影片：使用 Code Map 偵錯工具整合以視覺化方式進行偵錯工具（Channel 9）](http://go.microsoft.com/fwlink/?LinkId=293418) •[對應呼叫堆疊](#MapStack)•[對程式碼進行附注](#MakeNotes)•[使用下一個呼叫堆疊更新對應](#UpdateMap)•[將相關程式碼加入至對應圖](#AddRelatedCode)•使用下列內容來[尋找 bug：map](#FindBugs) • [Q & A](#QA)
+  請參閱：[影片：使用 Code Map 偵錯工具整合（Channel 9）以視覺化方式進行偵錯工具](https://go.microsoft.com/fwlink/?LinkId=293418)•[對應呼叫堆疊](#MapStack)•[對程式碼進行附注](#MakeNotes)•[使用下一個呼叫堆疊更新對應](#UpdateMap)•[將相關程式碼加入至對應圖](#AddRelatedCode)•[使用對應來尋找 bug](#FindBugs) • [Q & A](#QA)
 
   如需您在處理 code map 時可使用的命令和動作的詳細資訊，請參閱[流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)。
 
@@ -58,7 +58,7 @@ ms.locfileid: "72657594"
 
 1. 開始偵錯。 （鍵盤： **F5**）
 
-2. 當您的應用程式進入中斷模式，或您逐步執行函式之後，請選擇 [ **Code Map**]。 （鍵盤： **Ctrl**  + **Shift**  +  **`** ）
+2. 當您的應用程式進入中斷模式，或您逐步執行函式之後，請選擇 [ **Code Map**]。 （鍵盤： **Ctrl** + **Shift** +  **`** ）
 
      ![選擇 Code Map 以開始對應呼叫堆疊](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
 
@@ -153,7 +153,7 @@ ms.locfileid: "72657594"
 
 - **如何? 停止對應自動加入新的呼叫堆疊嗎？**
 
-   選擇 [在地圖工具列上![自動顯示 Code Map 上的呼叫堆疊] 按鈕&#45; ](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") 。 若要以手動方式將目前的呼叫堆疊加入至地圖，請按**Ctrl**  + **Shift**  +  **`** 。
+   選擇 [在地圖工具列上![自動顯示 Code Map 上的呼叫堆疊] 按鈕&#45; ](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") 。 若要以手動方式將目前的呼叫堆疊加入至地圖，請按**Ctrl** + **Shift** +  **`** 。
 
    在偵錯時，對應圖會繼續反白顯示對應圖上現有的呼叫堆疊。
 
@@ -165,5 +165,5 @@ ms.locfileid: "72657594"
 
   請參閱：[對應呼叫堆疊](#MapStack)•[對程式碼進行附注](#MakeNotes)•[使用下一個呼叫堆疊更新對應](#UpdateMap)•[將相關程式碼加入至對應圖](#AddRelatedCode)•[使用對應尋找 bug](#FindBugs)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [對應整個方案](../modeling/map-dependencies-across-your-solutions.md)的相依性[使用 code map 來對應用程式進行 debug](../modeling/use-code-maps-to-debug-your-applications.md) ，使用 Code Map 分析器[流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)來[尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)

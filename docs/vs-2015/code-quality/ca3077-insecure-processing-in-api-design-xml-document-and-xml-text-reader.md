@@ -8,12 +8,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 83132da4b6687db74920015df0ad817eb75673db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ce48f9dee90e33782a92116ee4ec298e53770489
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669053"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300476"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077：API 設計、XML 文件和 XML 文字讀取器中的不安全處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,14 +22,14 @@ ms.locfileid: "72669053"
 |-|-|
 |TypeName|InsecureDTDProcessingInAPIDesign|
 |CheckId|CA3077|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  針對衍生自 XMLDocument 和 XMLTextReader 的 API 進行設計時，請留意 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>。  若在參考或解析外部實體來源時使用不安全的 DTDProcessing 執行個體，或在 XML 中設定不安全的值，都可能會導致資訊洩漏。
 
 ## <a name="rule-description"></a>規則描述
- [文件類型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 攻擊。 下列情況會觸發此規則：
+ [文件類型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](https://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 攻擊。 下列情況會觸發此規則：
 
 - <xref:System.Xml.XmlDocument> 或 <xref:System.Xml.XmlTextReader> 類別針對 DTD 處理使用預設解析程式值。
 
@@ -39,7 +39,7 @@ ms.locfileid: "72669053"
 
 - 適當地攔截並處理所有的 XmlTextReader 例外狀況，以避免路徑資訊洩漏。
 
-- 使用 XmlResolver  <xref:System.Xml.XmlSecureResolver>instead 來限制 XmlTextReader 可以存取的資源。
+- 使用 <xref:System.Xml.XmlSecureResolver>而不是 XmlResolver，以限制 XmlTextReader 可以存取的資源。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  如果您無法確定輸入是否來自受信任的來源，請不要隱藏這個警告的規則。
@@ -68,7 +68,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 
 ```csharp
 using System;

@@ -15,17 +15,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab2bd92b5636c89027c9c5954567be8048c1b152
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64d46d4d662b7226dd2be15e6281a17e5b87e577
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648229"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586285"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 
@@ -70,21 +70,21 @@ ms.locfileid: "72648229"
 
 合併資料集時，您可以傳遞布林值引數（`preserveChanges`），告訴 <xref:System.Data.DataSet.Merge%2A> 方法是否要在目標資料集中保留現有的修改。 因為資料集會維護多個版本的記錄，所以請務必記住，有一個以上的記錄版本會合並。 下表顯示兩個資料集中的記錄合併的方式：
 
-|DataRowVersion|目標資料集|源資料集|
+|DataRowVersion|目標資料集|來源資料集|
 | - | - | - |
 |原始|James Wilson|James C. Wilson|
 |目前|Jim Wilson|James C. Wilson|
 
 使用 `preserveChanges=false targetDataset.Merge(sourceDataset)` 在上表中呼叫 <xref:System.Data.DataSet.Merge%2A> 方法，會產生下列資料：
 
-|DataRowVersion|目標資料集|源資料集|
+|DataRowVersion|目標資料集|來源資料集|
 | - | - | - |
 |原始|James C. Wilson|James C. Wilson|
 |目前|James C. Wilson|James C. Wilson|
 
 使用 `preserveChanges = true targetDataset.Merge(sourceDataset, true)` 呼叫 <xref:System.Data.DataSet.Merge%2A> 方法，會產生下列資料：
 
-|DataRowVersion|目標資料集|源資料集|
+|DataRowVersion|目標資料集|來源資料集|
 | - | - | - |
 |原始|James C. Wilson|James C. Wilson|
 |目前|Jim Wilson|James C. Wilson|
@@ -96,14 +96,14 @@ ms.locfileid: "72648229"
 
 若要對現有的資料列進行變更，請在個別資料行中加入或更新資料。 如果資料集包含條件約束（例如外鍵或不可為 null 的條件約束），則當您更新記錄時，可能會暫時處於錯誤狀態。 也就是說，在您完成更新一個資料行之後，但是在到達下一個資料行之前，它可能會處於錯誤狀態。
 
-若要防止過早的條件約束違規，您可以暫時暫停更新條件約束。 這有兩個用途：
+若要防止過早的條件約束違規，您可以暫時暫停更新條件約束。 這有兩個目的：
 
 - 當您完成更新一個資料行但尚未開始更新另一個資料行之後，它會防止擲回錯誤。
 
 - 它會防止引發特定的更新事件（通常用於驗證的事件）。
 
 > [!NOTE]
-> 在 Windows Forms 中，內建于 datagrid 的資料系結架構會暫停條件約束檢查，直到焦點移出資料列為止，而且您不需要明確地呼叫 <xref:System.Data.DataRow.BeginEdit%2A>、<xref:System.Data.DataRow.EndEdit%2A> 或 <xref:System.Data.DataRow.CancelEdit%2A> 方法。
+> 在 Windows Forms 中，內建于 datagrid 的資料系結架構會暫停條件約束檢查，直到焦點移出資料列為止，而且您不需要明確地呼叫 <xref:System.Data.DataRow.BeginEdit%2A>、<xref:System.Data.DataRow.EndEdit%2A>或 <xref:System.Data.DataRow.CancelEdit%2A> 方法。
 
 在資料集上叫用 <xref:System.Data.DataSet.Merge%2A> 方法時，會自動停用條件約束。 當合併完成時，如果無法啟用的資料集有任何條件約束，則會擲回 <xref:System.Data.ConstraintException>。 在此情況下，<xref:System.Data.DataSet.EnforceConstraints%2A> 屬性會設定為 `false,` 而且必須解決所有條件約束違規，才能將 <xref:System.Data.DataSet.EnforceConstraints%2A> 屬性重設為 `true`。
 
@@ -121,17 +121,17 @@ ms.locfileid: "72648229"
 
 ### <a name="rowstate-property"></a>RowState 屬性
 
-@No__t_1 物件的 <xref:System.Data.DataRow.RowState%2A> 屬性是提供特定資料列狀態相關資訊的值。
+<xref:System.Data.DataRow> 物件的 <xref:System.Data.DataRow.RowState%2A> 屬性是提供特定資料列狀態相關資訊的值。
 
 下表詳細說明 <xref:System.Data.DataRowState> 列舉的可能值：
 
 |DataRowState 值|描述|
 | - |-----------------|
-|<xref:System.Data.DataRowState.Added>|已將資料列新增為 <xref:System.Data.DataRowCollection> 的專案。 （處於此狀態的資料列沒有對應的原始版本，因為在呼叫最後一個 <xref:System.Data.DataRow.AcceptChanges%2A> 方法時，它並不存在）。|
+|<xref:System.Data.DataRowState.Added>|已將資料列新增為 <xref:System.Data.DataRowCollection>的專案。 （處於此狀態的資料列沒有對應的原始版本，因為在呼叫最後一個 <xref:System.Data.DataRow.AcceptChanges%2A> 方法時，它並不存在）。|
 |<xref:System.Data.DataRowState.Deleted>|已使用 <xref:System.Data.DataRow> 物件的 <xref:System.Data.DataRow.Delete%2A> 刪除資料列。|
-|<xref:System.Data.DataRowState.Detached>|已建立資料列，但它不是任何 <xref:System.Data.DataRowCollection> 的一部分。 @No__t_0 物件在建立之後，會立即處於此狀態，然後將它加入集合中，以及從集合中移除之後。|
+|<xref:System.Data.DataRowState.Detached>|資料列已建立，但它不屬於任何 <xref:System.Data.DataRowCollection>。 <xref:System.Data.DataRow> 物件在建立之後，會立即處於此狀態，然後將它加入集合中，以及從集合中移除之後。|
 |<xref:System.Data.DataRowState.Modified>|資料列中的資料行值已經以某種方式變更。|
-|<xref:System.Data.DataRowState.Unchanged>|上次呼叫 <xref:System.Data.DataRow.AcceptChanges%2A> 之後，資料列尚未變更。|
+|<xref:System.Data.DataRowState.Unchanged>|資料列從上次呼叫 <xref:System.Data.DataRow.AcceptChanges%2A> 之後就未變更。|
 
 ### <a name="datarowversion-enumeration"></a>DataRowVersion 列舉
 
@@ -192,11 +192,11 @@ ms.locfileid: "72648229"
 
 - 將記錄的 <xref:System.Data.DataRowVersion.Current> 版本寫入其 <xref:System.Data.DataRowVersion.Original> 版本，並覆寫原始版本。
 
-- 移除 <xref:System.Data.DataRow.RowState%2A> 屬性設為 <xref:System.Data.DataRowState.Deleted> 的任何資料列。
+- 移除 <xref:System.Data.DataRow.RowState%2A> 屬性設為 <xref:System.Data.DataRowState.Deleted>的任何資料列。
 
 - 將記錄的 <xref:System.Data.DataRow.RowState%2A> 屬性設定為 <xref:System.Data.DataRowState.Unchanged>。
 
-@No__t_0 方法可在三個層級取得。 您可以在 <xref:System.Data.DataRow> 物件上呼叫它，只認可該資料列的變更。 您也可以在 <xref:System.Data.DataTable> 物件上呼叫它，以認可資料表中的所有資料列。 最後，您可以在 <xref:System.Data.DataSet> 物件上呼叫它，以認可資料集所有資料表之所有記錄中的所有暫止變更。
+<xref:System.Data.DataSet.AcceptChanges%2A> 方法可在三個層級取得。 您可以在 <xref:System.Data.DataRow> 物件上呼叫它，只認可該資料列的變更。 您也可以在 <xref:System.Data.DataTable> 物件上呼叫它，以認可資料表中的所有資料列。 最後，您可以在 <xref:System.Data.DataSet> 物件上呼叫它，以認可資料集所有資料表之所有記錄中的所有暫止變更。
 
 下表描述根據呼叫方法的物件，所認可的變更：
 
@@ -209,7 +209,7 @@ ms.locfileid: "72648229"
 > [!NOTE]
 > 如果您藉由呼叫 TableAdapter 的 `Fill` 方法來載入資料集，則不需要明確接受變更。 根據預設，`Fill` 方法會在完成填入資料表之後，呼叫 `AcceptChanges` 方法。
 
-@No__t_0 的相關方法，會藉由將 <xref:System.Data.DataRowVersion.Original> 版本複製回記錄的 <xref:System.Data.DataRowVersion.Current> 版本，來復原變更的效果。 它也會將每一筆記錄的 <xref:System.Data.DataRow.RowState%2A> 設定回 <xref:System.Data.DataRowState.Unchanged>。
+<xref:System.Data.DataSet.RejectChanges%2A>的相關方法，會藉由將 <xref:System.Data.DataRowVersion.Original> 版本複製回記錄的 <xref:System.Data.DataRowVersion.Current> 版本，來復原變更的效果。 它也會將每一筆記錄的 <xref:System.Data.DataRow.RowState%2A> 設定回 <xref:System.Data.DataRowState.Unchanged>。
 
 ## <a name="data-validation"></a>資料驗證
 
@@ -224,7 +224,7 @@ ms.locfileid: "72648229"
 - 在資料後端中，將資料傳送至資料來源（例如資料庫），並允許它接受或拒絕資料。 如果您使用的資料庫具有複雜的功能來驗證資料並提供錯誤資訊，這可能是個實用的方法，因為不論資料位於何處，您都可以進行驗證。 不過，這種方法可能無法配合應用程式特定的驗證需求。 此外，若要讓資料來源驗證資料，可能會因為您的應用程式如何協助解決後端所引發的驗證錯誤，而造成資料來源的大量往返。
 
    > [!IMPORTANT]
-   > 搭配設定為 <xref:System.Data.CommandType.Text> 的 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> 屬性使用資料命令時，請仔細檢查從用戶端傳送的資訊，再將它傳遞至您的資料庫。 惡意的使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取權或藉此破壞資料庫。 將使用者輸入傳送至資料庫之前，請務必確認該資訊是否有效。 最佳做法是一律盡可能使用參數化查詢或預存程式。
+   > 搭配設定為 <xref:System.Data.CommandType.Text>的 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> 屬性使用資料命令時，請仔細檢查從用戶端傳送的資訊，再將它傳遞至您的資料庫。 惡意使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取或破壞資料庫。 將使用者輸入傳送至資料庫之前，請務必確認該資訊是否有效。 最佳做法是一律盡可能使用參數化查詢或預存程式。
 
 ## <a name="transmit-updates-to-the-data-source"></a>將更新傳送至資料來源
 
@@ -252,7 +252,7 @@ ms.locfileid: "72648229"
 
 - 已傳送的 SQL 語句是 UPDATE 語句。 介面卡知道要使用 UPDATE 語句，因為 <xref:System.Data.DataRow.RowState%2A> 屬性的值是 <xref:System.Data.DataRowState.Modified>。
 
-- 已傳送的 SQL 語句包含 WHERE 子句，表示 UPDATE 語句的目標是 `CustomerID = 'c400'` 的資料列。 SELECT 語句的這個部分會區分目標資料列與所有其他專案，因為 `CustomerID` 是目標資料表的主要索引鍵。 WHERE 子句的資訊衍生自記錄的原始版本（`DataRowVersion.Original`），以防識別資料列所需的值已變更。
+- 已傳送的 SQL 語句包含 WHERE 子句，表示 UPDATE 語句的目標是 `CustomerID = 'c400'`的資料列。 SELECT 語句的這個部分會區分目標資料列與所有其他專案，因為 `CustomerID` 是目標資料表的主要索引鍵。 WHERE 子句的資訊衍生自記錄的原始版本（`DataRowVersion.Original`），以防識別資料列所需的值已變更。
 
 - 已傳送的 SQL 語句包含 SET 子句，用以設定已修改之資料行的新值。
 

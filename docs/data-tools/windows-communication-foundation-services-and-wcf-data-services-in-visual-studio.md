@@ -30,17 +30,17 @@ helpviewer_keywords:
 - WCF services, endpoints
 - service method, called asynchronously[Visual Studio]
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8654e42db8ec2a285c9104c6f43bc34beb22ad22
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: abcfde777223ada130e06ab7766319e1d982258c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806963"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585934"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 
@@ -52,7 +52,7 @@ Windows Communication Foundation （WCF）是統一的架構，可建立安全�
 
 ### <a name="what-are-wcf-data-services"></a>WCF Data Services 的內容
 
-WCF Data Services 是開放式資料（OData）通訊協定標準的執行。  WCF Data Services 可讓您將表格式資料公開為一組 REST Api，可讓您使用標準 HTTP 動詞命令（例如 GET、POST、PUT 或 DELETE）來傳回資料。 在伺服器端上，WCF Data Services 由[ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis)取代，以建立新的 OData 服務。 WCF Data Services 用戶端程式庫會繼續成為在 .NET 應用程式中使用 OData 服務的好選擇（從 Visual Studio （**Project**  > **加入服務參考**）。 如需詳細資訊，請參閱 [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)。
+WCF Data Services 是開放式資料（OData）通訊協定標準的執行。  WCF Data Services 可讓您將表格式資料公開為一組 REST Api，可讓您使用標準 HTTP 動詞命令（例如 GET、POST、PUT 或 DELETE）來傳回資料。 在伺服器端上，WCF Data Services 由[ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis)取代，以建立新的 OData 服務。 WCF Data Services 用戶端程式庫會繼續成為在 .NET 應用程式中使用 OData 服務的好選擇（從 Visual Studio （**Project** > **加入服務參考**）。 如需詳細資訊，請參閱 [WCF Data Services 4.5](/dotnet/framework/data/wcf)。
 
 ### <a name="wcf-programming-model"></a>WCF 程式設計模型
 
@@ -167,11 +167,11 @@ Visual Studio 簡化了建立 WCF 用戶端的工作，並自動為您使用 [**
 
 2. 搜尋檔案中的 `<Client>` 標記。
 
-3. 在 `<Client>` 標籤下方搜尋 `<Endpoint>` 開頭的標記。
+3. 在 `<Client>` 標籤下方搜尋 `<Endpoint>`開頭的標記。
 
      如果服務參考提供多個端點，則會有兩個以上的 `<Endpoint` 標記。
 
-4. 在 `<EndPoint>` 標籤中，您會發現 `name="`*SomeService* `"` 參數（其中*SomeService*代表端點名稱）。 這是可傳遞給服務參考之函式的 `endpointConfigurationName As String` 多載的端點名稱。
+4. 在 `<EndPoint>` 標籤中，您會發現 `name="`*SomeService*`"` 參數（其中*SomeService*代表端點名稱）。 這是可傳遞給服務參考之函式的 `endpointConfigurationName As String` 多載的端點名稱。
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>如何：以非同步方式呼叫服務方法
 

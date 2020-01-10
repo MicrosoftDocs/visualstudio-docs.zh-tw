@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6976d7c0e32739348ec0d78603e6b6d47d01477b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9cc4f8038906de89afd86fd666fbb011e974362d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661578"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298090"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>使用 3D 資產來打造遊戲和應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ ms.locfileid: "72661578"
  您可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 著色器設計工具 (即圖形式著色器設計工具) 來建立自訂視覺效果，而不需要知道 HLSL 程式設計。
 
 > [!NOTE]
-> 如需如何開始 DirectX 程式設計的詳細資訊，請參閱 [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633)。 如需如何偵錯 DirectX 應用程式的詳細資訊，請參閱[圖形診斷 (偵錯 DirectX 圖形)](../debugger/visual-studio-graphics-diagnostics.md)。
+> 如需如何開始 DirectX 程式設計的詳細資訊，請參閱 [DirectX](https://go.microsoft.com/fwlink/p/?LinkId=224633)。 如需如何偵錯 DirectX 應用程式的詳細資訊，請參閱[圖形診斷 (偵錯 DirectX 圖形)](../debugger/visual-studio-graphics-diagnostics.md)。
 
 ## <a name="directx-version-compatibility"></a>DirectX 版本相容性
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用 DirectX 來轉譯 2D 和 3D 資產。 您可以選取 DirectX 11 轉譯器或 Windows Advanced Rasterization Platform (WARP) 軟體轉譯器。 DirectX 11 轉譯器對 DirectX 11 和 DirectX 10 GPU 提供高效能硬體加速呈現轉譯。 WARP 轉譯器有助於確定您的資產適用於各種不同的電腦，包含未配備現代化圖形硬體的電腦，以及具有整合式圖形硬體的電腦。 如需 WARP 的詳細資訊，請參閱 [Windows Advanced Rasterization Platform (WARP) 指南](http://go.microsoft.com/fwlink/p/?LinkId=224634)。
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用 DirectX 來轉譯 2D 和 3D 資產。 您可以選取 DirectX 11 轉譯器或 Windows Advanced Rasterization Platform (WARP) 軟體轉譯器。 DirectX 11 轉譯器對 DirectX 11 和 DirectX 10 GPU 提供高效能硬體加速呈現轉譯。 WARP 轉譯器有助於確定您的資產適用於各種不同的電腦，包含未配備現代化圖形硬體的電腦，以及具有整合式圖形硬體的電腦。 如需 WARP 的詳細資訊，請參閱 [Windows Advanced Rasterization Platform (WARP) 指南](https://go.microsoft.com/fwlink/p/?LinkId=224634)。
 
 ## <a name="related-topics"></a>相關主題
 

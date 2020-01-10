@@ -9,17 +9,17 @@ helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8fad79423465ac3d90c426862f93f09d721c7df3
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: f84e334409f4e3546d8963a51bb5cf79b31f0afd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806984"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585960"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>逐步解說：建立多層式資料應用程式
 「多層式架構」(N-tier) 資料應用程式是可存取資料而且分成多個邏輯層或「層級」(tier) 的應用程式。 將應用程式元件分成離散層級，可增加應用程式的可維護性和延展性。 原因是可以更輕鬆地採用套用至單一層級的新技術，而且您不需要重新設計整個方案。 多層式架構包括呈現層、中介層和資料層。 中介層通常包括資料存取層、商務邏輯層和共用元件 (如驗證 (authentication) 和驗證 (validation))。 資料層包括關聯式資料庫。 多層式架構應用程式通常會將敏感性資訊儲存至中介層的資料存取層，以與存取呈現層的使用者隔離。 如需詳細資訊，請參閱多[層式資料應用程式總覽](../data-tools/n-tier-data-applications-overview.md)。
@@ -50,7 +50,7 @@ ms.locfileid: "72806984"
 
 ![影片連結](../data-tools/media/playvideo.gif)如本主題的影片版本，請參閱[視訊 HOW TO：建立 N-Tier 資料應用程式](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90))。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
 1. 如果您沒有 SQL Server Express LocalDB，請從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或透過**Visual Studio 安裝程式**進行安裝。 在**Visual Studio 安裝程式**中，您可以將 SQL Server Express LocalDB 安裝為 **.net 桌面開發**工作負載的一部分，或做為個別元件。
@@ -75,7 +75,7 @@ ms.locfileid: "72806984"
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>建立多層式架構方案和 DataEntityTier 類別庫
 
-1. **在 Visual Studio 的 [檔案**] 功能表上，選取 [**新增** > **專案**]。
+1. 在 Visual Studio 中，於 [檔案] 功能表上選取 [新增] > [專案]。
 
 2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
@@ -218,7 +218,7 @@ ms.locfileid: "72806984"
 
 3. 選取 **DataAccessTier** 和 **DataEntityTier** 專案。
 
-4. 按一下 [確定]。
+4. 按一下 [ **確定**]。
 
 ## <a name="add-functions-to-the-service-to-call-the-getcustomers-and-getorders-methods-in-the-data-access-tier"></a>將函式新增至服務，以在資料存取層中呼叫 GetCustomers 和 GetOrders 方法
 現在，資料存取層包含方法可以傳回資料、在資料服務中建立方法以呼叫資料存取層中的方法。
@@ -358,7 +358,7 @@ ms.locfileid: "72806984"
     ```
 
 ## <a name="increase-the-maximum-message-size-allowed-by-the-service"></a>增加服務允許的訊息大小上限
-@No__t_0 的預設值不夠大，無法保存從 `Customers` 和 `Orders` 資料表中取出的資料。 在下列步驟中，您會將值增加至6553600。 您可以變更用戶端上的值，這會自動更新服務參考。
+`maxReceivedMessageSize` 的預設值不夠大，無法保存從 `Customers` 和 `Orders` 資料表中取出的資料。 在下列步驟中，您會將值增加至6553600。 您可以變更用戶端上的值，這會自動更新服務參考。
 
 > [!NOTE]
 > 較小的預設大小是要限制拒絕服務 (DoS) 攻擊的機率。 如需詳細資訊，請參閱<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。

@@ -5,19 +5,19 @@ ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
-author: doughall
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
-ms.translationtype: HT
+ms.openlocfilehash: 4c33420e715f2164f767ba57ff149a409d7d3627
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300551"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776178"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>在維護基底上時更新 Visual Studio
 
@@ -28,7 +28,7 @@ ms.locfileid: "68300551"
 
 企業系統管理員可以選擇將其用戶端保持在維護基準。 維護基準由維護更新支援，直到下一個維護基準發行過後一年。
 
-維護基準選項讓開發人員和系統管理員能更彈性地採用新功能、錯誤 (Bug) 修正或次要更新中包含的元件。 第一個服務基準是 16.0.x。 如需詳細資訊，請參閱 [Enterprise 與 Professional 客戶的支援選項](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)。
+維護基準選項讓開發人員和系統管理員能更彈性地採用新功能、錯誤 (Bug) 修正或次要更新中包含的元件。 第一個服務基準是 16.0.x。 如需詳細資訊，請參閱 [Enterprise 與 Professional 客戶的支援選項](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)。
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>如何進入服務基準
 
@@ -48,7 +48,7 @@ ms.locfileid: "68300551"
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>透過網際網路安裝服務基準
 
-針對網際網路型安裝，請將 `--channelUri` 與不存在的通道資訊清單新增至用來啟動安裝程式的命令列。 這會禁止 Visual Studio 使用最新的可用版本進行更新。 以下是範例：
+針對網際網路型安裝，請將 `--channelUri` 與不存在的通道資訊清單新增至用來啟動安裝程式的命令列。 這會禁止 Visual Studio 使用最新的可用版本進行更新。 以下為範例：
 
 ```cmd
 vs_enterprise.exe --channelUri c:\doesnotexist.chman
@@ -62,7 +62,7 @@ vs_enterprise.exe --channelUri c:\doesnotexist.chman
 
 當維護基準更新可用時，該維護更新的固定版本啟動載入器檔案可在 [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0) 取得。
 
-針對使用網路配置安裝進行部署的系統管理員，系統管理員需要更新[配置位置](update-a-network-installation-of-visual-studio.md)。 從該位置安裝的用戶端會收到更新通知。 如果更新必須部署至用戶端，請遵循[這些指示](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines)。 當您修改 'response.json' 以進行更新時，請勿新增額外的工作負載、元件或語言。 在產品更新後，必須以「修改」部署的方式管理這些設定。
+針對使用網路配置安裝進行部署的系統管理員，系統管理員需要更新[配置位置](update-a-network-installation-of-visual-studio.md)。 從該位置安裝的用戶端會收到更新通知。 如果更新必須部署至用戶端，請遵循[這些指示](update-a-network-installation-of-visual-studio.md#deploy-an-update-to-client-machines)。 當您修改 'response.json' 以進行更新時，請勿新增額外的工作負載、元件或語言。 在產品更新後，必須以「修改」部署的方式管理這些設定。
 
 針對網際網路型安裝，請執行新的固定版本啟動載入器，其中 `--channelUri` 參數指向用戶端上不存在的通道資訊清單。 如果更新是以無訊息或被動模式進行部署，請使用兩個不同的命令：
 
@@ -80,7 +80,7 @@ vs_enterprise.exe --channelUri c:\doesnotexist.chman
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [安裝 Visual Studio](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

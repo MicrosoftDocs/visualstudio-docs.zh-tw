@@ -12,22 +12,22 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 41023f49f1897f3e3d26d7fc57807ea98fa35f24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10c9c6cfa1d8553c79b710239a99f8ea9e2438e5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659289"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301276"
 ---
-# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連線至產生的指示詞處理器
+# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連接至產生的指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以撰寫自己的主控制項來處理文字模板。 基本的自訂主機會在 [Walkthrough 中示範：建立自訂文字模板主機 ](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 您可以擴充該主機來新增函式，例如產生多個輸出檔案。
+您可以撰寫自己的主控制項來處理文字模板。 基本的自訂主機會在[逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)中示範。 您可以擴充該主機來新增函式，例如產生多個輸出檔案。
 
  在此逐步解說中，您會展開自訂主機，使其支援呼叫指示詞處理器的文字模板。 當您定義特定領域語言時，它會為領域模型產生指示詞*處理器*。 指示詞處理器可讓使用者更輕鬆地撰寫可存取模型的範本，而不需要在範本中撰寫元件和匯入指示詞。
 
 > [!WARNING]
-> 本逐步解說是以 [Walkthrough 為基礎：建立自訂文字模板主機 ](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 請先執行該逐步解說。
+> 本逐步解說是以[逐步解說：建立自訂文字模板主機為](../modeling/walkthrough-creating-a-custom-text-template-host.md)基礎。 請先執行該逐步解說。
 
  本逐步解說包含下列工作：
 
@@ -42,11 +42,11 @@ ms.locfileid: "72659289"
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
- 此外，您還必須在 [Walkthrough 中建立自訂文字模板轉換：建立自訂文字模板主機 ](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
+ 此外，您必須在[逐步解說：建立自訂文字模板主](../modeling/walkthrough-creating-a-custom-text-template-host.md)控制項中建立自訂文字模板轉換。
 
 ## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>使用特定領域語言工具來產生指示詞處理器
  在此逐步解說中，您會使用定義域專屬的語言設計工具 Wizard，為方案 DSLMinimalTest 建立特定領域語言。
@@ -55,15 +55,15 @@ ms.locfileid: "72659289"
 
 1. 建立具有下列特性的特定領域語言解決方案：
 
-   - 名稱：DSLMinimalTest
+   - 名稱： DSLMinimalTest
 
    - 解決方案範本：最小語言
 
    - 副檔名：分鐘
 
-   - Company name:Fabrikam
+   - 公司名稱： Fabrikam
 
-     如需有關建立特定領域語言解決方案的詳細資訊，請參閱 [How to：建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+     如需有關建立特定領域語言方案的詳細資訊，請參閱[如何：建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 2. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
@@ -72,18 +72,18 @@ ms.locfileid: "72659289"
 
 3. 按一下 [偵錯] 功能表上的 [開始偵錯]。
 
-    @No__t_0 的第二個實例隨即開啟。
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的第二個實例隨即開啟。
 
 4. 在實驗性組建的**方案總管**中，按兩下檔案**範例. min**。
 
     檔案隨即在設計工具中開啟。 請注意，此模型有兩個元素： ExampleElement1 和 ExampleElement2，以及它們之間的連結。
 
-5. 關閉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的第二個實例。
+5. 關閉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的第二個實例。
 
 6. 儲存方案，然後關閉特定領域語言設計工具。
 
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>將自訂文字模板主機連接至指示詞處理器
- 在您產生指示詞處理器之後，您會連接在 [Walkthrough 中建立的指示詞處理器和自訂文字模板主機：建立自訂文字模板主機 ](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
+ 在您產生指示詞處理器之後，您可以連接指示詞處理器和您在[逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)中所建立的自訂文字模板主機。
 
 #### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>將自訂文字模板主機連接至產生的指示詞處理器
 
@@ -117,7 +117,7 @@ ms.locfileid: "72659289"
     Imports Microsoft.Win32
     ```
 
-5. 找出屬性 `StandardAssemblyReferences` 的程式碼，並取代為下列程式碼：
+5. 找出屬性 `StandardAssemblyReferences`的程式碼，並取代為下列程式碼：
 
     > [!NOTE]
     > 在此步驟中，您會加入主機將支援之產生的指示詞處理器所需的元件參考。
@@ -153,7 +153,7 @@ ms.locfileid: "72659289"
     }
     ```
 
-6. 找出函數 `ResolveDirectiveProcessor` 的程式碼，並以下列程式碼取代：
+6. 找出函數 `ResolveDirectiveProcessor`的程式碼，並以下列程式碼取代：
 
     > [!IMPORTANT]
     > 此程式碼包含您要連接之產生的指示詞處理器名稱的硬式編碼參考。 您可以輕鬆地簡化此程式，在此情況下，它會尋找登錄中列出的所有指示詞處理器，並嘗試尋找相符的。 在此情況下，主機會使用任何產生的指示詞處理器。
@@ -310,7 +310,7 @@ ms.locfileid: "72659289"
     #>
     ```
 
-3. 在程式碼中，使用您在第一個程式中建立的設計特定語言，將 \<YOUR PATH > 取代為 Sample 檔案的路徑。
+3. 在程式碼中，使用您在第一個程式中建立之設計特定語言的 Sample 檔案路徑，取代 \<您的路徑 >。
 
 4. 儲存並關閉檔案。
 
@@ -359,4 +359,4 @@ ms.locfileid: "72659289"
     ```
 
 ## <a name="see-also"></a>另請參閱
- [逐步解說：建立自訂文字範本主應用程式](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+ [逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)
