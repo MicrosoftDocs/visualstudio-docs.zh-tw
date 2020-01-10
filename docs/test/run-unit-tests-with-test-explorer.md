@@ -5,17 +5,17 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c5d872462b4397078231eed2a9bec56131dec0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2a0b9a69d035db5b1d2d638d97995613b50def0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646648"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585440"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -83,7 +83,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="run-tests-after-every-build"></a>每次建置後執行測試
 ::: moniker range="vs-2017"
-|按鈕|描述|
+|按鈕|Description|
 |-|-|
 |![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機建置之後執行單元測試，請在標準功能表中選擇 [測試]，然後選擇 [測試總管] 工具列上的 [建置之後執行測試]。|
 
@@ -151,21 +151,21 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 ### <a name="test-explorer-groups"></a>測試總管群組
 
 ::: moniker range="vs-2017"
-|群組|描述|
+|群組|Description|
 |-|-----------------|
 |**持續期間**|依據執行時間群組測試：[快]、[中]和 [慢]。|
 |**結果**|依據執行結果群組測試：[失敗的測試]、[略過的測試]、[成功的測試]。|
 |**特性**|依據您定義的分類/值組群組測試。 指定特性分類和值的語法是由單元測試架構所定義。|
-|**Project**|依據名稱專案群組測試。|
+|**專案**|依據名稱專案群組測試。|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|群組|描述|
+|群組|Description|
 |-|-----------------|
 |**持續期間**|依執行時間群組測試： [**快**]、[**中**] 和 [**慢**]。|
 |**狀態**|依執行結果群組測試：**失敗的測試**、**略過的測試**、**通過的測試**、**未執行**|
 |**目標 Framework** | 依其專案的目標架構將測試分組 |
 |**Namespace**|依上層命名空間將測試分組。|
-|**Project**|依上層專案將測試分組。|
+|**專案**|依上層專案將測試分組。|
 |**類別**|依上層類別將測試分組。|
 ::: moniker-end
 
@@ -177,7 +177,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：
 
-|特性|描述|
+|特性|Description|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|擁有者分類是由單元測試架構所定義，會要求您提供擁有者的字串值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|優先權分類是由單元測試架構所定義，會要求您提供優先權的整數值。|
@@ -200,7 +200,7 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 
 **若要將測試加入播放清單**，請在測試總管中選擇一或多項測試。 在右鍵功能表上，選擇 [新增到播放清單]，然後選擇要將測試新增到其中的播放清單。
 
-**若要開啟播放清單**，請從 Visual Studio 功能表中選擇 [測試] > [播放清單]，然後從最近所使用播放清單的清單中選擇，或選擇 [開啟播放清單] 以指定播放清單的名稱和位置。
+**若要開啟播放清單**，請從 [Visual Studio] 功能表選擇 [**測試**>**播放清單**]，然後從最近使用過的播放清單的清單中選擇，或選擇 [**開啟播放清單**] 指定播放清單的名稱和位置。
 
 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 ::: moniker-end
@@ -266,23 +266,23 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 > 搜尋是區分大小寫且比對指定字串與準則值的任何部分。
 
 ::: moniker range="vs-2017"
-|限定詞|描述|
+|限定詞|Description|
 |-|-----------------|
 |**特性**|在特性分類和值中搜尋相符項目。 指定特性分類和值的語法是由單元測試架構所定義。|
-|**Project**|在測試專案名稱中搜尋相符項目。|
+|**專案**|在測試專案名稱中搜尋相符項目。|
 |**錯誤訊息**|在失敗的判斷提示所傳回之使用者定義錯誤訊息中搜尋相符項目。|
 |**檔案路徑**|在測試來源檔的完整檔案名稱中搜尋相符項目。|
 |**完整名稱**|在測試命名空間、類別和方法的完整名稱中搜尋相符項目。|
-|**Output**|搜尋寫入標準輸出 (stdout) 或標準錯誤 (stderr) 的使用者定義錯誤訊息。 指定輸出訊息的語法是由單元測試架構所定義。|
+|**輸出**|搜尋寫入標準輸出 (stdout) 或標準錯誤 (stderr) 的使用者定義錯誤訊息。 指定輸出訊息的語法是由單元測試架構所定義。|
 |**結果**|在測試總管分類名稱中搜尋相符項目：[失敗的測試]、[略過的測試]、[成功的測試]。|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|限定詞|描述|
+|限定詞|Description|
 |-|-----------------|
 |**狀態**|在測試總管分類名稱中搜尋相符項目：[失敗的測試]、[略過的測試]、[成功的測試]。|
 |**特性**|在特性分類和值中搜尋相符項目。 指定特性分類和值的語法是由單元測試架構所定義。|
 |**完整名稱**|在測試命名空間、類別和方法的完整名稱中搜尋相符項目。|
-|**Project**|在測試專案名稱中搜尋相符項目。|
+|**專案**|在測試專案名稱中搜尋相符項目。|
 |**目標 Framework**|在測試總管分類名稱中搜尋相符項目：[失敗的測試]、[略過的測試]、[成功的測試]。|
 |**Namespace**|在測試命名空間中搜尋相符項目。|
 |**類別**|在測試類別名稱中搜尋相符項目。|

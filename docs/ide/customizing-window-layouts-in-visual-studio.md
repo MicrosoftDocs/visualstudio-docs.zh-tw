@@ -18,17 +18,17 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ca1f34604c314fea6e90130b298be04f3a6189
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1963c76b67eaedea4cdf013739c112275ecffb2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652540"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596706"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>在 Visual Studio 中自訂視窗版面配置
 

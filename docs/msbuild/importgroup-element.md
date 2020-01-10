@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <ImportGroup> element [MSBuild]
 - ImportGroup element [MSBuild]
 ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd0b9fc5ef9441e867d5103bbb722a3628ffc78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a4480442577ccb321d66ad65f94a7c86cdae62ae
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997527"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574002"
 ---
 # <a name="importgroup-element"></a>ImportGroup 項目
 包含群組在選擇性條件下方的 `Import` 元素集合。 如需詳細資訊，請參閱 [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)。
@@ -38,23 +38,23 @@ ms.locfileid: "62997527"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
- 下列章節說明屬性、子元素和父元素。
+ 下列各節描述屬性、子項目和父項目。
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|Description|
 |---------------|-----------------|
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|說明|
+|項目|Description|
 |-------------|-----------------|
-|[Import](../msbuild/import-element-msbuild.md)|將某個專案檔的內容匯入至另一個專案檔。|
+|[[匯入]](../msbuild/import-element-msbuild.md)|將某個專案檔的內容匯入至另一個專案檔。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 說明 |
+| 項目 | Description |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
 
@@ -71,6 +71,6 @@ ms.locfileid: "62997527"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - /DebugExe [devenv.exe]
 - debugging executables
 ms.assetid: cd700006-1648-418f-924b-4b1e5c1412ab
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4eb1eb49cd6b29740fb6d365a98a51cc28387e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aeae28288936b6723b53e826142a4888ad0bc8b4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661670"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570137"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 
@@ -34,7 +34,7 @@ devenv /DebugExe ExecutableFile
 
 - *ExecutableFile*
 
-  必要項。 `.exe` 檔案的路徑和檔案名稱。 如果 `.exe` 檔案找不到或不存在，則不會顯示任何警告或錯誤，而 Visual Studio 會正常啟動。
+  必要。 `.exe` 檔案的路徑和檔案名稱。 如果 `.exe` 檔案找不到或不存在，則不會顯示任何警告或錯誤，而 Visual Studio 會正常啟動。
 
 ## <a name="remarks"></a>備註
 
