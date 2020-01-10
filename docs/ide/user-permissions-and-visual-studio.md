@@ -1,6 +1,6 @@
 ---
 title: '[以系統管理員身分執行]'
-ms.date: 06/05/2018
+ms.date: 01/06/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -12,25 +12,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d00bc1912991992a2aeb966680c7777c47df0549
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: HT
+ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
+ms.sourcegitcommit: 5421999c9ff05b3242d33e4b0465f8bc29c7c643
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565223"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75718632"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 
-基於安全性原因，您最好盡可能以一般使用者身分來執行 Visual Studio。
+基於安全性的理由，您應該盡可能以一般使用者身分執行 Visual Studio。
 
 > [!WARNING]
 > 您也應該確保不會編譯、啟動或偵錯任何不是來自受信任者或受信任位置的 Visual Studio 方案。
 
-您可以用一般使用者身分在 Visual Studio IDE 中執行幾乎所有操作。 您需要有系統管理員權限才能完成下列工作：
+您可以在 Visual Studio IDE 中，以一般使用者的方式執行幾乎所有的工作。 您需要有系統管理員權限才能完成下列工作：
 
 |區域圖|工作|如需詳細資訊|
 |----------|----------| - |
-|安裝|安裝 Visual Studio。|[安裝 Visual Studio](../install/install-visual-studio.md)|
+|安裝|安裝或修改 Visual Studio。|[安裝 Visual Studio](../install/install-visual-studio.md)、[修改 Visual Studio](../install/modify-visual-studio.md)|
 ||安裝、更新或移除本機說明內容。|[安裝和管理本機說明內容](../help-viewer/install-manage-local-content.md)|
 |工具箱|將傳統 COM 控制項新增至 [工具箱]。|[工具箱](../ide/reference/toolbox.md)|
 |建置|使用註冊元件的建置後事件。|[了解自訂建置步驟和建置事件](/cpp/build/understanding-custom-build-steps-and-build-events)|
