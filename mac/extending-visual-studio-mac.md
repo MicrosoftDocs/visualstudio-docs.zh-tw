@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: dcfbee59abeea9b6575470ef313a5ead5b03f9a9
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
-ms.translationtype: MT
+ms.openlocfilehash: 102b03caf2880d9b1311bb757eaf92aad84f8c81
+ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75398094"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75735827"
 ---
 # <a name="extending-visual-studio-for-mac"></a>擴充 Visual Studio for Mac
 
@@ -75,7 +75,7 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」的模組。 您
   <Command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
             _description="Insert the current date"
-            defaulthandler="DateInserter.InsertDateHandler" />
+            defaultHandler="DateInserter.InsertDateHandler" />
 </Extension>
 ```
 
