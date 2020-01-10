@@ -81,6 +81,7 @@
 ### [ASP.NET Core 使用者入門](asp-net-core.md)
 ### [在 Visual Studio for Mac 中建置 ASP.NET Core 應用程式](building-asp-net-core.md)
 ### [Razor](razor.md)
+### [Blazor](blazor.md)
 ### [JavaScript 和 TypeScript](javascript.md)
 ### [launchSettings.json](launch-settings.md)
 ## Azure
