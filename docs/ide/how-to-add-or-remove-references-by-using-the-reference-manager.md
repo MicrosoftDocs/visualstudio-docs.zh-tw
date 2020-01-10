@@ -16,21 +16,21 @@ helpviewer_keywords:
 - referencing components, removing references
 - references [Visual Studio], removing
 - referencing components, assemblies not listed
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e302b5c4df73f8fcdadf766a1fe1d8dc0731c261
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfad622a7587246836161cd79bb5b759151df1ef
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654828"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595306"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用參考管理員新增或移除參考
 
-針對由您本身、Microsoft 或其他公司所開發的元件，您可以使用 [參考管理員] 對話方塊來新增及管理這些元件的參考。 如果您正在開發通用 Windows app，您的專案會自動參考所有正確的 Windows SDK DLL。 如果您正在開發 .NET 應用程式，您的專案會自動參考 *mscorlib.dll*。 某些 .NET API 是在您手動加入的元件中公開。 您必須手動加入對 COM 元件或自訂元件的參考。
+您可以使用 [參考管理員] 對話方塊加入及管理您、Microsoft 或其他公司所開發元件的參考。 如果您正在開發通用 Windows app，您的專案會自動參考所有正確的 Windows SDK DLL。 如果您正在開發 .NET 應用程式，您的專案會自動參考 *mscorlib.dll*。 某些 .NET API 是在您手動加入的元件中公開。 您必須手動加入對 COM 元件或自訂元件的參考。
 
 ## <a name="reference-manager-dialog-box"></a>[參考管理員] 對話方塊
 
@@ -88,7 +88,7 @@ ms.locfileid: "72654828"
 
    和舊版的 [目標 Framework 識別碼]
 
-   例如，如果專案在 32 位元電腦上是以 .NET Framework 4 為目標，則 [延伸模組] 會列舉在 *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*、 *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*、 *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx*，以及 *\Microsoft\.NETFramework\v2.0\AssemblyFoldersEx* 下註冊的組件。
+   例如，如果專案在 32 位元電腦上是以 .NET Framework 4 為目標，則 [延伸模組] 會列舉在 *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*、*\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*、*\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx*，以及 *\Microsoft\.NETFramework\v2.0\AssemblyFoldersEx* 下註冊的組件。
 
 視專案的 Framework 版本而定，清單中的部分元件可能不會顯示。 在下列狀況下可能會發生這種情形：
 
@@ -107,7 +107,7 @@ ms.locfileid: "72654828"
 
 - 將組件移動或複製至下列其中一個位置：
 
-  - 目前專案目錄。 (您可以使用 [瀏覽] 索引標籤尋找這些組件)。
+  - 目前專案目錄。 (您可以使用 [瀏覽]  索引標籤尋找這些組件)。
 
   - 同一方案中的其他專案目錄。 (您可以使用 [專案] 索引標籤尋找這些組件)。
 
@@ -188,7 +188,7 @@ SDK 是檔案集合，Visual Studio 會將這個集合視為單一元件。 在 
 
 對 WinMD 執行檔案參考時，預期的配置是將 \<檔案名稱>.winmd、\<檔案名稱>.dll 和 \<檔案名稱>.pri 檔案全部放置在一起。 如果您在下列情境中參考 WinMD，會將不完整的檔案集合複製到專案輸出目錄中，因此造成建置和執行階段失敗發生。
 
-- **原生元件**：原生專案會為每一個不相鄰的命名空間集合建立一個 WinMD，並且建立一個包含實作的 DLL。 WinMD 會有不同的名稱。 參考這個原生元件檔時，MSBuild 不會將採用不同名稱的 WinMD 辨識為同一個元件。 因此，只會複製同名的 \<檔案名稱>.dll 和\<檔案名稱>.winmd，並會發生執行階段錯誤。 若要解決這個問題，請建立延伸模組 SDK。 如需詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。
+- **原生元件**：原生專案會為每一個不相鄰的命名空間集合建立一個 WinMD，並且建立一個包含實作的 DLL。 WinMD 會有不同的名稱。 參考這個原生元件檔時，MSBuild 不會將採用不同名稱的 WinMD 辨識為同一個元件。 因此，只會複製同名的 \<檔案名稱>.dll 和 \<檔案名稱>.winmd，並會發生執行階段錯誤。 若要解決這個問題，請建立延伸模組 SDK。 如需詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。
 
 - **使用控制項**：XAML 控制項至少包含 \<檔案名稱>.winmd、\<檔案名稱>.dll、\<檔案名稱>.pri\<XamlName>.xaml、 和 \<ImageName>.jpg。 專案建置後，系統不會將已與檔案參考建立關聯的資源檔複製到專案輸出目錄中，只會複製 \<檔案名稱>.winmd、\<檔案名稱>.dll 和 \<檔案名稱>.pri。 此時會記錄建置錯誤，通知使用者遺漏 \<XAML 名稱>.xaml 和 \<影像名稱>.jpg 資源。 若要成功，使用者必須手動將這些資源檔複製到專案輸出目錄中供建置和偵錯/執行階段使用。 若要解決這個問題，請遵循[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)中的步驟建立延伸模組 SDK，或編輯專案檔以新增下列屬性：
 

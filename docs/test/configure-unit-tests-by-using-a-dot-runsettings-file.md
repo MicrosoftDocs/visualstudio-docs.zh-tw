@@ -2,17 +2,17 @@
 title: 使用 .runsettings 檔案設定單元測試
 ms.date: 10/03/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+author: mikejo5000
+ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771480"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593248"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -28,7 +28,7 @@ ms.locfileid: "74771480"
 
 ::: moniker range="vs-2017"
 
-若要在 IDE 中指定執行設定檔，請選取 [測試] > [測試設定] > [選取測試設定檔]，然後選取 *.runsettings* 檔案。
+若要在 IDE 中指定回合設定檔案，請選取 [**測試**>**測試設定**] >**選取 [測試組態檔**]，然後選取 *.runsettings*檔案。
 
 ![在 Visual Studio 2017 中選取測試設定檔的功能表](media/select-test-settings-file.png)
 
@@ -95,13 +95,13 @@ ms.locfileid: "74771480"
 
    ::: moniker range="vs-2017"
 
-   在 Windows 的 [開始] 功能表中，選擇 [Visual Studio 2017] >[VS 2017 開發人員命令提示字元]。
+   在 Windows [**開始**] 功能表上，選擇 [**適用于 VS 2017 的** **Visual Studio 2017** > 開發人員命令提示字元]。
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   在 Windows 的 [開始] 功能表中，選擇 [Visual Studio 2019] >[VS 2019 開發人員命令提示字元]。
+   在 Windows [**開始**] 功能表上，選擇 [**適用于 VS 2019 的** **Visual Studio 2019** > 開發人員命令提示字元]。
 
    ::: moniker-end
 
@@ -249,7 +249,7 @@ ms.locfileid: "74771480"
 
 **RunConfiguration** 項目可以包括下列項目：
 
-|節點|Default|值|
+|節點|預設值|值|
 |-|-|-|
 |**ResultsDirectory**||放置測試結果的目錄。|
 |**TargetFrameworkVersion**|Framework40|`FrameworkCore10` 適用於 .NET Core 來源、`FrameworkUap10` 適用於 UWP 型來源、`Framework45` 適用於 .NET Framework 4.5 和更新版本、`Framework40` 適用於 .NET Framework 4.0，而 `Framework35` 則適用於 .NET Framework 3.5。<br /><br />此設定會指定用來尋找及執行測試的單元測試架構版本。 它可以與您在單元測試專案建置屬性中指定的 .NET 平台版本不同。<br /><br />如果您從 *.runsettings* 檔案省略 `TargetFrameworkVersion` 元素，平台會根據組建二進位檔自動判斷架構版本。|
@@ -325,7 +325,7 @@ public void HomePageTest()
 
 這些是執行具有 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 屬性之測試方法的測試配接器專屬的設定。
 
-|組態|Default|值|
+|組態|預設值|值|
 |-|-|-|
 |**ForcedLegacyMode**|false|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
 |**IgnoreTestImpact**|false|在 MSTest 或 Microsoft Test Manager 中執行時，測試影響功能會為最近變更所影響的測試設定優先權。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|

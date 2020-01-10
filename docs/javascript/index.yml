@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 1bdf2530d8e6513f57b515680410b9111cec87c6
-  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.openlocfilehash: 9f81043622a48bbda93e52216a3ce2a6cd9a01b2
+  ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "72517111"
+  ms.lasthandoff: 01/06/2020
+  ms.locfileid: "75678944"
 landingContent:
 - title: 開始使用
   linkLists:
@@ -40,6 +40,8 @@ landingContent:
       url: tutorial-nodejs-with-react-and-jsx.md
     - text: 利用 Node.js 和 Vue.js 建立 Web 應用程式
       url: quickstart-vuejs-with-nodejs.md
+    - text: 使用 TypeScript 建立 ASP.NET Core 應用程式
+      url: tutorial-aspnet-with-typescript.md
 - title: 了解 Visual Studio
   linkLists:
   - linkListType: how-to-guide

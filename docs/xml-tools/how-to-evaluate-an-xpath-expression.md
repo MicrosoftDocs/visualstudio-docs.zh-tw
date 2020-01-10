@@ -3,17 +3,17 @@ title: 在進行偵錯工具時評估 XPath 運算式
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 523c89af70c762f0cd0e31519c8c862c440c79eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2e0b6c84fa9447dc38aa7976fa59bb5aa67d5c3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654279"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592720"
 ---
 # <a name="evaluate-xpath-expressions"></a>評估 XPath 運算式
 
@@ -34,7 +34,7 @@ ms.locfileid: "72654279"
 
 1. 在 `xsl:if` 開始標記處插入中斷點。
 
-2. 若要開始進行調試，請選擇 [ **XML** ]  >  在功能表列上**啟動 XSLT 調試**（或按**Alt** +**F5**）。
+2. 若要開始進行調試，請選擇 [ **XML** ] > 在功能表列上**啟動 XSLT 調試**（或按**Alt**+**F5**）。
 
    偵錯工具會啟動，並在 `xsl:if` 標記處中斷。
 

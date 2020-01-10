@@ -2,17 +2,17 @@
 title: 建構模型方案
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 57edf4253840294968238793bf9f3b24326a1e3f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985215"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591940"
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 
@@ -102,7 +102,7 @@ ms.locfileid: "72985215"
 
 4. 遵循精靈中的指示，選取要包含在範本中的專案，提供範本的名稱和描述，並指定輸出位置。
 
-## <a name="watch-a-video"></a>觀看影片
+## <a name="watch-a-video"></a>請觀賞影片
 
 [組織和管理您的模型](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 

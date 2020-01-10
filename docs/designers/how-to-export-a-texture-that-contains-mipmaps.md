@@ -3,17 +3,17 @@ title: 如何：匯出包含 Mipmap 的材質
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3aa73f24a8fc7c3a5fceb9094acec2f9c6b80f9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 71d570e6dc7544911ebe2bb279aafb3a07620cbc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635498"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589405"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>如何：匯出包含 Mipmap 的材質
 
@@ -31,7 +31,7 @@ Mipmap 在 3D 遊戲或應用程式中提供材質表面的自動螢幕空間詳
 
 ### <a name="to-export-a-texture-that-has-mipmaps"></a>匯出具有 mipmap 的材質
 
-1. 從基本材質著手。 載入現有的影像檔案，或遵循[如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)所述，建立影像檔案。 若要支援 mipmap，指定的材質寬度和高度大小都是 2 的相同乘冪，例如 64x64、256x256 或 512x512。
+1. 從基本材質著手。 載入現有的影像檔案，或遵循[如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)中所述，建立影像檔案。 若要支援 mipmap，指定的材質寬度和高度大小都是 2 的相同乘冪，例如 64x64、256x256 或 512x512。
 
 2. 設定您剛剛建立的材質檔案，以便供「影像內容管線」處理。 在**方案總管**中，開啟您建立之紋理檔案的捷徑功能表，然後選擇 [屬性]。 在 [組態屬性] > [一般] 頁面上，將 [項目類型] 屬性設定為 [影像內容管線]。 確定 [內容] 屬性是設定為 [是]，且 [從組建中排除] 是設定為 [否]。 選取 [套用]。
 

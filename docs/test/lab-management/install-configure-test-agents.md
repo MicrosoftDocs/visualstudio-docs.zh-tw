@@ -4,17 +4,17 @@ ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb10246437bff9bef0a6f76ffde95bc12855944
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 27f030fb73629172e0b5a2d5d4cb27cf186bb69f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653086"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594262"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>安裝測試代理程式和測試控制器
 
@@ -68,4 +68,4 @@ ms.locfileid: "72653086"
 | Visual Studio 中的建置-部署-測試工作流程 | 使用者可以使用[組建管線](/azure/devops/pipelines/index?view=vsts) (而非 XAML 組建) 來建置、部署和測試 TFS 中的案例。 |
 | 使用內部部署遠端電腦的負載測試 (效能測試) | 使用 Test Controller 和 Test Agents 2013 Update 5 在內部部署執行負載測試。 |
 | 使用實驗室環境從 Microsoft Test Manager 進行的自動化測試遠端執行 | 此案例目前沒有替代方案。 建議您在組建和發行定義 (而非 XAML 組建) 中使用「執行功能測試」工作，以從遠端執行測試。 |
-| 在 Visual Studio 中執行遠端測試的開發人員 | 不再支援此屬性。 |
+| 在 Visual Studio 中執行遠端測試的開發人員 | 不再受支援。 |

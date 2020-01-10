@@ -3,17 +3,17 @@ title: 鍵盤和滑鼠快速鍵
 description: 此文章包含 Visual Studio 中的鍵盤和滑鼠快速鍵使用祕訣，可幫助您提高生產力。
 ms.date: 11/02/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cbe2ddd87f867768c6fd7c041f6b88fbe88c44f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666737"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585726"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>適用於 Visual Studio 的快速鍵祕訣
 

@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: d33562c686365029bc75781c76ad26d772dfcf66
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: c9d7e90e0c4eb48a19c36ad86d8f438080b38d62
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653091"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588898"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用實驗室環境進行開發
 
@@ -92,23 +92,23 @@ Lab Management 會在您環境中的每部電腦上自動安裝測試代理程�
 
 標準環境和 SCVMM 環境支援許多相同的功能。 但是有一些重大差異要考慮。 下表比較標準環境和 SCVMM 環境中可用的功能。
 
-|功能|SCVMM 環境|標準環境|
+|Capability|SCVMM 環境|標準環境|
 |-|------------------------|-|
 |**測試**|||
-|執行手動測試|支援|支援|
-|執行自動程式碼 UI 及其他自動化測試|支援|支援|
-|使用診斷配接器提報大量 Bug|支援|支援|
+|執行手動測試|已支援|已支援|
+|執行自動程式碼 UI 及其他自動化測試|已支援|已支援|
+|使用診斷配接器提報大量 Bug|已支援|已支援|
 |**建置部署**|||
-|自動化建置-部署-測試工作流程|支援|支援|
+|自動化建置-部署-測試工作流程|已支援|已支援|
 |**環境建立和管理**|||
-|使用實體機器和虛擬機器|不支援|支援|
-|使用協力廠商虛擬機器|不支援|支援|
-|自動將測試代理程式安裝到實驗室環境中的電腦|支援|支援|
-|使用環境快照儲存和部署實驗室環境的狀態|支援|不支援|
-|根據 VM 範本建立實驗室環境|支援|不支援|
-|啟動/停止/快照環境|支援|不支援|
-|使用 [環境檢視器] 連接到環境|支援|支援|
-|使用網路隔離同時執行多個環境複本|支援|不支援|
+|使用實體機器和虛擬機器|不支援|已支援|
+|使用協力廠商虛擬機器|不支援|已支援|
+|自動將測試代理程式安裝到實驗室環境中的電腦|已支援|已支援|
+|使用環境快照儲存和部署實驗室環境的狀態|已支援|不支援|
+|根據 VM 範本建立實驗室環境|已支援|不支援|
+|啟動/停止/快照環境|已支援|不支援|
+|使用 [環境檢視器] 連接到環境|已支援|已支援|
+|使用網路隔離同時執行多個環境複本|已支援|不支援|
 
 ### <a name="lab-management-concepts"></a>Lab Management 概念
 

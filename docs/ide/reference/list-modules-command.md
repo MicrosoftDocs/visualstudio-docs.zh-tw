@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ListModules command
 - list modules command
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e479879051d38df1da3ed2677303a76ea2d289
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1e083a0e1baeefc6807dccb2199cd0e5a9bd883d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747918"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595497"
 ---
 # <a name="list-modules-command"></a>列出模組命令
 列出目前處理序的模組。

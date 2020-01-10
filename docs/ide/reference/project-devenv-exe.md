@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Devenv, /Project switch
 - projects [Visual Studio], cleaning
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d9be8cd5107b109e084fcd75bc30ae0f32ab43a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a4b57a5bd51ff20de8da87798aa398db04bc1c7d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655747"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567771"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -33,7 +33,7 @@ ms.locfileid: "72655747"
 devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 
 - *SolutionName*
 
@@ -61,7 +61,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 ## <a name="remarks"></a>備註
 
-- 必須是 `devenv` `/Build`、`/Clean`、`/Rebuild` 或 `/Deploy` 命令的已使用部分。
+- 必須 `devenv` `/Build`、`/Clean`、`/Rebuild`或 `/Deploy` 命令的一部分使用。
 
 - 請以雙引號括住包含空格的字串。
 

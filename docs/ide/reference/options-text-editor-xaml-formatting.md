@@ -1,5 +1,5 @@
 ---
-title: 格式、XAML、文字編輯器、選項
+title: 選項、文字編輯器、XAML、格式
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -24,19 +24,19 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ac7c3eebe9498f4ac596ed09ae063eefacf3b6b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666636"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568239"
 ---
-# <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
+# <a name="options-text-editor-xaml-formatting"></a>選項、文字編輯器、XAML、格式
 
 使用 [格式化] 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [格式化] 屬性頁，請展開 [文字編輯器] > [XAML] > [格式] 節點。
 

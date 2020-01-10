@@ -258,17 +258,17 @@ f1_keywords:
 - CA2243
 - CA5122
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2811c905650f215272b650bff955b7264f56d4b5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 8fe3e338cf2db2493f9f855c5ef398bbb4232e8e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188847"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587728"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>CheckId 受控碼的程式碼分析警告
 
@@ -276,13 +276,13 @@ ms.locfileid: "73188847"
 
 | CheckId | 警告 | 描述 |
 |---------| - | - |
-| CA2007 | [CA2007：不要直接等待工作](ca2007.md) | 非同步方法會直接[等待](/dotnet/csharp/language-reference/keywords/await)<xref:System.Threading.Tasks.Task>。 當非同步方法直接等候 <xref:System.Threading.Tasks.Task> 時，接續會在建立工作的同一個執行緒中進行。 這種行為在效能方面可能會很昂貴，而且可能會導致 UI 執行緒上發生鎖死。 請考慮呼叫 <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> 來表示接續的意圖。 |
+| CA2007 | [CA2007：不要直接等待工作](ca2007.md) | 非同步方法會 <xref:System.Threading.Tasks.Task>[直接等候](/dotnet/csharp/language-reference/keywords/await)。 當非同步方法直接等候 <xref:System.Threading.Tasks.Task> 時，接續會在建立工作的同一個執行緒中發生。 這種行為在效能方面可能會很昂貴，而且可能會導致 UI 執行緒上發生鎖死。 請考慮呼叫 <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> 以指示接續的意圖。 |
 | CA1000 | [CA1000：不要在泛型型別上宣告靜態成員](../code-quality/ca1000.md) | 呼叫泛型類型的靜態成員時，必須為類型指定類型引數。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定類型引數。 在上述兩種情況下，指定型別引數的語法不同且容易混淆。 |
 | CA1001 | [CA1001：具有可處置欄位的類型應該是可處置的](../code-quality/ca1001.md) | 類別會宣告及實作類型為 System.IDisposable 的執行個體欄位，且該類別不會實作 IDisposable。 宣告 IDisposable 欄位的類別會間接擁有 Unmanaged 資源，且應實作 IDisposable 介面。 |
-| CA1002 | [CA1002：不要公開泛型清單](../code-quality/ca1002.md) | < （Of \< （T >） >）是泛型集合，專為效能而非繼承所設計。 因此，List 不包含任何虛擬成員。 應該改為公開專為繼承所設計的泛型集合。 |
+| CA1002 | [CA1002：不要公開泛型清單](../code-quality/ca1002.md) | < （Of \<（T >） >）是泛型集合，專為效能而非繼承所設計。 因此，List 不包含任何虛擬成員。 應該改為公開專為繼承所設計的泛型集合。 |
 | CA1003 | [CA1003：必須使用一般事件處理常式執行個體](../code-quality/ca1003.md) |類型包含會傳回 void 的委派，其簽章包含兩個參數（第一個是物件，第二個是可指派給 EventArgs 的類型），而包含的元件則以 Microsoft .NET Framework 2.0 為目標。 |
 | CA1004 | [CA1004：泛型方法應該提供類型參數](../code-quality/ca1004.md) | 推斷是指如何利用傳遞到泛型方法的引數類型，而不是利用型別引數的明確規格，來決定泛型方法的型別引數。 若要啟用推斷，泛型方法的參數簽章必須包含與方法之型別參數具有相同類型的參數。 在上述情形中，不必指定類型引數。 使用所有型別參數的推斷時，呼叫泛型和非泛型執行個體方法之語法是相同的；這簡化泛型方法的可用性。 |
-| CA1005 | [CA1005：避免在泛型型別上包含過多參數](../code-quality/ca1005.md) | 泛型類型所包含的類型參數越多，就越難了解並記住每個類型參數所代表的含意。 通常會有一個型別參數（如清單 \<T >），而且在有兩個型別參數的特定情況下（如字典 \<TKey 中，TValue >）很明顯。 不過，如果存在兩個以上的類型參數，則對大多數使用者而言都會變得難以理解。 |
+| CA1005 | [CA1005：避免在泛型型別上包含過多參數](../code-quality/ca1005.md) | 泛型類型所包含的類型參數越多，就越難了解並記住每個類型參數所代表的含意。 通常會有一個型別參數（如清單\<T >），而且在有兩個型別參數的某些情況下（如字典\<TKey，TValue >）。 不過，如果存在兩個以上的類型參數，則對大多數使用者而言都會變得難以理解。 |
 | CA1006 | [CA1006：不要在成員簽章中巢狀化泛型類型](../code-quality/ca1006.md) | 巢狀型別引數就是也是泛型類型的型別引數。 若要呼叫其簽章含有巢狀型別引數的成員，則使用者必須具現化 (Instantiate) 一個泛型類型，並將這個類型傳遞給第二個泛型類型的建構函式。 必要程序及語法十分複雜，且應予以避免。 |
 | CA1007 |[CA1007：建議在適當時使用泛型](../code-quality/ca1007.md) | 外部可見的方法包含 System.Object 類型的傳址參數。 使用泛型方法可讓所有類型 (遵守條件約束) 傳遞給方法，而不需要先將類型轉型為傳址參數類型。 |
 | CA1008 | [CA1008：列舉值中應該要有值為零的成員](../code-quality/ca1008.md) | 如同其他實值類型一般，未初始化的列舉其預設值為零。 非旗標屬性的列舉應該要使用零值來定義成員，讓預設值成為列舉的有效值。 如果已套用 FlagsAttribute 屬性的列舉定義零值成員，則其名稱應該是 "None"，以表示列舉中未設定任何值。 |
@@ -336,7 +336,7 @@ ms.locfileid: "73188847"
 | CA1061 |[CA1061：不要隱藏基底類別方法](../code-quality/ca1061.md) | 只有在衍生方法的參數簽章因類型衍生時比基底方法參數簽章中的類型還要弱時，基底類型中的方法才會被衍生類型中的相同具名方法所隱藏。 |
 | CA1062 | [CA1062：必須驗證公用方法的引數](../code-quality/ca1062.md) | 所有傳遞至外部可見方法的參考引數都應經過 null 檢查。 |
 | CA1063 | [CA1063：必須正確實作 IDisposable](../code-quality/ca1063.md) | 所有的 IDisposable 類型都需正確地實作 Dispose 模式。 |
-| CA1064 | [CA1064：例外狀況必須是公用](../code-quality/ca1064.md) | 內部例外狀況只會在自己的內部範圍內顯示。 當例外狀況超出內部範圍後，只能使用基本例外狀況來攔截例外狀況。 如果內部例外狀況繼承自 <xref:System.Exception>、<xref:System.SystemException> 或 <xref:System.ApplicationException>，則外部程式碼將不會有足夠的資訊來知道該如何處理例外狀況。 |
+| CA1064 | [CA1064：例外狀況必須是公用](../code-quality/ca1064.md) | 內部例外狀況只會在自己的內部範圍內顯示。 當例外狀況超出內部範圍後，只能使用基本例外狀況來攔截例外狀況。 如果內部例外狀況是繼承自 <xref:System.Exception>、<xref:System.SystemException>或 <xref:System.ApplicationException>，外部程式碼將不會有足夠的資訊來知道該如何處理例外狀況。 |
 | CA1065 | [CA1065：不要在非預期的位置中引發例外狀況](../code-quality/ca1065.md) | 不可擲回例外狀況 (Exception) 的方法卻擲回例外狀況。 |
 | CA1068 | [CA1068： CancellationToken 參數必須是最後的](../code-quality/ca1068.md) | 方法的 CancellationToken 參數不是最後一個參數。 |
 | CA1200 | [CA1200：避免使用具有前置詞的 cref 標記](../code-quality/ca1200.md) | XML 檔標記中的[cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute)屬性工作表示「程式碼參考」。 它會指定標記的內部文字是程式碼項目，例如類型、方法或屬性。 請避免使用具有前置詞的 `cref` 標記，因為它會防止編譯器驗證參考。 它也會防止 Visual Studio 的整合式開發環境（IDE）在重構期間尋找和更新這些符號參考。 |
@@ -369,7 +369,7 @@ ms.locfileid: "73188847"
 | CA1500 | [CA1500：變數名稱不應該與欄位名稱相符](../code-quality/ca1500.md) | 執行個體方法宣告參數或區域變數，而其名稱符合宣告類型的執行個體欄位，因此導致錯誤。 |
 | CA1501 | [CA1501：避免在物件間過度繼承](../code-quality/ca1501.md) | 類型在其繼承階層架構 (Inheritance Hierarchy) 中超過四個層級的深度。 太深的巢狀類型階層架構可能會難以依循、了解和維護。 |
 | CA1502 | [CA1502：避免造成過度複雜的方法](../code-quality/ca1502.md) | 這個規則會測量整個方法中線性獨立路徑的數目，此數目是由條件分支的數目與複雜度決定。 |
-| CA1504 | [CA1504：必須檢閱可能造成誤導的欄位名稱](../code-quality/ca1504.md) | 實例欄位的名稱是以 "s_" 開頭，或靜態的名稱（Visual Basic 中的共用）欄位是以 "m_" 開頭。 |
+| CA1504 | [CA1504：必須檢閱可能造成誤導的欄位名稱](../code-quality/ca1504.md) | 實例欄位的名稱開頭為 "s_"，或靜態的名稱（Visual Basic 中的共用）欄位開頭為 "m_"。 |
 | CA1505 | [CA1505：應避免撰寫無法維護的程式碼](../code-quality/ca1505.md) | 類型或方法的維護性指標值很低。 維護性指標很低代表類型或方法很可能會難以維護，而應該列為需要重新設計的候選目標。 |
 | CA1506 |[CA1506：應避免使用結合過度的類別](../code-quality/ca1506.md) | 這個規則會測量類別的耦合，方法是計算類型或方法包含的唯一類型參考數目。 |
 | CA1600 | [CA1600：不要使用 Idle 處理序優先權](../code-quality/ca1600.md) | 請勿將處理序優先權設定為 Idle。 具有 System.Diagnostics.ProcessPriorityClass.Idle 的處理序會在應該閒置的時候佔用 CPU，因而阻礙 CPU 待命。 |
@@ -456,7 +456,7 @@ ms.locfileid: "73188847"
 | CA2133 | [CA2133：委派必須繫結至具有一致透明度的方法](../code-quality/ca2133.md) | 當方法會將使用 SecurityCriticalAttribute 標記的委派繫結到透明方法，或繫結到使用 SecuritySafeCriticalAttribute 標記的方法時，就會針對此方法發出警告。 此警告也會針對將透明或安全關鍵性的委派繫結至關鍵方法的方法引發。 |
 | CA2134 | [CA2134：覆寫基底方法時，方法必須保持一致的透明度](../code-quality/ca2134.md) |當使用 SecurityCriticalAttribute 標記的方法覆寫透明方法，或覆寫使用 SecuritySafeCriticalAttribute 標記的方法時，就會引發此規則。 當透明或使用 SecuritySafeCriticalAttribute 來標記的方法覆寫使用 SecurityCriticalAttribute 來標記的方法時，也會引發此規則。 覆寫虛擬方法或實作介面時會套用此規則。 |
 | CA2135 | [CA2135：層級 2 組件不應該包含 LinkDemand](../code-quality/ca2135.md) | LinkDemand 在層級 2 安全性規則集中已被取代。 不使用 LinkDemand 在 JIT 編譯時期強制執行安全性，改為使用 SecurityCriticalAttribute 屬性來標記方法、類型和欄位。 |
-| CA2127 | [CA2136：成員不應該具有衝突的透明度註釋](../code-quality/ca2136.md) | 關鍵程式碼不能出現在 100% 透明的元件中。 此規則會針對類型、欄位和方法層級的任何 SecurityCritical 注釋，分析 100% 透明的元件。 |
+| CA2127 | [CA2136：成員不應該具有衝突的透明度註釋](../code-quality/ca2136.md) | 關鍵程式碼不能出現在100% 透明的元件中。 此規則會針對類型、欄位和方法層級的任何 SecurityCritical 注釋，分析100% 透明的元件。 |
 | CA2136 | [CA2136：成員不應該具有衝突的透明度註釋](../code-quality/ca2136.md) | 透明度屬性會從較大範圍的程式碼項目套用至較小範圍的項目。 範圍較大之程式碼項目的透明度屬性優先於第一個項目中所包含之程式碼項目的透明度屬性。 例如，使用 SecurityCriticalAttribute 屬性來標記的類別不得包含使用 SecuritySafeCriticalAttribute 屬性來標記的方法。 |
 | CA2137 | [CA2137：透明方法必須只包含可驗證的 IL](../code-quality/ca2137.md) | 方法包含無法驗證的程式碼，或以傳址方式傳回類型。 當安全性透明程式碼嘗試執行無法驗證的 Microsoft Intermediate Language (MISL) 時，就會引發此規則。 不過，此規則不包含完整的 IL 驗證器，並是使用啟發式來擷取多數的 MSIL 驗證違規情形。 |
 | CA2138 | [CA2138：透明方法不可以使用 SuppressUnmanagedCodeSecurity 屬性呼叫方法](../code-quality/ca2138.md) | 安全性透明方法會呼叫使用 SuppressUnmanagedCodeSecurityAttribute 屬性標記的方法。 |
@@ -469,7 +469,7 @@ ms.locfileid: "73188847"
 | CA2144 | [CA2144：透明程式碼不可以從位元組陣列載入組件](../code-quality/ca2144.md) | 透明程式碼的安全性檢閱不如關鍵性程式碼的安全性檢閱完整，因為透明程式碼無法執行安全性敏感動作。 透明程式碼中可能不會注意到從位元組陣列載入的組件，而該位元組陣列可能包含需要稽核之重大或更重要的安全關鍵性程式碼。 |
 | CA2145 | [CA2145：透明方法不可以使用 SuppressUnmanagedCodeSecurityAttribute 來裝飾](../code-quality/ca2145.md) | 以 SuppressUnmanagedCodeSecurityAttribute 屬性裝飾的方法會在任何方法呼叫它時放置隱含的 LinkDemand。 這個 LinkDemand 會要求呼叫程式碼具備安全性關鍵。 使用 SecurityCriticalAttribute 屬性來標記使用 SuppressUnmanagedCodeSecurity 的方法會使方法呼叫端的這個需求更為明顯。 |
 | CA2146 | [CA2146：類型至少必須和基底類型與介面一樣關鍵](../code-quality/ca2146.md) | 當衍生類型有安全性透明屬性，且該屬性的重要性不如基底類型或已實作之介面時，就會引發這個規則。 只有關鍵類型可以衍生自關鍵基底類型或實作關鍵介面，而且只有關鍵或安全關鍵類型可以衍生自安全關鍵基底類型或實作安全關鍵介面。 |
-| CA2128 |[CA2147：透明方法不可以使用安全性判斷提示](../code-quality/ca2147.md) | 此規則會分析元件中的所有方法和類型，其為 100% 透明或混合透明/重大，並會旗標判斷提示的任何宣告式或命令式用法。 |
+| CA2128 |[CA2147：透明方法不可以使用安全性判斷提示](../code-quality/ca2147.md) | 此規則會分析元件中的所有方法和類型，其為100% 透明或混合透明/重大，並會旗標判斷提示的任何宣告式或命令式用法。 |
 | CA2147 |[CA2147：透明方法不可以使用安全性判斷提示](../code-quality/ca2147.md) | 標記為 SecurityTransparentAttribute 的程式碼並未具備足夠的使用權限可以進行判斷提示。 |
 | CA2149 | [CA2149：透明方法不可以呼叫機器碼](../code-quality/ca2149.md) | 在任何直接呼叫進入機器碼的透明方法上 (例如，透過 P/Invoke)，都會引發此規則。 違反此規則會導致層級 2 透明度模型出現 MethodAccessException，而在層級 1 透明度模型會出現對 UnmanagedCode 的完整要求。 |
 | CA2151 |[CA2151：具有關鍵類型的欄位應為安全性關鍵](../code-quality/ca2151.md) | 若要使用安全性關鍵類型，參考該類型的程式碼必須是安全性關鍵或安全性安全關鍵。 即使是間接參考也是如此。 因此，使用安全性透明或安全性安全關鍵欄位容易發生錯誤，因為透明程式碼仍然無法存取該欄位。 |

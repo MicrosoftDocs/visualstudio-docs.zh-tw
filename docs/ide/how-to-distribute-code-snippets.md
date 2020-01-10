@@ -5,25 +5,25 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b5ae4053e97e823952118abda11f334c5ac1083
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23e77658b2b09f643af18a3f136f5428828cfb5c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656072"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591056"
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：散發程式碼片段
 
 您可以使用 [程式碼片段管理員]，將您的程式碼片段提供給您的朋友，並讓他們在自己的電腦上安裝程式碼片段。 不過，如果您有數個程式碼片段要散發，或想要更廣泛地散發，您可在 Visual Studio 延伸模組中包含您的程式碼片段檔案。 然後，Visual Studio 使用者可以安裝此延伸模組以取得程式碼片段。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 安裝 **Visual Studio 延伸模組開發**工作負載，以存取 [VSIX 專案] 專案範本。
 

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Web performance tests, Visual Studio Add-in
 - Visual Studio Add-in, Web performance tests
 ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba6ef865b326bd8bc5eea89a9e270b793111e539
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a6da2686a5a68325101e7161a51a8144e7ef42b6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653588"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589080"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>如何：建立 Web 效能測試結果檢視器的增益集
 
@@ -98,7 +98,7 @@ ms.locfileid: "72653588"
 
 [增益集精靈] 會自動建立兩個 *.addin* 檔案的複本，如下所示：
 
-|**.Addin 檔案位置**|**說明**|
+|**.Addin 檔案位置**|**描述**|
 |-|----------------------------|-|
 |根專案資料夾|用來部署增益集專案。 包含在專案中以便輕鬆編輯，而且具有 XCopy 部署方式的本機路徑。|
 |增益集資料夾|用來在偵錯環境中執行增益集。 必須指向目前組建組態的輸出路徑。|
@@ -164,7 +164,7 @@ ms.locfileid: "72653588"
 
 3. 向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework** 和 **System.Windows.Forms**。
 
-4. 選擇 [確定]。
+4. 選擇 [ **確定**]。
 
 5. 再次以滑鼠右鍵按一下 [參考] 節點，然後選取 [新增參考]。
 
@@ -172,7 +172,7 @@ ms.locfileid: "72653588"
 
 7. 選擇 [查詢] 下拉式清單並巡覽至 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*，然後選取 *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* 檔案。
 
-8. 選擇 [確定]。
+8. 選擇 [ **確定**]。
 
 9. 以滑鼠右鍵按一下 WebPerfTestResultsViewerAddin 專案節點，然後選取 [新增參考]。
 
@@ -266,7 +266,7 @@ ms.locfileid: "72653588"
 
 5. 向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**。
 
-6. 選擇 [確定]。
+6. 選擇 [ **確定**]。
 
 7. 在 *UserControl1.cs* 檔案中，加入下列 Using 陳述式：
 
@@ -312,7 +312,7 @@ ms.locfileid: "72653588"
 
 3. 在 [可用的增益集] 資料行中，選取 WebPerfTestResultsViewerAddin 增益集的核取方塊，並且清除 [啟動] 和 [命令列] 資料行下方的核取方塊。
 
-4. 選擇 [確定]。
+4. 選擇 [ **確定**]。
 
 ## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>使用 Web 測試結果檢視器執行 Web 效能測試
 

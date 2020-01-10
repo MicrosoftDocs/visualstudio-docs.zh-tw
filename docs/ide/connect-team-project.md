@@ -2,15 +2,15 @@
 title: 在 Team Explorer 中連線到專案
 ms.date: 12/04/2018
 ms.topic: conceptual
-ms.author: jillfra
-author: jillre
+ms.author: tglee
+author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: c442ec22080a5f3533776e9d581aa1e7ef0e52ee
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 936fcb598ccb7919eca0a35a1191732bce1c8e23
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538667"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585479"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>在 Team Explorer 中連線到專案
 

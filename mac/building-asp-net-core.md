@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 5600fd2f0b6d83a3bd27350a4d4f0137ea44ced2
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73717266"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398293"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中建置 ASP.NET Core 應用程式
 
@@ -25,7 +25,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 > * 探索 ASP.NET Core 裝載、設定及中介軟體模型
 > * 對 ASP.NET Core Web 應用程式進行偵錯
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 - [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac)
 
@@ -73,9 +73,9 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image8.png)
 
-7. 另外還有各種組態檔可用來在執行階段管理專案、其專案和應用程式。 例如，預設應用程式[組態](/aspnet/core/fundamentals/configuration)會儲存在 **appsettings.json** 中。 不過，您可以根據每個環境來覆寫其中一部分/所有設定，例如，透過提供**開發**環境的 **appsettings.Development.json** 檔案。
+7. 另外還有各種組態檔可用來在執行階段管理專案、其專案和應用程式。 例如，預設應用程式[組態](/aspnet/core/fundamentals/configuration)會儲存在 **appsettings.json** 中。 在 appsettings 底下嵌套的檔案是**appsettings。開發 json**檔案。 在這裡，您可以根據每個環境來覆寫部分/所有這些設定。 Visual Studio for Mac 會使用與 Windows Visual Studio 相同的邏輯來以這種方式來對應檔案，因此您需要經常存取的檔案位於 forefront。 
 
-    ![](media/netcore-image9.png)
+    ![](media/netcore-build-nested.png)
 
 ## <a name="task-3-understanding-how-the-application-is-hosted"></a>工作3：瞭解如何託管應用程式
 
@@ -121,7 +121,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
 3. 核取 [在外部主控台上執行] 並取消核取 [暫停主控台輸出]。 自我裝載應用程式的主控台通常不會可見，而會改為將結果記錄到 [輸出] 索引頁。 基於本實驗室的目的，我們也會在個別的視窗中顯示它，不過您在一般的開發期間並不需要那麼做。
 
-4. 按一下 [確定]。
+4. 按一下 [ **確定**]。
 
     ![](media/netcore-image19.png)
 

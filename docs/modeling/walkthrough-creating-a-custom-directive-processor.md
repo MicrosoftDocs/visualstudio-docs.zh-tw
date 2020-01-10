@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 73473a549c774cd0f4302404e2ca3a450cc2e6d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e280f64cc23dc2e949e5aa896a8e20673a3f293
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666987"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596485"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>逐步解說：建立自訂指示詞處理器
 
@@ -42,7 +42,7 @@ ms.locfileid: "72666987"
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-自訂指示詞處理器會將變數和屬性加入至產生的轉換類別中。 您撰寫的指示詞會使用 <xref:System.CodeDom> 類別來建立引擎要加入至產生之轉換類別中的程式碼。 @No__t_0 類別會根據 `template` 指示詞的C# `language` 參數中指定的語言，建立視覺效果或 Visual Basic 中的程式碼。 指示詞處理器的語言與存取指示詞處理器之文字範本的語言不一定要相符。
+自訂指示詞處理器會將變數和屬性加入至產生的轉換類別中。 您撰寫的指示詞會使用 <xref:System.CodeDom> 類別來建立引擎要加入至產生之轉換類別中的程式碼。 <xref:System.CodeDom> 類別會根據 `template` 指示詞的C# `language` 參數中指定的語言，建立視覺效果或 Visual Basic 中的程式碼。 指示詞處理器的語言與存取指示詞處理器之文字範本的語言不一定要相符。
 
 指示詞建立的程式碼如下所示：
 
@@ -84,9 +84,9 @@ End Property
 
 2. 新增這些元件的參考：
 
-    - **VisualStudio. TextTemplating. \* 0**
+    - **VisualStudio. TextTemplating.\*0**
 
-    - **VisualStudio. TextTemplating 介面。 \* 0**
+    - **VisualStudio. TextTemplating 介面。\*0**
 
 3. 將**Class1**中的程式碼取代為下列程式碼。 下列程式碼會定義繼承 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 類別的 CustomDirectiveProcessor 類別，並實作必要的方法。
 
@@ -637,9 +637,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 1. 使用 [開始] 功能表或命令列來執行 `regedit` 命令。
 
-2. 流覽至 location **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \* .0 \ TextTemplating\DirectiveProcessors**，然後按一下節點。
+2. 流覽至**HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\\\*.0 \ TextTemplating\DirectiveProcessors**的位置，然後按一下節點。
 
-   在64位系統上，使用**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio \\ \*。 0 \ TextTemplating\DirectiveProcessors**
+   在64位系統上，使用**HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio\\\*。 0 \ TextTemplating\DirectiveProcessors**
 
 3. 加入名為 CustomDirectiveProcessor 的新機碼。
 
@@ -654,18 +654,18 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      您的登錄機碼應該含有下列值：
 
-   | [屬性] | 輸入 | 資料 |
+   | Name | 類型 | Data |
    |-|-|-|
-   | (預設值) | REG_SZ | (值未設定) |
-   | 執行個體 | REG_SZ | CustomDP.CustomDirectiveProcessor |
-   | 程式碼基底 | REG_SZ | <strong>\<Path 至您的解決方案 ></strong>CustomDP\bin\Debug\CustomDP.dll |
+   | (預設) | REG_SZ | (值未設定) |
+   | 類別 | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | 程式碼基底 | REG_SZ | <strong>方案的\<路徑 ></strong>CustomDP\bin\Debug\CustomDP.dll |
 
      如果組件已置於 GAC 中，則值看起來應該如下表所示：
 
-   | [屬性] | 輸入 | 資料 |
+   | Name | 類型 | Data |
    |-|-|-|
-   | (預設值) | REG_SZ | (值未設定) |
-   | 執行個體 | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | (預設) | REG_SZ | (值未設定) |
+   | 類別 | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
 
 6. 重新啟動 Visual Studio。
@@ -877,7 +877,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. 將*TestDP.tt*中的程式碼取代為下列程式碼。 HTML 會反白顯示。 請務必將字串 `YOUR PATH` 取代為*e*檔案的路徑。
 
     > [!NOTE]
-    > 其他開啟的 \< # 和 close # > 標記會分隔語句程式碼與 HTML 標籤。
+    > 其他開啟的 \<# 和 close # > 標記會分隔語句程式碼與 HTML 標籤。
 
     ```csharp
     <#@ assembly name="System.Xml" #>

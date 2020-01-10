@@ -8,17 +8,17 @@ helpviewer_keywords:
 - File.NewFile command
 - New File command
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f6872ef2acaef65bf6ef1b7631bb06c89518ab
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5fe8a99ee59a347fdcb7cff601b75139760630f7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747868"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595952"
 ---
 # <a name="new-file-command"></a>新增檔案命令
 建立新的檔案並開啟它。 檔案會顯示其他檔案資料夾之下。
@@ -29,12 +29,12 @@ ms.locfileid: "72747868"
 File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 `filename`
 
 選擇項。 檔案名稱。 如果未提供名稱，會提供預設名稱。 如果未列出任何範本名稱，則會建立文字檔。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換機
 /t:`templatename`\
 選擇項。 指定要建立之檔案的類型。
 

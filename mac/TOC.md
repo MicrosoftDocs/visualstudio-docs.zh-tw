@@ -25,6 +25,7 @@
 ## [建立新專案](create-new-projects.md)
 ## [新增和移除專案項目](add-and-remove-project-items.md)
 ## [管理方案和專案屬性](managing-solutions-and-project-properties.md)
+## [多目標](project-multitargeting.md)
 ## 管理專案中的參考
 ### [概觀](managing-references-in-a-project.md)
 ### [逐步解說 - 包括專案的 NuGet 套件](nuget-walkthrough.md)
@@ -35,6 +36,8 @@
 ## [編輯器功能](source-editor.md)
 ## [重構](refactoring.md)
 ## [IntelliSense](intellisense.md)
+## [顯示匯入項目](show-imports.md)
+## [多插入點編輯](multi-caret-editing.md)
 ## [註解](comments.md)
 ## [編輯器的行為](editor-behavior.md)
 ## [工作註解](task-comments.md)
@@ -47,6 +50,7 @@
 # 偵錯
 ## [概觀](debugging.md)
 ## [資料視覺效果](data-visualizations.md)
+## [使用來源連結偵錯 NuGet 套件](source-link.md)
 
 # 編譯和建置
 ## [概觀](compiling-and-building.md)
@@ -77,6 +81,7 @@
 ### [ASP.NET Core 使用者入門](asp-net-core.md)
 ### [在 Visual Studio for Mac 中建置 ASP.NET Core 應用程式](building-asp-net-core.md)
 ### [Razor](razor.md)
+### [Blazor](blazor.md)
 ### [JavaScript 和 TypeScript](javascript.md)
 ### [launchSettings.json](launch-settings.md)
 ## Azure

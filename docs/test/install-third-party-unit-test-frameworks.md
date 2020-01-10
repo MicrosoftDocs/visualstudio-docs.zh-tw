@@ -2,17 +2,17 @@
 title: 安裝協力廠商單元測試架構
 ms.date: 04/01/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: fef59c757476b46936389ca48ca2bdaf32aec729
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b70e26adc7c0c9a8dc409d9b4b971b233418b8e1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653243"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594275"
 ---
 # <a name="install-unit-test-frameworks"></a>安裝單元測試架構
 

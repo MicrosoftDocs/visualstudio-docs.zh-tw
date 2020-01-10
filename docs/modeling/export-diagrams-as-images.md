@@ -6,17 +6,17 @@ helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbbdab08b5bc9298f83d4159f31ac8b9b0fb963
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56b7839985871333bb120057efde92e58baebdec
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645719"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596615"
 ---
 # <a name="export-diagrams-as-images"></a>將圖表匯出為影像
 
@@ -36,11 +36,11 @@ ms.locfileid: "72645719"
 
 1. **在 [檔案] 功能表上**，按一下 [**列印**] 以開啟 [**列印**] 對話方塊。
 
-2. 在 [**名稱**] 清單中，選取 [ **Microsoft XPS Document Writer**]，然後按一下 **[確定]** 。
+2. 在 [**名稱**] 清單中，選取 [ **Microsoft XPS Document Writer**]，然後按一下 **[確定]**。
 
-3. 在 [**另存**新檔] 對話方塊中，將檔案儲存為**XPS 檔（\* .xps）** 檔案。
+3. 在 [**另存**新檔] 對話方塊中，將檔案儲存為**XPS 檔（\*.xps）** 檔案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立應用程式模型](../modeling/create-models-for-your-app.md)
 - [共用模型及匯出圖表](../modeling/share-models-and-exporting-diagrams.md)

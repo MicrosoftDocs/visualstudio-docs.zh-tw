@@ -3,9 +3,6 @@ title: 使用 CRT 程式庫尋找記憶體流失 |Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - breakpoints, on memory allocation
@@ -29,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2729dcaf0da41c0adac24b0e1909a6d2697eb6
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 13a346aa0212f4830c2c88ed866b674fc19d30bd
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829937"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404985"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>尋找 CRT 程式庫的記憶體流失問題
 
 記憶體流失是 C/C++應用程式中最微妙且難以偵測的錯誤。 記憶體流失的原因是無法正確地解除配置先前配置的記憶體。 一開始可能不會注意到小型的記憶體流失，但經過一段時間後，可能會導致應用程式用盡記憶體時，效能不佳的徵兆。 洩漏的應用程式若使用所有可用的記憶體，可能會導致其他應用程式損毀，並對應用程式的責任造成混淆。 即使是無害的記憶體流失，也可能表示其他應該更正的問題。
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具和 C 執行時間程式庫（CRT）可協助您偵測並找出記憶體流失的問題。
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具和 C 執行時間程式庫（CRT）可協助您偵測並找出記憶體流失的問題。
 
 ## <a name="enable-memory-leak-detection"></a>啟用記憶體流失偵測
 
@@ -216,7 +213,8 @@ _CrtSetBreakAlloc(18);
 ```
 
 ## <a name="compare-memory-states"></a>比較記憶體狀態
- 另一種尋找記憶體流失的技術，是使用在關鍵點的應用程式記憶體狀態之快照。 若要取得應用程式中指定點的記憶體狀態快照，請建立 `_CrtMemState` 結構，並將它傳遞給 `_CrtMemCheckpoint` 函數。
+
+另一種尋找記憶體流失的技術，是使用在關鍵點的應用程式記憶體狀態之快照。 若要取得應用程式中指定點的記憶體狀態快照，請建立 `_CrtMemState` 結構，並將它傳遞給 `_CrtMemCheckpoint` 函數。
 
 ```cpp
 _CrtMemState s1;
@@ -259,9 +257,11 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 尋找記憶體流失的一項技術，一開始會先將 `_CrtMemCheckpoint` 呼叫放在應用程式的開頭和結尾，然後使用 `_CrtMemDifference` 來比較結果。 如果 `_CrtMemDifference` 顯示記憶體流失，您可以使用二進位搜尋來新增更多 `_CrtMemCheckpoint` 呼叫來分割您的程式，直到您隔離出遺漏的來源為止。
 
 ## <a name="false-positives"></a>誤報
- 如果程式庫將內部配置標記為一般區塊，而不是 CRT 區塊或用戶端區塊，`_CrtDumpMemoryLeaks` 可以提供錯誤的記憶體流失指示。 在這種情況下， `_CrtDumpMemoryLeaks` 無法區分使用者配置和內部程式庫配置。 如果在您呼叫 `_CrtDumpMemoryLeaks`之後執行程式庫配置的全域解構函式，則每個內部程式庫配置都會報告為記憶體流失。 Versions of the Standard Template Library earlier than Visual Studio .NET may cause `_CrtDumpMemoryLeaks` to report such false positives.
+
+ 如果程式庫將內部配置標記為一般區塊，而不是 CRT 區塊或用戶端區塊，`_CrtDumpMemoryLeaks` 可以提供錯誤的記憶體流失指示。 在這種情況下， `_CrtDumpMemoryLeaks` 無法區分使用者配置和內部程式庫配置。 如果在您呼叫 `_CrtDumpMemoryLeaks`之後執行程式庫配置的全域解構函式，則每個內部程式庫配置都會報告為記憶體流失。 早于 Visual Studio .NET 的標準範本程式庫版本可能會導致 `_CrtDumpMemoryLeaks` 報告這類誤報。
 
 ## <a name="see-also"></a>請參閱
+
 - [CRT 偵錯堆積詳細資料](../debugger/crt-debug-heap-details.md)
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [對機器碼進行偵錯](../debugger/debugging-native-code.md)

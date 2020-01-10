@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 12/03/2019
+ms.date: 12/10/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 975b9ca88a775e08b97cccf1d1580a96ac4d9d65
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: 4a9d8babb55a615e12c575f30426c8e73aa1c6e1
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810120"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406710"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -201,6 +201,8 @@ Visual Studio 2019 預設會安裝這項服務。
 **16.4 的新**功能：現在，使用新的可固定屬性工具進行偵錯工具時，可以更輕鬆地依屬性來識別物件。 只要將游標暫留在您想要在 [監看式]、[自動變數] 和 [區域變數] 視窗的 [偵錯工具] 視窗中顯示的屬性上方，選取釘選圖示，即可立即在視窗頂端看到您要尋找的資訊！
 
    ![動畫，顯示如何使用可固定屬性工具釘選 Visual Studio 偵錯工具中的屬性](media/vs-2019/debugger-pinnable-properties.gif)
+
+如需詳細資訊，請參閱[可固定屬性： Debug & 以您的方式顯示您的](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/)blog 文章的受控物件。
 
 ## <a name="whats-next"></a>後續步驟
 

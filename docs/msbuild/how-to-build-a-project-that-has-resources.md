@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建置包含資源的專案 | Microsoft Docs
+title: 如何：建置包含資源的專案 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - projects [.NET Framework], building
 - MSBuild, building a project with resources
 ms.assetid: d07ac73f-2c2d-4e9a-812a-6dcb632bafe2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 626db2638912c9eaa49ea74e702c9ba24f6fd33f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423002"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75576338"
 ---
-# <a name="how-to-build-a-project-that-has-resources"></a>HOW TO：建置包含資源的專案
+# <a name="how-to-build-a-project-that-has-resources"></a>如何：建置包含資源的專案
 如果您要建置專案的當地語系化版本，就必須將所有使用者介面項目分隔成適用於各種語言的資源檔。 如果專案只會使用字串，資源檔就能使用文字檔。 或者，您可以使用 *.resx* 檔案作為資源檔。
 
 ## <a name="compile-resources-with-msbuild"></a>使用 MSBuild 編譯資源
@@ -76,8 +76,8 @@ ms.locfileid: "62423002"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
-- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>請參閱
+- [ MSBuild](../msbuild/msbuild.md)
 - [GenerateResource 工作](../msbuild/generateresource-task.md)
 - [Csc 工作](../msbuild/csc-task.md)
 - [Resgen.exe (資源檔產生器)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

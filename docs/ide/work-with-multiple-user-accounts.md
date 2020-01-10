@@ -1,5 +1,5 @@
 ---
-title: Work with multiple user accounts
+title: 使用多個使用者帳戶
 ms.date: 07/23/2019
 ms.topic: conceptual
 author: jillre
@@ -7,14 +7,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5993d550d85cdc0bd1c9ce6b72553eda6fc280e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f757489f26ae41319316fcfc9cdc957dbb7d94a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647070"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590653"
 ---
-# <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
+# <a name="work-with-multiple-user-accounts"></a>使用多個使用者帳戶
 
 如果您有多個 Microsoft 帳戶及 (或) 工作或學校的帳戶，可以將它們全部加入 Visual Studio，這樣就可以存取所有帳戶的資源，而無須各別登入每個帳戶。 Azure、Application Insights、Azure DevOps 和 Office 365 服務都支援簡化的登入體驗。
 

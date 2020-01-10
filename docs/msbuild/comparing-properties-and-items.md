@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8217a6aa349a31921ed454e76ddea306785dea9d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 51f7f65dd4e4d1922663ea020e55f551245a7444
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825906"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596121"
 ---
 # <a name="compare-properties-and-items"></a>比較屬性和項目
 MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以及儲存可在整個專案檔中參考的值。
@@ -25,7 +25,7 @@ MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以
 - 項目是通常代表檔案的物件。 項目物件可具有相關聯的中繼資料集合。 中繼資料是名稱/值組。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
 ## <a name="scalars-and-vectors"></a>純量和向量
-由於 MSBuild 屬性是只有一個字串值的名稱/值組，因此，通常會以「純量」  來描述它們。 因為 MSBuild 項目類型是項目清單，所以，通常會以「向量」  來描述它們。 不過，在實務上，屬性可以代表多個值，而項目類型可以有零個或一個項目。
+由於 MSBuild 屬性是只有一個字串值的名稱/值組，因此，通常會以「純量」來描述它們。 因為 MSBuild 項目類型是項目清單，所以，通常會以「向量」來描述它們。 不過，在實務上，屬性可以代表多個值，而項目類型可以有零個或一個項目。
 
 ### <a name="target-dependency-injection"></a>目標相依性插入
 若要查看屬性如何代表多個值，請考慮使用常見使用模式來將目標加入至要建置的目標清單。 此清單通常是由屬性值來表示，並以分號分隔目標名稱。
@@ -67,7 +67,7 @@ MSBuild 會視需要在項目類型和字串值之間來回執行轉換。 若�
 </PropertyGroup>
 ```
 
-項目類型 OutputDir 具有 `Include` 屬性以及 "KeyFiles\\;Certificates\\"值。 MSBuild 會將此字串剖析成兩個項目：KeyFiles\ 和 Certificates\\。 將項目類型 OutputDir 用來做為 OutputDirList 屬性的值時，MSBuild 會將此項目類型轉換或「扁平化」為以分號分隔的字串 "KeyFiles\\;Certificates\\"。
+項目類型 OutputDir 具有 `Include` 屬性以及 "KeyFiles\\;Certificates\\"值。 MSBuild 會將此字串剖析成兩個項目︰KeyFiles\ 和 Certificates\\。 將項目類型 OutputDir 用來做為 OutputDirList 屬性的值時，MSBuild 會將此項目類型轉換或「扁平化」為以分號分隔的字串 "KeyFiles\\;Certificates\\"。
 
 ## <a name="properties-and-items-in-tasks"></a>工作中的屬性和項目
 屬性和項目可用來做為 MSBuild 工作的輸入和輸出。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
@@ -178,5 +178,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [進階概念](../msbuild/msbuild-advanced-concepts.md)

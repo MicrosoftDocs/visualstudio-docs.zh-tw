@@ -4,17 +4,17 @@ ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - FxCop analyzers, configuring
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1d2c4f6b44daf83b3fd013167ec24e82c45ce2e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b1d178adbbb847b2629ee785a7a0fa4e990a46dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649692"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587715"
 ---
 # <a name="configure-fxcop-analyzers"></a>設定 FxCop 分析器
 
@@ -46,7 +46,7 @@ ms.locfileid: "72649692"
 
 |語法|範例|
 |-|-|
-| dotnet_code_quality.選項名稱 = OptionValue | `dotnet_code_quality.api_surface = public` |
+| dotnet_code_quality。選項名稱 = OptionValue | `dotnet_code_quality.api_surface = public` |
 
 ### <a name="category-of-rules"></a>規則類別
 
@@ -54,7 +54,7 @@ ms.locfileid: "72649692"
 
 |語法|範例|
 |-|-|
-| dotnet_code_quality.RuleCategory. 選項名稱 = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
+| dotnet_code_quality。RuleCategory. 選項名稱 = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
 
 ### <a name="specific-rule"></a>特定規則
 
@@ -62,7 +62,7 @@ ms.locfileid: "72649692"
 
 |語法|範例|
 |-|-|
-| dotnet_code_quality.RuleId. 選項名稱 = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
+| dotnet_code_quality。RuleId. 選項名稱 = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
 
 ## <a name="per-project-configuration"></a>每個專案的設定
 

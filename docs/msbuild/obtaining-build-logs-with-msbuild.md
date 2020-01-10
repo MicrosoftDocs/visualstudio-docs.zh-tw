@@ -6,24 +6,24 @@ helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 385871a47b2a4d73a1f7afacf9d39a02d7c782ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f756d432d9ff4d3824c1f1165c63710e4d10c2e9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963763"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594886"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>使用 MSBuild 取得組建記錄檔
 
 將 MSBuild 與參數搭配使用，您可以指定想要檢閱的組建資料量，以及是否要將組建資料儲存至一或多個檔案。 您也可以指定自訂記錄器來收集組建資料。 如需本主題未涵蓋的 MSBuild 命令列參數相關資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。
 
 > [!NOTE]
-> 如果您使用 Visual Studio IDE 來建置專案，就能藉由檢視建置記錄檔來進行這些組建的疑難排解。 如需詳細資訊，請參閱[如何：檢視、儲存及設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
+> 如果您使用 Visual Studio IDE 來建置專案，就能藉由檢視建置記錄檔來進行這些組建的疑難排解。 如需詳細資訊，請參閱[如何：檢閱、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
 ## <a name="set-the-level-of-detail"></a>設定詳細層級
 
@@ -35,7 +35,7 @@ ms.locfileid: "62963763"
 
 - 組建摘要。
 
-使用 **-verbosity** (**-v**) 參數，您可以控制要在輸出記錄檔中顯示的資料量。 如需疑難排解，請使用 `detailed` (`d`) 或 `diagnostic` (`diag`) 的詳細資訊層級，其中提供了最多資訊。
+使用 **-verbosity** ( **-v**) 參數，您可以控制要在輸出記錄檔中顯示的資料量。 如需疑難排解，請使用 `detailed` (`d`) 或 `diagnostic` (`diag`) 的詳細資訊層級，其中提供了最多資訊。
 
 當您將 **-verbosity** 設為 `detailed` 時，建置程序可能會變慢，而當您將 **-verbosity** 設為 `diagnostic` 時，甚至會變得更慢。
 
@@ -47,7 +47,7 @@ msbuild MyProject.proj -t:go -v:diag
 
 下表顯示記錄檔的詳細資訊 (資料行值) 對記錄哪些類型的訊息 (資料列的值) 有什麼影響。
 
-|                                       | Quiet | 最小 | 一般 | 詳細 | 診斷 |
+|                                       | Quiet | 最小 | 一般 | 詳細資料 | 診斷 |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
 | 錯誤                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | 警告                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
@@ -102,7 +102,7 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
  在 MSBuild 命令列中，您會使用 **-logger** 參數指定自訂記錄器。 您也可以使用 **-noconsolelogger** 參數，停用預設的主控台記錄器。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [組建記錄器](../msbuild/build-loggers.md)

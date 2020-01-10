@@ -8,17 +8,17 @@ helpviewer_keywords:
 - troubleshooting references
 - referencing files from projects
 - referencing components, troubleshooting
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5efe0d5ba8d00f7bfc362dd702f45dfa627c20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a5116d2487ca9f53c460e1cae8f362f3ff1bcdf8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647378"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565912"
 ---
 # <a name="troubleshoot-broken-references"></a>針對中斷參考進行疑難排解
 
@@ -90,4 +90,4 @@ ms.locfileid: "72647378"
 
 ## <a name="see-also"></a>請參閱
 
-- [專案設計工具、參考頁面 (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)
+- [專案設計工具，參考頁 (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)

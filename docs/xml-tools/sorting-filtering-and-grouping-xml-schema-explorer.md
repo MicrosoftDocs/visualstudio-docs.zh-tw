@@ -3,17 +3,17 @@ title: 在 XML 架構瀏覽器中排序、篩選和分組
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf9226f3b491a39c7ef5936667cabd789c6a457
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd288171cd8713e6b403f71a4eee6ba09d3f6ea9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604585"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592512"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、篩選和群組（XML 架構瀏覽器）
 
@@ -65,7 +65,7 @@ ms.locfileid: "72604585"
 
 選取 [**依名稱排序**] 選項時，全域節點會依照下列順序排序：
 
-1. `import` 節點 (依照命名空間的字母順序)。
+1. `import` 節點（依照命名空間的字母順序）。
 
 2. `include` 節點 (依照 `schemaLocation` 屬性的字母順序)。
 

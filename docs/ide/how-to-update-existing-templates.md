@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Visual Studio templates, updating
 - project templates, updating
 - updating templates [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ee0118ce4181a12ca4c199b8174a28fb4b431063
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 44f99646330d3c8a75bd94310bc0adf9073f9d49
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656533"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591355"
 ---
 # <a name="how-to-update-existing-templates"></a>如何：更新現有的範本
 

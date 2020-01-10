@@ -9,18 +9,18 @@ helpviewer_keywords:
 - searching IDE
 - IDE, searching
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: f0cc6bcb59bf98a7416221115dbeeef8f24a5e74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 706b54e3ee925b1833f860da2f84c8d28af9617e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655671"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565665"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>選項對話方塊、環境、快速啟動
 
@@ -34,7 +34,7 @@ ms.locfileid: "72655671"
 
 您可以使用下列快速鍵，限制搜尋特定分類。
 
-|Category|快速鍵|快速鍵描述|
+|分類|快速鍵|快速鍵描述|
 |--------------|--------------| - |
 |最近使用|@mru<br /><br /> 例如：`@mru font`|最多顯示您 [最近用過的函式] 的五個項目。|
 |Menus|@menu<br /><br /> 例如：`@menu project`|限制搜尋功能表項目。|

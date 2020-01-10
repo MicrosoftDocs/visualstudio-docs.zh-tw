@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 321e8271806f8f9e2983e82db010cd2ffb49a3ee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: faf418155708ebc577efea57ed3352953a8d577d
+ms.sourcegitcommit: 5920a8b0c68350f11eabc1652a19b04d0196881a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777942"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622562"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 React 應用程式
 
@@ -85,10 +85,12 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 1. 建立新的專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，再鍵入 **Node.js**，然後選擇 [空白的 Node.js Web 應用程式] (JavaScript)。 在出現的對話方塊中，選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 輸入**Ctrl + Q**來開啟搜尋方塊，輸入**node.js**，然後選擇 [空白的 node.js **Web 應用程式-JavaScript**]。 （雖然本教學課程使用 TypeScript 編譯器，但這些步驟需要您從**JavaScript**範本開始。）
+    
+    在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]、輸入名稱 **NodejsWebAppBlank**，然後選擇 [確定]。
+    從頂端功能表列中，選擇 [檔案] >  [新增] >  [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]、輸入名稱 **NodejsWebAppBlank**，然後選擇 [確定]。
     ::: moniker-end
     如果您看不到 [空白的 Node.js Web 應用程式] 專案範本，則必須新增 **Node.js 開發**工作負載。 如需詳細指示，請參閱[必要條件](#prerequisites)。
 
@@ -418,7 +420,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
     `msedge --remote-debugging-port=9222`
 
-    或
+    或者，
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -447,7 +449,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
     ![設定中斷點](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
-2. 如果您要在*tsx*檔案中設定中斷點（而不是*app-bundle.js.map*），則必須更新*webpack-config.js*。 取代下列程式碼：
+2. 如果您要在*tsx*檔案中設定中斷點（而不是*app-bundle.js.map*），則必須更新*webpack-config.js*。 將下列程式碼：
 
     ```javascript
     output: {

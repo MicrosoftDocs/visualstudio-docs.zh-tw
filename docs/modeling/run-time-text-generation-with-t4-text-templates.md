@@ -10,17 +10,17 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ee422ec549ced0995db22258edf9ef21540804
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 26897bee69f7c0e969cd42feb7604321294641fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660314"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595367"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 
@@ -55,7 +55,7 @@ This report is Company Confidential.
 
 1. 在方案總管中，于專案的快捷方式功能表上，選擇 [**加入** > **新專案**]。
 
-2. 在 [**加入新專案**] 對話方塊中，選取 [**執行時間文字模板**]。 （在 Visual Basic 查看 [一般**專案**]  >  **[一般**]）。
+2. 在 [**加入新專案**] 對話方塊中，選取 [**執行時間文字模板**]。 （在 Visual Basic 查看 [一般**專案**] >  **[一般**]）。
 
 3. 輸入範本檔案的名稱。
 
@@ -107,7 +107,7 @@ Language 參數將取決於您專案的語言。
 
 ### <a name="plain-content"></a>純文字內容
 
-編輯**tt**檔案，以包含您想要應用程式產生的文字。 例如:
+編輯**tt**檔案，以包含您想要應用程式產生的文字。 例如：
 
 ```html
 <html><body>
@@ -119,7 +119,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>內嵌程式碼
 
-您可以在 `<#` 和 `#>` 之間插入程式碼。 例如:
+您可以在 `<#` 和 `#>`之間插入程式碼。 例如：
 
 ```csharp
 <table>
@@ -144,7 +144,7 @@ This report is Company Confidential.
 </table>
 ```
 
-請注意，語句會插入 `<# ... #>`，而且運算式會在 `<#= ... #>` 之間插入。 如需詳細資訊，請參閱[撰寫 T4 文字模板](../modeling/writing-a-t4-text-template.md)。
+請注意，語句會插入 `<# ... #>`，而且運算式會在 `<#= ... #>`之間插入。 如需詳細資訊，請參閱[撰寫 T4 文字模板](../modeling/writing-a-t4-text-template.md)。
 
 ## <a name="using-the-template"></a>使用範本
 
@@ -152,7 +152,7 @@ This report is Company Confidential.
 
 當您儲存**tt**檔案時，會產生一個子公司 **.cs**或 **.vb**檔案。 若要在**方案總管**中查看此檔案，請展開 [ **tt**檔案] 節點。 在 Visual Basic 專案中，先選擇 [**方案總管**] 工具列中的 [**顯示所有**檔案]。
 
-請注意，子公司檔案包含部分類別，其中包含稱為 `TransformText()` 的方法。 您可以從您的應用程式呼叫此方法。
+請注意，子公司檔案包含部分類別，其中包含稱為 `TransformText()`的方法。 您可以從您的應用程式呼叫此方法。
 
 ### <a name="generating-text-at-run-time"></a>在執行時間產生文字
 
@@ -282,7 +282,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 這些指示詞必須放在檔案的開頭，緊接在 `<#@template` 指示詞之後。
 
-### <a name="shared-content"></a>共用內容
+### <a name="shared-content"></a>共用的內容
 
 如果您有數個範本之間共用的文字，您可以將它放在不同的檔案中，並將它包含在它應該出現的每個檔案中：
 
@@ -302,11 +302,11 @@ Include 指示詞可以在範本檔案的文字或包含的檔案內的任何位
 
 在接下來的範例中使用的模式中，請注意下列幾點：
 
-- 基類 `SharedFragments` 在類別功能區塊 `<#+ ... #>` 中定義方法。
+- 基類 `SharedFragments` 在類別功能區塊 `<#+ ... #>`中定義方法。
 
 - 基類不包含任何可用的文字。 相反地，其所有的文字區塊都會出現在類別功能方法中。
 
-- 衍生類別會叫用 `SharedFragments` 中定義的方法。
+- 衍生類別會叫用 `SharedFragments`中定義的方法。
 
 - 應用程式會呼叫衍生類別的 `TextTransform()` 方法，但不會將基類轉換 `SharedFragments`。
 

@@ -3,17 +3,17 @@ title: 工作流程設計工具-如何：在工作流程中設定中斷點
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d2806a8757f00924d51c76aea82cfc8c6a5673
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4ebebd0efe689c2f3f83e776c0cb3889ee64add2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650324"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593885"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>如何：在工作流程中設定中斷點
 
@@ -25,10 +25,10 @@ ms.locfileid: "72650324"
 > 不支援在已叫用的工作流程上設定中斷點。
 
 > [!NOTE]
-> 在 debug 之前，請確定您已從 [**工具**] [ > **選項**]  >  [**調試**程式] 功能表中選取 [**啟用 Just My Code （僅限 Managed）** ] 選項。 如果未選取此選項，而且您在另一個序列中有兩個序列，而且您在第一個內部序列上設定中斷點，則按下**F11**鍵並不會在第二個內部序列中進行 debug。
+> 在 debug 之前，請確定您已從 [**工具**] [ > **選項**] > [**調試**程式] 功能表中選取 [**啟用 Just My Code （僅限 Managed）** ] 選項。 如果未選取此選項，而且您在另一個序列中有兩個序列，而且您在第一個內部序列上設定中斷點，則按下**F11**鍵並不會在第二個內部序列中進行 debug。
 
 > [!NOTE]
-> 如果 XAML 檔案屬性的完整路徑不正確，則不會叫用工作流程中的中斷點。 將專案或方案移至另一個資料夾或另一部電腦之後，XAML 檔案的完整路徑不正確。 選取 [ **Ctrl** +**S** ] 以儲存並更新 [完整路徑] 屬性。
+> 如果 XAML 檔案屬性的完整路徑不正確，則不會叫用工作流程中的中斷點。 將專案或方案移至另一個資料夾或另一部電腦之後，XAML 檔案的完整路徑不正確。 選取 [ **Ctrl**+**S** ] 以儲存並更新 [完整路徑] 屬性。
 
 ## <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>若要在設計檢視中的活動上設定中斷點
 
@@ -36,7 +36,7 @@ ms.locfileid: "72650324"
 
 2. 在 [**調試**] 功能表上，選取 [**切換中斷點**]。 活動左邊的最上方會出現紅色圖示。
 
-   或者，您也可以在選取活動之後按**F9**鍵，或以滑鼠右鍵按一下活動，然後從滑鼠右鍵功能表中選取 **中斷點**  > **插入中斷點**。
+   或者，您也可以在選取活動之後按**F9**鍵，或以滑鼠右鍵按一下活動，然後從滑鼠右鍵功能表中選取 **中斷點** > **插入中斷點**。
 
 ## <a name="see-also"></a>請參閱
 

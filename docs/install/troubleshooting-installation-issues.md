@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f9612d9943c425a91bb3d01ea3bb5b1e37f270d3
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 24a6a642528fbf8fed7b8000434a963e32cc85ee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062817"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594483"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>針對 Visual Studio 安裝和升級問題進行疑難排解
 
@@ -116,7 +116,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 以下是已知問題和一些因應措施的表格，當您建立[離線安裝](create-an-offline-installation-of-visual-studio.md)，然後從本機配置進行安裝時，可能會有一些因應措施可協助您。
 
-| 問題       | 項目                   | 方案 |
+| 問題       | 項目                   | 解決方案 |
 | ----------- | ---------------------- | -------- |
 | 使用者沒有檔案的存取權。 | 權限 (ACL) | 請務必在您共用離線安裝「之前」調整權限 (ACL)，讓它們將「讀取權」授與其他使用者。 |
 | 無法安裝新的工作負載、元件或語言。  | `--layout`  | 如果是以部分配置來安裝，並選取該部分配置中先前未下載的工作負載、元件或語言，請確定可以存取網際網路。 |
@@ -143,7 +143,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 若此疑難排解指南中所列的解決方式無法協助您成功地安裝或升級 Visual Studio，請使用我們的[**即時聊天**](https://visualstudio.microsoft.com/vs/support/#talktous)支援選項 (僅限英文) 以取得進一步的協助。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [移除 Visual Studio](remove-visual-studio.md)
 * [在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)

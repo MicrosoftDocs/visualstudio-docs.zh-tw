@@ -2,17 +2,17 @@
 title: T4 組件指示詞
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f605748d4bda13567713b646f0232d684ec46fe1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748179"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591888"
 ---
 # <a name="t4-assembly-directive"></a>T4 組件指示詞
 
@@ -36,7 +36,7 @@ ms.locfileid: "72748179"
 
 - 組件的絕對路徑
 
-  您可以使用 `$(variableName)` 語法來參考 Visual Studio 變數，例如 `$(SolutionDir)`，以及 `%VariableName%` 來參考環境變數。 例如:
+  您可以使用 `$(variableName)` 語法來參考 Visual Studio 變數，例如 `$(SolutionDir)`，以及 `%VariableName%` 來參考環境變數。 例如：
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>

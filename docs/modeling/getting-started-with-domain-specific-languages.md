@@ -2,24 +2,24 @@
 title: 開始使用網域指定的語言
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c86383ddc833a6b76affa451f21180ed4941ad14
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 226111f7bd2c064fa2aec3cbd4f94a0adeb0e5b8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985056"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596563"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>特定領域語言的使用者入門
 
 本主題說明定義和使用以模型 SDK for Visual Studio 建立的特定領域語言（DSL）的基本概念。
 
 > [!NOTE]
-> 當您安裝 Visual Studio 的特定功能時，會自動安裝文字模板轉換 SDK 和 Visual Studio 模型化 SDK。 如需詳細資訊，請參閱[這篇 blog 文章](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
+> 當您安裝 Visual Studio 的特定功能時，會自動安裝文字模板轉換 SDK 和 Visual Studio 模型化 SDK。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
 如果您不熟悉 Dsl，建議您透過**DSL 工具實驗室**來進行，您可以在此網站中找到：[視覺效果和模型化 SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
@@ -37,7 +37,7 @@ Dsl 的其中一個主要應用程式是產生程式碼、設定檔和其他成�
 
 本總覽的其餘部分是逐步解說，介紹在 Visual Studio 中建立和使用特定領域語言的基本作業。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 若要定義 DSL，您必須已安裝下列元件：
 
@@ -61,7 +61,7 @@ Dsl 的其中一個主要應用程式是產生程式碼、設定檔和其他成�
 
      ![[建立 DSL] 對話方塊](../modeling/media/create_dsldialog.png)
 
-4. 在 [**名稱**] 方塊中，輸入**FamilyTree**。 按一下 [確定]。
+4. 在 [**名稱**] 方塊中，輸入**FamilyTree**。 按一下 [ **確定**]。
 
      [**網域指定的語言嚮導]** 隨即開啟，並顯示範本 DSL 解決方案的清單。
 
@@ -147,7 +147,7 @@ DSL 定義可以指定模型在圖表上的顯示方式。 您可以從各種不
 
 當您編輯模型時，您可以將模型視為**瀏覽器**視圖中的樹狀結構。 當您將圖形加入至圖表時，模型元素也會出現在 explorer 中。 即使沒有圖表，也可以使用 explorer。
 
-如果您在 Visual Studio 的「調試」實例中看不到 [Explorer]，請在 [ **View** ] 功能表上指向 [**其他視窗**]，然後按一下 [ *\<Your Language >* **Explorer**]。
+如果您在 Visual Studio 的偵錯工具實例中看不到 Explorer，請在 [ **View** ] 功能表上指向 [**其他視窗**]，然後按一下 [ *\<您的語言 >* **Explorer**]。
 
 ### <a name="the-api-of-your-dsl"></a>DSL 的 API
 
@@ -209,7 +209,7 @@ DSL 定義可以指定模型在圖表上的顯示方式。 您可以從各種不
 
     2. 開啟屬性視窗並定位，讓您可以同時查看 [DSL Explorer] 和 [屬性]。
 
-    3. 在 [DSL Explorer] 中，依序展開 [**編輯器** **]、[工具箱]** 索引標籤、 *\<your DSL >* **，然後**
+    3. 在 [DSL Explorer] 中，展開 [**編輯器** **]、[工具箱]** 索引標籤、 *\<DSL >* ，然後按 [**工具**]
 
     4. 按一下 [ **ExampleElement**]。 這是用來建立元素的 [工具箱] 專案。
 
@@ -225,7 +225,7 @@ DSL 定義可以指定模型在圖表上的顯示方式。 您可以從各種不
 
     2. 在方案總管的工具列中，按一下 [**轉換所有範本**]。
 
-    3. 按 F5。 等到 Visual Studio 的實驗實例出現為止。
+    3. 請按 F5。 等到 Visual Studio 的實驗實例出現為止。
 
 4. 在 Visual Studio 的實驗實例中的調試方案中，開啟測試模型檔案。 從 [工具箱] 將專案拖曳至其上。 請注意，[DSL Explorer] 中的工具標題和類型名稱已變更。
 
@@ -333,7 +333,7 @@ DSL 定義可以指定模型在圖表上的顯示方式。 您可以從各種不
 
     1. 在**DSL Explorer**中，展開 [**編輯器** **] 和 [工具箱]** 索引標籤。
 
-    2. 以滑鼠右鍵按一下 *\<your DSL >* 然後按一下 [**新增專案工具**]。
+    2. 以滑鼠右鍵按一下 *\<您的 DSL >* 然後按一下 [**新增專案工具**]。
 
     3. 設定新工具的 [**名稱**] 屬性，並將其 [**類別**] 屬性設為 [城鎮]。
 
@@ -341,7 +341,7 @@ DSL 定義可以指定模型在圖表上的顯示方式。 您可以從各種不
 
 7. 建立連接器工具來建立城鎮與人員之間的連結。
 
-    1. 在  *\<your DSL >* 上按一下滑鼠右鍵，然後按一下 新增**連接器工具**。
+    1. 以滑鼠右鍵按一下 *\<您的 DSL >* 然後按一下 [新增**連接器工具**]。
 
     2. 設定新工具的 Name 屬性。
 

@@ -3,17 +3,17 @@ title: XML 架構瀏覽器-搜尋架構集
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7684c56a22ef760655563d1d9f58e2ff01b0c9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8378ebaccefaedfcc3d83f23bcab56f7417264dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604646"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592499"
 ---
 # <a name="search-the-schema-set"></a>搜尋結構描述集合
 
@@ -43,7 +43,7 @@ ms.locfileid: "72604646"
 
 ## <a name="display-and-navigate-search-results"></a>顯示和流覽搜尋結果
 
-搜尋完成後，摘要結果面板會加入含搜尋結果的工具列。 搜尋結果也會在**XML 架構瀏覽器**中反白顯示，並在垂直捲動條上以刻度標示。 您可以在**XML 架構瀏覽器**工具列的 [摘要結果] 窗格中，使用 [**移至下一個搜尋結果**] 和 [**移至上一個搜尋結果**] 按鈕，流覽搜尋結果。使用鍵盤按鍵**F3**和**Shift** +**f3**;或按一下捲軸中的刻度標記。
+搜尋完成後，摘要結果面板會加入含搜尋結果的工具列。 搜尋結果也會在**XML 架構瀏覽器**中反白顯示，並在垂直捲動條上以刻度標示。 您可以在**XML 架構瀏覽器**工具列的 [摘要結果] 窗格中，使用 [**移至下一個搜尋結果**] 和 [**移至上一個搜尋結果**] 按鈕，流覽搜尋結果。使用鍵盤按鍵**F3**和**Shift**+**f3**;或按一下捲軸中的刻度標記。
 
 您可以按一下 [摘要] 結果窗格上的 [**將反白顯示的節點新增至工作區**] 按鈕，將搜尋結果新增至工作區。
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /RunExit switch
 - /RunExit Devenv switch
 ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 295d4999437248cc9221631378c2beffd80094d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 18ca581c5a8a7f631138e8b3eacff02a031e0931
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655527"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593599"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
 
@@ -29,11 +29,11 @@ ms.locfileid: "72655527"
 devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 
 - *SolutionName*
 
-  解決方案檔的完整路徑和名稱。
+  方案檔的完整路徑和名稱。
 
 - *ProjectName*
 
@@ -45,7 +45,7 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
 ## <a name="remarks"></a>備註
 
-根據為使用中解決方案設定指定的設定，編譯並執行指定的專案或解決方案。 當專案或方案執行時，此參數會將 IDE 最小化。 它會在專案或方案完成執行之後關閉 IDE。
+根據為使用中方案組態所指定的設定，編譯並執行指定的專案或方案。 當專案或方案執行時，此參數會將 IDE 最小化。 它會在專案或方案完成執行之後關閉 IDE。
 
 - 請以雙引號括住包含空格的字串。
 

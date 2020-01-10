@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189455"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565938"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 
@@ -70,7 +70,7 @@ ms.locfileid: "73189455"
 
  (在元件方案範例中，其中一個連接產生器稱為 ConnectionBuilder，這是巧合，因為網域關聯性的名稱剛好是 Connection。)
 
- 關聯性會建立于*關聯*性 `Builder.Connect()` 方法中。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如:
+ 關聯性會建立于*關聯*性`Builder.Connect()` 方法中。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如：
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -122,7 +122,7 @@ ms.locfileid: "73189455"
 
 - 項目群組原型 (EGP) 處理常式方法。 如果使用者可以將另一個元素*合併*（加入）到這個類別的實例，則需要這些專案。 使用者通常會透過從項目工具或另一個圖形拖曳，或透過貼上作業，來執行這項操作。
 
-   在範例 DSL 中，「輸入通訊埠」或「輸出通訊埠」可合併為一個「元件」。 此外，「元件」和「註解」可合併為模型。 必須提供
+   在範例 DSL 中，「輸入通訊埠」或「輸出通訊埠」可合併為一個「元件」。 此外，「元件」和「註解」可合併為模型。 此
 
    「元件」類別中的 EGP 處理常式方法允許「元件」接受「通訊埠」，但不接受「註解」。 根模型類別中的 EGP 處理常式接受「元件」和「註解」，但不接受「通訊埠」。
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  若要自訂這個檔案，請編輯 `.tt` 檔。
 
 > [!WARNING]
-> 如果您編輯 .tt 檔以納入圖示或影像等資源，請確定 VSIX 組建中包含此資源。 在方案總管中選取檔案，並確定已 `True` [**在 VSIX 中包含**] 屬性。
+> 如果您編輯 .tt 檔以納入圖示或影像等資源，請確定 VSIX 組建中包含此資源。 在方案總管中選取檔案，並確定已 `True`[**在 VSIX 中包含**] 屬性。
 
  這個檔案控制如何將 DSL 封裝成 Visual Studio 整合擴充功能 (VSIX)。 如需詳細資訊，請參閱[部署特定領域語言方案](msi-and-vsix-deployment-of-a-dsl.md)。
 

@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: a61a3181f47af4a660641ef02ce4ba1b31eedc46
-ms.sourcegitcommit: 916bbe1d77c9253424daa86c71c40f5e1ec74400
+ms.openlocfilehash: 18fa63f2a6f4b6d789bad6f813cb3956a636a2d2
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74951939"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404078"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>資料中斷點錯誤的疑難排解
 此頁面將逐步引導您解決使用「當值變更時中斷」時所看到的常見錯誤
@@ -83,5 +83,5 @@ ms.locfileid: "74951939"
 如有任何關於這項功能的問題或建議，請透過 [說明] > [傳送意見反應]，> 在 IDE 或[開發人員社區](https://developercommunity.visualstudio.com/)中回報[問題](../ide/how-to-report-a-problem-with-visual-studio.md)，讓我們知道。
 
 ## <a name="see-also"></a>請參閱
-- [在 .Net Core 3.0 中使用「當值變更時中斷](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)」。
+- [在 .Net Core 3.0 中使用「當值變更時中斷](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)」。
 - [DevBlog：當值變更時中斷： Visual Studio 2019 中 .NET Core 的資料中斷點](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)

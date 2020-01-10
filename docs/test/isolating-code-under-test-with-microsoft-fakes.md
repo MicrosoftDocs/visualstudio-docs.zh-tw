@@ -1,25 +1,25 @@
 ---
-title: 使用 Microsoft Fakes 在測試期間隔離程式碼
+title: 隔離待測程式碼與 Microsoft Fake
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
+author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: bf00c35868ac5b4df34f2453f046232a91387085
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 662a61bf97e1726892b877dc79a0ef98340a34ec
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653108"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566887"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 隔離測試中的程式碼
 
-Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的其他部分，協助您隔離要測試的程式碼。 這些是受測試所控制的一些程式碼片段。 藉由隔離待測的程式碼，您可以在正確的位置尋找測試失敗的原因。 即使應用程式的其他部分還無法運作，您也可以利用虛設常式和填充碼。
+Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的其他部分，協助您隔離要測試的程式碼。 這些都是在您的測試控制之下的程式碼小片段。 藉由隔離待測的程式碼，您可以在正確的位置尋找測試失敗的原因。 即使其他部分的應用程式並未運作，Stub 和 Shim 也可讓您測試程式碼。
 
 Fakes 分為兩種類別：
 

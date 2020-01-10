@@ -20,17 +20,17 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 527c01629fbff856748a50d393ca5df2a413d056
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667026"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595614"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 
@@ -132,7 +132,7 @@ ms.locfileid: "72667026"
 |**涵蓋範圍未觸及的區域**|尚未被單元測試涵蓋的程式碼。|
 |**涵蓋範圍部分觸及的區域**|已被單元測試部分涵蓋的程式碼。|
 |**涵蓋範圍觸及的區域**|已被單元測試完全涵蓋的程式碼。|
-|**CSS 註解**|階層式樣式表中的註解。 例如:<br /><br /> /* comment \*/|
+|**CSS 註解**|階層式樣式表中的註解。 例如：<br /><br /> /* comment \*/|
 |**CSS 關鍵字**|階層式樣式表中的關鍵字。|
 |**CSS 屬性名稱**|屬性 (例如背景) 的名稱。|
 |**CSS 屬性值**|指派給屬性 (例如藍色) 的值。|
@@ -168,7 +168,7 @@ ms.locfileid: "72667026"
 |**SQL DML 資料標記**|適用於 Transact-SQL 編輯器。 在此編輯器中的 DML 陳述式預設會以藍色週框方塊標示。|
 |**過時程式碼**|等待更新的被取代的程式碼。 在某些情況下，[編輯後繼續] 無法立即套用程式碼變更，但它們會在稍後繼續偵錯時套用。 如果您編輯必須呼叫目前執行的函式的函式，或將 64 位元組以上的新變數加入等候呼叫堆疊的某個函式時，就會發生這種情況。 當發生這種情況時，偵錯工具會顯示「過時程式碼警告」對話方塊，並且已被取代的程式碼會繼續執行直到有問題的函式完成，並再次呼叫。 [編輯後繼續] 會在該時間套用程式碼變更。|
 |**String**|字串常值。|
-|**字串 (C# @ 逐字翻譯)**|C# 中逐字解譯的字串常值。 例如:<br /><br /> @"x"|
+|**字串 (C# @ 逐字翻譯)**|C# 中逐字解譯的字串常值。 例如：<br /><br /> @"x"|
 |**語法錯誤**|剖析錯誤。|
 |**工作清單捷徑**|如果已將 [工作清單] 捷徑新增至一行，並且停用指示區邊界，就會將該行反白顯示。|
 |**追蹤點 (停用)**|未使用。|

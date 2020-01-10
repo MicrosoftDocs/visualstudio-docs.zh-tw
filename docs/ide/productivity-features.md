@@ -2,17 +2,17 @@
 title: 生產力祕訣
 ms.date: 2/21/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0ac256d9878df45404dc62f1080e12bb6e7f002
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fd85565ee573015737ab815258914bec89ab9369
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666781"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596979"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 
@@ -34,7 +34,7 @@ ms.locfileid: "72666781"
 
 - **使用程式碼片段**. 您可以使用內建的程式碼片段或建立自己的程式碼片段。
 
-     若要插入程式碼片段，請在功能表列上選擇 [編輯] > [IntelliSense] > [插入程式碼片段] 或 [範圍陳述式]，或是開啟檔案中的捷徑功能表，然後選擇 [程式碼片段] > [插入程式碼片段] 或 [範圍陳述式]。 如需詳細資訊，請參閱 [Code Snippets](../ide/code-snippets.md)。
+     若要插入程式碼片段，請在功能表列上選擇 [編輯] > [IntelliSense] > [插入程式碼片段] 或 [範圍陳述式]，或是開啟檔案中的捷徑功能表，然後選擇 [程式碼片段] > [插入程式碼片段] 或 [範圍陳述式]。 如需詳細資訊，請參閱[程式碼片段](../ide/code-snippets.md)。
 
 - **修正內嵌程式碼錯誤**。 快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。 快速動作的套用方式包括使用螺絲起子 ![螺絲起子圖示](media/screwdriver-icon.png) 或燈泡 ![燈泡圖示](media/light-bulb-icon.png) 圖示，以及按 **Alt**+**Enter** 或 **Ctrl**+ **.** 。 如需詳細資訊，請參閱[快速動作](quick-actions.md)。
 

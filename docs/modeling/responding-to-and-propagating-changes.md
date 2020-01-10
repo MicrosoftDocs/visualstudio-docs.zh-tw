@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, events
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 537f41418b6e66055acd9bedd5f0ccf4e01db524
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fbe09c242fce137d90b90ff2d6c547cee1ed2dc7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660331"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595393"
 ---
 # <a name="respond-to-and-propagate-changes"></a>回應及傳播變更
 
@@ -24,7 +24,7 @@ ms.locfileid: "72660331"
 
 依照下列順序，將這些技巧視為指導方針：
 
-|稱為|案例|如需詳細資訊|
+|方法|案例|如需詳細資訊|
 |-|-|-|
 |定義匯出定義域屬性。|網域屬性，其值是從模型中的其他屬性計算而來。 例如，這是相關元素的價格總和。|[計算及自訂的儲存區屬性](../modeling/calculated-and-custom-storage-properties.md)|
 |定義自訂的儲存網域屬性。|儲存在模型的其他部分或外部的網域屬性。 例如，您可以將運算式字串剖析成模型中的樹狀結構。|[計算及自訂的儲存區屬性](../modeling/calculated-and-custom-storage-properties.md)|
@@ -46,7 +46,7 @@ ms.locfileid: "72660331"
 
 - **建立自訂規則**您可以從抽象規則建立自訂規則做為衍生類別。 您也必須通知架構有關自訂規則的資訊。 如需詳細資訊，請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。
 
-- **訂閱事件**您必須先建立事件處理常式和委派，才能訂閱事件。 然後使用 <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>property 來訂閱事件。 如需詳細資訊，請參閱[事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
+- **訂閱事件**您必須先建立事件處理常式和委派，才能訂閱事件。 然後使用 [<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>] 屬性來訂閱事件。 如需詳細資訊，請參閱[事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
 - 復原**變更**當您復原交易時，會引發事件，但不會套用規則。 如果規則變更某個值，而您又復原該變更，則在復原動作期間，值會重設為原始值。 當引發事件時，您必須手動將值變更回其原始值。 若要深入瞭解交易和復原，請參閱[如何：使用交易來更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 

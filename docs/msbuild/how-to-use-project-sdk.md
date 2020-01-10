@@ -4,17 +4,17 @@ ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, SDKs, SDK
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0be8f9ed17bf4474307a639bb75f409da2ff1638
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d40e437763ba3eb75daa80a3a1bbf55ba9d896c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911299"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574453"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 專案 SDK
 

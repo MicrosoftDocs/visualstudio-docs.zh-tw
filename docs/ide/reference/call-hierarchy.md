@@ -6,17 +6,17 @@ f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
 - Call Hierarchy
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a03a286d8b097fbd208a828411728aaa7a54690
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dcedc6a49c0df84b4482f8030524d59d4336bcc8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668200"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595796"
 ---
 # <a name="view-call-hierarchy"></a>檢視呼叫階層
 
@@ -28,7 +28,7 @@ ms.locfileid: "72668200"
 
 若要顯示 [呼叫階層] 視窗，請在程式碼編輯器中方法、屬性或建構函式呼叫的名稱上按一下滑鼠右鍵，然後選取 [檢視呼叫階層]。
 
-成員名稱會顯示在 [呼叫階層] 視窗的樹狀檢視窗格中。 如果您展開成員節點，將會出現 [呼叫目標 <成員名稱>] 和 [呼叫來源 <成員名稱>] (適用於 C++) 子節點。
+成員名稱會顯示在 [呼叫階層] 視窗的樹狀檢視窗格中。 如果您展開成員節點、**呼叫***成員名稱*，以及針對C++，則會出現**從***成員名稱*呼叫的子節點。
 
 針對 C++ 程式碼，您可以同時查看對成員發出和從成員發出的呼叫：
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - tasks, creating for MSBuild
 - MSBuild, creating tasks
 ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf7f82d628c0c093e0d807920b379263c20ff0b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 369584a815f671c8b7b4f8a99a5280626b493104
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238202"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594990"
 ---
 # <a name="task-writing"></a>工作撰寫
 提供在建置流程期間執行之程式碼的工作。 工作是包含在目標中。 一般工作程式庫會隨附於[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，您也可以建立自己的工作。 如需隨附於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 之工作程式庫的詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。
@@ -141,9 +141,9 @@ public string RequiredProperty { get; set; }
 
  <xref:Microsoft.Build.Framework.RequiredAttribute> 在 <xref:Microsoft.Build.Framework> 命名空間中定義 `[Required]` 屬性。
 
-## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>如何[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]叫用工作
+## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 叫用工作的方式
 
-叫用工作時， [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]會先將工作類別具現化，然後針對在專案檔的 task 元素中設定的工作參數，呼叫該物件的屬性 setter。 如果 task 專案未指定參數，或如果元素中指定的運算式評估為空字串，則不會呼叫屬性 setter。
+叫用工作時，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會先具現化工作類別，然後針對在專案檔的 task 元素中設定的工作參數，呼叫該物件的屬性 setter。 如果 task 專案未指定參數，或如果元素中指定的運算式評估為空字串，則不會呼叫屬性 setter。
 
 例如，在專案中
 
@@ -157,13 +157,13 @@ public string RequiredProperty { get; set; }
 </Project>
 ```
 
-只`Input3`會呼叫的 setter。
+只會呼叫 `Input3` 的 setter。
 
 工作不應該相依于參數屬性 setter 調用的任何相對順序。
 
 ### <a name="task-parameter-types"></a>工作參數類型
 
-原生`string`處理、 `bool`和`ITaskItem[]`類型的屬性。 `ITaskItem` [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 如果工作接受不同類型的參數， [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] <xref:System.Convert.ChangeType%2A>則會叫用來從`string` （已展開所有屬性和專案參考）轉換為目的地類型。 如果任何輸入參數的轉換失敗， [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]則會發出錯誤，而且不會呼叫工作的`Execute()`方法。
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 原本就會處理類型 `string`、`bool`、`ITaskItem` 和 `ITaskItem[]`的屬性。 如果工作接受不同類型的參數，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會叫用 <xref:System.Convert.ChangeType%2A> 以從 `string` （已展開所有屬性和專案參考）轉換成目的地類型。 如果任何輸入參數的轉換失敗，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會發出錯誤，而且不會呼叫工作的 `Execute()` 方法。
 
 ## <a name="example"></a>範例
 
@@ -255,6 +255,6 @@ namespace SimpleTask2
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)

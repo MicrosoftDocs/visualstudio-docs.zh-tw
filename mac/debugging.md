@@ -1,29 +1,31 @@
 ---
-title: 以 Xamarin 偵錯
-description: 偵錯是程式設計中常見且必要的一部分。 作為成熟的 IDE，Visual Studio for Mac 包含整個套件的功能，可讓偵錯變容易。 從安全偵錯到資料視覺效果，本文將說明如何使用在 Visual Studio for Mac 偵錯的完整潛力。
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 05/06/2018
+title: 使用 Visual Studio for Mac 進行調試
+description: 偵錯是程式設計當中常見且必要的一部分。 作為成熟的 IDE，Visual Studio for Mac 包含整個套件的功能，可讓偵錯變容易。 從安全偵錯到資料視覺效果，本文將說明如何使用在 Visual Studio for Mac 偵錯的完整潛力。
+author: therealjohn
+ms.author: johmil
+ms.date: 12/13/2019
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 58844d54000dbeb86548863510ecac63bfb2ade9
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716973"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75397968"
 ---
-# <a name="debugging-with-xamarin"></a>以 Xamarin 偵錯
+# <a name="debugging-with-visual-studio-for-mac"></a>使用 Visual Studio for Mac 進行調試
 
-Visual Studio for Mac 具有原生偵錯工具，能夠支援 Xamarin.iOS、 Xamarin.Mac 和 Xamarin.Android 應用程式的偵錯。
+Visual Studio for Mac 具有支援 .Net Core、.NET Framework、Unity 和 Xamarin 應用程式的偵錯工具。
 
-Visual Studio for Mac 使用 [ *Mono Soft Debugger*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/)，它實作到 Mono 執行階段之中，讓 Visual Studio for Mac 能跨所有平台進行 Managed 程式碼的偵錯。
+Visual Studio for Mac 使用 [*Mono Soft Debugger*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/)，它實作到 Mono 執行階段之中，讓 Visual Studio for Mac 能跨所有平台進行 Managed 程式碼的偵錯。
 
 ## <a name="the-debugger"></a>偵錯工具
 
-Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程式進行 Managed (C# 或 F#) 程式碼的偵錯。 Mono Soft Debugger 不同於一般偵錯工具，它是內建於 Mono 執行階段的合作型偵錯工具。產生的程式碼和 Mono 執行階段會與 IDE 合作，提供偵錯體驗。 Mono 執行階段會透過網路通訊協定公開偵錯功能，您可以在 [Mono 文件](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)中深入了解。
+Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程式進行 Managed (C# 或 F#) 程式碼的偵錯。 Mono 軟偵錯工具與一般的偵錯工具不同之處在于，它是內建于 Mono 執行時間的合作式偵錯工具;產生的程式碼和 Mono 執行時間會與 IDE 合作，以提供偵錯工具體驗。 Mono 執行階段會透過網路通訊協定公開偵錯功能，您可以在 [Mono 文件](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)中深入了解。
 
 硬式偵錯工具，例如 [LLDB]( http://lldb.llvm.org/index.html) 或 [GDB]( https://www.gnu.org/software/gdb/)，會控制程式，而被偵錯的程式不必知情或合作，但在您需要偵錯原生 iOS 或 Android 程式碼，偵錯 Xamarin 應用程式時仍然十分有用。
+
+針對 .NET Core 和 ASP.NET Core 應用程式，Visual Studio for Mac 會使用 .NET Core 偵錯工具。 此偵錯工具也是一個合作的偵錯工具，可與 .NET 執行時間搭配使用。
 
 ## <a name="using-the-debugger"></a>使用偵錯工具
 
@@ -43,9 +45,10 @@ Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程�
 
 ## <a name="start-debugging"></a>開始偵錯
 
-若要開始偵錯，請在 IDE 選取目標裝置或類似/模擬器：
+若要開始進行偵錯工具，請選取 [目標瀏覽器]、[裝置] 或 [模擬器/模擬器]：
 
-![選取目標裝置](media/debugging-image1.png)
+![的](media/debugging-image_0.png)
+Debug 設定 ![選取目標裝置](media/debugging-image1.png)
 
 然後按 [播放] 按鈕，或 **Cmd + return** 部署您的應用程式。 當您到達中斷點時，程式碼反白顯示為黃色：
 
@@ -90,9 +93,9 @@ Xamarin 產品隨附 Mono 類別庫的原始程式碼，您可以使用它從偵
 
 因為這項功能會在偵錯期間消耗較多的記憶體，所以它預設會關閉。
 
-若要啟用這項功能，請瀏覽至 [Visual Studio for Mac] > [喜好設定] > [偵錯工具]，並確定 [只偵錯專案程式碼; 不涉及架構程式碼。] 選項為 [未選取]，如下所示：
+若要啟用這項功能，請流覽至**Visual Studio for Mac > 喜好設定 > 偵錯工具**，並確定已選取 [**逐步執行外部程式碼**] 選項，如下**所**示：
 
-![不進入架構程式碼選項](media/debugging-image8.png)
+![逐步執行外部程式碼選項](media/debugging-image8.png)
 
 ## <a name="see-also"></a>請參閱
 

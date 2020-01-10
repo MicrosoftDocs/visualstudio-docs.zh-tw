@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eff5e0d2f13bfe462ff19d6cfb4e8a32a15a6064
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 430e57713f1bfb01219ea1ac8123f321ba0f5680
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639641"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586103"
 ---
 # <a name="typed-vs-untyped-datasets"></a>具類型資料集與不具類型資料集的比較
 具類型資料集是第一個衍生自基底 <xref:System.Data.DataSet> 類別的資料集，然後使用來自**DataSet 設計工具**（儲存在 .xsd 檔案中）的資訊來產生新的強型別資料集類別。 架構（資料表、資料行等等）中的資訊會產生並編譯成這個新的資料集類別，做為一組第一類物件和屬性。 因為具類型的資料集繼承自基底 <xref:System.Data.DataSet> 類別，所以具類型的類別會假設 <xref:System.Data.DataSet> 類別的所有功能，而且可以搭配採用 <xref:System.Data.DataSet> 類別的實例做為參數的方法使用。

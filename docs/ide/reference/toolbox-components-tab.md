@@ -1,5 +1,5 @@
 ---
-title: 元件索引標籤、工具箱
+title: 工具箱、元件索引標籤
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 - VS.CHOOSEITEMS.UniversalWindowsComponents
 helpviewer_keywords:
 - Toolbox, Components tab
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9c6bf4d24a681c426a20f490dba2cc1d5080fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644600"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597304"
 ---
 # <a name="toolbox-components-tab"></a>工具箱, 元件索引標籤
 

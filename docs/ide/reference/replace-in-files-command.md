@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Replace In Files command
 - ReplaceInFiles command
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fccfe696da2d38ff03ffb2f9b91de481e924a514
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 96f7d7ae0ea5eaf0de1a6fa4357e2750cdd8c22e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748672"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565470"
 ---
 # <a name="replace-in-files-command"></a>檔案中取代命令
 使用在 [尋找和取代] 視窗 [檔案中取代] 索引標籤提供的選項子集，取代檔案中的文字。
@@ -32,7 +32,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 [/reset] [/stop] [/sub] [/text2] [/wild] [/word]
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 `findwhat`
 
 必要項。 要比對的文字。
@@ -41,7 +41,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 
 必要項。 要用來取代相符文字的文字。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換機
 /all 或 /a
 
 選擇項。 以取代文字來取代所有出現的搜尋文字。

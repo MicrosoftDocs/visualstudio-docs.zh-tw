@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 36320daf91380d0b04333b228a1d4b9d58c6693c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981125"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594015"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -216,7 +216,7 @@ ms.locfileid: "72981125"
 
 以下章節說明用於這些錯誤的語法，解釋這些錯誤的意義，並且建議解析或管理這些錯誤的作法。
 
-|**語法**|**說明**|
+|**語法**|**描述**|
 |-|-|
 |*ArtifactN*（*ArtifactTypeN*）|*ArtifactN*是與相依性圖表上的圖層相關聯的成品。<br /><br /> *ArtifactTypeN*是*ArtifactN*的類型，例如**類別**或**方法**，例如：<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|命名空間的名稱。|
@@ -229,6 +229,8 @@ ms.locfileid: "72981125"
 | DV1001：**不正確命名空間名稱** | 此問題會在與圖層相關聯的程式碼元素上回報，「允許的命名空間名稱」屬性不包含定義此程式碼專案的命名空間。 這是命名條件約束違規。 請注意，「允許的命名空間名稱」的語法是命名空間的分號清單，其中的程式碼專案會被允許定義。 |
 | DV1002： **unreferenceable 命名空間的**相依性 | 此問題會在與圖層相關聯的程式碼元素上回報，並參考在該圖層的 "Unreferenceable Namespace" 屬性中定義的命名空間中所定義的另一個程式碼專案。 這是命名條件約束違規。 請注意，"Unreferenceable 命名空間" 屬性定義為以分號分隔的命名空間清單，不應在與此圖層相關聯的程式碼元素中參考。 |
 | DV1003：不**允許的命名空間名稱** | 此問題會在與圖層相關聯的程式碼元素上回報，而「不允許的命名空間名稱」屬性包含定義此程式碼專案的命名空間。 這是命名條件約束違規。 請注意，「不允許的命名空間名稱」屬性會定義為以分號分隔的命名空間清單，其中不應定義與此圖層相關聯的程式碼元素。 |
+| DV2001：**分層圖目前狀態** | 此問題會在不包含相依性圖表檔案但參考相依性驗證分析器的專案上回報。 如果尚未使用相依性驗證，您可以直接從方案總管移除 "DependencyValidation"，或隱藏這個警告。 若要加入相依性圖表，請參閱[從您的程式碼建立](../modeling/create-layer-diagrams-from-your-code.md)相依性圖表。 |
+| DV2002：未對應的**類型基底** | 當程式碼元素未對應到任何圖層時，就會回報此問題。 |
 | DV3001：**遺漏連結** | 圖層 '*LayerName*' 連結至 ' 成品 '，但找不到該*專案*。 您是否遺漏了組件參考? |
 | DV9001：**架構分析發現內部錯誤** | 結果可能不完整。 如需詳細資訊，請參閱詳細建置事件記錄檔或輸出視窗。 |
 

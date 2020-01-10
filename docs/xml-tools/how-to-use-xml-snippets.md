@@ -3,17 +3,17 @@ title: 如何使用 XML 程式碼片段
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 163fcddb8553da39b035e649155e04c3da4b430e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: decc565eca9b7299761405e06c0cecf82f63319d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601788"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592603"
 ---
 # <a name="how-to-use-xml-snippets"></a>如何：使用 XML 片段
 
@@ -26,7 +26,7 @@ ms.locfileid: "72601788"
 下列程式說明如何存取 [**插入程式碼片段**] 命令。
 
 > [!NOTE]
-> [**插入程式碼片段**] 命令也可以透過鍵盤快速鍵（**ctrl** +**K**，然後按**ctrl** +**X**）取得。
+> [**插入程式碼片段**] 命令也可以透過鍵盤快速鍵（**ctrl**+**K**，然後按**ctrl**+**X**）取得。
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>透過捷徑功能表插入片段
 
@@ -52,7 +52,7 @@ ms.locfileid: "72601788"
 
 1. 將游標置於您要插入 XML 片段的位置。
 
-2. 開始鍵入您想要加入檔案的 XML 片段。 如果自動完成已開啟，則會顯示 IntelliSense 自動完成清單。 如果沒有出現，請按**Ctrl** +**空格鍵**來啟動它。
+2. 開始鍵入您想要加入檔案的 XML 片段。 如果自動完成已開啟，則會顯示 IntelliSense 自動完成清單。 如果沒有出現，請按**Ctrl**+**空格鍵**來啟動它。
 
 3. 從自動完成清單中選取 XML 片段。
 
@@ -76,7 +76,7 @@ ms.locfileid: "72601788"
 下列程式說明如何**存取 [範圍**語句] 命令。
 
 > [!NOTE]
-> [範圍語句 **] 命令也**可以透過鍵盤快速鍵（**ctrl** +**K**，然後按**ctrl** +**S**）取得。
+> [範圍語句 **] 命令也**可以透過鍵盤快速鍵（**ctrl**+**K**，然後按**ctrl**+**S**）取得。
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>若要從內容功能表使用範圍語句
 
@@ -102,7 +102,7 @@ ms.locfileid: "72601788"
 
 一旦選擇了 XML 片段，程式碼片段的文字便會自動插入游標位置。 會反白顯示片段中任何可編輯的欄位，並自動選取第一個可編輯的欄位。 目前選取的欄位為 boxed。
 
-選取欄位後，您可以為該欄位鍵入新值。 按**tab**鍵會迴圈顯示程式碼片段的可編輯欄位;按**Shift** +**索引**標籤會以相反順序迴圈。 按一下欄位便會將游標置於該欄位中，而按兩下欄位便會選取它。 反白顯示欄位後，可能會顯示提供欄位說明的工具提示。
+選取欄位後，您可以為該欄位鍵入新值。 按**tab**鍵會迴圈顯示程式碼片段的可編輯欄位;按**Shift**+**索引**標籤會以相反順序迴圈。 按一下欄位便會將游標置於該欄位中，而按兩下欄位便會選取它。 反白顯示欄位後，可能會顯示提供欄位說明的工具提示。
 
 只有給定欄位的第一個執行個體才是可編輯的。 反白顯示該欄位時，會為欄位之其他執行個體加上外框。 當您變更可編輯欄位的值時，該片段中任何位置所使用的這個欄位均會變更。
 

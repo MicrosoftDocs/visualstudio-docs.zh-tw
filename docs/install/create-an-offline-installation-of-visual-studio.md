@@ -9,19 +9,19 @@ f1_keywords:
 - offline install [Visual Studio]
 - layout [Visual Studio]
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: fd47e464eec0fc9bdbd20c854432f5954f8fbcb2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789991"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591485"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 
@@ -79,9 +79,9 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 若要取得 Visual Studio 2017 的啟動載入器，請參閱[Visual Studio 舊版](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
 
-您的安裝程式可執行檔 &mdash;or 更明確，啟動載入器檔案 &mdash;should 相符，或類似于下列其中一項。
+您的安裝程式可執行檔&mdash;或更具體來說，啟動載入器檔案&mdash;應符合或類似下列其中一項。
 
-| 版本 | Filename |
+| 版本 | {2&gt;檔案名稱&lt;2} |
 |-------------|-----------------------|
 |Visual Studio Community | vs_community.exe |
 |Visual Studio Professional | vs_professional.exe |
@@ -94,7 +94,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 從下載您所選擇之 Visual Studio 版本的 Visual Studio 啟動載入器開始。 您的安裝程式檔案 (或啟動載入器) 將會符合或類似於下列其中一個檔案。
 
-| 版本                    | 檔案                                                                    |
+| 版本                    | File                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
 | Visual Studio Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |

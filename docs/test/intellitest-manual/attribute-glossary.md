@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Attribute glossary
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: dce8d33f876ee34e18812cb744d7d3d6f53a5506
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653238"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594301"
 ---
 # <a name="attribute-glossary"></a>屬性字彙
 
@@ -79,7 +79,7 @@ ms.locfileid: "72653238"
 <a name="pexclass"></a>
 ## <a name="pexclass"></a>PexClass
 
-此屬性會標示包含「探索」的類別。 它相當於 MSTest **TestClassAttribute** (或 NUnit **TestFixtureAttribute**)。 這是一個選擇性的屬性。
+此屬性會標示包含「探索」的類別。 它相當於 MSTest **TestClassAttribute** (或 NUnit **TestFixtureAttribute**)。 此屬性是選擇性的。
 
 使用 [PexClass](#pexclass) 所標示的類別必須是「預設可建構的」：
 

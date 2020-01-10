@@ -2,17 +2,17 @@
 title: 建立自動程式化 UI 測試
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 268d170926e3a60ba0aa5131795f22bb31cd2ba9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659640"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592057"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>逐步解說：建立、編輯和維護自動程式化 UI 測試
 
@@ -329,11 +329,11 @@ ms.locfileid: "72659640"
 
      這次自動程式化 UI 測試成功完成測試中的所有步驟。 在 [測試結果] 視窗中，您將會看到 [成功] 的狀態。
 
-## <a name="videos"></a>視訊
+## <a name="videos"></a>Videos
 
-![影片連結](../data-tools/media/playvideo.gif) [開始使用自動程式化 UI 測試](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
+![連結到影片](../data-tools/media/playvideo.gif)[開始使用自動程式碼 UI 測試](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
-## <a name="faq"></a>常見問題 (FAQ)
+## <a name="faq"></a>常見問題集
 
 [自動程式化 UI 測試常見問題集](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 

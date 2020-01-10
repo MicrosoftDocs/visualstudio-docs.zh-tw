@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e0196c582fbe673d73c7aeb89280d05e11a071a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 195cab863554bc60478df4e80319eab80124140a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639566"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586090"
 ---
 # <a name="upgrade-mdf-files"></a>升級 .mdf 檔案
 
@@ -101,7 +101,7 @@ ms.locfileid: "72639566"
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>若要讓 SQL Server Express 預設的資料庫引擎
 
-1. 在功能表列上，選取 [**工具**] [ > **選項**]。
+1. 在功能表列上選取 [工具] > [選項]。
 
 2. 在 [**選項**] 對話方塊中，展開 [**資料庫工具**] 選項，然後選取 [**資料連線**]。
 

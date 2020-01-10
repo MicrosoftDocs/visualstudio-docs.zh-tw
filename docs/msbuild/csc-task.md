@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9df54befff79b82703cb363fea92536285c68232
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 7443ba29a743f4936ae104d9d0bb556fae3c4e2d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70888024"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595380"
 ---
 # <a name="csc-task"></a>Csc 工作
 包裝 csc.exe，並產生可執行檔 (.*exe* 檔案)、動態連結程式庫 ( *.dll* 檔案) 或程式碼模組 (.netmodule 檔案)。 如需 *csc.exe* 的詳細資訊，請參閱 [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)。
@@ -31,7 +31,7 @@ ms.locfileid: "70888024"
 ## <a name="parameters"></a>參數
 下表說明 `Csc` 工作的參數。
 
-| 參數 | 說明 |
+| 參數 | 描述 |
 |------------------------------| - |
 | `AdditionalLibPaths` | 選擇性的 `String[]` 參數。<br /><br /> 指定要搜尋參考的其他目錄。 如需詳細資訊，請參閱 [-lib (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option)。 |
 | `AddModules` | 選擇性的 `String` 參數。<br /><br /> 指定要成為組件一部分的一個或多個模組。 如需詳細資訊，請參閱 [-addmodule (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option)。 |
@@ -42,7 +42,7 @@ ms.locfileid: "70888024"
 | `CodePage` | 選擇性的 `Int32` 參數。<br /><br /> 指定編譯過程中所有原始程式碼檔使用的字碼頁。 如需詳細資訊，請參閱 [-codepage (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option)。 |
 | `DebugType` | 選擇性的 `String` 參數。<br /><br /> 指定偵錯類型。 `DebugType` 可以是 `full` 或 `pdbonly`。 預設值是 `full`，會將偵錯工具附加至執行中的程式。 指定 `pdbonly`，讓原始程式碼在偵錯工具中啟動程式時進行偵錯，但只有在將執行中的程式附加到偵錯工具時，才會顯示組譯工具。<br /><br /> 此參數會覆寫 `EmitDebugInformation` 參數。<br /><br /> 如需詳細資訊，請參閱 [-debug (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)。 |
 | `DefineConstants` | 選擇性的 `String` 參數。<br /><br /> 定義前置處理器符號。 如需詳細資訊，請參閱 [-define (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option)。 |
-| `DelaySign` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，則表示您只想將公開金鑰放置於組件中。 如果`false`為，則指定您想要完整簽署的元件<br /><br /> 除非與 `KeyFile` 或 `KeyContainer` 參數搭配使用，否則此參數沒有任何作用。<br /><br /> 如需詳細資訊，請參閱 [-delaysign (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option)。 |
+| `DelaySign` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，則表示您只想將公開金鑰放置於組件中。 如果 `false`，會指定您想要完整簽署的元件<br /><br /> 除非與 `KeyFile` 或 `KeyContainer` 參數搭配使用，否則此參數沒有任何作用。<br /><br /> 如需詳細資訊，請參閱 [-delaysign (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option)。 |
 | `Deterministic` | 選擇性的 `Boolean` 參數。<br/><br/> 若為 `true`，可讓編譯器輸出在輸入相同時編譯之間二進位內容相同的組件。<br/><br/>如需詳細資訊，請參閱 [-deterministic (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option)。 |
 | `DisabledWarnings` | 選擇性的 `String` 參數。<br /><br /> 指定要停用的警告清單。 如需詳細資訊，請參閱 [-nowarn (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option)。 |
 | `DocumentationFile` | 選擇性的 `String` 參數。<br /><br /> 將文件註解處理成 XML 檔案。 如需詳細資訊，請參閱 [-doc (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option)。 |
@@ -53,7 +53,7 @@ ms.locfileid: "70888024"
 | `KeyContainer` | 選擇性的 `String` 參數。<br /><br /> 指定密碼編譯金鑰容器的名稱。 如需詳細資訊，請參閱 [-keycontainer (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/keycontainer-compiler-option)。 |
 | `KeyFile` | 選擇性的 `String` 參數。<br /><br /> 指定包含密碼編譯金鑰的檔名。 如需詳細資訊，請參閱 [-keyfile (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/keyfile-compiler-option)。 |
 | `LangVersion` | 選擇性的 `String` 參數。<br /><br /> 指定要使用的語言版本。 如需詳細資訊，請參閱 [-langversion (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option)。 |
-| `LinkResources` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 在輸出檔中建立 .NET Framework 資源的連結；不要將資源檔放置於輸出檔中。<br /><br /> 傳遞到此參數的項目可以具備名為 `LogicalName` 和 `Access` 的選擇性中繼資料項目。 `LogicalName` 會對應至 `/linkresource` 參數 (Switch) 的 `identifier` 參數 (Parameter)，而 `Access` 會對應至 `accessibility-modifier` 參數 (Parameter)。 如需詳細資訊，請參閱 [-linkresource (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option)。 |
+| `LinkResources` | 選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 在輸出檔中建立 .NET Framework 資源的連結；不要將資源檔放置於輸出檔中。<br /><br /> 傳遞到此參數的項目可以具備名為 `LogicalName` 和 `Access` 的選擇性中繼資料項目。 `LogicalName` 會對應至 `/linkresource` 參數 (Switch) 的 `identifier` 參數 (Parameter)，而 `Access` 會對應至 `accessibility-modifier` 參數 (Parameter)。 如需詳細資訊，請參閱 [-linkresource (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option)。 |
 | `MainEntryPoint` | 選擇性的 `String` 參數。<br /><br /> 指定 `Main` 方法的位置。 如需詳細資訊，請參閱 [-main (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option)。 |
 | `ModuleAssemblyName` | 選擇性的 `String` 參數。<br /><br /> 指定將包含此模組的組件名稱。 |
 | `NoConfig` | 選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，即會指示編譯器不要使用 *csc.rsp* 檔案進行編譯。 如需詳細資訊，請參閱 [-noconfig (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option)。 |
@@ -65,10 +65,10 @@ ms.locfileid: "70888024"
 | `OutputRefAssembly` | 選擇性的 `String` 參數。<br /><br /> 指定輸出參考組件檔的名稱。 如需詳細資訊，請參閱 [-refout (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option)。 |
 | `PdbFile` | 選擇性的 `String` 參數。<br /><br /> 指定偵錯資訊檔案名稱。 預設名稱是副檔名為 *.pdb* 的輸出檔案名稱。 |
 | `Platform` | 選擇性的 `String` 參數。<br /><br /> 指定輸出檔設為目標的處理器平台。 此參數可以具有 `x86`、`x64` 或 `anycpu` 的值。 預設為 `anycpu`。 如需詳細資訊，請參閱 [-platform (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)。 |
-| `References` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 導致工作將公用類型資訊從指定的項目匯入目前的專案。 如需詳細資訊，請參閱 [-reference (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option)。<br /><br /> 您可以將中繼資料 `Aliases` 加入至原始的「參考」項目，藉以在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 檔案中指定 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 參考別名。 例如，若要在下列 Csc 命令列中設定別名 "LS1"：<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> 您可以使用：<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>` |
-| `Resources` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 將 .NET Framework 資源內嵌到輸出檔中。<br /><br /> 傳遞到此參數的項目可以具備名為 `LogicalName` 和 `Access` 的選擇性中繼資料項目。 `LogicalName` 會對應至 `/resource` 參數 (Switch) 的 `identifier` 參數 (Parameter)，而 `Access` 會對應至 `accessibility-modifier` 參數 (Parameter)。 如需詳細資訊，請參閱 [-resource (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option)。 |
+| `References` | 選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 導致工作將公用類型資訊從指定的項目匯入目前的專案。 如需詳細資訊，請參閱 [-reference (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option)。<br /><br /> 您可以將中繼資料 `Aliases` 加入至原始的「參考」項目，藉以在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 檔案中指定 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 參考別名。 例如，若要在下列 Csc 命令列中設定別名 "LS1"：<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> 您可以使用：<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>` |
+| `Resources` | 選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 將 .NET Framework 資源內嵌到輸出檔中。<br /><br /> 傳遞到此參數的項目可以具備名為 `LogicalName` 和 `Access` 的選擇性中繼資料項目。 `LogicalName` 會對應至 `/resource` 參數 (Switch) 的 `identifier` 參數 (Parameter)，而 `Access` 會對應至 `accessibility-modifier` 參數 (Parameter)。 如需詳細資訊，請參閱 [-resource (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option)。 |
 | `ResponseFiles` | 選擇性的 `String` 參數。<br /><br /> 指定包含適用於此工作之命令的回應檔。 如需詳細資訊，請參閱 [@ (指定回應檔)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option)。 |
-| `Sources` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定一或多個 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 原始程式檔。 |
+| `Sources` | 選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定一或多個 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 原始程式檔。 |
 | `TargetType` | 選擇性的 `String` 參數。<br /><br /> 指定輸出檔的檔案格式。 此參數的值如下：`library` (可建立程式碼程式庫)、`exe` (可建立主控台應用程式)、`module` (可建立模組) 或 `winexe` (可建立 Windows 程式)。 預設值為 `library`。 如需詳細資訊，請參閱 [-target (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option)。 |
 | `TreatWarningsAsErrors` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會將所有警告視為錯誤。 如需詳細資訊，請參閱 [-warnaserror (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)。 |
 | `UseHostCompilerIfAvailable` | 選擇性的 `Boolean` 參數。<br /><br /> 如果有的話，即會指示工作來使用同處理序編譯器物件。 僅可供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用。 |
@@ -93,6 +93,6 @@ ms.locfileid: "70888024"
     EmitDebugInformation="true" />
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

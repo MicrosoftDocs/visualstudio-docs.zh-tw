@@ -1,5 +1,4 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+## YamlMime:Landing
 title: 使用 Visual Studio 進行 Azure 開發
 metadata:
   title: Azure 開發
@@ -9,217 +8,102 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-azure
   ms.topic: landing-page
-  ms.date: 10/09/2018
+  ms.date: 12/05/2019
   ms.author: ghogen
-  ms.custom: seodec18
-sections:
+landingContent:
   - title: 部署到 Azure App Service
-    items:
-      - type: paragraph
-        text: 使用 Visual Studio 將您的應用程式部署到 Azure 中的暫存或生產環境，或設定持續整合與部署 (CI/CD)。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: 'https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1'
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
-            title: 將 ASP.NET Core 應用程式部署到 Azure
-          - href: 'https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet-framework'
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_NET.svg'
-            title: 將 ASP.NET Web 應用程式部署到 Azure
-          - href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_octokitty.svg'
-            title: 使用 Visual Studio 與 Git 持續部署到 Azure
-          - href: /azure/devops/pipelines/get-started-yaml?view=vsts&viewFallbackFrom=aspnetcore-2.1
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/azure/devops/_img/index/DevOpsIconPipelines96.svg'
-            title: 使用 Azure Pipelines 持續部署到 Azure
-          - href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_vmm-cloud.svg'
-            title: 將 ASP.NET Web 應用程式部署到 Azure VM
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: 將 ASP.NET Core 應用程式部署到 Azure
+            url: /azure/app-service/app-service-web-get-started-dotnet-framework
+          - text: 將 ASP.NET Web 應用程式部署到 Azure
+            url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
+          - text: 使用 Visual Studio 與 Git 持續部署到 Azure
+            url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
+          - text: 使用 Azure Pipelines 持續部署到 Azure
+            url: /azure/devops/pipelines/get-started-yaml
+          - text: 將 ASP.NET Web 應用程式部署到 Azure VM
+            url: /azure/virtual-machines/windows/publish-web-app-from-visual-studio
   - title: Azure 應用程式服務、Logic Apps 與 Azure Functions
-    items:
-      - type: paragraph
-        text: 有關如何建立 Web 應用程式與 Azure 中裝載之無伺服器函式的教學課程
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: 'https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet'
-            html: <p>在 Azure 中建置並裝載 Web 應用程式</p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/AppService.svg'
-            title: ASP.NET Core
-          - href: /azure/logic-apps/quickstart-create-logic-apps-with-visual-studio
-            html: <p>使用 Azure Logic Apps 建置自動化、可調整的工作流程。</p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/LogicApp.svg'
-            title: Azure Logic Apps
-          - href: /azure/azure-functions/functions-create-your-first-function-visual-studio
-            html: <p>使用無伺服器程式碼來處理事件</p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/AzureFunctions.svg'
-            title: Azure Functions
-          - href: 'https://docs.microsoft.com/dotnet/azure/?view=azure-dotnet'
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_NET.svg'
-            title: 適用於 .NET 與 .NET Core 開發人員的 Azure SDK
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: 使用 Azure App Service 建置與託管 Web 應用程式
+            url: /azure/app-service/app-service-web-get-started-dotnet
+          - text: 使用 Azure Logic Apps 建置可調整規模的自動化工作流程
+            url: /azure/logic-apps/quickstart-create-logic-apps-with-visual-studio
+          - text: 使用 Azure Functions 處理事件
+            url: /azure/azure-functions/functions-create-your-first-function-visual-studio
+      - linkListType: overview
+        links:
+          - text: 適用於 .NET 與 .NET Core 開發人員的 Azure SDK
+            url: /dotnet/azure
   - title: 容器開發
-    items:
-      - type: paragraph
-        text: 使用 Docker 容器開發、發佈到 Azure、使用 Kubernetes 等。
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_categorize.svg'
-            text: 容器開發
-            href: /visualstudio/containers
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
-            text: Visual Studio 中的容器工具
-            href: /visualstudio/docker/docker-tools
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_kubernetes.svg'
-            text: Kubernetes 工具
-            href: /visualstudio/deployment/tutorial-kubernetes-tools
-  - title: 監視效能及進行偵錯
-    items:
-      - type: paragraph
-        text: ' 了解如何針對您 Azure 中的應用程式進行偵錯，以及監視效能。'
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: /visualstudio/debugger/remote-debugging-azure
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
-            title: 在 Azure 中針對 IIS 上的 ASP.NET Core 進行偵錯
-          - href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: 測試 Azure 中的雲端服務進行偵錯
-          - href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_vmm-cloud.svg'
-            title: 針對在虛擬機器上執行的應用程式進行偵錯
-          - href: vs-azure-tools-performance-profiling-cloud-services.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-performance.svg'
-            title: 測量 Azure 中雲端服務的效能
-  - title: 使用 Visual Studio 已連線的服務將您的應用程式連結到 Azure
-    items:
-      - type: paragraph
-        text: 使用 Visual Studio 已連線的服務快速將您的應用程式或服務專案連結到各種 Azure 服務，以自動新增連線程式碼與設定。
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/azure/media/index/Storage.svg'
-            text: Azure 儲存體
-            href: vs-azure-tools-connected-services-storage.md
-          - image:
-              src: 'https://docs.microsoft.com/azure/media/index/KeyVault.svg'
-            text: Azure Key Vault
-            href: /azure/key-vault/vs-key-vault-add-connected-service
-          - image:
-              src: 'https://docs.microsoft.com/azure/media/index/ActiveDirectory.svg'
-            text: Azure Active Directory
-            href: /azure/active-directory/develop/vs-active-directory-add-connected-service
-          - image:
-              src: 'https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg'
-            text: 認知服務
-            href: /visualstudio/azure/cognitive-services-connected-services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: 容器開發
+            url: /visualstudio/containers
+          - text: Visual Studio 中的容器工具
+            url: /visualstudio/containers/overview
+          - text: Kubernetes 工具
+            url: /visualstudio/containers/tutorial-kubernetes-tools
+  - title: 偵錯 Azure 服務並分析效能
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: 在 Azure 中針對 IIS 上的 ASP.NET Core 進行偵錯
+            url: /visualstudio/debugger/remote-debugging-azure
+          - text: 測試 Azure 中的雲端服務進行偵錯
+            url: vs-azure-tools-intellitrace-debug-published-cloud-services.md
+          - text: 針對在虛擬機器上執行的應用程式進行偵錯
+            url: vs-azure-tools-debug-cloud-services-virtual-machines.md
+          - text: 測量 Azure 中雲端服務的效能
+            url: vs-azure-tools-performance-profiling-cloud-services.md
+  - title: 已連線的服務
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Azure 儲存體
+            url: vs-azure-tools-connected-services-storage.md
+          - text: Azure Key Vault
+            url: /azure/key-vault/vs-key-vault-add-connected-service
+          - text: Azure Active Directory
+            url: /azure/active-directory/develop/vs-active-directory-add-connected-service
+          - text: 認知服務
+            url: /visualstudio/azure/cognitive-services-connected-services
   - title: Azure 雲端服務
-    items:
-      - type: paragraph
-        text: Azure 雲端服務是一般用途技術，可用來建立一般 Azure 服務，並提供對 Azure 儲存體與其他 Azure 資源的存取。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: vs-azure-tools-azure-project-create.md
-            html: <p>建立並設定 Azure 雲端服務專案</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
-            title: 專案
-          - href: vs-azure-tools-debugging-cloud-services-overview.md
-            html: <p>在本機與在 Azure 中針對雲端服務進行偵錯</p>
-            image:
-              src: 'https://docs.microsoft.com//media/common/i_debug.svg'
-            title: 偵錯
-          - href: vs-azure-tools-performance-profiling-cloud-services.md
-            html: <p>使用 Visual Studio 分析工具</p>
-            image:
-              src: 'https://docs.microsoft.com//media/common/i_code-performance.svg'
-            title: 分析效能
-          - href: vs-azure-tools-publishing-a-cloud-service.md
-            html: <p>將雲端服務部署到 Azure</p>
-            image:
-              src: 'https://docs.microsoft.com//media/common/i_deploy.svg'
-            title: 部署
-          - href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-            html: <p>針對在 Azure 中執行的雲端服務與虛擬機器進行監視及診斷</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_load-testing.svg'
-            title: 診斷
-  - title: 在 Visual Studio 中使佣 Azure 資源
-    items:
-      - type: paragraph
-        text: Visual Studio 中的 Cloud Explorer 提供存取 Azure 資源 (例如儲存體帳戶與虛擬機器) 的簡便方式。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
-            html: <p>在 Visual Studio 中存取 Azure 儲存體帳戶</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_dashboard.svg'
-            title: 存放裝置
-          - href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-            html: <p>從 Visual Studio 存取虛擬機器</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_vmm-cloud.svg'
-            title: 虛擬機器
-  - title: 其他 Azure 開發資源
-    items:
-      - type: paragraph
-        text: 在已安裝 Azure 開發工作負載的情況下，Visual Studio 提供各種專案的專案範本，可讓您使用特定 Azure 服務來開發。
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/azure/azure-resource-manager/media/index/azure-resource-manager.svg'
-            text: Azure 資源群組
-            href: 'https://docs.microsoft.com/azure/azure-resource-manager/vs-azure-tools-resource-groups-deployment-projects-create-deploy'
-          - image:
-              src: 'https://docs.microsoft.com/azure/media/index/Azure-Data-Lake-Analytics-COLOR.svg'
-            text: Data Lake Analytics
-            href: 'https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started'
-          - image:
-              src: 'https://docs.microsoft.com/azure/media/index/StreamAnalytics.svg'
-            text: 串流分析
-            href: 'https://docs.microsoft.com/azure/stream-analytics/stream-analytics-quick-create-vs'
-          - image:
-              src: 'https://docs.microsoft.com/azure/media/index/Fabric.svg'
-            text: Service Fabric
-            href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started'
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: 建立並設定 Azure 雲端服務專案
+            url: vs-azure-tools-azure-project-create.md
+          - text: 在本機與在 Azure 中針對雲端服務進行偵錯
+            url: vs-azure-tools-debugging-cloud-services-overview.md
+          - text: 使用 Visual Studio 分析工具分析效能
+            url: vs-azure-tools-performance-profiling-cloud-services.md
+          - text: 將雲端服務部署到 Azure
+            url: vs-azure-tools-publishing-a-cloud-service.md
+          - text: 針對在 Azure 中執行的雲端服務與虛擬機器進行監視及診斷
+            url: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
+  - title: Cloud Explorer
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: 在 Visual Studio 中存取 Azure 儲存體帳戶
+            url: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
+          - text: 從 Visual Studio 存取虛擬機器
+            url: vs-azure-tools-virtual-machines-access-from-server-explorer.md
+  - title: 其他資源
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Azure 資源群組
+            url: /azure/azure-resource-manager/vs-azure-tools-resource-groups-deployment-projects-create-deploy
+          - text: Data Lake Analytics
+            url: /azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
+          - text: 串流分析
+            url: /azure/stream-analytics/stream-analytics-quick-create-vs
+          - text: Service Fabric
+            url: /azure/service-fabric/service-fabric-get-started

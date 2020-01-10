@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Help [Visual Studio], shortcut keys
 - keyboard shortcuts [Visual Studio], keyboard binding schemes
 - keyboard shortcuts
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda0e5895f7846a5c2aff6abef816548dd0a74a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a6d7a8de8c80f32a448753b06c86e576c9c1dec8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652490"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596277"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
@@ -472,7 +472,7 @@ ms.locfileid: "72652490"
 |Edit.RemovefromDiagram|**刪除**|
 |View.ViewCode|**Enter**|
 
-## <a name="coded-ui-test-editor"></a>自動程式碼 UI 測試編輯器
+## <a name="coded-ui-test-editor"></a>自動程式化 UI 測試編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1010,7 +1010,7 @@ ms.locfileid: "72652490"
 |-------------| - |
 |Edit.NewString|**插入**|
 
-## <a name="view-designer"></a>設計工具檢視
+## <a name="view-designer"></a>檢視表設計工具
 
 |命令|鍵盤快速鍵|
 |--------------| - |

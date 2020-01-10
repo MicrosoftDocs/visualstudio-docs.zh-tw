@@ -6,17 +6,17 @@ f1_keywords:
 - VS.XamlDesigner.CreateResource
 - VS.XamlDesigner.EditResource
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7648772c8ac1657f4c650b38d9f0fc22e8653022
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ac633f94c237bdff418375903e99f6f2da9e776
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650924"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592963"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何建立和套用資源
 
@@ -52,7 +52,7 @@ XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體
 
 1. 在 [文件大綱] 視窗中，選擇您要套用資源的項目。
 
-2. 執行下列任一步驟：
+2. 請執行下列其中一項動作：
 
    - 將資源套用至屬性。 在 [屬性] 視窗中，選擇屬性值旁邊的屬性標記，選擇 [本機資源] 或 [系統資源]，然後從出現的清單中選擇可用的資源。
 

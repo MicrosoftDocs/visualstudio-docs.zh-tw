@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, GenerateBootstrapper task
 - GenerateBootstrapper task [MSBuild]
 ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 660f63f68435f4c4eba8d1c3dfb2438541da4841
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746591"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589288"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
 提供自動化方式來偵測、下載及安裝應用程式及其必要條件。 它可用來做為單一安裝程式，針對組成應用程式的所有元件整合個別的安裝程式。
@@ -63,7 +63,7 @@ ms.locfileid: "66746591"
 
 - `BootstrapperItems`
 
-   選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。
+   選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。
 
    指定要在啟動載入器內建置的產品。 傳遞給此參數的項目應具有下列語法：
 
@@ -92,11 +92,11 @@ ms.locfileid: "66746591"
 
    指定啟動載入器用來尋找要安裝之安裝必要條件的位置。 此參數的值如下：
 
-  - `HomeSite`：表示必要條件已由元件廠商所裝載。
+  - `HomeSite`︰表示必要條件已由元件廠商所裝載。
 
-  - `Relative`：表示必要條件位於應用程式的相同位置。
+  - `Relative`︰表示必要條件位於應用程式的相同位置。
 
-  - `Absolute`：表示可在集中式 URL 中找到所有元件。 此值應該與 `ComponentsUrl` 輸入參數搭配使用。
+  - `Absolute`︰表示可在集中式 URL 中找到所有元件。 此值應該與 `ComponentsUrl` 輸入參數搭配使用。
 
     如果未指定 `ComponentsLocation`，預設會使用 `HomeSite`。
 
@@ -175,6 +175,6 @@ ms.locfileid: "66746591"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

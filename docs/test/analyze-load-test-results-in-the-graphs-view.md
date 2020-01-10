@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load tests, using graphs
 - load test results, graphs
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4efedd7fc7672331f04440f09d49b9339d90bdb2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dac639b8513e8ef675c6246476791b9351241130
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665384"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591264"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在負載測試分析器的圖形檢視中分析負載測試結果
 
@@ -45,7 +45,7 @@ ms.locfileid: "72665384"
 |頁面回應時間|負載測試期間所存取 Web 頁面的平均回應時間。|
 |待測系統|應用程式要進行測試回合的電腦資訊。 這些資訊包含記憶體使用量、處理器、實體磁碟和處理序的相關資料。<br /><br /> 根據預設，只會收集 Available Mbytes 和 Processor Time 計數器。|
 |控制器和代理程式|執行負載測試的電腦資訊。 這些資訊包含記憶體使用量、處理器、實體磁碟和處理序的相關資料。<br /><br /> 根據預設，只會收集 Available Mbytes 和 Processor Time 計數器。|
-|異動回應時間|負載測試期間所發生異動的平均回應時間。|
+|交易回應時間|負載測試期間所發生異動的平均回應時間。|
 
 您可以在執行階段或執行測試之後，在圖形上顯示不同的計數器。
 
@@ -65,14 +65,14 @@ ms.locfileid: "72665384"
 |計數器|計數器的名稱|
 |-|-|
 |執行個體|計數器執行個體的名稱。|
-|Category|計數器分類的名稱。|
+|分類|計數器分類的名稱。|
 |電腦|要收集計數器的電腦名稱。|
 |色彩|圖形中線條的色彩。|
 |Range|表示對於該計數器，圖形上的 100 所表示的數目。 舉例來說，對上限值為 10,000 的範圍而言，圖形頂端的 100 標籤即代表 10,000。|
 |最小|表示計數器的最小值 (以毫秒為單位)。|
 |Max|表示計數器的最大值 (以毫秒為單位)。|
-|平均值|表示計數器的平均值 (以毫秒為單位)。|
-|Last|顯示最近取樣間隔期間的計數器值 (以毫秒為單位)。|
+|平均|表示計數器的平均值 (以毫秒為單位)。|
+|上次|顯示最近取樣間隔期間的計數器值 (以毫秒為單位)。|
 
 ## <a name="tasks"></a>工作
 

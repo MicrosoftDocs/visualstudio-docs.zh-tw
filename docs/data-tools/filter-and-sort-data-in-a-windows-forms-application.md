@@ -14,17 +14,17 @@ helpviewer_keywords:
 - sorting datasets, using data views
 - dataset filtering, using data views
 ms.assetid: f4f100f1-776d-46dc-b2fd-5b35b98d9561
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68adaf6df9f97bee94e7cb393fa01ee133444c80
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 596397cc22cf0f0134463256c0861127dcfb81e1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648462"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586610"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>在 Windows Forms 應用程式中篩選和排序資料
 

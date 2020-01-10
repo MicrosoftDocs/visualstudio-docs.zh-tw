@@ -10,17 +10,17 @@ apitype: COM
 helpviewer_keywords:
 - StartTrackingContext
 ms.assetid: 720cd295-38e7-4974-86db-b8106b1207ba
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c395df1e08f1b4e33e9cd34fec54bdd044f3b4c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4b84753974eeecb8dca85035d50635d0bee47645
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939205"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595042"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 啟動追蹤內容。
@@ -44,4 +44,4 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  如已建立追蹤內容，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。
 
 ## <a name="requirements"></a>需求
- **標頭：** *FileTracker.h*
+ **標頭：** *FileTracker .h*

@@ -5,23 +5,23 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d1e5f07a2b68d86051452a16ac0f42fc9b9acf0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666199"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568317"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>選項、文字編輯器、HTML (Web Form)、格式
 
 使用 [格式] 選項頁面，可設定在程式碼編輯器中用於程式碼格式設定的 HTML 專案選項。 若要存取此頁面，請在功能表列上依序選擇 [工具] > [選項]，然後依序展開 [文字編輯器] > [HTML (Web Form)] > [格式]。
 
-## <a name="capitalization"></a>大小寫
+## <a name="capitalization"></a>大寫
 
 選取這些選項時，[原始碼] 檢視和 XML 編輯器會在首次建立元素時和自動格式化期間，將大小寫格式套用至元素和屬性的名稱。 [套用自動格式化] 設定會決定自動重新格式化的時機。
 

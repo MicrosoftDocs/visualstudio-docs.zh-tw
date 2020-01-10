@@ -1,5 +1,5 @@
 ---
-title: 作法：簽署應用程式與部署資訊清單
+title: 如何：簽署應用程式和部署資訊清單
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2edc0e1e63a716f5e2e649660a9b0333ec8bc923
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: fbf25301095ac5ff438514c37f61337e46342860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079361"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596160"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>作法：簽署應用程式與部署資訊清單
+# <a name="how-to-sign-application-and-deployment-manifests"></a>如何：簽署應用程式和部署資訊清單
 
 如果您想要使用 ClickOnce 部署來發行應用程式，必須搭配使用 Authenticode 技術和公開/私密金鑰組來簽署應用程式和部署資訊清單。 您可以使用 Windows 憑證存放區或金鑰檔的憑證來簽署資訊清單。
 
@@ -33,7 +33,7 @@ ms.locfileid: "71079361"
 
 針對 *.exe* 應用程式，您可以選擇是否要簽署 ClickOnce 資訊清單。 如需詳細資訊，請參閱本文件的＜產生未簽署的資訊清單＞ 一節。
 
-如需建立金鑰檔的資訊，請參閱[如何：建立公開/私密金鑰組](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)。
+如需建立金鑰檔的資訊，請參閱[如何：建立公用/私密金鑰組](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)。
 
 > [!NOTE]
 > Visual Studio 只支援副檔名為 *.pfx* 的個人資訊交換 (PFX) 金鑰檔。 不過，您可以在專案屬性的 [簽署] 頁面中，按一下 [從存放區選取]，即可從目前使用者的 Windows 憑證存放區選取其他類型的憑證。
@@ -71,7 +71,7 @@ ms.locfileid: "71079361"
 4. 輸入密碼以存取金鑰檔，然後選取 **Enter**。
 
 > [!NOTE]
-> *.pfx* 檔案不能包含憑證鏈結資訊。 如果包含，則會發生下列匯入錯誤：**找不到用來解密的憑證和私密金鑰**。 若要移除憑證連結資訊，您可以使用*certmgr.msc* ，並停用在匯出 * .pfx 檔案時**包含所有憑證**[的選項](/previous-versions/aa730868(v=vs.80))。
+> *.pfx* 檔案不能包含憑證鏈結資訊。 如果存在，將會發生下列匯入錯誤：找**不到憑證和私密金鑰進行解密**。 若要移除憑證連結資訊，您可以使用*certmgr.msc* ，並停用在匯出 * .pfx 檔案時**包含所有憑證**[的選項](/previous-versions/aa730868(v=vs.80))。
 
 ## <a name="sign-using-a-test-certificate"></a>使用測試憑證簽署
 
@@ -96,7 +96,7 @@ ms.locfileid: "71079361"
 
 2. 在 [簽署] 頁面上，清除 [簽署 ClickOnce 資訊清單] 核取方塊。
 
-3. 重設發行版本，僅讓一個版本的應用程式可供使用。 根據預設，每當您發行應用程式時，Visual Studio 就會自動遞增發行版本的修訂編號。 如需詳細資訊，請參閱[如何：設定 ClickOnce 發佈版本](../deployment/how-to-set-the-clickonce-publish-version.md)。
+3. 重設發行版本，僅讓一個版本的應用程式可供使用。 根據預設，每當您發行應用程式時，Visual Studio 就會自動遞增發行版本的修訂編號。 如需詳細資訊，請參閱[如何：設定 ClickOnce 發行版本](../deployment/how-to-set-the-clickonce-publish-version.md)。
 
 4. 發行應用程式。
 
@@ -111,7 +111,7 @@ ms.locfileid: "71079361"
 
 3. 發行應用程式。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [強式名稱的組件](/dotnet/framework/app-domains/strong-named-assemblies)
 - [如何：建立公開/私密金鑰組](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)

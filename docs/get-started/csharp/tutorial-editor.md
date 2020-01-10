@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1b5fb79430b081986764f0ee1789f68471667498
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 0cacd56ff6b3b3510505ca2752404b55a2771429
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189073"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590432"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
@@ -58,7 +58,7 @@ ms.locfileid: "73189073"
 
 ::: moniker-end
 
-2. 從功能表列上的 [檔案 **] 功能表中，選擇 [** **新增**] **[ >  檔案**]，或按**Ctrl** +**N**。
+2. 從功能表列上的 [檔案 **] 功能表中，選擇 [** **新增**] **[ > 檔案**]，或按**Ctrl**+**N**。
 
 3. 在 [新增檔案] 對話方塊的 [一般] 類別下，選擇 [Visual C# 類別]，然後選擇 [開啟]。
 
@@ -80,7 +80,7 @@ Visual Studio 提供實用的「程式碼片段」，讓您可以用來快速且
 
    您會看到在檔案中新增 `static void Main()` 方法簽章。 [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) 方法是 C# 應用程式的進入點。
 
-可用的程式碼片段會因不同的程式設計語言而異。 您可以查看語言的可用程式碼片段，方法是選擇 **編輯** ** >  IntelliSense**  > **插入程式碼片段**，或按**ctrl** +**K**， **ctrl** +**X**，然後選擇您的語言資料夾。 針對 C#，清單如下：
+可用的程式碼片段會因不同的程式設計語言而異。 您可以藉由選擇 **編輯** > **IntelliSense** > **插入程式碼片段**，或按**ctrl**+**K**， **ctrl**+**X**，然後選擇您的語言資料夾，來查看語言的可用程式碼片段。 針對 C#，清單如下：
 
 ![C# 程式碼片段清單](../media/tutorial-code-snippet-list.png)
 

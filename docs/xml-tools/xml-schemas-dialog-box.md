@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - vs.xmleditor.schemasdialog
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11743756ffd8f59520448d2687dbada6d4eaca40
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608040"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592330"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML 結構描述對話方塊
 
@@ -25,7 +25,7 @@ ms.locfileid: "72608040"
 
 ## <a name="uielement-list"></a>UIElement 清單
 
-**使用**
+**用法**
 
 選取如何使用 XML 結構描述。
 
@@ -39,11 +39,11 @@ ms.locfileid: "72608040"
 
 顯示與 XML 結構描述相關聯的目標命名空間。
 
-**檔案名**
+**檔案名稱**
 
 顯示 XML 結構描述檔案名稱。
 
-**新增**
+**[新增]**
 
 開啟 [**開啟 XSD 架構**] 對話方塊，可讓您選取要加入至架構集的其他架構。 當您將架構新增至架構集時，[**使用**] 資料行值會設定為**使用此架構**。
 

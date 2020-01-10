@@ -20,6 +20,8 @@
       href: tutorial-nodejs.md
     - name: 使用 React 建立 Node.js 應用程式
       href: tutorial-nodejs-with-react-and-jsx.md
+    - name: 使用 TypeScript 建立 ASP.NET Core 應用程式
+      href: tutorial-aspnet-with-typescript.md
     - name: 將 Node.js 應用程式發佈到 Linux App Service
       href: publish-nodejs-app-azure.md
 - name: 作法指南

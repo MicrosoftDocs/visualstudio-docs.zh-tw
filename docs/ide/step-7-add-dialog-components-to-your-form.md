@@ -10,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3ba7fd495d3ab3bdfd53752cb20d6a45d10892
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 319cfee254aa0b0f1709fa566e4e1bbca208eb9a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118905"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589951"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>步驟 7：將對話方塊元件新增至您的表單
 
-若要讓您的應用程式開啟圖片檔並選擇背景色彩，請在此步驟中， <xref:System.Windows.Forms.OpenFileDialog>將元件<xref:System.Windows.Forms.ColorDialog>和元件新增至您的表單。
+若要讓您的應用程式開啟圖片檔並選擇背景色彩，請在此步驟中，將 <xref:System.Windows.Forms.OpenFileDialog> 元件和 <xref:System.Windows.Forms.ColorDialog> 元件新增至您的表單。
 
 元件在某些方面就像控制項一樣。 您可以使用 [工具箱] 將元件新增至表單，並使用 [屬性] 視窗設定該元件的屬性。 但與控制項不同，將元件加入至表單並不會加入可讓使用者在表單上看見的項目。 相反地，只會提供可讓您透過程式碼來觸發的某些行為。 它是一個可開啟 [開啟檔案] 對話方塊的元件。
 
@@ -28,9 +28,9 @@ ms.locfileid: "71118905"
 1. 選擇 [ **Windows Form 設計工具**（**Form1.cs [Design]）]** ，然後開啟 [**工具箱**] 中的 [**對話方塊**] 群組。
 
     > [!NOTE]
-    > [工具箱] 中的 [對話方塊] 群組包含可開啟許多實用對話方塊的元件，您可用來開啟和儲存檔案、瀏覽資料夾及選擇字型和色彩。 您在本專案中會使用下列兩個對話方塊元件：OpenFileDialog 和 ColorDialog。
+    > [工具箱] 中的 [對話方塊] 群組包含可開啟許多實用對話方塊的元件，您可用來開啟和儲存檔案、瀏覽資料夾及選擇字型和色彩。 您在本專案中會使用兩個對話方塊元件：[OpenFileDialog] 和 [ColorDialog]。
 
-1. 若要將名稱為 **openFileDialog1** 的元件新增至表單，請按兩下 **OpenFileDialog**。 若要將名稱為 **colorDialog1** 的元件新增至表單，請按兩下 [工具箱] 中的 **ColorDialog**。 (您在下一個教學課程步驟中會用到該元件)。您應該會看到位於**Windows Form 設計工具**底部（在 [**圖片檢視器]** 表單下方）的區域，其中包含您新增的兩個對話方塊元件各有一個圖示，如下圖所示。
+1. 若要將名稱為 **openFileDialog1** 的元件新增至表單，請按兩下 **OpenFileDialog**。 若要將名稱為 **colorDialog1** 的元件新增至表單，請按兩下 [工具箱] 中的 **ColorDialog**。 （您可以在下一個教學課程步驟中使用該功能）。您應該會看到位於**Windows Form 設計工具**底部（在 [**圖片檢視器]** 表單下方）的區域，其中包含您新增的兩個對話方塊元件各有一個圖示，如下圖所示。
 
      ![對話方塊元件](../ide/media/express_dialogsadded.png)<br>***對話方塊****元件*
 
@@ -51,11 +51,11 @@ ms.locfileid: "71118905"
 
 ## <a name="next-steps"></a>後續步驟
 
-* 若要移至下一個教學課程步驟 **，請參閱[步驟8：為 [顯示圖片] 按鈕事件處理常式撰寫](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)程式**代碼。
+* 若要移至下一個教學課程步驟，請參閱 **[步驟8：為顯示圖片按鈕事件處理常式撰寫程式碼](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)** 。
 
-* 若要回到上一個教學課程步驟，請參閱[步驟 6：命名按鈕控制項](../ide/step-6-name-your-button-controls.md)。
+* 若要回到上一個教學課程步驟，請參閱[步驟 6：命名您的按鈕控制項](../ide/step-6-name-your-button-controls.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-* [教學課程 2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
-* [教學課程 3：建立配對遊戲](tutorial-3-create-a-matching-game.md)
+* [教學課程2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
+* [教學課程3：建立配對遊戲](tutorial-3-create-a-matching-game.md)

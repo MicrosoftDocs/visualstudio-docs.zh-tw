@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Options dialog box, development environment
 - tools [Visual Studio], customizing
 ms.assetid: 02b09877-1df1-4531-a0d1-a4ca17c7f857
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bf14fc4fec2d10f4bf7f9b8b26814680a9f42ba
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6c864a10af9ad15d47e2342bb148af464b8f2a0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666397"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591498"
 ---
 # <a name="options-dialog-box-visual-studio"></a>[選項] 對話方塊 (Visual Studio)
 

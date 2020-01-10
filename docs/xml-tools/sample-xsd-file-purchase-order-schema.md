@@ -3,17 +3,17 @@ title: 範例 XSD 檔案：採購單結構描述
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a81cae6bc91e480fb619afd647e8285b6efc410
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d841b75b58dc977b5141dce0b8c7275e4a3ced8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601801"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592564"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>範例 XSD 檔案：採購單結構描述
 
@@ -88,4 +88,4 @@ XSD 結構描述設計工具文件中的數個範例使用下列 XSD 檔案。 �
 ```
 
 > [!NOTE]
-> 此處所描述的範例公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點與事件均屬虛構。 並非影射任何真實的公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點或事件。
+> 此範例中描述的公司、組織、產品、網域名稱、電子郵件位址、標誌、人員、地點與事件均屬虛構。 並非影射任何真實的公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點或事件。

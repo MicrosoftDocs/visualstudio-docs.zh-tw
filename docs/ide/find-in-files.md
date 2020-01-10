@@ -14,17 +14,17 @@ helpviewer_keywords:
 - documents, searching
 - files, searching
 - Find in Files tab, Find and Replace window
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bc3b0d72f29e3a9c67ef9905667a0dd66f5f889
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5e1f067df647f843819e085f283005606699f3bb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652237"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595471"
 ---
 # <a name="find-in-files"></a>檔案中尋找
 
@@ -50,7 +50,7 @@ ms.locfileid: "72652237"
 > [!NOTE]
 > 只有在選取 [尋找選項] 下方的 [使用規則運算式] 時，才會啟用 [運算式產生器] 按鈕。
 
-## <a name="look-in"></a>查詢
+## <a name="look-in"></a>[查詢]
 
 [查詢] 下拉式清單中所選擇的選項，可決定 [檔案中尋找] 只會搜尋目前使用中檔案，或搜尋所有儲存在特定資料夾內的檔案。 從清單中選取搜尋範圍，或按一下 [瀏覽 (...)] 按鈕，顯示 [選擇搜尋資料夾] 對話方塊，然後輸入您本身的目錄集。 您也可以直接在 [查詢] 方塊中輸入路徑。
 

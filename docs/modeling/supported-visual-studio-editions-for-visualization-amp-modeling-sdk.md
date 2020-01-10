@@ -5,17 +5,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efe452f059d7184e1f7c87fddd6bdc6c213ece8a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 127b45ae6a0ab28d7f83ee41449d7846858ee4a9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983734"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591901"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>支援的 Visual Studio Visualization & Modeling SDK 版本
 
@@ -35,7 +35,7 @@ ms.locfileid: "72983734"
 
 ## <a name="deployment-editions"></a>部署版本
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 支援用於部署您建置之網域指定的語言的下列組態：
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 支援下列設定，用於部署您所建立的特定領域語言：
 
 - Visual Studio 企業版
 

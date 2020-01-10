@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b5a165d2f0f3c17a91775d2d37eadf32307d248
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2de2322b42be2591fa0f6cdcfc49572322dcd140
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649417"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587481"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>作法：使用程式碼分析簽入原則強制維護程式碼
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：以程式碼分析簽入原則強制維護程式碼
 
 開發人員可以使用程式碼計量工具來測量其程式碼的複雜性和可維護性，但您無法將程式碼計量當做簽入原則的一部分叫用。 不過，您可以啟用程式碼分析規則，以驗證程式代碼是否符合程式碼計量標準，並透過簽入原則強制執行規則。 如需程式碼計量的詳細資訊，請參閱程式[代碼度量值](../code-quality/code-metrics-values.md)。
 
@@ -45,19 +45,19 @@ Team Foundation 版本控制的系統管理員可以將程式碼分析維護性�
 
 2. 選取下列規則的核取方塊：
 
-   - 繼承深度：**CA1501 AvoidExcessiveInheritance** -閾值：深度超過5層的警告
+   - 繼承深度： **CA1501 AvoidExcessiveInheritance** -臨界值：深度超過5層的警告
 
-   - 複雜性：**CA1502 AvoidExcessiveComplexity** -閾值：超過25個警告
+   - 複雜度： **CA1502 AvoidExcessiveComplexity** -臨界值：警告超過25
 
-   - 可維護性索引：**CA1505 AvoidUnmaintainableCode** -閾值：警告少於20
+   - 可維護性索引： **CA1505 AvoidUnmaintainableCode** -臨界值：警告少於20
 
-   - 類別結合：**CA1506 AvoidExcessiveClassCoupling** -閾值：針對某個類別，超過80個警告，針對方法使用超過30個
+   - 類別結合： **CA1506 AvoidExcessiveClassCoupling** -臨界值：針對類別超過80的警告，針對方法使用超過30
 
      此外，如果您想要違反規則以防止組建成功，請選取規則描述旁的 [將**警告視為錯誤**] 核取方塊。
 
-3. 按一下 [確定]。 新的簽入原則現在適用于未來的簽入。
+3. 按一下 [ **確定**]。 新的簽入原則現在適用于未來的簽入。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼度量值](../code-quality/code-metrics-values.md)
 - [建立和使用程式碼分析簽入原則](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

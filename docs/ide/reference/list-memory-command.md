@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ListMemory command
 - list memory command
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bb92f3ac3420f146fdcd39b5925f7b3a517959a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748707"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568707"
 ---
 # <a name="list-memory-command"></a>列出記憶體命令
 顯示指定的記憶體範圍的內容。
@@ -31,12 +31,12 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 [/Hex|Signed|Unsigned] [expression]
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 `expression`
 
 選擇項。 要從其中開始顯示記憶體的記憶體位址。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換機
 /ANSI&#124;Unicode
 
 選擇項。 顯示對應到記憶體位元組的記憶體字元，ANSI 或 Unicode。

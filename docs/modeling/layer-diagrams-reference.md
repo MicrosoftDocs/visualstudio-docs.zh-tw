@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07cba8f8ae813ae223ef3da110a046f65c81b091
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 774716dff6562b7792c6fa885c40db2a0a133136
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984077"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594561"
 ---
 # <a name="dependency-diagrams-reference"></a>相依性圖表：參考
 
@@ -56,10 +56,10 @@ ms.locfileid: "72984077"
 
 下表描述您可以在相依性圖表上使用的元素。
 
-|**多邊形**|**目**|**說明**|
+|**多邊形**|**目**|**描述**|
 |-|-|-|
 |1|**層**|您系統中之實體成品的邏輯群組。 這些成品可以是命名空間、專案、類別、方法等等。<br /><br /> 若要查看連結到圖層的成品，請開啟圖層的快捷方式功能表，然後選擇 [**視圖連結**] 以開啟 [**分層 Explorer**]。<br /><br /> 如需詳細資訊，請參閱[Layer Explorer](#Explorer)。<br /><br /> -   **禁止的命名空間**相依性-指定與此圖層相關聯的成品不能相依于指定的命名空間。<br />-   **禁止的命名空間**-指定與此圖層相關聯的成品不得屬於指定的命名空間。<br />-   **必要的命名空間**-指定與此圖層相關聯的成品必須屬於其中一個指定的命名空間。|
-|2|**依賴性**|表示一個圖層可以使用另一個圖層的功能，但反之則不然。<br /><br /> -   **方向**-指定相依性的方向。|
+|2|**相依性**|表示一個圖層可以使用另一個圖層的功能，但反之則不然。<br /><br /> -   **方向**-指定相依性的方向。|
 |3|**雙向相依性**|表示一個圖層可以使用另一個圖層的功能，反之亦然。<br /><br /> -   **方向**-指定相依性的方向。|
 |4|**註解**|用來將一般附註加入圖表或圖表上的項目。|
 |5|**批註連結**|用來將註解連結到圖表上的項目。|
@@ -89,9 +89,9 @@ ms.locfileid: "72984077"
 > [!NOTE]
 > 如果您看不到所有這些屬性，請展開 [ **Layer Explorer** ] 視窗。
 
-|**圖層瀏覽器中的資料行**|**說明**|
+|**圖層瀏覽器中的資料行**|**描述**|
 |-|-|
-|**分類**|成品的類型，例如類別、命名空間、原始程式檔等等|
+|**類別**|成品的類型，例如類別、命名空間、原始程式檔等等|
 |**層**|連結到成品的圖層|
 |**支援驗證**|若**為 True**，則圖層驗證程式可以驗證專案是否符合此元素的相依性。<br /><br /> 如果**為 False**，則連結不會參與圖層驗證程式。<br /><br /> 如需詳細資訊，請參閱相依性[圖表：方針](../modeling/layer-diagrams-guidelines.md)。|
 |**識別碼**|連結成品的參考|

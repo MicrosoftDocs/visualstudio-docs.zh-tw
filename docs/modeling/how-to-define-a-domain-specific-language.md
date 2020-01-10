@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 00ade696290e4b8d3c32fa335fc4bf07509aef1c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985149"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594678"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要定義特定領域語言（DSL），您可以從範本建立 Visual Studio 解決方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
@@ -190,7 +190,7 @@ ms.locfileid: "72985149"
 
  按一下類別中的 [**定義域屬性**]，按下 enter 鍵，然後輸入屬性的名稱。 網域屬性的預設類型為字串。 如果您想要變更類型，請選取 [網域] 屬性，然後在 [**屬性**] 視窗中設定**型**別。 如果您想要的類型不在下拉式清單中，請參閱[加入屬性類型](#addTypes)。
 
- **設定 [元素名稱] 屬性。** 選取可用來識別語言瀏覽器中元素的網域屬性。 例如，在可以選取 Title 網域屬性的 Song 網域類別中。 在 [**屬性**] 視窗中，將 [ **Is Element Name** ] 設為 `true`。
+ **設定 [元素名稱] 屬性。** 選取可用來識別語言總管中的項目之網域屬性。 例如，在可以選取 Title 網域屬性的 Song 網域類別中。 在 [**屬性**] 視窗中，將 [ **Is Element Name** ] 設為 `true`。
 
 ### <a name="create-derived-domain-classes"></a>建立衍生的網域類別
  如果您要網域類別具有繼承其屬性和關聯性的變異，請建立從它衍生的類別。 例如，Album 可能有衍生類別 WMA 和 MP3。
@@ -344,7 +344,7 @@ ms.locfileid: "72985149"
 
  視需要**調整每個角色的多重性**。 如果您要每一位人員最多有一位上司，請將顯示在圖表上 Manager 標籤下方的多重性設為 0..1。
 
- **將網域屬性加入至關聯性。** 在圖中，演出者專輯關聯性具有 [角色] 的屬性。
+ **將網域屬性加入至關聯性。** 在此圖中，Artist-Album 關聯性具有角色屬性。
 
  **設定關聯性的 [允許重複專案] 屬性（** 如果同一個類別的多個連結可以存在於同一對模型專案之間）。 例如，您可以允許老師向同一位學生教授多個科目。
 
@@ -396,7 +396,7 @@ ms.locfileid: "72985149"
 
 5. **建立**圖形之間的連接。 按一下連接器工具，按一下圖形，然後按一下另一個圖形。
 
-6. **確認您無法在不適當的類別之間建立連接。** 例如，如果您的關聯性介於專輯和演出者之間，請確認您無法將演出者連結至演出者。
+6. **確認您無法在不適當的類別之間建立連接。** 如果您的關聯性介於 Album 與 Artist 之間，請確認您無法將 Artist 連結到 Artist。
 
 7. **請確認多重性是否正確。例如，請確認您無法將人員連接到多個經理。**
 
@@ -606,7 +606,7 @@ ms.locfileid: "72985149"
 
  另請參閱 how [to：變更特定領域語言的命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。
 
-## <a name="trouble"></a>疑難排解
+## <a name="trouble"></a> 疑難排解
  下表列出在設計 DSL 時會遇到的一些最常見的問題，以及對其方案的建議事項。 [視覺效果工具](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)擴充性論壇提供更多的建議。
 
 | 問題 | 建議 |

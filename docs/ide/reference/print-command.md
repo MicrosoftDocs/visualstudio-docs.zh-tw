@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Print method
 - Print command
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae87afb11be71af8f0582a0b2899d67ba970186e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747815"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567836"
 ---
 # <a name="print-command"></a>Print 命令
 
@@ -31,7 +31,7 @@ ms.locfileid: "72747815"
 >Debug.Print text
 ```
 
-## <a name="arguments"></a>引數
+## <a name="arguments"></a>Arguments
 
 `text`
 

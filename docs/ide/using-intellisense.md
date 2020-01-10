@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Complete word
 - List members
 - IntelliSense [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011542bc45680f6fb5b7bd2b83283605922189ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34e038256d46909e135f8285cb1b3edc45d0ba3e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647362"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565340"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 Intellisense
 
@@ -83,13 +83,13 @@ IntelliSense 選項預設為開啟。 若要關閉它們，請選擇 [工具] > 
 ## <a name="intellisense-icons"></a>IntelliSense 圖示
 IntelliSense 中的圖示可以搭配圖示修飾詞來傳達其他意義。 這些是在物件圖示頂端的階層式星形、心形和鎖定圖示，可分別傳達受保護、內部或私人等意義。
 
-|    圖示    |    Accessibility    |    描述    |
+|    圖示    |    協助工具    |    描述    |
 |------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![公用圖示修飾詞](../ide/media/intellisensePublicNoModifier.png)       |    公用類別    |    未限制存取。   |
 | ![受保護圖示修飾詞](../ide/media/intellisenseProtectedModifier.png)       |    受保護的類別    |    存取限於包含類別或衍生自包含類別的類型。    |
 | ![受保護內部圖示修飾詞](../ide/media/intellisenseProtectedInternalModifier.png)       |    受保護內部類別    |    存取限於目前組件或衍生自包含類別的類型。    |
 | ![內部圖示修飾詞](../ide/media/intellisenseInternalModifier.png)       |    內部類別    |    存取限於目前組件。    |
-|![私人圖示修飾詞](../ide/media/intellisensePrivateModifier.png)        |    私用類別    |    存取限於目前組件內包含類別或衍生自包含類別的類型。 (自 C# 7.2 起可用。)    |
+|![私人圖示修飾詞](../ide/media/intellisensePrivateModifier.png)        |    私人類別    |    存取限於目前組件內包含類別或衍生自包含類別的類型。 (自 C# 7.2 起可用。)    |
 
 ## <a name="troubleshoot-intellisense"></a>針對 IntelliSense 進行疑難排解
 

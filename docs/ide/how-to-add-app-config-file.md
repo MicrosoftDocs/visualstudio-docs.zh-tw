@@ -6,17 +6,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - app.config files, adding to C# projects
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48e6516b48b524c3da4d80bc5171608ac1aea03d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3eb813dc5d4389b002851a904d61219b0d5c316e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654268"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593638"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>如何：將應用程式組態檔新增至 C# 專案
 

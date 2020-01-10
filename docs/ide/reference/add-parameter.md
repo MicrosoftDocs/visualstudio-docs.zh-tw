@@ -2,17 +2,17 @@
 title: 將參數新增至方法的快速動作
 ms.date: 09/28/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1edc9d38ff4476a9fe76886676bfce1c80a61db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6720421fd5188688214665d85de682542b1c1357
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658794"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595861"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>使用快速動作將參數新增至方法
 
@@ -28,7 +28,7 @@ ms.locfileid: "72658794"
 
 **原因：** 您可以在呼叫參數之前，將參數新增至方法宣告中，但是此功能會根據方法呼叫自動新增參數。
 
-## <a name="how-to-use-it"></a>如何使用
+## <a name="how-to-use-it"></a>使用方式
 
 1. 為方法呼叫新增額外的引數。
 

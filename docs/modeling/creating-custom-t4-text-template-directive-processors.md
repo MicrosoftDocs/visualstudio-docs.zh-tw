@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 836e2c24d9f236c7b87dfff60b934221b7645f1b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c70aa1853701ef671b7057ad698a0fb63334a1ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654074"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597174"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器
 
@@ -22,7 +22,7 @@ ms.locfileid: "72654074"
 
 若要建立自訂指示詞處理器，您可以建立繼承 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 或 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 的類別。
 
-這兩者的差異在於，<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 會執行從使用者取得參數所需的最小介面，並產生產生範本輸出檔的程式碼。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 會執行需要/提供設計模式。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 會處理兩個特殊參數，`requires` 和 `provides`。  例如，自訂指示詞處理器可能會接受使用者提供的檔案名、開啟和讀取檔案，然後將檔案的文字儲存在名為 `fileText` 的變數中。 @No__t_0 類別的子類別可能會將使用者的檔案名當做 `requires` 參數的值，以及用來儲存文字做為 `provides` 參數值的變數名稱。 此處理器會開啟並讀取檔案，然後將檔案的文字儲存在指定的變數中。
+這兩者的差異在於，<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 會執行從使用者取得參數所需的最小介面，並產生產生範本輸出檔的程式碼。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 會執行需要/提供設計模式。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 會處理兩個特殊參數，`requires` 和 `provides`。  例如，自訂指示詞處理器可能會接受使用者提供的檔案名、開啟和讀取檔案，然後將檔案的文字儲存在名為 `fileText`的變數中。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 類別的子類別可能會將使用者的檔案名當做 `requires` 參數的值，以及用來儲存文字做為 `provides` 參數值的變數名稱。 此處理器會開啟並讀取檔案，然後將檔案的文字儲存在指定的變數中。
 
 在 Visual Studio 的文字模板中呼叫自訂指示詞處理器之前，您必須先註冊它。
 
@@ -46,7 +46,7 @@ ms.locfileid: "72654074"
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>自訂指示詞處理器的主體部分
 
-若要開發指示詞處理器，您必須建立繼承自 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 或 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 的類別。
+若要開發指示詞處理器，您必須建立繼承自 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 或 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>的類別。
 
 您必須執行的最重要 `DirectiveProcessor` 方法如下所示。
 

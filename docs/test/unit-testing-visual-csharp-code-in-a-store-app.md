@@ -2,17 +2,17 @@
 title: 對 Visual C# 程式碼進行單元測試
 ms.date: 09/27/2019
 ms.topic: conceptual
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 309cf408167cc463db8cde9e39d5c0fe4dbe26d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659836"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590861"
 ---
 # <a name="unit-test-c-code"></a>對 C# 程式碼進行單元測試
 
@@ -24,7 +24,7 @@ ms.locfileid: "72659836"
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>建立方案和單元測試專案
 
-1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
+1. 在 [檔案] 功能表上，依序選擇 [新增] 和 [專案] > 。
 
 2. 搜尋並選取 [空白應用程式 (通用 Windows)] 專案範本。
 
@@ -48,7 +48,7 @@ ms.locfileid: "72659836"
    }
    ```
 
-   @No__t_0 類別提供數個靜態方法，可讓您用來驗證測試方法中的結果。
+   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> 類別提供數個靜態方法，可讓您用來驗證測試方法中的結果。
 
 ::: moniker range="vs-2017"
 
@@ -150,9 +150,9 @@ ms.locfileid: "72659836"
 
 ::: moniker-end
 
-您已設定測試和應用程式專案，並確認您可以執行可在應用程式專案中呼叫函式的測試。 現在您可以開始撰寫真正的測試和程式碼。
+您已設定測試和應用程式專案，並確認您可以執行可在應用程式專案中呼叫函式的測試。 現在您可以開始撰寫實際的測試和程式碼。
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a>反覆擴大測試範圍並使其通過
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a>反覆擴大測試範圍並讓測試成功
 
 1. 新增名為**RangeTest**的新測試：
 
@@ -172,14 +172,14 @@ ms.locfileid: "72659836"
    ```
 
    > [!TIP]
-   > 建議您不要變更已通過的測試。 請改為加入新的測試。
+   > 建議您不要變更成功的測試。 請改為加入新的測試。
 
 2. 執行**RangeTest**測試並確認它失敗。
 
    ![RangeTest 失敗](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
    > [!TIP]
-   > 在您撰寫測試之後，請立即執行它來確認它是否失敗。 這樣有助於避免撰寫永遠不會失敗的測試這種易犯的錯誤。
+   > 在您撰寫測試之後，請立即執行它來確認它是否失敗。 這有助於避免犯下撰寫永遠不會失敗的測試這種簡單的錯誤。
 
 3. 透過測試強化程式碼，讓新的測試都成功。 將*Rooter.cs*中的**SquareRoot**函數變更為：
 
@@ -213,7 +213,7 @@ ms.locfileid: "72659836"
    現在三項測試都會成功。
 
 > [!TIP]
-> 開發程式碼時，一次加入一個測試。 確定所有測試在每次反覆之後都通過。
+> 藉由一次加入一項測試的方式開發程式碼。 確定在每次反覆運算後，所有測試都成功。
 
 ## <a name="refactor-the-code"></a>重構程式碼
 

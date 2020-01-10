@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c2386b7a7472f6b80457a5a803f6dfe886cc1d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658327"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595887"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>覆寫及擴充產生的類別
 
@@ -28,7 +28,7 @@ ms.locfileid: "72658327"
 
 部分類別定義可讓您在一個以上的位置定義類別。 這可讓您將所產生的程式碼與您自行撰寫的程式碼分開。 在您手動撰寫的程式碼中，您可以覆寫產生的程式碼所繼承的類別。
 
-例如，如果您在 DSL 定義中定義名為 `Book` 的網域類別，您可以撰寫自訂程式碼來新增覆寫方法：
+例如，如果您在 DSL 定義中定義名為 `Book`的網域類別，您可以撰寫自訂程式碼來新增覆寫方法：
 
 ```csharp
 public partial class Book

@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c8c1c2d5dd2b3ec656a774c10f8bb50ca556a39f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5e32faa4525edc79da3d759d67ad2b5676f38fc2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653643"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589138"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>如何：建立錄製器外掛程式
 
@@ -99,7 +99,7 @@ ms.locfileid: "72653643"
     > [!WARNING]
     > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
-    > **要求失敗： \<plug in > 事件中發生例外狀況：無法載入檔案或元件 ' \< "外掛程式名稱" .dll 檔案 >，Version = \<n. n. n >，Culture = 中性，PublicKeyToken = null ' 或它的其中一個相依性。系統找不到指定的檔案。**
+    > **要求失敗： \<外掛程式 > 事件中發生例外狀況：無法載入檔案或元件 '\<"外掛程式名稱" .dll 檔案 >，版本 =\<n. n. n. n. n. n. n. n >，Culture = 中性，PublicKeyToken = null ' 或它的其中一個相依性。系統找不到指定的檔案。**
     >
     > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)** ，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
     >

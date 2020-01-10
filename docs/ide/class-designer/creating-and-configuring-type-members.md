@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Class Details window
 - Class Details window, member creation
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a842ccb936c755a27ab28287f9da8d6355e92fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfed51812b034d63f250a56548b88f09a98214fe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647746"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590406"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在類別設計工具中建立及設定類型成員
 
@@ -42,12 +42,12 @@ ms.locfileid: "72647746"
 
 |**Type**|**可以包含的成員**|
 |--------------| - |
-|執行個體|方法、屬性 (針對 C# 和 Visual Basic)、欄位、事件 (針對 C# 和 Visual Basic)、建構函式 (方法)、解構函式 (方法)、常數|
-|列舉|成員|
+|類別|方法、屬性 (針對 C# 和 Visual Basic)、欄位、事件 (針對 C# 和 Visual Basic)、建構函式 (方法)、解構函式 (方法)、常數|
+|Enum|成員|
 |介面|方法、屬性、事件 (針對 C# 和 Visual Basic)|
 |抽象類別|方法、屬性 (針對 C# 和 Visual Basic)、欄位、事件 (針對 C# 和 Visual Basic)、建構函式 (方法)、解構函式 (方法)、常數|
 |結構 (Structure) (C# 中的結構 (Struct))|方法、屬性 (針對 C# 和 Visual Basic)、欄位、事件 (針對 C# 和 Visual Basic)、建構函式 (方法)、常數|
-|Delegate - 委派|參數 (parameter)|
+|Delegate - 委派|參數|
 |模組 (僅限 VB)|方法、屬性、欄位、事件、建構函式、常數|
 
 > [!NOTE]
@@ -186,7 +186,7 @@ ms.locfileid: "72647746"
 
 參數列包含下列項目：
 
-- **名稱**
+- **Name**
 
      參數列的 [名稱] 欄會顯示參數的名稱。 這個名稱也會顯示於 [屬性] 視窗的 [名稱] 屬性中。 如果您具備任何參數的讀寫權限，可以使用這個儲存格來變更參數名稱。
 

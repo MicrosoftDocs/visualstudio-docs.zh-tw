@@ -3,17 +3,17 @@ title: O/R 設計工具概觀
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c02dbc42d629385671403de7131b27a449313591
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1d60f2fd2fdaa239ea9528caa6d39424ad2b85c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648289"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586389"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Visual Studio 中的 LINQ to SQL 工具
 
@@ -27,7 +27,7 @@ LINQ to SQL 是 Microsoft 所發行的第一個物件關聯式對應技術。 �
 
 ## <a name="open-the-or-designer"></a>開啟 O/R 設計工具
 
-若要將 LINQ to SQL 實體模型加入至您的專案，請選擇 [**專案**]  >  [**加入新專案**]，然後從專案專案清單中選取 [ **LINQ to SQL 類別**]：
+若要將 LINQ to SQL 實體模型加入至您的專案，請選擇 [**專案**] > [**加入新專案**]，然後從專案專案清單中選取 [ **LINQ to SQL 類別**]：
 
 ![LINQ to SQL 類別](../data-tools/media/raddata-linq-to-sql-classes.png)
 
@@ -48,11 +48,11 @@ Visual Studio 會建立 *.dbml*檔案，並將它新增至您的方案。 這是
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>建立對應至資料庫資料表和視圖的實體類別
 
-您可以藉由將資料庫資料表和 views 從**伺服器總管**或**資料庫總管**拖曳至**O/R 設計**工具，來建立對應至資料表和視圖的實體類別。 如先前章節所示，第一個拖曳至設計介面之項目所提供的連接資訊會用於設定 <xref:System.Data.Linq.DataContext>。 如果在**O/R 設計**工具中加入了使用不同連接的後續專案，您可以變更 <xref:System.Data.Linq.DataContext> 的連接。 如需詳細資訊，請參閱[如何：建立對應至資料表和視圖的 LINQ to SQL 類別（O/R 設計工具）](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)。
+您可以藉由將資料庫資料表和 views 從**伺服器總管**或**資料庫總管**拖曳至**O/R 設計**工具，來建立對應至資料表和視圖的實體類別。 如先前章節所示，第一個拖曳至設計介面之項目所提供的連接資訊會用於設定 <xref:System.Data.Linq.DataContext>。 如果在**O/R 設計**工具中加入了使用不同連接的後續專案，您可以變更 <xref:System.Data.Linq.DataContext>的連接。 如需詳細資訊，請參閱[如何：建立對應至資料表和視圖的 LINQ to SQL 類別（O/R 設計工具）](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)。
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>建立可呼叫預存程式和函式的 DataCoNtext 方法
 
-您可以將它們從**伺服器總管**或**資料庫總管**拖曳至**O/R 設計**工具，以建立呼叫（對應至）預存程式和函式的 <xref:System.Data.Linq.DataContext> 方法。 預存程式和函式會加入至**O/R 設計**工具做為 <xref:System.Data.Linq.DataContext> 的方法。
+您可以將它們從**伺服器總管**或**資料庫總管**拖曳至**O/R 設計**工具，以建立呼叫（對應至）預存程式和函式的 <xref:System.Data.Linq.DataContext> 方法。 預存程式和函式會加入至**O/R 設計**工具做為 <xref:System.Data.Linq.DataContext>的方法。
 
 > [!NOTE]
 > 當您將預存程式和函式從**伺服器總管**或**資料庫總管**拖曳至**O/R 設計**工具時，所產生 <xref:System.Data.Linq.DataContext> 方法的傳回型別會根據您放置專案的位置而有所不同。 如需詳細資訊，請參閱[DataCoNtext 方法（O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)。
@@ -71,7 +71,7 @@ Visual Studio 會建立 *.dbml*檔案，並將它新增至您的方案。 這是
 
 ## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>將產生的 DataCoNtext 和實體類別程式碼分隔為不同的命名空間
 
-**O/R 設計**工具會在 <xref:System.Data.Linq.DataContext> 上提供**內容命名空間**和**實體命名空間**屬性。 這些屬性會決定 <xref:System.Data.Linq.DataContext> 和實體類別程式碼產生時，會落在哪一個命名空間 (Namespace) 中。 根據預設，這些屬性是空的，而且 <xref:System.Data.Linq.DataContext> 和實體類別產生時，會落在應用程式的命名空間中。 產生程式碼時，如果希望使用其他的命名空間，而非應用程式的命名空間，請在 [內容命名空間] 和/或 [實體命名空間] 屬性中輸入值。
+**O/R 設計**工具會在 <xref:System.Data.Linq.DataContext>上提供**內容命名空間**和**實體命名空間**屬性。 這些屬性會決定 <xref:System.Data.Linq.DataContext> 和實體類別程式碼產生時，會落在哪一個命名空間 (Namespace) 中。 根據預設，這些屬性是空的，而且 <xref:System.Data.Linq.DataContext> 和實體類別產生時，會落在應用程式的命名空間中。 產生程式碼時，如果希望使用其他的命名空間，而非應用程式的命名空間，請在 [內容命名空間] 和/或 [實體命名空間] 屬性中輸入值。
 
 ## <a name="reference-content"></a>參考內容
 

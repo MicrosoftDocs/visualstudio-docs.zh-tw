@@ -6,15 +6,15 @@ helpviewer_keywords:
 - template parameters
 - template parameters, substituting
 - Visual Studio templates, using parameters
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 09d86c52fcd9ddce3c986e0bfa6c9c96f746c663
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ddfe065d30b958e52e22f30f946d01d626fcf0e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656570"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591407"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>如何：替代範本中的參數
 
@@ -26,7 +26,7 @@ ms.locfileid: "72656570"
 
 ## <a name="example---namespace-name"></a>範例 - 命名空間名稱
 
-1. 在範本的一或多個程式碼檔案中，插入參數。 例如:
+1. 在範本的一或多個程式碼檔案中，插入參數。 例如：
 
     ```csharp
     namespace $safeprojectname$

@@ -2,26 +2,26 @@
 title: 解除安裝 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步解除安裝 Visual Studio。
-ms.date: 07/31/2019
+ms.date: 12/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - uninstall
 - uninstall Visual Studio
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d15a20adeb3203687e4d940635551c33774953a5
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: a895d9a94ada22ecce340488c6ba00662a599969
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74809677"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594470"
 ---
 # <a name="uninstall-visual-studio"></a>解除安裝 Visual Studio
 
@@ -98,10 +98,13 @@ Visual Studio 是我們提供給開發人員的整合式生產力工具套件，
 
 ::: moniker-end
 
+## <a name="remove-all-files"></a>移除所有檔案
+
+如果您遇到嚴重錯誤，而且無法使用先前的指示來卸載 Visual Studio，就會有「最後手段」選項，您可以考慮改為使用。 如需有關如何完全移除所有 Visual Studio 安裝檔案和產品資訊的詳細資訊，請參閱[移除 Visual Studio](remove-visual-studio.md)頁面。
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>請參閱
 
 * [修改 Visual Studio](modify-visual-studio.md)
 * [更新 Visual Studio](update-visual-studio.md)
-* [解除安裝 Visual Studio for Mac](/visualstudio/mac/uninstall)

@@ -3,17 +3,17 @@ title: XML 架構設計工具：使用圖表視圖取得架構集總覽
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8acc2ff6a41f7057818c4a7659f2aa9d07c8bac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f066bc96cd5acf314150def2e40ec3064d154b8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651171"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592668"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>如何：使用圖表視圖取得架構集的總覽
 

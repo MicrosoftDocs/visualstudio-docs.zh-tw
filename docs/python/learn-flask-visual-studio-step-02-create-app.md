@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1786c8c57c841744ed27b03e4969fe2bd21ce2c7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985199"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678957"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本來建立 Flask 應用程式
 
@@ -204,10 +204,6 @@ ms.locfileid: "72985199"
 回答：頁面範本檔案的 *.html* 副檔名完全是選擇性的，因為您一律是在 `render_template` 函式的第一個引數中識別檔案的確切相對路徑。 不過，Visual Studio (與其他編輯器) 通常會針對 *.html* 檔案為您提供程式碼完成和語法色彩等功能，其重要性超過頁面範本不一定是 HTML 的事實。
 
 實際上，當您在處理 Flask 專案時，Visual Studio 會自動偵測出您正在編輯的 HTML 檔案實際上是 Flask 範本，然後提供一些自動完成功能。 例如，當您開始鍵入 Flask 頁面範本註解 (`{#`) 時，Visual Studio 會自動提供結尾的 `#}` 字元。 [註解選取範圍] 與 [取消註解選取範圍] 命令 (位在 [編輯] > [進階] 功能表和工具列上) 也會使用範本註解，而不是 HTML 註解。
-
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>問題：當我執行專案時，看到找不到範本的錯誤。 出了什麼問題？
-
-回答：如果您看到找不到範本的錯誤，請確定已將應用程式新增至 Flask 專案位於 `INSTALLED_APPS` 清單的 *settings.py* 中。 若沒有該項目，Flask 就不知道要查看應用程式的 *templates* 資料夾。
 
 ### <a name="question-can-templates-be-organized-into-further-subfolders"></a>問題：是否可以將範本組織成進一步的子資料夾？
 

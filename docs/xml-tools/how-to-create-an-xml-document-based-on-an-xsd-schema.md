@@ -1,21 +1,21 @@
 ---
-title: 作法：根據 XSD 結構描述建立 XML 文件
+title: HOW TO：根據 XSD 結構描述建立 XML 文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f423af7dc4fae7a116acbaf8497c5ee4268653e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3139df600654513912abeae64c1ef2980493574d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645981"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592798"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>作法：根據 XSD 結構描述建立 XML 文件
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何：根據 XSD 架構建立 XML 檔
 
 [**產生範例 xml** ] 功能會根據 XML 架構（XSD）檔案產生範例 xml 檔。
 
@@ -35,13 +35,13 @@ ms.locfileid: "72645981"
 
 - `xs:QName` 型別的列舉型別 (Enumeration)。
 
-- `xs:ENTITY`、`xs:ENTITIES` 和 `xs:NOTATION` 類型。
+- `xs:ENTITY`、`xs:ENTITIES`和 `xs:NOTATION` 類型。
 
 此外，請注意，只有當列舉型別出現在 `xs:base64Binary` 的結構描述時，系統才會產生該型別的內容。
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>根據 XSD 檔案產生 XML 執行個體文件
 
-1. 依照 [How 中的步驟執行：建立和編輯 XSD 架構檔案 ](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
+1. 請依照[如何：建立和編輯 XSD 架構](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)檔案中的步驟執行。
 
 2. 在 [ [XML 架構瀏覽器](../xml-tools/xml-schema-explorer.md)] 中，以滑鼠右鍵按一下 `PurchaseOrder` 的全域元素。 選取 [**產生範例 XML**]。
 

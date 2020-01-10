@@ -4,17 +4,17 @@ description: 本文描述 Visual Studio 如何透過一些基本方法來協助�
 ms.date: 05/02/2018
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0be3965ea8343317cf570ae752109b50fa80dd4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e66d0d1ed8115b214b1da1654cbefdc96f7d1774
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650859"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588612"
 ---
 # <a name="make-code-work-in-visual-studio"></a>讓程式碼在 Visual Studio 中運作
 
@@ -160,7 +160,7 @@ Visual Studio 會透過編輯器底部的 [程式**代碼清除**] 按鈕，提�
 
 ## <a name="run-unit-tests"></a>執行單元測試
 
-單元測試是您對抗程式碼 Bug 的第一道防線；因為正確完成時，它們會測試單一的程式碼「單元」，一般是單一函式，而且比完整的程式更容易偵錯。 Visual Studio 會安裝 Managed 和原生程式碼的 Microsoft 單元測試架構。 請使用單元測試架構來建立並執行單元測試，然後報告這些測試的結果。 當您進行變更來測試程式碼是否仍正常運作時，請重新執行單元測試。 使用 Visual Studio Enterprise 版本，您可以在每次建置後自動執行測試。
+單元測試是您對抗程式碼 Bug 的第一道防線；因為正確完成時，它們會測試單一的程式碼「單元」，一般是單一函式，而且比完整的程式更容易偵錯。 Visual Studio 會安裝 Managed 和原生程式碼的 Microsoft 單元測試架構。 請使用「單元測試架構」(Unit Testing Framework) 來建立單元測試並加以執行，然後報告這些測試的結果。 當您進行變更來測試程式碼是否仍正常運作時，請重新執行單元測試。 使用 Visual Studio Enterprise 版本，您可以在每次建置後自動執行測試。
 
 若要開始使用，請參閱[使用 IntelliTest 為程式碼產生單元測試](../test/generate-unit-tests-for-your-code-with-intellitest.md)。
 
@@ -170,4 +170,4 @@ Visual Studio 會透過編輯器底部的 [程式**代碼清除**] 按鈕，提�
 
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [深入了解使用偵錯工具](../debugger/index.yml)
-- [產生及修正程式碼](../ide/code-generation-in-visual-studio.md)
+- [產生及修正程式嗎](../ide/code-generation-in-visual-studio.md)

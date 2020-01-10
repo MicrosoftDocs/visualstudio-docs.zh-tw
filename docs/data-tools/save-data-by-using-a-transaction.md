@@ -11,17 +11,17 @@ helpviewer_keywords:
 - transactions, saving data
 - data [Visual Studio], saving
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cfb03944743609d20d14f6104e5fadd529a5cfa6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: beadb43d7eed78f04fc60ce1307045e9badac205
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641316"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586272"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>如何：使用交易儲存資料
 
@@ -37,7 +37,7 @@ ms.locfileid: "72641316"
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>若要加入對 System.web 的參考
 
-1. 在 [**專案**] 功能表上，選取 [**加入參考**]。
+1. 在 [專案] 功能表上，選取 [新增參考]。
 
 2. 在  **.net**  索引標籤（SQL Server 專案的**SQL Server**  索引標籤）上，選取 **系統**，然後選取**確定**。
 

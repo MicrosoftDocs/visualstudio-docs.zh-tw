@@ -7,17 +7,17 @@ helpviewer_keywords:
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26629ed099eea9a1d0c73a2eaa1105525d05dcf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3fbcbbfd52e4715dc6ee063ae0bae905eb3e65a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649464"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587520"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自訂程式碼分析字典
 
@@ -241,7 +241,7 @@ ms.locfileid: "72649464"
 
 ### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>字典/縮寫/CasingExceptions/縮略字
 
-若要在程式碼分析識別為正確拼寫的詞彙清單中包含縮略字，並指出複合單字的大小寫規則檢查字詞時的縮寫，請新增詞彙做為字典/縮寫/CasingExceptions/的內部文字。縮寫元素。 字典/縮略字/CasingExceptions/縮略字元素中的縮寫會區分大小寫。
+若要在程式碼分析識別為正確拼寫的字詞清單中包含縮略字，並指出複合單字的大小寫規則檢查字詞時的縮寫，請新增詞彙做為字典/縮寫/CasingExceptions/縮寫元素的內部文字。 字典/縮略字/CasingExceptions/縮略字元素中的縮寫會區分大小寫。
 
 **範例**
 

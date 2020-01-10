@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2004f11cac6d3ae44fdc61745c9e8cbab231f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631110"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585427"
 ---
 # <a name="code-snippets-schema-reference"></a>程式碼片段結構描述參考
 
@@ -58,7 +58,7 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
 
 需要文字值。 此文字會指定程式碼片段的作者。
 
-## <a name="code-element"></a>程式碼項目
+## <a name="code-element"></a>程式碼元素
 
 提供簡短程式碼區塊的容器。
 
@@ -110,7 +110,7 @@ $selected$ is a great color. I love $selected$.
 
 - **Language** - _Required_ 屬性，指定程式碼片段的語言。 值可以是下列其中一項：
 
-   |值|描述|
+   |{2&gt;值&lt;2}|描述|
    |-----|-----------|
    |`VB`|識別 Visual Basic 程式碼片段。|
    |`CSharp`|識別 C# 程式碼片段。|
@@ -123,7 +123,7 @@ $selected$ is a great color. I love $selected$.
 
 - **類型** - _選擇性_ 屬性，它指定程式碼片段包含的程式碼類型。 值可以是下列其中一項：
 
-   |值|描述|
+   |{2&gt;值&lt;2}|描述|
    |-----|-----------|
    |`method body`|指定程式碼片段為方法主體，因此必須在方法宣告中插入。|
    |`method decl`|指定程式碼片段為方法，因此必須在類別或模組中插入。|
@@ -503,10 +503,10 @@ $selected$ is a great color. I love $selected$.
 
 ## <a name="shortcut-element"></a>Shortcut 元素
 
-指定用來插入程式碼片段的捷徑文字。 `Shortcut` 項目的文字值只能包含英數字元、短破折號 ( - ) 及底線 ( _ )。
+指定用來插入程式碼片段的捷徑文字。 `Shortcut` 元素的文字值只能包含英數位元和底線（_）。
 
 > [!CAUTION]
-> C++ 程式碼片段捷徑不支援 _ 和 - 字元。
+> 程式碼片段快捷方式中C++不支援底線（_）字元。
 
 ```xml
 <Shortcut>
@@ -618,7 +618,7 @@ $selected$ is a great color. I love $selected$.
 
 需要文字值。 此文字會指定要與程式碼片段中的物件或常值相關聯的工具提示描述。
 
-## <a name="type-element"></a>Type 項目
+## <a name="type-element"></a>Type 元素
 
 指定物件類型。 `Object` 項目是用以識別程式碼片段所需的項目，但有可能定義在程式碼片段本身的外面。 例如，Windows Form 控制項、ASP.NET 控制項、物件執行個體以及類型執行個體應該宣告為物件。 物件宣告需要指定類型，可透過 `Type` 項目指定。
 
@@ -632,7 +632,7 @@ $selected$ is a great color. I love $selected$.
 | - |-----------------|
 |[Object 項目](../ide/code-snippets-schema-reference.md#object-element)|定義您可以編輯之程式碼片段的物件欄位。|
 
-需要文字值。 此文字會指定物件的類型。 例如:
+需要文字值。 此文字會指定物件的類型。 例如：
 
 ```xml
 <Type>System.Data.SqlClient.SqlConnection</Type>

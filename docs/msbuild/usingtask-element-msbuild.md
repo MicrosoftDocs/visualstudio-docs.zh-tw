@@ -13,17 +13,17 @@ helpviewer_keywords:
 - UsingTask element [MSBuild]
 - <UsingTask> element [MSBuild]
 ms.assetid: 20247902-9446-4a1f-8253-5c7a17e4fe43
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8341a83443855f2fd90d7f5a742251fa54fc4890
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: 7bd62738a89b38adb6cd01d6a33d661e95144d34
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962907"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565262"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 元素 (MSBuild)
 將 [Task](../msbuild/task-element-msbuild.md) 元素中參考的工作對應至包含工作實作的組件。
@@ -40,7 +40,7 @@ ms.locfileid: "71962907"
 ```
 
 > [!NOTE]
-> 與屬性和專案不同的是，將會使用適用于 `TaskName` 的*第一個*`UsingTask` 元素。若要覆寫工作，您必須在現有的 `UsingTask`*之前*定義新的。
+> 與屬性和專案不同的是，將會使用套用至 `TaskName` 的*第一個*`UsingTask` 元素。若要覆寫工作，您必須在現有的 `UsingTask`*之前*定義新的。
 
 ## <a name="attributes-and-elements"></a>屬性和元素
  下列章節說明屬性、子元素和父元素。
@@ -57,16 +57,16 @@ ms.locfileid: "71962907"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|在指定的 `TaskFactory` 產生之工作上顯示的參數集。|
 |[Task](../msbuild/task-element-msbuild.md)|傳遞至 `TaskFactory` 以產生工作之執行個體的資料。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 描述 |
+| 項目 | 描述 |
 | - | - |
-| [專案](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
+| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
 
 ## <a name="remarks"></a>備註
  您可以在專案檔所包含 (直接包含或透過匯入的專案檔來包含) 的 `UsingTask` 元素中，參考環境變數、命令列屬性、專案層級屬性及專案層級項目。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
@@ -100,7 +100,7 @@ ms.locfileid: "71962907"
               AssemblyFile="c:\myTasks\myTask.dll" />
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

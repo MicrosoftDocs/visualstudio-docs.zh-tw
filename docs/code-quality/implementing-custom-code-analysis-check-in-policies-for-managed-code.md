@@ -7,17 +7,17 @@ f1_keywords:
 - vs.code.analysis.browsefortfsruleset
 - vs.code.analysis.policyeditor
 ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c45453af0e7736a10cba8b5bb98ef75429427e2a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9386d89ce995131bdb89f94201fa8475058ddba0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649320"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587390"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>為受控碼實作自訂程式碼分析簽入原則
 
@@ -46,7 +46,7 @@ ms.locfileid: "72649320"
 
 ### <a name="to-create-the-check-in-policy-rule-set"></a>若要建立簽入原則規則集
 
-1. **在 [檔案**] 功能表上，指向 [**新增**]，**然後按一下 [** 檔案]。
+1. 在 [ **檔案** ] 功能表上，指向 [ **新增**]，然後按一下 [ **檔案**]。
 
 2. 在 [**類別**] 清單中，按一下 **[一般**]。
 
@@ -79,7 +79,7 @@ ms.locfileid: "72649320"
 
 3. 在 [**簽入原則**] 清單中，按兩下 [程式**代碼分析**]，並確定已選取 [**針對 Managed 程式碼強制執行程式碼分析**] 核取方塊。
 
-4. 在 [**執行此規則集**] 清單中，按一下 [**從原始檔控制 \<Select 規則集] >** 。
+4. 在 **執行此規則集** 清單中，按一下  **\<從原始檔控制選取規則集 >** 。
 
 5. 在 [版本控制] 中，輸入簽入原則規則集檔案的路徑。
 
@@ -122,6 +122,6 @@ ms.locfileid: "72649320"
 
 ::: moniker-end
 
-6. 在 [**執行此規則集**] 清單中，按一下 [ **\<Browse >** ]。
+6. 在 **執行此規則集** 清單中，按一下 **\<流覽 >** 。
 
 8. 選取簽入原則規則集檔案的本機版本。

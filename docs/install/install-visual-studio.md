@@ -2,7 +2,7 @@
 title: 安裝 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步安裝 Visual Studio。
-ms.date: 10/07/2019
+ms.date: 12/13/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 078c54a680fccda0d7d6af88446b709765f277a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018848"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590120"
 ---
 # <a name="install-visual-studio"></a>安裝 Visual Studio
 
@@ -131,7 +131,7 @@ ms.locfileid: "72018848"
 
 2. 我們將會要求您認可 Microsoft [授權條款](https://visualstudio.microsoft.com/license-terms/)和 Microsoft [隱私權聲明](https://privacy.microsoft.com/privacystatement)。 選擇 [繼續]。
 
-   ![授權條款和隱私權聲明](media/privacy-and-license-terms.png "Microsoft 授權條款和隱私權聲明")
+   ![授權條款和隱私權聲明](media/privacy-and-license-terms.png "Microsoft 授權條款與隱私權聲明")
 
 ## <a name="step-4---choose-workloads"></a>步驟 4 - 選擇工作負載
 
@@ -139,7 +139,7 @@ ms.locfileid: "72018848"
 
  ::: moniker range="vs-2017"
 
-1. 在 [安裝 Visual Studio] 畫面中找到您想要的工作負載。
+1. 在**Visual Studio 安裝程式**中找出您想要的工作負載。
 
    ![Visual Studio 2017：安裝工作負載](../install/media/vs-installer-installing-workloads.png)
 
@@ -153,7 +153,7 @@ ms.locfileid: "72018848"
 
 ::: moniker range="vs-2019"
 
-1. 新的工作負載和元件安裝之後，請選擇 [啟動]。
+1. 在**Visual Studio 安裝程式**中找出您想要的工作負載。
 
    ![Visual Studio 2019：安裝工作負載](../install/media/vs-2019/vs-installer-workloads.png)
 
@@ -170,17 +170,17 @@ ms.locfileid: "72018848"
 
 ## <a name="step-5---choose-individual-components-optional"></a>步驟 5：選取個別元件 (選擇性)
 
-如果您不想要使用工作負載功能來自訂您的 Visual Studio 安裝，或您想要新增比工作負載所安裝元件的更多元件，您可以從 [個別元件] 索引標籤安裝或新增個別的元件來完成此作業。選擇您想要的項目，然後遵循提示作業。
+如果您不想使用 [工作負載] 功能來自訂您的 Visual Studio 安裝，或想要新增比工作負載安裝更多的元件，您可以從 [**個別元件**] 索引標籤安裝或新增個別元件來執行此動作。選擇您想要的內容，然後依照提示進行。
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 - 安裝個別元件](media/vs-installer-installing-components.png "安裝 Visual Studio 的個別元件")
+  ![Visual Studio 2017-安裝個別元件](media/vs-installer-installing-components.png "安裝 Visual Studio 個別元件")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 - 安裝個別元件](media/vs-2019/vs-installer-individual-components.png "安裝 Visual Studio 的個別元件")
+  ![Visual Studio 2019-安裝個別元件](media/vs-2019/vs-installer-individual-components.png "安裝 Visual Studio 個別元件")
 
 ::: moniker-end
 
@@ -190,13 +190,13 @@ ms.locfileid: "72018848"
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 - 安裝語言套件](media/vs-installer-installing-language-packs.png "安裝 Visual Studio 語言套件")
+  ![Visual Studio 2017-安裝語言套件](media/vs-installer-installing-language-packs.png "安裝 Visual Studio 語言套件")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 - 安裝語言套件](media/vs-2019/vs-installer-language-packs.png "安裝 Visual Studio 語言套件")
+  ![Visual Studio 2019-安裝語言套件](media/vs-2019/vs-installer-language-packs.png "安裝 Visual Studio 語言套件")
 
 ::: moniker-end
 
@@ -208,9 +208,9 @@ ms.locfileid: "72018848"
 
 ::: moniker range="vs-2017"
 
-**15.7 中的新功能**：現在您可以減少 Visual Studio 在系統磁碟機上的安裝磁碟使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
+**15.7 的新功能**：現在您可以減少 Visual Studio 在系統磁碟機上的安裝使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
 
-  ![Visual Studio 2017 - 變更安裝位置](media/installation-options-by-location.png "變更安裝位置")
+  ![Visual Studio 2017-變更安裝位置](media/installation-options-by-location.png "變更安裝位置")
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ ms.locfileid: "72018848"
 
 您可以減少系統磁碟機上的 Visual Studio 安裝磁碟使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
 
-  ![Visual Studio 2019 - 選取安裝位置](media/vs-2019/vs-installer-installation-locations.png "選取安裝位置")
+  ![Visual Studio 2019-選取安裝位置](media/vs-2019/vs-installer-installation-locations.png "選取安裝位置")
 
 ::: moniker-end
 
@@ -259,7 +259,7 @@ ms.locfileid: "72018848"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [更新 Visual Studio](update-visual-studio.md)
 * [修改 Visual Studio](modify-visual-studio.md)

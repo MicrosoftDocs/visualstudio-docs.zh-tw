@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 11b05a7993d2fcd6bc52b53edfde2e97a566574c
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 4db5de36e9982ac3d708f8826f441751c2fd0891
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018823"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594067"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 
@@ -38,7 +38,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 
 當您建立網路配置時，會將必要的憑證下載至 Certificates 資料夾。 您接著可以按兩下每個憑證檔案，然後點選完成 [憑證管理員精靈]，以手動安裝憑證。 如果要求您輸入密碼，請保留空白。
 
-**更新**：針對 Visual Studio 2017 版本 15.8 Preview 2 或更新版本，您可以透過以滑鼠右鍵按一下每個憑證檔案、選取 [安裝憑證]，然後按一下 [憑證管理員精靈] 中的適當按鈕，來手動安裝憑證。
+**更新**：針對 Visual Studio 2017 15.8 版 Preview 2 或更新版本，您透過能以滑鼠右鍵按一下每個憑證檔案、選取 [安裝憑證] 並按一下 [憑證管理員] 中的適當按鈕，以手動安裝憑證。
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **更新**：針對 Visual Studio 2017 版本 15.8 Preview 2 或更新版本，請使用下列命令建立批次檔：
+   **更新**：針對 Visual Studio 2017 15.8 版 Preview 2 或更新版本，使用下列命令建立批次檔：
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -135,35 +135,35 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 此資料夾中的三個 .P12 檔都包含中繼憑證和根憑證。 使用 Windows Update 維持最新狀態的大部分系統都已經安裝這些憑證。
 
 * **ManifestSignCertificates.p12** 包含：
-  * 中繼憑證：**Microsoft Code Signing PCA 2011**
-    * 不需要。 如果有的話，可改善某些案例的效能。
-  * 根憑證：**Microsoft Root Certificate Authority 2011**
+  * 中繼憑證：**Microsoft 程式碼簽署 PCA 2011**
+    * 非必要 如果有的話，可改善某些案例的效能。
+  * 根憑證：**Microsoft 根憑證授權單位 2011**
     * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
 * **ManifestCounterSignCertificates.p12** 包含：
-  * 中繼憑證：**Microsoft Time-Stamp PCA 2010**
-    * 不需要。 如果有的話，可改善某些案例的效能。
-  * 根憑證：**Microsoft Root Certificate Authority 2010**
+  * 中繼憑證：**Microsoft 時間戳記 PCA 2010**
+    * 非必要 如果有的話，可改善某些案例的效能。
+  * 根憑證：**Microsoft 根憑證授權單位 2010**
     * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
 * **Vs_installer_opc.SignCertificates.p12** 包含：
-  * 中繼憑證：**Microsoft Code Signing PCA**
+  * 中繼憑證：**Microsoft 程式碼簽署 PCA**
     * 所有系統都需要。 請注意，從 Windows Update 套用所有更新的系統可能沒有此憑證。
-  * 根憑證：**Microsoft Root Certificate Authority**
+  * 根憑證：**Microsoft 根憑證授權單位**
     * 必要項。 此憑證隨附於執行 Windows 7 或更新版本的系統。
 
-**更新**：針對 Visual Studio 2017 版本 15.8 Preview 2 或更新版本，Visual Studio 安裝程式只要求系統上必須安裝根憑證。 這些憑證會儲存在 .cer 檔案中，而不是在 .p12 中。
+**更新**：針對 Visual Studio 2017 15.8 版 Preview 2 或更新版本，Visual Studio 安裝程式只要求系統上必須安裝根憑證。 這些憑證會儲存在 .cer 檔案中，而不是在 .p12 中。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 * **ManifestSignCertificates.cer** 包含：
-  * 根憑證：**Microsoft Root Certificate Authority 2011**
+  * 根憑證：**Microsoft 根憑證授權單位 2011**
     * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
 * **ManifestCounterSignCertificates.cer** 包含：
-  * 根憑證：**Microsoft Root Certificate Authority 2010**
+  * 根憑證：**Microsoft 根憑證授權單位 2010**
     * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
 * **Vs_installer_opc.SignCertificates.cer** 包含：
-  * 根憑證：**Microsoft Root Certificate Authority**
+  * 根憑證：**Microsoft 根憑證授權單位**
     * 必要項。 此憑證隨附於執行 Windows 7 或更新版本的系統。
 
 Visual Studio 安裝程式只要求系統上必須安裝根憑證。
@@ -203,7 +203,7 @@ Visual Studio 安裝程式只要求系統上必須安裝根憑證。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [安裝 Visual Studio](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

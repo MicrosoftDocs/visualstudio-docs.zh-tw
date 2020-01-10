@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Warning task [MSBuild]
 - MSBuild, Warning task
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afbf7dd2f8ae42cd21ee7c9d006d9f503d2d3bf9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 84b9f9d9d92815d1719f8ba43f4014ef9598e0c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779087"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567134"
 ---
 # <a name="warning-task"></a>Warning 工作
 在建置期間，根據評估的條件陳述式來記錄警告。
@@ -31,7 +31,7 @@ ms.locfileid: "62779087"
 ## <a name="parameters"></a>參數
  下表說明 `Warning` 工作的參數。
 
-| 參數 | 說明 |
+| 參數 | 描述 |
 |---------------| - |
 | `Code` | 選擇性的 `String` 參數。<br /><br /> 要與警告建立關聯的警告碼。 |
 | `File` | 選擇性的 `String` 參數。<br /><br /> 指定相關檔案 (如果有的話)。 如果未提供任何檔案，則會使用包含 Warning 工作的檔案。 |
@@ -62,6 +62,6 @@ ms.locfileid: "62779087"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

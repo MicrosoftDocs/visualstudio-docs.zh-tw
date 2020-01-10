@@ -3,8 +3,8 @@ title: Visual Studio Desktop Express 工作負載和元件識別碼
 titleSuffix: ''
 description: 使用工作負載和元件識別碼透過命令列安裝 Visual Studio，或是在 VSIX 資訊清單中指定為相依性
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 2447f0eab7ee3931df70f503519f3f110f4ba272
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6d3d8e78d2a36d9a295fc114784a76641929b7d1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818956"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588443"
 ---
 # <a name="visual-studio-desktop-express-component-directory"></a>Visual Studio Desktop Express 元件目錄
 
@@ -34,19 +34,19 @@ ms.locfileid: "62818956"
 * 您也可以選擇安裝「建議」元件和「選擇性」元件。
 * 我們還新增了一個章節，當中列出不屬於任何工作負載的額外元件。
 
-當您在 VSIX 資訊清單中設定相依性時，必須僅指定「元件識別碼」。 請使用此頁面上的表格來決定我們的最基本元件相依性。 在某些情況下，這可能意謂著您僅指定一個來自工作負載的元件。 在其他情況下，則可能意謂著您指定來自單一工作負載的多個元件，或來自多個工作負載的多個元件。 如需詳細資訊，請參閱[如何：將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 頁面。
+當您在 VSIX 資訊清單中設定相依性時，必須僅指定「元件識別碼」。 請使用此頁面上的表格來決定我們的最基本元件相依性。 在某些情況下，這可能意謂著您僅指定一個來自工作負載的元件。 在其他情況下，則可能意謂著您指定來自單一工作負載的多個元件，或來自多個工作負載的多個元件。 如需詳細資訊，請參閱[如何︰將擴充性專案移轉至 Visual Studio 2017 (英文)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 頁面。
 
 如需有關如何使用這些識別碼的詳細資訊，請參閱[使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) 頁面。 而如需其他產品的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼 (英文)](workload-and-component-ids.md) 頁面。
 
 ## <a name="express-for-windows-desktop"></a>Express for Windows Desktop
 
-**識別碼：** Microsoft.VisualStudio.Workload.WDExpress
+**ID：** Microsoft.VisualStudio.Workload.WDExpress
 
-**描述：** 透過語法感知程式碼編輯、原始程式碼控制以及工作項目管理來建置原生和受控應用程式，例如 WPF、WinForms 和 Win32。 包含 C#、Visual Basic 和 Visual C++ 的支援。
+**說明：** 透過語法感知程式碼編輯、原始程式碼控制以及工作項目管理，建置原生和 Managed 應用程式，例如 WPF、WinForms 和 Win32。 包含 C#、Visual Basic 和 Visual C++ 的支援。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | 名稱 | 版本 | 相依性類型
+元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | ClickOnce 發行 | 15.8.27825.0 | 必要
 Microsoft.Component.HelpViewer | 說明檢視器 | 15.6.27323.2 | 必要
@@ -87,13 +87,13 @@ Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134
 
 這些是未隨附於任何工作負載但可選取來作為個別元件的元件。
 
-元件識別碼 | 名稱 | 版本
+元件識別碼 | Name | {2&gt;版本&lt;2}
 --- | --- | ---
 N/A | N/A | N/A
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

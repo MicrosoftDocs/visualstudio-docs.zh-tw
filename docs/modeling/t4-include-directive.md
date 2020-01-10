@@ -2,17 +2,17 @@
 title: T4 包含指示詞
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 636260609aa535e3bc45efe0224a517fd782c040
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a1ee58c29be3c4dfb5e2148c54464a7a511d1839
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606396"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591849"
 ---
 # <a name="t4-include-directive"></a>T4 包含指示詞
 
@@ -24,13 +24,13 @@ ms.locfileid: "72606396"
 <#@ include file="filePath" [once="true"] #>
 ```
 
-- `filePath` 可以是目前範本檔的絕對路徑或相對路徑。
+- `filePath` 可以是絕對的，或相對於目前的範本檔案。
 
    此外，特定的 Visual Studio 擴充功能可以指定自己的目錄來搜尋 include 檔案。 例如，當您已安裝視覺化和模型 SDK （DSL 工具）時，會將下列資料夾新增至 [包含] 清單： [`Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`]。
 
    這些額外的 Include 資料夾可能相依於納入的檔案其副檔名。 例如，只有當納入的檔案其副檔名為 `.tt` 時才能使用 DSL 工具的 Include 資料夾
 
-- `filePath` 可以包含以 "%" 分隔的環境變數。 例如:
+- `filePath` 可以包含以 "%" 分隔的環境變數。 例如：
 
   ```
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>

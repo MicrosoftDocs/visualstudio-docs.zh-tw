@@ -4,15 +4,15 @@ ms.date: 08/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms Designer
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b26ad18da19d5a2e53199b49e7acc024c728be9c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634033"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589886"
 ---
 # <a name="windows-forms-designer-overview"></a>Windows Form 設計工具概觀
 

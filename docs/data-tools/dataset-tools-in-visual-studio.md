@@ -42,24 +42,24 @@ helpviewer_keywords:
 - datasets [Visual Basic], namespace
 - data adapters, populating datasets
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3796a9b7a1d37911601574e02c89e8ccebb684ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642111"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586714"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 
 > [!NOTE]
 > 資料集和相關類別是舊版 .NET 技術，來自早期2000s，可讓應用程式在應用程式與資料庫中斷連線時，使用記憶體中的資料。 它們特別適用于讓使用者修改資料，並將變更保存回資料庫的應用程式。 雖然資料集已證明是非常成功的技術，但我們建議新的 .NET 應用程式使用 Entity Framework。 Entity Framework 提供更自然的方式來使用表格式資料做為物件模型，而且它具有較簡單的程式設計介面。
 
-@No__t_0 物件是一種記憶體內建物件，基本上是迷你資料庫。 其中包含 `DataTable`、`DataColumn` 和 `DataRow` 物件，您可以在其中儲存及修改一個或多個資料庫中的資料，而不需要維護開啟的連接。 資料集會維護其資料變更的相關資訊，因此當您的應用程式重新連線時，可以追蹤更新並傳送回資料庫。
+`DataSet` 物件是一種記憶體內建物件，基本上是迷你資料庫。 其中包含 `DataTable`、`DataColumn`和 `DataRow` 物件，您可以在其中儲存及修改一個或多個資料庫中的資料，而不需要維護開啟的連接。 資料集會維護其資料變更的相關資訊，因此當您的應用程式重新連線時，可以追蹤更新並傳送回資料庫。
 
 資料集和相關類別是在 .NET API 的 <xref:System.Data?displayProperty=fullName> 命名空間中定義。 您可以使用 ADO.NET，在程式碼中以動態方式建立和修改資料集。 本節中的檔說明如何使用 Visual Studio 設計工具來使用資料集。 透過設計工具建立的資料集會使用**TableAdapter**物件來與資料庫互動。 以程式設計方式建立的資料集會使用**DataAdapter**物件。 如需以程式設計方式建立資料集的相關資訊，請參閱[dataadapter 和 datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
 

@@ -5,27 +5,27 @@ ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff6c9885bd01a94cc36046faf71067e1fe9c17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650907"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588599"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
-命名慣例關係到程式碼項目的命名，例如類別、屬性和方法。 例如，您可以指定公用成員必須以大寫形式命名，或非同步方法必須以 "Async" 結尾。 您可以藉由在 [.editorconfig 檔案](../ide/create-portable-custom-editor-options.md)中指定來強制執行這些規則。 違反命名規則的項目會出現在 [錯誤清單] 或在名稱下方以建議的形式出現，取決於您為規則選擇的嚴重性。 您不需要建置專案，也能看見違規項目。
+命名慣例關係到程式碼項目的命名，例如類別、屬性和方法。 例如，您可以指定公用成員必須大寫，或私用欄位的開頭必須是 `_`。 您可以藉由在 [.editorconfig 檔案](../ide/create-portable-custom-editor-options.md)中指定來強制執行這些規則。 違反命名規則的項目會出現在 [錯誤清單] 或在名稱下方以建議的形式出現，取決於您為規則選擇的嚴重性。 您不需要建置專案，也能看見違規項目。
 
 針對每一個命名慣例，您必須使用以下描述的屬性來指定其適用的符號、命名樣式以及嚴重性，以強制執行慣例。 屬性的順序不重要。
 
 若要開始，請為您將在每個所需要用來完整描述規則的屬性中使用的命名規則選擇一個標題。 例如：`public_members_must_be_capitalized` 是一個良好且具描述性的命名規則名稱。 此頁面將會在下列各節中以 **<namingRuleTitle\>** 來代稱您選擇的標題。
 
-## <a name="symbols"></a>符號
+## <a name="symbols"></a>Symbol
 
 首先，請先識別欲套用命名規則的符號群組。 此屬性具有下列格式：
 
@@ -42,17 +42,17 @@ ms.locfileid: "72650907"
 以下清單會顯示允許的值，您可以逗號分隔來指定多個值。
 
 - \*(請使用此值來指定所有符號)
-- namespace
-- Class - 類別
-- struct
+- 命名空間
+- 類別
+- 結構
 - interface
 - enum
 - 屬性
-- 方法
+- method
 - Field - 欄位
-- event
-- Delegate - 委派
-- 參數 (parameter)
+- 事件
+- 委派
+- 參數
 - type_parameter
 - 本機
 - local_function
@@ -69,7 +69,7 @@ ms.locfileid: "72650907"
 - public
 - internal 或 friend
 - private
-- protected
+- 受保護的 - protected
 - protected\_internal 或 protected_friend
 - private\_protected
 - 本機
@@ -155,7 +155,7 @@ ms.locfileid: "72650907"
 > [!NOTE]
 > 您必須將大寫樣式指定為您命名樣式的一部分，否則您的命名樣式可能會遭到忽略。
 
-## <a name="severity"></a>Severity
+## <a name="severity"></a>嚴重性
 
 若要描述違反您命名規則的嚴重性，請使用下列格式指定一個屬性：
 
@@ -163,13 +163,13 @@ ms.locfileid: "72650907"
 
 下表顯示了允許的嚴重性值，以及其代表的意涵：
 
-Severity | 作用
+嚴重性 | 作用
 ------------ | -------------
 none | 規則已完全隱藏。
 重構或無訊息 | 未遵循此樣式時，不要向使用者顯示任何內容；但自動產生的程式碼會遵循此樣式。
 建議 | 當未遵循此樣式時，向使用者顯示為建議 (在前兩個字元下方以點狀方式呈現)。 它在編譯時期沒有任何作用。
 warning | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器警告。
-error | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器錯誤。
+錯誤 | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器錯誤。
 
 > [!NOTE]
 > 您不需要建置您的專案，也能看到違反命名規則的項目。 它們會在 [錯誤清單] 中 (或作為建議)，以編輯過後的程式碼方式呈現。
@@ -230,7 +230,7 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 
 ![命名規則警告](media/editorconfig-naming-rule-warning.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [語言慣例](editorconfig-language-conventions.md)
 - [格式設定慣例](editorconfig-formatting-conventions.md)

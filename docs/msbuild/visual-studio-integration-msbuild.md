@@ -15,17 +15,17 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: b1ddb8bdbc913a72791144d5e9d29d206712a3d6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913279"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594418"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用於載入及建置 Managed 專案。 由於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是負責處理專案，因此幾乎任何 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 格式的專案都可以成功地用在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中，即使專案是用不同的工具撰寫，而且含有自訂的建置處理序，也不會有問題。
@@ -66,7 +66,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 > 有些項目類型名稱是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中特有的，但是沒有列在這個下拉式清單中。
 
 ## <a name="in-process-compilers"></a>同處理序編譯器
- 如果可能， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會嘗試使用同處理序 (In-Process) 版本的 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器來提升效能 (不適用 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)])。若要讓這種編譯器能夠正常運作，必須符合下列條件：
+ 如果可能，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會嘗試使用同處理序 (In-Process) 版本的 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器來提升效能 （不適用於 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]）。若要讓此作業正常運作，必須符合下列條件：
 
 - 專案的目標中必須有一個名為 `Vbc` 的工作供 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案使用。
 
@@ -176,12 +176,12 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    專案系統使用已知名稱 `ResolveNativeReferences`呼叫目標。 這個目標應該以項目類型名稱 `NativeReferenceFile`來產生項目。 除了名為 `OriginalItemSpec`的新的中繼資料 (包含參考的原始項目規格) 以外，項目應該傳遞輸入項目中的所有中繼資料。
 
 ## <a name="performance-shortcuts"></a>效能捷徑
- 如果您使用 Visual Studio IDE 來啟動偵錯工具（選擇 F5 鍵或在功能表列上選擇 [ **Debug**  > ] [**開始調試**程式]），或建立您的專案（例如，**組建** > **組建方案**），組建程式會使用快速更新檢查來改善效能。 在某些情況下，自訂組建會建立輪流建置的檔案，此時快速更新檢查就無法正確識別變更的檔案。 需要更完整更新檢查的專案可以藉由設定環境變數 `DISABLEFASTUPTODATECHECK=1`關閉快速檢查。 或者，專案可以在專案中或專案匯入的檔案中將此設為 MSBuild 屬性。
+ 如果您使用 Visual Studio IDE 來啟動偵錯工具（選擇 F5 鍵或在功能表列上選擇 [ **Debug** ] > [**開始調試**程式]），或建立您的專案（例如**組建** > **組建方案**），則組建程式會使用快速更新檢查來改善效能。 在某些情況下，自訂組建會建立輪流建置的檔案，此時快速更新檢查就無法正確識別變更的檔案。 需要更完整更新檢查的專案可以藉由設定環境變數 `DISABLEFASTUPTODATECHECK=1`關閉快速檢查。 或者，專案可以在專案中或專案匯入的檔案中將此設為 MSBuild 屬性。
 
  快速更新檢查並不適用 Visual Studio 中的定期組建，而且專案的建置方式就如同您在命令提示字元中叫用組建一般。
 
-## <a name="see-also"></a>另請參閱
-- [如何：延伸 Visual Studio 建置流程](../msbuild/how-to-extend-the-visual-studio-build-process.md)
+## <a name="see-also"></a>請參閱
+- [如何：擴充 Visual Studio 的組建進程](../msbuild/how-to-extend-the-visual-studio-build-process.md)
 - [從 IDE 中啟動組建](../msbuild/starting-a-build-from-within-the-ide.md)
 - [登錄 .NET Framework 的延伸模組](../msbuild/registering-extensions-of-the-dotnet-framework.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Load Test Viewer, summary
 - load tests, summary in Load Test Viewer
 ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba72bc9d4e63e1ccb1e6d8c05d20332880e19ea9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652985"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584487"
 ---
 # <a name="load-test-results-summary-overview"></a>負載測試結果摘要概觀
 

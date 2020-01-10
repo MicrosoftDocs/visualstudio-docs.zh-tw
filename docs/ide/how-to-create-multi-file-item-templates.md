@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 82047b4a49db4edbea4ce965d1987f87a799a9f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655935"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593729"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：建立多檔案項目範本
 
@@ -36,7 +36,7 @@ ms.locfileid: "72655935"
 
 1. 以手動建立單一檔案項目範本的方式建立項目範本，但包含構成多檔案項目的每一個檔案。
 
-1. 在 *.vstemplate* XML 檔案中，為每個個別的檔案新增 `ProjectItem` 項目，並在此項目中新增 `TargetFileName` 屬性。 將 `TargetFileName` 屬性的值設為 *$fileinputname$.FileExtension*，其中 *FileExtension* 是範本中所含檔案的檔案副檔名。 例如:
+1. 在 *.vstemplate* XML 檔案中，為每個個別的檔案新增 `ProjectItem` 項目，並在此項目中新增 `TargetFileName` 屬性。 將 `TargetFileName` 屬性的值設為 *$fileinputname$.FileExtension*，其中 *FileExtension* 是範本中所含檔案的檔案副檔名。 例如：
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">

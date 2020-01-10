@@ -9,15 +9,15 @@ f1_keywords:
 - VS.DocumentOutline
 - Blend.Start.Dev12
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0facc87df720af8376561ae7599fe20afeab1a12
-ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
+ms.openlocfilehash: 912468cf95b7b5a4b611fb568048c2ba62cc635d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73925969"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592998"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>使用 XAML 設計工具建立 UI
 
@@ -33,7 +33,7 @@ XAML 設計工具提供 [XAML] 檢視和同步處理的 [設計] 檢視，來顯
 
 ### <a name="design-view"></a>設計檢視
 
-在 [設計] 檢視中，含有畫板的視窗是作用中視窗，您可以使用它作為主要工作介面。 您可以使用它，透過新增、繪製或修改元素，以視覺化方式設計您應用程式中的頁面。 如需詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。 下圖顯示 [設計] 檢視中的畫板。
+在 [設計] 檢視中，含有「畫板」(Artboard) 的視窗是作用中視窗，可做為主要工作介面。 您可以使用它，透過新增、繪製或修改元素，以視覺化方式設計您應用程式中的頁面。 如需詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。 下圖顯示 [設計] 檢視中的畫板。
 
 ![XAML 設計工具的 [設計] 檢視](media/xaml-artboard.png)
 
@@ -138,11 +138,11 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 [文件大綱]/[物件與時間軸] 視窗頂端顯示向上箭號符號的選項，可移至前一個範圍。 只有您在樣式或樣板的範圍內時，選定範圍才適用。
 
-## <a name="properties-window"></a>屬性視窗
+## <a name="properties-window"></a>[屬性] 視窗
 
-[屬性] 視窗可讓您設定控制項的屬性值。 看起來如下：
+[屬性] 視窗可讓您設定控制項的屬性值。 以下是它看起來的樣子：
 
-![屬性視窗](media/xaml-designer-properties-window.png)
+![[屬性] 視窗](media/xaml-designer-properties-window.png)
 
 [屬性] 視窗的頂端有各種選項：
 

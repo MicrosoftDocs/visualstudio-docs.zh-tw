@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 820d8b4837e2b7ae3f93a742ca8abe5962cd1893
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fb4cfc272b24bf014691b5d130f71f97e4849a31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007025"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573816"
 ---
 # <a name="incremental-builds"></a>累加組建
 
@@ -75,5 +75,5 @@ MSBuild 會比較目標的 `Inputs` 和 `Outputs` 屬性，以判斷是否必須
 
 此程式碼會建立 CompileRan 屬性，並為其提供 `true` 值，唯一前提是已執行目標。 如果跳過目標，則不會建立 CompileRan。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [目標](../msbuild/msbuild-targets.md)

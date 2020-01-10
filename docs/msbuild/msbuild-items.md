@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cebf824785fed39cfd824b9b90f9d19be5df8c64
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: a8ed6b9789569e9f68706a5b132aa9000b25d910
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251704"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590640"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案是在 `Include` 屬性中指定)。 項目 (Item) 會依據它們的項目 (Element) 名稱分組為項目 (Item) 類型。 項目類型是具名的項目清單，可用來做為工作的參數。 工作會使用項目值來執行建置程序的步驟。
@@ -97,7 +97,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 <Compile Include="*.res" Exclude="Form1.cs">
 ```
 
- 如需詳細資訊，請參閱[如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。
+ 如需詳細資訊，請參閱[如何︰從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。
 
 ## <a name="item-metadata"></a>項目中繼資料
  在 `Include` 和 `Exclude` 屬性中，除了資訊，項目可能還會包含中繼資料。 若工作需要更多關於項目的資訊，就會使用此中繼資料，或使用此中繼資料來批次處理工作和目標。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。
@@ -181,7 +181,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 ### <a name="BKMK_RemoveAttribute"></a> Remove 屬性
  `Remove` 屬性會移除項目類型中的特定項目 (檔案)。 此屬性是在 .NET Framework 3.5 中引進（僅限在目標內）。 從 MSBuild 15.0 開始支援內部和外部目標。
 
- 下列範例會從 Compile 項目類型移除每個 *.config* 檔案。
+ 下列範例會從 Compile 項目類型移除每個 .config 檔案。
 
 ```xml
 <Target>
@@ -321,13 +321,13 @@ Output:
 -->
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)
 - [通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
-- [MSBuild](../msbuild/msbuild.md)
+- [ MSBuild](../msbuild/msbuild.md)
 - [如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)
 - [如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)
-- [如何：顯示以逗號分隔的項目清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)
+- [如何：顯示以逗號分隔的專案清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)
 - [項目定義](../msbuild/item-definitions.md)
 - [批次處理](../msbuild/msbuild-batching.md)

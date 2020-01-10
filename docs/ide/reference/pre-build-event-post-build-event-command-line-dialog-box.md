@@ -29,17 +29,17 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5671a75a847d81caedeffc17ea436eade060f3e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461311"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567914"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>建置前事件/建置後事件命令列對話方塊
 
@@ -48,7 +48,7 @@ ms.locfileid: "68461311"
 > [!NOTE]
 > 如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。
 
-## <a name="ui-element-list"></a>UI 項目清單
+## <a name="ui-element-list"></a>UI 元素清單
 
 **命令列編輯方塊**
 
@@ -73,7 +73,7 @@ ms.locfileid: "68461311"
 
 您可以使用任何這些巨集指定檔案位置，或是在複選的情況下取得輸入檔的實際名稱。 這些巨集不區分大小寫。
 
-|巨集|說明|
+|巨集|描述|
 |-----------|-----------------|
 |`$(ConfigurationName)`|目前的專案設定名稱，例如 "Debug"。|
 |`$(OutDir)`|相對於專案目錄的輸出檔目錄路徑。 這會解析為 Output Directory 屬性的值。 它包含尾端的反斜線 '\\'。|
@@ -95,9 +95,9 @@ ms.locfileid: "68461311"
 |`$(TargetFileName)`|組建的主要輸出檔檔案名稱 (定義為主檔名和副檔名)。|
 |`$(TargetExt)`|建置的主要輸出檔副檔名。 副檔名前面有 '.'。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在 Visual Studio 中指定自訂建置事件](../../ide/specifying-custom-build-events-in-visual-studio.md)
-- [專案設計工具、建置事件頁面 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
+- [專案設計工具、建置事件頁 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
 - [如何：指定建置事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [如何：指定建置事件 (C#)](../../ide/how-to-specify-build-events-csharp.md)

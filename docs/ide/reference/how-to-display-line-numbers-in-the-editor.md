@@ -8,17 +8,17 @@ helpviewer_keywords:
 - editors, line numbers
 - code, line number displaying
 ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56fe49031e29bcf83071be93ebd1f1877254a9b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5392ad3efaee8a3c29e58bd2b75272e4206215a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668421"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569136"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>如何：在編輯器中顯示行號
 

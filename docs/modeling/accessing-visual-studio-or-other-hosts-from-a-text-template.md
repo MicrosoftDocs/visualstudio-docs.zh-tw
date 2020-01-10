@@ -3,17 +3,17 @@ title: 從文字範本存取 Visual Studio 或其他主機
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 752b9d9e69eee26f267927f03c4b83c68740100b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd69ae5864df9cbddd204c45975736fc4aae49e5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652367"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597252"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>從文字模板存取 Visual Studio 或其他主機
 
@@ -82,4 +82,4 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 
 ## <a name="use-hostspecific-with-template-inheritance"></a>使用 hostSpecific 搭配範本繼承
 
-如果您也使用 `inherits` 屬性，而且如果您繼承自指定 `hostspecific="true"` 的範本，請指定 `hostspecific="trueFromBase"`。 如果沒有，您可能會收到編譯器警告，指出屬性 `Host` 已宣告兩次。
+如果您也使用 `inherits` 屬性，而且如果您繼承自指定 `hostspecific="true"`的範本，請指定 `hostspecific="trueFromBase"`。 如果沒有，您可能會收到編譯器警告，指出屬性 `Host` 已宣告兩次。

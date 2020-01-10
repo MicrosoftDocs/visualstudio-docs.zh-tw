@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CompensableActivity.UI
 ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f498c6d025e7527b9767284a77c953e538cef377
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7ec70c22ae195dc6dd58aa2cfa893cee35fe6ca8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650669"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597096"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity 活動設計工具
 
@@ -25,14 +25,14 @@ ms.locfileid: "72650669"
  <xref:System.Activities.Statements.CompensableActivity> 會定義工作的單元，在順利完成之後，可以確認或補償該單元。
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>使用 CompensableActivity 活動設計工具
- [ **CompensableActivity** ] 活動設計工具可以在 [**工具箱**] 的 [**交易**] 類別中找到。 若要開啟 [**工具箱**]，請選取工作流程設計工具左側的 [**工具箱**] 索引標籤。 或者，從  **View**  功能表中選取 **工具箱**，或按**Ctrl** +**Alt** +**X**。
+ [ **CompensableActivity** ] 活動設計工具可以在 [**工具箱**] 的 [**交易**] 類別中找到。 若要開啟 [**工具箱**]，請選取工作流程設計工具左側的 [**工具箱**] 索引標籤。 或者，從  **View**  功能表中選取 **工具箱**，或按**Ctrl**+**Alt**+**X**。
 
- [ **CompensableActivity** ] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到工作流程設計工具介面上。 您可以將活動設計工具放在 <xref:System.Activities.Statements.Sequence> 中。 卸載活動設計工具會建立具有預設 <xref:System.Activities.Activity.DisplayName%2A> CompensableActivity 的 <xref:System.Activities.Statements.CompensableActivity> 活動。 在 [ **CompensableActivity** ] 活動設計工具的標頭中編輯 <xref:System.Activities.Activity.DisplayName%2A> 值。 您也可以在屬性方格的 [ **DisplayName** ] 方塊中編輯它。
+ [ **CompensableActivity** ] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到工作流程設計工具介面上。 您可以將活動設計工具放在 <xref:System.Activities.Statements.Sequence>中。 卸載活動設計工具會建立具有預設 <xref:System.Activities.Activity.DisplayName%2A> CompensableActivity 的 <xref:System.Activities.Statements.CompensableActivity> 活動。 在 [ **CompensableActivity** ] 活動設計工具的標頭中編輯 <xref:System.Activities.Activity.DisplayName%2A> 值。 您也可以在屬性方格的 [ **DisplayName** ] 方塊中編輯它。
 
 ### <a name="the-compensableactivity-properties"></a>CompensableActivity 屬性
- 下表顯示 <xref:System.Activities.Statements.CompensableActivity> 屬性，並且描述屬性在設計工具中的使用方式。 [@No__t_0] 和 [<xref:System.Activities.Activity%601.Result%2A>] 屬性可以在屬性方格中編輯，但其他屬性則必須在工作流程設計工具介面上編輯。
+ 下表顯示 <xref:System.Activities.Statements.CompensableActivity> 屬性，並且描述屬性在設計工具中的使用方式。 [<xref:System.Activities.Activity.DisplayName%2A>] 和 [<xref:System.Activities.Activity%601.Result%2A>] 屬性可以在屬性方格中編輯，但其他屬性則必須在工作流程設計工具介面上編輯。
 
-|屬性名稱|必要項|使用量|
+|內容名稱|必要|使用|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CompensableActivity> 活動可選用的易記名稱。 預設為 CompensableActivity。|
 |<xref:System.Activities.Activity%601.Result%2A>|False|指定 <xref:System.Activities.Statements.CompensableActivity> 的傳回值。 這個屬性必須在屬性方格中編輯。|

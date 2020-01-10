@@ -3,17 +3,17 @@ title: MSBuild 多目標概觀 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc7bbf08ac2d020ac058eaa75791e5b733ceab04
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: d54209624a7413bb5d968f212e669a4be8171b43
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926396"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595913"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多目標概觀
 您可以使用 MSBuild，將應用程式編譯為在數個 .NET Framework 版本中的任一版上或數個系統平台中的任一個平台上執行。 例如，您可以將應用程式編譯為在 32 位元平台的 .NET Framework 2.0 上執行，也可以將同一個應用程式編譯為在 64 位元平台的 .NET Framework 4.5 上執行。
@@ -27,14 +27,14 @@ ms.locfileid: "68926396"
 
 - 您可以將 .NET Framework 以外的架構作為目標，例如 Silverlight Framework。
 
-- 您可以將「Framework 設定檔」  當做目標，這是預先定義的目標 Framework 子集。
+- 您可以將「Framework 設定檔」當做目標，這是預先定義的目標 Framework 子集。
 
 - 如果 .NET Framework 目前版本的 Service Pack 已發行，您可以將它當做目標。
 
 - MSBuild 多目標可保證應用程式只使用目標 Framework 和平台中提供的功能。
 
 ## <a name="target-framework-and-platform"></a>目標架構和平台
- 「目標架構」  是建置專案以在其上執行的 .NET Framework 版本，而「目標平台」  是建置專案以在其上執行的系統平台。  例如，您可能想要設定 .NET Framework 2.0 應用程式，在與 802x86 處理器系列 (x86) 相容的 32 位元平台上執行。 目標 Framework 和目標平台的組合稱為「目標內容」  。 如需詳細資訊，請參閱[目標架構和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。
+ 「目標架構」是建置專案以在其上執行的 .NET Framework 版本，而「目標平台」是建置專案以在其上執行的系統平台。  例如，您可能想要設定 .NET Framework 2.0 應用程式，在與 802x86 處理器系列 (x86) 相容的 32 位元平台上執行。 目標 Framework 和目標平台的組合稱為「目標內容」。 如需詳細資訊，請參閱[目標架構和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。
 
 ## <a name="toolset-toolsversion"></a>Toolset (ToolsVersion)
  工具組會將工具、工作以及用來建立應用程式的目標收集在一起。 工具組包括 *csc.exe* 和 *vbc.exe* 這類編譯器、一般 targets 檔案 (*microsoft.common.targets*) 和一般 tasks 檔案 (*microsoft.common.tasks*)。 4\.5 工具組可以用來以 .NET Framework 版本 2.0、3.0、3.5、4 和 4.5 為目標。 不過，2.0 工具組只能用來以 .NET Framework 版本 2.0 為目標。 如需詳細資訊，請參閱 [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。

@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, network emulation
 ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f49f7952b287989d6e828d92b4c3479731dc2c21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 350640a4db6a81d19801aedb03d0d490895f97ef
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664803"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589210"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用測試設定來設定網路模擬
 
@@ -76,9 +76,9 @@ Visual Studio 會針對所有測試類型使用軟體實際網路模擬。 其�
 
 4. 如果您在測試設定中包含網路模擬診斷資料配接器，而且打算將它用於本機電腦，則也必須將網路模擬驅動程式繫結至電腦的其中一個網路介面卡。 網路模擬診斷資料配接器需要網路模擬驅動程式才能運作。 您可使用兩種方式來安裝網路模擬驅動程式並繫結至配接器：
 
-    - **隨 Microsoft Visual Studio Test Agent 安裝的網路模擬驅動程式：** Microsoft Visual Studio Test Agent 可同時在遠端電腦和本機電腦上使用。 當您安裝 Visual Studio Test Agent 時，安裝程序包含的設定步驟會將網路模擬驅動程式繫結至網路介面卡。 如需詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。
+    - **隨 Microsoft Visual Studio Test Agent 安裝的網路模擬驅動程式**：Microsoft Visual Studio Test Agent 可同時在遠端電腦和本機電腦上使用。 當您安裝 Visual Studio Test Agent 時，安裝程序包含的設定步驟會將網路模擬驅動程式繫結至網路介面卡。 如需詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。
 
-    - **隨 Microsoft Visual Studio Test Professional 安裝的網路模擬驅動程式：** 第一次使用網路模擬時，系統會提示您將網路模擬驅動程式繫結至網路介面卡。
+    - **隨 Microsoft Visual Studio Test Professional 安裝的網路模擬驅動程式**：第一次使用網路模擬時，系統會提示您將網路模擬驅動程式繫結至網路介面卡。
 
     > [!TIP]
     > 不必安裝 Visual Studio 測試代理程式，也能在本機電腦上安裝網路模擬驅動程式，只要從命令列使用下列命令即可：**VSTestConfig NETWORKEMULATION /install**

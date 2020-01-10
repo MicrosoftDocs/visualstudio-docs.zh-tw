@@ -7,15 +7,15 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647393"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585882"
 ---
 # <a name="template-parameters"></a>範本參數
 
@@ -23,7 +23,7 @@ ms.locfileid: "72647393"
 
 ## <a name="declare-and-enable-template-parameters"></a>宣告和啟用範本參數
 
-範本參數是以 $*parameter*$ 格式來宣告。 例如:
+範本參數是以 $*parameter*$ 格式來宣告。 例如：
 
 - $safeprojectname$
 
@@ -60,7 +60,7 @@ ms.locfileid: "72647393"
 |safeitemname|與 `itemname` 相同，但所有不安全的字元和空格都會以底線字元取代。|
 |safeitemrootname|與 `safeitemname` 相同。|
 |safeprojectname|使用者在建立專案時時提供的名稱，但已移除所有不安全的字元和空格。|
-|時間|目前的時間，格式為 DD/MM/YYYY 00:00:00。|
+|time|目前的時間，格式為 DD/MM/YYYY 00:00:00。|
 |specifiedSolutionName|方案名稱。 若已核取 [建立方案目錄]，則 `specifiedSolutionName` 具有方案名稱。 若未核取 [建立方案目錄]，`specifiedSolutionName` 則為空白。|
 |userdomain|目前的使用者網域。|
 |username|目前的使用者名稱。|

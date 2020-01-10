@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], displaying on Windows Forms
 - data [Visual Studio], Data Sources window
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5c57b73656f75ae9d99211ba28e38935d3164cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5193f3e3a0a1f4a06cc4830036ecf63806a1dbee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641033"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586181"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>設定從 [資料來源] 視窗拖曳時要建立的控制項
 
@@ -37,7 +37,7 @@ ms.locfileid: "72641033"
 2. 在 [**資料來源**] 視窗中，選取代表您要設定之資料表或物件的專案。
 
    > [!TIP]
-   > 如果 [**資料來源**] 視窗未開啟，您可以選取 [ **View**  > **其他 Windows**  > **資料來源**] 來開啟它。
+   > 如果 [**資料來源**] 視窗未開啟，您可以選取 [ **View** > **其他 Windows** > **資料來源**] 來開啟它。
 
 3. 按一下專案的下拉式功能表，然後按一下功能表中的下列其中一個專案：
 

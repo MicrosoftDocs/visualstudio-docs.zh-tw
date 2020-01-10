@@ -3,15 +3,15 @@ title: 在 XAML 設計工具中將物件組織在版面配置容器中
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bdda64792195ecac41affeb6ec8a7f4f383ac8a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f05874459553b0b83c5e43f326a5deb6b0d4798
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668825"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592935"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>在 XAML 設計工具中將物件組織在版面配置容器中
 
@@ -35,7 +35,7 @@ ms.locfileid: "72668825"
 
 ![格線版面配置面板](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
 
-### <a name="uniformgrid"></a>同型方格
+### <a name="uniformgrid"></a>UniformGrid
 
 將物件排列成相等或同型的方格區域。 此面板適合用來排列影像清單。
 
@@ -71,7 +71,7 @@ ms.locfileid: "72668825"
 
 ![DockPanel 版面配置面板](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**觀看短片：** ![播放按鈕](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**觀看短片： ![[播放]** 按鈕](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF-DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>版面配置控制項
 
@@ -79,13 +79,13 @@ ms.locfileid: "72668825"
 
 下列版面配置控制項是最熱門的控制項，除此之外還有其他控制項。 您可以在 Visual Studio 的 [工具箱] 或 Blend for Visual Studio 的 [資產] 面板中找到所有控制項。
 
-### <a name="border"></a>Border
+### <a name="border"></a>邊界
 
 在物件周圍建立框線、背景或兩者。 您可以只將一個將物件新增至 **Border**。 如果您想要為多個物件套用框線或背景，請將版面配置面板新增至 **Border**。 然後，將物件加入至該面板或控制項。
 
 ![框線版面配置控制項](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png)
 
-### <a name="popup"></a>快顯
+### <a name="popup"></a>Popup
 
 在視窗中向使用者顯示資訊或選項。 您可以只將一個將物件新增至 **Popup**。 **Popup** 預設會包含 **Grid**，但您可以加以變更。
 

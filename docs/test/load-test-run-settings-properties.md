@@ -5,15 +5,15 @@ ms.topic: reference
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7bea257e45b557fd157d68baf9e0229a602a7a6e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8898a474888ce9efbf4c91a5251bf8fe7036fe5f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652978"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584461"
 ---
 # <a name="load-test-run-settings-properties"></a>負載測試回合設定屬性
 
@@ -29,12 +29,12 @@ ms.locfileid: "72652978"
 
 |屬性|定義|
 |-|----------------|
-|**說明**|回合設定的描述。|
+|**描述**|回合設定的描述。|
 |**每一類型的錯誤數目上限**|要為負載測試儲存的每一類型的錯誤數目上限。<br /><br /> 您可視需求增加此數目，但是這樣做將會增加負載測試結果的大小和處理時間。|
 |**回報的要求 URL 最大數目**|此負載測試中要回報結果之唯一 Web 效能測試要求 URL 的最大數目。<br /><br /> 您可視需求增加此數目，但是這樣做將會增加負載測試結果的大小和處理時間。|
 |**臨界值違規數目上限**|要為這個負載測試儲存的臨界值違規數目上限。<br /><br /> 您可視需求增加此數目，但是這樣做將會增加負載測試結果的大小和處理時間。|
-|**執行應用程式定義域中的單元測試**|布林 (Boolean) 值，決定當負載測試包含單元測試時，是否要在個別應用程式定義域中執行各個單元測試組件 (Assembly)。 預設為 True。<br /><br /> 如果單元測試不需要個別應用程式定義域或 app.config 檔案就可以正常運作，藉由將這個屬性的值設定為 `False`，單元測試可能會更快速執行。|
-|**名稱**|[回合設定] 節點出現在 [負載測試編輯器] 中的名稱。|
+|**執行應用程式定義域中的單元測試**|布林 (Boolean) 值，決定當負載測試包含單元測試時，是否要在個別應用程式定義域中執行各個單元測試組件 (Assembly)。 預設值為 True。<br /><br /> 如果單元測試不需要個別應用程式定義域或 app.config 檔案就可以正常運作，藉由將這個屬性的值設定為 `False`，單元測試可能會更快速執行。|
+|**Name**|[回合設定] 節點出現在 [負載測試編輯器] 中的名稱。|
 |**驗證層級**|這會定義將在負載測試中執行之驗證規則的最高層級。 驗證規則與 Web 效能測試要求有關。 每條驗證規則都具有關聯的驗證層級：[高]、[中] 或 [低]。 這個負載測試回合設定將會指定當 Web 效能測試在負載測試中執行時，會執行哪些驗證規則。 例如，如果這項回合設定是設定為 [中]，所有標記為 [中] 或 [低] 的驗證規則便都會執行。|
 
 ## <a name="logging-properties"></a>記錄屬性
@@ -61,7 +61,7 @@ ms.locfileid: "72652978"
 |**追蹤的 SQL 作業的最小持續期間**|SQL 追蹤所要擷取之 SQL 作業的最小持續期間 (以毫秒為單位)。 例如，如果您嘗試在負載的情況下尋找慢速的 SQL 作業，這可讓您忽略快速完成的作業。|
 |**SQL 追蹤連接字串**|用來存取要追蹤之資料庫的連接字串 (Connection String)。|
 |**SQL 追蹤目錄**|SQL 追蹤檔案在追蹤結束時所放置的位置。 SQL Server 必須要具有這個目錄的寫入權限，而控制器則必須具有讀取權限。|
-|**SQL 追蹤已啟用**|此項會啟用 SQL 作業的追蹤， 預設值是 `False`。|
+|**SQL 追蹤已啟用**|此項會啟用 SQL 作業的追蹤， 預設值為 `False`。|
 
 ## <a name="test-iterations-properties"></a>測試反覆項目屬性
 
@@ -104,7 +104,7 @@ ms.locfileid: "72652978"
 
      [屬性視窗] 隨即顯示，並顯示選取之回合設定的屬性。
 
-5. 使用 [屬性視窗] 變更回合設定。 例如，將執行持續時間變更為 **00:05:00**，以執行測試五分鐘。
+5. 使用 [屬性視窗] 變更回合設定。 例如，將執行持續期間變更為 [00:05:00] 以執行測試五分鐘。
 
     > [!NOTE]
     > 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。

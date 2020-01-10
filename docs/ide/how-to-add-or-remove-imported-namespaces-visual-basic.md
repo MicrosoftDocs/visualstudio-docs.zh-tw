@@ -9,17 +9,17 @@ helpviewer_keywords:
 - imported namespaces [Visual Studio]
 - references [Visual Studio], imported namespaces
 ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff6ad1a07440b27b679fa3f749c24a6d3157dbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e636969164c4cf2526bb85add95e7cfe02ce6176
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654659"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593326"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>如何：新增或移除匯入的命名空間 (Visual Basic)
 

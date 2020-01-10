@@ -25,17 +25,17 @@ helpviewer_keywords:
 - MSBuild (C++), Link task
 - Link task (MSBuild (C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bf3e143a3fcb6613752362acf83f5c2441b98b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 31bad6dfd0c336e4535e446d1167cb9fd6874972
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911254"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592200"
 ---
 # <a name="link-task"></a>Link 工作
 包裝 Microsoft C++連結器工具（ *link .exe*）。 連結器工具會連結通用物件檔案格式 (COFF) 目的檔及程式庫，以建立可執行檔 ( *.exe*) 或動態連結程式庫 (DLL)。 如需詳細資訊，請參閱[連結器選項](/cpp/build/reference/linker-options)。
@@ -225,7 +225,7 @@ ms.locfileid: "72911254"
 
   選擇性的 **Boolean** 參數。
 
-  如果是 `true`，即會部分簽署組件。 預設值為 `false`。
+  如果是 `true`，即會部分簽署組件。 根據預設，該值為 `false`。
 
   如需詳細資訊，請參閱 [/DELAYSIGN (部分簽署組件)](/cpp/build/reference/delaysign-partially-sign-an-assembly)。
 
@@ -497,7 +497,7 @@ ms.locfileid: "72911254"
 
   - **PGUpdate**
 
-    \- **/LTCG:PGUpdate**
+    \- **/ltcg： PGUpdate**
 
   如需詳細資訊，請參閱 [/LTCG (連結時產生程式碼)](/cpp/build/reference/ltcg-link-time-code-generation)。
 

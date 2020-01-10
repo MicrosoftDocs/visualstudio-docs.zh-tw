@@ -19,17 +19,17 @@ helpviewer_keywords:
 - MSBUILD (C++), MT task
 - MT task (MSBuild (C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fad0b3ddf57167c6721371ae5f8e11f5b7a4c13
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 2f90a1349771ab67f342a3490874cd422051cac2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911232"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595026"
 ---
 # <a name="mt-task"></a>MT 工作
 包裝 Microsoft 資訊清單工具 *mt.exe*。 如需詳細資訊，請參閱 [Mt.exe](/windows/desktop/SbsCs/mt-exe)。

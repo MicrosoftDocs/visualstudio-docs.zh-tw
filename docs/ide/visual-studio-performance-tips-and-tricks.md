@@ -2,17 +2,17 @@
 title: 改善效能的祕訣
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 950803d46d7b870804c2c8914f3c85b0b89e5732
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647142"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590666"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
@@ -107,13 +107,13 @@ Visual Studio 會在自動文件還原導致解決方案載入時間明顯變慢
 
    ::: moniker range="vs-2017"
 
-    若要停用擴充功能，移至 [工具] > [擴充功能和更新]，然後停用特定擴充功能。
+    若要停用擴充功能，請移至 [**工具**] > [**擴充功能和更新**]，然後停用特定擴充功能
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-    若要停用擴充功能，移至 [擴充功能] > [管理擴充功能]，然後停用特定擴充功能。
+    若要停用擴充功能，請移至 [**擴充**功能] > [**管理延伸**模組]，然後停用特定擴充
 
    ::: moniker-end
 

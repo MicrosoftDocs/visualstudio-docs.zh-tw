@@ -3,18 +3,18 @@ title: 適用于 .NET 的資料工具
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 224fef3a02a2441553728a9a75fc5f9c456081a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1dcd8c256259baeef36939e19ce785e5efe7c80b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648096"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586038"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於 .NET 的 Visual Studio Data Tools
 
@@ -26,7 +26,7 @@ Visual Studio 和 .NET 一起提供廣泛的 API 和工具支援，以便連接�
 
 ![ADO.NET 架構](../data-tools/media/raddata-ado-net-architecture-diagram.png)
 
-## <a name="typical-workflow"></a>一般工作流程
+## <a name="typical-workflow"></a>一般流程
 
 一般工作流程如下：
 

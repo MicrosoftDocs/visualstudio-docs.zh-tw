@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, creating extensions
 - layer models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8297ede4ce703c738133952bb13669ef6a6637
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 305c562c7600dc6955ce0307db92f4e257fc1c21
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645675"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596628"
 ---
 # <a name="extend-dependency-diagrams"></a>擴充相依性圖表
 

@@ -3,17 +3,17 @@ title: 如何：建立 3D 地形模型
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ee7791c8356f13ebfdce5ad5bd3ba8be0674d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635415"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589418"
 ---
 # <a name="how-to-model-3d-terrain"></a>如何：建立 3D 地形模型
 

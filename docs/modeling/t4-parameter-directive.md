@@ -2,17 +2,17 @@
 title: T4 參數指示詞
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4a9ea9d3c1f80c669ec52936969ae38342e6343
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606188"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591797"
 ---
 # <a name="t4-parameter-directive"></a>T4 參數指示詞
 
@@ -24,9 +24,9 @@ ms.locfileid: "72606188"
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- @No__t_0 指示詞會在範本程式碼中宣告從外部內容傳入的值初始化的屬性。 如果您撰寫的程式碼會叫用文字轉換，您可以設定這些值。 可以在 `Session` 字典中，或在 <xref:System.Runtime.Remoting.Messaging.CallContext> 中傳遞值。
+ `parameter` 指示詞會在範本程式碼中宣告從外部內容傳入的值初始化的屬性。 如果您撰寫的程式碼會叫用文字轉換，您可以設定這些值。 可以在 `Session` 字典中，或在 <xref:System.Runtime.Remoting.Messaging.CallContext>中傳遞值。
 
- 您可以宣告任何可遠端處理類型的參數。 也就是說，類型必須使用 <xref:System.SerializableAttribute> 宣告，或者必須衍生自 <xref:System.MarshalByRefObject>。 這可讓參數值傳遞至處理範本的 AppDomain 中。
+ 您可以宣告任何可遠端處理類型的參數。 也就是說，類型必須使用 <xref:System.SerializableAttribute>宣告，或者必須衍生自 <xref:System.MarshalByRefObject>。 這可讓參數值傳遞至處理範本的 AppDomain 中。
 
  例如，您可以撰寫具有下列內容的文字模板：
 
@@ -59,7 +59,7 @@ string result = t4.ProcessTemplate("MyTemplateFile.t4",
 ```
 
 ## <a name="passing-values-in-the-call-context"></a>傳遞呼叫內容中的值
- 您也可以在 <xref:System.Runtime.Remoting.Messaging.CallContext> 中，將值當做邏輯資料傳遞。
+ 您也可以在 <xref:System.Runtime.Remoting.Messaging.CallContext>中，將值當做邏輯資料傳遞。
 
  下列範例會使用這兩種方法來傳遞值：
 
@@ -99,4 +99,4 @@ string resultText = t.TransformText();
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>從 TextTemplate 取得引數
 
 > [!IMPORTANT]
-> @No__t_0 指示詞不會抓取 `TextTransform.exe` 公用程式之 `-a` 參數中設定的值。 若要取得這些值，請在 `template` 指示詞中設定 `hostSpecific="true"`，並使用 `this.Host.ResolveParameterValue("","","argName")`。
+> `parameter` 指示詞不會抓取 `TextTransform.exe` 公用程式之 `-a` 參數中設定的值。 若要取得這些值，請在 `template` 指示詞中設定 `hostSpecific="true"`，並使用 `this.Host.ResolveParameterValue("","","argName")`。

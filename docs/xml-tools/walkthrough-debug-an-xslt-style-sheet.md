@@ -3,17 +3,17 @@ title: Debug XSLT 樣式表單
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1f774757acc293091f19a783ed93f34647d494
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604604"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592473"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>逐步解說： Debug XSLT 樣式表單
 
@@ -26,7 +26,7 @@ ms.locfileid: "72604604"
 
 ## <a name="start-debugging"></a>開始偵錯
 
-1. 從 [檔案 **] 功能表中，選擇 [** **開啟** ** >  檔案**]。
+1. 從 [檔案 **] 功能表中，選擇 [** **開啟** ** > 檔案**]。
 
 2. 找出 [ *below-average* ] 檔案，然後選擇 [**開啟**]。
 
@@ -44,11 +44,11 @@ ms.locfileid: "72604604"
 
    - 按一下第12行上的任何位置，然後按**F9**鍵。
 
-   - 以滑鼠右鍵按一下 `xsl:if` 開始 標記，然後選擇 **中斷點**  > **插入中斷點**。
+   - 以滑鼠右鍵按一下 `xsl:if` 開始 標記，然後選擇 **中斷點** > **插入中斷點**。
 
       ![在 Visual Studio 的 XSL 檔案中插入中斷點](media/insert-breakpoint.PNG)
 
-6. 在功能表列上，選擇 [ **XML** ]  >  [**啟動 XSLT 調試**] （或按**Alt** +**F5**）。
+6. 在功能表列上，選擇 [ **XML** ] > [**啟動 XSLT 調試**] （或按**Alt**+**F5**）。
 
    啟動偵錯工具。
 
@@ -56,21 +56,21 @@ ms.locfileid: "72604604"
 
    [自動變數]、[**區域變數** **] 和 [監看式 1]** 視窗會顯示**在 [Visual Studio**] 視窗的底部。 [**區域變數**] 視窗會顯示所有區域變數及其目前的值。 其中包括在樣式表中定義的變數，及偵錯工具用來追蹤目前內容中之節點的變數。
 
-## <a name="watch-window"></a>監看式視窗
+## <a name="watch-window"></a>監看視窗
 
 我們會將兩個變數新增至 [**監看式 1** ] 視窗，讓我們可以在處理輸入檔時檢查其值。 （如果您想要監看的變數已經存在，您也可以使用 [**區域變數**] 視窗來檢查值）。
 
-1. 從 [**調試** **]** 功能表中，選擇 [ **Windows**  >  Watch  > **監看式 1]** 。
+1. 從 [**調試** **]** 功能表中，選擇 [ **Windows** > Watch > **監看式 1]** 。
 
    [**監**看式 1] 視窗會變成可見狀態。
 
 2. 在 [**名稱**] 欄位中輸入 `$bookAverage`，然後按**enter**。
 
-   @No__t_0 變數的值會顯示在 [**值**] 欄位中。
+   `$bookAverage` 變數的值會顯示在 [**值**] 欄位中。
 
 3. 在下一行中，于 [**名稱**] 欄位中輸入 `self::node()`，然後按**enter**。
 
-   `self::node()` 是一種 XPath 運算式，可評估目前的內容節點。 `self::node()` XPath 運算式的值為第一個書籍節點。 它會隨著轉換的進行而變更。
+   `self::node()` 是評估為目前內容節點的 XPath 運算式。 `self::node()` XPath 運算式的值為第一個書籍節點。 它會隨著轉換的進行而變更。
 
 4. 展開 [`self::node()`] 節點，然後展開 [值為] 的節點 `price`。
 
@@ -90,7 +90,7 @@ ms.locfileid: "72604604"
 
    因為第二個書籍節點不符合 `xsl:if` 條件，所以不會將書籍節點新增至*below-average*輸出檔。 偵錯工具會繼續執行，直到它再次放置在樣式表單中的 `xsl:if` 元素上。 偵錯工具現在定位於*books.xml*檔案中的第三個 `book` 節點。
 
-   在 [**監看式 1** ] 視窗中，`self::node()` 值會變更為第三個書籍節點。 藉由檢查 `price` 元素的值，您可以判斷價格低於平均值。 @No__t_0 條件應該會成功。
+   在 [**監看式 1** ] 視窗中，`self::node()` 值會變更為第三個書籍節點。 藉由檢查 `price` 元素的值，您可以判斷價格低於平均值。 `xsl:if` 條件應該會成功。
 
 3. 按 **F5** 繼續。
 

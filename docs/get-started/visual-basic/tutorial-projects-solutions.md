@@ -4,19 +4,19 @@ ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22c48086fb98cc4ae25098cb70c642f77f621209
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 48b3f2c9aae099e3ae5f2cf2d8c438fb0f9062a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632565"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590211"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>了解使用 Visual Basic 的專案與解決方案
 
@@ -53,7 +53,7 @@ ms.locfileid: "72632565"
 
 1. 開啟 Visual Studio。
 
-1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上 **，選擇 [** 檔案] > [**新增**>**專案**]。
 
    [ **新增專案** ] 對話方塊隨即開啟。
 
@@ -87,7 +87,7 @@ ms.locfileid: "72632565"
 
 ::: moniker range="vs-2017"
 
-1. 在 [方案總管] 中，從 [方案 'QuickSolution'] 的右鍵功能表或操作功能表中，選擇 [新增]>[新增專案]。
+1. 從**方案總管**中**方案 ' QuickSolution '** 的滑鼠右鍵或操作功能表，選擇 [**加入**>**新增專案**]。
 
    [ **加入新的專案** ] 對話方塊隨即開啟。
 
@@ -104,7 +104,7 @@ ms.locfileid: "72632565"
 
 ::: moniker range=">=vs-2019"
 
-1. 在 [方案總管] 中，從 [方案 'QuickSolution'] 的右鍵功能表或操作功能表中，選擇 [新增]>[新增專案]。
+1. 從**方案總管**中**方案 ' QuickSolution '** 的滑鼠右鍵或操作功能表，選擇 [**加入**>**新增專案**]。
 
    隨即開啟一個對話方塊，表示要 [新增專案]。
 
@@ -157,7 +157,7 @@ ms.locfileid: "72632565"
 
 請將單元測試專案新增至解決方案。 現在我們先從專案範本開始，因此不需要將額外程式碼檔案新增至專案。
 
-1. 在 [方案總管] 中，從 [解決方案 'QuickSolution'] 的右鍵功能表或操作功能表中，選擇 [新增] > [新增專案]。
+1. 在 [方案總管] 中，從 [方案 'QuickSolution'] 的右鍵功能表或操作功能表中，選擇 [新增] > [新增專案]。
 
 ::: moniker range="Vs-2017"
 

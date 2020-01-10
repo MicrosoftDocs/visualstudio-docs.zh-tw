@@ -2,19 +2,19 @@
 title: 重構程式碼以將 var 取代為明確類型
 ms.date: 05/15/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 566d064ac0ac1b9c48ee8e75697cef39b2ec4ee1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4ec388564e1851402f085f6bbaefba08dbea212c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661680"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595770"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>重構以將 var 取代為明確類型
 
@@ -34,7 +34,7 @@ ms.locfileid: "72661680"
 
 不過，以匿名類型將變數初始化，且稍後才會存取物件的屬性時，則必須使用 [var](/dotnet/csharp/language-reference/keywords/var)。 如需詳細資訊，請參閱[隱含類型區域變數 (C#)](/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables)。
 
-## <a name="how-to-use-it"></a>如何使用
+## <a name="how-to-use-it"></a>使用方式
 
 1. 將插入號放在 `var` 關鍵字上。
 

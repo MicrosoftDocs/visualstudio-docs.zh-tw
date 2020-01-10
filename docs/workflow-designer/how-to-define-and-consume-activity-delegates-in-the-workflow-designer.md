@@ -3,17 +3,17 @@ title: 工作流程設計工具：定義和使用活動委派
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 67e862e3772b157c4a0999ccd44c3698119ae8a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: 4309294a2be703b7511355b87c97341fee06d405
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650342"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593898"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>HOW TO：定義並取用工作流程設計工具中的活動委派
 
@@ -32,7 +32,7 @@ ms.locfileid: "72650342"
 
 4. 在 工作流程設計工具中，按一下 **引數** 索引標籤。
 
-5. 按一下 **[建立引數]** 。 將新引數命名為**Items**。
+5. 按一下 [**建立引數**]。 將新引數命名為**Items**。
 
 6. 在 [**引數類型**] 資料行中，選取 **[T] 的陣列**。
 

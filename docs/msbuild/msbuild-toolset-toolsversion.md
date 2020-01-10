@@ -8,17 +8,17 @@ helpviewer_keywords:
 - MSBuild, targeting a specific .NET framework
 - multitargeting [MSBuild]
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f87513a8124b728568f78bee9efdf48fb35a5301
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 4af4816440c2eb285a0f30db50e18108ce79265f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926378"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593803"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 
@@ -131,7 +131,7 @@ MSBuild 會提供 `ToolLocationHelper` 方法的多載，這些方法可加入 `
 
 子工具組已引進 .NET Framework 4.5。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)
 - [多目標](../msbuild/msbuild-multitargeting-overview.md)

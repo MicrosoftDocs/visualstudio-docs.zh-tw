@@ -10,17 +10,17 @@ helpviewer_keywords:
 - managed code analysis warnings, security warnings
 - warnings, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a57236d42ed38070d79843ecf4097c3af80239a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 004f10600df3ed2f9c1f62557e0915638482877e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649070"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587208"
 ---
 # <a name="security-warnings"></a>安全性警告
 
@@ -102,7 +102,7 @@ ms.locfileid: "72649070"
 |[CA3012：查看 RegEx 插入弱點的程式碼](../code-quality/ca3012.md)|使用不受信任的輸入時，請注意 RegEx 插入式攻擊。 攻擊者可以使用 RegEx 插入來惡意修改正則運算式，讓 RegEx 符合非預期的結果，或讓 RegEx 耗用過多的 CPU，因而導致阻絕服務攻擊。|
 |[CA3061：不要依 URL 新增架構](../code-quality/ca3061.md)|請勿使用 Add 方法的 unsafe 多載，因為它可能會導致危險的外部參考。|
 |[CA3075：不安全的 DTD 處理](../code-quality/ca3075.md)|如果您使用不安全的 DTDProcessing 執行個體或參考外部實體來源，剖析器可能會接受未受信任的輸入，而將機密資訊洩漏給攻擊者。|
-|[CA3076：不安全的 XSLT 指令碼執行](../code-quality/ca3076.md)|如果您在 .NET 應用程式中以不安全的方式執行可延伸樣式表語言轉換 (XSLT)，處理器可能會解析不受信任的 URI 參考，而這些參考可能會將機密資訊洩漏給攻擊者，導致拒絕服務和跨網站攻擊。|
+|[CA3076：不安全的 XSLT 指令碼執行](../code-quality/ca3076.md)|如果您在 .NET 應用程式中以不安全的方式執行 Extensible Stylesheets Language Transformations (XSLT) (可延伸樣式表語言轉換 (XSLT))，處理器可能會解析不受信任的 URI 參考，而這些參考可能會將機密資訊洩漏給攻擊者，導致拒絕服務和跨網站攻擊。|
 |[CA3077：API 設計、XML 文件和 XML 文字讀取器中的不安全處理](../code-quality/ca3077.md)|針對衍生自 XMLDocument 和 XMLTextReader 的 API 進行設計時，請留意 DtdProcessing。 若在參考或解析外部實體來源時使用不安全的 DTDProcessing 執行個體，或在 XML 中設定不安全的值，都可能會導致資訊洩漏。|
 |[CA3147：使用 ValidateAntiForgeryToken 標記動詞處理常式](../code-quality/ca3147.md)|在設計 ASP.NET MVC 控制器時，請注意跨網站偽造要求攻擊。 跨網站要求偽造攻擊可能會將來自已驗證使用者的惡意要求傳送至您的 ASP.NET MVC 控制器。|
 |[CA5122 P-Invoke 宣告不應為安全關鍵](../code-quality/ca5122.md)|在執行安全性敏感作業時，會將方法標記為 SecuritySafeCritical，但透明程式碼也能安全地使用。 透明程式碼不可直接透過 P/Invoke 呼叫機器碼。 因此，即使將 P/Invoke 標示為安全性安全關鍵，透明程式碼仍然不能呼叫它，而且會導致安全性分析錯誤。|
@@ -113,7 +113,7 @@ ms.locfileid: "72649070"
 |[CA5370：使用 XmlReader 來驗證讀取器](../code-quality/ca5370.md)|處理不受信任的 DTD 和 XML 架構可能會啟用載入危險的外部參考。 這項危險的載入可以藉由使用具有安全解析程式的 XmlReader，或在停用 DTD 和 XML 內嵌架構處理的情況下受到限制。|
 |[CA5371：使用 XmlReader 讀取架構](../code-quality/ca5371.md)|處理不受信任的 DTD 和 XML 架構可能會啟用載入危險的外部參考。 使用具有安全解析程式的 XmlReader，或已停用 DTD 和 XML 內嵌架構處理時，會限制這種情況。|
 |[CA5372：針對 XPathDocument 使用 XmlReader](../code-quality/ca5372.md)|從不受信任的資料處理 XML 可能會載入危險的外部參考，這可以透過使用具有安全解析程式的 XmlReader 或停用 DTD 處理來加以限制。|
-|[CA5373：不要使用過時的金鑰衍生函式](../code-quality/ca5373.md)|此規則會偵測 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> 和 `Rfc2898DeriveBytes.CryptDeriveKey` 的弱式金鑰衍生方法調用。 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> 使用弱式演算法 PBKDF1。|
+|[CA5373：不要使用過時的金鑰衍生函式](../code-quality/ca5373.md)|此規則會偵測 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> 和 `Rfc2898DeriveBytes.CryptDeriveKey`的弱式金鑰衍生方法調用。 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> 使用弱式演算法 PBKDF1。|
 |[CA5378：不要停用 ServicePointManagerSecurityProtocols](../code-quality/ca5378.md)|將 `Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols` 設定為 `true` 會限制使用 TLS 1.0 的 Windows Communication Framework （WCF）傳輸層安全性（TLS）連線。 該 TLS 版本將會被取代。|
 |[CA5380：不要將憑證新增至根存放區](../code-quality/ca5380.md)|此規則會偵測將憑證新增至「信任的根憑證授權單位」憑證存放區的程式碼。 根據預設，「信任的根憑證授權單位」憑證存放區是以一組已符合「Microsoft 根憑證計畫」需求的公用 Ca 來設定。|
 |[CA5381：確保憑證不會新增至根存放區](../code-quality/ca5381.md)|此規則會偵測可能將憑證新增至「信任的根憑證授權單位」憑證存放區的程式碼。 根據預設，信任的根憑證授權單位憑證存放區是以一組已符合 Microsoft 根憑證計畫需求的公開憑證授權單位單位（Ca）來設定。|

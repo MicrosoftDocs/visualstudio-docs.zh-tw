@@ -1,26 +1,26 @@
 ---
 title: 更新網路型安裝
 description: 了解如何使用 --layout 命令來更新網路型 Visual Studio 安裝
-ms.date: 10/07/2019
+ms.date: 01/08/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2157a6142f95b6ffe34503a8ee80419fcb9ca506
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 774e189306345187ac6a0c29b7060cb5537e8adb
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018820"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776161"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
 
@@ -28,21 +28,24 @@ ms.locfileid: "72018820"
 
 ## <a name="how-to-update-a-network-layout"></a>如何更新網路配置
 
+> [!IMPORTANT]
+> 這些指示假設您先前已建立網路安裝版面配置。 如需有關如何執行這項操作的詳細資訊，請參閱[建立 Visual Studio 的網路安裝](create-a-network-installation-of-visual-studio.md)頁面。
+
 若要重新整理您的網路安裝共用，以便其包含最新的更新，請執行 `--layout` 命令，以累加方式下載更新的套件。
 
 ::: moniker range="vs-2017"
 
-**15.3 中的新功能**：如果您在最初建立網路配置時已選取部分配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
+**15.3 的新**功能：如果您在[第一次建立網路](create-a-network-installation-of-visual-studio.md)配置時選取了部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-如果您在最初建立網路配置時已選取部分配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項
+如果您在[第一次建立網路](create-a-network-installation-of-visual-studio.md)配置時選取了部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項
 
 ::: moniker-end
 
-如果您在檔案共用上裝載配置，則應該更新配置的私用複本（例如 c:\VSLayout），然後在下載所有更新的內容之後，將它複製到您的檔案共用（例如，\\server \ products \ VS）。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
+如果您在檔案共用上裝載配置，則應該更新配置的私用複本（例如，c:\VSLayout），然後在下載所有更新的內容之後，將它複製到您的檔案共用（例如 \\server\products\VS）。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
 
 讓我們以一些範例來逐步解說如何在建立後更新配置：
 
@@ -64,7 +67,7 @@ ms.locfileid: "72018820"
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* 以下是如何新增額外的工作負載和當地語系化語言  (這個命令會新增「Azure 開發」工作負載)。現在，Managed 桌面和 Azure 都會包含在此配置中。  所有這些工作負載也會包含英文和德文的語言資源。  而且，配置會更新為最新的可用版本。
+* 以下是如何新增額外的工作負載和當地語系化語言  （此命令會新增*Azure 開發*工作負載）。 現在，受管理的桌面和 Azure 都會包含在此配置中。  所有這些工作負載也會包含英文和德文的語言資源。  而且，配置會更新為最新的可用版本。
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
@@ -73,15 +76,15 @@ ms.locfileid: "72018820"
     > [!IMPORTANT]
     > 即使您將所新增選擇性元件包含在[回應檔案](automated-installation-with-response-file.md)的「新增」區段中，更新作業也不會安裝這些元件。 這是因為新增作業不會在更新期間使用。
     >
-    > **因應措施**：在升級後執行個別修改作業，以安裝遺漏的元件。
+    > 因應**措施：在升級之後執行個別**的修改作業，以安裝遺失的元件。
 
-* 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。 (這個命令會新增「ASP.NET 與網頁程式開發」工作負載)。現在，受控桌面、Azure 以及 ASP.NET 與網頁程式開發工作負載都會包含在此配置中。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
+* 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。 （此命令會新增*ASP.NET 和 網頁程式開發*工作負載）。 現在，受管理的桌面、Azure 和 ASP.NET & 的 Web 開發工作負載會包含在此版面配置中。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
-## <a name="how-to-deploy-an-update-to-client-machines"></a>如何將更新部署至用戶端電腦
+## <a name="deploy-an-update-to-client-machines"></a>將更新部署至用戶端電腦
 
 根據您網路環境的設定方式，更新可以由企業系統管理員部署或從用戶端電腦起始。
 
@@ -111,7 +114,7 @@ ms.locfileid: "72018820"
 > [!TIP]
 > 如需如何控制顯示更新通知給使用者的詳細資料，請參閱[控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)。
 
-## <a name="how-to-verify-a-layout"></a>配置的驗證方式
+## <a name="verify-a-layout"></a>驗證版面配置
 
 使用 `--verify`，對提供的離線快取執行驗證。 它會檢查套件檔案為遺失或無效。 在驗證結束時，會列印遺失檔案和無效檔案的清單。
 
@@ -129,7 +132,7 @@ Microsoft 會定期提供 Visual Studio 更新，因此，您建立的新配置�
 > [!NOTE]
 > 驗證僅適用於特定 Visual Studio 次要版本的最新版。 新的版本發行後，驗證即不再適用於同一個次要版本的較舊修補層級版本。
 
-## <a name="how-to-fix-a-layout"></a>如何修正配置
+## <a name="fix-a-layout"></a>修正版面配置
 
 使用 `--fix` 執行與 `--verify` 相同的驗證，同時嘗試修正已識別的問題。 `--fix` 程序需要網際網路連線，因此請先確定您的電腦連線至網際網路，再叫用 `--fix`。
 
@@ -139,7 +142,7 @@ vs_enterprise.exe --layout <layoutDir> --fix
 
 vs_enterprise.exe 可以在 layoutDir 內進行叫用。
 
-## <a name="how-to-remove-older-versions-from-a-layout"></a>如何從配置中移除較舊版本
+## <a name="remove-older-versions-from-a-layout"></a>從版面配置中移除較舊的版本
 
 在您執行離線快取的配置更新之後，配置快取資料夾可能有最新 Visual Studio 安裝不再需要的一些過時套件。 您可以使用 `--clean` 選項，從離線快取資料夾中移除過時套件。
 
@@ -165,9 +168,15 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 當您執行此命令時，安裝程式會分析您的離線快取資料夾，以尋找將移除的檔案清單。 您接著可能會檢閱要刪除的檔案，並確認刪除。
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+## <a name="get-support-for-your-offline-installer"></a>取得離線安裝程式的支援
 
-## <a name="see-also"></a>另請參閱
+如果您的離線安裝發生問題，我們會想要進行了解。 告訴我們的最簡單方式就是使用[回報問題](../ide/how-to-report-a-problem-with-visual-studio.md)工具。 使用此工具時，您可以將我們所需的遙測和記錄檔傳送給我們，來協助我們診斷及修正問題。
+
+我們也提供[**即時聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (僅限英文) 支援選項，可回答有關安裝的相關問題。
+
+我們也提供其他支援選項。 如需清單，請參閱我們的[意見反應](../ide/feedback-options.md)頁面。
+
+## <a name="see-also"></a>請參閱
 
 * [安裝 Visual Studio](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

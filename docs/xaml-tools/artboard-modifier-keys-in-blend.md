@@ -3,22 +3,22 @@ title: Blend 中的畫板輔助按鍵
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fca85bd48a8fd755e7bec70216572fcfe2f84b36
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 18c9035a092854ae5b9d0cfe0fa0ad8f9aab349f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649725"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593012"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend 中的畫板輔助按鍵
 某些鍵盤快速鍵沒有相關的功能表項目，這代表您不能使用 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 使用者介面來找出它們。 下表列出可修改動作的快速鍵，例如調整物件大小。
 
-|若要執行這項操作|請這樣做|
+|若要執行這項操作|請執行|
 | - |-------------|
 |在其他工具仍為選取狀態時，暫時選取[選取] 工具 (這樣可減少您必須在 [工具] 面板中，於 [選取] 工具和其他工具間來回選取項目的次數)|按住 **Ctrl** 鍵|
 |在已選取 [選取] 工具時，微調選取的物件|按下方向鍵|

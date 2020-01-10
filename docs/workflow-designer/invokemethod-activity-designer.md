@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 593ec198cdfdd8acd1967abb046384711e1fa9ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8660cd82f9d671da3b535ac228e8ce62c875dc07
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650174"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593196"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 活動設計工具
 
@@ -27,13 +27,13 @@ ms.locfileid: "72650174"
 
 ### <a name="use-the-invokemethod-activity-designer"></a>使用 InvokeMethod 活動設計工具
 
-在 [工具箱] 的 [**基本**] 類別中，存取 [ **InvokeMethod** ] 活動設計**工具**。 [ **InvokeMethod** ] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到通常用來放置活動的工作流程設計工具介面上，例如在 <xref:System.Activities.Statements.Sequence> 內部。 卸載活動設計工具會建立具有預設 <xref:System.Activities.Activity.DisplayName%2A> InvokeMethod 的 <xref:System.Activities.Statements.InvokeMethod> 活動。 @No__t_0 可以在 [ **InvokeMethod** ] 活動設計工具的標頭中編輯，或是在屬性方格的 [ **DisplayName** ] 方塊中編輯。
+在 [工具箱] 的 [**基本**] 類別中，存取 [ **InvokeMethod** ] 活動設計**工具**。 [ **InvokeMethod** ] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到通常用來放置活動的工作流程設計工具介面上，例如在 <xref:System.Activities.Statements.Sequence>內部。 卸載活動設計工具會建立具有預設 <xref:System.Activities.Activity.DisplayName%2A> InvokeMethod 的 <xref:System.Activities.Statements.InvokeMethod> 活動。 <xref:System.Activities.Activity.DisplayName%2A> 可以在 [ **InvokeMethod** ] 活動設計工具的標頭中編輯，或是在屬性方格的 [ **DisplayName** ] 方塊中編輯。
 
 ### <a name="the-invokemethod-properties"></a>InvokeMethod 屬性
 
 下表顯示 <xref:System.Activities.Statements.InvokeMethod> 屬性，並描述它們在設計工具中的使用方式。 這些屬性可以在屬性方格中編輯，有些則可以在工作流程設計工具介面上編輯。
 
-|屬性名稱|必要項|使用量|
+|內容名稱|必要|使用|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeMethod> 活動的易記名稱。 預設值為 InvokeMethod。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 不是絕對必要，但最好是使用其中一個。|
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|活動執行時要呼叫之方法的名稱。 呼叫的方法必須宣告為**public**。 這個屬性可以在設計工具介面上編輯，而且是必要的。|

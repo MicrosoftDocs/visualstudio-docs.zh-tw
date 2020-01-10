@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Load Test Analyzer, graphs view legend
 - load tests, graphs view legend
 ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 17f91ba90a6a9de1c4084d4186adae6ab8388f23
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659821"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590796"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>使用圖表檢視圖例來分析負載測試
 

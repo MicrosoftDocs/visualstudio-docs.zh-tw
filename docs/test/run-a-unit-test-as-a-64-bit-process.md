@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests, running
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 3971fe0513c98cb957d8013cdad932aa0c04bed1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 67a614ed164b12070fe40f24cdba09a3051e36a5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646630"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566250"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>以 64 位元處理序的形式執行單元測試
 

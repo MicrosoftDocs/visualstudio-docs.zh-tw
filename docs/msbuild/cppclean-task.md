@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild (C++), CPPClean task
 - CPPClean task (MSBuild (C++))
 ms.assetid: b62a482e-8fb5-4999-b50b-6605a078e291
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6e893dcf289c5060f519523b18b53b701f8055
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 827014e04c23239274e31b994fd0178cbe8e5883
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748114"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596069"
 ---
 # <a name="cppclean-task"></a>CPPClean 工作
 刪除 MSBuild 在建立C++專案時所建立的暫存檔案。 刪除組建檔案的程序稱為「清除」。

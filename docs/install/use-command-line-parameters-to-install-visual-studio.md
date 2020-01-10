@@ -10,19 +10,19 @@ f1_keywords:
 - switches
 - command prompt
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd40a1adbf6f1f35a651f38ce5173400d208b2bc
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 6d985266679d70f24ca2b40077549b5c3354b7f4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888515"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590939"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令列參數來安裝 Visual Studio
 
@@ -73,27 +73,27 @@ ms.locfileid: "72888515"
 
 ::: moniker range="vs-2017"
 
-| **命令** | **說明** |
+| **命令** | **描述** |
 | ----------------------- | --------------- |
 | (空白) | 安裝產品。 |
 | `modify` | 修改所安裝的產品。 |
 | `update` | 更新所安裝的產品。 |
 | `repair` | 修復所安裝的產品。 |
 | `uninstall` | 解除安裝所安裝的產品。 |
-| `export` | **15.9 版的新**功能：將安裝選取專案匯出至安裝設定檔案。 **注意**：只能搭配 vs_installer 使用。 |
+| `export` | **15.9 版的新**功能：將安裝選取專案匯出至安裝設定檔案。 **注意**：只能與 vs_installer 搭配使用。 |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-| **命令** | **說明** |
+| **命令** | **描述** |
 | ----------------------- | --------------- |
 | (空白) | 安裝產品。 |
 | `modify` | 修改所安裝的產品。 |
 | `update` | 更新所安裝的產品。 |
 | `repair` | 修復所安裝的產品。 |
 | `uninstall` | 解除安裝所安裝的產品。 |
-| `export` | 將安裝選取項目匯出至安裝組態檔。 **注意**：只能搭配 vs_installer 使用。 |
+| `export` | 將安裝選取項目匯出至安裝組態檔。 **注意**：只能與 vs_installer 搭配使用。 |
 
 ::: moniker-end
 
@@ -101,7 +101,7 @@ ms.locfileid: "72888515"
 
 ::: moniker range="vs-2017"
 
-| **安裝選項** | **說明** |
+| **安裝選項** | **描述** |
 | ----------------------- | --------------- |
 | `--installPath <dir>` | 要操作之執行個體的安裝目錄。 若是安裝命令，這是**選擇性的**，而且是執行個體的安裝位置。 若是其他命令，這是**必要的**，而且是先前已安裝執行個體的安裝位置。 |
 | `--addProductLang <language-locale>` | **選擇性**︰在安裝或修改作業期間，這會決定要安裝到產品的 UI 語言套件。 它可在命令列上出現多次，以新增多個語言套件。 如果未出現，則會使用電腦地區設定來安裝。 如需詳細資訊，請參閱此頁面上的[語言地區設定清單](#list-of-language-locales)一節。|
@@ -125,7 +125,7 @@ ms.locfileid: "72888515"
 
 ::: moniker range="vs-2019"
 
-| **安裝選項** | **說明** |
+| **安裝選項** | **描述** |
 | ----------------------- | --------------- |
 | `--installPath <dir>` | 要操作之執行個體的安裝目錄。 若是安裝命令，這是**選擇性的**，而且是執行個體的安裝位置。 若是其他命令，這是**必要的**，而且是先前已安裝執行個體的安裝位置。 |
 | `--addProductLang <language-locale>` | **選擇性**︰在安裝或修改作業期間，這會決定要安裝到產品的 UI 語言套件。 它可在命令列上出現多次，以新增多個語言套件。 如果未出現，則會使用電腦地區設定來安裝。 如需詳細資訊，請參閱此頁面上的[語言地區設定清單](#list-of-language-locales)一節。|
@@ -154,7 +154,7 @@ ms.locfileid: "72888515"
 
 ::: moniker range="vs-2017"
 
-| **配置選項** | **說明** |
+| **配置選項** | **描述** |
 | ----------------------- | --------------- |
 | `--layout <dir>` | 指定一個目錄以建立離線安裝快取。 如需詳細資訊，請參閱[建立 Visual Studio 的網路型安裝](create-a-network-installation-of-visual-studio.md)。|
 | `--lang <one or more language-locales>` | **選擇性**：搭配使用 `--layout`，以指定語言的資源套件來準備離線安裝快取。 如需詳細資訊，請參閱此頁面上的[語言地區設定清單](#list-of-language-locales)一節。|
@@ -166,7 +166,7 @@ ms.locfileid: "72888515"
 | `--fix` | **版本 15.3 的新功能，選擇性**：驗證配置的內容。 如果有任何檔案損毀或遺失，它們就會從。 必須有網際網路存取權才可修正配置。 |
 | `--clean <one or more paths to catalogs>` | **版本 15.3 的新功能，選擇性**：從已更新為較新版的配置中移除舊版元件。 |
 
-| **進階安裝選項** | **說明** |
+| **進階安裝選項** | **描述** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **選擇性**：要安裝執行個體的通道識別碼。 這是 install 命令的必要參數，如果已指定 `--installPath`，則會忽略其他命令。 |
 | `--channelUri <uri>` | **選擇性**︰通道資訊清單的 URI。 如果不想要更新，`--channelUri` 可以指向不存在的檔案（例如，--channelUri C:\doesntExist.chman）。 這可用於安裝命令;其他命令則會予以忽略。 |
@@ -188,7 +188,7 @@ ms.locfileid: "72888515"
 
 ::: moniker range="vs-2019"
 
-| **配置選項** | **說明** |
+| **配置選項** | **描述** |
 | ----------------------- | --------------- |
 | `--layout <dir>` | 指定一個目錄以建立離線安裝快取。 如需詳細資訊，請參閱[建立 Visual Studio 的網路型安裝](create-a-network-installation-of-visual-studio.md)。|
 | `--lang <one or more language-locales>` | **選擇性**：搭配使用 `--layout`，以指定語言的資源套件來準備離線安裝快取。 如需詳細資訊，請參閱此頁面上的[語言地區設定清單](#list-of-language-locales)一節。|
@@ -200,7 +200,7 @@ ms.locfileid: "72888515"
 | `--fix` | **選擇性**：驗證版面配置的內容。  如果有任何檔案損毀或遺失，它們就會從。 必須有網際網路存取權才可修正配置。 |
 | `--clean <one or more paths to catalogs>` | **選擇性**：從已更新為較新版本的版面配置中移除舊版元件。 |
 
-| **進階安裝選項** | **說明** |
+| **進階安裝選項** | **描述** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **選擇性**：要安裝執行個體的通道識別碼。 這是 install 命令的必要參數，如果已指定 `--installPath`，則會忽略其他命令。 |
 | `--channelUri <uri>` | **選擇性**︰通道資訊清單的 URI。 如果不想要更新，`--channelUri` 可以指向不存在的檔案（例如，--channelUri C:\doesntExist.chman）。 這可用於安裝命令;其他命令則會予以忽略。 |

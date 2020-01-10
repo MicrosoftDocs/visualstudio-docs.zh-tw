@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Dataset Designer, creating data tables
 - tables [Visual Studio], creating
 - data [Visual Studio], Dataset Designer
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9dbf7116c614a8eec599f197f975ab4c389bc950
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1526a5f4137ece5b76c282255af3da4ab20ac119
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648063"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585999"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>逐步解說：在 DataSet 設計工具中建立 DataTable
 
@@ -25,7 +25,7 @@ ms.locfileid: "72648063"
 
 ## <a name="create-a-new-windows-forms-application"></a>建立新的 Windows Forms 應用程式
 
-1. **在 Visual Studio 的 [檔案**] 功能表上，選取 [**新增** > **專案**]。
+1. 在 Visual Studio 中，於 [檔案] 功能表上選取 [新增] > [專案]。
 
 2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 

@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reference
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f3889cf1d9088f39b4efc4e4d01197ffaaaa77
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 9418143c9d93d960d3123868b89f24a97e1afafd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912061"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593963"
 ---
 # <a name="msbuild-reference"></a>MSBuild 參考
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是適用於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的建置系統。 下列連結會引導至包含 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 參考資訊的主題。
@@ -50,7 +50,7 @@ ms.locfileid: "72912061"
 
  說明通用於所有專案類型的專案屬性，也會說明通常是供特定專案類型使用的屬性。
 
-- [一般 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)
+- [通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)
 
  說明通用於所有專案類型的專案項目，也會說明通常是供特定專案類型使用的項目。
 

@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 999e8f27a9c60d776d65dc87eb2b42adeec2226c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d578161d43de68d85f3b7704c9fd69fe4e268ea
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666965"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593534"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
 
@@ -35,7 +35,7 @@ ms.locfileid: "72666965"
 
 - 測試自訂主應用程式。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 若要完成這個逐步解說，您必須具有下列各項：
 
@@ -51,7 +51,7 @@ ms.locfileid: "72666965"
 
 2. 加入下列組件的參考：
 
-   - **VisualStudio. TextTemplating. \* 0**
+   - **VisualStudio. TextTemplating.\*0**
 
    - **VisualStudio. TextTemplating. 10.0 和更新版本**
 
@@ -730,7 +730,7 @@ ms.locfileid: "72666965"
 
      您可以使用任何文字編輯器 (例如 [記事本]) 來建立檔案。
 
-2. 將下列內容加入至檔案中：
+2. 將下列程式碼加入至此檔案中：
 
     > [!NOTE]
     > 文字範本的程式語言與自訂主應用程式的語言不一定要相符。

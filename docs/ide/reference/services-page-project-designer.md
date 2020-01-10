@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Services page in Project Designer
 - Project Designer, Services page
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd374482d0432a54ed66442610aac1f60ca1828f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655480"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593560"
 ---
 # <a name="services-page-project-designer"></a>專案設計工具、服務頁
 
@@ -29,7 +29,7 @@ ms.locfileid: "72655480"
 
 ## <a name="task-list"></a>工作清單
 
-[操作說明：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+[如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>UIElement 清單
 
@@ -77,6 +77,6 @@ ms.locfileid: "72655480"
 
 - [用戶端應用程式服務](/dotnet/framework/common-client-technologies/client-application-services)
 - [服務對話方塊的進階設定](../../ide/reference/advanced-settings-for-services-dialog-box.md)
-- [操作說明：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
-- [專案設計工具、編譯頁面 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
-- [專案設計工具、建置頁面 (C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+- [專案設計工具、建置頁 (C#)](../../ide/reference/build-page-project-designer-csharp.md)
