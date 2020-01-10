@@ -1,5 +1,5 @@
 ---
-title: 步驟 7：新增乘法及除法問題
+title: 步驟 7：加入乘法和除法問題
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,21 +13,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64edeb6d6180907e6b1aa07fd5d443e8523c10b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 773768c3329ae32edc0b8c24052dcf328b480d3d
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647462"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776138"
 ---
-# <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：新增乘法及除法問題
+# <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：加入乘法和除法問題
 
 在本教學課程的第七個部分中，您將加入乘法和除法問題，不過要先思考如何進行這項變更。 思考初始步驟，其中牽涉到儲存值。
 
 > [!NOTE]
-> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。
-> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
-> - 若要下載已完成的程式碼版本，請參閱[完整的數學測驗教學課程範例](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)。
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 
 ## <a name="to-add-multiplication-and-division-problems"></a>若要加入乘法和除法問題
 
@@ -64,6 +62,6 @@ ms.locfileid: "72647462"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移至下一個教學課程步驟，請參閱 **[步驟8：自訂](../ide/step-8-customize-the-quiz.md)** 的測驗。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟8：自訂測驗](../ide/step-8-customize-the-quiz.md)** 。
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)。

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8d733c41e2833eeca2a8bf8c68f5e329f0af723c
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.openlocfilehash: 40011b035afdf4a04eb760d13c001e39d9c578c4
+ms.sourcegitcommit: 91a054beb6b3a16ed5140f9f829239ec31bbbec8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75685304"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75810579"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>教學課程：在 Visual Studio 中使用 TypeScript 建立 ASP.NET Core 應用程式
 
@@ -68,7 +68,7 @@ Visual Studio 可在「專案」中管理單一應用程式的檔案。 專案�
     按 **Esc** 關閉開始視窗。 輸入**Ctrl + Q**開啟 [搜尋] 方塊，輸入**ASP.NET**，然後選擇 [ **ASP.NET Core Web 應用C#程式-** ]。 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] >  [新增] >  [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [ **ASP.NET Core Web 應用C#程式-** ]，然後選擇 **[確定]** 。
+    從頂端功能表列中，選擇 [檔案] >  [新增] >  [專案]。 在 [**新增專案**] 對話方塊的左窗格中，展開 **[ C#視覺效果**]，然後選擇 [ **.net Core**]。 在中間窗格中，選擇 [ **ASP.NET Core Web 應用C#程式-** ]，然後選擇 **[確定]** 。
     ::: moniker-end
     如果您看不到 [ **ASP.NET Core Web 應用程式**] 專案範本，則必須新增 [ **ASP.NET 和 網頁程式開發**] 工作負載。 如需詳細指示，請參閱[必要條件](#prerequisites)。
 

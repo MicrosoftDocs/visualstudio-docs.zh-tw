@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09f3e5fed93cac3a251e4b7cdcaa988e63ff8741
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596264"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75775877"
 ---
 # <a name="developer-community-data-privacy"></a>開發人員社群資料隱私權
 
@@ -81,7 +81,7 @@ ms.locfileid: "75596264"
   - 傾印檔案
 
 > [!NOTE]
-> 只有當您透過提交內含的問題報告來提供許可權時，才會將記錄檔、螢幕擷取畫面和記錄資料傳送至 Microsoft。 您可以看到哪些檔案包含在 [回報問題] 視窗的 [摘要] 步驟中（請參閱此附注中包含的螢幕擷取畫面）。 收集的記錄檔和檔案會儲存在% temp% 資料夾中，並且會在每次上傳後定期清除。 如果您不想要在問題報告中包含記錄檔，請先從% temp% 資料夾中刪除檔案，然後再提交報告。
+> 您所傳送的記錄檔、螢幕擷取畫面和記錄資料，可能會大幅增加 Microsoft 對您問題的瞭解和回應。  因此，我們建議您將其包含在內。 為了保護您的隱私權，任何附加的記錄檔、螢幕擷取畫面和記錄資料，只會在您透過提交所包含的問題報告來提供許可權時，傳送給 Microsoft。 您可以在提交報告之前，看到哪些檔案包含在 [回報問題] 視窗的 [摘要] 步驟中。 您可以取消核取 [摘要] 步驟中的 [附加系統記錄]，以排除報表中的系統記錄檔。 如需參考，請參閱下列螢幕擷取畫面。 
   > ![回報問題-收集的記錄摘要](media/report-a-problem-logs-collected.png)
 
 

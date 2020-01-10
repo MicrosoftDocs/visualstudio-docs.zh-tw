@@ -13,21 +13,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46c445c8fa5b1b4c9b2e4a45025b161223bfa6de
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 97188d7dcaff2133c22f4954146ba5e977ab2c6d
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588729"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776068"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>步驟 3：加入倒數計時器
 
 在本教學課程的第三個部分中，您將加入倒數計時器來追蹤受測者可完成作答的剩餘秒數。
 
 > [!NOTE]
-> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。
-> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
-> - 若要下載已完成的程式碼版本，請參閱[完整的數學測驗教學課程範例](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)。
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 
 ## <a name="to-add-a-countdown-timer"></a>若要加入倒數計時器
 
@@ -112,7 +110,7 @@ ms.locfileid: "75588729"
      ![數學測驗正進行中](../ide/media/express_addcountdown.png)<br/>
 *數學測驗正進行中*
 
-## <a name="to-continue-or-review"></a>繼續或檢視
+## <a name="to-continue-or-review"></a>若要繼續或檢視
 
 - 若要移至下一個教學課程步驟，請參閱 **[步驟4：新增 CheckTheAnswer （）方法](../ide/step-4-add-the-checktheanswer-parens-method.md)** 。
 

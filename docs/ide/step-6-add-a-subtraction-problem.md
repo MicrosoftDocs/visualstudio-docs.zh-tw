@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c6eed20fc1f2b76c02865c2a5f6b21cde1ae51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 611df946b97f97832b7debfac3d11c5b7972cdae
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589990"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776097"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步驟 6：加入減法問題
 在本教學課程的第六個部分中，您將加入減法問題並學習如何執行下列工作：
@@ -32,9 +32,7 @@ ms.locfileid: "75589990"
 - 更新計時器的 <xref:System.Windows.Forms.Timer.Tick> 事件處理常式，讓事件處理常式在時間結束時填入正確答案。
 
 > [!NOTE]
-> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。
-> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
-> - 若要下載已完成的程式碼版本，請參閱[完整的數學測驗教學課程範例](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)。
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 
 ## <a name="to-add-a-subtraction-problem"></a>若要加入減法問題
 
@@ -90,7 +88,7 @@ ms.locfileid: "75589990"
      ![包含減法問題的數學測驗](../ide/media/express_addsubtract.png)<br/>
 ***數學測驗*** *有減法問題*
 
-## <a name="to-continue-or-review"></a>繼續或檢視
+## <a name="to-continue-or-review"></a>若要繼續或檢視
 
 - 若要移至下一個教學課程步驟，請參閱 **[步驟7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)** 。
 

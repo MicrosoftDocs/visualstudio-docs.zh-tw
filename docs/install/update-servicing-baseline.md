@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3ef0cf63f8063d543cbb8fb69a0588dc331e4c6a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4c33420e715f2164f767ba57ff149a409d7d3627
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590952"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776178"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>在維護基底上時更新 Visual Studio
 
@@ -62,7 +62,7 @@ vs_enterprise.exe --channelUri c:\doesnotexist.chman
 
 當維護基準更新可用時，該維護更新的固定版本啟動載入器檔案可在 [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0) 取得。
 
-針對使用網路配置安裝進行部署的系統管理員，系統管理員需要更新[配置位置](update-a-network-installation-of-visual-studio.md)。 從該位置安裝的用戶端會收到更新通知。 如果更新必須部署至用戶端，請遵循[這些指示](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines)。 當您修改 'response.json' 以進行更新時，請勿新增額外的工作負載、元件或語言。 在產品更新後，必須以「修改」部署的方式管理這些設定。
+針對使用網路配置安裝進行部署的系統管理員，系統管理員需要更新[配置位置](update-a-network-installation-of-visual-studio.md)。 從該位置安裝的用戶端會收到更新通知。 如果更新必須部署至用戶端，請遵循[這些指示](update-a-network-installation-of-visual-studio.md#deploy-an-update-to-client-machines)。 當您修改 'response.json' 以進行更新時，請勿新增額外的工作負載、元件或語言。 在產品更新後，必須以「修改」部署的方式管理這些設定。
 
 針對網際網路型安裝，請執行新的固定版本啟動載入器，其中 `--channelUri` 參數指向用戶端上不存在的通道資訊清單。 如果更新是以無訊息或被動模式進行部署，請使用兩個不同的命令：
 
