@@ -3,15 +3,15 @@ title: Working with elements in XAML Designer
 ms.date: 05/14/2018
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bae8f676a009ef9e5b3560feff15b74410cc52ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668616"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592921"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>使用 XAML 設計工具中的項目
 
@@ -86,7 +86,7 @@ XAML 設計工具中的邊界決定畫板上項目周圍的空白間距。 例�
 當您開啟邊界裝飾項但未設定相反側的邊界時，相反側的邊界會根據畫板中的項目位置設為正確的值。 請一律至少為相反側的邊界 (例如 [左] 和 [右] 邊界) 設定一個屬性。
 
 > [!IMPORTANT]
-> 放在某些版面配置容器 (例如 [Canvas](xref:Windows.UI.Xaml.Controls.Canvas)) 中的元素沒有邊界裝飾項。 視 `StackPanel` 的方向而定，放在 [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) 內的元素會有左右邊界或上下邊界的邊界裝飾項。
+> 放在某些版面配置容器 (例如 [Canvas](xref:Windows.UI.Xaml.Controls.Canvas)) 中的元素沒有邊界裝飾項。 視 [ 的方向而定，放在 ](xref:Windows.UI.Xaml.Controls.StackPanel)StackPanel`StackPanel` 內的元素會有左右邊界或上下邊界的邊界裝飾項。
 
 ## <a name="group-and-ungroup-elements"></a>將項目群組和取消群組
 
@@ -99,7 +99,7 @@ XAML 設計工具中的邊界決定畫板上項目周圍的空白間距。 例�
 2. 以滑鼠右鍵按一下選取的項目，並指向 [群組置入]，然後按一下您要置入群組的版面配置容器類型。
 
     > [!TIP]
-    > 如果您選取 [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox)、[Border](xref:Windows.UI.Xaml.Controls.Border) 或 [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) 來將元素分組，元素就會放在 [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border)或 [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) 內的新 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中。 如果您將這其中一個版面配置容器中的元素取消分組，則只會刪除 [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox)、[Border](xref:Windows.UI.Xaml.Controls.Border) 或 [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer)，[Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板則會保留下來。 若要刪除 `Grid` 面板，請再次取消項目的群組。
+    > 如果您選取 [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox)、[Border](xref:Windows.UI.Xaml.Controls.Border) 或 [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) 來將元素分組，元素就會放在 [Viewbox](xref:Windows.UI.Xaml.Controls.Grid), [Border](xref:Windows.UI.Xaml.Controls.Viewbox)或 [ScrollViewer](xref:Windows.UI.Xaml.Controls.Border) 內的新 [Grid](xref:Windows.UI.Xaml.Controls.ScrollViewer) 面板中。 如果您將這其中一個版面配置容器中的元素取消分組，則只會刪除 [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox)、[Border](xref:Windows.UI.Xaml.Controls.Border) 或 [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer)，[Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板則會保留下來。 若要刪除 `Grid` 面板，請再次取消項目的群組。
 
 若要將項目取消群組並刪除版面配置，請以滑鼠右鍵按一下您要取消群組的群組，然後按一下 [取消群組]。 您也可以以滑鼠右鍵按一下 [文件大綱] 視窗中的選取項目，然後按一下 [群組置入] 或 [取消群組]，將項目群組或取消群組。
 
@@ -107,7 +107,7 @@ XAML 設計工具中的邊界決定畫板上項目周圍的空白間距。 例�
 
 您可以使用版面配置重設命令，還原某個項目特定版面配置屬性的預設值。 您可以使用此命令，個別或全部重設項目的邊界、對齊方式、寬度、高度和大小。
 
-若要重設項目配置，請在 [文件大綱] 視窗或畫板中，以滑鼠右鍵按一下項目，然後依序選擇 [版面配置] > [重設 *PropertyName*]，其中 *PropertyName* 是您要重設的屬性 (或者依序選擇 [版面配置] > [全部重設]，以重設項目的所有版面配置屬性)。
+若要重設專案配置，請以滑鼠右鍵按一下 [檔大綱] 視窗或畫板中的專案，**然後選擇 [配置] > ** **重設** *propertyname*，其中*PropertyName*是您要重設的屬性（**或選擇 [** 配置] > [**全部重設**]，以重設專案的所有版面配置屬性）。
 
 ## <a name="see-also"></a>請參閱
 

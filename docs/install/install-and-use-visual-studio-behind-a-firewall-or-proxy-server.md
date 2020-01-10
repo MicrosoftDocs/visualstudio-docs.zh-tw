@@ -10,19 +10,19 @@ helpviewer_keywords:
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs
 ms.assetid: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 12b8f29f80f80a4322dc6a4cf43061696db6f370
-ms.sourcegitcommit: 4b911e768601992ad42dd5911dc6a01e1fe48588
+ms.openlocfilehash: c33de2ef29394cc09b6a65072439c745ca24af94
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413567"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594093"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
@@ -43,7 +43,7 @@ ms.locfileid: "73413567"
 
 #### <a name="microsoft-domains"></a>Microsoft 網域
 
-| Domain | 用途 |
+| Domain | 目的 |
 | - | - |
 | go.microsoft.com | 安裝 URL 解析 |
 | aka.ms | 安裝 URL 解析 |
@@ -84,7 +84,7 @@ ms.locfileid: "73413567"
 
 為了確保您在防火牆或 Proxy 伺服器後方使用 Visual 或 Azure 服務時，能存取所需的所有服務，以下是您應該新增至允許清單的 URL，以及建議開啟的連接埠和通訊協定。
 
-| 服務或案例 | DNS 端點 | 通訊協定 | 連接埠 | 描述 |
+| 服務或案例 | DNS 端點 | 通訊協定 | 連接埠 | Description |
 | - | - | - | - | - |
 | URL<br>解析 | go.microsoft.com<br><br>aka.ms | | | 用來縮短 URL，其將會進一步解析為較長的 URL |
 | 起始頁 | vsstartpage.blob.core.windows.net | | 443 | 用來顯示起始頁上的「開發人員新聞」(僅限 Visual Studio 2017) |
@@ -104,7 +104,7 @@ ms.locfileid: "73413567"
 | Web Linter | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Cookiecutter<br>總管範本<br>探索 <br><br>Cookiecutter <br>總管專案<br> 建立 | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | 用來從我們建議的摘要和 GitHub 存放庫探索線上範本 <br><br>用來從需要單次隨選安裝來自 Python 套件索引 (PyPI) 之 Cookiecutter Python 套件的 Cookiecutter 範本建立專案 |
 | Python 套件 <br>探索<br><br>Python 套件 <br>管理<br><br>新增 <br>Python <br> 專案 <br>範本 | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | 提供搜尋 pip 套件的能力<br><br>用來在遺失 pip 的情況下自動安裝它 <br><br>用來將下列新的 Python 專案範本解析成 Cookiecutter 範本 URL：<br> - 分類器專案<br>- 叢集專案 <br> - 迴歸專案 <br> - 使用 PyKinect 的 PyGame <br> - Pyvot 專案 |
-| Office Web <br>Add-In - 增益集 <br> Manifest <br>驗證 <br>服務 | verificationservice.osi.office.net | https | 443 | 用來驗證針對 Office Web 增益集的資訊清單 |
+| Office Web <br>Add-In - 增益集 <br> file:/// <br>驗證 <br>服務 | verificationservice.osi.office.net | https | 443 | 用來驗證針對 Office Web 增益集的資訊清單 |
 | SharePoint 和 <br>Office 增益集 | sharepoint.com | https | 443 | 用來針對 SharePoint Online 發行及測試 SharePoint 和 Office 增益集 |
 | 工作流程管理員 <br>測試服務<br> 主機 | | http | 12292 | 自動針對搭配工作流程測試 SharePoint 增益集所建立的防火牆規則 |
 | 自動收集的 <br>可靠性統計資料 <br>及其他 <br>客戶經驗 <br>改進計畫 (CEIP)<br> (針對 Azure SDK 及 <br>SQL 工具) <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https | 443 | 用來將可靠性統計資料 (當機/停止回應資料) 從使用者傳送至 Microsoft。 若已啟用 [Windows 錯誤報告]，系統仍然會上傳實際的當機/停止回應傾印，此設定只會抑制統計資訊 <br>用來向 Visual Studio 顯示針對 Azure 工具 SDK 擴充功能的匿名使用模式，以及 SQL 工具的使用模式 |

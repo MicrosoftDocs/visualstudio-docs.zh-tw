@@ -11,23 +11,23 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2a2179a759bc11a9466361d3c8cc2df45c12f20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a14209d895b461c64b30d0f1690b68484f09d970
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648587"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586753"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 應用程式中建立查閱資料表
 
 「詞彙*查閱資料表*」（有時稱為「*查閱*系結」）描述的控制項會根據另一個資料表中的外鍵欄位值，顯示一個資料表的資訊。 您可以在 [**資料來源**] 視窗中，將父資料表或物件的主要節點拖曳到已系結至相關子資料工作表中之資料行或屬性的控制項，以建立查閱資料表。
 
-例如，假設 sales 資料庫中的 `Orders` 資料表。 @No__t_0 資料表中的每筆記錄都包含 `CustomerID`，以指出哪個客戶下訂單。 @No__t_0 是指向 `Customers` 資料表中之客戶記錄的外鍵。 當您從 [`Orders`] 資料表顯示訂單清單時，您可能會想要顯示實際的客戶名稱，而不是 [`CustomerID`]。 由於客戶名稱位於 `Customers` 資料表中，因此您必須建立查閱資料表以顯示客戶名稱。 查閱資料表會使用 `Orders` 記錄中的 `CustomerID` 值來流覽關聯性，並傳回客戶名稱。
+例如，假設 sales 資料庫中的 `Orders` 資料表。 `Orders` 資料表中的每筆記錄都包含 `CustomerID`，以指出哪個客戶下訂單。 `CustomerID` 是指向 `Customers` 資料表中之客戶記錄的外鍵。 當您從 [`Orders`] 資料表顯示訂單清單時，您可能會想要顯示實際的客戶名稱，而不是 [`CustomerID`]。 由於客戶名稱位於 `Customers` 資料表中，因此您必須建立查閱資料表以顯示客戶名稱。 查閱資料表會使用 `Orders` 記錄中的 `CustomerID` 值來流覽關聯性，並傳回客戶名稱。
 
 ## <a name="to-create-a-lookup-table"></a>若要建立查閱資料表
 
@@ -68,7 +68,7 @@ ms.locfileid: "72648587"
         > [!NOTE]
         > 如果**ListBox**或**ListView**控制項沒有出現在清單中，您可以將這些控制項加入清單中。 如需相關資訊，請參閱[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
-    - 從 <xref:System.Windows.Controls.Primitives.Selector> 衍生的任何自訂控制項。
+    - 從 <xref:System.Windows.Controls.Primitives.Selector>衍生的任何自訂控制項。
 
         > [!NOTE]
         > 如需如何將自訂控制項加入至 [**資料來源**] 視窗中的專案之控制項清單的詳細資訊，請參閱[將自訂控制項加入至 [資料來源] 視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。

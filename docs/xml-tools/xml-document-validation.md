@@ -3,17 +3,17 @@ title: XML 編輯器中的 XML 檔驗證
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c4133268f2e07753ab7ecd276bf92712484e9f5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 389328e97f29d97962353e86f73c39c7c5459bfc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604052"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592408"
 ---
 # <a name="xml-document-validation"></a>XML 文件驗證
 
