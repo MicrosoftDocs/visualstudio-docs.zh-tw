@@ -18,17 +18,17 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 16232a72cd37f8d1d68760f032b6050e0bdf74c5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 65059e285777e48633da5eb7e8723e3997f37dfa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300356"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844442"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>如何：不成功的 Visual Studio 專案升級疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-有時候 Visual Studio 無法完全從舊版的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]轉換專案。 如果下列各節中的秘訣無法解決您的特定問題，您可能可以在 TechNet [Wiki：開發入口網站](https://go.microsoft.com/fwlink/?LinkId=254808)上找到詳細資訊。
+有時候 Visual Studio 無法完全從舊版的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]轉換專案。 如果下列各節中的秘訣無法解決您的特定問題，您可能可以在 TechNet [Wiki：開發入口網站](https://social.technet.microsoft.com/wiki/contents/articles/706.wiki-development-portal.aspx#Visual_Studio)上找到詳細資訊。
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>因為找不到檔案，所以無法執行專案
  專案檔包含硬式編碼的檔案路徑，當您按下 F5 時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 用來執行專案。 這些路徑可能包括 devenv .exe 和其他必要檔案的位置。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的升級版本中，這些檔案的路徑可能已變更。
@@ -56,5 +56,5 @@ ms.locfileid: "74300356"
 
    如果您想要在升級的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本中執行專案，您必須更新專案的參考，同時更新呼叫參考的任何 `Imports` 或 `Using` 語句。 如果您的專案載入 IDE 中，您可以使用**方案總管**或 [**參考管理員**] 對話方塊來更新參考。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [/Upgrade （devenv .exe）](../ide/reference/upgrade-devenv-exe.md) [轉換成 ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

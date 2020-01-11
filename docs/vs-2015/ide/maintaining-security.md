@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dfff199d49bcb801b85452b37c4282ff53d01fe4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6111900fb4c7b12a6238046fd27c3f6dad9d15ae
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294227"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848334"
 ---
 # <a name="maintaining-security"></a>維護安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "74294227"
 
  此外，您不僅必須對自己的應用程式保持警覺心，也必須對執行應用程式的平台和應用程式相依的其他產品，注意其當前的安全性威脅和問題。
 
- [安全性、隱私權和帳戶](https://go.microsoft.com/fwlink/?LinkId=72881)取得安全性、隱私權和使用者帳戶的協助，包括病毒、密碼、家長監護、防火牆和磁片磁碟機加密的相關資訊。
+ [安全性、隱私權和帳戶](https://windows.microsoft.com/windows/security-privacy-accounts-help#security-privacy-accounts-help=windows-8&v0h=winrttab1&v1h=win8tab1&v2h=win7tab1&v3h=winvistatab1)取得安全性、隱私權和使用者帳戶的協助，包括病毒、密碼、家長監護、防火牆和磁片磁碟機加密的相關資訊。
 
  [Microsoft 資訊安全公告搜尋](/security-updates/)此頁面可讓您輕鬆地尋找先前發行的佈告欄。 安全性佈告欄是專門為 IT 專業人員所設計，會提供關於安全性更新的詳細資訊。
 

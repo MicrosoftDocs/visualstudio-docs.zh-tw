@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d47e31b70e56ed0b0e0957d2407a043329a5a10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 383331e8fee2b009282aa38a8eb20af8b181f7e5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594535"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845897"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
@@ -30,7 +30,7 @@ ms.locfileid: "75594535"
 
 以下是您在登入後預期及可執行事項的完整清單：
 
-- **存取 Visual Studio Dev Essentials 方案** - 此方案包含免費的軟體供應項目、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 。
+- **存取 Visual Studio Dev Essentials 方案** - 此方案包含免費的軟體供應項目、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 。
 
 - **同步處理您的 Visual Studio 設定** - 您自訂的設定 (例如按鍵繫結關係、視窗配置和色彩佈景主題)，會在您從任何裝置登入 Visual Studio 時立即套用。 請參閱 [Visual Studio 中的同步設定](../ide/synchronized-settings-in-visual-studio.md)。
 

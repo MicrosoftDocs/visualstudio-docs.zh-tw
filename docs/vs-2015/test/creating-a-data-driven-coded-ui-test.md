@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3aec055c0fb0253f0b233f51e50485ccb4ee3382
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1db35e1eb98ad23a4414a48389092a3b05485527
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302600"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851858"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "74302600"
 
  **Requirements**
 
-- Visual Studio Enterprise
+- Visual Studio 企業版
 
 ## <a name="create-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式碼 UI 測試
  這個範例會建立在 Windows 計算機應用程式上執行的自動程式碼 UI 測試。 它將兩個數字相加，並使用判斷提示來驗證總和是否正確。 接下來，會編碼兩個數字的判斷提示和參數值使其成為資料驅動並儲存在逗號分隔值 (.csv) 檔案中。
@@ -195,7 +195,7 @@ ms.locfileid: "74302600"
 
          ![使用搜尋屬性來協助撰寫程式碼](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
 
-3. 儲存方案。
+3. 儲存組態。
 
 #### <a name="step-5--run-the-data-driven-test"></a>步驟 5 - 執行資料驅動測試
 
@@ -205,7 +205,7 @@ ms.locfileid: "74302600"
 
    **指引**
 
-   如需詳細資訊，請參閱[使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：內部測試 (英文)](https://go.microsoft.com/fwlink/?LinkID=255188) 和[使用 Visual Studio 2012 測試持續傳遞 – 第 5 章：自動化系統測試 (英文)](https://go.microsoft.com/fwlink/?LinkID=255196)
+   如需詳細資訊，請參閱[使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：內部測試 (英文)](https://msdn.microsoft.com/library/jj159340.aspx) 和[使用 Visual Studio 2012 測試持續傳遞 – 第 5 章：自動化系統測試 (英文)](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ## <a name="q--a"></a>問與答
 
@@ -250,7 +250,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 
  如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 UIMap.cs 檔案可用來覆寫 UIMapDesigner.cs 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>

@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db7430d03bbce065b75e890736253c6ba05752d0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7bc1e36f6d5dea12a8c46e88a3e1f450cc30caa6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298921"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847215"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,7 +136,7 @@ ms.locfileid: "74298921"
   
 - **SharePoint 2010 和 SharePoint 2013 應用程式事件**  
   
-   您可以記錄在 Visual Studio 外部執行之 SharePoint 2010 和 2013 應用程式的使用者設定檔事件以及統一登入系統 (ULS) 事件的子集。 您可以將這些事件儲存成 .iTrace 檔案。 需要 Visual Studio Enterprise 2015、舊版的 Visual Studio Ultimate，或在**追蹤**模式下執行[Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkId=320384) 。  
+   您可以記錄在 Visual Studio 外部執行之 SharePoint 2010 和 2013 應用程式的使用者設定檔事件以及統一登入系統 (ULS) 事件的子集。 您可以將這些事件儲存成 .iTrace 檔案。 需要 Visual Studio Enterprise 2015、舊版的 Visual Studio Ultimate，或在**追蹤**模式下執行[Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkID=309771) 。  
   
    當您開啟 .iTrace 檔案時，請輸入 SharePoint 相互關聯識別碼以尋找其相符的 Web 要求、檢視記錄的事件，並從特定事件開始偵錯。 如果檔案包含未處理的例外狀況，您可以選擇某個相互關聯識別碼，開始偵錯例外狀況。  
   
@@ -186,7 +186,7 @@ ms.locfileid: "74298921"
  [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>部落格  
- [Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)  
+ [Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)  
   
-### <a name="forums"></a>論壇  
- [Visual Studio 的診斷功能](https://go.microsoft.com/fwlink/?LinkId=262263)
+### <a name="forums"></a>Forums  
+ [Visual Studio 的診斷功能](https://social.msdn.microsoft.com/Forums/vsdebug)

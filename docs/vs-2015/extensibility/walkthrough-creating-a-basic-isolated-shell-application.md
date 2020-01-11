@@ -12,19 +12,19 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b6dc84dd8d9f19012c4d09ba9bfd974ec181b9f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291267"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850341"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>逐步解說：建立基本獨立 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本逐步解說示範如何建立獨立的 shell 解決方案、自訂 [說明] 工具視窗，以及建立安裝程式來安裝獨立的 shell。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>必要條件：  
  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱[VISUAL STUDIO SDK](../extensibility/visual-studio-sdk.md)。 若要部署獨立的 shell，您也必須使用 Visual Studio Shell （獨立模式）可轉散發套件。  
   
 ## <a name="creating-an-isolated-shell-solution"></a>建立獨立的 Shell 解決方案  
@@ -163,7 +163,7 @@ ms.locfileid: "74291267"
 6. 重建方案，並開始對獨立的 shell 進行偵錯工具。 [說明]/[關於] 方塊應該大約是正方形。  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>部署獨立模式 Shell 應用程式之前  
- 您的獨立 shell 應用程式可以安裝在任何具有 Visual Studio Shell （獨立模式）可轉散發套件的電腦上。 如需可轉散發套件的詳細資訊，請參閱 Visual Studio 擴充性[下載](https://go.microsoft.com/fwlink/?LinkID=119298)網站。  
+ 您的獨立 shell 應用程式可以安裝在任何具有 Visual Studio Shell （獨立模式）可轉散發套件的電腦上。 如需可轉散發套件的詳細資訊，請參閱 Visual Studio 擴充性[下載](https://msdn.microsoft.com/vstudio/bb984878.aspx)網站。  
   
 ## <a name="deploying-the-isolated-shell-application"></a>部署獨立模式 Shell 應用程式  
  您可以藉由建立安裝專案，將獨立的 shell 應用程式部署到目的電腦。 您必須指定下列專案：  
@@ -216,7 +216,7 @@ ms.locfileid: "74291267"
   
     7. 啟動顯示 .bmp  
   
-5. 按一下 [**加入專案輸出**] 按鈕，然後新增**MyVSShellStub/主要輸出**。 按一下 [確定] **Walkthrough: Calling Code in an VSTO Add-in from VBA**。  
+5. 按一下 [**加入專案輸出**] 按鈕，然後新增**MyVSShellStub/主要輸出**。 按一下 [ **確定**]。  
   
 6. 在左窗格的 [**目的地電腦**] 底下，以滑鼠右鍵按一下 [ **Fabrikam 音樂編輯器 [INSTALLDIR]]** 節點，然後新增名為 [**擴充**功能] 的**新資料夾**。  
   
@@ -248,7 +248,7 @@ ms.locfileid: "74291267"
   
 18. 在 [**您要尋找什麼？** ] 窗格中，選擇下拉式清單中的 [登錄**專案**]，然後按 **[下一步]** 。  
   
-19. 在 [**您要如何尋找它？** ] 窗格中，選取 [ **HKEY_LOCAL_MACHINE** ] 做為登錄根目錄。 輸入**SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell**作為64位系統或32位系統的**SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** ，並輸入**Install**做為登錄值。 按 [下一步]。  
+19. 在 [**您要如何尋找它？** ] 窗格中，選取 [ **HKEY_LOCAL_MACHINE** ] 做為登錄根目錄。 輸入**SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell**作為64位系統或32位系統的**SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** ，並輸入**Install**做為登錄值。 按 [ **下一步**]。  
   
 20. 在 [**您要對此值執行什麼動作？** ] 窗格中，輸入**此產品需要安裝 Visual Studio 2015 獨立模式 Shell 可**轉散發套件。 做為顯示文字，然後按一下 **[完成]** 。  
   

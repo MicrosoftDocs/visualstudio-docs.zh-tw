@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83606b56e6509f1db77b590ec44d991ef97cf82e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d0c001ec8310759309c88c49c37050516b110b81
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298167"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850797"
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 
@@ -34,7 +34,7 @@ ms.locfileid: "74298167"
 
 #### <a name="to-divide-an-application-into-layers"></a>將應用程式分割到各圖層
 
-1. 以應用程式結構為方案結構的基礎，例如 Web 應用程式、服務應用程式或桌面應用程式。 [Microsoft 應用程式架構指南中的應用程式 archetype 中](https://go.microsoft.com/fwlink/?LinkId=196681)會討論各種常見的架構。
+1. 以應用程式結構為方案結構的基礎，例如 Web 應用程式、服務應用程式或桌面應用程式。 [Microsoft 應用程式架構指南中的應用程式 archetype 中](https://docs.microsoft.com/previous-versions/msp-n-p/ee658107(v=pandp.10)?redirectedfrom=MSDN)會討論各種常見的架構。
 
 2. 建立 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案，我們稱之為架構方案。 這個方案會用以建立系統的整體設計。 它包含模型，但不含程式碼。
 
@@ -100,7 +100,7 @@ ms.locfileid: "74298167"
 
 #### <a name="to-create-a-solution-template"></a>建立方案範本
 
-1. 如果您尚未這麼做，請[下載並安裝 [匯出範本]](https://go.microsoft.com/fwlink/?LinkId=196686)。
+1. 如果您尚未這麼做，請[下載並安裝 [匯出範本]](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard)。
 
 2. 建立要用做未來專案起點的方案結構。
 
@@ -109,7 +109,7 @@ ms.locfileid: "74298167"
 4. 遵循精靈中的指示，選取要包含在範本中的專案，提供範本的名稱和描述，並指定輸出位置。
 
 > [!NOTE]
-> 本主題中的資料是摘錄自《Visual Studio 架構工具指南》，作者為 Visual Studio ALM Rangers，這是最有價值專家 (MVP)、Microsoft 服務及 Visual Studio 產品小組和作者的合作。 [按一下這裡下載完整的指引套件。](https://go.microsoft.com/fwlink/?LinkID=191984)
+> 本主題中的資料是摘錄自《Visual Studio 架構工具指南》，作者為 Visual Studio ALM Rangers，這是最有價值專家 (MVP)、Microsoft 服務及 Visual Studio 產品小組和作者的合作。 [按一下這裡下載完整的指引套件。](https://archive.codeplex.com/?p=vsarchitectureguide)
 
 ## <a name="related-materials"></a>相關資料
 
@@ -117,7 +117,7 @@ ms.locfileid: "74298167"
 
 [Visual Studio 架構工具指引](../modeling/visual-studio-architecture-tooling-guidance.md)-在小組中管理模型的進一步指引
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 在[版本控制下管理模型和圖表](../modeling/manage-models-and-diagrams-under-version-control.md)
 在[開發過程中使用模型](../modeling/use-models-in-your-development-process.md)

@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d7d488581aefee150b1a186eaba48576f0b8146d
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 53e3c5fe30acf3221d52b0f6bd0e85aa9bb01085
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74537953"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851211"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>歡迎使用 Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "74537953"
 >
 > 按一下這裡以取得 [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) 版本資訊。
 
- 下載免費的 [Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=517106) ，馬上開始撰寫程式碼。 如果您要進行跨平台開發，請務必安裝選擇性套件 (您可以從 [其他版本的 Visual Studio](https://visualstudio.microsoft.com/vs/compare/)獲取更多功能)。
+ 下載免費的 [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) ，馬上開始撰寫程式碼。 如果您要進行跨平台開發，請務必安裝選擇性套件 (您可以從[其他版本的 Visual Studio](https://visualstudio.microsoft.com/vs/compare/) 獲取更多功能。)
 
  您可以直接建立新的專案，並開始撰寫程式碼； 選擇您要建立的應用程式類型； 也可以 [導覽](./ide/visual-studio-ide.md) Visual Studio IDE 以熟悉工具。
 
@@ -90,7 +90,7 @@ ms.locfileid: "74537953"
  規劃、建立及執行您應用程式的手動和自動化測試。 使用 Visual Studio Team Services 時，測試計畫、套件、測試案例和您的測試結果會儲存在雲端，使用 Team Foundation Server 時，則會儲存在內部部署。 進一步了解[測試應用程式](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)。
 
 ### <a name="deliver-your-teams-code-faster"></a>更快交付小組的程式碼
- 移除小組成員之間的障礙，並改進共同作業。 進一步自動化應用程式的發行，將應用程式發行至開發的每個階段，再一直發行至生產環境。 即時監視您的應用程式效能和可用性。 收集有關客戶實際上如何使用您的應用程式的即時使用狀況資料。 如需詳細資訊，請參閱 [DevOps 與應用程式生命週期管理](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)。
+ 移除小組成員之間的障礙，並改進共同作業。 進一步自動化應用程式的發行，將應用程式發行至開發的每個階段，再一直發行至生產環境。 即時監視您的應用程式效能和可用性。 收集有關客戶實際上如何使用您的應用程式的即時使用狀況資料。 如需詳細資訊，請參閱 [DevOps 與 應用程式開發週期管理](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) 。
 
 ## <a name="whats-new"></a>新功能
 

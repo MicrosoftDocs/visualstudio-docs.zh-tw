@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74853486"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847467"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 意見反應選項
 
@@ -75,12 +75,12 @@ ms.locfileid: "74853486"
 
 ## <a name="contact-microsoft-support"></a>連絡 Microsoft 支援
 
-如需 Visual Studio 的支援資訊，請參閱[產品生命週期和服務](/visualstudio/releases/2019/servicing/)頁面。 如需其他 Microsoft 產品和服務，請參閱 [Microsoft 支援](https://go.microsoft.com/fwlink/?LinkID=99019)以取得線上說明。
+如需 Visual Studio 的支援資訊，請參閱[產品生命週期和服務](/visualstudio/releases/2019/servicing/)頁面。 如需其他 Microsoft 產品和服務，請參閱 [Microsoft 支援](https://support.microsoft.com/)以取得線上說明。
 
 > [!NOTE]
 > 在美國和加拿大以外地區提供的支援可能會有所不同。 如需其他國家/地區的連絡人清單，請參閱 [Microsoft 全球網站](https://www.microsoft.com/worldwide/)。
 
-需要 Microsoft 直接管理支援的較大型組織，可以透過各種「企業支援」供應項目簽訂服務合約。 如需詳細資訊，請參閱 [Microsoft 企業支援解決方案](https://go.microsoft.com/fwlink/?LinkId=258223)。
+需要 Microsoft 直接管理支援的較大型組織，可以透過各種「企業支援」供應項目簽訂服務合約。 如需詳細資訊，請參閱 [Microsoft 企業支援解決方案](https://www.microsoft.com/industry/services/support)。
 
 如果產品是隨附安裝於新電腦或設備，硬體製造商將會提供此軟體的技術支援和協助。 如需支援，請直接連絡製造商。
 

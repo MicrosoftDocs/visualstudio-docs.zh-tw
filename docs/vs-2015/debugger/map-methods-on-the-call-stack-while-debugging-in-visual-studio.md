@@ -30,12 +30,12 @@ caps.latest.revision: 43
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c3ddf45a48f6b9d8a5ac8155012f168703c67aa3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2e8376884f72aeca2f3bf56f0d7bbc1636379a18
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300785"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847299"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "74300785"
 
 - 可以偵錯的程式碼，例如 Visual C# .NET、Visual Basic .NET、C++、JavaScript 或 X++
 
-  請參閱：[影片：使用 Code Map 偵錯工具整合（Channel 9）以視覺化方式進行偵錯工具](https://go.microsoft.com/fwlink/?LinkId=293418)•[對應呼叫堆疊](#MapStack)•[對程式碼進行附注](#MakeNotes)•[使用下一個呼叫堆疊更新對應](#UpdateMap)•[將相關程式碼加入至對應圖](#AddRelatedCode)•[使用對應來尋找 bug](#FindBugs) • [Q & A](#QA)
+  請參閱：[影片：使用 Code Map 偵錯工具整合（Channel 9）以視覺化方式進行偵錯工具](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)•[對應呼叫堆疊](#MapStack)•[對程式碼進行附注](#MakeNotes)•[使用下一個呼叫堆疊更新對應](#UpdateMap)•[將相關程式碼加入至對應圖](#AddRelatedCode)•[使用對應來尋找 bug](#FindBugs) • [Q & A](#QA)
 
   如需您在處理 code map 時可使用的命令和動作的詳細資訊，請參閱[流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)。
 
@@ -165,5 +165,5 @@ ms.locfileid: "74300785"
 
   請參閱：[對應呼叫堆疊](#MapStack)•[對程式碼進行附注](#MakeNotes)•[使用下一個呼叫堆疊更新對應](#UpdateMap)•[將相關程式碼加入至對應圖](#AddRelatedCode)•[使用對應尋找 bug](#FindBugs)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [對應整個方案](../modeling/map-dependencies-across-your-solutions.md)的相依性[使用 code map 來對應用程式進行 debug](../modeling/use-code-maps-to-debug-your-applications.md) ，使用 Code Map 分析器[流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)來[尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)

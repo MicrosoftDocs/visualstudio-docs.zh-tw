@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 35a800d83e10b1c47096876fb3f9181a4db2f7a2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8bae47d5fd759de66777c4e1472603d3bf4a193d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300976"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843944"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007：避免使用例外狀況進行控制流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "74300976"
 ## <a name="rule-description"></a>規則描述  
  雖然使用例外處理常式來攔截中斷程式執行的錯誤和其他事件是一個好方法，但是在一般的程式執行邏輯中使用例外處理常式可能會很耗費資源，應予以避免。 在大部分情況下，最好只針對很少發生且未預期的情況使用例外狀況。 例外狀況不應該用來當做一般程式流程的一部分傳回值。 在許多情況下，您可以驗證值並使用條件式邏輯以暫止執行導致問題的陳述式，來避免引發例外狀況。  
   
- 如需詳細資訊，請參閱 MSDN 上 [Microsoft Patterns and Practices](https://go.microsoft.com/fwlink/?LinkID=177825) 文件庫中＜改進 .NET 應用程式效能和延展性＞(英文) 的＜第 5 章 - 改進 Managed 程式碼的效能＞(英文) 中的**例外狀況管理 (英文)** 一節。  
+ 如需詳細資訊，請參閱 MSDN 上 **Microsoft Patterns and Practices** 文件庫中＜改進 .NET 應用程式效能和延展性＞(英文) 的＜第 5 章 - 改進 Managed 程式碼的效能＞(英文) 中的[例外狀況管理 (英文)](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic24) 一節。  
   
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
  按兩下 [錯誤清單] 視窗中的訊息，瀏覽至 [標記] 檢視。 尋找包含 **.NET CLR Exceptions(@ProcessInstance)\\# of Exceps Thrown / sec** 度量的欄位。 判斷是否有特定的程式執行階段，當中的例外狀況處理比其他階段更頻繁。 使用取樣設定檔，嘗試識別 throw 陳述式以及產生頻繁例外狀況的 try/catch 區塊。 如果有必要，請在 catch 區塊中加入邏輯，協助您了解最常處理的例外狀況。 如果可行，請將經常執行的 throw 陳述式或 catch 區塊，取代為簡單的流程控制邏輯或驗證程式碼。  

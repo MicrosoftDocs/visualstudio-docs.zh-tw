@@ -11,30 +11,30 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bf997205979cdfbb9c9f03492a5943f458e2d9c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03360bfc01110e7b4ef73956f0199aaaed9cee2c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342266"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848974"
 ---
-# <a name="automation-support-for-options-pages"></a>自動化支援的選項頁面
-Vspackage 可以提供自訂**選項**對話方塊來**工具**功能表 (**工具選項**頁面) 中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]並可供自動化模型。
+# <a name="automation-support-for-options-pages"></a>[選項] 頁面的自動化支援
+Vspackage 可以將 [自訂**選項**] 對話方塊提供給 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的 [**工具**] 功能表（[工具] [**選項**] 頁面），並可讓它們可供 automation 模型使用。
 
 ## <a name="tools-options-pages"></a>工具選項頁
- 若要建立**工具選項**頁面上，VSPackage 必須提供環境透過 VSPackage 的實作傳回的使用者控制項實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>方法。 (或者，若為 managed 程式碼，<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>方法。)
+ 若要建立 [**工具選項**] 頁面，VSPackage 必須透過 VSPackage 的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> 方法的執行，提供傳回給環境的使用者控制項實。 （或者，如果是 managed 程式碼，則 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> 方法）。
 
- 它是選擇性的但極力建議您，以允許存取這個新的頁面，透過 automation 模型。 您可以執行下列步驟：
+ 這是選擇性的，但強烈建議您透過 automation 模型來允許存取這個新頁面。 您可以使用下列步驟來執行此動作：
 
-1. 擴充<xref:EnvDTE._DTE.Properties%2A>透過實作 IDispatch 衍生物件的物件。
+1. 透過 IDispatch 衍生物件的執行，擴充 <xref:EnvDTE._DTE.Properties%2A> 物件。
 
-2. 傳回實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法 (或 managed 程式碼<xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A>方法) 至 IDispatch 衍生物件。
+2. 將 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 方法（或 <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> 方法的 managed 程式碼）的執行傳回給 IDispatch 衍生的物件。
 
-3. 當自動化取用者呼叫<xref:EnvDTE._DTE.Properties%2A>方法，在自訂**選項**屬性頁面中，環境會使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法，以取得自訂**工具選項**頁面的自動化實作。
+3. 當自動化取用者在自訂**選項**屬性頁上呼叫 <xref:EnvDTE._DTE.Properties%2A> 方法時，環境會使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 方法來取得自訂**工具選項**頁面的自動化執行。
 
-4. VSPackage 的 automation 物件則用來提供每個<xref:EnvDTE.Property>所傳回<xref:EnvDTE._DTE.Properties%2A>。
+4. 然後，VSPackage 的 automation 物件會用來提供 <xref:EnvDTE._DTE.Properties%2A>所傳回的每個 <xref:EnvDTE.Property>。
 
-   如需範例實作自訂**工具選項**頁面上，請參閱[VSSDK 範例](https://aka.ms/vs2015sdksamples)。
+   如需執行自訂**工具選項**頁面的範例，請參閱[VSSDK 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [公開專案物件](../../extensibility/internals/exposing-project-objects.md)

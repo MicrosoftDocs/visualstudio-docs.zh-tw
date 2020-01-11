@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5acbb4d2966e89f7913fa1479b882fad5c9650f7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0d9887e3c7cf283bff453e458502400a7ade1a41
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295817"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849561"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定義鎖定原則來建立唯讀區段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "74295817"
 > [!NOTE]
 > 藉由使用反映，可以規避鎖定原則。 它為協力廠商開發人員提供清楚的界限，但不提供強大的安全性。
 
- 如需詳細資訊和範例，請 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)][視覺效果和模型化 SDK](https://go.microsoft.com/fwlink/?LinkId=186128)網站。
+ 如需詳細資訊和範例，請 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)][視覺效果和模型化 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)網站。
 
 ## <a name="setting-and-getting-locks"></a>設定和取得鎖定
  您可以在存放區、資料分割或個別元素上設定鎖定。 例如，此語句會防止刪除模型專案，而且也會防止其屬性遭到變更：
@@ -77,14 +77,14 @@ partition.SetLocks(Locks.Delete);
 
   您無法在資料分割或儲存區上設定鎖定，同時停用個別元素的鎖定。
 
-|值|如果 `IsLocked(Value)` 為 true 則為意義|
+|{2&gt;值&lt;2}|如果 `IsLocked(Value)` 為 true 則為意義|
 |-----------|------------------------------------------|
-|無|無限制。|
+|None|無限制。|
 |屬性|無法變更元素的網域屬性。 這不適用於關聯性中網域類別的角色所產生的屬性。|
 |Add|無法在資料分割或存放區中建立新的元素和連結。<br /><br /> 不適用於 `ModelElement`。|
-|移動|如果 `element.IsLocked(Move)` 為 true，或 `targetPartition.IsLocked(Move)` 為 true，則無法在分割區之間移動元素。|
+|Move|如果 `element.IsLocked(Move)` 為 true，或 `targetPartition.IsLocked(Move)` 為 true，則無法在分割區之間移動元素。|
 |刪除|如果已在專案本身上設定此鎖定，或在任何要傳播刪除的專案上（例如內嵌專案和圖形），則無法刪除元素。<br /><br /> 您可以使用 `element.CanDelete()` 來探索是否可以刪除元素。|
-|重新排列|無法變更 roleplayer 的連結順序。|
+|重新排序|無法變更 roleplayer 的連結順序。|
 |RolePlayer|無法變更來源為此元素的連結集合。 例如，新的專案無法內嵌在此元素底下。 這不會影響此元素為目標的連結。<br /><br /> 如果這個元素是連結，其來源和目標不會受到影響。|
 |全部|其他值的位 OR。|
 

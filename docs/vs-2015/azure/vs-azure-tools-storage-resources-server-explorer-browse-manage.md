@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7b7ec05e8d849f7e802ab1c1ff4464e0552ab6d6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291225"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849863"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>使用伺服器總管來瀏覽及管理儲存體資源
 
@@ -32,7 +32,7 @@ ms.locfileid: "74291225"
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>檢視和管理 Visual Studio 中的儲存體資源
 
-[伺服器總管] 會自動在您的儲存體模擬器帳戶中顯示 blob、佇列和資料表的清單。 儲存體模擬器帳戶會在**儲存體**節點下的 [伺服器總管] 中列出，作為 **開發** 節點。
+[伺服器總管] 會自動顯示您的儲存體模擬器帳戶中的 Blob、佇列和資料表清單。 儲存體模擬器帳戶會在**儲存體**節點下的 [伺服器總管] 中列出，作為 **開發** 節點。
 
 若要查看儲存體模擬器帳戶的資源，請展開 **開發** 節點。 當您展開 **開發** 節點時，如果尚未啟動儲存體模擬器，它會自動啟動。 此流程可能需要數秒鐘的時間。 當儲存體模擬器啟動時，您可以繼續在 Visual Studio 的其他區域中運作。
 
@@ -78,11 +78,11 @@ ms.locfileid: "74291225"
 
 1. 在 [上傳新的檔案] 對話方塊中，選取 [瀏覽] 按鈕來指定您想要上傳的檔案，然後在 [資料夾 (選擇性)] 方塊中輸入資料夾名稱。
 
-   ![將檔案上傳至 blob 資料夾](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
+   ![將檔案上傳至 Blob 資料夾](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
    您可以遵循相同的步驟將子資料夾加入至容器資料夾。 如果您未指定資料夾名稱，檔案會上傳至 Blob 容器的最上層。 檔案會出現在容器中的特定資料夾。
 
-   ![加入至 blob 容器的資料夾](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
+   ![資料夾新增到 Blob 容器](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
 
 1. 按兩下資料夾或選取 Enter 鍵以查看資料夾的內容。 當您位於容器的資料夾中，您可以藉由選取 [開啟上層目錄] \(箭頭) 按鈕來返回容器的根目錄。
 
@@ -122,7 +122,7 @@ Blob 資料會在本機快取，並在 Azure Blob 儲存體中針對 blob 的上
 
 若要上傳 blob，當容器開啟以在 blob 容器檢視中加以檢視時，選取 [上傳 Blob] 按鈕。
 
-您可以選擇一或多個檔案上傳，而且您可以上傳任何類型的檔案。 [Azure 活動記錄] 視窗會顯示上傳的進度。 如需如何使用 blob 資料的詳細資訊，請參閱[如何在 .NET 中使用 Azure Blob 儲存體](https://go.microsoft.com/fwlink/p/?LinkId=267911)。
+您可以選擇一或多個檔案上傳，而且您可以上傳任何類型的檔案。 [Azure 活動記錄] 視窗會顯示上傳的進度。 如需如何使用 blob 資料的詳細資訊，請參閱[如何在 .NET 中使用 Azure Blob 儲存體](https://www.windowsazure.com/develop/net/how-to-guides/blob-storage/)。
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>檢視傳送輸到 blob 的記錄檔
 
@@ -142,11 +142,11 @@ Blob 資料會在本機快取，並在 Azure Blob 儲存體中針對 blob 的上
 
 ## <a name="work-with-queue-resources"></a>使用佇列資源
 
-儲存體服務佇列裝載在 Azure 儲存體帳戶中。 您可以使用它們來讓您的雲端服務角色利用訊息傳遞機制彼此通訊並與其他服務通訊。 您可以透過雲端服務和外部用戶端的 web 服務以程式設計方式存取佇列。 您也可以在 Visual Studio 中使用 [伺服器總管] 直接存取佇列。
+儲存體服務佇列裝載在 Azure 儲存體帳戶中。 您可以使用它們來讓您的雲端服務角色利用訊息傳遞機制彼此通訊並與其他服務通訊。 您可以透過雲端服務和外部用戶端的 web 服務以程式設計方式存取佇列。 您也可以使用 Visual Studio 的 [伺服器總管] 直接存取佇列。
 
 當您開發使用佇列的雲端服務時，您可能會想要使用 Visual Studio 來建立佇列，並且在您開發和測試您的程式碼時以互動方式使用它們。
 
-在 [伺服器總管] 中，您可以檢視儲存體帳戶中的佇列、建立和刪除佇列、開啟佇列以檢視其訊息，以及將訊息加入至佇列。 當您開啟佇列進行檢視時，您可以檢視個別訊息，而且您可以使用左上角的按鈕在佇列上執行下列動作：
+透過 [伺服器總管]，您可以檢視儲存體帳戶中的佇列、建立和刪除佇列、開啟佇列檢視其訊息，以及加入訊息至佇列。 當您開啟佇列進行檢視時，您可以檢視個別訊息，而且您可以使用左上角的按鈕在佇列上執行下列動作：
 
 * 重新整理佇列的檢視。
 * 將訊息新增至佇列。
@@ -157,7 +157,7 @@ Blob 資料會在本機快取，並在 Azure Blob 儲存體中針對 blob 的上
 
 ![檢視佇列](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-如需儲存體服務佇列的詳細資訊，請參閱[以 .NET 開始使用 Azure 佇列儲存體](https://go.microsoft.com/fwlink/?LinkID=264702)。 如需儲存體服務佇列之 Web 服務的詳細資訊，請參閱 [佇列服務概念](https://go.microsoft.com/fwlink/?LinkId=264788)。 如需有關如何使用 Visual Studio 將訊息傳送至儲存體服務佇列的資訊，請參閱 [傳送訊息至儲存體服務佇列](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)。
+如需儲存體服務佇列的詳細資訊，請參閱[以 .NET 開始使用 Azure 佇列儲存體](https://www.windowsazure.com/develop/net/how-to-guides/queue-service/)。 如需儲存體服務佇列之 Web 服務的詳細資訊，請參閱 [佇列服務概念](https://msdn.microsoft.com/library/windowsazure/dd179353.aspx)。 如需有關如何使用 Visual Studio 將訊息傳送至儲存體服務佇列的資訊，請參閱 [傳送訊息至儲存體服務佇列](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)。
 
 > [!NOTE]
 > 儲存體服務佇列與 Azure 服務匯流排佇列不同。 如需服務匯流排佇列的詳細資訊，請參閱[服務匯流排佇列、主題和訂用帳戶](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)。
@@ -200,7 +200,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
     ![[新增實體] 按鈕](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. 在 [**加入實體**] 對話方塊中，輸入 [**PartitionKey**] 和 [**RowKey**] 屬性的值。
+1. 在 [新增實體] 對話方塊中，輸入 **PartitionKey** 和 **RowKey** 屬性的值。
 
     ![[新增實體] 對話方塊](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -213,7 +213,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 1. 若要開啟查詢產生器，請開啟資料表進行檢視。
 1. 選取資料表檢視工具列上的 [查詢產生器] 按鈕。
 
-    [查詢產生器] 對話方塊隨即出現。 下圖顯示建置於查詢產生器中的查詢。
+    [查詢產生器] 對話方塊會隨即出現。 下圖顯示建置於查詢產生器中的查詢。
 
     ![查詢產生器](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. 當您完成查詢建置時，請關閉對話方塊。 產生的查詢文字格式會出現在文字方塊中做為 WCF Data Services 篩選條件。

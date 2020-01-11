@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 03cd890802e5563ce2daeb78438c56f4452d74f0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b30e171756527352976dcb03abb0d1c32370c442
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299516"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849898"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio Debugger 附加至執行中處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "74299516"
 
     2. 在 [選取程式碼類型] 對話方塊中，按一下 [偵錯這些程式碼類型] ，然後選取要偵錯的類型。
 
-    3. 按一下 [確定] **Walkthrough: Calling Code in an VSTO Add-in from VBA**。
+    3. 按一下 [ **確定**]。
 
 4. 按一下 [附加]。
 
@@ -111,7 +111,7 @@ ms.locfileid: "74299516"
 
 如果您嘗試附加至未受信任的使用者帳戶所擁有的處理序，會出現安全性警告對話方塊確認訊息。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)。
 
-在某些情況下，在遠端桌面 (終端機服務) 工作階段中進行偵錯時，[可使用的處理序] 清單並不會顯示所有可使用的處理序。 如果您是以受限制的使用者身分執行 Visual Studio，則 [可使用的處理序] 清單不會顯示在工作階段 0 中執行的處理序，因為工作階段 0 是用於服務以及其他包括 w3wp.exe 的伺服器處理序。 您可藉由使用系統管理員帳戶來執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，或是從伺服器主控台 (而非終端機服務工作階段) 執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，來解決這個問題。 如果這些解決方法都沒有效，第三個方法就是從 Windows 命令列執行 `vsjitdebugger.exe -p` *ProcessId* 以連結至流程。 您可以使用 tlist.exe 來判斷處理序 ID。 若要取得 tlist.exe，您可以從  [WDK 和 WinDbg 下載](https://go.microsoft.com/fwlink/?LinkId=168279)來下載並安裝 Debugging Tools for Windows。
+在某些情況下，在遠端桌面 (終端機服務) 工作階段中進行偵錯時，[可使用的處理序] 清單並不會顯示所有可使用的處理序。 如果您是以受限制的使用者身分執行 Visual Studio，則 [可使用的處理序] 清單不會顯示在工作階段 0 中執行的處理序，因為工作階段 0 是用於服務以及其他包括 w3wp.exe 的伺服器處理序。 您可藉由使用系統管理員帳戶來執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，或是從伺服器主控台 (而非終端機服務工作階段) 執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，來解決這個問題。 如果這兩種方法都無法解決，第三個選項是從 Windows 命令列執行 `vsjitdebugger.exe -p` *ProcessId*來附加至進程。 您可以使用 tlist.exe 來判斷處理序 ID。 若要取得 tlist.exe，您可以從  [WDK 和 WinDbg 下載](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)來下載並安裝 Debugging Tools for Windows。
 
 ## <a name="BKMK_Scenarios"></a>常見的調試情況
 
@@ -122,12 +122,12 @@ ms.locfileid: "74299516"
 > [!NOTE]
 > 如需 Visual Studio 中基本的偵錯工具的詳細資訊，請參閱[開始使用偵錯工具](../debugger/getting-started-with-the-debugger.md)。
 
-|案例|Debug 方法|處理序名稱|附注和連結|
+|情節|Debug 方法|處理序名稱|附注和連結|
 |-|-|-|-|
 |在本機電腦上對受控或原生應用程式進行 Debug|使用 [附加至進程] 或 [[標準] 調試](../debugger/getting-started-with-the-debugger.md)程式|*appname*.exe|若要快速存取對話方塊，請使用**CTRL + ALT + P** ，然後輸入處理常式名稱的第一個字母。|
 |在沒有偵錯工具的情況下啟動應用程式之後，在本機電腦上的 ASP.NET 應用程式|使用 [附加至進程]|iiexpress .exe|這可能有助於讓應用程式的載入速度更快，例如在分析時（例如）。 |
 |IIS 伺服器上的 Remote debug ASP.NET 4 或4。5|使用遠端工具並附加至進程|w3wp.exe|請參閱遠端[IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|IIS 伺服器上的遠端偵錯程式 ASP.NET Core|使用遠端工具並附加至進程|dnx .exe|如需應用程式部署，請參閱[發行至 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 如需偵錯工具，請參閱遠端[IIS 電腦上的遠端偵錯程式 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|IIS 伺服器上的遠端偵錯程式 ASP.NET Core|使用遠端工具並附加至進程|dnx.exe|如需應用程式部署，請參閱[發行至 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 如需偵錯工具，請參閱遠端[IIS 電腦上的遠端偵錯程式 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |在伺服器進程上，對其他支援的應用程式類型進行偵錯工具|使用遠端工具（如果伺服器為遠端）並附加至進程|iexplore.exe .exe 或其他進程|如有必要，請使用 [工作管理員] 來協助識別進程。 請參閱本主題中的[遠端偵錯](../debugger/remote-debugging.md)和更新的章節|
 |對 Windows 傳統型應用程式進行遠端 debug|遠端工具和 F5|N/A| 請參閱[遠端偵錯](../debugger/remote-debugging.md)|
 |遠端 debug a Windows 通用（UWP）、OneCore、HoloLens 或 IoT 應用程式|針對已安裝的應用程式套件進行偵錯|N/A|使用**debug/其他 Debug 目標/Debug 已安裝應用程式套件**，而不是**附加至進程**|
@@ -170,11 +170,11 @@ ms.locfileid: "74299516"
 
    3. 在 [選取程式碼類型] 對話方塊中，選取 [偵錯這些程式碼類型] 以及之前附加失敗的程式碼類型。 清除任何其他程式碼。
 
-   4. 按一下 [確定] **Walkthrough: Calling Code in an VSTO Add-in from VBA**。 [選取程式碼類型] 對話框會關閉。
+   4. 按一下 [ **確定**]。 [選取程式碼類型] 對話框會關閉。
 
    5. 在 [附加至處理序] 對話方塊中按一下 [附加]。
 
       這時，該附加將完全失敗，您將取得特定的錯誤訊息。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  即時調試[多個進程](../debugger/debug-multiple-processes.md)的[遠端偵錯](../debugger/remote-debugging.md)[程式](../debugger/just-in-time-debugging-in-visual-studio.md)

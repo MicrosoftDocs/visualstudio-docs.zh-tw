@@ -12,21 +12,21 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d408f21555deee835cd8f00926bb9c73fd3167f3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ab2651767e36abd8e85efff0dadea8071fc7db5b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302655"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851847"
 ---
-# <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式碼 UI 測試編輯器，編輯自動程式碼 UI 測試
+# <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式化 UI 測試編輯器，編輯自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 自動程式碼 UI 測試編輯器可讓您輕鬆地修改自動程式碼 UI 測試。 您可以使用自動程式碼 UI 測試編輯器，尋找、檢視和編輯測試方法和 UI 動作的屬性。 此外，您也可以使用 UI 控制項對應，檢視和編輯其對應的控制項。
 
  **Requirements**
 
-- Visual Studio Enterprise
+- Visual Studio 企業版
 
 ## <a name="why-should-i-do-this"></a>為什麼我應該這麼做？
  比起使用程式碼編輯器以您的自動程式碼 UI 測試方法編輯程式碼，使用自動程式碼 UI 更為快速且更有效率。 在自動程式碼 UI 測試編輯器中，您可以使用工具列和捷徑功能表，快速找出和修改與 UI 動作和控制項相關聯的屬性值。 例如，您可以使用自動程式碼 UI 測試編輯器的工具列來執行下列命令：
@@ -65,7 +65,7 @@ ms.locfileid: "74302655"
 > 當您在 [ **UI 動作** ] 窗格中選取位在方法的 UI 動作時，對應控制項即會反白顯示。 您也可以修改 UI 動作或控制項屬性。
 
  *我看不到* 自動程式碼 UI 測試編輯器。
-您可能使用 2012 之前的 Visual Studio Enterprise 版本。 透過 MSDN 訂閱，自動程式碼 UI 測試編輯器也可在 Visual Studio 2010 Feature Pack 2 中取得。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://go.microsoft.com/fwlink/?LinkID=204119)。
+您可能使用 2012 之前的 Visual Studio Enterprise 版本。 透過 MSDN 訂閱，自動程式碼 UI 測試編輯器也可在 Visual Studio 2010 Feature Pack 2 中取得。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://msdn.microsoft.com/library/gg269474.aspx)。
 
 ## <a name="CodedUITestEditor_EditActionAndControlProperties"></a> 修改 UI 動作屬性和其對應的控制項屬性
  使用自動程式碼 UI 測試編輯器，您可以快速找出並檢視測試方法中的所有 UI 動作。 當您在編輯器中選取 UI 動作時，會自動反白顯示對應的控制項。 同樣地，如果選取控制項時，會反白顯示相關聯的 UI 動作。 當您選取 UI 動作或控制項時，可以輕鬆地使用 [屬性] 視窗來修改與其對應的屬性。
@@ -93,9 +93,9 @@ ms.locfileid: "74302655"
 
 - ![秘訣](../test/media/tip.png "提示")您可以使用 [自動程式碼 UI 測試編輯器] 工具列中的 [**尋找**] 按鈕，開啟 Visual Studio 中的 [尋找和取代] 工具。 接著，您可以使用 [尋找] 控制項，找出自動程式碼 UI 測試編輯器中的 UI 動作。 例如，您可以嘗試尋找「按一下 [登入] 按鈕」。 在大型測試中，這樣做很有用。 請注意，您無法在自動程式碼 UI 測試編輯器的 [尋找和取代] 工具中使用取代功能。 如需詳細資訊，請參閱 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)中的＜尋找控制項＞。
 
-- ![秘訣](../test/media/tip.png "提示")有時候，可能很難以將控制項位於受測應用程式 UI 中的位置視覺化。 自動程式碼 UI 測試編輯器的其中一項功能，就是您可以選取 UI 控制項對應中列出的控制項，並檢視其在受測試應用程式中的位置。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][尋找受測應用程式中的 UI 控制項](#CodedUITestEditor_LocateUIControl)，位於這個主題更下面的位置。
+- ![秘訣](../test/media/tip.png "提示")有時候，可能很難以將控制項位於受測應用程式 UI 中的位置視覺化。 自動程式碼 UI 測試編輯器的其中一項功能，就是您可以選取 UI 控制項對應中列出的控制項，並檢視其在受測試應用程式中的位置。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][尋找受測試應用程式中的 UI 控制項](#CodedUITestEditor_LocateUIControl) ，位於這個主題更下面。
 
-- ![秘訣](../test/media/tip.png "提示")您可能需要展開包含您想要編輯之控制項的容器控制項。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][尋找控制項和其子系](#CodedUITestEditor_LocateDecendants)，位於這個主題更下面的位置。
+- ![秘訣](../test/media/tip.png "提示")您可能需要展開包含您想要編輯之控制項的容器控制項。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][尋找控制項和其子系](#CodedUITestEditor_LocateDecendants) ，位於這個主題更下面的位置。
 
 ## <a name="CodedUITestEditor_DeleteUIActions"></a> 刪除不必要的 UI 動作
  您可以輕易地在自動程式碼 UI 測試中移除不必要的 UI 動作。
@@ -203,15 +203,15 @@ ms.locfileid: "74302655"
 ## <a name="external-resources"></a>外部資源
 
 ### <a name="guidance"></a>指引
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：測試內部](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ### <a name="faq"></a>常見問題集
- [自動程式碼 UI 測試常見問題集 - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [自動程式碼 UI 測試常見問題集 - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [自動程式碼 UI 測試常見問題集 - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [自動程式碼 UI 測試常見問題集 - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>論壇
- [Visual Studio UI 自動化測試 (包括 CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio 使用者介面自動化測試 (包括 CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [使用 UI 自動化來測試程式碼](../test/use-ui-automation-to-test-your-code.md)[建立](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)自動程式化 Ui 測試建立[資料驅動式自動程式化 Ui 測試](../test/creating-a-data-driven-coded-ui-test.md)[從現有的動作記錄產生自動程式化 Ui 測試](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[逐步解說：建立、編輯和維護](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)自動程式化 ui 測試

@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d90e495ba64018479758e4fa38de0035601a8f0d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eeda91dad54cc189fba6f23ce6d21e6aa9a6c5da
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298325"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850510"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中偵錯 XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "74298325"
   
 - XAML 元素位於禁止的位置。  
   
-  如需一般 XAML 語法的詳細資訊，請參閱[基本 XAML 語法指南](https://go.microsoft.com/fwlink/?LinkId=329942)。  
+  如需一般 XAML 語法的詳細資訊，請參閱[基本 XAML 語法指南](https://msdn.microsoft.com/library/windows/apps/hh700351.aspx)。  
   
   此外，您也可以在 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 中辨識並解決簡單的程式碼後置語法錯誤、編譯錯誤和執行階段錯誤。 但是，在 Visual Studio 中能夠較容易辨識並解決程式碼後置語法錯誤。  
   
@@ -123,7 +123,7 @@ ms.locfileid: "74298325"
 ## <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯  
  您可以在 Visual Studio 中開啟 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 專案，讓應用程式的程式碼偵錯更為容易。 若要在 Visual Studio 中開啟 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 專案，請以滑鼠右鍵按一下 [專案] 面板中的專案，然後按一下 [在 Visual Studio 進行編輯]。 在 Visual Studio 中結束偵錯工作階段之後，請按 Ctrl+Shift+S 儲存所有變更，然後再切換回 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]。 此時會出現要您重新載入專案的提示畫面。 請按一下 [全部皆是] 繼續在 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 中處理專案。  
   
- 如需有關偵錯工具的詳細資訊，請參閱[Visual Studio 中的 Debug Windows Store 應用程式](https://go.microsoft.com/fwlink/?LinkId=329944)。  
+ 如需有關偵錯工具的詳細資訊，請參閱[Visual Studio 中的 Debug Windows Store 應用程式](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx)。  
   
 ## <a name="getting-help"></a>取得協助  
- 如果您需要更多協助來進行 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 應用程式的調試，您可以搜尋[Windows Store 應用程式的社區論壇](https://go.microsoft.com/fwlink/?LinkId=280308)，以取得您的問題相關文章或張貼問題。
+ 如果您需要更多協助來進行 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 應用程式的調試，您可以搜尋[Windows Store 應用程式的社區論壇](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps)，以取得您的問題相關文章或張貼問題。

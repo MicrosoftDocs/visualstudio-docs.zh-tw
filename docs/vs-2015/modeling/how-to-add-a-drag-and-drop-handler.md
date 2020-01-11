@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6ca68005f71d642650a2d9b024a16883de5eaddf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f3bbb4500eb4792f77a7011bd95dd06d05d0ff8d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298941"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850427"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：加入拖放處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,9 +170,9 @@ using System.Linq;
 
 1. 使 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型匯流排可存取來源 DSL：
 
-    1. 如果尚未安裝 Visual Studio 模型匯流排擴充功能，請下載並進行安裝。 如需詳細資訊，請參閱[視覺效果和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=185579)。
+    1. 如果尚未安裝 Visual Studio 模型匯流排擴充功能，請下載並進行安裝。 如需詳細資訊，請參閱[視覺效果和模型化 SDK](https://www.visualstudio.com/)。
 
-    2. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [**啟用 Modelbus**]。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定]。 新專案 "ModelBus" 會隨即加入至 DSL 方案。
+    2. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [**啟用 Modelbus**]。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [ **確定**]。 新專案 "ModelBus" 會隨即加入至 DSL 方案。
 
     3. 按一下 [**轉換所有範本**]，然後重建方案。
 
@@ -587,5 +587,5 @@ namespace Company.CompartmentDrag  // EDIT.
 
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [自訂複製行為](../modeling/customizing-copy-behavior.md)[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)

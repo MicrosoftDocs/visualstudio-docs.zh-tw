@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 70217cc4c83a1f281e8a2fdebec404fa9757bf01
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a151e16537eb143f27e9fd518cdc2495ac954563
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299018"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851376"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>在 Visual Studio 中設定您的 Azure 專案以使用多個服務設定
 
@@ -57,7 +57,7 @@ Web 角色預設會啟用診斷。 Azure 雲端服務專案和儲存體帳戶已
 
 ## <a name="settings-page"></a>設定頁面
 
-在 [設定] 頁面上，您可以利用成對的名稱和數值形式將設定加入組態。 在角色中執行的程式碼可以在執行階段使用 [Azure 受控程式庫](https://go.microsoft.com/fwlink?LinkID=171026) 所提供的類別 (具體而言，使用 [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) 方法) 讀取組態設定的值。
+在 [設定] 頁面上，您可以利用成對的名稱和數值形式將設定加入組態。 在角色中執行的程式碼可以在執行階段使用 [Azure 受控程式庫](https://msdn.microsoft.com/library/azure/dn602775(v=azure.11).aspx) 所提供的類別 (具體而言，使用 [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) 方法) 讀取組態設定的值。
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>設定儲存體帳戶的連接字串
 

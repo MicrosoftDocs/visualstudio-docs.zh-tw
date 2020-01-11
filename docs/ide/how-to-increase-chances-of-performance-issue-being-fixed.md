@@ -5,16 +5,16 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 57d956a426e791fcc84d5972f564cd554d6e72f8
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: bce4fa8c824b6a4f1332145c1383131eb6488b6c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406099"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847388"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何增加修正效能問題的機率
 
-「回報[問題](https://aka.ms/vs-rap)」工具廣泛由 Visual Studio 使用者用來報告問題的範圍。 Visual Studio 小組會在使用者意見反應中遇到損毀並緩慢趨勢，並解決影響廣泛使用者 swath 的問題。 特定的意見反應票證越容易採取動作，產品小組就越可能很快就能診斷並解決問題。 本檔說明報告當機或緩慢問題時的最佳作法，使其更容易採取動作。
+「回報[問題](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)」工具廣泛由 Visual Studio 使用者用來報告問題的範圍。 Visual Studio 小組會在使用者意見反應中遇到損毀並緩慢趨勢，並解決影響廣泛使用者 swath 的問題。 特定的意見反應票證越容易採取動作，產品小組就越可能很快就能診斷並解決問題。 本檔說明報告當機或緩慢問題時的最佳作法，使其更容易採取動作。
 
 ## <a name="general-best-practices"></a>一般最佳作法
 
@@ -188,7 +188,7 @@ VS 會變得沒有回應一段頗長的時間。
     -   將全域環境變數**ServiceHubTraceLevel**設定為**All**
     -   重現問題。
 
-2.  在[這裡](https://aka.ms/vscollect)下載 Microsoft Visual Studio 和 .NET Framework 記錄收集工具。
+2.  在[這裡](https://www.microsoft.com/download/details.aspx?id=12493)下載 Microsoft Visual Studio 和 .NET Framework 記錄收集工具。
 3.  執行工具。 這會將 zip 檔案輸出至 **% temp%/vslogs.zip**。 請將該檔案附加到您的意見反應。
 
 ## <a name="see-also"></a>請參閱

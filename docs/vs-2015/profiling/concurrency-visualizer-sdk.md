@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33689ed44f4228411243d3b9716a2407b751d32b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 14bced870cd24badcaf2a687fc4a1a2edeb740c0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300639"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851013"
 ---
 # <a name="concurrency-visualizer-sdk"></a>並行視覺化檢視 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用並行視覺化檢視 SDK 檢測原始程式碼，以便在並行視覺化檢視中顯示其他資訊。 您可以在程式碼中將其他資料與階段和事件關聯。 這些額外的視覺效果稱為*標記*。  如需入門逐步解說，請參閱[並行視覺化檢視 SDK 簡介](https://go.microsoft.com/fwlink/?LinkId=235405)。
+您可以使用並行視覺化檢視 SDK 檢測原始程式碼，以便在並行視覺化檢視中顯示其他資訊。 您可以在程式碼中將其他資料與階段和事件關聯。 這些額外的視覺效果稱為*標記*。  如需入門逐步解說，請參閱[並行視覺化檢視 SDK 簡介](https://blogs.msdn.com/b/visualizeparallel/archive/2011/10/17/introducing-the-concurrency-visualizer-sdk.aspx)。
 
 ## <a name="properties"></a>屬性
  旗標、範圍和訊息各有兩個屬性︰分類和重要性。 在 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中，您可以使用這些屬性來篩選顯示的標記集。 此外，這些屬性會影響標記的視覺化表示。 例如，旗標的大小用來表示重要性。 此外，色彩用來表示分類。

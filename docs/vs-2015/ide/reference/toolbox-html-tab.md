@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4474f2a0823b5599da30706daedff6e5cd1fc0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297783"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851665"
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,16 +31,16 @@ ms.locfileid: "74297783"
 
 ## <a name="tasks"></a>工作
 
-- [如何：管理工具箱視窗](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)
+- [如何：Manage the Toolbox Window](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) (如何：管理工具箱視窗)
 
-- [如何：操作工具箱索引標籤](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)
+- [如何：Manipulate Toolbox Tabs](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db) (如何：操作工具箱索引標籤)
 
 ## <a name="ui-elements"></a>UI 項目
  [HTML] 索引標籤上預設會有下列工具。
 
  **指標** ![ASP.NET Mobile 設計工具 html 網頁指標](../../ide/reference/media/vxpointer.gif "|::ref1::|")
 
- 任何 [工具箱] 索引標籤開啟時，根據預設都會選取這個工具。 它無法予以刪除。 指標可讓您將物件拖曳至 [設計] 檢視介面、重新調整其大小，以及將它們重新置入頁面或表單上。 如需詳細資訊，請參閱[如何：管理工具箱視窗](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[如何：操作工具箱索引標籤](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。
+ 任何 [工具箱] 索引標籤開啟時，根據預設都會選取這個工具。 它無法予以刪除。 指標可讓您將物件拖曳至 [設計] 檢視介面、重新調整其大小，以及將它們重新置入頁面或表單上。 如需詳細資訊，請參閱[如何：Manage the Toolbox Window](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) (如何：管理工具箱視窗) 及 [How to:Manipulate Toolbox Tabs](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db) (如何：操作工具箱索引標籤)。
 
  **輸入（按鈕）** ![HTML 網頁按鈕](../../ide/reference/media/vxbutton.gif "|::ref2::|")
 
@@ -52,7 +52,7 @@ ms.locfileid: "74297783"
 <input id="Button1" type="button" value="Button" name="Button1">
 ```
 
- 如需詳細資訊，請參閱 [HTML Input 控制項](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputButton 伺服器控制項宣告式語法](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa) \(機器翻譯\)、[NIB：如何：建立指令碼和編輯事件處理常式](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) \(英文\)、[Button Web 伺服器控制項概觀](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlInputButton>、<xref:System.Web.UI.HtmlControls.HtmlButton> 與 <xref:System.Web.UI.WebControls.Button>。
+ 如需詳細資訊，請參閱 [HTML Input Controls](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (HTML Input 控制項)、[HtmlInputButton Server Control Declarative Syntax](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa) (HtmlInputHidden 伺服器控制項宣告式語法) 與 [NIB:作法：Create Scripts and Edit Event Handlers](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) (NIB：如何：建立指命碼與編輯事件處理常式)、[Button Web Server Controls Content Map](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf) (按鈕網頁瀏覽器控制項內容地圖)、<xref:System.Web.UI.HtmlControls.HtmlInputButton>、<xref:System.Web.UI.HtmlControls.HtmlButton> 及 <xref:System.Web.UI.WebControls.Button>。
 
  **輸入（重設）** ![HTMLpageResetButton 螢幕擷取畫面](../../ide/reference/media/vxreset.gif "|::ref3::|")
 
@@ -118,10 +118,10 @@ ms.locfileid: "74297783"
 <input id="Password1" type="password" name="Password1">
 ```
 
- 如需詳細資訊，請參閱 [HTML Input 控制項](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、[HtmlInputPassword 伺服器控制項宣告式語法](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f)、[如何：為密碼輸入設定 TextBox Web 伺服器控制項](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310)和[逐步解說：驗證 Web Forms 網頁中的使用者輸入](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)。
+ 如需詳細資訊，請參閱 [HTML Input Controls](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (HTML Input 控制項)、[HtmlInputPassword Server Control Declarative Syntax](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f) (HtmlInputHidden 伺服器控制項宣告式語法)、[How to:Set a TextBox Web Server Control for Password Entry](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) (如何：設定 TextBox 網頁伺服器控制項以輸入密碼) 及 [Walkthrough:Validating User Input in a Web Forms Page](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)(逐步解說：驗證 Web Forms 頁面中的使用者輸入)。
 
 > [!IMPORTANT]
-> 如果您的應用程式傳輸使用者名稱和密碼，您應該設定網站使用安全通訊端層 (SSL) 來加密傳輸。 如需詳細資訊，請參閱 [IIS Operations Guide](https://go.microsoft.com/fwlink/?linkid=47856) (IIS 作業手冊) 中的 "Securing Connections with SSL" (保護與 SSL 的連線)。 此外，建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。
+> 如果您的應用程式傳輸使用者名稱和密碼，您應該設定網站使用安全通訊端層 (SSL) 來加密傳輸。 如需詳細資訊，請參閱 [IIS Operations Guide](https://technet.microsoft.com/library/cc732976(v=WS.10).aspx) (IIS 作業手冊) 中的 "Securing Connections with SSL" (保護與 SSL 的連線)。 此外，建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。
 
  **輸入（核取方塊）** ![HTML 網頁工具箱核取方塊選項](../../ide/reference/media/vxcheckbox.gif "|::ref8::|")
 
@@ -210,7 +210,7 @@ ms.locfileid: "74297783"
 
  您可以增加 size 屬性的值來建立多行 `select` 項目。
 
- 如需詳細資訊，請參閱 [HtmlSelect 伺服器控制項宣告式語法](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5) \(機器翻譯\)、[NIB：如何：建立指令碼和編輯事件處理常式](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) \(英文\)、[DropDownList Web 伺服器控制項概觀](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608) \(英文\)、[ListBox Web 伺服器控制項概觀](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlSelect> 與 <xref:System.Web.UI.WebControls.DropDownList>。
+ 如需詳細資訊，請參閱 [HtmlSelect Server Control Declarative Syntax](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5) (HtmlTextArea 伺服器控制項宣告式語法)、[NIB:作法：Create Scripts and Edit Event Handlers](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) (如何：建立指令碼及編輯事件處理常式)、[DropDownList Web Server Control Overview](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608) (DropDownList 網頁伺服器控制項概觀)、[ListBox Web Server Control Overview](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97) (ListBox 網頁伺服器控制項概觀)、<xref:System.Web.UI.HtmlControls.HtmlSelect> 及 <xref:System.Web.UI.WebControls.DropDownList>。
 
  **水準規則** ![HTML 頁面水準規則專案](../../ide/reference/media/vxhorizontal.gif "|::ref15::|")
 

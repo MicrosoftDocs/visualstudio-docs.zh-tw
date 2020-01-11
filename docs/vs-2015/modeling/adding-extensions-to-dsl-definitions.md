@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aeeac82b27b4b5bb71ed05ba658bf9ee048bd85d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 72c5968fccb55a265639ff05c600bd5f97a9f90a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292155"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852096"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>在 DSL 定義中加入擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ DSL 定義延伸模組可讓您建立特定領域語言（DSL）的延伸套件�
 
   延伸 DSL 的使用者可以建立和儲存包含額外功能實例的模型，而且這些物件可以由已安裝適當延伸模組的其他使用者讀取。 尚未安裝延伸模組的使用者無法使用其他功能，但可以更新並儲存模型，而不會遺失其他功能。
 
-  如需有關此功能的範例程式碼和詳細資訊，請參閱[Visual Studio 視覺效果和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=186128)網站。
+  如需有關此功能的範例程式碼和詳細資訊，請參閱[Visual Studio 視覺效果和模型化 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)網站。
 
-## <a name="see-also"></a>另請參閱
- [Visual Studio 視覺效果和模型 SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+## <a name="see-also"></a>請參閱
+ [Visual Studio 視覺效果和模型 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

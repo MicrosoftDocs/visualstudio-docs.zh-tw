@@ -13,17 +13,17 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83cdd4f549655be524abdd2a4708b316f6747b3e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8010bbbc38dee980ebe89dc60ccb513379103a26
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302755"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846319"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>規則集編輯器對話方塊 (舊版)
 本主題描述如何在舊版 [!INCLUDE[wfd1](../includes/wfd1-md.md)]中使用 [**規則集編輯器**] 對話方塊。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。
 
- [**規則集編輯器**] 對話方塊是用來建立和修改[PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019)規則集，這些規則集會序列化為 rules 檔案。
+ [**規則集編輯器**] 對話方塊是用來建立和修改[PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx)規則集，這些規則集會序列化為 rules 檔案。
 
 > [!NOTE]
 > 如果您想要使用**具有編碼的 XML 編輯器**來開啟 rules 檔案，您必須先關閉工作流程或活動的關聯設計工具視窗。
@@ -35,25 +35,25 @@ ms.locfileid: "74302755"
 
  下表描述 [**規則集編輯器**] 對話方塊的使用者介面（UI）元素。
 
-|UI 元素|描述|
+|UI 項目|描述|
 |----------------|-----------------|
 |**新增規則**|將新的規則定義新增至規則集。|
 |**刪除**|將選取的規則從規則集內刪除。|
-|**鏈結**|指定規則集要使用哪種類型的向前鏈結。 可用的選項如下：<br /><br /> -   **完整的連結**，指定使用所有的正向連結機制：隱含、方法的功能，以及使用**Update**函式的明確。<br />-   **順序**，指定不使用任何正向連結。<br />**僅 -   明確更新**，其指定只對**更新**動作執行向前連結。<br /><br /> 如需有關向前連結的詳細資訊，請參閱[使用 PolicyActivity 活動](https://go.microsoft.com/fwlink?LinkID=65004)。|
+|**鏈結**|指定規則集要使用哪種類型的向前鏈結。 可用的選項如下：<br /><br /> -   **完整的連結**，指定使用所有的正向連結機制：隱含、方法的功能，以及使用**Update**函式的明確。<br />-   **順序**，指定不使用任何正向連結。<br />**僅 -   明確更新**，其指定只對**更新**動作執行向前連結。<br /><br /> 如需有關向前連結的詳細資訊，請參閱[使用 PolicyActivity 活動](https://msdn2.microsoft.com/library/bb675229.aspx)。|
 |**Name**|規則集清單資料行標題。 按一下會按照名稱排序規則清單。|
 |**優先順序**|規則集清單資料行標題。 按一下會按照優先權排序規則清單。|
 |**重估**|規則集清單資料行標題。 按一下會按照重新評估類型排序規則清單。|
 |**規則預覽**|規則集清單資料行標題。 按一下會按照規則的條件和動作預覽排序規則清單。|
 |**Name：**|輸入規則名稱。|
-|**優先順序**|輸入規則的優先權。 預設優先權為 0。|
+|**Priority：**|輸入規則的優先權。 預設優先權為 0。|
 |**重估**|指定規則要使用哪一種規則重新評估。 可用的選項如下：<br /><br /> -   **一律**，這會導致規則視需要重新評估。<br />-   **never**，這會導致規則永遠不會重新評估。 在此狀況下，規則只執行一次。|
 |[使用中]|核取可讓規則成為作用中。|
 |**條件**|輸入規則條件的運算式。 如需運算式語法的詳細資訊，請參閱本頁的「輸入條件和動作運算式」一節。|
 |**Then 動作：**|輸入 Then 動作的運算式。 如需運算式語法的詳細資訊，請參閱本頁的「輸入條件和動作運算式」一節。|
 |**Else 動作：**|輸入 Else 動作的運算式。 如需運算式語法的詳細資訊，請參閱本頁的「輸入條件和動作運算式」一節。|
-|**還行**|按一下將規則集儲存為 .rules 檔案。|
+|**確定**|按一下將規則集儲存為 .rules 檔案。|
 
- 如需規則集的詳細資訊，請參閱[使用 PolicyActivity 活動](https://go.microsoft.com/fwlink?LinkID=65004)。
+ 如需規則集的詳細資訊，請參閱[使用 PolicyActivity 活動](https://msdn2.microsoft.com/library/bb675229.aspx)。
 
 ## <a name="entering-condition-and-action-expressions"></a>輸入條件和動作運算式
  您可以在 [**規則集編輯器**] 對話方塊的個別文字方塊中輸入條件的運算式，以及 Then 和 Else 動作做為文字。 您可以輸入**此。** 在編輯器中，使用 IntelliSense 類型的功能表來參考工作流程中使用的欄位、屬性和方法。 或者您可以直接輸入工作流程成員名稱。 您可以輸入類別名稱，後面加上方法名稱，來呼叫參考型別上的靜態方法。
@@ -88,7 +88,7 @@ Update(this.Address.State)
 Update("this/Address/State")
 ```
 
- 如需有關使用**Update**搭配轉寄鏈的詳細資訊，請參閱[使用 PolicyActivity 活動](https://go.microsoft.com/fwlink?LinkID=65004)。
+ 如需有關使用**Update**搭配轉寄鏈的詳細資訊，請參閱[使用 PolicyActivity 活動](https://msdn2.microsoft.com/library/bb675229.aspx)。
 
-## <a name="see-also"></a>另請參閱
- [在工作流程中](https://go.microsoft.com/fwlink?LinkID=65009)使用[PolicyActivity 活動的](https://go.microsoft.com/fwlink?LinkID=65004) [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [選取規則集對話方塊（舊版）](../workflow-designer/select-rule-set-dialog-box-legacy.md)
+## <a name="see-also"></a>請參閱
+ [在工作流程中](https://msdn2.microsoft.com/library/bb628447.aspx)使用[PolicyActivity 活動的](https://msdn2.microsoft.com/library/bb675229.aspx) [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) [選取規則集對話方塊（舊版）](../workflow-designer/select-rule-set-dialog-box-legacy.md)

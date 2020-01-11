@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e1dbe50f3161ca80b4eabe63cbf9264210e9658
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 128327b956734f7d28e7ff88f3eb6c297544587c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300309"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849812"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>進階設定對話方塊 (並行視覺化檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74300309"
  在收集追蹤時，會將 .exe 和 .dll 檔案的路徑儲存於追蹤檔中。  變更此設定不會影響任何先前收集的追蹤。  
   
 ## <a name="buffering"></a>緩衝  
- 並行視覺化檢視會在收集追蹤時，使用Windows 事件追蹤 (ETW)。  ETW 會在儲存事件時使用各種緩衝區。  預設的 ETW 緩衝區設定並非適用所有案例，在某些情況下，可能會導致像是遺失事件等問題。  您可以使用 [緩衝] 索引標籤來設定 ETW 緩衝區設定。 如需詳細資訊，請參閱[事件追蹤](https://go.microsoft.com/fwlink/?LinkId=234579)和 [EVENT_TRACE_PROPERTIES 結構 (英文)](https://go.microsoft.com/fwlink/?LinkId=234580)。  
+ 並行視覺化檢視會在收集追蹤時，使用Windows 事件追蹤 (ETW)。  ETW 會在儲存事件時使用各種緩衝區。  預設的 ETW 緩衝區設定並非適用所有案例，在某些情況下，可能會導致像是遺失事件等問題。  您可以使用 [緩衝] 索引標籤來設定 ETW 緩衝區設定。 如需詳細資訊，請參閱[事件追蹤](https://msdn.microsoft.com/library/bb968803(VS.85).aspx)和 [EVENT_TRACE_PROPERTIES 結構 (英文)](https://msdn.microsoft.com/library/aa363784(VS.85).aspx)。  
   
 ## <a name="filter"></a>篩選器  
  在 [篩選] 索引標籤上，您可以選取並行視覺化檢視所收集的事件集合。 選取事件子集會限制要在報表中顯示的資料類型、縮減每個追蹤的大小，並減少處理追蹤所需的時間。  

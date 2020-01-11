@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/07/2019
 ms.topic: conceptual
 description: 了解如何開始使用訂閱系統管理入口網站管理組織的 Visual Studio 訂閱。
-ms.openlocfilehash: 484ecdca3435ee725853932acd66e307c2eb3cbe
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: b7a6d93e3c284e3778d9574eb86c4e998324c559
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879304"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850548"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 訂閱系統管理員入口網站的總覽
 
@@ -47,7 +47,7 @@ Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管
 > ![Visual Studio 訂用帳戶管理入口網站詳細資料頁面](_img/using-admin-portal/details-page.png)
 
 ## <a name="resources"></a>資源
-- [Visual Studio 授權技術白皮書](https://aka.ms/vslicensing)
+- [Visual Studio 授權技術白皮書](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [比較訂閱選項和定價](https://visualstudio.microsoft.com/vs/pricing)
 - [比較 Visual Studio IDE 功能](https://visualstudio.microsoft.com/vs/compare)
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
@@ -57,5 +57,5 @@ Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管
 - [系統管理員責任概觀](admin-responsibilities.md)
 - [清查生產前環境](admin-inventory.md)
 - [管理大型小組及外部承攬人](manage-teams.md)
-- [追蹤使用者指派和處理訂單](assignments-orders.md)
+- [追蹤使用者指派及處理訂單](assignments-orders.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量

@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3589f409efe2a104391eb62f939ef76d140e5224
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299411"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850133"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,16 +44,16 @@ ms.locfileid: "74299411"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
  您需要下列元件才能完成此逐步解說：
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- 對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以從[CodePlex 網站](https://go.microsoft.com/fwlink/?linkid=87843)下載 AdventureWorksLT 資料庫。
+- 對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以從[CodePlex 網站](https://codeplex.com/SqlServerSamples)下載 AdventureWorksLT 資料庫。
 
   預先了解下列概念也有助於完成此逐步解說 (但非必要)：
 
-- WCF 資料服務。 如需詳細資訊，請參閱[總覽](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。
+- WCF 資料服務。 如需詳細資訊，請參閱[概觀](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。
 
 - [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]中的資料模型。
 
@@ -70,13 +70,13 @@ ms.locfileid: "74299411"
 
 1. 啟動 Visual Studio。
 
-2. 在 [檔案] **Deploying Office Solutions** 功能表中，指向 [新增]，然後按一下 [專案]。
+2. 在 [檔案] 功能表中，指向 [新增]，然後按一下 [專案]。
 
 3. 展開 [Visual C#] 或 [Visual Basic]，然後選取 **Web**。
 
 4. 選取 [ASP.NET Web 應用程式] 專案範本。
 
-5. 在 [**名稱**] 方塊中，輸入 `AdventureWorksService`，然後按一下 **[確定]** 。
+5. 在 [名稱] 方塊中輸入 `AdventureWorksService`，然後按一下 [確定]。
 
      Visual Studio 會建立 `AdventureWorksService` 專案。
 
@@ -107,7 +107,7 @@ ms.locfileid: "74299411"
 
 7. 在 [選擇您的資料庫物件] 頁面中，展開 [資料表]，然後選取 **SalesOrderHeader** 資料表。
 
-8. 按一下 **[完成]** 。
+8. 按一下 [ **完成**]。
 
 ## <a name="create-the-service"></a>建立服務
  建立 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]，將實體資料模型中的資料公開給 WPF 應用程式。
@@ -161,7 +161,7 @@ ms.locfileid: "74299411"
 
 7. 在精靈的 [選擇資料來源類型] 頁面中，選取 [服務]，然後按一下 [下一步]。
 
-8. 在  **[加入服務參考]** 對話方塊中，按一下  **[探索]** 。
+8. 在 [新增服務參考] 對話方塊中，按一下 [探索]。
 
      Visual Studio 會在目前的解決方案中搜尋可用的服務，並將 `AdventureWorksService.svc` 新增至 [**服務**] 方塊中的可用服務清單。
 
@@ -256,7 +256,7 @@ ms.locfileid: "74299411"
 
 1. 在設計工具中，按兩下視窗介面上的 **<** 按鈕。
 
-     Visual Studio 會開啟程式碼後置檔案，並建立 `backButton_Click` 事件的新 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件處理常式。
+     Visual Studio 會開啟程式碼後置檔案，並建立 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件的新 `backButton_Click` 事件處理常式。
 
 2. 將下列程式碼加入至產生的 `backButton_Click` 事件處理常式：
 
@@ -265,7 +265,7 @@ ms.locfileid: "74299411"
 
 3. 回到設計工具，然後按兩下 **>** 按紐。
 
-     Visual Studio 會開啟程式碼後置檔案，並建立 `nextButton_Click` 事件的新 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件處理常式。
+     Visual Studio 會開啟程式碼後置檔案，並建立 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件的新 `nextButton_Click` 事件處理常式。
 
 4. 將下列程式碼加入至產生的 `nextButton_Click` 事件處理常式：
 
@@ -279,7 +279,7 @@ ms.locfileid: "74299411"
 
 1. 在設計工具中，按兩下 [儲存變更] 按鈕。
 
-     Visual Studio 會開啟程式碼後置檔案，並建立 `saveButton_Click` 事件的新 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件處理常式。
+     Visual Studio 會開啟程式碼後置檔案，並建立 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件的新 `saveButton_Click` 事件處理常式。
 
 2. 將下列程式碼加入至 `saveButton_Click` 事件處理常式。
 
@@ -322,5 +322,5 @@ ms.locfileid: "74299411"
 
 - 了解如何使用 Visual Studio 中的 [資料來源] 視窗，顯示 WPF 控制項中的相關資料 (也就是父子關聯性中的資料)。 如需詳細資訊，請參閱[逐步解說：在 WPF 應用程式中顯示相關資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [將 wpf 控制項系結至中的資料 Visual Studio 將](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [wpf](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)控制項系結至資料集 Visual Studio 將 wpf 控制項系結至[dataset](../data-tools/bind-wpf-controls-to-a-dataset.md) [總覽](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) [Entity Framework 總覽](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) [wpf 和 Silverlight 設計工具總覽](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)[資料](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)系結總覽

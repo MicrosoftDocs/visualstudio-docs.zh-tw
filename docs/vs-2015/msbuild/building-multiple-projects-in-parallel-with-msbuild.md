@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d9efcd218b887187709b38b5f8bcae12c53de59
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f80f0898167de133d78d27d26f97d0ab8ced0b31
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300412"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843956"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>使用 MSBuild 同時建置多個專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,4 +75,4 @@ msbuild.exe myproj.proj /maxcpucount:3
 ## <a name="see-also"></a>另請參閱  
  [使用多個處理器來建置專案](../msbuild/using-multiple-processors-to-build-projects.md)   
  [撰寫能夠辨識多處理器的記錄器](../msbuild/writing-multi-processor-aware-loggers.md)   
- [調整 C++ 組建平行處理原則部落格 (英文)](https://go.microsoft.com/fwlink/?LinkId=251457)
+ [調整 C++ 組建平行處理原則部落格 (英文)](https://blogs.msdn.com/b/visualstudio/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)

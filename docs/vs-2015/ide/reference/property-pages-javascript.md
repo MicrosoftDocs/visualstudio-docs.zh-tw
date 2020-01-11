@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ffb1298981481bde063de898dc81c02dad548888
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e9fa22a4ed52c3e0a1afdda0105716c0de9b3316
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297829"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851816"
 ---
 # <a name="property-pages-javascript"></a>JavaScript、屬性頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "74297829"
 ## <a name="configuration-and-platform-page"></a>組態和平台頁面
  您可以使用下列選項，來選取要顯示或修改的組態和平台。
 
- 設定指定要顯示或修改的設定。 這些設定包括 [偵錯]\(預設值)、[發行]、[所有組態] 或使用者定義的組態。 如需詳細資訊，請參閱[偵錯和發行專案組態](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。
+ 設定指定要顯示或修改的設定。 這些設定包括 [偵錯] (預設值)、[發行]、[所有組態] 或使用者定義的組態。 如需詳細資訊，請參閱[偵錯和發行專案組態](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。
 
- **平臺**指定要顯示或修改的平臺設定。 這些設定包括 [任何 CPU]\([!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式的預設值)、[x64]、[ARM]、[x86] 或使用者定義的平台。 如需詳細資訊，請參閱[偵錯和發行專案組態](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。
+ **平臺**指定要顯示或修改的平臺設定。 這些設定包括 [任何 CPU] ([!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式的預設值)、[x64]、[ARM]、[x86] 或使用者定義的平台。 如需詳細資訊，請參閱[偵錯和發行專案組態](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。
 
-## <a name="general-page"></a>一般頁面
+## <a name="general-page"></a>[一般] 頁面
  您可以使用下列選項，來設定專案的一般屬性。
 
 > [!NOTE]
@@ -62,11 +62,11 @@ ms.locfileid: "74297829"
 
  **要啟動的偵錯工具**指定偵錯工具的預設主控制項。
 
-- 選取 [本機電腦]，在 Visual Studio 主機電腦上啟動應用程式。 如需詳細資訊，請參閱[在本機電腦上執行應用程式](https://go.microsoft.com/fwlink/?LinkId=234912)。
+- 選取 [本機電腦]，在 Visual Studio 主機電腦上啟動應用程式。 如需詳細資訊，請參閱[在本機電腦上執行應用程式](https://msdn.microsoft.com/library/windows/apps/hh441483(v=VS.85).aspx)。
 
-- 選取 [模擬器]，在模擬器中啟動應用程式。 如需詳細資訊，請參閱[在模擬器中執行應用程式](https://go.microsoft.com/fwlink/?LinkId=234913)。
+- 選取 [模擬器]，在模擬器中啟動應用程式。 如需詳細資訊，請參閱[在模擬器中執行應用程式](https://msdn.microsoft.com/library/windows/apps/hh441475(v=VS.85).aspx)。
 
-- 選取 [遠端電腦]，在遠端電腦上啟動應用程式。 如需遠端偵錯的詳細資訊，請參閱[在遠端電腦上執行應用程式](https://go.microsoft.com/fwlink/?LinkId=234914)。
+- 選取 [遠端電腦]，在遠端電腦上啟動應用程式。 如需遠端偵錯的詳細資訊，請參閱[在遠端電腦上執行應用程式](https://msdn.microsoft.com/library/windows/apps/hh441469(v=VS.85).aspx)。
 
   **啟動應用程式**指定當您按下 F5 或按一下 [ **Debug**]、[**開始進行調試**程式] 時，是否要啟動應用程式。 選取 [是] 啟動應用程式；否則選取 [否]。 如果選取 [否]，即使您使用不同的方法啟動應用程式，還是可以對它進行偵錯。
 

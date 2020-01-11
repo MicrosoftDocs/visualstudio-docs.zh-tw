@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bd77006eda03b716e3c54c0b5b52ac633a383377
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 195a3a36b53e5f84f6052a15e01007bb5ed77fac
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299597"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844192"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>逐步解說：建立 N-Tier 資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "74299597"
 
  其中一種在多層式架構應用程式中分為各種層級的方式，是針對您要併入應用程式中的每個層級建立離散專案。 具類型資料集所含的 `DataSet Project` 屬性可以決定所產生的資料集和 `TableAdapter` 程式碼應該進入的專案。
 
- 此逐步解說示範如何使用 [DataSet 設計工具]`TableAdapter`**將資料集和** 程式碼分成離散類別庫專案。 在您分隔資料集和 TableAdapter 程式碼之後，您將會[在 Visual Studio 服務中建立 Windows Communication Foundation 服務和 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) ，以呼叫資料存取層。 最後，您將建立 Windows Forms 應用程式做為呈現層。 此層級會存取資料服務中的資料。
+ 此逐步解說示範如何使用 [DataSet 設計工具] 將資料集和 `TableAdapter` 程式碼分成離散類別庫專案。 在您分隔資料集和 TableAdapter 程式碼之後，您將會[在 Visual Studio 服務中建立 Windows Communication Foundation 服務和 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) ，以呼叫資料存取層。 最後，您將建立 Windows Forms 應用程式做為呈現層。 此層級會存取資料服務中的資料。
 
  在這個逐步解說期間，您將執行下列步驟：
 
@@ -53,9 +53,9 @@ ms.locfileid: "74299597"
 
 - 撰寫程式碼以填入資料表。
 
-  ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[影片 how to：建立多層式資料應用程式](https://go.microsoft.com/fwlink/?LinkId=115188)。
+  ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需本主題的影片版本，請參閱[影片 how to：建立多層式資料應用程式](https://msdn2.microsoft.com/library/cc178916.aspx)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
  若要完成這個逐步解說，您需要：
 
 - Northwind 範例資料庫的存取權。
@@ -81,7 +81,7 @@ ms.locfileid: "74299597"
 
 5. 將方案命名為**NTierWalkthrough**。
 
-6. 按一下 [確定] **Walkthrough: Calling Code in an VSTO Add-in from VBA**。
+6. 按一下 [ **確定**]。
 
      隨即建立含有 DataEntityTier 專案的 NTierWalkthrough 方案，並將其新增至 [方案總管]。
 
@@ -185,7 +185,7 @@ ms.locfileid: "74299597"
 
 6. 在 [選擇要產生的方法] 頁面上，於 [傳回 DataTable] 區段的 [方法名稱] 中鍵入 **GetCustomers**。
 
-7. 按一下 **[完成]** 。
+7. 按一下 [ **完成**]。
 
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>在資料存取層中建立可傳回 Orders 資料表的方法
 
@@ -199,7 +199,7 @@ ms.locfileid: "74299597"
 
 5. 在 [選擇要產生的方法] 頁面上，於 [傳回 DataTable] 區段的 [方法名稱] 中鍵入 **GetOrders**。
 
-6. 按一下 **[完成]** 。
+6. 按一下 [ **完成**]。
 
 7. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
@@ -214,7 +214,7 @@ ms.locfileid: "74299597"
 
 3. 選取 **DataAccessTier** 和 **DataEntityTier** 專案。
 
-4. 按一下 [確定] **Walkthrough: Calling Code in an VSTO Add-in from VBA**。
+4. 按一下 [ **確定**]。
 
 ## <a name="adding-functions-to-the-service-to-call-the-getcustomers-and-getorders-methods-in-the-data-access-tier"></a>將函式加入至服務，以在資料存取層中呼叫 GetCustomers 和 GetOrders 方法
  現在，資料存取層包含方法可以傳回資料、在資料服務中建立方法以呼叫資料存取層中的方法。
@@ -317,7 +317,7 @@ ms.locfileid: "74299597"
 
 1. 在**方案總管**中，以滑鼠右鍵按一下 PresentationTier，然後按一下 [**加入服務參考**]。
 
-2. 在  **[加入服務參考]** 對話方塊中，按一下  **[探索]** 。
+2. 在 [新增服務參考] 對話方塊中，按一下 [探索]。
 
 3. 選取 [ **Service1** ]，然後按一下 **[確定]** 。
 
@@ -361,7 +361,7 @@ ms.locfileid: "74299597"
  因為服務會傳回來自 Customers 和 Orders 資料表的資料，所以 maxReceivedMessageSize 的預設值不足以保留資料，因此必須予以增加。 在這個逐步解說中，您會將此值變更為 6553600。 您將在用戶端上變更此值，而這樣會自動更新服務參考。
 
 > [!NOTE]
-> 較小的預設大小是要限制拒絕服務 (DoS) 攻擊的機率。 如需詳細資訊，請參閱 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。
+> 較小的預設大小是要限制拒絕服務 (DoS) 攻擊的機率。 如需詳細資訊，請參閱<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。
 
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>增加 maxReceivedMessageSize 值
 
@@ -374,7 +374,7 @@ ms.locfileid: "74299597"
 
 #### <a name="to-test-the-application"></a>若要測試應用程式
 
-1. 按 F5。
+1. 請按 F5。
 
 2. Customers 和 Orders 資料表中的資料是擷取自資料服務，並顯示在表單上。
 
@@ -385,5 +385,5 @@ ms.locfileid: "74299597"
 
 - 將其他方法加入至服務，以將資料更新回資料庫。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  使用多[層式架構應用程式中的資料集](../data-tools/work-with-datasets-in-n-tier-applications.md)[階層更新](../data-tools/hierarchical-update.md)[存取中的資料 Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

@@ -11,14 +11,14 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 8046b261021a1147dbf0356c6854968b3d23a1df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 70f1266581bb633086fa33a28b43e04befc7e6f9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299798"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844333"
 ---
-# <a name="install-visual-c-for-cross-platform-mobile-development"></a>安裝適用於跨平台行動裝置開發的 Visual C++
+# <a name="install-visual-c-for-cross-platform-mobile-development"></a>Install Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 適用於跨平台行動裝置應用程式開發的 Visual C++](https://go.microsoft.com/fwlink/p/?LinkId=536383) 是包含在 Visual Studio 2015 中的可安裝元件。 它包含了跨平台的 Visual Studio 範本，並會安裝跨平台工具和 SDK 以便迅速開始使用，讓您不需要自行尋找、下載與設定。 您可以使用 Visual Studio 中的這些工具來輕鬆建立、編輯、偵錯和測試跨平台專案。 本主題描述如何安裝必要的工具和協力廠商軟體，以使用 Visual Studio 開發跨平台應用程式。 如需元件概觀，請參閱 [Visual C++ 跨平台行動開發](https://go.microsoft.com/fwlink/p/?LinkId=536387)  
@@ -38,14 +38,14 @@ ms.locfileid: "74299798"
   
   若要建置特定裝置平台的應用程式，有幾個額外的需求：  
   
-- Windows Phone 模擬器與 Microsoft Visual Studio Emulator for Android 需要可執行 Hyper-V 的電腦。 您必須先啟用 Windows 中的 HYPER-V 功能，才能安裝和執行模擬器。 如需詳細資訊，請參閱模擬器的 [系統需求](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)。  
+- Windows Phone 模擬器與 Microsoft Visual Studio Emulator for Android 需要可執行 Hyper-V 的電腦。 您必須先啟用 Windows 中的 HYPER-V 功能，才能安裝和執行模擬器。 如需詳細資訊，請參閱模擬器的[系統需求](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)。  
   
-- 搭配 Android SDK 的 x86 Android 模擬器在可執行 Intel HAXM 驅動程式的電腦上效能最佳。 此驅動程式需要 Intel x64 處理器並支援 VT-x 和執行停用位元。 如需詳細資訊，請參閱 [Intel® 硬體加速執行管理器安裝指示 - Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=536385)。  
+- 搭配 Android SDK 的 x86 Android 模擬器在可執行 Intel HAXM 驅動程式的電腦上效能最佳。 此驅動程式需要 Intel x64 處理器並支援 VT-x 和執行停用位元。 如需詳細資訊，請參閱 [Intel® 硬體加速執行管理器安裝指示 - Microsoft Windows](https://github.com/intel/haxm)。  
   
 - 建置 iOS 的程式碼需要 Apple ID、iOS 開發人員計劃帳戶，以及可在 OS X Mavericks 或更新版本中執行 [Xcode 6](https://go.microsoft.com/fwlink/p/?LinkId=536387) 或更新版本的 Mac 電腦。 如需簡單的安裝步驟，請參閱 [Install tools for iOS](#InstallForiOS)。  
   
 ## <a name="GetTheTools"></a> 取得工具  
- 適用於跨平台行動裝置開發的 Visual C++ 是隨附於 Visual Studio Community、Professional 及 Enterprise 版本中的可安裝元件。 若要取得 Visual Studio，請移至 [Visual Studio 2015 下載](https://go.microsoft.com/fwlink/p/?linkid=517106)頁面，並下載 Visual Studio 2015 Update 2 或更新版本。  
+ 適用於跨平台行動裝置開發的 Visual C++ 是隨附於 Visual Studio Community、Professional 及 Enterprise 版本中的可安裝元件。 若要取得 Visual Studio，請移至 [Visual Studio 2015 下載](https://visualstudio.microsoft.com/downloads/)頁面，並下載 Visual Studio 2015 Update 2 或更新版本。  
   
 ## <a name="InstallTheTools"></a> 安裝工具  
  Visual Studio 2015 的安裝程式包含安裝 Visual C++ for Cross-Platform Mobile Development 的選項。 這會安裝必要的 C++ 語言工具、適用於 Visual Studio 的範本和元件、Android 組建和偵錯所需的 GCC 和 Clang 工具組元件，以及與 Mac 通訊的 iOS 開發元件。 它也會安裝支援 iOS 和 Android 應用程式開發所需的所有協力廠商工具和軟體開發套件。 大多數協力廠商工具是 Android 平台支援所需的開放原始碼軟體。  
@@ -133,6 +133,6 @@ ms.locfileid: "74299798"
   
 4. 選擇 [確定] ，儲存自訂工具資料夾的位置。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
  [Visual C++ 跨平台行動開發](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)

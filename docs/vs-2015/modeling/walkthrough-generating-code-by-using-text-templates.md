@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2a86689fd41b7c0233db0df544082ef22c4931a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89f78e129d64b313de7bada3c72a449f1fb2aece
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295496"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849936"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "74295496"
  在此範例專案中，範本會讀取範例 XML 檔案，並產生對應到每個節點類型的類別。 在手動撰寫的程式碼中，您可以使用這些類別來巡覽 XML 檔案。 您也可以在使用相同節點類型的任何其他檔案上執行應用程式。 範例 XML 檔案的目的是要提供您想要應用程式處理之所有節點類型的範例。
 
 > [!NOTE]
-> [隨附的應用程式](https://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以從 XML 檔案產生強類型類別。 這裡示範的範本僅當成範例使用。
+> [隨附的應用程式](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以從 XML 檔案產生強類型類別。 這裡示範的範本僅當成範例使用。
 
  以下是範例檔案：
 
@@ -84,7 +84,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 ### <a name="create-or-open-a-c-project"></a>建立或開啟 C# 專案
  您可以將這項技術套用至任何程式碼專案。 此逐步解說使用 C# 專案，並且基於測試，我們會使用主控台應用程式。
 
-##### <a name="to-create-the-project"></a>若要建立專案
+##### <a name="to-create-the-project"></a>建立專案
 
 1. 在 [檔案] 功能表上，依序按一下 [新增] 和 [專案]。
 
@@ -420,5 +420,5 @@ namespace MyProject
 ## <a name="troubleshooting-the-text-template"></a>對文字範本進行疑難排解
  如果您在 [錯誤清單] 中看到範本轉換或編譯錯誤，或未正確地產生輸出檔案，則可以使用[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技術對文字範本進行疑難排解。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [使用 t4 文字模板來產生設計階段程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)[撰寫 t4 文字模板](../modeling/writing-a-t4-text-template.md)

@@ -14,17 +14,17 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0db0ab2c2a97f7cedde5b9b3a5ab925467a25146
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: aa346ebfe321e4672ea3fa71a4dcc872ebf22cda
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300487"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850225"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (獨立模式或整合模式)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以在整合式或隔離模式中，建立您自己的 Visual Studio 型應用程式。 在整合模式中，除了您的應用程式之外，還提供許多 Visual Studio 功能。 在獨立模式中，您可以選擇要與自己的延伸模組一起散發的 Visual Studio 功能子集。  
+您可以在整合式或隔離模式中，建立您自己的 Visual Studio 型應用程式。 在整合模式中，除了您的應用程式外，還能使用許多 Visual Studio 功能。 在獨立模式中，您可以選擇要與自己的擴充功能一併散發的一部分 Visual Studio 功能。  
   
 ## <a name="integrated-mode"></a>整合模式  
  整合模式可讓您的使用者使用標準 Visual Studio 功能以及自訂工具。 整合式 shell 主要用於裝載程式設計語言和軟體發展工具。  
@@ -55,7 +55,7 @@ ms.locfileid: "74300487"
 > - 您自己的 EULA，要求您的客戶同意保護 Visual Studio 整合式或隔離式 shell 的條款，至少與 shell 軟體的 Microsoft 終端使用者授權條款相同  
   
 ## <a name="additional-resources"></a>其他資源  
- 如需可轉散發套件的詳細資訊，請參閱 Visual Studio 擴充性[下載](https://go.microsoft.com/fwlink/?LinkID=119298)網站。  
+ 如需可轉散發套件的詳細資訊，請參閱 Visual Studio 擴充性[下載](https://msdn.microsoft.com/vstudio/bb984878.aspx)網站。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)

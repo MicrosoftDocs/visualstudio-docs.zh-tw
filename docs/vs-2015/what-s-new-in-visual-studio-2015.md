@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: f7065967ec86f7cde63c90de816fca95afce2171
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538978"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851494"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 的新功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "74538978"
  Visual Studio Tools for Apache Cordova 是 Microsoft 與開放原始碼 Apache Cordova 社群密切合作的結果。 這些工具允許使用 HTML、CSS 和 JavaScript (或 Typescript) 進行跨平台行動開發。 您只須使用一組程式碼，就能執行目標平台為 Android、iOS 和 Windows 的開發工作，同時使用 Visual Studio IDE 所提供的豐富功能，包括 JavaScript IntelliSense、DOM 總管、JavaScript 主控台、中斷點、監看功能、區域變數、Just My Code 等等。  透過 Visual Studio Tools for Apache Cordova，您的應用程式可以透過提供一般 JavaScript API 的外掛程式，存取所有平台上的原生裝置功能。 若要開始進行，請參閱[開始使用 Visual Studio Tools 以取得 Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)。
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>搭配使用 C# 和 Unity 的跨平台行動遊戲
- Unity 是用於開發多平台 2D 和 3D 遊戲之廣為使用的平台。 您可以使用 C# 撰寫遊戲，並以原生形態在 Android、iOS、Windows Phone 和許多其他平台上執行。 Visual Studio Tools for Unity 是整合 Unity 和 Visual Studio IDE 的擴充功能。 透過這項擴充功能，您可以取得 Visual Studio IDE 和偵錯工具的所有功能，以及專為 Unity 開發人員設計的生產力功能。 Visual Studio Tools for Unity 2.0 Preview 2 不僅增加許多新功能，還加入對 Visual Studio 2015 的支援，例如提升物件在 [區域變數] 視窗及 [監看式] 視窗的顯示能力。 Microsoft 最近併購了創造 Visual Studio Tools for Unity 的公司 SyntaxTree。 若要下載 Visual Studio Tools for Unity 2.0 Preview 2，以及如需 Visual Studio Tools for Unity 的詳細資訊，請參閱 [Visual Studio Tools for Unity 2.0](https://aka.ms/vstu)。
+ Unity 是用於開發多平台 2D 和 3D 遊戲之廣為使用的平台。 您可以使用 C# 撰寫遊戲，並以原生形態在 Android、iOS、Windows Phone 和許多其他平台上執行。 Visual Studio Tools for Unity 是整合 Unity 和 Visual Studio IDE 的擴充功能。 透過這項擴充功能，您可以取得 Visual Studio IDE 和偵錯工具的所有功能，以及專為 Unity 開發人員設計的生產力功能。 Visual Studio Tools for Unity 2.0 Preview 2 不僅增加許多新功能，還加入對 Visual Studio 2015 的支援，例如提升物件在 [區域變數] 視窗及 [監看式] 視窗的顯示能力。 Microsoft 最近併購了創造 Visual Studio Tools for Unity 的公司 SyntaxTree。 若要下載 Visual Studio Tools for Unity 2.0 Preview 2，以及如需 Visual Studio Tools for Unity 的詳細資訊，請參閱 [Visual Studio Tools for Unity 2.0](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)。
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>跨平台應用程式及原生 C++ 的程式庫
  C++ 是跨大部分行動裝置的原生可用語言。 您可以使用它來撰寫可針對多個行動平台目標建置的跨平台共用程式碼程式庫。 您甚至可以使用 C++ 建立整個行動應用程式。 Visual C++ 可提供工具來編輯、建置和部署跨平台程式碼，並對其進行偵錯。 除了 Windows 應用程式的範本之外，您還可以使用適用於 Android Native Activity 應用程式、iOS 應用程式或多種平台的共用程式碼程式庫專案 (包括 Xamarin 混合式應用程式)。 需要區分平台的 IntelliSense 可讓您探索各種 API，進而產生適用於目標平台為 Android、iOS 或 Windows 的正確程式碼。 您可以設定您的 x86 或 ARM 原生平台組建，並將您的程式碼部署到 iOS 模擬器、連接網路之 Mac 上的 iOS 裝置、直接附加的 Android 裝置，或是使用高效能 Microsoft Visual Studio Emulator for Android 進行測試。 您可以在 Visual Studio 偵錯工具中設定中斷點、監看變數、檢視堆疊，以及逐步執行 C++ 程式碼。 除了需要區分平台的程式碼之外，您還可以跨多個應用程式平台共用所有的程式碼，而且只需要在 Visual Studio 中建立一個方案，就能建置所有的應用程式。
@@ -158,7 +158,7 @@ ms.locfileid: "74538978"
 ### <a name="synchronized-settings-roaming-settings"></a>同步設定 (漫遊設定)
  Visual Studio 2013 針對一些最常見的組態設定 (例如文字編輯器、按鍵繫結關係、主題和字型和色彩、啟動，以及環境別名)，引進同步設定。  Visual Studio 2015 透過同步處理更多您的設定，以及同步處理不同 Visual Studio 系列應用程式 (例如 Professional、Enterprise、Express SKU 和 Blend) 的設定，改進這項體驗。 當您使用與 Visual Studio 2013 所用相同的帳戶第一次登入 Visual Studio 2015 時，您會看到從 Visual Studio 2013 套用的同步設定。 您可以在 [快速啟動] 中鍵入 "sync"，或巡覽至 [工具] > [選項] > [環境] > [同步設定] 來存取您的設定。
 
-### <a name="automatic-extension-updates"></a>自動擴充功能更新
+### <a name="automatic-extension-updates"></a>自動更新擴充功能
  現在，如果您已安裝的 Visual Studio 擴充功能在 Visual Studio 組件庫上有新版本時，即可自動更新。 如需如何自訂擴充功能自動更新的詳細資訊，請參閱 [尋找及使用 Visual Studio 擴充功能](./ide/finding-and-using-visual-studio-extensions.md) 。
 
 ### <a name="title-case-menus"></a>字首大寫的功能表

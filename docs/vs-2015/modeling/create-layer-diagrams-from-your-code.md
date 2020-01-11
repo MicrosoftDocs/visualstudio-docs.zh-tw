@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3e6cd77e785adb59fc8b2cf3b28724ed0efe1ae3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eea557035ef4e5f1ffa2585e620a331fb6b5cce2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300274"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852071"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>從程式碼建立分層圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,5 +135,5 @@ ms.locfileid: "74300274"
 
 - [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>另請參閱
- [Channel 9 影片：使用圖層圖表設計和驗證您的架構](https://go.microsoft.com/fwlink/?LinkID=252073)[圖層圖表：參考](../modeling/layer-diagrams-reference.md)[分層圖：方針](../modeling/layer-diagrams-guidelines.md)[使用分層圖來驗證](../modeling/validate-code-with-layer-diagrams.md)程式碼[視覺化](../modeling/visualize-code.md)
+## <a name="see-also"></a>請參閱
+ [Channel 9 影片：使用圖層圖表設計和驗證您的架構](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)[圖層圖表：參考](../modeling/layer-diagrams-reference.md)[分層圖：方針](../modeling/layer-diagrams-guidelines.md)[使用分層圖來驗證](../modeling/validate-code-with-layer-diagrams.md)程式碼[視覺化](../modeling/visualize-code.md)

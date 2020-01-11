@@ -9,17 +9,17 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: c8f29a909f6aef75976a551546d4cbeafdf03b37
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291875"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848458"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft 原始程式碼注釋語言（SAL）提供一組批註，您可以用來描述函式如何使用其參數、其相關假設，以及它在完成時所進行的保證。 批註會定義在標頭檔中 `<sal.h>`。 Visual Studio 的程式C++代碼分析會使用 SAL 注釋來修改其函式的分析。 如需有關 SAL 2.0 以進行 Windows 驅動程式開發的詳細資訊，請參閱[適用于 Windows 驅動程式的 sal 2.0 注釋](https://go.microsoft.com/fwlink/?LinkId=250979)。  
+Microsoft 原始程式碼注釋語言（SAL）提供一組批註，您可以用來描述函式如何使用其參數、其相關假設，以及它在完成時所進行的保證。 批註會定義在標頭檔中 `<sal.h>`。 Visual Studio 的程式C++代碼分析會使用 SAL 注釋來修改其函式的分析。 如需有關 SAL 2.0 以進行 Windows 驅動程式開發的詳細資訊，請參閱[適用于 Windows 驅動程式的 sal 2.0 注釋](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx)。  
   
  在原生、 C++ C 和中，僅提供有限的方式讓開發人員一致地表達意圖和 invariance。 藉由使用 SAL 注釋，您可以更詳細地描述您的函式，讓使用它們的開發人員可以更瞭解如何使用它們。  
   
@@ -84,7 +84,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>SAL 基本概念  
  SAL 定義四種基本類型的參數，依使用模式分類。  
   
-|類別|參數注釋|描述|  
+|分類|參數注釋|描述|  
 |--------------|--------------------------|-----------------|  
 |**輸入至呼叫的函式**|`_In_`|資料會傳遞至所呼叫的函式，並被視為唯讀。|  
 |**輸入至所呼叫的函式，並輸出至呼叫端**|`_Inout_`|可用的資料會傳遞至函式中，而且可能會遭到修改。|  
@@ -108,7 +108,7 @@ wchar_t * wmemcpy(
  本節顯示基本 SAL 注釋的程式碼範例。  
   
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>使用 Visual Studio Code 分析工具來尋找瑕疵  
- 在範例中，Visual Studio Code 分析工具會與 SAL 注釋一起使用，以找出程式碼缺失。 以下是如何執行此動作的方法。  
+ 在範例中，Visual Studio Code 分析工具會與 SAL 注釋一起使用，以找出程式碼缺失。 方法如下所示。  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>若要使用 Visual Studio 程式碼分析工具和 SAL  
   
@@ -409,9 +409,9 @@ bool GetValue(_Out_ int *pInt, bool flag)
   或者您可以為所有參數加上批註，讓您的意圖清楚明瞭，讓您可以輕鬆地檢查批註是否已經完成。  
   
 ## <a name="related-resources"></a>相關資源  
- [程式碼分析小組 Blog](https://go.microsoft.com/fwlink/p/?LinkId=251197)  
+ [程式碼分析小組 Blog](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 SAL 注釋減少 C/C++程式碼](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)缺失   
  [標注函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
  [批註](../code-quality/annotating-function-behavior.md)函式行為   

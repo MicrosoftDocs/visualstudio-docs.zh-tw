@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 16a51c7fc05d51b551884f70dc514e8939962818
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c676c57d6e6e6008611133235df8d525752f16b5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296040"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849508"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>有向圖形標記語言 (DGML) 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "74296040"
  請注意，某些版本的 Visual Studio 僅支援 DGML 功能的子集，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 > [!NOTE]
-> 當您編輯 .dgml 檔案時，IntelliSense 會協助您識別每個項目的可用屬性和其值。 若要以屬性指定色彩，請使用常見色彩名稱 (例如 "Blue") 或 ARGB 十六進位值 (例如 "#ffa0b1c3")。 DGML 使用一小部分的 Windows Presentation Foundation (WPF) 色彩定義格式。 如需詳細資訊，請參閱[色彩類別](https://go.microsoft.com/fwlink/?LinkId=182345)。
+> 當您編輯 .dgml 檔案時，IntelliSense 會協助您識別每個項目的可用屬性和其值。 若要以屬性指定色彩，請使用常見色彩名稱 (例如 "Blue") 或 ARGB 十六進位值 (例如 "#ffa0b1c3")。 DGML 使用一小部分的 Windows Presentation Foundation (WPF) 色彩定義格式。 如需詳細資訊，請參閱[色彩類別](https://msdn.microsoft.com/library/system.windows.media.colors.aspx)。
 
 ## <a name="DGML"></a>DGML 語法
  下表說明 DGML 中所使用的項目種類：
@@ -322,5 +322,5 @@ ms.locfileid: "74296040"
 </Properties>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [對應整個方案](../modeling/map-dependencies-across-your-solutions.md)的相依性[使用 code map 來分析應用程式](../modeling/use-code-maps-to-debug-your-applications.md)使用[Code Map 分析器找出潛在的問題](../modeling/find-potential-problems-using-code-map-analyzers.md)

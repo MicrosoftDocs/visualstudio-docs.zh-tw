@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: f382226ab20053a57b10326853f16e27f641b3be
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b959d411f0f574b03729d8016feb6efc531ae171
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298111"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846506"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>使用 Visual Studio 來發佈雲端服務
 
@@ -33,19 +33,19 @@ Visual Studio 可直接將應用程式發佈至 Azure，並支援雲端服務的
 
 在發佈 Azure 應用程式時，可以執行下列其中一項工作：
 
-- 建立服務封裝：您可以使用此套件和服務設定檔，從[Azure 入口網站](https://portal.azure.com)將應用程式發佈至部署環境。
+- 建立服務封裝：您可以從 [Azure 入口網站](https://portal.azure.com)，使用此封裝和服務組態檔將應用程式發佈至部署環境。
 
 - 從 Visual Studio 發行 Azure 專案：使用 [發行精靈] 可直接將應用程式發行至 Azure。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](vs-azure-tools-publish-azure-application-wizard.md)。
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>從 Visual Studio 建立服務封裝
 
-1. 準備好發佈應用程式時，請開啟 [方案總管]，開啟包含角色的 Azure 專案的捷徑功能表，然後選擇 [發佈]。
+1. 當您準備好要發行應用程式時，請開啟 [方案總管]，再開啟包含角色之 Azure 專案的捷徑功能表，然後選擇 [發行]。
 
 1. 若只要建立服務封裝，請遵循下列步驟：
 
    a. 開啟 Azure 專案的捷徑功能表，然後選擇 [封裝]。
 
-   b. 在 [**封裝 Azure 應用程式**] 對話方塊中，選擇要建立封裝的服務組態，然後選擇組建組態。
+   b. 在 [封裝 Azure 應用程式] 對話方塊中選擇要建立封裝的服務組態，然後選擇組建組態。
 
    c. (選擇性) 若要在發佈雲端服務後，為其開啟「遠端桌面」，請選取 [啟用所有角色的遠端桌面]，然後選取 [設定] 來設定遠端桌面認證。 如需詳細資訊，請參閱[使用 Visual Studio 啟用 Azure 雲端服務中角色的遠端桌面連線](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)。
 
@@ -69,13 +69,13 @@ Visual Studio 可直接將應用程式發佈至 Azure，並支援雲端服務的
 
 ### <a name="requirements-for-using-web-deploy"></a>使用 Web Deploy 的需求
 
-- **僅供開發和測試之**用：變更會直接對執行 web 角色的虛擬機器進行。 如果此虛擬機器必須回收，您就會遺失變更，因為您發佈的原始封裝會用來重新建立角色的虛擬機器。 重新發佈應用程式以取得 Web 角色的最新變更。
+- **只能用於開發和測試目的：** 系統會直接對執行 Web 角色的虛擬機器進行變更。 如果此虛擬機器必須回收，您就會遺失變更，因為您發佈的原始封裝會用來重新建立角色的虛擬機器。 重新發佈應用程式以取得 Web 角色的最新變更。
 
-- **只能更新 web 角色**：無法更新背景工作角色。 此外，您不能更新 `RoleEntryPoint` 中的 `web role.cs`。
+- **只能更新 Web 角色：** 無法更新背景工作角色。 此外，您不能更新 `web role.cs` 中的 `RoleEntryPoint`。
 
-- 只能**支援 web 角色的單一實例**：您的部署環境中不能有任何 web 角色的多個實例。 不過，可支援多個各只有一個執行個體的 Web 角色。
+- **只能支援 Web 角色的單一執行個體：** 所有 Web 角色在部署環境中都不能有多個執行個體。 不過，可支援多個各只有一個執行個體的 Web 角色。
 
-- **啟用遠端桌面**連線：此需求可讓 Web Deploy 使用使用者和密碼來連線到虛擬機器，以將變更部署至執行 INTERNET INFORMATION SERVICES （IIS）的伺服器。 此外，您可能需要連線到虛擬機器，以將信任的憑證新增到此虛擬機器上的 IIS。 (此憑證可確保 Web Deploy 所使用的 IIS 的遠端連線安全無虞。)
+- **啟用遠端桌面連線：** 此需求讓 Web Deploy 能夠使用使用者名稱和密碼來連線到虛擬機器，以將變更部署到執行網際網路資訊服務 (IIS) 的伺服器。 此外，您可能需要連線到虛擬機器，以將信任的憑證新增到此虛擬機器上的 IIS。 (此憑證可確保 Web Deploy 所使用的 IIS 的遠端連線安全無虞。)
 
 下列程序假設您是使用 [發佈 Azure 應用程式] 精靈。
 
@@ -110,7 +110,7 @@ Visual Studio 可直接將應用程式發佈至 Azure，並支援雲端服務的
 
 1. 若要發佈 Web 角色的變更，請選擇 [發佈]。
 
-    狀態列會顯示 [**發行已開始**]。 當發佈完成時，則會出現 [發佈成功] 。 現在變更已部署至虛擬機器上的 Web 角色。 您現在可以在 Azure 環境中啟動 Azure 應用程式來測試變更。
+    狀態列會顯示 [發佈已開始]。 當發佈完成時，則會出現 [發佈成功] 。 現在變更已部署至虛擬機器上的 Web 角色。 您現在可以在 Azure 環境中啟動 Azure 應用程式來測試變更。
 
 ### <a name="make-web-deploy-secure"></a>讓 Web Deploy 安全無虞
 
@@ -122,7 +122,7 @@ Visual Studio 可直接將應用程式發佈至 Azure，並支援雲端服務的
 
    a. 若要連接至執行 Web 角色的虛擬機器，請在 [雲端總管] 或 [伺服器總管] 中選取 Web 角色的執行個體，然後選擇 [使用遠端桌面連接] 命令。 如需如何連線至虛擬機器的詳細步驟，請參閱[使用 Visual Studio 啟用 Azure 雲端服務中角色的遠端桌面連線](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)。 您的瀏覽器會提示您下載 `.rdp` 檔案。
 
-   b. 若要新增 SSL 憑證，請開啟 IIS 管理員中的管理服務。 在 IIS 管理員中，開啟 [動作] 窗格中的 [繫結] 連結來啟用 SSL。 [新增站台繫結] 對話方塊隨即出現。 選擇 [新增]，然後在 [類型] 下拉式清單中選擇 HTTPS。 在 [SSL 憑證] 清單中，選擇您已透過 CA 簽署並上傳至 Azure 入口網站的 SSL 憑證。 如需詳細資訊，請參閱 [設定管理服務的連線設定](https://go.microsoft.com/fwlink/?LinkId=215824)。
+   b. 若要新增 SSL 憑證，請開啟 IIS 管理員中的管理服務。 在 IIS 管理員中，開啟 [動作] 窗格中的 [繫結] 連結來啟用 SSL。 [新增站台繫結] 對話方塊隨即出現。 選擇 [新增]，然後在 [類型] 下拉式清單中選擇 HTTPS。 在 [SSL 憑證] 清單中，選擇您已透過 CA 簽署並上傳至 Azure 入口網站的 SSL 憑證。 如需詳細資訊，請參閱 [設定管理服務的連線設定](https://technet.microsoft.com/library/cc770458(WS.10).aspx)。
 
       > [!NOTE]
       > 如果您新增受信任的 SSL 憑證，[發佈精靈] 中就不會再出現黃色警告三角形。
@@ -139,7 +139,7 @@ Visual Studio 可直接將應用程式發佈至 Azure，並支援雲端服務的
    d. 開啟您所加入之組件的捷徑功能表，然後選擇 [屬性]。 [屬性] 視窗隨即出現。
 
       若要將此組件納入服務封裝，請在 [複製本機清單] 中選擇 [True]。
-1. 在 [方案總管] 中，開啟遺漏參考組件之專案的專案節點。
+1. 在 [方案總管] 中開啟遺漏所參考組件之專案的專案節點。
 
 1. 若要將組件加入至專案，請開啟 [參考] 資料夾的捷徑功能表，然後選擇 [加入參考]。 [加入參考] 對話方塊隨即出現。
 
@@ -151,7 +151,7 @@ Visual Studio 可直接將應用程式發佈至 Azure，並支援雲端服務的
 
 1. 若要將此組件納入服務封裝，請在 [複製本機清單] 中選擇 [True]。
 
-1. 若要在已新增至 Web 角色專案的服務封裝中納入檔案，請開啟該檔案的捷徑功能表，然後選擇 [屬性]。 在 [屬性] 視窗中，從 [建置動作] 清單方塊選擇 [內容]。
+1. 若要在已新增至 Web 角色專案的服務封裝中納入檔案，請開啟該檔案的捷徑功能表，然後選擇 [屬性]。 在 [屬性] 視窗中，選擇 [建置動作] 清單方塊中的 [內容]。
 
 1. 若要在已新增至背景工作角色專案的服務封裝中納入檔案，請開啟該檔案的捷徑功能表，然後選擇 [屬性]。 在 [屬性] 視窗中，選擇 [複製到輸出目錄] 清單方塊中的 [有更新時才複製]。
 

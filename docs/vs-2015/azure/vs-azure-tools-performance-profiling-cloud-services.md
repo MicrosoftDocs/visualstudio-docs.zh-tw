@@ -11,19 +11,19 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 35593f4164ed024db19b5fa3503b2d7589a7ac2b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0f4e7635e62c8d21b6bdb3b1fd28a2fed0c60262
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289759"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851889"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>測試雲端服務的效能
 ## <a name="overview"></a>概觀
 您可以利用下列方式測試雲端服務的效能：
 
-* 使用 Azure 診斷來收集關於要求和連接的資訊，並檢閱可顯示從客戶觀點來看，服務執行的情況的網站統計資料。 若要開始使用，請參閱 [為 Azure 雲端服務和虛擬機器設定診斷功能](https://go.microsoft.com/fwlink/p/?LinkId=623009)。
-* 使用 Visual Studio 分析工具可取得服務執行情況在計算方面的深入分析。 如本主題所述，您可以使用分析工具於服務在 Azure 中執行時來測量服務。 如需如何使用分析工具來測量服務在本機的計算模擬器中執行的效能的詳細資訊，請參閱 [使用 Visual Studio 分析工具，在計算模擬器中本機測試 Azure 雲端服務的效能](https://go.microsoft.com/fwlink/p/?LinkId=262845)。
+* 使用 Azure 診斷來收集關於要求和連接的資訊，並檢閱可顯示從客戶觀點來看，服務執行的情況的網站統計資料。 若要開始使用，請參閱 [為 Azure 雲端服務和虛擬機器設定診斷功能](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines?view=vs-2019)。
+* 使用 Visual Studio 分析工具可取得服務執行情況在計算方面的深入分析。 如本主題所述，您可以使用分析工具於服務在 Azure 中執行時來測量服務。 如需如何使用分析工具來測量服務在本機的計算模擬器中執行的效能的詳細資訊，請參閱 [使用 Visual Studio 分析工具，在計算模擬器中本機測試 Azure 雲端服務的效能](https://azure.microsoft.com/documentation/articles/cloud-services-performance-testing-visual-studio-profiler/)。
 
 ## <a name="choosing-a-performance-testing-method"></a>選擇效能測試方法
 ### <a name="use-azure-diagnostics-to-collect"></a>使用 Azure 診斷以收集：
@@ -84,12 +84,12 @@ ms.locfileid: "74289759"
 > 
 
 ### <a name="to-configure-profiling-settings"></a>設定分析設定
-1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選擇 [發佈]。 如需有關如何發佈雲端服務的詳細步驟，請參閱 [使用 Azure 工具發佈雲端服務](https://go.microsoft.com/fwlink/p?LinkId=623012)。
+1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選擇 [發佈]。 如需有關如何發佈雲端服務的詳細步驟，請參閱 [使用 Azure 工具發佈雲端服務](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019)。
 2. 在 [發佈 Azure 應用程式] 對話方塊中，選擇 [進階設定] 索引標籤。
-3. 若要啟用程式碼剖析，請選取 [**啟用程式碼剖析**] 核取方塊。
-4. 若要設定程式碼剖析設定，請選擇 [**設定**] 超連結。 [分析設定] 對話方塊隨即出現。
+3. 若要啟用分析，請選取 [啟用分析] 核取方塊。
+4. 若要進行分析設定，請選擇 [設定] 超連結。 會出現 [設定檔設定] 對話方塊。
 5. 從 [您要使用的分析方法] 選項按鈕，選擇您所需要的分析類型。
-6. 若要收集階層互動分析資料，請選取 [**啟用階層互動分析**] 核取方塊。
+6. 若要收集層次互動分析資料，請選取 [啟用階層互動分析] 核取方塊。
 7. 若要儲存設定，請選擇 [確定] 按鈕。
    
     發佈這個應用程式時，這些設定會用來建立每個角色的分析工作階段。
@@ -100,12 +100,12 @@ ms.locfileid: "74289759"
 ![檢視來自 Azure 的分析報告](./media/vs-azure-tools-performance-profiling-cloud-services/IC748914.png)
 
 ### <a name="to-view-profiling-reports"></a>檢視分析報告
-1. 若要在 Visual Studio 中檢視 [伺服器總管] 視窗，請在功能表列上依序選擇 [檢視] 和 [伺服器總管]。
-2. 選擇 [Azure 運算] 節點，然後選擇從 Visual Studio 發佈時您選取要分析的雲端服務的 Azure 部署節點。
+1. 若要檢視 Visual Studio 中的 [伺服器總管] 視窗，請在功能表列上選擇 [檢視 | 伺服器總管]。
+2. 選擇 [Azure 計算] 節點，然後依您所選從 Visual Studio 發行時要進行程式碼剖析的雲端服務，選擇其 Azure 部署節點。
 3. 若要檢視執行個體的分析報告，請選擇服務中的角色、開啟特定執行個體的捷徑功能表，然後選擇 [檢視分析報告]。
    
-    現在便會從 Azure 下載 .vsp 檔案的報告，而下載狀態會出現在 Azure 活動記錄檔中。 下載完成時，分析報告會顯示在 Visual Studio 編輯器的索引標籤中，名為  <角色名稱\><執行個體號碼 *\>* <識別碼\>.vsp。 報告的摘要資料隨即出現。
-4. 若要顯示報告的不同檢視，在 [目前檢視] 清單中，選擇您要的檢視類型。 如需詳細資訊，請參閱 [分析工具報告檢視](https://msdn.microsoft.com/library/azure/bb385755.aspx)。
+    現在便會從 Azure 下載 .vsp 檔案的報告，而下載狀態會出現在 Azure 活動記錄檔中。 下載完成時，分析報告會顯示在 Visual Studio 編輯器的索引標籤中，名為  <角色名稱\><執行個體號碼\><識別碼\>.vsp。 報告的摘要資料隨即出現。
+4. 若要顯示報告的不同檢視，請從 [目前檢視] 清單中選擇您要的檢視類型。 如需詳細資訊，請參閱 [分析工具報告檢視](https://msdn.microsoft.com/library/azure/bb385755.aspx)。
 
 ## <a name="next-steps"></a>後續步驟
 [偵錯雲端服務](vs-azure-tools-debugging-cloud-services-overview.md)

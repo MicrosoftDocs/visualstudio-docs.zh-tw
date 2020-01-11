@@ -13,12 +13,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9b1fd98b3812fbeca2597534a7177ba2f81ab138
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3185b70f74478a9a55c4fb918c1535c86d154c76
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301232"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846375"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 檔案的結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "74301232"
 包含 VSIX 封裝中之內容類型的相關資訊。 Visual Studio 使用 [Content_Types] .xml 檔案來安裝封裝，但不會安裝檔案本身。  
   
 > [!NOTE]
-> 雖然本主題僅適用于在 VSIX 封裝中使用的 [Content_Type] .xml 檔案，但 [Content_Types] .xml 檔案類型是*開放封裝慣例（OPC）* 標準的一部分。 如需詳細資訊，請參閱《 OPC：在 MSDN 網站上[封裝資料的新標準](https://go.microsoft.com/fwlink/?LinkID=148207)\ （英文 \）。  
+> 雖然本主題僅適用于在 VSIX 封裝中使用的 [Content_Type] .xml 檔案，但 [Content_Types] .xml 檔案類型是*開放封裝慣例（OPC）* 標準的一部分。 如需詳細資訊，請參閱《 OPC：在 MSDN 網站上[封裝資料的新標準](https://msdn.microsoft.com/magazine/cc163372.aspx)\ （英文 \）。  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
+## <a name="attributes-and-elements"></a>屬性和元素  
  下列各節將描述根項目及其屬性和子項目。  
   
 ### <a name="root-element"></a>Root 元素  
@@ -45,11 +45,11 @@ ms.locfileid: "74301232"
   
 ### <a name="attribute-name-attribute"></a>{屬性名稱}特性  
   
-|                           值                           |                描述                |
+|                           {2&gt;值&lt;2}                           |                描述                |
 |-----------------------------------------------------------|-------------------------------------------|
 | http://schemas.openformats.org/package/2006/content-types | 內容類型架構的位置。 |
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
  `Types` 元素可以包含不限數目的 `Default` 元素。  
   
 |項目|描述|  
@@ -68,7 +68,7 @@ ms.locfileid: "74301232"
   
 |副檔名|ContentType|  
 |---------------|-----------------|  
-|.txt|text/plain|  
+|txt|text/plain|  
 |.pkgdef|text/plain|  
 |xml|text/xml|  
 |extension.vsixmanifest|text/xml|  
@@ -77,9 +77,9 @@ ms.locfileid: "74301232"
 |pdf|應用程式/pdf|  
 |gif|image/gif|  
 |jpg 或 jpeg|影像/jpg|  
-|tiff|影像/tiff|  
-|vsix|應用程式/zip|  
-|zip|應用程式/zip|  
+|tiff|image/tiff|  
+|vsix|application/zip|  
+|zip|application/zip|  
 |dll|application/octet-stream|  
 |所有其他檔案類型|application/octet-stream|  
   
@@ -101,7 +101,7 @@ ms.locfileid: "74301232"
 </Types>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSIX 封裝  的剖析](../extensibility/anatomy-of-a-vsix-package.md)  
  [VSIX 擴充功能架構1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC：封裝資料的新標準](https://go.microsoft.com/fwlink/?LinkID=148207)
+ [OPC：封裝資料的新標準](https://msdn.microsoft.com/magazine/cc163372.aspx)

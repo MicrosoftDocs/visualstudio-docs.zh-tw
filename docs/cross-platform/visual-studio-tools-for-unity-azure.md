@@ -12,12 +12,12 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: 454cb3617bb918b67784ebd2a3388ac6ee9f3826
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c0a2cc0464d643fdf6f17da045b3d56ccc678fb9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818359"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846687"
 ---
 # <a name="program-with-unity-and-azure"></a>使用 Unity 與 Azure 設計程式
 
@@ -30,12 +30,12 @@ Azure 提供可調整規模的解決方案，將遙測和其他遊戲資料儲�
 
 請造訪[沙箱](/sandbox/)以搭配 Unity 嘗試下列實驗性 Azure SDK：
 
-* [適用於 Unity 的 Azure 儲存體 SDK](https://aka.ms/azstoragegamedev) \(英文\)
-* [適用於 Unity 的 Azure 事件中樞 SDK](https://aka.ms/azeventhubsgamedev) \(英文\)
-* [適用於 Unity 的 Azure 行動應用程式 SDK](https://aka.ms/azmobileappsgamedev) \(英文\)
+* [適用於 Unity 的 Azure 儲存體 SDK](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity?wt.mc_id=azgamedev-sandbox-brpeek) \(英文\)
+* [適用於 Unity 的 Azure 事件中樞 SDK](https://docs.microsoft.com/sandbox/gamedev/unity/azure-event-hubs-unity?WT.mc_id=azgamedev-sandbox-brpeek) \(英文\)
+* [適用於 Unity 的 Azure 行動應用程式 SDK](https://docs.microsoft.com/sandbox/gamedev/unity/azure-mobile-apps-unity?WT.mc_id=azgamedev-sandbox-brpeek) \(英文\)
 
 ## <a name="azure-sdk-sample"></a>Azure SDK 範例
 
-還有一個使用 Azure 簡易表 SDK 及 Unity 的[簡易範例遊戲](https://aka.ms/azmobileappsracer) \(英文\)。 該遊戲是使用 Azure 簡易表資料儲存區來追蹤高分排行榜並儲存遊戲內遙測，並可供[從 GitHub 下載](https://aka.ms/azsamples-unity)(英文\)。
+還有一個使用 Azure 簡易表 SDK 及 Unity 的[簡易範例遊戲](https://docs.microsoft.com/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer) \(英文\)。 該遊戲是使用 Azure 簡易表資料儲存區來追蹤高分排行榜並儲存遊戲內遙測，並可供[從 GitHub 下載](https://github.com/BrianPeek/AzureSamples-Unity)(英文\)。
 
 ![範例遊戲螢幕擷取畫面](media/vstu_azure-test-sample-game-image2.png)

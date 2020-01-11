@@ -12,14 +12,14 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301049"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849795"
 ---
-# <a name="extend-uml-models-and-diagrams"></a>Extend UML models and diagrams
+# <a name="extend-uml-models-and-diagrams"></a>擴充 UML 模型和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題摘要說明各種不同方式，可讓您擴充 Visual Studio 隨附的 UML 模型工具。 若要查看支援各種模型類型和工具的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
@@ -30,7 +30,7 @@ ms.locfileid: "74301049"
 
  Fabrikam 的工具小組製作了一系列的增強功能來協助此開發小組。 下列各節描述您可以定義的各種擴充功能。 您可以將多項技術合併成單一 Visual Studio 擴充功能。
 
- 如需詳細資訊，請參閱這段影片：![連結至影片](../data-tools/media/playvideo.gif "連結 playvideo")[MSDN How Do I 系列： UML 工具和](https://go.microsoft.com/fwlink/?LinkId=214467)擴充性。
+ 如需詳細資訊，請參閱這段影片：![連結至影片](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How Do I 系列： UML 工具和](https://msdn.microsoft.com/vstudio/ff859492)擴充性。
 
 ## <a name="Requirements"></a> 需求
 
@@ -106,17 +106,17 @@ ms.locfileid: "74301049"
 
  如需詳細資訊，請參閱[在程式碼中讀取 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。
 
-## <a name="domain-specific-languages"></a>特定領域語言
+## <a name="domain-specific-languages"></a>領域特定語言
  如果您經常使用特定類型的模型，建立特定領域語言可能會對您有所幫助。 相較於 UML 模型，建立此工具將可讓您更貼近商務需求，但也需付出更多心力在建置和維護上。 如需詳細資訊，請參閱[適用于 Visual Studio 網域特定語言的模型化 SDK](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)。
 
 ## <a name="external-resources"></a>外部資源
 
 |**分類**|**Links**|
 |------------------|---------------|
-|**影片**|![連結至影片](../data-tools/media/playvideo.gif "連結 playvideo") [MSDN 「如何」系列： UML 工具和](https://go.microsoft.com/fwlink/?LinkId=214467)擴充性<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif "PlayVideo")[頻道9：使用 Visual Studio 的 UML](https://go.microsoft.com/fwlink/?LinkId=199957)|
-|**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格 (英文)](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**技術文件和日誌**|[MSDN 架構中心](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**影片**|![連結至影片](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「如何」系列： UML 工具和](https://msdn.microsoft.com/vstudio/ff859492)擴充性<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif "PlayVideo")[頻道9：使用 Visual Studio 的 UML](https://channel9.msdn.com/posts/clinted/)|
+|**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格](https://blogs.msdn.com/b/visualstudioalm)|
+|**技術文件和日誌**|[MSDN 架構中心](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  建立適用于 UML 模型擴充性之[應用程式](../modeling/create-models-for-your-app.md) [API 參考的](../modeling/api-reference-for-uml-modeling-extensibility.md)模型

@@ -14,17 +14,17 @@ caps.latest.revision: 57
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51cb71d4bc2f66377b677d5be292c4eafa1dbd18
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 21376668eef88d3d8ce42ff73785b972be045cb2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299462"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850639"
 ---
 # <a name="layer-diagrams-guidelines"></a>分層圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 中建立*分層圖*，以在高階層描述您的應用程式架構。 使用分層圖驗證程式碼，以確定程式碼與設計保持一致。 您也可以在建置流程中包含圖層驗證。 請參閱[Channel 9 影片：使用分層圖設計和驗證您的架構](https://go.microsoft.com/fwlink/?LinkID=252073)。
+在 Visual Studio 中建立*分層圖*，以在高階層描述您的應用程式架構。 使用分層圖驗證程式碼，以確定程式碼與設計保持一致。 您也可以在建置流程中包含圖層驗證。 請參閱[Channel 9 影片：使用分層圖設計和驗證您的架構](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)。
 
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -66,7 +66,7 @@ ms.locfileid: "74299462"
 ## <a name="CreateLayers"></a>定義圖層以代表功能區域或元件
  圖層代表成品的邏輯群組，例如*專案、程式*代碼檔案、命名空間、類別和方法。 您可以從 Visual C# .NET 和 Visual Basic.NET 專案的成品中建立圖層，或可以透過連結文件 (例如 Word 檔案或 PowerPoint 簡報) 將規格或計劃附加至圖層。 每個圖層都會顯示為圖表上的矩形，並顯示連結到圖層的成品數目。 圖層可以包含巢狀圖層以描述更特定的工作。
 
- 一般來說，會根據圖層的函式 (例如，「簡報」或「服務」) 來為圖層命名。 如果成品具有密切相依性，請將它們放在同一圖層。 如果成品可以個別更新或用於個別應用程式，請將它們放在不同的圖層中。 若要瞭解分層模式，請造訪[http://go.microsoft.com/fwlink/?LinkId=145794](https://go.microsoft.com/fwlink/?LinkId=145794)的模式 & 實務網站。
+ 一般來說，會根據圖層的函式 (例如，「簡報」或「服務」) 來為圖層命名。 如果成品具有密切相依性，請將它們放在同一圖層。 如果成品可以個別更新或用於個別應用程式，請將它們放在不同的圖層中。 若要瞭解分層模式，請造訪[http://go.microsoft.com/fwlink/?LinkId=145794](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home)的模式 & 實務網站。
 
 > [!TIP]
 > 某些類型的成品可以連結至圖層，但是不支援針對圖層圖表進行驗證。 若要查看成品是否支援驗證，請開啟 [**圖層瀏覽器**] 來檢查成品連結的 [**支援驗證**] 屬性。 請參閱[探索層級之間的現有](#Generate)相依性。
@@ -115,7 +115,7 @@ ms.locfileid: "74299462"
 ## <a name="NewAreas"></a>設計應用程式的新區域
  當您著手開發新專案或新專案的新區域時，可以繪製圖層與相依性，以便有助您先識別主要元件，再著手開發程式碼。
 
-- 盡可能在分層圖中**顯示可識別的架構模式**。 例如，描述桌面應用程式的圖層圖表可能包括簡報、網域邏輯和資料儲存區等圖層。 涵蓋應用程式內單一功能的圖層圖表可能具有例如模型、檢視和控制器等的圖層。 如需這類模式的詳細資訊，請參閱[模式 & 實務：應用程式架構](https://go.microsoft.com/fwlink/?LinkId=145794)。
+- 盡可能在分層圖中**顯示可識別的架構模式**。 例如，描述桌面應用程式的圖層圖表可能包括簡報、網域邏輯和資料儲存區等圖層。 涵蓋應用程式內單一功能的圖層圖表可能具有例如模型、檢視和控制器等的圖層。 如需這類模式的詳細資訊，請參閱[模式 & 實務：應用程式架構](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home)。
 
      如果您經常建立類似的模式，請建立自訂工具。 請參閱[定義自訂模型工具箱專案](../modeling/define-a-custom-modeling-toolbox-item.md)。
 
@@ -162,5 +162,5 @@ ms.locfileid: "74299462"
 ## <a name="BuildValidation"></a>在組建流程中包含圖層驗證
  若要確保程式碼的日後變更符合圖層圖表，請在您的方案標準建置流程中包含圖層驗證。 不論其他小組成員何時建置方案，只要程式碼與圖表圖層中的相依性之間有任何差異，將會報告為建置錯誤。 如需在組建流程中包含圖層驗證的詳細資訊，請參閱[使用分層圖驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [分層圖：參考](../modeling/layer-diagrams-reference.md)[從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)

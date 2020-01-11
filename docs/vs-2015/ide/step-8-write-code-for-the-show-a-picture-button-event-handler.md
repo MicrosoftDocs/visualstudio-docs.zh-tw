@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2c1b09d88de938ee4bc93b69b50d53c0d39006f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f5d58533f6f2207d1b07883ab741eb900cdfbbf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300002"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851119"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "74300002"
 
   IDE 提供一個功能強大的工具，稱為 IntelliSense，可幫助您撰寫程式碼。 當您輸入程式碼時，IDE 會根據您輸入的局部文字，開啟方塊來提供建議的完整程式碼。 它會嘗試判斷您接下來想要怎麼做，然後自動跳至您從清單中選擇的最後一個項目。 您可以利用向上或向下箭號在清單中移動，也可以繼續輸入字母來縮小選項範圍。 當您看到想要的選項時，選擇 TAB 鍵加以選取。 或者，如果不需要的話，您也可以忽略建議。
 
-  ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 4](https://go.microsoft.com/fwlink/?LinkId=205215)或[教學課程1：在C#影片4中建立圖片檢視器](https://go.microsoft.com/fwlink/?LinkId=205203)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+  ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 4](https://msdn.microsoft.com/vbasic/gg315355.aspx)或[教學課程1：在C#影片4中建立圖片檢視器](https://msdn.microsoft.com/vcsharp/gg278412.aspx)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>若要為顯示圖片按鈕事件處理常式撰寫程式碼
 
@@ -94,7 +94,7 @@ ms.locfileid: "74300002"
          [!code-csharp[VbExpressTutorial1Step8#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step8/cs/form1.cs#1)]
          [!code-vb[VbExpressTutorial1Step8#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step8/vb/form1.vb#1)]
 
-### <a name="to-continue-or-review"></a>繼續或檢視
+### <a name="to-continue-or-review"></a>若要繼續或檢視
 
 - 若要移到下一個教學課程步驟，請參閱[步驟 9：檢閱、註解和測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)。
 

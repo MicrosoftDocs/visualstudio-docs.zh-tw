@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8457dde4a447b3b49349ee7f9a979479abe4aaf8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301221"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851615"
 ---
 # <a name="signing-in-to-visual-studio"></a>登入 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "74301221"
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>我為何應該登入 Visual Studio？
  登入 Visual Studio 會帶給您下列好處：
 
-- 從 Visual Studio Dev Essentials 方案**存取各種權益** ，包括免費軟體、訓練、支援和更多。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 。
+- 從 Visual Studio Dev Essentials 方案**存取各種權益** ，包括免費軟體、訓練、支援和更多。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 。
 
 - **同步處理您的 Visual Studio 設定** – 您自訂的設定，例如金鑰繫結、視窗配置和色彩佈景主題，會在您從任何裝置登入 Visual Studio 時立即套用。 請查看 [Visual Studio 中的同步處理設定](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)。
 

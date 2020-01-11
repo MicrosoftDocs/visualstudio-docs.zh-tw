@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d4c44719854714658c1c15bf7059e49f4e668bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c65b9da1e8273b7e765d45c3d965e26b11d26632
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590419"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850284"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令列選項
 
@@ -55,7 +55,7 @@ ms.locfileid: "75590419"
 |**/ResultsDirectory:[*path*]**|如果測試結果目錄不存在，則會在指定的路徑中建立該目錄。<br />範例：`/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*parentProcessId*]**|父處理序的處理序識別碼，該父處理序負責啟動目前處理序。|
 |**/Port:[*port*]**|通訊端連線和接收事件訊息的連接埠。|
-|**/Collect:[*dataCollector friendlyName*]**|測試回合啟用資料收集器。 [詳細資訊](https://aka.ms/vstest-collect)。|
+|**/Collect:[*dataCollector friendlyName*]**|測試回合啟用資料收集器。 [詳細資訊](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md)。|
 
 > [!TIP]
 > 選項和值不區分大小寫。

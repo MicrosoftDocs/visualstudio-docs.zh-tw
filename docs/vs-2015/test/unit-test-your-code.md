@@ -12,12 +12,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c861099ac5253c9610e8ae75d3c429a5ce88a9d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7a8b9a4b52fce5fb838c12ccf057fd0e80619cd7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301435"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851251"
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "74301435"
 |**使用程式碼涵蓋範圍來識別您的專案程式碼的哪個部分，是使用單元測試進行測試：** 了解 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 測試工具的程式碼涵蓋範圍功能。|-   [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**在單元測試中運用負載測試來執行壓力與效能分析：** 您可以建立負載測試，並將單元測試加入其中，以便找出應用程式中的效能與壓力問題。 **注意：** 若要建立和使用負載測試，您必須安裝 Visual Studio Enterprise。|-   [建立和編輯負載測試](https://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [如何：將 Web 效能測試和單元測試加入負載測試情節](https://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [如何：將 Web 效能測試和單元測試從負載測試情節中移除](https://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|
 |**設立並嚴守品質閘門：** 您可以樹立品質閘門，確定程式碼在簽入之前都必須先經過測試，以確保程式碼的品質。|-   [設立並嚴守品質閘門](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|
-|**擴充單元測試類型：** 您可以在測試中加入可能不存在單元測試架構中的功能。 例如，您可以加入測試屬性，以便指定測試是否應該以一般使用者身分執行。 或者，您也可以擴充架構，以便將資料列屬性加入至方法並且在測試內部使用該資料列的資料。|如需如何擴充單元測試架構的範例程式碼，請參閱下列 [Microsoft 網站](https://go.microsoft.com/fwlink/?LinkId=185591)。|
+|**擴充單元測試類型：** 您可以在測試中加入可能不存在單元測試架構中的功能。 例如，您可以加入測試屬性，以便指定測試是否應該以一般使用者身分執行。 或者，您也可以擴充架構，以便將資料列屬性加入至方法並且在測試內部使用該資料列的資料。|如需如何擴充單元測試架構的範例程式碼，請參閱下列 [Microsoft 網站](https://msdn.microsoft.com/vstudio/ff420671.aspx)。|
 |**設定測試選項：** 例如，您可以指定儲存測試結果的位置。|[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="related-tasks"></a>相關工作
@@ -63,7 +63,7 @@ ms.locfileid: "74301435"
 
  提供有關使用 Visual Studio 執行自動化測試 (相對於使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)]) 的資訊連結。
 
-## <a name="reference"></a>參考
+## <a name="reference"></a>參考資料
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 描述 UnitTesting 命名空間，它會提供屬性、例外狀況、判斷提示和其他支援單元測試的類別。
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> 描述 UnitTesting 命名空間，其藉由提供 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 和 Web 服務單元測試的支援，來擴充 UnitTesting 命名空間。
@@ -71,16 +71,16 @@ ms.locfileid: "74301435"
 ## <a name="external-resources"></a>外部資源
 
 ### <a name="videos"></a>Videos
- [Channel 9：Unit testing your Windows Store apps built using XAML (單元測試使用 XAML 建置的 Windows 市集應用程式)](https://go.microsoft.com/fwlink/?LinkId=226285)
+ [Channel 9：Unit testing your Windows Store apps built using XAML (單元測試使用 XAML 建置的 Windows 市集應用程式)](https://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-529T)
 
 ### <a name="forums"></a>Forums
- [Visual Studio 單元測試](https://go.microsoft.com/fwlink/?LinkId=224477)
+ [Visual Studio 單元測試](https://social.msdn.microsoft.com/Forums/en/vsunittest/threads)
 
 ### <a name="guidance"></a>指引
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：測試內部](https://msdn.microsoft.com/library/jj159340.aspx)
 
-### <a name="reference"></a>參考
- [單元測試的內容索引](https://go.microsoft.com/fwlink/?LinkID=254719)
+### <a name="reference"></a>參考資料
+ [單元測試的內容索引](https://blogs.msdn.com/b/mathew_aniyan/archive/2012/05/17/content-index-for-unit-test.aspx)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [改善](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)[應用程式的程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)代碼品質測試

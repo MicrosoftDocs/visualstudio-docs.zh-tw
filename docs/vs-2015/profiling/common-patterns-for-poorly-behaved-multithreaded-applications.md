@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b103c2611216a5024d600aafba212919592ff3b3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 414b5ea6a6cf6bf0277ad8d2df51b20c39f558e1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300665"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852173"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>行為錯誤之多執行緒應用程式的一般模式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74300665"
   
  如下圖所示，並行視覺化檢視也可以在 [CPU 使用率檢視] 中顯示出這個徵兆，檢視中雖然有多個執行緒，但是應用程式還是只使用一個邏輯核心。  
   
- 如需詳細資訊，請參閱 Hazim Shafi 在 MSDN 部落格網站上的 [Windows 的平行效能工具](https://go.microsoft.com/fwlink/?LinkID=160569)中發表的＜效能模式 1：識別鎖定爭用＞(英文)。  
+ 如需詳細資訊，請參閱 Hazim Shafi 在 MSDN 部落格網站上的 [Windows 的平行效能工具](https://blogs.msdn.com/hshafi)中發表的＜效能模式 1：識別鎖定爭用＞(英文)。  
   
  ![鎖定爭用](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -66,5 +66,5 @@ ms.locfileid: "74300665"
   
  當應用程式以先到先服務的順序取得鎖定時，以及當鎖定的抵達速率高於取得速率時，就會發生鎖定護送。 這兩項條件的組合會導致鎖定的要求開始堵塞。 解決這個問題的一個方法是使用「不公平」的鎖定，或使用能提供第一個執行緒存取權以找出處於未鎖定狀態之鎖定的鎖定。 上圖顯示這個護送行為。 若要解決這個問題，請嘗試減少同步處理物件的爭用，並嘗試使用不公平的鎖定。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: dd9a0e09d4032feff398a9ba8c7333c84cb46550
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fb2b8120665c7eb08f1462dd7b3299538079ae9b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295847"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852386"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -493,9 +493,9 @@ ms.locfileid: "74295847"
      `min(pM->nSize, sizeof(MyStruct))`  
   
 ## <a name="related-resources"></a>相關資源  
- [程式碼分析小組 Blog](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [程式碼分析小組 Blog](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 SAL 注釋減少 C/C++程式碼](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)缺失   
  [瞭解 SAL](../code-quality/understanding-sal.md)   
  [批註](../code-quality/annotating-function-behavior.md)函式行為   

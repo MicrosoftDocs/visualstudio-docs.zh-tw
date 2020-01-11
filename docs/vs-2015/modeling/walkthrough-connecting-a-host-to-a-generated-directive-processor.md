@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 10c9c6cfa1d8553c79b710239a99f8ea9e2438e5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 47e1b1f11fd885afbb5e84e1530a171442938af0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301276"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851302"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連接至產生的指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +37,14 @@ ms.locfileid: "74301276"
 
 - 使用產生的指示詞處理器來測試自訂主機。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
  若要定義 DSL，您必須已安裝下列元件：
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
 
  此外，您必須在[逐步解說：建立自訂文字模板主](../modeling/walkthrough-creating-a-custom-text-template-host.md)控制項中建立自訂文字模板轉換。
 
@@ -358,5 +358,5 @@ ms.locfileid: "74301276"
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)

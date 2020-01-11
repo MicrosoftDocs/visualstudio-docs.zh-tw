@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a2757201f482682b8fdf26275f510984629204f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 71aa8b31023cedcc41a08a775f9fdf28a4489d1e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300913"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847183"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>開始使用網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題說明定義和使用以模型 SDK for Visual Studio 建立的特定領域語言（DSL）的基本概念。
 
- 如果您不熟悉 Dsl，建議您透過**DSL 工具實驗室**來進行，您可以在此網站中找到： [Visualizaton 和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+ 如果您不熟悉 Dsl，建議您透過**DSL 工具實驗室**來進行，您可以在此網站中找到： [Visualizaton 和模型化 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>您可以使用特定領域語言來做什麼？
  網域指定的語言是一種標記法，通常是圖形化，專門設計用於特定用途。 相反地，UML 這類語言就是一般用途。 在 DSL 中，您可以定義模型專案和其關聯性的類型，以及它們在畫面上的呈現方式。
@@ -36,13 +36,13 @@ ms.locfileid: "74300913"
 
  本總覽的其餘部分是逐步解說，介紹在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中建立和使用特定領域語言的基本作業。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
  若要定義 DSL，您必須已安裝下列元件：
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
 |Visual Studio 的模型化 SDK|[下載 MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>建立 DSL 解決方案
@@ -50,7 +50,7 @@ ms.locfileid: "74300913"
 
 #### <a name="to-create-a-dsl-solution"></a>建立 DSL 方案
 
-1. 在 [檔案] **Deploying Office Solutions** 功能表中，指向 [新增]，然後按一下 [專案]。
+1. 在 [檔案] 功能表中，指向 [新增]，然後按一下 [專案]。
 
 2. 在 [**專案類型**] 底下，展開 [**其他專案類型**] 節點，**然後按一下 [** 擴充性]。
 
@@ -58,7 +58,7 @@ ms.locfileid: "74300913"
 
     ![建立 DSL 對話方塊](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
-4. 在 [**名稱**] 方塊中，輸入**FamilyTree**。 按一下 [確定]。
+4. 在 [**名稱**] 方塊中，輸入**FamilyTree**。 按一下 [ **確定**]。
 
     [**網域指定的語言嚮導]** 隨即開啟，並顯示範本 DSL 解決方案的清單。
 
@@ -398,5 +398,5 @@ ms.locfileid: "74300913"
 
 2. 重建您仍想要使用的任何實驗性 Dsl 或其他實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組。
 
-## <a name="see-also"></a>另請參閱
- [瞭解模型、類別和關聯](../modeling/understanding-models-classes-and-relationships.md)性[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md) [Visualizaton 和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+## <a name="see-also"></a>請參閱
+ [瞭解模型、類別和關聯](../modeling/understanding-models-classes-and-relationships.md)性[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md) [Visualizaton 和模型化 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

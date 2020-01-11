@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 28ea84e4de92ae2cd3bad8b6fea4f9036fd65014
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5092a2d2a823db6b101ee73d9d5c5dddef5c4526
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298287"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843993"
 ---
 # <a name="debugging-gpu-code"></a>偵錯 GPU 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "74298287"
 2. [執行目前 Tile 至游標處] 命令會執行應用程式，直到目前 Tile 中的所有執行緒到達游標處，然後中斷。  
   
 ## <a name="debugging-windows"></a>偵錯視窗  
- 您可以使用某些偵錯視窗檢查和凍結 GPU 執行緒，以及為它們加上旗標。 如需詳細資訊，請參閱：  
+ 您可以使用某些偵錯視窗檢查和凍結 GPU 執行緒，以及為它們加上旗標。 如需詳細資訊，請參閱＜＞。  
   
 - [使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)  
   
@@ -80,9 +80,9 @@ ms.locfileid: "74298287"
  如果您是在遠端電腦上進行偵錯，就會發生這個錯誤。 在執行階段之前，偵錯工具無法判斷驅動程式是否安裝在遠端電腦上。 驅動程式可向圖形卡的製造商取得。  
   
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>錯誤：遠端網站必須停用「逾時偵錯與復原」(TDR)。  
- C++ AMP 計算可能會超過 Windows 逾時偵測與復原程序 (TDR) 所設定的預設時間間隔。 發生這種情況時，計算就會取消，而且資料將會遺失。 如需詳細資訊，請參閱 [Handling TDRs in C++ AMP](https://go.microsoft.com/fwlink/p/?LinkId=249154) (在 C++ AMP 中處理 TDR)。  
+ C++ AMP 計算可能會超過 Windows 逾時偵測與復原程序 (TDR) 所設定的預設時間間隔。 發生這種情況時，計算就會取消，而且資料將會遺失。 如需詳細資訊，請參閱 [Handling TDRs in C++ AMP](https://blogs.msdn.com/b/nativeconcurrency/archive/2012/03/07/handling-tdrs-in-c-amp.aspx) (在 C++ AMP 中處理 TDR)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：  C++的偵錯工具](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)  
  [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [在 Visual Studio 中開始 GPU 偵錯](https://go.microsoft.com/fwlink/p/?LinkId=255381)
+ [在 Visual Studio 中開始 GPU 偵錯](https://blogs.msdn.com/b/nativeconcurrency/archive/2012/03/17/start-gpu-debugging-in-visual-studio-11.aspx)

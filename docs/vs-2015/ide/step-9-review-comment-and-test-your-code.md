@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 744b5f3c62ac2c5636ed2499653986d3b669fce3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 090aeb83f6d0480c511acd808498953ae6c01940
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299958"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851095"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步驟 9：檢閱、註解和測試您的程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "74299958"
 
    陳述式就是讓程式執行動作的機制。 在 Visual C# 中，陳述式的結尾一定是分號。 在 Visual Basic 中，行尾就代表陳述式結尾 （Visual Basic 中不需要分號）。上述語句會告訴您的 `PictureBox` 控制項載入使用者以**OpenFileDialog**元件選取的檔案。
 
-  ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 5](https://go.microsoft.com/fwlink/?LinkId=205216)或[教學課程1：建立C#圖片檢視器-影片 5](https://go.microsoft.com/fwlink/?LinkId=205206)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+  ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 5](https://msdn.microsoft.com/vbasic/gg315356.aspx)或[教學課程1：建立C#圖片檢視器-影片 5](https://msdn.microsoft.com/vcsharp/gg278413.aspx)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ### <a name="to-add-comments"></a>加入註解
 
@@ -87,7 +87,7 @@ ms.locfileid: "74299958"
 
      就在此時，更大的圖片超過圖片檢視器的範圍框線。 在下一個步驟中，您會加入程式碼，將圖片調整為符合視窗大小。
 
-### <a name="to-continue-or-review"></a>繼續或檢視
+### <a name="to-continue-or-review"></a>若要繼續或檢視
 
 - 若要移至下一個教學課程步驟，請參閱[步驟 10：撰寫其他按鈕和核取方塊的程式碼](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)。
 

@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f43167a12bce77ef260fcf3d72764072f80143
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b55100fa6aaf74dee6277db2a079a0a908dc265c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299939"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851057"
 ---
 # <a name="talk-to-us"></a>告訴我們
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ ms.locfileid: "74299939"
  Visual Studio 發行前版本有 [為此產品評分] 功能表項目，可讓您傳送您所執行組建的品質相關意見反應。 產品的發行版本不會有此項目。
 
 ## <a name="i-need-help"></a>我需要協助！
- 如需線上說明，請參閱 [Microsoft 支援](https://go.microsoft.com/fwlink/?LinkID=99019) 。
+ 如需線上說明，請參閱 [Microsoft 支援](https://support.microsoft.com/) 。
 
  在美國和加拿大以外地區提供的支援可能會有所不同。 如需其他國家/地區的連絡人清單，請參閱 [Microsoft 全球網站](https://www.microsoft.com/worldwide/)。
 
  如需更多選項，請參閱 [支援概觀](https://visualstudio.microsoft.com/support/)。
 
- 需要 Microsoft 直接管理支援的較大型組織可以透過各種「卓越支援」供應項目簽訂服務合約。 如需詳細資訊，請參閱 [Microsoft Services 頂級支援](https://go.microsoft.com/fwlink/?LinkId=258223)。
+ 需要 Microsoft 直接管理支援的較大型組織可以透過各種「卓越支援」供應項目簽訂服務合約。 如需詳細資訊，請參閱 [Microsoft Services 頂級支援](https://www.microsoft.com/industry/services/support)。
 
  如果產品是隨附安裝於新電腦或設備，硬體製造商將會提供此軟體的技術支援和協助。 如需支援，請直接連絡製造商。
 
  Microsoft 支援服務可能因當時的價格、條款和條件而有所變更。 價格、條款和條件如有變更恕不另行通知。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [如何回報 Visual Studio 2015 的問題](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

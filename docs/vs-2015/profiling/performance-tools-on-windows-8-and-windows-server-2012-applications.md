@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c65561f9a9a2ca287232b7a61bb0e07ca07a769d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a2fa9581d94b3b70ca427c292c147562a11d55a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299662"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847990"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,9 +100,9 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
  若要在沒有安裝 Visual Studio 的裝置上剖析應用程式，請執行下列任一作業：  
   
-- 從 [MSDN 網站](https://go.microsoft.com/fwlink/?LinkID=219549)下載工具當做 Visual studio 遠端工具的一部分。  
+- 從 [MSDN 網站](https://www.microsoft.com/visualstudio/eng#downloads+d-additional-software)下載工具當做 Visual studio 遠端工具的一部分。  
   
-- 從您的 Visual Studio 電腦複製並執行獨立的分析工具安裝程式。 安裝程式位在 *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** 資料夾。 選擇遠端電腦的作業系統 (x86/x64) 安裝程式。  
+- 從您的 Visual Studio 電腦複製並執行獨立的分析工具安裝程式。 安裝程式位於 *% VSInstallDir%* **\Team Tools\Performance Tools\Setups**資料夾中。 選擇遠端電腦的作業系統 (x86/x64) 安裝程式。  
   
 > [!NOTE]
 > 若要收集 TIP 程式碼剖析資料，您必須從遠端電腦的 Visual Studio 電腦安裝獨立分析工具。  
@@ -136,7 +136,7 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
    **在遠端電腦上收集 TIP 資料**  
   
-   若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 **%VSInstallDir%\_\_\Team Tools\Performance Tools\Setups** 資料夾中，將 _vs\<profiler_ **\_** 平台> _\<_ _語言>_ **.exe** 檔案複製到遠端電腦並加以安裝。 您無法使用 [Visual Studio 遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
+   若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** 資料夾中，將 **vs\_profiler\_** _\<平台>_ **\_** _\<語言>_ **.exe** 檔案複製到遠端電腦並加以安裝。 您無法使用 [Visual Studio 遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
   
    您可以使用 [VSPerfCmd](../profiling/vsperfcmd.md) 或 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 收集程式碼剖析資料。  
   
@@ -144,7 +144,7 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
    階層互動資料只能在 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 或 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE 中檢視。 不提供透過 [VSPerfReport](../profiling/vsperfreport.md) 的檔案型階層互動報告。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能總管](../profiling/performance-explorer.md)   
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)

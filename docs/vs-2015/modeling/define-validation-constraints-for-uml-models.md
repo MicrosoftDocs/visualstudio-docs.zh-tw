@@ -11,17 +11,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 32f249b971e8a37bc5b596203cde6bc7b0bcf6f1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295841"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849731"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>定義 UML 模型的驗證條件約束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以定義驗證條件約束，測試模型是否符合您所指定的條件。 例如，您可以定義條件約束，確保使用者不會建立繼承關聯性的迴圈。 當使用者嘗試開啟或儲存模型時，會叫用該條件約束；該條件約束也可手動叫用。 如果條件約束失敗，您定義的錯誤訊息會加入錯誤視窗。 您可以將這些條件約束封裝成 Visual Studio 整合擴充功能 ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780))，然後將它散發給其他的 Visual Studio 使用者。
+您可以定義驗證條件約束，測試模型是否符合您所指定的條件。 例如，您可以定義條件約束，確保使用者不會建立繼承關聯性的迴圈。 當使用者嘗試開啟或儲存模型時，會叫用該條件約束；該條件約束也可手動叫用。 如果條件約束失敗，您定義的錯誤訊息會加入錯誤視窗。 您可以將這些條件約束封裝成 Visual Studio 整合擴充功能 ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx))，然後將它散發給其他的 Visual Studio 使用者。
 
  您也可以定義條件約束，對照外部資源 (例如資料庫) 來驗證模型。 如果您想要根據分層圖來驗證程式代碼，請參閱[將自訂架構驗證加入分層](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)圖。
 
@@ -83,7 +83,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 1. 建立類別庫專案，將它加入現有的 VSIX 方案，或是建立新的方案。
 
-    1. 在 [檔案] 功能表，選擇 [新增]、[專案]。
+    1. 在 [檔案] 功能表上，依序選擇 [新增]和 [專案]。
 
     2. 在 [已安裝的範本]下，展開 [Visual C#] 或 [Visual Basic]，然後在中間的資料行中選擇 [類別庫]。
 
@@ -91,7 +91,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     1. 在 **方案總管**中，在解決方案的捷徑功能表上，選擇 [加入]和 [新增專案]。
 
-    2. 在 [已安裝的範本]下，展開 **Visual C#** 或 **Visual Basic**，然後選擇 [擴充性]。 在中間的資料行中，按一下 [VSIX 專案]。
+    2. 在 [已安裝的範本]下，展開 [Visual C#] 或 [Visual Basic]，然後選擇 [擴充性]。 在中間的資料行中，按一下 [VSIX 專案]。
 
 3. 將 VSIX 專案設定為方案的啟始專案。
 
@@ -109,7 +109,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
           = 
 
-          = 
+          = *您的類別庫專案*
 
 #### <a name="to-define-the-validation-class"></a>定義驗證類別
 
@@ -380,7 +380,7 @@ context.LogError(... , usecase);
 
 3. 在目標電腦上開啟 **.vsix** 檔案。
 
-     [Visual Studio 擴充功能安裝程式] 會隨即開啟並安裝擴充功能。
+     [Visual Studio 擴充功能安裝程式] 隨即開啟並安裝擴充功能。
 
 4. 啟動或重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]。
 
@@ -473,5 +473,5 @@ private bool NoDependencyLoops(ValidationContext context,
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [定義和安裝模型擴充](../modeling/define-and-install-a-modeling-extension.md)功能[使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)
