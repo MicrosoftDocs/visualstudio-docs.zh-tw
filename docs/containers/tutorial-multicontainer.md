@@ -3,15 +3,15 @@ title: 使用 Docker Compose & ASP.NET Core 的多容器教學課程
 author: ghogen
 description: 瞭解如何搭配 Docker Compose 使用多個容器
 ms.author: ghogen
-ms.date: 02/21/2019
+ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 298ac91a7e7cf89f7723a3fd8bb3e8056da798ba
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: ebc0d8efb0d78dda45bba06dba8a497287b3597d
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75399759"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886459"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教學課程：使用 Docker Compose 建立多容器應用程式
 
@@ -114,7 +114,7 @@ ms.locfileid: "75399759"
         }
       ```
 
-    有了 .NET Core 3.1，您就不需要這麼做，因為您可以使用已經存在的 WeatherForecast API。 不過，您必須在*Startup.cs*的 `Configure` 方法中，將對 `UseHttpsRedirections` 的呼叫加上批註，因為此程式碼使用 HTTP not HTTPS 來呼叫 Web API。
+    有了 .NET Core 3.1，您就不需要這麼做，因為您可以使用已經存在的 WeatherForecast API。 不過，您必須在*Startup.cs*的 `Configure` 方法中，將對 <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> 的呼叫加上批註，因為此程式碼會使用 HTTP （而非 HTTPS）來呼叫 Web API。
 
     ```csharp
                 //app.UseHttpsRedirection();
