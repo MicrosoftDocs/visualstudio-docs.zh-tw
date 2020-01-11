@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6caf63b2d1fb6b9206fe43da5c7a63818fd299f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ece5c08ca3aa4a9f5e5329dbf6d5fd6c9087d085
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587692"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886407"
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 
@@ -36,10 +36,19 @@ ms.locfileid: "75587692"
 
 - **類別**結合-透過參數、本機變數、傳回型別、方法呼叫、泛型或樣板具現化、基類、介面執行、外部型別上定義的欄位，以及屬性裝飾，測量與唯一類別的結合。 良好的軟體設計規定型別和方法應該具有高一致性和低耦合。 高結合性表示很容易重複使用和維護的設計，因為它在其他類型上有許多相關性。 如需詳細資訊，請參閱[類別](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/)結合 blog 文章。
 
+::: moniker range=">=vs-2019"
+
+- **原始程式碼的行**-指出原始程式檔中出現的確切源程式碼數，包括空白行。 從 Visual Studio 2019 16.4 版和 CodeAnalysis. 計量（2.9.5）開始提供此標準。
+
+- **可執行程式碼的行**數-指出可執行程式程式碼或作業的近似數目。 這是可執行程式碼中的作業數目計數。 從 Visual Studio 2019 16.4 版和 CodeAnalysis. 計量（2.9.5）開始提供此標準。 此值通常會接近先前的計量（程式**程式碼**），這是舊版模式中使用的 MSIL 指令式計量。
+::: moniker-end
+::: moniker range="vs-2017"
+
 - 程式**程式碼**-指出程式碼中的大約行數。 計數是以 IL 程式碼為基礎，因此不是原始程式檔中的確切行數。 較高的計數可能表示類型或方法嘗試執行太多工作，因此應該加以分割。 它也可能表示類型或方法可能難以維護。
 
    > [!NOTE]
    > [程式碼計量] 工具的[命令列版本](../code-quality/how-to-generate-code-metrics-data.md#command-line-code-metrics)會計算實際的程式程式碼，因為它會分析原始程式碼，而不是 IL。
+::: moniker-end
 
 ## <a name="anonymous-methods"></a>匿名方法
 

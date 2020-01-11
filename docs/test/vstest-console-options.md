@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c65b9da1e8273b7e765d45c3d965e26b11d26632
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c56e6fdb6d841f32a056fc77f4928b09d386e036
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850284"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886425"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令列選項
 
@@ -44,7 +44,7 @@ ms.locfileid: "75850284"
 |**/Framework: [*framework version*]**|要用於測試執行的目標 .NET 版本。<br />範例值為 `Framework35`、`Framework40`、`Framework45`、`FrameworkUap10`、`.NETCoreApp,Version=v1.1`。<br />如果目標 Framework 指定為 **Framework35**，則會在 CLR 4.0 的「相容性模式」中執行測試。<br />範例：`/Framework:framework40`|
 |**/TestCaseFilter:[*expression*]**|執行符合指定之運算式的測試。<br /><Expression\> 的格式為 <property\>=<value\>[\|<Expression\>]。<br />範例：`/TestCaseFilter:"Priority=1"`<br />範例：`/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** 命令列選項無法與 **/Tests** 命令列選項搭配使用。 <br />如需建立和使用運算式的資訊，請參閱 [ 篩選](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)。|
 |**/?**|顯示使用方式資訊。|
-|**/Logger:[*uri/friendlyname*]**|指定測試結果的記錄器。<br />範例：若要將結果記錄到 Visual Studio 測試結果檔案 (TRX)，請使用 **/Logger:trx**。<br />範例：若要將測試結果發行到 Team Foundation Server，請使用 TfsPublisher：<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<build name\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=\<預設為 "Any CPU">]**<br />**[;Flavor=\<預設為 "Debug">]**<br />**[;RunTitle=<title\>]**|
+|**/Logger:[*uri/friendlyname*]**|指定測試結果的記錄器。<br />範例：若要將結果記錄到 Visual Studio 測試結果檔案（.TRX），請使用<br />**/Logger： .trx**<br />**[;LogFileName =\<預設為唯一的檔案名 >]**<br />範例：若要將測試結果發行到 Team Foundation Server，請使用 TfsPublisher：<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<build name\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=\<預設為 "Any CPU">]**<br />**[;Flavor=\<預設為 "Debug">]**<br />**[;RunTitle=<title\>]**<br />注意： TfsPublisher 記錄器在 Visual Studio 2017 中已被取代，Visual Studio 的較新版本中不支援。 在這些情況下，請改用自訂記錄器。 此記錄器會將記錄器切換到舊版模式。|
 |**/ListTests:[*file name*]**|列出從指定之測試容器探索到的測試。|
 |**/ListDiscoverers**|列出已安裝的測試探索程式。|
 |**/ListExecutors**|列出已安裝的測試執行程式。|
