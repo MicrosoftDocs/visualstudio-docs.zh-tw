@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e362a61c5ecab78c332eb5e077a02ee4e9e3fa9b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295625"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852221"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>將鍵盤快速鍵繫結至功能表項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "74295625"
   
    在大部分的情況下，不應使用**Shift** ，而不需要第二個修飾詞，因為按它已經導致大部分的英數位元輸入大寫字母或符號。  
   
-   虛擬索引鍵代碼可讓您存取沒有與其相關聯之字元的特殊索引鍵，例如，函式索引鍵和**BACKSPACE**鍵。 如需詳細資訊，請參閱[虛擬按鍵碼](https://go.microsoft.com/fwlink/?LinkID=105932)。  
+   虛擬索引鍵代碼可讓您存取沒有與其相關聯之字元的特殊索引鍵，例如，函式索引鍵和**BACKSPACE**鍵。 如需詳細資訊，請參閱[虛擬按鍵碼](https://msdn2.microsoft.com/library/ms645540.aspx)。  
   
    若要在 Visual Studio 編輯器中提供命令，請將 `editor` 屬性設定為 [`guidVSStd97`]。  
   
@@ -107,5 +107,5 @@ ms.locfileid: "74295625"
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)

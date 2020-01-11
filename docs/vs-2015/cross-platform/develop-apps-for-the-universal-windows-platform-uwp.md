@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ac6ce00002e40c6d8bd1d5db65b8c7bb5e6bc7cd
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b3f38f519444de7876046baf242f74a18b8c5a59
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299834"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844361"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "74299834"
 
 - [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725)。 請務必從選擇性功能清單中選取通用 Windows 應用程式開發工具。 如果沒有這些工具，您將無法建立通用應用程式。
+- [Visual Studio 2015](https://visualstudio.microsoft.com/downloads/)。 請務必從選擇性功能清單中選取通用 Windows 應用程式開發工具。 如果沒有這些工具，您將無法建立通用應用程式。
 
   安裝這個軟體之後，您也需要 [啟用 Windows 10 裝置](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) 進行開發。 (您不再需要取得每部 Windows 10 裝置的開發人員授權)。
 

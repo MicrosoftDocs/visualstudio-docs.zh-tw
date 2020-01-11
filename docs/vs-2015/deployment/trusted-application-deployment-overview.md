@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a95392525826fcfb2595e1bac7d45ebea20317fc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 673cc3d9b936131e6423a015af5c78486846fbe7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294695"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847711"
 ---
 # <a name="trusted-application-deployment-overview"></a>Trusted Application Deployment Overview
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "74294695"
 ### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>將發行者加入信任的發行者存放區  
  您的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式要收到較高層級的信任，您必須將憑證以信任的發行者加入應用程式執行所在的每台用戶端電腦。 執行這項工作是一次性的組態。 完成之後，您可以部署任意數量的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式並以您的發行者憑證簽署，它們全都會以高信任來執行。  
   
- 如果您要在 Managed 桌面環境中部署應用程式，例如執行 Windows 作業系統的公司內部網路，您可以使用群組原則建立新的憑證信任清單 (CTL)，將信任的發行者加入用戶端的存放區。 如需詳細資訊，請參閱 [建立群組原則物件的憑證信任清單](https://go.microsoft.com/fwlink/?LinkId=102576)。  
+ 如果您要在 Managed 桌面環境中部署應用程式，例如執行 Windows 作業系統的公司內部網路，您可以使用群組原則建立新的憑證信任清單 (CTL)，將信任的發行者加入用戶端的存放區。 如需詳細資訊，請參閱 [建立群組原則物件的憑證信任清單](https://technet.microsoft.com/library/2c03582f-00b2-43e5-ae1d-493894ad0fd7)。  
   
  如果您不在 Managed 桌面環境中部署您的應用程式，在將憑證加入信任的發行者存放區時有下列選項：  
   
@@ -104,6 +104,6 @@ ms.locfileid: "74294695"
 ## <a name="limitations-of-trusted-application-deployment"></a>信任的應用程式部署的限制  
  您可以使用信任的應用程式部署，授與提高的信任給透過 Web 或企業共用部署的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。 您不必針對在 CD 上散發的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式使用信任的應用程式部署，因為依預設，這些應用程式便已被授與完全信任。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Mage.exe (資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

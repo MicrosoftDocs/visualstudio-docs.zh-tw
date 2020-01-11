@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a0d18103d2990b2734e4db1d1e7dc4261e08e7a7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3815ed93156a70a547a892a281f8907419503a3d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301362"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845405"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>使用文字範本中的 Visual Studio ModelBus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ ms.locfileid: "74301362"
 
 1. 如果目標 DSL 解決方案沒有**ModelBusAdapter**專案，請使用 Modelbus 延伸模組 wizard 建立一個：
 
-    1. 下載並安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 擴充功能（如果您尚未這麼做）。 如需詳細資訊，請參閱[視覺效果和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=185579)。
+    1. 下載並安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 擴充功能（如果您尚未這麼做）。 如需詳細資訊，請參閱[視覺效果和模型化 SDK](https://www.visualstudio.com/)。
 
     2. 開啟 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [**啟用 Modelbus**]。
 
     3. 在對話方塊中，選取 [**我想要將此 DSL 公開給 ModelBus**]。 如果您想要讓此 DSL 公開其模型，並使用其他 Dsl 的參考，您可以同時選取這兩個選項。
 
-    4. 按一下 [確定]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
+    4. 按一下 [ **確定**]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
 
     5. 按一下 [**轉換所有範本**]。
 
@@ -184,7 +184,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. 在 DSL 定義圖中，以滑鼠右鍵按一下圖表的空白部分，而不在頂端附近，然後按一下 [**啟用 Modelbus**]。
 
-   - 如果您看不到 [**啟用 Modelbus**]，則必須下載並安裝 VMSDK Modelbus 擴充功能。 請在 VMSDK 網站上找到它：[視覺效果和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=185579)。
+   - 如果您看不到 [**啟用 Modelbus**]，則必須下載並安裝 VMSDK Modelbus 擴充功能。 請在 VMSDK 網站上找到它：[視覺效果和模型化 SDK](https://www.visualstudio.com/)。
 
 3. 在 [**啟用 Modelbus** ] 對話方塊中，選取 [將**此 DSL 公開給 Modelbus**]，然後按一下 **[確定]** 。
 
@@ -401,7 +401,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     ```
 
-3. 按 CTRL+F5 鍵。
+3. 按下 CTRL+F5 鍵。
 
 4. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗實例中，開啟 `Debugging\Sample.consume`。
 
@@ -409,5 +409,5 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
      如果您已在該元素上設定 MBR，則會開啟參考的模型，並選取所參考的元素。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [使用 Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)程式[代碼產生和 T4 文字模板](../modeling/code-generation-and-t4-text-templates.md)來整合模型

@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8116d4ab4a2f20f79f3849ae7f8b324af9832dd5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299582"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850245"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>逐步解說：顯示 WPF 應用程式中的相關資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,12 +41,12 @@ ms.locfileid: "74299582"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
  您需要下列元件才能完成此逐步解說：
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。
 
-- 對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以從[CodePlex 網站](https://go.microsoft.com/fwlink/?linkid=87843)下載 AdventureWorksLT 資料庫。
+- 對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以從[CodePlex 網站](https://codeplex.com/SqlServerSamples)下載 AdventureWorksLT 資料庫。
 
   預先了解下列概念也有助於完成此逐步解說 (但非必要)：
 
@@ -63,7 +63,7 @@ ms.locfileid: "74299582"
 
 1. 啟動 Visual Studio。
 
-2. 在 [檔案] **Deploying Office Solutions** 功能表中，指向 [新增]，然後按一下 [專案]。
+2. 在 [檔案] 功能表中，指向 [新增]，然後按一下 [專案]。
 
 3. 展開 **[ C#視覺效果**] 或 [ **Visual Basic**]，然後選取 [ **Windows**]。
 
@@ -73,7 +73,7 @@ ms.locfileid: "74299582"
 
 6. 在 [名稱] 方塊中，輸入 `AdventureWorksOrdersViewer`。
 
-7. 按一下 [確定] **Walkthrough: Calling Code in an VSTO Add-in from VBA**。
+7. 按一下 [ **確定**]。
 
      Visual Studio 會建立 `AdventureWorksOrdersViewer` 專案。
 
@@ -106,7 +106,7 @@ ms.locfileid: "74299582"
 
    - **SalesOrderHeader**
 
-7. 按一下 **[完成]** 。
+7. 按一下 [ **完成**]。
 
 8. 建置專案。
 
@@ -143,7 +143,7 @@ ms.locfileid: "74299582"
 
    - **TaxAmt**
 
-   - **代理**
+   - **Freight**
 
    - **rowguid**
 
@@ -205,5 +205,5 @@ ms.locfileid: "74299582"
 ## <a name="next-steps"></a>後續步驟
  完成本逐步解說之後，請瞭解如何使用 Visual Studio 中的 [**資料來源**] 視窗，將 WPF 控制項系結至其他類型的資料來源。 如需詳細資訊，請參閱將[wpf 控制項系結至 WCF 資料服務](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)和將[wpf 控制項系結至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [將 wpf 控制項系結至中的資料 Visual Studio 在](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [WPF 應用程式中顯示相關資料](../data-tools/display-related-data-in-wpf-applications.md)

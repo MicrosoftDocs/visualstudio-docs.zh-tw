@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297901"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850754"
 ---
 # <a name="network-usage"></a>網路使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
   
 3. 回應美化顯示按鈕 (在主體索引標籤內) 可協助您藉由增加內容可讀性來剖析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 的回應裝載。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行程式碼剖析工具但不進行調試](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)程式   
- [Visual Studio blog: Introducing Visual Studio’s network inspector](https://go.microsoft.com/fwlink/?LinkId=535022)  (Visual Studio 部落格：Visual Studio 網路檢查簡介)  
+ [Visual Studio blog: Introducing Visual Studio’s network inspector](https://blogs.msdn.com/b/visualstudio/)  (Visual Studio 部落格：Visual Studio 網路檢查簡介)  
  [Channel 9 影片︰ VS 診斷工具 - 新的網路分析工具 (英文)](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

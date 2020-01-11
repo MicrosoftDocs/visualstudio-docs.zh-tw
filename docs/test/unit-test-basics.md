@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e78b021e41caf584a74172cbdf00135e525df265
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590497"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846922"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -91,13 +91,16 @@ public void Withdraw(double amount)
 
    ::: moniker range="vs-2017"
    ![從編輯器視窗，檢視內容功能表](../test/media/createunittestsrightclick.png)
-   ::: moniker-end
-   ::: moniker range=">=vs-2019"
-   ![從編輯器視窗，檢視內容功能表](../test/media/vs-2019/basics-create-unit-tests.png)
-   ::: moniker-end
 
    > [!NOTE]
    > [建立單元測試] 功能表命令僅供以 .NET Framework 為目標 (非 .NET Core) 的受控程式碼使用。
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![從編輯器視窗，檢視內容功能表](../test/media/vs-2019/basics-create-unit-tests.png)
+
+   > [!NOTE]
+   > [**建立單元測試**] 功能表命令僅適用于 managed 程式碼。
+   ::: moniker-end
 
 2. 按一下 [確定] 接受預設值來建立單元測試，或變更過去用來建立和命名單元測試專案和單元測試的值。 您可以選取預設加入此單元測試方法的程式碼。
 

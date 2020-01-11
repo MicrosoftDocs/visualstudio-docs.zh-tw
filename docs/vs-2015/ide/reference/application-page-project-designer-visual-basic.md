@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ca14cead3b632cb70b817c79fce797078c7069b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 893647303b493ea633caf076658edbdcf0664ccc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299382"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850843"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "74299382"
 
  針對 Web 應用程式專案，您必須指定 [類別庫]  。
 
- 如果您指定 [WinMD 檔案]  選項，則類型可以投影至任何 Windows 執行階段程式設計語言。 將專案的輸出封裝為 WinMD 檔案，即可使用多種語言來撰寫應用程式，並讓程式碼交互操作，如同您使用相同的語言來撰寫程式碼一樣。 您可以針對以 Windows 執行階段程式庫為目標的方案使用 [WinMD 檔案]  選項，包括 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式。 如需詳細資訊，請參閱[在 C++ 和 Visual Basic 中建立 Windows 執行階段元件](https://go.microsoft.com/fwlink/?LinkId=231895)。
+ 如果您指定 [WinMD 檔案]  選項，則類型可以投影至任何 Windows 執行階段程式設計語言。 將專案的輸出封裝為 WinMD 檔案，即可使用多種語言來撰寫應用程式，並讓程式碼交互操作，如同您使用相同的語言來撰寫程式碼一樣。 您可以針對以 Windows 執行階段程式庫為目標的方案使用 [WinMD 檔案]  選項，包括 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式。 如需詳細資訊，請參閱[在 C++ 和 Visual Basic 中建立 Windows 執行階段元件](https://msdn.microsoft.com/library/windows/apps/br230301(v=VS.85).aspx)。
 
 > [!NOTE]
 > Windows 執行階段可以投影類型，以使用它們的語言顯示為原生物件。 例如，與 Windows 執行階段互動的 JavaScript 應用程式會使用它作為一組 JavaScript 物件，而且 C# 應用程式會使用該程式庫作為 .NET 物件集合。 將專案的輸出封裝為 WinMD 檔案，即可利用 Windows 執行階段所使用的相同技術。
@@ -75,7 +75,7 @@ ms.locfileid: "74299382"
 
  如果選取 [啟用應用程式架構]  \(預設)，此清單的標題為 [啟動表單]  ，而且因為應用程式架構只支援啟動表單，而非物件，所以只會顯示表單。
 
- 如果專案是 WPF 瀏覽器應用程式，此清單的標題為 [啟動 URI]  ，而且預設值為 **Page1.xaml**。 [啟動 URI]  清單可讓您指定應用程式在啟動時顯示的使用者介面資源 (XAML 項目)。 如需詳細資訊，請參閱 <xref:System.Windows.Application.StartupUri%2A>。
+ 如果專案是 WPF 瀏覽器應用程式，此清單的標題為 [啟動 URI]  ，而且預設值為 **Page1.xaml**。 [啟動 URI]  清單可讓您指定應用程式在啟動時顯示的使用者介面資源 (XAML 項目)。 如需詳細資訊，請參閱<xref:System.Windows.Application.StartupUri%2A>。
 
  如果清除 [啟用應用程式架構]  ，此清單會成為 [啟始物件]  ，並顯示具有 `Sub Main` 的表單和類別或模組。
 

@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4f4fd6eed634da3aea956cddca8d2e1ff6220a94
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297280"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850194"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML 類別圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "74297280"
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 > [!NOTE]
-> 本主題說明 UML 類別圖。 另外有一種類別圖，您可建立並用來視覺化程式碼。 請參閱[設計和查看類別和類型](https://go.microsoft.com/fwlink/?LinkId=142231)。
+> 本主題說明 UML 類別圖。 另外有一種類別圖，您可建立並用來視覺化程式碼。 請參閱[設計和查看類別和類型](https://msdn.microsoft.com/library/ab7aty24.aspx)。
 
 ## <a name="Using"></a>使用 UML 類別圖
  您可以將 UML 類別圖用於各種目的：
@@ -50,7 +50,7 @@ ms.locfileid: "74297280"
 ### <a name="relationship-to-other-diagrams"></a>與其他圖表的關聯性
  UML 類別圖通常與其他模型圖表一起繪製，以提供它們所使用的類型說明。 在每一種情況下，任何圖表都沒有隱含類型的實體表示。
 
- 活動圖
+ 活動圖表
 
  通過「物件節點」的資料類型。
 
@@ -194,7 +194,7 @@ ms.locfileid: "74297280"
 
  `[1]`
 
- 指定之類型的一個值。 這是預設值。
+ 指定之類型的一個值。 這是預設設定。
 
  `[0..1]`
 
@@ -344,7 +344,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 - **多重性**，預設為**1**。 這也會顯示在圖表上關聯的適當一端。
 
-- **匯總**。 這會以菱形圖案顯示在連接器的一端。 您可以使用它來指出彙總角色上的執行個體擁有或包含其他項目的執行個體。
+- **彙總**。 這會以菱形圖案顯示在連接器的一端。 您可以使用它來指出彙總角色上的執行個體擁有或包含其他項目的執行個體。
 
 - **是可**流覽的。 如果只有一個角色為 true，則在巡覽方向中顯示箭號。 您可以使用它來指出軟體中連結和資料庫關聯的巡覽性。
 
@@ -472,5 +472,5 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
      如需如何設定這些屬性和自訂所提供範本的詳細資訊，請參閱[從 UML 類別圖產生程式碼](../modeling/generate-code-from-uml-class-diagrams.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [編輯 uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md) [uml 類別圖：參考](../modeling/uml-class-diagrams-reference.md)[模型使用者需求](../modeling/model-user-requirements.md) [Uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md) [uml 順序圖表](../modeling/uml-sequence-diagrams-reference.md)：參考 Uml[使用案例圖](../modeling/uml-use-case-diagrams-reference.md)：參考[uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md)

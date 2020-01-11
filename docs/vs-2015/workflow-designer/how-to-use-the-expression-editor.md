@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7d40cefc3dd47f7f4ad7e8255d8bdc06bc5f1651
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 54099bc5c0f249cdb3697715d153a94a596ac344
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300936"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849225"
 ---
 # <a name="how-to-use-the-expression-editor"></a>HOW TO：使用運算式編輯器
 [運算式編輯器] 是 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 控制項，在許多工作流程活動中，會用來做為輸入及評估這些運算式的工具。 [運算式編輯器] 提供完整功能的 IDE 編輯經驗，包括 IntelliSense、顏色標示、ParamInfo、錯誤不規則曲線等等。 編譯器在運算式輸入之後會加以驗證。 如果運算式無效，就會顯示錯誤圖示。 編輯器也可以開啟為 [**運算式編輯器**] 對話方塊。
 
- 運算式是常值，或是繫結到引數或屬性的 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 程式碼。 它們會包含與作業結合的項目 (例如變數、常數、常值、屬性)，以產生新的值。 運算式會使用 VB.NET 語法撰寫，即使應用程式使用 C# 也是如此。 這表示大小寫並不重要，而是使用單一 equals （"="）符號而不是（"= ="）來執行比較，布林運算子是 "and" 和 "or"，而不是 "& &" 和 "&#124;&#124;"，而是使用**任何內容**，而不是**null**。 如需 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中的運算式和運算子和一些範例的詳細資訊，請參閱[Visual Basic 中的運算子和運算式](https://go.microsoft.com/fwlink/?LinkId=186818)。
+ 運算式是常值，或是繫結到引數或屬性的 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 程式碼。 它們會包含與作業結合的項目 (例如變數、常數、常值、屬性)，以產生新的值。 運算式會使用 VB.NET 語法撰寫，即使應用程式使用 C# 也是如此。 這表示大小寫並不重要，而是使用單一 equals （"="）符號而不是（"= ="）來執行比較，布林運算子是 "and" 和 "or"，而不是 "& &" 和 "&#124;&#124;"，而是使用**任何內容**，而不是**null**。 如需 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中的運算式和運算子和一些範例的詳細資訊，請參閱[Visual Basic 中的運算子和運算式](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx)。
 
  **運算式編輯器**的行為如下所示：
 
@@ -53,5 +53,5 @@ ms.locfileid: "74300936"
 
      還有一種方法可以輸入/編輯運算式，就是在屬性方格中，按一下屬性名稱旁邊的省略符號。 這會開啟 [**運算式編輯器**] 做為對話方塊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  <xref:System.Activities.Presentation.View.ExpressionTextBox>

@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: dca1fbb8f199db56563f4107ec88b832ec445bde
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254554"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846814"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
 ::: moniker range=">=vs-2019"
@@ -35,15 +35,15 @@ ms.locfileid: "71254554"
 
 ## <a name="dynamic-test-discovery"></a>動態測試探索
 
-**[測試總管] 找不到動態定義的測試。(例如理論、自訂配接器、自訂特徵、#ifdef 等項目)我如何探索這些測試？**
+**測試瀏覽器不會探索動態定義的測試。（例如，理論、自訂介面卡、自訂特徵、#ifdefs 等）如何探索這些測試？**
 
 ::: moniker range=">=vs-2019"
 建置專案來執行以組件為基礎的探索。
 ::: moniker-end
 ::: moniker range="vs-2017"
-建置專案並確保已在 [工具] > [選項] > [測試] 中開啟以組件為基礎的探索。
+建立您的專案，並確定已在 **工具** >**選項** >**測試** 中開啟以元件為基礎的探索。
 ::: moniker-end
-[即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)是來源型的測試探索。 其無法探索使用理論、自訂介面卡、自訂特性`#ifdef` 、語句等的測試，因為它們是在執行時間定義的。 需要組建才能準確找到這些測試。 在 Visual Studio 2017 15.6 版及更新版本中，以組件為基礎的探索 (傳統型探索) 只會在建置之後執行。 這項設定表示當您在編輯時，即時測試探索會盡可能找到更多測試，而組件型探索允許動態定義的測試在組建之後顯示。 即時測試探索會改善回應性，但仍然可讓您在建置後取得完整且精確的結果。
+[即時測試探索](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/)是來源型的測試探索。 它無法探索使用理論、自訂介面卡、自訂特性、`#ifdef` 語句等的測試，因為它們是在執行時間定義的。 需要組建才能準確找到這些測試。 在 Visual Studio 2017 15.6 版及更新版本中，以組件為基礎的探索 (傳統型探索) 只會在建置之後執行。 這項設定表示當您在編輯時，即時測試探索會盡可能找到更多測試，而組件型探索允許動態定義的測試在組建之後顯示。 即時測試探索會改善回應性，但仍然可讓您在建置後取得完整且精確的結果。
 
 ## <a name="test-explorer--plus-symbol"></a>測試總管 '+' (加號) 符號
 
@@ -56,24 +56,24 @@ ms.locfileid: "71254554"
 ::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>以組件為基礎的探索
 
-**我的專案已經無法使用以組件為基礎的探索。如何再將它開啟？**
+**以元件為基礎的探索已不再適用于我的專案。如何? 將它重新開啟嗎？**
 
-前往 [工具] > [選項] > [測試]，然後選取 [在建置後從建置後的組件探索其他測試]。
+移至 **工具** >**選項** > **測試**，然後核取 在**組建之後，從建立的元件中探勘測試。**
 
 ![以組件為基礎的選項](media/testex-toolsoptions.png)
 ::: moniker-end
 
 ## <a name="real-time-test-discovery"></a>即時測試探索
 
-**現在當我打字時，測試會顯示在測試總管中，而不需要建置我的專案。哪些方面已變更？**
+**當我輸入時，測試現在會出現在測試瀏覽器中，而不需要建立我的專案。有哪些變更？**
 
-此功能稱為[即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)。 這項功能使用 Roslyn 分析器來探索測試並即時填入 [測試總管]，因此不需要建置您的專案。 如需動態定義測試 (例如理論或自訂特徵) 的測試探索行為詳細資訊，請參閱[動態測試探索](#dynamic-test-discovery)。
+此功能稱為[即時測試探索](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/)。 這項功能使用 Roslyn 分析器來探索測試並即時填入 [測試總管]，因此不需要建置您的專案。 如需動態定義測試 (例如理論或自訂特徵) 的測試探索行為詳細資訊，請參閱[動態測試探索](#dynamic-test-discovery)。
 
 ## <a name="real-time-test-discovery-compatibility"></a>即時測試探索相容性
 
 **哪些程式設計語言和測試架構可以使用「即時測試探索」？**
 
-[即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)以 Roslyn 編譯器建置，因此只適用於受控語言 (C# 和 Visual Basic)。 目前，即時測試探索只適用於 xUnit、NUnit 和 MSTest 架構。
+[即時測試探索](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/)以 Roslyn 編譯器建置，因此只適用於受控語言 (C# 和 Visual Basic)。 目前，即時測試探索只適用於 xUnit、NUnit 和 MSTest 架構。
 
 ## <a name="test-explorer-logs"></a>測試總管記錄
 
@@ -97,7 +97,7 @@ ms.locfileid: "71254554"
 
 ## <a name="test-explorer-hierarchy-view"></a>測試總管階層檢視
 
-**在階層檢視中，父節點群組旁邊會有通過、失敗、略過和未執行的圖示。這些圖示代表什麼意思？**
+**在 [階層] 視圖中，父節點群組旁會有 [已通過]、[失敗]、[已略過] 和 [未執行] 圖示。這些圖示代表什麼意思？**
 
 專案、命名空間和類別群組旁的圖示，會顯示出該群組內的測試狀態。 請參閱下表。
 
@@ -111,7 +111,7 @@ Visual Studio 2017 15.7 版已移除 [測試總管] 搜尋方塊中的檔案路�
 
 ## <a name="remove-undocumented-interfaces"></a>移除未記載的介面
 
-**某些與測試相關的 API 不再存在於 Visual Studio 2019。哪些方面已變更？**
+**Visual Studio 2019 中不再有一些測試相關的 Api。有哪些變更？**
 
 在 Visual Studio 2019 中，會移除一些先前標記為公用，但從未正式記載的測試視窗 API。 它們在 Visual Studio 2017 中標示為「已淘汰」，可為延伸模組維護人員提供初期警告。 據我們所知，很少有延伸模組發現及依存於這些 API。 這些包括 `IGroupByProvider`、`IGroupByProvider<T>`、`KeyComparer`、`ISearchFilter`、`ISearchFilterToken`、`ISearchToken` 和 `SearchFilterTokenType`。 如果這項變更會影響您的延伸模組，請在 [Developer Community](https://developercommunity.visualstudio.com) (開發人員社群) 提出 Bug 讓我們知道。
 
@@ -121,7 +121,7 @@ Visual Studio 2017 15.7 版已移除 [測試總管] 搜尋方塊中的檔案路�
 
 所有測試專案的 csproj 檔案中都必須包含 .NET 測試配接器 NuGet 參考。 如果未包含在其中，若測試配接器延伸模組的探索在建置之後開始，或使用者嘗試執行選取的測試，專案上就會顯示下列測試輸出：
 
-**測試專案t {} 未參考任何 .NET NuGet 配接器。這個專案的測試探索或執行會無法執行。建議您在解決方案中的每個 .NET 測試專案參考 NuGet 測試配接器。**
+**測試專案 {} 未參考任何 .NET NuGet 介面卡。此專案的測試探索或執行可能無法使用。建議您在解決方案中的每個 .NET 測試專案中參考 NuGet 測試介面卡。**
 
 專案必須使用測試配接器 NuGet 套件，而非使用測試配接器延伸模組。 使用持續整合時，此需求可大幅改善效能並減少問題的發生。 在[版本資訊](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension)深入了解 .NET 測試配接器延伸模組淘汰。
 
@@ -138,7 +138,7 @@ Visual Studio 2017 15.7 版已移除 [測試總管] 搜尋方塊中的檔案路�
 
 最近的 UWP 測試專案指定一個測試平台建置屬性，可讓識別測試應用程式時的效能更佳。 如果您有在 Visual Studio 15.7 版之前初始化的 UWP 測試專案，您可能會在 [輸出] > [測試] 中看到此錯誤：
 
-**System.AggregateException:One or more errors occurred. ---> System.InvalidOperationException:The following TestContainer was not found {} at Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
+**AggregateException：發生一或多個錯誤。---> InvalidOperationException： {} 在 VisualStudio 中找不到下列 TestContainer。 TestContainerProvider \<GetTestContainerAsync > d__61 MoveNext （）**
 
 修正這個錯誤：
 
@@ -171,7 +171,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 > [!NOTE]
 > 您可以使用相同的命令來關閉旗標，方法是在 dword 之後使用 0 作為值而不是 1。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
 - [Create and run unit tests for existing code](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173) (針對現有的程式碼建立和執行單元測試)

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5f86c3b146bb74a38910b151a80c3c2d439ef023
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061158"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845663"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 的 Visual Studio 中使用 Python
 
@@ -56,7 +56,7 @@ Visual Studio 的 [Python 環境] 視窗 (在下方顯示為寬型的展開檢�
 
 使用 [開啟互動式視窗] 在 Visual Studio 的內容中命令以互動方式執行 Python。 使用 [在 PowerShell 中開啟] 命令，在所選環境的資料夾中開啟另外的命令視窗。 您可以從命令視窗執行任何 Python 指令碼。
 
-如需詳細資訊：
+如需詳細資訊，請參閱：＜ ＞
 
 - [管理 Python 環境](managing-python-environments-in-visual-studio.md)
 - [Python 環境參考](python-environments-window-tab-reference.md)
@@ -67,7 +67,7 @@ Visual Studio 提供最優質的 Python 編輯器，包括語法色彩標示、�
 
 ![Visual Studio 中 Python 程式碼的程式碼完成](media/code-editing-completions-simple.png)
 
-如需詳細資訊：
+如需詳細資訊，請參閱：＜ ＞
 
 - 文件：[編輯 Python 程式碼](editing-python-code-in-visual-studio.md)
 - 文件：[格式化程式碼](formatting-python-code.md)
@@ -85,7 +85,7 @@ Visual Studio 也提供 Python 程式碼編輯器與**互動式**視窗之間的
 
 Visual Studio 也支援 REPL 中 IPython/Jupyter，包括內嵌繪圖、.NET 與 Windows Presentation Foundation (WPF)。
 
-如需詳細資訊：
+如需詳細資訊，請參閱：＜ ＞
 
 - [互動式視窗](python-interactive-repl-in-visual-studio.md)
 - [Visual Studio 中的 IPython](interactive-repl-ipython.md)
@@ -105,7 +105,7 @@ Visual Studio 可協助您管理專案隨時間發展衍生出的複雜性。 *V
 
 [![Visual Studio 中的 Python 專案和項目範本](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
-如需詳細資訊：
+如需詳細資訊，請參閱：＜ ＞
 
 - 文件：[管理 Python 專案](managing-python-projects-in-visual-studio.md)
 - 文件：[項目範本參考](python-item-templates.md)
@@ -124,7 +124,7 @@ Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是�
 您可以在 Visual Studio 2019 中執行並偵錯程式碼，不需要 Visual Studio 專案檔。 如需範例，請參閱[快速入門：在資料夾中開啟及執行 Python 程式碼](quickstart-05-python-visual-studio-open-folder.md)。
 ::: moniker-end
 
-如需詳細資訊：
+如需詳細資訊，請參閱：＜ ＞
 
 - 文件：[針對 Python 程式碼進行偵錯](debugging-python-in-visual-studio.md)
 - 文件：[Python/C++ 混合模式偵錯](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
@@ -137,7 +137,7 @@ Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是�
 
 [![Python 專案的 Visual Studio 分析工具結果](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
-如需詳細資訊：
+如需詳細資訊，請參閱：＜ ＞
 
 - 文件：[Python 分析工具](profiling-python-code-in-visual-studio.md)
 - 一般 Visual Studio 功能文件：[分析功能導覽](../profiling/profiling-feature-tour.md)。 (並非所有 Visual Studio 分析功能都可供 Python 使用)。
@@ -148,7 +148,7 @@ Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是�
 
 ![在 Visual Studio 中進行 Python 單元測試偵錯](media/unit-test-debugging.png)
 
-如需詳細資訊：
+如需詳細資訊，請參閱：＜ ＞
 
 - 文件：[適用於 Python 的單元測試工具](unit-testing-python-in-visual-studio.md)
 - 一般 Visual Studio 功能文件：[對您的程式碼進行單元測試](../test/unit-test-your-code.md)。
@@ -213,7 +213,7 @@ Visual Studio 2015 和更早版本位於 [visualstudio.microsoft.com/vs/older-do
 
 <br/>
 
-|           編輯            |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|           使用            |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     語法醒目提示      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |        自動完成         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -222,7 +222,7 @@ Visual Studio 2015 和更早版本位於 [visualstudio.microsoft.com/vs/older-do
 |  物件瀏覽器/類別檢視   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |        巡覽列        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |       移至定義       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
-|         導覽至          | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|         瀏覽至          | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |     尋找所有參考      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |       自動縮排       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |       程式碼格式設定        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -261,8 +261,8 @@ Visual Studio 2015 和更早版本位於 [visualstudio.microsoft.com/vs/older-do
 |------------------------|----------|----------|-----------|--------------|----------------------|----------------------|----------------------|----------------------|
 |   部署至網站   | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       |       &#10004;       | &#10004;<sup>2</sup> |
 |   部署至 Web 角色   | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
-| 部署至背景工作角色  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
-| 在 Azure 模擬器中執行  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
+| 部署至背景工作角色  |    ？     |    ？     |     ？     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
+| 在 Azure 模擬器中執行  |    ？     |    ？     |     ？     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
 |    遠端偵錯    | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>6</sup> | &#10004;<sup>8</sup> | &#10004;<sup>8</sup> |       &#10007;       |
 | 附加伺服器總管 | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> |       &#10007;       |       &#10007;       |
 
@@ -305,17 +305,17 @@ Visual Studio 2015 和更早版本位於 [visualstudio.microsoft.com/vs/older-do
 
 1. [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit)\(英文\) 上提供的 Visual Studio Tools for Git 延伸模組中有針對 Visual Studio 2012 的 Git 支援。
 
-1. 部署到 Azure 網站需要 [Azure SDK for .NET 2.1 - Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855)。 較新的版本不支援 Visual Studio 2010。
+1. 部署到 Azure 網站需要 [Azure SDK for .NET 2.1 - Visual Studio 2010 SP1](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VS2010SP1AzurePack.2E2.2E1.appids)。 較新的版本不支援 Visual Studio 2010。
 
-1. 對 Azure「Web 角色」和「背景工作角色」的支援需要 [Azure SDK for .NET 2.3 - VS 2012](https://go.microsoft.com/fwlink/?LinkId=323511) 或更新版本。
+1. 對 Azure「Web 角色」和「背景工作角色」的支援需要 [Azure SDK for .NET 2.3 - VS 2012](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs11AzurePack.appids) 或更新版本。
 
-1. 對 Azure「Web 角色」和「背景工作角色」的支援需要 [Azure SDK for .NET 2.3 - VS 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 或更新版本。
+1. 對 Azure「Web 角色」和「背景工作角色」的支援需要 [Azure SDK for .NET 2.3 - VS 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 或更新版本。
 
 1. Visual Studio 2013 中的 Django 範本編輯器有一些已知的問題，這些問題可透過安裝 Update 2 來解決。
 
-1. 需要 Windows 8 或更新版本。 Visual Studio 2013 Express for Web 並沒有 [附加至處理序] 對話方塊，但透過使用 [伺服器總管] 中的 [附加偵錯工具] (Python) 命令，仍然可以進行「Azure 網站」遠端偵錯。 遠端偵錯需要 [Azure SDK for .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 或更新版本。
+1. 需要 Windows 8 或更新版本。 Visual Studio 2013 Express for Web 並沒有 [附加至處理序] 對話方塊，但透過使用 [伺服器總管] 中的 [附加偵錯工具] (Python) 命令，仍然可以進行「Azure 網站」遠端偵錯。 遠端偵錯需要 [Azure SDK for .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 或更新版本。
 
-1. 需要 Windows 8 或更新版本。 [伺服器總管] 中的 [附加偵錯工具] (Python) 命令需要 [Azure SDK for .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 或更新版本。
+1. 需要 Windows 8 或更新版本。 [伺服器總管] 中的 [附加偵錯工具] (Python) 命令需要 [Azure SDK for .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 或更新版本。
 
 1. 需要 Windows 8 或更新版本。
 ::: moniker-end

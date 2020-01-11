@@ -19,12 +19,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c8c83676c8f01891aed97e931581c65b799e61e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89afba591899b626863b0157f6d9d955d46e46cf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299786"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851921"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>錯誤：偵錯失敗，因為整合式 Windows 驗證沒有啟用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "74299786"
   
          [使用者帳戶控制] 對話方塊隨即出現，並詢問您是否同意繼續進行。  
   
-    3. 按一下 [繼續]。  
+    3. 按一下 [ **繼續**]。  
   
          [Windows 功能] 對話方塊隨即出現。  
   
@@ -117,7 +117,7 @@ ms.locfileid: "74299786"
   
 10. 關閉 [Internet Information Services (IIS) 管理員] 視窗。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Microsoft 摘要式驗證](https://go.microsoft.com/fwlink/?LinkId=77938)   
+ [Microsoft 摘要式驗證](https://msdn2.microsoft.com/library/Aa378744.aspx)   
  [在 Windows Vista 上使用 IIS 7.0 和 Visual Studio 執行 Web 應用程式](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

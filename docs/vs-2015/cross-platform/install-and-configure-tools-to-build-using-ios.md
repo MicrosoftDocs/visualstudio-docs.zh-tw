@@ -11,24 +11,24 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 695cbeaba5a108c61b5e81078a9651c0df9237f5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7290ba820c9b678e0b87bdbeaadf9c025162e8ae
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299811"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844467"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用 Visual C++ for Cross-Platform Mobile Development 編輯、偵錯 iOS 程式碼並將其部署至 iOS 模擬器或 iOS 裝置，但由於授權限制，必須在 Mac 上遠端建置及執行程式碼。 若要使用 Visual Studio 建置並執行 iOS 應用程式，您必須在 Mac 上安裝及設定 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)遠端代理程式。 遠端代理程式會處理來自 Visual Studio 的建立要求，並在連接至 Mac 的 iOS 裝置或 Mac 中的 iOS 模擬器上執行應用程式。  
+您可以使用 Visual C++ for Cross-Platform Mobile Development 編輯、偵錯 iOS 程式碼並將其部署至 iOS 模擬器或 iOS 裝置，但由於授權限制，必須在 Mac 上遠端建置及執行程式碼。 若要使用 Visual Studio 建置並執行 iOS 應用程式，您必須在 Mac 上安裝及設定 [vcremote](https://www.npmjs.com/package/vcremote)遠端代理程式。 遠端代理程式會處理來自 Visual Studio 的建立要求，並在連接至 Mac 的 iOS 裝置或 Mac 中的 iOS 模擬器上執行應用程式。  
   
 > [!NOTE]
 > 如需使用雲端裝載 Mac 服務，而非使用 Mac 的相關資訊，請參閱 [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/)。 本指示是針對使用 Visual Studio Tools for Apache Cordova 進行建置。 若要使用本指示以利用 Visual C++ for Cross-Platform Mobile Development 進行建置，請將 vs-mda-remote 取代為 vcremote。  
   
  一旦您已安裝使用 iOS 進行建置的工具，請參閱本主題以取得可在 Visual Studio 及 Mac 上進行 iOS 開發快速設定和更新遠端代理程式的方式。  
   
- [先決條件](#Prerequisites)  
+ [必要條件](#Prerequisites)  
   
  [安裝 iOS 適用的遠端代理程式](#Install)  
   
@@ -78,7 +78,7 @@ ms.locfileid: "74299811"
      `sudo npm install -g npm@latest`  
   
 ## <a name="Install"></a> 安裝 iOS 適用的遠端代理程式  
- 當您安裝 Visual C++ for Cross-Platform Mobile Development 時，Visual Studio 可與在 Mac 上遠端執行的代理程式 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)通訊，以用來傳輸檔案、建置及執行您的 iOS 應用程式和傳送偵錯命令。  
+ 當您安裝 Visual C++ for Cross-Platform Mobile Development 時，Visual Studio 可與在 Mac 上遠端執行的代理程式 [vcremote](https://www.npmjs.com/package/vcremote)通訊，以用來傳輸檔案、建置及執行您的 iOS 應用程式和傳送偵錯命令。  
   
  安裝遠端代理程式之前，請確定您符合 [必要條件](#Prerequisites) ，並已安裝 [Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools)。  
   
@@ -93,7 +93,7 @@ ms.locfileid: "74299811"
    安裝期間會在您的 Mac 上安裝 vcremote 並啟動開發人員模式。 也會安裝[Homebrew](https://brew.sh/) 和兩個 npm 封裝、vcremote-lib 和 vcremote-utils 公用程式。  
   
   > [!NOTE]
-  > 若要安裝 Homebrew，您必須具備 sudo (系統管理員) 存取權。 如果您沒有 sudo 但要安裝 vcremote，可手動將 Homebrew 安裝到 usr/local 位置，並將它的 bin 資料夾加入路徑中。 如需詳細資訊，請參閱 [Homebrew 文件](https://github.com/Homebrew/homebrew/wiki/Installation)。 若要手動啟用開發人員模式，在終端機應用程式中輸入下列命令：`DevToolsSecurity –enable`  
+  > 若要安裝 Homebrew，您必須具備 sudo (系統管理員) 存取權。 如果您沒有 sudo 但要安裝 vcremote，可手動將 Homebrew 安裝到 usr/local 位置，並將它的 bin 資料夾加入路徑中。 如需詳細資訊，請參閱 [Homebrew 文件](https://github.com/Homebrew/homebrew/wiki/Installation)。 若要手動啟用開發人員模式，請在 Terminal 應用程式中輸入下列命令： `DevToolsSecurity –enable`  
   
   如果您已更新為新版 Visual Studio，也必須將遠端代理程式更新為目前版本。 若要更新遠端代理程式，請重複下載及安裝遠端代理程式的步驟。  
   
@@ -239,5 +239,5 @@ ms.locfileid: "74299811"
   
      其中， *config_file_path* 是 JSON 格式的組態檔路徑。 啟動選項及其值不得包含破折號。  
   
-## <a name="see-also"></a>另請參閱  
- [安裝適用於跨平台行動裝置開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+## <a name="see-also"></a>請參閱  
+ [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

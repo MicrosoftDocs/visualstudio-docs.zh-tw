@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4917fc81f439ef0185a753fb1c4c85e460eb7681
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5770fb604c1c700919f2e738a00ee07cc969b355
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297733"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850109"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "74297733"
 
 3. 在目的電腦上，按兩下 **.vsix**檔案。
 
-     [Visual Studio 擴充功能安裝程式] 會隨即開啟並安裝擴充功能。
+     [Visual Studio 擴充功能安裝程式] 隨即開啟並安裝擴充功能。
 
 4. 啟動或重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]。
 
@@ -71,7 +71,7 @@ ms.locfileid: "74297733"
 
  如需 MSI 檔案和其他部署選項的詳細資訊，請參閱[部署應用程式、服務和元件](../deployment/deploying-applications-services-and-components.md)。
 
- 若要建立 MSI，您可以將安裝專案新增至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解決方案。 建立安裝專案最簡單的方法是使用 CreateMsiSetupProject.tt 範本，您可以從[VMSDK 網站](https://go.microsoft.com/fwlink/?LinkID=186128)下載。
+ 若要建立 MSI，您可以將安裝專案新增至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解決方案。 建立安裝專案最簡單的方法是使用 CreateMsiSetupProject.tt 範本，您可以從[VMSDK 網站](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)下載。
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>在 MSI 中部署 DSL
 
@@ -93,13 +93,13 @@ ms.locfileid: "74297733"
 
        - 描述
 
-       - 版本
+       - {2&gt;版本&lt;2}
 
    - 按一下 **編輯器** 節點，然後在 屬性視窗中，按一下 **圖示**。 設定值以參考**DslPackage\Resources**中的圖示檔，例如**file .ico**
 
    - 在 [**建立**] 功能表上，開啟 [ **Configuration Manager**]，然後選取您要建立的設定，例如 [**發行**] 或 [ **Debug**]。
 
-4. 移至 [[視覺效果和模型 SDK](https://go.microsoft.com/fwlink/?LinkID=186128)] 首頁，然後從 [**下載**] 索引標籤下載**CreateMsiSetupProject.tt**。
+4. 移至 [[視覺效果和模型 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)] 首頁，然後從 [**下載**] 索引標籤下載**CreateMsiSetupProject.tt**。
 
 5. 將**CreateMsiSetupProject.tt**新增至您的 Dsl 專案。
 
@@ -123,13 +123,13 @@ ms.locfileid: "74297733"
 
      將 MSI 檔案複製到您要安裝 DSL 的電腦。 按兩下 MSI 檔案。 執行安裝程式。
 
-11. 在目的電腦中，建立副檔名為 DSL 的新檔案。 確認：
+11. 在目的電腦中，建立副檔名為 DSL 的新檔案。 驗證：
 
     - 在 Windows Explorer 清單視圖中，檔案會以您定義的圖示和描述顯示。
 
     - 當您按兩下該檔案時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會啟動，並在 DSL 編輯器中開啟 DSL 檔案。
 
-    如果您想要的話，也可以手動建立安裝專案，而不是使用文字模板。 如需包含此程式的逐步解說，請參閱[視覺效果和模型化 SDK 實驗室](https://go.microsoft.com/fwlink/?LinkId=208878)的第5章。
+    如果您想要的話，也可以手動建立安裝專案，而不是使用文字模板。 如需包含此程式的逐步解說，請參閱[視覺效果和模型化 SDK 實驗室](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)的第5章。
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>卸載從 MSI 安裝的 DSL
 

@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8f6047e6104467b5b0516fba26fc39f402dfaac9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297131"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845651"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用儲存的 IntelliTrace 資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "74297131"
   
 - 來自下列其中一個來源的 .iTrace 檔案：  
   
-    |**Source**|**請參閱**|  
+    |**來源**|**請參閱**|  
     |----------------|-------------|  
     |在 Visual Studio Enterprise (但不是 Professional 或 Community 版本) 中的 IntelliTrace 工作階段|[IntelliTrace 功能](../debugger/intellitrace-features.md)|  
     |Microsoft Test Manager 中的測試工作階段。 這會將 .iTrace 檔案附加至 Team Foundation Server 工作項目。|[在手動測試中收集更多診斷資料](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
@@ -269,8 +269,8 @@ ms.locfileid: "74297131"
   
  [IntelliTrace](../debugger/intellitrace.md)  
   
-#### <a name="forums"></a>論壇  
- [Visual Studio 偵錯工具](https://go.microsoft.com/fwlink/?LinkId=262263)  
+#### <a name="forums"></a>Forums  
+ [Visual Studio 偵錯工具](https://social.msdn.microsoft.com/Forums/vsdebug)  
   
 #### <a name="guidance"></a>指引  
- [使用 Visual Studio 2012 測試持續傳遞 – 第 6 章：測試工具箱](https://go.microsoft.com/fwlink/?LinkID=255203)
+ [使用 Visual Studio 2012 測試持續傳遞 – 第 6 章：測試工具箱](https://msdn.microsoft.com/library/jj159337.aspx)

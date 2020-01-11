@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9f07fc064a87910f59f5734d4d635aa3b5d6b77
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 676a4ef2570873998f3ebc890e06d6d5ccae4cf2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299497"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852429"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>使用 DOM 總管偵錯 CSS 樣式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ ms.locfileid: "74299497"
     > [!TIP]
     > 應用程式出現在模擬器中之後，將模擬器放置在 Visual Studio 視窗旁邊，如此就能立即看見進行選取和變更 CSS 樣式的結果。  
   
-6. 切換至 Visual Studio，然後按一下 [DOM 總管] 中的 [ **選取項目** ] (或按 Ctrl+B)。 這樣會變更選取模式，讓您按一下就能選取項目，並且將應用程式放置到前景。 按一下，這個模式就會還原。 這是 [ **選取項目** ] 按鈕。 ![DOM 總管中的 [選取元素] 按鈕](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button」)  
+6. 切換至 Visual Studio，然後按一下 [DOM 總管] 中的 [ **選取項目** ] (或按 Ctrl+B)。 這樣會變更選取模式，讓您按一下就能選取項目，並且將應用程式放置到前景。 按一下，這個模式就會還原。 這是 [ **選取項目** ] 按鈕。 ![DOM 總管中的 [選取元素] 按鈕](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
     > 您也可以直接在 DOM 總管中選取 HTML 項目。 如需選取元素的詳細資訊，請參閱[快速入門： DEBUG HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。  
@@ -156,8 +156,8 @@ ms.locfileid: "74299497"
   
 16. 若要對來源 CSS 檔案進行變更，請按一下 [**樣式**] 索引標籤上的 [ **items .css** ] 連結。這會開啟 items .css，您可以在其中變更應用程式程式碼中 `color` 樣式的值。 若要重新整理應用程式，而不需要停止再重新開機偵錯工具，請按一下**Debug**工具列上的 [重新整理![windows 應用程式] 按鈕](../debugger/media/js-refresh.png "JS_Refresh")（重新整理**windows 應用程式**）按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [快速入門： DEBUG HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
  [使用 DOM 總管  的 Debug 版面](../debugger/debug-layout-using-dom-explorer.md)配置  
  [查看 DOM 事件](../debugger/view-dom-event-listeners.md)接聽程式   
- [產品支援和協助工具](https://go.microsoft.com/fwlink/?LinkId=253502)
+ [產品支援和協助工具](https://msdn.microsoft.com/library/tzbxw1af(VS.110).aspx)

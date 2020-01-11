@@ -8,12 +8,12 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9fbba44ef5ac0e531198b3569008a260118aefcf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fd54c5e730f757a0e198ad7cf1d8577e686b9ea9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298381"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845869"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>適用於 ImmutableArray 的 Roslyn 分析器和程式碼感知程式庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "74298381"
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 您也可以在安裝 Visual Studio 時，檢查 [一般工具] 底下的 Visual Studio 擴充性工具以同時安裝 SDK。 如果您已安裝 Visual Studio，您也可以前往主功能表檔案 [  **&#124; &#124;新增專案 ...** ]，在左側流覽窗格中選擇C# ，然後選擇 [擴充性]，來安裝此 SDK。 當您選擇 [**安裝 Visual Studio 擴充性工具**] 階層連結專案範本時，它會提示您下載並安裝 SDK。
 
-- [.NET Compiler Platform （"Roslyn"） SDK](https://aka.ms/roslynsdktemplates)。 您也可以前往主功能表檔案 [  **&#124; &#124;新增專案 ...** ]，在左側流覽窗格中選擇**C#** ，**然後選擇 [** 擴充性]，來安裝此 SDK。 當您選擇 [**下載 .NET COMPILER PLATFORM SDK**] 階層連結專案範本時，它會提示您下載並安裝 SDK。 此 SDK 包含[Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。 這項非常有用的工具可協助您找出您在分析器中應該尋找的程式碼模型類型。 分析器基礎結構會針對特定的程式碼模型類型呼叫您的程式碼，因此您的程式碼只會在必要時執行，而且只能著重于分析相關的程式碼。
+- [.NET Compiler Platform （"Roslyn"） SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK)。 您也可以前往主功能表檔案 [  **&#124; &#124;新增專案 ...** ]，在左側流覽窗格中選擇**C#** ，**然後選擇 [** 擴充性]，來安裝此 SDK。 當您選擇 [**下載 .NET COMPILER PLATFORM SDK**] 階層連結專案範本時，它會提示您下載並安裝 SDK。 此 SDK 包含[Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。 這項非常有用的工具可協助您找出您在分析器中應該尋找的程式碼模型類型。 分析器基礎結構會針對特定的程式碼模型類型呼叫您的程式碼，因此您的程式碼只會在必要時執行，而且只能著重于分析相關的程式碼。
 
 ## <a name="whats-the-problem"></a>怎麼了？
 假設您提供具有 ImmutableArray （例如 <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName>）支援的程式庫。 C#開發人員有許多 .NET 陣列的經驗。 不過，由於執行中使用的適用于 immutablearray 和優化技術本質， C#開發人員觀念會使您的程式庫使用者撰寫中斷的程式碼，如下所述。 此外，在執行時間之前，使用者不會看到其錯誤，這不是用來在 .NET 中 Visual Studio 的品質經驗。
@@ -309,7 +309,7 @@ Pro 提示：如果您啟動 Visual Studio 的第二個實例，而且沒有看�
 
 您可以在[這裡](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)看到所有已完成的程式碼。 子資料夾 DoNotUseImmutableArrayCollectionInitializer 和 DoNotUseImmutableArrayCtor 都有一個C#檔案，用於尋找問題，以及C#一個檔案來執行在 Visual Studio 燈泡 UI 中顯示的程式碼修正。 請注意，完成後的程式碼會有更多的抽象概念，以避免 > 類型物件的\<ImmutableArray 上一次提取。 它會使用已嵌套的已註冊動作，將類型物件儲存在可在每次執行子動作（分析物件建立和分析集合初始化）時使用的內容中。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [\\\Build 2015](https://channel9.msdn.com/events/Build/2015/3-725) [在 github 上討論
 完成的程式碼](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers) 
 [數個 github 上的範例，分為三種分析器](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md) 

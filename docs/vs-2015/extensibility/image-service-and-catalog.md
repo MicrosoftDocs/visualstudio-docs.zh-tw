@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0f509ca93b6802fc99a21143360227d64f8db319
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 42c42a845ef98fb3a6ebe9b5e017ae2783365f1b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301168"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851355"
 ---
 # <a name="image-service-and-catalog"></a>影像服務與資料庫目錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "74301168"
 ## <a name="how-it-works"></a>運作方式  
  映射服務可以提供適用于任何支援之 UI 架構的點陣圖影像：  
 
-- WPFBitmapSource  
+- WPF： BitmapSource  
 
-- WinFormsSystem.web. Bitmap  
+- WinForms： System.web 點陣圖  
 
-- 32HBITMAP  
+- Win32： HBITMAP  
 
   影像服務流程圖  
 
@@ -89,7 +89,7 @@ ms.locfileid: "74301168"
 </ImageManifest>  
 ```  
 
- **標點符號**  
+ **Symbols**  
 
  為方便閱讀和維護，映射資訊清單可以使用符號做為屬性值。 符號的定義如下：  
 
@@ -105,10 +105,10 @@ ms.locfileid: "74301168"
 |||  
 |-|-|  
 |**子項目**|**定義**|  
-|匯入|匯入指定資訊清單檔的符號，以用於目前的資訊清單|  
-|Guid|符號代表 GUID，且必須符合 GUID 格式|  
-|id|符號代表識別碼，且必須為非負整數|  
-|String|符號代表任一字元串值|  
+|[匯入]|匯入指定資訊清單檔的符號，以用於目前的資訊清單|  
+|GUID|符號代表 GUID，且必須符合 GUID 格式|  
+|識別碼|符號代表識別碼，且必須為非負整數|  
+|字串|符號代表任一字元串值|  
 
  符號會區分大小寫，並使用 $ （符號-名稱）語法來參考：  
 
@@ -122,13 +122,13 @@ ms.locfileid: "74301168"
 
 |||  
 |-|-|  
-|**百分號**|**描述**|  
+|**符號**|**描述**|  
 |CommonProgramFiles|% CommonProgramFiles% 環境變數的值|  
 |LocalAppData|% LocalAppData% 環境變數的值|  
 |ManifestFolder|包含資訊清單檔案的資料夾|  
 |MyDocuments|目前使用者的 [我的文件] 資料夾的完整路徑|  
 |ProgramFiles|% ProgramFiles% 環境變數的值|  
-|系統|Windows\System32 資料夾|  
+|System|Windows\System32 資料夾|  
 |WinDir|% WinDir% 環境變數的值|  
 
  **影像**  
@@ -147,8 +147,8 @@ ms.locfileid: "74301168"
 |||  
 |-|-|  
 |**屬性**|**定義**|  
-|Guid|具備影像標記的 GUID 部分|  
-|id|具備影像標記的識別碼部分|  
+|GUID|具備影像標記的 GUID 部分|  
+|識別碼|具備影像標記的識別碼部分|  
 |AllowColorInversion|[選用，預設值為 true]指出影像在深色背景上使用時，是否可以以程式設計方式反轉其色彩。|  
 
  **來源**  
@@ -164,8 +164,8 @@ ms.locfileid: "74301168"
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **屬性** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **定義**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|      URI      |                                                                                                                                                                                                                                                                                                               具備定義可從中載入影像之位置的 URI。 它可以是下列其中一項：<br /><br /> -使用 application:///授權單位的[PACK URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)<br />-絕對元件資源參考<br />-包含原生資源之檔案的路徑                                                                                                                                                                                                                                                                                                               |
-|  背景   | 選擇性表示要使用來源的背景類型。<br /><br /> 它可以是下列其中一項：<br /><br /> *Light*來源可以在淺色背景上使用。<br /><br /> <em>深色：</em>來源可以用於深色背景上。<br /><br /> *Systeminformation.highcontrast*來源可以在高對比模式的任何背景上使用。<br /><br /> *HighContrastLight:* 來源可以在高對比模式的淺背景上使用。<br /><br /> *HighContrastDark:* 來源可以在高對比模式的深色背景上使用。<br /><br /> 如果省略 Background 屬性，則可以在任何背景使用來源。<br /><br /> 如果背景為*淺*、*暗*、 *HighContrastLight*或*HighContrastDark*，則來源的色彩永遠不會反轉。 如果 [背景] 省略或設為*systeminformation.highcontrast*，則來源色彩的反轉是由影像的**AllowColorInversion**屬性所控制。 |
+|      URI      |                                                                                                                                                                                                                                                                                                               具備定義可從中載入影像之位置的 URI。 可以是下列其中一項：<br /><br /> -使用 application:///授權單位的[PACK URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)<br />-絕對元件資源參考<br />-包含原生資源之檔案的路徑                                                                                                                                                                                                                                                                                                               |
+|  背景   | 選擇性表示要使用來源的背景類型。<br /><br /> 可以是下列其中一項：<br /><br /> *Light：* 來源可以在淺色背景上使用。<br /><br /> <em>深色：</em>來源可以用於深色背景上。<br /><br /> *Systeminformation.highcontrast：* 來源可以在高對比模式的任何背景上使用。<br /><br /> *HighContrastLight：* 來源可以在高對比模式的淺背景上使用。<br /><br /> *HighContrastDark：* 來源可以在高對比模式的深色背景上使用。<br /><br /> 如果省略 Background 屬性，則可以在任何背景使用來源。<br /><br /> 如果背景為*淺*、*暗*、 *HighContrastLight*或*HighContrastDark*，則來源的色彩永遠不會反轉。 如果 [背景] 省略或設為*systeminformation.highcontrast*，則來源色彩的反轉是由影像的**AllowColorInversion**屬性所控制。 |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  \<的來源 > 專案只能有下列其中一個選擇性子項目：  
@@ -173,9 +173,9 @@ ms.locfileid: "74301168"
 ||||  
 |-|-|-|  
 |**目**|**屬性（全部必要）**|**定義**|  
-|\<大小 >|值|來源將用於指定大小的影像（以裝置為單位）。 影像將會是正方形。|  
+|\<大小 >|{2&gt;值&lt;2}|來源將用於指定大小的影像（以裝置為單位）。 影像將會是正方形。|  
 |\<SizeRange >|MinSize、MaxSize|來源將用於從 MinSize 到大小上限（裝置單位）的影像。 影像將會是正方形。|  
-|\<維度 >|Width、Height|來源將用於指定的寬度和高度（以裝置為單位）的影像。|  
+|\<維度 >|寬度, 高度|來源將用於指定的寬度和高度（以裝置為單位）的影像。|  
 |\<DimensionRange >|MinWidth、MinHeight、<br /><br /> MaxWidth、MaxHeight|來源將用於從最小寬度/高度到所含的最大寬度/高度（以裝置單位）為單位的影像。|  
 
  \<的來源 > 專案也可以有選擇性的 \<NativeResource > 子項目，以定義從原生元件（而非 managed 元件）載入的 \<來源 >。  
@@ -187,8 +187,8 @@ ms.locfileid: "74301168"
 |||  
 |-|-|  
 |**屬性**|**定義**|  
-|Type|具備原生資源的類型，XAML 或 PNG|  
-|id|具備原生資源的整數識別碼部分|  
+|類型|具備原生資源的類型，XAML 或 PNG|  
+|識別碼|具備原生資源的整數識別碼部分|  
 
  **ImageList**  
 
@@ -204,8 +204,8 @@ ms.locfileid: "74301168"
 |||  
 |-|-|  
 |**屬性**|**定義**|  
-|Guid|具備影像標記的 GUID 部分|  
-|id|具備影像標記的識別碼部分|  
+|GUID|具備影像標記的 GUID 部分|  
+|識別碼|具備影像標記的識別碼部分|  
 |外部|[選用，預設值為 false]指出影像標記是否參考目前資訊清單中的影像。|  
 
  所包含之影像的標記不需要參考在目前資訊清單中定義的影像。 如果在影像媒體櫃中找不到包含的影像，則會在其位置中使用空白的預留位置影像。  
@@ -444,11 +444,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
        this.BitmapIndex = <Value>;  
        ```  
 
-   2. 請參閱 < 如何在新的工具視窗中使用影像名字的步驟 #1？ 一節。  
+   2. 請參閱 一節。  
 
 4. 用來開啟工具視窗的命令。  
 
-   - 請參閱 < 如何在新的工具視窗中使用影像名字的步驟 #2？ 一節。  
+   - 請參閱 一節。  
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>如何? 在 .vsct 檔案中使用影像名字標記嗎？  
  更新您的 .vsct 檔案，如下列批註行所示：  
@@ -650,7 +650,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. 更新您的程式碼，以使用「映射服務」透過更新的對應來要求「名字」。 （這可能表示更新至 managed 程式碼的**CrispImages** ，或從映射服務要求 HBITMAPs 或 HICONs，並針對機器碼傳遞這些專案）。  
 
 ## <a name="testing-your-images"></a>測試您的映射  
- 您可以使用影像庫檢視器工具來測試您的映射資訊清單，以確定所有專案都已正確撰寫。 您可以在[Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx)中找到此工具。 此工具和其他專案的檔可在[這裡](https://aka.ms/VSImageThemeTools)找到。  
+ 您可以使用影像庫檢視器工具來測試您的映射資訊清單，以確定所有專案都已正確撰寫。 您可以在[Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx)中找到此工具。 此工具和其他專案的檔可在[這裡](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN)找到。  
 
 ## <a name="additional-resources"></a>其他資源  
 
@@ -659,7 +659,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  如需最新範例，請參閱[http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) 。  
 
-### <a name="tooling"></a>工具  
+### <a name="tooling"></a>Tooling  
  已建立一組映射服務的支援工具，以協助建立/更新可與映射服務搭配使用的 UI。 如需每個工具的詳細資訊，請參閱工具隨附的檔。 這些工具組含在[Visual Studio 2015 SDK 中。](https://msdn.microsoft.com/library/bb166441.aspx)  
 
  **ManifestFromResources**  
@@ -953,12 +953,12 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphVBProject||VBProjectNode|  
     |GlyphCoolProject||CSProjectNode|  
     |GlyphCppProject||CPPProjectNode|  
-    |GlyphDialogId||Dialog|  
+    |GlyphDialogId||對話|  
     |GlyphOpenFolder||FolderOpened|  
     |GlyphClosedFolder||FolderClosed|  
     |GlyphArrow||GoToNext|  
     |GlyphCSharpFile||CSFileNode|  
-    |GlyphCSharpExpansion||片段|  
+    |GlyphCSharpExpansion||程式碼片段|  
     |GlyphKeyword||IntellisenseKeyword|  
     |GlyphInformation||StatusInformation|  
     |GlyphReference||ClassMethodReference|  

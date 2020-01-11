@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8de964bebb59507da06bb4444ffd6067ffc43b63
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37ac181c2e2182dc8ff57931fbbb51a4f7fc9fc4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299351"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852419"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Visual Studio 模型化和視覺化 SDK （VMSDK）提供數個層級，您可�
 |圖形上的圖示會變更以指出狀態。|在 [DSL 詳細資料] 視窗中設定裝飾專案對應的可見度。 在相同位置上找出數個影像裝飾專案。 請參閱[更新圖形和連接器以反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)。<br /><br /> 或者，覆寫 `ImageField.GetDisplayImage()`。 請參閱 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>中的範例。|
 |在任何圖形上設定背景影像|覆寫 InitializeInstanceResources （）以加入錨定的 ImageField。 請參閱[自訂圖表上的呈現](../modeling/customizing-presentation-on-the-diagram.md)。|
 |將圖形嵌套到任何深度|設定遞迴內嵌樹狀結構。 定義 BoundsRules 以包含圖形。 請參閱[自訂圖表上的呈現](../modeling/customizing-presentation-on-the-diagram.md)。|
-|在專案界限上的固定點附加連接器。|定義內嵌的終端機元素，以圖表上的小型埠表示。 使用 BoundsRules 來就地修正埠。 請參閱[視覺效果和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=186128)中的線路圖表範例。|
+|在專案界限上的固定點附加連接器。|定義內嵌的終端機元素，以圖表上的小型埠表示。 使用 BoundsRules 來就地修正埠。 請參閱[視覺效果和模型化 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)中的線路圖表範例。|
 |文字欄位：顯示衍生自其他值的值。|將文字裝飾專案對應至計算或自訂的儲存網域屬性。 如需詳細資訊，請參閱[計算和自訂儲存體屬性](../modeling/calculated-and-custom-storage-properties.md)。|
 |在模型專案之間或在圖形之間傳播變更|請參閱[以特定領域語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。|
 |將變更傳播至存放區以外的資源，例如其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組。|請參閱[事件處理常式會將變更傳播到模型外部](../modeling/event-handlers-propagate-changes-outside-the-model.md)。|
@@ -74,5 +74,5 @@ Visual Studio 模型化和視覺化 SDK （VMSDK）提供數個層級，您可�
 |允許協力廠商擴充您的 DSL，並控制延伸模組。|[使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [使用 DSL 程式庫共用 DSL 之間的類別](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [定義鎖定原則來建立唯讀區段](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
 |||
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)[撰寫程式碼，以](../modeling/writing-code-to-customise-a-domain-specific-language.md)[針對 Visual Studio 網域特定語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)的特定領域語言模型化 SDK

@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b535737860b846aadecb6b73b4bd26659db37b1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 296aec3b2b5cd307400b230375a7171f158fee60
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289704"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847701"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>如何：新增信任發行者至 ClickOnce 應用程式的用戶端電腦
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "74289704"
   
 1. 從 CA 取得數位憑證。  
   
-2. 將憑證匯出成 Base64 X.509 (.cer) 格式。 如需憑證格式的詳細資訊，請參閱 [匯出憑證](https://go.microsoft.com/fwlink/?LinkId=164793)。  
+2. 將憑證匯出成 Base64 X.509 (.cer) 格式。 如需憑證格式的詳細資訊，請參閱 [匯出憑證](https://technet.microsoft.com/library/cc730988(WS.10).aspx)。  
   
 3. 從用戶端電腦的命令提示字元中，執行下列命令：  
   
@@ -51,7 +51,7 @@ ms.locfileid: "74289704"
   
 1. 從 CA 取得數位憑證。  
   
-2. 將憑證匯出成 Base64 X.509 (.cer) 格式。 如需憑證格式的詳細資訊，請參閱 [匯出憑證](https://go.microsoft.com/fwlink/?LinkId=164793)。  
+2. 將憑證匯出成 Base64 X.509 (.cer) 格式。 如需憑證格式的詳細資訊，請參閱 [匯出憑證](https://technet.microsoft.com/library/cc730988(WS.10).aspx)。  
   
 3. 從用戶端電腦的命令提示字元中，執行下列命令：  
   
@@ -59,16 +59,16 @@ ms.locfileid: "74289704"
   
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)   
- [受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   
+ [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   
  [如何：啟用 ClickOnce 安全性設定](../deployment/how-to-enable-clickonce-security-settings.md)   
- [How to: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [如何：設定 ClickOnce 應用程式的自訂使用權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [如何：以限制權限偵錯 ClickOnce 應用程式](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [如何：新增信任發行者至 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)   
  [如何：設定 ClickOnce 信任提示行為](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

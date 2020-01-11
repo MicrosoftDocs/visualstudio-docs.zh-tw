@@ -12,17 +12,17 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c0fa4e92c62ffb5b9c41cf5e297ed11ca63c38e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c38150dd84ef8898b2aa894a614dfb79e289b593
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298715"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850456"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>定義和安裝模型擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 中，您可以定義模型圖表的擴充功能。 使用這種方式，您可以調整圖表和模型，以符合您自己的需求。 例如，您可以定義功能表命令、UML 設定檔、驗證條件約束和工具箱項目。 您可以在單一擴充功能中定義數個元件。 您也可以使用 [Visual Studio 整合擴充功能 (VSIX)](https://go.microsoft.com/fwlink/?LinkId=160780)格式，將這些擴充功能散發給其他 Visual Studio 使用者。 您可以在 Visual Studio 中使用 VSIX 專案建立 VSIX。
+在 Visual Studio 中，您可以定義模型圖表的擴充功能。 使用這種方式，您可以調整圖表和模型，以符合您自己的需求。 例如，您可以定義功能表命令、UML 設定檔、驗證條件約束和工具箱項目。 您可以在單一擴充功能中定義數個元件。 您也可以使用 [Visual Studio 整合擴充功能 (VSIX)](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)格式，將這些擴充功能散發給其他 Visual Studio 使用者。 您可以在 Visual Studio 中使用 VSIX 專案建立 VSIX。
 
 ## <a name="requirements"></a>需求
  請參閱 [需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。
@@ -42,7 +42,7 @@ ms.locfileid: "74298715"
 
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>建立功能表命令、軌跡處理常式或驗證的類別庫專案
 
-1. 在 [檔案] 功能表，選擇 [新增]、[專案]。
+1. 在 [檔案] 功能表上，依序選擇 [新增]和 [專案]。
 
 2. 在 [已安裝的範本]下，選取 [Visual C#] 或 [Visual Basic]，然後選擇 [類別庫]。
 
@@ -54,7 +54,7 @@ ms.locfileid: "74298715"
 
     1. 在方案總管中，於方案的捷徑功能表中，依序選擇 [加入]和 [新增專案]。
 
-    2. 在 [已安裝的範本]下，依序展開 [Visual C#] 或 [Visual Basic]，然後選取 [擴充性]。 在中間的資料行中，選擇 [VSIX 專案]。
+    2. 在 [已安裝的範本]下，依序展開 [Visual C#] 或 [Visual Basic]，然後選取 [擴充性]。 在中間欄中，選擇 [VSIX 專案]。
 
 3. 將 VSIX 專案設定為方案的啟始專案。
 
@@ -76,7 +76,7 @@ ms.locfileid: "74298715"
         |-|-|
         |**類型** =|**VisualStudio. [Microsoft.visualstudio.mefcomponent]**|
         |**Source** =|**目前方案中的專案**|
-        |**專案** =|*您的類別庫專案*|
+        |**Project** =|*您的類別庫專案*|
         |**內嵌在此資料夾中** =|*空*|
 
          對於其他元件類型，請參閱下一節中的連結。
@@ -124,7 +124,7 @@ ms.locfileid: "74298715"
 
 3. 在目標電腦上，開啟 **.vsix** 檔案 (例如，按兩下該檔案)。
 
-     [Visual Studio 擴充功能安裝程式] 會隨即開啟並安裝擴充功能。
+     [Visual Studio 擴充功能安裝程式] 隨即開啟並安裝擴充功能。
 
 4. 啟動或重新啟動 Visual Studio。
 
@@ -140,5 +140,5 @@ ms.locfileid: "74298715"
 
    *% LocalAppData%* **\Microsoft\VisualStudio\\[version] \Extensions**
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [定義設定檔以擴充 uml](../modeling/define-a-profile-to-extend-uml.md) [定義自訂模型工具箱專案](../modeling/define-a-custom-modeling-toolbox-item.md)[定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06edf9954134a6110f9285fc744c87c2696b19d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2e48039a618f7e8eef7f2c6e9f097da87e37d0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298269"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847780"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Authenticode * 是一項 Microsoft 技術，使用業界標準的密碼編譯，
 ## <a name="authenticode-and-code-signing"></a>Authenticode 與程式碼簽署  
  *數位憑證* 是包含密碼編譯公用/私密金鑰組的檔案，以及描述憑證發行對象與憑證發行單位的發行者中繼資料。  
   
- Authenticode 憑證有各種類型。 每種都有專門針對的簽章類型。 若為 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，您必須擁有可有效簽署程式碼的 Authenticode 憑證。 若嘗試使用另一種憑證類型簽署 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，例如數位電子郵件憑證，它會無法運作。 如需詳細資訊，請參閱 [Introduction to Code Signing](https://go.microsoft.com/fwlink/?LinkId=179452)(程式碼簽署簡介)。  
+ Authenticode 憑證有各種類型。 每種都有專門針對的簽章類型。 若為 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，您必須擁有可有效簽署程式碼的 Authenticode 憑證。 若嘗試使用另一種憑證類型簽署 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，例如數位電子郵件憑證，它會無法運作。 如需詳細資訊，請參閱 [Introduction to Code Signing](https://msdn.microsoft.com/library/ms537361.aspx)(程式碼簽署簡介)。  
   
  有三種方法可以取得程式碼簽署憑證︰  
   
@@ -65,14 +65,14 @@ Authenticode * 是一項 Microsoft 技術，使用業界標準的密碼編譯，
   
 - 解除安裝應用程式，並重新安裝具有有效憑證的新版本。  
   
-- 建立可更新憑證的命令列組件。 此程序的逐步資訊，請參閱 [Microsoft 支援文章 925521](https://go.microsoft.com/fwlink/?LinkId=179454)。  
+- 建立可更新憑證的命令列組件。 此程序的逐步資訊，請參閱 [Microsoft 支援文章 925521](https://support.microsoft.com/kb/925521)。  
   
 ### <a name="storing-certificates"></a>儲存憑證  
   
 - 您可以將憑證儲存為檔案系統的 .pfx 檔，或儲存在金鑰容器內。 Windows 網域的使用者可以有多個金鑰容器。 MakeCert.exe 預設將憑證儲存在您個人的金鑰容器中，除非您另行指定，才會改儲存為 .pfx。 Mage.exe 和 MageUI.exe 是建立 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 部署的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 工具，可讓您使用以任一方式儲存的憑證。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
- [受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   
+ [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   
  [Mage.exe (資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

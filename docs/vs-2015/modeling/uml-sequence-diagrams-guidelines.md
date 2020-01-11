@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c5906084fc7db96ddf304e8362bf7692dac62d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cdd853307bdea28c48762a6a3f0416e698b577ff
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297144"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850128"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML 循序圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "74297144"
 #### <a name="lifelines-and-types"></a>生命線和類型
  您在循序圖中繪製的生命線可以代表系統中元件或類別的一般執行個體。 您可以從類型建立生命線、從生命線建立類型，並在 UML 類別圖和 UML 元件圖上顯示類型。 如需詳細資訊，請參閱[類別和生命線](#ClassesAndLifelines)。
 
-#### <a name="parameter-types"></a>參數類型
+#### <a name="parameter-types"></a>參數型別
  您也可以在 UML 類別圖中描述參數類型以及生命線之間傳送之訊息中所使用的傳回值。
 
 #### <a name="use-case-details"></a>使用案例詳細資料
@@ -261,7 +261,7 @@ ms.locfileid: "74297144"
 
 |**基於此目的**|**請使用此格式**|
 |--------------------------|-------------------------|
-|類型的匿名執行個體。<br /><br /> 如果每種類型都只有一個生命線，請使用此項目。|*類型*|
+|類型的匿名執行個體。<br /><br /> 如果每種類型都只有一個生命線，請使用此項目。|*typeName*|
 |類型的具名執行個體。<br /><br /> 如果您想要顯示的系列包含相同類型的多個執行個體，請使用此項目。|*objectName*：*typeName*|
 
 ### <a name="creating-lifelines-from-types"></a>從類型建立生命線
@@ -442,5 +442,5 @@ ms.locfileid: "74297144"
 
 5. 若要將新訊息加入片段中，請使用訊息工具，或進行複製並貼上。
 
-## <a name="see-also"></a>另請參閱
- [Uml 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md)[編輯 uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md) [Uml 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md) [Uml 類別圖：](../modeling/uml-class-diagrams-reference.md)參考 uml[元件圖：參考](../modeling/uml-component-diagrams-reference.md) [Uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md)[影片：使用順序圖表進行草繪互動](https://go.microsoft.com/fwlink/?LinkId=201113)
+## <a name="see-also"></a>請參閱
+ [Uml 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md)[編輯 uml 模型和圖表](../modeling/edit-uml-models-and-diagrams.md) [Uml 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md) [Uml 類別圖：](../modeling/uml-class-diagrams-reference.md)參考 uml[元件圖：參考](../modeling/uml-component-diagrams-reference.md) [Uml 元件圖：參考](../modeling/uml-component-diagrams-reference.md)[影片：使用順序圖表進行草繪互動](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases)

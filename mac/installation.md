@@ -7,19 +7,19 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 633f8358b85b030c125bc632ff759d92e508cfaf
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 45f9756607cbb638d1f69f77bdf8cd2ee30953c5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404956"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851943"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安裝 Visual Studio 2019 for Mac
 
 若要開始在 macOS 上開發原生、跨平台的 .NET 應用程式，請遵循下方步驟安裝 Visual Studio 2019 for Mac。
 
  > [!div class="button"]
- > [下載 Visual Studio for Mac](https://aka.ms/vsmac)
+ > [下載 Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 
 ## <a name="requirements"></a>需求
 
@@ -32,7 +32,7 @@ ms.locfileid: "75404956"
 
 ## <a name="installation-instructions"></a>安裝指示
 
-1. 從 [Visual Studio for Mac 下載頁面](https://aka.ms/vsmac)下載安裝程式。
+1. 從 [Visual Studio for Mac 下載頁面](https://visualstudio.microsoft.com/vs/mac/)下載安裝程式。
 2. 下載完成後，按一下 **VisualStudioforMacInstaller.dmg** 裝載安裝程式，然後按兩下箭號標誌加以執行：
 
     [![按一下大型箭號，開始安裝](media/install-installer-sml.png)](media/install-installer.png#lightbox)
@@ -104,7 +104,7 @@ ms.locfileid: "75404956"
 
 1. [使用 Xamarin Android SDK 管理員](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs) \(英文\)
 2. [Android SDK 模擬器](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/) \(英文\)
-4. [設定您的裝置以進行開發](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+4. [設定您的裝置以進行開發](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/) \(英文\)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 應用程式、ASP.NET Core Web 應用程式、Unity 遊戲開發
 

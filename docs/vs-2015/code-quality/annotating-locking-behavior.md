@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: a5b34253485da233ba6e25841b6592068de6fb69
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a40697c56468ce05bcf132e6ef2594aaa8d61569
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295821"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850163"
 ---
 # <a name="annotating-locking-behavior"></a>註釋鎖定行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "74295821"
 ## <a name="locking-annotations"></a>鎖定注釋  
  下表列出鎖定注釋。  
   
-|Annotation|描述|  
+|註釋|描述|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的獨佔鎖定計數遞增 1。|  
 |`_Acquires_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的鎖定計數遞增 1。|  
@@ -91,7 +91,7 @@ ms.locfileid: "74295821"
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>未公開之鎖定物件的 SAL 內在變數  
  某些鎖定物件不會由相關聯的鎖定函式的實作為公開。  下表列出 SAL 內部變數，這些變數會啟用在未公開的鎖定物件上運作之函式的註釋。  
   
-|Annotation|描述|  
+|註釋|描述|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|描述取消微調鎖定。|  
 |`_Global_critical_region_`|描述關鍵區域。|  
@@ -101,14 +101,14 @@ ms.locfileid: "74295821"
 ## <a name="shared-data-access-annotations"></a>共用資料存取注釋  
  下表列出共用資料存取的註釋。  
   
-|Annotation|描述|  
+|註釋|描述|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|標註變數，並指出只要存取變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|  
 |`_Interlocked_`|標注變數，相當於 `_Guarded_by_(_Global_interlock_)`。|  
 |`_Interlocked_operand_`|批註函式參數是其中一個各種連鎖函數的目標運算元。  這些運算元必須具有特定的其他屬性。|  
 |`_Write_guarded_by_(expr)`|為變數加上附註，並指出只要修改變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 SAL 注釋減少 C/C++程式碼](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)缺失   
  [瞭解 SAL](../code-quality/understanding-sal.md)   
  [標注函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
@@ -117,4 +117,4 @@ ms.locfileid: "74295821"
  [指定批註套用的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [內建函式](../code-quality/intrinsic-functions.md)   
  [最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)   
- [程式碼分析小組 Blog](https://go.microsoft.com/fwlink/p/?LinkId=251197)
+ [程式碼分析小組 Blog](https://blogs.msdn.com/b/codeanalysis/)

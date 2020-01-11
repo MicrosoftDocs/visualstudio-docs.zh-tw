@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 03ecd3fcc253f255afc59c2d6412f3864fe253b8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 10375e00eb850691e88d01c56a87bb967c40e9ea
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300597"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850574"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "74300597"
  您必須在系統上安裝 .NET Framework 3.5，才能存取早於 4.0 的 Framework 版本。
 
 ## <a name="downloading-sample-solutions"></a>下載範例方案
- 您可以使用 Visual Studio 從 [MSDN Code Gallery](https://go.microsoft.com/fwlink/?LinkId=254185)下載並安裝範例方案。
+ 您可以使用 Visual Studio 從 [MSDN Code Gallery](https://code.msdn.microsoft.com/)下載並安裝範例方案。
 
  您可以分別下載範例，也可以下載範例套件，其中包含共用技術或主題的相關範例。 如果您下載的任何範例有原始程式碼變更發行，您就會收到通知。
 

@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: e78062acfa95c48f0e95f18f42b2c1b26d1f3fa2
-ms.sourcegitcommit: 86e1b3eca4633c7522b48282ff7a2be7a09296dd
+ms.openlocfilehash: 0f41abab206362ea60fafa30f2abcbf5eb474ddc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548224"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849921"
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>移植、遷移及升級 Visual Studio 專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,14 +57,14 @@ ms.locfileid: "75548224"
 |F#|如果您允許 Visual Studio 升級在 Visual Studio 2010 SP1 中建立的專案，您可以在 Visual Studio 2013 和 Visual Studio 2012 中開啟它。 不過，您無法將舊版 Visual Studio 所建立的 Silverlight 專案升級為 Visual Studio 2013。 相反地，您必須在 Visual Studio 2013 中建立 Silverlight 專案，然後將您的程式碼複製到其中。 您在 Visual Studio 2013 目標 Silverlight 5 中建立的 silverlight 專案。|
 |LightSwitch|如果您允許 Visual Studio 自動升級專案，您只能在 [Visual Studio 2013] 中開啟它。|
 |本機資料庫快取|[本機資料庫快取] 範本和 [**設定資料同步**處理] 對話方塊不會包含在 Visual Studio 2013 中。 如果已安裝 Microsoft 同步處理服務 v1.0，您可以使用 Visual Studio 2013 開啟並執行在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 中建立的專案，但如果您想要在 Visual Studio 2013 中更新它們，您必須在程式碼中手動進行所有變更。 或者，您可以繼續使用 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 來維護和更新這些專案。  若要進行新開發，請以 Microsoft Sync Framework 提供的新同步處理模型為目標。 如需相關資訊，請參閱 [Microsoft Sync Framework Developer Center](https://msdn.microsoft.com/sync/default)(Microsoft Sync Framework 開發人員中心)|
-|模型檢視控制器 (MVC) 架構|Visual Studio 2010 SP1 僅支援 MVC 2 和 MVC 3，Visual Studio 2012 只支援 MVC 3 和 MVC 4，而且 Visual Studio 2013 僅支援 MVC 4。 如需關於如何從 MVC 2 自動升級到 MVC 3 的詳細資訊，請參閱 [ASP.NET MVC 3 Application Upgrader](https://go.microsoft.com/fwlink/?LinkID=238178) (ASP.NET MVC 3 應用程式升級程式)。 如需關於如何從 MVC 2 手動升級至 MVC 3 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 2 Project to ASP.NET MVC 3 Tools Update](https://go.microsoft.com/fwlink/?linkid=238178)(將 ASP.NET MVC 2 專案升級至 ASP.NET MVC 3 工具更新)。 如需關於如何從 MVC 3 手動升級至 MVC 4 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 3 Project to ASP.NET MVC 4](https://docs.microsoft.com/aspnet/whitepapers/mvc4-release-notes) (將 ASP.NET MVC 3 專案升級至 ASP.NET MVC 4)。 如果您的專案以 .NET Framework 3.5 SP1 為目標，專案必須重定目標為使用 .NET Framework 4。|
+|模型檢視控制器 (MVC) 架構|Visual Studio 2010 SP1 僅支援 MVC 2 和 MVC 3，Visual Studio 2012 只支援 MVC 3 和 MVC 4，而且 Visual Studio 2013 僅支援 MVC 4。 如需關於如何從 MVC 2 自動升級到 MVC 3 的詳細資訊，請參閱 [ASP.NET MVC 3 Application Upgrader](https://aspnet.codeplex.com/releases/view/59008) (ASP.NET MVC 3 應用程式升級程式)。 如需關於如何從 MVC 2 手動升級至 MVC 3 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 2 Project to ASP.NET MVC 3 Tools Update](https://aspnet.codeplex.com/releases/view/59008)(將 ASP.NET MVC 2 專案升級至 ASP.NET MVC 3 工具更新)。 如需關於如何從 MVC 3 手動升級至 MVC 4 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 3 Project to ASP.NET MVC 4](https://docs.microsoft.com/aspnet/whitepapers/mvc4-release-notes) (將 ASP.NET MVC 3 專案升級至 ASP.NET MVC 4)。 如果您的專案以 .NET Framework 3.5 SP1 為目標，專案必須重定目標為使用 .NET Framework 4。|
 |模型化|如果您允許 Visual Studio 自動更新專案，則可以在 Visual Studio 2013、Visual Studio 2012 或 Visual Studio 2010 SP1 中開啟專案。<br /><br /> 當 Team Foundation 建置模型專案時，它會嘗試驗證專案中的各層。 在 Visual Studio 2013 中，Team Foundation Build 無法驗證在 Visual Studio 2010 SP1 中建立之模型專案的層級。 不過，在 Visual Studio 2010 SP1 中，Team Foundation Build 可以驗證在 Visual Studio 2013 中建立的模型專案中的層級。|
 |MPI/叢集偵錯|如果在執行 Visual Studio 2013、Visual Studio 2012 或 Visual Studio 2010 SP1 的電腦上安裝相同版本的執行時間或工具，您可以在這三個版本中開啟此專案。|
 |MSI 安裝程式 (.vdproj)|無法在 Visual Studio 2013 中開啟此專案，因為它不支援該專案類型。 我們建議您使用 InstallShield Limited Edition for Visual Studio (ISLE)，它是直接支援大部分 Windows 平台和應用程式執行階段的免費部署方案。 您也可以使用 ISLE 從 Visual Studio Installer 專案匯入資料和設定。 中修改就能執行。|
 |Office 2007 VSTO|如果您將專案升級為以 Office 2013 和 .NET Framework 4 為目標，您可以在 Visual Studio 2013、Visual Studio 2012 或 Visual Studio 2010 SP1 中開啟此專案。|
 |Office 2010 VSTO|如果專案的目標為 .NET Framework 4，您可以在 Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中開啟它。 所有其他專案則需要單向升級。|
 |豐富網際網路應用程式|如果您升級專案，您可以在 Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中開啟它。|
-|SharePoint 2007|無法在 Visual Studio 2013 中開啟此專案。 不過，如果您手動將專案升級為 SharePoint 2010，您可以在 Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中開啟它。 如需如何升級 SharePoint 2007 的詳細資訊，請參閱[從 SharePoint 2007 移轉到 SharePoint 2010 (IT 專業人士適用)](https://go.microsoft.com/fwlink/?LinkId=238224) 和[適用於 SharePoint Server 2010 的 SharePoint 企業版搜尋移轉工具](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)) \(英文\)。|
+|SharePoint 2007|無法在 Visual Studio 2013 中開啟此專案。 不過，如果您手動將專案升級為 SharePoint 2010，您可以在 Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中開啟它。 如需如何升級 SharePoint 2007 的詳細資訊，請參閱[從 SharePoint 2007 移轉到 SharePoint 2010 (IT 專業人士適用)](https://channel9.msdn.com/Blogs/matthijs/Migrating-from-SharePoint-2007-to-SharePoint-2010-for-the-IT-Pro) 和[適用於 SharePoint Server 2010 的 SharePoint 企業版搜尋移轉工具](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)) \(英文\)。|
 |SharePoint 2010|您可以在 Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中開啟專案。|
 |SketchFlow|如果您允許 Visual Studio 將專案升級至 WPF 4.5/Silverlight 5，您可以在 Visual Studio 2012 和 Visual Studio 2013 中開啟它。|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 資料庫|您可以在 Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中開啟專案。 如果您有舊版 SQL Server 建立的資料庫檔案 (.mdf)，則必須將其升級至 [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] ，才能搭配 SQL Server Express LocalDB 使用該資料庫檔案，但是該資料庫不再與舊版 SQL Server 相容。 如果您不升級，您可以在同一部電腦上安裝和使用 [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)]，繼續在 Visual Studio 2013 中使用資料庫。 如需詳細資訊，請參閱[升級 .mdf 檔案](../data-tools/upgrade-dot-mdf-files.md)。|

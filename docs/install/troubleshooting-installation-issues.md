@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24a6a642528fbf8fed7b8000434a963e32cc85ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe581d9c754ee78f66771901661e8870fd91b4b3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594483"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849599"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>針對 Visual Studio 安裝和升級問題進行疑難排解
 
@@ -127,11 +127,11 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 針對大部分安裝問題進行疑難排解時，將會需要安裝記錄檔。 使用 Visual Studio 安裝程式中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio.md)來提交問題時，會自動將這些記錄檔包含在報告中。
 
-當您連絡 Microsoft 支援服務時，可能需要使用 [Microsoft Visual Studio 與 .NET Framework 記錄收集工具](https://aka.ms/vscollect) \(英文\) 來提供這些安裝記錄檔。 記錄收集工具會收集來自 Visual Studio 所安裝之所有元件的安裝記錄，包括 .NET Framework、Windows SDK 及 SQL Server。 它也會收集電腦資訊、Windows Installer 詳細目錄與 Windows 事件記錄檔資訊，以供 Visual Studio 安裝程式、Windows Installer 與系統還原使用。
+當您連絡 Microsoft 支援服務時，可能需要使用 [Microsoft Visual Studio 與 .NET Framework 記錄收集工具](https://www.microsoft.com/download/details.aspx?id=12493) \(英文\) 來提供這些安裝記錄檔。 記錄收集工具會收集來自 Visual Studio 所安裝之所有元件的安裝記錄，包括 .NET Framework、Windows SDK 及 SQL Server。 它也會收集電腦資訊、Windows Installer 詳細目錄與 Windows 事件記錄檔資訊，以供 Visual Studio 安裝程式、Windows Installer 與系統還原使用。
 
 若要收集記錄檔：
 
-1. [下載工具](https://aka.ms/vscollect) \(英文\)。
+1. [下載工具](https://www.microsoft.com/download/details.aspx?id=12493) \(英文\)。
 2. 開啟系統管理命令提示字元。
 3. 從儲存工具的目錄執行 `Collect.exe`。
 4. 在您的 `%TEMP%` 目錄中尋找產生的 `vslogs.zip` 檔案，例如 `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`。

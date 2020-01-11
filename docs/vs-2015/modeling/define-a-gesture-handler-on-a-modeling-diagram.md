@@ -12,17 +12,17 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299301"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850485"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>在模型圖表上定義軌跡處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 中，您可以定義當使用者按兩下，或將項目拖曳至 UML 圖表時會執行的命令。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780))，以及將這些整合擴充功能散發給其他 Visual Studio 使用者。
+在 Visual Studio 中，您可以定義當使用者按兩下，或將項目拖曳至 UML 圖表時會執行的命令。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx))，以及將這些整合擴充功能散發給其他 Visual Studio 使用者。
 
  如果您要拖曳的圖表類型及項目類型已有內建行為，您可能無法加入或覆寫這個行為。
 
@@ -56,7 +56,7 @@ ms.locfileid: "74299301"
 
 1. 在新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案或現有的方案中，建立類別庫專案。
 
-   1. 在 [檔案] 功能表，選擇 [新增]、[專案]。
+   1. 在 [檔案] 功能表上，依序選擇 [新增]和 [專案]。
 
    2. 在 [已安裝的範本]下，依序展開 [Visual C#] 或 [Visual Basic]，然後在中間的資料行中選擇 [類別庫]。
 
@@ -208,9 +208,9 @@ ms.locfileid: "74299301"
 
 2. 除非您的方案已經包含 VSIX 專案，否則請建立一個。
 
-    1. 在 [方案總管]中，在方案的捷徑功能表上，選擇 [新增]和 [新增專案]。
+    1. 在方案總管中，於方案的捷徑功能表上，選擇 [新增]和 [新增專案]。
 
-    2. 在 [已安裝的範本]下，依序展開 [Visual C#] 或 [Visual Basic]，然後選取 [擴充性]。 在中間的資料行中，選擇 [VSIX 專案]。
+    2. 在 [已安裝的範本]下，依序展開 [Visual C#] 或 [Visual Basic]，然後選取 [擴充性]。 在中間欄中，選擇 [VSIX 專案]。
 
 3. 將 VSIX 專案設定為方案的啟始專案。
 
@@ -228,7 +228,7 @@ ms.locfileid: "74299301"
 
           = 
 
-          = 
+          = *您的類別庫專案*
 
 ## <a name="Executing"></a>執行手勢處理常式
  基於測試目的，請在偵錯模式中執行軌跡處理常式。
@@ -280,7 +280,7 @@ ms.locfileid: "74299301"
 
  這些方法的參數如下：
 
-- `ShapeElement target` 使用者已將項目拖曳至其上的圖形或圖表。
+- `ShapeElement target`。 使用者已將項目拖曳至其上的圖形或圖表。
 
     `ShapeElement` 是實作中的一個類別，此實作是 UML 類別模型化工具的基礎。 若要降低使 UML 模型和圖表處於不一致狀態的風險，我們建議不要直接使用這個類別的方法。 相反地，將元素包裝在 `IShape`中，然後使用在[圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)中所述的方法。
 
@@ -311,7 +311,7 @@ ms.locfileid: "74299301"
       target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE
       ```
 
-- `DiagramDragEventArgs eventArgs` 此參數會攜帶拖曳作業的序列化形式來源物件：
+- `DiagramDragEventArgs eventArgs`。 此參數會攜帶拖曳作業的序列化形式來源物件：
 
     ```
     System.Windows.Forms.IDataObject data = eventArgs.Data;
@@ -365,7 +365,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
 3. 在目標電腦上開啟 **.vsix** 檔案。
 
-     [Visual Studio 擴充功能安裝程式] 會隨即開啟並安裝擴充功能。
+     [Visual Studio 擴充功能安裝程式] 隨即開啟並安裝擴充功能。
 
 4. 啟動或重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]。
 
@@ -519,5 +519,5 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
 
  [從 IDataObject 取得 UML 模型](../modeling/get-uml-model-elements-from-idataobject.md)專案中會說明 `GetModelElementsFromDragEvent()` 的程式碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [定義和安裝模型擴充功能](../modeling/define-and-install-a-modeling-extension.md)[擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)[定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)[使用 uml API](../modeling/programming-with-the-uml-api.md)進行程式設計

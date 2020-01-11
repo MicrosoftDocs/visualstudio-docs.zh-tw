@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90fab2724c3d392db7824222da2450a8a4d585c3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f05e91c13b1a9c52b5afad6942e5847643aa9490
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295750"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851556"
 ---
 # <a name="step-3-set-your-form-properties"></a>步驟 3：設定您的表單屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 接下來，您要使用 [屬性] 視窗變更表單的外觀。
 
- ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 1](https://go.microsoft.com/fwlink/?LinkId=205209)或[教學課程1：在C#影片1中建立圖片檢視器](https://go.microsoft.com/fwlink/?LinkId=205199)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 1](https://msdn.microsoft.com/vbasic/gg315352.aspx)或[教學課程1：在C#影片1中建立圖片檢視器](https://msdn.microsoft.com/vcsharp/gg278409.aspx)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ### <a name="to-set-your-form-properties"></a>若要設定您的表單屬性
 
@@ -67,7 +67,7 @@ ms.locfileid: "74295750"
 
    - 選擇 [Form1] 視窗右上角的 X 按鈕。
 
-### <a name="to-continue-or-review"></a>繼續或檢視
+### <a name="to-continue-or-review"></a>若要繼續或檢視
 
 - 若要移至下一個教學課程步驟，請參閱[步驟 4：使用 TableLayoutPanel 控制項來配置您的表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。
 

@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 54239b49344a5e29e7f837d22840f997c4b9fbe2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777475"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845064"
 ---
 # <a name="installation"></a>安裝
 
@@ -24,7 +24,7 @@ Visual Studio Tools for AI 可以安裝在 Windows 64 位元作業系統上。
 
 此延伸模組適用於 Visual Studio 2015 和 Visual Studio 2017 Community 版或更高版本。
 
-您可以從 [Visual Studio Marketplace](https://aka.ms/vstoolsforai) 或從 Visual Studio 內下載這些工具：
+您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) 或從 Visual Studio 內下載這些工具：
 
 1. 選取 [工具] > [擴充功能和更新]。
 
@@ -156,7 +156,7 @@ pip3.5 install -U numpy scipy
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (籌備中)](https://mxnet.incubator.apache.org/) 是專為效率和彈性所設計的深度學習架構。 它可讓您**混合**[符號和命令式程式設計](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)以提高效率和生產力。
+[Apache MXNet (籌備中)](https://mxnet.incubator.apache.org/) 是專為效率和彈性所設計的深度學習架構。 它可讓您**混合**[符號和命令式程式設計](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)，以最大化效率和生產力。
 
 若要安裝 MXNet，請在終端機中執行下列命令：
 

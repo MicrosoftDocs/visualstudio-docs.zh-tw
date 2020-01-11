@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301186"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845292"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ ms.locfileid: "74301186"
  **啟用或停用複製、剪下和貼上。**
 在 [DSL Explorer] 中，設定 [**編輯器**] 節點的 [**啟用複製貼**上] 屬性。
 
- **將連結複製到相同的目標。** 例如，若要讓複製的批註方塊連結至相同的主旨元素。
+ **將連結複製到相同的目標。** 例如，將複製的註解方塊連結至相同的主旨項目。
 將角色的 [**傳播複本**] 屬性設定為 [**只將複本傳播至連結**]。 如需詳細資訊，請參閱[自訂連結複製行為](#customizeLinks)。
 
  複製連結的項目。 例如，當您複製新項目時，也會建立任何連結之註解方塊的複本。
 將角色的 [**傳播複本**] 屬性設定為 [將**複本傳播至連結和相反角色扮演**者]。 如需詳細資訊，請參閱[自訂連結複製行為](#customizeLinks)。
 
- **複製並貼上，以快速複製元素。** 一般來說，您剛才複製的專案仍為選取狀態，而且您無法在其上貼上相同類型的元素。
+ **複製並貼上，以快速複製元素。** 一般而言，您剛複製的項目仍處於已選取狀態，因此您無法貼上相同類型的項目。
 將 Element Merge 指示詞加入至網域類別，並加以設定，以正向合併至父類別。 這對拖曳作業會造成相同的影響。 如需詳細資訊，請參閱[自訂元素的建立和移動](../modeling/customizing-element-creation-and-movement.md)。
 
  \-或-
@@ -77,7 +77,7 @@ partial class MyDslClipboardCommandSet
 
 ```
 
- **當使用者貼到選取的目標時，建立其他連結。** 例如，當批註方塊貼到專案上時，會在兩者之間建立連結。
+ **當使用者貼到選取的目標時，建立其他連結。** 例如，將註解方塊貼到項目上時，會建立這兩者之間的連結。
 將 Element Merge 指示詞加入至目標網域類別，並加以設定，以處理加入連結的合併作業。 這對拖曳作業會造成相同的影響。 如需詳細資訊，請參閱[自訂元素的建立和移動](../modeling/customizing-element-creation-and-movement.md)。
 
  \-或-
@@ -91,7 +91,7 @@ partial class MyDslClipboardCommandSet
 覆寫 DslPackage 專案中的*MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()`。
 
  **透過複製和貼上來保留圖形版面配置。**
-當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](https://go.microsoft.com/fwlink/?LinkId=213879)中的範例所示範。
+當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)中的範例所示範。
 
  若要達成這個效果，請將圖形和連接線加入至複製的 ElementGroupPrototype。 最方便的覆寫方法是 ElementOperations.CreateElementGroupPrototype()。 若要執行這項操作，請將下列程式碼加入至 DSL 專案：
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **在選擇的位置貼上圖形，例如目前的游標位置。**
-當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](https://go.microsoft.com/fwlink/?LinkId=213879)中的範例所示範。
+當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)中的範例所示範。
 
  若要達成這個效果，請覆寫 `ClipboardCommandSet.ProcessOnMenuPasteCommand()` 以使用特定位置版本的 `ElementOperations.Merge()`。 若要執行這項操作，請在 DslPackage 專案中加入下列程式碼：
 
@@ -563,5 +563,5 @@ namespace Company.MyDsl
 
 ```
 
-## <a name="see-also"></a>另請參閱
- [自訂專案的建立和移動](../modeling/customizing-element-creation-and-movement.md)[如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)[自訂刪除行為](../modeling/customizing-deletion-behavior.md)[範例： VMSDK 電路圖表範例](https://go.microsoft.com/fwlink/?LinkId=213879)
+## <a name="see-also"></a>請參閱
+ [自訂專案的建立和移動](../modeling/customizing-element-creation-and-movement.md)[如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)[自訂刪除行為](../modeling/customizing-deletion-behavior.md)[範例： VMSDK 電路圖表範例](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cafdfacec24e906569d0f2b0d1a334511a75e30a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 96647f362566f0687cb04b7da4459331ac56b031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300714"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851910"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "74300714"
 
   Visual Studio 商標套件支援的控制項：
 
-- 連結
+- 「連結」
 
 - CodeSnippet
 
@@ -437,29 +437,29 @@ some F# code
 |||
 |-|-|
 |功能：|**CollapsibleArea**|
-|用法:|展開折迭內容控制項文字|
+|請使用：|展開折迭內容控制項文字|
 |**目**|**值**|
 |ExpandText|Expand|
 |CollapseText|摺疊|
 |功能：|**CodeSnippet**|
-|用法:|程式碼片段控制項文字。  注意：具有「非中斷」空間的程式碼片段內容將會變更為「空間」。|
+|請使用：|程式碼片段控制項文字。  注意：具有「非中斷」空間的程式碼片段內容將會變更為「空間」。|
 |**目**|**值**|
 |CopyToClipboard|複製至剪貼簿|
-|ViewColorizedText|View 以色彩標示|
-|CombinedVBTabDisplayLanguage|Visual Basic （範例）|
+|ViewColorizedText|檢視|
+|CombinedVBTabDisplayLanguage|Visual Basic (範例)|
 |VBDeclaration|宣告|
-|VBUsage|使用方式|
+|VBUsage|使用|
 |功能：|**意見反應、頁尾和標誌**|
-|用法:|提供意見反應控制項給客戶，以透過電子郵件提供有關目前主題的意見反應。  內容的著作權文字。  標誌定義。|
+|請使用：|提供意見反應控制項給客戶，以透過電子郵件提供有關目前主題的意見反應。  內容的著作權文字。  標誌定義。|
 |**目**|**值（這些字串可以修改以符合內容採用者的需求）。**|
-|詳情|© 2013 Microsoft Corporation. 著作權所有，並保留一切權利。|
+|詳情|© 2013 Microsoft Corporation. All rights reserved.|
 |SendFeedback|\<href = "{0}" {1}> 將此主題的意見反應傳送給 Microsoft\<。|
 |No-results-found-feedbacklink||
 |LogoTitle|[!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]|
 |LogoFileName|vs_logo_bk .gif|
 |LogoFileNameHC|vs_logo_wh .gif|
 |功能：|**免責聲明**|
-|用法:|機器轉譯內容的一組案例特定免責聲明。|
+|請使用：|機器轉譯內容的一組案例特定免責聲明。|
 |**目**|**值**|
 |MT_Editable|本文為機器翻譯。 如果您有網際網路連線，請選取 [線上流覽這個主題]，以同時使用原始英文內容的可編輯模式來觀看此頁面。|
 |MT_NonEditable|本文為機器翻譯。 如果您有網際網路連線，請選取 [線上流覽這個主題]，以同時使用原始英文內容的可編輯模式來觀看此頁面。|
@@ -468,14 +468,14 @@ some F# code
 |MT_BetaContents|本文是針對初稿發行的機器翻譯。 如果您有網際網路連線，請選取 [線上流覽這個主題]，以同時使用原始英文內容的可編輯模式來觀看此頁面。|
 |MT_BetaRecycledContents|這篇文章是針對初稿發行而手動翻譯的。 如果您有網際網路連線，請選取 [線上流覽這個主題]，以同時使用原始英文內容的可編輯模式來觀看此頁面。|
 |功能：|**LinkTable**|
-|用法:|線上主題連結的支援|
+|請使用：|線上主題連結的支援|
 |**目**|**值**|
 |LinkTableTitle|連結資料表|
 |TopicEnuLinkText|請參閱本主題\</a > 的英文版，這可在您的電腦上取得。|
 |TopicOnlineLinkText|觀看本主題 \<href = "{0}" {1}> online\</a >|
-|OnlineText|線上|
+|OnlineText|Online|
 |功能：|**Video 音訊控制項**|
-|用法:|顯示影片內容的元素和文字|
+|請使用：|顯示影片內容的元素和文字|
 |**目**|**值**|
 |MultiMediaNotSupported|必須安裝 Internet Explorer 9 或更新版本，才能支援 {0} 內容。|
 |VideoText|顯示影片|
@@ -483,25 +483,25 @@ some F# code
 |OnlineVideoLinkText|\<p > 若要觀看與本主題相關的影片，請按一下 [{0}\<href = "{1}" >{2}這裡\</a >]。\</p >|
 |OnlineAudioLinkText|\<p > 若要接聽與本主題相關的音訊，請按一下 [{0}\<href = "{1}" >{2}這裡\</a >]。\</p >|
 |功能：|**內容未安裝控制**|
-|用法:|用於轉譯 contentnotinstalled 的文字元素（字串）|
+|請使用：|用於轉譯 contentnotinstalled 的文字元素（字串）|
 |**目**|**值**|
 |ContentNotInstalledTitle|在您的電腦上找不到任何內容。|
 |ContentNotInstalledDownloadContentText|\<p > 若要將內容下載到您的電腦，請 \<href = "{0}" {1}> 按一下 管理 索引標籤\</a >。\</p >|
 |ContentNotInstalledText|\<p > 未在您的電腦上安裝任何內容。 請參閱系統管理員以取得本機說明內容安裝。\</p >|
 |功能：|**找不到主題控制項**|
-|用法:|用於轉譯 topicnotfound 的文字元素（字串）|
+|請使用：|用於轉譯 topicnotfound 的文字元素（字串）|
 |**目**|**值**|
 |TopicNotFoundTitle|在您的電腦上找不到要求的主題。|
 |TopicNotFoundViewOnlineText|\<p > 在您的電腦上找不到您要求的主題，但是您可以 \<href = "{0}" {1}> 觀看線上\</a > 主題。\</p >|
 |TopicNotFoundDownloadContentText|\<p > 請參閱流覽窗格以取得類似主題的連結，或 \<href = "{0}" {1}> 按一下 管理 索引標籤\</a >，將內容下載到您的電腦。\</p >|
 |TopicNotFoundText|\<p > 在您的電腦上找不到您要求的主題。\</p >|
 |功能：|**主題損毀控制項**|
-|用法:|用於轉譯 topiccorrupted 的文字元素（字串）|
+|請使用：|用於轉譯 topiccorrupted 的文字元素（字串）|
 |**目**|**值**|
 |TopicCorruptedTitle|無法顯示要求的主題。|
 |TopicCorruptedViewOnlineText|\<p > 說明檢視器無法顯示要求的主題。 主題的內容或基礎系統相依性中可能發生錯誤。\</p >|
 |功能：|**首頁控制項**|
-|用法:|支援顯示 [說明檢視器] 最上層節點內容的文字。|
+|請使用：|支援顯示 [說明檢視器] 最上層節點內容的文字。|
 |**目**|**值**|
 |HomePageTitle|說明檢視器首頁|
 |HomePageIntroduction|\<p > 歡迎使用 Microsoft Help Viewer，這是一種基本的資訊來源，適用于使用 Microsoft 工具、產品、技術和服務的每個人。 說明檢視器可讓您存取 how-to 和參考資訊、範例程式碼、技術文章等等。 若要尋找您所需的內容，請流覽目錄、使用全文檢索搜尋，或使用關鍵字索引流覽內容。\</p >|
@@ -518,7 +518,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**商標功能**|**JavaScript 函式**|**說明**|
+|**商標功能**|**JavaScript 函式**|**描述**|
 |Var 。||定義變數|
 |取得使用者程式碼語言|setUserPreferenceLang|將索引編號對應至程式碼語言|
 |設定並取得 cookie 值|System.windows.application.getcookie、System.windows.application.setcookie||
@@ -555,7 +555,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**檔案**|**使用**|**顯示的內容來源**|
+|**檔案**|**用法**|**顯示的內容來源**|
 |首頁 .htm|此頁面會顯示目前已安裝的內容，以及任何其他適合使用者呈現其內容的訊息。  此檔案有其他中繼資料屬性 "Microsoft.Help.Id" content = "-1"，這會將此內容放在本機內容目錄的頂端。||
 ||< META_HOME_PAGE_TITLE_ADD/>|商標 .xml、tag \<HomePageTitle >|
 ||< HOME_PAGE_INTRODUCTION_SECTION_ADD/>|商標 .xml、tag \<HomePageIntroduction >|
@@ -590,7 +590,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**檔案**|**使用**|**範例**|
+|**檔案**|**用法**|**範例**|
 |清除 .gif|用來呈現可折迭的區域||
 |footer_slice .gif|頁尾簡報||
 |info_icon .gif|顯示資訊時使用|免責聲明|
@@ -824,4 +824,4 @@ some F# code
 
 如需如何利用 Help API 的詳細資訊，請參閱說明[檢視器程式碼範例](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)。
 
-如需重大問題的更新，請參閱說明[檢視器讀我檔案](https://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)。
+如需重大問題的更新，請參閱說明[檢視器讀我檔案](https://go.microsoft.com/fwlink/?LinkId=255960)。

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: 了解如何在管理入口網站中檢視已指派的訂用帳戶數目上限
-ms.openlocfilehash: 368ca1ad0373267e9753ab223c2e200cbc87f1e0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 76360c9843d82350a2b9929b8debfdb4aa4cde82
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491716"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852332"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>使用 [使用量上限] 功能來追蹤已指派的訂用帳戶數目
 Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤曾購買和指派的訂用帳戶數量，並識別過去一年和整個合約持續時間內，每個層級曾指派的訂用帳戶尖峰數目。 
@@ -42,7 +42,7 @@ Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤
 答：總覽中的資訊會顯示每個訂用帳戶層級的*目前*指派和可用的訂閱。  這和在目前年份或合約有效期間已指派訂用帳戶的數目上限會有極大差異。  [使用量上限] 功能可讓您查看何時到達最大指派層級和層級。  這是重要的區別，因為訂用帳戶的計費校正期間是以一年內任何時點已指派訂用帳戶數目上限為基礎。 
 
 ## <a name="resources"></a>資源
-- [Visual Studio 授權技術白皮書](https://aka.ms/vslicensing)
+- [Visual Studio 授權技術白皮書](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [大量授權條款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

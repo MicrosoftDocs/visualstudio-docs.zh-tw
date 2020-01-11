@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dcb179ae80e60654c981da8c76e9a57e6fb8ed66
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bdf1111198c7f874d03596382372fe25851e37d3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296059"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852123"
 ---
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 的 UML API 可讓您撰寫程式碼，以建立、讀取和更新
 
 |主題|描述的範例類型和方法|描述的功能|
 |-----------|-----------------------------------------|------------------------|
-|[使用 UML API 巡覽關聯性](../modeling/navigate-relationships-with-the-uml-api.md)|UML 項目及其屬性和關聯。 例如，IElement 及其子系，包含：IClass、IActivity、IUseCase、IComponent、IInteraction、IModel、IPackage|在 Visual Studio 中，UML 模型符合 UML 規格版本2.1.2，可以在[Uml 資源網頁](https://go.microsoft.com/fwlink/?LinkId=160796)上取得。 每一個類型都是一個介面，此介面的名稱與 UML 類型相同，且包含前置詞 "I"。|
+|[使用 UML API 巡覽關聯性](../modeling/navigate-relationships-with-the-uml-api.md)|UML 項目及其屬性和關聯。 例如，IElement 及其子系，包含：IClass、IActivity、IUseCase、IComponent、IInteraction、IModel、IPackage|在 Visual Studio 中，UML 模型符合 UML 規格版本2.1.2，可以在[Uml 資源網頁](https://www.uml.org/)上取得。 每一個類型都是一個介面，此介面的名稱與 UML 類型相同，且包含前置詞 "I"。|
 |[在 UML 模型中建立項目和關聯性](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|每一個項目類型都有建立其子項目的方法。|
 |[在圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)|IShape、IDiagram<br /><br /> IShape.Move()|模型中的每一個項目都可做為圖表上的圖形表示。 在某些情況下，您可以為每一個物件建立新圖形。 您可以移動圖形、調整圖形大小、為圖形上色，以及摺疊或展開這些圖形。|
 |[巡覽 UML 模型](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|「模型存放區」可儲存模型。<br /><br /> 「圖表內容」可讓您存取目前的圖表和存放區。|
@@ -51,7 +51,7 @@ Visual Studio 的 UML API 可讓您撰寫程式碼，以建立、讀取和更新
 ## <a name="the-api-assemblies"></a>應用程式開發介面組件
  下表摘錄了可為 UML 工具提供擴充性的組件，以及建議您使用的命名空間。
 
-|組件|命名空間|提供存取權給：|
+|Assembly|命名空間|提供存取權給：|
 |--------------|----------------|-------------------------|
 |Microsoft.VisualStudio.Uml.Interfaces|(全部)|UML 類型。|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|VisualStudio. Microsoft.visualstudio.architecturetools.layer.validator 擴充性 Uml|[建立方法](../modeling/create-elements-and-relationships-in-uml-models.md)|
@@ -68,5 +68,5 @@ Visual Studio 的 UML API 可讓您撰寫程式碼，以建立、讀取和更新
 |System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[針對 MEF 元件匯出和匯入](../modeling/define-and-install-a-modeling-extension.md)|
 |System.Linq|<xref:System.Linq>|[集合的輕鬆操作，特別是在處理關聯性時](../modeling/navigate-relationships-with-the-uml-api.md)。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md) [API 參考以進行 uml](../modeling/api-reference-for-uml-modeling-extensibility.md)模型化延伸

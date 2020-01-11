@@ -21,24 +21,24 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e1099eaf8d766088612abbb399bdf004e6378e4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cba55c9f4a8f7436b97099b6b548b916ea6e5ecb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294674"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844933"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>逐步解說：手動部署 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果您無法使用 Visual Studio 部署您的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，或需要使用 advanced 部署功能（例如受信任的應用程式部署），您應該使用 Mage.exe 命令列工具來建立您的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 資訊清單。 本逐步解說說明如何使用命令列版本（Mage.exe）或資訊清單產生和編輯工具的圖形化版本（Mageui.exe）來建立 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>必要條件：  
  這個逐步解說有一些必要條件和選項，您必須在建立部署之前選擇。  
   
 - 安裝 Mage.exe 和 Mageui.exe。  
   
-     Mage.exe 和 Mageui.exe 是 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]的一部分。 您必須安裝 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 或包含 Visual Studio 的 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 版本。 如需詳細資訊，請參閱 MSDN 上的[Windows SDK](https://go.microsoft.com/fwlink/?LinkId=158044) 。  
+     Mage.exe 和 Mageui.exe 是 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]的一部分。 您必須安裝 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 或包含 Visual Studio 的 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 版本。 如需詳細資訊，請參閱 MSDN 上的[Windows SDK](https://msdn.microsoft.com/windowsserver/bb980924.aspx) 。  
   
 - 提供要部署的應用程式。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "74294674"
   
 - 請確定應用程式沒有具有 UAC 資訊的資訊清單。  
   
-     您必須判斷您的應用程式是否包含含有使用者帳戶控制（UAC）資訊的資訊清單，例如 `<dependentAssembly>` 元素。 若要檢查應用程式資訊清單，您可以使用 Windows Sysinternals [Sigcheck](https://go.microsoft.com/fwlink/?LinkId=158035)公用程式。  
+     您必須判斷您的應用程式是否包含含有使用者帳戶控制（UAC）資訊的資訊清單，例如 `<dependentAssembly>` 元素。 若要檢查應用程式資訊清單，您可以使用 Windows Sysinternals [Sigcheck](https://technet.microsoft.com/sysinternals/bb897441.aspx)公用程式。  
   
      如果您的應用程式包含具有 UAC 詳細資料的資訊清單，您必須在不使用 UAC 資訊的情況下重新建立它。 針對 Visual Studio C#中的專案，開啟 [專案屬性]，然後選取 [應用程式] 索引標籤。在 [**資訊清單**] 下拉式清單中，選取 [**建立沒有資訊清單的應用程式**]。 若為 Visual Studio 中的 Visual Basic 專案，請開啟專案屬性、選取 [應用程式] 索引標籤，然後按一下 [**查看 UAC 設定**]。 在開啟的資訊清單檔中，移除單一 `<asmv1:assembly>` 元素內的所有專案。  
   
@@ -125,7 +125,7 @@ ms.locfileid: "74294674"
   
 10. 將部署目錄中的所有檔案複製到部署目的地或媒體。 這可能是網站或 FTP 網站、檔案共用或 CD-ROM 上的資料夾。  
   
-11. 為您的使用者提供安裝應用程式所需的 URL、UNC 或實體媒體。 如果您提供 URL 或 UNC，您必須為使用者提供部署資訊清單的完整路徑。 例如，如果 AppToDeploy 部署至 AppToDeploy 目錄中 http://webserver01/，則完整的 URL 路徑會是 http://webserver01/AppToDeploy/AppToDeploy.application。  
+11. 為您的使用者提供安裝應用程式所需的 URL、UNC 或實體媒體。 如果您提供 URL 或 UNC，您必須為使用者提供部署資訊清單的完整路徑。 例如，如果 AppToDeploy 部署至 AppToDeploy 目錄中 http://webserver01/ ，則完整的 URL 路徑會是 http://webserver01/AppToDeploy/AppToDeploy.application 。  
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>使用 Mageui.exe 圖形化工具部署應用程式  
   
@@ -200,14 +200,14 @@ ms.locfileid: "74294674"
   
 28. 將部署目錄中的所有檔案複製到部署目的地或媒體。 這可能是網站或 FTP 網站、檔案共用或 CD-ROM 上的資料夾。  
   
-29. 為您的使用者提供安裝應用程式所需的 URL、UNC 或實體媒體。 如果您提供 URL 或 UNC，您必須為使用者提供部署資訊清單的完整路徑。 例如，如果 AppToDeploy 部署至 AppToDeploy 目錄中 http://webserver01/，則完整的 URL 路徑會是 http://webserver01/AppToDeploy/AppToDeploy.application。  
+29. 為您的使用者提供安裝應用程式所需的 URL、UNC 或實體媒體。 如果您提供 URL 或 UNC，您必須為使用者提供部署資訊清單的完整路徑。 例如，如果 AppToDeploy 部署至 AppToDeploy 目錄中 http://webserver01/ ，則完整的 URL 路徑會是 http://webserver01/AppToDeploy/AppToDeploy.application 。  
   
 ## <a name="next-steps"></a>後續步驟  
  當您需要部署新版本的應用程式時，請在新版本（例如1.0.0.1）上建立名為的新目錄，然後將新的應用程式檔案複製到新的目錄。 接下來，您必須遵循先前的步驟來建立和簽署新的應用程式資訊清單，並更新和簽署部署資訊清單。 請小心在 Mage.exe `-New` 和 `–Update` 呼叫中指定相同的較高版本，因為 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 只會更新較高的版本，最左邊的整數最重要。 如果您使用 Mageui.exe，可以藉由開啟、選取 [**應用程式參考**] 索引標籤、按一下 [**選取資訊清單**] 按鈕，然後選取已更新的應用程式資訊清單來更新部署資訊清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Mage.exe (資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)   
- [ndptecclick](../deployment/clickonce-application-manifest.md)
+ [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

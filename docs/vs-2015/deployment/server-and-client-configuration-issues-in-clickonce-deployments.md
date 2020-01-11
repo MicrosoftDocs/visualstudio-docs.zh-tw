@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a78fab1986c7fae50bbb4c8149e8f2c89ec4873
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295205"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844990"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "74295205"
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce 和 Proxy 驗證  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 提供從 .NET Framework 3.5 開始的 Windows 整合式 proxy 驗證支援。 不需要特定的 machine.config 指示詞。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 不提供其他驗證通訊協定（例如基本或摘要）的支援。  
   
- 您也可以將修補程式套用至 .NET Framework 2.0，以啟用這項功能。 如需詳細資訊，請參閱 https://go.microsoft.com/fwlink/?LinkId=158730。  
+ 您也可以將修補程式套用至 .NET Framework 2.0，以啟用這項功能。 如需詳細資訊，請參閱 https://go.microsoft.com/fwlink/?LinkId=158730 。  
   
  如需詳細資訊，請參閱[\<defaultProxy > 元素（網路設定）](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f)。  
   
@@ -121,7 +121,7 @@ ms.locfileid: "74295205"
   
 - 如果您建立副檔名為 "*" 且 MIME 類型為 "application/八進位-stream" 的 MIME 類型，則會允許下載已解除封鎖的檔案類型檔案。 （不過，無法下載已封鎖的檔案類型，例如 .aspx 和 .asmx）。  
   
-  如需有關在 Windows Server 上設定 MIME 類型的特定指示，請參閱 Microsoft 知識庫文章 KB326965 「IIS 6.0 不提供未知的 MIME 類型」（位於[https://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](https://support.microsoft.com/default.aspx?scid=kb;en-us;326965)）。  
+  如需有關在 Windows Server 上設定 MIME 類型的特定指示，請參閱 Microsoft 知識庫文章 KB326965 「IIS 6.0 不提供未知的 MIME 類型」（位於[https://support.microsoft.com/default.aspx?scid=kb ; en-us; 326965](https://support.microsoft.com/default.aspx?scid=kb;en-us;326965)）。  
   
 ## <a name="content-type-mappings"></a>內容類型對應  
  透過 HTTP 發佈時，應用程式檔的內容類型（也稱為 MIME 類型）應為 "application/x-ms-應用程式"。 如果您已在伺服器上安裝 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]，就會自動為您設定。 如果未安裝，則您需要為 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式 vroot （或整部伺服器）建立 MIME 類型關聯。  
@@ -133,9 +133,9 @@ ms.locfileid: "74295205"
   
  如果您使用 IIS，您可以輕鬆地啟用 HTTP 壓縮。 不過，當您啟用 HTTP 壓縮時，它只會針對特定檔案類型（也就是 HTML 和文字檔）啟用。 若要啟用元件（.dll）、XML （.xml）、部署資訊清單（. 應用程式）和應用程式資訊清單（.manifest）的壓縮，您必須將這些檔案類型新增至要壓縮的類型清單。 在您將檔案類型新增至部署之前，只會壓縮文字和 HTML 檔案。  
   
- 如需 IIS 的詳細指示，請參閱[如何指定 HTTP 壓縮的其他檔案類型](https://go.microsoft.com/fwlink/?LinkId=178459)。  
+ 如需 IIS 的詳細指示，請參閱[如何指定 HTTP 壓縮的其他檔案類型](https://support.microsoft.com/kb/234497)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  針對[ClickOnce 部署進行疑難排解](../deployment/troubleshooting-clickonce-deployments.md)   
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)

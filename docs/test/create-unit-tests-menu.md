@@ -9,19 +9,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c562d6f750db7096e37b863c46d6330eb484912
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588820"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844310"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用建立單元測試命令來建立單元測試方法虛設常式
 
 **Create Unit Tests** 命令可建立單元測試方法 Stub。 此功能允許輕鬆設定測試專案、測試類別，以及其內的測試方法虛設常式。
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > [建立單元測試] 功能表命令僅供以 .NET Framework 為目標 (非 .NET Core) 的受控程式碼使用。
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> [**建立單元測試**] 功能表命令僅適用于 managed 程式碼。
+::: moniker-end
 
 [建立單元測試] 功能表命令可延伸，並可用來產生 MSTest、MSTest V2、NUnit 和 xUnit 測試。
 

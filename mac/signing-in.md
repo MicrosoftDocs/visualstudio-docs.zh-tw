@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 96a113e21fe2e2e11da0e156ba9578c632e648ae
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983664"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844266"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>登入 Visual Studio for Mac
 
 登入 Visual Studio for Mac 是您[啟用訂用帳戶](enable-subscription.md)的方式。 當您下載 Visual Studio for Mac 時，預設一律會取得 Community 版本。 如果您有 [Professional 或 Enterprise 授權](https://visualstudio.microsoft.com/vs/compare/)，您應該在第一次執行時登入，以解除鎖定任何其他功能。 此外，您還能獲得以下內容：
 
-* **存取 Visual Studio Dev Essentials 方案** - 此方案包含免費的軟體供應項目、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 。
+* **存取 Visual Studio Dev Essentials 方案** - 此方案包含免費的軟體供應項目、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 。
 
 * 系統對於相同帳戶不會再次提示輸入認證，即可在 IDE 中**自動連線到 Azure**。
 

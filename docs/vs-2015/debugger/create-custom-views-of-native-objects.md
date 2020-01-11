@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a510c522723cf991c7a3fff21542a069a3de000a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 63390672b246add079806c68a23b69f0e0132c2d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299485"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850198"
 ---
 # <a name="create-custom-views-of-native-objects"></a>建立原生物件的自訂檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 在偵錯工具變數�
 ## <a name="BKMK_Why_create_visualizations_"></a> 建立 Natvis 視覺化的原因  
  您可以使用 Natvis 架構來為您建立的類型建立視覺化規則，以讓開發人員在偵錯期間便於查看。  
 
- 例如，下圖為偵錯工具中顯示之 [Windows::UI::Xaml::Controls::TextBox](https://go.microsoft.com/fwlink/?LinkId=258422) 類型的變數，其中未套用任何自訂視覺化。  
+ 例如，下圖為偵錯工具中顯示之 [Windows::UI::Xaml::Controls::TextBox](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textbox.aspx) 類型的變數，其中未套用任何自訂視覺化。  
 
  ![TextBox 預設視覺效果](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
 
@@ -171,7 +171,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 在偵錯工具變數�
 
 3. 當使用者在變數視窗中展開類型的成員時，該成員外觀應該為何 ( `Expand` 節點)。  
 
-   **樣板化類別** `Name` 項目的 `Type` 屬性接受星號 `*` 做為可供樣板化類別名稱使用的萬用字元：  
+   **樣板化類別**`Name` 項目的 `Type` 屬性接受星號 `*` 做為可供樣板化類別名稱使用的萬用字元：  
 
 ```xml  
 <Type Name="ATL::CAtlArray&lt;*&gt;">  

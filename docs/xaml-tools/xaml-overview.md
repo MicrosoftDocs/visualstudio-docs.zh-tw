@@ -1,16 +1,16 @@
 ---
 title: XAML 概觀
-ms.date: 07/31/2019
+ms.date: 01/09/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a5f366e81a0ef3c13c3ca1c39ccc3bf44257b6e7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 28f630ccaa126c7d8cfc8870e234111b51e1afd2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592901"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75866141"
 ---
 # <a name="overview-of-xaml"></a>XAML 概觀
 
@@ -33,6 +33,10 @@ XAML 也用來在 [Windows WorkFlow Foundation (WF) 應用程式](/dotnet/framew
 Visual Studio 和 Blend for Visual Studio 提供「XAML 設計工具」，可協助您建置 WPF、UWP 及 Xamarin.Forms 應用程式的使用者介面 (UI)。 您可以從 [工具箱] 或 [資產] 視窗拖曳控制項，然後在 [屬性] 視窗中設定屬性。 當您執行這些動作時，Visual Studio 和 Blend for Visual Studio 會建立對應的 XAML 程式碼。 如果您偏好直接編輯 XAML 程式碼，您也可以那樣做。
 
 本文件集內的文章探討 Visual Studio 和 Blend for Visual Studio 中的「XAML 設計工具」。
+
+## <a name="whats-new"></a>新功能
+
+如需最新資訊，請參閱[XAML 開發人員工具的新功能 Visual Studio 2019 的](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/)blog 文章，或觀看我們最新的影片，也就是 Visual Studio 中的[新 XAML 功能](https://youtu.be/yI9OyA4ZM2E)（在 YouTube 上）。
 
 ## <a name="see-also"></a>請參閱
 

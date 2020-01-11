@@ -22,12 +22,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 158bc4c2fc7734957c7d3e946390ab1339a322ba
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 065a6ae3901f2426db6556cb19e80f543cb8a78f
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299436"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846674"
 ---
 # <a name="accessing-data-in-visual-studio"></a>存取 Visual Studio 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "74299436"
 |SQL Database|DocumentDB|儲存體（blob、資料表、佇列、檔案）|
 |SQL 資料倉儲|SQL Server Stretch Database|StorSimple|
 
- 等等
+ 等等...
 
  **SQL**
 
@@ -55,7 +55,7 @@ ms.locfileid: "74299436"
 |MySQL|Oracle|PostgreSQL|
 |SQLite|||
 
- 等等
+ 等等...
 
  **NoSQL**
 
@@ -65,12 +65,12 @@ ms.locfileid: "74299436"
 |NDatabase|OrientDB|RavenDB|
 |VelocityDB|||
 
- 等等
+ 等等...
 
  許多資料庫廠商和協力廠商都支援 NuGet 套件的 Visual Studio 整合。 您可以在 nuget.org 上探索供應專案，或透過 Visual Studio 中的 NuGet 套件管理員（**工具** > **nuget 套件管理員** > **管理解決方案的 nuget 套件**）。 其他資料庫產品會與 Visual Studio 整合做為擴充功能。   流覽至 [**工具**] > [**擴充功能和更新**]，然後在對話方塊的左窗格中選取 [**線上**]，即可在 Visual Studio 資源庫中流覽這些供應專案。  如需詳細資訊，請參閱[安裝資料庫系統、工具和範例](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 > [!NOTE]
-> SQL Server 2005 的延伸支援已于2016年4月12日結束。   不保證 Visual Studio 2015 和更新版本中的資料工具在此日期之後仍會繼續使用 SQL Server 2005。 如需詳細資訊，請參閱[SQL Server 2005 的終止支援公告](https://www.microsoft.com/sql-server/sql-server-2005)。
+> SQL Server 2005 的延長支援已於 2016 年 4 月 12 日結束。   不保證 Visual Studio 2015 和更新版本中的資料工具在此日期之後仍會繼續使用 SQL Server 2005。 如需詳細資訊，請參閱[SQL Server 2005 的終止支援公告](https://www.microsoft.com/sql-server/sql-server-2005)。
 
 ### <a name="net-languages"></a>.NET 語言
  所有 .NET 資料存取（包括在 .NET Core 中）都是以 ADO.NET 為基礎，這是一組類別，可定義介面來存取任何類型的資料來源（關聯式和非關聯式）。 Visual Studio 有數個與 ADO.NET 搭配使用的工具和設計工具，可協助您連接到資料庫、運算元據，並向使用者呈現資料。 本節中的檔描述如何使用這些工具。 您也可以直接針對 ADO.NET 命令物件進行程式設計。 如需直接呼叫 ADO.NET Api 的詳細資訊，請參閱 MSDN Library 中的[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) 。
@@ -133,7 +133,7 @@ ms.locfileid: "74299436"
 
  [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)描述如何建立資料應用程式，讓開發人員可以針對概念模型進行程式設計，而不是直接針對關係資料庫。
 
- [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)描述如何使用 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 在 web 或內部網路上部署資料服務，以執行[開放式資料通訊協定（OData）](https://go.microsoft.com/fwlink/?LinkID=182204)。
+ [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)描述如何使用 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 在 web 或內部網路上部署資料服務，以執行[開放式資料通訊協定（OData）](https://www.odata.org/)。
 
  [Office 方案中的資料](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a)包含主題的連結，說明資料在 Office 方案中的運作方式。 這包括架構導向的程式設計、資料快取，以及伺服器端資料存取的相關資訊。
 

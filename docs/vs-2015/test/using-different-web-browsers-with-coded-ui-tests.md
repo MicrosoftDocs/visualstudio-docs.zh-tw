@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297962"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851223"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "74297962"
 
  **Requirements**
 
-- Visual Studio Enterprise
+- Visual Studio 企業版
 
 - 作業系統：
 
@@ -95,7 +95,7 @@ ms.locfileid: "74297962"
 
     2. 取消核取 [通用語言執行平台例外狀況] 的 [使用者未處理]。
 
-## <a name="generate"></a> *我在自動程式碼 UI 測試中看不到變更 BrowserWindow.CurrentBrowser 的選項。*
+## <a name="generate"></a>*我在自動程式碼 UI 測試中看不到變更 browserwindow.currentbrowser 的選項。*
  您使用的 [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] 版本可能不支援使用多種 Web 瀏覽器進行自動程式碼 UI 測試。 若要使用自動程式化 UI 測試，您必須使用 Visual Studio 企業版。
 
  *我還應該知道什麼？*
@@ -115,7 +115,7 @@ ms.locfileid: "74297962"
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
-   設定下列值：
+   設定下列的值：
 
   - `EqtTraceLevel` 區段中的`system.diagnostics`。
 
@@ -139,17 +139,17 @@ ms.locfileid: "74297962"
  [針對跨瀏覽器測試失敗問題進行疑難排解](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>指引
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：測試內部](https://msdn.microsoft.com/library/jj159340.aspx)
 
- [使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試](https://go.microsoft.com/fwlink/?LinkID=255196)
+ [使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>常見問題集
- [自動程式碼 UI 測試常見問題集 - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [自動程式碼 UI 測試常見問題集 - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [自動程式碼 UI 測試常見問題集 - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [自動程式碼 UI 測試常見問題集 - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>論壇
- [Visual Studio 使用者介面自動化測試 (包括自動程式碼 UI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio 使用者介面自動化測試 (包括自動程式碼 UI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)[支援的設定和平臺自動程式化 Ui 測試和動作記錄](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)使用自動程式化[ui 測試記錄來分析](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)自動程式化 ui 測試

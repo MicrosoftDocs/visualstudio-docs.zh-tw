@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7452e8394b6397b79c49b9b706db5ba8899351e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 40806f988bec184f2cf880fc373d8fda0634dda1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291178"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850848"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506：為進行程式碼剖析的處理序所配置的最大私用位元組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,15 +34,15 @@ ms.locfileid: "74291178"
 ## <a name="rule-description"></a>規則描述  
  此訊息報告處理序目前已配置的虛擬記憶體最大數量，以位元組 (私用位元組) 為單位。 私用位元組表示只能由處理序內執行的執行緒存取的處理序所配置的虛擬記憶體位置。  
   
- 對於在 32 位元電腦上執行的 32 位元處理序，處理序位址空間之私用部分的上限是 2 GB。 使用 [/3 GB](https://go.microsoft.com/fwlink/?LinkId=177831) Boot.ini 參數，32 位元處理序就可以取得最大 3 GB 的虛擬記憶體。 在 64 位元電腦上執行的 32 位元處理序可以取得高達 4 GB 的私用虛擬記憶體。  
+ 對於在 32 位元電腦上執行的 32 位元處理序，處理序位址空間之私用部分的上限是 2 GB。 使用 [/3 GB](https://msdn.microsoft.com/library/ff556232.aspx) Boot.ini 參數，32 位元處理序就可以取得最大 3 GB 的虛擬記憶體。 在 64 位元電腦上執行的 32 位元處理序可以取得高達 4 GB 的私用虛擬記憶體。  
   
  在 64 位元電腦上執行的 64 位元處理序可以取得高達 8 TB 的私用虛擬記憶體。  
   
  報告的值是所分析的處理序作用中之所有測量間隔的最大值。  
   
- 如需處理序位址空間的詳細資訊，請參閱《Windows 記憶體管理》文件中的[虛擬位址空間 (英文)](https://go.microsoft.com/fwlink/?LinkId=177832) 。  
+ 如需處理序位址空間的詳細資訊，請參閱《Windows 記憶體管理》文件中的[虛擬位址空間 (英文)](https://msdn.microsoft.com/library/aa366912.aspx) 。  
   
 ## <a name="how-to-use-rule-data"></a>如何使用規則資料  
  使用報告的值可比較程式不同版本或組建的效能，或了解不同分析情節中的應用程式效能。  
   
- 處理序私用位元組的最大值，如果接近處理序位址空間可以成長到多大的架構限制，可能會導致記憶體不足的例外狀況。 如需詳細資訊，請參閱 MSDN Magazine 中的[調查記憶體問題 (英文)](https://go.microsoft.com/fwlink/?LinkID=177833)。
+ 處理序私用位元組的最大值，如果接近處理序位址空間可以成長到多大的架構限制，可能會導致記憶體不足的例外狀況。 如需詳細資訊，請參閱 MSDN Magazine 中的[調查記憶體問題 (英文)](https://msdn.microsoft.com/magazine/cc163528.aspx)。

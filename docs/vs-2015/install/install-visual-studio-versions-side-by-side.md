@@ -13,17 +13,17 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a146872561c4be5fe48016c17eb64ad6f854106a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1ef2d51e35a198dbe6da3c1a034dd7c8d1bf8922
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298021"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851018"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>並存安裝 Visual Studio 版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可將此版本的 Visual Studio 安裝在已安裝舊版的電腦上。 如果您遇到安裝失敗的情況，您可以使用 [記錄收集工具](https://go.microsoft.com/fwlink/?LinkId=262077) 收集失敗的資訊，讓您可以偵錯問題。
+您可將此版本的 Visual Studio 安裝在已安裝舊版的電腦上。 如果您遇到安裝失敗的情況，您可以使用 [記錄收集工具](https://www.microsoft.com/download/details.aspx?id=12493) 收集失敗的資訊，讓您可以偵錯問題。
 
 > [!NOTE]
 > 我們建議您以發行的順序來安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 版本。 例如，請先安裝 Visual Studio 2013，再安裝 Visual Studio 2015。
@@ -36,7 +36,7 @@ ms.locfileid: "74298021"
 
 - 如果在已經安裝多個 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的電腦上解除安裝其中一個版本，則會移除所有版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 檔案關聯。 您可以使用 **選項** 對話方塊中，位於 [**環境**] 的 [**一般**] 頁面上的 [還原檔案關聯](../ide/reference/general-environment-options-dialog-box.md) 按鈕來重新對應這些檔案關聯。
 
-- Visual Studio 不會自動升級擴充功能，因為並非所有擴充功能都相容。 您必須從 [Visual Studio Marketplace](https://go.microsoft.com/fwlink/?LinkId=178891) 或軟體發行者重新安裝延伸模組。
+- Visual Studio 不會自動升級擴充功能，因為並非所有擴充功能都相容。 您必須從 [Visual Studio Marketplace](https://visualstudiogallery.msdn.microsoft.com/) 或軟體發行者重新安裝延伸模組。
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework 的版本和並存安裝
 

@@ -1,6 +1,6 @@
 ---
-title: 偵錯 ASP.NET
-description: 使用 Visual Studio 偵錯工具來偵錯 ASP.NET
+title: Debug ASP.NET Core
+description: 使用 Visual Studio 偵錯工具的 Debug ASP.NET Core
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 932c8331b7b706b783868a52e47afc5ead25ef9c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679250"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847879"
 ---
-# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 ASP.NET 進行偵錯
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具的 Debug ASP.NET Core
 
 Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用程式。 本主題提供了解一些基本功能的快速方法。
 
@@ -28,10 +28,10 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 1. 開啟 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **asp.net**，選擇 [範本]，然後選擇 [建立新的 ASP.NET Core Web 應用程式]。 在出現的對話方塊中，選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **asp.net**，選擇 [範本]，然後選擇 [建立新的 ASP.NET Core Web 應用程式]。 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊左窗格的 [Visual C#] 下，選擇 [Web]，然後在中間窗格中選擇 [ASP.NET Core Web 應用程式]。 鍵入 **MyDbgApp** 這類名稱，然後按一下 [確定]。
+    從頂端功能表列中，選擇 [檔案] >  [新增] >  [專案]。 在 [新增專案] 對話方塊左窗格的 [Visual C#] 下，選擇 [Web]，然後在中間窗格中選擇 [ASP.NET Core Web 應用程式]。 鍵入 **MyDbgApp** 這類名稱，然後按一下 [確定]。
 
     在出現的對話方塊中，選擇中間窗格中的 [Web 應用程式]，然後按一下 [確定]。
 
@@ -125,7 +125,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 1. 在 `OnGet` 方法中，按一下 `result.First.Value` 的第二個執行個體，並將 `result.First.Value` 變更為 `result.Last.Value`。
 
-1. 按 **F10** 鍵 (或 [偵錯] > [不進入函式]) 幾次，以繼續進行偵錯工具並執行編輯的程式碼。
+1. 按幾下 **F10** 鍵 (或 [偵錯] > [不進入函式]) ，以繼續進行偵錯工具並執行編輯的程式碼。
 
     ![編輯後繼續](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "編輯後繼續")
 

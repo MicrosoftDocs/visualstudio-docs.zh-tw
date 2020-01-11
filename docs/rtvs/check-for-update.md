@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 107e39e147c62f73c5656f3a398fbca231620c67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c076fb97b3574b5c710814054232b9757e7a77e3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423970"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843739"
 ---
 # <a name="rtvs-current-version"></a>RTVS 目前版本
 
@@ -23,8 +23,8 @@ ms.locfileid: "62423970"
 
 若要更新 Visual Studio 2017 中的 RTVS 版本，請移至 Visual Studio 安裝程式並選取 [更新] 按鈕。
 
-針對 Visual Studio 2015，最新的安裝程式可從 [aka.ms/rtvs-current](https://aka.ms/rtvs-current) 取得 (直接下載)。
+針對 Visual Studio 2015，最新的安裝程式可從 [aka.ms/rtvs-current](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe) 取得 (直接下載)。
 
 請參閱[安裝](installing-r-tools-for-visual-studio.md)以取得 Visual Studio 和 Windows 的需求。
 
-如需 Microsoft R Open 和 Microsoft Machine Learning Server (先前稱為 Microsoft R Server) 的更新，請參閱：[Microsoft R 產品](https://aka.ms/rtvs-msft-r)。
+如需 Microsoft R Open 和 Microsoft Machine Learning Server (先前稱為 Microsoft R Server) 的更新，請參閱 [Microsoft R 產品](https://azure.microsoft.com/?ocid=cloudplat_hp)。

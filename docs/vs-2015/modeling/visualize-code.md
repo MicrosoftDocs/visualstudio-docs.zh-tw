@@ -13,12 +13,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 955103b6d28e90321fb45c23825f0c2a25362208
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9dcb6edf8ce69d48805c3ad8c3c25ef9cc0ed591
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301319"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851349"
 ---
 # <a name="visualize-code"></a>視覺化程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "74301319"
 
   若要查看支援各項功能的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
-## <a name="what-do-you-want-to-do"></a>您想要做什麼事？
+## <a name="what-do-you-want-to-do"></a>請您指定選項。
 
 |||
 |-|-|
@@ -50,9 +50,9 @@ ms.locfileid: "74301319"
 
 |**分類**|**Links**|
 |------------------|---------------|
-|**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格 (英文)](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**技術文件和日誌**|[MSDN 架構論壇](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格](https://blogs.msdn.com/b/visualstudioalm)|
+|**技術文件和日誌**|[MSDN 架構論壇](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [案例：使用視覺化和模型](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)[分析和](../modeling/analyze-and-model-your-architecture.md)模型化架構來變更您[的設計建立模型應用程式](../modeling/create-models-for-your-app.md)[模型使用者需求](../modeling/model-user-requirements.md)[模型應用程式的架構](../modeling/model-your-app-s-architecture.md)[在開發流程中使用模型](../modeling/use-models-in-your-development-process.md)

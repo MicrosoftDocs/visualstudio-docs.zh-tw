@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 01049d5ecf8710cd680278dbf95dbe70767cd5bf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2cedc9f45d2e21684496bd882de4aa74b3bf8b3d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299889"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851072"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>說明檢視器疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74299889"
 
 #### <a name="to-activate-windows-search-service"></a>啟動 Windows Search 服務
 
-1. 啟動伺服器管理員。
+1. 啟動 [伺服器管理員]。
 
 2. 在左瀏覽窗格中，選擇 [角色]。
 
@@ -45,9 +45,9 @@ ms.locfileid: "74299889"
 ## <a name="additional-resources"></a>其他資源
  您可以利用下列資源來取得詳細資訊，並提供 Help Viewer 的相關意見反應：
 
-- 若要提供意見反應，請參閱 Microsoft 網站上的 [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983)，或傳送電子郵件至 [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com)。
+- 若要提供意見反應，請參閱 Microsoft 網站上的 [Microsoft Connect](https://connect.microsoft.com/)，或傳送電子郵件至 [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com)。
 
-- 如需詳細資訊，請參閱[開發人員檔和協助系統](https://go.microsoft.com/fwlink/?LinkId=232741)論壇和[協助專家的](https://go.microsoft.com/fwlink/?LinkId=232743)blog。
+- 如需詳細資訊，請參閱[開發人員檔和協助系統](https://social.msdn.microsoft.com/Forums/en-US/devdocs/threads)論壇和[協助專家的](https://blogs.msdn.com/b/thehelpguy/)blog。
 
-## <a name="see-also"></a>另請參閱
- [Help Viewer 2.1 Administrator Guide](https://go.microsoft.com/fwlink/?LinkId=243985) (說明檢視器 2.1 系統管理員指南)
+## <a name="see-also"></a>請參閱
+ [Help Viewer 2.1 Administrator Guide](https://msdn.microsoft.com/library/hh492077(VS.110).aspx) (說明檢視器 2.1 系統管理員指南)

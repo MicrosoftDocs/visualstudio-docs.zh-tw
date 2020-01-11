@@ -12,14 +12,14 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 25bd88886b6bed447ec7d091543fccdb478db9c5
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bda6d8e20064ab2197408db6b9a55a86325515e8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588875"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846727"
 ---
-# <a name="install-cross-platform-mobile-development-with-c"></a>使用安裝跨平臺行動開發C++
+# <a name="install-cross-platform-mobile-development-with-c"></a>安裝 C++ 的跨平台行動裝置應用程式開發
 
 您可以使用 Visual Studio 中的 C++ 來建置 Windows 傳統型應用程式、通用 Windows 平台 (UWP) 應用程式、Linux 應用程式，現在還可以建立適用於 Android 和 iOS 的應用程式。 「使用 C++ 進行行動開發」工作負載是 Visual Studio 中一組可安裝的元件，其中包括了跨平台 iOS、Android 及 UWP Visual Studio 範本。 它會安裝快速入門所需的跨平台工具和 SDK，讓您無須自行尋找、下載及設定它們。 您可以使用 Visual Studio 中的這些工具來輕鬆建立、編輯、偵錯及測試跨平台專案。 本文說明如何使用 Visual Studio，在中C++安裝開發跨平臺應用程式所需的工具和協力廠商軟體。 如需相關概觀，請參閱 [Visual C++ 跨平台行動開發](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)
 
@@ -48,7 +48,7 @@ ms.locfileid: "72588875"
 
 - 建立適用于 iOS 的程式碼需要 Apple ID、iOS 開發人員計畫帳戶，以及可在 OS X Mavericks （10.9 版）或更新版本上執行[Xcode](https://developer.apple.com/xcode/) 10.2 版或更新版本的 Mac 電腦。 如需安裝步驟連結，請參閱[安裝適用於 iOS 的工具](#install-tools-for-ios)。
 
-- Windows Phone 模擬器需要可執行 Hyper-V 的電腦。 您必須先啟用 Windows 中的 HYPER-V 功能，才能安裝和執行模擬器。 如需詳細資訊，請參閱模擬器的 [系統需求](system-requirements-for-the-visual-studio-emulator-for-android.md)。
+- Windows Phone 模擬器需要可執行 Hyper-V 的電腦。 您必須先啟用 Windows 中的 HYPER-V 功能，才能安裝和執行模擬器。 如需詳細資訊，請參閱模擬器的[系統需求](system-requirements-for-the-visual-studio-emulator-for-android.md)。
 
 ## <a name="get-the-tools"></a>取得工具
 
@@ -117,4 +117,4 @@ Visual Studio 安裝程式包括**具有C++** 工作負載的行動裝置開發�
 ## <a name="see-also"></a>請參閱
 
 - [安裝和設定工具以使用 iOS 進行建置](install-and-configure-tools-to-build-using-ios.md)
-- [Visual C++ 跨平台行動開發](https://go.microsoft.com/fwlink/p/?LinkId=536383)
+- [Visual C++ 跨平台行動開發](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)

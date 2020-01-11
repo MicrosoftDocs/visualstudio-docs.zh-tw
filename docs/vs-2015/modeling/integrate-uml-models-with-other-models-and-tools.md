@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: caecb85392170559a860a7dc334570880d6e76f1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 87d7742c988e0193c8175621a08478b6225c8670
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301476"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850648"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>整合 UML 模型與其他模型及工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ UML 模型可以與其他模型及網域指定的語言整合。
 
    如需詳細資訊，請參閱[定義要擴充 UML 的設定檔](../modeling/define-a-profile-to-extend-uml.md)。
 
-   如需將設定檔與功能表命令和軌跡處理常式一起部署的範例專案，請參閱[範例： UML 設定檔](https://go.microsoft.com/fwlink/?LinkID=213811)。
+   如需將設定檔與功能表命令和軌跡處理常式一起部署的範例專案，請參閱[範例： UML 設定檔](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)。
 
 - **提到.** 您可以將一組字串附加至任何 UML 項目。 您可以撰寫儲存資訊 (例如檔案名稱或其他項目之 GUID) 的程式碼。 不需提供其他定義便可以完成。 使用者無法直接查看參考。
 
-   如需詳細資訊，請參閱[將參考字串附加至 UML 模型](../modeling/attach-reference-strings-to-uml-model-elements.md)專案。 如需範例，請參閱[將 UML 專案連結至圖表或其他](https://go.microsoft.com/fwlink/?LinkId=213813)檔案。
+   如需詳細資訊，請參閱[將參考字串附加至 UML 模型](../modeling/attach-reference-strings-to-uml-model-elements.md)專案。 如需範例，請參閱[將 UML 專案連結至圖表或其他](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)檔案。
 
   將參考編碼至模型項目有兩種方式：
 
 - 目標模型專案的**GUID 和檔案名**，以及包含它的模型，或顯示它的特定圖表。
 
-   如需範例，請參閱[將 UML 專案連結至圖表或其他](https://go.microsoft.com/fwlink/?LinkId=213813)檔案。
+   如需範例，請參閱[將 UML 專案連結至圖表或其他](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)檔案。
 
 - **ModelBus 參考。** ModelBus 是用來建立及解析模型之間參考的架構。 它包含 ModelBus 選擇器，可讓使用者在模型中選取項目。 它也會協助使用者解析因目標模型內的變更而遺失的參考。
 
@@ -61,7 +61,7 @@ UML 模型可以與其他模型及網域指定的語言整合。
 
 1. **VMSDK 規則**可以用來將變更傳播到相同的模型內。
 
-    如需範例，請參閱[將 UML 專案連結至圖表或其他](https://go.microsoft.com/fwlink/?LinkId=213813)檔案。
+    如需範例，請參閱[將 UML 專案連結至圖表或其他](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)檔案。
 
 2. **VMSDK 事件**可以用來傳播模型外的變更，例如，變更連結檔的檔案名，或變更另一個模型中的元素。
 
@@ -71,8 +71,8 @@ UML 模型可以與其他模型及網域指定的語言整合。
 
    如需詳細資訊，請參閱[在模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)和[如何：加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。
 
-## <a name="samples"></a>Samples
- 請參閱程式碼範例將[UML 專案連結至圖表或其他](https://go.microsoft.com/fwlink/?LinkId=213813)檔案。 此範例讓使用者將檔案拖曳到任何 UML 項目，並稍後按兩下檔案項目以開啟檔案。 例如，您可以將活動圖表連結至使用案例項目。 圖示會顯示哪些項目具有連結。
+## <a name="samples"></a>範例
+ 請參閱程式碼範例將[UML 專案連結至圖表或其他](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)檔案。 此範例讓使用者將檔案拖曳到任何 UML 項目，並稍後按兩下檔案項目以開啟檔案。 例如，您可以將活動圖表連結至使用案例項目。 圖示會顯示哪些項目具有連結。
 
  這個程式碼範例會示範下列技術：
 
@@ -96,5 +96,5 @@ UML 模型可以與其他模型及網域指定的語言整合。
 
   如需由 DSL 讀取 UML 模型的範例，請參閱[如何：加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。
 
-## <a name="see-also"></a>另請參閱
- [在模型圖表上定義功能表命令在](../modeling/define-a-menu-command-on-a-modeling-diagram.md)[模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)[如何：加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)[如何：回應 UML 模型中的變更](../misc/how-to-respond-to-changes-in-a-uml-model.md)[範例： uml 設定檔](https://go.microsoft.com/fwlink/?LinkID=213811)將[UML 專案連結至圖表或其他](https://go.microsoft.com/fwlink/?LinkId=213813)檔案
+## <a name="see-also"></a>請參閱
+ [在模型圖表上定義功能表命令在](../modeling/define-a-menu-command-on-a-modeling-diagram.md)[模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)[如何：加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)[如何：回應 UML 模型中的變更](../misc/how-to-respond-to-changes-in-a-uml-model.md)[範例： uml 設定檔](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)將[UML 專案連結至圖表或其他](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)檔案

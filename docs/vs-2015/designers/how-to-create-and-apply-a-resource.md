@@ -12,17 +12,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ab048fe69ca89086e9811e5277dccb86aeee6194
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7d1fba3b956a492740171bf2ad747e980b41df29
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300858"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851970"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何建立和套用資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體中 (稱為資源)。 樣式可讓您設定項目屬性，並重複使用這些設定，以確保多個項目有一致的外觀。 [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) 可以定義控制項的外觀，也可以當作資源來套用。 如需詳細資訊，請參閱[快速入門：設定控制項的樣式](https://go.microsoft.com/fwlink/?LinkID=248239)和[快速入門：控制項範本](https://go.microsoft.com/fwlink/?LinkID=247982)。
+XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體中 (稱為資源)。 樣式可讓您設定項目屬性，並重複使用這些設定，以確保多個項目有一致的外觀。 [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) 可以定義控制項的外觀，也可以當作資源來套用。 如需詳細資訊，請參閱[快速入門：設定控制項的樣式](https://msdn.microsoft.com/library/windows/apps/xaml/hh465381.aspx)和[快速入門：控制項範本](https://msdn.microsoft.com/library/windows/apps/xaml/hh465374.aspx)。
 
  每當您從現有的屬性 ([Style](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx) 或 `ControlTemplate`) 建立新資源時，[建立資源] 對話方塊都可讓您定義應用程式層級、文件層級或元素層級的資源。 這些層級會決定您可以使用資源的位置。 例如，如果您在項目層級定義資源，該資源只能套用至用來建立資源的項目。 您也可以選擇將資源儲存在資源字典中，資源字典是您可以在其他專案中重複使用的個別檔案。
 
@@ -65,7 +65,7 @@ XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體
      > [!NOTE]
      > [編輯範本] 可用來套用控制項範本。 [編輯其他範本] 可用來套用其他範本類型。
 
-     資源可套用至任何相容位置。 例如，筆刷資源可以套用至 **控制項的**Foreground<xref:Windows.UI.Xaml.Controls.TextBox> 屬性。
+     資源可套用至任何相容位置。 例如，筆刷資源可以套用至 <xref:Windows.UI.Xaml.Controls.TextBox> 控制項的 **Foreground** 屬性。
 
 ### <a name="to-edit-a-resource"></a>編輯資源
 
@@ -75,5 +75,5 @@ XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體
 
 3. 修改資源的選項。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

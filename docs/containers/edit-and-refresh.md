@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 48754834295a552e3b189ff05ff2d1c12cd221a3
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: b04f0e7dad4847e654560139f9a3978a4d85685b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400913"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846910"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本機 Docker 容器中的偵錯工具
 
@@ -138,6 +138,6 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>進一步了解 Docker 與 Visual Studio、Windows 和 Azure
 
 * 深入瞭解[使用 Visual Studio 的容器開發](/visualstudio/containers)。
-* 若要建立和部署 Docker 容器，請參閱[Azure Pipelines 的 docker 整合](https://aka.ms/dockertoolsforvsts)。
-* 如需 Windows Server 和 Nano Server 文章的索引，請參閱[windows 容器資訊](https://aka.ms/containers)。
+* 若要建立和部署 Docker 容器，請參閱[Azure Pipelines 的 docker 整合](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker)。
+* 如需 Windows Server 和 Nano Server 文章的索引，請參閱[windows 容器資訊](https://docs.microsoft.com/virtualization/windowscontainers/)。
 * 瞭解[Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/)並參閱[Azure Kubernetes Service 檔](/azure/aks)。

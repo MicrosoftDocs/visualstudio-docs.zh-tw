@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300729"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845525"
 ---
 # <a name="creating-bootstrapper-packages"></a>建立啟動載入器套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,8 +124,8 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 </FileList>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)   
  [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)   
- [使用 Visual Studio 2005 啟動載入器開始進行安裝](https://go.microsoft.com/fwlink/?LinkId=107537)
+ [使用 Visual Studio 2005 啟動載入器開始進行安裝](https://msdn.microsoft.com/magazine/cc163899.aspx)

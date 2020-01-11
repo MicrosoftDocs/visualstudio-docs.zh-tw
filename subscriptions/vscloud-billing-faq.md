@@ -6,19 +6,19 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: 雲端訂用帳戶帳單問題。
-ms.openlocfilehash: 12ff77a052e54520885642cb3cd6ed1dea31506b
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491270"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851415"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 雲端訂閱帳單常見問題集
 請務必[比較雲端訂閱權益和定價](https://visualstudio.microsoft.com/vs/pricing/)，利用雲端與標準 Visual Studio 訂閱之間的比較、訂閱者權益的詳細資料以及其他更多，了解每個 Visual Studio 訂用帳戶的權益。
 
 ## <a name="general-purchasing-questions"></a>一般購買問題
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-using-a-purchase-order"></a>問：是否可以使用訂單購買 Visual Studio 雲端訂閱？
-答：不需要。 所有的 Visual Studio 雲端訂閱都必須使用 Azure 訂用帳戶購買。 (請把它想像為您的 Azure 計費帳戶。)
+答：沒有。 所有的 Visual Studio 雲端訂閱都必須使用 Azure 訂用帳戶購買。 (請把它想像為您的 Azure 計費帳戶。)
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>問：什麼類型的 Azure 訂用帳戶可以用來購買 Visual Studio 雲端訂閱？
 答：可以使用大部分 Azure 訂用帳戶；我們支援連線至 [Enterprise 合約 (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/) 的 Azure 訂用帳戶、雲端解決方案提供者 (CSP) 所設定的 Azure 訂用帳戶、透過 Microsoft Open License 轉銷商所設定的 Azure 訂用帳戶，以及隨用隨付 Azure 訂用帳戶。
@@ -37,7 +37,7 @@ ms.locfileid: "74491270"
 您需要從目前連結到您登入之 Azure 訂用帳戶提供的清單中選取 Azure 訂用帳戶 (這是計費帳戶)。
 因為 Azure 訂用帳戶的名稱預設為計費帳戶類型 (「隨用隨付方案」、「Enterprise 合約」等等)，Azure 訂用帳戶是否屬於 Enterprise 合約通常很清楚。
 
-另一個方法是嘗試瀏覽 [Azure 企業版入口網站](https://ea.azure.com)。  如果您可以成功連線，您即有企業系統管理員或帳戶擁有者角色。 只有帳戶擁有者可以在 Enterprise 合約中設定新的 Azure 計費帳戶。 如果您無法存取 Azure 企業版入口網站，請在組織內詢問，找到您的企業系統管理員，然後要求該人員將您新增為 Azure 企業版入口網站的帳戶擁有者。  如果您找不到這位人員，您可以[提交支援票證](https://aka.ms/AzureEntSupport)並要求連絡資訊。  支援票證需要有您組織的名稱和您的 Enterprise 合約註冊號碼。
+另一個方法是嘗試瀏覽 [Azure 企業版入口網站](https://ea.azure.com)。  如果您可以成功連線，您即有企業系統管理員或帳戶擁有者角色。 只有帳戶擁有者可以在 Enterprise 合約中設定新的 Azure 計費帳戶。 如果您無法存取 Azure 企業版入口網站，請在組織內詢問，找到您的企業系統管理員，然後要求該人員將您新增為 Azure 企業版入口網站的帳戶擁有者。  如果您找不到這位人員，您可以[提交支援票證](https://support.microsoft.com/supportrequestform/cf791efa-485b-95a3-6fad-3daf9cd4027c)並要求連絡資訊。  支援票證需要有您組織的名稱和您的 Enterprise 合約註冊號碼。
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>問：是否可以使用 Enterprise 合約的 Azure 預付金購買 Visual Studio 雲端訂閱？
 答：不行，預付金不適合購買 Visual Studio 雲端訂閱。 當您選擇用為您的 EA 建立的 Azure 訂用帳戶購買 Visual Studio 雲端訂閱時，費用會出現在您下一次的「超額」發票上。 通常是每月一次，但因部分 EA 客戶的歷程記錄規則，超額發票可能幾個月都不會發出。 請洽詢您的 EA 授權專家，您是否需要知道哪些額外購買數量 (即不適合使用 Azure 預付金購買的項目) 會觸發超額發票。

@@ -11,20 +11,20 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 9a95cd84ede6befded37f9d875535f39846de50a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 12f94605ee6a1f4e4cc0142e6dd59ec02ed619c9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291052"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849946"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>從伺服器總管存取 Azure 虛擬機器
 
-如果您有 Azure 主控的虛擬機器，您可以在 [伺服器總管] 中存取它們。 您必須先登入您的 Azure 訂用帳戶，才能檢視您的行動服務。 若要登入，請在 [伺服器總管] 中開啟 [Azure] 節點的捷徑功能表，並選擇 [連線到 Microsoft Azure]。
+若您已有虛擬機器由 Azure 託管，即可從 [伺服器總管] 存取這些虛擬機器。 您必須先登入您的 Azure 訂用帳戶，才能檢視您的行動服務。 若要登入，請在 [伺服器總管] 中開啟 [Azure] 節點的捷徑功能表，並選擇 [連線到 Microsoft Azure]。
 
 1. 在 Cloud Explorer 中選擇虛擬機器，然後選擇 F4 鍵以顯示其屬性視窗。
 
-    下表顯示可以使用的屬性，但他們全部都是唯讀。 若要加以變更，請使用 [Azure 入口網站](https://go.microsoft.com/fwlink/p/?LinkID=525040)。
+    下表顯示可以使用的屬性，但他們全部都是唯讀。 若要加以變更，請使用 [Azure 入口網站](https://portal.azure.com/)。
 
    | 屬性 | 描述 |
    | --- | --- |
@@ -32,10 +32,10 @@ ms.locfileid: "74291052"
    | 環境 |若是虛擬機器，這個屬性的值一定是 [生產]。 |
    | Name |虛擬機器的名稱。 |
    | 大小 |虛擬機器的大小，此值會反映可用的記憶體和磁碟空間數量。 如需詳細資訊，請參閱[虛擬機器大小](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs)。 |
-   | 狀態 |值包括 [啟動中]、[已啟動]、[停止中]、[已停止] 和 [正在擷取狀態]。 如果出現 [正在擷取狀態]，則目前狀態是未知的。 這個屬性的值不同於 [Azure 入口網站](https://go.microsoft.com/fwlink/p/?LinkID=525040)上所使用的值。 |
-   | SubscriptionID |Azure 帳戶的訂用帳戶識別碼。 您可以透過檢視訂用帳戶的屬性，在 [Azure 入口網站](https://go.microsoft.com/fwlink/p/?LinkID=525040)上顯示這項資訊。 |
-2. 選擇端點節點，然後檢視 [**屬性**] 視窗。
-3. 下表說明可用的端點屬性，但他們全部都是唯讀。 若要新增或編輯虛擬機器的端點，請使用 [Azure 入口網站](https://go.microsoft.com/fwlink/p/?LinkID=525040)。 
+   | Status |值包括 [啟動中]、[已啟動]、[停止中]、[已停止] 和 [正在擷取狀態]。 如果出現 [正在擷取狀態]，則目前狀態是未知的。 這個屬性的值不同於 [Azure 入口網站](https://portal.azure.com/)上所使用的值。 |
+   | 訂用帳戶 ID |Azure 帳戶的訂用帳戶識別碼。 您可以透過檢視訂用帳戶的屬性，在 [Azure 入口網站](https://portal.azure.com/)上顯示這項資訊。 |
+2. 選擇端點節點，然後檢視 [屬性] 視窗。
+3. 下表說明可用的端點屬性，但他們全部都是唯讀。 若要新增或編輯虛擬機器的端點，請使用 [Azure 入口網站](https://portal.azure.com/)。 
 
    | 屬性 | 描述 |
    | --- | --- |

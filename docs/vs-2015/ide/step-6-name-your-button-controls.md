@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ebe3813ad01566e2994b0a16b4a3fdc735de8c8c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d4d703dbe28776cd93c7a438fc457d9f50ac4f7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295705"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851121"
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名您的按鈕控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "74295705"
 
  表單上有四個按鈕，IDE 將它們分別命名為 **button1**、 **button2**、 **button3**及 **button4**。 只從目前的名稱來看，並無法得知哪一個按鈕才是 [關閉] 按鈕，以及哪一個是 [顯示圖片] 按鈕。 這就是為按鈕控制項指定更具資訊性名稱會很有用的原因。
 
- ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 3](https://go.microsoft.com/fwlink/?LinkId=205213)或[教學課程1：使用C# -影片3建立圖片檢視器](https://go.microsoft.com/fwlink/?LinkId=205202)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 3](https://msdn.microsoft.com/vbasic/gg315354.aspx)或[教學課程1：使用C# -影片3建立圖片檢視器](https://msdn.microsoft.com/vcsharp/gg278411.aspx)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ### <a name="to-name-your-button-controls"></a>命名您的按鈕控制項
 
@@ -58,7 +58,7 @@ ms.locfileid: "74295705"
 6. 若要再加入一個方法，在 [Windows Forms 設計工具] 中開啟 CheckBox 控制項的程式碼檔案，讓 IDE 加入 `checkBox1_CheckedChanged()` 方法。 每當使用者選取或清除核取方塊時就會呼叫該方法。
 
     > [!NOTE]
-    > 在設計程式時，您通常會在程式碼編輯器和 [Windows Forms 設計工具] 之間移動。 IDE 可讓您在專案中輕鬆巡覽。 使用 [方案總管] 開啟 [Windows Forms 設計工具]\(在 Visual C# 中按兩下 [Form1.cs] 或在 Visual Basic 中按兩下 [Form1.vb] )，或是在功能表列上選擇 [檢視]、[設計工具]。
+    > 在設計程式時，您通常會在程式碼編輯器和 [Windows Forms 設計工具] 之間移動。 IDE 可讓您在專案中輕鬆巡覽。 使用 [方案總管] 開啟 [Windows Forms 設計工具] (在 Visual C# 中按兩下 [Form1.cs] 或在 Visual Basic 中按兩下 [Form1.vb] )，或是在功能表列上選擇 [檢視]、[設計工具]。
 
      下列顯示您在程式碼編輯器中看到的新程式碼。
 
@@ -73,7 +73,7 @@ ms.locfileid: "74295705"
 
      當您建置程式時，名稱很重要，而方法 (包括事件處理常式) 則可以具有您想要的任何名稱。 當您使用 IDE 加入事件處理常式時，IDE 會根據控制項的名稱和所處理的事件來建立名稱。 例如，名稱為 **showButton** 按鈕的 Click 事件稱為 `showButton_Click()` 事件處理常式方法。 此外，方法名稱後面通常會加上左括弧和右括弧 ()，以表示目前所討論的是方法。 如果您決定要變更程式碼變數名稱，請用滑鼠右鍵按一下程式碼中的變數，然後選擇 [重構]、[重新命名]。 會重新命名該變數在程式碼中的所有執行個體。 如需詳細資訊，請參閱[重新命名重構（C#）](../csharp-ide/rename-refactoring-csharp.md)或[重構和重新命名對話方塊](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)。
 
-### <a name="to-continue-or-review"></a>繼續或檢視
+### <a name="to-continue-or-review"></a>若要繼續或檢視
 
 - 若要移到下一個教學課程步驟，請參閱[步驟 7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)。
 

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3a17275730cd093f8f9fa433aa28c7f9ca86e80
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 02ab48e2fcd014508277a9bc361cde65d62ef38c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298143"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850783"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "74298143"
 
  有效值： ""，不因文化特性而異，這是預設值。
 
- 以 xx-XX 字串形式表示的文化特性。 例如，en-US、ja-JP、de-CH、de-DE。 如需詳細資訊，請參閱 <xref:System.Globalization.CultureInfo?displayProperty=fullName>。
+ 以 xx-XX 字串形式表示的文化特性。 例如，en-US、ja-JP、de-CH、de-DE。 如需詳細資訊，請參閱<xref:System.Globalization.CultureInfo?displayProperty=fullName>。
 
  culture 屬性會指定當運算式區塊轉換為文字時所要使用的文化特性。
 
@@ -211,7 +211,7 @@ This is the common footer.
 
  如果是設計階段文字範本，您可指定任何衍生自 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> 的基底類別。 使用 `<#@assembly#>` 指示詞，可以載入包含基底類別的組件或專案。
 
- 如需詳細資訊，請參閱 Gareth 的 Blog 中的「[文字模板中的繼承](https://go.microsoft.com/fwlink/?LinkId=208373)」。
+ 如需詳細資訊，請參閱 Gareth 的 Blog 中的「[文字模板中的繼承](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/)」。
 
 ## <a name="linepragmas-attribute"></a>LinePragmas 屬性
  範例：`linePragmas="false"`

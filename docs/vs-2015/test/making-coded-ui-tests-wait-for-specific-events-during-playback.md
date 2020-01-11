@@ -8,21 +8,21 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 266c4fd418b71c61391ac3b9b20ac93e5c77428c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dbc83731cfc1c04f33fc4de05f28ffd1a54f3e4d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302547"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851778"
 ---
-# <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>讓自動程式碼 UI 測試在播放期間等候特定事件
+# <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>讓自動程式化 UI 測試在播放期間等候特定事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請使用下表所述的適當 UITestControl.WaitForControlXXX() 方法。 如需使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> 方法等待啟用控制項的自動程式化 UI 測試範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
  **Requirements**
 
- Visual Studio Enterprise
+ Visual Studio 企業版
 
 > [!TIP]
 > 您也可以使用自動程式化 UI 測試編輯器，以新增動作之前的延遲。 如需詳細資訊，請參閱[如何：使用自動程式化 UI 測試編輯器，在 UI 動作前插入延遲](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)。
@@ -109,7 +109,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
  **指引**
 
- 如需詳細資訊，請參閱[使用 Visual Studio 2012 測試持續傳遞 – 第 5 章：自動化系統測試 (英文)](https://go.microsoft.com/fwlink/?LinkID=255196)
+ 如需詳細資訊，請參閱[使用 Visual Studio 2012 測試持續傳遞 – 第 5 章：自動化系統測試 (英文)](https://msdn.microsoft.com/library/jj159335.aspx)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)[建立](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)自動程式化 ui 測試[逐步解說：建立、編輯及維護](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)自動程式化 UI 測試的自動程式化 UI 測試結構自動[程式化 ui 測試和動作記錄](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)[的](../test/anatomy-of-a-coded-ui-test.md)設定和平臺作法：使用自動程式[代碼 ui 測試編輯器，在 UI 動作前插入延遲](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

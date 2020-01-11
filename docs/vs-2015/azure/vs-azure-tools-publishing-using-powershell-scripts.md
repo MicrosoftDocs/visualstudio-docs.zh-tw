@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5af4fc76fa20148495ca44cc7e9b74d4b95ecb7c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a6d6611c8ce8bdb09023794b5eca029b6b972afb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298107"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849981"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 指令碼來發佈開發與測試環境
 
@@ -24,15 +24,15 @@ ms.locfileid: "74298107"
 
 使用這些指令碼，您可以佈建網站的自訂版本 (也稱為開發和測試環境)，以做臨時使用。 例如，您可以在 Azure 虛擬機器上或網站的預備位置上設定網站的特定版本，以執行測試套件、重現錯誤、測試錯誤修正、試驗提議的變更，或設定用來進行示範或展示的自訂環境。 在建立用來發佈專案的指令碼後，您可以視需要重新執行指令碼來重建相同環境，或對 Web 應用程式的自有組建執行指令碼以建立用於測試的自訂環境。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
 
-* Azure SDK 2.3 或更新版本。 請參閱 [Visual Studio 下載](https://go.microsoft.com/fwlink/?LinkID=624384)。 (要產生 Web 專案的指令碼並不需要用到 Azure SDK。 這項功能是供 Web 專案使用，而非供雲端服務中的 Web 角色使用。)
+* Azure SDK 2.3 或更新版本。 請參閱 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)。 (要產生 Web 專案的指令碼並不需要用到 Azure SDK。 這項功能是供 Web 專案使用，而非供雲端服務中的 Web 角色使用。)
 * Azure PowerShell 0.7.4 或更新版本。 請參閱 [如何安裝和設定 Azure PowerShell](/powershell/azure/overview)。
 * [Windows PowerShell 3.0](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control) 或更新版本。
 
 ## <a name="additional-tools"></a>其他工具
 
-我們有提供其他工具和資源，以供您在 Visual Studio 中使用 PowerShell 進行 Azure 開發。 請參閱 [PowerShell Tools for Visual Studio](https://go.microsoft.com/fwlink/?LinkId=404012)。
+我們有提供其他工具和資源，以供您在 Visual Studio 中使用 PowerShell 進行 Azure 開發。 請參閱 [PowerShell Tools for Visual Studio](https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597)。
 
 ## <a name="generating-the-publish-scripts"></a>產生發佈指令碼
 
@@ -40,7 +40,7 @@ ms.locfileid: "74298107"
 
 ## <a name="scripts-that-visual-studio-generates"></a>Visual Studio 所產生的指令碼
 
-Visual Studio 會產生一個解決方案層級的資料夾 (稱為 **PublishScripts**)，其中包含兩個 Windows PowerShell 檔案、您的虛擬機器或網站的發行指令碼，以及含有指令碼中可用函數的模組。 Visual Studio 也會產生 JSON 格式的檔案，以指定您要部署之專案的詳細資料。
+Visual Studio 會產生名為 **PublishScripts** 的方案層級資料夾，並內含兩個 Windows PowerShell 檔案，一個是用於虛擬機器或網站的發佈指令碼，一個是含有可在指令碼中使用之函式的模組。 Visual Studio 也會產生 JSON 格式的檔案，以指定您要部署之專案的詳細資料。
 
 ### <a name="windows-powershell-publish-script"></a>Windows PowerShell 發佈指令碼
 
@@ -52,7 +52,7 @@ Visual Studio 所產生的 Windows PowerShell 模組包含發佈指令碼所使�
 
 ### <a name="json-configuration-file"></a>JSON 組態檔
 
-JSON 檔案建立於 **Configurations** 資料夾中，而且包含可明確指定要部署至 Azure 資源的組態資料。 Visual Studio 所產生之檔案的名稱是 project-name-WAWS-dev.json (如果您建立網站) 或 project name-VM-dev.json (如果您建立虛擬機器)。 以下是建立網站時所產生之 JSON 組態檔的範例。 其中大多數的值都簡單易懂。 網站名稱是由 Azure 產生，因此可能不符合您的專案名稱。
+JSON 檔案建立在 [組態] 資料夾，其包含的組態資料可確切指定要部署至 Azure 的資源。 Visual Studio 所產生之檔案的名稱是 project-name-WAWS-dev.json (如果您建立網站) 或 project name-VM-dev.json (如果您建立虛擬機器)。 以下是建立網站時所產生之 JSON 組態檔的範例。 其中大多數的值都簡單易懂。 網站名稱是由 Azure 產生，因此可能不符合您的專案名稱。
 
 ```json
 {
@@ -154,9 +154,9 @@ JSON 檔案建立於 **Configurations** 資料夾中，而且包含可明確指�
 
 1. 建立專案的 Web Deploy 封裝。 Web Deploy 封裝是經過壓縮的封存檔 (.zip 檔案)，內含您想要複製到網站或虛擬機器的檔案。 您可以在 Visual Studio 中為任何 Web 應用程式建立 Web Deploy 封裝。
 
-   ![建立 Web Deploy 封裝](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
+   ![建立 Web 部署封裝](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Web 部署封裝](https://msdn.microsoft.com/library/dd465323.aspx)。 您也可以自動建立 Web Deploy 套件，如[自訂和擴充發佈指令碼](#customizing-and-extending-the-publish-scripts)中所述。
+   如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Web 部署封裝](https://msdn.microsoft.com/library/dd465323.aspx)。 您也可以自動建立 Web Deploy 套件，如[自訂和擴充發佈指令碼](#customizing-and-extending-the-publish-scripts)中所述。
 
 1. 在 [方案總管] 中，開啟指令碼的內容功能表，然後選擇 [以 PowerShell ISE 開啟]。
 1. 如果第一次在此電腦上執行 Windows PowerShell 指令碼，請以系統管理員權限開啟命令提示字元視窗，並輸入下列命令：
@@ -244,7 +244,7 @@ JSON 檔案建立於 **Configurations** 資料夾中，而且包含可明確指�
     }
     ```
 
-1. 以下列程式碼取代 `New-WebDeployPackage`，並取代建構 `$msbuildCmd` 的程式行中的預留位置。 此程式碼適用于 Visual Studio 2015。 如果您使用的是 Visual Studio 2017，請將**VisualStudioVersion**屬性變更為 `15.0` （`12.0` 以進行 Visual Studio 2013）。
+1. 以下列程式碼取代 `New-WebDeployPackage`，並取代建構 `$msbuildCmd` 的程式行中的預留位置。 此程式碼係用於 Visual Studio 2015。 如果您使用的是 Visual Studio 2017，請將**VisualStudioVersion**屬性變更為 `15.0` （`12.0` 以進行 Visual Studio 2013）。
 
     ```powershell
     function New-WebDeployPackage
@@ -252,7 +252,7 @@ JSON 檔案建立於 **Configurations** 資料夾中，而且包含可明確指�
         #Write a function to build and package your web application
     ```
 
-    若要建置 Web 應用程式，使用 MsBuild.exe。 如需說明，請參閱下列網址中的 MSBuild 命令列參考：[http://go.microsoft.com/fwlink/?LinkId=391339](https://go.microsoft.com/fwlink/?LinkId=391339)
+    若要建置 Web 應用程式，使用 MsBuild.exe。 如需說明，請參閱下列網址中的 MSBuild 命令列參考：[http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -319,7 +319,7 @@ return $WebDeployPackage
 | Add-AzureVM |建立 Azure 虛擬機器並傳回所部署 VM 的 URL。 函式會設定必要條件，然後呼叫 **New-AzureVM** 函式 (Azure 模組) 以建立新的虛擬機器。 |
 | Add-AzureVMEndpoints |將新的輸入端點加入至虛擬機器，並傳回具有新端點的虛擬機器。 |
 | Add-AzureVMStorage |在目前的訂用帳戶中建立新的 Azure 儲存體帳戶。 帳戶名稱開頭是 "devtest"，後面接著唯一的英數字元字串。 此函式會傳回新儲存體帳戶的名稱。 指定新儲存體帳戶的位置或同質群組。 |
-| Add-AzureWebsite |使用指定的名稱和位置建立網站。 此函式會呼叫 Azure 模組中的 **New-AzureWebsite** 函式。 如果訂用帳戶還沒有具有指定名稱的網站，此函式會建立該網站並傳回網站物件。 否則它會傳回 `$null`。 |
+| Add-AzureWebsite |使用指定的名稱和位置建立網站。 此函式會呼叫 Azure 模組中的 **New-AzureWebsite** 函式。 如果訂用帳戶還沒有具有指定名稱的網站，此函式會建立該網站並傳回網站物件。 否則，它會傳回 `$null`。 |
 | Backup-Subscription |在指令碼範圍的 `$Script:originalSubscription` 變數中儲存目前的 Azure 訂用帳戶。 此函式會在指令碼範圍中，儲存目前的 Azure 訂用帳戶 (由 `Get-AzureSubscription -Current` 取得) 與其儲存體帳戶，以及此指令碼所變更的訂用帳戶 (儲存在 `$UserSpecifiedSubscription` 變數中) 與其儲存體帳戶。 透過儲存這些值，您可以使用函式 (例如 `Restore-Subscription`) 將原始的目前訂用帳戶和儲存體帳戶還原為目前狀態 (如果目前狀態已變更)。 |
 | Find-AzureVM |取得指定的 Azure 虛擬機器。 |
 | Format-DevTestMessageWithTime |在訊息前面加上日期和時間。 此函式是專為寫入 Error 和 Verbose 串流的訊息所設計。 |
