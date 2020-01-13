@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850475"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918872"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>定義要擴充 UML 的設定檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,8 @@ ms.locfileid: "75850475"
 7. 建置 Visual Studio 擴充功能，方法是建置擴充功能專案或壓縮所有檔案 (如前面小節所述)。
 
 ## <a name="Schema"></a>設定檔的結構
- UML 設定檔的 XSD 檔案可以在下列範例中找到：[設定造型和設定檔 xsd](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)。 為了協助您編輯設定檔，請將 `.xsd` 檔案安裝在下列位置：
+
+ 為了協助您編輯設定檔，請將 `.xsd` 檔案安裝在下列位置：
 
  **%ProgramFiles%\Microsoft Visual Studio [版本] \Xml\Schemas**
 
@@ -365,4 +366,5 @@ ms.locfileid: "75850475"
 6. 重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。
 
 ## <a name="see-also"></a>請參閱
- [將造型加入 uml 模型](../modeling/add-stereotypes-to-uml-model-elements.md)專案[使用設定檔和造型標準造型自訂模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)範例：依造型[為](../modeling/standard-stereotypes-for-uml-models.md) [uml 元素著色](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)[範例：設定造型、設定檔 XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [將造型加入 uml 模型](../modeling/add-stereotypes-to-uml-model-elements.md)專案使用[適用于 uml 模型的](../modeling/standard-stereotypes-for-uml-models.md)[設定檔和造型標準造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)
+ 

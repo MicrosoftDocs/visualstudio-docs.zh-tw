@@ -9,19 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 023559143a526732cb92bd72e06e19147261fba7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850687"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916791"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：擴充網域指定的語言設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以對用來編輯 DSL 定義的設計工具建立延伸模組。 您可以進行的延伸模組類型包括新增功能表命令、新增拖曳和按兩下筆勢的處理常式，以及當特定類型的值或關聯性變更時所觸發的規則。 延伸模組可以封裝為 Visual Studio 整合擴充功能（VSIX），並散發給其他使用者。
-
- 如需有關此功能的範例程式碼和詳細資訊，請參閱 Visual Studio[視覺效果和模型 SDK （VMSDK）網站](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)。
 
 ## <a name="setting-up-the-solution"></a>設定解決方案
  設定專案，其中包含擴充功能的程式碼，以及匯出專案的 VSIX 專案。 您的方案可以包含併入相同 VSIX 中的其他專案。

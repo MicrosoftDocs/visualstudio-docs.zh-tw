@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 2d7081fc7531c8c1c1fcf13564f9f90bc9964f17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 008dd927f38c7fd79996bde39531e256314f2e24
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849991"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917350"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>如何管理服務設定與設定檔
 ## <a name="overview"></a>概觀
@@ -80,7 +80,7 @@ ms.locfileid: "75849991"
    
     [目標設定檔] 清單中隨即出現新的設定檔。
 6. 在 [目標設定檔] 清單中，選取您剛建立的設定檔。 [發佈精靈] 設定會填入您所選設定檔中的選項。
-7. 選取 [上一步] 和 [下一步] 按鈕以顯示「發佈精靈」的每個頁面，然後自訂此設定檔的設定。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) 。
+7. 選取 [上一步] 和 [下一步] 按鈕以顯示「發佈精靈」的每個頁面，然後自訂此設定檔的設定。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](vs-azure-tools-publish-azure-application-wizard.md) 。
 8. 自訂完設定之後，選取 [下一步] 以返回「設定」頁面。 當您使用這些設定來發佈服務，或是選取設定檔清單旁邊的 [儲存] 時，就會儲存設定檔。
 
 ### <a name="to-rename-or-delete-a-profile"></a>重新命名或刪除設定檔
@@ -93,9 +93,9 @@ ms.locfileid: "75849991"
 ### <a name="to-change-a-profile"></a>變更設定檔
 1. 開啟 Azure 專案的捷徑功能表，然後選取 [發佈]。
 2. 在 [目標設定檔] 清單中，選取您要變更的設定檔。
-3. 選取 [上一步] 和 [下一步] 按鈕以顯示「發佈精靈」的每個頁面，然後變更您想要的設定。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) 。
+3. 選取 [上一步] 和 [下一步] 按鈕以顯示「發佈精靈」的每個頁面，然後變更您想要的設定。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](vs-azure-tools-publish-azure-application-wizard.md) 。
 4. 變更完設定之後，選取 [下一步] 以返回 **「設定」** 頁面。
 5. (選擇性) 選取 [發佈] 以使用新設定來發佈雲端服務。 如果您不想在此時發佈雲端服務，而關閉 [發佈精靈]，Visual Studio 會詢問您是否要將變更儲存至設定檔。
 
 ## <a name="next-steps"></a>後續步驟
-若要了解如何從 Visual Studio 設定 Azure 專案的其他部分，請參閱 [設定 Azure 專案](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address?view=vs-2019)
+若要了解如何從 Visual Studio 設定 Azure 專案的其他部分，請參閱 [設定 Azure 專案](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)

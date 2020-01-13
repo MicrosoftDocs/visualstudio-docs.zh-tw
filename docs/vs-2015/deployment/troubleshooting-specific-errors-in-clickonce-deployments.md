@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a27a2fc17f9d3450a20596d53695070bd84f0f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 81bb9bcecf37d2ed3fca29a4edc57738732de1a5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850605"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917283"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>疑難排解 ClickOnce 部署的特定錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ ms.locfileid: "75850605"
  如果您使用 URL 發行，請確定目的地電腦已啟用 FrontPage Server Extensions。  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>錯誤訊息：無法建立網站 '\<網站 > '。 未安裝與 FrontPage Server Extensions 通訊的元件。  
- 請確定您已在要發佈的電腦上安裝 Microsoft Visual Studio Web Authoring Component。 若為 Express 使用者，預設不會安裝此元件。 如需詳細資訊，請參閱 [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/kb/945358/en-us)。  
+ 請確定您已在要發佈的電腦上安裝 Microsoft Visual Studio Web Authoring Component。 若為 Express 使用者，預設不會安裝此元件。  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>錯誤訊息：找不到檔案 ' Microsoft. Windows. 通用控制項，版本 = 6.0.0.0，Culture = *，PublicKeyToken = 6595b64144ccf1df，ProcessorArchitecture =\*，類型 = win32 '  
  當您嘗試發行已啟用視覺樣式的 WPF 應用程式時，會出現此錯誤訊息。 若要解決此問題，請參閱[如何：發行已啟用視覺化樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)。  

@@ -11,12 +11,12 @@ caps.latest.revision: 58
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ff31b8e2812968b1757bb6e7b0aa822c6a90903
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0662506ab9ea19a033e6af2a26b495725fe5b838
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851042"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918091"
 ---
 # <a name="visual-studio-samples"></a>Visual Studio Samples
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ ms.locfileid: "75851042"
 |區域圖|描述|
 |----------|-----------------|
 |[Windows 開發人員中心範例](https://code.msdn.microsoft.com/windowsapps/)|示範如何開發 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式。|
-|[.NET Framework 範例](https://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|顯示使用 C# 和 Visual Basic 之 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 的各種層面。|
-|[C# 範例](https://docs.microsoft.com/samples/browse/?languages=csharp)|示範如何使用 C# 的不同功能。|
-|[Visual Basic 範例](https://docs.microsoft.com/samples/browse/?languages=vb)|示範如何使用 Visual Basic 的不同功能。|
-|[F# 範例](https://docs.microsoft.com/samples/browse/?languages=fsharp)|示範如何使用 F# 的不同功能。|
-|[JavaScript 範例](https://docs.microsoft.com/samples/browse/?languages=javascript)|示範如何使用 JavaScript 中的不同功能。|
-|[C++ 範例](https://docs.microsoft.com/samples/browse/?languages=cpp)|示範如何使用 C++ 中的不同功能。|
-|[DirectX 範例](https://docs.microsoft.com/samples/browse/?products=xbox)|示範如何使用 DirectX。|
-|[Office 程式開發範例](https://docs.microsoft.com/samples/browse/?products=office)|示範如何在 Visual Studio 中使用 Office 開發工具。 如需最新範例，請參閱 [MSDN 開發人員範例：透過程式碼來了解](https://code.msdn.microsoft.com/site/search?query=vsto&f%5B1%5D.Value=vsto&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=11.0&f%5B0%5D.Type=VisualStudioVersion&f%5B0%5D.Text=Visual Studio 11&ac=8)。|
+|[.NET Framework 範例](/samples/browse/?products=dotnet)|顯示使用 C# 和 Visual Basic 之 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 的各種層面。|
+|[C# 範例](/samples/browse/?languages=csharp)|示範如何使用 C# 的不同功能。|
+|[Visual Basic 範例](/samples/browse/?languages=vb)|示範如何使用 Visual Basic 的不同功能。|
+|[F# 範例](/samples/browse/?languages=fsharp)|示範如何使用 F# 的不同功能。|
+|[JavaScript 範例](/samples/browse/?languages=javascript)|示範如何使用 JavaScript 中的不同功能。|
+|[C++ 範例](/samples/browse/?languages=cpp)|示範如何使用 C++ 中的不同功能。|
+|[DirectX 範例](/samples/browse/?products=xbox)|示範如何使用 DirectX。|
+|[Office 程式開發範例](/samples/browse/?products=office)|示範如何在 Visual Studio 中使用 Office 開發工具。 |
 |[VSSDK 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)|示範如何擴充 Visual Studio。|
 
 ## <a name="see-also"></a>請參閱

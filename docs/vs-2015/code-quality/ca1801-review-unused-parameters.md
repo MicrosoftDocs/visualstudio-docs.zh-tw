@@ -16,23 +16,23 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: caf1ec865d604545940b0a5442947ef61bd60f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5789b514d645fc670acf9307e4714c160c3b4c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671535"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918178"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801：必須檢閱未使用的參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新檔，請參閱[ca1801 必須：審查未使用的參數](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)。
+如需 Visual Studio 的最新檔，請參閱[ca1801 必須：審查未使用的參數](/visualstudio/code-quality/ca1801-review-unused-parameters)。
 
 |||
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|Category|Microsoft。使用方式|
+|分類|Microsoft。使用方式|
 |中斷變更|不中斷-如果在元件外部看不到成員，不論您所做的變更為何。<br /><br /> 不中斷-如果您變更成員，以在其主體內使用參數。<br /><br /> 中斷-如果您移除參數，而且它在元件外部是可見的。|
 
 ## <a name="cause"></a>原因
@@ -42,13 +42,13 @@ ms.locfileid: "72671535"
 
 - 當做事件處理常式使用的方法。
 
-- 使用 `abstract` （在 Visual Basic 中 `MustOverride`）修飾詞宣告的方法。
+- 使用 `abstract` （在 Visual Basic 中`MustOverride`）修飾詞宣告的方法。
 
-- 使用 `virtual` （在 Visual Basic 中 `Overridable`）修飾詞宣告的方法。
+- 使用 `virtual` （在 Visual Basic 中`Overridable`）修飾詞宣告的方法。
 
-- 使用 `override` （在 Visual Basic 中 `Overrides`）修飾詞宣告的方法。
+- 使用 `override` （在 Visual Basic 中`Overrides`）修飾詞宣告的方法。
 
-- 使用 `extern` （Visual Basic 中的 `Declare` 語句）修飾詞宣告的方法。
+- 使用 `extern` （Visual Basic 中的`Declare` 語句）修飾詞宣告的方法。
 
 ## <a name="rule-description"></a>規則描述
  請參閱未在方法主體中使用之非虛擬方法中的參數，以確保不會有任何正確性存在於無法存取的情況。 未使用的參數會產生維護和效能成本。

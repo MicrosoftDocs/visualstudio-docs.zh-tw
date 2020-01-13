@@ -11,17 +11,17 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b55100fa6aaf74dee6277db2a079a0a908dc265c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: adfd23cfcee69ef3242545f6d0680d7316be8156
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851057"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917697"
 ---
 # <a name="talk-to-us"></a>告訴我們
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新檔，請參閱告訴[我們](https://docs.microsoft.com/visualstudio/ide/feedback-options)。
+如需 Visual Studio 的最新檔，請參閱告訴[我們](/visualstudio/ide/feedback-options)。
 
 我們想要知道您對於我們改善說明文件的看法。 我們無法一一回應，但我們會確保您的意見傳達至適當的人員。
 

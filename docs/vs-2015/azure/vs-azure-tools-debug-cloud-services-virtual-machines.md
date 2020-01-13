@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: a22d16606cad7ecbfcf3862d6b7e85b65e7aafe4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ac1f47d3daabf800a308d73727f750f971ace4e6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850401"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919157"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>在 Visual Studio 中進行 Azure 雲端服務或虛擬機器的偵錯
 
@@ -50,7 +50,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 如果您啟用雲端服務的遠端偵錯，它不會出現效能降低或產生其他費用。 不要對生產環境服務使用遠端偵錯，因為這可能會對正在使用該服務的用戶端造成不良影響。
 
 > [!NOTE]
-> 從 Visual Studio 發佈雲端服務時，您可以為該服務中以 .NET Framework 4 或 .NET Framework 4.5 為目標的任何角色啟用 **IntelliTrace** 。 藉由使用 **IntelliTrace**，您可以檢查角色執行個體在過去發生的事件，並重現當時的情況。 請參閱[使用 IntelliTrace 和 Visual Studio 偵錯發佈的雲端服務](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019)和[使用 IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx)。
+> 從 Visual Studio 發佈雲端服務時，您可以為該服務中以 .NET Framework 4 或 .NET Framework 4.5 為目標的任何角色啟用 **IntelliTrace** 。 藉由使用 **IntelliTrace**，您可以檢查角色執行個體在過去發生的事件，並重現當時的情況。 請參閱[使用 IntelliTrace 和 Visual Studio 偵錯發佈的雲端服務](vs-azure-tools-intellitrace-debug-published-cloud-services.md)和[使用 IntelliTrace](../debugger/intellitrace.md)。
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>啟用雲端服務的遠端偵錯
 
@@ -150,7 +150,7 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
     > [!NOTE]
     > 如果您尚未登入，系統會要求您登入 Azure 帳戶。
 
-3. 選取虛擬機器的各種設定，然後選取 [確定]。 如需詳細資訊，請參閱 [虛擬機器](https://docs.microsoft.com/previous-versions/azure/jj156003(v=azure.100)?redirectedfrom=MSDN) 。
+3. 選取虛擬機器的各種設定，然後選取 [確定]。 如需詳細資訊，請參閱 [虛擬機器](/previous-versions/azure/jj156003(v=azure.100)) 。
 
     您在 [DNS 名稱] 中輸入的名稱將會成為虛擬機器的名稱。
 
@@ -188,6 +188,6 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
 
 ## <a name="next-steps"></a>後續步驟
 
-* 使用 **IntelliTrace** 從發行伺服器收集呼叫和事件的記錄檔。 請參閱 [使用 IntelliTrace 和 Visual Studio 偵錯發佈的雲端服務](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019)。
+* 使用 **IntelliTrace** 從發行伺服器收集呼叫和事件的記錄檔。 請參閱 [使用 IntelliTrace 和 Visual Studio 偵錯發佈的雲端服務](vs-azure-tools-intellitrace-debug-published-cloud-services.md)。
 
 * 不論角色是在開發環境中或在 Azure 中執行，請使用 **Azure 診斷** 來記錄在角色內執行的程式碼的詳細資訊。 請參閱 [使用 Azure 診斷收集記錄資料](https://msdn.microsoft.com/library/gg433048.aspx)。

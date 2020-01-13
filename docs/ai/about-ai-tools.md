@@ -10,18 +10,18 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 497287e2f281a5884ba50a850169770f6750bbed
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777454"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915962"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
 Visual Studio Tools for AI 是建置、測試及部署深度學習/ AI 解決方案的延伸模組。 它與 Azure Machine Learning 緊密整合以取得強大的測試功能，包括 (但不限於) 將資料準備和模型定型作業明確提交至不同的計算目標。 此外，它也提供自訂計量的支援並執行歷程記錄追蹤，以便進行資料科學重現與稽核。 符合企業需求的共同作業，可安全地與其他人共同處理專案。
 
-立即使用 [Microsoft Cognitive Toolkit (CNTK)](https://docs.microsoft.com/cognitive-toolkit/)、[Google TensorFlow](https://www.tensorflow.org) 或其他深度學習架構，來開始進行深度學習。
+立即使用 [Microsoft Cognitive Toolkit (CNTK)](/cognitive-toolkit/)、[Google TensorFlow](https://www.tensorflow.org) 或其他深度學習架構，來開始進行深度學習。
 
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>開發、偵錯及部署深度學習模型和 AI 解決方案
 立即使用 Visual Studio 的生產力功能，來加速 AI 創新。 使用內建程式碼編輯器功能，例如語法醒目顯示、IntelliSense 和文字自動格式化。 您可以透過逐步偵錯區域變數和模型，以互動方式來測試您本機環境中的深度學習應用程式。

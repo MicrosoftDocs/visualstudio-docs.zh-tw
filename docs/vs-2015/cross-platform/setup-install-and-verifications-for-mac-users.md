@@ -6,12 +6,12 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 703ee752a9f16f0abc5e4813707890a6d17947af
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 5a3a05e50cfa17432bb2f31274c9b62c6b843687
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538945"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917952"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>針對 Mac 使用者的設定、安裝和驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "74538945"
   
 2. 從 [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) 下載並安裝 Xcode。  
   
-3. 遵循 [安裝和設定 Xamarin.iOS](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (xamarin.com) 上的指示，下載並安裝 Xamarin。  
+3. 遵循 [安裝和設定 Xamarin.iOS](/xamarin/ios/get-started/installation/mac) (xamarin.com) 上的指示，下載並安裝 Xamarin。  
   
 4. 當您在 Windows 和 Mac 電腦上完成安裝 Xamarin 之後，請依照[使用 XMA 連線到 Mac (英文)](/xamarin/ios/get-started/installation/windows/connecting-to-mac) (xamarin.com) 上的指示執行，如此就能在 Windows 電腦上透過 Visual Studio 使用 iOS 和 Mac。  
   
@@ -112,7 +112,7 @@ ms.locfileid: "74538945"
   
    - 如果您收到錯誤，指出「安裝的 Android SDK 太舊」，請在該訊息中按一下 [開啟 Android SDK]，然後選取可用的最新 SDK 版本。 請注意，您必須以系統管理員身分執行 Visual Studio，來更新 SDK。  
   
-3. 驗證您可以從 Visual Studio 連接到 Mac 上所安裝的模擬器。  這項驗證的結果是您會在模擬器清單中看見 Xamarin Player，您可以從 Visual Studio 中選取此項目以進行偵錯。  若要這樣做，請遵循 [將 Visual Studio 連接到 Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com) 上的指示。  
+3. 驗證您可以從 Visual Studio 連接到 Mac 上所安裝的模擬器。  這項驗證的結果是您會在模擬器清單中看見 Xamarin Player，您可以從 Visual Studio 中選取此項目以進行偵錯。  若要這樣做，請遵循 [將 Visual Studio 連接到 Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com) 上的指示。  
   
    **iOS**  
   

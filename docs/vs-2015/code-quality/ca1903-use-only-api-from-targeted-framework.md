@@ -15,23 +15,23 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7dec130e4a4704bea347f94ff57d354a4465ddd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fa0d771d99ac8e7a4f4091db90a607cce970bc38
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604970"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917820"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903：只使用來自目標架構的 API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新檔，請參閱[CA1903：僅使用來自目標架構的 API](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework)。
+如需 Visual Studio 的最新檔，請參閱[CA1903：僅使用來自目標架構的 API](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework)。
 
 |||
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|Category|Microsoft 可攜性|
+|分類|Microsoft 可攜性|
 |中斷變更|中斷-針對外部可見成員或類型的簽章引發。<br /><br /> 非中斷-在方法的主體中引發時。|
 
 ## <a name="cause"></a>原因

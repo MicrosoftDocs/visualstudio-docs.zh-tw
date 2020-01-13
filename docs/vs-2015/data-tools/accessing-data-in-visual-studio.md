@@ -22,12 +22,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 065a6ae3901f2426db6556cb19e80f543cb8a78f
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d2b716bb4e6119c76f593ff067784f360cb48187
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846674"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917032"
 ---
 # <a name="accessing-data-in-visual-studio"></a>存取 Visual Studio 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "75846674"
 ### <a name="net-languages"></a>.NET 語言
  所有 .NET 資料存取（包括在 .NET Core 中）都是以 ADO.NET 為基礎，這是一組類別，可定義介面來存取任何類型的資料來源（關聯式和非關聯式）。 Visual Studio 有數個與 ADO.NET 搭配使用的工具和設計工具，可協助您連接到資料庫、運算元據，並向使用者呈現資料。 本節中的檔描述如何使用這些工具。 您也可以直接針對 ADO.NET 命令物件進行程式設計。 如需直接呼叫 ADO.NET Api 的詳細資訊，請參閱 MSDN Library 中的[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) 。
 
- 如需與 ASP.NET 特別相關的資料存取檔，請參閱使用 ASP.NET 網站上的[資料](https://docs.microsoft.com/aspnet/web-forms/overview/presenting-and-managing-data/)。 如需搭配使用 Entity Framework 與 ASP.NET MVC 的教學課程，請參閱[使用 mvc 5 的 Entity Framework 6 Code First 消費者入門](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
+ 如需與 ASP.NET 特別相關的資料存取檔，請參閱使用 ASP.NET 網站上的[資料](/aspnet/web-forms/overview/presenting-and-managing-data/)。 如需搭配使用 Entity Framework 與 ASP.NET MVC 的教學課程，請參閱[使用 mvc 5 的 Entity Framework 6 Code First 消費者入門](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 
  或 Visual Basic 中C#的通用 WINDOWS 平臺（UWP）應用程式可以使用 Microsoft Azure SDK for .NET 來存取 Azure 儲存體和其他 Azure 服務。 HttpClient 類別可讓您與任何 RESTful 服務進行通訊。 如需詳細資訊，請參閱[如何使用 Windows 連接至 HTTP 伺服器](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)。
 

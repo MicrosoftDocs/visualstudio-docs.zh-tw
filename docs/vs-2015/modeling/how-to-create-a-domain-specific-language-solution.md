@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f4c5bd99c47517156f1ec89de9da1a163223b99a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: e17171b79e06a273e9a9f4bb5032781963e8d818
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850441"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918828"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：建立網域指定的語言方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "75850441"
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
+|Visual Studio Visualization and Modeling SDK|[模型 SDK 下載](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>建立特定領域語言方案
 
@@ -127,7 +127,7 @@ ms.locfileid: "75850441"
 
  **使用現有的強式名稱金鑰**如果您想要整合 DSL 與另一個元件，請使用此選項。
 
- 如需強式命名的詳細資訊，請參閱[建立和使用強式名稱的元件](https://docs.microsoft.com/dotnet/standard/assembly/create-use-strong-named?redirectedfrom=MSDN)。
+ 如需強式命名的詳細資訊，請參閱[建立和使用強式名稱的元件](/dotnet/standard/assembly/create-use-strong-named)。
 
 ## <a name="see-also"></a>請參閱
- [如何定義特定領域語言的](../modeling/how-to-define-a-domain-specific-language.md)[網域特定語言工具詞彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [如何定義特定領域語言的](../modeling/how-to-define-a-domain-specific-language.md)[網域特定語言工具詞彙](/previous-versions/bb126564(v=vs.100))

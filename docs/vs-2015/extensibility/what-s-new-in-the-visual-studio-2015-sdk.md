@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6735f929f52387f4cb40406d6918894e72bb40d3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d47e40a5c38eeb7898aa179282fa55bbe17ef1d5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299680"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917336"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Visual Studio&#39;2015 SDK 的新功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Visual Studio SDK 具有下列適用于 Visual Studio 2015、Visual Studio 2015 
  從 Visual Studio 2015 SDK 開始，視您使用的程式語言而定，您有不同的建立擴充功能選項。
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# 和 Visual Basic
- 針對C#和 Visual Basic，有完整範圍的專案專案範本，可讓您建立 vspackage、功能表命令、工具視窗、編輯器分類器、編輯器裝飾和編輯器邊界延伸模組。 您可以將任何或全部新增至標準 VSIX 專案。 如需詳細資訊，請參閱：
+ 針對C#和 Visual Basic，有完整範圍的專案專案範本，可讓您建立 vspackage、功能表命令、工具視窗、編輯器分類器、編輯器裝飾和編輯器邊界延伸模組。 您可以將任何或全部新增至標準 VSIX 專案。 如需詳細資訊，請參閱＜＞。
 
 - [建立具有功能表命令的擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -56,7 +56,7 @@ Visual Studio SDK 具有下列適用于 Visual Studio 2015、Visual Studio 2015 
  針對C++，VSPackage Wizard 支援功能表命令、工具視窗和自訂編輯器。 在**Visual C++ /** 擴充性的 [**新增專案**] 對話方塊中尋找它。
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>VS SDK 透過 NuGet 參考元件
- 若要增加擴充性專案的可攜性和共用，您可以使用 VS SDK 參考元件的 NuGet 版本。  這些適用于[VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)所發佈的[nuget.org](https://www.nuget.org/) ，而且可以透過 [Visual Studio**參考/管理 nuget 封裝**] 對話方塊，輕鬆地新增至您的專案或方案。 您可以將個別參考加入至特定的擴充性元件，或使用 VS SDK[元封裝](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)一次加入所有 VS sdk 參考元件。 若要深入瞭解 NuGet，請參閱[Nuget 總覽](https://docs.microsoft.com/nuget/)和[使用對話方塊管理 nuget 套件](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)。
+ 若要增加擴充性專案的可攜性和共用，您可以使用 VS SDK 參考元件的 NuGet 版本。  這些適用于[VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)所發佈的[nuget.org](https://www.nuget.org/) ，而且可以透過 [Visual Studio**參考/管理 nuget 封裝**] 對話方塊，輕鬆地新增至您的專案或方案。 您可以將個別參考加入至特定的擴充性元件，或使用 VS SDK[元封裝](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)一次加入所有 VS sdk 參考元件。 若要深入瞭解 NuGet，請參閱[Nuget 總覽](/nuget/)和[使用對話方塊管理 nuget 套件](/nuget/consume-packages/install-use-packages-visual-studio)。
 
  當您使用 VS SDK 參考元件的 NuGet 版本時，另一位使用者不需要安裝 VS SDK 即可開啟和建立您的專案。  NuGet 參考元件和 VS SDK build tools 會自動安裝在電腦上，以供該專案之用。
 

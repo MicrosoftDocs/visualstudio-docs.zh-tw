@@ -9,14 +9,14 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f68328fb243c00c43c8ef454f10ad94c7d004a4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7dc2ba585c500fe045d143a2b8baa2d193466fdf
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296785"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917790"
 ---
-# <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
+# <a name="work-with-multiple-user-accounts"></a>使用多個使用者帳戶
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果您有多個 Microsoft 帳戶及 (或) 工作或學校的帳戶，可以將它們全部加入 Visual Studio，這樣就可以存取所有帳戶的資源，而無須各別登入每個帳戶。 Visual Studio 2015 RTM 之後，Azure、Application Insights、Team Foundation Server 和 Office 365 服務即可支援經簡化的登入體驗。 日後也可能會提供其他服務。
@@ -56,7 +56,7 @@ ms.locfileid: "74296785"
 
  ![ASP.NET 的 [變更驗證] 對話方塊](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
- 如需 ASP.NET 中各種驗證方式的詳細資訊，請參閱 [在 Visual Studio 2013 中建立 ASP.NET Web 專案](https://docs.microsoft.com/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (此驗證相關資訊仍與 Visual Studio 2015 有關)。
+ 如需 ASP.NET 中各種驗證方式的詳細資訊，請參閱 [在 Visual Studio 2013 中建立 ASP.NET Web 專案](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (此驗證相關資訊仍與 Visual Studio 2015 有關)。
 
 ### <a name="access-your-visual-studio-team-services-account"></a>存取 Visual Studio Team Services 帳戶
  從主要功能表依序選擇 [小組] > [連線到 Team Foundation Server]，以顯示 [Team Explorer] 視窗。 按一下 [選取 Team 專案]，然後在 [選取 Team Foundation Server]底下的清單方塊中，應該會看到您的 Visual Studio Team Services 帳戶的 URL。 如果選取 URL，不必重新輸入認證即可登入。

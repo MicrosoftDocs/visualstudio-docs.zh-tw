@@ -6,17 +6,17 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 134ed47d26fb7afb50bb50ac18418b436a563eb6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 98925402b91bea62e10b47312e7834ed92a1a178
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297581"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918745"
 ---
 # <a name="verify-your-xamarin-environment"></a>驗證您的 Xamarin 環境
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-安裝程式完成之後 (請參閱 [Setup and install](../cross-platform/setup-and-install.md))，請花幾分鐘的時間來確認一切就緒，以便體驗 Xamarin 開發。  
+安裝程式完成之後 (請參閱[設定和安裝](../cross-platform/setup-and-install.md))，請花幾分鐘的時間來確認一切就緒，以便體驗 Xamarin 開發。  
   
  完成這些驗證之後，您就能執行下列一或兩個逐步解說：  
   
@@ -50,16 +50,16 @@ ms.locfileid: "74297581"
   
     - 根據您的目標 Android 版本選取適當的模擬器；如果您已將 Android 開發裝置連接到電腦，也會在此處看到該裝置列於模擬器一旁：  
   
-        - Windows 8 及更新版本：如下所示，在 Visual Studio 的 [偵錯] 下拉式清單中選取 [VS Emulator] 目標，然後按 **F5**鍵啟動偵錯工具。 如需詳細資訊，請參閱 [Visual Studio Emulator for Android 簡介](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (Visual Studio ALM 部落格)。 若在讓模擬器運作時發生問題，請參閱 [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。 您也可以選取 [工具] > [Android 版 Visual Studio 模擬器...]，為模擬器建立新的裝置設定檔。  
+        - Windows 8 及更新版本：如下所示，在 Visual Studio 的 [偵錯] 下拉式清單中選取 [VS Emulator] 目標，然後按 **F5**鍵啟動偵錯工具。 如需詳細資訊，請參閱 [Visual Studio Emulator for Android 簡介](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (Visual Studio ALM 部落格)。 如果在讓模擬器運作時發生問題，請參閱[進行 Android 版 Visual Studio 模擬器的疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。 您也可以選取 [工具] > [Android 版 Visual Studio 模擬器...]，為模擬器建立新的裝置設定檔。  
   
              ![選取 Android 的 Visual Studio 模擬器做為 debug 目標](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin 驗證3")  
   
              注意︰如果沒看見 [工具] > [Android 版 Visual Studio 模擬器...] 功能表選項，您可能並未安裝該模擬器。 移至 [控制台] > [程式和功能]、選取 [Microsoft Visual Studio]，然後按一下 [變更] 以重新執行安裝程式。 按一下安裝程式中的 [修改]、核取 [跨平台行動開發] > [Android 版 Microsoft Visual Studio 模擬器] 的核取方塊，然後按一下 [更新]。  
   
-        - Windows 7 及舊版：在下拉式清單中改選取 [Xamarin Player for Android]，然後按 F5 鍵執行。 如需 Xamarin Player、其裝置管理員和疑難排解提示的詳細資訊，請閱讀 [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com)。  
+        - Windows 7 及舊版：在下拉式清單中改選取 [Xamarin Player for Android]，然後按 F5 鍵執行。 如需 Xamarin Player、其裝置管理員和疑難排解提示的詳細資訊，請閱讀 [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com)。  
   
 > [!NOTE]
-> 在 Visual Studio 中，您可能會發現工具列中有 Android Emulator Manager (AVD) 按鈕 (如下所示)，這會開啟特別用來設定 Google Android 模擬器的裝置管理員。  這對 Visual Studio Emulator for Android 或 Xamarin Player 不會有影響，這兩者會有各自用來設定設定檔的裝置管理員。  如需詳細資訊，請參閱 [Visual Studio Emulator for Android 簡介](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (Visual Studio ALM 部落格) 和 [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com)。  
+> 在 Visual Studio 中，您可能會發現工具列中有 Android Emulator Manager (AVD) 按鈕 (如下所示)，這會開啟特別用來設定 Google Android 模擬器的裝置管理員。  這對 Visual Studio Emulator for Android 或 Xamarin Player 不會有影響，這兩者會有各自用來設定設定檔的裝置管理員。  See [Introducing Visual Studio’s Emulator for Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (Visual Studio ALM blog) and [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com) for details.  
 > ![CrossPlat Xamarin 驗證 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin Verify 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  
@@ -78,7 +78,7 @@ ms.locfileid: "74297581"
   
 ## <a name="ios"></a>iOS  
   
-1. 請確定您的 Mac 在網路上可用並搭配 Visual Studio，如 [Connecting to the Mac (連接到 Mac)](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (xamarin.com) 中所述。  
+1. 請確定您的 Mac 在網路上可用並搭配 Visual Studio，如 [Connecting to the Mac (連接到 Mac)](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (xamarin.com) 中所述。  
   
 2. 驗證分鏡腳本設計工具：在方案總管的 iOS 專案中，開啟 **Main.storyboard** 檔案。 在此，Visual Studio 會裝載在 Mac 上遠端執行的設計工具。  
   
@@ -94,7 +94,7 @@ ms.locfileid: "74297581"
   
          ![選取 iPhone debug 目標](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin 驗證6")  
   
-    4. 如果您在連接到 Mac 時發生問題，請閱讀 [連接疑難排解](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting) (xamarin.com)。  
+    4. 如果您在連接到 Mac 時發生問題，請閱讀 [連接疑難排解](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting) (xamarin.com)。  
   
     5. 如果您看到錯誤指出「沒有安裝的佈建設定檔符合安裝的 iOS 簽署金鑰」，請執行下列動作：  
   
@@ -104,7 +104,7 @@ ms.locfileid: "74297581"
   
         - 確認在 [iOS 套件組合簽署] 索引標籤的 iOS 專案屬性中，使用中偵錯組態的 [自訂權益] 欄位是空的。  注意：如果遇到上述錯誤訊息，只能嘗試移除此設定。  
   
-## <a name="missing"></a> 沒有 Xamarin 專案範本嗎？ 試試這個  
+## <a name="missing"></a> 沒有 Xamarin 專案範本嗎？ 請嘗試這樣做  
  如果您是從 Xamarin 網站直接安裝 Xamarin，且以並存方式安裝 Visual Studio 2013 和 Visual Studio 2015，則可能會遺漏範本。 不過此問題很容易修正：只要在 Xamarin 安裝程式中啟用 [Xamarin for Visual Studio 2015] 功能即可。  
   
 1. 在 [控制台] 中開啟 [程式和功能]，選擇 [Xamarin] 項目，然後按一下 [變更]。  

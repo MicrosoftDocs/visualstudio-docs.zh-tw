@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f78e129d64b313de7bada3c72a449f1fb2aece
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849936"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918583"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "75849936"
  在此範例專案中，範本會讀取範例 XML 檔案，並產生對應到每個節點類型的類別。 在手動撰寫的程式碼中，您可以使用這些類別來巡覽 XML 檔案。 您也可以在使用相同節點類型的任何其他檔案上執行應用程式。 範例 XML 檔案的目的是要提供您想要應用程式處理之所有節點類型的範例。
 
 > [!NOTE]
-> [隨附的應用程式](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以從 XML 檔案產生強類型類別。 這裡示範的範本僅當成範例使用。
+> [隨附的應用程式](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以從 XML 檔案產生強類型類別。 這裡示範的範本僅當成範例使用。
 
  以下是範例檔案：
 

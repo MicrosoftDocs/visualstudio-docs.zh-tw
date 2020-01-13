@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846354"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918632"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office 中 COM、VSTO 及 VBA 增益集的開發最佳作法
   如果您要開發適用于 Office 的 COM、VSTO 或 VBA 增益集，請遵循本文中所述的開發最佳作法。   這將有助於確保：
@@ -61,7 +61,7 @@ ms.locfileid: "75846354"
 
 若要提供 Office 用戶端應用程式（例如 Word 或 Excel）的支援聲明，請先確認您的增益集是在目前的 Office 版本中執行，然後在您的增益集于未來的版本中時，認可以提供更新。 當 Microsoft 發行新組建或 Office 更新時，您不需要測試增益集。 Microsoft 很少會變更 Office 中的 COM、VSTO 和 VBA 擴充性平臺，而且這些變更將會妥善記載。
 
->重要事項： Microsoft 會針對就緒性報告和 ISV 連絡人資訊，維護一份支援的增益集清單。 若要列出您的增益集，請參閱[https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows)。
+>重要事項： Microsoft 會針對就緒性報告和 ISV 連絡人資訊，維護一份支援的增益集清單。 若要列出您的增益集，請參閱[/configmgr/desktop-analytics/ready-for-windows](/configmgr/desktop-analytics/ready-for-windows)。
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>使用進程監視器來協助偵測安裝或載入問題
 如果您的增益集在安裝或載入期間發生相容性問題，它們可能與檔案或登錄存取的問題有關。 使用[進程監視器](/sysinternals/downloads/procmon)或類似的偵錯工具，針對工作環境記錄和比較行為，以協助識別問題。

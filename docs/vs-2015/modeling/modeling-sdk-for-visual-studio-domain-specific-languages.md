@@ -12,12 +12,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0673f7511276799804dc327bab67637f3fc450b7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 4907838720e3a68614e4b9774eb2d7e9fb42ff20
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850103"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916531"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - 網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +42,6 @@ ms.locfileid: "75850103"
 
 ## <a name="samples-and-the-latest-information"></a>範例和最新資訊
  [下載 Visual Studio 2015 的模型 SDK](https://www.microsoft.com/download/details.aspx?id=48148)
-
- Visual Studio 適用于模型化 SDK 的[範例](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)。
 
  如需有關 advanced 技術和疑難排解的指引，請造訪[VISUAL STUDIO DSL & 模型化工具](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)擴充性論壇。
 

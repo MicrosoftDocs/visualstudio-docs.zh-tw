@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0c001ec8310759309c88c49c37050516b110b81
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850797"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917319"
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 
@@ -34,7 +34,7 @@ ms.locfileid: "75850797"
 
 #### <a name="to-divide-an-application-into-layers"></a>將應用程式分割到各圖層
 
-1. 以應用程式結構為方案結構的基礎，例如 Web 應用程式、服務應用程式或桌面應用程式。 [Microsoft 應用程式架構指南中的應用程式 archetype 中](https://docs.microsoft.com/previous-versions/msp-n-p/ee658107(v=pandp.10)?redirectedfrom=MSDN)會討論各種常見的架構。
+1. 以應用程式結構為方案結構的基礎，例如 Web 應用程式、服務應用程式或桌面應用程式。 [Microsoft 應用程式架構指南中的應用程式 archetype 中](/previous-versions/msp-n-p/ee658107(v=pandp.10))會討論各種常見的架構。
 
 2. 建立 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案，我們稱之為架構方案。 這個方案會用以建立系統的整體設計。 它包含模型，但不含程式碼。
 

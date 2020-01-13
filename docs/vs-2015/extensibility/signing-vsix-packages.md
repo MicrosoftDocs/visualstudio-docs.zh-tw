@@ -14,12 +14,12 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b74222804e9ed42e6f8263cbe6ad0daf19cda81f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a4efaaa78ce593d8b97d1df454a9c30c2e62d9f8
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300322"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918730"
 ---
 # <a name="signing-vsix-packages"></a>簽署 VSIX 套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "74300322"
   
 1. 將您的 VSIX 新增至專案。  
   
-2. 以滑鼠右鍵按一下方案總管中的專案節點，然後選取 [**新增&#124; ] [管理 NuGet 套件**]。  如需 NuGet 和新增 NuGet 套件的詳細資訊，請參閱[Nuget 總覽](https://docs.microsoft.com/nuget/)和[使用對話方塊管理 nuget 套件](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)。  
+2. 以滑鼠右鍵按一下方案總管中的專案節點，然後選取 [**新增&#124; ] [管理 NuGet 套件**]。  如需 NuGet 和新增 NuGet 套件的詳細資訊，請參閱[Nuget 總覽](/nuget/)和[使用對話方塊管理 nuget 套件](/nuget/consume-packages/install-use-packages-visual-studio)。  
   
 3. 從 VisualStudioExtensibility 搜尋 VSIXSignTool 並安裝 NuGet 套件。  
   
@@ -48,5 +48,5 @@ ms.locfileid: "74300322"
   
    VSIXSignTool .exe sign/f \<certfile >/p \<密碼 > \<VSIXfile >  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)

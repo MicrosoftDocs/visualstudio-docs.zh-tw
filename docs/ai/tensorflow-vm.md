@@ -10,20 +10,20 @@ ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: adb3720f1624f355b99d75bfe446fafab1c5e0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427542"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915832"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>在雲端中定型 TensorFlow 模型
 
-在本教學課程中，我們將在 Azure [深度學習](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview)虛擬機器上，使用 [MNIST 資料集](http://yann.lecun.com/exdb/mnist/)來定型 TensorFlow 模型。
+在本教學課程中，我們將在 Azure [深度學習](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview)虛擬機器上，使用 [MNIST 資料集](http://yann.lecun.com/exdb/mnist/)來定型 TensorFlow 模型。
 
 MNIST 資料庫具有 60,000 個範例的定型集，以及 10,000 個手寫數字範例的測試集。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
 開始之前，請確定您已安裝並設定下列項目：
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>設定 Azure 深度學習虛擬機器
@@ -31,7 +31,7 @@ MNIST 資料庫具有 60,000 個範例的定型集，以及 10,000 個手寫數�
 > [!NOTE]
 > 將 [OS 類型] 設定為 Linux。
 
-您可以在[這裡](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm)找到設定深度學習虛擬機器的指示。
+您可以在[這裡](/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm)找到設定深度學習虛擬機器的指示。
 
 ### <a name="remove-comment-in-parens"></a>移除括弧中的註解
 

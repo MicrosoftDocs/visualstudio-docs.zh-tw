@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 96df8bbf1c991b98571a427a5118374cd6f3ba3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d7099eb47007b1fc657164d085e8a5bb6f09e1db
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851446"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915659"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>針對 Azure 雲端服務與虛擬機器設定診斷
 需要針對 Azure 雲端服務或 Azure 虛擬機器進行疑難排解時，您可以使用 Visual Studio 更輕鬆地設定 Azure 診斷。 診斷會在執行雲端服務的虛擬機器和虛擬機器執行個體上擷取系統資料和記錄資料。 診斷資料會傳輸到您選擇的儲存體帳戶。 如需 Azure 中診斷記錄的詳細資訊，請參閱[在 Azure App Service 中針對 Web 應用程式啟用診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。
@@ -110,7 +110,7 @@ ms.locfileid: "75851446"
     ![安裝 Azure 虛擬機器延伸模組](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
     > [!NOTE]
-   > 其他可供您的虛擬機器使用的診斷延伸模組。 如需詳細資訊，請參閱[適用於 Windows 的虛擬機器擴充功能和功能](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features)。
+   > 其他可供您的虛擬機器使用的診斷延伸模組。 如需詳細資訊，請參閱[適用於 Windows 的虛擬機器擴充功能和功能](/azure/virtual-machines/windows/extensions-features)。
    >
    >
 5. 若要新增延伸模組及檢視其 [診斷設定] 對話方塊，請選取 [新增]。

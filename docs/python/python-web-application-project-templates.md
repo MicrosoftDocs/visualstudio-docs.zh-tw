@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8c70b3c1b8282f87c8eb5aff5d8dde769c613d4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848561"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917377"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 
@@ -75,7 +75,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 如果您使用原始檔控制，通常會省略虛擬環境資料夾，因為該環境可以僅使用 *requirements.txt* 來重新建立。 排除該資料夾的最佳方法，是先在上方所示的提示中選取 [我會自行安裝它們]，然後在建立虛擬環境之前停用自動認可。 如需詳細資料，請參閱[學習 Django 教學課程：步驟 1-2 和 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)，以及[學習 Flask 教學課程 - 步驟 1-2 和 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)。
 
-部署至 Microsoft Azure App Service 時，請選取 Python 的版本作為[網站延伸模組](https://docs.microsoft.com/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019)，並手動安裝套件。 此外，由於從 Visual Studio 部署時，Azure App Service **不會**自動從 *requirements.txt* 檔案安裝套件，請依照 [aka.ms/PythonOnAppService](https://docs.microsoft.com/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019) 上的設定詳細資料進行。
+部署至 Microsoft Azure App Service 時，請選取 Python 的版本作為[網站延伸模組](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019)，並手動安裝套件。 此外，由於從 Visual Studio 部署時，Azure App Service **不會**自動從 *requirements.txt* 檔案安裝套件，請依照 [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md) 上的設定詳細資料進行。
 
 Microsoft Azure 雲端服務「確實」支援 *requirements.txt* 檔案。 如需詳細資料，請參閱 [Azure 雲端服務專案](python-azure-cloud-service-project-template.md)。
 

@@ -9,17 +9,17 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a4297cfee592977cd09ba9c0abe36e12f7986181
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d1c63b866b35ef9b029364002360d29fa72f2b9b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845618"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918962"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新檔，請參閱[使用 Microsoft Monitoring Agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent)。
+如需 Visual Studio 的最新檔，請參閱[使用 Microsoft Monitoring Agent](/visualstudio/debugger/using-the-microsoft-monitoring-agent)。
 
 您可以使用 **Microsoft Monitoring Agent**，在本機監視裝載 IIS 的 ASP.NET Web 應用程式和 SharePoint 2010 或 2013 應用程式是否發生錯誤、效能問題或其他問題。 您可以將來自代理程式的診斷事件儲存至 IntelliTrace 記錄檔 (.iTrace)。 然後，您可以在 Visual Studio Enterprise （但不是 Professional 或社區版本）中開啟記錄檔，以偵測所有 Visual Studio 診斷工具的問題。 您也可以透過 **Trace** 模式執行代理程式，即可收集 IntelliTrace 診斷資料和方法資料。 Microsoft Monitoring Agent 可以與 [Application Insights](/azure/azure-monitor/app/app-insights-overview) 和 [System Center Operation Manager](https://technet.microsoft.com/library/hh205987.aspx)整合。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。  
   

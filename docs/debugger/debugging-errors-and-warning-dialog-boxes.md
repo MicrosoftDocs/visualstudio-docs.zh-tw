@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431671"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916440"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>偵錯錯誤和警告對話方塊
 底下列出一些偵錯應用程式時可能會碰到的錯誤和警告對話方塊。
@@ -63,9 +63,9 @@ ms.locfileid: "72431671"
 
  [遠端偵錯錯誤](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
- [附加錯誤](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
+ [附加錯誤](/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
 
- [針對 SQL 偵錯安裝程式進行疑難排解](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
+ [針對 SQL 偵錯安裝程式進行疑難排解](/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
  [對機器碼進行偵錯的常見問題集](../debugger/debugging-native-code-faqs.md)
 

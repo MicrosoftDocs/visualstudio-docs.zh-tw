@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f7065967ec86f7cde63c90de816fca95afce2171
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 758e2bbf69c7b48a1027819377839cbdce9204fe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851494"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919260"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 的新功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -129,7 +129,7 @@ ms.locfileid: "75851494"
 
 - **C# / Xamarin**。 使用 [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) 在 Visual Studio 中以 C# 建置 Windows、iOS 和 Android 的原生應用程式。
 
-     [Xamarin 開發人員指南](https://docs.microsoft.com/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) 中的 [偵錯](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) (iOS) 和 [在裝置上偵錯](https://docs.microsoft.com/xamarin/) 說明偵錯經驗。
+     [Xamarin 開發人員指南](/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) 中的 [偵錯](/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) (iOS) 和 [在裝置上偵錯](/xamarin/) 說明偵錯經驗。
 
 - **C++ / Android**。 使用 [適用於跨平台行動裝置開發的 Visual C++](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) 範本以及如 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) 的協力廠商工具，建立適用於 Windows 和 Android 的原生應用程式。
 

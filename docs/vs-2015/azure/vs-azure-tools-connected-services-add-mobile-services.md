@@ -12,12 +12,12 @@ ms.technology: vs-azure
 ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
-ms.openlocfilehash: 83f908876b2e0de774443084d830f20d121e33d0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0a8f6fab3c8f30834a467e2ad98843b16a9245b4
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844853"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916704"
 ---
 # <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>使用 Visual Studio 已連接服務加入行動服務
 透過 Visual Studio 2015，您可以使用 [ **加入已連接服務** ] 對話方塊連接到 Azure 行動服務。 您可以從任何 C# 用戶端應用程式、任何 JavaScript 應用程式或跨平台 Cordova 應用程式進行連接。 連接後，您就可以建立及存取資料、建立自訂 API 和排程工作，或加入推播通知的支援。  已連接服務作業會加入所有適當的參考和連接程式碼。 您也可以利用各種熱門身分識別系統的內建驗證支援，例如 Azure AD、Facebook、Twitter 和 Microsoft 帳戶。
@@ -63,9 +63,6 @@ ms.locfileid: "75844853"
    5. 新行動服務應該會顯示在 [Azure 行動服務] 對話方塊的服務清單中。 選擇清單中的新行動服務，然後選擇 [新增] 按鈕將服務加入至您的專案。
 5. 檢閱出現的 [快速入門] 頁面，並了解專案的修改情況。 每當您加入連接的服務時，[快速入門] 頁面會出現在瀏覽器中。 您可以檢閱建議的後續步驟和程式碼範例，或切換至 [發生什麼情形] 頁面，查看已加入到您專案中的參考，以及您的程式碼和組態檔有何修改。
 6. 使用程式碼範例做為指南，開始撰寫程式碼以存取您的行動服務！
-
-## <a name="how-your-project-is-modified"></a>您的專案修改方式
-Visual Studio 修改您的專案的方式視專案類型而定。 若為 C# 用戶端應用程式，請參閱 [發生什麼情形 – C# 專案](https://docs.microsoft.com/azure/)。 若為 JavaScript 用戶端應用程式，請參閱 [發生什麼情形 – JavaScript 專案](https://docs.microsoft.com/azure/)。 若為 Cordova 應用程式，請參閱 [發生什麼情形 – Cordova 專案](https://docs.microsoft.com/azure/)。
 
 ## <a name="next-steps"></a>後續步驟
 提出問題並取得協助︰

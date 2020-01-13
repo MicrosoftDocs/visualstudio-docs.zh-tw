@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c7d223b9ea542177176045c9abd103958e5ae33
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738105"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916313"
 ---
 # <a name="debugging-preparation-c-project-types"></a>調試準備： C++專案類型
 本節說明如何對 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案範本所建立的基本專案類型進行偵錯。
@@ -47,13 +47,13 @@ ms.locfileid: "72738105"
 
 ### <a name="configuration-properties-124-cc-124-optimization-node"></a>設定屬性&#124; C/C++ &#124;優化節點
 
-|屬性名稱|設定|
+|內容名稱|設定|
 |-------------------|-------------|
 |**Optimization**|設定為 [停用 (/0d)]。 最佳化程式碼較難偵錯，因為產生的指令不能直接對應到您的原始程式碼。 如果您發現程式含有僅出現在最佳化程式碼中的 Bug，您可以開啟這個設定，但是請記住，顯示在 [反組譯碼] 視窗裡的程式碼是由最佳化原始程式碼所產生，可能與您在原始程式碼視窗所看到的內容不相符。 其他功能 (例如逐步執行) 可能無法如預期般地執行。|
 
 ### <a name="configuration-properties-124-linker-124-debugging-node"></a>設定屬性&#124;連結&#124;器的調試節點
 
-|屬性名稱|設定|
+|內容名稱|設定|
 |-------------------|-------------|
 |**產生偵錯資訊**|這個選項必須一律設定為 [是 (/DEBUG)]，才能產生偵錯時需要的偵錯符號和檔案。 當應用程式開始運作時，就可以將其設定為關閉。|
 
@@ -97,7 +97,7 @@ ms.locfileid: "72738105"
    [本主題內容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms 應用程式 (.NET)
- [Windows Forms 應用程式 (.NET)] 範本可以建立 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows Forms 應用程式。 如需詳細資訊，請參閱 [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))。
+ [Windows Forms 應用程式 (.NET)] 範本可以建立 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows Forms 應用程式。 如需詳細資訊，請參閱 [How to: Create a Windows Application Project](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))。
 
  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中偵錯這種類型的應用程式，與偵錯 Managed Windows Forms 應用程式類似。
 
@@ -114,4 +114,4 @@ ms.locfileid: "72738105"
 - [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Attaching to a Running Program or Multiple Programs](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) (附加至正在執行的程式或多個程式)
 - [Debug and Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md) (偵錯及發行組態)
-- [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)) (如何建立 Windows 應用程式專案)
+- [How to: Create a Windows Application Project](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)) (如何建立 Windows 應用程式專案)

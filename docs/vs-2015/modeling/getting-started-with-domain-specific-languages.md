@@ -9,19 +9,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 71aa8b31023cedcc41a08a775f9fdf28a4489d1e
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c7e8ca0fa1558ce0a2d37d4e11a35ba10a27fd2d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847183"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919085"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>開始使用網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題說明定義和使用以模型 SDK for Visual Studio 建立的特定領域語言（DSL）的基本概念。
-
- 如果您不熟悉 Dsl，建議您透過**DSL 工具實驗室**來進行，您可以在此網站中找到： [Visualizaton 和模型化 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>您可以使用特定領域語言來做什麼？
  網域指定的語言是一種標記法，通常是圖形化，專門設計用於特定用途。 相反地，UML 這類語言就是一般用途。 在 DSL 中，您可以定義模型專案和其關聯性的類型，以及它們在畫面上的呈現方式。
@@ -42,7 +40,7 @@ ms.locfileid: "75847183"
 |||
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
 |Visual Studio 的模型化 SDK|[下載 MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>建立 DSL 解決方案
@@ -399,4 +397,4 @@ ms.locfileid: "75847183"
 2. 重建您仍想要使用的任何實驗性 Dsl 或其他實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組。
 
 ## <a name="see-also"></a>請參閱
- [瞭解模型、類別和關聯](../modeling/understanding-models-classes-and-relationships.md)性[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md) [Visualizaton 和模型化 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [瞭解模型、類別和關聯](../modeling/understanding-models-classes-and-relationships.md)性[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md) [Visualizaton 和模型化 SDK](https://www.microsoft.com/download/details.aspx?id=48148)
