@@ -31,12 +31,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 181c32017a84328037ea46d49698821fa3cb41ea
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 930cec012bfda49c61116ada2ba6df10c3a48f51
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295879"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851002"
 ---
 # <a name="link-task"></a>Link 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "74295879"
   
    指定將放入資訊清單檔案的 `dependency` 區段的屬性。  
   
-   如需詳細資訊，請參閱 [/MANIFESTDEPENDENCY (指定資訊清單相依性)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73)。 另請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜發行者組態檔＞。  
+   如需詳細資訊，請參閱 [/MANIFESTDEPENDENCY (指定資訊清單相依性)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73)。 另請參閱 [MSDN](https://msdn.microsoft.com/) 網站上的＜發行者組態檔＞。  
   
 - **AdditionalOptions**  
   

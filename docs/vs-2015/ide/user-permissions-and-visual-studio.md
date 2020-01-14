@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dc49a628cdf5695df7744295d2c1d990986bcfbe
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ead3faa5354dae198524e2a816a85b05bc5d8f08
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295635"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845553"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "74295635"
 ||從 Visual Studio 試用版升級。|[如何：從 Visual Studio 試用版升級](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||安裝、更新或移除本機說明內容。|[安裝與管理本機內容](../ide/install-and-manage-local-content.md)|
 |應用程式類型|開發 SharePoint 2010 方案。|[開發 SharePoint 方案的需求](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
-||取得 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]的開發人員授權。|[取得開發人員授權 (Windows 市集應用程式)](https://go.microsoft.com/fwlink/?LinkID=241313)|
+||取得 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]的開發人員授權。|[取得開發人員授權 (Windows 市集應用程式)](https://msdn.microsoft.com/library/windows/apps/hh974578.aspx)|
 |工具箱|將傳統 COM 控制項新增至 [工具箱]  。|[使用工具箱](../ide/using-the-toolbox.md)|
 |增益集|安裝及使用在 IDE 中使用傳統 COM 撰寫的增益集。|[建立增益集和精靈](https://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
 |建置|使用註冊元件的建置後事件。|[了解自訂建置步驟和建置事件](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
@@ -45,11 +45,11 @@ ms.locfileid: "74295635"
 |偵錯|偵錯以更高權限執行的應用程式。|[偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)|
 ||偵錯在不同使用者帳戶下執行的應用程式，例如 ASP.NET 網站。|[偵錯 ASP.NET 和 AJAX 應用程式](../debugger/debugging-aspnet-and-ajax-applications.md)|
 ||在 XAML 瀏覽器應用程式的區域 (XBAP) 中進行偵錯。|[WPF 主應用程式 (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
-||使用模擬器來偵錯 Microsoft Azure 雲端服務專案。|[在 Visual Studio 中偵錯雲端服務](https://go.microsoft.com/fwlink/?LinkId=266725)|
+||使用模擬器來偵錯 Microsoft Azure 雲端服務專案。|[在 Visual Studio 中偵錯雲端服務](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-debug-cloud-services-virtual-machines?view=vs-2019)|
 ||設定遠端偵錯的防火牆。|[在裝置上設定遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |效能工具|對應用程式進行程式碼剖析。|[效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)|
-|部署|將 Web 應用程式部署在本機電腦上的 Internet Information Services (IIS)。|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment](https://go.microsoft.com/fwlink/?LinkId=266478) (使用 Visual Studio 或 Visual Web Developer 將 ASP.NET Web 應用程式部署至主機服務提供者：部署至 IIS 作為測試環境)|
-|提供意見給 Microsoft|變更您參與 Visual Studio 客戶經驗改進計畫的方式。|[如何：傳送意見回應](../misc/how-to-send-feedback-about-visual-studio.md)|
+|部署|將 Web 應用程式部署在本機電腦上的 Internet Information Services (IIS)。|[使用 Visual Studio 或 Visual Web Developer 將 ASP.NET Web 應用程式部署至主機服務提供者：部署至 IIS 作為測試環境](https://www.asp.net/web-forms/tutorials/deployment/deployment-to-a-hosting-provider/Deployment-to-a-Hosting-Provider-Deploying-to-IIS-as-a-Test-Environment-5-of-12) \(機器翻譯\)|
+|提供意見給 Microsoft|變更您參與 Visual Studio 客戶經驗改進計畫的方式。|[如何：傳送意見反應](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>以系統管理員身分執行 Visual Studio
  您可以在每次啟動 IDE 時以系統管理權限啟動 Visual Studio，或修改應用程式捷徑永遠以系統管理權限執行。 如需詳細資訊，請參閱 Windows 說明。
@@ -66,9 +66,9 @@ ms.locfileid: "74295635"
 
 1. 選擇 [開始]  功能表上的 [所有程式]  。
 
-2. 在 Microsoft Visual Studio <版本>   資料夾中，選取 Visual Studio <版本>   ，開啟捷徑功能表，然後選擇 以系統管理員身分執行  。
+2. 在 [Microsoft Visual Studio]  *[Version]* 資料夾中，選取 [Visual Studio]  *[Version]* ，選取捷徑功能表，然後選擇 [以系統管理員身分執行]  。
 
      在 Visual Studio 啟動時， **(系統管理員)** 會顯示在標題列的產品名稱之後。
 
 ## <a name="see-also"></a>另請參閱
- [移植、移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [安裝 Visual Studio 2015](../install/install-visual-studio-2015.md)
+ [移植、遷移和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[安裝 Visual Studio 2015](../install/install-visual-studio-2015.md)

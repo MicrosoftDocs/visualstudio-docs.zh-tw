@@ -1,5 +1,5 @@
 ---
-title: 如何：將 Visual C++ 專案升級為 Visual Studio 2015 | Microsoft Docs
+title: 作法：將 Visual C++ 專案升級為 Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,14 +12,14 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: b33b1b47ad4c32aabe09aae5a66fe3f02aeb1487
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 83794267cbd13b0bde0b1ba6217d08275fe12e05
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300375"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850340"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>如何：將 Visual C++ 專案升級為 Visual Studio 2015
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>作法：將 Visual C++ 專案升級為 Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如需 Visual Studio 2017 的最新文件，請參閱 [VisualC++ 移植和升級指南](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide)。
@@ -51,7 +51,7 @@ ms.locfileid: "74300375"
 - 若是 [!INCLUDE[cppcli](../includes/cppcli-md.md)] 專案，則會將 TargetFrameworkVersion 變更為 .NET Framework 4.5.2。
 
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>繼續使用自訂 PlatformToolset
- 如果您想要繼續使用 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]中的自訂 PlatformToolset，此工具組必須位於 x86 電腦的 %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ 底下，或者位於 x64 電腦的 %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ 底下。 如需如何建立自訂 PlatformToolset 的詳細資訊，請參閱 Visual C++ 團隊部落格中的 [C++ 原生多目標](https://go.microsoft.com/fwlink/?LinkId=248587) 。
+ 如果您想要繼續使用 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]中的自訂 PlatformToolset，此工具組必須位於 x86 電腦的 %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ 底下，或者位於 x64 電腦的 %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ 底下。 如需如何建立自訂 PlatformToolset 的詳細資訊，請參閱 Visual C++ 團隊部落格中的 [C++ 原生多目標](https://blogs.msdn.com/b/vcblog/archive/2009/12/08/c-native-multi-targeting.aspx) 。
 
 ## <a name="see-also"></a>另請參閱
- [Visual C++ 移植和升級指南](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [移植、移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+ [Visual C++移植和升級指南](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb)[移植、遷移和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
