@@ -1,5 +1,5 @@
 ---
-title: 作法：建立宣告式規則條件（舊版） |Microsoft Docs
+title: 如何：建立宣告式規則條件（舊版） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -13,31 +13,31 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2dc63fc58b22792e566df91bd86cac40e3fd2e65
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0c23fed64d7f3a7681fce96663262f6d633299a9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297493"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849328"
 ---
-# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>作法：建立宣告式規則條件 (舊版)
+# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>HOW TO：建立宣告式規則條件 (舊版)
 本主題描述當使用以 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標的舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 時，如何宣告規則條件。
 
  條件陳述式會評估為**True**或**False**。 宣告式規則條件是使用 [[規則條件編輯器] 對話方塊（舊版）](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)建立的條件陳述式，並以 XML 的形式儲存在工作流程中。 它可以包括述詞 (Predicate)，這些述詞會比較工作流程狀態和結合多個述詞的布林值代數。
 
  宣告式規則條件用於以下的 Windows Workflow Foundation 全新活動中：
 
-- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx)
 
-- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelsebranchactivity.aspx)
 
-- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
-- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx)
 
-- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statemachineworkflowactivity.aspx)
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>若要使用規則條件編輯器建立宣告式規則條件
 
@@ -49,7 +49,7 @@ ms.locfileid: "74297493"
 
 4. 按一下  **conditionname**  屬性。
 
-5. 按一下 [ **conditionname**省略號 **[...]]** 以開啟 [**選取條件** 對話方塊。
+5. 按一下  **conditionname**省略號 **[...]** 以開啟 **選取條件** 對話方塊。
 
 6. 按一下 [**新增條件**] 以開啟 [**規則條件編輯器**] 對話方塊。
 
@@ -63,5 +63,5 @@ ms.locfileid: "74297493"
 
      如需如何使用 [**選取條件**] 對話方塊的詳細資訊，請參閱[選取條件對話方塊（舊版）](../workflow-designer/select-condition-dialog-box-legacy.md)。
 
-## <a name="see-also"></a>另請參閱
- [使用ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65066) [使用 IfElseBranchActivity 活動](https://go.microsoft.com/fwlink?LinkID=65075) [使用編輯器活動](https://go.microsoft.com/fwlink?LinkID=65080)的[舊版工作流程活動](../workflow-designer/legacy-workflow-activities.md) [使用 While 活動](https://go.microsoft.com/fwlink?LinkID=65091)[規則條件編輯器對話方塊（舊版）](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [在工作流程中使用條件的](https://go.microsoft.com/fwlink?LinkID=65009) [選取條件對話方塊（舊版）](../workflow-designer/select-condition-dialog-box-legacy.md)
+## <a name="see-also"></a>請參閱
+ [使用ConditionedActivityGroup](https://msdn2.microsoft.com/library/bb675237.aspx) [使用 IfElseBranchActivity 活動](https://msdn2.microsoft.com/library/bb628465.aspx) [使用編輯器活動](https://msdn2.microsoft.com/library/bb628544.aspx)的[舊版工作流程活動](../workflow-designer/legacy-workflow-activities.md) [使用 While 活動](https://msdn2.microsoft.com/library/bb628552.aspx)[規則條件編輯器對話方塊（舊版）](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [在工作流程中使用條件的](https://msdn2.microsoft.com/library/bb628447.aspx) [選取條件對話方塊（舊版）](../workflow-designer/select-condition-dialog-box-legacy.md)
