@@ -2,17 +2,17 @@
 title: 常用命令的預設鍵盤快速鍵
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eda902db03d7211a4025663088cf8bf3718e4a2f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652524"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596719"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的熱門鍵盤快速鍵
 
@@ -21,7 +21,7 @@ ms.locfileid: "72652524"
 「全域」內容表示快速鍵適用於 Visual Studio 中的任何工具視窗。
 
 > [!NOTE]
-> 您可以開啟 [選項] 對話方塊，展開 [環境] 節點，然後選擇 [鍵盤]，以[查看任何命令的捷徑](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。
+> 您可以開啟 [選項][look up the shortcut](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) 對話方塊，展開 [環境] 節點，然後選擇 [鍵盤]，以**查看任何命令的捷徑**。
 
 ## <a name="build"></a>組建
 
@@ -52,7 +52,7 @@ ms.locfileid: "72652524"
 |Debug.StopDebugging|**Shift+F5** [全域]|
 |Debug.ToggleBreakpoint|**F9** [全域]|
 
-## <a name="edit"></a>Edit
+## <a name="edit"></a>編輯
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------| - |
@@ -119,7 +119,7 @@ ms.locfileid: "72652524"
 |File.SaveSelectedItems|**Ctrl+S** [全域]|
 |File.ViewinBrowser|**Ctrl+Shift+W** [全域]|
 
-## <a name="project"></a>專案
+## <a name="project"></a>Project
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------| - |
@@ -144,7 +144,7 @@ ms.locfileid: "72652524"
 |--------------| - |
 |View.ClassView|**Ctrl+Shift+C** [全域]|
 |View.EditLabel|**F2** [全域]|
-|View.ErrorList|\\Ctrl+ **、Ctrl+E** [全域]<br /><br />或 **Ctrl+\\、E** [全域]|
+|View.ErrorList|**Ctrl+\\、Ctrl+E** [全域]<br /><br />或 **Ctrl+\\、E** [全域]|
 |View.NavigateBackward|**Ctrl+-** [全域]|
 |View.NavigateForward|**Ctrl+Shift+-** [全域]|
 |View.ObjectBrowser|**Ctrl+Alt+J** [全域]|

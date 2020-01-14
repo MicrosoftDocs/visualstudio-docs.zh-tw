@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958162"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678983"
 ---
-# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本建立 Django 應用程式
+# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步驟 2:使用檢視與頁面範本建立 Django 應用程式
 
 **上一步：[建立 Visual Studio 專案和方案](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
@@ -48,7 +48,7 @@ Django 應用程式通常會以一組標準的檔案作為開始。 Visual Studi
 
 ![[方案總管] 中的 Django 應用程式檔案](media/django/step02-django-app-in-solution-explorer.png)
 
-| 項目 | 說明 |
+| 項目 | 描述 |
 | --- | --- |
 | **\_\_init\_\_.py** | 此檔案會將應用程式識別為套件。 |
 | **移轉** | Django 儲存指令碼的資料夾，這些指令碼會更新資料庫以配合對模型所做的變更。 接著，Django 的移轉工具會對任何舊版資料庫套用必要的變更，以使它符合目前的模型。 透過使用移轉，您可以專注於模型上，並讓 Django 處理基礎資料庫結構描述。 移轉會在步驟 6 中討論；現在，該資料夾只會包含 *\_\_init\_\_.py* 檔案 (表示該資料夾定義自己的 Python 套件)。 |
@@ -59,7 +59,7 @@ Django 應用程式通常會以一組標準的檔案作為開始。 Visual Studi
 | **tests.py** | Python 檔案，包含單元測試的基本結構。 |
 | **views.py** | 檢視就是一般所認知的網頁，會接收 HTTP 要求並傳回 HTTP 回應。 檢視通常會轉譯成網頁瀏覽器知道如何顯示的 HTML，但檢視不一定需要顯示出來 (例如以中繼形式呈現)。 檢視是由負責轉譯 HTML 以傳送至瀏覽器的 Python 函式所定義。 *views.py* 檔案是建立檢視的預設位置，而且一開始只包含陳述式 `from django.shortcuts import render`。 |
 
-使用 "HelloDjangoApp" 名稱時，*app.py* 內容的呈現方式如下：
+使用 "HelloDjangoApp" 名稱時， *apps.py*的內容會如下所示：
 
 ```python
 from django.apps import AppConfig
@@ -111,7 +111,7 @@ class HelloDjangoAppConfig(AppConfig):
 
     ![Visual Studio 狀態列上的原始檔控制變更按鈕](media/django/step02-source-control-changes-button.png)
 
-1. 在 **[Team Explorer]** 中，輸入像是「建立初始 Django 應用程式」的認可訊息，然後選取 **[全部認可]**。 當認可完成時，您會看到下列訊息：**認可於本機建立的 \<雜湊>。同步以將您的變更與伺服器共用。** 如果您想要將變更推送至遠端存放庫，請選取 [同步]，然後選取 [傳出的認可] 底下的 [推送]。 您也可以在累積多個本機認可之後，再推送至遠端。
+1. 在 **[Team Explorer]** 中，輸入像是「建立初始 Django 應用程式」的認可訊息，然後選取 **[全部認可]** 。 當認可完成時，您會看到下列訊息：**認可於本機建立的 \<雜湊>。同步以將您的變更與伺服器共用。** 如果您想要將變更推送至遠端存放庫，請選取 [同步]，然後選取 [傳出的認可] 底下的 [推送]。 您也可以在累積多個本機認可之後，再推送至遠端。
 
     ![在 [Team Explorer] 中將認可推送至遠端](media/django/step02-source-control-push-to-remote.png)
 
