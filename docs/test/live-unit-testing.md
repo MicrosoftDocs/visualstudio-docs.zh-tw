@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: f020de0c08d8869a8ee9e6f807201303a46b2a0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: HT
+ms.openlocfilehash: 1e1a0ec1fd6f2fbdf4f016b1d22db5a6929b5e24
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588885"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851436"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>如何設定及使用 Live Unit Testing
 
@@ -43,7 +43,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 此�
 從最上層 Visual Studio 功能表列中選取 [**工具**] [ > **選項**]，然後在 [**選項**] 對話方塊的左窗格中選取 [ **Live Unit Testing** ]，以設定 Live Unit Testing。
 
 > [!TIP]
-> 啟用 Live Unit Testing 之後（請參閱下一節 [[啟動]、[暫停] 和 [停止 Live Unit Testing](#start-pause-and-stop)]），您也可以選取 [**測試** > ] **Live Unit Testing** > **選項**] 來開啟 [**選項**] 對話方塊。
+> 啟用 Live Unit Testing 之後（請參閱下一節 [[啟動]、[暫停] 和 [停止 Live Unit Testing](#start-pause-and-stop)]），您也可以選取 [**測試** > ] **Live Unit Testing** > **選項** 來開啟 [**選項**] 對話方塊。
 
 下圖顯示對話方塊中可用的 Live Unit Testing 設定選項：
 
@@ -63,7 +63,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 此�
 
 - 能夠刪除所有保存資料的功能。 當 Live Unit Testing 的行為無法預期或非預期的方式時，這會很有用，這表示保存的資料已損毀。
 
-- 測試案例超時的間隔。預設為 30 秒。
+- 測試案例超時的間隔。預設值是30秒。
 
 - Live Unit Testing 建立的測試程序數目上限。
 
@@ -137,7 +137,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 此�
 > [!TIP]
 > 從頂層 Visual Studio 功能表選取 [**測試**] > [ **Windows** > **測試瀏覽器**]，以開啟 [**測試**]。
 
-您可能會發現 [測試總管] 視窗中的某些測試呈現淡出效果。例如，當您在開啟先前儲存的專案之後啟用 Live Unit Testing 時，[**測試瀏覽器**] 視窗會淡出所有失敗的測試，如下圖所示。 在此情況下，Live Unit Testing 已重新執行失敗的測試，但尚未重新執行成功的測試。 這是因為 Live Unit Testing 的保存資料表示自上次成功執行測試後，沒有任何變更。
+您可能會注意到在 [**測試瀏覽器**] 視窗中，有些測試會淡出。例如，當您在開啟先前儲存的專案之後啟用 Live Unit Testing 時，[**測試瀏覽器**] 視窗會淡出所有失敗的測試，如下圖所示。 在此情況下，Live Unit Testing 已重新執行失敗的測試，但尚未重新執行成功的測試。 這是因為 Live Unit Testing 的保存資料表示自上次成功執行測試後，沒有任何變更。
 
 ![測試瀏覽器中的測試失敗](media/lut-test-explorer.png)
 
@@ -195,9 +195,9 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 此�
 - 針對 NUnit：`[assembly: Category("SkipWhenLiveUnitTesting")]`
 - 針對 MSTest：`[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼測試工具](https://visualstudio.microsoft.com/vs/testing-tools/)
-- [Live Unit Testing 部落格](https://go.microsoft.com/fwlink/?linkid=842514) \(英文\)
+- [Live Unit Testing 部落格](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/) \(英文\)
 - [即時單元測試常見問題集](live-unit-testing-faq.md)
-- [Channel 9 影片：Live Unit Testing in Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105) (Visual Studio 中的 Live Unit Testing)
+- [Channel 9 影片： Visual Studio 中的 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
