@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 962c724e231275c9fa716d6c823b7451292392cf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300739"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848390"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 ### <a name="UserDefined"></a> 使用者定義的變數、函式和物件
  變更 JavaScript 檔時，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 會掃描已開啟及已參考的文件，以判斷所有可用的程式碼資源。 這包括您建立的變數、函式和物件。 隨後 JavaScript IntelliSense 便可以使用這些資源。
 
- 如需使用者定義之變數、函式和物件的詳細資訊，請參閱 MSDN 網站上的[建立您自己的物件](https://go.microsoft.com/fwlink/?LinkId=108671)。
+ 如需使用者定義之變數、函式和物件的詳細資訊，請參閱 MSDN 網站上的[建立您自己的物件](https://msdn.microsoft.com/library/202863ha.aspx)。
 
 ### <a name="External"></a> 外部檔案參考
  您可以加入外部檔案參考的各種類型，以便在您的程式碼中提供 IntelliSense 支援。 外部檔案參考可能是指令碼參考、參考指示詞或是使用參考群組指定。
@@ -157,7 +157,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 </asp:ScriptManager>
 ```
 
- IntelliSense 也支援在 ASP.NET AJAX Web 應用程式內的組件中，內嵌為資源的指令碼檔。 如需內嵌指令碼資源的詳細資訊，請參閱[逐步解說：將 JavaScript 檔案內嵌為組件中的資源](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)。
+ IntelliSense 也支援在 ASP.NET AJAX Web 應用程式內的組件中，內嵌為資源的指令碼檔。 如需內嵌指令碼資源的詳細資訊，請參閱[逐步解說：將 JavaScript 檔案內嵌為組件中的資源](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89) \(英文\)。
 
 #### <a name="ReferenceDirectives"></a> Reference 指示詞
  `reference` 指示詞可讓 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 在您目前正編輯的指令碼和其他指令碼之間，建立關聯性 (Relationship)。 `reference` 指令詞可讓您在目前指令碼檔的指令碼內容中包含指令碼檔。 如此可讓 IntelliSense 參考外部定義的函式、類型及欄位，將其當做您的程式碼使用。
@@ -283,6 +283,6 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 - [擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)
 - [識別項的陳述式完成](../ide/statement-completion-for-identifiers.md)
 - [XML 文件註解](../ide/xml-documentation-comments-javascript.md)
-- [關於 DHTML 物件模型](https://go.microsoft.com/fwlink/?LinkID=92344) \(英文\)
+- [關於 DHTML 物件模型](https://msdn2.microsoft.com/library/ms533022.aspx) \(英文\)
 - [列出成員](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8) \(機器翻譯\)
-- [SRC 屬性 &#124; src 屬性](https://go.microsoft.com/fwlink/?LinkId=92345)
+- [SRC 屬性 &#124; src 屬性](https://msdn2.microsoft.com/library/ms534642.aspx)
