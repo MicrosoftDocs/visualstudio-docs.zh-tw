@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: cd26e3d37779337ee39a1afa68aa3ba9ab56d376
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 3d56cfce70b0723b636b9b8ef7c6f3917015bf66
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846548"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915550"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell 指令碼)
 ## <a name="syntax"></a>語法
@@ -57,7 +57,7 @@ Publish-WebApplicationWebSite
 | 接受萬用字元？ |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-要發佈至網站的 Web 部署封裝路徑。 您可以使用 Visual Studio 的 [發佈 Web] 精靈來建立此封裝。 如需詳細資訊，請參閱 [開始使用 Azure 雲端服務和 ASP.NET](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script?view=vs-2019)。
+要發佈至網站的 Web 部署封裝路徑。 您可以使用 Visual Studio 的 [發佈 Web] 精靈來建立此封裝。 如需詳細資訊，請參閱 [開始使用 Azure 雲端服務和 ASP.NET](vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md)。
 
 | 參數 | 預設值 |
 | --- | --- |

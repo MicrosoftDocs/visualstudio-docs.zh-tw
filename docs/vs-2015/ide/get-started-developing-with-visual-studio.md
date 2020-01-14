@@ -11,12 +11,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f7ad3ebd395c813877c444b5531255f56690c98b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f005ea0fce0ccf33902b6ebfd6822640782ef20
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292059"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917585"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "74292059"
 
 - **[製作 Web 應用程式](https://www.visualstudio.com/features/modern-web-tooling-vs)：** 用以建立及部署現代化 Web 應用程式的工具。
 
-     [進行教學課程](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [瀏覽文件](https://docs.asp.net/) &#124;                                   [觀看影片](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0)
+     [進行教學課程](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [瀏覽文件](https://docs.asp.net/) &#124;                                   [觀看影片](/aspnet/core/?view=aspnetcore-3.0)
 
-- **[使用 HTML/Javascript (Apache Cordova) 製作跨平台的行動應用程式](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** ：Apache Cordova 是以 HTML/CSS/Javascript 為基礎的開放原始碼跨平台環境。  您的 Javascript 程式碼可在以特定平台為目標的包裝函式中執行，並且能夠存取裝置的所有硬體功能。 為 Apple Store、Android 市集和 Windows 市集開發應用程式。
+- **[使用 HTML/Javascript (Apache Cordova) 製作跨平台的行動應用程式](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** ：Apache Cordova 是以 HTML/CSS/Javascript 為基礎的開放原始碼跨平台環境。  您的 Javascript 程式碼可在以特定平台為目標的包裝函式中執行，並且能夠存取裝置的所有硬體功能。 為 Apple Store、Android 市集和 Windows 市集開發應用程式。
 
-     [載入範例](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124; [進行教學課程](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [瀏覽文件](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                   [觀看影片](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
+     [載入範例](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124; [進行教學課程](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [瀏覽文件](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                   [觀看影片](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
 - **[使用 C# 或 Visual Basic (Xamarin) 製作跨平台行動應用程式](../cross-platform/visual-studio-and-xamarin.md)** ：開始使用 Visual Studio 和 Xamarin 工具來建立行動應用程式，從一個共用的程式碼基底即可在 Android、iOS 和通用 Windows 平台上執行。
 

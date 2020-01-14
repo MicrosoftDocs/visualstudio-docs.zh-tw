@@ -18,28 +18,26 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8050e0245708d855d78dbba94e1bb56399343ecf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 03c0da634ea740517380896542e9df5e6c7a5fbd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850692"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918586"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要定義網域指定的語言 (DSL)，請從範本建立 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
 
- 如果您不熟悉 Dsl，建議您透過**DSL 工具實驗室**來進行，您可以在此網站中找到： [Visualizaton 和模型化 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
-
 ## <a name="templates"></a>選取範本方案
  若要定義 DSL，您必須已安裝下列元件：
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
+|Visual Studio Visualization and Modeling SDK|[模型 SDK 下載](https://www.microsoft.com/download/details.aspx?id=48148)|
 
  若要建立新的網域指定語言，請使用 [網域指定的語言] 專案範本建立新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案。
 

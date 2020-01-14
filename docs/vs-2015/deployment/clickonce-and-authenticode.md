@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e48039a618f7e8eef7f2c6e9f097da87e37d0f5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f7fd108250a406339d5be08b5a6e9aaf67d039
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847780"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917570"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Authenticode * 是一項 Microsoft 技術，使用業界標準的密碼編譯，
   
 - 解除安裝應用程式，並重新安裝具有有效憑證的新版本。  
   
-- 建立可更新憑證的命令列組件。 此程序的逐步資訊，請參閱 [Microsoft 支援文章 925521](https://support.microsoft.com/kb/925521)。  
+- 建立可更新憑證的命令列組件。  
   
 ### <a name="storing-certificates"></a>儲存憑證  
   

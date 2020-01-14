@@ -22,17 +22,17 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7bc1e36f6d5dea12a8c46e88a3e1f450cc30caa6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b8c0a4269dcc2b7e647effb10432a984396f395d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847215"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918011"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新版本可在[IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/intellitrace)中找到。  
+本主題的最新版本可在[IntelliTrace](/visualstudio/debugger/intellitrace)中找到。  
   
 當您使用 IntelliTrace 記錄和追蹤程式碼的執行歷程時，可以縮短對應用程式進行偵錯的時間。 您可以輕鬆地找到錯誤，因為 IntelliTrace 可讓您：  
   

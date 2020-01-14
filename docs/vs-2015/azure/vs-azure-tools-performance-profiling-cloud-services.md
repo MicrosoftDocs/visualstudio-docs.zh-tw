@@ -11,18 +11,18 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 0f4e7635e62c8d21b6bdb3b1fd28a2fed0c60262
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b1e5a5d4d5312968571965df8c9e28d31379720d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851889"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915595"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>測試雲端服務的效能
 ## <a name="overview"></a>概觀
 您可以利用下列方式測試雲端服務的效能：
 
-* 使用 Azure 診斷來收集關於要求和連接的資訊，並檢閱可顯示從客戶觀點來看，服務執行的情況的網站統計資料。 若要開始使用，請參閱 [為 Azure 雲端服務和虛擬機器設定診斷功能](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines?view=vs-2019)。
+* 使用 Azure 診斷來收集關於要求和連接的資訊，並檢閱可顯示從客戶觀點來看，服務執行的情況的網站統計資料。 若要開始使用，請參閱 [為 Azure 雲端服務和虛擬機器設定診斷功能](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)。
 * 使用 Visual Studio 分析工具可取得服務執行情況在計算方面的深入分析。 如本主題所述，您可以使用分析工具於服務在 Azure 中執行時來測量服務。 如需如何使用分析工具來測量服務在本機的計算模擬器中執行的效能的詳細資訊，請參閱 [使用 Visual Studio 分析工具，在計算模擬器中本機測試 Azure 雲端服務的效能](https://azure.microsoft.com/documentation/articles/cloud-services-performance-testing-visual-studio-profiler/)。
 
 ## <a name="choosing-a-performance-testing-method"></a>選擇效能測試方法
@@ -84,7 +84,7 @@ ms.locfileid: "75851889"
 > 
 
 ### <a name="to-configure-profiling-settings"></a>設定分析設定
-1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選擇 [發佈]。 如需有關如何發佈雲端服務的詳細步驟，請參閱 [使用 Azure 工具發佈雲端服務](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019)。
+1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選擇 [發佈]。 如需有關如何發佈雲端服務的詳細步驟，請參閱 [使用 Azure 工具發佈雲端服務](vs-azure-tools-publishing-a-cloud-service.md)。
 2. 在 [發佈 Azure 應用程式] 對話方塊中，選擇 [進階設定] 索引標籤。
 3. 若要啟用分析，請選取 [啟用分析] 核取方塊。
 4. 若要進行分析設定，請選擇 [設定] 超連結。 會出現 [設定檔設定] 對話方塊。

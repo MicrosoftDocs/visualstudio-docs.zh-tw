@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5d32a7efa050d04c848ec8add761d0d235e95304
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 01c0c8613ec2e4fe72613867d623d510d9734e45
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849119"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917661"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何：將擴充性專案遷移至 Visual Studio 2017
 
@@ -179,7 +179,7 @@ WPF | Managed 桌面工作負載核心 | Microsoft.VisualStudio.Component.Manage
 
 ## <a name="find-component-ids"></a>尋找元件識別碼
 
-依 Visual Studio 產品排序的元件清單位於[2017 工作負載和元件識別碼 Visual Studio](https://docs.microsoft.com/visualstudio/install/workload-and-component-ids?view=vs-2019)。 請在資訊清單中針對您的必要條件識別碼使用這些元件識別碼。
+依 Visual Studio 產品排序的元件清單位於[2017 工作負載和元件識別碼 Visual Studio](/visualstudio/install/workload-and-component-ids?view=vs-2019)。 請在資訊清單中針對您的必要條件識別碼使用這些元件識別碼。
 
 如果您不確定哪個元件包含特定的二進位檔，請下載[元件 > 的二進位對應試算表](https://aka.ms/vs2017componentid-binaries)。
 

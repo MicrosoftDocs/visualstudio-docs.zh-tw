@@ -15,23 +15,23 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5988d472317540ca1b1a7f91acd75a48fa9743b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e85929202d36be2e6dcc2b08b5b2a60e7656b27
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669109"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919194"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715：識別項名稱應該使用正確的前置字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新檔，請參閱[CA1715：識別碼應該有正確的前置](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix)詞。
+如需 Visual Studio 的最新檔，請參閱[CA1715：識別碼應該有正確的前置](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix)詞。
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Category|Microsoft. 命名|
+|分類|Microsoft. 命名|
 |中斷變更|中斷-在介面上引發。<br /><br /> 不中斷-在泛型型別參數上引發時。|
 
 ## <a name="cause"></a>原因

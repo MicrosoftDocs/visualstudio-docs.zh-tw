@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815460"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916812"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android 的系統需求
 
@@ -79,7 +79,7 @@ Hyper-V 需求
 
 - DHCP
 
-   模擬器需要 DHCP，因為它會將本身設定為網路上具有本身 IP 位址的個別裝置。
+   模擬器需要 DHCP，因為它會將本身設定為網路上具有自己的 IP 位址的個別裝置。
 
 - 自動設定的 DNS 和閘道設定
 
@@ -87,7 +87,7 @@ Hyper-V 需求
 
   若要疑難排解模擬器中的網路問題，請參閱下列主題：
 
-- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+- [進行 Android 版 Visual Studio 模擬器的疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
 ## <a name="hyper-v-requirements"></a>Hyper-V 需求
 
@@ -107,7 +107,7 @@ Windows 中的 Hyper-V 需求
 
 |需求|如何檢查和啟用此需求|
 |-----------------|----------------------------------------------|
-|必須安裝 Hyper-V|遵循 [啟用適用於 Windows Phone 模擬器的 HYPER-V](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105))所使用的相同指示。<br /><br /> 在 [服務] 嵌入式管理單元中，檢查 [Hyper-V 虛擬機器管理]  服務的狀態。|
+|必須安裝 Hyper-V|遵循 [啟用適用於 Windows Phone 模擬器的 HYPER-V](/previous-versions/windows/apps/jj863509(v=vs.105))所使用的相同指示。<br /><br /> 在 [服務] 嵌入式管理單元中，檢查 [Hyper-V 虛擬機器管理] 服務的狀態。|
 |必須執行 Hyper-V。|如需管理服務的詳細資訊，請參閱下列主題：<br /><br /> -   [啟動、停止、暫停、繼續或重新啟動服務](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [設定如何啟動服務](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  您必須是本機 Hyper-V Administrators 群組的成員。
@@ -119,12 +119,12 @@ Windows 中的 Hyper-V 需求
 > [!IMPORTANT]
 > 加入此群組之後，請登出或重新開機，以讓變更生效。
 
- ![加入 Hyper&#45;V 系統管理員安全性群組](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![加入「Hyper-v&#45;系統管理員」安全性群組](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  若要手動將您自己加入群組，請開啟 [本機使用者和群組] 嵌入式管理單元。
 
 ## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>不支援從可開機的 VHD 執行模擬器
- 如果您在從可開機的 VHD 執行 Windows 時，嘗試在 Visual Studio Emulator for Android 上執行應用程式，則模擬器通常需要數分鐘的時間才能啟動，或無法啟動。 當模擬器無法啟動時，您會看到下列訊息：應用程式部署失敗。 請重試。
+ 如果您在從可開機的 VHD 執行 Windows 時，嘗試在 Visual Studio Emulator for Android 上執行應用程式，則模擬器通常需要數分鐘的時間才能啟動，或無法啟動。 無法啟動模擬器時，您會看到下列訊息：應用程式部署失敗。 請重試。
 
  不支援這個組態。 如需相關問題的資訊，請參閱[針對 Visual Studio 的 Android 模擬器進行疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。
 
@@ -145,6 +145,6 @@ Windows 中的 Hyper-V 需求
 
 為了讓模擬器模擬 GPU 呼叫 (例如 OpenGL ES 所使用的呼叫)，您的電腦必須具有已安裝適當 DirectX 驅動程式的 DirectX 相容 GPU。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [針對 Visual Studio 的 Android 模擬器進行疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

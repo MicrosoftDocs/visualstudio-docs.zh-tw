@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 39be02226a46aaa95742caa760e94fe6be4efdf4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253046"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916573"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -45,7 +45,7 @@ Intellisense 程式碼編譯可在 MonoBehaviour 指令碼中輕鬆地實作 Uni
 
 3. 一旦鍵入 「**ontri**" 字母之後，會出現 IntelliSense 建議清單。
 
-   ![Using IntelliSense](media/vstu_intellisense1.png)
+   ![使用 IntelliSense](media/vstu_intellisense1.png)
 
 4. 有三種方式可以變更清單上的選項：
 
@@ -83,17 +83,17 @@ Intellisense 程式碼編譯可在 MonoBehaviour 指令碼中輕鬆地實作 Uni
 
 6. 選擇 [確定] 按鈕以結束精靈，並將方法插入到您的程式碼。
 
-   ![MonoBehavior 精靈對話方塊。](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
+   ![[Monobehavior wizard] 對話方塊。](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
 ## <a name="unity-project-explorer"></a>Unity Project Explorer
 
-![Unity 專案總管視窗。](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
+![Unity Project Explorer 視窗。](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
 
 Unity 專案總管會使用與 Unity 編輯器一樣的方式顯示您的所有 Unity 專案檔案與目錄。 這與使用一般 Visual Studio 方案總管瀏覽 Unity 指令碼的方式不同，一般 Visual Studio 方案總管會將它們組織為專案與 Visual Studio 產生的方案。
 
 - 在 Visual Studio 主功能表上，選擇 [檢視] > [Unity 專案總管]。 鍵盤快速鍵：**Alt**+**Shift**+**E**
 
-   ![檢視 Unity 專案總管視窗。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
+   ![查看 Unity Project Explorer 視窗。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
 ## <a name="unity-debugging"></a>Unity 偵錯
 
@@ -145,7 +145,7 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
 2. 在 [組建設定] 視窗中，標記 [開發建置] 和 [指令碼偵錯] 核取方塊。
 
-   ![設定用於偵錯的 Unity 組建設定。](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
+   ![設定用於進行偵錯工具的 Unity 組建設定。](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
 
 #### <a name="select-a-unity-instance-to-attach-the-debugger-to"></a>選取要附加偵錯工具的 Unity 執行個體
 
@@ -155,7 +155,7 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
    [選取 Unity 執行個體] 對話方塊會顯示您可連接之每個 Unity 執行個體的一些資訊。
 
-   ![選擇要連接到的 Unity 執行個體。](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
+   ![選擇要連接的 Unity 實例。](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
    **Project**
 
@@ -163,7 +163,7 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
    **機器** 這個 Unity 執行個體執行所在的電腦或裝置名稱。
 
-   **類型** 如果這個 Unity 執行個體以 Unity Editor 的一部分來執行，為 [編輯器]；如果這個 Unity 執行個體是獨立播放程式，則為 [播放程式]。
+   如果這個 Unity 實例是當做 Unity 編輯器的一部分來執行，**請輸入** **Editor** ;如果這個 Unity 實例是獨立播放機，則為**player** 。
 
    **連接埠** 這個 Unity 執行個體用於通訊之 UDP 通訊端的通訊埠編號。
 
@@ -181,7 +181,7 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>為 Unity 專案所使用的 Managed DLL 專案偵錯
 
-1. 將現有的 DLL 專案加入 Visual Studio Tools for Unity 所產生的 Visual Studio 方案。 在較不常見的情況下，您可能會啟動新的 Managed DLL 專案來包含 Unity 專案中的程式碼元件；如果是這種情況，您可以改為將新的 Managed DLL 專案加入 Visual Studio 方案。 如需將新專案或現有專案新增至方案的詳細資訊，請參閱[如何：將專案新增至方案](https://msdn.microsoft.com/library/ff460187.aspx)。
+1. 將現有的 DLL 專案加入 Visual Studio Tools for Unity 所產生的 Visual Studio 方案。 在較不常見的情況下，您可能會啟動新的 Managed DLL 專案來包含 Unity 專案中的程式碼元件；如果是這種情況，您可以改為將新的 Managed DLL 專案加入 Visual Studio 方案。 如需將新的或現有的專案加入至方案的詳細資訊，請參閱[作法：將專案加入至方案](https://msdn.microsoft.com/library/ff460187.aspx)。
 
    ![將現有的 DLL 專案加入至方案。](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
@@ -192,7 +192,7 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 > [!NOTE]
 > 僅在使用 Unity 的舊版執行階段時才需要以下內容。 如果您使用的是新的 Unity 執行階段，則不再需要使用這些專用的 3.5 設定檔。 使用與 Unity 版本相容的 .NET 4.x 設定檔。
 
-   ![將 DLL 的目標 Framework 設定為 Unity 架構。](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
+   ![將 DLL 的目標架構設定為 Unity 架構。](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
 3. 將 DLL 複製到 Unity 專案的 Assets 資料夾。 在 Unity 中，資產是與 Unity 應用程式一起封裝及部署的檔案，以便可以在執行階段載入。 由於 Dll 會在執行時間連結，因此 Dll 必須部署為資產。 為了將 DLL 部署為資產，Unity Editor 會要求將 DLL 放在 Unity 專案的 [Assets] 資料夾中。 有兩種方式可讓您完成這個步驟：
 
@@ -202,7 +202,7 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
    由於 PDB 檔案包含 DLL 的偵錯符號，並將 DLL 程式碼對應至其原始程式碼形式，因此偵錯時會需要這些檔案。 如果您是以舊版執行階段為目標，Visual Studio Tools for Unity 將會使用 DLL 和 PDB 中的資訊來建立 DLL.MDB 檔案，這是舊版 Unity 指令碼引擎所使用的偵錯符號格式。 如果您是以新的執行階段為目標，並使用可攜式 PDB，則 Visual Studio Tools for Unity 將不會嘗試執行任何的符號轉換，因為新的 Unity 執行階段是以原生方式使用可攜式 PDB。
 
-   有關產生 PDB 的更多資訊，請參閱[此處](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations)。 如果您是以新的執行階段為目標，請確定 [偵錯資訊] 設定為 [可攜式]，以便正確地產生可攜式 PDB。 如果您是以舊版執行階段為目標，則需要使用 [完整]。
+   有關產生 PDB 的更多資訊，請參閱[此處](/visualstudio/debugger/how-to-set-debug-and-release-configurations)。 如果您是以新的執行階段為目標，請確定 [偵錯資訊] 設定為 [可攜式]，以便正確地產生可攜式 PDB。 如果您是以舊版執行階段為目標，則需要使用 [完整]。
 
 4. 為程式碼偵錯。 您現在可以連同 Unity 專案的原始程式碼一起為 DLL 原始程式碼偵錯，並使用您慣用的所有偵錯功能，例如中斷點和逐步執行程式碼。
 

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5e4cb74b075a0dc9fe538ec8a09a455b30d2964b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845292"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918913"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ partial class MyDslClipboardCommandSet
 覆寫 DslPackage 專案中的*MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()`。
 
  **透過複製和貼上來保留圖形版面配置。**
-當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)中的範例所示範。
+當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 
 
  若要達成這個效果，請將圖形和連接線加入至複製的 ElementGroupPrototype。 最方便的覆寫方法是 ElementOperations.CreateElementGroupPrototype()。 若要執行這項操作，請將下列程式碼加入至 DSL 專案：
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **在選擇的位置貼上圖形，例如目前的游標位置。**
-當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)中的範例所示範。
+當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。
 
  若要達成這個效果，請覆寫 `ClipboardCommandSet.ProcessOnMenuPasteCommand()` 以使用特定位置版本的 `ElementOperations.Merge()`。 若要執行這項操作，請在 DslPackage 專案中加入下列程式碼：
 
@@ -564,4 +564,5 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>請參閱
- [自訂專案的建立和移動](../modeling/customizing-element-creation-and-movement.md)[如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)[自訂刪除行為](../modeling/customizing-deletion-behavior.md)[範例： VMSDK 電路圖表範例](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [自訂專案的建立和移動](../modeling/customizing-element-creation-and-movement.md)[如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)[自訂刪除行為](../modeling/customizing-deletion-behavior.md)
+ 

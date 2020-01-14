@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d792f13e073f11c8e6d3a652c1d041902f1209c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 2a1611f8fcc1ba7f754b6d178b70180678cd06d6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848924"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917616"
 ---
 # <a name="image-service-and-catalog"></a>映射服務和目錄
 本指南包含採用 Visual Studio 2015 中引進的 Visual Studio 映射服務和映射目錄的指引和最佳作法。
@@ -720,7 +720,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. 更新您的程式碼，以使用「映射服務」透過更新的對應來要求「名字」。 （這可能表示更新至 managed 程式碼的**CrispImages** ，或從映射服務要求 HBITMAPs 或 HICONs，並針對機器碼傳遞這些專案）。
 
 ## <a name="testing-your-images"></a>測試您的映射
- 您可以使用影像庫檢視器工具來測試您的映射資訊清單，以確定所有專案都已正確撰寫。 您可以在[Visual Studio 2015 SDK](visual-studio-sdk.md)中找到此工具。 此工具和其他專案的檔可在[這裡](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN)找到。
+ 您可以使用影像庫檢視器工具來測試您的映射資訊清單，以確定所有專案都已正確撰寫。 您可以在[Visual Studio 2015 SDK](visual-studio-sdk.md)中找到此工具。 此工具和其他專案的檔可在[這裡](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015)找到。
 
 ## <a name="additional-resources"></a>其他資源
 

@@ -6,14 +6,14 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706825"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916946"
 ---
-# <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio 如何建立容器化應用程式
+# <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio 如何建置容器化應用程式
 
 無論您是從 Visual Studio IDE 建立，或是設定命令列組建，都必須知道 Visual Studio 如何使用 Dockerfile 來建立您的專案。  基於效能考慮，Visual Studio 會遵循容器化應用程式的特殊流程。 當您藉由修改 Dockerfile 自訂您的組建流程時，瞭解 Visual Studio 組建專案的方式特別重要。
 
@@ -64,7 +64,7 @@ ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 
 如果您想要在 Visual Studio 外部建立，您可以使用 `docker build` 或 `MSBuild` 從命令列建立。
 
-### <a name="docker-build"></a>docker 組建
+### <a name="docker-build"></a>docker build
 
 若要從命令列建立容器化解決方案，您通常可以針對方案中的每個專案使用命令 `docker build <context>`。 您會提供*組建內容*引數。 Dockerfile 的*組建內容*是本機電腦上的資料夾，用來做為產生映射的工作資料夾。 例如，當您將檔案複製到容器時，它就是您複製檔案的資料夾。  在 .NET Core 專案中，使用包含方案檔（.sln）的資料夾。  以相對路徑表示，此引數通常會是 "：" （代表專案資料夾中的 Dockerfile），以及其父資料夾中的方案檔。  針對 .NET Framework 專案，組建內容是專案資料夾，而不是方案資料夾。
 
@@ -103,7 +103,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="volume-mapping"></a>磁片區對應
 
-若要在容器中工作的偵錯工具，Visual Studio 使用磁片區對應，從主機電腦對應偵錯工具和 NuGet 資料夾。 以下是裝載于容器中的磁片區：
+若要在容器中工作的偵錯工具，Visual Studio 使用磁片區對應，從主機電腦對應偵錯工具和 NuGet 資料夾。 磁片區對應會在[這裡](https://docs.docker.com/storage/volumes/)的 Docker 檔中說明。 以下是裝載于容器中的磁片區：
 
 |||
 |-|-|
@@ -116,11 +116,11 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="ssl-enabled-aspnet-core-apps"></a>已啟用 SSL 的 ASP.NET Core 應用程式
 
-Visual Studio 中的容器工具支援使用 dev 憑證來對具備 SSL 功能的 ASP.NET 核心應用程式進行程式開發，方法與您預期它在沒有容器的情況下運作。 若要進行這項工作，Visual Studio 新增幾個步驟來匯出憑證，並將它提供給容器使用。 流程如下：
+Visual Studio 中的容器工具支援使用 dev 憑證來對具備 SSL 功能的 ASP.NET 核心應用程式進行程式開發，方法與您預期它在沒有容器的情況下運作。 若要進行這項工作，Visual Studio 新增幾個步驟來匯出憑證，並將它提供給容器使用。 以下是在容器中進行偵錯工具時，Visual Studio 為您處理的流程：
 
-1. 請確定本機開發憑證存在，並透過 `dev-certs` 工具在主機電腦上受到信任。
+1. 確保本機開發憑證存在，並透過 `dev-certs` 工具在主機電腦上受到信任。
 2. 使用儲存在此特定應用程式之使用者秘密存放區中的安全密碼，將憑證匯出至%APPDATA%\ASP.NET\Https。
-3. 磁片區掛接下列目錄：
+3. 磁片區-裝載下列目錄：
 
    - *%APPDATA%\Microsoft\UserSecrets*
    - *%APPDATA%\ASP.NET\Https*
@@ -140,7 +140,9 @@ ASP.NET Core 會尋找符合*Https*資料夾下元件名稱的憑證，這就是
 }
 ```
 
-如需在容器中使用 SSL 搭配 ASP.NET Core 應用程式的詳細資訊，請參閱[使用 Docker OVER HTTPS 裝載 ASP.NET Core 映射](https://docs.microsoft.com/aspnet/core/security/docker-https)。
+如果您的設定同時支援容器化和非容器化組建，則您應該使用環境變數，因為這些路徑是容器環境特有的。
+
+如需有關在容器中使用 SSL 搭配 ASP.NET Core 應用程式的詳細資訊，請參閱[使用 Docker OVER HTTPS 裝載 ASP.NET Core 映射](/aspnet/core/security/docker-https)）。
 
 ## <a name="debugging"></a>偵錯
 
@@ -189,6 +191,6 @@ Visual Studio 使用自訂容器進入點，視專案類型和容器作業系統
 
 ## <a name="see-also"></a>請參閱
 
-Windows
-[Linux 上的 windows 容器上](/virtualization/windowscontainers/deploy-containers/linux-containers)的[MSBuild](../msbuild/msbuild.md)
-[Dockerfile](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
+
+Windows 上 windows[Linux 容器](/virtualization/windowscontainers/deploy-containers/linux-containers)上的 [MSBuild](../msbuild/msbuild.md)[Dockerfile](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile) 
+

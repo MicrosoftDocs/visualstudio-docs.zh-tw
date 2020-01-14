@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0d9887e3c7cf283bff453e458502400a7ade1a41
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 85573309e594fab49db75115a48b5a4e98e44de3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849561"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918849"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定義鎖定原則來建立唯讀區段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "75849561"
 > [!NOTE]
 > 藉由使用反映，可以規避鎖定原則。 它為協力廠商開發人員提供清楚的界限，但不提供強大的安全性。
 
- 如需詳細資訊和範例，請 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)][視覺效果和模型化 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)網站。
+ 如需詳細資訊，請 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)][視覺效果和模型 SDK](https://www.microsoft.com/download/details.aspx?id=48148)網站。
 
 ## <a name="setting-and-getting-locks"></a>設定和取得鎖定
  您可以在存放區、資料分割或個別元素上設定鎖定。 例如，此語句會防止刪除模型專案，而且也會防止其屬性遭到變更：

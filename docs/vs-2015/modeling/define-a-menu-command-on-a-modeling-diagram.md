@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5dac0a77b47f604ae5a10f4c8bcfb9d54b51f26c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: fc633c0cad752203b8dadca81de0f18f4e9b1b3e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850467"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918840"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>在模型圖上定義功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -363,4 +363,5 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>請參閱
- [定義和安裝模型擴充](../modeling/define-and-install-a-modeling-extension.md)功能[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[在模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)定義[自訂模型工具箱專案](../modeling/define-a-custom-modeling-toolbox-item.md)[定義 uml 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)使用 uml api 程式[設計與 uml API](../modeling/programming-with-the-uml-api.md)進行[編輯 uml 順序圖表](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)[範例：命令以在 uml 圖表上對齊圖形](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [定義和安裝模型擴充](../modeling/define-and-install-a-modeling-extension.md)[功能擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[在模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)定義[自訂模型工具箱專案](../modeling/define-a-custom-modeling-toolbox-item.md)[定義 uml 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)使用 uml api[以 uml api 進行程式設計](../modeling/programming-with-the-uml-api.md)[編輯 uml 順序圖表](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)
+ 

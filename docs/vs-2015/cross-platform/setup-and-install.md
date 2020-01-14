@@ -6,12 +6,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 430c54527ad0a4647bb750c505942242688aaa17
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dbdeeab49da1a63562bb9a4188a264a8d3d99da2
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297731"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917038"
 ---
 # <a name="setup-and-install"></a>設定和安裝
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,8 +97,8 @@ ms.locfileid: "74297731"
   
 2. 從 [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) 下載並安裝 Xcode，然後遵循[將您的帳戶新增至 XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com) 中所述，新增您的 Apple 識別碼。  
   
-3. 遵循 [安裝和設定 Xamarin.iOS](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (xamarin.com) 上的指示，下載並安裝 Xamarin。  
+3. 遵循 [安裝和設定 Xamarin.iOS](/xamarin/ios/get-started/installation/mac) (xamarin.com) 上的指示，下載並安裝 Xamarin。  
   
-4. 當您在 Windows 和 Mac 電腦上完成安裝 Xamarin 之後，請依照[連線到 Mac (英文)](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (xamarin.com) 上的指示執行，如此就能在 Windows 電腦上透過 Visual Studio 使用 iOS 和 Mac。  
+4. 當您在 Windows 和 Mac 電腦上完成安裝 Xamarin 之後，請依照[連線到 Mac (英文)](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (xamarin.com) 上的指示執行，如此就能在 Windows 電腦上透過 Visual Studio 使用 iOS 和 Mac。  
   
      請注意，這兩部電腦必須位於相同的區域網路中。

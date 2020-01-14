@@ -15,23 +15,23 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 76ce346430a249b562f00e17c3173e79128d1708
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 854e9a492f422957e64e1a4b6a00bc7c39b81c46
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669261"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919243"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702：複合字應該使用正確的大小寫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新檔，請參閱[CA1702：複合字的大小寫應正確](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly)。
+如需 Visual Studio 的最新檔，請參閱[CA1702：複合字的大小寫應正確](/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly)。
 
 |||
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
-|Category|Microsoft. 命名|
+|分類|Microsoft. 命名|
 |中斷變更|中斷-在元件上引發。<br /><br /> 非中斷-在型別參數上引發時。|
 
 ## <a name="cause"></a>原因

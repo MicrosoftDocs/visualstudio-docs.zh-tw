@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ca4d6a4097848021073bb77323fd0456f3dddc1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 42e3a4afec71b90a087ac927f5cbbbc0b181fadd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289808"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917546"
 ---
 # <a name="deploying-applications-services-and-components"></a>部署應用程式、服務和元件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,14 +36,14 @@ ms.locfileid: "74289808"
   
  下表列出各種不同部署情節的描述，以及詳細資訊的連結，這些資訊可幫助您成功完成這些情節。  
   
-## <a name="in-this-section"></a>本節內容  
+## <a name="in-this-section"></a>本章節內容  
   
-|部署情節|支援內容|  
+|部署案例|支援內容|  
 |-------------------------|------------------------|  
 |**發行至雲端：** 您可以使用 Visual Studio 將應用程式、服務和資料部署至 Microsoft Azure，讓它們可從任何地方取得。|[將應用程式發佈至 Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
 |**發佈 Windows Store 應用程式：** 您可以輕鬆地建立、提交及銷售您的應用程式，從 Microsoft Store 到全球各地的客戶。|[封裝、部署和查詢 Windows Store 應用程式](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
 |**發佈 Windows Phone 應用程式：** 您可以將新的應用程式或更新提交至現有應用程式，以在 Windows Phone 開發人員中心進行認證。|[發佈 Windows Phone 應用程式](https://developer.microsoft.com/)|  
-|**部署 ASP.NET 應用程式或服務：** 您可以使用幾種不同的方式來部署 ASP.NET 應用程式和服務。|[部署 ASP.NET web 應用程式和服務](https://docs.microsoft.com/aspnet/mvc/overview/deployment/)|  
+|**部署 ASP.NET 應用程式或服務：** 您可以使用幾種不同的方式來部署 ASP.NET 應用程式和服務。|[部署 ASP.NET web 應用程式和服務](/aspnet/mvc/overview/deployment/)|  
 |**部署 LightSwitch 應用程式或服務：** 使用 LightSwitch 建立應用程式和 OData 服務之後，您就可以將它們部署到 web 伺服器或 Microsoft Azure。|[部署 LightSwitch 應用程式](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
 |**發行 SharePoint 的應用程式：** 您可以將 SharePoint 應用程式發行至 Office Store 或內部組織的應用程式類別目錄。|[使用 Visual Studio 發行適用于 SharePoint 的應用程式](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
 |**發佈 Office 的應用程式：** 您可以將適用于 Office 的應用程式發行至 Office Store，或發佈至內部組織的應用程式類別目錄。|[發佈 Office 的應用程式](https://msdn.microsoft.com/library/office/fp123515.aspx)|  

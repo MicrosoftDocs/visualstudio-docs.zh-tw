@@ -6,18 +6,18 @@ ms.author: ghogen
 ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: af859c1c06820aa477869f6968e9c652bd525de6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516438"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916740"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>快速入門：在 Visual Studio 中搭配使用 Docker 與回應單一頁面應用程式
 
 使用 Visual Studio，您可以輕鬆地建置、偵錯和執行容器化的 ASP.NET Core 應用程式 (包括具有用戶端 JavaScript 的應用程式，例如 React.js 單一頁面應用程式)，並發佈到 Azure Container Registry (ACR)、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們將發佈到 ACR。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -47,7 +47,7 @@ ms.locfileid: "72516438"
 
    ![新 React.js 專案的螢幕擷取畫面](media/container-tools-react/vs2017/new-react-project.png)
 
-1. 以滑鼠右鍵按一下專案節點，然後選擇 [新增] > [Docker 支援]，將 Dockerfile 新增至您的專案。
+1. 以滑鼠右鍵按一下專案節點，然後選擇 [**新增**> **Docker 支援**]，將 Dockerfile 新增至您的專案。
 
    ![新增 Docker 支援](media/container-tools-react/vs2017/add-docker-support.png)
 
@@ -59,7 +59,7 @@ ms.locfileid: "72516438"
 
    ![新 React.js 專案的螢幕擷取畫面](media/container-tools-react/vs2019/new-react-project.png)
 
-1. 以滑鼠右鍵按一下專案節點，然後選擇 [新增] > [Docker 支援]，將 Dockerfile 新增至您的專案。
+1. 以滑鼠右鍵按一下專案節點，然後選擇 [**新增**> **Docker 支援**]，將 Dockerfile 新增至您的專案。
 
    ![新增 Docker 支援](media/container-tools-react/vs2017/add-docker-support.png)
 
@@ -173,7 +173,7 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ```
 
-1. 藉由移除 `**/bin` 來更新 .dockerignore 檔案。
+1. 藉由移除 `**/bin`來更新 .dockerignore 檔案。
 
 ## <a name="debug"></a>偵錯
 
@@ -227,7 +227,7 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
     | **DNS 首碼** | 全域唯一的名稱 | 用以唯一識別容器登錄的名稱。 |
     | **訂用帳戶** | 選擇您的訂用帳戶 | 要使用的 Azure 訂用帳戶。 |
     | **[資源群組](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中建立容器登錄的資源群組名稱。 選擇 [新增] 以建立新的資源群組。|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | 標準 | 容器登錄的服務層  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | 容器登錄的服務層  |
     | **登錄位置** | 接近您的位置 | 在[區域](https://azure.microsoft.com/regions/)中選擇您附近的 [位置]，或選擇將會使用容器登錄的其他服務所接近的位置。 |
 
     ![Visual Studio 的 [建立 Azure Container Registry] 對話方塊][0]

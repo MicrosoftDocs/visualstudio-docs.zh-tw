@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5303a8003d84af5e2a059d9f509e560204afa528
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301093"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918950"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>使用偵錯工具管理例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +150,7 @@ ms.locfileid: "74301093"
   
 3. 您可以針對特定的例外狀況 (選取此例外狀況，以滑鼠右鍵按一下，並選取/取消選取 [當使用者程式碼中未處理時繼續])，或整個例外狀況分類 (例如，所有 Common Language Runtime 例外狀況)，來變更此設定。  
   
-   例如，ASP.NET Web 應用程式將例外狀況轉換成 HTTP 500 狀態碼 ([Exception Handling in ASP.NET API (在 ASP.NET 應用程式開發介面中的例外狀況處理)](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling)) 加以處理，這可能無法幫助您判斷例外狀況的來源。 在下列範例中，使用者程式碼會呼叫擲回 `String.Format()` 的 <xref:System.FormatException>。 執行中斷，如下所示：  
+   例如，ASP.NET Web 應用程式將例外狀況轉換成 HTTP 500 狀態碼 ([Exception Handling in ASP.NET API (在 ASP.NET 應用程式開發介面中的例外狀況處理)](/aspnet/web-api/overview/error-handling/exception-handling)) 加以處理，這可能無法幫助您判斷例外狀況的來源。 在下列範例中，使用者程式碼會呼叫擲回 `String.Format()` 的 <xref:System.FormatException>。 執行中斷，如下所示：  
   
    ![使用者&#45;unhanlded 例外狀況時中斷](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
@@ -181,7 +181,7 @@ public class GenericException<T> : Exception
   
  ![加入泛型例外狀況](../debugger/media/addgenericexception.png "AddGenericException")  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [例外狀況之後繼續執行](../debugger/continuing-execution-after-an-exception.md)   
  [如何：在發生例外狀況後檢查系統程式碼](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [如何：使用原生執行時間檢查](../debugger/how-to-use-native-run-time-checks.md)   

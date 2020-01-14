@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: bc7e46af7e29ef554b80bd9244910e0c67d373af
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 09da3bd59163cbef8b33b1d5ece732330e32eac7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299762"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918924"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>了解在 Visual Studio 中建置 Xamarin.Forms 應用程式的基本概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ ms.locfileid: "74299762"
 
     - 請確認 [版本] 欄位設為 [最新穩定版] 。
 
-    - 按一下 **[安裝]** 。
+    - 按一下 [安裝]。
 
     - ![尋找並安裝 Newtonsoft NuGet 套件](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
 
@@ -93,7 +93,7 @@ ms.locfileid: "74299762"
 
 6. 建置方案，並確認沒有任何建置錯誤。
 
-## <a name="dataservice"></a> 寫入共用的資料服務程式碼
+## <a name="dataservice"></a> 撰寫共用的資料服務程式碼
  您可以在 **WeatherApp (可攜式)** 專案中撰寫可攜式類別庫 (PCL) 程式碼，進而跨所有平台共用。 系統會自動依據 iOS、Android 和 Windows Phone 專案，將 PCL 包含在應用程式套件中。
 
  若要執行此範例，您必須先在 [http://openweathermap.org/appid](https://openweathermap.org/appid) 註冊免費的 API 金鑰。
@@ -274,7 +274,7 @@ ms.locfileid: "74299762"
 
 5. 建置 WeatherApp PCL 專案，以確保程式碼正確。
 
-## <a name="test"></a> 使用 Visual Studio Emulator for Android 測試您的應用程式。
+## <a name="test"></a> 使用 Android 版 Visual Studio 模擬器測試您的應用程式
  您現在可以準備執行應用程式！ 現在，我們先執行 Android 版本以確認應用程式可從氣象服務取得資料。 您可在稍後加入更多 UI 項目之後，再執行 iOS 和 Windows Phone 版本 。 (注意：如果您是在 Windows 7 上執行 Visual Studio，請遵循相同的步驟，但改為使用 Xamarin Player)。
 
 1. 以滑鼠右鍵按一下 **WeatherApp.Droid** 專案，然後選取 [設定為啟始專案]，以將其設為啟始專案。
@@ -290,7 +290,7 @@ ms.locfileid: "74299762"
 ## <a name="finish"></a> 完成 UI 使其具備跨平台的原生外觀與風格
  Xamarin.Forms 可針對每個平台呈現原生的 UI 控制項，讓您的應用程式自動擁有原生的外觀與風格。 為了更清楚了解這項功能，讓我們先完成郵遞區號輸入欄位的 UI，並顯示從服務傳回的天氣資料。
 
-1. 以下列程式碼取代 **WeatherPage.xaml** 的內容。 請務必如上所述使用 **x:Name** 屬性來命名每個項目，才可從程式碼中參考這些項目。 Xamarin.Forms 也有提供一些 [版面配置選項](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com)；這裡的 WeatherPage 是使用 [StackLayout](https://docs.microsoft.com/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com)。
+1. 以下列程式碼取代 **WeatherPage.xaml** 的內容。 請務必如上所述使用 **x:Name** 屬性來命名每個項目，才可從程式碼中參考這些項目。 Xamarin.Forms 也有提供一些 [版面配置選項](/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com)；這裡的 WeatherPage 是使用 [StackLayout](/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com)。
 
    ```xaml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -380,7 +380,7 @@ ms.locfileid: "74299762"
    </ContentPage>
    ```
 
-    請注意 **OnPlatform** 標記在 Xamarin.Forms 中的使用方式。 **OnPlatform** 標記會選取應用程式目前執行所在平台專屬的屬性值 (請參閱 [External XAML Syntax](https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (xamarin.com)。 在這裡，我們會使用它來為資料欄位設定不同的文字色彩：在 Android 和 Windows Phone 上設為白色，iOS 則為黑色。 您可以針對任何屬性與資料類型使用 **OnPlatform** ，以在 XAML 的任意位置進行平台專屬的調整。 在程式碼後置檔案中，您可以使用 [Device.OnPlatform API](https://docs.microsoft.com/xamarin/xamarin-forms/platform/device) 來達到相同的目的。
+    請注意 **OnPlatform** 標記在 Xamarin.Forms 中的使用方式。 **OnPlatform** 標記會選取應用程式目前執行所在平台專屬的屬性值 (請參閱 [External XAML Syntax](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (xamarin.com)。 在這裡，我們會使用它來為資料欄位設定不同的文字色彩：在 Android 和 Windows Phone 上設為白色，iOS 則為黑色。 您可以針對任何屬性與資料類型使用 **OnPlatform** ，以在 XAML 的任意位置進行平台專屬的調整。 在程式碼後置檔案中，您可以使用 [Device.OnPlatform API](/xamarin/xamarin-forms/platform/device) 來達到相同的目的。
 
 2. 以下列程式碼取代 **WeatherPage.xaml.cs**中的 **GetWeatherBtn_Clicked** 事件處理常式。 此程式碼會驗證項目欄位中是否有郵遞區號、擷取該郵遞區號的資料、將整個畫面的繫結內容設定為產生的 Weather 執行個體，然後將按鈕的文字設為「再次搜尋」。 請注意，UI 中的每個標籤會繫結至 Weather 類別屬性，因此當您將畫面的繫結內容設定為 **Weather** 執行個體時，就會自動更新這些標籤。
 

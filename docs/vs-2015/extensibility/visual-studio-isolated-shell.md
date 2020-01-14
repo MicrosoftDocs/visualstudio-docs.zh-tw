@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 01917b9e78ee6129f09811ca2dc3e18c149c06f6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ef2d1cbffab5e38e603b0e50beb896f1c6efa23d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850381"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919197"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio 獨立模式 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 獨立模式 Shell 可讓您建立能夠與其他 Visual Studio �
   
  若要使用獨立的 shell 專案，您必須安裝 Visual Studio SDK。 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
- 若要建立獨立的 shell 應用程式，請從 Visual Studio Shell 隔離專案開始。 此專案包含開發和測試您自己的獨立 shell 應用程式所需的所有專案。 當您準備好要撰寫可部署應用程式的安裝程式時，您必須從[Microsoft Visual Studio shell （獨立模式）](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J)可轉散發套件取得獨立的 shell 可轉散發套件。  
+ 若要建立獨立的 shell 應用程式，請從 Visual Studio Shell 隔離專案開始。 此專案包含開發和測試您自己的獨立 shell 應用程式所需的所有專案。 當您準備好要撰寫可部署應用程式的安裝程式時，您必須從[Microsoft Visual Studio shell （獨立模式）](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)可轉散發套件取得獨立的 shell 可轉散發套件。  
   
 > [!NOTE]
 > 您必須先填寫簡短的客戶問卷，才可以存取獨立的 shell 可轉散發套件。  填完問卷後系統會將您導向至 Visual Studio Connect 頁面，內含可轉散發套件的下載連結。  您可以在後續造訪   **&#124; VISUAL Studio 2015 整合模式和獨立模式 SHELL**  索引標籤底下的 Visual Studio Connect 網站上找到下載連結。  

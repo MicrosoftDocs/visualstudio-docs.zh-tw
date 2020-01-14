@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c227748e1808aecabd9554b0e6b398a7c6c6df1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: b2fc47aa917fa9c9d5351fd313ec46ae4aaa0664
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986197"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918788"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Visual Studio Tools for Office 執行時間中的元件
   當您建立 Office 專案時，Visual Studio 會自動針對專案類型和專案的目標 .NET Framework，加入適用 [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] 組件的參考。 適用於 .NET Framework 3.5、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]和 [!INCLUDE[net_v45](includes/net-v45-md.md)]的 Office 擴充功能包含不同的組件。 如需 Office 擴充功能的詳細資訊，請參閱[Visual Studio Tools for Office 執行時間總覽](visual-studio-tools-for-office-runtime-overview.md)。
@@ -55,7 +55,7 @@ ms.locfileid: "72986197"
 |Microsoft.Office.Tools.Excel.v9.0.dll|提供 Excel 方案的主項目和主控制項。 如需詳細資訊，請參閱[使用擴充物件自動化 Excel](automating-excel-by-using-extended-objects.md)。|
 |Microsoft.Office.Tools.Outlook.v9.0.dll|提供可讓您在 Outlook VSTO 增益集中建立自訂表單區域的類別。|
 |Microsoft.Office.Tools.Word.v9.0.dll|提供 Word 方案的主項目和主控制項。 如需詳細資訊，請參閱[使用擴充物件自動化 Word](automating-word-by-using-extended-objects.md)。|
-|Microsoft.Office.Tools.v9.0.dll|提供下列類型：<br /><br /> - [RemoteBindableComponent](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90))類別，提供檔層級自訂中主控制項的資料系結功能。<br />-屬於 Visual Studio Tools for Office 執行時間基礎結構，但不適合直接從程式碼使用的其他類型。|
+|Microsoft.Office.Tools.v9.0.dll|提供下列類型：<br /><br /> - [RemoteBindableComponent](/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90))類別，提供檔層級自訂中主控制項的資料系結功能。<br />-屬於 Visual Studio Tools for Office 執行時間基礎結構，但不適合直接從程式碼使用的其他類型。|
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0.dll|提供下列類型：<br /><br /> -<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 屬性和 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> 介面，您可以用來快取檔層級自訂中的資料物件。 如需詳細資訊，請參閱快取[資料](caching-data.md)。<br />-Visual Studio Tools for Office 執行時間可以擲回的例外狀況。<br />-屬於 Visual Studio Tools for Office 執行時間基礎結構，但不適合直接從程式碼使用的其他類型。|
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|提供 <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> 介面，您可以實作這個介面來執行額外的安裝步驟，做為 Office 方案之 ClickOnce 安裝程式的最後一個步驟。 如需詳細資訊，請參閱[Advanced Office solution deployment](/previous-versions/visualstudio/visual-studio-2010/dd234217(v=vs.100))。|
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|提供下列類型：<br /><br /> -<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 類別，您可以用來以程式設計方式將自訂群組件附加至檔，並存取檔中的快取資料。 如需詳細資訊，請參閱[使用 ServerDocument 類別管理伺服器上的檔](managing-documents-on-a-server-by-using-the-serverdocument-class.md)。<br />-數個類別，代表檔層級自訂中快取資料的階層。 如需詳細資訊，請參閱在[伺服器上存取檔中的資料](accessing-data-in-documents-on-the-server.md)。|

@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 01363ab1588507f31dc74800c85b159039c9bab6
-ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
+ms.openlocfilehash: 01f604de756ca86e40426a97776f1a1d43b024f1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74239423"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916861"
 ---
 # <a name="using-net-4x-in-unity"></a>在 Unity 中使用 .NET 4.x
 
@@ -21,7 +21,7 @@ C# 和 .NET (以 Unity 指令碼為基礎的技術) 持續接收到更新，因�
 
 隨著 Unity 2017.1 的發行，Unity 引進將其指令碼執行階段升級至 .NET 4.6 (C# 6 相容版本) 的實驗性版本。 在 Unity 2018.1 中，不再將 .NET 4.x 對等執行階段視為實驗性，現在會將舊版 .NET 3.5 對等執行階段視為舊版本。 而隨著 Unity 2018.3 的發行，Unity 預測會將已升級的指令碼執行階段設為預設選取項目，甚至進一步更新為 C# 7。 如需本藍圖的詳細資訊和最新更新，請閱讀 Unity 的[部落格文章](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)，或瀏覽其 [Experimental Scripting Previews 論壇](https://forum.unity.com/forums/experimental-scripting-previews.107/)。 在此同時，請參閱下列各節，來深入了解 .NET 4.x 指令碼執行階段現在可用的新功能。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
 
 * [Unity 2017.1 或更新版本](https://unity3d.com/) (建議使用 2018.2)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
@@ -146,7 +146,7 @@ public int Health { get; set; } = 100;
 
 ### <a name="string-interpolation"></a>字串插補
 
-使用較舊的 .NET 3.5 執行階段，字串串連需要冗長的必要語法。 現在使用 .NET 4.x 執行階段，[`$` 字串插補](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated)功能允許使用更直接易懂的語法將運算式插入至字串：
+使用較舊的 .NET 3.5 執行階段，字串串連需要冗長的必要語法。 現在使用 .NET 4.x 執行階段，[`$` 字串插補](/dotnet/csharp/language-reference/tokens/interpolated)功能允許使用更直接易懂的語法將運算式插入至字串：
 
 ```csharp
 // .NET 3.5
@@ -159,7 +159,7 @@ Debug.Log($"Player health: {Health}");
 
 ### <a name="expression-bodied-members"></a>運算式主體成員
 
-使用 .NET 4.x 執行階段中可用的較新 C# 語法，[Lambda 運算式](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)可以取代函數主體，讓它們更為簡潔：
+使用 .NET 4.x 執行階段中可用的較新 C# 語法，[Lambda 運算式](/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)可以取代函數主體，讓它們更為簡潔：
 
 ```csharp
 // .NET 3.5
@@ -181,9 +181,9 @@ public string PlayerHealthUiText => $"Player health: {Health}";
 
 ### <a name="task-based-asynchronous-pattern-tap"></a>以工作為基礎的非同步模式 (TAP)
 
-[非同步程式設計](https://docs.microsoft.com/dotnet/csharp/async)允許執行耗時作業，而不會讓您的應用程式變得無回應。 此功能也可讓您的程式碼先等待耗時作業完成，再繼續執行根據這些作業結果的程式碼。 例如，您可以等待載入檔案或完成網路作業。
+[非同步程式設計](/dotnet/csharp/async)允許執行耗時作業，而不會讓您的應用程式變得無回應。 此功能也可讓您的程式碼先等待耗時作業完成，再繼續執行根據這些作業結果的程式碼。 例如，您可以等待載入檔案或完成網路作業。
 
-在 Unity 中，通常會使用[協同程式](https://docs.unity3d.com/Manual/Coroutines.html)完成非同步程式設計。 不過，從 C# 5 之後，在 .NET 開發中慣用的非同步程式設計方法已是搭配使用 [ 和 ](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) 關鍵字與 `async`System.Threading.Task`await`的[工作非同步模式 (TAP)](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task)。 總而言之，在 `async` 函數中，您可以 `await` (等待) 工作完成，而不需要封鎖更新應用程式的其餘部分：
+在 Unity 中，通常會使用[協同程式](https://docs.unity3d.com/Manual/Coroutines.html)完成非同步程式設計。 不過，從 C# 5 之後，在 .NET 開發中慣用的非同步程式設計方法已是搭配使用 `async` 和 `await` 關鍵字與 [System.Threading.Task](/dotnet/api/system.threading.tasks.task)的[工作非同步模式 (TAP)](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)。 總而言之，在 `async` 函數中，您可以 `await` (等待) 工作完成，而不需要封鎖更新應用程式的其餘部分：
 
 ```csharp
 // Unity coroutine
@@ -229,7 +229,7 @@ TAP 是一個複雜主題，而開發人員應該考慮其 Unity 特定細微差
 
 這些秘訣可協助您在 Unity 中開始使用 TAP：
 
-* 要等待的非同步函數應該有傳回型別 [`Task`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task) 或 [`Task<TResult>`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1)。
+* 要等待的非同步函數應該有傳回型別 [`Task`](/dotnet/api/system.threading.tasks.task) 或 [`Task<TResult>`](/dotnet/api/system.threading.tasks.task-1)。
 * 傳回工作的非同步函數應該在其名稱附加尾碼 **"Async"** 。 "Async" 尾碼有助於指出應該一律等候函數。
 * 只會使用可從傳統同步程式碼引發 async 函數之函數的 `async void` 傳回型別。 這類函數本身無法等候，而且不應該在其名稱中有 "Async" 尾碼。
 * 根據預設，Unity 使用 UnitySynchronizationContext 確保在主要執行緒上執行 async 函數。 Unity API 無法在主要執行緒外部存取。
@@ -274,7 +274,7 @@ private void RecordHighScore(string playerName)
 
 ### <a name="caller-info-attributes"></a>呼叫端資訊屬性
 
-[呼叫端資訊屬性](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/caller-information)提供方法呼叫端的相關資訊。 您必須針對要與「呼叫端資訊」屬性搭配使用的每個參數提供預設值：
+[呼叫端資訊屬性](/dotnet/csharp/programming-guide/concepts/caller-information)提供方法呼叫端的相關資訊。 您必須針對要與「呼叫端資訊」屬性搭配使用的每個參數提供預設值：
 
 ```csharp
 private void Start ()
@@ -300,7 +300,7 @@ public void ShowCallerInfo(string message,
 
 ### <a name="using-static"></a>using static
 
-[using static](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using-static) 可讓您使用靜態函數，而不需要鍵入其類別名稱。 如果您需要使用相同類別中的數個靜態函數，則使用 using static 可以節省空間和時間：
+[using static](/dotnet/csharp/language-reference/keywords/using-static) 可讓您使用靜態函數，而不需要鍵入其類別名稱。 如果您需要使用相同類別中的數個靜態函數，則使用 using static 可以節省空間和時間：
 
 ```csharp
 // .NET 3.5
@@ -344,8 +344,8 @@ public class UsingStaticExample: MonoBehaviour
 ## <a name="additional-resources"></a>其他資源
 
 * [Unity Blog - Scripting Runtime Improvements in Unity 2018.2](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) (Unity 部落格 - Unity 2018.2 中的指令碼執行階段改善)
-* [C# 的歷程記錄](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-version-history)
-* [C# 6 的新功能](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-6)
+* [C# 的歷程記錄](/dotnet/csharp/whats-new/csharp-version-history)
+* [C# 6 的新功能](/dotnet/csharp/whats-new/csharp-6)
 * [Asynchronous programming in Unity, Using Coroutine and TAP](https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap) (Unity 中使用協同程式和 TAP 的非同步程式設計)
 * [Async-Await Instead of Coroutines in Unity 2017](http://www.stevevermeulen.com/index.php/2017/09/using-async-await-in-unity3d-2017/) (Unity 2017 中的 Async-Await 而非協同程式)
 * [Unity Forum - Experimental Scripting Previews](https://forum.unity.com/forums/experimental-scripting-previews.107/) (Unity 論壇 - Experimental Scripting Previews)

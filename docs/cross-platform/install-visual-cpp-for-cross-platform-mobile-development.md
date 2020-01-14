@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: bda6d8e20064ab2197408db6b9a55a86325515e8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c3ea8c91c54586cf54b82566a4803b464e01750c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846727"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916487"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>安裝 C++ 的跨平台行動裝置應用程式開發
 
@@ -98,7 +98,7 @@ Visual Studio 安裝程式包括**具有C++** 工作負載的行動裝置開發�
 
 您可以在 Android SDK 目錄重新執行 SDK Manager 應用程式來更新 SDK，並安裝選擇性工具和其他 API 層級。 除非您使用 [以系統管理員身分執行] 執行 SDK Manager 應用程式，否則可能無法安裝更新。 如果您有建置 Android 應用程式的問題，請檢查 SDK Manager 以確認已安裝的 SDK 是否有更新。
 
-若要使用 Android SDK 隨附的一些 Android 模擬器，您可能需要設定硬體加速。 如需詳細資訊，請參閱[適用于模擬器效能的硬體加速（hyper-v & HAXM）](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin)。
+若要使用 Android SDK 隨附的一些 Android 模擬器，您可能需要設定硬體加速。 如需詳細資訊，請參閱[適用于模擬器效能的硬體加速（hyper-v & HAXM）](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin)。
 
 在大多數情況中，Visual Studio 皆可偵測您已安裝之協力廠商軟體的組態，並保留內部環境變數中的安裝路徑。 您可以在 Visual Studio IDE 中覆寫這些跨平台開發工具的預設路徑。
 

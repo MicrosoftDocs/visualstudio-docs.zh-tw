@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7d76bf1a889f7c91ced6b85ce16ebeb6e9a1b75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dd46d2164ccb3cd26831160235b992d699229e2c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737517"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916186"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>錯誤：遠端電腦未顯示於 [遠端連線] 對話方塊
 如果遠端電腦沒有出現在 [遠端連接] 對話方塊中，請檢查下列常見的原因。
 
- 如果您使用受控相容性模式，請參閱 Visual Studio 2010 文件：[Troubleshooting Remote Debugging - Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100)) (疑難排解遠端偵錯 - Visual Studio 2010)。
+ 如果您使用受控相容性模式，請參閱 Visual Studio 2010 文件：[Troubleshooting Remote Debugging - Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100)) (疑難排解遠端偵錯 - Visual Studio 2010)。
 
 ### <a name="common-causes-for-this-error"></a>這項錯誤的常見原因
 

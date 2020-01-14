@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 23abafcae0e777216a8880adc05ecac38d5b3f0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27837390306ad29da55c7c5262ecd8fa6bcf75b3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961946"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917371"
 ---
 # <a name="set-up-named-authentication-credentials"></a>設定具名驗證認證
 
@@ -39,7 +39,7 @@ ms.locfileid: "62961946"
 
 ## <a name="next-steps"></a>後續步驟
 
-- [Web Apps 的一般概觀](https://docs.microsoft.com/azure/app-service/)
-- [將您的應用程式部署至 Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
-- [使用 Visual Studio 部署 WebJob](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
-- [建立及部署雲端服務](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
+- [Web Apps 的一般概觀](/azure/app-service/)
+- [將您的應用程式部署至 Azure App Service](/azure/app-service/app-service-deploy-local-git) 
+- [使用 Visual Studio 部署 WebJob](/azure/app-service/websites-dotnet-deploy-webjobs)
+- [建立及部署雲端服務](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 54239b49344a5e29e7f837d22840f997c4b9fbe2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845064"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915804"
 ---
 # <a name="installation"></a>安裝
 
@@ -137,7 +137,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > CNTK 目前不支援 macOS。
 
-若要安裝 CNTK Python 套件，請參閱[如何安裝 CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine) \(英文\)。
+若要安裝 CNTK Python 套件，請參閱[如何安裝 CNTK](/cognitive-toolkit/Setup-CNTK-on-your-machine) \(英文\)。
 
 ### <a name="tensorflow"></a>Tensorflow
 

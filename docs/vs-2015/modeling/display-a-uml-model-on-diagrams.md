@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b43d4353e325bb81a29fe39106ac13e1ddcf96a9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 12c6cecf79b0c20ea2c110efa432d5ccb9f38863
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849474"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916128"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>在圖表上顯示 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -379,4 +379,5 @@ namespace AlignCommand
 ```
 
 ## <a name="see-also"></a>請參閱
- [擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[導覽 uml 模型](../modeling/navigate-the-uml-model.md)[範例：對齊圖表功能表命令的圖形](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)[範例：建立專案、圖形和](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)造型
+ [擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[導覽 uml 模型](../modeling/navigate-the-uml-model.md)
+ 

@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac1a2812cb86108d32d769595affd53fc402ff4
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: d7bda9882a8f46f3b32c658db952a2eaf73d3fb7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777716"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916478"
 ---
-# <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
+# <a name="visual-studio-emulator-for-android"></a>適用於 Android 的 Visual Studio 模擬器
 
 Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式。 它提供虛擬化環境，讓您不需要實體裝置，便可以在其中偵錯及測試 Android 應用程式。 它也為您的應用程式原型提供一個隔離環境。
 
@@ -25,10 +25,10 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
 > 在大部分情況下，建議使用 Google Android 模擬器，而不是 Visual Studio 的 Android 模擬器：
 > - Visual Studio Emulator for Android 在 Visual Studio 2015 之後不受支援。
 > - Android 6.0 版以上的模擬器映像不適用於 Visual Studio Emulator for Android。
-> - Google Android 模擬器現在支援 [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v)。
+> - Google Android 模擬器現在支援 [Hyper-V](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v)。
 > - Visual Studio Tools for Apache Cordova 可與 Google Android 模擬器搭配使用。 如需詳細資訊，請參閱[在 Android 上執行 Apache Cordova 應用程式](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (請注意，您不再需要停用 Hyper-V，如本文中所述)。
 >
-> 如需設定和使用 Google Android 模擬器的詳細資訊，請參閱 [Android Emulator 安裝](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)。
+> 如需設定和使用 Google Android 模擬器的詳細資訊，請參閱 [Android Emulator 安裝](/xamarin/android/get-started/installation/android-emulator/)。
 
  Visual Studio Emulator for Android 的設計目的，是為了提供與實際裝置相當的效能。 不過，建議您先在實體裝置上測試應用程式，再發行應用程式。
 
@@ -105,4 +105,4 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
 - 使用 Visual Studio 或模擬器管理員中的 [傳送笑臉] 工具回報問題。
 
 ## <a name="see-also"></a>請參閱
- [Android 版 Visual Studio 模擬器的系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) [針對 Android 版 Visual Studio 模擬器進行疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ 適用于[android 的 Visual Studio 模擬器的系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)[疑難排解適用于 Android 的 Visual Studio 模擬器](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

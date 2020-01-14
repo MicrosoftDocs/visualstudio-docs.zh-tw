@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: ae6449613d273c6e0f8302b8a0b604fe91ebc847
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d8257e0833da470554ce331c30cd0edf74122093
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911748"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915946"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>使用 Visual Studio 來發佈雲端服務
 
@@ -31,13 +31,13 @@ Visual Studio 可直接將應用程式發佈至 Azure，並支援雲端服務的
 
 在發佈 Azure 應用程式時，可以執行下列其中一項工作：
 
-- 建立服務封裝：您可以使用此套件和服務設定檔，從[Azure 入口網站](https://portal.azure.com)將應用程式發佈至部署環境。
+- 建立服務封裝：您可以從 [Azure 入口網站](https://portal.azure.com)，使用此封裝和服務組態檔將應用程式發佈至部署環境。
 
-- 從 Visual Studio 發佈您的 Azure 專案：若要將應用程式直接發佈至 Azure，請使用 [發行嚮導]。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](vs-azure-tools-publish-azure-application-wizard.md)。
+- 從 Visual Studio 發行 Azure 專案：使用 [發行精靈] 可直接將應用程式發行至 Azure。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](vs-azure-tools-publish-azure-application-wizard.md)。
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>從 Visual Studio 建立服務封裝
 
-1. 準備好發佈應用程式時，請開啟 [方案總管]，開啟包含角色的 Azure 專案的捷徑功能表，然後選擇 [發佈]。
+1. 當您準備好要發行應用程式時，請開啟 [方案總管]，再開啟包含角色之 Azure 專案的捷徑功能表，然後選擇 [發行]。
 
 1. 若只要建立服務封裝，請遵循下列步驟：
 
@@ -67,13 +67,13 @@ Visual Studio 可直接將應用程式發佈至 Azure，並支援雲端服務的
 
 ### <a name="requirements-for-using-web-deploy"></a>使用 Web Deploy 的需求
 
-- **僅供開發和測試之**用：變更會直接對執行 web 角色的虛擬機器進行。 如果此虛擬機器必須回收，您就會遺失變更，因為您發佈的原始封裝會用來重新建立角色的虛擬機器。 重新發佈應用程式以取得 Web 角色的最新變更。
+- **只能用於開發和測試目的：** 系統會直接對執行 Web 角色的虛擬機器進行變更。 如果此虛擬機器必須回收，您就會遺失變更，因為您發佈的原始封裝會用來重新建立角色的虛擬機器。 重新發佈應用程式以取得 Web 角色的最新變更。
 
-- **只能更新 web 角色**：無法更新背景工作角色。 此外，您不能更新 `web role.cs` 中的 `RoleEntryPoint`。
+- **只能更新 Web 角色：** 無法更新背景工作角色。 此外，您不能更新 `web role.cs` 中的 `RoleEntryPoint`。
 
-- 只能**支援 web 角色的單一實例**：您的部署環境中不能有任何 web 角色的多個實例。 不過，可支援多個各只有一個執行個體的 Web 角色。
+- **只能支援 Web 角色的單一執行個體：** 所有 Web 角色在部署環境中都不能有多個執行個體。 不過，可支援多個各只有一個執行個體的 Web 角色。
 
-- **啟用遠端桌面**連線：此需求可讓 Web Deploy 使用使用者和密碼來連線到虛擬機器，以將變更部署至執行 INTERNET INFORMATION SERVICES （IIS）的伺服器。 此外，您可能需要連線到虛擬機器，以將信任的憑證新增到此虛擬機器上的 IIS。 (此憑證可確保 Web Deploy 所使用的 IIS 的遠端連線安全無虞。)
+- **啟用遠端桌面連線：** 此需求讓 Web Deploy 能夠使用使用者名稱和密碼來連線到虛擬機器，以將變更部署到執行網際網路資訊服務 (IIS) 的伺服器。 此外，您可能需要連線到虛擬機器，以將信任的憑證新增到此虛擬機器上的 IIS。 (此憑證可確保 Web Deploy 所使用的 IIS 的遠端連線安全無虞。)
 
 下列程序假設您是使用 [發佈 Azure 應用程式] 精靈。
 
@@ -120,7 +120,7 @@ Visual Studio 可直接將應用程式發佈至 Azure，並支援雲端服務的
 
    a. 若要連接至執行 Web 角色的虛擬機器，請在 [雲端總管] 或 [伺服器總管] 中選取 Web 角色的執行個體，然後選擇 [使用遠端桌面連接] 命令。 如需如何連線至虛擬機器的詳細步驟，請參閱[使用 Visual Studio 啟用 Azure 雲端服務中角色的遠端桌面連線](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)。 您的瀏覽器會提示您下載 `.rdp` 檔案。
 
-   b. 若要新增 SSL 憑證，請開啟 IIS 管理員中的管理服務。 在 IIS 管理員中，開啟 [動作] 窗格中的 [繫結] 連結來啟用 SSL。 [新增站台繫結] 對話方塊隨即出現。 選擇 [新增]，然後在 [類型] 下拉式清單中選擇 HTTPS。 在 [SSL 憑證] 清單中，選擇您已透過 CA 簽署並上傳至 Azure 入口網站的 SSL 憑證。 如需詳細資訊，請參閱 [設定管理服務的連線設定](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10))。
+   b. 若要新增 SSL 憑證，請開啟 IIS 管理員中的管理服務。 在 IIS 管理員中，開啟 [動作] 窗格中的 [繫結] 連結來啟用 SSL。 [新增站台繫結] 對話方塊隨即出現。 選擇 [新增]，然後在 [類型] 下拉式清單中選擇 HTTPS。 在 [SSL 憑證] 清單中，選擇您已透過 CA 簽署並上傳至 Azure 入口網站的 SSL 憑證。 如需詳細資訊，請參閱 [設定管理服務的連線設定](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10))。
 
       > [!NOTE]
       > 如果您新增受信任的 SSL 憑證，[發佈精靈] 中就不會再出現黃色警告三角形。

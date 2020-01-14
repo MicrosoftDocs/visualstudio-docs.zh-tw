@@ -10,12 +10,12 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46b48370847cbb2cf8b171342aff9baf38c40a22
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e2f4926a503304491164635b983353ba7f3bb0f6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295548"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915975"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>如何：將擴充性專案遷移至 Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "74295548"
   
 2. 選取專案中的 VS SDK 參考元件，並以滑鼠右鍵按一下並**移除**，以將其移除。  
   
-3. 新增 VS SDK 參考元件的 NuGet 版本。  仍在 [**方案總管參考**] 節點中，開啟 [**管理 NuGet 套件 ...** ] 對話方塊中，新增使用者帳戶。  如果您想要深入瞭解此對話方塊，請參閱[使用對話方塊管理 NuGet 套件](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)。 VS SDK 參考元件會在[nuget.org](https://www.nuget.org/) by [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)發行。  
+3. 新增 VS SDK 參考元件的 NuGet 版本。  仍在 [**方案總管參考**] 節點中，開啟 [**管理 NuGet 套件 ...** ] 對話方塊中，新增使用者帳戶。  如果您想要深入瞭解此對話方塊，請參閱[使用對話方塊管理 NuGet 套件](/nuget/consume-packages/install-use-packages-visual-studio)。 VS SDK 參考元件會在[nuget.org](https://www.nuget.org/) by [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)發行。  
   
 4. 使用**nuget.org**作為您的**套件來源**，搜尋符合所需參考元件（例如： VisualStudio）的 nuget 套件名稱，並將它安裝在您的專案中。  NuGet 可能會加入多個參考元件，以便滿足初始元件的相依性。  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844990"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918806"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,8 +132,6 @@ ms.locfileid: "75844990"
  使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]，您可以執行使用 HTTP 壓縮的下載，這是一種 Web 服務器技術，使用 GZIP 演算法來壓縮資料流程，然後再將資料流程傳送至用戶端。 用戶端（在此案例中為 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]）會在讀取檔案之前先解壓縮串流。  
   
  如果您使用 IIS，您可以輕鬆地啟用 HTTP 壓縮。 不過，當您啟用 HTTP 壓縮時，它只會針對特定檔案類型（也就是 HTML 和文字檔）啟用。 若要啟用元件（.dll）、XML （.xml）、部署資訊清單（. 應用程式）和應用程式資訊清單（.manifest）的壓縮，您必須將這些檔案類型新增至要壓縮的類型清單。 在您將檔案類型新增至部署之前，只會壓縮文字和 HTML 檔案。  
-  
- 如需 IIS 的詳細指示，請參閱[如何指定 HTTP 壓縮的其他檔案類型](https://support.microsoft.com/kb/234497)。  
   
 ## <a name="see-also"></a>請參閱  
  針對[ClickOnce 部署進行疑難排解](../deployment/troubleshooting-clickonce-deployments.md)   

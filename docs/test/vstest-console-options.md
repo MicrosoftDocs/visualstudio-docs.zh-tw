@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c56e6fdb6d841f32a056fc77f4928b09d386e036
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.openlocfilehash: affad69f6821addb50686d4f41d0bdb3bd816e8e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886425"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919016"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令列選項
 
@@ -25,6 +25,8 @@ ms.locfileid: "75886425"
 > 基於相容性，Visual Studio 的 MSTest 配接器也可以在舊版模式下運作 (相當於使用 *mstest.exe* 執行測試)。 但在舊版模式下，它無法利用 TestCaseFilter 功能。 已指定 *testsettings* 檔案、*runsettings* 檔案中的 **forcelegacymode** 設定為 **true**，或使用如 **HostType** 等屬性時，配接器可以切換到舊版模式。
 >
 > 若要在 ARM 架構電腦上執行自動化測試，您必須使用 *VSTest.Console.exe*。
+
+開啟[開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)以使用命令列工具，或者您可以在 *% Program Files （x86）% \ Microsoft Visual Studio\\< 版本\>\\< 版本\>\Common7\ide\CommonExtensions\\< 平臺中找到此工具 |Microsoft >* 。
 
 ## <a name="general-command-line-options"></a>一般命令列選項
 

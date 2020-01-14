@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 12f94605ee6a1f4e4cc0142e6dd59ec02ed619c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f4c1ff547d9d550cbbc2e77435b159543fc16bf6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849946"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917102"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>從伺服器總管存取 Azure 虛擬機器
 
@@ -31,7 +31,7 @@ ms.locfileid: "75849946"
    | DNS 名稱 |包含虛擬機器網際網路位址的 URL。 |
    | 環境 |若是虛擬機器，這個屬性的值一定是 [生產]。 |
    | Name |虛擬機器的名稱。 |
-   | 大小 |虛擬機器的大小，此值會反映可用的記憶體和磁碟空間數量。 如需詳細資訊，請參閱[虛擬機器大小](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs)。 |
+   | 大小 |虛擬機器的大小，此值會反映可用的記憶體和磁碟空間數量。 如需詳細資訊，請參閱[虛擬機器大小](/azure/cloud-services/cloud-services-sizes-specs)。 |
    | Status |值包括 [啟動中]、[已啟動]、[停止中]、[已停止] 和 [正在擷取狀態]。 如果出現 [正在擷取狀態]，則目前狀態是未知的。 這個屬性的值不同於 [Azure 入口網站](https://portal.azure.com/)上所使用的值。 |
    | 訂用帳戶 ID |Azure 帳戶的訂用帳戶識別碼。 您可以透過檢視訂用帳戶的屬性，在 [Azure 入口網站](https://portal.azure.com/)上顯示這項資訊。 |
 2. 選擇端點節點，然後檢視 [屬性] 視窗。

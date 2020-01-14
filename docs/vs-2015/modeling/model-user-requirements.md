@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a94a4bd479c3ad48efe44d3a92e91dc3a050efcd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844907"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918263"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |概念性類別圖上的項目|[UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)|
 |如何透過概念性類別開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
- 在概念性類別圖中，通常不適合將箭號放在關聯上來代表巡覽性。 原因是圖表不代表實作。 關聯代表真實世界物件之間的關聯性。 下列 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能會將非方向性箭號設為預設值： [Sample: UML Domain Modeling features](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)(範例：UML 網域模型功能)。
+ 在概念性類別圖中，通常不適合將箭號放在關聯上來代表巡覽性。 原因是圖表不代表實作。 關聯代表真實世界物件之間的關聯性。
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  商務規則是未與特定使用案例相關聯的需求，而且應該會在系統中觀察到。
@@ -239,4 +239,4 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
   檢查不同圖表所提供之檢視間的關聯性，即可快速了解使用者工作的主要概念，並幫助他們了解系統中他們所需的項目。 您也會深入了解利害關係人最不關心的需求。 您可以規劃在專案的早期階段開發這些功能 (至少為簡化形式)，讓使用者實驗它們。
 
 ## <a name="see-also"></a>請參閱
- [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)[從模型開發測試](../modeling/develop-tests-from-a-model.md)[使用開發進程模型中的模型](../modeling/use-models-in-your-development-process.md)[您的應用程式的架構](../modeling/model-your-app-s-architecture.md)[範例 vs 延伸模組： uml 網域模型化功能](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)[範例 VS 延伸模組：依造型的色彩 uml 元素](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)[範例 vs 延伸模組：將 uml 專案連結至圖表、檔案和其他元素](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)[範例 Vs 延伸模組：在 uml 圖表上對齊圖形](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)[影片：建立商務網域模型](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+ [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)[從模型開發測試](../modeling/develop-tests-from-a-model.md)[使用開發進程模型中的模型](../modeling/use-models-in-your-development-process.md)[應用程式的架構](../modeling/model-your-app-s-architecture.md)[影片：模型化商務網域](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
