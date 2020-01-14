@@ -10,22 +10,22 @@ helpviewer_keywords:
 - datasets [Visual Basic], relationships
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9fab55c020894fe87ec4dc1c31137fb7e38c204
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9d733892b3bc62c272f31b0d7cc1aa10fbf229d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648247"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586311"
 ---
 # <a name="create-relationships-between-datasets"></a>建立資料集之間的關聯性
 包含相關資料表的資料集會使用 <xref:System.Data.DataRelation> 物件來代表資料表之間的父/子關聯性，並傳回彼此相關的記錄。 使用 [**資料來源設定] [Wizard]** 或 [ **DataSet 設計工具**] 將相關資料表加入至資料集時，會為您建立並設定 <xref:System.Data.DataRelation> 物件。
 
-@No__t_0 物件會執行兩個功能：
+<xref:System.Data.DataRelation> 物件會執行兩個功能：
 
 - 它可以提供與您正在使用之記錄相關的記錄。 如果您是在父記錄（<xref:System.Data.DataRow.GetChildRows%2A>）中，如果您使用的是子記錄（<xref:System.Data.DataRow.GetParentRow%2A>），它會提供子記錄。
 
@@ -34,7 +34,7 @@ ms.locfileid: "72648247"
 請務必瞭解真正聯結與 <xref:System.Data.DataRelation> 物件的函式之間的差異。 在真正的聯結中，會從父系和子資料工作表取得記錄，並放入單一的一般記錄集。 當您使用 <xref:System.Data.DataRelation> 物件時，不會建立任何新的記錄集。 取而代之的是，DataRelation 會追蹤資料表之間的關聯性，並讓父系和子記錄保持同步。
 
 ## <a name="datarelation-objects-and-constraints"></a>DataRelation 物件和條件約束
-@No__t_0 物件也會用來建立和強制執行下列條件約束：
+<xref:System.Data.DataRelation> 物件也會用來建立和強制執行下列條件約束：
 
 - Unique 條件約束，可確保資料表中的資料行不包含重複專案。
 
@@ -76,7 +76,7 @@ ms.locfileid: "72648247"
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>若要建立兩個數據表之間的關聯性
 
-1. 在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[逐步解說：在 DataSet 設計工具 ](walkthrough-creating-a-dataset-with-the-dataset-designer.md) 中建立資料集。
+1. 在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[逐步解說：在 DataSet 設計工具](walkthrough-creating-a-dataset-with-the-dataset-designer.md)中建立資料集。
 
 2. 將 [**關聯**性] 物件從 [**資料集**工具箱] 拖曳至關聯性中的子資料工作表。
 
@@ -92,7 +92,7 @@ ms.locfileid: "72648247"
 
 7. 選取要建立關聯性、條件約束或兩者。
 
-8. 選取或清除 [**嵌套關聯**] 方塊。 選取此選項會將 [<xref:System.Data.DataRelation.Nested%2A>] 屬性設定為 [`true`]，而當這些資料列寫入為 XML 資料或與 <xref:System.Xml.XmlDataDocument> 同步處理時，它會讓關聯的子資料列嵌套在父資料行中。 如需詳細資訊，請參閱 <<c0>嵌套 datarelation。
+8. 選取或清除 [**嵌套關聯**] 方塊。 選取此選項會將 [<xref:System.Data.DataRelation.Nested%2A>] 屬性設定為 [`true`]，而當這些資料列寫入為 XML 資料或與 <xref:System.Xml.XmlDataDocument>同步處理時，它會讓關聯的子資料列嵌套在父資料行中。 如需詳細資訊，請參閱 <<c0>嵌套 datarelation。
 
 9. 設定當您對這些資料表中的記錄進行變更時，所要強制執行的規則。 如需詳細資訊，請參閱<xref:System.Data.Rule>。
 
@@ -100,7 +100,7 @@ ms.locfileid: "72648247"
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>若要在 DataSet 設計工具中顯示關聯名稱
 
-1. 在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[逐步解說：在 DataSet 設計工具 ](walkthrough-creating-a-dataset-with-the-dataset-designer.md) 中建立資料集。
+1. 在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[逐步解說：在 DataSet 設計工具](walkthrough-creating-a-dataset-with-the-dataset-designer.md)中建立資料集。
 
 2. 從 [**資料**] 功能表中，選取 [**顯示關聯標籤**] 命令以顯示關聯名稱。 清除該命令以隱藏關聯名稱。
 
