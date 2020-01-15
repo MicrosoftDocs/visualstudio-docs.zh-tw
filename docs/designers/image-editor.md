@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2430dddb4fe7de0d050ce26fc94e54c13a7779
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fd7d9aed75876b47a6574d46b226f5baec336883
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635310"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589314"
 ---
 # <a name="image-editor"></a>影像編輯器
 
