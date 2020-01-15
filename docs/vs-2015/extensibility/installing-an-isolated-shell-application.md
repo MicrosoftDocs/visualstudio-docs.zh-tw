@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851718"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944255"
 ---
 # <a name="installing-an-isolated-shell-application"></a>安裝獨立模式 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "75851718"
   
 - Visual Studio SDK  
   
-- [WINDOWS INSTALLER XML 工具](http://wix.sourceforge.net/)組版本3。6  
+- [WINDOWS INSTALLER XML 工具](https://documentation.help/WiX-Toolset/index.html/)組版本3。6  
   
   此範例也需要 Microsoft 視覺效果和模型化 SDK，而不是所有的 shell 都需要。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "75851718"
 2. 針對每個包含 VSIX 資訊清單的專案，編輯組建工作，將內容輸出至 MSI 將安裝的位置。 在組建輸出中包含 VSIX 資訊清單，但不要建立 .vsix 檔案。  
   
 ## <a name="creating-an-msi-for-your-shell"></a>建立命令介面的 MSI  
- 若要建立 MSI 套件，建議您使用[WINDOWS INSTALLER XML 工具](http://wix.sourceforge.net/)組，因為它比標準安裝專案提供更大的彈性。  
+ 若要建立 MSI 套件，建議您使用[WINDOWS INSTALLER XML 工具](https://documentation.help/WiX-Toolset/index.html)組，因為它比標準安裝專案提供更大的彈性。  
   
  在 wsmanconfig.wxs 專案檔案中，設定偵測區塊和 Shell 元件的版面配置。  
   

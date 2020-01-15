@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0555aeb722132ba7b9628be9096847d45efb66ef
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 63d2f021aabc3d9152900ad62f072ec1a35a8e5b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "70312228"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75927748"
 ---
 有了 Visual Studio，您就可以輕鬆地建立、調試和執行容器化的 ASP.NET Core 應用程式，並將其發佈至 Azure Container Registry （ACR）、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們將發佈到 ACR。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 已安裝 [網頁程式開發]、[Azure Tools] 工作負載及/或 [.NET Core 跨平台開發] 工作負載的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
@@ -23,7 +23,7 @@ ms.locfileid: "70312228"
 
 ## <a name="installation-and-setup"></a>安裝和設定
 
-若要安裝 Docker，請先檢閱 [Docker Desktop for Windows：What to know before you install](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install) (安裝前須知) 中的資訊。 接下來，安裝 [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)。
+針對 Docker 安裝，請先參閱適用于[Windows 的 Docker Desktop 中的資訊：安裝之前的須知](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)事項。 接下來，安裝 [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)。
 
 ## <a name="add-a-project-to-a-docker-container"></a>將專案新增至 Docker 容器
 
@@ -105,12 +105,12 @@ baf9a678c88d        hellodockertools:dev   "C:\\remote_debugge..."   21 seconds 
 1. 選擇 [建立新的 Azure Container Registry]，然後按一下 [發佈]。
 1. 在 [建立新的 Azure Container Registry] 中填入您想要的值。
 
-    | 設定      | 建議的值  | 說明                                |
+    | 設定      | 建議的值  | 描述                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS 首碼** | 全域唯一的名稱 | 用以唯一識別容器登錄的名稱。 |
     | **訂用帳戶** | 選擇您的訂用帳戶 | 要使用的 Azure 訂用帳戶。 |
     | **[資源群組](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中建立容器登錄的資源群組名稱。 選擇 [新增] 以建立新的資源群組。|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | 標準 | 容器登錄的服務層  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | 容器登錄的服務層  |
     | **登錄位置** | 接近您的位置 | 在[區域](https://azure.microsoft.com/regions/)中選擇您附近的 [位置]，或選擇將會使用容器登錄的其他服務所接近的位置。 |
 
     ![Visual Studio 的 [建立 Azure Container Registry] 對話方塊][0]

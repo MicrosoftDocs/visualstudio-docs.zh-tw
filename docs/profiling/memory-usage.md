@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c72b6749dcba857d9a5059a36adc0fae6e0bacf
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254608"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929240"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>在 Visual Studio 中測量記憶體使用量
 
@@ -65,13 +65,13 @@ ms.locfileid: "71254608"
      > [!NOTE]
      > 由於收集記憶體資料可能會影響原生或混合模式應用程式的偵錯效能，因此預設會停用記憶體快照。 若要在原生或混合模式應用程式中啟用快照，請啟動偵錯工作階段 (快速鍵：**F5**)。 在顯示 [診斷工具] 視窗時，選擇 [記憶體使用量] 索引標籤，然後選擇 [堆積分析]。
      >
-     >  ![啟用快照](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
+     >  ![啟用快照集](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
      >  停止 (快速鍵：**Shift**+**F5**) 並重新開始偵錯。
 
 6. 若要在偵錯工作階段開始時擷取快照，請選擇 [記憶體使用量] 摘要工具列上的 [擷取快照]。 (在此設定中斷點也可能會有幫助)。
 
-    ![擷取快照](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
+    ![製作快照集](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
      > 若要建立記憶體的比較基準，請考慮擷取偵錯工作階段開始時的快照。
@@ -89,7 +89,7 @@ ms.locfileid: "71254608"
 ## <a name="analyze-memory-usage-data"></a>分析記憶體使用量資料
 [記憶體使用量] 摘要表的資料列會列出您在偵錯工作階段期間擷取的快照，並提供更詳細檢視的連結。
 
-![記憶體摘要表](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
+![記憶體摘要資料表](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
 
  每個資料行的名稱則取決於您在專案屬性中選擇的偵錯模式：.NET、原生或混合 (.NET 和原生)。
 
@@ -101,7 +101,7 @@ ms.locfileid: "71254608"
 
 若要分析記憶體使用量，請按一下其中一個可以開啟記憶體使用量詳細報表的連結：
 
-- 若要檢視目前快照與先前快照之間差異的詳細資料，請選擇箭號左側的變更連結 (![記憶體使用量增加](../profiling/media/prof-tour-mem-usage-up-arrow.png "記憶體使用量增加"))。 紅色箭號表示記憶體使用量增加，綠色箭號表示減少。
+- 若要查看目前快照與上一個快照之間差異的詳細資料，請選擇箭號左側的 [變更] 連結（[![記憶體使用量增加](../profiling/media/prof-tour-mem-usage-up-arrow.png "記憶體使用量增加")]）。 紅色箭號表示記憶體使用量增加，綠色箭號表示減少。
 
 > [!TIP]
 > 為了協助使用者更快速地識別記憶體問題，差異報表會以整體數目增加最多 (按一下 [物件 (差異)] 資料行中的變更連結)，或整體堆積大小增加最多 (按一下 [堆積大小 (差異)] 資料行中的變更連結) 的物件類型來分類。
@@ -113,58 +113,58 @@ ms.locfileid: "71254608"
 ### <a name="managed-types-reports"></a>Managed 類型報表
  選擇 [記憶體使用量] 摘要表中 [物件 (差異)] 或 [配置數 (差異)] 資料格的目前連結。
 
- ![偵錯工具 Managed 類型報表 &#45; 根的路徑](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
+ ![偵錯工具 managed 類型&#45;報表的路徑至根](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
 
  上方窗格顯示快照中所有類型的計數和大小，包括類型參考之所有物件的大小 ([內含大小])。
 
  下方窗格中的 [根的路徑] 樹狀結構顯示參考在上方窗格中選取之類型的物件。 您必須釋放參考物件的最後一個類型，.NET Framework 記憶體回收行程才會清除該物件的記憶體。
 
- [參考的類型] 樹狀結構顯示在上方窗格中選取之類型所持有的參考。
+ [**參考的物件**] 樹狀目錄會顯示在上方窗格中選取之類型所持有的參考。
 
- ![Managed 參考的類型報表檢視](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ ![受管理的參考物件報表檢視](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
 
- 若要在上方窗格中顯示所選取類型的執行個體，請選擇 ![執行個體圖示](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") 圖示。
+ 若要在上方窗格中顯示所選取類型的實例，請選擇![實例圖示](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon")圖示。
 
- ![執行個體檢視](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ ![實例視圖](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
  [執行個體] 檢視顯示在上方窗格的快照中選取之物件的執行個體。 [根的路徑] 和 [參考的物件] 窗格顯示參考所選執行個體的物件，以及所選執行個體參考的類型。 當偵錯工具在建立快照集的位置停止時，您可以將滑鼠停留在 [值] 資料格，以在工具提示中顯示物件的值。
 
 ### <a name="native-type-reports"></a>原生類型報表
  在 [診斷工具] 視窗的 [記憶體使用量] 摘要表中，選擇 [配置數 (差異)] 或 [堆積大小 (差異)] 資料格的目前連結。
 
- ![原生類型檢視](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")
+ ![原生類型視圖](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")
 
  [類型檢視] 顯示快照中所有類型的數目和大小。
 
-- 選擇所選取類型的執行個體圖示 (![[物件類型] 欄中的執行個體圖示](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon"))，以顯示快照中所選取類型的物件相關資訊。
+- 選擇所選類型的實例圖示（![[物件類型] 資料行中的實例圖示](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")），以顯示快照中所選類型之物件的相關資訊。
 
      [執行個體] 檢視顯示所選類型的每個執行個體。 選取執行個體會顯示在 [配置呼叫堆疊] 窗格中建立執行個體時所產生的呼叫堆疊。
 
-     ![執行個體檢視](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     ![實例視圖](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
 - 在 [檢視模式] 清單中選擇 [堆疊檢視] ，以查看所選類型的配置堆疊。
 
-     ![堆疊檢視](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")
+     ![堆疊視圖](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")
 
 ### <a name="change-diff-reports"></a>變更 (差異比對) 報表
 
 - 在 [診斷工具] 視窗中，選擇 [記憶體使用量] 索引標籤摘要表資料格中的變更連結。
 
-   ![選擇變更 &#40差異&#41; 報表](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![選擇變更&#40;差異&#41;報表](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - 在 Managed 或原生報表的 [比較] 清單中，選擇一個快照。
 
-   ![從 [比較] 清單中選擇快照](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
+   ![從 [比較] 清單中選擇快照集](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
 
 變更報表會將顯示基礎快照值與比較快照之間有差異的資料行 (標記為 [(差異比對)])，加入基礎報表。 以下是原生類型檢視差異比對報表可能的樣子：
 
-![原生類型差異檢視](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
+![原生類型差異視圖](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 
 ## <a name="blogs-and-videos"></a>部落格和影片
 
 [Analyze CPU and Memory While Debugging](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/) (偵錯時分析 CPU 與記憶體)
 
-[Visual C++ 部落格：Memory Profiling in Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/) (Visual C++ 2015 中的記憶體分析)
+[Visual C++ Blog: Memory Profiling in Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/) (Visual C++ 部落格：Visual C++ 2015 中的記憶體分析)
 
 ## <a name="next-steps"></a>後續步驟
 

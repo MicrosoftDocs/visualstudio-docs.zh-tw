@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: babfc00dfadc6b26f8338faf37b5b4a1f7c1d8e5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 49fe666884c3a96a5c8eb632308e7f732150805e
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587221"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929216"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的安全性規則規則集
 
@@ -86,4 +86,5 @@ ms.locfileid: "75587221"
 |[CA3010](../code-quality/ca3010.md)|檢閱程式碼是否有 XAML 插入式攻擊弱點|
 |[CA3011](../code-quality/ca3011.md)|檢閱程式碼是否有 DLL 插入式攻擊弱點|
 |[CA3012](../code-quality/ca3012.md)|檢閱程式碼是否有 regex 插入式攻擊弱點|
+|[CA5358](../code-quality/ca5358.md)|不要使用 Unsafe 加密模式|
 |[CA5403](../code-quality/ca5403.md)|不要硬式編碼憑證|

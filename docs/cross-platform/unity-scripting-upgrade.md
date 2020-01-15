@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 01f604de756ca86e40426a97776f1a1d43b024f1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 5fb521ff1769f1d742dc1ce67080e98aecb417ad
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916861"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944241"
 ---
 # <a name="using-net-4x-in-unity"></a>在 Unity 中使用 .NET 4.x
 
@@ -346,6 +346,6 @@ public class UsingStaticExample: MonoBehaviour
 * [Unity Blog - Scripting Runtime Improvements in Unity 2018.2](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) (Unity 部落格 - Unity 2018.2 中的指令碼執行階段改善)
 * [C# 的歷程記錄](/dotnet/csharp/whats-new/csharp-version-history)
 * [C# 6 的新功能](/dotnet/csharp/whats-new/csharp-6)
-* [Asynchronous programming in Unity, Using Coroutine and TAP](https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap) (Unity 中使用協同程式和 TAP 的非同步程式設計)
+* [Asynchronous programming in Unity, Using Coroutine and TAP](/archive/blogs/appconsult/unity-coroutine-tap-en-us) (Unity 中使用協同程式和 TAP 的非同步程式設計)
 * [Async-Await Instead of Coroutines in Unity 2017](http://www.stevevermeulen.com/index.php/2017/09/using-async-await-in-unity3d-2017/) (Unity 2017 中的 Async-Await 而非協同程式)
 * [Unity Forum - Experimental Scripting Previews](https://forum.unity.com/forums/experimental-scripting-previews.107/) (Unity 論壇 - Experimental Scripting Previews)

@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b1928176ef1c2612585c7fa46ea653f3ff800050
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189420"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929243"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入門：初步認識分析工具
 
 Visual Studio 提供各種不同的分析工具，可協助您依據應用程式類型來診斷不同類型的效能問題。
 
-您可以在偵錯工作階段期間，存取 [診斷工具] 視窗提供的分析工具。 [診斷工具] 視窗會自動出現，除非您將其關閉。 如需顯示視窗，請按一下 [偵錯]/[視窗]/[顯示診斷工具]。 視窗開啟時，您可以選取要用來收集資料的工具。
+您可以在偵錯工作階段期間，存取 [診斷工具] 視窗提供的分析工具。 [偵錯工具] 視窗會自動出現，除非您將其關閉。 如需顯示視窗，請按一下 [偵錯]/[視窗]/[顯示診斷工具]。 視窗開啟時，您可以選取要用來收集資料的工具。
 
 ![診斷工具視窗](../profiling/media/prof-tour-diagnostic-tools.png "診斷工具")
 
@@ -36,9 +36,9 @@ Visual Studio 提供各種不同的分析工具，可協助您依據應用程式
 > [!NOTE]
 > 您可以在 Windows 7 及更新版本中使用事後分析工具。 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具] 視窗)。
 
-## <a name="analyze-cpu-usage"></a>分析 CPU 使用量
+## <a name="analyze-cpu-usage"></a>分析 CPU 使用
 
-CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會告訴您應用程式耗用的 CPU 資源詳細資訊。 如需 CPU 使用率工具的詳細逐步解說，請參閱[效能分析的初學者指南](../profiling/beginners-guide-to-performance-profiling.md)。
+CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會告訴您應用程式耗用的 CPU 資源詳細資訊。 如需 CPU 使用量工具的更詳細逐步解說，請參閱藉[由分析 cpu 使用量來測量應用程式效能](../profiling/beginners-guide-to-performance-profiling.md)。
 
 從 [診斷工具] 的 [摘要] 檢視中，選擇 [啟用 CPU 分析] \(必須在偵錯工作階段中)。
 
@@ -162,10 +162,10 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |----------------------|---------------------|-------------|-------------|
 |[CPU 使用量](../profiling/cpu-usage.md)|是|是|是|
 |[記憶體使用量](../profiling/memory-usage.md)|是|是|是|
-|[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|是|是|否|
-|[應用程式時間軸](../profiling/application-timeline.md)|是|是|否|
+|[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|是|是|no|
+|[應用程式時間軸](../profiling/application-timeline.md)|是|是|no|
 |[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|
-|[效能總管](../profiling/performance-explorer.md)|是|否|是|
+|[效能總管](../profiling/performance-explorer.md)|是|no|是|
 |[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|
 ::: moniker-end
 
@@ -174,14 +174,14 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |----------------------|---------------------|-------------|-------------|
 |[CPU 使用量](../profiling/cpu-usage.md)|是|是|是|
 |[記憶體使用量](../profiling/memory-usage.md)|是|是|是|
-|[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|是|是|否|
-|[應用程式時間軸](../profiling/application-timeline.md)|是|是|否|
+|[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|是|是|no|
+|[應用程式時間軸](../profiling/application-timeline.md)|是|是|no|
 |[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|
-|[效能總管](../profiling/performance-explorer.md)|是|否|是|
+|[效能總管](../profiling/performance-explorer.md)|是|no|是|
 |[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|
-|[網路使用量](../profiling/network-usage.md)|否|是|否|
-|[HTML UI 回應性](../profiling/html-ui-responsiveness.md)|否|對 HTML 為是，對 XAML 為否|否|
-|[JavaScript 記憶體](../profiling/javascript-memory.md)|否|對 HTML 為是，對 XAML 為否|否|
+|[網路使用量](../profiling/network-usage.md)|no|是|no|
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|no|對 HTML 為是，對 XAML 為否|no|
+|[JavaScript 記憶體](../profiling/javascript-memory.md)|no|對 HTML 為是，對 XAML 為否|no|
 ::: moniker-end
 
 

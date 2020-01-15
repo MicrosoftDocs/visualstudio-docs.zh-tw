@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: 了解如何使用 GitHub 帳戶登入 Visual Studio 訂用帳戶。
-ms.openlocfilehash: 8a1c2884dbc5570ab18cf7496c699774702b5b62
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ffafd3821112a62ec1f86666f8c0fe6571bbb335
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850524"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944191"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>使用 GitHub 帳戶登入 Visual Studio 訂用帳戶 
 
@@ -49,7 +49,7 @@ GitHub 身分識別支援可讓您使用現有 GitHub 帳戶，作為新或現�
 答：完全不是。 這不會變更您的 GitHub 密碼，只是您多了另一種方式來登入您的 Microsoft 帳戶。 每當您使用您的電子郵件地址登入時，我們會讓您選擇使用您的 Microsoft 帳戶密碼登入或轉至 GitHub 登入。 如果您需要新增密碼，我們強烈建議您使用與您 GitHub 帳戶不同的密碼。
 
 #### <a name="q-i-want-to-add-the-authenticator-app-to-the-account-i-created-using-github--can-i-do-that"></a>問：我想要將驗證器應用程式新增到我使用 GitHub 建立的帳戶。  我可以這麼做嗎？
-答：沒問題，只要下載應用程式並使用您的電子郵件地址登入即可。 當您使用您的電子郵件地址登入時，系統將會提示您選擇[驗證器應用程式](https://www.microsoft.com/account/authenticator#getapp)或 GitHub 作為您的認證。
+答：沒問題，只要下載應用程式並使用您的電子郵件地址登入即可。 當您使用您的電子郵件地址登入時，系統將會提示您選擇[驗證器應用程式](https://www.microsoft.com/p/microsoft-authenticator/9nblgggzmcj6)或 GitHub 作為您的認證。
 
 #### <a name="q-ive-enabled-two-factor-authentication-on-both-my-github-and-microsoft-accounts-msa-but-when-i-sign-in-to-my-msa-im-still-asked-to-authenticate-twice--why"></a>問：我已在我的 GitHub 和 Microsoft 帳戶（MSA）上啟用雙重要素驗證，但當我登入 MSA 時，仍然會要求您驗證兩次。  為什麼？
 答：由於安全性限制，Microsoft 會將以 GitHub 登入作為單一要素驗證，即使您已在此啟用雙步驟驗證。 因此，您必須重新驗證您的 Microsoft 帳戶。 

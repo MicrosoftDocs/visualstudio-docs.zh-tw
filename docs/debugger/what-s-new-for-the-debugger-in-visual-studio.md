@@ -20,12 +20,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 130387fedce065948ebe09ea605e32cf89ad820b
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71210585"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944221"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Visual Studio 2017 中偵錯工具的新功能
 
@@ -44,9 +44,9 @@ ms.locfileid: "71210585"
 
     您可以使用[偵錯] 工具列的 [逐步返回] 和 [逐步前進] 按鈕，來巡覽及檢視快照集。 這些按鈕可巡覽出現在 [診斷工具] 視窗之 [事件] 索引標籤中的事件。
 
-    ![[逐步返回] 和 [逐步前進] 按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "[逐步返回] 和 [逐步前進] 按鈕")
+    ![[逐步執行] 和 [下一頁] 按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "[逐步執行] 和 [下一頁] 按鈕")
 
-    如需詳細資訊，請參閱[使用 IntelliTrace 檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)頁面。
+    如需詳細資訊，請參閱[使用 IntelliTrace 檢查先前的應用程式狀態](view-historical-application-state.md)頁面。
 
 - 例外狀況協助程式會取代例外狀況小**幫手**，並出現在發生錯誤的非強制回應對話方塊中。 **例外**狀況協助程式可讓您更快速地存取任何內部例外狀況、由偵錯工具進行額外分析（如果有的話），以及立即存取例外狀況的**例外狀況設定**。 例外狀況協助程式也可以拖曳到浮動視圖，如果它封鎖了您需要查看的東西。
 
@@ -54,7 +54,7 @@ ms.locfileid: "71210585"
 
     ![偵錯工具的例外狀況 Helper](../debugger/media/dbg-exception-helper.png "DbgExceptionHelper")
 
-    如需詳細資訊，請參閱 [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (在 Visual Studio 中使用新的例外狀況協助程式) 部落格文章。
+    如需詳細資訊，請參閱 [Using the New Exception Helper in Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/) (在 Visual Studio 中使用新的例外狀況協助程式) 部落格文章。
 
 - 您現在可以在偵錯工具中暫停執行，方法是選取 [執行**到這裡**的綠色箭號] 圖示（當滑鼠停留在程式程式碼上時，您會看到圖示）。 這樣就不需要設定暫時中斷點。
 
@@ -68,9 +68,9 @@ ms.locfileid: "71210585"
 
     ![在 [附加至進程] 中搜尋](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-如需這些新功能的詳細資訊，請參閱的[版本[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]](/visualstudio/releasenotes/vs2017-relnotes)資訊。
+如需這些新功能的詳細資訊，請參閱[[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]的版本](/visualstudio/releasenotes/vs2017-relnotes)資訊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
