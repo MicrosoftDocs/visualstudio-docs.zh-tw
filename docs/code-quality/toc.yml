@@ -721,6 +721,8 @@
                   href: ca3077.md
                 - name: 'CA3147:使用 ValidateAntiForgeryToken 標示動詞處理常式'
                   href: ca3147.md
+                - name: 'CA5358:不要使用不安全的 Cipher 模式'
+                  href: ca5358.md
                 - name: 'CA5361:請勿為安全通道停用強式密碼編譯'
                   href: ca5361.md
                 - name: CA5363：請勿停用要求驗證
