@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0232b37d08901bcc04c9d66facfe6850a9852e88
-ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+ms.openlocfilehash: d0da02773913a610c77d7165fdb0f9becfc59e9c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74485500"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75928203"
 ---
 有了 Visual Studio，您就可以輕鬆地建立、偵測及執行容器化的 .NET、ASP.NET 和 ASP.NET Core 應用程式，並將其發佈至 Azure Container Registry （ACR）、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們會將 ASP.NET Core 應用程式發佈到 ACR。
 
@@ -102,7 +102,7 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
     | **DNS 首碼** | 全域唯一的名稱 | 用以唯一識別容器登錄的名稱。 |
     | **訂用帳戶** | 選擇您的訂用帳戶 | 要使用的 Azure 訂用帳戶。 |
     | **[資源群組](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中建立容器登錄的資源群組名稱。 選擇 [新增] 以建立新的資源群組。|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standard | 容器登錄的服務層  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | 容器登錄的服務層  |
     | **登錄位置** | 接近您的位置 | 在[區域](https://azure.microsoft.com/regions/)中選擇您附近的 [位置]，或選擇將會使用容器登錄的其他服務所接近的位置。 |
 
     ![Visual Studio 的 [建立 Azure Container Registry] 對話方塊][0]

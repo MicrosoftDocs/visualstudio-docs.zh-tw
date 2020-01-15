@@ -12,17 +12,17 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9403121a235d71a42639121458fc37607180b18a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: df6ef440202057bb8e0612af0987782fa281c952
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851331"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944244"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>如何：產生安裝程式的登錄資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-RegPkg 公用程式可以用來產生 managed VSPackage 的註冊資訊清單。 資訊清單可以併入 Windows Installer 安裝套件中。 RegPkg 也可以根據[WINDOWS INSTALLER XML 工具](http://wix.sourceforge.net/)組，產生可包含在安裝程式來源檔案中的檔案。  
+RegPkg 公用程式可以用來產生 managed VSPackage 的註冊資訊清單。 資訊清單可以併入 Windows Installer 安裝套件中。 RegPkg 也可以根據[WINDOWS INSTALLER XML 工具](https://documentation.help/WiX-Toolset/index.html)組，產生可包含在安裝程式來源檔案中的檔案。
   
 > [!IMPORTANT]
 > RegPkg 會產生您的開發系統特有的路徑名稱，因此您每次使用 RegPkg 時，都必須編輯輸出以使用適當的 Windows Installer 格式屬性。 例如，InprocServer32 值應該是 **[SystemFolder] mscoree.dll** ，而路徑應該使用 **[#filekey]** 和 **[$componentkey]** 。 以這種方式調整輸出，可支援將 Windows 安裝在不同的磁片磁碟機或不同的目錄、當地語系化的目錄名稱，以及使用者可以選擇的路徑中的電腦。 如需詳細資訊，請參閱在 Windows Installer SDK 中[格式化](https://msdn.microsoft.com/library/default.asp?url=/library/msi/setup/formatted.asp)。 如果您遵循開發系統路徑的 RegPkg 慣例（例如，格式為 File_*filename*的檔案識別碼），則需要進行較少的變更。  
