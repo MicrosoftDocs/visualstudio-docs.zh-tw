@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72bf11519ec500082304fde431122d05ee65db54
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186009"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76124513"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,27 +62,27 @@ ms.locfileid: "68186009"
 | 元件或套件 | 方案 |
 |-|-|
 | Dotfuscator and Analytics Community Edition 5.19.1 (適用於在 **Windows 7 SP1** 和 **Windows Server 2008 R2** 上安裝的 Community、Professional 與 Enterprise 版本 Visual Studio) | 如果您的離線機器是執行 **Windows 7 SP1** 或 **Windows Server 2008 R2**，您必須先執行下列步驟，才能安裝 Visual Studio 2015：<br /><br /> 1.設定檔案或 Web 伺服器來下載 CTL 檔案。<br /><br /> 2.  針對離線環境將 Microsoft 自動更新 URL 重新導向。<br /><br /> 如需詳細資訊，請參閱 Microsoft TechNet 網站上的[設定受信任的根目錄和不允許的憑證](https://technet.microsoft.com/library/dn265983.aspx) \(英文\) 頁面。 |
-| Android SDK 安裝程式 (API 層級) | 您必須連接網際網路，才能安裝 Android SDK (API 層級) 套件。 如果您是在受限網路上，則必須在安裝 Visual Studio 時允許存取下列 URL：<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />如需如何解決 Proxy 設定可能問題的詳細資訊，請參閱 [Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) (受 Proxy 保護的 Visual Studio 2015 安裝失敗 (Android SDK 安裝程式)) 部落格文章。 |
-| Visual Studio 擴充性項目範本<br /><br /> Visual Studio 的 GitHub 延伸模組<br /><br /> PowerShell Tools for Visual Studio | 當您在安裝 Visual Studio 2015 時，如果沒有網際網路連線，您可以使用特殊離線摘要來產生離線安裝配置。 **注意：** 此特殊摘要包含最新的 Visual Studio 2015 更新。 <br /><br /> 若要建立特殊離線摘要，請執行下列命令：/layout *Drive:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml*<br /><br /> 例如，如需 Visual Studio 2015 Enterprise 的英文語言特殊離線摘要，請執行：<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> 如需能以您所選語言建立特殊離線摘要的 URL 完整清單，請參閱下表。 |
+| Android SDK 安裝程式 (API 層級) | 您必須連接網際網路，才能安裝 Android SDK (API 層級) 套件。 如果您是在受限網路上，則必須在安裝 Visual Studio 時允許存取下列 URL：<br /><br /> -   https://dl.google.com:443<br />-   https://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />如需如何解決 Proxy 設定可能問題的詳細資訊，請參閱 [Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) (受 Proxy 保護的 Visual Studio 2015 安裝失敗 (Android SDK 安裝程式)) 部落格文章。 |
+| Visual Studio 擴充性項目範本<br /><br /> Visual Studio 的 GitHub 延伸模組<br /><br /> PowerShell Tools for Visual Studio | 當您在安裝 Visual Studio 2015 時，如果沒有網際網路連線，您可以使用特殊離線摘要來產生離線安裝配置。 **注意：** 此特殊摘要包含最新的 Visual Studio 2015 更新。 <br /><br /> 若要建立特殊離線摘要，請執行下列命令：/layout *Drive:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml*<br /><br /> 例如，如需 Visual Studio 2015 Enterprise 的英文語言特殊離線摘要，請執行：<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "https://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> 如需能以您所選語言建立特殊離線摘要的 URL 完整清單，請參閱下表。 |
 
  使用下列 URL 來建立語言特定特殊離線摘要，如上表中所述。
 
 |       語言        |                            URL                            |
 |-----------------------|-----------------------------------------------------------|
-| 中文 (簡體)  | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
-| 中文 (繁體) | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
-|         捷克文         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
-|        德文         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
-|        英文        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |
-|        西班牙文        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0xC0A |
-|        法文         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x40C |
-|        義大利文        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x410 |
-|       日文        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411 |
-|        韓文         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412 |
-|        波蘭文         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x415 |
-|      葡萄牙文       | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416 |
-|        俄文        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
-|        土耳其文        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
+| 中文 (簡體)  | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
+| 和 SharePoint 2010 顯示的 | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
+|         捷克文         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
+|        德文         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
+|        英文        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |
+|        西班牙文        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0xC0A |
+|        法文         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x40C |
+|        義大利文        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x410 |
+|       日文        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411 |
+|        韓文         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412 |
+|        波蘭文         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x415 |
+|      葡萄牙文       | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416 |
+|        俄文        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
+|        土耳其文        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
 ## <a name="see-also"></a>另請參閱
 
