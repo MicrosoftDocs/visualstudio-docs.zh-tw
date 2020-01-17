@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, adding browsers
 - load tests, removing browsers
 ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3f80da91181e4cb555d0ce96a5b4d2fb797eb0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 394331ae06760e0547cfc2b5a37a6dcd357e3614
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664994"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114529"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>編輯測試混合以指定負載測試情節中的網頁瀏覽器類型
 

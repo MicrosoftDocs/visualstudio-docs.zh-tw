@@ -13,17 +13,17 @@ helpviewer_keywords:
 - projects [Visual Studio], dependencies
 ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 ms.technology: vs-ide-compile
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c10ea49dfd1398b8271f959cb498c311d98a4ef
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0a286a84d01c6a49b32445106488688ba5b489be
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595276"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114548"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：建立和移除專案相依性
 
@@ -64,6 +64,6 @@ ms.locfileid: "75595276"
 ## <a name="see-also"></a>請參閱
 
 - [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
 - [了解建置組態](../ide/understanding-build-configurations.md)
 - [管理專案及解決方案屬性](managing-project-and-solution-properties.md)

@@ -6,19 +6,19 @@ ms.date: 07/03/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cdec0c6059775f4542e7b012709e20ad45c249cc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 53049d37f23a72adb337cdad629f4c689c83707e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595965"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114614"
 ---
 # <a name="install-build-tools-into-a-container"></a>將 Build Tools 安裝至容器
 

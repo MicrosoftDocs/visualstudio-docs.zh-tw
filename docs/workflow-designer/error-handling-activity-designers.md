@@ -3,17 +3,17 @@ title: 工作流程設計工具-錯誤處理活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 9679ca32-ad7f-4089-824e-fdb931e47a30
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13fe4546ec9e16af07b522af3a94ac72923766ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9eb8aee0048ae861aa460c7a8286f168bf150bd9
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650511"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111320"
 ---
 # <a name="error-handling-activity-designers"></a>Error Handling 活動設計工具
 
