@@ -2,29 +2,29 @@
 title: Visual Studio Build Tools 2017 工作負載和元件識別碼
 titleSuffix: ''
 description: 使用 Visual Studio 工作負載和元件識別碼來建置傳統 Windows 型應用程式
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 703d1595373f29926984c5380ba3167083a4318c
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: HT
+ms.openlocfilehash: 2f2092143a79dae17c5c0138e51c10fc5d164cbd
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68176892"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159532"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 開發建置工具
 
 **識別碼：** Microsoft.VisualStudio.Workload.AzureBuildTools
 
-**描述：** 用於建置 Azure 應用程式的 MSBuild 工作與目標。
+**描述：** 用於建置 Azure 應用程式的 MSBuild 工作和目標。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | 名稱 | 版本 | 相依性類型
+元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必要
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 15.6.27406.0 | 必要
@@ -46,19 +46,19 @@ Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 �
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開發工具 | 15.8.27924.0 | 建議
 Microsoft.VisualStudio.Component.AspNet45 | 進階的 ASP.NET 功能 | 15.7.27625.0 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | 建議
-Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | .NET Framework 4.7.2 開發工具 | 15.8.27825.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 15.6.27406.0 | Optional
+Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 15.8.27825.0 | RemoveHandler
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 15.8.27825.0 | RemoveHandler
+Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | .NET Framework 4.7.2 開發工具 | 15.8.27825.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 15.6.27406.0 | RemoveHandler
 
 ## <a name="data-storage-and-processing-build-tools"></a>資料儲存和處理建置工具
 
@@ -68,7 +68,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工�
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | 名稱 | 版本 | 相依性類型
+元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目標套件 | 15.6.27406.0 | 建議
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 15.6.27406.0 | 建議
@@ -89,7 +89,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | 靜態分析工具 | 15
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | 名稱 | 版本 | 相依性類型
+元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必要
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必要
@@ -107,21 +107,21 @@ Microsoft.Net.Core.Component.SDK | .NET Core 2.0 開發工具 | 15.6.27406.0 | �
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開發工具 | 15.8.27924.0 | 建議
 Microsoft.VisualStudio.Component.TestTools.BuildTools | 測試工具的核心功能 - 建置工具 | 15.7.27625.0 | 建議
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | WCF 開發建置工具 | 15.6.27309.0 | 建議
-Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | .NET Framework 4.7.2 開發工具 | 15.8.27825.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 開發工具 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.FSharp.MSBuild | F# 編譯器 | 15.8.27825.0 | Optional
+Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 15.8.27825.0 | RemoveHandler
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 15.8.27825.0 | RemoveHandler
+Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | .NET Framework 4.7.2 開發工具 | 15.8.27825.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.FSharp.MSBuild | F# 編譯器 | 15.8.27825.0 | RemoveHandler
 
 ## <a name="msbuild-tools"></a>MSBuild 工具
 
@@ -131,7 +131,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# 編譯器 | 15.8.27825.0 | 
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | 名稱 | 版本 | 相依性類型
+元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必要
 Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools Core | 15.6.27309.0 | 必要
@@ -145,23 +145,23 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn �
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | 名稱 | 版本 | 相依性類型
+元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開發工具 | 15.8.27924.0 | 必要
 Microsoft.NetCore.BuildTools.ComponentGroup | .NET Core 建置工具 | 15.8.27906.1 | 必要
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目標和建置工作 | 15.9.28016.0 | 必要
-Microsoft.Net.Core.Component.SDK | .NET Core 2.0 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 開發工具 | 15.6.27406.0 | Optional
+Microsoft.Net.Core.Component.SDK | .NET Core 2.0 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 開發工具 | 15.6.27406.0 | RemoveHandler
 
 ## <a name="nodejs-build-tools"></a>Node.js 建置工具
 
 **識別碼：** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**描述：** 使用非同步的事件驅動 JavaScript 執行階段 Node.js 來建置可調式網路應用程式的 MSBuild 工作與目標。
+**描述：** 用於使用 Node.js 這個非同步事件驅動的 JavaScript 執行階段，建置可調式網路應用程式的 MSBuild 工作與目標。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | 名稱 | 版本 | 相依性類型
+元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Node.Build | Node.js MSBuild 支援 | 15.8.27825.0 | 必要
 Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.28218.60 | 必要
@@ -174,7 +174,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.2821
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | 名稱 | 版本 | 相依性類型
+元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce 建置工具 | 15.7.27617.1 | 必要
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必要
@@ -193,18 +193,18 @@ Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | WCF 開發建置工具 | 
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Web 程式開發建置工具 | 15.8.27729.1 | 必要
 Microsoft.VisualStudio.Component.TeamOffice.BuildTools | Visual Studio Tools for Office (VSTO) 建置工具 | 15.7.27617.1 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | 建議
-Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | .NET Framework 4.7.2 開發工具 | 15.8.27825.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 15.8.27825.0 | RemoveHandler
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 15.8.27825.0 | RemoveHandler
+Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | .NET Framework 4.7.2 開發工具 | 15.8.27825.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 15.6.27406.0 | RemoveHandler
 
 ## <a name="universal-windows-platform-build-tools"></a>通用 Windows 平台建置工具
 
@@ -214,7 +214,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工�
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | 名稱 | 版本 | 相依性類型
+元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必要
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | 必要
@@ -227,29 +227,29 @@ Microsoft.VisualStudio.Component.VC.Tools.ARM | 適用於 ARM 的 Visual C++ 編
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 15.9 版 v14.16 最新的 v141 工具 | 15.9.28230.55 | 必要
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | 通用 Windows 平台建置的必要條件 | 15.8.27705.0 | 必要
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | 建議
-Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | 適用於桌面 C++ 的 Windows 10 SDK (10.0.15063.0) [x86 及 x64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 適用於 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB、JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | 適用於 UWP 的 Windows 10 SDK (10.0.15063.0)：C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 適用於桌面 C++ 的 Windows 10 SDK (10.0.16299.0) [x86 及 x64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 適用於桌面 C++ 的 Windows 10 SDK (10.0.16299.0) [ARM 及 ARM64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB、JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | Optional
-Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | 適用於桌面 C++ 的 Windows 10 SDK (10.0.15063.0) [x86 及 x64] | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 適用於 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB、JS | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | 適用於 UWP 的 Windows 10 SDK (10.0.15063.0)：C++ | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 適用於桌面 C++ 的 Windows 10 SDK (10.0.16299.0) [x86 及 x64] | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 適用於桌面 C++ 的 Windows 10 SDK (10.0.16299.0) [ARM 及 ARM64] | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB、JS | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | RemoveHandler
 
 ## <a name="visual-c-build-tools"></a>Visual C++ Build Tools
 
 **識別碼：** Microsoft.VisualStudio.Workload.VCTools
 
-**描述：** 使用 Microsoft C++ 工具組、ATL 或 MFC 來建置 Windows 傳統型應用程式。
+**描述：** 使用 Microsoft C++ 工具組、ATL 或 MFC 建置 Windows 傳統型應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | 名稱 | 版本 | 相依性類型
+元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 靜態分析工具 | 15.0.26208.0 | 必要
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | Visual C++ Build Tools 核心功能 | 15.8.27729.1 | 必要
@@ -259,43 +259,43 @@ Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 執行階段 | 
 Microsoft.VisualStudio.Component.TestTools.BuildTools | 測試工具的核心功能 - 建置工具 | 15.7.27625.0 | 建議
 Microsoft.VisualStudio.Component.VC.CMake.Project | 適用於 CMake 的 Visual C++ 工具 | 15.9.28307.102 | 建議
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | 建議
-Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 15.6.27309.0 | Optional
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.VC.140 | 桌上型電腦版的 VC++ 2015.3 v14.00 (v140) 工具組 | 15.7.27617.1 | Optional
-Microsoft.VisualStudio.Component.VC.ATL | x86 與 x64 版 Visual C++ ATL | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.Component.VC.ATLMFC | x86 與 x64 版 Visual C++ MFC | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.Component.VC.CLI.Support | C++/CLI 支援 | 15.6.27309.0 | Optional
-Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | 標準程式庫的模組 (實驗性) | 15.6.27309.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM | 適用於 ARM 的 Visual C++ 編譯器與程式庫 | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | 適用於 ARM64 的 Visual C++ 編譯器與程式庫 | 15.9.28230.55 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | 適用於桌面 C++ 的 Windows 10 SDK (10.0.15063.0) [x86 及 x64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 適用於 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB、JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | 適用於 UWP 的 Windows 10 SDK (10.0.15063.0)：C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 適用於桌面 C++ 的 Windows 10 SDK (10.0.16299.0) [x86 及 x64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 適用於桌面 C++ 的 Windows 10 SDK (10.0.16299.0) [ARM 及 ARM64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB、JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | Optional
-Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.WinXP | C++ 的 Windows XP 支援 | 15.8.27924.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK 與 UCRT SDK | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | C++ 的 Windows XP 支援 | 15.8.27705.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | Optional
+Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 15.6.27309.0 | RemoveHandler
+Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.140 | 桌上型電腦版的 VC++ 2015.3 v14.00 (v140) 工具組 | 15.7.27617.1 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.ATL | x86 與 x64 版 Visual C++ ATL | 15.7.27625.0 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.ATLMFC | x86 與 x64 版 Visual C++ MFC | 15.7.27625.0 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.CLI.Support | C++/CLI 支援 | 15.6.27309.0 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | 標準程式庫的模組 (實驗性) | 15.6.27309.0 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Tools.ARM | 適用於 ARM 的 Visual C++ 編譯器與程式庫 | 15.8.27825.0 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | 適用於 ARM64 的 Visual C++ 編譯器與程式庫 | 15.9.28230.55 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | 適用於桌面 C++ 的 Windows 10 SDK (10.0.15063.0) [x86 及 x64] | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 適用於 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB、JS | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | 適用於 UWP 的 Windows 10 SDK (10.0.15063.0)：C++ | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 適用於桌面 C++ 的 Windows 10 SDK (10.0.16299.0) [x86 及 x64] | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 適用於桌面 C++ 的 Windows 10 SDK (10.0.16299.0) [ARM 及 ARM64] | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB、JS | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.WinXP | C++ 的 Windows XP 支援 | 15.8.27924.0 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK 與 UCRT SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | C++ 的 Windows XP 支援 | 15.8.27705.0 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | RemoveHandler
 
 ## <a name="visual-studio-extension-development"></a>Visual Studio 擴充功能開發
 
 **識別碼：** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
 
-**描述：** 用於建置 Visual Studio 附加元件與延伸模組的工具，包括新的命令、程式碼分析器與工具視窗。
+**描述：** 用於建置 Visual Studio 增益集與延伸模組的工具，包括新的命令、程式碼分析器與工具視窗。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | 名稱 | 版本 | 相依性類型
+元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必要
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必要
@@ -306,22 +306,22 @@ Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目標和建置工作 
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 15.6.27309.0 | 必要
 Microsoft.VisualStudio.Component.VSSDKBuildTools | Visual Studio SDK Build Tools Core | 15.8.27924.0 | 必要
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Visual Studio 擴充功能開發必要條件 | 15.8.27729.1 | 必要
-Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 15.0.26208.0 | Optional
-Microsoft.Component.VC.Runtime.OSSupport | UWP 的 Visual C++ 執行階段 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | 靜態分析工具 | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.VC.ATL | x86 與 x64 版 Visual C++ ATL | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.Component.VC.ATLMFC | x86 與 x64 版 Visual C++ MFC | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 15.9 版 v14.16 最新的 v141 工具 | 15.9.28230.55 | Optional
+Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 15.0.26208.0 | RemoveHandler
+Microsoft.Component.VC.Runtime.OSSupport | UWP 的 Visual C++ 執行階段 | 15.6.27406.0 | RemoveHandler
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | 靜態分析工具 | 15.0.26208.0 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.ATL | x86 與 x64 版 Visual C++ ATL | 15.7.27625.0 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.ATLMFC | x86 與 x64 版 Visual C++ MFC | 15.7.27625.0 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 15.9 版 v14.16 最新的 v141 工具 | 15.9.28230.55 | RemoveHandler
 
 ## <a name="web-development-build-tools"></a>Web 程式開發建置工具
 
 **識別碼：** Microsoft.VisualStudio.Workload.WebBuildTools
 
-**描述：** 用於建置 Web 應用程式的 MSBuild 工作與目標。
+**描述：** 用於建置 Web 應用程式的 MSBuild 工作和目標。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | 名稱 | 版本 | 相依性類型
+元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必要
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 15.6.27406.0 | 必要
@@ -342,45 +342,45 @@ Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器開發工具 - �
 Microsoft.VisualStudio.Component.TestTools.BuildTools | 測試工具的核心功能 - 建置工具 | 15.7.27625.0 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | 建議
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | WCF 開發建置工具 | 15.6.27309.0 | 建議
-Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | .NET Framework 4.7.2 開發工具 | 15.8.27825.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.Core.Component.SDK | .NET Core 2.0 開發工具 | 15.6.27406.0 | Optional
-Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 開發工具 | 15.6.27406.0 | Optional
+Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 15.8.27825.0 | RemoveHandler
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 15.8.27825.0 | RemoveHandler
+Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | .NET Framework 4.7.2 開發工具 | 15.8.27825.0 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Core.Component.SDK | .NET Core 2.0 開發工具 | 15.6.27406.0 | RemoveHandler
+Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 開發工具 | 15.6.27406.0 | RemoveHandler
 
 ## <a name="mobile-development-with-net"></a>使用 .NET 的行動裝置程式開發
 
 **識別碼：** Microsoft.VisualStudio.Workload.XamarinBuildTools
 
-**描述：** 這些工具可讓您使用 C# 和 F# 建置 iOS、Android 及 Windows 的跨平台應用程式。
+**描述：** 這些工具可讓您使用 C# 及 F# 建置可在 iOS、Android 及 Windows 上執行的跨平台應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | 名稱 | 版本 | 相依性類型
+元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必要
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必要
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 15.6.27406.0 | 必要
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目標和建置工作 | 15.9.28016.0 | 必要
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 15.6.27309.0 | 必要
-Component.Android.SDK25 | Android SDK 安裝程式 (API 層級 25) | 15.9.28107.0 | Optional
-Component.OpenJDK | Microsoft 的 OpenJDK 散發 | 15.9.28125.51 | Optional
+Component.Android.SDK25 | Android SDK 安裝程式 (API 層級 25) | 15.9.28107.0 | RemoveHandler
+Component.OpenJDK | Microsoft 的 OpenJDK 散發 | 15.9.28125.51 | RemoveHandler
 
 ## <a name="unaffiliated-components"></a>非附屬元件
 
 這些是未隨附於任何工作負載但可選取來作為個別元件的元件。
 
-元件識別碼 | 名稱 | 版本
+元件識別碼 | Name | {2&gt;版本&lt;2}
 --- | --- | ---
 Microsoft.VisualStudio.Component.TypeScript.2.0 | TypeScript 2.0 SDK | 15.8.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.1 | TypeScript 2.1 SDK | 15.8.27729.1

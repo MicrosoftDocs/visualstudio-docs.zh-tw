@@ -1,16 +1,17 @@
 ---
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
+manager: jillfra
 ms.date: 04/25/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 4715ece217ab007e46a6a063fea992bca6deca14
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: HT
+ms.openlocfilehash: 4bd769ebd2605d98b4c8a3c473dfca00f86b0f06
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68159931"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159329"
 ---
 | **值** | **結果** |
 | --------- | ---------- |

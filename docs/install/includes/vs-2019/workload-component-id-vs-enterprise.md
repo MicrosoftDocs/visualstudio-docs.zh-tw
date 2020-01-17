@@ -3,19 +3,19 @@ title: Visual Studio Enterprise 2019 工作負載和元件識別碼
 titleSuffix: ''
 description: 使用工作負載和元件識別碼透過命令列安裝 Visual Studio，或是在 VSIX 資訊清單中指定為相依性
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 58c7d8775a1db09d2628eb6946924ae3543b80e4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 9edadea9109fcd3c543ca3bd3cd777fbd488351a
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74795954"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159454"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Enterprise 2019)
 
@@ -28,7 +28,7 @@ ms.locfileid: "74795954"
 元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Visual Studio 核心編輯器 | 16.1.28811.260 | 必要
-Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 使用者的 Visual Studio 起始畫面 | 16.0.28315.86 | 選擇性
+Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 使用者的 Visual Studio 起始畫面 | 16.0.28315.86 | RemoveHandler
 
 ## <a name="azure-development"></a>Azure 開發
 
@@ -104,17 +104,17 @@ Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.4.294
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices | Azure 雲端服務工具 | 16.4.29409.204 | 建議
 Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools | Azure Resource Manager 工具 | 16.0.28528.71 | 建議
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | 選擇性
-Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net. ComponentGroup. DeveloperTools | .NET Framework 4.8 開發工具 | 16.4.29318.151 | 選擇性
-Microsoft.VisualStudio.Component.Azure.Storage.AzCopy | Azure 儲存體 AzCopy | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 16.0.28625.61 | 選擇性
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net. ComponentGroup. DeveloperTools | .NET Framework 4.8 開發工具 | 16.4.29318.151 | RemoveHandler
+Microsoft.VisualStudio.Component.Azure.Storage.AzCopy | Azure 儲存體 AzCopy | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 16.0.28625.61 | RemoveHandler
 
 ## <a name="data-storage-and-processing"></a>資料儲存體和流程
 
@@ -168,8 +168,8 @@ VisualStudio. Component. 3.7。 | TypeScript 3.7 SDK | 16.0.29429.68 | 建議
 Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必要條件 | 16.4.29318.151 | 建議
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 16.0.28621.142 | 建議
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面語言支援 | 16.0.28315.86 | 選擇性
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面語言支援 | 16.0.28315.86 | RemoveHandler
 
 ## <a name="data-science-and-analytical-applications"></a>資料科學和分析應用程式
 
@@ -194,13 +194,13 @@ Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic |
 VisualStudio. Component. 3.7。 | TypeScript 3.7 SDK | 16.0.29429.68 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 16.0.28621.142 | 建議
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 原生開發工具 | 16.2.29020.229 | 選擇性
-Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵錯工具與 GPU 分析工具 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.VC.CoreIde | C++ 核心功能 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 16.4.29429.68 | 選擇性
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC 適用于 v142-VS 2019 C++ x64/x86 build tools （v 14.24） | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 執行階段 | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | 選擇性
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 原生開發工具 | 16.2.29020.229 | RemoveHandler
+Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵錯工具與 GPU 分析工具 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.CoreIde | C++ 核心功能 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 16.4.29429.68 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC 適用于 v142-VS 2019 C++ x64/x86 build tools （v 14.24） | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 執行階段 | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | RemoveHandler
 
 ## <a name="net-desktop-development"></a>.NET 桌面開發
 
@@ -242,44 +242,44 @@ Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 16.0.28315.86 | 建�
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.4.29429.68 | 建議
 Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 16.1.28811.260 | 建議
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.1.28829.92 | 建議
-Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 16.0.28528.71 | 選擇性
-Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28714.129 | 選擇性
-Component.Microsoft.Web.LibraryManager | 程式庫管理員 | 16.0.28315.86 | 選擇性
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | 選擇性
-Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net. ComponentGroup. DeveloperTools | .NET Framework 4.8 開發工具 | 16.4.29318.151 | 選擇性
-Microsoft.VisualStudio.Component.ClassDesigner | 類別設計工具 | 16.0.28528.71 | 選擇性
-Microsoft.VisualStudio.Component.CodeClone | 程式碼複製品 | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.CodeMap | Code Map | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | 即時相依性驗證 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面語言支援 | 16.0.28315.86 | 選擇性
-Microsoft.VisualStudio.Component.GraphDocument | DGML 編輯器 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.IISExpress | [IIS Express]  | 16.0.28315.86 | 選擇性
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC 驅動程式 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28707.177 | 選擇性
-Microsoft.VisualStudio.Component.PortableLibrary | .NET 可攜式程式庫目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 執行階段 | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.SQL.DataSources | SQL Server 支援的資料來源 | 16.0.28315.86 | 選擇性
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | 選擇性
-VisualStudio. Component. 3.7。 | TypeScript 3.7 SDK | 16.0.29429.68 | 選擇性
-Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | 架構與分析工具 | 16.4.29429.68 | 選擇性
-VisualStudio. ComponentGroup. MSIX. 封裝 | MSIX 封裝工具 | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必要條件 | 16.4.29318.151 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 16.0.28621.142 | 選擇性
+Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 16.0.28528.71 | RemoveHandler
+Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28714.129 | RemoveHandler
+Component.Microsoft.Web.LibraryManager | 程式庫管理員 | 16.0.28315.86 | RemoveHandler
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net. ComponentGroup. DeveloperTools | .NET Framework 4.8 開發工具 | 16.4.29318.151 | RemoveHandler
+Microsoft.VisualStudio.Component.ClassDesigner | 類別設計工具 | 16.0.28528.71 | RemoveHandler
+Microsoft.VisualStudio.Component.CodeClone | 重複程式碼 | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.CodeMap | Code Map | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | 即時相依性驗證 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面語言支援 | 16.0.28315.86 | RemoveHandler
+Microsoft.VisualStudio.Component.GraphDocument | DGML 編輯器 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.IISExpress | [IIS Express]  | 16.0.28315.86 | RemoveHandler
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC 驅動程式 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28707.177 | RemoveHandler
+Microsoft.VisualStudio.Component.PortableLibrary | .NET 可攜式程式庫目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 執行階段 | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.SQL.DataSources | SQL Server 支援的資料來源 | 16.0.28315.86 | RemoveHandler
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | RemoveHandler
+VisualStudio. Component. 3.7。 | TypeScript 3.7 SDK | 16.0.29429.68 | RemoveHandler
+Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | 架構與分析工具 | 16.4.29429.68 | RemoveHandler
+VisualStudio. ComponentGroup. MSIX. 封裝 | MSIX 封裝工具 | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必要條件 | 16.4.29318.151 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 16.0.28621.142 | RemoveHandler
 
 ## <a name="game-development-with-unity"></a>使用 Unity 的遊戲程式開發
 
@@ -315,7 +315,7 @@ Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | 必要
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ 核心功能 | 16.0.28625.61 | 必要
 Component.Linux.CMake | 適用於 Linux 的 C++ CMake 工具 | 16.2.29003.222 | 建議
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 16.0.28621.142 | 建議
-Component.MDD.Linux.GCC.arm | 內嵌與 IoT 開發工具 | 16.4.29429.68 | 選擇性
+Component.MDD.Linux.GCC.arm | 內嵌與 IoT 開發工具 | 16.4.29429.68 | RemoveHandler
 
 ## <a name="desktop-development-with-c"></a>使用 C++ 的桌面開發
 
@@ -353,23 +353,23 @@ Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest | 適用於 Google 
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC 適用于 v142-VS 2019 C++ x64/x86 build tools （v 14.24） | 16.4.29409.204 | 建議
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | 建議
 VisualStudio. ComponentGroup. WebToolsExtensions. CMake | JSON 編輯器 | 16.3.29207.166 | 建議
-Component.Incredibuild | IncrediBuild - 組建加速 | 16.0.28528.71 | 選擇性
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.10 | 選擇性
-Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 16.0.28625.61 | 選擇性
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | 選擇性
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 選擇性
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ 建置工具 (v14.00) | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.VC.ATLMFC | C++最新適用于 v142 build 工具的 MFC （x86 & x64） | 16.4.29313.120 | 選擇性
-Microsoft.VisualStudio.Component.VC.CLI.Support | C++/CLI 對適用于 v142 build tools 的支援（14.24） | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.VC.Llvm.Clang | C++適用于 Windows 的 Clang 編譯器（9.0.0） | 16.4.29511.114 | 選擇性
-Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset | 適用於 v142 建置工具的 C++ Clang-cl (x64/86) | 16.3.29207.166 | 選擇性
-Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | 適用於 v142 建置工具的 C++ 模組 (x64/x86 – 實驗性) | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86 建置工具 (v14.16) | 16.1.28829.92 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | C++適用于 Windows 的 Clang 工具（9.0.0-x64/x86） | 16.4.29511.114 | 選擇性
+Component.Incredibuild | IncrediBuild - 組建加速 | 16.0.28528.71 | RemoveHandler
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.10 | RemoveHandler
+Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 16.0.28625.61 | RemoveHandler
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | RemoveHandler
+Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | RemoveHandler
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ 建置工具 (v14.00) | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.ATLMFC | C++最新適用于 v142 build 工具的 MFC （x86 & x64） | 16.4.29313.120 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.CLI.Support | C++/CLI 對適用于 v142 build tools 的支援（14.24） | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Llvm.Clang | C++適用于 Windows 的 Clang 編譯器（9.0.0） | 16.4.29511.114 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset | 適用於 v142 建置工具的 C++ Clang-cl (x64/86) | 16.3.29207.166 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | 適用於 v142 建置工具的 C++ 模組 (x64/x86 – 實驗性) | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86 建置工具 (v14.16) | 16.1.28829.92 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | C++適用于 Windows 的 Clang 工具（9.0.0-x64/x86） | 16.4.29511.114 | RemoveHandler
 
 ## <a name="game-development-with-c"></a>使用 C++ 的遊戲程式開發
 
@@ -391,32 +391,32 @@ Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.4.294
 VisualStudio. Component. ASAN | C++AddressSanitizer （實驗性） | 16.4.29429.68 | 建議
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 16.4.29429.68 | 建議
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | 建議
-Component.Android.NDK.R16B | Android NDK (R16B) | 16.4.29519.181 | 選擇性
-Component.Android.SDK25.Private | Android SDK 安裝程式 (API 層級 25) (可用於以 C++ 進行行動裝置開發的本機安裝) | 16.0.28625.61 | 選擇性
-Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | 選擇性
-Component.Cocos | Cocos | 16.0.28315.86 | 選擇性
-Component.Incredibuild | IncrediBuild - 組建加速 | 16.0.28528.71 | 選擇性
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.10 | 選擇性
-Component.MDD.Android | C++ Android 開發工具 | 16.0.28517.75 | 選擇性
-Component.OpenJDK | OpenJDK (Microsoft 散發) | 16.1.28811.260 | 選擇性
-Component.Unreal | Unreal Engine 安裝程式 | 16.1.28810.153 | 選擇性
-Component.Unreal.Android | Unreal 引擎的 Android IDE 支援 | 16.1.28810.153 | 選擇性
-Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.0.28517.75 | 選擇性
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 選擇性
-Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 16.0.28516.191 | 選擇性
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目標和建置工作 | 16.1.28829.92 | 選擇性
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 選擇性
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.4.29429.68 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | 選擇性
+Component.Android.NDK.R16B | Android NDK (R16B) | 16.4.29519.181 | RemoveHandler
+Component.Android.SDK25.Private | Android SDK 安裝程式 (API 層級 25) (可用於以 C++ 進行行動裝置開發的本機安裝) | 16.0.28625.61 | RemoveHandler
+Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | RemoveHandler
+Component.Cocos | Cocos | 16.0.28315.86 | RemoveHandler
+Component.Incredibuild | IncrediBuild - 組建加速 | 16.0.28528.71 | RemoveHandler
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.10 | RemoveHandler
+Component.MDD.Android | C++ Android 開發工具 | 16.0.28517.75 | RemoveHandler
+Component.OpenJDK | OpenJDK (Microsoft 散發) | 16.1.28811.260 | RemoveHandler
+Component.Unreal | Unreal Engine 安裝程式 | 16.1.28810.153 | RemoveHandler
+Component.Unreal.Android | Unreal 引擎的 Android IDE 支援 | 16.1.28810.153 | RemoveHandler
+Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.0.28517.75 | RemoveHandler
+Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | RemoveHandler
+Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 16.0.28516.191 | RemoveHandler
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目標和建置工作 | 16.1.28829.92 | RemoveHandler
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | RemoveHandler
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.4.29429.68 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | RemoveHandler
 
 ## <a name="mobile-development-with-c"></a>使用 C++ 的行動裝置程式開發
 
@@ -435,12 +435,12 @@ Microsoft.VisualStudio.Component.VC.CoreIde | C++ 核心功能 | 16.0.28625.61 |
 Component.Android.NDK.R16B | Android NDK (R16B) | 16.4.29519.181 | 建議
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | 建議
 Component.MDD.Android | C++ Android 開發工具 | 16.0.28517.75 | 建議
-Component.Android.NDK.R16B_3264 | Android NDK (R16B) (32 位元) | 16.4.29519.181 | 選擇性
-Component.Google.Android.Emulator.API25.Private | Google Android 模擬器 (API 層級 25) (本機安裝) | 16.1.28810.153 | 選擇性
-Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM) (本機安裝) | 16.0.28528.71 | 選擇性
-Component.Incredibuild | IncrediBuild - 組建加速 | 16.0.28528.71 | 選擇性
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.10 | 選擇性
-Component.MDD.IOS | C++ iOS 開發工具 | 16.0.28517.75 | 選擇性
+Component.Android.NDK.R16B_3264 | Android NDK (R16B) (32 位元) | 16.4.29519.181 | RemoveHandler
+Component.Google.Android.Emulator.API25.Private | Google Android 模擬器 (API 層級 25) (本機安裝) | 16.1.28810.153 | RemoveHandler
+Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM) (本機安裝) | 16.0.28528.71 | RemoveHandler
+Component.Incredibuild | IncrediBuild - 組建加速 | 16.0.28528.71 | RemoveHandler
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.10 | RemoveHandler
+Component.MDD.IOS | C++ iOS 開發工具 | 16.0.28517.75 | RemoveHandler
 
 ## <a name="net-core-cross-platform-development"></a>.NET Core 跨平台開發
 
@@ -505,9 +505,9 @@ Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 16.
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Azure WebJobs 工具 | 16.0.28621.142 | 建議
 Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | 適用於 Web 開發的雲端工具 | 16.2.29003.222 | 建議
-Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 開發時間的 IIS 支援 | 16.0.28315.86 | 選擇性
-VisualStudio. ComponentGroup. MSIX. 封裝 | MSIX 封裝工具 | 16.4.29409.204 | 選擇性
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 開發時間的 IIS 支援 | 16.0.28315.86 | RemoveHandler
+VisualStudio. ComponentGroup. MSIX. 封裝 | MSIX 封裝工具 | 16.4.29409.204 | RemoveHandler
 
 ## <a name="mobile-development-with-net"></a>使用 .NET 的行動應用程式開發
 
@@ -608,25 +608,25 @@ Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 16.1.2881
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Azure WebJobs 工具 | 16.0.28621.142 | 建議
 Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | 適用於 Web 開發的雲端工具 | 16.2.29003.222 | 建議
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | 選擇性
-Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net. ComponentGroup. DeveloperTools | .NET Framework 4.8 開發工具 | 16.4.29318.151 | 選擇性
-Microsoft.VisualStudio.Component.ClassDesigner | 類別設計工具 | 16.0.28528.71 | 選擇性
-Microsoft.VisualStudio.Component.CodeClone | 程式碼複製品 | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.CodeMap | Code Map | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | 即時相依性驗證 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.GraphDocument | DGML 編輯器 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.TestTools.WebLoadTest | Web 效能與負載測試工具 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.AdditionalWebProjectTemplates | 其他專案範本 (舊版) | 16.0.28621.142 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | 架構與分析工具 | 16.4.29429.68 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 開發時間的 IIS 支援 | 16.0.28315.86 | 選擇性
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net. ComponentGroup. DeveloperTools | .NET Framework 4.8 開發工具 | 16.4.29318.151 | RemoveHandler
+Microsoft.VisualStudio.Component.ClassDesigner | 類別設計工具 | 16.0.28528.71 | RemoveHandler
+Microsoft.VisualStudio.Component.CodeClone | 重複程式碼 | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.CodeMap | Code Map | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | 即時相依性驗證 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.GraphDocument | DGML 編輯器 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.TestTools.WebLoadTest | Web 效能與負載測試工具 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.AdditionalWebProjectTemplates | 其他專案範本 (舊版) | 16.0.28621.142 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | 架構與分析工具 | 16.4.29429.68 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 開發時間的 IIS 支援 | 16.0.28315.86 | RemoveHandler
 
 ## <a name="nodejs-development"></a>Node.js 開發
 
@@ -646,10 +646,10 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程�
 Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.1076 | 建議
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
-Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 16.4.29429.68 | 選擇性
-Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.VC.CoreIde | C++ 核心功能 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC 適用于 v142-VS 2019 C++ x64/x86 build tools （v 14.24） | 16.4.29409.204 | 選擇性
+Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 16.4.29429.68 | RemoveHandler
+Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.CoreIde | C++ 核心功能 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC 適用于 v142-VS 2019 C++ x64/x86 build tools （v 14.24） | 16.4.29409.204 | RemoveHandler
 
 ## <a name="officesharepoint-development"></a>Office/SharePoint 程式開發
 
@@ -701,17 +701,17 @@ Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必�
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.Component.TeamOffice | Visual Studio Tools for Office (VSTO) | 16.4.29409.204 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | 選擇性
-Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 16.3.29207.166 | 選擇性
-Microsoft.Net. ComponentGroup. DeveloperTools | .NET Framework 4.8 開發工具 | 16.4.29318.151 | 選擇性
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.4.29429.68 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.Sharepoint.WIF | Windows Identity Foundation 3.5 | 16.0.28621.142 | 選擇性
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net. TargetingPack | .NET Framework 4.8 目標套件 | 16.4.29313.120 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.Net. ComponentGroup. DeveloperTools | .NET Framework 4.8 開發工具 | 16.4.29318.151 | RemoveHandler
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.4.29429.68 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.Sharepoint.WIF | Windows Identity Foundation 3.5 | 16.0.28621.142 | RemoveHandler
 
 ## <a name="python-development"></a>Python 開發
 
@@ -733,48 +733,48 @@ Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScri
 VisualStudio. Component. 3.7。 | TypeScript 3.7 SDK | 16.0.29429.68 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 16.0.28621.142 | 建議
-Component.CPython2.x64 | Python 2 64 位元 (2.7.16) | 2.7.16 | 選擇性
-Component.CPython2.x86 | Python 2 32 位元 (2.7.16) | 2.7.16 | 選擇性
-Component.CPython3.x86 | Python 3 32 位（3.7.5） | 3.7.5 | 選擇性
-Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28714.129 | 選擇性
-Component.Microsoft.Web.LibraryManager | 程式庫管理員 | 16.0.28315.86 | 選擇性
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 選擇性
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 原生開發工具 | 16.2.29020.229 | 選擇性
-Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 16.0.28517.75 | 選擇性
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.0.28517.75 | 選擇性
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 選擇性
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | 選擇性
-NetCore. Component SDK | .NET Core 3.1 SDK | 16.4.29519.181 | 選擇性
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 16.0.28315.86 | 選擇性
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.1.28810.153 | 選擇性
-Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 16.4.29313.120 | 選擇性
-Microsoft.VisualStudio.Component.Azure.Waverton | Azure 雲端服務核心工具 | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure 雲端服務建置工具 | 16.3.29207.166 | 選擇性
-Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵錯工具與 GPU 分析工具 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.IISExpress | [IIS Express]  | 16.0.28315.86 | 選擇性
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed 桌面工作負載核心 | 16.4.29318.151 | 選擇性
-Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC 驅動程式 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28707.177 | 選擇性
-Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.1.28829.92 | 選擇性
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 選擇性
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.4.29429.68 | 選擇性
-Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 執行階段 | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 資料類型 | 16.0.28315.86 | 選擇性
-Microsoft.VisualStudio.Component.SQL.DataSources | SQL Server 支援的資料來源 | 16.0.28315.86 | 選擇性
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | 選擇性
-Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.VC.CoreIde | C++ 核心功能 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 16.4.29429.68 | 選擇性
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC 適用于 v142-VS 2019 C++ x64/x86 build tools （v 14.24） | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 執行階段 | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必要條件 | 16.4.29318.151 | 選擇性
+Component.CPython2.x64 | Python 2 64 位元 (2.7.16) | 2.7.16 | RemoveHandler
+Component.CPython2.x86 | Python 2 32 位元 (2.7.16) | 2.7.16 | RemoveHandler
+Component.CPython3.x86 | Python 3 32 位（3.7.5） | 3.7.5 | RemoveHandler
+Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28714.129 | RemoveHandler
+Component.Microsoft.Web.LibraryManager | 程式庫管理員 | 16.0.28315.86 | RemoveHandler
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | RemoveHandler
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 原生開發工具 | 16.2.29020.229 | RemoveHandler
+Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 16.0.28517.75 | RemoveHandler
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.0.28517.75 | RemoveHandler
+Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | RemoveHandler
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.3.29207.166 | RemoveHandler
+NetCore. Component SDK | .NET Core 3.1 SDK | 16.4.29519.181 | RemoveHandler
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 16.0.28315.86 | RemoveHandler
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.1.28810.153 | RemoveHandler
+Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 16.4.29313.120 | RemoveHandler
+Microsoft.VisualStudio.Component.Azure.Waverton | Azure 雲端服務核心工具 | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure 雲端服務建置工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵錯工具與 GPU 分析工具 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.IISExpress | [IIS Express]  | 16.0.28315.86 | RemoveHandler
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed 桌面工作負載核心 | 16.4.29318.151 | RemoveHandler
+Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC 驅動程式 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28707.177 | RemoveHandler
+Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.1.28829.92 | RemoveHandler
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | RemoveHandler
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.4.29429.68 | RemoveHandler
+Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 執行階段 | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 資料類型 | 16.0.28315.86 | RemoveHandler
+Microsoft.VisualStudio.Component.SQL.DataSources | SQL Server 支援的資料來源 | 16.0.28315.86 | RemoveHandler
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | RemoveHandler
+Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.CoreIde | C++ 核心功能 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 16.4.29429.68 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC 適用于 v142-VS 2019 C++ x64/x86 build tools （v 14.24） | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 執行階段 | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必要條件 | 16.4.29318.151 | RemoveHandler
 
 ## <a name="universal-windows-platform-development"></a>通用 Windows 平台開發
 
@@ -804,34 +804,34 @@ Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard | .NET Native 和.N
 Microsoft.VisualStudio.ComponentGroup.UWP.Support | 通用 Windows 平台工具 | 16.4.29409.204 | 必要
 Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | 適用於 Xamarin 的通用 Windows 平台工具 | 16.4.29511.114 | 必要
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.4.29429.68 | 建議
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 選擇性
-Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 選擇性
-Microsoft.VisualStudio.Component.ClassDesigner | 類別設計工具 | 16.0.28528.71 | 選擇性
-Microsoft.VisualStudio.Component.CodeClone | 程式碼複製品 | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.CodeMap | Code Map | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | 即時相依性驗證 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.GraphDocument | DGML 編輯器 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵錯工具與 GPU 分析工具 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.UWP.VC.ARM64 | 適用於 v142 建置工具 (ARM64) 的 C++ 通用 Windows 平台支援 | 16.3.29207.166 | 選擇性
-Microsoft.VisualStudio.Component.VC.CoreIde | C++ 核心功能 | 16.0.28625.61 | 選擇性
-Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 可轉散發更新 | 16.4.29429.68 | 選擇性
-Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC 適用于 v142-VS 2019 C++ ARM build tools （v 14.24） | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC 適用于 v142-VS 2019 C++ ARM64 build tools （v 14.24） | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC 適用于 v142-VS 2019 C++ x64/x86 build tools （v 14.24） | 16.4.29409.204 | 選擇性
-Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 - VS 2017 C++ ARM 建置工具 (v14.16) | 16.2.29003.222 | 選擇性
-Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 - VS 2017 C++ ARM64 建置工具 (v14.16) | 16.1.28829.92 | 選擇性
-Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86 建置工具 (v14.16) | 16.1.28829.92 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | 選擇性
-Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | USB 裝置連線 | 16.4.29511.114 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | 架構與分析工具 | 16.4.29429.68 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Native | 適用於 C++ 的架構工具 | 16.0.28621.142 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | C++ 核心桌面功能 | 16.2.29012.281 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ (v142) 通用 Windows 平台工具 | 16.3.29207.166 | 選擇性
-Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141 | C++ (v141) 通用 Windows 平台工具 | 16.1.28810.153 | 選擇性
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | RemoveHandler
+Net.tcp. node.js SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | RemoveHandler
+Microsoft.VisualStudio.Component.ClassDesigner | 類別設計工具 | 16.0.28528.71 | RemoveHandler
+Microsoft.VisualStudio.Component.CodeClone | 重複程式碼 | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.CodeMap | Code Map | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | 即時相依性驗證 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.GraphDocument | DGML 編輯器 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵錯工具與 GPU 分析工具 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.UWP.VC.ARM64 | 適用於 v142 建置工具 (ARM64) 的 C++ 通用 Windows 平台支援 | 16.3.29207.166 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.CoreIde | C++ 核心功能 | 16.0.28625.61 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 可轉散發更新 | 16.4.29429.68 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC 適用于 v142-VS 2019 C++ ARM build tools （v 14.24） | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC 適用于 v142-VS 2019 C++ ARM64 build tools （v 14.24） | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC 適用于 v142-VS 2019 C++ x64/x86 build tools （v 14.24） | 16.4.29409.204 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 - VS 2017 C++ ARM 建置工具 (v14.16) | 16.2.29003.222 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 - VS 2017 C++ ARM64 建置工具 (v14.16) | 16.1.28829.92 | RemoveHandler
+Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86 建置工具 (v14.16) | 16.1.28829.92 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | RemoveHandler
+Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | USB 裝置連線 | 16.4.29511.114 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | 架構與分析工具 | 16.4.29429.68 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Native | 適用於 C++ 的架構工具 | 16.0.28621.142 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | C++ 核心桌面功能 | 16.2.29012.281 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ (v142) 通用 Windows 平台工具 | 16.3.29207.166 | RemoveHandler
+Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141 | C++ (v141) 通用 Windows 平台工具 | 16.1.28810.153 | RemoveHandler
 
 ## <a name="visual-studio-extension-development"></a>Visual Studio 擴充功能開發
 
@@ -857,9 +857,9 @@ Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites | Visu
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 16.4.29429.68 | 建議
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.4.29429.68 | 建議
 Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.28625.61 | 建議
-Microsoft.Component.CodeAnalysis.SDK | .NET Compiler Platform SDK | 16.2.29003.222 | 選擇性
-Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 16.4.29429.68 | 選擇性
-Microsoft.VisualStudio.Component.DslTools | Modeling SDK | 16.0.28315.86 | 選擇性
+Microsoft.Component.CodeAnalysis.SDK | .NET Compiler Platform SDK | 16.2.29003.222 | RemoveHandler
+Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 16.4.29429.68 | RemoveHandler
+Microsoft.VisualStudio.Component.DslTools | Modeling SDK | 16.0.28315.86 | RemoveHandler
 
 ## <a name="unaffiliated-components"></a>非附屬元件
 
