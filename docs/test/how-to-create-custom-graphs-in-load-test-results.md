@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load test results graphs, creating
 - load test results graphs
 ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9012fbea21f552b8057278b37f5d336718c0269f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10433c63e0bad00d187f79634f74fa3727edc3dc
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653572"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113291"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>如何：在負載測試結果中建立自訂圖表
 

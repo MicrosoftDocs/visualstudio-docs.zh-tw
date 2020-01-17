@@ -4,17 +4,17 @@ ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 923e8bb50b1caa323c602334c1d9a28b072043bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591316"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114462"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：檢視、儲存和設定組建記錄檔
 
@@ -72,4 +72,4 @@ ms.locfileid: "75591316"
 ## <a name="see-also"></a>請參閱
 
 - [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)

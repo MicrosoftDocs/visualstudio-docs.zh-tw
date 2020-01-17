@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: b9349e2c1c9ebb52e6172cc37ab1113aff95d511
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653134"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76112524"
 ---
 # <a name="warnings-and-errors"></a>警告和錯誤
 
@@ -114,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-您可以編輯 **PexSettingsAttributeBase** 所衍生屬性的 **MaxConditions** 選項，例如 [PexClass](attribute-glossary.md#pexclass) 或 [PexMethod](attribute-glossary.md#pexmethod)。 例如:
+您可以編輯 **PexSettingsAttributeBase** 所衍生屬性的 **MaxConditions** 選項，例如 [PexClass](attribute-glossary.md#pexclass) 或 [PexMethod](attribute-glossary.md#pexmethod)。 例如：
 
 ```csharp
 [PexMethod(MaxConditions=10000)]
@@ -209,7 +209,7 @@ public void MyTest(...) {
 <a name="cannot-concretize-solution"></a>
 ## <a name="cannot-concretize-solution"></a>無法將解決方案實體化
 
-此錯誤通常是以前錯誤的結果。 IntelliTest 使用[限制式求解](input-generation.md#constraint-solver)決定新的測試輸入。 有時候，[限制式求解](input-generation.md#constraint-solver)提議的測試輸入無效。 發生的時機為：
+此錯誤通常是以前錯誤的結果。 IntelliTest 使用[限制式求解](input-generation.md#constraint-solver)決定新的測試輸入。 有時候，[限制式求解](input-generation.md#constraint-solver)提議的測試輸入無效。 這會在以下情況發生：
 
 * 未知的特定條件約束
 * 如果值是以使用者定義的方式建立，就會導致使用者程式碼發生錯誤

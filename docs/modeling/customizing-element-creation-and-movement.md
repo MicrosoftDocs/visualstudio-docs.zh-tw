@@ -6,17 +6,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
 - Domain-Specific Language, element merge directives
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 192bde210d7188e54576453dc04654e970df27f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 45131ff231e34cf769ac3665344e340f38b9380d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747619"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114252"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 
@@ -89,7 +89,7 @@ Merge 指示詞有兩種：
 
    1. 在 [ **DSL Explorer**] 中，展開 [**網域類別**]。 以滑鼠右鍵按一下 `ExampleElement`，然後按一下 [**加入新的元素合併**指示詞]。
 
-   2. 請確定 [ **DSL 詳細資料**] 視窗已開啟，讓您可以查看新 EMD 的詳細資料。 下拉式功能表**View**，**其他視窗**， **DSL 詳細資料**）。
+   2. 請確定 [ **DSL 詳細資料**] 視窗已開啟，讓您可以查看新 EMD 的詳細資料。 （功能表： **View**，**其他視窗**， **DSL Details**）。
 
 3. 在 [DSL 詳細資料] 視窗中設定 [**索引] 類別**，以定義哪些類別的專案可以合併到 `ExampleElement` 物件上。
 
@@ -159,7 +159,7 @@ Merge 指示詞有兩種：
 
 4. 重建方案。 這會花費比平常更長的時間，因為產生的程式碼會從模型中更新。
 
-     將報告組建錯誤，如下所示："ElementMergeSample. ExampleElement 未包含 CanMergeExampleElement 的定義 ..."
+     將報告組建錯誤，類似于： "ElementMergeSample. ExampleElement 未包含 CanMergeExampleElement 的定義 ..."
 
      您必須 `CanMergeExampleElement`執行方法。
 
@@ -316,7 +316,7 @@ Merge 指示詞有兩種：
 
      您應該不會看到無法使用的指標，而且您應該能夠在現有的**輸入埠**上放置新的。 選取新的**輸入埠**，並將它拖曳至**元件**上的另一個點。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [自訂工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)

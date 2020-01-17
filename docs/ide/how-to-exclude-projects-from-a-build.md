@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e72b072ad2cabab643d64f149a31b1b8dbb2a054
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: a19c49482c45aa0a3cf5d7cb33eb106adb65b83b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713938"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114811"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>如何：從組建中排除專案
 

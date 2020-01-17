@@ -6,16 +6,16 @@ manager: lank
 ms.date: 01/06/2020
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所含的 WhiteSource Bolt 訂用帳戶。
-ms.openlocfilehash: 8db777135e9f78321ccbc7cc9d40bf657da97589
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: edfc4c01908a6ce3bf5466a812ab7cf2608a62f7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75866150"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114329"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 WhiteSource Bolt
 
-找出並修正開放原始碼弱點，以及產生組建中所有開放原始碼元件的全面清查及授權報表。 
+找出並修正開放原始碼弱點，以及產生組建中所有開放原始碼元件的全面清查及授權報表。 Visual Studio Enterprise 訂用帳戶會收到六個月的無限制掃描。
 
 ## <a name="activation-steps"></a>啟用步驟
 

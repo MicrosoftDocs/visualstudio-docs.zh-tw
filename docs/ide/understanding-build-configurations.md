@@ -21,17 +21,17 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - solutions [Visual Studio], build configuration
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21421776506868942e9dc562db4f456c2012fce7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e0b1bff60cb30546d28cd68007ffc6f059d8d02f
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592018"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115122"
 ---
 # <a name="understand-build-configurations"></a>了解組建組態
 
@@ -90,7 +90,7 @@ Visual Studio 使用下列準則來指派方案組態。
 ## <a name="see-also"></a>請參閱
 
 - [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)
-- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
 - [方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
 - [C/C++ 組建參考](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)

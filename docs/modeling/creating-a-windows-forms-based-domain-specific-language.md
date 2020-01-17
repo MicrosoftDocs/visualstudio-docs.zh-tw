@@ -2,17 +2,17 @@
 title: 建立 Windows Form 架構之網域指定的語言
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9d043f64204c50be06952ecc39be75e15087cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f565184dcb9570ecc34b61f1f2d4d0e2ce2a4110
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654112"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114888"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>建立以 Windows Forms 為基礎的網域特定語言
 
@@ -39,7 +39,7 @@ ms.locfileid: "72654112"
 
    1. 轉換所有範本。
 
-   2. 建立並執行範例（**Ctrl** +**F5**）。
+   2. 建立並執行範例（**Ctrl**+**F5**）。
 
    3. 在 Visual Studio 的實驗實例中，開啟調試專案中的 `Sample` 檔案。
 
@@ -57,15 +57,15 @@ ms.locfileid: "72654112"
 
 - 在 `DslPackage` 專案中，`UI\DocView.cs` 包含的程式碼會顯示 `UI` 專案中定義的 Windows Forms 控制項。
 
-- @No__t_0 專案包含系結至 DSL 之表單控制項的工作範例。 不過，當您變更 DSL 定義時，它不會有作用。 @No__t_0 專案包含：
+- `UI` 專案包含系結至 DSL 之表單控制項的工作範例。 不過，當您變更 DSL 定義時，它不會有作用。 `UI` 專案包含：
 
-  - 名為 `ModelViewControl` 的 Windows Forms 類別。
+  - 名為 `ModelViewControl`的 Windows Forms 類別。
 
-  - 名為 `DataBinding.cs` 的檔案，其中包含 `ModelViewControl` 的其他部分定義。 若要查看其內容，請在**方案總管**中，開啟檔案的快捷方式功能表，然後選擇 [ **View Code**]。
+  - 名為 `DataBinding.cs` 的檔案，其中包含 `ModelViewControl`的其他部分定義。 若要查看其內容，請在**方案總管**中，開啟檔案的快捷方式功能表，然後選擇 [ **View Code**]。
 
 ### <a name="about-the-ui-project"></a>關於 UI 專案
 
-當您更新 DSL 定義檔以定義您自己的 DSL 時，您必須更新 `UI` 專案中的控制項，以顯示您的 DSL。 不同于 `Dsl` 和 `DslPackage` 專案，不會從 `DslDefinitionl.dsl` 產生範例 `UI` 專案。 如有需要，您可以新增 tt 檔案來產生程式碼，雖然本逐步解說並未涵蓋這項功能。
+當您更新 DSL 定義檔以定義您自己的 DSL 時，您必須更新 `UI` 專案中的控制項，以顯示您的 DSL。 不同于 `Dsl` 和 `DslPackage` 專案，不會從 `DslDefinitionl.dsl`產生範例 `UI` 專案。 如有需要，您可以新增 tt 檔案來產生程式碼，雖然本逐步解說並未涵蓋這項功能。
 
 ## <a name="update-the-dsl-definition"></a>更新 DSL 定義
 
@@ -86,7 +86,7 @@ ms.locfileid: "72654112"
 
 4. 使用**命名網域類別**工具來建立下列網域類別：
 
-    - `Field`-提供另一個名為 `Size` 的網域屬性。
+    - `Field`-提供另一個名為 `Size`的網域屬性。
 
     - `Animal`-在屬性視窗中，將**繼承修飾**詞設定為**Abstract**。
 
@@ -174,7 +174,7 @@ ms.locfileid: "72654112"
 
 - 它可確保當使用者選取資料列時，屬性視窗會顯示對應之模型專案的屬性，而不是資料格資料列。
 
-  ![DslWpf4 資料來源和 views 之間連結的 ](../modeling/media/dslwpf4.png) 架構。
+  ![DslWpf4 在資料來源和 views 之間](../modeling/media/dslwpf4.png) 連結架構。
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>完成 DSL 的系結
 

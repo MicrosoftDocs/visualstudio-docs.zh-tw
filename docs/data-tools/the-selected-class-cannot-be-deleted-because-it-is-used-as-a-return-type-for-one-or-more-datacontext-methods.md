@@ -3,17 +3,17 @@ title: 無法刪除所選取的類別，因為它是用來當做一或多個 Dat
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aff8d7c01291c410f81b00c689f600507841965b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 249a5338985983509f04e0ff268b2f30e2773f71
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72640060"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113555"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回類型。
 
@@ -21,7 +21,7 @@ ms.locfileid: "72640060"
 
 若要將 <xref:System.Data.Linq.DataContext> 方法的傳回型別還原成它們原來自動產生的類型，請先從 [方法] 窗格中刪除 <xref:System.Data.Linq.DataContext> 方法，然後再次將物件從**伺服器總管**/**資料庫總管** 拖曳至 **O/R 設計工具**。
 
-## <a name="to-correct-this-error"></a>更正這個錯誤
+## <a name="to-correct-this-error"></a>若要改正這項錯誤
 
 1. 選取 [方法] 窗格中的 <xref:System.Data.Linq.DataContext> 方法，然後檢查 [屬性] 視窗中的 [傳回型別] 屬性，以識別將實體類別用作傳回型別的 <xref:System.Data.Linq.DataContext> 方法。
 
