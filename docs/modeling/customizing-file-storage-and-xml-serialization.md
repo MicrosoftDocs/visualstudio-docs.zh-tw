@@ -6,17 +6,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27d8672ea94cf2a1547904f313ac36509f111462
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d8fe9fb5086b93861c7ca12a208affe7aa979df2
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748464"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114432"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 
@@ -101,7 +101,7 @@ ms.locfileid: "72748464"
 
 標記是用來表示模型和圖表檔案的不同部分之間的交互參考。 它們也會在 `.diagram` 檔案中用來參考模型檔案中的節點。 有兩種形式的名字標記：
 
-- *Id 名字*標記會括住目標元素的 GUID。 例如:
+- *Id 名字*標記會括住目標元素的 GUID。 例如：
 
     ```xml
     <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />
@@ -124,13 +124,13 @@ ms.locfileid: "72748464"
 
 1. 請確定在類別及其基類中，每個網域屬性都 `false` [**是名字標記索引鍵**]。
 
-    1. 在 [DSL Explorer] 中，展開 [ **Xml 序列化] Behavior\Class 資料 \\ \<the 網域類別 > [\Element 資料**]。
+    1. 在 DSL Explorer 中，展開**Xml 序列化 Behavior\Class 資料\\\<網域類別 > \Element 資料**。
 
     2. 確認每個網域屬性的**都是 `false` 的名字標記索引鍵**。
 
     3. 如果網域類別具有基類，請重複該類別中的程式。
 
-2. 為網域類別設定**序列化識別碼** =  `true`。
+2. 為網域類別設定**序列化識別碼** = `true`。
 
      這個屬性可以在**Xml 序列化行為**下找到。
 
@@ -138,7 +138,7 @@ ms.locfileid: "72748464"
 
 - 針對現有網域類別的網域屬性，Set**是「名字**」索引鍵。 屬性的類型必須是 `string`。
 
-    1. 在 [DSL Explorer] 中，展開 [ **Xml 序列化] Behavior\Class 資料 \\ \<the 網域類別 > [\Element 資料**]，然後選取 [網域] 屬性。
+    1. 在 DSL Explorer 中，展開**Xml 序列化 Behavior\Class 資料\\\<網域類別 > \Element 資料**，然後選取 網域 屬性。
 
     2. 在屬性視窗中，將 [**是名字標記索引鍵**] 設定為 `true`。
 
@@ -158,7 +158,7 @@ ms.locfileid: "72748464"
 
 有數種方法可協助避免這種情況：
 
-- Set 是 key domain 屬性的**元素名稱** =  `true`。 選取 DSL 定義圖表上的 網域 屬性，然後在 屬性視窗中設定值。
+- Set 是 key domain 屬性的**元素名稱** = `true`。 選取 DSL 定義圖表上的 網域 屬性，然後在 屬性視窗中設定值。
 
      當使用者建立類別的新實例時，這個值會自動將不同的值指派給網域屬性。 預設行為會在類別名稱的結尾加上一個數位。 這不會防止使用者將名稱變更為重複的，但在使用者不會在儲存模型之前設定值時，它會有説明。
 
@@ -230,7 +230,7 @@ ms.locfileid: "72748464"
     </familyTreeModel>
     ```
 
-- 將**標記法**設定  = **元素**，讓網域屬性儲存為元素，而不是屬性值。
+- 將**標記法**設定 = **元素**，讓網域屬性儲存為元素，而不是屬性值。
 
     ```xml
     <person name="Elizabeth I" birthYear="1533">
@@ -275,10 +275,10 @@ ms.locfileid: "72748464"
 |元素名稱|這個類別之元素的 Xml 節點名稱。 預設值是網域類別名稱的小寫版本。|
 |名字屬性名稱|要包含參考之標記專案中所使用屬性的名稱。 如果空白，則會使用索引鍵屬性或識別碼的名稱。<br /><br /> 在此範例中，它是 "name"： `<personMoniker name="/Mike Nash"/>`|
 |標記元素名稱|Xml 專案的名稱，用於參考此類別之元素的名字。<br /><br /> 預設值是以小寫版本的類別名稱，並以 "名字" 作為尾碼。 例如，`personMoniker`。|
-|標記類型名稱|為此類別的專案所產生的 xsd 型別名稱。 XSD 位於 Dsl\Generated 程式**代碼 \\ \*Schema .xsd**|
+|標記類型名稱|為此類別的專案所產生的 xsd 型別名稱。 XSD 位於 Dsl\Generated 程式**代碼\\\*架構 .xsd**|
 |序列化識別碼|如果為 True，則表示專案 GUID 包含在檔案中。 如果沒有任何屬性標示為名字標記索引**鍵**，而且 DSL 定義此類別的參考關聯性，則必須為 true。|
 |類型名稱|Xsd 中所指定網域類別所產生的 xml 類型名稱。|
-|備註|與此元素相關聯的非正式附注|
+|注意事項|與此元素相關聯的非正式附注|
 
 ### <a name="xml-property-data"></a>Xml 屬性資料
 
@@ -290,9 +290,9 @@ Xml 屬性節點可以在類別節點底下找到。
 |網域屬性|套用 xml 序列化設定資料的屬性。 唯讀。|
 |為名字標記索引鍵|若為 True，則會使用屬性做為索引鍵，以建立參考此網域類別之實例的名字。|
 |為標記辨識符號|若為 True，則會使用屬性來建立名字標記中的限定詞。 如果為 false，而且如果此網域類別的 SerializeId 不是 true，則會以內嵌樹狀結構中父項目的標記來限定名字項。|
-|表示|如果屬性，則會將屬性序列化為 xml 屬性;如果專案，則會將它序列化為元素;如果忽略，則不會序列化。|
+|Representation|如果屬性，則會將屬性序列化為 xml 屬性;如果專案，則會將它序列化為元素;如果忽略，則不會序列化。|
 |Xml 名稱|用於代表屬性之 xml 屬性或元素的名稱。 根據預設，這是網域屬性名稱的小寫版本。|
-|備註|與此元素相關聯的非正式附注|
+|注意事項|與此元素相關聯的非正式附注|
 
 ### <a name="xml-role-data"></a>Xml 角色資料
 

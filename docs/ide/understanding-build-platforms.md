@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925835"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115070"
 ---
 # <a name="understand-build-platforms"></a>了解組建平台
 
@@ -30,14 +30,14 @@ ms.locfileid: "68925835"
 
 ## <a name="in-this-section"></a>本節內容
 
-[如何：將專案設定成以各種平台為目標](../ide/how-to-configure-projects-to-target-platforms.md)\
+[如何：將專案設定成以平臺為目標](../ide/how-to-configure-projects-to-target-platforms.md)\
 說明如何將專案設定成以特定平台為目標。
 
-[如何：將專案設定成以多平台為目標](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+[如何：將專案設定為以多個平臺為目標](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 說明如何將專案設定成以多重平台為目標。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)
 - [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)

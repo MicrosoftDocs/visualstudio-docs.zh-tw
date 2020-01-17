@@ -2,17 +2,17 @@
 title: 更新圖案和接點來反映模型
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c26295461fa062faf88872dbc043048c26479a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663787"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115020"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>更新圖形和接點來反映模型
 
@@ -84,7 +84,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>使用 OnChildConfigured 來初始化圖形的屬性
 
-若要在第一次建立時設定圖形的屬性，請在圖表類別的部分定義中 `OnChildConfigured()` 覆寫。 圖表類別是在您的 DSL 定義中指定，而產生的程式碼則是在**Dsl\Generated Code\Diagram.cs**中。 例如:
+若要在第一次建立時設定圖形的屬性，請在圖表類別的部分定義中 `OnChildConfigured()` 覆寫。 圖表類別是在您的 DSL 定義中指定，而產生的程式碼則是在**Dsl\Generated Code\Diagram.cs**中。 例如：
 
 ```csharp
 partial class MyLanguageDiagram
@@ -112,7 +112,7 @@ partial class MyLanguageDiagram
 
 對於某個圖形的某些功能，例如它是否有陰影，或是連接子的箭號樣式，並沒有內建方法可將此功能公開為網域屬性。  這類功能的變更不在交易系統的控制之下。 因此，使用規則來更新它們並不適當，因為當使用者執行復原命令時，不會叫用規則。
 
-相反地，您可以使用 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A> 來更新這類功能。 在下列範例中，連接器的箭號樣式是由連接器顯示之關聯性中的網域屬性值所控制：
+相反地，您可以使用 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>來更新這類功能。 在下列範例中，連接器的箭號樣式是由連接器顯示之關聯性中的網域屬性值所控制：
 
 ```csharp
 public partial class ArrowConnector // My connector class.

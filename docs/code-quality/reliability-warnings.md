@@ -9,17 +9,17 @@ helpviewer_keywords:
 - reliability warnings
 - managed code analysis warnings, reliability warnings
 ms.assetid: 77886846-10a2-4585-968a-7eb60ebe07e8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 602f372e11c4a9a8506186535958fc4f22da7806
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e936222a95681796f5c5ca423d122995e1ea5f79
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649121"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113263"
 ---
 # <a name="reliability-warnings"></a>可靠性警告
 
@@ -33,4 +33,4 @@ ms.locfileid: "72649121"
 |[CA2003：不要將 Fiber 視為執行緒](../code-quality/ca2003.md)|Managed 執行緒被視為 Win32 執行緒。|
 |[CA2004：必須移除對 GC.KeepAlive 的呼叫](../code-quality/ca2004.md)|如果您要轉換成 SafeHandle 使用方式，請移除所有對 GC 的呼叫。KeepAlive （物件）。 在此情況下，類別應該不需要呼叫 GC。KeepAlive，假設它們沒有完成項，但依賴 SafeHandle 來完成作業系統控制碼。|
 |[CA2006：必須使用 SafeHandle 封裝原生資源](../code-quality/ca2006.md)|在 Managed 程式碼中使用 IntPtr，可能會有潛在的安全性和可靠性問題。 必須檢閱所有使用 IntPtr 的情況，判斷是否需要在該處使用 SafeHandle (或類似技術)。|
-|[CA2007：不要直接等待工作](../code-quality/ca2007.md)|非同步方法會直接[等待](/dotnet/csharp/language-reference/keywords/await)<xref:System.Threading.Tasks.Task>。|
+|[CA2007：不要直接等待工作](../code-quality/ca2007.md)|非同步方法會 <xref:System.Threading.Tasks.Task>[直接等候](/dotnet/csharp/language-reference/keywords/await)。|

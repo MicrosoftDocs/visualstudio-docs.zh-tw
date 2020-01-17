@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f36e8b6d67d2405fbc74c0b1bf854b3a3baaf4da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a8892f46585179ae5857d48deffd982e1cfc0dee
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650150"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115395"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 
@@ -84,6 +84,6 @@ ms.locfileid: "72650150"
   - 貼上
   - 全選
   - 復原
-  - 取消復原
+  - 重做
 
 - 若要在 Visual Studio 的工作流程設計工具內重新對應運算式編輯命令的鍵盤快速鍵，請編輯工作流程設計工具範圍中的快捷方式。 在 [文字編輯器] 範圍中所做的變更不會自動套用至工作流程設計工具。 如果兩個地方的快速鍵都要重新對應，您必須套用這些變更兩次 (兩個範圍各一次)。

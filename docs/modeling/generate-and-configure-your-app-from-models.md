@@ -2,17 +2,17 @@
 title: 透過模型產生和設定應用程式
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13d943b8d86bd9ca912816e0f19993959ca303c1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8ea3fe0027827396a49eec4c6b245a9ea59652b7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748394"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114894"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>透過模型產生和設定應用程式
 您可以透過模型產生或設定應用程式的各部分。
@@ -20,7 +20,7 @@ ms.locfileid: "72748394"
  模型在呈現需求方面比程式碼更為直接。 直接從模型中衍生應用程式的行為，會比更新程式碼更能快速並可靠地回應變更的需求。 雖然需要進行一些初始工作才能設定衍生，但是如果您預期需求會變更，或打算進行產品的數個變化，則會傳回這項投資。
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>透過模型產生應用程式碼
- 產生程式碼的最簡單方式是使用文字範本。 您可以在保留模型的相同 Visual Studio 解決方案中產生程式碼。 如需詳細資訊，請參閱:
+ 產生程式碼的最簡單方式是使用文字範本。 您可以在保留模型的相同 Visual Studio 解決方案中產生程式碼。 如需詳細資訊，請參閱＜＞。
 
 - [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -35,7 +35,7 @@ ms.locfileid: "72748394"
   不過，如果您從現有應用程式開始進行，則可能會發現需要進行許多重構，才能區隔模型所控管的不同行為，讓它們各自不同。 建議您在預估專案成本時評估應用程式的這個層面。
 
 ## <a name="configuring-your-application-from-a-model"></a>透過模型設定應用程式
- 如果您想要改變應用程式在執行階段的行為，則無法使用程式碼產生，而程式碼產生會在編譯應用程式之前產生原始程式碼。 相反地，您可以設計應用程式來讀取模型，並據此改變其行為。 如需詳細資訊，請參閱:
+ 如果您想要改變應用程式在執行階段的行為，則無法使用程式碼產生，而程式碼產生會在編譯應用程式之前產生原始程式碼。 相反地，您可以設計應用程式來讀取模型，並據此改變其行為。 如需詳細資訊，請參閱＜＞。
 
 - [如何：在程式碼中開啟檔案的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 

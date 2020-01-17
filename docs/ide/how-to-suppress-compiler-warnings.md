@@ -3,17 +3,17 @@ title: 隱藏專案和 NuGet 套件的編譯器警告
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbcef86187ad03545066f3c595d00b56f83be5c5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b604f6a1392353d304897a233b74c0d81fc258df
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591420"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114504"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：隱藏編譯器警告
 
@@ -134,4 +134,4 @@ ms.locfileid: "75591420"
 
 - [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)
 - [如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)
-- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)

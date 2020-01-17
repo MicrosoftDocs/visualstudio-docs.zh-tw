@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918903"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115336"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
 
@@ -26,7 +26,7 @@ ms.locfileid: "68918903"
 
 - Visual Basic--[如何：指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
 
-- C# 和 F#--[如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
+- C# 和 F# -- [如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
 
 - Visual C++ -- [指定建置事件](/cpp/build/specifying-build-events)。
 
@@ -50,14 +50,14 @@ ms.locfileid: "68918903"
 
 - 視需要包含萬用字元。
 
-   範例：`for %I in (*.txt *.doc *.html) do copy %I c:\`<我的目錄>  `\`
+   範例：`for %I in (*.txt *.doc *.html) do copy %I c:\`<我的目錄>`\`
 
   > [!NOTE]
   > 在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
 - [建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)
 - [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)

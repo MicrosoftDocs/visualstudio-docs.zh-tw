@@ -10,19 +10,19 @@ f1_keywords:
 - switches
 - command prompt
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6d985266679d70f24ca2b40077549b5c3354b7f4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7210a2834dda749cfe1d89b9093cd627b7c0ae1b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590939"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114365"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令列參數來安裝 Visual Studio
 

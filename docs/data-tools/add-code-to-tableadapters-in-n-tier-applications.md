@@ -9,17 +9,17 @@ helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, extending TableAdapters
 ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 246ba595cf1da7e4713e0ddc03ea015eeb61eb64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e5d240726030a3a08d184b3015f56f65d9168e9f
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648928"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113327"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter
 您可以擴充 TableAdapter 的功能，方法是建立 TableAdapter 的部分類別檔案，並在其中加入程式碼（而不是將程式碼新增至*DatasetName 設計*工具檔案）。 部分類別可讓特定類別的程式碼劃分到多個實體檔案中。 如需詳細資訊，請參閱[partial](/dotnet/visual-basic/language-reference/modifiers/partial)或[partial （類型）](/dotnet/csharp/language-reference/keywords/partial-type)。
@@ -48,7 +48,7 @@ ms.locfileid: "72648928"
 
 4. 在部分類別宣告內加入程式碼。
 
-5. 下列範例顯示在 `NorthwindDataSet` 中將程式碼加入至 `CustomersTableAdapter` 的位置：
+5. 下列範例顯示在 `NorthwindDataSet`中將程式碼加入至 `CustomersTableAdapter` 的位置：
 
     ```vb
     Partial Public Class CustomersTableAdapter
@@ -65,7 +65,7 @@ ms.locfileid: "72648928"
     }
     ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [多層式架構 (N-Tier) 資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)
 - [將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
