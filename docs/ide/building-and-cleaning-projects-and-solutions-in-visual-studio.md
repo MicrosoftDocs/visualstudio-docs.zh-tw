@@ -18,17 +18,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e71fe9b6179ac8f7ac69b0cb987fdbc30459fb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b1cf71abb19f6d4a3a459b4e5559e536f18f41c8
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596524"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114552"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中建置和清除專案與方案
 

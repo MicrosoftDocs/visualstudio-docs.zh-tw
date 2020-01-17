@@ -2,17 +2,17 @@
 title: 使用 DSL 程式庫共用 DSL 之間的類別
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a09622a2cc7ae6d2a2451ac1de6b628020cff19f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4bfadc1777dfb4ba0c8ea712cfd39becc47f54a1
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747400"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111356"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 程式庫共用 DSL 之間的類別
 在 Visual Studio 視覺效果和模型化 SDK 中，您可以建立一個不完整的 DSL 定義，讓您可以將其匯入至另一個 DSL。 這可讓您將類似模型的常見部分納入考慮。

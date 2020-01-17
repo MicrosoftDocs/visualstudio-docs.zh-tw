@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f35c94004a76e5671585969686798c38e5f750e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747555"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114600"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件處理常式傳播模型外的變更
 
@@ -25,7 +25,7 @@ ms.locfileid: "72747555"
 
 ### <a name="to-define-a-store-event"></a>若要定義存放區事件
 
-1. 選擇您想要監視的事件種類。 如需完整清單，請查看 <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> 的屬性。 每個屬性都會對應到一個事件種類。 最常使用的事件種類為：
+1. 選擇您想要監視的事件種類。 如需完整清單，請查看 <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>的屬性。 每個屬性都會對應到一個事件種類。 最常使用的事件種類為：
 
     - `ElementAdded`-在建立模型專案、關聯性連結、圖形或連接器時觸發。
 

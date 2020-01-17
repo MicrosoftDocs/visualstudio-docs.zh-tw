@@ -3,17 +3,17 @@ title: 工作流程設計工具控制流程活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36c2790378f91c4217dbca2cf190ae6e649a03c3
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 84f9de21dbf0529823690effb4285b63a3b226fa
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189760"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114679"
 ---
 # <a name="control-flow-activity-designers"></a>Control Flow 活動設計工具
 

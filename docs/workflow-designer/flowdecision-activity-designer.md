@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2274333de9255ff818b4ee6952bfa1b2a99c59b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79e405f82bcf33bc01ad07f1092879c17dec5849
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650432"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111444"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision 活動設計工具
 
@@ -27,7 +27,7 @@ ms.locfileid: "72650432"
 
 ### <a name="using-the-flowdecision-designer"></a>使用 FlowDecision 設計工具
 
-**FlowDecision**  設計工具位於 **工具箱** 的 **流程圖** 類別中，若要存取，請按一下 工作流程設計工具上的 **工具箱** 索引標籤。 或者，從  **View**  功能表中選取 **工具箱**，或按**Ctrl** +**Alt** +**X**。
+**FlowDecision**  設計工具位於 **工具箱** 的 **流程圖** 類別中，若要存取，請按一下 工作流程設計工具上的 **工具箱** 索引標籤。 或者，從  **View**  功能表中選取 **工具箱**，或按**Ctrl**+**Alt**+**X**。
 
 **FlowDecision**設計工具可以從 [工具箱] 拖曳出來，放到 [ **Flowchart** ] 活動設計**工具**內的工作流程設計工具介面上。 這會在 <xref:System.Activities.Statements.Flowchart> 活動內建立 <xref:System.Activities.Statements.FlowDecision> 標示的**決策**。 將滑鼠停留在設計工具上，並顯示兩個分支的**True**和**False**方形控點。
 
@@ -39,7 +39,7 @@ ms.locfileid: "72650432"
 
 下表顯示 <xref:System.Activities.Statements.FlowDecision> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中或在設計工具介面上編輯。
 
-|屬性名稱|必要項|使用量|
+|內容名稱|必要|使用|
 |-|--------------|-|
 |<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|判斷流程控制要採取的條件限制。|
 |<xref:System.Activities.Statements.FlowDecision.True%2A>|False|如果滿足 <xref:System.Activities.Statements.FlowDecision.Condition%2A> 的條件，則由流程控制採取的路徑。|

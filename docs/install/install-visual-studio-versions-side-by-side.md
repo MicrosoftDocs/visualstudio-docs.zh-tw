@@ -8,15 +8,15 @@ helpviewer_keywords:
 - side-by-side installations [Visual Studio]
 - Help [Visual Studio], installing
 - install multiple versions of Visual Studio
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 62acf1c5e8cab960d4b670f7a05481644e9ffc1e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 428c41a96de90494167d04ded8722d49c76afc71
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594080"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114655"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>並存安裝 Visual Studio 版本
 
