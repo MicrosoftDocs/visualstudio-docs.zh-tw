@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82ce8a1b9cbc79925ff2f4a1c1df9d832bb96f7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 78cbcc9b2efd37aa99906d7ed7708621ec213b2e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632519"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269072"
 ---
 # <a name="walkthrough-display-statement-completion"></a>逐步解說：顯示語句完成
 您可以藉由定義要提供完成的識別碼，然後觸發完成會話，來執行以語言為基礎的語句完成。 您可以在語言服務的內容中定義語句完成、定義您自己的副檔名和內容類型，然後只顯示該類型的完成。 或者，您可以觸發現有內容類型的完成（例如，「純文字」）。 本逐步解說會示範如何觸發「純文字」內容類型（也就是文字檔的內容類型）的語句完成。 "Text" 內容類型是所有其他內容類型的上階，包括程式碼和 XML 檔案。
@@ -27,7 +27,7 @@ ms.locfileid: "72632519"
 
  本逐步解說示範如何針對硬式編碼的識別碼集執行語句完成。 在完整的執行中，語言服務和語言檔會負責提供該內容。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-mef-project"></a>建立 MEF 專案
@@ -48,7 +48,7 @@ ms.locfileid: "72632519"
 
      VisualStudio. Interop
 
-     VisualStudio. Shell 14。0
+     VisualStudio. Shell. 15。0
 
      VisualStudio：不變的10。0
 
@@ -76,12 +76,12 @@ ms.locfileid: "72632519"
      [!code-csharp[VSSDKCompletionTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_3.cs)]
      [!code-vb[VSSDKCompletionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_3.vb)]
 
-5. 加入設定來源提供者和緩衝區的函式。 @No__t_0 類別定義于稍後的步驟中：
+5. 加入設定來源提供者和緩衝區的函式。 `TestCompletionSourceProvider` 類別定義于稍後的步驟中：
 
      [!code-csharp[VSSDKCompletionTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_4.cs)]
      [!code-vb[VSSDKCompletionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_4.vb)]
 
-6. 藉由新增完成集（其中包含您要在內容中提供的完成）來執行 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> 方法。 每個完成集都包含一組 <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> 完成，並對應至完成視窗的索引標籤。 （在 Visual Basic 專案中，完成視窗索引標籤會命名為**Common**和**All**）。@No__t_2 方法是在下一個步驟中定義。
+6. 藉由新增完成集（其中包含您要在內容中提供的完成）來執行 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> 方法。 每個完成集都包含一組 <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> 完成，並對應至完成視窗的索引標籤。 （在 Visual Basic 專案中，完成視窗索引標籤會命名為**Common**和**All**）。`FindTokenSpanAtPosition` 方法是在下一個步驟中定義。
 
      [!code-csharp[VSSDKCompletionTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_5.cs)]
      [!code-vb[VSSDKCompletionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_5.vb)]
@@ -117,18 +117,18 @@ ms.locfileid: "72632519"
      [!code-vb[VSSDKCompletionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_10.vb)]
 
 ## <a name="implement-the-completion-command-handler-provider"></a>執行完成命令處理常式提供者
- 完成命令處理常式提供者衍生自 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>，它會接聽文字視圖建立事件，並將此視圖從 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> （可將命令新增至 Visual Studio shell 的命令鏈）轉換成 <xref:Microsoft.VisualStudio.Text.Editor.ITextView>。 因為此類別是 MEF 匯出，所以您也可以使用它來匯入命令處理常式本身所需的服務。
+ 完成命令處理常式提供者衍生自 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>，它會接聽文字視圖建立事件，並將此視圖從 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>（可將命令新增至 Visual Studio shell 的命令鏈）轉換成 <xref:Microsoft.VisualStudio.Text.Editor.ITextView>。 因為此類別是 MEF 匯出，所以您也可以使用它來匯入命令處理常式本身所需的服務。
 
 #### <a name="to-implement-the-completion-command-handler-provider"></a>若要執行完成命令處理常式提供者
 
-1. 新增名為 `TestCompletionCommandHandler` 的檔案。
+1. 新增名為 `TestCompletionCommandHandler`的檔案。
 
 2. 新增下列 using 指示詞：
 
      [!code-csharp[VSSDKCompletionTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_11.cs)]
      [!code-vb[VSSDKCompletionTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_11.vb)]
 
-3. 新增一個名為 `TestCompletionHandlerProvider` 的類別，以執行 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>。 使用「token 完成處理常式」 <xref:Microsoft.VisualStudio.Utilities.NameAttribute>、「純文字」 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 和 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable> <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 來匯出此類別。
+3. 新增一個名為 `TestCompletionHandlerProvider` 的類別，以執行 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>。 使用「token 完成處理常式」 <xref:Microsoft.VisualStudio.Utilities.NameAttribute>、「純文字」 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 和 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable><xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 來匯出此類別。
 
      [!code-csharp[VSSDKCompletionTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_12.cs)]
      [!code-vb[VSSDKCompletionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_12.vb)]
