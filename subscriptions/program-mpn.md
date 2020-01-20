@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: 有關提供哪些訂用帳戶、套用哪些規則，以及 MPN 中提供多少訂用帳戶的詳細資料。
-ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 1a103f76b56df72b5829f9ce87f587070519726e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491665"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76281694"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳戶
 
@@ -47,7 +47,7 @@ ms.locfileid: "74491665"
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>購買行動套件的合作夥伴訂用帳戶
 
-擁有一項專長認證的合作夥伴不符合購買行動套件的資格。 每位合作夥伴只能購買一組行動套件。
+具有專長認證的合作夥伴有資格購買行動套件。 每位合作夥伴只能購買一組行動套件。
 
 使用行動套件，合作夥伴獲得 **3 個 Visual Studio Professional (MPN) 訂用帳戶**。 Visual Studio Professional (MPN) 是自訂的供應項目，市面上沒有市售的對等項目。 以下是包含的內容：
 
