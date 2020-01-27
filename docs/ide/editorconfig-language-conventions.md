@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588625"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542655"
 ---
 # <a name="language-conventions"></a>語言慣例
 
@@ -50,7 +50,7 @@ Visual Studio 中 EditorConfig 的語言慣例分為兩類：適用於 Visual Ba
 
 語言慣例嚴重性可指定要強制執行該樣式的層級。 下表列出可能的嚴重性值及其效果：
 
-Severity | 作用
+嚴重性 | 作用
 :------- | ------
 `error` | 違反此樣式規則時，顯示編譯器錯誤。
 `warning` | 違反此樣式規則時，顯示編譯器警告。
@@ -140,7 +140,7 @@ dotnet_style_qualification_for_event = false:suggestion
 | **規則識別碼** | IDE0003 和 IDE0009 |
 | **適用語言** | C# 和 Visual Basic |
 | **值** | `true` - 希望欄位在 C# 中以 `this.` 開頭，或在 Visual Basic 中以 `Me.` 開頭<br /><br />`false` - 希望欄位「不」以 `this.` 或 `Me.` 開頭 |
-| **Visual Studio 預設值** | `false:silent` |
+| **Visul Studio 預設值** | `false:silent` |
 
 程式碼範例：
 
@@ -168,7 +168,7 @@ capacity = 0
 | **規則識別碼** | IDE0003 和 IDE0009 |
 | **適用語言** | C# 和 Visual Basic |
 | **值** | `true` - 希望屬性在 C# 中以 `this.` 開頭，或在 Visual Basic 中以 `Me.` 開頭<br /><br />`false` - 希望屬性「不」以 `this.` 或 `Me.` 開頭 |
-| **Visual Studio 預設值** | `false:silent` |
+| **Visul Studio 預設值** | `false:silent` |
 
 程式碼範例：
 
@@ -196,7 +196,7 @@ ID = 0
 | **規則識別碼** | IDE0003 和 IDE0009 |
 | **適用語言** | C# 和 Visual Basic |
 | **值** | `true` - 希望方法在 C# 中以 `this.` 開頭，或在 Visual Basic 中以 `Me.` 開頭。<br /><br />`false` - 希望方法「不」以 `this.` 或 `Me.` 開頭。 |
-| **Visual Studio 預設值** | `false:silent` |
+| **Visul Studio 預設值** | `false:silent` |
 
 程式碼範例：
 
@@ -224,7 +224,7 @@ Display()
 | **規則識別碼** | IDE0003 和 IDE0009 |
 | **適用語言** | C# 和 Visual Basic |
 | **值** | `true` - 希望事件在 C# 中以 `this.` 開頭，或在 Visual Basic 中以 `Me.` 開頭。<br /><br />`false` - 希望事件「不」以 `this.` 或 `Me.` 開頭。 |
-| **Visual Studio 預設值** | `false:silent` |
+| **Visul Studio 預設值** | `false:silent` |
 
 程式碼範例：
 
@@ -265,7 +265,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 | **規則識別碼** | IDE0012 和 IDE0014 |
 | **適用語言** | C# 和 Visual Basic |
 | **值** | `true` - 希望是本機變數、方法參數和類別成員的語言關鍵字，而不是以關鍵字表示類型的類型名稱<br /><br />`false` - 希望是本機變數、方法參數和類別成員的類型名稱，而不是語言關鍵字 |
-| **Visual Studio 預設值** | `true:silent` |
+| **Visul Studio 預設值** | `true:silent` |
 
 程式碼範例：
 
@@ -1558,7 +1558,7 @@ csharp_prefer_braces = true:silent
 | **規則名稱** | csharp_prefer_braces |
 | **規則識別碼** | IDE0011 |
 | **適用語言** | C# |
-| **值** | `true` - 偏好使用大括弧，即使只有一行程式碼<br /><br />`false` - 如果可以，偏好不使用大括弧 |
+| **值** | `true` - 偏好使用大括弧，即使只有一行程式碼<br /><br />`false` - 如果可以，偏好不使用大括弧<br /><br />`when_multiline`-在多行上偏好使用大括弧 |
 | **Visul Studio 預設值** | `true:silent` |
 
 程式碼範例：
@@ -1885,7 +1885,7 @@ switch (x)
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [格式設定慣例](editorconfig-formatting-conventions.md)
 - [命名慣例](editorconfig-naming-conventions.md)

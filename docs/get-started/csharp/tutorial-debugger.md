@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c7237d8d8bf66273078049a41a3193af0026792
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 1e19672ccc13b94f93bd21fc02701aa54648199e
+ms.sourcegitcommit: 0c3c4bd38455f7046c5c5a448eaaa5e407ad5bf4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830015"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726072"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 C# 程式碼進行偵錯
 
@@ -40,12 +40,12 @@ ms.locfileid: "74830015"
 
 ::: moniker range=">=vs-2019"
 
-您必須安裝 Visual Studio 2019 和 **.NET 桌面開發**工作負載。
+您必須安裝 Visual Studio 2019 和 **.Net Core 跨平臺開發**工作負載。
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-您必須安裝 Visual Studio 2017 和 **.NET 桌面開發**工作負載。
+您必須安裝 Visual Studio 2017 和 **.Net Core 跨平臺開發**工作負載。
 
 ::: moniker-end
 
@@ -61,24 +61,52 @@ ms.locfileid: "74830015"
 
 ::: moniker-end
 
-如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發] 工作負載，然後選擇 [修改]。
+如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 [ **.Net Core 跨平臺開發**] 工作負載，然後選擇 [**修改**]。
 
 ## <a name="create-a-project"></a>建立專案
 
-1. 開啟 Visual Studio。
+首先，您將建立 .NET Core 主控台應用程式專案。 在您新增任何項目之前，專案類型會隨附您需要的所有範本檔案！
 
-    ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 輸入**Ctrl + Q**來開啟搜尋方塊，輸入**主控台**，選擇 [**範本**]，然後選擇 [**建立新的主控台應用程式（.Net Core）] 專案**或 [**建立新的主控台應用程式（.NET Framework）] 專案**。 在出現的對話方塊中鍵入名稱，例如 **get-started-debugging**，然後選擇 [建立]。
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊左窗格的 [Visual C#] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。 然後，鍵入 **get-started-debugging** 之類的名稱，並按一下 [確定]。
-    ::: moniker-end
+::: moniker range="vs-2017"
 
-    如果您看不到 [主控台應用程式 (.NET Framework)] 專案範本，請移至 [工具] > [取得工具與功能...]，其會開啟 Visual Studio 安裝程式。 選擇 [.NET 桌面開發] 工作負載，然後選擇 [修改]。
+1. 開啟 Visual Studio 2017。
 
-    Visual Studio 會建立專案。
+2. 從頂端功能表列中 **，選擇 [** 檔案] > [**新增**>**專案**]。
 
-1. 在*Program.cs*中，取代所有的預設程式碼
+3. 在 [新增專案] 對話方塊的左窗格中，展開 [C#]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將專案命名為「開始使用 *-進行調試*」。
+
+     如果您沒有看到 [主控台應用程式 (.NET Core)] 專案範本，請在 [新增專案] 對話方塊的左窗格中，選擇 [開啟 Visual Studio 安裝程式] 連結。
+
+     Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 開啟 Visual Studio 2019。
+
+   如果 [開始] 視窗未開啟，請**選擇 [** 檔案] > [**開始視窗]** 。
+
+1. 在開始視窗中，選擇 [建立新專案]。
+
+1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **C#** ，然後從平台清單中選擇 **Windows**。 
+
+   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
+
+   ![選擇主控台C#應用程式的範本（.net Core）](../../debugger/media/vs-2019/get-started-create-console-project.png)
+
+   > [!NOTE]
+   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發**工作負載。
+
+1. 在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中鍵入或輸入「*快速入門-正在進行偵錯工具*」。 接著，選擇 [建立]。
+
+   Visual Studio 會隨即開啟您的新專案。
+   
+::: moniker-end
+
+## <a name="create-the-application"></a>建立應用程式
+
+1. 在*Program.cs*中，取代所有的預設程式碼，如下所示：
 
     ```csharp
     using System;
@@ -199,6 +227,8 @@ ms.locfileid: "74830015"
 
 2. 按下紅色的 [停止![停止調試](../../debugger/media/dbg-tour-stop-debugging.png "停止偵錯")程式] 按鈕來停止偵錯工具。
 
+3. 關閉主控台視窗。
+
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>設定中斷點，並啟動偵錯工具
 
 1. 在 `Main` 函式的 `foreach` 迴圈中，按一下下列程式碼行的左邊界來設定中斷點：
@@ -237,6 +267,8 @@ ms.locfileid: "74830015"
 
 ## <a name="navigate-code-using-run-to-click"></a>使用 [執行至點選處] 來巡覽程式碼
 
+1. 以滑鼠右鍵按一下您先前設定的中斷點，然後選擇 [**刪除中斷點**] （或按**Ctrl** + **Shift** + **F9**來刪除所有中斷點）。
+
 1. 在 [程式碼編輯器] 中，在 [`Triangle`] 類別的 [`Console.WriteLine`] 方法上向下移動，然後將滑鼠停留在 [![執行](../../debugger/media/dbg-tour-run-to-click.png "處 runtoclick")] 按鈕的綠色**執行**，直到左邊出現為止。 按鈕的工具提示會顯示「執行到這裡」。
 
      ![使用 [執行至] 按一下功能](../csharp/media/get-started-run-to-click.png "執行至點選處")
@@ -270,6 +302,8 @@ ms.locfileid: "74830015"
      此命令會繼續執行應用程式 (並往前推進偵錯工具)，直到目前的函式傳回為止。
 
      您應該會回到 `Main` 方法的 `foreach` 迴圈。 如果不是，請按第二次**Shift** + **F11**鍵。
+
+1. 按一下左邊界，在 `for` 迴圈中加入新的中斷點。
 
 ## <a name="restart-your-app-quickly"></a>快速重新啟動您的應用程式
 
