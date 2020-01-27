@@ -1,21 +1,22 @@
 ---
-title: 分析工具命令列：開啟原生用戶端應用程式，取得並行資料
+title: Profiler 命令列：開啟 native client 應用程式，取得並行資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e5aed651-afed-4b70-9a7e-1a6032cc614f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b20d239ee1be6cba9484e31efc95b1f38572b59
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 1bb8baed0d9154c02f23738944de2d3e84b7402b
+ms.sourcegitcommit: 0c3c4bd38455f7046c5c5a448eaaa5e407ad5bf4
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032925"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726031"
 ---
-# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>作法：使用命令列搭配分析工具啟動獨立的原生應用程式以收集並行資料
+# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列以分析工具啟動獨立的原生應用程式來收集並行資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具啟動原生的獨立 (用戶端) 應用程式，並收集處理序和執行緒並行資料。
 
  程式碼剖析工作階段分成下列幾個部分︰
@@ -34,31 +35,31 @@ ms.locfileid: "67032925"
 
 #### <a name="to-start-an-application-with-the-profiler"></a>使用分析工具啟動應用程式
 
-1. 在命令提示字元中，輸入下列命令：
+1. 在命令提示字元輸入下列命令：
 
-     [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency  /output:** `OutputFile` [`Options`]
+     [VSPerfCmd](../profiling/vsperfcmd.md) **/start： concurrency/output：** `OutputFile` [`Options`]
 
      [/output](../profiling/output.md) **:** `OutputFile` 選項必須搭配 **/start** 使用。 `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。
 
      您可以使用下表中的任一選項搭配 **/start:concurrency** 選項。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
-    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|指定程式碼剖析期間要收集的 Windows 效能計數器。|
-    |[/automark](../profiling/automark.md) **:** `Interval`|只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500。|
-    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。|
+    |[/wincounter](../profiling/wincounter.md) **：** `WinCounterPath`|指定程式碼剖析期間要收集的 Windows 效能計數器。|
+    |[/automark](../profiling/automark.md) **：** `Interval`|只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500。|
+    |[/events](../profiling/events-vsperfcmd.md) **：** `Config`|指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。|
 
 2. 輸入下列命令以啟動目標應用程式：
 
-     **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `AppName` [`Options`]
+     **VSPerfCmd**  [/launch](../profiling/launch.md) **：** `AppName` [`Options`]
 
      您可以使用下表中的任一選項搭配 **/launch** 選項。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
-    |[/args](../profiling/args.md) **:** `Arguments`|指定包含要傳遞至目標應用程式的命令列引數的字串。|
+    |[/args](../profiling/args.md) **：** `Arguments`|指定包含要傳遞至目標應用程式的命令列引數的字串。|
     |[/console](../profiling/console.md)|在個別的視窗中啟動目標命令列應用程式。|
-    |[/targetclr](../profiling/targetclr.md) **:** `CLRVersion`|指定當應用程式載入多個版本的 Common Language Runtime (CLR) 時要分析的 CLR 版本。|
+    |[/targetclr](../profiling/targetclr.md) **：** `CLRVersion`|指定當應用程式載入多個版本的 Common Language Runtime (CLR) 時要分析的 CLR 版本。|
 
 ## <a name="control-data-collection"></a>控制資料收集
  當目標應用程式執行時，您可以使用 *VSPerfCmd.exe* 選項開始和停止將資料寫入至檔案，以控制資料收集。 透過控制資料收集，您可以收集特定程式執行 (例如啟動或關閉應用程式) 的資料。
@@ -67,11 +68,11 @@ ms.locfileid: "67032925"
 
 - 下表中成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|說明|
+    |選項|描述|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 ( **/globalon**) 或停止 ( **/globaloff**) 所有處理序的資料收集。|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 ( **/processon**) 或停止 ( **/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
-    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** 會開始為處理序 ID (`PID`) 或處理序名稱 (*ProcName*) 指定的處理序收集資料。 **/detach** 會停止指定的處理序或所有處理序 (如果未指定處理序) 的資料收集。|
+    |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [/processoff](../profiling/processon-and-processoff.md) **：** `PID`|開始 ( **/processon**) 或停止 ( **/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
+    |[/attach](../profiling/attach.md) **：** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **：** {`PID`&#124;`ProcName`}]|**/attach** 會開始為處理序 ID (`PID`) 或處理序名稱 (*ProcName*) 指定的處理序收集資料。 **/detach** 會停止指定的處理序或所有處理序 (如果未指定處理序) 的資料收集。|
 
 - 您也可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 選項將程式碼剖析標記插入資料檔案。 **/mark** 命令會新增識別碼、時間戳記和一個選擇性的使用者定義文字字串。 標記可用來篩選程式碼剖析工具報告和資料檢視中的資料。
 
