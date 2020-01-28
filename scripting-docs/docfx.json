@@ -55,7 +55,16 @@
         "Blank"
       ]
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "disable_contribution_on_translation_quality": {
+        "kb-support/*.md": ["HT","MT","MTE75","MTE95","Blank"],
+        "kb-support/**/*.md": ["HT","MT","MTE75","MTE95","Blank"]
+      },
+      "feedback_system": {
+        "kb-support/*.md": "None",
+        "kb-support/**/*.md": "None"
+      }
+    },
     "template": [],
     "xref": [
       "msdn.4.5.2.zip",
