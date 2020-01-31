@@ -6,17 +6,17 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: 了解系統管理員如何指派訂閱者授權
-ms.openlocfilehash: 8785d4d4253fa3217341c8200a94dab923ae4a5f
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 4ebec96f488a480ccd9b96387f2656aadd6ba2f9
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797377"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892177"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 訂閱系統管理入口網站中指派授權
 身為 Visual Studio 訂閱系統管理員，您可以使用系統管理入口網站，將訂閱指派給個別使用者和使用者群組。
 
-若為使用者群組，您可以一次指派一個訂用帳戶給他們，或者使用 [大量新增](assign-license-bulk.md) 功能，快速輕鬆地上傳訂閱者清單與其訂用帳戶資訊。
+若為使用者群組，您可以一次指派一個訂用帳戶給他們，或者使用 [大量新增][Bulk Add](assign-license-bulk.md) 功能，快速輕鬆地上傳訂閱者清單與其訂用帳戶資訊。
 
 ## <a name="add-a-single-subscriber"></a>新增一位訂閱者
 以下說明如何將 Visual Studio 訂用帳戶授權指派給新使用者，使其可以存取訂用帳戶權益。
@@ -33,7 +33,7 @@ ms.locfileid: "74797377"
    > [!div class="mx-imgBorder"]
    > ![存取下載項目](media/access-to-downloads.png)
 
-       If you'd like to add your own reference notes to the subscription, you can do so in the **Add reference** section.
+    如果您想要將自己的參考資訊新增至訂用帳戶，您可在 [新增參考] 區段中執行此作業。
    > [!div class="mx-imgBorder"]
    > ![在每個訂閱中新增您自己的參考資訊](media/add-subscriber-reference-notes.png)
 

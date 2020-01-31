@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d40e437763ba3eb75daa80a3a1bbf55ba9d896c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574453"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826467"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 專案 SDK
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 版導入「專案 SDK」的概念，簡化了需要匯入屬性和目標之軟體開發套件的使用。
+MSBuild 15.0 引進了「專案 SDK」的概念，可簡化使用需要匯入屬性和目標的軟體發展工具組。
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -28,7 +28,7 @@ ms.locfileid: "75574453"
 </Project>
 ```
 
-在專案的評估期間，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 在您專案的頂端和底部新增隱含的匯入：
+在專案評估期間，MSBuild 會在專案檔的頂端和底部加入隱含的匯入：
 
 ```xml
 <Project>
@@ -46,9 +46,9 @@ ms.locfileid: "75574453"
 
 ## <a name="reference-a-project-sdk"></a>參考專案 SDK
 
- 參考專案 SDK 的方式有三種：
+參考專案 SDK 的方式有三種：
 
-1. 使用 `<Project/>` 元素上的 `Sdk` 屬性：
+- 使用 `<Project/>` 元素上的 `Sdk` 屬性：
 
     ```xml
     <Project Sdk="My.Custom.Sdk">
@@ -56,9 +56,9 @@ ms.locfileid: "75574453"
     </Project>
     ```
 
-    如上所述，隱含的匯入會新增到專案的頂端和底部。
+    如先前所述，隱含匯入會新增至專案的頂端和底部。
     
-    若要指定特定的 SDK 版本，您可以將它附加到 `Sdk` 屬性：
+    若要指定 SDK 的特定版本，請將其附加至 `Sdk` 屬性：
 
     ```xml
     <Project Sdk="My.Custom.Sdk/1.2.3">
@@ -69,7 +69,7 @@ ms.locfileid: "75574453"
     > [!NOTE]
     > 這是目前在 Visual Studio for Mac 中參考專案 SDK 的唯一方法。
 
-2. 使用最上層的 `<Sdk/>` 元素：
+- 使用最上層的 `<Sdk/>` 元素：
 
     ```xml
     <Project>
@@ -78,9 +78,11 @@ ms.locfileid: "75574453"
     </Project>
    ```
 
-   如上所述，隱含的匯入會新增到專案的頂端和底部。  不需要 `Version` 屬性。
+   如先前所述，隱含匯入會新增至專案的頂端和底部。
+   
+   不需要 `Version` 屬性。
 
-3. 在您專案中的任意位置使用 `<Import/>` 元素：
+- 在您專案中的任意位置使用 `<Import/>` 元素：
 
     ```xml
     <Project>
@@ -95,19 +97,23 @@ ms.locfileid: "75574453"
 
    在您的專案中明確包含匯入可讓您完全控制順序。
 
-   當使用 `<Import/>` 元素時，您也可以指定選擇性的 `Version` 屬性。  例如，您可以指定 `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`。
+   當使用 `<Import/>` 元素時，您也可以指定選擇性的 `Version` 屬性。 例如，您可以指定 `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`。
 
 ## <a name="how-project-sdks-are-resolved"></a>解析專案 SDK 的方式
 
-在評估匯入時，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 根據您指定的名稱和版本，動態地解析專案 SDK 的路徑。  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 也具有已註冊之 SDK 解析程式的清單，它們是在電腦上找出專案 SDK 的外掛程式。  這些外掛程式包括：
+評估匯入時，MSBuild 會根據您指定的名稱和版本，動態解析專案 SDK 的路徑。  MSBuild 也會有已註冊的 SDK 解析程式清單，這是在您的電腦上尋找專案 Sdk 的外掛程式。 這些外掛程式包括：
 
-1. 以 NuGet 為基礎的解析程式，可查詢 NuGet 套件的設定套件摘要，以尋找符合您所指定 SDK 的識別碼和版本。<br/>
-   只有當您指定選擇性的版本，且它可用於任何自訂專案 SDK 時，此解析程式才會啟動。
-2. .NET CLI 解析程式，可解析使用 .NET CLI 安裝的 SDK。<br/>
-   此解析程式會找出 `Microsoft.NET.Sdk` 和 `Microsoft.NET.Sdk.Web` 等屬於產品一部分的專案 SDK。
-3. 預設的解析程式，可解析使用 MSBuild 安裝的 SDK。
+- 以 NuGet 為基礎的解析程式，可查詢 NuGet 套件的設定套件摘要，以尋找符合您所指定 SDK 的識別碼和版本。
 
-以 NuGet 為基礎的 SDK 解析程式支援在您的 [global.json](/dotnet/core/tools/global-json) 中指定版本，讓您可以在一個位置控制專案 SDK 版本，而不需要在個別的專案中指定：
+   只有當您指定了選擇性的版本時，此解析程式才會作用。 它可以用於任何自訂的專案 SDK。
+   
+- .NET CLI 解析程式，可解析與[.NET cli](/dotnet/core/tools/)一起安裝的 sdk。
+
+   此解析程式會尋找屬於產品一部分的專案 Sdk，例如 `Microsoft.NET.Sdk` 和 `Microsoft.NET.Sdk.Web`。
+   
+- 預設的解析程式，可解析使用 MSBuild 安裝的 SDK。
+
+以 NuGet 為基礎的 SDK 解析程式支援在[global.asax](/dotnet/core/tools/global-json)檔案中指定版本，這可讓您在同一個位置控制專案 SDK 版本，而不是在每個個別的專案中：
 
 ```json
 {
@@ -118,7 +124,7 @@ ms.locfileid: "75574453"
 }
 ```
 
-在建置期間每個專案 SDK 都只能使用一個版本。  如果您參考同一個專案 SDK 的兩個不同版本，MSBuild 會發出警告。  如果您的 *global.json* 中已經指定了版本，建議您**不要**再於專案中指定版本。
+在建置期間每個專案 SDK 都只能使用一個版本。 如果您參考相同專案 SDK 的兩個不同版本，MSBuild 會發出警告。 如果在*global.asax*檔案中指定了版本，建議您**不要**在專案中指定版本。
 
 ## <a name="see-also"></a>請參閱
 

@@ -6,18 +6,16 @@ ms.author: dominicn
 ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 58c4395e1569f6ca444a8b1fdcd2b8906d3fdb75
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 348a6ad1bde58c17b2bbb1ef4868fcfa6835ef9f
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984075"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892164"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
 
 您可以使用本指南來個別解除安裝 Visual Studio for Mac 中的每個元件，方法是巡覽至相關章節，或使用[解除安裝指令碼](#uninstall-script)一節中提供的指令碼，以解除安裝所有項目。
-
-如果您先前已在電腦上安裝 Xamarin Studio，則除了下列步驟之外，還可能需要遵循 [Xamarin 解除安裝](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac)指南中的指示。
 
 > [!NOTE]
 > 此資訊將只會從電腦上移除 Visual Studio for Mac 2019 或 2017。 若要解除安裝 Visual Studio Code，請參閱[此問題](https://github.com/Microsoft/vscode/issues/52151) \(英文\) 以取得詳細資料。
