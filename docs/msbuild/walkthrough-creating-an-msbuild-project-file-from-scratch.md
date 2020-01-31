@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c7b79347416df5fd0790baf7ebe6495c739f7c4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 891b0f1197ad178a705de5d64026beebc62615dd
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565964"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826493"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭開始建立 MSBuild 專案檔
 以 .NET Framework 為目標的程式設計語言，使用 MSBuild 專案檔描述及控制應用程式建置流程。 當您使用 Visual Studio 建立 MSBuild 專案檔時，系統會自動將適當的 XML 加入該檔案。 不過，您可能會發現，了解 XML 的組織方式，以及您如何對其進行變更以控制組建會非常有用。
@@ -44,12 +44,10 @@ ms.locfileid: "75565964"
 
 此逐步解說會顯示如何在命令提示字元處建置專案，並檢查結果。 如需有關 MSBuild，以及如何在命令提示字元中執行 MSBuild 的詳細資訊，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
 
-若要完成逐步解說，您必須已安裝 .NET Framework (2.0、3.5、4.0 或 4.5 版)，因為它包含此逐步解說所需的 MSBuild 和 Visual C# 編譯器。
+若要完成此逐步解說，您必須安裝 .NET Framework （版本2.0、3.5、4.0、4.5 或更新版本），因為它包含了逐步解說C#所需的 MSBuild 和 Visual 編譯器。
 
 ## <a name="create-a-minimal-application"></a>建立最小應用程式
- 本節顯示如何使用文字編輯器建立最小 Visual C# 應用程式原始程式檔。
-
-#### <a name="to-create-the-minimal-application"></a>建立最小應用程式
+ 本節說明如何使用文字編輯器建立最C#基本的應用程式來源檔案。
 
 1. 在命令提示字元中，瀏覽至您要建立應用程式的資料夾，例如 *\My Documents\\* 或 *\Desktop\\* 。
 
@@ -98,7 +96,7 @@ ms.locfileid: "75565964"
 
 - 啟動 Visual C# 編譯器以建置應用程式的 `Task` 項目。
 
-#### <a name="to-create-a-minimal-msbuild-project-file"></a>建立最小的 MSBuild 專案檔
+### <a name="to-create-a-minimal-msbuild-project-file"></a>建立最小的 MSBuild 專案檔
 
 1. 在文字編輯器中，使用下列兩行取代現有文字：
 
@@ -157,20 +155,17 @@ ms.locfileid: "75565964"
 > 不過，建議您不要使用萬用字元，因為加入或刪除原始程式檔時，它會使得偵錯及選擇性目標變得更困難。
 
 ## <a name="extend-the-path-to-include-msbuild"></a>擴充路徑以包括 MSBuild
- 在您可以存取 MSBuild 之前，您必須擴充 PATH 環境變數，以包括 .NET Framework 資料夾。
 
-#### <a name="to-add-msbuild-to-your-path"></a>將 MSBuild 加入路徑
+在您可以存取 MSBuild 之前，您必須擴充 PATH 環境變數，以包括 .NET Framework 資料夾。
 
-- 從 Visual Studio 2013 開始，您可以在 MSBuild 資料夾 (在 32 位元作業系統上為 *%ProgramFiles%\MSBuild*，在 64 位元作業系統上為 *%ProgramFiles(x86)%\MSBuild*) 中尋找 *MSBuild.exe*。
+從 Visual Studio 2013 開始，您可以在 [MSBuild] 資料夾（在32位作業系統上的 *%ProgramFiles%\MSBuild* ，或在64位作業系統上的 *% ProgramFiles （x86）% \ MSBuild* ）中找到*msbuild.exe* 。
 
-     在命令提示字元中，輸入 **set PATH=%PATH%;%ProgramFiles%\MSBuild** 或 **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**。
+在命令提示字元中，輸入 **set PATH=%PATH%;%ProgramFiles%\MSBuild** 或 **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**。
 
-     或者，如果您已安裝 Visual Studio，您可以使用 **Visual Studio 命令提示字元**，其中具有包括 *MSBuild* 資料夾的路徑。
+或者，如果您已安裝 Visual Studio，您可以使用**Visual Studio 的開發人員命令提示字元**，其中包含含有*MSBuild*資料夾的路徑。
 
-## <a name="use-the-project-file-to-build-the-application"></a>使用專案檔建置應用程式
+## <a name="build-the-application"></a>建置應用程式
  現在，若要建置應用程式，請使用您剛剛建立的專案檔。
-
-#### <a name="to-build-the-application"></a>建置應用程式
 
 1. 在命令提示字元中，輸入 **msbuild helloworld.csproj -t:Build**。
 
@@ -192,7 +187,7 @@ ms.locfileid: "75565964"
 
 - `OutputPath` 屬性可指定要包含應用程式的資料夾。
 
-#### <a name="to-add-build-properties"></a>加入建置屬性
+### <a name="to-add-build-properties"></a>加入建置屬性
 
 1. 在命令提示字元中輸入**del helloworld.exe**，以刪除現有的應用程式。
 
@@ -257,8 +252,6 @@ ms.locfileid: "75565964"
 ## <a name="test-the-build-properties"></a>測試建置屬性
  現在，您可以使用專案檔建置應用程式，您在該檔案中使用建置屬性來指定輸出資料夾和應用程式名稱。
 
-#### <a name="to-test-the-build-properties"></a>測試建置屬性
-
 1. 在命令提示字元中，輸入 **msbuild helloworld.csproj -t:Build**。
 
      這會建立 *\Bin\\* 資料夾，然後叫用 Visual C# 編譯器，即可建立 *MSBuildSample* 應用程式，並將其置於 *\Bin\\* 資料夾中。
@@ -278,7 +271,7 @@ ms.locfileid: "75565964"
 
 既然您具有多個目標，您可以將「建置」目標設為預設目標。
 
-#### <a name="to-add-build-targets"></a>加入建置目標
+### <a name="to-add-build-targets"></a>加入建置目標
 
 1. 在專案檔中，在「建置」目標之後加入這兩個目標：
 
@@ -332,7 +325,7 @@ ms.locfileid: "75565964"
 
 - 刪除應用程式而不建置其他應用程式。
 
-#### <a name="to-test-the-build-targets"></a>測試建置目標
+### <a name="to-test-the-build-targets"></a>測試建置目標
 
 1. 在命令提示字元中，輸入 **msbuild helloworld.csproj -p:AssemblyName=Greetings**。
 
@@ -363,7 +356,7 @@ ms.locfileid: "75565964"
 ## <a name="build-incrementally"></a>以累加方式建置
  您可以告知 MSBuild，僅在目標所依賴的原始程式檔或目標檔變更時，才能建置目標。 MSBuild 會使用檔案的時間戳記判定檔案是否已變更。
 
-#### <a name="to-build-incrementally"></a>以累加方式建置
+### <a name="to-build-incrementally"></a>以累加方式建置
 
 1. 在專案檔中，將以下屬性加入開頭的「建置」目標：
 
@@ -398,10 +391,9 @@ ms.locfileid: "75565964"
 
      MSBuild 會略過「建置」目標，因為自上次建置應用程式以來，從未變更任何原始程式檔。
 
-## <a name="example"></a>範例
+## <a name="c-example"></a>C# 範例
 
-### <a name="description"></a>描述
- 下列範例顯示的專案檔會編譯 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 應用程式，並記錄包含輸出檔名稱的訊息。
+下列範例顯示的專案檔會編譯C#應用程式，並記錄包含輸出檔案名的訊息。
 
 ### <a name="code"></a>程式碼
 
@@ -436,10 +428,9 @@ ms.locfileid: "75565964"
 </Project>
 ```
 
-## <a name="example"></a>範例
+## <a name="visual-basic-example"></a>Visual Basic 範例
 
-### <a name="description"></a>描述
- 下列範例顯示的專案檔會編譯 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 應用程式，並記錄包含輸出檔名稱的訊息。
+下列範例顯示的專案檔會編譯 Visual Basic 應用程式，並記錄包含輸出檔案名的訊息。
 
 ### <a name="code"></a>程式碼
 
@@ -478,5 +469,6 @@ ms.locfileid: "75565964"
  Visual Studio 可以自動執行本逐步解說中提及的大量工作。 若要了解如何使用 Visual Studio 建立、編輯、建置及測試 MSBuild 專案檔，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
 
 ## <a name="see-also"></a>請參閱
+
 - [MSBuild 概觀](../msbuild/msbuild.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

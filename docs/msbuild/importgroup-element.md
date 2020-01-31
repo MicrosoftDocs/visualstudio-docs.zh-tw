@@ -16,17 +16,21 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4480442577ccb321d66ad65f94a7c86cdae62ae
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 56d3c301eb0e9b660a82b6552792a96aa5bd8596
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574002"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826584"
 ---
 # <a name="importgroup-element"></a>ImportGroup 項目
+  
 包含群組在選擇性條件下方的 `Import` 元素集合。 如需詳細資訊，請參閱 [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)。
 
- \<Project> \<ImportGroup>
+```xml
+<Project>
+  <ImportGroup>
+```
 
 ## <a name="syntax"></a>語法
 
@@ -38,25 +42,25 @@ ms.locfileid: "75574002"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
- 下列各節描述屬性、子項目和父項目。
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
 
-|屬性|Description|
+|屬性|描述|
 |---------------|-----------------|
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|Description|
+|項目|描述|
 |-------------|-----------------|
-|[[匯入]](../msbuild/import-element-msbuild.md)|將某個專案檔的內容匯入至另一個專案檔。|
+|[Import](../msbuild/import-element-msbuild.md)|將某個專案檔的內容匯入至另一個專案檔。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | Description |
+| 項目 | 描述 |
 | - | - |
-| [專案](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
+| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
 
 ## <a name="example"></a>範例
  下列程式碼範例示範 `ImportGroup` 元素。
@@ -72,5 +76,6 @@ ms.locfileid: "75574002"
 ```
 
 ## <a name="see-also"></a>請參閱
+
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

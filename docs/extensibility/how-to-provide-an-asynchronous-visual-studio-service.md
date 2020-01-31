@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c34995a49a785061c67f1324c9c9cd5b5316178
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d486aac8e990fef6b139bca989a51d74146ecb67
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633113"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826402"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>如何：提供非同步 Visual Studio 服務
 如果您想要取得服務而不封鎖 UI 執行緒，您應該建立異步服務，並在背景執行緒上載入封裝。 基於此目的，您可以使用 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> 而不是 <xref:Microsoft.VisualStudio.Shell.Package>，並使用非同步封裝的特殊非同步方法來新增服務。
@@ -22,9 +22,9 @@ ms.locfileid: "72633113"
 
 ## <a name="implement-an-asynchronous-service"></a>執行非同步服務
 
-1. 建立 VSIX**專案（檔案** > **新**的  > **專案** > **Visual C#**   > **Extensiblity** 0**VSIX 專案**）。 將專案命名為**TestAsync**。
+1. 建立 VSIX**專案（檔案** > **新**的 > **專案** > **Visual C#**  > **Extensiblity** > **VSIX 專案**）。 將專案命名為**TestAsync**。
 
-2. 將 VSPackage 新增至專案。 在 [**方案總管**中選取專案節點，然後按一下 [**加入** > **新專案**]  >  [ **C# Visual 專案** **]  >  擴充**性  > **Visual Studio 套件**]。 將此檔案命名為*TestAsyncPackage.cs*。
+2. 將 VSPackage 新增至專案。 在 [**方案總管**中選取專案節點，然後按一下 [**加入** > **新專案**] > [  **C# Visual 專案** **] > 擴充**性 > **Visual Studio 套件**]。 將此檔案命名為*TestAsyncPackage.cs*。
 
 3. 在*TestAsyncPackage.cs*中，將封裝變更為繼承自 `AsyncPackage`，而不是 `Package`：
 
@@ -130,6 +130,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     }
 
     ```
+    若要讓此服務在此封裝外部可見，請將 [升級旗標] 值設定為 [ *true* ] 做為最後一個參數： `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
 2. 新增對 VisualStudio 的參考。 *DesignTime .dll*中的。
 
@@ -170,7 +171,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>在命令處理常式中使用非同步服務
  以下是如何在功能表命令中使用非同步服務的範例。 您可以使用此處所示的程式，在其他非非同步方法中使用此服務。
 
-1. 將功能表命令加入至您的專案。 （在 **方案總管**中，選取專案節點，按一下滑鼠右鍵，然後選取 **新增  >  新專案** ** >  擴充**性  > **自訂命令**）。將命令檔命名為*TestAsyncCommand.cs*。
+1. 將功能表命令加入至您的專案。 （在 **方案總管**中，選取專案節點，按一下滑鼠右鍵，然後選取 **新增 > 新專案** ** > 擴充**性 > **自訂命令**）。將命令檔命名為*TestAsyncCommand.cs*。
 
 2. 自訂命令範本會將 `Initialize()` 方法重新加入至*TestAsyncPackage.cs*檔案，以便初始化命令。 在 `Initialize()` 方法中，複製初始化命令的程式列。 內容應該看起來如下：
 
@@ -178,7 +179,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     TestAsyncCommand.Initialize(this);
     ```
 
-     將這一行移至*AsyncPackageForService.cs*檔案中的 `InitializeAsync()` 方法。 因為這是在非同步初始化中，所以您必須先切換到主執行緒，再使用 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> 初始化命令。 它現在看起來應該像這樣：
+     將這一行移至*AsyncPackageForService.cs*檔案中的 `InitializeAsync()` 方法。 因為這是在非同步初始化中，所以您必須先切換到主執行緒，再使用 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>初始化命令。 它現在看起來應該像這樣：
 
     ```csharp
 
@@ -209,7 +210,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     using System.IO;
     ```
 
-6. 新增名為 `UseTextWriterAsync()` 的非同步方法，以取得服務並使用其方法：
+6. 新增名為 `UseTextWriterAsync()`的非同步方法，以取得服務並使用其方法：
 
     ```csharp
     private async System.Threading.Tasks.Task UseTextWriterAsync()

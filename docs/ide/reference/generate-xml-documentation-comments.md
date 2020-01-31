@@ -1,18 +1,18 @@
 ---
 title: 插入 XML 文件註解
-ms.date: 01/26/2018
+ms.date: 01/22/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad29957cc31247c16ca38038ad4880ea75a85182
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 20381dd78f169e2b549e077992ac0d1dc1b5c44c
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595575"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892128"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>如何：在文件產生中插入 XML 註解
 
@@ -30,7 +30,7 @@ Visual Studio 可藉由自動產生標準 XML 文件註解結構，來幫助您�
 
 1. 將文字游標放在您想要記載的元素 (例如方法) 上方。
 
-1. 請執行下列其中一項動作：
+2. 請執行下列其中一項動作：
 
    - 在 C# 中鍵入 `///`，或在 Visual Basic 中鍵入 `'''`
 
@@ -44,9 +44,13 @@ Visual Studio 可藉由自動產生標準 XML 文件註解結構，來幫助您�
 
    ![XML 註解範本 - Visual Basic](media/doc-preview-vb.png)
 
-1. 為每個 XML 項目輸入描述，以完整記錄程式碼項目。
+3. 為每個 XML 項目輸入描述，以完整記錄程式碼項目。
 
    ![已完成的註解](media/doc-result-cs.png)
+
+當滑鼠停留在專案上時，您可以使用 XML 批註中的樣式，將會在快速資訊中轉譯。 這些樣式包括：斜體、粗體、專案符號和可點按的連結。
+
+   ![已完成的註解](media/doc-styles-cs.png) 
 
 > [!NOTE]
 > 在 C# 鍵入 `///` 或在 Visual Basic 鍵入 `'''` 之後，會有切換 XML 文件註解的[選項](../../ide/reference/options-text-editor-csharp-advanced.md)。 從功能表列中，選擇 [工具] > [選項] 來開啟 [選項] 對話方塊。 然後，瀏覽至 [文字編輯器] > C# 或 [基本] > [進階]。 在 [編輯器說明] 區段中，尋找 [產生 XML 文件註解] 選項。

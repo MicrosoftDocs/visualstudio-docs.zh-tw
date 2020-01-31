@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916923"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826454"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 組建屬性
 
@@ -109,6 +109,20 @@ services:
 |visualstudio 調試 killprogram。|此命令可用來停止在容器內執行的偵錯工具程式（如有必要）。|
 |visualstudio 偵錯工具。|啟動偵錯工具時啟動的程式。 針對 .NET Core 應用程式，這種設定通常是**dotnet**。|
 |visualstudio 調試 workingdirectory。|開始進行調試時，做為啟動目錄使用的目錄。 此設定通常是針對 Linux 容器 */app* ，或是適用于 Windows 容器的*C:\app* 。|
+
+## <a name="customize-the-app-startup-process"></a>自訂應用程式啟動進程
+
+您可以先執行命令或自訂腳本，再使用 `entrypoint` 設定啟動應用程式，並使其依賴設定。 例如，如果您只需要執行 `update-ca-certificates`，而不是在 [**發行**] 模式中，只在 [ **debug** ] 模式中設定憑證，您只能在*docker-compose.dev.debug.yml. yml*中新增下列程式碼：
+
+```yml
+services:
+  webapplication1:
+    entrypoint: "sh -c 'update-ca-certificates && tail -f /dev/null'"
+    labels:
+      ...
+```
+
+如果您省略*docker-compose.dev.debug.yml. yml*或*docker-compose.dev.debug.yml. yml* ，則 Visual Studio 會根據預設值產生一個。
 
 ## <a name="next-steps"></a>後續步驟
 
