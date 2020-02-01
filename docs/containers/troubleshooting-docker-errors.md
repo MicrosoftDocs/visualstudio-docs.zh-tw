@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 10/13/2017
 ms.author: ghogen
-ms.openlocfilehash: ca43098740a1e8e940f27eae8d2c4d405c23230b
-ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
+ms.openlocfilehash: ce7645b8b4f71cf94d7320a0072d15b2b8083dec
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "70312195"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923016"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>對使用 Docker 進行的 Visual Studio 開發進行疑難排解
 
@@ -32,7 +32,7 @@ ms.locfileid: "70312195"
 > [!NOTE]
 > 如果檔案顯示為 [共用]，您可能仍然需要按一下 [重設認證 ...]連結，以便重新啟用磁片區共用。 若要在重設認證之後繼續，您可能必須重新開機 Visual Studio。
 
-![共用磁片磁碟機](media/troubleshooting-docker-errors/shareddrives.png)
+![共用磁碟機](media/troubleshooting-docker-errors/shareddrives.png)
 
 > [!TIP]
 > 當未設定**共用磁片磁碟機**時，Visual Studio 高於 Visual Studio 2017 15.6 版的版本提示。
@@ -73,13 +73,25 @@ Add yourself to the 'docker-users' group and then log out of Windows.
 1. 新增您的使用者帳戶或帳戶。
 1. 登出後再重新登入，這些變更才會生效。
 
-您也可以在系統`net localgroup`管理員命令提示字元中使用命令，將使用者新增至特定群組。
+您也可以在系統管理員命令提示字元中使用 `net localgroup` 命令，將使用者新增至特定群組。
 
 ```cmd
 net localgroup docker-users DOMAIN\username /add
 ```
 
 在 PowerShell 中，使用[LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember)函數。
+
+## <a name="low-disk-space"></a>磁碟空間不足
+
+根據預設，Docker 會將映射儲存在 *% ProgramData%/Docker/* 資料夾中，這通常是在系統磁片磁碟機上，* c:\programdata\docker 目錄\*。 若要防止影像在系統磁片磁碟機上佔用寶貴的空間，您可以變更映射資料夾位置。  從工作列上的 Docker 圖示開啟 [Docker 設定]，選擇 [ **Daemon**]，然後從 [**基本**] 切換至 [ **Advanced**]。 在編輯窗格中，使用您想要的 Docker 映射位置值來新增 `graph` 屬性設定：
+
+```json
+    "graph": "D:\\mypath\\images"
+```
+
+![Docker 映射位置設定的螢幕擷取畫面](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+
+按一下 **[** 套用] 以重新開機 Docker。 這些步驟會在 *%ProgramData%\docker\config\daemon.json*修改設定檔。 先前建立的映射不會移動。
 
 ## <a name="microsoftdockertools-github-repo"></a>Microsoft/DockerTools GitHub 存放庫
 
