@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 63d2f021aabc3d9152900ad62f072ec1a35a8e5b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: ae6548892010035564bf29a8eda25b736db97d2a
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75927748"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922996"
 ---
 有了 Visual Studio，您就可以輕鬆地建立、調試和執行容器化的 ASP.NET Core 應用程式，並將其發佈至 Azure Container Registry （ACR）、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們將發佈到 ACR。
 
@@ -29,12 +29,14 @@ ms.locfileid: "75927748"
 
 1. 從 Visual Studio 功能表中，選取 [檔案] > [新增] > [專案]。
 1. 在 [新增專案] 對話方塊的 [範本] 區段下，選取 [Visual C#] > [Web]。
-1. 選取 [ASP.NET Core Web 應用程式]。
+1. 選取 [ **ASP.NET Core Web 應用程式**]，或如果您想要使用 .NET Framework 而不是 .net Core，請選取 [ **ASP.NET web 應用程式**]。
 1. 指定新應用程式的名稱 (或使用預設值)，然後選取 [確定]。
 1. 選取 [Web 應用程式]。
 1. 請勾選 [啟用 Docker 支援] 核取方塊。
 
    ![啟用 Docker 支援核取方塊](../../media/container-tools/enable-docker-support.PNG)
+
+   螢幕擷取畫面顯示 .NET Core;如果您使用 .NET Framework，它看起來有點不同。
 
 1. 選取您想要 (Windows 或 Linux) 的容器類型，，然後按一下 [確定]。
 
@@ -65,7 +67,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-上述的 *Dockerfile* 以 [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) 映像為基礎，其中包含藉由建置專案並將其新增至容器來修改基底映像的指示。
+上述的 *Dockerfile* 以 [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) 映像為基礎，其中包含藉由建置專案並將其新增至容器來修改基底映像的指示。 如果您使用的是 .NET Framework，基底映射將會不同。
 
 核取新專案對話方塊的 [設定 HTTPS] 核取方塊時，*Dockerfile* 會提供兩個連接埠。 其中一個連接埠用於 HTTP 流量，另一個連接埠則用於 HTTPS。 如果未選取該核取方塊，則會為 HTTP 流量提供單一連接埠 (80)。
 

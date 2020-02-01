@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d74cb5b1594c0e4d347e2f8a4e1924cf68d64eed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3ba3ca41fe1bf675bc4f17e9932525921060aaa9
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114935"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922863"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
@@ -76,6 +76,10 @@ ms.locfileid: "76114935"
 | www\.incredibuild.com | 使用 C++ 進行遊戲開發 (IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | 使用 C++ 進行遊戲開發 (IncrediBuild) |
 | www\.python.org | Python 開發 (Python) <br /><br />資料科學和分析應用程式 (Python) |
+| developerservices2.apple.com | Xamarin iOS 布建 |
+| developer.apple.com | Xamarin iOS 布建 |
+| appstoreconnect.apple.com | Xamarin iOS 布建 |
+| idmsa.apple.com | Xamarin iOS 布建 |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>使用 Visual Studio 和 Azure 服務

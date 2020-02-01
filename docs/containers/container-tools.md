@@ -1,19 +1,19 @@
 ---
-title: Visual Studio 容器工具搭配 ASP.NET Core
+title: 使用 ASP.NET Visual Studio 容器工具
 author: ghogen
 description: 了解如何使用 Visual Studio 容器工具和適用於 Windows 的 Docker
 ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: c7d09f3a318049e8392f744d946138e59509470a
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: bfe26a663e2c79a040f66daa2ebeecaf89b80a94
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "70312156"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922982"
 ---
-# <a name="quickstart-docker-in-visual-studio"></a>快速入門：Visual Studio 中的 Docker
+# <a name="quickstart-docker-in-visual-studio"></a>快速入門： Visual Studio 中的 Docker
 
 ::: moniker range="vs-2017"
 
