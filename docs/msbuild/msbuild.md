@@ -11,23 +11,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a489f9d42930dca88a6de69b8875a4406250f66e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e93e7d30a194df70260ef010b81c3026299f8565
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595055"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923314"
 ---
 # <a name="msbuild"></a>MSBuild
-[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是用於建置應用程式的平台。 這個引擎也稱為 MSBuild，提供了專案檔的 XML 結構描述，以控制組建平台處理和建置軟體的方式。 Visual Studio 會使用 MSBuild，但 MSBuild 並不倚賴 Visual Studio。 藉由在專案或方案檔上叫用 *msbuild.exe*，就可以在未安裝 Visual Studio 的環境中組織及建置產品。
+
+[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是用於建置應用程式的平台。 這個引擎也稱為 MSBuild，提供了專案檔的 XML 結構描述，以控制組建平台處理和建置軟體的方式。 Visual Studio 使用 MSBuild，但 MSBuild 不相依于 Visual Studio。 藉由在專案或方案檔上叫用 *msbuild.exe*，就可以在未安裝 Visual Studio 的環境中組織及建置產品。
 
  Visual Studio 會使用 MSBuild 載入及建置 Managed 專案。 Visual Studio 中的專案檔 ( *.csproj*、 *.vbproj*、 *.vcxproj* 等等) 包含 MSBuild XML 程式碼，該程式碼會在您使用 IDE 建置專案時執行。 Visual Studio 專案會匯入所有必要的設定，並建置執行一般開發工作的流程，但是您可以在 Visual Studio 內或使用 XML 編輯器擴充或修改它們。
 
  如需 MSBuild 的C++相關資訊，請參閱[msbuild （C++）](/cpp/build/msbuild-visual-cpp)。
 
- 下列範例將說明何時可能會使用 MSBuild 命令列執行組建，而不是使用 Visual Studio IDE。
+ 下列範例說明當您從命令列叫用 MSBuild 而不是 Visual Studio IDE 時，您可能會執行組建。
 
-- 未安裝 Visual Studio。 ([下載 MSBuild 而不使用 Visual Studio](https://visualstudio.microsoft.com/downloads/?q=build+tools))
+- 未安裝 Visual Studio。 （[下載 MSBuild 但不 Visual Studio](https://visualstudio.microsoft.com/downloads/?q=build+tools)。）
 
 - 您想要使用 64 位元版的 MSBuild。 通常並不需要這個版本的 MSBuild，不過它可讓 MSBuild 存取更多記憶體。
 
@@ -43,12 +44,12 @@ ms.locfileid: "75595055"
 
   - 進行後續處理步驟。 例如，您可能想要對組件加上不同版本的戳記。
 
-您可以在 Visual Studio IDE 中撰寫程式碼，但是使用 MSBuild 執行組建。 另一種替代方式是，您可以在開發電腦的 IDE 中建置程式碼，但是使用 MSBuild 命令列建置整合自多位開發人員的程式碼。
+您可以在 Visual Studio IDE 中撰寫程式碼，但是使用 MSBuild 執行組建。 另一個替代方法是，您可以在開發電腦的 IDE 中建立程式碼，但從命令列執行 MSBuild，以建立與多個開發人員整合的程式碼。 您也可以使用[.Net core 命令列介面（CLI）](/dotnet/core/tools/)（使用 MSBuild）來建立 .net core 專案。
 
 > [!NOTE]
-> 您可以使用 Team Foundation Build 自動編譯、測試和部署您的應用程式。 您的建置系統可以在開發人員簽入程式碼 (例如，做為連續整合策略的一部分) 時或是根據排程 (例如，夜間組建驗證測試組建) 自動執行組建。 Team Foundation Build 會使用 MSBuild 編譯您的程式碼。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
+> 您可以使用 Azure Pipelines 自動編譯、測試及部署您的應用程式。 您的建置系統可以在開發人員簽入程式碼 (例如，做為連續整合策略的一部分) 時或是根據排程 (例如，夜間組建驗證測試組建) 自動執行組建。 Azure Pipelines 使用 MSBuild 編譯您的程式碼。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
 
- 本主題提供 MSBuild 的概觀。 如需入門教學課程，請參閱[逐步解說︰使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
+本文提供 MSBuild 的總覽。 如需入門教學課程，請參閱[逐步解說︰使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
 
 ## <a name="use-msbuild-at-a-command-prompt"></a>在命令提示字元中使用 MSBuild
  若要在命令提示字元執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，請使用適當的命令列選項，將專案檔傳遞給 *MSBuild.exe*。 命令列選項能讓您設定屬性、執行特定目標，以及設定可控制建置流程的其他選項。 例如，您可以使用下列命令列語法，在 `Configuration` 屬性設為 `Debug` 的情況下建置 *MyProj.proj* 檔案。
@@ -87,7 +88,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
  如需屬性的詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
 
 ### <a name="BKMK_Items"></a> 項目
- 項目是建置系統的輸入內容，通常代表檔案。 項目會依據使用者定義的項目名稱分組為各個項目類型。 這些項目類型可以做為工作的參數，工作會使用個別項目來執行建置流程的步驟。
+ 項目是建置系統的輸入內容，通常代表檔案。 專案會根據使用者定義的專案名稱，分組為專案類型。 這些項目類型可以做為工作的參數，工作會使用個別項目來執行建置流程的步驟。
 
  在專案檔中宣告項目 (Item) 的方式就是建立一個具有項目 (Item) 類型名稱的項目 (Element)，做為 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 項目 (Element) 的子系。 例如，下列程式碼會建立名為 `Compile` 的項目 (Item) 類型，其中包含兩個檔案。
 
@@ -116,7 +117,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  工作的執行邏輯是以 Managed 程式碼撰寫，並使用 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目對應到 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]。 若想撰寫自己的工作，您可以撰寫一個實作 <xref:Microsoft.Build.Framework.ITask> 介面的 Managed 類型。 如需有關如何撰寫工作的詳細資訊，請參閱[工作撰寫](../msbuild/task-writing.md)。
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 包含您可以依據自己的需求修改的一般工作。  範例包括用於複製檔案的 [Copy](../msbuild/copy-task.md)、用於建立目錄的 [MakeDir](../msbuild/makedir-task.md)，以及用於編譯 Visual C# 原始程式碼檔的 [Csc](../msbuild/csc-task.md)。 如需可用工作的清單和用法資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 包含您可以依據自己的需求修改的一般工作。 範例包括用於複製檔案的 [Copy](../msbuild/copy-task.md)、用於建立目錄的 [MakeDir](../msbuild/makedir-task.md)，以及用於編譯 Visual C# 原始程式碼檔的 [Csc](../msbuild/csc-task.md)。 如需可用工作的清單和用法資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。
 
  在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔中執行工作的方式就是建立一個具有工作名稱的項目，做為 [Target](../msbuild/target-element-msbuild.md) 項目的子系。 工作通常會接受參數，而這些參數會當做項目的屬性傳遞。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 屬性和項目都可當做參數使用。 例如，下列程式碼會呼叫 [MakeDir](../msbuild/makedir-task.md) 工作，並將前面範例中宣告的 `BuildDir` 屬性值傳遞給此工作。
 
@@ -150,17 +151,17 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
  如需如何在 Visual Studio 中使用 MSBuild 的教學課程，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
 
 ## <a name="BKMK_Multitargeting"></a> 多目標
- 您可以使用 Visual Studio，將應用程式編譯為在數個 .NET Framework 版本中的任何一版上執行。 例如，您可以將應用程式編譯為在 32 位元平台的 .NET Framework 2.0 上執行，也可以將同一個應用程式編譯為在 64 位元平台的 .NET Framework 4.5 上執行。 編譯為一個以上 Framework 版本的能力稱為「多目標」(Multitargeting)。
+ 藉由使用 Visual Studio，您可以將應用程式編譯為在數個 .NET Framework 版本的任何一個上執行。 例如，您可以將應用程式編譯為在32位平臺上于 .NET Framework 2.0 上執行，而且您可以將相同的應用程式編譯為在64位平臺上的 .NET Framework 4.5 上執行。 編譯為一個以上 Framework 版本的能力稱為「多目標」(Multitargeting)。
 
  以下為多目標的一些優點：
 
-- 您可以開發以較舊版 .NET Framework (例如 2.0、3.0 和 3.5 版) 為目標的應用程式。
+- 您可以開發以舊版 .NET Framework 為目標的應用程式，例如版本2.0、3.0 和3.5。
 
-- 您可以將 .NET Framework 以外的 Framework 做為目標，例如 Silverlight。
+- 您可以將非 .NET Framework 的 framework 作為目標，例如 Silverlight。
 
 - 您可以將「Framework 設定檔」當做目標，這是預先定義的目標 Framework 子集。
 
-- 如果 .NET Framework 目前版本的 Service Pack 已發行，您可以將它當做目標。
+- 如果目前版本 .NET Framework 的 Service Pack 已發行，您可以將其設為目標。
 
 - 多目標可保證應用程式只使用目標 Framework 和平台中提供的功能。
 
@@ -183,6 +184,8 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 | [其他資源](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | 列出社群和支援資源，以提供 MSBuild 的詳細資訊。 |
 
 ## <a name="reference"></a>參考資料
-- [MSBuild 參考](../msbuild/msbuild-reference.md)：包含參考資訊的主題連結。
+- [MSBuild 參考](../msbuild/msbuild-reference.md)\
+ 包含參考資訊的主題連結。
 
-- [字彙表](msbuild-glossary.md)定義通用的 MSBuild 字詞。
+- [詞彙](msbuild-glossary.md)\
+ 定義通用 MSBuild 詞彙。
