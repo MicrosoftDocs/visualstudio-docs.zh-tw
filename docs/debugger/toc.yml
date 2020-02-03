@@ -52,6 +52,8 @@
       items:
         - name: 在偵錯工具視窗中檢查資料
           href: debugger-windows.md
+        - name: 檢查例外狀況
+          href: exception-helper.md
         - name: 檢查變數
           href: autos-and-locals-windows.md
         - name: 監看式變數
