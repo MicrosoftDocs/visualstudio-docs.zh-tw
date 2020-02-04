@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2890ee9879d3cab2ff134fdbfcd4edabb36d512
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: e81d1c50f66925064dc008d7d50bcdbe69606914
+ms.sourcegitcommit: 4a4eed115525c6d34a1fbdf87b793893cd43b70d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76923216"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "77001521"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 C# 程式碼進行偵錯
 
@@ -187,7 +187,7 @@ ms.locfileid: "76923216"
 
      `SendMessage(name, a[i]);`
 
-2. 再按一次**F11**鍵，逐步執行 `SendMessage` 方法。
+1. 再按一次**F11**鍵，逐步執行 `SendMessage` 方法。
 
      黃色指標會前進到 `SendMessage` 方法。
 
@@ -203,7 +203,9 @@ ms.locfileid: "76923216"
 
      您應該會回到 `Main` 方法中的 `for` 迴圈，在 `SendMessage` 方法呼叫中暫停。
 
-3. 在方法呼叫中暫停時，請按下**F10**鍵（或選擇 [ **Debug >** 不進入函式]）一次。
+1. 按下**F11**鍵，直到您再次回到 `SendMessage` 方法呼叫為止。
+
+1. 在方法呼叫中暫停時，請按下**F10**鍵（或選擇 [ **Debug >** 不進入函式]）一次。
 
      ![使用 F10 來跳過程式碼](../csharp/media/get-started-step-over.png "F10 不進入函式")
 
@@ -262,7 +264,7 @@ ms.locfileid: "76923216"
 
 1. 展開 `letters` 變數以顯示其包含的元素。
 
-     ![檢查 [自動變數] 視窗中的變數](../csharp/media/get-started-locals-window.png "自動變數視窗")
+     ![檢查 [區域變數] 視窗中的變數](../csharp/media/get-started-locals-window.png "本機視窗")
 
     [區域變數] 視窗會顯示位在目前[範圍](https://www.wikipedia.org/wiki/Scope_(computer_science))中的變數，即為目前執行內容。
 
