@@ -1,54 +1,58 @@
 ---
-title: Office 365 權益 | Microsoft Docs
+title: Office 365 Pro Plus 權益 |Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
-description: 了解某些 Visual Studio 訂用帳戶中所含的 Office 365 權益。
-ms.openlocfilehash: b9834411c4b951fb7cdb09ac48dad651d109d618
-ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
+description: 瞭解部分 Visual Studio 訂用帳戶中所含的 Office 365 Pro Plus 權益。
+ms.openlocfilehash: 4ff521651e25fd1ad73bd629a111c7f8378fbfe3
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76967344"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036736"
 ---
-# <a name="office-365-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365
+# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365 Pro Plus
 
-建立您最好的作品。 使用永遠都會更新的應用程式在任何地方工作。 Office 365 是一個進階應用程式 (例如 Word、Excel、PowerPoint、OneNote、Outlook、Publisher 及 Access) 隨附的訂用帳戶 (Publisher 與 Access 只能在 PC 上使用)。 應用程式可以安裝在多部裝置上，包括電腦、Mac、iPad、iPhone、Android 平板電腦與 Android 手機。 擁有訂用帳戶，您就可以取得最新版的應用程式，並且在有更新時自動收到更新。
+建立您最好的作品。 使用永遠都會更新的應用程式在任何地方工作。 Office 365 Pro Plus 是一個進階應用程式 (例如 Word、Excel、PowerPoint、OneNote、Outlook、Publisher 及 Access) 隨附的訂用帳戶 (Publisher 與 Access 只能在 PC 上使用)。 應用程式可以安裝在多部裝置上，包括電腦、Mac、iPad、iPhone、Android 平板電腦與 Android 手機。 擁有訂用帳戶，您就可以取得最新版的應用程式，並且在有更新時自動收到更新。
 
 > [!NOTE]
-> 您的 Visual Studio 訂用帳戶可讓您使用 Office 365 以用於生產環境。  
+> 您的 Visual Studio 訂用帳戶可讓您使用 Office 365 Pro Plus 來進行生產環境使用。  
 
-## <a name="getting-started-with-office-365"></a>開始使用 Office 365 
+> [!IMPORTANT]
+> 我們已注意到取得 Office 365 Pro Plus 產品金鑰的問題。  我們正在處理此問題，並會在問題解決時提供更新。 
 
-遵循下列步驟下載並啟用 Office 365：
+
+## <a name="getting-started-with-office-365-pro-plus"></a>開始使用 Office 365 Pro Plus
+
+遵循下列步驟下載並啟用 Office 365 Pro Plus：
 1. 登入您的 Visual Studio Enterprise 訂用帳戶。
 2. 按一下 [下載] 索引標籤。
-3. 您會看到一份精選下載的清單。 在 Office 清單中，選擇 **Office 365**。
+3. 您會看到一份精選下載的清單。 在 Office 清單中，選擇 [ **office 365 Pro Plus**]。
    > [!div class="mx-imgBorder"]
-   > ![Office 365 下載](_img/vs-office365/vs-office365-downloads.png)
-0. 若要安裝 Office 365，您需要產品金鑰。  按一下 Office 365 清單下的 [取得金鑰] 連結。
+   > ![Office 365 Pro Plus 下載](_img/vs-office365/vs-office365-downloads.png)
+0. 若要安裝 Office 365 Pro Plus，您需要產品金鑰。  按一下 Office 365 Pro Plus 清單下的 [**取得金鑰**] 連結。
    > [!div class="mx-imgBorder"]
-   > ![Office 365 取得產品金鑰](_img/vs-office365/vs-office365-get-key.png)
+   > ![Office 365 Pro Plus 取得產品金鑰](_img/vs-office365/vs-office365-get-key.png)
 0. 飛出視窗會顯示您已領取的任何金鑰，以及您可以使用的金鑰。  若要取得新的金鑰，請按一下 [Office Professional Plus 2019] 清單下的 [領取金鑰]。
    > [!div class="mx-imgBorder"]
-   > ![Office 365 領取產品金鑰](_img/vs-office365/vs-office365-claim-key.png)
+   > ![Office 365 Pro Plus 索取產品金鑰](_img/vs-office365/vs-office365-claim-key.png)
 0. 記錄您剛才索取的金鑰。 (您可以隨時返回此清單再次查看)。
 0. 關閉飛出視窗。
 0. 按一下 [下載] 按鈕。
    > [!div class="mx-imgBorder"]
-   > ![Office 365 開始下載](_img/vs-office365/vs-office365-download-button.png)
-0. 使用 Microsoft 帳戶登入。 (若您已登入，請按一下 [下一步])。
+   > ![Office 365 Pro Plus 開始下載](_img/vs-office365/vs-office365-download-button.png)
+0. 使用您的 Microsoft 帳戶登入。 (若您已登入，請按一下 [下一步])。
 0. 輸入您的產品金鑰、國家/地區或區域，以及語言，然後按一下 [下一步]。
    > [!div class="mx-imgBorder"]
-   > ![Office 365 輸入產品金鑰](_img/vs-office365/vs-office365-enter-key.png)
-0. 再按一下 [下一步]。
+   > ![Office 365 Pro Plus 輸入產品金鑰](_img/vs-office365/vs-office365-enter-key.png)
+0. 再按一下 [下一步] 。
 0. 按一下 [安裝] 以安裝 Office 應用程式。
 
 ## <a name="eligibility"></a>資格
 
-| 訂用帳戶層級                                                 |     通道                                            | 的優點                                                          | 可續約？    |
+| 訂用帳戶層級                                                 |     聲道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售| 可用       |  是          |
 | 含 GitHub Enterprise 的 Visual Studio Enterprise  | VL | 可用       |  是          |
@@ -77,3 +81,9 @@ ms.locfileid: "76967344"
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest 個人點數](vs-azure.md)如果您打算開發 Office 的應用程式，您會想要啟用[Office 開發人員訂](vs-office-dev.md)用帳戶
+
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 文件](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)
