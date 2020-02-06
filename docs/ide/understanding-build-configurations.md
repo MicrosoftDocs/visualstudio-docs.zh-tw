@@ -1,6 +1,6 @@
 ---
 title: 了解組建組態
-ms.date: 11/04/2016
+ms.date: 01/20/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a76c054a71d88800bf1af225c332c9df3d2035
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: 6b472ca78d36247a76bf397989f48e04230ccd7d
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269168"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027620"
 ---
 # <a name="understand-build-configurations"></a>了解組建組態
 
@@ -48,7 +48,7 @@ ms.locfileid: "76269168"
 
 若要建立、選取、修改或刪除組態，您可以使用 [組態管理員]。 若要開啟組態，請在功能表列上，選擇 [建置] > [組態管理員]，或直接在搜尋方塊中鍵入**組態**。 您也可以使用 [標準] 工具列上的 [方案組態] 清單，來選取組態或開啟 [組態管理員]。
 
-![Configuration Manager](media/understanding-build-configurations/config-manager.png)
+![組態管理員](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
 > 如果您在工具列上找不到方案組態設定，而且無法存取 [組態管理員]，則可能會套用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 開發設定。 如需詳細資訊，請參閱[如何：在套用 Visual Basic 開發者設定的情況下管理組態](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。
@@ -91,10 +91,10 @@ Visual Studio 使用下列準則來指派方案組態。
 
 - 如果專案支援多個平台，則會為每個支援的平台找到或加入一個方案組態。 每個方案組態的名稱包含專案組態名稱和平台名稱，並且採用 *\<專案組態名稱> \<平台名稱>* 格式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)
-- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
 - [方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
 - [C/C++ 組建參考](/cpp/build/reference/c-cpp-building-reference)
 - [瞭解組建平臺](understanding-build-platforms.md)

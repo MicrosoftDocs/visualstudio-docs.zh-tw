@@ -6,30 +6,30 @@ manager: jillfra
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: article
-ms.date: 03/08/2019
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 9952ade8cae70b7e542b9de0b9ca36967f3bd8bb
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 6c1d56f788294826853ad441313597255308bb39
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826549"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027295"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET Core 容器部署至 Azure App Service
 
 本教學課程將逐步引導您使用 Visual Studio，將容器化的 ASP.NET Core web 應用程式發佈至[Azure App Service](/azure/app-service)。 針對 Azure 中裝載的單一容器 web 應用程式，Azure App Service 是適當的服務。
 
-如果您沒有 Azure 訂用帳戶，請在開始前建立 [免費帳戶](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) 。
+如果您沒有 Azure 訂用帳戶，請在開始前建立[免費帳戶](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs)。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>Prerequisites
 
-完成本教學課程：
+若要完成本教學課程：
 
 ::: moniker range="vs-2017"
 - 安裝包含 "ASP.NET 和 Web 開發" 工作負載的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 最新版本
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)搭配*ASP.NET 和 網頁程式開發*工作負載。
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)，其中包含 *ASP.NET 和 Web 部署*工作負載。
 ::: moniker-end
 - 安裝[Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
 
@@ -40,9 +40,9 @@ ms.locfileid: "76826549"
 ::: moniker range="vs-2017"
 1. 從 Visual Studio 功能表中，選取 [檔案] > [新增] > [專案]。
 2. 在 [新增專案] 對話方塊的 [範本] 區段下，選取 [Visual C#] > [Web]。
-3. 選取 [ASP.NET Core Web 應用程式]。
+3. 選取 **ASP.NET Core Web 應用程式**。
 4. 指定新應用程式的名稱 (或使用預設值)，然後選取 [確定]。
-5. 選取 [Web 應用程式]。
+5. 選取 **Web 應用程式**。
 6. 請勾選 [啟用 Docker 支援] 核取方塊。
 7. 選取 [ **Linux** ] 容器類型，然後按一下 **[確定]** 。 Windows 容器不支援以容器的形式部署至 Azure App Service。
 ::: moniker-end
@@ -70,7 +70,7 @@ ms.locfileid: "76826549"
 
    ![發佈設定的螢幕擷取畫面](media/deploy-app-service/publish-app-service-linux2.png)
 
-1. 選擇 [**建立**]。 您的容器會部署至您選取的資源群組和容器登錄中的 Azure。 此程式需要一些時間。 完成時，[**發佈**] 索引標籤會顯示已發行內容的相關資訊，包括網站 URL。
+1. 選擇 [建立]。 您的容器會部署至您選取的資源群組和容器登錄中的 Azure。 此程式需要一些時間。 完成時，[**發佈**] 索引標籤會顯示已發行內容的相關資訊，包括網站 URL。
 
    ![[發佈] 索引標籤的螢幕擷取畫面](media/deploy-app-service/publish-succeeded.PNG)
 
@@ -102,6 +102,6 @@ ms.locfileid: "76826549"
 
 深入瞭解[Azure App Service Linux](/azure/app-service/containers/app-service-linux-intro)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [部署至 Azure Container Registry](hosting-web-apps-in-docker.md)
