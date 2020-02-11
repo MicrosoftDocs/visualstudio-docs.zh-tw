@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
-ms.author: jillfra
+ms.author: mikejo
 author: jillre
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315f74348ffc7983088e7601f51a667ce8598b2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5916121a555531672cf70280051f02a889f611ac
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649556"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091765"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Fxcopcmd.exe 工具錯誤
 
@@ -52,6 +52,6 @@ Fxcopcmd.exe 不會將所有錯誤視為嚴重。 如果 Fxcopcmd.exe 有足夠�
 > [!NOTE]
 > Fxcopcmd.exe 傳回程序代碼**元件本身會參考錯誤**0x200，而不是錯誤。 此傳回碼表示缺少間接參考，但該 Fxcopcmd.exe 能夠處理它們。 此警告表示某些分析結果可能已遭入侵。 將**元件參考錯誤**與任何其他傳回碼結合時，視為錯誤。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [程式碼分析應用程式錯誤](../code-quality/code-analysis-application-errors.md)

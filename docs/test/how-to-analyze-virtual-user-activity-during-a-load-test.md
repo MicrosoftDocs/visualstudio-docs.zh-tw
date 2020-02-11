@@ -6,14 +6,14 @@ helpviewer_keywords:
 - virtual user activity chart, viewing
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97abfe3740ea9209768e82eca1b269cd0a381233
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dda1f35a63d3f7788faf9a94f16888c8323529c4
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644176"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091713"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>如何：使用虛擬使用者活動圖表分析虛擬使用者在負載測試期間的行為
 
@@ -47,7 +47,7 @@ ms.locfileid: "72644176"
 
    - **案例**
 
-   - **測試**
+   - **Test**
 
    - **URL** (不會在測試或異動中顯示)
 
@@ -57,9 +57,9 @@ ms.locfileid: "72644176"
 
    - **Network**
 
-   - **開始時間**
+   - **Start Time**
 
-   - **持續期間**
+   - **有效期間**
 
    - **代理程式**
 
@@ -94,7 +94,7 @@ ms.locfileid: "72644176"
 
    - **只顯示有記錄檔的結果**：僅顯示具有關聯測試記錄檔的測試結果。
 
-   - **顯示成功的結果**：顯示成功的結果。
+   - **顯示順利完成的結果** 顯示順利完成的結果。
 
    - **顯示有錯誤的結果**：顯示具有錯誤的結果，這些錯誤可協助偵錯。
 
@@ -103,7 +103,7 @@ ms.locfileid: "72644176"
 
      並會隨之更新「虛擬使用者活動圖」。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [在詳細資料檢視中分析虛擬使用者活動](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [逐步解說：使用虛擬使用者活動圖來隔離問題](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

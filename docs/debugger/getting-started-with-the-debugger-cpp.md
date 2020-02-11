@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96c928606c0fbc306a72347f85841677d0f69ec8
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027452"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091804"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 C++ 程式碼進行偵錯
 
@@ -35,7 +35,7 @@ ms.locfileid: "77027452"
 > * 檢查資料提示和偵錯工具視窗中的變數
 > * 檢查呼叫堆疊
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 ::: moniker range=">=vs-2019"
 
@@ -74,9 +74,11 @@ ms.locfileid: "77027452"
 
 3. 在左窗格的 [**新增專案**] 對話方塊中，展開 **[ C++視覺效果**]，然後選擇 [ **Windows 桌面**]。 在中間窗格中，選擇 [ **Windows 主控台應用程式**]。 然後將專案命名為「開始使用 *-進行調試*」。
 
-     如果您看不到 [**主控台應用程式**] 專案範本，請選擇 [**新增專案**] 對話方塊左窗格中的 [**開啟 Visual Studio 安裝程式**] 連結。
+     如果您看不到 [**主控台應用程式**] 專案範本，請選擇 [**新增專案**] 對話方塊左窗格中的 [**開啟 Visual Studio 安裝程式**] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
-     Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
+4. 按一下 [確定]。
+
+   Visual Studio 會開啟您的新專案。
 
 ::: moniker-end
 
@@ -99,7 +101,7 @@ ms.locfileid: "77027452"
 
 1. 在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中鍵入或輸入「*快速入門-正在進行偵錯工具*」。 接著，選擇 [建立]。
 
-   Visual Studio 會隨即開啟您的新專案。
+   Visual Studio 會開啟您的新專案。
 
 ::: moniker-end
 
@@ -137,7 +139,7 @@ ms.locfileid: "77027452"
 
 ## <a name="start-the-debugger"></a>啟動偵錯工具！
 
-1. 按**F5** （**debug > 開始進行調試**），或在調試工具列中，按 [**開始**調試] 按鈕![開始進行調試](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")。
+1. 按**F5** （**debug > 開始進行調試**），或在調試工具列中，按 [**開始**調試] 按鈕![開始進行調試](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")。
 
      **F5** 鍵會啟動應用程式並將偵錯工具附加至應用程式處理序，但目前我們還沒有做任何特別動作來檢查程式碼。 因此應用程式只會載入，且您會看到主控台輸出。
 
@@ -156,7 +158,7 @@ ms.locfileid: "77027452"
 
      在本教學課程中，我們將使用偵錯工具仔細查看這個應用程式，並了解偵錯工具功能。
 
-2. 按下紅色的停止![調試](../debugger/media/dbg-tour-stop-debugging.png "[停止偵錯]")程式按鈕（**Shift** + **F5**）來停止偵錯工具。
+2. 按下紅色的停止![調試](../debugger/media/dbg-tour-stop-debugging.png "停止偵錯")程式按鈕（**Shift** + **F5**）來停止偵錯工具。
 
 3. 在主控台視窗中，按下按鍵並**輸入**以關閉主控台視窗。
 
@@ -170,7 +172,7 @@ ms.locfileid: "77027452"
 
     中斷點是可靠的調試最基本和基本的功能之一。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。
 
-2. 按**F5**或 [**開始調試**程式] 按鈕![開始](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")進行偵測，應用程式會啟動，而偵錯工具會執行到您設定中斷點的程式程式碼。
+2. 按**F5**或 [**開始調試**程式] 按鈕![開始](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")進行偵測，應用程式會啟動，而偵錯工具會執行到您設定中斷點的程式程式碼。
 
     ![設定並叫用中斷點](../debugger/media/get-started-set-breakpoint-cpp.png)
 
