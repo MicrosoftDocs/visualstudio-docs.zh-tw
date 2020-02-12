@@ -2,7 +2,7 @@
 title: 修改 Visual Studio 2017
 titleSuffix: ''
 description: 了解如何逐步修改 Visual Studio。
-ms.date: 12/29/2019
+ms.date: 02/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2abb8ad86315a4be4c2c44488bd97d413415e614
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922882"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125347"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>透過新增或移除工作負載和元件來修改 Visual Studio
 
@@ -38,7 +38,7 @@ ms.locfileid: "76922882"
 
 ::: moniker-end
 
-方式如下：
+方法如下。
 
 >[!IMPORTANT]
 >若要安裝、更新或修改 Visual Studio，您必須以具有系統管理權限的帳戶登入。 如需詳細資訊，請參閱[使用者權限和 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
@@ -124,6 +124,9 @@ ms.locfileid: "76922882"
 
  工作負載包含您使用之程式設計語言或平台所需的功能。 您可以使用工作負載來修改 Visual Studio，以便在需要時支援您要執行的工作。
 
+ > [!TIP]
+>如需開發所需之工具和元件配套的詳細資訊，請參閱[Visual Studio 工作負載](https://visualstudio.microsoft.com/vs/#workloads)。
+
 1. 在 [Visual Studio 安裝程式] 中，選擇 [**工作負載**] 索引標籤，然後選取或取消選取您想要的工作負載。
 
     ![Visual Studio 2019 安裝程式對話方塊](media/vs-2019/vs-installer-modify-workloads.png "選擇 Visual Studio 2019 中的工作負載")
@@ -153,7 +156,7 @@ ms.locfileid: "76922882"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 工作負載與元件識別碼清單](workload-and-component-ids.md)
 * [更新 Visual Studio](update-visual-studio.md)

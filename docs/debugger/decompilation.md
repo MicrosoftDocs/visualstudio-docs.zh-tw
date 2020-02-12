@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ffd5f2e4bfc13f79b519fbdf9b3cf517793cd324
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091930"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144778"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>在進行偵錯工具時，從 .NET 元件產生原始程式碼
 
@@ -80,8 +80,27 @@ ms.locfileid: "77091930"
 - 中斷點不一定會系結至相符的來源位置。
 - 逐步執行可能不一定會逐步執行至正確的位置。
 - 本機變數的名稱不能正確。
+- 某些變數可能無法供評估。
 
 如需更多詳細資料，請參閱 GitHub 問題： [IChsarpCompiler. 解編程式整合至 VS 偵錯工具](https://github.com/icsharpcode/ILSpy/issues/1901)。
+
+### <a name="decompilation-reliability"></a>Decompilation 可靠性
+
+相對較小的 decompilation 嘗試百分比可能會導致失敗。 這是因為 ILSpy 中的序列點 null 參考錯誤。  我們已藉由攔截這些問題並正常地將 decompilation 嘗試失敗，以減輕失敗。
+
+如需更多詳細資料，請參閱 GitHub 問題： [IChsarpCompiler. 解編程式整合至 VS 偵錯工具](https://github.com/icsharpcode/ILSpy/issues/1901)。
+
+### <a name="limitations-with-async-code"></a>非同步程式碼的限制
+
+具有 async/await 程式碼模式之反向組譯模組的結果可能不完整或完全失敗。 非同步/等候和產生狀態機器的 ILSpy 實作為僅部分實行。 
+
+如需更多詳細資料，請參閱 GitHub 問題： PDB 產生器[狀態](https://github.com/icsharpcode/ILSpy/issues/1422)。
+
+### <a name="just-my-code"></a>Just My Code
+
+[Just My Code （JMC）](https://docs.microsoft.com/visualstudio/debugger/just-my-code)設定可讓 Visual Studio 逐步執行系統、架構、程式庫和其他非使用者呼叫。 在偵測會話期間，[**模組**] 視窗會顯示偵錯工具視為 My Code （使用者程式碼）所使用的程式碼模組。
+
+優化或發行模組的 Decompilation 會產生非使用者程式碼。 例如，如果偵錯工具在您反向組譯的非使用者程式碼中中斷，則不會顯示 [**任何來源**] 視窗。 若要停用 Just My Code，請流覽至 [**工具**] [ > **選項**] （或 **[** **Debug** > **選項**] **） > debug** > General，然後取消選取 [**啟用 Just My Code**]。
 
 ### <a name="extracted-sources"></a>已解壓縮的來源
 

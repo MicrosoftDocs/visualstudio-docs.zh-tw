@@ -1,6 +1,6 @@
 ---
-title: 靜態區域函式重構
-ms.date: 09/28/2019
+title: 靜態區域函式重構選項
+ms.date: 02/10/2020
 ms.topic: reference
 author: governesss
 ms.author: midumont
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: adbf84b9ae7566cd5e58a7c757ce09a37252b754
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: c297457c910c484c05c974c581e89c75e0ad44e5
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74782276"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144842"
 ---
 # <a name="static-local-function-refactorings-and-quick-actions"></a>靜態區域函式重構和快速動作
 
@@ -34,7 +34,7 @@ ms.locfileid: "74782276"
 
 **原因：** 靜態區域函式可改善可讀性：瞭解特定程式碼是隔離的，讓您更容易瞭解、重新讀取和重複使用。 靜態區域函式也會提供範圍，以防止使用只在單一方法中呼叫的靜態函式來污染類別。
 
-### <a name="how-to"></a>操作說明
+### <a name="how-to"></a>操作方式
 
 1. 將您的插入號放在區域函式名稱上。
 
@@ -56,7 +56,7 @@ ms.locfileid: "74782276"
 
 **原因：** 使用靜態區域函式可提供讀者的說明，因為它們知道只能在程式的特定內容中宣告和呼叫。 它提供在此內容之外定義變數的彈性，但仍然能夠將它們當做引數傳遞至靜態區域函式。
 
-### <a name="how-to"></a>操作說明
+### <a name="how-to"></a>操作方式
 
 1. 將插入號放在用於靜態區域函式的變數上。
 
@@ -66,6 +66,6 @@ ms.locfileid: "74782276"
 
 3. 選取 [在本機靜態函式中明確傳遞變數]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [重構](../refactoring-in-visual-studio.md)
