@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 85ee317b315f8f8d21f5a2d97d91a9950fd395f9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
+ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114400"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173081"
 ---
 # <a name="application-property-page-uwp-projects"></a>應用程式屬性頁 (UWP 專案)
 
@@ -38,7 +38,7 @@ ms.locfileid: "76114400"
 
 **組件資訊**&mdash;選擇此按鈕會顯示[組件資訊對話方塊](../../ide/reference/assembly-information-dialog-box.md)。
 
-**套件資訊清單**&mdash;選擇此按鈕會開啟資訊清單設計工具。 資訊清單設計工具可以透過選擇 [方案總管] 中的 _Package.appxmanifest_ 檔案加以存取。 如需詳細資訊，請參閱[使用資訊清單設計工具設定套件](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package)。
+**套件資訊清單**&mdash;選擇此按鈕會開啟資訊清單設計工具。 資訊清單設計工具可以透過選擇 [方案總管] 中的 **Package.appxmanifest** 檔案加以存取。 如需詳細資訊，請參閱[使用資訊清單設計工具設定套件](/windows/msix/package/packaging-uwp-apps#configure-your-project)。
 
 ## <a name="targeting-section"></a>目標鎖定區段
 
@@ -46,7 +46,7 @@ ms.locfileid: "76114400"
 
 如需 Visual Studio 平台目標的資訊，請參閱[平台目標](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [建立您的第一個 UWP 應用程式](/windows/uwp/get-started/your-first-app)
 - [選擇 UWP 版本](/windows/uwp/updates-and-versions/choose-a-uwp-version)
