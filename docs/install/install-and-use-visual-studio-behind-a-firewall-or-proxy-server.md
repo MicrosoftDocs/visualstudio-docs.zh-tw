@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c99a8c08ff5969f09d2bcaae63eb4130d9813e78
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
-ms.translationtype: HT
+ms.openlocfilehash: 94b6be15a99f03cdc14f33df5dff59cdaefe57fa
+ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125334"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77155198"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
@@ -124,7 +124,7 @@ ms.locfileid: "77125334"
 | Cloud Explorer | 1. &#60;clusterendpoint&#62; <br>Service Fabric <br>2. &#60;管理端點&#62;<br>一般 Cloud Exp <br>3. &#60;圖形端點&#62;<br>一般 Cloud Exp<br>4. &#60;儲存體帳戶端點&#62;<br>儲存體節點 <br>5. &#60;Azure 入口網站 URL&#62;<br>一般 Cloud Exp <br>6. &#60;金鑰保存庫端點&#62; <br>Azure Resource Manager VM 節點<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric 遠端偵錯和 ETW 追蹤 | <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7: tcp | 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. 動態 | 1. 範例： test12.eastus.cloudapp.com<br>2. 抓取訂閱並抓取/管理 Azure 資源<br>3. 抓取 Azure Stack 訂閱<br>4. 管理存放裝置資源（範例： mystorageaccount.blob.core.windows.net）<br>5. [在入口網站中開啟] 快顯功能表選項（在 Azure 入口網站中開啟資源）<br>6. 建立並使用金鑰保存庫進行 VM 的偵錯工具（例如： myvault.vault.azure.net） <br><br>7. 根據叢集中的節點數目和可用的埠，動態配置埠區塊。 <br><br>連接埠區塊將會嘗試取得節點數目的三倍數目 (最少 10 個連接埠)。<br><br>針對串流追蹤，會嘗試從 810 取得連接埠區塊。 若該連接埠區塊已被使用，則會嘗試取得下一個區塊，依此類推。 (若負載平衡器是空的，則最有可能會使用來自 810 的連接埠) <br><br>和偵錯類似，系統會保留四組連接埠區塊： <br>- connectorPort：30398、 <br>- forwarderPort：31398、 <br>- forwarderPortx86：31399、<br>- fileUploadPort：32398<br> |
 | 雲端服務 | 1. RDP<br><br>2. core.windows.net <br><br>3.  management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;使用者的雲端服務&#62;.cloudapp.net <br> &#60;使用者的 VM&#62;.&#60;區域&#62;.azure.com | 1. rdp <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. tcp | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1. 雲端服務 VM 的遠端桌面 <br><br> 2. 私人診斷設定的儲存體帳戶元件 <br><br> 3. Azure 入口網站 <br><br> 4. 伺服器總管-Azure 儲存體&#42;為客戶命名的儲存體帳戶  <br><br> 5. 開啟入口網站&#47;的連結下載訂用帳戶&#47;憑證發佈設定檔案 <br><br>6. a) 針對雲端服務及 VM 進行遠端偵錯的連接器本機連接埠<br> 6. b) 針對雲端服務及 VM 進行遠端偵錯的連接器公用連接埠 <br> 6. c) 針對雲端服務及 VM 進行遠端偵錯的轉寄站本機連接埠 <br> 6. d) 針對雲端服務及 VM 進行遠端偵錯的轉寄站公用連接埠  <br> 6. e) 針對雲端服務及 VM 進行遠端偵錯的檔案上傳程式本機連接埠 <br> 6. f) 針對雲端服務及 VM 進行遠端偵錯的檔案上傳程式公開連接埠 |
 | Service Fabric | 1. <br>ocs.Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | https | 443 | 1. 檔 <br><br> 2. 建立叢集功能 <br><br>3. &#42;是 Azure 金鑰保存庫名稱（範例：-test11220180112110108.vault.azure.net  <br><br>  4. 是&#42;動態的（範例： vsspsextprodch1su1.vsspsext.visualstudio.com） |
-| 快照 <br>偵錯工具 | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon （.exe） | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (相依於 Visual Studio 版本) | 1. 查詢應用程式服務 SKU 大小的 json 檔案 <br>2. 各種 Azure RM 呼叫 <br>3. 透過的網站準備呼叫  <br>4. 客戶的目標 App Service Kudu 端點 <br>5. 在 nuget.org 中發行的查詢網站延伸模組版本 <br>6. 遠端偵錯通道 |
+| 快照 <br>偵錯工具 | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. 遠端服務/伺服器 IP 位址/FQDN | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (相依於 Visual Studio 版本) | 1. 查詢應用程式服務 SKU 大小的 json 檔案 <br>2. 各種 Azure RM 呼叫 <br>3. 透過的網站準備呼叫  <br>4. 客戶的目標 App Service Kudu 端點 <br>5. 在 nuget.org 中發行的查詢網站延伸模組版本 <br>6.[遠端偵錯](https://docs.microsoft.com/visualstudio/debugger/remote-debugging?view=vs-2019) |
 | Azure 串流分析 <br><br>HDInsight | Management.azure.com | https | 443 | 用來檢視、提交、執行及管理 ASA 作業 <br><br> 用來瀏覽 HDI 叢集，以及對 HDI 作業進行提交、診斷及偵錯 |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | 用來對作業進行編譯、提交、檢視、診斷及偵錯；用來瀏覽 ADLS 檔案；用來上傳及下載檔案 |
 | 封裝服務 | [account].visualstudio.com <br/> [帳戶].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 只有對特定建置工作案例 (例如：NuGet 工具安裝程式、Node 工具安裝程式)，或在您想要讓摘要使用公用上游時，才需要 \*.npmjs.org、\*.nuget.org 與 \*.nodejs.org。 封裝服務的核心功能則需要使用其他三個網域。 |
