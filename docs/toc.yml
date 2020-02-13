@@ -382,6 +382,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: 反轉 if 陳述式
                   href: ide/reference/invert-if-statement.md
+                - name: 靜態區域函式重構選項
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: 移動參考附近的宣告
                   href: ide/reference/move-declaration-near-reference.md
                 - name: 將類型移至相符的檔案
