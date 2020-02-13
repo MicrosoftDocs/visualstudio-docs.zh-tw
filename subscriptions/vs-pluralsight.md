@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsight 訓練課程訂用帳戶。
-ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: f76db59053451ca58890ec055295758add482725
+ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74707005"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77192412"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -31,7 +31,7 @@ ms.locfileid: "74707005"
    >
    > **「請注意：如果您先前透過 Visual Studio 訂閱啟用其他 Pluralsight 供應項目，此代碼可能無法讓您建立新的 Pluralsight 帳戶。」**
 
-2. 您會收到已順利擷取優待券代碼的通知。  按一下 [啟動]。
+2. 您會收到已成功擷取優待券代碼的通知。  按一下 [啟動]。
 
 3. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。
    - 在表單中提供要求的連絡資訊
@@ -50,18 +50,18 @@ ms.locfileid: "74707005"
 
 7. 輸入歡迎電子郵件中所提供的使用者名稱，以及您剛才建立的密碼，然後按一下 [Sign in (登入)]。
 
-8. 就這麼容易！  您現在準備好要開始學習數以千計的 Pluralsight 課程！
+8. 就這麼簡單！  您現在準備好要開始學習數以千計的 Pluralsight 課程！
 
 ## <a name="eligibility"></a>資格
 
-|                          訂用帳戶層級                          |     通道      |    的優點    |   可續約？   |
+|                          訂用帳戶層級                          |     通道      |    優點    |   可續約？   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | VL, Azure, 零售 |   6 個月    | 是<sup>2</sup> |
 |          含 GitHub Enterprise 的 Visual Studio Enterprise          | VL  |   6 個月    | 是<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL, Azure, 零售 |   3 個月    | 是<sup>2</sup> |
 |         含 GitHub Enterprise 的 Visual Studio Professional          | VL  |   3 個月    | 是<sup>2</sup> |
-|              Visual Studio Test Professional (標準訂用帳戶)              |    VL, 零售     |   3 個月    | 是<sup>2</sup>  |
-|                      MSDN 平台 (標準)                       |    VL, 零售     |   3 個月    | 是<sup>2</sup>  |
+|              Visual Studio Test Professional (標準訂用帳戶)              |    VL, 零售     |   無法使用    | NA  |
+|                      MSDN 平台 (標準)                       |    VL, 零售     |   無法使用    | NA  |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) |       Azure       | 無法使用 |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Program      | 無法使用 |       NA       |
 ||

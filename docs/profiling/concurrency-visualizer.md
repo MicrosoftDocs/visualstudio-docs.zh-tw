@@ -15,18 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 913984bcc5f9546589421d66d95b6bfb2740b870
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d3b4e151db08ad5490ed6238223d553f9e76aa0f
+ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912021"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77192399"
 ---
 # <a name="concurrency-visualizer"></a>並行視覺化檢視
 
 > [!NOTE]
 > 並行視覺化檢視是 Visual Studio 的選擇性擴充功能。 從下列連結下載並行視覺化檢視和並行視覺化檢視收集工具：
 >
+> - 下載 Visual Studio 2019 延伸模組的[並行視覺化](https://marketplace.visualstudio.com/items?itemName=Diagnostics.DiagnosticsConcurrencyVisualizer2019#overview)。
 > - 下載 [Visual Studio 2017 並行視覺化檢視](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview)延伸模組。
 > - 下載 [Visual Studio 2015 並行視覺化檢視](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015)延伸模組。
 > - 下載[適用於 Visual Studio 2015 的並行視覺化檢視收集工具](https://www.microsoft.com/download/details.aspx?id=49103)。
@@ -53,7 +54,7 @@ ms.locfileid: "72912021"
 |[並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)|描述如何檢測您的原始程式碼，以便在 [並行視覺化檢視] 中顯示其他資訊。|
 |[並行視覺化檢視命令列公用程式 (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|描述如何使用 [並行視覺化檢視] 命令列公用程式 (CVCollectionCmd.exe) 來收集及處理沒有安裝 Visual Studio 的電腦上的追蹤資料。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)
