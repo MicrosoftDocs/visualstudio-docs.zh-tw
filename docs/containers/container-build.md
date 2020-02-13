@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916946"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027266"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio 如何建置容器化應用程式
 
@@ -32,7 +32,7 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-Dockerfile 中的程式碼會從 Microsoft Container Registry （mcr.microsoft.com）中的 Nano Server 映射開始，並建立可公開端口80和443的中繼映射 `base`，並將工作目錄設定為 `/app`。
+Dockerfile 中的程式程式碼以 Microsoft Container Registry （mcr.microsoft.com）中的 Debian 映射開頭，並建立可公開端口80和443的中繼映射 `base`，並將工作目錄設定為 `/app`。
 
 下一個階段是 `build`，如下所示：
 
@@ -64,7 +64,7 @@ ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 
 如果您想要在 Visual Studio 外部建立，您可以使用 `docker build` 或 `MSBuild` 從命令列建立。
 
-### <a name="docker-build"></a>docker build
+### <a name="docker-build"></a>docker 組建
 
 若要從命令列建立容器化解決方案，您通常可以針對方案中的每個專案使用命令 `docker build <context>`。 您會提供*組建內容*引數。 Dockerfile 的*組建內容*是本機電腦上的資料夾，用來做為產生映射的工作資料夾。 例如，當您將檔案複製到容器時，它就是您複製檔案的資料夾。  在 .NET Core 專案中，使用包含方案檔（.sln）的資料夾。  以相對路徑表示，此引數通常會是 "：" （代表專案資料夾中的 Dockerfile），以及其父資料夾中的方案檔。  針對 .NET Framework 專案，組建內容是專案資料夾，而不是方案資料夾。
 
@@ -189,8 +189,8 @@ Visual Studio 使用自訂容器進入點，視專案類型和容器作業系統
 
 瞭解如何在專案檔中設定其他 MSBuild 屬性，以進一步自訂您的組建。 請參閱[容器專案的 MSBuild 屬性](container-msbuild-properties.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-
-Windows 上 windows[Linux 容器](/virtualization/windowscontainers/deploy-containers/linux-containers)上的 [MSBuild](../msbuild/msbuild.md)[Dockerfile](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile) 
-
+Windows
+[Linux 上的 windows 容器上](/virtualization/windowscontainers/deploy-containers/linux-containers)的[MSBuild](../msbuild/msbuild.md)
+[Dockerfile](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)

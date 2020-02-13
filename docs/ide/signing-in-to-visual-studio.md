@@ -5,17 +5,17 @@ ms.custom: seodec18
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 383331e8fee2b009282aa38a8eb20af8b181f7e5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: adda66bbccafa3c1d7f20d60a3f8ee0a4995353c
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845897"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027588"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
@@ -66,7 +66,7 @@ ms.locfileid: "75845897"
 
 如果您在登入時遇到任何問題，請參閱[帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)頁面來取得協助。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)

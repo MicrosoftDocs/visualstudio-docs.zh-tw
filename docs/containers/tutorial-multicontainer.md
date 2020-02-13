@@ -6,18 +6,18 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 5d6b867c2f237f20747628533af055e5c4900ceb
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: b9e1a2fc7c9027c34aeb8a0e0d1d44fdb0211e65
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916517"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027324"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教學課程：使用 Docker Compose 建立多容器應用程式
 
 在本教學課程中，您將瞭解如何管理一個以上的容器，並在使用 Visual Studio 中的容器工具時，在兩者之間進行通訊。  管理多個容器需要*容器協調流程*，而且需要協調器，例如 Docker Compose、Kubernetes 或 Service Fabric。 在這裡，我們將使用 Docker Compose。 Docker Compose 在開發週期的過程中，很適合用於本機的偵錯工具和測試。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>Prerequisites
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -26,7 +26,7 @@ ms.locfileid: "75916517"
 
 ::: moniker range=">= vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* 已安裝**網頁程式開發**、**Azure Tools** 工作負載及(或) **.NET Core 跨平台開發** 工作負載的 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+* 已安裝[網頁程式開發](https://visualstudio.microsoft.com/downloads)、**Azure Tools** 工作負載及(或) **.NET Core 跨平台開發** 工作負載的 **Visual Studio 2019**
 * 適用於 .NET Core 2.2 開發的 [.NET Core 2.2 開發工具](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 * [.Net core 3 開發工具](https://dotnet.microsoft.com/download/dotnet-core/3.1)，可使用 .net core 3.1 進行開發。
 ::: moniker-end
@@ -84,6 +84,9 @@ ms.locfileid: "75916517"
        }
     }
    ```
+   
+    > [!NOTE]
+    > 在真實世界的程式碼中，您不應該在每個要求之後處置 `HttpClient`。 如需最佳作法，請參閱[使用 HttpClientFactory 來執行可復原的 HTTP 要求](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)。
 
    針對 Visual Studio 2019 或更新版本中的 .NET Core 3.1，Web API 範本會使用 WeatherForecast API，因此請將該行取消批註，並將 ASP.NET 2.x 的程式碼標記為批註。
 
@@ -189,7 +192,7 @@ ms.locfileid: "75916517"
 
 查看將您的[容器部署至 Azure](/azure/containers)的選項。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
   
 [Docker Compose](https://docs.docker.com/compose/)  
 [容器工具](/visualstudio/containers/)

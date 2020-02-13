@@ -6,14 +6,14 @@ helpviewer_keywords:
 - test settings, ASP.NET
 ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1de7e890c60374730e297296116cb56828fa256b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77c501f6c7915c7eff1ebd8a4f9308c89bd46e8d
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643749"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091700"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用測試設定來設定 ASP.NET 分析工具以進行負載測試
 
@@ -58,7 +58,7 @@ ASP.NET 分析工具診斷資料配接器可讓您在執行負載測試時，從
 
 在測試設定中設定 ASP.NET 分析工具診斷資料配接器之後，您現在可以對 ASP.NET Web 應用程式收集 ASP.NET 分析資料。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)
 - [如何：建立分散式負載測試的測試設定](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)

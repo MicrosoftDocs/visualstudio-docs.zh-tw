@@ -3,15 +3,15 @@ title: 使用 ASP.NET Visual Studio 容器工具
 author: ghogen
 description: 了解如何使用 Visual Studio 容器工具和適用於 Windows 的 Docker
 ms.author: ghogen
-ms.date: 02/01/2019
+ms.date: 01/24/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: bfe26a663e2c79a040f66daa2ebeecaf89b80a94
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 775abc2699bf3cef2dd360df701ab12b69a49496
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922982"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027310"
 ---
 # <a name="quickstart-docker-in-visual-studio"></a>快速入門： Visual Studio 中的 Docker
 

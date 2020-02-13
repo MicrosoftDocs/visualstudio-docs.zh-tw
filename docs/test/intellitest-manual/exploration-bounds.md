@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: f6b29b8bc2a9755f5f2e2ced237a5a1ce6acfd6e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03f23aacbe95615b565dfcee54d2b620c0ae1cd9
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653218"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091830"
 ---
 # <a name="exploration-bounds"></a>探索界限
 
@@ -166,7 +166,7 @@ IntelliTest 在探索期間將考慮使用的唯一路徑數目上限。
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
 
-指出 IntelliTest 應該發出的測試類型。 可能值為：
+指出 IntelliTest 應該發出的測試類型。 可能的值包括：
 
 * **All** - 發出所有項目的測試，包括假設違規。
 * **FailuresAndIncreasedBranchHits** (預設) - 針對所有的唯一失敗，以及每次測試案例增加 [TestEmissionBranchHits](#testemissionbranchhits) 所控制的涵蓋範圍時，發出測試。
@@ -184,6 +184,6 @@ IntelliTest 在探索期間將考慮使用的唯一路徑數目上限。
 
 這個選項的預設值是 **TestEmissionBranchHits = 2**，它會產生更豐富多變的測試套件，同時也更適合用來偵測未來的迴歸錯誤。
 
-## <a name="got-feedback"></a>有任何意見反應嗎？
+## <a name="got-feedback"></a>有人給您意見嗎？
 
 在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。

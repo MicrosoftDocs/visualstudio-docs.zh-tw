@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 619840f417c922b4019bafffca8d66c9b1c939e2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596862"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923272"
 ---
 # <a name="build-page-project-designer-c"></a>專案設計工具、建置頁 (C#)
 
@@ -65,6 +65,12 @@ ms.locfileid: "75596862"
 指定輸出檔設為目標的處理器。 針對任何 32 位元 Intel 相容處理器選擇 [x86]，針對任何 64 位元 Intel 相容處理器選擇 [x64]，針對 ARM 處理器選擇 [ARM]，或選擇 [任何 CPU] 指定可接受任何處理器。 [任何 CPU] 是專案的預設值，因為這可讓應用程式在種類範圍最廣的不同硬體上執行。
 
 如需詳細資訊，請參閱 [/platform (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)。
+
+**Null**
+
+指定整個C#專案的可為 null 內容。 這個 UI 選項是在 Visual Studio 16.5 中引進，而且只會針對使用C# 8.0 或更新版本的專案啟用。
+
+如需詳細資訊，請參閱[可為 null](/dotnet/csharp/nullable-references#nullable-contexts)的內容。
 
 **建議使用 32 位元**
 

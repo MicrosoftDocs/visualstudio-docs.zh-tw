@@ -10,22 +10,22 @@ helpviewer_keywords:
 - warnings, interoperability
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba2f717c4bdccd662764b73530d3ae416f8b95b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a1eb65f52df4b27837c00b7557db0c5e15e6c187
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649278"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091752"
 ---
 # <a name="interoperability-warnings"></a>互通性警告
 
 互通性警告支援與 COM 用戶端的互動。
 
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
 
 | 規則 | 描述 |
 | - | - |

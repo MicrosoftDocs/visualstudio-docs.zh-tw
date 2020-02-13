@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2890ee9879d3cab2ff134fdbfcd4edabb36d512
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 6ede47c9daf37011195d66c746498cdfc809d24b
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76923216"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027245"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 C# 程式碼進行偵錯
 
@@ -28,7 +28,7 @@ ms.locfileid: "76923216"
 
 雖然示範應用程式是 C#，但大多數功能也適用於 C++、Visual Basic、F#、Python、JavaScript 及 Visual Studio 支援的其他語言 (F# 不支援「編輯後繼續」。 F# 和 JavaScript 不支援 [自動變數] 視窗)。 螢幕擷取畫面則使用 C# 表示。
 
-在本教學課程中，您將進行下列作業：
+在本教學課程中，您將：
 
 > [!div class="checklist"]
 > * 啟動偵錯工具，並叫用中斷點。
@@ -36,7 +36,7 @@ ms.locfileid: "76923216"
 > * 檢查資料提示和偵錯工具視窗中的變數
 > * 檢查呼叫堆疊
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>Prerequisites
 
 ::: moniker range=">=vs-2019"
 
@@ -96,9 +96,9 @@ ms.locfileid: "76923216"
    ![選擇主控台C#應用程式的範本（.net Core）](../csharp/media/vs-2019/get-started-create-console-project.png)
 
    > [!NOTE]
-   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發**工作負載。
+   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到你要尋找的項目嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發**工作負載。
 
-1. 在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中鍵入或輸入「*快速入門-正在進行偵錯工具*」。 接著，選擇 [建立]。
+1. 在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中鍵入或輸入*GetStartedDebugging* 。 接著，選擇 [建立]。
 
    Visual Studio 會隨即開啟您的新專案。
    
@@ -134,7 +134,7 @@ ms.locfileid: "76923216"
 
 ## <a name="start-the-debugger"></a>啟動偵錯工具！
 
-1. 按**F5** （**debug > 開始進行調試**），或在調試工具列中，按 [**開始**調試] 按鈕![開始進行調試](../../debugger/media/dbg-tour-start-debugging.png "開始偵錯")。
+1. 按**F5** （**debug > 開始進行調試**），或在調試工具列中，按 [**開始**調試] 按鈕![開始進行調試](../../debugger/media/dbg-tour-start-debugging.png "[偵錯]")。
 
      **F5** 鍵會啟動應用程式並將偵錯工具附加至應用程式處理序，但目前我們還沒有做任何特別動作來檢查程式碼。 因此應用程式只會載入，且您會看到主控台輸出。
 
@@ -153,13 +153,13 @@ ms.locfileid: "76923216"
 
      在本教學課程中，我們將使用偵錯工具仔細查看這個應用程式，並了解偵錯工具功能。
 
-2. 按下紅色的停止![調試](../../debugger/media/dbg-tour-stop-debugging.png "停止偵錯")程式按鈕（**Shift** + **F5**）來停止偵錯工具。
+2. 按下紅色的停止![調試](../../debugger/media/dbg-tour-stop-debugging.png "[停止偵錯]")程式按鈕（**Shift** + **F5**）來停止偵錯工具。
 
 3. 在主控台視窗中，按下按鍵關閉主控台視窗。
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>設定中斷點，並啟動偵錯工具
 
-1. 在 `Main` 函式的 `for` 迴圈中，按一下下列程式碼行的左邊界來設定中斷點：
+1. 在 `for` 函式的 `Main` 迴圈中，按一下下列程式碼行的左邊界來設定中斷點：
 
     `name += letters[i];`
 
@@ -167,7 +167,7 @@ ms.locfileid: "76923216"
 
     中斷點是可靠的調試最基本和基本的功能之一。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。
 
-2. 按**F5**或 [**開始調試**程式] 按鈕![開始](../../debugger/media/dbg-tour-start-debugging.png "開始偵錯")進行偵測，應用程式會啟動，而偵錯工具會執行到您設定中斷點的程式程式碼。
+2. 按**F5**或 [**開始調試**程式] 按鈕![開始](../../debugger/media/dbg-tour-start-debugging.png "[偵錯]")進行偵測，應用程式會啟動，而偵錯工具會執行到您設定中斷點的程式程式碼。
 
     ![設定並叫用中斷點](../csharp/media/get-started-set-breakpoint.png)
 
@@ -187,13 +187,13 @@ ms.locfileid: "76923216"
 
      `SendMessage(name, a[i]);`
 
-2. 再按一次**F11**鍵，逐步執行 `SendMessage` 方法。
+1. 再按一次**F11**鍵，逐步執行 `SendMessage` 方法。
 
      黃色指標會前進到 `SendMessage` 方法。
 
      ![使用 F11 逐步執行程式碼](../csharp/media/get-started-f11.png "F10 逐步執行")
 
-     F11 鍵是**逐步執行**命令，可將應用程式執行一次往前推進一個陳述式。 F11 鍵是以最詳細的方式檢查執行流程的好方法 （若要更快速地透過程式碼移動，我們也會示範一些其他選項）。根據預設，偵錯工具會略過非使用者程式碼（如果您需要更多詳細資料，請參閱[Just My Code](../../debugger/just-my-code.md)）。
+     F11 鍵是**逐步執行**命令，可將應用程式執行一次往前推進一個陳述式。 F11 鍵是以最詳細的方式檢查執行流程的好方法。 （若要更快速地透過程式碼移動，我們也會示範一些其他選項）。根據預設，偵錯工具會略過非使用者程式碼（如果您需要更多詳細資料，請參閱[Just My Code](../../debugger/just-my-code.md)）。
 
      假設您已經完成檢查 `SendMessage` 方法，而您想要離開方法但停留在偵錯工具中。 您可以使用 [跳離函式] 命令完成這項動作。
 
@@ -203,15 +203,19 @@ ms.locfileid: "76923216"
 
      您應該會回到 `Main` 方法中的 `for` 迴圈，在 `SendMessage` 方法呼叫中暫停。
 
-3. 在方法呼叫中暫停時，請按下**F10**鍵（或選擇 [ **Debug >** 不進入函式]）一次。
+1. 按**F11**數次，直到再次回到 `SendMessage` 方法呼叫為止。
+
+1. 在方法呼叫中暫停時，請按下**F10**鍵（或選擇 [ **Debug >** 不進入函式]）一次。
 
      ![使用 F10 來跳過程式碼](../csharp/media/get-started-step-over.png "F10 不進入函式")
 
-     請注意，這次偵錯工具不會逐步執行 `SendMessage` 方法。 **F10** 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中的函式或方法 (此程式碼仍會執行)。 藉由在 `SendMessage` 方法呼叫上按 **F10** 鍵 (而非 **F11** 鍵)，我們略過了 `SendMessage` 的實作程式碼 (現在對我們不太重要)。 如需在程式碼中移動不同方式的詳細資訊，請參閱在[偵錯工具中流覽程式碼](../../debugger/navigating-through-code-with-the-debugger.md)。
+     請注意，這次偵錯工具不會逐步執行 `SendMessage` 方法。 **F10** 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中的函式或方法 (此程式碼仍會執行)。 藉由在 **方法呼叫上按**F10`SendMessage` 鍵 (而非 **F11** 鍵)，我們略過了 `SendMessage` 的實作程式碼 (現在對我們不太重要)。 如需在程式碼中移動不同方式的詳細資訊，請參閱在[偵錯工具中流覽程式碼](../../debugger/navigating-through-code-with-the-debugger.md)。
 
 ## <a name="navigate-code-using-run-to-click"></a>使用 [執行至點選處] 來巡覽程式碼
 
-1. 在 [程式碼編輯器] 中，在 [`SendMessage`] 訊息中的 [`Console.WriteLine`] 方法上向下移動，然後將滑鼠停留在 [![執行](../../debugger/media/dbg-tour-run-to-click.png "處 runtoclick")] 按鈕，直到左邊出現綠色**執行**為止。 按鈕的工具提示會顯示「執行到這裡」。
+1. 按**F5**再次前進至中斷點。
+
+1. 在 [程式碼編輯器] 中，將滑鼠游標移至 `SendMessage` 方法中的 `Console.WriteLine` 方法上，直到您**按一下**[![執行](../../debugger/media/dbg-tour-run-to-click.png "處 runtoclick")] 按鈕的綠色回合，才會出現在左邊。 按鈕的工具提示會顯示「執行到這裡」。
 
      ![使用 [執行至] 按一下功能](../csharp/media/get-started-run-to-click.png "執行至點選處")
 
@@ -262,7 +266,7 @@ ms.locfileid: "76923216"
 
 1. 展開 `letters` 變數以顯示其包含的元素。
 
-     ![檢查 [自動變數] 視窗中的變數](../csharp/media/get-started-locals-window.png "自動變數視窗")
+     ![檢查 [區域變數] 視窗中的變數](../csharp/media/get-started-locals-window.png "本機視窗")
 
     [區域變數] 視窗會顯示位在目前[範圍](https://www.wikipedia.org/wiki/Scope_(computer_science))中的變數，即為目前執行內容。
 
@@ -284,7 +288,7 @@ ms.locfileid: "76923216"
 
     ![檢查呼叫堆疊](../csharp/media/get-started-call-stack.png "ExamineCallStack")
 
-    [呼叫堆疊] 視窗會顯示方法和函式的呼叫順序。 第一行會顯示目前的函式 (此應用程式中的 `SendMessage` 方法)。 第二行會顯示已從 `Main` 方法呼叫 `SendMessage`，依此類推。
+    [呼叫堆疊] 視窗會顯示方法和函式的呼叫順序。 第一行會顯示目前的函式 (此應用程式中的 `SendMessage` 方法)。 第二行會顯示已從 `SendMessage` 方法呼叫 `Main`，依此類推。
 
    > [!NOTE]
    > [呼叫堆疊] 視窗類似於某些 IDE (例如 Eclipse) 中的 [偵錯] 檢視方塊。
