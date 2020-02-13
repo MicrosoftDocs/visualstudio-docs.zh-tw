@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - data-science
 monikerRange: vs-2017
-ms.openlocfilehash: 38082d854a6c817503d2765c48c5b08c0bd2a5b3
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 5a09b3f78b929fd60764be36f56c0b580c7a42d7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888528"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843726"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>如何安裝 Visual Studio R 工具
 
@@ -64,7 +64,7 @@ Microsoft R Open 和 CRAN R 都允許多個並行版本。 不過，Microsoft R 
 
 ### <a name="install-the-r-tools"></a>安裝 R 工具
 
-從 [https://aka.ms/rtvs-current](https://aka.ms/rtvs-current) 下載目前 RTVS for Visual Studio 2015。 RTVS 會檢查適合的 Visual Studio 版本，並協助您安裝 R 解譯器 (若尚未安裝)。
+從 [https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe) 下載目前 RTVS for Visual Studio 2015。 RTVS 會檢查適合的 Visual Studio 版本，並協助您安裝 R 解譯器 (若尚未安裝)。
 
 > [!Note]
 > 獨立 RTVS 安裝程式只能與 Visual Studio 2015 搭配運作；與 Visual Studio 2017 搭配運作時，透過如前所述的[資料科學與分析應用程式工作負載](#install-rtvs-in-visual-studio-2017)來安裝 R 支援。
@@ -81,7 +81,7 @@ RTVS for Visual Studio 2015 會安裝在：`%ProgramFiles(x86)%\Microsoft Visual
 
 1. 請遵循網站中針對建立離線安裝的指示。
 
-1. 如果是 Visual Studio 2015，請從 [https://aka.ms/rtvs-current-zip ](https://aka.ms/rtvs-current-zip) 和 [https://aka.ms/rtvs-remote-zip ](https://aka.ms/rtvs-remote-zip)下載離線 RTVS 安裝程式。
+1. 如果是 Visual Studio 2015，請從 [https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip) 和 [https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip)下載離線 RTVS 安裝程式。
 
 1. 從離線安裝程式安裝 Visual Studio 和 RTVS。
 

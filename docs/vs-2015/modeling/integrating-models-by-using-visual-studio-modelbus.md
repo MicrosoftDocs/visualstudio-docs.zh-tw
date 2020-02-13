@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9abb8bd82f8a00c37cb76588ded8813ec984067
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 77b29fe82b3203228b194d34d82444c4b62415fe
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298897"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851509"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 整合模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "74298897"
 
 ### <a name="expose"></a>將 DSL 定義公開給模型匯流排
 
-1. 除非您已安裝 Visual Studio 模型匯流排擴充功能，否則請下載並進行安裝。 如需詳細資訊，請參閱[視覺效果和模型化 SDK](https://go.microsoft.com/fwlink/?LinkID=185579)。
+1. 除非您已安裝 Visual Studio 模型匯流排擴充功能，否則請下載並進行安裝。 如需詳細資訊，請參閱[視覺效果和模型化 SDK](https://www.visualstudio.com/)。
 
 2. 開啟 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [**啟用 Modelbus**]。
 
 3. 在對話方塊中，選擇 [**我要將此 DSL 公開給 ModelBus**]。 如果您要將這個 DSL 公開給其模型，又要讓這個 DSL 使用其他 DSL 的參考，您可以選擇兩個選項。
 
-4. 按一下 [確定]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
+4. 按一下 [ **確定**]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
 
 5. 如果您要從文字範本存取 DSL，您必須修改新專案中的 AdapterManager.tt。 如果您要從其他程式碼 (例如命令和事件處理常式) 存取 DSL，請略過這個步驟。 如需詳細資訊，請參閱[在文字模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
@@ -509,5 +509,5 @@ private const string INVALID_REF_FORMAT =
 
 - 在**DslPackage\source.extention.tt**中，會將 `|ModelBusAdapter|` 新增為 MEF 元件。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [如何：在程式碼中從檔案開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)[整合 UML 模型與其他模型和工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)如何：[在文字模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md) [新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)

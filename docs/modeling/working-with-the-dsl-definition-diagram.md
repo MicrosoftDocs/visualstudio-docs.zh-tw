@@ -11,23 +11,23 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Show Map Lines
 - Domain-Specific Language Tools, Show As Class
 - Domain-Specific Language Tools, Bring Tree Here
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e65b47baba985012dccad0c838c65d2d8bf2ef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 53bbfbca975625a8f56f7519a15ac1670b94861b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748152"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115283"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定義圖表
-@No__t_0 定義的圖表是定義網域特定語言的重要工具。 您可以將項目加入至網域模型，並定義圖表上的關聯性；也可以修改圖表配置，讓圖表更容易讀取。
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 定義的圖表是定義網域特定語言的重要工具。 您可以將項目加入至網域模型，並定義圖表上的關聯性；也可以修改圖表配置，讓圖表更容易讀取。
 
 ## <a name="the-layout-of-the-diagram"></a>圖表配置
- @No__t_0 定義圖表有兩個分割區： [**類別] 和 [關聯**性] 分割區，以及 [**圖表元素**]。 [**類別和關聯**性] 分割區會顯示網域類別、網域關聯性和繼承。 [**圖表**專案] 分割區會顯示圖形類別、連接器類別、泳道類別，以及產生的設計工具圖表。
+ [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 定義圖表有兩個分割區： [**類別] 和 [關聯**性] 分割區，以及 [**圖表元素**]。 [**類別和關聯**性] 分割區會顯示網域類別、網域關聯性和繼承。 [**圖表**專案] 分割區會顯示圖形類別、連接器類別、泳道類別，以及產生的設計工具圖表。
 
  網域類別可以出現在 [**類別] 和 [關聯**性] 分割區中的多個位置。 如果網域類別不是其他網域類別的基底類別，網域類別定義會顯示繼承樹狀結構；如果網域類別是內嵌關聯性或參考關聯性的來源，網域類別定義會顯示關聯性樹狀結構。 網域類別預留位置會顯示為內嵌關聯性或參考關聯性的目標。 根據預設，會顯示預留位置專案，並折迭 [**定義域屬性**] 區間。 這些項目不會顯示繼承，也不會顯示內嵌關聯性或參考關聯性。
 

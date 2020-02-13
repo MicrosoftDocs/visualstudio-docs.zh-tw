@@ -9,17 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d808fce2783d444071ea1a7976d26e3c5bf02eed
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a15767454c83604de2844e4c0a9f2e121a9a1a4f
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297457"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846128"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>整合 XML 常值與 XML 結構描述總管
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Basic 支援 XML 常值，這表示您可以直接將 XML 片段併入您的 Visual Basic 程式碼中。 如需詳細資訊，請參閱[XML 常值總覽](https://go.microsoft.com/fwlink/?LinkId=140325)。
+Visual Basic 支援 XML 常值，這表示您可以直接將 XML 片段併入您的 Visual Basic 程式碼中。 如需詳細資訊，請參閱[XML 常值總覽](https://msdn.microsoft.com/library/bb384629.aspx)。
 
  如果 Visual Basic 專案中的 XSD 檔包含 XML 常值，您就可以在 XML 結構描述總管中檢視 XML 結構描述集。 若要查看與 XML 常值相關聯的架構集，請以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的 XML 節點，然後選取 [**在架構瀏覽器中顯示**]。
 
@@ -31,5 +31,5 @@ Visual Basic 支援 XML 常值，這表示您可以直接將 XML 片段併入您
 
  Visual Studio 2008 SP1 已引入此功能。 若要觀看詳細說明這項功能的訪談，請參閱[Channel 9 訪談： Visual Studio 2008 SP1 中的 XML 架構瀏覽器](https://channel9.msdn.com/Blogs/funkyonex/XML-Schema-Explorer-in-Visual-Studio-2008-SP1)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [如何：搭配使用 XML 結構描述設計工具和 XML 常值](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)

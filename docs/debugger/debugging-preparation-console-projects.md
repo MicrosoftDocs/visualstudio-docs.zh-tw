@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e92e27b123102cb45069c47ebf9de3971039801d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738138"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916278"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>調試準備：主控台專案（C#、 C++、Visual Basic、 F#）
 
-準備偵錯工具主控台專案類似于準備進行 Windows 專案的 debug，還有一些額外的考慮，例如設定命令列引數，以及如何暫停應用程式以進行調試。 如需詳細資訊，請參閱 < [Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)，和[偵錯準備： Windows Forms 應用程式 (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：
+準備偵錯工具主控台專案類似于準備進行 Windows 專案的 debug，還有一些額外的考慮，例如設定命令列引數，以及如何暫停應用程式以進行調試。 如需詳細資訊，請參閱 < [Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)，和[偵錯準備： Windows Forms 應用程式 (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：
 
 - C#、Visual Basic 和F#主控台應用程式
 
@@ -49,7 +49,7 @@ ms.locfileid: "72738138"
 
 - 在您的程式碼中設定中斷點，並啟動您的應用程式。
 
-- 使用**F10**啟動您的應用程式（**Debug**  >  不進入函式）或**F11** （**debug**  > **逐步** **執行），** 然後使用其他選項（例如 [執行] 按一下）**來**流覽程式碼。
+- 使用**F10**啟動您的應用程式（**Debug** > 不進入函式）或**F11** （**debug** > **逐步** **執行），** 然後使用其他選項（例如 [執行] 按一下）**來**流覽程式碼。
 
 - 在 [程式碼編輯器] 中，以滑鼠右鍵按一下線條，然後選取 [**執行至游標處**]。
 

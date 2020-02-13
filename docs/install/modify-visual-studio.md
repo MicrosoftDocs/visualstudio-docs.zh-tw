@@ -2,8 +2,7 @@
 title: 修改 Visual Studio 2017
 titleSuffix: ''
 description: 了解如何逐步修改 Visual Studio。
-ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 12/19/2019
+ms.date: 02/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -11,19 +10,19 @@ helpviewer_keywords:
 - changing Visual Studio
 - customize Visual Studio
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 554b7a01ee4a7a8834c86c8a2c7e15b9cf331cf5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565834"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125347"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>透過新增或移除工作負載和元件來修改 Visual Studio
 
@@ -39,7 +38,7 @@ ms.locfileid: "75565834"
 
 ::: moniker-end
 
-方式如下：
+方法如下。
 
 >[!IMPORTANT]
 >若要安裝、更新或修改 Visual Studio，您必須以具有系統管理權限的帳戶登入。 如需詳細資訊，請參閱[使用者權限和 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
@@ -125,6 +124,9 @@ ms.locfileid: "75565834"
 
  工作負載包含您使用之程式設計語言或平台所需的功能。 您可以使用工作負載來修改 Visual Studio，以便在需要時支援您要執行的工作。
 
+ > [!TIP]
+>如需開發所需之工具和元件配套的詳細資訊，請參閱[Visual Studio 工作負載](https://visualstudio.microsoft.com/vs/#workloads)。
+
 1. 在 [Visual Studio 安裝程式] 中，選擇 [**工作負載**] 索引標籤，然後選取或取消選取您想要的工作負載。
 
     ![Visual Studio 2019 安裝程式對話方塊](media/vs-2019/vs-installer-modify-workloads.png "選擇 Visual Studio 2019 中的工作負載")
@@ -145,13 +147,16 @@ ms.locfileid: "75565834"
 
 如果您不想要使用工作負載來自訂您的 Visual Studio 安裝，請選擇 Visual Studio 安裝程式中的 [**個別元件**] 索引標籤，選取您要的元件，然後依照提示進行。
 
+>[!TIP]
+> 如需 SQL Server Data Tools （SSDT）元件的相關資訊，請參閱[下載並安裝 Visual Studio 的 SSDT](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15)。
+
 ## <a name="modify-language-packs"></a>修改語言套件
 
 根據預設，安裝程式會在第一次執行時符合作業系統的語言。 不過，您可以隨時視需要變更語言。 若要這麼做，請選擇 Visual Studio 安裝程式中的 **語言套件** 索引標籤，選取您偏好的語言，然後依照提示進行。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 工作負載與元件識別碼清單](workload-and-component-ids.md)
 * [更新 Visual Studio](update-visual-studio.md)

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
+ms.sourcegitcommit: 5806d463780368515e59c2614ed9cfaaa4ab4b91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888636"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77071943"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行單元測試
 
@@ -75,7 +75,7 @@ describe('Test Suite 1', function() {
 ![測試總管](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> 請勿在 *tsconfig.json* 中使用 `outdir` 或 `outfile` 選項，因為 [測試總管] 無法在 TypeScript 檔案中尋找您的單元測試。
+> 請勿在 `outdir`tsconfig.json`outfile` 中使用 *或* 選項，因為 [測試總管] 無法在 TypeScript 檔案中尋找您的單元測試。
 
 ## <a name="run-tests"></a>執行測試
 
@@ -99,7 +99,7 @@ describe('Test Suite 1', function() {
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
 ```
 
-這個命令會顯示與下列類似的輸出：
+此命令會顯示如下輸出：
 
 ```
 Microsoft (R) Test Execution Command Line Tool Version 15.5.0
@@ -173,3 +173,5 @@ Test execution time: 1.5731 Seconds
     <GenerateProgramFile>false</GenerateProgramFile>
 </PropertyGroup>
 ```
+
+某些測試架構可能需要額外的 npm 封裝以進行測試偵測。 例如，jest 需要 jest 編輯器-支援 npm 套件。 如有需要，請參閱特定架構的檔。

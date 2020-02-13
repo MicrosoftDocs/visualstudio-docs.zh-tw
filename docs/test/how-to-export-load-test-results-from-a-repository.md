@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Load Test Results Repository
 - load test results, exporting
 ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 86453ef9aa92c63ae4e96566fd08aa328b71b50e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f72dbd687bc9177cd4cfd36416acb23445d30c8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653541"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589041"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>如何：從存放庫匯出負載測試結果
 
@@ -34,9 +34,9 @@ ms.locfileid: "72653541"
 
      [開啟和管理負載測試結果] 對話方塊隨即出現。
 
-3. 在 [輸入控制器名稱以尋找負載測試結果] 中，選取控制器。 選取 [\<本機 - 無控制器>]，即可存取儲存在本機的結果。
+3. 在 [輸入控制器名稱以尋找負載測試結果] 中，選取控制器。 選取 [**本機 - 無控制器>]\<** ，即可存取儲存在本機的結果。
 
-4. 在 [顯示下列負載測試的結果] 中，選取您要檢視其結果的負載測試。 選取 [\<顯示所有測試的結果>]，即可查看所有測試的所有結果。
+4. 在 [顯示下列負載測試的結果] 中，選取您要檢視其結果的負載測試。 選取 [**顯示所有測試的結果>]\<** ，即可查看所有測試的所有結果。
 
      如果有可用的負載測試結果，它們會出現在 [負載測試結果] 清單中。 資料行包括 [時間]、[持續期間]、[使用者]、[結果]、[測試] 和 [描述]。 [測試] 包含測試的名稱，而 [描述] 則包含執行測試之前所新增的選擇性描述。 [描述] 資料行顯示的是在此測試結果之 [分析註解] 中輸入的簡短描述。
 

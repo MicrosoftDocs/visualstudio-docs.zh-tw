@@ -14,21 +14,21 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 96224b522b17ff9da520386d56d4fae7a04bd981
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.openlocfilehash: d072f54dfe351d54e3e115dca7a91bec77fbb9e6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144771"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844922"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>在模擬器中執行 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程式，可以模擬 Windows 市集應用程式。 您可以在開發電腦上執行應用程式，並模擬常見的觸控和旋轉事件。 您也可以選擇要模擬的實體螢幕大小和解析度，以及模擬網路連接屬性。  
+Windows 市集應用程式適用的 Visual Studio 模擬器是桌面應用程式，其可模擬 Windows 市集應用程式。 您可以在開發電腦上執行應用程式，並模擬常見的觸控和旋轉事件。 您也可以選擇要模擬的實體螢幕大小和解析度，以及模擬網路連接屬性。  
   
- 模擬器為您提供設計、開發、偵錯與測試 Windows 市集應用程式的環境。 不過，在您將應用程式發行至 Windows 市集之前，請先在實際裝置上測試您的應用程式。  
+ 模擬器為您提供設計、開發、偵錯與測試 Windows 市集應用程式的環境。 但在您將應用程式發行至 Windows 市集之前，請先在實際裝置上測試您的應用程式。  
   
- Windows 市集應用程式適用的 Visual Studio 模擬器無法在本機電腦的隔離環境中執行。 因此，發生在模擬器中的錯誤，例如無法修復的全系統錯誤，也會影響到整部電腦。  
+ Windows 市集應用程式適用的 Visual Studio 模擬器，無法在本機電腦的隔離環境中執行。 因此，發生在模擬器中的錯誤，例如無法修復的全系統錯誤，也會影響到整部電腦。  
   
  如需 Windows Phone 資訊，請參閱 [Run Windows Phone apps in the emulator](../debugger/run-windows-phone-apps-in-the-emulator.md) 。  
   
@@ -45,7 +45,7 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
   
 - ![滑鼠模式按鈕](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn")滑鼠模式：將互動模式設定為滑鼠手勢。 滑鼠動作包括按一下、按兩下和拖曳。  
   
-- [![啟動觸控模擬] 按鈕](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn")啟動觸控模擬：將互動模式設定為單一手指的觸控手勢。 單指事件包括點選，拖曳和撥動。  
+- [![啟動觸控模擬] 按鈕](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn")啟動觸控模擬：將互動模式設定為單一手指的觸控手勢。 單指事件包括點選、拖曳及撥動。  
   
      模擬器![one 手指目標](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger")單一靶心圖表標表示模擬器中的事件位置。 使用滑鼠可以定位指標。  
   
@@ -56,7 +56,7 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
   
 - ![模擬器兩個手指目標](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
 
-  - 雙目標圖示表示裝置螢幕上的兩指位置。  
+  - 雙目標圖示表示裝置螢幕上兩指的位置。  
 
   - 移動滑鼠可以將圖示定位至裝置螢幕上的物件。  
 
@@ -80,30 +80,30 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
   - 按住左鍵並向前旋轉滑鼠滾輪 (遠離您的方向) 可以順時針旋轉物件。  
 
 ## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> 啟用或停用最上層顯示模式  
- 您可以將模擬器視窗設定為永遠在其他視窗的最上層。 [切換最上層的視窗] 按鈕可啟用或停用模擬器視窗的 [最上層顯示] 模式。  
+ 您可以將模擬器視窗設定為一律在其他視窗的上層。 [切換最上層的視窗] 按鈕可啟用或停用模擬器視窗的 [最上層顯示] 模式。  
   
 ## <a name="BKMK_Change_the_device_orientation"></a> 變更裝置方向  
  將模擬器往任意方向旋轉 90 度，即可在縱向或橫向之間切換裝置方向。  
   
 > [!NOTE]
-> 模擬器不接受專案的 [DisplayProperties.AutoRotationPreferences](https://go.microsoft.com/fwlink/?LinkId=249460) 屬性。 例如，如果您的專案將方向設定為 `Landscape`，接著您將模擬器旋轉為縱向方向，則模擬器顯示影像也會據以旋轉並調整大小。 在實際裝置上測試這些設定。  
+> 模擬器不接受專案的 [DisplayProperties.AutoRotationPreferences](https://msdn.microsoft.com/library/windows/apps/windows.graphics.display.displayproperties.autorotationpreferences.aspx) 屬性。 例如，如果您的專案將方向設定為 `Landscape`，接著您將模擬器旋轉為縱向方向，則模擬器顯示影像也會據以旋轉並調整大小。 在實際裝置上測試這些設定。  
   
 > [!NOTE]
-> 如果因為旋轉模擬器而使得模擬器的某一邊大於所顯示螢幕的同一邊，模擬器會自動調整大小以便符合螢幕。 如果再次旋轉模擬器，模擬器不會重新調整回其原始大小。  
+> 如果因為旋轉模擬器而使得模擬器的某一邊大於所顯示螢幕的同一邊，模擬器會自動調整大小以符合螢幕大小。 如果再次旋轉模擬器，模擬器不會重新調整回其原始大小。  
   
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> 變更模擬的螢幕大小和解析度  
  若要變更模擬的螢幕大小與解析度，請從調色盤上選擇 [變更解析度] 按鈕，並從清單中選擇新的大小與解析度。  
   
- 螢幕大小和解析度列示為 *螢幕寬度英吋，像素 X 像素高度*。 請注意，螢幕大小和解析度都是模擬的。 模擬器上的位置座標會轉換為已選取裝置大小和解析度的座標。  
+ 螢幕大小和解析度列示為 *螢幕寬度英吋，像素 X 像素高度*。 請注意，螢幕大小和解析度都是模擬的。 模擬器上的位置座標會轉換為所選裝置大小和解析度的座標。  
   
 > [!NOTE]
-> 您可以將點陣圖影像的已調整版本儲存在您的應用程式中，Windows 會載入目前比例的正確影像。 如需詳細資訊，請參閱 [回應式設計 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)。 不過，如果您變更了模擬器解析度，因此 Windows 選擇了不同的影像來符合解析度，則您必須停止並重新開始偵錯工作階段，才能檢視新影像。  
+> 您可以將點陣圖影像已調整的版本儲存在您的應用程式中，Windows 會載入目前比例的正確影像。 如需詳細資訊，請參閱 [回應式設計 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)。 不過，如果您變更了模擬器解析度，而 Windows 因此選擇了不同的影像以符合該解析度，您就必須停止並重新開始偵錯工作階段，才能檢視新的影像。  
   
 ## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> 擷取應用程式的螢幕擷取畫面以提交至 Windows 市集  
  當您提交應用程式至 Windows 應用程式市集時，必須包含該應用程式的螢幕擷取畫面。  
   
 > [!NOTE]
-> 螢幕擷取畫面會以模擬器的目前解析度儲存。 若要變更解析度，請選擇 [ **變更解析度** ] 按鈕。  
+> 螢幕擷取畫面會以模擬器目前的解析度儲存。 若要變更解析度，請選擇 [ **變更解析度** ] 按鈕。  
   
 - 若要從模擬器建立您的應用程式的螢幕擷取畫面，請選擇 [ **擷取螢幕擷取畫面到剪貼簿** ] 按鈕。  
   
@@ -112,7 +112,7 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
      ![螢幕擷取畫面設定內容功能表](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ## <a name="BKMK_Simulate_network_connection_properties"></a> 模擬網路連接屬性  
- 您可以藉由維護網路連接成本或數據傳輸方案狀態變更的感知，並讓您的應用程式使用此資訊來避免因為漫遊或超出指定的資料傳輸限制而產生額外費用，協助應用程式使用者管理計量付費網路連接的費用。 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API 可讓您回應簽署的 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 和 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 事件。 請參閱 [快速入門：管理計量付費網路費用限制](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
+ 您可以藉由持續了解網路連線成本或數據傳輸方案狀態的變更，以及讓您的應用程式能使用此資訊來避免因為漫遊或超出指定的資料傳輸限制而產生額外費用的方式，協助應用程式使用者管理連線計量付費網路的費用。 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API 可讓您回應簽署的 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 和 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 事件。 請參閱 [快速入門：管理計量付費網路費用限制](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
   
  若要偵錯或測試您的網路成本感知程式碼，模擬器可以模擬透過 [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 傳回的 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)物件所公開之網路屬性。  
   

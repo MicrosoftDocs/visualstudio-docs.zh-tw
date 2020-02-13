@@ -14,12 +14,12 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59ef6ae6b042b1616997821febe156ef5cac3b7f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 27dce16d9fe02063eae935af96c26184285e583d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299715"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850371"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能，或將新功能整�
  您可以在[VISUAL STUDIO Sdk 參考](../extensibility/visual-studio-sdk-reference.md)中找到 VISUAL STUDIO sdk API 參考。  
   
 ## <a name="visual-studio-sdk-samples"></a>Visual Studio SDK 範例  
- 您可以在[Visual Studio 範例](https://aka.ms/vs2015sdksamples)中找到 GitHub 上的 VS SDK 擴充功能的開放原始碼範例。 此 GitHub 存放庫包含的範例會說明 Visual Studio 中的各種可擴充功能。  
+ 您可以在[Visual Studio 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)中找到 GitHub 上的 VS SDK 擴充功能的開放原始碼範例。 此 GitHub 存放庫包含的範例會說明 Visual Studio 中的各種可擴充功能。  
   
 ## <a name="other-visual-studio-sdk-resources"></a>其他 Visual Studio SDK 資源  
  如果您對 VSSDK 有任何疑問，或想要分享開發延伸模組的經驗，您可以使用 Visual Studio 擴充性[論壇](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)或[ExtendVS 群組聊天](https://gitter.im/Microsoft/extendvs)。  
@@ -75,7 +75,7 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能，或將新功能整�
   
 - [擴充 Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能   
  [如何：將擴充性專案遷移至 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
  [常見問題：將增益集轉換成 VSPackage 擴充功能](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   

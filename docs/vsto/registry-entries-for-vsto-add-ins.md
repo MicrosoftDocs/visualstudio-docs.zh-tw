@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
-ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
+ms.openlocfilehash: 6f814aabc4a6de4806fd419f16599758799c7538
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955045"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919124"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 增益集的登錄專案
   部署使用 Visual Studio 建立的 VSTO 增益集時，您必須建立一組特定的登錄項目。 這些登錄項目可提供讓 Microsoft Office 應用程式探索及載入 VSTO 增益集的資訊。
@@ -62,13 +62,13 @@ ms.locfileid: "74955045"
 >
 >如果安裝程式是以目前的使用者為目標，則不需要將它安裝到 WOW6432Node，因為 HKEY_CURRENT_USER 的 \Software 路徑是共用的。
 >
->如需詳細資訊，請參閱[Registry 中的32位和64位應用程式資料](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
+>如需詳細資訊，請參閱[Registry 中的32位和64位應用程式資料](/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
 
  下表列出此登錄機碼下的項目。
 
 |進入|類型|{2&gt;值&lt;2}|
 |-----------|----------|-----------|
-|**說明**|REG_SZ|必要項。 VSTO 增益集的簡短描述。<br /><br /> 當使用者在 Microsoft Office 應用程式之 [選項] 對話方塊的 [增益集] 窗格中選取 VSTO 增益集時，即會顯示這個描述。|
+|**描述**|REG_SZ|必要項。 VSTO 增益集的簡短描述。<br /><br /> 當使用者在 Microsoft Office 應用程式之 [選項] 對話方塊的 [增益集] 窗格中選取 VSTO 增益集時，即會顯示這個描述。|
 |**FriendlyName**|REG_SZ|必要項。 這是 Microsoft Office 應用程式的 [COM 增益集] 對話方塊中，所顯示之 VSTO 增益集的描述性名稱。 預設值為 VSTO 增益集 ID。|
 |**LoadBehavior**|REG_DWORD|必要項。 可指定應用程式何時嘗試載入 VSTO 增益集和 VSTO 增益集目前狀態 (載入或卸載) 的值。<br /><br /> 這個項目預設會設定為 3，指定在啟動時載入 VSTO 增益集。 如需詳細資訊，請參閱[LoadBehavior values](#LoadBehavior)。 **注意：** 如果使用者停用 VSTO 增益集，該動作會修改**HKEY_CURRENT_USER**登錄 hive 中的**LoadBehavior**值。 針對每個使用者，HKEY_CURRENT_USER hive 中**LoadBehavior**值的值會覆寫**HKEY_LOCAL_MACHINE** hive 中定義的預設**LoadBehavior** 。|
 |**Manifest**|REG_SZ|必要項。 VSTO 增益集部署資訊清單的完整路徑。 路徑可以是本機電腦上的位置、網路共用 (UNC) 或 Web 伺服器 (HTTP)。<br /><br /> 如果使用 Windows Installer 來部署解決方案，您必須在 **資訊清單** 路徑前加上前置詞 **file:///** 。 您也必須將字串 **&#124;vstolocal** （也就是後面接著**vstolocal**的 **&#124;** 管道字元）附加到此路徑的結尾。 如此可以確保解決方案是從安裝資料夾載入，而不是從 ClickOnce 快取載入。 如需詳細資訊，請參閱[使用 Windows Installer 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。 **注意：** 當您在開發電腦上建立 VSTO 增益集時，Visual Studio 會自動將 **&#124;vstolocal**字串附加至這個登錄專案。|

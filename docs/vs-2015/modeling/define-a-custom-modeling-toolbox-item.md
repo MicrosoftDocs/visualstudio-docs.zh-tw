@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299297"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851511"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>定義自訂模型工具箱項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,7 +129,7 @@ ms.locfileid: "74299297"
 |---------------|-------------|
 |displayName|此工具箱項目的名稱。|
 |tabName|工作箱索引標籤，其中應顯示該項目。 您可以針對這類圖表指定一般索引標籤的名稱，或是不同的名稱。|
-|image|點陣圖（ **.bmp**）檔案的位置，其高度和寬度必須為16，而色彩深度為24位。|
+|影像|點陣圖（ **.bmp**）檔案的位置，其高度和寬度必須為16，而色彩深度為24位。|
 |f1Keyword|尋找說明主題的關鍵字。|
 |tooltip (工具提示)|此工具的工具提示。|
 
@@ -139,7 +139,7 @@ ms.locfileid: "74299297"
 > 如果您嘗試單獨使用圖表檔之後開始使用 .tbxinfo 檔，可能會發現該工具箱內同時包含舊版和新版的工具箱項目。 如果此 .tbxinfo 檔中圖表檔的名稱輸入錯誤，也會發生這種情況。 如果發生這種情況，請在 [工具箱] 的快捷方式功能表上選擇 [**重設工具箱**]。 自訂的工具箱項目將會消失。 重新啟動 Visual Studio，然後正確的自訂項目將會出現。
 
 ## <a name="Extension"></a>如何散發 Visual Studio 延伸模組中的工具箱專案
- 您可以將工具箱專案封裝成 Visual Studio 延伸模組（VSIX），以將它們散發給其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用者。 您可以將命令、設定檔和其他擴充功能封裝到同一個 VSIX 檔。 如需詳細資訊，請參閱[部署 Visual Studio 延伸](https://go.microsoft.com/fwlink/?LinkId=160780)模組。
+ 您可以將工具箱專案封裝成 Visual Studio 延伸模組（VSIX），以將它們散發給其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用者。 您可以將命令、設定檔和其他擴充功能封裝到同一個 VSIX 檔。 如需詳細資訊，請參閱[部署 Visual Studio 延伸](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)模組。
 
  通常建置 Visual Studio 擴充功能的方式為使用 VSIX 專案範本。 若要執行這項操作，您必須已安裝 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]。
 
@@ -155,7 +155,7 @@ ms.locfileid: "74299297"
 
      定義新的 Visual Studio 擴充功能專案。
 
-    1. 在 [檔案] 功能表，選擇 [新增]、[專案]。
+    1. 在 [檔案] 功能表上，依序選擇 [新增]和 [專案]。
 
     2. 在 [**新增專案**] 對話方塊的 [**已安裝的範本**] 底下，選擇 [**視覺效果C#**  **、擴充性、** **VSIX 專案**]。
 
@@ -170,7 +170,7 @@ ms.locfileid: "74299297"
 
      **複製到輸出目錄** = **一律複製**
 
-      = **內容**的**組建動作**
+     **建置動作** = **內容**
 
      **包含在 VSIX** = **true**
 
@@ -220,7 +220,7 @@ ms.locfileid: "74299297"
 
 3. 將每一個額外的組件放入資料夾，且該資料夾以此語言的文化特性代碼命名。 例如，將法文版的元件放在名為**fr**的資料夾內。
 
-4. 您應該使用中性文化特性代碼，通常為兩個字母，而不是特定文化特性 (例如 `fr-CA`)。 如需文化特性代碼的詳細資訊，請參閱[cultureinfo.getcultures 方法](https://go.microsoft.com/fwlink/?LinkId=160782)，它會提供完整的文化特性代碼清單。
+4. 您應該使用中性文化特性代碼，通常為兩個字母，而不是特定文化特性 (例如 `fr-CA`)。 如需文化特性代碼的詳細資訊，請參閱[cultureinfo.getcultures 方法](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx)，它會提供完整的文化特性代碼清單。
 
 5. 建置並散發該 Visual Studio 擴充功能。
 
@@ -233,5 +233,5 @@ ms.locfileid: "74299297"
 
  此外，如果您執行 [**重設工具箱**] 命令，您的自訂工具將會消失。 不過，在您重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 之後，這些工具將再次出現。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[定義設定檔以擴充 uml](../modeling/define-a-profile-to-extend-uml.md) [在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)[定義 uml 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)

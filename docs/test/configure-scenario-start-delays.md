@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios, start delays
 ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d6144312741b2ef75d0b06979495571d97baf0b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f962306462538717df694d3bc47719fe31b1e1fe
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665179"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111471"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>在負載測試中設定情節啟動延遲
 
@@ -81,7 +81,7 @@ ms.locfileid: "72665179"
 
      在 [準備期間停用] 屬性中選取 [True] 或 [False]。
 
-4. 完成變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [準備期間停用] 值來執行負載測試。
+4. 屬性變更完成之後，選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [準備期間停用] 值來執行負載測試。
 
 ## <a name="see-also"></a>請參閱
 

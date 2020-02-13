@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a077173a0d095ee10cc1fa16da3db1f3744dafa8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301160"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944255"
 ---
 # <a name="installing-an-isolated-shell-application"></a>安裝獨立模式 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "74301160"
   
 - 建立安裝程式啟動載入器。  
   
-  本檔中的所有範例程式碼都來自于 [ [Shell 部署範例](https://go.microsoft.com/fwlink/?LinkId=262245)]，您可以從 MSDN 網站上的程式碼庫下載。 此範例會顯示執行上述每個步驟的結果。  
+  本檔中的所有範例程式碼都來自于 [ [Shell 部署範例](https://code.msdn.microsoft.com/Sample-setup-program-for-81ca73f7)]，您可以從 MSDN 網站上的程式碼庫下載。 此範例會顯示執行上述每個步驟的結果。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>必要條件：  
  若要執行本主題所述的程式，您的電腦上必須安裝下列工具。  
   
 - Visual Studio SDK  
   
-- [WINDOWS INSTALLER XML 工具](https://go.microsoft.com/fwlink/?LinkId=82720)組版本3。6  
+- [WINDOWS INSTALLER XML 工具](https://documentation.help/WiX-Toolset/index.html/)組版本3。6  
   
   此範例也需要 Microsoft 視覺效果和模型化 SDK，而不是所有的 shell 都需要。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "74301160"
 2. 針對每個包含 VSIX 資訊清單的專案，編輯組建工作，將內容輸出至 MSI 將安裝的位置。 在組建輸出中包含 VSIX 資訊清單，但不要建立 .vsix 檔案。  
   
 ## <a name="creating-an-msi-for-your-shell"></a>建立命令介面的 MSI  
- 若要建立 MSI 套件，建議您使用[WINDOWS INSTALLER XML 工具](https://go.microsoft.com/fwlink/?LinkId=82720)組，因為它比標準安裝專案提供更大的彈性。  
+ 若要建立 MSI 套件，建議您使用[WINDOWS INSTALLER XML 工具](https://documentation.help/WiX-Toolset/index.html)組，因為它比標準安裝專案提供更大的彈性。  
   
  在 wsmanconfig.wxs 專案檔案中，設定偵測區塊和 Shell 元件的版面配置。  
   
@@ -368,5 +368,5 @@ boutiqueInstallCmd.Format(cmdLine, msi, log);
 dwResult = ExecCmd(boutiqueInstallCmd, FALSE);  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說︰建立基本的 Isolated Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

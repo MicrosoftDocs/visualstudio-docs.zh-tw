@@ -6,17 +6,17 @@ helpviewer_keywords:
 - startup projects, setting multiple startup projects
 ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
 ms.technology: vs-ide-compile
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5cfa0b7a94b4bec07e313ce7d6e031f9e1a2a56
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a1eec02adf0a643d7ac7e0da8a75da5328c601b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588339"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115148"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>如何：設定多個啟動專案
 
@@ -34,6 +34,6 @@ Visual Studio 可讓您指定在啟動偵錯工具時應執行的多個專案。
 
 ## <a name="see-also"></a>請參閱
 
-- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
 - [建立解決方案及專案](../ide/creating-solutions-and-projects.md)
 - [管理專案及解決方案屬性](../ide/managing-project-and-solution-properties.md)

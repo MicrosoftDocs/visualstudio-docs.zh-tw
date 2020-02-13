@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 392afc210798611442a12d5f51f150ddc79f85ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 293e7dd99ea2c4d440153797fcc5e9a15083e93c
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408368"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542603"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>逐步解說：在 Visual Basic 中撰寫視覺化檢視
 本逐步解說顯示如何使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 撰寫簡易的視覺化檢視。 您在本逐步解說中建立的視覺化檢視會使用 Windows Form 訊息方塊顯示字串的內容。 這個簡易字串視覺化檢視是一個基本範例，示範如何建立更適用專案之其他資料型別的視覺化檢視。
@@ -39,13 +39,13 @@ ms.locfileid: "63408368"
 1. 建立新的類別庫專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 型別**Ctrl + Q**來開啟 搜尋 方塊中，輸入**visual basic**，選擇 **範本**，然後選擇 **建立新的類別庫 (.NET Standard)**. 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 輸入**Ctrl + Q**開啟 [搜尋] 方塊，輸入**visual basic**，選擇 [**範本**]，然後選擇 [**建立新的類別庫（.NET Framework）** ]。 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在左窗格中**新的專案**對話方塊的  **Visual Basic**，選擇  **.NET Standard**，然後在中間窗格選擇**類別程式庫 (.NET標準）**。
+    從頂端功能表列中，選擇 [檔案] >  [新增] >  [專案]。 在 [**新增專案**] 對話方塊的左窗格中，選擇 [ **Visual Basic**] 底下的 [ **.NET Standard**]，然後在中間窗格中選擇 [**類別庫（.NET Standard）** ]。
     ::: moniker-end
 
-2. 輸入適當的名稱，為類別庫，例如`MyFirstVisualizer`，然後按一下**建立**或是**確定**。
+2. 為類別庫輸入適當的名稱，例如 [`MyFirstVisualizer`]，然後按一下 [**建立** **] 或 [確定]** 。
 
    建立類別庫之後，必須加入 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的參考，如此您才能使用這個位置中定義的類別。 但請先為專案提供一個有意義的名稱。
 
@@ -56,15 +56,15 @@ ms.locfileid: "63408368"
 2. 將 Class1.vb 變更成有意義的名稱，例如 DebuggerSide.vb。
 
    > [!NOTE]
-   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動變更 DebuggerSide.vb 中的類別宣告，以符合新的檔案名稱。
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動變更 Debuggerside.vb 中的類別宣告，以符合新的檔案名。
 
 3. 在 [方案總管] 中，以滑鼠右鍵按一下 [My First Visualizer]，然後在捷徑功能表上按一下 [新增參考]。
 
-4. 在 **加入參考**對話方塊的 **瀏覽**索引標籤上，選取**瀏覽**並尋找 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
+4. 在 [**加入參考**] 對話方塊的 [**流覽**] 索引標籤上，選取 **[流覽**]，然後尋找 VisualStudio. microsoft.visualstudio.debuggervisualizers.dll .dll。
 
-    您可以找到在 DLL  *\<Visual Studio 安裝目錄 > \Common7\IDE\PublicAssemblies* Visual Studio 的安裝目錄的子目錄。
+    您可以在 Visual Studio 安裝目錄的 *\<Visual Studio 安裝目錄 > \Common7\IDE\PublicAssemblies*子目錄中找到此 DLL。
 
-5. 按一下 [確定] 。
+5. 按一下 [ **確定**]。
 
 6. 在 DebuggerSide.vb 中，將下列陳述式加入至 `Imports` 陳述式：
 
@@ -90,7 +90,7 @@ ms.locfileid: "63408368"
    Inherits DialogDebuggerVisualizer
    ```
 
-   `DialogDebuggerVisualizer` 含有一個您必須覆寫的抽象方法 `Show`。
+   `DialogDebuggerVisualizer` 有一個您必須覆寫的抽象方法，`Show`。
 
 ### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>若要覆寫 DialogDebuggerVisualizer.Show 方法
 
@@ -108,11 +108,11 @@ ms.locfileid: "63408368"
 
 1. 在 [方案總管]中，以滑鼠右鍵按一下 [參考]，並從捷徑功能表中按一下 [新增參考]。
 
-2. 在 **加入參考**對話方塊的 **瀏覽**索引標籤上，選取**瀏覽**，並尋找 System.Windows.Forms.DLL。
+2. 在 [**加入參考**] 對話方塊的 [**流覽**] 索引標籤上，選取 **[流覽**]，然後尋找 [system.web]。
 
-    您可以找到在 DLL *C:\Windows\Microsoft.NET\Framework\v4.0.30319*。
+    您可以在*C:\Windows\Microsoft.NET\Framework\v4.0.30319*中找到此 DLL。
 
-3. 按一下 [確定] 。
+3. 按一下 [ **確定**]。
 
 4. 在 DebuggerSide.cs 中，將下列陳述式加入至 `Imports` 陳述式：
 
@@ -168,16 +168,16 @@ ms.locfileid: "63408368"
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>若要將主控台應用程式專案加入至方案
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇**新增**，然後按一下**新的專案**。
+1. 在方案總管中，以滑鼠右鍵按一下方案，選擇 [**加入**]，然後按一下 [**新增專案**]。
 
     ::: moniker range=">=vs-2019"
-    在 [搜尋] 方塊中，輸入**visual basic**，選擇**範本**，然後選擇**建立新的主控台應用程式 (.NET Framework)**。 在出現的對話方塊中選擇 [建立]。
+    在搜尋方塊中，輸入**visual basic**，選擇 [**範本**]，然後選擇 [**建立新的主控台應用程式（.NET Framework）** ]。 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊左窗格的 [Visual Basic] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。
+    從頂端功能表列中，選擇 [檔案] >  [新增] >  [專案]。 在 [新增專案] 對話方塊左窗格的 [Visual Basic] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。
     ::: moniker-end
 
-2. 輸入適當的名稱，為類別庫，例如`MyTestConsole`，然後按一下**建立**或是**確定**。
+2. 為類別庫輸入適當的名稱，例如 [`MyTestConsole`]，然後按一下 [**建立** **] 或 [確定]** 。
 
    此時，你必須加入必要的參考，如此 MyTestConsole 才能呼叫 MyFirstVisualizer。
 
@@ -185,15 +185,15 @@ ms.locfileid: "63408368"
 
 1. 在 [方案總管] 中以滑鼠右鍵按一下 [MyTestConsole]，然後在捷徑功能表中按一下 [新增參考]。
 
-2. 在 **加入參考**對話方塊的 **瀏覽**索引標籤上，按一下 microsoft.visualstudio.debuggervisualizers。
+2. 在 [**加入參考**] 對話方塊的 [**流覽**] 索引標籤上，按一下 [VisualStudio microsoft.visualstudio.debuggervisualizers.dll]。
 
-3. 按一下 [確定] 。
+3. 按一下 [ **確定**]。
 
 4. 以滑鼠右鍵按一下 [MyTestConsole]，然後再次按一下 [新增參考]。
 
 5. 在 [新增參考] 對話方塊中，按一下 [專案] 索引標籤，然後選取 [MyFirstVisualizer]。
 
-6. 按一下 [確定] 。
+6. 按一下 [ **確定**]。
 
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>完成 Test Harness 並測試視覺化檢閱
  現在，您就可以加入程式碼來完成測試載入器。
@@ -206,7 +206,7 @@ ms.locfileid: "63408368"
 
     請注意，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動變更 TestConsole.vb 中的類別宣告，以符合新的檔案名稱。
 
-3. 在 Testconsole.vb。 vb，新增下列`Imports`陳述式：
+3. 在 Testconsole.vb 中。 vb，加入下列 `Imports` 語句：
 
    ```vb
    Imports MyFirstVisualizer
@@ -231,9 +231,9 @@ ms.locfileid: "63408368"
 
    恭喜您！ 您已完成建置和測試第一個視覺化檢視。
 
-   如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用視覺化檢閱，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢閱。 如需詳細資訊，請參閱[如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)。
+   如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用視覺化檢閱，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢閱。 如需詳細資訊，請參閱[如何：安裝視覺化](../debugger/how-to-install-a-visualizer.md)程式。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [視覺化檢視架構](../debugger/visualizer-architecture.md)
 - [如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)

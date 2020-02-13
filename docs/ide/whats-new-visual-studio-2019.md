@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a9d8babb55a615e12c575f30426c8e73aa1c6e1
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406710"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125360"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -29,7 +29,7 @@ ms.locfileid: "75406710"
 >[!div class="button"]
 >[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
-使用 Visual Studio 2019，您會獲得同類產品中最佳的工具和服務，任何開發人員、任何應用程式及任何平台均適用。 無論您是第一次使用 Visual Studio，或是已使用多年，這個新版本還是有許多好用的功能！
+使用 Visual Studio 2019，您會獲得同類產品中最佳的工具和服務，任何開發人員、任何應用程式及任何平台均適用。 無論您是第一次使用 Visual Studio，或是已使用多年，你都會很喜歡這個新版本！
 
 以下是新增功能的概要回顧：
 
@@ -55,7 +55,7 @@ ms.locfileid: "75406710"
 
 ### <a name="refactorings"></a>重構
 
-C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的程式碼。 它們顯示為燈泡中的建議，且包含動作，如將成員移動至介面或基底類別、調整命名空間以符合資料夾結構、將 foreach 迴圈轉換為 Linq 查詢等等。
+C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的程式碼。 它們以燈泡的方式顯示隱藏的建議，且包含動作，如將成員移動至介面或基底類別、調整命名空間以符合資料夾結構、將 foreach 迴圈轉換為 Linq 查詢等等。
 
    ![Visual Studio 2019 中的重構體驗動畫](media/vs-2019/refactorings.gif)
 
@@ -69,10 +69,10 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 以下是 Visual Studio IntelliCode 可協助提高生產力的幾種方式：
 
-* 提供內容感知的程式碼完成
+* 提供由內容感知而完整程式碼的功能
 * 引導開發人員遵守所屬團隊的模式與風格
 * 找出難以捕捉的程式碼問題
-* 將注意力放在真正重要的區域，專注在程式碼檢閱上
+* 引導注意力放在真正重要的區域，以專注檢閲它們的程式碼
 
 一開始以 Visual Studio 的延伸模組形式提供 IntelliCode 預覽時，我們僅支援 C#。 現在，我們也新增了對 C++ 和 XAML 的「內建」支援，以作為 **16.1 版的新功能** (不過，對 C++ 和 TypeScript/JavaScript 的支援目前仍為預覽狀態)。
 
@@ -94,9 +94,9 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 ### <a name="per-monitor-aware-pma-rendering"></a>個別監視器感知 (PMA) 轉譯
 
-如果您以不同顯示比例因素設定監視器，或從遠端連線到具有不同於您主要裝置顯示比例因素的機器，您可能會發現 Visual Studio 的顯示模糊，或以錯誤的比例轉譯。
+如果您所使用的監視器設定為不同的縮放比例，或從遠端連線到具有不同於您主要裝置設定的縮放顯示比例的機器，您可能會發現 Visual Studio 的顯示模糊，或以錯誤的比例轉譯。
 
-Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為個別監視器感知 (PMA) 應用程式。 現在，不論您使用的顯示縮放比例為何，Visual Studio 均可正確轉譯。
+隨著Visual Studio 2019 的發行，我們將 Visual Studio 調整為可識別顯示器設定（PMA）的應用程式。 現在，不論您使用的顯示縮放比例為何，Visual Studio 均可正確轉譯。
 
    ![Visual Studio 2019 中的個別監視器感知 (PMA) 轉譯](media/vs-2019/pma-dpi-scaling.png)
 
@@ -120,7 +120,7 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
-### <a name="cloud-first-workflow"></a>雲端優先工作流程
+### <a name="git-first-workflow"></a>Git 優先工作流程
 
 開啟 Visual Studio 2019 時，您會注意到新的開始視窗。
 
@@ -136,7 +136,7 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 
 ### <a name="live-share"></a>Live Share
 
-[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 這項開發人員服務可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。
+[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 這項開發人員服務可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當流暢且安全。
 
 Visual Studio 2019 預設會安裝這項服務。
 
@@ -154,13 +154,13 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ## <a name="debug"></a>偵錯
 
-檢視下列影片以深入了解如何在進行偵錯時使用精確目標設定來集中精力。 <br><br>*影片長度：3.54 分鐘*
+檢視下列影片以深入了解如何在進行偵錯時使用精確的目標設定來校正。 <br><br>*影片長度：3.54 分鐘*
 
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>效能提升
 
-我們採用僅一次的專屬 C++ 資料中斷點，並加以修改以用於 .NET Core 應用程式。
+我們採用獨一無二的 C++ 資料中斷點，並加以修改以用於 .NET Core 應用程式。
 
    ![在 Visual Studio 2019 中顯示偵錯資料中斷點的動畫](media/vs-2019/debug-data-breakpoints.gif)
 
@@ -182,7 +182,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ### <a name="snapshot-debugger"></a>快照集偵錯工具
 
-在雲端中取得應用程式執行的快照集，以查看確切的狀況。 (僅 Visual Studio Enterprise 提供此功能)
+在雲端中取得應用程式執行的快照集，以查看的確切狀況。 (僅 Visual Studio Enterprise 提供這項功能。)
 
    ![顯示 Visual Studio 2019 Enterprise 中的快照集偵錯工具動畫](media/vs-2019/snapshot-debugger.gif)
 
@@ -218,7 +218,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 * 如果您遇到停止回應、當機或其他效能問題，則可以使用[回報問題](how-to-report-a-problem-with-visual-studio.md)工具，輕鬆地與我們分享重現步驟和支援檔案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 2019 版本資訊](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 SDK 的新功能](../extensibility/whats-new-visual-studio-2019-sdk.md)

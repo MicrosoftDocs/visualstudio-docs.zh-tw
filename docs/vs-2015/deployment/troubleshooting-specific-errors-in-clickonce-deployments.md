@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c66a25830e34571648727bd6ec71791e5e637ca8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 81bb9bcecf37d2ed3fca29a4edc57738732de1a5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294727"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917283"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>疑難排解 ClickOnce 部署的特定錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ ms.locfileid: "74294727"
  如果您使用 URL 發行，請確定目的地電腦已啟用 FrontPage Server Extensions。  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>錯誤訊息：無法建立網站 '\<網站 > '。 未安裝與 FrontPage Server Extensions 通訊的元件。  
- 請確定您已在要發佈的電腦上安裝 Microsoft Visual Studio Web Authoring Component。 若為 Express 使用者，預設不會安裝此元件。 如需詳細資訊，請參閱 [http://go.microsoft.com/fwlink/?LinkId=102310](https://go.microsoft.com/fwlink/?LinkId=102310)。  
+ 請確定您已在要發佈的電腦上安裝 Microsoft Visual Studio Web Authoring Component。 若為 Express 使用者，預設不會安裝此元件。  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>錯誤訊息：找不到檔案 ' Microsoft. Windows. 通用控制項，版本 = 6.0.0.0，Culture = *，PublicKeyToken = 6595b64144ccf1df，ProcessorArchitecture =\*，類型 = win32 '  
  當您嘗試發行已啟用視覺樣式的 WPF 應用程式時，會出現此錯誤訊息。 若要解決此問題，請參閱[如何：發行已啟用視覺化樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)。  
@@ -139,6 +139,6 @@ ms.locfileid: "74294727"
 |無法透過網路啟用快捷方式。|只能在本機硬碟上啟動 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的快捷方式。 您無法開啟指向遠端伺服器上快捷方式檔案的 URL 來啟動它們。|  
 |應用程式太大，無法在部分信任的線上執行。 請洽詢應用程式廠商或您的系統管理員以取得協助。|在部分信任中執行的應用程式不能大於線上應用程式配額大小的一半，預設為 250 MB。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)

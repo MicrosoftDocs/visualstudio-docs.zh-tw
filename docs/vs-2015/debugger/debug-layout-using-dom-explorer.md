@@ -18,19 +18,19 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5dd40381b8f5ba4807e95cfcf5e5b7d54afd77e2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298383"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850080"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>使用 DOM 總管偵錯配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 適用于 Windows 和 Windows Phone] （.。/Image/windows_and_phone_content .png "windows_and_phone_content"）  
   
- [DOM 總管] 的 [配置] 索引標籤顯示 [App、Windows Phone 市集 App 或使用 Visual Studio Tools for Apache Cordova 所建立 App 中的選取項目之](https://go.microsoft.com/fwlink/?LinkID=238778) [CSS 方塊模型] [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 。 您可以使用此方塊模型的視覺表示方式，辨識和修改可影響項目外觀且與配置有關的值。  
+ [DOM 總管] 的 [配置] 索引標籤顯示 [App、Windows Phone 市集 App 或使用 Visual Studio Tools for Apache Cordova 所建立 App 中的選取項目之](https://www.w3.org/TR/CSS2/box.html) [CSS 方塊模型] [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 。 您可以使用此方塊模型的視覺表示方式，辨識和修改可影響項目外觀且與配置有關的值。  
   
 > [!TIP]
 > 您在 [配置] 索引標籤中所做的變更並非永久變更。 您可以對原始程式碼進行永久變更，然後使用 [偵錯] 工具列上的 [重新整理 Windows App] 按鈕 (僅限 Windows 市集和 Windows Phone 市集 App) 重新整理 App。 如此一來，就不必重新啟動偵錯工具。  
@@ -126,7 +126,7 @@ ms.locfileid: "74298383"
   
 15. 切換至 Phone 模擬器 (Emulator) 或模擬器 (Simulator)。 更新過的 margin-left 值已套用至區段 4 影像。 margin-left 規則下 [計算] 索引標籤的這些值也會一併更新。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [快速入門： DEBUG HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
  [使用 DOM 總管  來 DEBUG CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)  
  [檢視 DOM 事件接聽程式](../debugger/view-dom-event-listeners.md)

@@ -52,6 +52,8 @@
       items:
         - name: 在偵錯工具視窗中檢查資料
           href: debugger-windows.md
+        - name: 檢查例外狀況
+          href: exception-helper.md
         - name: 檢查變數
           href: autos-and-locals-windows.md
         - name: 監看式變數
@@ -266,6 +268,10 @@
                   href: visualizer-api-reference.md
         - name: 還原隱藏的偵錯工具命令
           href: how-to-restore-hidden-debugger-commands.md
+    - name: 原始程式碼
+      items:
+        - name: 反編譯 .NET 組件
+          href: decompilation.md
     - name: 遠端偵錯
       items:
         - name: 遠端偵錯

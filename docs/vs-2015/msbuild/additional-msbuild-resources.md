@@ -599,12 +599,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 031ffa0daa899429454faf64819a6778022a5645
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6460d26ea7b7240cf54dfe3379ec75634bc5465d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298215"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847052"
 ---
 # <a name="additional-msbuild-resources"></a>其他 MSBuild 資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -615,12 +615,12 @@ ms.locfileid: "74298215"
  您可以搜尋線上知識庫 (KB) 中有關產品問題的文章。 並非所有問題都有對應的 KB 文章，但一般會記錄大量客戶遇到的錯誤。 您可以存取 [Knowledge Base (MSBuild search results)](https://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0) (知識庫 (MSBuild 搜尋結果)) 網站上的 KB 文章。  
   
 ## <a name="community-forums"></a>社群論壇  
- 論壇也可讓您與其他開發人員和 Microsoft 員工互動。 如果您遇到找不到解決方案的錯誤，則可以在論壇張貼有關問題的疑問。 您也可以搜尋新聞群組，以查看是否有其他人已經張貼相同的問題。 您可以在 [MSDN 論壇](https://go.microsoft.com/fwlink/?LinkId=48931)網站上存取 Visual Studio MSBuild 論壇。  
+ 論壇也可讓您與其他開發人員和 Microsoft 員工互動。 如果您遇到找不到解決方案的錯誤，則可以在論壇張貼有關問題的疑問。 您也可以搜尋新聞群組，以查看是否有其他人已經張貼相同的問題。 您可以在 [MSDN 論壇](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/)網站上存取 Visual Studio MSBuild 論壇。  
   
  您可以存取 [Channel 9 MSBuild](https://channel9.msdn.com/) 網站上的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 社群資源。  
   
 ## <a name="product-support"></a>產品支援  
- 如果您在嘗試其他資源之後仍有疑問，可以前往 [Microsoft 說明及支援](https://go.microsoft.com/fwlink/?linkid=1782)網站，連絡 Microsoft 支援服務。 如需您地區中可用的產品支援資訊，請參閱[告訴我們](../ide/talk-to-us.md)。  
+ 如果您在嘗試其他資源之後仍有疑問，可以前往 [Microsoft 說明及支援](https://support.microsoft.com/)網站，連絡 Microsoft 支援服務。 如需您地區中可用的產品支援資訊，請參閱[告訴我們](../ide/talk-to-us.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [進行 .NET Framework 目標錯誤的疑難排解](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def432c5c2861716b4b3fb6e2f93f20a93a54a28
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748531"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115193"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算及自訂的儲存區屬性
 特定領域語言（DSL）中的所有網域屬性都可以在圖表和您的語言瀏覽器中顯示給使用者，並可由程式碼存取。 不過，屬性的值儲存方式會不同。
@@ -25,8 +25,8 @@ ms.locfileid: "72748531"
 |網域屬性種類|描述|
 |-|-|
 |**標準**（預設值）|*儲存在存放區*中並序列化為檔案的網域屬性。|
-|**計**|唯讀網域屬性，不會儲存在存放區中，而是從其他值計算而來。<br /><br /> 例如，`Person.Age` 可以從 `Person.BirthDate` 計算出來。<br /><br /> 您必須提供執行計算的程式碼。 通常，您會計算來自其他網域屬性的值。 不過，您也可以使用外部資源。|
-|**自訂儲存體**|不會直接儲存在存放區中，但可以同時取得和設定的網域屬性。<br /><br /> 您必須提供取得和設定值的方法。<br /><br /> 例如，`Person.FullAddress` 可以儲存在 `Person.StreetAddress`、`Person.City` 和 `Person.PostalCode` 中。<br /><br /> 您也可以存取外部資源，例如，從資料庫取得和設定值。<br /><br /> 當 `Store.InUndoRedoOrRollback` 為 true 時，您的程式碼不應設定存放區中的值。 請參閱[交易和自訂 setter](#setters)。|
+|**計**|唯讀網域屬性，不會儲存在存放區中，而是從其他值計算而來。<br /><br /> 例如，`Person.Age` 可以從 `Person.BirthDate`計算出來。<br /><br /> 您必須提供執行計算的程式碼。 通常，您會計算來自其他網域屬性的值。 不過，您也可以使用外部資源。|
+|**自訂儲存體**|不會直接儲存在存放區中，但可以同時取得和設定的網域屬性。<br /><br /> 您必須提供取得和設定值的方法。<br /><br /> 例如，`Person.FullAddress` 可以儲存在 `Person.StreetAddress`、`Person.City`和 `Person.PostalCode`中。<br /><br /> 您也可以存取外部資源，例如，從資料庫取得和設定值。<br /><br /> 當 `Store.InUndoRedoOrRollback` 為 true 時，您的程式碼不應設定存放區中的值。 請參閱[交易和自訂 setter](#setters)。|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>提供計算或自訂儲存屬性的程式碼
  如果您將網域屬性的種類設定為 [計算] 或 [自訂] 儲存體，則必須提供存取方法。 當您建立解決方案時，錯誤報表會告訴您所需的內容。
@@ -52,7 +52,7 @@ ms.locfileid: "72748531"
     > [!NOTE]
     > 這個檔案是從 Dsldefinition.dsl 檔產生的。 如果您編輯此檔案，下次按一下 [**轉換所有範本**] 時，您的變更將會遺失。 相反地，請在個別的檔案中新增必要的方法。
 
-6. 在個別的資料夾中建立或開啟類別檔案，例如 CustomCode \\*YourDomainClass*。
+6. 在個別的資料夾中建立或開啟類別檔案，例如 CustomCode\\*YourDomainClass*。
 
      請確定命名空間與產生的程式碼中的相同。
 
@@ -66,7 +66,7 @@ ms.locfileid: "72748531"
     }  }
     ```
 
-8. 如果您將 [**類型**] 設定為 [**自訂存放裝置**]，您也必須提供 `Set` 方法。 例如:
+8. 如果您將 [**類型**] 設定為 [**自訂存放裝置**]，您也必須提供 `Set` 方法。 例如：
 
     ```
     void SetAgeValue(int value)
@@ -90,7 +90,7 @@ ms.locfileid: "72748531"
 
 - 不過，它應該會更新任何外部資源，例如資料庫或檔案內容，或存放區外的物件。 這會確保它們會保留在 synchronism 中，並具有存放區中的值。
 
-  例如:
+  例如：
 
 ```
 void SetAgeValue(int value)

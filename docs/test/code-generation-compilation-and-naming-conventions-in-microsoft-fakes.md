@@ -2,25 +2,25 @@
 title: Microsoft Fakes：產生 & 編譯器代碼;命名慣例
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: e29b0b05b836dd4072b704bfd48cfb85cde50927
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665243"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589327"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的程式碼產生、編譯和命名慣例
 
 本文討論產生與編譯 Fakes 程式碼的選項和問題，並且描述 Fakes 產生類型、成員和參數的命名慣例。
 
-**Requirements**
+**需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 - .NET Framework 專案
 
 > [!NOTE]
@@ -64,19 +64,19 @@ ms.locfileid: "72665243"
 
 - 篩選條件預設不區分大小寫；篩選條件會執行子字串比對：
 
-     `el` 比對符合 "hello"
+     `el` 比對 "hello"
 
 - 將 `!` 新增至篩選條件結尾會讓它變成精確區分大小寫的比對：
 
      `el!` 不符合 "hello"
 
-     `hello!` 比對符合 "hello"
+     `hello!` 比對 "hello"
 
 - 將 `*` 新增至篩選條件的結尾會讓它符合字串的前置詞：
 
      `el*` 不符合 "hello"
 
-     `he*` 比對符合 "hello"
+     `he*` 比對 "hello"
 
 - 以分號分隔之清單中的多個篩選條件會結合為分離：
 
@@ -134,7 +134,7 @@ Fakes 架構會使用相同金鑰來簽署所有產生的組件，因此，您�
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-您可以針對 Fakes 組件指定不同的公用金鑰，例如您已針對填充組件建立的金鑰，方法是指定 *.snk* 檔案的完整路徑，其中包含替代金鑰做為 *.fakes* 檔案之 `Fakes`\\`Compilation` 項目中的 `KeyFile` 屬性值。 例如:
+您可以針對 Fakes 組件指定不同的公用金鑰，例如您已針對填充組件建立的金鑰，方法是指定 *.snk* 檔案的完整路徑，其中包含替代金鑰做為 `KeyFile`.fakes`Fakes` 檔案之 \\`Compilation`*項目中的* 屬性值。 例如：
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -257,13 +257,13 @@ attribute of the Assembly element in the .fakes:
 |-|-|
 |**類型**`T`|T<br /><br /> 命名空間、巢狀結構和泛型 tics 會被丟棄。|
 |**out 參數**`out T`|`TOut`|
-|**ref 參數** `ref T`|`TRef`|
+|**Ref 參數**`ref T`|`TRef`|
 |**陣列類型**`T[]`|`TArray`|
 |**多維陣列**類型 `T[ , , ]`|`T3`|
 |**指標**類型 `T*`|`TPtr`|
 |**泛型類型**`T<R1, ...>`|`TOfR1`|
-|類型 `C<TType>` 的**泛型類型引數**`!i`|`Ti`|
-|方法 `M<MMethod>` 的**泛型方法引數**`!!i`|`Mi`|
+|類型  **的**泛型類型引數`!i``C<TType>`|`Ti`|
+|方法  **的**泛型方法引數`!!i``M<MMethod>`|`Mi`|
 |**巢狀類型**`N.T`|會附加 `N`，後接 `T`|
 
 ### <a name="recursive-rules"></a>遞迴規則

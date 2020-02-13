@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list threads command
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c89f4e38d21e7dd66f53b8e768019a3e53c7a39
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747880"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595484"
 ---
 # <a name="list-threads-command"></a>列出執行緒命令
 顯示目前程式中的執行緒清單。
@@ -33,7 +33,7 @@ Debug.ListThreads [index]
 ## <a name="arguments"></a>引數
 `index`
 
-選擇項。 依據索引選取一個執行緒，以成為目前執行緒。
+選擇性。 依據索引選取一個執行緒，以成為目前執行緒。
 
 ## <a name="remarks"></a>備註
 指定時，`index` 引數會將指出的執行緒標記為目前執行緒。 星號 (*) 會顯示在目前執行緒旁邊的清單。

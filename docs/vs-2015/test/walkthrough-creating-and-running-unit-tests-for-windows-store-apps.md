@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 60e7ddd7c535d99abcb64d4adde97157b117f3ed
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f5e62fe83d644b577d7d0a5f87312642f438c490
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301381"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851176"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>逐步解說：針對 Windows 市集應用程式建立和執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "74301381"
 Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的單元測試支援，並包含 Visual C#、Visual Basic 和 Visual C++ 的單元測試程式庫範本。
 
 > [!TIP]
-> 如需開發 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的詳細資訊，請參閱 [Windows 市集應用程式入門](https://go.microsoft.com/fwlink/?LinkID=241410)。
+> 如需開發 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的詳細資訊，請參閱 [Windows 市集應用程式入門](https://msdn.microsoft.com/windows/apps/br211386.aspx)。
 
  Visual Studio 提供下列單元測試功能：
 
@@ -40,7 +40,7 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
 
   下列程序說明用來建立、執行和偵錯 Managed Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的單元測試之步驟。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
  Visual Studio
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Create"></a> 建立單元測試專案
@@ -75,7 +75,7 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
 
 #### <a name="to-edit-the-unit-test-projects-windows-store-application-manifest-file"></a>若要編輯單元測試專案的 Windows 市集應用程式資訊清單檔案
 
-1. 在 [方案總管] 中，於新的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 單元測試專案中，以滑鼠右鍵按一下 Package.appxmanifest 檔案並選擇 [ **開啟**]。
+1. 在 [方案總管] 中，於新的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 單元測試專案中，以滑鼠右鍵按一下 Package.appxmanifest 檔案並選擇 [開啟]。
 
      資訊清單設計工具隨即顯示，可供編輯。
 
@@ -96,7 +96,7 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
 
 1. 在 [程式碼編輯器] 中，編輯單元測試，並加入測試所需的判斷提示和邏輯。
 
-     如需詳細資訊，請參閱 MSDN Library 中的 [使用 Assert 類別](https://go.microsoft.com/fwlink/?LinkID=224991) 。
+     如需詳細資訊，請參閱 MSDN Library 中的 [使用 Assert 類別](https://msdn.microsoft.com/library/ms182530.aspx) 。
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Run"></a> 執行單元測試
 
@@ -139,13 +139,13 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
 ## <a name="external-resources"></a>外部資源
 
 ### <a name="videos"></a>Videos
- [Channel 9：Unit testing your Windows Store apps built using XAML (單元測試使用 XAML 建置的 Windows 市集應用程式)](https://go.microsoft.com/fwlink/?LinkId=226285)
+ [Channel 9：Unit testing your Windows Store apps built using XAML (單元測試使用 XAML 建置的 Windows 市集應用程式)](https://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-529T)
 
 ### <a name="forums"></a>Forums
- [Visual Studio 單元測試](https://go.microsoft.com/fwlink/?LinkId=224477)
+ [Visual Studio 單元測試](https://social.msdn.microsoft.com/Forums/en/vsunittest/threads)
 
 ### <a name="msdn-library"></a>MSDN Library
- [MSDN Library - 建立並執行現有程式碼的單元測試 (Visual Studio 2010)](https://go.microsoft.com/fwlink/?LinkID=223683)
+ [MSDN Library - 建立並執行現有程式碼的單元測試 (Visual Studio 2010)](https://msdn.microsoft.com/library/hh270865(v=vs.110).aspx)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [使用 Team Foundation build Visual Studio 組建和測試 Windows store 應用程式來](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)[測試儲存應用](../test/testing-store-apps-with-visual-studio.md)程式

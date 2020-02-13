@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: ceb78d3310f37a58850199b11fb2b2fed86f6799
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fba7f1e0801b6f977d47b13af025538f5d2fe031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299324"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850984"
 ---
 # <a name="creating-your-own-start-page"></a>建立您自己的起始頁
 您可以使用起始頁專案範本或建立空白起始頁，來建立自訂起始頁。  
@@ -28,7 +28,7 @@ ms.locfileid: "74299324"
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>使用起始頁專案範本來建立自訂起始頁  
   
-1. 從 Visual Studio 組件庫，下載並安裝 [起始頁專案範本](https://go.microsoft.com/fwlink/?LinkId=186204) 。  
+1. 從 Visual Studio 組件庫，下載並安裝 [起始頁專案範本](https://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) 。  
   
     > [!WARNING]
     > 目前，尚未升級 Visual Studio 2010 起始頁專案範本。 如需如何升級此範本的詳細資訊，請參閱[如何：升級 Visual Studio 自訂起始頁](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)。  
@@ -99,6 +99,6 @@ ms.locfileid: "74299324"
   
    將 .vsix 檔案從 bin\debug 目錄上傳至[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站，或從另一個網站或內部網路共用，即可共用自訂起始頁。 如需詳細資訊，請參閱 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)   
  [逐步解說︰將自訂的 XAML 加入至起始頁](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

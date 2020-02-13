@@ -7,31 +7,28 @@ helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38d583553c0382598681ab3aa52ca3a41a27ed2c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8b5f00b3e71f0deb15d6266640db39751f2ae22f
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585492"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269095"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 
-當您建置原始程式碼時，建置引擎會建立組件和可執行的應用程式。 不同專案類型 (如 Windows、ASP.NET、行動裝置及其他類型) 進行的建置流程大致上都很相似。 不同的程式語言 (如 C#、Visual Basic、C++ 和 F#) 也進行類似的建置流程。
-
-經常建置程式碼讓您可以迅速識別編譯錯誤，例如語法不正確、關鍵字拼字錯誤和類型不相符。 您也可以藉由建置和執行程式碼的偵錯版本，偵測並修正執行階段錯誤，例如邏輯錯誤和語意錯誤。
-
-成功的組建會驗證應用程式的原始程式碼包含了正確語法，而且所有對程式庫、組件及其他元件的靜態參考均可解析。 如此會產生可執行的應用程式，不僅可在[偵錯環境](../debugger/index.yml)中測試其正常運作，也可透過各種手動和自動測試來[驗證程式碼品質](../test/improve-code-quality.md)。 應用程式一經完整測試，您便可編譯發行版本以部署到您的客戶。 如需此流程的簡介，請參閱[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)。
+若要了解在 IDE 中建置的初步簡介，請參閱[逐步解說：建置應用程式](walkthrough-building-an-application.md)。
 
 您可以使用下列任一種方法來建置應用程式：Visual Studio IDE、MSBuild 命令列工具，以及 Azure Pipelines：
 
 | 建置方法 | 優點 |
 | --- |--- | --- |
 | IDE |- 立即建立組建並在偵錯工具中加以測試。<br />- 對 C++ 和 C# 專案執行多處理器組建。<br />- 自訂建置系統的不同層面。 |
+| CMake | -使用 CMake 工具建立專案<br />-在 Linux 和 Windows 平臺上使用相同的組建系統。 |
 | MSBuild 命令列| - 無須安裝 Visual Studio 即可建置專案。<br />- 對所有專案類型執行多處理器建置。<br />- 自訂建置系統大部分的區域。|
 | Azure Pipelines | - 將建置流程自動化，這是持續整合/持續傳遞管線的一部分。<br />- 在每個組建套用自動化的測試。<br />- 在建置流程採用幾乎不受限制的雲端式資源。<br />- 修改建置工作流程，以及建立建置活動以執行深入自訂的工作。|
 
@@ -60,3 +57,4 @@ ms.locfileid: "75585492"
 
 - [建置 (編譯) 網站專案](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
 - [編譯與建置 (Visual Studio for Mac)](/visualstudio/mac/compiling-and-building)
+- [Visual Studio 中的 CMake 專案](/cpp/build/cmake-projects-in-visual-studio)

@@ -3,19 +3,19 @@ title: WhiteSource Bolt 權益 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 11/18/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所含的 WhiteSource Bolt 訂用帳戶。
-ms.openlocfilehash: fb403053d101cf2edf8677c7bcce494ae4e2d21e
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: edfc4c01908a6ce3bf5466a812ab7cf2608a62f7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74174133"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114329"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 WhiteSource Bolt
 
-找出並修正開放原始碼弱點，以及產生組建中所有開放原始碼元件的全面清查及授權報表。 
+找出並修正開放原始碼弱點，以及產生組建中所有開放原始碼元件的全面清查及授權報表。 Visual Studio Enterprise 訂用帳戶會收到六個月的無限制掃描。
 
 ## <a name="activation-steps"></a>啟用步驟
 
@@ -38,7 +38,22 @@ ms.locfileid: "74174133"
 9. 如需詳細資訊，請瀏覽 WhiteSource Bolt [常見問題集頁面](https://bolt.whitesourcesoftware.com/azure/faq/) \(英文\)。 
 
 ## <a name="eligibility"></a>資格
-[WhiteSource 的螺栓](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance)現在可在 [Visual Studio Marketplace 免費使用。 
+
+| 訂用帳戶層級                                                 |     通道                                            | 的優點                                                          | 可續約？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  是       |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise | VL | 6 個月       |  是       |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                           |NA         |
+| 含 GitHub Enterprise 的 Visual Studio Professional | VL                                      | 無法使用                                                           |NA         |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                           |NA         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                                           |NA         |
+| Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
+||
+
+<sup>1</sup>  *包括： Microsoft 合作夥伴網路（Enterprise）。 排除：禁止轉售（NFR）、Visual Studio 產業夥伴（VSIP）、FTE、MCT Software & 服務開發人員、BizSpark、想像、最有價值專家（MVP）、區域主管（RD）。 MCT 軟體 & 服務。*
+
+> [!NOTE]
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
 
 ## <a name="support-resources"></a>支援資源
 - 需要 WhiteSource Bolt 的說明嗎？  在 https://www.whitesourcesoftware.com/vse_whitesource_bolt/ 與 WhiteSource Bolt 代表即時聊天
@@ -50,3 +65,9 @@ ms.locfileid: "74174133"
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest 個人點數](vs-azure.md)
+
+## <a name="see-also"></a>請參閱
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 文件](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)

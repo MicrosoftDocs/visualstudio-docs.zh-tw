@@ -5,27 +5,27 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7a3c2530456a4c2b358fcea7507203feeb904b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777877"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585453"
 ---
 # <a name="target-build-order"></a>目標組建順序
 
 如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 您可以使用這些屬性來指定執行目標的順序：
 
-- `InitialTargets`。 這個 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。
+- `InitialTargets`. 這個 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。
 
-- `DefaultTargets`。 如果未在命令列上明確指定目標，此 `Project` 屬性會指定要執行的目標。
+- `DefaultTargets`. 如果未在命令列上明確指定目標，此 `Project` 屬性會指定要執行的目標。
 
-- `DependsOnTargets`。 這個 `Target` 屬性會指定必須在此目標執行之前執行的目標。
+- `DependsOnTargets`. 這個 `Target` 屬性會指定必須在此目標執行之前執行的目標。
 
 - `BeforeTargets` 和 `AfterTargets`。 這些 `Target` 屬性會指定此目標應該在指定的目標之前或之後執行 (MSBuild 4.0)。
 
@@ -35,7 +35,7 @@ ms.locfileid: "74777877"
 
 ## <a name="initial-targets"></a>初始目標
 
-[Project](../msbuild/project-element-msbuild.md) 項目的 `InitialTargets` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。 初始目標通常用於錯誤檢查。
+`InitialTargets`Project[ 項目的 ](../msbuild/project-element-msbuild.md) 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。 初始目標通常用於錯誤檢查。
 
 `InitialTargets` 屬性的值可以是以分號分隔且已排序的目標清單。 下列範例會指定 `Warm` 目標執行，然後 `Eject` 目標執行。
 
@@ -49,7 +49,7 @@ ms.locfileid: "74777877"
 
 ## <a name="default-targets"></a>預設目標
 
-如果未在命令列上明確指定目標，則 [Project](../msbuild/project-element-msbuild.md) 項目的 `DefaultTargets` 屬性會指定要建置哪些目標。
+如果未在命令列上明確指定目標，則 `DefaultTargets`Project[ 項目的 ](../msbuild/project-element-msbuild.md) 屬性會指定要建置哪些目標。
 
 `DefaultTargets` 屬性的值可以是以分號分隔且已排序的預設目標清單。 下列範例會指定 `Clean` 目標執行，然後 `Build` 目標執行。
 
@@ -73,13 +73,13 @@ ms.locfileid: "74777877"
 
 ## <a name="target-dependencies"></a>目標相依性
 
-目標可以說明彼此間的相依性關係。 `DependsOnTargets` 屬性會指出某一個目標相依於其他目標。 例如，套用至物件的
+目標可以說明彼此間的相依性關係。 `DependsOnTargets` 屬性會指出某一個目標相依於其他目標。 例如：
 
 ```xml
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />
 ```
 
-告知 MSBuild，`Serve` 目標相依於 `Chop` 目標和 `Cook` 目標。 MSBuild 會執行 `Chop` 目標，然後在執行 `Serve` 目標之前先執行 `Cook` 目標。
+告知 MSBuild，`Serve` 目標相依於 `Chop` 目標和 `Cook` 目標。 MSBuild 會執行 `Chop` 目標，然後在執行 `Cook` 目標之前先執行 `Serve` 目標。
 
 ## <a name="beforetargets-and-aftertargets"></a>BeforeTargets 和 AfterTargets
 

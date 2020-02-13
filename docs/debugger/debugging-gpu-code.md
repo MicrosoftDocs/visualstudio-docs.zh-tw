@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cec341df3cfe81f339322f5e7c584151d9030490
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 0b1e2739532512bde5edeed4facc92b807187293
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911566"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144803"
 ---
 # <a name="debugging-gpu-code"></a>偵錯 GPU 程式碼
 您可以對圖形處理器 (GPU) 上執行的 C++ 程式碼進行偵錯。 在 Visual Studio 中的 GPU 偵錯支援包括競爭偵測、啟動處理序和附加至處理序，以及整合到偵錯視窗中。
 
 ## <a name="supported-platforms"></a>支援的平台
- [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[win8](../debugger/includes/win8_md.md)]、[!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)] 和 [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] 都支援偵錯。 如需在軟體模擬器上偵錯，則需要使用 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或 [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]。 如需在硬體上偵錯，您必須安裝圖形卡的驅動程式。 並非所有硬體廠商都實作所有偵錯工具功能。 請參閱廠商文件以了解限制。
+ [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[win8](../debugger/includes/win8_md.md)]、Windows 10、[!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]、[!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] 和 Windows Server 2016 都支援調試。 若要在軟體模擬器上進行偵錯工具，[!INCLUDE[win8](../debugger/includes/win8_md.md)]、Windows 10 或 [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]，則需要 Windows Server 2016。 如需在硬體上偵錯，您必須安裝圖形卡的驅動程式。 並非所有硬體廠商都實作所有偵錯工具功能。 請參閱廠商文件以了解限制。
 
 > [!NOTE]
 > 若獨立硬體廠商想要支援 Visual Studio 中的 GPU 偵錯，則必須建立實作 VSD3DDebug 介面並且以自己的驅動程式為目標的 DLL。
@@ -47,7 +47,7 @@ ms.locfileid: "72911566"
 2. [執行目前 Tile 至游標處] 命令會執行應用程式，直到目前 Tile 中的所有執行緒到達游標處，然後中斷。
 
 ## <a name="debugging-windows"></a>偵錯視窗
- 您可以使用某些偵錯視窗檢查和凍結 GPU 執行緒，以及為它們加上旗標。 如需詳細資訊，請參閱:
+ 您可以使用某些偵錯視窗檢查和凍結 GPU 執行緒，以及為它們加上旗標。 如需詳細資訊，請參閱
 
 - [使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)
 
@@ -65,7 +65,7 @@ ms.locfileid: "72911566"
 ## <a name="troubleshooting"></a>疑難排解
 
 ### <a name="specifying-an-accelerator"></a>指定加速器
- GPU 程式碼中的中斷點只有在程式碼在 [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) (REF) 加速器上執行時才會叫用。 如果您未在程式碼中指定加速器，則會在專案屬性中自動選取 REF 加速器作為 [偵錯加速器類型]。 如果您的程式碼明確選取加速器，則不會在偵錯期間使用 REF 加速器，而且除非您的 GPU 硬體支援偵錯，否則不會叫用中斷點。 您可以撰寫自己的程式碼補救這種情況，讓程式碼在偵錯期間使用 REF 加速器。 如需詳細資訊，請參閱專案屬性和[使用快速鍵和 Accelerator_view 物件](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects)和[專案設定C++進行偵錯工具](../debugger/project-settings-for-a-cpp-debug-configuration.md)。
+ GPU 程式碼中的中斷點只有在程式碼在 [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) (REF) 加速器上執行時才會叫用。 如果您未在程式碼中指定加速器，則會在專案屬性中自動選取 REF 加速器作為 [偵錯加速器類型]。 如果您的程式碼明確選取加速器，則不會在偵錯期間使用 REF 加速器，而且除非您的 GPU 硬體支援偵錯，否則不會叫用中斷點。 您可以撰寫自己的程式碼補救這種情況，讓程式碼在偵錯期間使用 REF 加速器。 如需詳細資訊，請參閱專案屬性和[使用快速鍵和 Accelerator_view 物件](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects)和[專案設定C++來進行 Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md)。
 
 ### <a name="conditional-breakpoints"></a>條件中斷點
  GPU 程式碼支援條件中斷點，不過，並非所有運算式都可以在裝置上進行評估。 如果運算式無法在裝置上評估，就會在偵錯工具上評估。 偵錯工具的執行速度可能會比裝置更慢。
@@ -79,7 +79,7 @@ ms.locfileid: "72911566"
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>錯誤：遠端網站必須停用「逾時偵錯與復原」(TDR)。
  C++ AMP 計算可能會超過 Windows 逾時偵測與復原程序 (TDR) 所設定的預設時間間隔。 發生這種情況時，計算就會取消，而且資料將會遺失。 如需詳細資訊，請參閱 [Handling TDRs in C++ AMP](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/06/handling-tdrs-in-c-amp/) (在 C++ AMP 中處理 TDR)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [逐步解說：偵錯 C++ AMP 應用程式](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [在 Visual Studio 中開始 GPU 偵錯](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/17/start-gpu-debugging-in-visual-studio-2012/)

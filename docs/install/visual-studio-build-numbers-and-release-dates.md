@@ -2,22 +2,21 @@
 title: Visual Studio 組建編號和發行日期
 titleSuffix: ''
 description: Visual Studio 已發行版本和組件編號的清單，依日期排序。
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
-ms.date: 12/17/2019
+ms.date: 01/31/2020
 ms.topic: reference
-ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ceb37a57910676f6e64bdd4c8d9390bd385bf0f7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 978ea63149223738e39be7035b5af6a5f7087591
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590888"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922924"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -29,6 +28,10 @@ ms.locfileid: "75590888"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.4 | 版本 | 2020 年 1 月 31 日 | 16.4.29728.190 |
+| 16.5.0 | Preview 2 | 2020 年 1 月 22 日 | 16.5.29721.120 |
+| 16.4.3 | 版本 | 2020 年 1 月 14 日 | 16.4.29709.97 |
+| 16.0.11 | 版本 | 2020 年 1 月 14 日 | 16.0.28803.653 |
 | 16.4.2 | 版本 | 2019 年 12 月 17 日 | 16.4.29613.14 |
 | 16.4.1 | 版本 | 2019 年 12 月 10 日 | 16.4.29609.76 |
 | 16.0.10 | 版本 | 2019 年 12 月 10 日 | 16.0.28803.631 |
@@ -119,6 +122,7 @@ ms.locfileid: "75590888"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.19 | 版本 | 2020 年 1 月 14 日 | 15.9.28307.1000 |
 | 15.0.28 | 版本 | 2019 年 12 月 11 日 | 15.0.26228.102 |
 | 15.9.18 | 版本 | 2019 年 12 月 10 日 | 15.9.28307.960 |
 | 15.9.17 | 版本 | 2019 年 10 月 15 日 | 15.9.28307.905 |

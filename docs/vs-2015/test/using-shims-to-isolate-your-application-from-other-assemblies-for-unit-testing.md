@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 07e42c6b1e3e3537801c3d7420d2cad8dd119fa7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: aa9db3e67b1f5ba5e183f8df0c7b34372476fb08
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301426"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851160"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>使用填充碼將應用程式與其他組件隔離，方便進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "74301426"
 
  **Requirements**
 
-- Visual Studio Enterprise
+- Visual Studio 企業版
 
-  請參閱 [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837) (影片 (1 小時 16 分鐘)：在 Visual Studio 2012 中使用 Fakes 測試不可測試的程式碼)
+  請參閱 [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411) (影片 (1 小時 16 分鐘)：在 Visual Studio 2012 中使用 Fakes 測試不可測試的程式碼)
 
 ## <a name="BKMK_Example__The_Y2K_bug"></a> 範例：Y2K Bug
  考慮在 2000 年 1 月 1 日擲回例外狀況的方法：
@@ -88,7 +88,7 @@ public void Y2kCheckerTest() {
 
 ```
 
- 請務必適當處置每個填充碼內容。 根據經驗法則，請一律呼叫 `ShimsContext.Create` 陳述式內的 `using`，以確保適當清除已註冊的填充碼。 例如，您可能會註冊測試方法的填充碼，將 `DateTime.Now` 方法取代成永遠都會傳回 2000 年 1 月 1 日的委派。 如果您忘記清除在測試方法中註冊的填充碼，則測試回合的其餘部分一定會傳回 2000 年 1 月 1 日做為 DateTime.Now 的值。 這可能會讓人感到意外和混淆。
+ 請務必適當處置每個填充碼內容。 根據經驗法則，請一律呼叫 `using` 陳述式內的 `ShimsContext.Create`，以確保適當清除已註冊的填充碼。 例如，您可能會註冊測試方法的填充碼，將 `DateTime.Now` 方法取代成永遠都會傳回 2000 年 1 月 1 日的委派。 如果您忘記清除在測試方法中註冊的填充碼，則測試回合的其餘部分一定會傳回 2000 年 1 月 1 日做為 DateTime.Now 的值。 這可能會讓人感到意外和混淆。
 
 ### <a name="WriteShims"></a> 撰寫含填充碼的測試
  在您的測試程式碼中，請插入您要假造之方法的「繞道」。 例如：
@@ -163,7 +163,7 @@ End Class
  填充碼類型可讓您用自己的委派取代所有 .NET 方法，包含靜態方法或非虛擬方法。
 
 ### <a name="BKMK_Static_methods"></a> 靜態方法
- 要附加填充碼到靜態方法的屬性放置於填充碼類型中。 每個屬性都只有一個 Setter 可以用來附加委派至目標方法。 例如，給定一個具有 `MyClass` 靜態方法的 `MyMethod` 類別：
+ 要附加填充碼到靜態方法的屬性放置於填充碼類型中。 每個屬性都只有一個 Setter 可以用來附加委派至目標方法。 例如，給定一個具有 `MyMethod` 靜態方法的 `MyClass` 類別：
 
 ```csharp
 //code under test
@@ -182,7 +182,7 @@ ShimMyClass.MyMethod = () =>5;
 ```
 
 ### <a name="BKMK_Instance_methods__for_all_instances_"></a> 執行個體方法 (針對所有執行個體)
- 與靜態方法類似，執行個體方法可針對所有執行個體填充。 附加這些填充碼的屬性放置在名為 AllInstances 的巢狀類型以避免混淆。 例如，給定一個具有 `MyClass` 執行個體方法的 `MyMethod` 類別：
+ 與靜態方法類似，執行個體方法可針對所有執行個體填充。 附加這些填充碼的屬性放置在名為 AllInstances 的巢狀類型以避免混淆。 例如，給定一個具有 `MyMethod` 執行個體方法的 `MyClass` 類別：
 
 ```csharp
 // code under test
@@ -220,7 +220,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 ### <a name="BKMK_Instance_methods__for_one_instance_"></a> 執行個體方法 (針對某一個執行階段執行個體)
  根據呼叫的接收器，執行個體方法可以由不同的委派來填充。 這可讓相同的執行個體方法對於每種類型的執行個體具有不同行為。 設定這些填充碼的屬性是此填充碼類型本身的執行個體方法。 每一個具現化的填充碼類型也與已填充類型之未經處理的執行個體相關聯。
 
- 例如，給定一個具有 `MyClass` 執行個體方法的 `MyMethod` 類別：
+ 例如，給定一個具有 `MyMethod` 執行個體方法的 `MyClass` 類別：
 
 ```csharp
 // code under test
@@ -330,7 +330,7 @@ public class ShimMyClass : ShimBase<MyClass>
 ### <a name="BKMK_Base_members"></a> 基底成員
  藉由建立基底類型的填充碼，和藉由將子執行個體作為參數傳遞至此基底填充碼類別的建構函式，基底成員的填充碼屬性可以進行存取。
 
- 例如，給定一個具有 `MyBase` 執行個體方法和子類型 `MyMethod` 的 `MyChild` 類別：
+ 例如，給定一個具有 `MyMethod` 執行個體方法和子類型 `MyChild` 的 `MyBase` 類別：
 
 ```csharp
 public abstract class MyBase {
@@ -344,7 +344,7 @@ public class MyChild : MyBase {
 
 ```
 
- 我們可以建立新的 `MyBase` 填充碼來設定 `ShimMyBase` 填充碼：
+ 我們可以建立新的 `ShimMyBase` 填充碼來設定 `MyBase` 填充碼：
 
 ```csharp
 // unit test code
@@ -382,7 +382,7 @@ public class ShimMyBase : ShimBase<MyBase> {
 ### <a name="BKMK_Binding_interfaces"></a> 繫結介面
  當已填充的類型實作介面時，程式碼產生器會發出允許同時繫結該介面所有成員的方法。
 
- 例如，給定一個實作 `MyClass` 的 `IEnumerable<int>` 類別：
+ 例如，給定一個實作 `IEnumerable<int>` 的 `MyClass` 類別：
 
 ```csharp
 public class MyClass : IEnumerable<int> {
@@ -430,7 +430,7 @@ shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
 
 ```
 
- 也可以針對所有已填充的執行個體 (其中尚未藉由設定靜態 `InstanceBehavior` 屬性來明確設定 `ShimsBehaviors.Current` 屬性) 對此行為全域變更：
+ 也可以針對所有已填充的執行個體 (其中尚未藉由設定靜態 `ShimsBehaviors.Current` 屬性來明確設定 `InstanceBehavior` 屬性) 對此行為全域變更：
 
 ```csharp
 // unit test code
@@ -504,7 +504,7 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>外部資源
 
 ### <a name="guidance"></a>指引
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：測試內部](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>另請參閱
- 將[測試中的程式碼與 Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter Provost 的 blog： Visual Studio 2012 填充](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)[碼影片（1h16）：在 Visual Studio 2012 中使用 Fakes 測試非可測試的程式碼](https://go.microsoft.com/fwlink/?LinkId=261837)
+## <a name="see-also"></a>請參閱
+ 將[測試中的程式碼與 Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter Provost 的 blog： Visual Studio 2012 填充](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)[碼影片（1h16）：在 Visual Studio 2012 中使用 Fakes 測試非可測試的程式碼](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

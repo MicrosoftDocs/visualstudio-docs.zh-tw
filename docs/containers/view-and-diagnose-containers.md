@@ -4,15 +4,15 @@ description: 說明如何使用工具視窗來改善在 Visual Studio 中的容�
 author: ghogen
 ms.author: ghogen
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b4670c003c06f8d16979589a4dce5abf33d5e27d
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188719"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027299"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>如何在 Visual Studio 中查看及診斷容器和映射
 
@@ -21,11 +21,11 @@ ms.locfileid: "73188719"
 ## <a name="prerequisites"></a>Prerequisites
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Visual Studio 2019 16.4 Preview 2](https://visualstudio.microsoft.com/downloads)或更新版本，或如果您使用舊版的 Visual Studio 2019，請安裝 [[容器] 視窗延伸](https://aka.ms/vscontainerspreview)模組。
+- [Visual Studio 2019 16.4 Preview 2](https://visualstudio.microsoft.com/downloads)或更新版本，或如果您使用舊版的 Visual Studio 2019，請安裝 [[容器] 視窗延伸](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions)模組。
 
 ## <a name="view-information-about-your-containers"></a>查看容器的相關資訊
 
-[**容器**] 視窗會在您啟動容器化 .net 專案時自動開啟。 若要在 Visual Studio 中隨時查看您的容器，請使用**Ctrl** +**Q**來啟動 [Visual Studio 搜尋] 方塊，然後輸入 `Containers` 並選擇第一個專案。 您也可以從主功能表開啟 [**容器**] 視窗。 使用 [功能表路徑]**視圖** > **其他 Windows**  > **容器**。  
+[**容器**] 視窗會在您啟動容器化 .net 專案時自動開啟。 若要在 Visual Studio 中隨時查看您的容器，請使用**Ctrl**+**Q**來啟動 [Visual Studio 搜尋] 方塊，然後輸入 `Containers` 並選擇第一個專案。 您也可以從主功能表開啟 [**容器**] 視窗。 使用 [功能表路徑]**視圖** > **其他 Windows** > **容器**。  
 
 ![[容器] 視窗中 [環境] 索引標籤的螢幕擷取畫面](media/view-and-diagnose-containers/container-window.png)
 
@@ -60,7 +60,7 @@ ms.locfileid: "73188719"
 若要清除記錄檔，請使用 [**記錄**] 索引標籤上的 [**清除**] 按鈕。 若要取得所有記錄檔，請使用 [重新整理 **] 按鈕。**
 
 > [!NOTE]
-> 當您執行時，Visual Studio 會自動將 stdout 和 stderr 重新導向至 [**輸出**] 視窗，因此 windows 容器會使用**Ctrl** +**F5**從 Visual Studio 啟動，而不會顯示記錄此索引標籤;請改用 [**輸出**] 視窗。
+> 當您執行時，Visual Studio 會自動將 stdout 和 stderr 重新導向至 [**輸出**] 視窗，因此，使用**Ctrl**+**F5**從 Visual Studio 啟動 Windows 容器，將不會在此索引標籤中顯示記錄;請改用 [**輸出**] 視窗。
 
 ## <a name="view-the-filesystem"></a>查看檔案系統
 
@@ -108,7 +108,7 @@ ms.locfileid: "73188719"
 
 閱讀[容器工具總覽](overview.md)，以深入瞭解 Visual Studio 中提供的容器工具。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Visual Studio 中的容器開發](/visualstudio/containers)
 

@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4087541b11b240f455dc6c0109ef44c0cb8d72ad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3a53561e8c62fcf523f13d17d5228d33a6a0af6d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587091"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916725"
 ---
 # <a name="access-data-in-visual-studio"></a>使用 Visual Studio 存取資料
 
@@ -39,7 +39,7 @@ ms.locfileid: "75587091"
 - SQL 資料倉儲
 - SQL Server Stretch Database
 - StorSimple
-- 等等
+- 等等...
 
 **SQL**
 
@@ -50,7 +50,7 @@ ms.locfileid: "75587091"
 - Oracle
 - PostgreSQL
 - SQLite
-- 等等
+- 等等...
 
 **NoSQL**
 
@@ -61,7 +61,7 @@ ms.locfileid: "75587091"
 - OrientDB |
 - RavenDB
 - VelocityDB
-- 等等
+- 等等...
 
 ::: moniker range="vs-2017"
 
@@ -108,7 +108,7 @@ ms.locfileid: "75587091"
 
 ## <a name="native-c"></a>原生 C++
 
-C++連接到 SQL Server 的應用程式應該在大多數情況下，使用[Microsoft® ODBC 驅動程式13.1 來進行 SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) 。 如果伺服器已連結，則 OLE DB 是必要的，而且您可以使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 您可以直接使用[ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017)或 OLE DB 驅動程式來存取其他資料庫。 ODBC 是目前的標準資料庫介面，但大部分的資料庫系統都提供無法透過 ODBC 介面存取的自訂功能。 OLE DB 是舊版的 COM 資料存取技術，仍受到支援，但不建議用於新的應用程式。 如需詳細資訊，請參閱[Visual C++中的資料存取](/cpp/data/data-access-in-cpp)。
+C++連接到 SQL Server 的應用程式應該在大多數情況下，使用[Microsoft® ODBC 驅動程式13.1 來進行 SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) 。 如果伺服器已連結，則 OLE DB 是必要的，而且您可以使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 您可以直接使用[ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017)或 OLE DB 驅動程式來存取其他資料庫。 ODBC 是目前的標準資料庫介面，但大部分的資料庫系統都提供無法透過 ODBC 介面存取的自訂功能。 OLE DB 是舊版的 COM 資料存取技術，仍受到支援，但不建議用於新的應用程式。 如需詳細資訊，請參閱[Visual C++中的資料存取](/cpp/data/data-access-in-cpp)。
 
 C++取用 rest 服務的程式可以使用[ C++ rest SDK](https://github.com/Microsoft/cpprestsdk)。
 

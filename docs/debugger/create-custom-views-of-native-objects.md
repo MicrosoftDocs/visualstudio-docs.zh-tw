@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67c96c8d28014ee22a387c3ba3ca828b37f267dd
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75405203"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091778"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>使用 Natvis 架構， C++在偵錯工具中建立物件的自訂視圖
 
@@ -236,7 +236,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 #### <a name="priority-attribute"></a>Priority 屬性
 
-如果無法剖析定義，選擇性的 `Priority` 屬性會指定要使用替代定義的順序。 `Priority` 的可能值為： `Low`、`MediumLow`、`Medium`、`MediumHigh`和 `High`。 預設值為 `Medium`。 `Priority` 屬性只會區分同一個*natvis*檔案中的優先順序。
+如果無法剖析定義，選擇性的 `Priority` 屬性會指定要使用替代定義的順序。 `Priority` 的可能值為： `Low`、`MediumLow`、`Medium`、`MediumHigh`和 `High`。 預設值是 `Medium`。 `Priority` 屬性只會區分同一個*natvis*檔案中的優先順序。
 
 下列範例會先剖析符合 2015 STL 的專案。 如果無法剖析，它會針對2013版的 STL 使用替代專案：
 
@@ -670,7 +670,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 - `ServiceId` - `Id` 屬性組識別 `UIVisualizer`。 `ServiceId` 是視覺化檢視封裝所公開之服務的 GUID。 `Id` 是區分視覺化程式的唯一識別碼（如果服務提供一個以上的）。 在上述範例中，相同的視覺化服務提供兩種視覺化檢視。
 
-- `MenuName` 屬性會定義要在偵錯工具中放大鏡圖示旁的下拉式按鈕中顯示的視覺化檢視名稱。 例如：
+- `MenuName` 屬性會定義要在偵錯工具中放大鏡圖示旁的下拉式按鈕中顯示的視覺化檢視名稱。 例如，
 
   ![看到 uivisualizer 功能表快捷方式功能表](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer 功能表捷徑功能表")
 
@@ -690,3 +690,9 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 撰寫自訂的視覺化程式比 XML Natvis 定義更多，但您不受限於 Natvis 不支援的條件約束。 自訂的視覺化程式可以存取一組完整的偵錯工具擴充性 Api，這可查詢和修改偵錯工具的進程，或與 Visual Studio 的其他部分通訊。
 
  您可以在 `CustomVisualizer` 元素上使用 `Condition`、`IncludeView`和 `ExcludeView` 屬性。
+
+ ## <a name="limitations"></a>限制
+
+Natvis 自訂會使用類別和結構，但不能用於 typedef。
+
+Natvis 不支援基本類型的視覺化檢視（例如，`int`、`bool`）或基本類型的指標。 在此案例中，其中一個選項是使用適用于您使用案例的[格式規範](../debugger/format-specifiers-in-cpp.md)。 例如，如果您在程式碼中使用 `double* mydoublearray`，則可以在偵錯工具的 **[監看**式] 視窗中使用陣列格式規範，例如運算式 `mydoublearray, [100]`，其中會顯示前100個元素。

@@ -2,17 +2,17 @@
 title: 自訂複製行為
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e33ab59660263a5053642c95ec62ab36663f8e7b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4e3ab9a30b373e2421607f6dd1609b13adad3087
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984297"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115345"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 在使用 Visual Studio 視覺效果和模型化 SDK 建立的特定領域語言（DSL）中，您可以改變使用者複製和貼上專案時所發生的情況。
@@ -42,13 +42,13 @@ ms.locfileid: "72984297"
  **啟用或停用複製、剪下和貼上。**
 在 [DSL Explorer] 中，設定 [**編輯器**] 節點的 [**啟用複製貼**上] 屬性。
 
- **將連結複製到相同的目標。** 例如，若要讓複製的批註方塊連結至相同的主旨元素。
+ **將連結複製到相同的目標。** 例如，將複製的註解方塊連結至相同的主旨項目。
 將角色的 [**傳播複本**] 屬性設定為 [**只將複本傳播至連結**]。 如需詳細資訊，請參閱[自訂連結複製行為](#customizeLinks)。
 
  複製連結的項目。 例如，當您複製新項目時，也會建立任何連結之註解方塊的複本。
 將角色的 [**傳播複本**] 屬性設定為 [將**複本傳播至連結和相反角色扮演**者]。 如需詳細資訊，請參閱[自訂連結複製行為](#customizeLinks)。
 
- **複製並貼上，以快速複製元素。** 一般來說，您剛才複製的專案仍為選取狀態，而且您無法在其上貼上相同類型的元素。
+ **複製並貼上，以快速複製元素。** 一般而言，您剛複製的項目仍處於已選取狀態，因此您無法貼上相同類型的項目。
 將 Element Merge 指示詞加入至網域類別，並加以設定，以正向合併至父類別。 這對拖曳作業會造成相同的影響。 如需詳細資訊，請參閱[自訂元素的建立和移動](../modeling/customizing-element-creation-and-movement.md)。
 
  \-或-
@@ -72,7 +72,7 @@ partial class MyDslClipboardCommandSet
 } }
 ```
 
- **當使用者貼到選取的目標時，建立其他連結。** 例如，當批註方塊貼到專案上時，會在兩者之間建立連結。
+ **當使用者貼到選取的目標時，建立其他連結。** 例如，將註解方塊貼到項目上時，會建立這兩者之間的連結。
 將 Element Merge 指示詞加入至目標網域類別，並加以設定，以處理加入連結的合併作業。 這對拖曳作業會造成相同的影響。 如需詳細資訊，請參閱[自訂元素的建立和移動](../modeling/customizing-element-creation-and-movement.md)。
 
  \-或-
@@ -80,10 +80,10 @@ partial class MyDslClipboardCommandSet
  覆寫 `ClipboardCommandSet.ProcessOnPasteCommand()` 可在呼叫基底方法之後建立其他連結。
 
  **自訂可以將元素複製**到外部應用程式的格式，例如，將框線加入點陣圖表單。
-覆寫 DslPackage 專案中的*MyDsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()`。
+覆寫 DslPackage 專案中的*MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()`。
 
  **自訂 copy 命令將元素複製到剪貼簿的方式，但不是在拖曳作業中。**
-覆寫 DslPackage 專案中的*MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()`。
+覆寫 DslPackage 專案中的*MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()`。
 
  **透過複製和貼上來保留圖形版面配置。**
 當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)中的範例所示範。
@@ -284,12 +284,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  在您的 ElementOperations 類別中定義兩個方法：
 
-- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`，決定是否可以將來源項目拖曳至目標圖形、連接線或圖表上。
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`，決定是否可以將來源專案拖曳至靶心圖表形、連接線或圖表。
 
-- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`，將來源項目結合成目標。
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`，它會將來源元素結合到目標中。
 
 ### <a name="canmerge"></a>CanMerge()
- 呼叫 `CanMerge()` 可決定當滑鼠移過圖表時，應提供給使用者的意見。 此方法的參數包括滑鼠停留的項目，以及有關執行拖曳作業之來源的資料。 使用者可以從畫面上的任何位置拖曳。 因此，來源物件可以是許多不同類型，並可以不同的格式進行序列化。 如果來源為 DSL 或 UML 模型，資料參數是 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 的序列化。 拖曳、複製和工具箱作業使用 ElementGroupPrototypes 代表模型片段。
+ 呼叫 `CanMerge()` 以判斷當滑鼠移到圖表上時，應提供給使用者的意見反應。 此方法的參數包括滑鼠停留的項目，以及有關執行拖曳作業之來源的資料。 使用者可以從畫面上的任何位置拖曳。 因此，來源物件可以是許多不同類型，並可以不同的格式進行序列化。 如果來源為 DSL 或 UML 模型，資料參數是 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 的序列化。 拖曳、複製和工具箱作業使用 ElementGroupPrototypes 代表模型片段。
 
  一個項目群組原型可以包含任意數目的項目和連結。 項目類型可由其 GUID 識別。 此 GUID 是拖曳圖形的 GUID，而不是基礎模型項目的 GUID。 在下列範例中，如果將 UML 圖表中的圖形類別拖曳至這個圖表上，則 `CanMerge()` 傳回 true。
 
@@ -367,7 +367,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 
  當使用者按下 CTRL+C 或使用 [複製] 功能表命令時，會呼叫 <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> 方法。 您可以在**DslPackage\Generated Code\CommandSet.cs**中查看其設定方式。 如需如何設定命令的詳細資訊，請參閱[如何：將命令新增至快捷方式功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
- 您可以藉由在 DslPackage 專案中新增*MyDsl* `ClipboardCommandSet` 的部分類別定義來覆寫 ProcessOnMenuCopyCommand。
+ 您可以藉由在 DslPackage 專案中新增*MyDsl*`ClipboardCommandSet` 的部分類別定義來覆寫 ProcessOnMenuCopyCommand。
 
 ```csharp
 using System.Collections.Generic;

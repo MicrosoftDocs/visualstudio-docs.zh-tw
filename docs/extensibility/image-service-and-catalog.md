@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2647c09718f17235a3024f5787a0b85a7633ee1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 2a1611f8fcc1ba7f754b6d178b70180678cd06d6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982242"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917616"
 ---
 # <a name="image-service-and-catalog"></a>映射服務和目錄
 本指南包含採用 Visual Studio 2015 中引進的 Visual Studio 映射服務和映射目錄的指引和最佳作法。
@@ -46,11 +46,11 @@ ms.locfileid: "72982242"
 ## <a name="how-it-works"></a>運作方式
  映射服務可以提供適用于任何支援之 UI 架構的點陣圖影像：
 
-- WPFBitmapSource
+- WPF： BitmapSource
 
-- WinFormsSystem.web. Bitmap
+- WinForms： System.web 點陣圖
 
-- 32HBITMAP
+- Win32： HBITMAP
 
   影像服務流程圖
 
@@ -89,7 +89,7 @@ ms.locfileid: "72982242"
 </ImageManifest>
 ```
 
- **標點符號**
+ **Symbols**
 
  為方便閱讀和維護，映射資訊清單可以使用符號做為屬性值。 符號的定義如下：
 
@@ -105,10 +105,10 @@ ms.locfileid: "72982242"
 |||
 |-|-|
 |**子項目**|**定義**|
-|匯入|匯入指定資訊清單檔的符號，以用於目前的資訊清單|
-|Guid|符號代表 GUID，且必須符合 GUID 格式|
-|id|符號代表識別碼，且必須為非負整數|
-|String|符號代表任一字元串值|
+|[匯入]|匯入指定資訊清單檔的符號，以用於目前的資訊清單|
+|GUID|符號代表 GUID，且必須符合 GUID 格式|
+|識別碼|符號代表識別碼，且必須為非負整數|
+|字串|符號代表任一字元串值|
 
  符號會區分大小寫，並使用 $ （符號-名稱）語法來參考：
 
@@ -122,13 +122,13 @@ ms.locfileid: "72982242"
 
 |||
 |-|-|
-|**百分號**|**描述**|
+|**符號**|**描述**|
 |CommonProgramFiles|% CommonProgramFiles% 環境變數的值|
 |LocalAppData|% LocalAppData% 環境變數的值|
 |ManifestFolder|包含資訊清單檔案的資料夾|
 |MyDocuments|目前使用者的 [我的文件] 資料夾的完整路徑|
 |ProgramFiles|% ProgramFiles% 環境變數的值|
-|系統|*Windows\System32*資料夾|
+|System|*Windows\System32*資料夾|
 |WinDir|% WinDir% 環境變數的值|
 
  **影像**
@@ -147,8 +147,8 @@ ms.locfileid: "72982242"
 |||
 |-|-|
 |**屬性**|**定義**|
-|Guid|具備影像標記的 GUID 部分|
-|id|具備影像標記的識別碼部分|
+|GUID|具備影像標記的 GUID 部分|
+|識別碼|具備影像標記的識別碼部分|
 |AllowColorInversion|[選用，預設值為 true]指出影像在深色背景上使用時，是否可以以程式設計方式反轉其色彩。|
 
  **來源**
@@ -164,17 +164,17 @@ ms.locfileid: "72982242"
 |||
 |-|-|
 |**屬性**|**定義**|
-|URI|具備定義可從中載入影像之位置的 URI。 它可以是下列其中一項：<br /><br /> -使用 application:///授權單位的[PACK URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br />-絕對元件資源參考<br />-包含原生資源之檔案的路徑|
-|背景|選擇性表示要使用來源的背景類型。<br /><br /> 它可以是下列其中一項：<br /><br /> *Light*來源可以在淺色背景上使用。<br /><br /> *深色*來源可以用於深色背景上。<br /><br /> *Systeminformation.highcontrast*來源可以在高對比模式的任何背景上使用。<br /><br /> *HighContrastLight:* 來源可以在高對比模式的淺背景上使用。<br /><br /> *HighContrastDark:* 來源可以在高對比模式的深色背景上使用。<br /><br /> 如果省略 Background 屬性，則可以在任何背景使用來源。<br /><br /> 如果背景為*淺*、*暗*、 *HighContrastLight*或*HighContrastDark*，則來源的色彩永遠不會反轉。 如果 [背景] 省略或設為*systeminformation.highcontrast*，則來源色彩的反轉是由影像的**AllowColorInversion**屬性所控制。|
+|URI|具備定義可從中載入影像之位置的 URI。 可以是下列其中一項：<br /><br /> -使用 application:///授權單位的[PACK URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br />-絕對元件資源參考<br />-包含原生資源之檔案的路徑|
+|背景|選擇性表示要使用來源的背景類型。<br /><br /> 可以是下列其中一項：<br /><br /> *Light：* 來源可以在淺色背景上使用。<br /><br /> *深色：* 來源可以用於深色背景上。<br /><br /> *Systeminformation.highcontrast：* 來源可以在高對比模式的任何背景上使用。<br /><br /> *HighContrastLight：* 來源可以在高對比模式的淺背景上使用。<br /><br /> *HighContrastDark：* 來源可以在高對比模式的深色背景上使用。<br /><br /> 如果省略 Background 屬性，則可以在任何背景使用來源。<br /><br /> 如果背景為*淺*、*暗*、 *HighContrastLight*或*HighContrastDark*，則來源的色彩永遠不會反轉。 如果 [背景] 省略或設為*systeminformation.highcontrast*，則來源色彩的反轉是由影像的**AllowColorInversion**屬性所控制。|
 
 \<的來源 > 專案只能有下列其中一個選擇性子項目：
 
 ||||
 |-|-|-|
 |**目**|**屬性（全部必要）**|**定義**|
-|\<大小 >|值|來源將用於指定大小的影像（以裝置為單位）。 影像將會是正方形。|
+|\<大小 >|{2&gt;值&lt;2}|來源將用於指定大小的影像（以裝置為單位）。 影像將會是正方形。|
 |\<SizeRange >|MinSize、MaxSize|來源將用於從 MinSize 到大小上限（裝置單位）的影像。 影像將會是正方形。|
-|\<維度 >|Width、Height|來源將用於指定的寬度和高度（以裝置為單位）的影像。|
+|\<維度 >|寬度, 高度|來源將用於指定的寬度和高度（以裝置為單位）的影像。|
 |\<DimensionRange >|MinWidth、MinHeight、<br /><br /> MaxWidth、MaxHeight|來源將用於從最小寬度/高度到所含的最大寬度/高度（以裝置單位）為單位的影像。|
 
  \<的來源 > 專案也可以有選擇性的 \<NativeResource > 子項目，以定義從原生元件（而非 managed 元件）載入的 \<來源 >。
@@ -186,8 +186,8 @@ ms.locfileid: "72982242"
 |||
 |-|-|
 |**屬性**|**定義**|
-|Type|具備原生資源的類型，XAML 或 PNG|
-|id|具備原生資源的整數識別碼部分|
+|類型|具備原生資源的類型，XAML 或 PNG|
+|識別碼|具備原生資源的整數識別碼部分|
 
  **ImageList**
 
@@ -203,8 +203,8 @@ ms.locfileid: "72982242"
 |||
 |-|-|
 |**屬性**|**定義**|
-|Guid|具備影像標記的 GUID 部分|
-|id|具備影像標記的識別碼部分|
+|GUID|具備影像標記的 GUID 部分|
+|識別碼|具備影像標記的識別碼部分|
 |外部|[選用，預設值為 false]指出影像標記是否參考目前資訊清單中的影像。|
 
  所包含之影像的標記不需要參考在目前資訊清單中定義的影像。 如果在影像媒體櫃中找不到包含的影像，則會在其位置中使用空白的預留位置影像。
@@ -563,7 +563,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
  **如果 .vsct 檔案也需要由較舊版本的 Visual Studio 讀取，該怎麼辦？**
 
- 較舊版本的 Visual Studio 無法辨識**IconIsMoniker**命令旗標。 您可以在支援的 Visual Studio 版本上，使用來自映射服務的映射，但繼續在舊版的 Visual Studio 上使用舊樣式的映射。 若要這樣做，您可以將 *.vsct*檔案保持不變（因而與舊版 Visual Studio 相容），並建立 CSV （逗點分隔值）檔案，該檔案會從 *.vsct*檔案的 \<點陣圖中定義的 GUID/識別碼組進行對應 >元素至影像標記 GUID/識別碼組。
+ 較舊版本的 Visual Studio 無法辨識**IconIsMoniker**命令旗標。 您可以在支援的 Visual Studio 版本上，使用來自映射服務的映射，但繼續在舊版的 Visual Studio 上使用舊樣式的映射。 若要這樣做，您可以將 *.vsct*檔案保持不變（因而與舊版 Visual Studio 相容），並建立 CSV （逗點分隔值）檔案，該檔案會從 *.vsct*檔案的 \<點陣圖 > 專案中定義的 GUID/識別碼配對對應到影像標記 GUID/識別碼組。
 
  對應 CSV 檔案的格式為：
 
@@ -579,20 +579,20 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]
 ```
 
- **IconMappingFilename**是以隱含方式 $PackageFolder 根的相對路徑（如上述範例所示），或在環境變數所定義的目錄中明確地建立根目錄的絕對路徑，例如 *@ "%UserProfile%\dir1\dir2\MyMappingFile. csv "* 。
+ **IconMappingFilename**是以隱含方式 $PackageFolder 根的相對路徑（如上述範例所示），或在環境變數所定義的目錄中明確地建立根目錄的絕對路徑，例如 *@ "%UserProfile%\dir1\dir2\MyMappingFile.csv"* 。
 
 ## <a name="how-do-i-port-a-project-system"></a>如何? 為專案系統建立埠嗎？
  **如何提供專案的 ImageMonikers**
 
 1. 在專案的**IVsHierarchy**上執行**VSHPROPID_SupportsIconMonikers** ，並傳回 true。
 
-2. 執行任一項**VSHPROPID_IconMonikerImageList** （如果原始專案使用**VSHPROPID_IconImgList**）或**VSHPROPID_IconMonikerGuid**、 **VSHPROPID_IconMonikerId**、 **VSHPROPID_OpenFolderIconMonikerGuid**、**VSHPROPID_OpenFolderIconMonikerId** （如果原始專案使用**VSHPROPID_IconHandle**和**VSHPROPID_OpenFolderIconHandle**）。
+2. 執行**VSHPROPID_IconMonikerImageList** （如果使用**VSHPROPID_IconImgList**的原始專案）或**VSHPROPID_IconMonikerGuid**、 **VSHPROPID_IconMonikerId**、 **VSHPROPID_OpenFolderIconMonikerGuid**、 **VSHPROPID_OpenFolderIconMonikerId** （如果原始專案使用**VSHPROPID_IconHandle**和**VSHPROPID_OpenFolderIconHandle**）。
 
 3. 變更圖示的原始 VSHPROPIDs 的執行方式，以便在擴充點要求時，建立圖示的「舊版」版本。 **IVsImageService2**提供取得這些圖示所需的功能
 
    **VB/C# project 類別的額外需求**
 
-   只有在您偵測到您的專案是**最外層**的類別時，才會執行**VSHPROPID_SupportsIconMonikers** 。 否則，實際的最外層類別在現實中可能不支援影像標記，而您的基底類別可以有效地「隱藏」自訂映射。
+   只有在偵測到您的專案是**最外層**的類別時，才執行**VSHPROPID_SupportsIconMonikers** 。 否則，實際的最外層類別在現實中可能不支援影像標記，而您的基底類別可以有效地「隱藏」自訂映射。
 
    **如何? 使用 CPS 中的映射名字標記嗎？**
 
@@ -720,7 +720,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. 更新您的程式碼，以使用「映射服務」透過更新的對應來要求「名字」。 （這可能表示更新至 managed 程式碼的**CrispImages** ，或從映射服務要求 HBITMAPs 或 HICONs，並針對機器碼傳遞這些專案）。
 
 ## <a name="testing-your-images"></a>測試您的映射
- 您可以使用影像庫檢視器工具來測試您的映射資訊清單，以確定所有專案都已正確撰寫。 您可以在[Visual Studio 2015 SDK](visual-studio-sdk.md)中找到此工具。 此工具和其他專案的檔可在[這裡](https://aka.ms/VSImageThemeTools)找到。
+ 您可以使用影像庫檢視器工具來測試您的映射資訊清單，以確定所有專案都已正確撰寫。 您可以在[Visual Studio 2015 SDK](visual-studio-sdk.md)中找到此工具。 此工具和其他專案的檔可在[這裡](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015)找到。
 
 ## <a name="additional-resources"></a>其他資源
 
@@ -729,7 +729,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  如需最新範例，請參閱[http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) 。
 
-### <a name="tooling"></a>工具
+### <a name="tooling"></a>Tooling
  已建立一組映射服務的支援工具，以協助建立/更新可與映射服務搭配使用的 UI。 如需每個工具的詳細資訊，請參閱工具隨附的檔。 這些工具組含在[Visual Studio 2015 SDK](visual-studio-sdk.md)中。
 
  **ManifestFromResources**
@@ -1028,7 +1028,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphClosedFolder||FolderClosed|
     |GlyphArrow||GoToNext|
     |GlyphCSharpFile||CSFileNode|
-    |GlyphCSharpExpansion||片段|
+    |GlyphCSharpExpansion||程式碼片段|
     |GlyphKeyword||IntellisenseKeyword|
     |GlyphInformation||StatusInformation|
     |GlyphReference||ClassMethodReference|

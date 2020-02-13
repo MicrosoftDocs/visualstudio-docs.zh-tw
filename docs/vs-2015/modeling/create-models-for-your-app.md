@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300253"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852013"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 模型圖表可幫助您了解、釐清和溝通程式碼和軟體必須支援之使用者需求的想法。 例如，您可以使用整合模組化語言 (UML) 之使用案例圖、活動圖、類別圖和循序圖描述和溝通使用者需求。 若要描述和溝通系統的功能，您可以使用 UML 元件圖、類別圖、活動圖和循序圖。
 
- 請參閱[Channel 9 影片：透過模型化改善架構](https://go.microsoft.com/fwlink/?LinkID=252078)。
+ 請參閱[Channel 9 影片：透過模型化改善架構](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)。
 
  您可在這個版本中建立下列 UML 圖表：
 
@@ -73,7 +73,7 @@ ms.locfileid: "74300253"
 
 ## <a name="common-tasks"></a>一般工作
 
-|**本文**|**Task**|
+|**主題**|**Task**|
 |---------------|--------------|
 |[建立 UML 模型專案和圖表](../modeling/create-uml-modeling-projects-and-diagrams.md)|**建立模型**並新增圖表。|
 |[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)|**繪製圖表**以編輯模型。|
@@ -85,7 +85,7 @@ ms.locfileid: "74300253"
 
 ## <a name="related-tasks"></a>相關工作
 
-|**本文**|**Task**|
+|**主題**|**Task**|
 |---------------|--------------|
 |[視覺化程式碼](../modeling/visualize-code.md)|建立 Code Map 和分層圖，藉此深入了解不熟悉的程式碼。|
 |[模型使用者需求](../modeling/model-user-requirements.md)|使用模型來釐清和溝通使用者的需求。|
@@ -98,4 +98,4 @@ ms.locfileid: "74300253"
 
 |**分類**|**Links**|
 |------------------|---------------|
-|**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|

@@ -1,5 +1,5 @@
 ---
-title: 如何：將 Visual C++ 專案升級為 Visual Studio 2015 | Microsoft Docs
+title: 作法：將 Visual C++ 專案升級為 Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,17 +12,17 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: b33b1b47ad4c32aabe09aae5a66fe3f02aeb1487
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 60ba1ad7f1ed467cb1a396f80228b8915bd62a31
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300375"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918793"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>如何：將 Visual C++ 專案升級為 Visual Studio 2015
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>作法：將 Visual C++ 專案升級為 Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱 [VisualC++ 移植和升級指南](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide)。
+如需 Visual Studio 2017 的最新文件，請參閱 [VisualC++ 移植和升級指南](/cpp/porting/visual-cpp-porting-and-upgrading-guide)。
 
 第一次開啟使用舊版 Visual Studio 建立的 Visual C++ 專案時，系統可能會提示您更新專案。 訊息詢問您是否要升級到 Visual C++ 編譯器和程式庫的最新版本。 升級選項取決於用於建立專案的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 版本。
 
@@ -51,7 +51,7 @@ ms.locfileid: "74300375"
 - 若是 [!INCLUDE[cppcli](../includes/cppcli-md.md)] 專案，則會將 TargetFrameworkVersion 變更為 .NET Framework 4.5.2。
 
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>繼續使用自訂 PlatformToolset
- 如果您想要繼續使用 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]中的自訂 PlatformToolset，此工具組必須位於 x86 電腦的 %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ 底下，或者位於 x64 電腦的 %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ 底下。 如需如何建立自訂 PlatformToolset 的詳細資訊，請參閱 Visual C++ 團隊部落格中的 [C++ 原生多目標](https://go.microsoft.com/fwlink/?LinkId=248587) 。
+ 如果您想要繼續使用 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]中的自訂 PlatformToolset，此工具組必須位於 x86 電腦的 %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ 底下，或者位於 x64 電腦的 %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ 底下。 如需如何建立自訂 PlatformToolset 的詳細資訊，請參閱 Visual C++ 團隊部落格中的 [C++ 原生多目標](https://blogs.msdn.com/b/vcblog/archive/2009/12/08/c-native-multi-targeting.aspx) 。
 
 ## <a name="see-also"></a>另請參閱
- [Visual C++ 移植和升級指南](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [移植、移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+ [Visual C++ 移植及升級指南](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [移植、移轉及升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

@@ -5,17 +5,17 @@ ms.custom: seodec18
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d47e31b70e56ed0b0e0957d2407a043329a5a10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: adda66bbccafa3c1d7f20d60a3f8ee0a4995353c
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594535"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027588"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
@@ -30,7 +30,7 @@ ms.locfileid: "75594535"
 
 以下是您在登入後預期及可執行事項的完整清單：
 
-- **存取 Visual Studio Dev Essentials 方案** - 此方案包含免費的軟體供應項目、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 。
+- **存取 Visual Studio Dev Essentials 方案** - 此方案包含免費的軟體供應項目、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 。
 
 - **同步處理您的 Visual Studio 設定** - 您自訂的設定 (例如按鍵繫結關係、視窗配置和色彩佈景主題)，會在您從任何裝置登入 Visual Studio 時立即套用。 請參閱 [Visual Studio 中的同步設定](../ide/synchronized-settings-in-visual-studio.md)。
 
@@ -66,7 +66,7 @@ ms.locfileid: "75594535"
 
 如果您在登入時遇到任何問題，請參閱[帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)頁面來取得協助。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)

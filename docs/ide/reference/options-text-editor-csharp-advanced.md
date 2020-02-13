@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2f4c01a627fb2cd1b581331dd086e2d783d475f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f6bd03b9d652909022adab169682160ae541677
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596225"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76124500"
 ---
 # <a name="options-text-editor-c-advanced"></a>選項、文字編輯器、C#、進階
 
@@ -87,7 +87,7 @@ ms.locfileid: "75596225"
    using System.Linq;
    ```
 
-- 為參考組件中的類型建議 Using
+- 針對 .NET Framework 元件中的類型建議 using
 - 為 NuGet 套件中的類型建議 Using
 
    選取這些選項後，[快速動作](../quick-actions.md)可用來安裝 NuGet 套件，並為未參考的類型新增 `using` 指示詞。

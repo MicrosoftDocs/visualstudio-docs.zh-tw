@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 34225858e88f4ee969f0e51013bcdb04812d425f
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587273"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144776"
 ---
 # <a name="overview-of-source-code-analyzers"></a>原始程式碼分析器的總覽
 
@@ -25,10 +25,10 @@ ms.locfileid: "75587273"
 
 - 有些分析器內建 Visual Studio。 這些分析器的診斷識別碼（或程式碼）的格式為 IDExxxx，例如 IDE0067。 大部分的內建分析器都會檢查程式[代碼樣式](../ide/code-styles-and-code-cleanup.md)，而您可以在 [[文字編輯器](../ide/code-styles-and-code-cleanup.md)] [選項] 頁面或在[EditorConfig](../ide/editorconfig-code-style-settings-reference.md)檔案中設定喜好設定。 幾個內建分析器會查看程式碼品質。
 
-- 您可以將其他分析器安裝為 NuGet 套件或 Visual Studio 延伸模組。 例如：
+- 您可以將其他分析器安裝為 NuGet 套件或 Visual Studio 延伸模組。 例如，
 
   - [FxCop 分析器](../code-quality/install-fxcop-analyzers.md)，Microsoft 建議的程式碼品質分析器
-  - 協力廠商分析器，例如[stylecop 能夠](https://www.nuget.org/packages/StyleCop.Analyzers/)、 [Roslynator](https://www.nuget.org/packages/Roslynator/)、 [XUnit 分析器](https://www.nuget.org/packages/xunit.analyzers/)和[Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
+  - 協力廠商分析器，例如[stylecop 能夠](https://www.nuget.org/packages/StyleCop.Analyzers/)、 [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/)、 [XUnit 分析器](https://www.nuget.org/packages/xunit.analyzers/)和[Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
 如果分析器發現違反規則，則會在程式碼編輯器中回報（做為有問題的程式碼下的*波浪*線）和 [錯誤清單] 視窗。
 
@@ -93,7 +93,7 @@ Roslyn 程式碼分析器不僅會回報舊版分析所需的相同類型問題�
 > [!div class="nextstepaction"]
 > [在 Visual Studio 中使用程式碼分析器](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [分析器常見問題集](analyzers-faq.md)
 - [撰寫您自己的程式碼分析器](../extensibility/getting-started-with-roslyn-analyzers.md)

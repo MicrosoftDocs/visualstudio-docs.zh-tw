@@ -11,19 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 186df377670ffec2c06e0214d25b8824679b6f83
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 63fa0db72a01ddf1f6e1003fc27cf6a28128e036
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188873"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269122"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>開始開發 Visual Studio 擴充功能
 
 如果您之前從未寫過 Visual Studio 的延伸模組，您可能會遇到一些問題。 這裡列出了一些最常見的部分。 如果您沒有看到您要尋找的資訊，請使用 [意見反應] 按鈕（畫面底部的 [**此頁面有説明嗎？** ]）來詢問您想要的內容。
 
 > [!NOTE]
-> 本文適用于 Windows 上的 Visual Studio。 如 Visual Studio for Mac，請參閱[擴充 Visual Studio for Mac](/visualstudio/mac/extending-visual-studio-mac)。
+> 本文適用于 Windows 上的 Visual Studio。 如 Visual Studio for Mac，請參閱[擴充 Visual Studio for Mac](/visualstudio/mac/extending-visual-studio-mac)。 如 Visual Studio Code，請參閱[Visual Studio Code 延伸模組 API](https://code.visualstudio.com/api)。
 
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>開發 Visual Studio 擴充功能需要哪些軟體？
 
@@ -96,3 +96,4 @@ ms.locfileid: "73188873"
 ## <a name="see-also"></a>請參閱
 
 - [擴充 Visual Studio for Mac](/visualstudio/mac/extending-visual-studio-mac)
+- [擴充 Visual Studio Code](https://code.visualstudio.com/api)

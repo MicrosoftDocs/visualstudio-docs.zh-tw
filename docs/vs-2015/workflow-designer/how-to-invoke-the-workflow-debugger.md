@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 13fd54eeebf0323fcb9b8cad6a8cd8b75ae11fb3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e702b402d5350641aa01d341106634efe5f6c6c4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292887"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849274"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>HOW TO：叫用工作流程偵錯工具
 一般而言，偵錯工作流程的方式就如同偵錯以其他 Visual Studio 程式語言撰寫的程式。 您可以利用下列方式啟動工作流程偵錯工具：
@@ -23,7 +23,7 @@ ms.locfileid: "74292887"
 
 - 按**F5**開始執行工作流程的實例，或在叫用中斷點後繼續執行。
 
-- 使用遠端偵錯。 如需使用遠端偵錯程式的詳細資訊，請參閱[如何：啟用遠端偵錯](https://go.microsoft.com/fwlink/?LinkId=196257)。
+- 使用遠端偵錯。 如需使用遠端偵錯程式的詳細資訊，請參閱[如何：啟用遠端偵錯](https://msdn.microsoft.com/library/febz73k0.aspx)。
 
     > [!NOTE]
     > 如果工作流應用程式的目標為 x86 架構，並裝載在執行64位作業系統的電腦上，則除非遠端電腦上已安裝 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]，或工作流程應用程式的目標變更為 [**任何 CPU**]，否則遠端偵錯程式將無法運作。
@@ -40,5 +40,5 @@ ms.locfileid: "74292887"
 
 - 如果您要建立工作流程主控台應用程式專案，只要按下**F5**即可開始在您的應用程式和工作流程中進行偵測。 如果您正在自行建置活動程式庫，必須使用可執行的裝載應用程式做為啟始專案。 若要在**方案總管**中設定啟始專案，請以滑鼠右鍵按一下主控制項的專案名稱，然後選取 [**設定為啟始專案**]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [如何：在工作流程中設定中斷點](../workflow-designer/how-to-set-breakpoints-in-workflows.md)[使用工作流程設計工具的調試工作流程](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)

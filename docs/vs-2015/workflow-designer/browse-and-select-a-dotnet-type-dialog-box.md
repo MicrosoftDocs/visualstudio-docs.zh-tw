@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8e25ad181202a2c7994c116e2220426ca3d8509
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 922be22619ee0bd16e2e5ac563999be7db81d45e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297619"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851428"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>瀏覽並選取 .NET 類型對話方塊
 當您選取 [**流覽類型 ...** ] 時，在 [**屬性**] 視窗中，對話方塊或設計工具（例如變數設計工具） 從資料類型清單中，是 [**流覽並選取 .Net 類型**] 對話方塊（在縮寫格式中稱為「類型瀏覽器」）。 在這個對話方塊中，您可以從組件與專案的樹狀檢視中選擇型別。
@@ -31,7 +31,7 @@ ms.locfileid: "74297619"
 - 在 <xref:System.Activities.Statements.TryCatch> 活動上加入 catch 時。
 
 > [!NOTE]
-> 型別瀏覽器可以顯示 Visual Basic 不規則陣列型別，而不是多維陣列型別。 如需詳細資訊，請參閱[不規則陣列](https://go.microsoft.com/fwlink/?LinkId=195226)和[多維陣列](https://go.microsoft.com/fwlink/?LinkId=195227)。
+> 型別瀏覽器可以顯示 Visual Basic 不規則陣列型別，而不是多維陣列型別。 如需詳細資訊，請參閱[不規則陣列](https://msdn.microsoft.com/library/hkhhsz9t(VS.90).aspx)和[多維陣列](https://msdn.microsoft.com/library/d2de1t93(VS.90).aspx)。
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>從型別瀏覽器選取值或參考型別
 
@@ -39,7 +39,7 @@ ms.locfileid: "74297619"
 
 1. 在 [**類型名稱**] 方塊中，輸入您要使用之類型的名稱。
 
-2. 執行下列任一步驟：
+2. 請執行下列其中一項動作：
 
     - 一旦您要使用的型別名稱出現在 [**型別名稱**] 方塊的樹狀結構中，請按兩下該型別來選取它。
 
@@ -70,5 +70,5 @@ ms.locfileid: "74297619"
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>使用型別瀏覽器對話方塊選取服務合約
  選取服務合約型別時，型別瀏覽器只顯示具有 <xref:System.ServiceModel.ServiceContractAttribute> 屬性的型別。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [使用活動設計工具](../workflow-designer/using-the-activity-designers.md)

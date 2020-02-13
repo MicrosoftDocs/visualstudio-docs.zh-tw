@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6db11d583818f1ea63c490cd8f588cb005b50a8d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cc3a18fe1ce76b6214766ba45fc5441e80c56cef
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295927"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918481"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Visual Studio 週期原則例外
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Visual Studio 包含一組編譯器、語言、執行階段、環境和其他資
 |[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|.NET 3.5 SDK<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|.NET 4.5 SDK|  
 |[.NET 4.5.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=.NET%20Framework%204.5.1&Filter=FilterNO)|.NET 4.5.1 MT 套件 (傳統)<br /><br /> .NET 4.5.1 多目標套件 (市集)<br /><br /> .NET 4.5.1 OOB MSU<br /><br /> .NET 4.5.1 可轉散發套件<br /><br /> .NET 4.5.1 可轉散發套件語言套件<br /><br /> .NET 4.5.1 SDK|  
-|[ASP.NET Web 堆疊](https://go.microsoft.com/fwlink/?LinkId=328918)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET Web API<br /><br /> ASP.NET Web API 2<br /><br /> ASP.NET Web Pages 2<br /><br /> ASP.NET Web Pages 3|  
-|[Entity Framework 6](https://go.microsoft.com/fwlink/?LinkId=328950)|Entity Framework 6|  
-|[Exchange 2013](https://go.microsoft.com/fwlink/?LinkId=328950)|Exchange Web 服務|  
-|[Microsoft OWIN](https://go.microsoft.com/fwlink/?LinkId=328951)|Microsoft OWIN|  
-|[Microsoft Web Developer Tools 2013](https://go.microsoft.com/fwlink/?LinkId=328952)|Microsoft Web Developer Tools 2013|  
-|這些元件的更新是透過 NuGet 散發，而且不遵循標準的 Microsoft 週期原則。  請參閱 [http://docs.nuget.org/](https://docs.microsoft.com/nuget/) 以取得詳細資訊。|適用於 Microsoft .NET Framework 4.5 的 JSON Web Token Handler<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web Optimization Framework<br /><br /> WebGrease|  
-|[ODataLib](https://go.microsoft.com/fwlink/?LinkId=328954)|ODataLib|  
+|[ASP.NET Web 堆疊](https://support.microsoft.com/kb/2902020)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET Web 應用程式開發介面<br /><br /> ASP.NET Web API 2<br /><br /> ASP.NET Web Pages 2<br /><br /> ASP.NET Web Pages 3|  
+|[Entity Framework 6](https://support.microsoft.com/kb/2902020)|Entity Framework 6|  
+|[Exchange 2013](https://support.microsoft.com/kb/2902020)|Exchange Web 服務|  
+|[Microsoft OWIN](https://support.microsoft.com/kb/2902020)|Microsoft OWIN|  
+|[Microsoft Web Developer Tools 2013](https://support.microsoft.com/kb/2902020)|Microsoft Web Developer Tools 2013|  
+|這些元件的更新是透過 NuGet 散發，而且不遵循標準的 Microsoft 週期原則。  請參閱 [http://docs.nuget.org/](/nuget/) 以取得詳細資訊。|適用於 Microsoft .NET Framework 4.5 的 JSON Web Token Handler<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web Optimization Framework<br /><br /> WebGrease|  
+|[ODataLib](https://support.microsoft.com/kb/2902020)|ODataLib|  
 |[Office 2013](https://support.microsoft.com/lifecycle/search/?p1=16674)|Open XML SDK|  
 |[線上服務原則](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Ads SDK|  
 |[SharePoint 2013](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=sharepoint%20server%202013&Filter=FilterNO)|SharePoint 用戶端元件<br /><br /> SharePoint Foundation 2013<br /><br /> Windows Identity Foundation 擴充功能|  
@@ -44,7 +44,7 @@ Visual Studio 包含一組編譯器、語言、執行階段、環境和其他資
 |[SQL Server 2012](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202012&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> SQL 命令列公用程式<br /><br /> SQL 語言服務 - IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2012 SP1<br /><br /> SQL 系統 CLR 類型 (SQL Server 2012)<br /><br /> SQLDOM|  
 |[SQL Server 2014](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> SQL 命令列公用程式<br /><br /> SQL 語言服務 - IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> SQL 系統 CLR 類型 (SQL Server 2014)<br /><br /> SQLDOM|  
 |[SQL Server Compact Edition 4.0](https://support.microsoft.com/lifecycle/search/?p1=16106)|SQL Server Compact Edition 4.0|  
-|[WCF RIA Services v1.0 SP2](https://go.microsoft.com/fwlink/?LinkId=328955)|WCF RIA Services v1.0 SP2|  
+|[WCF RIA Services v1.0 SP2](https://support.microsoft.com/kb/2902020)|WCF RIA Services v1.0 SP2|  
 |[Windows Server 2008](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=Windows%20Server%202008&Filter=FilterNO)|適用於 Windows Server 2008 的 Windows Web 服務 (WWS)|  
 |[Windows 7](https://support.microsoft.com/lifecycle/search/?c2=14019)|Windows 7 SDK|  
 |[Windows 8](https://support.microsoft.com/lifecycle/search/?c2=16796)|Windows 8 SDK|  

@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4af96ad0f76414468fd194b7079b3c4dbdaf2a4c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586662"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916729"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio 中的 Entity Framework Tools
 
@@ -43,7 +43,7 @@ Entity Framework 工具會安裝為 Visual Studio 安裝程式中**資料儲存�
 
 工具會產生或修改 *.edmx*檔案。 此 *.edmx*檔包含描述概念模型、儲存模型，以及它們之間的對應資訊。 如需詳細資訊，請參閱[EDMX](/ef/ef6/)。
 
-[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4)可協助您建立使用實體資料模型的應用程式。 Power tool 可以產生概念模型、驗證現有模型、產生包含以概念模型為基礎之物件類別的原始程式碼檔案，以及產生包含模型所產生之視圖的原始程式碼檔。 如需詳細資訊，請參閱[預先產生的對應視圖](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views)。
+[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4)可協助您建立使用實體資料模型的應用程式。 Power tool 可以產生概念模型、驗證現有模型、產生包含以概念模型為基礎之物件類別的原始程式碼檔案，以及產生包含模型所產生之視圖的原始程式碼檔。 如需詳細資訊，請參閱[預先產生的對應視圖](/ef/ef6/fundamentals/performance/pre-generated-views)。
 
 ## <a name="related-topics"></a>相關主題
 

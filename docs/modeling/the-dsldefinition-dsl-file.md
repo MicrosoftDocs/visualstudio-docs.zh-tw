@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99145768ef4e0c37f729477ee598628a3b8d0e9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605982"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114916"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔
 
@@ -28,7 +28,7 @@ ms.locfileid: "72605982"
 
 根項目是 \<Dsl >，而它的屬性會識別特定領域語言的名稱、命名空間，以及版本控制的主要和次要版本號碼。 `DslDefinitionModel` 結構描述定義有效 DslDefinition.dsl 檔的內容和結構。
 
-@No__t_0Dsl > 根項目的子項目如下所示：
+\<Dsl > 根項目的子項目如下所示：
 
 ### <a name="classes"></a>類別
 
@@ -40,9 +40,9 @@ ms.locfileid: "72605982"
 
 ### <a name="types"></a>型別
 
-此區段定義每一種類型以及其命名空間。 網域屬性有兩種類型。 `DomainEnumerations` 定義於模型，並產生類型到 DomainModel.cs。 `ExternalTypes` 是指在其他地方定義的類型 (如 `String` 或 `Int32`)，且不會產生任何內容。
+此區段定義每一種類型以及其命名空間。 網域屬性有兩種類型。 `DomainEnumerations` 是在模型中定義，並會在 DomainModel.cs 中產生類型。 `ExternalTypes` 參考在其他地方定義的類型（例如 `String` 或 `Int32`），而不會產生任何專案。
 
-### <a name="shapes"></a>圖形
+### <a name="shapes"></a>形狀
 
 此區段定義的圖形說明模型在設計工具中的顯示方式。 這些幾何圖形會對應至 [圖表] 區段之模型中的類別。
 
@@ -115,7 +115,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 外部類型不限於標準程式庫類型。
 
-### <a name="enumerations"></a>列舉
+### <a name="enumerations"></a>列舉型別
 
 一般的列舉規格類似以下範例：
 
@@ -148,7 +148,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 </DomainClass>
 ```
 
-`NamedElement` 是數個其他類別 (例如 `Component`) 的基底，此基底除了 `Name` 屬性 (繼承自 `NamedElement`) 外還有自己的屬性。 BaseClass 子節點包含 Moniker 參考。 由於參考的類別在相同的命名空間中，因此 Moniker 中只需要其名稱：
+`NamedElement` 是多個其他類別的基底，例如 `Component`，除了 `Name` 屬性之外，還會有自己的屬性，而這會繼承自 `NamedElement`。 BaseClass 子節點包含 Moniker 參考。 由於參考的類別在相同的命名空間中，因此 Moniker 中只需要其名稱：
 
 ```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -168,13 +168,13 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 - **識別碼。** 此屬性是 GUID。 如果您沒有在檔案中提供值，則「網域指定的語言設計工具」將建立一個值。 (在此文件的圖中，通常會忽略此屬性以節省空間。)
 
-- **名稱和命名空間。** 這些屬性會指定所產生程式碼中類別的名稱和命名空間。 它們在網域指定的語言內必須都是唯一的。
+- **名稱和命名空間。** 這些屬性指定所產生程式碼中的類別之名稱和命名空間。 它們在網域指定的語言內必須都是唯一的。
 
-- **InheritanceModifier.** 這個屬性是「abstract」、「sealed」或「無」。
+- **InheritanceModifier.** 這個屬性為「抽象」、「密封」或無。
 
 - **DisplayName.** 此屬性是在 [**屬性**] 視窗中顯示的名稱。 DisplayName 屬性可以包含空格和其他標點符號。
 
-- **GeneratesDoubleDerived.** 如果此屬性設定為 true，則會產生兩個類別，其中一個是另一個的子類別。 所有產生的方法都在基底類別中，而建構函式在子類別中。 設定此屬性可讓您覆寫自訂程式碼中的所有產生的方法。
+- **GeneratesDoubleDerived.** 如果此屬性設為 true，則會產生兩個類別，其中一個是另一個的子類別。 所有產生的方法都在基底類別中，而建構函式在子類別中。 設定此屬性可讓您覆寫自訂程式碼中的所有產生的方法。
 
 - **HasCustomConstructor**。 如果此屬性設為 true，則會從產生的程式碼中省略建構函式，讓您可以撰寫您自己的版本。
 
@@ -182,13 +182,13 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 - **BaseClass**。 如果您指定基底類別，其類型必須相同。 例如，網域類別必須有另一個網域類別做為其基底，而區間圖形必須有區間圖形。 如果您不指定基底類別，所產生程式碼中的類別會從標準架構類別中衍生。 例如，網域類別會從 `ModelElement` 中衍生。
 
-- **屬性**。 此屬性 (attribute) 包含的屬性 (properties) 在異動控制之下維護，並在儲存模型時保存。
+- **屬性**. 此屬性 (attribute) 包含的屬性 (properties) 在異動控制之下維護，並在儲存模型時保存。
 
 - **ElementMergeDirectives**。 每一個項目合併指示詞會控制另一個類別的不同執行個體加入父類別執行個體的方法。 您可以在本主題稍後找到項目合併指示詞的更多詳細資料。
 
 - 系統會針對 `Classes` 區段中所列出的每一個網域類別各產生一個 C# 類別。 C# 類別產生於 Dsl\GeneratedCode\DomainClasses.cs。
 
-### <a name="properties"></a>內容
+### <a name="properties"></a>屬性
 
 每一個網域屬性都有名稱和類型。 該名稱在網域類別及其可轉移基底內必須是唯一的。
 
@@ -212,7 +212,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 - **IsElementName**。 如果此屬性設為 true，在建立父類別的執行個體時，其值會自動設為唯一值。 此屬性 (attribute) 可以在每個類別中只針對一個屬性 (property) 設為 true，且此類別必須有字串類型。 在「元件圖」範例中，`Name` 中的 `NamedElement` 屬性將 `IsElementName` 設為 true。 每當使用者建立 `Component` 項目 (繼承自 `NamedElement`) 時，名稱會自動初始化為 "Component6" 之類的名稱。
 
-- `DefaultValue` 如果您已指定此屬性，則會針對此類別的新執行個體，將您指定的值指派給此屬性。 如果設定 `IsElementName`，DefaultValue 屬性會指定新字串的初始部分。
+- `DefaultValue`。 如果您已指定此屬性，則會針對此類別的新執行個體，將您指定的值指派給此屬性。 如果設定 `IsElementName`，DefaultValue 屬性會指定新字串的初始部分。
 
 - **Category**是屬性會在 [**屬性**] 視窗中顯示的標頭。
 
@@ -465,7 +465,7 @@ ComponentModel 是語言的根類別，具有元件和註解的項目合併指�
 
 (連接關聯性具有自己的 XML 類別資料，該資料提供其項目和屬性名稱。)
 
-如果**OmitElement**屬性設定為 true，則會省略關聯性角色名稱，這會縮寫序列化的檔案，而且如果兩個類別沒有一個以上的關聯性，則會明確。 例如:
+如果**OmitElement**屬性設定為 true，則會省略關聯性角色名稱，這會縮寫序列化的檔案，而且如果兩個類別沒有一個以上的關聯性，則會明確。 例如：
 
 ```xml
 <component name="Component3">
@@ -498,7 +498,7 @@ DslDefinition.dsl 檔本身是序列化的檔案，符合網域指定的語言�
       <XmlClassData ...>...</XmlClassData>
 ```
 
-- ConnectorHasDecorators 是 `Connector` 與 `Decorator` 之間的內嵌關聯性。 `UseFullForm` 已設定，可讓關聯性名稱和連接器物件之每個連結的屬性清單一起顯示 。 不過，`OmitElement` 也已設定，這樣就沒有任何 `RoleElementName` 會封入內嵌於 `Connector` 內的多個連結：
+- ConnectorHasDecorators 是 `Connector` 與 `Decorator` 之間的內嵌關聯性。 已設定 `UseFullForm`，讓關聯性的名稱與連接器物件中每個連結的屬性清單一併顯示。 不過，`OmitElement` 也已設定，這樣就沒有任何 `RoleElementName` 會封入內嵌於 `Connector` 內的多個連結：
 
 ```xml
 <Connector Name="AssociationLink" ...>

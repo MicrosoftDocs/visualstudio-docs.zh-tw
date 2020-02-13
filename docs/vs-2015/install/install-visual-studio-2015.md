@@ -19,18 +19,18 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a31bc328c20aada21b05edeef61886d57e914165
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dc84fc135e59a43a05ce66186c4a44e9e31f8f2c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298049"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851043"
 ---
 # <a name="install-visual-studio-2015"></a>安裝 Visual Studio 2015
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-此頁面包含可協助您安裝 **Visual Studio 2015** 的詳細資訊，Visual Studio 2015 是適用於開發人員的生產力工具整合式套件。 其中也包含連結，協助您快速取得 [功能](https://www.visualstudio.com/news/vs2015-vs.aspx)、 [版本](https://go.microsoft.com/fwlink/?LinkID=242142)、 [系統需求](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs)、 [下載](https://go.microsoft.com/fwlink/?LinkId=517106)，以及其他項目的詳細資訊。
+此頁面包含可協助您安裝 **Visual Studio 2015** 的詳細資訊，Visual Studio 2015 是適用於開發人員的生產力工具整合式套件。 其中也包含連結，協助您快速取得 [功能](https://www.visualstudio.com/news/vs2015-vs.aspx)、 [版本](https://visualstudio.microsoft.com/en-US/products/compare-visual-studio-products-vs)、 [系統需求](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs)、 [下載](https://visualstudio.microsoft.com/downloads/)，以及其他項目的詳細資訊。
 
 ## <a name="quick-links"></a>快速連結
 
@@ -40,7 +40,7 @@ ms.locfileid: "74298049"
 |------------------|----------------|
 |![下載 Visual Studio](../install/media/downloads.png "下載") |**下載**：若要安裝 Visual Studio 2015，您可以從 [ [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) ] 頁面（需要訂用帳戶）下載產品可執行檔，或使用盒裝產品的安裝媒體。 [深入瞭解如何下載目前或舊版的 Visual Studio](https://www.visualstudio.com/vs/older-downloads/)。|
 |![深入瞭解功能](../install/media/features.png "功能") |**功能**：若要深入瞭解 Visual Studio 2015 中的功能，請參閱[RTM](https://www.visualstudio.com/news/vs2015-vs)、 [update 1](https://www.visualstudio.com/news/vs2015-update1-vs)、 [update 2](https://www.visualstudio.com/news/vs2015-update2-vs)和[update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)的版本資訊。|
-|![瞭解每個 SKU 的內容](../install/media/sku.png "SKU") |**SKU**：若要了解每一個版本的 Visual Studio 2015 有哪些可用功能，請參閱 [Compare Visual Studio Offerings](https://go.microsoft.com/fwlink/?LinkID=242142) (比較 Visual Studio 供應項目) 頁面。|
+|![瞭解每個 SKU 的內容](../install/media/sku.png "SKU") |**SKU**：若要了解每一個版本的 Visual Studio 2015 有哪些可用功能，請參閱 [Compare Visual Studio Offerings](https://visualstudio.microsoft.com/en-US/products/compare-visual-studio-products-vs) (比較 Visual Studio 供應項目) 頁面。|
 |![查看系統需求](../install/media/system-requirements.png "系統需求") |**系統需求**：若要查看每個版本 Visual Studio 2015 的系統需求，請參閱[Visual Studio 2015 相容性](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs)頁面。|
 |![找出您的產品金鑰](../install/media/product-keys.png "產品金鑰") |**產品金鑰**：若要尋找您的產品金鑰，請參閱[如何：找出 Visual Studio 產品金鑰](../install/how-to-locate-the-visual-studio-product-key.md)主題。|
 |![瞭解授權](../install/media/licensing.png "授權") |**授權**：若要瞭解個人或企業客戶的授權選項，請參閱[Visual Studio 和 MSDN 授權](https://www.microsoft.com/download/details.aspx?id=13350)技術白皮書。|
@@ -57,17 +57,17 @@ ms.locfileid: "74298049"
 
  自訂元件的完整清單如下所示：
 
-|功能集|Components|
+|功能集|元件|
 |------------------|----------------|
 |**更新**|Visual Studio 2015 Update 3|
 |**程式語言**|Visual C++<br />Visual F#<br />Python Tools for Visual Studio|
-|**Windows 和 Web 開發**|ClickOnce 發行工具<br />LightSwitch<br />Microsoft Office Developer Tools<br />Microsoft SQL Server Data Tools<br /> Microsoft Web Developer 工具<br />PowerShell Tools for Visual Studio （協力廠商）<br />Silverlight 開發套件<br />通用 Windows 應用程式開發工具<br />Windows 10 工具和 SDK<br />Windows 8.1 及 Windows Phone 8.0/8.1 工具<br />Windows 8.1 工具和 SDK|
+|**Windows 和 Web 開發**|ClickOnce 發行工具<br />LightSwitch<br />Microsoft Office Developer Tools<br />Microsoft SQL Server Data Tools<br /> Microsoft Web Developer Tools<br />PowerShell Tools for Visual Studio （協力廠商）<br />Silverlight 開發套件<br />通用 Windows 應用程式開發工具<br />Windows 10 工具和 SDK<br />Windows 8.1 及 Windows Phone 8.0/8.1 工具<br />Windows 8.1 工具和 SDK|
 |**跨平台行動開發**|C#/.NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />適用於 iOS / Android 的 Visual C++ 行動開發<br />Clang with Microsoft CodeGen|
 |**一般工具和軟體發展工具組**|Android 原生開發工具組（協力廠商）<br /> Android SDK [協力廠商]<br />Android SDK 安裝程式 Api （協力廠商）<br />Apache Ant （協力廠商）<br /> JAVA SE 開發套件（協力廠商）<br /> Joyent node.js （協力廠商）|
 |**通用工具**|適用于 Windows 的 Git （協力廠商）<br />適用于 Visual Studio 的 GitHub 延伸模組（協力廠商）<br /> Visual Studio 擴充性工具|
 
 ## <a name="installing"></a> 安裝 Visual Studio
- 您可以使用安裝媒體（Dvd）來安裝 Visual Studio、從[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)網站使用您的 Visual Studio 訂閱服務、從[Visual Studio 下載](https://go.microsoft.com/fwlink/?LinkId=517106)網站下載 web 安裝程式，或建立離線安裝配置（如需詳細資訊，請參閱[建立 Visual Studio 的離線安裝](../install/create-an-offline-installation-of-visual-studio.md)頁面）。
+ 您可以使用安裝媒體（Dvd）來安裝 Visual Studio、從[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)網站使用您的 Visual Studio 訂閱服務、從[Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)網站下載 web 安裝程式，或建立離線安裝配置（如需詳細資訊，請參閱[建立 Visual Studio 的離線安裝](../install/create-an-offline-installation-of-visual-studio.md)頁面）。
 
 > [!IMPORTANT]
 > 您必須擁有系統管理員認證才能安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 不過，在安裝之後，您不需要它們也可使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
@@ -87,12 +87,12 @@ ms.locfileid: "74298049"
 
 |版本|安裝檔案|
 |-------------|-----------------------|
-|Visual Studio Enterprise|vs_enterprise.exe|
+|Visual Studio 企業版|vs_enterprise.exe|
 |Visual Studio Professional|vs_professional.exe|
 |Visual Studio Community|vs_community.exe|
 
 ### <a name="BKMK_Website"></a>從產品網站下載
- 流覽[Visual Studio 下載](https://go.microsoft.com/fwlink/?LinkId=517106) 頁面，然後選取您想要的 Visual Studio 版本。
+ 流覽[Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面，然後選取您想要的 Visual Studio 版本。
 
 ### <a name="downloading-from-your-subscription-service"></a>從您的訂用帳戶服務下載
  流覽 [ [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) ] 頁面，然後選取您想要的 Visual Studio 版本。
@@ -108,7 +108,7 @@ ms.locfileid: "74298049"
 
  如果 Windows Server 2008 R2 是在啟用 Hyper-V 的情況下使用加速圖形卡來執行，您可能會感受到系統速度變慢。
 
- 如需詳細資訊，請參閱 Microsoft 網站的下列網頁： [當 Windows Server 2008 或 Windows Server 2008 R2 電腦已啟用 Hyper-V 角色且有安裝加速顯示卡時，視訊效能可能會降低](https://go.microsoft.com/fwlink/?LinkID=231084)。
+ 如需詳細資訊，請參閱 Microsoft 網站的下列網頁： [當 Windows Server 2008 或 Windows Server 2008 R2 電腦已啟用 Hyper-V 角色且有安裝加速顯示卡時，視訊效能可能會降低](https://support.microsoft.com/kb/961661)。
 
  **使用 HYPER-V 模擬裝置**
 
@@ -178,9 +178,9 @@ ms.locfileid: "74298049"
 ## <a name="troubleshooting"></a>疑難排解安裝問題
  請使用下列資源來取得設定及安裝問題的協助：
 
-- [Visual Studio 安裝程式和安裝](https://go.microsoft.com/fwlink/?LinkID=151190) 論壇。 在 Visual Studio 社群中，檢閱其他人提供的問題和解答。 如果您找不到所需的資訊，請詢問您自己的問題。
+- [Visual Studio 安裝程式和安裝](https://social.msdn.microsoft.com/Forums/en-US/vssetup/threads) 論壇。 在 Visual Studio 社群中，檢閱其他人提供的問題和解答。 如果您找不到所需的資訊，請詢問您自己的問題。
 
-- [Microsoft Visual Studio 支援](https://go.microsoft.com/fwlink/?LinkID=251019) 網站。 閱讀知識庫 (KB) 文章，並了解如何連絡 Microsoft 技術支援以取得 Visual Studio 安裝問題的相關資訊。
+- [Microsoft Visual Studio 支援](https://support.microsoft.com/ph/1117) 網站。 閱讀知識庫 (KB) 文章，並了解如何連絡 Microsoft 技術支援以取得 Visual Studio 安裝問題的相關資訊。
 
 ## <a name="relatedTopics"></a> 相關主題
 
@@ -194,6 +194,6 @@ ms.locfileid: "74298049"
 |[Visual Studio 影像庫](../designers/the-visual-studio-image-library.md)|提供如何安裝可在 Visual Studio 應用程式中使用之圖形的相關資訊。|
 |[Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)|包含可協助您更有效率地使用 Visual Studio 的資訊和連結。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [登入 Visual Studio](../ide/signing-in-to-visual-studio.md)

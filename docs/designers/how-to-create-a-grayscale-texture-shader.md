@@ -3,17 +3,17 @@ title: 如何：建立灰階材質著色器
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8217cc83004be3d4a15ff26743724d553f70d44
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b74e956a74ff4c04dbc5a1c990fab708937d8f5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635564"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76112622"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>如何：建立灰階紋理著色器
 

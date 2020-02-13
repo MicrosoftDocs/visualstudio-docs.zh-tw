@@ -14,25 +14,25 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 86d41a2717eb3ef7bd49f8d34b85198a55e5101c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ed433612498a6b7d4b87291311d7fd6efcb0974
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158654"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918377"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011：CompareTo 高度耗費資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新文件，請參閱[DA0011:高度耗費資源](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto)。  
+如需 Visual Studio 的最新檔，請參閱[DA0011：昂貴的 CompareTo](/visualstudio/profiling/da0011-expensive-compareto)。  
   
 |||  
 |-|-|  
-|規則 ID|DA0011|  
+|規則識別碼|DA0011|  
 |分類|.NET Framework 使用方式|  
 |分析方法|取樣<br /><br /> .NET 記憶體|  
 |訊息|CompareTo 函式應該便宜，而且不會配置任何記憶體。 盡可能降低 CompareTo 函式的複雜度。|  
-|規則型別|警告|  
+|規則類型|警告|  
   
 ## <a name="cause"></a>原因  
  類型的 CompareTo 方法高度耗費資源，或配置記憶體。  

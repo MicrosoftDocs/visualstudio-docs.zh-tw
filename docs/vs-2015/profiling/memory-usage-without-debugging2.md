@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ab8aaff0ddf793fe64dd3695adc58c281290f98
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37db8a095e8f7b420f14df29de30f265aee49bb6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295692"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850811"
 ---
 # <a name="memory-usage-without-debugging"></a>記憶體使用量 (不偵錯)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,10 +81,10 @@ ms.locfileid: "74295692"
   
 |||  
 |-|-|  
-|![步驟1](../profiling/media/procguid-1.png "ProcGuid_1")|連結文字顯示在擷取快照時，記憶體中的總位元組數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的大小總計進行排序。|  
-|![步驟2](../profiling/media/procguid-2.png "ProcGuid_2")|連結文字顯示擷取快照時記憶體中的總物件數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的計數進行排序。|  
-|![步驟3](../profiling/media/procguid-3.png "ProcGuid_3")|連結文字顯示此快照時的記憶體中物件大小總計與上一個快照大小總計之間的差異。<br /><br /> 此快照的記憶體大小大於與上一個快照時，連結文字是正數，大小較小時則為負數。 連結文字 [基準] 表示這個是診斷工作階段中的第一個快照。[無差異] 表示差異是零。<br /><br /> 選擇這個連結可以顯示快照差異報表，此報表依類型執行個體的大小總計差異進行排序。|  
-|![步驟4](../profiling/media/procguid-4.png "ProcGuid_4")|連結文字顯示此快照中的記憶體物件總數與上一個快照物件數之間的差異。<br /><br /> 選擇這個連結可以顯示快照差異報表，此報表依類型執行個體的總計數差異進行排序。|  
+|![步驟 1](../profiling/media/procguid-1.png "ProcGuid_1")|連結文字顯示在擷取快照時，記憶體中的總位元組數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的大小總計進行排序。|  
+|![步驟 2](../profiling/media/procguid-2.png "ProcGuid_2")|連結文字顯示擷取快照時記憶體中的總物件數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的計數進行排序。|  
+|![步驟 3](../profiling/media/procguid-3.png "ProcGuid_3")|連結文字顯示此快照時的記憶體中物件大小總計與上一個快照大小總計之間的差異。<br /><br /> 此快照的記憶體大小大於與上一個快照時，連結文字是正數，大小較小時則為負數。 連結文字 [基準] 表示這個是診斷工作階段中的第一個快照。[無差異] 表示差異是零。<br /><br /> 選擇這個連結可以顯示快照差異報表，此報表依類型執行個體的大小總計差異進行排序。|  
+|![步驟 4](../profiling/media/procguid-4.png "ProcGuid_4")|連結文字顯示此快照中的記憶體物件總數與上一個快照物件數之間的差異。<br /><br /> 選擇這個連結可以顯示快照差異報表，此報表依類型執行個體的總計數差異進行排序。|  
   
 ## <a name="BKMK_Snapshot_reports"></a>快照報表  
  ![記憶體使用量快照集報表](../profiling/media/memuse-snapshotreport-all.png "MEMUSE_SnapshotReport_All")  
@@ -202,9 +202,9 @@ ms.locfileid: "74295692"
 |**大小 (位元組)**|對於執行個體，此為主要快照中的物件大小，但排除執行個體中包含的物件大小。<br /><br /> 對於類型，此為主要快照中，類型的執行個體大小總計，但排除執行個體中包含的物件大小。|  
 |**內含大小 (位元組)**|主要快照中的物件大小，包括物件中包含的物件大小。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [JavaScript 記憶體](../profiling/javascript-memory.md)   
  [分析應用程式效能](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [執行效能及診斷工具](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
  [使用 C++、C# 及 Visual Basic 的 Windows 市集應用程式的效能最佳做法](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
- [使用 Visual Studio 中的新記憶體使用量工具來診斷記憶體問題](https://go.microsoft.com/fwlink/p/?LinkId=394706)
+ [使用 Visual Studio 中的新記憶體使用量工具來診斷記憶體問題](https://blogs.msdn.com/b/visualstudioalm/archive/2014/04/02/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio.aspx)

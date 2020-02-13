@@ -11,12 +11,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 29ca6b2110038a427c76622d50f769321cda9ff9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ca0a1613f46f8542a3ede4ce2053b3584824590e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296898"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847819"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,14 @@ Visual Studio*圖形診斷*是一組工具，用來記錄並分析 Direct3D 應�
   
  繼續進行[總覽](../debugger/overview-of-visual-studio-graphics-diagnostics.md)以深入瞭解 Visual Studio 圖形診斷所提供的功能。  
   
-## <a name="in-this-section"></a>本節內容  
+## <a name="in-this-section"></a>本章節內容  
  [概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)  
  介紹圖形診斷工作流程和工具。  
   
  [使用者入門](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
  在本節中，您將學習如何安裝 Visual Studio 圖形診斷，以及如何開始搭配使用圖形診斷與 Direct3D 應用程式。  
   
- [擷取圖形資訊](../debugger/capturing-graphics-information.md)  
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)  
  若要使用圖形診斷檢查您應用程式中的呈現問題，請先記錄有關應用程式如何使用 DirectX 的資訊。 在記錄工作階段期間，如果您的應用程式正常地執行，請「擷取」(亦即選取) 感興趣的畫面格。 擷取包含如何呈現畫面格的詳細資訊。 您可以將擷取到的資訊儲存為圖形記錄文件，以供稍後再檢查，或與您小組的其他成員共用。  
   
  [GPU 使用量](../debugger/gpu-usage.md)  
@@ -84,4 +84,4 @@ Visual Studio*圖形診斷*是一組工具，用來記錄並分析 Direct3D 應�
 |標題|描述|  
 |-----------|-----------------|  
 |[Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)|介紹 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的偵錯功能。|  
-|[DirectX 圖形與遊戲](https://go.microsoft.com/fwlink/?LinkId=256498)|提供討論 DirectX 圖形技術的文章。|
+|[DirectX 圖形與遊戲](https://msdn.microsoft.com/library/ee663274(v=vs.85).aspx)|提供討論 DirectX 圖形技術的文章。|

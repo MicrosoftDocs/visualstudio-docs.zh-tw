@@ -8,12 +8,12 @@ author: frozenpandaman
 ms.author: efessler
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e226ac6c83839474b9d8ac6be7fb57e376de4a4f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 25320da07249abee0ab0cddd48662585a7a809dd
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745984"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846752"
 ---
 # <a name="using-clang-tidy-in-visual-studio"></a>在 Visual Studio 中使用 Clang-整齊
 
@@ -34,7 +34,7 @@ Clang 會在編譯成功之後執行;您可能需要解決原始程式碼錯誤�
 
 ## <a name="cmake"></a>CMake
 
-在 CMake 專案中，您可以在 `CMakeSettings.json` 內設定 Clang 整齊的檢查。 開啟後，按一下 [CMake 專案設定編輯器] 右上角的 [編輯 JSON]。 辨識的金鑰如下：
+在 CMake 專案中，您可以在 `CMakeSettings.json`內設定 Clang 整齊的檢查。 開啟後，按一下 [CMake 專案設定編輯器] 右上角的 [編輯 JSON]。 辨識的金鑰如下：
 
 - `enableMicrosoftCodeAnalysis`：啟用 Microsoft 程式碼分析
 - `enableClangTidyCodeAnalysis`：啟用 Clang 整齊分析
@@ -44,7 +44,7 @@ Clang 會在編譯成功之後執行;您可能需要解決原始程式碼錯誤�
 
 ## <a name="warning-display"></a>警告顯示
 
-Clang 會在 錯誤清單中顯示警告，並在程式碼的相關區段底下以編輯器波浪線的形式顯示。 使用 錯誤清單中的 類別 資料行來排序和組織 Clang 的警告。 您可以切換 **工具**  > **選項** 底下的 停用程式碼分析波浪線 設定，以設定編輯器內的警告。
+Clang 會在 錯誤清單中顯示警告，並在程式碼的相關區段底下以編輯器波浪線的形式顯示。 使用 錯誤清單中的 類別 資料行來排序和組織 Clang 的警告。 您可以切換 **工具** > **選項** 底下的 停用程式碼分析波浪線 設定，以設定編輯器內的警告。
 
 ## <a name="clang-tidy-configuration"></a>Clang-整齊設定
 
@@ -52,5 +52,5 @@ Clang 會在 錯誤清單中顯示警告，並在程式碼的相關區段底下�
 
 ## <a name="see-also"></a>請參閱
 
-- [MSBuild 專案的 Clang/LLVM 支援](https://aka.ms/cpp/clangmsbuild)
-- [CMake 專案的 Clang/LLVM 支援](https://aka.ms/cpp/clangcmake)
+- [MSBuild 專案的 Clang/LLVM 支援](https://devblogs.microsoft.com/cppblog/clang-llvm-support-for-msbuild-projects/)
+- [CMake 專案的 Clang/LLVM 支援](https://devblogs.microsoft.com/cppblog/visual-studio-cmake-support-clang-llvm-cmake-3-14-vcpkg-and-performance-improvements/)

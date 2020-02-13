@@ -1,5 +1,5 @@
 ---
-title: 使用 Visual Studio 和 IntelliTrace 來進行已發佈的 Azure 雲端服務的偵錯工具 |Microsoft Docs
+title: 使用 Visual Studio 和 IntelliTrace 進行已發佈 Azure 雲端服務的偵錯 | Microsoft Docs
 description: 了解如何使用 Visual Studio 和 IntelliTrace，進行雲端服務的偵錯
 author: mikejo5000
 manager: jillfra
@@ -11,26 +11,26 @@ ms.date: 03/21/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 00e13c6f217c54b99dfe103b86f1e775e36fd62a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 033e682344cbd255c8cbf41d7527ec7d08a5db20
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74293546"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915617"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>使用 Visual Studio 與and IntelliTrace 針對已發佈的 Azure 雲端服務進行偵錯
 有了 IntelliTrace，您可以於角色執行個體在 Azure 中執行時，記錄其廣泛的偵錯資訊。 如果您需要找出問題的原因，您可以從 Visual Studio 使用 IntelliTrace 記錄檔來瀏覽程式碼，如同它是在 Azure 中執行。 實際上，Azure 應用程式在 Azure 中以雲端服務形式執行時，IntelliTrace 會記錄主要執行程式碼和環境資料，並且可讓您從 Visual Studio 重新播放記錄的資料。 
 
 如果您有安裝 Visual Studio Enterprise，而您的 Azure 應用程式以 .NET Framework 4 或更新版本為目標，則可以使用 IntelliTrace。 IntelliTrace 會收集 Azure 角色的資訊。 這些角色的虛擬機器一律會執行 64 位元作業系統。
 
-或者，您可以使用[遠端偵錯](https://go.microsoft.com/fwlink/p/?LinkId=623041)，直接附加到在 Azure 中執行的雲端服務。
+或者，您可以使用[遠端偵錯](vs-azure-tools-debugging-cloud-services-overview.md)，直接附加到在 Azure 中執行的雲端服務。
 
 > [!IMPORTANT]
 > IntelliTrace 僅適用於偵錯，並且不應該用於生產環境部署。
 > 
 
 ## <a name="configure-an-azure-application-for-intellitrace"></a>為 IntelliTrace 設定 Azure 應用程式
-若要為 Azure 應用程式啟用 IntelliTrace，您必須從 Visual Studio Azure 專案建立並發佈應用程式。 發佈至 Azure 之前，您必須您的 Azure 應用程式設定 IntelliTrace。 如果您發佈應用程式，但未設定 IntelliTrace，則您必須重新發佈專案。 如需詳細資訊，請參閱[使用 Visual Studio 專案發佈 Azure 雲端服務](https://go.microsoft.com/fwlink/p/?LinkId=623012)。
+若要為 Azure 應用程式啟用 IntelliTrace，您必須從 Visual Studio Azure 專案建立並發佈應用程式。 發佈至 Azure 之前，您必須您的 Azure 應用程式設定 IntelliTrace。 如果您發佈應用程式，但未設定 IntelliTrace，則您必須重新發佈專案。 如需詳細資訊，請參閱[使用 Visual Studio 專案發佈 Azure 雲端服務](vs-azure-tools-publishing-a-cloud-service.md)。
 
 1. 準備好要部署 Azure 應用程式時，請確認專案建置目標是設定為 [偵錯]。
 
@@ -46,7 +46,7 @@ ms.locfileid: "74293546"
 
     ![IntelliTrace 設定連結](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/intellitrace-settings-link.png)
    
-1. 在 [IntelliTrace 設定] 對話方塊中，您可以指定要記錄的事件、是否要收集呼叫資訊、要收集記錄的模組和處理序，以及配置多少空間來存放記錄。 如需有關 IntelliTrace 的詳細資訊，請參閱 [使用 IntelliTrace 進行偵錯](https://go.microsoft.com/fwlink/?LinkId=214468)。
+1. 在 [IntelliTrace 設定] 對話方塊中，您可以指定要記錄的事件、是否要收集呼叫資訊、要收集記錄的模組和處理序，以及配置多少空間來存放記錄。 如需有關 IntelliTrace 的詳細資訊，請參閱 [使用 IntelliTrace 進行偵錯](https://msdn.microsoft.com/library/dd264915.aspx)。
    
     ![IntelliTrace 設定](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/IC519063.png)
 

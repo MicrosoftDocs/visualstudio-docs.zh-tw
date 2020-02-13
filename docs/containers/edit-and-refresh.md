@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 48754834295a552e3b189ff05ff2d1c12cd221a3
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400913"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916526"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本機 Docker 容器中的偵錯工具
 
@@ -60,6 +60,28 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 若要快速反復查看變更，您可以在容器中啟動應用程式。 然後，繼續進行變更，如同使用 IIS Express 一樣加以查看。
 
 1. 請確定 Docker 已設定為使用您所使用的容器類型（Linux 或 Windows）。 以滑鼠右鍵按一下工作列上的 [Docker] 圖示，然後選擇 [**切換至 Linux 容器**] 或 [視需要**切換到 Windows 容器**]。
+
+1. （僅限 .NET Core 3 和更新版本）在 .NET Core 的預設範本中，不會啟用編輯您的程式碼並重新整理執行中的網站，如本節所述 > = 3.0。 若要啟用它，請新增[microsoft.aspnetcore.mvc.razor.runtimecompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/)的 NuGet 套件。 在*Startup.cs*中，將 `IMvcBuilder.AddRazorRuntimeCompilation` 擴充方法的呼叫新增至 `ConfigureServices` 方法中的程式碼。 您只需要在 [DEBUG] 模式中啟用此功能，因此請遵循下列程式碼：
+
+    ```csharp
+    public IWebHostEnvironment Env { get; set; }
+    
+    public void ConfigureServices(IServiceCollection services)
+    {
+        IMvcBuilder builder = services.AddRazorPages();
+    
+    #if DEBUG
+        if (Env.IsDevelopment())
+        {
+            builder.AddRazorRuntimeCompilation();
+        }
+    #endif
+    
+        // code omitted for brevity
+    }
+    ```
+
+   如需詳細資訊，請參閱[ASP.NET Core 中的 Razor 檔案編譯](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1)。
 
 1. 將**解決方案**設定設為**Debug**。 然後，按**Ctrl**+**F5**來建立您的 Docker 映射，並在本機執行。
 
@@ -138,6 +160,6 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>進一步了解 Docker 與 Visual Studio、Windows 和 Azure
 
 * 深入瞭解[使用 Visual Studio 的容器開發](/visualstudio/containers)。
-* 若要建立和部署 Docker 容器，請參閱[Azure Pipelines 的 docker 整合](https://aka.ms/dockertoolsforvsts)。
-* 如需 Windows Server 和 Nano Server 文章的索引，請參閱[windows 容器資訊](https://aka.ms/containers)。
+* 若要建立和部署 Docker 容器，請參閱[Azure Pipelines 的 docker 整合](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker)。
+* 如需 Windows Server 和 Nano Server 文章的索引，請參閱[windows 容器資訊](/virtualization/windowscontainers/)。
 * 瞭解[Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/)並參閱[Azure Kubernetes Service 檔](/azure/aks)。

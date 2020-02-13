@@ -5,16 +5,16 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 57d956a426e791fcc84d5972f564cd554d6e72f8
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 119de27298acafee7dc563a30246b18da42f9f29
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406099"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918167"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何增加修正效能問題的機率
 
-「回報[問題](https://aka.ms/vs-rap)」工具廣泛由 Visual Studio 使用者用來報告問題的範圍。 Visual Studio 小組會在使用者意見反應中遇到損毀並緩慢趨勢，並解決影響廣泛使用者 swath 的問題。 特定的意見反應票證越容易採取動作，產品小組就越可能很快就能診斷並解決問題。 本檔說明報告當機或緩慢問題時的最佳作法，使其更容易採取動作。
+「回報[問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)」工具廣泛由 Visual Studio 使用者用來報告問題的範圍。 Visual Studio 小組會在使用者意見反應中遇到損毀並緩慢趨勢，並解決影響廣泛使用者 swath 的問題。 特定的意見反應票證越容易採取動作，產品小組就越可能很快就能診斷並解決問題。 本檔說明報告當機或緩慢問題時的最佳作法，使其更容易採取動作。
 
 ## <a name="general-best-practices"></a>一般最佳作法
 
@@ -55,7 +55,7 @@ Visual Studio 是一個大型、複雜的平臺，支援多種語言、專案類
 
 - 可以在範例程式碼中重現，或在可連結或提供作為意見反應一部分的專案中重新產生（如果步驟牽涉到開啟專案或檔）
 
-針對這些問題，請遵循「如何回報[問題](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)」中的步驟，並務必包含：
+針對這些問題，請遵循「如何回報[問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)」中的步驟，並務必包含：
 
 -   重現問題的步驟
 
@@ -87,7 +87,7 @@ reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
 Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
 ```
 
-適當地自訂傾印計數和傾印資料夾。 如需這些設定的詳細資訊，請參閱[這裡](https://docs.microsoft.com/windows/win32/wer/collecting-user-mode-dumps?redirectedfrom=MSDN)。
+適當地自訂傾印計數和傾印資料夾。 如需這些設定的詳細資訊，請參閱[這裡](/windows/win32/wer/collecting-user-mode-dumps)。
 
 > [!NOTE]
 > 使用工作管理員所捕捉到的傾印可能是錯誤的位，因此較不能使用。 前述程式是捕捉堆積傾印的慣用方式。 如果您想要使用 [工作管理員]，請關閉目前正在執行的工作管理員，啟動32位工作管理員（% windir%\\syswow64\\taskmgr），並從該處收集堆積傾印。
@@ -103,7 +103,7 @@ Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
 
 2.  可能的話，請在提交意見反應之前壓縮檔案（\*.zip）以縮小其大小
 
-3.  遵循「[如何回報問題](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)」中的步驟，並將堆積傾印附加至新的意見反應專案。
+3.  遵循「[如何回報問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)」中的步驟，並將堆積傾印附加至新的意見反應專案。
 
 > [!NOTE] 
 > **最寶貴的意見反應：** 在此情況下，最寶貴的意見反應是在當機時所捕捉到的堆積傾印。
@@ -118,7 +118,7 @@ VS 會變得沒有回應一段頗長的時間。
 **未知的無回應**
 
 如果無回應以無法預期的方式來進行資訊清單，在下一次出現時，啟動 Visual Studio 的新實例，並從該實例回報問題。
-在 [[記錄] 畫面](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)中，請務必選取沒有回應的 Visual Studio 會話。
+在 [[記錄] 畫面](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)中，請務必選取沒有回應的 Visual Studio 會話。
 
 如果沒有回應的 Visual Studio 實例是在系統管理員模式中啟動，則第二個實例也必須以系統管理員模式啟動。
 
@@ -145,7 +145,7 @@ VS 會變得沒有回應一段頗長的時間。
 
 3.  在 Visual Studio 的新複本中，開啟 [回報**問題**] 工具
 
-4.  請遵循如何回報[問題](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)中的步驟，直到您到達「提供追蹤和堆積傾印（選擇性）」步驟為止。
+4.  請遵循如何回報[問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)中的步驟，直到您到達「提供追蹤和堆積傾印（選擇性）」步驟為止。
 
 5.  選擇記錄 Visual Studio 的第一份複本（遇到效能問題的人）並開始錄製。
 
@@ -165,7 +165,7 @@ VS 會變得沒有回應一段頗長的時間。
 
 在錄製效能追蹤時，如果您要回報的緩慢作業或高 CPU 已到達結尾，則會立即停止錄製。 如果收集的資訊太多，則會覆寫最舊的資訊。 如果在有趣的作業之後，追蹤並未立即停止（在幾秒內），則會覆寫有用的追蹤資料。
 
-請勿直接將效能追蹤附加至開發人員論壇網站上的現有意見反應專案。 Visual Studio 內建的「回報問題」工具中，要求/提供其他資訊是支援的工作流程。 如果需要效能追蹤才能解決先前的意見專案，我們會將意見反應專案的狀態設定為「需要更多資訊」，這可以用與報告新問題的相同方式回應。 如需詳細指示，請參閱報告問題工具的檔中的「[需要更多資訊」一節](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info)。
+請勿直接將效能追蹤附加至開發人員論壇網站上的現有意見反應專案。 Visual Studio 內建的「回報問題」工具中，要求/提供其他資訊是支援的工作流程。 如果需要效能追蹤才能解決先前的意見專案，我們會將意見反應專案的狀態設定為「需要更多資訊」，這可以用與報告新問題的相同方式回應。 如需詳細指示，請參閱報告問題工具的檔中的「[需要更多資訊」一節](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info)。
 
 > [!NOTE] 
 > **最寶貴的意見反應：** 對於幾乎所有的緩慢/高 CPU 問題，最寶貴的意見反應是您嘗試執行之動作的高階描述，以及效能追蹤（\*.etl），它會在這段時間內捕捉行為。
@@ -188,7 +188,7 @@ VS 會變得沒有回應一段頗長的時間。
     -   將全域環境變數**ServiceHubTraceLevel**設定為**All**
     -   重現問題。
 
-2.  在[這裡](https://aka.ms/vscollect)下載 Microsoft Visual Studio 和 .NET Framework 記錄收集工具。
+2.  在[這裡](https://www.microsoft.com/download/details.aspx?id=12493)下載 Microsoft Visual Studio 和 .NET Framework 記錄收集工具。
 3.  執行工具。 這會將 zip 檔案輸出至 **% temp%/vslogs.zip**。 請將該檔案附加到您的意見反應。
 
 ## <a name="see-also"></a>請參閱

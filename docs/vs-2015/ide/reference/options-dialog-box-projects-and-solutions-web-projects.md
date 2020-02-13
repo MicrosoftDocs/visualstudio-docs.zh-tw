@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5456ef4935feb2ad6f08e2a0b7ff24ad58089e1f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 90da4845ca5edcf68a977ea79a73e06fa4c4455b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297865"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917663"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "74297865"
  根據預設，當您在 Visual Studio 中執行 Web 專案時 (例如，使用 F5 或 Ctrl+F5)，Visual Studio 會使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [Visual Studio 中 ASP.NET Web 專案的 Web 伺服器](https://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328)。
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫此說明頁時，主要是以 [Web 設定] 為考量。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+> 根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫此說明頁時，主要是以 [Web 設定] 為考量。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱 [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
 ## <a name="settings"></a>設定
- **使用 web sites 和專案的64位版本 IIS Express**選取此選項可使用 IIS Express，而不是 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [IIS Express 簡介](https://weblogs.asp.net/scottgu/introducing-iis-express)和 [IIS Express 概觀](https://docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview)。 預設會停用這個選項。
+ **使用 web sites 和專案的64位版本 IIS Express**選取此選項可使用 IIS Express，而不是 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [IIS Express 簡介](https://weblogs.asp.net/scottgu/introducing-iis-express)和 [IIS Express 概觀](/iis/extensions/introduction-to-iis-express/iis-express-overview)。 此選項預設為停用。
 
  **當錯誤清單中有錯誤時，在執行 web 應用程式前提出警告**如果核取此方塊，當您嘗試在沒有發生錯誤的情況下執行 web 應用程式時，將會收到警告。

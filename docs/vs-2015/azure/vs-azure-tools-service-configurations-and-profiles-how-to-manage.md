@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: bcc290bfd9d646355479c2a9fe83a48f43dfa432
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 008dd927f38c7fd79996bde39531e256314f2e24
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298038"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917350"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>如何管理服務設定與設定檔
 ## <a name="overview"></a>概觀
@@ -34,7 +34,7 @@ ms.locfileid: "74298038"
 ### <a name="to-add-a-service-configuration"></a>新增服務組態
 1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選取 [管理組態]。
    
-    [管理服務組態]對話方塊隨即出現。
+    [管理服務組態] 對話方塊隨即出現。
 2. 若要新增服務組態，您必須建立一份現有的組態。 若要這樣做，請從 [名稱] 清單中選擇您要複製的組態，然後選取 [建立複本]。
 3. (選擇性) 若要給予服務組態不同的名稱，請從 [名稱] 清單中選擇新的服務組態，然後選取 [重新命名]。 在 [名稱] 文字方塊中輸入您要用於此服務組態的名稱，然後按選取 [確定]。
    
@@ -43,7 +43,7 @@ ms.locfileid: "74298038"
 ### <a name="to-delete-a-service-configuration"></a>刪除服務組態
 1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選取 [管理組態]。
    
-    [管理服務組態]對話方塊隨即出現。
+    [管理服務組態] 對話方塊隨即出現。
 2. 若要刪除服務組態，請從 [名稱] 清單中選擇您要刪除的組態，然後選取 [移除]。 隨即出現一個對話方塊，以確認您要刪除此組態。
 3. 選取 [刪除]。
    
@@ -52,13 +52,13 @@ ms.locfileid: "74298038"
 ### <a name="to-rename-a-service-configuration"></a>重新命名服務組態
 1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選取 [管理組態]。
    
-    [管理服務組態]對話方塊隨即出現。
+    [管理服務組態] 對話方塊隨即出現。
 2. 若要將服務組態重新命名，請從 [名稱] 清單中選擇新的服務組態，然後選取 [重新命名]。 在 [名稱] 文字方塊中輸入您要用於此服務組態的名稱，然後按選取 [確定]。
    
-    在 [方案總管] 中，此服務組態檔的名稱會在 Azure 專案中變更。
+    服務組態檔的名稱已在 [方案總管] 的 Azure 專案中變更。
 
 ### <a name="to-change-a-service-configuration"></a>變更服務組態
-* 如果您想要變更服務組態，請開啟 Azure 專案中您要變更的特定角色的捷徑功能表，然後按一下 [屬性]。 如需詳細資訊，請參閱[如何：使用 Visual Studio 設定 Azure 雲端服務的角色](vs-azure-tools-configure-roles-for-cloud-service.md)。
+* 如果您想要變更服務組態，請開啟 Azure 專案中您要變更的特定角色的捷徑功能表，然後按一下 [屬性]。 如需詳細資訊，請參閱 [如何：使用 Visual Studio 設定 Azure 雲端服務的角色](vs-azure-tools-configure-roles-for-cloud-service.md) 。
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>使用設定檔製作不同的設定組合
 只要使用設定檔，您就能針對不同用途，以不同的設定組合來自動填滿 [發佈精靈] 。 例如，您可有一個設定檔用於偵錯，另一個設定檔用於發行組建。 在此情況下，[偵錯] 設定檔會啟用 [IntelliTrace] 並選取 [偵錯] 組態，而 [發行] 設定檔會停用 [IntelliTrace] 並選取 [發行] 組態。 您也可以使用不同的設定檔，部署使用不同儲存體帳戶的服務。
@@ -72,7 +72,7 @@ ms.locfileid: "74298038"
     ![建立新的設定檔](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
 3. 建立設定檔之後，選取 [目標設定檔] 清單中的 [<管理...>]。
    
-    [管理設定檔]對話方塊隨即出現，如下圖所示。
+    [管理設定檔] 對話方塊會隨即出現，如下圖所示。
    
     ![管理設定檔對話方塊](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. 在 [名稱] 清單中選擇某個設定檔，然後選取 [建立複本]。
@@ -80,7 +80,7 @@ ms.locfileid: "74298038"
    
     [目標設定檔] 清單中隨即出現新的設定檔。
 6. 在 [目標設定檔] 清單中，選取您剛建立的設定檔。 [發佈精靈] 設定會填入您所選設定檔中的選項。
-7. 選取 [上一步] 和 [下一步] 按鈕以顯示「發佈精靈」的每個頁面，然後自訂此設定檔的設定。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](https://go.microsoft.com/fwlink/p/?LinkID=623085) 。
+7. 選取 [上一步] 和 [下一步] 按鈕以顯示「發佈精靈」的每個頁面，然後自訂此設定檔的設定。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](vs-azure-tools-publish-azure-application-wizard.md) 。
 8. 自訂完設定之後，選取 [下一步] 以返回「設定」頁面。 當您使用這些設定來發佈服務，或是選取設定檔清單旁邊的 [儲存] 時，就會儲存設定檔。
 
 ### <a name="to-rename-or-delete-a-profile"></a>重新命名或刪除設定檔
@@ -93,9 +93,9 @@ ms.locfileid: "74298038"
 ### <a name="to-change-a-profile"></a>變更設定檔
 1. 開啟 Azure 專案的捷徑功能表，然後選取 [發佈]。
 2. 在 [目標設定檔] 清單中，選取您要變更的設定檔。
-3. 選取 [上一步] 和 [下一步] 按鈕以顯示「發佈精靈」的每個頁面，然後變更您想要的設定。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](https://go.microsoft.com/fwlink/p/?LinkID=623085) 。
+3. 選取 [上一步] 和 [下一步] 按鈕以顯示「發佈精靈」的每個頁面，然後變更您想要的設定。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](vs-azure-tools-publish-azure-application-wizard.md) 。
 4. 變更完設定之後，選取 [下一步] 以返回 **「設定」** 頁面。
 5. (選擇性) 選取 [發佈] 以使用新設定來發佈雲端服務。 如果您不想在此時發佈雲端服務，而關閉 [發佈精靈]，Visual Studio 會詢問您是否要將變更儲存至設定檔。
 
 ## <a name="next-steps"></a>後續步驟
-若要了解如何從 Visual Studio 設定 Azure 專案的其他部分，請參閱 [設定 Azure 專案](https://go.microsoft.com/fwlink/p/?LinkID=623075)
+若要了解如何從 Visual Studio 設定 Azure 專案的其他部分，請參閱 [設定 Azure 專案](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)

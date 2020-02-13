@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67589a04b8f3c39e442b596a7a41981825bd5aa5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d3247fb421800f87740a911563880b70abf3eed
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301111"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844725"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74301111"
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
   
 ## <a name="cause"></a>原因  
- 分析執行期間收集的系統資料指出，.NET Framework 記憶體堆積已接近 Managed 堆積在 32 位元處理序中可以到達的大小上限。 此大小上限是預設值。 此值是根據可為私用位元組配置的處理序位址空間總量。 報告的值是當分析的處理序作用中時，堆積的最大觀察值。 請考慮使用 .NET 記憶體分析方法再次進行分析，並最佳化應用程式使用的 Managed 資源。  
+ 分析執行期間收集的系統資料指出，.NET Framework 記憶體堆積已接近 Managed 堆積在 32 位元處理序中可以到達的大小上限。 此大小上限是預設值。 此值是根據可為私用位元組配置的處理序位址空間總量。 報告的值是當分析的處理序作用中時，堆積的最大觀察值。 請考慮使用 .NET 記憶體程式碼剖析方法再次嘗試程式碼剖析，並最佳化應用程式使用的受管理資源。  
   
  當 Managed 堆積的大小接近預設限制時，可能需要更頻繁地叫用自動記憶體回收處理序。 這會增加記憶體管理的負擔。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "74301111"
   
   使用[配置檢視](../profiling/dotnet-memory-allocations-view.md)可判斷導致這些配置的執行路徑。  
   
-  如需如何改善記憶體回收效能的詳細資訊，請參閱 MSDN 網站上的 .NET Framework 技術文件：[記憶體回收行程的基礎概念和效能提示 (英文)](https://go.microsoft.com/fwlink/?LinkId=177946)。  
+  如需如何改善記憶體回收效能的詳細資訊，請參閱 MSDN 網站上的 .NET Framework 技術文件：[記憶體回收行程的基礎概念和效能提示 (英文)](https://msdn.microsoft.com/library/ms973837.aspx)。  
   
   若要對處理序位址空間之私用部分大小解除虛擬記憶體的架構限制，請嘗試在 64 位元電腦上執行這個 32 位元處理序。  在 64 位元電腦上的 32 位元處理序可以取得高達 4 GB 的私用虛擬記憶體。  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6a816981b41dd8ca2a2119bbd99c776c6a7e2436
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e9e8b53c5bd4d6045d7582c24be865ae216f1114
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296887"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851093"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目標概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ ms.locfileid: "74296887"
 > Framework 目標不保證您的應用程式將會正確執行。 您必須測試應用程式，確定它能以目標版本執行。 您不能以早於 .NET Framework 2.0 版的 Framework 版本為目標。
 
 ## <a name="selecting-a-target-framework-version"></a>選取目標 Framework 版本
- 當您建立專案時，請在 [新增專案]  對話方塊中選取目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 可用的專案範本清單會根據選取項目進行篩選。 在現有專案中，您可以在專案屬性對話方塊中變更目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+ 當您建立專案時，請在 [新增專案]  對話方塊中選取目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 可用的專案範本清單會根據選取項目進行篩選。 在現有專案中，您可以在專案屬性對話方塊中變更目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 如需詳細資訊，請參閱[如何：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 > [!NOTE]
 > 在 Visual Studio Express 版中，您無法在 [新增專案]  對話方塊中設定目標 Framework。
 
 ## <a name="resolving-system-and-user-assembly-references"></a>解析系統與使用者組件參考
- 若要設定目標 .NET Framework 版本，您必須先安裝適當的組件參考。 .NET Framework 2.0、3.0 和 3.5 版的組件參考隨附在 .NET Framework 3.5 SP1 中，可從 [Microsoft Download Center, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) (Microsoft 下載中心的 Microsoft Visual Studio) 網站進行下載。 您也可以從 [Visual Studio 下載](https://go.microsoft.com/fwlink/?LinkId=179687)網站取得 .NET Framework 3.5 Client Profile、.NET Framework 4、.NET Framework 4 Client Profile 和 Silverlight 的組件參考。
+ 若要設定目標 .NET Framework 版本，您必須先安裝適當的組件參考。 .NET Framework 2.0、3.0 和 3.5 版的組件參考隨附在 .NET Framework 3.5 SP1 中，可從 [Microsoft Download Center, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) (Microsoft 下載中心的 Microsoft Visual Studio) 網站進行下載。 您也可以從 [Visual Studio 下載](https://msdn.microsoft.com/vstudio/bb984878.aspx)網站取得 .NET Framework 3.5 Client Profile、.NET Framework 4、.NET Framework 4 Client Profile 和 Silverlight 的組件參考。
 
 > [!NOTE]
 > .NET Framework Client Profile 是 .NET Framework 的子集，提供一組有限的程式庫和功能。 如需 Client Profile 的詳細資訊，請參閱 [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。

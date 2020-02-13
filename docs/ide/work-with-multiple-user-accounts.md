@@ -2,17 +2,17 @@
 title: 使用多個使用者帳戶
 ms.date: 07/23/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f757489f26ae41319316fcfc9cdc957dbb7d94a2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590653"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027600"
 ---
 # <a name="work-with-multiple-user-accounts"></a>使用多個使用者帳戶
 
@@ -97,7 +97,7 @@ Azure Active Directory (AAD) 可支援在 ASP.NET MVC Web 應用程式中進行�
 
 使用裝置程式碼流程登入：
 
-1. 在 [工具] > [選項] > [環境] 下方開啟 [[帳戶]](reference/accounts-environment-options-dialog-box.md) 頁面，然後選取 [新增或重新驗證帳戶時啟用裝置程式碼流程]。 選擇 [確定] 關閉選項頁面。
+1. 在 [工具][[選項]](reference/accounts-environment-options-dialog-box.md)[環境] > **下方開啟**[帳戶] >  頁面，然後選取 [新增或重新驗證帳戶時啟用裝置程式碼流程]。 選擇 [確定] 關閉選項頁面。
 
 1. 選擇 [檔案] > [帳戶設定] 開啟帳戶管理頁面。
 
@@ -125,7 +125,7 @@ Azure Active Directory (AAD) 可支援在 ASP.NET MVC Web 應用程式中進行�
 
 1. 返回 Visual Studio 中的帳戶管理頁面，您會看到新增的帳戶列於 [所有帳戶] 下方。 選擇 [關閉]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [登入 Visual Studio](signing-in-to-visual-studio.md)
 - [登入 Visual Studio for Mac](/visualstudio/mac/signing-in)

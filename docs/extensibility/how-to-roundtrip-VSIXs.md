@@ -8,18 +8,18 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 44b5c5c58c46017730f06142548505c628894a11
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316493"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269056"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>如何：讓擴充功能與 Visual Studio 2017 和 Visual Studio 2015 相容
+# <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>如何：讓擴充功能與 Visual Studio 2019/2017 和 Visual Studio 2015 相容
 
-本檔說明如何在 Visual Studio 2015 和 Visual Studio 2017 之間進行擴充性專案的往返。 完成此升級之後，專案將能夠在 Visual Studio 2015 和 Visual Studio 2017 中開啟、建立、安裝及執行。 如需參考，您可以在[VS SDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples)擴充性範例中找到一些可以在 Visual Studio 2015 和 Visual Studio 2017 之間來回往返的延伸模組。
+本檔說明如何讓擴充性專案在 Visual Studio 2015 和 Visual Studio 2019 之間來回往返，或 Visual Studio 2017。 完成此升級之後，專案將能夠在 Visual Studio 2015 和 Visual Studio 2019 或2017中開啟、建立、安裝及執行。 如需參考，您可以在[VS SDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples)擴充性範例中找到一些可以在 Visual Studio 2015 和 Visual Studio 2019 或2017之間來回往返的延伸模組。
 
-如果您只想要在 Visual Studio 2017 中建立，但希望輸出 VSIX 同時在 Visual Studio 2015 和 Visual Studio 2017 中執行，則請參閱[延伸模組遷移檔](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。
+如果您只想要在 Visual Studio 2019/2017 中建立，但希望輸出 VSIX 同時在 Visual Studio 2015 和 Visual Studio 2019/2017 中執行，則請參閱[延伸模組遷移檔](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。
 
 > [!NOTE]
 > 由於版本之間 Visual Studio 的變更，因此在某個版本中運作的某些專案不會在另一個版本中執行。 請確認您嘗試存取的功能在這兩個版本中都可使用，否則延伸模組將會產生非預期的結果。
@@ -29,25 +29,25 @@ ms.locfileid: "74316493"
 1. 匯入正確的 NuGet 套件。
 2. 更新延伸模組資訊清單：
     * 安裝目標
-    * 必要條件
+    * 必要條件：
 3. 更新 .Csproj：
     * 更新 `<MinimumVisualStudioVersion>`。
     * 新增 `<VsixType>` 屬性。
     * 將 [調試] 屬性加入 `($DevEnvDir)` 3 次。
     * 新增匯入組建工具和目標的條件。
 
-4. 組建和測試
+4. 組建與測試
 
 ## <a name="environment-setup"></a>環境設定
 
 本檔假設您已在電腦上安裝下列各項：
 
 * 已安裝 VS SDK 的 Visual Studio 2015
-* 已安裝擴充性工作負載的 Visual Studio 2017
+* 已安裝擴充性工作負載的 Visual Studio 2019 或2017
 
 ## <a name="recommended-approach"></a>建議的方法
 
-強烈建議使用 Visual Studio 2015 來啟動此升級，而不是 Visual Studio 2017。 在 Visual Studio 2015 中進行開發的主要優點，是為了確保您不會參考 Visual Studio 2015 中未提供的元件。 如果您在 Visual Studio 2017 中進行開發，則可能會對只存在於 Visual Studio 2017 中的元件引入相依性。
+強烈建議使用 Visual Studio 2015 來啟動此升級，而不是 Visual Studio 2019 或2017。 在 Visual Studio 2015 中進行開發的主要優點，是為了確保您不會參考 Visual Studio 2015 中未提供的元件。 如果您在 Visual Studio 2019 或2017中進行開發，則可能會對只存在於 Visual Studio 2019 或2017中的元件產生相依性的風險。
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>請確定沒有對專案的參考。 json
 
@@ -67,12 +67,12 @@ ms.locfileid: "74316493"
 
 我們必須確定新增組建工具，讓我們能夠適當地建立和進行偵錯工具。 Microsoft 已建立這個名為 VisualStudio 的元件。 BuildTasks。
 
-若要在 Visual Studio 2015 和2017中建立及部署 VSIXv3，您將需要下列 NuGet 套件：
+若要在 Visual Studio 2015 和2019/2017 中建立及部署 VSIXv3，您將需要下列 NuGet 套件：
 
-版本 | 建立的工具
+{2&gt;版本&lt;2} | 建立的工具
 --- | ---
 Visual Studio 2015 | VisualStudio. BuildTasks 14。0
-Visual Studio 2017 | VSSDK. BuildTool
+Visual Studio 2019 或2017 | VSSDK. BuildTool
 
 方法如下：
 
@@ -112,7 +112,7 @@ Visual Studio 2017 | VSSDK. BuildTool
 * 儲存並關閉檔案。
 
 > [!NOTE]
-> 您可能需要手動編輯先決條件版本，以確保它與所有版本的 Visual Studio 2017 相容。 這是因為設計工具會將最小版本插入 Visual Studio 您目前的版本（例如，15.0.26208.0）。 不過，由於其他使用者可能會有較舊的版本，因此您會想要手動將此編輯為15.0。
+> 您可能需要手動編輯先決條件版本，以確保它與所有版本的 Visual Studio 2019 或2017相容。 這是因為設計工具會將最小版本插入 Visual Studio 您目前的版本（例如，15.0.26208.0）。 不過，由於其他使用者可能會有較舊的版本，因此您會想要手動將此編輯為15.0。
 
 此時，您的資訊清單檔看起來應該像這樣：
 
@@ -195,9 +195,10 @@ Visual Studio 2017 | VSSDK. BuildTool
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
-* 儲存 .csproj 檔案並加以關閉。
+* 儲存 .csproj 檔案並加以關閉。 
+  * 請注意，如果您在方案中使用一個以上的專案，請使用專案操作功能表上的 [設定為啟始專案]，將此專案設定為啟始專案。 這可確保在您卸載此專案之後，Visual Studio 重新開啟此專案。
 
-## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2017"></a>在 Visual Studio 2015 和 Visual Studio 2017 中測試延伸模組安裝
+## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2019-or-2017"></a>在 Visual Studio 2015 和 Visual Studio 2019 或2017中測試延伸模組安裝
 
 此時，您的專案應該已準備好建立可在 Visual Studio 2015 和 Visual Studio 2017 上安裝的 VSIXv3。
 
@@ -205,7 +206,7 @@ Visual Studio 2017 | VSSDK. BuildTool
 * 建立您的專案，並在輸出中確認 VSIX 已正確建立。
 * 流覽至您的專案目錄。
 * 開啟 [ *\bin\Debug* ] 資料夾。
-* 按兩下 VSIX 檔案，並在 Visual Studio 2015 和 Visual Studio 2017 上安裝您的擴充功能。
+* 按兩下 VSIX 檔案，並在 Visual Studio 2015 和 Visual Studio 2019/2017 上安裝您的擴充功能。
 * 請確定您可以在 [**已安裝**] 區段中的 [**工具**] > [**延伸模組和更新**] 中看到延伸模組。
 * 嘗試執行/使用延伸模組來檢查其是否正常運作。
 

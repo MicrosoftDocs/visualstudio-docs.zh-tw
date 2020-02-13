@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 94bd67ecb4646e3b8079d2d1aadda097c655af4c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: dfa81e7afe313a112e2355ddf5efadb70c555477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653177"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591590"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 的概觀
 
@@ -46,7 +46,7 @@ IntelliTest 可讓您及早發現錯誤，並降低測試維護成本。 使用�
 
 ## <a name="the-hello-world-of-intellitest"></a>IntelliTest 的 Hello World
 
-IntelliTest 會尋找與所測試程式相關的輸入，這表示您可以使用它來產生知名的 **Hello World!** 字串。 這會假設您已建立 C# MSTest 架構的測試專案，並已新增 **Microsoft.Pex.Framework** 的參考。 如果您要使用不同的測試架構，請建立 C# 類別庫，並參閱有關如何設定專案的測試架構文件。
+IntelliTest 會尋找與所測試程式相關的輸入，這表示您可以使用它來產生知名的 **Hello World!** 字串。 這會假設您已建立C# MSTest 架構的測試專案，並新增**Pex**的參考。 如果您要使用不同的測試架構，請建立 C# 類別庫，並參閱有關如何設定專案的測試架構文件。
 
 下列範例會在名為 **value** 的參數上建立兩個條件約束，以便 IntelliTest 產生必要的字串：
 
@@ -78,6 +78,9 @@ public partial class HelloWorldTest {
 7. "Hello\0World!"
 8. "Hello World!"
 
+> [!NOTE]
+> 針對組建問題，請嘗試以 Mstest.testframework 的參考取代 VisualStudio. TestPlatform. VisualStudio. TestPlatform. mstest.testframework. VisualStudio. microsoft.visualstudio.qualitytools.webtestframework。
+
 請參閱[使用 IntelliTest 產生單元測試](../../test/generate-unit-tests-for-your-code-with-intellitest.md)來了解所產生測試的儲存位置。 產生的測試程式碼應該包含測試，如下列程式碼所示：
 
 ```csharp
@@ -96,7 +99,7 @@ public void HelloWorldThrowsException167()
 
 本節描述 IntelliTest 的限制：
 
-* [不具決定性](#nondeterminism)
+* [非決定性](#nondeterminism)
 * [並行](#concurrency)
 * [原生 .NET 程式碼](#native-code)
 * [平台](#platform)

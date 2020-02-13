@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: 深入了解系統管理員要追蹤使用者指派及處理訂單的責任。
-ms.openlocfilehash: 4c23994de1eb1a24982bd0554e838691b34b8025
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: bf7fcdb2fae2ad6d354c4320ec26c4f1025766dd
+ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491610"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76967329"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>追蹤使用者指派和處理訂單
 Visual Studio 訂用帳戶系統管理員應該要根據大量授權合約或 Microsoft 產品和服務合約中所述的時間表，追蹤 Visual Studio 使用量，並處理任何使用量增加而產生的訂單。 新的 Visual Studio 訂用帳戶系統管理入口網站提供可顯示可用和已使用之授權的實用追蹤器，進而簡化了此作業。
@@ -30,11 +30,11 @@ Visual Studio 訂用帳戶系統管理員應該要根據大量授權合約或 Mi
     > 若要避免虛高的使用量上限層級，請務必要先移除現有的訂用帳戶，再新增新的訂用帳戶。 
 - 為協助您監視組織的最大使用量，Visual Studio 訂用帳戶系統[管理入口網站](https://manage.visualstudio.com)中會出現 [[最高使用量](maximum-usage.md)] 報告。 
 
-## <a name="cloud-subscriptions-open-license-or-open-value"></a>雲端訂用帳戶，Open License 或 Open Value
-您可能會透過方案 (例如 Microsoft Cloud 訂用帳戶、Open Licens 或 Open Value) 獲得訂用帳戶的指派。 如果是這樣，您必須在使用者 (員工或外部承包商) 開始與 Visual Studio 授權軟體進行互動的當月內處理額外使用者的訂單。
+## <a name="monthly-subscriptions-open-license-or-open-value"></a>每月訂閱、Open License 或開放值
+您可以透過 Open License 和 Open 值之類的程式或每月的 Visual Studio Marketplace 來指派訂閱。 如果是這樣，您必須在使用者 (員工或外部承包商) 開始與 Visual Studio 授權軟體進行互動的當月內處理額外使用者的訂單。
 
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Enterprise、MPSA 和 Select 合約
-Microsoft Enterprise 合約 (EA)、MPSA 及 Select Plus 合約可讓您隨著時間變化，靈活使用 Visual Studio 軟體並進行授權。 Visual Studio 系統管理員必須發出年度較正訂單，使其軟體授權數量能夠符合合約期間所產生之使用量的上限標準。
+Microsoft Enterprise 合約 (EA)、MPSA 及 Select Plus 合約可讓您隨著時間變化，靈活使用 Visual Studio 軟體並進行授權。 Visual Studio 系統管理員必須提出每年的實際訂單，才能將其軟體授權的最高可達合約期間所建立的使用量上限。
 
 ## <a name="next-steps"></a>後續步驟
 深入了解系統管理員的責任：
@@ -42,3 +42,8 @@ Microsoft Enterprise 合約 (EA)、MPSA 及 Select Plus 合約可讓您隨著時
 - [清查生產前環境](admin-inventory.md)
 - [管理大型小組及外部承攬人](manage-teams.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量
+
+## <a name="see-also"></a>請參閱
+- [Visual Studio 檔](/visualstudio/)
+- [Azure 文件](/azure/)
+- [Azure DevOps](/azure/devops/)

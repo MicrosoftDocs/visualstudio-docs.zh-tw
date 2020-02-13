@@ -15,23 +15,23 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3c8022a9dfba3012e8c81523b076b7bbfbb6ee8d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c4da0414c9923a8ed7bb01456f38000433641522
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669190"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919226"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709：識別項名稱應該使用正確的大小寫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新檔，請參閱[CA1709：識別碼的大小寫應正確](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)。
+如需 Visual Studio 的最新檔，請參閱[CA1709：識別碼的大小寫應正確](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)。
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|Category|Microsoft. 命名|
+|分類|Microsoft. 命名|
 |中斷變更|中斷-在元件、命名空間、類型、成員和參數上引發時。<br /><br /> 非中斷-在泛型型別參數上引發時。|
 
 ## <a name="cause"></a>原因

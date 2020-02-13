@@ -15,26 +15,26 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e17171b79e06a273e9a9f4bb5032781963e8d818
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301411"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918828"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：建立網域指定的語言方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 特定領域語言（DSL）是使用特製化的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解決方案所建立。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要條件：
  開始進行此程式之前，您必須先安裝下列元件：
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
+|Visual Studio Visualization and Modeling SDK|[模型 SDK 下載](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>建立特定領域語言方案
 
@@ -42,15 +42,15 @@ ms.locfileid: "74301411"
 
 1. 啟動 DSL Wizard。
 
-   1. 在 [檔案] **Deploying Office Solutions** 功能表中，指向 [新增]，然後按一下 [專案]。
+   1. 在 [檔案] 功能表中，指向 [新增]，然後按一下 [專案]。
 
-   2. 此時會出現 [新增專案] 對話方塊。
+   2. [ **新增專案** ] 對話方塊隨即出現。
 
    3. 在 [**專案類型**] 底下，展開 [**其他專案類型**] 節點，**然後按一下 [** 擴充性]。
 
    4. 按一下 [**網域指定的語言設計**工具]。
 
-   5. 在 [**名稱**] 方塊中，輸入解決方案的名稱。 按一下 [確定]。
+   5. 在 [**名稱**] 方塊中，輸入解決方案的名稱。 按一下 [ **確定**]。
 
        **定義域指定的語言設計工具 Wizard**隨即出現。
 
@@ -127,7 +127,7 @@ ms.locfileid: "74301411"
 
  **使用現有的強式名稱金鑰**如果您想要整合 DSL 與另一個元件，請使用此選項。
 
- 如需強式命名的詳細資訊，請參閱[建立和使用強式名稱的元件](https://go.microsoft.com/fwlink/?LinkId=186073)。
+ 如需強式命名的詳細資訊，請參閱[建立和使用強式名稱的元件](/dotnet/standard/assembly/create-use-strong-named)。
 
-## <a name="see-also"></a>另請參閱
- [如何定義特定領域語言的](../modeling/how-to-define-a-domain-specific-language.md)[網域特定語言工具詞彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>請參閱
+ [如何定義特定領域語言的](../modeling/how-to-define-a-domain-specific-language.md)[網域特定語言工具詞彙](/previous-versions/bb126564(v=vs.100))

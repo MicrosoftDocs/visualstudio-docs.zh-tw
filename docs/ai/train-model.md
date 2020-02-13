@@ -9,16 +9,16 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f69d978f7257398e1518828cd0bbe7ed1ff0e66c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dec70c9e9aeb9c916b511241a74b550354aff175
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563821"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915764"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>在 Azure Batch AI 中定型 AI 模型
 
-Batch AI 是受管理的服務，可讓資料科學家和 AI 研究員定型 AI 及 Azure 虛擬機器叢集上的其他機器學習模型，包括支援 GPU 的 VM。 您可以描述工作的需求、尋找輸入和儲存輸出的位置，Batch AI 會處理其餘部分。 [深入了解 Azure Batch AI](https://docs.microsoft.com/azure/batch-ai/overview)
+Batch AI 是受管理的服務，可讓資料科學家和 AI 研究員定型 AI 及 Azure 虛擬機器叢集上的其他機器學習模型，包括支援 GPU 的 VM。 您可以描述工作的需求、尋找輸入和儲存輸出的位置，Batch AI 會處理其餘部分。 [深入了解 Azure Batch AI](/azure/batch-ai/overview)
 
 它與 Visual Studio Tools for AI 整合，因此您可以在 Azure 中動態相應放大定型模型。  [安裝 Visual Studio Tools for AI](installation.md) 之後，您就可以使用 Azure Machine Learning 範例庫中預先製作的配方，輕鬆建立新的 Python 專案。
 
@@ -37,7 +37,7 @@ Batch AI 是受管理的服務，可讓資料科學家和 AI 研究員定型 AI 
 4. 在 [本機 Git 存放庫] 下的 [URL] 欄位中，輸入 `https://github.com/Microsoft/samples-for-ai`，輸入複製檔案的資料夾，然後選取 [複製]。
 
     > [!Tip]
-    > 您在 Team Explorer 中指定的資料夾是用來接收所複製檔案的特定資料夾。 不同於 `git clone` 命令，在 Team Explorer 中建立複製品不會自動使用儲存機制的名稱來建立子資料夾。
+    > 您在 Team Explorer 中指定的資料夾是用來接收所複製檔案的特定資料夾。 不同於 `git clone` 命令，在 Team Explorer 中建立複製品不會自動使用存放庫的名稱來建立子資料夾。
 
 5. 複製完成時，按一下 [檔案] > [開啟方案] > [專案/方案]
 
@@ -51,7 +51,7 @@ Batch AI 是受管理的服務，可讓資料科學家和 AI 研究員定型 AI 
 
     ![範例庫](media/train-model/mnist-startup.png)
 
-8. <strong>以滑鼠右鍵按一下 [MNIST 專案]、[提交作業]</strong>
+8. <strong>以滑鼠右鍵按一下 [ **MNIST 專案]、** [**提交工作**]</strong>
 
     ![範例庫](media/train-model/submit-job.png)
 9. 選取您的 **Azure Batch AI** 叢集，然後按一下 [匯入]。 選取 `AzureBatchAI_TF_MNIST.json` 檔案，以快速填入一些預設值，例如要使用哪一個 Docker 映像。 然後按一下 [提交]

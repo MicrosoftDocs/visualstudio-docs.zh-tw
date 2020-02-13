@@ -3,17 +3,17 @@ title: 如何：將著色器套用至 3D 模型
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 445829c3171eeae3b483055688dcf5f77be67330
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ae04f4cc0afb1c24f391d140081040efe9db50e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637175"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76112764"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>如何：將著色器套用至 3D 模型
 

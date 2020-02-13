@@ -32,12 +32,12 @@ caps.latest.revision: 129
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49c421af5aa6c91535b05f0beca88099ea7a2eaa
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1a505cd9fd40a47c58135506cf7e022409e9b77e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297950"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852066"
 ---
 # <a name="analyze-and-model-your-architecture"></a>分析架構並製作架構模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,10 +52,10 @@ ms.locfileid: "74297950"
 
 |||
 |-|-|
-|**視覺化程式碼**：<br /><br /> -藉由建立 code map，查看程式碼的組織和關聯性。 將組件、命名空間、類別、方法等之間的相依性視覺化。<br />-從程式碼建立類別圖表，以查看特定專案的類別結構和成員。<br />-藉由建立分層圖來驗證程式代碼，尋找您的程式碼與設計之間的衝突。<br /><br /> **注意**：在本版 Visual Studio 中，會以 *Code Map* 一詞取代 *「相依性圖形」* (Dependency Graph)。 *「圖形」* (Graph) 一詞單獨使用時，通常是指有向圖形或 DGML 圖表 (或文件)。 Code Map 是特殊類型的 DGML 圖表。|-   [視覺化程式碼](../modeling/visualize-code.md)<br />-   [使用類別和其他類型（類別設計工具）](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [影片：透過視覺化瞭解程式碼相依性（Channel 9）](https://go.microsoft.com/fwlink/?LinkID=252065)<br />-   [影片：視覺化變更的影響（Channel 9）](https://go.microsoft.com/fwlink/?LinkID=252068)|
-|**描述以及溝通使用者需求**：<br /><br /> -藉由繪製 UML 圖表，例如使用案例、活動和類別圖，來澄清使用者故事、商務規則和其他需求，並協助確保其一致性。|-   [為您的應用程式建立模型](../modeling/create-models-for-your-app.md)<br />-   [模型使用者需求](../modeling/model-user-requirements.md)<br />-   [影片：透過模型改進架構（Channel 9）](https://go.microsoft.com/fwlink/?LinkID=252078)|
-|**定義架構**：<br /><br /> -藉由繪製 UML 元件、類別和順序圖表，建立軟體系統的大規模結構和設計模式的模型。<br />-藉由建立分層圖，定義和強制執行程式碼元件之間相依性的條件約束。|-   [為您的應用程式建立模型](../modeling/create-models-for-your-app.md)<br />-   為[您的應用程式架構建立模型](../modeling/model-your-app-s-architecture.md)<br />-   [影片：透過模型改進架構（Channel 9）](https://go.microsoft.com/fwlink/?LinkID=252078)<br />-   [影片：使用分層圖設計和驗證架構（Channel 9）](https://go.microsoft.com/fwlink/?LinkID=252073)|
-|**根據需求和預定設計驗證您的系統**<br /><br /> -根據需求模型定義接受度測試或系統測試。 這樣可在測試與使用者需求之間建立強式關聯性，並且協助您在需求變更時更輕鬆地更新系統。<br />-使用描述所需架構的分層圖來驗證程式代碼相依性，並防止可能與設計衝突的變更。|-   [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)<br />-   [影片：使用分層圖設計和驗證架構（Channel 9）](https://go.microsoft.com/fwlink/?LinkID=252073)|
+|**視覺化程式碼**：<br /><br /> -藉由建立 code map，查看程式碼的組織和關聯性。 將組件、命名空間、類別、方法等之間的相依性視覺化。<br />-從程式碼建立類別圖表，以查看特定專案的類別結構和成員。<br />-藉由建立分層圖來驗證程式代碼，尋找您的程式碼與設計之間的衝突。<br /><br /> **注意**：在本版 Visual Studio 中，會以 *Code Map* 一詞取代 *「相依性圖形」* (Dependency Graph)。 *「圖形」* (Graph) 一詞單獨使用時，通常是指有向圖形或 DGML 圖表 (或文件)。 Code Map 是特殊類型的 DGML 圖表。|-   [視覺化程式碼](../modeling/visualize-code.md)<br />-   [使用類別和其他類型（類別設計工具）](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [影片：透過視覺化瞭解程式碼相依性（Channel 9）](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)<br />-   [影片：視覺化變更的影響（Channel 9）](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)|
+|**描述以及溝通使用者需求**：<br /><br /> -藉由繪製 UML 圖表，例如使用案例、活動和類別圖，來澄清使用者故事、商務規則和其他需求，並協助確保其一致性。|-   [為您的應用程式建立模型](../modeling/create-models-for-your-app.md)<br />-   [模型使用者需求](../modeling/model-user-requirements.md)<br />-   [影片：透過模型改進架構（Channel 9）](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)|
+|**定義架構**：<br /><br /> -藉由繪製 UML 元件、類別和順序圖表，建立軟體系統的大規模結構和設計模式的模型。<br />-藉由建立分層圖，定義和強制執行程式碼元件之間相依性的條件約束。|-   [為您的應用程式建立模型](../modeling/create-models-for-your-app.md)<br />-   為[您的應用程式架構建立模型](../modeling/model-your-app-s-architecture.md)<br />-   [影片：透過模型改進架構（Channel 9）](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)<br />-   [影片：使用分層圖設計和驗證架構（Channel 9）](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)|
+|**根據需求和預定設計驗證您的系統**<br /><br /> -根據需求模型定義接受度測試或系統測試。 這樣可在測試與使用者需求之間建立強式關聯性，並且協助您在需求變更時更輕鬆地更新系統。<br />-使用描述所需架構的分層圖來驗證程式代碼相依性，並防止可能與設計衝突的變更。|-   [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)<br />-   [影片：使用分層圖設計和驗證架構（Channel 9）](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)|
 |**使用 Team Foundation 版本控制，共用模型、圖表和 Code Map**：<br /><br /> -將 code map、模型專案、UML 圖表和分層圖放在 Team Foundation 版本控制之下，讓您可以共用它們。|當多位使用者在 Team Foundation 版本控制使用這些項目時，請使用下列方針協助您避免版本控制問題：<br /><br /> -   [在版本控制下管理模型和圖表](../modeling/manage-models-and-diagrams-under-version-control.md)|
 |**產生或設定從 UML 或特定領域語言撰寫成應用程式的組件**：<br /><br /> -讓您的設計能夠更快回應需求變更，並在產品線上輕鬆變數。|-   [從模型產生和設定您的應用程式](../modeling/generate-and-configure-your-app-from-models.md)|
 |**自訂模型和圖表**：<br /><br /> -藉由定義 UML 專案的其他屬性、驗證條件約束以確保模型符合您的商務規則，以及其他功能表命令和工具箱專案，將模型調整為您的專案使用它們的方式。<br />-建立您自己的特定領域語言。|-   [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)<br />[適用于 Visual Studio 網域特定語言的 -   模型 SDK](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
@@ -74,9 +74,9 @@ ms.locfileid: "74297950"
 
 |||
 |-|-|
-|**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 2015 中的模型新功能](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps 與應用程式生命週期管理](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)

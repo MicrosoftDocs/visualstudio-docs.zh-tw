@@ -13,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68efbd59abe1b0aff717a55383f3ac330586164a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a22bc8fbe65795a3c5162607a12690081e565666
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738573"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917111"
 ---
 # <a name="querying-the-pdb-file"></a>查詢 .Pdb 檔案
-程式資料庫檔案（副檔名 .pdb）是一個二進位檔案，其中包含在編譯和連結專案的過程中所收集的類型和符號的偵錯工具資訊。 當您使用C++ **/zi**或 **/zi**編譯 C/程式，或使用 **/debug**選項 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] 程式時，會建立 PDB 檔案。 物件檔案包含用於偵錯工具之 .pdb 檔案的參考。 如需 pdb 檔案的詳細資訊，請參閱[pdb](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100))檔案。 DIA 應用程式可以使用下列一般步驟來取得可執行映射內各種符號、物件和資料元素的詳細資訊。
+程式資料庫檔案（副檔名 .pdb）是一個二進位檔案，其中包含在編譯和連結專案的過程中所收集的類型和符號的偵錯工具資訊。 當您使用C++ **/zi**或 **/zi**編譯 C/程式，或使用 **/debug**選項 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]或 [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] 程式時，會建立 PDB 檔案。 物件檔案包含用於偵錯工具之 .pdb 檔案的參考。 如需 pdb 檔案的詳細資訊，請參閱[pdb](/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100))檔案。 DIA 應用程式可以使用下列一般步驟來取得可執行映射內各種符號、物件和資料元素的詳細資訊。
 
 ### <a name="to-query-the-pdb-file"></a>若要查詢 .pdb 檔案
 

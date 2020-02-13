@@ -1,5 +1,5 @@
 ---
-title: 偵錯 64 位元應用程式 |Microsoft Docs
+title: Debug 64 位應用程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,17 +17,17 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f67acff26d346b915f6b457fc0887f1d5f2ec3b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 56e5b76b000fd269d76d535e635ba86e72912bad
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695907"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916009"
 ---
 # <a name="debug-64-bit-applications"></a>偵錯 64 位元應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的最新的版本可從[偵錯 64 位元應用程式](https://docs.microsoft.com/visualstudio/debugger/debug-64-bit-applications)。  
+本主題的最新版本可在[Debug 64 位應用程式](/visualstudio/debugger/debug-64-bit-applications)中找到。  
   
 您可以對本機電腦或遠端電腦上執行的 64 位元應用程式進行偵錯。  
   
@@ -42,14 +42,14 @@ ms.locfileid: "65695907"
   
 1. 建立 Visual Studio 方案，例如 C# 主控台應用程式。  
   
-2. 使用組態管理員將組態設定為 64 位元。 如需詳細資訊，請參閱[如何：將專案設定到目標平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
+2. 使用組態管理員將組態設定為 64 位元。 如需詳細資訊，請參閱 [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md)。  
   
 3. 此時會啟動 64 位元版本的遠端偵錯工具 (msvsmon.exe)。 只要開啟具有 64 位元組態的方案，就會執行此工具。  
   
 4. 開始偵錯。 您應該會與 32 位元組態有相同的體驗。 如果您收到錯誤，請參閱下列＜疑難排解＞一節。  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>64 位元偵錯疑難排解  
- 您可能會看到錯誤：「 64 位元偵錯作業花費的時間超出預期。 」 在此情況下，Visual Studio 已傳送要求到 64 位元版本的 msvsmon.exe，但該要求的結果卻花很長的時間傳回。  
+ 您可能會看到錯誤：「64 位元偵錯作業所花的時間超出預期」。 在此情況下，Visual Studio 已傳送要求到 64 位元版本的 msvsmon.exe，但該要求的結果卻花很長的時間傳回。  
   
  此錯誤的主要原因有兩個：  
   
@@ -57,7 +57,7 @@ ms.locfileid: "65695907"
   
 - 您在使用 Visual Studio 時遇到停止回應或效能問題。 如果此問題經常發生，您可以收集 Visual Studio 的傾印 (devenv.exe) 和背景工作處理序 (msvsmon.exe)，然後傳送給 Microsoft。 
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [64 位元應用程式](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [為 64 位元設定程式](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
  [Visual Studio IDE 64 位元支援](../ide/visual-studio-ide-64-bit-support.md)   

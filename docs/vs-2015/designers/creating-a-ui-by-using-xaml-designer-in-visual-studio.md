@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 879d8457a0f5fd4bf63a2d69a4f3f026ce4c6fe1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d230d9a4719e1757820de87b60bcc7566a785f99
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294669"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844010"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  **對齊線**：對齊線是當控制項邊緣對齊時，或文字基線對齊時顯示為紅色虛線的「對齊界限」。 只有在啟用 [貼齊至對齊線] 時才會顯示對齊界限。
 
- **格線滑軌**：`Grid` 滑軌可用來管理 [[格線]](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) 面板中的資料列和資料行。 您可以建立及刪除列和欄，以及調整其相對寬度和高度。 出現在畫板左邊的垂直 Grid 滑軌適用於列，而出現在頂端的水平線則適用於欄。
+ **格線滑軌**`Grid` 滑軌可用來管理[格線](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx)面板中的資料列和資料行。 您可以建立及刪除列和欄，以及調整其相對寬度和高度。 出現在畫板左邊的垂直 Grid 滑軌適用於列，而出現在頂端的水平線則適用於欄。
 
  **格線提示**：`Grid` 提示會顯示為 `Grid` 滑軌上已附加垂直或水平線的三角形。 當您拖曳 `Grid` 裝飾項時，相鄰欄或列的寬度或高度會在您移動滑鼠時更新。
 
@@ -79,7 +79,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
  **標記縮放**：標記縮放可讓您調整 [XAML] 檢視的大小。 您可以從 20% 放大到 400%。
 
 ## <a name="device-window"></a>[裝置] 視窗
- XAML 設計工具中的 [裝置] 視窗，可讓您在設計階段模擬 Windows 市集或 Windows Phone 專案的各種檢視、顯示和顯示選項。 當您使用 XAML 設計工具時，可以從 [設計] 功能表存取 [裝置] 視窗。 看起來如下：
+ XAML 設計工具中的 [裝置] 視窗，可讓您在設計階段模擬 Windows 市集或 Windows Phone 專案的各種檢視、顯示和顯示選項。 當您使用 XAML 設計工具時，可以從 [設計] 功能表存取 [裝置] 視窗。 以下是它看起來的樣子：
 
  ![裝置視窗](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
@@ -129,13 +129,13 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
   **將範圍傳回 pageRoot**：[文件大綱] 視窗頂端顯示向上箭號符號的選項，可將文件大綱傳回到前一個範圍。 只有您在樣式或樣板的範圍內時，選定範圍才適用。
 
 ## <a name="properties-window"></a>[屬性] 視窗
- [屬性] 視窗可讓您設定控制項的屬性值。 看起來如下：
+ [屬性] 視窗可讓您設定控制項的屬性值。 以下是它看起來的樣子：
 
  ![屬性視窗](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
- [屬性] 視窗的頂端有各種選項。 您可以使用 [名稱] 方塊，變更目前選取項目的名稱。 在左上角，有一個代表目前選取項目的圖示。 若要依分類或依字母順序排列屬性，請按一下 [排列依據]清單中的 [分類]、[名稱] 或 [來源] 。 若要查看控制項的事件清單，請按一下顯示閃電符號的 [事件] 按鈕。 若要搜尋屬性，請在 [搜尋屬性] 方塊中開始輸入屬性的名稱。 在您輸入文字時，[屬性] 視窗會顯示符合搜尋的屬性。 有些屬性可讓您藉由選取向下箭號按鈕來設定進階屬性。 如需使用屬性和處理事件的詳細資訊，請參閱 [快速入門：新增控制項和處理事件](https://go.microsoft.com/fwlink/?LinkID=247983)
+ [屬性] 視窗的頂端有各種選項。 您可以使用 [名稱] 方塊，變更目前選取項目的名稱。 在左上角，有一個代表目前選取項目的圖示。 若要依分類或依字母順序排列屬性，請按一下 [排列依據]清單中的 [分類]、[名稱] 或 [來源] 。 若要查看控制項的事件清單，請按一下顯示閃電符號的 [事件] 按鈕。 若要搜尋屬性，請在 [搜尋屬性] 方塊中開始輸入屬性的名稱。 在您輸入文字時，[屬性] 視窗會顯示符合搜尋的屬性。 有些屬性可讓您藉由選取向下箭號按鈕來設定進階屬性。 如需使用屬性和處理事件的詳細資訊，請參閱 [快速入門：新增控制項和處理事件](https://msdn.microsoft.com/library/windows/apps/xaml/hh465336.aspx)
 
  每個屬性值的右邊是顯示為方塊符號的 *「屬性標記」* (Property Marker)。 屬性標記的有無表示屬性是否已套用資料繫結或資源。 例如，白色方塊符號表示預設值，黑色方塊符號通常表示已套用本機資源，而橙色方塊通常表示已套用資料繫結。 當您按一下屬性標記時，您可以巡覽至樣式定義、開啟資料繫結產生器，或開啟資源選擇器。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  使用[中的元素 XAML 設計工具](../designers/working-with-elements-in-xaml-designer.md)[如何建立和套用資源](../designers/how-to-create-and-apply-a-resource.md)[逐步解說：系結至中的資料 XAML 設計工具](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

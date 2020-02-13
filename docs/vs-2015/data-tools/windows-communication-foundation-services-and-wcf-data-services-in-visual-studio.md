@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c366ce44ab65ded62370dd3c219473089d5ca111
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e988c8818cdee756310b73d0d214deda43226f2b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299562"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850219"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Visual Studio 提供使用 Windows Communication Foundation （WCF）和 [!INCLU
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 是統一的架構，可建立安全、可靠、交易和互通的分散式應用程式。 它會取代舊版的處理序間通訊技術，例如，.ASMX Web 服務、.NET 遠端處理、企業服務（DCOM）和 MSMQ。 WCF 將所有這些技術的功能整合在統一的程式設計模型下。 這可簡化開發分散式應用程式的體驗。
 
 #### <a name="what-are-wcf-data-services"></a>WCF Data Services 的內容
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 是開放式資料（OData）通訊協定標準的執行。  WCF Data Services 可讓您將表格式資料公開為一組 REST Api，可讓您使用標準 HTTP 動詞命令（例如 GET、POST、PUT 或 DELETE）來傳回資料。 在伺服器端上，WCF Data Services 由[ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis)取代，以建立新的 OData 服務。 WCF Data Services 用戶端程式庫會持續成為在 .NET 應用程式中使用 OData 服務的最佳選擇，Visual Studio **（ &#124; Project 加入服務參考**）。 如需詳細資訊，請參閱 [WCF Data Services 4.5](https://go.microsoft.com/fwlink/?LinkID=119952)。
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 是開放式資料（OData）通訊協定標準的執行。  WCF Data Services 可讓您將表格式資料公開為一組 REST Api，可讓您使用標準 HTTP 動詞命令（例如 GET、POST、PUT 或 DELETE）來傳回資料。 在伺服器端上，WCF Data Services 由[ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis)取代，以建立新的 OData 服務。 WCF Data Services 用戶端程式庫會持續成為在 .NET 應用程式中使用 OData 服務的最佳選擇，Visual Studio **（ &#124; Project 加入服務參考**）。 如需詳細資訊，請參閱 [WCF Data Services 4.5](https://msdn.microsoft.com/library/cc668792.aspx)。
 
 ### <a name="wcf-programming-model"></a>WCF 程式設計模型
  WCF 程式設計模型是以兩個實體之間的通訊為基礎： WCF 服務和 WCF 用戶端。 程式設計模型會封裝在 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]的 <xref:System.ServiceModel> 命名空間中。
@@ -245,10 +245,10 @@ Visual Studio 提供使用 Windows Communication Foundation （WCF）和 [!INCLU
 |[逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|提供用於建立具類型資料集以及將 TableAdapter 和資料集程式碼分成多個專案的逐步指示。|
 |[設定服務參考對話方塊](../data-tools/configure-service-reference-dialog-box.md)|描述 [**設定服務參考**] 對話方塊的使用者介面元素。|
 
-## <a name="reference"></a>參考
+## <a name="reference"></a>參考資料
  <xref:System.ServiceModel>
 
  <xref:System.Data.Services>
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -4,23 +4,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1443cacd6d2e7c8f980e0bf423832d9b013e560f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f4923a858d9d46c477f50df2a08440a10e9309ef
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748386"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114517"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：攔截圖案或 Decorator 上的點選
 下列程式示範如何攔截圖形或圖示裝飾專案的按一下。 您可以攔截點擊、按兩下、拖曳和其他手勢，然後讓元素回應。
 
 ## <a name="to-intercept-clicks-on-shapes"></a>若要攔截形狀的點擊點
- 在 Dsl 專案中，在與產生的程式碼檔案不同的程式碼檔案中，撰寫 shape 類別的部分類別定義。 覆寫 `OnDoubleClick()` 或其中一個名稱開頭為 `On...` 的其他方法。 例如:
+ 在 Dsl 專案中，在與產生的程式碼檔案不同的程式碼檔案中，撰寫 shape 類別的部分類別定義。 覆寫 `OnDoubleClick()` 或其中一個名稱開頭為 `On...`的其他方法。 例如：
 
 ```csharp
 public partial class MyShape // change
@@ -37,7 +37,7 @@ public partial class MyShape // change
 > 除非您想要將事件傳遞至包含的圖形或圖表，否則請將 `e.Handled` 設定為 `true`。
 
 ## <a name="to-intercept-clicks-on-decorators"></a>在裝飾專案上攔截按一下
- 影像裝飾專案會在 ImageField 類別的實例上攜帶，其具有 OnDoubleClick 方法。 如果您撰寫 ImageField 子類別，就可以攔截按一下。 這些欄位是在 InitializeShapeFields 方法中設定。 因此，您必須變更該方法，以具現化您的子類別，而不是一般 ImageField。 InitializeShapeFields 方法位於 shape 類別的產生程式碼中。 如下列程式所述，您可以在設定其 [`Generates Double Derived`] 屬性時覆寫 shape 類別。
+ 影像裝飾專案會在 ImageField 類別的實例上攜帶，其具有 OnDoubleClick 方法。 如果您撰寫 ImageField 子類別，就可以攔截按一下。 這些欄位是在 InitializeShapeFields 方法中設定。 因此，您必須變更該方法，以具現化您的子類別，而不是一般 ImageField。 InitializeShapeFields 方法位於 shape 類別的產生程式碼中。 如果您設定其 `Generates Double Derived` 屬性（如下列程式所述），則可以覆寫 shape 類別。
 
  雖然 InitializeShapeFields 是實例方法，但它只會針對每個類別呼叫一次。 因此，每個類別中的每個欄位都只會有一個 ClickableImageField 實例，而不是圖表中每個圖形的一個實例。 當使用者按兩下實例時，您必須識別已叫用的實例，如範例中的程式碼所示。
 
@@ -133,7 +133,7 @@ public partial class MyShape // change
 
 - 一組滑鼠事件處理常式會在建立時附加到每個區間實例。
 
-- @No__t_0 事件會儲存目前的專案。
+- `ClassShape.MouseDown` 事件會儲存目前的專案。
 
 - 當滑鼠移出目前的專案時，會建立 MouseAction 的實例，這會設定游標並捕捉滑鼠，直到釋放它為止。
 

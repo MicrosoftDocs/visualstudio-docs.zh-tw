@@ -14,17 +14,17 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb8da704832031d69156eee8863b689e7956f025
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6a871f726dc13f91c1dfd57471c12ee5cbfeb245
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295961"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918870"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001：使用 StringBuilder 進行串連
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新檔，請參閱[DA0001：使用 StringBuilder 進行](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations)串連。  
+如需 Visual Studio 的最新檔，請參閱[DA0001：使用 StringBuilder 進行](/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations)串連。  
   
 |||  
 |-|-|  
@@ -45,4 +45,4 @@ ms.locfileid: "74295961"
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
  按兩下 [錯誤清單] 視窗中的訊息，瀏覽至取樣分析資料的[函式詳細資料檢視](../profiling/function-details-view.md)。 找出程式最常使用字串串連的區段。 對於複雜的字串操作 (包括常見的字串串連作業) 使用 StringBuilder 類別。  
   
- 如需如何使用字串的詳細資訊，請參閱 Microsoft Patterns and Practices 文件庫中[第 5 章 - 改善 Managed 程式碼的效能 (英文)](https://go.microsoft.com/fwlink/?LinkId=177816)的[字串作業 (英文)](https://go.microsoft.com/fwlink/?LinkId=177817)一節。
+ 如需如何使用字串的詳細資訊，請參閱 Microsoft Patterns and Practices 文件庫中[第 5 章 - 改善 Managed 程式碼的效能 (英文)](https://msdn.microsoft.com/library/ms998547.aspx)的[字串作業 (英文)](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic26)一節。

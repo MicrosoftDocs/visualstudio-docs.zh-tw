@@ -10,12 +10,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 56f2d4cb0b02cc661177a4f781a5c40db924ee2c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4cf121bd7f312518e334c7153acf2d6486e37012
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302107"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851796"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "74302107"
 
  [外部資源](#BKMK_External_resources)
 
-## <a name="BKMK_Unit_test_frameworks_and_test_projects"></a>單元測試架構和測試專案
+## <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> 單元測試架構和測試專案
  Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft 單元測試架構。 不過，測試總管也可以執行任何已實作測試總管配接器的單元測試架構。 如需安裝協力廠商單元測試架構的詳細資訊，請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)。
 
  [測試總管] 可以從方案中的多個測試專案，以及屬於實際執行程式碼專案的測試類別執行測試。 測試專案可以使用不同的單元測試架構。 當進行測試的程式碼是為 .NET Framework 撰寫時，測試專案可以用任何同樣以 .NET Framework 為目標的語言撰寫，而不管目標程式碼的語言為何。 原生 C/C++ 程式碼專案必須使用 C++ 單元測試架構測試。
@@ -45,7 +45,7 @@ ms.locfileid: "74302107"
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
 ## <a name="BKMK_Run_tests_in_Test_Explorer"></a> 在測試總管中執行測試
- [執行測試](#BKMK_Run_tests) **&#124;** [每次建置後執行測試](#BKMK_Run_tests_after_every_build)
+ [執行測試](#BKMK_Run_tests) **&#124;** [在每個組建之後執行測試](#BKMK_Run_tests_after_every_build)
 
  當您建置測試專案時，[測試總管] 就會顯示測試。 如果沒有看到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試] ，接著選擇 [Windows]，然後選擇 [測試總管]。
 
@@ -60,7 +60,7 @@ ms.locfileid: "74302107"
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
 ### <a name="BKMK_Run_tests"></a> 執行測試
- 您可以執行方案中所有測試、群組中所有測試，或一組選取的測試。 執行下列任一步驟：
+ 您可以執行方案中所有測試、群組中所有測試，或一組選取的測試。 請執行下列其中一項動作：
 
 - 若要執行方案中的所有測試，請選擇 [全部執行]。
 
@@ -70,7 +70,7 @@ ms.locfileid: "74302107"
 
 - 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-小型") 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
-  [測試總管] 視窗頂端的成功/失敗列會隨測試執行狀態而變化。 測試回合結束時，如果所有測試皆成功，成功/失敗列會變成綠色；如果有任何一個測試失敗，則會變成紅色。
+  [測試總管] 視窗頂端的成功/失敗列會隨測試執行狀態而變化。 在測試執行完畢時，如果所有測試都成功，成功/失敗列會變成綠色，如有任何測試失敗就變成紅色。
 
   ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
@@ -86,7 +86,7 @@ ms.locfileid: "74302107"
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
 ## <a name="BKMK_View_test_results"></a> 檢視測試結果
- [檢視測試詳細資料](#BKMK_View_test_details) **&#124;** [檢視測試方法的原始程式碼](#BKMK_View_the_source_code_of_a_test_method)
+ [視圖測試詳細資料](#BKMK_View_test_details) **&#124;** [觀看測試方法的原始程式碼](#BKMK_View_the_source_code_of_a_test_method)
 
  當您執行、寫入、重新執行您的測試時，測試總管會顯示 [失敗的測試]、[通過的測試]、[略過的測試] 和 [未執行的測試]群組中的結果。 [測試總管] 底部的 [詳細資料] 窗格會顯示測試執行摘要。
 
@@ -117,7 +117,7 @@ ms.locfileid: "74302107"
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
 ## <a name="BKMK_Group_and_filter_the_test_list"></a> 群組和篩選測試清單
- [分組測試清單](#BKMK_Grouping_the_test_list) **&#124;** [依據特性群組](#BKMK_Group_by_traits) **&#124;** [搜尋和篩選測試清單](#BKMK_Search_and_filter_the_test_list)
+ **&#124;** [依特性](#BKMK_Group_by_traits)搜尋[分組測試清單](#BKMK_Grouping_the_test_list) **&#124;** 群組[和篩選測試清單](#BKMK_Search_and_filter_the_test_list)
 
  測試總管可讓您將測試分組到預先定義的分類。 在測試總管中執行的大部分單元測試架構可讓您定義自己的分類和分類/值組來群組您的測試。 您也可以透過比對字串和測試屬性來篩選測試清單。
 
@@ -142,7 +142,7 @@ ms.locfileid: "74302107"
 
  **Microsoft Managed 程式碼單元測試架構中的特性**
 
- Microsoft Managed 程式碼單元測試架構中，您可在 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：
+ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：
 
 |特性|描述|
 |-----------|-----------------|
@@ -219,7 +219,7 @@ TEST_METHOD(Method1)
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 
- 例如：
+ 例如，套用至物件的
 
 ```
 FullName:"MyClass" - FullName:"PerfTest"
@@ -244,13 +244,13 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
-## <a name="BKMK_Debug_and_analyze_unit_tests"></a> 對單元測試進行偵錯和分析
- [對單元測試進行偵錯](#BKMK_Debug_unit_tests) **&#124;** [診斷測試方法的效能問題](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [分析單元測試程式碼涵蓋範圍](#BKMK_Analyzeunit_test_code_coverage)
+## <a name="BKMK_Debug_and_analyze_unit_tests"></a> 偵錯和分析單元測試
+ [偵錯工具單元測試](#BKMK_Debug_unit_tests) **&#124;** [診斷測試方法效能問題](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [分析單元測試程式碼涵蓋範圍](#BKMK_Analyzeunit_test_code_coverage)
 
-### <a name="BKMK_Debug_unit_tests"></a> 對單元測試進行偵錯
+### <a name="BKMK_Debug_unit_tests"></a> 偵錯單元測試
  您可以使用 [測試總管] 開始測試的偵錯工作階段。 使用 Visual Studio 偵錯工具逐步執行程式碼可讓您順暢地在單元測試和受測專案之間來回進行。 開始偵錯：
 
-1. 在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。
+1. 在 Visual Studio 編輯器中，在要偵錯的一或多個測試方法內設定中斷點。
 
    > [!NOTE]
    > 由於測試方法可以依照任何順序執行，請在要偵錯的所有測試方法內設定中斷點。
@@ -261,7 +261,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
-### <a name="BKMK_Diagnose_test_method_performance_issues"></a> 診斷測試方法的效能問題
+### <a name="BKMK_Diagnose_test_method_performance_issues"></a> 診斷測試方法效能問題
  若要診斷測試方法為何花費太多時間，請在測試總管中選取該方法，然後選取操作功能表上的 [設定檔]。 請參閱[效能總管](../profiling/performance-explorer.md)。
 
 ### <a name="BKMK_Analyzeunit_test_code_coverage"></a> 分析單元測試程式碼涵蓋範圍
@@ -283,14 +283,14 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    [程式碼涵蓋範圍結果] 視窗會顯示線條、函式、類別、命名空間及模組所運用的產品程式碼區塊的百分比。
 
-   如需詳細資訊，請參閱 [Using Code Coverage to Determine How Much Code is being Tested](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
+   如需詳細資訊，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
 
    ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop")[內容](#BKMK_Contents)
 
 ## <a name="BKMK_External_resources"></a> 外部資源
 
 ### <a name="BKMK_Guidance"></a> 指引
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：測試內部](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  進行[單元測試您的程式碼](../test/unit-test-your-code.md)以[64 位進程的形式執行單元測試](../test/run-a-unit-test-as-a-64-bit-process.md)

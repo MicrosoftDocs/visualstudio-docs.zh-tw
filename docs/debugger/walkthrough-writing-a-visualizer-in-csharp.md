@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 995508380fd551af33d98ebd48ab02a8287d0284
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a46967d5f46c4f495a07d80e5f73cfc9f9d60c1a
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637959"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542629"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C\# 中撰寫視覺化檢視
 本逐步解說顯示如何使用 C# 撰寫簡易的視覺化檢視。 您在本逐步解說中建立的視覺化檢視會使用 Windows 表單訊息方塊來顯示字串內容。 這個簡單的字串視覺化檢視本身並沒有特別有用，但它會顯示為其他資料類型建立更有用的視覺化檢視時，必須遵循的基本步驟。
@@ -38,10 +38,10 @@ ms.locfileid: "72637959"
 1. 建立新的類別庫專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 輸入**Ctrl + Q**來開啟搜尋方塊，輸入**類別庫**，選擇 [**範本**]，然後選擇 [**建立新的類別庫（.NET Standard）** ]。 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 輸入**Ctrl + Q**來開啟搜尋方塊，輸入**類別庫**，選擇 [**範本**]，然後選擇 [**建立新的類別庫（.NET Framework）** ]。 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [**新增專案**] 對話方塊的左窗格中，選擇 **[ C#視覺效果**] 底下的 [ **.NET Standard**]，然後在中間窗格中選擇 [**類別庫（.NET Standard）** ]。
+    從頂端功能表列中，選擇 [檔案] >  [新增] >  [專案]。 在 [**新增專案**] 對話方塊的左窗格中，選擇 **[ C#視覺效果**] 底下的 [ **.NET Framework**]，然後在中間窗格中選擇 [**類別庫（.NET Framework）** ]。
     ::: moniker-end
 
 2. 為類別庫輸入適當的名稱，例如 [`MyFirstVisualizer`]，然後按一下 [**建立** **] 或 [確定]** 。
@@ -63,7 +63,7 @@ ms.locfileid: "72637959"
 
     您可以在 Visual Studio 安裝目錄的 *\<Visual Studio 安裝目錄 > \Common7\IDE\PublicAssemblies*子目錄中找到此 DLL。
 
-5. 按一下 [確定]。
+5. 按一下 [ **確定**]。
 
 6. 在 DebuggerSide.cs 中，將下列內容新增至 `using` 指示詞：
 
@@ -109,7 +109,7 @@ ms.locfileid: "72637959"
 
     您可以在*C:\Windows\Microsoft.NET\Framework\v4.0.30319*中找到此 DLL。
 
-3. 按一下 [確定]。
+3. 按一下 [ **確定**]。
 
 4. 在 DebuggerSide.cs 中，將下列內容新增至 `using` 指示詞：
 
@@ -135,7 +135,7 @@ ms.locfileid: "72637959"
 
 ### <a name="to-add-the-debuggee-side-code"></a>若要加入偵錯工具端程式碼
 
-1. 在 `using` 指示詞之後但 `namespace MyFirstVisualizer` 之前，將下列屬性程式碼加入至 DebuggerSide.cs：
+1. 在 `using` 指示詞之後但 `namespace MyFirstVisualizer`之前，將下列屬性程式碼加入至 DebuggerSide.cs：
 
    ```csharp
    [assembly:System.Diagnostics.DebuggerVisualizer(
@@ -173,7 +173,7 @@ ms.locfileid: "72637959"
     在搜尋方塊中，輸入 [**主控台應用程式**]，選擇 [**範本**]，然後選擇 [**建立新的主控台應用程式（.NET Framework）** ]。 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊左窗格的 [Visual C#] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。
+    從頂端功能表列中，選擇 [檔案] >  [新增] >  [專案]。 在 [新增專案] 對話方塊左窗格的 [Visual C#] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。
     ::: moniker-end
 
 2. 為類別庫輸入適當的名稱，例如 [`MyTestConsole`]，然後按一下 [**建立** **] 或 [確定]** 。
@@ -186,13 +186,13 @@ ms.locfileid: "72637959"
 
 2. 在 [**加入參考**] 對話方塊的 **[流覽**] 索引標籤中，選擇 [VisualStudio microsoft.visualstudio.debuggervisualizers.dll .dll]。
 
-3. 按一下 [確定]。
+3. 按一下 [ **確定**]。
 
 4. 以滑鼠右鍵按一下 [ **MyTestConsole** ]，然後再次選擇 [**加入參考**]。
 
 5. 在 **加入參考** 對話方塊中，按一下 **專案** 索引標籤，然後按一下 myfirstvisualizer。
 
-6. 按一下 [確定]。
+6. 按一下 [ **確定**]。
 
    現在，您就可以加入程式碼來完成測試載入器。
 
@@ -242,13 +242,13 @@ ms.locfileid: "72637959"
 
 1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
 
-2. 在 [**新增專案**] 對話方塊的 [**視覺C#效果**] 底下，選取 [ **.NET Standard**]。
+2. 在 [**新增專案**] 對話方塊的 [**視覺C#效果**] 底下，選取 [ **.NET Framework**]。
 
 3. 在中間窗格中，選擇 [**類別庫**]。
 
 4. 在 [**名稱**] 方塊中，為類別庫輸入適當的名稱，例如 MySecondVisualizer。
 
-5. 按一下 [確定]。
+5. 按一下 [ **確定**]。
 
    現在，您可以在其中新增視覺化檢視專案：
 

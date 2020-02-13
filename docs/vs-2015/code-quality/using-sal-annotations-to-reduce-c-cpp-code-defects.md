@@ -13,12 +13,12 @@ caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: d8ea7122c5dcd086d10e4b937792dd7e47f68547
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3dd1a481a7db9739bdd847c0b6780a2b55d28469
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291888"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848303"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>使用 SAL 註釋減少 C/C++ 程式碼的缺失
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ SAL 是 Microsoft 原始程式碼注釋語言。 藉由使用原始程式碼注�
      提供示範如何使用 SAL 注釋的範例。 也會說明常見的陷阱。  
   
 ## <a name="related-resources"></a>相關資源  
- [程式碼分析小組 Blog](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [程式碼分析小組 Blog](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>另請參閱  
- [適用于 Windows 驅動程式的 SAL 2.0 批註](https://go.microsoft.com/fwlink/?LinkId=250979)
+## <a name="see-also"></a>請參閱  
+ [適用于 Windows 驅動程式的 SAL 2.0 批註](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx)

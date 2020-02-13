@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/30/2019
-  ms.openlocfilehash: c8a6adc0857924fb790231ccf5dd70635290b77e
-  ms.sourcegitcommit: 4b911e768601992ad42dd5911dc6a01e1fe48588
+  ms.openlocfilehash: 4c5a2cfb7d3ef7a8ad71dd7591bc147932ff0535
+  ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 11/01/2019
-  ms.locfileid: "73413575"
+  ms.lasthandoff: 02/01/2020
+  ms.locfileid: "76923359"
 landingContent:
 - title: 關於分析
   linkLists:
@@ -46,6 +46,8 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: 從命令列測量 CPU 使用量
+      url: profile-apps-from-command-line.md
     - text: 效能提示
       url: perftips.md
     - text: 分析資源取用量 (XAML)

@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 156b221265b4c3c23b795b09b9a50ccb27a63bcf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2a769b0d04f76a2a32c00e262ff03b400af02feb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295644"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852280"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 套件的結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ VSIX 封裝是一個 .vsix 檔案，其中包含一或多個 Visual Studio 延�
   
  根據預設，安裝僅適用于目前的使用者，因為% LocalAppData% 是使用者特定的目錄。 不過，如果您將資訊清單的[AllUsers](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b)元素設定為 `True`，此延伸模組將會安裝在底下。\\*VisualStudioInstallationFolder*\Common7\IDE\Extensions，而且電腦的所有使用者都可以使用。  
   
-## <a name="content_typesxml"></a>[Content_Types] .xml  
+## <a name="content_typesxml"></a>[Content_Types].xml  
  [Content_Types] .xml 檔案會識別展開的 .vsix 檔案中的檔案類型。 Visual Studio 在套件安裝期間使用這個檔案，但不會安裝檔案本身。 如需這個檔案的詳細資訊，請參閱[Content_types\].xml 檔案的結構](../extensibility/the-structure-of-the-content-types-dot-xml-file.md)。  
   
- 開放式封裝慣例（OPC）標準需要 [Content_Types] .xml 檔案。 如需 OPC 的詳細資訊，請參閱《 Opc：在 MSDN 網站上[封裝資料的新標準](https://go.microsoft.com/fwlink/?LinkID=148207)\ （英文 \）。
+ 開放式封裝慣例（OPC）標準需要 [Content_Types] .xml 檔案。 如需 OPC 的詳細資訊，請參閱《 Opc：在 MSDN 網站上[封裝資料的新標準](https://msdn.microsoft.com/magazine/cc163372.aspx)\ （英文 \）。

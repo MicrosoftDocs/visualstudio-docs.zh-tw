@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Tools.ImportandExportSettings
 - Import and Export Settings command
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0be61d8690c0605f6e7773efe02f5db351110f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658755"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568824"
 ---
 # <a name="import-and-export-settings-command"></a>匯入和匯出設定命令
 
@@ -34,15 +34,15 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 /export:`filename`
 
-選擇項。 將目前的設定匯出至指定的檔案。
+選擇性。 將目前的設定匯出至指定的檔案。
 
 /import:`filename`
 
-選擇項。 匯入指定檔案中的設定。
+選擇性。 匯入指定檔案中的設定。
 
 /reset
 
-選擇項。 重設目前的設定。
+選擇性。 重設目前的設定。
 
 ## <a name="remarks"></a>備註
 

@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8d5373ae27797aa3bfe4627fb84ce393dce9e910
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d5ddea477aa7295c41097177265b43483b7aa45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300892"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850408"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：在捷徑功能表中加入命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74300892"
 
 3. [在 CommandSet 類別中撰寫方法](#CommandSet)，讓命令可見，並定義您希望命令執行的動作。
 
-   如需範例，請參閱[視覺效果和模型化 SDK 網站](https://go.microsoft.com/fwlink/?LinkID=185579)。
+   如需範例，請參閱[視覺效果和模型化 SDK 網站](https://www.visualstudio.com/)。
 
 > [!NOTE]
 > 您也可以覆寫 CommandSet.cs 中的方法，即可修改部分現有命令 (例如剪下、貼上、全選和列印) 的行為。 如需詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
@@ -223,7 +223,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
  以下片段在 OnStatus 方法中通常很有用：
 
-- `this.CurrentSelection` 此清單中一律包含使用者以滑鼠右鍵按一下的圖形。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。
+- `this.CurrentSelection`。 此清單中一律包含使用者以滑鼠右鍵按一下的圖形。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。
 
 - 如果使用者按一下圖表的空白部分，`this.IsDiagramSelected()` - `true`。
 
@@ -359,5 +359,5 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 確定已解除安裝舊版套件。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [撰寫程式碼以自訂域特定語言的](../modeling/writing-code-to-customise-a-domain-specific-language.md)[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)

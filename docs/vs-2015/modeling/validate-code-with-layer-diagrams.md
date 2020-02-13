@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b82ece15cfef4d313764027c0220453a6d4849
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301361"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845434"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>使用分層圖驗證程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "74301361"
 
   若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
-  您可以在 Visual Studio 中的開放分層圖或從命令提示字元手動驗證程式碼。 您也可以在執行本機組建或 Team Foundation Build 時自動驗證程式碼。 請參閱[Channel 9 影片：使用分層圖設計和驗證您的架構](https://go.microsoft.com/fwlink/?LinkID=252073)。
+  您可以在 Visual Studio 中的開放分層圖或從命令提示字元手動驗證程式碼。 您也可以在執行本機組建或 Team Foundation Build 時自動驗證程式碼。 請參閱[Channel 9 影片：使用分層圖設計和驗證您的架構](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)。
 
 > [!IMPORTANT]
 > 如果您要以 Team Foundation Build 執行圖層驗證，您也必須在您的組建伺服器上安裝相同版本的 Visual Studio。
@@ -225,7 +225,7 @@ ms.locfileid: "74301361"
 
   以下章節說明用於這些錯誤的語法，解釋這些錯誤的意義，並且建議解析或管理這些錯誤的作法。
 
-|**語法**|**說明**|
+|**語法**|**描述**|
 |----------------|---------------------|
 |*ArtifactN*（*ArtifactTypeN*）|*ArtifactN*是與圖層圖表上的圖層相關聯的成品。<br /><br /> *ArtifactTypeN*是*ArtifactN*的類型，例如**類別**或**方法**，例如：<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|命名空間的名稱。|
@@ -243,5 +243,5 @@ ms.locfileid: "74301361"
 
 ## <a name="security"></a>安全性
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954799"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917377"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 
@@ -39,17 +39,17 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 所有的 [空白 \<架構> Web 專案] 範本都會建立具有精簡樣板程式碼的專案，以及在 *requirements.txt* 檔案中宣告的必要相依性。
 
-| 範本 | 說明 |
+| 範本 | 描述 |
 | --- | --- |
 | **空白 Bottle Web 專案** | 在 *app.py* 中產生精簡應用程式，並包含 `/` 的首頁，以及使用非常短的內嵌頁面範本來回應 `<name>` 的 `/hello/<name>` 頁面。 |
 | **空白 Django Web 專案** | 產生具核心 Django 網站架構，但不含 Django 應用程式的 Django 網站。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 1](learn-django-in-visual-studio-step-01-project-and-solution.md)。 |
-| **空白 Flask Web 專案** | 產生一個精簡應用程式，其中含有 `/` 的單一 "Hello World!" 頁面。 此應用程式與下列文章中詳細步驟的結果相似：[快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)。 另請參閱[學習 Flask 步驟 1](learn-flask-visual-studio-step-01-project-solution.md)。
+| **空白 Flask Web 專案** | 產生一個精簡應用程式，其中含有 `/` 的單一 "Hello World!" 頁面。 此應用程式類似按照[快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)中詳細步驟操作的結果。 另請參閱[學習 Flask 步驟 1](learn-flask-visual-studio-step-01-project-solution.md)。
 
 ### <a name="web-group"></a>Web 群組
 
 不論選擇的架構為何，所有 [\<架構> Web 專案] 範本都會建立包含相同設計的入門 Web 應用程式。 該應用程式具有 [首頁]、[關於] 和 [連絡] 頁面，且包含使用 Bootstrap 的瀏覽列和回應式設計。 每個應用程式都已適當設定為提供靜態檔案 (CSS、JavaScript 和字型)，並使用適用於該架構的頁面範本機制。
 
-| 範本 | 說明 |
+| 範本 | 描述 |
 | --- | --- |
 | **Bottle Web 專案** | 產生其靜態檔案會包含在 *static* 資料夾中，且經由 *app.py* 中程式碼處理的應用程式。 個別頁面的路由會包含在 *routes.py* 中，且 *views* 資料夾會包含頁面範本。|
 | **Django Web 專案** | 產生 Django 專案和含三個頁面、驗證支援，以及 SQLite 資料庫 (但不含資料模型) 的 Django 應用程式。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 4](learn-django-in-visual-studio-step-04-full-django-project-template.md)。 |
@@ -60,7 +60,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 [投票 \<架構> Web 專案] 範本會建立入門 Web 應用程式，使用者可以透過它對不同的投票問題進行投票。 每個應用程式都建置在 [Web] 專案範本的結構上，以使用資料庫來管理投票和使用者回應。 應用程式會包含適當的資料模型，以及會從 *samples.json* 檔案載入投票項目的特殊應用程式頁面 (/seed)。
 
-| 範本 | 說明 |
+| 範本 | 描述 |
 | --- | --- |
 | **投票 Bottle Web 專案** | 產生能針對記憶體內資料庫、MongoDB 或 Azure 資料表儲存體執行的應用程式，這是使用 `REPOSITORY_NAME` 環境變數來設定。 資料模型和資料存放區程式碼會包含在 *models* 資料夾中，且 *settings.py* 檔案會包含程式碼以決定要使用哪個資料存放區。 |
 | **投票 Django Web 專案** | 會產生 Django 專案和包含三個頁面及 SQLite 資料庫的 Django 應用程式。 包含對 Django 系統管理介面的自訂項目，以允許已驗證的系統管理員建立及管理投票。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)。 |
@@ -75,7 +75,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 如果您使用原始檔控制，通常會省略虛擬環境資料夾，因為該環境可以僅使用 *requirements.txt* 來重新建立。 排除該資料夾的最佳方法，是先在上方所示的提示中選取 [我會自行安裝它們]，然後在建立虛擬環境之前停用自動認可。 如需詳細資料，請參閱[學習 Django 教學課程：步驟 1-2 和 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)，以及[學習 Flask 教學課程 - 步驟 1-2 和 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)。
 
-部署至 Microsoft Azure App Service 時，請選取 Python 的版本作為[網站延伸模組](https://aka.ms/PythonOnAppService)，並手動安裝套件。 此外，由於從 Visual Studio 部署時，Azure App Service **不會**自動從 *requirements.txt* 檔案安裝套件，請依照 [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService) 上的設定詳細資料進行。
+部署至 Microsoft Azure App Service 時，請選取 Python 的版本作為[網站延伸模組](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019)，並手動安裝套件。 此外，由於從 Visual Studio 部署時，Azure App Service **不會**自動從 *requirements.txt* 檔案安裝套件，請依照 [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md) 上的設定詳細資料進行。
 
 Microsoft Azure 雲端服務「確實」支援 *requirements.txt* 檔案。 如需詳細資料，請參閱 [Azure 雲端服務專案](python-azure-cloud-service-project-template.md)。
 
@@ -93,7 +93,7 @@ Microsoft Azure 雲端服務「確實」支援 *requirements.txt* 檔案。 如�
 
 [執行伺服器命令] 和 [偵錯伺服器命令] 群組中的屬性 (下圖所示的為後者) 會決定網頁伺服器的啟動方式。 因為許多架構要求使用目前專案外部的指令碼，您可以在這裡設定指令碼，而啟始模組的名稱可以當作參數傳遞。
 
-- **命令**：可以是 Python 指令碼 (*\*.py* 檔案)、模組名稱 (也就是 `python.exe -m module_name`) 或單一程式碼行 (也就是 `python.exe -c "code"`)。 下拉式清單中的值會指出所要使用的類型。
+- **命令**：可以是 Python 指令碼 ( *\*.py* 檔案)、模組名稱 (也就是 `python.exe -m module_name`) 或單一程式碼行 (也就是 `python.exe -c "code"`)。 下拉式清單中的值會指出所要使用的類型。
 - **引數**︰這些引數會緊跟著命令在命令列上傳遞。
 - **環境**︰以新行來分隔的 \<NAME>=\<VALUE> 配對清單，可指定環境變數。 這些變數是在所有可修改環境的屬性 (例如連接埠號碼和搜尋路徑) 之後設定，因此可能會覆寫這些值。
 
@@ -113,7 +113,7 @@ Microsoft Azure 雲端服務「確實」支援 *requirements.txt* 檔案。 如�
 
 - [偵錯伺服器命令] 群組：
   - **命令**：`bottle` (模組)
-  - **引數**：`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **引數**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 使用 Visual Studio 進行偵錯時，不建議使用 `--reload` 選項。
 
@@ -145,7 +145,7 @@ Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 建
 
 ![[轉換為 Microsoft Azure 雲端服務專案] 命令](media/template-web-convert-menu.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Python 項目範本參考](python-item-templates.md)
 - [發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

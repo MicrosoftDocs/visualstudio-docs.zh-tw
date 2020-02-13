@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.openlocfilehash: 0d5859016a02de259c24c213c6cfef8cb5fce005
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74127186"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916557"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio 中的容器工具
 
@@ -21,7 +21,7 @@ Visual Studio 中所包含、用於使用容器進行開發的工具非常容易
 
 ::: moniker range="vs-2017"
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 已安裝 [網頁程式開發]、[Azure Tools] 工作負載及/或 [.NET Core 跨平台開發] 工作負載的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
@@ -33,7 +33,7 @@ Docker 支援適用於 ASP.NET 專案、ASP.NET Core 專案，以及 .NET Core �
 
 Visual Studio 中對 Docker 的支援，已針對客戶需求在多個版本中進行了變更。 您可以將兩個層級的 Docker 支援新增至專案中，受支援的選項會因專案類型和 Visual Studio 的版本而異。 對於部分支援的專案類型，如果您只想要單一專案的容器而不需使用協調流程，則可以藉由新增 Docker 支援來實現。  下一個層級是容器協調流程支援，它會為您選擇的特定協調器新增適當的支援檔案。  
 
-使用 Visual Studio 2017，您可以使用 Docker Compose 與 Service Fabric 為容器協調流程服務。  如果您安裝 [Visual Studio Tools for Kubernetes](https://aka.ms/get-vsk8stools)，也可以使用 Kubernetes。
+使用 Visual Studio 2017，您可以使用 Docker Compose 與 Service Fabric 為容器協調流程服務。  如果您安裝 [Visual Studio Tools for Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)，也可以使用 Kubernetes。
 
 > [!NOTE]
 > 如果您使用的是 15.8 之前的 Visual Studio 2017 版本，或者您使用的是 .NET Framework 專案範本 (而不是 .NET Core)，則在新增 Docker 支援時，會自動新增使用 Docker Compose 的協調流程支援。 容器協調流程支援會透過 Docker Compose 自動新增至 Visual Studio 2017 (版本 15.0 至 15.7) 和 .NET Framework 專案中。
@@ -42,11 +42,11 @@ Visual Studio 中對 Docker 的支援，已針對客戶需求在多個版本中�
 
 ::: moniker range=">=vs-2019"
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件：
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 已安裝**網頁程式開發**、**Azure Tools** 工作負載及(或) **.NET Core 跨平台開發** 工作負載的 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
-* 適用於 .NET Core 2.2 開發的 [.NET Core 2.2 開發工具](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+* 使用 .net Core 進行開發的[.Net Core 開發工具](https://dotnet.microsoft.com/download/dotnet-core/)。
 * 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊免費試用](https://azure.microsoft.com/offers/ms-azr-0044p/)。
 
 ## <a name="docker-support-in-visual-studio"></a>Visual Studio 中的 Docker 支援
@@ -58,7 +58,7 @@ Visual Studio 中對 Docker 的支援，已針對客戶需求在多個版本中�
 使用 Visual Studio 2019，您可以使用 Docker Compose、Kubernetes 和 Service Fabric 作為容器協調流程服務。
 
 > [!NOTE]
-> 如果您使用的是完整的 .NET Framework 主控台專案範本，則在新增 Docker 支援時，將自動新增對使用 Docker Compose 進行協調流程的支援。
+> 如果您使用完整的 .NET Framework 主控台專案範本，支援的選項是在建立專案後**新增容器協調器支援**，以及使用 Service Fabric 或 Docker Compose 的選項。 在建立專案時加入支援，並為單一專案**新增 Docker 支援**，而不提供協調流程選項。
 
 在 Visual Studio 2019 16.4 版和更新版本中，可以使用 [**容器**] 視窗，這可讓您查看執行中的容器、流覽可用的映射、查看環境變數、記錄和埠對應、檢查檔案系統、附加偵錯工具，或在容器環境中開啟終端機視窗。 請參閱[在 Visual Studio 中查看和診斷容器和映射](view-and-diagnose-containers.md)。
 
@@ -118,7 +118,7 @@ Visual Studio 中對 Docker 的支援，已針對客戶需求在多個版本中�
 ## <a name="kubernetes-support"></a>Kubernetes 支援
 
 ::: moniker range="vs-2017"
-若要新增 Kubernetes 支援，請安裝 [Visual Studio Tools for Kubernetes](https://aka.ms/get-vsk8stools)。
+若要新增 Kubernetes 支援，請安裝 [Visual Studio Tools for Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)。
 ::: moniker-end
 
 有了 Kubernetes 支援，您可以在本機專案和在 [Azure Kubernetes Service (AKS)](/azure/aks) 中執行的 Kubernetes 叢集之間建立連線，從而使用 Visual Studio 修改和偵錯在 AKS 中執行的服務。  這項服務由 [Azure Dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio) 提供。 Azure Dev Spaces 還允許您針對開發目的，設定名為 *dev spaces* 的 Kubernetes 服務的個別分支，因此您可以有效率地將生產服務與開發中的工作版本隔離開來，並保持不同的修改彼此完全分隔。

@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9de8e2a2ee69911f5505937494d2912c724326e9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296900"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847815"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>逐步解說：以程式設計方式擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ ms.locfileid: "74296900"
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>準備電腦以使用程式設計擷取  
  程式設計擷取 API 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的遠端工具來提供擷取功能。 要執行應用程式的電腦必須已安裝遠端工具，即使在本機電腦上使用程式設計擷取也是一樣。 當您在本機電腦上執行程式設計擷取時，不需要執行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
- 若要在於電腦上執行的應用程式中使用遠端擷取 API，則需要先在該電腦上安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 遠端工具。 不同版本的遠端工具支援不同的硬體平台。 如需如何安裝遠端工具的資訊，請參閱 Microsoft 下載網站的 [遠端工具下載頁面](https://go.microsoft.com/fwlink/p/?LinkId=246691) 。  
+ 若要在於電腦上執行的應用程式中使用遠端擷取 API，則需要先在該電腦上安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 遠端工具。 不同版本的遠端工具支援不同的硬體平台。 如需如何安裝遠端工具的資訊，請參閱 Microsoft 下載網站的 [遠端工具下載頁面](https://visualstudio.microsoft.com/downloads#remote-tools) 。  
   
  或者， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會安裝必要元件來執行 32 位元應用程式的遠端擷取。  
   
@@ -198,7 +198,7 @@ ms.locfileid: "74296900"
   
 - 了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[總覽](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：捕捉圖形資訊](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [命令列擷取工具](../debugger/command-line-capture-tool.md)

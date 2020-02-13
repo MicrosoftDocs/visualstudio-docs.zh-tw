@@ -7,14 +7,14 @@ helpviewer_keywords:
 - virtual user activity chart, isolating performance issues
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ebd779ed2c78f48c75d29297fba862ffda142e23
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a437da5d95b758b908f1f1d4f7b76c50b6488a3c
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659629"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091843"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>逐步解說：使用虛擬使用者活動圖來找出問題
 
@@ -24,9 +24,9 @@ ms.locfileid: "72659629"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 - 完成下列程序：
 
@@ -38,7 +38,7 @@ ms.locfileid: "72659629"
 
 1. 開啟 Visual Studio。
 
-2. 開啟包含 *LoadTest1.loadtest* 的 **ColorWebApp** 方案。 此負載測試是執行本主題開頭必要條件章節中所列三個逐步解說的步驟所產生。
+2. 開啟包含 **LoadTest1.loadtest** 的 *ColorWebApp* 方案。 此負載測試是執行本主題開頭必要條件章節中所列三個逐步解說的步驟所產生。
 
      此逐步解說中的其餘步驟假設 Web 應用程式的名稱是 ColorWebApp、Web 效能測試的名稱是 *ColorWebAppTest.webtest*，以及負載測試的名稱是 *LoadTest1.loadtest*。
 
@@ -79,19 +79,19 @@ ms.locfileid: "72659629"
 
 7. 工具提示隨即出現，其中包含下列資訊：
 
-    - **使用者 ID**
+    - **使用者識別碼**
 
     - **案例**
 
-    - **測試**
+    - **Test**
 
     - **結果**
 
     - **Network**
 
-    - **開始時間**
+    - **Start Time**
 
-    - **持續期間**
+    - **有效期間**
 
     - **代理程式**
 
@@ -103,7 +103,7 @@ ms.locfileid: "72659629"
 
      您可以使用 [詳細資料圖例] 和 [篩選結果] 這兩個面版中的各項設定，幫助您找出效能問題和負載測試中的錯誤。 嘗試使用這些設定和 [縮放至時間週期] 工具，查看 [虛擬使用者活動圖] 如何呈現虛擬使用者資料。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [在詳細資料檢視中分析虛擬使用者活動](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [測試控制器和測試代理程式](configure-test-agents-and-controllers-for-load-tests.md)

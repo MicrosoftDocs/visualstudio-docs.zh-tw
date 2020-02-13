@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual users
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bc8baf2586e0c0ce682436387bfd612af14e18bd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8cac3368d0f03c268e086cc8636f1175a15effdd
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653384"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113367"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>如何：指定使用 Web 快取資料之虛擬使用者的百分比
 
@@ -44,7 +44,7 @@ ms.locfileid: "72653384"
 
 4. 為新使用者的百分比輸入一個數字，以設定 [新使用者的百分比] 屬性的值。
 
-5. 完成變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 接著，您就可以使用新的 [新使用者的百分比] 值來執行負載測試。
+5. 屬性變更完成之後，選擇 [檔案] 功能表上的 [儲存]。 接著，您就可以使用新的 [新使用者的百分比] 值來執行負載測試。
 
 ## <a name="see-also"></a>請參閱
 

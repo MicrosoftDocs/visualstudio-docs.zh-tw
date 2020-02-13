@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b25d23b7c65742ffddadbe178d7550dc1794414a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4395dbc212514a71f8c4119d8f0778280dee81aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296326"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847635"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>對應方案之間的相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,18 +45,18 @@ ms.locfileid: "74296326"
 
  **部分影片如下**：
 
-- [透過視覺化了解程式碼相依性](https://go.microsoft.com/fwlink/?LinkID=252065)
+- [透過視覺化了解程式碼相依性](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
 
-- [以圖形呈現變更的影響](https://go.microsoft.com/fwlink/?LinkID=252068)
+- [以圖形呈現變更的影響](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
 
-- [使用 Code Map 了解複雜的程式碼](https://go.microsoft.com/fwlink/?LinkID=259869)
+- [使用 Code Map 了解複雜的程式碼](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
 ## <a name="GetStarted"></a> 開始使用 Code Map
  **若要使用 Code Map，您將需要**：
 
-- Visual Studio Enterprise：從 [程式碼編輯器]、[方案總管]、[類別檢視] 或 [物件瀏覽器] 建立 code map。
+- Visual Studio Enterprise：從程式碼編輯器、方案總管、類別檢視或物件瀏覽器建立 Code Map。
 
-- Visual Studio Professional：開啟 code map、進行有限的編輯，以及流覽程式碼。
+- Visual Studio Professional：開啟 Code Map、進行有限的編輯，以及巡覽程式碼。
 
 > [!WARNING]
 > 在您與使用 Visual Studio Professional 的其他人共用在 Visual Studio Enterprise 中建立的對應時，請確定對應中的所有項目都已成為可見的，例如隱藏項目、展開的群組和跨群組連結。
@@ -67,9 +67,9 @@ ms.locfileid: "74296326"
 
 - Visual C++ 專案、標頭檔 (.h 或 `#include`) 或二進位檔案中的原生或 Managed C 或 C++ 程式碼
 
-- 由 .NET 模組製作的 Microsoft Dynamics AX X++ 專案和組件
+- 由 .NET 模組製作的 Microsoft Dynamics AX X++ 專案和組件。
 
-  **注意：** 若是C#或 Visual Basic .net 以外的專案，啟動 Code Map 或將專案新增至現有的 Code Map 時，會有較少的選項。 例如，您無法以滑鼠右鍵按一下 C++ 專案中 [文字編輯器] 的物件並將它加入 Code Map。 不過，您可以從方案總管、類別檢視和物件瀏覽器拖放個別程式碼項目或檔案。
+  **附註：** 針對 C# 或 Visual Basic.NET 以外的專案，啟動 Code Map 或是將項目加入現有的 Code Map 之選項較少。 例如，您無法以滑鼠右鍵按一下 C++ 專案中 [文字編輯器] 的物件並將它加入 Code Map。 不過，您可以從方案總管、類別檢視和物件瀏覽器拖放個別程式碼項目或檔案。
 
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>查看方案之間的整體相依性
 
@@ -181,11 +181,11 @@ ms.locfileid: "74296326"
 
      ![選取要查看關聯性的專案](../modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")
 
-    另請參閱：
+    請參閱：
 
 - [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)
 
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
 
 - [執行分析器](../modeling/find-potential-problems-using-code-map-analyzers.md)找出程式碼中的潛在問題。
 
@@ -232,7 +232,7 @@ ms.locfileid: "74296326"
 
      若要查看程式碼中的成員，但不會出現在對應上，請按一下群組左上角的 [**重新擷取子**系] 圖示![重新擷取子系圖示](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon")。
 
-6. 若要查看與對應上之項目相關的其他項目，請選取一個，在 Code Map 工具列上選擇 [顯示相關] ，然後選取要加入對應的相關項目類型。 或者，選取一或多個項目，開啟捷徑功能表，然後針對要加入對應的相關項目類型選擇 [顯示] 選項。 例如:
+6. 若要查看與對應上之項目相關的其他項目，請選取一個，在 Code Map 工具列上選擇 [顯示相關] ，然後選取要加入對應的相關項目類型。 或者，選取一或多個項目，開啟捷徑功能表，然後針對要加入對應的相關項目類型選擇 [顯示] 選項。 例如：
 
      對於 **組件**，選擇：
 
@@ -241,7 +241,7 @@ ms.locfileid: "74296326"
     |**顯示這一項參考的組件**|加入這個組件參考的組件。 外部組件會出現在 [外部] 群組中。|
     |**顯示參考這一項的組件**|從參考這個組件的方案中加入組件。|
 
-     對於 **命名空間**，選擇 [顯示包含的組件]\(如果看不到的話)。
+     對於 **命名空間**，選擇 [顯示包含的組件](如果看不到的話)。
 
      對於 **類別** 或 **介面**，選擇：
 
@@ -286,7 +286,7 @@ ms.locfileid: "74296326"
 ## <a name="SeeSourceHeader"></a> 查看 C 與 C++ 原始程式檔與標頭檔之間的相依性
  如果要為 C++ 專案建立更完整的對應，請在這些專案上設定瀏覽資訊編譯器選項 ( **/FR**)。 請參閱 [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)。 否則會出現訊息並提示您設定此選項。 如果選取 [確定]，則只會為目前的對應設定這個選項。 您可以選擇隱藏所有之後對應的訊息。 如果隱藏這個訊息，之後可以讓它再次出現。 請將下列登錄機碼設定為 `0` ，或刪除該機碼：
 
- **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0\NativeProvider：AutoEnableSbr**
+ **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0\NativeProvider： AutoEnableSbr**
 
  當您開啟包含 Visual C++ 專案的方案時，更新 IntelliSense 資料庫可能需要一些時間。 此時，您可能無法建立標頭 (.h 或 `#include`) 檔案的 Code Map，直到 IntelliSense 資料庫完成更新。 您可以在 Visual Studio 狀態列中監視更新進度。 若要解決因為某些 IntelliSense 設定停用而發生的問題或訊息，請參閱 [C 和 C++ 程式碼對應疑難排解](#Troubleshooting)。
 
@@ -310,7 +310,7 @@ ms.locfileid: "74296326"
 |**問題**|**可能的原因**|**解決方法**|
 |---------------|------------------------|--------------------|
 |無法產生 Code Map。|方案中沒有成功建立的專案。|修正發生的建置錯誤，然後重新產生對應。|
-|當您嘗試從 [架構][!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  **功能表產生 Code Map 時，** 會變得沒有回應。|程式資料庫 (.pdb) 檔案可能會損毀。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|重建方案後再試一次。|
+|當您嘗試從 [架構][!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**功能表產生 Code Map 時，** 會變得沒有回應。|程式資料庫 (.pdb) 檔案可能會損毀。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|重建方案後再試一次。|
 |IntelliSense 瀏覽資料庫的某些設定已停用。|某些 IntelliSense 設定可能已在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 對話方塊中停用。|開啟這些設定來加以啟用。<br /><br /> 請參閱[選項、文字編輯器、CC++/、Advanced](../ide/reference/options-text-editor-c-cpp-advanced.md)。|
 |[未知方法] 訊息出現在方法節點上。<br /><br /> 發生這個問題是因為無法解析方法的名稱。|二進位檔可能沒有基底重新配置表格。|在連結器中開啟 **/FIXED:NO** 選項。<br /><br /> 請參閱 [/FIXED (Fixed Base Address)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)。|
 ||程式資料庫 (.pdb) 檔案可能無法建置。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|在連結器中開啟 **/DEBUG** 選項。<br /><br /> 請參閱 [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)。|
@@ -385,4 +385,4 @@ ms.locfileid: "74296326"
 
 - [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)
 
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

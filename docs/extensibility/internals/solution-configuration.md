@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 243af2549862f1d29c44ba5bfc3060d87d5c6f85
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4d0a4243d0d64fbd9a436b49f42c99c275e9714b
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72723837"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269115"
 ---
 # <a name="solution-configuration"></a>方案組態
 解決方案設定會儲存解決方案層級的屬性。 它們會指示**Start** （F5）按鍵和**Build**命令的行為。 根據預設，這些命令會建立並啟動 debug 設定。 這兩個命令都是在解決方案設定的內容中執行。 這表示使用者可以預期 F5 啟動，並建立任何透過設定來設定使用中的方案。 環境是設計用來優化解決方案，而不是專案在建立和執行時。
@@ -23,7 +23,7 @@ ms.locfileid: "72723837"
  [標準 Visual Studio] 工具列包含 [啟動] 按鈕，以及 [開始] 按鈕右邊的 [方案設定] 下拉式。 這份清單可讓使用者選擇按 F5 時要啟動的設定、建立自己的解決方案設定，或編輯現有的設定。
 
 > [!NOTE]
-> 沒有可建立或編輯解決方案設定的擴充性介面。 您必須使用 `DTE.SolutionBuilder`。 不過，有擴充性 Api 可用於管理解決方案組建。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。
+> 沒有可建立或編輯解決方案設定的擴充性介面。 您必須使用 `DTE.SolutionBuild`。 不過，有擴充性 Api 可用於管理解決方案組建。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。
 
  以下是您可以如何執行專案類型所支援的解決方案設定：
 
@@ -31,7 +31,7 @@ ms.locfileid: "72723837"
 
    顯示在目前方案中找到的專案名稱。
 
-- Configuration
+- 組態
 
    若要提供專案類型支援的設定清單並顯示在屬性頁中，請執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>。
 

@@ -13,38 +13,38 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a632b90e89e58c26ec72083fe3f4ed9223826dae
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 00df917b05f5073634b0956a0b44e5b0fc6026a6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302845"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846324"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>規則條件編輯器對話方塊 (舊版)
 本主題描述如何在舊版 [!INCLUDE[wfd1](../includes/wfd1-md.md)]中使用 [**規則條件編輯器**] 對話方塊。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。
 
  您可以使用 [**規則條件編輯器**] 對話方塊來建立和修改宣告式規則條件。 這些規則條件會公開為以下 Windows Workflow Foundation 全新活動中的屬性：
 
-- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx)
 
-- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelsebranchactivity.aspx)
 
-- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
-- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx)
 
-- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statemachineworkflowactivity.aspx)
 
   您可以使用 [[選取條件] 對話方塊（舊版）](../workflow-designer/select-condition-dialog-box-legacy.md)來存取 [**規則條件編輯器**] 對話方塊。
 
   下表描述 [**規則條件編輯器**] 對話方塊的使用者介面（UI）元素。
 
-|UI 元素|描述|
+|UI 項目|描述|
 |----------------|-----------------|
 |**條件**|輸入規則條件的運算式。|
-|**還行**|按一下以儲存規則條件。|
+|**確定**|按一下以儲存規則條件。|
 
 ## <a name="entering-condition-expressions"></a>輸入條件運算式
  輸入條件運算式為文字。 您可以輸入**此。** 在編輯器中，使用類似 IntelliSense 的功能表來參考工作流程中使用的欄位、屬性和方法。 或者您可以直接輸入工作流程成員名稱。 您可以將邏輯運算子新增至條件中，如 AND、OR 和 NOT。 您也可以新增述詞 (Predicate)。 述詞是二元 (Binary) 運算子和兩個運算元。 支援的二元運算子為 **==** 、 **>** 、 **\<** 、 **>=** 和 **<=** 。 支援的運算元有常數值、算術函式和有範圍的 Public 成員。
@@ -79,7 +79,7 @@ ms.locfileid: "74302845"
 
   this.i == 1U (解析為不帶正負號的整數)
 
-  如需條件的詳細資訊，請參閱[在工作流程中使用條件](https://go.microsoft.com/fwlink?LinkID=65009)。
+  如需條件的詳細資訊，請參閱[在工作流程中使用條件](https://msdn2.microsoft.com/library/bb628447.aspx)。
 
-## <a name="see-also"></a>另請參閱
- [IfElseActivity](https://go.microsoft.com/fwlink?LinkID=65033) [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017) [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039) [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049) [選取條件對話方塊（舊版）](../workflow-designer/select-condition-dialog-box-legacy.md) [使用工作流程中的條件](https://go.microsoft.com/fwlink?LinkID=65009) [Windows Workflow Foundation UI 說明的舊版設計](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)工具
+## <a name="see-also"></a>請參閱
+ [IfElseActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelseactivity.aspx) [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx) [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx) [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx) [選取條件對話方塊（舊版）](../workflow-designer/select-condition-dialog-box-legacy.md) [使用工作流程中的條件](https://msdn2.microsoft.com/library/bb628447.aspx) [Windows Workflow Foundation UI 說明的舊版設計](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)工具

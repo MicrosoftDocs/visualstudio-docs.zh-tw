@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中的階層 |Microsoft Docs
+title: Visual Studio 中的階層 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +11,28 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29eb35e807c467b64a89f48705c555d4083ceef7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 08005b69a1af16b07212cb29547875fad89e1d6a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328849"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848945"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio 中的階層
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會顯示與專案*階層*。 在 IDE 中，階層是樹狀結構的節點，其中每個節點都有一組相關聯的屬性。 A*專案階層架構*是保留的專案項目，這些項目的關聯性，和的項目相關聯的屬性和命令的容器。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的整合式開發環境（IDE）會將專案顯示為*階層。* 在 IDE 中，階層是節點的樹狀結構，其中每個節點都有一組相關聯的屬性。 *專案*階層是一個容器，其中包含專案的專案、專案的關聯性，以及專案的相關聯屬性和命令。
 
- 在  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您使用階層介面，來管理專案階層<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>介面將重新導向來自專案項目叫用適當的階層架構視窗中，而不是標準的命令處理常式的命令。
+ 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中，您可以使用階層介面來管理專案階層，<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 介面會將您從專案專案叫用的命令重新導向至適當的階層視窗，而不是標準的命令處理常式。
 
 ## <a name="project-hierarchies"></a>專案階層
- 每個專案階層架構包含您可以檢視和編輯的項目。 這些項目需視專案類型而有所不同。 例如，資料庫專案可能包含預存程序、 資料庫檢視和資料庫資料表。 相反地，程式設計語言的專案中，將可能包含原始程式檔和點陣圖和對話方塊的資源檔。 階層可以是巢狀，這讓您新增的彈性當您建立專案階層架構。
+ 每個專案階層都包含可供您查看和編輯的專案。 這些專案會視專案類型而有所不同。 例如，資料庫專案可能包含預存程式、資料庫檢視和資料庫資料表。 另一方面，程式設計語言專案可能會包含點陣圖和對話方塊的原始程式檔和資源檔。 階層可以進行嵌套，讓您在建立專案階層時有一些額外的彈性。
 
- 當您建立新的專案類型時，專案類型會控制一組完整的可編輯的項目。 不過，專案可以包含項目，它們並沒有編輯支援。 例如，視覺效果C++專案可包含 HTML 檔案，即使 VisualC++不提供任何自訂的編輯器的 HTML 檔案類型。
+ 當您建立新的專案類型時，專案類型會控制可以在其中編輯的一組完整專案。 不過，專案可以包含他們沒有編輯支援的專案。 例如，即使視覺C++效果C++並未提供 html 檔案類型的任何自訂編輯器，visual 專案仍可以包含 html 檔案。
 
- 階層管理持續提供其所包含的項目。 階層架構的實作必須控制任何特殊的屬性會影響在階層內的項目持續性。 例如，如果項目代表物件，而不是檔案的存放庫中，階層實作必須控制那些物件的持續性。 IDE 本身會指示儲存符合使用者輸入項目階層，但 IDE 不會控制儲存這些項目時所需的任何動作。 相反地，專案是在控制項中。
+ 階層會管理其所包含之專案的持續性。 階層的實體系必須控制任何會影響階層內專案持續性的特殊屬性。 例如，如果專案代表存放庫中的物件，而不是檔案，則階層執行必須控制這些物件的持續性。 IDE 本身會指示階層儲存符合使用者輸入的專案，但 IDE 不會控制儲存這些專案所需的任何動作。 相反地，專案是由控制項所控制。
 
- 當使用者在編輯器中開啟項目時，該項目會控制階層架構就會被選取，並變成作用中的階層。 選取的階層會決定可用的項目上採取行動的命令集。 追蹤使用者焦點以這種方式可讓以反映使用者的目前內容的階層。
+ 當使用者在編輯器中開啟專案時，會選取控制該專案的階層，並成為作用中的階層。 選取的階層會決定可用來對專案採取動作的命令集。 以這種方式追蹤使用者焦點，可以讓階層反映使用者目前的內容。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [專案類型](../../extensibility/internals/project-types.md)
-- [選取項目及在 IDE 中的貨幣](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [VSSDK 範例](https://aka.ms/vs2015sdksamples)
+- [IDE 中的選取專案和貨幣](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+- [VSSDK 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)

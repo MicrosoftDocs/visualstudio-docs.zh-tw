@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297977"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851243"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "74297977"
 
  **Requirements**
 
-- Visual Studio Enterprise
+- Visual Studio 企業版
 
 ### <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>在 [測試總管] 中分析單元測試的程式碼涵蓋範圍
 
 1. 在 [測試] 功能表中選擇 [分析程式碼涵蓋範圍]。
 
-2. 若要查看已執行的行，請選擇 [![顯示程式碼涵蓋範圍著色] 圖示](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")[**顯示程式碼涵蓋範圍著色**]。
+2. 若要查看已執行的程式碼行，請選擇 ![顯示程式碼涵蓋範圍著色圖示](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**顯示程式碼涵蓋範圍著色**。
 
      若要修改色彩或使用粗體格式，請選擇 [工具]、[選項]、[環境]、[字型和色彩]、[顯示設定: 文字編輯器]。 在 [顯示項目] 下，調整 [涵蓋範圍] 項目。
 
@@ -81,7 +81,7 @@ ms.locfileid: "74297977"
 
  例如，假設您在執行輸入 "2" 的測試時發現特定函式的涵蓋範圍是 50%。 當您第二次輸入 "-2" 執行測試時，您會在涵蓋範圍著色檢視中看見涵蓋範圍多了另外的 50%。 現在您合併了兩個測試回合的結果，而報告和涵蓋範圍檢視也顯示涵蓋範圍是該函式的 100%。
 
- ![在 [程式碼涵蓋範圍] 視窗中，使用 [合併] 按鈕的圖示](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**來執行**這項操作。 您可以選擇最近的回合或匯入之結果的任何組合。 如果您要合併匯出的結果，必須先匯入結果。
+ 若要這樣做，請使用 ![[程式碼涵蓋範圍] 視窗中的合併按鈕圖示](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**合併程式碼涵蓋範圍結果**。 您可以選擇最近的回合或匯入之結果的任何組合。 如果您要合併匯出的結果，必須先匯入結果。
 
  使用 [匯出程式碼涵蓋範圍結果]，儲存合併作業的結果。
 
@@ -281,7 +281,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>外部資源
 
 ### <a name="guidance"></a>指引
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：測試內部](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)[疑難排解程式碼涵蓋範圍](../test/troubleshooting-code-coverage.md)[對程式碼進行單元測試](../test/unit-test-your-code.md)
