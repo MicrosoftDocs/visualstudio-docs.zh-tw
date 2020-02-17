@@ -1,6 +1,7 @@
 ---
 title: 進行 Android 版 Visual Studio 模擬器的疑難排解 | Microsoft Docs
 ms.custom: ''
+ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -8,14 +9,15 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 author: conceptdev
 ms.author: crdun
 manager: crdun
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 56978bfee49bc3a38e900eb41004307ef40d0403
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 85a7748f25e284a7c746d5779b3d177a15e1d37b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777806"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272079"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>針對 Visual Studio 的 Android 模擬器進行疑難排解
 本主題所包含的資訊，可協助您解決使用 Visual Studio 的 Android 模擬器時可能遇到的問題。
@@ -23,7 +25,7 @@ ms.locfileid: "72777806"
 > [!WARNING]
 > 安裝模擬器時，安裝程式會檢查執行軟體的必要元件。 如果必要元件不存在，則會顯示警告，但安裝時不需要這些元件。
 
- 此主題包括下列章節。
+ 本主題包含下列各節。
 
 - [開始之前](#BeforeYouStart)
 
@@ -94,7 +96,7 @@ ms.locfileid: "72777806"
 ## <a name="ManualNetworkConfig"></a> 當網路設定需要手動進行時，無法連接到網路目的地
  若要從模擬器連接到網路目的地，您的網路必須符合下列需求：
 
-- DHCP。 模擬器需要 DHCP，因為它會將本身設定為網路上具有自己的 IP 位址的個別裝置。
+- DHCP。 模擬器需要 DHCP，因為它會將本身設定為網路上具有本身 IP 位址的個別裝置。
 
 - 自動設定的 DNS 和閘道設定。 您無法手動設定模擬器的 DNS 和閘道設定。
 
@@ -103,7 +105,7 @@ ms.locfileid: "72777806"
 ## <a name="SlowStart"></a> 模擬器啟動很慢、因逾時而無法啟動，或應用程式部署失敗
  在某些情況下，模擬器需要幾分鐘的時間才能啟動，或因逾時而無法啟動。 當模擬器無法啟動時，您會看到下列訊息：`App deployment failed. Please try again`。 下列情況可能會導致這個錯誤。
 
-- 從可開機的 VHD 執行 Visual Studio Emulator for Android。 不支援這個組態。
+- 從可開機的 VHD 執行 Visual Studio Emulator for Android。 不支援這樣的設定。
 
 - 硬碟故障。 請考慮執行 chkdsk 程式。
 
@@ -191,7 +193,7 @@ ms.locfileid: "72777806"
 
    一般而言，這些產品的開發人員必須將其軟體更新為與 Windows 8 和 Hyper-V 相容。
 
-   下列產品可能需要升級，才能與 Windows 8 相容：VirtualBox、Virtual PC 7、VMWare、某些 VPN 用戶端、軟體防火牆、某些 Cisco VPN 用戶端版本，以及其他虛擬化系統。 請與有問題之虛擬化軟體的開發人員合作，並建議他們升級軟體，以與 Windows 8 和 Hyper-V 相容。
+   下列產品可能需要升級，才能符合 Windows 8 合規性：VirtualBox、Virtual PC 7、VMWare、某些 VPN 用戶端、軟體防火牆、某些 Cisco VPN 用戶端版本，以及其他虛擬化系統。 請與有問題之虛擬化軟體的開發人員合作，並建議他們升級軟體，以與 Windows 8 和 Hyper-V 相容。
 
    其中一個「因應措施」，是停用可能會干擾模擬器用來與 Visual Studio 通訊之虛擬網路的所有協力廠商驅動程式和應用程式。 這些應用程式可能包括：
 
@@ -225,9 +227,9 @@ ms.locfileid: "72777806"
 
      - Microsoft LLDP 通訊協定驅動程式
 
-     - Link-Layer Topology Discovery Mapper I/O Driver
+     - [連結階層拓樸探索對應程式 I/O 驅動程式]
 
-     - Link-Layer Topology Discovery Responder
+     - [連結階層拓樸探索回應程式]
 
      - 網際網路通訊協定第 6 版 (TCP/IPv6)
 
@@ -237,7 +239,7 @@ ms.locfileid: "72777806"
 
      使用這種方法的缺點是，每當新的協力廠商產品安裝不支援的驅動程式時，或安裝模擬器時，都必須重複執行這些步驟。
 
-     解除安裝協力廠商產品之後，您可能需要還原 Windows Phone 模擬器內部交換器。 若要執行這個動作：
+     解除安裝協力廠商產品之後，您可能需要還原 Windows Phone 模擬器內部交換器。 若要這樣做：
 
   - 開啟 Hyper V 並移至虛擬交換器管理員。 建立名為「Windows Phone 模擬器內部交換器」的虛擬交換器，然後將其連線類型設定為 [內部網路]。
 

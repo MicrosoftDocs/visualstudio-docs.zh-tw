@@ -4,17 +4,17 @@ ms.date: 04/28/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e25e28c2ff20a628058d5dfa71de0368fbe9249
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: ec2d9c812de9ec6be5ba5f42ca2a4484703d0b84
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445617"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271790"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>使用規則集指定要執行C++的規則
 
@@ -36,7 +36,7 @@ ms.locfileid: "72445617"
 
    - 選擇您想要自訂的規則集。
 
-     \-或-
+     \- 或 -
 
    - 選擇 **\<流覽 .。。>** ，指定不在清單中的現有規則集。
 

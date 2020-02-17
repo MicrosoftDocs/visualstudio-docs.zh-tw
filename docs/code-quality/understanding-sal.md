@@ -3,17 +3,17 @@ title: 了解 SAL
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: df04186fd7524649dfe7ac89e53ca4ca907cc5c4
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: e2cb2cb263344e45d83a2b143f6c56f138f77bf5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807084"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271831"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 
@@ -27,7 +27,7 @@ Microsoft 原始程式碼注釋語言（SAL）提供一組批註，您可以用�
 
 ### <a name="sal-makes-code-more-valuable"></a>SAL 讓程式碼更有價值
 
-SAL 可協助您讓程式碼設計更容易理解，適用于人類和程式碼分析工具。 請考慮下列範例，其中顯示 C 執行時間函數 `memcpy`：
+SAL 可協助您讓程式碼設計更容易理解，適用于人類和程式碼分析工具。 請考慮下列範例，其中會顯示 `memcpy`的 C 執行時間函數：
 
 ```cpp
 
@@ -38,7 +38,7 @@ void * memcpy(
 );
 ```
 
-您可以分辨此函式的作用嗎？ 執行或呼叫函式時，必須維護某些屬性，以確保程式的正確性。 只要查看範例中的宣告，您就不知道它們是什麼。 如果沒有 SAL 注釋，您就必須依賴檔或程式碼批註。 以下是 `memcpy` 的 MSDN 檔指出：
+您可以分辨此函式的作用嗎？ 執行或呼叫函式時，必須維護某些屬性，以確保程式的正確性。 只要查看範例中的宣告，您就不知道它們是什麼。 如果沒有 SAL 注釋，您就必須依賴檔或程式碼批註。 以下是 `memcpy` 的 MSDN 檔說明：
 
 > 「將 src 的計數位節複製到目的地。 如果來源和目的地重迭，memcpy 的行為會是未定義的。 使用 memmove 來處理重迭的區域。
 > **安全性注意事項：** 請確定目的地緩衝區的大小等於或大於來源緩衝區。 如需詳細資訊，請參閱避免緩衝區溢位。
@@ -49,7 +49,7 @@ void * memcpy(
 
 - 目的緩衝區必須至少與來源緩衝區一樣大。
 
-不過，編譯器無法讀取檔或非正式批註。 這並不知道這兩個緩衝區之間有關聯性，`count`，而且也無法有效地猜測關聯性。 SAL 可以更清楚地瞭解函式的屬性和實作用，如下所示：
+不過，編譯器無法讀取檔或非正式批註。 這並不知道這兩個緩衝區和 `count`之間有關聯性，而且也無法有效地猜測關聯性。 SAL 可以更清楚地瞭解函式的屬性和實作用，如下所示：
 
 ```cpp
 
@@ -60,7 +60,7 @@ void * memcpy(
 );
 ```
 
-請注意，這些批註與 MSDN 檔中的資訊類似，但它們比較簡潔，而且遵循語義模式。 當您閱讀此程式碼時，您可以快速瞭解此函式的屬性，以及如何避免緩衝區溢位的安全性問題。 更棒的是，SAL 提供的語義模式可以改善自動化程式碼分析工具在早期探索潛在 bug 時的效率和效率。 假設有人寫了這個錯誤的實 `wmemcpy`：
+請注意，這些批註與 MSDN 檔中的資訊類似，但它們比較簡潔，而且遵循語義模式。 當您閱讀此程式碼時，您可以快速瞭解此函式的屬性，以及如何避免緩衝區溢位的安全性問題。 更棒的是，SAL 提供的語義模式可以改善自動化程式碼分析工具在早期探索潛在 bug 時的效率和效率。 假設有人寫了這個 `wmemcpy`的錯誤執行：
 
 ```cpp
 
@@ -82,7 +82,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>SAL 基本概念
 SAL 定義四種基本類型的參數，依使用模式分類。
 
-|Category|參數注釋|描述|
+|類別|參數注釋|描述|
 |--------------|--------------------------|-----------------|
 |**輸入至呼叫的函式**|`_In_`|資料會傳遞至所呼叫的函式，並被視為唯讀。|
 |**輸入至所呼叫的函式，並輸出至呼叫端**|`_Inout_`|可用的資料會傳遞至函式中，而且可能會遭到修改。|
@@ -154,7 +154,7 @@ void BadInCaller()
 }
 ```
 
-如果您在此範例上使用 Visual Studio Code 分析，它會驗證呼叫端會將非 Null 指標傳遞給 `pInt` 的初始化緩衝區。 在此情況下，`pInt` 指標不可以是 Null。
+如果您在此範例上使用 Visual Studio Code 分析，它會驗證呼叫端會將非 Null 指標傳遞給 `pInt`的初始化緩衝區。 在此情況下，`pInt` 指標不可以是 Null。
 
 ### <a name="example-the-_in_opt_-annotation"></a>範例：\_opt\_ 注釋中的 \_
 
@@ -208,7 +208,7 @@ void OutCaller()
 }
 ```
 
-Visual Studio Code 分析工具會驗證呼叫端是否將非 Null 指標傳遞給 `pInt` 的緩衝區，並在傳回之前由函式初始化緩衝區。
+Visual Studio Code 分析工具會驗證呼叫端是否將非 Null 指標傳遞給 `pInt` 的緩衝區，並在函式傳回之前，由函式初始化緩衝區。
 
 ### <a name="example-the-_out_opt_-annotation"></a>範例： \_Out\_opt\_ 注釋
 
@@ -235,7 +235,7 @@ void OutOptCaller()
 }
 ```
 
-Visual Studio Code 分析會驗證此函式會先檢查是否有 Null，再取值 `pInt`; 如果 `pInt` 不是 Null，則會在傳回之前由函式初始化緩衝區。
+Visual Studio Code 分析會驗證此函式在 `pInt` 被取值之前檢查是否有 Null，如果 `pInt` 不是 Null，則會在傳回之前由函式初始化緩衝區。
 
 ### <a name="example-the-_inout_-annotation"></a>範例： \_Inout\_ 注釋
 
@@ -266,7 +266,7 @@ void BadInOutCaller()
 }
 ```
 
-Visual Studio Code 分析會驗證呼叫端是否將非 Null 指標傳遞給 `pInt` 的初始化緩衝區，而且在傳回之前，`pInt` 仍為非 Null 且緩衝區已初始化。
+Visual Studio Code 分析會驗證呼叫端是否將非 Null 指標傳遞給 `pInt`的初始化緩衝區，而且在傳回之前，`pInt` 仍為非 Null 且緩衝區已初始化。
 
 ### <a name="example-the-_inout_opt_-annotation"></a>範例： \_Inout\_opt\_ 注釋
 
@@ -295,7 +295,7 @@ void InOutOptCaller()
 }
 ```
 
-Visual Studio Code 分析會驗證此函式在存取緩衝區之前檢查是否有 Null，如果 `pInt` 不是 Null，則會在傳回之前將緩衝區初始化。
+Visual Studio Code 分析會驗證此函式在存取緩衝區之前檢查是否有 Null，如果 `pInt` 不是 Null，則會在函式傳回之前，先初始化緩衝區。
 
 ### <a name="example-the-_outptr_-annotation"></a>範例： \_Outptr\_ 注釋
 
@@ -325,7 +325,7 @@ void OutPtrCaller()
 }
 ```
 
-Visual Studio Code 分析會驗證呼叫端是否將非 Null 指標傳遞給 `*pInt`，並在傳回之前由函式初始化緩衝區。
+Visual Studio Code 分析會驗證呼叫端是否為 `*pInt`傳遞非 Null 指標，以及函式在傳回之前是否已初始化緩衝區。
 
 ### <a name="example-the-_outptr_opt_-annotation"></a>範例： \_Outptr\_opt\_ 注釋
 
@@ -357,11 +357,11 @@ void OutPtrOptCaller()
 }
 ```
 
-Visual Studio Code 分析會驗證此函式會先檢查是否有 Null，然後才會取值 `*pInt`，而且該緩衝區會在傳回之前由函式初始化。
+Visual Studio Code 分析會驗證此函式會先檢查是否有 Null，再取值 `*pInt`，而且該緩衝區會在傳回之前由函式初始化。
 
 ### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>範例： \_成功\_ 注釋與 \_Out 的結合\_
 
-批註可以套用至大部分的物件。  特別是，您可以標注整個函式。  函式最明顯的特性之一，就是它可以成功或失敗。 但是就像緩衝區和其大小之間的關聯，C/C++無法表示函數成功或失敗。 藉由使用 `_Success_` 注釋，您可以說函式的成功外觀。  `_Success_` 注釋的參數只是一個運算式，其為 true 時，表示函數已成功。 運算式可以是批註剖析器可以處理的任何專案。 在函式傳回之後，批註的效果只適用于函式成功時。 這個範例會示範 `_Success_` 如何與 `_Out_` 互動，以執行正確的動作。 您可以使用關鍵字 `return` 來表示傳回值。
+批註可以套用至大部分的物件。  特別是，您可以標注整個函式。  函式最明顯的特性之一，就是它可以成功或失敗。 但是就像緩衝區和其大小之間的關聯，C/C++無法表示函數成功或失敗。 藉由使用 `_Success_` 注釋，您可以說函式的成功外觀。  `_Success_` 注釋的參數只是一個運算式，其為 true 時，表示函數已成功。 運算式可以是批註剖析器可以處理的任何專案。 在函式傳回之後，批註的效果只適用于函式成功時。 這個範例會示範 `_Success_` 如何與 `_Out_` 互動，以執行正確的動作。 您可以使用關鍵字 `return` 來代表傳回值。
 
 ```cpp
 _Success_(return != false) // Can also be stated as _Success_(return)
@@ -404,7 +404,7 @@ Microsoft 公用標頭已標注。 因此，建議您在專案中先標注分葉
 
 [程式碼分析小組 Blog](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)

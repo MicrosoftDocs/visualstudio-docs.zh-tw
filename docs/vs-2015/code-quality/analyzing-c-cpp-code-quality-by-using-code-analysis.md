@@ -1,5 +1,5 @@
 ---
-title: 分析 C-C++使用程式碼分析的程式碼品質 |Microsoft Docs
+title: 使用程式碼C++分析來分析 C-代碼品質 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - C, code analysis
 ms.assetid: 03b8b47a-e9d8-4692-835f-2d22ec6c76a4
 caps.latest.revision: 37
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: f7820947921e584d96d7f9e7299b70410b3d0587
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c412b4df2365c4e4a910033c0b5007c77b0c7a0e
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157135"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271340"
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>使用程式碼分析進行 C/C++ 程式碼品質分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,14 @@ ms.locfileid: "68157135"
   
 |||  
 |-|-|  
-|[C/C++ 程式碼分析概觀](../code-quality/code-analysis-for-c-cpp-overview.md)|深入了解程式碼分析工具的功能。|  
-|[快速入門：適用於 C 的程式碼分析 /C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)|了解適用於 C 的程式碼分析的基本概念 /C++。|  
+|[C/C++ 程式碼分析概觀](../code-quality/code-analysis-for-c-cpp-overview.md)|瞭解程式碼分析工具的功能。|  
+|[快速入門：C/C++ 程式碼分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)|瞭解 C/C++的程式碼分析基本概念。|  
 |[使用規則集指定要執行的 C++ 規則](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)|指定要在您的專案或方案上執行的規則。|  
-|[使用 C++ 核心指南檢查工具](../code-quality/using-the-cpp-core-guidelines-checkers.md)|新增C++至您的專案的核心指南檢查工具。|  
-|[如何：設定適用於 C 的程式碼分析屬性 /C++專案](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md)|描述程式碼分析的組態設定。|  
-|[如何：使用 __analysis_assume 來指定其他程式碼資訊](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)|了解如何使用`__analysis_assume`來改善程式碼分析。|  
-|[逐步解說：分析 C /C++程式碼的缺失](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)|透過 C 上執行的程式碼分析來獲得實際操作經驗 /C++專案。|  
-|[使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)|深入了解的程式碼分析工具，以偵測違規的呼叫端和被呼叫端之間的合約的註釋功能。|  
+|[使用 C++ 核心指南檢查工具](../code-quality/using-the-cpp-core-guidelines-checkers.md)|將C++核心指導方針檢查程式新增至您的專案。|  
+|[如何：為 C/C++ 專案設定程式碼分析屬性](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md)|描述程式碼分析的設定。|  
+|[如何：使用 __analysis_assume 指定其他程式碼資訊](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)|瞭解如何使用 `__analysis_assume` 來改善程式碼分析。|  
+|[逐步解說：分析 C/C++ 程式碼的缺失](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)|在 C/C++ project 上執行程式碼分析，以獲得實際操作經驗。|  
+|[使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)|深入瞭解程式碼分析工具的批註功能，以偵測呼叫端和被呼叫端之間的合約違規。|  
 |[C/C++ 程式碼分析警告](../code-quality/code-analysis-for-c-cpp-warnings.md)|列出並描述程式碼分析警告。|  
   
 ## <a name="see-also"></a>另請參閱  

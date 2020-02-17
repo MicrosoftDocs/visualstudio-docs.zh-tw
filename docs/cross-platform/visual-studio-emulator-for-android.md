@@ -1,23 +1,25 @@
 ---
 title: Visual Studio 的 Android 模擬器 | Microsoft Docs
 ms.custom: ''
-ms.date: 07/03/2018
+ms.prod: visual-studio-dev15
+ms.date: 02/13/2020
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d7bda9882a8f46f3b32c658db952a2eaf73d3fb7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 73dd10cf1923caa6703acc0ef9d4fde82c13f5bb
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916478"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272029"
 ---
-# <a name="visual-studio-emulator-for-android"></a>適用於 Android 的 Visual Studio 模擬器
+# <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 
 Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式。 它提供虛擬化環境，讓您不需要實體裝置，便可以在其中偵錯及測試 Android 應用程式。 它也為您的應用程式原型提供一個隔離環境。
 
@@ -89,7 +91,7 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
 ## <a name="FeaturesNonTest"></a> 您無法在模擬器中測試的功能
  下列清單描述您**無法**在模擬器中測試的 Android 平台功能。 您必須在實體裝置上測試這些功能。
 
-- 羅盤
+- Compass
 
 - 迴轉儀
 
@@ -104,5 +106,5 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
 
 - 使用 Visual Studio 或模擬器管理員中的 [傳送笑臉] 工具回報問題。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  適用于[android 的 Visual Studio 模擬器的系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)[疑難排解適用于 Android 的 Visual Studio 模擬器](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
