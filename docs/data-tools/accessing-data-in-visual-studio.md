@@ -1,5 +1,5 @@
 ---
-title: 資料存取和工具
+title: 使用 Visual Studio 中的資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3a53561e8c62fcf523f13d17d5228d33a6a0af6d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916725"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272083"
 ---
-# <a name="access-data-in-visual-studio"></a>使用 Visual Studio 存取資料
+# <a name="work-with-data-in-visual-studio"></a>使用 Visual Studio 中的資料
 
 在 Visual Studio 中，您可以建立應用程式來連線至幾乎任何資料庫產品或服務中的資料、任何格式、任何位置、本機電腦、區域網路，或是公用、私人或混合式雲端。
 
 針對 JavaScript、Python、PHP、Ruby 或C++中的應用程式，您可以藉由取得程式庫和撰寫程式碼的方式，與您執行其他作業的資料連線。 針對 .NET 應用程式，Visual Studio 提供可用來流覽資料來源、建立物件模型以儲存和操作記憶體中的資料，以及將資料系結至使用者介面的工具。 Microsoft Azure 提供適用于 .NET、JAVA、node.js、PHP、Python、Ruby 和行動應用程式的 Sdk，以及 Visual Studio 中用來連接到 Azure 儲存體的工具。
 
+::: moniker range="vs-2017"
 下列清單只顯示可從 Visual Studio 使用的許多資料庫和儲存系統中的幾個。 [Microsoft Azure](https://azure.microsoft.com/)供應專案是資料服務，其中包括基礎資料存放區的所有布建和管理。 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)中的**azure 開發**工作負載可讓您直接從 Visual Studio 使用 azure 資料存放區。
+::: moniker-end
+::: moniker range=">=vs-2019"
+下列清單只顯示可從 Visual Studio 使用的許多資料庫和儲存系統中的幾個。 [Microsoft Azure](https://azure.microsoft.com/)供應專案是資料服務，其中包括基礎資料存放區的所有布建和管理。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)中的**azure 開發**工作負載可讓您直接從 Visual Studio 使用 azure 資料存放區。
+::: moniker-end
 
 ![Azure 開發工作負載](media/azure-development-workload.png)
 
@@ -39,7 +44,7 @@ ms.locfileid: "75916725"
 - SQL 資料倉儲
 - SQL Server Stretch Database
 - StorSimple
-- 等等...
+- 等等
 
 **SQL**
 
@@ -50,7 +55,7 @@ ms.locfileid: "75916725"
 - Oracle
 - PostgreSQL
 - SQLite
-- 等等...
+- 等等
 
 **NoSQL**
 
@@ -61,7 +66,7 @@ ms.locfileid: "75916725"
 - OrientDB |
 - RavenDB
 - VelocityDB
-- 等等...
+- 等等
 
 ::: moniker range="vs-2017"
 
@@ -106,7 +111,7 @@ ms.locfileid: "75916725"
 
 不需要使用任何一種技術。 在某些情況下，尤其是效能非常重要的情況下，您可以直接使用 DataReader 物件從資料庫讀取，並將您需要的值複製到集合物件中，例如 List\<T >。
 
-## <a name="native-c"></a>原生 C++
+## <a name="native-c"></a>Native C++
 
 C++連接到 SQL Server 的應用程式應該在大多數情況下，使用[Microsoft® ODBC 驅動程式13.1 來進行 SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) 。 如果伺服器已連結，則 OLE DB 是必要的，而且您可以使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 您可以直接使用[ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017)或 OLE DB 驅動程式來存取其他資料庫。 ODBC 是目前的標準資料庫介面，但大部分的資料庫系統都提供無法透過 ODBC 介面存取的自訂功能。 OLE DB 是舊版的 COM 資料存取技術，仍受到支援，但不建議用於新的應用程式。 如需詳細資訊，請參閱[Visual C++中的資料存取](/cpp/data/data-access-in-cpp)。
 

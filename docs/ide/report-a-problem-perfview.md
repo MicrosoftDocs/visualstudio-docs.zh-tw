@@ -1,12 +1,12 @@
 ---
-title: 收集使用 PerfView 的 ETL 追蹤
+title: 利用 PerfView 收集 ETL 追蹤
 ms.date: 09/27/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - perfview
 - ETL Trace
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 dev_langs:
 - CSharp
@@ -15,14 +15,14 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
-ms.openlocfilehash: c1e8a0ca18a857a71fb9cfb6b79a18fef40191a4
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 24d72e9630506ecc3d25fcc75e51eeb84f619e53
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919157"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271162"
 ---
-# <a name="collect-an-etl-trace-with-perfview"></a>收集使用 PerfView 的 ETL 追蹤
+# <a name="collect-an-etl-trace-with-perfview"></a>利用 PerfView 收集 ETL 追蹤
 
 PerfView 是建立 ETL (事件追蹤記錄檔) 檔案的工具，它是以適合為某些 Visual Studio 問題進行疑難排解的 [Windows 事件追蹤](/windows/desktop/ETW/event-tracing-portal) 為基礎。 當您回報問題時，產品小組偶爾會要求您執行 PerfView 來收集其他資訊。
 

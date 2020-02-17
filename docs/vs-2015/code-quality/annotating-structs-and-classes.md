@@ -1,5 +1,5 @@
 ---
-title: 註釋結構和類別 |Microsoft Docs
+title: 標注結構和類別 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -21,32 +21,32 @@ f1_keywords:
 - _Field_size_full_opt_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: df2e75bb3dd01d051d8fed29748e499f8f620128
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6db2202971facb0419db68c04835c8d5c848f528
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157069"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271578"
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用作用類似非變異項目的註釋為結構和類別加上附註，在包含封入結構做為參數或結果值的任何函式呼叫或函式進入/結束點，會假定這些註釋為真。  
   
-## <a name="struct-and-class-annotations"></a>結構和類別的註解  
+## <a name="struct-and-class-annotations"></a>結構和類別注釋  
   
 - `_Field_range_(low, high)`  
   
-     欄位是在範圍中 （含） 從`low`至`high`。  相當於使用適當的前置或後置條件套用至已標註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`。  
+     欄位位於 `low` 到 `high`的範圍內（含）。  相當於使用適當的前置或後置條件套用至已標註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`。  
   
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
      欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定。  
   
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
+- `_Field_size_part_(size, count)`、`_Field_size_part_opt_(size, count)`、`_Field_size_bytes_part_(size, count)`、`_Field_size_bytes_part_opt_(size, count)`  
   
      欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定，而且可以讀取這些項目 (位元組) 的 `count`。  
   
@@ -58,7 +58,7 @@ ms.locfileid: "68157069"
   
      具有可讀取及可寫入大小的欄位，其大小是以 `size` 所指定的項目 (或位元組) 為單位表示。  
   
-     適用於結構或類別的宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如：  
+     適用于結構或類別宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如：  
   
     ```cpp  
   
@@ -70,18 +70,18 @@ ms.locfileid: "68157069"
   
     ```  
   
-     緩衝區大小，以位元組為單位的參數`pM`型別的`MyStruct *`便會進入是：  
+     `MyStruct *` 類型的參數 `pM` 的緩衝區大小（以位元組為單位），則會被視為：  
   
     ```cpp  
     min(pM->nSize, sizeof(MyStruct))  
     ```  
   
 ## <a name="see-also"></a>另請參閱  
- [使用 SAL 註釋減少 C /C++程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [了解 SAL](../code-quality/understanding-sal.md)   
- [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
- [註釋函式行為](../code-quality/annotating-function-behavior.md)   
- [註釋鎖定行為](../code-quality/annotating-locking-behavior.md)   
- [指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [使用 SAL 注釋減少 C/C++程式碼](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)缺失   
+ [瞭解 SAL](../code-quality/understanding-sal.md)   
+ [標注函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
+ [批註](../code-quality/annotating-function-behavior.md)函式行為   
+ [標注鎖定行為](../code-quality/annotating-locking-behavior.md)   
+ [指定批註套用的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [內建函式](../code-quality/intrinsic-functions.md)   
  [最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)

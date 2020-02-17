@@ -123,17 +123,17 @@ f1_keywords:
 - _Scanf_s_format_string_
 - _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e7ffb30dc7ec4ae1b78647a0964b81932617ab
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: 18de1a42a72172d137215d27d9af3a9a409e9086
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879265"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271085"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 本文描述簡單函式參數（純量）和結構和類別的指標，以及大多數類型的緩衝區之注釋的一般用法。  本文也會說明批註的常見使用模式。 如需與函式相關的其他批註，請參閱批註函式[行為](../code-quality/annotating-function-behavior.md)。
@@ -528,7 +528,7 @@ ms.locfileid: "74879265"
 
 [程式碼分析小組 Blog](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [了解 SAL](../code-quality/understanding-sal.md)

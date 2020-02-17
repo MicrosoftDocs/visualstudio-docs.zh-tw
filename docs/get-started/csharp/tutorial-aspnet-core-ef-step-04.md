@@ -1,8 +1,8 @@
 ---
-title: 步驟 4：從您的 ASP.NET Core 應用程式公開 Web API
+title: 步驟4：從您的 ASP.NET Core 應用程式公開 Web API
 description: 使用此影片教學課程和逐步指示，向您的 ASP.NET Core Web 應用程式新增 Web API。
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 02/13/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
@@ -16,14 +16,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 67d3887c7cf665f9fd8d2789d460cc1a595e2bff
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553850"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271498"
 ---
-# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>步驟 4：從您的 ASP.NET Core 應用程式公開 Web API
+# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>步驟4：從您的 ASP.NET Core 應用程式公開 Web API
 
 請遵循下列步驟將 Web API 新增至現有的 ASP.NET Core 應用程式中。
 
@@ -187,7 +187,7 @@ public async Task<IActionResult> DeleteGame([FromRoute] int id)
 
 ## <a name="adding-swagger"></a>新增 Swagger
 
-Swagger 是一個 API 文件和測試工具，可以作為一組服務與中介軟體新增至 ASP.NET Core 應用程式中。 若要這樣做，請以右鍵按一下專案，然後選擇 [管理 NuGet 套件]。 按一下 [瀏覽] 並搜尋 `Swashbuckle.AspNetCore` 且安裝對應的套件。
+Swagger 是一個 API 文件和測試工具，可以作為一組服務與中介軟體新增至 ASP.NET Core 應用程式中。 若要這樣做，請以右鍵按一下專案，然後選擇 [管理 NuGet 套件]。 然後，按一下 **[流覽]** ，搜尋 `Swashbuckle.AspNetCore`，然後安裝4.0.1 版本。
 
 ![Visual Studio 2019 從 Nuget 新增 Swashbuckle](media/vs-2019/vs2019-nuget-swashbuckle.png)
 
@@ -202,7 +202,7 @@ services.AddSwaggerGen(c =>
 
 您還需要在檔案頂端新增 `using Swashbuckle.AspNetCore.Swagger;`。
 
-接下來，在 `UseMvc` 之前的 `Configure` 方法中加入下列內容：
+接下來，在 `Configure` 之前的 `UseMvc` 方法中加入下列內容：
 
 ```csharp
 // Enable middleware to serve generated Swagger as a JSON endpoint.
@@ -226,7 +226,7 @@ app.UseSwaggerUI(c =>
 
 在下一個影片中，您將學習如何將應用程式部署至 Azure。
 
-[步驟 5：將您的 ASP.NET Core 應用程式部署至 Azure](tutorial-aspnet-core-ef-step-05.md)
+[步驟5：將您的 ASP.NET Core 應用程式部署至 Azure](tutorial-aspnet-core-ef-step-05.md)
 
 ## <a name="see-also"></a>另請參閱
 

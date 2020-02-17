@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 8d6cbdee57d2f1edf7d696ad9a4053ddcb08bce3
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 5a1c449a77e3000205ee81f5414949743b6035c4
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777727"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272271"
 ---
 # <a name="devops-with-unity-apps"></a>使用 Unity 應用程式進行 DevOps
 
@@ -30,13 +30,13 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 一般註解：所有的計劃和追蹤功能都與專案類型和程式碼撰寫語言無關。
 
-|特殊功能|支援 Unity|其他註解|
+|功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
-|管理待處理項目和衝刺 (Sprint)|[是]||
-|工作追蹤|[是]||
-|小組聊天室共同作業|[是]||
-|看板|[是]||
-|報告和視覺化進度|[是]||
+|管理待處理項目和衝刺 (Sprint)|是||
+|工作追蹤|是||
+|小組聊天室共同作業|是||
+|看板|是||
+|報告和視覺化進度|是||
 
 ## <a name="modeling"></a>模型化
 
@@ -44,7 +44,7 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 一般註解：雖然這些設計功能是獨立的編碼語言，或是使用 C# 之類的 .NET 語言，但它們是在具有物件階層和類別關聯性的傳統應用程式範例上運作。 在 Unity 內設計遊戲牽涉不同的範例 (即圖形物件、音效、著色器、指令碼等的關聯性)。 因此，Visual Studio 模型圖工具未特別與整個 Unity 專案相關。 它們可能用來管理 C# 指令碼內的關聯性，但那只是其中一項功能而已。
 
-|特殊功能|支援 Unity|其他註解|
+|功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
 |順序圖表|否||
 |相依性圖形|否||
@@ -57,13 +57,13 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 ## <a name="code"></a>程式碼
 
-|特殊功能|支援 Unity|其他註解|
+|功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
-|[使用 Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) 或 Azure Repos|[是]|就像任何其他專案一樣，Unity 專案就只是一組可放入版本控制系統的檔案，但此表格後面將會說明一些特殊考量。|
-|[開始使用 Azure Repos 中的 Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|[是]|請參閱表格後面的注意事項。|
-|[改善程式碼品質](../test/improve-code-quality.md)|[是]||
-|[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)|[是]||
-|[使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)|[是]||
+|[使用 Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) 或 Azure Repos|是|就像任何其他專案一樣，Unity 專案就只是一組可放入版本控制系統的檔案，但此表格後面將會說明一些特殊考量。|
+|[開始使用 Azure Repos 中的 Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|是|請參閱表格後面的注意事項。|
+|[改善程式碼品質](../test/improve-code-quality.md)|是||
+|[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)|是||
+|[使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)|是||
 
 使用 Unity 的版本控制特殊考量：
 
@@ -73,26 +73,26 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 3. Unity 專案中的二進位資產 (例如紋理或音訊檔) 可能會佔用大量儲存體。 各種原始檔控制系統 (如 Git) 會針對進行的每一項變更儲存唯一的檔案複本，即使變更只影響一小部分的檔案也是一樣。 這可能會讓 Git 儲存機制變得過大。 若要解決這個問題，Unity 開發人員通常會選擇只將最後一個資產加入其儲存機制，並使用不同的方法來保留其資產的工作歷程記錄 (例如 OneDrive、DropBox 或 git-annex)。 因為這類資產一般不需要進行版本控制以及原始程式碼變更，所以這種方式適用。 開發人員一般也會將專案編輯器的 [資產序列化模式] 設定為 [強制文字]，以文字格式 (非允許在原始檔控制中進行合併的二進位格式) 來儲存場景檔案。 如需詳細資訊，請參閱[編輯器設定 (英文)](https://docs.unity3d.com/Manual/class-EditorManager.html) (Unity 文件)。
 
-## <a name="build"></a>組建
+## <a name="build"></a>Build
 
 參考連結： **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
-|特殊功能|支援 Unity|其他註解|
+|功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
 |內部部署 Team Foundation Server (TFS)|可能|Unity 專案是透過 Unity 環境而非透過 Visual Studio 組建系統所建置 (Visual Studio Tools for Unity 內的建置將會編譯指令碼，而不會產生可執行檔)。 可能會[從命令列建置 Unity 專案](https://docs.unity3d.com/Manual/CommandLineArguments.html) (Unity 文件)，因此，可能會在 TFS 伺服器上設定 MSBuild 處理序來執行適當的 Unity 命令，但前提是要將 Unity 安裝於該電腦上。<br /><br /> Unity 也提供 [Unity 雲端組建 (英文)](https://build.cloud.unity3d.com/landing/)，其會監視 Git 或 SVN 儲存機制，並執行定期建置。 目前不適用於 TFVC 或 Azure DevOps Services。|
 |連結至 Azure DevOps Services 的內部部署組建伺服器|可能|假設條件與上面相同，可進一步指示透過 Azure DevOps Services 所觸發的組建使用內部部署 TFS 電腦。 相關指示，請參閱[建置和發行代理程式](/azure/devops/pipelines/agents/agents?view=vsts)。|
 |Azure DevOps Services 裝載的控制器服務|否|目前不支援 Unity 組建。|
-|具有預先定義和後置指令碼的組建定義|[是]|也可以針對建置前和建置後的指令碼，設定使用 Unity 命令列來執行組建的自訂組建定義。|
-|包括閘道簽入的連續整合|[是]|TFVC 的閘道簽入，只適用於 Git 在提取要求模型上運作的時候，而不是簽入運作時。|
+|具有預先定義和後置指令碼的組建定義|是|也可以針對建置前和建置後的指令碼，設定使用 Unity 命令列來執行組建的自訂組建定義。|
+|包括閘道簽入的連續整合|是|TFVC 的閘道簽入，只適用於 Git 在提取要求模型上運作的時候，而不是簽入運作時。|
 
 ## <a name="test"></a>測試
 
-|特殊功能|支援 Unity|其他註解|
+|功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
-|規劃測試、建立測試案例和組織測試套件|[是]||
-|手動測試|[是]||
+|規劃測試、建立測試案例和組織測試套件|是||
+|手動測試|是||
 |測試管理員 (錄製和播放測試)|僅限 Windows 裝置及 Android 模擬器||
-|程式碼涵蓋範圍|N/A|不適用，因為是在 Unity 內進行單元測試，而非 Visual Studio 內，請見下文。|
+|程式碼涵蓋範圍|n/a|不適用，因為是在 Unity 內進行單元測試，而非 Visual Studio 內，請見下文。|
 |[對程式碼進行單元測試](../test/unit-test-your-code.md)|在 Unity 內，而非 Visual Studio 內|Unity 提供專屬單元測試架構做為 [Unity 測試工具](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store) 的一部分。 單元測試結果會在 Unity 內報告，但不會顯示在 Visual Studio 內。|
 |[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)|否|自動程式化 UI 測試會依賴應用程式 UI 中的可讀取控制項；Unity 應用程式在本質上是圖形，因此，自動程式化 UI 測試工具無法讀取內容。|
 
@@ -100,28 +100,28 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 參考連結： **[改善程式碼品質](../test/improve-code-quality.md)**
 
-|特殊功能|支援 Unity|其他註解|
+|功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
-|[分析受控程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|
-|[使用程式碼複製品偵測來尋找重複程式碼](https://msdn.microsoft.com/library/hh205279.aspx)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|
-|[測量受控程式碼的複雜度和維護性](../code-quality/code-metrics-values.md)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|
-|[效能總管](../profiling/performance-explorer.md)|否|使用 [Unity 分析工具 (英文)](https://docs.unity3d.com/Manual/Profiler.html) (Unity 網站)。|
+|[分析受控程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md)|是|可以在 Visual Studio 內分析 C# 指令碼。|
+|[使用程式碼複製品偵測來尋找重複程式碼](https://msdn.microsoft.com/library/hh205279.aspx)|是|可以在 Visual Studio 內分析 C# 指令碼。|
+|[測量受控程式碼的複雜度和維護性](../code-quality/code-metrics-values.md)|是|可以在 Visual Studio 內分析 C# 指令碼。|
+|[效能工具](../profiling/performance-explorer.md)|否|使用 [Unity 分析工具 (英文)](https://docs.unity3d.com/Manual/Profiler.html) (Unity 網站)。|
 |[分析 .NET Framework 記憶體問題](https://msdn.microsoft.com/library/dn342825.aspx)|否|Visual Studio 工具並不會為程式碼剖析而連結 Unity 所使用的 Mono 架構。 使用 [Unity 分析工具 (英文)](http://docs.unity3d.com/Manual/Profiler.html) (Unity 文件)。|
 
 ## <a name="release-management"></a>版本管理
 
 參考連結︰[在 Azure Pipelines 和 TFS 中建置和發行](/azure/devops/pipelines/overview?view=vsts)
 
-|特殊功能|支援 Unity|其他註解|
+|功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
-|管理發行處理序|[是]||
-|部署至伺服器以便透過指令碼進行側面載入|[是]||
-|上傳至應用程式存放區|Partial|您可以針對某些應用程式存放區，使用擴充功能來自動化此程序。 請參閱 [Extensions for Azure DevOps Services](https://marketplace.visualstudio.com/VSTS) (適用於 Azure DevOps Services 的延伸模組)；例如 [extension for Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) (適用於 Google Play 的延伸模組)。|
+|管理發行處理序|是||
+|部署至伺服器以便透過指令碼進行側面載入|是||
+|上傳至應用程式存放區|部分|您可以針對某些應用程式存放區，使用擴充功能來自動化此程序。 請參閱 [Extensions for Azure DevOps Services](https://marketplace.visualstudio.com/VSTS) (適用於 Azure DevOps Services 的延伸模組)；例如 [extension for Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) (適用於 Google Play 的延伸模組)。|
 
 ## <a name="monitor-with-hockeyapp"></a>使用 HockeyApp 監視
 
 參考連結︰ **[使用 HockeyApp 監視 (英文)](https://www.hockeyapp.net/features/)**
 
-|特殊功能|支援 Unity|其他註解|
+|功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
-|當機分析、遙測和 Beta 發佈|[是]|HockeyApp 主要用於處理 Beta 發佈和取得當機報告。<br /><br /> 針對來自 C# 指令碼的遙測，可以使用任何分析架構，但前提是它在 Unity 所使用的 .NET 版本上執行。 不過，這只允許遊戲指令碼內的分析，並不會深入 Unity 引擎內部。 目前沒有任何適用的 Application Insights 的外掛程式，但外掛程式適用於其他分析解決方案，例如 [Unity Analytics (英文)](https://www.assetstore.unity3d.com/en/#!/content/28120) 和 [Google Analytics (英文)](https://github.com/googleanalytics/google-analytics-plugin-for-unity)。 當然，了解 Unity 專案本質的服務 (如 Unity Analytics) 所提供的分析比一般架構更有意義。|
+|當機分析、遙測和 Beta 發佈|是|HockeyApp 主要用於處理 Beta 發佈和取得當機報告。<br /><br /> 針對來自 C# 指令碼的遙測，可以使用任何分析架構，但前提是它在 Unity 所使用的 .NET 版本上執行。 不過，這只允許遊戲指令碼內的分析，並不會深入 Unity 引擎內部。 目前沒有任何適用的 Application Insights 的外掛程式，但外掛程式適用於其他分析解決方案，例如 [Unity Analytics (英文)](https://www.assetstore.unity3d.com/en/#!/content/28120) 和 [Google Analytics (英文)](https://github.com/googleanalytics/google-analytics-plugin-for-unity)。 當然，了解 Unity 專案本質的服務 (如 Unity Analytics) 所提供的分析比一般架構更有意義。|

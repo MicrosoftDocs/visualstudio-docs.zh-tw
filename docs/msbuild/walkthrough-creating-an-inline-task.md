@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3856c658c4d3d2598b69cc9bf77f95c219b187b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1d5c40af3e60add88948f8f1c5c36abf3b980eca
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590042"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271182"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>逐步解說：建立內嵌工作
 MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 從 .NET Framework 4 版開始，您可以在專案檔中建立內嵌工作。 您不必建立個別的組件來裝載工作。 如需詳細資訊，請參閱[內嵌工作](../msbuild/msbuild-inline-tasks.md)。
@@ -74,7 +74,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
      <ParameterGroup />
      <Task>
        <Code Type="Fragment" Language="cs">
-         Log.LogMessage("Hello, world!", MessageImportance.High);
+         Log.LogMessage(MessageImportance.High, "Hello, world!");
        </Code>
      </Task>
    </UsingTask>
@@ -121,7 +121,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
      </ParameterGroup>
      <Task>
        <Code Type="Fragment" Language="cs">
-         Log.LogMessage(Text, MessageImportance.High);
+         Log.LogMessage(MessageImportance.High, Text);
        </Code>
      </Task>
    </UsingTask>
@@ -256,7 +256,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 </Code>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [內嵌工作](../msbuild/msbuild-inline-tasks.md)
 - [工作](../msbuild/msbuild-tasks.md)
 - [目標](../msbuild/msbuild-targets.md)

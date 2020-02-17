@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: e869a02475917f2444bedbb1bc9b7373b893d098
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 37ef83cc968276fb29ae5380544ee9c27ffd485d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846897"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272277"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>安裝和設定工具以使用 iOS 進行建置
 
@@ -28,7 +28,7 @@ ms.locfileid: "75846897"
 
 當您安裝了使用 iOS 建立的工具之後，請參閱這篇文章，以取得在 Visual Studio 和 Mac 上快速設定和更新 iOS 開發的遠端代理程式的方式。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>Prerequisites
 
 若要安裝和使用遠端代理程式來開發 iOS 的程式碼，您必須先具備這些必要條件：
 
@@ -62,9 +62,9 @@ ms.locfileid: "75846897"
 
    若您想要進行手動簽署，您需要為您的應用程式建立佈建設定檔。 如需建立佈建設定檔的詳細資訊，請參閱 [Create a development provisioning profile](https://help.apple.com/developer-account/#/devf2eb157f8) (建立開發佈建設定檔)。 
 
-- [Node.js](https://nodejs.org/) 版本 8.11.3 和 npm 版本 5.6.0
+- [Node.js](https://nodejs.org/)版本12.14.1 和 npm 版本6.13。4
 
-   在您的 Mac 上安裝 Node.js 版本 8.11.3。 若您安裝 Node.js 套件，它應該會隨附版本 5.6.0 的 npm。 其他版本的 node.js 和 npm 可能不支援遠端代理程式 `vcremote`中使用的某些模組，這可能會導致 `vcremote` 安裝失敗。
+   在 Mac 上安裝 node.js 的版本12.14.1。 如果您安裝 node.js 套件，它應該會隨附 npm 版本6.13.4。 其他版本的 node.js 和 npm 可能不支援遠端代理程式 `vcremote`中使用的某些模組，這可能會導致 `vcremote` 安裝失敗。 建議您使用「[節點版本管理員](https://nodejs.org/en/download/package-manager/#nvm)」之類的封裝管理員來安裝 node.js。 請避免使用命令 `sudo` 安裝 node.js，因為某些模組在使用 `sudo`時可能無法安裝。
 
 ## <a name="Install"></a> 安裝 iOS 適用的遠端代理程式
 
@@ -74,11 +74,17 @@ ms.locfileid: "75846897"
 
 ### <a name="DownloadInstall"></a> 若要下載及安裝遠端代理程式
 
-- 從 Mac 上的 Terminal 應用程式，輸入：
+- 從 Mac 上的終端機應用程式，確認目前使用的 node.js 版本是所需的12.14.1 版本。 若要確認版本，請執行命令：
 
-   `sudo npm install -g --unsafe-perm vcremote`
+  `node -v`
+  
+  如果不是正確的版本，您可能需要遵循必要條件中的 node.js 安裝指示。 然後，重新開機 node.js。
 
-   建議使用全域安裝 ( **-g**) 參數，但非必要。
+- 確認所需的 node.js 已在使用中之後，請執行此命令以在該 node.js 版本底下安裝 vcremote：
+
+   `npm install -g --unsafe-perm vcremote`
+
+   建議使用全域安裝（ **-g**）參數，但非必要。 如果您未使用全域安裝參數，vcremote 會安裝在終端機應用程式中目前的作用中路徑之下。
 
    在安裝期間，系統會安裝 `vcremote`，並在您的 Mac 上啟用開發人員模式。 同時也會安裝[Homebrew](https://brew.sh/)和兩個 npm 套件，`vcremote-lib` 和 `vcremote-utils`。 安裝完成時，針對已略過的選用相依性，您可以放心忽略相關的所有警告。
 
@@ -150,7 +156,7 @@ ms.locfileid: "75846897"
 
 1. 如果您是在預設的安全連線模式中使用遠端代理程式，請核取 [安全] 核取方塊，然後在 [Pin] 欄位中輸入遠端代理程式指定的 PIN 值。 如果您是在不安全的連線模式中使用遠端代理程式，請清除 [安全] 核取方塊，並將 [Pin] 欄位保留空白。
 
-1. 若要啟用配對，請選擇 [配對]。
+1. 若要啟用配對，請選擇 [配對] 。
 
    ![設定 iOS 組建的 vcremote 連線](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")
 
@@ -182,7 +188,7 @@ ms.locfileid: "75846897"
 
 為了安全性目的，使用遠端代理程式配對出的 Visual Studio 伺服器憑證會與 Mac 的 IP 或主機名稱相關。 如果上述值有所變更，您就必須產生新的伺服器憑證，然後重新使用新值來設定 Visual Studio。
 
-### <a name="to-generate-a-new-server-certificate"></a>產生新的伺服器憑證
+### <a name="to-generate-a-new-server-certificate"></a>若要產生新的伺服器憑證
 
 1. 停止 `vcremote` 代理程式。
 
@@ -278,6 +284,6 @@ ms.locfileid: "75846897"
     
 然後，如果 `ideviceinstaller` 可以與裝置通訊，請再次確認。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用安裝跨平臺行動開發C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

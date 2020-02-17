@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a5fe14c1bcb2b375a104a928513134b1789d437
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2c3e1ba77f3f78de3fc1fac4185121ecb42b1b5b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745957"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271378"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++核心指導方針檢查程式參考
 
@@ -170,7 +170,7 @@ ms.locfileid: "72745957"
 
 [C26491 NO_STATIC_DOWNCAST](c26490.md)請勿使用 `static_cast` 向下轉換。 請參閱[ C++核心指導方針類型。 2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type)。
 
-[C26492 NO_CONST_CAST](c26492.md)不用`const_cast`拋棄`const`。 請參閱[ C++核心指導方針類型。 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type)。
+[C26492 NO_CONST_CAST](c26492.md)不要使用 `const_cast` 將 `const`轉型。 請參閱[ C++核心指導方針類型。 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type)。
 
 [C26493 NO_CSTYLE_CAST](c26493.md)不要使用 C 樣式轉換。 請參閱[ C++核心指導方針類型 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type)。
 
