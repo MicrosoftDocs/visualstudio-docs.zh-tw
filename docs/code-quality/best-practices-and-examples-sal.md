@@ -2,22 +2,22 @@
 title: 最佳作法和範例 (SAL)
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: eb95e793421ecede6d4583d8d7f4730eb56df1a0
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: 601d90ed7e310f058fbf816469fef7374363951f
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789786"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77265146"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳作法和範例 (SAL)
 以下是取得原始程式碼注釋語言（SAL）最大的一些方式，並避免一些常見的問題。
 
-## <a name="_in_"></a>\_In\_
+## <a name="_in_"></a>\_位置\_
 
 如果函式應該寫入專案，請使用 `_Inout_`，而不是 `_In_`。 這在從舊版宏自動轉換為 SAL 的情況下特別相關。 在 SAL 之前，許多程式設計人員會使用宏做為批註，也就是名稱為 `IN`、`OUT`、`IN_OUT`或變數的宏。 雖然我們建議您將這些宏轉換成 SAL，但我們也鼓勵您在轉換它們時小心，因為程式碼在撰寫原始原型之後可能已經變更，而舊的宏可能不再反映程式碼的作用。 請特別留意 `OPTIONAL` comment 宏，因為它經常放在不正確的位置，例如在逗號的錯誤端。
 
@@ -181,11 +181,11 @@ _When_(flag == 0, _Requires_lock_held_(p->cs))
 int Func2(_In_ MyData *p, int flag);
 ```
 
-運算式 `result` 指的是在前置狀態中無法使用的 post 狀態值。
+運算式 `result` 指的是前置狀態值，在預先狀態中無法使用。
 
 ## <a name="true-in-_success_"></a>\_成功\_ 中為 TRUE
 
-如果傳回值不是零，函數會成功，請使用 `return != 0` 做為成功條件，而不是 `return == TRUE`。 非零不一定表示編譯器為 `TRUE` 所提供的實際值。 `_Success_` 的參數是運算式，而且下列運算式會評估為相等：`return != 0`、`return != false`、`return != FALSE` 和 `return`，且不含參數或比較。
+如果傳回值不是零，函數會成功，請使用 `return != 0` 做為成功條件，而不是 `return == TRUE`。 非零不一定表示編譯器為 `TRUE`所提供的實際值是否相等。 `_Success_` 的參數是運算式，而且下列運算式會評估為相等：`return != 0`、`return != false`、`return != FALSE` 和 `return`，且不含參數或比較。
 
 ```cpp
 // Incorrect
@@ -235,7 +235,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 在此範例中，`_Out_opt_` 指出，指標在前置條件中可能是 Null。 不過，前置條件無法套用至傳回值。 在此情況下，會 `_Ret_maybenull_`正確的注釋。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)  
 [了解 SAL](../code-quality/understanding-sal.md)  
