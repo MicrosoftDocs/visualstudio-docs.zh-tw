@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: cfe00b21654e9ab07b79b3a1b6ec38a4a4792780
-  ms.sourcegitcommit: aabd9d10a0cb7e7344532a04df763a70be20acf0
+  ms.openlocfilehash: 1c4358fb1ceef0773a29c6860ee7b670c2d021b1
+  ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 01/17/2020
-  ms.locfileid: "76256472"
+  ms.lasthandoff: 02/15/2020
+  ms.locfileid: "77265564"
 highlightedContent:
   items:
   - title: 設定與安裝
@@ -173,7 +173,7 @@ additionalContent:
       - text: Node.js
         url: /visualstudio/javascript
       - text: 資料儲存體和流程
-        url: ../data-tools/index.md
+        url: ../data-tools/index.yml
       - text: 資料科學
         url: ../python/data-science-and-analytical-applications-workload.md
       - text: Office/Sharepoint 開發
