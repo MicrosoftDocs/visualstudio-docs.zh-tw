@@ -2,17 +2,17 @@
 title: 如何測試 UWP 應用C++程式的 DLL
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - uwp
-author: mikeblome
-ms.openlocfilehash: 18d8382bcb4f3e348443050e818f0b59c2a18688
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+author: corob-msft
+ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748082"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77274453"
 ---
 # <a name="how-to-test-a-c-dll"></a>如何測試C++ DLL
 
@@ -52,11 +52,11 @@ ms.locfileid: "72748082"
 
     - 每項測試都會使用 `TEST_METHOD(YourTestName){...}`來定義。
 
-         您不必撰寫傳統的函式簽章。 簽章會由巨集 TEST_METHOD 建立。 該巨集會產生傳回 void 的執行個體函式。 它也會產生靜態函式，以傳回測試方法的相關資訊。 此資訊可讓測試總管找到該方法。
+         您不必撰寫傳統的函式簽章。 簽章會由巨集 TEST_METHOD 建立。 該巨集會產生傳回 void 的執行個體函式。 它也會產生靜態函式，以傳回測試方法的相關資訊。 這項資訊可讓測試總管找到方法。
 
     - 測試方法會使用 `TEST_CLASS(YourClassName){...}`來分類。
 
-         當測試執行時，就會建立每個測試類別的執行個體。 將會以非指定的順序來呼叫測試方法。 您可以定義在每個模組、類別或方法之前和之後叫用的特殊方法。 如需詳細資訊，請參閱[使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)。
+         在測試執行時，會建立每個測試類別的執行個體。 將會以非指定的順序來呼叫測試方法。 您可以定義在每個模組、類別或方法之前和之後叫用的特殊方法。 如需詳細資訊，請參閱[使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)。
 
 ## <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> 確認測試在測試總管中執行
 
@@ -118,7 +118,7 @@ ms.locfileid: "72748082"
     };
     ```
 
-     註解說明 ifdef 區塊的對象，除了 dll 開發人員，也包括所有參考其專案中 DLL 的人。 您可以使用 DLL 的專案屬性將 ROOTERLIB_EXPORTS 符號加入命令列。
+     註解說明 ifdef 區塊的對象，除了 dll 開發人員，也包括專案參考了 DLL 的所有人。 您可以使用 DLL 的專案屬性將 ROOTERLIB_EXPORTS 符號加入命令列。
 
      `CRooterLib` 類別會宣告建構函式和 `SqareRoot` 評估工具方法。
 
@@ -130,7 +130,7 @@ ms.locfileid: "72748082"
 
     2. 在 [RooterLib 屬性頁] 對話方塊中，依序展開 [組態屬性] 和 [C++]，然後選擇 [前置處理器]。
 
-    3. 從 [前置處理器定義] 清單選擇 [\<編輯...>]，然後在 [前置處理器定義] 對話方塊中加入 `ROOTERLIB_EXPORTS`。
+    3. 從 [前置處理器定義] **\< 清單選擇 [** 編輯...>]，然後在 [前置處理器定義]`ROOTERLIB_EXPORTS`**對話方塊中加入**。
 
 4. 加入已宣告函式的最低限度實作。 開啟 *RooterLib.cpp* 並新增下列程式碼︰
 
@@ -166,7 +166,7 @@ ms.locfileid: "72748082"
        #include "..\RooterLib\RooterLib.h"
        ```
 
-3. 加入使用已匯入函式的測試。 將下列程式碼加入至 *unittest1.cpp*：
+3. 加入使用輸入函式的測試。 將下列程式碼加入至 *unittest1.cpp*：
 
    ```cpp
    TEST_METHOD(BasicTest)
@@ -194,7 +194,7 @@ ms.locfileid: "72748082"
 
     ![成功的基本測試](../test/media/ute_cpp_testexplorer_basictest.png)
 
-   您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。
+   您已設定測試和程式碼專案，而且在程式碼專案中執行函式的測試也確認可以執行。 現在您可以開始撰寫實際的測試和程式碼。
 
 ## <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> 反覆擴大測試範圍並使其通過
 
@@ -215,9 +215,9 @@ ms.locfileid: "72748082"
     ```
 
     > [!TIP]
-    > 建議您不要變更已通過的測試。 相反地，請加入新的測試，更新程式碼，使測試通過，然後再加入另一個測試，依此類推。
+    > 建議您不要變更成功的測試。 相反地，請加入新的測試，更新程式碼，使測試通過，然後再加入另一個測試，依此類推。
     >
-    > 當您的使用者變更他們的需求時，請停用已不再正確的測試。 以相同的累加方式，撰寫新的測試，一次使一個測試生效。
+    > 當使用者的需求變更時，停用不再正確的測試。 撰寫新測試，並以相同的遞增方式一次讓一項測試成功。
 
 2. 在 [測試總管] 中，選擇 [全部執行]。
 
@@ -226,7 +226,7 @@ ms.locfileid: "72748082"
      ![RangeTest 失敗](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
-    > 確認每個測試在您撰寫之後立即失敗。 這樣有助於避免撰寫永遠不會失敗的測試這種易犯的錯誤。
+    > 撰寫每項測試之後立即確認其失敗。 這有助於避免犯下撰寫永遠不會失敗的測試這種簡單的錯誤。
 
 4. 透過測試強化程式碼，讓新的測試都成功。 將下列內容加入至 *RooterLib.cpp*：
 
@@ -254,7 +254,7 @@ ms.locfileid: "72748082"
      這兩個測試都通過。
 
 > [!TIP]
-> 開發程式碼時，一次加入一個測試。 確定所有測試在每次反覆之後都通過。
+> 藉由一次加入一項測試的方式開發程式碼。 確定在每次反覆運算後，所有測試都成功。
 
 ## <a name="Debug_a_failing_test"></a> 對失敗的測試進行偵錯
 
@@ -301,7 +301,7 @@ ms.locfileid: "72748082"
 
    2. 在失敗測試的捷徑功能表上，選擇 [偵錯選取的測試]。
 
-        當在中斷點停止執行時，逐步執行程式碼。
+        當執行停在中斷點時，請逐步執行程式碼。
 
    3. 將程式碼加入至 *RooterLib.cpp* 以攔截例外狀況︰
 
@@ -321,7 +321,7 @@ ms.locfileid: "72748082"
 
    1. 在 [測試總管] 中，選擇 [全部執行] 測試修正過的方法，並確定並未導入迴歸。
 
-   現在所有測試都通過了。
+   所有測試都成功了。
 
    ![所有測試都成功](../test/media/ute_ult_alltestspass.png)
 

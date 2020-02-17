@@ -30,15 +30,15 @@ f1_keywords:
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: a40697c56468ce05bcf132e6ef2594aaa8d61569
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850163"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271599"
 ---
 # <a name="annotating-locking-behavior"></a>註釋鎖定行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "75850163"
   
  並行 SAL 註釋的設計在於幫助您指定鎖定的副作用、鎖定責任、資料保護、鎖定順序階層，以及其他必要的鎖定行為。 SAL 並行註釋藉由讓隱含規則變為明確，提供了一致的方式讓您記錄程式碼使用鎖定規則的方式。 並行註釋還可以增強程式碼分析工具的能力，找出競爭條件、死結、不相符的同步處理作業及其他細小的並行錯誤。  
   
-## <a name="general-guidelines"></a>一般方針  
+## <a name="general-guidelines"></a>一般準則  
  藉由使用註釋，您可以陳述實作 (被呼叫者) 和用戶端 (呼叫端) 之間由函式定義隱含的合約，以及表達可進一步改善分析的非變異項目和其他程式屬性。  
   
  SAL 支援多種不同的鎖定基本類型，例如關鍵區段、Mutex、微調鎖定和其他資源物件。 許多並行注釋會接受鎖定運算式做為參數。 依照慣例，鎖定是由基礎鎖定物件的路徑運算式表示。  
@@ -67,7 +67,7 @@ ms.locfileid: "75850163"
 ## <a name="locking-annotations"></a>鎖定注釋  
  下表列出鎖定注釋。  
   
-|註釋|描述|  
+|Annotation|描述|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的獨佔鎖定計數遞增 1。|  
 |`_Acquires_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的鎖定計數遞增 1。|  
@@ -91,7 +91,7 @@ ms.locfileid: "75850163"
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>未公開之鎖定物件的 SAL 內在變數  
  某些鎖定物件不會由相關聯的鎖定函式的實作為公開。  下表列出 SAL 內部變數，這些變數會啟用在未公開的鎖定物件上運作之函式的註釋。  
   
-|註釋|描述|  
+|Annotation|描述|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|描述取消微調鎖定。|  
 |`_Global_critical_region_`|描述關鍵區域。|  
@@ -101,14 +101,14 @@ ms.locfileid: "75850163"
 ## <a name="shared-data-access-annotations"></a>共用資料存取注釋  
  下表列出共用資料存取的註釋。  
   
-|註釋|描述|  
+|Annotation|描述|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|標註變數，並指出只要存取變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|  
 |`_Interlocked_`|標注變數，相當於 `_Guarded_by_(_Global_interlock_)`。|  
 |`_Interlocked_operand_`|批註函式參數是其中一個各種連鎖函數的目標運算元。  這些運算元必須具有特定的其他屬性。|  
 |`_Write_guarded_by_(expr)`|為變數加上附註，並指出只要修改變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 SAL 注釋減少 C/C++程式碼](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)缺失   
  [瞭解 SAL](../code-quality/understanding-sal.md)   
  [標注函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   

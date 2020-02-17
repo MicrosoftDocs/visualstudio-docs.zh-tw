@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code analysis, walkthroughs
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 74a878b8c64955927357e45c668c4d100007d373
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75401025"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271807"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>逐步解說：分析 C/C++ 程式碼的缺失
 
@@ -28,7 +28,7 @@ ms.locfileid: "75401025"
 - 將警告視為錯誤。
 - 標注原始程式碼以改善程式碼缺失分析。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>Prerequisites
 
 - [示範範例](../code-quality/demo-sample.md)的複本。
 - 對 C/C++的基本瞭解。
@@ -45,7 +45,7 @@ ms.locfileid: "75401025"
 
 3. 在 **方案總管**中，選取 CodeDefects 專案。
 
-4. 在 [專案] 功能表上，按一下 [屬性]。
+4. 按一下 [專案] 功能表上的 [屬性]。
 
      [ **CodeDefects 屬性頁**] 對話方塊隨即顯示。
 
@@ -107,7 +107,7 @@ ms.locfileid: "75401025"
 
 1. 在 方案總管中，選取 注釋 專案。
 
-2. 在 [專案] 功能表上，按一下 [屬性]。
+2. 按一下 [專案] 功能表上的 [屬性]。
 
      [**批註屬性頁**] 對話方塊隨即顯示。
 
@@ -169,7 +169,7 @@ ms.locfileid: "75401025"
 
      專案現在會建立，而不會出現任何警告或錯誤。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [逐步解說：分析 Managed 程式碼中的程式](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)代碼缺失
 [CC++ /的程式碼分析](../code-quality/code-analysis-for-c-cpp-overview.md)

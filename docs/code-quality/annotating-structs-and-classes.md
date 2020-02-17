@@ -19,17 +19,17 @@ f1_keywords:
 - _Field_size_full_opt_
 - _Field_z_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 70dc130633e9f191811748b2ab316ad339ad4277
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: 0ebcd88df8508ae534ab51289016261193f54380
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879252"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271042"
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
 
@@ -41,7 +41,7 @@ ms.locfileid: "74879252"
 
      欄位位於 `low` 到 `high`的範圍內（含）。  相當於使用適當的前置或後置條件套用至已標註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`。
 
-- `_Field_size_(size)`、`_Field_size_opt_(size)`、`_Field_size_bytes_(size)``_Field_size_bytes_opt_(size)`
+- `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
      欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定。
 
@@ -49,7 +49,7 @@ ms.locfileid: "74879252"
 
      欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定，而且可以讀取這些項目 (位元組) 的 `count`。
 
-- `_Field_size_full_(size)`、`_Field_size_full_opt_(size)`、`_Field_size_bytes_full_(size)``_Field_size_bytes_full_opt_(size)`
+- `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
      具有可讀取及可寫入大小的欄位，其大小是以 `size` 所指定的項目 (或位元組) 為單位表示。
 
@@ -109,7 +109,7 @@ struct MyBuffer
 - `bufferSize` 的 `_Field_range_` 會指定 `bufferSize` 的值應該在1和 `MaxBufferSize` （兩者皆包含）中。
 - `_Struct_size_bytes_` 和 `_Field_size_` 注釋的最終結果是相同的。 針對具有類似配置的結構或類別，`_Field_size_` 較容易閱讀和維護，因為它的參考和計算比對等的 `_Struct_size_bytes_` 注釋少。 `_Field_size_` 不需要轉換成位元組大小。 如果 [位元組大小] 是唯一的選項，例如，針對 void 指標欄位，可以使用 `_Field_size_bytes_`。 如果 `_Struct_size_bytes_` 和 `_Field_size_` 都存在，則兩者都可供工具使用。 如果這兩個批註不同意，該怎麼辦。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [了解 SAL](../code-quality/understanding-sal.md)

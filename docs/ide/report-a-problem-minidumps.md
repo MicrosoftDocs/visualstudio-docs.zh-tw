@@ -4,8 +4,8 @@ ms.date: 06/27/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - minidumps for Visual Studio issues"
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: 7d0580e04968a01dc8e447a9ee35f2b1c5934ccf
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 7b3be91e5d0d2e1f14724dd647670fc4885bcd4d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461667"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271194"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>建立包含所有呼叫堆疊的 Visual Studio 處理序小型傾印
 
@@ -28,20 +28,20 @@ ms.locfileid: "68461667"
 ## <a name="create-the-minidump-file"></a>建立小型傾印檔案
 
 1. 啟動新的 Visual Studio 執行個體。
-1. 在主功能表中，選擇 [偵錯]   > [附加至處理序]  。
-1. 勾選相關的 [受控]  和 [原生]  核取方塊，然後按 [附加]  。
+1. 在主功能表中，選擇 [偵錯] > [附加至處理序]。
+1. 勾選相關的 [受控] 和 [原生] 核取方塊，然後按 [附加]。
 
    ![附加至處理序](../ide/media/attach-to-process.png)
 
 1. 從正在執行的程序清單中，選取其他要附加的 Visual Studio 執行個體。
-1. 在主功能表中，選擇 [偵錯]   > [全部中斷]  。
-1. 在主功能表中，選擇 [偵錯]   > [另存傾印]  。
+1. 在主功能表中，選擇 [偵錯] > [全部中斷]。
+1. 在主功能表中，選擇 [偵錯] > [另存傾印]。
 
 ## <a name="get-the-call-stacks-from-the-minidump"></a>從小型傾印中取得呼叫堆疊
 
 1. 在 Visual Studio 開啟傾印檔案。
-1. 移至 [工具]   > [選項]   > [偵錯]   > [符號]  ，並確定已勾選 [符號檔 (.pdb) 位置]  中的 [Microsoft 符號伺服器]  。
-1. 開啟 [命令]  視窗 ([檢視]   > [其他視窗]   > [命令視窗]  )
+1. 移至 **[工具**] [ > **選項**] > [ > **符號**的**調試**程式]，並確定已在**符號檔（.Pdb）位置**中核取 [ **Microsoft 符號伺服器**]。
+1. 開啟 [命令] 視窗 ([檢視] > [其他視窗] > [命令視窗])
 1. 鍵入 ‘~*k’。 此視窗會顯示所有執行緒的呼叫堆疊。
 1. 複製 [命令視窗] 中的所有文字，並儲存為文字檔案。
 1. 將 txt 檔案附加至 Bug。

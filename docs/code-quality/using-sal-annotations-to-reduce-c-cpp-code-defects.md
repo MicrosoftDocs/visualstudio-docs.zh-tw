@@ -7,17 +7,17 @@ helpviewer_keywords:
 - SAL annotations
 - code analysis, annotation
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 506e8516c7a7bbc0ccc610b843763017ae90f547
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4d227ca8c88770548a1d53a4f40eb1ce62d5919c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807070"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271732"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>使用 SAL 註釋減少 C/C++ 程式碼的缺失
 SAL 是 Microsoft 原始程式碼注釋語言。 藉由使用原始程式碼注釋，您可以將意圖放在程式碼的後方。 這些批註也可以讓自動化靜態分析工具更精確地分析您的程式碼，而且有明顯較少的誤報和誤否定。
@@ -59,5 +59,5 @@ SAL 是 Microsoft 原始程式碼注釋語言。 藉由使用原始程式碼注�
 ## <a name="related-resources"></a>相關資源
 [程式碼分析小組 Blog](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [適用于 Windows 驅動程式的 SAL 2.0 批註](/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers)

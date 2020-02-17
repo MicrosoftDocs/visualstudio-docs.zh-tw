@@ -1,6 +1,7 @@
 ---
 title: Android 版 Visual Studio 模擬器的系統需求 | Microsoft Docs
 ms.custom: ''
+ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -8,14 +9,15 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f1462769a4ba9929a000bca998c1fe3708908798
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916812"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272047"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android 的系統需求
 
@@ -79,7 +81,7 @@ Hyper-V 需求
 
 - DHCP
 
-   模擬器需要 DHCP，因為它會將本身設定為網路上具有自己的 IP 位址的個別裝置。
+   模擬器需要 DHCP，因為它會將本身設定為網路上具有本身 IP 位址的個別裝置。
 
 - 自動設定的 DNS 和閘道設定
 
@@ -87,7 +89,7 @@ Hyper-V 需求
 
   若要疑難排解模擬器中的網路問題，請參閱下列主題：
 
-- [進行 Android 版 Visual Studio 模擬器的疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
 ## <a name="hyper-v-requirements"></a>Hyper-V 需求
 
@@ -124,9 +126,9 @@ Windows 中的 Hyper-V 需求
  若要手動將您自己加入群組，請開啟 [本機使用者和群組] 嵌入式管理單元。
 
 ## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>不支援從可開機的 VHD 執行模擬器
- 如果您在從可開機的 VHD 執行 Windows 時，嘗試在 Visual Studio Emulator for Android 上執行應用程式，則模擬器通常需要數分鐘的時間才能啟動，或無法啟動。 無法啟動模擬器時，您會看到下列訊息：應用程式部署失敗。 請重試。
+ 如果您在從可開機的 VHD 執行 Windows 時，嘗試在 Visual Studio Emulator for Android 上執行應用程式，則模擬器通常需要數分鐘的時間才能啟動，或無法啟動。 無法啟動模擬器時，您會看到下列訊息：應用程式部署失敗。 請再試一次。
 
- 不支援這個組態。 如需相關問題的資訊，請參閱[針對 Visual Studio 的 Android 模擬器進行疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。
+ 不支援這樣的設定。 如需相關問題的資訊，請參閱[針對 Visual Studio 的 Android 模擬器進行疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。
 
 ## <a name="hyper-v-requires-uncompressed-and-unencrypted-files"></a>Hyper-V 需要未壓縮和未加密的檔案
  在以 NTFS 檔案系統設定的硬碟上，Hyper-V 所使用的虛擬硬碟檔案必須為未壓縮和未加密。 請確定未壓縮或加密下列目錄：
@@ -145,6 +147,6 @@ Windows 中的 Hyper-V 需求
 
 為了讓模擬器模擬 GPU 呼叫 (例如 OpenGL ES 所使用的呼叫)，您的電腦必須具有已安裝適當 DirectX 驅動程式的 DirectX 相容 GPU。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [針對 Visual Studio 的 Android 模擬器進行疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

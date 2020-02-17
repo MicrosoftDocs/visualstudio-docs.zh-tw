@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 41d5c5a5ea966d1e092e7038d2fc3734c9bd9f15
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445642"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272315"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>快速入門：C/C++ 的程式碼分析
 
@@ -83,7 +83,7 @@ Visual Studio 包含兩組標準的原生程式碼規則：
 
 3. 選擇 [**隱藏訊息**]，然後選擇 [**在來源**]。
 
-   隱藏訊息會插入 `#pragma warning (disable:[warning ID])`，以隱藏程式程式碼的警告。
+   隱藏訊息會插入隱藏程式程式碼警告的 `#pragma warning (disable:[warning ID])`。
 
 ## <a name="create-work-items-for-code-analysis-warnings"></a>建立程式碼分析警告的工作專案
 
@@ -107,6 +107,6 @@ Visual Studio 包含兩組標準的原生程式碼規則：
 
 - **若要依嚴重性篩選警告**：根據預設，系統會將**警告**的嚴重性指派給程式碼分析訊息。 在自訂規則集中，您可以將一或多個訊息的嚴重性指派為 [**錯誤**]。 在**錯誤清單**的 [**嚴重性**] 資料行上，選擇下拉箭號，然後選取篩選圖示。 選擇 [**警告**] 或 [**錯誤**]，只顯示指派給個別嚴重性的訊息。 選擇 [**全選**] 以顯示所有訊息。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [C/的程式碼分析C++](../code-quality/code-analysis-for-c-cpp-overview.md)

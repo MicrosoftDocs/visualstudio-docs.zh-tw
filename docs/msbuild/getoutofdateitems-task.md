@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), GetOutOfDateItems task
 - GetOutOfDateItems task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: d3dc343c595606faf5bd31d7f087f7ba8d95f69e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747311"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272401"
 ---
 # <a name="getoutofdateitems-task"></a>GetOutOfDateItems 工作
 
@@ -40,10 +40,10 @@ ms.locfileid: "72747311"
 |**HasInterdependencies**|選擇性的 **bool** 輸出參數。|
 |**OutOfDateSources**|選擇性的 **ITaskItem[]** 輸出參數。|
 |**OutputsMetadataName**|必要的 **string** 參數。|
-|**Sources**|選擇性的 **ITaskItem[]** 參數。|
+|**來源**|選擇性的 **ITaskItem[]** 參數。|
 |**TLogDirectory**|必要的 **string** 參數。|
 |**TLogNamePrefix**|必要的 **string** 參數。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [工作參考](../msbuild/msbuild-task-reference.md)
