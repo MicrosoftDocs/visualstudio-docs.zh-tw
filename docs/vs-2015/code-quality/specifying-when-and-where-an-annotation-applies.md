@@ -1,5 +1,5 @@
 ---
-title: 指定套用註釋的時機和位置 |Microsoft Docs
+title: 指定套用注釋的時機和位置 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -11,37 +11,37 @@ f1_keywords:
 - _At_buffer_
 ms.assetid: 8e4f4f9c-5dfa-4835-87df-ecd1698fc650
 caps.latest.revision: 9
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: ba14fdbc23968fcaf10355f73517ab6cd54f8797
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1eb32aa7d87da75ebf37b27aa1d425adb85f8c9b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142190"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278462"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>指定套用註釋的時機和位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-條件式註解時，它可能需要指定分析器的其他註解。  例如，如果函式的變數，可以同步或非同步，函式的行為，如下所示：在同步的情況下它一定最終會成功，但在非同步的情況下則會回報錯誤如果無法立即成功。 以同步方式呼叫此函式時，檢查結果值提供以程式碼分析工具的任何值，因為它將不會有傳回。  不過，當以非同步方式呼叫此函式，並不會檢查函式的結果，就可能發生嚴重的錯誤。 此範例說明您可以使用的情況下`_When_`註釋，本文稍後所述，啟用檢查。  
+當注釋是條件式時，它可能需要其他注釋來指定分析器的批註。  例如，如果函式有可以是同步或非同步變數，函式的行為會如下所示：在同步的情況下，它一律會成功，但在非同步情況下，它會在無法立即成功時報告錯誤。 以同步方式呼叫函式時，檢查結果值不會對程式碼分析器提供任何值，因為它不會傳回。  不過，當以非同步方式呼叫函式，但未檢查函數結果時，可能會發生嚴重的錯誤。 這個範例說明您可以使用 `_When_` 注釋的情況（如本文稍後所述）來啟用檢查。  
   
-## <a name="structural-annotations"></a>結構化註解  
- 若要控制註釋套用的時機和位置，請使用下列的結構化註解。  
+## <a name="structural-annotations"></a>結構化注釋  
+ 若要控制批註的套用時機和位置，請使用下列結構化注釋。  
   
-|註釋|說明|  
+|Annotation|描述|  
 |----------------|-----------------|  
-|`_At_(expr, anno-list)`|`expr` 這會產生左值運算式。 中的註釋`anno-list`套用至物件命名`expr`。 在每個註釋`anno-list`，`expr`如果註解解譯在預先條件，並在後置條件如果註解解譯後置條件中，會將前置條件中解譯。|  
-|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` 這會產生左值運算式。 中的註釋`anno-list`套用至物件命名`expr`。 在每個註釋`anno-list`，`expr`如果註解解譯在前置條件下，並在後置條件如果註解解譯後置條件中，會將前置條件中解譯。<br /><br /> `iter` 是以註解為範圍變數的名稱 (在內`anno-list`)。 `iter` 具有隱含類型`long`。 從評估版，在任何封閉範圍中同名的變數會隱藏起來。<br /><br /> `elem-count` 這是判斷值為整數的運算式。|  
-|`_Group_(anno-list)`|中的註解`anno-list`全部都視為具有群組註釋套用至每個註釋適用於任何限定詞。|  
-|`_When_(expr, anno-list)`|`expr` 是可以轉換成運算式`bool`。 當它為非零 (`true`)，括住的註釋`anno-list`會被視為適用於。<br /><br /> 根據預設，在每個註釋`anno-list`，`expr`會解譯為使用輸入的值，如果註解是前置條件，而且如果使用的輸出值註釋是後置條件。 若要覆寫預設值，您可以使用`_Old_`如果內建函式，當您評估以指出應該使用輸入的值後置條件。 **注意：** 可能由於使用啟用不同的註釋`_When_`如果可變動的值 — 比方說， `*pLength`— 因為牽涉到評估的結果的`expr`在前置條件下可能不同於後置條件的評估結果。|  
+|`_At_(expr, anno-list)`|`expr` 是產生左值的運算式。 `anno-list` 中的批註會套用至 `expr`所命名的物件。 針對 `anno-list`中的每個批註，如果批註是在前置條件中轉譯，則會在前置條件中轉譯 `expr`，如果批註是在後置條件中轉譯，則會在後置條件中加以解讀。|  
+|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` 是產生左值的運算式。 `anno-list` 中的批註會套用至 `expr`所命名的物件。 針對 `anno-list`中的每個批註，如果批註在前置條件中解讀，則會在預先條件中解讀 `expr`，如果批註是在後置條件中轉譯，則會在後置條件中。<br /><br /> `iter` 是以注釋為範圍的變數名稱（包含 `anno-list`）。 `iter` 具有 `long`的隱含類型。 任何封閉範圍中的名稱相同的變數都會從評估中隱藏出來。<br /><br /> `elem-count` 是評估為整數的運算式。|  
+|`_Group_(anno-list)`|`anno-list` 中的注釋全都視為具有套用至每個注釋之群組批註的任何限定詞。|  
+|`_When_(expr, anno-list)`|`expr` 是可以轉換成 `bool`的運算式。 當它是非零（`true`）時，`anno-list` 中指定的注釋就會被視為適用。<br /><br /> 根據預設，針對 `anno-list`中的每個批註，如果注釋是前置條件，則會將 `expr` 視為使用輸入值，如果批註是後置條件，則會使用輸出值。 若要覆寫預設值，您可以在評估後置條件時使用 `_Old_` 內建，以指出應該使用輸入值。 **注意：** 如果牽涉到可變動的值（例如 `*pLength`），則可能會 `_When_` 啟用不同的注釋，因為前置條件中 `expr` 的評估結果可能與在後置條件中的評估結果不同。|  
   
 ## <a name="see-also"></a>另請參閱  
- [使用 SAL 註釋減少 C /C++程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [了解 SAL](../code-quality/understanding-sal.md)   
- [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
- [註釋函式行為](../code-quality/annotating-function-behavior.md)   
- [註釋結構和類別](../code-quality/annotating-structs-and-classes.md)   
- [註釋鎖定行為](../code-quality/annotating-locking-behavior.md)   
+ [使用 SAL 注釋減少 C/C++程式碼](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)缺失   
+ [瞭解 SAL](../code-quality/understanding-sal.md)   
+ [標注函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
+ [批註](../code-quality/annotating-function-behavior.md)函式行為   
+ [標注結構和類別](../code-quality/annotating-structs-and-classes.md)   
+ [標注鎖定行為](../code-quality/annotating-locking-behavior.md)   
  [內建函式](../code-quality/intrinsic-functions.md)   
  [最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)

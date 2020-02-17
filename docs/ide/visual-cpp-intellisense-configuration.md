@@ -2,17 +2,17 @@
 title: 設定 C++ IntelliSense 專案
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0a909c25af3de22019327bb890da9e26bcce1c8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748585"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279308"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>設定 C++ IntelliSense 專案
 
@@ -38,7 +38,7 @@ IntelliSense 能產生最多 1000 個錯誤。 如果來源檔案所包含的標
 
 ![VC++ [Include 目錄]](media/vcpp-intellisense-include-paths.png)
 
-若要查看組建巨集 (例如 **VC_IncludePath**) 目前的值，請選取 [Include 目錄] 行，然後按一下右側的下拉式清單。 接著，選擇 \<編輯> 並按一下 [巨集] 按鈕。
+若要查看組建巨集 (例如 **VC_IncludePath**) 目前的值，請選取 [Include 目錄] 行，然後按一下右側的下拉式清單。 接著，選擇 **編輯>\<** 並按一下 [巨集] 按鈕。
 
 ### <a name="makefile-projects"></a>Makefile 專案
 
@@ -120,6 +120,6 @@ Visual Studio to investigate.
 
 若要深入了解 TRACEDESIGNTIME 環境變數，請參閱 [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) \(英文\) 與[常見專案系統](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md) \(英文\)。 這些文章中的資訊皆與 C++ 專案相關。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual C++ IntelliSense](visual-cpp-intellisense.md)

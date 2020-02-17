@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), FXC task
 - FXC task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: 766a3dc35d72e21fc0aca9436ebff25dc3193a2e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 67958a1a1ebb2ff382d0896e2fbaec6105c0c785
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747329"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279292"
 ---
 # <a name="fxc-task"></a>FXC 工作
 
@@ -41,7 +41,7 @@ ms.locfileid: "72747329"
 |**AssemblerOutputFile**|選擇性的 **string** 參數。<br/><br/>指定組譯碼清單檔的檔案名稱。|
 |**CompileD2DCustomEffect**|選擇性的 **bool** 參數。<br/><br/>編譯包含像素著色器的 Direct2D 自訂效果。 請勿用於頂點或計算自訂效果。|
 |**ConsumeExportFile**|選擇性的 **string** 參數。|
-|**DisableOptimizations**|選擇性的 **bool** 參數。<br/><br/>停用最佳化。<br/><br/>儘管輸出可能與 `/Od /Gfp` 不同，但 `/Od` 意指 `/Gfp`。|
+|**DisableOptimizations**|選擇性的 **bool** 參數。<br/><br/>停用最佳化。<br/><br/>儘管輸出可能與 `/Od` 不同，但 `/Gfp` 意指 `/Od /Gfp`。|
 |**EnableDebuggingInformation**|選擇性的 **bool** 參數。<br/><br/>啟用偵錯資訊。|
 |**EnableUnboundedDescriptorTables**|選擇性的 **bool** 參數。<br/><br/>告知編譯器，著色器可能包含未繫結範圍的資源陣列宣告。 適用於著色器模型 5.1 (含) 以上版本。<br/><br/>使用 `/enable_unbounded_descriptor_tables`。|
 |**EntryPointName**|選擇性的 **string** 參數。<br/><br/>指定著色器的進入點名稱。<br/><br/>使用 `/E[name]`。|
@@ -59,6 +59,6 @@ ms.locfileid: "72747329"
 |**TreatWarningAsError**|選擇性的 **bool** 參數。<br/><br/>將所有編譯器警告視為錯誤。<br/><br/>若是新專案，建議在所有編譯中使用 `/WX`；解決所有警告時，才能將難以找出的程式碼缺失降至最低。|
 |**VariableName**|選擇性的 **string** 參數。<br/><br/>指定標頭檔中變數名稱的名稱。<br/><br/>使用 `/Vn [name]`。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [工作參考](../msbuild/msbuild-task-reference.md)

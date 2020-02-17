@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, annotation
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
 caps.latest.revision: 29
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 3dd1a481a7db9739bdd847c0b6780a2b55d28469
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 66da17a31f6287bea810fc29fdb9c12d95cc94b2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848303"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275420"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>使用 SAL 註釋減少 C/C++ 程式碼的缺失
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,5 +62,5 @@ SAL 是 Microsoft 原始程式碼注釋語言。 藉由使用原始程式碼注�
 ## <a name="related-resources"></a>相關資源  
  [程式碼分析小組 Blog](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [適用于 Windows 驅動程式的 SAL 2.0 批註](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx)

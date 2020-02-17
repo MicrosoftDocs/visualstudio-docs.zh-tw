@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), ClangCompile task
 - ClangCompile task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bd1d749461c423d51e0f5b736563a9f9aa757c5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1526fbd3c2c0822781f0e011999ddcb9c679170
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747334"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275472"
 ---
 # <a name="clangcompile-task"></a>ClangCompile 工作
 
@@ -38,10 +38,10 @@ ms.locfileid: "72747334"
 |**AdditionalOptions**|選擇性的 **string** 參數。|
 |**BufferSecurityCheck**|選擇性的 **string** 參數。<br/><br/>安全性檢查可協助偵測是否發生堆疊緩衝區滿溢的情況，這是駭客經常嘗試攻擊的程式安全性漏洞。 <br/><br/>使用 `fstack-protector`。|
 |**BuildingInIde**|選擇性的 **bool** 參數。|
-|**CLanguageStandard**|選擇性的 **string** 參數。<br/><br/>決定 C 語言標準。<br/><br/>使用值為 **c89**、**c99**、**c11**、**gnu99** 或 **gnu11** 的 `std=[value]`。|
+|**CLanguageStandard**|選擇性的 **string** 參數。<br/><br/>決定 C 語言標準。<br/><br/>使用值為 `std=[value]`c89 **、** c99 **、** c11 **、** gnu99**或**gnu11**的**。|
 |**ClangVersion**|選擇性的 **string** 參數。|
 |**CompileAs**|選擇性的 **string** 參數。<br/><br/>選取 .c 和 .cpp 檔的編譯語言選項。 預設將根據 .c 或 .cpp 副檔名進行偵測。<br/><br/>使用 `-x c`、`-x c++`。|
-|**CppLanguageStandard**|選擇性的 **string** 參數。<br/><br/>決定 C++ 語言標準。<br/><br/>使用值為 **c++98**、**c++11**、**c++1y**、**gnu++98**、**gnu++11** 或 **gnu++1y** 的 `std=[value]`。|
+|**CppLanguageStandard**|選擇性的 **string** 參數。<br/><br/>決定 C++ 語言標準。<br/><br/>使用值為 `std=[value]`c++98 **、** c++11 **、** c++1y **、** gnu++98 **、** gnu++11**或**gnu++1y**的**。|
 |**DataLevelLinking**|選擇性的 **bool** 參數。<br/><br/>可讓連結器最佳化，透過在個別的區段中發出每個資料項目，來移除未使用的資料。|
 |**DebugInformationFormat**|選擇性的 **string** 參數。<br/><br/>指定編譯器所產生的偵錯資訊類型。<br/><br/>**None**，不產生任何偵錯資訊，因此編譯速度可能比較快 (使用 `g0`)。<br/>**FullDebug**，產生 DWARF2 偵錯資訊 (使用 `g2 -gdwarf-2`)。<br/>**LineNumber**，僅產生行號資訊 (使用 `gline-tables-only`)。|
 |**EnableNeonCodegen**|選擇性的 **bool** 參數。<br/><br/>可產生適用於 NEON 浮點硬體的程式碼。 這僅適用於 ARM 架構。|
@@ -68,7 +68,7 @@ ms.locfileid: "72747334"
 |**RuntimeLibrary**|選擇性的 **string** 參數。<br/><br/>指定連結的執行階段程式庫。<br/><br/>使用 `MSVC /MT`、`/MTd`、`/MD`、`/MDd` 參數。<br/><br/>**MultiThreaded**，導致您的應用程式使用多執行緒、靜態版本的執行階段程式庫。<br/>**MultiThreadedDebug**，定義 _DEBUG 和 _MT。 這個選項也會讓編譯器將程式庫名稱 LIBCMTD.lib 放入 .obj 檔中，使連結器可以使用 LIBCMTD.lib 解析外部符號。<br/>**MultiThreadedDLL**，導致您的應用程式使用多執行緒與 DLL 特定版本的執行階段程式庫。 定義 _MT 和 _DLL，並導致編譯器將程式庫名稱 MSVCRT.lib 放入 .obj 檔。<br/>**MultiThreadedDLL**，定義 _DEBUG、_MT 及 _DLL，並導致您的應用程式使用偵錯多執行緒與 DLL 特定版本的執行階段程式庫。 它也會讓編譯器將程式庫名稱 MSVCRTD.lib 放入 .obj 檔中。|
 |**RuntimeTypeInfo**|選擇性的 **bool** 參數。<br/><br/>新增在執行階段用於檢查 C++ 物件類型的程式碼 (執行階段類型資訊)。<br/><br/>使用 `frtti`、`fno-rtti`。|
 |**ShowIncludes**|選擇性的 **bool** 參數。<br/><br/>產生 Include 檔清單以及編譯器輸出。<br/><br/>使用 `-H`。|
-|**Sources**|必要的 **ITaskItem[]** 參數。|
+|**來源**|必要的 **ITaskItem[]** 參數。|
 |**StrictAliasing**|選擇性的 **bool** 參數。<br/><br/>採用最嚴格的別名規則。 一律不會將某種類型的物件與不同類型的物件視為位於相同位址上。|
 |**Sysroot**|選擇性的 **string** 參數。<br/><br/>標頭與程式庫根目錄的資料夾路徑。|
 |**TargetArch**|選擇性的 **string** 參數。<br/><br/>目標架構。|
@@ -79,9 +79,9 @@ ms.locfileid: "72747334"
 |**UndefineAllPreprocessorDefinitions**|選擇性的 **bool** 參數。<br/><br/>取消所有先前定義的前置處理器值。<br/><br/>使用 `-undef`。|
 |**UseMultiToolTask**|選擇性的 **bool** 參數。<br/><br/>多處理器編譯。|
 |**UseShortEnums**|選擇性的 **bool** 參數。<br/><br/>列舉類型只會使用可能值的輸入集所需的位元組數。|
-|**Verbose**|選擇性的 **bool** 參數。<br/><br/>顯示要執行的命令，並使用詳細資訊輸出。|
+|**詳細資訊**|選擇性的 **bool** 參數。<br/><br/>顯示要執行的命令，並使用詳細資訊輸出。|
 |**WarningLevel**|選擇性的 **string** 參數。<br/><br/>選取您希望編譯器針對程式碼錯誤所產生的嚴謹度等級。 其他旗標應該直接新增到 [其他選項] (請參閱 `/w`、`/Weverything`)。<br/><br/>**TurnOffAllWarnings**，停用所有編譯器警告 (使用 `w`)。<br/>**EnableAllWarnings**，啟用所有警告，包括預設為停用的警告 (使用 `Wall`)。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [工作參考](../msbuild/msbuild-task-reference.md)

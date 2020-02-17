@@ -20,17 +20,17 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1ddb8bdbc913a72791144d5e9d29d206712a3d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9a48725c0877110e969a98deb8c03b3181d31153
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594418"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277696"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用於載入及建置 Managed 專案。 由於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是負責處理專案，因此幾乎任何 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 格式的專案都可以成功地用在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中，即使專案是用不同的工具撰寫，而且含有自訂的建置處理序，也不會有問題。
 
- 本文將針對 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 裝載部分，描述在自訂您想要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中載入和建置的專案與 *.targets* 檔時所應考慮的幾個特定層面。 這些內容將可幫助您確定像是 IntelliSense 和偵錯等 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 功能在自訂專案中能夠正常運作。
+ 本文將針對 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 裝載部分，描述在自訂您想要在 *中載入和建置的專案與*.targets[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 檔時所應考慮的幾個特定層面。 這些內容將可幫助您確定像是 IntelliSense 和偵錯等 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 功能在自訂專案中能夠正常運作。
 
  如需有關 C++ 專案的資訊，請參閱[專案檔](/cpp/build/reference/project-files)。
 
@@ -66,7 +66,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 > 有些項目類型名稱是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中特有的，但是沒有列在這個下拉式清單中。
 
 ## <a name="in-process-compilers"></a>同處理序編譯器
- 如果可能，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會嘗試使用同處理序 (In-Process) 版本的 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器來提升效能 （不適用於 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]）。若要讓此作業正常運作，必須符合下列條件：
+ 如果可能， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會嘗試使用同處理序 (In-Process) 版本的 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器來提升效能 （不適用於 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]）。若要讓此作業正常運作，必須符合下列條件：
 
 - 專案的目標中必須有一個名為 `Vbc` 的工作供 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案使用。
 
@@ -83,7 +83,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 - 必須符合[同處理序編譯器](#in-process-compilers)一節中所列的條件。
 
-## <a name="build-solutions"></a>建置方案
+## <a name="build-solutions"></a>建置解決方案
  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中，方案檔和專案建置順序是由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 本身來控制。 在命令列上使用 *msbuild.exe* 建置方案時，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會剖析方案檔並排列專案建置的順序。 在這兩種情況下都會依據相依性順序個別建置專案，而且不會走訪專案對專案間的參考。 相反地，使用 *msbuild.exe* 建置個別專案時，則會周遊專案對專案間的參考。
 
  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中進行建置時，會將 `$(BuildingInsideVisualStudio)` 屬性設定為 `true`。 您可以在專案或 *.targets* 檔案中使用這個屬性，使建置以不同的方式運作。
@@ -111,6 +111,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 </ItemGroup>
 ```
 
+> [!NOTE]
+> 專案的方案總管會忽略 `Visible` 中繼資料。 C++ 即使 `Visible` 設定為 false，也一律會顯示專案。
+
  根據預設，在檔案中宣告並匯入至專案的項目不會顯示出來。 在建置處理序期間所建立的項目永遠不會顯示在 [方案總管] 中。
 
 ## <a name="conditions-on-items-and-properties"></a>項目和屬性的條件
@@ -124,7 +127,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 必須正確定義 `OutputPath`、 `AssemblyName`和 `OutputType` 屬性，才能找到並啟動輸出組件以及連接到偵錯工具。 如果建置處理序未能使編譯器產生 *.pdb* 檔，將會無法連接到偵錯工具。
 
 ## <a name="design-time-target-execution"></a>設計階段目標執行
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 在載入專案時，會嘗試執行具有特定名稱的目標， 這些目標包括 `Compile`、`ResolveAssemblyReferences`、`ResolveCOMReferences`、`GetFrameworkPaths` 與 `CopyRunEnvironmentFiles`。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會執行這些目標，以便能初始化編譯器以提供 IntelliSense、初始化偵錯工具，以及解析顯示在 [方案總管] 中的參考。 如果沒有這些目標，專案仍然可以正常載入和建置，但是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的設計階段功能將無法全部正常運作。
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 在載入專案時，會嘗試執行具有特定名稱的目標， 這些目標包括 `Compile`、 `ResolveAssemblyReferences`、 `ResolveCOMReferences`、 `GetFrameworkPaths`與 `CopyRunEnvironmentFiles`。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會執行這些目標，以便能初始化編譯器以提供 IntelliSense、初始化偵錯工具，以及解析顯示在 [方案總管] 中的參考。 如果沒有這些目標，專案仍然可以正常載入和建置，但是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的設計階段功能將無法全部正常運作。
 
 ## <a name="edit-project-files-in-visual-studio"></a>在 Visual Studio 中編輯專案檔
  若要直接編輯 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案，可以在 Visual Studio XML 編輯器中開啟專案檔。
@@ -135,7 +138,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
      專案便會標記為 [ **(無法使用)** ]。
 
-2. 在方案總管中，開啟無法使用之專案的捷徑功能表，然後選擇 [編輯 \<專案檔>]。
+2. 在方案總管中，開啟無法使用之專案的捷徑功能表，然後選擇 [編輯 **專案檔>]\<** 。
 
      專案檔隨即在 [Visual Studio XML 編輯器] 中開啟。
 
@@ -152,7 +155,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會快取專案檔以及專案檔所匯入之檔案的內容。 如果您編輯的是已載入的專案檔， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 將會自動提示您重新載入專案，才能使變更生效。 但是，如果您編輯的是已載入專案所匯入的檔案，就不會出現重新載入的提示，您必須以手動方式將專案卸載，然後再重新載入，才能使變更生效。
 
 ## <a name="output-groups"></a>輸出群組
- 在 *Microsoft.Common.targets* 中定義的數個目標名稱結尾為 `OutputGroups` 或 `OutputGroupDependencies`。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會呼叫這些目標以取得專案輸出的特定清單。 例如，`SatelliteDllsProjectOutputGroup` 目標會建立一份清單，列出組建將要建立的所有附屬組件。 使用這些輸出群組的功能包括發行、部署以及專案對專案間的參考。 沒有定義輸出群組的專案仍然可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]載入和建置，但是有些功能可能無法正常運作。
+ 在 *Microsoft.Common.targets* 中定義的數個目標名稱結尾為 `OutputGroups` 或 `OutputGroupDependencies`。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會呼叫這些目標以取得專案輸出的特定清單。 例如， `SatelliteDllsProjectOutputGroup` 目標會建立一份清單，列出組建將要建立的所有附屬組件。 使用這些輸出群組的功能包括發行、部署以及專案對專案間的參考。 沒有定義輸出群組的專案仍然可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]載入和建置，但是有些功能可能無法正常運作。
 
 ## <a name="reference-resolution"></a>參考解析
  參考解析是使用儲存於專案檔中參考項目以找到實際組件的程序。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 必須觸發參考解析，才能夠在 [ **屬性** ] 視窗中顯示每一個參考的屬性。 下列清單會說明三種參考類型及其解析方式。
@@ -180,7 +183,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  快速更新檢查並不適用 Visual Studio 中的定期組建，而且專案的建置方式就如同您在命令提示字元中叫用組建一般。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：擴充 Visual Studio 的組建進程](../msbuild/how-to-extend-the-visual-studio-build-process.md)
 - [從 IDE 中啟動組建](../msbuild/starting-a-build-from-within-the-ide.md)
 - [登錄 .NET Framework 的延伸模組](../msbuild/registering-extensions-of-the-dotnet-framework.md)

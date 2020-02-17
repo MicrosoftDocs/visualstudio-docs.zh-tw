@@ -1,5 +1,5 @@
 ---
-title: HOW TO：設定程式碼分析屬性-C++專案 |Microsoft Docs
+title: 如何：設定 C 專案的程式C++代碼分析屬性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,41 +16,41 @@ helpviewer_keywords:
 - C/C++ code analysis properties
 ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
 caps.latest.revision: 19
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 4ebed266924861dac4bfc9e316a56907dbd11534
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b2fb3cb81b49fd4b8cc83e0548110d2025c7488d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201309"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277994"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>HOW TO：為 C/C++ 專案設定程式碼分析屬性
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>如何：為 C/C++ 專案設定程式碼分析屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以設定程式碼分析工具用來分析專案的每個組態中的程式碼的規則。 此外，您可以將程式碼分析，以隱藏來自產生並由第三方工具加入至專案的程式碼的警告。  
+您可以設定程式碼分析工具使用哪些規則來分析專案的每個設定中的程式碼。 此外，您可以指示程式碼分析，將警告從由協力廠商工具產生並新增至專案的程式碼隱藏。  
   
-## <a name="code-analysis-property-page"></a>程式碼分析 屬性頁  
- **程式碼分析**屬性頁包含專案的所有程式碼分析組態設定。 若要開啟的專案中的程式碼分析 屬性頁**方案總管**，以滑鼠右鍵按一下專案，然後按一下**屬性**。 接下來，依序展開**組態屬性**，然後選取**程式碼分析** 索引標籤。  
+## <a name="code-analysis-property-page"></a>程式碼分析屬性頁  
+ [程式**代碼分析**] 屬性頁包含專案的所有程式碼分析設定。 若要在**方案總管**中開啟專案的 [程式碼分析] 屬性頁，請以滑鼠右鍵按一下專案，然後按一下 [**屬性**]。 接下來，展開 [設定**屬性**]，然後選取 [程式**代碼分析**] 索引標籤。  
   
-## <a name="project-configuration-and-platform"></a>專案組態與平台  
- **組態**清單並**平台**清單可讓您將不同的程式碼分析設定套用至不同的專案組態與平台的組合。 例如，您可以將程式碼分析，以將一組規則套用至您的專案進行偵錯組建和一組不同的發行組建。  
+## <a name="project-configuration-and-platform"></a>專案設定和平臺  
+ [設定清單] 和 [**平臺** **] 清單可**讓您將不同的程式碼分析設定套用至不同的專案配置和平臺組合。 例如，您可以指示程式碼分析，將一組規則套用至您的專案，以用於 debug 組建，以及針對發行組建使用不同的集合。  
   
 ## <a name="enabling-code-analysis"></a>啟用程式碼分析  
- 您可以決定是否要選取以啟用您專案的程式碼分析**啟用程式碼分析適用於 C /C++上建置**。 結合**組態** 清單中，您可以比方說，決定停用偵錯組建，並啟用發行的程式碼分析。  
+ 您可以選取 [**啟用 C/C++ on Build 的程式碼分析**]，以決定是否要啟用專案的程式碼分析。 例如，您可以將與設定清單結合，以決定停用 debug **build 的程式**代碼分析，並針對發行組建加以啟用。  
   
- 如果您的專案包含 managed 程式碼，您可以決定是否要啟用或停用選取的程式碼分析**建置時啟用程式碼分析**。  
+ 如果您的專案包含 managed 程式碼，您可以選取 [**在組建上啟用程式碼分析**]，以決定是否要啟用或停用程式碼分析。  
   
- 程式碼分析可協助您改善程式碼的品質，並避免常見的陷阱。 因此，請仔細考慮是否要停用程式碼分析。 它通常會比較好停用規則集，或您不想的個別規則套用至您的專案。  
+ 程式碼分析是設計用來協助您改善程式碼的品質，並避免常見的陷阱。 因此，請仔細考慮是否要停用程式碼分析。 通常最好是停用您不想要套用至專案的規則集或個別規則。  
   
 ## <a name="generated-code"></a>產生的程式碼  
- 開發人員經常會使用工具來幫助您快速開發應用程式。 這些工具可以產生程式碼新增至專案。 您可能想要查看產生的程式碼可探索程式碼分析規則違規。 不過，您可能不想看到它們，如果您不想要維護的程式碼。  
+ 開發人員經常使用工具來協助快速開發應用程式。 這些工具可以產生已加入至專案的程式碼。 您可能想要查看程式碼分析在產生的程式碼中探索到的規則違規。 不過，如果您不想要維護程式碼，您可能不想要查看它們。  
   
- **隱藏結果從產生的程式碼** 核取方塊**一般**屬性頁面可讓您選取是否想要看到從協力廠商工具所產生的 managed 程式碼的程式碼分析警告.  
+ [**一般**屬性] 頁面上的 [**隱藏產生的程式碼的結果**] 核取方塊可讓您選取是否要查看協力廠商工具所產生之 managed 程式碼的程式碼分析警告。  
   
 ## <a name="rule-sets"></a>規則集  
- 如果您的專案包含 managed 程式碼，您可以選取要套用的程式碼分析中，選取規則集從的規則**執行此規則集**清單。  
+ 如果您的專案包含 managed 程式碼，您可以從 [**執行此規則集**] 清單中選取規則集，以選取要在程式碼分析中套用的規則。  
   
 ## <a name="see-also"></a>另請參閱  
  [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   

@@ -3,15 +3,15 @@ title: Visual Studio 訂用帳戶中的 LinkedIn Learning 權益 | Microsoft Doc
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/02/2019
+ms.date: 02/12/2020
 ms.topic: conceptual
 description: 了解包含為所選取 Visual Studio 訂用帳戶中所含 LinkedIn Premium 訂用帳戶一部分的 LinkedIn Learning 權益。
-ms.openlocfilehash: b91db8c5b8ec27e947e2c73ac59ab3b07502f9d2
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: f6c5206055835605ae529f1f07159611bcd6bf7d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099645"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278843"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 LinkedIn Learning 權益
 
@@ -49,7 +49,7 @@ ms.locfileid: "74099645"
 
 12. 根據您到目前為止所提供的喜好設定和個人資訊，您會看到選取的建議關聯以開始建立您的網路。  您可以選擇新增關聯，或略過此步驟。
 
-13. 若要將相片新增至您的個人資料，請按一下 [Upload photo] (上傳相片)。  否則您可以略過此步驟  (您一律可以稍後再新增相片)。
+13. 若要將相片新增至您的個人資料，請按一下 [Upload photo] (上傳相片)。  否則，您可以略過此步驟。  (您一律可以稍後再新增相片)。
 
 14. 您可以將 LinkedIn 應用程式下載至手機，以便在任何地方都能存取您的網路。  您可以傳送連結至手機，或是直接從 Microsoft Store 或 Google Play 下載。  您也可以按一下 [Next] (下一步) 暫時略過此步驟，稍後再下載應用程式。
 
@@ -68,14 +68,14 @@ ms.locfileid: "74099645"
 
 ## <a name="eligibility"></a>資格
 
-| 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
+| 訂用帳戶層級                                                 |     聲道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  否。  僅提供給新訂閱者使用          |
 | 含 GitHub Enterprise 的 Visual Studio Enterprise   | VL | 6 個月       |  否。  僅提供給新訂閱者使用          |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 3 個月                                                            |否。  僅提供給新訂閱者使用         |
 | 含 GitHub Enterprise 的 Visual Studio Professional | VL | 3 個月      | 否。  僅提供給新訂閱者使用         |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 3 個月                                             |  否。  僅提供給新訂閱者使用         |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 3 個月                                              | 否。  僅提供給新訂閱者使用         |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                            |  NA         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              | NA         |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
 <sup>1</sup>  *包括：禁止轉售（NFR）、Visual Studio 產業夥伴（VSIP）。 排除： Microsoft 合作夥伴網路（MPN）、FTE、MCT Software & Services Developer、BizSpark、想像、最有價值專家（MVP）、區域主管（RD）。 MCT 軟體 & 服務。*

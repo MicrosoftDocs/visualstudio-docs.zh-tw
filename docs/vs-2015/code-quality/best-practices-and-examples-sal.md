@@ -1,28 +1,28 @@
 ---
-title: 最佳做法和範例 (SAL) |Microsoft Docs
+title: 最佳做法和範例（SAL） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: 666276fb-99c2-4dc9-8bac-d74861c203ea
 caps.latest.revision: 14
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 56e57d182a21429d73b8eae0b79f96532732ae7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a03d2f64e3facba434de03bb18dbb2ac5bd809b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428569"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275249"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳作法和範例 (SAL)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-以下是從來源的程式碼註釋語言 (SAL) 的最大，並避免的一些常見問題的一些方法。  
+以下是取得原始程式碼注釋語言（SAL）最大的一些方式，並避免一些常見的問題。  
   
-## <a name="in"></a>\_In\_
- 如果函式應該寫入項目，使用`_Inout_`而不是`_In_`。 這是在較舊的巨集來 SAL 的自動化轉換的情況下特別相關。 在 SAL 之前, 許多程式設計人員，請使用做為註解的巨集 — 命名的巨集`IN`， `OUT`， `IN_OUT`，或這些名稱的變異數。 雖然我們建議您將這些巨集轉換成 SAL，我們也強烈建議您在您將它們轉換因為程式碼可能已經變更寫入原始的原型，而且舊的巨集可能不再反映程式碼的作用時要特別小心。 要特別小心有關`OPTIONAL`註解巨集，因為它經常會不正確地放置 — 例如，在錯誤的側邊的逗號。  
+## <a name="_in_"></a>\_位置\_
+ 如果函式應該寫入專案，請使用 `_Inout_`，而不是 `_In_`。 這在從舊版宏自動轉換為 SAL 的情況下特別相關。 在 SAL 之前，許多程式設計人員會使用宏做為批註，也就是名稱為 `IN`、`OUT`、`IN_OUT`或變數的宏。 雖然我們建議您將這些宏轉換成 SAL，但我們也鼓勵您在轉換它們時小心，因為程式碼在撰寫原始原型之後可能已經變更，而舊的宏可能不再反映程式碼的作用。 請特別留意 `OPTIONAL` comment 宏，因為它經常放在不正確的位置，例如在逗號的錯誤端。  
   
 ```cpp  
   
@@ -45,8 +45,8 @@ void Func2(_Inout_ PCHAR p1)
 }  
 ```  
   
-## <a name="opt"></a>\_opt\_  
- 如果呼叫端不可以傳入 null 指標，請使用`_In_`或是`_Out_`而不是`_In_opt_`或`_Out_opt_`。 即使適用於函式會檢查其參數，如果它是 NULL，不應該將它時，會傳回錯誤。 雖然有非預期的 NULL 檢查其參數，並依正常程序傳回的函式是很好的防禦性程式碼撰寫練習，它並不表示的參數註釋可以是選擇性的型別 (\_*Xxx*_opt\_).  
+## <a name="_opt_"></a>\_opt\_  
+ 如果不允許呼叫端傳入 null 指標，請使用 `_In_` 或 `_Out_`，而不是 `_In_opt_` 或 `_Out_opt_`。 這甚至適用于檢查其參數的函式，如果不應為 Null，則會傳回錯誤。 雖然讓函式檢查其參數以找出非預期的 Null，並且正常地傳回是一個良好的防禦式編碼做法，但並不表示參數注釋可以是選擇性類型（\_*Xxx*_opt\_）。  
   
 ```cpp  
   
@@ -64,11 +64,11 @@ void Func2(_Out_ int *p1)
   
 ```  
   
-## <a name="predefensive-and-postdefensive"></a>\_Pre_defensive\_和\_Post_defensive\_  
- 如果函式出現在信任界限中，建議您使用 `_Pre_defensive_` 註釋。  "防禦性 」 的修飾詞修改特定的附註，表示在呼叫，介面應該嚴格來說，檢查，但實作本文它應該採用的可能會收到不正確的參數。 在這種情況下，信任界限中會優先使用 `_In_ _Pre_defensive_`，指出雖然呼叫端嘗試傳遞 NULL 時會發生錯誤，但是仍會分析函式主體，就如同參數可能為 NULL 一樣，而且未先檢查指標是否為 NULL 就嘗試取值，便會加上旗標。  `_Post_defensive_` 註釋也可以用於回呼，其中信任的一方會假設為呼叫端，而不受信任的程式碼為被呼叫的程式碼。  
+## <a name="_pre_defensive_-and-_post_defensive_"></a>\_Pre_defensive\_ 和 \_Post_defensive\_  
+ 如果函式出現在信任界限中，建議您使用 `_Pre_defensive_` 註釋。  「防禦性」修飾詞會修改某些注釋，以指出在呼叫時，應該嚴格檢查介面，但在執行本文中，它應該會假設可能會傳遞不正確的參數。 在這種情況下，信任界限中會優先使用 `_In_ _Pre_defensive_`，指出雖然呼叫端嘗試傳遞 NULL 時會發生錯誤，但是仍會分析函式主體，就如同參數可能為 NULL 一樣，而且未先檢查指標是否為 NULL 就嘗試取值，便會加上旗標。  `_Post_defensive_` 註釋也可以用於回呼，其中信任的一方會假設為呼叫端，而不受信任的程式碼為被呼叫的程式碼。  
   
-## <a name="outwrites"></a>\_Out_writes\_  
- 下列範例會示範常見的誤用的`_Out_writes_`。  
+## <a name="_out_writes_"></a>\_Out_writes\_  
+ 下列範例示範 `_Out_writes_`的常見誤用。  
   
 ```cpp  
   
@@ -79,9 +79,9 @@ void Func1(_Out_writes_(size) CHAR *pb,
   
 ```  
   
- 註釋`_Out_writes_`表示您有一個緩衝區。 它有`cb`以初始化結束時的第一個位元組所配置的位元組。 此註釋不完全是錯誤，而且很有用來表示配置的大小。 不過，它不會告訴多少項目都初始化函式。  
+ 批註 `_Out_writes_` 表示您有一個緩衝區。 它已配置 `cb` 個位元組，並在結束時初始化第一個位元組。 此注釋不是嚴格的錯誤，因此表示配置的大小會很有説明。 不過，它不會告訴函式初始化多少元素。  
   
- 下一個範例示範三個正確的方式，完整指定確切的大小的緩衝區初始化的一部分。  
+ 下一個範例顯示三個正確的方法，以完整指定緩衝區初始化部分的確切大小。  
   
 ```cpp  
   
@@ -101,8 +101,8 @@ void Func3(_Out_writes_(size) PSTR pb,
   
 ```  
   
-## <a name="out-pstr"></a>\_Out\_ PSTR  
- 使用`_Out_ PSTR`幾乎都是錯誤。 這會解譯成具有指向字元緩衝區的輸出參數，它是以 NULL 結束。  
+## <a name="_out_-pstr"></a>\_\_ PSTR  
+ `_Out_ PSTR` 的使用幾乎都是錯誤的。 這會被視為具有指向字元緩衝區的輸出參數，而且它是以 Null 結束。  
   
 ```cpp  
   
@@ -114,10 +114,10 @@ void Func2(_Out_writes_(n) PSTR wszFileName, size_t n);
   
 ```  
   
- 註解喜歡`_In_ PCSTR`很常見而且很有用。 它會指向具有 NULL 終止，因為輸入字串的前置條件`_In_`可辨識的以 NULL 結束的字串。  
+ `_In_ PCSTR` 之類的注釋很常見而且很有用。 它會指向具有 Null 終止的輸入字串，因為 `_In_` 的前置條件允許辨識以 Null 結束的字串。  
   
-## <a name="in-wchar-p"></a>\_在 \_ WCHAR * p  
- `_In_ WCHAR* p` 表示是輸入的指標`p`，它會指向一個字元。 不過，在大部分情況下，這是可能不適合的規格。 相反地，可能的目的為何是 NULL 結束陣列; 的規格若要這樣做，請使用`_In_ PWSTR`。  
+## <a name="_in_-wchar-p"></a>\_ WCHAR * p 中的 \_  
+ `_In_ WCHAR* p` 指出有一個指向一個字元的輸入指標 `p`。 不過，在大部分的情況下，這可能不是預期的規格。 相反地，可能的目標是以 Null 結束之陣列的規格。若要這麼做，請使用 `_In_ PWSTR`。  
   
 ```cpp  
   
@@ -129,7 +129,7 @@ void Func2(_In_ PWSTR wszFileName);
   
 ```  
   
- 缺少適當的規格，NULL 終止的是很常見。 使用適當`STR`版本來取代類型，如下列範例所示。  
+ 缺少正確的 Null 終止規格是常見的。 使用適當的 `STR` 版本來取代類型，如下列範例所示。  
   
 ```cpp  
   
@@ -147,8 +147,8 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
   
 ```  
   
-## <a name="outrange"></a>\_Out_range\_  
- 如果參數是指標，且您想要表達的指標，使用所指向的項目值的範圍`_Deref_out_range_`而不是`_Out_range_`。 在下列範例中，各種 * 表示 pcbFilled，不 pcbFilled。  
+## <a name="_out_range_"></a>\_Out_range\_  
+ 如果參數是指標，而您想要表示指標所指向之元素值的範圍，請使用 `_Deref_out_range_`，而不是 `_Out_range_`。 在下列範例中，會表示 * pcbFilled 的範圍，而不是 pcbFilled。  
   
 ```cpp  
   
@@ -168,10 +168,10 @@ void Func2(
   
 ```  
   
- `_Deref_out_range_(0, cbSize)` 不是絕對必要的一些工具，因為它可以從推斷`_Out_writes_to_(cbSize,*pcbFilled)`，但如下所示的完整性。  
+ 某些工具不一定需要 `_Deref_out_range_(0, cbSize)`，因為它可以從 `_Out_writes_to_(cbSize,*pcbFilled)`推斷出來，但在此會顯示為完整性。  
   
-## <a name="wrong-context-in-when"></a>錯誤內容中的\_時\_  
- 要用於前置條件中的後置狀態評估是另一個常見的錯誤。 在下列範例中，`_Requires_lock_held_`是前置條件。  
+## <a name="wrong-context-in-_when_"></a>\_ 時 \_中的內容錯誤  
+ 另一個常見的錯誤是針對前置條件使用後置狀態評估。 在下列範例中，`_Requires_lock_held_` 是前置條件。  
   
 ```cpp  
   
@@ -185,10 +185,10 @@ int Func2(_In_ MyData *p, int flag);
   
 ```  
   
- 運算式`result`參考後置狀態的值不在前的狀態中。  
+ 運算式 `result` 指的是前置狀態值，在預先狀態中無法使用。  
   
-## <a name="true-in-success"></a>在中，則為 TRUE\_成功\_  
- 如果函式成功時傳回的值為非零值，使用`return != 0`成功情況，而不是為`return == TRUE`。 Nonzero 不一定表示編譯器為所提供的實際值的等價`TRUE`。 `_Success_` 的參數是運算式，而且下列運算式會評估為相等：`return != 0`、`return != false`、`return != FALSE` 和 `return`，且不含參數或比較。  
+## <a name="true-in-_success_"></a>\_成功\_ 中為 TRUE  
+ 如果傳回值不是零，函數會成功，請使用 `return != 0` 做為成功條件，而不是 `return == TRUE`。 非零不一定表示編譯器為 `TRUE`所提供的實際值是否相等。 `_Success_` 的參數是運算式，而且下列運算式會評估為相等：`return != 0`、`return != false`、`return != FALSE` 和 `return`，且不含參數或比較。  
   
 ```cpp  
   
@@ -207,7 +207,7 @@ BOOL WINAPI TryEnterCriticalSection(
 ```  
   
 ## <a name="reference-variable"></a>參考變數  
- 參考變數，舊版的 SAL 隱含的指標做為註釋目標以及所需的`__deref`附加至參考變數的註解。 這個版本會使用物件本身，而且不需要額外`_Deref_`。  
+ 若為參考變數，舊版 SAL 使用隱含指標做為注釋目標，並要求加入附加至參考變數的批註 `__deref`。 這個版本會使用物件本身，而且不需要額外的 `_Deref_`。  
   
 ```cpp  
   
@@ -225,8 +225,8 @@ void Func2(
   
 ```  
   
-## <a name="annotations-on-return-values"></a>對傳回值的註解  
- 下列範例會顯示傳回值註釋中常見的問題。  
+## <a name="annotations-on-return-values"></a>傳回值的注釋  
+ 下列範例顯示傳回值注釋的常見問題。  
   
 ```cpp  
   
@@ -238,14 +238,14 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
   
 ```  
   
- 在此範例中，`_Out_opt_`指出指標可能是 NULL，做為前置條件的一部分。 不過，前置條件無法套用至傳回值。 在此案例中，是正確的註解`_Ret_maybenull_`。  
+ 在此範例中，`_Out_opt_` 指出，指標在前置條件中可能是 Null。 不過，前置條件無法套用至傳回值。 在此情況下，會 `_Ret_maybenull_`正確的注釋。  
   
 ## <a name="see-also"></a>另請參閱  
- [使用 SAL 註釋減少 C /C++程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [了解 SAL](../code-quality/understanding-sal.md)   
- [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
- [註釋函式行為](../code-quality/annotating-function-behavior.md)   
- [註釋結構和類別](../code-quality/annotating-structs-and-classes.md)   
- [註釋鎖定行為](../code-quality/annotating-locking-behavior.md)   
- [指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [使用 SAL 注釋減少 C/C++程式碼](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)缺失   
+ [瞭解 SAL](../code-quality/understanding-sal.md)   
+ [標注函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
+ [批註](../code-quality/annotating-function-behavior.md)函式行為   
+ [標注結構和類別](../code-quality/annotating-structs-and-classes.md)   
+ [標注鎖定行為](../code-quality/annotating-locking-behavior.md)   
+ [指定批註套用的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [內建函式](../code-quality/intrinsic-functions.md)

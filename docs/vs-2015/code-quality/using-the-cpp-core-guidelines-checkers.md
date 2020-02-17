@@ -6,15 +6,15 @@ ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: ccc44b77c4524e7d707ce3fe407d204d729017ff
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 946b46bfb5101154832e10b61cd861b0c104dc14
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291246"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275295"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ int main()
   
 - C26485 是規則界限。3：沒有陣列到指標的衰減。  
   
-- C26481 是規則界限。1：不要使用指標算術。 請改用 `span` 。  
+- C26481 是規則界限。1：不要使用指標算術。 請改用 `span`。  
   
   當您C++編譯此程式碼時，如果已安裝並啟用核心檢查程式碼分析規則集，則前兩個警告為輸出，但第三個是隱藏的。 以下是範例程式碼的組建輸出：  
   

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 __analysis_assume 指定其他程式碼資訊 |Microsoft Docs
+title: 如何：使用 __analysis_assume 指定額外的程式碼資訊 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,32 +10,32 @@ helpviewer_keywords:
 - __analysis_assume
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 caps.latest.revision: 12
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: dfae7d858dbb462ec6a93de9eb63b1b3b2a711ab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f2f18c9284ec96de7a7b8663aff485962d194282
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685812"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277969"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>作法：使用 _analysis_assume 來指定其他程式碼資訊
+# <a name="how-to-specify-additional-code-information-by-using-__analysis_assume"></a>如何：使用 __analysis_assume 指定其他程式碼資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以提供提示給程式碼分析工具，適用於 C /C++可協助分析處理，並減少警告的程式碼。 若要提供其他資訊，請使用下列函式：  
+您可以為 C/C++ code 提供程式碼分析工具的提示，以協助分析程式並減少警告。 若要提供其他資訊，請使用下列函數：  
   
  `__analysis_assume(`  `expr`  `)`  
   
- `expr` -假設為評估為 true 的任何運算式。  
+ `expr`-假設評估為 true 的任何運算式。  
   
- 程式碼分析工具假設條件運算式所代表之處函式隨即出現，並保持為 true，直到運算式改變，例如，藉由指派給變數，則為 true。  
+ 程式碼分析工具假設運算式所表示的條件在函式出現的時間點為 true，而且在改變運算式之前會保持為 true，例如，藉由將指派給變數。  
   
 > [!NOTE]
-> `__analysis_assume` 不會影響程式碼最佳化。 外部程式碼分析工具，`__analysis_assume`定義為執行任何作業。  
+> `__analysis_assume` 不會影響程式碼優化。 在程式碼分析工具之外，`__analysis_assume` 會定義為無 op。  
   
 ## <a name="example"></a>範例  
- 下列程式碼會使用`__analysis_assume`若要修正程式碼分析警告[C6388](../code-quality/c6388.md):  
+ 下列程式碼會使用 `__analysis_assume` 來更正程式碼分析警告[C6388](../code-quality/c6388.md)：  
   
 ```  
 #include<windows.h>  

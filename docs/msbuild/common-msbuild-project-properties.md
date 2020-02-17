@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f99bc18f4fdc834d0c5fdc7818d945d116251e
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: dd3ccd23775c93fb7222960c4db3ae5d35eb349f
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027634"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275487"
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性
 下表列出 Visual Studio 專案檔中所定義或 MSBuild 提供的 *.targets* 檔案中所包含的最常用屬性。
@@ -43,8 +43,8 @@ ms.locfileid: "77027634"
 | AssemblySearchPaths | 在建置階段參考組件解析期間搜尋的位置清單。 路徑出現在這個清單中的順序是有意義的，因為較早列出的路徑優先於較晚列出的路徑。 |
 | AssemblyName | 專案建置之後，最後輸出組件的名稱。 |
 | BaseAddress | 指定主要輸出組件的基底位址。 這個屬性相當於 `/baseaddress` 編譯器參數。 |
-| BaseOutputPath | 指定輸出檔的基底路徑。 如果設定這個屬性，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 將會使用 `OutputPath = $(BaseOutputPath)\$(Configuration)\`。 範例語法：`<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
 | BaseIntermediateOutputPath | 在其中建立所有組態特有中繼輸出資料夾的最上層資料夾。 預設值是 `obj\`。 下列程式碼為範例：`<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>` |
+| BaseOutputPath | 指定輸出檔的基底路徑。 如果設定這個屬性，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 將會使用 `OutputPath = $(BaseOutputPath)\$(Configuration)\`。 範例語法：`<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
 | BuildInParallel | 布林值，指出使用多處理器 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 時，專案參考為平行建置或清除。 預設值為 `true`，表示系統有多個核心或處理器時，專案將會平行建置。 |
 | BuildProjectReferences | 布林值，指出專案參考是否由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 建置。 如果您要在 `false` 整合式開發環境 (IDE) 中建置專案，會自動設定為 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，否則設定為 `true`。 可以在命令列上指定 `-p:BuildProjectReferences=false` 以避免檢查參考的專案是否為最新。 |
 | CleanFile | 做為「清除快取」使用之檔案的名稱。 清除快取是所產生檔案的清單，這些檔案將要在清除作業期間刪除。 建置流程會將這個檔案放入中繼輸出路徑。<br /><br /> 這個屬性只會指定檔案名稱，不包含路徑資訊。 |
@@ -72,8 +72,8 @@ ms.locfileid: "77027634"
 | IntermediateOutputPath | 如果沒有指定路徑，則為衍生自 `BaseIntermediateOutputPath` 的完整中繼輸出路徑。 例如， *\obj\debug\\* 。 |
 | KeyContainerName | 強式名稱金鑰容器的名稱。 |
 | KeyOriginatorFile | 強式名稱金鑰檔的名稱。 |
-| MSBuildProjectExtensionsPath | 指定專案延伸模組的路徑位置。 根據預設，這會採用與 `BaseIntermediateOutputPath` 相同的值。 |
 | ModuleAssemblyName | 組件的名稱，編譯的模組將合併到該組件中。 這個屬性相當於 `/moduleassemblyname` 編譯器參數。 |
+| MSBuildProjectExtensionsPath | 指定專案延伸模組的路徑位置。 根據預設，這會採用與 `BaseIntermediateOutputPath` 相同的值。 |
 | NoLogo | 布林值，指出您是否要關閉編譯器標誌。 這個屬性相當於 `/nologo` 編譯器參數。 |
 | NoStdLib | 布林值，指出是否要避免參考標準程式庫 (*mscorlib.dll*)。 預設值是 `false`。 |
 | NoVBRuntimeReference | 布林值，指出是否應加入 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 執行階段 (*Microsoft.VisualBasic.dll*) 作為專案中的參考。 |
@@ -90,13 +90,10 @@ ms.locfileid: "77027634"
 | PathMap | 指定如何將實體路徑對應到編譯器所輸出的來源路徑名稱。 此屬性相當於 `/pathmap`csc.exe*編譯器的* 參數。 |
 | PdbFile | 您要發出之 *.pdb* 檔案的檔案名稱。 此屬性相當於 `/pdb`csc.exe*編譯器的* 參數。 |
 | 平台 | 做為您建置目標的作業系統。 有效值為 "Any CPU"、"x86" 及 "x64"。 |
-| ProduceReferenceAssembly | 布林值，設定為 `true` 時會產生目前組件的[參考組件](/dotnet/standard/assembly/reference-assemblies)。 使用這項功能時，`Deterministic` 應該是 `true`。 此屬性對應於 `/refout`vbc.exe*和*csc.exe*編譯器的* 參數。 |
-| ProduceOnlyReferenceAssembly | 布林值，指示編譯器只發出參考組件，而不發出已編譯的程式碼。 無法與 `ProduceReferenceAssembly` 搭配使用。  此屬性對應於 `/refonly`vbc.exe*和*csc.exe*編譯器的* 參數。 |
-| RemoveIntegerChecks | 布林值，指出是否要停用整數溢位錯誤檢查。 預設值是 `false`。 此屬性相當於 `/removeintchecks`vbc.exe*編譯器的* 參數。 |
-| SGenUseProxyTypes | 布林值，指出是否要由 *SGen.exe* 產生 Proxy 類型。 這只適用於 *GenerateSerializationAssemblies* 設定為開啟時，且只適用於 .NET Framework。<br /><br /> SGen 目標會使用這個屬性設定 UseProxyTypes 旗標。 這個屬性預設為 true，而且沒有 UI 可用來變更這個屬性。 若要產生非 WebService 類型的序列化組件，請先將這個屬性新增至專案檔並將它設定為 false，再匯入 *Microsoft.Common.Targets* 或 *C#/VB.targets*。 |
-| SGenToolPath | 選擇性的工具路徑，指出目前版本的 *SGen.exe* 遭到覆寫時，取得 *SGen.exe* 的位置。 這個屬性僅適用於 .NET Framework。|
-| StartupObject | 指定包含 Main 方法或 Sub Main 程序的類別或模組。 這個屬性相當於 `/main` 編譯器參數。 |
 | ProcessorArchitecture | 解析組件參考時使用的處理器架構。 有效值為 "msil"、"x86"、"amd64" 或 "ia64"。 |
+| ProduceOnlyReferenceAssembly | 布林值，指示編譯器只發出參考組件，而不發出已編譯的程式碼。 無法與 `ProduceReferenceAssembly` 搭配使用。  此屬性對應於 `/refonly`vbc.exe*和*csc.exe*編譯器的* 參數。 |
+| ProduceReferenceAssembly | 布林值，設定為 `true` 時會產生目前組件的[參考組件](/dotnet/standard/assembly/reference-assemblies)。 使用這項功能時，`Deterministic` 應該是 `true`。 此屬性對應於 `/refout`vbc.exe*和*csc.exe*編譯器的* 參數。 |
+| RemoveIntegerChecks | 布林值，指出是否要停用整數溢位錯誤檢查。 預設值是 `false`。 此屬性相當於 `/removeintchecks`vbc.exe*編譯器的* 參數。 |
 | RootNamespace | 命名內嵌資源時使用的根命名空間。 這個命名空間是內嵌資源資訊清單名稱的一部分。 |
 | Satellite_AlgorithmId | 建立附屬組件時要使用之 *AL.exe* 雜湊演算法的 ID。 |
 | Satellite_BaseAddress | 使用 `CreateSatelliteAssemblies` 目標建置文化特性特有的附屬組件時，要使用的基底位址。 |
@@ -117,6 +114,9 @@ ms.locfileid: "77027634"
 | Satellite_Version | 指定附屬組件的版本資訊。 |
 | Satellite_Win32Icon | 將 *.ico* 圖示檔插入附屬組件。 |
 | Satellite_Win32Resource | 將 Win32 資源 ( *.res* 檔案) 插入附屬組件。 |
+| SGenToolPath | 選擇性的工具路徑，指出目前版本的 *SGen.exe* 遭到覆寫時，取得 *SGen.exe* 的位置。 這個屬性僅適用於 .NET Framework。|
+| SGenUseProxyTypes | 布林值，指出是否要由 *SGen.exe* 產生 Proxy 類型。 這只適用於 *GenerateSerializationAssemblies* 設定為開啟時，且只適用於 .NET Framework。<br /><br /> SGen 目標會使用這個屬性設定 UseProxyTypes 旗標。 這個屬性預設為 true，而且沒有 UI 可用來變更這個屬性。 若要產生非 WebService 類型的序列化組件，請先將這個屬性新增至專案檔並將它設定為 false，再匯入 *Microsoft.Common.Targets* 或 *C#/VB.targets*。 |
+| StartupObject | 指定包含 Main 方法或 Sub Main 程序的類別或模組。 這個屬性相當於 `/main` 編譯器參數。 |
 | SubsystemVersion | 指定所產生的可執行檔能夠使用的最低子系統版本。 這個屬性相當於 `/subsystemversion` 編譯器參數。 如需這個屬性之預設值的資訊，請參閱 [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) 或 [/subsystemversion (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option)。 |
 | TargetCompactFramework | 執行您建置之應用程式所需的 .NET Compact Framework 版本。 指定這個屬性可讓您參考無法以其他方式參考的某些 Framework 組件。 |
 | TargetFrameworkVersion | 執行您正在建置之應用程式所需的 .NET Framework 版本。 指定這個屬性可讓您參考無法以其他方式參考的某些 Framework 組件。 |
