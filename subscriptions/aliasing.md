@@ -3,15 +3,15 @@ title: 登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗 | M
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 02/14/2020
 ms.topic: conceptual
 description: 登入可能會因為使用別名或易記名稱而失敗
-ms.openlocfilehash: 392b86699b1116f45ca75df3b611fff6a2aebc62
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: dff48852e566522ad01ee07bd46cda72b8e1e249
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378032"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77276629"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗
 視用於登入的帳戶類型而定，當登入 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 時，可用的訂用帳戶可能無法正確顯示。 其中一個可能的原因是使用「別名」或「易記名稱」，而非使用訂用帳戶指派目標的登入身分識別。 這稱為「別名處理」。
@@ -19,131 +19,94 @@ ms.locfileid: "68378032"
 ## <a name="what-is-aliasing"></a>別名處理是什麼？
 「別名處理」一詞指的是使用不同身分識別來登入 Windows (或您的 Active Directory) 並存取電子郵件的使用者。
 
-當公司使用 Microsoft Online Service 作為其目錄登入使用 (例如 JohnD@contoso.com)，但使用者以別名或易記名稱存取其電子郵件帳戶 (例如 John.Doe@contoso.com) 時，就會發生別名處理。 針對透過大量授權服務中心 (VLSC) 管理其訂用帳戶的客戶，這會導致不成功的登入體驗，因為提供的電子郵件地址 ('John.Doe@contoso.com') 不符合成功透過 [公司或學校帳戶] 選項驗證所需的目錄地址 ('JohnD@contoso.com')。
+當公司使用 Microsoft Online Service 作為其目錄登入使用 (例如 olivia@contoso.com)，但使用者以別名或易記名稱存取其電子郵件帳戶 (例如 OliviaG@contoso.com) 時，就會發生別名處理。 請確定您的使用者使用「登入電子郵件地址」進行登入，如 Visual Studio 訂用帳戶管理入口網站中所列的 https://manage.visualstudio.com 存取其訂閱
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>身為系統管理員，我有哪些選項？
-身為系統管理員，[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 上有兩個選項可確保您的訂閱者可獲得成功的登入體驗。
-- 第一個選項 (建議使用) 是利用目錄帳戶作為大量授權服務中心 (VLSC) 中的已指派地址。 如需詳細資訊，請參閱此文章中的[將訂閱者指派到目錄帳戶](#assigning-subscribers-to-a-directory-account)一節。
-- 第二個選項 (較不安全) 是允許您的訂閱者將其「公司或學校」電子郵件地址與「個人」帳戶 (亦即 Microsoft 帳戶或 MSA) 建立關聯。 如需詳細資料，請參閱本文中的[將工作或學校帳戶定義為個人帳戶](#defining-a-work-or-school-account-as-a-personal-account)一節。
 
-> [!NOTE]
-> 一旦您的公司移轉到新 Visual Studio 訂用帳戶[系統管理入口網站](https://manage.visualstudio.com)，您將可以獲得新系統管理體驗的優點，此體驗允許使用者提供目錄與電子郵件地址作為訂閱者設定檔的一部分。 深入了解[移轉](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details)。
+視訂閱者的帳戶類型而定，尋找下列適用的解決方案：
 
-## <a name="assigning-subscribers-to-a-directory-account"></a>將訂閱者指派到目錄帳戶
-在所有案例中，大量授權服務中心 (VLSC) 中的訂閱管理員都必須使用新訂閱者的目錄地址，或更新「現有」訂閱者的電子郵件地址。 請務必了解使用目錄地址表示任何新的訂閱者都不會收到歡迎電子郵件，系統管理員將必須通知訂閱者訂閱已被指派給他們。 依照下面的步驟執行之後，您也可以使用電子郵件[範本](#notifying-your-subscribers-with-directory-addresses)來通知您的訂閱者，並協助他們完成登入程序。
+### <a name="work-or-school-account-upn-mismatch-issue"></a>工作或學校帳戶 UPN 不相符的問題
 
-### <a name="adding-new-subscribers"></a>加入新的訂閱者
-請依照這些步驟使用目錄帳戶新增訂閱者。
+當公司具有使用中的 Diretory 設定，其中 UPN 與主要 SMTP 位址不相同時，就可能會發生使用者主體名稱（UPN）不符的情況。 
 
-1. 瀏覽[大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) 並登入。
-2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]  ，然後按一下 [Visual Studio 訂用帳戶]  。
+#### <a name="how-to-detect-if-a-users-sign-in-address-has-a-upn-mismatch"></a>如何偵測使用者的登入位址是否有 UPN 不符
 
-    > [!div class="mx-imgBorder"]
-    > ![[訂閱] 功能表](_img//vlsc/vlsc-subscriptions.png)
+讓使用者完成下列步驟：
 
-3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]  。
+1. 使用其訂用帳戶指派電子郵件中所述的登入位址，登入 https://my.visualstudio.com。  
 
-    > [!div class="mx-imgBorder"]
-    > ![選取合約](_img/vlsc/vlsc-agreement.png)
+    > [!NOTE]
+    > 如果他們沒有訂用帳戶指派電子郵件，您可以從公司入口網站中將其重新傳送給他們。  
 
-4. 按一下 [指派訂用帳戶]  。
-5. 選取想要的 [訂用帳戶層級]  。
-6. 驗證您有可指派的訂用帳戶，然後按一下 [下一步]  。
-7. 輸入訂閱者詳細資料並在 [電子郵件地址] 中輸入目錄地址，然後按一下 [下一步]  。
-8. 驗證訂閱者資訊，然後按一下 [完成]  。
-9. 使用下面的[範本](#notifying-your-subscribers-with-directory-addresses)通知訂閱者其訂用帳戶已佈建。
+2. 按一下 [訂閱] 索引標籤。
+3. 確認顯示在右上方的電子郵件地址指出「您的登入身分 ...」與其訂用帳戶指派電子郵件中的登入電子郵件地址相同。  如果沒有，則無法存取其訂閱權益。 
 
-### <a name="updating-an-existing-subscriber"></a>更新現有的訂閱者
-請依照下面的步驟使用目錄帳戶更新現有的訂閱者。
+   > [!div class="mx-imgBorder"]
+   > ![訂閱 頁面](_img/aliasing/aliasing-subscriptions-page.png)
 
-1. 瀏覽[大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) 並登入。
-2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]  ，然後按一下 [Visual Studio 訂用帳戶]  。
-3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]  。
-4. 按一下 [搜尋] 列上的向下箭號  。
-5. 使用 [電子郵件地址] 欄位搜尋訂閱者。
-6. 從結果清中，按一下 [訂閱者] 上的 [姓氏]  。
-7. 按一下 [編輯]  。
-8. 將 [電子郵件地址] 欄位變更為想要的目錄地址，然後按一下 [儲存]  。
-9. 使用下面的電子郵件範本通知訂閱者其訂用帳戶已佈建。
+#### <a name="how-to-correct-the-upn-mismatch"></a>如何修正 UPN 不相符的問題
 
-### <a name="notifying-your-subscribers-with-directory-addresses"></a>使用目錄地址通知您的訂閱者
-因為歡迎電子郵件將無法成功地傳送給您的訂閱者，請將下面的訊息複製並貼上到電子郵件中並傳送給您的訂閱者。 針對每個訂閱者，將 %WORD% 取代為適當的資訊。
+1. 存取 Visual Studio 系統管理管理入口網站，網址為 https://manage.visualstudio.com 
 
-```
------------ Copy Below (Ctrl+C) -----------
+2. 找出具有 UPN 不符問題的使用者。  如果您有許多訂用帳戶，[篩選](search-license.md)功能可以讓您更輕鬆。 
 
-Hello %SUBSCRIBER NAME%
+3. 將登入電子郵件地址變更為使用者的 UPN。
 
-You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
+4. 儲存變更 
 
-If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
+5. 要求使用者登出訂閱者入口網站，並使用 UPN 重新登入。   
 
-At the bottom of the page, select the following:
-   - Accounts, Subscriptions, and Billing Support
-   - From Issue, choose Subscription sign in support
-   - Choose the appropriate Country
-   - Select the desired Assisted Support option
+### <a name="personal-account-aliasing-issue"></a>個人帳號別名問題
 
------------ End Copy -----------
-```
+別名問題也會影響個人帳戶。 
 
-## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>將公司或學校帳戶定義為個人帳戶
-請依照[將訂閱者指派到目錄帳戶](#assigning-subscribers-to-a-directory-account)一節中所述的步驟在大量授權服務中心 (VLSC) 中新增使用者或更新現有使用者的電子郵件地址。  在目錄無法識別電子郵件地址的情況下，使用者將必須逐步執行步驟以建立新的帳戶，以將新的電子郵件地址定義為個人帳戶。  Visual Studio 訂用帳戶小組從下面定義的身分識別原則建立了短期豁免，但我們正在研究移除此原則的必要功能。
+#### <a name="how-to-detect-if-a-personal-account-has-an-aliasing-issue"></a>如何偵測個人帳戶是否有別名問題
 
-> [!WARNING]
-> Microsoft 建議您不要將「公司或學校」身分識別與「個人」身分識別結合。  此動作會使得組織失去帳戶擁有權與控制能力，而且即使員工離開公司，仍可存取特定產品或服務。  
+1. 登入 https://my.visualstudio.com。
 
-### <a name="defining-an-email-address-as-a-personal-account"></a>將電子郵件地址定義為個人帳戶
-在訂用帳戶指派給訂閱者之後，他們將會收到要求其瀏覽 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 以發揮其訂用帳戶優點的電子郵件。  當嘗試登入時，Visual Studio 訂用帳戶登入會失敗，並傳回說明無法識別帳戶的錯誤。  請要求您的訂閱者先遵循這些指示執行，再登入 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。  如果有需要，您可以在指派訂閱之後使用此[範本](#notifying-your-subscribers-using-personal-accounts)來通知您的訂閱者。
+2. 按一下 [**訂閱**] 索引標籤，並檢查您已登入的位址。 
 
-1. 瀏覽 https://my.visualstudio.com ，然後按一下 [建立新的 Microsoft 帳戶]  。
+3. 如果登入的電子郵件地址與用來存取網站的電子郵件地址不同，則您的帳戶與別名之間會發生衝突。 
 
-2. 完成欄位：
-   - 在 Someone@example.com 方塊中輸入收到歡迎電子郵件的電子郵件地址
-   - 建立您的密碼
-   - 選擇您的推廣設定
-   - 按一下 [下一步] 
+#### <a name="how-to-fix-a-personal-account-aliasing-issue"></a>如何修正個人帳號別名問題
 
-3. 完成驗證步驟並按一下 [下一步]  。
+Visual Studio 訂用帳戶平臺會將主要別名的優先順序設為 [顯示訂閱詳細資料]。  若要解決此問題，您必須使用不同的電子郵件別名做為登入的主要別名。 
 
-4. 新使用者可能需要完成 Visual Studio 設定檔。
+1. 移至 [[管理您登入 Microsoft 的方式](https://go.microsoft.com/fwlink/p/?linkid=842796)]。
+2. 若出現提示，請登入您的 Microsoft 帳戶。 
+3. 在 [帳號別名] 底下，選取用來指派訂閱的電子郵件地址旁的 [**設為主要**]。 
+4. 在 [帳號別名] 底下，選取用來指派訂閱的電子郵件地址旁的 [設為主要]。 
+5. 登出 Visual Studio 訂閱者入口網站（ https://my.visualstudio.com) 
+6. 使用新的主要別名再次存取入口網站。 
 
-5. 訂用帳戶與權益現在應該可見。
+### <a name="ensure-a-successful-experience-for-your-users"></a>確保您的使用者體驗成功
 
-### <a name="notifying-your-subscribers-using-personal-accounts"></a>使用個人帳戶通知您的訂閱者
-在上面所述的案例中，您的訂閱者將會收到「歡迎電子郵件」，但由於別名處理，他們可能會發現他們無法登入。  您可以使用下面的文字來通知您的訂閱者上述步驟，並視需要建議支援選項。  針對每個訂閱者，將 %WORD% 取代為適當的資訊。
+身為系統管理員，有兩個選項可確保您的訂閱者在 https://my.visualstudio.com上具有成功的登入體驗。 
 
-```
------------ Copy Below (Ctrl+C) -----------
+- 第一個選項（建議）是利用目錄帳戶作為 https://manage.visualstudio.com上的登入位址。
+- 第二個選項較不安全，第二個選項（較不安全）是允許您的訂閱者使用不同的電子郵件地址來登入，而不是其目錄電子郵件地址。
 
-Hello %SUBSCRIBER NAME%
+在系統管理員入口網站中完成下列步驟，即可設定這兩個選項：
 
-You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
-1. Visit https://my.visualstudio.com
+1. 登入 https://manage.visualstudio.com 
 
-2. Click Create new Microsoft Account on the right hand side
+2. 如果您要改變單一使用者，請在資料表中選取該使用者，並以滑鼠右鍵按一下以編輯。 這會開啟一個面板，您可以在其中修改登入電子郵件地址。  
 
-3. Complete the Form:
-   - Use your corporate email address in the someone@example.com box
-   - Enter a password
-   - Select your promotional preference
-   - Click Next
+3. 在 [登入電子郵件地址] 欄位中進行必要的更新。 
 
-4. Complete the account validation steps
+4. 按一下 [儲存]，變更就會生效。  
+如果您需要對大量的使用者進行這些變更，您可以利用大量編輯功能。 如需該程式的詳細資訊，請參閱我們的 [編輯訂閱]] （編輯-license.md）一文中的「**使用大量編輯來編輯多個訂閱者**」一節。  
 
-5. If necessary, complete the Visual Studio profile
+## <a name="next-steps"></a>後續步驟
+深入瞭解如何管理 Visual Studio 訂閱。
+- [指派個別訂閱](assign-license.md)
+- [指派多個訂用帳戶](assign-license-bulk.md)
+- [編輯訂用帳戶](edit-license.md)
+- [刪除訂用帳戶](delete-license.md)
+- [判斷最大使用量](maximum-usage.md)
 
-6. You should now see your benefits
-
-Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
-
-If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
-
-At the bottom of the page, select the following:
-   - Accounts, Subscriptions, and Billing Support
-   - From Issue, choose Subscription sign in support
-   - Choose the appropriate Country
-   - Select the desired Assisted Support option
-
------------ End Copy -----------
-```
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 檔](/visualstudio/)
+- [Azure DevOps 檔](/azure/devops/)
+- [Azure 文件](/azure/)
+- [Microsoft 365 檔](/microsoft-365/)

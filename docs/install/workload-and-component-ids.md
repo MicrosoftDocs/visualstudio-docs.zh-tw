@@ -6,7 +6,7 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/23/2019
+ms.date: 12/03/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 05a5a1cb55356dbdd0d0d0127793abbd2e73e109
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: f53d43b841719b974d0b943eacb08ab738a5b506
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114161"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278658"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 工作負載與元件識別碼
 
@@ -31,7 +31,7 @@ ms.locfileid: "76114161"
 
 **已針對 [15.9 版](/visualstudio/releasenotes/vs2017-relnotes/)更新**
 
-| **版本** | **ID** | **描述** |
+| **版本(Edition)** | **識別碼** | **說明** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft.VisualStudio.Product.Enterprise | 適用於任何規模之小組間的生產力和協調的 Microsoft DevOps 方案 |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft.VisualStudio.Product.Professional | 適用於小型小組的專業開發人員工具和服務 |
@@ -50,9 +50,9 @@ ms.locfileid: "76114161"
 
 ::: moniker range="vs-2019"
 
-**已針對[16.3 版本](/visualstudio/releases/2019/release-notes/)更新**
+**已針對[16.4 版本](/visualstudio/releases/2019/release-notes/)更新**
 
-| **版本** | **ID** | **描述** |
+| **版本(Edition)** | **識別碼** | **說明** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2019](workload-component-id-vs-enterprise.md?vs-2019) | Microsoft.VisualStudio.Product.Enterprise | 適用於任何規模之小組間的生產力和協調的 Microsoft DevOps 方案 |
 | [Visual&nbsp;Studio Professional&nbsp;2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft.VisualStudio.Product.Professional | 適用於小型小組的專業開發人員工具和服務 |
@@ -71,7 +71,7 @@ ms.locfileid: "76114161"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 的 Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

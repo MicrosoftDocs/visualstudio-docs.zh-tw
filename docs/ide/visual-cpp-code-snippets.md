@@ -2,19 +2,19 @@
 title: Visual C++ 程式碼片段
 ms.date: 11/04/2016
 ms.topic: reference
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c1bcef00116e0c5f09099344926d924113e5982
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461629"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277838"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 程式碼片段
 
@@ -26,13 +26,13 @@ ms.locfileid: "68461629"
 
 若要插入程式碼片段，請開啟 C++ 程式碼檔案 ( *.cpp* 或 *.h*)，在該檔案內部任意處按一下，然後執行下列其中一項動作：
 
-- 按一下滑鼠右鍵以取得操作功能表，然後選取 [插入程式碼片段] 
+- 按一下滑鼠右鍵以取得操作功能表，然後選取 [插入程式碼片段]
 
-- 在 [編輯/IntelliSense]  功能表中，選取 [插入程式碼片段] 
+- 在 [編輯/IntelliSense] 功能表中，選取 [插入程式碼片段]
 
 - 使用快速鍵：**Ctrl**+**K**+**X**
 
-您應該會看到開頭為 **#if** 的選擇清單。 當您選取 [#if]  時，應該會看到下列程式碼已新增至檔案：
+您應該會看到開頭為 **#if** 的選擇清單。 當您選取 [#if] 時，應該會看到下列程式碼已新增至檔案：
 
 ```cpp
 #if 0
@@ -46,13 +46,13 @@ ms.locfileid: "68461629"
 
 若要使用程式碼片段來圍繞已選取的程式碼，請選取其中一行 (或多行)，然後執行下列其中一項動作：
 
-- 按一下滑鼠右鍵以取得操作功能表，然後選取 [範圍陳述式] 
+- 按一下滑鼠右鍵以取得操作功能表，然後選取 [範圍陳述式]
 
-- 在 [編輯]   > [IntelliSense]  功能表中，選取 [範圍陳述式] 
+- 在 [編輯] > [IntelliSense] 功能表中，選取 [範圍陳述式]
 
 - 從鍵盤按：**Ctrl**+**K**+**S**
 
-選取 [#if]  。 您應該會看到類似下面的內容：
+選取 [#if]。 您應該會看到如下的結果：
 
 ```cpp
 #if 0
@@ -64,7 +64,7 @@ ms.locfileid: "68461629"
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>可以找到 C++ 程式碼片段完整清單的位置
 
-移至 [工具]  功能表上的 [程式碼片段管理員]  ，並將 [語言]  設定為 [Visual C++]  ，即可找到 C++ 程式碼片段的完整清單。 在下面的視窗中，展開 [Visual C++]  。 您應該會看到所有的 C++ 程式碼片段依照字母順序排列的名稱。
+移至 [工具] 功能表上的 [程式碼片段管理員]，並將 [語言] 設定為 [Visual C++]，即可找到 C++ 程式碼片段的完整清單。 在下面的視窗中，展開 [Visual C++]。 您應該會看到所有的 C++ 程式碼片段依照字母順序排列的名稱。
 
 大部分程式碼片段的名稱都一目了然，但某些名稱可能會造成混淆。
 

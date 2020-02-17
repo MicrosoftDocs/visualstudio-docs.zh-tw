@@ -6,17 +6,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75f36d66ea46e7a0474c3b76ae000f745337fc45
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461376"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278708"
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
 
@@ -24,11 +24,11 @@ ms.locfileid: "68461376"
 
 ::: moniker range="vs-2017"
 
-本文描述 Visual Studio 2017 中的選項。 針對 Visual Studio 2015，請在目錄上方的選取器中選取 [2015]  。
+本文描述 Visual Studio 2017 中的選項。 針對 Visual Studio 2015，請在目錄上方的選取器中選取 [2015]。
 
 ::: moniker-end
 
-若要存取本屬性頁面，請按 **Control**+**Q** 以啟動搜尋方塊，然後鍵入 **experimental**。 鍵入前幾個字母之後，搜尋就會找到頁面。 您也可以選擇 [工具]   > [選項]  ，並依序展開 [文字編輯器]  和 [C/C++]  ，然後選擇 [實驗性]  ，即可到達頁面。
+若要存取本屬性頁面，請按 **Control**+**Q** 以啟動搜尋方塊，然後鍵入 **experimental**。 鍵入前幾個字母之後，搜尋就會找到頁面。 您也可以選擇 [工具] > [選項]，並依序展開 [文字編輯器] 和 [C/C++]，然後選擇 [實驗性]，即可到達頁面。
 
 這些功能可在 Visual Studio 安裝中使用。
 
@@ -61,10 +61,10 @@ ms.locfileid: "68461376"
 
 - **線上說明** - 在線上說明中搜尋錯誤訊息
 
-- 等等...
+- 等等
 
 ## <a name="see-also"></a>另請參閱
 
 - [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refactoring in C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
-) (在 C++ 中重構 (VC 部落格))
+- [在 C++ 中重構 (VC 部落格)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
+)

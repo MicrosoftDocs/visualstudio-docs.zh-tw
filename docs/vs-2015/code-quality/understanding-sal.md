@@ -6,15 +6,15 @@ ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 1c0129c6832c347e989b482acb2cf6ab9b80e60d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848458"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278449"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>SAL 基本概念  
  SAL 定義四種基本類型的參數，依使用模式分類。  
   
-|分類|參數注釋|描述|  
+|類別|參數注釋|描述|  
 |--------------|--------------------------|-----------------|  
 |**輸入至呼叫的函式**|`_In_`|資料會傳遞至所呼叫的函式，並被視為唯讀。|  
 |**輸入至所呼叫的函式，並輸出至呼叫端**|`_Inout_`|可用的資料會傳遞至函式中，而且可能會遭到修改。|  
@@ -108,7 +108,7 @@ wchar_t * wmemcpy(
  本節顯示基本 SAL 注釋的程式碼範例。  
   
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>使用 Visual Studio Code 分析工具來尋找瑕疵  
- 在範例中，Visual Studio Code 分析工具會與 SAL 注釋一起使用，以找出程式碼缺失。 方法如下所示。  
+ 在範例中，Visual Studio Code 分析工具會與 SAL 注釋一起使用，以找出程式碼缺失。 以下是如何執行此動作的方法。  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>若要使用 Visual Studio 程式碼分析工具和 SAL  
   
@@ -411,7 +411,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
 ## <a name="related-resources"></a>相關資源  
  [程式碼分析小組 Blog](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 SAL 注釋減少 C/C++程式碼](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)缺失   
  [標注函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
  [批註](../code-quality/annotating-function-behavior.md)函式行為   

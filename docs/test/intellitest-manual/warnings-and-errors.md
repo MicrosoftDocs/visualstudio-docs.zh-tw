@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76112524"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275446"
 ---
 # <a name="warnings-and-errors"></a>警告和錯誤
 
@@ -32,7 +32,7 @@ ms.locfileid: "76112524"
 * **限制式求解**
   * [無法將解決方案實體化](#cannot-concretize-solution)
 
-* **網域**
+* **網域或執行時間**
   * [需要協助以建構物件](#help-construct)
   * [需要協助以尋找類型](#help-types)
   * [猜到可使用的類型](#usable-type-guessed)
@@ -254,7 +254,7 @@ IntelliTest 會為所有 .NET 類型[產生測試輸入](input-generation.md)。
 
 IntelliTest 會為所有 .NET 類型[產生測試輸入](input-generation.md)。 當類型為抽象或介面時，IntelliTest 必須選擇該類型的特定實作。 它需要知道有哪些類型，才能進行這種選擇。
 
-當此警告出現時，會指出 IntelliTest 曾查看過一些參考用組件，並找到實作類型，但不確定它是否應該使用該類型，或其他位置是否有更多可用的合適類型。 IntelliTest 只要選擇有希望的類型即可。
+顯示此警告時，表示 IntelliTest 已查看某些參考的元件並找到實作為類型，但不確定它是否應該使用該類型，或是否有更適當的類型可供其他地方使用。 IntelliTest 只要選擇有希望的類型即可。
 
 為避免此警告，您可以接受 IntelliTest 選擇的類型，或新增對應的 [PexUseType](attribute-glossary.md#pexusetype)，協助 IntelliTest 使用其他類型。
 
@@ -303,7 +303,7 @@ IntelliTest 透過監視程式執行[產生測試輸入](input-generation.md)。
 <a name="limitation"></a>
 ## <a name="limitation"></a>限制
 
-IntelliTest 使用[限制式求解](input-generation.md#constraint-solver)[產生測試輸入](input-generation.md)。
+IntelliTest 使用[限制式求解](input-generation.md)[產生測試輸入](input-generation.md#constraint-solver)。
 不過，有些作業超出[限制式求解](input-generation.md#constraint-solver)的範圍。
 目前包括：
 
@@ -342,6 +342,6 @@ IntelliTest 不知道未經檢測的中繼方法做了什麼，因此它可能�
 
 <a name="report-bug"></a>
 
-## <a name="got-feedback"></a>有任何意見反應嗎？
+## <a name="got-feedback"></a>有人給您意見嗎？
 
 在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。

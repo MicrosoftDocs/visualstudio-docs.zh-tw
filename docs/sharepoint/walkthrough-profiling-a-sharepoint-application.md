@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189132"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277645"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>逐步解說：分析 SharePoint 應用程式
   本逐步解說將示範如何使用 Visual Studio 中的程式碼剖析工具最佳化 SharePoint 應用程式的效能。 範例應用程式是 SharePoint 功能事件接收器，內含的閒置迴圈會降低功能事件接收器的效能。 Visual Studio 分析工具可讓您找出並排除專案中成本最高（執行緩慢）的部分，也稱為「最忙碌*路徑*」。
 
  本逐步解說將示範下列工作：
 
-- [Addg 功能和功能事件接收器](#add-a-feature-and-feature-event-receiver)。
+- [新增功能和功能事件接收器](#add-a-feature-and-feature-event-receiver)。
 
 - [設定和部署 SharePoint 應用程式](#configure-and-deploy-the-sharepoint-application)。
 
@@ -38,18 +38,18 @@ ms.locfileid: "73189132"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prerequisites
- 您需要下列元件才能完成此逐步解說：
+ 您需要下列元件才能完成這個逐步解說：
 
 - 支援的 Microsoft Windows 和 SharePoint 版本。
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]第 1 課：建立 Windows Azure 儲存體物件{2}。
 
 ## <a name="create-a-sharepoint-project"></a>建立 SharePoint 專案
  首先，建立 SharePoint 專案。
 
 ### <a name="to-create-a-sharepoint-project"></a>若要建立 SharePoint 專案
 
-1. 在功能表列上 **，選擇 [** 檔案]  >  [**新增** > **專案**]，以顯示 [**新增專案**] 對話方塊。
+1. 在功能表列上 **，選擇 [** 檔案] > [**新增** > **專案**]，以顯示 [**新增專案**] 對話方塊。
 
 2. 展開 [**視覺效果C#**  ] 或 [ **Visual Basic**] 底下的 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
@@ -65,7 +65,7 @@ ms.locfileid: "73189132"
 
     目前您只能分析陣列方案。 如需沙箱化方案與伺服器陣列方案的詳細資訊，請參閱[沙箱化方案考慮](../sharepoint/sandboxed-solution-considerations.md)。
 
-7. 選擇 [**完成]** 按鈕。 專案會出現在**方案總管**中。
+7. 選擇 [完成] 按鈕。 專案會出現在**方案總管**中。
 
 ## <a name="add-a-feature-and-feature-event-receiver"></a>新增功能和功能事件接收器
  接下來，在專案中加入功能與功能的事件接收器。 這個事件接收器會包含要分析的程式碼。
@@ -272,8 +272,7 @@ ms.locfileid: "73189132"
 
      現在功能啟動的速度應該加快許多，因為已消除呼叫閒置迴圈。 樣本分析報告應該會反映這種情況。
 
-## <a name="see-also"></a>請參閱
-- [效能總管](../profiling/performance-explorer.md)
+## <a name="see-also"></a>另請參閱
 - [效能工作階段概觀](../profiling/performance-session-overview.md)
 - [效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)
 - [使用 Visual Studio Profiler 尋找應用程式瓶頸](https://msdn.microsoft.com/magazine/cc337887.aspx)

@@ -1,5 +1,5 @@
 ---
-title: 進階、C/C++、文字編輯器、選項
+title: 選項、文字編輯器、C/C++、進階
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,19 +9,19 @@ f1_keywords:
 helpviewer_keywords:
 - Text Editor Options dialog box, advanced
 ms.assetid: 67c82ae5-fddd-49df-baec-8e7498b156f3
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbdbadd93eec07c43aba99e40072cb6173e0e83d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e7e031836c9762d9666a5624e78ecc7c8cc7dd9
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747836"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275208"
 ---
-# <a name="options-text-editor-cc-advanced"></a>進階、C/C++、文字編輯器、選項
+# <a name="options-text-editor-cc-advanced"></a>選項、文字編輯器、C/C++、進階
 
 藉由變更這些選項，您可以變更進行 C 或 C++ 程式設計時之 IntelliSense 和瀏覽資料庫的相關行為。
 
@@ -52,7 +52,7 @@ ms.locfileid: "72747836"
 
 **停用隱含清除**
 
-程式碼瀏覽資料庫不會清除不再參考的隱含檔案。 此選項會防止從資料庫移除不再使用的隱含檔案。 例如，如果您將參考 mapi.h 的 `#include` 指示詞新增至其中一個原始程式檔，則會找到 mapi.h 並編製其索引。 如果您接著移除 #include，並且未在其他位置參考此檔案，則除非您選擇此選項，否則最後會移除其相關資訊。 (請參閱 [重新掃描方案間隔] 選項)。明確地重新掃描方案時，會忽略這個選項。
+程式碼瀏覽資料庫不會清除不再參考的隱含檔案。 此選項會防止從資料庫移除不再使用的隱含檔案。 例如，如果您將參考 mapi.h 的 `#include` 指示詞新增至其中一個原始程式檔，則會找到 mapi.h 並編製其索引。 如果您接著移除 #include，並且未在其他位置參考此檔案，則除非您選擇此選項，否則最後會移除其相關資訊。 （請參閱 [**重新掃描方案間隔**] 選項）。當您明確地重新掃描解決方案時，會忽略此選項。
 
 **停用外部相依性資料夾**
 
@@ -64,7 +64,7 @@ ms.locfileid: "72747836"
 
 **重新掃描方案間隔**
 
-以您指定的間隔排定 [立即重新掃描方案] 工作。 您必須指定 0 到 5000 分鐘。 預設值為 60 分鐘。 重新掃描方案時，會檢查檔案時間戳記，以判斷是否在 IDE 外部變更檔案。 (自動追蹤在 IDE 中進行的變更，並更新檔案)。會檢查隱含包含的檔案，以判斷是否仍然會參考它們。
+以您指定的間隔排定 [立即重新掃描方案] 工作。 您必須指定 0 到 5000 分鐘。 預設值為 60 分鐘。 重新掃描方案時，會檢查檔案時間戳記，以判斷是否在 IDE 外部變更檔案。 （系統會自動追蹤在 IDE 中所做的變更，並更新檔案）。系統會檢查隱含包含的檔案，以判斷它們是否仍然是參考的。
 
 ## <a name="diagnostic-logging"></a>診斷記錄
 
@@ -182,7 +182,7 @@ IntelliSense 更新會延遲到提出 IntelliSense 的實際要求時。 此延�
 
 當成員清單適用時，以 '->' 取代 '.'。
 
-## <a name="references"></a>reference
+## <a name="references"></a>參考
 
 **停用解析**
 

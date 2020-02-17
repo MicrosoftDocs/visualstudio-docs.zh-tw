@@ -1,6 +1,6 @@
 ---
 title: 開始使用單元測試
-ms.date: 04/01/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72ab0a6664740f2d772d79f9c77fddfbc12fb82f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596472"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279326"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -26,16 +26,18 @@ ms.locfileid: "75596472"
 
 1. 在 Visual Studio 中開啟您要測試的專案。
 
-   為了示範範例單元測試，此文章會測試一個簡單的 "Hello World" 專案。 此類專案的範例程式碼如下所示：
+   為了示範範例單元測試，本文會測試名為**helloworld**的簡單 "Hello World" 專案。 此類專案的範例程式碼如下所示：
 
    ```csharp
-   public class Program
-   {
-       public static void Main()
-       {
-           Console.WriteLine("Hello World!");
-       }
-   }
+   namespace HelloWorldCore
+
+      public class Program
+      {
+         public static void Main()
+         {
+            Console.WriteLine("Hello World!");
+         }
+      }
    ```
 
 1. 在 [方案總管] 中，選取解決方案節點。 然後，從頂端功能表列中，選取 [檔案] > [新增] > [新增專案]。
@@ -70,14 +72,48 @@ ms.locfileid: "75596472"
 
 1. 將程式碼新增至單元測試方法。
 
-   ![在 Visual Studio 中將程式碼新增至單元測試方法](media/vs-2019/unit-test-method.png)
+   例如，針對 MSTest 或 NUnit 測試專案，您可以使用下列程式碼。
+
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class UnitTest1
+      {
+         private const string Expected = "Hello World!";
+         [TestMethod]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
 
 > [!TIP]
 > 有關建立單元測試的詳細逐步解說，請參閱[針對受控碼建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
 
 ## <a name="run-unit-tests"></a>執行單元測試
 
-1. 從頂端功能表列中選擇 [測試] > [Windows] > [測試總管] 來開啟 [[測試總管]](../test/run-unit-tests-with-test-explorer.md)。
+1. 開啟 [[測試總管]](../test/run-unit-tests-with-test-explorer.md)。
+
+   ::: moniker range=">=vs-2019"
+   若要開啟 [測試] Explorer，**請從頂端**功能表列中選擇 [**測試**] > [測試]。
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   若要開啟 [測試] Explorer，請從頂端功能表列中選擇 [**測試**> **Windows** >**測試瀏覽器**]。
+   ::: moniker-end
 
 1. 按一下 [全部執行] 執行您的單元測試。
 
@@ -174,7 +210,7 @@ ms.locfileid: "75596472"
 
 6. 從 [測試總管] 執行測試，或在測試程式碼上按一下滑鼠右鍵，然後選擇 [執行測試]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [逐步解說：針對受控碼建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [建立單元測試命令](create-unit-tests-menu.md)
