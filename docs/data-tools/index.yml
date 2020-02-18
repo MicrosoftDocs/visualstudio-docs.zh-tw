@@ -1,0 +1,77 @@
+### YamlMime:Landing
+title: Visual Studio 資料工具文件
+summary: 使用 Visual Studio 和 .NET 工具來開發資料應用程式
+metadata:
+  title: 開發資料解決方案
+  description: 了解用來在 Visual Studio 中開發資料解決方案的不同工具，包括 .NET 工具、SQL Server Data Tools、Azure Data Lake、Azure HDInsight 與 Azure 串流分析。
+  ms.date: 01/01/2018
+  author: ghogen
+  ms.author: ghogen
+  ms.topic: landing-page
+  ms.workload:
+  - data-storage
+  ms.openlocfilehash: b7ac7cd7e968e4ea975e87ff5357be0d6e693f76
+  ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 02/15/2020
+  ms.locfileid: "77280732"
+landingContent:
+- title: .NET
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 適用於 .NET 的 Visual Studio Data Tools
+      url: visual-studio-data-tools-for-dotnet.md
+    - text: 資料集工具
+      url: dataset-tools-in-visual-studio.md
+    - text: Entity Framework 工具
+      url: entity-data-model-tools-in-visual-studio.md
+    - text: LINQ to SQL 工具
+      url: linq-to-sql-tools-in-visual-studio2.md
+    - text: WCF 和 WCF 資料服務 (OData) 工具
+      url: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
+  - linkListType: tutorial
+    links:
+    - text: ADO.NET 資料應用程式
+      url: create-a-simple-data-application-by-using-adonet.md
+    - text: WPF 和 Entity Framework 6
+      url: create-a-simple-data-application-with-wpf-and-entity-framework-6.md
+    - text: 多層式架構 (N-Tier) 資料應用程式
+      url: walkthrough-creating-an-n-tier-data-application.md
+    - text: 使用 WPF 和 Entity Framework 建立 WCF 資料服務
+      url: walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md
+  - linkListType: concept
+    links:
+    - text: ADO.NET
+      url: /dotnet/framework/data/adonet/index
+    - text: Entity Framework 6
+      url: /ef/ef6/
+    - text: Entity Framework Core
+      url: /ef/core/
+- title: 資料工具
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 在 Visual Studio 中使用資料
+      url: /visualstudio/data-tools/accessing-data-in-visual-studio
+    - text: 使用 SQL Server Data Tools
+      url: /sql/ssdt/sql-server-data-tools?view=sql-server-ver15
+    - text: C++ 中的資料存取
+      url: /cpp/data/data-access-in-cpp?view=vs-2019
+- title: Azure
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Azure SQL 資料庫
+      url: /azure/sql-database/sql-database-connect-query-dotnet-visual-studio
+    - text: Cosmos DB - .NET 主控台應用程式
+      url: /azure/cosmos-db/sql-api-get-started
+    - text: Cosmos DB - .NET Web 應用程式
+      url: /azure/cosmos-db/sql-api-dotnet-application
+    - text: Azure Data Lake Analytics
+      url: /azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
+    - text: HDInsight
+      url: /azure/hdinsight/hdinsight-hadoop-visual-studio-tools-get-started
+    - text: Azure 串流分析
+      url: /azure/stream-analytics/stream-analytics-tools-for-visual-studio

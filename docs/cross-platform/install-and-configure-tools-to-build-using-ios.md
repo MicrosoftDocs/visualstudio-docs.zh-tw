@@ -188,7 +188,7 @@ ms.locfileid: "77272277"
 
 為了安全性目的，使用遠端代理程式配對出的 Visual Studio 伺服器憑證會與 Mac 的 IP 或主機名稱相關。 如果上述值有所變更，您就必須產生新的伺服器憑證，然後重新使用新值來設定 Visual Studio。
 
-### <a name="to-generate-a-new-server-certificate"></a>若要產生新的伺服器憑證
+### <a name="to-generate-a-new-server-certificate"></a>產生新的伺服器憑證
 
 1. 停止 `vcremote` 代理程式。
 
