@@ -16,7 +16,7 @@
       href: quickstart-debug-with-managed.md
     - name: 對 C++ 應用程式進行偵錯
       href: quickstart-debug-with-cplusplus.md
-    - name: 對 ASP.NET 應用程式進行偵錯
+    - name: 偵錯 ASP.NET Core 應用程式
       href: quickstart-debug-aspnet.md
 - name: 教學課程
   items:
