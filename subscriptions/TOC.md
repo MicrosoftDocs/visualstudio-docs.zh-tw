@@ -27,7 +27,7 @@
 ### 工具
 #### [Azure DevTest 個人點數](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
-#### [Azure 隨用隨付](vs-azure-payg.md)
+#### [Azure DevTest 隨用隨付](vs-azure-payg.md)
 #### [CAST 醒目提示](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility + Security](vs-ems.md)
@@ -84,7 +84,7 @@
 ### [過度分派](handle-overclaimed-license.md)
 ### [使用量上限](maximum-usage.md)
 ### [過期的訂用帳戶](handle-expired-license.md)
-### [使用別名的訂閱者](aliasing.md)
+### [訂閱者登入案例](aliasing.md)
 ### [具有個人電子郵件登入的訂閱者](personal-email-sign-ins.md)
 ### [管理搭配 GitHub Enterprise 的 Visual Studio](assign-github.md)
 # 資源

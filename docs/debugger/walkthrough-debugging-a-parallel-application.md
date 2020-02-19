@@ -1,7 +1,7 @@
 ---
 title: 對平行應用程式進行 Debug |Microsoft Docs
 description: 使用 Visual Studio 中的 [平行工作] 和 [平行堆疊] 視窗進行調試
-ms.date: 03/22/2018
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9079fc17da9f89ceae61cbd7d4f086f1db133cf
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728602"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416421"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>逐步解說：在 Visual Studio （C#，Visual Basic， C++）中對平行應用程式進行調試
 
@@ -54,7 +54,7 @@ ms.locfileid: "72728602"
 ## <a name="c-sample"></a>C++ 範例
  如果您使用 C++ 範例，則可以忽略本主題中對於外部程式碼的引述。 外部程式碼只適用於 C# 範例。
 
-## <a name="illustrations"></a>插圖
+## <a name="illustrations"></a>圖解
  本主題中的插圖是在執行 C# 範例的四核心電腦上錄製。 雖然您可以使用其他組態來完成本逐步解說，但插圖可能與您電腦上所呈現的畫面不同。
 
 ## <a name="creating-the-sample-project"></a>建立範例專案
@@ -64,25 +64,37 @@ ms.locfileid: "72728602"
 
 1. 開啟 Visual Studio 並建立新專案。
 
-    ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 輸入**Ctrl + Q**開啟 [搜尋] 方塊，輸入**console** （或**c + +** ），選擇 [**範本**]，然後：
+   ::: moniker range=">=vs-2019"
 
-    - 針對C#或 Visual Basic，請選擇 [建立C#或 Visual Basic 的**新主控台應用程式（.NET Framework）專案**]。 在出現的對話方塊中，選擇 [建立]。
-    - 針對C++，選擇 [ C++**建立新的主控台應用程式專案**]。 在出現的對話方塊中，選擇 [建立]。
+   如果 [開始] 視窗未開啟，請**選擇 [** 檔案] > [**開始視窗]** 。
 
-    然後，輸入名稱或使用預設名稱，然後按一下 [**建立**]。
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [**新增專案**] 對話方塊的左窗格中，選擇下列專案：
+   在開始視窗中，選擇 [建立新專案]。
 
-    - 針對C#應用程式，請在 [**視覺效果C#** ] 底下選擇 [ **Windows 桌面**]，然後在中間窗格中選擇 [**主控台應用程式（.NET Framework）** ]。
-    - 針對 Visual Basic 應用程式，請在 [ **Visual Basic**] 下選擇 [ **Windows 桌面**]，然後在中間窗格中選擇 [**主控台應用程式（.NET Framework）** ]。
-    - 針對C++應用程式，請在 [**視覺效果C++** ] 底下選擇 [ **windows 桌面**]，然後選擇 [ **windows 主控台應用程式**]。
+   在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來， **C#** 從**C++** [語言] 清單中選擇、或**Visual Basic** ，然後從 [平臺] 清單中選擇 [ **Windows** ]。 
 
-    然後，輸入名稱或使用預設名稱，然後按一下 **[確定]** 。
-    ::: moniker-end
+   套用語言和平臺篩選器之後，請選擇 [**主控台應用程式（.net Core）** ]， C++或針對 [**主控台應用程式**範本]，然後選擇 [**下一步]** 。
 
-    如果您未看到 [主控台應用程式] 專案範本，請前往 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [NET 桌面開發] 或 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
+   > [!NOTE]
+   > 如果您看不到正確的範本，請移至 **工具** > **取得工具和功能 ...** ，這會開啟 Visual Studio 安裝程式。 選擇 [NET 桌面開發] 或 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
+
+   在 [**設定您的新專案**] 視窗的 [**專案名稱**] 方塊中，輸入名稱或使用預設名稱。 接著，選擇 [建立]。
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [**新增專案**] 對話方塊的左窗格中，選擇下列專案：
+
+   - 針對C#應用程式，請在 [**視覺效果C#** ] 底下選擇 [ **Windows 桌面**]，然後在中間窗格中選擇 [**主控台應用程式（.NET Framework）** ]。
+   - 針對 Visual Basic 應用程式，請在 [ **Visual Basic**] 下選擇 [ **Windows 桌面**]，然後在中間窗格中選擇 [**主控台應用程式（.NET Framework）** ]。
+   - 針對C++應用程式，請在 [**視覺效果C++** ] 底下選擇 [ **windows 桌面**]，然後選擇 [ **windows 主控台應用程式**]。
+
+   如果您看不到**主控台應用程式（.Net Core）** ，或C++**主控台應用程式**專案範本，請移至 **工具** > **取得工具和功能 ...** ，這會開啟 Visual Studio 安裝程式。 選擇 [NET 桌面開發] 或 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
+
+   然後，輸入名稱或使用預設名稱，然後按一下 **[確定]** 。
+
+   選取 [確定]。
+   ::: moniker-end
+
+   新的主控台專案隨即出現。 建立專案之後，就會出現原始程式檔。
 
 1. 在專案中開啟 .cpp、.cs 或 .vb 程式碼檔案。 刪除其內容，建立空白程式碼檔案。
 
@@ -92,14 +104,14 @@ ms.locfileid: "72728602"
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-1. 在 [檔案] 功能表上按一下 [全部儲存]。
+1. 按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。
 
 1. 在 [建置] 功能表上，按一下 [重建方案]。
 
     請注意，由於 `Debugger.Break` (C++ 範例中的 `DebugBreak`) 的呼叫有四個，因此，您不需要插入中斷點，只要執行應用程式就會在偵錯工具中斷最多四次。
 
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>使用平行堆疊視窗：執行緒檢視
- 按一下 [偵錯] 功能表上的 [開始偵錯]。 等待叫用第一個中斷點。
+ 在 **[偵錯]** 功能表上，按一下 **[開始偵錯]** 。 等待叫用第一個中斷點。
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>檢視單一執行緒的呼叫堆疊
 
@@ -244,7 +256,7 @@ ms.locfileid: "72728602"
 
      ![[工作] 視窗中的兩個等待工作](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     工作 4 又在等待指派給工作 2 的執行緒所擁有的監視器。 （以滑鼠右鍵按一下標題列，然後**選擇 [資料行]  >  [** **執行緒指派**]，以查看工作2的執行緒指派值）。
+     工作 4 又在等待指派給工作 2 的執行緒所擁有的監視器。 （以滑鼠右鍵按一下標題列，然後**選擇 [資料行] > [** **執行緒指派**]，以查看工作2的執行緒指派值）。
 
      ![工作視窗中的等候工作和工具提示](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 
@@ -308,10 +320,10 @@ ms.locfileid: "72728602"
 
      您可以凍結一項或多項工作的基礎執行緒，也可以凍結指派的執行緒除外的所有執行緒。 凍結的執行緒會在 [工作 **] 視窗**中以藍色的*暫停*圖示表示，就像在 [**執行緒**] 視窗中一樣。
 
-## <a name="summary"></a>總結
+## <a name="summary"></a>摘要
  本逐步解說示範 [平行工作] 和 [平行堆疊] 偵錯工具視窗。 請在使用多執行緒程式碼的實際專案上使用這些視窗。 您可以檢查以 C++、C# 或 Visual Basic 撰寫的平行程式碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [調試多執行緒應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

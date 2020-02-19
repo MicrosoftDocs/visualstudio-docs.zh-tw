@@ -1,7 +1,7 @@
 ---
 title: 適合完全初學者的程式碼偵錯
 description: 如果您是第一次偵錯，了解一些準則可協助您使用 Visual Studio 在偵錯模式中執行應用程式
-ms.date: 07/06/2018
+ms.date: 02/14/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f5cfe112aff36910ca4b4861d3a65cc7ea61655
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679377"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416390"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>完全初學者如何偵錯
 
@@ -31,7 +31,7 @@ ms.locfileid: "65679377"
 
 * 您預期的程式碼功能為何？
 
-* 相反地，發生了什麼情況？
+* 實際發生什麼情況？
 
     如果您在執行應用程式時遇到錯誤 (例外狀況)，可能是件好事！ 例外狀況是執行程式碼時所遇到的非預期事件，通常是某種錯誤。 偵錯工具可帶您前往程式碼中發生例外狀況的確切位置，並可協助您調查可能的修正。
 
@@ -54,7 +54,7 @@ ms.locfileid: "65679377"
 * 您是否知道程式碼的意圖？ 通常很難對其他人的程式碼進行偵錯。 如果這不是您的程式碼，您可能需要花時間了解程式碼的確切功能，才能有效地進行偵錯。
 
     > [!TIP]
-    > 撰寫程式碼時，請從少量且有效的程式碼開始 (良好的範例程式碼在這裡會很有用)！有時候，若要更輕鬆地修正一組大量或複雜的程式碼，請從示範所要達成核心工作的一小段程式碼開始。 然後，您可以累加地修改或新增程式碼，並在每個位置測試錯誤。
+    > 撰寫程式碼時，請從少量且有效的程式碼開始 （良好的範例程式碼在此很有説明。）有時候，從示範您嘗試達成之核心工作的一小段程式碼開始，可以更輕鬆地修正一組大型或複雜的程式碼。 然後，您可以累加地修改或新增程式碼，並在每個位置測試錯誤。
 
 藉由自我詢問假設，您可以縮短在程式碼中找出問題所需的時間。 您也可以縮短修正問題所需的時間。
 
@@ -64,7 +64,7 @@ ms.locfileid: "65679377"
 
 在偵錯工具 (也稱為「偵錯模式」) 中執行應用程式，表示偵錯工具會在程式執行時主動監視發生的所有情況。 它也可讓您在任何位置暫停應用程式以檢查其狀態，然後逐行執行程式碼，以監看發生的所有詳細資料。
 
-在 Visual Studio 中，您可以使用 **F5** (或是 [偵錯] > [開始偵錯] 功能表命令或 [開始偵錯] 按鈕![開始偵錯](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")) 進入偵錯模式。 如果發生任何例外狀況，Visual Studio 的例外狀況協助程式會帶您前往發生例外狀況的確切位置，並提供其他實用的資訊。 如需如何在程式碼中處理例外狀況的詳細資訊，請參閱[偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)。
+在 Visual Studio 中，您可以使用**F5** （或**Debug** > [**開始調試**程式] 功能表命令，或在偵錯工具列**中的 [** 開始調試] 按鈕![開始](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")偵測），進入 [偵測模式]。 如果發生任何例外狀況，Visual Studio 的例外狀況協助程式會帶您前往發生例外狀況的確切位置，並提供其他實用的資訊。 如需如何在程式碼中處理例外狀況的詳細資訊，請參閱[偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)。
 
 如果您未收到例外狀況，您可能知道要到程式碼中的何處尋找問題。 這是您搭配偵錯工具使用「中斷點」的位置，讓您有機會更仔細地檢查程式碼。 中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值、記憶體的行為，或程式碼執行的順序。
 
@@ -85,13 +85,13 @@ ms.locfileid: "65679377"
 1. 開啟 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    在開始視窗中，選擇 [建立新專案]。 在搜尋方塊中鍵入**主控台**，然後選擇 [主控台應用程式 (.NET Framework)] 或 [主控台應用程式 (.NET Core)]。 選擇 [下一步]。 鍵入例如 **ConsoleApp-FirstApp** 的專案名稱，然後按一下 [建立]。
+    在開始視窗中，選擇 [建立新專案]。 在搜尋方塊中鍵入**主控台**，然後選擇 [**主控台應用程式（.net Core）** ] 或 [**主控台應用程式（.NET Framework）** ]。 選擇 [下一步]。 鍵入例如 **ConsoleApp-FirstApp** 的專案名稱，然後按一下 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新專案] 對話方塊的左窗格中，於 [Visual C#] 下選擇 [主控台應用程式]，然後在中間的窗格中選擇 [主控台應用程式 (.NET Framework)] 或 [主控台應用程式 (.NET Core)]。 鍵入像 **ConsoleApp-FirstApp** 的名稱，並按一下 [確定]。
     ::: moniker-end
 
-    如未看到**主控台應用程式 (.NET Framework)** 或**主控台應用程式 (.NET Core)** 專案範本，請前往 [工具] > [取得工具與功能] 來開啟 Visual Studio 安裝程式。 選擇 [.NET 桌面開發] 工作負載或 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
+    如未看到**主控台應用程式 (.NET Framework)** 或**主控台應用程式 (.NET Core)** 專案範本，請前往 [工具] > [取得工具與功能] 來開啟 Visual Studio 安裝程式。 選擇 [ **.Net Core 跨平臺開發**] 或 [ **.net 桌面開發**] 工作負載，然後選擇 [**修改**]。
 
     Visual Studio 隨即建立主控台專案，並出現在右窗格的 [方案總管] 中。
 
@@ -182,7 +182,7 @@ ms.locfileid: "65679377"
 
 ### <a name="run-the-app"></a>執行應用程式
 
-1. 在程式碼編輯器上方的偵錯工具列中，按下 **F5** 鍵或 [開始偵錯] 按鈕 ![開始偵錯](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")。
+1. 在 [程式碼編輯器] 上方的 [偵錯工具] 工具列中，按**F5**或 [**開始**偵錯工具] 按鈕![開始進行調試](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")程式。
 
     應用程式隨即啟動，而且偵錯工具不會顯示任何例外狀況。 不過，您在主控台視窗中看到的輸出不符合預期。 以下是預期的輸出：
 
@@ -223,7 +223,7 @@ ms.locfileid: "65679377"
 
     由於我們在輸出中看到問題，因此我們將在偵錯工具中查看設定輸出的上述程式碼來開始偵錯。
 
-1. 按一下偵錯工具列中的 [重新啟動] ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp") 按鈕 (**Ctrl** + **Shift** + **F5**)。
+1. 按一下 [偵錯工具] 工具列中的 [**重新開機**![重新開機應用程式](../debugger/media/dbg-tour-restart.png "RestartApp")] 按鈕（**Ctrl** + **Shift** + **F5**）。
 
     應用程式會在您設定的中斷點處暫停。 黃色醒目提示指出偵錯工具的暫停位置 (黃色程式碼行尚未執行)。
 
@@ -243,7 +243,7 @@ ms.locfileid: "65679377"
 
     雖然我們使用 `GType` 類型物件 (具有 `MyGType` 屬性) 設定每個銀河，但偵錯工具不會將 `theGalaxy` 物件視為 `GType` 類型物件。 這是怎麼一回事？ 您想要仔細檢查設定銀河類型的任何程式碼。 當您這樣做時，您會看到 `GType` 類別確實具有 `MyGType` 屬性，但有些不對勁。 `object` 的相關錯誤訊息是條線索；對於語言解譯器，類型會顯示為 `object` 類型物件，而不是 `GType` 類型物件。
 
-1. 仔細檢查與設定銀河類型相關的程式碼，您會發現 `Galaxy` 類別的 `GalaxyType` 屬性已指定為 `object`，而不是 `GType`。
+1. 仔細檢查與設定銀河類型相關的程式碼，您會發現 `GalaxyType` 類別的 `Galaxy` 屬性已指定為 `object`，而不是 `GType`。
 
     ```csharp
     public object GalaxyType { get; set; }
@@ -255,7 +255,7 @@ ms.locfileid: "65679377"
     public GType GalaxyType { get; set; }
     ```
 
-1. 按一下偵錯工具列中的 [重新啟動] ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp") 按鈕 (**Ctrl** + **Shift** + **F5**) 以重新編譯程式碼並重新啟動。
+1. 按一下 [偵錯工具] 工具列中的 [**重新開機**![重新開機應用程式](../debugger/media/dbg-tour-restart.png "RestartApp")] 按鈕（**Ctrl** + **Shift** + **F5**）重新編譯程式碼並重新啟動。
 
     現在，當偵錯工具在 `Console.WriteLine` 上暫停時，您可以將滑鼠游標移至 `theGalaxy.GalaxyType.MyGType` 上方，並看到值已正確設定。
 
@@ -280,13 +280,13 @@ ms.locfileid: "65679377"
 
     此程式碼是設定銀河類型的位置，因此我們想要進一步查看。
 
-1. 按一下偵錯工具列中的 [重新啟動] ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp") 按鈕 (**Ctrl** + **Shift** + **F5**) 以重新啟動。
+1. 按一下 [偵錯工具] 工具列中的 [**重新**啟動![重新開機應用程式](../debugger/media/dbg-tour-restart.png "RestartApp")] 按鈕（**Ctrl** + **Shift** + **F5**）重新開機。
 
     偵錯工具會在您設定中斷點的程式碼行上暫停。
 
 1. 將滑鼠游標移至 `type` 變數上方。 您會看到 `S` 值 (後面接著字元碼)。 您對 `I` 值感興趣，因為您知道這是不規則的銀河類型。
 
-1. 按 **F5** 鍵，並再次將滑鼠游標移至 `type` 變數上方。 重複此步驟，直到您在 `type` 變數中看到 `I` 值。
+1. 按 **F5** 鍵，並再次將滑鼠游標移至 `type` 變數上方。 重複此步驟，直到您在 `I` 變數中看到 `type` 值。
 
     ![檢查變數](../debugger/media/beginners-inspecting-data.png)
 
@@ -294,7 +294,7 @@ ms.locfileid: "65679377"
 
     **F11** 鍵會將偵錯工具一次往前推進一個陳述式 (並執行程式碼)。 **F10** (**不進入函式**) 是類似的命令，這兩者對於了解如何使用偵錯工具都非常有用。
 
-1. 按 **F11** 鍵，直到停在 `switch` 陳述式中值為 'I' 的程式碼行。 在這裡，您會看到問題很明顯是由於錯字所造成。 您預期程式碼往前推進到 `MyGType` 設定為不規則銀河類型的位置，但偵錯工具卻完全略過此程式碼，並於 `switch` 陳述式的 `default` 區段上暫停。
+1. 按 **F11** 鍵，直到停在 `switch` 陳述式中值為 'I' 的程式碼行。 在這裡，您會看到問題很明顯是由於錯字所造成。 您預期程式碼往前推進到 `MyGType` 設定為不規則銀河類型的位置，但偵錯工具卻完全略過此程式碼，並於 `default` 陳述式的 `switch` 區段上暫停。
 
     ![尋找錯字](../debugger/media/beginners-typo.png)
 
@@ -308,7 +308,7 @@ ms.locfileid: "65679377"
 
     按任意鍵完成應用程式。
 
-## <a name="summary"></a>總結
+## <a name="summary"></a>摘要
 
 當您看到問題時，請使用偵錯工具和[步驟命令](../debugger/navigating-through-code-with-the-debugger.md) (例如 **F10** 和 **F11**)，以找出有問題的程式碼區域。
 

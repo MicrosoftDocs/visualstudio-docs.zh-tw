@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3acdaabffc35122616cced4113abbc5a43beb9a1
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 9340657704900feb5ebdc188103109872ee39f5d
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481967"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439114"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash 工作
 
-驗證檔案是否符合預期的檔案雜湊。
+驗證檔案是否符合預期的檔案雜湊。 如果雜湊不相符，工作就會失敗。
 
 這個工作已在 15.8 中新增，但是需要[因應措施](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272)以用於 16.0 以下的 MSBuild 版本。
 
@@ -59,6 +59,30 @@ ms.locfileid: "71481967"
                     Hash="$(ExpectedHash)" />
   </Target>
 </Project>
+```
+
+在 MSBuild 16.5 和更新版本中，如果您不想讓組建在雜湊不相符時失敗（例如，如果您使用雜湊比較當做控制流程的條件），您可以使用下列程式碼將警告降級為訊息：
+
+```xml
+  <PropertyGroup>
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);MSB3952</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+
+  <Target Name="DemoVerifyCheck">
+    <VerifyFileHash File="$(MSBuildThisFileFullPath)"
+                    Hash="1"
+                    ContinueOnError="WarnAndContinue" />
+
+    <PropertyGroup>
+      <HashMatched>$(MSBuildLastTaskResult)</HashMatched>
+    </PropertyGroup>
+
+    <Message Condition=" '$(HashMatched)' != 'true'"
+             Text="The hash didn't match" />
+
+    <Message Condition=" '$(HashMatched)' == 'true'"
+             Text="The hash did match" />
+  </Target>
 ```
 
 ## <a name="see-also"></a>另請參閱
