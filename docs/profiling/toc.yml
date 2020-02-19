@@ -10,7 +10,7 @@
       href: quickstart-cpu-usage-managed.md
     - name: 分析 CPU 使用量 (原生)
       href: quickstart-cpu-usage-native.md
-    - name: 分析 CPU 使用量 (ASP.NET)
+    - name: 分析 CPU 使用量 (ASP.NET Core)
       href: quickstart-cpu-usage-aspnet.md
 - name: 教學課程
   items:
