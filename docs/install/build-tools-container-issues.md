@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a43c5dd9bec88ca7e972b4d681bc25c47a86bf0d
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: a281113f75484940544e5cbd53292207114d21c0
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115206"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77453378"
 ---
 # <a name="known-issues-for-containers"></a>容器的已知問題
 
@@ -44,20 +44,24 @@ ms.locfileid: "76115206"
 
 ::: moniker range="vs-2017"
 
-* 您無法在 mcr.microsoft.com/windows/servercore:1809 (或更新版本) 上安裝 Visual Studio 2017 15.8 或更早版本 (任何產品)。 如需詳細資訊，請參閱 https://aka.ms/setup/containers/servercore1809 。
+* 您無法在 mcr.microsoft.com/windows/servercore:1809 (或更新版本) 上安裝 Visual Studio 2017 15.8 或更早版本 (任何產品)。 如需相關資訊，請參閱 https://aka.ms/setup/containers/servercore1809。
 
 ::: moniker-end
 
 ## <a name="build-tools-container"></a>建置工具容器
 
-當您使用建置工具容器時，可能會發生下列已知問題。 若要查看問題是否已獲得修正，或是否有其他已知問題，請瀏覽 https://developercommunity.visualstudio.com 。
+當您使用建置工具容器時，可能會發生下列已知問題。 若要查看問題是否已獲得修正，或是否有其他已知問題，請瀏覽 [https://developercommunity.visualstudio.com](https://developercommunity.visualstudio.com)。
 
 * 在[某些情況](https://github.com/Microsoft/vstest/issues/940)下，IntelliTrace 在容器內可能無法運作。
 * 在適用於 Windows 的 Docker 舊版上，預設容器映像大小只有 20 GB，因此無法容納「建置工具」。 依照[變更映像大小的指示](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits)增加到 127 GB 以上。
-
+若要確認磁碟空間的問題，請查看記錄檔以取得詳細資訊。 如果磁碟空間不足，您的 `vslogs\dd_setup_<timestamp>_errors.log` 檔案將包含下列內容： 
+```
+Pre-check verification: Visual Studio needs at least 91.99 GB of disk space. Try to free up space on C:\ or change your target drive.
+Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
+```
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [將建置工具安裝至容器](build-tools-container.md)
 * [容器的進階範例](advanced-build-tools-container.md)
