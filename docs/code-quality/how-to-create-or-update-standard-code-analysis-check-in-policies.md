@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11f64d2776b0d442d074c99c82287f1e7c482f1e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587533"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506501"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：建立或更新標準程式碼分析簽入原則
 
@@ -29,7 +29,7 @@ ms.locfileid: "75587533"
 
 - 針對 managed 程式碼，您可以藉由指定包含程式碼分析規則子集的*規則集*來設定簽入原則。
 
-- 針對 C/C++程式碼，在 Visual Studio 2017 15.6 版和更早版本中，簽入原則會要求執行所有程式碼分析規則。 您可以新增預處理器指示詞，以停用 Azure DevOps 專案中個別程式碼專案的特定規則。 在15.7 和更新版本中，您可以使用 **/analyze：規則集**來指定要執行的規則。 如需詳細資訊，請參閱[使用規則集指定C++要執行的規則](using-rule-sets-to-specify-the-cpp-rules-to-run.md)。
+- 針對 C/C++程式碼，在 Visual Studio 2017 15.6 版和更早版本中，簽入原則會要求執行所有程式碼分析規則。 您可以新增預處理器指示詞，以停用 Azure DevOps 專案中個別程式碼專案的特定規則。 在15.7 和更新版本中，您可以使用 **/analyze：規則集**來指定要執行的規則。 如需詳細資訊，請參閱[使用規則集指定C++要執行的規則](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)。
 
 在您指定 managed 程式碼的簽入原則之後，小組成員可以將程式碼專案的程式碼分析設定同步處理到 Azure DevOps 專案原則設定。
 
@@ -39,7 +39,7 @@ ms.locfileid: "75587533"
 
 1. 在 [**原始檔控制**] 對話方塊中，選取 [**簽入原則**] 索引標籤。
 
-1. 請執行下列其中一項動作：
+1. 執行下列其中一個動作：
 
     - 按一下 **[新增]** 以建立新的簽入原則。
 
@@ -67,6 +67,6 @@ ms.locfileid: "75587533"
 
 如需如何建立和執行自訂簽入原則規則集的詳細資訊，請參閱[針對 Managed 程式碼執行自訂簽入](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)原則。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [為受控碼實作自訂程式碼分析簽入原則](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

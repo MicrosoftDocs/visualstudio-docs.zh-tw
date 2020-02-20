@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.openlocfilehash: 46c6110cb977e3a309f27fc5a014522494f18c9a
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77144778"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506521"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>在進行偵錯工具時，從 .NET 元件產生原始程式碼
 
@@ -64,7 +64,7 @@ ms.locfileid: "77144778"
 
 ![具有其他檔案的方案瀏覽器螢幕擷取畫面。](media/decompilation-solution-explorer.png)
 
-## <a name="known-limitations"></a>已知的限制
+## <a name="known-limitations"></a>已知限制
 
 ### <a name="requires-break-mode"></a>需要中斷模式
 
@@ -82,13 +82,13 @@ ms.locfileid: "77144778"
 - 本機變數的名稱不能正確。
 - 某些變數可能無法供評估。
 
-如需更多詳細資料，請參閱 GitHub 問題： [IChsarpCompiler. 解編程式整合至 VS 偵錯工具](https://github.com/icsharpcode/ILSpy/issues/1901)。
+如需更多詳細資料，請參閱 GitHub 問題： [ICSharpCode. 解編程式整合至 VS 偵錯工具](https://github.com/icsharpcode/ILSpy/issues/1901)。
 
 ### <a name="decompilation-reliability"></a>Decompilation 可靠性
 
 相對較小的 decompilation 嘗試百分比可能會導致失敗。 這是因為 ILSpy 中的序列點 null 參考錯誤。  我們已藉由攔截這些問題並正常地將 decompilation 嘗試失敗，以減輕失敗。
 
-如需更多詳細資料，請參閱 GitHub 問題： [IChsarpCompiler. 解編程式整合至 VS 偵錯工具](https://github.com/icsharpcode/ILSpy/issues/1901)。
+如需更多詳細資料，請參閱 GitHub 問題： [ICSharpCode. 解編程式整合至 VS 偵錯工具](https://github.com/icsharpcode/ILSpy/issues/1901)。
 
 ### <a name="limitations-with-async-code"></a>非同步程式碼的限制
 

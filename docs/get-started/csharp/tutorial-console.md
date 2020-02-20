@@ -2,7 +2,7 @@
 title: 教學課程：建立簡單C#的主控台應用程式
 description: 了解如何逐步在 Visual Studio 中建立 C# 主控台應用程式。
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 02/18/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: e72cba384d3780c738c29698f74cbc3b4898bb04
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830014"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476729"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教學課程：在 Visual Studio C#中建立簡單的主控台應用程式
 
@@ -55,7 +55,7 @@ ms.locfileid: "74830014"
 
 ### <a name="add-a-workload-optional"></a>新增工作負載 (選擇性)
 
-如果您看不到 [主控台應用程式] 專案範本，則其取得方式是新增 [.NET Core 跨平台開發] 工作負載。 方式如下：
+如果您看不到 [主控台應用程式] 專案範本，則其取得方式是新增 [.NET Core 跨平台開發] 工作負載。 方法如下。
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>選項 1：使用 [新增專案] 對話方塊
 
@@ -69,7 +69,7 @@ ms.locfileid: "74830014"
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
 
-1. 請取消 [新增專案] 對話方塊，然後從頂端功能表列中選擇 [工具]>[取得工具和功能]。
+1. 取消 [**新增專案**] 對話方塊，然後從頂端功能表列中，選擇 [**工具**] > [**取得工具和功能**]。
 
 1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
@@ -90,7 +90,7 @@ ms.locfileid: "74830014"
    ![選擇主控台應用程式 (.NET Framework) 的 C# 專案範本](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
-   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到你要尋找的項目嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
    >
    > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -98,9 +98,9 @@ ms.locfileid: "74830014"
    >
    > ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](./media/dot-net-core-xplat-dev-workload.png)
    >
-   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回這個「[建立專案](#create-a-project)」程序中的第 2 步。
+   > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *Calculator*。 接著，選擇 [建立]。
+1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 **Calculator**。 接著，選擇 [建立]。
 
    ![在 [設定您的新專案] 視窗中，以 'Calculator' 命名您的專案](./media/vs-2019/csharp-name-your-calculator-project.png)
 
@@ -134,6 +134,9 @@ ms.locfileid: "74830014"
 
     請注意，當您這麼做時，Visual Studio 中的 IntelliSense 功能會提供您自動完成項目的選項。
 
+    > [!NOTE]
+    > 下列動畫並非用於複製上述程式碼。 其目的只是要說明自動完成功能的運作方式。
+
     ![顯示 Visual Studio IDE 中 IntelliSense 自動完成功能的整數數學代碼動畫](./media/integer-math-intellisense.gif)
 
 1. 選擇 [**計算機**] 旁的綠色 [**開始**] 按鈕，以建立並執行您的程式，或按**F5**。
@@ -144,7 +147,7 @@ ms.locfileid: "74830014"
 
     ![顯示整數數學結果的主控台視窗](./media/csharp-console-integer-math.png)
 
-1. (選擇性)，您可以變更運算子來變更結果。 例如，您可以將 `int c = a + b;`程式碼行中的 `+` 運算子變更為 `-` 進行相減、變更為 `*` 進行相乘，或變更為 `/` 進行相除。 在您執行程式時，結果也會變更。
+1. (選擇性)，您可以變更運算子來變更結果。 例如，您可以將 `+`程式碼行中的 `int c = a + b;` 運算子變更為 `-` 進行相減、變更為 `*` 進行相乘，或變更為 `/` 進行相除。 在您執行程式時，結果也會變更。
 
 1. 關閉主控台視窗。
 
@@ -242,7 +245,7 @@ ms.locfileid: "74830014"
 
 1. 將 `int` 變數的每個執行個體變更為 `float`。
 
-   請確認您已在 [尋找和取代] 控制項中切換 [大小寫須相符] (**ALT**+**C**) 和 [全字相符] (**ALT**+**W**)。
+   請確認您已在 [尋找和取代] 控制項中切換 [大小寫須相符] (+ALT**C**) 和 [全字相符] (+ALT**W**)。
 
     ![顯示如何將 int 變數變更為 float 的 [尋找和取代] 控制項動畫](./media/find-replace-control-animation.gif)
 
@@ -268,18 +271,21 @@ ms.locfileid: "74830014"
 
 我們已改善基本計算機應用程式，但還不具備處理例外狀況的保險方式，例如使用者輸入錯誤。
 
-例如，如果您嘗試將數字除以零，或在應用程式僅接受數字字元時輸入英文字元 (反之亦然)，則應用程式會停止運作並傳回錯誤。
+例如，如果您嘗試將數位零除，或在應用程式預期有數位字元時輸入英文字元（反之亦然），則應用程式可能會停止運作、傳回錯誤，或傳回非預期的非數值結果。
 
-讓我們逐步解說一些常見的使用者輸入錯誤，在偵錯工具中將其找出，並在程式碼中修正。
+讓我們逐步解說幾個常見的使用者輸入錯誤，在偵錯工具中找出它們（如果出現的話），並在程式碼中修正。
 
->[!TIP]
->如需偵錯工具及其運作方式的詳細資訊，請參閱 [Visual Studio 偵錯工具初探](../../debugger/debugger-feature-tour.md)頁面。
+> [!TIP]
+> 如需偵錯工具及其運作方式的詳細資訊，請參閱 [Visual Studio 偵錯工具初探](../../debugger/debugger-feature-tour.md)頁面。
 
 ### <a name="fix-the-divide-by-zero-error"></a>修正「除以零」錯誤
 
-當您嘗試將數字除以零時，主控台應用程式會凍結。 Visual Studio 接著會顯示程式碼編輯器中的錯誤。
+當您嘗試將數位零除時，主控台應用程式可能會凍結，然後顯示程式碼編輯器中的錯誤。
 
    ![Visual Studio 程式碼編輯器顯示「除以零」錯誤](./media/csharp-console-calculator-dividebyzero-error.png)
+
+> [!NOTE]
+> 有時候，應用程式不會凍結，而且偵錯工具不會顯示零除的錯誤。 相反地，應用程式可能會傳回未預期的非數值結果，例如無限大符號。 下列程式碼修正仍然適用。
 
 讓我們變更程式碼來處理此錯誤。
 
@@ -317,11 +323,11 @@ ms.locfileid: "74830014"
 
 #### <a name="revise-the-code"></a>修改程式碼
 
-我們將應用程式分為兩類：`Calculator` 和 `Program`，而不依賴 `program` 類別來處理所有程式碼。
+我們將應用程式分為兩類：`program` 和 `Calculator`，而不依賴 `Program` 類別來處理所有程式碼。
 
 `Calculator` 類別會處理大量計算工作，`Program` 類別會處理使用者介面和錯誤擷取工作。
 
-我們現在就開始吧。
+讓我們開始吧。
 
 1. 刪除下列程式碼區塊「之後」的所有項目：
 
@@ -599,7 +605,7 @@ namespace Calculator
 > [!div class="nextstepaction"]
 > [繼續進行其他 C# 教學課程](/dotnet/csharp/tutorials/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [了解如何在 Visual Studio 中對 C# 程式碼進行偵錯](tutorial-debugger.md)

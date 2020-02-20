@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: acee84f582f2d6b8e2905e50db352cde794b73e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c481b2b9c90b15f4cbc709cad89e5b772ad95cee
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670605"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477090"
 ---
 # <a name="how-to-troubleshoot-templates"></a>如何：疑難排解範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "72670605"
 
 2. 將 zip 檔解壓縮。
 
-3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的 [檔案] 功能表上，按一下 [開啟]，然後按一下 [檔案]。
+3. 在  **的 [檔案]** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 功能表上，按一下 [開啟]，然後按一下 [檔案]。
 
 4. 選取範本的 .vstemplate 檔案，然後按一下 [開啟]。
 
 5. 確認 .vstemplate 檔案的 XML 遵守 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 範本結構描述。 如需 .vstemplate 結構描述的詳細資訊，請參閱 [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)。
 
     > [!NOTE]
-    > 撰寫 .vstemplate 檔案時若要取得 IntelliSense 支援，請在 `VSTemplate` 項目中新增 `xmlns` 屬性並為它指派 http://schemas.microsoft.com/developer/vstemplate/2005 值。
+    > 撰寫 .vstemplate 檔案時若要取得 IntelliSense 支援，請在 `xmlns` 項目中新增 `VSTemplate` 屬性並為它指派 `http://schemas.microsoft.com/developer/vstemplate/2005` 值。
 
 6. 儲存並關閉.vstemplate 檔案。
 
@@ -62,5 +62,5 @@ ms.locfileid: "72670605"
 
 4. 按兩下範本事件，以檢視錯誤。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [自訂範本](../ide/customizing-project-and-item-templates.md)[建立專案和專案範本](../ide/creating-project-and-item-templates.md) [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)

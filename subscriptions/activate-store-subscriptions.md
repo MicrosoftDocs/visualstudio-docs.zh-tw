@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: 了解如何啟用 Microsoft Store 中購買的 Visual Studio 訂用帳戶。
-ms.openlocfilehash: 8df8125280e17eba941e099d8d27b37a19de79b1
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 2fb3d958206cd3fcd76654b95d5be4b8d8e8a3a4
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439149"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476767"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>如何啟用從 Microsoft Store 取得的訂用帳戶？
 如果您是透過 Microsoft Store 購買 Visual Studio 訂用帳戶，則可以從付款 [確認頁面] 或購買後您所收到的 [確認電子郵件] 起始啟用步驟。
@@ -35,7 +35,8 @@ ms.locfileid: "77439149"
 請前往[優點](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)頁面，以查看訂用帳戶中包含的所有工具、服務、訓練及支援權益。  我們建議您設定 [Visual Studio](vs-ide-benefit.md) 和 [Azure DevOps](vs-azure-devops.md) 以開始使用。 
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
-- [Azure 文件](/azure/)
-- [Microsoft 365 檔](/microsoft-365/)
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+

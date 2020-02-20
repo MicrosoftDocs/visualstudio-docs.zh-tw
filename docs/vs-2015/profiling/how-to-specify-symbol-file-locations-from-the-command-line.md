@@ -1,5 +1,5 @@
 ---
-title: 作法：從命令列指定符號檔位置 | Microsoft Docs
+title: 如何：從命令列指定符號檔位置 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e08a2f8fc93f91cafe40d2dc5e9bdb8b49770b3b
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 5ed6ddc11a998d97a193c2ab01ff69d386ed4ffe
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692822"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476971"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>HOW TO：從命令列指定符號檔位置
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：從命令列指定符號檔位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要顯示符號資訊 (例如函式名稱和行號)，VSPerfReport 命令列工具需要存取已進行程式碼剖析之元件的符號 (.pdb) 檔案和 Windows 系統檔。 符號檔是在元件編譯時建立。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。 VSPerfReport 會自動搜尋下列位置中是否有符號檔：  
@@ -48,9 +48,9 @@ ms.locfileid: "67692822"
   
 2. 使用下列語法設定 **_NT_SYMBOL_PATH** 環境變數或 VSPerfReport /SymbolPath 選項：  
   
-    **srv\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    `srv*<LocalStore>*https://msdl.microsoft.com/downloads/symbols`  
   
-    其中 *LocalStore* 代表您建立的本機目錄路徑。  
+    其中 *<LocalStore>* 是您所建立之本機目錄的路徑。  
   
 ## <a name="specifying-component-symbol-files"></a>指定元件符號檔  
  針對要進行程式碼剖析之元件的 .pdb 檔，程式碼剖析工具會在其原始位置 (可能儲存於元件或包含程式碼剖析資料檔的資料夾中) 進行搜尋。 您可以加入一或多個路徑至 **_NT_SYMBOL_PATH** 或 **/SymbolPath** 選項，以指定其他要搜尋的位置。 請使用分號分隔路徑。  
@@ -58,8 +58,10 @@ ms.locfileid: "67692822"
 ## <a name="example"></a>範例  
  下列命令列會將 **_NT_SYMBOL_PATH** 環境變數設定為 Windows 符號伺服器，以及將本機目錄設定為 **C:\Symbols**。  
   
- **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
+ ```cmd
+ set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/downloads/symbols`  
+ ```
   
  下列 VSPerfReport 命令列會使用 **/SymbolPath** 選項將 C:\Projects\Symbols 目錄加入至搜尋路徑。  
   
- **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**
+ **VSPerfReport**  *MyApp* **.exe/SymbolPath： C:\Projects\Symbols/summary： all**

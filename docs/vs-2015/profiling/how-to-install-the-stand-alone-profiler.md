@@ -1,5 +1,5 @@
 ---
-title: HOW TO：安裝獨立分析工具 | Microsoft Docs
+title: 如何：安裝獨立分析工具 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5923bc99906cf4bcad8ea92ad74a30470fb41a1c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 026162a2c8334c7163f9c7853d2de30e58e5939a
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432724"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476790"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>HOW TO：安裝獨立的 Profiler
+# <a name="how-to-install-the-stand-alone-profiler"></a>如何：安裝獨立分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 提供命令列型獨立分析工具，不用安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 即可執行。 當電腦未安裝或無法安裝開發環境時，就會發生這種情況。 例如，您不應該在生產環境的 Web 伺服器上安裝開發環境。  
@@ -41,9 +41,9 @@ ms.locfileid: "63432724"
     > [!NOTE]
     > 如果顯示 vsinstr.exe 的使用資訊，即表示所有項目設定正確。 如果看到有錯誤指出找不到 vsinstr.exe 或它其中一個相依性，請確定是否依步驟 2 所述正確設定路徑。  
   
-4. 將 **_NT_SYMBOL_PATH** 變數設為 **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols** ，以設定符號伺服器  
+4. 將您的 **_NT_SYMBOL_PATH**變數設定為，以設定符號伺服器 `symsrv*symsrv.dll*c:\localcache* https://msdl.microsoft.com/download/symbols`  
   
-5. 使用系統環境變數設定好符號伺服器之後，在新的命令提示字元處執行命令列分析工具。 這可讓新的環境變數生效。 在命令提示字元視窗中，鍵入下列命令：  
+5. 使用系統環境變數設定好符號伺服器之後，在新的命令提示字元處執行命令列分析工具。 這可讓新的環境變數生效。 在命令提示字元視窗中輸入下列命令：  
   
      **start %COMSPEC%**  
   
@@ -54,7 +54,7 @@ ms.locfileid: "63432724"
   
 ## <a name="see-also"></a>另請參閱  
  [從命令列使用程式碼剖析工具](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [逐步解說：命令列使用取樣分析](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
- [逐步解說：命令列使用檢測進行分析](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
+ [逐步解說：使用取樣進行命令列分析](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
+ [逐步解說：使用檢測進行命令列分析](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
  [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
