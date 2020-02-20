@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2be648703964328f9d678570137173429d84ed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 19da163c76724ae56c0e3d83f1ed795333d081d5
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115072"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77453391"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>將 Visual Studio 更新至最新版本
 
@@ -166,7 +166,7 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 我們建議您更新到[最新發行](/visualstudio/releases/2019/release-notes/)的 Visual Studio 2019，使您可以持續取得最新的功能、修正及功能改進。
 
-如果您尚未安裝 Visual Studio 2019，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面來免費安裝它。
+如果您尚未安裝 Visual Studio 2019，請前往[Visual Studio 下載](https://visualstudio.microsoft.com/downloads) 頁面免費進行安裝。 如果您目前使用不同版本的 Visual Studio，您可以[並存安裝 Visual Studio 版本](../install/install-visual-studio-versions-side-by-side.md)，或[卸載舊版的 Visual Studio](../install/uninstall-visual-studio.md)。
 
 > [!IMPORTANT]
 > 您必須以具有安裝、更新或修改 Visual Studio 之系統管理權限的帳戶登入。 如需詳細資訊，請參閱[使用者權限和 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
@@ -273,7 +273,7 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 您也可以選擇 [自動下載更新] 設定，讓系統在機器閒置時下載更新。
 
-方式如下：
+方法：
 
 1. 在功能表列上，選擇 [**工具**] [>**選項**]。
 
@@ -287,7 +287,7 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [並存安裝 Visual Studio 版本](install-visual-studio-versions-side-by-side.md)
 * [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)

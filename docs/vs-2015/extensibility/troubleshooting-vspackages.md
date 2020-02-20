@@ -1,5 +1,5 @@
 ---
-title: 針對 Vspackage 進行疑難排解 |Microsoft Docs
+title: 疑難排解 Vspackage |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,119 +11,119 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 62c1847e9ff476e364ed99cabc4b47a970c4c4da
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b092c910b0303a62289e75b168e39628cbd0314b
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695497"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476998"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-以下是常見的問題，您可能會有的 VSPackage，並解決問題的提示。  
+以下是您在 VSPackage 時可能會遇到的常見問題，以及解決問題的秘訣。  
   
-### <a name="to-troubleshoot-a-vspackage-that-keeps-visual-studio-from-starting"></a>若要疑難排解的 VSPackage，啟動時，防止 Visual Studio  
+### <a name="to-troubleshoot-a-vspackage-that-keeps-visual-studio-from-starting"></a>疑難排解讓 Visual Studio 無法啟動的 VSPackage  
   
-- 啟動[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以安全模式。  
+- 以安全模式啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-     若要啟動[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]在安全模式中，在命令提示字元中，輸入**devenv.exe /safemode**。  
+     若要以安全模式啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，請在命令提示字元中輸入**devenv/safemode**。  
   
-     在此程序期間沒有 Vspackage 載入除了隨附於 Vspackage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+     在此過程中，不會載入 Vspackage，但包含在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中的 Vspackage 除外。  
   
-### <a name="to-troubleshoot-a-vspackage-that-does-not-load"></a>若要疑難排解未載入 VSPackage  
+### <a name="to-troubleshoot-a-vspackage-that-does-not-load"></a>針對未載入的 VSPackage 進行疑難排解  
   
-1. 請確定您用來執行，通常的實驗性的登錄根目錄註冊 VSPackage 的登錄根目錄。  
+1. 請確定您使用登錄根目錄，其中 VSPackage 已註冊要執行，通常是實驗性登錄根目錄。  
   
-     如需詳細資訊，請參閱 <<c0> [ 實驗的執行個體](../extensibility/the-experimental-instance.md)。  
+     如需詳細資訊，請參閱[實驗實例](../extensibility/the-experimental-instance.md)。  
   
-2. 如果 VSPackage 以在實驗登錄根目錄中執行目標，請確定您執行的實驗版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+2. 如果 VSPackage 的目標是要在實驗性登錄根目錄中執行，請確定您正在執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗性版本。  
   
-     若要執行的實驗版本，請在命令視窗中輸入下列： **devenv /rootsuffix exp**。  
+     若要執行實驗性版本，請在命令視窗中輸入下列內容： **devenv/rootsuffix exp**。  
   
-3. 請檢查您的 VSPackage 登錄項目。  
+3. 檢查您的 VSPackage 登錄專案。  
   
-     如需詳細資訊，請參閱 <<c0> [ 註冊 Vspackage](internals/registering-vspackages.md)並[管理 Vspackage](../extensibility/managing-vspackages.md)。  
+     如需詳細資訊，請參閱[註冊 vspackage](internals/registering-vspackages.md)和[管理 vspackage](../extensibility/managing-vspackages.md)。  
   
-4. 開啟**輸出**視窗中的執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，無法載入 VSPackage。 若要載入 VSPackage 的失敗原因的相關資訊可能會顯示該視窗中。  
+4. 開啟無法載入 VSPackage 之實例 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的 [**輸出**] 視窗。 為什麼無法載入 VSPackage 的相關資訊可能會顯示在該視窗中。  
   
     > [!NOTE]
-    > 如果您要啟動的實驗版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]從[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式的開發環境 (IDE)，檢查**輸出**這兩個版本的視窗。  
+    > 如果您從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 整合式開發環境（IDE）啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗性版本，請檢查這兩個版本的 [**輸出**] 視窗。  
   
-5. 檢查活動記錄檔。  
+5. 檢查活動記錄。  
   
      如需詳細資訊，請參閱[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
   
-6. 如需有關由 IDE 所擲回的例外狀況的詳細資訊，請按一下**例外狀況**上**偵錯**功能表以讓例外狀況。 在 [**例外狀況**] 對話方塊中選取您想通知的詳細資訊的例外狀況的類型。  
+6. 如需 IDE 所擲回之例外狀況的詳細資訊，請按一下 [**調試**程式] 功能表上的 [**例外**狀況] 以啟用例外狀況。 在 [**例外**狀況] 對話方塊中，選取您想要取得詳細資訊的例外狀況類型。  
   
-### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>若要疑難排解不會註冊 VSPackage  
+### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>針對未註冊的 VSPackage 進行疑難排解  
   
-1. 請確定 VSPackage 組件位於受信任的位置。 RegPkg 無法註冊組件中不受信任或部分信任的位置，例如網路共用，在預設.net 安全性組態。 雖然每當使用者在不受信任的位置中建立專案時，就會出現警告，請 「 不要顯示此訊息一次 」 的核取方塊可以避免發生此警告訊息。  
+1. 請確定 VSPackage 元件位於受信任的位置。 RegPkg 無法在不受信任或部分信任的位置註冊元件，例如預設 .net 安全性設定中的網路共用。 當使用者在不受信任的位置中建立專案時，雖然會出現警告，但是 [不要再顯示此訊息] 核取方塊可能會導致此警告無法重複發生。  
   
-### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>若要疑難排解，看不到或，會產生錯誤，當您按一下命令的命令  
+### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>若要疑難排解不可見或在您按一下命令時會產生錯誤的命令  
   
-1. 合併的新增或變更功能表命令以及已在 IDE 中，輸入下列內容[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]命令提示字元： **devenv /rootsuffix Exp /setup**。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令提示字元中輸入下列命令，以合併已在 IDE 中的新的或已變更的功能表命令： **devenv/Rootsuffix Exp/setup**。  
   
-2. 請確定[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以找到 UI.dll vspackage。  
+2. 請確定 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可以找到 VSPackage 的 UI .dll。  
   
-    1. VSPackage 的 CLSID 的區段中找到封裝的登錄：  
+    1. 在登錄的 [套件] 區段中，尋找 VSPackage 的 CLSID：  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages  
+         HKLM\Software\Microsoft\Visual Studio\\ *\<版本 >* \Packages  
   
-    2. 確認 SatelliteDll 子機碼所指定的路徑正確無誤。  
+    2. 請確認 SatelliteDll 子機碼所指定的路徑是否正確。  
   
-### <a name="to-troubleshoot-a-vspackage-that-behaves-unexpectedly"></a>若要疑難排解的 VSPackage，非預期的行為  
+### <a name="to-troubleshoot-a-vspackage-that-behaves-unexpectedly"></a>針對非預期行為的 VSPackage 進行疑難排解  
   
 1. 在您的程式碼中設定中斷點。  
   
-     偵錯很好的起點是建構函式和初始設定方法。 您也可以在您想要評估，例如功能表命令 區域中設定中斷點。 若要啟用中斷點，您必須偵錯工具下執行。  
+     偵錯工具的良好起始點是「函式」和「初始化」方法。 您也可以在想要評估的區域（例如功能表命令）中設定中斷點。 若要啟用中斷點，您必須在偵錯工具下執行。  
   
-    1. 在 [專案] 功能表上，按一下 [屬性]。  
+    1. 按一下 [專案] 功能表上的 [屬性]。  
   
-    2. 在 [**屬性頁**對話方塊中，選取**偵錯**] 索引標籤。  
+    2. 在 [**屬性頁**] 對話方塊中，選取 [**調試**] 索引標籤。  
   
-    3. 在 **命令列引數**方塊中，輸入根後置詞的開發環境，VSPackage 目標。 例如，若要選取 實驗性組建，請輸入： **RootSuffix Exp**。  
+    3. 在 [**命令列引數**] 方塊中，輸入您的 VSPackage 目標之開發環境的根尾碼。 例如，若要選取實驗性組建，請輸入： **/RootSuffix Exp**。  
   
-    4. 在上**偵錯**功能表上，按一下**開始偵錯**或按 F5。  
+    4. 在 [**調試**] 功能表上，按一下 [**開始調試**] 或按 F5。  
   
         > [!NOTE]
-        > 如果您正在偵錯專案，建立或立即載入您專案的現有執行個體。  
+        > 如果您要對專案進行偵錯工具，請立即建立或載入專案的現有實例。  
   
-2. 使用活動記錄檔。  
+2. 使用 [活動記錄]。  
   
-     藉由將資訊寫入活動記錄檔的關鍵點追蹤 VSPackage 的行為。 當您在零售環境中執行 VSPackage 時，這項技術會特別有用。 如需詳細資訊，請參閱[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
+     追蹤 VSPackage 行為，方法是在關鍵點將資訊寫入活動記錄。 當您在零售環境中執行 VSPackage 時，這項技術特別有用。 如需詳細資訊，請參閱[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
   
 3. 使用公用符號。  
   
-     若要改善可讀性偵錯時，您可以附加偵錯工具的符號。  
+     若要在進行偵錯工具時改善可讀性，您可以將符號附加至偵錯工具。  
   
-    1. 從**工具/選項** 功能表中，瀏覽至**偵錯/符號** 對話方塊。  
+    1. 從 [**工具]/[選項**] 功能表，流覽至 [**調試]/[符號**] 對話方塊。  
   
-    2. 新增這**符號檔 (.pdb) 位置**:  
+    2. 新增此**符號檔（.pdb）位置**：  
   
-         [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)  
+         `https://msdl.microsoft.com/download/symbols`  
   
-    3. 若要改善效能，指定符號快取資料夾，例如：  
+    3. 若要改善效能，請指定符號快取資料夾，例如：  
   
         ```  
         C:\symbols  
         ```  
   
-### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>若要針對遺漏的 VSPackage 或其中一個相依性進行疑難排解  
+### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>疑難排解遺失的 VSPackage 或其相依性的其中之一  
   
-1. 針對 managed 程式碼，請確定參考路徑正確無誤。  
+1. 若為 managed 程式碼，請確定參考路徑是正確的。  
   
-   1. 在 [專案] 功能表上，按一下 [屬性]。  
+   1. 按一下 [專案] 功能表上的 [屬性]。  
   
-   2. 選取 [**參考**索引標籤中**屬性頁**] 對話方塊中，並確定所有路徑都是否正確。 或者，您可以使用**物件瀏覽器**瀏覽參考的物件。  
+   2. 選取 [**屬性頁**] 對話方塊中的 [**參考**] 索引標籤，並確定所有路徑都正確。 或者，您可以使用**物件瀏覽器**來流覽參考的物件。  
   
-        針對 managed 程式碼，您可以使用[Fuslogvw.exe （組件繫結記錄檔檢視器）](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296)顯示失敗的組件載入的詳細資料。  
+        若為 managed 程式碼，您可以使用[fuslogvw.exe （元件系結記錄檢視器）](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296)來顯示失敗元件載入的詳細資料。  
   
-2. 對於 unmanaged 程式碼，以找出在 VSPackage 的 CLSID [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 登錄節點：  
+2. 若為非受控碼，請在 [[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 登錄] 節點中尋找 VSPackage 的 CLSID：  
   
-    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\ *\<版本 >* \CLSID  
   
-   請確定 [InprocServer32] 項目具有 VSPackage dll 的正確路徑。  
+   請確定 InprocServer32 專案具有 VSPackage dll 的正確路徑。  
   
 ## <a name="see-also"></a>另請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)

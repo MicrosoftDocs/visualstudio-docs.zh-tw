@@ -11,26 +11,26 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2c080f1b5d4b36093cca44daaac644276039718e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667956"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476977"
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：散發程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用程式碼片段管理員，將您的程式碼片段提供給您的朋友，並讓他們在自己的電腦上安裝程式碼片段。 不過，如果您有數個程式碼片段要散發，或想要更廣泛地散發，請在 Visual Studio 使用者可以安裝的 Visual Studio 擴充功能中包含您的程式碼片段檔案。
 
- 若要建立 Visual Studio 擴充功能，您必須安裝 Visual Studio SDK。 在[Visual Studio 2015 下載](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx)，尋找符合您 Visual Studio 安裝的 VSSDK 版本。
+ 若要建立 Visual Studio 擴充功能，您必須安裝 Visual Studio SDK。 在[Visual Studio 2015 下載](https://visualstudio.microsoft.com/vs/older-downloads/)，尋找符合您 Visual Studio 安裝的 VSSDK 版本。
 
 ## <a name="setting-up-the-extension"></a>設定擴充功能
  在此程序中，我們將使用在[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)中所建立之相同的 Hello World 程式碼片段。 我們將提供 .snippet 文字，所以您不需返回再做一次。
 
 1. 建立新的 VSIX 專案，名為 **TestSnippet**。 ( [檔案] / [新增] / [專案] / [Visual C#] \(或 [Visual Basic] / [擴充性])
 
-2. 在 **TestSnippet** 專案中加入新的 XML 檔案，並將其命名為 **VBCodeSnippet.snippet**。 使用下列內容取代此內容：
+2. 在 **TestSnippet** 專案中加入新的 XML 檔案，並將其命名為 **VBCodeSnippet.snippet**。 以下列內容取代原始內容：
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -102,5 +102,5 @@ ms.locfileid: "72667956"
     Console.WriteLine("Hello, World!")
     ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [程式碼片段](../ide/code-snippets.md)

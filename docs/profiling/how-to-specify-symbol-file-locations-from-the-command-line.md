@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b4c4230ca2539b55f57990b90ae33d1f53726dc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 604863cbef5e42b31450ea09dffa56a1a00ae992
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74778722"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476894"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：從命令列指定符號檔位置
 若要顯示符號資訊 (例如函式名稱和行號)，VSPerfReport 命令列工具需要存取已進行程式碼剖析之元件的符號 (.*pdb*) 檔案和 Windows 系統檔。 符號檔是在元件編譯時建立。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。 VSPerfReport 會自動搜尋下列位置中是否有符號檔：
@@ -46,9 +46,9 @@ ms.locfileid: "74778722"
 
 2. 使用下列語法設定 **_NT_SYMBOL_PATH** 環境變數或 VSPerfReport /SymbolPath 選項：
 
-    **srv\\** * *LocalStore* **\*http://msdl.microsoft.com/download/symbols**
+    `srv*<LocalStore>*https://msdl.microsoft.com/download/symbols`
 
-    其中 *LocalStore* 代表您建立的本機目錄路徑。
+    其中 *<LocalStore>* 是您所建立之本機目錄的路徑。
 
 ## <a name="specify-component-symbol-files"></a>指定元件符號檔
  針對要進行程式碼剖析之元件的 .*pdb* 檔，程式碼剖析工具會在其原始位置 (可能儲存於元件或包含程式碼剖析資料檔的資料夾中) 進行搜尋。 您可以加入一或多個路徑至 **_NT_SYMBOL_PATH** 或 **/SymbolPath** 選項，以指定其他要搜尋的位置。 請使用分號分隔路徑。
@@ -56,8 +56,10 @@ ms.locfileid: "74778722"
 ## <a name="example"></a>範例
  下列命令列會將 **_NT_SYMBOL_PATH** 環境變數設定為 Windows 符號伺服器，以及將本機目錄設定為 **C:\Symbols**。
 
- **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/download/symbols**
+ ```cmd
+  set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols
+ ```
 
- 下列 VSPerfReport 命令列會使用 **/SymbolPath** 選項將 *C:\Projects\Symbols* 目錄新增至搜尋路徑。
+ 下列 VSPerfReport 命令列會使用 */SymbolPath* 選項將 **C:\Projects\Symbols** 目錄新增至搜尋路徑。
 
- **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**
+ **VSPerfReport**  *MyApp* **.exe/SymbolPath： C:\Projects\Symbols/summary： all**

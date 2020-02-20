@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: 瞭解新的 Visual Studio + GitHub 供應專案
-ms.openlocfilehash: d8507667f214430513ba2ad84bbe787e5a042899
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 5ae209bc0f6b3dcef99f15abd2cfb67d65f655d0
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439136"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476744"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>含 GitHub Enterprise 的 Visual Studio 訂用帳戶簡介  
 
@@ -50,11 +50,11 @@ Visual Studio + GitHub Enterprise 訂用帳戶分成兩部份指派：
 
 若您剛接觸 GitHub，以下這些資源可能會對您有幫助：
 
-| 主旨                                  | GitHub 說明主題                                     |
+| 主體                                  | GitHub 說明主題                                     |
 |------------------------------------------|-------------------------------------------------------|
 | 一般問題/資訊          | [GitHub 說明](https://help.github.com/en)             |
-| GitHub 是什麼？  如何深入了解？  | [About GitHub](https://help.github.com/en/categories/about-github) (關於 GitHub)                                       |
-| 如何開始使用 GitHub？     | [Bootcamp](https://help.github.com/en/categories/bootcamp) (集訓)                                              |
+| GitHub 是什麼？  如何深入了解？  | [關於 GitHub](https://help.github.com/en/categories/about-github)                                       |
+| 如何開始使用 GitHub？     | [集訓](https://help.github.com/en/categories/bootcamp)                                              |
 | 如何管理我的使用者帳戶和設定檔？       | [Setting up and managing your GitHub user account](https://help.github.com/en/categories/setting-up-and-managing-your-github-user-account) (設定及管理您的 GitHub 使用者帳戶)    |
 | 如何管理我對 GitHub 的存取？   | [Authenticating to GitHub](https://help.github.com/en/categories/authenticating-to-github) (向 GitHub 進行驗證)                           |
 | GitHub 如何使用及保護我的資料？ | [Understanding how GitHub uses and protect your data](https://help.github.com/en/categories/understanding-how-github-uses-and-protects-your-data) (了解 GitHub 如何使用及保護您的資料)|
@@ -81,8 +81,8 @@ Visual Studio + GitHub Enterprise 訂用帳戶分成兩部份指派：
 如果您還不熟悉 GitHub，請前往 [GitHub Learning Lab](https://lab.github.com/) (GitHub 學習實驗室)，這裡會帶您了解一系列有趣又實用的專案，並在過程中提供實用的回饋。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
-- [Azure 文件](/azure/)
-- [Microsoft 365 檔](/microsoft-365/)
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 

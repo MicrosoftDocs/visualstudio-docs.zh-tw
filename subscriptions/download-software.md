@@ -6,18 +6,21 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: 了解如何尋找及下載 Visual Studio 訂用帳戶中的 Microsoft 軟體標題
-ms.openlocfilehash: d6ce32b0478b145b7d1814efa3738664ee622cf5
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 053e6d7171f8983def3675e42fb661172a381284
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439162"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476829"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>下載 Visual Studio 訂用帳戶中的軟體標題
 根據您擁有的 Visual Studio 訂用帳戶，有各種不同的 Microsoft 軟體標題可供您使用。  本文將概述如何尋找及下載充分運用訂用帳戶所需的軟體。 
 
 > [!NOTE]
 > [下載](https://my.visualstudio.com/downloads/featured)頁面只會顯示您的訂用帳戶所包含的下載。  如果您有多個訂用帳戶或方案成員資格，就會顯示您持有的**最高訂用帳戶**的下載，即使您目前使用不同的訂用帳戶檢視。  例如，如果您有 Visual Studio Enterprise 訂用帳戶和 Visual Studio Professional 訂用帳戶都與相同的登入識別碼相關聯，則所顯示的下載將會是包含在企業訂用帳戶中的，即使您目前正在觀看您的專業訂閱權益。
+
+> [!NOTE]
+> 我們注意到有關 Office 365 產品金鑰可用性的問題。  我們正在調查原因，並會在問題解決時更新本文。 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>如何在訂閱者入口網站尋找下載？
 當您瀏覽[下載](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs)頁面時，您會看到依產品類型分組陳列的熱門下載。  您可以選取顯示的其中一項熱門下載，或使用頁面頂端的搜尋列搜尋任何產品。
@@ -53,7 +56,8 @@ ms.locfileid: "77439162"
 - [尋找及索取金鑰](find-keys.md)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
-- [Azure 文件](/azure/)
-- [Microsoft 365 檔](/microsoft-365/)
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+

@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94cb575969f232c9b4d60e7ddc93f9f727132951
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a231d8d02ce7432188053293684d09c7243dfd5e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718706"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506394"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 以下是您在 VSPackage 時可能會遇到的常見問題，以及解決問題的秘訣。
@@ -27,7 +27,7 @@ ms.locfileid: "72718706"
 
    若要以安全模式啟動 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，請在命令提示字元中輸入**devenv/safemode**。
 
-   在此過程中，不會載入 Vspackage，但包含在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的 Vspackage 除外。
+   在此過程中，不會載入 Vspackage，但包含在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中的 Vspackage 除外。
 
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-load"></a>針對未載入的 VSPackage 進行疑難排解
 
@@ -35,7 +35,7 @@ ms.locfileid: "72718706"
 
     如需詳細資訊，請參閱[實驗實例](../extensibility/the-experimental-instance.md)。
 
-2. 如果 VSPackage 的目標是要在實驗性登錄根目錄中執行，請確定您正在執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗性版本。
+2. 如果 VSPackage 的目標是要在實驗性登錄根目錄中執行，請確定您正在執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的實驗性版本。
 
     若要執行實驗性版本，請在命令視窗中輸入下列內容： **devenv/rootsuffix exp**。
 
@@ -66,7 +66,7 @@ ms.locfileid: "72718706"
 
    1. 在登錄的 [套件] 區段中，尋找 VSPackage 的 CLSID：
 
-        HKLM\Software\Microsoft\Visual Studio \\ *\<version >* \Packages
+        HKLM\Software\Microsoft\Visual Studio\\ *\<版本 >* \Packages
 
    2. 請確認 SatelliteDll 子機碼所指定的路徑是否正確。
 
@@ -76,7 +76,7 @@ ms.locfileid: "72718706"
 
      偵錯工具的良好起始點是「函式」和「初始化」方法。 您也可以在想要評估的區域（例如功能表命令）中設定中斷點。 若要啟用中斷點，您必須在偵錯工具下執行。
 
-    1. 在 [專案] 功能表上，按一下 [屬性]。
+    1. 按一下 [專案] 功能表上的 [屬性]。
 
     2. 在 [**屬性頁**] 對話方塊中，選取 [**調試**] 索引標籤。
 
@@ -99,7 +99,7 @@ ms.locfileid: "72718706"
 
     2. 新增此**符號檔（.pdb）位置**：
 
-         [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
+         `https://msdl.microsoft.com/download/symbols`
 
     3. 若要改善效能，請指定符號快取資料夾，例如：
 
@@ -111,7 +111,7 @@ ms.locfileid: "72718706"
 
 1. 若為 managed 程式碼，請確定參考路徑是正確的。
 
-   1. 在 [專案] 功能表上，按一下 [屬性]。
+   1. 按一下 [專案] 功能表上的 [屬性]。
 
    2. 選取 [**屬性頁**] 對話方塊中的 [**參考**] 索引標籤，並確定所有路徑都正確。 或者，您可以使用**物件瀏覽器**來流覽參考的物件。
 
@@ -119,9 +119,9 @@ ms.locfileid: "72718706"
 
 2. 若為非受控碼，請在 [[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID 登錄] 節點中尋找 VSPackage 的 CLSID：
 
-    HKLM\Software\Microsoft\Visual Studio \\ *\<version >* \CLSID
+    HKLM\Software\Microsoft\Visual Studio\\ *\<版本 >* \CLSID
 
    請確定 InprocServer32 專案具有 VSPackage dll 的正確路徑。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSPackage](../extensibility/internals/vspackages.md)

@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66d0d1ed8115b214b1da1654cbefdc96f7d1774
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 48fa03dec65bcdc1e6c3af94200cfb6c46907e49
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588612"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476863"
 ---
 # <a name="make-code-work-in-visual-studio"></a>讓程式碼在 Visual Studio 中運作
 
@@ -24,7 +24,7 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
 ## <a name="build-your-code"></a>建置程式碼
 
-有兩種基本類型的建置組態：[偵錯]和 [發行]。 [偵錯] 組態會產生較慢、較大的可執行檔，讓您擁有更豐富的互動式執行階段偵錯體驗。 絕不應該釋出 [偵錯] 可執行檔。 [發行] 組態會建置較快、已最佳化的可執行檔，其適合釋出 (至少從編譯器的觀點來看是如此)。 預設建置組態是 [偵錯]。
+有兩種基本類型的建置組態：[偵錯] 和 [發行]。 [偵錯] 組態會產生較慢、較大的可執行檔，讓您擁有更豐富的互動式執行階段偵錯體驗。 絕不應該釋出 [偵錯] 可執行檔。 [發行] 組態會建置較快、已最佳化的可執行檔，其適合釋出 (至少從編譯器的觀點來看是如此)。 預設建置組態是 [偵錯]。
 
 建置專案最簡單的做法是按下 **F7** 鍵，但您也可以從主功能表選取 [建置] > [建置方案] 來開始建置。
 
@@ -40,7 +40,7 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
 ## <a name="review-the-error-list"></a>檢視錯誤清單
 
-除非您不修改先前編譯成功的程式碼，否則可能還是會有錯誤。 如果您是撰寫程式碼的新手，您可能會有許多錯誤。 錯誤有時會很明顯，例如簡單的語法錯誤或不正確的變數名稱，但有時候它們會很難了解，只有隱密的程式碼引導您。 如需更清楚地瞭解問題，請流覽至 [組建**輸出**] 視窗底部，然後按一下 [**錯誤清單**] 索引標籤。這會讓您更有條理地看到專案的錯誤和警告，並提供您一些額外的選項。
+除非您不修改先前編譯成功的程式碼，否則可能還是會有錯誤。 如果您是撰寫程式碼的新手，您可能會有許多錯誤。 錯誤有時會很明顯，例如簡單的語法錯誤或不正確的變數名稱，但有時候它們會很難了解，只有隱密的程式碼引導您。 如需更清楚地檢視問題，請巡覽至組建 [輸出] 視窗底部，然後按一下 [錯誤清單] 索引標籤。這會讓您更有組織地檢視專案的錯誤和警告，並提供您一些額外的選項。
 
 ![Visual Studio 輸出和錯誤清單](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
@@ -78,7 +78,7 @@ Visual Studio 包含一組內建的 [.NET Compiler Platform 分析器](../code-q
 
 ### <a name="c-code-analysis"></a>C++ 程式碼分析
 
-若要分析 C++ 程式碼，請執行[靜態程式碼分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)。 一旦我們清除阻礙成功建置的明顯錯誤，請習慣於立即執行靜態程式碼分析，花一些時間來處理這可能產生的警告。 您今後可省去一些麻煩，也可了解一些程式碼樣式的技巧。
+若要分析 C++ 程式碼，請執行[靜態程式碼分析](/cpp/code-quality/quick-start-code-analysis-for-c-cpp)。 一旦我們清除阻礙成功建置的明顯錯誤，請習慣於立即執行靜態程式碼分析，花一些時間來處理這可能產生的警告。 您今後可省去一些麻煩，也可了解一些程式碼樣式的技巧。
 
 按 **Alt**+**F11** (或從上方功能表選取 [分析] > [針對方案執行程式碼分析]) 來啟動靜態程式碼分析。
 
@@ -160,14 +160,14 @@ Visual Studio 會透過編輯器底部的 [程式**代碼清除**] 按鈕，提�
 
 ## <a name="run-unit-tests"></a>執行單元測試
 
-單元測試是您對抗程式碼 Bug 的第一道防線；因為正確完成時，它們會測試單一的程式碼「單元」，一般是單一函式，而且比完整的程式更容易偵錯。 Visual Studio 會安裝 Managed 和原生程式碼的 Microsoft 單元測試架構。 請使用「單元測試架構」(Unit Testing Framework) 來建立單元測試並加以執行，然後報告這些測試的結果。 當您進行變更來測試程式碼是否仍正常運作時，請重新執行單元測試。 使用 Visual Studio Enterprise 版本，您可以在每次建置後自動執行測試。
+單元測試是您對抗程式碼 Bug 的第一道防線；因為正確完成時，它們會測試單一的程式碼「單元」，一般是單一函式，而且比完整的程式更容易偵錯。 Visual Studio 會安裝 Managed 和原生程式碼的 Microsoft 單元測試架構。 請使用單元測試架構來建立並執行單元測試，然後報告這些測試的結果。 當您進行變更來測試程式碼是否仍正常運作時，請重新執行單元測試。 使用 Visual Studio Enterprise 版本，您可以在每次建置後自動執行測試。
 
 若要開始使用，請參閱[使用 IntelliTest 為程式碼產生單元測試](../test/generate-unit-tests-for-your-code-with-intellitest.md)。
 
 若要深入了解 Visual Studio 中的單元測試，以及了解它們如何協助您建立更高品質的程式碼，請參閱[單元測試基本概念](../test/unit-test-basics.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [深入了解使用偵錯工具](../debugger/index.yml)
-- [產生及修正程式嗎](../ide/code-generation-in-visual-studio.md)
+- [產生及修正程式碼](../ide/code-generation-in-visual-studio.md)
