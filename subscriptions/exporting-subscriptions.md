@@ -3,15 +3,15 @@ title: 匯出訂用帳戶資訊 |Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.date: 02/20/2020
 ms.topic: conceptual
 description: 了解如何匯出訂閱者清單和其訂閱指派的詳細資料。
-ms.openlocfilehash: 46e5ae706383d2ed03a289844bc9e6fcc4a01a91
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: ddf466e314190b8c91d35aad522da14f4c4af69f
+ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491734"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77520848"
 ---
 # <a name="export-subscription-information"></a>匯出訂用帳戶資訊
 在 [Visual Studio 訂用帳戶] 系統[管理入口網站](https://manage.visualstudio.com)中，您可以匯出訂閱者清單，以及其指派的詳細資料。 此資訊包括其名稱、電子郵件地址、替代電子郵件地址、訂用帳戶層級、指派日期、啟用狀態、到期日、參考欄位、是否啟用下載、國家/地區、語言、訂用帳戶狀態，以及訂用帳戶 GUID。  此清單會匯出為 CSV 檔案，並可在 Microsoft Excel 中輕鬆地開啟，以建立圖表、樞紐和其他成品。
@@ -36,3 +36,9 @@ ms.locfileid: "74491734"
     - [過度分派](handle-overclaimed-license.md)
     - [使用量上限](maximum-usage.md)
 - 需要任何訂用帳戶管理層面的協助嗎？  請聯絡 [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)。
+
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
