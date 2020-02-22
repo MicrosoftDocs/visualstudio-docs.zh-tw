@@ -466,8 +466,6 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
                     - name: 從命令列使用分析工具以檢測獨立的 .NET Framework 元件並收集記憶體資料
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
-                - name: 逐步解說：使用取樣進行命令列分析
-                  href: walkthrough-command-line-profiling-using-sampling.md
             - name: ASP.NET Web 應用程式
               items:
                 - name: ASP.NET Web 應用程式的命令列分析
