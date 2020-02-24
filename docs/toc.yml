@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: 將參數新增至方法
                   href: ide/reference/add-parameter.md
+                - name: 從建構函式產生私人欄位
+                  href: ide/reference/generate-private-field-from-constructor.md
                 - name: 產生覆寫
                   href: ide/reference/generate-override.md
                 - name: 產生 Equals 與 GetHashCode 方法的覆寫
@@ -374,6 +376,8 @@
                   href: ide/reference/extract-interface.md
                 - name: 擷取方法
                   href: ide/reference/extract-method.md
+                - name: 擷取區域函式
+                  href: ide/reference/extract-local-function.md
                 - name: 產生參數
                   href: ide/reference/generate-parameter.md
                 - name: 內嵌暫存變數
@@ -386,6 +390,8 @@
                   href: ide/reference/invert-if-statement.md
                 - name: 靜態區域函式重構選項
                   href: ide/reference/static-local-function-refactor-options.md
+                - name: 將成員設為靜態
+                  href: ide/reference/make-member-static.md
                 - name: 移動參考附近的宣告
                   href: ide/reference/move-declaration-near-reference.md
                 - name: 將類型移至相符的檔案
@@ -416,10 +422,8 @@
                   href: ide/reference/use-block-body-lambda.md
                 - name: 未使用的值指派、變數及參數
                   href: ide/reference/unused-values-parameters.md
-                - name: 換行並對齊呼叫鏈結
-                  href: ide/reference/wrap-and-align-call-chains.md
-                - name: 使參數換行、縮排及對齊
-                  href: ide/reference/wrap-align-indent-parameters.md
+                - name: 使重構換行、縮排及對齊
+                  href: ide/reference/wrap-indent-align-refactorings.md
             - name: 逐步解說：使用時產生程式碼
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
         - name: IntelliSense

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5be0303d89ba33a56c22f8a149e42c107094a04b
-ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
+ms.openlocfilehash: 37715080d341c15fad1f5839990e2db28deedabf
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77155211"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476849"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -28,6 +28,7 @@ ms.locfileid: "77155211"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.5.0 | Preview 3 | 2020 年 2 月 19 日 | 16.5.29814.53 |
 | 16.4.5 | 版本 | 2020 年 2 月 11 日 | 16.4.29806.167 |
 | 16.4.4 | 版本 | 2020 年 1 月 31 日 | 16.4.29728.190 |
 | 16.5.0 | Preview 2 | 2020 年 1 月 22 日 | 16.5.29721.120 |
