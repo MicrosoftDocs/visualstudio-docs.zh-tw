@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4f7d44482937eb80540314db37bc9c664eaab689
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593248"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557943"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -249,14 +249,14 @@ ms.locfileid: "75593248"
 
 **RunConfiguration** 項目可以包括下列項目：
 
-|節點|預設值|值|
+|節點|預設|值|
 |-|-|-|
 |**ResultsDirectory**||放置測試結果的目錄。|
-|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` 適用於 .NET Core 來源、`FrameworkUap10` 適用於 UWP 型來源、`Framework45` 適用於 .NET Framework 4.5 和更新版本、`Framework40` 適用於 .NET Framework 4.0，而 `Framework35` 則適用於 .NET Framework 3.5。<br /><br />此設定會指定用來尋找及執行測試的單元測試架構版本。 它可以與您在單元測試專案建置屬性中指定的 .NET 平台版本不同。<br /><br />如果您從 *.runsettings* 檔案省略 `TargetFrameworkVersion` 元素，平台會根據組建二進位檔自動判斷架構版本。|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` 適用於 .NET Core 來源、`FrameworkUap10` 適用於 UWP 型來源、`Framework45` 適用於 .NET Framework 4.5 和更新版本、`Framework40` 適用於 .NET Framework 4.0，而 `Framework35` 則適用於 .NET Framework 3.5。<br /><br />此設定會指定用來尋找及執行測試的單元測試架構版本。 它可以與您在單元測試專案建置屬性中指定的 .NET 平台版本不同。<br /><br />如果您從 `TargetFrameworkVersion`.runsettings*檔案省略* 元素，平台會根據組建二進位檔自動判斷架構版本。|
 |**TargetPlatform**|x86|x86、x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|false、true|
 |**TestAdaptersPaths**||TestAdapters 所在目錄的一或多個路徑|
-|**MaxCpuCount**|1|此設定會使用電腦上的可用核心，在執行單元測試時控制平行測試執行的程度。 測試執行引擎會在各個可用核心上作為不同的處理序啟動，並將要執行測試的容器提供給每個核心。 容器可以是組件、DLL 或相關成品。 測試容器是排程單元。 在每個容器中，會根據測試架構執行測試。 如果有許多容器，當處理序執行完容器中的測試時，就會將下一個可用的容器提供給處理序。<br /><br />MaxCpuCount 可以是：<br /><br />n，其中 1 <= n <= 核心數目：最多會啟動 n 個處理序<br /><br />n，其中 n = 任何其他值：啟動的處理序數目最多可以是可用核心數目|
+|**MaxCpuCount**|1|此設定會使用電腦上的可用核心，在執行單元測試時控制平行測試執行的程度。 測試執行引擎會在各個可用核心上作為不同的處理序啟動，並將要執行測試的容器提供給每個核心。 容器可以是組件、DLL 或相關成品。 測試容器是排程單元。 在每個容器中，會根據測試架構執行測試。 如果有許多容器，當處理序執行完容器中的測試時，就會將下一個可用的容器提供給處理序。<br /><br />MaxCpuCount 可以是：<br /><br />n，其中 1 <= n <= 核心數目：最多會啟動 n 個處理序<br /><br />n，其中 n = 任何其他值：啟動的進程數目最多可達可用核心數目。 例如，設定 n = 0 可讓平臺根據環境自動決定要啟動的最佳進程數目。|
 |**TestSessionTimeout**||當測試工作階段超過指定的逾時之時，允許使用者終止測試工作階段。 設定逾時可確保資源能被充分取用，且可將測試工作階段限制在設定的時間內。 **Visual Studio 2017 15.5** 版和更新版本提供這項設定。|
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>診斷資料配接器 (資料收集器)
@@ -325,7 +325,7 @@ public void HomePageTest()
 
 這些是執行具有 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 屬性之測試方法的測試配接器專屬的設定。
 
-|組態|預設值|值|
+|組態|預設|值|
 |-|-|-|
 |**ForcedLegacyMode**|false|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
 |**IgnoreTestImpact**|false|在 MSTest 或 Microsoft Test Manager 中執行時，測試影響功能會為最近變更所影響的測試設定優先權。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|
@@ -338,7 +338,7 @@ public void HomePageTest()
 |**InProcMode**|false|如果您要在 MSTest 配接器的相同處理序中執行測試，請將此值設定為 **true**。 這個設定提供較小效能。 但如果測試因例外狀況而結束，則不會執行其餘測試。|
 |**AssemblyResolution**|false|您可以在求解及執行單元測試時，指定其他組件的路徑。 例如，您可以針對與測試組件位於不同目錄的相依性組件，使用這些路徑。 若要指定路徑，請使用**目錄路徑**項目。 路徑可以包括環境變數。<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [設定測試回合](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md) \(英文\)
 - [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)

@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed57982fb177a49ed89bbe601d753fe155aba22
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 31ec191345e1a232e79a2eea21563bf41e5d555c
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596082"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558161"
 ---
 # <a name="copy-task"></a>Copy 工作
 將檔案複製到檔案系統上的新位置。
@@ -36,8 +36,8 @@ ms.locfileid: "75596082"
 
 |參數|描述|
 |---------------|-----------------|
-|`CopiedFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含已成功複製的項目。|
-|`DestinationFiles`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要將來源檔案複製到其中的檔案清單。 此清單與 `SourceFiles` 參數中指定的清單應該是一對一對應。 也就是，會將 `SourceFiles` 中指定的第一個檔案複製到 `DestinationFiles` 中指定的第一個位置，依此類推。|
+|`CopiedFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含已成功複製的專案，*包括*未實際複製但已略過，因為它們已是最新狀態，而且已 `true``SkipUnchangedFiles`。|
+|`DestinationFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要將來源檔案複製到其中的檔案清單。 此清單與 `SourceFiles` 參數中指定的清單應該是一對一對應。 也就是，會將 `SourceFiles` 中指定的第一個檔案複製到 `DestinationFiles` 中指定的第一個位置，依此類推。|
 |`DestinationFolder`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要將檔案複製至其中的目錄。 這必須是目錄，而非檔案。 如果目錄不存在，即會自動建立。|
 |`OverwriteReadOnlyFiles`|選擇性的 `Boolean` 參數。<br /><br /> 即使已將檔案標示為唯讀檔案，還是會覆寫它們|
 |`Retries`|選擇性的 `Int32` 參數。<br /><br /> 指定如果所有先前的嘗試均失敗，要嘗試複製多少次。 預設值為零。<br /><br /> **注意︰** 使用重試，可以為建置流程中的同步處理問題設定遮罩。|
@@ -110,6 +110,6 @@ ms.locfileid: "75596082"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

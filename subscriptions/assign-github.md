@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: 管理 Visual Studio + GitHub Enterprise 供應專案中的訂用帳戶
-ms.openlocfilehash: 29df2d7c43f934e44b7585e975e0f77328305ba5
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 524002b875375c22da67bbf98d98f4ebc149c14b
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150141"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558148"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>管理含 GitHub Enterprise 的 Visual Studio 訂閱
 具有 Microsoft Enterprise 合約（EA）的客戶有資格購買新的訂用帳戶供應專案，以結合 Visual Studio 標準訂閱和 GitHub Enterprise。 Visual Studio 訂閱者若想取得 GitHub Enterprise，這是個既簡單又經濟實惠的方法。 
@@ -42,27 +42,27 @@ GitHub 以雲端式 GitHub.com 或內部部署 GitHub Enterprise Server 的形�
 
 ### <a name="githubcom"></a>GitHub.com 
 如需有關管理 GitHub.com 的詳細資訊，請參閱 [GitHub 說明](https://help.github.com/en)的下列主題。
-- [說明主題的完整清單](https://help.github.com/en)
-- [管理組織中的成員資格](https://help.github.com/en/articles/managing-membership-in-your-organization)
-> - [邀請使用者加入您的組織](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
-> - [從小組/組織移除使用者](https://help.github.com/en/articles/removing-a-member-from-your-organization)
-> - [恢復組織的前任成員](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
-- [使用角色管理存取權](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
-- [將使用者分成小組](https://help.github.com/en/articles/organizing-members-into-teams)
-- [管理組織存放庫的存取權](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
++ [說明主題的完整清單](https://help.github.com/en)
++ [管理組織中的成員資格](https://help.github.com/en/articles/managing-membership-in-your-organization)
++ [邀請使用者加入您的組織](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
+    - [從小組/組織移除使用者](https://help.github.com/en/articles/removing-a-member-from-your-organization)
+    - [恢復組織的前任成員](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
++ [使用角色管理存取權](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
++ [將使用者分成小組](https://help.github.com/en/articles/organizing-members-into-teams)
++ [管理組織存放庫的存取權](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
 
 ### <a name="github-enterprise-server"></a>GitHub Enterprise Server
 GitHub 說明提供包羅萬象的系統管理員指南，除了回答問題，也提供管理組織 GitHub Enterprise Server 實作的秘訣。
 
-- [檢視所有系統管理員指南](https://help.github.com/en/enterprise/2.16/admin)
-- [使用者管理](https://help.github.com/en/enterprise/2.16/admin/user-management)
-> - [組織與小組](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
-> > - [建立組織](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
-> > - [建立小組](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
-> > - [將人員新增到小組](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
-> > - [從小組及組織移除人員](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
-> - [使用者安全性](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
-- [安裝及設定 GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation)
++ [檢視所有系統管理員指南](https://help.github.com/en/enterprise/2.16/admin)
++ [使用者管理](https://help.github.com/en/enterprise/2.16/admin/user-management)
+    - [組織與小組](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
+        - [建立組織](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
+        - [建立小組](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
+        - [將人員新增到小組](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
+        - [從小組及組織移除人員](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
+    - [使用者安全性](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
++ [安裝及設定 GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation)
 
 ## <a name="support-resources"></a>支援資源
 - 您可以在 [GitHub 說明](https://help.github.com/en)中，找到各種 GitHub 各種相關問題的答案。

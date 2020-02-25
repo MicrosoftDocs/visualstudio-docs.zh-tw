@@ -1,8 +1,8 @@
 ---
-title: 從命令列測量 CPU 使用量
-description: 從命令列測量應用程式的 CPU 效能。
+title: 從命令列測量效能
+description: 從命令列測量應用程式中的 CPU 效能和受控記憶體使用量。
 ms.custom: ''
-ms.date: 02/19/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, command-line
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bf0c236f34e753866ea114dfc7f45e8f16a979
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972410"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558130"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>從命令列測量應用程式的效能
 
@@ -27,7 +27,7 @@ ms.locfileid: "62972410"
 
 本文所述範例會收集 Microsoft [記事本] 的效能資訊，但您可以使用相同的方法來分析任何處理序。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 * Visual Studio 2019 Preview 3 或更新版本
 
@@ -74,7 +74,7 @@ ms.locfileid: "62972410"
 ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
 * CpuUsage 組態 (基底/高/低)，其會對應至 [CPU 使用量](../profiling/cpu-usage.md)分析工具收集到的資料。
-* DotNetObjectAlloc 組態 (基底/低)，其會對應至 [.NET 物件配置工具](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-version-15-8-preview-3/#tooling)收集到的資料。
+* DotNetObjectAlloc 組態 (基底/低)，其會對應至 [.NET 物件配置工具](../profiling/dotnet-alloc-tool.md)收集到的資料。
 
 組態的基底/高/低是指取樣率。 例如，低表示 100 個範例/秒，而高表示 4000 個範例/秒。
 

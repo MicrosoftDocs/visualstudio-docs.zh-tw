@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb651d9b35dd4531f4d14e169ab6f04376d4dfff
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 575b0254768ac359e43cd5b04c23a220549ac973
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735696"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557925"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷快速入門
 在本節中，您將準備第一次使用圖形診斷，並從 Direct3D 應用程式擷取畫面格，然後在圖形分析器中檢查它們。
@@ -35,11 +35,11 @@ ms.locfileid: "72735696"
 
 1. 在 [搜尋] 中，輸入 [**應用程式和功能**]，然後開啟 [**應用程式 & 功能**] 設定。
 
-2. 在 [**應用程式 & 功能**] 對話方塊右側，選擇 [**管理選擇性功能**] （在 [**應用程式 & 功能**] 底下）。
+2. 在 [**應用程式] & [功能**] 設定的右側，選擇 [**選用功能**] （在 [**應用程式 & 功能**] 底下）。
 
-   [管理選擇性功能] 對話方塊隨即出現。
+   [**選用功能**] 設定隨即出現。
 
-3. 在 [管理選擇性功能] 對話方塊中，選擇 [新增功能]。 您可以安裝的選擇性功能清單隨即出現。
+3. 在 [**選用功能**] 設定中，選擇 [**新增功能**]。 您可以安裝的選擇性功能清單隨即出現。
 
 4. 從功能清單中選取 [圖形工具]，然後選擇 [安裝]。
 
@@ -49,7 +49,7 @@ ms.locfileid: "72735696"
 > Windows 10 的選擇性圖形工具功能提供輕量型擷取和播放功能 (例如命令列擷取程式 **dxcap.exe**)，以用於未安裝開發人員工具之電腦的支援、測試和診斷案例。 如需詳細資訊，請參閱[命令列擷取工具](command-line-capture-tool.md)主題。
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>第一次使用圖形診斷
- 您現在已具備所有必要元件，可以開始使用圖形診斷。 請依照下列步驟進行。
+ 您現在已具備所有必要元件，可以開始使用圖形診斷。 請直接遵循下列步驟。
 
 ### <a name="1---create-a-direct3d-app"></a>1 - 建立 Direct3D 應用程式
  如果您已經有自己的 Direct3D 應用程式來探索圖形診斷，很棒！ 否則，請使用下列其中一項：
@@ -87,5 +87,5 @@ ms.locfileid: "72735696"
 
  若要深入瞭解如何搭配使用圖形分析器工具，請參閱[範例](graphics-diagnostics-examples.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Direct3D 12 圖形](/windows/desktop/direct3d12/direct3d-12-graphics)

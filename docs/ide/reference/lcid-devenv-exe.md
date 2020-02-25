@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c4af137edc80166d6a652c676d5607d8c2328d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595523"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557929"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -35,11 +35,11 @@ ms.locfileid: "75595523"
 devenv {/LCID|/L} LocaleID
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 
 - *LocaleID*
 
-  必要項。 所指定語言的地區設定識別碼 (LCID)。
+  必要。 所指定語言的地區設定識別碼 (LCID)。
 
 ## <a name="remarks"></a>備註
 
@@ -49,17 +49,22 @@ devenv {/LCID|/L} LocaleID
 
 下表列出 Visual Studio 所支援語言的 LCID。
 
-|語言|LCID|
+|Language|LCID|
 |--------------|----------|
 |中文 (簡體)|2052|
-|和 SharePoint 2010 顯示的|1028|
+|中文 (繁體)|1028|
+|捷克文|1029|
 |英文|1033|
 |法文|1036|
 |德文|1031|
 |義大利文|1040|
 |日文|1041|
 |韓文|1042|
+|波蘭文|1045|
+|葡萄牙文 (巴西)|1046|
+|俄文|1049|
 |西班牙文|3082|
+|土耳其文|1055
 
 ## <a name="example"></a>範例
 
@@ -69,7 +74,7 @@ devenv {/LCID|/L} LocaleID
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
 - [選項對話方塊、環境、國際設定](../../ide/reference/international-settings-environment-options-dialog-box.md)

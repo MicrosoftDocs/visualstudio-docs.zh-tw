@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b092c910b0303a62289e75b168e39628cbd0314b
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: e740860046ee9d18a137dbd513202e259e90bf79
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476998"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557968"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,13 +101,11 @@ ms.locfileid: "77476998"
   
     2. 新增此**符號檔（.pdb）位置**：  
   
-         `https://msdl.microsoft.com/download/symbols`  
+       `https://msdl.microsoft.com/download/symbols`  
   
     3. 若要改善效能，請指定符號快取資料夾，例如：  
-  
-        ```  
-        C:\symbols  
-        ```  
+
+       `C:\symbols`  
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>疑難排解遺失的 VSPackage 或其相依性的其中之一  
   
@@ -117,7 +115,7 @@ ms.locfileid: "77476998"
   
    2. 選取 [**屬性頁**] 對話方塊中的 [**參考**] 索引標籤，並確定所有路徑都正確。 或者，您可以使用**物件瀏覽器**來流覽參考的物件。  
   
-        若為 managed 程式碼，您可以使用[fuslogvw.exe （元件系結記錄檢視器）](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296)來顯示失敗元件載入的詳細資料。  
+        若為 managed 程式碼，您可以使用[fuslogvw.exe （元件系結記錄檢視器）](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer)來顯示失敗元件載入的詳細資料。  
   
 2. 若為非受控碼，請在 [[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 登錄] 節點中尋找 VSPackage 的 CLSID：  
   

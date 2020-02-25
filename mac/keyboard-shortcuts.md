@@ -5,12 +5,12 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: af7fa16100f31a6c4042e40bf8f270be9a78d2ec
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 2877f50528c5f93d6f764cc0dbde12a5bdf06a49
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984557"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567968"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的預設鍵盤快速鍵
 
@@ -20,6 +20,13 @@ ms.locfileid: "74984557"
 
 > [!TIP]
 > 此文件中顯示的鍵盤快速鍵，以及 Visual Studio for Mac 中的按鍵繫結關係喜好設定，都會使用 macOS 中常用的符號呈現。 如果不知道符號外觀，請檢閱 [macOS 按鍵符號查找表](#macos-key-symbols-lookup)。
+
+## <a name="downloadable-quick-ref-pdfs"></a>可下載的快速參考 pdf
+
+我們已將最常使用且最有用的鍵盤快速鍵，編譯成可下載的 pdf 檔案。 我們有兩個版本，一個會顯示 Visual Studio for Mac 的快捷方式，另一個版本會顯示在使用 Windows 時，與先前使用 Visual Studio 經驗的使用者 Visual Studio。
+
+ - [Visual Studio for Mac 鍵盤快速鍵快速參考](https://aka.ms/vsm-keys)
+ - [Visual Studio & Visual Studio for Mac 鍵盤快速鍵快速參考](https://aka.ms/vsm-vs-keys)
 
 ## <a name="code-navigation"></a>程式碼巡覽
 
@@ -44,29 +51,29 @@ ms.locfileid: "74984557"
 |顯示下一個陳述式|**⌥\***|
 |逐步執行|**⇧⌘I**, **⌘F11**|
 |跳出|**⇧⌘U**, **⇧⌘F11**|
-|逐程序|**⇧⌘O**, **F10**|
+|不進入函數|**⇧⌘O**, **F10**|
 |切換中斷點|**⌘\\** , **F9**|
 |檢視中斷點|**⌥⌘B**|
 
-## <a name="designer"></a>Designer
+## <a name="designer"></a>設計師
 
 |命令|鍵盤快速鍵|
 |-|-|
 |在相關檔案之間切換|**⌃⌘↑**|
 
-## <a name="edit"></a>Edit
+## <a name="edit"></a>編輯
 
 |命令|鍵盤快速鍵|
 |-|-|
 |限制式編輯模式|**⌘E**|
-|複製|**⌘C**|
+|[複製]|**⌘C**|
 |剪下|**⌘X**|
 |刪除|**⌘⌫**|
 |格式化文件|**⌃I**|
 |縮排選取範圍|**⌘]**|
 |貼上|**⌘V**|
-|偏好設定|**⌘,**|
-|重做|**⇧⌘Z**|
+|喜好設定|**⌘,**|
+|取消復原|**⇧⌘Z**|
 |重新命名|**⌘R**, **F2**|
 |全選|**⌘A**|
 |顯示程式碼產生|**⌘I**|
@@ -89,7 +96,7 @@ ms.locfileid: "74984557"
 |傳送參考到 F# 互動|**⌃⌥P**|
 |將選取範圍傳送至 F# 互動|**⌃⏎**|
 
-## <a name="file"></a>File
+## <a name="file"></a>檔案
 
 |命令|鍵盤快速鍵|
 |-|-|
@@ -99,13 +106,13 @@ ms.locfileid: "74984557"
 |新增檔案|**⌘N**|
 |新增方案|**⇧⌘N**|
 |開啟|**⌘O**|
-|Print|**⌘P**|
-|Quit|**⌘Q**|
-|還原|**⌘U**|
+|列印|**⌘P**|
+|結束|**⌘Q**|
+|Revert|**⌘U**|
 |儲存|**⌘S**|
 |全部儲存|**⇧⌘S**|
 
-## <a name="help"></a>說明
+## <a name="help"></a>説明
 
 |命令|鍵盤快速鍵|
 |-|-|
@@ -119,21 +126,21 @@ ms.locfileid: "74984557"
 |實作 Unity 訊息|**⇧⌘M**|
 |檢查|**⌥⌘I**|
 
-## <a name="project"></a>專案
+## <a name="project"></a>隨附此逐步解說的專案
 
 |命令|鍵盤快速鍵|
 |-|-|
 |新增檔案|**⌥⌘A**|
-|組建|**⌘K**, **⇧F6**|
+|Build|**⌘K**, **⇧F6**|
 |全部建置|**⌘B**, **F6**|
-|清除|**⇧⌘K**|
-|Rebuild|**⌃⌘K**|
+|Clean|**⇧⌘K**|
+|重建|**⌃⌘K**|
 |全部重建|**⌃⌘B**|
-|開始偵錯|**⌘⏎**, **F5**|
+|[偵錯]|**⌘⏎**, **F5**|
 |啟動但不偵錯|**⌥⌘⏎**, **⌃F5**|
-|結束|**⇧⌘⏎**, **⇧F5**|
+|Stop|**⇧⌘⏎**, **⇧F5**|
 
-## <a name="refactoring"></a>Refactoring
+## <a name="refactoring"></a>重構
 
 |命令|鍵盤快速鍵|
 |-|-|
@@ -144,11 +151,11 @@ ms.locfileid: "74984557"
 
 |命令|鍵盤快速鍵|
 |-|-|
-|命令|**⇧⌘P**|
+|Command|**⇧⌘P**|
 |檔案中尋找|**⇧⌘F**|
-|尋找下一個|**⌘G**, **F3**|
+|找下一個|**⌘G**, **F3**|
 |找下一個相似的選取範圍|**⌘E**, **⌘F3**|
-|尋找上一個|**⇧⌘G**, **⇧F3**|
+|找上一個|**⇧⌘G**, **⇧F3**|
 |找上一個相似的選取範圍|**⇧⌘F3**|
 |Find|**⌘F**|
 |移至檔案|**⇧⌘D**|
@@ -156,7 +163,7 @@ ms.locfileid: "74984557"
 |移至類型|**⇧⌘T**|
 |巡覽至|**⌘.**|
 |檔案中取代|**⌥⇧⌘F**|
-|取代|**⌥⌘F**|
+|Replace|**⌥⌘F**|
 
 ## <a name="text-editor"></a>文字編輯器
 
@@ -218,7 +225,7 @@ ms.locfileid: "74984557"
 |全螢幕|**⌃⌘F**|
 |移到下個筆記本|**⌥⌘→**|
 |前往上個筆記本|**⌥⌘←**|
-|向後巡覽|**⌃⌘←**|
+|往回導覽|**⌃⌘←**|
 |向前巡覽|**⌃⌘→**|
 |正常大小|**⌘0**|
 |一個編輯器資料行|**⌥⌘1**|
@@ -228,7 +235,7 @@ ms.locfileid: "74984557"
 |放大|**⌘+** , **⌘=**|
 |縮小|**⌘-** , **⌘_**|
 
-## <a name="window"></a>視窗
+## <a name="window"></a>時間範圍
 
 |命令|鍵盤快速鍵|
 |-|-|
@@ -253,7 +260,7 @@ ms.locfileid: "74984557"
 
 ## <a name="macos-key-symbols-lookup"></a>macOS 按鍵符號查找
 
-|符號|索引鍵|
+|符號|Key|
 |-|-|
 |⌘|**Command** (**cmd**)|
 |⌥|**Option** (**alt**)|
@@ -265,11 +272,11 @@ ms.locfileid: "74984557"
 |⌦|**往前刪除**|
 |⏎|**Return**|
 |←→↑↓|**方向鍵**|
-|↖|**Home**|
-|↘|**End**|
+|↖|**首頁**|
+|↘|**結束**|
 |␣|**空格鍵**|
 |⇥|**Tab**|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的鍵盤快速鍵 (Windows 上)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

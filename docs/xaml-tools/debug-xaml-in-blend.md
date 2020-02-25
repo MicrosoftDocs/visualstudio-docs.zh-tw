@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 5d6f0e54c37c394fce464b07440daa99b4dd7d5e
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9ac692c756aaa29b2b13f20eecd039154a28d80b
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188894"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558188"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中偵錯 XAML
 
@@ -103,13 +103,13 @@ ms.locfileid: "73188894"
 
 1. 按兩下清單中的第一個錯誤。 此描述為「值 '<' 不是有效的屬性」。 當您按兩下錯誤時，指標隨即找到程式碼中對應的位置。 `<` 前面的 `Button` 為有效字元，並非錯誤訊息中建議的屬性。 如果查看前一行程式碼，您會注意到 `Top` 屬性的右引號不見了。 請輸入右引號。 請注意，[結果] 面板中的錯誤清單隨即更新以反映您的變更。
 
-2. 按兩下描述 "' 0 ' 在名稱開頭無效。" `Margin="0,149,0,0"` 的格式會正確。 但是，請注意 `Margin` 的色彩標示與程式碼中的其他 `Margin` 執行個體不符。 由於這個 `VerticalAlignment="Top` 前方的名稱/值組少了右引號 (`Margin="`)，因此就被視為屬於前一個屬性的值，導致 0 被視為名稱/值組的開頭。 請輸入 `Top` 的右引號。 [結果] 面板中的錯誤清單隨即更新以反映您的變更。
+2. 按兩下描述 "' 0 ' 在名稱開頭無效。" `Margin="0,149,0,0"` 看起來是正確的格式。 但是，請注意 `Margin` 的色彩標示與程式碼中的其他 `Margin` 執行個體不符。 由於這個 `VerticalAlignment="Top` 前方的名稱/值組少了右引號 (`Margin="`)，因此就被視為屬於前一個屬性的值，導致 0 被視為名稱/值組的開頭。 請輸入 `Top` 的右引號。 [結果] 面板中的錯誤清單隨即更新以反映您的變更。
 
 3. 按兩下剩餘的錯誤 [關閉的 XML 標籤 "Button" 不相符]。 指標隨即移至結尾**方格**標記處 (`</Grid>`)，提示錯誤是發生在 `Grid` 物件內。 請注意，第二個 `Button` 物件少了結尾標記。 在您新增結尾 `/` 之後，[結果] 面板清單也隨即更新。 我們現在已經解決一開始出現的錯誤，但是又出現了兩個錯誤。
 
 4. 按兩下 [無法識別或無法存取成員 "content"。]， `c` 中的 `content` 應該是大寫才對。 請將小寫 "c" 改成大寫 "C"。
 
-5. 按兩下 屬性 ' Mame ' 不存在於 ' <http://schemas.microsoft.com/winfx/2006/xaml> ' 命名空間中」。 "Mame" 中的 "M" 應該是 "N" 才對。 請將 "M" 改成 "N"。 現在已經可以解析 XAML，應用程式也隨即顯示在設計介面上。
+5. 按兩下 屬性 ' Mame ' 不存在於 `http://schemas.microsoft.com/winfx/2006/xaml` 命名空間中」。 "Mame" 中的 "M" 應該是 "N" 才對。 請將 "M" 改成 "N"。 現在已經可以解析 XAML，應用程式也隨即顯示在設計介面上。
 
     ![在 Blend for Visual Studio 中調試 XAML](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
 
@@ -121,6 +121,6 @@ ms.locfileid: "73188894"
 
 如需有關偵錯工具的詳細資訊，請參閱[Visual Studio 中的 DEBUG UWP apps](../debugger/debugging-windows-store-and-windows-universal-apps.md)。
 
-## <a name="get-help"></a>取得協助
+## <a name="get-help"></a>取得說明
 
 如果您需要更多協助以進行 Blend 應用程式的調試，您可以搜尋[UWP app 社區論壇](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps)以取得問題的相關文章或張貼問題。
