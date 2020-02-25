@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92287c052282553a33222deb548609101d839291
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 8fd77fe5fc00e8c1a3b487c93a6004b2f8cf7060
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278674"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558193"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>快速入門：在 Visual Studio 中分析 CPU 使用量C#資料（，Visual Basic）
 
@@ -54,7 +54,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
    ::: moniker-end
 
-   Visual Studio 會隨即開啟您的新專案。
+   Visual Studio 會開啟您的新專案。
 
 2. 開啟 *Program.cs*，並將所有程式碼取代為下列程式碼：
 

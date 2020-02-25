@@ -1,6 +1,6 @@
 ---
 title: EditorConfig 的 .NET 程式碼慣例設定
-ms.date: 06/14/2018
+ms.date: 02/21/2020
 ms.topic: reference
 helpviewer_keywords:
 - coding conventions [EditorConfig]
@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2c93a6e86ba82a75dabb8b2be77d2a82a3b4d599
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e3ca9ed577fd253c81919f49a67c8286fbe28255
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566237"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557786"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
-您可以使用 [EditorConfig](../ide/create-portable-custom-editor-options.md) 檔案定義程式碼基底的程式碼樣式並維持一致。 EditorConfig 包含數個核心格式設定屬性，例如 `indent_style` 和 `indent_size`。 在 Visual Studio 中，也可以使用 EditorConfig 檔案來設定 .NET 編碼慣例設定。 您可以啟用或停用個別的 .NET 編碼慣例，並設定您希望強制執行每個規則的程度 (透過嚴重性等級)。
+您可以使用[EditorConfig](../ide/create-portable-custom-editor-options.md)檔案，在程式碼基底中定義和維護一致的程式碼樣式。 EditorConfig 包含數個核心格式設定屬性，例如 `indent_style` 和 `indent_size`。 在 Visual Studio 中，也可以使用 EditorConfig 檔案來設定 .NET 編碼慣例設定。 您可以啟用或停用個別的 .NET 編碼慣例，並設定您希望強制執行每個規則的程度 (透過嚴重性等級)。
 
 > [!TIP]
 > - 當您在 EditorConfig 檔案中定義編碼慣例時，您會設定您想要的程式[代碼樣式分析器](../code-quality/roslyn-analyzers-overview.md)如何內建于分析您的程式碼 Visual Studio。 EditorConfig 檔案是這些分析器的設定檔。
@@ -46,7 +46,7 @@ ms.locfileid: "75566237"
 
 ## <a name="example-editorconfig-file"></a>EditorConfig 檔案範例
 
-為了協助您開始使用，以下是含有預設選項的 *.editorconfig* 檔案範例：
+為了協助您開始使用，以下是具有預設選項的*editorconfig*檔案範例。 在 Visual Studio 中，您可以產生此檔案，並將它儲存至 [**工具** > **選項**] > **文字編輯器**> [**C#** 或**基本**] > 程式**代碼樣式** > **一般**] 的專案。 然後，從 [設定] 按鈕按一下 [**產生 editorconfig**檔案]。 如需詳細資訊，請參閱程式[代碼樣式喜好](code-styles-and-code-cleanup.md)設定。
 
 ```ini
 ###############################
@@ -70,9 +70,9 @@ charset = utf-8-bom
 ###############################
 
 [*.{cs,vb}]
+
 # Organize usings
 dotnet_sort_system_directives_first = true
-dotnet_separate_import_directive_groups = false
 
 # this. preferences
 dotnet_style_qualification_for_field = false:silent
@@ -113,8 +113,7 @@ dotnet_style_prefer_conditional_expression_over_return = true:silent
 
 # Style Definitions
 dotnet_naming_style.pascal_case_style.capitalization             = pascal_case
-
-# Use PascalCase for constant fields
+# Use PascalCase for constant fields  
 dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = suggestion
 dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
 dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = pascal_case_style
@@ -123,10 +122,11 @@ dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
 dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 ###############################
-# C# Code Style Rules         #
+# C# Coding Conventions       #
 ###############################
 
 [*.cs]
+
 # var preferences
 csharp_style_var_for_built_in_types = true:silent
 csharp_style_var_when_type_is_apparent = true:silent
@@ -140,7 +140,7 @@ csharp_style_expression_bodied_properties = true:silent
 csharp_style_expression_bodied_indexers = true:silent
 csharp_style_expression_bodied_accessors = true:silent
 
-# Pattern-matching preferences
+# Pattern matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
@@ -188,24 +188,24 @@ csharp_space_around_binary_operators = before_and_after
 csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
 csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_between_method_call_empty_parameter_list_parentheses = false
-csharp_space_after_comma = true
-csharp_space_after_dot = false
 
 # Wrapping preferences
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
-##################################
-# Visual Basic Code Style Rules  #
-##################################
+###############################
+# VB Coding Conventions       #
+###############################
 
 [*.vb]
+
 # Modifier preferences
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [快速動作](../ide/quick-actions.md)
-- [建立可攜式自訂編輯器選項](../ide/create-portable-custom-editor-options.md)
-- [.NET 編譯器平台的 .editorconfig 檔案](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [使用 EditorConfig 建立可攜式自訂編輯器設定](../ide/create-portable-custom-editor-options.md)
+- [.NET Compiler Platform "Roslyn" editorconfig 檔案](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [.NET Compiler Platform editorconfig 檔案](https://github.com/dotnet/runtime/blob/master/.editorconfig)

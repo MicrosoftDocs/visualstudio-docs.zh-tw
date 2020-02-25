@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 843d56482a82c2a8210de50455753c9703698503
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189165"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557839"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本建立網站資料行專案專案（第1部分）
   SharePoint 專案是一個或多個 SharePoint 專案專案的容器。 您可以藉由建立您自己的 SharePoint 專案專案類型，然後將它們與專案範本產生關聯，在 Visual Studio 中擴充 SharePoint 專案系統。 在此逐步解說中，您將定義用來建立網站資料行的專案專案類型，然後您會建立專案範本，以用來建立包含網站資料行專案專案的新專案。
@@ -134,7 +134,7 @@ ms.locfileid: "73189165"
 
 1. 在 ProjectItemTypeDefinition 專案中，加入名為**SiteColumnProjectItemTypeProvider**的程式碼檔案。
 
-2. 在功能表列上，選擇 [專案]  >  [加入參考]。
+2. 在功能表列上，選擇 [專案] >  [加入參考]。
 
 3. 在 [**參考管理員-ProjectItemTypeDefinition** ] 對話方塊中，展開 [**元件**] 節點，選擇 [**架構**] 節點，然後選取 [system.workflow.componentmodel.activity] 核取方塊。
 
@@ -431,7 +431,7 @@ ms.locfileid: "73189165"
 
    - 針對每個專案實例中包含的每個 filethat 加入 `ProjectItem` 元素。
 
-   - 使用命名空間 "<http://schemas.microsoft.com/developer/vstemplate/2005>"。 此方案中的其他專案檔使用「<http://schemas.microsoft.com/developer/msbuild/2003>」命名空間。 因此，將會產生 XML 架構警告訊息，但在本逐步解說中，您可以忽略它們。
+   - 使用命名空間 `http://schemas.microsoft.com/developer/vstemplate/2005`。 此方案中的其他專案檔會使用 `http://schemas.microsoft.com/developer/msbuild/2003` 命名空間。 因此，將會產生 XML 架構警告訊息，但在本逐步解說中，您可以忽略它們。
 
      如需 *.vstemplate*檔案內容的詳細資訊，請參閱[Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)。
 
@@ -702,7 +702,7 @@ ms.locfileid: "73189165"
 
 6. 在**方案總管**中，選擇 [ **Field1** ] 節點，然後選擇**F4**鍵。
 
-     [**屬性**] 視窗隨即開啟。
+     [屬性] 視窗隨即開啟。
 
 7. 在 [屬性] 清單中，確認已顯示 [屬性**範例] 屬性**。
 
@@ -752,7 +752,7 @@ ms.locfileid: "73189165"
 ## <a name="next-steps"></a>後續步驟
  完成本逐步解說之後，您可以將 wizard 加入專案範本。 當使用者建立網站資料行專案時，此 wizard 會要求使用者提供用於進行偵測的網站 URL，以及是否要將新的方案設定為沙箱，而 wizard 會使用此資訊來設定新的專案。 此 wizard 也會收集資料行的相關資訊（例如，要在 [網站] 資料行庫中列出資料行的基底類型和群組），並將這項資訊新增至新專案中的*Elements .xml*檔案。 如需詳細資訊，請參閱[逐步解說：使用專案範本建立網站資料行專案專案（第2部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [逐步解說：使用專案範本建立網站資料行專案專案（第2部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)
 - [定義自訂 SharePoint 專案專案類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794b53a71a0a8215ae6bc9af47f9fe2a0ff911b5
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: b1d2512c14c0630d2268adfa465e092555150943
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806886"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557875"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 如果您使用 Windows Server 上的 Internet Information Services （IIS），而且您的部署包含 Windows 無法辨識的檔案類型（例如 Microsoft Word 檔案），則 IIS 會拒絕傳送該檔案，而且您的部署將會失敗。
@@ -49,7 +49,7 @@ ms.locfileid: "72806886"
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce 和 proxy 驗證
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供從 .NET Framework 3.5 開始的 Windows 整合式 proxy 驗證支援。 不需要特定的 machine.config 指示詞。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不提供其他驗證通訊協定（例如基本或摘要）的支援。
 
- 您也可以將修補程式套用至 .NET Framework 2.0，以啟用這項功能。 如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkId=158730 。
+ 您也可以將修補程式套用至 .NET Framework 2.0，以啟用這項功能。 如需詳細資訊，請參閱[FIX：當您嘗試將在 .NET Framework 2.0 中建立的 ClickOnce 應用程式安裝到設定為使用 proxy 伺服器的用戶端電腦時，請參閱修正 . 錯誤訊息：「需要 proxy 驗證](https://support.microsoft.com/help/917952/fix-error-message-when-you-try-to-install-a-clickonce-application-that)」。
 
  如需詳細資訊，請參閱[\<defaultProxy > 元素（網路設定）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)。
 
@@ -75,7 +75,7 @@ ms.locfileid: "72806886"
 ```
 
 > [!NOTE]
-> 如果網站提示您輸入預設認證以外的認證，您可以進行 NTLM （NT 挑戰-回應）驗證，然後在 [安全性] 對話方塊中，當系統提示您是否要儲存提供的認證時，按一下 **[確定]** 未來的研討會。 不過，這種因應措施不適用於基本驗證。
+> 如果網站提示您輸入預設認證以外的認證，您可以進行 NTLM （NT 挑戰-回應）驗證，而在 [安全性] 對話方塊中，當系統提示您是否要儲存提供的認證供未來的會話使用時，請按一下 **[確定]** 。 不過，這種因應措施不適用於基本驗證。
 
 ## <a name="use-third-party-web-servers"></a>使用協力廠商 Web 服務器
  如果您要從 IIS 以外的 Web 服務器部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，則可能會在伺服器傳回不正確的金鑰 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 檔案內容類型（例如部署資訊清單和應用程式資訊清單）時遇到問題。 若要解決此問題，請參閱您的網頁伺服器說明文件，以瞭解如何將新的內容類型新增至伺服器，並確定下表所列的所有副檔名對應皆已就緒。
@@ -118,7 +118,7 @@ ms.locfileid: "72806886"
 
 - 如果您建立副檔名為 "<em>" 且 mime 類型為 "application/八進位-stream" 的 mime 類型，則會允許下載已解除封鎖的檔案類型檔案。（不過，無法下載已封鎖的檔案類型，例如 * .aspx</em>和 *.asmx* ）。
 
-  如需有關在 Windows Server 上設定 MIME 類型的特定指示，請參閱 Microsoft 知識庫文章 KB326965 「IIS 6.0 不提供未知的 MIME 類型」（位於[http://support.microsoft.com/default.aspx?scid=kb ; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)）。
+  如需在 Windows Server 上設定 MIME 類型的特定指示，請參閱[如何將 mime 類型新增至網站或應用程式](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application)。
 
 ## <a name="content-type-mappings"></a>內容類型對應
  透過 HTTP 發佈時，*應用*程式檔的內容類型（也稱為 MIME 類型）應為 "application/x-ms-應用程式"。 如果您已在伺服器上安裝 .NET Framework 2.0，則會自動為您設定。 如果未安裝，則您需要為 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式 vroot （或整部伺服器）建立 MIME 類型關聯。
@@ -132,7 +132,7 @@ ms.locfileid: "72806886"
 
  如需 IIS 的詳細指示，請參閱[如何指定 HTTP 壓縮的其他檔案類型](https://support.microsoft.com/help/234497)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [針對 ClickOnce 部署進行疑難排解](../deployment/troubleshooting-clickonce-deployments.md)
 - [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)

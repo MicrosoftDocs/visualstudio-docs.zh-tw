@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 794d417d3995e35b48dc6102bfdeddfa8b992548
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 82181d906adc3454dfe77ef4fb21d8bdf99df16f
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476900"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557981"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>如何：指定位置讓終端使用者從此處執行安裝作業
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "77476900"
   
 2. 按一下 [Publish (發行)] 索引標籤。  
   
-3. 在 [安裝 URL] 欄位中，使用 https://www.microsoft.com/ApplicationName格式的完整 URL，或使用 \\\Server\ApplicationName. 格式的 UNC 路徑，輸入安裝位置。  
+3. 在 [安裝 URL] 欄位中，使用 `https://www.contoso.com/ApplicationName`格式的完整 URL，或使用 `\\Server\ApplicationName`格式的 UNC 路徑，輸入安裝位置。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：指定 Visual Studio 複製檔案的位置](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

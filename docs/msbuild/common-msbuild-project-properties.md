@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3ccd23775c93fb7222960c4db3ae5d35eb349f
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b4fd82cee49c698c9244a2851d4e671ae6a94508
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77275487"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557881"
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性
 下表列出 Visual Studio 專案檔中所定義或 MSBuild 提供的 *.targets* 檔案中所包含的最常用屬性。
@@ -66,8 +66,9 @@ ms.locfileid: "77275487"
 | ErrorReport | 指定編譯器工作報告編譯器內部錯誤的方式。 有效值為 "prompt"、"send" 或 "none"。 這個屬性相當於 `/errorreport` 編譯器參數。 |
 | ExcludeDeploymentUrl | 如果專案檔包含下列任何項目，[GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)會將 deploymentProvider 標記新增至部署資訊清單：<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> 不過，若使用 ExcludeDeploymentUrl，即使指定了上述任何 URL，仍可以防止將 deploymentProvider 標記加入至部署資訊清單。 若要防止加入該標記，請將下列屬性加入至您的專案檔：<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**注意：** ExcludeDeploymentUrl 不會在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中公開，只能透過手動編輯專案檔的方式設定。 設定這個屬性不會影響 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 內的發行作業，也就是說，deploymentProvider 標記仍會加入至 PublishUrl 所指定的 URL。 |
 | FileAlignment | 以位元組為單位，指定要對齊輸出檔案區段的位置。 有效的值為 512、1024、2048、4096、8192。 這個屬性相當於 `/filealignment` 編譯器參數。 |
-| FrameworkPathOverride | 指定 mscorlib.dll 和 microsoft.visualbasic.dll 的位置。 此參數 (Parameter) 相當於 `/sdkpath`vbc.exe*編譯器的* 參數 (Switch)。 |
+| FrameworkPathOverride | 指定 *mscorlib.dll* 和 *microsoft.visualbasic.dll* 的位置。 此參數 (Parameter) 相當於 `/sdkpath`vbc.exe*編譯器的* 參數 (Switch)。 |
 | GenerateDocumentation | （C#，Visual Basic）布林值參數，指出組建是否產生檔。 如果為 `true`，則建置會產生文件資訊，並將該資訊連同建置工作所建立的可執行檔或程式庫的名稱放入 *.xml* 檔。 |
+| GenerateFullPaths | （C#）使用[-fullpaths](/dotnet/csharp/language-reference/compiler-options/fullpaths-compiler-option)編譯器選項，在輸出中產生檔案名的完整路徑。 |
 | GenerateSerializationAssemblies | 指出 XML 序列化組件是否應該由 *SGen.exe* 產生，其可設為開啟、自動或關閉。 這個屬性僅適用於以 .NET Framework 為目標的組件。 若要產生適用於 .NET Standard 或 .NET Core 組件的 XML 序列化組件，請參考 *Microsoft.XmlSerializer.Generator* NuGet 套件。 |
 | IntermediateOutputPath | 如果沒有指定路徑，則為衍生自 `BaseIntermediateOutputPath` 的完整中繼輸出路徑。 例如， *\obj\debug\\* 。 |
 | KeyContainerName | 強式名稱金鑰容器的名稱。 |

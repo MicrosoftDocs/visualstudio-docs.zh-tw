@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6826ae1f957778ac6eea556fdbbe9589ab3390b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 94ed90b9fcdd0c4ffe35789d00de4bbbd4aaa355
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727899"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557639"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>如何：與 ClickOnce 應用程式一起包含必要元件
 在您隨 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式散發必要條件軟體之前，必須先將這些必要條件的安裝程式套件下載到您的開發電腦。 當您發行應用程式並選擇 [從應用程式的相同位置下載必要條件] 時，如果安裝程式套件不在 [套件] 資料夾中，就會發生錯誤。
@@ -31,10 +31,10 @@ ms.locfileid: "72727899"
 
 3. 在 [記事本] 中，開啟 *Package.xml* 檔案。
 
-4. 找出包含 **http://go.microsoft.com/fwlink** 的**Name**元素，然後複製 URL。 包括 **LinkID** 部分。
+4. 找出包含 `http://go.microsoft.com/fwlink`的**Name**元素，然後複製 URL。 包括 **LinkID** 部分。
 
    > [!NOTE]
-   > 如果沒有**Name**元素包含 **http://go.microsoft.com/fwlink** ，請在必要條件的根資料夾中開啟 **.xml**檔案，然後找出**fwlink**字串。
+   > 如果沒有**Name**元素包含 `http://go.microsoft.com/fwlink`，請在必要條件的根資料夾中開啟 **.xml**檔案，然後找出**fwlink**字串。
 
    > [!IMPORTANT]
    > 有些必要條件包含多個安裝程式套件 (例如，用於 32 位元或 64 位元系統)。 如果有多個 [Name] 元素包含 **fwlink**，則必須針對每一個元素重覆其餘步驟。
@@ -49,5 +49,5 @@ ms.locfileid: "72727899"
 
     現在您可以隨應用程式散發安裝程式套件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：使用 ClickOnce 應用程式安裝必要元件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
