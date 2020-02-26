@@ -5,17 +5,17 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0fa7afc7262a1a78b356104f8cc206e8898f22e
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776123"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579454"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步驟 1：建立專案並將標籤加入至表單
 
@@ -54,17 +54,17 @@ ms.locfileid: "75776123"
    ![選擇 Windows Forms 應用程式C#的或 Visual Basic 範本（.NET Framework）](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到你要尋找的項目嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
    >
-   > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
    > 接下來，在 Visual Studio 安裝程式中選擇 **.NET 桌面開發**工作負載。
    >
    > ![Visual Studio 安裝程式中的 .NET Core 工作負載](../ide/media/install-dot-net-desktop-env.png)
    >
-   > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。
+   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。
 
-1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中，鍵入或輸入 *MathQuiz*。 接著，選擇 [建立]。
+1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中，鍵入或輸入 **MathQuiz**。 接著，選擇 [建立]。
 
 ::: moniker-end
 
@@ -84,7 +84,7 @@ ms.locfileid: "75776123"
 
 ## <a name="to-create-the-time-remaining-box"></a>建立剩餘時間方塊
 
-1. 從 [工具箱] 加入 <xref:System.Windows.Forms.Label> 控制項，然後將其 **(Name)** 屬性的值設定為 **timeLabel**。
+1. 從 [工具箱]<xref:System.Windows.Forms.Label>**加入** 控制項，然後將其 **(Name)** 屬性的值設定為 **timeLabel**。
 
      這個標籤會變成右上角的方塊，顯示測驗所剩的秒數。
 
@@ -100,7 +100,7 @@ ms.locfileid: "75776123"
 
 6. 在 [屬性] 視窗中，選擇 [Text] 屬性，然後選擇 **Backspace** 鍵清除其值。
 
-7. 選擇 [Font] 屬性旁的加號 ( **+** )，然後將 **Size** 屬性的值變更為 **15.75**。
+7. 選擇 [Font] **+ 屬性旁的加號 (** )，然後將 **Size** 屬性的值變更為 **15.75**。
 
      您可以變更數個字型屬性，如下列螢幕擷取畫面所示。
 
@@ -136,13 +136,13 @@ ms.locfileid: "75776123"
 
      您可以使用分隔線分隔並對齊這些標籤。
 
-11. 將第二個標籤的 [Text] 屬性值設定為 [+] (加號)。
+11. 將第二個標籤的 [Text] 屬性值設定為 [ **]+** (加號)。
 
 12. 將第三個標籤的 [(Name)] 屬性值設定為 [plusRightLabel]。
 
-13. 將第四個標籤的 [Text] 屬性值設定為 [=] (等號)。
+13. 將第四個標籤的 [Text] 屬性值設定為 [ **]=** (等號)。
 
-14. 從 [工具箱] 新增 <xref:System.Windows.Forms.NumericUpDown> 控制項，將其字型大小設定為 **18**，並將其寬度設定為 **100**。
+14. 從 [工具箱]<xref:System.Windows.Forms.NumericUpDown>**新增** 控制項，將其字型大小設定為 **18**，並將其寬度設定為 **100**。
 
      您稍後將進一步了解這類控制項。
 
@@ -164,7 +164,7 @@ ms.locfileid: "75776123"
 
      您可以使用分隔線讓兩個資料列之間相隔足夠的距離。
 
-3. 將第二個標籤的 **Text** 屬性值變更為 [-] (減號)。
+3. 將第二個標籤的 **Text** 屬性值變更為 [ **]-** (減號)。
 
 4. 將第一個問號標籤命名為 **minusLeftLabel**。
 
@@ -183,7 +183,7 @@ ms.locfileid: "75776123"
 
 ## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>若要加入開始按鈕和設定定位索引順序
 
-1. 從 [工具箱] 新增 <xref:System.Windows.Forms.Button> 控制項，然後將其 **(Name)** 屬性設定為 **startButton**。
+1. 從 [工具箱]<xref:System.Windows.Forms.Button>**新增** 控制項，然後將其 **(Name)** 屬性設定為 **startButton**。
 
 2. 將 [Text] 屬性設定為 [開始測驗]。
 
@@ -206,7 +206,7 @@ ms.locfileid: "75776123"
 
 8. 若要驗證 **TabIndex** 屬性是否如您預期般運作，請選擇 **F5** 鍵或在功能表列上依序選擇 [偵錯] > [開始偵錯] 儲存並執行您的程式，然後選擇 **Tab** 鍵數次。
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="to-continue-or-review"></a>繼續或檢視
 
 - 若要移至下一個教學課程步驟，請參閱 **[步驟2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)** 。
 

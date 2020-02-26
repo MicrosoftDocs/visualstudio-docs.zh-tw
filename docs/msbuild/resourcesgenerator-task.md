@@ -12,24 +12,24 @@ helpviewer_keywords:
 - ResourcesGenerator task [WPF MSBuild]
 - ResourcesGenerator task [WPF MSBuild], parameters
 ms.assetid: e782bbac-9ee6-472b-8171-3ee008c77b4e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef54bdc3b3c692869b4883cf4f92293551a1958
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 703cd7bc3d0dd0e2229365dde39418ff32ad0a3e
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996770"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579598"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 工作
-<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 工作會將一或多種資源 (*.jpg*、*.ico*、*.bmp*、二進位格式的 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 以及其他副檔名類型) 內嵌到 *.resources* 檔案。
+<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 工作會將一或多種資源 ( *.jpg*、 *.ico*、 *.bmp*、二進位格式的 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 以及其他副檔名類型) 內嵌到 *.resources* 檔案。
 
 ## <a name="task-parameters"></a>工作參數
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`OutputPath`|必要的 **String** 參數。<br /><br /> 指定輸出目錄的路徑。 如果路徑不是絕對路徑，會將它視為相對於專案根目錄的路徑。|
 |`OutputResourcesFile`|必要的 **ITaskItem[]** 輸出參數。<br /><br /> 指定所產生 *.resources* 檔案的路徑和名稱。 如果路徑不是絕對路徑，會相對於專案根目錄產生 *.resources* 檔案。|

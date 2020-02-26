@@ -11,17 +11,17 @@ helpviewer_keywords:
 - RequiresFramework35SP1Assembly task [MSBuild]
 - MSBuild, RequiresFramework35SP1Assembly task
 ms.assetid: 755c018a-8a8b-4c94-8aee-3f171fc419e5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c1e640c3b6f7a285c10b2487f9758520facf11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3d94d6ab4840163e8379e53da435a97a69381aed
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974614"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578467"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly 工作
 判斷應用程式是否需要 .NET Framework 3.5 SP1。
@@ -29,7 +29,7 @@ ms.locfileid: "62974614"
 ## <a name="parameters"></a>參數
  下表說明 `RequiresFramework35SP1Assembly` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`Assemblies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定應用程式中所參考的組件。|
 |`CreateDesktopShortcut`|選擇性的 `Boolean` 參數。<br /><br /> 如果 `true`，會在安裝期間於桌面上建立捷徑圖示。|

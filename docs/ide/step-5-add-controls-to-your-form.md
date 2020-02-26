@@ -5,17 +5,17 @@ ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77b8fc1f1f9f34a5b19756b7cf1370522f74075e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 631def96fc7e4b5d7858ea3474492b41c526da65
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589964"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579358"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>步驟 5：將控制項加入至您的表單
 
@@ -48,7 +48,7 @@ ms.locfileid: "75589964"
 1. 選擇表單上的 [ **TableLayoutPanel** ]，然後移至 [**工具箱**] 中的 [**容器**] 群組（您擁有 TableLayoutPanel 控制項的位置），然後按兩下 [ **FlowLayoutPanel** ] 專案，將新的控制項加入最後一個資料格（右下方）。 然後，將 FlowLayoutPanel 停駐在 TableLayoutPanel 中。 若要這麼做，請在 FlowLayoutPanel 的黑色三角形工作清單上選擇 [停**駐于父容器中**]，或將 FlowLayoutPanel 的 [ **dock** ] 屬性設定為 [ **Fill**]。
 
     > [!NOTE]
-    > 「<xref:System.Windows.Forms.FlowLayoutPanel>」是一種容器，會在資料列中逐一排列其他控制項。 當您調整 FlowLayoutPanel 大小時，它會在單一資料列中配置其所有控制項（如果它有空間可以這樣做）。 否則，它會將控制項分行排列，由下往上堆疊控制項。 <br/><br/>在這裡，您將使用 FlowLayoutPanel 來保存四個按鈕。 當您新增按鈕時，如果按鈕會在另一個上排列，請務必先選取 FlowLayoutPanel，然後再新增按鈕。 <br/><br/>（一般而言，每個資料格只會包含一個控制項。 在此範例中，TableLayoutPanel 的右下方資料格包含四個按鈕控制項。 為什麼？  因為 FlowLayoutPanel 是一個容器控制項，所以它是包含其他控制項之資料格中的控制項）。
+    > 「<xref:System.Windows.Forms.FlowLayoutPanel>」是一種容器，會在資料列中逐一排列其他控制項。 當您調整 FlowLayoutPanel 大小時，它會在單一資料列中配置其所有控制項（如果它有空間可以這樣做）。 否則，它會將控制項分行排列，由下往上堆疊控制項。 <br/><br/>在這裡，您將使用 FlowLayoutPanel 來保存四個按鈕。 當您新增按鈕時，如果按鈕會在另一個上排列，請務必先選取 FlowLayoutPanel，然後再新增按鈕。 <br/><br/>（一般而言，每個資料格只會包含一個控制項。 在此範例中，TableLayoutPanel 的右下方資料格包含四個按鈕控制項。 原因為何？  因為 FlowLayoutPanel 是一個容器控制項，所以它是包含其他控制項之資料格中的控制項）。
 
 ## <a name="to-add-buttons"></a>若要加入按鈕
 
@@ -86,7 +86,7 @@ ms.locfileid: "75589964"
 
 * 若要回到上一個教學課程步驟，請參閱[步驟 4：使用 TableLayoutPanel 控制項來配置您的表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [教學課程2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
 * [教學課程3：建立配對遊戲](tutorial-3-create-a-matching-game.md)

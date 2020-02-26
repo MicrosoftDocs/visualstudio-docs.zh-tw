@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d9bc44cb945b8df3ca444ce09b1b5c39795d3bc
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: 17fb9ba8e82739ddb0a420f52b6f7f945a6454b8
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776073"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579839"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步驟 5：加入 NumericUpDown 控制項的事件處理常式
 
@@ -76,7 +76,7 @@ ms.locfileid: "75776073"
 
      當您選擇 **NumericUpDown** 控制項時，現有的值就會自動選取，然後在您開始輸入不同的值時清除。
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="to-continue-or-review"></a>繼續或檢視
 
 - 若要移至下一個教學課程步驟，請參閱 **[步驟6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)** 。
 

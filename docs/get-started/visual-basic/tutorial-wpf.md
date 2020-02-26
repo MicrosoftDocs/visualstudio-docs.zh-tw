@@ -9,17 +9,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4108298eb095cf31e5f5f7089cbc7cd8780e8977
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: d850f709921120fcb85f78f46eb0307d29801d11
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864728"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579944"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教學課程：使用 Visual Basic 建立簡單的應用程式
 
@@ -63,7 +63,7 @@ Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以
 
 ::: moniker range="vs-2017"
 
-1. 建立新的專案。 在功能表列上，選取 [檔案] > [新增] > [專案]。
+1. 建立新專案。 在功能表列上，選取 [檔案] > [新增] > [專案]。
 
      ![在功能表上依序選擇 [檔案]、[開新檔案] 和 [專案]](../media/exploreide-filenewproject.png)
 
@@ -71,7 +71,7 @@ Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以
 
      ![Visual Studio [新增專案] 對話方塊中的 WPF 應用程式範本](media/exploreide-newproject-vb.png)
 
-Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 **WPF 設計工具**會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 下列項目會在 **方案總管**中出現：
+Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 **WPF 設計工具**會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 下列項目會在 [ **方案總管**] 中出現：
 
 ![已載入 HelloWPFApp 檔案的 [方案總管]](../media/exploreide-hellowpfappfiles.png)
 
@@ -87,7 +87,7 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 
 3. 在下一個畫面上，為專案指定名稱 **HelloWPFApp**，然後選擇 [建立]。
 
-Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 **WPF 設計工具**會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 下列項目會在 **方案總管**中出現：
+Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 **WPF 設計工具**會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 下列項目會在 [ **方案總管**] 中出現：
 
 ![已載入 HelloWPFApp 檔案的 [方案總管]](../media/vs-2019/exploreide-hellowpfappfiles.png)
 
@@ -104,13 +104,13 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 
 ## <a name="design-the-user-interface-ui"></a>設計使用者介面 (UI)
 
-如果設計工具尚未開啟，請在**方案總管**中選取 [*問候語*]，然後按**Shift** + **F7**以開啟設計工具。
+如果設計工具尚未開啟，請在**方案總管**中選取 [*問候語*]，然後按**Shift**+**F7**開啟設計工具。
 
 我們會將三種類型的控制項新增至這個應用程式：一個 <xref:System.Windows.Controls.TextBlock> 控制項、兩個 <xref:System.Windows.Controls.RadioButton> 控制項和一個 <xref:System.Windows.Controls.Button> 控制項。
 
 ### <a name="add-a-textblock-control"></a>新增 TextBlock 控制項
 
-1. 按**Ctrl** + **Q**啟動搜尋方塊，然後鍵入**工具箱**。 從結果清單中選擇 [檢視] > [工具箱]。
+1. 按**Ctrl**+**Q**以啟動 [搜尋] 方塊，然後輸入**工具箱**。 從結果清單中選擇 [檢視] > [工具箱]。
 
 2. 在 [工具箱] 中展開 [通用 WPF 控制項] 節點以查看 TextBlock 控制項。
 
@@ -162,7 +162,7 @@ XAML 標記應該看起來與下列範例相似：
 
 ### <a name="add-display-text-for-each-radio-button"></a>為每個選項按鈕新增顯示的文字
 
-在 XAML中，將`HelloButton`和`GoodbyeButton`的內容`"Hello"`屬性`"Goodbye"`更新為和。 XAML 標記現在看起來應該會類似下列範例：
+將 `HelloButton` 和 `GoodbyeButton` 的**Content**屬性更新為 XAML 中的 `"Hello"` 和 `"Goodbye"`。 XAML 標記現在看起來應該會類似下列範例：
 
    ```xaml
    <Grid>
@@ -198,7 +198,7 @@ IsChecked="True"
 
 ### <a name="add-code-to-the-display-button"></a>將程式碼新增至顯示按鈕
 
-此應用程式執行時，會在使用者選擇選項按鈕並選擇 [顯示] 按鈕之後顯示訊息方塊。 一個訊息方塊會顯示 Hello，而另外一個會顯示 Goodbye。 若要建立這個行為，您必須將程式碼新增至 *Greetings.xaml.vb* 或 *Greetings.xaml.cs* 中的 `Button_Click` 事件。
+此應用程式執行時，會在使用者選擇選項按鈕並選擇 [顯示] 按鈕之後顯示訊息方塊。 一個訊息方塊會顯示 Hello，而另外一個會顯示 Goodbye。 若要建立這個行為，您必須將程式碼新增至 `Button_Click`Greetings.xaml.vb*或*Greetings.xaml.cs*中的* 事件。
 
 1. 在設計介面上，按兩下 [ **顯示** ] 按鈕。
 

@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 115220a33fda1a8c65beec9b712481604c88e483
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 366f6d7a07d2f30b5b8110fb7dae7a2311fcce23
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621546"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579390"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步驟 3：將隨機圖示指派給每個標籤
 
@@ -32,7 +32,7 @@ ms.locfileid: "72621546"
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]
 
       > [!IMPORTANT]
-      > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png) 的 ![Programming 語言控制項
+      > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>Docs.Microsoft.com](../ide/media/docs-programming-language-control.png) 的 ![程式設計語言控制項
 
 2. 如上一個步驟所示，加入 `AssignIconsToSquares()` 方法。 您可以將它放在您於[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)中新增的程式碼正下方。
 
@@ -51,7 +51,7 @@ ms.locfileid: "72621546"
      [!code-csharp[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_3.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_3.vb)]
 
-     第一行將 **control** 變數轉換為名為 **iconLabel** 的 Label。 下一行為 `if` 陳述式，會檢查以確定轉換是否成功。 如果轉換成功，則會執行 `if` 陳述式中的陳述式。 （您可能會回想過先前的教學課程，`if` 語句是用來評估您指定的任何條件）。@No__t_1 語句中的第一行會建立名為**randomNumber**的變數，其中包含對應至 [圖示] 清單中其中一個專案的亂數字。 若要這樣做，該行使用您先前建立之 <xref:System.Random.Next> 物件的 <xref:System.Random> 方法。 `Next` 方法會傳回亂數。 這一行也使用 **icons** 清單的 <xref:System.Collections.Generic.List%601.Count> 屬性，決定從中選擇亂數的範圍。 下一行將圖示清單的其中一個項目指定至標籤的 <xref:System.Windows.Forms.Label.Text> 屬性。 註解行在本主題稍後加以說明。 最後，`if` 陳述式中的最後一行從清單中移除已加入至表單的圖示。
+     第一行將 **control** 變數轉換為名為 **iconLabel** 的 Label。 下一行為 `if` 陳述式，會檢查以確定轉換是否成功。 如果轉換成功，則會執行 `if` 陳述式中的陳述式。 （您可能會回想過先前的教學課程，`if` 語句是用來評估您指定的任何條件）。`if` 語句中的第一行會建立名為**randomNumber**的變數，其中包含對應至 [圖示] 清單中其中一個專案的亂數字。 若要這樣做，該行使用您先前建立之 <xref:System.Random.Next> 物件的 <xref:System.Random> 方法。 `Next` 方法會傳回亂數。 這一行也使用 <xref:System.Collections.Generic.List%601.Count>icons**清單的** 屬性，決定從中選擇亂數的範圍。 下一行將圖示清單的其中一個項目指定至標籤的 <xref:System.Windows.Forms.Label.Text> 屬性。 註解行在本主題稍後加以說明。 最後，`if` 陳述式中的最後一行從清單中移除已加入至表單的圖示。
 
      請記住，如果您不確定程式碼某些部分所執行的動作，可以將滑鼠指標放在程式碼項目上並檢閱顯示的工具提示。 使用 Visual Studio 偵錯工具時，您也可以在程式執行時對每一行程式碼進行逐步執行。 如需詳細資訊，請參閱[如何：在 Visual Studio 中逐步執行偵錯工具？](https://msdn.microsoft.com/vstudio/ee672313.aspx)\(英文\) 或[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
 

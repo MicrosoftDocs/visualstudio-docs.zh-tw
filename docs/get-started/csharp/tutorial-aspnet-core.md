@@ -1,5 +1,5 @@
 ---
-title: 教學課程：開始使用 C# 及 ASP.NET Core
+title: 教學課程：開始使用C#和 ASP.NET Core
 titleSuffix: ''
 description: 了解如何在 Visual Studio 中使用 C# 逐步建立 ASP.NET Core Web 應用程式。
 ms.custom: seodec18, get-started
@@ -8,20 +8,20 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: ef41e28d994f27f66f616623d1b2c9798b65ede4
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252464"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580057"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 
@@ -59,7 +59,7 @@ ms.locfileid: "71252464"
 
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
+2. 從頂端功能表列中 **，選擇 [** 檔案] > [**新增**>**專案**]。
 
 3. 在 [新增專案] 對話方塊的左窗格中，依序展開 [Visual C#] 和 [Web]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [ASP.NET Core Web 應用程式]。 接著將檔案命名為 *MyCoreApp*，然後選擇 [確定]。
 
@@ -117,7 +117,7 @@ ms.locfileid: "71252464"
    > [!NOTE]
    > 如果您沒有看到 [ASP.NET Core Web 應用程式] 範本，可以從 [建立新專案] 視窗加以安裝。 在 [找不到你要尋找的項目嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
    >
-   > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
    > 然後，在 Visual Studio 安裝程式中選擇 [ASP.NET 與網頁程式開發] 工作負載。
    >
@@ -125,7 +125,7 @@ ms.locfileid: "71252464"
    >
    > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 如果系統出現提示，請儲存您的工作。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回這個「[建立專案](#create-a-project)」程序中的第 2 步。
 
-1. 在 [設定新專案] 視窗中，於 [專案名稱] 方塊中鍵入或輸入 *MyCoreApp*。 接著，選擇 [建立]。
+1. 在 [設定新專案] 視窗中，於 [專案名稱] 方塊中鍵入或輸入 **MyCoreApp**。 接著，選擇 [建立]。
 
    ![在 [設定新專案] 視窗中，將專案命名為 'MyCoreApp'](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
 
@@ -298,7 +298,7 @@ ms.locfileid: "71252464"
 
 1. 返回 Visual Studio，然後按 **Shift+F5**，停止偵錯模式。 這也會關閉瀏覽器視窗中的專案。
 
-1. 在 Visual Studio 中，開啟 [**隱私權**] 以進行編輯。 然後，刪除_使用此頁面來詳細說明網站隱私權原則_的字組，並在其位置新增_此頁面在@ViewData[結構] 下的 [時間戳記]_ 字樣。
+1. 在 Visual Studio 中，開啟 [**隱私權**] 以進行編輯。 然後，刪除 [_使用此頁面來詳細說明網站的隱私權原則_ 文字，並在其位置新增 _[此頁面在結構中的文字] 字樣，@ViewData[時間戳記]]_ 。
 
     ![變更隱私權. cshtml 檔案中的文字](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
 
@@ -312,7 +312,7 @@ ms.locfileid: "71252464"
 
    ![預覽變更](media/vs-2019/csharp-aspnet-preview-changes.png)
 
-   選擇 **[** 套用]。 Visual Studio 會將不必要的 `using` 指示詞從檔案中刪除。
+   選擇 [套用]。 Visual Studio 會將不必要的 `using` 指示詞從檔案中刪除。
 
 1. 接下來，在 `OnGet()` 方法中，將主體變更為下列程式碼：
 

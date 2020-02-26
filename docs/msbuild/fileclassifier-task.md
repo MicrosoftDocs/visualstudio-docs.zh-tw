@@ -12,28 +12,28 @@ helpviewer_keywords:
 - non-localizable resources [WPF MSBuild], classifying to embed in an assembly
 - FileClassifier task [WPF MSBuild]
 ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d9dd845a69243cd8bedb095c63f75670f39afff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cd533507e1c498ae315529bd8ab17dd175b7f836
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830167"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579676"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 工作
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> 工作會將一組來源資源分類為將內嵌至組件的來源資源。 如果無法將資源當地語系化，即會將它內嵌至主應用程式組件；否則，會將它內嵌至附屬組件。
 
 ## <a name="task-parameters"></a>工作參數
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
-|`CLREmbeddedResource`|未使用。|
-|`CLRResourceFiles`|未使用。|
-|`CLRSatelliteEmbeddedResource`|未使用。|
+|`CLREmbeddedResource`|未使用的。|
+|`CLRResourceFiles`|未使用的。|
+|`CLRSatelliteEmbeddedResource`|未使用的。|
 |`Culture`|選擇性的 **String** 參數。<br /><br /> 指定組建的文化特性。 如果組建為不可當地語系化，則此值可以是 **null**。 如果是 **null**，預設值即為 **CultureInfo.InvariantCulture** 所傳回的小寫值。|
 |`MainEmbeddedFiles`|選擇性的 **ITaskItem[]** 輸出參數。<br /><br /> 指定內嵌於主組件的不可當地語系化資源。|
 |`OutputType`|必要的 **String** 參數。<br /><br /> 指定要內嵌所指定原始程式檔的檔案類型。 有效值為 **exe**、**winexe** 或 **library**。|

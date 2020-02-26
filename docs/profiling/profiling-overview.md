@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d99a6ae3d2b1a2c0acfe4aee160801181c72cbe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c0d1c8cfb94b74f54eaaddd6b8d6d0fd17216b94
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994923"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77577956"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Visual Studio 中用於測量效能的工具概觀
 
@@ -26,3 +26,5 @@ ms.locfileid: "62994923"
 * [分析 CPU 使用量](../profiling/cpu-usage.md)以取得 CPU 使用量工具的詳細深入資訊。
 
 * [分析記憶體使用量](../profiling/memory-usage.md)以找出效能瓶頸。
+
+* [使用 .Net 物件組態工具來分析記憶體使用量](../profiling/dotnet-alloc-tool.md)，以識別 .net 應用程式中的效能瓶頸。

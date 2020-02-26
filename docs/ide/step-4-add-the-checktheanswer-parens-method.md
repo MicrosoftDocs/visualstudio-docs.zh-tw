@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: c66f3831-b4a0-40bc-a109-8f46f4db35ed
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c251bab9e1306933804137f8f02d6006a2d4d29
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: def01817fbd42a0da1a0392e00ba9ccff6876470
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114435"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579841"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：加入 CheckTheAnswer() 方法
 
@@ -32,7 +32,7 @@ ms.locfileid: "76114435"
 > [!NOTE]
 > 如果您是在 Visual Basic 中依照步驟一路做下來，您將使用 `Function` 關鍵字，而不會使用慣用的 `Sub` 關鍵字，因為這個方法會傳回值。 理由就是這麼簡單：Sub 不會傳回值，但 Function 會傳回值。
 
-1. 加入 `CheckTheAnswer()` 方法。
+1. 新增 `CheckTheAnswer()` 方法。
 
      呼叫這個方法時，它會將 addend1 和 addend2 的值相加，並且將結果與 sum (總和) <xref:System.Windows.Forms.NumericUpDown> 控制項的值比較。 如果值相等，則方法會傳回 `true` 值。 否則，方法會傳回 `false` 值。 您的程式碼應該看起來與下列範例相同。
 
@@ -57,7 +57,7 @@ ms.locfileid: "76114435"
 
      當您提供正確答案時，訊息方塊隨即開啟，[開始] 按鈕會變成可用，且計時器會停止。
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="to-continue-or-review"></a>繼續或檢視
 
 - 若要移至下一個教學課程步驟，請參閱 **[步驟5：新增 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)** 。
 

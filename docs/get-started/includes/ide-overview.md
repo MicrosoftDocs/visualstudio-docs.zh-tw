@@ -2,16 +2,16 @@
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
-ms.author: jillfra
-author: jillre
+ms.author: tglee
+author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 973af983d0f07b0aceeedfc865280deea115f179
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 69b1bccf20c242965462b807b2a1b64d3c60d671
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632442"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77590784"
 ---
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
@@ -168,7 +168,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 1. 開啟 Visual Studio。
 
-1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上 **，選擇 [** 檔案] > [**新增**>**專案**]。
 
    ![功能表列上的 [檔案] > [新增專案]](../media/file-new-project-menu.png)
 
@@ -218,7 +218,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. 選取 [偵錯] > [啟動但不偵錯] 或按 **Ctrl**+**F5**，再次執行應用程式。
+1. 選取 [ **Debug** ] > [**啟動但不**進行偵測] 或按**Ctrl**+**F5**，再次執行應用程式。
 
    Visual Studio 會重建應用程式，然後主控台視窗會開啟並提示您輸入您的名稱。
 
@@ -287,7 +287,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. 選取 [偵錯] > [啟動但不偵錯] 或按 **Ctrl**+**F5**，再次執行應用程式。
+1. 選取 [ **Debug** ] > [**啟動但不**進行偵測] 或按**Ctrl**+**F5**，再次執行應用程式。
 
    Visual Studio 會重建應用程式，然後主控台視窗會開啟並提示您輸入您的名稱。
 
@@ -353,7 +353,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
    > [!TIP]
    > <xref:System.Console.Write%2A?displayProperty=nameWithType> 與 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> 稍有不同，它不會在列印之後新增行結束字元。 這表示傳送至輸出的下一段文字會列印在同一行。 您可以將滑鼠移至程式碼中每個方法上方來查看其描述。
 
-7. 接下來，我們將再使用一次重構，讓程式碼更精簡。 按一下 `DateTime now = DateTime.Now;` 行中的變數 `now`。
+7. 接下來，我們將再使用一次重構，讓程式碼更精簡。 按一下 `now` 行中的變數 `DateTime now = DateTime.Now;`。
 
    請注意，該行的邊界會出現一個小螺絲起子圖示。
 
@@ -413,7 +413,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker range="vs-2017"
 
-2. 在 [環境] > [一般] 選項頁面上，將 [色彩佈景主題] 選項變更為 [深色]，然後選擇 [確定]。
+2. 在 [**環境**>**一般**選項] 頁面上，將 [**色彩主題**] 選項變更為 [**深色**]，然後選擇 **[確定]** 。
 
    整個 IDE 的色彩佈景主題會變更為 [深色]。
 
@@ -423,7 +423,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker range=">=vs-2019"
 
-2. 在 [環境] > [一般] 選項頁面上，將 [色彩佈景主題] 選項變更為 [深色]，然後選擇 [確定]。
+2. 在 [**環境**>**一般**選項] 頁面上，將 [**色彩主題**] 選項變更為 [**深色**]，然後選擇 **[確定]** 。
 
    整個 IDE 的色彩佈景主題會變更為 [深色]。
 

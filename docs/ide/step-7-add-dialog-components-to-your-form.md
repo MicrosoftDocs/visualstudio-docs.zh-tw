@@ -5,17 +5,17 @@ ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 319cfee254aa0b0f1709fa566e4e1bbca208eb9a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a9697bf6cf84c2a74daac2017b4f63d52a7019b6
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589951"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579274"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>步驟 7：將對話方塊元件新增至您的表單
 
@@ -28,7 +28,7 @@ ms.locfileid: "75589951"
 1. 選擇 [ **Windows Form 設計工具**（**Form1.cs [Design]）]** ，然後開啟 [**工具箱**] 中的 [**對話方塊**] 群組。
 
     > [!NOTE]
-    > [工具箱] 中的 [對話方塊] 群組包含可開啟許多實用對話方塊的元件，您可用來開啟和儲存檔案、瀏覽資料夾及選擇字型和色彩。 您在本專案中會使用兩個對話方塊元件：[OpenFileDialog] 和 [ColorDialog]。
+    > [工具箱] 中的 [對話方塊] 群組包含可開啟許多實用對話方塊的元件，您可用來開啟和儲存檔案、瀏覽資料夾及選擇字型和色彩。 您在本專案中會使用下列兩個對話方塊元件：OpenFileDialog 和 ColorDialog。
 
 1. 若要將名稱為 **openFileDialog1** 的元件新增至表單，請按兩下 **OpenFileDialog**。 若要將名稱為 **colorDialog1** 的元件新增至表單，請按兩下 [工具箱] 中的 **ColorDialog**。 （您可以在下一個教學課程步驟中使用該功能）。您應該會看到位於**Windows Form 設計工具**底部（在 [**圖片檢視器]** 表單下方）的區域，其中包含您新增的兩個對話方塊元件各有一個圖示，如下圖所示。
 
@@ -55,7 +55,7 @@ ms.locfileid: "75589951"
 
 * 若要回到上一個教學課程步驟，請參閱[步驟 6：命名您的按鈕控制項](../ide/step-6-name-your-button-controls.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [教學課程2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
 * [教學課程3：建立配對遊戲](tutorial-3-create-a-matching-game.md)

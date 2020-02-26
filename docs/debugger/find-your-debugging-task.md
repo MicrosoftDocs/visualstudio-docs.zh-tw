@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 792b5e2d40f7299bf019fd3f9c86697bf008c391
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599285"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578776"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>在 Visual Studio 中尋找您的偵錯工具工作
 
@@ -130,3 +130,7 @@ ms.locfileid: "73599285"
 ### <a name="debug-multithreaded-applications"></a>對多執行緒應用程式進行偵錯
 
 請參閱[Debug 多執行緒應用程式](debug-multithreaded-applications-in-visual-studio.md)。
+
+### <a name="fix-performance-issues"></a>修正效能問題
+
+請參閱程式碼[剖析工具的第一看](../profiling/profiling-feature-tour.md)

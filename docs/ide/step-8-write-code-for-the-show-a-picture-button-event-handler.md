@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e249f2ad765063c54df08466bef15b8e443af1bf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d74c9ecda0e3ab23c1f2ab1cb2180a60701c069a
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591719"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579801"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
 
@@ -36,7 +36,7 @@ IntelliSense 會嘗試決定接下來要執行的動作，並自動跳至您從�
 
 1. 移至 **Windows Forms 設計工具**，然後按兩下 [顯示圖片] 按鈕。 IDE 會立即進入程式碼設計工具並移動游標，使其位於您先前加入的 `showButton_Click()` （或 `ShowButton_Click()`）方法內。
 
-1. 在兩個大括弧 `{ }` 之間的空白行上鍵入 `i` （在 Visual Basic 中，請在 `Private Sub...` 和 `End Sub`之間的空白行上輸入）。**IntelliSense**視窗隨即開啟，如下圖所示。
+1. 在兩個大括弧 `i` 之間的空白行上鍵入 `{ }` （在 Visual Basic 中，請在 `Private Sub...` 和 `End Sub`之間的空白行上輸入）。**IntelliSense**視窗隨即開啟，如下圖所示。
 
     ![包含 Visual C&#35; 程式碼的 IntelliSense](../ide/media/express_ifintellisense.png)
 
@@ -101,11 +101,11 @@ IntelliSense 會嘗試決定接下來要執行的動作，並自動跳至您從�
 
 ## <a name="next-steps"></a>後續步驟
 
-* 若要移至下一個教學課程步驟，請參閱**[步驟9：審查、批註和測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)**。
+* 若要移至下一個教學課程步驟，請參閱 **[步驟9：審查、批註和測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)** 。
 
 * 若要返回上一個教學課程步驟，請參閱[步驟 7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [教學課程2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
 * [教學課程3：建立配對遊戲](tutorial-3-create-a-matching-game.md)

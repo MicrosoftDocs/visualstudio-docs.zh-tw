@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - vb
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0699faebfd210390eea11f8ad11b48d4c4bbd980
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7049271dddb4e763bf5ecb3760358bdd63e38df5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621433"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579342"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>步驟 4：將 Click 事件處理常式新增至每個標籤
 
@@ -38,11 +38,11 @@ ms.locfileid: "72621433"
 
 2. 選擇第一個 Label 控制項以選取該項目。 接著，按住 **Ctrl** 鍵，同時選擇其他每一個標籤加以選取。 確定已選取每一個標籤。
 
-3. 在 [屬性] 視窗中選擇工具列上的 [事件] 按鈕，檢視 [屬性] 視窗中的 [事件] 頁面。 向下卷到**Click**事件，並在方塊中輸入**label_Click** ，如下列螢幕擷取畫面所示。
+3. 在 [屬性] 視窗中選擇工具列上的 [事件] 按鈕，檢視 [屬性] 視窗中的 [事件] 頁面。 向下流覽至 [ **Click** ] 事件，並在方塊中輸入**label_Click** ，如下列螢幕擷取畫面所示。
 
      ![顯示 Click 事件的 [屬性] 視窗](../ide/media/express_labelclick.png)
 
-4. 選擇 **Enter** 鍵。 IDE 會將名稱為 `label_Click()` 的 `Click` 事件處理常式加入至程式碼，並將它連結至表單上的每一個標籤。
+4. 選擇 **Enter** 鍵。 IDE 會將名稱為 `Click` 的 `label_Click()` 事件處理常式加入至程式碼，並將它連結至表單上的每一個標籤。
 
 5. 填入程式碼的其餘部分，如下所示：
 
@@ -50,7 +50,7 @@ ms.locfileid: "72621433"
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
 
      > [!IMPORTANT]
-     > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png) 的 ![Programming 語言控制項
+     > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>Docs.Microsoft.com](../ide/media/docs-programming-language-control.png) 的 ![程式設計語言控制項
 
     > [!NOTE]
     > 如果您是透過複製並貼上 `label_Click()` 程式碼區塊而非手動輸入程式碼，請務必取代現有的 `label_Click()` 程式碼。 否則，您將會產生重複的程式碼區塊。

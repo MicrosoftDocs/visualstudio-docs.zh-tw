@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c35c0eccc4c6a4972774219dc07b606b72243c
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: e568a9fa844802ddab934264cbc316d3514fe577
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776029"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579376"
 ---
 # <a name="step-8-customize-the-quiz"></a>步驟 8：自訂測驗
 
@@ -45,7 +45,7 @@ ms.locfileid: "75776029"
 
 - 在 <xref:System.Windows.Forms.NumericUpDown> 控制項中輸入正確答案時，透過播放音效來提供受測者的提示。 (您必須撰寫每個控制項之 <xref:System.Windows.Forms.NumericUpDown.ValueChanged> 事件的事件處理常式，而只要受測者變更控制項的值時就會引發該事件)。
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="to-continue-or-review"></a>繼續或檢視
 
 - 若要移至下一個教學課程，請參閱 **[教學課程3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)** 。
 

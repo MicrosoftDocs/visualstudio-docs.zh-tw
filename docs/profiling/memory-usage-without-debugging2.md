@@ -13,22 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910352"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578337"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>分析記憶體使用量 (不使用偵錯工具)
 
 [記憶體使用量] 工具會監視您的應用程式記憶體使用量。 您可以使用此工具，在 Visual Studio 中研究積極開發中案例的即時記憶體效果。 您可以建立詳細的應用程式記憶體狀態快照，並比較快照以找出記憶體問題的根本原因。
 
 不論有無偵錯工具，都可以執行 [記憶體使用量] 工具。 下列指示說明如何使用 [記憶體使用量] 工具而不搭配 Visual Studio [效能分析工具] 中的偵錯工具。
-
->[!NOTE]
->- 若要測量 .NET Core 應用程式的記憶體使用量，您必須使用 [記憶體使用量] 工具搭配偵錯工具。 如需指示，請參閱[分析 Visual Studio 中的記憶體使用量](memory-usage.md)。
->- 若要分析 JavaScript 或 HTML UWP 應用程式中的記憶體使用量，請使用 [效能分析工具] 中的 [JavaScript 記憶體](../profiling/javascript-memory.md)工具。
 
 ## <a name="memory-usage-diagnostic-sessions"></a>[記憶體使用量] 診斷工作階段
 
@@ -133,7 +129,7 @@ ms.locfileid: "72910352"
 |||
 |-|-|
 |**物件類型**|類型或物件執行個體的名稱。|
-|**計數**|類型的物件執行個體數目。 一個執行個體的 [計數] 一律為 1。|
+|**Count**|類型的物件執行個體數目。 一個執行個體的 [計數] 一律為 1。|
 |**大小 (位元組)**|針對類型，此為快照中類型的所有執行個體大小，減去執行個體中包含的物件大小。<br /><br /> 針對執行個體，此為物件的大小，減去執行個體中包含的物件大小。 |
 |**內含大小 (位元組)**|類型執行個體的大小，或是單一執行個體的大小，且包括所包含物件的大小。|
 |**模組**|包含物件的模組。|
@@ -172,14 +168,14 @@ ms.locfileid: "72910352"
 
  [Managed 堆積] 樹狀目錄會列出保留在記憶體中的物件類型。 您可以展開類型名稱，檢視依大小排序的前十大類型執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑] 和 [參考的物件] 樹狀結構。
 
- ![差異報表中類型的 Managed 堆積樹狀結構](../profiling/media/memuse_snapshotdiff_type_heap.png "不同報表中類型的 Managed 堆積樹狀結構")
+ ![差異報表中類型的 Managed 堆積樹狀結構](../profiling/media/memuse_snapshotdiff_type_heap.png "不同報表中類型的 Managed 堆積樹狀")
 
 快照差異報表中的 [受控堆積] 樹狀結構有下列資料行：
 
 |||
 |-|-|
 |**物件類型**|類型或物件執行個體的名稱。|
-|**計數**|主要快照中類型的執行個體數目。 一個執行個體的 [計數] 一律為 1。|
+|**Count**|主要快照中類型的執行個體數目。 一個執行個體的 [計數] 一律為 1。|
 |**計數差異**|對於類型，此為主要快照和上一個快照中的類型執行個體數目差異。 執行個體的欄位空白。|
 |**大小 (位元組)**|主要快照中的物件大小，減去物件中包含的物件大小。 對於類型，[大小 (位元組)] 和 [內含大小 (位元組)] 是類型執行個體的大小總計。|
 |**總大小差異 (位元組)**|針對類型，此為主要快照與上一個快照之間，類型的執行個體大小總計，減去執行個體中的物件大小。 執行個體的欄位空白。|
@@ -214,7 +210,7 @@ ms.locfileid: "72910352"
 |**內含大小差異 (位元組)**|針對類型，此為主要快照與上一個快照之間，類型的所有執行個體大小差異，包括物件中的物件大小。|
 |**模組**|包含物件的模組。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [JavaScript 記憶體](../profiling/javascript-memory.md)
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

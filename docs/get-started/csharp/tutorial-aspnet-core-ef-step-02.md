@@ -9,19 +9,19 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 21959c4a0cc2b961eca43ab9724369c7aea8444b
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061119"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580082"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>步驟2：建立您的第一個 ASP.NET Core web 應用程式
 
@@ -33,7 +33,7 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>啟動 Visual Studio 2019 並建立新專案
 
-啟動 Visual Studio 2019 並按一下 [建立新專案]。 選擇 [ASP.NET Core Web 應用程式]。 選擇 [Web 應用程式] 範本，保留預設的專案名稱和位置。 在具有 ASP.NET Core 版本的下拉式清單中，選擇 [ **ASP.NET Core 2.1** ] 或 [ **ASP.NET Core 2.2**]。 按一下 [建立]。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
+啟動 Visual Studio 2019 並按一下 [建立新專案]。 選擇 [ASP.NET Core Web 應用程式]。 選擇 [Web 應用程式] 範本，保留預設的專案名稱和位置。 在具有 ASP.NET Core 版本的下拉式清單中，選擇 [ **ASP.NET Core 2.1** ] 或 [ **ASP.NET Core 2.2**]。 按一下 **[建立]** 。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
 
 ![Visual Studio 2019 選擇 ASP.NET Core 專案選項](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -86,7 +86,7 @@ public void OnGet()
 }
 ```
 
-使用這個標記取代 *Index.cshtml* 中的 `<div>` 內容：
+使用這個標記取代 `<div>`Index.cshtml*中的* 內容：
 
 ```cshtml
 <h2>It's @Model.Time right now on the server!</h2>
@@ -96,7 +96,7 @@ public void OnGet()
 
 ![瀏覽器中的 Visual Studio 2019 ASP.NET Core 專案](media/vs-2019/vs2019-app-in-browser.png)
 
-## <a name="debug-the-application"></a>進行應用程式偵錯
+## <a name="debug-the-application"></a>偵錯應用程式
 
 在 `OnGet` 方法中新增中斷點，我們會在此方法中將值指派給 `Time`，並在此時開始偵錯應用程式。
 
@@ -116,7 +116,7 @@ public void OnGet()
 當您瀏覽至應用程式時，現在應會看到瀏覽器中實際的伺服器時間。
 
 > [!NOTE]
-> 您的輸出可能會與圖片不同，因為 ToShortDateTimeString 的輸出格式取決於目前的文化特性設定。 請參閱<xref:System.DateTime.ToShortTimeString>.
+> 您的輸出可能會與圖片不同，因為 ToShortDateTimeString 的輸出格式取決於目前的文化特性設定。 請參閱＜<xref:System.DateTime.ToShortTimeString>＞。
 
 ![瀏覽器中的 Visual Studio 2019 ASP.NET Core 專案](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
@@ -126,6 +126,6 @@ public void OnGet()
 
 [教學課程：使用 ASP.NET Core 應用程式中的資料](tutorial-aspnet-core-ef-step-03.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [教學課程：使用 ASP.NET Core 建立 Razor Pages web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

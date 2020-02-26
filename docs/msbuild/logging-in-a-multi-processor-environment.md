@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, multi-processor logging
 - MSBuild, logging
 ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efbc02bb536ca8e39454fbbb476460c4cbd51363
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 65f0558e26583961d94ce380b59a60ecca45987b
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856018"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578531"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>在多處理器環境中記錄
 MSBuild 雖能夠使用多個處理器來大幅縮短專案建置時間，但同時也增加了記錄的複雜性。 在單一處理器環境中，記錄器可以透過可預測的循序方式來處理傳入的事件、訊息、警告和錯誤。 不過，在多處理器環境中，來自數個來源的事件可能會同時或不依順序到達。 MSBuild 提供可辨識多處理器的新記錄器，並啟用建立自訂「轉送記錄器」。
@@ -45,7 +45,7 @@ public interface INodeLogger: ILogger
 
 為了減少此問題，MSBuild 也可讓您建立轉送記錄器，以啟用可擴充中央記錄模型的「分散式記錄模型」。 轉送記錄器會附加至次要節點，並從該節點中接收傳入的建置事件。 轉送記錄器就像一般記錄器，差異在於它可以篩選事件，然後只將所需的事件轉送至中央節點。 這會減少中央節點的訊息流量，因此可啟用較佳的效能。
 
- 您可以實作衍生自 <xref:Microsoft.Build.Framework.ILogger> 的 <xref:Microsoft.Build.Framework.IForwardingLogger> 介面來建立轉送記錄器。 介面定義如下：
+ 您可以實作衍生自 <xref:Microsoft.Build.Framework.IForwardingLogger> 的 <xref:Microsoft.Build.Framework.ILogger> 介面來建立轉送記錄器。 介面定義如下：
 
 ```csharp
 public interface IForwardingLogger: INodeLogger
@@ -55,7 +55,7 @@ public interface IForwardingLogger: INodeLogger
 }
 ```
 
-若要在轉送記錄器中轉送事件，請呼叫 <xref:Microsoft.Build.Framework.IEventRedirector> 介面的 <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> 方法。 傳遞適當的 <xref:Microsoft.Build.Framework.BuildEventArgs> 或系出物件作為參數。
+若要在轉送記錄器中轉送事件，請呼叫 <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> 介面的 <xref:Microsoft.Build.Framework.IEventRedirector> 方法。 傳遞適當的 <xref:Microsoft.Build.Framework.BuildEventArgs> 或系出物件作為參數。
 
 如需詳細資訊，請參閱[建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)。
 

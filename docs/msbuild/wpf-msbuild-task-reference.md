@@ -13,17 +13,17 @@ helpviewer_keywords:
 - build tasks using the Microsoft build engine [WPF MSBuild], compile markup and process resources
 - WPF MSBuild task reference [WPF MSBuild]
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 121c3da6d3e2609c1a271177e089e0f38a0d89fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 84aeae06a5440bfc82eb9590919800ebcdd425d5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778282"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578185"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 工作參考
 Windows Presentation Foundation (WPF) 建置程序會擴充 Microsoft Build Engine (MSBuild) 增加一組建置工作，包括編譯標記和處理資源的工作。
@@ -55,15 +55,15 @@ Windows Presentation Foundation (WPF) 建置程序會擴充 Microsoft Build Engi
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- 將一或多種資源 (*.jpg*、*.ico*、*.bmp*、二進位格式的 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 以及其他副檔名類型) 內嵌到 *.resources* 檔案。
+ 將一或多種資源 ( *.jpg*、 *.ico*、 *.bmp*、二進位格式的 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 以及其他副檔名類型) 內嵌到 *.resources* 檔案。
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
- 檢查、更新或移除唯一識別碼 (UID)，以將來源 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 檔案中包含的所有 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 項目當地語系化。
+ 檢查、更新或移除唯一識別碼 (UID)，以將來源 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 檔案中包含的所有 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 項目當地語系化。
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- 建置 [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] 專案時，將 **\<hostInBrowser />** 元素新增至應用程式資訊清單 (*\<projectname>.exe.manifest*)。
+ 建置  **專案時，將 \<** hostInBrowser /> *元素新增至應用程式資訊清單 (\<* projectname>.exe.manifest[!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)])。
 
 ## <a name="see-also"></a>另請參閱
 - [MSBuild](../msbuild/msbuild.md)

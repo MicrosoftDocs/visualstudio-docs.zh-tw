@@ -5,17 +5,17 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abaae887e39b85e4f2d363a63ef6cde5845e3fa2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c1134fb5bb02bd8c78f347ef582f12da35074c36
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597395"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579928"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步驟 1：建立專案並將資料表新增至表單
 
@@ -51,17 +51,17 @@ ms.locfileid: "75597395"
    ![選擇 Windows Forms 應用程式C#的或 Visual Basic 範本（.NET Framework）](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到你要尋找的項目嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
    >
-   > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
    > 接下來，在 Visual Studio 安裝程式中選擇 **.NET 桌面開發**工作負載。
    >
    > ![Visual Studio 安裝程式中的 .NET Core 工作負載](../ide/media/install-dot-net-desktop-env.png)
    >
-   > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。
+   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。
 
-1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中，鍵入或輸入 *MatchingGame*。 接著，選擇 [建立]。
+1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中，鍵入或輸入 **MatchingGame**。 接著，選擇 [建立]。
 
 ::: moniker-end
 
@@ -75,7 +75,7 @@ ms.locfileid: "75597395"
 
 2. 選擇 IDE 左側的 [工具箱] 索引標籤，以顯示工具箱。
 
-3. 從工具箱中的 [容器] 類別拖曳 <xref:System.Windows.Forms.TableLayoutPanel> 控制項，然後為其設定下列屬性。
+3. 從工具箱中的 [容器]<xref:System.Windows.Forms.TableLayoutPanel>**類別拖曳** 控制項，然後為其設定下列屬性。
 
    1. 將 **BackColor** 屬性設定為 [CornflowerBlue]。 若要這麼做，請在 [屬性] 視窗中選擇 **BackColor** 屬性旁的下拉式箭頭，開啟 [BackColor] 對話方塊。  然後，請在 [BackColor] 對話方塊的 [Web] 索引標籤，以檢視可用的色彩名稱清單。
 
@@ -90,7 +90,7 @@ ms.locfileid: "75597395"
 
    5. 在工作功能表上，選擇 [新增資料列] 兩次，以便再新增兩個資料列，然後選擇 [新增資料行] 兩次，以便再新增兩個資料行。
 
-   6. 在工作功能表上，選擇 [編輯資料列與資料行] 以開啟 [資料行和資料列樣式] 視窗。 選擇每一個資料行，並選擇 [百分比] 選項按鈕，然後將每一個資料行的寬度設定為總寬度的 25%。 然後從視窗頂端的下拉式方塊中選取 [資料列]，並將每一個資料列的高度設為 25%。 當您完成時，請選擇 [確定] 按鈕。
+   6. 在工作功能表上，選擇 [編輯資料列與資料行] 以開啟 [資料行和資料列樣式] 視窗。 選擇每一個資料行，並選擇 [百分比] 選項按鈕，然後將每一個資料行的寬度設定為總寬度的 25%。 然後從視窗頂端的下拉式方塊中選取 [資料列]，並將每一個資料列的高度設為 25%。 完成時，選擇 [確定] 按鈕。
 
       您的 TableLayoutPanel 現在應該有 4x4 的格線，其中內含 16 個大小相等的方形儲存格。 這些資料列和資料行是稍後會顯示圖示影像的地方。
 
@@ -117,7 +117,7 @@ ms.locfileid: "75597395"
        > [!NOTE]
        > Webdings 字型是 Windows 作業系統隨附的圖示字型。 在配對遊戲中，玩家必須將圖示配對，因此您會使用此字型來顯示要配對的圖示。 不要將 **c** 放在 **Text** 屬性中，請嘗試輸入不同字母，看看顯示的圖示為何。 驚嘆號是一隻蜘蛛、大寫 N 是眼睛，而逗號則是一個辣椒。
 
-5. 選擇您的 Label 控制項並將其複製至 TableLayoutPanel 中的下一個儲存格。 （選擇**Ctrl**+**C**鍵，或在功能表列上，選擇 [**編輯** > **複製**]）。然後將它貼上。 （選擇**Ctrl**+**V**鍵，或在功能表列上，選擇 **編輯** > **貼**上）。第一個標籤的複本會出現在 TableLayoutPanel 的第二個儲存格中。 再次將它貼上，而另一個標籤會顯示在第三個欄框中。 持續貼上 Label 控制項，直到所有欄框都已填滿為止。
+5. 選擇您的 Label 控制項並將其複製至 TableLayoutPanel 中的下一個儲存格。 （選擇**Ctrl**+**C**鍵，或在功能表列上，選擇 [**編輯** > **複製**]）。然後將它貼上。 （選擇**Ctrl**+**V**鍵，或在功能表列上，選擇 **編輯** > **貼**上）。第一個標籤的複本會出現在 TableLayoutPanel 的第二個儲存格中。 再次將它貼上，而另一個標籤會顯示在第三個欄框中。 持續貼上 Label 控制項，直到所有儲存格都已填滿為止。
 
    > [!NOTE]
    > 如果您貼上的次數太多，則 IDE 會將新資料列加入至 TableLayoutPanel，讓它有位置可以加入新的 Label 控制項。 您可以將它復原。 若要移除新的儲存格，請選擇 **Ctrl**+**Z** 鍵，或依序選擇 [編輯] > [復原]。

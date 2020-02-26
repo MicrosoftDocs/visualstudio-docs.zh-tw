@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - GetFileHash task [MSBuild]
 - MSBuild, GetFileHash task
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5da58b125f86627d54547bd9f6f7cddc16c4de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a8f3de9a4f2fe848e1cbd41e14e82498845ca2cf
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977499"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578658"
 ---
 # <a name="getfilehash-task"></a>GetFileHash 工作
 
@@ -32,14 +32,14 @@ ms.locfileid: "62977499"
 
  下表說明 `GetFileHash` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`Files`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br />要進行雜湊的檔案。|
 |`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br />`Files` 輸入含設定至檔案雜湊的其他中繼資料。|
 |`Hash`|`String` 輸出參數。<br /><br />檔案的雜湊。 只有一個傳入項目時，才會設定此輸出。|
 |`Algorithm`|選擇性的 `String` 參數。<br /><br />演算法。 允許值：`SHA256`、`SHA384`、`SHA512`。 預設值 = `SHA256`。|
-|`MetadataName`|選擇性的 `String` 參數。<br /><br />中繼資料名稱，雜湊儲存在每個項目。 預設值為 `FileHash`。|
-|`HashEncoding`|選擇性的 `String` 參數。<br /><br />要用於產生雜湊的編碼。 預設值為 `hex`。 允許值：`hex`、`base64`。|
+|`MetadataName`|選擇性的 `String` 參數。<br /><br />中繼資料名稱，雜湊儲存在每個項目。 預設為 `FileHash`。|
+|`HashEncoding`|選擇性的 `String` 參數。<br /><br />要用於產生雜湊的編碼。 預設為 `hex`。 允許值：`hex`、`base64`。|
 
 ## <a name="example"></a>範例
 
