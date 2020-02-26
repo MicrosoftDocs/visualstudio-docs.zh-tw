@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1fe8f4e8003da2db0e8a599c3eca504945f3e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de89d7194425e1a8cba9e11f2734372d80b256b3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647513"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579337"
 ---
 # <a name="step-5-add-label-references"></a>步驟 5：加入標籤參考
 程式需要追蹤玩家所選擇的 Label 控制項。 現在，程式會顯示玩家選擇的所有標籤。 但是，我們將要變更該行為。 在選擇第一個標籤之後，程式應該會顯示標籤的圖示。 在選擇第二個標籤之後，程式應該要短暫顯示這兩個圖示，然後再次隱藏這兩個圖示。 您的程式現在將會使用*參考變數*，追蹤第一次和第二次選擇的 Label 控制項。
@@ -31,7 +31,7 @@ ms.locfileid: "72647513"
      [!code-csharp[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]
 
      > [!IMPORTANT]
-     > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png) 的 ![Programming 語言控制項
+     > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>Docs.Microsoft.com](../ide/media/docs-programming-language-control.png) 的 ![程式設計語言控制項
 
      這些參考變數看起來類似您先前用來將物件 (例如 <xref:System.Windows.Forms.Timer> 物件、<xref:System.Collections.Generic.List%601> 物件及 <xref:System.Random> 物件) 加入至表單的陳述式。 但是，這些陳述式不會導致表單上出現兩個額外的 Label 控制項，因為這兩個陳述式中都沒有使用 `new` 關鍵字。 若沒有 `new` 關鍵字，就不會建立物件。 這就是為何 `firstClicked` 和 `secondClicked` 都稱為參考變數：它們只會追蹤 (或參照) Label 物件。
 

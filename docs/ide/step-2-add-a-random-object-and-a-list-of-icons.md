@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6548b86f075e5da51bea7835c93e5604f2177397
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1f4731778ebb3acbdc3bb7d9b5827c1015541d98
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588768"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579427"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步驟 2：新增隨機物件和圖示清單
 
@@ -47,13 +47,13 @@ ms.locfileid: "75588768"
     > [!NOTE]
     > IntelliSense 視窗時只有在您手動輸入程式碼時才會出現。 如果您複製並貼上程式碼，它不會出現。
 
-     如果您查看小型區段中的程式碼 (和備註)，就很容易了解。 您的程式可以使用清單物件來追蹤許多不同類型的項目。 清單可存放數字、true/false 值、文字或其他物件。 您的清單物件中甚至還可以包含其他的清單物件。 清單中的項目稱為「項目」(Element)，而每個清單只能保有一種類型的項目。 因此數字清單只可以保有數字，您無法將文字加入至此種清單。 同樣地，您無法將數字加入至 true/false 值的清單。
+     如果您查看小型區段中的程式碼 (和備註)，就很容易了解。 您的程式可以使用清單物件來追蹤許多不同類型的項目。 清單可存放數字、true/false 值、文字或其他物件。 您的清單物件中甚至還可以包含其他的清單物件。 清單中的項目稱為元素，而每個清單只能保有一種類型的元素。 因此數字清單只可以保有數字，您無法將文字加入至此種清單。 同樣地，您無法將數字加入至 true/false 值的清單。
 
      當您使用 `List` 陳述式建立 `new` 物件時，必須指定您想在其中儲存的資料類型。 這就是為什麼在 **IntelliSense** 視窗頂端的工具提示會顯示清單中的項目類型。 此外，這也是 `List<string>` （在C#中）和 `List(Of String)` （在 Visual Basic 中）的意義：它是一個 `List` 物件，其中包含 `string` 資料類型的元素。 字串是程式用來存放文字的項目，該文字就是 **IntelliSense** 視窗右邊的工具提示所告訴您的內容。
 
 4. 請考慮為什麼必須先建立暫存陣列 Visual Basic，但是在中C#，可以使用一個語句來建立清單。 這是因為C#語言具有*集合初始化運算式*，這會準備清單以接受值。 在 Visual Basic 中，您可以使用集合初始設定式。 不過，為了與舊版的 Visual Basic 相容，建議您使用上述程式碼。
 
-     當您使用含有 `new` 陳述式的集合初始設定式時，在建立新的清單物件之後，程式會以您在大括號內提供的資料來填入該物件。 在這種情況下，您會取得名為 [圖示] 的字串清單，而且該清單將會初始化，使其包含十六個字串。 每一個字串都是單一字母，而且會對應到標籤中的圖示。 所以遊戲將會有一對驚嘆號、一對大寫字母 N、一對逗號等 （當這些字元設定為 Webdings 字型時，它們會顯示為符號，例如匯流排、自行車、蜘蛛等等）。您的清單物件將會有十六個字串，其中一個用於 TableLayoutPanel 面板中的每個資料格。
+     當您使用含有 `new` 陳述式的集合初始設定式時，在建立新的清單物件之後，程式會以您在大括號內提供的資料來填入該物件。 在這種情況下，您會取得名為 icons 的字串清單，而且該清單將會初始化，使其包含十六個字串。 每一個字串都是單一字母，而且會對應到標籤中的圖示。 所以遊戲將會有一對驚嘆號、一對大寫字母 N、一對逗號等 （當這些字元設定為 Webdings 字型時，它們會顯示為符號，例如匯流排、自行車、蜘蛛等等）。您的清單物件將會有十六個字串，其中一個用於 TableLayoutPanel 面板中的每個資料格。
 
     > [!NOTE]
     > 在 Visual Basic 中，您會得到相同的結果，但是字串會先放入暫存陣列中，然後該暫存陣列會轉換為清單物件。 陣列類似於清單，但有所不同，例如建立的陣列為固定大小。 清單可以視需要壓縮和擴展，在此程式中這點很重要。

@@ -1,5 +1,5 @@
 ---
-title: 步驟 5：將您的 ASP.NET Core 應用程式部署至 Azure
+title: 步驟5：將您的 ASP.NET Core 應用程式部署至 Azure
 description: 透過此影片和逐步指示，將您的 ASP.NET Core Web 應用程式部署至 Azure。
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -9,21 +9,21 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 2d995818ec5b8ac01c9776bbf2290da39d2cc40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970918"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580026"
 ---
-# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>步驟 5：將 ASP.NET Core 應用程式部署至 Azure
+# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>步驟5：將您的 ASP.NET Core 應用程式部署至 Azure
 
 請遵循這些步驟來將您的 ASP.NET Core 應用程式和其資料庫部署至 Azure。
 
@@ -35,7 +35,7 @@ _觀看此影片並跟著操作，以將您的第一個 ASP.NET Core 應用程�
 
 在 Visual Studio 2019 中開啟您的 ASP.NET Core 應用程式。 此應用程式應該已經設定 EF Core 並搭配使用 Web API，如同在[此教學課程的步驟 4](tutorial-aspnet-core-ef-step-04.md) 中所設定。
 
-## <a name="publish-to-azure-app-service"></a>發佈至 Azure App Service
+## <a name="publish-to-azure-app-service"></a>發佈到 Azure App Service
 
 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 保留 [App Service] 和 [建立新的] 的預設設定，然後按一下 [發佈] 按鈕。 如果您還沒有 Azure 帳戶，請按一下 [建立您的免費 Azure 帳戶] 並完成簡短的註冊程序。
 
@@ -57,9 +57,9 @@ _觀看此影片並跟著操作，以將您的第一個 ASP.NET Core 應用程�
 
 ### <a name="scalability"></a>延展性
 
-您可以檢查選項，以將應用程式相應增加或相應放大。相應增加是指增加提供給裝載您應用程式之每個執行個體的資源。 相應放大是指增加裝載您應用程式之執行個體的數目。 您可以為應用程式設定自動調整，這樣系統會增加裝載您應用程式之執行個體的數量，以回應負載增加，然後會在負載減少時減少執行個體。
+您可以檢查選項，將應用程式相應增加和相應放大。相應增加指的是將指定給裝載應用程式的每個實例的資源提高。 相應放大是指增加裝載您應用程式之執行個體的數目。 您可以為應用程式設定自動調整，這樣系統會增加裝載您應用程式之執行個體的數量，以回應負載增加，然後會在負載減少時減少執行個體。
 
-### <a name="security-and-compliance"></a>安全性和合規性
+### <a name="security-and-compliance"></a>安全性與合規性
 
 使用 Azure 來裝載應用程式的另一個好處是安全性和合規性。 Azure App Service 提供 ISO、SOC 和 PCI 合規性。 我們可以選擇使用 Azure Active Directory 或 Twitter、Facebook、Google 或 Microsoft 等社交登入來驗證使用者。 我們可以建立 IP 限制、管理服務身分識別、新增自訂網域、應用程式的 SSL 支援，以及透過應用程式的內容、設定和資料庫的可還原封存副本來設定備份。 這些功能可在 [驗證/授權]、[身分識別]、[備份] 和 [SSL 設定] 功能表選項中存取。
 
@@ -75,7 +75,7 @@ _觀看此影片並跟著操作，以將您的第一個 ASP.NET Core 應用程�
 
 瀏覽至 */Games* 路徑，您應該能夠新增遊戲並看到它被列出。 接下來，瀏覽至 */swagger* 路徑，您應該能夠從該處使用 Web API 端點，以確認應用程式的 API 能順利運作。
 
-恭喜您！ 您已經完成本教學課程系列影片！
+恭喜！ 您已經完成本教學課程系列影片！
 
 ## <a name="next-steps"></a>後續步驟
 

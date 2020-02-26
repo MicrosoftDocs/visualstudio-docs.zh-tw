@@ -5,17 +5,17 @@ ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f4ca58506e99331c48b33717903d1925874912
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d827077266adbe0a1ba8cabd1f19ae6d815df833
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590016"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579377"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步驟 4：使用 TableLayoutPanel 控制項來配置您的表單
 
@@ -83,7 +83,7 @@ ms.locfileid: "75590016"
 
 1. 從 [資料**行和資料列樣式**] 視窗頂端的 [**顯示**] 下拉式清單中，**選擇 [** 資料列]。 將 [資料列 1] 設定為 90%，並將 [資料列 2] 設定為 10%。
 
-1. 選擇 [ **確定** ] 按鈕。 TableLayoutPanel 現在應該具有大型的上方資料列、小型的下方資料列和大型的右邊資料行。 （您可以在表單中選擇 [ **tableLayoutPanel1** ]，然後拖曳其資料列和資料行框線），以調整 TableLayoutPanel 中的資料列和資料行大小。
+1. 選擇 [確定] 按鈕。 TableLayoutPanel 現在應該具有大型的上方資料列、小型的下方資料列和大型的右邊資料行。 （您可以在表單中選擇 [ **tableLayoutPanel1** ]，然後拖曳其資料列和資料行框線），以調整 TableLayoutPanel 中的資料列和資料行大小。
 
      ![包含已調整大小之 TableLayoutPanel 的 Form1](../ide/media/vs_formafterlayoutpanel.png)<br>
 已調整大小之***TableLayoutPanel***的***Form1*** *（圖片檢視器）*
@@ -94,7 +94,7 @@ ms.locfileid: "75590016"
 
 * 若要回到上一個教學課程步驟，請參閱[步驟 3：設定您的表單屬性](../ide/step-3-set-your-form-properties.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [教學課程2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
 * [教學課程3：建立配對遊戲](tutorial-3-create-a-matching-game.md)

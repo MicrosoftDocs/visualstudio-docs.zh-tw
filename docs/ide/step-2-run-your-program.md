@@ -5,17 +5,17 @@ ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ee63c88bdca5f096fb5fbb8f36be0e2af8fbade
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8204f2a32a1bb29203c75af55aa383141f17853f
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588742"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579412"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>步驟2：執行您的圖片檢視器應用程式
 
@@ -63,7 +63,7 @@ ms.locfileid: "75588742"
 
 * 若要回到上一個教學課程步驟，請參閱[步驟1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [教學課程2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
 * [教學課程3：建立配對遊戲](tutorial-3-create-a-matching-game.md)

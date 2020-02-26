@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: e638959e-f6a4-4eb4-b2e9-f63b7855cf8f
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 773768c3329ae32edc0b8c24052dcf328b480d3d
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: 92a1744b68ad043dcee21dcb5995fbd1908bd81b
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776138"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579786"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：加入乘法和除法問題
 
@@ -58,9 +58,9 @@ ms.locfileid: "75776138"
      受測者必須回答四個問題才能完成測驗，如下圖所示。
 
      ![包含四個問題的數學測驗](../ide/media/express_finishedquiz.png)<br/>
-*具有四個問題的* ***數學測驗***
+*具有四個問題的****數學測驗***
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="to-continue-or-review"></a>繼續或檢視
 
 - 若要移至下一個教學課程步驟，請參閱 **[步驟8：自訂測驗](../ide/step-8-customize-the-quiz.md)** 。
 

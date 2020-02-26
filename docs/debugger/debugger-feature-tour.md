@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89debcfdeec2c9d363c6935bd2cfdd1ebf403f76
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599307"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578952"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio 偵錯工具初探
 
@@ -33,7 +33,7 @@ ms.locfileid: "73599307"
 
 ![設定中斷點](../debugger/media/dbg-tour-set-a-breakpoint.gif "設定中斷點")
 
-按**F5** （**debug > 開始進行調試**程式），![或在調試](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")程式列中按下 [**開始**偵錯工具] 按鈕，然後偵錯工具會執行至它所遇到的第一個中斷點。 如果尚未執行應用程式，則 F5 鍵會啟動偵錯工具並在第一個中斷點停止。
+按**F5** （**debug > 開始進行調試**程式），![或在調試](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")程式列中按下 [**開始**偵錯工具] 按鈕，然後偵錯工具會執行至它所遇到的第一個中斷點。 如果尚未執行應用程式，則 F5 鍵會啟動偵錯工具並在第一個中斷點停止。
 
 如果您知道要詳細檢查的程式碼行或程式碼區段，則中斷點是一個很有用的功能。
 
@@ -47,7 +47,7 @@ ms.locfileid: "73599307"
 
 黃色箭號表示偵錯工具暫停時的陳述式，這也表示會在相同的點暫停執行應用程式 (尚未執行此陳述式)。
 
-F11 鍵是以最詳細的方式檢查執行流程的好方法 （若要更快速地透過程式碼移動，我們也會示範一些其他選項）。根據預設，偵錯工具會略過非使用者程式碼（如果您需要更多詳細資料，請參閱[Just My Code](../debugger/just-my-code.md)）。
+F11 鍵是以最詳細的方式檢查執行流程的好方法。 （若要更快速地透過程式碼移動，我們也會示範一些其他選項）。根據預設，偵錯工具會略過非使用者程式碼（如果您需要更多詳細資料，請參閱[Just My Code](../debugger/just-my-code.md)）。
 
 >[!NOTE]
 > 在受控程式碼中，您會看到一個對話方塊，詢問您是否要在自動不進入屬性和運算子 (預設行為) 時收到通知。 如果您想要在稍後變更此設定，請在 [工具] > [選項] 功能表的 [偵錯] 下方停用 [不進入屬性和運算子] 設定。
@@ -93,7 +93,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 ## <a name="run-to-cursor"></a>執行至游標處
 
-按下 [**停止**偵測] 紅色按鈕![停止調試](../debugger/media/dbg-tour-stop-debugging.png "停止偵錯")程式，或按**Shift**  + **F5**來停止偵錯工具。
+按下 [**停止**偵測] 紅色按鈕![停止調試](../debugger/media/dbg-tour-stop-debugging.png "[停止偵錯]")程式，或按**Shift** + **F5**來停止偵錯工具。
 
 以滑鼠右鍵按一下應用程式中的程式碼行，然後選擇 [執行至游標處]。 此命令會開始偵錯，並在目前這一行程式碼上設定暫時中斷點。
 
@@ -114,7 +114,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 相對於停止應用程式並重新啟動偵錯工具，按下 [重新啟動] 可讓您節省時間。 偵錯工具會在執行程式碼叫用的第一個中斷點處暫停。
 
-如果您想要停止偵錯工具，並回到 [程式碼編輯器]，您可以按下紅色的 [停止![停止調試](../debugger/media/dbg-tour-stop-debugging.png "停止偵錯")] 按鈕，而不是 [**重新開機**]。
+如果您想要停止偵錯工具，並回到 [程式碼編輯器]，您可以按下紅色的 [停止![停止調試](../debugger/media/dbg-tour-stop-debugging.png "[停止偵錯]")] 按鈕，而不是 [**重新開機**]。
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>編輯您的程式碼並繼續C#進行偵錯工具C++（、VB、、XAML）
 
@@ -154,7 +154,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 接下來，請查看 [區域變數] 視窗。 [區域變數] 視窗會顯示位在目前範圍中的變數。
 
-![[區域變數] 視窗](../debugger/media/dbg-tour-locals-window.png "[區域變數] 視窗")
+![區域變數視窗](../debugger/media/dbg-tour-locals-window.png "[區域變數] 視窗")
 
 在此範例中，`this` 物件和 `f` 物件都在範圍內。 如需詳細資訊，請參閱[在 [自動變數] 和 [區域變數] 視窗中檢查變數](../debugger/autos-and-locals-windows.md)。
 
@@ -176,7 +176,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 ![檢查呼叫堆疊](../debugger/media/dbg-tour-call-stack.png "檢查呼叫堆疊")
 
-[呼叫堆疊] 視窗會顯示方法和函式的呼叫順序。 第一行會顯示目前的函式 (此範例中的 `Update` 方法)。 第二行會顯示已從 `Path.set` 屬性呼叫 `Update`，依此類推。 呼叫堆疊是檢查並了解應用程式執行流程的好方法。
+[呼叫堆疊] 視窗會顯示方法和函式的呼叫順序。 第一行會顯示目前的函式 (此範例中的 `Update` 方法)。 第二行會顯示已從 `Update` 屬性呼叫 `Path.set`，依此類推。 呼叫堆疊是檢查並了解應用程式執行流程的好方法。
 
 > [!NOTE]
 > [呼叫堆疊] 視窗類似於某些 IDE (例如 Eclipse) 中的 [偵錯] 檢視方塊。
@@ -229,6 +229,10 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 ![[逐步執行] 和 [下一頁] 按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "[逐步執行] 和 [下一頁] 按鈕")
 
 如需詳細資訊，請參閱[使用 IntelliTrace 檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)頁面。
+
+## <a name="debug-performance-issues"></a>Debug 效能問題
+
+如果您的應用程式執行速度太慢或使用太多記憶體，您可能需要及早流量分析工具來測試您的應用程式。 如需分析工具（例如 CPU 使用量工具和記憶體分析器）的詳細資訊，請參閱程式碼[剖析工具的第一次](../profiling/profiling-feature-tour.md)查看。
 
 ## <a name="next-steps"></a>後續步驟
 

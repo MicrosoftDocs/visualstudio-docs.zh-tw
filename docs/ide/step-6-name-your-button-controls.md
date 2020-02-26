@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 615b112c8ad3e35449a1e3a6c2817db9c7699a73
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a5c23f48e803665e00155d1b546ace4e4ec7bc54
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589977"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579789"
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名您的按鈕控制項
 
@@ -89,7 +89,7 @@ ms.locfileid: "75589977"
 
     當您在設計階段於 IDE 檢視控制項的程式碼時，Visual Studio 會加入控制項的事件處理常式方法 (如果不存在)。 例如，當您按兩下按鈕時，IDE 會為其 <xref:System.Windows.Forms.Control.Click> 事件加入事件處理常式 (每當使用者選擇按鈕時，就會呼叫)。 當您按兩下核取方塊時，IDE 會為其 <xref:System.Windows.Forms.CheckBox.CheckedChanged> 事件加入事件處理常式 (每當使用者選取或清除方塊時，就會呼叫)。
 
-    為控制項加入事件處理常式之後，您隨時可以按兩下控制項，或是在功能表列上依序選擇 [檢視] > [程式碼]，即可從 **Windows Forms 設計工具**回到此控制項。
+    為控制項加入事件處理常式之後，您隨時可以按兩下控制項，或是在功能表列上依序選擇 [檢視] **[程式碼]**  > ，即可從 **Windows Forms 設計工具**回到此控制項。
 
     當您建置程式時，名稱很重要，而方法 (包括事件處理常式) 則可以具有您想要的任何名稱。 當您使用 IDE 加入事件處理常式時，IDE 會根據控制項的名稱和所處理的事件來建立名稱。
 
@@ -103,7 +103,7 @@ ms.locfileid: "75589977"
 
 * 若要回到上一個教學課程步驟，請參閱[步驟 5：將控制項新增至您的表單](../ide/step-5-add-controls-to-your-form.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [教學課程2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
 * [教學課程3：建立配對遊戲](tutorial-3-create-a-matching-game.md)

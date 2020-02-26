@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, ResolveNonMSBuildProjectOutput task
 - ResolveNonMSBuildProjectOutput task [MSBuild]
 ms.assetid: a0b8fcec-8c8d-4867-85ac-5304c5108e5e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7060141f81054bf5daa27cdd09a07639be6e0ae8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d970437cd04a3f3d5467c905829e1d4229ab8a71
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996702"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578465"
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput 工作
 決定非 MSBuild 專案參考的輸出檔。
@@ -29,7 +29,7 @@ ms.locfileid: "62996702"
 ## <a name="parameters"></a>參數
  下表說明 `ResolveNonMSBuildProjectOutput` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`PreresolvedProjectOutputs`|選擇性的 `String` 參數。<br /><br /> 指定 XML 字串，其中包含已解析的專案輸出。|
 |`ProjectReferences`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定專案參考。|

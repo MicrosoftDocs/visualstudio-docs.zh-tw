@@ -5,17 +5,17 @@ ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be9af1badba19932c5d713bb4134448ccf84caf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 82dbef4baee72be8ff96f83e436b2587e9a020ea
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591745"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579863"
 ---
 # <a name="step-3-set-your-form-properties"></a>步驟 3：設定您的表單屬性
 
@@ -76,7 +76,7 @@ ms.locfileid: "75591745"
 
 * 若要回到上一個教學課程步驟，請參閱[步驟2：執行您的圖片檢視器應用程式](../ide/step-2-run-your-program.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [教學課程2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
 * [教學課程3：建立配對遊戲](tutorial-3-create-a-matching-game.md)

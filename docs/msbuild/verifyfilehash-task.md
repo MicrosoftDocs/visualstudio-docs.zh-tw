@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - VerifyFileHash task [MSBuild]
 - MSBuild, VerifyFileHash task
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9340657704900feb5ebdc188103109872ee39f5d
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439114"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579532"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash 工作
 
@@ -37,7 +37,7 @@ ms.locfileid: "77439114"
 |`File`|必要的 `String` 參數。<br /><br />要雜湊和驗證的檔案。|
 |`Hash`|必要的 `String` 參數。<br /><br />檔案的預期雜湊。|
 |`Algorithm`|選擇性的 `String` 參數。<br /><br />演算法。 允許值：`SHA256`、`SHA384`、`SHA512`。 預設值 = `SHA256`。|
-|`HashEncoding`|選擇性的 `String` 參數。<br /><br />要用於產生雜湊的編碼。 預設值為 `hex`。 允許值：`hex`、`base64`。|
+|`HashEncoding`|選擇性的 `String` 參數。<br /><br />要用於產生雜湊的編碼。 預設為 `hex`。 允許值：`hex`、`base64`。|
 
 ## <a name="example"></a>範例
 

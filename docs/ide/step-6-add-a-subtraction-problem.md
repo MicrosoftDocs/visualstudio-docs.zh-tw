@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 611df946b97f97832b7debfac3d11c5b7972cdae
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: 6b6dd2b572074265cca62a45b962c604abf5c849
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776097"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579826"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步驟 6：加入減法問題
 在本教學課程的第六個部分中，您將加入減法問題並學習如何執行下列工作：
@@ -65,7 +65,7 @@ ms.locfileid: "75776097"
      工具提示會顯示 [(+ 2 多載)]，也就是說，您可以透過另外兩種方式呼叫 `Next()` 方法。 多載包含不同數目或類型的引數，因此彼此之間的運作方式會稍有不同。 例如，某個方法可能會接受單一整數引數，且其中一個多載可能會接受一個整數和一個字串。 您可以依據需要的功能選擇正確的多載。 當您將程式碼新增至 `StartTheQuiz()` 方法時，只要輸入 `randomizer.Next(`，[IntelliSense] 視窗就會顯示詳細資訊。 若要循環瀏覽這些多載，請選擇**向上鍵**和**向下鍵**，如下圖所示：
 
      ![IntelliSense 中 Next&#40;&#41; 方法的多載](../ide/media/express_nextoverload.png)<br/>
-*的* 多載 ***下一個（）*** *中的方法* ***IntelliSense***
+***IntelliSense***中***Next （）*** *方法* *的*多載
 
      在這個案例中，您想要選擇最後一個多載，因為這樣就可以指定最小值和最大值。
 
@@ -86,9 +86,9 @@ ms.locfileid: "75776097"
      您的程式包括減法問題，如下圖所示：
 
      ![包含減法問題的數學測驗](../ide/media/express_addsubtract.png)<br/>
-***數學測驗*** *有減法問題*
+*具有減法問題的****數學測驗***
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="to-continue-or-review"></a>繼續或檢視
 
 - 若要移至下一個教學課程步驟，請參閱 **[步驟7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)** 。
 

@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aeb28fe7fbfbaa6e2d120fe58fdc39f188367b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23d050df688d4d1efec75245e6f48d748464170c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647508"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579321"
 ---
 # <a name="step-6-add-a-timer"></a>步驟 6：新增計時器
 接下來，您可以將 <xref:System.Windows.Forms.Timer> 控制項新增至配對遊戲。 計時器會等候指定的毫秒數，然後引發事件，稱為「刻度」。 這對於定期啟動動作或重複動作非常有用。 在這個案例中，您將使用計時器讓玩家選擇兩個圖示，如果圖示不相符，則在短時間之後再次隱藏兩個圖示。
@@ -27,8 +27,8 @@ ms.locfileid: "72647508"
 
 1. 在 [Windows Forms 設計工具] 的工具箱中，選擇 [計時器] (位於 [元件] 類別)，然後選擇 **Enter** 鍵，按兩下計時器，將計時器控制項新增至表單。 計時器的圖示（稱為**Timer1**）應會出現在表單下方的空間中，如下圖所示。
 
-     ![Timer](../ide/media/express_timer.png)<br/>
-***Timer***
+     ![計時器](../ide/media/express_timer.png)<br/>
+***計時器***
 
     > [!NOTE]
     > 如果工具箱是空的，請確定先選取表單設計工具 (而不是選取表單的後置程式碼)，再開啟工具箱。
@@ -41,7 +41,7 @@ ms.locfileid: "72647508"
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
 
       > [!IMPORTANT]
-      > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png) 的 ![Programming 語言控制項
+      > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>Docs.Microsoft.com](../ide/media/docs-programming-language-control.png) 的 ![程式設計語言控制項
 
      Tick 事件處理常式會執行下列三件事情：首先，它會呼叫 <xref:System.Windows.Forms.Timer.Stop> 方法來確定計時器並未執行。 接著，它會使用兩個參考變數 `firstClicked` 和 `secondClicked`，確定玩家所選的兩個標籤的圖示再次看不見。 最後，它會重設 `firstClicked`，並 `secondClicked` 參考變數加入C# Visual Basic 中的 `null` 和 `Nothing`。 這個步驟很重要，因為這就是程式本身重設的方式。 現在它不會追蹤任何的 <xref:System.Windows.Forms.Label> 控制項，而且已準備好讓玩家再度選擇標籤。
 

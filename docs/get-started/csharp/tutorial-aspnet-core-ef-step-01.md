@@ -10,33 +10,33 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
-ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
+ms.openlocfilehash: d900c0f51b14450f38caf06738739daef2549235
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "70977452"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580096"
 ---
-# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>教學課程：使用 Entity Framework 和 Visual Studio 2019 建立您的第一個 ASP.NET Core 應用程式
+# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>教學課程：使用 Entity Framework 搭配 Visual Studio 2019 來建立您的第一個 ASP.NET Core 應用程式
 
 在本教學課程中，您將建立可使用資料的 ASP.NET Core Web 應用程式，並將它部署至 Azure。 本教學課程包含下列步驟：
 
-- [步驟 1：安裝 Visual Studio 2019](#step-1-install-visual-studio-2019)
-- [步驟 2：建立您的第一個 ASP.NET Core Web 應用程式](tutorial-aspnet-core-ef-step-02.md)
-- [步驟 3：使用 Entity Framework 處理資料](tutorial-aspnet-core-ef-step-03.md)
-- [步驟 4：從您的 ASP.NET Core 應用程式公開 Web API](tutorial-aspnet-core-ef-step-04.md)
-- [步驟 5：將 ASP.NET Core 應用程式部署至 Azure](tutorial-aspnet-core-ef-step-05.md)
+- [步驟1：安裝 Visual Studio 2019](#step-1-install-visual-studio-2019)
+- [步驟2：建立您的第一個 ASP.NET Core web 應用程式](tutorial-aspnet-core-ef-step-02.md)
+- [步驟3：使用 Entity Framework 處理資料](tutorial-aspnet-core-ef-step-03.md)
+- [步驟4：從您的 ASP.NET Core 應用程式公開 Web API](tutorial-aspnet-core-ef-step-04.md)
+- [步驟5：將您的 ASP.NET Core 應用程式部署至 Azure](tutorial-aspnet-core-ef-step-05.md)
 
-## <a name="step-1-install-visual-studio-2019"></a>步驟 1：安裝 Visual Studio 2019
+## <a name="step-1-install-visual-studio-2019"></a>步驟1：安裝 Visual Studio 2019
 
-透過此影片教學課程和逐步指示，了解如何安裝 Visual Studio 2019。 如果您已安裝 Visual Studio，請直接跳到[步驟 2：建立您的第一個 ASP.NET Core Web 應用程式](tutorial-aspnet-core-ef-step-02.md)。
+透過此影片教學課程和逐步指示，了解如何安裝 Visual Studio 2019。 如果您已安裝 Visual Studio，請直接跳至[步驟2：建立您的第一個 ASP.NET Core web 應用程式](tutorial-aspnet-core-ef-step-02.md)。
 
 _觀看此影片並跟著操作，以安裝 Visual Studio 並建立您的第一個 ASP.NET Core 應用程式。_
 
@@ -70,7 +70,7 @@ Visual Studio 可以用於許多不同種類的開發，且工作負載讓您輕
 
 ## <a name="explore-aspnet-core-project-types"></a>探索 ASP.NET Core 專案類型
 
-您可以選擇您的專案名稱和位置，然後挑選 [建立]。 現在，選擇您 ASP.NET Core 應用程式要使用的範本。 您可以從下列選項中選擇：
+您可以選擇您的專案名稱和位置，然後挑選 [建立]。 現在，選擇您 ASP.NET Core 應用程式要使用的範本。 您可選擇下列選項：
 
 - 空白。 空白專案範本可讓您從最初開始。
 - API。 最適合 Web API。
@@ -100,4 +100,4 @@ Visual Studio 可以用於許多不同種類的開發，且工作負載讓您輕
 
 ## <a name="see-also"></a>另請參閱
 
-- [教學課程：開始使用 C# 和 ASP.NET Core](tutorial-aspnet-core.md) 更詳細且沒有影片的教學課程
+- [教學課程：開始使用C#和 ASP.NET Core](tutorial-aspnet-core.md)不含影片逐步解說的更詳細教學課程

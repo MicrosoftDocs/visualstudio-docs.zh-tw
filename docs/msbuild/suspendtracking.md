@@ -10,17 +10,17 @@ apitype: COM
 helpviewer_keywords:
 - SuspendTracking
 ms.assetid: f5e06e5a-8083-444c-99c1-07ba834226b5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc2a8b3dc2f5940c64be870df452b088dce7bc0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d48c29b9dcca477c5a5470c443be08d5060b413d
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939002"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578108"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 在目前的內容中暫停追蹤。
@@ -35,7 +35,7 @@ HRESULT WINAPI SuspendTracking(void);
  如已暫停追蹤，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。
 
 ## <a name="requirements"></a>需求
- **標頭：**  *FileTracker.h*
+ **標頭：** *FileTracker .h*
 
 ## <a name="see-also"></a>另請參閱
 - [ResumeTracking](../msbuild/resumetracking.md)

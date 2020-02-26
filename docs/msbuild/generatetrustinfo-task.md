@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, GenerateTrustInfo task
 - GenerateTrustInfo task [MSBuild]
 ms.assetid: 3ca60816-4bb0-4fef-ae43-ca0bfb63def3
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eda4e54c67a9e9e80b4fd8f59266bc4bc5f27a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5b9c32681af56595f8b00feab4979a3ec45f1588
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577459"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578700"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo 工作
 從基底資訊清單，以及從 `TargetZone` 與 `ExcludedPermissions` 參數產生應用程式信任。
@@ -29,7 +29,7 @@ ms.locfileid: "62577459"
 ## <a name="parameters"></a>參數
  下表說明 `GenerateTrustInfo` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`ApplicationDependencies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定相依組件。|
 |`BaseManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要從中產生應用程式信任的基底資訊清單。|

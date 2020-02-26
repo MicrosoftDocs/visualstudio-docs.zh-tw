@@ -7,21 +7,21 @@ ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 8be56581374aefbef41a5173836d1189cceff290
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186857"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580008"
 ---
-# <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教學課程：在 Visual Studio 中使用 XAML 和 C&#35; 來建立您的第一個通用 Windows 平台應用程式
+# <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教學課程：使用 XAML 和 C 在 Visual Studio 中建立您的第一個通用 Windows 平臺應用程式&#35;
 
 在這個 Visual Studio 整合式開發環境 (IDE) 的簡介中，您將建立一個可在任何 Windows 10 裝置上執行的 "Hello World" 應用程式。 為了這樣做，您將使用「通用 Windows 平台」(UWP) 專案範本、Extensible Application Markup Language (XAML) 及 C# 程式設計語言。
 
@@ -39,7 +39,7 @@ ms.locfileid: "71186857"
 ::: moniker range="vs-2017"
 1. 開啟 Visual Studio。
 
-1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
+1. 從頂端功能表列中 **，選擇 [** 檔案] > [**新增**>**專案**]。
 
 1. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [Windows 通用]。 在中間窗格中，選擇 [空白應用程式 (通用 Windows)]。 接著，將專案命名為 *HelloWorld*，然後選擇 [確定]。
 
@@ -91,7 +91,7 @@ ms.locfileid: "71186857"
    ![從 [方案總管] 中開啟 MainPage.xaml](media/vs-2019/uwp-solution-explorer-mainpage-xaml.png)
    ::: moniker-end
 
-   有兩個窗格：[XAML 設計工具] (其中包含設計畫布) 和 [XAML 編輯器] ，其可供您新增或變更程式碼。
+   有兩個窗格：[XAML 設計工具] (其中包含設計畫布) 和 [XAML 編輯器] (可供您新增或變更程式碼)。
 
    ![XAML 編輯器中的 [XAML 設計工具] 窗格](media/uwp-xaml-editor.png)
 
@@ -160,13 +160,13 @@ ms.locfileid: "71186857"
 
 
 ::: moniker range="vs-2017"
-現在即可建置、部署及啟動 "Hello World" UWP 應用程式，來看看其外觀和音效。 方式如下：
+現在即可建置、部署及啟動 "Hello World" UWP 應用程式，來看看其外觀和音效。 方法如下。
 
 1. 使用 [播放] 按鈕 (它的文字為**本機電腦**)，在本機電腦上啟動應用程式。
 
    ![按一下 [本機電腦] 以啟動 UWP 應用程式並對其進行偵錯](media/uwp-start-or-debug.png)
 
-   （或者，您也可以從功能表列選擇 [**調試** >程式] [**開始**]，或按 F5 啟動應用程式）。
+   （或者，您也可以從功能表列選擇 [ **Debug** ] > [**開始進行調試**程式]，或按 F5 啟動應用程式。）
 
 1. 檢視您的應用程式 (在啟動顯示畫面消失後會立即出現)。 應用程式應該看起來像這樣：
 
@@ -180,13 +180,13 @@ ms.locfileid: "71186857"
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-現在即可建置、部署及啟動 "Hello World" UWP 應用程式，來看看其外觀和音效。 方式如下：
+現在即可建置、部署及啟動 "Hello World" UWP 應用程式，來看看其外觀和音效。 方法如下。
 
 1. 使用 [播放] 按鈕 (它的文字為**本機電腦**)，在本機電腦上啟動應用程式。
 
    ![按一下 [本機電腦] 以啟動 UWP 應用程式並對其進行偵錯](media/uwp-start-or-debug.png)
 
-   （或者，您也可以從功能表列選擇 [**調試** >程式] [**開始**]，或按 F5 啟動應用程式）。
+   （或者，您也可以從功能表列選擇 [ **Debug** ] > [**開始進行調試**程式]，或按 F5 啟動應用程式。）
 
 1. 檢視您的應用程式 (在啟動顯示畫面消失後會立即出現)。 應用程式應該看起來像這樣：
 
@@ -202,7 +202,7 @@ ms.locfileid: "71186857"
 
 ## <a name="next-steps"></a>後續步驟
 
-恭喜您完成此教學課程！ 我們希望您已了解有關 UWP 和 Visual Studio IDE 的一些基本概念。 若要深入了解，請繼續進行下列教學課程：
+恭喜您完成此教學課程！ 我們希望您已了解有關 UWP 和 Visual Studio IDE 的一些基本概念。 若要深入了解，請繼續下列教學課程：
 
 > [!div class="nextstepaction"]
 > [建立使用者介面](/windows/uwp/design/basics/xaml-basics-ui)

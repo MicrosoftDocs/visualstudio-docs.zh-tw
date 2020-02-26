@@ -4,17 +4,17 @@ ms.date: 10/16/2019
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 884047237652f6b69bd437b5faf47d820903b824
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5b1f3620ef462228ff6a3461f44019e9c515a1c0
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588664"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579311"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>教學課程 2：建立計時的數學測驗
 
@@ -39,7 +39,7 @@ ms.locfileid: "75588664"
 
 ## <a name="tutorial-links"></a>教學課程的連結
 
-|標題|描述|
+|Title|描述|
 |-----------|-----------------|
 |[步驟 1：建立專案並將標籤加入至表單](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|從建立專案、變更屬性，然後新增 `Label` 控制項開始。|
 |[步驟 2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)|建立加法問題，並使用 `Random` 類別產生隨機數字。|
@@ -56,7 +56,7 @@ ms.locfileid: "75588664"
 
 若要開始本教學課程，請從 **[步驟1：建立專案並將標籤新增至表單](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)** 開始。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [其他C#教學課程](/visualstudio/get-started/csharp/)
 * [Visual Basic 教學課程](/visualstudio/get-started/visual-basic/)

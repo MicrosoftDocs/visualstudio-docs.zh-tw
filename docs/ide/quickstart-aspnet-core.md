@@ -6,20 +6,20 @@ ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c87fd68a68076ab0ccab2d86f758f2217e956e26
-ms.sourcegitcommit: 292ccebc601d465931fb94218a1c289c5cf77795
+ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753932"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579958"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
@@ -53,7 +53,7 @@ ms.locfileid: "73753932"
 
 1. 開啟 Visual Studio 2017。
 
-1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
+1. 從頂端功能表列中 **，選擇 [** 檔案] > [**新增**>**專案**]。
 
 1. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [ASP.NET Core Web 應用程式]。 <br/><br/>接著，將您的檔案命名為 `HelloWorld` 並選擇 [確定]。
 
@@ -96,7 +96,7 @@ Visual Studio 隨即開啟您的專案檔。
    ![為 ASP.NET Core Web 應用程式選擇 C# 範本](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
 
    > [!NOTE]
-   > 如果您未看到 [ASP.NET Core Web 應用程式] 範本，可以從 [建立新專案] 視窗加以安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   > 如果您未看到 [ASP.NET Core Web 應用程式] 範本，可以從 [建立新專案] 視窗加以安裝。 在 [找不到你要尋找的項目嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
    >
    > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -106,7 +106,7 @@ Visual Studio 隨即開啟您的專案檔。
    >
    > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回這個「[建立專案](#create-a-project)」程序中的第 2 步。
 
-1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *HelloWorld*。 接著，選擇 [建立]。
+1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 **HelloWorld**。 接著，選擇 [建立]。
 
    ![在 [設定您的新專案] 視窗中，以 'HelloWorld' 命名您的專案](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
@@ -163,7 +163,7 @@ Visual Studio 隨即開啟您的專案檔。
 
 1. 關閉網頁瀏覽器。
 
-### <a name="review-your-work"></a>檢閱您的工作
+### <a name="review-your-work"></a>檢閱工作
 
 檢視以下動畫以檢查您在上一節中完成的工作。
 
@@ -208,11 +208,11 @@ Visual Studio 隨即開啟您的專案檔。
 
 ## <a name="next-steps"></a>後續步驟
 
-若要深入了解，請繼續進行下列教學課程：
+若要深入了解，請繼續下列教學課程：
 
 > [!div class="nextstepaction"]
 > [Visual Studio 中的 C# 和 ASP.NET 使用者入門](../get-started/csharp/tutorial-aspnet-core.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 Visual Studio 將 Web 應用程式發行到 Azure App Service](../deployment/quickstart-deploy-to-azure.md)
