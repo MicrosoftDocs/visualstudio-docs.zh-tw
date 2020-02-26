@@ -100,7 +100,7 @@
     },
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft",
+      "url": "https://github.com/Microsoft/templates.docs.msft.zh-tw",
       "branch": "master",
       "branch_mapping": {}
     },
