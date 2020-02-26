@@ -1,7 +1,7 @@
 ---
 title: 容器的已知問題
 description: 深入了解當您將 Visual Studio Build Tools 安裝到 Windows 容器時可能發生的已知問題。
-ms.date: 07/03/2019
+ms.date: 02/18/2020
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a281113f75484940544e5cbd53292207114d21c0
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
+ms.sourcegitcommit: b873fce7ba40d825fcb59555360c002bbfcecd9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77453378"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77611122"
 ---
 # <a name="known-issues-for-containers"></a>容器的已知問題
 
