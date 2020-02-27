@@ -139,14 +139,8 @@
       "breadcrumb_path": {
         "vs-2015/**/*.md": "/visualstudio/_breadcrumb/vs-2015/toc.json"
       },
-      "disable_contribution_on_translation_quality": {
-        "kb-support/*.md": ["HT","MT","MTE75","MTE95","Blank"],
-        "kb-support/**/*.md": ["HT","MT","MTE75","MTE95","Blank"]
-      },
       "feedback_system": {
-        "vs-2015/**/*": "None",
-        "kb-support/*.md": "None",
-        "kb-support/**/*.md": "None"
+        "vs-2015/**/*": "None"
       },
       "searchScope": {
         "extensibility/**/*.md": [
