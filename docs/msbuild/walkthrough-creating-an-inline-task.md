@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d5c40af3e60add88948f8f1c5c36abf3b980eca
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 70ce19a6dcd9c61b0e14d0d88c52072f59f87fb9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77271182"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631155"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>逐步解說：建立內嵌工作
+
 MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 從 .NET Framework 4 版開始，您可以在專案檔中建立內嵌工作。 您不必建立個別的組件來裝載工作。 如需詳細資訊，請參閱[內嵌工作](../msbuild/msbuild-inline-tasks.md)。
 
  本逐步解說示範如何建立並執行這些內嵌工作：
@@ -40,13 +41,12 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 3. 使用「命令提示字元視窗」來建置專案並檢查結果。
 
 ## <a name="create-and-modify-an-msbuild-project"></a>建立和修改 MSBuild 專案
+
  Visual Studio 專案系統是以 MSBuild 為基礎。 因此，您可以使用 Visual Studio 建立組建專案檔。 在本節中，您將建立 Visual C# 專案檔。 (您可以改為建立 Visual Basic 專案檔。 在本教學課程的內容中，這兩個專案檔之間的差異非常小)。
 
 #### <a name="to-create-and-modify-a-project-file"></a>建立並修改專案檔
 
-1. 在 Visual Studio 的 [檔案] 功能表上，按一下 [新增]，然後按一下 [專案]。
-
-2. 在 [新增專案] 對話方塊中，選取 [Visual C#] 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱] 方塊中，輸入 `InlineTasks`。 輸入方案的 [位置]，例如 *D:\\* 。 確認已選取 [為方案建立目錄]、已取消選取 [加入至原始檔控制]，且 [方案名稱] 為 **InlineTasks**。
+1. 在 Visual Studio 中，使用C# **Windows Forms 應用程式**範本建立新的專案。 在 [名稱] 方塊中，輸入 `InlineTasks`。 輸入方案的 [位置]，例如 *D:\\* 。 確認已選取 [為方案建立目錄]、已取消選取 [加入至原始檔控制]，且 [方案名稱] 為 **InlineTasks**。
 
 3. 按一下 [確定] 以建立專案檔。
 
@@ -57,6 +57,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
      該專案檔隨即出現在程式碼編輯器中。
 
 ## <a name="add-a-basic-hello-task"></a>加入基本的 Hello 工作
+
  現在，將顯示 "Hello, world!" 之訊息的基本工作加入到專案檔 也加入預設 TestBuild 目標來叫用工作。
 
 #### <a name="to-add-a-basic-hello-task"></a>加入基本的 Hello 工作
@@ -88,6 +89,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
    此程式碼會建立名為 Hello 的內嵌工作，而且沒有參數、參考或 `Using` 指示詞。 Hello 工作僅包含一行程式碼，它會在預設記錄裝置 (通常是在主控台視窗) 上顯示 hello 訊息。
 
 ### <a name="run-the-hello-task"></a>執行 Hello 工作
+
  使用「命令提示字元視窗」執行 MSBuild，以建構 Hello 工作並處理叫用它的 TestBuild 目標。
 
 ##### <a name="to-run-the-hello-task"></a>執行 Hello 工作
@@ -108,6 +110,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
    藉由交替使用程式碼編輯器和「命令提示字元視窗」，您可以變更專案檔並快速查看結果。
 
 ## <a name="define-the-echo-task"></a>定義 Echo 工作
+
  建立接受字串參數，並會在預設記錄裝置上顯示字串的內嵌工作。
 
 #### <a name="to-define-the-echo-task"></a>定義 Echo 工作
@@ -139,6 +142,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
    此程式碼會定義名為 Echo，且僅有一個必要的輸入參數 Text 的內嵌工作。 根據預設，參數屬於類型 System.String。 當 TestBuild 目標叫用 Echo 工作時，會設定 Text 參數的值。
 
 ## <a name="define-the-adder-task"></a>定義 Adder 工作
+
  建立會將兩個整數參數加總，且將其總和以 MSBuild 屬性發出的內嵌工作。
 
 #### <a name="to-define-the-adder-task"></a>定義 Adder 工作
@@ -175,6 +179,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
    此程式碼會定義名為 Adder，且有兩個必要整數輸入參數 A 和 B，以及一個整數輸出參數 C 的內嵌工作。Adder 工作會將兩個輸入參數加總，並在輸出參數中傳回總和。 總和會以 MSBuild 屬性 `Sum` 發出。 當 TestBuild 目標叫用 Adder 工作時，會設定輸入參數的值。
 
 ## <a name="define-the-regx-task"></a>定義 RegX 工作
+
  建立一個內嵌工作，該內嵌工作會接受項目群組和規則運算式，且傳回所有具備符合運算式之檔案內容的項目清單。
 
 #### <a name="to-define-the-regx-task"></a>定義 RegX 工作
@@ -244,6 +249,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
   當 TestBuild 目標叫用 RegX 工作時，會設定輸入參數的值。 RegX 工作會讀取每個檔案，並傳回符合規則運算式之檔案的清單。 這份清單會以 `Result` 輸出參數傳回，會以 MSBuild 項目 `MatchedFiles` 發出。
 
 ### <a name="handle-reserved-characters"></a>處理保留字元
+
  MSBuild 剖析器會以 XML 的方式處理內嵌工作。 在 XML 中具備保留意義的字元 (例如 "\<" 和 ">") 會以如同 XML (而非 .NET 原始碼) 的方式偵測與處理。 若要在程式碼運算式中包含保留字元 (例如 `Files.Length > 0`)，請撰寫 `Code` 元素，讓其內容包含在 CDATA 運算式中，如下所示︰
 
  ```xml
@@ -257,6 +263,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [內嵌工作](../msbuild/msbuild-inline-tasks.md)
 - [工作](../msbuild/msbuild-tasks.md)
 - [目標](../msbuild/msbuild-targets.md)

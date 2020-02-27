@@ -12,20 +12,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ad869fc091035de711ec59e20d10fd0af5e21b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574609"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633807"
 ---
 # <a name="how-to-select-the-files-to-build"></a>如何：選取要建置的檔案
+
 建置包含數個檔案的專案時，您可以在專案檔中分別列出每個檔案，或是您可以使用萬用字元來包含一個目錄或巢狀目錄集合中的所有檔案。
 
 ## <a name="specify-inputs"></a>指定輸入
+
 項目代表建置的輸入。 如需項目的詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
-若要包含建置的檔案，它們必須包含在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔的項目清單中。 多個檔案可以新增至項目清單，方法是個別包含檔案，或是使用萬用字元來一次包含許多檔案。
+若要包含組建的檔案，必須將這些檔案包含在 MSBuild 專案檔的專案清單中。 多個檔案可以新增至項目清單，方法是個別包含檔案，或是使用萬用字元來一次包含許多檔案。
 
 #### <a name="to-declare-items-individually"></a>個別宣告項目
 
@@ -38,7 +40,7 @@ ms.locfileid: "75574609"
     `<VBFile Include="form1.vb"/>`
 
     > [!NOTE]
-    > 如果項目集合中的項目不在與專案檔相同的目錄中，您必須指定項目的完整或相對路徑。 例如：`Include="..\..\form2.cs"`。
+    > 如果項目集合中的項目不在與專案檔相同的目錄中，您必須指定項目的完整或相對路徑。 例如： `Include="..\..\form2.cs"` 。
 
 #### <a name="to-declare-multiple-items"></a>宣告多個項目
 
@@ -51,6 +53,7 @@ ms.locfileid: "75574609"
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>使用萬用字元指定輸入
+
 您也可以使用萬用字元，以遞迴方式包含所有檔案，或只包含來自子目錄的特定檔案，作為建置的輸入。 如需萬用字元的詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)
 
 下列範例所根據的專案，包含下列目錄和子目錄中的圖形檔案，且專案檔位於「專案」目錄中︰
@@ -84,6 +87,7 @@ ms.locfileid: "75574609"
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>將項目傳遞至工作
+
 在專案檔案中，您可以在工作中使用 @() 標記法指定整個項目清單作為組置的輸入。 不論您分別列出所有檔案，還是使用萬用字元，都可以使用這個標記法。
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>使用所有 Visual C# 或 Visual Basic 檔案作為輸入
@@ -97,11 +101,12 @@ ms.locfileid: "75574609"
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> 您必須對項目使用萬用字元來指定組建的輸入；您不能使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作中的 `Sources` 屬性 (例如 [Csc](../msbuild/csc-task.md) 或 [Vbc](../msbuild/vbc-task.md)) 指定輸入。 下列範例在專案檔案中無效︰
+> 您必須使用萬用字元搭配專案，以指定組建的輸入;您不能使用 MSBuild 或[Vbc](../msbuild/vbc-task.md)[等 MSBuild](../msbuild/csc-task.md)工作中的 `Sources` 屬性來指定輸入。 下列範例在專案檔案中無效︰
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>範例
+
 下列程式碼範例會顯示個別包含所有輸入檔案的專案。
 
 ```xml
@@ -136,6 +141,7 @@ ms.locfileid: "75574609"
 ```
 
 ## <a name="example"></a>範例
+
 下列程式碼範例會使用萬用字元來包含所有 *.cs* 檔。
 
 ```xml
@@ -169,6 +175,7 @@ ms.locfileid: "75574609"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)
 - [項目](../msbuild/msbuild-items.md)

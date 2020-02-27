@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d5f9e402750978b1201c6b2a5b1ef0659e8789
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593664"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633339"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 字彙表
 
@@ -100,14 +100,14 @@ AssemblyFoldersEx\
 屬性函式是一個系統屬性或方法，可用於評估 MSBuild 指令碼。 屬性方法可用來讀取系統時間、比較字串、比對規則運算式，以及執行其他動作。 如需詳細資訊，請參閱 [Property 函式](../msbuild/property-functions.md)。
 
 屬性函式，巢狀\
-屬性函式可能會加以結合，以形成更複雜的函式。 例如，套用至物件的
+屬性函式可能會加以結合，以形成更複雜的函式。 例如：
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
 如需詳細資訊，請參閱 [Property 函式](../msbuild/property-functions.md)。
 
 屬性，全域\
-全域屬性是用來控制建置程序的索引鍵/值組。 您可以在命令提示字元上，或使用 [MSBuild 工作](../msbuild/msbuild-task.md)的 `Properties` 屬性來設定全域屬性，而且無法在組建的評估階段加以修改。 如需詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
+全域屬性是用來控制建置程序的索引鍵/值組。 您可以在命令提示字元上，或使用 `Properties`MSBuild 工作[的 ](../msbuild/msbuild-task.md) 屬性來設定全域屬性，而且無法在組建的評估階段加以修改。 如需詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
 
 屬性，本地\
 區域屬性是用來控制建置程序的索引鍵/值組。 這個詞彙只能用於區分非全域屬性的屬性。
@@ -161,7 +161,7 @@ MSBuild 工作會在專案建置期間建立子專案。 這個新的專案是�
 目標檔案是一個專案檔，其中包含大部分的目標及可引導組建的工作。 依照慣例，其副檔名為 *.targets*。 通常會在相關聯的專案檔結束時匯入目標檔案。
 
 工作\
-工作是 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案用來執行建置作業之可執行程式碼的單元。 例如，工作可能是編譯輸入檔，或是執行外部工具。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
+工作是 MSBuild 專案用來執行組建作業的可執行程式碼單位。 例如，工作可能是編譯輸入檔，或是執行外部工具。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
 
 轉換\
 轉換是從一個項目集合到另一個的一對一轉換。 除了啟用專案來轉換項目集合，轉換還能讓目標識別其輸入和輸出之間的直接對應。 如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。
@@ -169,6 +169,6 @@ MSBuild 工作會在專案建置期間建立子專案。 這個新的專案是�
 已知的中繼資料\
 請參閱＜中繼資料，已知＞。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [ MSBuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)

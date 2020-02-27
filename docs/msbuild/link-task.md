@@ -30,17 +30,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31bad6dfd0c336e4535e446d1167cb9fd6874972
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0f954be3a77e42ea4323255f978f6602a70c9725
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592200"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633573"
 ---
 # <a name="link-task"></a>Link 工作
+
 包裝 Microsoft C++連結器工具（ *link .exe*）。 連結器工具會連結通用物件檔案格式 (COFF) 目的檔及程式庫，以建立可執行檔 ( *.exe*) 或動態連結程式庫 (DLL)。 如需詳細資訊，請參閱[連結器選項](/cpp/build/reference/linker-options)。
 
 ## <a name="parameters"></a>參數
+
  以下描述 **Link** 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。
 
 - **AdditionalDependencies**
@@ -111,13 +113,13 @@ ms.locfileid: "75592200"
 
   隱含的 **Boolean** 參數。
 
-  啟用更深入的檔案追蹤，來擷取累加式連結的行為。 一律傳回 `true`。
+  啟用更深入的檔案追蹤，來擷取累加式連結的行為。 永遠會傳回 `true`。
 
 - **BaseAddress**
 
   選擇性的 **String** 參數。
 
-  設定要建置之程式或 DLL 的基底位址。 請指定 `{address[,size] | @filename,key}`。
+  設定要建置之程式或 DLL 的基底位址。 指定 `{address[,size] | @filename,key}`。
 
   如需詳細資訊，請參閱 [/BASE (基底位址)](/cpp/build/reference/base-base-address)。
 
@@ -225,7 +227,7 @@ ms.locfileid: "75592200"
 
   選擇性的 **Boolean** 參數。
 
-  如果是 `true`，即會部分簽署組件。 根據預設，該值為 `false`。
+  如果是 `true`，即會部分簽署組件。 根據預設，此值是 `false`。
 
   如需詳細資訊，請參閱 [/DELAYSIGN (部分簽署組件)](/cpp/build/reference/delaysign-partially-sign-an-assembly)。
 
@@ -261,7 +263,7 @@ ms.locfileid: "75592200"
 
   如果是 `true`，即會啟用完全相同的 COMDAT 摺疊。
 
-  如需詳細資訊，請參閱 [/OPT (最佳化)](/cpp/build/reference/opt-optimizations) 的 `ICF[= iterations]` 引數。
+  如需詳細資訊，請參閱 `ICF[= iterations]`/OPT (最佳化)[ 的 ](/cpp/build/reference/opt-optimizations) 引數。
 
 - **EnableUAC**
 
@@ -349,7 +351,7 @@ ms.locfileid: "75592200"
 
   指定一次要配置的實體記憶體數量。
 
-  如需詳細資訊，請參閱 [/HEAP (設定堆積大小)](/cpp/build/reference/heap-set-heap-size) 中的 `commit` 引數。 另請參閱 **HeapReserveSize** 參數。
+  如需詳細資訊，請參閱 `commit`/HEAP (設定堆積大小)[ 中的 ](/cpp/build/reference/heap-set-heap-size) 引數。 另請參閱 **HeapReserveSize** 參數。
 
 - **HeapReserveSize**
 
@@ -357,7 +359,7 @@ ms.locfileid: "75592200"
 
   指定虛擬記憶體中的堆積配置總和。
 
-  如需詳細資訊，請參閱 [/HEAP (設定堆積大小)](/cpp/build/reference/heap-set-heap-size) 中的 `reserve` 引數。 另請參閱此表格中的 **HeapCommitSize** 參數。
+  如需詳細資訊，請參閱 `reserve`/HEAP (設定堆積大小)[ 中的 ](/cpp/build/reference/heap-set-heap-size) 引數。 另請參閱此表格中的 **HeapCommitSize** 參數。
 
 - **IgnoreAllDefaultLibraries**
 
@@ -477,7 +479,7 @@ ms.locfileid: "75592200"
 
   如果是 `true`，即會指定連結器要顯示進度指示器，以顯示連結完成的百分比。
 
-  如需詳細資訊，請參閱 [/LTCG (連結時產生程式碼)](/cpp/build/reference/ltcg-link-time-code-generation) 的 `STATUS` 引數。
+  如需詳細資訊，請參閱 `STATUS`/LTCG (連結時產生程式碼)[ 的 ](/cpp/build/reference/ltcg-link-time-code-generation) 引數。
 
 - **LinkTimeCodeGeneration**
 
@@ -497,7 +499,7 @@ ms.locfileid: "75592200"
 
   - **PGUpdate**
 
-    \- **/ltcg： PGUpdate**
+    \- **/LTCG:PGUpdate**
 
   如需詳細資訊，請參閱 [/LTCG (連結時產生程式碼)](/cpp/build/reference/ltcg-link-time-code-generation)。
 
@@ -515,7 +517,7 @@ ms.locfileid: "75592200"
 
   如果是 `true`，即會告訴連結器在對應檔中包含匯出的函式。
 
-  如需詳細資訊，請參閱 [/MAPINFO (在對應檔中包含資訊)](/cpp/build/reference/mapinfo-include-information-in-mapfile) 中的`EXPORTS` 引數。
+  如需詳細資訊，請參閱 `EXPORTS`/MAPINFO (在對應檔中包含資訊)[ 中的](/cpp/build/reference/mapinfo-include-information-in-mapfile) 引數。
 
 - **MapFileName**
 
@@ -535,7 +537,7 @@ ms.locfileid: "75592200"
 
   選擇性的 **String** 參數。
 
-  結合映像中的區段。 請指定 `from-section=to-section`。
+  結合映像中的區段。 指定 `from-section=to-section`。
 
   如需詳細資訊，請參閱 [/MERGE (結合區段)](/cpp/build/reference/merge-combine-sections)。
 
@@ -589,7 +591,7 @@ ms.locfileid: "75592200"
 
   如果是 `true`，即會排除從未參考的函式和/或資料。
 
-  如需詳細資訊，請參閱 [/OPT (最佳化)](/cpp/build/reference/opt-optimizations) 中的 `REF` 引數。
+  如需詳細資訊，請參閱 `REF`/OPT (最佳化)[ 中的 ](/cpp/build/reference/opt-optimizations) 引數。
 
 - **OutputFile**
 
@@ -619,7 +621,7 @@ ms.locfileid: "75592200"
 
   如需詳細資訊，請參閱 [/ALLOWBIND (防止 DLL 繫結)](/cpp/build/reference/allowbind-prevent-dll-binding)。
 
-- **Profile**
+- **設定檔**
 
   選擇性的 **Boolean** 參數。
 
@@ -697,7 +699,7 @@ ms.locfileid: "75592200"
 
   如需詳細資訊，請參閱 [/VERBOSE (列印進度訊息)](/cpp/build/reference/verbose-print-progress-messages)。
 
-- **Sources**
+- **來源**
 
   必要的 `ITaskItem[]` 參數。
 
@@ -717,7 +719,7 @@ ms.locfileid: "75592200"
 
   指定在配置額外的記憶體時，每個配置中的實體記憶體數量。
 
-  如需詳細資訊，請參閱 [/STACK (堆疊配置)](/cpp/build/reference/stack-stack-allocations) 的 `commit` 引數。
+  如需詳細資訊，請參閱 `commit`/STACK (堆疊配置)[ 的 ](/cpp/build/reference/stack-stack-allocations) 引數。
 
 - **StackReserveSize**
 
@@ -725,7 +727,7 @@ ms.locfileid: "75592200"
 
   指定虛擬記憶體中的堆疊配置大小總和。
 
-  如需詳細資訊，請參閱 [/STACK (堆疊配置)](/cpp/build/reference/stack-stack-allocations) 的 `reserve` 引數。
+  如需詳細資訊，請參閱 `reserve`/STACK (堆疊配置)[ 的 ](/cpp/build/reference/stack-stack-allocations) 引數。
 
 - **StripPrivateSymbols**
 
@@ -771,7 +773,7 @@ ms.locfileid: "75592200"
 
   如果是 `true`，即會告知連結器不要在最終映像中包含可繫結的匯入位址表 (IAT)。
 
-  如需詳細資訊，請參閱 [/DELAY (延遲載入匯入設定)](/cpp/build/reference/delay-delay-load-import-settings) 的 `NOBIND` 引數。
+  如需詳細資訊，請參閱 `NOBIND`/DELAY (延遲載入匯入設定)[ 的 ](/cpp/build/reference/delay-delay-load-import-settings) 引數。
 
 - **SupportUnloadOfDelayLoadedDLL**
 
@@ -779,7 +781,7 @@ ms.locfileid: "75592200"
 
   如果是 `true`，即會告知延遲載入 Helper 函式，支援明確卸載 DLL。
 
-  如需詳細資訊，請參閱 [/DELAY (延遲載入匯入設定)](/cpp/build/reference/delay-delay-load-import-settings) 的 `UNLOAD` 引數。
+  如需詳細資訊，請參閱 `UNLOAD`/DELAY (延遲載入匯入設定)[ 的 ](/cpp/build/reference/delay-delay-load-import-settings) 引數。
 
 - **SuppressStartupBanner**
 
@@ -795,7 +797,7 @@ ms.locfileid: "75592200"
 
   如果是 `true`，即會告知作業系統要先將連結器輸出複製到交換檔，然後從該處執行映像。
 
-  如需詳細資訊，請參閱 [/SWAPRUN (將連結器輸出載入至交換檔)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file) 的 `CD` 引數。 另請參閱 **SwapRunFromNET** 參數。
+  如需詳細資訊，請參閱 `CD`/SWAPRUN (將連結器輸出載入至交換檔)[ 的 ](/cpp/build/reference/swaprun-load-linker-output-to-swap-file) 引數。 另請參閱 **SwapRunFromNET** 參數。
 
 - **SwapRunFromNET**
 
@@ -803,7 +805,7 @@ ms.locfileid: "75592200"
 
   如果是 `true`，即會告知作業系統要先將連結器輸出複製到交換檔，然後從該處執行映像。
 
-  如需詳細資訊，請參閱 [/SWAPRUN (將連結器輸出載入至交換檔)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file) 的 `NET` 引數。 另請參閱此表格中的 **SwapRunFromCD** 參數。
+  如需詳細資訊，請參閱 `NET`/SWAPRUN (將連結器輸出載入至交換檔)[ 的 ](/cpp/build/reference/swaprun-load-linker-output-to-swap-file) 引數。 另請參閱此表格中的 **SwapRunFromCD** 參數。
 
 - **TargetMachine**
 
@@ -899,7 +901,7 @@ ms.locfileid: "75592200"
 
   - **RequireAdministrator** - `level='requireAdministrator'`
 
-  如需詳細資訊，請參閱 [/MANIFESTUAC (在資訊清單中內嵌 UAC 資訊)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest) 的 `level` 引數。
+  如需詳細資訊，請參閱 `level`/MANIFESTUAC (在資訊清單中內嵌 UAC 資訊)[ 的 ](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest) 引數。
 
 - **UACUIAccess**
 
@@ -907,7 +909,7 @@ ms.locfileid: "75592200"
 
   如果是 `true`，應用程式即會略過使用者介面保護層級，並將輸入放到桌面上更高權限的視窗；否則為 `false`。
 
-  如需詳細資訊，請參閱 [/MANIFESTUAC (在資訊清單中內嵌 UAC 資訊)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest) 的 `uiAccess` 引數。
+  如需詳細資訊，請參閱 `uiAccess`/MANIFESTUAC (在資訊清單中內嵌 UAC 資訊)[ 的 ](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest) 引數。
 
 - **UseLibraryDependencyInputs**
 
@@ -923,5 +925,6 @@ ms.locfileid: "75592200"
 
   如需詳細資訊，請參閱 [/VERSION (版本資訊)](/cpp/build/reference/version-version-information)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作參考](../msbuild/msbuild-task-reference.md)
