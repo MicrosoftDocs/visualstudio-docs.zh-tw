@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: abd8ba039f9f6a19f5c028e05c03151c090e304c
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 69c576f34b73ec99edd231d39e8bfa8ea661f2ff
+ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77630999"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652803"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0 的新功能
 
@@ -21,7 +21,7 @@ ms.locfileid: "77630999"
 
 ## <a name="changed-path"></a>已變更的路徑
 
- MSBuild 安裝於每個 Visual Studio 版本底下的 *\Current* 資料夾中。 例如，*C:\Program Files (x86)\Microsoft Visual Studio\Current\Enterprise\MSBuild*。 您可以使用下列 PowerShell 模組找出 MSBuild：[vssetup.powershell](https://github.com/Microsoft/vssetup.powershell)。
+ MSBuild 會安裝在每個 Visual Studio 版本下的 *\Current*資料夾中，而可執行檔位於 *\bin*子資料夾中。 例如，隨 Visual Studio 2019 社區安裝的*msbuild.exe*路徑為*C:\Program Files （X86） \Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe*您也可以使用下列 PowerShell 模組來尋找 MSBuild： [vssetup.powershell。](https://github.com/Microsoft/vssetup.powershell)
 
 ## <a name="changed-properties"></a>已變更的屬性
 

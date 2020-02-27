@@ -6,18 +6,18 @@ ms.topic: conceptual
 helpviewer_keywords:
 - xaml edit and continue
 - xaml hot reload
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f1232620d40a26c894b6b2f38fc7d8c10a44c405
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d977d79ce55bdd3abcb467d7bf7518b88bad7402
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450930"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706361"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>在 Visual Studio 中使用 XAML 熱重載來撰寫和偵測執行中的 XAML 程式碼
 
@@ -48,14 +48,14 @@ XAML 熱重載可讓您在應用程式執行時變更 XAML 程式碼，以協助
 
 以下是 XAML 熱重載的已知限制。 若要解決您遇到的任何限制，只要停止偵錯工具，然後完成作業即可。
 
-|限制|WPF|UWP|備註|
+|限制|WPF|UWP|注意|
 |-|-|-|-|
 |在應用程式執行時將事件接線至控制項|不支援|不支援|請參閱錯誤：*確認事件失敗*。 請注意，在 WPF 中，您可以參考現有的事件處理常式。 在 UWP 應用程式中，不支援參考現有的事件處理常式。|
-|在資源字典中建立資源物件，例如在應用程式的頁面/視窗或*應用程式中。 xaml*|從 Visual Studio 2019 Update 2 開始支援|支援|範例：將 `SolidColorBrush` 加入資源字典中，以做為 `StaticResource`。</br>注意：使用 XAML 熱重載時，可以套用/使用靜態資源、樣式轉換器，以及寫入至資源字典的其他元素。 不支援建立資源。</br> 變更資源字典 `Source` 屬性。|
-|當應用程式正在執行時，將新的控制項、類別、視窗或其他檔案加入至您的專案|不支援|不支援|無|
-|管理 NuGet 套件（新增/移除/更新套件）|不支援|不支援|無|
+|在資源字典中建立資源物件，例如在應用程式的頁面/視窗或*應用程式中。 xaml*|從 Visual Studio 2019 Update 2 開始支援|支援|範例：將 `SolidColorBrush` 新增至資源字典，以當做 `StaticResource`使用。</br>注意：使用 XAML 熱重載時，可以套用/使用靜態資源、樣式轉換器，以及寫入至資源字典的其他元素。 不支援建立資源。</br> `Source` 屬性變更資源字典。|
+|當應用程式正在執行時，將新的控制項、類別、視窗或其他檔案加入至您的專案|不支援|不支援|None|
+|管理 NuGet 套件（新增/移除/更新套件）|不支援|不支援|None|
 |變更使用 {x:Bind} 標記延伸的資料系結|N/A|從 Visual Studio 2019 開始支援|這需要 Windows 10 版本1809（組建10.0.17763）。 Visual Studio 2017 或先前版本中不支援。|
-|不支援變更 X：Uid 指示詞|N/A|不支援|無|
+|不支援變更 X：Uid 指示詞|N/A|不支援|None|
 
 ## <a name="error-messages"></a>錯誤訊息
 
@@ -66,8 +66,8 @@ XAML 熱重載可讓您在應用程式執行時變更 XAML 程式碼，以協助
 |確定事件失敗|錯誤表示您嘗試將事件連接到您的其中一個控制項，而您的應用程式在執行時並不支援。|
 |XAML 熱重載不支援這項變更，而且將不會在進行偵錯工具期間套用。|錯誤表示 XAML 熱重載不支援您嘗試的變更。 停止「調試」會話、進行變更，然後重新開機「調試」會話。 如果您發現不支援的案例，請使用[Visual Studio 開發人員社區](https://developercommunity.visualstudio.com/spaces/8/index.html)中新的「建議功能」選項。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [疑難排解 XAML 熱重載](xaml-hot-reload-troubleshooting.md)
-* [適用于 Xamarin 的 XAML 熱重載](/xamarin/xamarin-forms/xaml/hot-reload)
+* [適用於 Xamarin.Forms 的 XAML 熱重新載入](/xamarin/xamarin-forms/xaml/hot-reload)
 * [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
