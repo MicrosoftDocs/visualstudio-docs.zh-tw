@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 650683c047f7df6422e25ef5b23201a2660b3125
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 915265a775f572467ad1296499bdd3201adc1f8b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591121"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634145"
 ---
 # <a name="findinlist-task"></a>FindInList 工作
+
 在指定的清單中，尋找擁有相符 itemspec 的項目。
 
 ## <a name="parameters"></a>參數
+
  下表描述 [FindInList 工作](../msbuild/findinlist-task.md)的參數。
 
 |參數|描述|
@@ -39,8 +41,10 @@ ms.locfileid: "75591121"
 |`MatchFileNameOnly`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，只比對 itemspec 的檔案名稱部分；否則比對整個 itemspec。 預設值為 `true`。|
 
 ## <a name="remarks"></a>備註
+
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

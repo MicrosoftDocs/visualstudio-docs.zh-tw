@@ -17,15 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c65bafd9183c97efa7595c10d7bdb3641c5f75f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595133"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632468"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 元素 (MSBuild)
-參考 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案 SDK。
+
+參考 MSBuild 專案 SDK。
 
  \<Project> \<SDK>
 
@@ -37,7 +38,8 @@ ms.locfileid: "75595133"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
- 下列章節說明屬性、子元素和父元素。
+
+ 下列各節描述屬性、子項目和父項目。
 
 ### <a name="attributes"></a>屬性
 
@@ -47,15 +49,17 @@ ms.locfileid: "75595133"
 |`Version`|選擇性屬性。<br /><br /> 專案 SDK 的版本|
 
 ### <a name="child-elements"></a>子元素
+
  無。
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
+| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [如何：參考 MSBuild 專案 SDK](../msbuild/how-to-use-project-sdk.md)
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
-- [ MSBuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)

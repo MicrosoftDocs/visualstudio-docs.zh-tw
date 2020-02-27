@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58410d1a2dbb2fc477915ac78e30a67b525e59f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3dc771f16c7077549ba06d5cdda422319554d40
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594951"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631701"
 ---
 # <a name="taskextension-base-class"></a>TaskExtension 基底類別
+
 許多工作繼承自 <xref:Microsoft.Build.Tasks.TaskExtension> 類別，而該類別本身繼承自 <xref:Microsoft.Build.Utilities.Task> 類別。 此繼承鏈結將數個參數加入至從它們衍生的工作。 本文件會列出這些參數。
 
 ## <a name="parameters"></a>參數
+
  下表說明基底類別的參數。
 
 |參數|描述|
@@ -37,6 +39,7 @@ ms.locfileid: "75594951"
 |<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|選擇性的 <xref:Microsoft.Build.Framework.ITaskHost> 參數。<br /><br /> 指定主機物件執行個體 (可以為 Null)。 如果主機 IDE 讓主機物件與這個特定工作產生關聯，則建置引擎會設定這個屬性。|
 |<xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>|選擇性 <xref:Microsoft.Build.Utilities.TaskLoggingHelper> 唯讀參數。<br /><br /> 取得包含工作記錄方法的 `TaskLoggingHelperExtension` 物件。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

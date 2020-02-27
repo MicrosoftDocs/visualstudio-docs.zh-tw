@@ -17,14 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1351f47ec8acc5aa5a510ede9c2284ec97c248
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e7c4fa5d093952eefc870aded3d3e14a1f5983a7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590458"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633001"
 ---
 # <a name="parameter-element"></a>Parameter 元素
+
 包含 `UsingTask` `TaskFactory`所產生之工作的特定參數相關資訊。  元素的名稱是參數的名稱。  如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。
 
  \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
@@ -38,26 +39,29 @@ ms.locfileid: "75590458"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
- 下列章節說明屬性、子元素和父元素。
+
+ 下列各節描述屬性、子項目和父項目。
 
 ### <a name="attributes"></a>屬性
 
 |屬性|描述|
 |---------------|-----------------|
 |`ParameterType`|選擇性屬性。<br /><br /> 參數的 .NET 型別，例如 `System.String`。|
-|`Output`|選擇性的布林值屬性。<br /><br /> 如果為 `true`，則此參數是工作的輸出參數。 根據預設，該值為 `false`。|
-|`Required`|選擇性的布林值屬性。<br /><br /> 如果為 `true`，則此參數是工作的必要參數。 根據預設，該值為 `false`。|
+|`Output`|選擇性的布林值屬性。<br /><br /> 如果為 `true`，則此參數是工作的輸出參數。 根據預設，此值是 `false`。|
+|`Required`|選擇性的布林值屬性。<br /><br /> 如果為 `true`，則此參數是工作的必要參數。 根據預設，此值是 `false`。|
 
 ### <a name="child-elements"></a>子元素
+
  無。
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|包含將會出現在 `UsingTask` `TaskFactory`所產生之工作上的選擇性參數清單。|
 
 ## <a name="example"></a>範例
+
  下列範例示範如何使用 `Parameter` 元素。
 
 ```xml
@@ -73,7 +77,8 @@ ms.locfileid: "75590458"
 </UsingTask>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

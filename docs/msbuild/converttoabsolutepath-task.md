@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e37c57119f74b9ab5f3157c6b88f9405799a2e82
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 32ce6fcad3897443f178c45d84e16f4cff44ab03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596095"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634379"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath 工作
+
 將相對路徑或參考轉換為絕對路徑。
 
 ## <a name="task-parameters"></a>工作參數
+
  下表說明 `ConvertToAbsolutePath` 工作的參數。
 
 |參數|描述|
@@ -37,8 +39,10 @@ ms.locfileid: "75596095"
 |`AbsolutePaths`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 已傳入項目的絕對路徑清單。|
 
 ## <a name="remarks"></a>備註
+
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

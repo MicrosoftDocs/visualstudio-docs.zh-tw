@@ -16,18 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a52e0d770a535b0fa7d29a379a7f6aba63e62d78
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 533f87eba9032efa7dc60ac682bbe400cb640727
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593339"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634431"
 ---
 # <a name="combinepath-task"></a>CombinePath 工作
-將指定的路徑結合成單一路徑。
 
+將指定的路徑結合成單一路徑。
 ## <a name="task-parameters"></a>工作參數
+
  下表描述 [CombinePath 工作](../msbuild/combinepath-task.md)的參數。
+
 
 |參數|描述|
 |---------------|-----------------|
@@ -36,8 +38,10 @@ ms.locfileid: "75593339"
 |`CombinedPaths`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 此工作所建立的結合路徑。|
 
 ## <a name="remarks"></a>備註
+
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

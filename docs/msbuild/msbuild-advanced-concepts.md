@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c051f71cf491efcf126af691dfb55b74e50db2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9f013464143929732da409f5dd9684ed73bcc705
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592122"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633443"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 進階概念
+
 本節中的文件說明如何使用進階技術以 MSBuild 改善組建。
 
 ## <a name="related-topics"></a>相關主題
@@ -31,6 +32,7 @@ ms.locfileid: "75592122"
 |[多目標](../msbuild/msbuild-multitargeting-overview.md)|說明如何編譯應用程式，讓它在數個版本的 .NET Framework 上都能執行。|
 |[最佳做法](../msbuild/msbuild-best-practices.md)|建議撰寫 MSBuild 指令碼的最佳做法。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild 中的記錄](../msbuild/logging-in-msbuild.md)

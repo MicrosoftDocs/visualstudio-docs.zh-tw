@@ -12,20 +12,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 013cf211fe9fdfb8fef07c5ac757fa5f4b35a521
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 83a5d0c9dec280633d0a39573581c083e6ddd4d8
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75577274"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633664"
 ---
 # <a name="item-metadata-in-target-batching"></a>目標批次處理中的項目中繼資料
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可針對建置目標的輸入和輸出執行相依性分析作業。 如果判斷目標的輸入或輸出已是最新，即會略過目標繼續建置。 `Target` 項目會使用 `Inputs` 和 `Outputs` 屬性，來指定要在相依性分析期間檢查的項目。
 
-如果目標包含的工作會將批次項目作為輸入或輸出，則目標的 `Target` 項目應該在其 `Inputs` 或 `Outputs` 屬性中使用批次處理，以讓 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 略過已是最新的項目批次。
+MSBuild 能夠對組建目標的輸入和輸出執行相依性分析。 如果判斷目標的輸入或輸出已是最新，即會略過目標繼續建置。 `Target` 項目會使用 `Inputs` 和 `Outputs` 屬性，來指定要在相依性分析期間檢查的項目。
+
+如果目標包含使用批次專案做為輸入或輸出的工作，目標的 `Target` 專案應該在其 `Inputs` 或 `Outputs` 屬性中使用批次處理，以讓 MSBuild 略過已是最新的專案批次。
 
 ## <a name="batch-targets"></a>批次目標
-下列範例包含名為 `Res` 的項目清單，並根據 `Culture` 項目中繼資料分成兩個批次。 這兩個批次均會傳入 `AL` 工作，以建立每個批次的輸出組件。 在 `Target` 項目的 `Outputs` 屬性上使用批次處理時，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以先判斷每個個別批次是否為最新狀態，再執行目標。 如果沒有使用目標批次處理，在每次執行目標時，都會由工作來執行這兩個項目批次。
+
+下列範例包含名為 `Res` 的項目清單，並根據 `Culture` 項目中繼資料分成兩個批次。 這兩個批次均會傳入 `AL` 工作，以建立每個批次的輸出組件。 藉由在 `Target` 專案的 `Outputs` 屬性上使用批次處理，MSBuild 可以在執行目標之前，判斷每個個別批次是否都是最新的。 如果沒有使用目標批次處理，在每次執行目標時，都會由工作來執行這兩個項目批次。
 
 ```xml
 <Project
@@ -65,7 +67,8 @@ ms.locfileid: "75577274"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [如何：累加建置](../msbuild/how-to-build-incrementally.md)
 - [批次處理](../msbuild/msbuild-batching.md)
 - [Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)

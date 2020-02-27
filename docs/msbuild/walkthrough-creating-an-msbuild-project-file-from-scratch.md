@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 891b0f1197ad178a705de5d64026beebc62615dd
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: b6a8b380791cbb8adcc43b363e5f0a332935e131
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826493"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631103"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭開始建立 MSBuild 專案檔
+
 以 .NET Framework 為目標的程式設計語言，使用 MSBuild 專案檔描述及控制應用程式建置流程。 當您使用 Visual Studio 建立 MSBuild 專案檔時，系統會自動將適當的 XML 加入該檔案。 不過，您可能會發現，了解 XML 的組織方式，以及您如何對其進行變更以控制組建會非常有用。
 
  如需建立C++專案之專案檔的詳細資訊，請參閱[MSBuildC++（）](/cpp/build/msbuild-visual-cpp)。
@@ -47,6 +48,7 @@ ms.locfileid: "76826493"
 若要完成此逐步解說，您必須安裝 .NET Framework （版本2.0、3.5、4.0、4.5 或更新版本），因為它包含了逐步解說C#所需的 MSBuild 和 Visual 編譯器。
 
 ## <a name="create-a-minimal-application"></a>建立最小應用程式
+
  本節說明如何使用文字編輯器建立最C#基本的應用程式來源檔案。
 
 1. 在命令提示字元中，瀏覽至您要建立應用程式的資料夾，例如 *\My Documents\\* 或 *\Desktop\\* 。
@@ -84,6 +86,7 @@ ms.locfileid: "76826493"
 8. 在命令提示字元中輸入**del helloworld.exe**，以刪除應用程式。
 
 ## <a name="create-a-minimal-msbuild-project-file"></a>建立最小的 MSBuild 專案檔
+
  既然您已具有最小的應用程式原始程式檔，您就可以建立最小的專案檔，以建置應用程式。 這個專案檔包含下列項目：
 
 - 必要的根 `Project` 節點。
@@ -165,6 +168,7 @@ ms.locfileid: "76826493"
 或者，如果您已安裝 Visual Studio，您可以使用**Visual Studio 的開發人員命令提示字元**，其中包含含有*MSBuild*資料夾的路徑。
 
 ## <a name="build-the-application"></a>建置應用程式
+
  現在，若要建置應用程式，請使用您剛剛建立的專案檔。
 
 1. 在命令提示字元中，輸入 **msbuild helloworld.csproj -t:Build**。
@@ -181,6 +185,7 @@ ms.locfileid: "76826493"
 > **msbuild helloworld.csproj -t:Build -verbosity:detailed**
 
 ## <a name="add-build-properties"></a>加入建置屬性
+
  您可以將建置屬性加入專案檔，以進一步控制組建。 立刻加入以下屬性：
 
 - `AssemblyName` 屬性可指定應用程式的名稱。
@@ -237,7 +242,7 @@ ms.locfileid: "76826493"
 ```
 
 > [!NOTE]
-> 當您在 `OutputPath` 項目中指定資料夾名稱時，建議您在資料夾名稱的結尾加入反斜線 (\\) 路徑分隔符號，而不是在 `Csc` 工作的 `OutputAssembly` 屬性中加入它。 因此，
+> 當您在 \\ 項目中指定資料夾名稱時，建議您在資料夾名稱的結尾加入反斜線 (`OutputPath`) 路徑分隔符號，而不是在 `OutputAssembly` 工作的 `Csc` 屬性中加入它。 因此，
 >
 > `<OutputPath>Bin\</OutputPath>`
 >
@@ -250,6 +255,7 @@ ms.locfileid: "76826493"
 > `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
 
 ## <a name="test-the-build-properties"></a>測試建置屬性
+
  現在，您可以使用專案檔建置應用程式，您在該檔案中使用建置屬性來指定輸出資料夾和應用程式名稱。
 
 1. 在命令提示字元中，輸入 **msbuild helloworld.csproj -t:Build**。
@@ -263,6 +269,7 @@ ms.locfileid: "76826493"
      此時應該會顯示 [Hello, world!] 訊息。
 
 ## <a name="add-build-targets"></a>加入建置目標
+
  接下來，再將兩個目標加入專案檔，如下所示：
 
 - 用於刪除舊檔案的「清除」目標。
@@ -315,6 +322,7 @@ ms.locfileid: "76826493"
 ```
 
 ## <a name="test-the-build-targets"></a>測試建置目標
+
  您可以執行新建置目標，以測試專案檔的以下功能：
 
 - 建置預設組建。
@@ -329,7 +337,7 @@ ms.locfileid: "76826493"
 
 1. 在命令提示字元中，輸入 **msbuild helloworld.csproj -p:AssemblyName=Greetings**。
 
-     由於您未使用 **-t** 參數明確地設定目標，因此 MSBuild 會執行預設的 Build 目標。 **-p** 參數會覆寫 `AssemblyName` 屬性，並為其提供新值 `Greetings`。 這會在 *\Bin\\* 資料夾中建立新的應用程式 *Greetings.exe*。
+     由於您未使用 **-t** 參數明確地設定目標，因此 MSBuild 會執行預設的 Build 目標。 **-p** 參數會覆寫 `AssemblyName` 屬性，並為其提供新值 `Greetings`。 這會在 *\Bin* *資料夾中建立新的應用程式 \\Greetings.exe*。
 
 2. 若要驗證 *\Bin\\* 資料夾包含 *MSBuildSample* 應用程式和新的 *Greetings* 應用程式，請輸入 **dir Bin**。
 
@@ -349,11 +357,12 @@ ms.locfileid: "76826493"
 
 7. 輸入 **msbuild**。
 
-     雖然沒有指定專案檔，但 MSBuild 仍會建置 *helloworld.csproj* 檔案，因為在目前的資料夾中，只有一個專案檔。 這會在 *\Bin\\* 資料夾中建立 *MSBuildSample* 應用程式。
+     雖然沒有指定專案檔，但 MSBuild 仍會建置 *helloworld.csproj* 檔案，因為在目前的資料夾中，只有一個專案檔。 這會在 *\Bin* *資料夾中建立 \\MSBuildSample* 應用程式。
 
      若要驗證 *\Bin\\* 資料夾包含 *MSBuildSample* 應用程式，請輸入 **dir Bin**。
 
 ## <a name="build-incrementally"></a>以累加方式建置
+
  您可以告知 MSBuild，僅在目標所依賴的原始程式檔或目標檔變更時，才能建置目標。 MSBuild 會使用檔案的時間戳記判定檔案是否已變更。
 
 ### <a name="to-build-incrementally"></a>以累加方式建置
@@ -465,10 +474,11 @@ ms.locfileid: "76826493"
 </Project>
 ```
 
-## <a name="whats-next"></a>後續步驟
+## <a name="whats-next"></a>下一步
+
  Visual Studio 可以自動執行本逐步解說中提及的大量工作。 若要了解如何使用 Visual Studio 建立、編輯、建置及測試 MSBuild 專案檔，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 概觀](../msbuild/msbuild.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

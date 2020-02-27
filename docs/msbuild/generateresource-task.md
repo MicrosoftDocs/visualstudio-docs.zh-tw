@@ -18,24 +18,26 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e83cc04b309a940f5aa4c5a36099f10afddcc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594796"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634054"
 ---
 # <a name="generateresource-task"></a>GenerateResource 工作
+
 在 *.txt* 與 *.resx* (XML 資源格式) 檔案，以及 Common Language Runtime 二進位 *.resources* 檔案 (可以內嵌在執行階段二進位可執行檔，或是編譯到附屬組件中) 之間轉換。 此工作一般用來將 *.txt* 或 *.resx* 檔轉換為 *.resources* 檔。 `GenerateResource` 工作的功能類似於 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)。
 
 ## <a name="parameters"></a>參數
+
 下表說明 `GenerateResource` 工作的參數。
 
 |參數|描述|
 |---------------|-----------------|
-|`AdditionalInputs`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 包含此工作所執行相依性檢查的其他輸入。 例如，專案與目標檔案通常應為輸入，如有所更新時，就會重新產生所有資源。|
+|`AdditionalInputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 包含此工作所執行相依性檢查的其他輸入。 例如，專案與目標檔案通常應為輸入，如有所更新時，就會重新產生所有資源。|
 |`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 指定環境變數的名稱/值組陣列，該名稱/值組除了 (或選擇性覆寫) 一般環境區塊之外，還應該傳遞至繁衍的 *resgen.exe*。|
-|`ExcludedInputPaths`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定項目陣列，這會指定要在最新狀態檢查期間忽略所追蹤輸入的路徑。|
+|`ExcludedInputPaths`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定項目陣列，這會指定要在最新狀態檢查期間忽略所追蹤輸入的路徑。|
 |`ExecuteAsTool`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會從適當目標 Framework 跨處理序執行 *tlbimp.exe* 和 *aximp.exe*，以產生必要的包裝函式組件。 此參數允許多目標的 `ResolveComReferences`。|
 |`FilesWritten`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含寫入至磁碟的所有檔案名稱。 這包括快取檔案 (如果有的話)。 此參數對於 Clean 的實作很有用。|
 |`MinimalRebuildFromTracking`|選擇性的 `Boolean` 參數。<br /><br /> 取得或設定參數，指定是否將使用追蹤式累加建置。 如果為 `true`，會開啟累加建置，否則會強制重建。|
@@ -61,14 +63,16 @@ ms.locfileid: "75594796"
 |`UseSourcePath`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會使用輸入檔的目錄來解析相對檔案路徑。|
 
 ## <a name="remarks"></a>備註
-因為 *.resx* 檔案可能包含連至其他資源檔的連結，所以光是比較 *.resx* 和 *.resources* 檔案的時間戳記並不足以看出輸出是否為最新。 相反地，`GenerateResource` 工作會追蹤 *.resx* 檔案中的連結，以及檢查所連結檔案的時間戳記。 這表示，您不應該只在包含 `GenerateResource` 工作的目標上使用 `Inputs` 與 `Outputs` 屬性，因為這可能會略過原本應該要執行的工作。
+
+因為 *.resx* 檔案可能包含連至其他資源檔的連結，所以光是比較 *.resx* 和 *.resources* 檔案的時間戳記並不足以看出輸出是否為最新。 相反地，`GenerateResource` 工作會追蹤 *.resx* 檔案中的連結，以及檢查所連結檔案的時間戳記。 這表示，您不應該只在包含 `Inputs` 工作的目標上使用 `Outputs` 與 `GenerateResource` 屬性，因為這可能會略過原本應該要執行的工作。
 
 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
 當使用 MSBuild 4.0 處理以 .NET 3.5 為目標的專案時，可能會因為 x86 資源而建置失敗。 若要解決這個問題，您可以將目標建置為 AnyCPU 組件。
 
 ## <a name="example"></a>範例
-下列範例會使用 `GenerateResource` 工作從 `Resx` 項目集合指定的檔案來產生 *.resources* 檔案。
+
+下列範例會使用 `GenerateResource` 工作從 *項目集合指定的檔案來產生*.resources`Resx` 檔案。
 
 ```xml
 <GenerateResource
@@ -94,6 +98,7 @@ ms.locfileid: "75594796"
 
 沒有 \<LogicalName > 中繼資料時，則會將資源命名為 *myAssembly.myResource.resources*。  此範例僅適用於 Visual Basic 和 Visual C# 建置流程。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

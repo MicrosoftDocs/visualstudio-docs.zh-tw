@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 947a1df101a169b7bdad4efda74cab1ae042964a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9aa052a0fd2216d5f3d85e99794d9ac883a09e2d
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594964"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631688"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 基底類別
+
 許多工作繼承自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別，該類別繼承自 <xref:Microsoft.Build.Utilities.ToolTask> 類別，而其本身是繼承自 <xref:Microsoft.Build.Utilities.Task> 類別。 此繼承鏈結將數個參數加入至從它們衍生的工作。 本文件會列出這些參數。
 
 ## <a name="parameters"></a>參數
+
  下表說明基底類別的參數。
 
 | 參數 | 描述 |
@@ -41,10 +43,11 @@ ms.locfileid: "75594964"
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | 選擇性的 `String` 參數。<br /><br /> 用來從標準輸出資料流記錄文字的重要性。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A> | 虛擬選擇性 `Int32` 參數。<br /><br /> 指定時間量 (以毫秒為單位)，在此時間量之後會終止工作可執行檔。 預設值是 `Int.MaxValue`，表示沒有逾時期間。 逾時是以毫秒為單位。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.ToolExe%2A> | 虛擬選擇性 `string` 參數。<br /><br /> 專案可能會實作此項目以覆寫 ToolName。 工作可能會覆寫此項目以保留 ToolName。 |
-| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | 選擇性的 `string` 參數。<br /><br /> 指定位置，工作會從該位置載入基礎可執行檔。 如果未指定這個參數，工作會使用 SDK 安裝路徑，對應於執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 之架構的版本。 |
+| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | 選擇性的 `string` 參數。<br /><br /> 指定位置，工作會從該位置載入基礎可執行檔。 如果未指定此參數，工作會使用 SDK 安裝路徑，對應至正在執行 MSBuild 的 framework 版本。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | 選擇性的 `bool` 參數。<br /><br /> 當設為 `true` 時，這項工作會針對命令列建立批次檔，並且使用命令處理器來執行，而不是直接執行命令。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | 選擇性的 `bool` 參數。<br /><br /> 當設為 `true` 時，這項工作在執行其工作時，會產生節點。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

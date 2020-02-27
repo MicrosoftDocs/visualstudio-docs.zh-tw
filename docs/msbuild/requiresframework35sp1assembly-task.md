@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d94d6ab4840163e8379e53da435a97a69381aed
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: caefe0887ca23cd4cee60c3a4ba2a6133e9893df
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578467"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632767"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly 工作
+
 判斷應用程式是否需要 .NET Framework 3.5 SP1。
 
 ## <a name="parameters"></a>參數
+
  下表說明 `RequiresFramework35SP1Assembly` 工作的參數。
 
 |參數|描述|
@@ -44,8 +46,10 @@ ms.locfileid: "77578467"
 |`TargetFrameworkVersion`|選擇性的 `String` 參數。<br /><br /> 指定此應用程式作為目標的 .NET Framework 版本。|
 
 ## <a name="remarks"></a>備註
+
  除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
 ## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

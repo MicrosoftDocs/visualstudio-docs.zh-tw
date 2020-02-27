@@ -17,15 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 703cd7bc3d0dd0e2229365dde39418ff32ad0a3e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 2b5aba45292aaa55a719eb19d6f0f6f115e8b477
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579598"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632507"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 工作
-<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 工作會將一或多種資源 ( *.jpg*、 *.ico*、 *.bmp*、二進位格式的 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 以及其他副檔名類型) 內嵌到 *.resources* 檔案。
+
+<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 工作會將一或多個資源（ *.jpg*、 *.ico*、 *.Bmp*、二進位格式的 XAML，以及其他副檔名類型）內嵌到 *.resources*檔案中。
 
 ## <a name="task-parameters"></a>工作參數
 
@@ -36,6 +37,7 @@ ms.locfileid: "77579598"
 |`ResourcesFiles`|必要的 **ITaskItem[]** 參數。<br /><br /> 指定要內嵌到所產生 *.resources* 檔案的一或多種資源。|
 
 ## <a name="example"></a>範例
+
  下列範例會使用單一 *.bmp* 資源產生 *.resources* 檔案。 在相對於專案根目錄的目錄中產生 *.bmp* 資源。
 
 ```xml
@@ -53,6 +55,7 @@ ms.locfileid: "77579598"
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
 - [工作參考](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

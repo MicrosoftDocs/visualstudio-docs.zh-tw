@@ -16,22 +16,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 739d444fe8ad3951e8b8f2f0026d5d986ea65c52
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2b54a63b135f844ff20b45ffac430662c4df1f19
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574778"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633833"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
-您可以在專案檔中使用專案的名稱或位置，而不需建立自己的屬性。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供保留的屬性，來參考專案檔的名稱和其他專案相關的屬性。 如需保留屬性的詳細資訊，請參閱 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
+
+您可以在專案檔中使用專案的名稱或位置，而不需建立自己的屬性。 MSBuild 提供的保留屬性會參考專案檔名稱，以及與專案相關的其他屬性。 如需保留屬性的詳細資訊，請參閱 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
 
 ## <a name="use-the-project-properties"></a>使用專案屬性
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供一些保留的屬性，讓您不必每次定義就能在專案檔中加以使用。 例如，保留的屬性 `MSBuildProjectName` 提供專案檔名的參考。 保留的屬性 `MSBuildProjectDirectory` 提供專案檔案位置的參考。
+
+ MSBuild 提供一些保留的屬性，可讓您在專案檔中使用，而不需每次都定義它們。 例如，保留的屬性 `MSBuildProjectName` 提供專案檔名的參考。 保留的屬性 `MSBuildProjectDirectory` 提供專案檔案位置的參考。
 
 #### <a name="to-use-the-project-properties"></a>使用專案屬性
 
-- 使用 $() 標記法來參考專案檔中的屬性，就像您使用其他屬性一樣。 例如：
+- 使用 $() 標記法來參考專案檔中的屬性，就像您使用其他屬性一樣。 例如，
 
   ```xml
   <CSC Sources = "@(CSFile)"
@@ -47,6 +49,7 @@ ms.locfileid: "75574778"
 > 您無法在專案檔中重新定義保留的屬性。
 
 ## <a name="example"></a>範例
+
  下列範例專案檔會參考專案名稱做為保留的屬性，來指定輸出的名稱。
 
 ```xml
@@ -75,6 +78,7 @@ ms.locfileid: "75574778"
 ```
 
 ## <a name="example"></a>範例
+
  下列範例專案檔使用 `MSBuildProjectDirectory` 保留屬性，在專案檔案位置中建立檔案的完整路徑。
 
 ```xml
@@ -87,6 +91,9 @@ ms.locfileid: "75574778"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
-- [ MSBuild](../msbuild/msbuild.md)
+此範例會使用[屬性](property-functions.md)函式語法來呼叫靜態 .NET Framework 方法 <xref:System.IO.Path.Combine*?displayProperty=fullName>。
+
+## <a name="see-also"></a>另請參閱
+
+- [MSBuild](../msbuild/msbuild.md)
 - [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)

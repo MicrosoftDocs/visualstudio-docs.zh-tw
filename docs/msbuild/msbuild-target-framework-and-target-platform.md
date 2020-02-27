@@ -8,33 +8,35 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32960d46b4c7ae9b37cfec6cff97eb0540b868a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596771"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633196"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目標 Framework 和目標平台
+
 您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」，以及特定軟體架構的「目標平台」上執行。  例如，您可以在目標為 .NET Framework 2.0 以及與 802x86 處理器系列 ("x86") 相容的 32 位元平台上，執行應用程式。 目標 Framework 和目標平台的組合稱為「目標內容」。
 
 > [!IMPORTANT]
 > 本文說明指定目標 Framework 的舊方式。 SDK 樣式專案可啟用不同的 TargetFrameworks，例如 netstandard。 如需詳細資訊，請參閱[目標 Framework](/dotnet/standard/frameworks)。
 
 ## <a name="target-framework-and-profile"></a>目標 Framework 和設定檔
+
  目標 Framework 是專案被建置來於其上執行的特定 .NET Framework 版本。 由於目標 Framework 啟用由該版 Framework 獨佔的編譯器功能和組件參考，因此需要目標 Framework 的規格。
 
  以下是目前可供使用的 .NET Framework 版本：
 
 - .NET Framework 2.0 (包含在 Visual Studio 2005 中)
 
-- .NET Framework 3.0 (包含在 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 中)
+- .NET Framework 3.0 （包含在 Windows Vista 中）
 
-- .NET Framework 3.5 (包含在 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 中)
+- .NET Framework 3.5 （包含在 Visual Studio 2008）
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4.6 (包含在 [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)] 中)
+- .NET Framework 4.6 （包含在 Visual Studio 2015）
 
 - .NET Framework 4.6.1
 
@@ -69,7 +71,8 @@ ms.locfileid: "75596771"
 ```
 
 ## <a name="target-platform"></a>目標平台
- 「平台」是定義特定執行階段環境的軟硬體組合。 例如，套用至物件的
+
+ 「平台」是定義特定執行階段環境的軟硬體組合。 例如：
 
 - `x86` 指定在 Intel 80x86 處理器或其對等項目上執行的 32 位元 Windows 作業系統。
 
@@ -96,5 +99,6 @@ ms.locfileid: "75596771"
 
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [多目標](../msbuild/msbuild-multitargeting-overview.md)

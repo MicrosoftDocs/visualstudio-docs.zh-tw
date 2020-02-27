@@ -19,22 +19,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 797a2f80c4e634b3dcb3b0fa32c46476e32cc334
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 3c41bfc2015f29cbb73b33df3594b3a3430af3f3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578127"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630648"
 ---
 # <a name="xdcmake-task"></a>XDCMake 工作
+
 包裝 XML 文件工具 (*xdcmake.exe*)，此工具可將 XML 文件註解 ( *.xdc*) 檔案合併至 *.xml* 檔案。
 
  當您在C++原始程式碼中提供檔批註，並使用[/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp)編譯器選項編譯時，會建立 .xdc 檔案。 如需詳細資訊，請參閱 [XDCMake 參考](/cpp/build/reference/xdcmake-reference)、[XML 文件產生器工具屬性頁](/cpp/build/reference/xml-document-generator-tool-property-pages)，以及 **xdcmake.exe** 的命令列說明選項 ( */?* )。
 
 ## <a name="remarks"></a>備註
+
  根據預設，*xdcmake.exe* 工具支援幾個命令列選項。 當您指定 **/old** 命令列選項時，可支援額外的選項。
 
 ## <a name="parameters"></a>參數
+
  下表說明 **XDCMake** 工作的參數。
 
 |參數|描述|
@@ -50,4 +53,5 @@ ms.locfileid: "77578127"
 |**TrackerLogDirectory**|選擇性的 **String** 參數。<br /><br /> 指定追蹤器記錄檔的目錄。|
 
 ## <a name="see-also"></a>另請參閱
+
 - [工作參考](../msbuild/msbuild-task-reference.md)

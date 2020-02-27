@@ -22,17 +22,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2bcc37446fe5b627ec789bc04461ea643e30575
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 13ae844759cb73de6dc7bcce6c8898c21132f9d7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578492"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632910"
 ---
 # <a name="rc-task"></a>RC 工作
+
 包裝 Microsoft Windows 資源編譯器工具 (*rc.exe*)。 **RC** 工作會將游標、圖示、點陣圖、對話方塊和字型等資源編譯為資源 ( *.res*) 檔案。 如需詳細資訊，請參閱[資源編譯器](/windows/desktop/menurc/resource-compiler) \(英文\)。
 
 ## <a name="parameters"></a>參數
+
  下表說明 RC 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。
 
 |參數|描述|
@@ -51,4 +53,5 @@ ms.locfileid: "77578492"
 |**UndefinePreprocessorDefinitions**|取消定義前置處理器符號。<br /><br /> 如需詳細資訊，請參閱**使用 RC (RC 命令列)** \(英文\) 中的 [/u](/windows/win32/menurc/using-rc-the-rc-command-line-) 選項。 另請參閱此表格中的 **PreprocessorDefinitions**。|
 
 ## <a name="see-also"></a>另請參閱
+
 - [工作參考](../msbuild/msbuild-task-reference.md)

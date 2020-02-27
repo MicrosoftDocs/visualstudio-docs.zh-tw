@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57031bd49a67e1961b5413a59f66562cc9c1b883
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0c95606a00e86ffd187162e444f2c710c5cc3a0e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596784"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632884"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly 工作
+
 讀取所指定組件內的中繼資料，並將必要的項目加入至登錄，這樣可讓 COM 用戶端透明地建立 .NET Framework 類別。 此工作的行為和 [Regasm.exe (組件登錄工具)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool) 很類似，但不是完全相同。
 
 ## <a name="parameters"></a>參數
+
  下表說明 `RegisterAssembly` 工作的參數。
 
 |參數|描述|
@@ -39,9 +41,11 @@ ms.locfileid: "75596784"
 |`TypeLibFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定要從指定組件產生的類型程式庫。 產生的類型程式庫包含組件內所定義的可存取類型定義。 只有在下列其中一項條件成立時，才會產生類型程式庫︰<br /><br /> - 該位置沒有那個名稱的類型程式庫存在時。<br />- 有類型程式庫存在，但比傳入的組件還舊。<br /><br /> 如果類型程式庫比傳入的組件還新，則不會建立新的類型程式庫，但仍會註冊該組件。<br /><br /> 如果指定此參數，它必須要有相同數目的項目做為 `Assemblies` 參數，否則工作將會失敗。 如果沒有指定輸入，該工作將預設為該組件的名稱，並將項目的副檔名變更為 *.tlb*。|
 
 ## <a name="remarks"></a>備註
+
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
+
  下列範例會使用 `RegisterAssembly` 工作來註冊 `MyAssemblies` 項目集合所指定的組件。
 
 ```xml
@@ -59,6 +63,7 @@ ms.locfileid: "75596784"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

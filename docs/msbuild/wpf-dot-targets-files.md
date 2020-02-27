@@ -17,17 +17,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adac07fff84bf0a447875b7084a3003e61a9767d
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: d3225777c020272a24ac124bf6d039c2154e2ff3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578180"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630947"
 ---
 # <a name="wpf-targets-files"></a>WPF .targets 檔案
-[!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)] 會透過新增一組 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 特定的工作來延伸 [!INCLUDE[TLA2#tla_wpf](../msbuild/includes/tla2sharptla_wpf_md.md)]，這些工作已合併到特殊的 *.targets* 檔案 (*Microsoft.WinFX.targets*) 中。 此檔案會合併一組在 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] 中建置 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] 專案所需的 [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)] 工作。
+
+Windows Presentation Foundation （WPF）藉由加入一組將 WPF 特定的工作（結合到特殊的 *.targets*檔案，也就是*Microsoft WinFX*）來擴充 MSBuild。 此檔案結合了在 WPF 中建立 MSBuild 專案所需的一組 MSBuild 工作。
 
 ## <a name="see-also"></a>另請參閱
+
 - [MSBuild .targets 檔案](../msbuild/msbuild-dot-targets-files.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
 - [建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

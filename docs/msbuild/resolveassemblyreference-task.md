@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fcd289f5258fde7ae8f17a9e19a25427fe6885
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b79bd8eb3f7d813e3acd091ce5f2ffbc7b3eeb49
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278350"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632754"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 工作
+
 判斷相依於指定組件的所有組件 (包含第二階與第 `n` 階的相依)。
 
 ## <a name="parameters"></a>參數
+
  下表說明 `ResolveAssemblyReference` 工作的參數。
 
 |參數|描述|
@@ -78,6 +80,7 @@ ms.locfileid: "77278350"
 |`TargetProcessorArchitecture`|選擇性的 `String` 參數。<br /><br /> 慣用的目標處理器架構。 用來解析全域組件快取 (GAC) 參考。<br /><br /> 此參數可以具有 `x86`、`IA64` 或 `AMD64` 的值。<br /><br /> 若此參數不存在，工作會先考慮使用符合目前正在執行之處理序架構的組件。 若找不到任何組件，則工作會考慮 GAC 中具有 `ProcessorArchitecture` 的 `MSIL` 值或不具有 `ProcessorArchitecture` 值的組件。|
 
 ## <a name="warnings"></a>警告
+
  將記錄下列警告：
 
 - `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
@@ -101,8 +104,10 @@ ms.locfileid: "77278350"
 - `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
 ## <a name="remarks"></a>備註
+
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
 ## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

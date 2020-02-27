@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4fd82cee49c698c9244a2851d4e671ae6a94508
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: ece57a102851efe0198f8993b60dba8e0eae6dec
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557881"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634418"
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性
+
 下表列出 Visual Studio 專案檔中所定義或 MSBuild 提供的 *.targets* 檔案中所包含的最常用屬性。
 
  Visual Studio 中的專案檔 ( *.csproj*、 *.vbproj*、 *.vcxproj* 及其他) 包含 MSBuild XML 程式碼，該程式碼會在您使用 IDE 建置專案時執行。 專案通常會匯入一或多個 *.targets* 檔案，用於定義其建置流程。 如需詳細資訊，請參閱 [MSBuild .targets 檔案](../msbuild/msbuild-dot-targets-files.md)。
@@ -38,20 +39,20 @@ ms.locfileid: "77557881"
 | AddModules | 讓編譯器將所指定檔案的類型資訊全部提供給您正在編譯的專案。 這個屬性相當於 `/addModules` 編譯器參數。 |
 | ALToolPath | 可以找到 *AL.exe* 的路徑。 此屬性會覆寫 *AL.exe* 的目前版本，以使用其他版本。 |
 | ApplicationIcon | 傳遞至編譯器內嵌為 Win32 圖示的 *.ico* 圖示檔。 這個屬性相當於 `/win32icon` 編譯器參數。 |
-| ApplicationManifest | 指定檔案路徑，這個檔案用於產生外部使用者帳戶控制 (User Account Control，UAC) 資訊清單資訊。 僅適用於目標為 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] 的 Visual Studio 專案。<br /><br /> 大部分情況下，資訊清單是以內嵌方式存在。 不過，如果您使用免註冊的 COM 或 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，那麼資訊清單就可能是隨應用程式組件一起安裝的外部檔案。 如需詳細資訊，請參閱本主題中的 NoWin32Manifest 屬性。 |
+| ApplicationManifest | 指定檔案路徑，這個檔案用於產生外部使用者帳戶控制 (User Account Control，UAC) 資訊清單資訊。 僅適用于以 Windows Vista 為目標的 Visual Studio 專案。<br /><br /> 大部分情況下，資訊清單是以內嵌方式存在。 不過，如果您使用免註冊的 COM 或 ClickOnce 部署，則資訊清單可以是與您的應用程式元件一起安裝的外部檔案。 如需詳細資訊，請參閱本主題中的 NoWin32Manifest 屬性。 |
 | AssemblyOriginatorKeyFile | 指定檔案，用來簽署組件 ( *.snk* 或 *.pfx*)，並傳遞至 [ResolveKeySource 工作](../msbuild/resolvekeysource-task.md)以產生用來簽署組件的實際金鑰。 |
 | AssemblySearchPaths | 在建置階段參考組件解析期間搜尋的位置清單。 路徑出現在這個清單中的順序是有意義的，因為較早列出的路徑優先於較晚列出的路徑。 |
 | AssemblyName | 專案建置之後，最後輸出組件的名稱。 |
 | BaseAddress | 指定主要輸出組件的基底位址。 這個屬性相當於 `/baseaddress` 編譯器參數。 |
 | BaseIntermediateOutputPath | 在其中建立所有組態特有中繼輸出資料夾的最上層資料夾。 預設值是 `obj\`。 下列程式碼為範例：`<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>` |
-| BaseOutputPath | 指定輸出檔的基底路徑。 如果設定這個屬性，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 將會使用 `OutputPath = $(BaseOutputPath)\$(Configuration)\`。 範例語法：`<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
-| BuildInParallel | 布林值，指出使用多處理器 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 時，專案參考為平行建置或清除。 預設值為 `true`，表示系統有多個核心或處理器時，專案將會平行建置。 |
-| BuildProjectReferences | 布林值，指出專案參考是否由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 建置。 如果您要在 `false` 整合式開發環境 (IDE) 中建置專案，會自動設定為 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，否則設定為 `true`。 可以在命令列上指定 `-p:BuildProjectReferences=false` 以避免檢查參考的專案是否為最新。 |
+| BaseOutputPath | 指定輸出檔的基底路徑。 如果設定，MSBuild 會使用 `OutputPath = $(BaseOutputPath)\$(Configuration)\`。 範例語法：`<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
+| BuildInParallel | 布林值，指出使用多處理器 MSBuild 時，是否以平行方式建立或清除專案參考。 預設值為 `true`，表示系統有多個核心或處理器時，專案將會平行建置。 |
+| BuildProjectReferences | 布林值，指出專案參考是否由 MSBuild 所建立。 如果您要在 Visual Studio 整合式開發環境（IDE）中建立專案，則會自動設定為 `false`，否則為 `true`。 可以在命令列上指定 `-p:BuildProjectReferences=false` 以避免檢查參考的專案是否為最新。 |
 | CleanFile | 做為「清除快取」使用之檔案的名稱。 清除快取是所產生檔案的清單，這些檔案將要在清除作業期間刪除。 建置流程會將這個檔案放入中繼輸出路徑。<br /><br /> 這個屬性只會指定檔案名稱，不包含路徑資訊。 |
 | CodePage | 指定編譯過程中所有原始程式碼檔使用的字碼頁。 這個屬性相當於 `/codepage` 編譯器參數。 |
 | CompilerResponseFile | 可傳遞至編譯器工作的選擇性回應檔。 |
 | 組態 | 您要建置的組態，它會是 "Debug" 或是 "Release"。 |
-| CscToolPath | *csc.exe* ([!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 編譯器) 的路徑。 |
+| CscToolPath | *Csc*的路徑，也就是C#編譯器。 |
 | CustomBeforeMicrosoftCommonTargets | 專案檔或 targets 檔的名稱，該檔案會在一般 targets 匯入之前自動匯入。 |
 | DebugSymbols | 布林值，指出建置是否要產生符號。<br /><br /> 在命令列上設定 **-p:DebugSymbols=false** 時，會停用產生程式資料庫 ( *.pdb*) 符號檔。 |
 | DebugType | 定義您要產生的偵錯資訊層級。 有效值為 "full"、"pdbonly"、"portable"、"embedded" 和 "none"。 |
@@ -61,10 +62,10 @@ ms.locfileid: "77557881"
 | DelaySign | 布林值，指出您是否要延遲簽署組件，而不要完整簽署組件。 |
 | 具決定性 | 布林值，指出編譯器是否應該針對相同的輸入產生相同的組件。 此參數對應於 `/deterministic`vbc.exe*和*csc.exe*編譯器的* 參數。 |
 | DisabledWarnings | 隱藏指定的警告。 您只需要指定警告識別項的數值部分。 若有多個警告，則會以分號分隔。 此參數對應於 `/nowarn`vbc.exe*編譯器的* 參數。 |
-| DisableFastUpToDateCheck | 僅適用於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的布林值。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 組建管理程式會使用稱為 FastUpToDateCheck 的處理序，判斷是否必須重建專案使其成為最新版本。 使用這個處理序比使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 判斷的速度快。 將 DisableFastUpToDateCheck 屬性設為 `true`，可讓您略過 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 組建管理程式，並強制使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 判斷專案是否為最新版本。 |
+| DisableFastUpToDateCheck | 僅適用于 Visual Studio 的布林值。 Visual Studio 組建管理員會使用名為 FastUpToDateCheck 的進程，來判斷是否必須重建專案以維持最新狀態。 這個程式比使用 MSBuild 來判斷這種情況更快。 將 Disablefastuptodatecheck 設屬性設定為 `true` 可讓您略過 Visual Studio 組建管理員，並強制其使用 MSBuild 來判斷專案是否為最新狀態。 |
 | DocumentationFile | 產生為 XML 文件檔案之檔案的名稱。 這個名稱只包含檔案名稱，不包含路徑資訊。 |
 | ErrorReport | 指定編譯器工作報告編譯器內部錯誤的方式。 有效值為 "prompt"、"send" 或 "none"。 這個屬性相當於 `/errorreport` 編譯器參數。 |
-| ExcludeDeploymentUrl | 如果專案檔包含下列任何項目，[GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)會將 deploymentProvider 標記新增至部署資訊清單：<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> 不過，若使用 ExcludeDeploymentUrl，即使指定了上述任何 URL，仍可以防止將 deploymentProvider 標記加入至部署資訊清單。 若要防止加入該標記，請將下列屬性加入至您的專案檔：<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**注意：** ExcludeDeploymentUrl 不會在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中公開，只能透過手動編輯專案檔的方式設定。 設定這個屬性不會影響 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 內的發行作業，也就是說，deploymentProvider 標記仍會加入至 PublishUrl 所指定的 URL。 |
+| ExcludeDeploymentUrl | 如果專案檔包含下列任何項目，[GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)會將 deploymentProvider 標記新增至部署資訊清單：<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> 不過，若使用 ExcludeDeploymentUrl，即使指定了上述任何 URL，仍可以防止將 deploymentProvider 標記加入至部署資訊清單。 若要防止加入該標記，請將下列屬性加入至您的專案檔：<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**注意：** ExcludeDeploymentUrl 不會在 Visual Studio IDE 中公開，而且只能透過手動編輯專案檔來設定。 設定這個屬性並不會影響 Visual Studio 內的發行;也就是說，deploymentProvider 標記仍會加入至 PublishUrl 所指定的 URL。 |
 | FileAlignment | 以位元組為單位，指定要對齊輸出檔案區段的位置。 有效的值為 512、1024、2048、4096、8192。 這個屬性相當於 `/filealignment` 編譯器參數。 |
 | FrameworkPathOverride | 指定 *mscorlib.dll* 和 *microsoft.visualbasic.dll* 的位置。 此參數 (Parameter) 相當於 `/sdkpath`vbc.exe*編譯器的* 參數 (Switch)。 |
 | GenerateDocumentation | （C#，Visual Basic）布林值參數，指出組建是否產生檔。 如果為 `true`，則建置會產生文件資訊，並將該資訊連同建置工作所建立的可執行檔或程式庫的名稱放入 *.xml* 檔。 |
@@ -77,8 +78,8 @@ ms.locfileid: "77557881"
 | MSBuildProjectExtensionsPath | 指定專案延伸模組的路徑位置。 根據預設，這會採用與 `BaseIntermediateOutputPath` 相同的值。 |
 | NoLogo | 布林值，指出您是否要關閉編譯器標誌。 這個屬性相當於 `/nologo` 編譯器參數。 |
 | NoStdLib | 布林值，指出是否要避免參考標準程式庫 (*mscorlib.dll*)。 預設值是 `false`。 |
-| NoVBRuntimeReference | 布林值，指出是否應加入 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 執行階段 (*Microsoft.VisualBasic.dll*) 作為專案中的參考。 |
-| NoWin32Manifest | 布林值，指出使用者帳戶控制 (UAC) 資訊清單資訊是否將會內嵌於應用程式的可執行檔中。 僅適用於目標為 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] 的 Visual Studio 專案。 在使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 和免註冊的 COM 所部署的專案中，會忽略這個項目。 `False` (預設值) 會指定將使用者帳戶控制 (UAC) 資訊清單資訊內嵌於應用程式的可執行檔中。 `True` 則會指定不內嵌 UAC 資訊清單資訊。<br /><br /> 這個屬性僅適用於目標為 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] 專案。 在使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 和免註冊的 COM 所部署的專案中，會忽略這個屬性。<br /><br /> 您應該僅在不希望 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 於應用程式的可執行檔中內嵌任何資訊清單資訊時，才新增 NoWin32Manifest，這個流程稱為「虛擬化」。 若要使用虛擬化，請連同 `<ApplicationManifest>` 一起設定 `<NoWin32Manifest>`，如下所示：<br /><br /> -  若為 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案，請移除 `<ApplicationManifest>` 節點。 (在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案中，如果有 `<NoWin32Manifest>` 節點存在，則會忽略 `<ApplicationManifest>`)。<br />-  若為 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 專案，請將 `<ApplicationManifest>` 設定為 `False`，並將 `<NoWin32Manifest>` 設定為 `True`。 (在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 專案中，`<ApplicationManifest>` 會覆寫 `<NoWin32Manifest>`)。<br /> 此屬性相當於 `/nowin32manifest`vbc.exe*的* 編譯器參數。 |
+| NoVBRuntimeReference | 布林值，指出是否應該在專案中包含 Visual Basic 執行時間（*Microsoft.* mscoree.dll）做為參考。 |
+| NoWin32Manifest | 布林值，指出使用者帳戶控制 (UAC) 資訊清單資訊是否將會內嵌於應用程式的可執行檔中。 僅適用于以 Windows Vista 為目標的 Visual Studio 專案。 在使用 ClickOnce 和免註冊 COM 所部署的專案中，會忽略這個元素。 `False` (預設值) 會指定將使用者帳戶控制 (UAC) 資訊清單資訊內嵌於應用程式的可執行檔中。 `True` 則會指定不內嵌 UAC 資訊清單資訊。<br /><br /> 此屬性僅適用于以 Windows Vista 為目標的 Visual Studio 專案。 在使用 ClickOnce 和免註冊 COM 所部署的專案中，會忽略這個屬性。<br /><br /> 只有當您不想 Visual Studio 在應用程式的可執行檔中內嵌任何資訊清單資訊時，才應該新增 NoWin32Manifest;此程式稱為「*虛擬化*」。 若要使用虛擬化，請連同 `<ApplicationManifest>` 一起設定 `<NoWin32Manifest>`，如下所示：<br /><br /> -若為 Visual Basic 專案，請移除 [`<ApplicationManifest>`] 節點。 （在 Visual Basic 專案中，當 `<ApplicationManifest>` 節點存在時，`<NoWin32Manifest>` 會被忽略）。<br />-若C#為專案，請將 `<ApplicationManifest>` 設定為 `False`，並 `<NoWin32Manifest>` `True`。 （在C#專案中，`<ApplicationManifest>` 覆寫 `<NoWin32Manifest>`）。<br /> 此屬性相當於 `/nowin32manifest`vbc.exe*的* 編譯器參數。 |
 | 最佳化 | 布林值，設定為 `true` 時，會啟用編譯器最佳化。 這個屬性相當於 `/optimize` 編譯器參數。 |
 | OptionCompare | 指定如何進行字串比較。 有效值為 "binary" 或 "text"。 此屬性相當於 `/optioncompare`vbc.exe*的* 編譯器參數。 |
 | OptionExplicit | 布林值，設定為 `true` 時，需要在原始程式碼中明確宣告變數。 這個屬性相當於 `/optionexplicit` 編譯器參數。 |
@@ -122,10 +123,10 @@ ms.locfileid: "77557881"
 | TargetCompactFramework | 執行您建置之應用程式所需的 .NET Compact Framework 版本。 指定這個屬性可讓您參考無法以其他方式參考的某些 Framework 組件。 |
 | TargetFrameworkVersion | 執行您正在建置之應用程式所需的 .NET Framework 版本。 指定這個屬性可讓您參考無法以其他方式參考的某些 Framework 組件。 |
 | TreatWarningsAsErrors | 布林值參數，如果為 `true`，表示會將所有警告視為錯誤。 這個參數 (Parameter) 相當於 `/nowarn` 編譯器參數 (Switch)。 |
-| UseHostCompilerIfAvailable | 布林值參數，如果為 `true`，表示建置工作會使用同處理序 (In-Process) 編譯器物件 (如果有的話)。 這個參數僅供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用。 |
+| UseHostCompilerIfAvailable | 布林值參數，如果為 `true`，表示建置工作會使用同處理序 (In-Process) 編譯器物件 (如果有的話)。 此參數僅供 Visual Studio 使用。 |
 | Utf8Output | 布林值參數，如果為 `true`，則會使用 UTF-8 編碼記錄編譯器輸出。 這個參數 (Parameter) 相當於 `/utf8Output` 編譯器參數 (Switch)。 |
 | VbcToolPath | 選擇性路徑，指出目前的 *vbc.exe* 版本遭到覆寫時，*vbc.exe* 的另一個位置。 |
-| VbcVerbosity | 指定 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器輸出的詳細資訊。 有效值為 "Quiet"、"Normal" (預設值) 或 "Verbose"。 |
+| VbcVerbosity | 指定 Visual Basic 編譯器輸出的詳細資訊。 有效值為 "Quiet"、"Normal" (預設值) 或 "Verbose"。 |
 | VisualStudioVersion | 指定考慮用於執行這個專案的 Visual Studio 版本。 如果沒有指定這個屬性，MSBuild 會將它設定為合理的預設值。<br /><br /> 這個屬性會在數種專案類型中用來指定組建所使用的一組目標。 如果專案的 `ToolsVersion` 設定為 4.0 (含) 以上，則會使用 `VisualStudioVersion` 指定要使用的子工具組。 如需詳細資訊，請參閱 [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。 |
 | WarningsAsErrors | 指定要視為錯誤的警告清單。 這個參數 (Parameter) 相當於 `/warnaserror` 編譯器參數 (Switch)。 |
 | WarningsNotAsErrors | 指定不要視為錯誤的警告清單。 這個參數 (Parameter) 相當於 `/warnaserror` 編譯器參數 (Switch)。 |
@@ -133,4 +134,5 @@ ms.locfileid: "77557881"
 | Win32Resource | 要內嵌於最終組件中的 Win32 資源檔案名稱。 這個參數 (Parameter) 相當於 `/win32resource` 編譯器參數 (Switch)。 |
 
 ## <a name="see-also"></a>另請參閱
+
 - [一般 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)

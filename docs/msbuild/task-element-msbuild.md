@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f808c14b8459abfb3bf9c531cfff496932836c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d17dde15fdfcc00890338eadf603f02352697363
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566354"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631870"
 ---
 # <a name="task-element-msbuild"></a>Task 元素 (MSBuild)
-建立並執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的執行個體。 元素名稱取決於所建立之工作的名稱。
+
+建立並執行 MSBuild 工作的實例。 元素名稱取決於所建立之工作的名稱。
 
  \<Project> \<Target>
 
@@ -39,7 +40,8 @@ ms.locfileid: "75566354"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
- 下列章節說明屬性、子元素和父元素。
+
+ 下列各節描述屬性、子項目和父項目。
 
 ### <a name="attributes"></a>屬性
 
@@ -51,22 +53,24 @@ ms.locfileid: "75566354"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[Output](../msbuild/output-element-msbuild.md)|在專案檔中儲存工作的輸出。 工作中可能有零或多個 `Output` 元素。|
+|[輸出](../msbuild/output-element-msbuild.md)|在專案檔中儲存工作的輸出。 工作中可能有零或多個 `Output` 元素。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
-| [Target](../msbuild/target-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的容器元素。 |
+| [Target](../msbuild/target-element-msbuild.md) | MSBuild 工作的容器元素。 |
 
 ## <a name="remarks"></a>備註
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔中的 `Task` 元素會建立工作的執行個體，設定屬性，然後執行它。 `Output` 元素會在專案檔中其他地方會使用的屬性或項目中儲存輸出參數。
 
- 如果工作的父 `Target` 元素中有任何 [OnError](../msbuild/onerror-element-msbuild.md) 元素，則當工作失敗且 `ContinueOnError` 的值為 `false` 時，仍然會評估那些元素。 如需工作的詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
+ MSBuild 專案檔中的 `Task` 元素會建立工作的實例、設定其屬性，並加以執行。 `Output` 元素會在專案檔中其他地方會使用的屬性或項目中儲存輸出參數。
+
+ 如果工作的父 [ 元素中有任何 ](../msbuild/onerror-element-msbuild.md)OnError`Target` 元素，則當工作失敗且 `ContinueOnError` 的值為 `false` 時，仍然會評估那些元素。 如需工作的詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
 
 ## <a name="example"></a>範例
+
  下列程式碼範例會建立 [Csc 工作](../msbuild/csc-task.md)類別的執行個體，設定其中六個屬性，然後執行工作。 執行之後，物件的 `OutputAssembly` 屬性值會放入名稱為 `FinalAssemblyName` 的項目清單。
 
 ```xml
@@ -83,7 +87,8 @@ ms.locfileid: "75566354"
 </Target>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

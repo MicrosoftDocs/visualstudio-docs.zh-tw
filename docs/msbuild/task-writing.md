@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 369584a815f671c8b7b4f8a99a5280626b493104
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594990"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631832"
 ---
 # <a name="task-writing"></a>工作撰寫
-提供在建置流程期間執行之程式碼的工作。 工作是包含在目標中。 一般工作程式庫會隨附於[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，您也可以建立自己的工作。 如需隨附於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 之工作程式庫的詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。
+
+提供在建置流程期間執行之程式碼的工作。 工作是包含在目標中。 MSBuild 包含一般工作的程式庫，您也可以建立自己的工作。 如需 MSBuild 隨附之工作程式庫的詳細資訊，請參閱工作[參考](../msbuild/msbuild-task-reference.md)。
 
 ## <a name="tasks"></a>工作
- 工作範例包括複製一或多個檔案的 [Copy](../msbuild/copy-task.md)、建立目錄的 [MakeDir](../msbuild/makedir-task.md)，以及編譯 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 原始程式碼檔的 [Csc](../msbuild/csc-task.md)。 每個工作都會實作為 .NET 類別，此類別會實作 <xref:Microsoft.Build.Framework.ITask> 介面，此介面定義於 *Microsoft.Build.Framework.dll* 組件中。
+
+ 工作的範例包括[Copy](../msbuild/copy-task.md)，其會複製一或多個檔案[MakeDir](../msbuild/makedir-task.md)，其會建立目錄，而[Csc](../msbuild/csc-task.md)則會C#編譯原始程式碼檔。 每個工作都會實作為 .NET 類別，此類別會實作 <xref:Microsoft.Build.Framework.ITask> 介面，此介面定義於 *Microsoft.Build.Framework.dll* 組件中。
 
  實作工作時有兩種方法可供使用：
 
@@ -60,7 +62,7 @@ namespace MyTasks
 </Project>
 ```
 
- 如果您在工作類別上建立 .NET 屬性，則工作在執行時，也可以接收來自專案檔的輸入。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會先立即設定這些屬性，再呼叫工作的 `Execute` 方法。 若要建立字串屬性，請使用下列工作碼：
+ 如果您在工作類別上建立 .NET 屬性，則工作在執行時，也可以接收來自專案檔的輸入。 MSBuild 會在呼叫工作的 `Execute` 方法之前，立即設定這些屬性。 若要建立字串屬性，請使用下列工作碼：
 
 ```csharp
 using System;
@@ -92,14 +94,16 @@ namespace MyTasks
 ```
 
 ## <a name="register-tasks"></a>註冊工作
- 如果專案即將執行工作，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 必須知道如何找出包含工作類別的組件。 工作是使用 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md) 註冊的。
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 檔案 *Microsoft.Common.Tasks* 是專案檔案，包含 `UsingTask` 元素清單，這些元素會註冊所有隨附於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的工作。 組建每個專案時，都會自動包含此檔案。 如果在 *Microsoft.Common.Tasks* 中註冊的工作也在目前的專案檔中註冊，則以目前的專案檔為優先，亦即您可以使用自己的同名工作覆寫預設工作。
+ 如果專案要執行工作，MSBuild 必須知道如何找出包含工作類別的元件。 工作是使用 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md) 註冊的。
+
+ *Microsoft*的 MSBuild 檔案是一個專案檔，其中包含註冊 MSBuild 所提供之所有工作的 `UsingTask` 元素清單。 組建每個專案時，都會自動包含此檔案。 如果在 *Microsoft.Common.Tasks* 中註冊的工作也在目前的專案檔中註冊，則以目前的專案檔為優先，亦即您可以使用自己的同名工作覆寫預設工作。
 
 > [!TIP]
-> 檢視 *Microsoft.Common.Tasks* 的內容即可以查看 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所提供之工作的清單。
+> 您可以查看由 MSBuild 提供的工作清單，方法是藉由觀看 Microsoft 的內容。*一般*工作。
 
 ## <a name="raise-events-from-a-task"></a>從工作引發事件
+
  如果您的工作衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別，您可以對 <xref:Microsoft.Build.Utilities.Task> 類別使用下列任一 helper 方法，引發要被攔截且由任何已註冊記錄器顯示的事件：
 
 ```csharp
@@ -132,6 +136,7 @@ public class SimpleTask : ITask
 ```
 
 ## <a name="require-task-parameters-to-be-set"></a>要求設定工作參數
+
  您可將某些工作屬性標記為「必要」，讓所有執行工作的專案檔都必須設定這些屬性值，否則組建會失敗。 在您的工作中將 `[Required]` 屬性套用至 .NET 屬性，如下所示：
 
 ```csharp
@@ -139,11 +144,11 @@ public class SimpleTask : ITask
 public string RequiredProperty { get; set; }
 ```
 
- <xref:Microsoft.Build.Framework.RequiredAttribute> 在 <xref:Microsoft.Build.Framework> 命名空間中定義 `[Required]` 屬性。
+ `[Required]` 在 <xref:Microsoft.Build.Framework.RequiredAttribute> 命名空間中定義 <xref:Microsoft.Build.Framework> 屬性。
 
-## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 叫用工作的方式
+## <a name="how-msbuild-invokes-a-task"></a>MSBuild 如何叫用工作
 
-叫用工作時，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會先具現化工作類別，然後針對在專案檔的 task 元素中設定的工作參數，呼叫該物件的屬性 setter。 如果 task 專案未指定參數，或如果元素中指定的運算式評估為空字串，則不會呼叫屬性 setter。
+叫用工作時，MSBuild 會先具現化工作類別，然後針對在專案檔的 task 元素中設定的工作參數，呼叫該物件的屬性 setter。 如果 task 專案未指定參數，或如果元素中指定的運算式評估為空字串，則不會呼叫屬性 setter。
 
 例如，在專案中
 
@@ -163,13 +168,13 @@ public string RequiredProperty { get; set; }
 
 ### <a name="task-parameter-types"></a>工作參數類型
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 原本就會處理類型 `string`、`bool`、`ITaskItem` 和 `ITaskItem[]`的屬性。 如果工作接受不同類型的參數，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會叫用 <xref:System.Convert.ChangeType%2A> 以從 `string` （已展開所有屬性和專案參考）轉換成目的地類型。 如果任何輸入參數的轉換失敗，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會發出錯誤，而且不會呼叫工作的 `Execute()` 方法。
+MSBuild 原本就會處理 `string`、`bool`、`ITaskItem` 和 `ITaskItem[]`類型的屬性。 如果工作接受不同類型的參數，MSBuild 會叫用 <xref:System.Convert.ChangeType%2A> 從 `string` （已展開所有屬性和專案參考）轉換成目的地類型。 如果任何輸入參數的轉換失敗，MSBuild 會發出錯誤，而且不會呼叫工作的 `Execute()` 方法。
 
 ## <a name="example"></a>範例
 
 ### <a name="description"></a>描述
 
-以下 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 類別會示範衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別的工作。 此工作會傳回 `true`，指出是否成功。
+下列C#類別示範衍生自 <xref:Microsoft.Build.Utilities.Task> helper 類別的工作。 此工作會傳回 `true`，指出是否成功。
 
 ### <a name="code"></a>程式碼
 
@@ -194,7 +199,7 @@ namespace SimpleTask1
 
 ### <a name="description"></a>描述
 
-以下 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 類別會示範實作 <xref:Microsoft.Build.Framework.ITask> 介面的工作。 此工作會傳回 `true`，指出是否成功。
+下列C#類別示範執行 <xref:Microsoft.Build.Framework.ITask> 介面的工作。 此工作會傳回 `true`，指出是否成功。
 
 ### <a name="code"></a>程式碼
 
@@ -230,7 +235,7 @@ namespace SimpleTask2
 
 ### <a name="description"></a>描述
 
-此 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 類別會示範衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別的工作。 它具有必要的字串屬性，會引發所有已註冊記錄器顯示的事件。
+這個C#類別會示範衍生自 <xref:Microsoft.Build.Utilities.Task> helper 類別的工作。 它具有必要的字串屬性，會引發所有已註冊記錄器顯示的事件。
 
 ### <a name="code"></a>程式碼
 
@@ -255,6 +260,6 @@ namespace SimpleTask2
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)

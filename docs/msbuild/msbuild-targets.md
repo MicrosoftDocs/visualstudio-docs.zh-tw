@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa29a2fa3d853e61dbbc26c01d389e57116a1a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593846"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633183"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
 
@@ -31,7 +31,7 @@ ms.locfileid: "75593846"
 </Target>
 ```
 
- 與 MSBuild 屬性相同，可以重新定義目標。 例如，套用至物件的
+ 與 MSBuild 屬性相同，可以重新定義目標。 例如：
 
 ```xml
 <Target Name="AfterBuild" >
@@ -68,7 +68,7 @@ ms.locfileid: "75593846"
 
 ## <a name="target-batching"></a>目標批次處理
 
-目標項目可能有 `Outputs` 屬性以 %(\<中繼資料>) 形式指定中繼資料。 如果是這樣，MSBuild 會為每個唯一的中繼資料值執行一次目標，並分組或「批次處理」具有該中繼資料值的項目。 例如，套用至物件的
+目標項目可能有 `Outputs` 屬性以 %(\<中繼資料>) 形式指定中繼資料。 如果是這樣，MSBuild 會為每個唯一的中繼資料值執行一次目標，並分組或「批次處理」具有該中繼資料值的項目。 例如：
 
 ```xml
 <ItemGroup>
@@ -98,13 +98,14 @@ Reference: 4.0
 
  目標批次處理很少用於真實的組建。 工作批次處理較為常見。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。
 
-## <a name="incremental-builds"></a>累加組建
+## <a name="incremental-builds"></a>累加建置
 
  累加組建是已最佳化的建置，因此不會執行輸出檔案與其相關對應輸入檔案為最新的目標。 目標項目可能有 `Inputs` 和 `Outputs` 屬性，並指出目標預期作為輸入的項目，以及它產生作為輸出的項目。
 
  如果所有輸出項目都是最新的，則 MSBuild 會略過目標，這可大幅改善建置速度。 這稱為目標的累加組建。 如果只有某些檔案是最新的，則 MSBuild 會執行沒有最新項目的目標。 這稱為目標的部分累加組建。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)。
 
 ## <a name="default-build-targets"></a>預設組建目標
+
 以下列出 CurrentVersion 中的公用目標。
 
 ```
@@ -1011,7 +1012,7 @@ This target gathers the Redist folders from the SDKs which have been resolved.
     DependsOnTargets="$(SDKRedistOutputGroupDependsOn)"/>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [如何：在多個專案檔中使用相同目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

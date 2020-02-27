@@ -10,22 +10,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ce9401174a26d58b7ef88d536a24bfb9017154
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f8c4792590565c027a316ed95abb067faa30f5dc
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595081"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632117"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>從 IDE 中啟動組建
+
 自訂專案系統必須使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 來啟動組建。 本文說明此需求的原因，並概述相關程序。
 
 ## <a name="parallel-builds-and-threads"></a>平行組建和執行緒
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 允許需要中繼才能存取一般資源的平行組建。 專案系統可以非同步執行組建，但是這類系統不得從回呼中呼叫組建函式。
+
+ Visual Studio 允許平行組建，這需要中繼才能存取一般資源。 專案系統可以非同步執行組建，但是這類系統不得從回呼中呼叫組建函式。
 
  如果專案系統會修改環境變數，則必須將組建的 NodeAffinity 設為 OutOfProc。 此需求表示您無法使用主機物件，因為它們需要同處理序節點。
 
 ## <a name="use-ivsbuildmanageraccessor"></a>使用 IVSBuildManagerAccessor
+
  下列程式碼概要說明專案系統可用來啟動組建的方法：
 
 ```csharp

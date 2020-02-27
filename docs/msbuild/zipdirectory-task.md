@@ -22,32 +22,36 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4bf72509610e9d397e4b208294112fcc0975b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8c9a51fe097eb110e44b3f4bd932a26f4efb6ea6
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588326"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630635"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory 工作
+
 從目錄的內容建立 *.zip* 封存。
 
 >[!NOTE]
 >`ZipDirectory` 工作僅適用於 MSBuild 15.8 和更新版本。
 
 ## <a name="parameters"></a>參數
+
  下表說明 `ZipDirectory` 工作的參數。
 
 |參數|描述|
 |---------------|-----------------|
 |`DestinationFile`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數<br /><br /> 要建立之 *.zip* 檔案的完整路徑。|
-|`Overwrite`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，會覆寫存在的目的地檔案。 預設值為 `false`。|
+|`Overwrite`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，會覆寫存在的目的地檔案。 預設為 `false`。|
 |`SourceDirectory`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要從其中建立 *.zip* 封存的目錄。|
 
 ## <a name="remarks"></a>備註
+
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
+
  下列範例會在建置專案後，從輸出目錄建立 *.zip* 封存。
 
 ```xml
@@ -62,6 +66,7 @@ ms.locfileid: "75588326"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

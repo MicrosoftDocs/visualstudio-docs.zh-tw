@@ -18,20 +18,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b722604249b9c395f06bb038102d731fafe2efc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4364e6c3f637fdf2c3e02a52d3163e5cdd8a5861
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590068"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634327"
 ---
 # <a name="createitem-task"></a>CreateItem 工作
+
 使用輸入項目填入項目集合。 這可將項目從一個清單複製到另一個。
 
 > [!NOTE]
 > 此工作已被取代。 從 .NET Framework 3.5 開始，項目 (Item) 群組可以放在 [Target](../msbuild/target-element-msbuild.md) 項目 (Element) 內。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
 ## <a name="attributes"></a>屬性
+
  下表說明 `CreateItem` 工作的參數。
 
 |參數|描述|
@@ -42,10 +44,12 @@ ms.locfileid: "75590068"
 |`PreserveExistingMetadata`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `True`，僅會套用其他中繼資料 (如果它們還不存在)。|
 
 ## <a name="remarks"></a>備註
+
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
- 下列程式碼範例會從項目集合 `MySourceItems` 建立名為 `MySourceItemsWithMetadata` 的新項目集合。 `CreateItem` 工作會使用 `MySourceItems` 項目中的項目來填入新的項目集合。 接著它會將名為 `MyMetadata` 且值為 `Hello` 的其他中繼資料項目 (Entry) 加入至新集合中的每個項目 (Item)。
+
+ 下列程式碼範例會從項目集合 `MySourceItemsWithMetadata` 建立名為 `MySourceItems` 的新項目集合。 `CreateItem` 工作會使用 `MySourceItems` 項目中的項目來填入新的項目集合。 接著它會將名為 `MyMetadata` 且值為 `Hello` 的其他中繼資料項目 (Entry) 加入至新集合中的每個項目 (Item)。
 
  執行此工作之後，`MySourceItemsWithMetadata` 項目 (Item) 集合會包含 file1.resx 和 file2.resx 項目，這兩者皆擁有 `MyMetadata` 的中繼資料項目 (Entry)。 `MySourceItems` 項目集合會保持不變。
 
@@ -72,10 +76,11 @@ ms.locfileid: "75590068"
 
  下表描述工作執行之後輸出項目的值。 項目中繼資料會顯示在項目之後的括號內。
 
-|項目集合。|內容|
+|項目集合。|目錄|
 |---------------------|--------------|
 |`MySourceItemsWithMetadata`|file1.resx (`MyMetadata="Hello"`)<br /><br /> file2.resx (`MyMetadata="Hello"`)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ec191345e1a232e79a2eea21563bf41e5d555c
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 28fd0033f5ef6f83ca29432f95d6b635fcd36116
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558161"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634366"
 ---
 # <a name="copy-task"></a>Copy 工作
+
 將檔案複製到檔案系統上的新位置。
 
 ## <a name="parameters"></a>參數
+
 下表說明 `Copy` 工作的參數。
 
 |參數|描述|
@@ -47,6 +49,7 @@ ms.locfileid: "77558161"
 |`UseHardlinksIfPossible`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會針對複製的檔案建立永久連結，而非複製檔案。|
 
 ## <a name="warnings"></a>警告
+
 系統會記錄警告，包括：
 
 - `Copy.DestinationIsDirectory`
@@ -66,11 +69,13 @@ ms.locfileid: "77558161"
 - `Copy.RemovingReadOnlyAttribute`
 
 ## <a name="remarks"></a>備註
+
 您必須指定 `DestinationFolder` 或 `DestinationFiles` 參數，但不能同時指定這兩者。 如果同時指定這兩者，工作即會失敗，並記錄錯誤。
 
 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
+
 下列範例會將 `MySourceFiles` 項目集合中的項目複製到資料夾 *c:\MyProject\Destination*。
 
 ```xml
@@ -91,6 +96,7 @@ ms.locfileid: "77558161"
 ```
 
 ## <a name="example"></a>範例
+
 下列範例示範如何進行遞迴複製。 此專案會以遞迴方式將所有檔案從 *c:\MySourceTree* 中複製到 *c:\MyDestinationTree*，同時保有目錄結構。
 
 ```xml
@@ -111,5 +117,6 @@ ms.locfileid: "77558161"
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

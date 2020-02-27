@@ -19,26 +19,28 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 312e174b1bbe0a21d155e4e6b5050e6f41dd8352
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 37692c541fb2a6e9b2ccf61083dd383e56a79766
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579556"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631519"
 ---
 # <a name="uidmanager-task"></a>UidManager 工作
-<xref:Microsoft.Build.Tasks.Windows.UidManager> 工作會檢查、更新或移除唯一識別碼 (UID)，以將來源 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 檔案中包含的所有 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 項目當地語系化。
+
+<xref:Microsoft.Build.Tasks.Windows.UidManager> 工作會檢查、更新或移除唯一識別碼（Uid），以便將來源 XAML 檔案中包含的所有 XAML 專案當地語系化。
 
 ## <a name="task-parameters"></a>工作參數
 
 | 參數 | 描述 |
 |-------------------------| - |
-| `IntermediateDirectory` | 選擇性的 **String** 參數。<br /><br /> 指定用於備份來源 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 檔案的目錄，該檔案是由 **MarkupFiles** 參數指定。 |
-| `MarkupFiles` | 必要的 **ITaskItem[]** 參數。<br /><br /> 指定要包含的來源 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 檔案以進行 UID 檢查、更新或移除。 |
+| `IntermediateDirectory` | 選擇性的 **String** 參數。<br /><br /> 指定用來備份**MarkupFiles**參數所指定之來源 XAML 檔案的目錄。 |
+| `MarkupFiles` | 必要的 **ITaskItem[]** 參數。<br /><br /> 指定要包含的來源 XAML 檔案，以供 UID 檢查、更新或移除。 |
 | `Task` | 必要的 **String** 參數。<br /><br /> 指定您想要執行的 UID 管理工作。 有效的選項為 **Check**、**Update** 或 **Remove**。 |
 
 ## <a name="example"></a>範例
- 下列範例會使用 <xref:Microsoft.Build.Tasks.Windows.UidManager> 工作來檢查指定來源 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 檔案是否包含具有正確 UID 的 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 項目。
+
+ 下列範例會使用 <xref:Microsoft.Build.Tasks.Windows.UidManager> 工作，檢查指定的來源 XAML 檔案包含具有適當 Uid 的 XAML 元素。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -55,6 +57,7 @@ ms.locfileid: "77579556"
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
 - [工作參考](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

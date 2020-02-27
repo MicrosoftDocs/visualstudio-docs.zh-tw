@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c19dbd74176babbf9e26030a68a6095992b660
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589366"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633612"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 項目 (MSBuild)
+
 包含使用者定義的項目中繼資料索引鍵，其中含有項目中繼資料值。 項目可能有任何數目的中繼資料索引鍵值組。
 
  \<Project> \<ItemGroup> \<Item>
@@ -35,7 +36,8 @@ ms.locfileid: "75589366"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
- 下列章節說明屬性、子元素和父元素。
+
+ 下列各節描述屬性、子項目和父項目。
 
 ### <a name="attributes"></a>屬性
 
@@ -44,21 +46,24 @@ ms.locfileid: "75589366"
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 
 ### <a name="child-elements"></a>子元素
+
  無。
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[Item](../msbuild/item-element-msbuild.md)|使用者定義的元素，可定義建置程序的輸入。|
 
 ## <a name="text-value"></a>文字值
+
  可選擇使用文字值。
 
  此文字會指定項目中繼資料值，它可以是文字或 XML。
 
 ## <a name="example"></a>範例
- 下列程式碼範例示範如何新增含有值 `fr` 的 `Culture` 中繼資料到項目 `CSFile`。
+
+ 下列程式碼範例示範如何新增含有值 `Culture` 的 `fr` 中繼資料到項目 `CSFile`。
 
 ```xml
 <ItemGroup>
@@ -68,6 +73,7 @@ ms.locfileid: "75589366"
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

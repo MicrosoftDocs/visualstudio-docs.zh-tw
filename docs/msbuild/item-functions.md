@@ -10,17 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ca003375e54248852f5942bd2b5f62fe21a06c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573790"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633677"
 ---
 # <a name="item-functions"></a>Item 函式
-從 MSBuild 4.0 開始，工作和目標中的程式碼可以呼叫項目函式來取得專案中項目的相關資訊。 這些函式會簡化取得 Distinct() 項目的方式，速度比執行項目迴圈還快。
+
+工作和目標中的程式碼可以呼叫專案函式，以取得專案中專案的相關資訊（在 MSBuild 4.0 和更新版本中）。 這些函式可簡化取得不同專案的工作，而且速度會比透過專案迴圈更快。
 
 ## <a name="string-item-functions"></a>字串項目函式
+
 您可以使用 .NET Framework 中的字串方法和屬性，來操作任何項目值。 針對 <xref:System.String> 方法，指定方法名稱。 針對 <xref:System.String> 屬性，在 "get_" 後面指定屬性名稱。
 
 針對有多個字串的項目，字串方法或屬性是在每個字串上執行。
@@ -49,6 +51,7 @@ ms.locfileid: "75573790"
 ```
 
 ## <a name="intrinsic-item-functions"></a>內建項目函式
+
 下表列出項目可用的內建函式。
 
 |函數|範例|描述|
@@ -99,5 +102,6 @@ ms.locfileid: "75573790"
   -->
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [項目](../msbuild/msbuild-items.md)

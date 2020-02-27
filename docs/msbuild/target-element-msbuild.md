@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69ee5758d5c6e513af853a8d7589057c6537956
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566419"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631974"
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
-包含一組可循序執行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作。
+
+包含一組可供 MSBuild 循序執行的工作。
 
  \<Project> \<Target>
 
@@ -51,7 +52,8 @@ ms.locfileid: "75566419"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
- 下列章節說明屬性、子元素和父元素。
+
+ 下列各節描述屬性、子項目和父項目。
 
 ### <a name="attributes"></a>屬性
 
@@ -70,21 +72,22 @@ ms.locfileid: "75566419"
 
 ### <a name="child-elements"></a>子元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
-| [Task](../msbuild/task-element-msbuild.md) | 建立並執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的執行個體。 目標中可能有零或多個工作。 |
+| [Task](../msbuild/task-element-msbuild.md) | 建立並執行 MSBuild 工作的實例。 目標中可能有零或多個工作。 |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | 包含一組使用者定義的 `Property` 項目。 從 .NET Framework 3.5 開始，`Target` 項目可以包含 `PropertyGroup` 項目。 |
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | 包含一組使用者定義的 `Item` 項目。 從 .NET Framework 3.5 開始，`Target` 項目可以包含 `ItemGroup` 項目。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。 |
 | [OnError](../msbuild/onerror-element-msbuild.md) | 如果 `ContinueOnError` 屬性是失敗工作的 ErrorAndStop (或 `false`)，則會導致執行一或多個目標。 目標中可能有零或多個 `OnError` 項目。 如果有 `OnError` 項目存在，則它們必須是 `Target` 項目中的最後一個項目。<br /><br /> 如需 `ContinueOnError` 屬性的相關資訊，請參閱 [Task 元素 (MSBuild)](../msbuild/task-element-msbuild.md)。 |
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
+| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 
 ## <a name="remarks"></a>備註
- 在執行階段指定要執行的第一個目標。 目標可以相依於其他目標。 例如，適用於部署的目標相依於適用於編譯的目標。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎會依其在 `DependsOnTargets` 屬性中出現的順序，從左到右依序執行相依性。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。
+
+ 在執行階段指定要執行的第一個目標。 目標可以相依於其他目標。 例如，適用於部署的目標相依於適用於編譯的目標。 MSBuild 引擎會依照它們在 `DependsOnTargets` 屬性中的出現順序，從左至右執行相依性。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。
 
  MSBuild 需相依於匯入順序，且具特定 `Name` 屬性之目標的最後一個定義將會是系統所使用的定義。
 
@@ -92,16 +95,17 @@ ms.locfileid: "75566419"
 
  若因目標的 `Condition` 屬性評估為 `false` 而略過該目標，如果稍後在組建中叫用該目標且其 `Condition` 屬性在該時點評估為 `true`，則仍會執行該目標。
 
- 在 MSBuild 4 之前，`Target` 會傳回 `Outputs` 屬性中所指定的任何項目。  若要這樣做，MSBuild 必須記錄這些項目，以防組建中後續的工作需要用到它們。 由於沒有任何方法可指出哪些目標具有呼叫端所要求的輸出，因此，MSBuild 會在所有叫用的 `Target` 上累積來自所有 `Outputs` 的所有項目。 這會導致含有大量輸出項目的組建問題範圍擴大。
+ 在 MSBuild 4 之前，`Target` 會傳回 `Outputs` 屬性中所指定的任何項目。  若要這樣做，MSBuild 必須記錄這些項目，以防組建中後續的工作需要用到它們。 由於沒有任何方法可指出哪些目標具有呼叫端所要求的輸出，因此，MSBuild 會在所有叫用的 `Outputs` 上累積來自所有 `Target` 的所有項目。 這會導致含有大量輸出項目的組建問題範圍擴大。
 
- 如果使用者在專案中的任何 `Target` 項目上指定 `Returns`，則只有具 `Returns` 屬性的 `Target` 會記錄這些項目。
+ 如果使用者在專案中的任何 `Returns` 項目上指定 `Target`，則只有具 `Target` 屬性的 `Returns` 會記錄這些項目。
 
  `Target` 可能同時包含 `Outputs` 屬性和 `Returns` 屬性。  `Outputs` 會與 `Inputs` 搭配使用，以判斷目標是否為最新狀態。 如果有 `Returns`，即會覆寫 `Outputs` 的值，來判斷要將哪些項目傳回給呼叫端。  如果 `Returns` 不存在，則會將 `Outputs` 開放給呼叫端使用，但稍早所述的案例除外。
 
  在 MSBuild 4 之前，任何時候，只要 `Target` 在其 `Outputs` 中包含多個對相同項目的參考，就會記錄這些重複項目。 若含有大量輸出和許多專案相依性的組建數量非常多，這會造成大量記憶體的浪費，因為重複項目不具任何用途。 將 `KeepDuplicateOutputs` 屬性設為 `true` 時，就會記錄這些重複項目。
 
 ## <a name="example"></a>範例
- 下列程式碼範例示範執行 `Csc` 工作的 `Target` 項目。
+
+ 下列程式碼範例示範執行 `Target` 工作的 `Csc` 項目。
 
 ```xml
 <Target Name="Compile" DependsOnTargets="Resources" Returns="$(TargetPath)">
@@ -117,6 +121,7 @@ ms.locfileid: "75566419"
 </Target>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [目標](../msbuild/msbuild-targets.md)
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

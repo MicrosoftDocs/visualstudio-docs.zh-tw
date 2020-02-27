@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e10cf26ad23e6fe4c881f68ad87bc80d04f2cf8a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 59bc42bd438d80bbaf0ff45cd1c95447961cd437
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590965"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630622"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 工作
+
 從 XML 檔案傳回 XPath 查詢所指定的值。
 
 ## <a name="parameters"></a>參數
+
  下表說明 `XmlPeek` 工作的參數。
 
 |參數|描述|
@@ -38,8 +40,10 @@ ms.locfileid: "75590965"
 |`XmlInputPath`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 將 XML 輸入指定為檔案路徑。|
 
 ## <a name="remarks"></a>備註
+
  除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

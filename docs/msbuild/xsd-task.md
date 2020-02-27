@@ -20,20 +20,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c256e02901d4f7dd7de6f14e9f650626feac25
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565782"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630778"
 ---
 # <a name="xsd-task"></a>XSD 工作
+
 包裝 XML 結構描述定義工具 (*xsd.exe*)，其會從來源產生結構描述或類別檔案。
 
 > [!NOTE]
-> 從 Visual Studio 2017 開始，*xsd.exe* 的 C++ 專案支援已過時。 您仍然可以將 *CppCodeProvider.dll* 手動新增至 GAC 來使用**Microsoft.VisualC.CppCodeProvider** API。
+> 從 Visual Studio 2017 開始，*xsd.exe* 的 C++ 專案支援已過時。 您仍然可以將 **CppCodeProvider.dll** 手動新增至 GAC 來使用*Microsoft.VisualC.CppCodeProvider* API。
 
 ## <a name="parameters"></a>參數
+
  下表說明 **XSD** 工作的參數。
 
 - **AdditionalOptions**
@@ -54,7 +56,7 @@ ms.locfileid: "75565782"
 
   - **dataset** -  **/dataset**
 
-- **Language**
+- **語言**
 
      選擇性的 **String** 參數。
 
@@ -62,13 +64,13 @@ ms.locfileid: "75565782"
 
      可以選擇 **CS** (C#，此為預設值)、**VB** (Visual Basic) 或 **JS** (JScript)。 您可以對實作 `System.CodeDom.Compiler.CodeDomProvider Class` 的類別指定完整名稱。
 
-- **命名空間**
+- **Namespace**
 
      選擇性的 **String** 參數。
 
      指定產生的型別的執行階段命名空間。
 
-- **Sources**
+- **來源**
 
      必要的 `ITaskItem[]` 參數。
 
@@ -86,5 +88,6 @@ ms.locfileid: "75565782"
 
      指定追蹤器記錄檔的目錄。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作參考](../msbuild/msbuild-task-reference.md)

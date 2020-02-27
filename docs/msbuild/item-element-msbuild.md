@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 730e7d317ffa3fd5a450978f35659df3fe5629f3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3da51c16645d0c44128b0a5fe1b19053062673c1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573660"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633690"
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
-包含使用者定義的項目及其中繼資料。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個項目，都必須指定為 `ItemGroup` 項目的子系。
+
+包含使用者定義的項目及其中繼資料。 MSBuild 專案中使用的每個專案都必須指定為 `ItemGroup` 元素的子系。
 
 \<Project> \<ItemGroup> \<Item>
 
@@ -41,6 +42,7 @@ ms.locfileid: "75573660"
 ```
 
 ## <a name="specify-metadata-as-attributes"></a>將中繼資料指定為屬性
+
 在 MSBuild 15.1 或更新版本中，如果任何中繼資料的名稱未與目前的屬性清單衝突，您即可選擇將其表示為屬性。
 
 例如，若要指定 NuGet 套件清單，您通常會使用類似下列的語法。
@@ -62,7 +64,8 @@ ms.locfileid: "75573660"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
- 下列章節說明屬性、子元素和父元素。
+
+ 下列各節描述屬性、子項目和父項目。
 
 ### <a name="attributes"></a>屬性
 
@@ -79,24 +82,26 @@ ms.locfileid: "75573660"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|使用者定義的項目中繼資料索引鍵，其中含有項目中繼資料值。 項目中可能有零個或多個 `ItemMetadata` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|項目的群組項目。|
 
 ## <a name="remarks"></a>備註
+
 `Item` 項目定義建置系統的輸入，且會依據使用者定義的集合名稱，分組成為項目集合。 這些項目集合可以用來做為[工作](../msbuild/msbuild-tasks.md)的參數，工作會使用集合中個別的項目來執行建置程序的步驟。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
 使用標記法 @(\<myType>)，可讓類型 \<myType> 的項目集合展開為以分號分隔的字串清單，並傳遞至參數。 如果參數的類型是 `string`，則參數的值會是以分號分隔的項目清單。 如果參數是字串陣列 (`string[]`)，則每個項目都會根據分號的位置，插入到陣列中。 如果工作參數的類型是 <xref:Microsoft.Build.Framework.ITaskItem>`[]`，則值就是項目集合的內容再加上任何附加的中繼資料。 若要使用分號以外的字元來分隔每個項目，請使用 @(\<myType>, '\<分隔符號>') 語法。
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎可以評估萬用字元 (例如 `*` 和 `?`) 以及遞迴萬用字元 (例如 /\*\*/\*.cs)。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
+MSBuild 引擎可以評估萬用字元，例如 `*` 和 `?`，以及遞迴萬用字元，例如 */\*\** /\*。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
 ## <a name="examples"></a>範例
+
 下列程式碼範例示範如何宣告類型為 `CSFile` 的兩個項目。 第二個宣告項目包含 `MyMetadata` 設定為 `HelloWorld` 的中繼資料。
 
 ```xml
@@ -118,8 +123,9 @@ ms.locfileid: "75573660"
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [項目](../msbuild/msbuild-items.md)
-- [通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)
+- [一般 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

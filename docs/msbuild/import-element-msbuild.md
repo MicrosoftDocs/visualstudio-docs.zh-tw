@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ffaff052e672eb900d5ed3a1ce5ae7c2a370df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 044c531432de987fc7f3d34ce5344ad0374bcd00
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573989"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633742"
 ---
 # <a name="import-element-msbuild"></a>Import 項目 (MSBuild)
+
 將某個專案檔的內容匯入至另一個專案檔。
 
 \<Project> \<Import>
@@ -38,7 +39,8 @@ ms.locfileid: "75573989"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
- 下列章節說明屬性、子元素和父元素。
+
+ 下列各節描述屬性、子項目和父項目。
 
 ### <a name="attributes"></a>屬性
 
@@ -49,29 +51,32 @@ ms.locfileid: "75573989"
 |`Sdk`| 選擇性屬性。<br /><br /> 參考專案 SDK。|
 
 ### <a name="child-elements"></a>子元素
- None
+
+ 無
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
+| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 | [ImportGroup](../msbuild/importgroup-element.md) | 包含群組在選擇性條件下方的 `Import` 項目集合。 |
 
 ## <a name="remarks"></a>備註
+
  使用 `Import` 項目，您可以重複使用通用於許多專案檔的程式碼。 因為您對共用程式碼的更新都會傳播至匯入它的所有專案，所以這可讓您更輕鬆地維護程式碼。
 
- 依照慣例，共用的匯入專案檔儲存為 *.targets* 檔案，但它們是標準 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可讓您匯入副檔名不同的專案，但基於一致性，建議您使用 *.targets* 副檔名。
+ 依照慣例，共用的匯入專案檔會儲存為 *.targets*檔案，但它們是標準的 MSBuild 專案檔案。 MSBuild 不會防止您匯入副檔名不同的專案，但建議您使用 *.targets*副檔名來確保一致性。
 
  所匯入專案中的相對路徑是解譯成相對於匯入專案的目錄。 因此，如果將專案檔匯入至不同位置中的數個專案檔，則針對每個匯入的專案，會以不同的方式解譯匯入之專案檔中的相對路徑。
 
- 所有與匯入的專案中所參考的專案檔有關的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 保留屬性 (例如 `MSBuildProjectDirectory` 和 `MSBuildProjectFile`)，都會根據匯入專案檔來指派值。
+ 所有與專案檔相關的 MSBuild 保留屬性（例如 `MSBuildProjectDirectory` 和 `MSBuildProjectFile`）都會根據匯入專案檔來指派值。
 
- 如果匯入的專案沒有 `DefaultTargets` 屬性，則會依匯入順序來檢查匯入的專案，並使用第一個探索到之 `DefaultTargets` 屬性的值。 例如，如果 ProjectA 匯入 ProjectB 和 ProjectC (依該順序)，而 ProjectB 匯入 ProjectD，則 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會依序尋找 ProjectA、ProjectB、ProjectD 和 ProjectC 上指定的 `DefaultTargets` 。
+ 如果匯入的專案沒有 `DefaultTargets` 屬性，則會依匯入順序來檢查匯入的專案，並使用第一個探索到之 `DefaultTargets` 屬性的值。 例如，如果 ProjectA 匯入 ProjectB 和 Projectc 依（依該順序）和 ProjectB imports ProjectD，MSBuild 會先尋找 ProjectA 上指定的 `DefaultTargets`、ProjectB、ProjectD，最後是 Projectc 依。
 
- 匯入之專案的結構描述與標準專案的結構描述完全相同。 雖然 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可能可以建置匯入的專案，但是無法達成，因為匯入的專案通常不會包含要設定之屬性或目標執行順序的相關資訊。 匯入的專案取決於匯入它以提供該資訊的專案。
+ 匯入之專案的結構描述與標準專案的結構描述完全相同。 雖然 MSBuild 可能會建立匯入的專案，但不太可能是因為匯入的專案通常不會包含要設定之屬性的相關資訊，或是執行目標的順序。 匯入的專案取決於匯入它以提供該資訊的專案。
 
 ## <a name="wildcards"></a>萬用字元
+
  在 .NET Framework 4 中，MSBuild 允許在 Project 屬性中使用萬用字元。 有萬用字元時，會排序所有找到的相符項目 (適用於重現性)，然後依該順序進行匯入，就像已明確設定順序一樣。
 
  如果您想要提供擴充點，讓其他人可以匯入檔案，而不需要您將檔案名稱明確地新增至匯入檔案，則這非常好用。 基於此目的，*Microsoft.Common.Targets* 會在檔案頂端包含下行。
@@ -81,6 +86,7 @@ ms.locfileid: "75573989"
 ```
 
 ## <a name="example"></a>範例
+
  下列範例示範具有數個項目和屬性並匯入一般專案檔的專案。
 
 ```xml
@@ -106,6 +112,7 @@ ms.locfileid: "75573989"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [如何：在多個專案檔中使用相同目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

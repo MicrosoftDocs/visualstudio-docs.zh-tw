@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c45f22011c32378af0690c9aee226877faf903bd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593352"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634457"
 ---
 # <a name="cl-task"></a>CL 工作
+
 包裝 Microsoft C++編譯器工具（ *cl .exe*）。 編譯器會產生可執行檔 ( *.exe*)、動態連結程式庫 ( *.dll*) 檔案或程式碼模組 ( *.netmodule*) 檔案。 如需詳細資訊，請參閱[編譯器選項](/cpp/build/reference/compiler-options)。
 
 ## <a name="parameters"></a>參數
+
  下列清單描述 **CL** 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。
 
 - **AdditionalIncludeDirectories**
@@ -800,5 +802,6 @@ ms.locfileid: "75593352"
 
    如需詳細資訊，請參閱此表格中的 **TLogReadFiles** 和 **TLogWriteFiles** 參數。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作參考](../msbuild/msbuild-task-reference.md)

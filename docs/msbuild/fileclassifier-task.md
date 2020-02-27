@@ -17,14 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd533507e1c498ae315529bd8ab17dd175b7f836
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579676"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634184"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 工作
+
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> 工作會將一組來源資源分類為將內嵌至組件的來源資源。 如果無法將資源當地語系化，即會將它內嵌至主應用程式組件；否則，會將它內嵌至附屬組件。
 
 ## <a name="task-parameters"></a>工作參數
@@ -41,9 +42,11 @@ ms.locfileid: "77579676"
 |`SourceFiles`|必要的 **ITaskItem[]** 參數。<br /><br /> 指定要分類的檔案清單。|
 
 ## <a name="remarks"></a>備註
+
 如果未設定 **Culture** 參數，使用 **SourceFiles** 參數指定的所有資源都是不可當地語系化的；除非它們與設為 **false** 的 **Localizable** 屬性相關聯，否則，它們是可當地語系化的。
 
 ## <a name="example"></a>範例
+
 下列範例會將單一來源檔案分類為資源，然後將它內嵌於加拿大法文 (fr-CA) 文化特性的附屬組件中。
 
 ```xml
@@ -64,6 +67,7 @@ ms.locfileid: "77579676"
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
 - [工作參考](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

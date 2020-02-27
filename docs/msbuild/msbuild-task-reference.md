@@ -15,22 +15,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d050aa095868e229887e4928285d746e1b5906a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593872"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633157"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
 
-提供在建置流程期間執行之程式碼的工作。 下列清單的工作包含於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中。 若已安裝 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，將提供可用來建置 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案的其他工作。 如需詳細資訊，請參閱[ C++ tasks](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。
+提供在建置流程期間執行之程式碼的工作。 下列清單中的工作包含在 MSBuild 中。 當C++工作負載安裝完成時，會有一些可用來建立C++專案的作業。 如需詳細資訊，請參閱[ C++ tasks](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。
 
 除了本節中主題所列的參數之外，每個工作也會有下列參數：
 
 | 參數 | 描述 |
 |-------------------| - |
-| `Condition` | 選擇性的 `String` 參數。<br /><br /> `Boolean` 運算式，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎會使用此運算式來決定是否要執行此工作。 如需 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所支援條件的相關資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。 |
+| `Condition` | 選擇性的 `String` 參數。<br /><br /> MSBuild 引擎用來判斷是否將執行此工作的 `Boolean` 運算式。 如需 MSBuild 支援之條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。 |
 | `ContinueOnError` | 選擇性參數。 可包含一或多個下列值：<br /><br /> -   **WarnAndContinue** 或 **true**。 當工作失敗時，[Target](../msbuild/target-element-msbuild.md) 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為警告。<br />-   **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **ErrorAndStop** 或 **false** (預設值)。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱[如何：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。 |
 
 ## <a name="in-this-section"></a>本節內容
@@ -85,7 +85,7 @@ ms.locfileid: "75593872"
 
 - [CreateCSharpManifestResourceName 工作](../msbuild/createcsharpmanifestresourcename-task.md)
 
- 從指定的 *.resx* 檔案名稱或其他資源，建立 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 樣式的資訊清單名稱。
+ 從指定C#的 *.resx*檔案名或其他資源，建立樣式的資訊清單名稱。
 
 - [CreateItem 工作](../msbuild/createitem-task.md)
 
@@ -97,7 +97,7 @@ ms.locfileid: "75593872"
 
 - [CreateVisualBasicManifestResourceName 工作](../msbuild/createvisualbasicmanifestresourcename-task.md)
 
- 從指定的 *.resx* 檔案名稱或其他資源，建立 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 樣式的資訊清單名稱。
+ 從指定的 *.resx*檔案名或其他資源建立 Visual Basic 樣式的資訊清單名稱。
 
 - [Csc 工作](../msbuild/csc-task.md)
 
@@ -141,7 +141,7 @@ ms.locfileid: "75593872"
 
 - [GenerateApplicationManifest 工作](../msbuild/generateapplicationmanifest-task.md)
 
- 產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單或原生資訊清單。
+ 產生 ClickOnce 應用程式資訊清單或原生資訊清單。
 
 - [GenerateBootstrapper 工作](../msbuild/generatebootstrapper-task.md)
 
@@ -149,7 +149,7 @@ ms.locfileid: "75593872"
 
 - [GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)
 
- 產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單。
+ 產生 ClickOnce 部署資訊清單。
 
 - [GenerateResource 工作](../msbuild/generateresource-task.md)
 
@@ -173,7 +173,7 @@ ms.locfileid: "75593872"
 
 - [GetFrameworkSdkPath 工作](../msbuild/getframeworksdkpath-task.md)
 
- 擷取 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 的路徑。
+ 抓取 Windows 軟體發展工具組（SDK）的路徑。
 
 - [GetReferenceAssemblyPaths 工作](../msbuild/getreferenceassemblypaths-task.md)
 
@@ -197,7 +197,7 @@ ms.locfileid: "75593872"
 
 - [MSBuild 工作](../msbuild/msbuild-task.md)
 
- 從另一個 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案建置[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案。
+ 從另一個 MSBuild 專案建立 MSBuild 專案。
 
 - [ReadLinesFromFile 工作](../msbuild/readlinesfromfile-task.md)
 
@@ -221,7 +221,7 @@ ms.locfileid: "75593872"
 
 - ResGen 工作
 
- 已過時。 使用 [GenerateResource 工作](../msbuild/generateresource-task.md)，將 *.txt* 和 *.resx* 檔案轉換為通用語言執行階段二進位 *.resources* 檔案，反之亦然。
+ 已經過時： 使用 [GenerateResource 工作](../msbuild/generateresource-task.md)，將 *.txt* 和 *.resx* 檔案轉換為通用語言執行階段二進位 *.resources* 檔案，反之亦然。
 
 - [ResolveAssemblyReference 工作](../msbuild/resolveassemblyreference-task.md)
 
@@ -229,7 +229,7 @@ ms.locfileid: "75593872"
 
 - [ResolveComReference 工作](../msbuild/resolvecomreference-task.md)
 
- 取得一或多個類型程式庫名稱的清單或 *.tlb* 檔案，並將那些類型程式庫解析至磁碟上的位置。
+ 取得一或多個類型程式庫名稱或 *.tlb* 檔案的清單，並將那些類型程式庫解析至磁碟上的位置。
 
 - [ResolveKeySource 工作](../msbuild/resolvekeysource-task.md)
 
@@ -237,7 +237,7 @@ ms.locfileid: "75593872"
 
 - [ResolveManifestFiles 工作](../msbuild/resolvemanifestfiles-task.md)
 
- 將建置流程中的下列項目解析為檔案，以產生資訊清單：建置的項目、相依性、附屬項目、內容、偵錯符號和文件。
+ 在建置流程中將下列項目解析為檔案，以產生資訊清單：建置的項目、相依性、附屬項目、內容、偵錯符號和文件。
 
 - [ResolveNativeReference 工作](../msbuild/resolvenativereference-task.md)
 
@@ -249,7 +249,7 @@ ms.locfileid: "75593872"
 
 - [SGen 工作](../msbuild/sgen-task.md)
 
- 針對指定組件中的型別建立 XML 序列化組件。
+ 針對指定組件中的類型建立 XML 序列化組件。
 
 - [SignFile 工作](../msbuild/signfile-task.md)
 
@@ -261,7 +261,7 @@ ms.locfileid: "75593872"
 
 - [UnregisterAssembly 工作](../msbuild/unregisterassembly-task.md)
 
- 針對 COM Interop 用途取消註冊指定的組件。
+ 針對 COM Interop 用途將指定的組件取消註冊。
 
 - [Unzip 工作](../msbuild/unzip-task.md)
 
@@ -307,7 +307,7 @@ ms.locfileid: "75593872"
 
  從目錄的內容建立 *.zip* 封存。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
 - [工作撰寫](../msbuild/task-writing.md)

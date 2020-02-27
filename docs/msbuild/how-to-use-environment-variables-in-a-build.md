@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d66fb73972a81e421b6e7343e549b0ef3069001
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574414"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633781"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>如何：在組建中使用環境變數
+
 當您建置專案時，通常需要使用專案檔或構成專案之檔案中沒有的資源來設定組建選項。 此資訊通常會儲存於環境變數中。
 
 ## <a name="reference-environment-variables"></a>參考環境變數
- 所有環境變數都可供 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 專案檔用來做為屬性。
+
+ 所有環境變數都可供 Microsoft Build Engine （MSBuild）專案檔案當做屬性使用。
 
 > [!NOTE]
 > 如果專案檔包含與環境變數相同名稱之專案的明確定義，則專案檔中的屬性會覆寫環境變數的值。
@@ -38,7 +40,7 @@ ms.locfileid: "75574414"
 
 #### <a name="to-provide-a-default-value-for-a-property"></a>提供屬性的預設值
 
-- 只有當屬性 (Property) 沒有任何值，才能在屬性 (Property) 上使用 `Condition` 屬性 (Attribute) 來設定值。 例如，下列程式碼只有在未設定 `ToolsPath` 環境變數時，才會將 `ToolsPath` 屬性設為 *c:\tools*：
+- 只有當屬性 (Property) 沒有任何值，才能在屬性 (Property) 上使用 `Condition` 屬性 (Attribute) 來設定值。 例如，下列程式碼只有在未設定 `ToolsPath` 環境變數時，才會將 *屬性設為*c:\tools`ToolsPath`：
 
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`
 
@@ -46,6 +48,7 @@ ms.locfileid: "75574414"
     > 屬性名稱是不區分大小寫的，因此 `$(ToolsPath)` 和 `$(TOOLSPATH)` 會參考相同的屬性或環境變數。
 
 ## <a name="example"></a>範例
+
  下列專案檔會使用環境變數來指定目錄位置。
 
 ```xml
@@ -62,7 +65,8 @@ ms.locfileid: "75574414"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
-- [ MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>另請參閱
+
+- [MSBuild](../msbuild/msbuild.md)
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)
 - [如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

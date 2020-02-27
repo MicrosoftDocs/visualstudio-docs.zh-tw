@@ -15,21 +15,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89f7d8465b2078d4c0c1ce86894edb834581596d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6393e771f9e9ed862d21397dabacdb3f3808c386
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593820"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633144"
 ---
 # <a name="msbuild-tasks-specific-to-c"></a>特定的 MSBuild 工作C++
-提供在建置流程期間執行之程式碼的工作。 當C++安裝時，除了與 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]一起安裝的工作之外，還可以使用下列作業。 如需詳細資訊，請參閱[MSBuild （C++）總覽](/cpp/build/msbuild-visual-cpp-overview)。
+
+提供在建置流程期間執行之程式碼的工作。 當C++安裝時，除了隨 MSBuild 一起安裝的工作之外，還提供下列工作。 如需詳細資訊，請參閱[MSBuild （C++）總覽](/cpp/build/msbuild-visual-cpp-overview)。
 
  除了適用於每個工作的參數之外，每個工作也會有下列參數。
 
 | 參數 | 描述 |
 |-------------------| - |
-| `Condition` | 選擇性的 `String` 參數。<br /><br /> `Boolean` 運算式，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎會使用此運算式來決定是否要執行此工作。 如需 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所支援條件的相關資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。 |
+| `Condition` | 選擇性的 `String` 參數。<br /><br /> MSBuild 引擎用來判斷是否將執行此工作的 `Boolean` 運算式。 如需 MSBuild 支援之條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。 |
 | `ContinueOnError` | 選擇性參數。 可包含一或多個下列值：<br /><br /> -   **WarnAndContinue** 或 **true**。 當工作失敗時，[Target](../msbuild/target-element-msbuild.md) 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為警告。<br />-   **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **ErrorAndStop** 或 **false** (預設值)。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱[如何：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。 |
 
 ### <a name="related-topics"></a>相關主題
@@ -62,4 +63,4 @@ ms.locfileid: "75593820"
 |[工作撰寫](../msbuild/task-writing.md)|描述如何建立工作。|
 
 > [!NOTE]
-> 從 Visual Studio 2017 開始，*xsd.exe* 的 C++ 專案支援已過時。 您仍然可以將 *CppCodeProvider.dll* 手動新增至 GAC 來使用**Microsoft.VisualC.CppCodeProvider** API。
+> 從 Visual Studio 2017 開始，*xsd.exe* 的 C++ 專案支援已過時。 您仍然可以將 **CppCodeProvider.dll** 手動新增至 GAC 來使用*Microsoft.VisualC.CppCodeProvider* API。

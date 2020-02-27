@@ -9,18 +9,20 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: be8b4a6845e8fd14a0649f4134bcc26d8e1ad08e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574947"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633820"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略工作中的錯誤
+
 有時您會希望組建能夠容忍某些工作中的錯誤。 如果這些非關鍵性的工作失敗，您會想要讓組建繼續執行，因為它仍然可以產生所需的輸出。 例如，如果專案使用 `SendMail` 工作，在建置每個元件之後傳送電子郵件訊息，您可能會考慮，即使郵件伺服器無法使用且無法傳送狀態訊息，還是能夠接受組建繼續完成。 或者，例如，如果通常會在建置期間刪除中繼資料檔案，您可能會考慮，即使無法刪除這些檔案，還是能夠接受組建繼續完成。
 
 ## <a name="use-the-continueonerror-attribute"></a>使用 ContinueOnError 屬性
-`Task` 項目的 `ContinueOnError` 屬性可控制當工作失敗發生時，建置是否要停止或繼續。 此屬性也可控制當組建繼續時，是否要將錯誤視為錯誤或警告。
+
+`ContinueOnError` 項目的 `Task` 屬性可控制當工作失敗發生時，建置是否要停止或繼續。 此屬性也可控制當組建繼續時，是否要將錯誤視為錯誤或警告。
 
 `ContinueOnError` 屬性可包含一或多個下列值：
 
@@ -36,13 +38,14 @@ ms.locfileid: "75574947"
 
 #### <a name="to-ignore-an-error-in-a-task"></a>忽略工作中的錯誤
 
-使用工作的 `ContinueOnError` 屬性。 例如：
+使用工作的 `ContinueOnError` 屬性。 例如，
 
 ```xml
 <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
 ```
 
 ## <a name="example"></a>範例
+
 下列程式碼範例將說明 `Build` 目標仍會執行，並將組建視為成功，即使 `Delete` 工作失敗也一樣。
 
 ```xml
@@ -61,7 +64,8 @@ ms.locfileid: "75574947"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
-- [ MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>另請參閱
+
+- [MSBuild](../msbuild/msbuild.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

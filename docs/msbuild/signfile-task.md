@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 397366a7dac601cd11dc1c70efc352edf303a92e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 133048a5bb8103c681d8e2b84e68033c486109e1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579576"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632286"
 ---
 # <a name="signfile-task"></a>SignFile 工作
 
@@ -74,5 +74,6 @@ ms.locfileid: "77579576"
 > 憑證指紋是憑證的 SHA-1 雜湊。 如需詳細資訊，請參閱[取得受信任的根 CA 憑證的 SHA-1 雜湊](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\))。 如果您從憑證詳細資料複製並貼上指紋，請確定您未包含額外的 (3F) 不可見字元，這可能會導致 `SignFile` 找不到憑證。
 
 ## <a name="see-also"></a>另請參閱
+
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

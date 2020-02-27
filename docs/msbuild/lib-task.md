@@ -25,17 +25,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: a5794d059a17f39531a7788895b604ae0e9590ce
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578535"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633586"
 ---
 # <a name="lib-task"></a>LIB 工作
+
 包裝 Microsoft 32 位元程式庫管理員工具 *lib.exe*。 程式庫管理員會建立並管理通用物件檔案格式 (COFF) 物件檔的程式庫。 程式庫管理員也可以建立匯出檔和匯入程式庫，以參考匯出的定義。 如需詳細資訊，請參閱 [LIB 參考](/cpp/build/reference/lib-reference)和[執行 LIB](/cpp/build/reference/running-lib)。
 
 ## <a name="parameters"></a>參數
+
  下表描述 **LIB** 工作的參數。 大部分的工作參數會對應至命令列選項。
 
 |參數|描述|
@@ -66,4 +68,5 @@ ms.locfileid: "77578535"
 |**詳細資訊**|選擇性的 **Boolean** 參數。<br /><br /> 如果是 `true`，會顯示工作階段進度的詳細資料，其中包括所新增之 *.obj* 檔的名稱。 資訊會傳送至標準輸出，並且可重新導向至檔案。<br /><br /> 如需詳細資訊，請參閱**執行 LIB** 中的 [/VERBOSE](/cpp/build/reference/running-lib) 選項。|
 
 ## <a name="see-also"></a>另請參閱
+
 - [工作參考](../msbuild/msbuild-task-reference.md)

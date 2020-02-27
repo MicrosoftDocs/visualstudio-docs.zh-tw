@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51f7f65dd4e4d1922663ea020e55f551245a7444
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596121"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634405"
 ---
 # <a name="compare-properties-and-items"></a>比較屬性和項目
+
 MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以及儲存可在整個專案檔中參考的值。
 
 - 屬性是名稱/值組。 如需詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
@@ -25,9 +26,11 @@ MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以
 - 項目是通常代表檔案的物件。 項目物件可具有相關聯的中繼資料集合。 中繼資料是名稱/值組。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
 ## <a name="scalars-and-vectors"></a>純量和向量
+
 由於 MSBuild 屬性是只有一個字串值的名稱/值組，因此，通常會以「純量」來描述它們。 因為 MSBuild 項目類型是項目清單，所以，通常會以「向量」來描述它們。 不過，在實務上，屬性可以代表多個值，而項目類型可以有零個或一個項目。
 
 ### <a name="target-dependency-injection"></a>目標相依性插入
+
 若要查看屬性如何代表多個值，請考慮使用常見使用模式來將目標加入至要建置的目標清單。 此清單通常是由屬性值來表示，並以分號分隔目標名稱。
 
 ```xml
@@ -40,7 +43,7 @@ MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以
 </PropertyGroup>
 ```
 
-通常會使用 `BuildDependsOn` 屬性 (Property) 做為目標 `DependsOnTargets` 屬性 (Attribute) 的引數，以便有效地將它轉換至項目清單。 您可以覆寫這個屬性，以加入目標，或是變更目標執行順序。 例如，套用至物件的
+通常會使用 `BuildDependsOn` 屬性 (Property) 做為目標 `DependsOnTargets` 屬性 (Attribute) 的引數，以便有效地將它轉換至項目清單。 您可以覆寫這個屬性，以加入目標，或是變更目標執行順序。 例如：
 
 ```xml
 <PropertyGroup>
@@ -56,6 +59,7 @@ MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以
 從 MSBuild 4.0 開始，已取代目標相依性插入。 改為使用 `AfterTargets` 和 `BeforeTargets` 屬性。 如需詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)。
 
 ### <a name="conversions-between-strings-and-item-lists"></a>字串與項目清單之間的轉換
+
 MSBuild 會視需要在項目類型和字串值之間來回執行轉換。 若要查看項目清單如何變成字串值，請考慮在使用項目類型做為 MSBuild 屬性的值時，會發生什麼事：
 
 ```xml
@@ -70,6 +74,7 @@ MSBuild 會視需要在項目類型和字串值之間來回執行轉換。 若�
 項目類型 OutputDir 具有 `Include` 屬性以及 "KeyFiles\\;Certificates\\"值。 MSBuild 會將此字串剖析成兩個項目︰KeyFiles\ 和 Certificates\\。 將項目類型 OutputDir 用來做為 OutputDirList 屬性的值時，MSBuild 會將此項目類型轉換或「扁平化」為以分號分隔的字串 "KeyFiles\\;Certificates\\"。
 
 ## <a name="properties-and-items-in-tasks"></a>工作中的屬性和項目
+
 屬性和項目可用來做為 MSBuild 工作的輸入和輸出。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
 
 屬性是當成屬性傳遞到工作。 在工作中，MSBuild 屬性是以值可來回轉換為字串的屬性類型來表示。 支援的屬性類型包含 `bool`、`char`、`DateTime`、`Decimal`、`Double`、`int`、`string`，以及 <xref:System.Convert.ChangeType%2A> 可處理的所有類型。
@@ -79,6 +84,7 @@ MSBuild 會視需要在項目類型和字串值之間來回執行轉換。 若�
 項目類型的項目清單可以當成 `ITaskItem` 物件陣列來傳遞。 從 .NET Framework 3.5 開始，就能在目標中使用 `Remove` 屬性，從項目清單中移除項目。 因為可從項目清單中移除項目，所以項目類型可能會有零個項目。 如果將項目清單傳遞到工作，工作中的程式碼應該會檢查這種可能性。
 
 ## <a name="property-and-item-evaluation-order"></a>屬性和項目評估順序
+
 在組建的評估階段，會將匯入的檔案以其出現的順序併入組建。 屬性和項目是以下列順序分三個階段來定義：
 
 - 屬性是以其出現的順序來定義和修改。
@@ -104,6 +110,7 @@ MSBuild 會視需要在項目類型和字串值之間來回執行轉換。 若�
   - 目標內所定義的屬性和項目會以其出現的順序一併進行評估。 屬性函式會執行，並在運算式內展開屬性值。 同時也會展開項目值和項目轉換。 屬性值、項目類型值和中繼資料值均會設為展開的運算式。
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>評估順序的微妙效果
+
 在組建的評估階段，屬性評估是在項目評估之前。 不過，屬性可以具有取決於項目值而出現的值。 請考慮下列指令碼。
 
 ```xml
@@ -178,5 +185,6 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [進階概念](../msbuild/msbuild-advanced-concepts.md)

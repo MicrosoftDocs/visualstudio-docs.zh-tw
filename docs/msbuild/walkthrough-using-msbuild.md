@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3e3f0ec3938136370daf15954d8c13da5905ba4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567290"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631077"
 ---
 # <a name="walkthrough-use-msbuild"></a>逐步解說：使用 MSBuild
 
@@ -38,12 +38,12 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
 1. 開啟 Visual Studio 並建立專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **winforms**，然後選擇 [建立新的 Windows Forms App (.NET Framework)]。 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **winforms**，然後選擇 [建立新的 Windows Forms App (.NET Framework)]。 在出現的對話方塊中，選擇 [建立]。
 
     在 [名稱] 方塊中，輸入 `BuildApp`。 輸入方案的 [位置]，例如 *D:\\* 。 接受預設的 [解決方案]、[解決方案名稱] \(**BuildApp**\) 和 [架構]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] >  [新增] >  [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#] > [Windows Desktop]，然後選擇 [Windows Forms App (.NET Framework)]。 然後選擇 [確定]。
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#] > [Windows Desktop]，然後選擇 [Windows Forms App (.NET Framework)]。 然後選擇 [確定]。
 
     在 [名稱] 方塊中，輸入 `BuildApp`。 輸入方案的 [位置]，例如 *D:\\* 。 接受 [為方案建立目錄] (已選取)、[加入至原始檔控制] (未選取) 及 [方案名稱] (**BuildApp**) 的預設值。
     ::: moniker-end
@@ -138,7 +138,7 @@ Message 工作會取得 Text 屬性的字串值做為輸入，並顯示於輸出
 
    (Windows 10) 在工作列的搜尋方塊中開始鍵入工具名稱，例如 `dev` 或 `developer command prompt`。 這會顯示符合搜尋模式的已安裝應用程式清單。
 
-   如果您需要以手動方式尋找，檔案是 *LaunchDevCmd.bat*，位於 <visualstudio 安裝資料夾\>\<版本>\Common7\Tools 資料夾。
+   如果您需要以手動方式尋找，檔案是 *LaunchDevCmd.bat*，位於 <visualstudio 安裝資料夾 *\>版本>\Common7\Tools\<* 資料夾。
 
 2. 從命令視窗，瀏覽至包含專案檔的資料夾，在此案例中為 *D:\BuildApp\BuildApp*。
 
@@ -175,7 +175,7 @@ Message 工作會取得 Text 屬性的字串值做為輸入，並顯示於輸出
 </PropertyGroup>
 ```
 
- 所有屬性都是 PropertyGroup 項目的子項目。 屬性的名稱是子項目的名稱，而屬性的值是子項目的文字項目。 例如，套用至物件的
+ 所有屬性都是 PropertyGroup 項目的子項目。 屬性的名稱是子項目的名稱，而屬性的值是子項目的文字項目。 例如，
 
 ```xml
 <TargetFrameworkVersion>v15.0</TargetFrameworkVersion>
@@ -183,7 +183,7 @@ Message 工作會取得 Text 屬性的字串值做為輸入，並顯示於輸出
 
  會定義名為 TargetFrameworkVersion 的屬性，並賦予其字串值 "v15.0"。
 
- 您隨時都能重新定義組建屬性。 如果
+ 您隨時都能重新定義組建屬性。 If
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -192,6 +192,7 @@ Message 工作會取得 Text 屬性的字串值做為輸入，並顯示於輸出
  稍後出現在專案檔中，或在稍後會於專案檔中匯入的檔案中，則 TargetFrameworkVersion 會採用新值 "v3.5"。
 
 ## <a name="examine-a-property-value"></a>檢查屬性值
+
  若要取得屬性的值，請使用下列語法，其中 PropertyName 是屬性的名稱：
 
 ```xml
@@ -219,7 +220,7 @@ $(PropertyName)
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 檢查輸出結果， 您應該會看到這兩行 (您的 .NET Framework 版本可能不一樣)：
+4. 檢查輸出。 您應該會看到這兩行 (您的 .NET Framework 版本可能不一樣)：
 
     ::: moniker range=">=vs-2019"
 
@@ -243,7 +244,7 @@ $(PropertyName)
 
 ### <a name="conditional-properties"></a>條件式屬性
 
- 有條件地定義許多屬性 (例如 Configuration)，也就是 Condition 屬性會出現在屬性項目中。 只有當條件評估為 "true" 時，才能定義或重新定義條件式屬性。 請注意，未定義屬性的預設值是空字串。 例如，套用至物件的
+ 有條件地定義許多屬性 (例如 Configuration)，也就是 Condition 屬性會出現在屬性項目中。 只有當條件評估為 "true" 時，才能定義或重新定義條件式屬性。 請注意，未定義屬性的預設值是空字串。 例如，
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -273,7 +274,7 @@ $(PropertyName)
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
-2. 檢查輸出結果， 您應該會看到下列這一行：
+2. 檢查輸出。 您應該會看到下列這一行：
 
     ```
     Configuration is Release.
@@ -303,7 +304,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 檢查輸出結果， 您應該會看到下列這一行：
+4. 檢查輸出。 您應該會看到下列這一行：
 
     ```
     $(Configuration) is "Debug"
@@ -315,7 +316,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
  項目是一種資訊，通常是檔案名稱，可用來做為建置系統的輸入。 例如，可能會將代表原始程式檔的項目集合傳遞至名為 Compile 的工作，以便將它們編譯為組件。
 
- 所有項目 (Item) 都是 ItemGroup 項目 (Element) 的子項目 (Element)。 項目 (Item) 名稱是子項目 (Element) 的名稱，而項目 (Item) 值是子項目 (Element) 的 Include 屬性值。 系統會將名稱相同的項目值收集到該名稱的項目類型。  例如，套用至物件的
+ 所有項目 (Item) 都是 ItemGroup 項目 (Element) 的子項目 (Element)。 項目 (Item) 名稱是子項目 (Element) 的名稱，而項目 (Item) 值是子項目 (Element) 的 Include 屬性值。 系統會將名稱相同的項目值收集到該名稱的項目類型。  例如，
 
 ```xml
 <ItemGroup>
@@ -367,7 +368,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 檢查輸出結果， 您應該會看到下列這一長串的內容：
+4. 檢查輸出。 您應該會看到下列這一長串的內容：
 
     ```
     Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
@@ -399,7 +400,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 檢查輸出結果， 您應該會看到下列這幾行：
+4. 檢查輸出。 您應該會看到下列這幾行：
 
     ```
     Compile item type contains Form1.cs
@@ -411,7 +412,8 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
     ```
 
 ### <a name="include-exclude-and-wildcards"></a>Include、Exclude 和萬用字元
- 您可以使用萬用字元 "*"、"\*\*" 及 "?" 搭配 Include 屬性，來將項目加入至項目類型。 例如，套用至物件的
+
+ 您可以使用萬用字元 "*"、"\*\*" 及 "?" 搭配 Include 屬性，來將項目加入至項目類型。 例如，
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -425,7 +427,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
  將 *images* 資料夾及其所有子資料夾中所有副檔名為 *.jpeg* 的檔案加入至 Photos 項目類型。 如需更多範例，請參閱[如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)。
 
- 請注意，宣告項目時，會將它們加入至項目類型。 例如，套用至物件的
+ 請注意，宣告項目時，會將它們加入至項目類型。 例如，
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -438,7 +440,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 <Photos Include="images\*.jpeg;images\*.gif" />
 ```
 
- 您可以使用 Exclude 屬性，從項目類型中排除項目。 例如，套用至物件的
+ 您可以使用 Exclude 屬性，從項目類型中排除項目。 例如，
 
 ```xml
 <Compile Include="*.cs" Exclude="*Designer*">
@@ -446,7 +448,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
  將副檔名為 *.cs* 的所有檔案加入至 Compile 項目類型，但名稱包含 *Designer* 字串的檔案除外。 如需更多範例，請參閱[如何︰從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。
 
-Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Include 屬性所加入的項目 (Item)。 例如，套用至物件的
+Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Include 屬性所加入的項目 (Item)。 例如，
 
 ```xml
 <Compile Include="*.cs" />
@@ -479,13 +481,14 @@ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Includ
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-5. 檢查輸出結果， 您應該會看到下列這一行：
+5. 檢查輸出。 您應該會看到下列這一行：
 
     ```
     XFiles item type contains Form1.cs;Program.cs;Properties/Resources.resx
     ```
 
 ## <a name="item-metadata"></a>項目中繼資料
+
  除了 Include 和 Exclude 屬性所收集的資訊之外，項目可能還會包含中繼資料。 若工作需要更多關於項目的資訊 (而不只是項目值)，就能使用此中繼資料。
 
  在專案檔中宣告項目 (Item) 中繼資料的方式，就是建立一個具有中繼資料名稱的項目 (Element)，做為項目 (Item) 的子項目 (Element)。 項目可以有零或多個中繼資料值。 例如，下列 CSFile 項目具有值為 "Fr" 的 Culture 中繼資料：
@@ -520,7 +523,7 @@ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Includ
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 檢查輸出結果， 您應該會看到下列這幾行：
+4. 檢查輸出。 您應該會看到下列這幾行：
 
     ```
     Compile.DependentUpon:
@@ -551,7 +554,7 @@ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Includ
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 檢查輸出結果， 您應該會看到下列這幾行：
+4. 檢查輸出。 您應該會看到下列這幾行：
 
     ```
     Compile Filename: Form1
@@ -590,7 +593,7 @@ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Includ
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 檢查輸出結果， 您應該會看到下列這一行：
+4. 檢查輸出。 您應該會看到下列這一行：
 
     ```
     Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak
@@ -598,11 +601,11 @@ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Includ
 
 請注意，此語法中所表示的中繼資料不會導致批次處理。
 
-## <a name="whats-next"></a>後續步驟
+## <a name="whats-next"></a>下一步
 
  若要了解如何逐步建立簡單的專案檔，請嘗試[逐步解說︰從頭開始建立 MSBuild 專案檔](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 概觀](../msbuild/msbuild.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

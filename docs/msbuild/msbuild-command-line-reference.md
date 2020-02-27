@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebea7356e81cb5924919f213327816dbd69e0c7b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: bb95da599e6362ad32c0ef94dcf9c184269ddedf
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278409"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633404"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令列參考
 
@@ -42,7 +42,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |--------------|-----------------|
 |`ProjectFile`|在所指定的專案檔中建置目標。 如果您未指定專案檔，MSBuild 會搜尋目前工作目錄中結尾為 *proj* 的檔案名稱副檔名，並使用該檔案。 您也可以為這個引數指定 Visual Studio 方案檔。|
 
-## <a name="switches"></a>交換器
+## <a name="switches"></a>交換機
 
 |Switch|簡短形式|描述|
 |------------|----------------|-----------------|
@@ -63,7 +63,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-restore|-r|在建置實際目標前執行 `Restore` 目標。|
 |-restoreProperty：`name=value`|-rp：`name=value`|只有在還原期間才設定或覆寫這些專案層級屬性，而不使用以-property 引數指定的屬性。 `name` 是屬性名稱，`value` 則是屬性值。 請使用分號或逗號來分隔多個屬性，或分別指定每個屬性。|
 |-target:`targets`|-t:`targets`|在專案中建置指定的目標。 分別指定每個目標，或使用分號或逗號分隔多個目標，如下列範例所示：<br /><br /> `-target:PrepareResources;Compile`<br /><br /> 如果您使用這個參數指定任何目標，便會執行這些目標，而不是專案檔中 `DefaultTargets` 屬性的任何目標。 如需詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)和[如何：指定要優先建置的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。<br /><br /> 目標是一組工作。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。|
-|-toolsVersion：`version`|-tv:`version`|指定用來建置專案的工具組版本，如下列範例所示：`-toolsversion:3.5`<br /><br /> 使用此參數，即可建置專案，並指定有別於 [Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md) 中所指定的版本。 如需詳細資訊，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。<br /><br /> 若是 MSBuild 4.5，您可以為 `version` 指定下列值：2.0、3.5 和 4.0。 如果您指定 4.0，則 `VisualStudioVersion` 組建屬性會指定要使用哪個子工具組。 如需詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 的＜子工具組＞一節。<br /><br /> 工具組包含用於建置應用程式的工作、目標和工具。 工具包括編譯器，例如 *csc.exe* 和 vbc.exe。 如需工具組的詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)、[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)及[多目標](../msbuild/msbuild-multitargeting-overview.md)。 **注意：** 工具組版本與目標 Framework 的版本不同，目標 Framework 版本是建置專案以在其上方執行的目標 .NET Framework 版本。 如需詳細資訊，請參閱[目標 Framework 和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。|
+|-toolsVersion：`version`|-tv:`version`|指定用來建置專案的工具組版本，如下列範例所示：`-toolsversion:3.5`<br /><br /> 使用此參數，即可建置專案，並指定有別於 [Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md) 中所指定的版本。 如需詳細資訊，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。<br /><br /> 若是 MSBuild 4.5，您可以為 `version` 指定下列值：2.0、3.5 和 4.0。 如果您指定 4.0，則 `VisualStudioVersion` 組建屬性會指定要使用哪個子工具組。 如需詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 的＜子工具組＞一節。<br /><br /> 工具組包含用於建置應用程式的工作、目標和工具。 工具包括編譯器，例如 *csc.exe* 和 *vbc.exe*。 如需工具組的詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)、[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)及[多目標](../msbuild/msbuild-multitargeting-overview.md)。 **注意：** 工具組版本與目標 Framework 的版本不同，目標 Framework 版本是建置專案以在其上方執行的目標 .NET Framework 版本。 如需詳細資訊，請參閱[目標架構和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。|
 |-validate:[`schema`]|-val[`schema`]|驗證專案檔，如果驗證成功，則會建置專案。<br /><br /> 如果您沒有指定 `schema`，專案會針對預設結構描述進行驗證。<br /><br /> 如果您指定 `schema`，專案會針對您指定的結構描述進行驗證。<br /><br /> 下列設定為範例：`-validate:MyExtendedBuildSchema.xsd`|
 |-verbosity:`level`|-v:`level`|指定要在組建記錄檔中顯示的資訊量。 每個記錄器都會顯示根據您為該記錄器所設詳細資訊層級的事件。<br /><br /> 您可以指定下列詳細資訊層級： `q[uiet]`、`m[inimal]`、`n[ormal]` （預設）、`d[etailed]`和 `diag[nostic]`。<br /><br /> 下列設定為範例：`-verbosity:quiet`
 |-version|-ver|只顯示版本資訊。 不會建置專案。|
@@ -85,6 +85,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-noConsoleLogger|-noconlog|停用預設主控台記錄器，而且不將事件記錄至主控台。|
 
 ## <a name="example"></a>範例
+
  下列範例會建置 `rebuild` 專案的 *MyProject.proj* 目標。
 
 ```cmd
@@ -92,6 +93,7 @@ MSBuild.exe MyProject.proj -t:rebuild
 ```
 
 ## <a name="example"></a>範例
+
  您可以使用 *MSBuild.exe* 來執行更複雜的組建。 例如，您可以用來在方案中建置特定專案的特定目標。 下列範例會重建 `NotInSolutionFolder` 專案並清除 `InSolutionFolder` 專案，這會位於 *NewFolder* 方案資料夾中。
 
 ```cmd
@@ -99,5 +101,6 @@ msbuild SlnFolders.sln -t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
 - [一般 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)

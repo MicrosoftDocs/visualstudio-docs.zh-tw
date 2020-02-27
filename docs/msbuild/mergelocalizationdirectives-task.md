@@ -18,28 +18,31 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c689122ac0ddfd9441122fdead64ecd8049e72
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 9c7699afeb09604a437aad091f9aaf9ce624d33e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579633"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633495"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 工作
-<xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> 工作會將一或多個 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二進位格式檔案的當地語系化屬性和註解合併到適用於整個組件的單一檔案。
+
+<xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> 工作會將一或多個 XAML 二進位格式檔案的當地語系化屬性和批註，合併成整個元件的單一檔案。
 
 ## <a name="task-parameters"></a>工作參數
 
 | 參數 | 描述 |
 |------------------------------| - |
-| `GeneratedLocalizationFiles` | 必要的 **ITaskItem[]** 參數。<br /><br /> 針對個別的 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二進位格式檔案指定當地語系化指示詞檔案清單。 |
+| `GeneratedLocalizationFiles` | 必要的 **ITaskItem[]** 參數。<br /><br /> 以 XAML 二進位格式指定個別檔案的當地語系化指示詞檔案清單。 |
 | `OutputFile` | 必要的 **String** 輸出參數。<br /><br /> 指定編譯的當地語系化指示詞組件的輸出路徑。 |
 
 ## <a name="remarks"></a>備註
-您可以將當地語系化屬性和註解加入至 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 內容中。 透過 [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)] 當地語系化支援，您可以取出當地語系化屬性和註解，然後將它們放入有別於產生組件的 *.loc* 檔案中。 您可以使用 **LocalizationPropertyStorage** 屬性來執行此動作。 如需當地語系化屬性和註解，以及 **LocalizationPropertyStorage** 的詳細資訊，請參閱[當地語系化屬性和註解](/dotnet/framework/wpf/advanced/localization-attributes-and-comments)。
+
+您可以將當地語系化屬性和批註加入至 XAML 內容。 有了 Windows Presentation Foundation （WPF）當地語系化支援，您可以去除當地語系化屬性和批註，並將其放在與所產生元件不同的*loc*檔案中。 您可以使用 **LocalizationPropertyStorage** 屬性來執行此動作。 如需當地語系化屬性和註解，以及 **LocalizationPropertyStorage** 的詳細資訊，請參閱[當地語系化屬性和註解](/dotnet/framework/wpf/advanced/localization-attributes-and-comments)。
 
 ## <a name="example"></a>範例
-下列範例會將數個 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二進位格式檔案的當地語系化註解合併到單一 *.loc* 檔案。
+
+下列範例會將數個 XAML 二進位格式檔案的當地語系化批註合併成單一的*loc*檔案。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -55,6 +58,7 @@ ms.locfileid: "77579633"
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
 - [WPF MSBuild 工作參考](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
