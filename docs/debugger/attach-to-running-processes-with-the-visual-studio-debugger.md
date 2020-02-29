@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a41667592b6965497f9b87514719f7d8a5a442
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: 8f605f9a7e07d485b4b1cb3835d53e4c4823fe7c
+ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776015"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181123"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具附加至執行中處理序
 您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 在進程執行之後，請選取 [ **Debug** ] > [**附加至進程**]，或在 Visual Studio 中按**Ctrl**+**Alt**+**P** ，然後使用 [**附加至進程**] 對話方塊，將偵錯工具附加至進程。
@@ -153,6 +153,10 @@ ms.locfileid: "75776015"
 
 ::: moniker range=">= vs-2019"
 
+## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>使用 SSH 附加至在 Linux 上執行的 .NET Core 進程
+
+如需詳細資訊，請參閱[使用 SSH 在 Linux 上執行的遠端偵錯程式 .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)。
+
 ## <a name="BKMK_Docker_Attach"></a>附加至在 Linux Docker 容器上執行的進程
 
 您可以使用 [**附加至進程**] 對話方塊，將 Visual Studio 偵錯工具附加至本機或遠端電腦上的 Linux .Net Core Docker 容器中執行的進程。
@@ -218,13 +222,14 @@ ms.locfileid: "75776015"
 
 若要快速選取要附加的執行中進程，請在 Visual Studio 中，輸入**Ctrl**+**Alt**+**P**，然後輸入處理常式名稱的第一個字母。
 
-|情節|Debug 方法|處理序名稱|附注和連結|
+|狀況|Debug 方法|程序名稱|附注和連結|
 |-|-|-|-|
 |IIS 伺服器上的 Remote debug ASP.NET 4 或4。5|使用遠端工具並**附加至進程**|*w3wp.exe*|請參閱遠端[IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|IIS 伺服器上的遠端偵錯程式 ASP.NET Core|使用遠端工具並**附加至進程**|*dotnet.exe*|如需應用程式部署，請參閱[發行至 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 如需偵錯工具，請參閱遠端[IIS 電腦上的遠端偵錯程式 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
+|IIS 伺服器上的遠端偵錯程式 ASP.NET Core|使用遠端工具並**附加至進程**|*dotnet .exe*或*appname .exe*|如需應用程式部署，請參閱[發行至 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 如需偵錯工具，請參閱遠端[IIS 電腦上的遠端偵錯程式 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |在本機 IIS 伺服器上，針對支援的應用程式類型進行用戶端腳本的偵錯工具 |使用 [**附加至進程**]|*chrome .exe*、 *MicrosoftEdgeCP*或*iexplore.exe .exe*|必須啟用腳本的調試。 對於 Chrome，您也必須在 [偵錯工具] 模式中執行 Chrome，然後在 [**附加至**] 欄位中選取 [ **Webkit 程式碼**]。|
-|在本機C#電腦上的 Debug C++ a、Visual Basic 或 app|使用標準的偵錯工具（**F5**）或 [**附加至進程**]|\<應用程式名稱> *.exe*|在大部分的情況下，請使用標準的偵錯工具，而不是**附加至進程**。|
+|在本機C#電腦上的 Debug C++ a、Visual Basic 或 app|使用標準的偵錯工具（**F5**）或 [**附加至進程**]|*應用程式名稱>\<.exe*|在大部分的情況下，請使用標準的偵錯工具，而不是**附加至進程**。|
 |對 Windows 傳統型應用程式進行遠端 debug|遠端工具|N/A| 請參閱[遠端 debug C# a 或 Visual Basic 應用程式](../debugger/remote-debugging-csharp.md)或[遠端C++偵錯工具](../debugger/remote-debugging-cpp.md)|
+|在 Linux 上對 .NET Core 進行調試|使用 [**附加至進程**]|*dotnet.exe*|若要使用 SSH，請參閱[使用 ssh 在 Linux 上執行的遠端偵錯 .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)。 若要使用 Linux Docker 容器，請參閱[附加至在 Linux docker 容器上](#BKMK_Docker_Attach)執行的進程。|
 |在不使用偵錯工具的情況下啟動應用程式之後，在本機電腦上進行 ASP.NET 應用程式的偵錯工具|使用 [**附加至進程**]|*iiexpress.exe*|這可能有助於讓應用程式的載入速度更快，例如在分析時（例如）。 |
 |在伺服器進程上，對其他支援的應用程式類型進行偵錯工具|如果伺服器在遠端，請使用遠端工具，然後**附加至進程**|*chrome .exe*、 *iexplore.exe*或其他進程|如有必要，請使用資源監視器來協助識別進程。 請參閱[遠端偵錯](../debugger/remote-debugging.md)。|
 |遠端 debug a 通用 Windows App （UWP）、OneCore、HoloLens 或 IoT 應用程式|針對已安裝的應用程式套件進行偵錯|N/A|請參閱[Debug 已安裝的應用程式套件](debug-installed-app-package.md)，而不是使用 [**附加至進程**]|
@@ -267,7 +272,7 @@ ms.locfileid: "75776015"
 
     這時，該附加將完全失敗，您將取得特定的錯誤訊息。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [對多重處理序進行偵錯](../debugger/debug-multiple-processes.md)
 - [Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)
