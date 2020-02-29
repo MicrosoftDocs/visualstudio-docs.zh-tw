@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - virtual user activity chart, viewing
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dda1f35a63d3f7788faf9a94f16888c8323529c4
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: c997f27e65a8e3992239fac78d52b0b4f19670c3
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091713"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169400"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>如何：使用虛擬使用者活動圖表分析虛擬使用者在負載測試期間的行為
 
@@ -43,11 +43,11 @@ ms.locfileid: "77091713"
 
 2. 將指標移到圖形中的詳細資料上。 請注意，下列資訊會顯示在工具提示中。
 
-   - **使用者 ID**
+   - **使用者識別碼**
 
    - **案例**
 
-   - **Test**
+   - **測試**
 
    - **URL** (不會在測試或異動中顯示)
 
@@ -57,9 +57,9 @@ ms.locfileid: "77091713"
 
    - **Network**
 
-   - **Start Time**
+   - **開始時間**
 
-   - **有效期間**
+   - **持續期間**
 
    - **代理程式**
 

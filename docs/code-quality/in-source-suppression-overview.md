@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587442"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167620"
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 
@@ -78,7 +78,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **範圍**-隱藏警告的目標。 如果未指定目標，則會將它設定為屬性的目標。 支援的[範圍](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope)包括下列各項：
 
-  - `module`-此範圍會隱藏對元件的警告。 它是套用至整個專案的全域隱藏專案。
+  - [`module`](#module-suppression-scope) -此範圍會隱藏對元件的警告。 它是套用至整個專案的全域隱藏專案。
 
   - `resource`-（僅限[舊版 FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md) ）此範圍會抑制診斷資訊中寫入模組（元件）一部分之資源檔的警告。 Roslyn 分析器診斷的C#/VB 編譯器不會讀取/遵守此範圍，只會分析原始程式檔。
 
@@ -96,11 +96,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 程式碼分析警告會在套用 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性的層級上隱藏。 例如，您可以在元件、模組、型別、成員或參數層級套用屬性。 這樣做的目的是要將隱藏專案資訊緊密地放在違規發生的程式碼中。
 
-隱藏式的一般形式包括規則分類和規則識別碼，其中包含規則名稱的選擇性人可讀取標記法。 例如：
+隱藏式的一般形式包括規則分類和規則識別碼，其中包含規則名稱的選擇性人可讀取標記法。 例如，
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-如果將原始碼隱藏式中繼資料降到最低，有很嚴格的效能考慮，則可以省略規則名稱。 規則類別和其規則識別碼會形成一個足夠的唯一規則識別碼。 例如：
+如果將原始碼隱藏式中繼資料降到最低，有很嚴格的效能考慮，則可以省略規則名稱。 規則類別和其規則識別碼會形成一個足夠的唯一規則識別碼。 例如，
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -174,11 +174,19 @@ Managed 程式碼分析工具會檢查元件、模組、類型、成員或參數
 > [!NOTE]
 > `Target` 一律包含完整的專案名稱。
 
-## <a name="global-suppression-file"></a>全域隱藏專案檔案
+### <a name="global-suppression-file"></a>全域隱藏專案檔案
 
 全域隱藏專案檔案會維護不會指定目標的全域層級隱藏專案或隱藏專案。 例如，元件層級違規的隱藏式會儲存在這個檔案中。 此外，某些 ASP.NET 隱藏專案會儲存在此檔案中，因為在表單後方的程式碼中，不提供專案層級設定。 當您第一次在 [**錯誤清單**] 視窗中，選取 [**隱藏**] 命令的 [**在專案隱藏檔中**] 選項時，就會建立全域隱藏專案檔案，並將其新增至您的專案。
 
-## <a name="see-also"></a>請參閱
+### <a name="module-suppression-scope"></a>模組隱藏範圍
+
+您可以使用**模組**範圍，隱藏整個元件的程式碼品質違規。
+
+例如， _GlobalSuppressions_專案檔中的下列屬性會隱藏 ASP.NET Core 專案的 ConfigureAwait 違規：
+
+`[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="see-also"></a>另請參閱
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

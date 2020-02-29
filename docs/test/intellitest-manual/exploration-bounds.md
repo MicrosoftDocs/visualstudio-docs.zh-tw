@@ -8,13 +8,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 03f23aacbe95615b565dfcee54d2b620c0ae1cd9
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+author: mikejo5000
+ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091830"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169413"
 ---
 # <a name="exploration-bounds"></a>探索界限
 
@@ -166,7 +166,7 @@ IntelliTest 在探索期間將考慮使用的唯一路徑數目上限。
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
 
-指出 IntelliTest 應該發出的測試類型。 可能的值包括：
+指出 IntelliTest 應該發出的測試類型。 可能值為：
 
 * **All** - 發出所有項目的測試，包括假設違規。
 * **FailuresAndIncreasedBranchHits** (預設) - 針對所有的唯一失敗，以及每次測試案例增加 [TestEmissionBranchHits](#testemissionbranchhits) 所控制的涵蓋範圍時，發出測試。
@@ -184,6 +184,6 @@ IntelliTest 在探索期間將考慮使用的唯一路徑數目上限。
 
 這個選項的預設值是 **TestEmissionBranchHits = 2**，它會產生更豐富多變的測試套件，同時也更適合用來偵測未來的迴歸錯誤。
 
-## <a name="got-feedback"></a>有人給您意見嗎？
+## <a name="got-feedback"></a>有任何意見反應嗎？
 
 在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。

@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b472ca78d36247a76bf397989f48e04230ccd7d
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027620"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904161"
 ---
 # <a name="understand-build-configurations"></a>了解組建組態
 
@@ -44,7 +44,7 @@ ms.locfileid: "77027620"
 
 設定和平臺控制項，其中會儲存建立的輸出檔案。 一般來說，當 Visual Studio 建立您的專案時，輸出會放在名為的專案子資料夾中，並使用作用中的設定（例如*bin/Debug/x86*），但您可以變更它。
 
-您可以在方案和專案層級建立自己的組建設定。 解決方案設定會決定當組建在使用中時，哪些專案會包含在組建中。 只會建立在使用中方案設定中指定的專案。 專案設定會決定當您建立專案時所使用的組建設定和編譯器選項。
+您可以在方案和專案層級建立自己的組建設定。 解決方案設定會決定當組建在使用中時，哪些專案會包含在組建中。 只會建立在使用中方案設定中指定的專案。 如果 Configuration Manager 中選取了多個目標平臺，則會建立適用于該平臺的所有專案。 專案設定會決定當您建立專案時所使用的組建設定和編譯器選項。
 
 若要建立、選取、修改或刪除組態，您可以使用 [組態管理員]。 若要開啟組態，請在功能表列上，選擇 [建置] > [組態管理員]，或直接在搜尋方塊中鍵入**組態**。 您也可以使用 [標準] 工具列上的 [方案組態] 清單，來選取組態或開啟 [組態管理員]。
 
@@ -70,6 +70,12 @@ ms.locfileid: "77027620"
 專案目標的設定和平臺會一起使用，以指定組建設定和編譯器選項，以在建立時使用。 針對每個設定和平臺組合，專案可以有不同的設定。 若要修改專案的屬性，請在 [**方案總管**] 中開啟專案的快捷方式功能表，然後選擇 [**屬性**]。  在 [專案設計工具] 的 [**組建**] 索引標籤頂端，選擇作用中的設定來編輯其組建設定。
 
 ![專案設計工具設定](media/understanding-build-configurations/project-designer-configuration.png)
+
+## <a name="building-multiple-configurations"></a>建立多個設定
+
+當您使用**組建** > **組建解決方案**命令建立解決方案時，Visual Studio 只會建立現用設定。 系統會建立該方案設定中指定的所有專案，而唯一建立的專案設定是在 [使用中的方案設定] 和 [使用中的方案平臺] 中指定，這會顯示在 Visual Studio 的工具列中。 例如， **Debug**和**x86**。 未建立其他定義的設定和平臺。
+
+如果您想要在單一動作中建立多個設定和平臺，您可以使用 Visual Studio 中的 [**組建** > **批次組建**] 選項。 若要存取這項功能，請按**Ctrl**+**Q**開啟 [搜尋] 方塊，然後輸入 `Batch build`。 批次組建無法用於所有專案類型。 請參閱[如何：同時建立多個](how-to-build-multiple-configurations-simultaneously.md)設定。
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Visual Studio 如何指派專案組態
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - mobility warnings
 - warnings, mobility
 ms.assetid: 9808054c-593b-4fc3-92cc-1fc45f41569c
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a58bd6232d25d3151b019fc774befc99d9e46e6b
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 6061b614442d7bcb2f3465b1c40f35d583626c45
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091739"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167581"
 ---
 # <a name="mobility-warnings"></a>Mobility Warnings
 行動性警告支援有效率的電源使用方式。

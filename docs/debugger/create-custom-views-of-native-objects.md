@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 9c26c35c09353d740f6db9745222bb66db40e7ba
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091778"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167750"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>使用 Natvis 架構， C++在偵錯工具中建立物件的自訂視圖
 
@@ -94,6 +94,30 @@ Visual Studio 偵錯工具會自動載入專案中C++的 natvis 檔案，而且�
 >[!NOTE]
 >從 *.pdb*載入的 Natvis 規則僅適用于 *.pdb*所參考模組中的類型。 例如，如果*module1*具有名為 `Test`之類型的 Natvis 專案，它只會套用至*Module1*中的 `Test` 類別。 如果另一個模組也定義了名為 *`Test`的類別，則 Natvis 專案*不適用。
 
+**若要透過 VSIX 封裝安裝並註冊*natvis*檔案：**
+
+VSIX 封裝可以安裝和註冊*natvis*檔案。 無論其安裝位置為何，所有已註冊的*natvis*檔案都會在進行調試期間自動挑選。
+
+1. 將*natvis*檔案包含在 VSIX 封裝中。 例如，針對下列專案檔：
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+     <ItemGroup>
+       <VSIXSourceItem Include="Visualizer.natvis" />
+     </ItemGroup>
+   </Project>
+   ```
+
+2. 在*extension.vsixmanifest*檔案中註冊*natvis*檔案：
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+     <Assets>
+       <Asset Type="NativeVisualizer" Path="Visualizer.natvis"  />
+     </Assets>
+   </PackageManifest>
+   ```
+
 ### <a name="BKMK_natvis_location"></a>Natvis 檔案位置
 
 如果您想要將*natvis*檔案套用至多個專案，您可以將檔案新增至使用者目錄或系統目錄。
@@ -104,19 +128,21 @@ Visual Studio 偵錯工具會自動載入專案中C++的 natvis 檔案，而且�
 
 2. 載入 C++的專案或最上層方案中的任何 natvis 檔案。 這個群組包括所有已C++載入的專案，包括類別庫，但不包含其他語言的專案。
 
+3. 透過 VSIX 封裝安裝和註冊的任何*natvis*檔案。
+
 ::: moniker range="vs-2017"
 
-3. 使用者特定的 Natvis 目錄（例如， *%USERPROFILE%\Documents\Visual Studio 2017 \ 視覺化檢視*）。
+4. 使用者特定的 Natvis 目錄（例如， *%USERPROFILE%\Documents\Visual Studio 2017 \ 視覺化檢視*）。
 
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 
-3. 使用者特定的 Natvis 目錄（例如， *%USERPROFILE%\Documents\Visual Studio 2019 \ 視覺化檢視*）。
+4. 使用者特定的 Natvis 目錄（例如， *%USERPROFILE%\Documents\Visual Studio 2019 \ 視覺化檢視*）。
 
 ::: moniker-end
 
-4. 全系統 Natvis 目錄 ( *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 此目錄包含隨 Visual Studio 安裝的*natvis*檔案。 如果您有系統管理員許可權，您可以將檔案新增至此目錄。
+5. 全系統 Natvis 目錄 ( *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 此目錄包含隨 Visual Studio 安裝的*natvis*檔案。 如果您有系統管理員許可權，您可以將檔案新增至此目錄。
 
 ## <a name="modify-natvis-files-while-debugging"></a>在進行調試時修改 natvis 檔
 
@@ -236,7 +262,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 #### <a name="priority-attribute"></a>Priority 屬性
 
-如果無法剖析定義，選擇性的 `Priority` 屬性會指定要使用替代定義的順序。 `Priority` 的可能值為： `Low`、`MediumLow`、`Medium`、`MediumHigh`和 `High`。 預設值是 `Medium`。 `Priority` 屬性只會區分同一個*natvis*檔案中的優先順序。
+如果無法剖析定義，選擇性的 `Priority` 屬性會指定要使用替代定義的順序。 `Priority` 的可能值為： `Low`、`MediumLow`、`Medium`、`MediumHigh`和 `High`。 預設值為 `Medium`。 `Priority` 屬性只會區分同一個*natvis*檔案中的優先順序。
 
 下列範例會先剖析符合 2015 STL 的專案。 如果無法剖析，它會針對2013版的 STL 使用替代專案：
 
@@ -682,7 +708,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
- 您可以在 [[影像監看式]](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017)延伸模組中查看用來查看記憶體中點陣圖 `UIVisualizer` 的範例。
+ 您可以在 [[影像監看式]](https://marketplace.visualstudio.com/search?term=%22Image%20Watch%22&target=VS&category=All%20categories&vsVersion=&sortBy=Relevance)延伸模組中查看用來查看記憶體中點陣圖 `UIVisualizer` 的範例。
 
 ### <a name="BKMK_CustomVisualizer"></a>CustomVisualizer 元素
  `CustomVisualizer` 是擴充點，會指定您撰寫的 VSIX 擴充功能，以在 Visual Studio 程式碼中控制視覺效果。 如需撰寫 VSIX 擴充功能的詳細資訊，請參閱[VISUAL STUDIO SDK](../extensibility/visual-studio-sdk.md)。

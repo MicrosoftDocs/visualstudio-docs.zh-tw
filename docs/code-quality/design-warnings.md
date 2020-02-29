@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 301b829341eeb859030afabbf2225ea833e99a22
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ec257d67530692fc885d971e21136c10e7a271f6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587676"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167790"
 ---
 # <a name="design-warnings"></a>設計警告
 
-設計警告支援遵循[.Net 設計方針](/dotnet/standard/design-guidelines/)。
+設計警告支援遵循[.NET Framework 設計方針](/dotnet/standard/design-guidelines/)。
 
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
 
 | 規則 | 描述 |
 | - | - |

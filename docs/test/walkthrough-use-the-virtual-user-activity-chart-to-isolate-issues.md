@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, virtual user activity chart
 - virtual user activity chart, isolating performance issues
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a437da5d95b758b908f1f1d4f7b76c50b6488a3c
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091843"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169374"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>逐步解說：使用虛擬使用者活動圖來找出問題
 
@@ -79,19 +79,19 @@ ms.locfileid: "77091843"
 
 7. 工具提示隨即出現，其中包含下列資訊：
 
-    - **使用者識別碼**
+    - **使用者 ID**
 
     - **案例**
 
-    - **Test**
+    - **測試**
 
     - **結果**
 
     - **Network**
 
-    - **Start Time**
+    - **開始時間**
 
-    - **有效期間**
+    - **持續期間**
 
     - **代理程式**
 

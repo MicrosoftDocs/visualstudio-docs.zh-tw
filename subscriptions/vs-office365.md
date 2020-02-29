@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: 瞭解部分 Visual Studio 訂用帳戶中所含的 Office 365 Pro Plus 權益。
-ms.openlocfilehash: 4ff521651e25fd1ad73bd629a111c7f8378fbfe3
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 4f8ad514cae626e824171937cd627b110980dbca
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036736"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904148"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365 Pro Plus
 
@@ -43,16 +43,16 @@ ms.locfileid: "77036736"
 0. 按一下 [下載] 按鈕。
    > [!div class="mx-imgBorder"]
    > ![Office 365 Pro Plus 開始下載](_img/vs-office365/vs-office365-download-button.png)
-0. 使用您的 Microsoft 帳戶登入。 (若您已登入，請按一下 [下一步])。
+0. 使用 Microsoft 帳戶登入。 (若您已登入，請按一下 [下一步])。
 0. 輸入您的產品金鑰、國家/地區或區域，以及語言，然後按一下 [下一步]。
    > [!div class="mx-imgBorder"]
    > ![Office 365 Pro Plus 輸入產品金鑰](_img/vs-office365/vs-office365-enter-key.png)
-0. 再按一下 [下一步] 。
+0. 再按一下 [下一步]。
 0. 按一下 [安裝] 以安裝 Office 應用程式。
 
 ## <a name="eligibility"></a>資格
 
-| 訂用帳戶層級                                                 |     聲道                                            | 優點                                                          | 可續約？    |
+| 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售| 可用       |  是          |
 | 含 GitHub Enterprise 的 Visual Studio Enterprise  | VL | 可用       |  是          |
@@ -76,14 +76,15 @@ ms.locfileid: "77036736"
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>後續步驟
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest 個人點數](vs-azure.md)如果您打算開發 Office 的應用程式，您會想要啟用[Office 開發人員訂](vs-office-dev.md)用帳戶
 
-## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
-- [Azure 文件](/azure/)
-- [Microsoft 365 檔](/microsoft-365/)
