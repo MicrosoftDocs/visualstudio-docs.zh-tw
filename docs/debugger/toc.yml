@@ -280,12 +280,14 @@
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: 在 IIS 電腦上對 ASP.NET 進行遠端偵錯
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
-        - name: 在 Azure 上對 ASP.NET 進行遠端偵錯
+        - name: 在 Azure 上對 ASP.NET Core 進行遠端偵錯
           href: remote-debugging-azure.md
         - name: '對 C# 或 Visual Basic 專案進行遠端偵錯'
           href: remote-debugging-csharp.md
         - name: 對 C++ 專案進行遠端偵錯
           href: remote-debugging-cpp.md
+        - name: 在 Linux 上對 .NET Core 進行遠端偵錯
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: 遠端偵錯工具連接埠指派
           href: remote-debugger-port-assignments.md
         - name: 設定 Windows 防火牆以進行遠端偵錯

@@ -1,8 +1,8 @@
 - name: MSBuild
   items:
-    - name: MsBuild
+    - name: MSBuild
       href: msbuild.md
-    - name: MSBuild 16.0 中的新功能
+    - name: MSBuild 16.0 的新功能
       href: whats-new-msbuild-16-0.md
     - name: MSBuild 15.0 的新功能
       href: what-s-new-in-msbuild-15-0.md
@@ -19,7 +19,7 @@
               href: how-to-use-environment-variables-in-a-build.md
             - name: 參考專案檔的名稱或位置
               href: how-to-reference-the-name-or-location-of-the-project-file.md
-            - name: 使用不同選項來建置相同的原始程式檔
+            - name: 使用不同選項來建置相同的來源檔案
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: 屬性函式
               href: property-functions.md
@@ -41,9 +41,9 @@
           items:
             - name: MSBuild 目標
               href: msbuild-targets.md
-            - name: 目標建置順序
+            - name: 目標組建順序
               href: target-build-order.md
-            - name: 累加建置
+            - name: 累加組建
               href: incremental-builds.md
             - name: 指定要優先建置的目標
               href: how-to-specify-which-target-to-build-first.md
@@ -107,9 +107,9 @@
               href: how-to-extend-the-visual-studio-build-process.md
             - name: 從 IDE 中啟動組建
               href: starting-a-build-from-within-the-ide.md
-            - name: 註冊 .NET Framework 的擴充功能
+            - name: 註冊 .NET Framework 的延伸模組
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: 以平行方式建置多個專案
+        - name: 同時建置多個專案
           items:
             - name: 使用 MSBuild 同時建置多個專案
               href: building-multiple-projects-in-parallel-with-msbuild.md
@@ -133,7 +133,7 @@
               href: msbuild-target-framework-and-target-platform.md
             - name: 在設計階段時解析組件
               href: resolving-assemblies-at-design-time.md
-            - name: 目標和工作設定
+            - name: 目標和工作組態
               items:
                 - name: 總覽
                   href: configuring-targets-and-tasks.md
@@ -185,7 +185,7 @@
           href: creating-forwarding-loggers.md
     - name: 逐步解說：使用 MSBuild
       href: walkthrough-using-msbuild.md
-    - name: 逐步解說：從頭建立 MSBuild 專案檔案
+    - name: 逐步解說：從頭開始建立 MSBuild 專案檔
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: MSBuild 參考
       items:
@@ -199,9 +199,9 @@
               href: msbuild-project-file-schema-reference.md
             - name: Choose 項目
               href: choose-element-msbuild.md
-            - name: Import 項目
+            - name: Import 元素
               href: import-element-msbuild.md
-            - name: ImportGroup 元素
+            - name: ImportGroup 項目
               href: importgroup-element.md
             - name: Item 項目
               href: item-element-msbuild.md
@@ -219,13 +219,13 @@
               href: output-element-msbuild.md
             - name: Parameter 元素
               href: parameter-element.md
-            - name: ParameterGroup 項目
+            - name: ParameterGroup 元素
               href: parametergroup-element.md
             - name: Project 項目
               href: project-element-msbuild.md
             - name: ProjectExtensions 項目
               href: projectextensions-element-msbuild.md
-            - name: Property 元素
+            - name: Property 項目
               href: property-element-msbuild.md
             - name: PropertyGroup 項目
               href: propertygroup-element-msbuild.md
@@ -244,7 +244,7 @@
         - name: 工作參考
           items:
             - name: 總覽
-              displayName: Task Reference
+              displayName: task reference
               href: msbuild-task-reference.md
             - name: C++ 的特定工作
               items:
@@ -293,7 +293,7 @@
                   href: xdcmake-task.md
                 - name: XSD 工作
                   href: xsd-task.md
-            - name: 工作基底類別
+            - name: Task 基底類別
               href: task-base-class.md
             - name: TaskExtension 基底類別
               href: taskextension-base-class.md
@@ -371,7 +371,7 @@
               href: lc-task.md
             - name: MakeDir 工作
               href: makedir-task.md
-            - name: 訊息工作
+            - name: Message 工作
               href: message-task.md
             - name: Move 工作
               href: move-task.md
@@ -415,7 +415,7 @@
               href: vbc-task.md
             - name: VerifyFileHash 工作
               href: verifyfilehash-task.md
-            - name: 警告工作
+            - name: Warning 工作
               href: warning-task.md
             - name: WriteCodeFragment 工作
               href: writecodefragment-task.md
@@ -441,7 +441,7 @@
           href: common-msbuild-project-items.md
         - name: MSBuild 命令列參考
           href: msbuild-command-line-reference.md
-        - name: MSBuild .Targets 檔案
+        - name: MSBuild .targets 檔案
           href: msbuild-dot-targets-files.md
         - name: MSBuild 已知的項目中繼資料
           href: msbuild-well-known-item-metadata.md
@@ -450,14 +450,14 @@
         - name: WPF 參考
           items:
             - name: 總覽
-              displayName: WPF MSBuild Reference
+              displayName: WPF MSBuild reference
               href: wpf-msbuild-reference.md
-            - name: WPF .Targets 檔案
+            - name: WPF .targets 檔案
               href: wpf-dot-targets-files.md
             - name: WPF 工作參考
               items:
                 - name: 總覽
-                  displayName: WPF MSBuild Task Reference
+                  displayName: WPF MSBuild task reference
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier 工作
                   href: fileclassifier-task.md
@@ -482,7 +482,7 @@
     - name: 以程式設計方式使用 MSBuild
       items:
         - name: 總覽
-          displayName: Use MSBuild Programmatically
+          displayName: Use MSBuild programmatically
           href: msbuild-api.md
         - name: 更新至 MSBuild 15
           href: updating-an-existing-application.md
