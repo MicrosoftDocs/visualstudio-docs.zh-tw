@@ -590,8 +590,6 @@
                   items:
                     - name: COM 伺服器和容器偵錯
                       href: com-server-and-container-debugging.md
-                    - name: 使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
-                      href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
                 - name: ActiveX 控制項
                   items:
                     - name: 對 ActiveX 控制項進行偵錯
