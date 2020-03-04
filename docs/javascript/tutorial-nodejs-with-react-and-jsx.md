@@ -12,18 +12,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: faf418155708ebc577efea57ed3352953a8d577d
-ms.sourcegitcommit: 5920a8b0c68350f11eabc1652a19b04d0196881a
+ms.openlocfilehash: f60cd71f1dda4e401acef1db9ccd8c5a0be2b961
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622562"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235089"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 React 應用程式
 
 Visual Studio 可讓您輕鬆地建立 Node.js 專案，體驗 IntelliSense 和其他支援 Node.js 的內建功能。 在適用於 Visual Studio 的本教學課程中，請從 Visual Studio 範本建立 Node.js Web 應用程式專案。 然後，請使用 React 建立簡單的應用程式。
 
-在本教學課程中，您將了解如何：
+在本教學課程中，您會了解如何：
 > [!div class="checklist"]
 > * 建立 Node.js 專案
 > * 新增 npm 套件
@@ -55,7 +55,7 @@ JSX 是 JavaScript 語法延伸模組，通常搭配 React 使用以描述 UI �
 
 Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它也可以轉換或封裝其他資源和資產。 它經常用來指定編譯器，例如 Babel 或 TypeScript，將 JSX 或 TypeScript 程式碼轉換為純文字 JavaScript。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>Prerequisites
 
 * 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 
@@ -74,7 +74,9 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
     本教學課程已使用 10.16.0 版進行測試。
 
-    如果您沒有安裝，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。 一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果偵測不到已安裝的執行階段，您可以在屬性頁面中將專案設定為參考已安裝的執行階段 (建立專案之後，以滑鼠右鍵按一下專案節點，然後選擇 [屬性])。
+    如果您沒有安裝它，建議您從[node.js](https://nodejs.org/en/download/)網站安裝 LTS 版本，以獲得與外部架構和程式庫的最佳相容性。 Node.js 是針對32位和64位架構所建立。 Visual Studio （包含在 node.js 工作負載中）中的 node.js 工具支援這兩個版本。 只需要一個，而且 node.js 安裝程式只支援一次安裝一個。
+    
+    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果未偵測到已安裝的執行時間，您可以將專案設定為參考 [屬性] 頁面中已安裝的執行時間（建立專案之後，以滑鼠右鍵按一下專案節點，選擇 [**屬性**]，然後設定 [ **node.js 路徑**]）。 您可以使用 node.js 的全域安裝，或者您可以在每個 node.js 專案中指定本機解譯器的路徑。 
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -82,15 +84,15 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 1. 開啟 Visual Studio。
 
-1. 建立新的專案。
+1. 建立新專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 輸入**Ctrl + Q**來開啟搜尋方塊，輸入**node.js**，然後選擇 [空白的 node.js **Web 應用程式-JavaScript**]。 （雖然本教學課程使用 TypeScript 編譯器，但這些步驟需要您從**JavaScript**範本開始。）
+    按 **Esc** 來關閉開始視窗。 輸入**Ctrl + Q**來開啟搜尋方塊，輸入**node.js**，然後選擇 [空白的 node.js **Web 應用程式-JavaScript**]。 （雖然本教學課程使用 TypeScript 編譯器，但這些步驟需要您從**JavaScript**範本開始。）
     
-    在出現的對話方塊中選擇 [建立]。
+    在出現的對話方塊中，選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] >  [新增] >  [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]、輸入名稱 **NodejsWebAppBlank**，然後選擇 [確定]。
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]、輸入名稱 **NodejsWebAppBlank**，然後選擇 [確定]。
     ::: moniker-end
     如果您看不到 [空白的 Node.js Web 應用程式] 專案範本，則必須新增 **Node.js 開發**工作負載。 如需詳細指示，請參閱[必要條件](#prerequisites)。
 

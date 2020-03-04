@@ -1,6 +1,6 @@
 ---
 title: 偵錯工具中的運算式 |Microsoft Docs
-ms.date: 02/07/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b05bc8de6db15261a9861867bc93a398b60bf0d0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736207"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234999"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的運算式
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。
@@ -97,14 +97,14 @@ int main()
 
   偵錯工具內建函式還可以讓運算式評估更方便。 例如，在中斷點條件中撰寫 `strncmp(str, "asd")` 比撰寫 `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`更容易。 )
 
-|區域圖|內建函式|
+|區域|內建函式|
 |----------|-------------------------|
 |**字串長度**|strlen、wcslen、strnlen、wcsnlen|
 |**字串比較**|strcmp、wcscmp、stricmp、_stricmp、_strcmpi、wcsicmp、_wcscmpi、_wcsnicmp、strncmp、wcsncmp、strnicmp、wcsnicmp|
-|**字串搜尋**|strchr、wcschr、strstr、wcsstr|
-|**Win32**|GetLastError()、TlsGetValue()|
-|**Windows 8**|WindowsGetStringLen ()、WindowsGetStringRawBuffer()<br /><br /> 這些函式要求要進行偵錯的處理序必須在 Windows 8 上執行。 對從 Windows 8 裝置產生的傾印檔案進行偵錯也要求 Visual Studio 電腦必須執行 Windows 8。 不過，如果您是對 Windows 8 裝置進行遠端偵錯，則 Visual Studio 電腦可以執行 Windows 7。|
-|**其他**|__log2<br /><br /> 傳回所指定整數的對數底數 2，並捨入至最接近的較小整數。|
+|**字串搜尋**|strchr、wcschr、memchr、wmemchr、strstr、wcsstr|
+|**Win32**|GetLastError、TlsGetValue|
+|**Windows 8**|WindowsGetStringLen, WindowsGetStringRawBuffer<br /><br /> 這些函式要求要進行偵錯的處理序必須在 Windows 8 上執行。 對從 Windows 8 裝置產生的傾印檔案進行偵錯也要求 Visual Studio 電腦必須執行 Windows 8。 不過，如果您是對 Windows 8 裝置進行遠端偵錯，則 Visual Studio 電腦可以執行 Windows 7。|
+|**其他**|__log2//傳回指定整數的對數底數2，四捨五入為最接近的低整數。<br /><br />__findNonNull、DecodeHString、WindowsCompareStringOrdinal、RoInspectCapturedStackBackTrace、CoDecodeProxy、GetEnvBlockLength、DecodeWinRTRestrictedException、DynamicMemberLookup、DecodePointer、DynamicCast<br /><br />Stdext_HashMap_Int_OperatorBracket_idx，Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency：： array < >：： operator [索引 < >] 和運算子（索引 < >）<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency：： array < >：： operator （int，int，...）<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency：： array < >：： operator [tiled_index < >] 和運算子（tiled_index < >）<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency：： array_view < >：： operator [index < >] and 運算子（index < >）<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency：： array_view < >：： operator （int，int，...）<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency：： array_view < >：： operator [tiled_index < >] 和運算子（tiled_index < >）<br /><br />TreeTraverse_Init//初始化新的樹狀結構遍歷<br /><br />TreeTraverse_Next//傳回樹狀結構中的節點<br /><br />TreeTraverse_Skip//略過暫止的樹狀結構中的節點 '|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - 不支援的運算式
 
@@ -204,7 +204,7 @@ int main()
 
 - 命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [C++ 中的格式規範](../debugger/format-specifiers-in-cpp.md)
 - [內容運算子 (C++)](../debugger/context-operator-cpp.md)
 - [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)

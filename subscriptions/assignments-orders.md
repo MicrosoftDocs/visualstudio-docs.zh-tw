@@ -3,15 +3,15 @@ title: 追蹤使用者指派及處理訂單 | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: 深入了解系統管理員要追蹤使用者指派及處理訂單的責任。
-ms.openlocfilehash: bf7fcdb2fae2ad6d354c4320ec26c4f1025766dd
-ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
+ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76967329"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235221"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>追蹤使用者指派和處理訂單
 Visual Studio 訂用帳戶系統管理員應該要根據大量授權合約或 Microsoft 產品和服務合約中所述的時間表，追蹤 Visual Studio 使用量，並處理任何使用量增加而產生的訂單。 新的 Visual Studio 訂用帳戶系統管理入口網站提供可顯示可用和已使用之授權的實用追蹤器，進而簡化了此作業。
@@ -36,6 +36,12 @@ Visual Studio 訂用帳戶系統管理員應該要根據大量授權合約或 Mi
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Enterprise、MPSA 和 Select 合約
 Microsoft Enterprise 合約 (EA)、MPSA 及 Select Plus 合約可讓您隨著時間變化，靈活使用 Visual Studio 軟體並進行授權。 Visual Studio 系統管理員必須提出每年的實際訂單，才能將其軟體授權的最高可達合約期間所建立的使用量上限。
 
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>後續步驟
 深入了解系統管理員的責任：
 - [系統管理員責任](admin-responsibilities.md)
@@ -43,7 +49,3 @@ Microsoft Enterprise 合約 (EA)、MPSA 及 Select Plus 合約可讓您隨著時
 - [管理大型小組及外部承攬人](manage-teams.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量
 
-## <a name="see-also"></a>請參閱
-- [Visual Studio 檔](/visualstudio/)
-- [Azure 文件](/azure/)
-- [Azure DevOps](/azure/devops/)

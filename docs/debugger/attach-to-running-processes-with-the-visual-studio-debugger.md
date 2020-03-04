@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f605f9a7e07d485b4b1cb3835d53e4c4823fe7c
-ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
+ms.openlocfilehash: f2f00cde0c2ea3fad79c0f5ef75f3c33ad7afc22
+ms.sourcegitcommit: c98e0ccf236765b44e47095ee52836cb012e3854
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78181123"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78257185"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具附加至執行中處理序
 您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 在進程執行之後，請選取 [ **Debug** ] > [**附加至進程**]，或在 Visual Studio 中按**Ctrl**+**Alt**+**P** ，然後使用 [**附加至進程**] 對話方塊，將偵錯工具附加至進程。
@@ -229,7 +229,7 @@ ms.locfileid: "78181123"
 |在本機 IIS 伺服器上，針對支援的應用程式類型進行用戶端腳本的偵錯工具 |使用 [**附加至進程**]|*chrome .exe*、 *MicrosoftEdgeCP*或*iexplore.exe .exe*|必須啟用腳本的調試。 對於 Chrome，您也必須在 [偵錯工具] 模式中執行 Chrome，然後在 [**附加至**] 欄位中選取 [ **Webkit 程式碼**]。|
 |在本機C#電腦上的 Debug C++ a、Visual Basic 或 app|使用標準的偵錯工具（**F5**）或 [**附加至進程**]|*應用程式名稱>\<.exe*|在大部分的情況下，請使用標準的偵錯工具，而不是**附加至進程**。|
 |對 Windows 傳統型應用程式進行遠端 debug|遠端工具|N/A| 請參閱[遠端 debug C# a 或 Visual Basic 應用程式](../debugger/remote-debugging-csharp.md)或[遠端C++偵錯工具](../debugger/remote-debugging-cpp.md)|
-|在 Linux 上對 .NET Core 進行調試|使用 [**附加至進程**]|*dotnet.exe*|若要使用 SSH，請參閱[使用 ssh 在 Linux 上執行的遠端偵錯 .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)。 若要使用 Linux Docker 容器，請參閱[附加至在 Linux docker 容器上](#BKMK_Docker_Attach)執行的進程。|
+|在 Linux 上對 .NET Core 進行調試|使用 [**附加至進程**]|*dotnet.exe*|若要使用 SSH，請參閱[使用 ssh 在 Linux 上執行的遠端偵錯 .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)。 |
 |在不使用偵錯工具的情況下啟動應用程式之後，在本機電腦上進行 ASP.NET 應用程式的偵錯工具|使用 [**附加至進程**]|*iiexpress.exe*|這可能有助於讓應用程式的載入速度更快，例如在分析時（例如）。 |
 |在伺服器進程上，對其他支援的應用程式類型進行偵錯工具|如果伺服器在遠端，請使用遠端工具，然後**附加至進程**|*chrome .exe*、 *iexplore.exe*或其他進程|如有必要，請使用資源監視器來協助識別進程。 請參閱[遠端偵錯](../debugger/remote-debugging.md)。|
 |遠端 debug a 通用 Windows App （UWP）、OneCore、HoloLens 或 IoT 應用程式|針對已安裝的應用程式套件進行偵錯|N/A|請參閱[Debug 已安裝的應用程式套件](debug-installed-app-package.md)，而不是使用 [**附加至進程**]|

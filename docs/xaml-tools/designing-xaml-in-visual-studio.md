@@ -1,18 +1,18 @@
 ---
-title: 在 Visual Studio 與 Blend 中設計 XAML
+title: 在 Visual Studio 和 Blend for Visual Studio 中設計 XAML
 titleSuffix: ''
-ms.date: 08/05/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 97946fc2ed79b83fbc7d3ce3c3dc4960934eb5ab
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: decba18e6b11b2c861edc20ff0a8e1e1c8f77b4a
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592977"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235172"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>在 Visual Studio 與 Blend for Visual Studio 中設計 XAML
 
@@ -23,8 +23,16 @@ Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為�
 ## <a name="installation"></a>安裝
 
 - 若要建立 WPF 應用程式，請安裝 Visual Studio 中的 [.NET 桌面開發] 工作負載。 此外，也將安裝 Blend for Visual Studio。
+
+     ![從 Visual Studio 安裝程式的 .NET 桌面開發工作負載的螢幕擷取畫面](../xaml-tools/media/dotnet-desktop-dev-workload.png)
+
 - 若要建立 UWP 應用程式，請安裝 Visual Studio 中的 [通用 Windows 平台開發] 工作負載。 此外，也將安裝 Blend for Visual Studio。
+
+     ![Visual Studio 安裝程式的通用 Windows 平臺開發工作負載的螢幕擷取畫面](../xaml-tools/media/uwp-workload.png)
+
 - 若要建立 Xamarin.Forms 應用程式，請安裝 Visual Studio 中的 [使用 .NET 進行行動開發] 工作負載。 「不」安裝 Blend for Visual Studio；Blend 並不支援 Xamarin.Forms 應用程式。
+
+     ![從 Visual Studio 安裝程式的 [使用 .NET 進行行動開發] 工作負載的螢幕擷取畫面](../xaml-tools/media/mobile-dev-dotnet-workload.png)
 
 ## <a name="shared-capabilities"></a>共用功能
 
@@ -36,13 +44,13 @@ Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為�
 
 - 檔案**重載：** 您可以在 Visual Studio 或 Blend for Visual Studio 中編輯 XAML 檔案。 當您在兩個 IDE 之間切換時，編輯過且已儲存的檔案會自動重新載入。 您可以在任一 IDE 中，透過瀏覽至 [工具] > [選項] > [環境] > [文件]，控制重新載入行為。
 
-- **同步處理的版面配置和設定：** 當您使用相同的個人化帳戶登入時，Visual Studio 或 Blend for Visual Studio 的自訂工具視窗配置和設定喜好設定會在您的裝置和版本之間同步處理。 請參閱[跨多部電腦同步處理設定](../ide/synchronized-settings-in-visual-studio.md)。
+- **同步處理的版面配置和設定：** 當您使用相同的個人化帳戶登入時，Visual Studio 或 Blend for Visual Studio 的設計自訂工具視窗版面配置和設定喜好設定會在您的裝置和版本之間同步處理。 請參閱[跨多部電腦同步處理設定](../ide/synchronized-settings-in-visual-studio.md)。
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的進階功能
 
 若要提升產能，請考慮使用 Blend for Visual Studio 來處理下列工作。 這些都是 Blend for Visual Studio 可提供比 Visual Studio 設計工具或程式碼本身更多功能之處。
 
-| 工作 | Visual Studio | Blend for Visual Studio | 詳細資訊 |
+| Task | Visual Studio | Blend for Visual Studio | 詳細資訊 |
 | - | - | - | - |
 | **設計視覺狀態** | 沒有任何工具可協助您設計視覺狀態；您必須以程式設計方式建立它們。 | 使用設計工具來根據控制項的狀態變更其外觀。 | [視覺狀態](modify-the-style-of-objects-in-blend.md#visual-states) |
 | **建立動畫** |動畫沒有設計工具，您必須以程式設計方式來建立動畫。 這需要了解動畫、WPF 中的計時系統以及大量編碼專業知識。|您能以視覺化方式建立動畫，並在 Blend for Visual Studio 中預覽。 這比在程式碼中建置動畫來得更多更精準。 您可以新增觸發程序來處理使用者互動，而且可以切換到程式碼以加入事件處理常式和其他功能。|[製作物件動畫](../xaml-tools/animate-objects-in-xaml-designer.md)|
@@ -51,3 +59,8 @@ Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為�
 |**將 UI 連接到資料**|您可以從資源 (例如 SQL Server 資料庫、WCF 或 Web 服務、物件或 SharePoint 清單) 建立資料來源，然後將資料來源繫結至 UI 控制項。<br /><br />設計階段資料必須以手動方式建立才能獲得互動式的設計體驗。|針對 .NET Framework 應用程式，輕鬆建立範例資料來進行原型設計和測試。 準備好時切換到即時資料。<br /><br />Blend for Visual Studio 的資料產生功能相當傑出 (您可以輕鬆地即時新增名稱、數字、URL、相片)，為您節省許多時間。<br /><br />對於即時資料，您可以將 UI 控制項繫結至 XML 檔案，或任何 CLR 資料來源。|[顯示資料](display-data-in-blend.md)|
 
 如需進階 XAML 設計的詳細資訊，請參閱[使用 Blend for Visual Studio 建立 UI](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)。
+
+## <a name="see-also"></a>另請參閱
+
+- [XAML 總覽](xaml-overview.md)
+- [Blend for Visual Studio 總覽](creating-a-ui-by-using-blend-for-visual-studio.md)

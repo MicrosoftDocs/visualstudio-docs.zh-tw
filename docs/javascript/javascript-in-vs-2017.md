@@ -12,13 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
-monikerRange: vs-2017
-ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888654"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234952"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -129,7 +128,7 @@ exports.default = Subscription_1.Subscription;
 ![JSX 語法](../javascript/media/js-react.png)
 
 > [!NOTE]
-> 若要將 JSX 語法轉換成回應呼叫，`"jsx": "react"` 設定必須新增至 `tsconfig.json` 檔案的 `compilerOptions` 中。
+> 若要將 JSX 語法轉換成回應呼叫，`"jsx": "react"` 設定必須新增至 `compilerOptions` 檔案的 `tsconfig.json` 中。
 
 於建置時建立在 `./out/app.js' 的 JavaScript 檔案會包含程式碼：
 
@@ -187,7 +186,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 ![資料夾結構](../javascript/media/js-folderstructure.png)
 
-您可以使用下列 `tsconfig.json` 確定語言服務僅分析 `js` 資料夾中的原始程式檔，但仍然擷取和使用 `lib` 資料夾中程式庫的 `.d.ts` 檔案。
+您可以使用下列 `tsconfig.json` 確定語言服務僅分析 `js` 資料夾中的原始程式檔，但仍然擷取和使用 `.d.ts` 資料夾中程式庫的 `lib` 檔案。
 
 ```json
 {
@@ -254,14 +253,14 @@ XML 文件註解有時稱為 VSDocs，先前可以用來使用其他資料來裝
 先前，您可以編寫 [IntelliSense 延伸模組](https://msdn.microsoft.com/library/hh874692.aspx)，以讓您新增協力廠商程式庫的自訂完成結果。
 這些延伸模組的撰寫相當困難，而且安裝和參考它們十分麻煩，因此新語言服務往後將不支援這些檔案。
 撰寫 TypeScript 定義檔來提供與舊 `.intellisense.js` 延伸模組相同的 IntelliSense 優點，是較簡單的替代方法。
-您可以在[這裡](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)深入了解宣告 (`.d.ts`) 檔案編寫。
+您可以在`.d.ts`這裡[深入了解宣告 (](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)) 檔案編寫。
 
 ### <a name="unsupported-patterns"></a>不支援的模式
 
 因為新語言服務具有靜態分析功能，而不是執行引擎 (如需差異的資訊，請閱讀[本問題](https://github.com/Microsoft/TypeScript/issues/4789))，所以無法再偵測到一些 JavaScript 模式。
 最常見的模式是 "expando" 模式。
 語言服務目前無法在宣告之後附加屬性的物件上提供 IntelliSense。
-例如:
+例如：
 
 ```js
 var obj = {};

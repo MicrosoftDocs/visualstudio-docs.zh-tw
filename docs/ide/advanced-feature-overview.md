@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ece317d753cb5c4b0b4e5b0e02707a088e8917
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591732"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235195"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -80,11 +80,11 @@ Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適�
 
 - 使用 [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/) 以 C# 和 F# 建置 iOS、Android 和 Windows 用的行動應用程式。
 
-- 透過 [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)，使用標準 Web 技術 &mdash;HTML、CSS 和 JavaScript&mdash; 建置 iOS、Android 和 Windows 用的行動應用程式。
+- 透過 &mdash;Apache Cordova&mdash;，使用標準 Web 技術 [HTML、CSS 和 JavaScript](/visualstudio/cross-platform/tools-for-cordova/) 建置 iOS、Android 和 Windows 用的行動應用程式。
 
 - 使用 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 以 C# 建置 2D 和 3D 遊戲。
 
-- 建置適用於 iOS、Android 和 Windows 裝置的原生 C++ 應用程式。 使用[適用於跨平台開發的 C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)，在為 iOS、Android 和 Windows 建置的程式庫中共用通用程式碼。
+- 建置適用於 iOS、Android 和 Windows 裝置的原生 C++ 應用程式。 使用[適用於跨平台開發的 C++](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development)，在為 iOS、Android 和 Windows 建置的程式庫中共用通用程式碼。
 
 - 使用 [Android 模擬器](../cross-platform/visual-studio-emulator-for-android.md)部署、測試及偵錯 Android 應用程式。
 
@@ -136,7 +136,7 @@ Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理
 
 若要深入了解如何擴充 Visual Studio，請參閱[擴充 Visual Studio IDE](https://visualstudio.microsoft.com/vs/extend/)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017 的新功能](../ide/whats-new-visual-studio-2017.md)

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 5f7b877d825a573b935a9bf0f2c907ec2ce6f808
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.openlocfilehash: a1995353d00f9e48811f388e1d853c93850b85f4
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73428764"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235102"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Vue.js 應用程式
 
@@ -26,7 +26,7 @@ ms.locfileid: "73428764"
 > [!IMPORTANT]
 > 本文需要 Vue.js 範本，該範本是從 Visual Studio 2017 15.8 版開始提供。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 * 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 
@@ -43,7 +43,9 @@ ms.locfileid: "73428764"
 
 * 您必須安裝 Node.js 執行階段。
 
-    如果您沒有安裝，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。 一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果偵測不到已安裝的執行階段，您可以在屬性頁面中將專案設定為參考已安裝的執行階段 (建立專案之後，以滑鼠右鍵按一下專案節點，然後選擇 [屬性])。
+    如果您沒有安裝它，建議您從[node.js](https://nodejs.org/en/download/)網站安裝 LTS 版本，以獲得與外部架構和程式庫的最佳相容性。 Node.js 是針對32位和64位架構所建立。 Visual Studio （包含在 node.js 工作負載中）中的 node.js 工具支援這兩個版本。 只需要一個，而且 node.js 安裝程式只支援一次安裝一個。
+    
+    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果未偵測到已安裝的執行時間，您可以將專案設定為參考 [屬性] 頁面中已安裝的執行時間（建立專案之後，以滑鼠右鍵按一下專案節點，選擇 [**屬性**]，然後設定 [ **node.js 路徑**]）。 您可以使用 node.js 的全域安裝，或者您可以在每個 node.js 專案中指定本機解譯器的路徑。 
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -51,11 +53,11 @@ ms.locfileid: "73428764"
 
 1. 如果您尚未安裝 Node.js 執行階段，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。
 
-    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果偵測不到已安裝的執行階段，您可以在屬性頁面中將專案設定為參考已安裝的執行階段 (建立專案後，以滑鼠右鍵按一下專案節點，然後選擇 [屬性])。
+    如需詳細資訊，請參閱必要條件。
 
 1. 開啟 Visual Studio。
 
-1. 建立新的專案。
+1. 建立新專案。
 
     ::: moniker range=">=vs-2019"
     按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，再鍵入**基本 Vue.js**，然後選擇 [基本 Vue.js Web 應用程式] (JavaScript 或 TypeScript)。 在出現的對話方塊中，鍵入名稱 **basic-vuejs**，然後選擇 [建立]。
@@ -109,7 +111,7 @@ ms.locfileid: "73428764"
 
 1. 接著，選擇 [建置] > [建置方案] 來建置專案。 請檢查 [輸出] 視窗查看建置結果，然後從 [顯示輸出來源] 清單選擇 [建置]。
 
-    JavaScript Vue 專案範本（和較舊版本的 TypeScript 範本）會藉由設定 post 組建事件來使用 `build` npm 腳本。 如果您想要修改此設定，請從 Windows 檔案總管中開啟專案檔 (*專案名稱\<.njsproj\>)，並找出這行程式碼：
+    JavaScript Vue 專案範本（和較舊版本的 TypeScript 範本）會藉由設定 post 組建事件來使用 `build` npm 腳本。 如果您想要修改此設定，請從 Windows 檔案總管中開啟專案檔 ( *\<專案名稱\>.njsproj*)，並找出這行程式碼：
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>

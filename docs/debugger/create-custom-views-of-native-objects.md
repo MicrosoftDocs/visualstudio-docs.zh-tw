@@ -1,7 +1,7 @@
 ---
 title: 建立 C++ 物件的自訂檢視
 description: 使用 Natvis 架構來自訂 Visual Studio 在偵錯工具中顯示原生類型的方式
-ms.date: 10/31/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c26c35c09353d740f6db9745222bb66db40e7ba
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.openlocfilehash: 064761d87b9aa851e40cf906e7734a3578dcad1a
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78167750"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234965"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>使用 Natvis 架構， C++在偵錯工具中建立物件的自訂視圖
 
@@ -262,7 +262,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 #### <a name="priority-attribute"></a>Priority 屬性
 
-如果無法剖析定義，選擇性的 `Priority` 屬性會指定要使用替代定義的順序。 `Priority` 的可能值為： `Low`、`MediumLow`、`Medium`、`MediumHigh`和 `High`。 預設值為 `Medium`。 `Priority` 屬性只會區分同一個*natvis*檔案中的優先順序。
+如果無法剖析定義，選擇性的 `Priority` 屬性會指定要使用替代定義的順序。 `Priority` 的可能值為： `Low`、`MediumLow`、`Medium`、`MediumHigh`和 `High`。 預設值是 `Medium`。 `Priority` 屬性只會區分同一個*natvis*檔案中的優先順序。
 
 下列範例會先剖析符合 2015 STL 的專案。 如果無法剖析，它會針對2013版的 STL 使用替代專案：
 
@@ -537,7 +537,10 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 `ValueNode` 可以保留空白，或使用 `this` 來參考 `LinkedListItems` 節點本身。
 
 #### <a name="customlistitems-expansion"></a>CustomListItems 展開
+
 `CustomListItems` 展開可讓您撰寫周遊資料結構 (例如雜湊表) 的自訂邏輯。 使用 `CustomListItems`，將可使用C++運算式的資料結構視覺化，以用於您需要評估的所有專案，但不適合 `ArrayItems`、`IndexListItems`或 `LinkedListItems`的模具。
+
+您可以使用 `Exec`，利用展開中定義的變數和物件，在 `CustomListItems` 擴充內執行程式碼。 您可以使用邏輯運算子、算術運算子和指派運算子搭配 `Exec`。 除了C++運算式評估工具支援的[偵錯工具內建函式](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state)以外，您無法使用 `Exec` 來評估函數。
 
 下列適用于 `CAtlMap` 的視覺化檢視是適合 `CustomListItems` 的絕佳範例。
 
@@ -569,24 +572,6 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
     </Expand>
 </Type>
 ```
-
-您可以使用 `Exec`，利用展開中定義的變數和物件，在 `CustomListItems` 擴充內執行程式碼。 您可以使用邏輯運算子、算術運算子和指派運算子搭配 `Exec`。 您無法使用 `Exec` 來評估函式。
-
-`CustomListItems` 支援下列內建函式：
-
-- `strlen`、`wcslen`、`strnlen`、`wcsnlen`、`strcmp`、`wcscmp`、`_stricmp`、`_strcmpi`、`_wcsicmp`、`strncmp`、`wcsncmp`、`_strnicmp`、`_wcsnicmp`、`memcmp`、`memicmp`、`wmemcmp`、`strchr`、`wcschr`、`memchr`、`wmemchr`、`strstr`、`wcsstr`、`__log2`、`__findNonNull`
-- `GetLastError`、`TlsGetValue`、`DecodeHString`、`WindowsGetStringLen`、`WindowsGetStringRawBuffer`、`WindowsCompareStringOrdinal`、`RoInspectCapturedStackBackTrace`、`CoDecodeProxy`、`GetEnvBlockLength`、`DecodeWinRTRestrictedException`、`DynamicMemberLookup`、`DecodePointer`、`DynamicCast`
-- `ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] and operator(index<>)`
-- `ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)`
-- `ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] and operator(tiled_index<>)`
-- `ConcurrencyArrayView_OperatorBracket_idx // Concurrency::array_view<>::operator[index<>] and operator(index<>)`
-- `ConcurrencyArrayView_OperatorBracket_int // Concurrency::array_view<>::operator(int, int, ...)`
-- `ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::operator[tiled_index<>] and operator(tiled_index<>)`
-- `Stdext_HashMap_Int_OperatorBracket_idx`
-- `Std_UnorderedMap_Int_OperatorBracket_idx`
-- `TreeTraverse_Init // Initializes a new tree traversal`
-- `TreeTraverse_Next // Returns nodes in a tree`
-- `TreeTraverse_Skip // Skips nodes in a pending tree traversal`
 
 #### <a name="BKMK_TreeItems_expansion"></a> TreeItems 展開
  如果視覺化類型代表樹狀結構，則偵錯工具可以使用 `TreeItems` 節點查核樹狀結構並顯示其子系。 以下是使用 `TreeItems` 節點之 `std::map` 類型的視覺效果：
@@ -696,7 +681,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 - `ServiceId` - `Id` 屬性組識別 `UIVisualizer`。 `ServiceId` 是視覺化檢視封裝所公開之服務的 GUID。 `Id` 是區分視覺化程式的唯一識別碼（如果服務提供一個以上的）。 在上述範例中，相同的視覺化服務提供兩種視覺化檢視。
 
-- `MenuName` 屬性會定義要在偵錯工具中放大鏡圖示旁的下拉式按鈕中顯示的視覺化檢視名稱。 例如，
+- `MenuName` 屬性會定義要在偵錯工具中放大鏡圖示旁的下拉式按鈕中顯示的視覺化檢視名稱。 例如：
 
   ![看到 uivisualizer 功能表快捷方式功能表](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer 功能表捷徑功能表")
 
