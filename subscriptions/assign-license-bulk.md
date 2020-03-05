@@ -3,21 +3,20 @@ title: 指派 Visual Studio 訂用帳戶使用者群組的授權 | Microsoft Doc
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/26/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: 瞭解系統管理員如何使用大量新增功能或 Microsoft Azure Active Directory 群組，將授權指派給多個訂閱者
-ms.openlocfilehash: ae16c64f90f90b820332e0ee7f1753a8dd6e5c32
-ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
+ms.openlocfilehash: c8ea294f0e4b2b4deae18e2f5644bf08fff0dfc2
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77652816"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263340"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
 
 若要新增大量使用者群組，您可以使用大量新增功能，或者如果您的組織使用 Microsoft Azure Active Directory （Azure AD），您可以使用 Azure AD 群組。 本文將說明這兩個選項的程式。 
-
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>使用大量新增來指派訂閱
 1. 在 https://manage.visualstudio.com登入 Visual Studio 訂用帳戶系統管理入口網站。
@@ -59,19 +58,16 @@ ms.locfileid: "77652816"
    > [!div class="mx-imgBorder"]
    > ![當上傳多位訂閱者成功時顯示確認訊息](media/bulk-add-template-success.png)
 
-## <a name="use-azure-ad-groups-to-assign-subscriptions"></a>使用 Azure AD 群組來指派訂閱 
-使用這項功能可讓您輕鬆地掌握訂用帳戶指派。 您可以在訂用帳戶系統管理入口網站中新增 Azure AD 安全性群組，以確保群組中的所有人員都已獲指派訂閱。 為了讓您更輕鬆，當個人離開您的組織並從 Azure AD 中移除時，也會移除他們對訂閱的存取權。
-
-> [!NOTE]
-> 這項功能正以階段部署，因此可能無法為您的組織立即提供可用性。   
+## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>使用 Azure Active Directory 群組來指派訂閱 
+使用這項功能可讓您輕鬆地掌握訂用帳戶指派。 您可以在訂用帳戶系統管理入口網站中新增 Azure Active Directory 安全性群組，以確保群組中的所有人員都已獲指派訂閱。 為了讓您更輕鬆，當個人離開您的組織並從 Azure Active Directory 中移除時，也會移除他們對訂閱的存取權。 
 
 > [!IMPORTANT]
 > 下列限制適用于用於新增訂閱者的 Azure AD 群組：
 > - 群組必須包含至少一個成員。  不支援空的群組。
-> - 群組必須少於1000個使用者。
-> - 所有使用者都必須位於群組的最高層級。  不支援嵌套的群組。
-> - 僅支援信任的合約。
-> - 群組的所有成員都必須有與其 Azure AD 帳戶相關聯的電子郵件地址。
+> - 群組必須少於1000個使用者 
+> - 所有使用者都必須位於群組的最高層級。  不支援嵌套的群組
+> - 僅支援信任的合約
+> - 群組的所有成員都必須有與其 Azure AD 帳戶相關聯的電子郵件地址
 
 
 1. 在[https://manage.visualstudio.com](https://manage.visualstudio.com)登入 Visual Studio 訂用帳戶系統管理入口網站。
@@ -117,6 +113,4 @@ ms.locfileid: "77652816"
 ## <a name="next-steps"></a>後續步驟
 - 只有一或兩個訂閱者要新增嗎？  參閱[新增單一使用者](assign-license.md)
 - 需要協助嗎？ 請聯絡 [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)。
-
-
 

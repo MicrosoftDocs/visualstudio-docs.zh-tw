@@ -1,5 +1,5 @@
 ---
-title: TaskBody 元素 (MSBuild) | Microsoft Docs
+title: UsingTask 的 Task 元素（MSBuild） |Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -8,36 +8,36 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- TaskBody element [MSBuild]
-- <TaskBody> element [MSBuild]
+- Task element [MSBuild]
+- <Task> element [MSBuild]
 ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45b255f782390cfc478ac2f7bce58170e4e2b268
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77631840"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263184"
 ---
-# <a name="taskbody-element-msbuild"></a>TaskBody 元素 (MSBuild)
+# <a name="task-element-of-usingtask-msbuild"></a>UsingTask 的 Task 元素（MSBuild）
 
 包含傳遞至 `UsingTask` `TaskFactory`的資料。 如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。
 
- \<Project> \<UsingTask> \<TaskBody>
+ \<專案 > \<UsingTask > \<工作 >
 
 ## <a name="syntax"></a>語法
 
 ```xml
-<TaskBody Evaluate="true/false" />
+<Task Evaluate="true/false" />
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
 
- 下列各節描述屬性、子項目和父項目。
+ 下列章節說明屬性、子項目和父項目。
 
 ### <a name="attributes"></a>屬性
 
@@ -49,7 +49,7 @@ ms.locfileid: "77631840"
 
 |元素|描述|
 |-------------|-----------------|
-|Data|`TaskBody` 標籤之間的文字會逐字傳送給 `TaskFactory`。|
+|資料|`Task` 標籤之間的文字會逐字傳送給 `TaskFactory`。|
 
 ### <a name="parent-elements"></a>父元素
 
@@ -59,7 +59,7 @@ ms.locfileid: "77631840"
 
 ## <a name="example"></a>範例
 
- 下列範例示範如何使用具有 `TaskBody` 屬性的 `Evaluate` 項目。
+ 下列範例示範如何使用具有 `Task` 屬性的 `Evaluate` 項目。
 
 ```xml
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">
@@ -68,9 +68,9 @@ ms.locfileid: "77631840"
               <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
               ...
 </ParameterGroup>
-       <TaskBody Evaluate="true">
-      ... Task factory-specific data ...
-       </TaskBody>
+       <Task Evaluate="true">
+       ... Task factory-specific data ...
+       </Task>
 </UsingTask>
 ```
 

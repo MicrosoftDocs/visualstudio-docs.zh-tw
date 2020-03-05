@@ -3,28 +3,32 @@ title: 指派 Visual Studio 訂閱的授權 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: 了解系統管理員如何指派訂閱者授權
-ms.openlocfilehash: 4ebec96f488a480ccd9b96387f2656aadd6ba2f9
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.openlocfilehash: 3d444f930d1fab166d437911b5609caf75cad09e
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76892177"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263303"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 訂閱系統管理入口網站中指派授權
 身為 Visual Studio 訂閱系統管理員，您可以使用系統管理入口網站，將訂閱指派給個別使用者和使用者群組。
 
-若為使用者群組，您可以一次指派一個訂用帳戶給他們，或者使用 [大量新增][Bulk Add](assign-license-bulk.md) 功能，快速輕鬆地上傳訂閱者清單與其訂用帳戶資訊。
+對於使用者群組，您可以選擇如何指派訂閱。  
+- 您可以一次指派一個訂用帳戶。
+- 您也可以使用[大量新增](assign-license-bulk.md)功能，快速且輕鬆地上傳訂閱者清單及其訂用帳戶資訊。
+- 如果您的組織使用 Microsoft Azure Active Directory （Azure AD），您可以使用 Azure AD 群組來指派使用者群組的訂閱。  （這項功能正以階段部署，而且可能無法立即提供給您的組織使用）。
+
 
 ## <a name="add-a-single-subscriber"></a>新增一位訂閱者
-以下說明如何將 Visual Studio 訂用帳戶授權指派給新使用者，使其可以存取訂用帳戶權益。
+以下說明如何將 Visual Studio 訂用帳戶指派給新的使用者，讓他們可以存取訂閱權益。
 
 1. 登入[系統管理入口網站](https://manage.visualstudio.com)。
-2. 若要將授權指派給單一 Visual Studio 訂閱者，請選取資料表頂端的 [新增]。
+2. 若要將授權指派給單一 Visual Studio 訂閱者，請在資料表的頂端選取 [**新增**]，然後選擇 [**個別訂閱者**]。
    > [!div class="mx-imgBorder"]
-   > ![新增一位訂閱者](media/add-single-subscriber.png)
+   > ![新增一位訂閱者](_img/assign-license-add/add-subscriber-individual.png)
 3. 將資訊輸入至新訂閱者的表單欄位。 如果您的組織使用 Azure Active Directory，[名稱] 欄位會作為搜尋功能來尋找您目前目錄中的人員，如此您就可以從搜尋結果中選取正確的使用者。 選取該人員之後，會自動填入登入電子郵件和通知電子郵件。
    > [!div class="mx-imgBorder"]
    > ![訂閱者詳細資料](_img/assign-license-add/subscriber-details.png)
@@ -44,7 +48,15 @@ ms.locfileid: "76892177"
 ## <a name="resend-assignment-emails"></a>重新傳送指派電子郵件
 新增訂閱者之後，系統會將指派電子郵件自動傳送給新的訂閱者，並提供進一步的指示。 您可以選取訂閱者，然後按一下頂端功能表中的 [**重新**傳送] 按鈕，隨時重新傳送指派電子郵件。  若要重新傳送電子郵件給多個使用者，請在選取訂閱者時按住**Ctrl**鍵。  當您按一下 [**重新**傳送] 按鈕時，您會看到對話方塊，要求您確認是否要重新傳送給那些訂閱者。  
 
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+
+
 ## <a name="next-steps"></a>後續步驟
 - 要新增大量使用者嗎？  了解如何指派訂閱給[多個訂閱者](assign-license-bulk.md)。
 - 需要協助嗎？  請聯絡 [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)。
+
 

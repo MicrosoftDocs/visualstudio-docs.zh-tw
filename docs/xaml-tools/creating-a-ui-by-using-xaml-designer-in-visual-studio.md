@@ -1,6 +1,6 @@
 ---
 title: XAML 設計工具概觀
-ms.date: 07/31/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -12,18 +12,21 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 912468cf95b7b5a4b611fb568048c2ba62cc635d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a2a0e25779df1e0b91a69518dc2257119e33cca4
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592998"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263352"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>使用 XAML 設計工具建立 UI
 
 Visual Studio 中的「XAML 設計工具」和 Blend for Visual Studio 提供視覺化介面，可協助您設計以 XAML 為基礎的應用程式，例如 WPF、UWP 及 Xamarin.Forms 應用程式。 您可以藉由從 [工具箱] 視窗 (在 Blend for Visual Studio 的 [資產] 視窗中) 拖曳控制項，並在 [屬性] 視窗中設定屬性，為您的應用程式建立使用者介面。 您也可以在 [XAML] 檢視中直接編輯 XAML。
 
 如果是進階使用者，您甚至可以[自訂 XAML 設計工具](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md)。
+
+> [!NOTE]
+> Xamarin 不支援 XAML 設計工具。 若要在應用程式執行時查看 Xamarin 的 XAML Ui 並加以編輯，請使用適用于 Xamarin 的 XAML 熱重載。 如需詳細資訊，請參閱適用于[Xamarin 的 XAML 熱重載（預覽）](/xamarin/xamarin-forms/xaml/hot-reload/)頁面。
 
 ## <a name="xaml-designer-workspace"></a>XML 設計工具工作區
 
@@ -33,7 +36,7 @@ XAML 設計工具提供 [XAML] 檢視和同步處理的 [設計] 檢視，來顯
 
 ### <a name="design-view"></a>設計檢視
 
-在 [設計] 檢視中，含有「畫板」(Artboard) 的視窗是作用中視窗，可做為主要工作介面。 您可以使用它，透過新增、繪製或修改元素，以視覺化方式設計您應用程式中的頁面。 如需詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。 下圖顯示 [設計] 檢視中的畫板。
+在 [設計] 檢視中，含有畫板的視窗是作用中視窗，您可以使用它作為主要工作介面。 您可以使用它，透過新增、繪製或修改元素，以視覺化方式設計您應用程式中的頁面。 如需詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。 下圖顯示 [設計] 檢視中的畫板。
 
 ![XAML 設計工具的 [設計] 檢視](media/xaml-artboard.png)
 
@@ -87,7 +90,7 @@ Grid 滑軌可用來管理 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中�
 
 **開啟/關閉貼齊至格線**
 
-如果在畫板上拖曳項目時啟用了 [貼齊至格線] ，該項目通常會對齊最接近的水平和垂直格線。
+如果已啟用 [**貼齊至格線**]，當您將專案拖曳至畫板時，元素通常會對齊最接近的水準和垂直格線。
 
 **切換畫板背景**
 
@@ -113,7 +116,7 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 - 檢視畫板上所有項目的階層式結構。
 
-- 選取元素以便進行修改 (例如將它們在階層中四處移動，或在 [屬性] 視窗中設定其屬性)。 如需詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。
+- 選取元素，讓您可以修改它們。 例如，您可以在階層中四處移動，或在屬性視窗中設定其屬性。 如需詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。
 
 - 為控制項項目建立及修改樣板。
 
@@ -124,7 +127,7 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 ![Visual Studio 的 [文件大綱] 視窗](media/document-outline-window.png)
 
-[文件大綱]/[物件與時間軸] 視窗的主要檢視會以樹狀結構顯示文件的階層。 您可以利用文件大綱的階層本質，以各種不同詳細層級檢查文件，以及單獨或依群組鎖定和隱藏元素。 以下是 [文件大綱]/[物件與時間軸] 視窗中可用的選項：
+[文件大綱]/[物件與時間軸] 視窗的主要檢視會以樹狀結構顯示文件的階層。 您可以利用文件大綱的階層本質，以各種不同詳細層級檢查文件，以及單獨或依群組鎖定和隱藏元素。 [檔大綱]/[物件與時間軸] 視窗中提供下列選項：
 
 **顯示/隱藏**
 
@@ -138,11 +141,11 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 [文件大綱]/[物件與時間軸] 視窗頂端顯示向上箭號符號的選項，可移至前一個範圍。 只有您在樣式或樣板的範圍內時，選定範圍才適用。
 
-## <a name="properties-window"></a>[屬性] 視窗
+## <a name="properties-window"></a>屬性視窗
 
-[屬性] 視窗可讓您設定控制項的屬性值。 以下是它看起來的樣子：
+[屬性] 視窗可讓您設定控制項的屬性值。 看起來如下：
 
-![[屬性] 視窗](media/xaml-designer-properties-window.png)
+![屬性視窗](media/xaml-designer-properties-window.png)
 
 [屬性] 視窗的頂端有各種選項：
 
@@ -158,7 +161,7 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 如需有關使用屬性及處理事件的詳細資訊，請參閱[控制項和模式的簡介](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [如何建立和套用資源](../xaml-tools/how-to-create-and-apply-a-resource.md)

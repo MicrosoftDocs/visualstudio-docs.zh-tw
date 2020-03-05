@@ -17,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c4fa5d093952eefc870aded3d3e14a1f5983a7
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633001"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263089"
 ---
 # <a name="parameter-element"></a>Parameter 元素
 
-包含 `UsingTask` `TaskFactory`所產生之工作的特定參數相關資訊。  元素的名稱是參數的名稱。  如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。
+包含 `UsingTask` `TaskFactory`所產生之工作的特定參數相關資訊。  項目的名稱是參數的名稱。  如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。
 
  \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
 
@@ -40,7 +40,7 @@ ms.locfileid: "77633001"
 
 ## <a name="attributes-and-elements"></a>屬性和元素
 
- 下列各節描述屬性、子項目和父項目。
+ 下列章節說明屬性、子項目和父項目。
 
 ### <a name="attributes"></a>屬性
 
@@ -71,9 +71,9 @@ ms.locfileid: "77633001"
               <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
              ...
 </ParameterGroup>
-       <TaskBody Evaluate="true">
-      ... Task factory-specific data ...
-       </TaskBody>
+       <Task Evaluate="true">
+       ... Task factory-specific data ...
+       </Task>
 </UsingTask>
 ```
 

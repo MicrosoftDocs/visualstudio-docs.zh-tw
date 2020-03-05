@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f8a59349540492cd441f1eb3fa63ed520c0e8cd
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 824a6f562638edb04854431c437289f2741c46d9
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633274"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263082"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild 專案檔案結構描述參考
 
@@ -36,28 +36,28 @@ ms.locfileid: "77633274"
 
 |元素|子元素|屬性|
 |-------------|--------------------|----------------|
-|[Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)|Otherwise<br /><br /> 時間|--|
-|[Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)|--|條件<br /><br /> 專案|
+|[Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)|Otherwise<br /><br /> 當|--|
+|[Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)|--|條件<br /><br /> 隨附此逐步解說的專案|
 |[ImportGroup 項目](../msbuild/importgroup-element.md)|匯入|條件|
-|[Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetaData*|條件<br /><br /> 排除<br /><br /> Include<br /><br /> 移除|
+|[Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetaData*|條件<br /><br /> 排除<br /><br /> 包含<br /><br /> 移除|
 |[ItemDefinitionGroup 項目 (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Item*|條件|
 |[ItemGroup 項目 (MSBuild)](../msbuild/itemgroup-element-msbuild.md)|*Item*|條件|
 |[ItemMetadata 項目 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)|*Item*|條件|
 |[OnError 項目 (MSBuild)](../msbuild/onerror-element-msbuild.md)|--|條件<br /><br /> ExecuteTargets|
-|[Otherwise 項目 (MSBuild)](../msbuild/otherwise-element-msbuild.md)|當您想要套用原生保護時，選擇<br /><br /> ItemGroup<br /><br /> PropertyGroup|--|
+|[Otherwise 項目 (MSBuild)](../msbuild/otherwise-element-msbuild.md)|Choose<br /><br /> ItemGroup<br /><br /> PropertyGroup|--|
 |[Output 項目 (MSBuild)](../msbuild/output-element-msbuild.md)|--|條件<br /><br /> ItemName<br /><br /> PropertyName<br /><br /> TaskParameter|
-|[Parameter 項目](../msbuild/parameter-element.md)|--|輸出<br /><br /> ParameterType<br /><br /> 必要項|
+|[Parameter 項目](../msbuild/parameter-element.md)|--|輸出<br /><br /> ParameterType<br /><br /> 必要|
 |[ParameterGroup 項目](../msbuild/parametergroup-element.md)|*參數*|--|
-|[Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md)|當您想要套用原生保護時，選擇<br /><br /> 匯入<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> 目標<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|
+|[Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md)|Choose<br /><br /> 匯入<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> 目標<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|
 |[ProjectExtensions 項目 (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|
 |[Property 項目 (MSBuild)](../msbuild/property-element-msbuild.md)|--|條件|
 |[PropertyGroup 項目 (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*屬性*|條件|
 |[Sdk 項目 (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|名稱<br /><br /> 版本|
-|[Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Task*|AfterTargets<br /><br /> BeforeTargets<br /><br /> 條件<br /><br /> DependsOnTargets<br /><br /> 輸入<br /><br /> KeepDuplicateOutputs<br /><br /> 名稱<br /><br /> Outputs<br /><br /> 傳回值|
-|[Task 項目 (MSBuild)](../msbuild/task-element-msbuild.md)|輸出|條件<br /><br /> ContinueOnError<br /><br /> *參數*|
-|[TaskBody 項目 (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Data*|評估|
-|[UsingTask 項目 (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> TaskBody|AssemblyFile<br /><br /> AssemblyName<br /><br /> 條件<br /><br /> TaskFactory<br /><br /> TaskName|
-|[When 項目 (MSBuild)](../msbuild/when-element-msbuild.md)|當您想要套用原生保護時，選擇<br /><br /> ItemGroup<br /><br /> PropertyGroup|條件|
+|[Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Task*|AfterTargets<br /><br /> BeforeTargets<br /><br /> 條件<br /><br /> DependsOnTargets<br /><br /> 輸入<br /><br /> KeepDuplicateOutputs<br /><br /> 名稱<br /><br /> 輸出<br /><br /> 傳回值|
+|[Target 的 Task 元素（MSBuild）](../msbuild/task-element-msbuild.md)|輸出|條件<br /><br /> ContinueOnError<br /><br /> *參數*|
+|[UsingTask 的 Task 元素（MSBuild）](../msbuild/taskbody-element-msbuild.md)|*Data*|評估|
+|[UsingTask 項目 (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> Task|AssemblyFile<br /><br /> AssemblyName<br /><br /> 條件<br /><br /> TaskFactory<br /><br /> TaskName|
+|[When 項目 (MSBuild)](../msbuild/when-element-msbuild.md)|Choose<br /><br /> ItemGroup<br /><br /> PropertyGroup|條件|
 
 ## <a name="see-also"></a>另請參閱
 
