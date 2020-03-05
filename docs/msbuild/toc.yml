@@ -233,9 +233,9 @@
               href: sdk-element-msbuild.md
             - name: Target 項目
               href: target-element-msbuild.md
-            - name: Task 項目
+            - name: Target 的 Task 元素
               href: task-element-msbuild.md
-            - name: TaskBody 項目
+            - name: UsingTask 的 Task 元素
               href: taskbody-element-msbuild.md
             - name: UsingTask 項目
               href: usingtask-element-msbuild.md
