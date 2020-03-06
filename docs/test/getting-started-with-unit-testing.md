@@ -1,6 +1,6 @@
 ---
 title: 開始使用單元測試
-ms.date: 02/13/2020
+ms.date: 03/04/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 90c3cbdee722c4cf12c515f06659cc03f3179e1e
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77279326"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78289850"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -22,7 +22,7 @@ ms.locfileid: "77279326"
 
 ## <a name="create-unit-tests"></a>建立單元測試
 
-本節詳盡說明如何建立單元測試專案。
+本節說明如何建立單元測試專案。
 
 1. 在 Visual Studio 中開啟您要測試的專案。
 
@@ -72,7 +72,7 @@ ms.locfileid: "77279326"
 
 1. 將程式碼新增至單元測試方法。
 
-   例如，針對 MSTest 或 NUnit 測試專案，您可以使用下列程式碼。
+   例如，針對 MSTest 專案，您可以使用下列程式碼。
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -101,8 +101,42 @@ ms.locfileid: "77279326"
    }
    ```
 
+   或者，針對 NUnit 專案，您可以使用下列程式碼。
+
+   ```csharp
+   using using NUnit.Framework;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class Tests
+      {
+         private const string Expected = "Hello World!";
+
+         [SetUp]
+         public void Setup()
+         {
+         }
+         [Test]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
+
 > [!TIP]
-> 有關建立單元測試的詳細逐步解說，請參閱[針對受控碼建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
+> 如需有關建立單元測試的詳細資訊，請參閱[建立和執行 managed 程式碼的單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
 
 ## <a name="run-unit-tests"></a>執行單元測試
 

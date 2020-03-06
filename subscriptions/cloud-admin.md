@@ -3,15 +3,15 @@ title: 設定每月訂閱的系統管理員 |Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 03/02/2020
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: 設定每月訂閱的系統管理員
-ms.openlocfilehash: d9ae6f8aac48b9d54b851d543a72fd98854c1131
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: a5d7c6e9442efd70ea3e7c2b7e7da4239e226aa2
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235208"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78289837"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>設定 Visual Studio 每月訂閱的系統管理員
 
@@ -33,13 +33,21 @@ Visual Studio 的每月訂閱都是由系統管理員所管理。 這些人可�
 
 1. 連線到 Azure 入口網站：[portal.azure.com](https://portal.azure.com)。
 2. 使用您用來購買 Visual Studio 每月訂閱的帳戶登入。
-3. 在左側瀏覽窗格中，向下捲動至 [成本管理 + 計費]。
+3. 在 [ **Azure 服務**] 底下，選擇 [**成本管理 + 帳單**]。
+   > [!div class="mx-imgBorder"]
+   > ![選擇 [Azure 服務] 下的 [成本管理 + 帳單]](_img/cloud-admin/azure-cost-billing.png)
 4. 在 [我的訂閱] 清單中，選擇您用來進行購買的 Azure 訂用帳戶。
-5. 按一下 [存取控制]，它位在左側瀏覽窗格中的清單頂端附近。
+   > [!div class="mx-imgBorder"]
+   > ![選擇訂用帳戶](_img/cloud-admin/subscription-list.png)
+5. 按一下 [**存取控制（IAM）** ]，位於左側流覽窗格中的清單頂端附近。
 6. 按一下頁面頂端的 [新增] 索引標籤。
 7. 按一下 [新增角色指派]。
+   > [!div class="mx-imgBorder"]
+   > ![選擇 [存取控制]、[新增]、[新增角色指派]](_img/cloud-admin/access-control-add.png)
 8. 在右側的飛出窗格中，按一下窗格頂端的 [角色] 下拉式清單，向下捲動並選取 [使用者存取系統管理員]。
 9. 在使用者清單中，向下捲動至您想要設為系統管理員的使用者，並加以選取。 
+   > [!div class="mx-imgBorder"]
+   > ![選擇角色、使用者存取系統管理員](_img/cloud-admin/add-role-user-access-admin.png)
 10. 按一下 [檔案]。
 11. 按一下 [角色指派] 索引標籤，確認您選取的使用者現在會顯示為 [使用者存取系統管理員]。
 
