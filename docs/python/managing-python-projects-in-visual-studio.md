@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254208"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409065"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 專案
 
@@ -41,7 +41,7 @@ Visual Studio 提供各種 Python 專案範本，可讓您快速設定一些應�
 
 |   |   |
 |---|---|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [深入了解：Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (深度剖析：使用原始檔控制搭配 Python 專案) (youtube.com，8 分 55 秒)。 |
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [深入探討：使用原始檔控制搭配 Python 專案](https://youtu.be/Aq8eqApnugM)（youtube.com、8m 分55秒）。 |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>新增檔案、指派啟動檔案及設定環境
 
@@ -98,13 +98,13 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 ### <a name="create-a-project-from-existing-files"></a>從現有的檔案建立專案
 
 > [!Important]
-> 此處所述的程序不會移動或複製原始來源檔案。 如果您想要使用複本，請先複製資料夾。
+> 此處所述的處理序不會移動或複製原始程式檔。 如果您想要使用複本，請先複製資料夾。
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
 ## <a name="linked-files"></a>連結的檔案
 
-連結的檔案就是已導入專案中但通常位於應用程式專案資料夾外的檔案。 它們在 [方案總管] 中會顯示為具有重疊捷徑圖示的一般檔案：![連結的檔案圖示](media/projects-linked-file-icon.png)
+連結的檔案就是已導入專案中但通常位於應用程式專案資料夾外的檔案。 它們在 [方案總管] 中會顯示為帶有重疊捷徑圖示的一般檔案：![連結的檔案圖示](media/projects-linked-file-icon.png)
 
 連結的檔案是在 *.pyproj* 檔案中使用 `<Compile Include="...">` 元素來指定的。 如果連結的檔案使用目錄結構以外的相對路徑，則為隱含的連結檔案；如果連結的檔案使用 [方案總管] 內的路徑，則為明確的連結檔案：
 
@@ -131,7 +131,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 
 您無法重新命名連結的檔案。
 
-## <a name="references"></a>reference
+## <a name="references"></a>參考
 
 Visual Studio 專案支援新增對專案和延伸模組的參考，這些參考會顯示在 [方案總管] 中的 [參考] 節點底下：
 

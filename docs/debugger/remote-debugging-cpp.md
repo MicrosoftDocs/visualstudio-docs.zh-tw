@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730316"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409399"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>在 Visual Studio 中C++遠端偵錯專案
 若要在不同的電腦上進行 Visual Studio 應用程式的偵測，請在您要部署應用程式的電腦上安裝並執行遠端工具、將專案設定為從 Visual Studio 連接到遠端電腦，然後部署並執行您的應用程式。
@@ -75,7 +75,7 @@ ms.locfileid: "72730316"
    |連線|遠端使用 Windows 驗證|
    |偵錯工具類型|僅限原生|
    |部署目錄|C:\remotetemp.|
-   |要部署的其他檔案|C:\data\mymfcdata.txt.|
+   |其他要部署的檔案|C:\data\mymfcdata.txt.|
 
     如果您部署其他檔案（選擇性），則此資料夾必須存在於兩部電腦上。
 
@@ -91,7 +91,7 @@ ms.locfileid: "72730316"
 
 10. 如果出現提示，請輸入網路認證以連線到遠端電腦。
 
-     所需的認證是您的網路安全性設定所特有。 例如，在網域電腦上，您可以選擇安全性憑證，或輸入您的功能變數名稱和密碼。 在非網域電腦上，您可能會輸入電腦名稱稱和有效的使用者帳戶名稱（例如<strong>MJO-DL\name@something.com</strong>），以及正確的密碼。
+     所需的認證是您的網路安全性設定所特有。 例如，在網域電腦上，您可以選擇安全性憑證，或輸入您的功能變數名稱和密碼。 在非網域電腦上，您可能會輸入電腦名稱稱和有效的使用者帳戶名稱（例如<strong>MJO-DL\name@something.com</strong>）以及正確的密碼。
 
 11. 在 Visual Studio 的電腦上，您應該會看到執行過程在中斷點停止。
 
@@ -106,7 +106,7 @@ ms.locfileid: "72730316"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

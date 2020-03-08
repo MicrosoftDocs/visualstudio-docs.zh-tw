@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591550"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409542"
 ---
 # <a name="test-generation"></a>測試產生
 
@@ -168,7 +168,7 @@ public void Test2([PexAssumeNotNull] object o)
 ```
 
 <a name="precondition"></a>
-## <a name="precondition"></a>前置條件
+## <a name="precondition"></a>先決條件
 
 方法的前置條件會以方法能夠成功的條件表示。
 
@@ -235,11 +235,11 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>進一步閱讀
+## <a name="further-reading"></a>深入閱讀
 
 * [程式碼繫結測試](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [一項掌控全場的測試](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 
-## <a name="got-feedback"></a>有任何意見反應嗎？
+## <a name="got-feedback"></a>有人給您意見嗎？
 
 在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 305c562c7600dc6955ce0307db92f4e257fc1c21
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596628"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410246"
 ---
 # <a name="extend-dependency-diagrams"></a>擴充相依性圖表
 
@@ -35,7 +35,7 @@ ms.locfileid: "75596628"
 
 您必須在想要執行圖層擴充功能的電腦上安裝適當版本的 Visual Studio。 若要查看哪些版本的 Visual Studio 支援相依性圖表，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [相依性圖表︰參考](../modeling/layer-diagrams-reference.md)
 - [相依性圖表︰方針](../modeling/layer-diagrams-guidelines.md)
