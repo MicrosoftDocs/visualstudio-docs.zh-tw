@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596043"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410477"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>歡迎使用 Visual Studio IDE | Visual Basic
 
@@ -104,7 +104,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - 搜尋方塊
 
-   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，搜尋方塊提供的結果可開啟 Visual Studio 安裝程式，安裝工作負載或個別元件。
+   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，搜尋方塊提供的結果可開啟 Visual Studio 安裝程式來安裝工作負載或個別元件。
 
    > [!TIP]
    > 按 **Ctrl**+**Q** 是啟動搜尋方塊的捷徑。
@@ -237,7 +237,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 2. 在功能表列上，選擇 [工具] > [選項] 來開啟 [選項] 對話方塊。
 
-3. 在 [環境] > [一般] 選項頁面上，將 [色彩佈景主題] 選項變更為 [深色]，然後選擇 [確定]。
+3. 在 [環境] >  [一般] 選項頁面上，將 [色彩佈景主題] 選項變更為 [深色]，然後選擇 [確定]。
 
    ![在 Visual Studio 中將色彩佈景主題變更為深色](media/change-color-theme.png)
 
@@ -447,7 +447,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
    > [!TIP]
    > <xref:System.Console.Write%2A?displayProperty=nameWithType> 與 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> 稍有不同，它不會在列印之後新增行結束字元。 這表示傳送至輸出的下一段文字會列印在同一行。 您可以將滑鼠移至程式碼中每個方法上方來查看其描述。
 
-7. 接下來，我們將再使用一次重構，讓程式碼更精簡。 按一下 `Dim now = Date.Now` 行中的變數 `now`。
+7. 接下來，我們將再使用一次重構，讓程式碼更精簡。 按一下 `now` 行中的變數 `Dim now = Date.Now`。
 
    請注意，該行的邊界會出現一個小螺絲起子圖示。
 
@@ -509,7 +509,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 > [!div class="nextstepaction"]
 > [了解專案與解決方案](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - 探索[更多 Visual Studio 功能](../../ide/advanced-feature-overview.md)
 - 瀏覽 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea3d2a1e82e92473859fef29754fbb831cf3685b
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74904039"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409340"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>利用監看式視窗和快速監看變數
 
@@ -30,7 +30,7 @@ ms.locfileid: "74904039"
 
 **[監看**式視窗] 可以在進行調試時，一次顯示數個變數。 [**快速**監看式] 對話方塊一次只會顯示一個變數，而且必須先關閉，才能繼續進行調試。
 
-如果這是您第一次嘗試偵錯工具代碼，您可能會想要在進行本文之前，先閱讀適用于徹底初學者和[偵錯工具技術和工具](../debugger/write-better-code-with-visual-studio.md) [的偵錯工具](../debugger/debugging-absolute-beginners.md)。
+如果這是您第一次嘗試偵錯工具代碼，您可能會想要在進行本文之前，先閱讀適用于徹底初學者和[偵錯工具技術和工具](../debugger/write-better-code-with-visual-studio.md)[的偵錯工具](../debugger/debugging-absolute-beginners.md)。
 
 ## <a name="observe-variables-with-a-watch-window"></a>觀察具有監看式視窗的變數
 
@@ -302,7 +302,7 @@ static void Main(string[] args)
 
 1. 繼續偵錯。 您可以在 [**監看**式] 視窗中觀察變數。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [什麼是偵錯？](../debugger/what-is-debugging.md)
 - [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)
 - [第一次查看調試](../debugger/debugger-feature-tour.md)

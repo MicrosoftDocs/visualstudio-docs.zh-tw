@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3c8259841af4511bd782bca1be222353634638f5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75569500"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409890"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>在 Visual Studio 中產生建構函式
 
@@ -56,7 +56,7 @@ ms.locfileid: "75569500"
 
    [選取成員] 對話方塊隨即開啟。
 
-1. 選取您想要納入為建構函式參數的成員。 您可以使用向上鍵和向下鍵加以排序。 選擇 [ **確定**]。
+1. 選取您想要納入為建構函式參數的成員。 您可以使用向上鍵和向下鍵加以排序。 選擇 [確定]。
 
    ![[選取成員] 對話方塊](media/constructor1-dialog-cs.png)
 
@@ -93,7 +93,7 @@ ms.locfileid: "75569500"
 
 1. 將游標放在有紅色曲線的行上。 紅色波浪線表示尚不存在的建構函式呼叫。
 
-   - C#:
+   - C#：
 
        ![醒目提示的程式碼 C#](media/constructor-highlight-cs.png)
 
@@ -107,19 +107,19 @@ ms.locfileid: "75569500"
       - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 出現的圖示。
-      - 按一下 ![錯誤燈泡](media/error-bulb.png) 圖示，如果文字游標已經在具有紅色曲線的行上，此圖示就會出現在左邊界上。
+      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 圖示。
+      - 按一下 ![錯誤燈泡](media/error-bulb.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
 
       ![「產生建構函式」預覽](media/constructor-preview-cs.png)
 
-3. 從下拉式功能表選取 [在 '*TypeName*' 中產生建構函式 ]。
+3. 從下拉式功能表選取 [在 '**TypeName *' 中產生建構函式 ]*** 。
 
    > [!TIP]
    > 請使用位於預覽視窗底部的 [預覽變更] 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
 
    建構函式隨即建立，而任何參數會從使用方式推斷。
 
-   - C#:
+   - C#：
 
        ![產生方法結果 C#](media/constructor-result-cs.png)
 
@@ -141,8 +141,8 @@ ms.locfileid: "75569500"
       - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 出現的圖示。
-      - 按一下 ![錯誤燈泡](media/error-bulb.png) 圖示，如果文字游標已經在具有紅色曲線的行上，此圖示就會出現在左邊界上。
+      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 圖示。
+      - 按一下 ![錯誤燈泡](media/error-bulb.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
 
       ![「產生建構函式」預覽](media/constructor4-preview-cs.png)
 
@@ -178,7 +178,7 @@ ms.locfileid: "75569500"
 
    ![「產生建構函式」結果](media/constructor5-result-cs.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [程式碼產生](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

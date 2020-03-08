@@ -7,11 +7,11 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: 了解如何在管理入口網站中設定語言、連絡人、訂用帳戶層級及其他喜好設定
 ms.openlocfilehash: 63bce3bf7cdd9b5152e1939b708318fc48985fc1
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78234906"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410401"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>在管理入口網站中設定您合約的喜好設定
 超級管理員可以在系統管理入口網站（管理入口網站）中設定特定的喜好設定，以供每個合約全域套用。  這些喜好設定會在新增訂閱者時，自動填入系統管理員的訂用帳戶詳細資料，而且只能由超級管理員進行全域修改。  

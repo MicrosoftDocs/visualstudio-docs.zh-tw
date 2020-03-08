@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594301"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409540"
 ---
 # <a name="attribute-glossary"></a>屬性字彙
 
@@ -124,7 +124,7 @@ IntelliTest 會產生傳統的無參數測試，以使用不同的參數來呼�
 參數化單元測試：
 
 * 必須是執行個體方法
-* 對根據[設定瀑布圖](settings-waterfall.md)放入已產生測試的測試類別，必須是[可見](input-generation.md#visibility)
+* 對根據[設定瀑布圖](input-generation.md#visibility)放入已產生測試的測試類別，必須是[可見](settings-waterfall.md)
 * 可以接受任意數目的參數
 * 可以是泛型
 
@@ -245,6 +245,6 @@ class CtorTest(int capacity) {
 
 [詳細資訊](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
 
-## <a name="got-feedback"></a>有任何意見反應嗎？
+## <a name="got-feedback"></a>有人給您意見嗎？
 
 在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。

@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984776"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410445"
 ---
 # <a name="customizing-the-ide"></a>自訂 IDE
 
@@ -60,7 +60,7 @@ Visual Studio for Mac 以下列 14 種語言進行當地語系化，使它可供
 
 填入的 [名稱] 和 [電子郵件] 欄位將在透過 Visual Studio for Mac 中的版本控制進行的任何認可中使用。 如果未填入這些欄位，Visual Studio for Mac 會在您嘗試使用版本控制時提示您這樣做。
 
-## <a name="key-bindings"></a>按鍵繫結
+## <a name="key-bindings"></a>按鍵繫結關係
 
 按鍵繫結可讓您調整您的開發環境，以便能夠在 Visual Studio for Mac 中更有效率地行動。 它提供許多熱門 IDE 的常見按鍵繫結，例如 Visual Studio (在 Windows 上)、ReSharper、Visual Studio Code 和 Xcode。
 
@@ -132,6 +132,6 @@ Visual Studio for Mac 可讓您並排開啟文字編輯器，或以卸離的浮�
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將 Visual Studio IDE 個人化 (在 Windows 上)](/visualstudio/ide/personalizing-the-visual-studio-ide)

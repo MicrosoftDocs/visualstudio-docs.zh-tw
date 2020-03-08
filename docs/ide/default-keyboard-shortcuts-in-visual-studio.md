@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a6d7a8de8c80f32a448753b06c86e576c9c1dec8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596277"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409867"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
@@ -30,12 +30,12 @@ ms.locfileid: "75596277"
 - [鍵盤祕訣](../ide/productivity-shortcuts.md)
 - [生產力祕訣](../ide/productivity-features.md)。
 
-如需 Visual Studio 中協助工具的詳細資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)和[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
+如需 Visual Studio 協助工具的詳細資訊，請參閱[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)與[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
 
 |||||
 |-|-|-|-|
 |[分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[編輯](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[測試](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[Architecture (架構)](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[編輯器操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[專案及方案操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[測試總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
+|[架構](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[編輯器操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[專案及方案操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[測試總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[建置](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[檔案](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[重構](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
 |[類別檢視操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[說明](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[方案總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
 |[偵錯](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[負載測試](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[小組](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[視窗](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
@@ -130,8 +130,8 @@ ms.locfileid: "75596277"
 |Debug.StepIntoSpecific|**Shift+Alt+F11**|
 |Debug.StepOut|**Shift+F11**|
 |Debug.StepOutCurrentProcess|**Ctrl+Shift+Alt+F11**|
-|Debug.StepOver|**F10** （當進行調試時：執行不進入動作的步驟）|
-|Debug.StepOver|**F10** （當不進行偵錯工具時：開始在使用者程式碼的第一行進行偵錯工具和停止）|
+|Debug.StepOver|**F10** (偵錯時：執行不進入函式動作)|
+|Debug.StepOver|**F10** (不偵錯時：啟動偵錯並在使用者程式碼的第一行停止)|
 |Debug.StepOverCurrentProcess|**Ctrl+Alt+F10**|
 |Debug.StopDebugging|**Shift+F5**|
 |Debug.StopPerformanceAnalysis|**Shift+Alt+F2**|
@@ -472,7 +472,7 @@ ms.locfileid: "75596277"
 |Edit.RemovefromDiagram|**刪除**|
 |View.ViewCode|**Enter**|
 
-## <a name="coded-ui-test-editor"></a>自動程式化 UI 測試編輯器
+## <a name="coded-ui-test-editor"></a>自動程式碼 UI 測試編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -536,7 +536,7 @@ ms.locfileid: "75596277"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|None|
+|Debug.Graphics.CaptureFrame|無|
 |Graphics.MovePixelSelectionDown|**Shift+Alt+向下鍵**|
 |Graphics.MovePixelSelectionLeft|**Shift+Alt+向左鍵**|
 |Graphics.MovePixelSelectionRight|**Shift+Alt+向右鍵**|
@@ -1010,7 +1010,7 @@ ms.locfileid: "75596277"
 |-------------| - |
 |Edit.NewString|**插入**|
 
-## <a name="view-designer"></a>檢視表設計工具
+## <a name="view-designer"></a>設計工具檢視
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1160,6 +1160,6 @@ ms.locfileid: "75596277"
 |XsdDesigner.ShowGraphView|**Ctrl+3**|
 |XsdDesigner.ShowStartView|**Ctrl+1**|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](reference/visual-studio-commands.md)

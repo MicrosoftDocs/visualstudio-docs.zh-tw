@@ -19,11 +19,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b5cacba328c48b682fe9069d8ab4a9ee21635db
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74779034"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410181"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：收集網站的效能資料
 
@@ -58,7 +58,7 @@ ms.locfileid: "74779034"
 
     - 若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript] 核取方塊。
 
-6. 按 [ **下一步**]。
+6. 按 [下一步]。
 
 7. 在精靈的第四個頁面上，按一下 [完成]。
 
@@ -92,7 +92,7 @@ ms.locfileid: "74779034"
 
     - 若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript] 核取方塊。
 
-7. 按 [ **下一步**]。
+7. 按 [下一步]。
 
 8. 在精靈的第四個頁面上，按一下 [完成]。
 
@@ -100,7 +100,7 @@ ms.locfileid: "74779034"
 
      分析工具隨即產生資料檔案，並在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 主視窗中顯示資料的 [摘要] 檢視。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [概觀](../profiling/overviews-performance-tools.md)
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)

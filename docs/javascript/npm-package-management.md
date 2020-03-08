@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: de92c3f1f0d0e29d1ba2dfaf5d536a42e636be2c
-ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383743"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409461"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>管理 Visual Studio 中的 npm 套件
 
@@ -62,7 +62,7 @@ npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬
 
 ![搜尋 npm 套件](../javascript/media/solution-explorer-status.png)
 
-### <a name="package-status"></a>套件狀態
+### <a name="package-status"></a>封裝狀態
 * ![已安裝的套件](../javascript/media/installed-npm.png) - 已安裝，並列在 package.json 中
 * ![無直接關聯的套件](../javascript/media/extraneous-npm.png) - 已安裝，但未明確列在 package.json 中
 * ![遺漏套件](../javascript/media/missing-npm.png) - 未安裝，但列在 package.json 中

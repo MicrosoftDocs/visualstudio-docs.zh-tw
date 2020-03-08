@@ -8,11 +8,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589782"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408467"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 建立可攜式自訂編輯器設定
 
@@ -37,7 +37,7 @@ ms.locfileid: "75589782"
 
 ::: moniker range="vs-2017"
 
-您可在 [[格式化](reference/options-text-editor-csharp-formatting.md#format-document-settings)] 選項頁面定義您希望**將文件格式化**套用哪些 EditorConfig 設定。
+您可在 [**格式化**][ **選項頁面定義您希望**將文件格式化](reference/options-text-editor-csharp-formatting.md#format-document-settings)套用哪些 EditorConfig 設定。
 
 ::: moniker-end
 
@@ -66,7 +66,7 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](https://editorconfig.o
 - 字元集
 - trim\_trailing_whitespace
 - insert\_final_newline
-- 根
+- root
 
 除了 XML 以外的所有 Visual Studio 支援語言都支援 EditorConfig 編輯器設定。 此外，EditorConfig 支援[程式碼樣式](../ide/editorconfig-code-style-settings-reference.md)慣例，包括 C# 和 Visual Basic 的[語言](../ide/editorconfig-language-conventions.md)、[格式](../ide/editorconfig-formatting-conventions.md)和[命名](../ide/editorconfig-naming-conventions.md) 慣例。
 
@@ -104,7 +104,7 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](https://editorconfig.o
 
 - 適用於 Visual Studio 之 IntelliCode 的[程式碼推斷功能](/visualstudio/intellicode/code-style-inference)可從現有程式碼推斷程式碼樣式。 然後它會使用已定義的程式碼樣式喜好設定來建立非空白的 EditorConfig 檔案。
 
-- 從 Visual Studio 2019 開始，您可以[以 [工具] > [選項] 中的程式碼樣式設定為基礎產生 EditorConfig 檔案](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files)。
+- 從 Visual Studio 2019 開始，您可以[以 [工具]](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files)[選項] >  **中的程式碼樣式設定為基礎產生 EditorConfig 檔案**。
 
 ## <a name="file-hierarchy-and-precedence"></a>檔案階層和優先順序
 
@@ -114,7 +114,7 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](https://editorconfig.o
 
 ![EditorConfig 階層](../ide/media/vside_editorconfig_hierarchy.png)
 
-如果要覆寫部分而不是全部設定，請在 *.editorconfig* 檔案中僅指定那些設定。 只有明確列在較低層級檔案中的屬性才會被覆寫。 較高層級 *.editorconfig* 檔案中的其他設定仍繼續套用。 如果想要確保「不」套用「任何」較高層級 *.editorconfig* 檔案的設定到此程式碼基底組件，請在較低層級的 *.editorconfig* 檔案中新增 ```root=true``` 屬性：
+如果要覆寫部分而不是全部設定，請在 *.editorconfig* 檔案中僅指定那些設定。 只有明確列在較低層級檔案中的屬性才會被覆寫。 較高層級 *.editorconfig* 檔案中的其他設定仍繼續套用。 如果想要確保「不」套用「任何」較高層級 *.editorconfig* 檔案的設定到此程式碼基底組件，請在較低層級的 ```root=true```.editorconfig*檔案中新增* 屬性：
 
 ```ini
 # top-most EditorConfig file
@@ -166,7 +166,7 @@ indent_style = tab
 
    **「此檔案類型的使用者偏好由此專案的編碼慣例覆寫。」**
 
-這表示，如果 [工具] > [選項] > [文字編輯器] 中的任何編輯器設定 (例如縮排大小及樣式、定位點大小或編碼慣例) 是在 EditorConfig 檔案中等於或高於目錄結構中的專案位置所指定，EditorConfig 檔案中的慣例就會覆寫 [選項] 中的設定。 您可以透過切換 [工具] > [選項] > [文字編輯器] 中的 [遵循專案編碼慣例] 選項來控制這個行為。 取消選取此選項會關閉 Visual Studio 的 EditorConfig 支援。
+這表示，如果 [工具] > [選項] > [文字編輯器] 中的任何編輯器設定 (例如縮排大小及樣式、定位點大小或編碼慣例) 是在 EditorConfig 檔案中等於或高於目錄結構中的專案位置所指定，EditorConfig 檔案中的慣例就會覆寫 [選項] 中的設定。 您可以透過切換 [工具] **[選項]**  >  **[文字編輯器]**  >  中的 [遵循專案編碼慣例] 選項來控制這個行為。 取消選取此選項會關閉 Visual Studio 的 EditorConfig 支援。
 
 ![編碼選項 - 遵循專案編碼慣例](media/coding_conventions_option.png)
 
@@ -176,9 +176,9 @@ indent_style = tab
 dir .editorconfig /s
 ```
 
-您可以在存放庫根目錄或專案所在目錄的 *.editorconfig* 檔案中設定 ```root=true``` 屬性，以控制 EditorConfig 慣例範圍。 Visual Studio 會在已開啟檔案的目錄和每個父目錄中尋找名為 *.editorconfig* 的檔案。 達到根檔案路徑，或者如果找到 ```root=true``` 的 *.editorconfig* 檔案時，搜尋就會結束。
+您可以在存放庫根目錄或專案所在目錄的 ```root=true```.editorconfig*檔案中設定* 屬性，以控制 EditorConfig 慣例範圍。 Visual Studio 會在已開啟檔案的目錄和每個父目錄中尋找名為 *.editorconfig* 的檔案。 達到根檔案路徑，或者如果找到 *的*.editorconfig```root=true``` 檔案時，搜尋就會結束。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [.NET 程式碼樣式慣例](../ide/editorconfig-code-style-settings-reference.md)
 - [為語言服務支援 EditorConfig](../extensibility/supporting-editorconfig.md)

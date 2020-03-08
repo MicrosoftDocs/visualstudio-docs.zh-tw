@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592473"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410114"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>逐步解說： Debug XSLT 樣式表單
 
@@ -155,6 +155,6 @@ ms.locfileid: "75592473"
 </bookstore>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯 XSLT](../xml-tools/debugging-xslt.md)

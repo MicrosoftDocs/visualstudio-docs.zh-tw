@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911495"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409321"
 ---
 # <a name="graphics-event-list"></a>圖形事件清單
 使用 Visual Studio 圖形分析器中的 [圖形事件清單]，來探索在轉譯遊戲或應用程式的畫面格時所記錄的 Direct3D 事件。
@@ -105,13 +105,13 @@ Visual Studio 2017 和更新版本包含**資源歷程記錄**視窗。  選取 
 
 這個視窗可讓您在 [事件清單] 中查看所選取專案的歷程記錄。  頂端的下拉式清單可用來選取其他專案，以查看的歷程記錄。  視窗的上半部包含**框架設定事件**。  這些是屬於 [*建立*類型] 類別的事件，而且是通常會初始化並建立資源的呼叫。  視窗的下半部包含 [畫面格**事件**] 區段。  這些是在資源使用期間發生的一般讀取和寫入事件。
 
-| Column | 描述 |
+| 資料行 | 描述 |
 |-----------| - |
-| **Type** | 顯示專案的類型，通常是*建立*、*讀取*和*寫入*。 |
+| **型別** | 顯示專案的類型，通常是*建立*、*讀取*和*寫入*。 |
 | **檢視** | 顯示該時間點的資源縮圖。  按兩下縮圖，在該時間開啟資源的詳細資料檢視。 |
-| **Event** | 顯示產生事件所發生的方法呼叫。  您可以選取 [監看式] 圖示，![監看式圖示](media/gfx_watch.png) 在適當的行，來查看個別專案的任何其他記錄。  此外，您可以選取任何以藍色文字繪製的專案（如上方螢幕擷取畫面中的 `m_commandList`），以取得更多詳細資料。 |
+| **事件** | 顯示產生事件所發生的方法呼叫。  您可以選取 [監看式] 圖示，![監看式圖示](media/gfx_watch.png) 在適當的行，來查看個別專案的任何其他記錄。  此外，您可以選取任何以藍色文字繪製的專案（如上方螢幕擷取畫面中的 `m_commandList`），以取得更多詳細資料。 |
 
 <!-- /VERSIONLESS -->
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [逐步解說：因裝置狀態而遺漏的物件](walkthrough-missing-objects-due-to-device-state.md)

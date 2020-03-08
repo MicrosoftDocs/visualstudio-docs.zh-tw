@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594119"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409431"
 ---
 # <a name="framework-targeting-overview"></a>Framework 目標概觀
 
@@ -120,7 +120,7 @@ Framework 目標包括下列功能：
 
 當您以 .NET Framework 3.5 或更新版本為目標時，會自動新增 **System.Core** 的參考與 <xref:System.Linq> 的專案層級匯入 (僅限 Visual Basic)。 如果要使用 LINQ 功能，您必須同時開啟 `Option Infer` (僅限 Visual Basic)。 如果將目標變更為舊版 .NET Framework，就會自動移除參考和匯入。 如需詳細資訊，請參閱[使用 LINQ](/dotnet/csharp/tutorials/working-with-linq)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [目標架構](/dotnet/standard/frameworks)
 - [多目標 (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)

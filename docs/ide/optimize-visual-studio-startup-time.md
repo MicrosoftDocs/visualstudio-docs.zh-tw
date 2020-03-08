@@ -15,11 +15,11 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 4824939b4ef3ed1bc7fa48b2508fc891c984a3c5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585778"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408388"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>最佳化 Visual Studio 啟動時間
 
@@ -37,7 +37,7 @@ Visual Studio 設計旨在盡可能快速且有效率地啟動。 不過，某�
 
 ## <a name="a-nameextensions-to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />變更延伸模組設定以改善啟動、解決方案載入，以及鍵入效能
 
-1. 從功能表列選擇 [說明] > [管理 Visual Studio 效能]，開啟 [管理 Visual Studio 效能] 對話方塊。
+1. 從功能表列選擇 [說明] **[管理 Visual Studio 效能]**  > ，開啟 [管理 Visual Studio 效能] 對話方塊。
 
     如果某個延伸模組讓 Visual Studio 啟動、解決方案載入或鍵入變慢，該延伸模組會出現在 [管理 Visual Studio 效能] 對話方塊的 [延伸模組] > [啟動] 下 (或 [解決方案載入] 或 [鍵入])。
 
@@ -49,7 +49,7 @@ Visual Studio 設計旨在盡可能快速且有效率地啟動。 不過，某�
 
 ## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />變更工具視窗設定以改善啟動時間
 
-1. 從功能表列選擇 [說明] > [管理 Visual Studio 效能]，開啟 [管理 Visual Studio 效能] 對話方塊。
+1. 從功能表列選擇 [說明] **[管理 Visual Studio 效能]**  > ，開啟 [管理 Visual Studio 效能] 對話方塊。
 
     如果工具視窗讓 Visual Studio 啟動時速度變慢，工具視窗會顯示在 [管理 Visual Studio 效能] 對話方塊的 [工具視窗] > [啟動] 下。
 
@@ -68,7 +68,7 @@ Visual Studio 設計旨在盡可能快速且有效率地啟動。 不過，某�
 > [!NOTE]
 > Visual Studio 2017 的部分早期版本有一項稱為**輕量型解決方案載入**的功能。 在目前版本中，即便不使用輕量型解決方案載入，含有受控碼的大型解決方案載入速度也比過去更快。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [最佳化 Visual Studio 效能](../ide/optimize-visual-studio-performance.md)
 - [Visual Studio 效能祕訣和訣竅](../ide/visual-studio-performance-tips-and-tricks.md)

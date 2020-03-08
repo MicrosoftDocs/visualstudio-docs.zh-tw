@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d699dd74315cfc36820c1cdb4120543e0290b1a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587507"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408732"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>如何：啟用和停用 managed 程式碼的完整解決方案分析
 

@@ -9,11 +9,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 843829c56fcbd2f5c558d7c4a8b14a660a431eac
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558228"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410536"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio 的影像和圖示
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ ms.locfileid: "77558228"
 
 ### <a name="style-details"></a>樣式詳細資料
 
-#### <a name="layout"></a>版面配置
+#### <a name="layout"></a>配置
  標準16x16 圖示所顯示的堆疊元素：
 
  ![16x16 圖示的版面配置堆疊](../../extensibility/ux-guidelines/media/0404-15-layoutstack.png "0404-15_LayoutStack")
@@ -165,7 +165,7 @@ ms.locfileid: "77558228"
 
  ![正確的圖示角度](../../extensibility/ux-guidelines/media/0404-30-iconanglescorrect.png "0404-30_IconAnglesCorrect")
 
-#### <a name="perspective"></a>檢視方塊
+#### <a name="perspective"></a>透視圖
  讓圖示保持清楚明瞭。 只有在必要時，才使用透視圖和光源。 雖然應避免使用 icon 元素的觀點，但有些元素無法辨識。 在這種情況下，有風格的觀點會傳達元素的清晰度。
 
  ![3&#45;點觀點](../../extensibility/ux-guidelines/media/0404-31-3pointperspective.png "0404-31_3PointPerspective")
@@ -306,7 +306,7 @@ ms.locfileid: "77558228"
 ### <a name="base-palette"></a>基本調色板
  所有標準圖示都包含三種基本色彩。 圖示不包含漸層或陰影，有一或兩個3D 工具圖示的例外狀況。
 
-|使用量|名稱|值（淺色主題）|色樣|範例|
+|使用方式|名稱|值（淺色主題）|色樣|範例|
 |-----------|----------|---------------------------|------------|-------------|
 |背景/深色|VS BG|424242/66、66、66|![色板424242](../../extensibility/ux-guidelines/media/0405-424242.png "0405_424242")|![基本調色板範例](../../extensibility/ux-guidelines/media/0405-02-basepaletteexample.png "0405-02_BasePaletteExample")|
 |前景/淺色|VS FG|F0EFF1/240239241|![樣本 F0EFF1](../../extensibility/ux-guidelines/media/0405-f0eff1.png "0405_F0EFF1")||
@@ -319,10 +319,10 @@ ms.locfileid: "77558228"
 #### <a name="action-modifiers"></a>動作修飾詞
  下列四種色彩表示動作修飾詞所需的動作類型：
 
-|使用量|名稱|值（所有主題）|色樣|
+|使用方式|名稱|值（所有主題）|色樣|
 |-----------|----------|--------------------------|------------|
 |Positive|VS 動作綠色|388A34/56138、52|![樣本388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
-|Neutral|VS 動作紅色|A1260D/161、38、13|![樣本 A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
+|負面|VS 動作紅色|A1260D/161、38、13|![樣本 A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
 |中性|VS 動作 Blue|00539C/0、83156|![樣本00539C](../../extensibility/ux-guidelines/media/0405-00539c.png "0405_00539C")|
 |建立/新增|VS 動作橙色|C27D1A/194156，26|![樣本 C27D1A](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 
@@ -360,16 +360,16 @@ ms.locfileid: "77558228"
 
 ### <a name="code-hierarchy-palette"></a>程式碼階層調色板
 
-#### <a name="folder"></a>資料夾
+#### <a name="folder"></a>Folder
 
-|使用量|名稱|值（所有主題）|色樣|範例|
+|使用方式|名稱|值（所有主題）|色樣|範例|
 |-----------|----------|--------------------------|------------|-------------|
-|資料夾|資料夾|DCB67A/220182122|![樣本 DCB67A](../../extensibility/ux-guidelines/media/0405-dcb67a.png "0405_DCB67A")|![資料夾色彩圖示](../../extensibility/ux-guidelines/media/0405-23-foldercolor.png "0405-23_FolderColor")|
+|資料夾|Folder|DCB67A/220182122|![樣本 DCB67A](../../extensibility/ux-guidelines/media/0405-dcb67a.png "0405_DCB67A")|![資料夾色彩圖示](../../extensibility/ux-guidelines/media/0405-23-foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio 語言
  Visual Studio 中所提供的每個通用語言或平臺都有相關聯的色彩。 這些色彩會用於基底圖示，或出現在複合圖示右上角的語言修飾詞上。
 
-|使用量|名稱|值（所有主題）|色樣|
+|使用方式|名稱|值（所有主題）|色樣|
 |-----------|----------|--------------------------|------------|
 |ASP、HTML、WPF|ASP HTML WPF 藍色|0095D7/0149215|![樣本0095D7](../../extensibility/ux-guidelines/media/0405-0096d7.png "0405_0096D7")|
 |C++|CPP 紫色|9B4F96/155、79150|![樣本9B4F96](../../extensibility/ux-guidelines/media/0405-9b4f96.png "0405_9B4F96")|
@@ -391,7 +391,7 @@ ms.locfileid: "77558228"
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense 圖示使用專有色板。 這些色彩是用來協助使用者快速分辨 IntelliSense 快顯清單中的不同專案。
 
-|使用量|名稱|值（所有主題）|色樣|
+|使用方式|名稱|值（所有主題）|色樣|
 |-----------|----------|--------------------------|------------|
 |Class、Event|VS 動作橙色|C27D1A/194125，26|![樣本 C27D1A](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 |擴充方法，方法，模組，委派|VS 動作紫色|652D90/101、45144|![樣本652D90](../../extensibility/ux-guidelines/media/0405-652d90.png "0405_652D90")|
@@ -409,7 +409,7 @@ ms.locfileid: "77558228"
 ### <a name="notifications"></a>通知
  Visual Studio 中的通知是用來表示狀態。 通知選擇區會使用下列四種色彩，以及黑色或白色前景填滿選項，來定義具有下列狀態層級的通知。
 
-|使用量|名稱|值（所有主題）|色樣|
+|使用方式|名稱|值（所有主題）|色樣|
 |-----------|----------|--------------------------|------------|
 |狀態：中性|通知藍色（VS 藍色）|1BA1E2/27161226|![樣本1BA1E2](../../extensibility/ux-guidelines/media/0405-1ba1e2.png "0405_1BA1E2")|
 |狀態：正面|通知綠色（VS 綠色）|339933/51153，51|![色板339933](../../extensibility/ux-guidelines/media/0405-339933.png "0405_339933")|
@@ -427,14 +427,14 @@ ms.locfileid: "77558228"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  一般來說，Visual Studio Online 是由瀏覽器中裝載的功能所組成。 色彩會因不同的環境而有所不同，但樣式會維持不變。
 
-|群組|使用量|名稱|值（所有主題）|色樣|
+|群組|使用方式|名稱|值（所有主題）|色樣|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|背景|TFSO BG|656565/101、101、101|![色板656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405_656565")|
 |TFS|外框|TFSO 輸出|FFFFFF/255、255、255|![樣本 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |Napa|背景|白色|FFFFFF/255、255、255|![樣本 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |摩納哥|背景|白色|FFFFFF/255、255、255|![樣本 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |F12|背景|白色|FFFFFF/255、255、255|![樣本 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|F12|正常|F12 Grey_Primary|555555/85、85、85|![色板555555](../../extensibility/ux-guidelines/media/0405-555555.png "0405_555555")|
+|F12|一般|F12 Grey_Primary|555555/85、85、85|![色板555555](../../extensibility/ux-guidelines/media/0405-555555.png "0405_555555")|
 |F12|暫留|F12 Blue_Hover|2279BF/34121191|![樣本2279BF](../../extensibility/ux-guidelines/media/0405-2279bf.png "0405_2279BF")|
 |F12|已停用|F12 LtGrey_Disabled|ABABAC/171171172|![樣本 ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
 |F12|暫留背景|暫留 bg|D9EBF7/217235247|![樣本 D9EBF7](../../extensibility/ux-guidelines/media/0405-d9ebf7.png "0405_D9EBF7")|

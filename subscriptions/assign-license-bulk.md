@@ -7,11 +7,11 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: 瞭解系統管理員如何使用大量新增功能或 Microsoft Azure Active Directory 群組，將授權指派給多個訂閱者
 ms.openlocfilehash: c8ea294f0e4b2b4deae18e2f5644bf08fff0dfc2
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263340"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410412"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
@@ -100,7 +100,7 @@ ms.locfileid: "78263340"
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>問：我可以編輯 Azure AD 群組中新增之個人的訂閱者詳細資料嗎？  
 答：否--若要修改個別訂閱者的資訊，您必須將其從 Azure AD 安全性群組中移除，並個別為其指派訂用帳戶。  
 
-### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>問：我已將某人新增到我的 Azure AD 安全性群組，但在訂用帳戶系統管理入口網站中看不到它們，而且他們沒有訂用帳戶。 為什麼看不到呢？  
+### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>問：我已將某人新增到我的 Azure AD 安全性群組，但在訂用帳戶系統管理入口網站中看不到它們，而且他們沒有訂用帳戶。 為什麼？  
 答：根據您的組織設定 Azure AD 的方式，您可能會在新增使用者之前，看到最多24小時的延遲。 如果超過24小時，[請聯絡支援](https://visualstudio.microsoft.com/support/support-overview-vs)人員。  
 
 

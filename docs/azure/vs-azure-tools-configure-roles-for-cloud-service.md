@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: ded315917fb0e40159aed327ed98f747bb31c4b1
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253604"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408698"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>使用 Visual Studio 設定 Azure 雲端服務角色
 Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您必須為每個角色定義其設定方式，並設定該角色的執行方式。 若要深入了解雲端服務中的角色，請參閱視訊 [Azure 雲端服務簡介](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)。
@@ -108,13 +108,13 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
     - **名稱** - 輸入您要用於連接字串的名稱。
     - **類型** - 從下拉式清單中選取 [連接字串]。
-    - **值** - 您可以直接將連接字串輸入到 [值] 儲存格中，或選取省略符號 (...) 以在 [建立儲存體連接字串] 對話方塊中作業。
+    - **值** - 您可以直接將連接字串輸入到 值 儲存格中，或選取省略符號 (...) 以在 建立儲存體連接字串 對話方塊中作業。
 
 1. 在 [建立儲存體連接字串] 對話方塊中，針對 [連接方式] 選取一個選項。 針對您選取的選項依照指示操作：
 
-    - **Microsoft Azure 儲存體模擬器** - 如果您選取此選項，對話方塊上的其餘設定會停用，因為它們只會套至 Azure。 選取 [確定]。
-    - **您的訂用帳戶** - 如果您選取此選項，請使用下拉式清單來選取並登入 Microsoft 帳戶，或新增 Microsoft 帳戶。 選取 Azure 訂用帳戶和儲存體帳戶。 選取 [確定]。
-    - **手動輸入的認證** - 輸入儲存體帳戶名稱，以及主要或次要金鑰。 選取 **[連線]** 的 (在大部分情況下建議適用 HTTPS)。選取 [確定]。
+    - **Microsoft Azure 儲存體模擬器** - 如果您選取此選項，對話方塊上的其餘設定會停用，因為它們只會套至 Azure。 選取 **[確定]** 。
+    - **您的訂用帳戶** - 如果您選取此選項，請使用下拉式清單來選取並登入 Microsoft 帳戶，或新增 Microsoft 帳戶。 選取 Azure 訂用帳戶和儲存體帳戶。 選取 **[確定]** 。
+    - **手動輸入的認證** - 輸入儲存體帳戶名稱，以及主要或次要金鑰。 選取 **[連線**] 選項（在大部分的情況下建議使用 HTTPS）。選取 **[確定]** 。
 
 1. 若要刪除連接字串，請選取連接字串，然後選取 [移除設定]。
 

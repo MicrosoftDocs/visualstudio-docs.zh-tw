@@ -28,11 +28,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed425b120d5d47fb684294ce17bd7d48374c638e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591095"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409748"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自訂功能表和工具列
 
@@ -117,7 +117,7 @@ ms.locfileid: "75591095"
 
     您也可以選擇 [全部重設] 按鈕，重設所有功能表和工具列。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [個人化 IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [自訂編輯器](../ide/how-to-change-text-case-in-the-editor.md)
