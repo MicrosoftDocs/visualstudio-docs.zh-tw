@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9f4b044cddee59254e0b4f5198e75e3fa774aab7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 7fd8e886a4f770238c00ef881748388f93281074
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114201"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409691"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 系統管理員指南
 
@@ -115,6 +115,14 @@ ms.locfileid: "76114201"
 
 我們提供數種工具來協助您[偵測和管理用戶端電腦上已安裝的 Visual Studio 執行個體](tools-for-managing-visual-studio-instances.md?view=vs-2019)。
 
+## <a name="advanced-configuration"></a>進階組態
+
+根據預設，Visual Studio 安裝可從錯誤清單 F1 和程式碼連結，在 Bing 搜尋中包含自訂類型。 您可以藉由依原則變更下列登錄機碼的值，將 Visual Studio 設定為停用搜尋機制，使其不包含任何自訂使用者類型：
+
+**"PutCustomTypeInBingSearch" DWORD 0**
+
+登錄位於您私人登錄 hive 的 * Software\Microsoft\VisualStudio\16.0_ {InstanceId} \ Roslyn\Internal\Diagnostics\* 目錄中。 如需如何開啟登錄 hive 的指示，請參閱[編輯 Visual Studio 實例的](tools-for-managing-visual-studio-instances.md?view=vs-2019#editing-the-registry-for-a-visual-studio-instance)登錄。
+
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -154,11 +162,19 @@ ms.locfileid: "76114201"
 
 我們提供數種工具來協助您[偵測和管理用戶端電腦上已安裝的 Visual Studio 執行個體](tools-for-managing-visual-studio-instances.md?view=vs-2017)。
 
+## <a name="advanced-configuration"></a>進階組態
+
+根據預設，Visual Studio 安裝可從錯誤清單 F1 和程式碼連結，在 Bing 搜尋中包含自訂類型。 您可以藉由依原則變更下列登錄機碼的值，將 Visual Studio 設定為停用搜尋機制，使其不包含任何自訂使用者類型：
+
+**"PutCustomTypeInBingSearch" DWORD 0**
+
+登錄位於您私人登錄 hive 的 * Software\Microsoft\VisualStudio\15.0_ {InstanceId} \ Roslyn\Internal\Diagnostics\* 目錄中。 如需如何開啟登錄 hive 的指示，請參閱[編輯 Visual Studio 實例的](tools-for-managing-visual-studio-instances.md?view=vs-2017#editing-the-registry-for-a-visual-studio-instance)登錄。
+
 ::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [命令列參數範例](command-line-parameter-examples.md)
 * [安裝 Visual Studio 離線安裝所需的憑證](install-certificates-for-visual-studio-offline.md)

@@ -10,19 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ead738042b15c955aadb458c527253f3759b934e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633222"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865371"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>具有 RoslynCodeTaskFactory 的 MSBuild 內嵌工作
 
 類似於 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md)，RoslynCodeTaskFactory 使用跨平台 Roslyn 編譯器來產生用於作為內嵌工作的記憶體中工作組件。  RoslynCodeTaskFactory 工作以 .NET Standard 為目標，並且可以使用 .NET Framework 和 .NET Core 執行階段，以及 Linux 和 Mac OS 等其他平台。
 
 >[!NOTE]
->RoslynCodeTaskFactory 僅適用於 MSBuild 15.8 和更新版本。
+>RoslynCodeTaskFactory 僅適用於 MSBuild 15.8 和更新版本。 MSBuild 版本會遵循 Visual Studio 版本，因此在 Visual Studio 15.8 和更新版本中都有提供 RoslynCodeTaskFactory。
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>具有 RoslynCodeTaskFactory 之內嵌工作的結構
 
@@ -164,7 +164,7 @@ Log.LogError("Hello, world!");
 
 - `Tally` 是 System.Int32 類型的輸出參數。
 
-如果 `Code` 項目具有 `Type` 或 `Fragment` 的 `Method` 屬性，則會自動為每個參數建立屬性。 否則，必須在工作原始程式碼中明確宣告屬性，而且屬性必須完全符合它們的參數定義。
+如果 `Code` 項目具有 `Type` 或 `Fragment` 的 `Method` 屬性，則會自動為每個參數建立屬性。  在 RoslynCodeTaskFactory 中，如果 `Code` 專案具有 `Class`的 `Type` 屬性，則您不需要指定 `ParameterGroup`，因為它是從原始程式碼推斷而來的（這與 `CodeTaskFactory`不同）。 否則，必須在工作原始程式碼中明確宣告屬性，而且屬性必須完全符合它們的參數定義。
 
 ## <a name="example"></a>範例
 

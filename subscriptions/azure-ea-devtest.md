@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/23/2020
 ms.topic: conceptual
 description: 瞭解如何利用具有 Enterprise 合約的客戶可使用的特殊 Azure DevTest 定價
-ms.openlocfilehash: 53ff651d0e0de8bbff4d1bc75597a6824957e8e8
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 81075a5e692f610424c60cb38f0a660dfe9c939c
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580101"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410420"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure Enterprise 合約 DevTest 供應專案
 
@@ -25,7 +25,7 @@ ms.locfileid: "77580101"
 
 ## <a name="enable-offers-in-the-ea-portal"></a>在 EA 入口網站中啟用供應專案
 若要啟用供應專案：
-1. 登入 https://ea.azure.com/manage。
+1. 登入 [https://ea.azure.com/manage](https://ea.azure.com/manage)。
 0. 按一下 [**帳戶**] 功能表。
 0. 找出您想要啟用供應專案的帳戶。  如果您有許多帳戶，您可能會想要使用**搜尋**來快速找出帳戶。 
 0. 將滑鼠停留在帳戶名稱上。 
@@ -35,7 +35,7 @@ ms.locfileid: "77580101"
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>在帳戶內建立個別訂閱
 帳戶上的每個訂閱者都可以依照下列步驟來建立訂閱：
-1. 登入 https://account.windowsazure.com/signup?showCatalogs=True。
+1. 登入 [https://account.windowsazure.com/signup?showCatalogs=True](https://account.windowsazure.com/signup?showCatalogs=True)。
 0. 選擇**Enterprise 開發/測試**供應專案。
 0. 按一下核取方塊以確認訂用帳戶是由 Enterprise 合約所控制。 
 0. 按一下 [購買]。  （使用此供應專案時，您實際上不會購買任何專案）。

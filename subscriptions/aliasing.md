@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 登入可能會因為使用別名或易記名稱而失敗
-ms.openlocfilehash: 824d24979d029d4a2de611db092afdbe908f64ea
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: 53b277296e6923bb78717bb76a0c20d2861c29ce
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235120"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865384"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用別名時，登入 Visual Studio 訂用帳戶可能會失敗
 視用於登入的帳戶類型而定，當登入 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 時，可用的訂用帳戶可能無法正確顯示。 其中一個可能的原因是使用「別名」或「易記名稱」，而非使用訂用帳戶指派目標的登入身分識別。 這稱為「別名處理」。
@@ -39,7 +39,7 @@ ms.locfileid: "78235120"
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>如何修正 UPN 不相符的問題
 
-1. 存取 Visual Studio 管理管理入口網站 https://manage.visualstudio.com 
+1. 存取 Visual Studio 管理管理入口網站[https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
 2. 找出具有 UPN 不符問題的訂閱者。 （[篩選](search-license.md)功能可讓您輕鬆地尋找訂閱者）。
 
@@ -55,7 +55,7 @@ ms.locfileid: "78235120"
 
 #### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>如何偵測您的個人訂用帳戶是否受到別名問題影響
 
-1. 登入以 https://my.visualstudio.com/subscriptions
+1. 登入 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)
 
 0. 確認列在頁面右上方的登入電子郵件地址符合您用來登入的位址。  如果登入的電子郵件地址與用來存取網站的電子郵件地址不同，則您的帳戶與別名之間會發生衝突。
 
@@ -81,7 +81,7 @@ Visual Studio 平臺會排定主要別名的優先順序，以顯示訂用帳戶
 - 第二個選項（較不安全）是允許您的訂閱者使用不同于其目錄電子郵件地址的電子郵件地址進行登入。
 
 在系統管理員入口網站中，這兩個選項都是藉由完成下列步驟來設定：  
-1. 登入 https://manage.visualstudio.com 
+1. 登入[https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
 0. 如果您要改變單一使用者，請在資料表中選取該使用者，並以滑鼠右鍵按一下以編輯。 這會開啟一個面板，您可以在其中修改登入電子郵件地址。 在 [登入電子郵件地址] 欄位中進行必要的更新。 按一下 [儲存]，變更就會生效。  
 

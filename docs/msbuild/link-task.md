@@ -30,16 +30,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f954be3a77e42ea4323255f978f6602a70c9725
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633573"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865345"
 ---
 # <a name="link-task"></a>Link 工作
 
-包裝 Microsoft C++連結器工具（ *link .exe*）。 連結器工具會連結通用物件檔案格式 (COFF) 目的檔及程式庫，以建立可執行檔 ( *.exe*) 或動態連結程式庫 (DLL)。 如需詳細資訊，請參閱[連結器選項](/cpp/build/reference/linker-options)。
+包裝 Microsoft C++連結器工具（ *link .exe*）。 連結器工具會連結通用物件檔案格式 (COFF) 目的檔及程式庫，以建立可執行檔 ( *.exe*) 或動態連結程式庫 (DLL)。 如需詳細資訊，請參閱[連結器選項](/cpp/build/reference/linker-options)和[從命令列使用 MSBuild](/cpp/build/msbuild-visual-cpp) ，並[從命令列使用 Microsoft C++工具](/cpp/build/building-on-the-command-line)組。
 
 ## <a name="parameters"></a>參數
 

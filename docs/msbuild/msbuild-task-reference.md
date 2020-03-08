@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633157"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865319"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
 
@@ -37,15 +37,15 @@ ms.locfileid: "77633157"
 
 - [工作基底類別](../msbuild/task-base-class.md)
 
- 將數個參數新增至從 <xref:Microsoft.Build.Utilities.Task> 類別衍生的工作。
+ 將數個參數新增至從 <xref:Microsoft.Build.Utilities.Task> 類別衍生的工作。 不適合直接使用。
 
 - [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)
 
- 將數個參數新增至從 <xref:Microsoft.Build.Tasks.TaskExtension> 類別衍生的工作。
+ 將數個參數新增至從 <xref:Microsoft.Build.Tasks.TaskExtension> 類別衍生的工作。 不適合直接使用。
 
 - [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)
 
- 將數個參數新增至從 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別衍生的工作。
+ 將數個參數新增至從 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別衍生的工作。 不適合直接使用。
 
 - [AL (組件連結器) 工作](../msbuild/al-assembly-linker-task.md)
 
