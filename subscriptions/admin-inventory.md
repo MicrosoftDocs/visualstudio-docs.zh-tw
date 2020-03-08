@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: 了解系統管理員要進行生產前清查的責任
-ms.openlocfilehash: 6d7dd3b49c11e94ffa09bc07bd745582f348763d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 4dec93101cb7399da3cd493af38c0559f0ed9dee
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476733"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78894368"
 ---
 # <a name="inventory-of-pre-production-environment"></a>清查生產前環境
 Visual Studio 訂用帳戶透過計算使用者　(而不是裝置) 來簡化資產管理。
@@ -29,6 +29,12 @@ Visual Studio 系統管理員必須將 Visual Studio 訂用帳戶指派給**特�
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [大量授權條款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>後續步驟
 深入了解系統管理員的責任：
 - [系統管理員責任](admin-responsibilities.md)
@@ -36,9 +42,5 @@ Visual Studio 系統管理員必須將 Visual Studio 訂用帳戶指派給**特�
 - [追蹤使用者指派及處理訂單](assignments-orders.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量
 
-## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+
 

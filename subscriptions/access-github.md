@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: 瞭解新的 Visual Studio + GitHub 供應專案
-ms.openlocfilehash: 5ae209bc0f6b3dcef99f15abd2cfb67d65f655d0
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: f8cfe09d6c9dc7608684ccf80238db4ac066fc20
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476744"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78894389"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>含 GitHub Enterprise 的 Visual Studio 訂用帳戶簡介  
 
@@ -77,12 +77,14 @@ Visual Studio + GitHub Enterprise 訂用帳戶分成兩部份指派：
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 - 取得 GitHub Enterprise 的[技術支援](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 
-## <a name="next-steps"></a>後續步驟
-如果您還不熟悉 GitHub，請前往 [GitHub Learning Lab](https://lab.github.com/) (GitHub 學習實驗室)，這裡會帶您了解一系列有趣又實用的專案，並在過程中提供實用的回饋。
-
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>後續步驟
+如果您還不熟悉 GitHub，請前往 [GitHub Learning Lab](https://lab.github.com/) (GitHub 學習實驗室)，這裡會帶您了解一系列有趣又實用的專案，並在過程中提供實用的回饋。
+
+
 
