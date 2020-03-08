@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589756"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409072"
 ---
 # <a name="project-and-item-templates"></a>專案範本與項目範本
 
@@ -67,7 +67,7 @@ ms.locfileid: "75589756"
 
 如需範本資料夾的詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：建立專案範本](../ide/how-to-create-project-templates.md)
 - [如何：建立項目範本](../ide/how-to-create-item-templates.md)

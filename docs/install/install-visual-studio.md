@@ -21,11 +21,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d8e6e3a857c9bbf5577cf395f698f64cfb11bddc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114565"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409755"
 ---
 # <a name="install-visual-studio"></a>安裝 Visual Studio
 
@@ -135,7 +135,7 @@ ms.locfileid: "76114565"
 
 ## <a name="step-4---choose-workloads"></a>步驟 4 - 選擇工作負載
 
-在安裝程式安裝完畢之後，您可以利用它來選取所需的功能集 (或工作負載) 以自訂您的安裝。 方式如下：
+在安裝程式安裝完畢之後，您可以利用它來選取所需的功能集 (或工作負載) 以自訂您的安裝。 方法如下。
 
  ::: moniker range="vs-2017"
 
@@ -259,7 +259,7 @@ ms.locfileid: "76114565"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [更新 Visual Studio](update-visual-studio.md)
 * [修改 Visual Studio](modify-visual-studio.md)

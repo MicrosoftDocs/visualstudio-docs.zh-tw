@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594860"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409437"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>歡迎使用 Visual Studio IDE | C\#
 
@@ -48,7 +48,7 @@ ms.locfileid: "75594860"
 > [!div class="nextstepaction"]
 > [了解專案與解決方案](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - 探索[更多 Visual Studio 功能](../../ide/advanced-feature-overview.md)
 - 瀏覽 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
