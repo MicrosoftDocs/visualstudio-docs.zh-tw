@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a79f7b781944bb93a60794e748eefb9375723384
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586623"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408749"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 TableAdapter 填入資料集
 
@@ -89,7 +89,7 @@ TableAdapter 類別不是 .NET 型別。 這表示您無法在檔或**物件瀏�
 
 以下是 Tableadapter 常用的方法和屬性：
 
-|成員|描述|
+|member|描述|
 |------------|-----------------|
 |`TableAdapter.Fill`|使用 TableAdapter 的 `SELECT` 命令的結果，填入 TableAdapter 的相關聯資料表。|
 |`TableAdapter.Update`|將變更傳送回資料庫，並傳回代表受更新影響之資料列數目的整數。 如需詳細資訊，請參閱[使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)。|
@@ -126,7 +126,7 @@ TableAdapterManager 類別不是 .NET 型別。 因此，您無法在檔中查�
 
 以下是 `TableAdapterManager` 類別的常用方法和屬性：
 
-|成員|描述|
+|member|描述|
 |------------|-----------------|
 |`UpdateAll` 方法|儲存所有資料表的所有資料。|
 |`BackUpDataSetBeforeUpdate` 屬性|決定在執行 `TableAdapterManager.UpdateAll` 方法之前，是否要建立資料集的備份複本。True.|
@@ -137,6 +137,6 @@ TableAdapterManager 類別不是 .NET 型別。 因此，您無法在檔中查�
 
 當您使用 CommandType 屬性設定為 <xref:System.Data.CommandType.Text>的資料命令時，請仔細檢查從用戶端傳送的資訊，再將它傳遞至您的資料庫。 惡意使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取或破壞資料庫。 將使用者輸入傳送至資料庫之前，請務必確認該資訊是否有效。 最佳做法是盡可能使用參數化查詢或預存程式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [資料集工具](../data-tools/dataset-tools-in-visual-studio.md)

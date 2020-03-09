@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824576"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408783"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
 
@@ -71,7 +71,7 @@ Unity 安裝所隨附的 Visual Studio 版本可能不是最新的。 建議您�
 
    ![選取 [Visual Studio]](media/vstu_unity-external-tools.png)
 
-4. 若已選取 [瀏覽]，請瀏覽到您 Visual Studio 安裝目錄中的 **Common7/IDE** 目錄，然後選取 [devenv.exe]。 接著，按一下 [開啟]。
+4. 若已選取 [瀏覽]，請瀏覽到您 Visual Studio 安裝目錄中的 **Common7/IDE** 目錄，然後選取 [devenv.exe]。 然後按一下 [開啟]。
 
    ![選取 [開啟]](media/vstu_browse-for-application.png)
 

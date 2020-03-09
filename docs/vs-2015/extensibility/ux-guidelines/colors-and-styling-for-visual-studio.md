@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0330ef80fc1127893590ef8d326cb5b8e0cf0160
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291611"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410073"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio 的色彩和樣式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "74291611"
 ## <a name="BKMK_TheVSColorService"></a>VSColor 服務
  Visual Studio 提供環境色彩服務，也稱為 VSColor 服務或 shell color 服務。 這項服務可讓您將 UI 元素的色彩值系結至名稱-值色彩集，其中包含每個主題的色彩。 VSColor 服務必須用於所有 UI 元素，如此一來，色彩就會自動變更以反映目前使用者選取的主題，因此系結至環境色彩服務的 UI 將會與未來 Visual Studio 版本中的新主題進行整合。
 
-### <a name="how-the-service-works"></a>服務的運作方式
+### <a name="how-the-service-works"></a>服務 的運作方式
  環境色彩服務會讀取 UI 元件的 .pkgdef 中所定義的 VSColors。 然後，這些 VSColors 會在 XAML 標記或程式碼中參考，並透過**IVsUIShell5. GetThemedColor**或 DynamicResource 對應來載入。
 
  ![環境色彩服務架構](../../extensibility/ux-guidelines/media/0302-a-environmentcolorservicearchitecture.png "0302-a_EnvironmentColorServiceArchitecture")
@@ -300,11 +300,11 @@ protected override void Dispose(bool disposing)
 ### <a name="usage-patterns"></a>使用模式
  許多常用的 UI 元素已定義高對比色彩。 當您選擇自己的系統色彩名稱時，可以參考這些使用模式，讓您的 UI 元素與類似的元件一致。
 
-|系統色彩|使用方式|
+|系統色彩|使用量|
 |------------------|-----------|
 |ActiveCaption|-使用中 IDE 和 rafted 視窗按鈕在滑鼠停留時顯示圖示<br />-IDE 和 rafted 視窗的標題列背景<br />-預設狀態列背景|
 |ActiveCaptionText|-作用中 IDE 和標題列前景的 rafted 視窗（文字和圖像）<br />-停留並按下使用中視窗按鈕的背景和框線|
-|控制項|-下拉式方塊、下拉式清單，以及搜尋控制項的預設和停用背景，包括下拉式按鈕<br />-停駐目標按鈕背景<br />-命令列背景<br />-工具視窗背景|
+|控制|-下拉式方塊、下拉式清單，以及搜尋控制項的預設和停用背景，包括下拉式按鈕<br />-停駐目標按鈕背景<br />-命令列背景<br />-工具視窗背景|
 |ControlDark|-IDE 背景<br />-功能表和命令列分隔符號<br />-命令列框線<br />-功能表陰影<br />-工具視窗索引標籤預設和暫留框線和分隔符號<br />-檔的溢位按鈕背景<br />-停駐靶心圖表像框線|
 |ControlDarkDark|-未取得焦點，選取的檔索引標籤視窗|
 |ControlLight|-自動隱藏索引標籤框線<br />-下拉式方塊和下拉式清單方塊<br />-停駐目標背景和框線|
@@ -319,7 +319,7 @@ protected override void Dispose(bool disposing)
 |功能表|-下拉式功能表的背景<br />-Checked 和 disabled 核取記號背景|
 |MenuText|-下拉式功能表框線<br />-核取記號檢查<br />-功能表字型<br />-下拉式功能表文字<br />-選取的圖示框線|
 |捲軸|-捲軸和捲軸箭號背景、所有狀態|
-|視窗|-自動隱藏索引標籤背景<br />-功能表列和命令貨位背景<br />-未取得焦點或取消選取的文件視窗索引標籤背景和檔框線，適用于開啟和臨時索引標籤<br />-未取得焦點工具視窗標題列背景<br />-工具視窗索引標籤背景，同時選取和取消選取|
+|時間範圍|-自動隱藏索引標籤背景<br />-功能表列和命令貨位背景<br />-未取得焦點或取消選取的文件視窗索引標籤背景和檔框線，適用于開啟和臨時索引標籤<br />-未取得焦點工具視窗標題列背景<br />-工具視窗索引標籤背景，同時選取和取消選取|
 |Documentsite|-IDE 框線|
 |WindowText|-自動隱藏索引標籤前景<br />-選取的工具視窗索引標籤前景<br />-未取得焦點文件視窗索引標籤和未取得焦點或取消選取的臨時索引標籤前景<br />-樹狀檢視預設前景並停留在未選取的圖像上<br />-工具視窗選取的索引標籤框線<br />-捲軸 thumb 背景、框線和圖像|
 
@@ -348,10 +348,10 @@ protected override void Dispose(bool disposing)
 
  在登錄中填入兩個值：
 
-|Name|輸入|Data|描述|
+|名稱|類型|資料|描述|
 |----------|----------|----------|-----------------|
 |類別|REG_SZ|GUID|建立用來識別類別目錄的 GUID|
-|封裝|REG_SZ|GUID|支援類別目錄之 VSPackage 服務的 GUID|
+|Package|REG_SZ|GUID|支援類別目錄之 VSPackage 服務的 GUID|
 
  登錄中指定的服務必須為對應的分類提供[IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx)的執行。
 
@@ -360,10 +360,10 @@ protected override void Dispose(bool disposing)
 
  在登錄中填入兩個值：
 
-|Name|輸入|Data|描述|
+|名稱|類型|資料|描述|
 |----------|----------|----------|-----------------|
 |類別|REG_SZ|GUID|建立用來識別類別目錄的 GUID|
-|封裝|REG_SZ|GUID|支援類別目錄之 VSPackage 服務的 GUID|
+|Package|REG_SZ|GUID|支援類別目錄之 VSPackage 服務的 GUID|
 
  登錄中指定的服務必須為對應的群組提供**T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup**的執行。
 
@@ -406,7 +406,7 @@ protected override void Dispose(bool disposing)
 
 - 藉由執行[IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx)介面來**處理 IDE 產生的事件**。 在使用者修改 [字型和色彩] 頁面之後，IDE 會呼叫適當的方法。 例如，如果選取了新字型，它會呼叫[OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx)方法。
 
-  **或**
+  **OR**
 
 - **輪詢 IDE 以取得變更**。 這可以透過系統實[IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx)介面來完成。 雖然主要是為了支援持續性，但[GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx)方法可以取得顯示專案的字型和色彩資訊。 如需字型和色彩設定的詳細資訊，請參閱 MSDN 文章[存取預存字型和色彩設定](https://msdn.microsoft.com/library/bb166382.aspx)。
 

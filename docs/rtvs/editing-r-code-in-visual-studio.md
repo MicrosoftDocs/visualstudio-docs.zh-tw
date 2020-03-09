@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938749"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409653"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>在 Visual Studio 中編輯 R 程式碼
 
@@ -113,7 +113,7 @@ RTVS 提供使用函式參數名稱產生 [Roxygen](https://cran.r-project.org/w
 
 [R] > [進階] 索引標籤上的選項為專屬於 RTVS:
 
-| 群組 | 選項 | 預設 | 說明 |
+| 群組 | 選項 | 預設 | 描述 |
 | --- | --- | --- | --- |
 | 格式化 | 自動格式化 | 開啟 | 會在您鍵入時重新格式化程式碼。 不會影響 [格式化選取範圍] 或 [格式化文件] 命令。 |
 | | 展開的大括弧 | Off | 在新的一行放置開始的 {。 |

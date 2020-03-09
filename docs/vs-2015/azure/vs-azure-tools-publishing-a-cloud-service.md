@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: b959d411f0f574b03729d8016feb6efc531ae171
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846506"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408526"
 ---
-# <a name="publishing-a-cloud-service-using-visual-studio"></a>使用 Visual Studio 來發佈雲端服務
+# <a name="publishing-a-cloud-service-using-visual-studio"></a>使用 Visual Studio 發佈雲端服務
 
 Visual Studio 可直接將應用程式發佈至 Azure，並支援雲端服務的暫存和生產環境。 發佈時，您可以選取針對部署套件暫時要使用的部署環境及儲存體帳戶。
 
@@ -35,11 +35,11 @@ Visual Studio 可直接將應用程式發佈至 Azure，並支援雲端服務的
 
 - 建立服務封裝：您可以從 [Azure 入口網站](https://portal.azure.com)，使用此封裝和服務組態檔將應用程式發佈至部署環境。
 
-- 從 Visual Studio 發行 Azure 專案：使用 [發行精靈] 可直接將應用程式發行至 Azure。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](vs-azure-tools-publish-azure-application-wizard.md)。
+- 從 Visual Studio 發佈 Azure 專案：若要將應用程式直接發佈至 Azure，您可以使用 [發佈精靈]。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](vs-azure-tools-publish-azure-application-wizard.md)。
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>從 Visual Studio 建立服務封裝
 
-1. 當您準備好要發行應用程式時，請開啟 [方案總管]，再開啟包含角色之 Azure 專案的捷徑功能表，然後選擇 [發行]。
+1. 準備好發佈應用程式時，請開啟 [方案總管]，開啟包含角色的 Azure 專案的捷徑功能表，然後選擇 [發佈]。
 
 1. 若只要建立服務封裝，請遵循下列步驟：
 
@@ -71,7 +71,7 @@ Visual Studio 可直接將應用程式發佈至 Azure，並支援雲端服務的
 
 - **只能用於開發和測試目的：** 系統會直接對執行 Web 角色的虛擬機器進行變更。 如果此虛擬機器必須回收，您就會遺失變更，因為您發佈的原始封裝會用來重新建立角色的虛擬機器。 重新發佈應用程式以取得 Web 角色的最新變更。
 
-- **只能更新 Web 角色：** 無法更新背景工作角色。 此外，您不能更新 `web role.cs` 中的 `RoleEntryPoint`。
+- **只能更新 Web 角色：** 無法更新背景工作角色。 此外，您不能更新 `RoleEntryPoint` 中的 `web role.cs`。
 
 - **只能支援 Web 角色的單一執行個體：** 所有 Web 角色在部署環境中都不能有多個執行個體。 不過，可支援多個各只有一個執行個體的 Web 角色。
 

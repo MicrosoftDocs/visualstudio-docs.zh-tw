@@ -11,11 +11,11 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585401"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408512"
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 
@@ -82,7 +82,7 @@ ms.locfileid: "75585401"
 
 ::: moniker range=">=vs-2019"
 
-對於C#程式碼檔案，Visual Studio 2019 在編輯器的底部有 [程式**代碼清除**] 按鈕（鍵盤： **ctrl**+**K**、 **Ctrl**+**E**），以從 EditorConfig 檔或程式**代碼樣式**選項頁面套用程式碼樣式。 若專案中存在 *.editorconfig* 檔案，則會優先使用這些設定。
+針對 C# 程式碼檔案，Visual Studio 2019 在編輯器的底部會有一個 [程式碼清除] 按鈕 (鍵盤：**Ctrl**+**K**、**Ctrl**+**E**) 可讓您套用 EditorConfig 檔案或 [程式碼樣式] 選項頁面的程式碼樣式。 若專案中存在 *.editorconfig* 檔案，則會優先使用這些設定。
 
 ![在 Visual Studio 2019 中執行程式碼清除](media/execute-code-cleanup.png)
 
@@ -101,7 +101,7 @@ ms.locfileid: "75585401"
 
 ::: moniker-end
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [快速動作](../ide/quick-actions.md)
 - [EditorConfig 的 .NET 編碼慣例設定](../ide/editorconfig-code-style-settings-reference.md)

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587585"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408600"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則埠狀態
 
@@ -27,7 +27,7 @@ Roslyn 分析器存放庫中自動產生的[檔頁面](https://github.com/dotnet
 
 從這個頁面的日期開始，已移植到[fxcop 分析器](install-fxcop-analyzers.md)的 FxCop 規則清單包含：
 
-規則識別碼 | 標題
+規則識別碼 | Title
 --------|---------
 [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md) | 不要在泛型類型上宣告靜態成員
 [CA1001 具有](ca1001-types-that-own-disposable-fields-should-be-disposable.md) | 具有可處置欄位的類型應該為可處置
@@ -178,7 +178,7 @@ CA3061 | 不要依 URL 新增架構
 [CA3147](ca3147.md) | 使用 Validate Antiforgery Token 標記動詞處理常式
 [CA5350](ca5350.md) | 請勿使用弱式密碼編譯演算法
 [CA5351](ca5351.md) | 請勿使用中斷的密碼編譯演算法
-CA5358 | 不要使用 Unsafe 加密模式
+CA5358 | 不要使用不安全的 Cipher 模式
 CA5359 | 不要停用憑證驗證
 CA5360 | 不要在還原序列化中呼叫危險的方法
 CA5361 | 請勿停用使用安全加密的 SChannel
@@ -344,6 +344,6 @@ CA9999 | 分析器版本不符
 - [CA2233 運算](ca2233.md)
 - [CA5122 P-INVOKE](ca5122.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [CodeAnalysis. FxCopAnalyzers 規則](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
