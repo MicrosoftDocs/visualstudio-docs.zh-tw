@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44d6e3c77fee53b15ec8d18cb74fd7355ee101a8
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633235"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410029"
 ---
 # <a name="msbuild-response-files"></a>MSBuild 回應檔
 

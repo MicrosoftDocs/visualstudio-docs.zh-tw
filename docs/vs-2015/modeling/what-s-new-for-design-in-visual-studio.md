@@ -14,11 +14,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659237"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408356"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Visual Studio 2015 中 Visual Studio 設計的新功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,14 +68,14 @@ ms.locfileid: "72659237"
 
 Visual Studio 2015 在數個版本中都有提供。 並非所有這些都提供架構和模型工具的支援。 下表顯示每個工具的可用性。
 
-|**功能**|**Enterprise**|**Professional**|**Community**|**表明**|
+|**功能**|**Enterprise**|**Professional**|**社群**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Code Map**|[是]|僅支援讀取和篩選 code map、加入新的泛型節點，以及從選取範圍建立新的導向圖形。|-|-|
-|**UML 類別圖表**|[是]|-|-|-|
-|**UML 順序圖表**|[是]|-|-|-|
-|**UML 使用案例圖**|[是]|-|-|-|
-|**UML 活動圖表**|[是]|-|-|-|
-|**UML 元件圖表**|[是]|-|-|-|
-|**分層圖**|[是]|-|-|-|
-|**導向的圖形**（DGML 圖表）|[是]|[是]|-|-|
-|**程式碼複製**|[是]|-|-|-|
+|**Code Map**|是|僅支援讀取和篩選 code map、加入新的泛型節點，以及從選取範圍建立新的導向圖形。|-|-|
+|**UML 類別圖表**|是|-|-|-|
+|**UML 順序圖表**|是|-|-|-|
+|**UML 使用案例圖**|是|-|-|-|
+|**UML 活動圖表**|是|-|-|-|
+|**UML 元件圖表**|是|-|-|-|
+|**分層圖**|是|-|-|-|
+|**導向的圖形**（DGML 圖表）|是|是|-|-|
+|**程式碼複製**|是|-|-|-|
