@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588573"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408364"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio 的環境設定
 
@@ -46,7 +46,7 @@ ms.locfileid: "75588573"
 
 1. 在 [重設完成] 頁面上，選取 [關閉]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [跨多部電腦同步處理設定](synchronized-settings-in-visual-studio.md)
 - [將 Visual Studio IDE 個人化](personalizing-the-visual-studio-ide.md)

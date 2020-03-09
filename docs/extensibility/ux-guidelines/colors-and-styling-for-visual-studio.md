@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568959"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409006"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio 的色彩和樣式
 
@@ -89,7 +89,7 @@ Visual Studio 的原始程式碼包含數個套件定義檔案，其中包含每
 
 Visual Studio 提供環境色彩服務，也稱為 VSColor 服務或 shell color 服務。 這項服務可讓您將 UI 元素的色彩值系結至名稱-值色彩集，其中包含每個主題的色彩。 VSColor 服務必須用於所有 UI 元素，如此一來，色彩就會自動變更以反映目前使用者選取的主題，因此系結至環境色彩服務的 UI 將會與未來 Visual Studio 版本中的新主題進行整合。
 
-### <a name="how-the-service-works"></a>服務的運作方式
+### <a name="how-the-service-works"></a>服務 的運作方式
 
 環境色彩服務會讀取 UI 元件的 .pkgdef 中所定義的 VSColors。 然後，這些 VSColors 會在 XAML 標記或程式碼中參考，並透過 `IVsUIShell5.GetThemedColor` 或 `DynamicResource` 對應來載入。
 
@@ -358,10 +358,10 @@ VSPackage 可以透過自訂類別控制字型和色彩，以及在 [字型和�
 
 在登錄中填入兩個值：
 
-| 名稱 | 類型 | 資料 | 說明 |
+| 名稱 | 類型 | Data | 描述 |
 | --- | --- | --- | --- |
-| 分類 | REG_SZ | GUID | 建立用來識別類別目錄的 GUID |
-| Package | REG_SZ | GUID | 支援類別目錄之 VSPackage 服務的 GUID |
+| 類別 | REG_SZ | GUID | 建立用來識別類別目錄的 GUID |
+| 套件 | REG_SZ | GUID | 支援類別目錄之 VSPackage 服務的 GUID |
 
  登錄中指定的服務必須為對應的分類提供[IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)的執行。
 
@@ -371,10 +371,10 @@ VSPackage 可以透過自訂類別控制字型和色彩，以及在 [字型和�
 
 在登錄中填入兩個值：
 
-| 名稱 | 類型 | 資料 | 說明 |
+| 名稱 | 類型 | Data | 描述 |
 |--- | --- | --- | --- |
-| 分類 | REG_SZ | GUID | 建立用來識別類別目錄的 GUID |
-| Package | REG_SZ | GUID | 支援類別目錄之 VSPackage 服務的 GUID |
+| 類別 | REG_SZ | GUID | 建立用來識別類別目錄的 GUID |
+| 套件 | REG_SZ | GUID | 支援類別目錄之 VSPackage 服務的 GUID |
 
 登錄中指定的服務必須為對應的群組提供 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> 的執行。
 
@@ -421,7 +421,7 @@ IDE 會快取字型和色彩設定的相關資訊。 因此，在任何修改 ID
 
 - 藉由執行[IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents)介面來**處理 IDE 產生的事件**。 在使用者修改 [字型和色彩] 頁面之後，IDE 會呼叫適當的方法。 例如，如果選取了新字型，它會呼叫[OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged)方法。
 
-  **或**
+  **OR**
 
 - **輪詢 IDE 以取得變更**。 這可以透過系統實[IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage)介面來完成。 雖然主要是為了支援持續性，但[GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem)方法可以取得顯示專案的字型和色彩資訊。 如需字型和色彩設定的詳細資訊，請參閱 MSDN 文章[存取預存字型和色彩設定](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015)。
 
