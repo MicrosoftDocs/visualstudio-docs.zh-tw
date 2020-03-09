@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c24164f31ca444d17035f145a1783c69dfb2585b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587195"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408479"
 ---
 # <a name="use-code-analyzers"></a>使用程式碼分析器
 
@@ -66,8 +66,8 @@ ms.locfileid: "75587195"
 | 警告 | `warning` | 違規在錯誤清單和命令列組建輸出中會顯示為*警告*，但不會導致組建失敗。 | 有問題的程式碼會加上綠色波浪線，並以捲軸中的小綠色方塊標示。 |
 | Info | `suggestion` | 違規會在錯誤清單中顯示為*訊息*，而不是在命令列組建輸出中。 | 有問題的程式碼會加上灰色波浪線，並以捲軸中的小型灰色方塊標示。 |
 | Hidden | `silent` | 使用者看不到。 | 使用者看不到。 不過，診斷會回報給 IDE 診斷引擎。 |
-| None | `none` | 已完全隱藏。 | 已完全隱藏。 |
-| 預設值 | `default` | 對應至規則的預設嚴重性。 若要判斷規則的預設值是什麼，請查看屬性視窗。 | 對應至規則的預設嚴重性。 |
+| 無 | `none` | 已完全隱藏。 | 已完全隱藏。 |
+| 預設 | `default` | 對應至規則的預設嚴重性。 若要判斷規則的預設值是什麼，請查看屬性視窗。 | 對應至規則的預設嚴重性。 |
 
 [程式碼編輯器] 的下列螢幕擷取畫面顯示三個不同嚴重性的違規。 請注意曲線的色彩，以及右側捲軸中的小型彩色正方形。
 
@@ -241,7 +241,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的程式碼分析器總覽](../code-quality/roslyn-analyzers-overview.md)
 - [提交程式碼分析器 bug](https://github.com/dotnet/roslyn-analyzers/issues)
