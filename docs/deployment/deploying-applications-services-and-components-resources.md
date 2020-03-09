@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263308"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409361"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio 中的部署概觀
 
@@ -26,7 +26,7 @@ ms.locfileid: "66263308"
 
 針對許多常見的應用程式類型，您可以直接從 Visual Studio 中的 [方案總管] 來部署應用程式。 如需這項功能的快速導覽，請參閱[部署簡介](../deployment/deploying-applications-services-and-components.md)。
 
-![選擇發行選項](../deployment/media/quickstart-publish-azure.png)
+![選擇發佈選項](../deployment/media/quickstart-publish-azure.png)
 
 ## <a name="what-publishing-options-are-right-for-me"></a>適合我的發行選項為何？
 
@@ -79,7 +79,7 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 
 部署至檔案系統，表示只需要將應用程式檔案複製到您自己電腦上的特定資料夾。 這最常用於進行測試；或者，如果電腦也執行伺服器，則用來部署應用程式以供有限數目的人員使用。 如果在網路上共用目標資料夾，則部署至檔案系統之後，其他可能接著將它部署至特定伺服器的人員將可使用 Web 應用程式檔案。
 
-任何正在執行伺服器的本機電腦都可以透過網際網路或內部網路使用應用程式，而這取決於其設定方式和其所連接的網路。 (如果您將電腦直接連線至網際網路，請特別注意保護它免受外部安全性威脅)。因為您可以管理這些電腦，所以可以完全控制軟體和硬體組態。
+任何正在執行伺服器的本機電腦都可以透過網際網路或內部網路使用應用程式，而這取決於其設定方式和其所連接的網路。 （如果您將電腦直接連線到網際網路，請特別小心保護它免于遭受外部安全性威脅）。因為您管理這些機器，所以您可以完全控制軟體和硬體設定。
 
 請注意，如果您因任何原因 (例如電腦存取) 而無法使用 Azure App Service 或 Azure 虛擬機器這類雲端服務，則可以在自己的資料中心內使用 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)。 Azure Stack 既可讓您透過 Azure App Service 和「Azure 虛擬機器」來管理和使用計算資源，又可讓所有項目保留在內部部署環境中。
 
