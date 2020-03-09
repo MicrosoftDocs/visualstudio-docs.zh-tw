@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 00ad5b41dd0a11661d281f24474b7673ea0a342c
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911500"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409241"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>在 Visual Studio 中使用偵錯工具管理例外狀況
 
@@ -220,7 +220,7 @@ public class GenericException<T> : Exception
 
 4. 如果您需要刪除條件，請選擇條件行結尾的 [ **X** ]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [於例外狀況之後繼續執行](../debugger/continuing-execution-after-an-exception.md)<br/>
 - [如何：在發生例外狀況後檢查系統程式碼](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>

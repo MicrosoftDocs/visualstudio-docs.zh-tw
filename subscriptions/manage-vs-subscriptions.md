@@ -7,17 +7,17 @@ ms.date: 07/17/2019
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
 ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706976"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408886"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
 Visual Studio [訂閱者入口網站](https://my.visualstudio.com)可讓您在單一位置管理您的所有訂用帳戶和方案成員資格。 您可以針對您的設定檔進行變更、使用訂用帳戶隨附的所有權益，並在訂用帳戶之間快速輕鬆地切換。
 
-## <a name="managing-multiple-subscriptions"></a>管理多重訂閱
+## <a name="managing-multiple-subscriptions"></a>管理多個訂用帳戶
 
 Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方案整合為較佳的單一入口網站體驗。 例如，您可能因為工作原因而使用 Visual Studio Enterprise 這類標準訂閱，在家則使用每月的 Visual Studio Professional 訂閱或 Visual Studio Dev Essentials 成員資格。
 
@@ -99,7 +99,7 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>問：如果我未更新訂閱，Microsoft 會保留我的資料多久？
 答：根據購買管道，Microsoft 維護客戶資料的時間長度不一。
 
-| 頻道                                                | 持續時間 (天數) |
+| 通路                                                | 持續時間 (天數) |
 |--------------------------------------------------------|-----------------|
 |    零售 (例如透過 Microsoft Store)               |    360          |
 |    大量授權服務中心 (VLSC)              |    180          |
