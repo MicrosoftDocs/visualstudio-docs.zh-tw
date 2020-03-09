@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730262"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409410"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>在 Visual Studio 中C#遠端偵錯或 Visual Basic 專案
 若要對已部署在不同電腦上的 Visual Studio 應用程式進行偵測，請在您部署應用程式的電腦上安裝並執行遠端工具，將您的專案設定為從 Visual Studio 連接到遠端電腦，然後執行您的應用程式。
@@ -102,7 +102,7 @@ ms.locfileid: "72730262"
 
 13. 如果出現提示，請輸入網路認證以連線到遠端電腦。
 
-     必要的認證會根據您的網路安全性設定而有所不同。 例如，在網域電腦上，您可以輸入您的功能變數名稱和密碼。 在非網域電腦上，您可能會輸入電腦名稱稱和有效的使用者帳戶名稱（例如<strong>MJO-DL\name@something.com</strong>），以及正確的密碼。
+     必要的認證會根據您的網路安全性設定而有所不同。 例如，在網域電腦上，您可以輸入您的功能變數名稱和密碼。 在非網域電腦上，您可能會輸入電腦名稱稱和有效的使用者帳戶名稱（例如<strong>MJO-DL\name@something.com</strong>）以及正確的密碼。
 
      您應該會看到 WPF 應用程式主視窗已在遠端電腦上開啟。
 
@@ -116,7 +116,7 @@ ms.locfileid: "72730262"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
