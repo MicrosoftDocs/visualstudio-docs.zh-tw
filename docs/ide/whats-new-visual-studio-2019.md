@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 12/10/2019
+ms.date: 02/28/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 9e506a2a0101449ef598734cece5b1330bcd2655
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125360"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947039"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -29,7 +29,7 @@ ms.locfileid: "77125360"
 >[!div class="button"]
 >[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
-使用 Visual Studio 2019，您會獲得同類產品中最佳的工具和服務，任何開發人員、任何應用程式及任何平台均適用。 無論您是第一次使用 Visual Studio，或是已使用多年，你都會很喜歡這個新版本！
+使用 Visual Studio 2019，您會獲得同類產品中最佳的工具和服務，任何開發人員、任何應用程式及任何平台均適用。 無論您是第一次使用 Visual Studio，或是已使用多年，這個新版本還是有許多好用的功能！
 
 以下是新增功能的概要回顧：
 
@@ -55,7 +55,7 @@ ms.locfileid: "77125360"
 
 ### <a name="refactorings"></a>重構
 
-C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的程式碼。 它們以燈泡的方式顯示隱藏的建議，且包含動作，如將成員移動至介面或基底類別、調整命名空間以符合資料夾結構、將 foreach 迴圈轉換為 Linq 查詢等等。
+C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的程式碼。 它們顯示為燈泡中的建議，且包含動作，如將成員移動至介面或基底類別、調整命名空間以符合資料夾結構、將 foreach 迴圈轉換為 Linq 查詢等等。
 
    ![Visual Studio 2019 中的重構體驗動畫](media/vs-2019/refactorings.gif)
 
@@ -69,10 +69,10 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 以下是 Visual Studio IntelliCode 可協助提高生產力的幾種方式：
 
-* 提供由內容感知而完整程式碼的功能
+* 提供內容感知的程式碼完成
 * 引導開發人員遵守所屬團隊的模式與風格
 * 找出難以捕捉的程式碼問題
-* 引導注意力放在真正重要的區域，以專注檢閲它們的程式碼
+* 將注意力放在真正重要的區域，專注在程式碼檢閱上
 
 一開始以 Visual Studio 的延伸模組形式提供 IntelliCode 預覽時，我們僅支援 C#。 現在，我們也新增了對 C++ 和 XAML 的「內建」支援，以作為 **16.1 版的新功能** (不過，對 C++ 和 TypeScript/JavaScript 的支援目前仍為預覽狀態)。
 
@@ -94,9 +94,9 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 ### <a name="per-monitor-aware-pma-rendering"></a>個別監視器感知 (PMA) 轉譯
 
-如果您所使用的監視器設定為不同的縮放比例，或從遠端連線到具有不同於您主要裝置設定的縮放顯示比例的機器，您可能會發現 Visual Studio 的顯示模糊，或以錯誤的比例轉譯。
+如果您以不同顯示比例因素設定監視器，或從遠端連線到具有不同於您主要裝置顯示比例因素的機器，您可能會發現 Visual Studio 的顯示模糊，或以錯誤的比例轉譯。
 
-隨著Visual Studio 2019 的發行，我們將 Visual Studio 調整為可識別顯示器設定（PMA）的應用程式。 現在，不論您使用的顯示縮放比例為何，Visual Studio 均可正確轉譯。
+Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為個別監視器感知 (PMA) 應用程式。 現在，不論您使用的顯示縮放比例為何，Visual Studio 均可正確轉譯。
 
    ![Visual Studio 2019 中的個別監視器感知 (PMA) 轉譯](media/vs-2019/pma-dpi-scaling.png)
 
@@ -136,7 +136,7 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 ### <a name="live-share"></a>Live Share
 
-[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 這項開發人員服務可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當流暢且安全。
+[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 這項開發人員服務可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。
 
 Visual Studio 2019 預設會安裝這項服務。
 
@@ -154,13 +154,13 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ## <a name="debug"></a>偵錯
 
-檢視下列影片以深入了解如何在進行偵錯時使用精確的目標設定來校正。 <br><br>*影片長度：3.54 分鐘*
+檢視下列影片以深入了解如何在進行偵錯時使用精確目標設定來集中精力。 <br><br>*影片長度：3.54 分鐘*
 
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>效能提升
 
-我們採用獨一無二的 C++ 資料中斷點，並加以修改以用於 .NET Core 應用程式。
+我們採用僅一次的專屬 C++ 資料中斷點，並加以修改以用於 .NET Core 應用程式。
 
    ![在 Visual Studio 2019 中顯示偵錯資料中斷點的動畫](media/vs-2019/debug-data-breakpoints.gif)
 
@@ -174,7 +174,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
    ![在 Visual Studio 2019 中顯示偵錯搜尋視窗的動畫](media/vs-2019/debug-window-search.gif)
 
-您也可以設定值在 [監看式]、[區域變數] 與 [自動變數] 視窗內的顯示方式。  在任一視窗中的其中一個項目上按兩下，並新增逗號 (",") 來存取可用格式指定名稱的下拉式清單，其中每一個都包含其預期效果的描述。
+在 [監看式]、[區域變數] 和 [自動變數] 視窗的顯示方式，您也能加以格式化。  在任一視窗中的其中一個項目上按兩下，並新增逗號 (",") 來存取可用格式指定名稱的下拉式清單，其中每一個都包含其預期效果的描述。
 
    ![Visual Studio 2019 中的新 [監看式] 視窗和格式值功能](media/search-watch-window.png)
 
@@ -206,7 +206,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ## <a name="whats-next"></a>後續步驟
 
-我們對 Visual Studio 2019 的更新通常附帶可大幅改善您開發體驗的新功能。 若要深入了解我們最新的創新功能，請參閱 [Visual Studio 部落格](https://devblogs.microsoft.com/visualstudio/)。 有關我們迄今為止在預覽中發行之內容的記錄，請查看[預覽版本資訊](/visualstudio/releases/2019/release-notes-preview/)。
+我們對 Visual Studio 2019 的更新通常附帶可大幅改善您開發體驗的新功能。 若要深入了解我們最新的創新功能，請參閱 [Visual Studio 部落格](https://devblogs.microsoft.com/visualstudio/)。 如需我們在預覽版中發行之內容的記錄，請參閱[預覽版本](/visualstudio/releases/2019/release-notes-preview/)資訊。 如需我們接下來要發行之內容的清單，請參閱[Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap)。
 
 想深入了解 Visual Studio 2019 中還包含哪些內容嗎？ 請參閱 [Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap/)。
 
@@ -221,7 +221,6 @@ Visual Studio 2019 預設會安裝這項服務。
 ## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 2019 版本資訊](/visualstudio/releases/2019/release-notes/)
-* [Visual Studio 2019 SDK 的新功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Visual Studio 2019 for Mac 版本資訊](/visualstudio/releasenotes/vs2019-mac-relnotes/)
-* [Microsoft Build 2019 會議](https://www.microsoft.com/build)
-* [Microsoft Connect(); 2018 會議](https://www.microsoft.com/connectevent)
+* [Visual Studio 2019 SDK 的新功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Microsoft Build 會議](https://www.microsoft.com/build)

@@ -3,15 +3,15 @@ title: Visual Studio 訂用帳戶中軟體下載項目的產品可用性 |Micros
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中軟體下載項目的產品可用性
-ms.openlocfilehash: bf75f9638807b823fb72c4e23f69d0204fcec5de
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 30dd3a216274e189d4d1afe2321bd1db7b66fb94
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706816"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947104"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中軟體下載項目的產品可用性
 您可以存取各種下載軟體，這是訂閱者權益的一部分。
@@ -36,6 +36,12 @@ ms.locfileid: "74706816"
 > 如果您有多個與相同電子郵件地址建立關聯的訂用帳戶，則可供使用軟體標題取決於您擁有的**最高**層級訂用帳戶。  例如，如果您有 Visual Studio Enterprise 訂用帳戶和 Visual Studio Test Professional 訂用帳戶，則不論目前在訂用帳戶入口網站中使用哪一個訂用帳戶，您都可以存取 Visual Studio Enterprise 訂用帳戶所包含的軟體標題。 
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
+
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 - 某些軟體下載項目可能需要產品金鑰，才能加以安裝及啟用。  如需有關如何取得及管理產品金鑰的詳細資料，請參閱我們的[產品金鑰](product-keys.md)一文。 

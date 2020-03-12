@@ -3,15 +3,15 @@ title: 管理 Visual Studio 訂閱
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.openlocfilehash: 97220a64c72d37d53eccbaba5c8e79697f2f25ab
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408886"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78968093"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
@@ -112,3 +112,17 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 > [!NOTE]
 > - 如果您選擇關閉 Microsoft 帳戶或 Azure AD，則會立即匿名您的個人資料。
 > - 如果您有使用中的訂閱，則不會完全移除您的個人資料。
+
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>後續步驟
+您是否管理組織的訂用帳戶？  深入瞭解如何管理 Visual Studio 訂閱：
+- [指派個別訂閱](assign-license.md)
+- [指派多個訂用帳戶](assign-license-bulk.md)
+- [編輯訂用帳戶](edit-license.md)
+- [刪除訂用帳戶](delete-license.md)
+- [判斷最大使用量](maximum-usage.md)

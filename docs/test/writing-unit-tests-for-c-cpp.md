@@ -1,19 +1,19 @@
 ---
 title: 撰寫 C/C++ 的單元測試
 description: 使用C++各種測試架構（包括 CTest、提升、測試和 Google Test）在 Visual Studio 中撰寫單元測試。
-ms.date: 01/08/2020
+ms.date: 02/08/2020
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bcddce98470bc4d1b68eb7c2a6e3936f3abbb930
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.openlocfilehash: 354ccad121884c99541057a2e0e0a47d9d2a4341
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755596"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937546"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中撰寫 C/C++ 的單元測試
 
@@ -41,7 +41,7 @@ C++ 單元測試專案支援 [CodeLens](../ide/find-code-changes-and-other-histo
 
 - **Boost.Test** 隨附作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 它已與**Test Explorer**整合，但目前沒有專案範本。 必須手動設定。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用提升。](how-to-use-boost-test-for-cpp.md)
 
-- **CTest** 支援已隨附於 [使用 C++ 的桌面開發] 工作負載之一部分的 [C++ CMake 工具] 元件。 不過，CTest 尚未與**Test Explorer**完全整合。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
+- **CTest** 支援已隨附於 [使用 C++ 的桌面開發] 工作負載之一部分的 [C++ CMake 工具] 元件。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
 
 **Visual Studio 2015 和更早版本**
 
@@ -75,7 +75,7 @@ C++ 單元測試專案支援 [CodeLens](../ide/find-code-changes-and-other-histo
 
 若要存取受測專案中的函式，請在測試專案中加入專案的參考。 以滑鼠右鍵按一下 **方案總管**中的 測試專案 節點，以取得快顯功能表。 選擇 [**加入** > **參考**]。 在 [加入參考] 對話方塊中，選擇您要測試的專案。
 
-![加入參考](media/cpp-add-ref-test-project.png)
+![新增參考](media/cpp-add-ref-test-project.png)
 
 ### <a name="link-to-object-or-library-files"></a>連結至物件或程式庫檔案
 
@@ -156,6 +156,6 @@ TEST_METHOD(TestClassInit)
 
 ![C++ CodeLens 執行及偵錯](media/cpp-test-codelens-run-debug.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [對程式碼進行單元測試](unit-test-your-code.md)

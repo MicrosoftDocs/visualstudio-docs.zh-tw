@@ -3,15 +3,15 @@ title: 管理透過 Microsoft 合作夥伴網路 (MPN) 提供的 Visual Studio �
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: 如何針對 MPN 夥伴，將 Visual Studio 訂用帳戶指派給您的使用者。
-ms.openlocfilehash: 544987556b33358865fc785db7e86d455942a430
-ms.sourcegitcommit: 9186dc1af846ef2236ca78d4facf399c253ab5f7
+ms.openlocfilehash: 5fbd69d3d50364f331a0529c51877fba25f83a84
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/26/2019
-ms.locfileid: "75492913"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947132"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>管理透過 Microsoft 合作夥伴網路 (MPN) 提供的 Visual Studio 訂用帳戶
 擁有專長認證或購買 MPN 行動套件的合作夥伴，有資格使用 Visual Studio 訂用帳戶。 這些訂用帳戶是依每位使用者授權，而且只有在指派給為合作夥伴工作的特定具名使用者時才有效。
@@ -59,7 +59,13 @@ Microsoft 行動套件訂閱者與 Visual Studio 訂用帳戶
   > Visual Studio 訂用帳戶需要技術連絡人角色
   - 第 8 頁 – 針對專長認證合作夥伴指派 Visual Studio 訂用帳戶
 
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>後續步驟
 訂閱者與方案系統管理員應該直接與 Microsoft 合作夥伴網路支援小組合作，以解決訂閱者存取訂用帳戶的任何問題。 瀏覽[合作夥伴支援](https://partner.microsoft.com/support)頁面以取得協助。 (將需要您的 MPN 登入認證)。
 
-https://r.search.yahoo.com/_ylt=AwrWnKI73ARewjwA1C0PxQt 。_ylu = X3oDMTEyN2cxcTlwBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQjg0OTJfMQRzZWMDc3I-/RV = 2/RE = 1577405628/RO = 10/RU = HTTPs %3 a %2 f %2 f assetsprod。 microsoft .com% 2fmpn% 2fProgram-系統管理員指南-軟體與線上-服務-權益/RK = 2/RS = xsA5OL。 9t6QqJlvFYZ3OPnZkC_k-
+

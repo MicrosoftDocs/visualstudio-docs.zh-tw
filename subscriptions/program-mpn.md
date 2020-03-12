@@ -3,15 +3,15 @@ title: Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: 有關提供哪些訂用帳戶、套用哪些規則，以及 MPN 中提供多少訂用帳戶的詳細資料。
-ms.openlocfilehash: 1a103f76b56df72b5829f9ce87f587070519726e
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: ddafa2daef34d4a23de448235ffa186c1bb27319
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2020
-ms.locfileid: "76281694"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947045"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳戶
 
@@ -74,6 +74,13 @@ MPN 規則規定，所有視為方案權益提供的軟體僅能供內部使用�
 - [MPN 程式系統管理員指南](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) - 包括如何將 Visual Studio 訂用帳戶指派給 MPN 員工的說明。
 - [將 Visual Studio 訂用帳戶指派給 MPN 員工](manage-mpn-subscriptions.md)
 - [使用條款](https://www.microsoft.com/useterms/) - 透過 MPN 提供的 Visual Studio 訂用帳戶受到 Visual Studio 訂用帳戶非賣品 (NFR) 使用者授權合約的約束。
+
+
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 

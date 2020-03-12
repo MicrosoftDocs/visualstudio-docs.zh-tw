@@ -3,15 +3,15 @@ title: 下載 Visual Studio 訂用帳戶中的軟體標題 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/17/2020
+ms.date: 03/07/2020
 ms.topic: conceptual
 description: 了解如何尋找及下載 Visual Studio 訂用帳戶中的 Microsoft 軟體標題
-ms.openlocfilehash: 053e6d7171f8983def3675e42fb661172a381284
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 062454a6f5af4a0452b55bd632986f426347eab5
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476829"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937485"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>下載 Visual Studio 訂用帳戶中的軟體標題
 根據您擁有的 Visual Studio 訂用帳戶，有各種不同的 Microsoft 軟體標題可供您使用。  本文將概述如何尋找及下載充分運用訂用帳戶所需的軟體。 
@@ -50,14 +50,22 @@ ms.locfileid: "77476829"
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2019 索取產品金鑰](_img/subscriber-downloads/vs2019-claim-keys.png)
 
-## <a name="next-steps"></a>後續步驟
-若要深入了解如何尋找、索取及匯出產品金鑰，請參閱我們的產品金鑰文件：
-- [產品金鑰概觀](product-keys.md)
-- [尋找及索取金鑰](find-keys.md)
-
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>後續步驟
+若要深入瞭解如何尋找、索取和匯出產品金鑰，請參閱我們的產品金鑰檔：
+- [產品金鑰概觀](product-keys.md)
+- [尋找及索取金鑰](find-keys.md)
+
+瞭解如何利用其他絕佳的優點，例如：
+- [Azure DevTest 個人點數](vs-azure.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Visual Studio IDE](vs-ide-benefit.md)
+
+
+
 

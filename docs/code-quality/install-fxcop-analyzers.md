@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 06362bcf00bc35fdef701e26fe03694b038e88b1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 78935673dbf57f75988d4c0a9e862b11e2fe855f
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587455"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937522"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>在 Visual Studio 中安裝 FxCop 分析器
 
@@ -22,7 +22,7 @@ Microsoft 建立了一組稱為[CodeAnalysis](https://www.nuget.org/packages/Mic
 
 您可以將這些 FxCop 分析器安裝為 NuGet 套件或做為 Visual Studio 的 VSIX 擴充功能。 若要深入瞭解各項的優缺點，請參閱[NuGet 套件與 VSIX 延伸](roslyn-analyzers-overview.md#nuget-package-versus-vsix-extension)模組。
 
-## <a name="nuget-package"></a>NuGet 套件
+## <a name="nuget-package"></a>Nuget 套件
 
 ::: moniker range=">=vs-2019"
 
@@ -152,8 +152,8 @@ Microsoft 建立了一組稱為[CodeAnalysis](https://www.nuget.org/packages/Mic
 
 ::: moniker-end
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的程式碼分析器總覽](../code-quality/roslyn-analyzers-overview.md)
 - [在 Visual Studio 中使用程式碼分析器](../code-quality/use-roslyn-analyzers.md)
-- [從舊版分析遷移至程式碼分析器](../code-quality/fxcop-analyzers.yml)
+- [從舊版分析遷移至程式碼分析器](../code-quality/migrate-from-legacy-analysis-to-fxcop-analyzers.md)

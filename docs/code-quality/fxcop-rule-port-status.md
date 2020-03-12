@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.openlocfilehash: fccd167bfafd4c27895b01927aaabc1e77eab91c
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408600"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78945842"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則埠狀態
 
@@ -40,6 +40,7 @@ Roslyn 分析器存放庫中自動產生的[檔頁面](https://github.com/dotnet
 [CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | 以 ComVisible 標記元件
 [CA1018](ca1018-mark-attributes-with-attributeusageattribute.md) | 必須以 AttributeUsageAttribute 標記屬性
 [CA1019 必須](ca1019-define-accessors-for-attribute-arguments.md) | 定義屬性引數的存取子
+[CA1021](ca1021.md) | 避免使用 out 參數
 [CA1024 建議](ca1024-use-properties-where-appropriate.md) | 建議在適當時使用屬性
 [CA1027 必須](ca1027-mark-enums-with-flagsattribute.md) | 必須以 FlagsAttribute 標記列舉
 [CA1028](ca1028-enum-storage-should-be-int32.md) | 列舉儲存區應該是 Int32

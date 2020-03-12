@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 69b1bccf20c242965462b807b2a1b64d3c60d671
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
-ms.translationtype: MT
+ms.openlocfilehash: d6ecbfc3917898de1b55a6a1e1edc411d8b01234
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590784"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78968051"
 ---
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
@@ -47,7 +47,7 @@ Visual Studio「整合式開發環境」是一個有創意的啟動控制板，�
 
 Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2017 相同的功能，並已針對開發跨平台和行動應用程式最佳化。 本文著重於 Windows 版的 Visual Studio 2017。
 
-Visual Studio 2017 有三種版本：Community、Professional 和 Enterprise。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)。
+Visual Studio 2017 有三種版本：Community、Professional 和 Enterprise。 請參閱[比較 Visual Studio 2017 版本](https://visualstudio.microsoft.com/vs/compare/)，以瞭解每個版本支援哪些功能。
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Visual Studio 2017 有三種版本：Community、Professional 和 Enterprise。 
 
 Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2019 相同的功能，並已針對開發跨平台和行動應用程式最佳化。 此文章著重於 Windows 版的 Visual Studio 2019。
 
-Visual Studio 2019 有三種版本：「社區」、「專業」和「企業」。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
+Visual Studio 2019 有三種版本：「社區」、「專業」和「企業」。 如需瞭解每個版本支援哪些功能，請參閱[比較 Visual Studio 版本](https://visualstudio.microsoft.com/vs/compare/)。
 
 ::: moniker-end
 
