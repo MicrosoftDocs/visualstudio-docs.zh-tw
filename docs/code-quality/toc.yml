@@ -10,9 +10,9 @@
         - name: 總覽
           displayName: 'roslyn analyzers, source analysis'
           href: roslyn-analyzers-overview.md
-        - name: 安裝
+        - name: 安裝原始程式碼分析器
           href: install-roslyn-analyzers.md
-        - name: 設定
+        - name: 設定原始程式碼分析器
           href: use-roslyn-analyzers.md
         - name: 停用程式碼分析
           href: disable-code-analysis.md
@@ -22,27 +22,24 @@
           href: analyzers-faq.md
         - name: FxCop 分析器
           items:
-            - name: 總覽
-              displayName: fxcop analyzers
-              href: fxcop-analyzers.yml
-            - name: 安裝
+            - name: 安裝 FxCop 分析器
               href: install-fxcop-analyzers.md
-            - name: 設定
+            - name: 移轉到 FxCop 分析器
               items:
-                - name: 總覽
+                - name: 從舊版分析移轉到 FxCop 分析器
+                  href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
+                - name: 常見問題集
+                  href: fxcop-analyzers-faq.md
+                - name: 移植的規則
+                  href: fxcop-rule-port-status.md
+            - name: 設定 FxCop 分析器
+              items:
+                - name: 設定規則及專案
                   href: configure-fxcop-analyzers.md
                 - name: 領域選項
                   href: fxcop-analyzer-options.md
                 - name: 啟用規則的類別
                   href: analyzer-rule-sets.md
-            - name: 常見問題集
-              href: fxcop-analyzers-faq.md
-        - name: 從舊版分析移轉到 FxCop 分析器
-          items:
-            - name: 總覽
-              href: fxcop-analyzers.yml
-            - name: 移植的規則
-              href: fxcop-rule-port-status.md
     - name: 舊版分析
       items:
         - name: 總覽
@@ -50,8 +47,8 @@
           href: static-code-analysis-for-managed-code-overview.md
         - name: 舊版分析逐步解說
           href: walkthrough-analyzing-managed-code-for-code-defects.md
-        - name: 移轉
-          href: fxcop-analyzers.yml
+        - name: 移轉到 FxCop 分析器
+          href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: 手動執行程式碼分析
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: 設定
