@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589886"
 ---
 # <a name="windows-forms-designer-overview"></a>Windows Form 設計工具概觀
@@ -33,13 +33,13 @@ Visual Studio 中的 Windows Form 設計工具能針對建立以 Windows Forms �
 - 在按一下時選取 **Shift** 或 **Ctrl** 來選取多個控制項。 使用 **Shift**+按一下時，所選取的第一個控制項將會是對齊或調整大小時的主要控制項。 使用 **Ctrl**+按一下時，最後選取的控制項將會是主要控制項，因此主要控制項會隨著新增控制項而變更。 或者，您也可以拖曳選取矩形來涵蓋您想要選取的控制項，以選取多個控制項。
 
 > [!NOTE]
-> 使用 Windows Form 設計工具 (而非資源編輯器) 來變更表單的資源 ( *.resx*) 檔案。 如果您編輯以表單為基礎的 .resx 檔案，您將會看見警告，表示您在資源編輯器中所做的變更可能會遺失。 這是因為該 .resx 檔案是由 Windows Form 設計工具產生。
+> 使用 Windows Form 設計工具 (而非資源編輯器) 來變更表單的資源 (*.resx*) 檔案。 如果您編輯以表單為基礎的 .resx 檔案，您將會看見警告，表示您在資源編輯器中所做的變更可能會遺失。 這是因為該 .resx 檔案是由 Windows Form 設計工具產生。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [Windows Form 概觀](/dotnet/framework/winforms/windows-forms-overview)
-- [Windows Forms 控制項](/dotnet/framework/winforms/controls/)
-- [Windows Forms 中的使用者輸入](/dotnet/framework/winforms/user-input-in-windows-forms)
+- [視窗表單概述](/dotnet/framework/winforms/windows-forms-overview)
+- [視窗表單控制項](/dotnet/framework/winforms/controls/)
+- [Windows 表單中的使用者輸入](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Windows Forms 中的資料繫結](/dotnet/framework/winforms/windows-forms-data-binding)
 - [增強 Windows Forms 應用程式](/dotnet/framework/winforms/advanced/)
 - <xref:System.Windows.Forms?displayProperty=fullName> API 參考

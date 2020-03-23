@@ -14,64 +14,64 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 6f81cc32604abe6d90ac0d263574e97df35c63bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593495"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302949"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>在 Visual Studio 2017 中設計的新功能
 
-## <a name="live-dependency-validation"></a>即時相依性驗證
+## <a name="live-dependency-validation"></a>即時依賴項驗證
 
-移除不想要的相依性是管理技術債務的重要部分。 Visual Studio 提供相依性的即時驗證，包括有關問題的精確資訊，例如它們所在的位置。 即時相依性驗證會充分利用錯誤清單和編輯器中新功能的優點。
+刪除不需要的依賴項是管理技術債務的一個重要部分。 Visual Studio 提供依賴項的即時驗證，包括有關問題（如問題位於何處）的準確資訊。 即時依賴項驗證充分利用了錯誤清單和編輯器中的新功能。
 
-![作用中的即時相依性驗證](media/dep-validation-whatsnew-01.png)
+![即時依賴項驗證在操作中](media/dep-validation-whatsnew-01.png)
 
-撰寫經驗已變更，讓相依性驗證更容易探索且更容易存取。 術語已從「分層圖」變更為「相依性圖表」。
+創作體驗已更改，使依賴項驗證更易於發現和更易於訪問。 術語從"層圖"更改為"依賴關係圖"。
 
-[**架構**] 功能表現在包含直接建立相依性圖表的命令：
+**體系結構**功能表現在包含直接創建依賴關係關係圖的命令：
 
-![[架構] 功能表上的 [即時相依性專案]](media/dep-validation-whatsnew-02.png)
+![體系結構功能表上的即時依賴項項](media/dep-validation-whatsnew-02.png)
 
-圖層屬性名稱和描述已經變更，使其更有意義：
+圖層屬性名稱和說明已更改，使其更有意義：
 
-![即時相依性已更新屬性名稱](media/dep-validation-whatsnew-03.png)
+![即時依賴項更新的屬性名稱](media/dep-validation-whatsnew-03.png)
 
-當您每次儲存圖表時，您會立即看到方案中目前程式碼之分析結果的影響。 您不需要等待 [驗證相依性 **]** 命令完成。
+每次保存關係圖時，您都會立即看到解決方案中當前代碼的分析結果中更改的影響。 您不必等待**驗證依賴項**命令的完成。
 
-如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)。
+如需詳細資訊，請參閱[此部落格文章](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)。
 
-## <a name="uml-designers-have-been-removed"></a>UML 設計工具已移除
+## <a name="uml-designers-have-been-removed"></a>UML 設計器已被刪除
 
-UML 設計工具已從 Visual Studio 中移除。
+UML 設計器已從視覺化工作室中刪除。
 
-* UML 圖表現在會以 XML 檔案的形式呈現
-* UML 模型瀏覽器已不存在
-* 不會再使用模型專案參考來進行相依性驗證
-* 方案總管中的 [圖層參考] 節點已不會再顯示
-* 相依性（圖層）圖表上的 [驗證] 組建動作已不再使用-已移除組建工作
-* 版本之間的往返會保留專案結構
-* 您仍然可以將相依性（圖層）圖表開啟、建立、編輯和儲存為 XML
-* 在設計介面上無法存取連結至相依性（圖層）圖表的 TFS 工作專案
-* 不再支援從到 DSL 或圖層的反向連結
-* 不再支援模型化 SDK 中的 UML 擴充性
+* UML 關係圖現在作為 XML 檔顯示
+* UML 模型資源管理器不再存在
+* 建模專案引用不再用於依賴項驗證
+* 解決方案資源管理器中的"圖層引用"節點不再顯示
+* 不再使用依賴項（層）關係圖上的"驗證"生成操作 - 已刪除生成任務
+* 專案結構維護，用於在版本之間往返
+* 您仍然可以打開、創建、編輯和保存依賴項（層）關係圖作為 XML
+* 連結到依賴項（層）圖的 TFS 工作項在設計圖上不可訪問
+* 不再支援從 DSL 或圖層進行回連結
+* 建模 SDK 中的 UML 可擴充性不再受支援
 
-視覺化 .NET 和C++程式碼架構的支援可透過[code map](map-dependencies-across-your-solutions.md)取得。
+可通過[代碼映射](map-dependencies-across-your-solutions.md)支援視覺化 .NET 和C++代碼的體系結構。
 
-如果您是 UML 設計工具的重要使用者，您可以繼續使用 Visual Studio 2015 或更早版本，同時為 UML 需求決定替代工具。
+如果您是 UML 設計人員的重要使用者，則可以在決定滿足 UML 需求的替代工具時繼續使用 Visual Studio 2015 或更早版本。
 
-如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)。
+如需詳細資訊，請參閱[此部落格文章](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)。
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a>架構和模型工具的 <a name="VersionSupport" />版本支援
+## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />對體系結構和建模工具的版式支援
 
-Visual Studio 在數個版本中都有提供。 並非所有這些都提供架構和模型工具的支援。 下表顯示每個工具的可用性。
+Visual Studio 有多種版本版本。 並非所有這些都為體系結構和建模工具提供支援。 下表顯示每個工具的可用性。
 
-|**功能**|**Enterprise edition**|**Professional edition**|**社區版**|
+|**特徵**|**企業版**|**專業版**|**社區版**|
 |-|-|-|-|
-|**Code Map**|是|僅支援讀取 code map、篩選程式代碼對應、加入新的泛型節點，以及從選取範圍建立新的導向圖形。|-|
-|**相依性圖表**|是|僅支援讀取相依性圖表。|僅支援讀取相依性圖表。|
-|**導向的圖形**（DGML 圖表）|是|是|是|
-|**程式碼複製**|是|-|-|
+|**Code Map**|是|僅支援讀取代碼映射、篩選代碼映射、添加新的泛型節點以及從所選內容創建新的定向圖。|-|
+|**依賴關係圖**|是|僅支援讀取依賴關係關係圖。|僅支援讀取依賴關係關係圖。|
+|**定向圖**（DGML 圖表）|是|是|是|
+|**代碼克隆**|是|-|-|

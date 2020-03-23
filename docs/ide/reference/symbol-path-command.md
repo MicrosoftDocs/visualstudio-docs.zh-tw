@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed8ec8e7f990a4a2c5d943a15a105faa5ab23572
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589379"
 ---
 # <a name="symbol-path-command"></a>符號路徑命令
@@ -30,10 +30,10 @@ ms.locfileid: "75589379"
 Debug.SymbolPath pathname1;pathname2;... pathnameN
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 `pathname`
 
-選擇項。 讓偵錯工具搜尋符號的路徑清單 (以分號分隔)。
+選擇性。 讓偵錯工具搜尋符號的路徑清單 (以分號分隔)。
 
 ## <a name="remarks"></a>備註
 如果未指定 `pathname`，則此命令會列出目前符號路徑。
@@ -52,7 +52,7 @@ Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [命令視窗](../../ide/reference/command-window.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

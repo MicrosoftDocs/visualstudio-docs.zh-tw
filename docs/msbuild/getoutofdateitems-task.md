@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272401"
 ---
 # <a name="getoutofdateitems-task"></a>GetOutOfDateItems 工作
@@ -35,15 +35,15 @@ ms.locfileid: "77272401"
 |參數|描述|
 |---------------|-----------------|
 |**CheckForInterdependencies**|選擇性的 **bool** 參數。|
-|**CommandMetadataName**|選擇性的 **string** 參數。|
-|**DependenciesMetadataName**|選擇性的 **string** 參數。|
+|**CommandMetadataName**|可選**字串**參數。|
+|**DependenciesMetadataName**|可選**字串**參數。|
 |**HasInterdependencies**|選擇性的 **bool** 輸出參數。|
 |**OutOfDateSources**|選擇性的 **ITaskItem[]** 輸出參數。|
-|**OutputsMetadataName**|必要的 **string** 參數。|
-|**來源**|選擇性的 **ITaskItem[]** 參數。|
-|**TLogDirectory**|必要的 **string** 參數。|
-|**TLogNamePrefix**|必要的 **string** 參數。|
+|**OutputsMetadataName**|所需的**字串**參數。|
+|**來源**|可選**的 ITaskItem]** 參數。|
+|**TLogDirectory**|所需的**字串**參數。|
+|**TLogNamePrefix**|所需的**字串**參數。|
 
 ## <a name="see-also"></a>另請參閱
 
-[工作參考](../msbuild/msbuild-task-reference.md)
+[任務引用](../msbuild/msbuild-task-reference.md)

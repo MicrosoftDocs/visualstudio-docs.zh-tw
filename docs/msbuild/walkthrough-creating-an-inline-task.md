@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70ce19a6dcd9c61b0e14d0d88c52072f59f87fb9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631155"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>逐步解說：建立內嵌工作
 
-MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 從 .NET Framework 4 版開始，您可以在專案檔中建立內嵌工作。 您不必建立個別的組件來裝載工作。 如需詳細資訊，請參閱[內嵌工作](../msbuild/msbuild-inline-tasks.md)。
+MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 從 .NET Framework 4 版開始，您可以在專案檔中建立內嵌工作。 您不必建立個別的組件來裝載工作。 有關詳細資訊，請參閱[內聯任務](../msbuild/msbuild-inline-tasks.md)。
 
  本逐步解說示範如何建立並執行這些內嵌工作：
 
@@ -32,13 +32,13 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 - 有兩個輸入參數，一個傳回 MSBuild 項目之輸出參數的工作。
 
-若要建立並執行作業，請使用 Visual Studio 和「Visual Studio 命令提示字元視窗」，如下所示︰
+若要建立並執行作業，請使用 Visual Studio 和「Visual Studio 命令提示字元視窗」****，如下所示︰
 
 1. 使用 Visual Studio 建立 MSBuild 專案檔。
 
 2. 修改 Visual Studio 中的專案檔以建立內嵌工作。
 
-3. 使用「命令提示字元視窗」來建置專案並檢查結果。
+3. 使用「命令提示字元視窗」**** 來建置專案並檢查結果。
 
 ## <a name="create-and-modify-an-msbuild-project"></a>建立和修改 MSBuild 專案
 
@@ -46,13 +46,13 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 #### <a name="to-create-and-modify-a-project-file"></a>建立並修改專案檔
 
-1. 在 Visual Studio 中，使用C# **Windows Forms 應用程式**範本建立新的專案。 在 [名稱] 方塊中，輸入 `InlineTasks`。 輸入方案的 [位置]，例如 *D:\\* 。 確認已選取 [為方案建立目錄]、已取消選取 [加入至原始檔控制]，且 [方案名稱] 為 **InlineTasks**。
+1. 在視覺化工作室中，使用 C# Windows**表單應用程式**範本創建新專案。 在 [名稱]**** 方塊中，輸入 `InlineTasks`。 輸入方案的 [位置]****，例如 *D:\\*。 確認已選取 [為方案建立目錄]****、已取消選取 [加入至原始檔控制]****，且 [方案名稱]**** 為 **InlineTasks**。
 
-3. 按一下 [確定] 以建立專案檔。
+3. 按一下 [確定]**** 以建立專案檔。
 
-3. 在 [方案總管] 中，以滑鼠右鍵按一下 [InlineTasks] 專案節點，然後按一下 [卸載專案]。
+3. 在**解決方案資源管理器**中，按右鍵**內聯任務**專案節點，然後按一下 **"卸載專案**"。
 
-4. 再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 InlineTasks.csproj]。
+4. 再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 InlineTasks.csproj]****。
 
      該專案檔隨即出現在程式碼編輯器中。
 
@@ -86,28 +86,28 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 3. 儲存專案檔。
 
-   此程式碼會建立名為 Hello 的內嵌工作，而且沒有參數、參考或 `Using` 指示詞。 Hello 工作僅包含一行程式碼，它會在預設記錄裝置 (通常是在主控台視窗) 上顯示 hello 訊息。
+   此代碼創建名為 Hello 的內聯任務，該任務沒有參數、引用或`Using`指令。 Hello 工作僅包含一行程式碼，它會在預設記錄裝置 (通常是在主控台視窗) 上顯示 hello 訊息。
 
 ### <a name="run-the-hello-task"></a>執行 Hello 工作
 
- 使用「命令提示字元視窗」執行 MSBuild，以建構 Hello 工作並處理叫用它的 TestBuild 目標。
+ 使用「命令提示字元視窗」**** 執行 MSBuild，以建構 Hello 工作並處理叫用它的 TestBuild 目標。
 
 ##### <a name="to-run-the-hello-task"></a>執行 Hello 工作
 
-1. 按一下 [開始]，按一下 [所有程式]，接著尋找 **Visual Studio Tools** 資料夾，然後按一下 [Visual Studio 命令提示字元]。
+1. 按一下 [開始]****，按一下 [所有程式]****，接著尋找 **Visual Studio Tools** 資料夾，然後按一下 [Visual Studio 命令提示字元]****。
 
-2. 在 [命令提示字元視窗] ，中找出包含專案檔的資料夾，此案例中為 *D:\InlineTasks\InlineTasks\\* 。
+2. 在**命令提示視窗中**，找到包含專案檔案的資料夾，在這種情況下 *，D：\內聯任務\內聯任務\\*。
 
-3. 在不使用命令參數的情況下輸入 **msbuild**，然後按 **Enter**。 根據預設，這會建置 *InlineTasks.csproj* 檔案並處理會叫用 Hello 工作的預設目標 TestBuild。
+3. 鍵入沒有命令開關**的 msbuild，** 然後按**Enter**。 預設情況下，這將生成*內聯Tasks.csproj*檔並處理預設目標 TestBuild，該目標調用 Hello 任務。
 
-4. 檢查「命令提示字元視窗」中的輸出。 您應該會看到下列這一行：
+4. 檢查「命令提示字元視窗」**** 中的輸出。 您應該會看到下列這一行：
 
     `Hello, world!`
 
    > [!NOTE]
    > 如果您沒有看到 hello 訊息，請嘗試重新儲存專案檔，然後執行 Hello 工作。
 
-   藉由交替使用程式碼編輯器和「命令提示字元視窗」，您可以變更專案檔並快速查看結果。
+   藉由交替使用程式碼編輯器和「命令提示字元視窗」****，您可以變更專案檔並快速查看結果。
 
 ## <a name="define-the-echo-task"></a>定義 Echo 工作
 
@@ -133,9 +133,9 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
    </Target>
    ```
 
-2. 在 [命令提示字元視窗] 中，在不使用命令參數的情況下輸入 **msbuild**，然後按 **Enter**。 根據預設，這會處理叫用 Echo 工作的預設目標 TestBuild。
+2. 在**命令提示視窗中**，鍵入沒有命令開關**的 msbuild，****然後按**Enter 。 根據預設，這會處理叫用 Echo 工作的預設目標 TestBuild。
 
-3. 檢查「命令提示字元視窗」中的輸出。 您應該會看到下列這一行：
+3. 檢查「命令提示字元視窗」**** 中的輸出。 您應該會看到下列這一行：
 
     `Greetings!`
 
@@ -170,9 +170,9 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
    </Target>
    ```
 
-2. 在 [命令提示字元視窗] 中，在不使用命令參數的情況下輸入 **msbuild**，然後按 **Enter**。 根據預設，這會處理叫用 Echo 工作的預設目標 TestBuild。
+2. 在**命令提示視窗中**，鍵入沒有命令開關**的 msbuild，****然後按**Enter 。 根據預設，這會處理叫用 Echo 工作的預設目標 TestBuild。
 
-3. 檢查「命令提示字元視窗」中的輸出。 您應該會看到下列這一行：
+3. 檢查「命令提示字元視窗」**** 中的輸出。 您應該會看到下列這一行：
 
     `The sum is 9`
 
@@ -226,9 +226,9 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
    </Target>
    ```
 
-2. 在 [命令提示字元視窗] 中，在不使用命令參數的情況下輸入 **msbuild**，然後按 **Enter**。 根據預設，這會處理會叫用 RegX 工作的預設目標 TestBuild。
+2. 在**命令提示視窗中**，鍵入沒有命令開關**的 msbuild，****然後按**Enter 。 根據預設，這會處理會叫用 RegX 工作的預設目標 TestBuild。
 
-3. 檢查「命令提示字元視窗」中的輸出。 您應該會看到下列這幾行：
+3. 檢查「命令提示字元視窗」**** 中的輸出。 您應該會看到下列這幾行：
 
    ```
    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
@@ -264,6 +264,6 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 ## <a name="see-also"></a>另請參閱
 
-- [內嵌工作](../msbuild/msbuild-inline-tasks.md)
+- [內聯任務](../msbuild/msbuild-inline-tasks.md)
 - [工作](../msbuild/msbuild-tasks.md)
 - [目標](../msbuild/msbuild-targets.md)

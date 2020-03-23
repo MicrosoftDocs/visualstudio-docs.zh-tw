@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78169413"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302634"
 ---
 # <a name="exploration-bounds"></a>探索界限
 
@@ -35,7 +35,7 @@ public partial class FooTest {...}
   * [MaxCalls](#maxcalls) - 可以在單一執行路徑期間發出的呼叫數上限。
   * [MaxStack](#maxstack) - 堆疊在單一執行路徑期間任何時候的大小上限，以使用中呼叫框架數來測量。
   * [MaxConditions](#maxconditions) - 單一執行路徑期間可以對輸入進行檢查的條件數上限。
-* **探索界限**
+* **勘探邊界**
   * [MaxRuns](#maxruns) - 探索期間將嘗試的執行數上限。
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) - 不發出新測試的連續執行數上限。
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) - 探索期間將嘗試唯一執行路徑的執行數上限。
@@ -48,7 +48,7 @@ public partial class FooTest {...}
 <a name="maxconstraintsolvertime"></a>
 ## <a name="maxconstraintsolvertime"></a>MaxConstraintSolverTime
 
-[條件約束規劃求解](input-generation.md#constraint-solver)必須計算輸入的秒數，這將導致採用不同的新執行路徑。 這是 **PexSettingsAttributeBase** 和其衍生類型的選項。
+[條件約束規劃求解](input-generation.md#constraint-solver)必須計算輸入的秒數，這將導致採用不同的新執行路徑。 這是**PexSettings 屬性基礎**及其派生類型的一個選項。
 
 IntelliTest 對程式執行路徑探索得越深，IntelliTest 從程式的控制流程和資料流程建置的條件約束系統就會變得越複雜。 根據時間限制，您可以設定此值，以允許 IntelliTest 增加或減少探索新執行路徑的時間。
 
@@ -145,7 +145,7 @@ IntelliTest 在探索期間將考慮使用的唯一路徑數目上限。
 
 **MaxRuns** 和 **MaxRunsWithUniquePaths** 這兩項設定相關，如下所示：
 
-* IntelliTest 將以不同的測試輸入呼叫參數化測試方法最多 **MaxRuns** 次。
+* IntelliTest 將調用參數化測試方法，最多達到**最大運行**時間，並使用不同的測試輸入。
 * 如果已執行的程式碼具決定性，則 IntelliTest 會每次採用不同的執行路徑。 不過，在某些情況下，已執行的程式碼可能會以不同的輸入且依循它之前已採用的執行路徑。
 * IntelliTest 會計算找到的唯一執行路徑數目；此數目是透過 **MaxRunsWithUniquePaths** 選項進行限制。
 
@@ -166,7 +166,7 @@ IntelliTest 在探索期間將考慮使用的唯一路徑數目上限。
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
 
-指出 IntelliTest 應該發出的測試類型。 可能值為：
+指出 IntelliTest 應該發出的測試類型。 可能的值包括：
 
 * **All** - 發出所有項目的測試，包括假設違規。
 * **FailuresAndIncreasedBranchHits** (預設) - 針對所有的唯一失敗，以及每次測試案例增加 [TestEmissionBranchHits](#testemissionbranchhits) 所控制的涵蓋範圍時，發出測試。
@@ -184,6 +184,6 @@ IntelliTest 在探索期間將考慮使用的唯一路徑數目上限。
 
 這個選項的預設值是 **TestEmissionBranchHits = 2**，它會產生更豐富多變的測試套件，同時也更適合用來偵測未來的迴歸錯誤。
 
-## <a name="got-feedback"></a>有任何意見反應嗎？
+## <a name="got-feedback"></a>有人給您意見嗎？
 
 在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。

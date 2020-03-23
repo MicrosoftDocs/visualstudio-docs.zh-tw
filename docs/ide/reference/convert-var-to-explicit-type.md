@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 4ec388564e1851402f085f6bbaefba08dbea212c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595770"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>重構以將 var 取代為明確類型
@@ -34,18 +34,18 @@ ms.locfileid: "75595770"
 
 不過，以匿名類型將變數初始化，且稍後才會存取物件的屬性時，則必須使用 [var](/dotnet/csharp/language-reference/keywords/var)。 如需詳細資訊，請參閱[隱含類型區域變數 (C#)](/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables)。
 
-## <a name="how-to-use-it"></a>使用方式
+## <a name="how-to-use-it"></a>如何使用它
 
 1. 將插入號放在 `var` 關鍵字上。
 
-1. 在字行任何地方按 **Ctrl**+ **.** ， 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
+1. 按**Ctrl**+**。** 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
 
    ![使用明確類型快速動作功能表](media/use-explicit-type.png)
 
-1. 選取 [使用明確類型]。 或選取 [預覽變更] 以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]。
+1. 選取 [使用明確類型]****。 或選取 [預覽變更]**** 以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]****。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [隱含類型變數 (C#)](/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables)
-- [重構](../refactoring-in-visual-studio.md)
+- [Refactoring](../refactoring-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

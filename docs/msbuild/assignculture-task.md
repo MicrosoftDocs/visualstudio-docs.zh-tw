@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9f7bb47efefa3f7a1d4cf52cbfa5891602956f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634561"
 ---
 # <a name="assignculture-task"></a>AssignCulture 工作
 
-這項工作接受項目清單檔案名稱中包含有效的 .NET 文化特性識別碼字串，而產生的項目有包含對應的文化特性識別碼中繼資料，名為 `Culture`。 例如，檔案名稱 *Form1.fr-fr.resx* 有內嵌的文化特性識別碼 "fr-fr"，所以此工作會產生中繼資料 `Culture` 等於 `fr-fr` 的同檔名項目。 工作也會產生檔名移除了文化特性的檔案名稱清單。
+這項工作接受項目清單檔案名稱中包含有效的 .NET 文化特性識別碼字串，而產生的項目有包含對應的文化特性識別碼中繼資料，名為 `Culture`。 例如，檔案名*Form1.fr-fr.resx*具有嵌入式區域性識別碼"fr-fr"，因此此任務將生成具有相同檔案名的項，其中繼資料`Culture`等於`fr-fr`。 工作也會產生檔名移除了文化特性的檔案名稱清單。
 
 ## <a name="task-parameters"></a>工作參數
 
@@ -43,11 +43,11 @@ ms.locfileid: "77634561"
 
 ## <a name="remarks"></a>備註
 
-除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
 
- 下列範例會執行附 `AssignCulture` 項目集合的 `ResourceFiles` 工作。
+ 下列範例會執行附 `ResourceFiles` 項目集合的 `AssignCulture` 工作。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -74,7 +74,7 @@ ms.locfileid: "77634561"
 
 下表描述工作執行之後輸出項目的值。 項目中繼資料會顯示在項目之後的括號內。
 
-|項目集合。|目錄|
+|項目集合。|內容|
 |---------------------|--------------|
 |`OutAssignedFiles`|*MyResource1.fr.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx* (沒有額外的中繼資料)|
 |`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (Culture="fr")|
@@ -84,4 +84,4 @@ ms.locfileid: "77634561"
 ## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)

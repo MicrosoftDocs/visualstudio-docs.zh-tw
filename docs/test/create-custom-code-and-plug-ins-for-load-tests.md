@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3519a593182c199cc9f7a92cfb77e9c79bd1a9ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590094"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>為負載測試建立自訂程式碼和外掛程式
@@ -28,12 +28,12 @@ ms.locfileid: "75590094"
 
 |工作|相關主題|
 |-|-----------------------|
-|**針對負載測試建立自訂外掛程式：** 您可以使用負載測試 API 來建立自訂外掛程式，以便將其他測試功能新增至負載測試。|-   [如何：使用負載測試 API](../test/how-to-use-the-load-test-api.md)<br />-   [如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)|
-|**針對 Web 效能測試建立自訂外掛程式：** 您可以使用 Web 效能測試 API 來建立自訂外掛程式，以便將其他測試功能新增至 Web 效能測試 (包括要求層級)。 您也可以建立 Web 服務測試。<br /><br /> 此外，您可以建立 Web 錄製器外掛程式，以便在 Web 效能測試記錄之後但在 [Web 效能測試結果檢視器] 中出現之前，進行修改。|-   [如何：使用 Web 效能測試 API](../test/how-to-use-the-web-performance-test-api.md)<br />-   [如何：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [如何：建立要求層級外掛程式](../test/how-to-create-a-request-level-plug-in.md)<br />-   [如何：建立 Web 服務測試](../test/how-to-create-a-web-service-test.md)<br />-   [如何：建立錄製器外掛程式](../test/how-to-create-a-recorder-plug-in.md)|
-|**將 UI 功能新增至 Web 效能測試結果檢視器：** 您可以使用 Visual Studio 增益集，將其他 UI 功能新增至 Web 效能測試結果檢視器。|-   [如何：建立 Web 效能測試結果檢視器的 Visual Studio 增益集](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
-|**建立自訂 HTTP 內容編輯器：** 您可以建立自訂編輯器，以便編輯來自 Web 服務的二進位或字串 Http XML 回應。|-   [如何：建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
+|**針對負載測試建立自訂外掛程式：** 您可以使用負載測試 API 來建立自訂外掛程式，以便將其他測試功能新增至負載測試。|-   [如何：使用負載測試 API](../test/how-to-use-the-load-test-api.md)<br />-   [如何：創建負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)|
+|**為 Web 效能測試創建自訂外掛程式：** 您可以使用 Web 效能測試 API 創建自訂外掛程式，以向 Web 效能測試添加更多測試功能，包括在請求級別。 您也可以建立 Web 服務測試。<br /><br /> 此外，您可以建立 Web 錄製器外掛程式，以便在 Web 效能測試記錄之後但在 [Web 效能測試結果檢視器] 中出現之前，進行修改。|-   [如何：使用 Web 效能測試 API](../test/how-to-use-the-web-performance-test-api.md)<br />-   [如何：創建 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [如何：創建請求級外掛程式](../test/how-to-create-a-request-level-plug-in.md)<br />-   [如何：創建 Web 服務測試](../test/how-to-create-a-web-service-test.md)<br />-   [操作方式：創建答錄機外掛程式](../test/how-to-create-a-recorder-plug-in.md)|
+|**將 UI 功能新增至 Web 效能測試結果檢視器：** 您可以使用 Visual Studio 增益集，將其他 UI 功能新增至 Web 效能測試結果檢視器。|-   [如何：為 Web 效能測試結果檢視器創建視覺化 Studio 外接程式](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
+|**建立自訂 HTTP 內容編輯器：** 您可以建立自訂編輯器，以便編輯來自 Web 服務的二進位或字串 Http XML 回應。|-   [如何：為 Web 效能測試編輯器創建自訂 HTTP 正文編輯器](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>
 
@@ -45,7 +45,7 @@ ms.locfileid: "75590094"
 
 <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [產生和執行 Web 效能測試程式碼](../test/generate-and-run-a-coded-web-performance-test.md)

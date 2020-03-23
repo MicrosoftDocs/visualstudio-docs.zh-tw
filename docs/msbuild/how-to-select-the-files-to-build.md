@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633807"
 ---
 # <a name="how-to-select-the-files-to-build"></a>如何：選取要建置的檔案
@@ -27,7 +27,7 @@ ms.locfileid: "77633807"
 
 項目代表建置的輸入。 如需項目的詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
-若要包含組建的檔案，必須將這些檔案包含在 MSBuild 專案檔的專案清單中。 多個檔案可以新增至項目清單，方法是個別包含檔案，或是使用萬用字元來一次包含許多檔案。
+要包括生成的檔，必須將其包含在 MSBuild 專案檔案中的項清單中。 多個檔案可以新增至項目清單，方法是個別包含檔案，或是使用萬用字元來一次包含許多檔案。
 
 #### <a name="to-declare-items-individually"></a>個別宣告項目
 
@@ -40,7 +40,7 @@ ms.locfileid: "77633807"
     `<VBFile Include="form1.vb"/>`
 
     > [!NOTE]
-    > 如果項目集合中的項目不在與專案檔相同的目錄中，您必須指定項目的完整或相對路徑。 例如： `Include="..\..\form2.cs"` 。
+    > 如果項目集合中的項目不在與專案檔相同的目錄中，您必須指定項目的完整或相對路徑。 例如：`Include="..\..\form2.cs"`。
 
 #### <a name="to-declare-multiple-items"></a>宣告多個項目
 
@@ -56,7 +56,7 @@ ms.locfileid: "77633807"
 
 您也可以使用萬用字元，以遞迴方式包含所有檔案，或只包含來自子目錄的特定檔案，作為建置的輸入。 如需萬用字元的詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)
 
-下列範例所根據的專案，包含下列目錄和子目錄中的圖形檔案，且專案檔位於「專案」目錄中︰
+下列範例所根據的專案，包含下列目錄和子目錄中的圖形檔案，且專案檔位於「專案」** 目錄中︰
 
 *Project\Images\BestJpgs*
 
@@ -101,7 +101,7 @@ ms.locfileid: "77633807"
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> 您必須使用萬用字元搭配專案，以指定組建的輸入;您不能使用 MSBuild 或[Vbc](../msbuild/vbc-task.md)[等 MSBuild](../msbuild/csc-task.md)工作中的 `Sources` 屬性來指定輸入。 下列範例在專案檔案中無效︰
+> 您必須將萬用字元與項一起指定生成輸入;但是，對於專案，必須使用萬用字元來指定生成中的輸入。不能在 MSBuild 任務`Sources`（如[Csc](../msbuild/csc-task.md)或[Vbc）](../msbuild/vbc-task.md)中使用屬性指定輸入。 下列範例在專案檔案中無效︰
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

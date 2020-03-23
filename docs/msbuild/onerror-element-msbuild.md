@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633079"
 ---
 # <a name="onerror-element-msbuild"></a>OnError 元素 (MSBuild)
@@ -40,7 +40,7 @@ ms.locfileid: "77633079"
 
 ## <a name="attributes-and-elements"></a>屬性和元素
 
- 下列各節描述屬性、子項目和父項目。
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
 
@@ -57,17 +57,17 @@ ms.locfileid: "77633079"
 
 | 元素 | 描述 |
 | - | - |
-| [Target](../msbuild/target-element-msbuild.md) | MSBuild 工作的容器元素。 |
+| [目標](../msbuild/target-element-msbuild.md) | 用於 MSBuild 任務的容器元素。 |
 
 ## <a name="remarks"></a>備註
 
- 如果其中一個 `Target` 專案的工作失敗，且 `ContinueOnError` 屬性設定為 `ErrorAndStop` （或 `false`），則 MSBuild 會執行 `OnError` 元素。 工作失敗時，便會執行 `ExecuteTargets` 屬性指定的目標。 如果目標中有多個 `OnError` 元素，則工作失敗時會依序執行 `OnError` 元素。
+ 如果元素的一個`OnError`任務失敗，屬性設置為`Target` `ErrorAndStop` （或`false`） 時`ContinueOnError`，MSBuild 將執行該元素。 工作失敗時，便會執行 `ExecuteTargets` 屬性指定的目標。 如果目標中有多個 `OnError` 元素，則工作失敗時會依序執行 `OnError` 元素。
 
  如需 `ContinueOnError` 屬性的相關資訊，請參閱 [Task 元素 (MSBuild)](../msbuild/task-element-msbuild.md)。 如需目標的詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。
 
 ## <a name="example"></a>範例
 
- 下列程式碼會執行 `TaskOne` 和 `TaskTwo` 工作。 如果 `TaskOne` 失敗，MSBuild 會評估 `OnError` 元素，並執行 `OtherTarget` 目標。
+ 下列程式碼會執行 `TaskOne` 和 `TaskTwo` 工作。 如果`TaskOne`失敗，MSBuild 會評估`OnError`元素並執行`OtherTarget`目標。
 
 ```xml
 <Target Name="ThisTarget">
@@ -81,5 +81,5 @@ ms.locfileid: "77633079"
 
 ## <a name="see-also"></a>另請參閱
 
-- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
 - [目標](../msbuild/msbuild-targets.md)

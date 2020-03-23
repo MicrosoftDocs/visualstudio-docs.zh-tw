@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2247240ae0992c8275520ec5d7bf94d98ae1053
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631207"
 ---
 # <a name="vcmessage-task"></a>VCMessage 工作
@@ -32,7 +32,7 @@ ms.locfileid: "77631207"
 
 ## <a name="remarks"></a>備註
 
- 這項工作可協助為C++專案執行 MSBuild，而不是供使用者呼叫。 如需詳細資訊，請參閱 <xref:Microsoft.Build.Utilities.TaskLoggingHelper>。
+ 此任務有助於實現 C++專案的 MSBuild，並且不由使用者調用。 如需詳細資訊，請參閱 <xref:Microsoft.Build.Utilities.TaskLoggingHelper>。
 
 ## <a name="parameters"></a>參數
 
@@ -40,10 +40,10 @@ ms.locfileid: "77631207"
 
 |參數|描述|
 |---------------|-----------------|
-|**引數**|選擇性的 **String** 參數。<br /><br /> 要顯示的訊息清單 (以分號分隔)。|
+|**參數**|可選**字串**參數。<br /><br /> 要顯示的訊息清單 (以分號分隔)。|
 |**代碼**|必要的 **String** 參數。<br /><br /> 限定訊息的錯誤號碼。|
-|**型別**|選擇性的 **String** 參數。<br /><br /> 指定要發出訊息的類型。 指定「警告」發出警告訊息，或「錯誤」發出錯誤訊息。|
+|**類型**|可選**字串**參數。<br /><br /> 指定要發出訊息的類型。 指定「警告」發出警告訊息，或「錯誤」發出錯誤訊息。|
 
 ## <a name="see-also"></a>另請參閱
 
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)

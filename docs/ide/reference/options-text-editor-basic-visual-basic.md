@@ -18,31 +18,31 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11a069e17e615199e367683273adb85e771f1d9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584513"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431471"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>選項、文字編輯器、基本 (Visual Basic)、進階
-位於 [選項] ([工具] 功能表) 對話方塊上 [文字編輯器] 資料夾的 [基本] 資料夾中的 [VB 專用] 屬性頁面包含下列屬性：
+位於 [選項]**** ([工具]**** 功能表) 對話方塊上 [文字編輯器]**** 資料夾的 [基本]**** 資料夾中的 [VB 專用]**** 屬性頁面包含下列屬性：
 
 ## <a name="analysis"></a>分析
 
-- 啟用完整解決方案分析
+- 即時代碼分析或背景分析範圍
 
-   除了開啟程式碼檔案之外，您也必須為解決方案中的所有檔案啟用程式法分析。 如需詳細資訊，請參閱[完整解決方案分析](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)。
+   配置託管代碼的背景分析範圍。 有關詳細資訊，請參閱[如何：為託管代碼配置即時代碼分析範圍](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
 
 ## <a name="using-directives"></a>using 指示詞
 
 - 排序 using 時先放置 'System' 指示詞
 
-   選取後，快顯功能表中的 [移除並排序 Using] 命令會對 `using` 指示詞進行排序，並將 'System' 命名空間置於清單頂端。
+   選中後，按右鍵功能表中的 **"刪除和排序使用"** 命令對`using`指令進行排序，並將"系統"命名空間放在清單頂部。
 
 - 使用指示詞群組來進行分隔
 
-   選取後，快顯功能表中的 [移除並排序 Using] 命令會透過在具有相同根命名空間的指示詞群組之間插入空白行來分隔 `using` 指示詞。
+   選取後，快顯功能表中的 [移除並排序 Using]**** 命令會透過在具有相同根命名空間的指示詞群組之間插入空白行來分隔 `using` 指示詞。
 
 - 為參考組件中的類型建議 Using
 - 為 NuGet 套件中的類型建議 Using
@@ -55,7 +55,7 @@ ms.locfileid: "75584513"
 
  **啟用參考和關鍵字的反白顯示**
 
-文字編輯器可以反白顯示符號的所有執行個體或子句中的所有關鍵字，例如 `If..Then`、`While...End While` 或 `Try...Catch...Finally`。 您可以按 **Ctrl** + **Shift** + **向下鍵**或 **Ctrl** + **Shift** + **向上鍵**，在反白顯示的參考或關鍵字之間巡覽。
+文字編輯器可以反白顯示符號的所有執行個體或子句中的所有關鍵字，例如 `If..Then`、`While...End While` 或 `Try...Catch...Finally`。 您可以通過按 **"Ctrl** + **向下移位** + **"箭頭**或 **"向上移動** + **"** + **箭頭**在突出顯示的引用或關鍵字之間導航。
 
 ## <a name="outlining"></a>大綱
 
@@ -97,7 +97,7 @@ ms.locfileid: "75584513"
 
 **自動插入 End 建構**
 
-在您輸入 (例如，程序宣告 `Sub Main` 的第一行 ) 並按 **Enter** 時，文字編輯器會新增對稱的 `End Sub` 行。 同樣地，如果新增 [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) 迴圈，則文字編輯器會新增對稱的 `Next` 陳述式。 選取此選項後，程式碼編輯器會自動新增 End 建構。
+鍵入時，例如，過程聲明的第一行，`Sub Main`並按**Enter**，文字編輯器將添加匹配`End Sub`行。 同樣地，如果新增 [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) 迴圈，則文字編輯器會新增對稱的 `Next` 陳述式。 選取此選項後，程式碼編輯器會自動新增 End 建構。
 
 **自動插入 Interface 及 MustOverride 成員**
 
@@ -107,7 +107,7 @@ ms.locfileid: "75584513"
 
 文字編輯器可以提供一般錯誤的解決方案建議，並讓您選取要套用到程式碼的適當修正措施。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
-- [選項、文字編輯器、所有語言、索引標籤](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)

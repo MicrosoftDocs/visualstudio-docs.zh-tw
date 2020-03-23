@@ -21,18 +21,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 668d42cdb0bc5cfb8dd344aab51ad0c66a838cd2
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634509"
 ---
 # <a name="bscmake-task"></a>BscMake 工作
 
 > [!IMPORTANT]
-> Visual Studio IDE 已不再使用 BscMake。 從 Visual Studio 2008 起，瀏覽資訊會自動儲存在 [解決方案] 資料夾的 *.sdf* 檔案中。
+> Visual Studio IDE 已不再使用 BscMake。 從 Visual Studio 2008 起，瀏覽資訊會自動儲存在 [解決方案]** 資料夾的 *.sdf* 檔案中。
 
- 包裝 Microsoft Browse Information Maintenance Utility 工具 (*bscmake.exe*)。  *bscmake.exe* 工具會從編譯期間所建立的來源瀏覽器檔案 ( *.sbr*) 建置瀏覽資訊檔 ( *.bsc*)。 使用 [物件瀏覽器] 來檢視 *.bsc* 檔案。 如需詳細資訊，請參閱 [BSCMAKE 參考](/cpp/build/reference/bscmake-reference)。
+ 包裝 Microsoft Browse Information Maintenance Utility 工具 (*bscmake.exe*)。  *bscmake.exe* 工具會從編譯期間所建立的來源瀏覽器檔案 (*.sbr*) 建置瀏覽資訊檔 (*.bsc*)。 使用 [物件瀏覽器]**** 來檢視 *.bsc* 檔案。 如需詳細資訊，請參閱 [BSCMAKE 參考](/cpp/build/reference/bscmake-reference)。
 
 ## <a name="parameters"></a>參數
 
@@ -40,13 +40,13 @@ ms.locfileid: "77634509"
 
 |參數|描述|
 |---------------|-----------------|
-|**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 選項的清單，如命令列上所指定。 例如，/\<option1> /\<option2> /\<option#>。 使用這個參數來指定任何其他 **BscMake** 工作參數未表示的選項。<br /><br /> 如需詳細資訊，請參閱 [BSCMAKE 選項](/cpp/build/reference/bscmake-options)中的選項。|
-|**OutputFile**|選擇性的 **String** 參數。<br /><br /> 指定將會覆寫預設輸出檔案名稱的檔案名稱。<br /><br /> 如需詳細資訊，請參閱 **BSCMAKE 選項**中的 [/o](/cpp/build/reference/bscmake-options) 選項。|
-|**PreserveSBR**|選擇性的 **Boolean** 參數。<br /><br /> 如果是 `true`，會強制執行非累加建置。 無論 *.bsc* 檔案是否存在，都執行完整、非累加建置，並防止 *.sbr* 檔被截斷。<br /><br /> 如需詳細資訊，請參閱 **BSCMAKE 選項**中的 [/n](/cpp/build/reference/bscmake-options) 選項。|
-|**來源**|選擇性的 **ITaskItem[]** 參數。<br /><br /> 定義工作可以耗用和發出的 MSBuild 來源檔案項目的陣列。|
-|**SuppressStartupBanner**|選擇性的 **Boolean** 參數。<br /><br /> 如果是 `true`，當工作開始時，會防止顯示著作權和版本號碼訊息。<br /><br /> 如需詳細資訊，請參閱 **BSCMAKE 選項**中的 [/NOLOGO](/cpp/build/reference/bscmake-options) 選項。|
-|**TrackerLogDirectory**|選擇性的 **String** 參數。<br /><br /> 指定追蹤器記錄檔的目錄。|
+|**AdditionalOptions**|可選**字串**參數。<br /><br /> 選項的清單，如命令列上所指定。 例如，/\<option1> /\<option2> /\<option#>。 使用這個參數來指定任何其他 **BscMake** 工作參數未表示的選項。<br /><br /> 如需詳細資訊，請參閱 [BSCMAKE 選項](/cpp/build/reference/bscmake-options)中的選項。|
+|**輸出檔案**|可選**字串**參數。<br /><br /> 指定將會覆寫預設輸出檔案名稱的檔案名稱。<br /><br /> 如需詳細資訊，請參閱 [BSCMAKE 選項](/cpp/build/reference/bscmake-options)中的 **/o** 選項。|
+|**PreserveSBR**|可選**布林參數**。<br /><br /> 如果是 `true`，會強制執行非累加建置。 無論 *.bsc* 檔案是否存在，都執行完整、非累加建置，並防止 *.sbr* 檔被截斷。<br /><br /> 如需詳細資訊，請參閱 [BSCMAKE 選項](/cpp/build/reference/bscmake-options)中的 **/n** 選項。|
+|**來源**|可選**的 ITaskItem]** 參數。<br /><br /> 定義工作可以耗用和發出的 MSBuild 來源檔案項目的陣列。|
+|**SuppressStartupBanner**|可選**布林參數**。<br /><br /> 如果是 `true`，當工作開始時，會防止顯示著作權和版本號碼訊息。<br /><br /> 如需詳細資訊，請參閱 [BSCMAKE 選項](/cpp/build/reference/bscmake-options)中的 **/NOLOGO** 選項。|
+|**TrackerLogDirectory**|可選**字串**參數。<br /><br /> 指定追蹤器記錄檔的目錄。|
 
 ## <a name="see-also"></a>另請參閱
 
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)

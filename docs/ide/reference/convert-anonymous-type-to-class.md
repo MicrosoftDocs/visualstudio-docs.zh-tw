@@ -1,20 +1,21 @@
 ---
 title: 將匿名型別轉換為類別
-ms.date: 02/13/2019
+ms.date: 03/10/2020
 ms.topic: reference
-author: kendrahavens
-ms.author: kehavens
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f29e31fb87d8b18e7f5a46d16f90217ee08d51f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2379ce588eeb4773e562f630ade37e28d7f17315
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968521"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094284"
 ---
 # <a name="convert-anonymous-type-to-class"></a>將匿名型別轉換為類別
 
@@ -22,16 +23,18 @@ ms.locfileid: "62968521"
 
 - C#
 
-**功能：** 將匿名型別轉換為類別。
+- Visual Basic
 
-**時機：** 您有想要持續在類別中建置的匿名型別。
+**內容：** 將匿名型別轉換為類。
 
-**原因：** 如果您只是在程式碼中局部使用匿名型別，它們非常實用。 隨著您的程式碼增加，輕鬆地將其升階至類別會很有幫助。
+**何時：** 您有一個要在類中繼續構建的匿名型別。
 
-## <a name="how-to"></a>操作說明
+**原因：** 如果您僅在本地使用它們，則匿名型別非常有用。 隨著您的程式碼增加，輕鬆地將其升階至類別會很有幫助。
+
+## <a name="how-to"></a>操作方式
 
 1. 將游標放在匿名型別中。
-2. 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+2. 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
 
    ![將匿名型別轉換為類別](media/convert-anon-to-class.png)
 
@@ -41,4 +44,4 @@ ms.locfileid: "62968521"
 
 ## <a name="see-also"></a>另請參閱
 
-- [重構](../refactoring-in-visual-studio.md)
+- [Refactoring](../refactoring-in-visual-studio.md)

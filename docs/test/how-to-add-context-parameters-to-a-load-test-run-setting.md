@@ -10,15 +10,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05efbba005a9455af3b9d2e8755b580a8af30d0a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584474"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：將內容參數新增至負載測試回合設定
 
-使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更情節屬性，以便符合您的測試需求和目標。
+使用 **"新負載測試精靈**"創建負載測試後，可以使用**負載測試編輯器**更改方案屬性以滿足測試需求和目標。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -54,22 +54,22 @@ ms.locfileid: "75584474"
 
 1. 開啟負載測試。
 
-2. 在 [負載測試編輯器] 的負載測試樹狀目錄中，展開 [回合設定] 資料夾。
+2. 在 [負載測試編輯器] 的負載測試樹狀目錄中，展開 [回合設定]**** 資料夾。
 
-3. 以滑鼠右鍵按一下要新增內容參數的特定回合設定，然後選擇 [新增內容參數]。
+3. 以滑鼠右鍵按一下要新增內容參數的特定回合設定，然後選擇 [新增內容參數]****。
 
-     新的內容參數隨即新增至負載測試樹狀目錄之 [回合設定] 資料夾內的 [內容參數] 資料夾。
+     新的內容參數隨即新增至負載測試樹狀目錄之 [回合設定]**** 資料夾內的 [內容參數]**** 資料夾。
 
      -或-
 
-     如果回合設定已包含 [內容參數] 資料夾，您可以在該資料夾上按一下滑鼠右鍵，然後選擇 [新增內容參數]。
+     如果回合設定已包含 [內容參數]**** 資料夾，您可以在該資料夾上按一下滑鼠右鍵，然後選擇 [新增內容參數]****。
 
-4. 在 [屬性] 視窗中，將 [名稱] 變更為適當的值 (例如 WebServer1)。 在 [屬性] 視窗中，將 [值] 變更為您要使用的參數 (例如 `http://CorporateStagingWebServer`)。
+4. 在 [屬性]**** 視窗中，將 [名稱]**** 變更為適當的值 (例如 WebServer1)。 在 **"屬性"** 視窗中，將 **"值**"更改為要使用的參數（例如， `http://CorporateStagingWebServer`
 
-5. (選擇性) 重複步驟 3 到 5，並且針對 [值] 屬性使用不同的字串 (例如 `http://CorporateProductionWebServer`)。
+5. （可選）重複步驟 3 到 5，並為**Value**屬性使用不同的字串（例如`http://CorporateProductionWebServer`， 。
 
-6. 選擇要成為使用中的回合設定。 在回合設定上開啟捷徑功能表，然後選擇 [設定為使用中]。
+6. 選擇要成為使用中的回合設定。 在回合設定上開啟捷徑功能表，然後選擇 [設定為使用中]****。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [設定負載測試回合設定](../test/configure-load-test-run-settings.md)
+- [配置負載測試回合設定](../test/configure-load-test-run-settings.md)

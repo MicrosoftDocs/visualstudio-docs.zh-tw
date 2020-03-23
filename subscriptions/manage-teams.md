@@ -5,12 +5,12 @@ ms.author: lank
 manager: lank
 ms.date: 03/09/2020
 ms.topic: conceptual
-description: 瞭解系統管理員負責管理大型團隊和外部承包商之訂閱的責任。
+description: 瞭解管理員管理大型團隊和外部承包商訂閱的責任。
 ms.openlocfilehash: 2f51febfa3cab6f3200b364cce1cc02e438a0384
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947054"
 ---
 # <a name="large-teams-and-external-contractors"></a>大型小組和外部承攬人
@@ -29,19 +29,19 @@ Visual Studio 訂用帳戶系統管理員必須負責確保與 Visual Studio 授
 外部承包商可能會攜帶授權來參與 Visual Studio 授權環境。 Microsoft 認證合作夥伴可能會收到一些免費的 Visual Studio 訂用帳戶供其內部使用。 不過，這些訂用帳戶未涵蓋產生營收的活動，例如為客戶開發自訂軟體。 請要求合作夥伴將認證信函傳送給您，其中說明他們所提供的授權以及他們需要您購買的授權。
 
 ## <a name="resources"></a>資源
-- [Visual Studio 授權技術白皮書](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+- [視覺工作室許可白皮書](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [大量授權條款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 深入了解系統管理員的責任：
 - [系統管理員責任](admin-responsibilities.md)
 - [清查生產前環境](admin-inventory.md)
-- [追蹤使用者指派及處理訂單](assignments-orders.md)
+- [追蹤使用者指派和處理訂單](assignments-orders.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量

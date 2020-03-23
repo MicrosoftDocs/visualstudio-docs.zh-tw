@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 852b783129f130316de88580020e0139925ffb37
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634301"
 ---
 # <a name="create-forwarding-loggers"></a>建立轉送記錄器
@@ -36,11 +36,11 @@ ms.locfileid: "77634301"
 
 ## <a name="specify-a-forwarding-logger"></a>指定轉送記錄器
 
- 將轉送記錄器編譯成元件之後，您必須告知 MSBuild 在組建期間使用它。 若要執行此工作，請搭配使用 `-FileLogger`、`-FileLoggerParameters` 和 `-DistributedFileLogger` 參數與 MSBuild.exe。 `-FileLogger` 參數會告知 MSBuild.exe 已直接附加記錄器。 `-DistributedFileLogger` 參數表示每個節點都有一個記錄檔。 若要設定轉送記錄器的參數，請使用 `-FileLoggerParameters` 參數。 如需這些參數與其他 *MSBuild.exe* 參數的詳細資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。
+ 將轉發記錄器編譯到程式集後，必須告訴 MSBuild 在生成期間使用它。 為此，請使用`-FileLogger`，`-FileLoggerParameters`和`-DistributedFileLogger` *MSBuild.exe*一起切換 。 交換器`-FileLogger`告訴*MSBuild.exe*記錄器是直接連接的。 `-DistributedFileLogger` 參數表示每個節點都有一個記錄檔。 若要設定轉送記錄器的參數，請使用 `-FileLoggerParameters` 參數。 有關這些交換器和其他*MSBuild.exe*交換器的詳細資訊，請參閱[命令列引用](../msbuild/msbuild-command-line-reference.md)。
 
 ## <a name="multi-processor-aware-loggers"></a>能夠辨識多處理器的記錄器
 
- 當您在多處理器系統建置專案時，來自每個處理器的建置訊息不會自動按一致順序交錯排列。 因此，您必須使用附加至每個訊息的 <xref:Microsoft.Build.Framework.BuildEventContext> 類別，以建立訊息群組優先順序。 如需多處理器建置的詳細資訊，請參閱[在多處理器環境中記錄](../msbuild/logging-in-a-multi-processor-environment.md)。
+ 當您在多處理器系統建置專案時，來自每個處理器的建置訊息不會自動按一致順序交錯排列。 因此，您必須使用附加至每個訊息的 <xref:Microsoft.Build.Framework.BuildEventContext> 類別，以建立訊息群組優先順序。 有關多處理器構建的詳細資訊，請參閱[在多處理器環境中登錄](../msbuild/logging-in-a-multi-processor-environment.md)。
 
 ## <a name="see-also"></a>另請參閱
 

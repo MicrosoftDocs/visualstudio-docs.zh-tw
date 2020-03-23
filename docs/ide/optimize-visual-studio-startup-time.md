@@ -15,43 +15,43 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 4824939b4ef3ed1bc7fa48b2508fc891c984a3c5
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408388"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301864"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>最佳化 Visual Studio 啟動時間
 
-Visual Studio 設計旨在盡可能快速且有效率地啟動。 不過，某些 Visual Studio 延伸模組和工具視窗可能會在載入時對啟動時間有不利的影響。 您可以在 [管理 Visual Studio 效能] 對話方塊中控制緩慢延伸模組和工具視窗的行為。 如需提升效能的一般祕訣，請參閱 [Visual Studio 效能祕訣和訣竅](../ide/visual-studio-performance-tips-and-tricks.md)。
+Visual Studio 設計旨在盡可能快速且有效率地啟動。 不過，某些 Visual Studio 延伸模組和工具視窗可能會在載入時對啟動時間有不利的影響。 您可以在 [管理 Visual Studio 效能]**** 對話方塊中控制緩慢延伸模組和工具視窗的行為。 如需提升效能的一般祕訣，請參閱 [Visual Studio 效能祕訣和訣竅](../ide/visual-studio-performance-tips-and-tricks.md)。
 
 ## <a name="startup-behavior"></a>啟動行為
 
-為了避免延長啟動時間，Visual Studio 使用「隨需」的方式來載入延伸模組。 此行為代表延伸模組不會在 Visual Studio 立即開啟，而是視需要開啟。 此外，因為在先前的 Visual Studio 工作階段中保持開啟的工具視窗可能會讓啟動時間變慢，所以 Visual Studio 會以更智慧的方式開啟工具視窗，以避免影響啟動時間。
+為了避免延長啟動時間，Visual Studio 使用「隨需」__ 的方式來載入延伸模組。 此行為代表延伸模組不會在 Visual Studio 立即開啟，而是視需要開啟。 此外，因為在先前的 Visual Studio 工作階段中保持開啟的工具視窗可能會讓啟動時間變慢，所以 Visual Studio 會以更智慧的方式開啟工具視窗，以避免影響啟動時間。
 
-如果 Visual Studio 偵測到啟動變慢，就會出現快顯訊息，警告您導致速度變慢的延伸模組或工具視窗。 此訊息提供 [管理 Visual Studio 效能] 對話方塊的連結。 您也可以從功能表列選擇 [說明] > [管理 Visual Studio 效能] 來存取此對話方塊。
+如果 Visual Studio 偵測到啟動變慢，就會出現快顯訊息，警告您導致速度變慢的延伸模組或工具視窗。 此訊息提供 [管理 Visual Studio 效能]**** 對話方塊的連結。 您還可以通過從功能表列中選擇 **"説明** > **管理視覺化工作室性能**"來訪問此對話方塊。
 
 ![管理 Visual Studio 效能 - 快顯會顯示「我們注意到擴充功能 ... 讓 Visual Studio 變慢」的訊息](../ide/media/vside_perfdialog_popup.png)
 
 對話方塊會列出影響啟動效能的擴充功能與工具視窗。 您可以變更延伸模組和工具視窗設定，以改善啟動效能。
 
-## <a name="a-nameextensions-to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />變更延伸模組設定以改善啟動、解決方案載入，以及鍵入效能
+## <a name="to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />變更延伸模組設定以改善啟動、解決方案載入，以及鍵入效能
 
-1. 從功能表列選擇 [說明] **[管理 Visual Studio 效能]**  > ，開啟 [管理 Visual Studio 效能] 對話方塊。
+1. 從功能表列選擇 [說明]**** > [管理 Visual Studio 效能]****，開啟 [管理 Visual Studio 效能]**** 對話方塊。
 
-    如果某個延伸模組讓 Visual Studio 啟動、解決方案載入或鍵入變慢，該延伸模組會出現在 [管理 Visual Studio 效能] 對話方塊的 [延伸模組] > [啟動] 下 (或 [解決方案載入] 或 [鍵入])。
+    如果某個延伸模組讓 Visual Studio 啟動、解決方案載入或鍵入變慢，該延伸模組會出現在 [管理 Visual Studio 效能]**** 對話方塊的 [延伸模組]**** > [啟動]**** 下 (或 [解決方案載入]**** 或 [鍵入]****)。
 
     ![管理 Visual Studio 效能 - 擴充功能檢視](../ide/media/vside_perfdialog_extensions.png)
 
-2. 選擇您想要停用的延伸模組，然後選擇 [停用] 按鈕。
+2. 選擇您想要停用的延伸模組，然後選擇 [停用]**** 按鈕。
 
-您隨時可以使用**延伸模組管理員**或 [管理 Visual Studio 效能] 對話方塊，針對未來的工作階段重新啟用延伸模組。
+始終可以使用**擴展管理器**或 **"管理視覺化工作室性能"** 對話方塊重新啟用擴展以進行後續會話。
 
-## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />變更工具視窗設定以改善啟動時間
+## <a name="to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />變更工具視窗設定以改善啟動時間
 
-1. 從功能表列選擇 [說明] **[管理 Visual Studio 效能]**  > ，開啟 [管理 Visual Studio 效能] 對話方塊。
+1. 從功能表列選擇 [說明]**** > [管理 Visual Studio 效能]****，開啟 [管理 Visual Studio 效能]**** 對話方塊。
 
-    如果工具視窗讓 Visual Studio 啟動時速度變慢，工具視窗會顯示在 [管理 Visual Studio 效能] 對話方塊的 [工具視窗] > [啟動] 下。
+    如果工具視窗讓 Visual Studio 啟動時速度變慢，工具視窗會顯示在 [管理 Visual Studio 效能]**** 對話方塊的 [工具視窗]**** > [啟動]**** 下。
 
 2. 選擇您想要變更行為的工具視窗。
 

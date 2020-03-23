@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: def01817fbd42a0da1a0392e00ba9ccff6876470
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579841"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：加入 CheckTheAnswer() 方法
@@ -48,17 +48,17 @@ ms.locfileid: "77579841"
      [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]
      [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]
 
-     如果答案正確，`CheckTheAnswer()` 會傳回 `true`。 事件處理常式會停止計時器，並顯示恭喜訊息，然後再次啟用 [開始] 按鈕。 否則，測驗會繼續。
+     如果答案正確，`CheckTheAnswer()` 會傳回 `true`。 事件處理常式會停止計時器，並顯示恭喜訊息，然後再次啟用 [開始]**** 按鈕。 否則，測驗會繼續。
 
 3. 儲存您的程式，執行程式，開始進行測驗，並提供正確答案給加法問題。
 
     > [!NOTE]
     > 當您輸入答案時，必須在開始輸入答案之前先選取預設值，或是手動刪除零。 您將在本教學課程稍後更正這種行為。
 
-     當您提供正確答案時，訊息方塊隨即開啟，[開始] 按鈕會變成可用，且計時器會停止。
+     當您提供正確答案時，訊息方塊隨即開啟，[開始]**** 按鈕會變成可用，且計時器會停止。
 
-## <a name="to-continue-or-review"></a>繼續或檢視
+## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移至下一個教學課程步驟，請參閱 **[步驟5：新增 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)** 。
+- 要轉到下一個教程步驟，請參閱**[步驟 5：添加數位上下控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)**。
 
-- 若要回到上一個教學課程步驟，請參閱[步驟 3：新增倒數計時器](../ide/step-3-add-a-countdown-timer.md)。
+- 要返回到前面的教程步驟，請參閱步驟[3：添加倒計時計時器](../ide/step-3-add-a-countdown-timer.md)。

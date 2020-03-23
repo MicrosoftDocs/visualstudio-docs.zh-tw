@@ -1,5 +1,5 @@
 ---
-title: Target 的 Task 元素（MSBuild） |Microsoft Docs
+title: 目標的任務元素 （MSBuild） |微軟文檔
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4ec2203430045c083b46b2eea8d3e884a4b794
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263166"
 ---
-# <a name="task-element-of-target-msbuild"></a>Target 的 Task 元素（MSBuild）
+# <a name="task-element-of-target-msbuild"></a>目標的任務元素 （MSBuild）
 
-建立並執行 MSBuild 工作的實例。 元素名稱取決於所建立之工作的名稱。
+創建並執行 MSBuild 任務的實例。 元素名稱取決於所建立之工作的名稱。
 
  \<Project> \<Target>
 
@@ -41,14 +41,14 @@ ms.locfileid: "78263166"
 
 ## <a name="attributes-and-elements"></a>屬性和元素
 
- 下列章節說明屬性、子項目和父項目。
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
 
 |屬性|描述|
 |---------------|-----------------|
 |`Condition`|選擇性屬性。 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
-|`ContinueOnError`|選擇性屬性。 可包含一或多個下列值：<br /><br /> -   **WarnAndContinue** 或 **true**。 當工作失敗時，[Target](../msbuild/target-element-msbuild.md) 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為警告。<br />-   **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **ErrorAndStop** 或 **false** (預設值)。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱[如何：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。|
+|`ContinueOnError`|選擇性屬性。 可包含一或多個下列值：<br /><br /> -   **警告並繼續**或**真實**。 當任務失敗時[，Target](../msbuild/target-element-msbuild.md)元素和生成中的後續任務將繼續執行，並且任務中的所有錯誤都被視為警告。<br />-   **錯誤並繼續**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **錯誤和停止**或**錯誤**（預設值）。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱[如何：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。|
 |`Parameter`|如果工作類別包含一或多個使用 `[Required]` 屬性 (Attribute) 標記的屬性 (Property)，則為必要項目。<br /><br /> 使用者定義的工作參數，其中包含參數值當作它的值。 `Task` 元素中可以有任意數量的參數，而每個屬性 (Attribute) 會對應到工作類別的 .NET 屬性 (Property)。|
 
 ### <a name="child-elements"></a>子元素
@@ -61,13 +61,13 @@ ms.locfileid: "78263166"
 
 | 元素 | 描述 |
 | - | - |
-| [Target](../msbuild/target-element-msbuild.md) | MSBuild 工作的容器元素。 |
+| [目標](../msbuild/target-element-msbuild.md) | 用於 MSBuild 任務的容器元素。 |
 
 ## <a name="remarks"></a>備註
 
- MSBuild 專案檔中的 `Task` 元素會建立工作的實例、設定其屬性，並加以執行。 `Output` 元素會在專案檔中其他地方會使用的屬性或項目中儲存輸出參數。
+ MSBuild 專案檔案中`Task`的元素創建任務的實例，在任務上設置屬性並執行它。 `Output` 元素會在專案檔中其他地方會使用的屬性或項目中儲存輸出參數。
 
- 如果工作的父 [ 元素中有任何 ](../msbuild/onerror-element-msbuild.md)OnError`Target` 元素，則當工作失敗且 `ContinueOnError` 的值為 `false` 時，仍然會評估那些元素。 如需工作的詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
+ 如果工作的父 `Target` 元素中有任何 [OnError](../msbuild/onerror-element-msbuild.md) 元素，則當工作失敗且 `ContinueOnError` 的值為 `false` 時，仍然會評估那些元素。 如需工作的詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
 
 ## <a name="example"></a>範例
 
@@ -90,5 +90,5 @@ ms.locfileid: "78263166"
 ## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
-- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)
+- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)

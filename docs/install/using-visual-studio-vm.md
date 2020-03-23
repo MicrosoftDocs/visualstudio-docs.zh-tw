@@ -18,43 +18,43 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 8daf933292c521bb50d294dff2a380b130a4f2ce
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113798"
 ---
-# <a id="top"></a>在 Azure 上 Visual Studio 映射
+# <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Azure 上的可視工作室圖像
 
-若要從無到有地建立開發環境，在預先設定的 Azure 虛擬機器 (VM) 中使用 Visual Studio，是既簡單又快速的方法。 您可以在 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure) 中取得具有不同 Visual Studio 設定的系統映像。
+在預先設定的 Azure 虛擬機器 (VM) 中使用 Visual Studio，是從零開始到建立已啟動並執行中之開發環境的快速簡單方式。 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure) 中提供具有各種不同 Visual Studio 設定的系統映像。
 
-第一次使用 Azure 嗎？ [建立免費的 Azure 帳戶](https://azure.microsoft.com/free)。
+不熟悉 Azure 嗎？ [創建一個免費的 Azure 帳戶](https://azure.microsoft.com/free)。
 
-## <a name="what-configurations-and-versions-are-available"></a>哪些設定和版本可供使用？
+## <a name="what-configurations-and-versions-are-available"></a>有哪些設定和版本可用？
 
-您可以在 Azure Marketplace 中找到最新的主要版本映像：Visual Studio 2019、Visual Studio 2017 和 Visual Studio 2015。  針對每個已發行的主要版本，您都會看見原始「發行至網站」(RTW) 的版本及最新更新版本。  這些版本每個都會提供 Visual Studio Enterprise 和 Visual Studio Community 版本。  這些映像每個月至少都會更新一次，以包含最新的 Visual Studio 和 Windows 更新。  雖然映像名稱保持相同，但每個映像的描述都包含安裝的產品版本和映像的「起自」日期。
+您可以在 Azure Marketplace 中找到最新的主要版本映像：Visual Studio 2019、Visual Studio 2017 和 Visual Studio 2015。  針對每個已發行的主要版本，您都會看見原始「發行至網站」(RTW) 的版本及最新更新版本。  每個版本都提供 Visual Studio Enterprise 和 Visual Studio Community 版本。  這些映像會每個月至少更新一次，以納入最新的 Visual Studio 和 Windows 更新。  雖然映像的名稱會維持不變，但每個映像的描述會納入已安裝的產品版本和映像的「生效」日期。
 
 | 發行版本                                                                                                                                          | 版本              |    產品版本    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019：最新（版本16.4）](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise、Community | 版本16.4。0    |
-| [Visual Studio 2019： RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 版本16.0。9    |
-| [Visual Studio 2017：最新（版本15.9）](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise、Community | 版本15.9.17   |
-| [Visual Studio 2017： RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise、Community | 版本15.0.27   |
-| [Visual Studio 2015：最新（Update 3）](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise、Community | 14.0.25431.01 版 |
+| [視覺工作室 2019： 最新 （版本 16.4）](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise、Community | 版本 16.4.0    |
+| [視覺工作室 2019： RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 版本 16.0.9    |
+| [Visual Studio 2017：最新版 (15.9 版)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise、Community | 版本 15.9.17   |
+| [Visual Studio 2017：RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise、Community | 版本 15.0.27   |
+| [Visual Studio 2015：最新版 (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise、Community | 14.0.25431.01 版 |
 
 > [!NOTE]
-> 根據 Microsoft 維護原則，Visual Studio 2015 的原始發行 (RTW) 版本的維護已過期。 Visual Studio 2015 Update 3 是 Visual Studio 2015 產品線剩下唯一提供的版本。
+> 根據 Microsoft 服務原則，Visual Studio 2015 的原始發行 (RTW) 版本服務期已滿。 Visual Studio 2015 Update 3 是為 Visual Studio 2015 產品線提供的唯一留存版本。
 
-如需詳細資訊，請參閱[Visual Studio IDE 維護原則](/visualstudio/productinfo/vs-servicing-vs)。
+如需詳細資訊，請參閱 [Visual Studio 服務原則](/visualstudio/productinfo/vs-servicing-vs)。
 
-## <a name="what-features-are-installed"></a>已安裝哪些功能？
+## <a name="what-features-are-installed"></a>安裝的功能有哪些？
 
-每個映像都包含適用於該 Visual Studio 版本的建議功能集。 一般而言，安裝包含：
+每個映像都包含該 Visual Studio 版本的建議功能集。 一般而言，安裝會包括：
 
-* 所有可用的工作負載，包含每個工作負載的建議選擇性元件
-* .NET 4.6.2 和 .NET 4.7 SDK、目標套件和開發人員工具
+* 所有可用的工作負載 (包括每個工作負載的建議選用元件)
+* .NET 4.6.2 和 .NET 4.7 SDK、目標套件，以及開發人員工具
 * Visual F#
-* Visual Studio 的 GitHub 擴充
+* Visual Studio 的 GitHub 擴充功能
 * LINQ to SQL 工具
 
 我們使用下列命令列來在建置映像時安裝 Visual Studio：
@@ -71,11 +71,11 @@ ms.locfileid: "76113798"
        --add Microsoft.VisualStudio.Component.LinqToSql
 ```
 
-如果映像不包含您需要的 Visual Studio 功能，請透過位於頁面右上角的意見反應工具提供意見反應。
+如果映像並未包含您所需的 Visual Studio 功能，請透過頁面右上角的意見反應工具來提供意見反應。
 
-## <a name="what-size-vm-should-i-choose"></a>我應該選擇的 VM 大小為何？
+## <a name="what-size-vm-should-i-choose"></a>應該選擇哪個大小的 VM？
 
-Azure 提供完整的虛擬機器大小範圍。 由於 Visual Studio 是強大的多執行緒應用程式，建議您使用至少包含兩個處理器和 7 GB 記憶體的 VM 大小。 針對 Visual Studio 映像，我們建議使用下列 VM 大小：
+Azure 提供各種不同的虛擬機器大小。 由於 Visual Studio 是一個強大、多執行緒的應用程式，因此您會想要一個至少包含兩個處理器和 7 GB 記憶體的 VM 大小。 以下是 Visual Studio 映像的建議 VM 大小：
 
 * Standard_D2_v3
 * Standard_D2s_v3
@@ -85,41 +85,41 @@ Azure 提供完整的虛擬機器大小範圍。 由於 Visual Studio 是強大�
 * Standard_D2S_v2
 * Standard_D3_v2
 
-如需最新機器大小的詳細資訊，請參閱 [Azure 中 Windows 虛擬機器的大小](/azure/virtual-machines/windows/sizes)。
+如需有關最新機器大小的詳細資訊，請參閱 [Azure 中 Windows 虛擬機器的大小](/azure/virtual-machines/windows/sizes) \(機器翻譯\)。
 
-使用 Azure 時，您可以透過調整 VM 大小來重新平衡您的初始選擇。 您可以使用更適合的大小來佈建新的 VM，或者針對不同的底層硬體重新調整現有 VM 的大小。 如需詳細資訊，請參閱[調整 Windows VM 大小](/azure/virtual-machines/windows/resize-vm)。
+使用 Azure 時，您可以藉由調整 VM 大小來重新平衡您的初始選擇。 您可以佈建大小較適當的新 VM，或調整現有 VM 的大小以配合不同的基礎硬體。 如需詳細資訊，請參閱[調整 Windows VM 大小](/azure/virtual-machines/windows/resize-vm)。
 
-## <a name="after-the-vm-is-running-whats-next"></a>在 VM 執行之後，下一步是什麼？
+## <a name="after-the-vm-is-running-whats-next"></a>在 VM 執行之後，接下來呢？
 
-Visual Studio 遵循 Azure 中的「自備授權」模型。 與在專用硬體上安裝類似，其中一個應先採取的步驟，便是授權您的 Visual Studio 安裝。 若要解除 Visual Studio 的鎖定，請執行下列其中一項動作：
-- 使用與 Visual Studio 訂用帳戶相關聯的 Microsoft 帳戶登入
-- 使用您最初購買時所隨附的產品金鑰，來解除 Visual Studio 的鎖定
+Visual Studio 會依循 Azure 中的「自備授權」模型。 如同專用硬體上的安裝，前幾個步驟之一，就是為您的 Visual Studio 安裝取得授權。 若要將 Visual Studio 解除鎖定，請執行下列任何一項作業：
+- 使用與 Visual Studio 訂用帳戶相關聯的 Microsoft 帳戶進行登入
+- 使用最初購買所隨附的產品金鑰將 Visual Studio 解除鎖定
 
 如需詳細資訊，請參閱[登入 Visual Studio](../ide/signing-in-to-visual-studio.md) 和[如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
 
-## <a name="how-do-i-save-the-development-vm-for-future-or-team-use"></a>我該如何儲存開發 VM，以供未來或團隊使用？
+## <a name="how-do-i-save-the-development-vm-for-future-or-team-use"></a>如何儲存開發 VM 以供日後或小組使用？
 
-開發環境的範圍很廣，而且建置更複雜環境的成本很高。 無論環境的設定為何，您都可以將自己已設定的 VM 儲存或擷取為「基底映像」，以供未來或團隊的其他成員使用。 然後，當您將新的 VM 開機時，便可以從基底映像佈建它，而不是使用 Azure Marketplace 映像。
+開發環境的範圍很大，而建置出較複雜環境有一些相關的實際成本。 不論您的環境組態為何，您都可以將已設定的 VM 儲存或擷取成「基底映像」，以供日後使用或供其他小組成員使用。 然後，在啟動新 VM 時，從基底映像佈建它，而不是從 Azure Marketplace 映像。
 
-快速摘要說明：使用系統準備工具 (Sysprep) 並將執行中的 VM 關機，然後透過 Azure 入口網站中的 UI 將 VM 擷取 *(圖 1)* 為映像。 Azure 會將包含該映像的 `.vhd` 檔案儲存在您所選擇的儲存體帳戶中。 新映像會在您訂用帳戶的資源清單中顯示為映像資源。
+快速總結：使用系統準備工具 (Sysprep) 並關閉執行中的 VM，然後透過 Azure 入口網站的 UI 擷取 VM 作為映像 (圖 1)**。 Azure 會將包含該映像的 `.vhd` 檔案儲存在您選擇的儲存體帳戶中。 然後，新的映像就會在您訂用帳戶的資源清單中顯示為映像資源。
 
 ![透過 Azure 入口網站的 UI 擷取映像](media/capture-vm.png)
 
-(圖 1) 透過 Azure 入口網站的 UI 擷取映像。
+*(圖 1) 透過 Azure 入口網站的 UI 擷取映像。*
 
 如需詳細資訊，請參閱[在 Azure 中建立一般化 VM 的受控映像](/azure/virtual-machines/windows/capture-image-resource)。
 
 > [!IMPORTANT]
-> 請不要忘了使用 Sysprep 來準備該 VM。 如果您未執行該步驟，Azure 便無法從該映像佈建 VM。
+> 請別忘了使用 Sysprep 來準備 VM。 如果您遺漏該步驟，Azure 將無法從映像佈建 VM。
 
 > [!NOTE]
-> 您仍然需要為該映像的儲存空間花費一些成本，但累加的成本會遠小於針對團隊中需要 VM 的每個人員從頭建置 VM 所花費的額外成本。 例如，建立並儲存一個 127 GB 供全體團隊成員重複使用的映像，每個月會需要花費幾塊美元。 不過，這些成本遠小於每個員工投資數小時來建置及驗證是否已適當設定供他們自己使用的開發電腦。
+> 您仍會產生一些儲存映像的成本，但與為每個需要 VM 的小組成員從頭開始重建 VM 的額外成本相比，該增加成本可能微不足道。 例如，建立並儲存一個可供整個小組重複使用的 127 GB 映像，一個月只需幾塊錢。 不過，與每個員工投資在建置及驗證適當設定的開發環境以供其個人使用的時數相比，這些成本就顯得微不足道。
 
-此外，您的開發工作或技術可能需要更多調整，例如各種開發設定和多個機器設定。 您可以使用 Azure DevTest Labs 來建立_配方_，以自動化您「黃金映像」的建立。 您也可以使用 DevTest Labs 來管理團隊執行中 VM 的原則。 [使用適用於開發人員的 Azure DevTest Labs](/azure/devtest-lab/devtest-lab-developer-lab) \(機器翻譯\) 是取得 DevTest Labs 詳細資訊的最佳資源。
+此外，您的開發工作或技術可能需要更大的規模，例如各種開發設定和多個機器設定。 您可以使用 Azure DevTest Labs 來建立「配方」__，以自動建構您的「最佳映像」。 您也可以使用 DevTest Labs 來管理您小組執行中 VM 的原則。 [使用適用於開發人員的 Azure DevTest Labs](/azure/devtest-lab/devtest-lab-developer-lab) \(機器翻譯\) 是可供您了解 DevTest Labs 的最佳來源。
 
 ## <a name="next-steps"></a>後續步驟
 
-您已經了解預先設定的 Visual Studio 映像，下一步是建立新的 VM：
+既然您已了解預先設定的 Visual Studio 映像，下一步就是建立新的 VM：
 
-* [使用 Azure 入口網站建立 Windows 虛擬機器](/azure/virtual-machines/windows/quick-create-portal)
+* [透過 Azure 入口網站建立 VM](/azure/virtual-machines/windows/quick-create-portal)
 * [Windows 虛擬機器概觀](/azure/virtual-machines/windows/overview)

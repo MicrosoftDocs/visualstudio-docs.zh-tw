@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c9effb00c613c5a61a5a8d4d89cbbe5b785601d8
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634275"
 ---
 # <a name="delete-task"></a>Delete 工作
@@ -41,10 +41,10 @@ ms.locfileid: "77634275"
 
 ## <a name="remarks"></a>備註
 
-除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
 
 > [!WARNING]
-> 當您使用萬用字元搭配 `Delete` 工作時，請務必小心。 您可以使用 `$(SomeProperty)\**\*.*` 或 `$(SomeProperty)/**/*.*`之類的運算式輕鬆地刪除錯誤的檔案，尤其是當屬性評估為空字串時，在這種情況下，`Files` 參數可以評估為磁片磁碟機的根目錄，並刪除比您想要刪除還多的內容。
+> 在`Delete`任務中使用萬用字元時要小心。 您可以輕鬆地刪除具有 或`$(SomeProperty)\**\*.*``$(SomeProperty)/**/*.*`等運算式的錯誤檔，特別是如果屬性計算為空字串，在這種情況下，`Files`參數可以計算到磁碟機的根目錄，並刪除比您要刪除的多得多。
 
 ## <a name="example"></a>範例
 
@@ -66,4 +66,4 @@ ms.locfileid: "77634275"
 ## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)

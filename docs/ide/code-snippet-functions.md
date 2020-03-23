@@ -13,21 +13,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594236"
 ---
 # <a name="code-snippet-functions"></a>程式碼片段函式
 
 有三個函式可用來與 C# 程式碼片段搭配使用。 函式指定於程式碼片段的 [Function](../ide/code-snippets-schema-reference.md#function-element) 項目中。 如需建立程式碼片段的資訊，請參閱[程式碼片段](../ide/code-snippets.md)。
 
-## <a name="functions"></a>功能
+## <a name="functions"></a>函式
 
 下表描述可用於與程式碼片段中的 `Function` 項目搭配使用的函式。
 
-|函數|描述|語言|
+|函式|描述|Language|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|針對 `EnumerationLiteral` 參數所指定列舉的成員，產生 switch 陳述式和一組 case 陳述式。 `EnumerationLiteral` 參數必須是列舉常值或列舉類型的參考。|C#|
 |`ClassName()`|傳回包含已插入程式碼片段的類別名稱。|C#|
@@ -35,7 +35,7 @@ ms.locfileid: "75594236"
 
 ## <a name="generateswitchcases-example"></a>GenerateSwitchCases 範例
 
-下列範例示範如何使用 `GenerateSwitchCases` 函式。 插入此程式碼片段並將列舉輸入至 `$switch_on$` 常值時，`$cases$` 常值會為列舉中的每個值產生 `case` 陳述式。
+下列範例會示範如何使用 `GenerateSwitchCases` 函式。 插入此程式碼片段並將列舉輸入至 `$switch_on$` 常值時，`$cases$` 常值會為列舉中的每個值產生 `case` 陳述式。
 
 ```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -77,7 +77,7 @@ ms.locfileid: "75594236"
 
 ## <a name="classname-example"></a>ClassName 範例
 
-下列範例示範如何使用 `ClassName` 函式。 插入此程式碼片段時，會將 `$classname$` 常值取代為程式碼檔案中該位置的封入類別名稱。
+下列範例會示範如何使用 `ClassName` 函式。 插入此程式碼片段時，會將 `$classname$` 常值取代為程式碼檔案中該位置的封入類別名稱。
 
 ```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -155,7 +155,7 @@ ms.locfileid: "75594236"
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Function 項目](../ide/code-snippets-schema-reference.md#function-element)
-- [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)
+- [程式碼片段架構引用](../ide/code-snippets-schema-reference.md)

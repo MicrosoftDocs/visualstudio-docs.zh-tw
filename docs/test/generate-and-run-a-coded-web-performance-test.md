@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589574"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>產生和執行 Web 效能測試程式碼
@@ -82,10 +82,10 @@ Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含�
 
      ![Web 效能測試程式碼結果](../test/media/web_test_coded_generate_results.png)
 
-## <a name="qa"></a>問與答
+## <a name="qa"></a>問答集
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>問：我可以同時執行多個測試嗎？
-**答：** 是，請使用**方案總管**中的滑鼠右鍵（內容）功能表。
+**答：** 是，使用**解決方案資源管理器**中的按右鍵（上下文）功能表。
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>問：我應該在產生程式碼測試之前或之後加入資料來源？
 **答：** 在您產生自動程式化測試之前，新增[資料來源](../test/add-a-data-source-to-a-web-performance-test.md)比較容易，因為會自動產生程式碼。

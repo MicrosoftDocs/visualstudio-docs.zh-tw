@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593560"
 ---
 # <a name="services-page-project-designer"></a>專案設計工具、服務頁
 
-用戶端應用程式服務簡化了從 Windows Forms 和 Windows Presentation Foundation (WPF) 應用程式對 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登入、角色和設定檔服務的存取。 您可以使用 [專案設計工具] 的 [服務] 頁面來啟用和設定專案的用戶端應用程式服務。
+用戶端應用程式服務簡化了對 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登入、角色以及 Windows Forms 和 Windows Presentation Foundation (WPF) 應用程式的設定檔服務的存取。 您可以使用 [專案設計工具]**** 的 [服務]**** 頁面來啟用和設定專案的用戶端應用程式服務。
 
 使用用戶端應用程式服務，您可以使用集中式伺服器來驗證使用者、判斷每位使用者已獲指派的角色，以及儲存您可透過網路共用的個別使用者應用程式設定。 如需詳細資訊，請參閱[用戶端應用程式服務](/dotnet/framework/common-client-technologies/client-application-services)。
 
-若要存取 [服務] 頁面，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 [專案設計工具] 出現時，請按一下 [服務] 索引標籤。
+若要存取 [服務]**** 頁面，請選取方案總管**** 中的專案節點，然後按一下 [專案]**** 功能表上的 [屬性]****。 [專案設計工具]**** 出現時，請按一下 [服務]**** 索引標籤。
 
 ## <a name="task-list"></a>工作清單
 
@@ -43,9 +43,9 @@ ms.locfileid: "75593560"
 
  **啟用用戶端應用程式服務**
 
-選取以啟用用戶端應用程式服務。 您必須在 [服務] 頁面上指定服務位置，以使用用戶端應用程式服務。
+選取以啟用用戶端應用程式服務。 您必須在 [服務]**** 頁面上指定服務位置，以使用用戶端應用程式服務。
 
- **使用 Windows 驗證**
+ **使用 Windows 身份驗證**
 
 指出驗證提供者將使用 Windows 驗證，也就是 Windows 作業系統所提供的身分識別。
 
@@ -73,7 +73,7 @@ ms.locfileid: "75593560"
 
 開啟可用來覆寫預設行為的[服務對話方塊的進階設定](../../ide/reference/advanced-settings-for-services-dialog-box.md)。 例如，您可以使用此對話方塊指定資料庫來進行離線儲存，而不是使用本機檔案系統。 如需詳細資訊，請參閱[服務對話方塊的進階設定](../../ide/reference/advanced-settings-for-services-dialog-box.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [用戶端應用程式服務](/dotnet/framework/common-client-technologies/client-application-services)
 - [服務對話方塊的進階設定](../../ide/reference/advanced-settings-for-services-dialog-box.md)

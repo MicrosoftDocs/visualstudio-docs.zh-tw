@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9455d596e27526f6075ad3b667ac441b12511d58
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779840"
 ---
 # <a name="wincounter"></a>WinCounter
@@ -37,12 +37,12 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>必要選項
  **WinCounter** 選項只能與 **Start** 選項搭配使用。
 
- **開始：** `Method` [**啟動**] 選項會將分析工具初始化為指定的程式碼剖析方法。
+ **開始："**`Method`**開始"** 選項將探測器初始化到指定的分析方法。
 
 ## <a name="exclusive-options"></a>專屬選項
  **AutoMark** 選項只能與 **WinCounter** 選項搭配使用。
 
- **AutoMark：** `Milliseconds` 指定 Windows 效能計數器資料收集之間的毫秒數。
+ **自動標記：**`Milliseconds`指定 Windows 效能計數器資料收集之間的毫秒數。
 
 ## <a name="example"></a>範例
  在下列範例中，指定兩個 Windows 效能計數器依 1000 毫秒的間隔進行收集。
@@ -51,8 +51,8 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服務](../profiling/command-line-profiling-of-services.md)

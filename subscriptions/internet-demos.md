@@ -7,10 +7,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何透過終端機服務使用產品金鑰來支援網際網路示範並啟用 RDS 存取
 ms.openlocfilehash: c02bce8fe098c75f0405fdd4e9ba5f0f143401fa
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78937467"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>透過終端機服務存取網際網路示範
@@ -19,14 +19,14 @@ ms.locfileid: "78937467"
 這是開發/測試權利以外的權利，Visual Studio 訂閱者可以視需要建立所需數量的 RDS 或 TS 連線。
 
 ## <a name="enabling-rds-access"></a>啟用 RDS 存取
-Visual Studio 訂閱者可輸入[訂閱者入口網站](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)上之 [[產品金鑰]](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 索引標籤中所提供的產品金鑰，增加可以透過 RDS 存取 Windows Server 的使用者人數。 若要取得產品金鑰，請連線到 [產品金鑰] 頁面，並向下捲動到您所執行的 Windows Server 版本。 找到「Windows Server <版本> R2 遠端桌面服務 <使用者或裝置> 連線」，然後按一下 [領取金鑰] 按鈕。 例如，若是在 Windows Server 2012 R2 上使用 RDS，且您的部署使用使用者 CAL，請選擇 [Windows Server 2012 Remote Desktop Services 使用者連線 (50)]。
+Visual Studio 訂閱者可輸入[訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)上之 [[產品金鑰]](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) 索引標籤中所提供的產品金鑰，增加可以透過 RDS 存取 Windows Server 的使用者人數。 若要取得產品金鑰，請連線到 [產品金鑰] 頁面，並向下捲動到您所執行的 Windows Server 版本。 找到「Windows Server <版本> R2 遠端桌面服務 <使用者或裝置> 連線」，然後按一下 [領取金鑰]**** 按鈕。 例如，若是在 Windows Server 2012 R2 上使用 RDS，且您的部署使用使用者 CAL，請選擇 [Windows Server 2012 Remote Desktop Services 使用者連線 (50)]。
 Windows Server 2008 R2 提供每種類型各五組金鑰，每組金鑰支援 20 個連線。 Windows Server 2012 R2 提供每種類型各四組金鑰，每組金鑰支援 50 個連線。
 
 ## <a name="to-enable-additional-connections-in-windows-server"></a>若要在 Windows Server 中允許更多的連線：
 1. 開啟 [伺服器管理員]。
 2. 開啟左側功能窗格中的 [伺服器] 清單。
 3. 在您的授權伺服器上按一下滑鼠右鍵，然後選擇 [安裝授權]。
-4. 依照精靈中的步驟進行。  在選取合約類型時，選擇 [授權套件 (零售)]，然後輸入您從「我的」入口網站取得的產品金鑰。
+4. 請依照精靈中的步驟執行。  在選取合約類型時，選擇 [授權套件 (零售)]，然後輸入您從「我的」入口網站取得的產品金鑰。
 
 符合下列條件的使用者，可以透過 RDS 連線來存取應用程式：
 - 使用者必須匿名 (處於未經驗證的狀態)。
@@ -35,11 +35,11 @@ Windows Server 2008 R2 提供每種類型各五組金鑰，每組金鑰支援 20
 - 允許使用者連線的產品金鑰必須由 Visual Studio 訂閱者取得。
 
 ## <a name="see-also"></a>另請參閱
-- [Windows Server 檔](https://docs.microsoft.com/windows-server/)
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [Windows 伺服器身份驗證](https://docs.microsoft.com/windows-server/)
+- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 如果您需要部署 RDS 的指引，請參閱**遠端桌面服務 (RDS) 2012 工作階段部署** (網址為 https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf) 的多部分部落格系列。 

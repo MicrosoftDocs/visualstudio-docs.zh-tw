@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778371"
 ---
 # <a name="profiling-and-windows-vista-security"></a>分析和 Windows Vista 安全性
@@ -33,9 +33,9 @@ ms.locfileid: "74778371"
 
 ## <a name="cross-session-profiling"></a>跨工作階段進行程式碼剖析
 
-「跨工作階段進行程式碼剖析」是指能夠分析在不同登入工作階段中執行的處理序。 例如，大部分服務是在工作階段 0 中執行，而使用者無法直接在工作階段 0 中執行。 使用 [效能總管] 工具列上的 [附加至處理序] 按鈕或 VSPerfCmd 命令列工具的 `/attach` 選項，您就可以分析不同使用者工作階段中的大部分處理序。
+「跨工作階段進行程式碼剖析」** 是指能夠分析在不同登入工作階段中執行的處理序。 例如，大部分服務是在工作階段 0 中執行，而使用者無法直接在工作階段 0 中執行。 使用 [效能總管] 工具列上的 [附加至處理序]**** 按鈕或 VSPerfCmd 命令列工具的 `/attach` 選項，您就可以分析不同使用者工作階段中的大部分處理序。
 
-您透過設定跨處理序進行程式碼剖析可見性選項，就可以看到處理序清單。 當您選取 [附加至處理序] 後，隨即顯示的 [附加至處理序] 視窗中會提供這些選項：
+您透過設定跨處理序進行程式碼剖析可見性選項，就可以看到處理序清單。 當您選取 [附加至處理序]**** 後，隨即顯示的 [附加至處理序]**** 視窗中會提供這些選項：
 
 - **顯示所有使用者的處理序**
 
@@ -45,7 +45,7 @@ ms.locfileid: "74778371"
 
   未選取此選項時，清單會顯示目前工作階段中的處理序。 否則，清單會顯示所有工作階段中的處理序。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [概觀](../profiling/overviews-performance-tools.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

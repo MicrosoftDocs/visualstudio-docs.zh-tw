@@ -5,10 +5,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 06/17/2019
 ms.openlocfilehash: 2c6bdd7d0b2c939ed9db9be962e89d9ee423e1d4
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984123"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>開始使用 Visual Studio for Mac 中的 Docker
@@ -20,17 +20,17 @@ ms.locfileid: "74984123"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
 * [Visual Studio for Mac 2019](https://visualstudio.microsoft.com/vs/mac)
 
-## <a name="installation-and-setup"></a>安裝和設定
+## <a name="installation-and-setup"></a>安裝與設定
 
 若要安裝 Docker，請檢閱[安裝適用於 Mac 的 Docker Desktop](https://docs.docker.com/docker-for-mac/install/)，並遵循其中的資訊。
 
 ## <a name="creating-an-aspnet-core-web-application-and-adding-docker-support"></a>建立 ASP.NET Core Web 應用程式並新增 Docker 支援
 
-1. 藉由移至 [檔案] > [新增解決方案] 來建立新解決方案。
-1. 在 [.NET Core] > [應用程式] 底下，選擇 [Web 應用程式] 範本：![建立新的 ASP.NET 應用程式](media/docker-quickstart-1.png)
-1. 選取目標 Framework。 在此範例中，我們將會使用 .NET Core 2.2：![設定目標 Framework](media/docker-quickstart-2.png)
+1. 藉由移至 [檔案] > [新增解決方案]**** 來建立新解決方案。
+1. 在 **.NET 核心>應用**下選擇 Web ![**應用程式**範本：創建新ASP.NET應用程式](media/docker-quickstart-1.png)
+1. 選取目標 Framework。 在此示例中，我們將使用 .NET Core 2.2：![設置目標框架](media/docker-quickstart-2.png)
 1. 輸入專案詳細資料，例如，名稱 (此範例中為 _DockerDemo_)。 所建立的專案包含建置和執行 ASP.NET Core 網站所需的所有基本項目。
-1. 在 Solution Pad 中，以滑鼠右鍵按一下 [DockerDemo] 專案，然後選取 [新增] > [新增 Docker 支援]：![新增 Docker 支援](media/docker-quickstart-3.png)
+1. 在解決方案墊中，按右鍵 DockerDemo 專案，然後選擇 **"添加>添加 Docker 支援**：![添加 Docker 支援](media/docker-quickstart-3.png)
 
 Visual Studio for Mac 會將稱為 **docker-compose** 的專案自動新增到解決方案，並將 **Dockerfile** 新增到您的現有專案。
 
@@ -38,7 +38,7 @@ Visual Studio for Mac 會將稱為 **docker-compose** 的專案自動新增到�
 
 ## <a name="dockerfile-overview"></a>Dockerfile 概觀
 
-Dockerfile 是用於建立最終 Docker 映像的配方。 請參閱 [Dockerfile 參考](https://docs.docker.com/engine/reference/builder/)，以了解其內的命令。
+Dockerfile 是用於建立最終 Docker 映像的配方。 有關瞭解其中的命令，請參閱[Dockerfile 引用](https://docs.docker.com/engine/reference/builder/)。
 
 ```
 FROM microsoft/dotnet:2.2-aspnetcore-runtime AS base
@@ -69,7 +69,7 @@ ENTRYPOINT ["dotnet", "DockerDemo.dll"]
 
 ## <a name="debugging"></a>偵錯
 
-選取 `docker-compose` 專案作為 [啟始專案] 並開始偵錯 ([執行] > [開始偵錯])。 這會在容器中建置、部署並啟動 ASP.NET 專案。
+選取 `docker-compose` 專案作為 [啟始專案] 並開始偵錯 ([執行] > [開始偵錯]****)。 這會在容器中建置、部署並啟動 ASP.NET 專案。
 
 > [!TIP]
 > 在安裝 Docker Desktop 後第一次執行時，您可能會在進行偵錯時收到下列錯誤：`Cannot start service dockerdemo: Mounts denied`

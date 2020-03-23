@@ -1,5 +1,5 @@
 ---
-title: 選項、文字編輯器、XAML、格式
+title: 格式、XAML、文字編輯器、選項
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -30,15 +30,15 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568239"
 ---
-# <a name="options-text-editor-xaml-formatting"></a>選項、文字編輯器、XAML、格式
+# <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
 
-使用 [格式化] 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [格式化] 屬性頁，請展開 [文字編輯器] > [XAML] > [格式] 節點。
+使用 [格式化]**** 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項]**** 對話方塊，請按一下 [工具]**** 功能表，然後按一下 [選項]****。 若要存取 [格式化]**** 屬性頁，請展開 [文字編輯器]**** > [XAML]**** > [格式]**** 節點。
 
 ## <a name="auto-formatting-events"></a>自動格式化事件
 
@@ -62,7 +62,7 @@ ms.locfileid: "75568239"
 
 完成鍵入開始標記時，會進行自動格式化。
 
-**從剪貼簿貼上**
+**從剪貼簿粘貼**
 
 將 XAML 從剪貼簿貼入 XAML 檢視時，會進行自動格式化。
 
@@ -88,9 +88,9 @@ ms.locfileid: "75568239"
 
 **將超過指定長度的標記換行**
 
-指定是否在 [長度] 所指定的行長度處換行。
+指定是否在 [長度]**** 所指定的行長度處換行。
 
-**長度**
+**Length**
 
 一行可以包含的字元數。 必要時，有些 XAML 行可能會超過指定的行長度。
 
@@ -174,6 +174,6 @@ Width="75">Hello</Button>
 </Grid>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [WPF 中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

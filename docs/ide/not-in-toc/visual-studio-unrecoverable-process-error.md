@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 206fcddca51f8e770e013ff67de6ae3d5562f633
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585791"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio 無法復原的程序錯誤
@@ -23,7 +23,7 @@ Visual Studio 會使用多個處理序外之程序來執行所需的背景工作
 
 如果 *ServiceHub.RoslynCodeAnalysisService.exe* 或 *ServiceHub.RoslynCodeAnalysisService32.exe* 處理序因某個原因而結束，則會出現快顯資訊列，訊息如下：
 
-**「可惜的是，Visual Studio 所使用的進程遇到無法復原的錯誤。建議您儲存工作，然後關閉並重新啟動 Visual Studio。」**
+**"遺憾的是，Visual Studio 使用的進程遇到了無法恢復的錯誤。我們建議保存您的工作，然後關閉和重新開機 Visual Studio。**
 
 如果您看到此訊息，應該儲存工作，然後關閉並重新啟動 Visual Studio。
 

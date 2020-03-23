@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff7e446c319a08004260125580cdace43412cdba
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78169348"
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
 
-包含使用者定義的項目及其中繼資料。 MSBuild 專案中使用的每個專案都必須指定為 `ItemGroup` 元素的子系。
+包含使用者定義的項目及其中繼資料。 MSBuild 專案中使用的每個項都必須指定為`ItemGroup`元素的子項。
 
 \<Project> \<ItemGroup> \<Item>
 
@@ -64,7 +64,7 @@ ms.locfileid: "78169348"
 
 ## <a name="attributes-and-elements"></a>屬性和元素
 
- 下列各節描述屬性、子項目和父項目。
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
 
@@ -81,13 +81,13 @@ ms.locfileid: "78169348"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|使用者定義的項目中繼資料索引鍵，其中含有項目中繼資料值。 項目中可能有零個或多個 `ItemMetadata` 項目。|
+|[專案中繼資料](../msbuild/itemmetadata-element-msbuild.md)|使用者定義的項目中繼資料索引鍵，其中含有項目中繼資料值。 項目中可能有零個或多個 `ItemMetadata` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|項目的群組項目。|
 
@@ -97,7 +97,7 @@ ms.locfileid: "78169348"
 
 使用標記法 @(\<myType>)，可讓類型 \<myType> 的項目集合展開為以分號分隔的字串清單，並傳遞至參數。 如果參數的類型是 `string`，則參數的值會是以分號分隔的項目清單。 如果參數是字串陣列 (`string[]`)，則每個項目都會根據分號的位置，插入到陣列中。 如果工作參數的類型是 <xref:Microsoft.Build.Framework.ITaskItem>`[]`，則值就是項目集合的內容再加上任何附加的中繼資料。 若要使用分號以外的字元來分隔每個項目，請使用 @(\<myType>, '\<分隔符號>') 語法。
 
-MSBuild 引擎可以評估萬用字元，例如 `*` 和 `?`，以及遞迴萬用字元，例如 */\*\** /\*。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
+MSBuild 引擎可以評估萬用字元，`*`如`?`和遞迴萬用字元，如*/\*\*/\*.cs*。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
 ## <a name="examples"></a>範例
 
@@ -125,6 +125,6 @@ MSBuild 引擎可以評估萬用字元，例如 `*` 和 `?`，以及遞迴萬用
 ## <a name="see-also"></a>另請參閱
 
 - [項目](../msbuild/msbuild-items.md)
-- [一般 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)
+- [常見 MS 生成專案項](../msbuild/common-msbuild-project-items.md)
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)
-- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)

@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 12/05/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
 ms.openlocfilehash: a189abf6b46acbf708b1a56fb33d5a50cd3d740c
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985112"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio for Mac 工作負載
@@ -20,7 +20,7 @@ Visual Studio for Mac 已預先安裝用於開發下列類型應用程式的工�
 * Mac 桌面應用程式
 * .NET 應用程式
 * ASP.NET Core Web 應用程式
-* 跨平台 Unity 遊戲
+* 跨平台的 Unity 遊戲
 
 ## <a name="mobile-applications-with-xamarin"></a>使用 Xamarin 的行動應用程式
 

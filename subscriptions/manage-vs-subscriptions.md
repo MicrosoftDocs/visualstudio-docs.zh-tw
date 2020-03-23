@@ -7,11 +7,11 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
 ms.openlocfilehash: 97220a64c72d37d53eccbaba5c8e79697f2f25ab
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78968093"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79303369"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
@@ -51,7 +51,7 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 **透過方案取得的訂用帳戶：** 如果您是透過方案取得訂用帳戶，則該訂用帳戶會繫結至您參與的方案。 如需詳細資訊，請聯繫您的方案連絡人。
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
+- [比茲派克](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft 合作夥伴網路](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -69,10 +69,10 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 您可以輕鬆地變更設定檔中的連絡人資訊與喜好設定。
 
 1. 在訂閱者入口網站右上角，按一下您的名稱。
-2. 按一下 [編輯設定檔] 按鈕。
-3. 在 [關於] 索引標籤中，您可以變更名稱、電子郵件、國家/地區、設定檔圖片和連絡人喜好設定。 在 [喜好設定] 索引標籤中，您可以選取慣用的語言、日期和時間模式、時區以及使用者介面主題。
-4. 完成變更時，請按一下 [儲存]。
-5. 按一下瀏覽器的 [返回] 按鈕，返回「權益」頁面。
+2. 按一下 [編輯設定檔]**** 按鈕。
+3. 在 [關於]**** 索引標籤中，您可以變更名稱、電子郵件、國家/地區、設定檔圖片和連絡人喜好設定。 在 [喜好設定]**** 索引標籤中，您可以選取慣用的語言、日期和時間模式、時區以及使用者介面主題。
+4. 完成變更時，請按一下 [儲存]****。
+5. 按一下瀏覽器的 [返回]**** 按鈕，返回「權益」頁面。
 
 ### <a name="setting-communications-preferences"></a>設定通訊喜好設定
 如果您想要接收關於您的訂閱和權益的定期更新 (包括 Visual Studio 訂閱電子報)，請[更新您的喜好設定](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)，方法是選取您 Visual Studio 設定檔中的 [Visual Studio 訂閱] 核取方塊。 您隨時可以變更這些設定和取消訂閱。 
@@ -88,11 +88,11 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 若要新增其他帳戶：
 
 1. 使用您的 Microsoft 帳戶 (MSA) 登入[訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
-2. 按一下 [訂閱] 索引標籤。
-3. 在 [相關連結] 中，選擇 [新增其他帳戶]。
-4. 輸入您的公司帳戶/學校帳戶電子郵件地址，然後按一下 [新增]。
+2. 按一下 [訂閱]**** 索引標籤。
+3. 在 [相關連結]**** 中，選擇 [新增其他帳戶]****。
+4. 輸入您的公司帳戶/學校帳戶電子郵件地址，然後按一下 [新增]****。
 
-新增其他帳戶之後，您可以按一下 [訂閱] 索引標籤，然後選擇 [相關連結] 區段中的適當選項，隨時更新帳戶或將其移除。
+新增其他帳戶之後，您可以按一下 [訂閱]**** 索引標籤，然後選擇 [相關連結]**** 區段中的適當選項，隨時更新帳戶或將其移除。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
@@ -114,15 +114,15 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 > - 如果您有使用中的訂閱，則不會完全移除您的個人資料。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
-您是否管理組織的訂用帳戶？  深入瞭解如何管理 Visual Studio 訂閱：
-- [指派個別訂閱](assign-license.md)
-- [指派多個訂用帳戶](assign-license-bulk.md)
-- [編輯訂用帳戶](edit-license.md)
-- [刪除訂用帳戶](delete-license.md)
-- [判斷最大使用量](maximum-usage.md)
+您是否管理組織的訂閱？  瞭解有關管理視覺化工作室訂閱的更多詳細資訊：
+- [分配單個訂閱](assign-license.md)
+- [分配多個訂閱](assign-license-bulk.md)
+- [編輯訂閱](edit-license.md)
+- [刪除訂閱](delete-license.md)
+- [確定最大使用量](maximum-usage.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3dc771f16c7077549ba06d5cdda422319554d40
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631701"
 ---
 # <a name="taskextension-base-class"></a>TaskExtension 基底類別
@@ -41,5 +41,5 @@ ms.locfileid: "77631701"
 
 ## <a name="see-also"></a>另請參閱
 
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

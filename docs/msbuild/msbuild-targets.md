@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 3e0693b6630f1b4c6a9494a77e223cca23c6dc10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633183"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093605"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
 
@@ -31,7 +31,7 @@ ms.locfileid: "77633183"
 </Target>
 ```
 
- 與 MSBuild 屬性相同，可以重新定義目標。 例如：
+ 與 MSBuild 屬性相同，可以重新定義目標。 例如，
 
 ```xml
 <Target Name="AfterBuild" >
@@ -42,7 +42,7 @@ ms.locfileid: "77633183"
 </Target>
 ```
 
- 如果執行 AfterBuild，則只會顯示「第二次出現」。
+ 如果`AfterBuild`執行，它僅顯示"第二次匹配"，因為第二個`AfterBuild`定義隱藏了第一個。
 
  MSBuild 需相依於匯入順序，且目標的最後一個定義將會是系統所使用的定義。
 
@@ -64,11 +64,11 @@ ms.locfileid: "77633183"
 
 目標絕對不會在單一建置期間執行兩次，即使組建中的後續目標相依於它也一樣。 執行目標之後，它對組建而言就已功成身退了。
 
-如需目標建置順序的詳細資料和詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)。
+有關目標生成順序的詳細資訊和詳細資訊，請參閱[目標生成順序](../msbuild/target-build-order.md)。
 
 ## <a name="target-batching"></a>目標批次處理
 
-目標項目可能有 `Outputs` 屬性以 %(\<中繼資料>) 形式指定中繼資料。 如果是這樣，MSBuild 會為每個唯一的中繼資料值執行一次目標，並分組或「批次處理」具有該中繼資料值的項目。 例如：
+目標項目可能有 `Outputs` 屬性以 %(\<中繼資料>) 形式指定中繼資料。 如果是這樣，MSBuild 會為每個唯一的中繼資料值執行一次目標，並分組或「批次處理」具有該中繼資料值的項目。 例如，
 
 ```xml
 <ItemGroup>
@@ -98,15 +98,15 @@ Reference: 4.0
 
  目標批次處理很少用於真實的組建。 工作批次處理較為常見。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。
 
-## <a name="incremental-builds"></a>累加建置
+## <a name="incremental-builds"></a>累加組建
 
  累加組建是已最佳化的建置，因此不會執行輸出檔案與其相關對應輸入檔案為最新的目標。 目標項目可能有 `Inputs` 和 `Outputs` 屬性，並指出目標預期作為輸入的項目，以及它產生作為輸出的項目。
 
- 如果所有輸出項目都是最新的，則 MSBuild 會略過目標，這可大幅改善建置速度。 這稱為目標的累加組建。 如果只有某些檔案是最新的，則 MSBuild 會執行沒有最新項目的目標。 這稱為目標的部分累加組建。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)。
+ 如果所有輸出項目都是最新的，則 MSBuild 會略過目標，這可大幅改善建置速度。 這稱為目標的累加組建。 如果只有某些檔案是最新的，則 MSBuild 會執行沒有最新項目的目標。 這稱為目標的部分累加組建。 有關詳細資訊，請參閱[增量生成](../msbuild/incremental-builds.md)。
 
-## <a name="default-build-targets"></a>預設組建目標
+## <a name="default-build-targets"></a>預設生成目標
 
-以下列出 CurrentVersion 中的公用目標。
+下面列出了 Microsoft.Common.CurrentVersion.Target 中的公共目標。
 
 ```
 ===================================================
@@ -1015,4 +1015,4 @@ This target gathers the Redist folders from the SDKs which have been resolved.
 ## <a name="see-also"></a>另請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
-- [如何：在多個專案檔中使用相同目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [如何：使用多個專案檔內相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

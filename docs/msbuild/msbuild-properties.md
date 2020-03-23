@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633287"
 ---
 # <a name="msbuild-properties"></a>MSBuild 屬性
@@ -47,7 +47,7 @@ ms.locfileid: "77633287"
 
  MSBuild 保留一些屬性名稱來儲存專案檔和 MSBuild 二進位檔案的相關資訊。 這些屬性是使用 $ 標記法來參考，如同任何其他屬性。 例如，$(MSBuildProjectFile) 會傳回專案檔的完整檔名，包括副檔名。
 
- 如需詳細資訊，請參閱[如何：參考專案檔的名稱或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
+ 有關詳細資訊，請參閱[如何：引用專案檔案和](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)的名稱或位置。
 
 ## <a name="environment-properties"></a>環境屬性
 
@@ -55,16 +55,16 @@ ms.locfileid: "77633287"
 
  每個 MSBuild 專案都有獨立的環境區塊：只會看見本身區塊中讀取和寫入的內容。  在評估或建立專案檔案之前，MSBuild 只會在初始化屬性集合時讀取環境變數。 在此之後，環境屬性會是靜態的，也就是說，每個繁衍的工具一開始都會採用相同的名稱和值。
 
- 若要從衍生的工具內取得環境變數的目前值，請使用[屬性函式](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable。 然而，一般慣用的方法是使用工作參數 <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>。 這個字串陣列中設定的環境屬性可以傳遞至繁衍的工具，而不會影響系統環境變數。
+ 要從生成工具中獲取環境變數的當前值，請使用[屬性函數](../msbuild/property-functions.md)System.Environment.get 環境變數。 然而，一般慣用的方法是使用工作參數 <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>。 這個字串陣列中設定的環境屬性可以傳遞至繁衍的工具，而不會影響系統環境變數。
 
 > [!TIP]
 > 並非所有環境變數都會在讀取後變成初始屬性。 會忽略任何未採用有效 MSBuild 屬性名稱 (例如 "386") 的環境變數。
 
- 如需詳細資訊，請參閱[如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。
+ 有關詳細資訊，請參閱[如何：在生成中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。
 
 ## <a name="registry-properties"></a>登錄屬性
 
- 您可以使用下列語法來讀取系統登錄值，其中 `Hive` 是登錄區 (例如 **HKEY_LOCAL_MACHINE**)、`MyKey` 是機碼名稱、`MySubKey` 是子機碼名稱，而 `Value` 是子機碼的值。
+ 可以使用以下語法讀取系統登錄`Hive`值，其中註冊表配置單元（例如 **，HKEY_LOCAL_MACHINE）**`MyKey`是鍵名，`MySubKey`是子鍵名稱，是`Value`子鍵的值。
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -96,9 +96,9 @@ $(registry:Hive\MyKey\MySubKey)
 msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ```
 
- 您也可以使用 MSBuild 工作的 `Properties` 屬性，針對多專案組建中的子專案設定或修改全域屬性。 除非使用 MSBuild 工作的 `RemoveProperties` 屬性指定不轉送屬性清單，否則全域屬性也會轉送至子專案。 如需詳細資訊，請參閱 [MSBuild 工作](../msbuild/msbuild-task.md)。
+ 您也可以使用 MSBuild 工作的 `Properties` 屬性，針對多專案組建中的子專案設定或修改全域屬性。 除非使用 MSBuild 工作的 `RemoveProperties` 屬性指定不轉送屬性清單，否則全域屬性也會轉送至子專案。 有關詳細資訊，請參閱[MSBuild 任務](../msbuild/msbuild-task.md)。
 
- 如果您使用專案標記中的 `TreatAsLocalProperty` 屬性 (Attribute) 指定屬性 (Property)，該全域屬性 (Property) 值就不會覆寫專案檔中設定的屬性 (Property) 值。 如需詳細資訊，請參閱 [Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md) 和[如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。
+ 如果您使用專案標記中的 `TreatAsLocalProperty` 屬性 (Attribute) 指定屬性 (Property)，該全域屬性 (Property) 值就不會覆寫專案檔中設定的屬性 (Property) 值。 有關詳細資訊，請參閱[專案元素 （MSBuild）](../msbuild/project-element-msbuild.md)和[操作操作：使用不同的選項構建相同的原始檔案](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。
 
 ## <a name="property-functions"></a>屬性函式
 
@@ -110,13 +110,13 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 <Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>
 ```
 
- 如需詳細資訊及屬性函式清單，請參閱[屬性函式](../msbuild/property-functions.md)。
+ 有關詳細資訊和屬性函數清單，請參閱[屬性函數](../msbuild/property-functions.md)。
 
 ## <a name="create-properties-during-execution"></a>在執行期間建立屬性
 
  位於 `Target` 項目以外的屬性值是在組建的評估階段所指派。 在後續的執行階段，可以使用下列方式來建立或修改屬性：
 
-- 任何工作均可發出屬性。 若要發出屬性，[Task](../msbuild/task-element-msbuild.md) 項目必須含有具 [ 屬性的子系 ](../msbuild/output-element-msbuild.md)Output`PropertyName` 項目。
+- 任何工作均可發出屬性。 若要發出屬性，[Task](../msbuild/task-element-msbuild.md) 項目必須含有具 `PropertyName` 屬性的子系 [Output](../msbuild/output-element-msbuild.md) 項目。
 
 - 透過 [CreateProperty](../msbuild/createproperty-task.md) 工作來發出屬性。 這種使用方式已過時。
 
@@ -124,7 +124,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 
 ## <a name="store-xml-in-properties"></a>將 XML 儲存於屬性中
 
- 屬性可以包含任意的 XML，其有助於將值傳遞給工作，或是顯示記錄資訊。 下列範例示範 `ConfigTemplate` 屬性，其值會包含 XML 和其他屬性參考。 MSBuild 會使用其各自的屬性值來取代屬性參考。 屬性值是以其出現的順序來指派。 因此，在此範例中，應該已經定義 `$(MySupportedVersion)`、`$(MyRequiredVersion)` 及 `$(MySafeMode)`。
+ 屬性可以包含任意的 XML，其有助於將值傳遞給工作，或是顯示記錄資訊。 下列範例示範 `ConfigTemplate` 屬性，其值會包含 XML 和其他屬性參考。 MSBuild 使用其各自的屬性值替換屬性引用。 屬性值是以其出現的順序來指派。 因此，在此範例中，應該已經定義 `$(MySupportedVersion)`、`$(MyRequiredVersion)` 及 `$(MySafeMode)`。
 
 ```xml
 <PropertyGroup>
@@ -148,8 +148,8 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
-- [如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)
+- [如何：在生成中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)
 - [如何：參考專案檔的名稱或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)
-- [如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+- [如何：使用不同的選項構建相同的原始檔案](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
 - [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)
-- [Property 項目 (MSBuild)](../msbuild/property-element-msbuild.md)
+- [屬性元素 （MSBuild）](../msbuild/property-element-msbuild.md)

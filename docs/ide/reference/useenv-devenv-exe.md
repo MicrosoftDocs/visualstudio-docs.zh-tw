@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35808b27964b3ca8fa0488f1be2ce6dc5530b3dd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596388"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
@@ -39,22 +39,22 @@ ms.locfileid: "75596388"
 devenv /UseEnv {SolutionName|ProjectName}
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 
-- *SolutionName*
+- *解決方案名稱*
 
   方案檔的完整路徑和名稱。
 
-- *ProjectName*
+- *專案名稱*
 
   專案檔的完整路徑和名稱。
 
 ## <a name="remarks"></a>備註
 
-此參數會影響專案屬性中適用於 **VC++ 目錄**的 Visual Studio IDE。 如果您指定 `/UseEnv` 參數，[VC++ 目錄] 節點會顯示 PATH、INCLUDE、LIBPATH 和 LIB 環境變數的值 （它也會顯示 [**來原始目錄**] 和 [**排除目錄**] 的值）。否則，節點會將環境變數取代為五個目錄值：**可執行檔目錄**、 **Include 目錄**、**參考目錄**、連結**庫目錄**，以及連結**庫 WinRT 目錄**。
+此參數會影響專案屬性中適用於 **VC++ 目錄**的 Visual Studio IDE。 如果您指定 `/UseEnv` 參數，[VC++ 目錄]**** 節點會顯示 PATH、INCLUDE、LIBPATH 和 LIB 環境變數的值 （它還顯示**原始目錄**和**排除目錄的值**。否則，節點將環境變數替換為五個目錄值：**可執行目錄**、**包括目錄**、**引用目錄**、**庫目錄**和**庫 WinRT 目錄**。
 
 > [!TIP]
-> 您可以使用滑鼠右鍵按一下 C++ 專案，然後選取 [屬性] 來存取專案屬性。 在 [屬性頁] 對話方塊中，依序選取 [組態屬性] 和 [VC++ 目錄]。
+> 您可以使用滑鼠右鍵按一下 C++ 專案，然後選取 [屬性]**** 來存取專案屬性。 在 [屬性頁]**** 對話方塊中，依序選取 [組態屬性]**** 和 [VC++ 目錄]****。
 
 使用此參數指定專案名稱時，工具會顯示專案父代方案內所有專案的環境變數。
 
@@ -66,7 +66,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 devenv.exe /useenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
 - [VC++ 目錄屬性頁 (Windows)](/cpp/build/reference/vcpp-directories-property-page)

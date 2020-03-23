@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bb2b296d8728587c9aa3c22b7a670d89612eff1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596420"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
@@ -29,19 +29,19 @@ ms.locfileid: "75596420"
 devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 
-- *SolutionFile*
+- *解決方案檔*
 
   如果您要升級整個方案及其專案，則為必要項。 方案檔的路徑和名稱。 您可以只輸入方案檔的名稱，或是方案檔的完整路徑和名稱。 如果指定的資料夾或檔案尚未存在，則會予以建立。
 
-- *ProjectFile*
+- *專案檔案*
 
   如果您要升級單一專案，則為必要項。 方案中專案檔的路徑和名稱。 您可以只輸入專案檔的名稱，或是專案檔的完整路徑和名稱。 如果指定的資料夾或檔案尚未存在，則會予以建立。
 
-- `/Out` *OutputFilename*
+- `/Out`*輸出檔案名*
 
-  選擇項。 您要將工具的輸出傳送到其中的檔案名稱。 如果檔案已經存在，工具就會將輸出附加至檔案結尾。
+  選擇性。 您要將工具的輸出傳送到其中的檔案名稱。 如果檔案已經存在，工具就會將輸出附加至檔案結尾。
 
 ## <a name="remarks"></a>備註
 
@@ -59,6 +59,6 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 devenv "%USERPROFILE%\source\repos\MyProject\MyProject.sln" /upgrade
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

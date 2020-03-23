@@ -11,10 +11,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: e3dda1867ee4f54588456c668639e51652d7f8e1
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76158873"
 ---
 ## <a name="test-agent"></a>測試代理程式
@@ -25,7 +25,7 @@ ms.locfileid: "76158873"
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
+元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
 Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent 核心功能 | 15.0.27019.1 | 必要
 
@@ -33,6 +33,6 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent 核心功
 
 這些是未隨附於任何工作負載但可選取來作為個別元件的元件。
 
-元件識別碼 | Name | {2&gt;版本&lt;2}
+元件識別碼 | 名稱 | 版本
 --- | --- | ---
-N/A | N/A | N/A
+n/a | n/a | n/a

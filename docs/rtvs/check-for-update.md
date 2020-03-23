@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c076fb97b3574b5c710814054232b9757e7a77e3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75843739"
 ---
 # <a name="rtvs-current-version"></a>RTVS 目前版本
 
-若要檢查版本，可以在 Visual Studio 中前往 [說明] > [關於]，向下捲動到 [Visual Studio R 工具] 項目︰
+您可以通過在視覺化工作室中訪問 **"説明** > **有關"** 並向下滾動到 **"視覺工作室 R 工具"** 條目來檢查版本：
 
 ![在 Visual Studio 中檢查 RTVS 版本 (VS2017)](media/current-version.png)
 
-若要更新 Visual Studio 2017 中的 RTVS 版本，請移至 Visual Studio 安裝程式並選取 [更新] 按鈕。
+若要更新 Visual Studio 2017 中的 RTVS 版本，請移至 Visual Studio 安裝程式並選取 [更新]**** 按鈕。
 
 針對 Visual Studio 2015，最新的安裝程式可從 [aka.ms/rtvs-current](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe) 取得 (直接下載)。
 

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915804"
 ---
 # <a name="installation"></a>安裝
@@ -26,14 +26,14 @@ Visual Studio Tools for AI 可以安裝在 Windows 64 位元作業系統上。
 
 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) 或從 Visual Studio 內下載這些工具：
 
-1. 選取 [工具] > [擴充功能和更新]。
+1. 選擇**工具** > **擴展和更新**。
 
    ![Visual Studio 中的 [擴充功能和更新] 功能表](media/installation/extensions.png)
 
-2. 在 [擴充功能和更新] 對話方塊中，選取左側的 [線上]。
+2. 在 [擴充功能和更新]**** 對話方塊中，選取左側的 [線上]****。
 3. 在右上角的 [搜尋] 方塊中，鍵入或輸入 "tools for ai"。
-4. 從結果中選取 [Visual Studio Tools for AI]。
-5. 按一下 [ **下載**]。
+4. 從結果中選取 [Visual Studio Tools for AI]****。
+5. 按一下 [下載]****
 
 ## <a name="prepare-your-local-machine"></a>準備本機電腦
 
@@ -139,7 +139,7 @@ pip3.5 install -U numpy scipy
 
 若要安裝 CNTK Python 套件，請參閱[如何安裝 CNTK](/cognitive-toolkit/Setup-CNTK-on-your-machine) \(英文\)。
 
-### <a name="tensorflow"></a>Tensorflow
+### <a name="tensorflow"></a>TensorFlow
 
 [TensorFlow](https://www.tensorflow.org/) \(英文\) 是使用資料流程圖表進行數值計算的開放原始碼軟體程式庫。 如需詳細的安裝說明，請參閱[這裡](https://www.tensorflow.org/install/)。
 
@@ -156,7 +156,7 @@ pip3.5 install -U numpy scipy
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (籌備中)](https://mxnet.incubator.apache.org/) 是專為效率和彈性所設計的深度學習架構。 它可讓您**混合**[符號和命令式程式設計](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)，以最大化效率和生產力。
+[Apache MXNet (籌備中)](https://mxnet.incubator.apache.org/) 是專為效率和彈性所設計的深度學習架構。 它可讓您**混合** [符號和命令式程式設計](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)以提高效率和生產力。
 
 若要安裝 MXNet，請在終端機中執行下列命令：
 

@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3deee8d35f06e50dbe22001e8a2fa81b41563e0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113438"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>如何：使用 Microsoft Word 手動建立負載測試效能報告
@@ -30,11 +30,11 @@ ms.locfileid: "76113438"
 
 ## <a name="copy-summary-view-data"></a>複製摘要檢視資料
 
-1. 在 [負載測試結果] 中，如果目前沒有顯示摘要檢視，請按一下工具列中的 [摘要]。
+1. 在 [負載測試結果]**** 中，如果目前沒有顯示摘要檢視，請按一下工具列中的 [摘要]****。
 
-2. 在摘要檢視中，按一下滑鼠右鍵，然後選取 [全選]。
+2. 在摘要檢視中，按一下滑鼠右鍵，然後選取 [全選]****。
 
-3. 在摘要檢視中，按一下滑鼠右鍵，然後選取 [複製]。 這樣就會將摘要檢視資料當做 HTML 格式呈現至 [剪貼簿]。
+3. 在摘要檢視中，按一下滑鼠右鍵，然後選取 [複製]****。 這樣就會將摘要檢視資料當做 HTML 格式呈現至 [剪貼簿]。
 
 4. 在 Microsoft Word 中，將摘要檢視資料貼入所需的位置。
 
@@ -42,20 +42,20 @@ ms.locfileid: "76113438"
 
 ## <a name="copy-graph-view-data"></a>複製圖表檢視資料
 
-1. 在 [負載測試結果] 中，如果目前沒有顯示圖表檢視，請選擇工具列中的 [圖表]。
+1. 在 [負載測試結果]**** 中，如果目前沒有顯示圖表檢視，請選擇工具列中的 [圖表]****。
 
-2. (選擇性) 放大您想要複製到 Microsoft Word 文件的特定圖表，如下圖所示。 如需詳細資訊，請參閱[如何：放大圖形中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+2. (選擇性) 放大您想要複製到 Microsoft Word 文件的特定圖表，如下圖所示。 有關詳細資訊，請參閱[如何：放大圖形的區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
      ![圖形檢視縮放控制](../test/media/ltest_zoomcontrol.png)
 
-3. 在您想要複製到 Microsoft Word 文件的圖表上，按一下滑鼠右鍵，然後選取 [複製]。
+3. 在您想要複製到 Microsoft Word 文件的圖表上，按一下滑鼠右鍵，然後選取 [複製]****。
 
 4. 在 Microsoft Word 中，將圖表和相關聯的資料表資料貼入所需的位置。
 
     > [!WARNING]
     > 您無法從遠端桌面複製圖形並將它貼入另一部電腦，因為系統只會複製與圖形相關聯的資料表資訊，而非圖形影像。 圖形影像會儲存在從中複製圖形之電腦的暫存目錄中，而且第二部電腦無法取值該目錄。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [針對測試比較或趨勢分析報告負載測試結果](../test/compare-load-test-results.md)
 - [如何：使用 Microsoft Excel 建立負載測試效能報告](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

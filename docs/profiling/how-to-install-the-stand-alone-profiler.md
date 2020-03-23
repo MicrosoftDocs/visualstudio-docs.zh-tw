@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ec0f211db3d9906d83d9bcf7c7a0ab79ec3e1b7f
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77557835"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>如何：安裝獨立分析工具
@@ -31,7 +31,7 @@ ms.locfileid: "77557835"
 
 1. 在您下載效能工具處找到獨立分析工具安裝程式 (*vs_standaloneprofiler.exe*) 並執行它。
 
-2. 將*vsinstr*的路徑新增至系統路徑。
+2. 將*vsinstr.exe*的路徑添加到系統路徑。
 
    > [!NOTE]
    > 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
@@ -41,19 +41,19 @@ ms.locfileid: "77557835"
    > [!NOTE]
    > 如果顯示 vsinstr.exe 的使用資訊，即表示所有項目設定正確。 如果看到有錯誤指出找不到 vsinstr.exe 或它其中一個相依性，請確定是否依步驟 2 所述正確設定路徑。
 
-4. 將 **_NT_SYMBOL_PATH** 變數設為 **symsrv\*symsrv.dll\*c:\localcache\*https://msdl.microsoft.com/download/symbols** ，以設定符號伺服器
+4. 將 **_NT_SYMBOL_PATH** 變數設為 **symsrv\*symsrv.dll\*c:\localcache\*https://msdl.microsoft.com/download/symbols**，以設定符號伺服器
 
-5. 使用系統環境變數設定好符號伺服器之後，在新的命令提示字元處執行命令列分析工具。 這可讓新的環境變數生效。 在命令提示字元視窗中輸入下列命令：
+5. 使用系統環境變數設定好符號伺服器之後，在新的命令提示字元處執行命令列分析工具。 這可讓新的環境變數生效。 在命令提示字元視窗中，鍵入下列命令：
 
     **start %COMSPEC%**
 
    > [!NOTE]
-   > 如需如何設定符號伺服器套件的詳細指示，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。
+   > 有關如何設置符號伺服器包的詳細說明，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。
 
 6. 使用 [VSPerfReport](../profiling/vsperfreport.md) 工具將符號序列化成分析資料 (.vsp) 檔案。 使用 **VSPerfReport /summary:all /packsymbols** 參數。 如未在資料檔案中插入符號，請確定設定了 _NT_SYMBOL_PATH 環境變數。
 
 ## <a name="see-also"></a>另請參閱
 - [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)
-- [逐步解說：使用檢測進行命令列分析](command-line-profiling-of-stand-alone-applications.md)
-- [操作說明：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)
+- [演練：使用檢測進行命令列分析](command-line-profiling-of-stand-alone-applications.md)
+- [如何：引用 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

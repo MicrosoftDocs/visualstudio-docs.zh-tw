@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21e3b6554a9d6e0024cc21fd898962177acfffa7
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633625"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 元素 (MSBuild)
@@ -42,7 +42,7 @@ ms.locfileid: "77633625"
 
 ## <a name="attributes-and-elements"></a>屬性和元素
 
-下列各節描述屬性、子項目和父項目。
+下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
 
@@ -54,13 +54,13 @@ ms.locfileid: "77633625"
 
 |元素|描述|
 |-------------|-----------------|
-|[Item](../msbuild/item-element-msbuild.md)|定義建置程序的輸入。 `Item` 中可能有零或多個 `ItemDefinitionGroup` 項目。|
+|[專案](../msbuild/item-element-msbuild.md)|定義建置程序的輸入。 `ItemDefinitionGroup` 中可能有零或多個 `Item` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
 | 元素 | 描述 |
 | - | - |
-| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
+| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔案所需的根項目。 |
 
 ## <a name="example"></a>範例
 
@@ -86,5 +86,5 @@ ms.locfileid: "77633625"
 
 ## <a name="see-also"></a>另請參閱
 
-- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c9a51fe097eb110e44b3f4bd932a26f4efb6ea6
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77630635"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094569"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory 工作
 
@@ -48,11 +48,11 @@ ms.locfileid: "77630635"
 
 ## <a name="remarks"></a>備註
 
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
 
- 下列範例會在建置專案後，從輸出目錄建立 *.zip* 封存。
+ 以下示例（如果用作導入的 *.target*檔）在生成專案後從輸出目錄中創建 *.zip*存檔。 該`$(OutputPath)`屬性通常在 MSBuild 專案檔案中定義，因此導入以下檔的專案檔案將生成 zip 存檔`output.zip`：
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -69,4 +69,4 @@ ms.locfileid: "77630635"
 ## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)

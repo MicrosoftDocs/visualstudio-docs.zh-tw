@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75678957"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79302837"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本來建立 Flask 應用程式
 
@@ -34,9 +34,9 @@ ms.locfileid: "75678957"
 
 在「空白 Flask Web 專案」範本所建立的程式碼中，會有單一 *app.py* 檔案，其中除了單一檢視，還包含啟動程式碼。 若要考慮使用多個檢視和範本來進一步開發應用程式，最好是將這些考量重點分開。
 
-1. 在您的專案資料夾中，建立一個名為 `HelloFlask` 的應用程式資料夾 (在 [方案總管] 中的專案上按一下滑鼠右鍵，然後選取 [新增] > [新增資料夾])。
+1. 在您的專案資料夾中，建立一個名為 `HelloFlask` 的應用程式資料夾 (在 [方案總管]**** 中的專案上按一下滑鼠右鍵，然後選取 [新增]**** > [新增資料夾]****)。
 
-2. 在 *HelloFlask* 資料夾中，使用下列會建立 `Flask` 執行個體並載入應用程式檢視 (在下一個步驟中建立) 的內容來建立名為 *\_\_init\_\_.py* 的檔案：
+2. 在*HelloFlask*資料夾中，創建名為*\_\_init\_\_.py*的檔，該檔包含創建`Flask`實例並載入應用視圖的以下內容（在下一步中創建）：
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ ms.locfileid: "75678957"
     import HelloFlask.views
     ```
 
-3. 在 *HelloFlask* 資料夾中，使用下列內容來建立名為 *views.py* 的檔案。 名稱 *views.py* 很重要，因為您已在 *\_\_init\_\_.py* 內使用 `import HelloFlask.views` ；如果名稱不相符，在執行階段將會顯示錯誤。
+3. 在 *HelloFlask* 資料夾中，使用下列內容來建立名為 *views.py* 的檔案。 名稱*views.py*很重要，因為您在*\_\_\_\_init .py*`import HelloFlask.views`中使用;如果名稱不匹配，您將在運行時看到錯誤。
 
     ```python
     from flask import Flask
@@ -57,7 +57,7 @@ ms.locfileid: "75678957"
         return "Hello Flask!"
     ```
 
-    除了將函式重新命名並路由傳送至 `home` 之外，此程式碼還包含來自 *app.py* 的頁面轉譯程式碼，並且會匯入 *\_\_init\_\_.py* 中所宣告的 `app` 物件。
+    除了重命名函數和`home`路由到 之外，此代碼還包含*app.py*的頁面呈現代碼，`app`並導入在*init \_ \_ \_ \_.py*中聲明的物件。
 
 4. 在 *HelloFlask* 中建立名為 *templates* 的子資料夾，此子資料夾目前會維持空白。
 
@@ -82,9 +82,9 @@ ms.locfileid: "75678957"
 
     ![重構程式碼後的專案結構](media/flask/step02-project-structure.png)
 
-7. 選取 [偵錯] > [開始偵錯] (**F5**)，或使用工具列上的 [網頁伺服器] 按鈕 (您看到的瀏覽器可能會有所不同)，以啟動應用程式並開啟瀏覽器。 同時嘗試 / 和 /home URL 路由。
+7. 選擇**調試** > **啟動調試**（**F5**） 或使用工具列上的**Web 服務器**按鈕（您看到的瀏覽器可能有所不同）啟動應用並打開瀏覽器。 同時嘗試 / 和 /home URL 路由。
 
-8. 您也可以在程式碼的各個不同部分設定中斷點，然後重新啟動應用程式以依照該啟動順序。 例如，在 *runserver.py* 和 *HelloFlask\_* init_ *.py* 的前幾行上設定中斷點，並在 *views.py* 的 `return "Hello Flask!"` 行上設定中斷點。 接著，重新啟動應用程式 ([偵錯] > [重新啟動]、**Ctrl**+**F5** 或以下所示的工具列按鈕)，然後逐步執行 (**F10**) 程式碼，或使用 **F5** 從每個中斷點執行。
+8. 您也可以在程式碼的各個不同部分設定中斷點，然後重新啟動應用程式以依照該啟動順序。 例如，在 *runserver.py* 和 *HelloFlask\_* init_*.py* 的前幾行上設定中斷點，並在 *views.py* 的 `return "Hello Flask!"` 行上設定中斷點。 然後重新開機應用程式（**調試** > **重新開機****，Ctrl**+**F5，** 或下面顯示的工具列按鈕），並單一步驟 **（F10）** 代碼，或使用**F5**從每個中斷點運行。
 
     ![Visual Studio 中偵錯工具列上的重新啟動按鈕](media/debugging-restart-toolbar-button.png)
 
@@ -94,11 +94,11 @@ ms.locfileid: "75678957"
 
 因為您已變更並成功測試程式碼，所以現在是檢閱並認可對原始碼控制所做變更的絕佳時機。 本教學課程稍後的步驟會在適當時刻提醒您再次認可至原始檔控制，並請您返回參閱本節。
 
-1. 選取位於 Visual Studio 底部的變更按鈕 (下面圈起處)，這會瀏覽至 [Team Explorer]。
+1. 選取位於 Visual Studio 底部的變更按鈕 (下面圈起處)，這會瀏覽至 [Team Explorer]****。
 
     ![Visual Studio 狀態列上的原始檔控制變更按鈕](media/flask/step02-source-control-changes-button.png)
 
-1. 在 [Team Explorer] 中，輸入 "Refactor code" (重構程式碼) 之類的訊息，然後選取 [全部認可]。 當認可完成時，您會看到訊息**認可 \<雜湊 > 在本機建立。同步處理以與伺服器共用您的變更。** 如果您想要將變更推送至遠端存放庫，請選取 [同步]，然後選取 [傳出的認可] 底下的 [推送]。 您也可以在累積多個本機認可之後，再推送至遠端。
+1. 在 [Team Explorer]**** 中，輸入 "Refactor code" (重構程式碼) 之類的訊息，然後選取 [全部認可]****。 提交完成後，您將看到一條消息 **，>本地創建提交\<雜湊。同步以與伺服器共用更改。** 如果您想要將變更推送至遠端存放庫，請選取 [同步]****，然後選取 [傳出的認可]**** 底下的 [推送]****。 您也可以在累積多個本機認可之後，再推送至遠端。
 
     ![在 [Team Explorer] 中將認可推送至遠端](media/flask/step02-source-control-push-to-remote.png)
 
@@ -136,7 +136,7 @@ ms.locfileid: "75678957"
 
 1. 執行應用程式並將頁面重新整理幾次，以查看日期/時間是否更新。 完成時，請停止應用程式。
 
-1. 若要將頁面轉譯轉換成使用範本，請使用下列內容在 *templates* 資料夾中建立名為 *index.html* 的檔案，其中 `{{ content }}` 是您在程式碼中為其提供值的預留位置或取代權杖 (也稱為「範本變數」)：
+1. 若要將頁面轉譯轉換成使用範本，請使用下列內容在 *templates* 資料夾中建立名為 *index.html* 的檔案，其中 `{{ content }}` 是您在程式碼中為其提供值的預留位置或取代權杖 (也稱為「範本變數」**)：
 
     ```html
     <html>
@@ -160,7 +160,7 @@ ms.locfileid: "75678957"
             content = "<strong>Hello, Flask!</strong> on " + formatted_now)
     ```
 
-1. 執行應用程式以查看結果，您會觀察到 `content` 值中的內嵌 HTML 並未轉譯成 HTML，因為範本化引擎 (Jinja) 會自動逸出 HTML 內容。 自動逸出可防止意外遭受插入式攻擊：開發人員經常會透過範本預留位置從一個頁面收集輸入，並使用該輸入作為另一個頁面的值。 逸出也可作為一種提醒，就是最好將 HTML 放在程式碼外。
+1. 執行應用程式以查看結果，您會觀察到 `content` 值中的內嵌 HTML 並未轉譯成** HTML，因為範本化引擎 (Jinja) 會自動逸出 HTML 內容。 自動逸出可防止意外遭受插入式攻擊：開發人員經常會透過範本預留位置從一個頁面收集輸入，並使用該輸入作為另一個頁面的值。 逸出也可作為一種提醒，就是最好將 HTML 放在程式碼外。
 
     因此，請檢閱 *templates\index.html*，以在標記內針對每個資料片段包含不同的預留位置：
 
@@ -203,7 +203,7 @@ ms.locfileid: "75678957"
 
 回答：頁面範本檔案的 *.html* 副檔名完全是選擇性的，因為您一律是在 `render_template` 函式的第一個引數中識別檔案的確切相對路徑。 不過，Visual Studio (與其他編輯器) 通常會針對 *.html* 檔案為您提供程式碼完成和語法色彩等功能，其重要性超過頁面範本不一定是 HTML 的事實。
 
-實際上，當您在處理 Flask 專案時，Visual Studio 會自動偵測出您正在編輯的 HTML 檔案實際上是 Flask 範本，然後提供一些自動完成功能。 例如，當您開始鍵入 Flask 頁面範本註解 (`{#`) 時，Visual Studio 會自動提供結尾的 `#}` 字元。 [註解選取範圍] 與 [取消註解選取範圍] 命令 (位在 [編輯] > [進階] 功能表和工具列上) 也會使用範本註解，而不是 HTML 註解。
+實際上，當您在處理 Flask 專案時，Visual Studio 會自動偵測出您正在編輯的 HTML 檔案實際上是 Flask 範本，然後提供一些自動完成功能。 例如，當您開始鍵入 Flask 頁面範本註解 (`{#`) 時，Visual Studio 會自動提供結尾的 `#}` 字元。 [註解選取範圍]**** 與 [取消註解選取範圍]**** 命令 (位在 [編輯]**** > [進階]**** 功能表和工具列上) 也會使用範本註解，而不是 HTML 註解。
 
 ### <a name="question-can-templates-be-organized-into-further-subfolders"></a>問題：是否可以將範本組織成進一步的子資料夾？
 

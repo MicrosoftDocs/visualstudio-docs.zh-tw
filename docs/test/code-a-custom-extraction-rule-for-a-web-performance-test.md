@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92cce705135daa8bc54a7fab301cf5dcd8cf96d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591173"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂擷取規則程式碼
@@ -40,17 +40,17 @@ ms.locfileid: "75591173"
 
 3. (選擇性) 在類別庫專案中，加入 Microsoft.VisualStudio.QualityTools.WebTestFramework dll 的參考。
 
-4. 建立從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 類別衍生的類別。 實作 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*> 成員。
+4. 建立從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 類別衍生的類別。 實作<xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*> 成員。
 
 5. (選擇性) 建立新的「類別庫」專案。
 
 6. (選擇性) 在測試專案中，新增包含自訂擷取規則的類別庫專案參考。
 
-7. 在 [測試專案] 中，使用 [Web 效能測試編輯器] 開啟 Web 效能測試。
+7. 在測試專案中，在**Web 效能測試編輯器**中打開 Web 效能測試。
 
-8. 若要新增自訂擷取規則，請以滑鼠右鍵按一下 Web 效能測試要求，然後選取 [新增擷取規則]。
+8. 若要新增自訂擷取規則，請以滑鼠右鍵按一下 Web 效能測試要求，然後選取 [新增擷取規則]****。
 
-     [新增擷取規則] 對話方塊隨即出現。 您會在 [選取規則] 清單中看到您的自訂驗證規則，以及預先定義的驗證規則。 選取自訂擷取規則，然後選擇 [確定]。
+     [新增擷取規則]**** 對話方塊隨即出現。 您會在 [選取規則]**** 清單中看到您的自訂驗證規則，以及預先定義的驗證規則。 選取自訂擷取規則，然後選擇 [確定]****。
 
 9. 執行您的 Web 效能測試。
 
@@ -206,7 +206,7 @@ End Namespace
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> 方法包含擷取規則的核心功能。 之前範例中的 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> 方法可接受 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> (其提供此擷取規則涵蓋的要求所產生之回應)。 回應中含有 <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>，後者又含有回應中的所有標籤。 輸出標籤會從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> 中篩選掉。 每個輸入標記都會受到檢查，看其中是否有稱為 `name` 的屬性 (attribute)，其值與使用者提供的 `Name` 屬性 (property) 值相同。 如果找到屬性相符的標記，就會試著擷取 `value` 屬性 (如果存在) 所含的值。 如果這個屬性存在，就會擷取標籤的名稱和值，然後加入至 Web 效能測試內容中。 此擷取規則通過。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d977892956c90fd88ff913b9c9300b0176323a4
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263119"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431445"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 元素 (MSBuild)
 
@@ -41,11 +41,11 @@ ms.locfileid: "78263119"
 ```
 
 > [!NOTE]
-> 與屬性和專案不同的是，將會使用套用至 `TaskName` 的*第一個*`UsingTask` 元素。若要覆寫工作，您必須在現有的 `UsingTask`*之前*定義新的。
+> 與屬性和項不同，將使用應用於 的第`TaskName`*一個*`UsingTask`元素;要覆蓋任務，您必須在現有任務`UsingTask`*之前*定義新任務。
 
 ## <a name="attributes-and-elements"></a>屬性和元素
 
- 下列章節說明屬性、子項目和父項目。
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
 
@@ -62,26 +62,28 @@ ms.locfileid: "78263119"
 |元素|描述|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|在指定的 `TaskFactory` 產生之工作上顯示的參數集。|
-|[Task](../msbuild/task-element-msbuild.md)|傳遞至 `TaskFactory` 以產生工作之執行個體的資料。|
+|[任務](../msbuild/task-element-msbuild.md)|傳遞至 `TaskFactory` 以產生工作之執行個體的資料。|
 
 ### <a name="parent-elements"></a>父元素
 
 | 元素 | 描述 |
 | - | - |
-| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
+| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔案所需的根項目。 |
 
 ## <a name="remarks"></a>備註
 
  您可以在專案檔所包含 (直接包含或透過匯入的專案檔來包含) 的 `UsingTask` 元素中，參考環境變數、命令列屬性、專案層級屬性及專案層級項目。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
 
 > [!NOTE]
-> 如果 `UsingTask` 元素來自已經向 MSBuild 引擎全域註冊的其中一個 *.tasks* 檔案，則專案層級屬性和項目沒有任何意義。 專案層級值對 MSBuild 而言不是全域的。
+> 如果`UsingTask`元素來自在 MSBuild 引擎全域註冊的 *.tasks*檔之一，則專案級屬性和項沒有意義。 專案層級值對 MSBuild 而言不是全域的。
 
  在 MSBuild 4.0 中，使用工作可以從 *.overridetask* 檔案載入。
 
+首次使用 時將載入`Task`包含自訂任務的程式集。
+
 ## <a name="example"></a>範例
 
- 下列範例示範如何使用具有 `UsingTask` 屬性的 `AssemblyName` 項目。
+ 下列範例示範如何使用具有 `AssemblyName` 屬性的 `UsingTask` 項目。
 
 ```xml
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">
@@ -98,7 +100,7 @@ ms.locfileid: "78263119"
 
 ## <a name="example"></a>範例
 
- 下列範例示範如何使用具有 `UsingTask` 屬性的 `AssemblyFile` 項目。
+ 下列範例示範如何使用具有 `AssemblyFile` 屬性的 `UsingTask` 項目。
 
 ```xml
 <UsingTask TaskName="Email"
@@ -108,5 +110,5 @@ ms.locfileid: "78263119"
 ## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
-- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)
+- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)

@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263089"
 ---
 # <a name="parameter-element"></a>Parameter 元素
 
-包含 `UsingTask` `TaskFactory`所產生之工作的特定參數相關資訊。  項目的名稱是參數的名稱。  如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。
+包含有關 由 生成的`UsingTask``TaskFactory`任務的特定參數的資訊。  項目的名稱是參數的名稱。  如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。
 
  \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
 
@@ -40,15 +40,15 @@ ms.locfileid: "78263089"
 
 ## <a name="attributes-and-elements"></a>屬性和元素
 
- 下列章節說明屬性、子項目和父項目。
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
 
 |屬性|描述|
 |---------------|-----------------|
 |`ParameterType`|選擇性屬性。<br /><br /> 參數的 .NET 型別，例如 `System.String`。|
-|`Output`|選擇性的布林值屬性。<br /><br /> 如果為 `true`，則此參數是工作的輸出參數。 根據預設，此值是 `false`。|
-|`Required`|選擇性的布林值屬性。<br /><br /> 如果為 `true`，則此參數是工作的必要參數。 根據預設，此值是 `false`。|
+|`Output`|選擇性的 Boolean 屬性。<br /><br /> 如果為 `true`，則此參數是工作的輸出參數。 根據預設，此值是 `false`。|
+|`Required`|選擇性的 Boolean 屬性。<br /><br /> 如果為 `true`，則此參數是工作的必要參數。 根據預設，此值是 `false`。|
 
 ### <a name="child-elements"></a>子元素
 
@@ -58,7 +58,7 @@ ms.locfileid: "78263089"
 
 |元素|描述|
 |-------------|-----------------|
-|[ParameterGroup](../msbuild/parametergroup-element.md)|包含將會出現在 `UsingTask` `TaskFactory`所產生之工作上的選擇性參數清單。|
+|[ParameterGroup](../msbuild/parametergroup-element.md)|包含將在 由`UsingTask``TaskFactory`生成的任務上存在的參數的可選清單。|
 
 ## <a name="example"></a>範例
 
@@ -80,5 +80,5 @@ ms.locfileid: "78263089"
 ## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
-- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)
+- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)

@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: ecdda55bbe4e79af01f8fb9a9a2b77f775548b10
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115229"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>如何在回應檔中定義設定
@@ -41,7 +41,7 @@ vs_enterprise.exe --in customInstall.json
 
 建立配置的系統管理員可以修改配置中的 `response.json` 檔案，以控制使用者從配置中安裝 Visual Studio 時所看到的預設設定。  例如，如果系統管理員想要預設安裝的特定工作負載和元件，則可以設定 `response.json` 檔案來進行新增。
 
-從配置資料夾執行 Visual Studio 安裝程式時，會「自動」使用配置資料夾中的回應檔。  您不需要使用 `--in` 選項。
+從配置資料夾執行 Visual Studio 安裝程式時，會「自動」__ 使用配置資料夾中的回應檔。  您不需要使用 `--in` 選項。
 
 您可以更新於離線配置資料夾中建立的 `response.json` 檔案，以針對從此配置安裝的使用者定義預設設定。
 
@@ -156,7 +156,7 @@ vs_enterprise.exe --in customInstall.json
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
-* [當您安裝或使用 Visual Studio 時，針對網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md)
+* [安裝或使用視覺化工作室時解決與網路相關的錯誤](troubleshooting-network-related-errors-in-visual-studio.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567836"
 ---
 # <a name="print-command"></a>Print 命令
@@ -31,11 +31,11 @@ ms.locfileid: "75567836"
 >Debug.Print text
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 
 `text`
 
-必要項。 要評估的運算式或要顯示的文字。
+必要。 要評估的運算式或要顯示的文字。
 
 ## <a name="remarks"></a>備註
 
@@ -59,10 +59,10 @@ ms.locfileid: "75567836"
 >Debug.Print DateTime.Now.Day
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [評估陳述式命令](../../ide/reference/evaluate-statement-command.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)

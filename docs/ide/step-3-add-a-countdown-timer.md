@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ca2dce7f6f9ddc484b67f250f34d69747c6e46e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579866"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>步驟 3：加入倒數計時器
@@ -38,11 +38,11 @@ ms.locfileid: "77579866"
 
      現在您需要實際計算秒數的方法，例如計時器，它會在經過您指定的時間後引發事件。
 
-2. 在設計視窗中，將 <xref:System.Windows.Forms.Timer> 控制項從 [工具箱] 的 [元件] 類別移至表單。
+2. 在設計視窗中，將 <xref:System.Windows.Forms.Timer> 控制項從 [工具箱]**** 的 [元件]**** 類別移至表單。
 
      控制項會出現在設計視窗底部的灰色區域中。
 
-3. 在表單上選擇您剛新增的 [timer1] 圖示，並將其 [Interval] 屬性設定為 [1000]。
+3. 在表單上選擇您剛新增的 [timer1]**** 圖示，並將其 [Interval]**** 屬性設定為 [1000]****。
 
      由於間隔值為毫秒，因此 1000 這個值會讓 <xref:System.Windows.Forms.Timer.Tick> 事件每秒引發一次。
 
@@ -62,7 +62,7 @@ ms.locfileid: "77579866"
      您已加入 `if else` 陳述式，讓程式知道如何做判斷。 `if else` 陳述式看起來如下。
 
     > [!NOTE]
-    > 下列範例僅供示範--不要將它新增至您的專案。
+    > 下面的示例僅用於演示-不要將其添加到專案中。
 
     ```vb
     If (something that your program will check) Then
@@ -94,7 +94,7 @@ ms.locfileid: "77579866"
 
      `addend1 + addend2` 陳述式會將兩個變數中的值相加。 第一個部分 (`sum.Value`) 會使用 sum (總和) NumericUpDown 控制項的 **Value** 屬性來顯示正確答案。 稍後您會使用相同屬性檢查測驗的答案。
 
-     受測者透過使用 <xref:System.Windows.Forms.NumericUpDown> 控制項就能更輕鬆地輸入數字，這就是為何使用其中一個控制項輸入數學問題答案的原因。 所有可能的答案包括從 0 到 100 的整數。 藉由保留 [Minimum]、[Maximum] 和 [DecimalPlaces] 屬性的預設值，就能確保受測者無法輸入小數、負數或太大的數字 (如果您要允許受測者輸入 3.141 而不是 3.1415，可以將 [DecimalPlaces] 屬性設定為 3)。
+     受測者透過使用 <xref:System.Windows.Forms.NumericUpDown> 控制項就能更輕鬆地輸入數字，這就是為何使用其中一個控制項輸入數學問題答案的原因。 所有可能的答案包括從 0 到 100 的整數。 藉由保留 [Minimum]****、[Maximum]**** 和 [DecimalPlaces]**** 屬性的預設值，就能確保受測者無法輸入小數、負數或太大的數字 (如果您要允許受測者輸入 3.141 而不是 3.1415，可以將 [DecimalPlaces]**** 屬性設定為 3)。
 
 6. 將三行程式碼加入至 `StartTheQuiz()` 方法的結尾，使程式碼看起來如下。
 
@@ -103,15 +103,15 @@ ms.locfileid: "77579866"
 
      現在，當測驗開始時，**timeLeft** 變數會設定為 30，而且 **timeLabel** 控制項的 **Text** 屬性會設定為 30 秒。 然後，Timer 控制項的 <xref:System.Windows.Forms.Timer.Start> 方法就會開始倒數計時。 (測驗還不會檢查答案，這是下一個部分)。
 
-7. 儲存您的程式，並執行程式，然後選擇表單上的 [開始] 按鈕。
+7. 儲存您的程式，並執行程式，然後選擇表單上的 [開始]**** 按鈕。
 
      計時器就會開始倒數。 當時間結束時，測驗就會結束，答案也會出現。 下圖將顯示進行中的測驗。
 
      ![數學測驗正進行中](../ide/media/express_addcountdown.png)<br/>
 *數學測驗正進行中*
 
-## <a name="to-continue-or-review"></a>繼續或檢視
+## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移至下一個教學課程步驟，請參閱 **[步驟4：新增 CheckTheAnswer （）方法](../ide/step-4-add-the-checktheanswer-parens-method.md)** 。
+- 要轉到下一個教程步驟，請參閱**[步驟 4：添加 CheckTheAnswer（） 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)**。
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)。

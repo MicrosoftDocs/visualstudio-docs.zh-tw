@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 104bdcc7a3f609456d521e710ac6ec2aeda2bb75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585570"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>使用不同的網頁瀏覽器搭配自動程式化 UI 測試
@@ -20,7 +20,7 @@ ms.locfileid: "75585570"
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-首先，安裝 [Selenium components for Coded UI Cross Browser Testing](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting) (自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件)。
+首先，安裝[用於編碼 UI 跨瀏覽器測試的硒元件](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)。
 
 ## <a name="whats-supported-across-all-web-browsers"></a>哪些功能是所有網頁瀏覽器都支援的？
 
@@ -38,7 +38,7 @@ ms.locfileid: "75585570"
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>如何使用支援的 Web 瀏覽器，在 Web 應用程式上錄製和播放自動程式化 UI 測試？
 
-**記錄：** 您必須使用自動程式碼 UI 測試產生器，來記錄使用 Internet Explorer 的 Web 應用程式測試。 您可以選擇性地使用一組預先定義的屬性針對待測控制項加入驗證和自訂程式碼，就像平常使用自動程式化 UI 測試所做的一樣。 如需詳細資訊，請參閱[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)。
+**記錄：** 您必須使用自動程式碼 UI 測試產生器，來記錄使用 Internet Explorer 的 Web 應用程式測試。 您可以選擇性地使用一組預先定義的屬性針對待測控制項加入驗證和自訂程式碼，就像平常使用自動程式化 UI 測試所做的一樣。 有關詳細資訊，請參閱使用[UI 自動化來測試代碼](../test/use-ui-automation-to-test-your-code.md)。
 
 > [!NOTE]
 > 您不能使用 Google Chrome 或 Mozilla Firefox 瀏覽器記錄自動程式化 UI 測試。
@@ -55,19 +55,19 @@ ms.locfileid: "75585570"
 
 1. 在 [ **工具** ] 功能表中選擇 [ **擴充功能和更新**]。
 
-2. 在 [擴充功能和更新] 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
+2. 在 [擴充功能和更新]**** 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 在 [擴充功能] 功能表中，選擇 [管理擴充功能]。
+1. 在 [擴充功能]**** 功能表中，選擇 [管理擴充功能]****。
 
-2. 在 [管理擴充功能] 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
+2. 在 [管理擴充功能]**** 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
 
 ::: moniker-end
 
-3. 反白顯示延伸模組並選擇 [下載]。
+3. 反白顯示延伸模組並選擇 [下載]****。
 
     > [!TIP]
     > 您也可以在[這裡](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)下載自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件。
@@ -80,15 +80,15 @@ ms.locfileid: "75585570"
 
 1. 啟用 Just My Code：
 
-    1. 在 [工具] 功能表中選擇 [選項]，然後選擇 [偵錯]。
+    1. 在 [工具]**** 功能表中選擇 [選項]****，然後選擇 [偵錯]****。
 
-    2. 選取 [啟用 Just My Code]。
+    2. 選取 [啟用 Just My Code]****。
 
 2. 停用 CLR 例外狀況：
 
-    1. 在 [偵錯] 功能表中選擇 [例外狀況]。
+    1. 在 [偵錯]**** 功能表中選擇 [例外狀況]****。
 
-    2. 取消核取 [通用語言執行平台例外狀況] 的 [使用者未處理]。
+    2. 取消核取 [通用語言執行平台例外狀況]**** 的 [使用者未處理]****。
 
 如果在自動程式化 UI 測試中看不到變更 `BrowserWindow.CurrentBrowser` 的選項，您使用的 Visual Studio 版本可能不支援使用各種網頁瀏覽器進行自動程式化 UI 測試。 若要使用這樣的自動程式化 UI 測試，您必須使用 Visual Studio Enterprise 版。
 
@@ -102,13 +102,13 @@ ms.locfileid: "75585570"
 
 - 不支援自動化瀏覽器架構專用的 UI 動作，例如最大化、最小化和還原。
 
-## <a name="tips"></a>祕訣
+## <a name="tips"></a>提示
 
 您可以設定輸出，在自動程式碼 UI 記錄中包含螢幕擷取畫面。 若要這麼做，您需要完成 *QTAgent32.exe.config* 檔案的某些組態設定。 根據預設，這個檔案會安裝在下列位置：
 
 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
 
-設定下列的值：
+設定下列值：
 
 - `EqtTraceLevel` 區段中的`system.diagnostics`。
 
@@ -120,9 +120,9 @@ ms.locfileid: "75585570"
 
 ## <a name="video-resources"></a>影片資源
 
-[在 IE 中記錄並在任何位置播放](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
+[在 IE 上錄製和隨處播放](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
-[使用自動程式化 UI 測試產生器撰寫跨瀏覽器的測試](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+[使用編碼的 UI 測試產生器編寫跨瀏覽器測試](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
 [使用純手動編碼而不使用 UI 對應撰寫跨瀏覽器的測試](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 
@@ -130,8 +130,8 @@ ms.locfileid: "75585570"
 
 [針對跨瀏覽器測試失敗問題進行疑難排解](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [使用自動程式化 UI 測試記錄來分析自動程式化 UI 測試](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+- [使用編碼的 UI 測試日誌分析編碼的 UI 測試](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

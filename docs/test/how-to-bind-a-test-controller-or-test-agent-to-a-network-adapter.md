@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6383d7a16839ba8934bb7f91664379e99da17a36
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594782"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>如何：將測試控制器或測試代理程式繫結至網路介面卡
@@ -25,7 +25,7 @@ ms.locfileid: "75594782"
 > [!WARNING]
 > 當您嘗試設定測試代理程式時，可能會接收到下列錯誤：
 >
-> **錯誤8110。無法連接到指定的控制器電腦或存取控制器物件**
+> **錯誤 8110。無法連接到指定的控制器電腦或存取控制器物件**
 >
 > 在有超過一張以上網路介面卡的電腦上安裝測試控制器，便可能導致此錯誤。 也有可能在您嘗試執行測試之前，都能夠成功安裝代理程式，而且不會看到這個問題。
 
@@ -35,19 +35,19 @@ ms.locfileid: "75594782"
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>若要取得網路介面卡的 IP 位址
 
-1. 在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **cmd**，然後選擇 **Enter**。
+1. 在 Microsoft Windows 中選擇 [開始]****，在 [開始搜尋]**** 方塊中鍵入 **cmd**，然後選擇 **Enter**。
 
-2. 鍵入 **ipconfig /all**。
+2. 輸入 **ipconfig /all**。
 
      接著便會顯示您的網路介面卡 IP 位址。 請將控制器要繫結之網路介面卡的 IP 位址記錄下來。
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>將網路介面卡繫結至測試控制器
 
-1. 在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
+1. 在 Microsoft Windows 中選擇 [開始]****，在 [開始搜尋]**** 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
 
-     [服務] 對話方塊隨即顯示。
+     [服務]**** 對話方塊隨即顯示。
 
-2. 在結果窗格中的 [名稱] 資料行底下，以滑鼠右鍵按一下 [Visual Studio Test Controller] 服務，然後選擇 [停止]。
+2. 在結果窗格中的 [名稱]**** 資料行底下，以滑鼠右鍵按一下 [Visual Studio Test Controller]**** 服務，然後選擇 [停止]****。
 
      -或-
 
@@ -89,11 +89,11 @@ ms.locfileid: "75594782"
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>將網路介面卡繫結至測試代理程式
 
-1. 在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
+1. 在 Microsoft Windows 中選擇 [開始]****，在 [開始搜尋]**** 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
 
-    [服務] 對話方塊隨即顯示。
+    [服務]**** 對話方塊隨即顯示。
 
-2. 在結果窗格中的 [名稱] 資料行下，以滑鼠右鍵按一下 [Visual Studio Test Agent] 服務，然後選擇 [停止]。
+2. 在結果窗格中的 [名稱]**** 資料行下，以滑鼠右鍵按一下 [Visual Studio Test Agent]**** 服務，然後選擇 [停止]****。
 
      -或-
 
@@ -128,9 +128,9 @@ ms.locfileid: "75594782"
 
     `net start vsttagent`
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)
 - [修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)
-- [設定測試控制器和測試代理程式的連接埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [如何：指定測試控制器和測試代理程式的逾時期限](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [設定測試控制器和測試代理程式的通訊埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [如何：為測試控制器和測試代理指定超時時間](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

@@ -9,28 +9,28 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568135"
 ---
 # <a name="options-text-editor-xml-formatting"></a>選項、文字編輯器、XML、格式化
 
-使用 [格式化] 選項來指定如何將您 XML 文件中的項目和屬性格式化。 如果要存取 XML 格式化選項，請選擇 [工具] > [選項] > [文字編輯器] > [XML]，然後選擇 [格式化]。
+使用 [格式化]**** 選項來指定如何將您 XML 文件中的項目和屬性格式化。 要訪問 XML 格式選項，請選擇**工具** > **選項** > **文字編輯器** > **XML，** 然後選擇 **"格式化**"。
 
 ## <a name="attributes"></a>屬性
 
-**保留手動屬性的格式**
+**保留手動屬性格式化**
 
-不要將屬性重新格式化。 此設定為預設。
+不要重新格式化屬性。 這項設定是預設值。
 
 > [!NOTE]
-> 如果屬性跨多行，則編輯器會將屬性的每一行縮排，以符合父項目的縮排。
+> 如果屬性在多行中，編輯器就會縮排每一個屬性行，以符合父元素的縮排。
 
-**對齊位於各行上的屬性**
+**在個別的行上對齊每一個屬性**
 
-垂直對齊第二個屬性及後續屬性，使其符合第一個屬性的縮排。 下列 XML 文字為如何對齊屬性的範例：
+將第二個和後續的屬性垂直對齊，以符合第一個屬性的縮排。 下列 XML 文字為如何對齊屬性的範例：
 
 ```xml
 <item id = "123-A"
@@ -41,21 +41,21 @@ ms.locfileid: "75568135"
 
 ## <a name="auto-reformat"></a>自動重新格式化
 
-**從剪貼簿貼上**
+**從剪貼簿粘貼**
 
 重新格式化從剪貼簿貼上的 XML 文字。
 
-**結束標記完成**
+**完成結束標記時**
 
-結束標記完成時將項目重新格式化。
+完成結束標記時重新格式化元素。
 
 ## <a name="mixed-content"></a>混合內容
 
-**根據預設，會將混合內容重新設定。**
+**依預設，格式化混合內容。**
 
-會嘗試將混合內容重新格式化，但內容在 `xml:space="preserve"` 範圍中時除外。 此設定為預設。
+嘗試重新格式化混合內容，但是在 `xml:space="preserve"` 範圍中找到的內容除外。 這項設定是預設值。
 
-如果項目包含文字與標記的混合，則將內容視為混合內容。 下列是具有混合內容的項目範例。
+如果元素包含文字與標記的混合，則內容會被視為混合內容。 下列是具有混合內容之元素的範例。
 
 ```xml
 <dir>c:\data\AlphaProject\
@@ -64,7 +64,7 @@ ms.locfileid: "75568135"
 </dir>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 選項 - 其他](options-text-editor-xml-miscellaneous.md)
 - [Visual Studio 中的 XML 工具](../../xml-tools/xml-tools-in-visual-studio.md)

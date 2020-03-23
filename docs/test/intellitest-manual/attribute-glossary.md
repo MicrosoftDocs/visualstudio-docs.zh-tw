@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409540"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302627"
 ---
 # <a name="attribute-glossary"></a>屬性字彙
 
@@ -79,9 +79,9 @@ ms.locfileid: "78409540"
 <a name="pexclass"></a>
 ## <a name="pexclass"></a>PexClass
 
-此屬性會標示包含「探索」的類別。 它相當於 MSTest **TestClassAttribute** (或 NUnit **TestFixtureAttribute**)。 此屬性是選擇性的。
+此屬性會標示包含「探索」** 的類別。 它相當於 MSTest **TestClassAttribute** (或 NUnit **TestFixtureAttribute**)。 這是一個選擇性的屬性。
 
-使用 [PexClass](#pexclass) 所標示的類別必須是「預設可建構的」：
+使用 [PexClass](#pexclass) 所標示的類別必須是「預設可建構的」**：
 
 * 公開匯出的類型
 * 預設建構函式
@@ -124,7 +124,7 @@ IntelliTest 會產生傳統的無參數測試，以使用不同的參數來呼�
 參數化單元測試：
 
 * 必須是執行個體方法
-* 對根據[設定瀑布圖](input-generation.md#visibility)放入已產生測試的測試類別，必須是[可見](settings-waterfall.md)
+* 對根據[設定瀑布圖](settings-waterfall.md)放入已產生測試的測試類別，必須是[可見](input-generation.md#visibility)
 * 可以接受任意數目的參數
 * 可以是泛型
 

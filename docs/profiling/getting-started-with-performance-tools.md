@@ -13,27 +13,27 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: faba7a6d2e698e919c0f0adca6fa574838b8b3c4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779203"
 ---
 # <a name="getting-started-with-performance-tools"></a>效能工具使用者入門
 
-Visual Studio 提供數種方式供您收集、檢視和分析程式碼效能資料。 在許多情況下，最佳的效能工具使用者入門方式是使用 [效能精靈] 的預設設定。 該精靈會收集應用程式統計資料，以協助您找出程式碼中的效能問題。
+Visual Studio 提供數種方式供您收集、檢視和分析程式碼效能資料。 在許多情況下，最佳的效能工具使用者入門方式是使用 [效能精靈]**** 的預設設定。 該精靈會收集應用程式統計資料，以協助您找出程式碼中的效能問題。
 
-- Visual Studio [錯誤清單] 視窗中會顯示效能警告，以通知您常見的程式碼撰寫問題。 您可以從警告巡覽至您的原始程式碼，以及可協助您撰寫更有效率程式碼的詳細說明主題。
+- Visual Studio [錯誤清單]**** 視窗中會顯示效能警告，以通知您常見的程式碼撰寫問題。 您可以從警告巡覽至您的原始程式碼，以及可協助您撰寫更有效率程式碼的詳細說明主題。
 
 - 效能報告可讓您檢視應用程式結構的不同層級、原始程式碼行及處理序。 效能報告會顯示應用程式執行資料，舉凡特定函式的呼叫函式及所呼叫函式，或是整個應用程式的呼叫樹狀結構。
 
-若要快速分析專案、應用程式或 ASP.NET 網站，請選取 [偵錯] > [效能分析工具]，然後選取 [效能精靈]。 如需詳細指示，請參閱[效能分析的初學者指南](../profiling/beginners-guide-to-cpu-sampling.md)和[如何：收集網站的效能資料](../profiling/how-to-collect-performance-data-for-a-web-site.md)。
+要快速分析專案、應用或ASP.NET網站，請選擇**調試** > **性能探測器**，然後選擇**性能嚮導**。 如需詳細指示，請參閱[效能分析的初學者指南](../profiling/beginners-guide-to-cpu-sampling.md)和[如何：收集網站的效能資料](../profiling/how-to-collect-performance-data-for-a-web-site.md)。
 
-若要手動指定及設定效能分析工作階段，請選取 [偵錯] > [分析工具] > [效能總管]。 使用 [效能總管] 中的 [目標] 資料夾和 [屬性] 頁面以設定工作階段。 如需指示，請參閱[如何：手動建立效能工作階段](../profiling/how-to-manually-create-performance-sessions.md)。
+要手動指定和配置性能分析會話，請選擇**調試** > **探測器** > **性能資源管理器**。 使用 [效能總管]**** 中的 [目標]**** 資料夾和 [屬性]**** 頁面以設定工作階段。 如需指示，請參閱[如何：手動建立效能工作階段](../profiling/how-to-manually-create-performance-sessions.md)。
 
 **另請參閱：**
 
 - [效能工具概觀](../profiling/overviews-performance-tools.md)
-- [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)
+- [分析性能工具資料](../profiling/analyzing-performance-tools-data.md)
 - [使用效能規則分析資料](../profiling/using-performance-rules-to-analyze-data.md)
 - [設定效能工作階段](../profiling/configuring-performance-sessions.md)

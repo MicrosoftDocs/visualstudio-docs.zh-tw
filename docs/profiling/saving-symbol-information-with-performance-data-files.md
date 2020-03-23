@@ -12,15 +12,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778293"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用效能資料檔案儲存符號資訊
 
-如果您使用 Visual Studio IDE 分析檔案，且打算將 VSP 檔移至不同的電腦，則必須將效能專案設定設為儲存或「序列化」報告檔中的符號。 這樣會增加報告檔的大小。 必須將符號序列化的原因有兩個︰
+如果您使用 Visual Studio IDE 分析檔案，且打算將 VSP 檔移至不同的電腦，則必須將效能專案設定設為儲存或「序列化」** 報告檔中的符號。 這樣會增加報告檔的大小。 必須將符號序列化的原因有兩個︰
 
 - 在目標組件從其暫時儲存區的位置遺失之前，將程式碼符號內嵌到效能報表。
 
@@ -28,7 +28,7 @@ ms.locfileid: "74778293"
 
 您可以從 Visual Studio IDE 或命令列將符號序列化：
 
-- 若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中將符號序列化，請指向功能表列上的 [工具]，然後按一下 [選項]。 在 [選項] 視窗中，選取 [效能工具]，然後選取 [自動序列化符號資訊] 核取方塊。
+- 若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中將符號序列化，請指向功能表列上的 [工具]****，然後按一下 [選項]****。 在 [選項]**** 視窗中，選取 [效能工具]****，然後選取 [自動序列化符號資訊]**** 核取方塊。
 
 - 當您儲存報告檔時，PACKSYMBOLS 等同於命令列選項。 若要將符號序列化，輸入 **vsperfreport /summary:all /packsymbols filename.vsp**。
 
@@ -60,8 +60,8 @@ VsPerfReport -clearpackedsymbols filename.vsp
 
 VsPerfReport -packsymbols -summary:all filename.vsp
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[儲存和匯出效能工具資料](../profiling/saving-and-exporting-performance-tools-data.md)
-[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)
-[VSPerfReport](../profiling/vsperfreport.md)
+[保存和匯出性能工具資料](../profiling/saving-and-exporting-performance-tools-data.md)
+[如何：引用 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)
+[VSPerf 報告](../profiling/vsperfreport.md)

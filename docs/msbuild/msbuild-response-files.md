@@ -19,19 +19,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44d6e3c77fee53b15ec8d18cb74fd7355ee101a8
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410029"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302893"
 ---
 # <a name="msbuild-response-files"></a>MSBuild 回應檔
 
-回應檔 ( *.rsp*) 是包含 *MSBuild.exe* 命令列參數的文字檔。 每個參數可位於單獨一行，或所有參數可位於同一行。 註解行前面會加上 **#** 符號。 **@** 參數可用來將其他回應檔傳遞給 MSBuild.exe。
+回應檔 (*.rsp*) 是包含 *MSBuild.exe* 命令列參數的文字檔。 每個參數可位於單獨一行，或所有參數可位於同一行。 注釋行以**#** 符號為開頭。 該**@** 開關用於將另一個回應檔傳遞給*MSBuild.exe*。
 
 ## <a name="msbuildrsp"></a>MSBuild.rsp
 
-自動回應檔是 *MSBuild.exe* 在建置專案時自動使用的特殊 *.rsp* 檔案。 *MSBuild.rsp* 必須與 *MSBuild.exe* 位於相同目錄中，否則系統會找不到這個檔案。 您可以編輯此檔案以指定 *MSBuild.exe* 的預設命令列參數。 例如，如果您每次建置專案時都使用相同的記錄器，則可以將 **-logger** 參數新增至 *MSBuild.rsp*，*MSBuild.exe* 即會在每次建置專案時使用這個記錄器。
+自動回應檔是 *MSBuild.exe* 在建置專案時自動使用的特殊 *.rsp* 檔案。 此檔*MSBuild.rsp*必須與*MSBuild.exe*位於同一目錄中，否則將找不到該檔。 您可以編輯此檔案以指定 *MSBuild.exe* 的預設命令列參數。 例如，如果您每次建置專案時都使用相同的記錄器，則可以將 **-logger** 參數新增至 *MSBuild.rsp*，*MSBuild.exe* 即會在每次建置專案時使用這個記錄器。
 
 ## <a name="directorybuildrsp"></a>Directory.Build.rsp
 

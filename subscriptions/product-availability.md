@@ -7,10 +7,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中軟體下載項目的產品可用性
 ms.openlocfilehash: 30dd3a216274e189d4d1afe2321bd1db7b66fb94
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947104"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中軟體下載項目的產品可用性
@@ -23,7 +23,7 @@ ms.locfileid: "78947104"
 訂閱者無法使用特定產品的原因如下：
 
 - **您的訂用帳戶層級或方案中不包含該產品。** [深入了解](https://visualstudio.microsoft.com/vs/pricing/)您的訂用帳戶可取得的軟體與權益，或是[下載](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx)各訂用帳戶層級可取得的完整產品清單。 某些程式，例如 [Microsoft 合作夥伴網路](https://partner.microsoft.com/)，會向 Visual Studio 訂用帳戶提供部分權益。  這些訂用帳戶不包含購買 Visual Studio 訂用帳戶時隨附的所有產品。 這些方案的訂閱者應該將有關產品是否可供下載的疑問轉給該方案的支援小組。
-- **產品不包含在訂用帳戶中。** 因為特殊的授權條款、技術限制或開發工具相關問題，所以某些 Microsoft 產品不包括在訂用帳戶中。 如果您想要建議將某項產品加入訂用帳戶中，請傳送電子郵件至 Visual Studio [客戶服務中心](https://visualstudio.microsoft.com/subscriptions/support/)。
+- **產品不包含在訂用帳戶中。** 因為特殊的授權條款、技術限制或開發工具相關問題，所以某些 Microsoft 產品不包括在訂用帳戶中。 如果您想建議將產品添加到訂閱中，請發送電子郵件至您的 Visual Studio[客戶服務中心](https://visualstudio.microsoft.com/subscriptions/support/)。
 - **此產品可公開取得。** 某些工具、SDK、DDK 與 Service Pack 則可從 [Microsoft 下載中心](https://www.microsoft.com/download)公開取得。 這類產品可能就不會發佈至下載。
 - **產品尚未發行。**  許多發行前 (搶鮮版 (Beta)) 版本與候選版可從下載取得。 然而，並不是所有搶鮮版 (Beta) 皆會包含其中，例如某些搶鮮版 (Beta) 需要特殊的註冊或資格。 如需公開技術搶鮮版 (Beta) 計畫的詳細資訊，請瀏覽 [Microsoft Connect](https://connect.microsoft.com/)。
 - **您的國家/地區不提供此產品。** 有些 Microsoft 產品會因為區域限制而無法取得。
@@ -35,14 +35,14 @@ ms.locfileid: "78947104"
 > [!NOTE]
 > 如果您有多個與相同電子郵件地址建立關聯的訂用帳戶，則可供使用軟體標題取決於您擁有的**最高**層級訂用帳戶。  例如，如果您有 Visual Studio Enterprise 訂用帳戶和 Visual Studio Test Professional 訂用帳戶，則不論目前在訂用帳戶入口網站中使用哪一個訂用帳戶，您都可以存取 Visual Studio Enterprise 訂用帳戶所包含的軟體標題。 
 
-不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
+不確定您使用哪一個訂用帳戶？  連接到以查看[https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)分配給您的電子郵件地址的所有訂閱。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
-- 某些軟體下載項目可能需要產品金鑰，才能加以安裝及啟用。  如需有關如何取得及管理產品金鑰的詳細資料，請參閱我們的[產品金鑰](product-keys.md)一文。 
+- 某些軟體下載項目可能需要產品金鑰，才能加以安裝及啟用。  有關如何獲取和管理產品金鑰的詳細資訊，請查看[我們的產品金鑰](product-keys.md)文章。 
 - 了解如何[下載軟體](download-software.md)。

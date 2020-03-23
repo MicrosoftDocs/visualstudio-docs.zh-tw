@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c61c13f6a9eca416a52221ba9da37be820dd4b89
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593222"
 ---
 # <a name="edit-load-tests"></a>編輯負載測試
@@ -22,9 +22,9 @@ ms.locfileid: "75593222"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-負載測試是由「情節」、「計數器集合」和「回合設定」定義。 下圖說明[情節](../test/edit-load-test-scenarios.md)、[計數器集合](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)和[回合設定](../test/load-test-run-settings-properties.md)之間的差異：
+負載測試是由「情節」**、「計數器集合」** 和「回合設定」** 定義。 下圖說明[情節](../test/edit-load-test-scenarios.md)、[計數器集合](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)和[回合設定](../test/load-test-run-settings-properties.md)之間的差異：
 
-![載入測試架構](../test/media/load_test_editor.png)
+![負載測試架構](../test/media/load_test_editor.png)
 
 ## <a name="software-requirements"></a>軟體需求
 
@@ -38,17 +38,17 @@ ms.locfileid: "75593222"
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>設定和管理效能計數器集合
 
-負載測試會提供依技術所組織的具名計數器集合，在分析效能計數器資料時，非常好用。 計數器集合包括負載測試、IIS、ASP.NET 和 SQL。 當您使用 [新增負載測試精靈] 建立負載測試時，會為您指定要包含在負載測試中的電腦，設定好一組初始預先定義的重要計數器。 請在 [負載測試編輯器] 中管理計數器。
+負載測試會提供依技術所組織的具名計數器集合，在分析效能計數器資料時，非常好用。 計數器集合包括負載測試、IIS、ASP.NET 和 SQL。 當您使用 [新增負載測試精靈]**** 建立負載測試時，會為您指定要包含在負載測試中的電腦，設定好一組初始預先定義的重要計數器。 請在 [負載測試編輯器]**** 中管理計數器。
 
 如需詳細資訊，請參閱[在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
 
 ## <a name="configure-and-manage-load-test-run-settings"></a>設定和管理負載測試回合設定
 
-回合設定是影響負載測試執行方式的屬性， 這些設定會在 [屬性] 視窗中，依照分類進行組織。
+回合設定是影響負載測試執行方式的屬性， 這些設定會在 [屬性]**** 視窗中，依照分類進行組織。
 
 如需詳細資訊，請參閱[設定負載測試回合設定](../test/configure-load-test-run-settings.md)和[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [分析臨界值規則違規](../test/analyze-threshold-rule-violations-in-load-tests.md)
+- [分析閾值規則違規](../test/analyze-threshold-rule-violations-in-load-tests.md)

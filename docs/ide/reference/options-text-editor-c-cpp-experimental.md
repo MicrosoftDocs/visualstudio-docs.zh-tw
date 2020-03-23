@@ -12,10 +12,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278708"
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
@@ -24,16 +24,16 @@ ms.locfileid: "77278708"
 
 ::: moniker range="vs-2017"
 
-本文描述 Visual Studio 2017 中的選項。 針對 Visual Studio 2015，請在目錄上方的選取器中選取 [2015]。
+本文描述 Visual Studio 2017 中的選項。 針對 Visual Studio 2015，請在目錄上方的選取器中選取 [2015]****。
 
 ::: moniker-end
 
-若要存取本屬性頁面，請按 **Control**+**Q** 以啟動搜尋方塊，然後鍵入 **experimental**。 鍵入前幾個字母之後，搜尋就會找到頁面。 您也可以選擇 [工具] > [選項]，並依序展開 [文字編輯器] 和 [C/C++]，然後選擇 [實驗性]，即可到達頁面。
+要訪問此屬性頁，請按**Ctrl**+**Q**啟動搜索框，然後鍵入**實驗**。 鍵入前幾個字母之後，搜尋就會找到頁面。 您也可以通過選擇**工具** > **選項**和擴展**文字編輯器**，然後**C/C++，** 然後選擇**實驗**。
 
 這些功能可在 Visual Studio 安裝中使用。
 
 > [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="enable-predictive-intellisense"></a>啟用預測性 IntelliSense
 
@@ -65,6 +65,6 @@ ms.locfileid: "77278708"
 
 ## <a name="see-also"></a>另請參閱
 
-- [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)
-- [在 C++ 中重構 (VC 部落格)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
-)
+- [設置特定于語言的編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)
+- [Refactoring in C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
+) (在 C++ 中重構 (VC 部落格))

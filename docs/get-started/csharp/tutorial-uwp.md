@@ -15,13 +15,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 8be56581374aefbef41a5173836d1189cceff290
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77580008"
 ---
-# <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教學課程：使用 XAML 和 C 在 Visual Studio 中建立您的第一個通用 Windows 平臺應用程式&#35;
+# <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教程：使用 XAML 和 C&#35;在視覺化工作室創建第一個通用 Windows 平臺應用程式
 
 在這個 Visual Studio 整合式開發環境 (IDE) 的簡介中，您將建立一個可在任何 Windows 10 裝置上執行的 "Hello World" 應用程式。 為了這樣做，您將使用「通用 Windows 平台」(UWP) 專案範本、Extensible Application Markup Language (XAML) 及 C# 程式設計語言。
 
@@ -39,42 +39,42 @@ ms.locfileid: "77580008"
 ::: moniker range="vs-2017"
 1. 開啟 Visual Studio。
 
-1. 從頂端功能表列中 **，選擇 [** 檔案] > [**新增**>**專案**]。
+1. 從頂端功能表列中，選擇 [檔案]** [新增]** > ** [專案]** > ****。
 
-1. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [Windows 通用]。 在中間窗格中，選擇 [空白應用程式 (通用 Windows)]。 接著，將專案命名為 *HelloWorld*，然後選擇 [確定]。
+1. 在 [新增專案]**** 對話方塊的左窗格中，展開 [Visual C#]****，然後選擇 [Windows 通用]****。 在中間窗格中，選擇 [空白應用程式 (通用 Windows)]****。 接著，將專案命名為 *HelloWorld*，然後選擇 [確定]****。
 
    ![Visual Studio IDE 中 [新增專案] 對話方塊的「Windows 通用」專案範本](media/new-project-csharp-uwp-helloworld.png)
 
    > [!NOTE]
-   > 如果您看不到 [空白應用程式 (通用 Windows)] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。<br><br>![從 [新增專案] 對話方塊中按一下 [開啟 Visual Studio 安裝程式] 連結](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Visual Studio 安裝程式即會啟動。 選擇 [通用 Windows 平台開發] 工作負載，然後選擇 [修改]。<br><br>![「Visual Studio 安裝程式」中的 [通用 Windows 平台開發] 工作負載](media/uwp-dev-workload.png)
+   > 如果您看不到 [空白應用程式 (通用 Windows)]**** 專案範本，請在 [新增專案]**** 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式]**** 連結。<br><br>![從 [新增專案] 對話方塊中按一下 [開啟 Visual Studio 安裝程式] 連結](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Visual Studio 安裝程式即會啟動。 選擇 [通用 Windows 平台開發]**** 工作負載，然後選擇 [修改]****。<br><br>![「Visual Studio 安裝程式」中的 [通用 Windows 平台開發] 工作負載](media/uwp-dev-workload.png)
 
-1. 在 [新增通用 Windows 平台專案] 對話方塊中，接受預設的**目標版本**和**最低版本**設定。
+1. 在 [新增通用 Windows 平台專案]**** 對話方塊中，接受預設的**目標版本**和**最低版本**設定。
 
    ![在 [新增通用 Windows 平台專案] 對話方塊中，接受預設的 [目標版本] 和 [最低版本] 設定](media/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-1. 開啟 Visual Studio，並在開始視窗中選擇 [建立新專案]。
+1. 開啟 Visual Studio，並在開始視窗中選擇 [建立新專案]****。
 
-1. 在 [建立新專案] 畫面上，於搜尋方塊中輸入*通用 Windows*、選擇適用於**空白應用程式 (通用 Windows)** 的 C# 範本，然後選擇 [下一步]。
+1. 在 [建立新專案]**** 畫面上，於搜尋方塊中輸入*通用 Windows*、選擇適用於**空白應用程式 (通用 Windows)** 的 C# 範本，然後選擇 [下一步]****。
 
    ![[建立新專案] 畫面的螢幕擷取畫面](media/vs-2019/uwp-create-new-project.png)
 
    > [!NOTE]
-   > 如果您看不到 [空白應用程式 (通用 Windows)] 專案範本，請按一下 [安裝更多工具與功能] 連結。<br><br>![按一下 [安裝更多工具與功能] 連結](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio 安裝程式即會啟動。 選擇 [通用 Windows 平台開發] 工作負載，然後選擇 [修改]。<br><br>![「Visual Studio 安裝程式」中的 [通用 Windows 平台開發] 工作負載](media/uwp-dev-workload.png)
+   > 如果您看不到 [空白應用程式 (通用 Windows)]**** 專案範本，請按一下 [安裝更多工具與功能]**** 連結。<br><br>![按一下 [安裝更多工具與功能] 連結](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio 安裝程式即會啟動。 選擇 [通用 Windows 平台開發]**** 工作負載，然後選擇 [修改]****。<br><br>![「Visual Studio 安裝程式」中的 [通用 Windows 平台開發] 工作負載](media/uwp-dev-workload.png)
 
-1. 提供專案名稱_HelloWorld_，然後選擇 [**建立**]。
+1. 為專案命名 _"HelloWorld"，_ 然後選擇 **"創建**"。
 
-   ![設定您的專案畫面](media/vs-2019/uwp-configure-your-project.png)
+   ![設定項目螢幕](media/vs-2019/uwp-configure-your-project.png)
 
-1. 在 [新增通用 Windows 平台專案] 對話方塊中，接受預設的**目標版本**和**最低版本**設定。
+1. 在 [新增通用 Windows 平台專案]**** 對話方塊中，接受預設的**目標版本**和**最低版本**設定。
 
    ![在 [新增通用 Windows 平台專案] 對話方塊中，接受預設的 [目標版本] 和 [最低版本] 設定](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
    > [!NOTE]
-   > 如果這是您第一次使用 Visual Studio 來建立 UWP 應用程式，可能會出現 [設定] 對話方塊。 請選擇 [開發人員模式]，然後選擇 [是]。<br><br>
-   > ![在 UWP [設定] 對話方塊中啟用 [開發人員模式]](media/enable-developer-mode.png)<br><br>Visual Studio 會為您安裝額外的「開發人員模式」套件。 當套件安裝完成時，請關閉 [設定] 對話方塊。
+   > 如果這是您第一次使用 Visual Studio 來建立 UWP 應用程式，可能會出現 [設定]**** 對話方塊。 請選擇 [開發人員模式]****，然後選擇 [是]****。<br><br>
+   > ![在 UWP [設定] 對話方塊中啟用 [開發人員模式]](media/enable-developer-mode.png)<br><br>Visual Studio 會為您安裝額外的「開發人員模式」套件。 當套件安裝完成時，請關閉 [設定]**** 對話方塊。
 
 ## <a name="create-the-application"></a>建立應用程式
 
@@ -82,7 +82,7 @@ ms.locfileid: "77580008"
 
 ### <a name="add-a-button-to-the-design-canvas"></a>將按鈕新增至設計畫布
 
-1. 在 [方案總管] 中，按兩下 [MainPage.xaml] 以開啟分割檢視。
+1. 在 [方案總管]**** 中，按兩下 [MainPage.xaml]** 以開啟分割檢視。
 
    ::: moniker range="vs-2017"
    ![從 [方案總管] 中開啟 MainPage.xaml ](media/uwp-solution-explorer-MainPage-xaml.png)
@@ -91,35 +91,35 @@ ms.locfileid: "77580008"
    ![從 [方案總管] 中開啟 MainPage.xaml](media/vs-2019/uwp-solution-explorer-mainpage-xaml.png)
    ::: moniker-end
 
-   有兩個窗格：[XAML 設計工具] (其中包含設計畫布) 和 [XAML 編輯器] (可供您新增或變更程式碼)。
+   有兩個窗格：[XAML 設計工具]**** (其中包含設計畫布) 和 [XAML 編輯器]**** (可供您新增或變更程式碼)。
 
    ![XAML 編輯器中的 [XAML 設計工具] 窗格](media/uwp-xaml-editor.png)
 
-1. 選擇 [工具箱] 以開啟 [工具箱] 飛出視窗。
+1. 選擇 [工具箱]**** 以開啟 [工具箱] 飛出視窗。
 
    ![按一下 [工具箱] 以開啟 [工具箱] 飛出視窗](media/uwp-toolbox.png)
 
-   (如果沒有看到 [工具箱] 選項，您可以從功能表列中開啟它。 若要這樣做，請選擇 [檢視] > [工具列]。 或按 **Ctrl**+**Alt**+**X**)。
+   （如果看不到 **"工具箱"** 選項，則可以從功能表列打開它。 為此，請選擇 **"查看** > **工具列**"。 或者，按**Ctrl**+**Alt**+**X**.）
 
-1. 按一下**固定**圖示，以固定 [工具箱] 視窗。
+1. 按一下 **"Pin"** 圖示以停靠工具箱視窗。
 
    ![按一下 [釘選] 圖示以固定 [工具箱] 視窗](media/uwp-toolbox-autohide.png)
 
-1. 按一下 [Button] 控制項，然後將它拖曳至設計畫布。
+1. 按一下 [Button]**** 控制項，然後將它拖曳至設計畫布。
 
    ![按一下 [Button] 控制項，然後將它拖曳至設計畫布](media/uwp-toolbox-add-button-control.png)
 
-   如果您查看 [XAML 編輯器] 中的程式碼，就會看到在該處也新增了 Button：
+   如果查看**XAML 編輯器**中的代碼，您將看到按鈕也已添加在那裡：
 
    ![按一下 [Button] 控制項，然後將它拖曳至設計畫布](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>為按鈕新增標籤
 
-1. 在 [XAML 編輯器] 中，將 Button Content 值從 "Button" 變更為 "Hello World!"
+1. 在**XAML 編輯器**中，將按鈕內容值從"按鈕"更改為"你好世界！
 
    ![將 Button Content 值變更為 Hello World](media/uwp-change-button-text-in-xaml-code-window.png)
 
-1. 請注意，[XAML 設計工具] 中的按鈕也會變更。
+1. 請注意 **，XAML 設計器**中的按鈕也會更改。
 
    ![按鈕在設計畫布上變更為 Hello World](media/uwp-button-text-change-in-design-canvas.png)
 
@@ -166,17 +166,17 @@ ms.locfileid: "77580008"
 
    ![按一下 [本機電腦] 以啟動 UWP 應用程式並對其進行偵錯](media/uwp-start-or-debug.png)
 
-   （或者，您也可以從功能表列選擇 [ **Debug** ] > [**開始進行調試**程式]，或按 F5 啟動應用程式。）
+   (或者，您也可以從功能表列中選擇 [偵錯]**[開始偵錯]** > ****，或按 F5，來啟動應用程式)。
 
 1. 檢視您的應用程式 (在啟動顯示畫面消失後會立即出現)。 應用程式應該看起來像這樣：
 
    ![UWP "Hello World" 應用程式](media/uwp-hello-world-app.png)
 
-1. 按一下 [Hello World] 按鈕。
+1. 按一下 [Hello World]**** 按鈕。
 
    您的 Windows 10 裝置字面上會顯示 "Hello, World!"
 
-1. 若要關閉此應用程式，請按一下工具列中的 [停止偵錯] 按鈕。 (或者，從功能表列中選擇 [偵錯] > [停止偵錯]，或按 Shift+F5。)
+1. 若要關閉此應用程式，請按一下工具列中的 [停止偵錯]**** 按鈕。 （或者，從功能表列中選擇 **"調試** > **停止調試**"，或按 Shift_F5。
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
@@ -186,17 +186,17 @@ ms.locfileid: "77580008"
 
    ![按一下 [本機電腦] 以啟動 UWP 應用程式並對其進行偵錯](media/uwp-start-or-debug.png)
 
-   （或者，您也可以從功能表列選擇 [ **Debug** ] > [**開始進行調試**程式]，或按 F5 啟動應用程式。）
+   (或者，您也可以從功能表列中選擇 [偵錯]**[開始偵錯]** > ****，或按 F5，來啟動應用程式)。
 
 1. 檢視您的應用程式 (在啟動顯示畫面消失後會立即出現)。 應用程式應該看起來像這樣：
 
    ![UWP "Hello World" 應用程式](media/vs-2019/uwp-hello-world-app.png)
 
-1. 按一下 [Hello World] 按鈕。
+1. 按一下 [Hello World]**** 按鈕。
 
    您的 Windows 10 裝置字面上會顯示 "Hello, World!"
 
-1. 若要關閉此應用程式，請按一下工具列中的 [停止偵錯] 按鈕。 (或者，從功能表列中選擇 [偵錯] > [停止偵錯]，或按 Shift+F5。)
+1. 若要關閉此應用程式，請按一下工具列中的 [停止偵錯]**** 按鈕。 （或者，從功能表列中選擇 **"調試** > **停止調試**"，或按 Shift_F5。
 
 ::: moniker-end
 
@@ -209,5 +209,5 @@ ms.locfileid: "77580008"
 
 ## <a name="see-also"></a>另請參閱
 
-- [UWP 總覽](/windows/uwp/get-started/universal-application-platform-guide)
-- [取得 UWP 應用程式範例](/windows/uwp/get-started/get-uwp-app-samples)
+- [UWP 概觀](/windows/uwp/get-started/universal-application-platform-guide)
+- [取得 UWP app 範例](/windows/uwp/get-started/get-uwp-app-samples)

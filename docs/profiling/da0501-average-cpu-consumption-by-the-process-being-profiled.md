@@ -14,21 +14,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d9835ad1965d1fd9a31113117eeb07ed62fd8ec4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777459"
 ---
 # <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501：所分析之處理序的平均 CPU 使用量。
 
 |||
 |-|-|
-|規則識別碼|DA501|
-|Category|資源監視|
+|規則 ID|DA501|
+|類別|資源監視|
 |程式碼剖析方法|全部|
 |訊息|所分析之處理序的平均 CPU 消耗。|
-|規則類型|資訊|
+|規則型別|資訊|
 
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。
 

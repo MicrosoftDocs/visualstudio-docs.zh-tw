@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "63000424"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio R 工具使用者入門
@@ -22,19 +22,19 @@ ms.locfileid: "63000424"
 ## <a name="create-an-r-project"></a>建立 R 專案
 
 1. 開啟 Visual Studio。
-1. 選擇 檔案 > 新增 > 專案 (**Ctrl**+**Shift**+**N**)
-1. 從 [範本] > [R] 下選取 [R 專案]、提供專案名稱和位置，然後選取 [確定]：
+1. 選擇**檔** > **新專案** > **（** **Ctrl**+**移位**+**N**）
+1. 從**範本** > **R**下選擇"R 專案"，為專案指定名稱和位置，然後選擇 **"確定**"：
 
    ![Visual Studio R (在 VS2017 中為 RTVS) 的 [新增專案] 對話方塊](media/getting-started-01-new-project.png)
 
 1. 建立專案之後，您會看到下列視窗︰
 
-    - 右邊為 Visual Studio 方案總管，您會在此看到專案，位於包含的「解決方案」內。 (解決方案可以包含任意數目且不同類型的專案，如需詳細資料，請參閱[專案](r-projects-in-visual-studio.md)。
+    - 右邊為 Visual Studio 方案總管，您會在此看到專案，位於包含的「解決方案」** 內。 (解決方案可以包含任意數目且不同類型的專案，如需詳細資料，請參閱[專案](r-projects-in-visual-studio.md)。
     - 左上方是新的 R 檔案 (`script.R`)，您可以在其中使用 Visual Studio 所有的編輯功能來編輯原始程式碼。
-    - 左下方是 [R 互動] 視窗，您可以在其中以互動方式開發及測試程式碼。
+    - 左下方是 [R 互動]**** 視窗，您可以在其中以互動方式開發及測試程式碼。
 
 > [!Note]
-> 您可以使用 [R 互動] 視窗而不開啟任何專案，甚至是在載入不同的專案類型時。 只要隨時選取 [R 工具] > [視窗] > [R 互動]。
+> 您可以使用 [R 互動]**** 視窗而不開啟任何專案，甚至是在載入不同的專案類型時。 只需隨時選擇**R 工具** > **Windows** > **R 交互**。
 
 ## <a name="explore-the-interactive-window-and-intellisense"></a>瀏覽 Interactive 視窗和 IntelliSense
 
@@ -56,7 +56,7 @@ ms.locfileid: "63000424"
 
 1. 完成 `mean(ds)` 一行並按 Enter 查看結果 (`[1] 39.51667`)。
 
-1. Interactive 視窗已和說明整合，因此輸入 `?mean` 會在 Visual Studio 的 [R 說明] 視窗中顯示該函式的說明。 如需詳細資訊，請參閱 [Visual Studio R 工具中的說明](getting-started-help.md)。
+1. Interactive 視窗已和說明整合，因此輸入 `?mean` 會在 Visual Studio 的 [R 說明]**** 視窗中顯示該函式的說明。 如需詳細資訊，請參閱 [Visual Studio R 工具中的說明](getting-started-help.md)。
 
     ![Visual Studio 的 [R 說明] 視窗](media/getting-started-06-help.png)
 
@@ -84,14 +84,14 @@ ms.locfileid: "63000424"
     plot(density(pop), main = "Population Density", xlab = "X", ylab = "")
     ```
 
-1. 若要快速查看結果，請選取所有程式碼 (**Ctrl**+**A**)，然後按 **Ctrl**+**Enter** 鍵或以滑鼠右鍵按一下並選取 [以互動方式執行]。 所有選取的程式碼會在互動式視窗中執行，就彷彿您直接鍵入一樣，並在繪圖視窗中顯示結果︰
+1. 要快速查看結果，請選擇所有代碼 **（Ctrl**+**A），** 然後按**Ctrl**+**Enter**或按右鍵並選擇"**在互動式中執行**"。 所有選取的程式碼會在互動式視窗中執行，就彷彿您直接鍵入一樣，並在繪圖視窗中顯示結果︰
 
     ![在 Visual Studio 中顯示繪圖](media/getting-started-08-plot1.png)
 
-1. 針對某一行，隨時按 **Ctrl**+**Enter**，在互動式視窗中執行這一行。
+1. 對於一行，只需隨時按**Ctrl**+**Enter**在互動式視窗中運行該行。
 
 > [!Tip]
-> 了解進行編輯並按 **Ctrl**+**Enter** 鍵 (或用 **Ctrl**+**A** 選取所有項目，然後按 **Ctrl**+**Enter** 鍵) 以快速執行程式碼的模式。 這樣做會比使用滑鼠進行相同的作業更有效率。
+> 瞭解進行編輯和按**Ctrl**+**Enter**的模式（或使用**Ctrl**+**A**選擇所有內容，然後按**Ctrl**+**Enter）** 快速運行代碼。 這樣做會比使用滑鼠進行相同的作業更有效率。
 >
 > 此外，您可以將繪圖視窗從 Visual Studio 框架拖曳出來，放在顯示畫面上您想要的其他任何地方。 您可以輕鬆地將繪圖視窗調整成您想要的尺寸，然後將它儲存成影像或 PDF 檔案。
 
@@ -103,7 +103,7 @@ ms.locfileid: "63000424"
     lines(density(samp.means))
     ```
 
-1. 再次按 **Ctrl**+**A** 和 **Ctrl**+**Enter**，執行程式碼以產生下列結果︰
+1. 再次按**Ctrl**+**A**和**Ctrl**+**Enter**以運行代碼，生成以下結果：
 
     ![Visual Studio 中的更新雙重繪圖](media/getting-started-09-plot2.png)
 
@@ -125,7 +125,7 @@ ms.locfileid: "63000424"
     lines(density(samp.means))
     ```
 
-1. 再次按 **Ctrl**+**A** 和 **Ctrl**+**Enter** 鍵，查看結果︰
+1. **Ctrl**+**A**和**Ctrl**+再次**進入**以查看結果：
 
     ![Visual Studio 中的更新雙重繪圖，比例正確](media/getting-started-10-plot3.png)
 
@@ -135,21 +135,21 @@ ms.locfileid: "63000424"
 
 Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項強固的基礎上，並新增創新的 UI，例如[變數總管](variable-explorer.md)。 在這裡，我們只是初探一下偵錯。
 
-1. 若要開始，請重設目前的工作區，清除到目前為止已經進行的一切，方法是使用 [R 工具] > [工作階段] > [重設] 功能表命令。 根據預設，您在互動式視窗中所做的一切都會累算到目前工作階段，然後也會由偵錯工具使用。 藉由重設工作階段，您可以確保偵錯工作階段開始時沒有任何預先存在的資料。 不過 [重設] 並不會影響您的 *script.R* 來源檔案，因為它是在工作區之外管理和儲存。
+1. 首先，請使用**R Tools** > **會話** > **重置**功能表命令重置當前工作區以清除到目前為止所做的一切。 根據預設，您在互動式視窗中所做的一切都會累算到目前工作階段，然後也會由偵錯工具使用。 藉由重設工作階段，您可以確保偵錯工作階段開始時沒有任何預先存在的資料。 不過 [重設]**** 並不會影響您的 *script.R* 來源檔案，因為它是在工作區之外管理和儲存。
 
-1. 使用上一節中所建立的 *script.R* 檔案，在開頭為 `pop <-` 的行上設定中斷點，方法是將插入號放在該行上然後按 **F9** 鍵，或選取 [偵錯] > [切換中斷點] 功能表命令。 或者，只要按一下出現紅色中斷點的那一行的左邊界 (或裝訂邊)︰
+1. 使用上一節中所建立的 *script.R* 檔案，在開頭為 `pop <-` 的行上設定中斷點，方法是將插入號放在該行上然後按 **F9** 鍵，或選取 [偵錯]**** > [切換中斷點]**** 功能表命令。 或者，只要按一下出現紅色中斷點的那一行的左邊界 (或裝訂邊)︰
 
     ![在編輯器中設定中斷點](media/getting-started-11-debug1.png)
 
-1. 使用 *script.R* 中的程式碼啟動偵錯工具，方法是選取工具列上的 [執行啟動檔案] 按鈕、選取 [偵錯] > [執行啟動檔案] 功能表項目，或按 **F5** 鍵。 Visual Studio 會進入偵錯模式，並開始執行程式碼。 不過，它會停在您設定中斷點的行上︰
+1. 使用 *script.R* 中的程式碼啟動偵錯工具，方法是選取工具列上的 [執行啟動檔案]**** 按鈕、選取 [偵錯]**** > [執行啟動檔案]**** 功能表項目，或按 **F5** 鍵。 Visual Studio 會進入偵錯模式，並開始執行程式碼。 不過，它會停在您設定中斷點的行上︰
 
     ![在 Visual Studio 偵錯工具的中斷點上停止](media/getting-started-12-debug2.png)
 
-1. 在偵錯期間，Visual Studio 提供逐步執行逐行程式碼行的能力。 您也可以逐步執行函式、不進入函式，或跳離函式到呼叫的內容。 這些功能，以及其他功能，可以在 [偵錯] 功能表、編輯器的快顯內容功能表，和 [偵錯] 工具列中找到︰
+1. 在偵錯期間，Visual Studio 提供逐步執行逐行程式碼行的能力。 您也可以逐步執行函式、不進入函式，或跳離函式到呼叫的內容。 這些功能，以及其他功能，可以在 [偵錯]**** 功能表、編輯器的快顯內容功能表，和 [偵錯] 工具列中找到︰
 
     ![Visual Studio 中的 [偵錯] 工具列](media/getting-started-13-debug3.png)
 
-1. 在中斷點停止時，您可以檢查變數的值。 在 Visual Studio 中找到 [自動變數] 視窗，在底部選取名為 [區域變數] 的索引標籤。 [區域變數] 視窗會顯示程式目前位置的區域變數。 如果您停在稍早設定的中斷點上，則會看到尚未定義 `pop` 變數。 現在，使用 [偵錯] > [不進入函式] 命令 (**F10**)，您會看到出現 `pop` 的值︰
+1. 在中斷點停止時，您可以檢查變數的值。 在 Visual Studio 中找到 [自動變數]**** 視窗，在底部選取名為 [區域變數]**** 的索引標籤。 [區域變數]**** 視窗會顯示程式目前位置的區域變數。 如果您停在稍早設定的中斷點上，則會看到尚未定義 `pop` 變數。 現在使用**調試** > **步驟過超**命令 （**F10**），您將看到 的值`pop`顯示：
 
     ![Visual Studio 中的 [區域變數] 視窗](media/getting-started-14-debug4.png)
 
@@ -157,7 +157,7 @@ Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項
 
     ![變數總管的展開檢視](media/variable-explorer-expanded-results.png)
 
-1. 您可以繼續逐步執行程式行，或選取 [繼續] (**F5**) 來執行到完成 (或下一個中斷點)。
+1. 您可以繼續逐步執行程式行，或選取 [繼續]**** (**F5**) 來執行到完成 (或下一個中斷點)。
 
 若要深入資訊，請參閱[偵錯](debugging-r-in-visual-studio.md)和[變數總管](variable-explorer.md)。
 

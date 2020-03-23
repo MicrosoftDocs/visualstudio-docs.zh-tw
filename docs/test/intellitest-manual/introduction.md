@@ -10,15 +10,15 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: dfa81e7afe313a112e2355ddf5efadb70c555477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591590"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 的概觀
 
-IntelliTest 可讓您及早發現錯誤，並降低測試維護成本。 使用自動化和透明的測試方法，IntelliTest 可為 .NET 程式碼產生候選的測試套件。 通過您所指定的「正確性屬性」，可進一步指引測試套件產生作業。 IntelliTest 甚至會隨著受測程式碼發展自動進化測試套件。
+IntelliTest 可讓您及早發現錯誤，並降低測試維護成本。 使用自動化和透明的測試方法，IntelliTest 可為 .NET 程式碼產生候選的測試套件。 通過您所指定的「正確性屬性」**，可進一步指引測試套件產生作業。 IntelliTest 甚至會隨著受測程式碼發展自動進化測試套件。
 
 **特徵測試** IntelliTest 可讓您根據一套傳統的單元測試來判斷程式碼的行為。
 這類測試套件可當作迴歸套件，針對處理與重構舊版或不熟悉程式碼建立關聯的複雜性確立其基礎。
@@ -46,7 +46,7 @@ IntelliTest 可讓您及早發現錯誤，並降低測試維護成本。 使用�
 
 ## <a name="the-hello-world-of-intellitest"></a>IntelliTest 的 Hello World
 
-IntelliTest 會尋找與所測試程式相關的輸入，這表示您可以使用它來產生知名的 **Hello World!** 字串。 這會假設您已建立C# MSTest 架構的測試專案，並新增**Pex**的參考。 如果您要使用不同的測試架構，請建立 C# 類別庫，並參閱有關如何設定專案的測試架構文件。
+IntelliTest 會尋找與所測試程式相關的輸入，這表示您可以使用它來產生知名的 **Hello World!** 字串。 這假定您已經創建了一個基於 C# MSTest 的測試專案，並添加了對**Microsoft.Pex.Framework**的引用。 如果您要使用不同的測試架構，請建立 C# 類別庫，並參閱有關如何設定專案的測試架構文件。
 
 下列範例會在名為 **value** 的參數上建立兩個條件約束，以便 IntelliTest 產生必要的字串：
 
@@ -71,7 +71,7 @@ public partial class HelloWorldTest {
 
 1. ""
 2. "\0\0\0\0\0"
-3. "Hello"
+3. 「您好」
 4. "\0\0\0\0\0\0"
 5. "Hello\0"
 6. "Hello\0\0"
@@ -79,7 +79,7 @@ public partial class HelloWorldTest {
 8. "Hello World!"
 
 > [!NOTE]
-> 針對組建問題，請嘗試以 Mstest.testframework 的參考取代 VisualStudio. TestPlatform. VisualStudio. TestPlatform. mstest.testframework. VisualStudio. microsoft.visualstudio.qualitytools.webtestframework。
+> 對於構建問題，請嘗試替換 Microsoft.VisualStudio.TestPlatform.TestFramework 和 Microsoft.VisualStudio.TestPlatform.TestFramework.擴展引用微軟.VisualStudio.QualityTools.UnitTestFramework。
 
 請參閱[使用 IntelliTest 產生單元測試](../../test/generate-unit-tests-for-your-code-with-intellitest.md)來了解所產生測試的儲存位置。 產生的測試程式碼應該包含測試，如下列程式碼所示：
 
@@ -99,11 +99,11 @@ public void HelloWorldThrowsException167()
 
 本節描述 IntelliTest 的限制：
 
-* [非決定性](#nondeterminism)
-* [並行](#concurrency)
+* [不具決定性](#nondeterminism)
+* [併發](#concurrency)
 * [原生 .NET 程式碼](#native-code)
 * [平台](#platform)
-* [Language](#language)
+* [語言](#language)
 * [符號推理](#symbolic-reasoning)
 * [堆疊追蹤](#incorrect-stack-traces)
 
@@ -118,7 +118,7 @@ IntelliTest 可控制提供給[參數化單元測試](test-generation.md#paramet
 
 此外，如果在重新執行程式時來自外部來源的值變更，則程式也會被視為不具決定性。 在這種情況下，IntelliTest 會失去對程式執行的控制權，因此其搜尋變得沒有效率。
 
-有時候此發生狀況並不明顯。 請參考下列範例：
+有時候此發生狀況並不明顯。 請思考一下以下範例：
 
 * **GetHashCode()** 方法的結果是由 Unmanaged 程式碼提供，而且無法預測。
 * **System.Random** 類別會使用目前的系統時間來提供真正的隨機值。
@@ -135,11 +135,11 @@ IntelliTest 不了解原生程式碼，例如透過 **P/Invoke** 呼叫的 x86 �
 
 建議的因應措施是具備這類方法位於動態組件之類型中的測試模式。 不過，即使某些方法未經檢測，IntelliTest 還是會盡可能嘗試涵蓋已檢測的程式碼。
 
-### <a name="platform"></a>Platform
+### <a name="platform"></a>平台
 
 只有 X86 32 位元 .NETframework 才支援 IntelliTest。
 
-### <a name="language"></a>語言
+### <a name="language"></a>Language
 
 基本上，IntelliTest 可分析以任何 .NET 語言撰寫的任意 .NET 程式。 不過，它在 Visual Studio 中只支援 C#。
 
@@ -151,7 +151,7 @@ IntelliTest 會使用自動[條件約束規劃求解](input-generation.md#constr
 
 因為 IntelliTest 會捕捉並「重新擲回」每個已檢測方法中的例外狀況，所以堆疊追蹤的行號不正確。 這是「重新擲回」指示設計的限制。
 
-## <a name="further-reading"></a>進一步閱讀
+## <a name="further-reading"></a>深入閱讀
 
 * [簡介部落格文章](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/)。
 * [使用 IntelliTest 為程式碼產生單元測試](../../test/generate-unit-tests-for-your-code-with-intellitest.md)

@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
 ms.openlocfilehash: 2503040e074a62422d4c7c904f5ad3a2bd84d6c1
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631025"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 中的新功能
@@ -42,7 +42,7 @@ MSBuild 現在已可當作 [.NET Core SDK](https://www.microsoft.com/net/downloa
 
 - [Project 元素](../msbuild/project-element-msbuild.md)有新的 `SDK` 屬性。 而 `Xmlns` 屬性現在是選擇性的。 如需有關 `SDK` 屬性的詳細資訊，請參閱[如何：使用 MSBuild 專案 SDK](../msbuild/how-to-use-project-sdk.md)、[套件、中繼套件和架構](/dotnet/core/packages)，以及[適用於 .NET Core 之 csproj 格式的新增項目](/dotnet/core/tools/csproj)。
 - 目標外的 [Item 元素](../msbuild/item-element-msbuild.md)有新的 `Update` 屬性。 此外，已經移除對 `Remove` 屬性的限制。
-- *Directory.Build.props* 是使用者定義的檔案，可讓您自訂目錄下的專案。 除非屬性 *設為*false`ImportDirectoryBuildTargets`，否則系統會從 **Microsoft.Common.props** 自動匯入這個檔案。 *Directory.Build.targets* 是由 *Microsoft.Common.targets* 匯入的。
+- *目錄.Build.props*是一個使用者定義的檔，為目錄下的專案提供自訂。 除非屬性 `ImportDirectoryBuildTargets` 設為 **false**，否則系統會從 *Microsoft.Common.props* 自動匯入這個檔案。 *Directory.Build.targets* 是由 *Microsoft.Common.targets* 匯入的。
 - 任何未與目前屬性清單衝突的中繼資料，您即可選擇將其表示為屬性。 如需詳細資訊，請參閱 [Item 元素](../msbuild/item-element-msbuild.md)。
 
 ## <a name="new-property-functions"></a>新的屬性函式

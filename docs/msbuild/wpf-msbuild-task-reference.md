@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77630843"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 工作參考
@@ -37,35 +37,35 @@ Windows Presentation Foundation (WPF) 建置程序會擴充 Microsoft Build Engi
 
 - [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)
 
- 如果專案中至少有一個 XAML 頁面參考該專案中本機宣告的類型，則會產生元件。 建置流程完成之後，或如果建置流程失敗，都會將產生的組件移除。
+ 如果專案中至少有一個 XAML 頁引用在該專案中本地聲明的類型，則生成程式集。 建置流程完成之後，或如果建置流程失敗，都會將產生的組件移除。
 
 - [GetWinFXPath](../msbuild/getwinfxpath-task.md)
 
- 傳回目前 .NET Framework 執行時間的目錄。
+ 返回當前 .NET 框架運行時的目錄。
 
 - [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)
 
- 將不可當地語系化的 XAML 專案檔案轉換成編譯的二進位格式。
+ 將不可當地語系化的 XAML 專案檔案轉換為編譯的二進位格式。
 
 - [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)
 
- 在參考相同專案中類型的 XAML 檔案上執行第二階段標記編譯。
+ 對引用同一專案中類型的 XAML 檔執行二次標記編譯。
 
 - [MergeLocalizationDirectives](../msbuild/mergelocalizationdirectives-task.md)
 
- 將一或多個 XAML 二進位格式檔案的當地語系化屬性和批註，合併成整個元件的單一檔案。
+ 將一個或多個 XAML 二進位格式檔的當地語系化屬性和注釋合併到整個程式集的單個檔中。
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- 將一或多個資源（ *.jpg*、 *.ico*、 *.Bmp*、二進位格式的 XAML，以及其他副檔名類型）內嵌到 *.resources*檔案中。
+ 將一個或多個資源（.jpg、.ico、.bmp、二進位格式的 XAML 和其他擴展類型）嵌入到 *.resources*檔中。* * *.ico* *.bmp*
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
- 檢查、更新或移除唯一識別碼（Uid），以將來源 XAML 檔案中包含的所有 XAML 元素當地語系化。
+ 檢查、更新或刪除唯一識別碼 （UiD）， 以便當地語系化源 XAML 檔中包含的所有 XAML 元素。
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- 建立 XAML 瀏覽器應用程式（XBAP）專案時，將 **\<hostInBrowser/>** 元素新增至應用程式資訊清單（ *\<專案名稱 >. .exe. manifest*）。
+ 在生成 XAML 瀏覽器應用程式 （XBAP） 專案時，將**\<主機InBrowser />** 元素添加到應用程式清單（*\<專案名稱>.exe.manifest）。*
 
 ## <a name="see-also"></a>另請參閱
 

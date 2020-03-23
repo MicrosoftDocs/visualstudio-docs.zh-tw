@@ -12,35 +12,35 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3eb813dc5d4389b002851a904d61219b0d5c316e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593638"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>如何：將應用程式組態檔新增至 C# 專案
 
-您可以將應用程式組態檔 (app.config 檔案) 新增至 C# 專案，以自訂通用語言執行平台尋找及載入組件檔的方式。 如需應用程式組態檔的詳細資訊，請參閱[執行階段如何找出組件 (.NET Framework)](/dotnet/framework/deployment/how-the-runtime-locates-assemblies)。
+您可以將應用程式組態檔 (app.config** 檔案) 新增至 C# 專案，以自訂通用語言執行平台尋找及載入組件檔的方式。 如需應用程式組態檔的詳細資訊，請參閱[執行階段如何找出組件 (.NET Framework)](/dotnet/framework/deployment/how-the-runtime-locates-assemblies)。
 
 > [!NOTE]
-> UWP 應用程式不包含 app.config 檔案。
+> UWP 應用程式不包含 app.config** 檔案。
 
-當您建置專案時，開發環境會自動複製您的 app.config 檔案，並將複本的檔案名稱變更為符合可執行檔的名稱，然後移動到 **bin** 目錄。
+當您建置專案時，開發環境會自動複製您的 app.config** 檔案，並將複本的檔案名稱變更為符合可執行檔的名稱，然後移動到 **bin** 目錄。
 
 ## <a name="to-add-an-application-configuration-file-to-a-c-project"></a>將應用程式組態檔加入 C# 專案
 
-1. 在功能表列中，選擇 [專案] > [加入新項目]。
+1. 在功能表列上，選擇 **"專案** > **添加新專案**"。
 
-     [新增項目] 對話方塊隨即出現。
+     [加入新項目] **** 對話方塊隨即出現。
 
-1. 展開 [已安裝] > [Visual C# 項目]，然後選擇 [應用程式組態檔] 範本。
+1. 展開**已安裝** > **的視覺化 C# 項**，然後選擇**應用程式佈建檔**範本。
 
-1. 在 [名稱] 文字方塊中，輸入名稱，然後選擇 [新增] 按鈕。
+1. 在 [名稱]**** 文字方塊中，輸入名稱，然後選擇 [新增]**** 按鈕。
 
      名為 *app.config* 的檔案會新增至專案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [管理應用程式設定 (.NET)](../ide/managing-application-settings-dotnet.md)
+- [管理應用程式設置 （.NET）](../ide/managing-application-settings-dotnet.md)
 - [組態檔結構描述 (.NET Framework)](/dotnet/framework/configure-apps/file-schema/index)
 - [設定應用程式 (.NET Framework)](/dotnet/framework/configure-apps/index)

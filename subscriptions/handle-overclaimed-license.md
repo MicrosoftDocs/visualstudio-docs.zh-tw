@@ -7,16 +7,16 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: 了解系統管理員如何解決過度分派訂閱的問題
 ms.openlocfilehash: 6773196d914306b7e18fe31ce06cc0cd89783ffd
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78410279"
 ---
 # <a name="overallocated-subscriptions"></a>超額配置的訂用帳戶
 有時，在新增訂閱者之後訂單也有所變更，而可能導致已指派的訂閱數超過公司所擁有的授權數。 這稱為「過度分派」。  
 
-若要查看您的訂用帳戶配置，請按一下左側的上方圖示，以開啟 [配置] 窗格。  
+要查看子腳本分配，請按一下左側的頂部圖示以打開分配窗格。  
 
 > [!NOTE]
 > Open License 方案不允許過度分派。  此外，其他程式在入口網站中可能會以不同的方式顯示此資訊。
@@ -24,7 +24,7 @@ ms.locfileid: "78410279"
 > [!div class="mx-imgBorder"]
 > ![過度領取的訂閱通知](_img/over-claimed/over-claimed-alert.png)
 
-請注意，顯示會使用雜湊的橫條來表示過度分配的訂閱。  所有訂用帳戶類型的過度配置數目包含在頂端的 [總覽] 區段中，而且每個訂用帳戶層級也會顯示自己的配置狀態。  
+請注意，顯示幕使用雜湊條指示分配過度的訂閱。  所有訂閱類型的超額分配數包含在頂部的"概述"部分中，每個訂閱級別還顯示其自己的分配狀態。  
 
 ## <a name="resolve-overallocated-subscriptions"></a>解決過度分派的訂閱
 有幾個方式可以解決過度分派：
@@ -41,11 +41,11 @@ ms.locfileid: "78410279"
 > 客戶必須負責確保指派的每個 GitHub 訂用帳戶都對應一個含 GitHub 的 Visual Studio 訂用帳戶 (在管理入口網站中指派)，以保持符合這個訂用帳戶的授權需求。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 - 深入了解如何管理[含 GitHub Enterprise 的 Visual Studio 訂用帳戶](assign-github.md)。
-- 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 有關視覺工作室訂閱的銷售、訂閱、帳戶和計費説明，請聯繫視覺化工作室[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。

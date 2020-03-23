@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409431"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79303418"
 ---
 # <a name="framework-targeting-overview"></a>Framework 目標概觀
 
@@ -47,13 +47,13 @@ Framework 目標包括下列功能：
 
 當您使用以舊版 Framework 為目標的專案時，Visual Studio 會動態地變更開發環境，如下所示：
 
-- 它會篩選 [新增新項目] 對話方塊、[新增參考] 對話方塊，以及 [新增服務參考] 對話方塊中的項目，以省略目標版本中未提供的選項。
+- 它會篩選 [新增新項目]**** 對話方塊、[新增參考]**** 對話方塊，以及 [新增服務參考]**** 對話方塊中的項目，以省略目標版本中未提供的選項。
 
-- 它會在有多個控制項可供使用時，篩選 [工具箱] 中的自訂控制項，以移除目標版本中未提供的控制項，只顯示最新版控制項。
+- 它會在有多個控制項可供使用時，篩選 [工具箱]**** 中的自訂控制項，以移除目標版本中未提供的控制項，只顯示最新版控制項。
 
 - 它會篩選 **IntelliSense** 以省略目標版本中未提供的語言功能。
 
-- 它會篩選 [屬性] 視窗中的屬性，以省略目標版本中未提供的屬性。
+- 它會篩選 [屬性]**** 視窗中的屬性，以省略目標版本中未提供的屬性。
 
 - 它會篩選功能表選項，以省略目標版本中未提供的選項。
 
@@ -65,7 +65,7 @@ Framework 目標包括下列功能：
 
 ## <a name="select-a-target-framework-version"></a>選取目標 Framework 版本
 
-當您建立 .NET Framework 專案時，您可以在選取專案範本後選取目標 .NET Framework 版本。 可用架構的清單包含適用於所選取範本類型的已安裝之架構版本。 針對非 .NET Framework 的專案範本 (例如 .NET Core 範本)，系統會隱藏 [Framework] 下拉式清單。
+當您建立 .NET Framework 專案時，您可以在選取專案範本後選取目標 .NET Framework 版本。 可用架構的清單包含適用於所選取範本類型的已安裝之架構版本。 針對非 .NET Framework 的專案範本 (例如 .NET Core 範本)，系統會隱藏 [Framework]**** 下拉式清單。
 
 ::: moniker range="vs-2017"
 
@@ -83,18 +83,18 @@ Framework 目標包括下列功能：
 
 在現有 Visual Basic、C# 或 F# 專案中，您可以在 [專案屬性] 對話方塊中變更目標 .NET 版本。 如需如何變更 C++ 專案之目標版本的資訊，請改為參閱[如何修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
 
-1. 在 [方案總管] 中，開啟您所要變更專案的右鍵功能表，然後選擇 [屬性]。
+1. 在 [方案總管]**** 中，開啟您所要變更專案的右鍵功能表，然後選擇 [屬性]****。
 
-1. 在 [屬性] 視窗的左欄中，選擇 [應用程式] 索引標籤。
+1. 在 **"屬性"** 視窗的左列中，選擇"**應用程式**"選項卡。
 
    ![[專案屬性應用程式] 索引標籤](../ide/media/vs_slnexplorer_properties_applicationtab.png)
 
    > [!NOTE]
    > 在建立 UWP 應用程式之後，就無法變更 Windows 或 .NET 的目標版本。
 
-1. 在 [目標 Framework] 清單中，選擇您要的版本。
+1. 在 [目標 Framework]**** 清單中，選擇您要的版本。
 
-1. 在出現的驗證對話方塊中，選擇 [是] 按鈕。
+1. 在出現的驗證對話方塊中，選擇 [是]**** 按鈕。
 
    專案將會卸載。 當您重新載入專案時，它會以您剛剛選擇的 .NET 版本為目標。
 
@@ -112,7 +112,7 @@ Framework 目標包括下列功能：
 
 若要設定目標 .NET 版本，您必須先安裝適當的組件參考。 您可以在 [.NET 下載](https://www.microsoft.com/net/download/windows) \(英文\) 頁面上下載不同 .NET 版本的開發人員套件。
 
-針對 .NET Framework 專案，[新增參考] 對話方塊會停用與目標 .NET Framework 版本無關的系統組件，如此一來就不會不慎將那些系統組件新增至專案。 （系統元件是包含在 .NET Framework 版本中的 *.dll*檔案）。屬於高於目標版本之 framework 版本的參考將無法解析，而且不能加入相依于這類參考的控制項。 如果您想要啟用這類參考，請將專案的 .NET Framework 目標重設為包含參考的目標。
+針對 .NET Framework 專案，[新增參考]**** 對話方塊會停用與目標 .NET Framework 版本無關的系統組件，如此一來就不會不慎將那些系統組件新增至專案。 （系統程式集是 .NET 框架版本中包含的 *.dll*檔。屬於高於目標版本的框架版本的引用將無法解決，並且無法添加依賴于此類引用的控制項。 如果您想要啟用這類參考，請將專案的 .NET Framework 目標重設為包含參考的目標。
 
 如需組件參考的詳細資訊，請參閱[在設計階段時解析組件](../msbuild/resolving-assemblies-at-design-time.md)。
 
@@ -122,6 +122,6 @@ Framework 目標包括下列功能：
 
 ## <a name="see-also"></a>另請參閱
 
-- [目標架構](/dotnet/standard/frameworks)
+- [目標框架](/dotnet/standard/frameworks)
 - [多目標 (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [如何：修改目標 Framework 和平台工具組 (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [如何：修改目標框架和平臺工具集（C++）](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
