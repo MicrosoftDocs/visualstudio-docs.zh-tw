@@ -1,5 +1,5 @@
 ---
-title: 註冊和取消註冊 Vspackage |Microsoft Docs
+title: 註冊和取消註冊 VS 包 |微軟文檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 701700ba9d5c6db1e5858a2419e1b2c0fa950ae5
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409140"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79303180"
 ---
-# <a name="register-and-unregister-vspackages"></a>註冊和取消註冊 Vspackage
-您可以使用屬性來註冊 VSPackage，但是
+# <a name="register-and-unregister-vspackages"></a>註冊和取消註冊 VS 包
+您可以使用屬性註冊 VSPackage，但
 
-## <a name="register-a-vspackage"></a>註冊 VSPackage
- 您可以使用屬性來控制 managed Vspackage 的註冊。 所有註冊資訊都包含在 *.pkgdef*檔案中。 如需以檔案為基礎之註冊的詳細資訊，請參閱[CreatePkgDef 公用程式](../extensibility/internals/createpkgdef-utility.md)。
+## <a name="register-a-vspackage"></a>註冊 VS 包
+ 您可以使用屬性來控制託管 VSPackages 的註冊。 所有註冊資訊都包含在 *.pkgdef*檔中。 有關基於檔的註冊的詳細資訊，請參閱[CreatePkgDef 實用程式](../extensibility/internals/createpkgdef-utility.md)。
 
- 下列程式碼顯示如何使用標準註冊屬性來註冊您的 VSPackage。
+ 以下代碼演示如何使用標準註冊屬性來註冊 VSPackage。
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -35,16 +35,16 @@ public sealed class BasicPackage : Package
 }
 ```
 
-## <a name="unregister-an-extension"></a>取消註冊擴充功能
- 如果您已經試驗過許多不同的 Vspackage，而且想要從實驗實例中移除它們，您只要執行**Reset**命令即可。 在電腦的 [開始] 頁面上，尋找 [**重設 Visual Studio 實驗實例**]，或從命令列執行此命令：
+## <a name="unregister-an-extension"></a>取消登錄延伸模組
+ 如果您一直在試驗許多不同的 VSPackages，並希望從實驗實例中刪除它們，則可以運行 **"重置"** 命令。 在電腦的起始頁上查找**重置視覺化工作室實驗實例**，或從命令列運行此命令：
 
 ```cmd
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe" /Reset /VSInstance=14.0 /RootSuffix=Exp
 ```
 
- 如果您想要卸載 Visual Studio 的開發實例上已安裝的擴充功能，請移至 [**工具**] > [**擴充功能和更新**]，尋找擴充功能，然後按一下 [**卸載**]。
+ 如果要卸載在 Visual Studio 的開發實例上安裝的擴展，請轉到 **"工具** > **擴展"和"更新**"，查找擴展，然後按一下"**卸載**"。
 
- 如果基於某些原因，這些方法在卸載擴充功能時都無法成功，您可以從命令列取消註冊 VSPackage 元件，如下所示：
+ 如果由於某種原因，這些方法都無法成功卸載擴展，則可以從命令列中取消註冊 VSPackage 程式集，如下所示：
 
 ```cmd
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\regpkg" /unregister <pathToVSPackage assembly>
@@ -52,13 +52,13 @@ public sealed class BasicPackage : Package
 
 <a name="using-a-custom-registration-attribute-to-register-an-extension"></a>
 
-## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>使用自訂註冊屬性來註冊擴充功能
+## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>使用自訂註冊屬性註冊擴展
 
-在某些情況下，您可能需要為您的擴充功能建立新的註冊屬性。 您可以使用註冊屬性來新增登錄機碼，或將新值新增至現有的金鑰。 新的屬性必須衍生自 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>，而且必須覆寫 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> 和 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> 方法。
+在某些情況下，您可能需要為擴展創建新的註冊屬性。 可以使用註冊屬性添加新登錄機碼或向現有鍵添加新值。 新屬性必須派生自<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>，並且必須重寫<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A>和 方法<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A>。
 
 ### <a name="create-a-custom-attribute"></a>建立自訂屬性
 
-下列程式碼顯示如何建立新的註冊屬性。
+以下代碼演示如何創建新的註冊屬性。
 
 ```csharp
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]
@@ -67,11 +67,11 @@ public class CustomRegistrationAttribute : RegistrationAttribute
 }
 ```
 
- <xref:System.AttributeUsageAttribute> 用於屬性類別，以指定屬性所需的程式專案（類別、方法等）、是否可以使用一次以上，以及是否可以繼承。
+ <xref:System.AttributeUsageAttribute>用於屬性類，以指定屬性相關的程式元素（類、方法等），是否可以多次使用該元素，以及是否可以繼承該元素。
 
-### <a name="create-a-registry-key"></a>建立登錄機碼
+### <a name="create-a-registry-key"></a>創建登錄機碼
 
-在下列程式碼中，自訂屬性會在要註冊之 VSPackage 的索引鍵底下建立**自訂**子機碼。
+在以下代碼中，自訂屬性在正在註冊的 VSPackage 的金鑰下創建**自訂**子鍵。
 
 ```csharp
 public override void Register(RegistrationAttribute.RegistrationContext context)
@@ -95,9 +95,9 @@ public override void Unregister(RegistrationContext context)
 }
 ```
 
-### <a name="create-a-new-value-under-an-existing-registry-key"></a>在現有的登錄機碼下建立新的值
+### <a name="create-a-new-value-under-an-existing-registry-key"></a>在現有登錄機碼下創建新值
 
-您可以將自訂值新增至現有的金鑰。 下列程式碼示範如何將新值新增至 VSPackage 註冊金鑰。
+您可以將自訂值添加到現有鍵。 以下代碼演示如何向 VSPackage 註冊金鑰添加新值。
 
 ```csharp
 public override void Register(RegistrationAttribute.RegistrationContext context)

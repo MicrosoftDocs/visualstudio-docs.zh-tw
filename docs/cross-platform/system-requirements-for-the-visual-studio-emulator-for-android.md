@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f1462769a4ba9929a000bca998c1fe3708908798
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272047"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android 的系統需求
@@ -28,7 +28,7 @@ Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 
 > [!IMPORTANT]
 > 模擬器的安裝程式會檢查執行 Visual Studio Emulator for Android 的必要條件。 如果必要條件不存在，則會顯示警告，但安裝時不需要這些必要條件。
 
-## <a name="Checklist"></a> 快速檢查清單
+## <a name="quick-checklist"></a><a name="Checklist"></a>快速清單
 
 以下是 Visual Studio Emulator for Android 執行需求的快速檢查清單。 如需詳細資訊，請參閱本主題中的後續章節。
 
@@ -81,7 +81,7 @@ Hyper-V 需求
 
 - DHCP
 
-   模擬器需要 DHCP，因為它會將本身設定為網路上具有本身 IP 位址的個別裝置。
+   模擬器需要 DHCP，因為它會將本身設定為網路上具有自己的 IP 位址的個別裝置。
 
 - 自動設定的 DNS 和閘道設定
 
@@ -89,7 +89,7 @@ Hyper-V 需求
 
   若要疑難排解模擬器中的網路問題，請參閱下列主題：
 
-- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+- [進行 Android 版 Visual Studio 模擬器的疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
 ## <a name="hyper-v-requirements"></a>Hyper-V 需求
 
@@ -109,8 +109,8 @@ Windows 中的 Hyper-V 需求
 
 |需求|如何檢查和啟用此需求|
 |-----------------|----------------------------------------------|
-|必須安裝 Hyper-V|遵循 [啟用適用於 Windows Phone 模擬器的 HYPER-V](/previous-versions/windows/apps/jj863509(v=vs.105))所使用的相同指示。<br /><br /> 在 [服務] 嵌入式管理單元中，檢查 [Hyper-V 虛擬機器管理] 服務的狀態。|
-|必須執行 Hyper-V。|如需管理服務的詳細資訊，請參閱下列主題：<br /><br /> -   [啟動、停止、暫停、繼續或重新啟動服務](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [設定如何啟動服務](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
+|必須安裝 Hyper-V|遵循 [啟用適用於 Windows Phone 模擬器的 HYPER-V](/previous-versions/windows/apps/jj863509(v=vs.105))所使用的相同指示。<br /><br /> 在 [服務] 嵌入式管理單元中，檢查 [Hyper-V 虛擬機器管理] **** 服務的狀態。|
+|必須執行 Hyper-V。|如需管理服務的詳細資訊，請參閱下列主題：<br /><br /> -   [啟動、停止、暫停、繼續或重新啟動服務](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [佈建服務啟動方式](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  您必須是本機 Hyper-V Administrators 群組的成員。
 
@@ -121,7 +121,7 @@ Windows 中的 Hyper-V 需求
 > [!IMPORTANT]
 > 加入此群組之後，請登出或重新開機，以讓變更生效。
 
- ![加入「Hyper-v&#45;系統管理員」安全性群組](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![加入超級&#45;V 管理員安全性群組](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  若要手動將您自己加入群組，請開啟 [本機使用者和群組] 嵌入式管理單元。
 

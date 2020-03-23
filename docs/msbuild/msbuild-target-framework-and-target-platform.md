@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633196"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目標 Framework 和目標平台
 
-您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」，以及特定軟體架構的「目標平台」上執行。  例如，您可以在目標為 .NET Framework 2.0 以及與 802x86 處理器系列 ("x86") 相容的 32 位元平台上，執行應用程式。 目標 Framework 和目標平台的組合稱為「目標內容」。
+您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」**，以及特定軟體架構的「目標平台」** 上執行。  例如，您可以在目標為 .NET Framework 2.0 以及與 802x86 處理器系列 ("x86") 相容的 32 位元平台上，執行應用程式。 目標 Framework 和目標平台的組合稱為「目標內容」**。
 
 > [!IMPORTANT]
 > 本文說明指定目標 Framework 的舊方式。 SDK 樣式專案可啟用不同的 TargetFrameworks，例如 netstandard。 如需詳細資訊，請參閱[目標 Framework](/dotnet/standard/frameworks)。
@@ -30,13 +30,13 @@ ms.locfileid: "77633196"
 
 - .NET Framework 2.0 (包含在 Visual Studio 2005 中)
 
-- .NET Framework 3.0 （包含在 Windows Vista 中）
+- .NET 框架 3.0（包含在 Windows Vista 中）
 
-- .NET Framework 3.5 （包含在 Visual Studio 2008）
+- .NET 框架 3.5 （包含在 2008 年視覺工作室中）
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4.6 （包含在 Visual Studio 2015）
+- .NET 框架 4.6 （包含在 2015 年視覺工作室中）
 
 - .NET Framework 4.6.1
 
@@ -58,10 +58,10 @@ ms.locfileid: "77633196"
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
 ```
 
- 「目標設定檔」是目標 Framework 的子集。 例如，.NET Framework 4 用戶端設定檔不包含 MSBuild 組件的參考。
+ 「目標設定檔」** 是目標 Framework 的子集。 例如，.NET Framework 4 用戶端設定檔不包含 MSBuild 組件的參考。
 
  > [!NOTE]
- > 目標設定檔僅適用于[可移植的類別庫](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)。
+ > 目標設定檔僅適用于[可擕式類庫](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)。
 
  目標設定檔是在專案檔的 `TargetFrameworkProfile` 屬性中指定。 您可以在 IDE 中，使用專案屬性頁中的目標 Framework 控制項來變更目標設定檔。
 
@@ -72,7 +72,7 @@ ms.locfileid: "77633196"
 
 ## <a name="target-platform"></a>目標平台
 
- 「平台」是定義特定執行階段環境的軟硬體組合。 例如：
+ 「平台」** 是定義特定執行階段環境的軟硬體組合。 例如，
 
 - `x86` 指定在 Intel 80x86 處理器或其對等項目上執行的 32 位元 Windows 作業系統。
 
@@ -80,7 +80,7 @@ ms.locfileid: "77633196"
 
 - `Xbox` 指定 Microsoft Xbox 360 平台。
 
-「目標平台」是建置專案以在其上方執行的目標特定平台。 目標平台是在專案檔的 `PlatformTarget` 建置屬性中指定。 您可以在 IDE 中，使用專案屬性頁或 [組態管理員] 來變更目標平台。
+「目標平台」** 是建置專案以在其上方執行的目標特定平台。 目標平台是在專案檔的 `PlatformTarget` 建置屬性中指定。 您可以在 IDE 中，使用專案屬性頁或 [組態管理員]**** 來變更目標平台。
 
 ```xml
 <PropertyGroup>
@@ -89,7 +89,7 @@ ms.locfileid: "77633196"
 
 ```
 
-「目標組態」是目標平台的子集。 例如，`x86``Debug` 組態不包含大部分的程式碼最佳化。 目標組態是在專案檔的 `Configuration` 建置屬性中指定。 您可以使用專案屬性頁或 [組態管理員] 來變更目標組態。
+「目標組態」** 是目標平台的子集。 例如，`x86``Debug` 組態不包含大部分的程式碼最佳化。 目標組態是在專案檔的 `Configuration` 建置屬性中指定。 您可以使用專案屬性頁或 [組態管理員]**** 來變更目標組態。
 
 ```xml
 <PropertyGroup>

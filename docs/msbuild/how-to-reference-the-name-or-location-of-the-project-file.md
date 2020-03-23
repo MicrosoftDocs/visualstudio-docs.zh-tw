@@ -17,23 +17,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b54a63b135f844ff20b45ffac430662c4df1f19
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633833"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
 
-您可以在專案檔中使用專案的名稱或位置，而不需建立自己的屬性。 MSBuild 提供的保留屬性會參考專案檔名稱，以及與專案相關的其他屬性。 如需保留屬性的詳細資訊，請參閱 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
+您可以在專案檔中使用專案的名稱或位置，而不需建立自己的屬性。 MSBuild 提供引用專案檔案名和與專案相關的其他屬性的保留屬性。 如需保留屬性的詳細資訊，請參閱 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
 
 ## <a name="use-the-project-properties"></a>使用專案屬性
 
- MSBuild 提供一些保留的屬性，可讓您在專案檔中使用，而不需每次都定義它們。 例如，保留的屬性 `MSBuildProjectName` 提供專案檔名的參考。 保留的屬性 `MSBuildProjectDirectory` 提供專案檔案位置的參考。
+ MSBuild 提供了一些保留屬性，可以在專案檔案中使用，而無需每次都定義它們。 例如，保留的屬性 `MSBuildProjectName` 提供專案檔名的參考。 保留的屬性 `MSBuildProjectDirectory` 提供專案檔案位置的參考。
 
 #### <a name="to-use-the-project-properties"></a>使用專案屬性
 
-- 使用 $() 標記法來參考專案檔中的屬性，就像您使用其他屬性一樣。 例如，
+- 使用 $() 標記法來參考專案檔中的屬性，就像您使用其他屬性一樣。 例如：
 
   ```xml
   <CSC Sources = "@(CSFile)"
@@ -43,7 +43,7 @@ ms.locfileid: "77633833"
 
   使用保留屬性的一個優點是，會自動併入對專案檔名所做的任何變更。 當您下一次建置專案時，輸出檔將具備新名稱，而您不需採取任何進一步動作。
 
-  如需在檔案或專案參考中使用特殊字元的詳細資訊，請參閱[MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)。
+  有關在檔或專案引用中使用特殊字元的詳細資訊，請參閱[MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)。
 
 > [!NOTE]
 > 您無法在專案檔中重新定義保留的屬性。
@@ -91,7 +91,7 @@ ms.locfileid: "77633833"
 </Project>
 ```
 
-此範例會使用[屬性](property-functions.md)函式語法來呼叫靜態 .NET Framework 方法 <xref:System.IO.Path.Combine*?displayProperty=fullName>。
+該示例使用[屬性函數](property-functions.md)語法調用靜態 .NET 框架方法<xref:System.IO.Path.Combine*?displayProperty=fullName>。
 
 ## <a name="see-also"></a>另請參閱
 

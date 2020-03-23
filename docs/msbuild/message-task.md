@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78865358"
 ---
 # <a name="message-task"></a>Message 工作
@@ -35,18 +35,18 @@ ms.locfileid: "78865358"
 
 |參數|描述|
 |---------------|-----------------|
-|`Importance`|選擇性的 `String` 參數。<br /><br /> 指定訊息的重要性。 這個參數可以具有 `high`、 `normal` 或 `low`的值。 預設值是 `normal`。|
+|`Importance`|選擇性的 `String` 參數。<br /><br /> 指定訊息的重要性。 此參數的值可以是 `high`、`normal` 或 `low`。 預設值是 `normal`。|
 |`Text`|選擇性的 `String` 參數。<br /><br /> 要記錄的錯誤文字。|
 
 ## <a name="remarks"></a>備註
 
- `Message` 工作可讓 MSBuild 專案在建立程式的不同步驟中，將訊息發行到記錄器。
+ 該`Message`任務允許 MSBuild 專案在生成過程中的不同步驟向記錄器發送消息。
 
  如果 `Condition` 參數評估為 `true`，將會記錄 `Text` 參數的值，而建置將會繼續執行。 如果 `Condition` 參數不存在，便會記錄訊息文字。 如需有關記錄的詳細資訊，請參閱[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)。
 
- 根據預設，訊息會傳送至所有已註冊的記錄器。 記錄器會解譯 `Importance` 參數。 當記錄器詳細資訊設定為 <xref:Microsoft.Build.Framework.LoggerVerbosity>時，通常會傳送設定為 `high` 的訊息。`Minimal` 。 當記錄器詳細資訊設定為 <xref:Microsoft.Build.Framework.LoggerVerbosity>時，就會傳送設定為 `low` 的訊息。`Detailed`。
+ 預設情況下，消息將發送到所有已註冊的記錄器。 記錄器會解譯 `Importance` 參數。 通常，當記錄器詳細性`high`設置為<xref:Microsoft.Build.Framework.LoggerVerbosity>時，將發送設置為 的消息集。`Minimal` 。 當記錄器詳細性`low`設置為<xref:Microsoft.Build.Framework.LoggerVerbosity>時，將發送一條消息集。`Detailed`.
 
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
 
@@ -64,5 +64,5 @@ ms.locfileid: "78865358"
 
 ## <a name="see-also"></a>另請參閱
 
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)
 - [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)

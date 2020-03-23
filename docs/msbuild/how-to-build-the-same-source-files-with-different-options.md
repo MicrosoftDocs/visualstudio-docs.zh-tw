@@ -14,25 +14,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c31da244e5c264bb81498c6091aefce7e6318bb2
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633937"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同選項來建置相同的原始程式檔
 
-當您建置專案時，經常會以不同的組建選項編譯相同的元件。 例如，您可以建立含有符號資訊的偵錯組建，或是不含符號資訊但已啟用最佳化的發行組建。 或者，您可以建立要在特定平臺（例如 x86 或 x64）上執行的專案。 在這些情況下，大部分的建置選項都會保持不變。只會變更某些選項來控制組建組態。 使用 MSBuild，您可以使用屬性和條件來建立不同的組建設定。
+當您建置專案時，經常會以不同的組建選項編譯相同的元件。 例如，您可以建立含有符號資訊的偵錯組建，或是不含符號資訊但已啟用最佳化的發行組建。 或者，您可以生成要在特定平臺上運行的專案，例如 x86 或 x64。 在這些情況下，大部分的建置選項都會保持不變。只會變更某些選項來控制組建組態。 使用 MSBuild，您可以使用屬性和條件創建不同的組建組態。
 
-## <a name="use-properties-to-control-build-settings"></a>使用屬性來控制組建設定
+## <a name="use-properties-to-control-build-settings"></a>使用屬性控制生成設置
 
-`Property` 項目會定義要在專案檔中多次參考的變數 (例如暫存目錄的位置)，或設定要在數個組態中使用的屬性值 (例如偵錯組建和發行組建)。 如需屬性的詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
+`Property` 項目會定義要在專案檔中多次參考的變數 (例如暫存目錄的位置)，或設定要在數個組態中使用的屬性值 (例如偵錯組建和發行組建)。 有關屬性的詳細資訊，請參閱[MSBuild 屬性](../msbuild/msbuild-properties.md)。
 
-您可以使用屬性來變更組建的組態，而不需變更專案檔。 `Condition` 項目和 `Property` 項目的 `PropertyGroup` 屬性 (Attribute) 可讓您變更屬性 (Property) 的值。 如需 MSBuild 條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。
+您可以使用屬性來變更組建的組態，而不需變更專案檔。 `Property` 項目和 `PropertyGroup` 項目的 `Condition` 屬性 (Attribute) 可讓您變更屬性 (Property) 的值。 有關 MSBuild 條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。
 
-### <a name="to-set-a-group-of-properties-that-depends-on-another-property"></a>若要設定相依于另一個屬性的屬性群組
+### <a name="to-set-a-group-of-properties-that-depends-on-another-property"></a>設置依賴于另一個屬性的屬性組
 
-- 以如下方式使用 `Condition` 項目中的 `PropertyGroup` 屬性：
+- 以如下方式使用 `PropertyGroup` 項目中的 `Condition` 屬性：
 
   ```xml
   <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">
@@ -41,9 +41,9 @@ ms.locfileid: "77633937"
   </PropertyGroup>
   ```
 
-### <a name="to-define-a-property-that-depends-on-another-property"></a>定義相依于另一個屬性的屬性
+### <a name="to-define-a-property-that-depends-on-another-property"></a>定義依賴于其他屬性的屬性
 
-- 以如下方式使用 `Condition` 項目中的 `Property` 屬性：
+- 以如下方式使用 `Property` 項目中的 `Condition` 屬性：
 
   ```xml
   <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>
@@ -51,11 +51,11 @@ ms.locfileid: "77633937"
 
 ## <a name="specify-properties-on-the-command-line"></a>在命令列上指定屬性
 
-一旦將您的專案檔編寫為可接受多個組態之後，您就必須能夠在每次建置專案時變更這些設定。 MSBuild 可讓您使用 **-property**或 **-p**參數，在命令列上指定屬性，藉此提供這項功能。
+一旦將您的專案檔編寫為可接受多個組態之後，您就必須能夠在每次建置專案時變更這些設定。 MSBuild 通過允許在命令列上使用 **-property**或 **-p**開關指定屬性來提供此功能。
 
 ### <a name="to-set-a-project-property-at-the-command-line"></a>在命令列中設定專案屬性
 
-- 使用 **-property** 參數搭配屬性和屬性值。 例如，
+- 使用 **-屬性**開關與屬性和屬性值。 例如：
 
   ```cmd
   msbuild file.proj -property:Flavor=Debug
@@ -69,7 +69,7 @@ ms.locfileid: "77633937"
 
 ### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>在命令列中指定多個專案屬性
 
-- 多次使用 **-property** 或 **-p** 參數搭配屬性和屬性值，或使用一個 **-property** 或 **-p** 參數，並以分號 (;) 分隔多個屬性。 例如，
+- 將 **-property**或 **-p**開關與屬性和屬性值多次使用，或使用一**個 -屬性**或 **-p**開關，並使用分號分隔多個屬性（;)。 例如：
 
   ```cmd
   msbuild file.proj -p:Flavor=Debug;Platform=x86
@@ -81,7 +81,7 @@ ms.locfileid: "77633937"
   msbuild file.proj -p:Flavor=Debug -p:Platform=x86
   ```
 
-  環境變數也會被視為屬性，並由 MSBuild 自動合併。 如需使用環境變數的詳細資訊，請參閱[如何︰在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。
+  環境變數也被視為屬性，MSBuild 會自動合併。 有關使用環境變數的詳細資訊，請參閱[如何：在生成中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。
 
   命令列上指定的屬性值優先於針對專案檔中相同屬性設定的任何值，而位於專案檔中的值會優先於環境變數中的值。
 
@@ -192,4 +192,4 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 - [MSBuild](../msbuild/msbuild.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
-- [Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md)
+- [專案元素（MSBuild）](../msbuild/project-element-msbuild.md)

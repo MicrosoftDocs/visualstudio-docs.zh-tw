@@ -10,15 +10,15 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: f4caebfdc4e61b683e0f1407d1522f6da2328fcf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591069"
 ---
 # <a name="how-to-create-project-templates"></a>如何：建立專案範本
 
-本主題示範如何使用 [匯出範本精靈] 建立範本，此精靈會將您的範本封裝在 *.zip* 檔案中。
+本主題示範如何使用 [匯出範本精靈]**** 建立範本，此精靈會將您的範本封裝在 *.zip* 檔案中。
 
 ## <a name="use-the-export-template-wizard"></a>使用 [匯出範本精靈]
 
@@ -29,25 +29,25 @@ ms.locfileid: "75591069"
 
 2. 編輯專案，直到它準備好匯出成範本。 例如，您可能想要編輯程式碼檔案，指出應該執行參數取代的地方。 請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
 
-3. 選擇 [專案] 功能表上的 [匯出範本]。
+3. 在 **"專案**"功能表上，選擇 **"匯出範本**"。
 
-   [匯出範本精靈] 隨即開啟。
+   將打開 **"匯出範本嚮導**"。
 
-4. 在 [選擇範本類型] 頁面上，選取 [專案範本]。 選取您想要匯出至範本的專案，然後選擇 [下一步]。
+4. 在 [選擇範本類型]**** 頁面上，選取 [專案範本]****。 選取您想要匯出至範本的專案，然後選擇 [下一步]****。
 
 ::: moniker range="vs-2017"
 
-5. 在 [選取範本選項] 頁面上，輸入範本的名稱和選擇性描述、圖示和預覽影像。 這些項目會出現在 [新增專案] 對話方塊中。 選擇 [完成]。
+5. 在 [選取範本選項]**** 頁面上，輸入範本的名稱和選擇性描述、圖示和預覽影像。 這些項目會出現在 [新增專案]**** 對話方塊中。 選擇 [完成]****。
 
    專案會匯出成 *.zip* 檔案並放在指定的輸出位置，且如果選取，則會匯入到 Visual Studio。
 
-若要在 [新增專案] 對話方塊中尋找您的範本，請展開 [已安裝]，然後展開對應至 *.vstemplate* 檔案之 `ProjectType` 項目的類別。 例如，包含 `<ProjectType>CSharp</ProjectType>` 的 *.vstemplate* 檔案預設出現在 [已安裝] > [Visual C#] 下。 您可以將範本整理成專案類型的子目錄，只要在該目錄中建立資料夾，然後放入您範本的 *.zip* 檔案即可。 如需詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+若要在 [新增專案]**** 對話方塊中尋找您的範本，請展開 [已安裝]****，然後展開對應至 *.vstemplate* 檔案之 `ProjectType` 項目的類別。 例如，包含 `<ProjectType>CSharp</ProjectType>` 的 *.vstemplate* 檔案預設出現在 [已安裝]**** > [Visual C#]**** 下。 您可以將範本整理成專案類型的子目錄，只要在該目錄中建立資料夾，然後放入您範本的 *.zip* 檔案即可。 如需詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. 在 [選取範本選項] 頁面上，輸入範本的名稱和選擇性描述、圖示和預覽影像。 這些項目會出現在您建立新專案的對話方塊中。 選擇 [完成]。
+5. 在 [選取範本選項]**** 頁面上，輸入範本的名稱和選擇性描述、圖示和預覽影像。 這些項目會出現在您建立新專案的對話方塊中。 選擇 [完成]****。
 
    專案會匯出成 *.zip* 檔案並放在指定的輸出位置，且如果選取，則會匯入到 Visual Studio。
 
@@ -59,10 +59,10 @@ ms.locfileid: "75591069"
 
 您可以將構成專案的檔案收集在一個資料夾中，然後使用合適的中繼資料建立 *.vstemplate* XML 檔案，以手動方式建立專案範本。 如需詳細資訊，請參閱[如何：以手動方式建立網站範本](../ide/how-to-manually-create-web-templates.md)。
 
-如已安裝 Visual Studio SDK，可以使用 [VSIX 專案] 範本，將完成的範本包裝成 VSIX 檔進行部署。 如需詳細資訊，請參閱[開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)。
+如已安裝 Visual Studio SDK，可以使用 [VSIX 專案]**** 範本，將完成的範本包裝成 VSIX 檔進行部署。 如需詳細資訊，請參閱[開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
-- [如何：建立項目範本](../ide/how-to-create-item-templates.md)
+- [創建專案和專案範本](../ide/creating-project-and-item-templates.md)
+- [如何：創建專案範本](../ide/how-to-create-item-templates.md)
 - [開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)

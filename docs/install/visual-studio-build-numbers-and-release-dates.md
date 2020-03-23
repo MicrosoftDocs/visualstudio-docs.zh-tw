@@ -5,18 +5,18 @@ description: Visual Studio 已發行版本和組件編號的清單，依日期�
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/02/2020
+ms.date: 03/16/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3e82ab35143a4987df1340fd75f0125c955e6c3d
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: d41ccfc4092795cdf942d42910cfe0a33baa5593
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235063"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437631"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -26,8 +26,12 @@ ms.locfileid: "78235063"
 
 下表列出 Visual Studio 2019 迄今為止的組建編號和發行日期。
 
-| **版本**| **通路** | **發行日期** | **組建版本** |
+| **版本**| **通路** | **發佈日期** | **生成版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.6.0 | Preview 1 | 2020年3月16日 | 16.6.29911.98 |
+| 16.5.0 | 版本 | 2020年3月16日 | 16.5.29911.84 |
+| 16.4.6 | 版本 | 2020年3月10日  | 16.4.29905.134 |
+| 16.0.12 | 版本 | 2020年3月10日 | 16.0.28803.697 |
 | 16.5.0 | Preview 5 | 2020年3月2日 | 16.5.29827.131 |
 | 16.5.0 | Preview 4 | 2020年2月25日 | 16.5.29820.132 |
 | 16.5.0 | Preview 3 | 2020 年 2 月 19 日 | 16.5.29814.53 |
@@ -124,8 +128,9 @@ ms.locfileid: "78235063"
 
 下表列出 Visual Studio 2017 迄今為止的組建編號和發行日期。
 
-| **版本**| **通路** | **發行日期** | **組建版本** |
+| **版本**| **通路** | **發佈日期** | **生成版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.21 | 版本 | 2020年3月10日 | 15.9.28307.1064 |
 | 15.9.20 | 版本 | 2020 年 2 月 11 日 | 15.9.28307.1033 |
 | 15.9.19 | 版本 | 2020 年 1 月 14 日 | 15.9.28307.1000 |
 | 15.0.28 | 版本 | 2019 年 12 月 11 日 | 15.0.26228.102 |
@@ -299,7 +304,7 @@ ms.locfileid: "78235063"
 
 ## <a name="see-also"></a>另請參閱
 
-* [Visual Studio 發行節奏](/visualstudio/productinfo/release-rhythm/)
+* [視覺工作室釋放節奏](/visualstudio/productinfo/release-rhythm/)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [偵測及管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)
+* [使用命令列參數安裝視覺化工作室](use-command-line-parameters-to-install-visual-studio.md)
+* [用於偵測及管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)

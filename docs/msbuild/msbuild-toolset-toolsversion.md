@@ -14,20 +14,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633118"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 
-MSBuild 使用工作、目標和工具的工具組建置應用程式。 通常，MSBuild 工具組包含一個*microsoft 一般*的工作檔案、一個*microsoft 一般的 .targets*檔案，以及像是*printbrm.exe*和*vbc*等的編譯器。 大部分的工具組都可用來將應用程式編譯為多個版本的 .NET Framework 和多個系統平台。 不過，MSBuild 2.0 工具組僅能以 .NET Framework 2.0 為使用目標。
+MSBuild 使用工作、目標和工具的工具組建置應用程式。 通常，MSBuild Toolset 包括*microsoft.common.tasks*檔 *、microsoft.common.target*檔以及編譯器（如*csc.exe*和*vbc.exe）。* 大部分的工具組都可用來將應用程式編譯為多個版本的 .NET Framework 和多個系統平台。 不過，MSBuild 2.0 工具組僅能以 .NET Framework 2.0 為使用目標。
 
 ## <a name="toolsversion-attribute"></a>ToolsVersion 屬性
 
 ::: moniker range=">=vs-2019"
- 在專案檔之 `ToolsVersion`Project[ 項目的 ](../msbuild/project-element-msbuild.md) 屬性中指定工具組。 下列範例會指定應該使用 MSBuild "Current" 工具組來建置專案。
+ 在專案檔之 [Project](../msbuild/project-element-msbuild.md) 項目的 `ToolsVersion` 屬性中指定工具組。 下列範例會指定應該使用 MSBuild "Current" 工具組來建置專案。
 
 ```xml
 <Project ToolsVersion="Current" ... </Project>
@@ -36,7 +36,7 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 通常�
 ::: moniker-end
 
 ::: moniker range="vs-2017"
- 在專案檔之 `ToolsVersion`Project[ 項目的 ](../msbuild/project-element-msbuild.md) 屬性中指定工具組。 下列範例會指定應該使用 MSBuild 15.0 工具組組建專案。
+ 在專案檔之 [Project](../msbuild/project-element-msbuild.md) 項目的 `ToolsVersion` 屬性中指定工具組。 下列範例會指定應該使用 MSBuild 15.0 工具組組建專案。
 
 ```xml
 <Project ToolsVersion="15.0" ... </Project>
@@ -55,15 +55,15 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 通常�
 
  從 Visual Studio 2013 開始，MSBuild 工具組版本就與 Visual Studio 版本號碼相同。 MSBuild 預設為 Visual Studio 中的這個工具組，且位於命令列上，與專案檔中指定的工具組版本無關。  您可以使用 -ToolsVersion 旗標覆寫此行為。 如需詳細資訊，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。
 
- 在下列範例中，MSBuild 會使用 *保留屬性，尋找*Microsoft.CSharp.targets`MSBuildToolsPath` 檔案。
+ 在下列範例中，MSBuild 會使用 `MSBuildToolsPath` 保留屬性，尋找 *Microsoft.CSharp.targets* 檔案。
 
 ```xml
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- 透過定義自訂工具組，您就可以修改 `MSBuildToolsPath` 的值。 如需詳細資訊，請參閱[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)。
+ 透過定義自訂工具組，您就可以修改 `MSBuildToolsPath` 的值。 有關詳細資訊，請參閱[標準和自訂工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)。
 
- 當您在命令列上建置方案並針對 `ToolsVersion`msbuild.exe*指定* 時，所有專案及其專案對專案相依性都會根據該 `ToolsVersion` 建置，即使方案中的每個專案都指定其自己的 `ToolsVersion` 也是如此。 若要根據專案來定義 `ToolsVersion` 值，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。
+ 當您在命令列上建置方案並針對 *msbuild.exe* 指定 `ToolsVersion` 時，所有專案及其專案對專案相依性都會根據該 `ToolsVersion` 建置，即使方案中的每個專案都指定其自己的 `ToolsVersion` 也是如此。 若要根據專案來定義 `ToolsVersion` 值，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。
 
  `ToolsVersion` 屬性也用於專案移轉。 例如，如果您在 Visual Studio 2010 中開啟 Visual Studio 2008 專案，則會上傳專案檔，以包括 ToolsVersion="4.0"。 如果您隨後嘗試在 Visual Studio 2008 中開啟該專案，它不會識別已升級的 `ToolsVersion`，因此會像該屬性仍設為 3.5 那樣建置專案。
 
@@ -87,7 +87,7 @@ MSBuild 會提供兩種方法來存取工具組：
 
 - 透過使用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 方法
 
-工具組屬性會指定工具的路徑。 自 Visual Studio 2017 起，MSBuild 不再具有固定位置。 根據預設，其位於相對於 Visual Studio 安裝位置的 *MSBuild\15.0\Bin* 資料夾。 在先前的版本中，MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值來尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果 `ToolsVersion` 的值為 `12.0`，MSBuild 會根據以下登錄機碼設定工具組屬性：**HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**。
+工具組屬性會指定工具的路徑。 自 Visual Studio 2017 起，MSBuild 不再具有固定位置。 預設情況下，它位於*MSBuild_15.0_Bin*資料夾中，相對於 Visual Studio 安裝位置。 在先前的版本中，MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值來尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果`ToolsVersion`值`12.0`為 ，則 MSBuild 會根據此登錄機碼設置工具集屬性 **：HKLM_軟體_Microsoft_MSBuild_ToolsVersions_12.0**。
 
  以下為工具組屬性：
 
@@ -134,5 +134,5 @@ MSBuild 會提供 `ToolLocationHelper` 方法的多載，這些方法可加入 `
 
 ## <a name="see-also"></a>另請參閱
 
-- [標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)
+- [標準和自訂工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)
 - [多目標](../msbuild/msbuild-multitargeting-overview.md)

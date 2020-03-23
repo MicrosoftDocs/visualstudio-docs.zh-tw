@@ -10,10 +10,10 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633820"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略工作中的錯誤
@@ -22,11 +22,11 @@ ms.locfileid: "77633820"
 
 ## <a name="use-the-continueonerror-attribute"></a>使用 ContinueOnError 屬性
 
-`ContinueOnError` 項目的 `Task` 屬性可控制當工作失敗發生時，建置是否要停止或繼續。 此屬性也可控制當組建繼續時，是否要將錯誤視為錯誤或警告。
+`Task` 項目的 `ContinueOnError` 屬性可控制當工作失敗發生時，建置是否要停止或繼續。 此屬性也可控制當組建繼續時，是否要將錯誤視為錯誤或警告。
 
 `ContinueOnError` 屬性可包含一或多個下列值：
 
-- **WarnAndContinue** 或 **true**。 當工作失敗時，[Target](../msbuild/target-element-msbuild.md) 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為警告。
+- **WarnAndContinue** 或 **true**。 當任務失敗時[，Target](../msbuild/target-element-msbuild.md)元素和生成中的後續任務將繼續執行，並且任務中的所有錯誤都被視為警告。
 
 - **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。
 
@@ -38,7 +38,7 @@ ms.locfileid: "77633820"
 
 #### <a name="to-ignore-an-error-in-a-task"></a>忽略工作中的錯誤
 
-使用工作的 `ContinueOnError` 屬性。 例如，
+使用工作的 `ContinueOnError` 屬性。 例如：
 
 ```xml
 <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
@@ -67,5 +67,5 @@ ms.locfileid: "77633820"
 ## <a name="see-also"></a>另請參閱
 
 - [MSBuild](../msbuild/msbuild.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

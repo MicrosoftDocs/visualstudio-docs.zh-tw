@@ -1,6 +1,6 @@
 ---
-title: 分析 CPU 使用量資料（ASP.NET Core）
-description: 使用 CPU 使用量診斷工具，測量 ASP.NET Core 應用程式中的應用程式效能
+title: 分析 CPU 使用率資料（ASP.NET核心）
+description: 使用 CPU 使用方式診斷工具測量 ASP.NET 核心應用中的應用性能
 ms.custom: mvc
 ms.date: 02/14/2020
 ms.topic: quickstart
@@ -12,58 +12,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 367d789513e8ac220566cb4e451bcea015ec5a2a
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: bb1d5fc769254f112e3a4cb757b173e0dbded3bb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77275078"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79550098"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料（ASP.NET Core）
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>快速入門：在視覺化工作室（ASP.NET核心）中分析 CPU 使用率資料
 
 Visual Studio 提供許多功能強大的功能，可協助您分析應用程式中的效能問題。 本主題提供了解一些基本功能的快速方法。 在這裡，我們會查看工具，找出因高 CPU 使用量而造成的效能瓶頸。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
 
-診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果這裡所述的 [CPU 使用量] 工具未提供您所需的資料，則[其他分析工具](../profiling/profiling-feature-tour.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。
+診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果這裡所述的 [CPU 使用量]**** 工具未提供您所需的資料，則[其他分析工具](../profiling/profiling-feature-tour.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。
 
-Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具] 視窗)。 在 Windows 7 及更新版本，您可以使用事後分析工具：[效能分析工具](../profiling/profiling-feature-tour.md).
+Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具]**** 視窗)。 在 Windows 7 及更新版本，您可以使用事後分析工具：[效能分析工具](../profiling/profiling-feature-tour.md).
 
 ## <a name="create-a-project"></a>建立專案
 
-1. 開啟 Visual Studio 並建立專案。
+1. 打開視覺化工作室並創建專案。
 
    ::: moniker range="vs-2017"
-   從頂端功能表列中 **，選擇 [** 檔案] > [**新增**>**專案**]。
+   從頂端功能表列中，選擇 [檔案]** [新增]** > ** [專案]** > ****。
 
-   在左窗格的 [**新增專案**] 對話方塊中，展開 **[ C#視覺效果**]，然後選擇 [ **Web**]。 在中間窗格中，選擇 [ **ASP.NET Web 應用程式（.Net Core）** ]。 然後將專案命名為*MyProfilingApp_MVC*。
+   在左側窗格中的 **"新專案**"對話方塊中，展開**Visual C#，** 然後選擇**Web**。 在中間窗格中，選擇**ASP.NET Web 應用程式 （.NET Core）**。 然後MyProfilingApp_MVC*命名專案。*
 
    > [!NOTE]
-   > 如果您看不到 [ **ASP.NET Web 應用程式（.Net Core）** ] 專案範本，請選擇 [**新增專案**] 對話方塊左窗格中的 [**開啟 Visual Studio 安裝程式**] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
+   > 如果未看到 ASP.NET Web**應用程式 （.NET Core）** 專案範本，請選擇 **"新專案**"對話方塊左側窗格中的 **"打開視覺化工作室安裝程式"** 連結。 Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發]**** 工作負載，然後選擇 [修改]****。
 
-   在出現的對話方塊中，選擇中間窗格中的 [MVC]，然後按一下 [確定]。
+   在出現的對話方塊中，選擇中間窗格中的 [MVC]****，然後按一下 [確定]****。
    ::: moniker-end
    ::: moniker range="vs-2019"
-   如果 [開始] 視窗未開啟，請**選擇 [** 檔案] > [**開始視窗]** 。
+   如果啟動視窗未打開，請選擇 **"檔**>**開始視窗**"。
 
-   在開始視窗中，選擇 [建立新專案]。
+   在啟動視窗中，選擇 **"創建新專案**"。
 
-   在 [**建立新專案**] 視窗的 [搜尋] 方塊中，輸入或鍵入*asp.net* 。 接下來，從語言清單中選擇 **C#** ，然後從平台清單中選擇 **Windows**。
+   在"**創建新專案**"視窗中，在搜索框中輸入或鍵入*asp.net。* 接下來，從語言清單中選擇 **C#**，然後從平台清單中選擇 **Windows**。
 
-   套用語言和平臺篩選器之後，請選擇 [ **ASP.NET Web 應用程式（.Net Core）** ] 範本，然後選擇 [**下一步]** 。
+   應用語言和平臺篩選器後，選擇**ASP.NET Web 應用程式 （.NET Core）** 範本，然後選擇 **"下一步**"。
 
    > [!NOTE]
-   > 如果您看不到 [ **ASP.NET Web 應用程式（.Net Core）** ] 範本，您可以從 [**建立新專案**] 視窗進行安裝。 在 [找不到你要尋找的項目嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。 然後，在 Visual Studio 安裝程式中選擇 **ASP.NET 與網頁程式開發**工作負載。
+   > 如果未看到**ASP.NET Web 應用程式 （.NET Core）** 範本，則可以從 **"創建新專案"** 視窗安裝該範本。 在 [找不到您要找的資料嗎?]**** 訊息中，選擇 [安裝更多工具和功能]**** 連結。 然後，在 Visual Studio 安裝程式中選擇 **ASP.NET 與網頁程式開發**工作負載。
 
-   在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中鍵入或輸入*MyProfilingApp_MVC* 。 接著，選擇 [建立]。
+   在"**配置新專案**"視窗中，在 **"專案名稱**"框中鍵入或輸入*MyProfilingApp_MVC。* 然後，選擇 **"創建**"。
 
-   在出現的視窗中，選擇 [ **Web 應用程式（模型-視圖控制器）** ]，然後選擇 [**建立**]。
+   在顯示的視窗中，選擇**Web 應用程式（模型-視圖-控制器），** 然後選擇 **"創建**"。
 
    ::: moniker-end
 
    Visual Studio 會隨即開啟您的新專案。
 
-1. 在方案總管中，以滑鼠右鍵按一下 Models 資料夾，然後選擇 [新增] > [類別]。
+1. 在"解決方案資源管理器"中，按右鍵"模型"資料夾並選擇 **"添加** > **類**"。
 
-1. 將新的類別命名為 `Data.cs`，然後選擇 [新增]。
+1. 將新的類別命名為 `Data.cs`，然後選擇 [新增]****。
 
 1. 在方案總管中，開啟 `Models/Data.cs`，然後將下列 `using` 陳述式新增至檔案頂端：
 
@@ -149,7 +149,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
     }
     ```
 
-1. 在 [方案總管] 中，開啟 *Controller/HomeControllers.cs*，並取代下列程式碼：
+1. 在解決方案資源管理器中，打開*控制器/HomeController.cs*並替換以下代碼：
 
    ::: moniker range="vs-2017"
 
@@ -211,31 +211,33 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
      ![設定中斷點進行分析](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
-    > [!TIP]
-    > 藉由設定兩個中斷點，您可以將資料收集的範圍限制在您想分析的程式碼部分。
+    藉由設定兩個中斷點，您可以將資料收集的範圍限制在您想分析的程式碼部分。
 
-1. 除非您關閉 [診斷工具] 視窗，否則該視窗已出現。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。
+    >[!TIP]
+    > 當在中斷點或代碼步進操作暫停時，您還可以使用[PerfTips](../profiling/perftips.md)分析性能。
 
-1. 按一下 [偵錯] > [開始偵錯] (或工具列上的 [開始] 或 **F5**)。
+1. 除非您關閉 [診斷工具]**** 視窗，否則該視窗已出現。 要再次打開視窗，請按一下 **"調試** > **視窗** > **顯示診斷工具**"。
 
-1. 當應用程式完成載入時，請按一下網頁頂端的適當連結，開始執行新的程式碼。
+1. 按一下 **"調試** > **開始調試**"（或工具列上**啟動**）或**F5**。
+
+1. 應用完成載入後，按一下網頁頂部的相應連結以開始運行新代碼。
 
    ::: moniker range="vs-2017"
-   在 Visual Studio 2017 中，按一下 [**關於**] 連結以執行程式碼。
+   在 Visual Studio 2017 中，按一下 **"關於"** 連結以運行代碼。
    ::: moniker-end
    ::: moniker range="vs-2019"
-   在 Visual Studio 2019 中，按一下 [**隱私權**] 連結以執行程式碼。
+   在 Visual Studio 2019 中，按一下**隱私**連結以運行代碼。
    ::: moniker-end
 
-1. 請查看 [診斷工具] 的 [摘要] 檢視。
+1. 請查看 [診斷工具] 的 [摘要]**** 檢視。
 
-1. 當偵錯工具暫停時，啟用 CPU 使用量資料的收集，方法是選擇 [記錄 CPU 分析]，然後開啟 [CPU 使用量] 索引標籤。
+1. 當偵錯工具暫停時，請啟用 CPU 使用量資料的收集，方法是選擇 [記錄 CPU 分析]****，然後開啟 [CPU 使用量]**** 索引標籤。
 
      ![診斷工具啟用 CPU 分析](../profiling/media/quickstart-cpu-usage-summary.png)
 
      啟用資料收集時，記錄按鈕會顯示紅色圓圈。
 
-     當您選擇 [記錄 CPU 分析] 時，Visual Studio 就會開始錄製您的函式以及它們所需的執行時間，也會提供您可以用來專注於取樣工作階段特定區段的時間軸圖表。只有在應用程式於中斷點停止時，您才能檢視這個收集的資料。
+     當您選擇 [記錄 CPU 分析]**** 時，Visual Studio 就會開始錄製您的函式以及它們所需的執行時間，也會提供您可以用來專注於取樣工作階段特定區段的時間軸圖表。只有在應用程式於中斷點停止時，您才能檢視這個收集的資料。
 
 6. 按 F5 使應用程式執行至第二個中斷點。
 
@@ -243,7 +245,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
      程式碼剖析工具隨即開始準備執行緒資料。 等候它完成。
 
-     [CPU 使用量] 工具會在 [CPU Usage (CPU 使用量)] 索引標籤中顯示報告。
+     [CPU 使用量] 工具會在 [CPU Usage (CPU 使用量)]**** 索引標籤中顯示報告。
 
      此時，您可以開始分析資料。
 
@@ -260,24 +262,24 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
 2. 在函式清單中，按兩下 `MyProfilingApp_MVC.Models.ServerClass::GetNumber` 函式。
 
-    當您按兩下函式時，[呼叫端/被呼叫端] 檢視會在左窗格中開啟。
+    當您按兩下函式時，[呼叫端/被呼叫端]**** 檢視會在左窗格中開啟。
 
     ![診斷工具的呼叫端/被呼叫端檢視](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
-    在此檢視中，選取的函式會出現在標題和 [目前的函式] 方塊中 (在此範例中為 `ServerClass::GetNumber`)。 呼叫目前函式的函式顯示在左邊的 [Calling Function (呼叫的函式)] 下方，而目前函式所呼叫的任何函式會顯示在右邊的 [Called Functions (所呼叫函式)] 方塊。 (您可以選取任一個方塊來變更目前的函式。)
+    在此檢視中，選取的函式會出現在標題和 [目前的函式]**** 方塊中 (在此範例中為 `ServerClass::GetNumber`)。 呼叫目前函式的函式顯示在左邊的 [Calling Function (呼叫的函式)]**** 下方，而目前函式所呼叫的任何函式會顯示在右邊的 [Called Functions (所呼叫函式)]**** 方塊。 (您可以選取任一個方塊來變更目前的函式。)
 
     此檢視會顯示總時間 (毫秒) 及完成函式所需時間在整體應用程式執行時間所佔的百分比。
 
-    [函式主體] 也會顯示函式主體所花費的總時間 (和時間百分比)，不包括呼叫的函式和所呼叫函式所花的時間。 (在此圖中，2235 毫秒中的 2220 毫秒花在函式主體，其餘時間 (< 20 毫秒) 則花在此函式所呼叫的外部程式碼)。 實際值會根據您的環境而不同。
+    [函式主體]**** 也會顯示函式主體所花費的總時間 (和時間百分比)，不包括呼叫的函式和所呼叫函式所花的時間。 (在此圖中，2235 毫秒中的 2220 毫秒花在函式主體，其餘時間 (< 20 毫秒) 則花在此函式所呼叫的外部程式碼)。 實際值會根據您的環境而不同。
 
     > [!TIP]
-    > [函式主體] 值高可能表示函式本身內有效能瓶頸。
+    > [函式主體]**** 值高可能表示函式本身內有效能瓶頸。
 
 ## <a name="next-steps"></a>後續步驟
 
 - [分析記憶體使用量](../profiling/memory-usage.md)以找出效能瓶頸。
 - [分析 CPU 使用量](../profiling/cpu-usage.md)以取得 CPU 使用量工具的詳細深入資訊。
-- 不附加偵錯工具或是以執行中的應用程式為目標來分析 CPU 使用量。如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)中的[收集分析資料但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+- 不附加偵錯工具或是以執行中的應用程式為目標來分析 CPU 使用量。如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[收集分析資料但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
 
 ## <a name="see-also"></a>另請參閱
 

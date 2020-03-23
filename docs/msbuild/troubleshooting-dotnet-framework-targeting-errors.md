@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 1c496fd457e80220bb2ea4a2f032cef9508d9dcb
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631597"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>針對 .NET Framework 目標錯誤進行疑難排解
@@ -34,11 +34,11 @@ ms.locfileid: "77631597"
 
 ## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework"></a>您將專案的目標重定為不同版本的 .NET Framework
 
- 如果您變更您應用程式的 .NET Framework 目標版本，Visual Studio 會自動變更一些參考，但您可能需要手動更新其他參考。 例如，如果您將應用程式變更為以 .NET Framework 3.5 Service Pack 1 為目標，而該應用程式的資源或設定依賴 .NET Framework 4 的用戶端設定檔，則可能會發生上述其中一個錯誤。
+ 如果您變更您應用程式的 .NET Framework 目標版本，Visual Studio 會自動變更一些參考，但您可能需要手動更新其他參考。 例如，如果將應用程式更改為目標 .NET 框架 3.5 服務包 1，並且該應用程式具有依賴于 .NET 框架 4 的用戶端設定檔的資源或設置，則可能發生上述錯誤之一。
 
- 若要解決應用程式設定，請開啟 [方案總管]，選擇 [顯示所有檔案]，然後在 Visual Studio 的 XML 編輯器中編輯 *app.config* 檔案。 將設定中的版本變更為符合 .NET Framework 的適當版本。 例如，您可以將版本設定從 4.0.0.0 變更為 2.0.0.0。 同樣地，針對加入資源的應用程式，請開啟 [方案總管]，選擇 [顯示所有檔案] 按鈕，展開 [我的專案] (Visual Basic) 或 [屬性] (C#)，然後在 Visual Studio 的 XML 編輯器中編輯 *Resources.resx* 檔案。 將版本設定從 4.0.0.0 變更為 2.0.0.0。
+ 若要解決應用程式設定，請開啟 [方案總管]****，選擇 [顯示所有檔案]****，然後在 Visual Studio 的 XML 編輯器中編輯 *app.config* 檔案。 將設定中的版本變更為符合 .NET Framework 的適當版本。 例如，您可以將版本設定從 4.0.0.0 變更為 2.0.0.0。 同樣地，針對加入資源的應用程式，請開啟 [方案總管]****，選擇 [顯示所有檔案]**** 按鈕，展開 [我的專案]**** (Visual Basic) 或 [屬性]**** (C#)，然後在 Visual Studio 的 XML 編輯器中編輯 *Resources.resx* 檔案。 將版本設定從 4.0.0.0 變更為 2.0.0.0。
 
- 如果您的應用程式具有資源 (例如圖示或點陣圖) 或設定 (例如資料連接字串)，您也可以透過在 [專案設計工具] 的 [設定] 頁面上移除所有的項目，然後重新加入必要的設定來解決錯誤。
+ 如果您的應用程式具有資源 (例如圖示或點陣圖) 或設定 (例如資料連接字串)，您也可以透過在 [專案設計工具]**** 的 [設定]**** 頁面上移除所有的項目，然後重新加入必要的設定來解決錯誤。
 
 ## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework-and-references-do-not-resolve"></a>您將專案的目標重定為不同版本的 .NET Framework 後無法解析參考
 
@@ -59,7 +59,7 @@ ms.locfileid: "77631597"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：以 .NET Framework 的版本為目標](../ide/visual-studio-multi-targeting-overview.md)
+- [如何：將 .NET Framework 的某個版本設定為目標](../ide/visual-studio-multi-targeting-overview.md)
 - [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile)
 - [Framework 目標概觀](../ide/visual-studio-multi-targeting-overview.md)
 - [多目標](../msbuild/msbuild-multitargeting-overview.md)

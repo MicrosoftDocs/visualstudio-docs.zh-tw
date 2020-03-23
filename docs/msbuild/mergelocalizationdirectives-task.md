@@ -19,30 +19,30 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c7699afeb09604a437aad091f9aaf9ce624d33e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633495"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 工作
 
-<xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> 工作會將一或多個 XAML 二進位格式檔案的當地語系化屬性和批註，合併成整個元件的單一檔案。
+該<xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives>任務將一個或多個 XAML 二進位格式檔的當地語系化屬性和注釋合併到整個程式集的單個檔中。
 
 ## <a name="task-parameters"></a>工作參數
 
 | 參數 | 描述 |
 |------------------------------| - |
-| `GeneratedLocalizationFiles` | 必要的 **ITaskItem[]** 參數。<br /><br /> 以 XAML 二進位格式指定個別檔案的當地語系化指示詞檔案清單。 |
+| `GeneratedLocalizationFiles` | 必需**的 ITaskItem]** 參數。<br /><br /> 以 XAML 二進位格式指定單個檔的當地語系化指令檔案清單。 |
 | `OutputFile` | 必要的 **String** 輸出參數。<br /><br /> 指定編譯的當地語系化指示詞組件的輸出路徑。 |
 
 ## <a name="remarks"></a>備註
 
-您可以將當地語系化屬性和批註加入至 XAML 內容。 有了 Windows Presentation Foundation （WPF）當地語系化支援，您可以去除當地語系化屬性和批註，並將其放在與所產生元件不同的*loc*檔案中。 您可以使用 **LocalizationPropertyStorage** 屬性來執行此動作。 如需當地語系化屬性和註解，以及 **LocalizationPropertyStorage** 的詳細資訊，請參閱[當地語系化屬性和註解](/dotnet/framework/wpf/advanced/localization-attributes-and-comments)。
+您可以將當地語系化屬性和注釋添加到 XAML 內容。 借助 Windows 演示文稿基礎 （WPF） 當地語系化支援，可以剝離當地語系化屬性和注釋，並將它們放在與生成的程式集分開的 *.loc*檔中。 您可以使用 **LocalizationPropertyStorage** 屬性來執行此動作。 如需當地語系化屬性和註解，以及 **LocalizationPropertyStorage** 的詳細資訊，請參閱[當地語系化屬性和註解](/dotnet/framework/wpf/advanced/localization-attributes-and-comments)。
 
 ## <a name="example"></a>範例
 
-下列範例會將數個 XAML 二進位格式檔案的當地語系化批註合併成單一的*loc*檔案。
+下面的示例將多個 XAML 二進位格式檔的當地語系化注釋合併到單個 *.loc*檔中。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -60,7 +60,7 @@ ms.locfileid: "77633495"
 ## <a name="see-also"></a>另請參閱
 
 - [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
-- [WPF MSBuild 工作參考](../msbuild/wpf-msbuild-task-reference.md)
+- [WPF MSBuild 任務引用](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
-- [MSBuild 工作參考](../msbuild/msbuild-task-reference.md)
+- [MSBuild 任務引用](../msbuild/msbuild-task-reference.md)
 - [建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

@@ -8,39 +8,39 @@ ms.workload:
 - multiple
 author: corob-msft
 ms.openlocfilehash: 8a71b6d406b7507930a5d1a7ce593a296220d5a6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278657"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
 
 本主題列出 `Microsoft::VisualStudio::CppUnitTestFramework` 命名空間的公用成員。 您可以使用這些 API 來撰寫以 Microsoft 原生單元測試架構為基礎的 C++ 單元測試。 本主題結尾有[使用範例](#example)。
 
-標頭和 lib 檔案位於 *\<Visual Studio 安裝資料夾 > \VC\Auxiliary\VS\UnitTest*。
+頭和lib檔位於 Visual * \<Studio 安裝資料夾>_VC_輔助_VS_UnitTest*。
 
 標頭和 lib 路徑會自動在原生測試專案中設定。
 
-## <a name="In_this_topic"></a> 本主題內容
+## <a name="in-this-topic"></a><a name="In_this_topic"></a>在本主題中
 
 [CppUnitTest.h](#cppUnitTest_h)
 
-- [建立測試類別和方法](#create_test_classes_and_methods)
+- [創建測試類和方法](#create_test_classes_and_methods)
 
-- [初始化和清除](#Initialize_and_cleanup)
+- [初始化和清理](#Initialize_and_cleanup)
 
   - [測試方法](#test_methods)
 
-  - [測試類別](#test_classes)
+  - [測試類](#test_classes)
 
   - [測試模組](#test_modules)
 
-- [建立測試屬性](#create_test_attributes)
+- [創建測試屬性](#create_test_attributes)
 
   - [測試方法屬性](#test_method_attributes)
 
-  - [測試類別屬性](#test_class_attributes)
+  - [測試類屬性](#test_class_attributes)
 
   - [測試模組屬性](#test_module_attributes)
 
@@ -48,7 +48,7 @@ ms.locfileid: "77278657"
 
     [CppUnitTestAssert.h](#cppUnitTestAssert_h)
 
-  - [一般判斷提示](#general_asserts)
+  - [一般斷言](#general_asserts)
 
     - [相等](#general_are_equal)
 
@@ -56,19 +56,19 @@ ms.locfileid: "77278657"
 
     - [相同](#general_are_same)
 
-    - [不相同](#general_are_not_same)
+    - [不一樣](#general_are_not_same)
 
-    - [為 Null](#general_is_null)
+    - [為空](#general_is_null)
 
-    - [不是 Null](#general_is_not_null)
+    - [不為空](#general_is_not_null)
 
-    - [為 True](#general_is_True)
+    - [是真的](#general_is_True)
 
-    - [為 False](#general_is_false)
+    - [是 false](#general_is_false)
 
     - [失敗](#general_Fail)
 
-  - [Windows 執行階段判斷提示](#winrt_asserts)
+  - [視窗運行時斷言](#winrt_asserts)
 
     - [相等](#winrt_are_equal)
 
@@ -76,27 +76,27 @@ ms.locfileid: "77278657"
 
     - [不相等](#winrt_are_not_equal)
 
-    - [不相同](#winrt_are_not_same)
+    - [不一樣](#winrt_are_not_same)
 
-    - [為 Null](#winrt_is_null)
+    - [為空](#winrt_is_null)
 
-    - [不是 Null](#winrt_is_not_null)
+    - [不為空](#winrt_is_not_null)
 
-  - [判斷提示例外狀況](#exception_asserts)
+  - [異常斷言](#exception_asserts)
 
-    - [預期例外狀況](#expect_exception)
+    - [預期異常](#expect_exception)
 
       [CppUnitTestLogger.h](#cppunittestlogger_h)
 
-    - [記錄器](#logger)
+    - [記錄](#logger)
 
-    - [寫入訊息](#write_message)
+    - [寫入消息](#write_message)
 
-  - [使用範例](#example)
+  - [使用示例](#example)
 
-## <a name="cppUnitTest_h"></a> CppUnitTest.h
+## <a name="cppunittesth"></a><a name="cppUnitTest_h"></a> CppUnitTest.h
 
-### <a name="create_test_classes_and_methods"></a> 建立測試類別和方法
+### <a name="create-test-classes-and-methods"></a><a name="create_test_classes_and_methods"></a> 建立測試類別和方法
 
 ```cpp
 TEST_CLASS(className)
@@ -113,9 +113,9 @@ TEST_METHOD(methodName)
 
 定義 *methodName* 為測試方法。 `TEST_METHOD` 必須在方法的類別範圍中宣告。
 
-### <a name="Initialize_and_cleanup"></a> 初始化和清除
+### <a name="initialize-and-cleanup"></a><a name="Initialize_and_cleanup"></a> 初始化和清除
 
-#### <a name="test_methods"></a> 測試方法
+#### <a name="test-methods"></a><a name="test_methods"></a>測試方法
 
 ```cpp
 TEST_METHOD_INITIALIZE(methodName)
@@ -135,7 +135,7 @@ TEST_METHOD_CLEANUP(methodName)
 
 定義 *methodName* 為每個測試方法執行之後要執行的方法。 `TEST_METHOD_CLEANUP` 只能在測試類別中定義一次，且必須在測試類別的範圍中定義。
 
-#### <a name="test_classes"></a> 測試類別
+#### <a name="test-classes"></a><a name="test_classes"></a> 測試類別
 
 ```cpp
 TEST_CLASS_INITIALIZE(methodName)
@@ -155,7 +155,7 @@ TEST_CLASS_CLEANUP(methodName)
 
 定義 *methodName* 為每個測試類別建立之後要執行的方法。 `TEST_CLASS_CLEANUP` 只能在測試類別中定義一次，且必須在測試類別的範圍中定義。
 
-#### <a name="test_modules"></a> 測試模組
+#### <a name="test-modules"></a><a name="test_modules"></a> 測試模組
 
 ```cpp
 TEST_MODULE_INITIALIZE(methodName)
@@ -172,9 +172,9 @@ TEST_MODULE_CLEANUP(methodName)
 
 定義卸載模組時要執行的方法 *methodName*。 `TEST_MODULE_CLEANUP` 只能在測試模組中定義一次，且必須在命名空間範圍中宣告。
 
-### <a name="create_test_attributes"></a> 建立測試屬性
+### <a name="create-test-attributes"></a><a name="create_test_attributes"></a> 建立測試屬性
 
-#### <a name="test_method_attributes"></a> 測試方法屬性
+#### <a name="test-method-attributes"></a><a name="test_method_attributes"></a>測試方法屬性
 
 ```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
@@ -187,7 +187,7 @@ END_TEST_METHOD_ATTRIBUTE()
 
 `TEST_METHOD_ATTRIBUTE` 巨集會以名稱 *attributeName* 和值 *attributeValue* 來定義屬性。
 
-#### <a name="test_class_attributes"></a> 測試類別屬性
+#### <a name="test-class-attributes"></a><a name="test_class_attributes"></a> 測試類別屬性
 
 ```cpp
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
@@ -200,7 +200,7 @@ END_TEST_CLASS_ATTRIBUTE()
 
 `TEST_CLASS_ATTRIBUTE` 巨集會以名稱 *attributeName* 和值 *attributeValue* 來定義屬性。
 
-#### <a name="test_module_attributes"></a> 測試模組屬性
+#### <a name="test-module-attributes"></a><a name="test_module_attributes"></a>測試模組屬性
 
 ```cpp
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
@@ -213,7 +213,7 @@ END_TEST_MODULE_ATTRIBUTE()
 
 `TEST_MODULE_ATTRIBUTE` 巨集會以名稱 *attributeName* 和值 *attributeValue* 來定義屬性。
 
-#### <a name="pre_defined_attributes"></a> 預先定義的屬性
+#### <a name="pre-defined-attributes"></a><a name="pre_defined_attributes"></a>預定義屬性
 
 這些預先定義的屬性巨集是提供來為常見案例提供方便性。 它們可以被上述巨集 `TEST_METHOD_ATTRIBUTE` 取代。
 
@@ -221,37 +221,37 @@ END_TEST_MODULE_ATTRIBUTE()
 TEST_OWNER(ownerAlias)
 ```
 
-以名稱 `TEST_METHOD_ATTRIBUTE` 和 `Owner`ownerAlias*的屬性值定義*。
+以名稱 `Owner` 和 *ownerAlias* 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
-以名稱 `TEST_METHOD_ATTRIBUTE` 和 `Description`description*的屬性值定義*。
+以名稱 `Description` 和 *description* 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
-以名稱 `TEST_METHOD_ATTRIBUTE` 和 `Priority`priority*的屬性值定義*。
+以名稱 `Priority` 和 *priority* 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
-以名稱 `TEST_METHOD_ATTRIBUTE` 和 `WorkItem`workItem*的屬性值定義*。
+以名稱 `WorkItem` 和 *workItem* 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
 
 ```cpp
 TEST_IGNORE()
 ```
 
-以名稱 `TEST_METHOD_ATTRIBUTE` 和 `Ignore` 的屬性值定義 `true`。
+以名稱 `Ignore` 和 `true` 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
 
-## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
+## <a name="cppunittestasserth"></a><a name="cppUnitTestAssert_h"></a>CppUnitTestAssert.h
 
-### <a name="general_asserts"></a> 一般判斷提示
+### <a name="general-asserts"></a><a name="general_asserts"></a> 一般判斷提示
 
-#### <a name="general_are_equal"></a> 相等
+#### <a name="are-equal"></a><a name="general_are_equal"></a> 相等
 確認兩個物件相等
 
 ```cpp
@@ -307,7 +307,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_are_not_equal"></a> 不相等
+#### <a name="are-not-equal"></a><a name="general_are_not_equal"></a> 不相等
 確認兩個雙精確度浮點數不相等
 
 ```cpp
@@ -363,7 +363,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_are_same"></a> 相同
+#### <a name="are-same"></a><a name="general_are_same"></a> 相同
 確認兩個參考會參考相同的物件執行個體 (識別)。
 
 ```cpp
@@ -375,7 +375,7 @@ static void Assert::AreSame(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_are_not_same"></a> 不相同
+#### <a name="are-not-same"></a><a name="general_are_not_same"></a> 不相同
 確認兩個參考未參考相同的物件執行個體 (識別)。
 
 ```cpp
@@ -387,7 +387,7 @@ static void Assert::AreNotSame (
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_is_null"></a> 為 Null
+#### <a name="is-null"></a><a name="general_is_null"></a>為空
 確認指標為 NULL。
 
 ```cpp
@@ -398,7 +398,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_is_not_null"></a> 不是 Null
+#### <a name="is-not-null"></a><a name="general_is_not_null"></a>不為空
 確認指標不是 NULL
 
 ```cpp
@@ -409,7 +409,7 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_is_True"></a> 為 True
+#### <a name="is-true"></a><a name="general_is_True"></a>是真的
 確認條件為 True
 
 ```cpp
@@ -419,7 +419,7 @@ static void Assert::IsTrue(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_is_false"></a> 為 False
+#### <a name="is-false"></a><a name="general_is_false"></a>是 false
 確認條件為 False
 
 ```cpp
@@ -429,7 +429,7 @@ static void Assert::IsFalse(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_Fail"></a> 失敗
+#### <a name="fail"></a><a name="general_Fail"></a>失敗
 強制測試案例結果為失敗
 
 ```cpp
@@ -438,9 +438,9 @@ static void Assert::Fail(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-### <a name="winrt_asserts"></a> Windows 執行階段判斷提示
+### <a name="windows-runtime-asserts"></a><a name="winrt_asserts"></a> Windows 執行階段判斷提示
 
-#### <a name="winrt_are_equal"></a> 相等
+#### <a name="are-equal"></a><a name="winrt_are_equal"></a> 相等
 確認兩個 Windows 執行階段的指標相等。
 
 ```cpp
@@ -463,7 +463,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_are_same"></a> 相同
+#### <a name="are-same"></a><a name="winrt_are_same"></a> 相同
 確認兩個 Windows 執行階段的參考參考相同的物件。
 
 ```cpp
@@ -475,7 +475,7 @@ static void Assert::AreSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_are_not_equal"></a> 不相等
+#### <a name="are-not-equal"></a><a name="winrt_are_not_equal"></a> 不相等
 確認兩個 Windows 執行階段的指標不相等。
 
 ```cpp
@@ -498,7 +498,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_are_not_same"></a> 不相同
+#### <a name="are-not-same"></a><a name="winrt_are_not_same"></a> 不相同
 確認兩個 Windows 執行階段參考未參考相同的物件。
 
 ```cpp
@@ -510,7 +510,7 @@ static void Assert::AreNotSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_is_null"></a> 為 Null
+#### <a name="is-null"></a><a name="winrt_is_null"></a>為空
 確認 Windows 執行階段指標為 nullptr。
 
 ```cpp
@@ -521,7 +521,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_is_not_null"></a> 不是 Null
+#### <a name="is-not-null"></a><a name="winrt_is_not_null"></a>不為空
 確認 Windows 執行階段指標不是 nullptr。
 
 ```cpp
@@ -532,9 +532,9 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-### <a name="exception_asserts"></a> 判斷提示例外狀況
+### <a name="exception-asserts"></a><a name="exception_asserts"></a> 判斷提示例外狀況
 
-#### <a name="expect_exception"></a> 預期例外狀況
+#### <a name="expect-exception"></a><a name="expect_exception"></a> 預期例外狀況
 確認函式引發例外狀況︰
 
 ```cpp
@@ -555,13 +555,13 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)
 ```
 
-## <a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
+## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a>CppUnitTestLogger.h
 
-### <a name="logger"></a> 記錄器
-記錄器類別包含要寫入至 [輸出視窗] 的靜態方法。
+### <a name="logger"></a><a name="logger"></a>記錄
+記錄器類別包含要寫入至 [輸出視窗]**** 的靜態方法。
 
-### <a name="write_message"></a> 寫入訊息
-將字串寫入至 [輸出視窗]
+### <a name="write-message"></a><a name="write_message"></a> 寫入訊息
+將字串寫入至 [輸出視窗]****
 
 ```cpp
 static void Logger::WriteMessage(const wchar_t* message)
@@ -571,7 +571,7 @@ static void Logger::WriteMessage(const wchar_t* message)
 static void Logger::WriteMessage(const char* message)
 ```
 
-## <a name="example"></a> 範例
+## <a name="example"></a><a name="example"></a>例子
 此程式碼是 VSCppUnit 的使用範例。 其中包含屬性中繼資料、裝置、使用判斷提示的單元測試及自訂記錄等範例。
 
 ```cpp
@@ -640,5 +640,5 @@ public:
 
 ## <a name="see-also"></a>另請參閱
 
-- [對程式碼進行單元測試](../test/unit-test-your-code.md)
+- [單元測試代碼](../test/unit-test-your-code.md)
 - [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)

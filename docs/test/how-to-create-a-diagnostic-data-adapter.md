@@ -9,21 +9,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f196c3850c9413a7c68fd1fe67af50273915f249
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589171"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：建立診斷資料配接器
 
-若要建立「診斷資料配接器」，您可以使用 Visual Studio 建立類別庫，然後將 Visual Studio Enterprise 提供的診斷資料配接器 API 新增類別庫。 在處理測試回合期間引發的事件時，請以資料流或檔案的形式將您所需要的資訊傳送至架構所提供的 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>。 測試完成時，傳送至 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> 的資料流或檔案會儲存為測試結果的附件。 如果從這些測試結果建立 Bug，或當使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]時，檔案也會連結至 Bug。
+若要建立「診斷資料配接器」**，您可以使用 Visual Studio 建立類別庫，然後將 Visual Studio Enterprise 提供的診斷資料配接器 API 新增類別庫。 在處理測試回合期間引發的事件時，請以資料流或檔案的形式將您所需要的資訊傳送至架構所提供的 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>。 測試完成時，傳送至 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> 的資料流或檔案會儲存為測試結果的附件。 如果從這些測試結果建立 Bug，或當使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]時，檔案也會連結至 Bug。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 您可以建立診斷資料配接器，其會影響執行測試所在機器，或屬於要用來執行待測應用程式環境的機器。 例如，收集執行測試之測試機器上的檔案，或者收集擔任應用程式之 Web 伺服器角色的機器上的檔案。
 
-您可以為診斷資料配接器指定易記的名稱，這個名稱會在使用 Microsoft Test Manager 或使用 Visual Studio 建立測試設定時顯示。 測試設定可讓您定義在執行測試時，要以環境中的哪個電腦角色執行特定診斷資料配接器。 您也可以在建立測試設定時，設定診斷資料配接器。 例如，您可建立從 Web 伺服器收集自訂記錄檔的診斷資料配接器。 當建立測試設定時，您可以選取在執行這個 Web 伺服器角色的一部或多部電腦上執行此診斷資料配接器，並且可以修改測試設定的組態，以只收集最後建立的三個記錄檔。 如需測試設定的詳細資訊，請參閱[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
+您可以為診斷資料配接器指定易記的名稱，這個名稱會在使用 Microsoft Test Manager 或使用 Visual Studio 建立測試設定時顯示。 測試設定可讓您定義在執行測試時，要以環境中的哪個電腦角色執行特定診斷資料配接器。 您也可以在建立測試設定時，設定診斷資料配接器。 例如，您可建立從 Web 伺服器收集自訂記錄檔的診斷資料配接器。 當建立測試設定時，您可以選取在執行這個 Web 伺服器角色的一部或多部電腦上執行此診斷資料配接器，並且可以修改測試設定的組態，以只收集最後建立的三個記錄檔。 有關測試設定的詳細資訊，請參閱[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
 
 當執行測試時會引發事件，如此診斷資料配接器便可以在該時間點執行工作。
 
@@ -32,7 +32,7 @@ ms.locfileid: "75589171"
 
 以下是您在建立診斷資料配接器時可以使用之關鍵事件的部分清單。 如需診斷資料配接器事件的完整清單，請參閱抽象 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 類別。
 
-|Event|描述|
+|事件|描述|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|啟動測試回合|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|結束測試回合|
@@ -46,7 +46,7 @@ ms.locfileid: "75589171"
 
 使用下列程序建立診斷資料配接器，以收集根據您在建立測試設定時所設定之資訊的資料檔案。
 
-如需診斷資料配接器專案的完整範例 (包括自訂組態編輯器)，請參閱[建立診斷資料配接器的專案範例](../test/quickstart-create-a-load-test-project.md)。
+有關診斷資料配接器專案的完整示例（包括自訂配置編輯器），請參閱[示例專案以創建診斷資料配接器](../test/quickstart-create-a-load-test-project.md)。
 
 ## <a name="create-and-install-a-diagnostic-data-adapter"></a>建立和安裝診斷資料配接器
 
@@ -54,21 +54,21 @@ ms.locfileid: "75589171"
 
 2. 新增組件 **Microsoft.VisualStudio.QualityTools.ExecutionCommon**。
 
-   1. 在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選擇 [新增參考] 命令。
+   1. 在**解決方案資源管理器**中，按右鍵 **"引用"** 並選擇"**增加參考"** 命令。
 
-   2. 選擇 [.NET] 並尋找 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**。
+   2. 選擇 [.NET]**** 並尋找 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**。
 
-   3. 選擇 [ **確定**]。
+   3. 選擇 **"確定**"。
 
 3. 新增組件 **Microsoft.VisualStudio.QualityTools.Common**。
 
-   1. 在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選取 [新增參考] 命令。
+   1. 在**解決方案資源管理器**中，按右鍵 **"引用"** 並選擇"**增加參考**"命令。
 
-   2. 選擇 [/.NET]，尋找 **Microsoft.VisualStudio.QualityTools.Common.dll**。
+   2. 選擇 [/.NET]****，尋找 **Microsoft.VisualStudio.QualityTools.Common.dll**。
 
-   3. 選擇 [ **確定**]。
+   3. 選擇 **"確定**"。
 
-4. 將下列 `using` 指示詞新增至您的類別檔案：
+4. 將以下`using`指令添加到類檔：
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.Common;
@@ -210,7 +210,7 @@ ms.locfileid: "75589171"
 
      這些檔案會附加至測試結果。 如果從這些測試結果建立 Bug，或當您使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]時，檔案也會附加至 Bug。
 
-     如果您想要使用自己的編輯器收集要在測試設定中使用的資料，請參閱[如何：為您的診斷資料配接器建立資料的自訂編輯器](../test/quickstart-create-a-load-test-project.md)。
+     如果要使用自己的編輯器收集要在測試設定中使用的資料，請參閱[如何：為診斷資料配接器的資料創建自訂編輯器](../test/quickstart-create-a-load-test-project.md)。
 
 11. 若要在測試完成時根據使用者在測試設定中進行的設定收集記錄檔，您必須建立 *App.config* 檔並且將它加入方案中。 此檔案的格式如下所示，而且必須包含 URI，診斷資料配接器才能識別該檔案。 請將 "Company/ProductName/Version" 替換為實際值。
 
@@ -247,23 +247,23 @@ ms.locfileid: "75589171"
 
      如需詳細資訊，了解如何進行測試設定以在執行測試時使用環境，請參閱[在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
-     如需安裝組態檔的詳細資訊，請參閱[如何：安裝自訂的診斷資料配接器](../test/quickstart-create-a-load-test-project.md)
+     有關安裝設定檔的詳細資訊，請參閱[操作操作：安裝自訂診斷資料配接器](../test/quickstart-create-a-load-test-project.md)
 
 12. 建置方案以建立您的診斷資料配接器組件。
 
-13. 如需安裝自訂編輯器的資訊，請參閱[如何：安裝自訂的診斷資料配接器](../test/quickstart-create-a-load-test-project.md)。
+13. 有關安裝自訂編輯器的資訊，請參閱[如何：安裝自訂診斷資料配接器](../test/quickstart-create-a-load-test-project.md)。
 
 14. 如需詳細資訊，了解如何進行測試設定以在執行測試時使用環境，請參閱[在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
-15. 若要選取診斷資料配接器，您必須先從 Microsoft Test Manager 或 Visual Studio 選取現有的測試設定或建立新的測試設定。 配接器會顯示在測試設定的 [資料和診斷] 索引標籤上，並使用您指派給類別的易記名稱。
+15. 若要選取診斷資料配接器，您必須先從 Microsoft Test Manager 或 Visual Studio 選取現有的測試設定或建立新的測試設定。 配接器會顯示在測試設定的 [資料和診斷]**** 索引標籤上，並使用您指派給類別的易記名稱。
 
-16. 將這些測試設定設定為作用中。 如需測試設定的詳細資訊，請參閱[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
+16. 將這些測試設定設定為作用中。 有關測試設定的詳細資訊，請參閱[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
 
 17. 使用已選取您診斷資料配接器的測試設定來執行您的測試。
 
     您指定的資料檔案會附加至測試結果。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>
@@ -275,4 +275,4 @@ ms.locfileid: "75589171"
 - [使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)
 - [在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [在測試時收集診斷資料 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [如何：為您的診斷資料配接器建立資料的自訂編輯器](../test/quickstart-create-a-load-test-project.md)
+- [如何：為診斷資料配接器創建資料自訂編輯器](../test/quickstart-create-a-load-test-project.md)

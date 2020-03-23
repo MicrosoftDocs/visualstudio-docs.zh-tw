@@ -13,10 +13,10 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78234952"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
@@ -26,7 +26,7 @@ JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio
 > [!NOTE]
 > 我們已投入整個社群的努力使 [MDN Web 文件](https://developer.mozilla.org/en-US/)成為 Web 上一應俱全的一流開發資源，方法是將 docs.microsoft.com 中的所有 (500 以上的頁面) Microsoft JavaScript API 參考重新導向至其 MDN 對應項目。 如需詳細資料，請參閱本[宣告](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)。
 
-## <a name="ES6"></a> ECMAScript 2015 (ES6) 和更新版本的支援
+## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> ECMAScript 2015 (ES6) 和更新版本的支援
 
 Visual Studio 現在支援 ECMAScript 語言更新的語法，例如 ECMAScript 2015/2016。
 
@@ -118,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] 中的 JavaScript IntelliSense 現在會顯示更多有關參數及成員清單的資訊。 此項新資訊是由 TypeScript 語言服務提供，使用程式碼更容易了解的幕後靜態分析。 您可以在[這裡](/visualstudio/ide/javascript-intellisense/)深入了解新的 IntelliSense 體驗和其運作方式。
 
-## <a name="JSX"></a>JSX 語法支援
+## <a name="jsx-syntax-support"></a><a name="JSX"></a>JSX 語法支援
 
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] 中的 JavaScript 充分支援 JSX 語法。 JSX 是一種語法集，可讓 HTML 在 JavaScript 檔案中標記。
 
@@ -128,7 +128,7 @@ exports.default = Subscription_1.Subscription;
 ![JSX 語法](../javascript/media/js-react.png)
 
 > [!NOTE]
-> 若要將 JSX 語法轉換成回應呼叫，`"jsx": "react"` 設定必須新增至 `compilerOptions` 檔案的 `tsconfig.json` 中。
+> 若要將 JSX 語法轉換成回應呼叫，`"jsx": "react"` 設定必須新增至 `tsconfig.json` 檔案的 `compilerOptions` 中。
 
 於建置時建立在 `./out/app.js' 的 JavaScript 檔案會包含程式碼：
 
@@ -146,7 +146,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 - `package.json` 和 `bower.json` 會列出專案所使用的相依性，而且根據預設，會包含在自動類型擷取 (ATA) 中
 - 最上層 `node_modules` 資料夾包含程式庫原始程式碼，而且預設會從專案內容中排除其內容
-- 每個其他 `.js`、`.jsx`、`.ts` 和 `.tsx` 檔案都可能是「您自己的」其中一個原始程式碼，而且必須包含在專案內容中
+- 每個其他 `.js`、`.jsx`、`.ts` 和 `.tsx` 檔案都可能是「您自己的」** 其中一個原始程式碼，而且必須包含在專案內容中
 
 在多數情況下，您只要開啟專案及使用預設專案組態，就可以獲得絕佳體驗。 不過，如果專案很大或具有不同的資料夾結構，還可進一步設定語言服務，讓您能夠更專注於自己的原始程式碼。
 
@@ -186,7 +186,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 ![資料夾結構](../javascript/media/js-folderstructure.png)
 
-您可以使用下列 `tsconfig.json` 確定語言服務僅分析 `js` 資料夾中的原始程式檔，但仍然擷取和使用 `.d.ts` 資料夾中程式庫的 `lib` 檔案。
+您可以使用下列 `tsconfig.json` 確定語言服務僅分析 `js` 資料夾中的原始程式檔，但仍然擷取和使用 `lib` 資料夾中程式庫的 `.d.ts` 檔案。
 
 ```json
 {
@@ -253,7 +253,7 @@ XML 文件註解有時稱為 VSDocs，先前可以用來使用其他資料來裝
 先前，您可以編寫 [IntelliSense 延伸模組](https://msdn.microsoft.com/library/hh874692.aspx)，以讓您新增協力廠商程式庫的自訂完成結果。
 這些延伸模組的撰寫相當困難，而且安裝和參考它們十分麻煩，因此新語言服務往後將不支援這些檔案。
 撰寫 TypeScript 定義檔來提供與舊 `.intellisense.js` 延伸模組相同的 IntelliSense 優點，是較簡單的替代方法。
-您可以在`.d.ts`這裡[深入了解宣告 (](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)) 檔案編寫。
+您可以在[這裡](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)深入了解宣告 (`.d.ts`) 檔案編寫。
 
 ### <a name="unsupported-patterns"></a>不支援的模式
 

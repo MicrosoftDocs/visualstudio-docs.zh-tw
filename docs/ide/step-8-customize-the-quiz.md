@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e568a9fa844802ddab934264cbc316d3514fe577
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579376"
 ---
 # <a name="step-8-customize-the-quiz"></a>步驟 8：自訂測驗
@@ -29,7 +29,7 @@ ms.locfileid: "77579376"
 
 ## <a name="to-customize-the-quiz"></a>自訂測驗
 
-- 當測驗中只有五秒時，藉由設定**背景**色彩屬性來將**timeLabel**控制項變成紅色。
+- 當測驗中僅保留五秒鐘時，通過設置其**BackColor**屬性將**時間Label**控制項變為紅色。
 
   ```csharp
   timeLabel.BackColor = Color.Red;
@@ -45,8 +45,8 @@ ms.locfileid: "77579376"
 
 - 在 <xref:System.Windows.Forms.NumericUpDown> 控制項中輸入正確答案時，透過播放音效來提供受測者的提示。 (您必須撰寫每個控制項之 <xref:System.Windows.Forms.NumericUpDown.ValueChanged> 事件的事件處理常式，而只要受測者變更控制項的值時就會引發該事件)。
 
-## <a name="to-continue-or-review"></a>繼續或檢視
+## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移至下一個教學課程，請參閱 **[教學課程3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)** 。
+- 要轉到下一教程，請參閱**[教程 3：創建匹配的遊戲](../ide/tutorial-3-create-a-matching-game.md)**。
 
-- 若要回到上一個教學課程步驟，請參閱[步驟 7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。
+- 要返回到前面的教程步驟，請參閱步驟[7：添加乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。

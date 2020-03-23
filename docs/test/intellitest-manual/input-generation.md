@@ -10,23 +10,23 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409568"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302620"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 
-IntelliTest 會藉由分析程式中的分支條件，以產生[參數化單元測試](test-generation.md#parameterized-unit-testing)的輸入。 測試輸入是根據它們是否可觸發程式的新分支行為進行選擇。 分析是一種累加的處理序。 它會修改正式測試輸入參數 `q: I -> {true, false}` 的述詞 `I`。 `q` 表示 IntelliTest 已觀察的一組行為。 一開始 `q := false`，因為尚未觀察到任何項目。
+IntelliTest 會藉由分析程式中的分支條件，以產生[參數化單元測試](test-generation.md#parameterized-unit-testing)的輸入。 測試輸入是根據它們是否可觸發程式的新分支行為進行選擇。 分析是一種累加的處理序。 它會修改正式測試輸入參數 `I` 的述詞 `q: I -> {true, false}`。 `q` 表示 IntelliTest 已觀察的一組行為。 一開始 `q := false`，因為尚未觀察到任何項目。
 
 迴圈的步驟如下：
 
-1. IntelliTest 會使用`i`條件約束規劃求解`q(i)=false`決定輸入 [，使得 ](#constraint-solver)。 透過建構，輸入 `i` 就會採用之前未看過的執行路徑。 一開始，這表示 `i` 可以是任何輸入，因為沒有尚未探索到的執行路徑。
+1. IntelliTest 會使用[條件約束規劃求解](#constraint-solver)決定輸入 `i`，使得 `q(i)=false`。 透過建構，輸入 `i` 就會採用之前未看過的執行路徑。 一開始，這表示 `i` 可以是任何輸入，因為沒有尚未探索到的執行路徑。
 
 1. IntelliTest 會以所選的輸入 `i` 執行測試，並監視測試和待測程式的執行狀況。
 
-1. 在執行期間，程式會採用程式的所有條件式分支所判定的特定路徑。 判定執行的所有條件集合稱為「路徑條件」，撰寫為正式輸入參數的述詞 `p: I -> {true, false}`。 IntelliTest 會計算這個述詞的表示法。
+1. 在執行期間，程式會採用程式的所有條件式分支所判定的特定路徑。 判定執行的所有條件集合稱為「路徑條件」**，撰寫為正式輸入參數的述詞 `p: I -> {true, false}`。 IntelliTest 會計算這個述詞的表示法。
 
 1. IntelliTest 會設定 `q := (q or p)`。 換句話說，它記錄了已看到 `p` 所代表路徑的事實。
 
@@ -52,7 +52,7 @@ IntelliTest 使用 [Z3](https://github.com/Z3Prover/z3/wiki) 條件約束規劃�
 ## <a name="dynamic-code-coverage"></a>動態程式碼涵蓋範圍
 
 作為執行階段監視的副作用，IntelliTest 會收集動態程式碼涵蓋範圍資料。
-這稱為「動態」的原因是 IntelliTest 只知道已執行的程式碼，因此它無法以其他涵蓋範圍工具通常使用的相同方式，提供涵蓋範圍的絕對值。
+這稱為「動態」** 的原因是 IntelliTest 只知道已執行的程式碼，因此它無法以其他涵蓋範圍工具通常使用的相同方式，提供涵蓋範圍的絕對值。
 
 例如，當 IntelliTest 報告動態涵蓋範圍為 5/10 基本區塊時，這表示已涵蓋十個中的五個區塊，其中分析到目前為止已觸達之所有方法 (相對於待測組件中已存在的所有方法) 的區塊總數是十個。
 稍後在分析中，隨著探索到更多的可觸達方法，分子 (在此範例中為 5) 和分母 (10) 都可能會增加。
@@ -68,7 +68,7 @@ IntelliTest 可以[建立現有 .NET 類別的執行個體](#existing-classes)�
 <a name="existing-classes"></a>
 ## <a name="instantiate-existing-classes"></a>具現化現有類別
 
-**問題出在哪裡？**
+**怎麼了？**
 
 IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 特別是，它會監視對欄位的所有存取。 然後，它會使用[條件約束規劃求解](#constraint-solver)來判定新的測試輸入 (包括物件和其欄位值)，使得測試和待測程式以其他相關方式表現。
 
@@ -77,7 +77,7 @@ IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 �
 
 如果類型不可見或欄位不[可見](#visibility)，IntelliTest 需要協助建立物件，並使其進入相關狀態，以達到最大的程式碼涵蓋範圍。 IntelliTest 可使用反映來以任意方式建立和初始化執行個體，但這通常不可取，因為它可能會使物件進入正常程式執行期間可能永遠不會發生的狀態。 相反地，IntelliTest 會依賴來自使用者的提示。
 
-## <a name="visibility"></a>可視性
+## <a name="visibility"></a>可見性
 
 .NET 中有一個詳盡的可見性模型：類型、方法、欄位和其他成員可以是**私人**、**公用**、**內部**等等。
 
@@ -100,7 +100,7 @@ IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 �
 
 如何測試具有介面類型參數的方法？ 或是具有非密封類別參數的方法？ IntelliTest 不知道在呼叫這個方法時，稍後將使用的實作。 而且也許在測試時甚至沒有可用的實際實作。
 
-傳統的解決方法是使用具有明確行為的「模擬物件」。
+傳統的解決方法是使用具有明確行為的「模擬物件」**。
 
 一個模擬物件可實作一個介面 (或延伸非密封類別)。 它不代表實際的實作，而只是允許使用模擬物件執行測試的捷徑。 其行為是根據每個使用它的測試案例，以手動方式定義。 有許多工具可讓您輕鬆地定義模擬物件和其預期的行為，但這種行為仍然必須以手動方式定義。
 

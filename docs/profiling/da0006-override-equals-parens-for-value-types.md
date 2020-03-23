@@ -15,18 +15,18 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e097d6d8c9a7b82fac53fd37951644eb7eb5e59
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779528"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值類型的 Equals()
 
 |||
 |-|-|
-|規則識別碼|DA0006|
-|Category|.NET Framework 使用方式|
+|規則 ID|DA0006|
+|類別|.NET Framework 使用方式|
 |分析方法|取樣|
 |訊息|覆寫實值型別的 Equals 和相等運算子。|
 |訊息類型|警告|

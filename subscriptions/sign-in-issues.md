@@ -3,21 +3,21 @@ title: 登入 Visual Studio 訂用帳戶的問題 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: 了解登入 Visual Studio 訂用帳戶時可能遇到的問題
-ms.openlocfilehash: dea81a57501f791ba9d40a95c5305f9aedcc3b49
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 8175a1d8d2c79aecad25952eebdf734e0a9d29d2
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706859"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79509014"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>登入 Visual Studio 訂用帳戶的問題
 若要使用 Visual Studio 訂用帳戶，您必須先登入。  視您的訂用帳戶而定，您可能已使用 Microsoft 帳戶 (MSA) 或 Azure Active Directory (AAD) 身分識別加以設定。  本文將討論一些登入訂用帳戶時可能會遇到的問題。
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>無法使用工作/學校電子郵件地址建立 Microsoft 帳戶 (MSA)
-在 Azure AD 中設定電子郵件網域時，不再允許使用工作/學校電子郵件地址建立新個人 Microsoft 帳戶 (MSA) 的功能。 這代表什麼意義？ 如果您的組織使用 Office 365 或是 Microsoft 中依賴 Azure AD 的其他商務服務，而且您已在 Azure AD 租用戶中新增網域名稱，則使用者再也無法使用網域中的電子郵件地址建立新個人 Microsoft 帳戶。
+在 Azure AD 中設定電子郵件網域時，不再允許使用工作/學校電子郵件地址建立新個人 Microsoft 帳戶 (MSA) 的功能。 這代表什麼？ 如果您的組織使用 Office 365 或是 Microsoft 中依賴 Azure AD 的其他商務服務，而且您已在 Azure AD 租用戶中新增網域名稱，則使用者再也無法使用網域中的電子郵件地址建立新個人 Microsoft 帳戶。
 
 ### <a name="why-was-this-change-made"></a>為什麼要進行這項變更？
 擁有以工作地址作為使用者名稱的個人 Microsoft 帳戶，對終端使用者和 IT 部門來說都充滿了問題。 例如：
@@ -52,15 +52,21 @@ ms.locfileid: "74706859"
 - 透過租用戶建立 AAD 與 MSA 身分識別的關聯。
 
 ## <a name="signing-in-may-fail-when-using-aliases"></a>使用別名時登入可能會失敗
-視用於登入的帳戶類型而定，當登入 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 時，可用的訂用帳戶可能無法正確顯示。 其中一個可能的原因是使用「別名」或「易記名稱」，而非使用訂用帳戶指派目標的登入身分識別。 這稱為「別名處理」。
+根據用於登錄的帳戶類型，在登錄到 時可能無法正確顯示可用訂閱[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。 其中一個可能的原因是使用「別名」或「易記名稱」，而非使用訂用帳戶指派目標的登入身分識別。 這稱為「別名處理」。
 
 ### <a name="what-is-aliasing"></a>別名處理是什麼？
 「別名處理」一詞指的是使用不同身分識別來登入 Windows (或您的 Active Directory) 並存取電子郵件的使用者。
 
-當公司使用 Microsoft Online Service 做為其目錄登入使用 (例如 JohnD@contoso.com)，但使用者使用別名或易記名稱存取其電子郵件帳戶 (例如 John.Doe@contoso.com) 時，就會發生別名處理。 對於透過大量授權服務中心（VLSC）管理其訂用帳戶的許多客戶，這可能會導致登入失敗，因為提供的電子郵件地址（John.Doe@contoso.com）與透過 [工作或學校帳戶] 選項成功驗證所需的目錄位址（JohnD@contoso.com）不符。
+當公司使用 Microsoft Online Service 做為其目錄登入使用 (例如 JohnD@contoso.com)，但使用者使用別名或易記名稱存取其電子郵件帳戶 (例如 John.Doe@contoso.com) 時，就會發生別名處理。 針對透過大量授權服務中心 (VLSC) 管理其訂用帳戶的客戶，這會導致不成功的登入體驗，因為提供的電子郵件地址 (John.Doe@contoso.com) 不符合成功透過 [公司或學校帳戶] 選項驗證所需的目錄地址 (JohnD@contoso.com)。
 
 ### <a name="what-options-do-i-have"></a>我有哪些選項？
 從訂閱者觀點來看，先與您的系統管理員合作以了解您公司的身分識別設定非常重要。 如果有需要，您的系統管理員可能必須從其系統管理入口網站更新您的帳戶設定，或您可能需要使用您的公司電子郵件地址建立 Microsoft 帳戶 (MSA)。 採取建立 MSA 的步驟之前，請先就採取此步驟可能涉及的任何原則或問題洽詢您的系統管理員。 
+
+## <a name="see-also"></a>另請參閱
+- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 - 了解如何在 AAD 內[連結 MSA 與 AAD 帳戶](/azure/active-directory/b2b/add-users-administrator)。

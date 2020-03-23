@@ -1,41 +1,44 @@
 ---
-title: 為 using 排序
+title: 為 Using 排序
 description: 如何排序檔案頂端的 `using` 指示詞，讓它們依字母順序排序。
-ms.date: 06/19/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: de568398b0f12384ee5e913c479da3e6ab61bab8
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: d502abe583c09d6c117ed1083e87cded823bc386
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329046"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093772"
 ---
-# <a name="sort-usings"></a>為 using 排序
+# <a name="sort-usings"></a>為 Using 排序
 
 此重構適用於：
 
 - C#
 
-**功能：** 為 using 排序。
+- Visual Basic
 
-**時機：** 您可以排序檔案頂端的 `using` 指示詞，讓它們依字母順序排列。 
+**內容：** 對使用進行排序。
 
-**原因：** 它能夠讓您更容易找到 using 指示詞。
+**何時：** 您希望對檔頂部`using`的指令進行排序，以便它們按字母順序排列。 
 
-## <a name="how-to"></a>操作說明
+**原因：** 它使查找 using 指令變得更加容易。
 
-1. 從功能表列選取 [編輯]  。
-2. 選取 **Intellisense** > [排序 Using]  。
+## <a name="how-to"></a>操作方式
 
-   ![為 using 排序](media/sort-usings.png)
+1. 從功能表列選取 [編輯]****。
+2. 選擇 **"感知** > **排序使用**"。
+
+   ![為 Using 排序](media/sort-usings.png)
 
 ## <a name="see-also"></a>另請參閱
 
-- [重構](../refactoring-in-visual-studio.md)
+- [Refactoring](../refactoring-in-visual-studio.md)

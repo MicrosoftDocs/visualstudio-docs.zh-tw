@@ -10,13 +10,13 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 65b1de58f195b957d080bd21144c22479b1aafed
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589587"
 ---
-# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>如何：使用 IntelliTest 產生單元測試
+# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>如何：使用 IntelliTest 生成單元測試
 
 IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 程式碼的每個條件分支都會執行大小寫分析。 例如，可能擲回例外狀況的 `if` 陳述式、判斷提示及所有作業都會加以分析。 這項分析會用於為每個方法的參數型單元測試產生測試資料，從而建立具有高程式碼涵蓋範圍的單元測試。
 
@@ -40,7 +40,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
 1. 在 Visual Studio 中開啟您的解決方案，然後開啟擁有您欲測試方法的類別檔案。
 
-2. 在方法上按一下滑鼠右鍵，然後選擇 [執行 IntelliTest]，為方法中的程式碼產生單元測試。
+2. 在方法上按一下滑鼠右鍵，然後選擇 [執行 IntelliTest] ****，為方法中的程式碼產生單元測試。
 
    ![以滑鼠右鍵按一下您的方法，以產生單元測試](../test/media/runpex.png)
 
@@ -48,7 +48,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
    ![[探勘結果] 視窗會與測試一併顯示](../test/media/pexexplorationresults.png)
 
-若要為類別中的所有公用方法產生單元測試，只要在該類別上 (不需要在特定的方法上) 按一下滑鼠右鍵，然後選擇 [執行 IntelliTest] 即可。 您可以利用 [瀏覽結果] 視窗中的下拉式清單，顯示類別中每個方法的單元測試及輸入資料。
+若要為類別中的所有公用方法產生單元測試，只要在該類別上 (不需要在特定的方法上) 按一下滑鼠右鍵，然後選擇 [執行 IntelliTest]**** 即可。 使用 **"探索結果**"視窗中的下拉清單顯示類中每個方法的單位測試和輸入資料。
 
 ![從清單中選取要檢視的測試結果](../test/media/selectpextest.png)
 
@@ -60,7 +60,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
      ![選取測試，再按一下滑鼠右鍵，然後選擇 [儲存]](../test/media/savepextests.png)
 
-     您可以檢視測試專案和已建立的參數化單元測試，其中每個資料列對應的個別單元測試會儲存在測試專案的 *.g.cs* 檔案中，而參數化的單元測試會儲存在其對應的 *.cs* 檔案中。 您可以從 [測試總管] 執行這些測試及檢視其結果，與您手動建立單元測試時所執行的各項作業無異。
+     您可以查看測試專案和已創建的參數化單元測試 - 單個單元測試（對應于每個行）保存在測試專案中*的 .g.cs*檔中，並將參數化單元測試保存在相應的 *.cs*檔中。 您可以從 [測試總管] 執行這些測試及檢視其結果，與您手動建立單元測試時所執行的各項作業無異。
 
      ![開啟測試方法中的類別檔案，以檢視單元測試](../test/media/testmethodpex.png)
 
@@ -80,7 +80,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
      ![以滑鼠右鍵按一下警告，然後選擇 [修正]](../test/media/pexfixwarning.png)
 
-     這個選擇會加入 *PexAssemblyInfo.cs* 檔案中。
+     此選項將添加到*PexAssemblyInfo.cs*檔中。
 
      `[assembly: PexUseType(typeof(Camera))]`
 
@@ -92,7 +92,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
 指定輸入和輸出之間的一般關聯性，以用產生的單元測試來驗證。 此規格的封裝方法看似測試方法，但它卻是通用數量化的規格。 這是參數化的單元測試方法，因此您所進行的任何判斷提示必須保留所有 IntelliTest 產生的可能輸入值。
 
-## <a name="q--a"></a>問與答
+## <a name="q--a"></a>問答集
 
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>問：IntelliTest 適用於 Unmanaged 程式碼嗎？
 
@@ -128,9 +128,9 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
 當您新增判斷提示並重新執行 IntelliTest 時，它會檢查該判斷提示是否有效，若無效，則測試會失敗。
 
-### <a name="NoRun"></a> 問： 是否可以產生參數化的單元測試而不需先執行 IntelliTest?
+### <a name="q-can-i-generate-parameterized-unit-tests-without-running-intellitest-first"></a><a name="NoRun"></a> 問： 是否可以產生參數化的單元測試而不需先執行 IntelliTest?
 
-**答：** 可以，只要以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest]即可。
+**答：** 可以，只要以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] **** 即可。
 
 ![以滑鼠右鍵按一下編輯器，選擇 [建立 IntelliTest]](../test/media/pexcreateintellitest.png)
 
@@ -142,13 +142,13 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>問： 是否可以使用其他單元測試架構搭配 IntelliTest？
 
 **答：** 可以，請遵循 [尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。
-測試架構延伸模組也可在 Visual Studio Marketplace 中取得，例如[NUnit 測試](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)產生器。
+測試框架擴展在視覺化工作室應用商店中也可用，例如[NUnit 測試產生器](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)。
 
-重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest]。 於此處選取您已安裝的架構：
+重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] ****。 於此處選取您已安裝的架構：
 
 ![選取 IntelliTest 的其他單元測試架構](../test/media/pexcreateintellitestextensions.png)
 
-然後執行 IntelliTest，以在對應的 *g.cs* 檔案中產生個別的單元測試。
+然後運行 IntelliTest 以在其相應的 *.g.cs*檔中生成單個單元測試。
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>問：我可以進一步了解如何產生測試嗎？
 

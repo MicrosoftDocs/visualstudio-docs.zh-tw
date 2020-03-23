@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633781"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>如何：在組建中使用環境變數
@@ -25,7 +25,7 @@ ms.locfileid: "77633781"
 
 ## <a name="reference-environment-variables"></a>參考環境變數
 
- 所有環境變數都可供 Microsoft Build Engine （MSBuild）專案檔案當做屬性使用。
+ 所有環境變數都可以作為屬性提供給 Microsoft 生成引擎 （MSBuild） 專案檔案。
 
 > [!NOTE]
 > 如果專案檔包含與環境變數相同名稱之專案的明確定義，則專案檔中的屬性會覆寫環境變數的值。
@@ -40,7 +40,7 @@ ms.locfileid: "77633781"
 
 #### <a name="to-provide-a-default-value-for-a-property"></a>提供屬性的預設值
 
-- 只有當屬性 (Property) 沒有任何值，才能在屬性 (Property) 上使用 `Condition` 屬性 (Attribute) 來設定值。 例如，下列程式碼只有在未設定 `ToolsPath` 環境變數時，才會將 *屬性設為*c:\tools`ToolsPath`：
+- 只有當屬性 (Property) 沒有任何值，才能在屬性 (Property) 上使用 `Condition` 屬性 (Attribute) 來設定值。 例如，以下代碼僅在未設置`ToolsPath``ToolsPath`環境變數時將屬性設置為*c：\tools：*
 
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`
 
@@ -69,4 +69,4 @@ ms.locfileid: "77633781"
 
 - [MSBuild](../msbuild/msbuild.md)
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)
-- [如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+- [如何：使用不同的選項構建相同的原始檔案](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

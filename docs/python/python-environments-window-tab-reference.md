@@ -11,20 +11,20 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409988"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302767"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python 環境視窗索引標籤參考
 
-開啟 [Python 環境] 視窗：
+開啟 [Python 環境]**** 視窗：
 
-- 選取 [檢視] >  **[其他視窗]**  >  **[Python 環境]** 功能表命令。
-- 在 [方案總管] 中，以滑鼠右鍵按一下專案的 [Python 環境] 節點，然後選取 [檢視所有 Python 環境]。
+- 選擇"**查看** > **其他 Windows** > **Python 環境**"功能表命令。
+- 按右鍵**解決方案資源管理器**中專案的**Python 環境**節點，然後選擇 **"查看所有 Python 環境**"。
 
-如果您將 [Python 環境] 視窗展開至足夠寬度，便會以索引標籤的形式來顯示這些選項，以方便您使用。 為了清楚起見，本文章中的索引標籤會以展開檢視來顯示。
+如果將**Python 環境**視窗擴展得足夠寬，則這些選項將顯示為選項卡，您可能會發現使用這些選項卡更方便。 為了清楚起見，本文章中的索引標籤會以展開檢視來顯示。
 
 ::: moniker range="vs-2017"
 ![[Python Environments (Python 環境)] 視窗展開檢視](media/environments/environments-expanded-view.png)
@@ -44,7 +44,7 @@ ms.locfileid: "78409988"
 ![Python 環境的 [Oview (概觀)] 索引標籤](media/environments/environments-overview-tab-2019.png)
 ::: moniker-end
 
-| 命令 | 描述 |
+| Command | 描述 |
 | --- | --- |
 | **將此環境設為新專案的預設值** | 設定使用中環境，可能會導致在載入 IntelliSense 資料庫時，Visual Studio (2017 15.5 版及更早版本) 短暫沒有反應。 環境如果含有許多套件，則無反應的時間可能會更長。 |
 | **瀏覽散發者的網站** | 將瀏覽器開啟至 Python 發行所提供的 URL。 例如，Python 3.x 會移至 python.org。 |
@@ -60,13 +60,13 @@ ms.locfileid: "78409988"
 
 啟動指令碼包含**互動式**視窗所載入並自動執行的程式碼，包括匯入、函式定義，以及文字形式的任何其他項目。 這類指令碼是使用兩種方式進行參考：
 
-1. 當您安裝環境時，Visual Studio 會建立資料夾 *Documents\Visual Studio \<version>\Python Scripts\\\<environment>* ，其中 &lt;version&gt; 是 Visual Studio 版本 (例如 2017 或 2019)，而 &lt;environment&gt; 會符合環境的名稱。 您可以使用 [探索互動式指令碼] 命令，輕鬆地巡覽至環境特定資料夾。 當您啟動該環境的**互動式**視窗時，只要依字母順序在這裡找到 *.py* 檔案，就會載入並執行互動式視窗。
+1. 安裝環境時，Visual Studio 會創建資料夾*文檔_Visual \<Studio 版本>_Python\\\<腳本環境>* 其中&lt;版本&gt;為 Visual Studio 版本（如 2017 或&lt; &gt; 2019），環境與環境的名稱匹配。 您可以使用 [探索互動式指令碼]**** 命令，輕鬆地巡覽至環境特定資料夾。 當您啟動該環境的**互動式**視窗時，只要依字母順序在這裡找到 *.py* 檔案，就會載入並執行互動式視窗。
 
-1. [工具] **[選項]**  > [Python] > [互動式視窗] >  索引標籤中的 [指令碼] 控制項 (請參閱[互動式視窗選項](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) 是用來指定在所有環境中載入和執行之啟動指令碼的其他資料夾。 不過，此功能目前無法使用。
+1. [工具]**** > [選項]**** > **[Python]** > **[互動式視窗]** 索引標籤中的 [指令碼]**** 控制項 (請參閱[互動式視窗選項](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) 是用來指定在所有環境中載入和執行之啟動指令碼的其他資料夾。 不過，此功能目前無法使用。
 
 ## <a name="configure-tab"></a>Configure (設定) 索引標籤
 
-如果可用，[設定] 索引標籤就會包含如下表所述的詳細資料。 如果沒有此索引標籤，即表示目前由 Visual Studio 自動管理所有詳細資料。
+如果可用，[設定]**** 索引標籤就會包含如下表所述的詳細資料。 如果沒有此索引標籤，即表示目前由 Visual Studio 自動管理所有詳細資料。
 
 ::: moniker range="vs-2017"
 ![Python 環境的 [Configure (設定)] 索引標籤](media/environments/environments-configure-tab.png)
@@ -77,20 +77,20 @@ ms.locfileid: "78409988"
 
 | 欄位 | 描述 |
 | --- | --- |
-| **說明** | 要賦予環境的名稱。 |
-| **前置詞路徑** | 解譯器的基底資料夾位置。 填入此值並按一下 [自動偵測] 之後，Visual Studio 就會嘗試為您填入其他欄位。 |
+| **描述** | 要賦予環境的名稱。 |
+| **前置詞路徑** | 解譯器的基底資料夾位置。 填入此值並按一下 [自動偵測]**** 之後，Visual Studio 就會嘗試為您填入其他欄位。 |
 | **解譯器路徑** | 解譯器可執行檔的路徑，通常是前置路徑後面再接著 **python.exe** |
 | **具範圍限制的解譯器** | 非主控台可執行檔的路徑，通常是前置路徑後面再接著 **pythonw.exe**。 |
-| **Library path (程式庫路徑)**<br/>(如果有的話) | 指定標準程式庫的根目錄，但如果 Visual Studio 能夠從解譯器要求更精確的路徑，則可以忽略這個值。 |
-| **Language version (語言版本)** | 從下拉式功能表中選取。 |
-| **架構** | 通常會自動偵測並填入，否則會指定 [32 位元] 或 [64 位元]。 |
+| **程式庫路徑**<br/>(如果有的話) | 指定標準程式庫的根目錄，但如果 Visual Studio 能夠從解譯器要求更精確的路徑，則可以忽略這個值。 |
+| **語言版本** | 從下拉式功能表中選取。 |
+| **建築** | 通常會自動偵測並填入，否則會指定 [32 位元]**** 或 [64 位元]****。 |
 | **Path environment variable (路徑環境變數)** | 解譯器用來尋找搜尋路徑的環境變數。 Visual Studio 會在啟動 Python 時變更變數的值，使其包含專案的搜尋路徑。 通常這個屬性應該設定為 **PYTHONPATH**，但有些解譯器會使用不同的值。 |
 
 ## <a name="packages-tab"></a>套件索引標籤
 
-在舊版中，也標示為 "pip"。
+在舊版中，也標示為 "pip"。**
 
-使用 pip ([套件 (PyPI)] 索引標籤) 或 conda ([套件 (Conda)] 索引標籤，適用於 Visual Studio 2017 15.7 版及更新版本的 Conda 環境) 來管理環境中所安裝的套件。 在此索引標籤中，您也可以搜尋並安裝新的套件，包括其相依性。
+使用 pip ([套件 (PyPI)]**** 索引標籤) 或 conda ([套件 (Conda)]**** 索引標籤，適用於 Visual Studio 2017 15.7 版及更新版本的 Conda 環境) 來管理環境中所安裝的套件。 在此索引標籤中，您也可以搜尋並安裝新的套件，包括其相依性。
 
 已安裝的套件會和更新 (向上箭頭) 及解除安裝 (位於圓圈中的交叉) 該套件的控制項一起顯示：
 
@@ -105,7 +105,7 @@ ms.locfileid: "78409988"
 ![具有針對 "num" 之搜尋的 Python 環境套件索引標籤](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-您可以在上圖中看到，搜尋結果會顯示符合搜尋詞彙的套件數；不過，在清單中的第一個項目，是要直接執行 **pip install \<名稱>** 的命令。 如果您在 [套件 (Conda)] 索引標籤上，您會改為看到 **conda install \<名稱>** ：
+您可以在上圖中看到，搜尋結果會顯示符合搜尋詞彙的套件數；不過，在清單中的第一個項目，是要直接執行 **pip install \<名稱>** 的命令。 如果您在 [套件 (Conda)]**** 索引標籤上，您會改為看到 **conda install \<名稱>**：
 
 ::: moniker range="vs-2017"
 ![顯示 conda install 命令的 Conda 套件索引標籤](media/environments/environments-conda-tab-install.png)
@@ -127,25 +127,25 @@ ms.locfileid: "78409988"
 
 ### <a name="grant-administrator-privileges-for-package-install"></a>授與套件安裝用的系統管理員權限
 
-將套件安裝至位於檔案系統受保護區域的環境時，例如 *c:\Program Files\Anaconda3\Lib*，Visual Studio 必須提高權限來執行 `pip install` 以允許它建立套件子資料夾。 需要提高權限時，Visual Studio 會顯示「可能需要系統管理員權限才可安裝、更新或移除此環境的套件」提示：
+將套件安裝至位於檔案系統受保護區域的環境時，例如 *c:\Program Files\Anaconda3\Lib*，Visual Studio 必須提高權限來執行 `pip install` 以允許它建立套件子資料夾。 需要提高權限時，Visual Studio 會顯示「可能需要系統管理員權限才可安裝、更新或移除此環境的套件」**** 提示：
 
 ![套件安裝的提高權限提示](media/environments/environments-pip-elevate.png)
 
-[立即提高權限] 會將系統管理權限授與 pip 以進行單一作業、主題，也會授與權限的任何作業系統提示。 選取 [在沒有系統管理員權限的情況下繼續] 會嘗試安裝套件，但在嘗試建立包含「錯誤: 無法建立 'C:\Program Files\Anaconda3\Lib\site-packages\png.py': 權限遭拒」這類輸出的資料夾時，pip 會失敗。
+[立即提高權限]**** 會將系統管理權限授與 pip 以進行單一作業、主題，也會授與權限的任何作業系統提示。 選取 [在沒有系統管理員權限的情況下繼續]**** 會嘗試安裝套件，但在嘗試建立包含「錯誤: 無法建立 'C:\Program Files\Anaconda3\Lib\site-packages\png.py': 權限遭拒」**** 這類輸出的資料夾時，pip 會失敗。
 
-選取 [安裝或移除套件時一律提高權限] 可防止在環境有問題時顯示對話方塊。 若要再次顯示對話方塊，請移至 [工具] > [選項] > [Python] > [一般]，然後選取 [重設所有永久隱藏的對話方塊] 按鈕。
+選取 [安裝或移除套件時一律提高權限]**** 可防止在環境有問題時顯示對話方塊。 要使對話方塊再次出現，請轉到 **"工具** > **選項** > **Python** > **常規"** 並選擇該按鈕，**請重置所有永久隱藏的對話方塊**。
 
-在這個相同的 [選項] 索引標籤中，您也可以選取 [一律以系統管理員身分執行 pip] 來隱藏所有環境的對話方塊。 請參閱[選項 - 一般索引標籤](python-support-options-and-settings-in-visual-studio.md#general-options)。
+在這個相同的 [選項]**** 索引標籤中，您也可以選取 [一律以系統管理員身分執行 pip]**** 來隱藏所有環境的對話方塊。 請參閱[選項 - 一般索引標籤](python-support-options-and-settings-in-visual-studio.md#general-options)。
 
 ### <a name="security-restrictions-with-older-versions-of-python"></a>較舊版本 Python 的安全性限制
 
-使用 Python 2.6、3.1 和 3.2 時，Visual Studio 會顯示警告「由於新的安全性限制，從網際網路安裝可能不適用於此版本的 Python」：
+使用 Python 2.6、3.1 和 3.2 時，Visual Studio 會顯示警告「由於新的安全性限制，從網際網路安裝可能不適用於此版本的 Python」****：
 
 ![較舊版本 Python 的 pip install 限制相關訊息](media/environments/environments-old-version-restriction.png)
 
-警告的原因是使用這些舊版的 Python，`pip install` 不包含傳輸安全性層（TLS）1.2 的支援，這是從套件來源 pypi.org 下載套件的必要條件。自訂 Python 組建可能支援 TLS 1.2，在此情況下 `pip install` 可能會作用。
+警告的原因是，對於這些舊版本的 Python，`pip install`不包含對傳輸安全層 （TLS） 1.2 的支援，這是從包源下載包所需的，pypi.org。自訂 Python 生成可能支援 TLS 1.2，在這種情況下`pip install`可能工作。
 
-可以從 *bootstrap.pypa.io* 下載套件的適當 [get-pip.py](https://bootstrap.pypa.io/)、從 [pypi.org](https://pypi.org/) 手動下載套件，然後從該本機複本安裝套件。
+可以從 [bootstrap.pypa.io](https://bootstrap.pypa.io/) 下載套件的適當 *get-pip.py*、從 [pypi.org](https://pypi.org/) 手動下載套件，然後從該本機複本安裝套件。
 
 不過，建議直接升級至 Python 2.7 或 3.3+，如此便不會出現警告。
 
@@ -157,11 +157,11 @@ ms.locfileid: "78409988"
 ![Python 環境的 [IntelliSense] 索引標籤](media/environments/environments-intellisense-tab.png)
 
 - 在 Visual Studio 2017 15.5 版及較舊版本中，IntelliSense 完成取決於已針對該程式庫進行編譯的資料庫。 安裝程式庫時，系統會在背景建置資料庫，但這可能需要花費一些時間，且在您開始撰寫程式碼時可能尚未完成。
-- Visual Studio 2017 15.6 版及更新版本預設會使用較快速的方法，以在不仰賴資料庫的情況下提供完成。 因此，索引標籤會標示為 [IntelliSense [資料庫已停用]]。 您可以藉由清除 [工具] > [選項] > [Python] > [實驗] > [Use new style IntelliSense for environments] \(在環境中使用新樣式 IntelliSense\) 選項來啟用資料庫。
+- Visual Studio 2017 15.6 版及更新版本預設會使用較快速的方法，以在不仰賴資料庫的情況下提供完成。 因此，索引標籤會標示為 [IntelliSense [資料庫已停用]]****。 您可以通過清除選項**工具** > **選項** > **Python** > **實驗** > **使用新樣式 IntelliSense 環境**來啟用資料庫。
 
-當 Visual Studio 偵測到新環境 (或您新增環境) 時，會透過分析程式庫原始程式檔來自動開始編譯資料庫。 視所安裝的項目而定，這個程序會花費一分鐘到一小時或數小時不等的時間。 （例如，Anaconda 隨附許多程式庫，而且需要一些時間來編譯資料庫）。完成之後，您會取得詳細的 IntelliSense，而不需要再次重新整理資料庫（使用 [重新整理**資料庫**] 按鈕），直到您安裝更多程式庫為止。
+當 Visual Studio 偵測到新環境 (或您新增環境) 時，會透過分析程式庫原始程式檔來自動開始編譯資料庫。 視所安裝的項目而定，這個程序會花費一分鐘到一小時或數小時不等的時間。 （例如，Anaconda 附帶了許多庫，編譯資料庫需要一些時間。完成後，您將獲得詳細的 IntelliSense，無需再次刷新資料庫（使用 **"刷新資料庫**"按鈕），直到安裝更多庫。
 
-資料尚未經過編譯的程式庫會標示 **!** ；如果環境的資料庫尚未完成，則 **!** 也會出現在主要環境清單中該資料庫的旁邊。
+資料尚未經過編譯的程式庫會標示 **!**；如果環境的資料庫尚未完成，則 **!** 也會出現在主要環境清單中該資料庫的旁邊。
 
 ::: moniker-end
 
@@ -170,4 +170,4 @@ ms.locfileid: "78409988"
 - [在 Visual Studio 中管理 Python 環境](managing-python-environments-in-visual-studio.md)
 - [選取專案的解譯器](selecting-a-python-environment-for-a-project.md)
 - [為相依性使用 requirements.txt](managing-required-packages-with-requirements-txt.md)
-- [搜尋路徑](search-paths.md)
+- [搜索路徑](search-paths.md)

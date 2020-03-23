@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7725108fd71f4292a8d3fa4dfe68ca29d3dcd90
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634444"
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
 
-在 MSBuild 中，專案是一個或多個檔案的名稱參考。 項目包含中繼資料，例如檔案名稱、路徑和版本號碼。 Visual Studio 中的所有專案類型都有共同的數個專案。 這些項目會在 *Microsoft.Build.CommonTypes.xsd* 檔案中定義。
+在 MSBuild 中，項是對一個或多個檔的命名引用。 項目包含中繼資料，例如檔案名稱、路徑和版本號碼。 Visual Studio 中的所有專案類型都有多個共同專案。 這些專案在*Microsoft.Build.CommonTypes.xsd*檔中定義。
 ## <a name="common-items"></a>共同項目
 
  下列是所有共同專案項目的清單。
@@ -41,7 +41,7 @@ ms.locfileid: "77634444"
 |融合名稱|選擇性字串。 指定項目的簡單或強式融合名稱。<br /><br /> 當這個屬性存在時，就可以節省時間，因為不需要開啟組件檔案就能取得融合名稱。|
 |特定版本|選擇性布林值。 指定是否應僅參考融合名稱中的版本。|
 |別名|選擇性字串。 參考的任何別名。|
-|私人|選擇性布林值。 指定是否應將參考複製到輸出資料夾。 此屬性與 Visual Studio IDE 中參考的 [複製到本機] 屬性相符。|
+|Private|選擇性布林值。 指定是否應將參考複製到輸出資料夾。 此屬性與 Visual Studio IDE 中參考的 [複製到本機]**** 屬性相符。|
 
 ### <a name="comreference"></a>COM 參考
 
@@ -55,11 +55,11 @@ ms.locfileid: "77634444"
 |VersionMinor|必要字串。 元件版本號碼的次要部分。 例如，如果完整版本號碼為"5.46"，則次要部分為 "46"。|
 |LCID|選擇性字串。 元件的地區設定識別碼。|
 |包裝函式工具|選擇性字串。 用於元件的包裝函式工具名稱，例如 "tlbimp"。|
-|外掛式|選擇性布林值。 指定元件是否為免註冊元件。|
+|隔離|選擇性布林值。 指定元件是否為免註冊元件。|
 
 ### <a name="comfilereference"></a>COM 檔案參考
 
- 代表傳遞給 `TypeLibFiles`ResolveComReference[ 目標之 ](resolvecomreference-task.md) 參數的類型程式庫清單。 此項目僅適用於 .NET 專案。
+ 代表傳遞給 [ResolveComReference](resolvecomreference-task.md) 目標之 `TypeLibFiles` 參數的類型程式庫清單。 此項目僅適用於 .NET 專案。
 
 |項目中繼資料名稱|描述|
 |---------------|-----------------|
@@ -81,8 +81,8 @@ ms.locfileid: "77634444"
 |項目中繼資料名稱|描述|
 |---------------|-----------------|
 |名稱|選擇性字串。 參考的顯示名稱。|
-|專案|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|
-|套件|選擇性字串。 所參考的專案檔路徑。|
+|隨附此逐步解說的專案|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|
+|Package|選擇性字串。 所參考的專案檔路徑。|
 |ReferenceOutputAssembly|選擇性布林值。 如果設定為 `false`，則不會將參考之專案的輸出，以[參考](#reference)的方式包含在此專案中，但仍然可確保其他專案會在此專案之前建置。 預設為 `true`。|
 
 ### <a name="compile"></a>編譯
@@ -92,10 +92,10 @@ ms.locfileid: "77634444"
 | 項目中繼資料名稱 | 描述 |
 |-----------------------| - |
 | 相依依據 | 選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。 |
-| 自動產生 | 選擇性布林值。 指出是否由 Visual Studio 整合式開發環境（IDE）為專案產生檔案。 |
+| 自動產生 | 選擇性布林值。 指示檔是否由 Visual Studio 整合式開發環境 （IDE） 生成。 |
 | 連結 | 選擇性字串。 當檔案實際位於專案檔影響力之外時所顯示的標記路徑。 |
-| 可見 | 選擇性布林值。 指出是否要在 Visual Studio 的**方案總管**中顯示檔案。 |
-| 複製到輸出目錄 | 選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1. 永不<br />2. 一律<br />3. PreserveNewest |
+| 可見 | 選擇性布林值。 指示是否在視覺化工作室**中的解決方案資源管理器**中顯示該檔。 |
+| 複製到輸出目錄 | 選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1. 從不<br />2. 始終<br />3. 保留最新 |
 
 ### <a name="embeddedresource"></a>內嵌資源
 
@@ -108,8 +108,8 @@ ms.locfileid: "77634444"
 | 最後產生輸出 | 必要字串。 在此項目執行的任何檔案產生器所建立的檔案名稱。 |
 | 自訂工具命名空間 | 必要字串。 在此項目上執行的任何檔案產生器應在其中建立程式碼的命名空間。 |
 | 連結 | 選擇性字串。 如果檔案實際位於專案影響力之外，便會顯示標記路徑。 |
-| 可見 | 選擇性布林值。 指出是否要在 Visual Studio 的**方案總管**中顯示檔案。 |
-| 複製到輸出目錄 | 選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1. 永不<br />2. 一律<br />3. PreserveNewest |
+| 可見 | 選擇性布林值。 指示是否在視覺化工作室**中的解決方案資源管理器**中顯示該檔。 |
+| 複製到輸出目錄 | 選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1. 從不<br />2. 始終<br />3. 保留最新 |
 | LogicalName | 必要字串。 內嵌資源的邏輯名稱。 |
 
 ### <a name="content"></a>內容
@@ -125,10 +125,10 @@ ms.locfileid: "77634444"
 | 連結 | 選擇性字串。 如果檔案實際位於專案影響力之外，便會顯示標記路徑。 |
 | 發行狀態 | 必要字串。 內容的發行狀態，可以是：<br /><br /> -   預設值<br />-   包含<br />-   排除<br />-   資料檔<br />-   必要條件 |
 | 為組件 | 選擇性布林值。 指定檔案是否為組件。 |
-| 可見 | 選擇性布林值。 指出是否要在 Visual Studio 的**方案總管**中顯示檔案。 |
-| 複製到輸出目錄 | 選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1. 永不<br />2. 一律<br />3. PreserveNewest |
+| 可見 | 選擇性布林值。 指示是否在視覺化工作室**中的解決方案資源管理器**中顯示該檔。 |
+| 複製到輸出目錄 | 選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1. 從不<br />2. 始終<br />3. 保留最新 |
 
-### <a name="none"></a>無
+### <a name="none"></a>None
 
  代表在建置流程中應該沒有任何角色的檔案。
 
@@ -139,24 +139,24 @@ ms.locfileid: "77634444"
 | 最後產生輸出 | 必要字串。 在此項目執行的任何檔案產生器所建立的檔案名稱。 |
 | 自訂工具命名空間 | 必要字串。 在此項目上執行的任何檔案產生器應在其中建立程式碼的命名空間。 |
 | 連結 | 選擇性字串。 如果檔案實際位於專案影響力之外，便會顯示標記路徑。 |
-| 可見 | 選擇性布林值。 指出是否要在 Visual Studio 的**方案總管**中顯示檔案。 |
-| 複製到輸出目錄 | 選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1. 永不<br />2. 一律<br />3. PreserveNewest |
+| 可見 | 選擇性布林值。 指示是否在視覺化工作室**中的解決方案資源管理器**中顯示該檔。 |
+| 複製到輸出目錄 | 選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1. 從不<br />2. 始終<br />3. 保留最新 |
 
-### <a name="assemblymetadata"></a>AssemblyMetadata
+### <a name="assemblymetadata"></a>組件中繼資料
 
- 表示要產生為 `[AssemblyMetadata(key, value)]`的元件屬性。
+ 表示要生成的`[AssemblyMetadata(key, value)]`程式集屬性為 。
 
 | 項目中繼資料名稱 | 描述 |
 |-----------------------| - |
-| Include | 成為 `AssemblyMetadataAttribute` 屬性（attribute）中的第一個參數（索引鍵）。 |
-| 值 | 必要字串。 成為 `AssemblyMetadataAttribute` 屬性（attribute）中的第二個參數（值）。 |
+| 包含 | 成為`AssemblyMetadataAttribute`屬性建構函式中的第一個參數（鍵）。 |
+| 值 | 必要字串。 成為`AssemblyMetadataAttribute`屬性建構函式中的第二個參數（值）。 |
 
 > [!NOTE]
-> 這僅適用于使用 .NET Core SDK 的專案。
+> 這僅適用于僅使用 .NET 核心 SDK 的專案。
 
 ### <a name="baseapplicationmanifest"></a>基本應用程式資訊清單
 
- 表示組建的基本應用程式資訊清單，並包含 ClickOnce 部署安全性資訊。
+ 表示生成的基本應用程式清單，並包含 ClickOnce 部署安全資訊。
 
 ### <a name="codeanalysisimport"></a>程式碼分析匯入
 
@@ -164,8 +164,8 @@ ms.locfileid: "77634444"
 
 ### <a name="import"></a>匯入
 
- 表示 Visual Basic 編譯器應匯入其命名空間的元件。
+ 表示名稱空間應由可視基本編譯器導入的程式集。
 
 ## <a name="see-also"></a>另請參閱
 
-- [一般 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)
+- [常見 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)

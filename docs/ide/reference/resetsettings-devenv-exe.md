@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593859"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
@@ -35,25 +35,25 @@ ms.locfileid: "75593859"
 devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 
 - *SettingsFile*
 
-  選擇項。 要套用至 Visual Studio 之設定檔案的完整路徑和名稱。
+  選擇性。 要套用至 Visual Studio 之設定檔案的完整路徑和名稱。
 
 - *DefaultCollectionSpecifier*
 
-  選擇項。 表示要還原之預設設定集合的指定名稱。 選擇表格中所列的其中一個預設集合指定名稱。
+  選擇性。 表示要還原之預設設定集合的指定名稱。 選擇表格中所列的其中一個預設集合指定名稱。
 
   | 預設集合名稱 | 集合指定名稱 |
   | --- | --- |
   | **一般** | `General` |
-  | **JavaScript** | `JavaScript` |
+  | **JAVAscript** | `JavaScript` |
   | **Visual Basic** | `VB` |
-  | **Visual C#** | `CSharp` |
-  | **Visual C++** | `VC` |
-  | **Web 開發** | `Web` |
-  | **Web 開發 (僅限程式碼)** | `WebCode` |
+  | **視覺 C#** | `CSharp` |
+  | **視覺C++** | `VC` |
+  | **網路開發** | `Web` |
+  | **網頁程式開發 (僅限程式碼)** | `WebCode` |
 
 ## <a name="remarks"></a>備註
 
@@ -71,7 +71,7 @@ devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
 devenv /resetsettings CSharp
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [環境設定](../environment-settings.md)
 - [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)

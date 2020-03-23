@@ -12,10 +12,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b0a88815c4a2853270b539a3e012297b681af62e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114951"
 ---
 # <a name="advanced-example-for-containers"></a>容器的進階範例
@@ -211,8 +211,8 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-* [將建置工具安裝至容器](build-tools-container.md)
+* [將生成工具安裝到容器中](build-tools-container.md)
 * [容器的已知問題](build-tools-container-issues.md)
 * [Visual Studio Build Tools 工作負載和元件識別碼](workload-component-id-vs-build-tools.md)

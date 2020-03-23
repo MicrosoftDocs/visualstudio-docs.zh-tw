@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 102f46ec639719bb2bec70a38c6c7177c63793c1
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632325"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
@@ -34,7 +34,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 
 #### <a name="parameters"></a>參數
 
-[輸入] `threadCount`
+[in] `threadCount`
 
  要使用的執行緒數目。
 
@@ -44,4 +44,4 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 
 ## <a name="requirements"></a>需求
 
- **標頭：** *FileTracker .h*
+ **標頭：** *FileTracker.h*

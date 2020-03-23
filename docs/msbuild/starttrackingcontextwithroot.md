@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 68d585361b9797bf1df9c8b0b31f8a089e9de025
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632091"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
@@ -34,15 +34,15 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 
 #### <a name="parameters"></a>參數
 
-[輸入] `intermediateDirectory`
+[in] `intermediateDirectory`
 
  儲存追蹤記錄的目錄。
 
-[輸入] `taskName`
+[in] `taskName`
 
  找到追蹤內容。 這個名稱是用來建立記錄檔的名稱。
 
-[輸入] `rootMarkerResponseFile`
+[in] `rootMarkerResponseFile`
 
  包含根標記的回應檔路徑名稱。 根名稱是用來將內容所有的追蹤集合在一起。
 
@@ -52,7 +52,7 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 
 ## <a name="requirements"></a>需求
 
- **標頭：** *FileTracker .h*
+ **標頭：** *FileTracker.h*
 
 ## <a name="see-also"></a>另請參閱
 

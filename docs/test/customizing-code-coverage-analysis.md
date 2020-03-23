@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: bce7a6b9369f33e6fa5248821f58d9903172415c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75918654"
 ---
 # <a name="customize-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
@@ -20,38 +20,38 @@ ms.locfileid: "75918654"
 
 若要從程式碼涵蓋範圍結果中排除測試程式碼，並且只包括應用程式程式碼，請將 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> 屬性新增至測試類別。
 
-若要包括不屬於您方案的組件，請取得這些組件的 .pdb 檔案，並將這些檔案複製到組件 .dll 檔案的相同資料夾。
+若要包括不屬於您方案的組件，請取得這些組件的 .pdb** 檔案，並將這些檔案複製到組件 .dll** 檔案的相同資料夾。
 
 ## <a name="run-settings-file"></a>回合設定檔
 
-[回合設定檔](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)是單元測試工具所使用的組態檔。 *.runsettings* 檔案中會指定進階的程式碼涵蓋範圍設定。
+[回合設定檔](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)是單元測試工具使用的設定檔。 高級代碼覆蓋率設置在 *.run 設置*檔中指定。
 
 若要自訂程式碼涵蓋範圍，請遵循下列步驟：
 
-1. 將回合設定檔新增至方案。 在 [方案總管] 中，於方案的捷徑功能表上，選擇 [新增] > [新增項目]，然後選取 [XML 檔案]。 儲存檔案，其名稱的格式必須是 CodeCoverage.runsettings。
+1. 將回合設定檔新增至方案。 在**解決方案資源管理器**中，在解決方案的快顯功能表上，選擇 **"添加新** > **項**"，然後選擇**XML 檔**。 儲存檔案，其名稱的格式必須是 CodeCoverage.runsettings**。
 
 2. 新增本文結尾處範例檔中的內容，然後遵循下列各節中的描述並根據您自己的需求進行自訂。
 
 ::: moniker range="vs-2017"
 
-3. 若要選取回合設定檔，請在 [測試] 功能表上，選擇 [測試設定] > [選取測試設定檔]。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
+3. 若要選取回合設定檔，請在 [測試]**** 功能表上，選擇 [測試設定]**** > [選取測試設定檔]****。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. 若要選取回合設定檔案，請在 [**測試**] 功能表上選擇 [**選取設定檔**]。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
+3. 要選擇回合設定檔，請在 **"測試"** 功能表上選擇 **"選擇設置檔**"。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
 
 ::: moniker-end
 
-   當您選取 [分析程式碼涵蓋範圍] 時，從回合設定檔讀取組態資訊。
+   當您選取 [分析程式碼涵蓋範圍]**** 時，從回合設定檔讀取組態資訊。
 
    > [!TIP]
    > 當您執行測試或更新程式碼時，並不會自動隱藏任何之前的程式碼涵蓋範圍結果及程式碼著色。
 
 ::: moniker range="vs-2017"
 
-若要關閉和關閉自訂設定，請取消選取或選取 [**測試**>**測試設定**] 功能表中的檔案。
+若要開啟和關閉自訂設定，請在 [測試]**[測試設定]** > **** 功能表中取消選取或選取檔案。
 
 ![Visual Studio 2017 中具有自訂設定檔的測試設定功能表](../test/media/codecoverage-settingsfile.png)
 
@@ -59,13 +59,13 @@ ms.locfileid: "75918654"
 
 ::: moniker range=">=vs-2019"
 
-若要關閉和關閉自訂設定，請取消選取或選取 [**測試**] 功能表上的檔案。
+要關閉和打開自訂設置，請取消選擇或選擇 **"測試"** 功能表上的檔。
 
 ::: moniker-end
 
-## <a name="symbol-search-paths"></a>符號搜尋路徑
+## <a name="symbol-search-paths"></a>符號搜索路徑
 
-程式碼涵蓋範圍需要組件的符號檔 (.pdb 檔案)。 在您的方案所建置的組件中，符號檔案通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在此類情況下，.pdb 檔案不可以和二進位檔同時出現，不過您可以在 .runsettings 檔案中指定符號搜尋路徑。
+程式碼涵蓋範圍需要組件的符號檔 (.pdb** 檔案)。 在您的方案所建置的組件中，符號檔案通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在這種情況下 *，.pdb*檔可能不靠近二進位檔案，但您可以在 *.runsettings*檔中指定符號搜索路徑。
 
 ```xml
 <SymbolSearchPaths>
@@ -75,13 +75,13 @@ ms.locfileid: "75918654"
 ```
 
 > [!NOTE]
-> 符號解析可能需要一些時間，特別是在使用具有許多組件的遠端檔案位置時。 因此，請考慮將 .pdb 檔案複製到二進位 (.dll 和 .exe) 檔案在本機中的位置。
+> 符號解析可能需要一些時間，特別是在使用具有許多組件的遠端檔案位置時。 因此，請考慮將 .pdb** 檔案複製到二進位 (.dll** 和 .exe**) 檔案在本機中的位置。
 
-## <a name="include-or-exclude-assemblies-and-members"></a>包含或排除元件和成員
+## <a name="include-or-exclude-assemblies-and-members"></a>包括或排除程式集和成員
 
-您可以從程式碼涵蓋範圍分析中包含或排除元件或特定類型和成員。 如果 [**包含**] 區段是空的或省略，則會包含所有載入並具有相關聯 PDB 檔案的元件。 如果元件或成員符合**Exclude**區段中的子句，則會從程式碼涵蓋範圍中排除它。 [**排除**] 區段的優先順序高於 [**包含**] 區段：如果元件同時列在 [**包含**] 和 [**排除**] 中，則不會包含在程式碼涵蓋範圍內。
+您可以在代碼覆蓋率分析中包括或排除程式集或特定類型和成員。 如果 **"包括"** 部分為空或省略，則包括載入並具有關聯的 PDB 檔的所有程式集。 如果程式集或成員與 **"排除"** 部分中子句匹配，則從代碼覆蓋率中排除該子句。 **"排除**"部分優先于"**包括**"部分：如果程式集同時列在 **"包括"** 和"**排除"** 中，則該程式集將不包含在代碼覆蓋率中。
 
-例如，下列 XML 會藉由指定名稱來排除單一元件：
+例如，以下 XML 通過指定單個程式集的名稱來排除其名稱：
 
 ```xml
 <ModulePaths>
@@ -92,7 +92,7 @@ ms.locfileid: "75918654"
 </ModulePaths>
 ```
 
-下列範例會指定只有單一元件應該包含在程式碼涵蓋範圍內：
+以下示例指定代碼覆蓋率中應只包含單個程式集：
 
 ```xml
 <ModulePaths>
@@ -103,34 +103,34 @@ ms.locfileid: "75918654"
 </ModulePaths>
 ```
 
-下表顯示可比對元件和成員以在程式碼涵蓋範圍中包含或排除的各種方式。
+下表顯示了程式集和成員可以匹配以包含在代碼覆蓋率中或排除代碼覆蓋率的各種方式。
 
-| XML 元素 | 符合專案 |
+| XML 元素 | 匹配的內容 |
 | - | - |
-| ModulePath | 符合元件名稱或檔案路徑所指定的元件。 |
-| 公司名稱 | 符合**Company**屬性的元件。 |
-| PublicKeyToken | 依據公開金鑰標記比對已簽署的元件。 |
-| 原始程式檔 | 依據專案定義所在之來源檔案的路徑名稱比對元素。 |
-| 屬性 | 符合具有指定之屬性的元素。 指定屬性的完整名稱，例如 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`。<br/><br/>如果您排除 <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 屬性，則會從程式碼涵蓋範圍分析中排除使用語言功能 (例如 `async`、`await`、`yield return`) 和自動實作屬性的程式碼。 若要排除真正產生的程式碼，只要排除 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性即可。 |
-| 函數 | 依照完整限定名稱（包括參數清單）來比對程式、函式或方法。 您也可以使用[正則運算式](#regular-expressions)來比對部分的名稱。<br/><br/>範例：<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` （C++） |
+| ModulePath | 匹配程式集名稱或檔路徑指定的程式集。 |
+| CompanyName | 按 **"公司"** 屬性匹配程式集。 |
+| PublicKeyToken | 按公開金鑰權杖匹配已簽名的程式集。 |
+| 來源 | 按定義元素的原始檔案的路徑名稱匹配元素。 |
+| 屬性 | 匹配具有指定屬性的元素。 指定屬性的完整名稱，例如 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`。<br/><br/>如果您排除 <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 屬性，則會從程式碼涵蓋範圍分析中排除使用語言功能 (例如 `async`、`await`、`yield return`) 和自動實作屬性的程式碼。 若要排除真正產生的程式碼，只要排除 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性即可。 |
+| 函式 | 按完全限定的名稱（包括參數清單）匹配過程、函數或方法。 您還可以使用[正則運算式](#regular-expressions)匹配名稱的一部分。<br/><br/>範例：<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`（C++） |
 
 ### <a name="regular-expressions"></a>規則運算式
 
-包含和排除節點使用與萬用字元不同的規則運算式。 所有相符項目皆不區分大小寫。 以下列出一些範例：
+包含和排除節點使用與萬用字元不同的規則運算式。 所有相符項目皆不區分大小寫。 部份範例如下：
 
-- **.\*** 會比對任何字元的字串
+- **.\*** 匹配任何字元的字串
 
 - **\\.** 會比對點 "."
 
-- **\\(\\)** 會比對括弧 "(  )"
+- （ ） 匹配括弧 "（）" ** \\ \\ **
 
-- **\\\\** 會比對檔案路徑分隔符號 "\\"
+- **\\\\**匹配檔路徑分隔符號"\\"
 
-- **^** 會比對字串的開頭
+- **^** 匹配字串的開頭
 
-- **$** 會比對字串的結尾
+- **$** 匹配字串的末尾
 
-下列 XML 顯示如何使用正則運算式來包含和排除特定元件：
+以下 XML 演示如何使用正則運算式包括和排除特定程式集：
 
 ```xml
 <ModulePaths>
@@ -147,7 +147,7 @@ ms.locfileid: "75918654"
 </ModulePaths>
 ```
 
-下列 XML 顯示如何使用正則運算式來包含和排除特定的函式：
+以下 XML 演示如何使用正則運算式包括和排除特定函數：
 
 ```xml
 <Functions>
@@ -167,7 +167,7 @@ ms.locfileid: "75918654"
 > [!WARNING]
 > 如果規則運算式出現錯誤 (例如未逸出或不成對的括弧)，則不會執行程式碼涵蓋範圍分析。
 
-如需正則運算式的詳細資訊，請參閱[在 Visual Studio 中使用正則運算式](../ide/using-regular-expressions-in-visual-studio.md)。
+有關正則運算式的詳細資訊，請參閱在[Visual Studio 中使用正則運算式](../ide/using-regular-expressions-in-visual-studio.md)。
 
 ## <a name="sample-runsettings-file"></a>範例 .runsettings 檔案
 
@@ -288,8 +288,8 @@ Included items must then not match any entries in the exclude list to remain inc
 </RunSettings>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用回合設定檔設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-- [對程式碼進行單元測試](../test/unit-test-your-code.md)
+- [單元測試代碼](../test/unit-test-your-code.md)

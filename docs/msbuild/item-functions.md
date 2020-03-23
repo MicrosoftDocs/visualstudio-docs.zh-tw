@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633677"
 ---
 # <a name="item-functions"></a>Item 函式
 
-工作和目標中的程式碼可以呼叫專案函式，以取得專案中專案的相關資訊（在 MSBuild 4.0 和更新版本中）。 這些函式可簡化取得不同專案的工作，而且速度會比透過專案迴圈更快。
+任務和目標中的代碼可以調用項函數來獲取有關專案中的專案的資訊（在 MSBuild 4.0 及更高版本中）。 這些功能簡化了獲取不同項的速度比逐一查看項快。
 
 ## <a name="string-item-functions"></a>字串項目函式
 
@@ -54,7 +54,7 @@ ms.locfileid: "77633677"
 
 下表列出項目可用的內建函式。
 
-|函數|範例|描述|
+|函式|範例|描述|
 |--------------|-------------|-----------------|
 |`Count`|`@(MyItem->Count())`|傳回項目計數。|
 |`DirectoryName`|`@(MyItem->DirectoryName())`|傳回每個項目之 `Path.DirectoryName` 的對等項目。|

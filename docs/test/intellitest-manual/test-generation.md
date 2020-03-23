@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409542"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302606"
 ---
 # <a name="test-generation"></a>測試產生
 
@@ -191,7 +191,7 @@ public void Test2([PexAssumeNotNull] object o)
 
 1. 如果它不是在[設定的路徑界限](exploration-bounds.md)內終止，就視為失敗，除非設定 [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded) 選項。
 
-1. 如果測試擲回 **PexAssumeFailedException**，即成功。 不過，除非 [TestEmissionFilter](exploration-bounds.md#testemissionfilter) 設為 [全部]，否則通常會被篩選掉。
+1. 如果測試擲回 **PexAssumeFailedException**，即成功。 不過，除非 [TestEmissionFilter](exploration-bounds.md#testemissionfilter) 設為 [全部]****，否則通常會被篩選掉。
 
 1. 如果測試違反[判斷提示](#assumptions-and-assertions)，例如，擲回單元測試架構的判斷提示違規例外狀況，即失敗。
 

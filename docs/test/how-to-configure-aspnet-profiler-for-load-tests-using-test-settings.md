@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0132401df33bd65d7e328307167b6c228155bb42
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78169387"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用測試設定來設定 ASP.NET 分析工具以進行負載測試
@@ -33,20 +33,20 @@ ASP.NET 分析工具診斷資料配接器可讓您在執行負載測試時，從
 
 ## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>針對測試設定來設定 ASP.NET 分析工具
 
-執行這個程序中的步驟之前，您必須先從 Visual Studio 開啟測試設定，然後選取 [資料和診斷] 頁面。
+執行這個程序中的步驟之前，您必須先從 Visual Studio 開啟測試設定，然後選取 [資料和診斷]**** 頁面。
 
 1. 選取要用來收集 ASP.NET 分析工具資料的角色。
 
     > [!WARNING]
     > 這個角色必須是 Web 伺服器。
 
-2. 選取 [ASP.NET 分析工具] 以啟用收集 ASP.NET 分析資料，然後選擇 [設定]。
+2. 選取 [ASP.NET 分析工具]**** 以啟用收集 ASP.NET 分析資料，然後選擇 [設定]****。
 
      設定 ASP.NET 分析資料收集的對話方塊隨即顯示。
 
-3. 在 [分析工具取樣間隔] 中鍵入值，指出 ASP.NET 分析取樣過程中，要等待的未暫止 CPU 時脈週期數。
+3. 在 [分析工具取樣間隔]**** 中鍵入值，指出 ASP.NET 分析取樣過程中，要等待的未暫止 CPU 時脈週期數。
 
-4. 若要啟用階層互動分析，請選取 [啟用階層互動分析]。
+4. 若要啟用階層互動分析，請選取 [啟用階層互動分析]****。
 
      階層互動分析會計算針對每個成品 (例如 *MyPage.aspx* 或 *CompanyLogo.gif*) 傳送至網頁伺服器的要求數目，以及服務每個要求所需的時間。 此外，階層互動分析也會收集頁面要求進行時所使用的 ADO.NET 連線，以及在服務該要求時所執行的查詢和預存程序呼叫數目。
 

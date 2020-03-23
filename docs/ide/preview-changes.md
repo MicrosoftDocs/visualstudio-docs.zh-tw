@@ -10,15 +10,15 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: f45b186153b4cc046d35fd941f6a80e108476fc0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585765"
 ---
 # <a name="preview-changes-window"></a>[預覽變更] 視窗
 
-在 Visual Studio 中使用各種「快速動作」或「重構」工具時，經常可能需要先預覽要對專案進行的變更，再接受它們。 [預覽變更] 視窗是完成這項作業的位置。  例如，以下 [預覽變更] 視窗會顯示 C# 專案中將在重新命名重構期間變更的內容：
+在 Visual Studio 中使用各種「快速動作」** 或「重構」** 工具時，經常可能需要先預覽要對專案進行的變更，再接受它們。 [預覽變更]**** 視窗是完成這項作業的位置。  例如，以下 [預覽變更]**** 視窗會顯示 C# 專案中將在重新命名重構期間變更的內容：
 
 ![預覽變更](media/previewchanges.png)
 
@@ -26,9 +26,9 @@ ms.locfileid: "75585765"
 
 視窗下半部會顯示專案中將變更的格式化程式碼，並且反白顯示受影響的區域。 選取視窗上半部中的特定行，將會在下半部中反白顯示對應的行。 這可讓您快速跳至適當的行，以及查看周圍的程式碼。
 
-檢閱變更之後，請按一下 [套用] 按鈕認可這些變更，或按一下 [取消] 按鈕不進行變更。
+檢閱變更之後，請按一下 [套用]**** 按鈕認可這些變更，或按一下 [取消]**** 按鈕不進行變更。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [在 Visual Studio 中重構](../ide/refactoring-in-visual-studio.md)
-- [快速動作](../ide/quick-actions.md)
+- [快速操作](../ide/quick-actions.md)

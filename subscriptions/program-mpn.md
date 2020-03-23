@@ -7,10 +7,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 有關提供哪些訂用帳戶、套用哪些規則，以及 MPN 中提供多少訂用帳戶的詳細資料。
 ms.openlocfilehash: ddafa2daef34d4a23de448235ffa186c1bb27319
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947045"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳戶
@@ -23,7 +23,7 @@ ms.locfileid: "78947045"
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>獲得至少一項任何種類專長認證的核心 Visual Studio 權益
 
-| 僅在銀級取得的專長認證               | 至少有一項專長認證獲得金級   |
+| 僅在銀牌級別獲得的能力               | 在金牌級別上至少獲得一項能力   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 個 Visual Studio Enterprise 訂用帳戶                   | 10 個 Visual Studio Enterprise 訂用帳戶          |
 
@@ -37,7 +37,7 @@ ms.locfileid: "78947045"
 | 雲端生產力                          | 5 個 Visual Studio Enterprise 訂用帳戶                  | 25 個 Visual Studio Enterprise 訂用帳戶               |
 | DevOps                                      | 5 個 Visual Studio Enterprise 訂用帳戶                  | 25 個 Visual Studio Enterprise 訂用帳戶                |
 
-無論合作夥伴獲得多少專長認證，Visual Studio 訂用帳戶的數量限制如下：
+無論合作夥伴獲得多少能力，Visual Studio 訂閱的數量都受到限制，如下所示：
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>透過專長認證取得之 Visual Studio 訂用帳戶限制
 
@@ -47,7 +47,7 @@ ms.locfileid: "78947045"
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>購買行動套件的合作夥伴訂用帳戶
 
-具有專長認證的合作夥伴有資格購買行動套件。 每位合作夥伴只能購買一組行動套件。
+具有能力的合作夥伴有資格購買操作包。 每位合作夥伴只能購買一組行動套件。
 
 使用行動套件，合作夥伴獲得 **3 個 Visual Studio Professional (MPN) 訂用帳戶**。 Visual Studio Professional (MPN) 是自訂的供應項目，市面上沒有市售的對等項目。 以下是包含的內容：
 
@@ -57,17 +57,17 @@ ms.locfileid: "78947045"
 
 Visual Studio Professional (MPN) 訂閱者也可以下載並使用軟體進行開發，包括 SQL Server Developer Edition。
 
-Visual Studio Professional （MPN）訂用帳戶不包括 Azure DevOps Services 權益、Azure DevTest 個人點數、技術支援、訓練，或提供的 Visual Studio 訂閱所提供的其他訂閱者權益合理.
+視覺化工作室專業版 （MPN） 訂閱不包括 Azure DevOps 服務權益、Azure DevTest 個人積分、技術支援、培訓或其他訂閱者權益，這些權益與提供的 Visual Studio 訂閱一起提供商業。
 
 ## <a name="internal-use-only-restriction"></a>僅供內部使用限制
 
 MPN 規則規定，所有視為方案權益提供的軟體僅能供內部使用。 這適用於個別 Visual Studio 訂閱者運用提供的軟體，以及整體的 MPN 軟體授權權益。
 
-此僅供內部使用限制基本上表示合作夥伴不能將軟體用為他們為自己組織以外的對象所執行工作的一部分。 建立將由合作夥伴員工使用的應用程式，但不允許建立屬於用戶端專案的應用程式。
+此僅供內部使用限制基本上表示合作夥伴不能將軟體用為他們為自己組織以外的對象所執行工作的一部分。 構建僅由合作夥伴員工使用的應用可以，但不允許生成屬於用戶端專案的應用。
 
 ## <a name="sign-in-required-with-visual-studio"></a>需要使用 Visual Studio 登入
 
-使用透過 MPN 提供的 Visual Studio 訂用帳戶，獲得授權的使用者必須使用啟用 Visual Studio 訂用帳戶所用之相同的身分識別/登入來登入 Visual Studio。 不提供產品金鑰來解除鎖定產品;登入是執行 Visual Studio 的唯一選項。 在 Visual Studio 停止運作之前，Visual Studio 訂閱者最多可以離線操作 30 天。 在線上工作時，Visual Studio 會以無訊息模式定期重新整理使用者的授權狀態，以確保訂用帳戶仍然有效。
+使用透過 MPN 提供的 Visual Studio 訂用帳戶，獲得授權的使用者必須使用啟用 Visual Studio 訂用帳戶所用之相同的身分識別/登入來登入 Visual Studio。 不提供產品金鑰來解鎖產品;登錄是運行視覺化工作室的唯一選項。 在 Visual Studio 停止運作之前，Visual Studio 訂閱者最多可以離線操作 30 天。 在線上工作時，Visual Studio 會以無訊息模式定期重新整理使用者的授權狀態，以確保訂用帳戶仍然有效。
 
 ## <a name="resources"></a>資源
 
@@ -77,10 +77,10 @@ MPN 規則規定，所有視為方案權益提供的軟體僅能供內部使用�
 
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -18,18 +18,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3225777c020272a24ac124bf6d039c2154e2ff3
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77630947"
 ---
 # <a name="wpf-targets-files"></a>WPF .targets 檔案
 
-Windows Presentation Foundation （WPF）藉由加入一組將 WPF 特定的工作（結合到特殊的 *.targets*檔案，也就是*Microsoft WinFX*）來擴充 MSBuild。 此檔案結合了在 WPF 中建立 MSBuild 專案所需的一組 MSBuild 工作。
+Windows 演示基礎 （WPF） 通過添加一組特定于 WPF 的任務來擴展 MSBuild，這些任務被合併到特殊的 *.target*檔中*Microsoft.WinFX.target*。 此檔合併了在 WPF 中構建 MSBuild 專案所需的 MSBuild 任務集。
 
 ## <a name="see-also"></a>另請參閱
 
-- [MSBuild .targets 檔案](../msbuild/msbuild-dot-targets-files.md)
+- [MSBuild .target 檔](../msbuild/msbuild-dot-targets-files.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
 - [建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

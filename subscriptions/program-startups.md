@@ -7,14 +7,14 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 詳細說明 Microsoft for Startups 計劃提供哪些訂閱。
 ms.openlocfilehash: 11cc8b0fbc75a17d2aeaf21128359ab040b982ea
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947117"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>向初學者提供的 Visual Studio 訂用帳戶
-加入 Microsoft for Startups 計劃的合格新創公司可獲得 5 個 [Visual Studio Enterprise 每月雲端訂閱](https://visualstudio.microsoft.com/vs/pricing/)。 
+合格的初創公司誰加入微軟的啟動計畫可以賺取5視覺化工作室企業[每月雲訂閱](https://visualstudio.microsoft.com/vs/pricing/)。 
 
 ## <a name="subscription-details"></a>訂用帳戶詳細資料 
 這些是與市售相同的訂閱，但沒有特殊限制。 每個訂用帳戶都必須先指派給終端使用者 (已獲得授權的使用者)，使用者才能執行 Visual Studio 並在 Azure DevOps Services 中辨識為 Visual Studio Enterprise 訂閱者。
@@ -27,7 +27,7 @@ ms.locfileid: "78947117"
 不會提供產品金鑰來將產品解除鎖定，登入是執行 Visual Studio 的唯一選項。 在 Visual Studio 停止運作之前，Visual Studio 訂閱者最多可以離線操作 30 天。 在線上工作時，Visual Studio 會以無訊息模式定期重新整理使用者的授權狀態，以確保訂用帳戶仍然有效。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>問：如何處理每月雲端訂閱費用？
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>問：雲端訂閱的月租方案如何收費？
 答：第一期帳單中，我們會依當月的剩餘天數按 比例分配數量。 例如，如果在 4 月 15 日購買了 10 個 Visual Studio Professional 雲端訂閱月租方案，我們會收取 5 個單位的費用，因為該月只剩 50% 的費用 (4 月有 30 天，還剩下 15 天)。 自 5 月 1 日起至您取消前的每個月，會依完整的 10 個單位計費。
 
 稍後當您增加付費數量時，我們也會將增加的單位按比例分配至當月的剩餘天數。 因此，如果您在 5 月 10 日購買 1 個以上的 Visual Studio Professional 雲端訂閱月租方案，我們大約收取 0.677 個單位的費用 (5 月有 31 天，還有 21 天)。
@@ -40,10 +40,10 @@ ms.locfileid: "78947117"
 至於年度雲端訂閱，取消要到原購買起算 12 個月後的該月一日才會生效，或自上次年度續約收費起算 12 個月後生效。 例如，如果您在 2018 年 1 月 3 日購買了 Visual Studio Professional 年度雲端訂用帳戶，當此訂用帳戶自動續訂一年時，就會一直保持有效到 2019 年 2 月 1 日。 如果您這個日期和 2020 年 2 月 1 日之間的任何時間取消訂閱，則此訂閱會在 2020 年 2 月 1 日到期。 取消方在年度雲端訂閱的訂閱年度中不會有任何退款。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
+- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 [深入了解 Microsoft for Startups](https://startups.microsoft.com)

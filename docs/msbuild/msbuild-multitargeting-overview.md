@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af7649a75fbf3ded0cf5d09e9063b49f4fcab1b2
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633326"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多目標概觀
@@ -28,7 +28,7 @@ ms.locfileid: "77633326"
 
 - 您可以將 .NET Framework 以外的架構作為目標，例如 Silverlight Framework。
 
-- 您可以將「Framework 設定檔」當做目標，這是預先定義的目標 Framework 子集。
+- 您可以將「Framework 設定檔」** 當做目標，這是預先定義的目標 Framework 子集。
 
 - 如果 .NET Framework 目前版本的 Service Pack 已發行，您可以將它當做目標。
 
@@ -36,11 +36,11 @@ ms.locfileid: "77633326"
 
 ## <a name="target-framework-and-platform"></a>目標架構和平台
 
- 「目標架構」是建置專案以在其上執行的 .NET Framework 版本，而「目標平台」是建置專案以在其上執行的系統平台。  例如，您可能想要設定 .NET Framework 2.0 應用程式，在與 802x86 處理器系列 (x86) 相容的 32 位元平台上執行。 目標 Framework 和目標平台的組合稱為「目標內容」。 如需詳細資訊，請參閱[目標架構和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。
+ 「目標架構」** 是建置專案以在其上執行的 .NET Framework 版本，而「目標平台」** 是建置專案以在其上執行的系統平台。  例如，您可能想要設定 .NET Framework 2.0 應用程式，在與 802x86 處理器系列 (x86) 相容的 32 位元平台上執行。 目標 Framework 和目標平台的組合稱為「目標內容」**。 如需詳細資訊，請參閱[目標 Framework 和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。
 
 ## <a name="toolset-toolsversion"></a>Toolset (ToolsVersion)
 
- 工具組會將工具、工作以及用來建立應用程式的目標收集在一起。 工具組包括 *csc.exe* 和 *vbc.exe* 這類編譯器、一般 targets 檔案 (*microsoft.common.targets*) 和一般 tasks 檔案 (*microsoft.common.tasks*)。 4\.5 工具組可以用來以 .NET Framework 版本 2.0、3.0、3.5、4 和 4.5 為目標。 不過，2.0 工具組只能用來以 .NET Framework 版本 2.0 為目標。 如需詳細資訊，請參閱 [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。
+ 工具組會將工具、工作以及用來建立應用程式的目標收集在一起。 工具集包括編譯器，如*csc.exe*和*vbc.exe、* 通用目的檔案 *（microsoft.common.target）* 和常見任務檔 *（microsoft.common.tasks）。* 4.5 工具組可以用來以 .NET Framework 版本 2.0、3.0、3.5、4 和 4.5 為目標。 不過，2.0 工具組只能用來以 .NET Framework 版本 2.0 為目標。 如需詳細資訊，請參閱 [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。
 
 ## <a name="reference-assemblies"></a>參考組件
 

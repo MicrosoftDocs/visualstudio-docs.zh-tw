@@ -1,18 +1,18 @@
 ---
-title: 協助工具
+title: Accessibility
 description: 本文介紹 Visual Studio for Mac 中的協助工具功能及其啟用方式。
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.openlocfilehash: c0f056643a8cea0c9a5eca9801d2bd008e0793a8
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984873"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79301682"
 ---
-# <a name="accessibility"></a>協助工具
+# <a name="accessibility"></a>Accessibility
 
 除了 macOS 中的功能和公用程式之外，Visual Studio for Mac 具有下列功能，可讓身心障礙人士更方便存取：
 
@@ -28,13 +28,13 @@ ms.locfileid: "74984873"
 
 Visual Studio for Mac 中的協助工具功能預設為關閉。 若要啟用，請遵循下列步驟：
 
-1. 移至 [Visual Studio] > [偏好設定] > [其他] > [協助工具]。
+1. 移至 [Visual Studio] > [偏好設定] > [其他] > [協助工具]****。
 
-2. 如下圖所示，選取 [啟用協助工具] 核取方塊：
+2. 如下圖所示，選取 [啟用協助工具]**** 核取方塊：
 
     ![啟用協助工具核取方塊](media/accessibility-image1.png)
 
-3. 按 [重新啟動 Visual Studio] 按鈕，讓協助工具功能生效。
+3. 按 [重新啟動 Visual Studio]**** 按鈕，讓協助工具功能生效。
 
 或者，您可以使用命令列來啟用協助工具功能。 做法是在終端機中輸入下列命令：
 
@@ -46,7 +46,7 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 ## <a name="how-to-use-keyboard-navigation"></a>如何：使用鍵盤巡覽
 
-若要啟用鍵盤巡覽，請將 [系統偏好設定] > [鍵盤] > [快速鍵] 中的 [完整鍵盤存取] 選項設定為 [所有控制項]：
+若要啟用鍵盤巡覽，請將 [系統偏好設定] > [鍵盤] > [快速鍵]**** 中的 [完整鍵盤存取] 選項設定為 [所有控制項]****：
 
 ![macos 中的系統偏好設定面板](media/accessibility-image2.png)
 
@@ -77,6 +77,6 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 - [VoiceOver 入門](https://help.apple.com/voiceover/info/guide/10.12/)
 - [macOS 中的 VoiceOver 命令](https://lab.dotjay.com/notes/voiceover-commands/) \(英文\)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio (Windows) 的協助工具功能](/visualstudio/ide/reference/accessibility-features-of-visual-studio)

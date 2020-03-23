@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77579532"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash 工作
 
-驗證檔案是否符合預期的檔案雜湊。 如果雜湊不相符，工作就會失敗。
+驗證檔案是否符合預期的檔案雜湊。 如果雜湊不匹配，則任務將失敗。
 
 這個工作已在 15.8 中新增，但是需要[因應措施](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272)以用於 16.0 以下的 MSBuild 版本。
 
@@ -34,7 +34,7 @@ ms.locfileid: "77579532"
 
 |參數|描述|
 |---------------|-----------------|
-|`File`|必要的 `String` 參數。<br /><br />要雜湊和驗證的檔案。|
+|`File`|必要的 `String` 參數。<br /><br />要雜湊和驗證的檔。|
 |`Hash`|必要的 `String` 參數。<br /><br />檔案的預期雜湊。|
 |`Algorithm`|選擇性的 `String` 參數。<br /><br />演算法。 允許值：`SHA256`、`SHA384`、`SHA512`。 預設值 = `SHA256`。|
 |`HashEncoding`|選擇性的 `String` 參數。<br /><br />要用於產生雜湊的編碼。 預設為 `hex`。 允許值：`hex`、`base64`。|
@@ -61,7 +61,7 @@ ms.locfileid: "77579532"
 </Project>
 ```
 
-在 MSBuild 16.5 和更新版本中，如果您不想讓組建在雜湊不相符時失敗（例如，如果您使用雜湊比較當做控制流程的條件），您可以使用下列程式碼將警告降級為訊息：
+在 MSBuild 16.5 及更高版本中，如果不希望生成在雜湊不匹配時失敗（例如，如果將雜湊比較用作控制流的條件），則可以使用以下代碼將警告降級為消息：
 
 ```xml
   <PropertyGroup>
@@ -88,4 +88,4 @@ ms.locfileid: "77579532"
 ## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590874"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
@@ -29,7 +29,7 @@ ms.locfileid: "75590874"
 
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>語法顏色標示、陳述式完成和「巡覽至」支援
 
-Visual Studio 編輯器中的語法顏色標示、陳述式完成 (也稱為 IntelliSense) 和「巡覽至」等功能，可協助您更輕鬆地撰寫、閱讀和編輯您的程式碼。 下列螢幕擷取畫面顯示在 Visual Studio 中編輯 Perl 指令碼的範例。 語法會自動以色彩標示。 比方說，程式碼中的註解會標示為綠色、程式碼為黑色、路徑為是紅色，陳述式則為藍色。 Visual Studio 編輯器會自動將語法顏色標示套用至任何支援的語言。 此外，當您開始輸入已知的語言關鍵字或物件時，陳述式完成就會顯示可能陳述式和物件的清單。 陳述式完成可協助您更快速且輕鬆地撰寫程式碼。
+Visual Studio 編輯器中的語法顏色標示、陳述式完成 (也稱為 IntelliSense) 和「巡覽至」__ 等功能，可協助您更輕鬆地撰寫、閱讀和編輯您的程式碼。 下列螢幕擷取畫面顯示在 Visual Studio 中編輯 Perl 指令碼的範例。 語法會自動以色彩標示。 比方說，程式碼中的註解會標示為綠色、程式碼為黑色、路徑為是紅色，陳述式則為藍色。 Visual Studio 編輯器會自動將語法顏色標示套用至任何支援的語言。 此外，當您開始輸入已知的語言關鍵字或物件時，陳述式完成就會顯示可能陳述式和物件的清單。 陳述式完成可協助您更快速且輕鬆地撰寫程式碼。
 
 ![Perl 指令碼中的語法顏色標示](../ide/media/vside_perledit.png)
 
@@ -38,11 +38,11 @@ Visual Studio 目前使用 [TextMate 文法](https://manual.macromates.com/en/la
 |||||||
 |-|-|-|-|-|-|
 |Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|移至|JavaDoc|Objective-C|ShaderLab|C#|
+|Clojure|Go|JavaDoc|Objective-C|ShaderLab|C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
-|Docker|Jade|品牌|Ruby|TypeScript|YAML|
+|Docker|Jade|請確定|Ruby|TypeScript|YAML|
 
 除了語法顏色標示和基本陳述式完成之外，Visual Studio 也有一項稱為 [「巡覽至」](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/)的功能。 這項功能可讓您快速搜尋程式碼檔案、檔案路徑和程式碼符號。 Visual Studio 提供下列語言版本的「巡覽至」支援。
 
@@ -56,7 +56,7 @@ Visual Studio 目前使用 [TextMate 文法](https://manual.macromates.com/en/la
 
 - Visual Basic
 
-- 移至
+- Go
 
 - Java
 
@@ -70,24 +70,24 @@ Visual Studio 藉由使用 [TextMate 文法](https://manual.macromates.com/en/la
 
 在下列資料夾中，為 Visual Studio 新增任何新的 TextMate 文法︰
 
-*%userprofile%\\.vs\Extensions*
+*%使用者設定檔\\% .vs_擴展*
 
 如果適用於您的情況，在此基底路徑下，新增下列資料夾︰
 
 |資料夾名稱|描述|
 |-----------------|-----------------|
-|\\\<語言名稱>|語言資料夾。 將 \<語言名稱> 取代為語言的名稱。 例如 *\Matlab*。|
-|*\Syntaxes*|文法資料夾。 包含語言的文法 *.json* 檔案，例如 *Matlab.json*。|
-|*\Snippets*|程式碼片段資料夾。 包含語言的程式碼片段。|
+|\\*\<語言名稱>*|語言資料夾。 將*\<語言名稱>* 替換為語言的名稱。 例如 *\Matlab*。|
+|*\Syntaxes*|文法資料夾。 包含語言的語法 *.json*檔，如*Matlab.json*。|
+|**片段*|程式碼片段資料夾。 包含語言的程式碼片段。|
 
-在 Windows 中，會將 *%userprofile%* 解析為 *c:\Users\\\<使用者名稱>* 路徑。 如果您的系統上的 [Extensions] 資料夾不存在，您必須建立它。 如果資料夾已存在，它會隱藏。
+在 Windows 中，會將 *%userprofile%* 解析為 *c:\Users\\\<使用者名稱>* 路徑。 如果系統上不存在 *"擴展"* 資料夾，則需要創建該資料夾。 如果資料夾已存在，它會隱藏。
 
 > [!TIP]
 > 如果您在編輯器中有檔案，您將需要關閉它們再重新開啟，以在您新增 TextMate 文法之後查看語法醒目提示。
 
 如需如何建立 TextMate 文法的詳細資料，請參閱 [TextMate - 語言文法簡介](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) \(英文\) 和[如何為 Textmate 組合建立語言文法及自訂佈景主題的筆記](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) \(英文\)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [新增語言伺服器通訊協定延伸模組](../extensibility/adding-an-lsp-extension.md)
 - [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)

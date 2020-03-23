@@ -1,29 +1,29 @@
 ---
-title: Visual Studio 容器工具組建和 debug 總覽
+title: 視覺化工作室容器工具生成和調試概述
 author: ghogen
-description: 容器工具組建和偵錯工具的總覽
+description: 容器工具生成和調試過程概述
 ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027266"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio 如何建置容器化應用程式
 
-無論您是從 Visual Studio IDE 建立，或是設定命令列組建，都必須知道 Visual Studio 如何使用 Dockerfile 來建立您的專案。  基於效能考慮，Visual Studio 會遵循容器化應用程式的特殊流程。 當您藉由修改 Dockerfile 自訂您的組建流程時，瞭解 Visual Studio 組建專案的方式特別重要。
+無論您是從 Visual Studio IDE 構建，還是設置命令列生成，您都需要瞭解 Visual Studio 如何使用 Dockerfile 構建專案。  出於性能原因，Visual Studio 會遵循容器化應用的特殊過程。 通過修改 Dockerfile 自訂生成過程時，瞭解 Visual Studio 如何構建專案尤為重要。
 
-當 Visual Studio 建立不使用 Docker 容器的專案時，它會在本機電腦上叫用 MSBuild，並在本機方案資料夾下的資料夾（通常是 `bin`）中產生輸出檔案。 不過，針對容器化的專案，組建程式會考慮 Dockerfile 的指示來建立容器化應用程式。 Visual Studio 使用的 Dockerfile 會分成多個階段。 此程式依賴 Docker 的*多階段組建*功能。
+當 Visual Studio 生成不使用 Docker 容器的專案時，它會在本地電腦上調用 MSBuild，並在本地解決方案資料夾下的資料夾中生成輸出檔案`bin`（通常為 ）。 但是，對於容器化專案，生成過程會考慮 Dockerfile 關於構建容器化應用的說明。 Visual Studio 使用的 Docker 檔分為多個階段。 此過程依賴于 Docker 的*多階段構建*功能。
 
-## <a name="multistage-build"></a>多階段組建
+## <a name="multistage-build"></a>多階段構建
 
-多階段組建功能有助於讓容器的建立作業更有效率，並讓容器只包含應用程式在執行時間所需的位，使其變得更小。 多階段 build 用於 .NET Core 專案，而不是 .NET Framework 專案。
+多階段生成功能有助於提高構建容器的過程，並通過允許容器僅包含應用在運行時所需的位來縮小容器。 多階段生成用於 .NET 核心專案，而不是 .NET 框架專案。
 
-多階段組建可讓您在產生中繼映射的階段中建立容器映射。 例如，假設 Visual Studio 產生的一般 Dockerfile，`base`第一個階段：
+多階段生成允許在生成中間圖像的階段創建容器映射。 例如，考慮 Visual Studio 生成的典型 Dockerfile - 第一`base`階段是 ：
 
 ```
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
@@ -32,9 +32,9 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-Dockerfile 中的程式程式碼以 Microsoft Container Registry （mcr.microsoft.com）中的 Debian 映射開頭，並建立可公開端口80和443的中繼映射 `base`，並將工作目錄設定為 `/app`。
+Dockerfile 中的行從 Microsoft 容器註冊表 （mcr.microsoft.com） 中的 Debian 映射開始，`base`並創建一個中間映射，公開端口 80 和 443，並將工作目錄設置為`/app`。
 
-下一個階段是 `build`，如下所示：
+下一階段是`build`，如下所示：
 
 ```
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
@@ -46,7 +46,7 @@ WORKDIR "/src/WebApplication43"
 RUN dotnet build "WebApplication43.csproj" -c Release -o /app
 ```
 
-您可以看到 `build` 階段是從登錄的不同原始映射（`sdk` 而不是 `aspnet`）開始，而不是從基底繼續進行。  `sdk` 的映射具有所有組建工具，因此它會比 aspnet 映射大得多，因為它只包含執行時間元件。 當您查看 Dockerfile 的其餘部分時，使用個別影像的原因會變得很清楚：
+您可以看到，`build`該階段從與註冊表 （`sdk`而不是`aspnet`） 的不同原始映射開始，而不是從基級繼續。  該`sdk`映射具有所有生成工具，因此它比僅包含運行時元件的 aspnet 映射大得多。 當您查看 Dockerfile 的其餘部分時，使用單獨映射的原因變得清晰：
 
 ```
 FROM build AS publish
@@ -58,15 +58,15 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 ```
 
-最後一個階段會從 `base`重新開始，並包含 `COPY --from=publish` 將已發行的輸出複製到最終的映射。 此程式可讓最終影像變得很小，因為它不需要包含 `sdk` 映射中的所有組建工具。
+最後階段從`base`重新開始，包括`COPY --from=publish`將已發佈的輸出複製到最終圖像。 此過程使最終映射可能更小，因為它不需要包括`sdk`映射中的所有生成工具。
 
-## <a name="building-from-the-command-line"></a>從命令列建立
+## <a name="building-from-the-command-line"></a>從命令列生成
 
-如果您想要在 Visual Studio 外部建立，您可以使用 `docker build` 或 `MSBuild` 從命令列建立。
+如果要在 Visual Studio 外部生成，則可以使用`docker build`或`MSBuild`從命令列生成。
 
-### <a name="docker-build"></a>docker 組建
+### <a name="docker-build"></a>docker build
 
-若要從命令列建立容器化解決方案，您通常可以針對方案中的每個專案使用命令 `docker build <context>`。 您會提供*組建內容*引數。 Dockerfile 的*組建內容*是本機電腦上的資料夾，用來做為產生映射的工作資料夾。 例如，當您將檔案複製到容器時，它就是您複製檔案的資料夾。  在 .NET Core 專案中，使用包含方案檔（.sln）的資料夾。  以相對路徑表示，此引數通常會是 "：" （代表專案資料夾中的 Dockerfile），以及其父資料夾中的方案檔。  針對 .NET Framework 專案，組建內容是專案資料夾，而不是方案資料夾。
+要從命令列生成容器化解決方案，通常`docker build <context>`可以使用 解決方案中的每個專案的命令。 提供*生成上下文*參數。 Dockerfile 的*生成上下文*是本地電腦上的資料夾，用作生成映射的工作資料夾。 例如，它是從複製到容器時複製檔的資料夾。  在 .NET Core 專案中，使用包含解決方案檔 （.sln） 的資料夾。  此參數通常表示為".."，用於專案資料夾中的 Dockerfile 及其父資料夾中的解決方案檔。  對於 .NET 框架專案，生成上下文是專案資料夾，而不是解決方案資料夾。
 
 ```cmd
 docker build -f Dockerfile ..
@@ -74,58 +74,58 @@ docker build -f Dockerfile ..
 
 ### <a name="msbuild"></a>MSBuild
 
-針對 .NET Framework 專案所建立 Visual Studio 的 dockerfile （以及 Visual Studio 2017 Update 4 之前的 Visual Studio 版本所建立的 .NET Core 專案），都不是多階段 Dockerfile。  這些 Dockerfile 中的步驟不會編譯您的程式碼。  相反地，當 Visual Studio 建立 .NET Framework Dockerfile 時，它會先使用 MSBuild 編譯您的專案。  當此動作成功時，Visual Studio 會建立 Dockerfile，這會直接將 MSBuild 的組建輸出複製到產生的 Docker 映射。  由於編譯器代碼的步驟不包含在 Dockerfile 中，因此您無法從命令列使用 `docker build` 建立 .NET Framework 的 Dockerfile。 您應該使用 MSBuild 來建立這些專案。
+Visual Studio 為 .NET 框架專案（和 .NET Core 專案創建的 Dockerfile，在 Visual Studio 2017 更新 4 之前使用 Visual Studio 版本創建）不是多階段 Dockerfile。  這些 Dockerfiles 中的步驟不會編譯您的代碼。  相反，當 Visual Studio 構建 .NET 框架 Dockerfile 時，它首先使用 MSBuild 編譯您的專案。  成功後，Visual Studio 會生成 Dockerfile，只需將 MSBuild 中的生成輸出複製到生成的 Docker 映射中即可。  由於編譯代碼的步驟不包括在 Dockerfile 中，因此無法使用命令列生成 .NET 框架 Docker 檔`docker build`。 您應該使用 MSBuild 來構建這些專案。
 
-若要建立單一 docker 容器專案的映射，您可以使用 MSBuild 搭配 `/t:ContainerBuild` 命令選項。 例如：
+要為單個 Docker 容器專案生成映射，`/t:ContainerBuild`可以使用 MSBuild 與命令選項一起使用。 例如：
 
 ```cmd
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-當您從 Visual Studio IDE 建立方案時，您會看到類似于 [**輸出**] 視窗中所顯示的輸出。 請一律使用 `/p:Configuration=Release`，因為在 Visual Studio 使用多階段組建優化的情況下，建立**Debug**設定時的結果可能不會如預期般執行。 請參閱[調試](#debugging)。
+當您從視覺化工作室 IDE 構建解決方案時，您將看到與 **"輸出"** 視窗中看到的輸出類似的輸出。 始終使用`/p:Configuration=Release`，因為在 Visual Studio 使用多階段生成優化的情況下，生成**調試**配置時的結果可能不符合預期。 請參閱[調試](#debugging)。
 
-如果您使用 Docker Compose 專案，請使用此命令來建立映射：
+如果使用 Docker 合成專案，請使用此命令生成映射：
 
 ```cmd
 msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-compose.dcproj
 ```
 
-## <a name="project-warmup"></a>專案準備
+## <a name="project-warmup"></a>專案預熱
 
-[*專案*準備] 是指為專案選取 Docker 設定檔時（也就是在載入專案或加入 Docker 支援時）會發生的一系列步驟，以便改善後續執行的效能（**f5**或**Ctrl**+**f5**）。 這可在 **工具**  > **選項** 下設定 > **容器工具**。 以下是在背景執行的工作：
+*專案預熱*是指在為專案選擇 Docker 設定檔（即載入專案或添加 Docker 支援時）以提高後續運行 **（F5**或**Ctrl**+**F5）** 的性能時發生的一系列步驟。 這在**工具** > **選項** > **容器工具**下可配置。 以下是在後臺運行的任務：
 
-- 檢查 Docker Desktop 是否已安裝且正在執行。
-- 確定 Docker Desktop 已設定為與專案相同的作業系統。
-- 在 Dockerfile 的第一個階段中提取映射（大部分 Dockerfile 中的 `base` 階段）。  
-- 建立 Dockerfile 並啟動容器。
+- 檢查 Docker 桌面是否安裝並運行。
+- 確保 Docker 桌面設置為與專案相同的作業系統。
+- 在 Dockerfile 的第一階段（大多數 Dockerfile`base`中階段）中拉出圖像。  
+- 生成 Dockerfile 並啟動容器。
 
-準備工作只會在**快速**模式中執行，因此執行中的容器將會裝載應用程式資料夾。 這表示對應用程式所做的任何變更都不會使容器無效。 因此可大幅改善偵錯工具效能，並縮短長時間執行工作（例如提取大型映射）的等候時間。
+預熱僅在**快速**模式下進行，因此正在運行的容器將安裝應用資料夾卷。 這意味著對應用的任何更改不會使容器無效。 因此，這顯著提高了調試性能，並減少了長時間運行任務（如拉大映射）的等待時間。
 
-## <a name="volume-mapping"></a>磁片區對應
+## <a name="volume-mapping"></a>卷映射
 
-若要在容器中工作的偵錯工具，Visual Studio 使用磁片區對應，從主機電腦對應偵錯工具和 NuGet 資料夾。 磁片區對應會在[這裡](https://docs.docker.com/storage/volumes/)的 Docker 檔中說明。 以下是裝載于容器中的磁片區：
+為了在容器中進行調試，Visual Studio 使用卷映射從主機映射調試器和 NuGet 資料夾。 卷映射[在此處](https://docs.docker.com/storage/volumes/)的 Docker 文檔仲介紹。 以下是裝入容器中的卷：
 
 |||
 |-|-|
-| **遠端偵錯程式** | 包含在容器中執行偵錯工具所需的位（視專案類型而定）。 詳細說明請見 |[[調試](#debugging)] 區段中的詳細資料。
-| **應用程式資料夾** | 包含 Dockerfile 所在的專案資料夾。|
-| **源資料夾** | 包含傳遞至 Docker 命令的組建內容。|
-| **NuGet 封裝資料夾** | 包含從專案中的*obj\{專案} .props*檔案中讀取的 NuGet 封裝和回溯資料夾。 |
+| **遠端偵錯器** | 包含在容器中運行調試器所需的位，具體取決於專案類型。 這在更多 |["調試](#debugging)"部分中的詳細資訊。
+| **應用資料夾** | 包含 Docker 檔所在的專案資料夾。|
+| **源資料夾** | 包含傳遞給 Docker 命令的生成上下文。|
+| **NuGet 包資料夾** | 包含從*專案中 obj\{project_.csproj.nuget.g.props*檔中讀取的 NuGet 包和回退資料夾。 |
 
-針對 ASP.NET 核心 web 應用程式，可能會有兩個額外的 SSL 憑證資料夾和使用者密碼，在下一節中會有更詳細的說明。
+對於ASP.NET核心 Web 應用，SSL 憑證和使用者機密可能還有兩個額外的資料夾，下一節將對此進行更詳細的說明。
 
-## <a name="ssl-enabled-aspnet-core-apps"></a>已啟用 SSL 的 ASP.NET Core 應用程式
+## <a name="ssl-enabled-aspnet-core-apps"></a>啟用 SSL ASP.NET核心應用
 
-Visual Studio 中的容器工具支援使用 dev 憑證來對具備 SSL 功能的 ASP.NET 核心應用程式進行程式開發，方法與您預期它在沒有容器的情況下運作。 若要進行這項工作，Visual Studio 新增幾個步驟來匯出憑證，並將它提供給容器使用。 以下是在容器中進行偵錯工具時，Visual Studio 為您處理的流程：
+Visual Studio 中的容器工具支援使用開發證書調試啟用 SSL ASP.NET核心應用，就像您希望它在沒有容器的情況下工作一樣。 為此，Visual Studio 添加了幾個步驟來匯出證書並將其提供給容器。 以下是 Visual Studio 在容器中調試時為您處理的流：
 
-1. 確保本機開發憑證存在，並透過 `dev-certs` 工具在主機電腦上受到信任。
-2. 使用儲存在此特定應用程式之使用者秘密存放區中的安全密碼，將憑證匯出至%APPDATA%\ASP.NET\Https。
-3. 磁片區-裝載下列目錄：
+1. 通過`dev-certs`該工具確保本地開發證書在主機電腦上存在並受信任。
+2. 將證書匯出到 %APPDATA%*ASP.NET_Https，該密碼存儲在此特定應用的使用者機密存儲中。
+3. 卷裝入以下目錄：
 
-   - *%APPDATA%\Microsoft\UserSecrets*
-   - *%APPDATA%\ASP.NET\Https*
+   - *%APPDATA%*微軟_使用者秘密*
+   - *%APPDATA%*ASP.NET_HTTPs*
 
-ASP.NET Core 會尋找符合*Https*資料夾下元件名稱的憑證，這就是為什麼它會對應到該路徑中的容器。 您也可以使用環境變數（也就是 `ASPNETCORE_Kestrel__Certificates__Default__Path` 和 `ASPNETCORE_Kestrel__Certificates__Default__Password`）或在使用者秘密 json 檔案中定義憑證路徑和密碼，例如：
+ASP.NET Core 查找與*Https*資料夾下的程式集名稱匹配的證書，這就是為什麼它映射到該路徑中的容器的原因。 憑證路徑和密碼可以使用環境變數（即`ASPNETCORE_Kestrel__Certificates__Default__Path`和`ASPNETCORE_Kestrel__Certificates__Default__Password`） 或使用者機密 json 檔中定義，例如：
 
 ```json
 {
@@ -140,19 +140,19 @@ ASP.NET Core 會尋找符合*Https*資料夾下元件名稱的憑證，這就是
 }
 ```
 
-如果您的設定同時支援容器化和非容器化組建，則您應該使用環境變數，因為這些路徑是容器環境特有的。
+如果您的配置同時支援容器化和非容器化生成，則應使用環境變數，因為路徑特定于容器環境。
 
-如需有關在容器中使用 SSL 搭配 ASP.NET Core 應用程式的詳細資訊，請參閱[使用 Docker OVER HTTPS 裝載 ASP.NET Core 映射](/aspnet/core/security/docker-https)）。
+有關在容器中使用 SSL ASP.NET核心應用的詳細資訊，請參閱[通過 HTTPS 使用 Docker 託管ASP.NET核心映射](/aspnet/core/security/docker-https)。
 
 ## <a name="debugging"></a>偵錯
 
-在**Debug**設定中建立時，有數個 Visual Studio 執行的優化作業，有助於處理容器化專案的組建程式效能。 容器化應用程式的組建流程並不簡單，只要遵循 Dockerfile 中所述的步驟即可。 在容器中建立的速度會比在本機電腦上建立的速度慢很多。  因此，當您在**Debug**設定中建立時，Visual Studio 實際上會在本機電腦上建立您的專案，然後使用磁片區掛接將輸出檔案夾共用至容器。 已啟用此優化的組建稱為*快速*模式組建。
+在**調試**配置中生成時，Visual Studio 會執行一些優化，這有助於容器化專案的生成過程的性能。 容器化應用的生成過程並不像簡單地按照 Dockerfile 中概述的步驟那樣簡單。 在容器中構建比在本地電腦上構建要慢得多。  因此，當您在**調試**配置中生成時，Visual Studio 實際上在本地電腦上生成專案，然後使用卷安裝將輸出檔案夾共用到容器。 啟用此優化的生成稱為*快速*模式生成。
 
-在**快速**模式中，Visual Studio 會以指示 Docker 只建立 `base` 階段的引數來呼叫 `docker build`。  Visual Studio 會處理其餘的進程，而不考慮 Dockerfile 的內容。 因此，當您修改 Dockerfile （例如自訂容器環境或安裝其他相依性）時，您應該在第一個階段中進行修改。  在 Dockerfile 的 `build`、`publish`或 `final` 階段中的任何自訂步驟都不會執行。
+在**快速**模式下，Visual Studio`docker build`調用具有一個參數，該參數告訴`base`Docker 僅生成舞臺。  Visual Studio 處理該過程的其餘部分，而不考慮 Dockerfile 的內容。 因此，當您修改 Dockerfile 時（例如自訂容器環境或安裝其他依賴項）時，應將修改放在第一階段。  放置在 Dockerfile 的`build`、`publish`或`final`階段中的任何自訂步驟將不會執行。
 
-只有當您在**Debug**設定中建立時，才會發生此效能優化。 在**發行**設定中，組建會依照 Dockerfile 中指定的方式出現在容器中。
+只有在**在調試**配置中生成時，才會進行此性能優化。 在**發佈**配置中，生成發生在 Dockerfile 中指定的容器中。
 
-如果您想要在 Dockerfile 指定時停用效能優化和組建，請在專案檔中將**ContainerDevelopmentMode**屬性設定為 [**一般**]，如下所示：
+如果要禁用性能優化並在 Dockerfile 指定時生成，請按如下方式將**容器開發模式**屬性設置為專案檔案中**的"常規**"：
 
 ```xml
 <PropertyGroup>
@@ -160,37 +160,37 @@ ASP.NET Core 會尋找符合*Https*資料夾下元件名稱的憑證，這就是
 </PropertyGroup>
 ```
 
-若要還原效能優化，請從專案檔中移除屬性。
+要還原性能優化，請從專案檔案中刪除該屬性。
 
- 當您啟動調試（**F5**）時，可能的話，會重複使用先前啟動的容器。 如果您不想要重複使用先前的容器，您可以使用 Visual Studio 中的 [**重建**] 或 [**清除**] 命令，強制 Visual Studio 使用全新的容器。
+ 當您開始調試時 **（F5**），如果可能，將重用以前啟動的容器。 如果不想重用以前的容器，可以使用 Visual Studio 中的 **"重建**"或 **"清理"** 命令來強制 Visual Studio 使用新的容器。
 
-執行偵錯工具的進程視專案和容器作業系統的類型而定：
-
-|||
-|-|-|
-| **.NET Core 應用程式（Linux 容器）**| Visual Studio 下載 `vsdbg` 並將其對應至容器，然後使用您的程式和引數（也就是 `dotnet webapp.dll`）來呼叫它，然後偵錯工具會附加至進程。 |
-| **.NET Core 應用程式（Windows 容器）**| Visual Studio 會使用 `onecoremsvsmon` 並將其對應至容器、將其做為進入點執行，然後 Visual Studio 連接到您的程式，並將其附加至您的程式。 這類似于您通常會在另一部電腦或虛擬機器上設定遠端偵錯。|
-| **.NET Framework 應用程式** | Visual Studio 會使用 `msvsmon` 並將其對應至容器、將其做為進入點的一部分執行，以供 Visual Studio 連接到它，並附加至您的程式。|
-
-如需 `vsdbg.exe`的詳細資訊，請參閱[從 Visual Studio 在 Linux 和 OSX 上 Offroad .Net Core 的調試](https://github.com/Microsoft/MIEngine/wiki/Offroad-Debugging-of-.NET-Core-on-Linux---OSX-from-Visual-Studio)程式。
-
-## <a name="container-entry-point"></a>容器進入點
-
-Visual Studio 使用自訂容器進入點，視專案類型和容器作業系統而定，以下是不同的組合：
+運行調試器的過程取決於專案和容器作業系統的類型：
 
 |||
 |-|-|
-| **Linux 容器** | 進入點是 `tail -f /dev/null`，這是無限期等候，讓容器保持執行狀態。 當應用程式透過偵錯工具啟動時，它就是負責執行應用程式的偵錯工具（也就是 `dotnet webapp.dll`）。 如果在未進行偵錯工具的情況下啟動，則工具會執行 `docker exec -i {containerId} dotnet webapp.dll` 來執行應用程式。|
-| **Windows 容器**| 進入點類似于執行偵錯工具的 `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus`，因此正在接聽連接。 同樣地，偵錯工具會執行應用程式，並在未進行偵測的情況下啟動 `docker exec` 命令。 針對 .NET Framework web 應用程式，進入點會稍有不同，其中 `ServiceMonitor` 會新增至命令。|
+| **.NET 核心應用程式（Linux 容器）**| Visual Studio`vsdbg`會下載它並將其映射到容器，然後使用程式和參數（即`dotnet webapp.dll`），然後調試器附加到進程。 |
+| **.NET 核心應用（Windows 容器）**| Visual Studio`onecoremsvsmon`使用它並將其映射到容器，將其作為進入點運行，然後 Visual Studio 連接到它並附加到程式。 這類似于通常在另一台電腦或虛擬機器上設置遠端偵錯的方式。|
+| **.NET 框架應用** | Visual Studio`msvsmon`使用它並將其映射到容器，將其作為 Visual Studio 可以連接到該進入點的進入點的一部分運行，並附加到程式。|
 
-容器進入點只能在 docker 撰寫專案中修改，而不能在單一容器專案中修改。
+有關 的資訊`vsdbg.exe`，請參閱[Linux 上的 .NET Core 的越野調試，以及 Visual Studio 中的 OSX](https://github.com/Microsoft/MIEngine/wiki/Offroad-Debugging-of-.NET-Core-on-Linux---OSX-from-Visual-Studio)。
+
+## <a name="container-entry-point"></a>集裝箱進入點
+
+Visual Studio 根據專案類型和容器作業系統使用自訂容器進入點，下面是不同的組合：
+
+|||
+|-|-|
+| **Linux 容器** | 進入點是`tail -f /dev/null`，這是保持容器運行的無限等待。 當應用通過調試器啟動時，負責運行應用的調試器（即`dotnet webapp.dll`）。 如果在未調試的情況下啟動，該工具將運行`docker exec -i {containerId} dotnet webapp.dll`以運行應用。|
+| **視窗容器**| 進入點是運行`C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus`調試器之類的內容，因此它正在偵聽連接。 調試器運行應用，在未調試的情況下啟動`docker exec`命令也是如此。 對於 .NET Framework Web 應用，進入點在`ServiceMonitor`添加到命令的位置略有不同。|
+
+容器進入點只能在 Docker 組合專案中修改，不能在單容器專案中修改。
 
 ## <a name="next-steps"></a>後續步驟
 
-瞭解如何在專案檔中設定其他 MSBuild 屬性，以進一步自訂您的組建。 請參閱[容器專案的 MSBuild 屬性](container-msbuild-properties.md)。
+瞭解如何通過在專案檔案中設置其他 MSBuild 屬性來進一步自訂生成。 請參閱[容器專案的 MSBuild 屬性](container-msbuild-properties.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-Windows
-[Linux 上的 windows 容器上](/virtualization/windowscontainers/deploy-containers/linux-containers)的[MSBuild](../msbuild/msbuild.md)
-[Dockerfile](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
+[在](../msbuild/msbuild.md)Windows 上的 Windows
+[Dockerfile on Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
+Linux[容器上構建](/virtualization/windowscontainers/deploy-containers/linux-containers)Docker 檔

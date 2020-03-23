@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008802546d87bd44137c6d13ee2aef802877e308
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595874"
 ---
 # <a name="add-existing-project-command"></a>加入現有專案命令
@@ -29,9 +29,9 @@ ms.locfileid: "75595874"
 File.AddExistingProject filename
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 `filename`\
-選擇項。 要新增至方案的專案完整路徑和專案名稱，包括副檔名。
+選擇性。 要新增至方案的專案完整路徑和專案名稱，包括副檔名。
 
 如果 `filename` 引數包含空格，必須以引號括住。
 
@@ -47,9 +47,9 @@ File.AddExistingProject filename
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)

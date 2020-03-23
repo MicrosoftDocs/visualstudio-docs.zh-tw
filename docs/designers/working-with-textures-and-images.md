@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589860"
 ---
 # <a name="work-with-textures-and-images"></a>使用紋理和影像
@@ -50,7 +50,7 @@ ms.locfileid: "75589860"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|Title|描述|
 |-----------|-----------------|
 |[Image Editor](../designers/image-editor.md)|描述如何使用影像編輯器來處理紋理和影像。|
 |[影像編輯器範例](../designers/how-to-create-a-basic-texture.md)|提供示範如何使用影像編輯器來執行一般映像處理工作的主題連結。|

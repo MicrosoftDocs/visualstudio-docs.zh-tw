@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8c4792590565c027a316ed95abb067faa30f5dc
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632117"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>從 IDE 中啟動組建
@@ -23,7 +23,7 @@ ms.locfileid: "77632117"
 
 ## <a name="parallel-builds-and-threads"></a>平行組建和執行緒
 
- Visual Studio 允許平行組建，這需要中繼才能存取一般資源。 專案系統可以非同步執行組建，但是這類系統不得從回呼中呼叫組建函式。
+ Visual Studio 允許並行生成，這需要仲介才能訪問公共資源。 專案系統可以非同步執行組建，但是這類系統不得從回呼中呼叫組建函式。
 
  如果專案系統會修改環境變數，則必須將組建的 NodeAffinity 設為 OutOfProc。 此需求表示您無法使用主機物件，因為它們需要同處理序節點。
 

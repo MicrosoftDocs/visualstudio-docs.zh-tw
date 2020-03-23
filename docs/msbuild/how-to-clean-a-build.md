@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633911"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清除組建
@@ -34,7 +34,7 @@ ms.locfileid: "77633911"
 
      `<builtdir>BuiltApp</builtdir>`
 
-2. 如果目錄不存在，請使用 [MakeDir](../msbuild/makedir-task.md) 工作來建立目錄。 例如，
+2. 如果目錄不存在，請使用 [MakeDir](../msbuild/makedir-task.md) 工作來建立目錄。 例如：
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -47,7 +47,7 @@ ms.locfileid: "77633911"
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>移除目錄中所含的目錄和所有檔案
 
-- 使用 `RemoveDir` 工作，以移除目錄。 例如，
+- 使用 `RemoveDir` 工作，以移除目錄。 例如：
 
      `<RemoveDir Directories="$(builtdir)" />`
 
@@ -55,7 +55,7 @@ ms.locfileid: "77633911"
 
  下列程式碼範例專案包含新的目標 `Clean`，以使用 `RemoveDir` 工作來刪除目錄以及其中所含的所有檔案和目錄。 在此範例中，`Compile` 目標也會為要在清除組建時刪除的輸出項目建立個別目錄。
 
- `Compile` 定義為預設目標，因此除非您指定不同的目標，否則都會自動予以使用。 您要使用命令列參數 **-target** 指定不同的目標。 例如，
+ `Compile` 定義為預設目標，因此除非您指定不同的目標，否則都會自動予以使用。 您要使用命令列參數 **-target** 指定不同的目標。 例如：
 
  `msbuild <file name>.proj -target:Clean`
 
@@ -106,6 +106,6 @@ ms.locfileid: "77633911"
 ## <a name="see-also"></a>另請參閱
 
 - [MakeDir 工作](../msbuild/makedir-task.md)
-- [RemoveDir 工作](../msbuild/removedir-task.md)
+- [刪除 Dir 任務](../msbuild/removedir-task.md)
 - [Csc 工作](../msbuild/csc-task.md)
 - [目標](../msbuild/msbuild-targets.md)
