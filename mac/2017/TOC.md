@@ -22,7 +22,7 @@
 ## [管理專案中的參考](/visualstudio/mac/managing-references-in-a-project)
 ### [逐步解說 - 包括專案的 NuGet 套件](/visualstudio/mac/nuget-walkthrough)
 ## [管理應用程式資源](/visualstudio/mac/managing-app-resources)
-## [如何：開啟多個解決方案或執行個體](/visualstudio/mac/open-multiple-solutions)
+## [操作說明：開啟多個解決方案或執行個體](/visualstudio/mac/open-multiple-solutions)
 
 # [原始檔編輯器](/visualstudio/mac/source-editor)
 ## [重構](/visualstudio/mac/refactoring)
@@ -63,7 +63,7 @@
 ## [Azure](/visualstudio/mac/azure-workload)
 ### [Azure Functions 簡介](/visualstudio/mac/azure-functions)
 ### [教學課程：Azure Functions](/visualstudio/mac/azure-functions-lab)
-### [已連線的服務](/visualstudio/mac/connected-services)
+### [連接的服務](/visualstudio/mac/connected-services)
 ## [Unity 遊戲開發](/visualstudio/mac/unity-tools)
 ### [安裝](/visualstudio/mac/setup-vsmac-tools-unity)
 ### [使用 Unity 工具](/visualstudio/mac/using-vsmac-tools-unity)

@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b1c40412da096db63da87e04711cdc1a95b5cc84
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "75591615"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest 參考手冊
@@ -27,7 +27,7 @@ ms.locfileid: "75591615"
     * [並行](introduction.md#concurrency)
     * [機器碼](introduction.md#native-code)
     * [平台](introduction.md#platform)
-    * [Language](introduction.md#language)
+    * [語言](introduction.md#language)
     * [符號推理](introduction.md#symbolic-reasoning)
     * [不正確的堆疊追蹤](introduction.md#incorrect-stack-traces)
   - [進一步閱讀](introduction.md#further-reading)
@@ -55,7 +55,7 @@ ms.locfileid: "75591615"
   - [整數與浮點數](input-generation.md#integers-and-floats)
   - [物件](input-generation.md#objects)
   - [現有類別具現化](input-generation.md#existing-classes)
-  - [可見度](input-generation.md#visibility)
+  - [可見性](input-generation.md#visibility)
   - [參數化模擬](input-generation.md#parameterized-mocks)
   - [結構](input-generation.md#structs)
   - [陣列和字串](input-generation.md#arrays-and-strings)
@@ -123,6 +123,6 @@ ms.locfileid: "75591615"
   - [觀察到呼叫不相符](warnings-and-errors.md#observed-call-mismatch)
   - [儲存在靜態欄位的值](warnings-and-errors.md#value-static-field)
 
-## <a name="got-feedback"></a>有任何意見反應嗎？
+## <a name="got-feedback"></a>有人給您意見嗎？
 
 在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。

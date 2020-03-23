@@ -14,11 +14,11 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
-        - name: HOW TO：使用 IntelliTest 產生單元測試
+        - name: 如何：使用 IntelliTest 產生單元測試
           href: generate-unit-tests-for-your-code-with-intellitest.md
-        - name: 總覽
+        - name: 概觀
           href: intellitest-manual/introduction.md
-        - name: 使用者入門
+        - name: 開始使用
           href: intellitest-manual/getting-started.md
         - name: 章節索引
           href: intellitest-manual/index.md
@@ -146,7 +146,7 @@
               href: edit-the-test-mix-in-a-load-test-scenario.md
             - name: 測試混合模型
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: Test mix models
                   href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
                 - name: 編輯測試混合模型
@@ -225,7 +225,7 @@
           href: fix-non-detectable-dynamic-parameters-in-a-web-performance-test.md
     - name: 測試控制器和測試代理程式
       items:
-        - name: 總覽
+        - name: 概觀
           displayName: Test controllers and test agents
           href: configure-test-agents-and-controllers-for-load-tests.md
         - name: 需求
@@ -350,7 +350,7 @@
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
 - name: 使用自動程式化 UI 測試的使用者介面自動化
   items:
-    - name: 總覽
+    - name: 概觀
       displayName: Coded UI test
       href: use-ui-automation-to-test-your-code.md
     - name: 逐步解說：建立、編輯及維護自動程式化 UI 測試

@@ -20,7 +20,7 @@
       href: debugging-or-disabling-project-code-in-xaml-designer.md
     - name: Blend for Visual Studio
       items:
-        - name: 總覽
+        - name: 概觀
           href: creating-a-ui-by-using-blend-for-visual-studio.md
         - name: 繪製圖案與路徑
           href: draw-shapes-and-paths.md
@@ -30,7 +30,7 @@
           href: animate-objects-in-xaml-designer.md
         - name: 顯示資料
           href: display-data-in-blend.md
-    - name: 參考資料
+    - name: 參考
       items:
         - name: XAML 錯誤和警告
           href: xaml-errors-warnings.md

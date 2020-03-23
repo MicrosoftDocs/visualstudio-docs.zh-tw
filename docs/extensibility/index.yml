@@ -12,10 +12,10 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.openlocfilehash: e37a713b133d76bbd3d0e3fa4363238d58407ce4
-  ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 02/28/2020
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "77910858"
 landingContent:
 - title: 開始使用
@@ -32,7 +32,7 @@ landingContent:
     links:
     - text: 建立您的第一個延伸模組：Hello World
       url: /visualstudio/extensibility/extensibility-hello-world
-- title: 擴充
+- title: Extend
   linkLists:
   - linkListType: how-to-guide
     links:

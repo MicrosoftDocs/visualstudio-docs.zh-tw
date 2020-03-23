@@ -98,7 +98,7 @@ sections:
             html: <p>將雲端服務發佈到 Azure</p>
             image:
               src: 'https://docs.microsoft.com//media/common/i_deploy.svg'
-            title: 發行
+            title: 發佈
           - href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
             html: <p>針對在 Azure 中執行的雲端服務與虛擬機器進行監視及診斷</p>
             image:
@@ -117,7 +117,7 @@ sections:
             html: <p>在 Visual Studio 中存取 Azure 儲存體帳戶</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_dashboard.svg'
-            title: 存放裝置
+            title: 儲存體
           - href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
             html: <p>從 Visual Studio 存取虛擬機器</p>
             image:
@@ -136,7 +136,7 @@ sections:
             href: 'https://docs.microsoft.com/azure/azure-resource-manager/vs-azure-tools-resource-groups-deployment-projects-create-deploy'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/Azure-Data-Lake-Analytics-COLOR.svg'
-            text: Data Lake Analytics
+            text: 資料湖分析
             href: 'https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/StreamAnalytics.svg'

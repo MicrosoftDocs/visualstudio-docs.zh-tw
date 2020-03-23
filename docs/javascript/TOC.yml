@@ -1,6 +1,6 @@
 - name: JavaScript 和 TypeScript
   href: index.yml
-- name: 總覽
+- name: 概觀
   items:
     - name: Visual Studio 2019 中的 JavaScript 2019
       href: javascript-in-vs-2019.md
@@ -24,7 +24,7 @@
       href: tutorial-aspnet-with-typescript.md
     - name: 將 Node.js 應用程式發佈到 Linux App Service
       href: publish-nodejs-app-azure.md
-- name: 作法指南
+- name: 使用說明指南
   items:
     - name: 撰寫和編輯程式碼
       href: write-and-edit-code.md

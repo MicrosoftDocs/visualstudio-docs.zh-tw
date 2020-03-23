@@ -648,9 +648,9 @@
           href: include-element.md
         - name: Define 項目
           href: define-element.md
-        - name: Commands 項目
+        - name: Commands 元素
           items:
-            - name: Commands 項目
+            - name: Commands 元素
               href: commands-element.md
             - name: Menus 項目
               items:
@@ -658,11 +658,11 @@
                   href: menus-element.md
                 - name: Menu 項目
                   href: menu-element.md
-            - name: Groups 項目
+            - name: Groups 元素
               items:
-                - name: Groups 項目
+                - name: Groups 元素
                   href: groups-element.md
-                - name: Group 項目
+                - name: Group 元素
                   href: group-element.md
             - name: Buttons 項目
               items:
@@ -840,9 +840,9 @@
               href: popdirlistfunc.md
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
-        - name: 列舉程式
+        - name: 列舉值
           items:
-            - name: 列舉程式
+            - name: 列舉值
               href: enumerators.md
             - name: 命令碼
               href: command-code-enumerator.md
@@ -866,7 +866,7 @@
           href: best-practices-for-implementing-a-source-control-plug-in.md
         - name: 字串長度限制
           href: restrictions-on-string-lengths.md
-        - name: 字彙表
+        - name: 詞彙
           href: source-control-plug-in-glossary.md
         - name: 關閉原始檔控制外掛程式的相容性警告
           href: how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md
@@ -892,7 +892,7 @@
           href: vstextbuffer-object.md
         - name: VSTextView 物件
           href: vstextview-object.md
-    - name: 字彙表
+    - name: 詞彙
       href: visual-studio-sdk-glossary.md
 - name: 建立軟體開發套件
   items:

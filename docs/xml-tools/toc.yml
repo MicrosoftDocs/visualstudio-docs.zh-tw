@@ -2,7 +2,7 @@
   href: xml-tools-in-visual-studio.md
 - name: XML 編輯器
   items:
-    - name: 總覽
+    - name: 概觀
       displayName: XML editor
       href: xml-editor.md
     - name: XML 文件驗證
@@ -11,7 +11,7 @@
       href: xml-editor-intellisense-features.md
     - name: XML 片段
       items:
-        - name: 總覽
+        - name: 概觀
           displayName: XML snippets overview
           href: xml-snippets.md
         - name: 使用 XML 程式碼片段
@@ -48,7 +48,7 @@
       href: xml-schemas-dialog-box.md
 - name: XML 結構描述設計工具
   items:
-    - name: 總覽
+    - name: 概觀
       displayName: XML Schema Designer overview
       href: xml-schema-designer.md
     - name: XML 結構描述總管
@@ -108,7 +108,7 @@
               href: sample-xsd-file-relationships.md
 - name: XSLT 偵錯
   items:
-    - name: 總覽
+    - name: 概觀
       displayName: XSLT debugging
       href: debugging-xslt.md
     - name: 逐步解說：偵錯 XSLT 樣式表
