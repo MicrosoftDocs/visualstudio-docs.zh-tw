@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 8be3edaaab970dab7ef41bd8bce75c84bac54a2e
-ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71681586"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>使用 Visual Basic 在 Visual Studio 中建立 Windows Forms 應用程式
@@ -47,11 +47,11 @@ ms.locfileid: "71681586"
 
 1. 開啟 Visual Studio 2017。
 
-1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
+1. 從頂端功能表列中，選擇 [檔案]** [新增]** > ** [專案]** > ****。
 
-1. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [Windows 桌面]。 在中間窗格中，選擇 [Windows Forms App (.NET Framework)]。 然後將檔案命名為 `HelloWorld`。
+1. 在 [新增專案]**** 對話方塊的左窗格中，展開 [Visual Basic]****，然後選擇 [Windows 桌面]****。 在中間窗格中，選擇 [Windows Forms App (.NET Framework)]****。 然後將檔案命名為 `HelloWorld`。
 
-     如果您看不到 **Windows Forms App (.NET Framework)** 專案範本，請取消 [新增專案] 對話方塊，然後從頂端功能表列中選擇 [工具] > [取得工具與功能]。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發] 工作負載，然後選擇 [修改]。
+     如果您看不到 **Windows Forms App (.NET Framework)** 專案範本，請取消 [新增專案]**** 對話方塊，然後從頂端功能表列中選擇 [工具]**** > [取得工具與功能]****。 Visual Studio 安裝程式即會啟動。 選擇 **.NET 桌面開發**工作負荷，然後選擇 **"修改**"。
 
      ![Visual Studio 安裝程式中的 .NET Core 工作負載](../ide/media/install-dot-net-desktop-env.png)
 
@@ -61,28 +61,28 @@ ms.locfileid: "71681586"
 
 1. 開啟 Visual Studio 2019。
 
-1. 在開始視窗中，選擇 [建立新專案]。
+1. 在啟動視窗中，選擇 **"創建新專案**"。
 
    ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在 [**建立新專案**] 視窗中，選擇 Visual Basic 的 [ **Windows Forms 應用程式（.NET Framework）** ] 範本。
+1. 在"**創建新專案**"視窗中，為視覺化基本版選擇**Windows 表單應用 （.NET 框架）** 範本。
 
-   （如果您想要的話，可以縮小搜尋範圍，以快速取得您想要的範本。 例如，在 [搜尋] 方塊中輸入*Windows Forms 應用程式*或鍵入。 接下來，從 [語言] 清單中選擇 [ **Visual Basic** ]，然後從 [平臺] 清單中選擇 [ **Windows** ]。）  
+   （如果您願意，可以優化搜索以快速訪問所需的範本。 例如，在搜索框中輸入或鍵入*Windows 表單應用*。 接下來，從"語言"清單中選擇 **"可視基礎知識**"，然後從"平臺"清單中選擇**Windows。**  
 
    ![選擇 Windows Forms 應用程式 (.NET Framework) 的 Visual Basic 專案範本](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)]**** 範本，您可以從 [建立新專案]**** 視窗中安裝。 在 [找不到您要找的資料嗎?]**** 訊息中，選擇 [安裝更多工具和功能]**** 連結。
    >
-   > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
    > 接下來，在 Visual Studio 安裝程式中選擇 **.NET 桌面開發**工作負載。
    >
    > ![Visual Studio 安裝程式中的 .NET Core 工作負載](../ide/media/install-dot-net-desktop-env.png)
    >
-   > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+   > 接下來，選擇 Visual Studio 安裝程式中的 [修改]**** 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續]**** 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 **HelloWorld**。 接著，選擇 [建立]。
+1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中鍵入或輸入 *HelloWorld*。 然後，選擇 **"創建**"。
 
    ![在 [設定您的新專案] 視窗中，以 'HelloWorld' 命名您的專案](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
 
@@ -92,78 +92,78 @@ ms.locfileid: "71681586"
 
 ## <a name="create-the-application"></a>建立應用程式
 
-在您選取 Visual Basic 專案範本並命名檔案之後，Visual Studio 會為您開啟表單。 表單是 Windows 使用者介面。 我們會藉由將控制項新增至表單來建立「Hello World」應用程式，然後再執行應用程式。
+在您選取 Visual Basic 專案範本並命名檔案之後，Visual Studio 會為您開啟表單。 表單是 Windows 使用者介面。 我們將通過向表單添加控制項來創建"Hello World"應用程式，然後運行該應用程式。
 
 ### <a name="add-a-button-to-the-form"></a>將按鈕新增至表單
 
-1. 按一下 [工具箱] 開啟 [工具箱] 飛出視窗。
+1. 按一下 **"工具箱**"可打開工具箱快顯視窗。
 
      ![按一下 [工具箱] 開啟 [工具箱] 視窗](../ide/media/vb-toolbox-toolwindow.png)
 
-     (如果未顯示 [工具箱] 快顯選項，您可以從功能表列開啟。 若要這麼做，請**查看** > **工具箱**。 或按 **Ctrl**+**Alt**+**X**)。
+     (如果未顯示 [工具箱]**** 快顯選項，您可以從功能表列開啟。 為此，**請查看** > **工具箱**。 或者，按**Ctrl**+**Alt**+**X**.）
 
-1. 按一下**釘選**圖示，以固定 [工具箱] 視窗。
+1. 按一下 **"Pin"** 圖示以停靠**工具箱**視窗。
 
      ![按一下固定圖示，以將 [工具箱] 視窗固定到 IDE](../ide/media/vb-pin-the-toolbox-window.png)
 
-1. 按一下 [按鈕] 控制項，然後將它拖曳至表單。
+1. 按一下 [按鈕]**** 控制項，然後將它拖曳至表單。
 
      ![將按鈕新增至表單](../ide/media/vb-add-a-button-to-form1.png)
 
-1. 在 [屬性] 視窗的 [外觀] 區段 (或 [字型] 區段) 中，鍵入 `Click this`，然後按 **Enter** 鍵。
+1. 在 [屬性]**** 視窗的 [外觀]**** 區段 (或 [字型]**** 區段) 中，鍵入 `Click this`，然後按 **Enter** 鍵。
 
      ![新增表單上按鈕的文字](../ide/media/vb-button-control-text.png)
 
-     (如果未顯示 [屬性] 視窗，您可以從功能表列開啟。 若要這樣做，請按一下 [檢視] > [屬性視窗]。 或按 **F4** 鍵)。
+     (如果未顯示 [屬性]**** 視窗，您可以從功能表列開啟。 為此，請按一下"**查看** > **屬性"視窗**。 或者，按**F4**.）
 
-1. 在 [屬性] 視窗的 [設計] 區段中，將名稱從 **Button1** 變更為 `btnClickThis`，然後按 **Enter** 鍵。
+1. 在 [屬性]**** 視窗的 [設計]**** 區段中，將名稱從 **Button1** 變更為 `btnClickThis`，然後按 **Enter** 鍵。
 
      ![新增表單上按鈕的函式](../ide/media/vb-button-control-function.png)
 
    > [!NOTE]
-   > 如果您已依字母順序排列 [**屬性**] 視窗中的清單，**則會**改為顯示 [ **Button1** ] 區段。
+   > 如果在 **"屬性"** 視窗中對清單進行了字母順序排列，**則 Button1**會顯示在 **（資料繫結）** 部分中。
 
 ### <a name="add-a-label-to-the-form"></a>將標籤新增至表單
 
 既然我們已新增可建立動作的按鈕控制項，讓我們新增可將文字傳送至其中的標籤控制項。
 
-1. 從 [工具箱] 視窗中選取 [標籤] 控制項，然後將它拖放至表單的 [按一下這裡] 按鈕下方。
+1. 從 [工具箱]**** 視窗中選取 [標籤]**** 控制項，然後將它拖放至表單的 [按一下這裡]**** 按鈕下方。
 
-1. 在 [**屬性**] 視窗的 [**設計**] 區段或 [（系結 **）** ] 區段中，將 [ **Label1** ] 的名稱變更為 `lblHelloWorld`，然後按**enter**鍵。
+1. 在 **"屬性**"視窗的 **"設計"** 部分或 **（資料繫結）** 部分中，將**Label1**的名稱更改為`lblHelloWorld`，**然後按**Enter 。
 
 ### <a name="add-code-to-the-form"></a>將程式碼新增至表單
 
-1. 在 [Form1.vb &#91;設計&#93;] 視窗中，按兩下 [Click this] 按鈕開啟 [Form1.vb] 視窗
+1. 在 [Form1.vb &#91;設計&#93;]**** 視窗中，按兩下 [Click this]**** 按鈕開啟 [Form1.vb]**** 視窗 
 
-      (或者，您可以在 [方案總管] 中展開 **Form1.vb**，然後按一下 **Form1**)。
+      (或者，您可以在 [方案總管]**** 中展開 **Form1.vb**，然後按一下 **Form1**)。
 
-1. 在 [ **form1.vb] 視窗的 [** **私**用] 和 [**結束] 子**行之間，鍵入或輸入 `lblHelloWorld.Text = "Hello World!"`，如下列螢幕擷取畫面所示：
+1. 在**Form1.vb**視窗中，**在專用子**線和**結束子**行之間鍵入或`lblHelloWorld.Text = "Hello World!"`輸入，如以下螢幕截圖所示：
 
      ![將程式碼新增至表單](../ide/media/vb-add-code-to-the-form.png)
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 按一下 [啟動] 按鈕，以執行應用程式。
+1. 按一下 [啟動]**** 按鈕，以執行應用程式。
 
      ![按一下 [啟動] 偵錯和執行應用程式](../ide/media/vb-click-start-hello-world.png)
 
-   會發生數種情況。 在 Visual Studio IDE 中，會開啟 [診斷工具] 視窗和 [輸出] 視窗。 但在 IDE 外部，會出現 **Form1** 對話方塊。 其中包含您的 [按一下這裡] 按鈕，以及顯示 **Label1** 的文字。
+   會發生數種情況。 在 Visual Studio IDE 中，會開啟 [診斷工具]**** 視窗和 [輸出]**** 視窗。 但在 IDE 外部，會出現 **Form1** 對話方塊。 其中包含您的 [按一下這裡]**** 按鈕，以及顯示 **Label1** 的文字。
 
-1. 按一下 [Form1] 對話方塊中的 [Click this] 按鈕。 請注意，**Label1** 文字會變更為 **Hello World!** 。
+1. 按一下 [Form1]**** 對話方塊中的 [Click this]**** 按鈕。 請注意，**Label1** 文字會變更為 **Hello World!**。
 
     ![包含 Label1 文字的 Form1 對話方塊 ](../ide/media/vb-form1-dialog-hello-world.png)
 
-1. 關閉 [ **Form1** ] 對話方塊以停止執行應用程式。
+1. 關閉**Form1**對話方塊以停止運行應用。
 
 ## <a name="next-steps"></a>後續步驟
 
-若要深入了解，請繼續進行下列教學課程：
+若要深入了解，請繼續下列教學課程：
 
 > [!div class="nextstepaction"]
-> [教學課程：建立圖片檢視器](tutorial-1-create-a-picture-viewer.md)
+> [教程：創建圖片檢視器](tutorial-1-create-a-picture-viewer.md)
 
 ## <a name="see-also"></a>另請參閱
 
-* [其他 Visual Basic 教學課程](/visualstudio/get-started/visual-basic/)
-* [C#教程](/visualstudio/get-started/csharp/)
+* [更多視覺基礎教程](/visualstudio/get-started/visual-basic/)
+* [C# 教學課程](/visualstudio/get-started/csharp/)
 * [C++教程](/cpp/get-started/tutorial-console-cpp)

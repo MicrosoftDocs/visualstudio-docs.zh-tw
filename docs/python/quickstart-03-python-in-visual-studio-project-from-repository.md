@@ -10,14 +10,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 446c2622c01e1b127347a668e199e3e6e6e0b1c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5d0363626748588b6f4058e197f0d6796ece51ee
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430611"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "64543149"
 ---
-# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼存放庫
+# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫
 
 [在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，您可以為 Visual Studio 新增 GitHub 延伸模組。 延伸模組可讓您輕鬆地複製 Python 程式碼的存放庫，並在 IDE 中透過該存放庫建立專案。 您也可以一律在命令列上複製存放庫，然後在 Visual Studio 中使用它們。
 
@@ -29,38 +29,38 @@ ms.locfileid: "62430611"
 
 1. 啟動 Visual Studio。
 
-1. 選取 [檢視] > [Team Explorer...] 以開啟 [Team Explorer] 視窗，您可以從中連線到 GitHub 或 Azure Repos，或是複製存放庫。 (如果您沒看到如下所示的 [連線] 頁面，請選取最上方工具列上的插頭圖示，它會將您帶到該頁面。)
+1. 選擇 **"查看** > **Team 總管**"以打開**Team 總管**視窗，您可以在其中連接到 GitHub 或 Azure 存儲庫，或克隆存儲庫。 (如果您沒看到如下所示的 [連線]**** 頁面，請選取最上方工具列上的插頭圖示，它會將您帶到該頁面。)
 
     ![顯示 Azure Repos、GitHub 和複製存放庫的 Team Explorer 視窗](media/team-explorer.png)
 
-1. 在 [本機 Git 存放庫] 下，選取 [複製] 命令，然後在 URL 欄位中輸入 `https://github.com/gregmalcolm/python_koans`，輸入所複製檔案的資料夾，然後選取 [複製] 按鈕。
+1. 在 [本機 Git 存放庫]**** 下，選取 [複製]**** 命令，然後在 URL 欄位中輸入 `https://github.com/gregmalcolm/python_koans`，輸入所複製檔案的資料夾，然後選取 [複製]**** 按鈕。
 
     > [!Tip]
-    > 您在 **Team Explorer** 中指定的資料夾，就是用以接收複製檔案的資料夾。 這與 `git clone` 命令不同，不會在 **Team Explorer** 中建立複製品時，自動使用存放庫名稱建立子資料夾。
+    > 您在 **"Team 總管"** 中指定的資料夾是接收克隆檔的確切資料夾。 這與 `git clone` 命令不同，不會在 **Team Explorer** 中建立複製品時，自動使用存放庫名稱建立子資料夾。
 
-1. 當複製完成時，存放庫名稱就會出現在 [本機 Git 存放庫] 清單中。 按兩下該名稱，即可瀏覽至 **Team Explorer** 中的存放庫儀表板。
+1. 當複製完成時，存放庫名稱就會出現在 [本機 Git 存放庫]**** 清單中。 按兩下該名稱，即可瀏覽至 **Team Explorer** 中的存放庫儀表板。
 
-1. 在 [解決方案] 下，選取 [新增]。
+1. 在 [解決方案]**** 下，選取 [新增]****。
 
     ![從複製品建立新專案的 Team Explorer 視窗](media/team-explorer-new-project.png)
 
-1. 在出現的 [新增專案] 對話方塊中，瀏覽至 [Python] 語言 (或搜尋 "Python")，選取 [從現有 Python 程式碼]，並指定專案名稱，再將 [位置] 設定為與存放庫相同的資料夾，然後選取 [確定]。 在出現的精靈中，選取 [完成]。
+1. 在顯示**的"新專案**"對話方塊中，導航到**Python**語言（或在"Python"上搜索），選擇 **"從現有 Python 代碼**"，指定專案的名稱，將**位置**設置為與存儲庫相同的資料夾，然後選擇 **"確定**"。 在出現的精靈中，選取 [完成]****。
 
-1. 從功能表中選取 [檢視] > [方案總管]。
+1. 從功能表中選擇 **"查看** > **解決方案資源管理器**"。
 
-1. 在 [方案總管] 中，展開 **python3** 節點，並以滑鼠右鍵按一下 **contemplate_koans.py**，然後選取 [設定為啟動檔案]。 此步驟會告訴 Visual Studio 在執行專案時應該使用哪個檔案。
+1. 在 [方案總管]**** 中，展開 **python3** 節點，並以滑鼠右鍵按一下 **contemplate_koans.py**，然後選取 [設定為啟動檔案]****。 此步驟會告訴 Visual Studio 在執行專案時應該使用哪個檔案。
 
-1. 從功能表中選取 [專案] > [Koans 屬性]，選取 [一般] 索引標籤，然後將 [工作目錄] 設定為 "python3"。 因為 Visual Studio 預設會將工作目錄設定為專案根目錄，而非啟動檔案的位置 (*python3\contemplate_koans.py*，而您也可以在專案屬性中看到它)，所以這是必要步驟。 程式碼會在工作資料夾中尋找 *koans.txt* 檔案。因此，如果未變更此值，就會出現執行階段錯誤。
+1. 從功能表中選擇 **"專案** > **庫恩斯屬性**"，選擇 **"常規**"選項卡，並將**工作目錄**設置為"python3"。 因為 Visual Studio 預設會將工作目錄設定為專案根目錄，而非啟動檔案的位置 (*python3\contemplate_koans.py*，而您也可以在專案屬性中看到它)，所以這是必要步驟。 程式碼會在工作資料夾中尋找 *koans.txt* 檔案。因此，如果未變更此值，就會出現執行階段錯誤。
 
     ![設定 Python 專案的工作目錄](media/projects-set-working-directory.png)
 
-1. 按 **Ctrl**+**F5**，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。 如果您看到 *koans.txt* 的 **FileNotFoundError**，請重新檢查上一個步驟中所述的工作目錄設定。
+1. 按**Ctrl**+**F5**或選擇 **"未調試即可啟動調試****Debug** > "以運行程式。 如果您看到 *koans.txt* 的 **FileNotFoundError**，請重新檢查上一個步驟中所述的工作目錄設定。
 
 1. 程式順利執行時，會在 *python3/koans/about_asserts.py* 的第 17 行顯示判斷提示錯誤。 這是故意的：程式設計成讓您更正所有故意性錯誤來教導 Python。 (在 Python Koans 所產生的 [Ruby Koans](https://rubykoans.com/) 上可以找到詳細資料)。
 
     ![Python Koans 程式中的第一個輸出](media/koans-output.png)
 
-1. 開啟 *python3/koans/about_asserts.py*，方法是在 [方案總管] 中巡覽到它，並按兩下該檔案。 請注意，根據預設，在編輯器中看不到行號。 若要變更此項目，請選取 [工具] > [選項]，並選取對話方塊底部的 [顯示所有設定]，再巡覽至 [文字編輯器] > [Python] > [一般]，然後選取 [行號]：
+1. 開啟 *python3/koans/about_asserts.py*，方法是在 [方案總管]**** 中巡覽到它，並按兩下該檔案。 請注意，根據預設，在編輯器中看不到行號。 要更改此設置，請選擇 **"工具** > **選項**"，選擇 **"顯示對話方塊底部的所有設置**"，然後導航到**文字編輯器** > **Python** > **General**並選擇 **"行號**" ：
 
     ![開啟 Python 檔案的行號](media/options-general-line-numbers.png)
 
@@ -70,7 +70,7 @@ ms.locfileid: "62430611"
     self.assertTrue(True) # This should be True
     ```
 
-1. 再次執行程式。 如果 Visual Studio 警告您發生錯誤，請回應 [是] 以繼續執行程式碼。 接著，您會看到第一次檢查通過，而且程式停止於下一個 Koan。 繼續更正錯誤，並視需要再次執行程式。
+1. 再次執行程式。 如果 Visual Studio 警告您發生錯誤，請回應 [是]**** 以繼續執行程式碼。 接著，您會看到第一次檢查通過，而且程式停止於下一個 Koan。 繼續更正錯誤，並視需要再次執行程式。
 
 > [!Important]
 > 在此快速入門中，您已在 GitHub 上建立 *python_koans* 存放庫的直接複製品。 這類存放庫是由其作者保護無法直接變更，因此嘗試將變更認可至存放庫會失敗。 在實務上，開發人員會改為將這類存放庫分支到其自有 GitHub 帳戶，在該處進行變更，然後建立提取要求以將那些變更提交至原始存放庫。 當您有自己的分支時，請使用其 URL，而不是稍早使用的原始存放庫 URL。
@@ -83,5 +83,5 @@ ms.locfileid: "62430611"
 ## <a name="see-also"></a>另請參閱
 
 - [手動識別現有的 Python 解譯器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installing-python-support-in-visual-studio.md)
+- [如何在 Windows 上的 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)
 - [安裝位置](installing-python-support-in-visual-studio.md#install-locations)

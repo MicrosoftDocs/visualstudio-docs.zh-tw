@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70154900"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步驟 5：使用 Polls Flask Web 專案範本
 
-**先前步驟：[使用完整的 Flask Web 專案範本](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**上一個步驟：[使用完整的 Flask Web 專案範本](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 在了解 Visual Studio 的「Flask Web 專案」範本之後，您現在可以研究一下第三個 Flask 範本「投票 Flask Web 專案」，此專案以相同的程式碼基底為基礎。
 
@@ -36,15 +36,15 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
 ## <a name="step-5-1-create-the-project"></a>步驟 5-1：建立專案
 
-1. 在 Visual Studio 中，移至 [方案總管]  ，在本教學課程稍早建立的 [LearningFlask]  方案上按一下滑鼠右鍵，然後選取 [新增]   > [新增專案]  。 (或者，如果您想要使用新的方案，請依序選取 [檔案]   > [新增]   > [專案]  )。
+1. 在 Visual Studio 中，轉到**解決方案資源管理器**，按右鍵本教程中較早創建的**學習法帕斯克**解決方案，然後選擇"**添加新** > **專案**"。 （或者，如果要使用新解決方案 **，請選擇"****檔** > **新專案** > "。
 
-1. 在 [新增專案] 對話方塊中，搜尋並選取 [投票 Flask Web 專案]  範本，將專案命名為 "FlaskPolls"，然後選取 [確定]  。
+1. 在新專案對話方塊中，搜索並選擇 **"輪詢燒點 Web 專案**"範本，調用專案"FlaskPolls"，然後選擇 **"確定**"。
 
-1. 一如 Visual Studio 中的其他專案範本，「投票 Flask Web 專案」範本也有 *requirements.txt* 檔案，Visual Studio 會詢問您這些相依性的安裝位置。 選擇 [安裝至虛擬環境]  選項，然後在 [新增虛擬環境]  對話方塊中，選取 [建立]  並接受預設值。 (此範本需要 Flask、azure-storage 與 pymongo 套件，「投票 Flask/Jade Web 專案」還需要 pyjade)。
+1. 一如 Visual Studio 中的其他專案範本，「投票 Flask Web 專案」範本也有 *requirements.txt* 檔案，Visual Studio 會詢問您這些相依性的安裝位置。 選擇 [安裝至虛擬環境]**** 選項，然後在 [新增虛擬環境]**** 對話方塊中，選取 [建立]**** 並接受預設值。 (此範本需要 Flask、azure-storage 與 pymongo 套件，「投票 Flask/Jade Web 專案」還需要 pyjade)。
 
-1. 將 **FlaskPolls** 專案設定為 Visual Studio 方案的預設專案，方法是在 [方案總管]  中該專案上按一下滑鼠右鍵，然後選取 [設定為啟始專案]  。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
+1. 通過在**解決方案資源管理器**中按右鍵該專案並選擇 **"設置為啟動專案**"，將**FlaskPolls**專案設置為 Visual Studio 解決方案的預設值。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 
-1. 依序選取 [偵錯]   > [開始偵錯]  (**F5**)，或使用工具列上的 [網頁伺服器]  按鈕來執行伺服器：
+1. 選擇**調試** > **啟動調試**（**F5**） 或使用工具列上的**Web 服務器**按鈕運行伺服器：
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/django/run-web-server-toolbar-button.png)
 
@@ -52,7 +52,7 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
     ![「投票 Flask Web 專案」應用程式的完整檢視](media/flask/step06-full-app-view.png)
 
-1. 在首頁上，[Create Sample Polls] \(建立範例投票項目\)  按鈕會以 *models/samples.json* 頁面所述的三種不同投票將應用程式資料存放區初始化。 此應用程式預設會使用記憶體內部資料庫 (如 [About] \(關於\) 頁面所示)，每次重新啟動應用程式時都會重設此資料庫。 此應用程式也包含與「Azure 儲存體」和 Mongo DB 搭配運作的程式碼，如本文稍後所述。
+1. 在首頁上，[Create Sample Polls] \(建立範例投票項目\)**** 按鈕會以 *models/samples.json* 頁面所述的三種不同投票將應用程式資料存放區初始化。 此應用程式預設會使用記憶體內部資料庫 (如 [About] \(關於\) 頁面所示)，每次重新啟動應用程式時都會重設此資料庫。 此應用程式也包含與「Azure 儲存體」和 Mongo DB 搭配運作的程式碼，如本文稍後所述。
 
 1. 在您將資料存放區初始化之後，即可在不同的投票項目中進行投票，如首頁所示 (為了簡潔起見，已省略導覽列和頁尾)：
 
@@ -68,7 +68,7 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
 1. 您可以讓這個應用程式繼續執行，在接下來的各節中都會用到它。
 
-    如果您想停止應用程式並[認可對原始檔控制所做的變更](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)，請先開啟 [Team Explorer]  中的 [變更]  頁面，接著在虛擬環境的資料夾 (可能是 **env**) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]  。
+    如果您想停止應用程式並[認可對原始檔控制所做的變更](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)，請先開啟 [Team Explorer]**** 中的 [變更]**** 頁面，接著在虛擬環境的資料夾 (可能是 **env**) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]****。
 
 ### <a name="examine-the-project-contents"></a>檢查專案內容
 
@@ -76,7 +76,7 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
 ## <a name="step-5-2-understand-the-data-models"></a>步驟 5-2：了解資料模型
 
-應用程式的資料模型是名為 Poll 和 Choice 的 Python 類別，兩者皆定義於 *models/\_\_init\_\_.py* 中。 Poll 代表問題，而其 Choice 執行個體的集合則代表可用的解答。 Poll 也保有投票總數 (針對任何選項)，以及可計算用來產生檢視之統計資料的方法：
+應用的資料模型是名為"輪詢和選擇"的 Python 類，這些類在*模型\_\_/init\_\_.py*中定義。 Poll 代表問題，而其 Choice 執行個體的集合則代表可用的解答。 Poll 也保有投票總數 (針對任何選項)，以及可計算用來產生檢視之統計資料的方法：
 
 ```python
 class Poll(object):
@@ -187,7 +187,7 @@ class Choice(object):
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>從 samples.json 植入資料存放區
 
-一開始，所選的任何資料存放區都不包含任何投票項目，因此應用程式的首頁會顯示隨附 [Create Sample Polls] \(建立範例投票項目\)  按鈕的 **No polls available** (沒有可用的投票項目) 訊息。 不過，選取該按鈕之後，檢視就會變更為顯示可用的投票項目。 這個切換會透過 *templates\index.html* 中的條件式標籤進行 (為了簡潔起見，已省略一些空白行)：
+最初，任何選定的資料存儲都不包含輪詢，因此應用的主頁顯示消息 **"無輪詢"** 以及 **"創建示例輪詢"** 按鈕。 不過，選取該按鈕之後，檢視就會變更為顯示可用的投票項目。 這個切換會透過 *templates\index.html* 中的條件式標籤進行 (為了簡潔起見，已省略一些空白行)：
 
 ```html
 {% extends "layout.html" %}
@@ -218,7 +218,7 @@ class Choice(object):
 
 範本中的 `polls` 變數來自對 `repository.get_polls` 的呼叫，這會在資料存放區初始化之後，才會傳回資料。
 
-選取 [Create Sample Polls] \(建立範例投票項目\)  按鈕會瀏覽至 /seed URL。 該路由的處理常式是在 *views.py* 中定義的：
+選取 [Create Sample Polls] \(建立範例投票項目\)**** 按鈕會瀏覽至 /seed URL。 該路由的處理常式是在 *views.py* 中定義的：
 
 ```python
 @app.route('/seed', methods=['POST'])
@@ -228,13 +228,13 @@ def seed():
     return redirect('/')
 ```
 
-對 `repository.add_sample_polls()` 的呼叫最後會成為您所選資料存放區的其中一個特定 `Repository` 實作。 每個實作都會呼叫在 *models\_\_init\_\_.py* 中找到的 `_load_samples_json` 方法，以便將 *models\samples.json* 檔案載入到記憶體中，然後逐一查看該資料，以便在資料存放區中建立必要的 `Poll` 和 `Choice` 物件。
+對 `repository.add_sample_polls()` 的呼叫最後會成為您所選資料存放區的其中一個特定 `Repository` 實作。 每個實現調用*在\_\_模型 init\_\_.py*中找到`_load_samples_json`的方法將*模型\sample.json*檔載入到記憶體中，然後通過該資料進行重新遍造`Poll`，`Choice`以在資料存儲中創建必要的物件。
 
 該程序完成之後，`seed` 方法中的 `redirect('/')` 陳述式就會瀏覽回首頁。 由於 `repository.get_polls` 現在會傳回資料物件，因此 *templates\index.html* 中的條件式標籤現在會轉譯成包含投票項目的資料表。
 
 ### <a name="question-how-does-one-add-new-polls-to-the-app"></a>問題：要如何將新投票項目新增到應用程式？
 
-答：透過專案範本所提供應用程式不包含新增或編輯投票項目的機能。 您可以修改 *models\samples.json* 以建立新的初始化資料，但這麼做將意謂著重設資料存放區。 若要實作編輯功能，您必須使用可建立必要 `Choice` 和 `Poll` 執行個體的方法來延伸 `Repository` 類別介面，然後在使用這些方法的額外頁面上實作 UI。
+回答：透過專案範本提供的應用程式不包含新增或編輯投票項目的機能。 您可以修改 *models\samples.json* 以建立新的初始化資料，但這麼做將意謂著重設資料存放區。 若要實作編輯功能，您必須使用可建立必要 `Choice` 和 `Poll` 執行個體的方法來延伸 `Repository` 類別介面，然後在使用這些方法的額外頁面上實作 UI。
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>步驟 5-4：了解投票詳細資料和結果檢視
 
@@ -296,7 +296,7 @@ def details(key):
 {% endblock %}
 ```
 
-由於 [Vote] \(投票\)  按鈕包含 `type="submit"`，因此選取它會產生 POST 要求，此要求會送回給再次路由傳送至 `details` 的同一個 URL。 不過，這次它會從表單資料擷取選項，然後重新導向到 /results/\<choice\>。
+由於 [Vote] \(投票\)**** 按鈕包含 `type="submit"`，因此選取它會產生 POST 要求，此要求會送回給再次路由傳送至 `details` 的同一個 URL。 不過，這次它會從表單資料擷取選項，然後重新導向到 /results/\<choice\>。
 
 接著，會將 /results/\<key\> URL 路由傳送到 *views.py* 中的 `results` 函式，由此函式接著呼叫投票項目的 `calculate_stats` 方法並採用 *templates\results.html* 來進行轉譯：
 
@@ -346,7 +346,7 @@ def results(key):
 ## <a name="next-steps"></a>後續步驟
 
 > [!Note]
-> 如果您一直在致力於為本教學課程中的原始檔控制，研究出自己的 Visual Studio 方案，現在是另一次做出貢獻的好機會。 您的解決方案應與 GitHub 上教學課程原始程式碼相符：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)。
+> 如果您一直在致力於為本教學課程中的原始檔控制，研究出自己的 Visual Studio 方案，現在是另一次做出貢獻的好機會。 您的方案應與 GitHub 上的教學課程原始程式碼相吻合：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)。
 
 您現在已探索完 Visual Studio 中的「空白 Flask Web 專案」、「Flask[/Jade] Web 專案」及「投票 Flask[/Jade] Web 專案」範本的全部內容。 您已了解 Flask 的所有基本知識 (例如檢視、範本及路由)，也了解了如何使用支援資料存放區。 現在，您應該能夠利用所需的任何檢視和模型，開始建立自己的 Web 應用程式。
 

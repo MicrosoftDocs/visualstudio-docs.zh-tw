@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9b71679e460b904138cb0bf922da9d157f0a91c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552976"
 ---
 # <a name="c-library-reference"></a>C++ 程式庫參考
@@ -26,7 +26,7 @@ ms.locfileid: "62552976"
 
 ## <a name="in-this-section"></a>本節內容
 
-[Concurrency 命名空間 (並行視覺化檢視)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+[併發命名空間（併發視覺化檢視）](../profiling/concurrency-namespace-concurrency-visualizer.md)
 
 ## <a name="see-also"></a>另請參閱
 

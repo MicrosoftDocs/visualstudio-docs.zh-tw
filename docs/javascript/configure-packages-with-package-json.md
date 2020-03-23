@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 652ff7b0380fc03a3f9c8155a2f8696d9dfee5b9
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67692367"
 ---
 # <a name="packagejson-configuration"></a>package.json 組態
@@ -49,7 +49,7 @@ Npm 套件版本控制系統有嚴格的規則。 版本格式如下：
 
 使用上述的標記法，npm 一律會取得指定的確切版本，也就是 16.4.2。
 
-您可以使用特殊標記法，來將更新限制為修補程式更新 (Bug 修正程式)。 在這個範例中：
+您可以使用特殊標記法，來將更新限制為修補程式更新 (Bug 修正程式)。 在此範例中：
 
   ```json
   "dependencies": {

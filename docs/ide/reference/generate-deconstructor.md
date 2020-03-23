@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531890"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>在 Visual Studio 中產生解構函式
@@ -22,11 +22,11 @@ ms.locfileid: "65531890"
 
 - C#
 
-**功能：** 可讓您立即針對新解構函式產生方法虛設常式。
+**內容：** 允許您立即生成新解構器的方法存根。
 
-**時機：** 您想要正確地自動解構您的類型。
+**何時：** 您希望自動正確解構類型。
 
-**原因：** 您可以手動鍵入解構函式，但是此功能會使用正確的輸出參數為您產生虛設常式。
+**原因：** 您可以手動鍵入解構器，但此功能使用正確的出出參數為您生成存根。
 
 ## <a name="generate-a-deconstructor"></a>產生解構函式
 
@@ -37,19 +37,19 @@ ms.locfileid: "65531890"
 2. 採取下列其中一個步驟：
 
    - **鍵盤**
-      - 將游標放在您的宣告中，然後選取 Ctrl+. 以觸發 [快速動作與重構] 功能表。
+      - 將游標放在您的宣告中，然後選取 Ctrl+. 以觸發 [快速動作與重構]**** 功能表。
    - **滑鼠**
-      - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
       - 選取 ![出現於左邊界的螺絲起子](media/screwdriver.png) 圖示，如果文字游標已經在類別中的空白行上，此圖示就會出現在左邊界上。
 
       ![產生解構函式程式碼修正](media/deconstruct-codefix.png)
 
-3. 選取 [產生方法 'MyInternalClass.Deconstruct'] 來產生解構函式。
+3. 選取 [產生方法 'MyInternalClass.Deconstruct']**** 來產生解構函式。
 
    ![產生的解構函式程式碼](media/deconstruct-result.png)
 
 ## <a name="see-also"></a>另請參閱
 
-- [程式碼產生](../code-generation-in-visual-studio.md)
-- [預覽變更](../../ide/preview-changes.md)
-- [.NET 開發人員的秘訣](../csharp-developer-productivity.md)
+- [產生程式碼](../code-generation-in-visual-studio.md)
+- [預覽更改](../../ide/preview-changes.md)
+- [.NET 開發人員的提示](../csharp-developer-productivity.md)

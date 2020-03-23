@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957841"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>步驟 5：在 Django 中驗證使用者
 
-**上一步：[使用完整的 Django Web 專案範本](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**上一個步驟：[使用完整的 Django Web 專案範本](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
-因為 Web 應用程式一般都需要驗證，所以 [Django Web 專案] 範本會包含基本的驗證流程。 (本教學課程步驟 6 中所討論的 [投票 Django Web 專案] 範本也包含相同的流程)。使用任何 Django 專案範本時，Visual Studio 會在 Django 專案的 *settings.py* 中包含驗證所需的所有模組。
+因為 Web 應用程式一般都需要驗證，所以 [Django Web 專案] 範本會包含基本的驗證流程。 （本教程第 6 步中討論的"投票 Django Web 專案"範本還包括相同的流。使用任何 Django 專案範本時，Visual Studio 在 Django 專案的*settings.py*中包括所有必要的身份驗證模組。
 
 在這個步驟中，您將了解：
 
@@ -35,7 +35,7 @@ ms.locfileid: "62957841"
 
 1. 如果您尚未遵循專案根目錄之 *readme.html* 檔案中的指示來建立進階使用者 (系統管理員) 帳戶，請立即建立。
 
-1. 使用 [偵錯] > [開始偵錯] (**F5**) 在 Visual Studio 中執行應用程式。 當應用程式出現在瀏覽器中時，觀察到瀏覽列的右上角出現 [登入]。
+1. 使用**調試** > **啟動調試****（F5**） 從視覺化工作室運行應用程式。 當應用程式出現在瀏覽器中時，觀察到瀏覽列的右上角出現 [登入]****。
 
     ![Django Web 專案應用程式頁面上的登入控制項](media/django/step05-login-control.png)
 
@@ -154,7 +154,7 @@ ms.locfileid: "62957841"
 
 1. 其中進階使用者或系統管理員，皆被授權使用相對 URL "/admin/" 與 "/admin/doc/" 來存取內建的 Django 系統管理員介面。 若要啟用這些介面，請執行下列作業：
 
-    1. 將 docutils Python 套件安裝到您的環境。 要這麼做的好方法是將 docutils 新增至 *requirements.txt* 檔案，然後在 [方案總管] 中，依序展開專案、[Python 環境] 節點，然後以滑鼠右鍵按一下您使用的環境，選取 [從 requirements.txt 安裝]。
+    1. 將 docutils Python 套件安裝到您的環境。 要這麼做的好方法是將 docutils 新增至 *requirements.txt* 檔案，然後在 [方案總管]**** 中，依序展開專案、[Python 環境]**** 節點，然後以滑鼠右鍵按一下您使用的環境，選取 [從 requirements.txt 安裝]****。
 
     1. 開啟 Django 專案的 *urls.py*，然後移除下列項目的預設註解：
 
@@ -177,7 +177,7 @@ ms.locfileid: "62957841"
 
         ![Django 系統管理員介面](media/django/step05-administrator-interface.png)
 
-1. 驗證流程的最後一部分就是登出。 如您在 *loginpartial.html* 中所見，[登出] 連結只會針對相對 URL "/login" 執行 POST，這是由內建檢視 `django.contrib.auth.views.logout` 所處理。 此檢視不會顯示任何 UI，而會直接巡覽至首頁 (如 "^logout$" 模式的 *urls.py* 中所示)。 如果您想要顯示登出頁面，請先如下所示變更 URL 模式，以新增 "template_name" 屬性並移除 "next_page" 屬性：
+1. 驗證流程的最後一部分就是登出。 如您在 *loginpartial.html* 中所見，[登出]**** 連結只會針對相對 URL "/login" 執行 POST，這是由內建檢視 `django.contrib.auth.views.logout` 所處理。 此檢視不會顯示任何 UI，而會直接巡覽至首頁 (如 "^logout$" 模式的 *urls.py* 中所示)。 如果您想要顯示登出頁面，請先如下所示變更 URL 模式，以新增 "template_name" 屬性並移除 "next_page" 屬性：
 
     ```python
     url(r'^logout$',
@@ -204,7 +204,7 @@ ms.locfileid: "62957841"
 
 1. 當您全部完成時，請停止伺服器，並再次將變更認可至原始檔控制。
 
-### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>問題：\<form\> 項目中出現的 {% csrf_token %} 標籤有什麼用途？
+### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>問題：\<form\> 元素中出現的 {% csrf_token %} 標籤有什麼用途？
 
 回答：`{% csrf_token %}` 標籤包含 Django 的內建[跨網站偽造要求 (csrf) 保護](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django 文件)。 您通常會將此標籤新增至任何涉及 POST、PUT 或 DELETE 要求方法的項目 (例如表單)。 然後，範本轉譯函式 (`render`) 會插入必要的保護。
 

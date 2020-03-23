@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a1853df63354801ebf0413d3c8707135cb9bb800
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62535699"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理必要套件
@@ -23,23 +23,23 @@ ms.locfileid: "62535699"
 
 就技術而言，任何檔案名稱都可用來追蹤必要條件 (透過在安裝套件時使用 `-r <full path to file>`)，但 Visual Studio 為 *requirements.txt* 提供了專屬支援：
 
-- 若您已載入包含 *requirements.txt* 的專案，並想要安裝該檔案中列出的所有套件，請展開 [方案總管] 中的 [Python 環境] 節點，然後以滑鼠右鍵按一下環境節點，並選取 [從 requirements.txt 安裝]：
+- 若您已載入包含 *requirements.txt* 的專案，並想要安裝該檔案中列出的所有套件，請展開 [方案總管]**** 中的 [Python 環境]**** 節點，然後以滑鼠右鍵按一下環境節點，並選取 [從 requirements.txt 安裝]****：
 
     ![Install from requirements.txt (從 requirements.txt 安裝)](media/environments/environments-requirements-txt-install.png)
 
-- 如果想要在虛擬環境中安裝相依項目，請先建立並啟動該環境，然後使用 [從 requirements.txt 安裝] 命令。 如需建立虛擬環境的詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
+- 如果想要在虛擬環境中安裝相依項目，請先建立並啟動該環境，然後使用 [從 requirements.txt 安裝]**** 命令。 如需建立虛擬環境的詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
-- 若您已在環境中安裝所有必要套件，可以在 [方案總管] 中的環境上按一下滑鼠右鍵，然後選取 [產生 requirements.txt] 以建立必要的檔案。 如果該檔案已經存在，系統會提示您如何更新它：
+- 如果已在環境中安裝了所有必要的包，則可以在**解決方案資源管理器**中按右鍵該環境，然後選擇 **"生成需求.txt"** 以創建必要的檔。 如果該檔案已經存在，系統會提示您如何更新它：
 
     ![更新 requirements.txt 選項](media/environments/environments-requirements-txt-replace.png)
 
-  - [Replace entire file (取代整個檔案)] 會移除所有已存在的項目、註解及選項。
-  - [重新整理現有項目] 會偵測套件需求並更新版本規範，以符合您目前已安裝的版本。
-  - [Update and add entries (更新及新增項目)] 會重新整理所找到的任何需求，並將所有其他套件新增到檔案結尾。
+  - [Replace entire file (取代整個檔案)]**** 會移除所有已存在的項目、註解及選項。
+  - [重新整理現有項目]**** 會偵測套件需求並更新版本規範，以符合您目前已安裝的版本。
+  - [Update and add entries (更新及新增項目)]**** 會重新整理所找到的任何需求，並將所有其他套件新增到檔案結尾。
 
 由於 *requirements.txt* 檔案的用意是要固定住環境的需求，因此所有安裝的套件都已寫明精確的版本。 使用精確的版本可確保您可以在另一部電腦上輕鬆重現您的環境。 即使安裝套件時已指定版本範圍，仍然會包含這些套件作為另一個套件的相依性，或隨附於 pip 以外的安裝程式。
 
-如果套件是 pip 無法安裝的套件，並且出現在 *requirements.txt* 檔案中，整個安裝就會失敗。 在此情況下，請手動編輯檔案以將此套件排除，或使用 [pip 的選項](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)來參考該套件的可安裝版本。 例如，您可能偏好使用 [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) 來編譯相依性並將 `--find-links <path>` 選項新增到您的 *requirements.txt*：
+如果套件是 pip 無法安裝的套件，並且出現在 *requirements.txt* 檔案中，整個安裝就會失敗。 在此情況下，請手動編輯檔案以將此套件排除，或使用 [pip 的選項](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)來參考該套件的可安裝版本。 例如，您可能更喜歡使用 來[`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html)編譯依賴項並將`--find-links <path>`選項添加到*您的要求.*
 
 ```output
 C:\Project>pip wheel azure
@@ -70,5 +70,5 @@ Cleaning up...
 
 - [在 Visual Studio 中管理 Python 環境](managing-python-environments-in-visual-studio.md)
 - [選取專案的解譯器](selecting-a-python-environment-for-a-project.md)
-- [搜尋路徑](search-paths.md)
+- [搜索路徑](search-paths.md)
 - [Python 環境視窗參考](python-environments-window-tab-reference.md)

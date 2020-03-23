@@ -19,10 +19,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68918890"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和方案、VC++ 專案設定
@@ -31,9 +31,9 @@ ms.locfileid: "68918890"
 
 ## <a name="to-access-this-dialog-box"></a>若要存取此對話方塊
 
-1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。
+1. 在 **[工具]** 功能表上，按一下 **[選項]**。
 
-2. 選取 [專案和方案]  ，然後選取 [VC++ 專案設定]  。
+2. 選取 [專案和方案]****，然後選取 [VC++ 專案設定]****。
 
 ## <a name="build-logging"></a>建置記錄
 
@@ -41,7 +41,7 @@ ms.locfileid: "68918890"
 
   開啟組建記錄檔的產生。 此選項會產生 BuildLog.htm，您可以在專案的中繼檔案目錄中找到此檔案。 每個全新的組建都會覆寫上一個 BuildLog.htm 檔案。
 
- **No**
+ **否**
 
   關閉組建記錄檔的產生。
 
@@ -51,7 +51,7 @@ ms.locfileid: "68918890"
 
 列出組建記錄檔中的環境變數。 此選項會指定將 C++ 專案建置期間的所有環境變數，反映到建置記錄檔中。
 
- **No**
+ **否**
 
 從組建記錄檔排除環境變數。
 
@@ -59,9 +59,9 @@ ms.locfileid: "68918890"
 
  **是**
 
-  開啟建置執行時間。 如果選取，組建完成所需的時間會發佈到 [輸出] 視窗。 如需詳細資訊，請參閱[輸出視窗](../../ide/reference/output-window.md)。
+  開啟建置執行時間。 如果選取，組建完成所需的時間會發佈到 [輸出] 視窗。 如需詳細資訊，請參閱 [輸出視窗](../../ide/reference/output-window.md)。
 
- **No**
+ **否**
 
 關閉建置執行時間。
 
@@ -75,7 +75,7 @@ ms.locfileid: "68918890"
 
 ## <a name="extensions-to-hide"></a>要隱藏的副檔名
 
-指定啟用 [顯示所有檔案]  時，不會顯示在方案總管  中之檔案的副檔名。
+指定啟用 [顯示所有檔案]**** 時，不會顯示在方案總管**** 中之檔案的副檔名。
 
 ## <a name="build-customization-search-path"></a>建置自訂搜尋路徑
 
@@ -85,11 +85,11 @@ ms.locfileid: "68918890"
 
 **僅顯示專案中的檔案**
 
-將方案總管  設定為僅顯示專案中的檔案。
+將方案總管**** 設定為僅顯示專案中的檔案。
 
 **顯示所有檔案**
 
-將方案總管  設定為顯示專案中的檔案，以及專案資料夾中磁碟上的檔案。
+將方案總管**** 設定為顯示專案中的檔案，以及專案資料夾中磁碟上的檔案。
 
 ## <a name="enable-project-caching"></a>啟用專案快取
 
@@ -97,7 +97,7 @@ ms.locfileid: "68918890"
 
 讓 Visual Studio 能夠快取專案資料，以便在您下次開啟專案時，載入那份快取的資料，而不必從專案檔重新計算資料。 使用快取資料可以大幅加速專案載入時間。
 
-**No**
+**否**
 
 不使用快取的專案資料。 每次載入專案時都會剖析專案檔。
 

@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957981"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，然後使用範本繼承
 
-**先前步驟：[使用檢視與頁面範本建立 Django 應用程式](learn-django-in-visual-studio-step-02-create-an-app.md)**
+**上一個步驟：[使用檢視與頁面範本來建立 Django 應用程式](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
 在本教學課程的先前步驟中，您已學會如何建立具有單一獨立式 HTML 頁面的最小 Django 應用程式。 不過，現代化 Web 應用程式通常是由許多網頁所組成，並且利用 CSS 和 JavaScript 檔案等共用資源來提供一致的樣式和行為。
 
@@ -36,11 +36,11 @@ ms.locfileid: "62957981"
 
 當您開發 Django 應用程式時，通常會加入許多 Python、HTML、CSS 和 JavaScript 檔案。 針對每一種檔案類型 (以及開發可能需要的其他檔案，例如 *web.config*)，Visual Studio 都提供方便您著手的[項目範本](python-item-templates.md)。
 
-若要查看可用的範本，請移至 [方案總管]，以滑鼠右鍵按一下您要建立項目的資料夾，選取 [加入] > [新項目]：
+若要查看可用的範本，請移至 [方案總管]****，以滑鼠右鍵按一下您要建立項目的資料夾，選取 [加入]**** > [新項目]****：
 
 ![Visual Studio 中的加入新項目對話方塊](media/django/step03-add-new-item-dialog.png)
 
-若要使用範本，請選取所需的範本、指定檔案名稱，然後選取 [確定]。 以這種方式加入項目，會將檔案自動加入您的 Visual Studio 專案，並為原始檔控制標記變更。
+若要使用範本，請選取所需的範本、指定檔案名稱，然後選取 [確定]****。 以這種方式加入項目，會將檔案自動加入您的 Visual Studio 專案，並為原始檔控制標記變更。
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>問題：Visual Studio 如何知道應提供哪些項目範本？
 
@@ -63,9 +63,9 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 您可以在 *static* 中使用偏好的任何資料夾結構來組織檔案，然後使用該資料夾內的相對路徑來參考檔案。 為了示範此流程，下列步驟會將 CSS 檔案新增至應用程式，然後在 *index.html* 範本中使用該樣式表：
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下 Visual Studio 專案的 **HelloDjangoApp** 資料夾，選取 [新增] > [新增資料夾]，並將資料夾命名為 `static`。
+1. 在 [方案總管]**** 中，以滑鼠右鍵按一下 Visual Studio 專案的 **HelloDjangoApp** 資料夾，選取 [新增]**** > [新增資料夾]****，並將資料夾命名為 `static`。
 
-1. 以滑鼠右鍵按一下 **static** 資料夾，並選取 [新增] > [新增項目]。 在出現的對話方塊中，選取 [Stylesheet] (樣式表) 範本，將檔案命名為 `site.css`，然後選取 [確定]。 **site.css** 檔案會出現在專案中，並在編輯器中開啟。 您的資料夾結構應該與下列影像類似：
+1. 以滑鼠右鍵按一下 **static** 資料夾，並選取 [新增]**** > [新增項目]****。 在顯示的對話方塊中，選擇 **"樣式表"** 範本，命名檔`site.css`，然後選擇 **"確定**"。 **site.css** 檔案會出現在專案中，並在編輯器中開啟。 您的資料夾結構應該與下列影像類似：
 
     ![方案總管中所顯示的靜態檔案結構](media/django/step03-static-file-structure.png)
 
@@ -97,13 +97,13 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 ### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>問題：{% load staticfiles %} 標籤的用途是什麼？
 
-答：需要有 `{% load staticfiles %}` 這一行，才能在 `<head>` 和 `<body>` 之類的項目中參考靜態檔案。 本節顯示的範例中，"staticfiles" 是指自訂 Django 範本標籤集，它可讓您使用 `{% static %}` 語法來參照靜態檔案。  如果沒有 `{% load staticfiles %}`，則在應用程式執行時會出現例外狀況。
+答：需要有 `{% load staticfiles %}` 這一行，才能在 `<head>` 和 `<body>` 之類的元素中參考靜態檔案。 本節顯示的範例中，"staticfiles" 是指自訂 Django 範本標籤集，它可讓您使用 `{% static %}` 語法來參照靜態檔案。  如果沒有 `{% load staticfiles %}`，則在應用程式執行時會出現例外狀況。
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>問題：整理靜態檔案有任何慣例嗎？
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>問題：組織靜態檔案有任何慣例嗎？
 
-回答：您可以視需要將其他 CSS、JavaScript 和 HTML 檔案新增至您的 *static* 資料夾。 組織靜態檔案的一般方式是建立名為 *fonts*、*scripts* 和 *content* 的子資料夾 (針對樣式表和任何其他檔案)。 在各種情況中，請記得要將那些資料夾包含在 `{% static %}` 參考中的檔案相對路徑。
+回答：您可以依偏好將其他的 CSS、JavaScript 和 HTML 檔案新增至您的 *static* 資料夾。 組織靜態檔案的一般方式是建立名為 *fonts*、*scripts* 和 *content* 的子資料夾 (針對樣式表和任何其他檔案)。 在各種情況中，請記得要將那些資料夾包含在 `{% static %}` 參考中的檔案相對路徑。
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>步驟 3-3：將頁面新增至應用程式
+## <a name="step-3-3-add-a-page-to-the-app"></a>步驟 3-3：將頁面加入應用程式
 
 將其他頁面加入應用程式意義如下：
 
@@ -113,10 +113,10 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 下列步驟會將 "About" (關於) 頁面加入 "HelloDjangoApp" ，並從首頁連結至該頁面：
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下 **templates/HelloDjangoApp** 資料夾，選取 [新增][新增項目] > ，選取 [HTML 網頁] 項目範本，將檔案命名為 `about.html`，然後選取 [確定]。
+1. 在 [方案總管]**** 中，以滑鼠右鍵按一下 **templates/HelloDjangoApp** 資料夾，選取 [新增]****[新增項目] > ****，選取 [HTML 網頁]**** 項目範本，將檔案命名為 `about.html`，然後選取 [確定]****。
 
     > [!Tip]
-    > 如果 [新項目] 命令未出現在 [加入] 功能表上，請確認您已停止伺服器，這樣 Visual Studio 就會結束偵錯模式。
+    > 如果 [新項目]**** 命令未出現在 [加入]**** 功能表上，請確認您已停止伺服器，這樣 Visual Studio 就會結束偵錯模式。
 
 1. 將 *about.html* 的內容取代為下列標記 (您會在步驟 3-4 中將首頁的明確連結取代為簡單的導覽列)：
 
@@ -160,13 +160,13 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     <div><a href="about">About</a></div>
     ```
 
-1. 使用 [檔案] > [全部儲存] 功能表命令來儲存所有檔案，或可僅按下 **Ctrl**+**Shift**+**S**。 (技術上來說並不需要此步驟，因為在 Visual Studio 中執行專案會自動儲存檔案。 不過，知道有這個命令也很好！)
+1. 使用 **"檔** > **保存所有"** 功能表命令保存所有檔，或僅按**Ctrl**+**Shift**+**S**。 (技術上來說並不需要此步驟，因為在 Visual Studio 中執行專案會自動儲存檔案。 不過，知道有這個命令也很好！)
 
 1. 執行專案以觀察結果並檢查頁面之間的瀏覽。 完成時，關閉伺服器。
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>問題：我嘗試使用 "index" (索引) 連結到首頁，但無法運作。 為什麼？
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>問題：我嘗試使用 "index" (索引) 於首頁連結，但無法運作。 原因為何？
 
-答：雖然在 *views.py* 中檢視函式的名稱是 `index`，但是 Django 專案中 *urls.py* 檔案 URL 路由模式並不包含符合 "index" (索引) 字串的規則運算式。 若要符合該字串，您必須為 `^index$` 模式新增另一個項目。
+答：雖然在 *views.py* 中的檢視函式的名稱是 `index`，但是 Django 專案中 *urls.py* 檔案的 URL 路由模式並不包含符合 "index" (索引) 字串的規則運算式。 若要符合該字串，您必須為 `^index$` 模式新增另一個項目。
 
 如下一節所示，最好是在頁面範本中使用 `{% url '<pattern_name>' %}` 標籤來參考模式的 *name* (名稱)，在此情況下，Django 會為您建立適當的 URL。 例如，將 *about.html* 中的 `<div><a href="home">Home</a></div>` 取代為 `<div><a href="{% url 'index' %}">Home</a></div>`。 此處使用 'index' (索引) 得以運作是因為 *urls.py* 中的第一個 URL 模式事實上是名為 'index' (因為 `name='index'` 引數之故)。 您也可以使用 'home' (首頁) 來參考第二個模式。
 
@@ -176,9 +176,9 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 Django 的範本化系統提供兩個方法，可跨多個範本重複使用特定元素：包含和繼承。
 
-- 「包含」使用 `{% include <template_path> %}` 語法，在參考範本中的特定位置插入其他頁面範本。 如果您想要以動態方式變更程式碼中的路徑，也可以使用變數。 「包含」通常用在頁面主體，用來在頁面特定位置引進共用的範本。
+- 「包含」** 使用 `{% include <template_path> %}` 語法，在參考範本中的特定位置插入其他頁面範本。 如果您想要以動態方式變更程式碼中的路徑，也可以使用變數。 「包含」通常用在頁面主體，用來在頁面特定位置引進共用的範本。
 
-- 「繼承」在頁面範本開頭使用`{% extends <template_path> %}`，以指定共用基底範本，以便參考範本並接著據以建置範本。 繼承通常用來定義共用版面配置、瀏覽列和應用程式頁面的其他結構，因此參考範本只需要加入或修改名為 *blocks* (區塊) 的基底範本特定區域。
+- 「繼承」** 在頁面範本開頭使用`{% extends <template_path> %}`，以指定共用基底範本，以便參考範本並接著據以建置範本。 繼承通常用來定義共用版面配置、瀏覽列和應用程式頁面的其他結構，因此參考範本只需要加入或修改名為 *blocks* (區塊) 的基底範本特定區域。
 
 在這兩種情況下，`<template_path>` 是相對於應用程式的 *templates* 資料夾 (也允許 `../` 或 `./`)。
 
@@ -186,7 +186,7 @@ Django 的範本化系統提供兩個方法，可跨多個範本重複使用特�
 
 下列步驟將示範繼承：
 
-1. 在應用程式的 *templates/HelloDjangoApp* 資料夾中，建立稱為 *layout.html* 的新 HTML 檔案 (使用 [新增] > [新增項目] 操作功能表，或 [新增] > [HTML 網頁])，然後以下列標記取代其內容。 您可以看到此範本包含一個名為 "content" (內容) 的區塊，這是參考頁面必須全部取代的部分：
+1. 在應用程式的 *templates/HelloDjangoApp* 資料夾中，建立稱為 *layout.html* 的新 HTML 檔案 (使用 [新增]**** > [新增項目]**** 操作功能表，或 [新增]**** > [HTML 網頁]****)，然後以下列標記取代其內容。 您可以看到此範本包含一個名為 "content" (內容) 的區塊，這是參考頁面必須全部取代的部分：
 
     ```html
     <!DOCTYPE html>

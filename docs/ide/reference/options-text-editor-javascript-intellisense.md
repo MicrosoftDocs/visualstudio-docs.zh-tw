@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605975"
 ---
-# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>選項對話方塊：文字編輯器 \> JavaScript \> IntelliSense
+# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>選項對話方塊：文字編輯器\>JavaScript \> IntelliSense
 
-使用 [ **選項** ] 對話方塊的 [ **IntelliSense** ] 頁面修改影響 JavaScript 之 IntelliSense 行為的設定。 您可以透過選擇功能表列上的 [工具]   > [選項]  ，並展開 [文字編輯器]   > [JavaScript/TypeScript]   > [IntelliSense]  來存取 [IntelliSense]  頁面。
+使用 [ **選項** ] 對話方塊的 [ **IntelliSense** ] 頁面修改影響 JavaScript 之 IntelliSense 行為的設定。 您可以透過選擇功能表列上的 [工具]**** > [選項]****，並展開 [文字編輯器]**** > [JavaScript/TypeScript]**** > [IntelliSense]**** 來存取 [IntelliSense]**** 頁面。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
-[IntelliSense]  頁面包含下列區段：
+[ **IntelliSense** ] 頁面包含下列區段：
 
 ## <a name="statement-completion"></a>陳述式完成
 
@@ -34,17 +34,17 @@ ms.locfileid: "68605975"
 
 ### <a name="uielement-list"></a>UIElement 清單
 
-**僅使用 Tab 或 Enter 進行認可**
+**僅使用選項卡或 Enter 提交**
 
 當您選取這個核取方塊時，JavaScript 程式碼編輯器只會在您選擇 **Tab** 或 **Enter** 鍵之後，才將完成清單中選取的項目附加至陳述式。 當您取消選取這個核取方塊時，其他字元像是句號、逗號、冒號、左括弧和左大括弧 ({) 也可以在陳述式中附加選取的項目。
 
-## <a name="references"></a>reference
+## <a name="references"></a>參考
 
 您可以使用這些選項指定不同 JavaScript 專案類型範圍中 IntelliSense .js 檔案的類型。 IntelliSense 參考通常是用來為全域物件提供 IntelliSense 支援。 您也可以使用這個頁面設定必須在執行階段載入之指令碼的載入順序，以及加入 IntelliSense 擴充檔案。
 
 ### <a name="uielement-list"></a>UIElement 清單
 
-**參考群組**
+**參考組**
 
 這個選項會指定參考群組類型。 支援的參考群組有三種：
 
@@ -58,7 +58,7 @@ ms.locfileid: "68605975"
 
 - 泛型，適用於其他 JavaScript 專案類型。
 
-**包含的檔案**
+**包含的檔**
 
 這個選項會指定檔案載入語言服務內容的順序。 您可以使用 [ **移除**]、[ **上移**] 和 [ **下移** ] 按鈕設定順序。 若要讓 IntelliSense 正常運作，相依於另一個檔案的檔案必須在另一個檔案載入後才能載入。
 

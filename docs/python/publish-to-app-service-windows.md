@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784611"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>發佈至 Windows 上的 Azure App Service
@@ -34,17 +34,17 @@ Visual Studio 2017 和更新版本以及 Visual Studio 2015 的發佈程序有�
 
 針對此逐步解說，您必須具備 Bottle、Flask 或 Django 架構的 Web 應用程式專案。 如果您還沒有專案，但想要嘗試發佈程序，則可以建立簡單的測試專案，如下所示：
 
-1. 在 Visual Studio 中，選取 [檔案] > [新增] > [專案]、搜尋 "Bottle"、選取 [Bottle Web 專案]、指定專案名稱和路徑，然後按一下 [確定]。 (Python 開發工作負載中隨附 Bottle 範本；請參閱[安裝](installing-python-support-in-visual-studio.md)。)
+1. 在 Visual Studio 中，選取 [檔案] > [新增] > [專案]****、搜尋 "Bottle"、選取 [Bottle Web 專案]****、指定專案名稱和路徑，然後按一下 [確定]****。 (Python 開發工作負載中隨附 Bottle 範本；請參閱[安裝](installing-python-support-in-visual-studio.md)。)
 
-1. 遵循提示以安裝外部套件：選取 [安裝至虛擬環境] 和您慣用的虛擬環境基底解譯器。 一般來說，這項選擇應該與 App Service 上所安裝的 Python 版本相同。
+1. 遵循提示以安裝外部套件：選取 [安裝至虛擬環境]**** 和您慣用的虛擬環境基底解譯器。 一般來說，這項選擇應該與 App Service 上所安裝的 Python 版本相同。
 
-1. 按下 F5 或選取 [偵錯] > [開始偵錯]，以進行本機的專案測試。
+1. 按下 F5 或選取 [偵錯] > [開始偵錯]****，以進行本機的專案測試。
 
 ## <a name="create-an-azure-app-service"></a>建立 Azure App Service
 
 您需要具備目標 App Service，才能發佈至 Azure。 為此，您可以使用 Azure 訂用帳戶建立 App Service，或使用暫時網站。
 
-如果您還沒有訂用帳戶，可以先使用[免費的完整 Azure 帳戶](https://azure.microsoft.com/free/)，其中包含適用於 Azure 服務的贈送點數。 此外，請考慮註冊 [Visual Studio Dev Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/)，您一整年都能在每個月取得美金 $25 的點數。
+如果您還沒有訂用帳戶，可以先使用[免費的完整 Azure 帳戶](https://azure.microsoft.com/free/)，其中包含適用於 Azure 服務的贈送點數。 也考慮註冊[視覺工作室開發要點](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/)，這給你25美元的信用每月一整年。
 
 > [!Tip]
 > 雖然 Azure 會要求信用卡以驗證您的帳戶，但不會對信用卡收費。 您也可以將[消費限制](/azure/billing/billing-spending-limit)設為與免費信用額度相等的金額，以確保不會產生任何額外的費用。 此外，Azure 提供免費的 App Service 方案層，很適合用於下一節所述的簡單測試應用程式。
@@ -54,20 +54,20 @@ Visual Studio 2017 和更新版本以及 Visual Studio 2015 的發佈程序有�
 使用有效的 Azure 訂用帳戶，建立 App Service 與空的 Web 應用程式，如下所示：
 
 1. 登入 [portal.azure.com](https://portal.azure.com)。
-1. 選取 [+新增]，然後依序選取 [Web + 行動] 和 [Web 應用程式]。
-1. 指定 Web 應用程式的名稱，將 [資源群組] 保留為 [新建]，然後選擇 **Windows** 作業系統。
-1. 依序選取 [App Service 方案/位置] 和 [新建]，並指定名稱和位置。 接下來，選取 [定價層]，向下捲動並選取 [F1 免費] 方案，然後依序按 [選取]、[確定] 和 [建立]。
-1. (選擇性) 建立 App Service 之後，您可以巡覽至該處，再選取 [取得發行設定檔]，並將檔案儲存到本機。
+1. 選取 [+新增]****，然後依序選取 [Web + 行動]**** 和 [Web 應用程式]****。
+1. 指定 Web 應用程式的名稱，將 [資源群組]**** 保留為 [新建]，然後選擇 **Windows** 作業系統。
+1. 依序選取 [App Service 方案/位置]**** 和 [新建]****，並指定名稱和位置。 接下來，選取 [定價層]****，向下捲動並選取 [F1 免費]**** 方案，然後依序按 [選取]****、[確定]**** 和 [建立]****。
+1. (選擇性) 建立 App Service 之後，您可以巡覽至該處，再選取 [取得發行設定檔]****，並將檔案儲存到本機。
 
 ### <a name="using-a-temporary-app-service"></a>使用暫時的 App Service
 
 在無需 Azure 訂用帳戶的情況下，按下列方式建立暫時的 App Service：
 
 1. 開啟瀏覽器並移至 [try.azurewebsites.net](https://try.azurewebsites.net)。
-1. 選取 [Web 應用程式] 作為應用程式類型，然後選取 [下一步]。
-1. 選取 [空白網站]，然後選取 [建立]。
+1. 選取 [Web 應用程式]**** 作為應用程式類型，然後選取 [下一步]****。
+1. 選取 [空白網站]****，然後選取 [建立]****。
 1. 以您選擇的社交登入進行登入，在經過一小段時間之後，就可以透過顯示的 URL 存取您的網站。
-1. 選取 [下載發行設定檔] 並儲存 `.publishsettings` 檔案，稍後您會使用此檔案。
+1. 選取 [下載發行設定檔]**** 並儲存 `.publishsettings` 檔案，稍後您會使用此檔案。
 
 ## <a name="configure-python-on-azure-app-service"></a>設定 Azure App Service 上的 Python
 
@@ -79,7 +79,7 @@ Visual Studio 2017 和更新版本以及 Visual Studio 2015 的發佈程序有�
 
 從 Visual Studio 2017 和更新版本發佈至 Azure App Service 時，僅會將您專案中的檔案複製到伺服器。 因此，您必須建立必要的檔案來設定伺服器環境。
 
-1. 在 Visual Studio 的 [方案總管] 中，以滑鼠右鍵按一下專案，然後選取 [新增] > [新增項目...]。在出現的對話方塊中，選取 "Azure web.config (Fast CGI)" 範本並選取 [確定]。 這會在您的專案根目錄中建立 `web.config` 檔案。
+1. 在視覺化工作室**解決方案資源管理器**中，按右鍵專案並選擇 **"添加>新專案..."** 在顯示的對話方塊中，選擇"Azure Web.config（快速 CGI）"範本並選擇"確定"。 這會在您的專案根目錄中建立 `web.config` 檔案。
 
 1. 修改 `web.config` 中的 `PythonHandler` 項目，使路徑符合伺服器上的 Python 安裝 (如需詳細資料，請參閱 [IIS 設定參考](https://www.iis.net/configreference) \(英文\) (iis.net))。 例如，若是 Python 3.6.1 x64，顯示的項目應如下所示：
 
@@ -109,7 +109,7 @@ Visual Studio 2017 和更新版本以及 Visual Studio 2015 的發佈程序有�
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django**：Django 專案需要對 `web.config` 進行兩項變更。 第一，將 `WSGI_HANDLER` 值變更為 `django.core.wsgi.get_wsgi_application()` (此物件位於 `wsgi.py` 檔案中)：
+    - **Django**：Django 專案需要對 `web.config` 進行兩個變更。 第一，將 `WSGI_HANDLER` 值變更為 `django.core.wsgi.get_wsgi_application()` (此物件位於 `wsgi.py` 檔案中)：
 
         ```xml
         <!-- Django apps only -->
@@ -122,7 +122,7 @@ Visual Studio 2017 和更新版本以及 Visual Studio 2015 的發佈程序有�
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **僅限 Django 應用程式**：在 Django 專案的 `settings.py` 檔案中，將您的網站 URL 網域新增至 `ALLOWED_HOSTS` (如下所示)，並使用您的 URL 取代 'vspython-test-02.azurewebsites.net'：
+1. **僅 Django 應用程式**：在 Django 專案的 `settings.py` 檔案中，將您的網站 URL 網域新增至 `ALLOWED_HOSTS`(如下所示)，並使用您的 URL 取代 'vspython-test-02.azurewebsites.net'：
 
     ```python
     # Change the URL to your specific site
@@ -133,19 +133,19 @@ Visual Studio 2017 和更新版本以及 Visual Studio 2015 的發佈程序有�
 
     請注意，當陣列為空時，Django 會自動允許 'localhost'，但新增您的生產環境 URL 將會移除該功能。 基於此原因，您可能會想要個別維護 `settings.py` 的開發和生產版本，或使用環境變數來控制執行階段值。
 
-1. 在方案總管中，展開與您的專案同名的資料夾，再以滑鼠右鍵按一下 `static` 資料夾，選取 [新增] > [新增項目]，然後依序選取「Azure 靜態檔案 web.config」範本和 [確定]。 這個動作會在 `static` 資料夾中建立另一個 `web.config`，以停用該資料夾的 Python 處理。 此組態會將靜態檔案的要求傳送給預設的網頁伺服器，而不是使用 Python 應用程式。
+1. 在方案總管**** 中，展開與您的專案同名的資料夾，再以滑鼠右鍵按一下 `static` 資料夾，選取 [新增] > [新增項目]****，然後依序選取「Azure 靜態檔案 web.config」範本和 [確定]****。 這個動作會在 `static` 資料夾中建立另一個 `web.config`，會停用該資料夾的 Python 處理。 此設定會將靜態檔案要求傳送至預設的 Web 伺服器，而不是使用 Python 應用程式。
 
-1. 儲存您的專案，然後在 Visual Studio 的方案總管中，以滑鼠右鍵按一下專案，然後選取 [發行]。
+1. 儲存您的專案，然後在 Visual Studio 的方案總管**** 中，以滑鼠右鍵按一下專案，然後選取 [發行]****。
 
     ![專案操作功能表上的 [發佈] 命令](media/template-web-publish-command.png)
 
-1. 在顯示的 [發行] 索引標籤中，選取發行目標：
+1. 在顯示的 [發行]**** 索引標籤中，選取發行目標：
 
-    a. 您自己的 Azure 訂用帳戶：依序選取 [Microsoft Azure App Service]、[選取現有] 以及 [發行]。 對話方塊隨即出現，您可以在其中選取適當的訂用帳戶和 App Service。 如果未顯示 App Service，請如下所述，使用下載的發行設定檔以取得暫時的 App Service。
+    a. 您自己的 Azure 訂用帳戶：依序選取 [Microsoft Azure App Service]****、[選取現有]**** 以及 [發行]****。 對話方塊隨即出現，您可以在其中選取適當的訂用帳戶和 App Service。 如果未顯示 App Service，請如下所述，使用下載的發行設定檔以取得暫時的 App Service。
 
     ![發佈至 Azure 步驟 1 (Visual Studio 2017 和更新版本)，現有的訂用帳戶](media/tutorials-common-publish-1a-2017.png)
 
-    b. 如果您是在 try.azurewebsites.net 上使用暫時的 App Service，或需要使用發行設定檔，請選取 **>** 控制項以尋找 [匯入設定檔]，然後依序選取該選項與 [發行]。 即會提示先前下載的 `.publishsettings` 檔案位置。
+    b. 如果您在try.azurewebsites.net上使用臨時應用服務，或者需要使用發佈設定檔，請選擇**>** 該控制項以查找**導入設定檔**，選擇該選項，然後選擇 **"發佈**"。 即會提示先前下載的 `.publishsettings` 檔案位置。
 
     ![發佈至 Azure 步驟 1 (Visual Studio 2017 和更新版本)，暫時的 App Service](media/tutorials-common-publish-1b-2017.png)
 
@@ -157,13 +157,13 @@ Visual Studio 2017 和更新版本以及 Visual Studio 2015 的發佈程序有�
 
     b. 再次檢查 `web.config` 檔案中的 Python 解譯器路徑。 該路徑必須完全符合您所選擇的網站延伸模組安裝位置。
 
-    c.  使用 Kudu 主控台，升級應用程式 `requirements.txt` 檔案中列出的任何套件：瀏覽至 `web.config` 中使用的相同 Python 資料夾 (例如 `/home/python361x64`)，然後按照 [Kudu 主控台](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)一節所述，執行下列命令：
+    c. 使用 Kudu 主控台，升級應用程式 `requirements.txt` 檔案中列出的任何套件：瀏覽至 `web.config` 中使用的相同 Python 資料夾 (例如 `/home/python361x64`)，然後按照 [Kudu 主控台](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)一節所述，執行下列命令：
 
     ```command
     python -m pip install --upgrade -r /home/site/wwwroot/requirements.txt
     ```
 
-    如果執行此命令時顯示權限錯誤，請再次檢查，並確認您是在網站延伸模組資料夾中執行命令，而「不是」在其中一個 App Service 的預設 Python 安裝資料夾中。 因為您無法修改預設環境，所以嘗試安裝套件必然會失敗。
+    如果執行此命令時顯示權限錯誤，請再次檢查，並確認您是在網站延伸模組資料夾中執行命令，而「不是」** 在其中一個 App Service 的預設 Python 安裝資料夾中。 因為您無法修改預設環境，所以嘗試安裝套件必然會失敗。
 
     d. 如需詳細的錯誤輸出，請將下列這一行新增至 `<system.webServer>` 節點內的 `web.config`，即可提供更詳細的錯誤輸出：
 
@@ -174,35 +174,35 @@ Visual Studio 2017 和更新版本以及 Visual Studio 2015 的發佈程序有�
     e. 安裝新的套件之後，請嘗試重新啟動 App Service。 每當 `web.config` 變更時，App Service 都會自動重新啟動，因此變更 `web.config` 時，並不需要重新啟動。
 
     > [!Tip]
-    > 如果您針對應用程式的 `requirements.txt` 檔案進行任何變更，請務必再次使用 Kudu 主控台，安裝該檔案現在列出的任何套件。
+    > 如果您對應用程式的 `requirements.txt` 檔案做任何變更，請務必再次使用 Kudu 主控台安裝現在列在該檔案中的任何套件。
 
-1. 完全設定好伺服器環境之後，請重新整理瀏覽器的網頁，即應該會顯示 Web 應用程式。
+1. 一旦完全伺服器環境設定，重新整理瀏覽器頁面，Web 應用程式應該會出現。
 
-    ![將 Bottle、Flask 和 Django 應用程式發行至 App Service 的結果](media/azure-publish-results.png)
+    ![將 Bottle、Flask、Django 應用程式發佈至 App Service 的結果](media/azure-publish-results.png)
 
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>發佈至 App Service - Visual Studio 2015
 
 > [!Note]
-> 如需此程序的短片，請觀看 [Visual Studio Python tutorial:Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (Visual Studio Python 教學課程：建置網站) (youtube.com，3 分 10 秒)。
+> 如需此程序的短片，請觀看 [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (Visual Studio Python 教學課程：建置網站，youtube.com，3 分 10 秒)。
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，選取 [發行]。
+1. 在 [方案總管]**** 中，以滑鼠右鍵按一下專案，選取 [發行]****。
 
-1. 在 [發行] 對話方塊中，選取 [Microsoft Azure App Service]：
+1. 在 [發行]**** 對話方塊中，選取 [Microsoft Azure App Service]****：
 
   ![發佈至 Azure 步驟 1](media/tutorials-common-publish-1.png)
 
 1. 選取目標：
 
-    - 如果您有 Azure 訂用帳戶，請選取 [Microsoft Azure App Service] 作為 發佈目標，然後在下列對話方塊中選取現有的 App Service，或選取 [新增] 以建立新的 App Service。
-    - 如果您是使用來自 try.azurewebsites.net 的暫時網站，請選取 [匯入] 作為發佈目標，然後瀏覽至從網站下載的 `.publishsettings` 檔案，並選取 [確定]。
+    - 如果您有 Azure 訂用帳戶，請選取 [Microsoft Azure App Service]**** 作為 發佈目標，然後在下列對話方塊中選取現有的 App Service，或選取 [新增]**** 以建立新的 App Service。
+    - 如果您是使用來自 try.azurewebsites.net 的暫時網站，請選取 [匯入]**** 作為發佈目標，然後瀏覽至從網站下載的 `.publishsettings` 檔案，並選取 [確定]****。
 
-1. App Service 詳細資料會出現在 [發行] 對話方塊的 [連線] 索引標籤中，如下所示。
+1. App Service 詳細資料會出現在 [發行]**** 對話方塊的 [連線]**** 索引標籤中，如下所示。
 
   ![發佈至 Azure 步驟 2](media/tutorials-common-publish-2.png)
 
-1. 視需要選取 [下一步 >] 以檢閱其他設定。
+1. 視需要選取 [下一步 >]**** 以檢閱其他設定。
 
-1. 選取 [發行]。 將您的應用程式部署至 Azure 之後，就會在該網站上開啟您的預設瀏覽器。
+1. 選取 [發行]****。 將您的應用程式部署至 Azure 之後，就會在該網站上開啟您的預設瀏覽器。
 
 在這個程序期間，Visual Studio 也會執行下列步驟：
 

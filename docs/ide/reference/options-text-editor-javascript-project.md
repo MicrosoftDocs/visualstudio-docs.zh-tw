@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605925"
 ---
 # <a name="options-text-editor-javascript-project"></a>選項、文字編輯器、JavaScript、專案
 
-使用 [選項]  對話方塊的 [專案]  頁面，在程式碼編輯器中指定 JavaScript 和 TypeScript 專案選項。 若要存取此頁面，請在功能表列上依序選擇 [工具]   > [選項]  ，然後依序展開 [文字編輯器]   > [JavaScript/TypeScript]   > [Project]  。
+使用 [選項]**** 對話方塊的 [專案]**** 頁面，在程式碼編輯器中指定 JavaScript 和 TypeScript 專案選項。 要訪問此頁面，在功能表列上，請選擇 **"工具** > **選項**"，然後展開**文字編輯器** > **JavaScript/TypeScript** > **專案**。
 
 ## <a name="project-analysis-options"></a>專案分析選項
 
@@ -60,11 +60,11 @@ ms.locfileid: "68605925"
 
 ### <a name="uielement-list"></a>UIElement 清單
 
-|選項|說明|
+|選項|描述|
 |------------|-----------------|
 |**React 架構**|選取此選項後，程式碼編輯器會發出 *.js* 副檔名。|
-|**Preserve**|選取此選項時，程式碼編輯器會將 JSX 保留為輸出的一部分，並發出 *.jsx* 副檔名。|
+|**保存**|選取此選項時，程式碼編輯器會將 JSX 保留為輸出的一部分，並發出 *.jsx* 副檔名。|
 
 ## <a name="see-also"></a>另請參閱
 
-- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
+- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)

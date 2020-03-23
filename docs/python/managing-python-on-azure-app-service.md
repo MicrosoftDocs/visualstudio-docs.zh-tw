@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 7ffe0de939eba8af38c132fc3de5c96a9499e3f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62535955"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure App Service 上設定 Python 環境 (Windows)
@@ -25,7 +25,7 @@ ms.locfileid: "62535955"
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) 是一種適用於 Web 應用程式的平台即服務供應項目，不論它們是否為透過瀏覽器、您自己的用戶端所使用的 REST API 或是事件觸發處理所存取的網站。 App Service 完全支援使用 Python 來實作應用程式。
 
-Azure App Service 是以一組 App Service「網站延伸模組」的形式來支援可自訂的 Python，且每個延伸模組都包含特定版本的 Python 執行階段。 如此一來，您即可將任何所需的套件直接安裝到該環境中，如本文章所述。 您可以在 App Service 當中自訂環境，即不需要維護 Web 應用程式專案中的套件，或使用應用程式程式碼來上傳套件。
+Azure App Service 是以一組 App Service「網站延伸模組」** 的形式來支援可自訂的 Python，且每個延伸模組都包含特定版本的 Python 執行階段。 如此一來，您即可將任何所需的套件直接安裝到該環境中，如本文章所述。 您可以在 App Service 當中自訂環境，即不需要維護 Web 應用程式專案中的套件，或使用應用程式程式碼來上傳套件。
 
 > [!Tip]
 > 雖然 App Service 預設已在伺服器根資料夾中安裝 Python 2.7 和 Python 3.4，但您無法在這些環境中自訂或安裝套件，因此也不應該依賴這些套件。 反之，您應該倚賴自己所控制的網站延伸模組，如本文章所述。
@@ -33,7 +33,7 @@ Azure App Service 是以一組 App Service「網站延伸模組」的形式來�
 ## <a name="choose-a-python-version-through-the-azure-portal"></a>透過 Azure 入口網站選擇 Python 版本
 
 1. 在 Azure 入口網站中，為您的 Web 應用程式建立 App Service。
-1. 在 App Service 頁面中，捲動到 [開發工具] 區段，再依序選取 [延伸模組] 和 [+ 新增]。
+1. 在 App Service 頁面中，捲動到 [開發工具]**** 區段，再依序選取 [延伸模組]**** 和 [+ 新增]****。
 1. 向下捲動至含有所需 Python 版本的延伸模組清單中：
 
     ![顯示 Python 延伸模組的 Azure 入口網站](media/python-on-azure-extensions.png)
@@ -41,7 +41,7 @@ Azure App Service 是以一組 App Service「網站延伸模組」的形式來�
     > [!Tip]
     > 如果您需要較舊的 Python 版本，但網站延伸模組並未列出這個版本，您仍然可以透過 Azure Resource Manager 進行安裝，如下一節所述。
 
-1. 選取延伸模組，並接受法律條款，然後選取 [確定]。
+1. 選取延伸模組，並接受法律條款，然後選取 [確定]****。
 1. 安裝完成時，入口網站即會顯示通知。
 
 ## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>透過 Azure Resource Manager 選擇 Python 版本
@@ -84,7 +84,7 @@ Azure App Service 是以一組 App Service「網站延伸模組」的形式來�
 
 Python 網站延伸模組會安裝在伺服器的 *d:\home* 下方，適當的 Python 版本和架構資料夾中 (少數較舊版本例外)。 例如，Python 3.6.1 x64 會安裝在 *d:\home\python361x64* 中。 因此，Python 解譯器的完整路徑即為 *d:\home\python361x64\python.exe*。
 
-若要查看 App Service 上的特定路徑，請選取 App Service 頁面的 [延伸模組]，然後選取清單中的延伸模組。
+若要查看 App Service 上的特定路徑，請選取 App Service 頁面的 [延伸模組]****，然後選取清單中的延伸模組。
 
 ![Azure App Service 上的延伸模組清單](media/python-on-azure-extension-list.png)
 
@@ -94,7 +94,7 @@ Python 網站延伸模組會安裝在伺服器的 *d:\home* 下方，適當的 P
 
 如果您無法查看延伸模組的路徑，可以手動使用主控台來尋找：
 
-1. 在您的 [App Service] 頁面上，選取 [開發工具] > [主控台]。
+1. 在應用服務頁面上，選擇**開發工具** > **主控台**。
 1. 輸入 `ls ../home` 或 `dir ..\home` 命令，以查看最上層的延伸模組資料夾，例如 *Python361x64*。
 1. 輸入 `ls ../home/python361x64` 或 `dir ..\home\python361x64` 之類的命令，以驗證該資料夾中包含 *python.exe* 和其他解譯器檔案。
 
@@ -173,11 +173,11 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
 
 [Kudu console](https://github.com/projectkudu/kudu/wiki/Kudu-console) (Kudu 主控台) 可讓您透過直接且提高權限的命令列存取 App Service 伺服器和其檔案系統。 這既是一項重要的偵錯工具，也可讓 CLI 作業 (例如安裝套件) 順利進行。
 
-1. 在 Azure 入口網站上選取 [開發工具] > [進階工具] [移至] [App Service] 頁面開啟 Kudu。 這個動作會瀏覽至與基底 App Service URL 相同的 URL，差別只在於插入了 `.scm`。 例如，如果您的基底 URL 是 `https://vspython-test.azurewebsites.net/`，則 Kudu 位於 `https://vspython-test.scm.azurewebsites.net/` (您可將其設為書籤)：
+1. 通過選擇**開發工具** > **高級工具**，然後選擇 **"轉到**"，從 Azure 門戶上的"應用服務"頁面打開庫杜。 這個動作會瀏覽至與基底 App Service URL 相同的 URL，差別只在於插入了 `.scm`。 例如，如果您的基底 URL 是 `https://vspython-test.azurewebsites.net/`，則 Kudu 位於 `https://vspython-test.scm.azurewebsites.net/` (您可將其設為書籤)：
 
     ![Azure App Service 的 Kudu 主控台](media/python-on-azure-console01.png)
 
-1. 選取 [偵錯主控台] > [CMD] 以開啟主控台，您可以在其中瀏覽至 Python 安裝，並查看現有的程式庫。
+1. 選擇**調試主控台** > **CMD**以打開主控台，您可以在其中導航到 Python 安裝中，並查看哪些庫已經存在。
 
 1. 安裝單一套件：
 
@@ -191,7 +191,7 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
 
     a. 瀏覽至您想要安裝套件的 Python 安裝資料夾，例如 *d:\home\python361x64*。
 
-    b. 執行 `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt` 命令。
+    b. 執行命令 `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt`。
 
     建議使用 *requirements.txt*，因為它可以輕鬆地重現您在本機和伺服器上設定的確切套件。 將任何變更部署至 *requirements.txt* 之後，請務必前往主控台，然後再次執行命令。
 

@@ -11,29 +11,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd040b613a5b982050d651f341456c5fafc2954b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "65679194"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>在 Visual Studio 中匯入發行設定，即可將應用程式發行至 Azure App Service
 
-您可以使用 [發行] 工具匯入發行設定，然後部署您的應用程式。 在本文中，我們會使用 Azure App Service 的發行設定，但您可以使用類似步驟從 [IIS](../deployment/tutorial-import-publish-settings-iis.md) 匯入發行設定。 在某些情況下，使用發行設定的設定檔速度，比起針對每個 Visual Studio 安裝手動設定服務部署還要快。
+您可以使用 [發行]**** 工具匯入發行設定，然後部署您的應用程式。 在本文中，我們會使用 Azure App Service 的發行設定，但您可以使用類似步驟從 [IIS](../deployment/tutorial-import-publish-settings-iis.md) 匯入發行設定。 在某些情況下，使用發行設定的設定檔速度，比起針對每個 Visual Studio 安裝手動設定服務部署還要快。
 
 這些步驟適用於 Visual Studio 中的 ASP.NET、ASP.NET Core 和 .NET Core 應用程式。 您也可以匯入 [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 應用程式的發行設定。
 
-在本教學課程中，您將進行下列作業：
+在本教學課程中，您將：
 
 > [!div class="checklist"]
 > * 從 Azure App Service 中產生發行設定檔案
 > * 將發行設定檔案匯入 Visual Studio
 > * 將應用程式部署至 Azure App Service
 
-發行設定檔案 (*\*.publishsettings*) 不同於 Visual Studio 中建立的發行設定檔 (*\*.pubxml*)。 發行設定檔案是由 Azure App Service 所建立，並可匯入至 Visual Studio。
+發佈設置檔 （*\*.publish 設置*） 與在 Visual Studio 中創建的發佈設定檔 （*\*.pubxml*） 不同。 發行設定檔案是由 Azure App Service 所建立，並可匯入至 Visual Studio。
 
 > [!NOTE]
-> 如果您只需要從某個 Visual Studio 安裝將 Visual Studio 發行設定檔 (*\*.pubxml* 檔案) 複製到另一個 Visual Studio 安裝，您可以在受控專案類型的 \\<專案名稱\>\Properties\PublishProfiles 資料夾中找到發行設定檔 \<設定檔名稱\>.pubxml。 針對網站，請查看 *\App_Data* 資料夾底下的內容。 發行設定檔是 MSBuild XML 檔案。
+> 如果您只需要將 Visual Studio 發佈設定檔*\*（.pubxml*檔） 從 Visual Studio 的一個安裝複製到另一個安裝，則可以在*\\<專案名\>[屬性]發佈設定檔*資料夾中找到用於託管專案類型的發佈設定檔。 * \< \> * 針對網站，請查看 *\App_Data* 資料夾底下的內容。 發行設定檔是 MSBuild XML 檔案。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -41,14 +41,14 @@ ms.locfileid: "65679194"
 
 * 您必須安裝 Visual Studio 2019 及 **ASP.NET 與網頁程式開發**工作負載。
 
-    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+    如果您尚未安裝 Visual Studio，請轉到 Visual [Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面以免費安裝它。
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * 您必須安裝 Visual Studio 2017 以及 **ASP.NET 和 Web 開發**工作負載。
 
-    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+    如果您尚未安裝 Visual Studio，請轉到 Visual [Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面以免費安裝它。
 ::: moniker-end
 
 * 建立 Azure App Service。 如需詳細指示，請參閱[使用 Visual Studio 將 ASP.NET Core Web 應用程式部署至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
@@ -57,25 +57,25 @@ ms.locfileid: "65679194"
 
 1. 在執行 Visual Studio 的電腦上，建立新的專案。
 
-    選擇正確的範本。 在本範例中，選擇 [ASP.NET Web 應用程式 (.NET Framework)] 或 (僅限 C#) [ASP.NET Core Web 應用程式]，然後按一下 [確定]。
+    選擇正確的範本。 在本範例中，選擇 [ASP.NET Web 應用程式 (.NET Framework)]**** 或 (僅限 C#) [ASP.NET Core Web 應用程式]****，然後按一下 [確定]****。
 
-    如果您沒有看到特定的專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 安裝 **ASP.NET 和 Web 開發**工作負載。
+    如果您沒有看到特定的專案範本，請在 [新增專案]**** 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式]**** 連結。 Visual Studio 安裝程式即會啟動。 安裝**ASP.NET和 Web 開發**工作負載。
 
     您選擇的專案範本 (ASP.NET 或 ASP.NET Core) 必須與 Web 伺服器上所安裝的 ASP.NET 版本相對應。
 
-1. 選擇 [MVC] (.NET Framework) 或 [Web 應用程式 (Model-View-Controller)] (適用於 .NET Core)，並確定已選取 [不需要驗證]，然後按一下 [確定]。
+1. 選擇 [MVC]**** (.NET Framework) 或 [Web 應用程式 (Model-View-Controller)]**** (適用於 .NET Core)，並確定已選取 [不需要驗證]****，然後按一下 [確定]****。
 
-1. 鍵入 **MyWebApp** 這類名稱，然後按一下 [確定]。
+1. 鍵入 **MyWebApp** 這類名稱，然後按一下 [確定]****。
 
     Visual Studio 會建立專案。
 
-1. 選擇 [建置] > [建置方案] 來建置專案。
+1. 選擇**生成** > **生成解決方案**來生成專案。
 
 ## <a name="create-the-publish-settings-file-in-azure-app-service"></a>在 Azure App Service 中建立發行設定檔案
 
 1. 在 Azure 入口網站中開啟 Azure App Service。
 
-1. 按一下 [取得發行設定檔]，並在本機儲存設定檔。
+1. 按一下 [取得發行設定檔]****，並在本機儲存設定檔。
 
     ![取得發行設定檔](../deployment/media/tutorial-azure-app-service-get-publish-profile.png)
 
@@ -112,4 +112,4 @@ ms.locfileid: "65679194"
 在本教學課程中，您已建立發行設定檔案、將其匯入至 Visual Studio，並已將 ASP.NET 應用程式部署至 Azure App Service。 您可能需要 Visual Studio 中發行選項的概觀。
 
 > [!div class="nextstepaction"]
-> [第一眼部署](../deployment/deploying-applications-services-and-components.md)
+> [部署簡介](../deployment/deploying-applications-services-and-components.md)

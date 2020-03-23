@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f761e87c1658c11bfdfd93a4f4e22299d88575a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62979818"
 ---
 # <a name="spanspan-constructor"></a>span::span 建構函式
 
-初始化 `span` 類別的新執行個體。
+將 `span` 類別的新執行個體初始化。
 
 ## <a name="syntax"></a>語法
 
@@ -70,4 +70,4 @@ span(
 
 ## <a name="see-also"></a>另請參閱
 
-- [span 類別](../profiling/span-class.md)
+- [跨類](../profiling/span-class.md)
