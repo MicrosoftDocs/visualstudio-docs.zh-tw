@@ -10,10 +10,10 @@ metadata:
   ms.date: 09/18/2019
   ms.topic: hub-page
   ms.openlocfilehash: 2ba2e1348a3abf5c914e1c686e5fd00ff186d9c0
-  ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/10/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74985042"
 highlightedContent:
   items:
@@ -67,7 +67,7 @@ productDirectory:
     - url: https://docs.microsoft.com/xamarin/get-started/quickstarts/single-page?pivots=macos
       text: Xamarin 使用者入門
 tools:
-  title: 語言
+  title: Languages
   summary: 您可在 Visual Studio for Mac 中以 C#、F#、Razor、HTML5、CSS、Javascript、Typescript、XAML 和 XML 撰寫。
   items:
   - title: C#
@@ -149,7 +149,7 @@ additionalContent:
     - title: 開發
       summary: IntelliSense、重構，以及您慣用語言的語法醒目提示。
       url: ~/source-editor.md
-    - title: 組建
+    - title: Build
       summary: 設定您的編譯器並建置您的應用程式。
       url: ~/compiling-and-building.md
     - title: 偵錯

@@ -44,11 +44,11 @@
       href: workspaces.md
     - name: 檔案內容
       href: workspace-file-contexts.md
-    - name: 索引
+    - name: 編製索引
       href: workspace-indexing.md
     - name: 語言服務
       href: workspace-language-services.md
-    - name: 組建
+    - name: Build
       href: workspace-build.md
 - name: 擴充功能表與命令
   items:
@@ -138,33 +138,33 @@
           href: editor-imports.md
         - name: 支援 EditorConfig
           href: supporting-editorconfig.md
-        - name: 逐步解說：將內容類型連結至副檔名
+        - name: 逐步解說︰將內容類型連結至副檔名
           href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
         - name: 逐步解說：建立邊界字符
           href: walkthrough-creating-a-margin-glyph.md
-        - name: 逐步解說：自訂文字檢視
+        - name: 逐步解說︰自訂文字檢視
           href: walkthrough-customizing-the-text-view.md
-        - name: 逐步解說：建立檢視裝飾、命令和設定 (分欄輔助線)
+        - name: 逐步解說︰建立檢視裝飾、命令和設定 (分欄輔助線)
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-        - name: 逐步解說：反白顯示文字
+        - name: 逐步解說︰反白顯示文字
           href: walkthrough-highlighting-text.md
-        - name: 逐步解說：大綱
+        - name: 逐步解說︰大綱
           href: walkthrough-outlining.md
-        - name: 逐步解說：顯示成對大括弧
+        - name: 逐步解說︰顯示成對括弧
           href: walkthrough-displaying-matching-braces.md
-        - name: 逐步解說：逐步解說︰顯示 QuickInfo 工具提示
+        - name: 逐步解說︰顯示 QuickInfo 工具提示
           href: walkthrough-displaying-quickinfo-tooltips.md
-        - name: 逐步解說：顯示簽章說明
+        - name: 逐步解說︰顯示簽章說明
           href: walkthrough-displaying-signature-help.md
         - name: 逐步解說：顯示陳述式完成
           href: walkthrough-displaying-statement-completion.md
-        - name: 逐步解說：實作程式碼片段
+        - name: 逐步解說︰實作程式碼片段
           href: walkthrough-implementing-code-snippets.md
-        - name: 逐步解說：顯示燈泡建議
+        - name: 逐步解說︰顯示燈泡建議
           href: walkthrough-displaying-light-bulb-suggestions.md
-        - name: 逐步解說：搭配編輯器延伸模組使用 Shell 命令
+        - name: 逐步解說︰搭配編輯器延伸模組使用 Shell 命令
           href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-        - name: 逐步解說：在編輯器延伸模組中使用快速鍵
+        - name: 逐步解說︰搭配編輯器延伸模組使用快速鍵
           href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
         - name: 逐步解說：從編輯器延伸模組存取 DTE 物件
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
@@ -172,9 +172,9 @@
       items:
         - name: 建立自訂編輯器和設計工具
           href: creating-custom-editors-and-designers.md
-        - name: 逐步解說：建立自訂佈景主題
+        - name: 逐步解說︰建立自訂編輯器
           href: walkthrough-creating-a-custom-editor.md
-        - name: 逐步解說：將功能新增至自訂編輯器
+        - name: 逐步解說︰將功能新增至自訂編輯器
           href: walkthrough-adding-features-to-a-custom-editor.md
         - name: 設計工具初始化和中繼資料組態
           href: designer-initialization-and-metadata-configuration.md
@@ -388,13 +388,13 @@
       items:
         - name: 建立自訂起始頁
           href: creating-a-custom-start-page.md
-        - name: 逐步解說：將自訂的 XAML 新增至起始頁
+        - name: 逐步解說︰將自訂的 XAML 新增至起始頁
           href: walkthrough-adding-custom-xaml-to-the-start-page.md
         - name: 將使用者控制項新增至起始頁
           href: adding-user-control-to-the-start-page.md
         - name: 將 Visual Studio 命令新增至起始頁
           href: adding-visual-studio-commands-to-a-start-page.md
-        - name: 逐步解說：在起始頁儲存使用者設定
+        - name: 逐步解說︰將使用者設定儲存於起始頁
           href: walkthrough-saving-user-settings-on-a-start-page.md
         - name: 部署自訂起始頁
           href: deploying-custom-start-pages.md
@@ -494,11 +494,11 @@
       href: vsix-project-template.md
     - name: 開始使用 VSIX 專案範本
       href: getting-started-with-the-vsix-project-template.md
-    - name: 逐步解說：發佈 Visual Studio 延伸模組
+    - name: 逐步解說︰發佈 Visual Studio 延伸模組
       href: walkthrough-publishing-a-visual-studio-extension.md
-    - name: 逐步解說：透過命令列發佈 Visual Studio 延伸模組
+    - name: 逐步解說︰透過命令列發佈 Visual Studio 延伸模組
       href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
-    - name: 逐步解說：建立延伸模組套件
+    - name: 逐步解說：建立延伸模組組件
       href: walkthough-create-extension-pack.md
     - name: 將相依性新增至 VSIX 套件
       href: how-to-add-a-dependency-to-a-vsix-package.md
@@ -576,9 +576,9 @@
           href: include-element.md
         - name: Define 項目
           href: define-element.md
-        - name: Commands 項目
+        - name: Commands 元素
           items:
-            - name: Commands 項目
+            - name: Commands 元素
               href: commands-element.md
             - name: Menus 項目
               items:
@@ -586,11 +586,11 @@
                   href: menus-element.md
                 - name: Menu 項目
                   href: menu-element.md
-            - name: Groups 項目
+            - name: Groups 元素
               items:
-                - name: Groups 項目
+                - name: Groups 元素
                   href: groups-element.md
-                - name: Group 項目
+                - name: Group 元素
                   href: group-element.md
             - name: Buttons 項目
               items:
@@ -768,9 +768,9 @@
               href: popdirlistfunc.md
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
-        - name: 列舉程式
+        - name: 列舉值
           items:
-            - name: 列舉程式
+            - name: 列舉值
               href: enumerators.md
             - name: 命令碼列舉程式
               href: command-code-enumerator.md
@@ -828,7 +828,7 @@
       href: creating-a-software-development-kit.md
     - name: SDK 與 NuGet 套件
       href: nuget-versus-sdk-references.md
-    - name: '逐步解說：使用 C# 或 Visual Basic 建立 SDK'
+    - name: '逐步解說︰使用 C# 或 Visual Basic 建立 SDK'
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: 逐步解說：使用 C++ 建立 SDK
       href: walkthrough-creating-an-sdk-using-cpp.md

@@ -11,10 +11,10 @@ metadata:
   manager: lank
   ms.date: 12/04/2019
   ms.openlocfilehash: bde855a1550f304df07c22262d7cb07094b5bc9e
-  ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/06/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74883830"
 highlightedContent:
   items:
@@ -40,7 +40,7 @@ conceptualContent:
       itemType: get-started
     footerLink:
       url: ~/vs-azure.md
-      text: 更多資訊
+      text: 查看更多
   - title: 熱門資源
     links:
     - text: 比較選項和定價
@@ -76,7 +76,7 @@ tools:
   - title: Visual Studio for Mac
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
     url: /visualstudio/mac/
-  - title: Visual Studio 應用程式中心
+  - title: Visual Studio App Center
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mobile-center.svg
     url: /appcenter/
 additionalContent:
@@ -93,7 +93,7 @@ additionalContent:
       links:
       - text: Azure 開發/測試
         url: ~/vs-azure-payg.md
-      - text: Visual Studio 應用程式中心
+      - text: Visual Studio App Center
         url: ~/vs-visual-studio-app-center.md
       - text: Azure DevOps Server 及 CAL
         url: ~/vs-vsts.md

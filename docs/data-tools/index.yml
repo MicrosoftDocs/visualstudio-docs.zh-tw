@@ -11,10 +11,10 @@ metadata:
   ms.workload:
   - data-storage
   ms.openlocfilehash: c9b80dcd2d1d8bb81c0dd8e06aa0f4749ff93eb5
-  ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/04/2020
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "78263075"
 landingContent:
 - title: .NET

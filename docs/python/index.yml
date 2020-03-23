@@ -12,10 +12,10 @@ metadata:
   ms.author: joshuapa
   ms.date: 09/23/2019
   ms.openlocfilehash: e85bdedfc91c949213528718d147a7f1890964ce
-  ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/27/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "71322480"
 landingContent:
 - title: 關於 Visual Studio 中的 Python 支援
