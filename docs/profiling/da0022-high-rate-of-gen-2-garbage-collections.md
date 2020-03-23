@@ -14,21 +14,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4e1fa46162f2aea74c5b3cb8396ad5e8d4c9a4cf
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779372"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022：高比率的 Gen 2 記憶體回收
 
 |||
 |-|-|
-|規則識別碼|DA0022|
-|Category|.NET Framework 使用方式|
+|規則 ID|DA0022|
+|類別|.NET Framework 使用方式|
 |程式碼剖析方法|全部|
 |訊息|發生相當高比率的 Gen 2 記憶體回收。 如果您設計讓大部分程式的資料結構配置並持續一段很長的時間，這通常不是問題。 不過，如果這不是預期的行為，您的應用程式可能正鎖定物件。 如果您不確定，可以收集 .NET 記憶體配置資料和物件存留期資訊，了解應用程式所使用之記憶體配置的模式。|
-|規則類型|警告|
+|規則型別|警告|
 
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。
 

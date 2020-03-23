@@ -1,6 +1,6 @@
 ---
-title: 從命令列測量效能
-description: 從命令列測量應用程式中的 CPU 效能和受控記憶體使用量。
+title: 測量命令列的性能
+description: 從命令列測量應用程式中的 CPU 性能和託管記憶體使用方式。
 ms.custom: ''
 ms.date: 02/21/2020
 ms.topic: conceptual
@@ -15,10 +15,10 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77558130"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>從命令列測量應用程式的效能
@@ -27,7 +27,7 @@ ms.locfileid: "77558130"
 
 本文所述範例會收集 Microsoft [記事本] 的效能資訊，但您可以使用相同的方法來分析任何處理序。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 * Visual Studio 2019 Preview 3 或更新版本
 
@@ -37,7 +37,7 @@ ms.locfileid: "77558130"
 
 使用 Visual Studio 診斷 CLI 工具進行分析時，其運作方式是將分析工具與其中一個收集器代理程式附加至處理序。 當您附加分析工具時，即會開始診斷工作階段以擷取並儲存分析資料，直到停止工具為止；此時會將這些資料匯出為 *.diagsession* 檔案。 接著，您即可在 Visual Studio 中開啟此檔案以分析結果。
 
-1. 啟動 [記事本]，然後開啟 [工作管理員] 以取得其處理序識別碼 (PID)。 在 [工作管理員] 的 [詳細資料] 索引標籤中，尋找此 PID。
+1. 啟動 [記事本]，然後開啟 [工作管理員] 以取得其處理序識別碼 (PID)。 在 [工作管理員] 的 [詳細資料]**** 索引標籤中，尋找此 PID。
 
 1. 開啟命令提示字元，並變更為包含收集代理程式可執行檔的目錄，通常位於這裡。
 
@@ -65,7 +65,7 @@ ms.locfileid: "77558130"
 
 1. 移至上一個命令的檔案輸出，並在 Visual Studio 中開啟以檢查收集到的資訊。
 
-## <a name="config_file"></a> 代理程式組態檔
+## <a name="agent-configuration-files"></a><a name="config_file"></a> 代理程式組態檔
 
 收集代理程式是一種可互換元件，其會依據您要嘗試測量的項目來收集不同類型資料。
 

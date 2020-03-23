@@ -1,5 +1,5 @@
 ---
-title: Profiler 命令列：檢測原生元件，取得計時資料
+title: 探測器命令列：儀器本機組件，獲取計時資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: fc7bb0a5e853edee4ff28cded94a5d576a13b596
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775440"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：從命令列使用分析工具檢測原生獨立元件並收集計時資料
@@ -30,29 +30,29 @@ ms.locfileid: "74775440"
 
 #### <a name="to-start-profiling-by-using-the-instrumentation-method"></a>使用檢測方法開始分析
 
-1. 開啟 [命令提示字元] 視窗。
+1. 開啟命令提示字元視窗。
 
-2. 使用 [VSInstr] 工具產生已檢測版的目標應用程式。
+2. 使用 [VSInstr]**** 工具產生已檢測版的目標應用程式。
 
-3. 啟動分析工具。 類型：
+3. 啟動分析工具。 輸入：
 
-    **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
+    **VSPerfCmd /開始：跟蹤/輸出：** `OutputFile` |`Options`
 
-   - [/start](../profiling/start.md) **:trace** 選項會初始化程式碼剖析工具。
+   - [/start](../profiling/start.md)**:trace** 選項會初始化程式碼剖析工具。
 
-   - [/output](../profiling/output.md) **:** `OutputFile` 選項必須搭配 **/start** 使用。 `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。
+   - [/輸出](../profiling/output.md)**：**`OutputFile`選項在 **/start**時是必需的。 `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。
 
      您可以使用下列一或多個選項搭配 **/start:trace** 選項。
 
    | 選項 | 描述 |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | 指定擁有程式碼剖析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 處理序擁有者會列在 [Windows 工作管理員] [處理序] 索引標籤上的 [使用者名稱] 資料行。 |
-   | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 之 [處理程序] 索引標籤上的 [工作階段識別碼] 資料行中。 **/crosssession** 可縮寫成 **/CS**。 |
-   | [/globaloff](../profiling/globalon-and-globaloff.md) | 啟動分析工具，但暫停資料收集。 使用 [/globalon](../profiling/globalon-and-globaloff.md) 以繼續程式碼剖析。 |
-   | [/counter](../profiling/counter.md) **:** `Config` | 從 `Config` 中指定的處理器效能計數器收集資訊。 計數器資訊會新增至在每個程式碼剖析事件收集的資料。 |
-   | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
-   | [/automark](../profiling/automark.md) **:** `Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
-   | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.*etl*) 檔案。 |
+   | [/使用者](../profiling/user-vsperfcmd.md) **：**[ ]`Domain` **\\**`UserName` | 指定擁有程式碼剖析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 進程擁有者列在 Windows 工作管理員的"**進程"** 選項卡上的 **"使用者名**"列中。 |
+   | [/交叉會話](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 之 [處理程序] 索引標籤上的 [工作階段識別碼]**** 資料行中。 **/crosssession** 可縮寫成 **/CS**。 |
+   | [/全域關閉](../profiling/globalon-and-globaloff.md) | 啟動分析工具，但暫停資料收集。 使用 [/globalon](../profiling/globalon-and-globaloff.md) 以繼續程式碼剖析。 |
+   | [/計數器](../profiling/counter.md) **：**`Config` | 從 `Config` 中指定的處理器效能計數器收集資訊。 計數器資訊會新增至在每個程式碼剖析事件收集的資料。 |
+   | [/贏計數器](../profiling/wincounter.md) **：**`WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
+   | [/自動標記](../profiling/automark.md) **：**`Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
+   | [/事件](../profiling/events-vsperfcmd.md) **：**`Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件在單獨的 （中收集）*etl*） 檔。 |
 
 4. 以一般方式啟動目標應用程式。
 
@@ -65,9 +65,9 @@ ms.locfileid: "74775440"
 
     |選項|描述|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 ( **/globalon**) 或停止 ( **/globaloff**) 所有處理序的資料收集。|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 ( **/processon**) 或停止 ( **/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|開始 ( **/threadon**) 或停止 ( **/threadoff**) 執行緒識別碼 (`TID`) 指定的執行緒資料收集。|
+    |[/全域/全域關閉](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
+    |[/進程](../profiling/processon-and-processoff.md)**：** `PID` [/進程關閉](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
+    |[/執行緒](../profiling/threadon-and-threadoff.md)**：** `TID` [/執行緒關閉](../profiling/threadon-and-threadoff.md) **：**`TID`|開始 (**/threadon**) 或停止 (**/threadoff**) 執行緒識別碼 (`TID`) 指定的執行緒資料收集。|
 
 ## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段
  若要結束程式碼剖析工作階段，請關閉正在執行已檢測元件的應用程式，然後呼叫 **VSPerfCmd** [/shutdown](../profiling/shutdown.md) 選項以關閉程式碼剖析工具，並關閉程式碼剖析資料檔案。
@@ -76,10 +76,10 @@ ms.locfileid: "74775440"
 
 1. 關閉目標應用程式。
 
-2. 關閉分析工具。 類型：
+2. 關閉程式碼剖析工具。 輸入：
 
      **VSPerfCmd /shutdown**
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)

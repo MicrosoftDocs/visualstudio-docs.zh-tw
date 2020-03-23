@@ -18,10 +18,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595341"
 ---
 # <a name="custombuild-task"></a>CustomBuild 工作
@@ -34,10 +34,10 @@ ms.locfileid: "75595341"
 
 |參數|描述|
 |---------------|-----------------|
-|**BuildSuffix**|選擇性的 **string** 參數。|
-|**Sources**|必要的 **ITaskItem[]** 參數。|
-|**TrackerLogDirectory**|選擇性的 **string** 參數。|
+|**BuildSuffix**|可選**字串**參數。|
+|**來源**|必需**的 ITaskItem]** 參數。|
+|**TrackerLogDirectory**|可選**字串**參數。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[工作參考](../msbuild/msbuild-task-reference.md)
+[任務引用](../msbuild/msbuild-task-reference.md)

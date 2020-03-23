@@ -16,29 +16,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d38f87970d5f9ff6d90befc61073cc4ed3d4ca92
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589821"
 ---
-# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>如何：在您的遊戲或應用程式中使用3D 資產
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>如何：在遊戲或應用中使用 3D 資產
 
 本文描述如何使用 Visual Studio 處理 3D 資產，並將它們包括在您的組建中。
 
 在 Visual Studio 中使用工具建立 3D 資產之後，下一步是在您的應用程式中使用它們。 但是，您的資產必須先轉換為 DirectX 可以了解的格式，才能使用它們。 為了協助您轉換資產，Visual Studio 提供它可產生之每種資產類型的組建自訂。 若要在組建中包括資產，您只需要設定專案使用組建自訂、將資產加入至專案，以及設定資產使用正確的組建自訂。 之後，您可以將資產載入至應用程式，並建立和填寫 DirectX 資源來使用它們，就像在任何其他 DirectX 應用程式中一樣。
 
-## <a name="configure-your-project"></a>設定專案
+## <a name="configure-your-project"></a>設定您的專案
 
-Visual Studio 必須先知道有關您要部署的資產類型，才能在建置時部署 3D 資產。 Visual Studio 已知道許多一般檔案類型；但是，因為只有特定類型的應用程式才能使用 3D 資產，所以 Visual Studio 不會假設專案會建置這些類型的檔案。 您可以告訴 Visual Studio 您的應用程式使用這些類型的資產，方法是使用針對每種資產類型提供的「組建自訂」，告訴 Visual Studio 如何以有用方式處理不同類型的檔案。 因為是根據個別專案來套用這些自訂，所以您只需要在專案中加入適當的自訂即可。
+Visual Studio 必須先知道有關您要部署的資產類型，才能在建置時部署 3D 資產。 Visual Studio 已知道許多一般檔案類型；但是，因為只有特定類型的應用程式才能使用 3D 資產，所以 Visual Studio 不會假設專案會建置這些類型的檔案。 您可以告訴 Visual Studio 您的應用程式使用這些類型的資產，方法是使用針對每種資產類型提供的「組建自訂」**，告訴 Visual Studio 如何以有用方式處理不同類型的檔案。 因為是根據個別專案來套用這些自訂，所以您只需要在專案中加入適當的自訂即可。
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>將組建自訂加入至專案
 
-1. 在 [方案總管] 中，開啟專案的捷徑功能表，然後選擇 [組建相依性] > [組建自訂]。
+1. 在 [方案總管]**** 中，開啟專案的捷徑功能表，然後選擇 [組建相依性]**** > [組建自訂]****。
 
-   [Visual C++ 組建自訂檔] 對話方塊隨即出現。
+   [Visual C++ 組建自訂檔]**** 對話方塊隨即出現。
 
-2. 在 [可用的組建自訂檔] 下，選取對應至您要用於專案之資產類型的核取方塊，如下表所述：
+2. 在 [可用的組建自訂檔]**** 下，選取對應至您要用於專案之資產類型的核取方塊，如下表所述：
 
     |資產類型|組建自訂名稱|
     |----------------| - |
@@ -46,7 +46,7 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
     |3D 模型|**MeshContentTask(.targets、.props)**|
     |著色器|**ShaderGraphContentTask(.targets、.props)**|
 
-3. 選擇 [ **確定** ] 按鈕。
+3. 選擇 [確定] **** 按鈕。
 
 ## <a name="include-assets-in-your-build"></a>在組建中包括資產
 
@@ -54,26 +54,26 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 ### <a name="to-add-an-asset-to-your-build"></a>將資產加入至組建
 
-1. 在方案總管中，於專案中，開啟資產的捷徑功能表，然後選擇 [屬性]。
+1. 在方案總管**** 中，於專案中，開啟資產的捷徑功能表，然後選擇 [屬性]****。
 
-   資產的 [屬性頁] 對話方塊隨即出現。
+   資產的 [屬性頁]**** 對話方塊隨即出現。
 
-2. 請確定 [組態] 和 [平台] 屬性設定為您要套用變更的值。
+2. 請確定 [組態]**** 和 [平台]**** 屬性設定為您要套用變更的值。
 
-3. 在 [組態屬性] 下，選擇 [一般]，然後在屬性格線的 [一般] 下，將 [項目類型] 屬性設定為適當的內容管線項目類型。 例如，針對影像或紋理檔，選擇 [影像內容管線]。
+3. 在 [組態屬性]**** 下，選擇 [一般]****，然後在屬性格線的 [一般]**** 下，將 [項目類型]**** 屬性設定為適當的內容管線項目類型。 例如，針對影像或紋理檔，選擇 [影像內容管線]****。
 
     > [!IMPORTANT]
-    > Visual Studio 預設會假設應該使用 Visual Studio 內建的**影像**項目類型來分類多種類型的影像檔。 因此，您需要變更想要由影像內容管線處理之每個影像的 [項目類型] 屬性。 3D 模型和視覺著色器圖形的其他類型內容管線來源檔，預設為正確的 [項目類型]。
+    > Visual Studio 預設會假設應該使用 Visual Studio 內建的**影像**項目類型來分類多種類型的影像檔。 因此，您需要變更想要由影像內容管線處理之每個影像的 [項目類型]**** 屬性。 3D 模型和視覺著色器圖形的其他類型內容管線來源檔，預設為正確的 [項目類型]****。
 
-4. 選擇 [ **確定** ] 按鈕。
+4. 選擇 [確定] **** 按鈕。
 
 以下是三種內容管線項目類型與其相關聯的來源和輸出檔案類型。
 
 |項目類型|原始程式檔類型|輸出檔案格式|
 |---------------| - | - |
-|**影像內容管線**|Portable Network Graphics ( *.png*)<br /><br /> JPEG ( *.jpg*、 *.jpeg*、 *.jpe*、 *.jfif*)<br /><br /> DirectDraw 表面 ( *.dds*)<br /><br /> 圖形交換格式 ( *.gif*)<br /><br /> 點陣圖 ( *.bmp*、 *.dib*)<br /><br /> 標記的影像檔案格式 ( *.tif*、 *.tiff*)<br /><br /> Targa ( *.tga*)|DirectDraw 表面 ( *.dds*)|
-|**網狀內容管線**|AutoDesk FBX 交換檔案 ( *.fbx*)<br /><br /> Collada DAE 檔案 ( *.dae*)<br /><br /> Wavefront OBJ 檔案 ( *.obj*)|3D 網狀檔案 ( *.cmo*)|
-|**著色器內容管線**|視覺著色器圖形 ( *.dgsl*)|已編譯的著色器輸出 ( *.cso*)|
+|**影像內容管線**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*、*.jpeg*、*.jpe*、*.jfif*)<br /><br /> DirectDraw 表面 (*.dds*)<br /><br /> 圖形交換格式 (*.gif*)<br /><br /> 點陣圖 （*.bmp*， *.dib*）<br /><br /> 標記的圖像檔案格式 （*.tif*， *.tiff*）<br /><br /> Targa (*.tga*)|直接繪製曲面 *（.dds）*|
+|**網狀內容管線**|AutoDesk FBX 交換檔案 (*.fbx*)<br /><br /> Collada DAE 檔案 (*.dae*)<br /><br /> Wavefront OBJ 檔案 (*.obj*)|3D 網格檔 （*.cmo*）|
+|**著色器內容管線**|視覺著色器圖形 (*.dgsl*)|已編譯的著色器輸出 (*.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>設定資產內容管線屬性
 
@@ -81,15 +81,15 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 ### <a name="to-configure-content-pipeline-properties"></a>設定內容管線屬性
 
-1. 在方案總管中，於專案中，開啟資產檔案的捷徑功能表，然後選擇 [屬性]。
+1. 在方案總管**** 中，於專案中，開啟資產檔案的捷徑功能表，然後選擇 [屬性]****。
 
-   資產的 [屬性頁] 對話方塊隨即出現。
+   資產的 [屬性頁]**** 對話方塊隨即出現。
 
-2. 請確定 [組態] 和 [平台] 屬性設定為您要套用變更的值。
+2. 請確定 [組態]**** 和 [平台]**** 屬性設定為您要套用變更的值。
 
-3. 在 [組態屬性] 下，選擇內容管線節點 (例如，針對紋理和影像資產選擇 [影像內容管線])，然後在屬性方格中，將屬性設定為適當的值。 例如，若要在建置時產生紋理資產的 MIP 對應，請將 [產生 Mips] 屬性設定為 [是]。
+3. 在 [組態屬性]**** 下，選擇內容管線節點 (例如，針對紋理和影像資產選擇 [影像內容管線]****)，然後在屬性方格中，將屬性設定為適當的值。 例如，若要在建置時產生紋理資產的 MIP 對應，請將 [產生 Mips]**** 屬性設定為 [是]****。
 
-4. 選擇 [ **確定** ] 按鈕。
+4. 選擇 [確定] **** 按鈕。
 
 ### <a name="image-content-pipeline-configuration"></a>影像內容管線組態
 
@@ -97,9 +97,9 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 |屬性|描述|
 |--------------|-----------------|
-|**壓縮**|指定用於輸出檔案的壓縮類型。<br /><br /> 可用的選項如下：<br /><br /> -   **不壓縮**<br />-   **BC1_UNORM 壓縮**<br />-   **BC1_UNORM_SRGB 壓縮**<br />-   **BC2_UNORM 壓縮**<br />-   **BC2_UNORM_SRGB 壓縮**<br />-   **BC3_UNORM 壓縮**<br />-   **BC3_UNORM_SRGB 壓縮**<br />-   **BC4_UNORM 壓縮**<br />-   **BC4_SNORM 壓縮**<br />-   **BC5_UNORM 壓縮**<br />-   **BC5_SNORM 壓縮**<br />-   **BC6H_UF16 壓縮**<br />-   **BC6H_SF16 壓縮**<br />-   **BC7_UNORM 壓縮**<br />-   **BC7_UNORM_SRGB 壓縮**<br /><br /> 如需不同 DirectX 版本所支援壓縮格式的資訊，請參閱 [DXGI 程式設計指南](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews)。|
-|轉換成預乘的 Alpha 格式|[是] 在輸出檔案中將影像轉換成預乘的 Alpha 格式，否則為 [否]。 只會變更輸出檔案，來源影像並不會變更。|
-|**產生 Mips**|[是] 在建置時產生完整 MIP 鏈結，並將它併入輸出檔案中；否則為 [否]。 如果為 [否]，而且原始程式檔已包含 MIP 對應鏈結，則輸出檔案會有 MIP 鏈結；否則，輸出檔案沒有 MIP 鏈結。|
+|**壓縮**|指定用於輸出檔案的壓縮類型。<br /><br /> 可用的選項如下：<br /><br /> -   **無壓縮**<br />-   **BC1_UNORM壓縮**<br />-   **BC1_UNORM_SRGB 壓縮**<br />-   **BC2_UNORM壓縮**<br />-   **BC2_UNORM_SRGB 壓縮**<br />-   **BC3_UNORM壓縮**<br />-   **BC3_UNORM_SRGB 壓縮**<br />-   **BC4_UNORM 壓縮**<br />-   **BC4_SNORM 壓縮**<br />-   **BC5_UNORM 壓縮**<br />-   **BC5_SNORM 壓縮**<br />-   **BC6H_UF16 壓縮**<br />-   **BC6H_SF16 壓縮**<br />-   **BC7_UNORM 壓縮**<br />-   **BC7_UNORM_SRGB 壓縮**<br /><br /> 如需不同 DirectX 版本所支援壓縮格式的資訊，請參閱 [DXGI 程式設計指南](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews)。|
+|轉換成預乘的 Alpha 格式|[是]**** 在輸出檔案中將影像轉換成預乘的 Alpha 格式，否則為 [否]****。 只會變更輸出檔案，來源影像並不會變更。|
+|**產生 Mips**|[是]**** 在建置時產生完整 MIP 鏈結，並將它併入輸出檔案中；否則為 [否]****。 如果為 [否]****，而且原始程式檔已包含 MIP 對應鏈結，則輸出檔案會有 MIP 鏈結；否則，輸出檔案沒有 MIP 鏈結。|
 |**內容輸出**|指定輸出檔案的名稱。 **重要事項：** 變更輸出檔案的副檔名並不會影響其檔案格式。|
 
 ### <a name="mesh-content-pipeline-configuration"></a>網狀內容管線組態
@@ -211,10 +211,10 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|Title|描述|
 |-----------|-----------------|
-|[如何：匯出包含 Mipmap 的材質](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|描述如何使用影像內容管線，匯出含有預先計算之 MIP 對應的紋理。|
-|[如何：匯出包含預乘 Alpha 的材質](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|描述如何使用影像內容管線，匯出含有預乘的 Alpha 值的紋理。|
-|[如何：匯出材質以搭配 Direct2D 或 JavaScript 應用程式使用](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|描述如何使用影像內容管線，匯出可用於 Direct2D 或 JavaScript 應用程式的紋理。|
-|[使用 3D 資產來打造遊戲和應用程式](../designers/working-with-3-d-assets-for-games-and-apps.md)|描述 Visual Studio 提供用於建立和管理 3D 資產 (包括紋理和影像)、3D 模型和著色器的編輯工具。|
-|[如何：匯出著色器](../designers/how-to-export-a-shader.md)|描述如何從著色器設計工具匯出著色器。|
+|[如何：匯出包含 mipmaps 的紋理](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|描述如何使用影像內容管線，匯出含有預先計算之 MIP 對應的紋理。|
+|[如何：匯出已預乘 Alpha 的紋理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|描述如何使用影像內容管線，匯出含有預乘的 Alpha 值的紋理。|
+|[如何：匯出用於 Direct2D 或 JavaScript 應用的紋理](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|描述如何使用影像內容管線，匯出可用於 Direct2D 或 JavaScript 應用程式的紋理。|
+|[使用遊戲和應用程式的 3D 資產](../designers/working-with-3-d-assets-for-games-and-apps.md)|描述 Visual Studio 提供用於建立和管理 3D 資產 (包括紋理和影像)、3D 模型和著色器的編輯工具。|
+|[如何：匯出掃描器](../designers/how-to-export-a-shader.md)|描述如何從著色器設計工具匯出著色器。|

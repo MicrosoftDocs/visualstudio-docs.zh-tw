@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e008e3181cd7c633179f35e7639265a2495fafe2
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633794"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>如何：指定要優先建置的目標
 
-專案檔可以包含一或多個 `Target` 項目來定義專案的建置方式。 除非專案檔包含 `DefaultTargets` 屬性、`InitialTargets` 屬性，或在命令列使用 **-target**參數指定目標，否則 Microsoft Build Engine （MSBuild）引擎會建立它找到的第一個專案，以及任何相依性。
+專案檔可以包含一或多個 `Target` 項目來定義專案的建置方式。 Microsoft Build Engine （MSBuild） 引擎生成它找到的第一個專案和任何依賴項，除非專案檔案包含`DefaultTargets`屬性、`InitialTargets`屬性或目標，使用 **-target**開關在命令列中指定。
 ## <a name="use-the-initialtargets-attribute"></a>使用 InitialTargets 屬性
 
- `InitialTargets` 項目的 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。
-`InitialTargets` 項目的 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。
+ `Project` 項目的 `InitialTargets` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。
+`Project` 項目的 `InitialTargets` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。
 
 #### <a name="to-specify-one-initial-target"></a>指定一個初始目標
 
-- 在 `InitialTargets` 項目的 `Project` 屬性中，指定預設的目標。 例如，
+- 在 `Project` 項目的 `InitialTargets` 屬性中，指定預設的目標。 例如：
 
    `<Project InitialTargets="Clean">`
 
@@ -37,17 +37,17 @@ ms.locfileid: "77633794"
 
 #### <a name="to-specify-more-than-one-initial-target"></a>指定多個初始目標
 
-- 在 `InitialTargets` 項目的 `Project` 屬性中，列出以分號分隔的初始目標。 例如，若要依序執行 `Clean` 目標和 `Compile` 目標，請輸入：
+- 在 `Project` 項目的 `InitialTargets` 屬性中，列出以分號分隔的初始目標。 例如，若要依序執行 `Clean` 目標和 `Compile` 目標，請輸入：
 
      `<Project InitialTargets="Clean;Compile">`
 
 ## <a name="use-the-defaulttargets-attribute"></a>使用 DefaultTargets 屬性
 
- 如果未在命令列上明確指定目標，則 `DefaultTargets` 項目的 `Project` 屬性會指定要建置哪些目標。 如果同時在 `InitialTargets` 和 `DefaultTargets` 屬性中指定目標，而且在命令列上未指定任何目標，則 MSBuild 會執行 `InitialTargets` 屬性中所指定的目標，後面接著 `DefaultTargets` 屬性中指定的目標。
+ 如果未在命令列上明確指定目標，則 `Project` 項目的 `DefaultTargets` 屬性會指定要建置哪些目標。 如果在`InitialTargets`和`DefaultTargets`屬性中指定目標，並且命令列上未指定目標，則 MSBuild 運行屬性中指定的目標`InitialTargets`，後跟`DefaultTargets`屬性中指定的目標。
 
 #### <a name="to-specify-one-default-target"></a>指定一個預設目標
 
-- 在 `DefaultTargets` 項目的 `Project` 屬性中，指定預設的目標。 例如，
+- 在 `Project` 項目的 `DefaultTargets` 屬性中，指定預設的目標。 例如：
 
    `<Project DefaultTargets="Compile">`
 
@@ -55,23 +55,23 @@ ms.locfileid: "77633794"
 
 #### <a name="to-specify-more-than-one-default-target"></a>指定多個預設目標
 
-- 在 `DefaultTargets` 項目的 `Project` 屬性中，列出以分號分隔的預設目標。 例如，若要依序執行 `Clean` 目標和 `Compile` 目標，請輸入：
+- 在 `Project` 項目的 `DefaultTargets` 屬性中，列出以分號分隔的預設目標。 例如，若要依序執行 `Clean` 目標和 `Compile` 目標，請輸入：
 
      `<Project DefaultTargets="Clean;Compile">`
 
 ## <a name="use-the--target-switch"></a>使用 -target 參數
 
- 如果專案檔中未定義預設目標，或者，如果您不想使用預設目標，您可以使用命令列參數 **-target** 來指定不同的目標。 使用 **-target** 參數指定的目標即會執行，而不是執行 `DefaultTargets` 屬性所指定的目標。 `InitialTargets` 屬性中執行的目標永遠會先執行。
+ 如果在專案檔案中未定義預設目標，或者不想使用該預設目標，則可以使用命令列開關 **-目標**來指定其他目標。 使用 **-target**開關指定的目標或目標將運行，而不是`DefaultTargets`屬性指定的目標。 `InitialTargets` 屬性中執行的目標永遠會先執行。
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>優先使用非預設的目標
 
-- 使用 **-target** 命令列參數，將目標指定為第一個目標。 例如，
+- 使用 **-目標**命令列開關將目標指定為第一個目標。 例如：
 
      `msbuild file.proj -target:Clean`
 
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>優先使用預設目標以外的數個目標
 
-- 使用 **-target** 命令列參數，列出以分號或逗號分隔的目標。 例如，
+- 使用 **-目標**命令列開關列出以分號或逗號分隔的目標。 例如：
 
      `msbuild <file name>.proj -t:Clean;Compile`
 
@@ -79,4 +79,4 @@ ms.locfileid: "77633794"
 
 - [MSBuild](../msbuild/msbuild.md)
 - [目標](../msbuild/msbuild-targets.md)
-- [如何：清除組建](../msbuild/how-to-clean-a-build.md)
+- [如何：清理生成](../msbuild/how-to-clean-a-build.md)

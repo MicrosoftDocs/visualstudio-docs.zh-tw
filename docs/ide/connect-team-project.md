@@ -6,10 +6,10 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 ms.openlocfilehash: 936fcb598ccb7919eca0a35a1191732bce1c8e23
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585479"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>在 Team Explorer 中連線到專案
@@ -19,28 +19,28 @@ ms.locfileid: "75585479"
 ![Visual Studio 中的 Team Explorer [首頁]](media/team-explorer/team-explorer.png)
 
 > [!TIP]
-> 如果您開啟 Visual Studio 且未顯示 **Team Explorer**，請從功能表列選擇 [檢視] > **Team Explorer** 將它開啟。
+> 如果您開啟 Visual Studio 且未顯示 **Team Explorer**，請從功能表列選擇 [檢視]**** > **Team Explorer** 將它開啟。
 
 ## <a name="connect-to-a-project-or-repository"></a>連線到專案或存放庫
 
-在 [連線] 頁面上，連線到專案或存放庫。
+在 [連線]**** 頁面上，連線到專案或存放庫。
 
 ![Team Explorer 中的 [連線] 頁面](media/team-explorer/connect.png)
 
 若要連線到專案：
 
-1. 選擇**管理連線**圖示，以開啟 [連線] 頁面。
+1. 選擇**管理連線**圖示，以開啟 [連線]**** 頁面。
 
    ![Team Explorer 中的 [管理連線] 按鈕](media/team-explorer/manage-connections.png)
 
-1. 在 [連線] 頁面上，選擇 [管理連線] > [連線到專案]。
+1. 在 [連線]**** 頁面上，選擇 [管理連線]**** > [連線到專案]****。
 
    ![在 Team Explorer 中連線到專案](media/team-explorer/connect-project.png)
 
 > [!TIP]
 > 如果您需要建立新的專案或將使用者新增至專案，請參閱[建立專案 (Azure DevOps)](/azure/devops/organizations/projects/create-project) 和[將使用者新增至專案或小組 (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Team Explorer 參考](reference/team-explorer-reference.md)
 - [連線到專案 (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)

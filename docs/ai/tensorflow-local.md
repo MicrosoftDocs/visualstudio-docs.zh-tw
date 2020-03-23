@@ -11,10 +11,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72777437"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本機定型 TensorFlow 模型
@@ -23,7 +23,7 @@ ms.locfileid: "72777437"
 
 MNIST 資料庫具有 60,000 個範例的定型集，以及 10,000 個手寫數字範例的測試集。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 開始之前，請確定您已安裝下列項目：
 
@@ -43,7 +43,7 @@ C:\>pip.exe install tensorflow
 
 ## <a name="open-solution-and-train-model"></a>開啟方案並定型模型
 
-- 啟動 Visual Studio，然後選取 [檔案] > [開啟] > [專案/方案]。
+- 啟動 Visual Studio，然後選取 [檔案] > [開啟] > [專案/方案]****。
 
 - 從下載的範例存放庫中選取 **TensorFlow 範例**資料夾，然後開啟 **TensorflowExamples.sln** 檔案。
 
@@ -51,9 +51,9 @@ C:\>pip.exe install tensorflow
 
    ![開啟方案](media/tensorflow-local/open-solution.png)
 
-- 在 [方案總管] 中，找到 MNIST 專案並按一下滑鼠右鍵，然後選取 [設定為啟始專案]。
+- 在 [方案總管]**** 中，找到 MNIST 專案並按一下滑鼠右鍵，然後選取 [設定為啟始專案]****。
 
-- 按一下 [啟動]。
+- 按一下 [開始]****。
 
 - 輸出會列印於主控台中。
 

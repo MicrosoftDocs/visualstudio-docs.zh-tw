@@ -14,21 +14,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a181ecb66c3735eb34ab3c866c3c68b2397781f6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779320"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504：進行程式碼剖析之處理序的最大工作集 (以位元組為單位)
 
 |||
 |-|-|
-|規則識別碼|DA0504|
-|Category|資源管理|
+|規則 ID|DA0504|
+|類別|資源管理|
 |程式碼剖析方法|全部|
 |訊息|收集此資訊僅供參考之用。 「處理序工作集」計數器會依您分析的處理序測量實體記憶體的使用方式。 報告的值是所有測量間隔所觀察到最大值。|
-|規則類型|資訊|
+|規則型別|資訊|
 
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。
 

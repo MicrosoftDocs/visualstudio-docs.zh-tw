@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594756"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>如何：指定測試控制器和測試代理程式的逾時期限
@@ -28,7 +28,7 @@ ms.locfileid: "75594756"
 
 - 測試控制器：*QTController.exe.config*
 
-    |索引鍵名稱|描述|{2&gt;值&lt;2}|
+    |機碼名稱|描述|值|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|在連接被視為遺失之前候代理程式 Ping 要求的秒數。|"n" 秒。|
     |AgentSyncTimeoutInSeconds|當您啟動同步處理的測試回合時，在中止回合之前等候所有代理程式同步的秒數。|"n" 秒。|
@@ -37,7 +37,7 @@ ms.locfileid: "75594756"
 
 - 測試代理程式：*QTAgentService.exe.config*
 
-    |索引鍵名稱|描述|{2&gt;值&lt;2}|
+    |機碼名稱|描述|值|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|對控制器之連接嘗試的相隔秒數。|"n" 秒。 預設值："30" (30 秒)。|
     |RemotingTimeoutSeconds|遠端呼叫可存留的最大時間 (以秒為單位)。|"n" 秒。 預設值："600" (10 分鐘)。|
@@ -46,7 +46,7 @@ ms.locfileid: "75594756"
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>指定測試控制器的代理程式逾時選項
 
-1. 開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 中的 *QTCcontroller.exe.config* XML 組態檔。
+1. 打開位於 %程式檔 （x86）%%的*QTCcontroller.exe.config* XML 設定檔*\2017_企業_Common7_IDE*。
 
 2. 找出 `<appSettings>` 標記。
 
@@ -80,7 +80,7 @@ ms.locfileid: "75594756"
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>指定測試代理程式的代理程式逾時選項
 
-1. 開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 中的 *QTAgentService.exe.config* XML 組態檔。
+1. 打開位於 %程式檔 （x86）%%的*QTAgentService.exe.config* XML 設定檔*\2017_企業_Common7_IDE*。
 
 2. 找出 `<appSettings>` 標記。
 
@@ -112,9 +112,9 @@ ms.locfileid: "75594756"
     </appSettings>
     ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)
 - [修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)
-- [設定測試控制器和測試代理程式的連接埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [設定測試控制器和測試代理程式的通訊埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [如何：將測試控制器或測試代理程式繫結至網路介面卡](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

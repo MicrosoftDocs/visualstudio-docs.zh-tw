@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774585"
 ---
 # <a name="how-to-set-permissions"></a>如何：設定權限
@@ -36,19 +36,19 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
 
 ## <a name="to-create-a-user-account-that-has-user-permissions"></a>建立具有使用者權限的使用者帳戶
 
-1. 以滑鼠右鍵按一下 [我的電腦]，然後按一下 [管理]。
+1. 按右鍵 **"我的電腦**"，然後按一下"**管理**"。
 
-     [電腦管理] 視窗隨即開啟。
+     [電腦管理]**** 視窗隨即開啟。
 
-2. 展開 [本機使用者和群組]。
+2. 展開 **[本機使用者和群組]**。
 
-3. 以滑鼠右鍵按一下 [使用者] 資料夾，然後按一下 [新增使用者]。
+3. 以滑鼠右鍵按一下 [使用者]**** 資料夾，然後按一下 [新增使用者]****。
 
-     [新增使用者] 對話方塊隨即出現。
+     [新增使用者]**** 對話方塊隨即出現。
 
 4. 將您要建立之使用者帳戶的資訊填入這個對話方塊中的欄位。 指定密碼。 或者，選取要求使用者必須在下次登入時變更密碼的核取方塊。
 
-5. 按一下 [建立]，然後再按一下 [關閉]。
+5. 按一下 **"創建**"，然後按一下"**關閉**"。
 
      新使用者會出現在 Users 群組中，而這個群組內的使用者並不具有 Administrator 權限。
 
@@ -62,17 +62,17 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
     D:\ourProject
     ```
 
-2. 以滑鼠右鍵按一下此資料夾，然後按一下 [屬性]。
+2. 以滑鼠右鍵按一下此資料夾，然後按一下 [屬性]****。
 
-     [\<資料夾名稱> 屬性] 對話方塊隨即出現。
+     將顯示**\<資料夾名稱>"屬性"** 對話方塊。
 
-3. 按一下 [ **安全性** ] 索引標籤。
+3. 按一下 [安全性]**** 索引標籤。
 
-4. 按一下 [群組或使用者名稱] 方塊中的使用者帳號名稱。
+4. 按一下 [群組或使用者名稱]**** 方塊中的使用者帳號名稱。
 
-5. 在 [\<user name> 的使用權限] 方塊中，選取 [完全控制]的核取方塊。
+5. 在 [\<user name> 的使用權限]**** 方塊中，選取 [完全控制]**** 的核取方塊。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]****。
 
      如此便會將共用之資料夾樹狀目錄 (從步驟 5 中選取的資料夾開始) 的權限授與使用者。
 
@@ -86,7 +86,7 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
     <drive>:\Program Files\Microsoft Visual Studio 14\Team Tools\Performance Tools
     ```
 
-3. 執行下列命令：
+3. 執行以下命令：
 
     ```cmd
     vsperfcmd /admin:driver,start /admin:service,start
@@ -120,8 +120,8 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
 
    指定的使用者登入之後，不需要有系統管理員權限就可以使用程式碼剖析工具。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[設定效能工作階段](../profiling/configuring-performance-sessions.md)
+[配置性能會話](../profiling/configuring-performance-sessions.md)
 [VSPerfCmd](../profiling/vsperfcmd.md)
 [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)

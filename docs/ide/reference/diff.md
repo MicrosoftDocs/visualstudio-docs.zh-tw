@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570085"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
@@ -29,23 +29,23 @@ ms.locfileid: "75570085"
 devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 
-- *SourceFile*
+- *原始檔案*
 
-  必要項。 要比較之第一個檔案的完整路徑和名稱。
+  必要。 要比較之第一個檔案的完整路徑和名稱。
 
-- *TargetFile*
+- *目的檔案*
 
-  必要項。 要比較之第二個檔案的完整路徑和名稱。
+  必要。 要比較之第二個檔案的完整路徑和名稱。
 
 - *SourceDisplayName*
 
-  選擇項。 第一個檔案的顯示名稱。
+  選擇性。 第一個檔案的顯示名稱。
 
 - *TargetDisplayName*
 
-  選擇項。 第二個檔案的顯示名稱。
+  選擇性。 第二個檔案的顯示名稱。
 
 ## <a name="remarks"></a>備註
 
@@ -65,6 +65,6 @@ devenv /diff File1.txt File2.txt "File One"
 devenv /diff File1.txt File2.txt "" FileTwo
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

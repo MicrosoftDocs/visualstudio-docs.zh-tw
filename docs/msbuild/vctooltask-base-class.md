@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: df75bb998d2b8c6486e20c4c3ca0d80347c8f88a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591667"
 ---
 # <a name="vctooltask-base-class"></a>VCToolTask 基底類別
@@ -29,15 +29,15 @@ ms.locfileid: "75591667"
 |參數|描述|
 |---------------|-----------------|
 |**ActiveToolSwitchesValues**|選擇性的 **Dictionary\<string, ToolSwitch>** 參數。|
-|**AdditionalOptions**|選擇性的 **string** 參數。|
-|**EffectiveWorkingDirectory**|選擇性的 **string** 參數。|
-|**EnableErrorListRegex**|選擇性的 **bool** 參數。<br/><br/>預設為 `true`。|
-|**ErrorListRegex**|選擇性的 **ITaskItem[]** 參數。|
-|**ErrorListListExclusion**|選擇性的 **ITaskItem[]** 參數。|
-|**GenerateCommandLine**|選擇性的 **string** 參數。<br/><br/>使用值**CommandLineFormat** *format* [Default = CommandLineFormat. Commandlineformat.forbuildlog] 和**EscapeFormat** *EscapeFormat* [default = EscapeFormat. default]。|
-|**GenerateCommandLineExceptSwitches**|選擇性的 **string** 參數。<br/><br/>使用值**string []** *switchesToRemove*、 **CommandLineFormat** *format* [default = CommandLineFormat Commandlineformat.forbuildlog] 和**EscapeFormat** *EscapeFormat* [default = EscapeFormat. default]。|
+|**AdditionalOptions**|可選**字串**參數。|
+|**EffectiveWorkingDirectory**|可選**字串**參數。|
+|**EnableErrorListRegex**|選擇性的 **bool** 參數。<br/><br/>預設值為 `true`。|
+|**ErrorListRegex**|可選**的 ITaskItem]** 參數。|
+|**ErrorListListExclusion**|可選**的 ITaskItem]** 參數。|
+|**GenerateCommandLine**|可選**字串**參數。<br/><br/>使用值 **CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] 和 **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default]。|
+|**GenerateCommandLineExceptSwitches**|可選**字串**參數。<br/><br/>使用值 **string[]** *switchesToRemove*、**CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] 和 **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default]。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[工作參考](../msbuild/msbuild-task-reference.md)<br/>
+[任務引用](../msbuild/msbuild-task-reference.md)<br/>
 [工作](../msbuild/msbuild-tasks.md)

@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c05c9b802a490596fe69256c4ccc8dc5cb047c7
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72777417"
 ---
 # <a name="monitor-with-tensorboard"></a>使用 TensorBoard 監視
 
 您可以使用 TensorBoard 視覺化您的模型定型。
 
-1. 以滑鼠右鍵按一下您的專案，按一下 [Run TensorBoard] \(執行 TensorBoard\)，然後選取您輸出 TensorBoard 記錄檔的目錄。
+1. 以滑鼠右鍵按一下您的專案，按一下 [Run TensorBoard] \(執行 TensorBoard\)****，然後選取您輸出 TensorBoard 記錄檔的目錄。
 
     ![執行 TensorBoard](media/monitor-tensorboard/run-tensorboard.png)
 

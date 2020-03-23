@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bab816a0b71adef190a7d919b5ada7138a6a0e7c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779710"
 ---
 # <a name="callercallee-view"></a>呼叫端/被呼叫端檢視
@@ -36,11 +36,11 @@ ms.locfileid: "74779710"
 
  您可以選取不同的函式，讓函式成為 [報表] 檢視中間[目前的函式]，只要連按兩下檢視其他兩個部分中所列出的其中一個函式即可。 [報表] 檢視會自動更新以反映變更。
 
- 您可以按一下資料行名稱來排序資料。 [呼叫端/被呼叫端] 檢視可以加入其他資料行。 如需詳細資訊，請參閱[如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)。
+ 您可以按一下資料行名稱來排序資料。 [呼叫端/被呼叫端] 檢視可以加入其他資料行。 有關詳細資訊，請參閱[操作：自訂報表檢視列](../profiling/how-to-customize-report-view-columns.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)
-- [呼叫端/被呼叫端檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)
-- [呼叫端/被呼叫端檢視 - .NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
-- [呼叫者/被呼叫者檢視 - .NET 記憶體取樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [調用方/被叫方視圖 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)
+- [調用方/被叫方視圖 - .NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [調用方/被叫方視圖 - .NET 記憶體採樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
 - [呼叫端-被呼叫端 - 爭用資料](../profiling/caller-callee-view-contention-data.md)

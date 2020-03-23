@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2228f5ac4dce4743fa6dafbb321f0106b5d6cc11
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595939"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>設定測試控制器和測試代理程式的通訊埠
@@ -39,7 +39,7 @@ ms.locfileid: "75595939"
     測試控制器必須能夠建立測試代理程式和用戶端的連出連線。
 
     > [!NOTE]
-    > 測試控制器需要將 [檔案及印表機共用] 連入連線保持在開啟狀態。
+    > 測試控制器需要將 [檔案及印表機共用]**** 連入連線保持在開啟狀態。
 
 - **測試代理程式** 連入連線位於 TCP 通訊埠 6910 上。 如果需要的話，您可以設定連入通訊埠。 如需詳細資訊，請參閱[設定連入通訊埠](#configure-the-incoming-ports)。
 
@@ -87,6 +87,6 @@ ms.locfileid: "75595939"
 
      **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd**
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)

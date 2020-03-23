@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d49f0fde7bbf13a1219296420b84970f4350860
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585700"
 ---
 # <a name="add-existing-item-command"></a>加入現有項目命令
@@ -29,15 +29,15 @@ ms.locfileid: "75585700"
 File.AddExistingItem filename [/e:editorname]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 `filename`\
-必要項。 要新增至目前方案之項目的完整路徑和檔案名稱 (含副檔名)。 如果檔案路徑或檔案名稱包含空格，請使用引號括住完整路徑。
+必要。 要新增至目前方案之項目的完整路徑和檔案名稱 (含副檔名)。 如果檔案路徑或檔案名稱包含空格，請使用引號括住完整路徑。
 
-## <a name="switches"></a>交換機
+## <a name="switches"></a>交換器
 /e: `editorname`\
-選擇項。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式] 對話方塊。
+選擇性。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式]**** 對話方塊。
 
-/e:`editorname` 引數語法會使用出現在 [開啟方式] 對話方塊並使用引號括住的編輯器名稱。 例如，若要使用原始程式碼編輯器開啟樣式表，您將針對 /e:`editorname` 引數輸入下列項目。
+/e:`editorname` 引數語法會使用出現在 [開啟方式]**** 對話方塊並使用引號括住的編輯器名稱。 例如，若要使用原始程式碼編輯器開啟樣式表，您將針對 /e:`editorname` 引數輸入下列項目。
 
 ```cmd
 /e:"Source Code (text) Editor"
@@ -53,9 +53,9 @@ File.AddExistingItem filename [/e:editorname]
 >File.AddExistingItem "C:\public\solution files\Form1.frm"
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)

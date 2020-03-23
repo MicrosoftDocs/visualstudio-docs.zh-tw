@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: eba1f0d1434d253aaca698d3ae582e3c507c2d23
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779229"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>函式檢視 - .NET 記憶體檢測資料
@@ -25,15 +25,15 @@ ms.locfileid: "74779229"
 
 |資料行|描述|
 |------------|-----------------|
-|**函式名稱**|函式的名稱。|
-|**函式位址**|函式的位址。|
+|**函數名稱**|函數的名稱。|
+|**功能位址**|函式的位址。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
 |**呼叫次數**|呼叫此函式的總次數。|
-|**原始程式檔**|包含此函式定義的原始程式檔。|
+|**原始檔案**|包含此函式定義的原始程式檔。|
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
-|**處理序 ID**|分析執行的處理序 ID (PID)。|
-|**處理序名稱**|處理程序的名稱。|
+|**處理序識別碼**|分析執行的處理序 ID (PID)。|
+|**流程名稱**|處理序的名稱。|
 |**時間專有探查額外負荷**|檢測對此函式造成的時間額外負荷。 已經從所有專有時間減去探查額外負荷。|
 |**時間內含探查額外負荷**|檢測對此函式及其子函式造成的時間額外負荷。 已經從所有內含時間減去探查額外負荷。|
 
@@ -76,7 +76,7 @@ ms.locfileid: "74779229"
 |**最小功能專屬耗用 (Elapsed Exclusive) 時間**|呼叫這個函式的最小功能專屬耗用 (Elapsed Exclusive) 時間。|
 
 ## <a name="application-inclusive-values"></a>應用程式內含值
- 應用程式內含值表示函數在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含在子函式中花費的時間。
+ 應用程式內含值表示函式在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含在子函式中花費的時間。
 
 |資料行|描述|
 |------------|-----------------|
@@ -97,8 +97,8 @@ ms.locfileid: "74779229"
 |**最大應用程式專屬 (Application Exclusive) 時間**|呼叫此函式的最大應用程式專屬 (Application Exclusive) 時間。|
 |**最小應用程式專屬 (Application Exclusive) 時間**|呼叫此函式的最小應用程式專屬 (Application Exclusive) 時間。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
-- [函式檢視 - 取樣](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [函數視圖 - 採樣](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [函式檢視](../profiling/functions-view-instrumentation-data.md)
 - [函式檢視](../profiling/functions-view-sampling-data.md)

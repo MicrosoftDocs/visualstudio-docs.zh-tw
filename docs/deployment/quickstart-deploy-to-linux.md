@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - azure
 ms.openlocfilehash: 1e05862aa57c24bfa8f17d551762054278dd6e52
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72806867"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET Core 應用程式發行至 Linux 上的 App Service
@@ -22,38 +22,38 @@ ms.locfileid: "72806867"
 
 * 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops)。
 
-* 針對一次 (或手動) 部署應用程式，使用 Visual Studio 中的 [發行] 工具將 ASP.NET Core 應用程式發行至 App Service for Linux (使用容器)。
+* 針對一次 (或手動) 部署應用程式，使用 Visual Studio 中的 [發行]**** 工具將 ASP.NET Core 應用程式發行至 App Service for Linux (使用容器)。
 
-本文說明如何使用 [發行] 工具來進行一次部署。
+本文說明如何使用 [發行]**** 工具來進行一次部署。
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 
 ## <a name="publish-to-app-service-on-linux"></a>發行至 Linux 上的 App Service
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行] (或使用 [建置] > [發行] 功能表項目)。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]**** (或使用 [建置]**** > [發行]**** 功能表項目)。
 
-    ![[專案] 內容功能表上的 [發佈] 命令方案總管](../deployment/media/quickstart-publish.png "選擇 [發行]")
+    ![解決方案資源管理器中專案內容功能表上的"發佈"命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
-1. 如果您之前已設定任何發行設定檔，[發行] 窗格隨即出現；在此情況下，請選取 [建立新設定檔]。
+1. 如果您之前已設定任何發行設定檔，[發行]**** 窗格隨即出現；在此情況下，請選取 [建立新設定檔]****。
 
-1. 在 [挑選發行目標] 對話方塊中，選擇 [App Service Linux]。
+1. 在 [挑選發行目標]**** 對話方塊中，選擇 [App Service Linux]****。
 
-    ![選擇 Azure App Service](../deployment/media/quickstart-publish-linux.png "選擇 Azure App Service")
+    ![選擇 Azure 應用服務](../deployment/media/quickstart-publish-linux.png "選擇 Azure 應用服務")
 
-1. 選取 [發行]。 [建立 App Service] 對話方塊隨即出現。 如有必要，請使用您的 Azure 帳戶登入，接著預設 App Service 設定會填入欄位。
+1. 選取 [發行]****。 [建立 App Service]**** 對話方塊隨即出現。 如有必要，請使用您的 Azure 帳戶登入，接著預設 App Service 設定會填入欄位。
 
-    ![建立 App Service](../deployment/media/quickstart-publish-settings-app-service-linux.png "建立 Azure App Service")
+    ![建立應用程式服務](../deployment/media/quickstart-publish-settings-app-service-linux.png "創建 Azure 應用服務")
 
-1. 選取 [建立]。 Visual Studio 會將應用程式部署至 Azure App Service，並在瀏覽器中載入 Web 應用程式。 專案屬性 [發行] 窗格會顯示網站 URL 和其他詳細資料。
+1. 選取 [建立]****。 Visual Studio 會將應用程式部署至 Azure App Service，並在瀏覽器中載入 Web 應用程式。 專案屬性 [發行]**** 窗格會顯示網站 URL 和其他詳細資料。
 
     ![顯示設定檔摘要的 [發行] 屬性窗格](../deployment/media/quickstart-publish-app-service-summary.png)
 
 ## <a name="clean-up-resources"></a>清除資源
 
-在上述步驟中，您已建立資源群組中的 Azure 資源。 如果您預期未來不需要這些資源，則可以藉由刪除資源群組予以刪除。
-從 Azure 入口網站左側功能表中，選取 [資源群組]，然後選取 **myResourceGroup**。
-在 [資源群組] 頁面上，確定所列出資源是您想要刪除的資源。
-選取 [刪除]，在文字方塊中鍵入，然後選取 [刪除]。
+在前述步驟中，您在資源群組中建立了 Azure 資源。 如果您認為未來不需要這些資源，可以用刪除資源群組的方式將它們刪除。
+從 Azure 入口網站的左側功能表中，依序選取 [資源群組]**** 和 [myResourceGroup]****。
+在 [資源群組] 頁面上，確定所列出的資源是您想要刪除的項目。
+選取 [刪除]****，在文字方塊中輸入 **myResourceGroup**，然後再選取 [刪除]****。
 
 ## <a name="next-steps"></a>後續步驟
 

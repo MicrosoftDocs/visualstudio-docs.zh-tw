@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593716"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
@@ -135,13 +135,13 @@ function Foo(param1) {
 根據預設，Salsa 語言服務會嘗試偵測使用中的 JavaScript 程式庫為何，並自動下載及參考對應的 *.d.ts* 檔案，以描述程式庫來提供更豐富的 IntelliSense。 這些檔案會下載到位於 *%LOCALAPPDATA%\Microsoft\TypeScript* 的使用者資料夾下的快取。
 
 > [!NOTE]
-> 如果使用 *tsconfig.json* 組態檔，這項功能預設會 [停用]，但可設定為 [啟用]，詳細資訊如下所述。
+> 如果使用 *tsconfig.json* 組態檔，這項功能預設會 [停用]****，但可設定為 [啟用]，詳細資訊如下所述。
 
 自動偵測目前處理從 npm (藉由讀取 *package.json* 檔案)、Bower (藉由讀取 *bower.json* 檔案)，以及比對前 400 多個熱門 JavaScript 程式庫清單的專案中的鬆散式檔案下載的相依性。 例如，如果您的專案中有 *jquery-1.10.min.js*，則會擷取並載入檔案 *jquery.d.ts* 以提供更好的編輯體驗。 此 *.d.ts* 檔案對您的專案沒有任何影響。
 
 如果您不想使用自動擷取，請如下所示新增組態檔來停用這項功能。 您仍然放置定義檔案，以手動方式直接在專案中使用它。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [使用 IntelliSense](../ide/using-intellisense.md)
+- [Using IntelliSense](../ide/using-intellisense.md)
 - [JavaScript 支援 (Visual Studio for Mac)](/visualstudio/mac/javascript)

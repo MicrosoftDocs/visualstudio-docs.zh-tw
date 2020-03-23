@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b151e3ede34d0c8fa3a863d7a4e7474431ae6f4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777386"
 ---
 # <a name="detach"></a>中斷連結
@@ -33,7 +33,7 @@ VSPerfCmd.exe /Detach[:PIDs|ProcessNames]
 ```
 
 #### <a name="parameters"></a>參數
- `PIDs|ProcessNames` `PID` - 一或多個處理序的數字系統識別碼。
+ `PIDs|ProcessNames``PID` - 一個或多個進程的數字系統識別器。
 
  `ProcessNames` - 處理序的名稱。 如果多個具名處理序執行個體正在執行，則結果將無法預期。
 
@@ -57,8 +57,8 @@ VSPerfCmd.exe /Detach
 VSPerfCmd.exe /Shutdown
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服務](../profiling/command-line-profiling-of-services.md)

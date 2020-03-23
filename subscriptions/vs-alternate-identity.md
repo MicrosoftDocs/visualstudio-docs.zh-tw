@@ -7,10 +7,10 @@ ms.date: 07/19/2019
 ms.topic: conceptual
 description: 如何新增 Visual Studio 訂用帳戶的替代身分識別，以用於 Azure DevOps 和 Azure
 ms.openlocfilehash: e19774f2314280b2e5a995a7d83336f1403682a4
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "72816553"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 訂閱者身分識別
@@ -19,7 +19,7 @@ ms.locfileid: "72816553"
 在 Azure DevOps 中，我們會在您每次登入時檢查您的 Visual Studio 訂用帳戶狀態，並自動授與您所屬每個組織的功能。
 因為這些功能是隨附於訂閱者的權益，所以使用連結至 Visual Studio 訂用帳戶的身分識別時，可以免費將您新增為任何 Azure DevOps 組織的成員。
 
-在 Azure 中，當您啟用訂閱者權益的[每月 Azure DevTest 個人點數](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)時，我們會檢查您的 Visual Studio 訂用帳戶狀態。
+在 Azure 中，當您啟動[每月的 Azure DevTest 個人信用額度](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)時，我們會檢查視覺化工作室訂閱狀態，這些積分是訂閱者權益。
 
 在 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)中，您可以新增**替代身分識別** -- 除了啟用期間所使用的身分識別之外。 如果您使用 Microsoft 帳戶來啟用您的訂用帳戶，我們可讓您新增替代身分識別。 這樣您也可以新增公司或學校帳戶 (登入 Visual Studio、Office 365 或您公司或學校網路時所用的帳戶)，讓您使用個人帳戶和公司或學校帳戶來存取 Azure DevOps。
 
@@ -31,9 +31,9 @@ ms.locfileid: "72816553"
 針對所有訂用帳戶，您可以新增「公司或學校帳戶」，讓您可以搭配使用該帳戶與您需要登入的權益 (VS IDE、Azure DevOps 與 Azure)。
 
 ### <a name="add-the-alternate-account"></a>新增替代帳戶
-1. 使用 Microsoft 帳戶登入 Visual Studio 訂閱者入口網站 (https://my.visualstudio.com) 。
-2. 按一下 [訂閱] 索引標籤。
-3. 選擇 [Add alternate account (新增其他帳戶)]。
+1. 使用 Microsoft 帳戶登入 Visual Studio 訂閱者入口網站 (https://my.visualstudio.com)。
+2. 按一下 [訂閱]**** 索引標籤。
+3. 選擇 **"添加備用帳戶**"。
 4. 新增公司或學校帳戶。
     > [!div class="mx-imgBorder"]
     > ![新增公司或學校帳戶](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
@@ -44,13 +44,13 @@ ms.locfileid: "72816553"
 
 您的替代帳戶會新增至 Visual Studio 訂用帳戶，讓兩個身分識別都利用需要您使用替代帳戶 (IDE、Azure DevOps 與 Azure) 登入的訂閱權益。
 
-## <a name="faq"></a>常見問題 (FAQ)
+## <a name="faq"></a>常見問題集
 
 ### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>問：為什麼 Azure DevOps 無法辦識我是 Visual Studio 訂閱者？
 
 答：當您使用主要或其他身分識別登入時，Azure DevOps 應會自動識別您的訂用帳戶。 如果沒有，您可以嘗試以下幾點：
 
-* 檢查您是否有有效的 Visual Studio 訂用帳戶，包含 [Azure DevOps](vs-azure-devops.md#eligibility) 權益。
+* 檢查您是否具有包含[Azure DevOps](vs-azure-devops.md#eligibility)的有效視覺化工作室訂閱。
 
 * 確認您使用的登入/身分識別是 Visual Studio 訂用帳戶的主要或其他身分識別。
 

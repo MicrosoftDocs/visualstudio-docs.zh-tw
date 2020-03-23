@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114724"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>在 Visual Basic 中設定警告
@@ -28,18 +28,18 @@ ms.locfileid: "76114724"
 您可能會想要自訂專案，關閉與應用程式無關的某些警告，並將其他警告變成錯誤。 本頁將說明如何開啟和關閉個別警告。
 
 ## <a name="turning-warnings-off-and-on"></a>開啟和關閉警告
-設定警告的方法有兩種：您可以使用 [專案設計工具] 加以設定，也可以使用 **/warnaserror** 和 **/nowarn** 編譯器選項。
+設定警告的方法有兩種：您可以使用 [專案設計工具]**** 加以設定，也可以使用 **/warnaserror** 和 **/nowarn** 編譯器選項。
 
-[專案設計工具] 頁面的 [編譯] 索引標籤可供您開啟和關閉警告。 選取 [停用所有警告] 核取方塊即可停用所有警告，而選取 [將所有警告視為錯誤] 則會將所有警告視為錯誤。 有些個別警告還能在顯示的表格中，視需要切換為錯誤或警告。
+[專案設計工具]**** 頁面的 [編譯]**** 索引標籤可供您開啟和關閉警告。 選取 [停用所有警告]**** 核取方塊即可停用所有警告，而選取 [將所有警告視為錯誤]**** 則會將所有警告視為錯誤。 有些個別警告還能在顯示的表格中，視需要切換為錯誤或警告。
 
-當 [Option Strict] 設定為 [Off] 時，就不能將 [Option Strict] 相關的警告視為彼此獨立。 當 [Option Strict] 設定為 [On] 時，則不論關聯之警告的狀態為何，都會視為錯誤。 在命令列編譯器中指定 `/optionstrict:custom` 即可將 [Option Strict] 設定為 [Custom]，此時可以單獨開啟或關閉 [Option Strict] 警告。
+當 [Option Strict]**** 設定為 [Off]**** 時，就不能將 [Option Strict]**** 相關的警告視為彼此獨立。 當 [Option Strict]**** 設定為 [On]**** 時，則不論關聯之警告的狀態為何，都會視為錯誤。 在命令列編譯器中指定 `/optionstrict:custom` 即可將 [Option Strict]**** 設定為 [Custom]****，此時可以單獨開啟或關閉 [Option Strict]**** 警告。
 
 編譯器的 **/warnaserror** 命令列選項也能用於指定是否要將警告視為錯誤。 您可以將逗號分隔清單新增至此選項，利用 + 或 - 指定應將哪些警告視為錯誤或警告。 下表詳細說明可能的選項。
 
 |命令列選項|指定|
 | - |---------------|
 |`/warnaserror+`|將所有警告視為錯誤|
-|`/warnsaserror`-|不要將警告視為錯誤。 這是預設設定。|
+|`/warnsaserror`-|不要將警告視為錯誤。 這是預設值。|
 |`/warnaserror+:<warning list` `>`|將特定警告視為錯誤，這些警告會在逗號分隔清單中依其錯誤識別碼列出。|
 |`/warnaserror-:<warning list>`|不要將特定警告視為錯誤，這些警告會在逗號分隔清單中依其錯誤識別碼列出。|
 |`/nowarn`|不會報告警告。|
@@ -73,12 +73,12 @@ ms.locfileid: "76114724"
 識別碼︰42017
 
 ### <a name="operands-of-type-object-warnings"></a>'Object' 類型運算元的警告
-當出現 `Object` 類型的運算元時，就會產生此警告，在 [Option Strict 為 On] 的情況下會發生錯誤。 新專案的預設值為開啟。
+當出現 `Object` 類型的運算元時，就會產生此警告，在 [Option Strict 為 On]**** 的情況下會發生錯誤。 新專案的預設值為開啟。
 
 識別碼︰42018 和 42019
 
 ### <a name="declarations-require-as-clause-warnings"></a>宣告需要 'As' 子句的警告
-當變數、函式或屬性宣告缺少 `As` 子句時，就會產生此警告，在 [Option Strict 為 On] 的情況下會發生錯誤。 未指派類型的變數會假設為 `Object` 類型。 新專案的預設值為開啟。
+當變數、函式或屬性宣告缺少 `As` 子句時，就會產生此警告，在 [Option Strict 為 On]**** 的情況下會發生錯誤。 未指派類型的變數會假設為 `Object` 類型。 新專案的預設值為開啟。
 
 識別碼︰42020 (變數宣告)、42021 (函式宣告) 和 42022 (屬性宣告)。
 
@@ -88,7 +88,7 @@ ms.locfileid: "76114724"
 識別碼：42104、42030
 
 ### <a name="unused-local-variable-warning"></a>未使用區域變數的警告
-當宣告了某個區域變數但從未參考到此變數時，就會產生此警告。 預設為開啟。
+當宣告了某個區域變數但從未參考到此變數時，就會產生此警告。 預設值為開啟。
 
 識別碼︰42024
 
@@ -117,11 +117,11 @@ ms.locfileid: "76114724"
 
 識別碼：42029、42031
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [錯誤類型](/dotnet/visual-basic/programming-guide/language-features/error-types)
-- [Try...Catch...Finally 陳述式](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
-- [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
+- [嘗試。。。抓住。。。最後陳述](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
+- [/諾瓦恩](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
 - [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
-- [專案設計工具、編譯頁 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [編譯頁面，專案設計器（視覺基礎）](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [預設為關閉的編譯器警告](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

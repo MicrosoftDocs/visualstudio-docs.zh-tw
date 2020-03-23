@@ -1,5 +1,5 @@
 ---
-title: Profiler 命令列：檢測靜態 ASP.NET 應用程式、取得記憶體資料
+title: 探測器命令列：檢測靜態ASP.NET應用，獲取記憶體資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 98fac9f01219cd398f1d5ec462e3f5165f4638d7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775427"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用分析工具命令列檢測靜態編譯的 ASP.NET Web 應用程式並收集記憶體資料
@@ -32,7 +32,7 @@ ms.locfileid: "74775427"
 
 #### <a name="to-instrument-an-aspnet-web-component-and-start-profiling"></a>檢測 ASP.NET Web 元件並開始分析
 
-1. 使用 [VSInstr] 工具產生已檢測版的目標應用程式。 如有必要，使用已檢測的二進位檔取代 ASP.NET 主機電腦上的應用程式二進位檔。
+1. 使用 [VSInstr]**** 工具產生已檢測版的目標應用程式。 如有必要，使用已檢測的二進位檔取代 ASP.NET 主機電腦上的應用程式二進位檔。
 
 2. 開啟 [命令提示字元] 視窗
 
@@ -54,11 +54,11 @@ ms.locfileid: "74775427"
 
 6. 啟動分析工具。 在 [命令提示字元] 視窗中鍵入：
 
-    **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
+    **VSPerfCmd /開始：跟蹤/輸出：** `OutputFile` |`Options`
 
-   - [/start](../profiling/start.md) **:trace** 選項會初始化程式碼剖析工具。
+   - [/start](../profiling/start.md)**:trace** 選項會初始化程式碼剖析工具。
 
-   - [/output](../profiling/output.md) **:** `OutputFile` 選項必須搭配 **/start** 使用。 `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。
+   - [/輸出](../profiling/output.md)**：**`OutputFile`選項在 **/start**時是必需的。 `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。
 
      您可以使用下列任一選項搭配 **/start:trace** 選項。
 
@@ -67,12 +67,12 @@ ms.locfileid: "74775427"
 
    | 選項 | 描述 |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | 指定擁有 ASP.NET 背景工作處理序之帳戶的選用網域和使用者名稱。 如果不是使用登入使用者的使用者身分執行處理序，就需要此選項。名稱會列在 [Windows 工作管理員] 之 [處理程序] 索引標籤上的 [使用者名稱] 資料行中。 |
-   | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 之 [處理程序] 索引標籤上的 [工作階段識別碼] 資料行中。 **/crosssession** 可縮寫成 **/CS**。 |
-   | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
-   | [/automark](../profiling/automark.md) **:** `Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
-   | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。 |
-   | [/globaloff](../profiling/globalon-and-globaloff.md) | 若要啟動暫停資料收集的程式碼剖析工具，請將 **/globaloff** 選項新增到 **/start** 命令列。 使用 **/globalon** 以繼續程式碼剖析。 |
+   | [/使用者](../profiling/user-vsperfcmd.md) **：**[ ]`Domain` **\\**`UserName` | 指定擁有 ASP.NET 背景工作處理序之帳戶的選用網域和使用者名稱。 如果不是使用登入使用者的使用者身分執行處理序，就需要此選項。名稱會列在 [Windows 工作管理員] 之 [處理程序]**** 索引標籤上的 [使用者名稱]**** 資料行中。 |
+   | [/交叉會話](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 會話 ID 列在 Windows 工作管理員的 **"進程"** 選項卡上的"會話 ID"列中。 **/crosssession** 可縮寫成 **/CS**。 |
+   | [/贏計數器](../profiling/wincounter.md) **：**`WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
+   | [/自動標記](../profiling/automark.md) **：**`Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
+   | [/事件](../profiling/events-vsperfcmd.md) **：**`Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。 |
+   | [/全域關閉](../profiling/globalon-and-globaloff.md) | 若要啟動暫停資料收集的程式碼剖析工具，請將 **/globaloff** 選項新增到 **/start** 命令列。 使用 **/globalon** 以繼續程式碼剖析。 |
 
 7. 開啟包含已檢測元件的網站。
 
@@ -85,9 +85,9 @@ ms.locfileid: "74775427"
 
     |選項|描述|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 ( **/globalon**) 或停止 ( **/globaloff**) 所有處理序的資料收集。|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 ( **/processon**) 或停止 ( **/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|開始 ( **/threadon**) 或停止 ( **/threadoff**) 執行緒識別碼 (`TID`) 所指定執行緒的資料收集。|
+    |[/全域/全域關閉](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
+    |[/進程](../profiling/processon-and-processoff.md)**：** `PID` [/進程關閉](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
+    |[/執行緒](../profiling/threadon-and-threadoff.md)**：** `TID` [/執行緒關閉](../profiling/threadon-and-threadoff.md) **：**`TID`|開始 (**/threadon**) 或停止 (**/threadoff**) 執行緒識別碼 (`TID`) 所指定執行緒的資料收集。|
 
 ## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段
  若要結束分析工作階段，請關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式，然後使用 Internet Information Services (IIS) **IISReset** 命令關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序。 呼叫 **VSPerfCmd** [/shutdown](../profiling/shutdown.md) 選項關閉分析工具，並結束分析資料檔案。 **VSPerfClrEnv /globaloff** 命令會清除分析環境變數。 您必須重新啟動電腦才能套用新的環境設定。
@@ -96,22 +96,22 @@ ms.locfileid: "74775427"
 
 1. 關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式。
 
-2. 關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序。 類型：
+2. 關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序。 輸入：
 
     **IISReset /stop**
 
-3. 關閉分析工具。 類型：
+3. 關閉程式碼剖析工具。 輸入：
 
     **VSPerfCmd /shutdown**
 
-4. (選擇性)。 清除分析環境變數。 類型：
+4. (選擇性)。 清除分析環境變數。 輸入：
 
     **VSPerfCmd /globaloff**
 
-5. 重新啟動電腦。 如有必要，請重新啟動 IIS。 類型：
+5. 重新啟動電腦。 如有必要，請重新啟動 IIS。 輸入：
 
     **IISReset /start**
 
-## <a name="see-also"></a>請參閱
-- [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+## <a name="see-also"></a>另請參閱
+- [設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

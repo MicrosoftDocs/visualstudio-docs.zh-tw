@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b8c97659cc6036433c5bcf2547a9f88aee56f451
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747719"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
@@ -33,16 +33,16 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="arguments"></a>引數
 `URL`
 
-必要項。 網站 URL (統一資源定位器)。
+必要。 網站 URL (統一資源定位器)。
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換器
 /new
 
-選擇項。 指定頁面會出現在網頁瀏覽器的新執行個體。
+選擇性。 指定頁面會出現在網頁瀏覽器的新執行個體。
 
 /ext
 
-選擇項。 指定頁面會出現在 IDE 外面的預設網頁瀏覽器。
+選擇性。 指定頁面會出現在 IDE 外面的預設網頁瀏覽器。
 
 ## <a name="remarks"></a>備註
 **ShowWebBrowser** 命令的別名是 **navigate** 或 **nav**。
@@ -54,9 +54,9 @@ View.ShowWebBrowser URL [/new][/ext]
 >View.ShowWebBrowser https://docs.microsoft.com /ext
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)

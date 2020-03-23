@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72888448"
 ---
 # <a name="work-with-sql-server-and-r"></a>使用 SQL Server 和 R
@@ -32,11 +32,11 @@ Visual Studio 對於 SQL Server 有絕佳的支援，可讓資料科學家建立
 
 RTVS 支援將 SQL 查詢新增到 R 專案，讓您在不同的內容中反覆開發 SQL 查詢，直到達到您想要的結果。
 
-若要新增 SQL 查詢檔案，請以滑鼠右鍵按一下 [方案總管] 中的專案，選取 [新增] > [新增項目]，然後選取 [SQL 查詢] 檔案類型：
+要添加 SQL 查詢檔，請按右鍵解決方案資源管理器中的專案，選擇 **"添加新項"，** > **New Item**然後選擇**SQL 查詢**檔案類型：
 
 ![將 SQL 查詢項目新增至專案](media/sql-add-item.png)
 
-此命令會在 Visual Studio 的 Transact-SQL 編輯器中開啟檔案，提供完整的 IntelliSense for SQL 及執行查詢的能力。 若要讓這些功能運作，您需要使用編輯器工具列的 [連線] 按鈕，或嘗試執行查詢 (**Ctrl**+**Shift**+**E**，這也適用於選取)，來連線到資料庫。 任一方式都會顯示 [連線] 對話方塊︰
+此命令會在 Visual Studio 的 Transact-SQL 編輯器中開啟檔案，提供完整的 IntelliSense for SQL 及執行查詢的能力。 要使這些功能正常工作，您需要使用編輯器工具列中的連接按鈕連接到資料庫，或嘗試執行查詢 **（Ctrl**+**Shift**+E ，該**查詢**也適用于選擇）。 任一方式都會顯示 [連線] 對話方塊︰
 
 ![SQL 連線對話方塊](media/sql-connection-dialog.png)
 
@@ -63,19 +63,19 @@ Transact-SQL 編輯器支援各種不同的其他功能，例如檢視查詢執�
 
 ### <a name="add-a-database-connection"></a>新增資料庫連接
 
-1. 選取 [R 工具] > [資料] > [新增資料庫連線]，啟動 [連線屬性] 對話方塊。 您可以在這裡指定資料來源名稱 (在此情況下是 SQL Server)、伺服器名稱、驗證模式，以及資料庫名稱。 選取 [測試連接] 先驗證您的輸入，再關閉對話方塊。
+1. 選擇**R 工具** > **資料** > **添加資料庫連接**以啟動**連接屬性**對話方塊。 您可以在這裡指定資料來源名稱 (在此情況下是 SQL Server)、伺服器名稱、驗證模式，以及資料庫名稱。 選取 [測試連接]**** 先驗證您的輸入，再關閉對話方塊。
 
     ![SQL 連線對話方塊](media/sql-connection-string-dialog.png)
 
-1. 一旦您對有效的連線選取 [確定]，Visual Studio 就會在新的 *settings.R* 檔案中產生名為 `dbConnection` 的連接字串。 RTVS 自動將此檔案設為來源 (執行)，因此您可以立即使用 R 指令碼中的連接︰
+1. 一旦您對有效的連線選取 [確定]****，Visual Studio 就會在新的 *settings.R* 檔案中產生名為 `dbConnection` 的連接字串。 RTVS 自動將此檔案設為來源 (執行)，因此您可以立即使用 R 指令碼中的連接︰
 
 ![SQL Settings.R 檔案](media/sql-settings-dot-r.png)
 
 ### <a name="write-and-test-a-sql-stored-procedure"></a>撰寫及測試 SQL 預存程序
 
-若要新增新的 SQL 預存程序，請以滑鼠右鍵按一下您的專案，選取 [新增] > [新增項目]，然後從範本清單中選取 [使用 R 的 SQL 預存程序]，指定檔案的名稱，再選取 [確定]。 預設檔名為 *SqlSProc.R*；為了便於閱讀，本節的其餘部分會使用檔名 *StoredProcedure.R*。 如果您有多個預存程序，每個檔案必須具有唯一的檔名。
+要添加新的 SQL 預存程序，請按右鍵專案，選擇 **"添加新** > **專案**"，從範本清單中選擇具有 R 的**SQL 預存程序**，為檔指定名稱，然後選擇"**確定**"。 預設檔名為 *SqlSProc.R*；為了便於閱讀，本節的其餘部分會使用檔名 *StoredProcedure.R*。 如果您有多個預存程序，每個檔案必須具有唯一的檔名。
 
-RTVS 會為預存程序建立三個檔案： *.R* 檔案供 R 程式碼使用、 *.Query.sql* 檔案供 SQL 程式碼使用，而 *.Template.sql* 檔案則結合這兩者。 後面兩個會出現在 [方案總管] 中，作為 *.R* 檔案的子系：
+RTVS 會為預存程序建立三個檔案：*.R* 檔案供 R 程式碼使用、*.Query.sql* 檔案供 SQL 程式碼使用，而 *.Template.sql* 檔案則結合這兩者。 後面兩個會出現在 [方案總管] 中，作為 *.R* 檔案的子系：
 
 ![使用 R 之 SQL 預存程序的方案總管展開檢視](media/sql-solution-explorer-expanded.png)
 
@@ -111,7 +111,7 @@ OutputDataSet <- InputDataSet
 
 您現在可以透過互動方式撰寫 R 程式碼，以操作所需的 `InputDataSet` 資料框架。 請記住，您可以在編輯器中只選取 R 程式碼，並按 **Ctrl**+**Enter** 將它傳送至[互動式視窗](interactive-repl-for-r-in-visual-studio.md)。
 
-最後， *.Template.sql* 檔案 (在此範例中為 *StoredProcedure.Template.sql*) 會包含用於產生 SQL 預存程序的範本：
+最後，*.Template.sql* 檔案 (在此範例中為 *StoredProcedure.Template.sql*) 會包含用於產生 SQL 預存程序的範本：
 
 ```sql
 CREATE PROCEDURE [StoredProcedure]
@@ -143,12 +143,12 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 
 ### <a name="publish-a-sql-stored-procedure"></a>發行 SQL 預存程序
 
-1. 選取 [R 工具] > [資料] > [以選項發佈] 功能表命令。
-1. 在出現的對話方塊中，將 [Publish to:] (發行到:) 變更為 [資料庫]，並指定目標，然後選取 [發行]，RTVS 就會建置及發行預存程序︰
+1. 選擇**R 工具** > **資料** > **發佈與選項**功能表功能表命令。
+1. 在出現的對話方塊中，將 [Publish to:] (發行到:)**** 變更為 [資料庫]****，並指定目標，然後選取 [發行]****，RTVS 就會建置及發行預存程序︰
 
     ![發行預存程序對話方塊](media/sql-publish-with-options.png)
 
-1. 若要在專案中發佈所有預存程序，您可以使用 [R 工具] > [資料] > [發佈預存程序] 命令，以滑鼠右鍵按一下 [方案總管] 中的專案也可取得該命令。
+1. 要發佈專案中的所有預存程序，可以使用**R Tools** > **資料** > **發佈預存程序**命令，當您在解決方案資源管理器中按右鍵專案時，該命令也可用。
 
 > [!Tip]
-> 如果您在 Visual Studio 中開啟 [SQL Server 物件總管]，則會在資料庫的 [可程式性] > [預存程序] 資料夾中出現您已發佈的預存程序。 以滑鼠右鍵按一下並選取 [執行程序]，或在 *.sql* 查詢視窗中以互動方式呼叫它，即可從物件總管中執行它。
+> 如果在 Visual Studio 中打開 SQL Server 物件資源管理器，則已發佈的預存程序將顯示在資料庫的 **"可程式設計存儲** > **過程**"資料夾中。 以滑鼠右鍵按一下並選取 [執行程序]****，或在 *.sql* 查詢視窗中以互動方式呼叫它，即可從物件總管中執行它。

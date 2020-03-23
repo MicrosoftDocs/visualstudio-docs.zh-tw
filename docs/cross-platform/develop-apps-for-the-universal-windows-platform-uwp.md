@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75587143"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
@@ -40,9 +40,9 @@ ms.locfileid: "75587143"
 
 ::: moniker range="vs-2017"
 
-- [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows)。 Visual Studio 2017 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/productinfo/vs2017-compatibility-vs)和[系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs)。
+- [視窗 10](https://support.microsoft.com/help/17777/downloads-for-windows). Visual Studio 2017 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/productinfo/vs2017-compatibility-vs)和[系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs)。
 
-- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)。 您也需要選用的通用 Windows 平台開發工作負載。
+- [視覺工作室](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)。 您也需要選用的通用 Windows 平台開發工作負載。
 
      ![UWP 工作負載](media/uwp_workload.png)
 
@@ -50,15 +50,15 @@ ms.locfileid: "75587143"
 
 ::: moniker range="vs-2019"
 
-- [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows)。 Visual Studio 2019 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/releases/2019/compatibility/)和[系統需求](/visualstudio/releases/2019/system-requirements/)。
+- [視窗 10](https://support.microsoft.com/help/17777/downloads-for-windows). Visual Studio 2019 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/releases/2019/compatibility/)和[系統需求](/visualstudio/releases/2019/system-requirements/)。
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads)。 您也需要選用的通用 Windows 平台開發工作負載。
+- [視覺工作室](https://visualstudio.microsoft.com/downloads)。 您也需要選用的通用 Windows 平台開發工作負載。
 
      ![UWP 工作負載](media/uwp_workload.png)
 
 ::: moniker-end
 
-安裝這個軟體之後，您也需要啟用 Windows 10 裝置進行開發。 請參閱[啟用您的裝置以用於開發](/windows/uwp/get-started/enable-your-device-for-development)。 您不再需要取得每部 Windows 10 裝置的開發人員授權。
+安裝這個軟體之後，您需要啟用 Windows 10 裝置以進行開發。 請參閱[啟用您的裝置以用於開發](/windows/uwp/get-started/enable-your-device-for-development)。 您不再需要取得每部 Windows 10 裝置的開發人員授權。
 
 ## <a name="universal-windows-apps"></a>通用 Windows 應用程式
 
@@ -66,8 +66,8 @@ ms.locfileid: "75587143"
 
 如果您已使用 Visual Studio 2015 建立現有的 Windows 市集 8.1 應用程式、Windows Phone 8.1 應用程式或通用 Windows 應用程式，則需要移轉這些應用程式，以使用最新版的通用 Windows 平台。 請參閱[從 Windows 執行階段 8 移至 UWP](/windows/uwp/porting/w8x-to-uwp-root)。
 
-建立通用 Windows 應用程式之後，您必須封裝您的應用程式，以在 Windows 10 裝置上進行安裝，或提交至 Windows 市集。 請參閱[封裝應用程式](/windows/uwp/packaging/index)。
+建立好您的通用 Windows 應用程式之後，您必須封裝應用程式以在 Windows 10 裝置上進行安裝，或提交至 Windows 市集。 請參閱[封裝應用程式](/windows/uwp/packaging/index)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的跨平台行動裝置應用程式開發](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

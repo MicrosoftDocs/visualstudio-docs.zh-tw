@@ -15,10 +15,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579958"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
@@ -53,29 +53,29 @@ ms.locfileid: "77579958"
 
 1. 開啟 Visual Studio 2017。
 
-1. 從頂端功能表列中 **，選擇 [** 檔案] > [**新增**>**專案**]。
+1. 從頂端功能表列中，選擇 [檔案]** [新增]** > ** [專案]** > ****。
 
-1. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [ASP.NET Core Web 應用程式]。 <br/><br/>接著，將您的檔案命名為 `HelloWorld` 並選擇 [確定]。
+1. 在 [新增專案]**** 對話方塊的左窗格中，展開 [Visual C#]****，然後選擇 [.NET Core]****。 在中間窗格中，選擇 [ASP.NET Core Web 應用程式]****。 <br/><br/>接著，將您的檔案命名為 `HelloWorld` 並選擇 [確定]****。
 
    ![建立新的 C# ASP.NET Core Web 應用程式專案](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
    > [!NOTE]
-   > 如果您看不到 [.NET Core] 專案範本類別，請選擇左窗格中的 [開啟 Visual Studio 安裝程式] 連結。 (根據您的顯示設定，您可能必須捲動才能看到它。)
+   > 如果您看不到 [.NET Core]**** 專案範本類別，請選擇左窗格中的 [開啟 Visual Studio 安裝程式]**** 連結。 (根據您的顯示設定，您可能必須捲動才能看到它。)
    >
    > ![從 [新增專案] 對話方塊開啟 Visual Studio 安裝程式](../ide/media/open-visual-studio-installer.png)
    >
-   > Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
+   > Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發]**** 工作負載，然後選擇 [修改]****。
    >
    > ![VS 安裝程式中的 ASP.NET 工作負載](../ide/media/quickstart-aspnet-workload.png)
    >
    > (您可能必須關閉 Visual Studio 才能繼續安裝新的工作負載)。
 
-1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.1] 接下來，選擇 [Web 應用程式]，然後選擇 [確定]。
+1. 在 [新增 ASP.NET Core Web 應用程式]**** 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.1]**** 接下來，選擇 [Web 應用程式]****，然後選擇 [確定]****。
 
    ![新增 ASP.NET Core Web 應用程式對話方塊](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > 如果您沒有看到 [ASP.NET Core 2.1]，請確定您執行的是最新版本的 Visual Studio。 如需如何更新安裝的詳細資訊，請參閱[將 Visual Studio 更新至最新版本](../install/update-visual-studio.md)頁面。
+   > 如果您沒有看到 [ASP.NET Core 2.1]****，請確定您執行的是最新版本的 Visual Studio。 如需如何更新安裝的詳細資訊，請參閱[將 Visual Studio 更新至最新版本](../install/update-visual-studio.md)頁面。
 
 Visual Studio 隨即開啟您的專案檔。
 
@@ -85,36 +85,36 @@ Visual Studio 隨即開啟您的專案檔。
 
 1. 開啟 Visual Studio。
 
-1. 在開始視窗中，選擇 [建立新專案]。
+1. 在啟動視窗中，選擇 **"創建新專案**"。
 
    ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在 [建立新專案] 視窗中，在搜尋方塊內輸入或鍵入 *ASP.NET*。 接下來，從語言清單中選擇 **C#** ，然後從平台清單中選擇 **Windows**。
+1. 在 [建立新專案]**** 視窗中，在搜尋方塊內輸入或鍵入 *ASP.NET*。 接下來，從語言清單中選擇 **C#**，然後從平台清單中選擇 **Windows**。
 
-   在您套用語言和平台的篩選後，請選擇 [ASP.NET Core Web 應用程式] 範本，然後選擇 [下一步]。
+   在您套用語言和平台的篩選後，請選擇 [ASP.NET Core Web 應用程式]**** 範本，然後選擇 [下一步]****。
 
    ![為 ASP.NET Core Web 應用程式選擇 C# 範本](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
 
    > [!NOTE]
-   > 如果您未看到 [ASP.NET Core Web 應用程式] 範本，可以從 [建立新專案] 視窗加以安裝。 在 [找不到你要尋找的項目嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   > 如果您未看到 [ASP.NET Core Web 應用程式]**** 範本，可以從 [建立新專案]**** 視窗加以安裝。 在 [找不到您要找的資料嗎?]**** 訊息中，選擇 [安裝更多工具和功能]**** 連結。
    >
-   > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > 然後，在 Visual Studio 安裝程式中選擇 [ASP.NET 與網頁程式開發] 工作負載。
+   > 然後，在 Visual Studio 安裝程式中選擇 **ASP.NET 與網頁程式開發**工作負載。
    >
    > ![Visual Studio 安裝程式中的 ASP.NET Core Web 應用程式工作負載](../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回這個「[建立專案](#create-a-project)」程序中的第 2 步。
+   > 接下來，選擇 Visual Studio 安裝程式中的 [修改]**** 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續]**** 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 **HelloWorld**。 接著，選擇 [建立]。
+1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中鍵入或輸入 *HelloWorld*。 然後，選擇 **"創建**"。
 
    ![在 [設定您的新專案] 視窗中，以 'HelloWorld' 命名您的專案](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
-1. 在 [**建立新的 ASP.NET Core Web 應用程式**] 視窗中，確認 [ **ASP.NET Core 3.0** ] 出現在頂端的下拉式功能表中。 然後，請選擇包含範例 Razor Pages 的 [Web 應用程式]。 接著，選擇 [建立]。
+1. 在 **"創建新ASP.NET核心 Web 應用程式**"視窗中，驗證**ASP.NET核心 3.0**是否顯示在頂部下拉式功能表中。 然後，請選擇包含範例 Razor Pages 的 [Web 應用程式]****。 接著，選擇 [建立]****。
 
    ![[建立新的 ASP.NET Core Web 應用程式] 視窗](../get-started/csharp/media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
 
-   Visual Studio 會開啟您的新專案。
+   Visual Studio 會隨即開啟您的新專案。
 
 ::: moniker-end
 
@@ -122,42 +122,42 @@ Visual Studio 隨即開啟您的專案檔。
 
 ::: moniker range="vs-2017"
 
-1. 在 [方案總管] 中，展開 [頁面] 資料夾，然後選擇 **About.cshtml**。
+1. 在 [方案總管]**** 中，展開 [頁面]**** 資料夾，然後選擇 **About.cshtml**。
 
    ![從方案總管選擇 About.cshtml 檔案](../ide/media/csharp-aspnet-about-page-html-file.png)
 
-   該檔案是對應到 Web 應用程式 (在網頁瀏覽器中執行) 中名為 [關於] 的頁面。
+   該檔案是對應到 Web 應用程式 (在網頁瀏覽器中執行) 中名為 [關於]**** 的頁面。
 
    ![Web 應用程式中的 [關於] 頁面](../ide/media/csharp-aspnet-about-page.png)
 
-   在編輯器中，您將會看到 [關於] 頁面之 [其他資訊] 區域的 HTML 程式碼。
+   在編輯器中，您將會看到 [關於]**** 頁面之 [其他資訊] 區域的 HTML 程式碼。
 
    ![Visual Studio 編輯器中其他資訊區域的 HTML 程式碼](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. 將 [其他資訊] 文字變更為 "**Hello World!** "。
+1. 將 [其他資訊] 文字變更為 "**Hello World!**"。
 
    ![變更 Visual Studio 編輯器中其他資訊區域的預設 HTML 程式碼](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
-1. 在 [方案總管] 中，展開 [About.cshtml]，然後選擇 **About.cshtml.cs**。 (此檔案也對應到您 Web 瀏覽器中的 [關於] 頁面)。
+1. 在 [方案總管]**** 中，展開 [About.cshtml]****，然後選擇 **About.cshtml.cs**。 (此檔案也對應到您 Web 瀏覽器中的 [關於]**** 頁面)。
 
    ![從方案總管選擇 About.cshtml 檔案](../ide/media/csharp-aspnet-about-page-code-file.png)
 
-   在編輯器中，您將會看到包含 [關於] 頁面之 [應用程式描述] 區域文字的 C# 程式碼。
+   在編輯器中，您將會看到包含 [關於]**** 頁面之 [應用程式描述] 區域文字的 C# 程式碼。
 
    ![Visual Studio 編輯器中應用程式描述區域的 C# 程式碼](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
-1. 將 [應用程式描述] 訊息文字變更為「**What's my message?** 」。
+1. 將 [應用程式描述] 訊息文字變更為「**What's my message?**」。
 
    ![變更 Visual Studio 編輯器中應用程式描述區域的預設訊息文字](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
-1. 選擇 [IIS Express] 或按 **Ctrl**+**F5** 執行應用程式，並在網頁瀏覽器中開啟它。
+1. 選擇 [IIS Express]**** 或按 **Ctrl**+**F5** 執行應用程式，並在網頁瀏覽器中開啟它。
 
    ![選取 Visual Studio 中的 [IIS Express] 按鈕](../ide/media/csharp-aspnet-helloworld-iisbutton.png)
 
    > [!NOTE]
-   > 如果您收到的錯誤訊息指出「無法連線到 Web 伺服器 'IIS Express'」，或是提及 SSL 憑證，請關閉 Visual Studio。 接下來，從右鍵操作功能表使用 [以系統管理員身分執行] 選項來開啟 Visual Studio。 接著，再次執行應用程式。
+   > 如果您收到的錯誤訊息指出「無法連線到 Web 伺服器 'IIS Express'」****，或是提及 SSL 憑證，請關閉 Visual Studio。 接下來，從右鍵操作功能表使用 [以系統管理員身分執行]**** 選項來開啟 Visual Studio。 接著，再次執行應用程式。
 
-1. 在網頁瀏覽器中，確認 [關於] 頁面包含更新的文字。
+1. 在網頁瀏覽器中，確認 [關於]**** 頁面包含更新的文字。
 
    ![檢視包含您所做變更的 [關於] 頁面](../ide/media/csharp-aspnet-about-page-hello-world.png)
 
@@ -175,32 +175,32 @@ Visual Studio 隨即開啟您的專案檔。
 
 ::: moniker range="vs-2019"
 
-1. 在 **方案總管**中，展開  **Pages**  資料夾，然後選擇  **Index. cshtml**。
+1. 在**解決方案資源管理器**中，展開**頁面**資料夾，然後選擇**Index.cshtml**。
 
-   ![從 方案總管中選擇 索引。](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
+   ![從解決方案資源管理器中選擇 Index.cshtml 檔](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
 
-   此檔案會對應至 web 應用程式中名為**Home**的頁面，該網頁會在網頁瀏覽器中執行。
+   此檔對應于在 Web 應用中名為 **"主頁"** 的頁面，該頁面在 Web 瀏覽器中運行。
 
    ![Web 應用程式中的 [關於] 頁面](../ide/media/vs-2019/csharp-aspnet-index-page.png)
 
-   在編輯器中，您會看到顯示**在首頁上**之文字的 HTML 程式碼。
+   在編輯器中，您將看到**主頁**上顯示的文本的 HTML 代碼。
 
-   ![Visual Studio 編輯器中首頁的 Index. cshtml 檔案中的 HTML 程式碼](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
+   ![Visual Studio 編輯器中主頁的 Index.cshtml 檔中的 HTML 代碼](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
 
-1. 變更「歡迎」文字以閱讀「**Hello World！** 」。
+1. 更改"歡迎"文本，改為"**你好世界！**
 
-   ![在 [Visual Studio 編輯器] 中，將預設的 HTML 程式碼變更為 [歡迎]，改為顯示 Hello World](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
+   ![在 Visual Studio 編輯器中，更改預設 HTML 代碼，該代碼顯示"歡迎說您好世界"](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
 
-1. 選擇 [IIS Express] 或按 **Ctrl**+**F5** 執行應用程式，並在網頁瀏覽器中開啟它。
+1. 選擇 [IIS Express]**** 或按 **Ctrl**+**F5** 執行應用程式，並在網頁瀏覽器中開啟它。
 
    ![選取 Visual Studio 中的 [IIS Express] 按鈕](../ide/media/vs-2019/csharp-aspnet-generic-iisbutton.png)
 
    > [!NOTE]
-   > 如果您收到的錯誤訊息指出「無法連線到 Web 伺服器 'IIS Express'」，或是提及 SSL 憑證，請關閉 Visual Studio。 接下來，從右鍵操作功能表使用 [以系統管理員身分執行] 選項來開啟 Visual Studio。 接著，再次執行應用程式。
+   > 如果您收到的錯誤訊息指出「無法連線到 Web 伺服器 'IIS Express'」****，或是提及 SSL 憑證，請關閉 Visual Studio。 接下來，從右鍵操作功能表使用 [以系統管理員身分執行]**** 選項來開啟 Visual Studio。 接著，再次執行應用程式。
 
-1. 在網頁瀏覽器中，確認**首頁**包含更新的文字。
+1. 在 Web 瀏覽器中，驗證**主頁**是否包含更新的文本。
 
-   ![查看已更新的首頁，其中包含您所做的變更](../ide/media/vs-2019/csharp-aspnet-index-page-hello-world.png)
+   ![查看包含您所做的更改的更新主頁](../ide/media/vs-2019/csharp-aspnet-index-page-hello-world.png)
 
 1. 關閉網頁瀏覽器。
 
@@ -215,4 +215,4 @@ Visual Studio 隨即開啟您的專案檔。
 
 ## <a name="see-also"></a>另請參閱
 
-[使用 Visual Studio 將 Web 應用程式發行到 Azure App Service](../deployment/quickstart-deploy-to-azure.md)
+[使用 Visual Studio 將 Web 應用程式發佈至 Azure App Service](../deployment/quickstart-deploy-to-azure.md)

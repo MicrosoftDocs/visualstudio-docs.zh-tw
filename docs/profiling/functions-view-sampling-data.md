@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 70fda712a29ff07ee34a4ac76a06198cb5ead8a5
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74780022"
 ---
 # <a name="functions-view---sampling-data"></a>函式檢視 - 取樣資料
@@ -27,21 +27,21 @@ ms.locfileid: "74780022"
 
 |資料行|描述|
 |------------|-----------------|
-|**處理序 ID**|分析執行的處理序 ID (PID)。|
-|**處理序名稱**|處理程序的名稱。|
+|**處理序識別碼**|分析執行的處理序 ID (PID)。|
+|**流程名稱**|處理序的名稱。|
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
-|**原始程式檔**|含有這個函式定義的原始程式檔。|
-|**函式名稱**|函式的完整格式名稱。|
+|**原始檔案**|含有這個函式定義的原始程式檔。|
+|**函數名稱**|函式的完整格式名稱。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
-|**函式位址**|函式的位址。|
+|**功能位址**|函式的位址。|
 |**內含樣本**|執行此函式時所收集的樣本總數；亦即此函式在呼叫堆疊上時所收集的樣本數目。 此數目包含此函式所呼叫的函式執行時收集的樣本。|
 |**內含樣本 %**|分析執行的所有樣本中，屬於此函式之內含樣本的百分比。|
 |**專有樣本**|此函式主體中的程式碼執行時 (亦即此函式在呼叫堆疊最上方時) 所收集的樣本總數。 不包含此函式所呼叫之函式中所收集的樣本。|
 |**專有樣本 %**|分析執行的所有樣本中，屬於此函式之專有樣本的百分比。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
-- [函式檢視 - 檢測](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
-- [函式檢視 - 取樣](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [功能視圖 - 檢測](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [函數視圖 - 採樣](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [函式檢視](../profiling/functions-view-instrumentation-data.md)

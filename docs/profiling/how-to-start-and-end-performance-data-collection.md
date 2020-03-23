@@ -17,27 +17,27 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: da75306018cf19855c7cb7f74ac3ffc4e84bcd9a
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774507"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>如何：啟動和結束效能資料收集
-您必須將要進行程式碼剖析的目標二進位檔加入至效能工作階段，然後才能開始進行程式碼剖析。 若要加入目標，請以滑鼠右鍵按一下 [效能總管] 中的 [目標]，然後按一下 [加入目標二進位檔]。 在 [加入目標二進位檔] 對話方塊中，選取檔案名稱，然後按一下 [開啟]。 新的二進位檔就會加入。
+您必須將要進行程式碼剖析的目標二進位檔加入至效能工作階段，然後才能開始進行程式碼剖析。 若要加入目標，請以滑鼠右鍵按一下 [效能總管]**** 中的 [目標]****，然後按一下 [加入目標二進位檔]****。 在 [加入目標二進位檔]**** 對話方塊中，選取檔案名稱，然後按一下 [開啟]****。 新的二進位檔就會加入。
 
 ### <a name="to-start-profiling"></a>啟動程式碼剖析
 
-1. 在 [效能總管] 視窗中以滑鼠右鍵按一下效能工作階段的名稱，然後選擇下列其中一個選項：
+1. 在 [效能總管]**** 視窗中以滑鼠右鍵按一下效能工作階段的名稱，然後選擇下列其中一個選項：
 
-    - [啟動並啟用程式碼剖析] - 啟動應用程式並立即開始執行程式碼剖析。
+    - [啟動並啟用程式碼剖析]**** - 啟動應用程式並立即開始執行程式碼剖析。
 
-    - [啟動並暫停程式碼剖析] - 啟動應用程式，但不會開始執行程式碼剖析。 您可以選取 [資料收集控制] 視窗中的 [繼續收集]，以啟動程式碼剖析。 如需詳細資訊，請參閱[如何︰暫停和繼續效能資料收集](../profiling/how-to-pause-and-resume-performance-data-collection.md)。
+    - [啟動並暫停程式碼剖析]**** - 啟動應用程式，但不會開始執行程式碼剖析。 您可以選取 [資料收集控制]**** 視窗中的 [繼續收集]****，以啟動程式碼剖析。 如需詳細資訊，請參閱[如何︰暫停和繼續效能資料收集](../profiling/how-to-pause-and-resume-performance-data-collection.md)。
 
 ### <a name="to-end-profiling"></a>結束程式碼剖析
 
-- 結束程式碼剖析工作階段的建議方式，是結束應用程式。 若要立即停止程式碼剖析，請在 [效能總管] 工具列上按一下 [停止]。
+- 結束程式碼剖析工作階段的建議方式，是結束應用程式。 若要立即停止程式碼剖析，請在 [效能總管]**** 工具列上按一下 [停止]****。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [控制資料收集](../profiling/controlling-data-collection.md)
-- [操作說明︰暫停和繼續效能資料收集](../profiling/how-to-pause-and-resume-performance-data-collection.md)
+- [如何：暫停和恢復效能資料收集](../profiling/how-to-pause-and-resume-performance-data-collection.md)

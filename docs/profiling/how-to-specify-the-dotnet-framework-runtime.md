@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 4ab53a6cf265b36ee423a2df176014187860f635
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778670"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>如何：指定 .NET Framework 執行階段
@@ -25,26 +25,26 @@ ms.locfileid: "74778670"
 
 ## <a name="to-specify-the-net-framework-run-time-to-profile-when-starting-an-application-with-the-profiler"></a>在使用程式碼剖析工具來啟動應用程式時，指定要進行程式碼剖析的 .NET Framework 執行階段
 
-1. 在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段，按一下 [屬性]，然後按一下 [進階]。
+1. 在 [效能總管]**** 中，以滑鼠右鍵按一下效能工作階段，按一下 [屬性]****，然後按一下 [進階]****。
 
-     [目標 CLR 版本] 清單方塊會顯示 [自動]，以及電腦上安裝的 .NET Framework 執行階段的版本。
+     [目標 CLR 版本]**** 清單方塊會顯示 [自動]****，以及電腦上安裝的 .NET Framework 執行階段的版本。
 
-2. 執行下列步驟：
+2. 請執行下列其中一個步驟：
 
     - 按一下您要進行程式碼剖析的 CLR 版本。
 
-    - 按一下 [自動]，對應用程式所載入的第一個執行階段進行程式碼剖析。
+    - 按一下 [自動]****，對應用程式所載入的第一個執行階段進行程式碼剖析。
 
 ## <a name="to-specify-the-net-framework-run-time-to-profile-when-attaching-the-profiler-to-an-application"></a>在將程式碼剖析工具附加至應用程式時，指定要進行程式碼剖析的 .NET Framework 執行階段
 
-1. 在 [分析] 功能表上，指向 [分析工具]，然後按一下 [附加/中斷連結]。
+1. 在 [分析]**** 功能表上，指向 [分析工具]****，然後按一下 [附加/中斷連結]****。
 
-2. 在 [將分析工具附加至處理序] 對話方塊中，按一下您要進行分析的處理序。
+2. 在 [將分析工具附加至處理序]**** 對話方塊中，按一下您要進行分析的處理序。
 
-     [目標 CLR 版本] 清單方塊會顯示 [自動]，以及電腦上安裝的 .NET Framework 執行階段的版本。
+     [目標 CLR 版本]**** 清單方塊會顯示 [自動]****，以及電腦上安裝的 .NET Framework 執行階段的版本。
 
-3. 執行下列步驟：
+3. 請執行下列其中一個步驟：
 
     - 按一下您要進行程式碼剖析的 CLR 版本。
 
-    - 按一下 [自動]，對程式碼剖析工具附加至應用程式時所載入的版本進行程式碼剖析。
+    - 按一下 [自動]****，對程式碼剖析工具附加至應用程式時所載入的版本進行程式碼剖析。

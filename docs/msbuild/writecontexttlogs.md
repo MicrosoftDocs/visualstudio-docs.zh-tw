@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf34ff63b00cf523ba9ef704f4417be4d5cdbf77
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77630701"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
@@ -34,11 +34,11 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 
 #### <a name="parameters"></a>參數
 
-[輸入] `intermediateDirectory`
+[in] `intermediateDirectory`
 
  儲存追蹤記錄的目錄。
 
-[輸入] `tlogRootName`
+[in] `tlogRootName`
 
  記錄檔名稱的根名稱。
 
@@ -48,7 +48,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 
 ## <a name="requirements"></a>需求
 
- **標頭：** *FileTracker .h*
+ **標頭：** *FileTracker.h*
 
 ## <a name="see-also"></a>另請參閱
 

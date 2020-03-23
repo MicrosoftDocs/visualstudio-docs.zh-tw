@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595627"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>在 Visual Studio 中產生類別或類型
@@ -33,11 +33,11 @@ ms.locfileid: "75595627"
 
 **原因：** 您可以在使用類別或類型之前先宣告它，不過，此功能將可自動產生類別或類型。
 
-## <a name="how-to"></a>操作說明
+## <a name="how-to"></a>操作方式
 
 1. 將游標放在有紅色曲線的行上。 紅色波浪線表示尚不存在的類別。
 
-   - C#:
+   - C#：
 
        ![醒目提示的程式碼 C#](media/class-highlight-cs.png)
 
@@ -48,10 +48,10 @@ ms.locfileid: "75595627"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
+      - 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
    - **滑鼠**
-      - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 出現的圖示。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
+      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 圖示。
       - 按一下 ![錯誤燈泡](media/error-bulb.png) 圖示，如果文字游標已經在具有紅色曲線的行上，此圖示就會出現在左邊界上。
 
       ![「產生類別」預覽](media/class-preview-cs.png)
@@ -59,23 +59,23 @@ ms.locfileid: "75595627"
 3. 從下拉式功能表中選取其中一個選項：
 
    - 在新檔案中產生 '*TypeName*' 類別&mdash;在名為 *TypeName*.cs/.vb 的檔案中建立名為 *TypeName* 的類別
-   - 產生 '*TypeName*' 類別&mdash;在目前的檔案中建立名為 *TypeName* 的類別。
-   - 產生巢狀類別 '*TypeName*'&mdash;在目前的類別內建立名為 *TypeName* 的巢狀類別。
+   - 生成類 *"TypeName"*&mdash;在當前檔中創建名為*TypeName*的類。
+   - 生成嵌套類 *"TypeName"*&mdash;創建一個名為*TypeName*的類，該類嵌套在當前類中。
    - 產生新類型...&mdash;使用您指定的所有屬性來建立新的類別或結構。
 
    > [!TIP]
-   > 請使用位於預覽視窗底部的 [預覽變更] 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
+   > 請使用位於預覽視窗底部的 [預覽變更]**** 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
 
-4. 如果您選取 [產生新的類型] 項目，[產生類型] 對話方塊隨即開啟。 設定新類型的協助工具、種類及位置。
+4. 如果您選取 [產生新的類型]**** 項目，[產生類型]**** 對話方塊隨即開啟。 設定新類型的協助工具、種類及位置。
 
    ![產生類型](media/class-newtype-cs.png)
 
-   選取 | 描述
+   選取項目 | 描述
    --- | ---
-   存取 | 將類型設定為擁有 [預設]內部 或 [公用] 存取權。
-   類型 | 這可以設定為 [類別] 或 [結構]。
-   Name | 此名稱無法變更且將是您已經輸入的名稱。
-   專案 | 如果您的方案中有多個專案，則您可以選擇要將類別/結構放在哪個專案中。
+   存取 | 將類型設定為擁有 [預設]** 內部** 或 [公用]** 存取權。
+   種類 | 這可以設定為 [類別]** 或 [結構]**。
+   名稱 | 此名稱無法變更且將是您已經輸入的名稱。
+   隨附此逐步解說的專案 | 如果您的方案中有多個專案，則您可以選擇要將類別/結構放在哪個專案中。
    檔案名稱 | 您可以建立新檔案，或是將類型新增至現有的檔案。
 
 類別或結構隨即建立。 若為 C#，還會建立建構函式。
@@ -88,7 +88,7 @@ ms.locfileid: "75595627"
 
    ![產生類別結果 VB](media/class-result-vb.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [程式碼產生](../code-generation-in-visual-studio.md)
+- [代碼生成](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

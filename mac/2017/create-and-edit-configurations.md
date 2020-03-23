@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
 ms.openlocfilehash: 09591cb4feee4e9dc673f925bf3917eb3d07319b
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983581"
 ---
 # <a name="creating-and-editing-build-configurations"></a>建立和編輯組建組態
@@ -23,15 +23,15 @@ ms.locfileid: "74983581"
 
 若要建立專案組建組態，請採取下列步驟：
 
-1. 以滑鼠右鍵按一下專案節點，然後選取 [選項]。
+1. 以滑鼠右鍵按一下專案節點，然後選取 [選項]****。
 
-2. 在專案選項對話方塊中，選取 [組建] > [組態]：
+2. 在專案選項對話方塊中，選取 [組建] > [組態]****：
 
     ![專案選項中的組態管理員](media/create-and-edit-configurations-image2.png)
 
-3. 若要建立新的組態，請選取 [新增]。 或者，您可以複製其中一個現有的組態。
+3. 若要建立新的組態，請選取 [新增]****。 或者，您可以複製其中一個現有的組態。
 
-建立組態之後，您可以使用專案選項中的 [組建] 區段，調整屬性使其適用於您的組態：
+建立組態之後，您可以使用專案選項中的 [組建]**** 區段，調整屬性使其適用於您的組態：
 
 ![設定組建選項](media/create-and-edit-configurations-image3.png)
 
@@ -39,15 +39,15 @@ ms.locfileid: "74983581"
 
 若要建立方案組建組態，請採取下列步驟：
 
-1. 以滑鼠右鍵按一下方案節點，然後選取 [選項]。
+1. 以滑鼠右鍵按一下方案節點，然後選取 [選項]****。
 
-2. 在 [方案選項] 對話方塊中，選取 [組建] > [組態]：
+2. 在 [方案選項] 對話方塊中，選取 [組建] > [組態]****：
 
     ![方案選項中的組態管理員](media/create-and-edit-configurations-image1.png)
 
-3. 若要建立新的組態，請選取 [新增]。 或者，您可以複製其中一個現有的組態。
+3. 若要建立新的組態，請選取 [新增]****。 或者，您可以複製其中一個現有的組態。
 
-建立組態之後，您可以使用每個專案選項中的 [組建] 區段，調整屬性使其適用於您的組態：
+建立組態之後，您可以使用每個專案選項中的 [組建]**** 區段，調整屬性使其適用於您的組態：
 
 ![設定組建選項](media/create-and-edit-configurations-image3.png)
 
@@ -57,7 +57,7 @@ ms.locfileid: "74983581"
 
 ![組態清單](media/create-and-edit-configurations-image4.png)
 
-選取 [重新命名] 按鈕。
+選取 [重新命名]**** 按鈕。
 
 ![重新命名對話方塊](media/create-and-edit-configurations-image5.png)
 
@@ -65,6 +65,6 @@ ms.locfileid: "74983581"
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Launch-Multiple-Projects/player]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [建立和編輯組建組態 (Windows 上的 Visual Studio)](/visualstudio/ide/how-to-create-and-edit-configurations)

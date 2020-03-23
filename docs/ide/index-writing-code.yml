@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: 在 Visual Studio 中組織和編輯程式碼
-summary: 瞭解如何處理程式碼專案、使用程式碼編輯器功能，以及維護一致的程式碼樣式。
+title: 在視覺化工作室中組織和編輯代碼
+summary: 瞭解如何使用代碼專案、使用代碼編輯器功能和維護一致的代碼樣式。
 metadata:
   title: 程式碼編輯器功能
-  description: 瞭解 Visual Studio 中的程式碼編輯功能。
+  description: 瞭解視覺化工作室中的代碼編輯功能。
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
@@ -11,13 +11,13 @@ metadata:
   ms.author: jillfra
   ms.date: 10/15/2019
   ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
-  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+  ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 11/22/2019
+  ms.lasthandoff: 03/18/2020
   ms.locfileid: "74316434"
 landingContent:
-- title: 開啟或建立專案
+- title: 打開或創建專案
   linkLists:
   - linkListType: tutorial
     links:
@@ -39,9 +39,9 @@ landingContent:
       url: navigating-code.md
     - text: 產生及修正程式嗎
       url: code-generation-in-visual-studio.md
-    - text: 使用 IntelliSense 來完成程式碼
+    - text: 使用 IntelliSense 完成代碼
       url: using-intellisense.md
-    - text: 管理程式碼樣式喜好設定
+    - text: 管理代碼樣式首選項
       url: code-styles-and-code-cleanup.md
     - text: 程式碼分析
       url: ../code-quality/roslyn-analyzers-overview.md

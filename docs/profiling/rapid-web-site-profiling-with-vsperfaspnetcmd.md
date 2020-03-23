@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771688"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 快速進行網站分析
@@ -23,7 +23,7 @@ ms.locfileid: "74771688"
 **VSPerfASPNETCmd** 命令列工具可讓您輕鬆地分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式。 與 [VSPerfCmd](../profiling/vsperfcmd.md) 命令列工具相較之下，選項變少，無須設定任何環境變數，也不需要重新啟動電腦。 使用獨立分析工具進行程式碼剖析慣用的方法是使用 **VSPerfASPNETCmd**。 如需詳細資訊，請參閱[如何：安裝獨立分析工具](../profiling/how-to-install-the-stand-alone-profiler.md)。
 
 > [!NOTE]
-> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱[Windows 8 和 Windows 伺服器 2012 應用程式中的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
 
  在某些情況下，像是收集並行資料或暫停和繼續程式碼剖析時，慣用的程式碼剖析方法是使用 **VSPerfCmd**。
 
@@ -42,7 +42,7 @@ ms.locfileid: "74771688"
 
  **vsperfaspnetcmd**  *websiteUrl*
 
- 一個本機伺服器裝載的 *websiteUrl* 範例可能為 *http://localhost/MySite/default.aspx* 。 一個外部網站的範例為 *http://www.contoso.com* 。 如需詳細資訊，請參閱[對網站進行分析，但不在 Visual Studio 中開啟專案](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio)。
+ 一個本機伺服器裝載的 *websiteUrl* 範例可能為 *http://localhost/MySite/default.aspx*。 外部網站的一個示例是*http://www.contoso.com*。 如需詳細資訊，請參閱[對網站進行分析，但不在 Visual Studio 中開啟專案](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio)。
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>使用檢測方法收集詳細的計時資料
 
@@ -50,7 +50,7 @@ ms.locfileid: "74771688"
 
 **vsperfaspnetcmd /trace**  *websiteUrl*
 
-如果您想要分析 Web 應用程式中已靜態編譯的.*dll* 檔案，您必須使用 [VSInstr](../profiling/vsinstr.md) 命令列工具來檢測檔案。 vsperfaspnetcmd /trace 命令會包含已檢測檔案中的資料。
+如果要以靜態方式分析 。*dll*在 Web 應用程式中，必須使用[VSInstr](../profiling/vsinstr.md)命令列工具檢測檔。 vsperfaspnetcmd /trace 命令會包含已檢測檔案中的資料。
 
 ## <a name="to-collect-net-memory-data"></a>收集 .NET 記憶體資料
 
@@ -64,14 +64,14 @@ ms.locfileid: "74771688"
 
  您也可以使用 **/Trace** 選項，包含有關 .NET 記憶體資料的詳細計時資訊︰
 
- **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>收集階層互動資料
 
 > [!WARNING]
 > 階層互動分析 (TIP) 資料可以使用任何版本的 Visual Studio 來收集。 不過，階層互動分析資料只能在 Visual Studio Enterprise 中檢視。
 >
-> 若要在 Windows 8 或 Windows Server 2012 上收集 TIP 資料，您必須使用檢測 ( **/trace**) 選項。
+> 若要在 Windows 8 或 Windows Server 2012 上收集 TIP 資料，您必須使用檢測 (**/trace**) 選項。
 
 透過取樣資料收集階層互動資料：
 
@@ -83,7 +83,7 @@ ms.locfileid: "74771688"
 
 透過 .NET 記憶體資料收集階層互動資料：
 
-**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>使用 /NoWait 選項
 
@@ -91,7 +91,7 @@ ms.locfileid: "74771688"
 
 開始進行程式碼剖析：
 
-**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
 
 結束程式碼剖析：
 
@@ -103,5 +103,5 @@ ms.locfileid: "74771688"
 
 |選項|描述|
 |------------|-----------------|
-|**/Output:** `VspFile`|根據預設，會使用檔案名稱 **PerformanceReport.vsp** 在目前目錄中建立程式碼剖析資料 (.*vsp*) 檔案。 您可以使用 /output 選項指定不同的位置、 檔案名稱，或兩者。|
+|**/輸出：**`VspFile`|根據預設，會使用檔案名稱 **PerformanceReport.vsp** 在目前目錄中建立程式碼剖析資料 (.*vsp*) 檔案。 您可以使用 /output 選項指定不同的位置、 檔案名稱，或兩者。|
 |**/PackSymbols:Off**|根據預設，VsPerfASPNETCmd 會將符號 (函式和參數名稱等等) 嵌入 .*vsp* 檔。 內嵌符號會讓程式碼剖析資料檔案變得非常大。 如果當您分析資料時，可以存取含有符號的 .*pdb* 檔案，請使用 /packsymbols:off 選項以停用內嵌符號。|

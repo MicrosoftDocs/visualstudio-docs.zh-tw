@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77557929"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -37,13 +37,13 @@ devenv {/LCID|/L} LocaleID
 
 ## <a name="arguments"></a>引數
 
-- *LocaleID*
+- *區域 ID*
 
   必要。 所指定語言的地區設定識別碼 (LCID)。
 
 ## <a name="remarks"></a>備註
 
-載入 IDE，並設定環境的預設自然語言。 此變更保存於工作階段之間，而 IDE 會在 [工具] > [選項] > [環境] > [國際設定] > [語言] 方塊中顯示此變更。
+載入 IDE，並設定環境的預設自然語言。 此更改在會話之間保留，IDE 在 **"工具** > **選項** > **環境** > **國際設置** > **語言"** 框中顯示此更改。
 
 如果您的系統不適用指定的語言，則會忽略 `/LCID` 參數。
 

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d65d5fcf8961493c2b780453f2143de788551a5
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778306"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
@@ -103,5 +103,5 @@ void ExerciseResumeProfile()
 }
 ```
 
-## <a name="see-also"></a>請參閱
-- [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>另請參閱
+- [視覺化工作室探測器 API 參考（本機）](../profiling/visual-studio-profiler-api-reference-native.md)

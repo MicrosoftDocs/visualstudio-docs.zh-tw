@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633313"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 內嵌工作
@@ -26,7 +26,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
  在 MSBuild 15.8 中，已新增 [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md)，以建立 .NET Standard 跨平台內嵌工作。  如果您需要在 .NET Core 上使用內嵌工作，則必須使用 RoslynCodeTaskFactory。
 ## <a name="the-structure-of-an-inline-task"></a>內嵌工作的結構
 
- 內嵌工作包含於 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目中。 內嵌工作與包含它的 `UsingTask` 項目通常會包含於 *.targets* 檔案中，並視需要匯入其他專案檔。 以下是基本的內嵌工作。 請注意，它不會執行任何動作。
+ 內嵌工作包含於 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目中。 內聯任務及其包含`UsingTask`它的元素通常包含在 *.target*檔中，並根據需要導入到其他專案檔案中。 以下是基本的內嵌工作。 請注意，它不會執行任何動作。
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -56,7 +56,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 `DoNothing` 工作的其餘項目是空的，它們的用途是用來說明內嵌工作的順序和結構。 本主題後續內容中將提供更強固的範例。
 
-- `ParameterGroup` 元素為選擇性。 指定時，它將會宣告工作的參數。 如需輸入和輸出參數的詳細資訊，請參閱本主題稍後的[輸入和輸出參數](#input-and-output-parameters)。
+- `ParameterGroup` 則是選擇性元素。 指定時，它將會宣告工作的參數。 有關輸入和輸出參數的詳細資訊，請參閱本主題後面的[輸入和輸出參數](#input-and-output-parameters)。
 
 - `Task` 項目會描述並包含工作原始程式碼。
 
@@ -69,7 +69,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 > [!NOTE]
 > `Task` 項目包含的項目皆為工作 Factory (在此案例中為程式碼工作 Factory) 特定。
 
-### <a name="code-element"></a>程式碼元素
+### <a name="code-element"></a>程式碼項目
 
  `Task` 項目內顯示的最後一個子項目是 `Code` 項目。 `Code` 項目會包含或尋找您想要編譯為工作的程式碼。 您放入 `Code` 項目的內容取決於您要撰寫工作的方式。
 
@@ -79,20 +79,20 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 - 如果 `Type` 的值是 `Class`，則 `Code` 元素會包含衍生自 <xref:Microsoft.Build.Framework.ITask> 介面的類別程式碼。
 
-- 如果 `Type` 的值是 `Method`，則程式碼會定義 `Execute` 介面之 <xref:Microsoft.Build.Framework.ITask> 方法的覆寫。
+- 如果 `Type` 的值是 `Method`，則程式碼會定義 <xref:Microsoft.Build.Framework.ITask> 介面之 `Execute` 方法的覆寫。
 
 - 如果 `Type` 的值是 `Fragment`，則程式碼會定義 `Execute` 方法的內容，但不會定義簽章或 `return` 陳述式。
 
 程式碼本身通常會出現在 `<![CDATA[` 標記和 `]]>` 標記之間。 因為此程式碼是在 CDATA 區段中，所以您不必擔心逸出保留的字元，如 "\<" 或 ">"。
 
-或者，您可以使用 `Source` 項目的 `Code` 屬性，來指定包含您工作程式碼的檔案位置。 原始程式檔中的程式碼必須是 `Type` 屬性所指定的類型。 如果 `Source` 屬性存在，`Type` 的預設值為 `Class`。 如果 `Source` 不存在，預設值為 `Fragment`。
+或者，您可以使用 `Code` 項目的 `Source` 屬性，來指定包含您工作程式碼的檔案位置。 原始程式檔中的程式碼必須是 `Type` 屬性所指定的類型。 如果 `Source` 屬性存在，`Type` 的預設值為 `Class`。 如果 `Source` 不存在，預設值為 `Fragment`。
 
 > [!NOTE]
-> 在原始程式檔中定義工作類別時，類別名稱必須與對應的 `TaskName`UsingTask[ 項目的 ](../msbuild/usingtask-element-msbuild.md) 屬性相符。
+> 在原始程式檔中定義工作類別時，類別名稱必須與對應的 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目的 `TaskName` 屬性相符。
 
 ## <a name="helloworld"></a>HelloWorld
 
- 以下是更強固的內嵌工作。 HelloWorld 工作會在預設的錯誤記錄裝置上顯示 "Hello, world!"， 此裝置通常是系統主控台或 Visual Studio 的 [輸出] 視窗。 範例所包含的 `Reference` 項目僅供說明之用。
+ 以下是更強固的內嵌工作。 HelloWorld 工作會在預設的錯誤記錄裝置上顯示 "Hello, world!"， 此裝置通常是系統主控台或 Visual Studio 的 [輸出]**** 視窗。 範例所包含的 `Reference` 項目僅供說明之用。
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -117,7 +117,7 @@ Log.LogError("Hello, world!");
 </Project>
 ```
 
- 您可以在名為 H*elloWorld.targets* 的檔案中儲存 HelloWorld 工作，然後從專案中叫用它，如下所示。
+ 您可以將 HelloWorld 任務保存在名為*HelloWorld.target*的檔中，然後從專案中調用它，如下所示。
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -146,7 +146,7 @@ Log.LogError("Hello, world!");
 
 - `Output` 是選擇性屬性，預設值為 `false`。 如果是 `true`，則必須為參數提供值，才能從 Execute 方法傳回。
 
-例如：
+例如，
 
 ```xml
 <ParameterGroup>
@@ -164,7 +164,7 @@ Log.LogError("Hello, world!");
 
 - `Tally` 是 System.Int32 類型的輸出參數。
 
-如果 `Code` 項目具有 `Type` 或 `Fragment` 的 `Method` 屬性，則會自動為每個參數建立屬性。 否則，必須在工作原始程式碼中明確宣告屬性，而且屬性必須完全符合它們的參數定義。
+如果 `Code` 項目具有 `Fragment` 或 `Method` 的 `Type` 屬性，則會自動為每個參數建立屬性。 否則，必須在工作原始程式碼中明確宣告屬性，而且屬性必須完全符合它們的參數定義。
 
 ## <a name="example"></a>範例
 

@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632949"
 ---
 # <a name="property-element-msbuild"></a>Property 元素 (MSBuild)
 
-包含使用者定義的屬性名稱和值。 MSBuild 專案中使用的每個屬性都必須指定為 `PropertyGroup` 元素的子系。
+包含使用者定義的屬性名稱和值。 MSBuild 專案中使用的每個屬性都必須指定為`PropertyGroup`元素的子級。
 
  \<Project> \<PropertyGroup>
 
@@ -39,7 +39,7 @@ ms.locfileid: "77632949"
 
 ## <a name="attributes-and-elements"></a>屬性和元素
 
- 下列各節描述屬性、子項目和父項目。
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
 
@@ -65,11 +65,11 @@ ms.locfileid: "77632949"
 
 ## <a name="remarks"></a>備註
 
- 屬性名稱只能使用 ASCII 字元。 將專案名稱放在 "`$(`" 和 "`)`" 之間，以參考專案中的屬性值。 例如，如果 `$(builddir)\classes` 屬性值為 *，即會將*  解析為 `builddir`build\classes`build`。 如需有關屬性的詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
+ 屬性名稱只能使用 ASCII 字元。 將專案名稱放在 "`$(`" 和 "`)`" 之間，以參考專案中的屬性值。 例如，`$(builddir)\classes`如果`builddir`屬性具有 值`build`，則解析*為生成_類*。 有關屬性的詳細資訊，請參閱[MSBuild 屬性](../msbuild/msbuild-properties.md)。
 
 ## <a name="example"></a>範例
 
- 下列程式碼會將 `Optimization` 屬性設為 `false`，而且如果 `DefaultVersion` 屬性是空的，會將 `1.0` 屬性設為`Version`。
+ 下列程式碼會將 `Optimization` 屬性設為 `false`，而且如果 `Version` 屬性是空的，會將 `DefaultVersion` 屬性設為`1.0`。
 
 ```xml
 <PropertyGroup>
@@ -81,4 +81,4 @@ ms.locfileid: "77632949"
 ## <a name="see-also"></a>另請參閱
 
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)
-- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)

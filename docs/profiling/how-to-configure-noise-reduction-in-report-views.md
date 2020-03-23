@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776328"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在報表檢視中設定減少雜訊
@@ -33,52 +33,52 @@ ms.locfileid: "74776328"
 
 ### <a name="to-configure-trimming-for-a-performance-report"></a>設定修剪效能報告
 
-1. 當產生的報告中顯示 [呼叫樹狀圖] 檢視或 [配置] 檢視時，在 [開發人員] 功能表上，按一下 [程式碼剖析工具]，然後按一下 [減少雜訊選項]。
+1. 當產生的報告中顯示 [呼叫樹狀圖] 檢視或 [配置] 檢視時，在 [開發人員]**** 功能表上，按一下 [程式碼剖析工具]****，然後按一下 [減少雜訊選項]****。
 
-     [減少雜訊] 對話方塊隨即顯示。
+     [減少雜訊]**** 對話方塊隨即顯示。
 
 2. 若要啟用修剪，請依照以下步驟進行：
 
-    1. 選取 [啟用修剪]。 這是預設設定。
+    1. 選取 [啟用修剪]****。 這是預設值。
 
         > [!NOTE]
         > 如果已啟用減少雜訊，資訊列會顯示在報告中。 如需詳細資訊，請參閱[呼叫樹狀圖檢視](../profiling/call-tree-view.md)和[配置檢視](../profiling/dotnet-memory-allocations-view.md)。
 
-    2. 使用 [值] 下拉式清單並選擇適用的設定以設定值設定。
+    2. 使用 [值]**** 下拉式清單並選擇適用的設定以設定值設定。
 
-    3. 在 [臨界值] 文字方塊中輸入一個百分比值，以設定需要的臨界值設定。
+    3. 在 [臨界值]**** 文字方塊中輸入一個百分比值，以設定需要的臨界值設定。
 
-    4. 若要在產生的報告中啟用減少雜訊警告，請選取 [啟用減少雜訊時顯示警告]。 這是預設設定。
+    4. 若要在產生的報告中啟用減少雜訊警告，請選取 [啟用減少雜訊時顯示警告]****。 這是預設值。
 
-3. 若要停用修剪，請清除 [啟用修剪]。
+3. 若要停用修剪，請清除 [啟用修剪]****。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]****。
 
 ### <a name="to-configure-folding-for-a-performance-report"></a>設定折疊效能報告
 
-1. 在 [開發人員] 功能表上，按一下 [程式碼剖析工具]，然後按一下 [減少雜訊選項]。
+1. 在 [開發人員]**** 功能表上，按一下 [程式碼剖析工具]****，然後按一下 [減少雜訊選項]****。
 
-     [減少雜訊] 對話方塊隨即顯示。
+     [減少雜訊]**** 對話方塊隨即顯示。
 
 2. 若要啟用摺疊，請依照以下步驟進行：
 
-    1. 選取 [啟用摺疊]。 這是預設設定。
+    1. 選取 [啟用摺疊]****。 這是預設值。
 
         > [!NOTE]
         > 如果已啟用減少雜訊，資訊列會顯示在報告中。 如需詳細資訊，請參閱[呼叫樹狀圖檢視](../profiling/call-tree-view.md)和[配置檢視](../profiling/dotnet-memory-allocations-view.md)。
 
-    2. 使用 [值] 下拉式清單並選取適用的設定以設定值設定。
+    2. 使用 [值]**** 下拉式清單並選取適用的設定以設定值設定。
 
-    3. 在 [臨界值] 文字方塊中輸入一個百分比值，以設定需要的臨界值設定。
+    3. 在 [臨界值]**** 文字方塊中輸入一個百分比值，以設定需要的臨界值設定。
 
-    4. 若要在產生的報告中啟用減少雜訊警告，請選取 [啟用減少雜訊時顯示警告]。 這是預設設定。
+    4. 若要在產生的報告中啟用減少雜訊警告，請選取 [啟用減少雜訊時顯示警告]****。 這是預設值。
 
-3. 若要停用摺疊，請清除 [啟用摺疊]。
+3. 若要停用摺疊，請清除 [啟用摺疊]****。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]****。
 
-## <a name="see-also"></a>請參閱
-- [自訂效能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)
-- [操作說明：從檢測排除或包含精簡函式](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
-- [呼叫樹狀圖檢視](../profiling/call-tree-view.md)
+## <a name="see-also"></a>另請參閱
+- [自訂性能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)
+- [如何：從檢測中排除或包含短函數](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
+- [調用樹狀檢視](../profiling/call-tree-view.md)
 - [配置檢視](../profiling/dotnet-memory-allocations-view.md)

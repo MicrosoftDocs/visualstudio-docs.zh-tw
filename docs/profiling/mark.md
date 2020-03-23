@@ -10,16 +10,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bf89469c4137052247b5a1fdfee7f8dc694fbcc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773990"
 ---
-# <a name="mark"></a>Mark
-*VSPerfCmd.exe* 的 [標記] 選項會將指定的資訊插入分析資料檔案中。 個別的 VSPerfReport 報表或分析工具 UI 的標記報表檢視中，則可以列出標記。 [標記] 可用以指定報表的起點和終點並檢視篩選。
+# <a name="mark"></a>標記
+*VSPerfCmd.exe 的 [標記]* **** 選項會將指定的資訊插入分析資料檔案中。 個別的 VSPerfReport 報表或分析工具 UI 的標記報表檢視中，則可以列出標記。 [標記]**** 可用以指定報表的起點和終點並檢視篩選。
 
- [標記] 選項必須是命令列上指定的唯一選項。
+ [標記]**** 選項必須是命令列上指定的唯一選項。
 
 ## <a name="syntax"></a>語法
 
@@ -41,8 +41,8 @@ VSPerfCmd.exe /Launch:TestApp.exe
 VSPerfCmd.exe /Mark:123,TestMark
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服務](../profiling/command-line-profiling-of-services.md)

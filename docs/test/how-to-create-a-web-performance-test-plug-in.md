@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc2eeafa41b953f9d853c7ff435a6a9706ae73ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589106"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>如何：建立 Web 效能測試外掛程式
@@ -29,37 +29,37 @@ Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式�
 自訂的 Web 效能測試外掛程式可以搭配您所錄製的 Web 效能測試使用，使您能夠以最少量的程式碼，達成對 Web 測試的更高層級控制。 但是，自訂的 Web 效能測試外掛程式也可以與 Web 效能測試程式碼搭配使用。 如需詳細資訊，請參閱[產生和執行 Web 效能測試程式碼](../test/generate-and-run-a-coded-web-performance-test.md)。
 
 > [!NOTE]
-> 您也可以建立負載測試外掛程式。請參閱[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
+> 您還可以創建負載測試外掛程式。[請參閱如何：創建負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>建立自訂的 Web 效能測試外掛程式
 
 1. 開啟包含 Web 效能測試的 Web 效能和負載測試專案。
 
-2. 在 [方案總管] 中，以滑鼠右鍵按一下方案並選取 [新增]，然後選擇 [新增專案]。
+2. 在**解決方案資源管理器**中，按右鍵解決方案並選擇 **"添加"，** 然後選擇 **"新專案**"。
 
 3. 建立新的**類別庫**專案。
 
-   新的類別庫專案會加入至 [方案總管]，而且新的類別會出現在 [程式碼編輯器] 中。
+   新的類別庫專案會加入至 [方案總管]****，而且新的類別會出現在 [程式碼編輯器]**** 中。
 
-4. 在 [方案總管] 中，以滑鼠右鍵按一下新類別庫中的 [參考] 資料夾，然後選取 [新增參考]。
+4. 在**解決方案資源管理器**中，按右鍵新類庫中的 **"引用"** 資料夾，然後選擇"**增加參考**"。
 
-   [新增參考] 對話方塊隨即顯示。
+   [新增參考]**** 對話方塊隨即顯示。
 
-5. 選擇 [.NET] 索引標籤並向下捲動，然後選取 [Microsoft.VisualStudio.QualityTools.WebTestFramework]
+5. 選擇 [.NET]**** 索引標籤並向下捲動，然後選取 [Microsoft.VisualStudio.QualityTools.WebTestFramework]****
 
-6. 選擇 [ **確定**]。
+6. 選擇 **"確定**"。
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework** 的參考就會新增至 [方案總管] 中的 [參考] 資料夾。
+     對**微軟的引用.VisualStudio.QualityTools.WebTestFramework**被添加到**解決方案資源管理器**中的**參考**資料夾中。
 
-7. 在 [方案總管] 中，以滑鼠右鍵按一下 Web 效能和負載測試專案的頂端節點，此專案包含要新增 Web 效能測試外掛程式的負載測試，然後選取 [新增參考]。
+7. 在**解決方案資源管理器**中，按右鍵 Web 性能和負載測試專案的頂部節點，其中包含要向其添加 Web 效能測試外掛程式的負載測試，然後選擇"**添加參考**"。
 
-8. [新增參考] 對話方塊隨即顯示。
+8. **將顯示"添加參考"對話方塊**。
 
-9. 選擇 [專案] 索引標籤，然後選取 [類別庫專案]。
+9. 選擇"**專案**"選項卡並選擇 **"類庫專案**"。
 
-10. 選擇 [ **確定**]。
+10. 選擇 **"確定**"。
 
-11. 在 [程式碼編輯器] 中，撰寫外掛程式的程式碼。 首先，建立衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> 的新公用類別。
+11. 在 [程式碼編輯器]**** 中，撰寫外掛程式的程式碼。 首先，建立衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> 的新公用類別。
 
 12. 在一或多個事件處理常式內實作程式碼。 如需範例實作，請參閱下列的＜範例＞一節。
 
@@ -83,27 +83,27 @@ Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式�
 
 14. 開啟 Web 效能測試。
 
-15. 若要新增 Web 效能測試外掛程式，請選擇工具列上的 [新增 Web 測試外掛程式]。
+15. 要添加 Web 效能測試外掛程式，請選擇工具列上的 **"添加 Web 測試外掛程式**"。
 
-     [新增 Web 測試外掛程式] 對話方塊隨即出現。
+     [新增 Web 測試外掛程式]**** 對話方塊隨即出現。
 
-16. 在 [選取外掛程式] 底下，選取您的 Web 效能測試外掛程式類別。
+16. 在 **"選擇外掛程式"** 下，選擇 Web 效能測試外掛程式類。
 
-17. 在 [所選外掛程式的屬性] 窗格中，設定外掛程式要在執行階段中使用的初始值。
+17. 在 [所選外掛程式的屬性]**** 窗格中，設定外掛程式要在執行階段中使用的初始值。
 
     > [!NOTE]
     > 您可以從外掛程式公開任意數目的屬性，只要讓這些屬性成為公用、可設定且屬於基底型別 (例如整數、布林或字串) 的屬性即可。 您之後也可以使用 [屬性] 視窗來變更 Web 效能測試外掛程式屬性。
 
-18. 選擇 [ **確定**]。
+18. 選擇 **"確定**"。
 
-     此外掛程式就會新增至 [Web 測試外掛程式] 資料夾。
+     此外掛程式就會新增至 [Web 測試外掛程式]**** 資料夾。
 
     > [!WARNING]
     > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
-    > **要求失敗： \<外掛程式 > 事件中發生例外狀況：無法載入檔案或元件 '\<"外掛程式名稱" .dll 檔案 >，版本 =\<n. n. n. n. n. n. n. n >，Culture = 中性，PublicKeyToken = null ' 或它的其中一個相依性。系統找不到指定的檔案。**
+    > **請求失敗：\<外掛程式>事件中的異常：無法載入檔或程式集"\<外掛程式名稱".DLL 檔案>、版本=n.n.n>、\<區域性=中性、PublicKeyToken_null"或其依賴項之一。系統找不到指定的檔。**
     >
-    > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)** ，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
+    > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)**，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
     >
     > 1. 在 Web 效能和負載測試專案中，您將會在參考中看見警告。 移除並重新加入外掛程式 DLL 的參考。
     > 2. 從測試或適當的位置中移除外掛程式，然後再重新加入。
@@ -112,7 +112,7 @@ Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式�
 
 下列程式碼會建立自訂的 Web 效能測試外掛程式，它會將項目加入至代表測試反覆項目的 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestContext> 中。
 
-執行 Web 效能測試之後，使用此外掛程式即可在 [Web 效能結果檢視器] 的 [內容] 索引標籤中看見已新增名為 **TestIteratnionNumber** 的項目。
+運行 Web 效能測試後，使用此外掛程式可以在**Web 性能結果檢視器**中的**上下文**選項卡中看到名為**TestiteratonNumber**的添加項。
 
 ```csharp
 using System;
@@ -163,7 +163,7 @@ namespace SampleRules
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [為負載測試建立自訂程式碼和外掛程式](../test/create-custom-code-and-plug-ins-for-load-tests.md)

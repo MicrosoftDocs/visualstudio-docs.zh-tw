@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 7b11f09d8fb70612d4496987f69583b2ac691275
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985244"
 ---
 # <a name="refactoring"></a>Refactoring
@@ -23,7 +23,7 @@ Visual Studio for Mac 與 Roslyn (Microsoft 的開放原始碼 .NET 編譯器平
 
 ## <a name="renaming"></a>重新命名
 
-[重新命名] 重構命令可以用於任何程式碼識別碼 (例如，類別名稱、屬性名稱等等)，以尋找該識別碼的所有出現項目並進行變更。 若要重新命名符號，請以滑鼠右鍵按一下它，然後選擇 [重構] > [重新命名]，或 **Cmd + R** 按鍵繫結關係：
+[重新命名]** 重構命令可以用於任何程式碼識別碼 (例如，類別名稱、屬性名稱等等)，以尋找該識別碼的所有出現項目並進行變更。 若要重新命名符號，請以滑鼠右鍵按一下它，然後選擇 [重構] > [重新命名]****，或 **Cmd + R** 按鍵繫結關係：
 
 ![重新命名功能表項目](media/refactoring-renaming1.png)
 
@@ -35,7 +35,7 @@ Visual Studio for Mac 與 Roslyn (Microsoft 的開放原始碼 .NET 編譯器平
 
 內容動作可讓您檢查任何 C# 程式碼，並查看所有可能的重構選項。
 
-[解析] 和 [重構] 內容項目會合併至可提供所有可用內容動作的單一 [快速檢修] 項目：
+[解析]**** 和 [重構]**** 內容項目會合併至可提供所有可用內容動作的單一 [快速檢修]** 項目：
 
 ![顯示內容項目](media/refactoring-context-action.png)
 
@@ -45,11 +45,11 @@ Visual Studio for Mac 與 Roslyn (Microsoft 的開放原始碼 .NET 編譯器平
 
 ![選項輸入內容項目](media/refactoring-image2a.png)
 
-若要啟用這些選項，您必須選取 [Visual Studio for Mac] > [喜好設定] > [文字編輯器] > [來源分析] 選項中的 [啟用開啟檔案的來源分析]：
+若要啟用這些選項，您必須選取 [Visual Studio for Mac] > [喜好設定] > [文字編輯器] > [來源分析]**** 選項中的 [啟用開啟檔案的來源分析]**：
 
 ![啟用來源分析](media/refactoring-options.png)
 
-可建議超過 100 個可能的動作，其啟用或停用方式是瀏覽至 [Visual Studio for Mac] > [喜好設定] > [來源分析] > [C#] > [程式碼動作]，並選取或取消選取動作旁的方塊：
+可建議超過 100 個可能的動作，其啟用或停用方式是瀏覽至 [Visual Studio for Mac] > [喜好設定] > [來源分析] > [C#] > [程式碼動作]****，並選取或取消選取動作旁的方塊：
 
 ![C# 來源分析動作](media/refactoring-image3a.png)
 
@@ -66,7 +66,7 @@ Visual Studio for Mac 與 Roslyn (Microsoft 的開放原始碼 .NET 編譯器平
 
 ##### <a name="example"></a>範例
 
-1. 加入下列程式碼：
+1. 新增下列程式碼：
 
 ```csharp
     class MainClass
@@ -82,7 +82,7 @@ Visual Studio for Mac 與 Roslyn (Microsoft 的開放原始碼 .NET 編譯器平
     }
 ```
 
-2. 反白顯示 `double volume = (baseArea * height) / 3;` 這行，並以滑鼠右鍵按一下它，然後選取 [重構] > [擷取方法]。
+2. 反白顯示 `double volume = (baseArea * height) / 3;` 這行，並以滑鼠右鍵按一下它，然後選取 [重構] > [擷取方法]****。
 
 3. 使用方向鍵來選取新方法在程式碼中的位置。
 
@@ -111,7 +111,7 @@ Visual Studio for Mac 與 Roslyn (Microsoft 的開放原始碼 .NET 編譯器平
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [快速動作 (Windows 上的 Visual Studio)](/visualstudio/ide/quick-actions)
 - [重構程式碼 (Windows 上的 Visual Studio)](/visualstudio/ide/refactoring-in-visual-studio)

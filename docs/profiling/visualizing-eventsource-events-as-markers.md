@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422100"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64811542"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>將 EventSource 事件顯示為標記
 並行視覺化檢視可以將 EventSource 事件顯示為標記，而您可以控制顯示標記的方式。 若要檢視 EventSource 標記，請使用 [進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 對話方塊，註冊 ETW 提供者 GUID。 並行視覺化檢視表示 EventSource 事件的預設慣例為[旗標標記](../profiling/flag-markers.md)、[延伸標記](../profiling/span-markers.md)及[訊息標記](../profiling/message-markers.md)。 您可以將自訂欄位加入至事件，來自訂 EventSource 事件的顯示方式 。 如需標記的詳細資訊，請參閱[並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)。 如需 EventSource 事件的詳細資訊，請參閱 <xref:System.Diagnostics.Tracing>。
@@ -34,18 +34,18 @@ ms.locfileid: "63422100"
 
 |ETW 層級|並行視覺化檢視重要性|
 |---------------|---------------------------------------|
-|win:LogAlways|一般|
-|win:Critical|Critical|
-|win:Error|Critical|
-|win:Warning|High|
-|win:Informational|一般|
+|win:LogAlways|正常|
+|win:Critical|重大|
+|win:Error|重大|
+|win:Warning|高|
+|win:Informational|正常|
 |win:Verbose|低|
 |大於 win:verbose|低|
 
-### <a name="series-name"></a>序列名稱
+### <a name="series-name"></a>數列名稱
  用來當成序列名稱的事件工作名稱。 如果事件未定義任何工作，序列名稱為空白。
 
-### <a name="category"></a>分類
+### <a name="category"></a>類別
  如果層級為 win:Critical 或 win:Error，則分類會是警示 (-1)。 否則，該分類為預設值 (0)。
 
 ### <a name="text"></a>Text
@@ -70,18 +70,18 @@ ms.locfileid: "63422100"
 
 |cvImportance 值|並行視覺化檢視重要性|
 |------------------------|---------------------------------------|
-|0|一般|
-|1|Critical|
-|2|High|
-|3|High|
-|4|一般|
+|0|正常|
+|1|重大|
+|2|高|
+|3|高|
+|4|正常|
 |5|低|
 |所有其他的值|低|
 
-### <a name="series-name"></a>序列名稱
+### <a name="series-name"></a>數列名稱
  使用 `cvSeries` 事件欄位 (一個字串)，來控制並行視覺化檢視提供給 EventSource 事件的序列名稱。
 
-### <a name="category"></a>分類
+### <a name="category"></a>類別
  使用 `cvCategory` 欄位 (一個位元組)，來控制並行視覺化檢視提供給 EventSource 事件的分類。
 
 ### <a name="text"></a>Text
@@ -94,4 +94,4 @@ ms.locfileid: "63422100"
 > 使用 SpanID 將延伸範圍巢狀化，不支援允許其在相同執行緒上部分重疊，或允許其在一個執行緒上開始並在另一個執行緒上結束。
 
 ## <a name="see-also"></a>另請參閱
-- [並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)
+- [併發視覺化器標記](../profiling/concurrency-visualizer-markers.md)

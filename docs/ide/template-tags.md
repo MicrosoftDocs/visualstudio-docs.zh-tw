@@ -14,17 +14,17 @@ helpviewer_keywords:
 - template tagging, updating
 - template tags, updating
 ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73189522"
 ---
 # <a name="add-tags-to-project-templates"></a>將標籤新增到專案範本
 
 從 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 16.1 版 Preview 2 開始，您可以將語言、平台和專案類型標籤新增到您的專案範本。 
 
-標籤會用於 [新增專案] 對話方塊中的兩個位置：
+標記在 **"新專案"** 對話方塊中的兩個位置使用：
 
 - 標籤會出現在範本描述下面。
 
@@ -34,15 +34,15 @@ ms.locfileid: "73189522"
 
    ![[新增專案] 對話方塊中的搜尋及篩選](media/npd-search-and-filter.png)
 
-您可以透過更新 *.vstemplate* XML 檔案來新增標籤。 您可以使用 Visual Studio 內建的範本標籤，或建立自訂範本標籤。 範本標籤只會出現在 Visual Studio 2019 的 [新增專案] 對話方塊中。 範本標籤不會影響範本在先前版本 Visual Studio 中的呈現方式。
+您可以透過更新 *.vstemplate* XML 檔案來新增標籤。 您可以使用 Visual Studio 內建的範本標籤，或建立自訂範本標籤。 範本標籤只會出現在 Visual Studio 2019 的 [新增專案]**** 對話方塊中。 範本標籤不會影響範本在先前版本 Visual Studio 中的呈現方式。
 
 ## <a name="add-or-edit-tags"></a>新增或編輯標籤
 
 當您採取下列其中一個動作時，您可以在專案範本的 *.vstemplate* XML 中新增或編輯標籤：
 
-* 使用 [匯出範本] 精靈來[建立新專案範本](how-to-create-project-templates.md)。
-* [更新現有的專案範本](how-to-update-existing-templates.md)。
-* [建立新的 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)。
+* 使用"匯出範本"嚮導[創建新專案範本](how-to-create-project-templates.md)。
+* [更新現有專案範本](how-to-update-existing-templates.md)。
+* [創建新的 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)。
 
 ## <a name="syntax"></a>語法
 
@@ -69,7 +69,7 @@ ms.locfileid: "73189522"
 <ProjectTypeTag Package="{PackageID}" ID="ResourceID" />
 ```
 
-## <a name="elements"></a>項目
+## <a name="elements"></a>元素
 
 ### <a name="child-elements"></a>子元素
 
@@ -77,9 +77,9 @@ ms.locfileid: "73189522"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(必要) 將範本分類，並定義範本在 [新增專案] 對話方塊或 [加入新項目] 對話方塊中的顯示方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(必要) 將範本分類，並定義範本在 [新增專案]**** 對話方塊或 [加入新項目]**** 對話方塊中的顯示方式。|
 
 ## <a name="text-value"></a>文字值
 
@@ -93,7 +93,7 @@ Visual Studio 提供內建標籤清單。 當您新增內建標籤時，標籤�
 
 下列清單顯示 Visual Studio 中可用的內建標籤。 對應值顯示在括弧中。
 
-| 語言 | Platform | 專案類型 |
+| Language | 平台 | 專案類型 |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | 雲端 (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | 主控台 (`console`) |
@@ -145,9 +145,9 @@ Visual Studio 提供內建標籤清單。 當您新增內建標籤時，標籤�
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
-- [建立專案與項目範本](creating-project-and-item-templates.md)
-- [自訂專案與項目範本](customizing-project-and-item-templates.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [創建專案和專案範本](creating-project-and-item-templates.md)
+- [自訂專案和專案範本](customizing-project-and-item-templates.md)
 - [開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)

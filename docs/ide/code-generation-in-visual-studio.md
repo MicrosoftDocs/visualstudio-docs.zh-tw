@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a043c2e1e79d629b32d46f0f54d233cd0ea9cb54
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594249"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Visual Studio 中的程式碼產生功能
 
 Visual Studio 可透過多種方式協助您產生、修正和重構程式碼。
 
-## <a name="features"></a>功能
+## <a name="features"></a>特性
 
 - 您可以使用 [程式碼片段](../ide/code-snippets.md) 插入範本，例如 [切換](/dotnet/csharp/language-reference/keywords/switch) 區塊或 [列舉](/dotnet/csharp/language-reference/keywords/enum) 宣告。
 
@@ -29,9 +29,9 @@ Visual Studio 可透過多種方式協助您產生、修正和重構程式碼。
 > [!NOTE]
 > Visual Studio 中的每個語言服務提供自己的程式碼產生功能，因此某些功能僅適用於 C#，某些則可用於 C# 和 Visual Basic 兩者。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [程式碼片段](../ide/code-snippets.md)
-- [快速動作](../ide/quick-actions.md)
-- [重構](../ide/refactoring-in-visual-studio.md)
-- [程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)
+- [快速操作](../ide/quick-actions.md)
+- [Refactoring](../ide/refactoring-in-visual-studio.md)
+- [代碼生成和 T4 文本範本](../modeling/code-generation-and-t4-text-templates.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: ba5447301c3a5581d35825ed91c17b3c9f50015f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74298756"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 概觀
@@ -46,7 +46,7 @@ ms.locfileid: "74298756"
   
   您甚至可以在網路上另一部機器正在執行 Unity 遊戲時，對遊戲進行偵錯。  
   
-## <a name="productivity"></a>產能  
+## <a name="productivity"></a>生產力  
  除了 Visual Studio 撰寫及重構 C# 程式碼的既有產能之外，Visual Studio Tools for Unity 還提供額外的產能功能給 Unity 開發人員。  
   
 - Unity ShaderLab 語言的語法著色可協助您在錯誤變成 Bug 之前，在著色器中找出這些錯誤。 只要在 Visual Studio 中開啟 ShaderLab 檔案即可。  

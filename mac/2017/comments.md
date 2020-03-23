@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
 ms.openlocfilehash: 038c2bf7205ccc642d613893635b9323afe613b9
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74982643"
 ---
 # <a name="comments"></a>註解
@@ -18,9 +18,9 @@ ms.locfileid: "74982643"
 
 若要將整個程式碼區塊標記為註解：
 
-* 選取程式碼，然後從操作功能表選取 [切換行註解]
+* 選取程式碼，然後從操作功能表選取 [切換行註解]****
 
-或
+OR
 
 * 在選取的程式碼上使用 `cmd + /` 按鍵繫結關係。
 
@@ -48,6 +48,6 @@ ms.locfileid: "74982643"
 *)
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將程式碼標記為註解 (Windows 上的 Visual Studio)](/visualstudio/ide/quickstart-editor#comment-out-code)

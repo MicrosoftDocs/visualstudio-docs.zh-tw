@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7497f455ad3868f53758555aa28d305b6068e30d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773507"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>呼叫樹狀圖檢視 - 檢測資料
@@ -26,18 +26,18 @@ ms.locfileid: "74773507"
 
 |資料行|描述|
 |------------|-----------------|
-|**函式名稱**|函式的名稱。|
-|**函式位址**|函式的位址。|
+|**函數名稱**|函數的名稱。|
+|**功能位址**|函式的位址。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
 |**呼叫次數**|呼叫此函式的總次數。|
-|**原始程式檔**|含有這個函式定義的原始程式檔。|
+|**原始檔案**|含有這個函式定義的原始程式檔。|
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
-|**處理序 ID**|分析執行的處理序 ID (PID)。|
-|**處理序名稱**|指派給處理序的名稱。|
+|**處理序識別碼**|分析執行的處理序 ID (PID)。|
+|**流程名稱**|指派給處理序的名稱。|
 |**時間專有探查額外負荷**|檢測對這個函式造成的時間額外負荷。 已經從所有專有時間減去探查額外負荷。|
 |**時間內含探查額外負荷**|檢測對這個函式及其子函式所造成的時間額外負荷。 已經從所有內含時間減去探查額外負荷。|
-|**層級**|函式在呼叫樹狀圖中的深度。 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|
+|**水準**|函式在呼叫樹狀圖中的深度。 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
 
 ## <a name="elapsed-inclusive-values"></a>功能內含耗用值
  功能內含耗用值表示呼叫樹狀圖中父函式所呼叫之函式執行個體在呼叫堆疊上的時間。 該時間包含函式呼叫子函式以及呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。
@@ -83,8 +83,8 @@ ms.locfileid: "74773507"
 |**最大應用程式專屬 (Application Exclusive) 時間**|在此內容中呼叫此函式的最大應用程式專屬 (Application Exclusive) 時間。|
 |**最小應用程式專屬 (Application Exclusive) 時間**|在此內容中呼叫此函式的最小應用程式專屬 (Application Exclusive) 時間。|
 
-## <a name="see-also"></a>請參閱
-- [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
+## <a name="see-also"></a>另請參閱
+- [操作方式：自訂報表檢視列](../profiling/how-to-customize-report-view-columns.md)
 - [呼叫樹狀圖檢視](../profiling/call-tree-view-sampling-data.md)
-- [呼叫樹狀結構檢視 - 檢測](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
-- [呼叫樹狀圖檢視 - 取樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+- [調用樹狀檢視 - 檢測](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [調用樹狀檢視 - 採樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a6f227e6ab55696250d2769f5eef2e25597e081
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72645225"
 ---
-# <a name="options-dialog-box-environment--startup"></a>選項對話方塊：環境 \> 啟動
+# <a name="options-dialog-box-environment--startup"></a>選項對話方塊：環境\>啟動
 
 ::: moniker range="vs-2017"
 
@@ -27,6 +27,6 @@ ms.locfileid: "72645225"
 
 ::: moniker range=">=vs-2019"
 
-您可以使用這個頁面來設定 Visual Studio 啟動時的不同預設動作。 在 [啟動時] 中開啟清單，從 [開始視窗] (這可讓您開啟新或現有的專案)、[最新的解決方案] 或 [空白環境] 中進行選擇。
+您可以使用這個頁面來設定 Visual Studio 啟動時的不同預設動作。 在 [啟動時]**** 中開啟清單，從 [開始視窗]**** (這可讓您開啟新或現有的專案)、[最新的解決方案]**** 或 [空白環境]**** 中進行選擇。
 
 ::: moniker-end

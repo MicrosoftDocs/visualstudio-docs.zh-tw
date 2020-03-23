@@ -7,19 +7,19 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.openlocfilehash: 717eb9cd58f213c3d2c31a18c546a83ab8feb645
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984025"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio for Mac
 
 如果您或組織使用防火牆或 Proxy 伺服器等安全性措施，將會有您應該新增至「允許清單」的網域，以及應該開啟的連接埠和通訊協定，以確保您能在安裝及使用 Visual Studio for Mac 及 Azure 服務時取得最佳體驗。
 
-- [**安裝 Visual Studio for Mac**](#install-visual-studio-for-mac)：這些資料表包含必須允許連線的網域，讓您可以存取 Visual Studio for Mac 的所有功能和工作負載。
+- [**為 Mac 安裝 Visual Studio**](#install-visual-studio-for-mac)： 這些表包括必須允許連接的域，以便您能夠訪問 Mac Visual Studio 的所有功能和工作負載。
 
-- [**使用 Visual Studio for Mac**](#use-visual-studio-for-mac)：這些資料表包含必須允許連線的網域，以便您可以存取相關的功能。
+- [**對 Mac 使用 Visual Studio**](#use-visual-studio-for-mac)： 這些表包含必須允許連接以便您有權訪問相關功能的域。
 
 ## <a name="install-visual-studio-for-mac"></a>安裝 Visual Studio for Mac
 
@@ -27,7 +27,7 @@ ms.locfileid: "74984025"
 
 ### <a name="microsoft-domains"></a>Microsoft 網域
 
-| 網域| 用途 |
+| 網域| 目的 |
 | ----------------------------------- |---------------------------|
 | *.live.com| 認證管理 |
 | app.vssps.visualstudio.com| 安裝程式中繼資料|
@@ -44,7 +44,7 @@ ms.locfileid: "74984025"
 
 ### <a name="third-party-domains"></a>協力廠商網域
 
-| 網域| 用途 |
+| 網域| 目的 |
 | --------------------------|-------------------------|
 | dl.google.com | Android SDK |
 | download.oracle.com | Java SDK|
@@ -56,7 +56,7 @@ ms.locfileid: "74984025"
 
 ### <a name="general"></a>一般
 
-| 網域 | 連接埠|用途|
+| 網域 | 連接埠|目的|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Microsoft URL 解析 |
 | vsstartpage.blob.core.windows.net| 80/443| 起始頁資料|
@@ -65,31 +65,31 @@ ms.locfileid: "74984025"
 | visualstudio-devdiv-c2s.msedge.net | 80/443| 實驗性功能與通知 |
 | targetednotifications.azurewebsites.net|  80/443| 用來將通知全域清單篩選為僅適用於特定電腦/使用方式情節類型的清單|
 
-### <a name="identity"></a>Identity
+### <a name="identity"></a>身分識別
 
-| 網域 | 連接埠|用途|
+| 網域 | 連接埠|目的|
 | ----------------------|------------------|------------------|
-| login.microsoftonline.com | 80/443| 識別提供者|
-| secure.aadcdn.microsoftonline-p.com | 80/443|識別提供者|
+| login.microsoftonline.com | 80/443| 身分識別提供者|
+| secure.aadcdn.microsoftonline-p.com | 80/443|身分識別提供者|
 | dc.services.visualstudio.com| 80/443|當機報告|
 | management.azure.com|80/443| Azure 服務 API |
 
 ### <a name="nuget"></a>NuGet
 
-| 網域 | 連接埠|用途|
+| 網域 | 連接埠|目的|
 | ----------------------|------------------|------------------|
 | api.nuget.org | 80/443|NuGet API|
-| secure.aadcdn.microsoftonline-p.com |80/443| 識別提供者|
+| secure.aadcdn.microsoftonline-p.com |80/443| 身分識別提供者|
 
 ### <a name="android-projects"></a>Android 專案
 
-| 網域| 用途|
+| 網域| 目的|
 | ------------------------------------|------------------------------------|
 | time.android.com| Android Emulator 的時間伺服器 |
 | connectivitycheck.gstatic.com | Android Emulator 的連線|
 | cloudconfig.googleapis.com| Android Emulator 的 API|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
-- [在 Windows 上對類似問題進行疑難排解](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)
+- [在 Windows 上針對類似問題進行疑難排解](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

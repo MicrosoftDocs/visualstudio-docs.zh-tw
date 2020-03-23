@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633612"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 項目 (MSBuild)
@@ -37,7 +37,7 @@ ms.locfileid: "77633612"
 
 ## <a name="attributes-and-elements"></a>屬性和元素
 
- 下列各節描述屬性、子項目和父項目。
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
 
@@ -53,7 +53,7 @@ ms.locfileid: "77633612"
 
 |元素|描述|
 |-------------|-----------------|
-|[Item](../msbuild/item-element-msbuild.md)|使用者定義的元素，可定義建置程序的輸入。|
+|[專案](../msbuild/item-element-msbuild.md)|使用者定義的元素，可定義建置程序的輸入。|
 
 ## <a name="text-value"></a>文字值
 
@@ -63,7 +63,7 @@ ms.locfileid: "77633612"
 
 ## <a name="example"></a>範例
 
- 下列程式碼範例示範如何新增含有值 `Culture` 的 `fr` 中繼資料到項目 `CSFile`。
+ 下列程式碼範例示範如何新增含有值 `fr` 的 `Culture` 中繼資料到項目 `CSFile`。
 
 ```xml
 <ItemGroup>
@@ -75,5 +75,5 @@ ms.locfileid: "77633612"
 
 ## <a name="see-also"></a>另請參閱
 
-- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

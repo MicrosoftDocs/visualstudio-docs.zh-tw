@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 570c3c1cfa4ee42b0b7262b92fba3c936297387c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440274"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64826679"
 ---
 # <a name="c-library-reference"></a>C 程式庫參考
 本節包含並行視覺化檢視 SDK 的參考資訊。

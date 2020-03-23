@@ -10,10 +10,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 5a1c449a77e3000205ee81f5414949743b6035c4
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272271"
 ---
 # <a name="devops-with-unity-apps"></a>使用 Unity 應用程式進行 DevOps
@@ -40,7 +40,7 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 ## <a name="modeling"></a>模型化
 
-參考連結： **[分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)**
+參考連結：**[分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)**
 
 一般註解：雖然這些設計功能是獨立的編碼語言，或是使用 C# 之類的 .NET 語言，但它們是在具有物件階層和類別關聯性的傳統應用程式範例上運作。 在 Unity 內設計遊戲牽涉不同的範例 (即圖形物件、音效、著色器、指令碼等的關聯性)。 因此，Visual Studio 模型圖工具未特別與整個 Unity 專案相關。 它們可能用來管理 C# 指令碼內的關聯性，但那只是其中一項功能而已。
 
@@ -61,7 +61,7 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 |-------------|--------------------------|-------------------------|
 |[使用 Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) 或 Azure Repos|是|就像任何其他專案一樣，Unity 專案就只是一組可放入版本控制系統的檔案，但此表格後面將會說明一些特殊考量。|
 |[開始使用 Azure Repos 中的 Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|是|請參閱表格後面的注意事項。|
-|[改善程式碼品質](../test/improve-code-quality.md)|是||
+|[提高代碼品質](../test/improve-code-quality.md)|是||
 |[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)|是||
 |[使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)|是||
 
@@ -75,7 +75,7 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 ## <a name="build"></a>Build
 
-參考連結： **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
+參考連結：**[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
@@ -93,19 +93,19 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 |手動測試|是||
 |測試管理員 (錄製和播放測試)|僅限 Windows 裝置及 Android 模擬器||
 |程式碼涵蓋範圍|n/a|不適用，因為是在 Unity 內進行單元測試，而非 Visual Studio 內，請見下文。|
-|[對程式碼進行單元測試](../test/unit-test-your-code.md)|在 Unity 內，而非 Visual Studio 內|Unity 提供專屬單元測試架構做為 [Unity 測試工具](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store) 的一部分。 單元測試結果會在 Unity 內報告，但不會顯示在 Visual Studio 內。|
+|[單元測試代碼](../test/unit-test-your-code.md)|在 Unity 內，而非 Visual Studio 內|Unity 提供了自己的單元測試框架，作為[Unity 測試控管](https://www.assetstore.unity3d.com/en/#!/content/13802)（Unity 資產存儲）的一部分。 單元測試結果會在 Unity 內報告，但不會顯示在 Visual Studio 內。|
 |[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)|否|自動程式化 UI 測試會依賴應用程式 UI 中的可讀取控制項；Unity 應用程式在本質上是圖形，因此，自動程式化 UI 測試工具無法讀取內容。|
 
 ## <a name="improve-code-quality"></a>改善程式碼品質
 
-參考連結： **[改善程式碼品質](../test/improve-code-quality.md)**
+參考連結：**[提高代碼品質](../test/improve-code-quality.md)**
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
-|[分析受控程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md)|是|可以在 Visual Studio 內分析 C# 指令碼。|
+|[分析受控碼品質](../code-quality/code-analysis-for-managed-code-overview.md)|是|可以在 Visual Studio 內分析 C# 指令碼。|
 |[使用程式碼複製品偵測來尋找重複程式碼](https://msdn.microsoft.com/library/hh205279.aspx)|是|可以在 Visual Studio 內分析 C# 指令碼。|
 |[測量受控程式碼的複雜度和維護性](../code-quality/code-metrics-values.md)|是|可以在 Visual Studio 內分析 C# 指令碼。|
-|[效能工具](../profiling/performance-explorer.md)|否|使用 [Unity 分析工具 (英文)](https://docs.unity3d.com/Manual/Profiler.html) (Unity 網站)。|
+|[性能工具](../profiling/performance-explorer.md)|否|使用 [Unity 分析工具 (英文)](https://docs.unity3d.com/Manual/Profiler.html) (Unity 網站)。|
 |[分析 .NET Framework 記憶體問題](https://msdn.microsoft.com/library/dn342825.aspx)|否|Visual Studio 工具並不會為程式碼剖析而連結 Unity 所使用的 Mono 架構。 使用 [Unity 分析工具 (英文)](http://docs.unity3d.com/Manual/Profiler.html) (Unity 文件)。|
 
 ## <a name="release-management"></a>版本管理
@@ -120,7 +120,7 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 ## <a name="monitor-with-hockeyapp"></a>使用 HockeyApp 監視
 
-參考連結︰ **[使用 HockeyApp 監視 (英文)](https://www.hockeyapp.net/features/)**
+參考連結︰**[使用 HockeyApp 監視 (英文)](https://www.hockeyapp.net/features/)**
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|

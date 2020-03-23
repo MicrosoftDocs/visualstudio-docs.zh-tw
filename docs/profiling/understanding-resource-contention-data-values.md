@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f522d1854cae86d9dc6e757ef0c9a62f4511800
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779983"
 ---
 # <a name="understand-resource-contention-data-values"></a>了解資源爭用資料值
@@ -30,8 +30,8 @@ ms.locfileid: "74779983"
 
 資源爭用報表檢視也會包含一個時間軸圖形，顯示一段時間內的個別爭用事件，以及顯示建立特定事件的呼叫堆疊。 如需詳細資訊，請參閱下列其中一個主題：
 
-- [執行緒詳細資料檢視](../profiling/thread-details-view-contention-data.md)
+- [執行緒詳細資訊視圖](../profiling/thread-details-view-contention-data.md)
 
-- [資源詳細資料檢視](../profiling/resource-details-view-contention-data.md)
+- [資源詳細資訊視圖](../profiling/resource-details-view-contention-data.md)
 
 如需並行程式碼剖析第二個模式的詳細資訊，請參閱[並行視覺化檢視](../profiling/concurrency-visualizer.md)。

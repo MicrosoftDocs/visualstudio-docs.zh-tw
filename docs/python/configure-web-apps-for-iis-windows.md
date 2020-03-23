@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957368"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>為 IIS 設定 Python Web 應用程式
@@ -86,7 +86,7 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
     </system.webServer>
     ```
 
-1. 在 *web.config* 的 `<appSettings>` 區段內，新增 `WSGI_HANDLER`、`WSGI_LOG` (選擇性) 和 `PYTHONPATH` 的機碼：
+1. 在`<appSettings>` *Web.config*部分中，添加`WSGI_HANDLER`的`WSGI_LOG`鍵（可選）`PYTHONPATH`和 ：
 
     ```xml
     <appSettings>
@@ -119,7 +119,7 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
         <add key="WSGI_HANDLER" value="flask_iis_example.app"/>
         ```
 
-    - **Django**：Django 專案需要對 *web.config* 進行兩項變更。 第一，將 `WSGI_HANDLER` 值變更為 `django.core.wsgi.get_wsgi_application()` (此物件位於 *wsgi.py* 檔案中)：
+    - **Django**：Django 專案需要對 *web.config* 進行兩個變更。 第一，將 `WSGI_HANDLER` 值變更為 `django.core.wsgi.get_wsgi_application()` (此物件位於 *wsgi.py* 檔案中)：
 
         ```xml
         <!-- Django apps only -->
@@ -132,17 +132,17 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
         <add key="DJANGO_SETTINGS_MODULE" value="django_iis_example.settings" />
         ```
 
-1. **僅限 Django 應用程式**：在 Django 專案的 *settings.py* 檔案中，將您的網站 URL 網域或 IP 位址新增至 `ALLOWED_HOSTS` (如下所示)，並使用您的 URL 或 IP 位址取代 '1.2.3.4'：
+1. **僅 Django 應用程式**：在 Django 專案的 *settings.py* 檔案中，將您的網站 URL 網域或 IP 位址新增至 `ALLOWED_HOSTS` (如下所示)，並使用您的 URL 或 IP 位址取代 '1.2.3.4'：
 
     ```python
     # Change the URL or IP address to your specific site
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    若您未將 URL 新增至陣列，會導致下列錯誤：「不允許的主機/無效的 HTTP_HOST 標頭: '\<網站 URL\>'。您可能需要將 '\<網站 URL\>' 新增至 ALLOWED_HOSTS。」
+    無法將 URL 添加到陣列會導致錯誤 **"不允許在 /不正確主機HTTP_HOST標頭："\<網站 URL"。\>您可能需要向ALLOWED_HOSTS添加"\<網站 URL"。\> **
 
     請注意，當陣列為空時，Django 會自動允許 'localhost' 和 '127.0.0.1'，但新增您的生產環境 URL 將會移除這些功能。 基於此原因，您可能會想要個別維護 *settings.py* 的開發和生產版本，或使用環境變數來控制執行階段值。
 
 ## <a name="deploy-to-iis-or-a-windows-vm"></a>部署至 IIS 或 Windows VM
 
-如果在專案中使用正確的 *web.config* 檔案，您就可以在 [方案總管]中，使用專案操作功能表上的 [發佈] 命令，然後選取選項 **IIS、FTP 等**，發佈至執行 IIS 的電腦。 在此案例中，Visual Studio 只會將專案檔案複製到伺服器，您要負責所有伺服器端設定。
+如果在專案中使用正確的 *web.config* 檔案，您就可以在 [方案總管]**** 中，使用專案操作功能表上的 [發佈]**** 命令，然後選取選項 **IIS、FTP 等**，發佈至執行 IIS 的電腦。 在此案例中，Visual Studio 只會將專案檔案複製到伺服器，您要負責所有伺服器端設定。

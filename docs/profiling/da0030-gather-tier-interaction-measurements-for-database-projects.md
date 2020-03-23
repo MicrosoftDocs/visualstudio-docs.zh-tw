@@ -14,21 +14,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 26b0905882ef8ec2e3fcddc4cf699ecae7dbe7a4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777472"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：收集資料庫專案的階層互動度量
 
 |||
 |-|-|
-|規則識別碼|DA0030|
-|Category|分析工具使用方式|
+|規則 ID|DA0030|
+|類別|分析工具使用方式|
 |程式碼剖析方法|取樣|
 |訊息|收集多層應用程式的互動度量可協助您了解資料庫使用模式和關鍵資料存取延遲。 請嘗試在啟用 [階層互動分析] 選項的情況下再次分析應用程式。|
-|規則類型|資訊|
+|規則型別|資訊|
 
 ## <a name="cause"></a>原因
  <xref:System.Data> 方法呼叫大部分是分析資料，您還不會在執行分析中收集階層互動資料。 請考慮再次進行分析，並加入階層互動資料。
