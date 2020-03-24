@@ -2,22 +2,24 @@
   href: index.yml
 - name: 分析受控程式碼
   items:
-    - name: 總覽
+    - name: 概觀
       href: code-analysis-for-managed-code-overview.md
     - name: 原始程式碼分析
       expanded: true
       items:
-        - name: 總覽
+        - name: 概觀
           displayName: 'roslyn analyzers, source analysis'
           href: roslyn-analyzers-overview.md
         - name: 安裝原始程式碼分析器
           href: install-roslyn-analyzers.md
         - name: 設定原始程式碼分析器
           href: use-roslyn-analyzers.md
+        - name: 即時程式碼分析範圍
+          href: configure-live-code-analysis-scope-managed-code.md
+        - name: 手動執行程式碼分析
+          href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: 停用程式碼分析
           href: disable-code-analysis.md
-        - name: 啟用完整解決方案分析
-          href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: 常見問題集
           href: analyzers-faq.md
         - name: FxCop 分析器
@@ -42,7 +44,7 @@
                   href: analyzer-rule-sets.md
     - name: 舊版分析
       items:
-        - name: 總覽
+        - name: 概觀
           displayName: 'static code analysis, binary analysis'
           href: static-code-analysis-for-managed-code-overview.md
         - name: 舊版分析逐步解說
@@ -50,8 +52,8 @@
         - name: 移轉到 FxCop 分析器
           href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: 手動執行程式碼分析
-          href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: 設定
+          href: how-to-run-legacy-code-analysis-manually-for-managed-code.md
+        - name: 組態
           items:
             - name: 設定舊版分析
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -67,7 +69,7 @@
           items:
             - name: 舊版分析原則錯誤
               href: code-analysis-policy-errors.md
-            - name: 總覽
+            - name: 概觀
               href: code-analysis-application-errors.md
             - name: CA0001
               href: ca0001.md
@@ -137,7 +139,7 @@
               href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: 規則集
       items:
-        - name: 總覽
+        - name: 概觀
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: 設定規則集
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -147,18 +149,18 @@
           href: working-in-the-code-analysis-rule-set-editor.md
     - name: 程式碼度量
       items:
-        - name: 總覽
+        - name: 概觀
           displayName: code metrics
           href: code-metrics-values.md
         - name: 產生程式碼度量資料
           href: how-to-generate-code-metrics-data.md
         - name: 使用程式碼度量資料
           href: working-with-code-metrics-data.md
-    - name: 參考資料
+    - name: 參考
       items:
         - name: 規則集
           items:
-            - name: 總覽
+            - name: 概觀
               href: rule-set-reference.md
             - name: 所有規則
               href: all-rules-rule-set.md
@@ -190,13 +192,13 @@
           href: in-source-suppression-overview.md
         - name: 受控程式碼警告
           items:
-            - name: 總覽
+            - name: 概觀
               href: code-analysis-for-managed-code-warnings.md
             - name: 依據 CheckId 列出警告
               href: code-analysis-warnings-for-managed-code-by-checkid.md
             - name: 密碼編譯警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: cryptography warnings
                   href: cryptography-warnings.md
                 - name: CA5350：請勿使用弱式密碼編譯演算法
@@ -205,7 +207,7 @@
                   href: ca5351.md
             - name: 設計警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: design warnings
                   href: design-warnings.md
                 - name: CA1000：不要在泛型類型上宣告靜態成員
@@ -336,14 +338,14 @@
                   href: ca2210.md
             - name: 文件警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: documentation warnings
                   href: documentation-warnings.md
                 - name: CA1200：請避免使用具有前置詞的 cref 標記
                   href: ca1200.md
             - name: 全球化警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: globalization warnings
                   href: globalization-warnings.md
                 - name: 'CA1300:必須指定 MessageBoxOptions'
@@ -370,7 +372,7 @@
                   href: ca2101.md
             - name: 互通性警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: interoperability warnings
                   href: interoperability-warnings.md
                 - name: 'CA1400:P-Invoke 進入點應該要存在'
@@ -407,7 +409,7 @@
                   href: ca1415.md
             - name: 維護性警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: maintainability warnings
                   href: maintainability-warnings.md
                 - name: 'CA1500:變數名稱不應該與欄位名稱相符'
@@ -426,7 +428,7 @@
                   href: ca1507.md
             - name: 行動性警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: mobility warnings
                   href: mobility-warnings.md
                 - name: 'CA1600:不要使用 Idle 處理序優先順序'
@@ -435,7 +437,7 @@
                   href: ca1601.md
             - name: 命名警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: naming warnings
                   href: naming-warnings.md
                 - name: 'CA1700:不要在列舉值名稱中包含 ''Reserved'''
@@ -486,7 +488,7 @@
                   href: ca1726.md
             - name: 效能警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: performance warnings
                   href: performance-warnings.md
                 - name: 'CA1800:不要執行不必要的轉換'
@@ -531,7 +533,7 @@
                   href: ca1825.md
             - name: 可攜性警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: portability warnings
                   href: portability-warnings.md
                 - name: 'CA1900:實值類型欄位應該為可移植的'
@@ -542,7 +544,7 @@
                   href: ca1903.md
             - name: 可靠性警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: reliability warnings
                   href: reliability-warnings.md
                 - name: 'CA2000:必須在超出範圍前處置物件'
@@ -561,7 +563,7 @@
                   href: ca2007.md
             - name: 安全性警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: security warnings
                   href: security-warnings.md
                 - name: 'CA2100:必須檢閱 SQL 查詢中是否有安全性弱點'
@@ -754,7 +756,7 @@
                   href: ca5403.md
             - name: 用法警告
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: usage warnings
                   href: usage-warnings.md
                 - name: 'CA1801:必須檢閱未使用的參數'
