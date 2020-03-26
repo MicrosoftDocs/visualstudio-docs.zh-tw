@@ -42,12 +42,12 @@
                 - name: 模型架構
                   tocHref: /visualstudio/modeling/
                   topicHref: /visualstudio/modeling/analyze-and-model-your-architecture
-                - name: 分析
+                - name: 程式碼剖析
                   tocHref: /visualstudio/profiling/
                   topicHref: /visualstudio/profiling/index
                 - name: 測試
                   tocHref: /visualstudio/test/
-                  topicHref: /visualstudio/test/improve-code-quality
+                  topicHref: /visualstudio/test/index
                 - name: 工作流程設計工具
                   tocHref: /visualstudio/workflow-designer/
                   topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
@@ -74,7 +74,7 @@
                   tocHref: /visualstudio/extensibility/debugger/
                   topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
                   items:
-                    - name: 參考
+                    - name: 參考資料
                       tocHref: /visualstudio/extensibility/debugger/reference/
                       topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
                 - name: 使用者體驗指南
