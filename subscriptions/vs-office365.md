@@ -1,17 +1,18 @@
 ---
 title: 辦公室 365 專業加優惠 |微軟文檔
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 08/02/2019
+ms.assetid: 9c70adf7-7d1b-4322-8e34-9149e8735a13
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: 瞭解某些 Visual Studio 訂閱中包含的 Office 365 專業版優勢。
-ms.openlocfilehash: 4f8ad514cae626e824171937cd627b110980dbca
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: ce0527fbf4912ed55ed99f9368c8f10dde68a091
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "77904148"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301920"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365 Pro Plus
 
@@ -84,7 +85,7 @@ ms.locfileid: "77904148"
 
 ## <a name="next-steps"></a>後續步驟
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
-- [Visualstudio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure 開發人員測試單個信用](vs-azure.md)如果您計畫為 Office 開發應用程式，則需要啟動[Office 開發人員訂閱](vs-office-dev.md)
 
