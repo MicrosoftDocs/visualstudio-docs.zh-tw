@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 688a446fbbaf1c2c56b9304576224a70f71064d8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a2d23620a1861396971c79551088b898c9b77c86
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79550107"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233101"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入門：初步認識分析工具
 
@@ -74,9 +74,9 @@ PerfTips 顯示診斷工具**的事件**視圖中也顯示的相同事件。 在
 
 ## <a name="analyze-memory-usage"></a>分析記憶體使用量
 
-"**診斷工具"** 視窗還允許您評估應用中的記憶體使用方式。 例如，您可以查看堆積的物件數目和大小。 有關分析記憶體的更多詳細說明，請參閱[分析記憶體使用方式](../profiling/memory-usage.md)。
+"**診斷工具"** 視窗還允許您使用 **"記憶體使用方式**"工具評估應用中的記憶體使用方式。 例如，您可以查看堆積的物件數目和大小。 有關分析記憶體的更多詳細說明，請參閱[分析記憶體使用方式](../profiling/memory-usage.md)。 另一個記憶體分析工具[.NET 物件分配工具](../profiling/dotnet-alloc-tool.md)可説明您識別 .NET 代碼中的分配模式和異常。
 
-要在調試時分析記憶體使用方式，需要至少拍攝一個記憶體快照。 通常，分析記憶體的最佳方式是擷取兩個快照：第一個快照是在可能發生記憶體問題之前擷取，第二個快照則是緊接在可能發生記憶體問題之後擷取。 然後您可以檢視兩個快照的差異，並查看其中到底有什麼變更。
+要使用調試器集成的記憶體使用方式分析記憶體使用方式，至少需要拍攝一個記憶體快照。 通常，分析記憶體的最佳方式是擷取兩個快照：第一個快照是在可能發生記憶體問題之前擷取，第二個快照則是緊接在可能發生記憶體問題之後擷取。 然後您可以檢視兩個快照的差異，並查看其中到底有什麼變更。
 
 ![在診斷工具中拍攝快照](../profiling/media/prof-tour-take-snapshots.gif "診斷工具 拍攝快照")
 

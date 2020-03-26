@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 16ba88a11acd488ba70096e0b394a734e65011f5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cad3a644935e14a605dbef02bddc1f9337c1f5e9
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549902"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233088"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.run 設置*檔配置單元測試
 
@@ -259,6 +259,7 @@ ms.locfileid: "79549902"
 |**TestAdaptersPaths**||TestAdapters 所在目錄的一或多個路徑|
 |**最大CpuCount**|1|此設定會使用電腦上的可用核心，在執行單元測試時控制平行測試執行的程度。 測試執行引擎會在各個可用核心上作為不同的處理序啟動，並將要執行測試的容器提供給每個核心。 容器可以是組件、DLL 或相關成品。 測試容器是排程單元。 在每個容器中，會根據測試架構執行測試。 如果有許多容器，當處理序執行完容器中的測試時，就會將下一個可用的容器提供給處理序。<br /><br />MaxCpuCount 可以是：<br /><br />n，其中 1 <= n <= 核心數目：最多會啟動 n 個處理序<br /><br />n，其中 n = 任何其他值：啟動的進程數可以高達可用內核數。 例如，設置 n_0 以讓平臺根據環境自動決定要啟動的進程的最佳數量。|
 |**TestSessionTimeout**||當測試工作階段超過指定的逾時之時，允許使用者終止測試工作階段。 設定逾時可確保資源能被充分取用，且可將測試工作階段限制在設定的時間內。 **Visual Studio 2017 15.5** 版和更新版本提供這項設定。|
+|**點網主機路徑**||指定用於運行測試主機的 dotnet 主機的自訂路徑。 這在構建自己的 dotnet 時非常有用，例如，在構建 dotnet/運行時存儲庫時。 指定此選項將跳過查找 testhost.exe，並且將始終使用 testhost.dll。 
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>診斷資料配接器 (資料收集器)
 

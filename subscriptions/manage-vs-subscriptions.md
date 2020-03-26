@@ -3,15 +3,16 @@ title: 管理 Visual Studio 訂閱
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
-ms.openlocfilehash: 97220a64c72d37d53eccbaba5c8e79697f2f25ab
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79303369"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232363"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 

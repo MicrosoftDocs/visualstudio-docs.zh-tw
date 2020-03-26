@@ -3,15 +3,16 @@ title: 如何啟用 Microsoft Store 中購買的 Visual Studio 訂用帳戶 | Mi
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 4183a0f4-6f0b-42f4-8460-0d000e21bb16
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: 了解如何啟用 Microsoft Store 中購買的 Visual Studio 訂用帳戶。
-ms.openlocfilehash: c872dd738b1b27620bf988e74bcc03631ce8b037
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e0a43b203ad47da83b7734cf7a3eb6465b5e9b37
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78894406"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232768"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>如何啟用從 Microsoft Store 取得的訂用帳戶？
 如果您是透過 Microsoft Store 購買 Visual Studio 訂用帳戶，則可以從付款 [確認頁面] 或購買後您所收到的 [確認電子郵件] 起始啟用步驟。

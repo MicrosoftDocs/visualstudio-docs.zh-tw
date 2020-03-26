@@ -2,7 +2,7 @@
 title: 將 Visual Studio Build Tools 安裝至容器
 titleSuffix: ''
 description: 了解如何將 Visual Studio Build Tools 安裝至 Windows 容器，以便支援持續整合與持續傳遞 (CI/CD) 工作流程。
-ms.date: 07/03/2019
+ms.date: 03/25/2020
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 53049d37f23a72adb337cdad629f4c689c83707e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 61ec972bd5e361c4417e49092de5976000a6da5f
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114614"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273890"
 ---
 # <a name="install-build-tools-into-a-container"></a>將 Build Tools 安裝至容器
 
@@ -71,22 +71,24 @@ ms.locfileid: "76114614"
    # Download the Build Tools bootstrapper.
    ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
-   # Install Build Tools excluding workloads and components with known issues.
+   # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
    RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
        --installPath C:\BuildTools `
-       --all `
+       --add Microsoft.VisualStudio.Workload.AzureBuildTools `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
        --remove Microsoft.VisualStudio.Component.Windows81SDK `
     || IF "%ERRORLEVEL%"=="3010" EXIT 0
 
-   # Start developer command prompt with any other commands specified.
-   ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
-
-   # Default to PowerShell if no other command specified.
-   CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+   # Define the entry point for the Docker container.
+   # This entry point starts the developer command prompt and launches the PowerShell shell.
+   ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
+
+   > [!TIP]
+   > 有關工作負載和元件的清單，請參閱[視覺化工作室構建工具元件目錄](workload-component-id-vs-build-tools.md)。
+   >
 
    > [!WARNING]
    > 如果您是直接以 microsoft/windowsservercore 或 mcr.microsoft.com/windows/servercore 作為映像的基礎 (請參閱 [Microsoft 同步發佈容器目錄](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/) \(英文\))，.NET Framework 可能會無法正確安裝，且不會指出任何安裝錯誤。 安裝完成之後，可能無法執行受控碼。 相反地，讓您的映像以 [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) 或更新版本為基礎。 另請注意，標記為 4.7.2 或更新版的映像可能會使用 PowerShell 作為預設 `SHELL`，導致 `RUN` 和 `ENTRYPOINT` 指令失敗。
@@ -94,7 +96,7 @@ ms.locfileid: "76114614"
    > Visual Studio 2017 15.8 或更早版本 (任何產品) 無法在 mcr.microsoft.com/windows/servercore:1809 (或更新版本) 上正確安裝。 不會顯示錯誤。
    >
    > 請參閱 [Windows 容器版本相容性](/virtualization/windowscontainers/deploy-containers/version-compatibility) \(部分機器翻譯\) 以查看各種主機 OS 版本所支援的容器 OS 版本，並參閱[容器的已知問題](build-tools-container-issues.md)以了解已知問題。
-
+   
    ::: moniker-end
 
    ::: moniker range="vs-2019"
@@ -111,22 +113,24 @@ ms.locfileid: "76114614"
    # Download the Build Tools bootstrapper.
    ADD https://aka.ms/vs/16/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
-   # Install Build Tools excluding workloads and components with known issues.
+   # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
    RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
        --installPath C:\BuildTools `
-       --all `
+       --add Microsoft.VisualStudio.Workload.AzureBuildTools `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
        --remove Microsoft.VisualStudio.Component.Windows81SDK `
     || IF "%ERRORLEVEL%"=="3010" EXIT 0
 
-   # Start developer command prompt with any other commands specified.
-   ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
-
-   # Default to PowerShell if no other command specified.
-   CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+   # Define the entry point for the docker container.
+   # This entry point starts the developer command prompt and launches the PowerShell shell.
+   ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
+
+   > [!TIP]
+   > 有關工作負載和元件的清單，請參閱[視覺化工作室構建工具元件目錄](workload-component-id-vs-build-tools.md)。
+   >
 
    > [!WARNING]
    > 如果您讓映像直接以 microsoft/windowsservercore 為基礎，.NET Framework 可能無法正確安裝且不會指出任何安裝錯誤。 安裝完成之後，可能無法執行受控碼。 相反地，讓您的映像以 [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) 或更新版本為基礎。 另請注意，標記為 4.8 或更新版的映像可能會使用 PowerShell 作為預設 `SHELL`，導致 `RUN` 和 `ENTRYPOINT` 指令失敗。
@@ -189,6 +193,15 @@ ms.locfileid: "76114614"
    ::: moniker-end
 
 若要將此映像用於您的 CI/CD 工作流程，您可以將其發佈至自己的 [Azure 容器登錄](https://azure.microsoft.com/services/container-registry)或其他內部 [Docker 登錄](https://docs.docker.com/registry/deploying)，讓伺服器只需要加以提取。
+
+   > [!NOTE]
+   > 如果 Docker 容器無法啟動，則可能是 Visual Studio 安裝問題。 您可以更新 Dockerfile 以刪除調用 Visual Studio 批次處理命令的步驟。 這使您能夠啟動 Docker 容器並讀取安裝錯誤日誌。
+   >
+   > 在 Dockerfile 檔中，從`C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat``&&``ENTRYPOINT`命令中刪除 和 參數。 該命令現在應為`ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]`。 接下來，重建 Dockerfile 並執行`run`命令以訪問容器檔案。 要查找安裝錯誤日誌，`$env:TEMP`請轉到目錄並找到該檔。 `dd_setup_<timestamp>_errors.log`
+   >
+   > 確定並修復安裝問題後，可以將`C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat`和`&&`參數添加回`ENTRYPOINT`命令並重新生成 Dockerfile。
+   >
+   > 如需詳細資訊，請參閱[容器的已知問題](build-tools-container-issues.md)。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

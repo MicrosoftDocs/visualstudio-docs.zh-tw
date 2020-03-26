@@ -1,17 +1,18 @@
 ---
 title: Azure PAYG 權益
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: 了解如何設定 Azure 隨用隨付帳戶。
-ms.openlocfilehash: 23ea1f76fabfa2e9240e040e879f3a497b36f4c3
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79550327"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80231976"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure 開發人員測試即用即付訂閱
 在雲端與您的小組共同作業。  建立多個開發和測試隨用隨付訂用帳戶，讓您能夠與其他訂閱者共同作業，同時為小組與環境提供適時的隔離。  您會收到專屬的 Azure 訂用帳戶軟體開發/測試和雲端使用權限的每小時折扣費率。

@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 瞭解管理員如何使用大量新增功能或 Microsoft Azure 活動目錄組向多個訂閱者分配許可證
-ms.openlocfilehash: 3a4a6c400a17d52cdd67391a45ba088cdbb7af01
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988482"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274059"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
@@ -104,6 +104,10 @@ ms.locfileid: "79988482"
 7. 要查看添加的組，請滾動到使用者清單的底部。  
 
 8. 選擇 **"查看訂閱者**"以顯示組的成員。 您可以查看有關組中訂閱者的詳細資訊，但不能對訂閱者或分配的訂閱進行任何編輯。    
+
+> [!NOTE]
+> 如果已單獨為隨後添加為 Azure AD 組的一部分的使用者分配了訂閱，則這些訂閱將作為組的一部分添加，並且將不再單獨列出。 但是，如果單個訂閱針對不同的訂閱級別，則它們將有兩個訂閱。  示例：如果使用者具有單獨的 Visual Studio 專業訂閱，並且他們是您為其分配 Visual Studio 企業版訂閱的組的成員，則他們將同時擁有這兩個訂閱。  
+
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 

@@ -3,15 +3,16 @@ title: 在 Visual Studio 訂用帳戶中尋找及索取產品金鑰 |Microsoft D
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何在 Visual Studio 訂用帳戶中尋找、索取及匯出產品金鑰
-ms.openlocfilehash: 984a89f5085867ea7b23735d05d0e22ef51dcfdb
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 3946388669533a59176dc79cd72f238994a0a01b
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78937498"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232491"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中尋找及索取產品金鑰
 本文說明如何從 https://my.visualstudio.com/productkeys 尋找、索取及匯出產品金鑰。  如需使用金鑰、零售和大量授權版本的金鑰來啟用產品，以及每日產品金鑰索取限制的詳細資訊，請瀏覽[產品金鑰概觀](product-keys.md)。

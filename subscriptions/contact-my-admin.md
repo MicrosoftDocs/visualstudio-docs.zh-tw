@@ -3,15 +3,16 @@ title: 從訂閱者入口網站連絡您的訂用帳戶管理員
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: conceptual
 description: 了解如何連絡您的訂用帳戶管理員以協助解決問題。
-ms.openlocfilehash: 20122b94d59b7b2c3fbe437531cd439341e6b2dd
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b203feee61bf44af99ea802992e1fdc3c416c037
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78937545"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232626"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>從訂閱管理員處獲取説明
 如果您的 Visual Studio 訂用帳戶是由公司或學校提供給您，則其可能是由訂用帳戶管理員 (或「管理員」) 指派給您。  管理員可以指派或移除訂用帳戶、變更登入電子郵件地址、判斷您是否能夠下載軟體，以及執行與訂用帳戶相關的其他功能。
@@ -43,7 +44,7 @@ ms.locfileid: "78937545"
 ## <a name="next-steps"></a>後續步驟
 如果您尚未這麼做，建議您啟用這些權益，以充分利用您的 Visual Studio 訂用帳戶：
 - [Visual Studio IDE](vs-ide-benefit.md)
-- [蔚藍](vs-azure.md)
+- [Azure](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
 
 您可以在 https://my.visualstudio.com/benefits 找到這些權益及更多權益。

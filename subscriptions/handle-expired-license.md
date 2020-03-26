@@ -3,15 +3,16 @@ title: 處理到期的授權 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 2b8a4ad5-e5b3-48a3-bb65-23a5cd3f22e9
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 了解系統管理員可以如何處理過期的 Visual Studio 訂閱
-ms.openlocfilehash: 4871e6dde340c462d01a1dec58b5687233c56702
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 50fffc186ab3135077418eb29f849918db664290
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263197"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232481"
 ---
 # <a name="expired-subscriptions"></a>過期的訂用帳戶
 當使用者的訂用帳戶到期時，在入口網站中會以紅色長條在訂閱者清單中的使用者名稱旁邊表示。 若要讓這些訂閱者可以繼續使用 Visual Studio 訂閱權益，您必須更新他們的授權。

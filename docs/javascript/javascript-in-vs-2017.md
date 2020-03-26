@@ -10,21 +10,21 @@ dev_langs:
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
-ms.author: wilkelly
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75b2a336cf9a229b4834b68e0f7bed5d6b1174f4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78234952"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233075"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
 JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio IDE 中撰寫 JavaScript 程式碼時，可以使用大部分或所有標準編輯輔助，包括程式碼片段、IntelliSense 等等。 您可以為許多應用程式類型和服務撰寫 JavaScript 程式碼。
 
 > [!NOTE]
-> 我們已投入整個社群的努力使 [MDN Web 文件](https://developer.mozilla.org/en-US/)成為 Web 上一應俱全的一流開發資源，方法是將 docs.microsoft.com 中的所有 (500 以上的頁面) Microsoft JavaScript API 參考重新導向至其 MDN 對應項目。 如需詳細資料，請參閱本[宣告](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)。
+> 我們加入了全社區的努力，通過將 Microsoft JavaScript API 引用的所有（500 多頁）從docs.microsoft.com重定向到其 MDN 對應項，使[MDN Web 文檔](https://developer.mozilla.org/en-US/)成為 Web 的一站式開發資源。 如需詳細資料，請參閱本[宣告](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)。
 
 ## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> ECMAScript 2015 (ES6) 和更新版本的支援
 

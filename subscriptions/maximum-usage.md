@@ -3,15 +3,16 @@ title: 使用管理入口網站中的 [使用量上限] 功能
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 了解如何在管理入口網站中檢視已指派的訂用帳戶數目上限
-ms.openlocfilehash: 9d9aa2d83a84fcdecf1749e3730d43dabf7bd52d
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 3f62c251262bc16f8f214c6f7bcc22674c7430b2
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78410312"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232263"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>使用最大使用功能跟蹤分配的訂閱數
 Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤曾購買和指派的訂用帳戶數量，並識別過去一年和整個合約持續時間內，每個層級曾指派的訂用帳戶尖峰數目。 

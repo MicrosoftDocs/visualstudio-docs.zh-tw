@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b05787802b72eb4d14e1b2b56765bb246b9ada51
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578337"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256240"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>分析記憶體使用量 (不使用偵錯工具)
 
@@ -89,13 +89,13 @@ ms.locfileid: "77578337"
 
 如果 [物件類型]**** 是藍色，則您可以選取它以在個別視窗中巡覽至原始程式碼中的物件。
 
-您無法辨識或不了解其在程式碼中參與情況的類型，可能是 .NET Framework、作業系統或編譯器物件。 [記憶體使用量]**** 工具會顯示這些物件，如果它們參與您物件的擁有權鏈結。
+無法識別或無法理解的代碼參與的類型可能是 .NET、作業系統或編譯器物件。 [記憶體使用量]**** 工具會顯示這些物件，如果它們參與您物件的擁有權鏈結。
 
 在快照報表中：
 
 - [受控堆積]**** 樹狀結構顯示報表中的類型和執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑]**** 和 [參考的物件]**** 樹狀目錄。
 
-- "**路徑到根"** 樹顯示參考型別或實例的物件鏈。 .NET Framework 記憶體回收行程只會在對物件的所有參考都已釋放時才清除物件的記憶體。
+- "**路徑到根"** 樹顯示參考型別或實例的物件鏈。 .NET 垃圾回收器僅在釋放對物件的所有引用時才清理物件的記憶體。
 
 - [參考的類型]**** 或 [參考的物件]**** 樹狀結構顯示所選取類型或執行個體參考的物件。
 
@@ -135,7 +135,7 @@ ms.locfileid: "77578337"
 |**模組**|包含物件的模組。|
 
 ### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> [根的路徑] 樹狀結構 (快照詳細資料報表)
-[根的路徑]**** 樹狀結構顯示參考類型或執行個體的物件鏈結。 .NET Framework 記憶體回收行程只會在對物件的所有參考都已釋放時才清除物件的記憶體。
+[根的路徑]**** 樹狀結構顯示參考類型或執行個體的物件鏈結。 .NET 垃圾回收器僅在釋放對物件的所有引用時才清理物件的記憶體。
 
 針對 [根的路徑]**** 樹狀結構中的類型，會在 [參考計數]**** 資料行顯示保有該類型參考的物件數目。
 
@@ -185,7 +185,7 @@ ms.locfileid: "77578337"
 
 ### <a name="paths-to-root-tree-snapshot-diff-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> [根的路徑] 樹狀結構 (快照差異報表)
 
-[根的路徑]**** 樹狀結構顯示參考類型或執行個體的物件鏈結。 .NET Framework 記憶體回收行程只會在對物件的所有參考都已釋放時才清除物件的記憶體。
+[根的路徑]**** 樹狀結構顯示參考類型或執行個體的物件鏈結。 .NET 垃圾回收器僅在釋放對物件的所有引用時才清理物件的記憶體。
 
 針對 [根的路徑]**** 樹狀結構中的類型，會在 [參考計數]**** 資料行顯示保有該類型參考的物件數目。 與上一個快照的計數差異位在 [參考差異]**** 資料行中。
 

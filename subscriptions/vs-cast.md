@@ -1,17 +1,18 @@
 ---
 title: Visual Studio 訂用帳戶的 CAST Highlight 權益 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CAST Highlight 權益
-ms.openlocfilehash: 7b06800bd53e2843015f3f3509a4a2c7e0eae671
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: f3f21a29e8ad710471eddadfbd5c98677db3098e
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78257172"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274020"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 CAST Highlight 權益
 在移轉至雲端時，開發人員需要掌握其軟體的重要見解。 借助 CAST 突出顯示，Visual Studio 訂閱者可以快速掃描其應用程式原始程式碼，以確定其應用程式的雲就緒性，以便遷移到 Azure，並在遷移期間和之後監視其應用的進度。

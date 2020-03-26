@@ -3,15 +3,16 @@ title: 匯出訂用帳戶資訊 |Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 了解如何匯出訂閱者清單和其訂閱指派的詳細資料。
-ms.openlocfilehash: a7e6f6040daca541a689f1e4ad6297e17014dbed
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: dd24e9deb6225b3a8b88a461904fefb42ba4a912
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263212"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232502"
 ---
 # <a name="export-subscription-information"></a>匯出訂用帳戶資訊
 在視覺化工作室訂閱[監管中心](https://manage.visualstudio.com)中，您可以匯出訂閱者的清單及其分配的詳細資訊。 此資訊包括其名稱、電子郵件地址、替代電子郵件地址、訂用帳戶層級、指派日期、啟用狀態、到期日、參考欄位、是否啟用下載、國家/地區、語言、訂用帳戶狀態，以及訂用帳戶 GUID。  該清單匯出為 CSV 檔，可以輕鬆地在 Microsoft Excel 中打開該檔，用於創建圖表、資料透視和其他工件。

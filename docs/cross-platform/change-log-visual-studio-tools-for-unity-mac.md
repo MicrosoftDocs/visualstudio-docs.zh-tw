@@ -10,16 +10,84 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5599153f79b273249e93c48aaa197214d92f5fe7
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771539"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232912"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>變更記錄檔 (Visual Studio Tools for Unity，Mac)
 
 Visual Studio Tools for Unity 變更記錄。
+
+## <a name="2520"></a>2.5.2.0
+
+2020 年 3 月 23 日發佈
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **調試：**
+
+  - 修復了連接時執行緒的註冊。
+
+## <a name="2510"></a>2.5.1.0
+
+2020 年 3 月 3 日發佈
+
+### <a name="new-features"></a>新功能
+
+- **集成：**
+
+  - 添加了[`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md)的抑制器。 與調用、調用重複、StartCo 常式或 StopCo 常式一起使用的私有方法不應標記為未使用。
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 固定上拉迪斯莫斯/OnDrawGizmos 選定文檔
+
+- **評價：**
+
+  - 固定 lambda 參數檢查。
+
+## <a name="2501"></a>2.5.0.1
+
+2020 年 2 月 19 日發佈
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 修復了[`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md)郵件簽名不正確的診斷檢查。 當檢查具有多個繼承級別的類型時，此診斷可能會失敗，以下消息： `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`。
+
+## <a name="2500"></a>2.5.0.0
+
+2020 年 1 月 22 日發佈
+
+### <a name="new-features"></a>新功能
+
+- **集成：**
+
+  - 添加了對 HLSL 檔的支援。
+  
+  - 切換到新的資料夾對話方塊 UI。
+  
+  - 切換到新的可訪問屬性網格進行設置。
+
+  - 添加了[`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md)的抑制器。 不應將具有該`SerializeField`屬性的私有欄位標記為未使用。
+
+  - 添加了[`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md)的抑制器。 不應將具有`SerializeField`屬性的欄位標記為未分配。  
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 固定專案生成（`GenerateTargetFrameworkMonikerAttribute`目標並不總是正確定位）
+
+- **評價：**
+
+  - 固定字串計算（不使用 ToString（） 調用）
 
 ## <a name="2420"></a>2.4.2.0
 

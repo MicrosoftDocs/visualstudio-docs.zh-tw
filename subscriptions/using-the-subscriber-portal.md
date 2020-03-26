@@ -1,17 +1,18 @@
 ---
 title: 使用訂閱者入口網站 - https://my.visualstudio.com | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶入口網站上提供給您的完整權益
-ms.openlocfilehash: 13266e018f122ae2b890e8c92bff71ce3016de75
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5403880dc5a2ac62cd23800cea5acacd2766bc6f
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75546222"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232191"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>使用訂閱者入口網站 - my.visualstudio.com
 
@@ -51,6 +52,12 @@ Visual Studio 訂閱門戶[https://my.visualstudio.com](https://my.visualstudio.
 ## <a name="marketplace"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
 是否需要更新 Visual Studio 雲端訂閱？  想要下載適用於 Visual Studio 產品系列的最新擴充功能？  Marketplace 可協助使用者尋找延伸模組、工具與服務，以進一步改進 Azure DevOps、Azure DevOps Server 與 Visual Studio Code。 您甚至可以成為發行者，並將自己的擴充功能發行到 Marketplace 上。
+
+## <a name="see-also"></a>另請參閱
+- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 登錄門戶[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)並查看您的權益。  您也可以深入了解如何使用 [Microsoft 帳戶](sign-in-msa.md) (MSA)、[公司或學校帳戶](sign-in-work.md)，甚至是 [GitHub 帳戶](sign-in-github.md)登入入口網站。 

@@ -1,7 +1,7 @@
 ---
 title: 變更記錄檔 (Visual Studio Tools for Unity，Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 12/02/2019
+ms.date: 3/23/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,66 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0b1d735cd05f79eaabd00a575a6c050b37ce2d16
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74706789"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232828"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>變更記錄檔 (Visual Studio Tools for Unity，Windows)
 
 Visual Studio Tools for Unity 變更記錄。
+
+## <a name="4510"></a>4.5.1.0
+
+2020 年 3 月 16 日發佈
+
+### <a name="new-features"></a>新功能
+
+- **集成：**
+
+  - 添加了[`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md)的抑制器。 與調用、調用重複、StartCo 常式或 StopCo 常式一起使用的私有方法不應標記為未使用。
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 固定上拉迪斯莫斯/OnDrawGizmos 選定文檔
+
+- **評價：**
+
+  - 固定 lambda 參數檢查。
+
+## <a name="4501"></a>4.5.0.1
+
+2020 年 2 月 19 日發佈
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 修復了[`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md)郵件簽名不正確的診斷檢查。 當檢查具有多個繼承級別的類型時，此診斷可能會失敗，以下消息： `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`。
+
+## <a name="4500"></a>4.5.0.0
+
+2020 年 1 月 22 日發佈
+
+### <a name="new-features"></a>新功能
+
+- **集成：**
+
+  - 添加了對 HLSL 檔的支援。
+  
+  - 添加了[`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md)的抑制器。 不應將具有該`SerializeField`屬性的私有欄位標記為未使用。
+  
+  - 添加了[`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md)的抑制器。 不應將具有`SerializeField`屬性的欄位標記為未分配。  
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 固定專案生成（`GenerateTargetFrameworkMonikerAttribute`目標並不總是正確定位）
 
 ## <a name="4420"></a>4.4.2.0
 
@@ -49,7 +99,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - **集成：**
 
-  - 修復了具有高級二進位`UNT0002`和調用運算式的標記比較分析器。
+  - 修復了具有高級二進位[`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0002.md)和調用運算式的標記比較分析器。
 
 ### <a name="deprecated-features"></a>已被取代的功能
 
@@ -65,7 +115,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - **集成：**
 
-  - 為所有 Unity 消息`IDE0060`添加了（未使用的參數）抑制器。
+  - 為所有 Unity 消息[`IDE0060`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md)添加了（未使用的參數）抑制器。
   
   - 為 標記為`TooltipAttribute`的欄位添加了快速工具提示。 （這將適用于使用此欄位的簡單獲取訪問器）。
 
@@ -88,21 +138,21 @@ Visual Studio Tools for Unity 變更記錄。
 - **集成：**
 
   - 通過添加特定于 Unity 的新診斷，加深了 Visual Studio 對 Unity 專案的理解。 我們也隱藏了對 Unity 專案不適用的通用 C# 診斷，讓 IDE 更有智慧。 例如，IDE 不會顯示快速修復來更改檢查器變數`readonly`，這將阻止您在 Unity 編輯器中修改該變數。
-    - `UNT0001`：整合通訊由運行時調用，即使它們為空，也不聲明它們以避免 Unity 運行時的未必要處理。
-    - `UNT0002`：使用字串相等性標記比較比內置比較標記方法慢。
-    - `UNT0003`：對於型別安全，最好使用 Get元件的通用形式。
-    - `UNT0004`：更新消息取決於畫面播放速率，應使用 Time.deltaTime 而不是 Time.固定 DeltaTime。
-    - `UNT0005`：固定更新消息與畫面播放速率無關，應使用 Time.固定增量時間而不是 Time.deltaTime。
-    - `UNT0006`： 檢測到此 Unity 消息不正確的方法簽名。
-    - `UNT0007`：Unity 覆蓋 Unity 物件的空比較運算子，該運算子與空合併不相容。
-    - `UNT0008`：Unity 覆蓋 Unity 物件的 null 比較運算子，該運算子與空傳播不相容。
-    - `UNT0009`：將初始化OnLoad屬性應用於類時，需要提供靜態建構函式。 InitializeOnLoad 屬性可確保其在編輯器啟動時受到呼叫。
-    - `UNT0010`：單一行為只能使用 Add 元件（） 創建。 MonoBehaviours 是元素，且應附加至 GameObject。
-    - `UNT0011`：只能使用 CreateInstance（） 創建可腳本物件。 ScriptableObject 須由 Unity 引擎建立來處理 Unity 訊息方法。
-    - `USP0001`對於`IDE0029`： 統一物件不應使用空合併。
-    - `USP0002`對於`IDE0031`： 統一物件不應使用 null 傳播。
-    - `USP0003`的`IDE0051`：Unity 消息由 Unity 運行時調用。
-    - `USP0004`對於`IDE0044`： 具有序列化欄位屬性的欄位不應是唯讀的。
+    - [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md)：整合通訊由運行時調用，即使它們為空，也不聲明它們以避免 Unity 運行時的未必要處理。
+    - [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0002.md)：使用字串相等性標記比較比內置比較標記方法慢。
+    - [`UNT0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0003.md)：對於型別安全，最好使用 Get元件的通用形式。
+    - [`UNT0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0004.md)：更新消息取決於畫面播放速率，應使用 Time.deltaTime 而不是 Time.固定 DeltaTime。
+    - [`UNT0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0005.md)：固定更新消息與畫面播放速率無關，應使用 Time.固定增量時間而不是 Time.deltaTime。
+    - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md)： 檢測到此 Unity 消息不正確的方法簽名。
+    - [`UNT0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0007.md)：Unity 覆蓋 Unity 物件的空比較運算子，該運算子與空合併不相容。
+    - [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0008.md)：Unity 覆蓋 Unity 物件的 null 比較運算子，該運算子與空傳播不相容。
+    - [`UNT0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0009.md)：將初始化OnLoad屬性應用於類時，需要提供靜態建構函式。 InitializeOnLoad 屬性可確保其在編輯器啟動時受到呼叫。
+    - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0010.md)：單一行為只能使用 Add 元件（） 創建。 MonoBehaviours 是元素，且應附加至 GameObject。
+    - [`UNT0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0011.md)：只能使用 CreateInstance（） 創建可腳本物件。 ScriptableObject 須由 Unity 引擎建立來處理 Unity 訊息方法。
+    - [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0001.md)對於`IDE0029`： 統一物件不應使用空合併。
+    - [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0002.md)對於`IDE0031`： 統一物件不應使用 null 傳播。
+    - [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0003.md)的`IDE0051`：Unity 消息由 Unity 運行時調用。
+    - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md)對於`IDE0044`： 具有序列化欄位屬性的欄位不應是唯讀的。
 
 ## <a name="4310"></a>4.3.1.0
 

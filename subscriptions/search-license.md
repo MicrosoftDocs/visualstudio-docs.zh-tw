@@ -3,15 +3,16 @@ title: 搜尋及篩選 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 了解系統管理員如何在系統管理入口網站中尋找個別訂閱者或群組。
-ms.openlocfilehash: ab6e680747e7c4c216315bad02e0373bb8fe271c
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e2ca2683d1c14180fb70a5f80a781f774ed65e71
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78408978"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233266"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>搜尋和篩選 Visual Studio 訂用帳戶中的訂閱者
 Visual Studio 訂用帳戶管理入口網站可讓您根據各種條件來尋找特定一小部分的訂閱者。 您可以依名稱、電子郵件地址、訂用帳戶層級和其他資訊來篩選訂閱者清單。

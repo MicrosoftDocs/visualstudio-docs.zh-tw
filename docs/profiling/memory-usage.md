@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75929240"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256188"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>在 Visual Studio 中測量記憶體使用量
 
@@ -117,7 +117,7 @@ ms.locfileid: "75929240"
 
  上方窗格顯示快照中所有類型的計數和大小，包括類型參考之所有物件的大小 ([內含大小]****)。
 
- 下方窗格中的 [根的路徑] **** 樹狀結構顯示參考在上方窗格中選取之類型的物件。 您必須釋放參考物件的最後一個類型，.NET Framework 記憶體回收行程才會清除該物件的記憶體。
+ 下方窗格中的 [根的路徑] **** 樹狀結構顯示參考在上方窗格中選取之類型的物件。 .NET 垃圾回收器僅在釋放引用物件的最後一個類型時清理物件的記憶體。
 
  "**引用物件**"樹顯示由上部窗格中選擇的類型持有的引用。
 

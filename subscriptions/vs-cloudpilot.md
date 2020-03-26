@@ -1,17 +1,18 @@
 ---
 title: Visual Studio 訂用帳戶的 CloudPilot 權益 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/13/2019
+ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CloudPilot 權益
-ms.openlocfilehash: 253a1b1c3b6996a200a236661d621c43975cb1ed
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: bebffb505f5c2b0fff7167ed2cccf629be1e7543
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74099615"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274033"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 CloudPilot 權益
 將您的應用程式移至 Microsoft Azure 只需幾個簡單的步驟。 在幾分鐘內即可找出需進行程式碼變更 (細至程式碼行)，以成功遷移至：容器、VM、App Services、SQL Azure 和 (或) SQL MI。 然後，透過使用 ASR、DMA 和 DMS 的精靈，將應用程式遷移至 Azure。
@@ -83,6 +84,11 @@ ms.locfileid: "74099615"
 - 有關視覺工作室訂閱的銷售、訂閱、帳戶和計費説明，請聯繫視覺化工作室[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="see-also"></a>另請參閱
+- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
 
+## <a name="next-steps"></a>後續步驟
 如果尚未啟動訂閱附帶的 Azure DevTest 個人信用權益，請訪問[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)並按一下"工具"類別中的 Azure 磁貼以設置 Azure 訂閱並兌換 Azure DevTest 個人信用額度。

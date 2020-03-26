@@ -3,15 +3,16 @@ title: Visual Studio 訂用帳戶中軟體下載項目的產品可用性 |Micros
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中軟體下載項目的產品可用性
-ms.openlocfilehash: 30dd3a216274e189d4d1afe2321bd1db7b66fb94
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 7b6b3bf3dbcf75a33853a9af5edf51e3ef1165a8
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947104"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232309"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中軟體下載項目的產品可用性
 您可以存取各種下載軟體，這是訂閱者權益的一部分。
