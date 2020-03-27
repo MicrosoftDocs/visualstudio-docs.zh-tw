@@ -1,5 +1,9 @@
 - name: Visual Studio 中的測試工具
-  href: improve-code-quality.md
+  href: index.yml
+- name: 總覽
+  items:
+    - name: 初步認識測試工具
+      href: improve-code-quality.md
 - name: 單元測試
   items:
     - name: 單元測試工具概觀
@@ -14,14 +18,10 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
-        - name: 如何：使用 IntelliTest 產生單元測試
-          href: generate-unit-tests-for-your-code-with-intellitest.md
-        - name: 概觀
-          href: intellitest-manual/introduction.md
-        - name: 開始使用
-          href: intellitest-manual/getting-started.md
-        - name: 章節索引
+        - name: 總覽
           href: intellitest-manual/index.md
+        - name: 作法：使用 IntelliTest 產生單元測試
+          href: generate-unit-tests-for-your-code-with-intellitest.md
         - name: 測試產生
           href: intellitest-manual/test-generation.md
         - name: 動態執行符號
@@ -146,7 +146,7 @@
               href: edit-the-test-mix-in-a-load-test-scenario.md
             - name: 測試混合模型
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: Test mix models
                   href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
                 - name: 編輯測試混合模型
@@ -225,7 +225,7 @@
           href: fix-non-detectable-dynamic-parameters-in-a-web-performance-test.md
     - name: 測試控制器和測試代理程式
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: Test controllers and test agents
           href: configure-test-agents-and-controllers-for-load-tests.md
         - name: 需求
@@ -350,7 +350,7 @@
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
 - name: 使用自動程式化 UI 測試的使用者介面自動化
   items:
-    - name: 概觀
+    - name: 總覽
       displayName: Coded UI test
       href: use-ui-automation-to-test-your-code.md
     - name: 逐步解說：建立、編輯及維護自動程式化 UI 測試
