@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
+ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631974"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375556"
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
 
@@ -59,7 +59,7 @@ ms.locfileid: "77631974"
 
 |屬性|描述|
 |---------------|-----------------|
-|`Name`|必要屬性。<br /><br /> 目標的名稱。|
+|`Name`|必要屬性。<br /><br /> 目標的名稱。 目標名稱可以包含除`$@()%*?.`的任何字元。|
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如果條件評估為 `false`，目標將不會執行目標或 `DependsOnTargets` 屬性中所設定之任何目標的主體。 有關條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 |`Inputs`|選擇性屬性。<br /><br /> 構成此目標輸入的檔案。 若有多個檔案，則會以分號分隔。 檔案的時間戳記將會與 `Outputs` 中的檔案時間戳記相比較，以判斷 `Target` 是否為最新狀態。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)、[如何：累加建置](../msbuild/how-to-build-incrementally.md)及[轉換](../msbuild/msbuild-transforms.md)。|
 |`Outputs`|選擇性屬性。<br /><br /> 構成此目標輸出的檔案。 若有多個檔案，則會以分號分隔。 檔案的時間戳記將會與 `Inputs` 中的檔案時間戳記相比較，以判斷 `Target` 是否為最新狀態。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)、[如何：累加建置](../msbuild/how-to-build-incrementally.md)及[轉換](../msbuild/msbuild-transforms.md)。|
