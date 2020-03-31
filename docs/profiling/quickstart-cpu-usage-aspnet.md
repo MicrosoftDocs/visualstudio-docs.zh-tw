@@ -1,6 +1,6 @@
 ---
-title: 分析 CPU 使用率資料（ASP.NET核心）
-description: 使用 CPU 使用方式診斷工具測量 ASP.NET 核心應用中的應用性能
+title: 分析 CPU 使用量資料(ASP.NET核心)
+description: 使用 CPU 使用情況診斷工具測量 ASP.NET核心應用中的應用效能
 ms.custom: mvc
 ms.date: 02/14/2020
 ms.topic: quickstart
@@ -12,56 +12,56 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: bb1d5fc769254f112e3a4cb757b173e0dbded3bb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f79a9f5178959b9a1ec79dc3c22d8da9c0f6735e
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79550098"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80411982"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>快速入門：在視覺化工作室（ASP.NET核心）中分析 CPU 使用率資料
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>快速入門:在可視化工作室(ASP.NET核心)中分析 CPU 使用率數據
 
 Visual Studio 提供許多功能強大的功能，可協助您分析應用程式中的效能問題。 本主題提供了解一些基本功能的快速方法。 在這裡，我們會查看工具，找出因高 CPU 使用量而造成的效能瓶頸。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
 
-診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果這裡所述的 [CPU 使用量]**** 工具未提供您所需的資料，則[其他分析工具](../profiling/profiling-feature-tour.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。
+診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果這裡所述的 [CPU 使用量]**** 工具未提供您所需的資料，則[其他分析工具](../profiling/profiling-feature-tour.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。 [PerfTips](../profiling/perftips.md)是另一個除錯器整合的分析工具,還允許您單步執行代碼並確定完成特定函數或代碼塊所需的時間。
 
 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具]**** 視窗)。 在 Windows 7 及更新版本，您可以使用事後分析工具：[效能分析工具](../profiling/profiling-feature-tour.md).
 
 ## <a name="create-a-project"></a>建立專案
 
-1. 打開視覺化工作室並創建專案。
+1. 打開可視化工作室並創建專案。
 
    ::: moniker range="vs-2017"
    從頂端功能表列中，選擇 [檔案]** [新增]** > ** [專案]** > ****。
 
-   在左側窗格中的 **"新專案**"對話方塊中，展開**Visual C#，** 然後選擇**Web**。 在中間窗格中，選擇**ASP.NET Web 應用程式 （.NET Core）**。 然後MyProfilingApp_MVC*命名專案。*
+   在左邊窗格中的 **「新項目**」 對話框中,展開**Visual C#,** 然後選擇**Web**。 在中間窗格中,選擇**ASP.NET Web 應用程式 (.NET Core )**。 然後MyProfilingApp_MVC*命名專案。*
 
    > [!NOTE]
-   > 如果未看到 ASP.NET Web**應用程式 （.NET Core）** 專案範本，請選擇 **"新專案**"對話方塊左側窗格中的 **"打開視覺化工作室安裝程式"** 連結。 Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發]**** 工作負載，然後選擇 [修改]****。
+   > 如果未看到 ASP.NET Web**應用程式 (.NET Core)** 專案樣本,請選擇 **「新項目**」對話框左側窗格中的 **「打開視覺化工作室安裝程式」** 連結。 Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發]**** 工作負載，然後選擇 [修改]****。
 
    在出現的對話方塊中，選擇中間窗格中的 [MVC]****，然後按一下 [確定]****。
    ::: moniker-end
    ::: moniker range="vs-2019"
-   如果啟動視窗未打開，請選擇 **"檔**>**開始視窗**"。
+   如果啟動視窗未開啟,請選擇 **「檔案**>**開始視窗**」。。
 
-   在啟動視窗中，選擇 **"創建新專案**"。
+   在啟動視窗中,選擇 **「創建新專案**」。
 
-   在"**創建新專案**"視窗中，在搜索框中輸入或鍵入*asp.net。* 接下來，從語言清單中選擇 **C#**，然後從平台清單中選擇 **Windows**。
+   在「**創建新項目**」 視窗中,在搜尋框中輸入或鍵入*asp.net。* 接下來，從語言清單中選擇 **C#**，然後從平台清單中選擇 **Windows**。
 
-   應用語言和平臺篩選器後，選擇**ASP.NET Web 應用程式 （.NET Core）** 範本，然後選擇 **"下一步**"。
+   應用語言和平台篩選器後,選擇**ASP.NET Web 應用程式 (.NET Core)** 範本,然後選擇 **「下一步**」 。。
 
    > [!NOTE]
-   > 如果未看到**ASP.NET Web 應用程式 （.NET Core）** 範本，則可以從 **"創建新專案"** 視窗安裝該範本。 在 [找不到您要找的資料嗎?]**** 訊息中，選擇 [安裝更多工具和功能]**** 連結。 然後，在 Visual Studio 安裝程式中選擇 **ASP.NET 與網頁程式開發**工作負載。
+   > 如果未看到**ASP.NET Web 應用程式 (.NET Core)** 範本,則可以從 **"創建新專案"** 視窗安裝該範本。 在 [找不到您要找的資料嗎?]**** 訊息中，選擇 [安裝更多工具和功能]**** 連結。 然後，在 Visual Studio 安裝程式中選擇 **ASP.NET 與網頁程式開發**工作負載。
 
-   在"**配置新專案**"視窗中，在 **"專案名稱**"框中鍵入或輸入*MyProfilingApp_MVC。* 然後，選擇 **"創建**"。
+   在「**設定新項目**」視窗中,在 **「專案名稱**」框中鍵入或輸入*MyProfilingApp_MVC。* 然後,選擇 **"創建**"。
 
-   在顯示的視窗中，選擇**Web 應用程式（模型-視圖-控制器），** 然後選擇 **"創建**"。
+   在顯示的視窗中,選擇**Web 應用程式(模型-檢視-控制器),** 然後選擇 **「創建**」。
 
    ::: moniker-end
 
    Visual Studio 會隨即開啟您的新專案。
 
-1. 在"解決方案資源管理器"中，按右鍵"模型"資料夾並選擇 **"添加** > **類**"。
+1. 在「解決方案資源管理器」中,右鍵按一下「模型」資料夾並選擇 **「添加** > **類**」。
 
 1. 將新的類別命名為 `Data.cs`，然後選擇 [新增]****。
 
@@ -149,7 +149,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
     }
     ```
 
-1. 在解決方案資源管理器中，打開*控制器/HomeController.cs*並替換以下代碼：
+1. 在解決方案資源管理員中,開啟*控制器/HomeController.cs*並取代以下代碼:
 
    ::: moniker range="vs-2017"
 
@@ -213,20 +213,17 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
     藉由設定兩個中斷點，您可以將資料收集的範圍限制在您想分析的程式碼部分。
 
-    >[!TIP]
-    > 當在中斷點或代碼步進操作暫停時，您還可以使用[PerfTips](../profiling/perftips.md)分析性能。
+1. 除非您關閉 [診斷工具]**** 視窗，否則該視窗已出現。 要再次打開視窗,請按下 **「除錯** > **」** > **顯示診斷工具**。
 
-1. 除非您關閉 [診斷工具]**** 視窗，否則該視窗已出現。 要再次打開視窗，請按一下 **"調試** > **視窗** > **顯示診斷工具**"。
+1. 點選 **「除錯** > **」 開始除錯**(或工具列上**啟動**)或**F5**。
 
-1. 按一下 **"調試** > **開始調試**"（或工具列上**啟動**）或**F5**。
-
-1. 應用完成載入後，按一下網頁頂部的相應連結以開始運行新代碼。
+1. 應用完成載入後,單擊網頁頂部的相應連結以開始運行新代碼。
 
    ::: moniker range="vs-2017"
-   在 Visual Studio 2017 中，按一下 **"關於"** 連結以運行代碼。
+   在 Visual Studio 2017 中,按下 **「關於」** 連結以執行代碼。
    ::: moniker-end
    ::: moniker range="vs-2019"
-   在 Visual Studio 2019 中，按一下**隱私**連結以運行代碼。
+   在 Visual Studio 2019 中,按一下**隱私**連結以執行代碼。
    ::: moniker-end
 
 1. 請查看 [診斷工具] 的 [摘要]**** 檢視。
