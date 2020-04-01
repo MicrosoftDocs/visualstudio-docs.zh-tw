@@ -9,32 +9,32 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 84efda930066c4236fa4397fbadf287c6774fdb0
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114462"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472788"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：檢視、儲存和設定組建記錄檔
 
-在 Visual Studio IDE 中建置專案之後，您可以在 [輸出]**** 視窗中檢視該組建的資訊。 例如，使用這項資訊，您可以針對建置失敗進行疑難排解。 
+在 Visual Studio IDE 中建置專案之後，您可以在 [輸出]**** 視窗中檢視該組建的資訊。 例如，使用這項資訊，您可以針對建置失敗進行疑難排解。
 
-- 對於 C++ 專案，您也可以在自動建立和儲存的 *.txt* 檔案中，檢視相同的資訊。 
+- 對於C++專案,您還可以在生成專案時創建和保存的日誌檔中查看相同的資訊。 
 
-- 對於託管代碼專案，可以按一下生成輸出視窗並按**Ctrl**+**S**。 Visual Studio 會提示您輸入位置，以將 [輸出]**** 視窗中的資訊儲存至 *.txt* 檔案。 
+- 對託管代碼項目,可以按下產生輸出視窗並按**Ctrl**+**S**。 Visual Studio 會提示您定位位置,將「**輸出」** 視窗中的資訊儲存到日誌檔中。
 
 您也可以使用 IDE 來指定您想要檢視每個組建的資訊種類。
 
-如果您使用 MSBuild 建置任何種類的專案，您可以建立 *.txt* 檔案以儲存組建資訊。 如需詳細資訊，請參閱[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)。
+如果使用 MSBuild 生成任何類型的專案,則可以創建日誌檔以保存有關生成的資訊。 如需詳細資訊，請參閱[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)。
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>檢視 C++ 專案的組建記錄檔
 
-1. 在 **Windows 檔案總管**或**檔案總管**中，開啟下列檔案：*\\...\Visual Studio \<版本\>\Projects\\<專案名稱\>\\<專案名稱\>\Debug\\<專案名稱\>.txt*
+1. 在**Windows 資源管理員**或**檔案資源管理員中**,開啟以下檔案(相對於專案根資料夾):*釋放*\\<ProjectName>\>。紀錄**或\\除錯<\>專案名稱 .log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>建立受控碼專案的組建記錄檔
 
-1. 在功能表列上，選擇 **"生成** > **解決方案**"。
+1. 在功能表欄上,選擇 **「生成** > **解決方案**」。
 
 2. 在 [輸出]**** 視窗中，按一下文字中的某處。
 
@@ -46,7 +46,7 @@ ms.locfileid: "76114462"
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>變更組建記錄檔中包含的資訊量
 
-1. 在功能表列上，選擇 **"工具** > **選項**"。
+1. 在選單欄上,選擇 **「工具** > **選項**」。
 
 2. 在 [專案和解決方案]**** 頁面上，選擇 [建置並執行]**** 頁面。
 
@@ -67,7 +67,7 @@ ms.locfileid: "76114462"
 
 ## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>使用二進位記錄檔來輕鬆瀏覽大型記錄檔
 
-二進位記錄檔是適用於 .NET 專案的選擇性功能，它可讓您擁有更豐富的記錄檔瀏覽體驗，以便您可以輕鬆地在大型記錄中尋找資訊。 若要使用二進位記錄檔，請安裝 [Project System Tools](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools)。 有關詳細資訊，請參閱[https://msbuildlog.com](https://msbuildlog.com)和[二進位日誌](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
+二進位記錄檔是適用於 .NET 專案的選擇性功能，它可讓您擁有更豐富的記錄檔瀏覽體驗，以便您可以輕鬆地在大型記錄中尋找資訊。 若要使用二進位記錄檔，請安裝 [Project System Tools](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools)。 有關詳細資訊,請參閱[https://msbuildlog.com](https://msbuildlog.com)和[二進位日誌](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
 
 ## <a name="see-also"></a>另請參閱
 

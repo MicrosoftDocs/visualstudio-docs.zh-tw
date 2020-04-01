@@ -5,18 +5,18 @@ description: Visual Studio 已發行版本和組件編號的清單，依日期�
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/26/2020
+ms.date: 03/31/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 05808737a735160c995aafb7d2e9b12ccbb13e1b
-ms.sourcegitcommit: 0d08e2c1d9940a6ac2c7f647e9454b42011ebc63
+ms.openlocfilehash: 6eb4a72b4ce430e59c8760a5281fdab5fc7f3766
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80329532"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472700"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -26,8 +26,9 @@ ms.locfileid: "80329532"
 
 下表列出 Visual Studio 2019 迄今為止的組建編號和發行日期。
 
-| **版本**| **通路** | **發佈日期** | **生成版本** |
+| **版本**| **通路** | **發佈日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.5.2 | 版本 | 2020年3月31日 | 16.5.29926.136 |
 | 16.6.0 | Preview 2 | 2020年3月26日 | 16.6.29924.181 |
 | 16.5.1 | 版本 | 2020年3月24日 | 16.5.29920.165 |
 | 16.6.0 | Preview 1 | 2020年3月16日 | 16.6.29911.98 |
@@ -130,7 +131,7 @@ ms.locfileid: "80329532"
 
 下表列出 Visual Studio 2017 迄今為止的組建編號和發行日期。
 
-| **版本**| **通路** | **發佈日期** | **生成版本** |
+| **版本**| **通路** | **發佈日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.21 | 版本 | 2020年3月10日 | 15.9.28307.1064 |
 | 15.9.20 | 版本 | 2020 年 2 月 11 日 | 15.9.28307.1033 |
@@ -308,5 +309,5 @@ ms.locfileid: "80329532"
 
 * [視覺工作室釋放節奏](/visualstudio/productinfo/release-rhythm/)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [使用命令列參數安裝視覺化工作室](use-command-line-parameters-to-install-visual-studio.md)
+* [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [用於偵測及管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)

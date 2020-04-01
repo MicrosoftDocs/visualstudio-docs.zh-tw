@@ -16,16 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e69e5c8fc7404c0c313774271fd07b6315e5270
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0d51aa0a5ef995abbe150160e378aa8885cc9706
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633365"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472678"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 條件
 
-MSBuild 支援一組特定的條件，可在允許的屬性`Condition`的任何位置應用。 下表說明這些條件。
+MSBuild 支援一組特定的條件,可在允許的`Condition`屬性 的任何位置應用。 下表說明這些條件。
 
 |條件|描述|
 |---------------|-----------------|
@@ -38,10 +38,26 @@ MSBuild 支援一組特定的條件，可在允許的屬性`Condition`的任何�
 |And|如果這兩個運算元都評估為 `true`，即會評估為 `true`。|
 |Or|如果至少有一個運算元評估為 `true`，即會評估為 `true`。|
 |()|如果內部包含的運算式評估為 `true`，即會評估為 `true` 的群組機制。|
-|$if$ ( %expression% )、$else$、$endif$|檢查指定的 `%expression%` 是否符合所傳遞自訂範本參數的字串值。 如果 `$if$` 條件評估為 `true`，即會執行它的陳述式，否則會檢查 `$else$` 條件。 如果 `$else$` 條件為`true`，即會執行它的陳述式，否則 `$endif$` 條件會結束運算式評估。<br /><br /> 有關使用的示例，請參閱[視覺化工作室專案/專案範本參數邏輯](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)。|
+|$if$ ( %expression% )、$else$、$endif$|檢查指定的 `%expression%` 是否符合所傳遞自訂範本參數的字串值。 如果 `$if$` 條件評估為 `true`，即會執行它的陳述式，否則會檢查 `$else$` 條件。 如果 `$else$` 條件為`true`，即會執行它的陳述式，否則 `$endif$` 條件會結束運算式評估。<br /><br /> 有關使用的範例,請參閱[可視化工作室專案/專案範本參數邏輯](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)。|
+
+您可以在條件中使用字串方法,如以下範例所示,其中<xref:System.String.TrimEnd>函數僅用於比較字串的相關部分,以區分 .NET 框架和 .NET Core 目標框架。
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net45;net48;netstandard2.1;netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(TargetFramework.TrimEnd('0123456789.'))' == 'net'">
+        <!-- Properties for .NET Framework -->
+    </PropertyGroup>
+
+</Project>
+```
 
 ## <a name="see-also"></a>另請參閱
 
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
-- [條件構造](../msbuild/msbuild-conditional-constructs.md)
-- [演練：從頭開始創建 MSBuild 專案檔案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
+- [條件建構](../msbuild/msbuild-conditional-constructs.md)
+- [演練:從頭開始建立 MSBuild 專案檔](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

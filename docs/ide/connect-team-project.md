@@ -1,16 +1,16 @@
 ---
 title: 在 Team Explorer 中連線到專案
-ms.date: 12/04/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 936fcb598ccb7919eca0a35a1191732bce1c8e23
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fe4ce27d8783d457015310ef4d6fadfde230b97c
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585479"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472748"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>在 Team Explorer 中連線到專案
 
@@ -44,3 +44,4 @@ ms.locfileid: "75585479"
 
 - [Team Explorer 參考](reference/team-explorer-reference.md)
 - [連線到專案 (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)
+- [連接到項目的故障排除](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)

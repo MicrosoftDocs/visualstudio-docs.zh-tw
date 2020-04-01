@@ -33,14 +33,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568408"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472829"
 ---
-# <a name="options-dialog-box-text-editor--general"></a>選項對話方塊：文字編輯器\>總
+# <a name="options-dialog-box-text-editor--general"></a>選項對話框:文字編輯器\>總
 
 此對話方塊可讓您變更 Visual Studio 程式碼和文字編輯器的全域設定。 若要顯示這個對話方塊，請選取 [工具]**** 功能表上的 [選項]****，並展開 [文字編輯器]**** 資料夾，然後選取 [一般]****。
 
@@ -93,6 +93,10 @@ ms.locfileid: "75568408"
 ### <a name="show-structure-guide-lines"></a>顯示結構輔助線
 
 選取時，編輯器中會出現對齊結構化程式碼區塊的垂直線，可讓您輕鬆地識別個別程式碼區塊。
+
+### <a name="show-file-health-indicator"></a>顯示檔案執行狀況指示器
+
+勾選此選項後,包含程式碼清理選項的檔運行狀況指示器狀態(錯誤、警告)欄將顯示在編輯器的左下角。
 
 ## <a name="see-also"></a>另請參閱
 
