@@ -329,6 +329,8 @@
                   href: ide/reference/generate-constructor.md
                 - name: 產生解構函式
                   href: ide/reference/generate-deconstructor.md
+                - name: 新增明確的轉換
+                  href: ide/reference/add-explicit-cast.md
                 - name: 將參數新增至方法
                   href: ide/reference/add-parameter.md
                 - name: 產生參數
@@ -360,6 +362,8 @@
                   href: ide/reference/convert-anonymous-type-to-class.md
                 - name: 將匿名型別轉換為元組
                   href: ide/reference/convert-anonymous-type-to-tuple.md
+                - name: 在自動屬性及完整屬性之間轉換
+                  href: ide/reference/convert-between-auto-property-and-full-property.md
                 - name: For 迴圈與 foreach 陳述式之間的轉換
                   href: ide/reference/convert-for-loop-to-foreach.md
                 - name: Get 方法與屬性之間的轉換
