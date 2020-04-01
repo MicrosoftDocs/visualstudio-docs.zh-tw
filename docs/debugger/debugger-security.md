@@ -1,5 +1,5 @@
 ---
-title: 偵錯工具安全性 |Microsoft Docs
+title: 除錯器安全性 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8d2e951bb62cb3ac8010029b76971662d07b898
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a89e60a47e5bab6580c78275357234bb9d3f1c56
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738324"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527918"
 ---
 # <a name="debugger-security"></a>偵錯工具安全性
 偵錯其他處理序的功能可以讓您獲得在他處無法得到的多樣化功能，特別是在遠端偵錯時。 惡意偵錯工具可能會在被偵錯的電腦上散佈更廣泛的損害。
 
  然而，許多開發人員並不了解也可能會有反向的安全性威脅。 偵錯項目處理序中的惡意程式碼可能會危及偵錯電腦的安全性：有一些必須防範的安全性漏洞。
 
-## <a name="security-best-practices"></a>安全性最佳作法
+## <a name="security-best-practices"></a>安全性最佳做法
  在偵錯的程式碼和偵錯工具之間有隱含的信任關係。 如果您願意對其進行偵錯，應該也願意加以執行。 底限是您必須能夠信任要偵錯的項目。 如果不能信任它，則您不應該進行偵錯，或是應該在隔離環境中從能夠容忍危害的電腦上進行偵錯。
 
  為了降低潛在攻擊面，實際執行電腦上應該停用偵錯。 基於相同的原因，應該永遠不啟用偵錯。
@@ -48,13 +48,13 @@ ms.locfileid: "72738324"
 
  遠端偵錯會使用「Visual Studio 遠端偵錯監視」(msvsmon.exe)，並且在設定方面有幾個安全性建議。 設定驗證模式的慣用方法是「Windows 驗證」，因為「非驗證」模式並不安全。
 
- ![錯誤對話方塊](../debugger/media/dbg_err_remotepermissionschanged.png "DBG_ERR_RemotePermissionsChanged")
+ ![[記錄] 對話方塊](../debugger/media/dbg_err_remotepermissionschanged.png "DBG_ERR_RemotePermissionsChanged")
 
- 當使用「Windows 驗證」模式時，請留意授予未受信任使用者連接至 msvsmon 的權限是危險的，因為這樣使用者就會擁有您在電腦上的所有權限。
+ 使用 Windows 身份驗證模式時,請注意授予不受信任的用戶許可權以連接到 msvsmon 是危險的,因為使用者被授予在承載 msvmon 的電腦上的所有許可權。
 
- 請勿在遠端電腦上偵錯未知的處理序：可能會有潛在弱點影響執行偵錯工具的電腦，或是危害 Visual Studio 遠端偵錯監視 (msvsmon.exe)。 如果您一定要偵錯未知的處理序，請嘗試在本機偵錯並使用防火牆以避免任何潛在的威脅。
+ 不要在遠端電腦上調試未知進程:存在可能影響運行調試器的計算機的潛在漏洞,或者可能危及 msvsmon。 如果您一定要偵錯未知的處理序，請嘗試在本機偵錯並使用防火牆以避免任何潛在的威脅。
 
- 如需詳細資訊，請參閱[遠端偵錯](../debugger/remote-debugging.md)程式。
+ 有關設定 msvsmon 的資訊,請參考[設定遠端除錯器](../debugger/remote-debugging.md#bkmk_setup)。
 
 ### <a name="web-services-debugging-security"></a>Web 服務偵錯安全性
  在本機偵錯比較安全，但是因為在 Web 伺服器上可能並未安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，所以本機偵錯並不實用。 一般來說，偵錯 Web 服務會在遠端完成 (除了在開發期間以外)，因此遠端偵錯安全性的建議也適用於 Web 服務偵錯。 這裡有幾個額外的最佳作法。 如需詳細資訊，請參閱 [Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)。
@@ -71,14 +71,14 @@ ms.locfileid: "72738324"
 ### <a name="symbols-and-source-code"></a>符號和原始程式碼
  需要考慮安全性的兩個 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 工具如下所示：
 
-- 來源伺服器，提供原始程式碼儲存機制的原始程式碼版本。 當您沒有程式之原始程式碼的最新版時，來源伺服器這就很有用。 [安全性警告：偵錯工具必須執行未受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。
+- 來源伺服器，提供原始程式碼儲存機制的原始程式碼版本。 當您沒有程式之原始程式碼的最新版時，來源伺服器這就很有用。 [安全警告:除錯器必須執行不受信任的指令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。
 
 - 符號伺服器，用來提供偵錯系統呼叫期間之損毀所需的符號。
 
   請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
-## <a name="see-also"></a>請參閱
-- [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)
-- [偵錯工具簡介](../debugger/debugger-feature-tour.md)
+## <a name="see-also"></a>另請參閱
+- [除錯器設定和準備](../debugger/debugger-settings-and-preparation.md)
+- [首先檢視除錯器](../debugger/debugger-feature-tour.md)
 - [安全性警告附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
-- [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+- [安全警告:除錯器必須執行不受信任的指令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

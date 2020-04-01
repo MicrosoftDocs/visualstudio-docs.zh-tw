@@ -1,32 +1,32 @@
 ---
 title: EditorConfig 的 .NET 格式設定慣例
-ms.date: 07/17/2019
+ms.date: 03/31/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - formatting conventions [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 64f6a45b3a5cc49cd541ceb905356093ea4ec221
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f10d4c710c0686b22e29883cabc21550ffd32f8c
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589223"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527960"
 ---
 # <a name="formatting-conventions"></a>格式設定慣例
 
 Visual Studio 的 EditorConfig 適用格式設定慣例分為下列類別：
 
-- [.NET 格式設置](#net-formatting-settings)
+- [.NET 格式設定](#net-formatting-settings)
 
-- [C# 格式設置](#c-formatting-settings)
+- [C# 格式設定](#c-formatting-settings)
 
 ## <a name="rule-format"></a>規則格式
 
@@ -110,7 +110,7 @@ using Octokit;
 
 本節中的格式化規則只適用於 C# 程式碼。
 
-- [新建選項](#new-line-options)
+- [新增選項](#new-line-options)
   - csharp_new_line_before_open_brace
   - csharp_new_line_before_else
   - csharp_new_line_before_catch
@@ -118,7 +118,7 @@ using Octokit;
   - csharp_new_line_before_members_in_object_initializers
   - csharp_new_line_before_members_in_anonymous_types
   - csharp_new_line_between_query_expression_clauses
-- [縮進選項](#indentation-options)
+- [縮排選項](#indentation-options)
   - csharp_indent_case_contents
   - csharp_indent_switch_labels
   - csharp_indent_labels
@@ -151,6 +151,8 @@ using Octokit;
 - [包裝選項](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
+- [使用指令選項](#using-directive-options) 
+  - csharp_using_directive_placement
 
 ### <a name="new-line-options"></a>新行選項
 
@@ -1210,8 +1212,52 @@ public int MyProperty
 }
 ```
 
+- [使用指令選項](#using-directive-options) 
+  - csharp_using_directive_placement
+  
+### <a name="using-directive-options"></a>使用指令選項
+
+此格式設定規則涉及使用放置在命名空間內部和外部的指令。
+
+Editorconfig ** 檔案範例︰
+
+```ini
+# 'using' directive preferences
+[*.cs]
+csharp_using_directive_placement = outside_namespace
+csharp_using_directive_placement = inside_namespace
+```
+
+#### <a name="csharp_using_directive_placement"></a>csharp_using_directive_placement
+
+|||
+|-|-|
+| **規則名稱** | csharp_using_directive_placement |
+| **適用語言** | C# |
+| **引進的版本** | Visual Studio 2019 16.1 版 |
+| **值** | `outside_namespace`- 使用命名空間外的指令離開<br /><br />`inside_namespace`- 使用命名空間內的指令離開 |
+| **Visual Studio 預設值** | `outside_namespace` |
+
+程式碼範例：
+
+```csharp
+// csharp_using_directive_placement = outside_namespace
+using System;
+
+namespace Conventions
+{
+
+}
+
+// csharp_using_directive_placement = inside_namespace
+namespace Conventions
+{
+    using System;
+}
+```
+
 ## <a name="see-also"></a>另請參閱
 
 - [語言慣例](editorconfig-language-conventions.md)
-- [命名約定](editorconfig-naming-conventions.md)
-- [.NET 編碼約定設置，用於編輯器配置](editorconfig-code-style-settings-reference.md)
+- [命名慣例](editorconfig-naming-conventions.md)
+- [.NET 編碼約定設定,用於編輯器配置](editorconfig-code-style-settings-reference.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f7a05f62685509a69fd5dfe8f758b4e5599b9324
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73636579"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527932"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Visual Studio 整合式開發環境 (IDE) 初探
 
@@ -25,7 +25,7 @@ ms.locfileid: "73636579"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
 
@@ -51,11 +51,11 @@ ms.locfileid: "73636579"
 
 ## <a name="start-page"></a>起始頁
 
-啟動視覺工作室後，您首先會看到的很可能是 **"開始頁面**"。 **"開始頁**"設計為"中心"，可説明您更快地找到所需的命令和專案檔案。 [最近使用的]**** 區段會顯示您最近使用的專案和資料夾。 在 [新增專案]**** 底下，您可以按一下連結來開啟 [新增專案]**** 對話方塊；或者，在 [開啟]**** 底下，您可以開啟現有的程式碼專案或資料夾。 右側是最新的開發人員新聞摘要。
+啟動視覺工作室後,您首先會看到的很可能是 **「開始頁面**」。。 **「開始頁**」設計為"中心",可説明您更快地找到所需的命令和專案檔。 [最近使用的]**** 區段會顯示您最近使用的專案和資料夾。 在 [新增專案]**** 底下，您可以按一下連結來開啟 [新增專案]**** 對話方塊；或者，在 [開啟]**** 底下，您可以開啟現有的程式碼專案或資料夾。 右側是最新的開發人員新聞摘要。
 
 ![Visual Studio 中的起始頁](media/start-page.png)
 
-如果關閉 **"開始頁"** 並希望再次看到它，則可以從 **"檔"** 功能表重新打開它。
+如果關閉 **「開始頁」** 並希望再次看到它,則可以從 **「檔」** 選單重新打開它。
 
 ![Visual Studio 的 [檔案] 功能表](media/quickstart-IDE-file-menu-large.png)
 
@@ -90,13 +90,13 @@ ms.locfileid: "73636579"
 1. 在出現的 [新增專案]**** 對話方塊中，接受預設專案名稱，並選擇 [確定]****。
 ::: moniker-end
 
-   將創建專案，並在**編輯器**視窗中打開名為*server.js*的檔。 編輯器**顯示**檔的內容，並在 Visual Studio 中完成大部分編碼工作。
+   將建立專案,並在**編輯器**視窗中打開名為*server.js*的檔。 編輯器**顯示**文件的內容,並在 Visual Studio 中完成大部分編碼工作。
 
    ![Visual Studio 中的編輯器](media/editor.png)
 
 ## <a name="solution-explorer"></a>方案總管
 
-[方案總管]**** 一般位在 Visual Studio 右側，並示範以圖形呈現專案、方案或程式碼資料夾中的檔案和資料夾階層。 您可以流覽層次結構並導航到**解決方案資源管理器**中的檔。
+[方案總管]**** 一般位在 Visual Studio 右側，並示範以圖形呈現專案、方案或程式碼資料夾中的檔案和資料夾階層。 您可以瀏覽層次結構並導航到**解決方案資源管理員**中的檔案。
 
 ![Visual Studio 中的 [方案總管]](media/quickstart-IDE-solution-explorer.png)
 
@@ -106,11 +106,11 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 
 ![Visual Studio 的功能表列](media/quickstart-IDE-menu-bar.png)
 
-讓我們通過選擇 **"查看"** 功能表，然後選擇 **"錯誤清單**"來打開 **"錯誤清單**"視窗。
+讓我們通過選擇 **「查看」** 選單,然後選擇 **「錯誤列表**」來打開 **「錯誤清單**」視窗。
 
 ## <a name="error-list"></a>錯誤清單
 
-"**錯誤清單**"顯示有關代碼目前狀態的錯誤、警告和消息。 如果您的檔案中或專案中的任何位置有任何錯誤 (例如遺漏大括弧或分號)，則會在此處列出。
+「**錯誤清單**」 顯示有關代碼目前狀態的錯誤、警告和消息。 如果您的檔案中或專案中的任何位置有任何錯誤 (例如遺漏大括弧或分號)，則會在此處列出。
 
 ![Visual Studio 中的錯誤清單](media/quickstart-IDE-error-list.png)
 
@@ -118,7 +118,7 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 
 [輸出]**** 視窗會顯示建置專案的輸出訊息以及來自原始檔控制提供者的輸出訊息。
 
-請建置專案以查看一些建置輸出。 在 **"生成"** 功能表中，選擇 **"生成解決方案**"。 **輸出**視窗會自動獲取焦點並顯示成功的生成消息。
+請建置專案以查看一些建置輸出。 在 **「生成」** 功能表中,選擇 **「生成解決方案**」。 **輸出**視窗會自動獲取焦點並顯示成功的生成消息。
 
 ![Visual Studio 中的輸出視窗](media/build-output-minimal.png)
 
@@ -136,7 +136,7 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 
 1. 以滑鼠右鍵按一下 [方案總管]**** 中的 [NodejsWebApp1]**** 專案，然後選擇操作功能表中的 [重建]****，以再次建置專案。
 
-   這一次，"**輸出"** 視窗顯示來自生成過程的更多詳細日誌記錄，包括哪些檔被覆制到何處。
+   這一次,「**輸出」** 視窗顯示來自生成過程的更多詳細紀錄記錄,包括哪些檔被複製到何處。
 
    ![Visual Studio 中的詳細資訊組建輸出](media/build-output-verbose.png)
 
