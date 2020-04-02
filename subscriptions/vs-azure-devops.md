@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: 了解如何以 Visual Studio 訂閱者的身分使用 Azure DevOps。
-ms.openlocfilehash: 73c6ae54ed39375e695fd1d68b972edb1ec9b46c
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 11bd1262e72042b01c2514edc3bc3158325b9417
+ms.sourcegitcommit: 67dd2aedfe9752afaec9625ed3056fa03bd2699e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232047"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80607174"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 訂閱者的 Azure DevOps 權益
 身為有效的 Visual Studio 訂閱者，您可以使用 Azure DevOps 一定範圍內的功能，這些功能是隨附於訂用帳戶的權益。 您可以使用所屬每個 Azure DevOps 組織中的這些相同功能，無論是您建立了組織，或由他人新增了功能。
@@ -25,15 +25,15 @@ ms.locfileid: "80232047"
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     聲道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup>  | Azure 板&存儲庫（基本）、Azure 測試計劃、Azure 管道（自託管）       |  是          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl| Azure 板&存儲庫（基本）、Azure 測試計劃、Azure 管道（自託管）       |  是          |
+| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup>  | Azure 板&存儲庫(基本)、Azure 測試計劃、Azure 管道(自託管)       |  是          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl| Azure 板&存儲庫(基本)、Azure 測試計劃、Azure 管道(自託管)       |  是          |
 | Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                        | Azure Boards & Repos (基本)                                                            |  是          |
 | 含 GitHub Enterprise 的 Visual Studio Professional | Vl| Azure Boards & Repos (基本)                                                            |  是          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | Azure Boards & Repos (基本)、Azure Test Plans                                              |  是          |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | Azure Boards & Repos (基本)、Azure Test Plans                                              |  是          |
 ||
 
-<sup>1</sup>  *包括：不轉售 （NFR）、最有價值的專業人士 （MVP）、區域總監 （RD）、視覺工作室行業合作夥伴 （VSIP）、微軟合作夥伴網路（企業）、BizSpark、MCT 軟體&服務開發人員、FTE。不包括：MCT 軟體&服務，想像一下。*
+<sup>1</sup>  *包括:不轉售 (NFR)、最有價值的專業人士 (MVP)、區域總監 (RD)、視覺工作室行業合作夥伴 (VSIP)、微軟合作夥伴網路(企業)、BizSpark、MCT 軟體&服務開發人員、FTE。不包括:MCT 軟體&服務,想像一下。*
 
 
 > [!NOTE]
@@ -44,18 +44,18 @@ ms.locfileid: "80232047"
 
 ## <a name="support-resources"></a>支援資源
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請連絡 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
-- 是否有關於 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 產品或服務的問題？  訪問[視覺工作室支援](https://visualstudio.microsoft.com/support/)。
-- [Azure DevOps 文檔](/azure/devops/)。
+- 是否有關於 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 產品或服務的問題？  存取[視覺工作室支援](https://visualstudio.microsoft.com/support/)。
+- [Azure DevOps 文件](/azure/devops/)。
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [視覺化工作室文件](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文件](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文件](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 深入了解 Azure DevOps 功能：
-- [Azure Boards & Repos (基本)](https://azure.microsoft.com/services/devops/compare-features/)
+- [Azure 板&儲存庫(基本計劃)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
