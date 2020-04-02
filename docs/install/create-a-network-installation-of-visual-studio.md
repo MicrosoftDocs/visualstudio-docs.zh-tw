@@ -1,7 +1,7 @@
 ---
 title: 建立網路型安裝
 description: 了解如何建立網路安裝點以在企業內部署 Visual Studio。
-ms.date: 10/29/2019
+ms.date: 03/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ea7efd82aa25844e8eb33745aa53d44be1ed14f6
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303404"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544067"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
@@ -33,13 +33,13 @@ ms.locfileid: "79303404"
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>下載 Visual Studio 啟動載入器
 
-下載您想要的視覺化工作室版本的引導程式檔。 請確保選擇 **"保存**"，然後選擇 **"打開資料夾**"。
+下載您想要的可視化工作室版本的引導程式檔。 請確保選擇 **「儲存**」,然後選擇 **「打開資料夾**」。
 
 ::: moniker range="vs-2017"
 
-要獲取 Visual Studio 2017 的引導者，請參閱[Visual Studio 早期版本的](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，瞭解如何執行此操作的詳細資訊。
+要獲取 Visual Studio 2017 的引導者,請參閱[Visual Studio 早期版本的](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面,瞭解如何執行此操作的詳細資訊。
 
-設置可執行檔&mdash;或更具體，引導程式檔&mdash;應匹配或類似于以下檔之一。
+設置可執行檔&mdash;或更具體,引導程式&mdash;檔 應匹配或類似於以下檔之一。
 
 | 版本 | 檔案名稱 |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ ms.locfileid: "79303404"
 
 ::: moniker range="vs-2019"
 
-設置可執行檔&mdash;或更具體，引導程式檔&mdash;應匹配或類似于以下檔之一。
+設置可執行檔&mdash;或更具體,引導程式&mdash;檔 應匹配或類似於以下檔之一。
 
 |版本 | 下載|
 |-------------|-----------------------|
@@ -66,11 +66,11 @@ ms.locfileid: "79303404"
 ::: moniker-end
 
 >[!TIP]
->如果您以前下載了一個引導程式檔，並希望驗證其版本，請介紹如何。 在 Windows 中，打開檔資源管理器，按右鍵引導程式檔，選擇 **"屬性**"，選擇 **"詳細資訊**"選項卡，然後查看**產品版本**號。 要將該編號與 Visual Studio 版本相匹配，請參閱[Visual Studio 生成編號和發佈日期](visual-studio-build-numbers-and-release-dates.md)頁面。
+>如果您以前下載了一個引導程式檔,並希望驗證其版本,請介紹如何。 在 Windows 中,打開檔案資源管理器,右鍵單擊引導程式檔,選擇 **「屬性**」,選擇 **「詳細資訊**」選項卡,然後查看**產品版本**號。 要將該編號與 Visual Studio 版本相匹配,請參閱[Visual Studio 生成編號和發佈日期](visual-studio-build-numbers-and-release-dates.md)頁面。
 
 ## <a name="create-an-offline-installation-folder"></a>建立離線安裝資料夾
 
-您必須連接網際網路，才能完成此步驟。 要創建具有所有語言和所有功能的離線安裝，請使用類似于以下示例之一的命令。
+您必須連接網際網路，才能完成此步驟。 要建立具有所有語言和所有功能的離線安裝,請使用類似於以下範例之一的命令。
 
    > [!IMPORTANT]
    > 完整的 Visual Studio 配置至少需要 35 GB 磁碟空間，且下載需要一些時間。 如需如何僅使用您想要安裝的元件來建立配置的詳細資料，請參閱[自訂網路配置](#customize-the-network-layout)一節。
@@ -90,7 +90,7 @@ ms.locfileid: "79303404"
 
 您可以修改 response.json，以設定安裝程式執行時所使用的預設值。  例如，您可以設定 `response.json` 檔案來自動選取所選的一組特定工作負載。 如需詳細資訊，請參閱[使用回應檔自動安裝 Visual Studio](automated-installation-with-response-file.md)。
 
-此外，如果您在將 Visual Studio 引導器與回應.json 檔配對時遇到問題，[請參閱安裝或使用 Visual Studio 頁時疑難排解網路相關錯誤的](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)"無法解析 ID"部分，瞭解有關操作操作的詳細資訊。
+此外,如果您在將 Visual Studio 引導器與回應.json 檔配對時遇到問題,[請參閱安裝或使用 Visual Studio 頁時疑難排解網路相關錯誤的](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)「無法解析 ID」部分,瞭解有關操作操作的詳細資訊。
 
 ## <a name="copy-the-layout-to-a-network-share"></a>將配置複製到網路共用
 
@@ -231,14 +231,17 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 ::: moniker range="vs-2019"
 > [!IMPORTANT]
-> 對於離線安裝，如果收到一條錯誤訊息，指出"找不到與以下參數匹配的產品"，請確保將`--noweb`交換器與版本 16.3.5 或更高版本一起使用。
+> 對於離線安裝,如果收到一條錯誤消息,指出「找不到與以下參數匹配的產品」,請確保將`--noweb`交換機與版本 16.3.5 或更高版本一起使用。
 >
 ::: moniker-end
 
 當您從配置進行安裝時，會從配置中取得已安裝的內容。 不過，如果您選取的元件不在配置中，則會從網際網路取得。  如果您想要防止 Visual Studio 安裝程式下載您配置中遺漏的任何內容，請使用 `--noWeb` 選項。 如果使用 `--noWeb`，而且配置遺失已選取要安裝的任何內容，則安裝程式會失敗。
 
+> [!TIP]
+> 如果要在非 Internet 連接的電腦上從離線來源安裝,請同時`--noWeb``--noUpdateInstaller`指定和選項。 前者阻止下載更新的工作負載、元件等。 後者阻止安裝程式從 Web 自我更新。
+
 > [!IMPORTANT]
-> `--noWeb` 選項不會阻止 Visual Studio 安裝程式檢查更新。 如需詳細資訊，請參閱[控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)頁面。
+> 該`--noWeb`選項不會阻止 Internet 電腦上的 Visual Studio 設置檢查更新。 如需詳細資訊，請參閱[控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)頁面。
 
 ### <a name="error-codes"></a>錯誤碼
 
@@ -274,13 +277,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 ::: moniker-end
 
-如果需要為舊版本的 Visual Studio 創建佈局，請轉到[https://my.visualstudio.com](https://my.visualstudio.com)下載"固定"版本的 Visual Studio 引導器。
+如果需要為舊版本的 Visual Studio 創建佈局,[https://my.visualstudio.com](https://my.visualstudio.com)請轉到 下載「固定」版本的 Visual Studio 引導器。
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>如何取得離線安裝程式的支援
 
 如果您的離線安裝發生問題，我們會想要進行了解。 告訴我們的最簡單方式就是使用[回報問題](../ide/how-to-report-a-problem-with-visual-studio.md)工具。 使用此工具時，您可以將我們所需的遙測和記錄檔傳送給我們，來協助我們診斷及修正問題。
 
-我們也提供[**即時聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (僅限英文) 支援選項，可回答有關安裝的相關問題。
+我們也提供[**安裝聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (僅限英文) 支援選項，可回答安裝的相關問題。
 
 我們也提供其他支援選項。 如需清單，請參閱我們的[意見反應](../ide/feedback-options.md)頁面。
 
@@ -292,5 +295,6 @@ vs_enterprise.exe --layout c:\VSLayout --all
 - [控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 - [視覺化工作室產品生命週期和服務](/visualstudio/releases/2019/servicing/)
 - [在維護基底上時更新 Visual Studio](update-servicing-baseline.md)
-- [使用命令列參數安裝視覺化工作室](use-command-line-parameters-to-install-visual-studio.md)
+- [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
+- [安裝 Visual Studio 離線安裝所需的憑證](/install-certificates-for-visual-studio-offline.md)

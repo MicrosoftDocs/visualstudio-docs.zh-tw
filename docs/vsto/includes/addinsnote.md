@@ -3,12 +3,12 @@ author: John-Hart
 ms.topic: include
 ms.date: 08/14/2019
 ms.author: johnhart
-ms.openlocfilehash: 38f6de56d26cbcaf8739ea8458d846c5a2daf721
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 8bf2f79a12c606e58e60c94854d533eedbc9f395
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "69547974"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80573150"
 ---
 > [!NOTE]
-> 想要開發可跨[多個平臺](https://dev.office.com/add-in-availability)擴充 Office 經驗的解決方案嗎？ 請參閱新的[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 相較于 VSTO 增益集和解決方案，Office 增益集的使用量很小，而且您可以使用幾乎任何 web 程式設計技術（例如 HTML5、JavaScript、CSS3 和 XML）來建立它們。
+> 有興趣開發跨多個平台擴展 Office 體驗的解決方案? 檢視新的[Office 外接程式模型](/office/dev/add-ins/)。 與 VSTO 載入項和解決方案相比,Office 載入項佔用空間小,您可以使用幾乎任何 Web 編程技術(如 HTML5、JavaScript、CSS3 和 XML)來建置它們。

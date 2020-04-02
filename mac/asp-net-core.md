@@ -6,16 +6,16 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cfe7e7f852530c32efbbaec2fbc92060fadeb40e
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75405014"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543890"
 ---
 # <a name="getting-started-with-aspnet-core"></a>開始使用 ASP.NET Core
 
- Visual Studio for Mac 可藉由支援最新的 ASP.NET Core Web 程式開發平台，讓您輕鬆地開發應用程式的服務。 ASP.NET Core 在 .NET Core 上執行，而 .NET Core 是 .NET Framework 和執行階段的最新演進。 它已針對快速效能調整、分解成小型安裝大小，並重新設想為在 Linux 與 macOS 及 Windows 上執行。
+ 適用於 Mac 的 Visual Studio 支援最新的 ASP.NET 酷睿 Web 開發平臺,因此可以輕鬆開發應用的服務。 ASP.NET Core 在 .NET Core 上執行，而 .NET Core 是 .NET Framework 和執行階段的最新演進。 它經過優化,性能快速,考慮安裝大小小,並重新構想在 Linux 和 macOS 以及 Windows 上運行。
 
 ## <a name="installing-net-core"></a>安裝 .NET Core
 
@@ -38,11 +38,11 @@ ms.locfileid: "75405014"
 
 ![ASP.NET 專案選項](media/asp-net-core-2019-new-asp-core.png)
 
-選取 [ASP.NET Core 空白 Web 應用程式]****，然後按 [下一步]****。 提供專案名稱，然後按 [建立]****。 這將創建一個新的ASP.NET核心應用。 在解決方案墊的左側窗格中，展開第二個箭頭，然後選擇**Startup.cs**。 它的外觀應類似于下圖：
+選取 [ASP.NET Core 空白 Web 應用程式]****，然後按 [下一步]****。 提供專案名稱，然後按 [建立]****。 這將創建一個新的ASP.NET核心應用。 在解決方案墊的左邊窗格中,展開第二個箭頭,然後選擇**Startup.cs**。 它的外觀應類似於下圖:
 
 ![新的 ASP.NET Core 空白專案檢視](media/asp-net-core-2019-empty-project.png)
 
-ASP.NET核心空範本創建一個 Web 應用程式，其中有兩個預設檔 **：Program.cs**和**Startup.cs**，下面將對此進行說明。 它也會建立相依性資料夾，其中包含專案的 NuGet 套件相依性，例如 ASP.NET Core、.NET Core 架構和用來建置專案的 MSBuild 目標：
+ASP.NET核心空範本建立一個 Web 應用程式,其中有兩個預設檔 **:Program.cs**和**Startup.cs**,下面將對此進行說明。 它建立一個相依項資料夾,其中包含專案的 NuGet 套件相依項,如 ASP.NET 核心、.NET Core 框架和產生專案的 MSBuild 目標:
 
 ![顯示相依性的 Solution Pad](media/asp-net-core-2019-solution-dependencies.png)
 
@@ -64,7 +64,7 @@ ASP.NET核心空範本創建一個 Web 應用程式，其中有兩個預設檔 *
     }
 ```
 
-ASP.NET核心應用通過 配置和啟動主機（通過[`WebHostBuilder`](/aspnet/core/fundamentals/hosting)的實例）創建一個 Web 服務器， 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中會使用下列組態：
+ASP.NET核心應用通過 配置和啟動主機([`WebHostBuilder`](/aspnet/core/fundamentals/hosting)通過的實例)創建一個 Web 伺服器, 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中會使用下列組態：
 
 * `.UseStartup<Startup>()`：指定啟動類別。
 
@@ -118,9 +118,9 @@ ASP.NET核心應用通過 配置和啟動主機（通過[`WebHostBuilder`](/aspn
 
 預先建立範本的 `Configure` 方法是為了執行一些作業而建立的。 首先，它會設定例外狀況處理頁面以供開發期間使用。 然後，它會以簡單的 "Hello World" 傳送回應給要求網頁。
 
-現在，無需新增任何其他程式碼，即可執行這個簡單的 Hello, World 專案。 要運行應用，可以使用"播放"按鈕的右下拉清單選擇要運行應用的應用的瀏覽器，或者只需點擊"播放（三角形）"按鈕即可使用預設瀏覽器：
+現在，無需新增任何其他程式碼，即可執行這個簡單的 Hello, World 專案。 要執行應用,可以使用「播放」按鈕的右下拉清單選擇要執行應用的應用的瀏覽器,或者只需點擊「播放(三角形)」按鈕即可使用預設瀏覽器:
 
-![瀏覽器運行](media/asp-net-web-picker.png)
+![瀏覽器執行](media/asp-net-web-picker.png)
 
 Visual Studio for Mac 會使用隨機的連接埠來啟動您的 Web 專案。 若要找出這個連接埠，請開啟應用程式輸出，其列在 [檢視] > [板]**** 底下。 您應該尋找的輸出類似如下：
 
@@ -236,7 +236,7 @@ ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式�
 
 本指南提供了 ASP.NET Core 的簡介。 當中描述其概念和使用時機，並提供了如何在 Visual Studio for Mac 中使用它的資訊。
 如需其下一個步驟的詳細資訊，請參閱下列指南：
-- [ASP.NET核心](/aspnet/core/?view=aspnetcore-2.1#build-web-apis-and-web-ui-using-aspnet-core-mvc)文檔。
+- [ASP.NET核心](/aspnet/core/?view=aspnetcore-2.1)文件。
 - [建立原生行動應用程式的後端服務](/aspnet/core/mobile/native-mobile-backend)，其示範如何使用 Xamarin.Forms 應用程式的 ASP.NET Core 來建置 REST 服務。
 - [ASP.NET Core 實習實驗室](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
 

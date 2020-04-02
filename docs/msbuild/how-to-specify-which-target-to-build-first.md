@@ -12,19 +12,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e008e3181cd7c633179f35e7639265a2495fafe2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c679b2a43ec799035f9bafb6a03a546808498342
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633794"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543993"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>如何：指定要優先建置的目標
 
-專案檔可以包含一或多個 `Target` 項目來定義專案的建置方式。 Microsoft Build Engine （MSBuild） 引擎生成它找到的第一個專案和任何依賴項，除非專案檔案包含`DefaultTargets`屬性、`InitialTargets`屬性或目標，使用 **-target**開關在命令列中指定。
+專案檔可以包含一或多個 `Target` 項目來定義專案的建置方式。 Microsoft Build Engine (MSBuild) 引擎產生它找到的第一個專案和任何依賴項,`DefaultTargets`除非專案`InitialTargets`檔包含 屬性、 屬性或目標,使用 **-target**開關在命令列中指定。
 ## <a name="use-the-initialtargets-attribute"></a>使用 InitialTargets 屬性
 
- `Project` 項目的 `InitialTargets` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。
 `Project` 項目的 `InitialTargets` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。
 
 #### <a name="to-specify-one-initial-target"></a>指定一個初始目標
@@ -43,7 +42,7 @@ ms.locfileid: "77633794"
 
 ## <a name="use-the-defaulttargets-attribute"></a>使用 DefaultTargets 屬性
 
- 如果未在命令列上明確指定目標，則 `Project` 項目的 `DefaultTargets` 屬性會指定要建置哪些目標。 如果在`InitialTargets`和`DefaultTargets`屬性中指定目標，並且命令列上未指定目標，則 MSBuild 運行屬性中指定的目標`InitialTargets`，後跟`DefaultTargets`屬性中指定的目標。
+ 如果未在命令列上明確指定目標，則 `Project` 項目的 `DefaultTargets` 屬性會指定要建置哪些目標。 如果在`InitialTargets`和`DefaultTargets`屬性中指定目標,並且命令列上未指定目標,則 MSBuild 運行屬性`InitialTargets`中指定的目標`DefaultTargets`,後跟 屬性中指定的目標。
 
 #### <a name="to-specify-one-default-target"></a>指定一個預設目標
 
@@ -61,7 +60,7 @@ ms.locfileid: "77633794"
 
 ## <a name="use-the--target-switch"></a>使用 -target 參數
 
- 如果在專案檔案中未定義預設目標，或者不想使用該預設目標，則可以使用命令列開關 **-目標**來指定其他目標。 使用 **-target**開關指定的目標或目標將運行，而不是`DefaultTargets`屬性指定的目標。 `InitialTargets` 屬性中執行的目標永遠會先執行。
+ 如果在專案檔中未定義預設目標,或者不想使用該預設目標,則可以使用命令行開關 **-目標**來指定其他目標。 使用 **-target**開關指定的目標或目標將運行`DefaultTargets`,而不是屬性指定的目標。 `InitialTargets` 屬性中執行的目標永遠會先執行。
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>優先使用非預設的目標
 
@@ -79,4 +78,4 @@ ms.locfileid: "77633794"
 
 - [MSBuild](../msbuild/msbuild.md)
 - [目標](../msbuild/msbuild-targets.md)
-- [如何：清理生成](../msbuild/how-to-clean-a-build.md)
+- [如何:清理產生](../msbuild/how-to-clean-a-build.md)
