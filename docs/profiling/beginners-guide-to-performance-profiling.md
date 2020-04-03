@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ac7d23c1d4cb245366ecf03c1a8a0e67b11cb55
-ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
+ms.openlocfilehash: 5134e17c26ffd7b34c0277c571173ba03d758bee
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80412016"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638790"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>透過分析 CPU 使用量測量應用程式效能
 
@@ -35,7 +35,7 @@ ms.locfileid: "80412016"
 > [!Important]
 > 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
 
-在本文中，我們將討論一般偵錯工作流程中的 CPU 使用量分析。 您也可以不附加偵錯工具或是以執行中的應用程式為目標來分析 CPU 使用量。如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[收集分析資料但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。 您還可以使用另一個分析工具[PerfTips](../profiling/perftips.md)來單步執行代碼,並確定完成特定函數或代碼塊所需的時間。
+在本文中，我們將討論一般偵錯工作流程中的 CPU 使用量分析。 您還可以分析 CPU 使用方式,而無需附加調試器或定位正在運行的應用。 有關詳細資訊,請參閱[執行具有或不帶除錯器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 您還可以使用另一個分析工具[PerfTips](../profiling/perftips.md)來單步執行代碼,並確定完成特定函數或代碼塊所需的時間。
 
 您可以在 Windows 7 及更新版本使用不具偵錯工具的分析工具。 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具]**** 視窗)。
 

@@ -1,18 +1,19 @@
 ---
 title: 瀏覽儲存體以上傳資料
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0f2522117f4c5a5b85e99e2779d10cffcb7f22
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ece3ffa3a273e903f403fd7df7005bfb54172f62
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72777402"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638447"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>瀏覽儲存體以上傳資料或下載模型和記錄檔
 

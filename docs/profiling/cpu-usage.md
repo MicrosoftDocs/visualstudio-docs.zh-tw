@@ -1,7 +1,7 @@
 ---
 title: 分析 CPU 使用量 | Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553498"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638843"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用量
 
 要開始調查應用程式中效能問題的好方法是了解其 CPU 使用量。 [CPU 使用量]**** 效能工具顯示花在 C++、C#/Visual Basic 和 JavaScript 應用程式中執行程式碼的 CPU 時間和百分比。
 
-[CPU 使用量]**** 工具可以在開啟的 Visual Studio 專案上及已安裝的 Microsoft Store 應用程式上執行，或是附加至執行中的應用程式或處理程序。 您可以在本機或遠端電腦上，或在模擬器 (Simulator 或 Emulator) 中執行工具。 有關詳細資訊，請參閱[運行具有或不帶調試器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+[CPU 使用量]**** 工具可以在開啟的 Visual Studio 專案上及已安裝的 Microsoft Store 應用程式上執行，或是附加至執行中的應用程式或處理程序。 有關詳細資訊,請參閱[執行具有或不帶除錯器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
 
 執行 [CPU 使用量]**** 工具時不一定需要包含偵錯。 在偵錯工具中，您可以開啟和關閉 CPU 分析，並查看每個函式的 CPU 使用量明細。 執行暫停時，例如在中斷點，您可以檢視 CPU 使用量的結果。
 
@@ -33,11 +33,11 @@ ms.locfileid: "62553498"
 
 ## <a name="collect-cpu-usage-data"></a>收集 CPU 使用量資料
 
-1. 在 Visual Studio 專案中，將方案組態設定為 [發行]**** 並選取 [本機電腦]**** 作為部署目標。
+1. 在 Visual Studio 專案中,將解決方案配置設定為 **「發布**」,並選擇**本機通訊協定**(或**本地電腦**)作為部署目標。
 
     ![選取版本和本機電腦](../profiling/media/cpuuse_selectreleaselocalmachine.png "選取版本和本機電腦")
 
-1. 選擇**調試** > **性能探測器**。
+1. 選擇**除錯** > **效能探查器**。
 
 1. 在 [可用的工具]**** 下，選取 [CPU 使用量]****，然後選取 [啟動]****。
 
@@ -45,11 +45,11 @@ ms.locfileid: "62553498"
 
 4. 應用程式啟動之後，診斷工作階段會開始，並顯示 CPU 使用量資料。 當您完成收集資料時，請選取 [停止收集]****。
 
-   ![停止 CPU 使用率資料收集](../profiling/media/cpu_use_wt_stopcollection.png "停止 CPU 使用率資料收集")
+   ![停止 CPU 使用量資料收集](../profiling/media/cpu_use_wt_stopcollection.png "停止 CPU 使用量資料收集")
 
    CPU 使用量工具會分析資料，以及顯示報告。
 
-   ![CPU 使用方式報告](../profiling/media/cpu_use_wt_report.png "CPU 使用方式報告")
+   ![CPU 使用情況報告](../profiling/media/cpu_use_wt_report.png "CPU 使用情況報告")
 
 ## <a name="analyze-the-cpu-usage-report"></a>分析 CPU 使用量報告
 
@@ -74,10 +74,10 @@ ms.locfileid: "62553498"
 #### <a name="call-tree-structure"></a><a name="BKMK_Call_tree_structure"></a> 呼叫樹狀圖結構
 
 ::: moniker range=">=vs-2019"
-![調用樹結構](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "呼叫樹狀圖結構")
+![呼叫樹結構](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "呼叫樹狀圖結構")
 ::: moniker-end
 ::: moniker range="vs-2017"
-![調用樹結構](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "呼叫樹狀圖結構")
+![呼叫樹結構](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "呼叫樹狀圖結構")
 ::: moniker-end
 
 |||
@@ -108,7 +108,7 @@ ms.locfileid: "62553498"
 ![搜尋巢狀外部程式碼](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "搜尋巢狀外部程式碼")
 ::: moniker-end
 
-### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>CPU 使用率調用樹中的非同步函數
+### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>CPU 使用量呼叫樹中的非同步函數
 
  當編譯器發現非同步方法時，它會建立隱藏的類別來控制方法的執行。 就概念而言，類別是狀態機器。 類別具有編譯器產生的函式，以非同步方式呼叫原始方法，以及若要執行它們所需的回呼、排程器和迭代器。 父方法呼叫原始方法時，編譯器會從父代的執行內容移除該方法，並在控制應用程式執行的系統和架構程式碼內容中執行隱藏類別方法。 非同步方法通常 (但不一定永遠) 會在一個或多個不同的執行緒上執行。 這段程式碼會在 [CPU 使用量]**** 呼叫樹狀結構中，顯示為樹狀結構最上層節點正下方 [外部程式碼]**** 節點的子系。
 
@@ -118,7 +118,7 @@ ms.locfileid: "62553498"
 
 展開所產生方法以顯示正在進行的作業：
 
-![擴展非同步節點](media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "擴展非同步節點")
+![延伸非同步節點](media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "延伸非同步節點")
 
 - `MainPage::GetMaxNumberAsyncButton_Click` 只會管理工作值清單、計算結果的最大值，並顯示輸出。
 

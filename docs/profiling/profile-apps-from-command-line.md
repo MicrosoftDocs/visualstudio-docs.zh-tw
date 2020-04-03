@@ -1,5 +1,5 @@
 ---
-title: 測量命令列的性能
+title: 測量命令列的效能
 description: 從命令列測量應用程式中的 CPU 性能和託管記憶體使用方式。
 ms.custom: ''
 ms.date: 02/21/2020
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77558130"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638697"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>從命令列測量應用程式的效能
 
@@ -27,11 +27,13 @@ ms.locfileid: "77558130"
 
 本文所述範例會收集 Microsoft [記事本] 的效能資訊，但您可以使用相同的方法來分析任何處理序。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
-* Visual Studio 2019 Preview 3 或更新版本
+* 視覺工作室 2019 或更高版本
 
 * 熟悉命令列工具
+
+* 您可以在未安裝 Visual Studio 的遠端電腦上收集效能資訊,請在遠端電腦上安裝[視覺化工作室的效能工具](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019)。 這些工具的版本必須與您的視覺工作室版本匹配。
 
 ## <a name="collect-performance-data"></a>收集效能資料
 

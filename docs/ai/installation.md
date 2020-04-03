@@ -2,19 +2,20 @@
 title: 安裝 AI 工具
 description: 描述如何安裝適用於 Visual Studio 的 AI 工具
 keywords: AI, Visual Studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75915804"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638582"
 ---
 # <a name="installation"></a>安裝
 
@@ -26,14 +27,14 @@ Visual Studio Tools for AI 可以安裝在 Windows 64 位元作業系統上。
 
 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) 或從 Visual Studio 內下載這些工具：
 
-1. 選擇**工具** > **擴展和更新**。
+1. 選擇**工具** > **延伸與更新**。
 
    ![Visual Studio 中的 [擴充功能和更新] 功能表](media/installation/extensions.png)
 
 2. 在 [擴充功能和更新]**** 對話方塊中，選取左側的 [線上]****。
 3. 在右上角的 [搜尋] 方塊中，鍵入或輸入 "tools for ai"。
 4. 從結果中選取 [Visual Studio Tools for AI]****。
-5. 按一下 [下載]****
+5. 按一下 [下載]  。
 
 ## <a name="prepare-your-local-machine"></a>準備本機電腦
 

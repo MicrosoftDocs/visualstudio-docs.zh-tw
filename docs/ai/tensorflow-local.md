@@ -2,20 +2,21 @@
 title: 在本機定型 TensorFlow 模型
 description: 在適用於 Visual Studio 的 AI 工具本機執行 TensorFlow 模型
 keywords: AI, Visual Studio, TensorFlow, 本機
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: eca02b74154eab5468adeabdb84efdf2839fc92e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72777437"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638749"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本機定型 TensorFlow 模型
 
@@ -23,7 +24,7 @@ ms.locfileid: "72777437"
 
 MNIST 資料庫具有 60,000 個範例的定型集，以及 10,000 個手寫數字範例的測試集。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 開始之前，請確定您已安裝下列項目：
 
@@ -53,7 +54,7 @@ C:\>pip.exe install tensorflow
 
 - 在 [方案總管]**** 中，找到 MNIST 專案並按一下滑鼠右鍵，然後選取 [設定為啟始專案]****。
 
-- 按一下 [開始]****。
+- 按一下 [啟動]  。
 
 - 輸出會列印於主控台中。
 
