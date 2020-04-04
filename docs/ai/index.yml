@@ -1,14 +1,15 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: 適用於 AI 的 Visual Studio Tools
+title: Visual Studio Tools for AI
 metadata:
   document_id: 83ceabb5-fb4f-a709-3fd2-37d024409f31
   title: Visual Studio Tools for AI | Microsoft Docs
   ms.prod: visual-studio-windows
   ms.technology: vs-ai-tools
-  author: lisawong19
-  ms.author: liwong
-  manager: routlaw
+  author: jillre
+  ms.author: jillfra
+  manager: jillfra
+  monikerRange: vs-2017
   ms.topic: landing-page
   ms.date: 10-25-2017
 abstract:
