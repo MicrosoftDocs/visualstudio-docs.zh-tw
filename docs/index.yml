@@ -14,12 +14,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: b36b1835f38a4ce6fe46d72935dc8cfc144561c3
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 157d3bc451829b0c91772a66222b563cd07a5eaf
+  ms.sourcegitcommit: 20049ffecc08fdfae45406c26190de900357eef6
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74118913"
+  ms.lasthandoff: 04/02/2020
+  ms.locfileid: "80620641"
 productDirectory:
   items:
   - title: Visual Studio
@@ -30,7 +30,7 @@ productDirectory:
     - url: /visualstudio/windows?view=vs-2017
       text: Visual Studio 2017
     - url: https://docs.microsoft.com/previous-versions/visualstudio/
-      text: 舊版
+      text: 舊版本
     - url: https://docs.microsoft.com/visualstudio/releases/2019/release-notes
       text: 版本資訊
     - url: https://visualstudio.microsoft.com/
@@ -55,7 +55,16 @@ productDirectory:
       text: 版本資訊
     - url: https://code.visualstudio.com
       text: 產品頁面
-  - title: Visual Studio App Center
+  - title: Visual Studio Online
+    imageSrc: ./media/vs-ide-2019.svg
+    links:
+    - url: https://docs.microsoft.com/visualstudio/online/
+      text: 文件
+    - url: https://code.visualstudio.com/docs/remote/vsonline
+      text: 使用 Visual Studio Code
+    - url: https://visualstudio.microsoft.com/services/visual-studio-online/
+      text: 產品頁面
+  - title: Visual Studio 應用程式中心
     imageSrc: ./media/vs-mobile-center.svg
     links:
     - url: https://docs.microsoft.com/appcenter
@@ -72,4 +81,4 @@ productDirectory:
     - url: https://my.visualstudio.com
       text: 入口網站
     - url: https://manage.visualstudio.com
-      text: 系統管理
+      text: 管理
