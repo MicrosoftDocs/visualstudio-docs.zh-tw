@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS | Microsoft Docs
+title: DEBUG_ADDRESS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_ADDRESS structure
 ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc25fb53db918486029e931a06a9e2de37f81c5a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe778ba3ed80930a4cd7b4fa1170f286b3ccf6ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346302"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737518"
 ---
-# <a name="debugaddress"></a>DEBUG_ADDRESS
-此結構代表地址。
+# <a name="debug_address"></a>DEBUG_ADDRESS
+此結構表示位址。
 
 ## <a name="syntax"></a>語法
 
@@ -47,26 +47,26 @@ public struct DEBUG_ADDRESS {
 
 ## <a name="members"></a>成員
 `ulAppDomainID`\
-處理序識別碼。
+進程識別碼。
 
 `guidModule`\
-包含此位址之模組的 GUID。
+包含此位址的模組的 GUID。
 
 `tokClass`\
-語彙基元，可識別的類別或此位址的類型。
+標識此位址的類或類型的權杖。
 
 > [!NOTE]
-> 這個值是特定符號提供者也因此而不做為類別類型的識別項的一般意義。
+> 此值特定於符號提供程式,因此除了作為類類型的標識符之外,沒有一般含義。
 
 `addr`\
-A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構，其中包含可描述個別地址類型結構的聯集。 值`addr`。`dwKind` 來自[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別，其中說明如何解譯聯集。
+[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構,其中包含描述各個地址類型的結構聯合。 數`addr`值 。`dwKind` 來自[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚舉,它解釋了如何解釋聯合。
 
 ## <a name="remarks"></a>備註
-此結構會傳遞至[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)来填入的方法。
+此結構傳遞給要填充的[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)方法。
 
-**警告 [C++只]**
+**警告 [僅限C++]**
 
-如果`addr.dwKind`已`ADDRESS_KIND_METADATA_LOCAL`如果`addr.addr.addrLocal.pLocal`不是 null 的值，則您必須呼叫`Release`語彙基元的指標：
+如果`addr.dwKind``ADDRESS_KIND_METADATA_LOCAL`為 ,`addr.addr.addrLocal.pLocal`如果不是 空值,則`Release`必須呼叫 權杖指標:
 
 ```
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
@@ -76,14 +76,14 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != 
 ```
 
 ## <a name="requirements"></a>需求
-標頭： sh.h
+標題: sh.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
