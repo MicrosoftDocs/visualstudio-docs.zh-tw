@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS | Microsoft Docs
+title: BP_FLAGS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_FLAGS enumeration
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31f5153c3a2d0b55829a7743840fe8a791f023d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319215"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738056"
 ---
-# <a name="bpflags"></a>BP_FLAGS
-提供可用來設定中斷點時，請指定其他資訊的選擇性旗標。
+# <a name="bp_flags"></a>BP_FLAGS
+提供可選標誌,用於在設置斷點時指定其他資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -46,25 +46,25 @@ public enum enum_BP_FLAGS {
 
 ## <a name="fields"></a>欄位
 `BP_FLAG_NONE`\
-不指定任何中斷點旗標。
+指定無斷點標誌。
 
 `BP_FLAG_MAP_DOCPOSITION`\
-指定偵錯引擎 (DE) 應該對應使用的文件位置的中斷點。 這是僅適用於指令碼導向的原始程式檔等動態伺服器網頁 (ASP) 中設定中斷點。
+指定除錯引擎 (DE) 應使用文件位置映射斷點。 這僅適用於在面向腳稿的源檔中設置的斷點,如活動伺服器頁 (ASP)。
 
 `BP_FLAG_DONT_STOP`\
-指定偵錯引擎中，應該處理中斷點，但，偵錯引擎最終應該不只如此 (亦即[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)應該不會傳送事件的物件)。 這個旗標被設計用於主要是使用追蹤點。
+指定斷點應由調試引擎處理,但調試引擎最終不應停止於此(即,不應發送[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)事件物件)。 此標誌設計主要用於跟蹤點。
 
 ## <a name="remarks"></a>備註
-用於`dwFlags`隸屬[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)並[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。
+用於`dwFlags`[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)和[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構的成員。
 
-這些值可能會合併的位元`OR`。
+這些值可以稍微結合`OR`。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

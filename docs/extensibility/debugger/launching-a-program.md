@@ -1,58 +1,58 @@
 ---
-title: 啟動程式 |Microsoft Docs
+title: 啟動計劃 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9488c002e78828471374b954550843e16ff0e6b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bf638e0c96c7df1de2650260427a972a07efce23
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344079"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738472"
 ---
 # <a name="launch-a-program"></a>啟動程式
-想要偵錯程式的使用者可以按下**F5**從 IDE 執行偵錯工具。 這樣就會開始一系列的最終會導致 IDE 連接到偵錯引擎 (DE)，依序連接，或附加，給程式，如下所示的事件：
+想要調試程式的用戶可以按**F5**從 IDE 運行除錯器。 這將啟動一系列事件,最終導致 IDE 連接到除錯引擎 (DE),調試引擎又連接到程式,如下所示:
 
-1. IDE 會先呼叫以取得解決方案的使用中專案的偵錯設定專案套件。 設定包括的起始目錄、 環境變數，在其中執行程式，連接埠，以指定要使用來建立程式，DE。 這些設定會傳遞至偵錯封裝。
+1. IDE 首先調用專案包以獲取解決方案的活動專案調試設置。 這些設置包括起始目錄、環境變數、程式將在其中運行的埠以及用於創建程式的 DE(如果指定)。 這些設置將傳遞到調試包。
 
-2. 如果指定規定，DE 呼叫啟動程式的作業系統。 由於啟動程式，會載入程式的執行階段環境。 比方說，如果在 MSIL 中撰寫程式，則 common language runtime 就會被叫用以執行程式。
+2. 如果指定了 DE,DE 將調用作業系統來啟動程式。 啟動程式後,程式的運行時環境將載入。 例如,如果程式是在 MSIL 中編寫的,則將調用通用語言運行時來運行該程式。
 
     -或-
 
-    如果未指定規定，連接埠就會呼叫啟動程式，這會導致載入程式的執行階段環境的作業系統。
+    如果未指定 DE,埠將調用作業系統啟動程式,這將導致載入程式的執行時環境。
 
    > [!NOTE]
-   > 如果使用規定來啟動程式，很可能相同 DE，會附加至程式。
+   > 如果 DE 用於啟動程式,則同一 DE 很可能將附加到該程式。
 
-3. 根據是否 DE 或連接埠啟動程式，DE 或執行階段環境建立計劃的描述或節點，然後通知程式正在執行中的連接埠。
+3. 根據 DE 還是連接埠啟動程式,DE 或執行時環境然後創建程式說明或節點,並通知埠程式正在執行。
 
    > [!NOTE]
-   > 建議的執行階段環境，建立程式 節點中，因為程式的節點是可偵錯之程式的輕量型表示法。 就不需要載入整個 DE 就來建立及註冊程式 節點。 如果是 DE 執行 IDE，但沒有 IDE 的過程中實際執行，需要有一個元件，可以將程式節點加入至連接埠。
+   > 建議運行時環境創建程式節點,因為程式節點是可調試的程序的羽量級表示形式。 無需僅載入整個 DE 來創建和註冊程式節點。 如果 DE 設計為在 IDE 過程中運行,但實際沒有 IDE 運行,則需要有一個元件可以將程式節點添加到埠。
 
-   新建立的程式，以及任何其他程式相關或不相關、 啟動或附加至相同的 IDE 中，從撰寫偵錯工作階段。
+   新創建的程式以及從同一 IDE 啟動或附加到的任何其他程式(相關或不相關程式)組成調試會話。
 
-   以程式設計的方式，當使用者第一次按下**F5**，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]的套件偵錯呼叫專案套件 （也就是相關聯程式正在啟動的型別） 透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法，這個方法會接著填寫<xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2>解決方案的使用中專案的偵錯設定結構。 此結構，會透過呼叫傳遞回到偵錯封裝<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A>方法。 偵錯封裝接著會執行個體化工作階段的偵錯管理員 (SDM)，可用來啟動程式正在偵錯，以及任何關聯的偵錯引擎。
+   在程式設計上,當使用者首次按**F5**時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)],除錯<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>套件透過方法調用專案套件(與正在啟動的程式類型相關聯),該方法又使用解決方案的活動專案調試設置<xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2>填充 結構。 此結構通過調用<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A>方法傳回調試包。 然後,調試包實例化會話調試管理器 (SDM),該管理器啟動正在調試的程式和任何關聯的調試引擎。
 
-   其中一個引數傳遞至 SDM 是用來啟動程式 DE 的 GUID。
+   傳遞給 SDM 的參數之一是用於啟動程式的 DE 的 GUID。
 
-   如果不是 DE GUID `GUID_NULL`，SDM DE，會同時建立，然後呼叫其[LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法來啟動程式。 例如，如果程式以原生程式碼，撰寫`IDebugEngineLaunch2::LaunchSuspended`可能會呼叫`CreateProcess`和`ResumeThread`（Win32 函式），以執行程式。
+   如果 DE`GUID_NULL`GUID 不是 ,則 SDM 共同建立 DE,然後調用其[Launch 暫停](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法啟動程式。 例如,如果程式是用本機代碼編寫的,`IDebugEngineLaunch2::LaunchSuspended`則可能會調`CreateProcess`用`ResumeThread`和 (Win32 函數)來運行該程式。
 
-   由於啟動程式，會載入程式的執行階段環境。 DE 或執行階段環境然後建立[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面來描述程式，並傳遞此介面，以便[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)通知程式的連接埠在執行中。
+   啟動程式後,將載入程式的運行時環境。 然後,DE 或運行時環境創建一個[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面來描述程式,並將此介面傳遞給[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)以通知埠程式正在運行。
 
-   如果`GUID_NULL`傳遞，則連接埠啟動的程式。 當程式執行時，執行階段環境會建立`IDebugProgramNode2`介面來描述程式，並將它傳遞給`IDebugPortNotify2::AddProgramNode`。 這會通知程式正在執行中的連接埠。 然後在 SDM 會將偵錯引擎附加至執行中的程式。
+   如果`GUID_NULL`傳遞,則埠將啟動該程式。 執行程式執行後,執行時環境會建立一`IDebugProgramNode2`個介面來描述程式並將其傳遞`IDebugPortNotify2::AddProgramNode`給 。 這將通知埠程式正在運行。 然後 SDM 將調試引擎附加到正在運行的程式。
 
 ## <a name="in-this-section"></a>本節內容
- [通知連接埠](../../extensibility/debugger/notifying-the-port.md)說明啟動程式，而且該連接埠會收到通知之後，會發生什麼事。
+ [通知連接埠](../../extensibility/debugger/notifying-the-port.md)說明程序啟動後會發生什麼情況,並通知埠。
 
- [在啟動後附加](../../extensibility/debugger/attaching-after-a-launch.md)文件時偵錯工作階段已準備好將 DE 附加至該程式。
+ [啟動後附加](../../extensibility/debugger/attaching-after-a-launch.md)當調試會話準備好將 DE 附加到程式時,將記錄。
 
 ## <a name="related-sections"></a>相關章節
- [偵錯工作](../../extensibility/debugger/debugging-tasks.md)包含各種偵錯工作，例如啟動程式和評估運算式的連結。
+ [除錯工作](../../extensibility/debugger/debugging-tasks.md)包含指向各種除錯任務的連結,例如啟動程式和評估運算式。

@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_STATE | Microsoft Docs
+title: EXCEPTION_STATE |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f05596b12151b3a40b87c6fc2f15659a38e3431
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cd2e280cd03ae413e0853950d13fbfefb69bc15f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337694"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736951"
 ---
-# <a name="exceptionstate"></a>EXCEPTION_STATE
-指定的例外狀況狀態。
+# <a name="exception_state"></a>EXCEPTION_STATE
+指定異常狀態。
 
 ## <a name="syntax"></a>語法
 
@@ -78,63 +78,63 @@ public enum enum_EXCEPTION_STATE {
 
 ## <a name="fields"></a>欄位
 `EXCEPTION_NONE`\
-不會停止在例外狀況。
+不要停止在異常。
 
 `EXCEPTION_STOP_FIRST_CHANCE`\
-停止在第一個引發的例外狀況。 描述例外狀況事件，當此旗標會指出例外狀況事件是第一個可能發生的例外狀況的事件。
+在首先觸發異常時停止。 描述異常事件時,此標誌指示異常事件是第一次異常事件。
 
 `EXCEPTION_STOP_SECOND_CHANCE`\
-停止在第二個引發的例外狀況。 當描述例外狀況事件，表示例外狀況事件的第二個可能發生例外狀況事件。
+在異常的第二次觸發時停止。 描述異常事件時,指示異常事件是第二個異常事件。
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE`\
-在使用者模式例外狀況的第一次引發處停止。 當描述例外狀況事件，表示例外狀況事件的第一個可能發生使用者例外狀況事件。
+首先觸發使用者模式異常時停止。 描述異常事件時,指示異常事件是第一次用戶異常事件。
 
 `EXCEPTION_STOP_USER_UNCAUGHT`\
-當未攔截到的使用者模式例外狀況時停止。 當描述例外狀況事件，表示例外狀況事件無法攔截的使用者模式例外狀況事件。
+未捕獲使用者模式異常時停止。 描述異常事件時,指示異常事件是未捕獲的使用者模式異常事件。
 
 `EXCEPTION_STOP_ALL`\
-停止的任何例外狀況。 描述例外狀況事件時，無法使用。
+停止任何異常。 描述異常事件時未使用。
 
 `EXCEPTION_CANNOT_BE_CONTINUED`\
-描述例外狀況事件，表示例外狀況，無法繼續從。
+描述異常事件時,指示無法繼續從 中繼續異常。
 
 `EXCEPTION_CODE_SUPPORTED`\
-表示例外狀況有支援它的程式碼。 用來顯示例外狀況
+指示異常具有支援它的代碼。 顯示例外
 
 `EXCEPTION_CODE_DISPLAY_IN_HEX`\
-表示以十六進位方式，應該會顯示例外狀況代碼。 用來顯示例外狀況。
+指示異常代碼應顯示在十六進制中。 用於顯示異常。
 
 `EXCEPTION_JUST_MY_CODE_SUPPORTED`\
-表示例外狀況的程式碼支援 JustMyCode。 用來顯示例外狀況。
+指示異常代碼支援 JustMyCode。 用於顯示異常。
 
 `EXCEPTION_MANAGED_DEBUG_ASSISTANT`\
-表示 managed 程式碼偵錯工具應該處理的例外狀況。 如果沒有設定，預設偵錯工具處理的例外狀況。 這會傳遞至[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)方法並不會用於[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構。
+指示託管代碼調試器應處理異常。 如果未設置,則默認調試器處理異常。 這將傳遞給[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)方法,並且未在[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構中使用。
 
 `EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT`\
-已淘汰，請勿使用。
+過時,請勿使用。
 
 `EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT`\
-已淘汰，請勿使用。
+過時,請勿使用。
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT`\
-已淘汰，請勿使用。
+過時,請勿使用。
 
 `EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT`\
-已淘汰，請勿使用。
+過時,請勿使用。
 
 ## <a name="remarks"></a>備註
-做`dwState`隸屬[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構來表示的狀態，以及例外狀況有關它可以做什麼。
+用作EXCEPTION_INFO結構`dwState`的成員,[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)用於指示異常的狀態以及可以對此執行哪些措施。
 
-這些值也會傳遞給[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)方法來設定所有的例外狀況的狀態。
+這些值也會傳遞給[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)方法,以設置所有異常的狀態。
 
-這些旗標可能會與位元 OR 運算結合。
+這些標誌可以與位或組合。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

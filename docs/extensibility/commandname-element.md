@@ -1,25 +1,25 @@
 ---
-title: CommandName 元素 |Microsoft Docs
+title: 指令名稱元素 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandName element (VSCT XML schema)
 - VSCT XML schema elements, CommandName
 ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b792e7bbe1efaa1158cc517cd96494049e2b9e2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8152942d015e21b1b80f735fd921a5ddde3674d5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337261"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739758"
 ---
-# <a name="commandname-element"></a>CommandName 元素
-`CommandName`項目會指定在的 鍵盤 類別中所顯示的文字**選項** 對話方塊中，然後在**命令**清單中**自訂**對話方塊方塊。
+# <a name="commandname-element"></a>指令名稱元素
+這個`CommandName`元素指定**選項**「對話框中的鍵盤類別中以及 **」自訂「** 對話框中的 **」命令清單**中顯示的文字。
 
 ## <a name="syntax"></a>語法
 
@@ -40,7 +40,7 @@ ms.locfileid: "66337261"
 
 |元素|描述|
 |-------------|-----------------|
-|[Strings 元素](../extensibility/strings-element.md)|群組文字項目，例如`ButtonText`和`CommandName`。|
+|[字串元素](../extensibility/strings-element.md)|文字元素(如`ButtonText`與`CommandName`)|
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

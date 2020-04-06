@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetExtendedInfo | Microsoft Docs
+title: IDebugField:獲取擴展資訊 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetExtendedInfo method
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ddae4ea7ecc58d67279ae638d19bf95ec2cc591
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dc414dd57e86149e38d7c85d11252eb93efced51
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352648"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728872"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
-這個方法取得擴充欄位的相關資訊。
+此方法獲取有關欄位的擴展資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -45,24 +45,24 @@ int GetExtendedInfo(
 
 ## <a name="parameters"></a>參數
 `guidExtendedInfo`\
-[in]選取要傳回的資訊。 有效值為：
+[在]選擇要返回的資訊。 有效值為：
 
 |值|描述|
 |-----------|-----------------|
-|`guidConstantValue`|以一連串的位元組值。|
-|`guidConstantType`|做為型別簽章類型。|
+|`guidConstantValue`|值作為位元組序列。|
+|`guidConstantType`|類型作為類型簽名。|
 
 `prgBuffer`\
-[out]傳回擴充的資訊。
+[出]返回擴展的資訊。
 
 `pdwLen`\
-[in、 out]會傳回大小的擴充的資訊，以位元組為單位。
+[進出]返回擴展資訊的大小(以位元組為單位)。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 目前，這個方法只會傳回型別或常數的值。 呼叫端必須釋放中傳回的緩衝區`prgBuffer`藉由呼叫 COM 的`CoTaskMemFree`函式 (C++) 或<xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A>(C#)。
+ 目前,此方法僅返回常量的類型或值。 呼叫方必須透過呼叫 COM`prgBuffer`的函數 (C++)`CoTaskMemFree`或<xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A>(C#) 釋放傳回的緩衝區。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

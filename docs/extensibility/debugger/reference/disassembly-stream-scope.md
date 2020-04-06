@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_SCOPE | Microsoft Docs
+title: DISASSEMBLY_STREAM_SCOPE |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_SCOPE enumeration
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 724e32f83cfec31c2bacdab661407983af87efe6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fae1f22c6db22cd6cff93cfb1b98a28620a1537c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318248"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737267"
 ---
-# <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
-指定反組譯碼資料流的範圍。
+# <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
+指定拆解流的範圍。
 
 ## <a name="syntax"></a>語法
 
@@ -48,28 +48,28 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 
 ## <a name="fields"></a>欄位
 `DSS_HUGE`\
-指定反組譯程式碼內容會產生比用戶端通常會想要擷取的單一呼叫中的多個輸出。
+指定拆解代碼上下文產生的輸出將超過用戶端在單個調用中通常希望檢索的輸出數。
 
 `DSS_FUNCTION`\
-指定應該要解譯的程式碼內容所包含的函式。 指定反組譯碼資料流時所傳回代表函式[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)方法。
+指定應拆解代碼上下文中包含的函數。 指定拆解流表示函數,當由[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)方法返回時。
 
 `DSS_MODULE`\
-當傳回`IDebugDisassemblyStream2::GetScope`方法，可讓您指定的反組譯碼資料流表示的模組。
+當由`IDebugDisassemblyStream2::GetScope`方法返回時,指定拆解流表示模組。
 
 `DSS_ALL`\
-指定整個位址空間的反組譯碼。
+指定整個位址空間的拆解。
 
 ## <a name="remarks"></a>備註
-作為引數[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)方法，並由傳回[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)方法。
+作為參數傳遞給[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)方法,並由[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)方法返回。
 
-這些值可能會合併的位元`OR`。
+這些值可以稍微結合`OR`。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

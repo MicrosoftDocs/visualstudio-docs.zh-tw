@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolution2::GetResolutionInfo | Microsoft Docs
+title: IDebugErrorBreakpoint決議2::獲取解析度資訊 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2::GetResolutionInfo
 ms.assetid: d94c4f60-8796-4848-86ee-186bbaa613f5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fefea5081278800b330dac665862a360b4a0c15b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d242dcfac7a9c846793a8dcc9cd6684923192a80
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327827"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730031"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
-取得中斷點解析錯誤資訊。
+獲取斷點錯誤解決資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int GetResolutionInfo( 
 
 ## <a name="parameters"></a>參數
 `dwFields`\
-[in]從旗標的組合[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)列舉型別，判斷哪些欄位`pErrorResolutionInfo`要填寫。
+[在][BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)枚舉中的標誌的組合,用於確定要填寫`pErrorResolutionInfo`的 欄位。
 
 `pErrorResolutionInfo`\
-[in、 out][BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)會填入的中斷點解析描述的結構。
+[進出]用斷點解析度說明填充[BP_ERROR_RESOLUTION_INFO結構。](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
-下列範例會實作這個方法來簡單`CDebugErrorBreakpointResolution`公開的物件[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)介面。
+以下示例為公開`CDebugErrorBreakpointResolution`[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)介面的簡單對象實現此方法。
 
 ```cpp
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(

@@ -1,28 +1,28 @@
 ---
-title: IDebugBinder3::GetMemoryContext64 | Microsoft Docs
+title: IDebugBinder3::獲取記憶體上下文64 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
 ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 92c589951e9b65536be5474f56eb6b959232b738
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f76d84f0403a853ae7e297084f8745d7428386a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327061"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735735"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-將記憶體內容的物件位置或 64 位元記憶體位址。
+將物件位置或 64 位元記憶體位址轉換為記憶體上下文。
 
 ## <a name="syntax"></a>語法
 
@@ -44,19 +44,19 @@ int GetMemoryContext64 (
 
 ## <a name="parameters"></a>參數
 `pField`\
-[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ，描述要尋找的物件。 如果`NULL`，然後使用`dwConstant`改。
+[在]描述要定位的物件的[IDebugField。](../../../extensibility/debugger/reference/idebugfield.md) 如果`NULL`,`dwConstant`則改用。
 
 `uConstant`\
-[in]64 位元記憶體位址，例如 0x50000000。
+[在]64 位記憶體位址,如 0x50000000。
 
 `ppMemCxt`\
-[out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)代表物件的位址或在記憶體中的位址的介面。
+[出]返回表示物件位址或記憶體中位址的[IDebugMemoryMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)介面。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
-下列範例會建立該物件會實作[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)介面，並使用這個方法來擷取記憶體內容。
+以下範例創建一個實現[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)介面並使用此方法檢索記憶體上下文的物件。
 
 ```cpp
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )

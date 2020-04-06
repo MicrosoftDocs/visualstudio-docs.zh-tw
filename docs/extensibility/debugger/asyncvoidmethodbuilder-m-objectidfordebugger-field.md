@@ -1,30 +1,30 @@
 ---
-title: AsyncVoidMethodBuilder.m_objectIdForDebugger 欄位 |Microsoft Docs
+title: 非方法構建器.m_objectIdForDebugger欄位 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_objectIdForDebugger field, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: 81331a7b-6bec-46e4-a53e-515d0fad2400
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e744b766a32232470e6d79b1cf8bfba08e1636c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 10d63a92e2648c269c51faddc9521323c76116b1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350943"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739321"
 ---
-# <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger 欄位
-表示偵錯工具用來唯一識別這個產生器的延遲初始化的物件。
+# <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>非同步VoidMethodBuilder.m_objectIdForDebugger欄位
+表示調試器用於唯一標識此生成器的懶惰初始化物件。
 
- **命名空間︰** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **命名空間:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **組件：** mscorlib （在 mscorlib.dll 中)
+ **程式集**:mscorlib(在 mscorlib.dll 中)
 
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。
+ 由於您無法從 .NET 框架訪問此內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
 
 ## <a name="syntax"></a>語法
 
@@ -34,4 +34,4 @@ ms.locfileid: "66350943"
 
 ## <a name="see-also"></a>另請參閱
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [適用於.NET Framework 的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET 框架的並行擴展內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

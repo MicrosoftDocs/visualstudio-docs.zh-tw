@@ -1,24 +1,24 @@
 ---
-title: IDebugNoSymbolsEvent2 | Microsoft Docs
+title: IDebugNoSymbolevent2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugNoSymbolsEvent2 interface
 ms.assetid: f6fb6388-47f6-4385-9ad5-95d62f9a7592
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dadd4547d5b0f691b454a98ba714abea9bf6f058
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9483c5a434ddfddb3f877111deabea9be6520b05
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323707"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726717"
 ---
 # <a name="idebugnosymbolsevent2"></a>IDebugNoSymbolsEvent2
-訊號[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯工具 UI 來警告使用者符號找不到啟動可執行檔。
+向[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]調試器 UI 發出訊號,警告使用者無法為啟動的可執行檔找到符號。
 
 ## <a name="syntax"></a>語法
 
@@ -26,12 +26,12 @@ ms.locfileid: "66323707"
 IDebugNoSymbolsEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 藉由將偵錯引擎，而且由[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI 偵錯工具。
+## <a name="notes-for-implementers"></a>實施者說明
+ 由調試引擎實現,並由[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]調試器 UI 使用。
 
 ## <a name="requirements"></a>需求
- 標頭：Msdbg.h
+ 標題: Msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll

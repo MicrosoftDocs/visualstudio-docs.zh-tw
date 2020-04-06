@@ -1,5 +1,5 @@
 ---
-title: 建立基本的專案系統，第1部分 |Microsoft Docs
+title: 創建基本項目系統,第 1 部分 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,80 +7,80 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f0dee8364ac16becc538fa6fc8c6f90d955c078
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 4ff969a905d48ef16b3cb036fa897bf0307b929d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848143"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739732"
 ---
-# <a name="create-a-basic-project-system-part-1"></a>建立基本的專案系統，第1部分
-在 Visual Studio 中，專案是開發人員用來組織原始程式碼檔案和其他資產的容器。 專案會在**方案總管**中顯示為解決方案的子系。 專案可讓您組織、建立、偵測和部署原始程式碼，並建立 Web 服務、資料庫和其他資源的參考。
+# <a name="create-a-basic-project-system-part-1"></a>建立基本項目系統,第 1 部分
+在 Visual Studio 中,專案是開發人員用來組織原始程式碼檔和其他資產的容器。 專案在**解決方案資源管理器**中顯示為解決方案的子級。 專案允許您組織、構建、除錯和部署原始碼,並創建對 Web 服務、資料庫和其他資源的參考。
 
- 專案是在專案檔中定義，例如 Visual C#專案的 .csproj 檔案。 您可以建立自己的專案類型，其具有您自己的專案副檔名。 如需專案類型的詳細資訊，請參閱[專案類型](../extensibility/internals/project-types.md)。
-
-> [!NOTE]
-> 如果您需要使用自訂的專案類型來擴充 Visual Studio，強烈建議您使用[Visual Studio 專案系統](https://github.com/Microsoft/VSProjectSystem)（.vsps），其具有比從頭建立專案系統更多的優點：
->
-> - 更輕鬆的上架。  即使是基本的專案系統，還是需要數十行程式碼。  利用 .VSPS 可在您準備好自訂您的需求之前，先按幾下就能減少上架成本。
-> - 維護更容易。  藉由利用 .VSPS，您只需要維護自己的案例。  我們會處理所有專案系統基礎結構的維護。
->
->   如果您需要以早于 Visual Studio 2013 的 Visual Studio 版本為目標，您將無法利用 Visual Studio 擴充功能中的 .VSPS。  如果是這種情況，則此逐步解說是開始使用的絕佳位置。
-
- 本逐步解說將示範如何建立具有專案檔副檔名*myproj.csproj*的專案類型。 這個逐步解說會從現有的C# Visual 專案系統中借用。
+ 專案在專案檔中定義,例如 Visual C++ 專案的 *.csproj*檔。 您可以建立自己的項目類型,該類型具有自己的專案檔名副檔名。 有關項目類型的詳細資訊,請參考[項目類型](../extensibility/internals/project-types.md)。
 
 > [!NOTE]
-> 如需擴充功能專案的更多範例，請參閱[VSSDK 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
+> 如果您需要使用自訂項目類型擴展 Visual Studio,我們強烈建議利用[Visual Studio 專案系統](https://github.com/Microsoft/VSProjectSystem)(VSPS),該系統比從頭開始建構專案系統具有許多優勢:
+>
+> - 更容易上船。  即使是基本的專案系統也需要數萬行代碼。  利用 VSPS 可將載入成本降低到幾下,然後再準備好根據您的需求進行自定義。
+> - 更輕鬆的維護。  通過利用 VSPS,您只需要維護自己的方案。  我們處理所有專案系統基礎結構的維護。
+>
+>   如果您需要定位比 Visual Studio 2013 更老的 Visual Studio 版本,您將無法在 Visual Studio 擴充中利用 VSPS。  如果是這樣的話,這個演練是一個很好的開始的地方。
 
- 本逐步解說將教您如何完成這些工作：
+ 本演練演示如何建立具有專案檔名*副檔名 .myproj*的項目類型。 本演練借用了現有的 Visual C++ 專案系統。
 
-- 建立基本的專案類型。
+> [!NOTE]
+> 有關延伸項目的更多範例,請參閱[VSSDK 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
 
-- 建立基本的專案範本。
+ 本演練將介紹如何完成這些任務:
 
-- 向 Visual Studio 註冊專案範本。
+- 創建基本項目類型。
 
-- 開啟 [**新增專案**] 對話方塊，然後使用您的範本，以建立專案實例。
+- 創建基本專案範本。
 
-- 為您的專案系統建立專案 factory。
+- 向可視化工作室註冊項目範本。
 
-- 建立專案系統的專案節點。
+- 通過打開 **「新專案」** 對話方塊,然後使用範本創建專案實例。
 
-- 加入專案系統的自訂圖示。
+- 為專案系統創建項目工廠。
 
-- 執行基本範本參數替代。
+- 為專案系統創建專案節點。
 
-## <a name="prerequisites"></a>必要條件：
- 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+- 為專案系統添加自定義圖示。
 
- 您也必須下載[適用于專案的 Managed 封裝架構](https://github.com/tunnelvisionlabs/MPFProj10)原始程式碼。 將檔案解壓縮到您即將建立之解決方案可存取的位置。
+- 實現基本範本參數替換。
 
-## <a name="create-a-basic-project-type"></a>建立基本專案類型
- 建立名C#為**SimpleProject**的 VSIX 專案。 （**檔案** > **新**的 > **專案**，然後是**Visual C#**  ** > 擴充**性 > **VSIX 專案**）。 加入 Visual Studio 封裝專案專案範本（在**方案總管**上，以滑鼠右鍵按一下專案節點，**然後選取 新增 > ** **新專案**，然後移至 擴充性 ** > ** **Visual Studio 封裝**）。 將檔案命名為*SimpleProjectPackage*。
+## <a name="prerequisites"></a>Prerequisites
+ 從 Visual Studio 2015 開始,您不會從下載中心安裝 Visual Studio SDK。 它作為可選功能包含在可視化工作室設置中。 以後還可以安裝 VS SDK。 有關詳細資訊,請參閱[安裝可視化工作室 SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
-## <a name="creating-a-basic-project-template"></a>建立基本專案範本
- 現在，您可以修改此基本 VSPackage，以執行*myproj.csproj*專案類型。 若要建立以*myproj.csproj*專案類型為基礎的專案，Visual Studio 必須知道要將哪些檔案、資源和參考加入至新專案。 若要提供這項資訊，請將專案檔案放在專案範本資料夾中。 當使用者使用*myproj.csproj*專案來建立專案時，檔案會複製到新的專案。
+ 您還必須下載[項目的託管包框架的](https://github.com/tunnelvisionlabs/MPFProj10)原始程式碼。 將檔案提取到要創建的解決方案可訪問的位置。
 
-### <a name="to-create-a-basic-project-template"></a>建立基本專案範本
+## <a name="create-a-basic-project-type"></a>建立基本項目型態
+ 創建名為 **「簡單專案」的**C# VSIX 專案。 (**檔案** > **新項目** > **Project**,然後**可視化 C#** > **可擴充性** > **VSIX 專案**)。 添加可視化工作室包專案範本(在**解決方案資源管理器**上,右鍵單擊專案節點並選擇 **'添加新** > **專案**",然後轉到 **"擴展可視化** > **工作室"包**)。 命名檔案*簡單專案套件*。
 
-1. 在專案中新增三個資料夾，其中一個位於 [另一個： *Templates\Projects\SimpleProject*] 底下。 （在**方案總管**中，以滑鼠右鍵按一下**SimpleProject**專案節點，指向 [**加入**]，然後按一下 [**新增資料夾**]。 將資料夾命名為*範本*。 在 [*範本*] 資料夾中，新增名為 [*專案*] 的資料夾。 在 [*專案*] 資料夾中，新增名為*SimpleProject*的資料夾。）
+## <a name="creating-a-basic-project-template"></a>建立基本項目樣本
+ 現在,您可以修改此基本 VS 包以實現新的 *.myproj*專案類型。 要創建基於 *.myproj*專案類型的專案,Visual Studio 必須知道要添加到新專案的檔、資源和引用。 要提供此資訊,請將專案檔放在專案範本資料夾中。 當使用者使用 *.myproj*專案建立專案時,檔案將複製到新專案。
 
-2. 在*Templates\Projects\SimpleProject*資料夾中，新增點陣圖影像檔案，以作為名為*SimpleProject*的圖示。 當您按一下 [**新增**] 時，圖示編輯器隨即開啟。
+### <a name="to-create-a-basic-project-template"></a>建立基本項目樣本
 
-3. 讓圖示與眾不同。 這個圖示稍後會出現在逐步解說的 [**新增專案**] 對話方塊中。
+1. 新增三個資料夾,另一個資料夾位於另一個資料夾下:*樣本的字目的項目的字目 。* (在**解決方案資源管理器**中,右鍵按**一下 「簡單專案專案**」,指向 **「添加**」,然後單擊 **「新建資料夾**」。 命名資料夾*樣本*。 在 *「樣本」* 資料夾中,添加名為 *「專案」的*資料夾。 在 *「專案」* 資料夾中,添加名為 *「簡單專案*」的資料夾。
 
-    ![簡單專案圖示](../extensibility/media/simpleprojicon.png "SimpleProjIcon")
+2. 在*樣本\專案\簡單項目*資料夾中,添加一個位圖圖像檔,用作名為 *「簡單專案.ico」* 的圖示。 按下「**添加**」時,圖示編輯器將打開。
 
-4. 儲存圖示並關閉圖示編輯器。
+3. 使圖示與眾不同。 此圖示將顯示在演練後面的新**專案**對話框中。
 
-5. 在*Templates\Projects\SimpleProject*資料夾中，新增名為*Program.cs*的**類別**專案。
+    ![簡單專案圖示](../extensibility/media/simpleprojicon.png "簡單圖示")
 
-6. 將現有的程式碼取代為下列幾行。
+4. 保存圖示並關閉圖示編輯器。
+
+5. 在*樣本\專案\簡單項目*資料夾中,添加名為*Program.cs***的類**專案。
+
+6. 將現有代碼替換為以下行。
 
    ```csharp
    using System;
@@ -101,18 +101,18 @@ ms.locfileid: "75848143"
    ```
 
    > [!IMPORTANT]
-   > 這不是*Program.cs*程式碼的最終形式;取代參數將會在稍後的步驟中處理。 您可能會看到編譯錯誤，但是只要檔案的**BuildAction**是**內容**，您就應該能夠照常建立並執行專案。
+   > 這不是Program.cs代碼的最終形式;但是,這不是*代碼*的最終形式。替換參數將在後面的步驟中處理。 您可能會看到編譯錯誤,但只要檔的**BuildAction**是**內容**,您應該能夠像往常一樣生成和運行專案。
 
 7. 儲存檔案。
 
-8. 將*AssemblyInfo.cs*檔案從*Properties*資料夾複製到*Projects\SimpleProject*資料夾。
+8. 將*AssemblyInfo.cs*檔案從 *「屬性*」 的資料夾複製到*項目。_簡單專案*資料夾。
 
-9. 在*Projects\SimpleProject*資料夾中，新增名為*SimpleProject. myproj.csproj*的 XML 檔案。
+9. 在 *「專案_簡單專案」* 資料夾中添加名為*SimpleProject.myproj*的 XML 檔。
 
    > [!NOTE]
-   > 此類型之所有專案的副檔名為 *. myproj.csproj*。 如果您想要變更它，您必須在逐步解說中提到的任何地方變更它。
+   > 此類型的所有項目的檔案名副檔名是 *.myproj*。 如果要更改它,則必須在演練中提及的任何地方更改它。
 
-10. 以下列幾行取代現有的內容。
+10. 將現有內容替換為以下行。
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -154,11 +154,11 @@ ms.locfileid: "75848143"
 
 11. 儲存檔案。
 
-12. 在 [**屬性**] 視窗中，將 [ *AssemblyInfo.cs*]、[ *Program.cs*]、[ *SimpleProject*] 和 [ *SimpleProject* ] 的**組建動作**設定為 [**內容**]，並將其 [**在 VSIX 屬性中包含**] 設定為 [ **True**]。
+12. **Include in VSIX**在 **「屬性」** 視窗中,將*AssemblyInfo.cs、Program.cs,**簡單專案. ico*和*SimpleProject.myproj*的**生成操作**設定為*Program.cs***"true"** **Content**
 
-    此專案範本描述具有「調試C#程式」設定和「發行」設定的基本視覺效果專案。 此專案包含兩個原始程式檔： *AssemblyInfo.cs*和*Program.cs*，以及數個元件參考。 從範本建立專案時，ProjectGuid 值會自動取代為新的 GUID。
+    此專案範本描述了具有調試配置和發佈配置的基本 Visual C++ 專案。 該專案包括兩個源檔 *,AssemblyInfo.cs**和Program.cs*,以及多個程式集引用。 從範本建立專案時,ProjectGuid 值將自動替換為新的 GUID。
 
-    在**方案總管**中，展開的 [**範本**] 資料夾應該會如下所示：
+    在**解決方案資源管理員**中,展開**的範本**資料夾應如下所示:
 
 ```
 Templates
@@ -170,12 +170,12 @@ Templates
          SimpleProject.myproj
 ```
 
-## <a name="create-a-basic-project-factory"></a>建立基本的專案 factory
- 您必須告訴 Visual Studio 專案範本資料夾的位置。 若要這樣做，請將屬性新增至 VSPackage 類別，以執行專案 factory，讓範本位置在建立 VSPackage 時寫入至系統登錄。 首先，建立由專案 factory GUID 所識別的基本專案 factory。 使用 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 屬性將專案 factory 連接至 `SimpleProjectPackage` 類別。
+## <a name="create-a-basic-project-factory"></a>建立基本項目工廠
+ 您必須告訴 Visual Studio 專案範本資料夾的位置。 為此,向實現項目工廠的 VSPackage 類添加一個屬性,以便在生成 VSPackage 時將範本位置寫入系統註冊表。 首先創建專案工廠 GUID 識別的基本項目工廠。 使用<xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute>屬性將項目工廠連線到`SimpleProjectPackage`類別 。
 
-### <a name="to-create-a-basic-project-factory"></a>建立基本的專案 factory
+### <a name="to-create-a-basic-project-factory"></a>建立基本項目工廠
 
-1. 建立專案處理站的 Guid （在 [**工具**] 功能表上，按一下 [**建立 GUID**]），或使用下列範例中的一個。 使用已定義的 `PackageGuidString`，將 Guid 新增至靠近區段附近的 `SimpleProjectPackage` 類別。 Guid 必須同時為 GUID 格式和字串形式。 產生的程式碼應該類似下列範例。
+1. 為專案工廠創建 GUID(在 **"工具"** 選單上,按下"創建 GUID")或使用以下範例中的**GUID。** 將 GUID 添加`SimpleProjectPackage`到具有`PackageGuidString`已定義的節附近的類。 GUID 必須同時使用 GUID 形式和字串形式。 生成的代碼應類似於以下範例。
 
    ```csharp
        public sealed class SimpleProjectPackage : Package
@@ -188,7 +188,7 @@ Templates
        }
    ```
 
-2. 將類別新增至名為*SimpleProjectFactory.cs*的頂端*SimpleProject*資料夾。
+2. 將類添加到名為*SimpleProjectFactory.cs*的頂部*簡單項目*資料夾。
 
 3. 加入以下 using 指示詞：
 
@@ -197,7 +197,7 @@ Templates
    using Microsoft.VisualStudio.Shell;
    ```
 
-4. 將 GUID 屬性新增至 `SimpleProjectFactory` 類別。 屬性的值是新的專案 factory GUID。
+4. 向`SimpleProjectFactory`類添加 GUID 屬性。 屬性的值是新項目工廠 GUID。
 
    ```csharp
    [Guid(SimpleProjectPackage.SimpleProjectFactoryString)]
@@ -206,11 +206,11 @@ Templates
    }
    ```
 
-   您現在可以註冊您的專案範本。
+   現在,您可以註冊項目範本。
 
-### <a name="to-register-the-project-template"></a>若要註冊專案範本
+### <a name="to-register-the-project-template"></a>註冊項目範本
 
-1. 在*SimpleProjectPackage.cs*中，將 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 屬性加入 `SimpleProjectPackage` 類別，如下所示。
+1. 在*SimpleProjectPackage.cs*SimpleProjectPackage.cs<xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute>中`SimpleProjectPackage`,向 類添加屬性,如下所示。
 
    ```csharp
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",
@@ -220,31 +220,31 @@ Templates
    public sealed class SimpleProjectPackage : Package
    ```
 
-2. 重建方案，並確認它的組建不會發生錯誤。
+2. 重建解決方案並驗證其生成時是否沒有錯誤。
 
-    重建會註冊專案範本。
+    重建註冊項目範本。
 
-   `defaultProjectExtension` 和 `possibleProjectExtensions` 的參數會設定為專案檔案的副檔名（ *. myproj.csproj*）。 `projectTemplatesDirectory` 參數會設定為*Templates*資料夾的相對路徑。 在組建期間，此路徑將會轉換成完整組建並新增到登錄中，以註冊專案系統。
+   參數`defaultProjectExtension``possibleProjectExtensions`並設置為專案檔名副檔名 *(.myproj*)。 參數`projectTemplatesDirectory`設定為*範本*資料夾的相對路徑。 在生成期間,此路徑將轉換為完整生成並添加到註冊表以註冊項目系統。
 
-## <a name="test-the-template-registration"></a>測試範本註冊
- 範本註冊會告訴 Visual Studio 專案範本資料夾的位置，讓 Visual Studio 可以在 [**新增專案**] 對話方塊中顯示範本名稱和圖示。
+## <a name="test-the-template-registration"></a>測試樣本註冊
+ 樣本註冊告訴 Visual Studio 專案樣本資料夾的位置,以便 Visual Studio 可以在 **「新專案」** 對話框中顯示範本名稱和圖示。
 
-### <a name="to-test-the-template-registration"></a>測試範本註冊
+### <a name="to-test-the-template-registration"></a>測試樣本註冊
 
-1. 按**F5**開始對 Visual Studio 的實驗實例進行偵錯工具。
+1. 按**F5**開始調試 Visual Studio 的實驗實例。
 
-2. 在實驗實例中，為新建立的專案類型建立新的專案。 在 [**新增專案**] 對話方塊中，您應該會在 [**已安裝的範本**] 底下看到**SimpleProject** 。
+2. 在實驗實例中,創建新創建的專案類型的新專案。 在 **"新項目"** 對話方塊中,應看到 **「已安裝範本**」下的 **「簡單專案**」。。
 
-   現在您已有註冊的專案 factory。 不過，它還無法建立專案。 專案封裝和專案 factory 會一起工作，以建立和初始化專案。
+   現在,您有一個已註冊的項目工廠。 但是,它還不能創建專案。 專案包和專案工廠協同工作以創建和初始化專案。
 
-## <a name="add-the-managed-package-framework-code"></a>新增 Managed Package Framework 程式碼
- 執行專案封裝與專案 factory 之間的連接。
+## <a name="add-the-managed-package-framework-code"></a>新增託管套件框架代碼
+ 實現專案包和項目工廠之間的連接。
 
-- 匯入 Managed 封裝架構的原始程式碼檔案。
+- 匯入託管包框架的原始程式碼檔。
 
-    1. 卸載 SimpleProject 專案（在**方案總管**中，選取專案節點，然後在內容功能表上按一下 **[卸載專案**]），然後在 XML 編輯器中開啟專案檔。
+    1. 卸載簡單項目專案(在**解決方案資源管理員**中,選擇專案節點,並在上下文菜單上單擊 **"卸載專案**"),並在 XML 編輯器中打開專案檔。
 
-    2. 將下列區塊新增至專案檔（在 \<匯入 > 區塊的正上方）。 將 `ProjectBasePath` 設定為您剛才下載之 Managed Package Framework 程式碼中*ProjectBase*檔案的位置。 您可能必須在路徑名稱中加上反斜線。 如果不這麼做，專案可能會找不到 Managed Package Framework 原始程式碼。
+    2. 將以下塊添加到專案檔(略高於\<"導入>塊)。 在`ProjectBasePath`剛剛下載的託管包框架代碼中設置為*ProjectBase.file 檔案*的位置。 您可能需要向路徑名稱添加反斜杠。 如果不這樣做,專案可能無法找到託管包框架原始程式碼。
 
         ```
         <PropertyGroup>
@@ -255,40 +255,40 @@ Templates
         ```
 
         > [!IMPORTANT]
-        > 請不要忘記路徑結尾的反斜線。
+        > 不要忘記路徑末尾的斜杠。
 
-    3. 重載專案。
+    3. 重新載入專案。
 
     4. 加入下列組件的參考：
 
-        - `Microsoft.VisualStudio.Designer.Interfaces` （在 *\<VSSDK 安裝 > \VisualStudioIntegration\Common\Assemblies\v2.0*）
+        - `Microsoft.VisualStudio.Designer.Interfaces`(在*\<VSSDK 中安裝>_VisualStudio整合的\公共_程式集\v2.0*)
 
         - `WindowsBase`
 
         - `Microsoft.Build.Tasks.v4.0`
 
-### <a name="to-initialize-the-project-factory"></a>若要初始化專案 factory
+### <a name="to-initialize-the-project-factory"></a>初始化項目工廠
 
-1. 在*SimpleProjectPackage.cs*檔案中，新增下列 `using` 指示詞。
+1. 在*SimpleProjectPackage.cs*檔案中,`using`新增以下 指令。
 
     ```csharp
     using Microsoft.VisualStudio.Project;
     ```
 
-2. 從 `Microsoft.VisualStudio.Package.ProjectPackage`衍生 `SimpleProjectPackage` 類別。
+2. 從`Microsoft.VisualStudio.Package.ProjectPackage``SimpleProjectPackage`派生類。
 
     ```csharp
     public sealed class SimpleProjectPackage : ProjectPackage
     ```
 
-3. 註冊專案 factory。 在 `base.Initialize`之後，將下行新增至 `SimpleProjectPackage.Initialize` 方法。
+3. 註冊項目工廠。 將以下行添加到`SimpleProjectPackage.Initialize`方法,只是`base.Initialize`在之後。
 
     ```csharp
     base.Initialize();
     this.RegisterProjectFactory(new SimpleProjectFactory(this));
     ```
 
-4. 執行抽象屬性 `ProductUserContext`：
+4. 實現抽象屬性`ProductUserContext`:
 
     ```csharp
     public override string ProductUserContext
@@ -297,19 +297,19 @@ Templates
     }
     ```
 
-5. 在*SimpleProjectFactory.cs*中，于現有的 `using` 指示詞之後加入下列 `using` 指示詞。
+5. 在*SimpleProjectFactory.cs*,在`using`現有`using`指令 之後添加以下指令。
 
     ```csharp
     using Microsoft.VisualStudio.Project;
     ```
 
-6. 從 `ProjectFactory`衍生 `SimpleProjectFactory` 類別。
+6. 從`ProjectFactory``SimpleProjectFactory`派生類。
 
     ```csharp
     class SimpleProjectFactory : ProjectFactory
     ```
 
-7. 將下列虛擬方法新增至 `SimpleProjectFactory` 類別。 您將在稍後的區段中執行此方法。
+7. 將以下虛擬方法添加到`SimpleProjectFactory`類。 您將在後面的一節中實現此方法。
 
     ```csharp
     protected override ProjectNode CreateProject()
@@ -318,7 +318,7 @@ Templates
     }
     ```
 
-8. 將下欄欄位和函式加入至 `SimpleProjectFactory` 類別。 這個 `SimpleProjectPackage` 參考會快取在私用欄位中，以便用來設定服務提供者網站。
+8. 將以下欄位和建構函數添加到`SimpleProjectFactory`類。 此`SimpleProjectPackage`引用緩存在專用欄位中,以便可用於設置服務提供商網站。
 
     ```csharp
     private SimpleProjectPackage package;
@@ -330,39 +330,39 @@ Templates
     }
     ```
 
-9. 重建方案，並確認它的組建不會發生錯誤。
+9. 重建解決方案並驗證其生成時是否沒有錯誤。
 
-## <a name="test-the-project-factory-implementation"></a>測試專案 factory 的執行
- 測試是否呼叫您的專案 factory 實作為函式。
+## <a name="test-the-project-factory-implementation"></a>測試項目工廠實施
+ 測試是否調用專案工廠實現的構造函數。
 
-### <a name="to-test-the-project-factory-implementation"></a>測試專案 factory 的執行
+### <a name="to-test-the-project-factory-implementation"></a>測試項目工廠實施
 
-1. 在*SimpleProjectFactory.cs*檔案中，于 `SimpleProjectFactory` 的程式碼中的下一行設定中斷點。
+1. 在*SimpleProjectFactory.cs*檔中`SimpleProjectFactory`,在建構函數中的下一行設置斷點。
 
     ```csharp
     this.package = package;
     ```
 
-2. 按**F5**啟動 Visual Studio 的實驗實例。
+2. 按**F5**啟動可視化工作室的實驗實例。
 
-3. 在實驗實例中，開始建立新的專案。 在 [**新增專案**] 對話方塊中，選取 [ **SimpleProject** ] 專案類型，然後按一下 **[確定]** 。 執行會在中斷點停止。
+3. 在實驗實例中,開始創建新專案。 在 **"新項目**"對話框中,選擇 **「簡單項目**專案」類型,然後單擊「**確定**」。 執行會在中斷點停止。
 
-4. 清除中斷點並停止調試。 由於我們尚未建立專案節點，因此專案建立程式碼仍然會擲回例外狀況。
+4. 清除斷點並停止調試。 由於我們尚未創建專案節點,因此專案創建代碼仍引發異常。
 
-## <a name="extend-the-projectnode-class"></a>擴充 ProjectNode 類別
- 現在您可以執行衍生自 `ProjectNode` 類別的 `SimpleProjectNode` 類別。 `ProjectNode` 基類會處理專案建立作業的下列工作：
+## <a name="extend-the-projectnode-class"></a>延伸 ProjectNode 類別
+ 現在,您可以實現從`SimpleProjectNode`類派生`ProjectNode`的 類。 基`ProjectNode`類別處理以下項目建立工作:
 
-- 將專案範本檔案（ *SimpleProject. myproj.csproj*）複製到新的專案資料夾。 該複本會根據 [**新增專案**] 對話方塊中所輸入的名稱重新命名。 `ProjectGuid` 屬性值會由新的 GUID 取代。
+- 將專案範本檔*SimpleProject.myproj 複製到*新專案資料夾。 根據在 **「新項目」** 對話方塊中輸入的名稱重新命名複本。 屬性`ProjectGuid`值替換為新的 GUID。
 
-- 會遍歷專案範本檔案的 MSBuild 元素*SimpleProject. myproj.csproj*，並尋找 `Compile` 元素。 針對每個 `Compile` 目標檔案，將檔案複製到新的專案資料夾。
+- 遍歷項目範本檔的 MSBuild 元素 *,SimpleProject.myproj*`Compile`,並查找 元素。 對於每個`Compile`目標檔,將檔案複製到新的項目資料夾。
 
-  衍生的 `SimpleProjectNode` 類別會處理下列工作：
+  衍生`SimpleProjectNode`的類別處理以下工作:
 
-- 啟用**方案總管**中要建立或選取之專案和檔案節點的圖示。
+- 啟用創建或選擇**解決方案資源管理員**中專案和檔案節點的圖示。
 
-- 啟用要指定的其他專案範本參數替代。
+- 啟用指定其他項目範本參數替換。
 
-### <a name="to-extend-the-projectnode-class"></a>若要擴充 ProjectNode 類別
+### <a name="to-extend-the-projectnode-class"></a>延伸 ProjectNode 類別
 
 1. 新增名為 `SimpleProjectNode.cs`的類別。
 
@@ -402,27 +402,27 @@ Templates
    }
    ```
 
-   此 `SimpleProjectNode` 類別的實作為這些覆寫的方法：
+   此類`SimpleProjectNode`實現具有以下重寫方法:
 
-- `ProjectGuid`，它會傳回專案 factory GUID。
+- `ProjectGuid`返回專案工廠 GUID。
 
-- `ProjectType`，它會傳回專案類型的當地語系化名稱。
+- `ProjectType`返回項目類型的本地化名稱。
 
-- `AddFileFromTemplate`，會將選取的檔案從範本資料夾複製到目的地專案。 這個方法會在稍後的章節中進一步執行。
+- `AddFileFromTemplate`將選取檔案從樣本資料夾複製到目標專案。 此方法在後面的一節中進一步實現。
 
-  `SimpleProjectNode` 的函式，就像 `SimpleProjectFactory` 的函式一樣，會快取私用欄位中的 `SimpleProjectPackage` 參考以供稍後使用。
+  建構`SimpleProjectNode`函數`SimpleProjectFactory`與 建構函`SimpleProjectPackage`數一樣,在私有欄位中緩存引用,以便以後使用。
 
-  若要將 `SimpleProjectFactory` 類別連接至 `SimpleProjectNode` 類別，您必須在 `SimpleProjectFactory.CreateProject` 方法中具現化新的 `SimpleProjectNode`，並在私用欄位中加以快取，以供稍後使用。
+  要將`SimpleProjectFactory`類連接到類`SimpleProjectNode`,`SimpleProjectNode``SimpleProjectFactory.CreateProject`必須在方法中實例化新,並將其緩存在私有欄位中,以便以後使用。
 
-### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>若要連接 project factory 類別和 node 類別
+### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>連接項目工廠類別和節點類別
 
-1. 在*SimpleProjectFactory.cs*檔案中，新增下列 `using` 指示詞：
+1. 在*SimpleProjectFactory.cs*檔中,`using`新增以下 指令:
 
     ```csharp
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;
     ```
 
-2. 使用下列程式碼取代 `SimpleProjectFactory.CreateProject` 方法。
+2. 使用以下`SimpleProjectFactory.CreateProject`代碼替換方法。
 
     ```csharp
     protected override ProjectNode CreateProject()
@@ -434,40 +434,40 @@ Templates
     }
     ```
 
-3. 重建方案，並確認它的組建不會發生錯誤。
+3. 重建解決方案並驗證其生成時是否沒有錯誤。
 
 ## <a name="test-the-projectnode-class"></a>測試 ProjectNode 類別
- 測試您的專案 factory，以查看它是否建立專案階層。
+ 測試專案工廠以查看它是否創建了專案層次結構。
 
 ### <a name="to-test-the-projectnode-class"></a>測試 ProjectNode 類別
 
-1. 按 **F5** 開始偵錯作業。 在實驗實例中，建立新的 SimpleProject。
+1. 按 **F5** 開始偵錯。 在實驗實例中,創建新的簡單專案。
 
-2. Visual Studio 應該呼叫您的專案 factory 來建立專案。
+2. Visual Studio 應調用專案工廠以創建專案。
 
 3. 關閉 Visual Studio 的實驗執行個體。
 
-## <a name="add-a-custom-project-node-icon"></a>新增自訂專案節點圖示
- 先前區段中的專案節點圖示是預設圖示。 您可以將它變更為自訂圖示。
+## <a name="add-a-custom-project-node-icon"></a>新增自訂項目節點圖示
+ 前面部分中的項目節點圖示是預設圖示。 您可以將其更改為自訂圖示。
 
-### <a name="to-add-a-custom-project-node-icon"></a>若要加入自訂專案節點圖示
+### <a name="to-add-a-custom-project-node-icon"></a>新增自訂項目節點圖示
 
-1. 在 [ **Resources** ] 資料夾中，新增名為*SimpleProjectNode*的點陣圖檔案。
+1. 在 **「資源」** 資料夾中,添加名為*SimpleProjectNode.bmp*的位圖檔。
 
-2. 在 [**屬性**] 視窗中，將點陣圖減少為 16 x 16 圖元。 讓點陣圖與眾不同。
+2. 在 **「屬性」** 視窗中,將位圖減小到 16 x 16 圖元。 使位圖與眾不同。
 
-    ![簡單專案通訊](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")
+    ![簡單專案 Comm](../extensibility/media/simpleprojprojectcomm.png "簡單專業專案通訊")
 
-3. 在 [**屬性**] 視窗中，將點陣圖的 [**組建] 動作**變更為 [**內嵌資源**]。
+3. 在 **「屬性」** 視窗中,將位圖的**生成操作**更改為 **「嵌入資源**」 。
 
-4. 在*SimpleProjectNode.cs*中，新增下列 `using` 指示詞：
+4. 在*SimpleProjectNode.cs*中`using`,新增以下指令:
 
    ```csharp
    using System.Drawing;
    using System.Windows.Forms;
    ```
 
-5. 將下列靜態欄位和構造函式新增至 `SimpleProjectNode` 類別。
+5. 將以下靜態欄位和建構函數添加到`SimpleProjectNode`類。
 
    ```csharp
    private static ImageList imageList;
@@ -478,7 +478,7 @@ Templates
    }
    ```
 
-6. 將下列屬性新增至 `SimpleProjectNode` 類別的開頭。
+6. 將以下屬性添加到類的`SimpleProjectNode`開頭。
 
    ```csharp
    internal static int imageIndex;
@@ -488,7 +488,7 @@ Templates
       }
    ```
 
-7. 將實例的函式取代為下列程式碼。
+7. 將實例構造函數替換為以下代碼。
 
    ```csharp
    public SimpleProjectNode(SimpleProjectPackage package)
@@ -504,36 +504,36 @@ Templates
    }
    ```
 
-   在靜態結構中，`SimpleProjectNode` 會從組件資訊清單資源抓取專案節點點陣圖，並將其快取到私用欄位以供稍後使用。 請注意 <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> 映射路徑的語法。 若要查看內嵌在元件中的資訊清單資源名稱，請使用 <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> 方法。 當此方法套用至 `SimpleProject` 元件時，結果應該如下所示：
+   在靜態構造期間`SimpleProjectNode`,從程式集清單資源檢索專案節點位圖,並將其緩存在專用欄位中,以便以後使用。 請注意圖像路徑的<xref:System.Reflection.Assembly.GetManifestResourceStream%2A>語法。 要檢視嵌入在程式集中的清單資源的名稱,請使用方法<xref:System.Reflection.Assembly.GetManifestResourceNames%2A>。 將此方法應用於程式集時`SimpleProject`,結果應如下所示:
 
-- *SimpleProject .resources*
+- *簡單專案.資源.資源*
 
-- *VisualStudio 資源*
+- *視覺化工作室.專案資源*
 
-- *SimpleProject. VSPackage. resources*
+- *簡單專案.VS包.資源*
 
-- *Imagelis .bmp*
+- *資源.影像.bmp*
 
-- *VisualStudio. DontShowAgainDialog .resources*
+- *微軟.VisualStudio.專案.不要再次顯示對話.資源*
 
-- *VisualStudio. SecurityWarningDialog .resources*
+- *微軟.VisualStudio.專案.安全警告對話.資源*
 
-- *SimpleProject .Resources. SimpleProjectNode .bmp*
+- *簡單專案.資源.簡單專案節點.bmp*
 
-  在實例結構中，`ProjectNode` 基類會載入*imagelis*，其中內嵌常用於*Resources\imagelis.bmp*的 16 x 16 個位圖。 這個點陣圖清單可供 `SimpleProjectNode` 做為 `ImageHandler.ImageList`。 `SimpleProjectNode` 會將專案節點點陣圖附加至清單。 影像清單中的專案節點點陣圖位移會被快取，以供稍後用來做為公用 `ImageIndex` 屬性的值。 Visual Studio 使用這個屬性來決定要顯示哪一個點陣圖做為專案節點圖示。
+  在實例建構期間,`ProjectNode`基類載入*Resources.imagelis.bmp*,其中嵌入了資源 *_imagelis.bmp*中常用的 16 x 16 位元圖。 此點陣圖清單可`SimpleProjectNode`供`ImageHandler.ImageList`作為 。 `SimpleProjectNode`將專案節點點陣圖追加到清單中。 圖像清單中的項目節點位圖的偏移量將緩存,供以後用作公共`ImageIndex`屬性的值。 Visual Studio 使用此屬性來確定要顯示為專案節點圖示的點陣圖。
 
-## <a name="test-the-custom-project-node-icon"></a>測試自訂專案節點圖示
- 測試您的專案 factory，以查看它是否會建立具有您自訂專案節點圖示的專案階層。
+## <a name="test-the-custom-project-node-icon"></a>測試自訂項目節點圖示
+ 測試專案工廠以查看它是否創建具有自定義專案節點圖示的專案層次結構。
 
-### <a name="to-test-the-custom-project-node-icon"></a>測試自訂專案節點圖示
+### <a name="to-test-the-custom-project-node-icon"></a>測試自訂項目節點圖示
 
-1. 開始進行調試，並在實驗實例中建立新的 SimpleProject。
+1. 開始調試,並在實驗實例中創建新的 SimpleProject。
 
-2. 請注意，在新建立的專案中，會使用*SimpleProjectNode*做為專案節點圖示。
+2. 在新創建的專案中,請注意*SimpleProjectNode.bmp*用作專案節點圖示。
 
-     ![簡單專案新增專案節點](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")
+     ![簡單專案新增專案節點](../extensibility/media/simpleprojnewprojectnode.png "簡單專業專案節點")
 
-3. 在程式碼編輯器中開啟 *Program.cs*。 您應該會看到類似下列程式碼的原始程式碼。
+3. 在程式碼編輯器中開啟 *Program.cs*。 您應該會看到類似於以下代碼的原始程式碼。
 
     ```csharp
     using System;
@@ -553,22 +553,22 @@ Templates
     }
     ```
 
-     請注意，範本參數 $nameSpace $ 和 $className $ 沒有新的值。 在下一節中，您將瞭解如何執行範本參數替代。
+     請注意,範本參數$nameSpace$和 $className$沒有新值。 您將在下一節中瞭解如何實現範本參數替換。
 
-## <a name="substitute-template-parameters"></a>替代範本參數
- 在先前的章節中，您已使用 `ProvideProjectFactory` 屬性，向 Visual Studio 註冊專案範本。 以這種方式註冊範本資料夾的路徑，可讓您覆寫並展開 `ProjectNode.AddFileFromTemplate` 類別，以啟用基本範本參數替代。 如需詳細資訊，請參閱[新的專案產生：在幕後，第二部分](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。
+## <a name="substitute-template-parameters"></a>取代樣本參數
+ 在前面的一節中,您可以使用`ProvideProjectFactory`屬性向 Visual Studio 註冊項目範本。 以這種方式註冊範本資料夾的路徑,可以通過重寫和`ProjectNode.AddFileFromTemplate`擴展 類來啟用基本的範本參數替換。 有關詳細資訊,請參閱[新專案生成:在引擎蓋下,第二部分](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。
 
- 現在，將取代程式碼新增至 `AddFileFromTemplate` 類別。
+ 現在向`AddFileFromTemplate`類添加替換代碼。
 
-### <a name="to-substitute-template-parameters"></a>替代範本參數
+### <a name="to-substitute-template-parameters"></a>取代樣本參數
 
-1. 在*SimpleProjectNode.cs*檔案中，新增下列 `using` 指示詞。
+1. 在*SimpleProjectNode.cs*檔案中,`using`新增以下指令。
 
    ```csharp
    using System.IO;
    ```
 
-2. 使用下列程式碼取代 `AddFileFromTemplate` 方法。
+2. 使用以下`AddFileFromTemplate`代碼替換方法。
 
    ```csharp
    public override void AddFileFromTemplate(
@@ -586,30 +586,30 @@ Templates
    }
    ```
 
-3. 在方法中設定中斷點，緊接在 `className` 指派語句之後。
+3. 在`className`賦值語句之後,在方法中設置斷點。
 
-   指派語句會決定命名空間的合理值和新的類別名稱。 這兩個 `ProjectNode.FileTemplateProcessor.AddReplace` 方法呼叫會使用這些新的值來取代對應的範本參數值。
+   賦值語句確定命名空間和新類名稱的合理值。 使用這些新`ProjectNode.FileTemplateProcessor.AddReplace`值,兩個方法調用替換相應的範本參數值。
 
-## <a name="test-the-template-parameter-substitution"></a>測試範本參數替代
- 現在您可以測試範本參數替代。
+## <a name="test-the-template-parameter-substitution"></a>測試樣本參數取代
+ 現在,您可以測試範本參數替換。
 
-### <a name="to-test-the-template-parameter-substitution"></a>測試範本參數替代
+### <a name="to-test-the-template-parameter-substitution"></a>測試樣本參數取代
 
-1. 開始進行調試，並在實驗實例中建立新的 SimpleProject。
+1. 開始調試,並在實驗實例中創建新的 SimpleProject。
 
-2. 執行會在 `AddFileFromTemplate` 方法中的中斷點停止。
+2. 執行停止在`AddFileFromTemplate`方法的斷點處。
 
-3. 檢查 `nameSpace` 和 `className` 參數的值。
+3. 檢查`nameSpace``className`和 參數的值。
 
-   - 會為 `nameSpace` 提供 *\Templates\Projects\SimpleProject\SimpleProject.myproj*專案範本檔案中 \<RootNamespace > 元素的值。 此處的值為 `MyRootNamespace`。
+   - `nameSpace`在\<*[樣本\專案]簡單專案_簡單專案.myproj*專案範本檔中給出 rootNamespace> 元素的值。 此處的值為 `MyRootNamespace`。
 
-   - 會為 `className` 提供類別來原始檔案名的值，但不含副檔名。 在此情況下，要複製到目的資料夾的第一個檔案是*AssemblyInfo.cs*;因此，className 的值是 `AssemblyInfo`。
+   - `className`給定類源檔名的值,而不提供檔名擴展名。 在這種情況下,要複製到目標資料夾的第一個檔案*AssemblyInfo.cs*。因此,類別名稱的值為`AssemblyInfo`。
 
-4. 請移除中斷點，然後按**F5**繼續執行。
+4. 刪除斷點,然後按**F5**繼續執行。
 
-    Visual Studio 應該會完成專案的建立。
+    可視化工作室應完成項目創建。
 
-5. 在程式碼編輯器中開啟 *Program.cs*。 您應該會看到類似下列程式碼的原始程式碼。
+5. 在程式碼編輯器中開啟 *Program.cs*。 您應該會看到類似於以下代碼的原始程式碼。
 
    ```csharp
    using System;
@@ -630,10 +630,10 @@ Templates
    }
    ```
 
-    請注意，現在已 `MyRootNamespace` 命名空間，而類別名稱現在已 `Program`。
+    請注意,命名空間現在是`MyRootNamespace`,類名稱現在是`Program`。
 
-6. 開始進行專案偵錯。 新的專案應該會編譯、執行和顯示 "Hello VSX!!!" 。
+6. 開始進行專案偵錯。 新項目應編譯、運行並顯示"您好 VSX !!!" 。
 
-    ![簡單專案命令](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
+    ![簡單專案命令](../extensibility/media/simpleprojcommand.png "簡單專業命令")
 
-   恭喜您！ 您已實作為基本的受控專案系統。
+   恭喜！ 您已經實現了基本的託管項目系統。

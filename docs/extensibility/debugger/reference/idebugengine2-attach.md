@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::Attach |Microsoft Docs
+title: IDebugEngine2::附加 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc70b27793e722db4a07107d419b383a76207322
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 93890885dbbdfd3cc26984590955681487977200
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330161"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731213"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
-將偵錯引擎 (DE) 附加至程式或程式。 執行同處理序以 SDM DE 時，由工作階段的偵錯管理員 (SDM) 呼叫。
+將除錯引擎 (DE) 附加到程式或程式。 當 DE 在行程中運行到 SDM 時,會話調試管理器 (SDM) 呼叫。
 
 ## <a name="syntax"></a>語法
 
@@ -49,45 +49,45 @@ int Attach( 
 
 ## <a name="parameters"></a>參數
 `pProgram`\
-[in]陣列[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表要附加至程式的物件。 這些是連接埠的程式。
+[在]表示要附加到的程式的[IDebug Program2](../../../extensibility/debugger/reference/idebugprogram2.md)物件的陣列。 這些是埠程式。
 
 `rgpProgramNodes`\
-[in]陣列[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)代表程式節點，一個用於每個程式的物件。 此陣列中的程式節點代表相同的程式中`pProgram`。 程式節點會提供，以供 DE 識別所要附加至的程式。
+[在]表示程式節點的[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件的陣列,每個程式一個。 此陣列中的程式節點表示與中的`pProgram`程式相同。 為程式節點提供,以便 DE 可以標識要附加到的程式。
 
 `celtPrograms`\
-[in]程式和/或程式中的節點數目`pProgram`和`rgpProgramNodes`陣列。
+[在]`pProgram`和`rgpProgramNodes`陣列中的程式和/或程式節點數。
 
 `pCallback`\
-[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)来用來將偵錯事件傳送到 SDM 物件。
+[在]用於將除錯事件發送到 SDM 的[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)物件。
 
 `dwReason`\
-[in]值，以從[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)列舉，指定附加這些程式的原因。 如需詳細資訊，請參閱＜備註＞一節。
+[在][ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)枚舉中指定附加這些程式的原因的值。 如需詳細資訊，請參閱＜備註＞一節。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 有三個，如下所示附加至程式中，原因：
+ 附加到程式有三個原因,如下所示:
 
-- `ATTACH_REASON_LAUNCH` 表示 DE 附加至程式，因為使用者啟動包含它的處理序。
+- `ATTACH_REASON_LAUNCH`指示 DE 附加到程式,因為使用者啟動了包含它的進程。
 
-- `ATTACH_REASON_USER` 表示使用者已明確要求 DE 附加至程式 （或包含程式的處理序）。
+- `ATTACH_REASON_USER`指示使用者已顯式請求 DE 附加到程式(或包含程式的進程)。
 
-- `ATTACH_REASON_AUTO` 表示 DE 附加到特定的程式，因為它已經偵錯其他程式中特定的處理程序。 這也稱為自動附加。
+- `ATTACH_REASON_AUTO`指示 DE 附加到特定程式,因為它已在調試特定進程中的其他程式。 這也稱為自動附加。
 
-  呼叫這個方法時，DE 必須傳送這些事件順序：
+  呼叫此方法時,DE 需要按順序傳送這些事件:
 
-1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) （如果它沒有已傳送的偵錯引擎的特定執行個體）
+1. [IDebugEngineCreateEvent2(](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)如果尚未為除錯引擎的特定實體傳送)
 
 2. [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)
 
 3. [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)
 
-   此外，如果是因為附加`ATTACH_REASON_LAUNCH`，需要傳送 DE [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)事件。
+   此外,如果附加的原因是`ATTACH_REASON_LAUNCH`,DE 需要發送[IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)事件。
 
-   一次 DE 取得[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件對應至要偵錯之程式的任何私用介面可供查詢。
+   一旦 DE 獲取與正在調試的程序對應的[IDebug ProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件,就可以查詢它的任何專用介面。
 
-   之前呼叫程式節點的方法中所指定的陣列`pProgram`或是`rgpProgramNodes`，模擬，如有需要上, 應該啟用`IDebugProgram2`介面，表示程式節點。 一般來說，不過，此步驟不需要。 如需詳細資訊，請參閱 <<c0> [ 安全性問題](../../../extensibility/debugger/security-issues.md)。
+   在調用`pProgram``rgpProgramNodes`或 中給出的陣列中的程式節點的方法之前,應在表示程式`IDebugProgram2`節點的介面上啟用類比(如果需要)。 但是,通常不需要此步驟。 有關詳細資訊,請參閱[安全問題](../../../extensibility/debugger/security-issues.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

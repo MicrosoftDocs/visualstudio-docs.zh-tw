@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2 | Microsoft Docs
+title: IDebugCodeContext2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2 interface
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59573736ca3cd0768d3383e5621d96dffdea9746
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 778602cc29049d855c418fd8fa416feb1ad8e9fe
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338888"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734220"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
-這個介面表示的程式碼指示的開始位置。 適用於大部分的執行階段架構現在，程式碼內容可以視為該應用程式的執行資料流中的位址。
+此介面表示代碼指令的起始位置。 對於當今的大多數運行時體系結構,可以將代碼上下文視為程序執行流中的位址。
 
 ## <a name="syntax"></a>語法
 
@@ -28,29 +28,29 @@ ms.locfileid: "66338888"
 IDebugCodeContext2 : IDebugMemoryContext2
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 偵錯引擎會實作這個介面來與相關的文件位置的程式碼指示的位置。
+## <a name="notes-for-implementers"></a>實施者說明
+ 調試引擎實現此介面,將代碼指令的位置與文檔位置相關聯。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 在許多介面的方法會傳回這個介面，通常， [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)。 它也可搭配廣泛[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)也如同中斷點解析資訊的介面。
+## <a name="notes-for-callers"></a>通話備註
+ 許多介面上的方法傳回此介面,最常見的是[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)。 它還廣泛用於[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)介面以及斷點解析度資訊。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 上的方法除了[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)介面，這個介面會實作下列方法：
+ 除了[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)介面上的方法外,此介面還實現了以下方法:
 
 |方法|描述|
 |------------|-----------------|
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|取得對應至使用中的程式碼內容的文件內容。|
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|取得此程式碼內容的語言資訊。|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|獲取與活動代碼上下文對應的文檔上下文。|
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|獲取此代碼上下文的語言資訊。|
 
 ## <a name="remarks"></a>備註
- 主要差別`IDebugCodeContext2`介面和[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)介面是`IDebugCodeContext2`永遠指令對齊。 這表示`IDebugCodeContext2`一律指向指令開頭而`IDebugMemoryContext2`可能指向記憶體中的執行階段架構的任何位元組。 `IDebugCodeContext2` 就會遞增的指示，而不是基本的儲存體大小 （通常為位元組）。
+ 介面和[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)介面之間的主要區別是,始終`IDebugCodeContext2`與指令對齊。 `IDebugCodeContext2` 這意味著`IDebugCodeContext2`始終指向指令的開頭,而`IDebugMemoryContext2`可以指向運行時體系結構中的任何位元組記憶體。 `IDebugCodeContext2`由指令而不是基本儲存大小(通常位元組)遞增。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)

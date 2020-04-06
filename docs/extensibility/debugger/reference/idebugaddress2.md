@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress2 | Microsoft Docs
+title: IDebug位址2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress2 interface
 ms.assetid: b150e0ed-4ac0-4f8c-9732-4b3e54b9d243
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66fd149bc3eed7633586c156f6493c8febcbeaac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 402d8c8bcb50c570ff680b8fe1cf8d26f037ba17
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330353"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736565"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
-這個介面會提供給擁有之物件的位址的處理序識別碼的存取由這個介面。
+此介面提供對擁有其位址由此介面表示的物件的進程 ID 的訪問。
 
 ## <a name="syntax"></a>語法
 
@@ -28,26 +28,26 @@ ms.locfileid: "66330353"
 IDebugAddress2 : IDebugAddress
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 符號提供者所實作的相同物件上實作這個介面[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。 這個介面會提供存取擁有的物件，這個地址相關的處理序的識別碼。
+## <a name="notes-for-implementers"></a>實施者說明
+ 符號提供程式在實現[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面的同一對象上實現此介面。 此介面提供對擁有與此位址相關的物件的進程的ID的訪問。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 使用[QueryInterface](/cpp/atl/queryinterface)若要取得從這個介面[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
+## <a name="notes-for-callers"></a>通話備註
+ 使用[查詢介面](/cpp/atl/queryinterface)從[IDebug 位址](../../../extensibility/debugger/reference/idebugaddress.md)介面獲取此介面。
 
-## <a name="methods-in-vtable-order"></a>Vtable 順序中的方法
- 除了繼承自方法[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面，這個介面會實作下列方法：
+## <a name="methods-in-vtable-order"></a>可 v 可排序方法
+ 除了從[IDebugAddress 介面](../../../extensibility/debugger/reference/idebugaddress.md)繼承的方法外,此介面還實現了以下方法:
 
 |方法|描述|
 |------------|-----------------|
-|[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|擷取擁有此介面所表示之物件的處理序識別碼。|
+|[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|檢索擁有此介面表示的對象的進程的ID。|
 
 ## <a name="requirements"></a>需求
- 標頭： sh.h
+ 標題: sh.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

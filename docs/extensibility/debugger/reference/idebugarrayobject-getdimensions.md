@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetDimensions |Microsoft Docs
+title: IDebugarray物件:獲取維度 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetDimensions method
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 781da7eadce78d5332befe91231131f02341574b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 527f79724aeac0de58d0ae63c9c2408ed2eca9ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318998"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736170"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
-取得陣列維度。
+獲取陣列的尺寸。
 
 ## <a name="syntax"></a>語法
 
@@ -40,16 +40,16 @@ int GetDimensions(
 
 ## <a name="parameters"></a>參數
 `dwCount`\
-[in]要擷取的維度數目。
+[在]要檢索的維度數。
 
 `dwDimensions`\
-[in、 out]陣列，其中會填入每個維度大小。 `dwCount` 指定的大小上限`dwDimensions`陣列。
+[進出]填充每個維度大小的陣列。 `dwCount`指定`dwDimensions`數位的最大大小。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。
+ 如果成功,返回S_OK;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 多維陣列的每個維度的不同大小。 例如，假設三維陣列`myarray[3][2][6]`，這個方法會傳回 3、 2 和 6`dwDimensions`依此順序的參數。
+ 多維陣組可以為每個維度具有不同的大小。 例如,給定三維陣列`myarray[3][2][6]`,此方法將按該順序返回參數中的`dwDimensions`3、2 和 6。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

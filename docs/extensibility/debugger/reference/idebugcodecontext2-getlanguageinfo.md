@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetLanguageInfo | Microsoft Docs
+title: IDebugCode上下文2::獲取語言資訊 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2::GetLanguageInfo
 ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08138fcd67e7d4fd5115ac13fe1b8348f76245d8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 465cc07b3ca75835afe0737fb22ba403acc4098b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339019"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734238"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
-取得此程式碼內容的語言資訊。
+獲取此代碼上下文的語言資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int GetLanguageInfo( 
 
 ## <a name="parameters"></a>參數
 `pbstrLanguage`\
-[in、 out]傳回字串，包含的語言名稱，例如"C++。 」
+[進出]返回包含語言名稱的字串,如"C++"。
 
 `pguidLanguage`\
-[in、 out]例如，傳回之語言的程式碼內容，GUID `guidCPPLang`。
+[進出]傳回程式碼內容的 GUID,例如`guidCPPLang`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 至少其中一個參數必須傳回非 null 值。
+ 至少有一個參數必須返回一個非空值。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

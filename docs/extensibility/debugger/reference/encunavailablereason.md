@@ -1,5 +1,5 @@
 ---
-title: EncUnavailableReason |Microsoft Docs
+title: Enc不可用原因 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7db94a181d87791edb242d69b461f90c42a5e080
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 28863549ab3eac96322530bc85c52697f20448c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318150"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737165"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
-`This is for internal use only!` 表示的原因，**編輯後繼續**不提供。
+`This is for internal use only!`表示 **「編輯」和「繼續」** 不可用的原因。
 
 ## <a name="syntax"></a>語法
 
@@ -54,35 +54,35 @@ public enum EncUnavailableReason {
 
 ## <a name="fields"></a>欄位
 `ENCUN_NONE`\
-沒有特定的理由為何無法使用 編輯後繼續。
+沒有"編輯並繼續"不可用的具體原因。
 
 `ENCUN_INTEROP`\
-編輯後繼續不提供 InterOp 呼叫期間。
+在互通話務期間,編輯和繼續不可用。
 
 `ENCUN_SQLCLR`\
-編輯後繼續提供期間不會使用 Common Language Runtime (CLR) 的 SQL 程序呼叫。
+在使用通用語言運行時 (CLR) 的 SQL 過程調用期間,編輯和繼續不可用。
 
 `ENCUN_MINIDUMP`\
-編輯後繼續不提供在處理小型傾印。
+處理小型轉儲時,編輯和繼續不可用。
 
 `ENCUN_EMBEDDED`\
-編輯後繼續使用時不處理內嵌程式碼。
+處理嵌入的代碼時,編輯和繼續不可用。
 
 `ENCUN_ATTACH`\
-編輯後繼續 無法使用工作階段已附加到，因為無法啟動的偵錯工具。
+編輯和繼續不可用,因為會話已附加到調試器,而不是由調試器啟動。
 
 `ENCUN_WIN64`\
-編輯後繼續不提供處理 64 位元 Windows 程式碼時。
+在處理 64 位 Windows 代碼時,編輯和繼續不可用。
 
 ## <a name="remarks"></a>備註
-這個列舉僅供內部使用由[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。 [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)並[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)方法所實作的自訂連接埠供應商應該一律會傳回`E_NOTIMPL`。
+此枚舉僅供[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]內部使用。 自訂埠供應商實現的[GetENC 可用狀態](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)與[關閉 ENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)方法`E_NOTIMPL`應傳回 。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.idl
+標題: msdbg.idl
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

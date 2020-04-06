@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes |Microsoft Docs
+title: IDebugPointer物件::獲取位元組 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 247e1ff4c934ae581c7a0224c8f8cba8d4e9d946
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308873"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725511"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-取得指向為一系列的連續位元組的值。
+獲取指向的一系列連續位元組的值。
 
 ## <a name="syntax"></a>語法
 
@@ -47,23 +47,23 @@ int GetBytes(
 
 ## <a name="parameters"></a>參數
 `dwStart`\
-[in]以位元組為單位，從所指向之物件的開始位移。
+[在]從對象開頭指向的偏移(以位元組為單位)。
 
 `dwCount`\
-[in]要擷取的位元組數目。
+[在]要檢索的位元組數。
 
 `pBytes`\
-[in、 out]指向會填入值以一系列的連續的位元組陣列，從物件的指定位移處開始。
+[進出]以一系列連續位元組填充該值的陣列,從指向的物件的給定偏移開始。
 
 `pdwBytes`\
-[out]傳回實際擷取的位元組的數目。
+[出]返回實際檢索的位元組數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。
+ 如果成功,返回S_OK;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 如果使用這個方法的指標，表示這個[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)指向基本型別或簡單基本型別 （也就是可以由簡單的一連串的位元組陣列） 的陣列。
+ 如果此[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)表示的指標指向基元類型或基元類型的簡單陣列(即可以由位元組的簡單序列表示的陣列),則使用此方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
-- [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)
+- [設定位元組](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

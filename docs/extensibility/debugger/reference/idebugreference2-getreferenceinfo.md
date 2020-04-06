@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetReferenceInfo | Microsoft Docs
+title: IDebug參考2::獲取參考資訊 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetReferenceInfo
 ms.assetid: ae611714-f114-4cf2-b5bb-37461e6ff289
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1ad9a3f23037a4413811e0d98304ceedf0620ac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4fa198a3ded56a0dd054cf225bfb6b10968d1da3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345650"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720416"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-取得[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構描述的參考。 保留供未來使用。
+獲取描述引用[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。 保留供未來使用。
 
 ## <a name="syntax"></a>語法
 
@@ -51,25 +51,25 @@ int GetReferenceInfo ( 
 
 ## <a name="parameters"></a>參數
 `dwFields`\
-[in]從旗標的組合[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)決定填寫欄位的列舉型別[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。
+[在]DEBUGREF_INFO_FLAGS[枚舉](../../../extensibility/debugger/reference/debugref-info-flags.md)中的標誌的組合,用於確定要在[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構中填寫的欄位。
 
 `nRadix`\
-[in]要用於格式化數字的任何資訊基數。
+[在]用於格式化任何數值資訊的半徑。
 
 `dwTimeout`\
-[in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
+[在]從此方法返回之前等待的最大時間(以毫秒為單位)。 用於`INFINITE`無限期等待。
 
 `rgpArgs`\
-[in]陣列[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件。 保留供未來使用;設定為 null 的值。
+[在][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件的陣列。 保留供將來使用;設置為空值。
 
 `dwArgCount`\
-[in]中的參考引數數目`rgpArgs`陣列。 保留供未來使用;設定為 0。
+[在]陣列中的`rgpArgs`引為參數數。 保留供將來使用;設置為 0。
 
 `pReferenceInfo`\
-[out]A [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)會填入的屬性描述的結構。
+[出]一[個DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構,該結構填充了屬性的說明。
 
 ## <a name="return-value"></a>傳回值
- 一律傳回 `E_NOTIMPL`。
+ 永遠會傳回 `E_NOTIMPL`。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

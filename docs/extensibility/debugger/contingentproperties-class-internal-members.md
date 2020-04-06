@@ -1,31 +1,31 @@
 ---
-title: ContingentProperties 類別-內部成員 |Microsoft Docs
+title: 或有屬性類 - 內部成員 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - ContingentProperties class [.NET Framework debug engines]
 - debug engines, ContingentProperties class [.NET Framework]
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7b9775ed74e7ae81768f180e596f171b2c99cba
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c6441cafcc34a06464061b41691ea5faa32fc359
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344313"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739108"
 ---
-# <a name="contingentproperties-class---internal-members"></a>ContingentProperties 類別-內部成員
-包含其他屬性<xref:System.Threading.Tasks.Task>物件。
+# <a name="contingentproperties-class---internal-members"></a>或有屬性類別 ─內部成員
+包含<xref:System.Threading.Tasks.Task>物件的其他屬性。
 
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **命名空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **組件：** mscorlib （在 mscorlib.dll 中)
+ **程式集**:mscorlib(在 mscorlib.dll 中)
 
- 因為您無法從.NET Framework 來存取這些內部成員，下列語法提供通用中繼語言 (CIL)。
+ 由於您無法從 .NET 框架訪問這些內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
 
 ## <a name="syntax"></a>語法
 
@@ -40,10 +40,10 @@ ms.locfileid: "66344313"
 
 |名稱|描述|
 |----------|-----------------|
-|[m_children](../../extensibility/debugger/m-children-field.md)|使用這項工作中註冊的子工作的清單。|
+|[m_children](../../extensibility/debugger/m-children-field.md)|在此任務中註冊的子任務的清單。|
 
 ## <a name="remarks"></a>備註
- 只有在需要時，.NET Framework 會初始化這個類別的欄位。
+ .NET 框架僅在需要此類欄位時初始化。
 
 ## <a name="see-also"></a>另請參閱
-- [適用於.NET Framework 的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET 框架的並行擴展內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
