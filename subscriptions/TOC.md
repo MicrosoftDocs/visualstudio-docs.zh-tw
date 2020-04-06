@@ -1,9 +1,9 @@
 # [Visual Studio 訂閱](index.yml)
 # [新功能](whats-new-in-subscriptions.md)
-# 訂用帳戶
+# 訂閱
 ## 購買訂用帳戶
 ### [零售](https://visualstudio.microsoft.com/vs/pricing)
-### Cloud 
+### 雲端 
 #### [概觀](vscloud-overview.md)
 #### [計費常見問題集](vscloud-billing-faq.md)
 #### [購買 CSP](vscloud-csp.md)
@@ -40,6 +40,7 @@
 #### [Visual Studio IDE](vs-ide-benefit.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Windows 開發人員帳戶](vs-windows-dev.md)
+#### [Windows 虛擬桌面](vs-windows-virtual-desktop.md)
 ### 專業開發
 #### [CODE Magazine](vs-code-magazine.md)
 #### [DataCamp](vs-datacamp.md)
@@ -48,7 +49,7 @@
 ### 支援 
 #### [Azure 社群](vs-azure-community.md)
 #### [指引支援](vs-concierge-chat.md)
-#### [技術支援事宜](vs-tech-support.md)
+#### [技術支援](vs-tech-support.md)
 # 軟體與金鑰
 ## 軟體下載
 ### [產品可用性](product-availability.md)
