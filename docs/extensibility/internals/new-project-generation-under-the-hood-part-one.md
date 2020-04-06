@@ -1,53 +1,53 @@
 ---
-title: 新專案產生：幕後，第一部 |Microsoft Docs
+title: 新專案生成:在引擎蓋下,第一部分 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41b2b229fe343c9f6d515ba757e4bd976ee7fda5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aca35e85e57a07a2b411a23d81b99cff9983b9c2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726520"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707060"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>產生新專案︰深入探討，第一部分
-您是否想要瞭解如何建立您自己的專案類型？ 想知道當您建立新專案時，實際發生什麼事？ 讓我們看看幕後的內容，並查看真正的狀況。
+曾經考慮過如何創建自己的項目類型? 想知道創建新專案時實際會發生什麼情況? 讓我們看看引擎蓋下,看看到底發生了什麼。
 
- 有數個工作會為您 Visual Studio 座標：
+ Visual Studio 為您協調了幾個任務:
 
-- 它會顯示所有可用專案類型的樹狀結構。
+- 它顯示所有可用項目類型的樹。
 
-- 它會顯示每個專案類型的應用程式範本清單，並讓您挑選一個。
+- 它顯示每個項目類型的應用程式樣本清單,並允許您選擇一個範本。
 
-- 它會收集應用程式的專案資訊，例如專案名稱和路徑。
+- 它收集應用程式的專案資訊,如專案名稱和路徑。
 
-- 它會將此資訊傳遞至專案 factory。
+- 它將此信息傳遞給項目工廠。
 
-- 它會在目前的方案中產生專案專案和資料夾。
+- 它在當前解決方案中生成專案項和資料夾。
 
-## <a name="the-new-project-dialog-box"></a>[新增專案] 對話方塊
- 當您選取新專案的專案類型時，就會開始。 首先，**按一下 [檔案**] 功能表上的 [**新增專案**]。 [**新增專案**] 對話方塊隨即出現，並看起來像這樣：
+## <a name="the-new-project-dialog-box"></a>新項目對話框
+ 當您為新項目選擇項目類型時,一切就開始了。 讓我們首先按下 **「檔**」功能表上的 **「新專案**」。 此時將顯示 **「新項目**」對話框,如下所示:
 
- ![[新增專案] 對話方塊](../../extensibility/internals/media/newproject.gif "NewProject")
+ ![[New Project] \(新增專案\) 對話方塊](../../extensibility/internals/media/newproject.gif "NewProject")
 
- 讓我們進一步瞭解。 [**專案類型**] 樹狀目錄會列出您可以建立的各種專案類型。 當您選取專案類型（例如**Visual C# Windows**）時，您會看到可讓您開始使用的應用程式範本清單。 **Visual Studio 安裝的範本**會由 Visual Studio 安裝，並可供電腦的任何使用者使用。 您建立或收集的新範本可以新增至 [**我的範本**]，而且只能供您使用。
+ 讓我們進一步了解。 「**項目類型」** 樹列出了您可以建立的各種項目類型。 當您選擇項目類型(如**Visual C# Windows)** 時,您將看到一個應用程式樣本清單來説明您入門。 **Visual Studio 安裝的範本**由 Visual Studio 安裝,可供電腦的任何使用者使用。 您創建或收集的新範本可以添加到 **「我的範本」中**,並且僅對您可用。
 
- 當您選取如**Windows 應用程式**的範本時，應用程式類型的描述會出現在對話方塊中;在此情況下，**是用來建立具有 Windows 使用者介面之應用程式的專案**。
+ 當您選擇像 Windows**應用程式**這樣的範本時,應用程式類型的說明將顯示在對話方塊中;但是,在對話方塊中,將顯示應用程式類型的說明。在這種情況下,**用於使用 Windows 使用者介面建立應用程式的專案**。
 
- 在 [**新增專案**] 對話方塊的底部，您會看到數個可收集詳細資訊的控制項。 您看到的控制項視專案類型而定，但通常包括 [專案**名稱**] 文字方塊、[**位置**] 文字方塊和相關的 **[流覽]** 按鈕，以及方案的 [**方案名稱**] 文字方塊和相關的 [**建立目錄]。** 核取方塊。
+ 在 **「新項目」** 對話框的底部,您將看到幾個收集詳細資訊的控制項。 您看到的控制項取決於項目類型,但通常包括專案**名稱**文字框、**位置**文字框和相關 **「瀏覽」** 按鈕,以及**解決方案名稱**文本框和**解決方案的相關"創建目錄**"複選框。
 
-## <a name="populating-the-new-project-dialog-box"></a>填入 [新增專案] 對話方塊
- [**新增專案**] 對話方塊從何處取得其資訊？ 這裡有兩種機制可供使用，其中一個已被取代。 [**新增專案**] 對話方塊結合並顯示從這兩種機制取得的資訊。
+## <a name="populating-the-new-project-dialog-box"></a>填充新項目對話框
+ **新項目**對話框從何處獲取其資訊? 這裡有兩種機制在起作用,其中一種是棄用的。 "**新項目**"對話框合併並顯示從這兩個機制獲得的資訊。
 
- 較舊的（已淘汰）方法會使用系統登錄機碼目和 vsdir 檔案。 此機制會在 Visual Studio 開啟時執行。 較新的方法會使用 .vstemplate 檔案。 這項機制會在 Visual Studio 初始化（例如，藉由執行
+ 較舊的(已棄用)方法使用系統註冊表項和 .vsdir 檔。 此機制在可視化工作室打開時運行。 較新的方法使用 .vstemplate 檔。 此機制在可視化工作室初始化時運行,例如,通過運行
 
 ```
 devenv /setup
@@ -60,119 +60,119 @@ devenv /installvstemplates
 ```
 
 ### <a name="project-types"></a>專案類型
- **專案類型**根節點的位置和名稱，例如 **C#視覺**和**其他語言**，是由系統登錄機碼目所決定。 子節點的組織（例如**資料庫**和**智慧型裝置**）會鏡像包含對應 .vstemplate 檔案之資料夾的階層。 讓我們先看一下根節點。
+ **Project 類型**根節點(如**Visual C#** **和其他語言**)的位置和名稱由系統註冊表項確定。 子節點(如**資料庫**和**智慧設備**)的組織鏡像包含相應 .vstemplate 檔案的資料夾的層次結構。 讓我們先看一下根節點。
 
 #### <a name="project-type-root-nodes"></a>專案類型根節點
- 當 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 初始化時，它會遍歷系統登錄鍵 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs 的子機碼，以建立並命名**專案類型**樹狀結構的根節點。 此資訊會進行快取以供稍後使用。 查看 TemplateDirs \\ {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\/1 鍵。 每個專案都是 VSPackage GUID。 已忽略子機碼（/1）的名稱，但其存在表示這是**專案類型**根節點。 根節點可能會在 [**專案類型**] 樹狀結構中，有數個子機控制其外觀。 讓我們來看看其中的一些專案。
+ 初始[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]化時,它將遍歷系統註冊表項HKEY_LOCAL_MACHINE_SOFTWARE_Microsoft_VisualStudio_14.0_NewProjectTemplates_TemplateDirs的子鍵,以生成和命名**項目類型**樹的根節點。 此資訊將緩存供以後使用。 查看範本 Dirs\\[FAE04EC1-301F-11D3-BF4B-00C04F79EFBC]\\/1 鍵。 每個條目都是 VSPackage GUID。 子鍵 (/1) 的名稱將被忽略,但其存在表明這是**項目類型**根節點。 根節點可能又具有多個子鍵,這些子鍵控制其在**Project 類型**樹中的外觀。 讓我們來看看其中的一些。
 
 ##### <a name="default"></a>(預設值)
- 這是命名根節點之當地語系化字串的資源識別碼。 字串資源位於 VSPackage GUID 所選取的附屬 DLL 中。
+ 這是命名根節點的當地語系化字串的資源 ID。 字串資源位於 VSPackage GUID 選擇的衛星 DLL 中。
 
- 在此範例中，VSPackage GUID 為
+ 這個範例中,VS 套件 GUID 是
 
- {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}
+ [FAE04EC1-301F-11D3-BF4B-00C04F79EFBC]
 
- 根節點的資源識別碼（預設值）（/1）是 #2345
+ 根節點 (/1) 的資源 ID(預設值)#2345
 
- 如果您在 [鄰近的套件] 索引鍵中查閱 GUID，並檢查 SatelliteDll 子機碼，您可以找到包含字串資源之元件的路徑：
+ 如果在附近的「包」鍵中尋找 GUID 並檢查 SatelliteDll 子鍵,則可以找到包含字串資源的程式集的路徑:
 
- \<Visual Studio 安裝路徑 > \VC#\VCSPackages\1033\csprojui.dll
+ \<視覺工作室安裝路徑>_VC_VCS 包\1033\csprojui.dll
 
- 若要確認這一點，請開啟 [檔案瀏覽器]，然後將 [csprojui] 拖曳至 Visual Studio 目錄。 字串表顯示資源 #2345 的標題為 [**視覺效果C#** ]。
+ 要驗證這一點,請打開檔案資源管理器並將 csprojui.dll 拖動到可視化工作室目錄中。 字串表顯示資源#2345具有 Visual **C#** 的標題。
 
-##### <a name="sortpriority"></a>SortPriority
- 這會決定根節點在 [**專案類型**] 樹狀結構中的位置。
+##### <a name="sortpriority"></a>排序優先權
+ 這將確定根節點在**項目類型**樹中的位置。
 
- SortPriority REG_DWORD 0x00000014 （20）
+ 排序優先權REG_DWORD 0x00000014 (20)
 
- 優先順序愈低，樹狀結構中的位置愈高。
+ 優先順序的數量越低,樹中的位置越高。
 
-##### <a name="developeractivity"></a>DeveloperActivity
- 如果這個子機碼存在，則根節點的位置是由 [開發人員設定] 對話方塊所控制。 例如，套用至物件的
+##### <a name="developeractivity"></a>開發人員活動
+ 如果存在此子鍵,則根節點的位置由"開發人員設置"對話框控制。 例如，
 
- DeveloperActivity REG_SZVC#
+ 開發人員活動REG_SZ VC#
 
- 表示如果已C#針對 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 開發設定 Visual Studio，則視覺效果將會是根節點。 否則，它會是**其他語言**的子節點。
+ 指示如果為[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]開發設置了 Visual Studio,則 Visual C++ 將成為根節點。 否則,它將是**其他語言**的子節點。
 
 ##### <a name="folder"></a>資料夾
- 如果這個子機碼存在，則根節點會變成指定資料夾的子節點。 可能的資料夾清單會出現在 [機碼] 底下
+ 如果存在此子鍵,則根節點將成為指定資料夾的子節點。 這個鍵下會顯示可能的資料夾清單
 
- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
+ HKEY_LOCAL_MACHINE_SOFTWARE_微軟_VisualStudio_11.0\新專案範本\偽資料夾
 
- 例如，[資料庫專案] 專案的資料夾索引鍵會符合 PseudoFolders 中的其他專案類型專案。 因此，在 [**專案類型**] 樹狀目錄中，**資料庫專案**將是**其他專案類型**的子節點。
+ 例如,資料庫專案條目具有與偽資料夾中的「其他項目類型」條目匹配的資料夾鍵。 因此,在**專案類型**樹中,**資料庫專案**將是**其他專案類型的**子節點。
 
-#### <a name="project-type-child-nodes-and-vstdir-files"></a>專案類型子節點和 vstdir 檔
- [**專案類型**] 樹狀結構中的子節點位置會遵循 ProjectTemplates 資料夾中的資料夾階層。 針對電腦範本（**Visual Studio 安裝的範本**），一般位置是 \Program Files\Microsoft Visual Studio 14.0 \ Common7\IDE\ProjectTemplates\，而對於使用者範本（**我的範本**）而言，一般的位置是 \My Documents \Visual Studio 14.0 \ Templates\ProjectTemplates \\。 這兩個位置的資料夾階層會合並，以建立**專案類型**樹狀結構。
+#### <a name="project-type-child-nodes-and-vstdir-files"></a>專案類型子節點和 .vstdir 檔案
+ **"專案類型'** 樹中的子節點的位置遵循 ProjectTemplates 資料夾中資料夾的層次結構。 對於機器範本 **(Visual Studio 安裝的範本**),典型位置是 [程式檔]微軟可視化工作室 14.0\Common7_IDE_ProjectTemplates]和使用者範本(**我的範本**),典型位置是 [我的文檔]Visual Studio\\14.0_範本\專案範本 。 合併這兩個位置的資料夾層次結構以創建**專案類型**樹。
 
- 若為具有C#開發人員設定的 Visual Studio，[**專案類型**] 樹狀結構看起來會像這樣：
+ 對於具有 C# 開發人員設定的視覺化工作室,**專案類型**樹如下所示:
 
- ![專案類型](../../extensibility/internals/media/projecttypes.png "ProjectTypes")
+ ![專案類型](../../extensibility/internals/media/projecttypes.png "專案類型")
 
- 對應的 ProjectTemplates 資料夾看起來像這樣：
+ 相應的 ProjectTemplates 資料夾如下所示:
 
- ![專案範本](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")
+ ![專案範本](../../extensibility/internals/media/projecttemplates.png "專案範本")
 
- 當 [**新增專案**] 對話方塊開啟時，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 會遍歷 ProjectTemplates 資料夾，並在 [**專案類型**] 樹狀目錄中重新建立其結構，但有一些變更：
+ 開啟**新項目**對話框時,[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]您要建立 ProjectTemplates 資料夾,並在 **「項目類型**」 樹中重新建立其結構,並進行一些變更:
 
-- [**專案類型**] 樹狀結構中的根節點是由應用程式範本決定。
+- **項目類型**樹中的根節點由應用程式範本確定。
 
-- 節點名稱可以當地語系化，而且可以包含特殊字元。
+- 節點名稱可以當地語系化,可以包含特殊字元。
 
-- 您可以變更排序次序。
+- 可以更改排序順序。
 
-##### <a name="finding-the-root-node-for-a-project-type"></a>尋找專案類型的根節點
- 當 Visual Studio 遍歷 ProjectTemplates 資料夾時，它會開啟所有 .zip 檔案，並解壓縮任何 .vstemplate 檔案。 .Vstemplate 檔案使用 XML 來描述應用程式範本。 如需詳細資訊，請參閱[新的專案產生：在幕後，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。
+##### <a name="finding-the-root-node-for-a-project-type"></a>尋找項目類型的根節點
+ 當 Visual Studio 遍歷 ProjectTemplates 資料夾時,它會打開所有 .zip 檔案並提取任何 .vstemplate 檔。 .vstemplate 檔案使用 XML 來描述應用程式範本。 有關詳細資訊,請參閱[新專案生成:在罩下,第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。
 
- @No__t_0ProjectType > 標記會決定應用程式的專案類型。 例如，\CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip 檔案包含具有此標記的 EmptyProject：
+ 項目\<類型>標記確定應用程式的項目類型。 例如,[CSharp]智慧設備\WindowsCE_1033_WindowsCE-emptyProject.zip 檔包含一個 EmptyProject.vstemplate 檔,該檔具有以下標記:
 
 ```
 <ProjectType>CSharp</ProjectType>
 ```
 
- @No__t_0ProjectType > 標記，而不是 ProjectTemplates 資料夾中的子資料夾，會決定應用程式在 [**專案類型**] 樹狀結構中的根節點。 在此範例中，Windows CE 應用程式會出現**在C#視覺**根節點下，即使您要將 WindowsCE 資料夾移至 [...] 資料夾，Windows CE 應用程式仍會出現在**視覺C#效果**根目錄底下節點.
+ ProjectType>\<標籤(而不是 ProjectTemplates 資料夾中的子資料夾)確定 **「項目類型**」樹中的應用程式的根節點。 在此範例中,Windows CE 應用程式將顯示在 Visual **C++** 根節點下,即使您要將 WindowsCE 資料夾移動到 VisualBasic 資料夾,Windows CE 應用程式仍將顯示在**Visual C++** 根節點下。
 
-##### <a name="localizing-the-node-name"></a>當地語系化節點名稱
- 當 Visual Studio 流經 ProjectTemplates 資料夾時，它會檢查它找到的任何 vstdir 檔案。 Vstdir 檔案是一個 XML 檔案，可控制 [**新增專案**] 對話方塊中專案類型的外觀。 在 vstdir 檔案中，使用 \<LocalizedName > 標記來命名 [**專案類型**] 節點。
+##### <a name="localizing-the-node-name"></a>本地化節點名稱
+ 當 Visual Studio 遍歷 ProjectTemplates 資料夾時,它會檢查它找到的任何 .vstdir 檔。 .vstdir 檔案是一個 XML 檔,用於控制項目類型在 **"新專案"** 對話框中的外觀。 在 .vstdir 檔案中\<,使用 當地語系化名稱>標記來命名**專案類型**節點。
 
- 例如，\CSharp\Database\TemplateIndex.vstdir 檔案包含此標記：
+ 例如,[CSharp]資料庫_樣本索引.vstdir 檔包含此標記:
 
 ```
 <LocalizedName Package="{462b036f-7349-4835-9e21-bec60e989b9c}" ID="4598"/>
 ```
 
- 這會決定用來命名根節點（在此案例中為**資料庫**）之當地語系化字串的附屬 DLL 和資源識別碼。 當地語系化的名稱可以包含資料夾名稱無法使用的特殊字元，例如 **.net**。
+ 這會確定命名根節點的本地化字串的附屬 DLL 和資源 ID,在這種情況下,**為資料庫**。 本地化名稱可以包含不適用於資料夾名稱的特殊字元,例如 **.NET**。
 
- 如果沒有 \<LocalizedName > 標記，則專案類型是由資料夾本身命名， **SmartPhone2003**。
+ 如果不存在\<當地語系化名稱>標記,則專案類型由資料夾本身**稱為 SmartPhone2003**。
 
-##### <a name="finding-the-sort-order-for-a-project-type"></a>尋找專案類型的排序次序
- 若要判斷專案類型的排序次序，vstdir 檔案會使用 \<SortOrder > 標記。
+##### <a name="finding-the-sort-order-for-a-project-type"></a>尋找項目型態的排序順序
+ 要確定項目類型的排序順序,.vstdir 檔使用\<SortOrder> 標記。
 
- 例如，\CSharp\Windows\Windows.vstdir 檔案包含此標記：
+ 例如,[CSharp]Windows_Windows.vstdir 檔包含此標記:
 
 ```
 <SortOrder>5</SortOrder>
 ```
 
- \CSharp\Database\TemplateIndex.vstdir 檔案具有較大值的標記：
+ [CSharp]資料庫_樣本索引.vstdir 檔具有具有較大值的標記:
 
 ```
 <SortOrder>5000</SortOrder>
 ```
 
- @No__t_0SortOrder > 標記中的數位越低，樹狀結構中的位置就愈高，因此**Windows**節點會顯示在 [**專案類型**] 樹狀結構的 [**資料庫**] 節點上方。
+ "SortOrder"> 標記中的數位越低,樹中的位置越高,因此**Windows**節點看起來高於**專案類型****Database**\<樹中的資料庫節點。
 
- 如果未指定專案類型的 \<SortOrder > 標記，則會依照包含 \<SortOrder > 規格的任何專案類型，按照字母順序顯示。
+ 如果未\<為項目類型指定 SortOrder>标记,則它按字母順序顯示,\<遵循包含 SortOrder>规范的任何项目类型。
 
- 請注意，[我的文件] （**我的範本**）資料夾中沒有 vstdir 檔案。 使用者應用程式專案類型名稱不會當地語系化，而且會依字母順序顯示。
+ 請注意,"我的文檔(**我的範本**)"資料夾中沒有 .vstdir 檔。 使用者應用程式項目類型名稱未本地化,按字母順序顯示。
 
-#### <a name="a-quick-review"></a>快速審核
- 讓我們修改 [**新增專案**] 對話方塊，並建立新的使用者專案範本。
+#### <a name="a-quick-review"></a>快速回顧
+ 讓我們修改 **「新項目**」對話方塊並創建新的使用者項目範本。
 
-1. 將 MyProjectNode 子資料夾新增至 \Program Files\Microsoft Visual Studio 14.0 \ Common7\IDE\ProjectTemplates\CSharp 資料夾。
+1. 將 MyProjectNode 子資料夾添加到 [程序文件]微軟可視化工作室 14.0_Common7_IDE_ProjectTemplates_CSharp 資料夾。
 
-2. 使用任何文字編輯器，在 MyProjectNode 資料夾中建立 MyProject vstdir 檔案。
+2. 使用任何文字編輯器在 MyProjectNode 資料夾中建立 MyProject.vstdir 檔。
 
-3. 將下列幾行新增至 vstdir 檔案：
+3. 將這些行新增到 .vstdir 檔案:
 
    ```
    <TemplateDir Version="1.0.0">
@@ -180,11 +180,11 @@ devenv /installvstemplates
    </TemplateDir>
    ```
 
-4. 儲存並關閉 vstdir 檔案。
+4. 保存並關閉 .vstdir 檔案。
 
-5. 使用任何文字編輯器，在 MyProjectNode 資料夾中建立 MyProject。
+5. 使用任何文字編輯器在 MyProjectNode 資料夾中建立 MyProject.vstemplate 檔案。
 
-6. 將下列幾行新增至 .vstemplate 檔案：
+6. 將這些行新增到 .vstemplate 檔案:
 
    ```
    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
@@ -194,11 +194,11 @@ devenv /installvstemplates
    </VSTemplate>
    ```
 
-7. 儲存 .vstemplate 檔案，然後關閉編輯器。
+7. 保存.vstemplate 檔案並關閉編輯器。
 
-8. 將 .vstemplate 檔案傳送到新的壓縮 MyProjectNode\MyProject.ZIP 檔案夾。
+8. 將 .vstemplate 檔案發送到新的壓縮 MyProjectNode_MyProject.zip 資料夾。
 
-9. 從 [Visual Studio 命令] 視窗中，輸入：
+9. 從視覺化工作室命令視窗中,鍵入:
 
     ```
     devenv /installvstemplates
@@ -206,11 +206,11 @@ devenv /installvstemplates
 
    開啟 Visual Studio。
 
-10. 開啟 [**新增專案**] 對話方塊，然後展開 **[ C#視覺效果**專案] 節點。
+10. 打開 **「新項目**」對話方塊並展開視覺化**C#** 專案節點。
 
     ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")
 
-    在 Windows 節點底下， **MyProjectNode**會顯示C#為 [視覺效果] 的子節點。
+    **MyProjectNode**顯示為 Windows 節點下的 Visual C++ 的子節點。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [產生新專案︰深入探討，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

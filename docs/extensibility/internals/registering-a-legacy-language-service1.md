@@ -1,27 +1,27 @@
 ---
-title: 註冊舊版語言 Service1 |Microsoft Docs
+title: 註冊傳統語言服務1 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], registering
 ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6607f96a37c8805c8a01d1d8aa5271ef84f1c6a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 91776382fff1818986049558c9d86e8fce4d0dd7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252379"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705897"
 ---
 # <a name="registering-a-legacy-language-service"></a>註冊舊版語言服務
-在 managed package framework （MPF）中，語言服務是由 VSPackage 所好處（請參閱[vspackage](../../extensibility/internals/vspackages.md)），並藉[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]由新增登錄機碼和專案來註冊。 此註冊程式會在安裝期間，部分于執行時間執行。
+在託管套件框架 (MPF) 中,語言服務由 VSPackage(請參閱[VSPackage)](../../extensibility/internals/vspackages.md)提供,[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]並透過新增註冊表項和條目進行註冊。 此註冊過程在安裝期間部分完成,部分在運行時完成。
 
 ## <a name="register-the-language-service-by-using-attributes"></a>使用屬性註冊語言服務
- 下列屬性是用來註冊語言服務。
+ 以下屬性用於註冊語言服務。
 
 - <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>
 
@@ -33,10 +33,10 @@ ms.locfileid: "71252379"
 
 - <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>
 
-  以下說明這些屬性
+  這些屬性在下面解釋
 
-### <a name="provideserviceattribute"></a>ProvideServiceAttribute
- 此屬性會將您的語言服務註冊為服務。
+### <a name="provideserviceattribute"></a>提供服務屬性
+ 此屬性將語言服務註冊為服務。
 
 ### <a name="example"></a>範例
 
@@ -54,8 +54,8 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguageserviceattribute"></a>ProvideLanguageServiceAttribute
- 此屬性會將您的語言服務特別註冊為語言服務。 它可讓您設定選項來指定語言服務所提供的功能。 此範例會顯示語言服務可提供的選項子集。 如需一組完整的語言服務選項， <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>請參閱。
+### <a name="providelanguageserviceattribute"></a>提供語言服務屬性
+ 此屬性專門將您的語言服務註冊為語言服務。 它允許您設置指定語言服務提供的功能的選項。 該示例顯示了語言服務可以提供的選項的子集。 有關完整的語言服務選項集,請參閱<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>。
 
 ### <a name="example"></a>範例
 
@@ -79,8 +79,8 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguageextensionattribute"></a>ProvideLanguageExtensionAttribute
- 此屬性會將您的語言服務與副檔名產生關聯。 每當載入具有該副檔名的檔案時，在任何專案中，您的語言服務就會啟動，並用來顯示檔案的內容。
+### <a name="providelanguageextensionattribute"></a>提供語言延伸屬性
+ 此屬性將語言服務與檔擴展名關聯。 每當載入具有該擴展名的檔時,在任何專案中,都會啟動您的語言服務並用於顯示檔的內容。
 
 ### <a name="example"></a>範例
 
@@ -98,8 +98,8 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguagecodeexpansionattribute"></a>ProvideLanguageCodeExpansionAttribute
- 這個屬性會註冊從中取得程式碼擴充或程式碼片段範本的位置。 當代碼段插入至原始程式檔時，**程式碼片段瀏覽器**和編輯器會使用這項資訊。
+### <a name="providelanguagecodeexpansionattribute"></a>提供語言代碼延伸屬性
+ 此屬性註冊從中獲取代碼擴展或代碼段範本的位置。 當程式碼段插入到源檔中時,**程式碼段瀏覽器**和編輯器使用此資訊。
 
 ### <a name="example"></a>範例
 
@@ -124,11 +124,11 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguageeditoroptionpageattribute"></a>ProvideLanguageEditorOptionPageAttribute
- 這個屬性會註冊屬性頁，以顯示在 [**文字編輯器**] 類別下的 [**選項**] 對話方塊中。 針對您的語言服務，使用這些屬性中的其中一個，以顯示每個頁面。 如果您需要在樹狀結構中組織您的頁面，請使用其他屬性來定義樹狀結構的每個節點。
+### <a name="providelanguageeditoroptionpageattribute"></a>提供語言編輯器選項頁面屬性
+ 此屬性註冊要顯示在 **「文字編輯器**」類別下的「**選項**」對話框中顯示的屬性頁。 對要為語言服務顯示的每個頁面使用這些屬性之一。 如果需要在樹結構中組織頁面,請使用其他屬性定義樹的每個節點。
 
 ### <a name="example"></a>範例
- 這個範例會顯示兩個屬性頁、**選項**和**縮**排，以及一個包含第二個屬性頁的節點。
+ 此範例顯示兩個屬性頁,**選項**和**縮進**,以及一個包含第二個屬性頁的節點。
 
 ```csharp
 using Microsoft.VisualStudio.Shell;
@@ -159,11 +159,11 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="proffer-the-language-service-at-run-time"></a>在執行時間提供語言服務
- 載入語言套件時，您必須知道[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]您的語言服務已就緒。 您可以藉由 proffering 服務來完成這項工作。 這是在<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法中完成。 此外，您必須啟動在閒置期間呼叫語言服務的計時器，才能完成背景剖析。 如果您已透過<xref:Microsoft.VisualStudio.Package.DocumentProperties>類別來執行任何，則此閒置計時器也會用來更新文件屬性。 為了支援計時器，您的封裝必須執行<xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent>介面（ <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A>只需要完全實作為方法，其餘的方法可以傳回預設值）。
+## <a name="proffer-the-language-service-at-run-time"></a>在執行時提供語言服務
+ 載入語言包後,必須告知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]語言服務已準備就緒。 通過提供服務來執行此操作。 這在方法中<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>完成。 此外,您需要啟動一個計時器,在空閒期間調用語言服務,以便可以完成後台分析。 如果透過類實現了任何操作,<xref:Microsoft.VisualStudio.Package.DocumentProperties>則此空閒計時器還用於更新文件屬性。 為了支援計時器,包必須實現<xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent>介面(只需要完全<xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A>實現 該方法;其餘方法可以返回預設值)。
 
 ### <a name="example"></a>範例
- 這個範例顯示 proffering 服務和提供閒置計時器的一般方法。
+ 此示例顯示了提供服務和提供空閒計時器的典型方法。
 
 ```csharp
 

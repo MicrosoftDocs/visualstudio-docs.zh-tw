@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyField::GetPropertySetter |Microsoft Docs
+title: IDebug屬性欄位:獲取屬性設定器 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyField::GetPropertySetter method
 ms.assetid: 744d76fd-2bcc-4917-a040-ce4cc714ef61
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29772ad76df6538ec5093d2fb34427a7fa89c5ff
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 76834b3d4d61f0a58d7a0d2c36f8e30c444ddca2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345685"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720844"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
-取得設定屬性的方法。
+獲取設置屬性的方法。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetPropertySetter(
 
 ## <a name="parameters"></a>參數
 `ppField`\
-[out]傳回[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)物件，表示設定屬性的方法。
+[出]返回表示設置屬性的方法的[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則會傳回錯誤碼。
+ 如果成功,返回S_OK;否則返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 若要取得之屬性的方法，呼叫[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)方法。
+ 要獲取獲取屬性的方法,請調用[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)

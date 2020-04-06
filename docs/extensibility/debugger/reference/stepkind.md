@@ -1,5 +1,5 @@
 ---
-title: STEPKIND | Microsoft Docs
+title: 步進 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - STEPKIND enumeration
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7adf835cd3809eeb3d4db664cf5febcfa2a0597b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7ed2877c880d3cd2674f62b4f900a6e923bb29d9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329162"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713563"
 ---
 # <a name="stepkind"></a>STEPKIND
-指定用於逐步執行步驟種類。
+指定步進的步驟類型。
 
 ## <a name="syntax"></a>語法
 
@@ -48,27 +48,27 @@ public enum enum_STEPKIND { 
 
 ## <a name="fields"></a>欄位
  `STEP_INTO`\
- 逐步執行函式。
+ 步驟進入函數。
 
  `STEP_OVER`\
- 不是進入函式。
+ 在函數上執行步驟。
 
  `STEP_OUT`\
- 跳離函式。
+ 退出函數。
 
  `STEP_BACKWARDS`\
- 向後逐步執行函式。
+ 向後的步驟進入函數。
 
 ## <a name="remarks"></a>備註
- 作為引數[步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。
+ 作為參數傳遞給[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+- [步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)

@@ -1,25 +1,25 @@
 ---
-title: 處理特殊部署 |Microsoft Docs
+title: 處理專業部署 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - deploying applications [Visual Studio SDK]
 - specialized deployment
 ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c54b98c7bc7341a09fee9e6e5d0cc6860f4254f
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 972965c3565088af8205d6f7903d7098e568c057
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848950"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708214"
 ---
-# <a name="handle-specialized-deployment"></a>處理特殊部署
-部署是專案的選擇性作業。 例如，Web 專案支援部署，讓專案更新 Web 服務器。 同樣地，**智慧型裝置**專案也支援部署，將建立的應用程式複製到目標裝置。 專案子類型可以藉由執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 介面來提供特殊的部署行為。 這個介面會定義一組完整的部署作業：
+# <a name="handle-specialized-deployment"></a>處理專用部署
+部署是專案的可選操作。 例如,Web 專案支援部署,讓專案更新 Web 伺服器。 同樣,**智慧設備**專案支援將生成的應用程式複製到目標設備的部署。 專案子類型可以通過<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>實現 介面來提供專用部署行為。 這個介面定義完整的部署操作:
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>
 
@@ -37,13 +37,13 @@ ms.locfileid: "75848950"
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>
 
-  實際的部署作業應該在個別的執行緒中執行，讓 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 更能回應使用者互動。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 所提供的方法是由 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 以非同步方式呼叫，並在背景中操作，讓環境隨時可以查詢部署作業的狀態，或在必要時停止作業。 當使用者選取 [部署] 命令時，環境會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 介面部署作業。
+  實際部署操作應在單獨的線程中執行,以使[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]對使用者交互的回應更加靈敏。 提供<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>的方法由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]後台異步調用並在後台操作,允許環境隨時查詢部署操作的狀態或在必要時停止該操作。 當使用者<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>選擇部署命令時,環境將調用介面部署操作。
 
-  若要通知環境部署作業已開始或結束，專案子類型必須呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> 方法。
+  要通知環境部署操作已開始或結束,專案子類型需要調用<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A><xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A>和方法。
 
-## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>若要透過子類型專案來處理特殊部署
+## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>依子類型項目處理專用部署
 
-- 執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> 方法來註冊環境，以接收部署狀態事件的通知。
+- 實現註冊<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>環境以接收部署狀態事件通知的方法。
 
     ```vb
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()
@@ -74,7 +74,7 @@ ms.locfileid: "75848950"
 
     ```
 
-- 執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> 方法，以取消環境的註冊，以接收部署狀態事件的通知。
+- 實施取消<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>環境註冊以接收部署狀態事件通知的方法。
 
     ```vb
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer
@@ -92,7 +92,7 @@ ms.locfileid: "75848950"
 
     ```
 
-- 執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> 方法，以執行應用程式特定的認可作業。  這個方法主要用於資料庫部署。
+- 實現方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>以執行特定於應用程式的提交操作。  此方法主要用於資料庫部署。
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -110,7 +110,7 @@ ms.locfileid: "75848950"
 
     ```
 
-- 執行復原作業的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> 方法。 呼叫這個方法時，部署專案必須執行任何適當的動作來復原變更，並還原專案的狀態。 這個方法主要用於資料庫部署。
+- 實現方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>以執行回滾操作。 調用此方法時,部署專案必須執行任何適當的操作來回滾更改並還原專案的狀態。 此方法主要用於資料庫部署。
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -128,7 +128,7 @@ ms.locfileid: "75848950"
 
     ```
 
-- 執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> 方法，以判斷專案是否能夠啟動部署作業。
+- 實現方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>以確定專案是否能夠啟動部署操作。
 
     ```vb
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer
@@ -161,7 +161,7 @@ ms.locfileid: "75848950"
 
     ```
 
-- 執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> 方法，以判斷部署作業是否已順利完成。
+- 實現方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>以確定部署操作是否成功完成。
 
     ```vb
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer
@@ -184,7 +184,7 @@ ms.locfileid: "75848950"
 
     ```
 
-- 執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> 方法，以在個別的執行緒中開始部署作業。 將應用程式部署特定的程式碼放在 `Deploy` 方法內。
+- 實現方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>以在單獨的線程中開始部署操作。 將特定於應用程式部署的代碼放在`Deploy`方法中。
 
     ```vb
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer
@@ -241,7 +241,7 @@ ms.locfileid: "75848950"
 
     ```
 
-- 執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> 方法以停止部署作業。 當使用者在部署程式期間按下 [**取消**] 按鈕時，就會呼叫這個方法。
+- 實現停止<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>部署操作的方法。 當使用者在部署過程中按下 **「取消」** 按鈕時,將調用此方法。
 
     ```vb
     Public Function StopDeploy(ByVal fSync As Integer) As Integer
@@ -287,7 +287,7 @@ ms.locfileid: "75848950"
     ```
 
 > [!NOTE]
-> 本主題中提供的所有程式碼範例都是[VSSDK 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)中較大範例的一部分。
+> 本主題提供的所有代碼示例都是[VSSDK 範例中](https://github.com/Microsoft/VSSDK-Extensibility-Samples)較大範例的一部分。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [專案子類型](../../extensibility/internals/project-subtypes.md)

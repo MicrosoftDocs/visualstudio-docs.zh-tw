@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::GetCount | Microsoft Docs
+title: IEnum調試位址::獲取計數 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses::GetCount method
 ms.assetid: f2ca8ff8-539f-457c-83f8-9bbf97618065
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a718679441f93131bc545aa3062f2b9a68893f9e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4610613b6fef5e80ae0fd36c3548b4dfdcbc8591
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347305"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717673"
 ---
 # <a name="ienumdebugaddressesgetcount"></a>IEnumDebugAddresses::GetCount
-這個方法會傳回在列舉中的項目數。
+此方法返回枚舉中的元素數。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>參數
 `pcelt`\
-[out]列舉中傳回的項目數。
+[出]返回枚舉中的元素數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 這個方法不是指定只有下一步、 複製、 Skip 和重設需要實作的自訂 COM 列舉型別介面的一部分。
+ 此方法不是習慣的 COM 枚舉介面的一部分,該介面指定僅實現"下一步"、克隆、跳過和重置。
 
 ## <a name="see-also"></a>另請參閱
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

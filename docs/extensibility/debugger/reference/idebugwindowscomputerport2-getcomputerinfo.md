@@ -1,28 +1,28 @@
 ---
-title: IDebugWindowsComputerPort2::GetComputerInfo | Microsoft Docs
+title: IDebugWindows電腦埠2::獲取計算機資訊 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetComputerInfo
 - IDebugWindowsComputerPort2::GetComputerInfo
 ms.assetid: 654910b2-c239-44c8-92fc-317680a5672f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 52b68bc9014e2dea7a221a48ae0b0281d98f3d15
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 420e963b70846b4d7251c3f1b6c7f5b224c9fdb2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335746"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718269"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
-擷取電腦的相關資訊的偵錯工具中執行。
+檢索有關調試器運行的計算機的資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -40,10 +40,10 @@ public int GetComputerInfo(
 
 ## <a name="parameters"></a>參數
 `pInfo`\
-[out]結構，其中包含電腦資訊的參考。
+[出]對包含計算機資訊的結構的引用。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md)

@@ -1,5 +1,5 @@
 ---
-title: LPTEXTOUTPROC | Microsoft Docs
+title: LPTEXTOUTPROC |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,26 +11,26 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a990fc28ffcba4cffc199c1435fddb41bd896521
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 38c3e8263b9a30058c2de019e5e92160b716aa71
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309028"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702795"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
-當使用者執行從原始檔控制作業，在整合式的開發環境 (IDE) 內時，原始檔控制外掛程式可能會想要傳達與作業相關的錯誤或狀態訊息。 此外掛程式可以針對此目的顯示自己的訊息方塊。 不過，進行更多的無縫整合，外掛程式可以傳遞字串給 IDE，然後顯示其原生方法來顯示狀態資訊。 這個機制是`LPTEXTOUTPROC`函式指標。 IDE 會實作此函式 （在下面詳細說明） 來顯示錯誤和狀態。
+當使用者從整合式開發環境 (IDE) 內部執行原始程式碼管理操作時,原始程式碼管理外掛程式可能需要傳達與操作相關的錯誤或狀態訊息。 為此,外掛程式可以顯示自己的消息框。 但是,為了進行更無縫的集成,外掛程式可以將字串傳遞給IDE,IDE然後以本機方式顯示狀態資訊。 這是`LPTEXTOUTPROC`函數指標。 IDE 實現此函數(下面將詳細介紹),用於顯示錯誤和狀態。
 
-IDE 會傳遞至原始檔控制外掛程式函式指標，此函式，當成`lpTextOutProc`參數，呼叫時[SccOpenProject](../extensibility/sccopenproject-function.md)。 SCC 作業期間，例如，如果呼叫的中間[SccGet](../extensibility/sccget-function.md)牽涉到許多檔案，此外掛程式可以呼叫`LPTEXTOUTPROC`函式，定期傳遞要顯示的字串。 IDE 可能會在狀態列上，在 [輸出] 視窗中，或在個別的訊息方塊中，視需要顯示這些字串。 （選擇性） 在 IDE 可能是能夠顯示與特定訊息**取消** 按鈕。 這可讓使用者取消作業，並提供 IDE 能夠將此資訊傳回給外掛程式。
+調用`lpTextOutProc`[SccOpenProject](../extensibility/sccopenproject-function.md)時,IDE 將函數指標傳遞給此函數(作為參數)傳遞給原始程式碼管理外掛程式。 例如,在 SCC 操作期間,在調用涉及許多檔的[SccGet](../extensibility/sccget-function.md)時,外`LPTEXTOUTPROC`掛程式可以調用 該函數,定期傳遞字串以顯示。 IDE 可以根據需要在狀態列、輸出視窗中或單獨的消息框中顯示這些字串。 或者,IDE 可能可以使用 **"取消"** 按鈕顯示某些消息。 這使用戶能夠取消該操作,並使IDE能夠將此資訊傳回外掛程式。
 
 ## <a name="signature"></a>簽章
- IDE 的輸出函式具有下列簽章：
+ IDE 的輸出函數具有以下簽署:
 
 ```cpp
 typedef LONG (*LPTEXTOUTPROC) (
@@ -43,37 +43,37 @@ typedef LONG (*LPTEXTOUTPROC) (
 
 display_string
 
-要顯示的文字字串。 此字串應該以換行的傳回或換行字元終止。
+要顯示的文字字串。 不應使用回車符或換行符終止此字串。
 
 mesg_type
 
-訊息的類型。 下表列出支援的值，這個參數。
+訊息的類型。 下表列出了此參數的支援值。
 
 |值|描述|
 |-----------|-----------------|
-|`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|將訊息視為資訊、 警告或錯誤。|
-|`SCC_MSG_STATUS`|訊息會顯示狀態，且可以在狀態列中顯示。|
-|`SCC_MSG_DOCANCEL`|不傳送任何訊息字串。|
-|`SCC_MSG_STARTCANCEL`|開始顯示**取消** 按鈕。|
-|`SCC_MSG_STOPCANCEL`|會停止顯示**取消** 按鈕。|
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|如果背景作業已取消要求 IDE:傳回 IDE`SCC_MSG_RTN_CANCEL`作業已取消; 否則會傳回`SCC_MSG_RTN_OK`。 `display_string`參數會轉換為[SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled)原始檔控制外掛程式所提供的結構。|
-|`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|會指示 IDE 相關檔案，它會從版本控制之前。 `display_string`參數會轉換為[SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile)原始檔控制外掛程式所提供的結構。|
-|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|會指示 IDE 相關檔案之後擷取從版本控制。 `display_string`參數會轉換為[SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile)原始檔控制外掛程式所提供的結構。|
-|`SCC_MSG_BACKGROUND_ON_MESSAGE`|會告訴 IDE 的背景作業的目前狀態。 `display_string`參數會轉換為[SccMsgDataOnMessage](#LinkSccMsgDataOnMessage)原始檔控制外掛程式所提供的結構。|
+|`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|該消息被視為資訊、警告或錯誤。|
+|`SCC_MSG_STATUS`|該消息顯示狀態,可以顯示在狀態列中。|
+|`SCC_MSG_DOCANCEL`|未送出消息字串。|
+|`SCC_MSG_STARTCANCEL`|開始顯示 **「取消」** 按鈕。|
+|`SCC_MSG_STOPCANCEL`|停止顯示 **「取消」** 按鈕。|
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|詢問 IDE 是否要取消後台操作:如果操作`SCC_MSG_RTN_CANCEL`被取消 ,IDE 將返回;否則,傳`SCC_MSG_RTN_OK`回 。 該`display_string`參數被強制轉換為[SccMsgDataIsCanceled](#LinkSccMsgDataIsCancelled)結構,該結構由原始程式碼管理外掛程式提供。|
+|`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|在從版本控制器索檔之前,先向IDE介紹該檔。 該`display_string`參數被強制轉換為[SccMsgDataOnOnGetFile](#LinkSccMsgDataOnBeforeGetFile)結構,該結構由原始程式碼管理外掛程式提供。|
+|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|從版本控制檢索檔後,向IDE告知該檔。 該`display_string`參數被強制轉換為[SccMsgDataOnOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile)結構,該結構由原始程式碼管理外掛程式提供。|
+|`SCC_MSG_BACKGROUND_ON_MESSAGE`|告訴 IDE 後台操作的當前狀態。 該`display_string`參數被強制轉換為[SccMsgDataOnMessage](#LinkSccMsgDataOnMessage)結構,該結構由原始程式碼管理外掛程式提供。|
 
 ## <a name="return-value"></a>傳回值
 
 |值|描述|
 |-----------|-----------------|
-|SCC_MSG_RTN_OK|顯示的字串，或作業已順利完成。|
-|SCC_MSG_RTN_CANCEL|使用者想要取消作業。|
+|SCC_MSG_RTN_OK|顯示字串或操作已成功完成。|
+|SCC_MSG_RTN_CANCEL|使用者希望取消該操作。|
 
 ## <a name="example"></a>範例
- 假設，IDE 會呼叫[SccGet](../extensibility/sccget-function.md)以 20 個檔案名稱。 原始檔控制外掛程式想要防止取消中間檔案 get 作業。 取得每個檔案之後, 它會呼叫`lpTextOutProc`、 每個檔案，在傳遞的狀態資訊，並將傳送`SCC_MSG_DOCANCEL`訊息是否報告任何狀態。 如果在任何階段外掛程式會收到傳回值`SCC_MSG_RTN_CANCEL`從 IDE，就會取消取得作業立即執行，以便擷取更多檔案。
+ 假設 IDE 調用具有 20 個檔名[的 SccGet。](../extensibility/sccget-function.md) 原始程式碼管理外掛程式希望防止在檔案獲取中間取消操作。 取得每個檔後,它會調用`lpTextOutProc`,傳遞每個檔的狀態資訊,如果該檔沒有要報告`SCC_MSG_DOCANCEL`的狀態 ,則發送消息。 如果外掛程式在任何時候收到來自IDE`SCC_MSG_RTN_CANCEL`的返回值,它會立即取消get操作,以便不再檢索檔。
 
 ## <a name="structures"></a>結構
 
-### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
+### <a name="sccmsgdataiscancelled"></a><a name="LinkSccMsgDataIsCancelled"></a>SccMsgDatais 已取消
 
 ```cpp
 typedef struct {
@@ -81,9 +81,9 @@ typedef struct {
 } SccMsgDataIsCancelled;
 ```
 
- 此結構會傳送具有`SCC_MSG_BACKGROUND_IS_CANCELLED`訊息。 它用來通訊已取消背景作業的識別碼。
+ 此結構隨消息一`SCC_MSG_BACKGROUND_IS_CANCELLED`起發送。 它用於傳達已取消的背景操作的 ID。
 
-### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile
+### <a name="sccmsgdataonbeforegetfile"></a><a name="LinkSccMsgDataOnBeforeGetFile"></a>SccMsgDataon 之前取得檔案
 
 ```cpp
 typedef struct {
@@ -92,9 +92,9 @@ typedef struct {
 } SccMsgDataOnBeforeGetFile;
 ```
 
- 此結構會傳送具有`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`訊息。 它用來傳達即將要擷取之檔案的名稱，以及擷取正在進行背景作業的識別碼。
+ 此結構隨消息一`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`起發送。 它用於傳達要檢索的文件的名稱和執行檢索的後台操作的 ID。
 
-### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile
+### <a name="sccmsgdataonaftergetfile"></a><a name="LinkSccMsgDataOnAfterGetFile"></a>SccMsgdataon 後取得檔案
 
 ```cpp
 typedef struct {
@@ -104,9 +104,9 @@ typedef struct {
 } SccMsgDataOnAfterGetFile;
 ```
 
- 此結構會傳送具有`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`訊息。 它用來通訊的結果擷取指定的檔案，以及未擷取背景作業的識別碼。 請參閱的傳回值[SccGet](../extensibility/sccget-function.md)的項目可以如此一來提供。
+ 此結構隨消息一`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`起發送。 它用於傳達檢索指定檔的結果以及進行檢索的後台操作的 ID。 有關可以因此提供的內容,請參閱[SccGet](../extensibility/sccget-function.md)的返回值。
 
-### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage
+### <a name="sccmsgdataonmessage"></a><a name="LinkSccMsgDataOnMessage"></a>SccMsgDataon訊息
 
 ```cpp
 typedef struct {
@@ -116,10 +116,10 @@ typedef struct {
 } SccMsgDataOnMessage;
 ```
 
- 此結構會傳送具有`SCC_MSG_BACKGROUND_ON_MESSAGE`訊息。 它用來通訊的背景作業的目前狀態。 狀態會表示為字串，以顯示 ide，並`bIsError`指出訊息的嚴重性 (`TRUE`錯誤訊息;`FALSE`警告或參考用訊息)。 此外，也會給予傳送狀態背景作業的識別碼。
+ 此結構隨消息一`SCC_MSG_BACKGROUND_ON_MESSAGE`起發送。 它用於傳達後台操作的當前狀態。 狀態表示為 IDE 顯示的字串,`bIsError`並指示消息的嚴重性`TRUE`( 對於錯誤消息;`FALSE`用於警告或資訊性消息)。 還提供了發送狀態的後台操作的 ID。
 
 ## <a name="code-example"></a>程式碼範例
- 以下是呼叫的簡短範例`LPTEXTOUTPROC`傳送`SCC_MSG_BACKGROUND_ON_MESSAGE`訊息，顯示如何呼叫轉換的結構。
+ 下面是調用`LPTEXTOUTPROC`發送消息的簡`SCC_MSG_BACKGROUND_ON_MESSAGE`短 示例,演示如何為調用強制轉換結構。
 
 ```cpp
 LONG SendStatusMessage(
@@ -141,5 +141,5 @@ LONG SendStatusMessage(
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)
-- [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
+- [IDE 實作的回檔](../extensibility/callback-functions-implemented-by-the-ide.md)
+- [原始程式管理外掛程式](../extensibility/source-control-plug-ins.md)

@@ -1,31 +1,31 @@
 ---
-title: VisibilityItem 元素 |Microsoft Docs
+title: 可見性項目元素 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VisibilityItem element (VSCT XML schema)
 - VSCT XML schema elements, VisibilityItem
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c817b9a004872800b02f6a7c6d0f64fd324304b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9129d64e430d661bbdd8f7682e64c93650570211
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310724"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698155"
 ---
-# <a name="visibilityitem-element"></a>VisibilityItem 元素
-`VisibilityItem`元素會決定的命令和工具列靜態的可見性。 命令或功能表上，以及相關聯的命令 UI 內容，就會識別每個項目。 Visual Studio 會偵測命令、 功能表和工具列和其可見性，而不必載入 Vspackage，在定義它們。 IDE 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法，以判斷是否為作用中命令 UI 內容。
+# <a name="visibilityitem-element"></a>可見性項目元素
+該`VisibilityItem`元素確定命令和工具列的靜態可見性。 每個條目標識命令或功能表,以及關聯的命令 UI 上下文。 Visual Studio 檢測命令、功能表和工具列及其可見性,而無需載入定義它們的 VS 包。 IDE<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>使用 方法確定命令 UI 上下文是否處於活動狀態。
 
- Visual Studio 在載入 VSPackage 之後，要求命令可見性取決於 VSPackage 而不是`VisibilityItem`。 若要判斷您的命令可見性，您可以實作<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>事件處理常式或<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法，取決於您如何實作您的命令。
+ 載入 VSPackage 後,Visual Studio 希望命令可見性由 VSPackage 而不是 確定`VisibilityItem`。 要確定命令的可見性,可以實現<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>事件處理程式<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>或 方法,具體取決於實現命令的方式。
 
- 命令或具有功能表`VisibilityItem`項目會顯示相關聯的內容時才使用中。 您可以與一個或多個命令 UI 內容關聯的單一命令、 功能表或工具列，包含每個命令內容組合的項目。 如果命令或功能表是多個命令 UI 內容相關聯，然後命令或功能表會顯示相關聯的命令 UI 任何的內容一個使用中時。
+ 僅當關聯的上下文處於活動狀態時,才會`VisibilityItem`顯示具有元素的命令或功能表。 通過為每個命令上下文組合包含一個條目,可以將單個命令、功能表或工具列與一個或多個命令 UI 上下文相關聯。 如果命令或功能表與多個命令 UI 上下文相關聯,則當任何關聯的命令 UI 上下文處於活動狀態時,命令或功能表可見。
 
- `VisibilityItem`項目僅適用於命令、 功能表和工具列，不到群組。 沒有相關的項目`VisibilityItem`父功能表在作用中時，會顯示項目。
+ 該`VisibilityItem`元素僅適用於命令、功能表和工具列,不適用於組。 每當其父功能表處於活動狀態時,沒有`VisibilityItem`相關元素的元素都會可見。
 
 ## <a name="syntax"></a>語法
 
@@ -43,10 +43,10 @@ ms.locfileid: "66310724"
 
 |屬性|描述|
 |---------------|-----------------|
-|guid|必要項。 GUID/識別碼命令識別碼的 GUID。|
-|id|必要項。 GUID/識別碼的命令識別項的識別碼。|
-|內容|必要項。 此命令會顯示 UI 內容。|
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|guid|必要。 GUID/ID 命令識別碼的 GUID。|
+|id|必要。 GUID/ID 命令識別碼的識別碼。|
+|內容|必要。 命令可見的 UI 上下文。|
+|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
  None
@@ -55,10 +55,10 @@ ms.locfileid: "66310724"
 
 |元素|描述|
 |-------------|-----------------|
-|[VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints`元素會決定群組的命令和工具列的靜態的可見性。|
+|[可見性限制元素](../extensibility/visibilityconstraints-element.md)|該`VisibilityConstraints`元素確定命令組和工具列的靜態可見性。|
 
 ## <a name="remarks"></a>備註
- 中所定義的標準的 Visual Studio UI 內容*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc\vsshlids.h 檔案也如同<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids>和<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>類別。 一組更完整的 UI 內容定義於<xref:Microsoft.VisualStudio.VSConstants>類別。
+ 標準視覺化工作室 UI 上下文在 Visual *Studio SDK 安裝路徑*[VisualStudio 整合式<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids><xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>]公共_Inc_vsshlids.h 檔中以及和類中定義。 <xref:Microsoft.VisualStudio.VSConstants>類中定義了一組更完整的 UI 上下文。
 
 ## <a name="example"></a>範例
 
@@ -75,5 +75,5 @@ ms.locfileid: "66310724"
 - <xref:Microsoft.VisualStudio.VSConstants>
 - <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids>
 - <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>
-- [VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)
-- [Visual Studio 命令表 (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [可見性限制元素](../extensibility/visibilityconstraints-element.md)
+- [視覺化工作室命令表 (.Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

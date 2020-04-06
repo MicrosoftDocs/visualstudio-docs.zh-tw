@@ -1,5 +1,5 @@
 ---
-title: SccAddFromScc 函式 |Microsoft Docs
+title: Sccaddfromscc 功能 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8f37ce82630b72d5a01c66c8848431e8f6c2891
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1dd32e31330cdce958e463a40a4d92f88b09afb2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334037"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701240"
 ---
-# <a name="sccaddfromscc-function"></a>SccAddFromScc 函式
-此函數可讓使用者瀏覽已在原始檔控制系統中的檔案，並接著讓這些檔案的部分目前的專案。 比方說，此函式可以取得常見的標頭檔到目前的專案而不複製檔案。 傳回陣列的檔案， `lplpFileNames`，包含的使用者想要新增至 IDE 專案的檔案清單。
+# <a name="sccaddfromscc-function"></a>Sccaddfromscc 功能
+此功能允許使用者流覽原始程式碼管理系統中已有的檔案,並隨後使這些文件成為當前專案的一部分。 例如,此函數可以在不複製該文件的情況下將公共標頭檔獲取到當前專案中。 檔的`lplpFileNames`傳回數位 包含使用者要新增到 IDE 專案的檔案清單。
 
 ## <a name="syntax"></a>語法
 
@@ -36,41 +36,41 @@ SCCRTN SccAddFromScc (
 ### <a name="parameters"></a>參數
  pvContext
 
-[in]原始檔控制外掛程式的內容結構。
+[在]原始程式碼管理外掛程式上下文結構。
 
  hWnd
 
-[in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。
+[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
 
  lpnFiles
 
-[in、 out]在新增的檔案數目的緩衝區。 (這是`NULL`如果指向的記憶體所`lplpFileNames`將被釋放。 請參閱 < 備註 > 一如需詳細資訊）。
+[進出]要添加到的文件數的緩衝區。 (這是`NULL`如果指向`lplpFileNames`的 記憶體要釋放。 有關詳細資訊,請參閱備註。
 
- lplpFileNames
+ lplFile 名稱
 
-[in、 out]沒有目錄路徑的所有檔案名稱的指標陣列。 這個陣列配置和釋出原始檔控制外掛程式。 如果`lpnFiles`= 1，`lplpFileNames`不是`NULL`，在陣列中的第一個名稱所指的`lplpFileNames`包含目的地資料夾。
+[進出]指向所有檔名的指標陣列,沒有目錄路徑。 此陣列由原始程式碼管理外掛程式分配和釋放。 如果`lpnFiles` `lplpFileNames` =`NULL`1 和`lplpFileNames`不是 ,則指向的陣列中的第一個名稱包含目標資料夾。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函數的源碼管理外掛程式實現應返回以下值之一:
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|檔案已順利位於，並加入至專案。|
-|SCC_I_OPERATIONCANCELED|不會影響已取消作業。|
-|SCC_I_RELOADFILE|必須重新載入檔案或專案。|
+|SCC_OK|已成功找到檔並添加到專案中。|
+|SCC_I_OPERATIONCANCELED|操作已取消,無效。|
+|SCC_I_RELOADFILE|需要重新載入檔或專案。|
 
 ## <a name="remarks"></a>備註
- IDE 會呼叫此函式。 如果原始檔控制外掛程式支援指定的本機目的資料夾，IDE 會傳遞`lpnFiles`= 1，並將傳遞到本機資料夾名稱`lplpFileNames`。
+ IDE 調用此函數。 如果原始程式管理外掛程式支援指定本地目標資料夾,則 IDE`lpnFiles`將傳遞 = 1`lplpFileNames`並將本地資料夾名稱傳遞到中。
 
- 時呼叫`SccAddFromScc`函式傳回時，外掛程式已指派值，以`lpnFiles`並`lplpFileNames`，視需要的檔案名稱陣列配置記憶體 (請注意，此配置會取代中的指標`lplpFileNames`)。 原始檔控制外掛程式負責將所有檔案都放到使用者的目錄，或指定的指定資料夾中。 然後，IDE 會將檔案加入 IDE 專案。
+ 當`SccAddFromScc`對函數的調用返回時,外掛程式已根據需要`lpnFiles`為`lplpFileNames`和分配了檔名陣列的記憶體(請注意,此分配將替換中的`lplpFileNames`指標。 原始程式碼管理外掛程式負責將所有檔案放入使用者的目錄或指定的指定資料夾中。 然後,IDE 將檔添加到IDE專案中。
 
- 最後，IDE 會呼叫此函式第二次，並傳遞`NULL`針對`lpnFiles`。 這會解譯為特殊的訊號，原始檔控制外掛程式，以釋出配置給檔案名稱陣列中的記憶體 `lplpFileNames``.`
+ 最後,IDE 會第二次呼叫此函數,傳`NULL``lpnFiles`入 。 這被解釋為原始程式碼管理外掛程式的特殊訊號,用於釋放為檔名陣組分配的記憶體。`lplpFileNames``.`
 
- `lplpFileNames` 是`char ***`指標。 原始檔控制外掛程式將放置的檔案名稱，藉以在此 api 的標準方式傳遞清單的指標陣列的指標。
+ `lplpFileNames`是指針`char ***`。 原始程式碼管理外掛程式放置指向指向檔名的指標陣列的指標,從而以此 API 的標準方式傳遞清單。
 
 > [!NOTE]
-> VSSCI API 的初始版本未提供一個方法來指示加入之檔案的目標專案。 為了完成此的語意`lplpFIleNames`參數已經強化，可讓 in/out 參數，而不是一個 output 參數。 如果只指定單一檔案，也就是值所指向`lpnFiles`= 1，則第一個項目`lplpFileNames`包含目標資料夾。 若要使用這些新的語意，IDE 會呼叫`SccSetOption`函式搭配`nOption`參數設為`SCC_OPT_SHARESUBPROJ`。 如果原始檔控制外掛程式不支援語意，它會傳回`SCC_E_OPTNOTSUPPORTED`。 執行使用的是停用**從原始檔控制新增**功能。 如果外掛程式支援**從原始檔控制新增**功能 (`SCC_CAP_ADDFROMSCC`)，則它必須支援新的語意，並傳回`SCC_I_SHARESUBPROJOK`。
+> VSSCI API 的初始版本沒有提供指示所添加文件的目標專案的方法。 為了適應這種情況,參數的`lplpFIleNames`語義得到了增強,使其成為輸入/輸出參數,而不是輸出參數。 如果只指定一個檔,即`lpnFiles`由 = 1 指向的值`lplpFileNames`,則的第一個元素包含目標資料夾。 要使用這些新語義,IDE`SccSetOption`將函數呼叫`nOption`, 參數`SCC_OPT_SHARESUBPROJ`設定為 。 如果原始碼管理外掛程式不支援語意,會傳`SCC_E_OPTNOTSUPPORTED`回 。 這樣做將關閉使用從**源控制添加**功能。 如果外掛程式支援 **「從源碼管理新增**」功能`SCC_CAP_ADDFROMSCC`(), 則必須支援新的`SCC_I_SHARESUBPROJOK`語意並傳回 。
 
 ## <a name="see-also"></a>另請參閱
-- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

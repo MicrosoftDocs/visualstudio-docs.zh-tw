@@ -1,38 +1,38 @@
 ---
-title: 專案優先順序 |Microsoft Docs
+title: 項目優先順序 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee4c0f41902e74f58684d6806877d352447351bf
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a75c1c333d88e1bf5524281bee8b2a683ca6c98e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72725400"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706426"
 ---
 # <a name="project-priority"></a>專案優先順序
-專案專案通常是方案中唯一一個專案的成員。 因此，IDE 可以輕鬆地判斷用來開啟專案的專案。 不過，如果專案是多個專案的成員，則 IDE 會使用優先順序配置來判斷開啟專案的最佳專案。
+專案項通常只是解決方案中一個項目的成員。 因此,IDE 可以輕鬆地確定用於打開專案的專案。 但是,如果專案是多個項目的成員,IDE 將使用優先順序方案來確定打開專案的最佳專案。
 
- 下列清單顯示專案優先順序配置：
+ 以下清單顯示了項目優先權方案:
 
-- IDE 會針對方案中的每個專案呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> 方法，以判斷檔是否為該專案的成員。
+- IDE 調用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A>解決方案 中每個專案的方法,以確定文檔是否是該專案的成員。
 
-- 如果檔是專案的成員，則專案會根據其處理該檔的優先順序，來回應專案。 例如，語言專案會以高優先順序回應其語言原始程式檔，但會以較低的優先順序回應無法辨識的檔案類型，而不會用來做為其組建進程的一部分。
+- 如果文檔是專案的成員,則專案會回應專案根據對該檔的處理所分配的優先順序。 例如,語言專案對其語言源檔具有高優先順序的回應,但對於未識別的文件類型,回應優先順序較低,而這些檔類型不用作其生成過程的一部分。
 
-- 為檔提供自訂、專案特定編輯器或設計工具的專案也會獲得高優先順序。
+- 為文檔提供自訂、特定於專案的編輯器或設計器的專案也會獲得高度優先順序。
 
-- @No__t_0 列舉會提供檔優先順序值。
+- 枚<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>舉提供文檔優先順序值。
 
-- 指定最高優先順序的專案會提供開啟檔的內容。 如果兩個專案傳回相同的優先順序值，則慣用使用中的專案。 如果方案中沒有任何專案回應可以開啟檔，IDE 會將檔放在 [其他檔案] 專案中。 如需詳細資訊，請參閱[其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)。
+- 指定最高優先順序的項目將指定打開文件的上下文。 如果兩個專案返回相等的優先順序值,則首選活動專案。 如果解決方案中沒有專案回應可以打開文檔,IDE 會將文檔放入「雜項檔」專案中。 有關詳細資訊,請參閱[雜項檔案專案](../../extensibility/internals/miscellaneous-files-project.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)
 - [如何︰針對開啟的文件開啟編輯器](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)

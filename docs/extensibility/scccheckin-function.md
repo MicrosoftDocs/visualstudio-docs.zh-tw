@@ -1,5 +1,5 @@
 ---
-title: SccCheckin 函式 |Microsoft Docs
+title: SccCheckin 功能 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckin function
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22264f9882192e05a9812cad4d6ea7f74bfdabfc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a5ba512642e1a63d9d39856f96194d717583d44f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333946"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701189"
 ---
-# <a name="scccheckin-function"></a>SccCheckin 函式
-此函式會檢查在先前會在簽出原始檔控制系統，儲存所做的變更和建立的新版本的檔案。 此函式呼叫計數與簽入的檔案名稱的陣列。
+# <a name="scccheckin-function"></a>SccCheckin 功能
+此函數將以前簽出的檔簽入到原始程式碼管理系統,儲存更改並創建新版本。 此函數使用要簽入的檔的計數和名稱陣列進行調用。
 
 ## <a name="syntax"></a>語法
 
@@ -39,54 +39,54 @@ SCCRTN SccCheckin (
 ### <a name="parameters"></a>參數
  pvContext
 
-[in]原始檔控制外掛程式的內容結構。
+[在]原始程式碼管理外掛程式上下文結構。
 
  hWnd
 
-[in]SCC 外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。
+[在]SCC 外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
 
- nFiles
+ n 檔案
 
-[in]選取要簽入的檔案數目。
+[在]選擇要簽入的檔案數。
 
- lpFileNames
+ lpFile 名稱
 
-[in]要簽入的檔案的完整格式的本機路徑名稱的陣列。
+[在]要簽入的檔完全限定的本地路徑名稱的陣列。
 
  lpComment
 
-[in]要套用至每個選取的檔案簽入註解。 這個參數是`NULL`如果原始檔控制外掛程式應該會提示使用者輸入註解。
+[在]要應用於要簽入的每個選定檔的註解。 此參數是`NULL`源控件外掛程式應提示發表評論。
 
  fOptions
 
-[in]命令的旗標，可能是 0 或`SCC_KEEP_CHECKEDOUT`。
+[在]命令旗標,0`SCC_KEEP_CHECKEDOUT`或 。
 
  pvOptions
 
-[in]SCC 外掛程式專屬選項。
+[在]SCC 外掛程式特定選項。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函數的源碼管理外掛程式實現應返回以下值之一:
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|檔案已成功簽入。|
-|SCC_E_FILENOTCONTROLLED|選取的檔案不在原始檔控制之下。|
-|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。 建議使用重試。|
-|SCC_E_NONSPECIFICERROR|不明確的失敗。 檔案未簽入。|
-|SCC_E_NOTCHECKEDOUT|使用者將會有未簽出檔案，因此無法簽入。|
-|SCC_E_CHECKINCONFLICT|無法執行簽入，因為：<br /><br /> -另一位使用者已繼續簽入和`bAutoReconcile`時發生錯誤。<br /><br /> -或-<br /><br /> （例如，當檔案是二進位），則無法執行-自動合併。|
-|SCC_E_VERIFYMERGE|檔案已經自動合併，但有尚未簽入暫止的使用者驗證。|
-|SCC_E_FIXMERGE|檔案已經自動合併，但尚未簽因合併衝突必須以手動方式解決。|
-|SCC_E_NOTAUTHORIZED|若要執行這項作業不允許的使用者。|
-|SCC_I_OPERATIONCANCELED|在完成之前，已取消作業。|
-|SCC_I_RELOADFILE|必須重新載入檔案或專案。|
-|SCC_E_FILENOTEXIST|找不到本機檔案。|
+|SCC_OK|已成功簽入檔。|
+|SCC_E_FILENOTCONTROLLED|所選檔不受原始程式碼控制。|
+|SCC_E_ACCESSFAILURE|訪問原始程式碼管理系統時出現問題,可能是由於網路或爭用問題。 建議重試。|
+|SCC_E_NONSPECIFICERROR|非特異性故障。 檔未簽入。|
+|SCC_E_NOTCHECKEDOUT|使用者尚未簽出該檔,因此無法簽入該檔。|
+|SCC_E_CHECKINCONFLICT|無法執行簽入,因為:<br /><br /> - 其他使用者已提前簽入,`bAutoReconcile`並且 為 false。<br /><br /> -或-<br /><br /> - 無法執行自動合併(例如,當檔為二進位檔時)。|
+|SCC_E_VERIFYMERGE|檔已自動合併,但尚未簽入等待用戶驗證。|
+|SCC_E_FIXMERGE|檔已自動合併,但由於合併衝突必須手動解決,因此尚未簽入。|
+|SCC_E_NOTAUTHORIZED|不允許使用者執行此操作。|
+|SCC_I_OPERATIONCANCELED|操作在完成之前已取消。|
+|SCC_I_RELOADFILE|需要重新載入檔或專案。|
+|SCC_E_FILENOTEXIST|找不到本地檔案。|
 
 ## <a name="remarks"></a>備註
- 註解適用於所簽入的所有檔案。 註解引數可以是`null`字串，在此情況下的原始檔控制外掛程式可以提示使用者輸入的每個檔案的註解字串。
+ 註釋應用於正在簽入的所有檔。 註釋參數可以是字串`null`,在這種情況下,原始程式碼管理外掛程式可以提示使用者為每個檔輸入註釋字串。
 
- `fOptions`引數可以指定值為`SCC_KEEP_CHECKEDOUT`旗標，表示簽入的檔案，並再次查看使用者的意圖。
+ 可以為`fOptions`參數`SCC_KEEP_CHECKEDOUT`提供 標誌的值,以指示使用者打算簽入並再次簽出該檔。
 
 ## <a name="see-also"></a>另請參閱
-- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)

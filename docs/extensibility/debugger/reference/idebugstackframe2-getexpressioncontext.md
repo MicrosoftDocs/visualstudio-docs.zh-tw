@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetExpressionContext | Microsoft Docs
+title: IDebugStackFrame2::獲取運算式上下文 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetExpressionContext
 ms.assetid: a2604e6a-502d-473b-868f-b11ac64c7a35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f859fcb3b930adb46f7e06ddf3bf9c5e9eafcdd8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb1a075d04ed53fdbe2181975a56eddfcbc3b683
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314197"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719748"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
-取得目前的內容中的運算式評估的堆疊框架和執行緒評估內容。
+獲取在堆疊框架和線程的當前上下文中進行表達式計算的計算上下文。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetExpressionContext ( 
 
 ## <a name="parameters"></a>參數
 `ppExprCxt`\
-[out]傳回[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)物件，表示運算式評估的內容。
+[出]返回表示運算式運算上下文的[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 一般而言，運算式評估內容可以視為執行運算式評估的範圍。 呼叫[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)方法來剖析的運算式，然後呼叫 產生[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或是[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法，以評估剖析的運算式。
+ 通常,表達式計算上下文可以被視為執行表達式計算的範圍。 調用[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)方法來解析表示式,然後調用生成的[評估同步](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或評估[Async](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法來計算解析的運算式。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
