@@ -1,35 +1,35 @@
 ---
-title: 逐步解說：將內容類型連結至副檔名為 |Microsoft Docs
+title: 演練:將內容類型連結到檔案名副檔名 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e402979dc5b76b8693a4be7a80a3d5d98f889616
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 328be013b5d522938cd7450fc53d4866c632abb3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320666"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697072"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>逐步解說：將內容類型連結至副檔名
-您可以定義您自己的內容類型，並連結到它的副檔名，透過使用編輯器的 Managed Extensibility Framework (MEF) 擴充功能。 在某些情況下，檔案名稱的副檔名已經定義的語言服務。 但是，若要使用它與 MEF，您必須仍將它連結至內容類型。
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>演練:將內容類型連結到檔案名副檔名
+您可以使用編輯器託管擴展框架 (MEF) 延伸名定義自己的內容類型並將檔案名擴展名連結到該副檔名。 在某些情況下,檔名擴展名已由語言服務定義。 但是,要將其與 MEF 一起使用,您仍必須將其連結到內容類型。
 
-## <a name="prerequisites"></a>必要條件
- 從 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從下載中心取得。 它包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+## <a name="prerequisites"></a>Prerequisites
+ 從 Visual Studio 2015 開始,您不會從下載中心安裝 Visual Studio SDK。 它作為可選功能包含在可視化工作室設置中。 以後還可以安裝 VS SDK。 有關詳細資訊,請參閱[安裝可視化工作室 SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-mef-project"></a>建立 MEF 專案
 
-1. 建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `ContentTypeTest`。
+1. 創建 C# VSIX 專案。 ( 在 **'新增項目'** 對話框中,選擇**視覺化 C# / 可擴充性**,然後選擇**VSIX 專案**。命名解決方案`ContentTypeTest`。
 
-2. 在  **source.extension.vsixmanifest**檔案中，移至**資產**索引標籤，然後將**型別**欄位設為**Microsoft.VisualStudio.MefComponent**，則**來源**欄位設為**目前方案中的專案**，而**專案**欄位設為專案的名稱。
+2. 在**source.延伸.vsixmanifest 檔案中**,轉到 **「資產**」選項卡,並將 **「類型」** 欄位設定為**Microsoft.VisualStudio.Mef 元件**,**將「源**」欄位設定為**目前解決方案中的專案**,並將**專案**欄位設定為專案名稱。
 
-## <a name="define-the-content-type"></a>內容類型定義
+## <a name="define-the-content-type"></a>定義內容類型
 
 1. 加入類別檔案，並將它命名為 `FileAndContentTypes`。
 
@@ -37,11 +37,11 @@ ms.locfileid: "66320666"
 
     1. System.ComponentModel.Composition
 
-    2. Microsoft.VisualStudio.Text.Logic
+    2. 微軟.VisualStudio.文本.邏輯
 
-    3. Microsoft.VisualStudio.CoreUtility
+    3. 微軟.VisualStudio.核心實用程式
 
-3. 新增下列`using`指示詞。
+3. 添加以下`using`指令。
 
     ```csharp
     using System.ComponentModel.Composition;
@@ -50,14 +50,14 @@ ms.locfileid: "66320666"
 
     ```
 
-4. 宣告靜態類別，包含定義。
+4. 聲明包含定義的靜態類。
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
     {. . .}
     ```
 
-5. 在此類別中，匯出<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>名為 「 隱藏 」，並宣告其基底定義為"text"。
+5. 在此類中,匯出名為<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>「隱藏」並將其基本定義聲明為"文本"。
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -69,9 +69,9 @@ ms.locfileid: "66320666"
     }
     ```
 
-## <a name="link-a-file-name-extension-to-a-content-type"></a>連結至內容類型的副檔名
+## <a name="link-a-file-name-extension-to-a-content-type"></a>將檔案名副檔名連結到內容類型
 
-- 若要將這個內容類型對應至檔案的副檔名，匯出<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>具有延伸模組 *.hid*和內容類型 「 隱藏 」。
+- 要將此內容類型映射到檔案名副檔名,匯出<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>具有 副檔名 *.hid*和內容類型"hid" 的 。
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -88,13 +88,13 @@ ms.locfileid: "66320666"
     }
     ```
 
-## <a name="add-the-content-type-to-an-editor-export"></a>將內容類型加入至編輯器匯出
+## <a name="add-the-content-type-to-an-editor-export"></a>將內容型別加入編輯器匯出
 
-1. 建立編輯器擴充功能。 例如，您可以使用邊界圖像 （glyph） 擴充功能中所述[逐步解說：建立邊界字符](../extensibility/walkthrough-creating-a-margin-glyph.md)。
+1. 建立編輯器擴展。 例如,您可以使用演練中描述的邊距字形擴展[:建立邊距字形](../extensibility/walkthrough-creating-a-margin-glyph.md)。
 
-2. 新增您在此程序中定義的類別。
+2. 添加在此過程中定義的類。
 
-3. 當您匯出延伸模組類別時，新增<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>「 隱藏 」 給它的型別。
+3. 匯出擴充類時,向其添加<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>類型 為"隱藏"。
 
     ```csharp
     [Export]

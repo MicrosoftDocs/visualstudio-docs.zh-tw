@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromPosition | Microsoft Docs
+title: IDebugSymbol 提供者::從位置獲取位址 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromPosition method
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dcaef1e9675ae395826865604833fdb6683df944
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 27767af36093e9424775074a55bafadac9a4480d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310188"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719413"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
-這個方法會對應到陣列的文件位置的偵錯位址。
+此方法將文件位置映射到調試位址陣列中。
 
 ## <a name="syntax"></a>語法
 
@@ -47,24 +47,24 @@ int GetAddressesFromPosition( 
 
 ## <a name="parameters"></a>參數
 `pDocPos`\
-[in]文件位置。
+[在]文檔位置。
 
 `fStatmentOnly`\
-[in]如果為 TRUE，會限制單一陳述式的偵錯位址。
+[在]如果為 TRUE,則將調試位址限制為單個語句。
 
 `ppEnumBegAddresses`\
-[out]傳回與這個陳述式或列關聯的開始偵錯位址的列舉值。
+[出]返回與此語句或行關聯的起始調試位址的枚舉器。
 
 `ppEnumEndAddresses`\
-[out]傳回[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)結束此陳述式或列相關聯的偵錯地址的列舉值。
+[出]返回與此語句或行關聯的結束調試位址的[IEnumDebug 位址](../../../extensibility/debugger/reference/ienumdebugaddresses.md)枚舉器。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 文件位置通常表示一組原始程式行。 此方法可讓您提供的開始和結束偵錯位址相關聯這幾行。 有些語言允許跨越多行或包含多個陳述式的行的陳述式。 這個方法會提供要限制為單一陳述式的偵錯位址的旗標。
+ 文檔位置通常指示源行的範圍。 此方法提供與這些行關聯的開始和結束調試位址。 某些語言允許跨多行的語句或包含多個語句的行。 此方法提供一個標誌,用於將調試位址限制為單個語句。
 
- 可以單一的陳述式，才會有多個偵錯位址，如同範本的情況。
+ 單個語句可以有多個調試位址,如範本。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

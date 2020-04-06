@@ -1,391 +1,391 @@
 ---
-title: 適用於 Visual Studio 的通用控制項模式 |Microsoft Docs
+title: 視覺工作室的常見控制模式 |微軟文件
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: b0b5a1904c01f5688a00e45de7feed7ae326d9b3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890978"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698706"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>適用於 Visual Studio 的通用控制項模式
-## <a name="BKMK_CommonControls"></a> 通用控制項
+## <a name="common-controls"></a><a name="BKMK_CommonControls"></a>常見控制項
 
-### <a name="overview"></a>總覽
-通用控制項組成大部分的 Visual Studio 中的使用者介面。 在 Visual Studio 介面中使用的最常見控制項應該遵循[Windows 桌面互動的指導方針](/windows/desktop/uxguide/controls)。 本主題旨在說明 Visual Studio，並涵蓋了特殊的情況下或擴充這些 Windows 指導方針的詳細資料。
+### <a name="overview"></a>概觀
+常見控件占可視化工作室中用戶介面的大多數。 視覺化工作室介面中使用的大多數常見控制項應遵循[Windows 桌面互動指南](/windows/desktop/uxguide/controls)。 本主題特定於 Visual Studio,並介紹增強這些 Windows 指南的特殊情況或詳細資訊。
 
-#### <a name="common-controls-in-this-topic"></a>本主題中的通用控制項
+#### <a name="common-controls-in-this-topic"></a>本主題中的常見控制項
 
-- [捲軸](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_Scrollbars)
+- [捲動條圖](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_Scrollbars)
 
-- [輸入的欄位](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_InputFields)
+- [輸入欄位](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_InputFields)
 
-- [下拉式方塊和下拉式清單](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ComboBoxesAndDropDowns)
+- [組合框與下拉清單](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ComboBoxesAndDropDowns)
 
 - [核取方塊](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CheckBoxes)
 
-- [選項按鈕](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
+- [點選按鈕](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
 
-- [群組的畫面格](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_GroupFrames)
+- [組幀](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_GroupFrames)
 
 - [文字控制項](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
 
-- [按鈕和超連結](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
+- [按鈕與超連結](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
 
 - [樹狀檢視](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
 
-#### <a name="visual-style"></a>視覺化樣式
-首先要考慮設定控制項的樣式時是否將控制項使用中佈景主題 UI 中。 標準的 UI 中的控制項為非佈景主題 UI，且必須遵照[一般的 Windows 桌面樣式](/windows/desktop/uxguide/controls)，這表示它們不重新範本化，而且應該會出現在其預設控制項外觀。
+#### <a name="visual-style"></a>視覺樣式
+樣式控件時首先要考慮的是控件是否將在主題 UI 中使用。 標準 UI 中的控制項是非主題 UI,必須遵循[正常的 Windows 桌面樣式](/windows/desktop/uxguide/controls),這意味著它們不會重新範本化,並且應出現在其預設控制元件外觀中。
 
-- **標準 （公用程式） 對話方塊：** 未配置其佈景主題。 不重新範本。 使用基本的控制項樣式的預設值。
+- **標準(實用程式)對話方塊:** 非主題對話方塊。 不要重新範本化。 使用基本控制樣式預設值。
 
-- **工具視窗、 文件編輯器、 設計介面和反映一定主題的對話方塊：** 使用特製化佈景主題的外觀，使用色彩服務。
+- **工具視窗、文件編輯器、設計曲面和主題對話框:** 使用彩色服務使用專門的主題外觀。
 
-### <a name="BKMK_Scrollbars"></a> 捲軸
- 捲軸所應遵循[常見的 Windows 互動模式，捲軸](/windows/desktop/Controls/about-scroll-bars)除非它們夾帶內容資訊，例如程式碼編輯器中。
+### <a name="scroll-bars"></a><a name="BKMK_Scrollbars"></a>捲動條圖
+ 滾動條應遵循[Windows 滾動欄的常見交互模式](/windows/desktop/Controls/about-scroll-bars),除非它們包含內容資訊(如代碼編輯器中)。"
 
-### <a name="BKMK_InputFields"></a> 輸入的欄位
- 典型的互動行為，請遵循[文字方塊中的 Windows 桌面方針](/windows/desktop/uxguide/ctrl-text-boxes)。
+### <a name="input-fields"></a><a name="BKMK_InputFields"></a>輸入欄位
+ 對於典型的互動行為,請遵循[文字框的 Windows 桌面指南](/windows/desktop/uxguide/ctrl-text-boxes)。
 
-#### <a name="visual-style"></a>視覺化樣式
+#### <a name="visual-style"></a>視覺樣式
 
-- 不應該在公用程式的對話方塊中設定輸入的欄位的樣式。 使用基本內建控制項的樣式。
+- 輸入欄位不應在實用程式對話框中設置樣式。 使用控件固有的基本樣式。
 
-- 佈景主題的輸入的欄位應該只用在佈景主題的對話方塊和工具視窗。
+- 主題輸入欄位應僅用於主題對話框和工具視窗。
 
-#### <a name="specialized-interactions"></a>特製化的互動
+#### <a name="specialized-interactions"></a>專業互動
 
-- 唯讀欄位會顯示有但 （使用中） 的預設前景灰色 （停用） 背景。
+- 唯讀欄位將具有灰色(禁用)背景,但預設(活動)前景。
 
-- 所需欄位應有 **\<需要>** 做為其中的標準。 您不應該變更除了在少數情況下的背景色彩。
+- 所需的欄位應具有**\<所需的>** 作為浮浮浮水印。 除非在極少數情況下,否則不應更改背景的顏色。
 
-- 錯誤驗證：請參閱[通知和適用於 Visual Studio 的進度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+- 錯誤驗證:請參閱[可視化工作室的通知和進度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
-- 輸入的欄位都應該調整大小以符合內容，不以符合在其中，它們會顯示，視窗的寬度，也不能以任意符合長的欄位，例如路徑的長度。 長度可能是向使用者表示的欄位中允許多少個字元的限制。
+- 輸入欄位的大小應適合內容,而不是適合顯示它們的視窗的寬度,也不應任意匹配長欄位的長度(如路徑)。 長度可能向使用者指示欄位中允許的字元數的限制。
 
-     ![不正確的輸入的欄位長度： 不太可能的名稱會是此種長度。](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707年 01_IncorrectInputFieldControl")<br />不正確的輸入的欄位長度： 不太可能的名稱會是此種長度。
+     ![輸入欄位長度不正確:名稱不太可能長。](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707-01_IncorrectInputFieldControl")<br />輸入欄位長度不正確:名稱不太可能長。
 
-     ![更正的輸入的欄位長度： 輸入的欄位是合理的寬度，如預期的內容。](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707年 02_CorrectInputFieldControl")<br />更正的輸入的欄位長度： 輸入的欄位是合理的寬度，如預期的內容。
+     ![正確的輸入欄位長度:輸入欄位是預期內容的合理寬度。](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl")<br />正確的輸入欄位長度:輸入欄位是預期內容的合理寬度。
 
-### <a name="BKMK_ComboBoxesAndDropDowns"></a> 下拉式方塊和下拉式清單
-典型的互動行為，請遵循[下拉式清單和下拉式方塊的 Windows 桌面方針](/windows/desktop/uxguide/ctrl-drop)。
+### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a>組合框與下拉清單
+對於典型的交互行為,請遵循[Windows 桌面指南,查看下拉列表和組合框](/windows/desktop/uxguide/ctrl-drop)。
 
-#### <a name="visual-style"></a>視覺化樣式
+#### <a name="visual-style"></a>視覺樣式
 
-- 公用程式的對話方塊，在不重新範本控制項。 使用基本內建控制項的樣式。
+- 在實用程式對話方塊中,不要重新範本控制項。 使用控件固有的基本樣式。
 
-- 在佈景主題 UI 中，下拉式方塊和下拉式清單，請遵循標準的佈景主題的控制項。
-
-#### <a name="layout"></a>配置
-下拉式方塊和下拉式清單應該調整大小以符合內容，不以符合在其中，它們會顯示，視窗的寬度，也不能以任意符合長的欄位，例如路徑的長度。
-
-![不正確： 下拉式清單寬度是將顯示的內容太長。](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707年 03_IncorrectDropDownLayout")<br />不正確： 下拉式清單寬度是將顯示的內容太長。
-
-![正確： 下拉式清單會調整大小以允許轉譯成長，但不是會不必要的長。](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707年 04_CorrectDropDownLayout")<br />正確： 下拉式清單會調整大小以允許轉譯成長，但不是會不必要的長。
-
-### <a name="BKMK_CheckBoxes"></a> 核取方塊
-典型的互動行為，請遵循[核取方塊的 Windows 桌面方針](/windows/desktop/uxguide/ctrl-check-boxes)。
-
-#### <a name="visual-style"></a>視覺化樣式
-
-- 公用程式的對話方塊，在不重新範本控制項。 使用基本內建控制項的樣式。
-
-- 在佈景主題 UI 中，核取方塊會遵循標準的佈景主題的控制項。
-
-#### <a name="specialized-interactions"></a>特製化的互動
-
-- 核取方塊的互動必須永遠不會快顯對話方塊，或瀏覽至另一個區域。
-
-- 對齊文字的第一行基準線的核取方塊。
-
-     ![不正確： 核取方塊會置中的文字。](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707年 05_IncorrectCheckBoxAlign")<br />不正確： 核取方塊會置中的文字。
-
-     ![正確： 核取方塊對齊文字的第一行。](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707年 06_CorrectCheckBoxAlign")<br />正確： 核取方塊對齊文字的第一行。
-
-### <a name="BKMK_RadioButtons"></a> 選項按鈕
-典型的互動行為，請遵循[選項按鈕的 Windows 桌面方針](/windows/desktop/uxguide/ctrl-radio-buttons)。
-
-#### <a name="visual-style"></a>視覺化樣式
-在公用程式對話方塊中，執行樣式選項按鈕。 使用基本內建控制項的樣式。
-
-#### <a name="specialized-interactions"></a>特製化的互動
-您不需要使用群組框來括住選項選擇，除非您需要維護群組差別，在於緊密的版面配置。
-
-### <a name="BKMK_GroupFrames"></a> 群組的畫面格
-典型的互動行為，請遵循[Windows 桌面的指導方針群組框架](/windows/desktop/uxguide/ctrl-group-boxes)。
-
-#### <a name="visual-style"></a>視覺化樣式
-公用程式中的對話，不要樣式群組畫面格。 使用基本內建控制項的樣式。
+- 在主題 UI 中,組合框和下拉清單遵循控制項的標準主題。
 
 #### <a name="layout"></a>配置
+組合框和下拉清單的大小應適合內容,不適合顯示它們的視窗的寬度,也不必像路徑一樣任意匹配長欄位的長度。
 
-- 您不需要使用群組框來括住選項選擇，除非您需要維護群組差別，在於緊密的版面配置。
+![不正確:下拉寬度太長,無法顯示內容。](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />不正確:下拉寬度太長,無法顯示內容。
 
-- 永遠不會使用單一控制項群組框架。
+![正確:下拉清單的大小允許翻譯增長,但並非不必要地長。](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />正確:下拉清單的大小允許翻譯增長,但並非不必要地長。
 
-- 有時候會接受使用水平尺規，而不是群組的範圍容器。
+### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a>勾選方塊
+對於典型的交互行為,請按照[「Windows 桌面」指南進行複選框](/windows/desktop/uxguide/ctrl-check-boxes)。
 
-## <a name="BKMK_TextControls"></a> 文字控制項
+#### <a name="visual-style"></a>視覺樣式
+
+- 在實用程式對話方塊中,不要重新範本控制項。 使用控件固有的基本樣式。
+
+- 在主題 UI 中,複選框遵循控制件的標準主題。
+
+#### <a name="specialized-interactions"></a>專業互動
+
+- 與複選框的交互絕不能彈出對話框或導航到其他區域。
+
+- 將複選框與第一行文本的基線對齊。
+
+     ![不正確:複選框以文本為中心。](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign")<br />不正確:複選框以文本為中心。
+
+     ![正確:複選框與文本的第一行對齊。](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign")<br />正確:複選框與文本的第一行對齊。
+
+### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a>點選按鈕
+對於典型的互動行為,請遵循[Windows 桌面指南進行單選按鈕](/windows/desktop/uxguide/ctrl-radio-buttons)。
+
+#### <a name="visual-style"></a>視覺樣式
+在實用程式對話方塊中,不要設置單選按鈕的樣式。 使用控件固有的基本樣式。
+
+#### <a name="specialized-interactions"></a>專業互動
+不需要使用組幀來封閉無線電選擇,除非您需要在緊湊的佈局中保持組區分。
+
+### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a>組幀
+對於典型的互動行為,請遵循[組幀的 Windows 桌面指南](/windows/desktop/uxguide/ctrl-group-boxes)。
+
+#### <a name="visual-style"></a>視覺樣式
+在實用程序對話方塊中,不要對組框架進行樣式設置。 使用控件固有的基本樣式。
+
+#### <a name="layout"></a>配置
+
+- 不需要使用組幀來封閉無線電選擇,除非您需要在緊湊的佈局中保持組區分。
+
+- 切勿將組幀用於單個控件。
+
+- 有時可以使用水平規則而不是組幀容器。
+
+## <a name="text-controls"></a><a name="BKMK_TextControls"></a>文字控制項
 
 ### <a name="static-text-fields"></a>靜態文字欄位
 
-靜態文字欄位不能選取使用者，與顯示唯讀資訊。 請避免使用任何文字，使用者可能會想要複製到剪貼簿。 不過，唯讀的靜態文字可以變更以反映在狀態變更。 在下列範例中，以反映其上方的 [根命名空間] 文字方塊中所做的變更資訊群組變更底下的輸出名稱靜態文字。
+靜態文字欄位顯示唯讀資訊,使用者無法選擇。 避免將其用於使用者可能想要複製到剪貼簿的任何文本。 但是,唯讀靜態文本可以更改以反映狀態的變化。 在下面的示例中,「資訊」群組下的「輸出名稱」靜態文本將更改以反映對它上方的根命名空間文本框所做的任何更改。
 
-有兩種方式，以顯示靜態文字的資訊。
+有兩種方法可以顯示靜態文本資訊。
 
-可以是靜態文字，在它自己在對話方塊中，而不需要任何內含項目時，沒有群組衝突。 決定是否真的需要額外的行方塊。 舉例來說，群組列，所建立的區段下的目錄路徑的顯示，如下所示：
+當不存在分組衝突時,靜態文本可以在對話框中自行顯示,沒有任何包含。 確定是否確實有必要使用框的額外行。 例如,在組行創建的節下顯示目錄路徑,如下所示:
 
-![在文字控制項中的靜態文字資訊](../../extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />在文字控制項中的靜態文字資訊
+![文字控制器中的靜態文字資訊](../../extensibility/ux-guidelines/media/DisplayingStaticText.png "顯示靜態文字.png")<br />文字控制器中的靜態文字資訊
 
-在對話方塊中，存在其他群組的區域，內含項目資訊的協助增加可讀性，和區段時可以隱藏或顯示 (依照**屬性 視窗**podokno popisu) 或您想要與類似的 UI，一致將靜態文字放在方塊內。 此群組方塊應該是單一規則，並加上`ButtonShadow`:
+在存在其他分組區域的對話框中,資訊包含將有助於可讀性,並且當可以隱藏或顯示節(如 **"屬性"視窗**描述窗格中)或希望與類似 UI 保持一致時,將靜態文本放在框中。 此組框應為單一規則,並帶有以下`ButtonShadow`顏色:
 
-![在 [屬性] 視窗中的靜態文字](../../extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />在 [屬性] 視窗中的靜態文字
+![屬性屬性視窗中的靜態文字](../../extensibility/ux-guidelines/media/PropertiesWindow.png "屬性視窗.png")<br />屬性屬性視窗中的靜態文字
 
-### <a name="read-only-text-box"></a>唯讀文字方塊
+### <a name="read-only-text-box"></a>唯讀文字盒
 
-這可讓使用者選取的文字欄位內，但無法編輯它。 這些文字方塊由一般 3d 字 （平頭） 與起`ButtonShadow`填滿。
+這允許用戶選擇欄位中的文本,但不能編輯它。 這些文本框與通常的 3D 鑿子接壤,`ButtonShadow`帶有 填充。
 
-文字方塊可以變成作用中 （編輯） 時使用者會改變為相關聯的控制項，例如檢查/取消核取方塊，或選取/取消選取的選項按鈕。 例如，在**工具&gt;選項**頁面，如下所示**首頁**文字方塊將會變成作用中時**使用預設的**核取方塊未核取。
+當使用者更改關聯的控制項(如選中/取消選中複選框或選擇/取消選擇單選按鈕)時,文本框可能會變為活動(可編輯)。 例如,在下面顯示**的&gt;「工具選項**」頁中,「**主頁」文字**框在取消選中 **「使用預設**」選選框時變為活動狀態。
 
-![唯讀的文字方塊中，顯示非作用中和作用中狀態](../../extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />唯讀的文字方塊中，顯示非作用中和作用中狀態
+![唯讀文字盒,顯示非作用狀態與作用狀態](../../extensibility/ux-guidelines/media/ReadOnlyTextBox.png "閱讀唯一文字盒.png")<br />唯讀文字盒,顯示非作用狀態與作用狀態
 
-### <a name="using-text-in-dialogs"></a>使用對話方塊中的文字
+### <a name="using-text-in-dialogs"></a>在對話框中使用文字
 
-在對話方塊中的文字的關鍵指導方針：
+對話框中文字的關鍵準則:
 
-- 文字方塊、 清單方塊和 unthemed 對話方塊中的畫面格的標籤開頭的動詞命令、 對，第一個字組的初始資本和冒號的結尾。
+- 文字框、清單框和框架的標籤在非主題對話框中以動詞開頭,僅對第一個單詞具有初始大寫,以冒號結尾。
 
-    > 請依照下列主題的對話方塊中的文字控制項[Windows 桌面的 UX 指導方針](/windows/desktop/uxguide/top-violations)，而且不接受結尾的標點符號，除了說明連結中的問號。
+    > 主題對話框中的文字控件遵循[Windows 桌面 UX 準則](/windows/desktop/uxguide/top-violations),不採用結束標點符號,但幫助連結中的問號除外。
 
-- 核取方塊和選項按鈕的標籤開頭的動詞命令，在第一個字組，初始資本，而且有沒有結束標點符號。
+- 複選方塊和選項按鈕的標籤以動詞開頭,第一個單詞的初始大寫字母,並且沒有結束標點符號。
 
-- 按鈕、 功能表、 功能表項目和索引標籤的標籤會將第一個字母大寫對每個單字 （字首大寫）。
+- 按鈕、功能表、功能表項和選項卡的標籤在每個單詞(標題大小寫)上都有初始大寫字母。
 
-- 標籤的用語應該與其他對話方塊中的類似標籤一致。
+- 標籤術語應與其他對話框中的類似標籤一致。
 
-- 可能的話，有撰寫或開發人員實作，它會進入之前，核准將文字寫入器/編輯器。
+- 如果可能,請讓編寫器/編輯器在文本提交開發人員進行實現之前編寫或批准該文本。
 
-- 所有控制項都應該在特殊情況下都具有以外的標籤在哪一個定位停駐點即已足夠。
-使用適當時的協助程式文字。
+- 所有控件都應具有標籤,除非在選項卡已足夠的特殊情況下。
+在適當時使用幫助器文本。
 
-### <a name="helper-text"></a>Helper 文字
+### <a name="helper-text"></a>說明者文字
 
-包含在對話方塊可協助使用者了解在對話方塊目的，或指出要採取的動作。 Helper 文字應該只在需要時用來避免而過於凌亂簡單的對話方塊。 Helper 文字兩種變化是對話方塊和浮水印。
+包含在對話方塊中,以説明使用者瞭解對話方塊的用途或指示要執行的操作。 僅當需要時才應使用幫助器文本,以避免使簡單對話框變得雜亂無章。 幫助器文本的兩種變體是對話框和浮浮浮水印。
 
-請依照下列常見協助程式文字的位置，而且是選擇性中引入新的區域。 Helper 文字的常見案例包括：
+遵循幫助器文本的常見位置,並選擇性地引入新區域。 說明器文字的常見方案包括:
 
-- 協助程式對話方塊，提供有關如何與複雜的對話方塊互動的其他方向中的文字。
+- 對話框中的幫助器文本,以提供有關如何與複雜對話方塊互動的其他方向。
 
-- 在空白的工具視窗或對話方塊，說明為什麼沒有內容會顯示浮水印文字。
+- 在空工具視窗或對話框中為文本加水印,以解釋為什麼沒有內容可見。
 
-- 描述 窗格中，例如底部**屬性 視窗**。
+- 描述窗格,如 **"屬性"視窗**的底部。
 
-- 浮水印文字在空白的編輯器，來說明使用者應開始執行的動作。
+- 在空編輯器中添加浮浮浮水印文本,以解釋用戶應該採取哪些操作來開始。
 
 ### <a name="dialog-helper-text"></a>對話方塊 Helper 文字
 
-使用者經驗設計工具可協助判斷 helper 文字適當。 設計工具可以定義 helper 文字，以及其一般的內容會出現。 使用者協助可以寫入/編輯的實際文字。
+用戶體驗設計器可以幫助確定幫助器文本何時合適。 設計器可以定義幫助器文本的顯示位置及其一般內容。 用戶幫助可以編寫/編輯實際文本。
 
 ### <a name="watermarks"></a>浮水印
 
-對話方塊受益於稍有不同的水位線的指導方針。 因為一個對話方塊，會出現忙著處理許多 UI 項目 （標籤、 提示文字、 按鈕和其他容器控制項中的文字），特別是當這些顯示為黑色，浮水印脫穎而出美好暗灰色 (VSColor: `ButtonShadow`)。 浮水印通常會出現在這類具有白色背景的清單方塊控制項 (VSColor: `Window`)。
+對話框受益於略有不同的浮浮水印準則。 由於對話框可能顯示許多 UI 元素(標籤、提示文本、按鈕和其他包含文本的容器控制項),因此,尤其是當這些控制項以黑色顯示時,浮浮浮水印在深`ButtonShadow`灰色(VSColor: ) 中效果更好。 通常,水印出現在控件內,就像帶有白色背景的列表框 (VSColor: `Window`)。
 
-- 文字會出現在暗灰色 (VSColor: `ButtonShadow`)。 不過，如果出現中型灰色或其他彩色的浮水印 (VSColor: `ButtonFace`) 背景，並沒有其可讀性的相關考量，請以黑色文字 (VSColor: `WindowText`)。
+- 文字以深灰色顯示 (VSColor: `ButtonShadow`)。 但是,如果水印出現在中等灰色或其他顏色 (VSColor: `ButtonFace`) 背景上,並且擔心其可讀性,請使用黑色文本`WindowText`(VSColor: )。
 
-- 浮水印可以置中或靠左對齊。 對齊決策時，請套用標準設計規則。 無法選取水位線的背景。
+- 水印可以居中或向左刷新。 在做出對齊決策時應用標準設計規則。 無法在背景上選擇浮浮浮水印。
 
-![浮水印文字範例](../../extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />浮水印文字範例
+![水印文字範例](../../extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />水印文字範例
 
-### <a name="context-specific-dynamic-text"></a>特定內容 （動態） 的文字
+### <a name="context-specific-dynamic-text"></a>特定於上下文(動態)的文字
 
-動態文字可以是使用的其中一個對話方塊中或非強制回應 UI 中的兩種方式： 動態的標籤或動態內容。
+動態文本可以在對話方塊或無模式 UI 中使用兩種方式之一:作為動態標籤或動態內容。
 
-- 動態標籤： 動態文字的常見用法是描述性的面板，例如提供選取的項目，如需詳細資訊，在對話方塊中包含的元素和屬性在右邊方格中顯示這些項目的清單中。 屬性方格的標籤可能是動態的以便在右邊方格左側選取項目時，顯示該特定項目的資訊。
+- 動態標籤:動態文本的常見用在描述性面板中,這些面板為所選專案提供了更多資訊,例如,在對話框中,其中包含顯示在右側網格中的元素和屬性的清單。 屬性格格的標籤可能是動態的,因此當在左側選擇專案時,右側的網格將顯示該特定項的資訊。
 
-- 動態文字： 在其中您要顯示的特定資訊並不是針對一般資訊，如此一來，但應該小心過度使用的執行個體很有用。
+- 動態文本:在需要以這種方式顯示特定資訊而不是常規資訊的情況下非常有用,但應注意不要過度使用。
 
-如果您希望使用者能夠將資訊複製時，動態文字應該是唯讀的文字欄位中。
+如果希望用戶能夠複製資訊,則動態文本應位於唯讀文本欄位中。
 
-## <a name="BKMK_ButtonsAndHyperlinks"></a> 按鈕和超連結
+## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a>按鈕與超連結
 
-### <a name="overview"></a>總覽
-按鈕和連結控制項 （超連結） 應該遵循[超連結的基本 Windows 桌面指引](/windows/desktop/uxguide/ctrl-links)使用量和字詞，調整大小、 間距。
+### <a name="overview"></a>概觀
+按鈕和連結控制項(超連結)應遵循[有關超連結的基本 Windows 桌面指南](/windows/desktop/uxguide/ctrl-links),以便進行使用、措辭、大小調整和間距。
 
-### <a name="choosing-between-buttons-and-links"></a>選擇按鈕或連結
-傳統上，按鈕已用於動作，並已保留的超連結以瀏覽。 按鈕可用於所有情況下，但已連結的角色擴充 Visual Studio 中，因此是在某些情況下，更可互換的按鈕和連結。
+### <a name="choosing-between-buttons-and-links"></a>在按鈕與連結之間進行選擇
+傳統上,按鈕已用於操作,超連結已保留用於導航。 按鈕可用於所有情況,但連結的角色已在 Visual Studio 中擴展,以便在某些情況下,按鈕和連結更容易互換。
 
-使用命令按鈕的時機：
+何時使用指令按鈕:
 
-- 主要的命令
+- 主要命令
 
-- 顯示用來收集輸入的 windows，或選擇較高，即使它們為次要命令
+- 顯示用於收集輸入或做出選擇的視窗,即使它們是協助命令
 
-- 具破壞性或無法復原的動作
+- 破壞性或不可逆轉的行動
 
-- 精靈和頁面內的承諾用量按鈕流程
+- 匯及頁面串流的承諾按鈕
 
-避免命令按鈕的工具視窗，或如果您需要兩個以上的文字標籤。 連結可以有較長的標籤。
+避免在工具視窗中出現命令按鈕,或者需要標籤的單詞超過兩個單詞。 連結可以具有較長的標籤。
 
- 使用連結的時機：
+ 何時使用連結:
 
-- 瀏覽至另一個視窗、 文件或網頁
+- 瀏覽到其他視窗、文件或網頁
 
-- 需要較長的標籤或簡短的句子來描述動作的意圖的情況
+- 需要較長的標籤或短句來描述行動意圖的情況
 
-- 其中一個按鈕會會拖垮 UI，前提是該動作不是破壞性或無法復原的緊密空格
+- 按鈕將淹沒 UI 的狹小空間,前提是該操作不具有破壞性或不可逆性
 
-- 取消強調情況中的第二個命令有許多命令
+- 在存在許多指令的情況下取消強調輔助命令
 
 #### <a name="examples"></a>範例
-![命令使用在下一個狀態訊息的資訊列中的連結](../../extensibility/ux-guidelines/media/070703-01_commandlinkinfobar.png "070703 01_CommandLinkInfobar")<br />在下一個狀態訊息的資訊列中使用的命令連結
+![狀態訊息後資訊列中使用的命令連結](../../extensibility/ux-guidelines/media/070703-01_commandlinkinfobar.png "070703-01_CommandLinkInfobar")<br />狀態訊息後資訊列中使用的命令連結
 
-![使用 CodeLens 快顯視窗中的連結](../../extensibility/ux-guidelines/media/070703-02_linksincodelens.png "070703 02_LinksInCodeLens")<br />CodeLens 快顯視窗中所使用的連結
+![CodeLens 快顯視窗中所使用的連結](../../extensibility/ux-guidelines/media/070703-02_linksincodelens.png "070703-02_LinksInCodeLens")<br />CodeLens 快顯視窗中所使用的連結
 
-![連結用於第二個命令，按鈕會吸引太多加重視](../../extensibility/ux-guidelines/media/070703-03_linksassecondarycommands.png "070703 03_LinksAsSecondaryCommands")<br />用於第二個命令按鈕會吸引太多加重視的其中的連結
+![用於次要命令的連結,其中按鈕會吸引太多注意力](../../extensibility/ux-guidelines/media/070703-03_linksassecondarycommands.png "070703-03_LinksAsSecondaryCommands")<br />用於次要命令的連結,其中按鈕會吸引太多注意力
 
-### <a name="common-buttons"></a>一般按鈕
+### <a name="common-buttons"></a>常用按鈕
 
-#### <a name="text"></a>文字
-請依照下列中的撰寫指導方針[UI 文字和術語](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)。
+#### <a name="text"></a>Text
+遵循[UI 文本和術語](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)中的編寫指南。
 
-#### <a name="visual-style"></a>視覺化樣式
+#### <a name="visual-style"></a>視覺樣式
 
-##### <a name="standard-unthemed"></a>標準 (unthemed)
-在 Visual Studio 中的大部分按鈕會出現在公用程式的對話方塊，並且應該不能設定樣式。 它們應該反映出按鈕的標準外觀，如作業系統所指定。
+##### <a name="standard-unthemed"></a>標準(無主題)
+Visual Studio 中的大多數按鈕將顯示在實用程式對話方塊中,不應設置樣式。 它們應反映操作系統規定的按鈕的標準外觀。
 
-##### <a name="themed"></a>佈景主題
-在某些情況下，按鈕可能用於已設定樣式的 UI 中，這些按鈕必須有適當的樣式。 請參閱[對話方塊](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)佈景主題控制項上的資訊。
+##### <a name="themed"></a>主題
+在某些情況下,可以在樣式的 UI 中使用按鈕,並且這些按鈕必須正確設置樣式。 有關主題控制件的資訊[,請參閱對話框](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)。
 
-### <a name="special-buttons"></a>特殊的按鈕
+### <a name="special-buttons"></a>特殊按鈕
 
-#### <a name="browse-buttons"></a>瀏覽 按鈕
-**[瀏覽...]** 按鈕使用中格線、 對話方塊和工具視窗和其他非強制回應的 UI 項目。 它們會顯示在控制項填入值，可協助使用者選擇器。 有兩種變化，此按鈕時，完整和簡短。
+#### <a name="browse-buttons"></a>流覽。。。按鈕
+**[流覽...]** 按鈕用於網格、對話框、工具視窗以及其他無模式 UI 元素。 它們顯示一個選取器,可幫助使用者將值填充到控制項中。 此按鈕有兩種變體,長和短。
 
-![長的 [瀏覽...] 按鈕](../../extensibility/ux-guidelines/media/070703-04_browselong.gif "070703 04_BrowseLong")<br />長的 [瀏覽...] 按鈕
+![長 [瀏覽...] 按鈕](../../extensibility/ux-guidelines/media/070703-04_browselong.gif "070703-04_BrowseLong")<br />長 [瀏覽...] 按鈕
 
-![僅限省略符號的簡短的 [...] 按鈕](../../extensibility/ux-guidelines/media/070703-05_browseshort.gif "070703 05_BrowseShort")<br />僅限省略符號的簡短的 [...] 按鈕
+![僅省略號短 [...] 按鈕](../../extensibility/ux-guidelines/media/070703-05_browseshort.gif "070703-05_BrowseShort")<br />僅省略號短 [...] 按鈕
 
-使用僅限省略符號的簡短按鈕的時機：
+何時使用只有橢圓短按鈕:
 
-- 如果有一個以上長 **[瀏覽...]** 在對話方塊中，例如數個欄位進行瀏覽 按鈕。 使用簡短的 **[...]** 針對每個以避免這種情況下所建立令人困惑的存取金鑰 按鈕 ( **（& s) 瀏覽**並**B & 覽**相同的對話方塊中)。
+- 如果對話框中有多個長 **[Browse... ] 按鈕**,例如多個字段允許流覽時。 使用每個短 **[...]** 按鈕,以避免此情況創建的混亂訪問密鑰 **(&瀏覽**和 B **&行**在同一對話方塊)。
 
-- 在嚴格的對話方塊中，或將長的按鈕沒有合理的地方。
+- 在緊密對話框中,或者當沒有合理位置放置長按鈕時。
 
-- 如果按鈕會出現在方格控制項。
+- 如果按鈕將顯示在網格控制項中。
 
-使用 [] 按鈕的指導方針：
+使用按鈕的指南:
 
-- 請勿使用存取金鑰。 若要存取它使用鍵盤，使用者必須從相鄰的控制項索引標籤。 請確定定位順序，欄位將會填滿之後，立即就會任何瀏覽 按鈕。 永遠不會使用底線字元下方的第一個週期。
+- 不要使用訪問金鑰。 要使用鍵盤訪問它,用戶必須從相鄰控件選項卡。 確保選項卡順序使任何瀏覽按鈕在將填充的欄位之後立即落下。 切勿在第一個期間下方使用下劃線。
 
-- 設定 Microsoft Active Accessibility (MSAA)**名稱**屬性設**瀏覽...** （包含省略符號） 讓，螢幕助讀程式會朗讀它像是 [瀏覽]，而不"點-點-點 」 或 「 週期-期間-期間。 」 對於受管理的控制項，這表示設定**AccessibleName**屬性。
+- 將 Microsoft 活動輔助功能 (MSAA)**名稱**屬性設置為 **「流覽..."(** 包括省略號),以便螢幕閱讀器將其讀取為「瀏覽」,而不是「點點」或「週期週期」。 對於托管控件,這意味著設置 **「可訪問名稱」** 屬性。
 
-- 永遠不會使用省略符號 **[...]** 按鈕以外的瀏覽動作。 例如，如果您需要 **[新增...]** 按鈕，但沒有足夠的空間，文字、，然後需要重新設計對話方塊。
+- 切勿對除流覽操作以外的任何內容使用省略**號 [...]** 按鈕。 例如,如果您需要 **[New...]** 按鈕,但沒有足夠的空間用於文本,則需要重新設計對話方塊。
 
-##### <a name="sizing-and-spacing"></a>調整大小和間距
-![調整 [瀏覽...] 按鈕： standard 版本為 75 x 23 像素、 簡短版本為 26 x 23 像素](../../extensibility/ux-guidelines/media/070703-06_browsesizing.png "070703 06_BrowseSizing")<br />調整 [瀏覽...] 按鈕的大小
+##### <a name="sizing-and-spacing"></a>大小調整與間距
+![大小調整 [瀏覽... ] 按鈕:標準版本為 75x23 像素,短版本為 26x23 圖元](../../extensibility/ux-guidelines/media/070703-06_browsesizing.png "070703-06_BrowseSizing")<br />調整 [瀏覽...] 按鈕的大小
 
-![間距 [瀏覽...] 按鈕： 相關的控制項與標準瀏覽按鈕 7 個像素之間的間距，間距相關的控制項，並簡短的瀏覽按鈕 5 像素](../../extensibility/ux-guidelines/media/070703-07_browsespacing.png "070703 07_BrowseSpacing")<br />調整 [瀏覽...] 按鈕的間距
+![間距 [瀏覽...] 按鈕:相關控制項和標準流覽按鈕 7 像素之間的間距,相關控制項和短流覽按鈕之間的間距 5 像素](../../extensibility/ux-guidelines/media/070703-07_browsespacing.png "070703-07_BrowseSpacing")<br />調整 [瀏覽...] 按鈕的間距
 
-#### <a name="graphical-buttons"></a>圖形化的按鈕
-某些按鈕應該一律使用圖形化映像，也絕對不要包含文字，以節省空間，並避免當地語系化問題。 這些通常可在 欄位選擇器和其他可排序的清單。
+#### <a name="graphical-buttons"></a>圖形按鈕
+某些按鈕應始終使用圖形圖像,並且絕不包含文本以節省空間並避免本地化問題。 這些通常用於欄位選取器和其他可排序列表。
 
 > [!NOTE]
-> 使用者需要這些按鈕 （沒有存取金鑰） 索引標籤，因此將它們放在合理的順序。 對應`name`花費，讓螢幕助讀程式正確地解譯按鈕動作的動作按鈕的屬性。
+> 用戶必須選項卡到這些按鈕(沒有訪問鍵),所以將它們按合理的順序排列。 將`name`按鈕的屬性映射到它所執行的操作,以便螢幕閱讀器正確解釋按鈕操作。
 
-| 功能 | 按鈕 |
+| 函式 | 按鈕 |
 | --- | --- |
-| 新增 | ![圖形的 [新增] 按鈕](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703 08_ButtonAdd") |
-| 移除 | ![圖形的 [移除] 按鈕](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703 09_ButtonRemove") |
-| 全部加入 | ![圖形 [全部加入] 按鈕](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703 10_ButtonAddAll") |
-| 全部移除 | ![圖形 [全部移除] 按鈕](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703 11_ButtonRemoveAll") |
-| 上移 | ![圖形的 「 上移 按鈕](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703 12_ButtonMoveUp") |
-| 下移 | ![圖形 [下移] 按鈕](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703 13_ButtonMoveDown") |
-| 刪除 | ![圖形 [刪除] 按鈕](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703 14_ButtonDelete") |
+| 加 | ![圖形 [加入] 按鈕](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
+| 移除 | ![圖形 [移動] 按鈕](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
+| 加入全部 | ![圖形 [全部加入] 按鈕](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703-10_ButtonAddAll") |
+| 全部移除 | ![圖形 [全部移除] 按鈕](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
+| 上移 | ![圖形 [上移] 按鈕](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |
+| 下移 | ![圖形 [下移] 按鈕](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703-13_ButtonMoveDown") |
+| 刪除 | ![圖形 [刪除] 按鈕](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
 
-##### <a name="sizing-and-spacing"></a>調整大小和間距
-調整大小的圖形化的按鈕的簡短版本一樣 **[瀏覽...]** 按鈕 （26 x 23 像素為單位）：
+##### <a name="sizing-and-spacing"></a>大小調整與間距
+圖形按鈕的尺寸與 **[Browse...]** 按鈕(26x23 像素)的簡短版本相同:
 
-![在按鈕上，使用和不透明的色彩顯示的圖形影像的外觀](../../extensibility/ux-guidelines/media/070703-15_graphicalbuttonspacing.png "070703 15_GraphicalButtonSpacing")<br />在按鈕上，使用和不透明的色彩顯示的圖形影像的外觀
+![按鈕上的圖形影像的外觀,帶透明顏色顯示,不顯示透明顏色](../../extensibility/ux-guidelines/media/070703-15_graphicalbuttonspacing.png "070703-15_GraphicalButtonSpacing")<br />按鈕上的圖形影像的外觀,帶透明顏色顯示,不顯示透明顏色
 
 ### <a name="hyperlinks"></a>超連結
-超連結是適合用來巡覽為基礎的動作，例如開啟說明主題、 強制回應對話方塊中或精靈。 如果命令使用超連結，它應該一律 ui 會顯示可見及明顯的變更。 一般情況下，認可至動作 （例如儲存，請 [取消]，並刪除） 的動作是更好溝通使用按鈕中。
+超連結非常適合基於導航的操作,例如打開説明主題、模式對話方塊或嚮導。 如果用於命令的超連結,它應始終顯示對 UI 的可見且明顯的更改。 通常,最好使用按鈕傳達提交操作的操作(如保存、取消和刪除)。
 
 #### <a name="writing-style"></a>撰寫樣式
-請遵循[使用者介面文字的 Windows 桌面指引](/windows/desktop/uxguide/text-ui)。 請勿使用 「 了解更多關於，」 「 告訴我更多關於，」 或 「 取得協助與這個"片語。 相反地，片語解答的說明內容的主要問題方面的說明連結文字。 比方說，「**方式 [伺服器總管] 來新增伺服器？** "
+依[Windows 桌面指南進行使用者介面文字](/windows/desktop/uxguide/text-ui)。 不要使用"瞭解更多","告訴我更多關於"或"獲取有關此説明"的短語。 相反,短語"説明"會連結文本,以表示幫助內容回答的主要問題。 例如,"**如何向伺服器資源管理器添加伺服器?"**
 
-#### <a name="visual-style"></a>視覺化樣式
+#### <a name="visual-style"></a>視覺樣式
 
-- 應該一律使用超連結[The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。 如果超連結的樣式不正確，它會閃爍紅色作用時，或顯示不同的色彩後正在瀏覽。
+- 超連結應永遠使用[VSColor 服務](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。 如果超鏈接的樣式不正確,則在啟動時閃爍紅色,或在訪問后顯示其他顏色。
 
-- 請不要包含在控制項上來狀態，除非連結處於句子片段內完整的句子，例如浮水印的底線。
+- 除非連結是完整句子中的句子片段(如浮浮浮水印中)中,否則不要在控件靜止狀態處包含下劃線。
 
-- 暫留時，不應出現底線。 相反地，連結是作用中使用者的意見反應是稍微色彩變更，而適當的連結資料指標。
+- 下劃線不應顯示在懸停上。 相反,向用戶反饋的鏈接處於活動狀態是輕微的顏色變化和相應的連結游標。
 
-## <a name="BKMK_TreeViews"></a> 樹狀檢視
+## <a name="tree-views"></a><a name="BKMK_TreeViews"></a>樹狀圖
 
-樹狀檢視會提供一種方式組織複雜列出成父子式群組。 使用者可以展開或摺疊父群組，來顯示或隱藏基礎的子項目。 可以選取樹狀檢視中的每個項目，以提供進一步的動作。
+樹視圖提供了一種將複雜列表組織到父子組的方法。 用戶可以展開或摺疊父組以顯示或隱藏基礎子項。 可以選擇樹視圖中的每個項以提供進一步操作。
 
-### <a name="BKMK_TreeViewVisualStyle"></a> 樹狀結構檢視中的視覺化樣式
+### <a name="tree-view-visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a>樹視圖視覺樣式
 
-#### <a name="expanders"></a>展開器
-Windows 和 Visual Studio 所使用的展開器設計應該符合樹狀檢視控制項。 每個節點使用 expander 控制項來顯示或隱藏基礎項目。 使用 expander 控制項的使用者可能會遇到 Windows 和 Visual Studio 內的不同的樹狀檢視中提供一致性。
+#### <a name="expanders"></a>擴充器
+樹視圖控件應符合 Windows 和可視化工作室使用的擴展程式設計。 每個節點使用擴展器控制項來顯示或隱藏基礎項。 使用延伸器控制項為在 Windows 和 Visual Studio 中遇到不同樹視圖的使用者提供一致性。
 
-![正確： 使用 expander 控制項的樹狀檢視節點的適當的樣式](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />使用 expander 控制項的樹狀檢視節點的正確： 適當的樣式
+![正確:使用延伸器控制元件正確設定樹檢視節點樣式](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />正確:使用延伸器控制元件正確設定樹檢視節點樣式
 
-![不正確： 不正確樣式的樹狀檢視節點](../../extensibility/ux-guidelines/media/070705-2_treeviewincorrect1.png "070705 2_TreeViewIncorrect1")<br />不正確： 的樹狀檢視節點不適當的樣式
+![不正確:樹檢視節點的樣式不正確](../../extensibility/ux-guidelines/media/070705-2_treeviewincorrect1.png "070705-2_TreeViewIncorrect1")<br />不正確:樹檢視節點的樣式不正確
 
-#### <a name="selection"></a>選取
-在樹狀檢視中選取節點時，反白顯示應該展開成完整的樹狀檢視控制項的寬度。 這有助於使用者清楚地識別他們選取了哪一個項目。 選取範圍色彩應反映出目前的 Visual Studio 佈景主題。
+#### <a name="selection"></a>選取項目
+在樹視圖中選擇節點時,高光應擴展到樹視圖控件的完整寬度。 這有助於使用者清楚地識別他們選擇了哪些專案。 選擇顏色應反映當前視覺工作室主題。
 
-![正確： 反白顯示選取之節點的符合整個樹狀檢視控制項的寬度。](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />正確： 反白顯示選取之節點的符合整個樹狀檢視控制項的寬度。
+![正確:所選節點的高光適合樹視圖控件的整個寬度。](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />正確:所選節點的高光適合樹視圖控件的整個寬度。
 
-![不正確： 反白顯示選取之節點的容納不下整個樹狀檢視控制項的寬度。](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />不正確： 反白顯示選取之節點的容納不下整個樹狀檢視控制項的寬度。
+![不正確:所選節點的高光不適合樹視圖控件的整個寬度。](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705-3_TreeViewIncorrect2")<br />不正確:所選節點的高光不適合樹視圖控件的整個寬度。
 
 #### <a name="icons"></a>圖示
-圖示只有他們協助以視覺化方式識別項目之間的差異的情況下，只應該在樹狀檢視控制項中使用。 一般情況下，圖示應該只能用於異質性清單圖示，執行區分項目類型的資訊。 同質的清單中使用的圖示通常視為非搜尋，應該予以避免。 在此情況下 （父系） 中的 [群組] 圖示可傳達其內的項目的類型。 此規則的例外狀況是如果圖示是動態的而用來指示狀態。
+僅當圖示有助於直觀地識別項之間的差異時,才應在樹視圖控件中使用圖示。 通常,圖示應僅在異構清單中使用,其中圖示攜帶資訊以區分元素的類型。 在使用圖示的同質清單中通常可以被視為雜訊,應避免使用圖示。 在這種情況下,組圖示(父圖示)可以傳達其中的項目類型。 此規則的例外情況是,如果圖示是動態的,並且用於指示狀態。
 
 #### <a name="scroll-bars"></a>捲軸
-如果內容符合樹狀檢視控制項一律應隱藏捲軸。 它是可接受的捲軸在可捲動視窗中會隱藏，或具有半透明和時包含樹狀檢視中的視窗有焦點，顯示或樹狀結構的滑鼠停留在檢視本身。
+如果內容適合樹視圖控件,應始終隱藏滾動條。 捲動條可以隱藏,或在可滾動視窗中半透明,並在包含樹視圖的視窗具有焦點時或在樹視圖本身的懸停時顯示。
 
-![因為內容已超出限制的樹狀檢視控制項，則會顯示這兩個垂直和水平捲軸。](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />因為內容已超出限制的樹狀檢視控制項，則會顯示這兩個垂直和水平捲軸。
+![顯示垂直滾動條和水平滾動條,因為內容已超過樹視圖控件的限制。](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705-4_Scrollbars")<br />顯示垂直滾動條和水平滾動條,因為內容已超過樹視圖控件的限制。
 
-### <a name="BKMK_TreeViewInteractions"></a> 樹狀結構檢視的互動
+### <a name="tree-view-interactions"></a><a name="BKMK_TreeViewInteractions"></a>樹狀圖互動
 
 #### <a name="context-menus"></a>操作功能表
-在樹狀檢視節點可能會顯示內容功能表中的子功能表選項。 通常，這就會發生當使用者以滑鼠右鍵按一下項目，或在與所選取項目的 Windows 鍵盤上按下功能表鍵。 請務必確定節點取得焦點，然後選取。 這有助於使用者識別的子功能表屬於哪一個項目。
+樹視圖節點可以在上下文菜單中顯示子功能表選項。 通常,當使用者右鍵單擊某個專案或在選擇該專案的情況下按下 Windows 鍵盤上的「功能表」鍵時,將發生這種情況。 節點獲得焦點並被選中非常重要。 這有助於用戶識別子功能表屬於哪個項。
 
-![已選取的已產生的項目來通知使用者的內容功能表提升焦點的項目。](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />已選取的已產生的項目來通知使用者的內容功能表提升焦點的項目。
+![已生成上下文菜單的項獲得焦點,以通知使用者已選擇哪個項。](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705-5_ContextMenu")<br />已生成上下文菜單的項獲得焦點,以通知使用者已選擇哪個項。
 
 #### <a name="keyboard"></a>鍵盤
-樹狀檢視中應提供選取項目 」 和 「 展開/摺疊節點使用鍵盤的能力。 這可確保瀏覽符合我們的協助工具需求。
+樹視圖應提供使用鍵盤選擇項和展開/摺疊節點的能力。 這可確保導航滿足我們的輔助功能要求。
 
-##### <a name="tree-view-control"></a>樹狀檢視控制項
-Visual Studio 樹狀目錄控制項應該遵循一般的鍵盤瀏覽：
+##### <a name="tree-view-control"></a>樹狀圖控制項
+可視化工作室樹控件應遵循常見的鍵盤導航:
 
-- **向上箭號：** 樹狀結構中向上移動選取項目
+- **向上箭號:** 從移動樹來選擇項目
 
-- **向下箭號：** 藉由移動樹狀結構下的選取項目
+- **向下箭號:** 以移動樹來選擇項目
 
-- **向右箭頭：** 展開樹狀結構中的節點
+- **右箭號:** 展開樹中的節點
 
-- **向左箭號：** 摺疊樹狀結構中的節點
+- **左箭號:** 折疊樹中的節點
 
-- **輸入金鑰：** 起始、 載入、 執行選取的項目
+- **輸入鍵:** 啟動、載入、執行選取的項目
 
-##### <a name="trid-tree-view-and-grid-view"></a>Trid （樹狀檢視和格線檢視）
-Trid 控制項是複雜的控制項，其中包含 grid 內的樹狀檢視。 展開、 摺疊，並瀏覽樹狀目錄中應該遵守相同的鍵盤命令，以樹狀檢視，具有下列功能：
+##### <a name="trid-tree-view-and-grid-view"></a>Trid(樹檢視和網格檢視)
+trid 控件是一種複雜控件,其中包含網格中的樹視圖。 展開、摺疊和導航樹應遵循與樹視圖相同的鍵盤命令,並添加以下內容:
 
-- **向右箭頭：** 展開節點。 節點已展開之後，則應繼續瀏覽至最接近的資料行右側。 瀏覽應該停止的資料列結尾。
+- **右箭號:** 展開節點。 擴展節點后,它應繼續導航到右側最近的列。 導航應在行的末尾停止。
 
-- **索引標籤：** 瀏覽至最接近的儲存格右邊。  在資料列的結束時，瀏覽會繼續下一個資料列。
+- **選項卡:** 導航到右側最近的單元格。  在行的末尾,導航繼續到下一行。
 
-- **Shift + 索引標籤：** 瀏覽至最接近的資料格左邊。  開頭的資料列時，瀏覽會繼續在先前的資料列中最右邊的儲存格。
+- **移位 + 選項卡:** 導航到左側最近的單元格。  在行的開頭,導航繼續到上一行中最右側的單元格。
 
-![在 Visual Studio 中的 trid 控制項](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />在 Visual Studio 中的 trid 控制項
+![視覺工作室中的一個三惡維控制](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705-6_Trid")<br />視覺工作室中的一個三惡維控制

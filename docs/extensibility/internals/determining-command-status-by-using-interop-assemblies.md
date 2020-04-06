@@ -1,38 +1,38 @@
 ---
-title: 使用 Interop 組件判斷命令狀態 |Microsoft Docs
+title: 使用互操作程式集確定命令狀態 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, determining command status
 - command handling with interop assemblies, status
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33efc0bf393746a80b0881dacae01eaafe65bb8e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 52bea32997b083cd13349a37201411e357f94a90
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351630"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708705"
 ---
-# <a name="determine-command-status-by-using-interop-assemblies"></a>使用 interop 組件判斷命令狀態
-VSPackage 必須追蹤的狀態，它可以處理的命令。 VSPackage 中處理的命令會變成啟用或停用時，無法判斷環境。 它是以通知有關命令狀態的環境 VSPackage 的責任，比方說，一般狀態命令，例如**剪下**，**複製**，並**貼上**。
+# <a name="determine-command-status-by-using-interop-assemblies"></a>使用互通程式集決定命令狀態
+VSPackage 必須追蹤它可以處理的命令的狀態。 環境無法確定在 VSPackage 中處理的命令何時啟用或禁用。 VSPackage 負責通知環境命令狀態,例如,一般命令的狀態,如**剪切**、**複製**和**貼上**。
 
-## <a name="status-notification-sources"></a>狀態通知的來源
- 環境接收透過 Vspackage 的命令的相關資訊<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法，這是實作 VSPackage 的一部分的<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。 環境呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>的兩個情況下 VSPackage 的方法：
+## <a name="status-notification-sources"></a>狀態通知來源
+ 環境通過 VSPackage<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法接收有關命令的資訊,這是 VSPackage 實現<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面的一部分。 環境在<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>以下兩種情況下調用 VSPackage 的方法:
 
-- 當使用者開啟主功能表或操作功能表時 （以滑鼠右鍵按一下） 時，環境便會執行<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>所有該功能表上的命令，以判斷其狀態的方法。
+- 當使用者打開主菜單或上下文菜單(通過右鍵單擊)時,環境將執行該功能表上所有命令<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>上的方法以確定其狀態。
 
-- 當 VSPackage 會要求環境更新目前的使用者介面 (UI)。 此更新是目前顯示給使用者，這類的命令，就會發生**剪下**，**複製**，並**貼上**分組在 標準 工具列上，會變成啟用和停用在 回應內容和使用者的動作。
+- 當 VS 包請求環境更新當前使用者介面 (UI) 時。 此更新作為當前對用戶可見的命令(如標準工具列上的**剪切**、**複製**和**貼上**群組)而啟用和禁用,以回應上下文和使用者操作。
 
-  因為殼層裝載多個的 Vspackage，殼層的效能會過會降低，不需輪詢來判斷命令狀態的每個 VSPackage。 相反地，VSPackage 應該主動通知環境變更時，變更其 UI 時。 如需有關更新通知的詳細資訊，請參閱[更新使用者介面](../../extensibility/updating-the-user-interface.md)。
+  由於 shell 承載多個 VSPackage,因此,如果需要輪詢每個 VSPackage 以確定命令狀態,則 shell 的性能將不可接受。 相反,當更改時,VSPackage 應主動通知環境。當其 UI 發生更改時。 有關更新通知的詳細資訊,請參閱[更新使用者介面](../../extensibility/updating-the-user-interface.md)。
 
 ## <a name="status-notification-failure"></a>狀態通知失敗
- 通知命令狀態變更的環境失敗 VSPackage 可以將 UI 置於不一致的狀態。 請記住，任何功能表或操作功能表命令的可放入工具列上的使用者。 因此，更新 UI，功能表或操作功能表開啟時，才是不夠的。
+ VSPackage 未能通知環境命令狀態更改可能會使 UI 處於不一致狀態。 請記住,用戶可以將任何功能表或上下文功能單命令放在工具列上。 因此,僅在打開功能表或上下文菜單時更新 UI 是不夠的。
 
 ## <a name="see-also"></a>另請參閱
-- [Vspackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [VS 套件如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [實作](../../extensibility/internals/command-implementation.md)

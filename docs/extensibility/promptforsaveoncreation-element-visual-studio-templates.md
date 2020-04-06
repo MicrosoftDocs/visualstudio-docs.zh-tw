@@ -1,5 +1,5 @@
 ---
-title: PromptForSaveOnCreation 項目 （Visual Studio 範本） |Microsoft Docs
+title: 提示保存創建元素(可視化工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - PromptForSaveOnCreation element [Visual Studio project templates]
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 802bcd357fe82434f7cf5aaf835b2841e6dc8dc5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e6bbd62120da59da1fb26e671c1aa02f33949f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335979"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701784"
 ---
-# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 項目 （Visual Studio 範本）
+# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>提示儲存建立元素(視覺化工作室範本)
 
-指定是否會提示使用者輸入專案儲存位置，透過**新的專案**對話方塊中，建立專案時。 如果這個項目設定為`true`，則會提示使用者輸入新的儲存位置。 如果`false`，則不會提示 （也就是建立暫存的專案）。
+指定在創建專案時是否通過 **「新項目**」對話方塊提示使用者創建專案儲存位置。 如果此元素設置為`true`,則系統會提示使用者輸入保存位置。 如果`false`不會提示它們(即創建臨時專案)。
 
 ```xml
 \<VSTemplate>
@@ -50,20 +50,20 @@ ms.locfileid: "66335979"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 文字必須是`true`或是`false`，`true`指出將會提示使用者輸入的儲存位置建立新專案時。
+ 文字必須為或`true``false`,`true`指示在建立新專案時將提示使用者建立儲存位置。
 
 ## <a name="remarks"></a>備註
- `PromptForSaveOnCreation` 是選擇性項目。 預設值為 `false`。
+  是選擇性元素。 預設值是 `false`。
 
- 暫存專案是您可以建立和修改，而不將該專案的內容儲存在磁碟上。
+ 臨時專案是您可以創建和修改的專案,無需將該專案的內容保存在磁碟上。
 
 ## <a name="example"></a>範例
- 下列範例會設定的值`PromptForSaveOnCreation`等於`false`，指定允許專案建立為暫存專案。
+ 下面的範例設定 等於的`PromptForSaveOnCreation``false`值 ,該值指定允許將專案創建為臨時專案。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -92,5 +92,5 @@ ms.locfileid: "66335979"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)

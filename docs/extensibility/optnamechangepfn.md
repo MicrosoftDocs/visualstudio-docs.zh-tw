@@ -1,5 +1,5 @@
 ---
-title: OPTNAMECHANGEPFN | Microsoft Docs
+title: OPTNAMECHANGEPFN |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - OPTNAMECHANGEPFN callback function
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6107f48f4680cef9cbb825f4d760f3f0bac1ec1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 603bd08c1ec3832bf732e0b33101076738d009e3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336231"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702241"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
-這是呼叫中指定的回呼函式[SccSetOption](../extensibility/sccsetoption-function.md) (使用選項`SCC_OPT_NAMECHANGEPFN`) 並且用來傳達名稱所做的變更原始檔控制外掛程式傳回給 IDE。
+這是一個回調函數,在調用[SccSetOption(](../extensibility/sccsetoption-function.md)`SCC_OPT_NAMECHANGEPFN`使用選項 )中指定,用於將原始程式碼管理外掛程式所做的名稱更改傳回 IDE。
 
 ## <a name="signature"></a>簽章
 
@@ -35,24 +35,24 @@ typedef void (*OPTNAMECHANGEPFN)(
 ## <a name="parameters"></a>參數
  pvCallerData
 
-[in]先前呼叫中指定的使用者值[SccSetOption](../extensibility/sccsetoption-function.md) (使用選項`SCC_OPT_USERDATA`)。
+[在]在以前調用[SccSetOption](../extensibility/sccsetoption-function.md)時指定的使用者值`SCC_OPT_USERDATA`(使用選項)。
 
- pszOldName
+ pszOld名稱
 
-[in]檔案的原始名稱。
+[在]檔的原始名稱。
 
- pszNewName
+ psnewName
 
-[in]檔案名稱已重新命名為。
+[在]檔案重新命名為的名稱。
 
 ## <a name="return-value"></a>傳回值
  無。
 
 ## <a name="remarks"></a>備註
- 如果檔案已重新命名原始檔控制作業期間，原始檔控制外掛程式可以通知名稱變更，透過此回呼中相關的 IDE。
+ 如果在原始程式碼管理操作期間重新命名了檔,原始程式可以透過此回檔通知 IDE 有關名稱更改。
 
- IDE 不支援此回呼中，如果它不會呼叫[SccSetOption](../extensibility/sccsetoption-function.md)加以指定。 如果外掛程式不支援此回呼中，它會傳回`SCC_E_OPNOTSUPPORTED`從`SccSetOption`函式時，IDE 會嘗試回呼。
+ 如果 IDE 不支援此回調,則不會調用[SccSetOption](../extensibility/sccsetoption-function.md)來指定它。 如果外掛程式不支援此回調,則當 IDE 嘗試`SCC_E_OPNOTSUPPORTED`設置回調時`SccSetOption`,它將從函數返回。
 
 ## <a name="see-also"></a>另請參閱
-- [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)
+- [IDE 實作的回檔](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

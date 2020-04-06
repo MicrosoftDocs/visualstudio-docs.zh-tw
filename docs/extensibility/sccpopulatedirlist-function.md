@@ -1,5 +1,5 @@
 ---
-title: SccPopulateDirList 函式 |Microsoft Docs
+title: 放大縮小字型功能 放大縮小字型功能微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccPopulateDirList function
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f13c674e6374e826dc45343e5cd1f7edcc1f8100
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4ac1c51ac694acadd2efb0cd7d1c5a3f1d66ebc1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720901"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700560"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 函式
-此函式會判斷哪些目錄和（選擇性）檔案會儲存在原始檔控制中，並指定要檢查的目錄清單。
+此函數確定哪些目錄和(可選)檔案存儲在原始程式碼管理中,給定要檢查的目錄清單。
 
 ## <a name="syntax"></a>語法
 
@@ -36,43 +36,43 @@ SCCRTN SccPopulateDirList(
 ```
 
 #### <a name="parameters"></a>參數
- pCoNtext
+ pContext
 
-在原始檔控制外掛程式內容指標。
+[在]源代碼管理外掛程式上下文指標。
 
  nDirs
 
-在@No__t_0 陣列中的目錄路徑數目。
+[在]`lpDirPaths`陣列中的目錄路徑數。
 
- lpDirPaths
+ lpDirPath
 
-在要檢查的目錄路徑陣列。
+[在]要檢查的目錄路徑陣列。
 
- pfnPopulate
+ pfn 填充
 
-在要在 `lpDirPaths` 中針對每個目錄路徑和（選擇性） filename 呼叫的回呼函式（如需詳細資訊，請參閱[POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) ）。
+[在]回檔函數用於調用`lpDirPaths`中 每個目錄路徑和(可選)檔名(有關詳細資訊,請參閱[POPDIRLISTFUNC)。](../extensibility/popdirlistfunc.md)
 
  pvCallerData
 
-在要原封不動地傳遞至回呼函式的值。
+[在]要傳遞給回調函數的值保持不變。
 
  fOptions
 
-在值的組合，可控制目錄的處理方式（請參閱位旗標的「PopulateDirList 旗標」一節，以取得可能值的[特定命令所使用](../extensibility/bitflags-used-by-specific-commands.md)的）。
+[在]控制目錄處理方式的值的組合(請參閱[特定命令為可能的值使用的位標誌的"](../extensibility/bitflags-used-by-specific-commands.md)填充 DirList 標誌"部分)。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式執行應會傳回下列其中一個值：
+ 此函數的源碼管理外掛程式實現應返回以下值之一:
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|已成功完成作業。|
+|SCC_OK|成功完成操作。|
 |SCC_E_UNKNOWNERROR|發生錯誤。|
 
 ## <a name="remarks"></a>備註
- 只有在原始檔控制存放庫中實際的目錄和（選擇性）檔案名會傳遞至回呼函式。
+ 只有實際上位於原始程式碼管理儲存庫中的目錄和(可選)檔名才會傳遞到回調函數。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
 - [特定命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)
 - [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)
-- [錯誤碼](../extensibility/error-codes.md)
+- [錯誤代碼](../extensibility/error-codes.md)

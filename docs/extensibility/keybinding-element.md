@@ -1,27 +1,27 @@
 ---
-title: 按鍵繫結關係項目 |Microsoft Docs
+title: 鍵繫結元素 ( T) :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c3bc5e10c928c50bca1ea3879531885f4580519
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b458e70a9a85c11707c50da2e16e3aa73f51bc12
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309634"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703150"
 ---
-# <a name="keybinding-element"></a>KeyBinding 元素
-按鍵繫結關係項目會指定命令的鍵盤快速鍵。
+# <a name="keybinding-element"></a>鍵繫結元素
+KeyBinding 元素指定命令的鍵盤快捷方式。
 
- 命令可以有與其相關聯的單一和雙重金鑰的連結。 單一索引鍵繫結的範例**Ctrl**+**S**如**儲存**命令。 雙重金鑰的繫結需要兩個連續的按鍵組合來觸發命令。 雙重金鑰繫結的範例<strong>Ctrl *+</strong>K<strong>，</strong>Ctrl<strong>+</strong>K** 若要設定書籤。
+ 命令可以同時具有與其關聯的單鍵和雙密鑰綁定。 單個鍵繫執行的範例是 **「儲存**」命令的**Ctrl**+**S。** 雙鍵綁定需要兩個連續的鍵組合才能觸發命令。 雙鍵繫參數的範例是<strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K*= 來設定書籤。
 
 ## <a name="syntax"></a>語法
 
@@ -36,28 +36,28 @@ ms.locfileid: "66309634"
 
 |屬性|描述|
 |---------------|-----------------|
-|guid|必要項。|
-|id|必要項。|
-|編輯器|必要項。 編輯器 GUID 表示會使用此鍵盤快速鍵的編輯內容。 全域的繫結範圍值是"guidVSStd97 」。|
-|key1|必要項。 有效值包括所有可輸入的英數字元，以及兩位數的十六進位值前面加上 0x 並[VK_constants](/windows/desktop/inputdev/virtual-key-codes)。|
-|mod1|選擇性。 任何組合**Ctrl**， **Alt**，並**Shift**以空格分隔的。|
-|key2|選擇性。 有效值包括所有可輸入的英數字元，以及兩位數的十六進位值前面加上 0x 並[VK_constants](/windows/desktop/inputdev/virtual-key-codes)。|
-|mod2|選擇性。 任何組合**Ctrl**， **Alt**，並**Shift**以空格分隔的。|
+|guid|必要。|
+|id|必要。|
+|編輯器|必要。 編輯器 GUID 指示此鍵盤快捷方式將處於活動狀態的編輯上下文。 全域綁定範圍值為「guidVSStd97」。。|
+|key1|必要。 有效值包括所有可鍵入的字母數位,以及前面以 0x 和[VK_constants](/windows/desktop/inputdev/virtual-key-codes)開頭的兩位十進位值。|
+|mod1|選擇性。 **Ctrl、Alt****Alt**和**Shift**的任意組合由空間分隔。|
+|key2|選擇性。 有效值包括所有可鍵入的字母數位,以及前面以 0x 和[VK_constants](/windows/desktop/inputdev/virtual-key-codes)開頭的兩位十進位值。|
+|mod2|選擇性。 **Ctrl、Alt****Alt**和**Shift**的任意組合由空間分隔。|
 |模擬器|選擇性。|
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|父代||
-|註釋||
+|父系||
+|Annotation||
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|描述|
 |-------------|-----------------|
-|[KeyBindings 元素](../extensibility/keybindings-element.md)|群組按鍵繫結關係項目和其他按鍵繫結關係分組。|
+|[鍵繫結元素](../extensibility/keybindings-element.md)|對鍵綁定元素和其他鍵綁定分組進行分組。|
 
 ## <a name="example"></a>範例
 
@@ -71,5 +71,5 @@ ms.locfileid: "66309634"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [KeyBindings 元素](../extensibility/keybindings-element.md)
-- [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [鍵繫結元素](../extensibility/keybindings-element.md)
+- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
