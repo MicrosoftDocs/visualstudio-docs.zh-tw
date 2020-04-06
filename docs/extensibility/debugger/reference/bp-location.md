@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION | Microsoft Docs
+title: BP_LOCATION |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION union
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0d196342c834ed9f7fd9bf70859ae2b061344e2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c98fde516a3e836302cd7eb2c73abd730d5cc8c5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353033"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737938"
 ---
-# <a name="bplocation"></a>BP_LOCATION
-指定用來描述中斷點的位置的結構類型。
+# <a name="bp_location"></a>BP_LOCATION
+指定用於描述斷點位置的結構類型。
 
 ## <a name="syntax"></a>語法
 
@@ -55,58 +55,58 @@ public struct BP_LOCATION {
 
 ## <a name="members"></a>成員
 `bpLocationType`\
-值，以從[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)列舉，用來解譯`bpLocation`聯集或`unionmemberX`成員。
+用於解釋`bpLocation`聯合`unionmemberX`或 成員[的BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)枚舉中的值。
 
 `bpLocation`.`bplocCodeFileLine`\
-[C++只]包含[BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)結構，如果`bpLocationType`  =  `BPLT_CODE_FILE_LINE`。
+[僅C++]如果包含[BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)BP_LOCATION_CODE_FILE_LINE`bpLocationType` = `BPLT_CODE_FILE_LINE`結構 。
 
 `bpLocation.bplocCodeFuncOffset`\
-[C++只]包含[BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)結構，如果`bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`。
+[僅C++]如果[BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)包含`bpLocationType` = `BPLT_CODE_FUNC_OFFSET`BP_LOCATION_CODE_FUNC_OFFSET 結構 。
 
 `bpLocation.bplocCodeContext`\
-[C++只]包含[BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)結構，如果`bpLocationType`  =  `BPLT_CODE_CONTEXT`。
+[僅C++]如果包含[BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)BP_LOCATION_CODE_CONTEXT`bpLocationType` = `BPLT_CODE_CONTEXT`結構 。
 
 `bpLocation.bplocCodeString`\
-[C++只]包含[BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)結構，如果`bpLocationType`  =  `BPLT_CODE_STRING`。
+[僅C++]如果[包含](../../../extensibility/debugger/reference/bp-location-code-string.md)BP_LOCATION_CODE_STRING`bpLocationType` = `BPLT_CODE_STRING`結構 。
 
 `bpLocation.bplocCodeAddress`\
-[C++只]包含[BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)結構，如果`bpLocationType`  =  `BPLT_CODE_ADDRESS`。
+[僅C++]如果包含[BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)BP_LOCATION_CODE_ADDRESS`bpLocationType` = `BPLT_CODE_ADDRESS`結構 。
 
 `bpLocation.bplocDataString`\
-[C++只]包含[BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)結構，如果`bpLocationType`  =  `BPLT_DATA_STRING`。
+[僅C++]如果包含[BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)BP_LOCATION_DATA_STRING`bpLocationType` = `BPLT_DATA_STRING`結構 。
 
 `bpLocation.bplocResolution`\
-[C++只]包含[BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)結構，如果`bpLocationType`  =  `BPLT_RESOLUTION`。
+[僅C++]如果包含[BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)BP_LOCATION_RESOLUTION`bpLocationType` = `BPLT_RESOLUTION`結構 。
 
 `unionmember1`\
-[C#只]請參閱有關如何解譯的備註。
+[僅 C]請參閱有關如何解釋的備註。
 
 `unionmember2`\
-[C#只]請參閱有關如何解譯的備註。
+[僅 C]請參閱有關如何解釋的備註。
 
 `unionmember3`\
-[C#只]請參閱有關如何解譯的備註。
+[僅 C]請參閱有關如何解釋的備註。
 
 `unionmember4`\
-[C#只]請參閱有關如何解譯的備註。
+[僅 C]請參閱有關如何解釋的備註。
 
 ## <a name="remarks"></a>備註
-此結構是隸屬[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)並[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。
+此結構是[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)和[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構的成員。
 
- [C#只]`unionmemberX`成員會根據下表來解譯。 往下的左側資料行`bpLocationType`值，然後尋找其他資料行來判斷每個跨`unionmemberX`成員表示和封送處理`unionmemberX`據此。 請參閱範例的方式來解譯此結構在 C# 中的一部分。
+ [僅 C]成員`unionmemberX`根據下表進行解釋。 向下看值的左列,`bpLocationType`然後跨其他列查看以確定`unionmemberX`每個 成員表示的內容並相應地封`unionmemberX`送。 有關在 C# 中解釋此結構的一部分的方法,請參閱示例。
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
-|`BPLT_CODE_FILE_LINE`|`string` （內容）|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|-|-|
-|`BPLT_CODE_FUNC_OFFSET`|`string` （內容）|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|-|-|
+|`BPLT_CODE_FILE_LINE`|`string`(內容)|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|-|-|
+|`BPLT_CODE_FUNC_OFFSET`|`string`(內容)|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|-|-|
 |`BPLT_CODE_CONTEXT`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|
-|`BPLT_CODE_STRING`|`string` （內容）|`string` （條件式運算式）|-|-|
-|`BPLT_CODE_ADDRESS`|`string` （內容）|`string` (模組 URL)|`string` （函式名稱）|`string` （位址）|
-|`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string` （內容）|`string` （資料運算式）|`uint` （數字的項目）|
+|`BPLT_CODE_STRING`|`string`(內容)|`string`(條件運算式)|-|-|
+|`BPLT_CODE_ADDRESS`|`string`(內容)|`string`(模組 URL)|`string`(功能名稱)|`string`(位址)|
+|`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string`(內容)|`string`(資料運算式)|`uint`(元素)|
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|
 
 ## <a name="example"></a>範例
-此範例示範如何解譯`BP_LOCATION`中的 C# 結構`BPLT_DATA_STRING`型別。 此特定的型別顯示如何解譯所有四個`unionmemberX`中所有可能的格式 （物件、 字串和數字） 的成員。
+此示例展示如何解釋`BP_LOCATION``BPLT_DATA_STRING`類型中的 C# 結構。 此特定類型展示如何以所有可能的格式(`unionmemberX`物件、字串和數位)解釋所有四個成員。
 
 ```csharp
 using System;
@@ -132,14 +132,14 @@ namespace MyPackage
 ```
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)
 - [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)

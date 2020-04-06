@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS_UNION | Microsoft Docs
+title: DEBUG_ADDRESS_UNION |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_ADDRESS_UNION union
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3dbd114fb06bfd688c720744dbbad69bd0dae6aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad531ee10914e404459632c98aae4a9bbda8e437
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346276"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737535"
 ---
-# <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
-說明不同類型的位址。
+# <a name="debug_address_union"></a>DEBUG_ADDRESS_UNION
+描述不同類型的位址。
 
 ## <a name="syntax"></a>語法
 
@@ -54,50 +54,50 @@ public struct DEBUG_ADDRESS_UNION {
 
 ## <a name="members"></a>成員
 `dwKind`\
-值，以從[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉，指定如何解譯聯集。
+[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚舉中的值,指定如何解釋聯合。
 
 `addr.addrNative`\
-[C++只]包含[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)結構，如果`dwKind`= ADDRESS_KIND_NATIVE。
+[僅C++]如果[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)=`dwKind`ADDRESS_KIND_NATIVE, 則包含NATIVE_ADDRESS結構。
 
 `addr.addrThisRel`\
-[C++只]包含[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)結構，如果`dwKind`= ADDRESS_KIND_UNMANAGED_THIS_RELATIVE。
+[僅C++]如果[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)=`dwKind`ADDRESS_KIND_UNMANAGED_THIS_RELATIVE, 則包含UNMANAGED_ADDRESS_THIS_RELATIVE結構。
 
 `addr.addUPhysical`\
-[C++只]包含[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)結構，如果`dwKind`= ADDRESS_KIND_UNMANAGED_PHYSICAL。
+[僅C++]如果[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)=`dwKind`ADDRESS_KIND_UNMANAGED_PHYSICAL, 則包含UNMANAGED_ADDRESS_PHYSICAL結構。
 
 `addr.addrMethod`\
-[C++只]包含[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)結構，如果`dwKind`= ADDRESS_KIND_METHOD。
+[僅C++]如果[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)=`dwKind`ADDRESS_KIND_METHOD, 則包含METADATA_ADDRESS_METHOD結構。
 
 `addr.addrField`\
-[C++只]包含[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)結構，如果`dwKind`= ADDRESS_KIND_FIELD。
+[僅C++]如果[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)=`dwKind`ADDRESS_KIND_FIELD, 則包含METADATA_ADDRESS_FIELD結構。
 
 `addr.addrLocal`\
-[C++只]包含[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)結構，如果`dwKind`= ADDRESS_KIND_LOCAL。
+[僅C++]如果[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)=`dwKind`ADDRESS_KIND_LOCAL, 則包含METADATA_ADDRESS_LOCAL結構。
 
 `addr.addrParam`\
-[C++只]包含[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)結構，如果`dwKind`= ADDRESS_KIND_PARAM。
+[僅C++]如果[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)=`dwKind`ADDRESS_KIND_PARAM, 則包含METADATA_ADDRESS_PARAM結構。
 
 `addr.addrArrayElem`\
-[C++只]包含[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)結構，如果`dwKind`= ADDRESS_KIND_ARRAYELEM。
+[僅C++]如果[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)=`dwKind`ADDRESS_KIND_ARRAYELEM, 則包含METADATA_ADDRESS_ARRAYELEM結構。
 
 `addr.addrRetVal`\
-[C++只]包含[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)結構，如果`dwKind`= ADDRESS_KIND_RETVAL。
+[僅C++]如果[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)=`dwKind`ADDRESS_KIND_RETVAL, 則包含METADATA_ADDRESS_RETVAL結構。
 
 `addr.unused`\
-[C++只] 填補。
+[僅C++] 填充。
 
 `addr`\
-[C++只]聯集的名稱。
+[僅C++]聯合的名稱。
 
 `unionmember`\
-[C#只]此值必須根據適當的結構類型封送處理`dwKind`。 如之間的關聯，請參閱 < 備註 > 一`dwKind`和等位的解譯。
+[僅 C]此值需要根據`dwKind`進行封送到相應的結構類型。 有關聯合之間的`dwKind`關聯和解釋,請參閱備註。
 
 ## <a name="remarks"></a>備註
-此結構是的一部分[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構，並代表不同種類的位址數的其中一個 (`DEBUG_ADDRESS`結構的呼叫會填入[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)方法)。
+此結構是[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構的一部分,表示多種不同類型的位址之`DEBUG_ADDRESS`一( 結構由對[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)方法的調用填充)。
 
- [C#只]下表顯示如何解譯`unionmember`位址的每種類型的成員。 此範例會示範如何做到這點一種地址。
+ [僅 C]下表顯示了如何解釋每種地址`unionmember`的成員。 "範例"顯示了如何針對一種位址執行此操作。
 
-|`dwKind`|`unionmember` 解譯為|
+|`dwKind`|`unionmember`解釋為|
 |--------------|----------------------------------|
 |`ADDRESS_KIND_NATIVE`|[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)|
 |`ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`|[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)|
@@ -110,7 +110,7 @@ public struct DEBUG_ADDRESS_UNION {
 |`ADDRESS_KIND_RETVAL`|[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)|
 
 ## <a name="example"></a>範例
-此範例示範如何將一種地址 (`METADATA_ADDRESS_ARRAYELEM`) 的`DEBUG_ADDRESS_UNION`C# 中的結構。 其餘的項目可以完全相同的方式解譯。
+此範例展示如何解釋 C# 中`METADATA_ADDRESS_ARRAYELEM``DEBUG_ADDRESS_UNION`結構的位址 ( ) 。 其餘元素的解釋方式完全相同。
 
 ```csharp
 using System;
@@ -135,14 +135,14 @@ namespace MyPackage
 ```
 
 ## <a name="requirements"></a>需求
-標頭： sh.h
+標題: sh.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
 - [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)

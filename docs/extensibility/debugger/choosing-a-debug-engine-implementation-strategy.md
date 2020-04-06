@@ -1,35 +1,35 @@
 ---
-title: 選擇 偵錯引擎的實作策略 |Microsoft Docs
+title: 選擇除錯引擎實施策略 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930908b66b5d2234b8c62585b10ddf751c96f61c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 05e66975a2d41108d3d9fb469da9e4a36a10d8d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324512"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739123"
 ---
-# <a name="choose-a-debug-engine-implementation-strategy"></a>選擇 偵錯引擎的實作策略
-您可以使用執行階段架構來判斷您偵錯引擎 (DE) 的實作策略。 您可以建立偵錯引擎中同處理序在偵錯的程式。 建立偵錯引擎中同處理序執行 Visual Studio 工作階段的偵錯管理員 (SDM)。 或者，您也可以建立偵錯引擎外處理到這兩者。 下列指導方針可協助您選擇下列三個策略。
+# <a name="choose-a-debug-engine-implementation-strategy"></a>選擇除錯引擎實施原則
+使用運行時體系結構確定調試引擎 (DE) 實現策略。 您可以將除錯引擎建立到正在除錯的程式的程序。 在過程中創建調試引擎到可視化工作室工作階段除錯管理器 (SDM)。 或者,將調試引擎創建進程外,以將其與它們進行。 以下指南將説明您從這三種策略中進行選擇。
 
-## <a name="guidelines"></a>方針
- 雖然您可以針對要跨處理序 DE SDM 和正在偵錯的程式，則通常沒有理由這麼做。 跨處理序界限的呼叫是相對比較慢。
+## <a name="guidelines"></a>指導方針
+ 雖然 DE 可能會與 SDM 和正在調試的程式都進行進程外處理,但通常沒有理由這樣做。 跨進程邊界的調用相對較慢。
 
- 偵錯引擎已經提供 Win32 原生執行階段環境和通用語言執行階段環境。 如果您必須取代 DE 代表其中一個環境，您應該建立 SDM DE 同處理序。
+ 已經為 Win32 本機運行時環境和通用語言運行時環境提供了調試引擎。 如果必須為任一環境替換 DE,則應使用 SDM 創建進程中的 DE。
 
- 否則，您建立 DE 同處理序以 SDM 或者同處理序的程式在偵錯。 您必須考慮是否運算式評估工具的 DE 需要頻繁存取程式符號存放區。 或者，如果符號存放區可以載入記憶體中進行快速存取。 此外，請考慮下列方法：
+ 否則,您將在進程中創建 DE 到 SDM 或行程內到要調試的程式。 您需要考慮 DE 的運算式賦值器是否需要頻繁存取程式符號儲存。 或者,如果符號存儲可以載入到記憶體中以便快速存取。 此外,請考慮以下方法:
 
-- 如果不是運算式評估工具和符號存放區之間的許多呼叫，或是符號存放區可以讀入 SDM 記憶體空間，建立 DE 同處理序以 SDM。 它會將附加到您的程式時您必須回到 SDM 的偵錯引擎的 CLSID。 在 SDM 會使用這個 CLSID 建立 DE 同處理序執行個體。
+- 如果表達式賦值器和符號存儲之間沒有多次調用,或者如果符號存儲可以讀取到 SDM 記憶體空間中,請創建 SDM 過程中的 DE 進程。 當除錯引擎的 CLSID 附加到程式時,必須將其返回到 SDM。 SDM 使用此 CLSID 創建 DE 的程序內實例。
 
-- 如果 DE 必須呼叫程式，以存取符號存放區，建立 DE 同處理序的程式。 在此情況下，程式會建立預設的執行個體。
+- 如果 DE 必須呼叫程式才能存取符號儲存,請使用程式創建進程中的 DE。 在這種情況下,程式將創建 DE 的實例。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 偵錯工具擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+- [視覺化工作室除錯器可擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

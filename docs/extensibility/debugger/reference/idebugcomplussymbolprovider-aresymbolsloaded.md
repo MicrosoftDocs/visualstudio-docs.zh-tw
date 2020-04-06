@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::AreSymbolsLoaded |Microsoft Docs
+title: IDebugComPlus符號提供者::符號載入 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - AreSymbolsLoaded
 - IDebugComPlusSymbolProvider::AreSymbolsLoaded
 ms.assetid: bbf8707d-f89c-4177-b019-d519f1ec6f4a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 452cfb7758b110621ead9bc9e7e71f9bfab1e924
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 44dceaa8b5cffd3bd81b7e8527368c38a6faaf18
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338842"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734168"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
-決定是否偵錯符號載入指定的模組指定的應用程式網域識別項。
+確定是否為給定應用程式域識別符的指定模組載入調試符號。
 
 ## <a name="syntax"></a>語法
 
@@ -42,16 +42,16 @@ int AreSymbolsLoaded (
 
 ## <a name="parameters"></a>參數
 `ulAppDomainID`\
-[in]應用程式定義域的識別項。
+[在]應用程式域的標識碼。
 
 `guidModule`\
-[in]模組的唯一識別碼。
+[在]模組的唯一標識碼。
 
 ## <a name="return-value"></a>傳回值
-如果已載入偵錯符號，就會傳回`S_OK`; 否則傳回`S_FALSE`。
+如果載入除錯符號,則傳`S_OK`回 。否則,傳`S_FALSE`回 。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。
+下面的範例展示如何為公開[IDebugComPlusSymbol提供程式](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbol提供程式**物件實現此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(

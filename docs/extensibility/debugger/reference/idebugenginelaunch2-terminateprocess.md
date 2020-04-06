@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::TerminateProcess | Microsoft Docs
+title: IDebugEngine啟動2::終止進程 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2::TerminateProcess
 ms.assetid: f7039e7f-5f57-4222-9ad2-11a66b2da6e0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 88536211083650fa1a6fe606c78bd7ecf9037c98
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 971259edc89d1ad8be01b6e6e4db46f760534349
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337191"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730506"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
-結束處理序。
+終止進程。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int TerminateProcess ( 
 
 ## <a name="parameters"></a>參數
 `pProcess`\
-[in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示終止程序。
+[在]表示要終止的進程的[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 呼叫[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)方法之前呼叫這個方法。
+ 在調用此方法之前調用[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

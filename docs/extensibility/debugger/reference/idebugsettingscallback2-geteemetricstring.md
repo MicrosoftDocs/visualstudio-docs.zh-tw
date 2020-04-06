@@ -1,27 +1,27 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricString | Microsoft Docs
+title: IDebugsettings回調2::獲取EEMetricString |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricString
 ms.assetid: 85e3c093-6a91-4101-ab32-d8ac6eed4918
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd4ac00a03204ac9104ea965145874ac950f7304
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ec2d8d321045900ac208297f7b007ce5266953f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322083"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720035"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
-擷取指定其名稱的運算式評估工具度量的值字串。
+檢索給定其名稱的運算式賦值器指標的值字串。
 
 ## <a name="syntax"></a>語法
 
@@ -45,19 +45,19 @@ private int GetEEMetricString(
 
 ## <a name="parameters"></a>參數
 `guidLang`\
-[in]程式設計語言的唯一識別碼。
+[在]程式設計語言的唯一標識符。
 
 `guidVendor`\
-[in]供應商的唯一識別碼。
+[在]供應商的唯一標識碼。
 
 `pszMetric`\
-[in]計量名稱。
+[在]指標的名稱。
 
 `pbstrValue`\
-[out]傳回的度量值的字串。
+[出]返回指標值字串。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

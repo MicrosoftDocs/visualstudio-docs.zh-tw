@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateObject |Microsoft Docs
+title: IDebug函數物件::創建物件 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateObject method
 ms.assetid: c4c99dd5-609a-4e7c-8f29-eb728f57e995
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc0632f429a547d4b17fe57bec4582fea623ee24
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: beb00bcf932b19ed4e489456236957c55d909ce4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320938"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728592"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
-建立使用建構函式的物件。
+使用構造函數創建物件。
 
 ## <a name="syntax"></a>語法
 
@@ -47,24 +47,24 @@ int CreateObject(
 
 ## <a name="parameters"></a>參數
 `pConstructor`\
-[in][IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)物件，表示要建立之物件的建構函式。
+[在][IDebug函數物件物件](../../../extensibility/debugger/reference/idebugfunctionobject.md),表示要創建的對象的構造函數。
 
 `dwArgs`\
-[in]中的參數數目`pArg`陣列。 表示傳遞至建構函式的參數數目。
+[在]陣列中的`pArg`參數數。 表示傳遞給構造函數的參數數。
 
 `pArg`\
-[in]陣列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件代表的參數傳遞至建構函式。
+[在][IDebugObject 物件的](../../../extensibility/debugger/reference/idebugobject.md)陣列,表示傳遞給建構函數的參數。
 
 `ppObject`\
-[out]傳回`IDebugObject`代表新建立的物件。
+[出]返回表示`IDebugObject`新創建的物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。
+ 如果成功,返回S_OK;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 呼叫這個方法來建立物件，表示類別 （或其他需要建構函式的複雜型別） 的執行個體也就是由表示函式的參數[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。
+ 調用此方法以創建一個物件,該物件表示類(或需要構造函數的其他複雜類型)的實例,該實例是[iDebug 函數物件](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面表示的函數的參數。
 
- 如果物件參數不需要建構函式，呼叫[CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)方法。
+ 如果物件參數不需要建構函數,請調用[CreateObjectNo構造函數](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetRange | Microsoft Docs
+title: IDebug文檔位置2::獲取範圍 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::GetRange
 ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c67828e2d9e1cb0c75d272b57e7c6b610a84fdd5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a923691afdfe145931ab31d0e9bbc6142e7c8d1c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326463"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731672"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
-取得此文件位置的範圍。
+獲取此文件位置的範圍。
 
 ## <a name="syntax"></a>語法
 
@@ -43,23 +43,23 @@ int GetRange( 
 
 ## <a name="parameters"></a>參數
 `pBegPosition`\
-[in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)會填入的開始位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。
+[進出]用起始位置填充[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構。 如果不需要此資訊,則此參數設定為 null 值。
 
 `pEndPosition`\
-[in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)會填入結束位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。
+[進出]用結束位置填充[的TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構。 如果不需要此資訊,則此參數設定為 null 值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 位置中斷點的文件位置中指定的範圍由偵錯引擎 (DE) 用於實際提供的程式碼的陳述式繼續搜尋。 例如，請參考下列程式碼：
+ 除錯引擎 (DE) 使用在位置斷點的文件位置中指定的範圍來提前搜尋實際貢獻代碼的語句。 例如，請參考下列程式碼：
 
 ```
 Line 5: // comment
 Line 6: x = 1;
 ```
 
- 第 5 行貢獻到程式正在偵錯任何程式碼。 如果在第 5 行設定中斷點的偵錯工具想要向前搜尋特定數量的貢獻程式碼的第一行 DE，偵錯工具會指定包含其他候選項目行中斷點可能會正確地放置範圍。 DE 會再向前搜尋這些行直到它找到可以接受中斷點的該行。
+ 第 5 行對正在調試的程序沒有貢獻任何代碼。 如果在第 5 行上設置斷點的調試器希望 DE 向前搜索一定數量的第一行貢獻代碼,則調試器將指定一個範圍,其中包括可能正確放置斷點的其他候選行。 然後,DE 會向前搜索這些行,直到找到可以接受斷點的行。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

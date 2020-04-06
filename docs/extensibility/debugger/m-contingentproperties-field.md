@@ -1,30 +1,30 @@
 ---
-title: m_contingentProperties 欄位 |Microsoft Docs
+title: m_contingentProperties欄位 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_contingentProperties field, Task class [.NET Framework debug engines]
 ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a583f6e42198f3ad01af99ab9bfa164793eada68
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c216a99042a3b9b67eaa0dc13555c27a1e8bfad9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330874"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738411"
 ---
-# <a name="mcontingentproperties-field"></a>m_contingentProperties 欄位
-儲存的其他屬性<xref:System.Threading.Tasks.Task>物件。
+# <a name="m_contingentproperties-field"></a>m_contingentProperties欄位
+存儲<xref:System.Threading.Tasks.Task>物件的其他屬性。
 
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **命名空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **組件：** mscorlib (在*mscorlib.dll*)
+ **程式集**:mscorlib(在*mscorlib.dll*中)
 
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。
+ 由於您無法從 .NET 框架訪問此內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
 
 ## <a name="syntax"></a>語法
 

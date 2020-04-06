@@ -1,30 +1,30 @@
 ---
-title: TASK_STATE_WAITING_ON_CHILDREN 欄位 |Microsoft Docs
+title: TASK_STATE_WAITING_ON_CHILDREN欄位 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_WAITING_ON_CHILDREN field, Task class [.NET Framework debug engines]
 ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae7f7930161b07dc8aeb4f3ff8bfb506e9f6e737
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 27b9963db54d939b3d509da451478c20dbe0e7d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345399"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712576"
 ---
-# <a name="taskstatewaitingonchildren-field"></a>TASK_STATE_WAITING_ON_CHILDREN 欄位
-工作已完成執行其委派，並在暗中等候附加的子工作完成。
+# <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN欄位
+任務已完成執行其委託,並隱式等待附加的子任務完成。
 
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **命名空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **組件：** mscorlib (在*mscorlib.dll*)
+ **程式集**:mscorlib(在*mscorlib.dll*中)
 
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。
+ 由於您無法從 .NET 框架訪問此內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
 
 ## <a name="syntax"></a>語法
 
@@ -33,7 +33,7 @@ ms.locfileid: "66345399"
 ```
 
 ## <a name="remarks"></a>備註
- 如果[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)欄位會包含此值，請<xref:System.Threading.Tasks.Task.Status%2A>屬性會傳回<xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>。
+ 如果[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)欄位包含此值<xref:System.Threading.Tasks.Task.Status%2A>,則屬性<xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>將傳回 。
 
 ## <a name="see-also"></a>另請參閱
 - [工作類別](../../extensibility/debugger/task-class-internal-members.md)

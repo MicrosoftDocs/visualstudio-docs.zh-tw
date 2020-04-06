@@ -1,5 +1,5 @@
 ---
-title: 在中斷模式中逐步執行 |Microsoft Docs
+title: 步入中斷模式 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - stepping, in break mode
 - debugging [Debugging SDK], stepping in break mode
 ms.assetid: b08dc8ee-6c63-4462-a097-6f525cfbb35a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3a8688f32a97d27ee6f6e2d18fcea8e25feaac2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3161fc1c1ec8b44d96b3793198ac630ba2e32d67
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348537"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712850"
 ---
-# <a name="stepping-in-break-mode"></a>在中斷模式中逐步執行
-下一節會說明當偵錯工具處於中斷模式，且必須逐步執行程式碼，就會發生的程序：
+# <a name="stepping-in-break-mode"></a>進一步進入中斷模式
+以下部分介紹除錯器處於中斷模式且必須單步執行代碼時發生的過程:
 
-## <a name="stepping-process"></a>逐步執行程序
+## <a name="stepping-process"></a>步進過程
 
-1. 呼叫[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)具有[STEPKIND](../../extensibility/debugger/reference/stepkind.md)並[STEPUNIT](../../extensibility/debugger/reference/stepunit.md)執行之步驟的引數。
+1. 調用[IDebugProgram2::](../../extensibility/debugger/reference/idebugprogram2-step.md)使用[STEPKIND](../../extensibility/debugger/reference/stepkind.md)和[STEPUNIT](../../extensibility/debugger/reference/stepunit.md)參數執行步驟的步驟。
 
-2. 完成步驟後，傳送[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)為停止事件。
+2. 完成此步驟後,將[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)作為停止事件發送。
 
 ## <a name="see-also"></a>另請參閱
-- [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)
+- [呼叫除錯器事件](../../extensibility/debugger/calling-debugger-events.md)

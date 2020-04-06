@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetSize | Microsoft Docs
+title: IDebugField:獲取大小 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetSize method
 ms.assetid: 73329924-3751-4f44-af54-5986b7943374
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db4ef8a41ec6759194cc35203b6458c7688f4322
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9f19a914de2e74613e987753c8062215fd0d0403
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333209"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728804"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
-這個方法會取得一個欄位，以位元組為單位的大小。
+此方法獲取欄位的大小(以位元組為單位)。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetSize(
 
 ## <a name="parameters"></a>參數
 `pdwSize`\
-[out]傳回的大小。
+[出]返回大小。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 所有欄位都有型別和所有類型都有一個大小。 例如，類型為位元組欄位有 1 個位元組的大小。
+ 所有欄位都有一個類型,並且所有類型都有一個大小。 例如,具有位元組類型的欄位的大小為1位元組。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

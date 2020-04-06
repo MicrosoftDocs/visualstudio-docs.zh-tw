@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadProperties |Microsoft Docs
+title: IDebugThread2:獲取線程屬性 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetThreadProperties
 ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a325e8798f54d8ec78ad0ec5318e9162b16774b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7f81f4b60dfda21ce59ad73076785a37b767873
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320107"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718698"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
-取得描述這個執行緒的屬性。
+獲取描述此線程的屬性。
 
 ## <a name="syntax"></a>語法
 
@@ -43,19 +43,19 @@ int GetThreadProperties (
 
 ## <a name="parameters"></a>參數
 `dwFields`\
-[in]從旗標的組合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)列舉，決定哪些欄位`ptp`是要填入。
+[在][THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)枚舉中的標誌的組合,用於確定要填充`ptp`的 欄位。
 
 `ptp`\
-[in、 out]A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)執行緒的屬性會填入的結構。
+[進出]用線程的屬性填充的[線程](../../../extensibility/debugger/reference/threadproperties.md)屬性的結構。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
-從這個方法傳回的資訊通常會顯示在**執行緒**偵錯視窗。
+從此方法返回的信息通常顯示在**線程**調試視窗中。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法來簡單`CProgram`實作的物件[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)介面。
+下面的範例展示如何實現[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)介面的簡單`CProgram`物件實現此方法。
 
 ```cpp
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,

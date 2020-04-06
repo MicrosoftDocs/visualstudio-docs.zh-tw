@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetEnclosingClass |Microsoft Docs
+title: IDebugClassField:獲取封閉類 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::GetEnclosingClass method
 ms.assetid: a0c12e3c-9ea0-4dfb-9e45-8cea18725022
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6927a63241e2f2794fb5c70945962e00a1676431
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e5a68e32da370d6881eb2b74cbca157f7b899329
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329504"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734402"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
-取得包含這個類別的類別。
+獲取包含此類的類。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetEnclosingClass(
 
 ## <a name="parameters"></a>參數
 `ppClassField`\
-[out]傳回[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)物件，表示封入類別。 如果沒有封入類別，則傳回 null 值。
+[出]返回表示封閉類的[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)物件。 如果沒有封閉類,則返回 null 值。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回 S_OK;否則，傳回錯誤碼。
+如果成功,返回S_OK;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
-如果類別以表示這[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)物件是巢狀的類別，則`ppClassField`參數會傳回`IDebugClassField`物件，表示封入類別。 例如，假設此類別定義：
+如果此[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)物件表示的類是嵌套類`ppClassField`,則 參數將`IDebugClassField`返回表示封閉 類的物件。 例如,給定此類定義:
 
 ```
 class RootClass {
@@ -55,7 +55,7 @@ class RootClass {
 };
 ```
 
-呼叫`GetEnclosingClass`方法`IDebugClassField`物件，代表`NestedClass`類別會傳回`IDebugClassField`物件，表示類別`RootClass`。
+在表示`GetEnclosingClass``IDebugClassField``NestedClass`類的物件上調用 方法返回`IDebugClassField``RootClass`表示類 的物件。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

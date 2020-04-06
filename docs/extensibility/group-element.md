@@ -1,25 +1,25 @@
 ---
-title: 群組項目 |Microsoft Docs
+title: 群組元素 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
 ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3c1c4bedc5ff44f797e6b46e351dc3753362501
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 26479257511d74f122dd4064330f5b6a1e8dadd3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342360"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711224"
 ---
-# <a name="group-element"></a>群組項目
-定義 VSPackage 的命令群組。
+# <a name="group-element"></a>Group 元素
+定義 VSPackage 命令組。
 
 ## <a name="syntax"></a>語法
 
@@ -36,23 +36,23 @@ ms.locfileid: "66342360"
 
 |屬性|描述|
 |---------------|-----------------|
-|guid|必要項。 GUID/識別碼命令識別碼的 GUID。|
-|id|必要項。 GUID/識別碼的命令識別項的識別碼。|
-|priority|選擇性。 數值，指定的優先權。|
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|guid|必要。 GUID/ID 命令識別碼的 GUID。|
+|id|必要。 GUID/ID 命令識別碼的識別碼。|
+|priority|選擇性。 指定優先權的數值。|
+|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|父代|選擇性。 按鈕的父項目。|
-|註釋|選擇性註解。|
+|父系|選擇性。 按鈕的父元素。|
+|Annotation|可選註釋。|
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|描述|
 |-------------|-----------------|
-|[Groups 元素](../extensibility/groups-element.md)|包含定義 VSPackage 的命令群組的項目。|
+|[群組項目](../extensibility/groups-element.md)|包含定義 VSPackage 的命令組的條目。|
 
 ## <a name="example"></a>範例
 
@@ -63,4 +63,4 @@ ms.locfileid: "66342360"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

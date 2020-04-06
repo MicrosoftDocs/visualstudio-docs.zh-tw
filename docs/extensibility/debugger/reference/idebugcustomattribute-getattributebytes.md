@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeBytes |Microsoft Docs
+title: IDebug自定義屬性::獲取屬性位元組 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetAttributeBytes
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 551261414db9fab97f3e8c2a8fdbe518143d79c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 621ebf3949a273e06053ced67209aa052c25bce0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315188"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732792"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
-取得屬性資訊為 blob (位元組）。
+將屬性資訊作為位元組 Blob 獲取。
 
 ## <a name="syntax"></a>語法
 
@@ -43,18 +43,18 @@ int GetAttributeBytes(
 
 ## <a name="parameters"></a>參數
 `ppBlob`\
-[in、 out]陣列，其中會填入屬性的位元組。
+[進出]使用屬性位元組填充的陣列。
 
 `pdwLen`\
-[in、 out]指定要傳回的位元組數目上限`ppBlob`陣列並傳回實際寫入至陣列的位元組數目。
+[進出]指定要在`ppBlob`陣列中傳回的最大位元,並返回實際寫入陣列的位元組數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。
+ 如果成功,返回S_OK;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 設定`ppBlob`參數為 null 的值，傳回的數字屬性可用位元組。 配置的陣列，然後將陣列中的傳送`ppBlob`參數。
+ 將`ppBlob`參數設定為空值以返回可用屬性位元數。 然後分配一個陣列,並將該陣列傳遞給該`ppBlob`參數。
 
- 屬性代表的原始資料的自訂屬性。
+ 屬性位元表示自定義屬性的原始數據。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

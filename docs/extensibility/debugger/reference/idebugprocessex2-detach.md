@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach | Microsoft Docs
+title: IDebugProcessEx2::Detach |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Detach method
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f016c078fcf19ec244fc4c0682d2caee81a2062
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7379436ae0da57d7f8c47ce8484c810a53a0a453
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311608"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723353"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
-這個方法會通知程序工作階段不會再偵錯程序。
+此方法通知進程會話不再調試進程。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int Detach(
 
 ## <a name="parameters"></a>參數
 `pSession`\
-[in]值，這個值可唯一識別要卸離此程序的工作階段。
+[在]唯一標識會話以從中分離此過程的值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 介面傳入`pSession`是被視為只 cookie，唯一識別工作階段的偵錯管理員原來的值附加至此處理序; 提供的介面上的方法沒有任何功能。
+ 傳入的`pSession`介面將僅被視為 Cookie,該值唯一標識最初附加到此過程的會話調試管理器;提供的介面上沒有任何方法正常工作。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

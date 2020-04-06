@@ -1,5 +1,5 @@
 ---
-title: 變更命令的外觀 |Microsoft Docs
+title: 變更命令的外觀 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,48 +7,48 @@ helpviewer_keywords:
 - menu commands, changing appearance
 - menus, changing command appearance
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 119ce68dca4dfdea44cc7160855733080bc8e9ca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 653f516dda89f4895b8d19d77f7f49bf9c6aa45b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321106"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739858"
 ---
-# <a name="change-the-appearance-of-a-command"></a>變更命令的外觀
-您可以變更命令的外觀，至您的使用者提供意見反應。 比方說，您可能會想看起來不同，無法使用時的命令。 您可以讓命令，可以或無法使用，隱藏或顯示，或核取或取消核取功能表上。
+# <a name="change-the-appearance-of-a-command"></a>變更指令的外觀
+您可以通過更改命令的外觀向使用者提供回饋。 例如,您可能希望命令在不可用時看起來不同。 可以使命令可用或不可用,隱藏或顯示它們,或檢查或取消選中它們。
 
-若要變更命令的外觀，執行下列其中一個動作：
+要變更命令的外觀,可以執行以下操作之一:
 
-- 命令表檔案中的命令定義中指定適當的旗標。
+- 在命令表檔中的指令定義中指定適當的標誌。
 
-- 使用<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>服務。
+- 使用<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>該服務。
 
-- 實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面，並修改原始的命令物件。
+- 實現<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面並修改原始命令物件。
 
-  下列步驟顯示如何尋找和使用 Managed Package Framework (MPF) 來更新命令的外觀。
+  以下步驟演示如何使用託管包框架 (MPF) 查找和更新命令的外觀。
 
-### <a name="to-change-the-appearance-of-a-menu-command"></a>若要變更功能表命令的外觀
+### <a name="to-change-the-appearance-of-a-menu-command"></a>變更選單指令的外觀
 
-1. 請依照下列中的指示[變更功能表命令的文字](../extensibility/changing-the-text-of-a-menu-command.md)建立功能表項目命名為`New Text`。
+1. 按照[更改選單命令的文本](../extensibility/changing-the-text-of-a-menu-command.md)中的說明建立`New Text`名為 的 選單項。
 
-2. 在  *ChangeMenuText.cs*檔案中，新增下列 using 陳述式：
+2. 在*ChangeMenuText.cs*檔案中, 加入以下使用敘述:
 
     ```csharp
     using System.Security.Permissions;
     ```
 
-3. 在  *ChangeMenuTextPackageGuids.cs*檔案中，新增下面這一行：
+3. 在*ChangeMenuTextPackageGuids.cs*檔中,添加以下行:
 
     ```csharp
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     ```
 
-4. 在  *ChangeMenuText.cs*檔案中，ShowMessageBox 方法中的程式碼取代為下列：
+4. 在*ChangeMenuText.cs*檔案中,將 ShowMessageBox 方法中的代碼取代為以下內容:
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -59,7 +59,7 @@ ms.locfileid: "66321106"
     }
     ```
 
-5. 取得您想要從更新命令<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>物件，然後在命令物件上設定適當的屬性。 例如，下列方法可指定的命令從 VSPackage 的命令集可以或無法使用。 下列程式碼所做的功能表項目命名為`New Text`已按下後無法使用。
+5. 取得要從物件更新的命令,<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>然後在命令物件上設定相應的屬性。 例如,以下方法使 VSPackage 命令集中的指定命令可用或不可用。 以下代碼使名為"功能表項"`New Text`的功能表項在單擊後不可用。
 
     ```csharp
     public bool ChangeMyCommand(int cmdID, bool enableCmd)
@@ -78,14 +78,14 @@ ms.locfileid: "66321106"
     }
     ```
 
-6. 建置此專案並開始偵錯。 Visual Studio 的實驗執行個體應該會出現。
+6. 建置此專案並開始偵錯。 應出現視覺工作室的實驗實例。
 
-7. 在 **工具**功能表上，按一下**叫用 ChangeMenuText**命令。 命令名稱是在此時**叫用 ChangeMenuText**，因此不會呼叫命令處理常式**ChangeMyCommand()** 。
+7. 在 **「工具」** 選單上,按下 **「調用更改選單文字」** 命令。 此時,命令名稱是 **「呼叫變更選單文字**」,因此命令處理程式不呼叫**ChangeMyCommand()**。
 
-8. 在 **工具**您現在應該會看到的功能表**新文字**。 按一下 **新的文字**。 此命令應該現在會變成灰色。
+8. 在 **'工具'** 選單上,您現在應該看到 **"新文字**"。 按下 **「新文字**」。 該命令現在應該灰顯。
 
 ## <a name="see-also"></a>另請參閱
-- [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
-- [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)
-- [Visual Studio 命令表 (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [命令、選單和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+- [VS 套件如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [延伸選單與指令](../extensibility/extending-menus-and-commands.md)
+- [視覺化工作室命令表 (.Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

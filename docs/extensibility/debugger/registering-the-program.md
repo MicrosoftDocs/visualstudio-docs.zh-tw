@@ -1,44 +1,44 @@
 ---
-title: 註冊計劃 |Microsoft Docs
+title: 註冊程式 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60bc94efb9d3b2026de31c6018b466d432bf98f8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315963"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713163"
 ---
-# <a name="register-the-program"></a>註冊計劃
-偵錯引擎已取得的連接埠之後，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面後，啟用要偵錯程式的下一個步驟是註冊的連接埠。 註冊之後，程式就會有可供偵錯由下列方式之一：
+# <a name="register-the-program"></a>註冊程式
+調試引擎獲取了由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面表示的埠後,使程序進行調試的下一步是將其註冊到埠。 註冊后,程式可通過以下方式之一進行調試:
 
-- 程序的連結，可取得完整偵錯的控制權，執行中應用程式偵錯工具。
+- 附加過程,它允許調試器獲得正在運行的應用程式的完整調試控制。
 
-- 在 just-in-time (JIT) 偵錯，以便之後事實偵錯的偵錯工具獨立執行的程式。 當執行階段架構會攔截錯誤時，偵錯工具會收到通知之前的作業系統，或執行階段環境釋放的記憶體和資源之錯誤的程式。
+- 即時 (JIT) 除錯,允許對獨立於除錯器運行的程式進行事後調試。 當運行時體系結構捕獲故障時,在操作系統或運行時環境釋放故障程式的記憶體和資源之前通知調試器。
 
-## <a name="registering-procedure"></a>註冊程序
+## <a name="registering-procedure"></a>註冊過程
 
-### <a name="to-register-your-program"></a>若要註冊您的程式
+### <a name="to-register-your-program"></a>註冊您的程式
 
-1. 呼叫[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)藉由將連接埠的方法。
+1. 調用埠實現的[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)方法。
 
-     `IDebugPortNotify2::AddProgramNode` 需要指標[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面。
+     `IDebugPortNotify2::AddProgramNode`需要指向[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面的指標。
 
-     通常，當作業系統或執行階段環境載入程式，它會建立 [程式] 節點。 如果偵錯引擎 (DE) 會要求載入程式，DE 會建立並註冊程式 節點。
+     通常,當作業系統或運行時環境載入程式時,它會創建程式節點。 如果要求調試引擎 (DE) 載入程式,DE 將建立並註冊程式節點。
 
-     下列範例會顯示啟動程式，並註冊與連接埠的偵錯引擎。
+     下面的範例顯示調試引擎啟動程式並將其註冊到埠。
 
     > [!NOTE]
-    > 此程式碼範例不是唯一的方式來啟動，並繼續處理序;此程式碼是主要的註冊計劃與連接埠的範例。
+    > 此代碼示例不是啟動和恢復進程的唯一方法;因此,此過程不是啟動和恢復進程的唯一方法。此代碼主要是將程式註冊到埠的範例。
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.
@@ -106,4 +106,4 @@ ms.locfileid: "66315963"
 
 ## <a name="see-also"></a>另請參閱
 - [取得連接埠](../../extensibility/debugger/getting-a-port.md)
-- [啟用要偵錯程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [開啟對程式進行除錯](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

@@ -1,34 +1,34 @@
 ---
-title: 文件位置 |Microsoft Docs
+title: 文件位置 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fecc50de842f628c54878af5fc91b5aeb3adefa4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 19b88ead19e4578adb7c151a681583120cf2ec17
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345728"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738910"
 ---
 # <a name="document-position"></a>文件位置
-在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯*文件位置*:
+在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]除錯中,*文件位置*:
 
-- 為已知的 ide，請提供抽象的原始程式檔中的位置。 大部分語言的現在，文件位置可以視為的原始程式檔中的位置。
+- 提供源檔中位置的抽象,如 IDE 所知道的。 對於當今的大多數語言,文檔位置可以被視為源檔中的位置。
 
-- 描述偵錯引擎來源文件中的位置。
+- 向調試引擎描述源文件中的位置。
 
-- 由實作[IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)介面。
+- 由[IDebugDocument 定位2](../../extensibility/debugger/reference/idebugdocumentposition2.md)介面實現。
 
 ## <a name="see-also"></a>另請參閱
-- [程式碼內容](../../extensibility/debugger/code-context.md)
+- [代碼內容](../../extensibility/debugger/code-context.md)
 - [文件內容](../../extensibility/debugger/document-context.md)
 - [符號提供者](../../extensibility/debugger/symbol-provider.md)
 - [符號提供者介面](../../extensibility/debugger/reference/symbol-provider-interfaces.md)
-- [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)
+- [除錯器上下文](../../extensibility/debugger/debugger-contexts.md)

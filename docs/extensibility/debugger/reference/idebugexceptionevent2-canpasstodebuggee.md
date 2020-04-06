@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::CanPassToDebuggee |Microsoft Docs
+title: IDebugexception2::坎帕斯托調試點 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::CanPassToDebuggee
 ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c27ac3239fd6621a824f626a141a357241b03b1f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab57f599214cfbd7a1f5fcca15fa104b072d1d48
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310569"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729878"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
-決定偵錯引擎 (DE) 支援將此例外狀況傳遞至正在進行偵錯時繼續執行程式的選項。
+確定除錯引擎 (DE) 是否支援在復原執行時將此異常傳遞給正在除錯的程式的選項。
 
 ## <a name="syntax"></a>語法
 
@@ -38,11 +38,11 @@ int CanPassToDebuggee();
 ```
 
 ## <a name="return-value"></a>傳回值
- 會傳回`S_OK`（例外狀況可以傳遞至程式） 或`S_FALSE`（無法傳遞的例外狀況）。
+ 返回(`S_OK`異常可以傳遞給程式)`S_FALSE`或 (無法傳遞異常)。
 
 ## <a name="remarks"></a>備註
- 裝置必須傳送至偵錯工具的預設動作。 IDE 可能會收到[IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)事件，並呼叫[繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)方法，而不需呼叫`CanPassToDebuggee`方法。 因此，DE 應有上傳遞例外狀況，或不的預設案例。
+ DE 必須具有傳遞給調試器的預設操作。 IDE 可能會接收[IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)事件,並在`CanPassToDebuggee`不調用 該方法的情況下調用["繼續"](../../../extensibility/debugger/reference/idebugprocess3-continue.md)方法。 因此,DE 應具有傳遞異常的默認情況。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
-- [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
+- [繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)

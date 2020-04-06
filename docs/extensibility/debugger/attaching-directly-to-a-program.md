@@ -1,45 +1,45 @@
 ---
-title: 直接附加至程式 |Microsoft Docs
+title: 直接附加到程式 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4bf703544bbe1932608db17addba672bfd91a70
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8a9a5699ee81b8c8ae36bcf492e93467615a9e89
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350902"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739257"
 ---
 # <a name="attach-directly-to-a-program"></a>直接附加到程式
-想要偵錯程式已在通常執行的處理序中的使用者，請遵循此程序：
+希望在已執行的進程中除錯程式的使用者通常遵循此過程:
 
-1. 在 IDE 中，選擇**偵錯的處理程序**命令**工具**功能表。
+1. 在 IDE 中,從 **「工具**」功能表中選擇 **「調試過程」** 命令。
 
-    [處理序]  對話方塊隨即出現。
+    [處理序]**** 對話方塊隨即出現。
 
-2. 選擇處理程序，然後按一下**附加** 按鈕。
+2. 選擇一個進程,然後單擊「**附加」** 按鈕。
 
-    **附加至處理序** 對話方塊隨即顯示，列出電腦上安裝所有偵錯引擎 (DEs)。
+    將顯示 **「附加到行程**」對話框,列出電腦上安裝的所有除錯引擎 (DEs)。
 
-3. 指定用以偵錯選取的處理序，然後按一下 DEs**確定**。
+3. 指定用於調試所選進程的 D,然後按下 **「 確定**」。
 
-   偵錯封裝會啟動偵錯工作階段，並傳遞給它的 DEs 的清單。 接著再將傳遞這份清單，以及選取的處理序中，回呼函式，偵錯工作階段，並詢問該列舉其執行程式的程序。
+   除錯包啟動除錯工作階段並將 D 清單傳遞給它。 除錯工作階段反過來將此清單以及回調函數傳遞到所選進程,然後要求行程枚舉其正在運行的程式。
 
-   以程式設計的方式，以回應使用者要求，偵錯封裝會具現化工作階段的偵錯管理員 (SDM)，並將所選的 DEs 清單傳遞給它。 清單中，以及偵錯封裝傳遞 SDM [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)介面。 偵錯封裝傳遞給選取的處理序的 DEs 清單，藉由呼叫[IDebugProcess2::Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)。 然後呼叫 SDM [IDebugProcess2::EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)列舉處理序中執行的程式在連接埠上。
+   在程式設計上,為了回應使用者請求,調試包實例化作業階段調試管理器 (SDM),並將所選 D 的清單傳遞給它。 與清單一起,調試包傳遞 SDM [IDebugEvent 回調2](../../extensibility/debugger/reference/idebugeventcallback2.md)介面。 除錯包透過除除[IDebugProcess2::附加](../../extensibility/debugger/reference/idebugprocess2-attach.md)將 D 選項清單傳遞給所選進程。 然後,SDM 調用埠上的[IDebugProcess2::enum程式](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)來枚舉進程中運行的程式。
 
-   從這裡開始，每個偵錯引擎會附加至程式完全中所述[在啟動後附加](../../extensibility/debugger/attaching-after-a-launch.md)，有兩個例外狀況。
+   從此時開始,每個調試引擎都附加到一個程式,完全如[啟動后的附加](../../extensibility/debugger/attaching-after-a-launch.md)中詳細一樣,但有兩個例外。
 
-   為了提高效率，實作以 SDM 與共用的位址空間的 DEs 已分組，因此每個裝置都有的程式會將它連接至一組。 在此情況下， [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)呼叫[IDebugEngine2::Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)並將它傳遞的程式附加到陣列。
+   為提高效率,為與 SDM 共用位址空間而實現的 DE 進行了分組,以便每個 DE 都有一組要附加到的程式。 在這種情況下[,IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)調用[IDebugEngine2::附加](../../extensibility/debugger/reference/idebugengine2-attach.md)並傳遞要附加到的程序陣組。
 
-   第二個例外情況是，所附加到已在執行中的程式 DE 傳送啟動事件不通常包含項目點事件。
+   第二個異常是,DE 發送到已運行的程式的啟動事件通常不包括入口點事件。
 
 ## <a name="see-also"></a>另請參閱
-- [在啟動後傳送啟動事件](../../extensibility/debugger/sending-startup-events-after-a-launch.md)
-- [偵錯工作](../../extensibility/debugger/debugging-tasks.md)
+- [啟動後傳送啟動事件](../../extensibility/debugger/sending-startup-events-after-a-launch.md)
+- [除錯工作](../../extensibility/debugger/debugging-tasks.md)

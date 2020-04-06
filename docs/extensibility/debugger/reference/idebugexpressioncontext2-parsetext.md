@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::ParseText | Microsoft Docs
+title: IDebugExpressionContext2::Prse文本 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionContext2::ParseText
 ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 170183924c31933f77903a89851c15c463c326e6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a8494c9c90c4cb6e94115c542a25e12e948f7064
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325904"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729657"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
-剖析文字格式，供稍後評估的運算式。
+在文本表單中分析表達式,以便以後進行計算。
 
 ## <a name="syntax"></a>語法
 
@@ -51,33 +51,33 @@ int ParseText(
 
 ## <a name="parameters"></a>參數
 `pszCode`\
-[in]要剖析的運算式。
+[在]要解析的表達式。
 
 `dwFlags`\
-[in]從旗標的組合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)控制剖析的列舉型別。
+[在]控制解析的[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)枚舉中的標誌的組合。
 
 `nRadix`\
-[in]要用於剖析中的任何數字資訊基數`pszCode`。
+[在]用於分析 中任何數值資訊`pszCode`的半徑。
 
 `ppExpr`\
-[out]傳回[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)物件，表示剖析的運算式，可供繫結和評估。
+[出]返回表示解析表達式的[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)物件,該物件已準備好進行綁定和評估。
 
 `pbstrError`\
-[out]如果運算式包含錯誤，則傳回錯誤訊息。
+[出]如果表達式包含錯誤,則返回錯誤消息。
 
 `pichError`\
-[out]傳回字元的索引中的錯誤`pszCode`如果運算式包含錯誤。
+[出]如果表示式包含錯誤,則返回`pszCode`中的錯誤的字元索引。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
-呼叫這個方法時，偵錯引擎 (DE) 應該剖析運算式，並驗證正確。 `pbstrError`和`pichError`可能填入參數，如果運算式無效。
+呼叫此方法時,調試引擎 (DE) 應分析表達式並驗證其正確性。 如果`pbstrError`運算`pichError`式無效,可以填充 和參數。
 
-請注意，不會評估運算式，只能剖析。 稍後呼叫[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或是[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法會評估已剖析的運算式。
+請注意,表達式不計算,僅解析。 稍後對[評估同步](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或[評估 Async](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法的調用將評估解析的運算式。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法來簡單`CEnvBlock`公開的物件[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)介面。 此範例會考慮要剖析為環境變數的名稱的運算式，並從該變數擷取值。
+下面的範例展示如何為公開[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)`CEnvBlock`介面的簡單物件實現此方法。 本示例將表達式視為環境變數的名稱,並從該變數檢索值。
 
 ```cpp
 HRESULT CEnvBlock::ParseText(

@@ -1,5 +1,5 @@
 ---
-title: DBG_ATTRIB_FLAGS | Microsoft Docs
+title: DBG_ATTRIB_FLAGS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_ATTRIB_FLAGS enumerations
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fde7ac384a6b2de293fc9baf0075438c9c609236
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1c8b3f52eff80c187d3c43b87cea804ace483169
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346289"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737553"
 ---
-# <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
-描述各種屬性，如[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)該[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)介面。 成員[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構。
+# <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
+描述[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)或[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)介面的各種屬性。 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構的成員。
 
 ## <a name="syntax"></a>語法
 
@@ -170,55 +170,55 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  表示沒有屬性。
 
  `DBG_ATTRIB_ALL`\
- 表示所有屬性。
+ 指示所有屬性。
 
  `DBG_ATTRIB_OBJ_IS_EXPANDABLE`\
  表示參考或屬性具有子系。
 
  `DBG_ATTRIB_OBJ_HAS_ID`\
- 表示已建立此物件的識別碼。
+ 指示已創建此物件的 ID。
 
  `DBG_ATTRIB_OBJ_CAN_HAVE_ID`\
- 表示可以建立此物件的識別碼。
+ 指示可以為此物件創建 ID。
 
  `DBG_ATTRIB_VALUE_READONLY`\
  表示值是唯讀值。
 
  `DBG_ATTRIB_VALUE_ERROR`\
- 表示值，會產生錯誤。
+ 指示該值是錯誤。
 
  `DBG_ATTRIB_VALUE_SIDE_EFFECT`\
  表示評估有副作用。
 
  `DBG_ATTRIB_OVERLOADED_CONTAINER`\
- 表示此屬性實際上是多載的容器。
+ 指示此屬性實際上是一個重載的容器。
 
  `DBG_ATTRIB_VALUE_BOOLEAN`\
- 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`是布林值。
+ 指示`DEBUG_PROPERTY_INFO::bstrValue`中的值為布爾。
 
  `DBG_ATTRIB_VALUE_BOOLEAN_TRUE`\
- 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`是布林值和`TRUE`。
+ 指示的`DEBUG_PROPERTY_INFO::bstrValue`值為布林`TRUE`和 。
 
  `DBG_ATTRIB_VALUE_INVALID`\
  表示 `DEBUG_PROPERTY_INFO::bstrValue` 中的值無效。
 
  `DBG_ATTRIB_VALUE_NAT`\
- 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`是 「*不是一個東西*」 (NAT)。 NAT 描述 Intel 64 位元處理器暫存器旗標，指出延後的推測性例外狀況。
+ 指示`DEBUG_PROPERTY_INFO::bstrValue`中 的值是「*不是事物*」(NAT)。 NAT 描述了英特爾 64 位元處理器中的寄存器標誌,指示延遲的推測異常。
 
  `DBG_ATTRIB_VALUE_AUTOEXPANDED`\
- 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`可能已自動展開。
+ 指示`DEBUG_PROPERTY_INFO::bstrValue`中的值可能已自動展開。
 
  `DBG_ATTRIB_VALUE_TIMEOUT`\
- 表示，評估已逾時。
+ 指示評估已超時。
 
  `DBG_ATTRIB_VALUE_RAW_STRING`\
- 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`可以由原始字串。
+ 指示`DEBUG_PROPERTY_INFO::bstrValue`中的值可以由原始字串表示。
 
  `DBG_ATTRIB_VALUE_CUSTOM_VIEWER`\
- 表示此屬性具有至少一個與其相關聯的自訂檢視器。
+ 指示此屬性至少有一個與之關聯的自定義查看器。
 
  `DBG_ATTRIB_ACCESS_NONE`\
- 表示物件沒有`public`， `private`，也不`protected`輸入存取。
+ 指示既沒有`public``private`、`protected`也沒有類型存取的物件。
 
  `DBG_ATTRIB_ACCESS_PUBLIC`\
  表示具有公用存取的物件。
@@ -233,10 +233,10 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  表示具有最終存取的物件。
 
  `DBG_ATTRIB_ACCESS_ALL`\
- 若要擷取的存取屬性的遮罩`DBG_ATTRIB_FLAGS`。
+ 從 中提取訪問屬性`DBG_ATTRIB_FLAGS`的 掩碼。
 
  `DBG_ATTRIB_STORAGE_NONE`\
- 表示沒有指定的儲存體類型。
+ 指示未指定存儲類型。
 
  `DBG_ATTRIB_STORAGE_GLOBAL`\
  表示全域儲存體。
@@ -245,74 +245,74 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  表示靜態儲存體。
 
  `DBG_ATTRIB_STORAGE_REGISTER`\
- 表示在暫存器中的儲存體。
+ 指示寄存器中的存儲。
 
  `DBG_ATTRIB_STORAGE_ALL`\
- 遮罩，以擷取儲存體屬性，從`DBG_ATTRIB_FLAGS`。
+ 從中提取存儲屬性的掩`DBG_ATTRIB_FLAGS`碼。
 
  `DBG_ATTRIB_TYPE_NONE`\
- 表示沒有任何型別修飾詞。
+ 指示沒有類型修改器。
 
  `DBG_ATTRIB_TYPE_VIRTUAL`\
- 表示物件的型別是虛擬。
+ 指示物件的類型為虛擬物件。
 
  `DBG_ATTRIB_TYPE_CONSTANT`\
  表示物件類型是常數。
 
  `DBG_ATTRIB_TYPE_SYNCHRONIZED`\
- 表示物件的型別同步處理。
+ 指示物件的類型是同步的。
 
  `DBG_ATTRIB_TYPE_VOLATILE`\
- 表示物件的型別為 volatile。
+ 指示對象的類型是可變的。
 
  `DBG_ATTRIB_TYPE_ALL`\
- 若要擷取的型別屬性的遮罩`DBG_ATTRIB_FLAGS`。
+ 從 中提取類型屬性的`DBG_ATTRIB_FLAGS`掩碼。
 
  `DBG_ATTRIB_DATA`\
- 此物件表示資料欄位。
+ 指示此對象是數據欄位。
 
  `DBG_ATTRIB_METHOD`\
- 表示這個物件是一種方法。
+ 指示此對像是方法。
 
  `DBG_ATTRIB_PROPERTY`\
- 表示此物件的屬性。
+ 指示此對像是屬性。
 
  `DBG_ATTRIB_CLASS`\
- 表示此物件的類別。
+ 指示此對像是類。
 
  `DBG_ATTRIB_BASECLASS`\
- 表示這個物件是基底類別。
+ 指示此對像是基類。
 
  `DBG_ATTRIB_INTERFACE`\
- 表示這個物件是一種介面。
+ 指示此對像是介面。
 
  `DBG_ATTRIB_INNERCLASS`\
- 表示這個物件是內部的類別。
+ 指示此對像是內部類。
 
  `DBG_ATTRIB_MOSTDERIVED`\
- 表示此物件是 '*最高衍生性*'。 詞彙 」*最高衍生性*"表示的實際類型的物件，而不是其參考的類型。
+ 指示此物件是「*最派生的*」。 術語"*最派生*「是指物件的實際類型,而不是其引用的類型。
 
  `DBG_ATTRIB_CHILD_ALL`\
- 表示遮罩`DBG_ATTRIB_DATA`透過`DBG_ATTRIB_MOSTDERIVED`。
+ 指示`DBG_ATTRIB_DATA`的遮罩`DBG_ATTRIB_MOSTDERIVED`。
 
  `DBG_ATTRIB_MULTI_CUSTOM_VIEWERS`\
- 指出物件具有與它相關聯的多個自訂檢視器。
+ 指示物件有多個與其關聯的自定義查看器。
 
 ## <a name="remarks"></a>備註
 
 > [!NOTE]
-> 適用於 C# 組件中未實際定義這個列舉型別中的值。 相反地，您必須將定義複製到原始程式檔中。
+> 此枚舉中的值實際上未在 C# 的程式集中定義。 相反,必須將定義複製到源檔。
 
- 這些旗標也可用來做為引數傳遞時，篩選的物件，例如，子系[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)。 值可能會結合的位元`OR`。
+ 這些標誌還用於篩選物件的子級,例如,當作為參數傳遞給[Enum 兒童](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)時。 這些值可以稍微結合`OR`。
 
- `DBG_ATTRIB_VALUE_CUSTOM_VIEWER`旗標會指示[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]若要取得[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)從介面[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面及呼叫[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)如需自訂檢視器的清單。
+ 該`DBG_ATTRIB_VALUE_CUSTOM_VIEWER`標誌是[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]從[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面獲取[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面並調用[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)以獲取自訂檢視器清單的指示。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

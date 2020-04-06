@@ -1,29 +1,29 @@
 ---
-title: 關於副檔名 |Microsoft Docs
+title: 關於檔案名副檔名 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - file extensions
 - file name extensions
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60a721581c3deb4588df59974768c634c2e9515f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03e07ec233ef975441a1f10507f0db872051558f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313723"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740354"
 ---
-# <a name="about-file-name-extensions"></a>關於副檔名
-當您註冊 VSPackage 的副檔名時，您將它產生關聯的版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這是重要如果多個版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]安裝在電腦上。
+# <a name="about-file-name-extensions"></a>關於檔案名副檔名
+註冊 VSPackage 的檔副檔名時,將其[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]與的版本 相關聯。 若電腦上安裝了多個版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
 
- 下註冊 Vspackage 的檔案副檔名**HKEY_CLASSES_ROOT**索引鍵相關聯的程式設計識別項 (ProgID) 所指向的預設值。
+ VS包的檔副檔名在**HKEY_CLASSES_ROOT**鍵下註冊,預設值指向關聯的程式設計標識符 (ProgID)。
 
- 下列範例示範的註冊資訊 *.vcproj*副檔名：
+ 下面的範例顯示 *.vcproj*檔副檔名的註冊資訊:
 
 ```
 HKEY_CLASSES_ROOT\
@@ -31,10 +31,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"
 ```
 
- 檔案與相關聯[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]必須有已建立版本的 ProgID，例如`VisualStudio.vcproj.8.0`。 建立版本的 ProgID，可讓維護產品版本之間的檔案副檔名關聯的產品來並行安裝。 版本特定 ProgID 也可讓您使用標準動詞命令，例如開啟、 編輯、 等等，而不用擔心的覆寫或遭到覆寫其他應用程式或新版[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
+ 與 關聯[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的檔案必須具有版本化的 ProgID,`VisualStudio.vcproj.8.0`如 。 版本化 ProgID 允許產品並行安裝,以維護產品版本之間的檔擴展關聯。 特定於版本的 ProgID 還允許您使用標準的無字(如開啟、編輯等),而無需擔心覆蓋或被其他應用程式[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或版本覆蓋 。
 
- 在某些情況下，不應該變更副檔名相關聯的 ProgID。 比方說，如 ProgID *.htm*副檔名 (progid = htmlfile) 位於硬式編碼的幾個地方在作業系統中，而且廣泛已知且使用中關聯 *.htm*並 *.html*檔案。
+ 在某些情況下,不應更改與文件擴展名關聯的 ProgID。 例如 *,.htm*檔副檔名(progid = htmlfile)的 ProgID 在作業系統中的多個位置進行硬編碼,並且與 *.htm*和 *.html*檔關聯廣為人知和使用。
 
 ## <a name="see-also"></a>另請參閱
-- [註冊並排顯示部署的檔案名稱副檔名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
-- [指定檔案名稱副檔名的檔案處理常式](../extensibility/specifying-file-handlers-for-file-name-extensions.md)
+- [註冊並行部署的檔案名副檔名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
+- [為檔案名副檔名指定檔案處理程式](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

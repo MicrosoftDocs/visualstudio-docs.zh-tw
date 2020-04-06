@@ -1,51 +1,51 @@
 ---
-title: 擴充偵錯工具藍圖 |Microsoft Docs
+title: 擴展調試器的路線圖 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], roadmap
 - Debugging SDK, roadmap
 ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89788f97937d05a3ca4858ed35fd854593ce3357
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315896"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713139"
 ---
-# <a name="roadmap-for-extending-the-debugger"></a>擴充偵錯工具的藍圖
-這份文件提供用於擴充的指南和參考資訊[!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)]偵錯工具與[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。
+# <a name="roadmap-for-extending-the-debugger"></a>延伸除錯器的路線圖
+本文檔提供有關 使用擴展調試[!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)]器的指南和參考[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]資訊。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 偵錯文件包含範例、 完整的參考，並示範一般的方式來自訂偵錯工具的幾個代表性案例。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]調試文檔包括範例、全面的參考和幾個具有代表性的方案,這些方案演示了自定義調試器的典型方法。
 
- 您的編譯器和其輸出會決定設定您的產品中的偵錯的必要條件。 如果您的編譯器：
+ 編譯器及其輸出確定在產品中設置調試所需的內容。 如果編譯器:
 
-- 以 Windows 原生作業系統為目標，並將寫入 *。PDB*檔案中，您可以使用偵錯程式原生程式碼的偵錯引擎 (DE)，已整合至[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 您不需要實作 DE 或運算式的評估工具。 運算式評估工具的語法撰寫C++程式設計語言。
+- 以 Windows 本機作業系統為目標並寫入 *。PDB*檔案,您可以使用整合到的本機代碼除錯引擎 (DE)[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]除錯程式 。 不需要實現 DE 或表達式賦值器。 表達式賦值器是為C++程式設計語言的語法而編寫的。
 
-- 產生的 Microsoft intermediate language (MSIL) 的輸出，您可以使用 managed 程式碼的偵錯引擎 DE，這也會整合到偵錯程式[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 因此，您只需要實作的運算式評估工具。 為您提供的範例運算式評估工具。 如需詳細資訊，請參閱下列主題：
+- 生成 Microsoft 中間語言 (MSIL) 輸出,您可以使用託管代碼調試引擎 DE 調[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]試程式,該引擎也集成到中。 因此,您只需要實現表達式賦值器。 為您提供一個範例表達式賦值器。 如需詳細資訊，請參閱下列主題：
 
-   [運算式評估](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
+   [運算運算](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
    [評估運算式](../../extensibility/debugger/evaluating-expressions.md)
 
-   [運算式評估內容](../../extensibility/debugger/expression-evaluation-context.md)
+   [運算式運算內容](../../extensibility/debugger/expression-evaluation-context.md)
 
-   [在中斷模式中的運算式評估](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
+   [中斷模式下的運算](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
 
-   [撰寫 common language runtime 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+   [編寫通用語言執行時表示式賦值器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 
-- 作業系統或某些其他執行階段環境的專屬的目標，您需要撰寫您自己的裝置。 建立簡單的規定，使用 ATL COM 的教學課程會提供。 如需詳細資訊，請參閱下列主題：
+- 以專有作業系統或其他運行時環境為目標,您需要編寫自己的 DE。 提供了一個教程,用於使用 ATL COM 創建簡單的 DE。 如需詳細資訊，請參閱下列主題：
 
-   [建立自訂的偵錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+   [建立自訂除錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [教學課程：建置使用 ATL COM 偵錯引擎](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [教學:使用 ATL COM 建構除錯引擎](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
 
-   [實作連接埠提供者](../../extensibility/debugger/implementing-a-port-supplier.md)
+   [實施埠供應商](../../extensibility/debugger/implementing-a-port-supplier.md)
 
    [範例](../../extensibility/debugger/visual-studio-debugging-samples.md)
 

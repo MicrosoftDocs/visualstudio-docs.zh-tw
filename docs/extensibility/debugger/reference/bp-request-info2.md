@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO2 | Microsoft Docs
+title: BP_REQUEST_INFO2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_REQUEST_INFO2 structure
 ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f9c601cf1620d002bd86b8bc110d28bdb533e61
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 04d1db2ca8176678d8a72a84ede2bddcbfa2f152
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352953"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737875"
 ---
-# <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
-包含實作中斷點的行，包括廠商 GUID、 條件約束和追蹤點所需的資訊。
+# <a name="bp_request_info2"></a>BP_REQUEST_INFO2
+包含實現斷點所需的資訊,包括供應商 GUID、約束和追蹤點。
 
 ## <a name="syntax"></a>語法
 
@@ -65,56 +65,56 @@ public struct BP_REQUEST_INFO2 {
 
 ## <a name="members"></a>成員
 `dwFields`\
-從旗標的組合[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉，指定哪些欄位都已填寫。
+[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)枚舉中的標誌的組合,用於指定填寫哪些欄位。
 
 `guidLanguage`\
 語言 GUID。
 
 `bpLocation`\
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構，指定之中斷點位置的類型。
+指定斷點位置類型的[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構。
 
 `pProgram`\
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示中斷點發生的應用程式。
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件,表示發生斷點的應用程式。
 
 `bstrProgramName`\
-中斷點會發生在應用程式的名稱。
+發生斷點的應用程式的名稱。
 
 `pThread`\
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示中斷點發生的執行緒。
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件,表示發生斷點的線程。
 
 `bstrThreadName`\
-中斷點會發生執行緒的名稱。
+發生斷點線程的名稱。
 
 `bpCondition`\
-[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構，描述在其下會引發中斷點的條件。
+描述斷點觸發條件[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構。
 
 `bpPassCount`\
-[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構，其中包含中斷點的傳遞計數資訊。
+包含斷點通過計數資訊的[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構。
 
 `dwFlags`\
-從旗標的組合[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)指定要求之中斷點的旗標的列舉型別。
+BP_FLAGS[枚舉](../../../extensibility/debugger/reference/bp-flags.md)中的標誌的組合,用於指定請求的斷點的標誌。
 
 `guidVendor`\
-供應商的 GUID。 可能是 null 值。
+供應商的 GUID。 可能是空值。
 
 `bstrConstraint`\
-中斷點條件約束的名稱。 可能是 null 值。
+斷點約束的名稱。 可能是空值。
 
 `bstrTracepoint`\
-追蹤點的名稱。 可能是 null 值。
+跟蹤點的名稱。 可能是空值。
 
 ## <a name="remarks"></a>備註
-此結構由[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)方法。
+此結構由[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)方法返回。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

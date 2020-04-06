@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetNewObjectForVisualizer |Microsoft Docs
+title: IEE視覺化資料提供程式:取得新物件可視化器 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::GetNewObjectForVisualizer method
 ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 322e18132050bca6803dac04a5cfbe3fd92f3106
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c478ca3fc913f5ab79f37a957b05ff1d665f8aa5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335591"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718109"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
-這個方法會取得新物件的視覺化檢視。 這個方法一律會建立新的物件，從現有的物件。
+此方法為可視化工具獲取一個新物件。 此方法將始終從現有物件創建新物件。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetNewObjectForVisualizer(
 
 ## <a name="parameters"></a>參數
 `ppObject`\
-[out]新的物件。
+[出]新物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- `This method` 重新評估的物件，目前是代表，然後傳回結果做為新的物件。 評估的結果，將會更新現有的物件。
+ `This method`重新評估它當前表示的物件,並將結果作為新物件返回。 現有物件將作為評估結果進行更新。
 
 ## <a name="see-also"></a>另請參閱
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

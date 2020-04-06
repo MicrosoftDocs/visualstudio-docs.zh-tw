@@ -1,24 +1,24 @@
 ---
-title: IDebugPortSupplierEx2 | Microsoft Docs
+title: IDebugPort供應商Ex2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierEx2 interface
 ms.assetid: dae0050a-a50a-4f35-bfbd-e538f537b20f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bebf232e17df54d4dae2392a40f2ccbc3fc711c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 26387618b320ed56ce754e64698fbb1c4223f2f6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353309"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724319"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
-可讓您選取的工作並與其互動的核心伺服器連接埠提供者。
+支援埠供應商選擇核心伺服器並與之交互。
 
 ## <a name="syntax"></a>語法
 
@@ -26,22 +26,22 @@ ms.locfileid: "66353309"
 IDebugPortSupplierEx2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 自訂的連接埠提供者會實作這個介面，讓它可以選取要使用的核心伺服器。
+## <a name="notes-for-implementers"></a>實施者說明
+ 自定義埠供應商實現此介面,以便可以選擇要使用的核心伺服器。
 
 ## <a name="methods"></a>方法
- 下表顯示的方法**IDebugPortSupplierEx2**。
+ 下表顯示了**IDebugPort供應商Ex2**的方法。
 
 |方法|描述|
 |------------|-----------------|
-|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|設定核心伺服器連接埠提供者。|
+|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|設置埠供應商的核心伺服器。|
 
 ## <a name="requirements"></a>需求
- 標頭：Portpriv.h
+ 標題: 波特普里夫.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

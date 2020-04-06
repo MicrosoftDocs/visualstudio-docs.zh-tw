@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointBoundEvent2::EnumBoundBreakpoints | Microsoft Docs
+title: IDebug 突破點綁定事件2::枚舉綁定斷點 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 ms.assetid: 1f588feb-522e-488d-be92-7bc19b9e3688
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2584e49209dd95c3d43673eadf72e138ac828f57
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2f208c52bd45953aaad9efab9b6b65b15b3b759c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314392"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735353"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
-建立繫結此事件的中斷點的列舉值。
+創建在此事件中綁定的斷點枚舉器。
 
 ## <a name="syntax"></a>語法
 
@@ -41,16 +41,16 @@ int EnumBoundBreakpoints( 
 
 ## <a name="parameters"></a>參數
 `ppEnum`\
-[out]傳回[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)列舉所有中斷點的物件繫結從這個事件。
+[出]返回[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)物件,該物件枚舉此事件綁定的所有斷點。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果不有任何繫結的中斷點; 否則傳回錯誤碼。
+如果成功，則傳回 `S_OK`。 如果沒有`S_FALSE`綁定斷點,則返回;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
-繫結中斷點的清單會為這些繫結至這個事件，而且可能不到的中斷點暫止中斷點的資料繫結的完整清單。 若要取得所有繫結至暫止中斷點的中斷點的清單，請呼叫[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)方法來取得相關聯[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)物件，並接著呼叫[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)方法來取得[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)物件，其中包含所有繫結的中斷點暫止中斷點。
+綁定斷點清單適用於綁定到此事件的斷點,可能不是從掛起斷點綁定的斷點的完整清單。 要獲取綁定到掛起斷點的所有斷點的清單,請調用[GetpendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)方法獲取關聯的[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)物件,然後調用[EnumBoundBreakpoint 點](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)方法獲取[IEnumDebugBoundBreakpoint2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)物件,該物件包含掛起斷點的所有綁定斷點。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法，如**CBreakpointSetDebugEventBase**公開 （expose） 的物件[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)介面。
+下面的示例演示如何為公開[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)介面的**CBreakpointSetDebugEventBase**對象實現此方法。
 
 ```cpp
 STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::AddPort | Microsoft Docs
+title: IDebugPort供應商2::添加埠 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::AddPort
 ms.assetid: df491161-6bf3-4fcc-b478-b9ec88ec995f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 245c14e2aaa6867f964a2beec7bcbc232b5800be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 00954ceaa0ddd750a3d08e372d1edaa1905f01c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340269"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724731"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
-新增連接埠。
+添加埠。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int AddPort( 
 
 ## <a name="parameters"></a>參數
 `pRequest`\
-[in][IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)物件，描述要加入的連接埠。
+[在]描述要添加的埠的[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)物件。
 
 `ppPort`\
-[out]傳回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，表示連接埠。
+[出]返回表示埠的[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 這個方法實際上會建立要求的通訊埠，以及將它新增至作用中的連接埠的連接埠提供者的內部清單。 [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)可以先呼叫方法，以避免可能耗費時間的延遲。
+ 此方法實際上創建請求的埠,並將其添加到埠供應商的活動埠的內部清單中。 可以首先調用[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)方法,以避免可能耗時的延遲。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetMetaDataImport | Microsoft Docs
+title: IDebugSymbol 提供者直接::獲取MetaData導入 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetMetaDataImport
 - IDebugSymbolProviderDirect::GetMetaDataImport
 ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a2cd79581487e7e407cc409c4b8496abc53bfa7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 475ffab931445718d27ae6e1fe1242f6a5a76512
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347295"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718973"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
-擷取中繼資料匯入資訊。
+檢索元數據導入資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -44,16 +44,16 @@ int GetMetaDataImport (
 
 ## <a name="parameters"></a>參數
 `guid`\
-[in]模組的唯一識別碼。
+[在]模組的唯一標識碼。
 
 `appID`\
-[in]應用程式定義域的識別項。
+[在]應用程式域的標識碼。
 
 `ppImport`\
-[out]傳回物件，包含中繼資料匯入資訊。
+[出]返回包含元數據導入資訊的物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

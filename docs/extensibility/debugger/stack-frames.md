@@ -1,5 +1,5 @@
 ---
-title: 堆疊框架 |Microsoft Docs
+title: 堆疊幀 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,31 +7,31 @@ helpviewer_keywords:
 - debugging [Debugging SDK], stack frames
 - stack frames
 ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de3a0267d366f926fa5705c7455b237cafe4820a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1ea79ad199e20afeb5d2bf1ca6a3cf881c6d51c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348501"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712848"
 ---
-# <a name="stack-frames"></a>堆疊框架
-在偵錯工具架構中，*堆疊框架*:
+# <a name="stack-frames"></a>堆疊幀
+在除錯器結構中,*堆疊*
 
-- 是抽象的提供執行緒的執行內容堆疊。 執行緒永遠是在函式內執行。 堆疊框架會保留它的函式和引數的本機變數。 若要使用 Visual Studio 進行偵錯，語言或正在進行偵錯的環境必須支援堆疊框架。
+- 是提供線程執行上下文的堆疊的抽象。 線程始終在函數中執行。 堆疊幀保存函數的局部變數及其參數。 為了使用 Visual Studio 進行調試,正在調試的語言或環境必須支援堆疊幀。
 
-- 可以同時識別並描述自己，並可傳回相關聯的執行緒。 代表目前指令指標和相關聯的文件的程式碼內容和運算式評估內容，也可以傳回堆疊框架。
+- 可以標識和描述自身,也可以返回關聯的線程。 堆疊幀還可以返回表示當前指令指標以及關聯的文檔和表達式計算上下文的代碼上下文。
 
-- 具有的屬性名稱、 類型和值的本機變數和引數，也是如此，和哪些要顯示在各種不同的 IDE 偵錯視窗。
+- 具有描述局部變數和參數的名稱、類型和值的屬性,這些屬性將顯示在各種 IDE 調試視窗中。
 
-- 由[IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)通常所偵錯引擎 (DE) 或由於執行執行緒的虛擬機器建立的介面。
+- 由[IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)介面表示,該介面通常由調試引擎 (DE) 或虛擬機器創建,作為執行線程的結果。
 
 ## <a name="see-also"></a>另請參閱
-- [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)
-- [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)
+- [除錯器上下文](../../extensibility/debugger/debugger-contexts.md)
+- [除錯器概念](../../extensibility/debugger/debugger-concepts.md)
 - [偵錯引擎](../../extensibility/debugger/debug-engine.md)
 - [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)

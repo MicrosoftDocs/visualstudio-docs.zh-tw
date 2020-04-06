@@ -1,5 +1,5 @@
 ---
-title: 評估監看式視窗運算式 |Microsoft Docs
+title: 監控監視視窗運算式 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,53 +7,53 @@ helpviewer_keywords:
 - Watch window, expressions
 - expression evaluation, Watch window expressions
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fe575cf0db9f6f1c2dd15da96d3d0a17648aee4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9cef2f27eec095ee7b136153ecb764feba9effbb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315510"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738847"
 ---
-# <a name="evaluate-a-watch-window-expression"></a>評估監看式視窗運算式
+# <a name="evaluate-a-watch-window-expression"></a>監控監視視窗運算式
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 當執行作業會暫停時，Visual Studio 會呼叫偵錯引擎 (DE)，以判斷其監看清單中的每個運算式的目前值。 DE 評估使用的運算式評估工具 (EE)，每個運算式，並在 Visual Studio 會顯示在其值**監看式**視窗。
+ 當執行暫停時,Visual Studio 調用調試引擎 (DE) 以確定其監視清單中每個表達式的當前值。 DE 使用運算式賦值器 (EE) 計算每個運算式,Visual Studio 在 **「監視」** 視窗中顯示其值。
 
- 以下是監看清單運算式的評估方式的概觀：
+ 以下是如何計算觀察清單表示式的概述:
 
-1. Visual Studio 會呼叫 DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)以取得可用來評估運算式的運算式內容。
+1. Visual Studio 調用 DE 的[GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)來取得可用於計算運算式運算式運算式運算式相片。
 
-2. Visual Studio 會呼叫每個監看清單中，運算式[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)剖析的運算式中轉換的運算式文字。
+2. 對於監視清單中的每個運算式,Visual Studio 呼叫[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)將表示式文本轉換為已解析的運算式。
 
-3. `IDebugExpressionContext2::ParseText` 呼叫[剖析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)要剖析的文字和產生的實際工作[IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)物件。
+3. `IDebugExpressionContext2::ParseText`呼叫[Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)執行分析文字的實際工作並生成[IDebugParsed 運算](../../extensibility/debugger/reference/idebugparsedexpression.md)式物件。
 
-4. `IDebugExpressionContext2::ParseText` 會建立[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)物件，並將`IDebugParsedExpression`到其中的物件。 這個我`DebugExpression2`Visual studio，然後傳回物件。
+4. `IDebugExpressionContext2::ParseText`創建[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)`IDebugParsedExpression`物件並將 物件放入其中。 然後,`DebugExpression2`此 I 物件將返回到視覺工作室。
 
-5. Visual Studio 呼叫[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)評估已剖析的運算式。
+5. 可視化工作室調用[評估同步](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)來評估解析的運算式。
 
-6. `IDebugExpression2::EvaluateSync` 傳遞至呼叫[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)來執行實際的評估，並產生[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)會傳回到 Visual Studio 的物件。
+6. `IDebugExpression2::EvaluateSync`將調用傳遞到[評估同步](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)以執行實際評估,並生成返回到 Visual Studio 的[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)物件。
 
-7. Visual Studio 呼叫[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)取得運算式，即會顯示在 監看清單的值。
+7. Visual Studio 調用[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)以獲取表達式的值,然後顯示在監視清單中。
 
-## <a name="parse-then-evaluate"></a>剖析，則評估
- 因為剖析複雜的運算式可能遠超過它評估，評估運算式的程序會分成兩個步驟：1) 剖析的運算式和 2） 評估剖析的運算式。 如此一來，評估可能會發生許多次，但必須一次進行剖析的運算式。 中繼剖析的運算式會傳回從中 EE [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)物件，接著封裝並傳回做為 DE [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)物件。 `IDebugExpression`物件會延後所有評估`IDebugParsedExpression`物件。
+## <a name="parse-then-evaluate"></a>分析然後評估
+ 由於分析複雜表達式可能比計算它需要更長的時間,因此計算表達式的過程分為兩個步驟:1 解析表達式,2) 計算解析表達式。 這樣,計算可以發生多次,但表達式只需要分析一次。 中間解析表示式從[IDebugParsedExpression 運算式](../../extensibility/debugger/reference/idebugparsedexpression.md)物件的 EE 傳回,該物件依次封裝並從 DE 作為[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)物件返回。 物件`IDebugExpression`會將所有計算延遲`IDebugParsedExpression`到 物件。
 
 > [!NOTE]
-> 您不需要遵循此兩步驟程序，即使 Visual Studio 就會認為這方面 EEEE 可以剖析和評估相同的步驟時[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)呼叫 （這是 MyCEE 範例運作方式，例如）。 如果您的語言可以構成複雜的運算式，您可能想要剖析步驟分開評估步驟。 許多監看運算式時，這可以增加效能，在 Visual Studio 偵錯工具會顯示。
+> 即使 Visual Studio 假定這一點,EE 也不必遵守此兩步過程;調用[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)時,EE 可以在同一步驟中分析和評估(例如,MyCEE 示例的工作原理)。 如果語言可以形成複雜的表達式,則可能需要將解析步驟與計算步驟分開。 當顯示許多監視運算式時,這可以提高 Visual Studio 調試器的性能。
 
 ## <a name="in-this-section"></a>本節內容
- [運算式評估的範例實作](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)使用 MyCEE 範例來逐步完成運算式評估的程序。
+ [運算式樣本實作](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)使用 MyCEE 範例逐步完成表達式評估過程。
 
- [評估監看式運算式](../../extensibility/debugger/evaluating-a-watch-expression.md)說明成功的運算式剖析之後發生的情況。
+ [監控監視運算式](../../extensibility/debugger/evaluating-a-watch-expression.md)解釋成功解析表達式后發生的情況。
 
 ## <a name="related-sections"></a>相關章節
- [評估內容](../../extensibility/debugger/evaluation-context.md)提供偵錯引擎 (DE) 呼叫，運算式評估工具 (EE) 時所傳遞的引數。
+ [評估上下文](../../extensibility/debugger/evaluation-context.md)提供調試引擎 (DE) 調用表示式賦值器 (EE) 時傳遞的參數。
 
 ## <a name="see-also"></a>另請參閱
- [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+ [編寫 CLR 表示式賦值器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

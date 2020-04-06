@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugBoundBreakpoints2::Skip | Microsoft Docs
+title: IEnumDebug綁定斷點2::跳過 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugBoundBreakpoints2::Skip
 ms.assetid: 95659709-6d7c-44ca-b598-629eb688429f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce9c27cfe99679f8e435923eeef49fbadb2b36c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 29d96686559218fcdfafda966b708841e1b0fbab
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336955"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717464"
 ---
 # <a name="ienumdebugboundbreakpoints2skip"></a>IEnumDebugBoundBreakpoints2::Skip
-略過指定的元素數目。
+跳過指定數量的元素。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int Skip(
 
 ## <a name="parameters"></a>參數
 `celt`\
-[in]略過的項目數目。
+[在]要跳過的元素數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 會傳回`S_FALSE`如果`celt`大於其餘項目數目，否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 如果`S_FALSE``celt`大於剩餘元素數,則返回;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 如果`celt`指定的值大於其餘的項目，列舉型別設定為結束和`S_FALSE`會傳回。
+ 如果`celt`指定大於剩餘元素數的值,則枚舉將設置為末尾`S_FALSE`並返回。
 
 ## <a name="see-also"></a>另請參閱
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

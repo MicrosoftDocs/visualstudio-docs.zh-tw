@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer |Microsoft Docs
+title: IDebug自定義檢視器 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer interface
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46561bbab71b12d924edec96650736c8b1576894
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c44d2289180ece35725b9258e9d20abeb3a4cac3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328023"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732426"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
-此介面可讓運算式評估工具 (EE) 中是必要的任何格式顯示屬性的值。
+此介面使運算式賦值器 (EE) 能夠以任何必要的格式顯示屬性的值。
 
 ## <a name="syntax"></a>語法
 
@@ -28,37 +28,37 @@ ms.locfileid: "66328023"
 IDebugCustomViewer : IUknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
-EE 會實作這個介面可自訂的格式顯示屬性的值。
+## <a name="notes-for-implementers"></a>實施者說明
+EE 實現此介面以自訂格式顯示屬性的值。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
-COM 的呼叫`CoCreateInstance`函式具現化這個介面。 `CLSID`傳遞至`CoCreateInstance`取自登錄。 呼叫[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)取得登錄中的位置。 如需詳細資訊，以及範例，請參閱 < 備註 >。
+## <a name="notes-for-callers"></a>通話備註
+對 COM 函`CoCreateInstance`數的調用會實例化此介面。 傳遞給`CLSID``CoCreateInstance`的是從註冊表獲取的。 對[GetCustomViewerList 的](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)調用獲取註冊表中的位置。 有關詳細資訊,請參閱備註以及示例。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-這個介面會實作下列方法：
+此介面實現以下方法:
 
 |方法|描述|
 |------------|-----------------|
-|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|沒有所能顯示指定的值。|
+|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|執行顯示給定值所需的一切。|
 
 ## <a name="remarks"></a>備註
-無法顯示屬性的值，以正常方式時，會使用這個介面 — 例如，使用資料表或另一種複雜屬性類型。 自訂檢視器，表示由`IDebugCustomViewer`介面中，不同於類型視覺化檢視，也就是外部程式，可顯示 EE 不論特定類型的資料。 EE 實作該 EE 專屬自訂檢視器。 使用者選取哪種類型的視覺化檢視來使用，類型視覺化檢視或自訂的檢視器。 請參閱[視覺化及檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)如需此程序的詳細資訊。
+當屬性的值不能通過正常方式(例如,使用數據表或其他複雜屬性類型)顯示時,使用此介面。 自定義查看器(由`IDebugCustomViewer`介面表示)與類型可視化器不同,後者是顯示特定類型數據的外部程式,而不考慮 EE。 EE 實現特定於該 EE 的自訂檢視器。 用戶選擇要使用的可視化工具類型,無論是類型可視化工具還是自定義查看器。 有關此過程的詳細資訊[,請參閱可視化和查看資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)。
 
-自訂檢視器中 EE 的相同方式來註冊，並因此需要語言 GUID 和廠商的 GUID。 確切的計量 （或登錄項目名稱） 只有知道 EE。 此標準會傳入[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)結構，也就由呼叫[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)。 儲存在計量的值是`CLSID`傳遞至 COM 的`CoCreateInstance`函式 （請參閱範例）。
+自訂檢視器的註冊方式與 EE 相同,因此需要語言 GUID 和供應商 GUID。 只有 EE 知道確切的指標(或註冊表條目名稱)。 此指標在[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)結構中返回,而該結構又通過調用[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)返回。 指標中儲存的值是`CLSID`傳遞給 COM 函`CoCreateInstance`數的值 (請參閱範例)。
 
-[SDK 協助程式進行偵錯](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)函式， `SetEEMetric`，可用來註冊自訂的檢視器。 請參閱 「 運算式評估工具 」 登錄的`Debugging SDK Helpers`自訂檢視器所需要的特定登錄機碼。 請注意，自訂檢視器必須只有一個計量 （這由 EE 的實作者所定義），而運算式評估工具需要使用數個預先定義的度量。
+[用於調試](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)`SetEEMetric`功能的 SDK 幫助器 可用於註冊自訂檢視器。 有關自定義查看器所需的特定註冊表項,請參閱`Debugging SDK Helpers`的「表達式評估器」註冊表部分。 請注意,自定義查看器只需要一個指標(由 EE 的實現者定義),而表達式賦值器需要多個預定義的指標。
 
-一般來說，自訂檢視器提供唯讀資料的檢視，因為[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面提供給[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)沒有變更以外的屬性的值，做為字串的方法。 為了支援變更任意資料區塊，EE 會實作自訂介面實作的相同物件上`IDebugProperty3`介面。 這個自訂的介面會接著提供變更的任意資料區塊所需的方法。
+通常,自定義查看器提供數據的唯讀檢視,因為提供給[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)的[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面除了作為字串外,沒有任何方法來更改屬性的值。 為了支援更改任意資料塊,EE 在`IDebugProperty3`實現 介面的同一對象上實現了自定義介面。 然後,此自定義介面將提供更改任意數據塊所需的方法。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="example"></a>範例
-此範例示範如何從屬性取得的第一個自訂檢視器，如果該屬性的任何自訂檢視器。
+此示例演示如何從屬性獲取第一個自定義查看器(如果該屬性具有任何自定義查看器)。
 
 ```cpp
 IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)

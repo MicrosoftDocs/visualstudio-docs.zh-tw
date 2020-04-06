@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramDestroyEvent2 | Microsoft Docs
+title: IDebug程序銷毀事件2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramDestroyEvent2
 ms.assetid: ddf127ca-c4a5-4071-90ca-68faf2f57dbd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd9f7b97dc7479b90801ebcd07966a0058fa6476
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dc83e15372a15cefccc47ea60db5ba451546ecba
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343533"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722586"
 ---
 # <a name="idebugprogramdestroyevent2"></a>IDebugProgramDestroyEvent2
-這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 當程式執行到完成。
+當程式運行到完成時,除錯引擎 (DE) 將此介面發送到工作階段調試管理員 (SDM)。
 
 ## <a name="syntax"></a>語法
 
@@ -28,25 +28,25 @@ ms.locfileid: "66343533"
 IDebugProgramDestroyEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- DE 或自訂的連接埠提供者會實作這個介面來報告程式已終止，且不再可供偵錯。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](/cpp/atl/queryinterface)若要存取`IDebugEvent2`介面。
+## <a name="notes-for-implementers"></a>實施者說明
+ DE 或自定義埠供應商實現此介面以報告程式已終止且不再可用於調試。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與此介面相同的對象上實現。 SDM 使用[查詢介面](/cpp/atl/queryinterface)訪問`IDebugEvent2`介面。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- DE 或自訂的連接埠提供者會建立並傳送這個事件来報告的物件終止程式。 DE 使用傳送這個事件[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)它附加到正在偵錯程式時，會將 SDM 所提供的回呼函式。 此事件使用自訂的連接埠提供者將傳送[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)介面。
+## <a name="notes-for-callers"></a>通話備註
+ DE 或自定義埠供應商創建併發送此事件物件以報告程序的終止。 DE 使用 SDM 在連接到正在除錯的程式時提供的[IDebugEvent 回檔2](../../../extensibility/debugger/reference/idebugeventcallback2.md)回檔函數發送此事件。 自定義埠供應商使用[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)介面發送此事件。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IDebugProgramDestroyEvent2`。
 
 |方法|描述|
 |------------|-----------------|
-|[GetExitCode](../../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md)|取得程式的結束代碼。|
+|[GetExitCode](../../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md)|獲取程式的退出代碼。|
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::GetCustomAttributeByName | Microsoft Docs
+title: IDebug自定義屬性查詢2::獲取按名稱獲取自定義屬性 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::GetCustomAttributeByName
 ms.assetid: 7428dfeb-8929-41b2-9b99-cb343a86c02d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d874a00c3c82108c224f18922f2b4853279beaa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 47471f2743e705b06fb9a1bda6752b24a7836d1b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322207"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732557"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
-取得指定欄位名稱的自訂屬性的自訂屬性位元組。
+獲取給定自定義屬性名稱的自定義屬性位元組。
 
 ## <a name="syntax"></a>語法
 
@@ -45,23 +45,23 @@ int GetCustomAttributeByName(
 
 ## <a name="parameters"></a>參數
 `pszCustomAttributeName`\
-[in]字串，包含要尋找的自訂屬性的名稱。
+[在]包含要尋找的自訂屬性的名稱的字串。
 
 `ppBlob`\
-[in、 out]陣列，其中會填入自訂屬性的位元組。
+[進出]使用自定義屬性位元組填充的陣列。
 
 `pdwLen`\
-[in、 out]指定要傳回的位元組數目上限`ppBlob`陣列並傳回實際寫入至陣列的位元組數目。
+[進出]指定要在`ppBlob`陣列中傳回的最大位元,並返回實際寫入陣列的位元組數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK，或如果沒有自訂屬性，則傳回 S_FALSE。 否則會傳回錯誤碼。
+ 如果成功,則返回S_OK或返回S_FALSE自定義屬性不存在。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 設定`ppBlob`參數為 null 的值，傳回的數字屬性可用位元組。 配置的陣列，然後將陣列中的傳送`ppBlob`參數。
+ 將`ppBlob`參數設定為空值以返回可用屬性位元數。 然後分配一個陣列,並將該陣列傳遞給該`ppBlob`參數。
 
- 屬性代表的原始資料的自訂屬性。
+ 屬性位元表示自定義屬性的原始數據。
 
- 如果`ppBlob`和`pdwLen`參數設定為 null 的值，這個方法可用來判斷是否只存在於自訂屬性。 簡單的替代方法，不過，是呼叫[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)方法。
+ 如果`ppBlob``pdwLen`和 參數設定為 null 值,則此方法可用於確定自訂屬性是否僅存在。 但是,一個更簡單的替代方法是調用[IsCustom屬性定義](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

@@ -1,5 +1,5 @@
 ---
-title: UNMANAGED_ADDRESS_PHYSICAL | Microsoft Docs
+title: UNMANAGED_ADDRESS_PHYSICAL |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_PHYSICAL structure
 ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93f6d1094a490041cd04a47fa073d2e75b8d2e23
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9070fcfbf79fb96ecff87a793c221f3e7a65c2ae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316113"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713280"
 ---
-# <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
-此結構表示的實體位址。
+# <a name="unmanaged_address_physical"></a>UNMANAGED_ADDRESS_PHYSICAL
+此結構表示物理位址。
 
 ## <a name="syntax"></a>語法
 
@@ -41,18 +41,18 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
 
 ## <a name="members"></a>成員
  `offset`\
- 實體的位址空間，以 64 位元位移。
+ 64 位元偏移到物理地址空間中。
 
 ## <a name="remarks"></a>備註
- 此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_UNMANAGED_PHYSICAL`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。
+ 當`DEBUG_ADDRESS_UNION``ADDRESS_KIND_UNMANAGED_PHYSICAL`結構欄位設置為[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)舉中的值)`dwKind`時, 此結構是DEBUG_ADDRESS_UNION結構中的聯合的一部分。
 
 ## <a name="requirements"></a>需求
- 標頭： sh.h
+ 標題: sh.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

@@ -1,25 +1,25 @@
 ---
-title: BuildProjectOnload 元素 （Visual Studio 範本） |Microsoft Docs
+title: 生成專案載入元素(可視化工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9a9d4536c9ae7205a98ef0c79906ccbb002b5f7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321237"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739965"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 元素 （Visual Studio 範本）
-當您建立並將它們新增至方案，請建立新的專案。 不會建置整個方案。
+# <a name="buildprojectonload-element-visual-studio-templates"></a>產生專案載入元素(視覺化工作室範本)
+僅在創建新專案時生成新專案,並將這些專案添加到解決方案中。 整個解決方案不是構建的。
 
-項目階層架構：
+元素層次結構:
 
 ```xml
 <VSTemplate>
@@ -46,18 +46,18 @@ ms.locfileid: "66321237"
 
 |元素|描述|
 |-------------|-----------------|
-|`TemplateData`|將範本分類，並定義出現在兩者的方式**新的專案**並**加入新項目**對話方塊。|
+|`TemplateData`|對樣本進行分類,並定義範本在 **「新專案**」和「**新增新項目**」對話框中的顯示方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 文字必須是`true`或`false`，指出要從範本建立時建置新的專案。
+ 文本必須或`true``false`指示是否僅在從範本創建新專案時生成該專案。
 
 ## <a name="remarks"></a>備註
- `BuildProjectOnLoad` 是選擇性項目。 預設值為 `false`。
+  是選擇性元素。 預設值是 `false`。
 
 ## <a name="example"></a>範例
- 下列範例說明 Visual C# 範本的中繼資料。
+ 下面的範例說明了 Visual C++ 範本的元數據。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -86,6 +86,6 @@ ms.locfileid: "66321237"
 
 ## <a name="see-also"></a>另請參閱
 
-- [BuildOnLoad 屬性和項目](buildonload-visual-studio-templates.md)
-- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
+- [產生載入屬性和元素](buildonload-visual-studio-templates.md)
+- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)

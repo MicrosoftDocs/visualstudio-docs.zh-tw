@@ -1,5 +1,5 @@
 ---
-title: 新增和移除屬性頁 |Microsoft Docs
+title: 新增和刪除屬性頁 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,32 +7,32 @@ helpviewer_keywords:
 - property pages, project subtypes
 - property pages, removing
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03974bba0ca93242cf044a58bbb60ca772a369ce
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4c3df3104e48ca0ee972e1a27f2c32fd0661088b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352308"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740212"
 ---
-# <a name="add-and-remove-property-pages"></a>新增和移除屬性頁
+# <a name="add-and-remove-property-pages"></a>新增與移除屬性頁
 
-專案設計工具提供管理專案屬性、 設定和中的資源的集中式的位置[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它會顯示為單一視窗中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE)，並包含在右側窗格，並可透過左側索引標籤的數目。 專案設計工具窗格 （通常稱為屬性頁） 會因專案類型和語言。 專案設計工具可以使用來存取**屬性**命令**專案**功能表。
+專案設計器提供一個集中位置,用於管理[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中的專案屬性、設置和資源。 它顯示為整合式開發環境 (IDE) 中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]單個視窗,並包含右側透過左側選項卡訪問的多個窗格。 項目設計器中的窗格(通常稱為屬性頁)因專案類型和語言而異。 可以使用 **「** 專案」**功能表上的屬性命令**訪問項目設計器。
 
-專案子類型經常需要在專案設計工具中顯示其他的屬性頁。 同樣地，某些專案子類型可能需要移除的內建屬性頁。 若要執行其中一項，您的專案子類型必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>介面，並覆寫<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>方法。 藉由覆寫這個方法，並使用`propId`參數，其中包含的其中一個值<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>列舉型別，您可以篩選、 新增或移除專案屬性。 例如，您可能需要將頁面新增至組態相依屬性頁。 若要這樣做，您需要篩選組態相依屬性頁，然後將新的頁面新增至現有的清單。
+項目子類型經常需要在項目設計器中顯示其他屬性頁。 同樣,某些專案子類型可能要求刪除內置屬性頁。 要執行上述任一操作,專案子類型必須<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>實現介面並重<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>寫 方法。 通過重寫此方法並使用包含`propId`<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>枚舉值之一的參數,可以篩選、添加或刪除項目屬性。 例如,您可能需要向與配置相關的屬性頁添加頁面。 為此,您需要篩選與配置相關的屬性頁,然後將新頁面添加到現有清單中。
 
-## <a name="add-and-remove-property-pages-in-project-designer"></a>新增和移除專案設計工具中的 屬性頁
+## <a name="add-and-remove-property-pages-in-project-designer"></a>新增與專案設計器中加入與移除屬性頁
 
-### <a name="remove-a-property-page"></a>移除屬性頁
+### <a name="remove-a-property-page"></a>刪除屬性頁
 
-1. 覆寫`GetProperty(uint itemId, int propId, out object property)`方法來篩選屬性頁面，並取得`clsids`清單。
+1. 重寫`GetProperty(uint itemId, int propId, out object property)`方法以篩選屬性頁並`clsids`獲取 清單。
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ ms.locfileid: "66352308"
     }
     ```
 
-2. 移除**建置事件**頁面取得`clsids`清單。
+2. 從抓`clsids`取 清單中移除**產生事件**頁。
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -111,9 +111,9 @@ ms.locfileid: "66352308"
     property = propertyPagesList;
     ```
 
-### <a name="add-a-property-page"></a>加入屬性頁
+### <a name="add-a-property-page"></a>新增屬性頁
 
-1. 建立您想要新增的屬性頁面。
+1. 創建要添加的屬性頁。
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ ms.locfileid: "66352308"
     }
     ```
 
-2. 註冊新的屬性頁。
+2. 註冊您的新屬性頁面。
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ ms.locfileid: "66352308"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3. 覆寫`GetProperty(uint itemId, int propId, out object property)`方法，以篩選屬性頁，取得`clsids`清單，並加入新的屬性頁。
+3. 重寫`GetProperty(uint itemId, int propId, out object property)`方法以篩選屬性頁、`clsids`獲取 清單並添加新屬性頁。
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer
