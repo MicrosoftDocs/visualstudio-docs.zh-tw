@@ -1,31 +1,31 @@
 ---
-title: TaskScheduler 類別-內部成員 |Microsoft Docs
+title: 任務計劃員類 - 內部成員 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TaskScheduler class [.NET Framework debug engines]
 - debug engines, TaskScheduler class [.NET Framework]
 ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 865e12819a5e7325886c0f7f5d8425a6b3d2e393
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a53abc8b24edb06445c23c19744d00d50de8735d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331337"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712571"
 ---
-# <a name="taskscheduler-class---internal-members"></a>TaskScheduler 類別-內部成員
-這篇文章描述的內部成員<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>類別可協助您實作自訂的偵錯工具。 如需此類別的一般資訊，請參閱<xref:System.Threading.Tasks.TaskScheduler>參考文章。
+# <a name="taskscheduler-class---internal-members"></a>工作計劃器類別 ─ 內部成員
+本文介紹了説明您實現自定義調試器的<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>類的內部成員。 有關此類的一般資訊,<xref:System.Threading.Tasks.TaskScheduler>請參閱參考文章。
 
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **命名空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **組件：** mscorlib (在*mscorlib.dll*)
+ **程式集**:mscorlib(在*mscorlib.dll*中)
 
- 因為您無法從.NET Framework 來存取這些內部成員，下列語法提供通用中繼語言 (CIL)。
+ 由於您無法從 .NET 框架訪問這些內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
 
 ## <a name="syntax"></a>語法
 
@@ -40,11 +40,11 @@ ms.locfileid: "66331337"
 
 |名稱|描述|
 |----------|-----------------|
-|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|擷取所有排定工作的陣列。|
-|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|擷取的所有陣列<xref:System.Threading.Tasks.TaskScheduler>目前使用中的物件。|
+|[取得除錯器的排程工作](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|檢索所有計劃任務的陣列。|
+|[取得工作計劃對除錯器](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|檢索當前處於活動狀態的所有<xref:System.Threading.Tasks.TaskScheduler>物件的陣列。|
 
 ## <a name="remarks"></a>備註
 
 ## <a name="see-also"></a>另請參閱
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
-- [適用於.NET Framework 的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET 框架的並行擴展內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

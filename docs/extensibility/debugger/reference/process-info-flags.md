@@ -1,29 +1,29 @@
 ---
-title: PROCESS_INFO_FLAGS | Microsoft Docs
+title: PROCESS_INFO_FLAGS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - PROCESS_INFO_FLAGS
 helpviewer_keywords:
 - PROCESS_INFO_FLAGS enumeration
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0694d83409a492a1d950a17ac5e2298ba9b8578
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 36c4cbbe17a109eacd69b76500e8c10d21d2d554
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309393"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713956"
 ---
-# <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
+# <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 
-描述或指定的處理程序的屬性。
+描述或指定進程的屬性。
 
 ## <a name="syntax"></a>語法
 
@@ -49,30 +49,30 @@ enum enum_PROCESS_INFO_FLAGS { 
 ## <a name="fields"></a>欄位
 
 `PIFLAG_SYSTEM_PROCESS`\
-表示處理程序是系統處理序。
+指示該過程是系統進程。
 
 `PIFLAG_DEBUGGER_ATTACHED`\
-表示處理程序正在偵錯的偵錯工具。 它可能是[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯工具，或它可能是某些其他偵錯工具，例如 WinDbg。
+指示調試器正在調試進程。 它可能是調試[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]器,或者可能是其他調試器,例如 WinDbg。
 
 `PIFLAG_PROCESS_STOPPED`\
-表示處理程序已停止。 才有效`PIFLAG_DEBUGGER_ATTACHED`同時指定。 適用於 Visual Studio 2005 和更新版本。
+指示進程已停止。 僅在也指定`PIFLAG_DEBUGGER_ATTACHED`時有效。 可在 Visual Studio 2005 及更高版本提供。
 
 `PIFLAG_PROCESS_RUNNING`\
-表示處理序正在執行。 才有效`PIFLAG_DEBUGGER_ATTACHED`同時指定。 適用於 Visual Studio 2005 和更新版本。
+指示進程正在運行。 僅在也指定`PIFLAG_DEBUGGER_ATTACHED`時有效。 可在 Visual Studio 2005 及更高版本提供。
 
 ## <a name="remarks"></a>備註
 
-用於`Flags`隸屬[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)結構。
+用於[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)結構`Flags`的成員。
 
-這些旗標可能會結合的位元`OR`。
+這些旗標可以稍微`OR`結合 。
 
 ## <a name="requirements"></a>需求
 
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 

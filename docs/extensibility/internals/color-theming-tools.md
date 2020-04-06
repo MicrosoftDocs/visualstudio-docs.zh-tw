@@ -1,23 +1,23 @@
 ---
-title: 色彩佈景主題工具 |Microsoft Docs
+title: 顏色顏色工具 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 89ab5741-c664-4b45-8662-3dd01a5761be
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5ddf0121631525831f5f4e6971571321700b38b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 50d45a7757771474cf2fd7c46a016e5ea685998e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338682"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709736"
 ---
-# <a name="color-theme-tools"></a>色彩佈景主題工具
-Visual Studio SDK 提供數個工具，可協助您建立和管理的色彩佈景主題。
+# <a name="color-theme-tools"></a>色彩主題工具
+Visual Studio SDK 提供了多種工具,可説明您創建和管理顏色主題。
 
-- [VSIX 色彩編輯器](../../extensibility/internals/vsix-color-editor.md)工具可以建立和編輯 Visual studio 的 自訂色彩。
+- [VSIX 顏色編輯器](../../extensibility/internals/vsix-color-editor.md)工具可以為 Visual Studio 創建和編輯自訂顏色。
 
-- [VSIX 色彩編譯器](../../extensibility/internals/vsix-color-compiler.md)工具可將轉換現有的 Visual Studio 佈景主題 *.xml*檔案至 *.pkgdef*延伸模組的檔案。
+- [VSIX 顏色編譯器](../../extensibility/internals/vsix-color-compiler.md)工具將現有的 Visual Studio 主題 *.xml*檔案轉換為 *.pkgdef*檔,用於擴展。

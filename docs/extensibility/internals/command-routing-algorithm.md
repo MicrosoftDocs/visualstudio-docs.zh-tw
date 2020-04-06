@@ -1,46 +1,46 @@
 ---
-title: 命令路由演算法 |Microsoft Docs
+title: 命令路由演演演算法 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, routing
 - command routing
 ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c98e145961f8d98c7ea939bd051a94ee68cd93f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af8d3e53e09214ce36a80ca18856085dfb2bb746
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342104"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709542"
 ---
-# <a name="command-routing-algorithm"></a>命令路由演算法
-在 Visual Studio 中許多不同的元件會處理命令。 命令會從最內側的內容中，根據目前的選取範圍，路由傳送到最外層的 （也稱為全域） 內容。 如需詳細資訊，請參閱 <<c0> [ 命令可用性](../../extensibility/internals/command-availability.md)。
+# <a name="command-routing-algorithm"></a>命令路由演演算法
+在 Visual Studio 中,命令由許多不同的元件處理。 命令從最裡面的上下文(基於當前選擇)路由到最外層(也稱為全域)上下文。 有關詳細資訊,請參閱[命令可用性](../../extensibility/internals/command-availability.md)。
 
-## <a name="order-of-command-resolution"></a>命令解析順序
- 命令會傳遞下列命令內容層級：
+## <a name="order-of-command-resolution"></a>指令解析順序
+ 命令通過以下等級的指令上下文傳遞:
 
-1. 增益集：環境第一次提供任何增益集出現的命令。
+1. 載入項:環境首先向存在的任何載入項提供命令。
 
-2. 優先順序的命令：這些命令會註冊使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterPriorityCommandTarget>。 它們會針對每個命令在 Visual Studio 中，呼叫和其註冊順序呼叫。
+2. 優先順序命令:這些命令使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterPriorityCommandTarget>註冊。 它們被調用在 Visual Studio 中的每個命令,並且按註冊順序調用。
 
-3. 內容功能表命令：命令目標為一般的路由提供至內容功能表，並在那之後第一次提供內容功能表上的命令。
+3. 上下文菜單命令:首先向提供給上下文菜單的命令目標提供位於上下文菜單上的命令,然後提供給典型的路由。
 
-4. 工具列設定命令目標：當您呼叫時，這些命令目標會註冊<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell4.SetupToolbar2%2A>。 `pCmdTarget`參數可以是`null`。 如果不是`null`，則此命令的目標用來更新您要設定在工具列上找到的任何命令。 如果介面設定您的工具列中，則它會傳遞做為視窗框架`pCmdTarget`，讓所有更新的命令，在視窗框架中，透過您工具列的流程甚至都是當它不是處於焦點。
+4. 工具列設定指令目標:呼叫 時將註冊這些命令<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell4.SetupToolbar2%2A>目標 。 參數`pCmdTarget`可以`null`是 。 如果不是`null`,則此命令目標用於更新所設置工具列上的任何命令。 如果 shell 正在設定工具列,則它會將視窗框架`pCmdTarget`作為 傳遞 ,以便工具列上的命令的所有更新都流過視窗框架,即使它不在焦點中也是如此。
 
-5. 工具視窗：工具視窗，通常會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>介面中，也應該實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面，讓 Visual Studio 工具視窗是作用中視窗時，可取得命令目標。 不過，如果工具視窗有焦點就**專案** 視窗中，則命令會路由傳送至<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>介面，是常見的父項的所選的項目。 如果此選取項目跨越多個專案，此命令會路由傳送至<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution>階層。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>介面會包含<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>並<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>相對應的命令，在類似的方法<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。
+5. 工具視窗:工具視窗通常實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>介面,它也應該<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>實現介面,以便 Visual Studio 可以在工具視窗處於活動狀態視窗時獲取命令目標。 但是,如果具有焦點的工具視窗是**Project**視窗,則該命令將路由到<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>所選項 的常見父級介面。 如果此選擇跨越多個專案,則命令將路由到<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution>層次結構。 介面<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>包含<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A><xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>與介面上的<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>相應 命令類似的 和 方法。
 
-6. 文件視窗：如果命令已具有`RouteToDocs`旗標設定其 *.vsct*檔案，Visual Studio 會尋找命令目標，是在文件檢視物件上的執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>介面或文件的執行個體物件 （通常<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>介面或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>介面)。 如果文件檢視物件不支援的命令，Visual Studio 會將路由的命令<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>傳回的介面。 （這是文件資料物件的選用介面）。
+6. 文件視窗:如果命令在其 *.vsct*檔中`RouteToDocs`設置了 標誌,Visual Studio 會查找文檔檢視物件上的命令<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>目標,該物件是介面的實例或文件物件的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>實例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>(通常是介面或介面)。 如果文件檢視物件不支援該命令,Visual Studio 會將命令路由到<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>返回的介面。 (這是文件數據物件的可選介面。
 
-7. 目前的階層：目前的階層可以是擁有使用中的文件視窗或階層中所選取的專案**方案總管 中**。 Visual Studio 尋找<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>實作最新狀態，或使用中的階層的介面。 階層應支援階層為作用中，即使專案項目的文件視窗具有焦點時是有效的命令。 不過，命令套用時，才**方案總管**具有焦點必須支援使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>介面及其<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>方法。
+7. 當前層次結構:當前層次結構可以是擁有活動文檔視窗的專案或**解決方案資源管理器**中選擇的層次結構。 Visual Studio<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>查找 在當前層次結構或活動層次結構上實現的介面。 層次結構應支援每當層次結構處於活動狀態時有效的命令,即使專案項的文檔視窗具有焦點也是如此。 但是,必須使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>介面及其<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>及其及其方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>支援僅在**解決方案資源管理器**具有焦點時應用的命令。
 
-     **剪下**，**複製**，**貼上**，**刪除**，**重新命名**，**輸入**，及**DoubleClick**命令都需要特殊處理。 如需有關如何處理資訊**刪除**並**移除**命令，在階層中，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler>介面。
+     **剪下**、**複製**、**貼上**、**刪除**,**重新命名**,**請輸入**與**按下 命令**需要特殊處理。 有關如何在層次結構中處理**刪除**和**刪除**命令的<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler>資訊, 請參閱介面。
 
-8. 全域：如果先前所述的內容尚未處理命令，Visual Studio 會嘗試將它路由至擁有實作命令的 VSPackage<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。 如果 VSPackage 尚未已經載入，它時不會載入 Visual Studio 會呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法。 只有當載入 VSPackage<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>呼叫方法。
+8. 全域:如果命令未由前面提到的上下文處理,Visual Studio 會嘗試將其路由到擁有實現介面的命令<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>的 VSPackage。 如果 VSPackage 尚未載入,則 Visual Studio 調用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>該方法時不會載入它。 僅當調用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法時,才會載入 VSPackage。
 
 ## <a name="see-also"></a>另請參閱
-- [命令設計](../../extensibility/internals/command-design.md)
+- [指令設計](../../extensibility/internals/command-design.md)

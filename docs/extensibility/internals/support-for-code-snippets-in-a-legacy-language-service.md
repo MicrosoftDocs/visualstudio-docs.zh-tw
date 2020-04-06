@@ -1,5 +1,5 @@
 ---
-title: 舊版語言服務中的程式碼片段支援 |Microsoft Docs
+title: 支援舊語言服務中的代碼段 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,58 +7,58 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d771db166baa66426c7a6d03b344c4bc7b74b27
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ad871eb73341f6ab87229687e2a6df898ffda32d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72723101"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704918"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>舊版語言服務中對程式碼片段的支援
-程式碼片段是插入原始程式檔中的一段程式碼。 程式碼片段本身是以 XML 為基礎的範本，具有一組欄位。 這些欄位會在插入程式碼片段後反白顯示，而且可以根據插入程式碼片段的內容而有不同的值。 插入程式碼片段之後，語言服務就會立即格式化程式碼片段。
+代碼段是插入到源檔中的代碼段。 代碼段本身是一個基於 XML 的樣本,包含一組欄位。 這些欄位在插入代碼段後突出顯示,並根據插入代碼段的上下文的不同值。 插入代碼段後,語言服務可以立即格式化代碼段。
 
- 程式碼片段會以特殊的編輯模式插入，讓程式碼片段的欄位可以使用 TAB 鍵來流覽。 欄位可以支援 IntelliSense 樣式的下拉式功能表。 使用者可以輸入 ENTER 或 ESC 鍵，將程式碼片段認可至原始程式檔。 若要深入瞭解程式碼片段，請參閱[程式碼片段](../../ide/code-snippets.md)。
+ 程式碼段插入到特殊的編輯模式,允許使用 TAB 鍵導航代碼段的欄位。 這些欄位可以支援 IntelliSense 風格的下拉功能表。 用戶通過鍵入 ENTER 或 ESC 密鑰將代碼段提交到源檔。 要瞭解有關代碼段的更多,請參閱[程式碼段](../../ide/code-snippets.md)。
 
- 舊版語言服務會實作為 VSPackage 的一部分，但執行語言服務功能的較新方法是使用 MEF 延伸模組。 若要深入瞭解，請參閱[逐步解說：執行程式碼片段](../../extensibility/walkthrough-implementing-code-snippets.md)。
+ 舊語言服務是作為 VSPackage 的一部分實現的,但實現語言服務功能的較新方法是使用 MEF 擴展。 要瞭解更多資訊,請參閱[演練:實現代碼代碼段](../../extensibility/walkthrough-implementing-code-snippets.md)。
 
 > [!NOTE]
-> 我們建議您儘快開始使用新的編輯器 API。 這將可改善語言服務的效能，並可讓您利用新的編輯器功能。
+> 我們建議您儘快開始使用新的編輯器 API。 這將提高語言服務的性能,並允許您利用新的編輯器功能。
 
-## <a name="managed-package-framework-support-for-code-snippets"></a>適用于程式碼片段的 Managed Package Framework 支援
- Managed package framework （MPF）支援大部分的程式碼片段功能，從讀取範本到插入程式碼片段，以及啟用特殊編輯模式。 支援是透過 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 類別來管理。
+## <a name="managed-package-framework-support-for-code-snippets"></a>程式碼段的託管套件框架支援
+ 託管包框架 (MPF) 支援大多數代碼段功能,從讀取範本到插入代碼段和啟用特殊編輯模式。 支援通過類<xref:Microsoft.VisualStudio.Package.ExpansionProvider>進行管理。
 
- 當 <xref:Microsoft.VisualStudio.Package.Source> 類別具現化時，會呼叫 <xref:Microsoft.VisualStudio.Package.LanguageService> 類別中的 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> 方法來取得 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 物件（請注意，基底 <xref:Microsoft.VisualStudio.Package.LanguageService> 類別一律會針對每個 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 物件傳回新的 <xref:Microsoft.VisualStudio.Package.Source> 物件）。
+ 實例化<xref:Microsoft.VisualStudio.Package.Source>類時,將調<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A><xref:Microsoft.VisualStudio.Package.LanguageService>用 類中的方法以<xref:Microsoft.VisualStudio.Package.ExpansionProvider>獲取物件 (請<xref:Microsoft.VisualStudio.Package.LanguageService>注意,基<xref:Microsoft.VisualStudio.Package.ExpansionProvider><xref:Microsoft.VisualStudio.Package.Source>類始終為每個 物件返回一個新物件)。
 
- MPF 不支援擴充功能。 展開函式是內嵌在程式碼片段範本中的命名函數，會傳回一個或多個要放入欄位中的值。 語言服務本身會透過 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 物件來傳回值。 語言服務必須執行 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 物件，才能支援擴充功能。
+ MPF 不支援擴充功能。 擴展函數是嵌入在代碼段範本中的命名函數,並返回要放置在欄位中的一個或多個值。 這些值由語言服務本身通過<xref:Microsoft.VisualStudio.Package.ExpansionFunction>物件返回。 該<xref:Microsoft.VisualStudio.Package.ExpansionFunction>物件必須由語言服務實現以支援擴展函數。
 
-## <a name="providing-support-for-code-snippets"></a>提供程式碼片段的支援
- 若要啟用程式碼片段的支援，您必須提供或安裝程式碼片段，而且您必須提供方法讓使用者插入這些程式碼片段。 啟用程式碼片段的支援有三個步驟：
+## <a name="providing-support-for-code-snippets"></a>支援代碼段
+ 若要啟用對代碼段的支持,必須提供或安裝代碼段,並且必須為使用者提供插入這些代碼段的方法。 支援代碼段有三個步驟:
 
-1. 安裝程式碼片段檔案。
+1. 安裝代碼段檔。
 
-2. 啟用語言服務的程式碼片段。
+2. 為您的語言服務啟用代碼段。
 
-3. 叫用 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 物件。
+3. 呼叫物件<xref:Microsoft.VisualStudio.Package.ExpansionProvider>。
 
-### <a name="installing-the-snippet-files"></a>安裝程式碼片段檔案
- 語言的所有程式碼片段都會儲存為 XML 檔案中的範本，而每個檔案通常會有一個程式碼片段範本。 如需用於程式碼片段範本之 XML 架構的詳細資訊，請參閱[程式碼片段架構參考](../../ide/code-snippets-schema-reference.md)。 每個程式碼片段範本都會以語言識別項識別。 此語言識別項是在登錄中指定，並放入範本中 \<Code > 標記的 `Language` 屬性。
+### <a name="installing-the-snippet-files"></a>安裝程式碼段檔案
+ 語言的所有程式碼段都儲存在 XML 檔中的範本中,通常每個檔一個代碼段範本。 有關用於代碼段範本的 XML 架構的詳細資訊,請參閱[程式碼段架構參考](../../ide/code-snippets-schema-reference.md)。 每個程式碼段範本都使用語言 ID 標識。 此語言 ID 在註冊表中指定,並放入`Language`範\<本 中代碼>標記的屬性中。
 
- 通常會在使用者的資料夾中儲存程式碼片段範本檔案的兩個位置：1）您的語言已安裝和2）。 這些位置會新增至登錄，讓 Visual Studio**程式碼片段管理員**可以找到程式碼片段。 使用者的資料夾是儲存使用者所建立之程式碼片段的位置。
+ 儲存代碼段範本檔的通常有兩個位置:1) 安裝語言的位置和 2) 在使用者的資料夾中。 這些位置將添加到註冊表中,以便可視化工作室**代碼代碼段管理器**可以找到代碼段。 使用者的資料夾是存儲使用者創建的代碼段的位置。
 
- 已安裝程式碼片段範本檔案的一般資料夾版面配置看起來像這樣： *[InstallRoot]* \\ *[TestLanguage]* \snippets < \\ *[LCID]* \snippets)
+ 已安裝的代碼段範本檔的典型資料夾佈局如下所示 *:[安裝Root]*\\ *[測試語言]*\\[代碼段 *[LCID]*[片段。
 
- *[InstallRoot]* 是您的語言安裝所在的資料夾。
+ *[安裝Root]* 是您的語言安裝的資料夾。
 
- *[TestLanguage]* 是您的語言名稱，做為資料夾名稱。
+ *[測試語言]* 是您的語言的名稱作為資料夾名稱。
 
- *[LCID]* 是地區設定識別碼。 這就是您的程式碼片段當地語系化版本的儲存方式。 例如，英文的地區設定識別碼是1033，因此 *[LCID]* 會取代為1033。
+ *[LCID]* 是區域設置 ID。 這是存儲代碼段的當地語系化版本的方式。 例如,英語區域設置 ID 為 1033,因此 *[LCID]* 替換為 1033。
 
- 必須提供一個額外的檔案，而且這是一個索引檔，通常稱為 SnippetsIndex 或 ExpansionsIndex （您可以使用任何以 .xml 結尾的有效檔案名）。 這個檔案通常會儲存在 *[InstallRoot]* \\ *[TestLanguage]* 資料夾中，並指定程式碼片段資料夾的確切位置，以及使用程式碼片段之語言服務的語言識別項和 GUID。 索引檔案的確切路徑會放入登錄中，如稍後的「安裝登錄專案」中所述。 以下是 SnippetsIndex 的範例：
+ 必須提供一個附加檔,該檔是索引檔,通常稱為 SnippetsIndex.xml 或擴展索引.xml(您可以使用以 .xml 結尾的任何有效檔名)。 此檔案通常儲存在 *[InstallRoot]*\\ *[Test語言]* 資料夾中,並指定代碼段資料夾的確切位置以及使用代碼段的語言服務的語言 ID 和 GUID。 索引檔的確切路徑被放入註冊表中,如後面的"安裝註冊表條目"中所述。 下面是 SnippetsIndex.xml 檔的範例:
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -75,26 +75,26 @@ ms.locfileid: "72723101"
 </SnippetCollection>
 ```
 
- @No__t_0Language > 標記會指定語言識別項（`Lang` 屬性）和語言服務 GUID。
+ 語言\<>标记指定语言`Lang`ID( 屬性) 和語言服務 GUID。
 
- 這個範例假設您已在 Visual Studio 安裝資料夾中安裝語言服務。 % LCID% 會取代為使用者目前的地區設定識別碼。 可以新增多個 \<SnippetDir > 標記，每個不同的目錄和地區設定一個。 此外，程式碼片段資料夾可以包含子資料夾，其中每個都是在索引檔案中識別，而該檔案中的 \<SnippetSubDir > 標記內嵌在 \<SnippetDir > 標記中。
+ 本示例假定您已在 Visual Studio 安裝資料夾中安裝了語言服務。 %LCID% 取代為使用者的當前區域設定 ID。 可以\<添加多個代碼段>標記,每個不同的目錄和區域設置一個。 此外,程式碼段資料夾可以包含子資料夾,每個子資料夾都標識在索引檔中,其中包含嵌入\<\<在代碼段>標記中的 SnippetSubDir> 標記。
 
- 使用者也可以為您的語言建立自己的程式碼片段。 這些通常會儲存在使用者的 [設定] 資料夾中，例如 *[TestDocs]* \Code 程式碼片段 \\ *[TestLanguage]* \Test 程式碼片段，其中 *[TestDocs]* 是使用者的 [設定] 資料夾中 Visual Studio 的位置。
+ 使用者還可以為您的語言創建自己的代碼段。 這些代碼通常儲存在使用者的設置資料夾中,例如 *[TestDocs]*[代碼\\代碼段 *]測試語言][* 測試代碼代碼片段],其中 *[TestDocs]* 是可視化工作室的使用者設置資料夾的位置。
 
- 下列替代元素可以放在索引檔案中儲存于 \<DirPath > 標記的路徑中。
+ 以下替換元素可以放置在索引檔中\<的 DirPath> 標記中儲存的路徑中。
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|LCID|地區設定識別碼。|
-|InstallRoot|Visual Studio 的根安裝資料夾，例如 C:\Program Files\Microsoft Visual Studio 8。|
-|%ProjDir%|包含目前專案的資料夾。|
-|%ProjItem%|包含目前專案專案的資料夾。|
-|%TestDocs%|使用者的 [設定] 資料夾中的資料夾，例如 C:\documents and 和 Settings \\ *[username]* \My Documents\Visual Studio\8。|
+|%LCID%|區域設置識別碼。|
+|%安裝根百分比|Visual Studio 的根安裝資料夾,例如,C:*程式檔\微軟可視化工作室 8。|
+|%贊成率|包含當前項目的資料夾。|
+|%ProjItem%|包含當前項目項的資料夾。|
+|% 測試文件百分比|使用者設置資料夾中的資料夾,例如,C:\文檔和\\設置 *[使用者名]*[我的文檔]可視化工作室\8。|
 
-### <a name="enabling-code-snippets-for-your-language-service"></a>為您的語言服務啟用程式碼片段
- 您可以藉由將 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> 屬性新增至 VSPackage （如需詳細資訊，請參閱[註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)），為您的語言服務啟用程式碼片段。 @No__t_0 和 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> 參數是選擇性的，但您應該包含 `SearchPaths` 名為參數，才能通知**程式碼片段管理員**您的程式碼片段位置。
+### <a name="enabling-code-snippets-for-your-language-service"></a>為您的語言服務啟用代碼段
+ 您可以透過<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>將 屬性添加到 VSPackage 來啟用語言服務的程式碼段(有關詳細資訊,請參閱[註冊舊語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md))。 和<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A><xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A>參數是可選的,但應`SearchPaths`包含命名參數,以便通知**代碼段管理器**代碼段代碼段的位置。
 
- 以下是如何使用此屬性的範例：
+ 以下是如何使用此屬性的範例:
 
 ```
 [ProvideLanguageCodeExpansion(
@@ -107,17 +107,17 @@ ms.locfileid: "72723101"
 ```
 
 ### <a name="calling-the-expansion-provider"></a>呼叫擴充提供者
- 語言服務會控制插入任何程式碼片段，以及叫用插入的方式。
+ 語言服務控制任何代碼段的插入,以及調用插入的方式。
 
-## <a name="calling-the-expansion-provider-for-code-snippets"></a>呼叫程式碼片段的擴充提供者
- 叫用展開提供者的方法有兩種：使用功能表命令，或使用完成清單中的快捷方式。
+## <a name="calling-the-expansion-provider-for-code-snippets"></a>呼叫程式的程式
+ 有兩種方法可以調用擴展提供程式:通過使用功能表命令或使用完成清單中的快捷方式。
 
-### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>使用功能表命令插入程式碼片段
- 若要使用功能表命令來顯示程式碼片段瀏覽器，您可以新增功能表命令，然後在 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 介面中呼叫 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> 方法，以回應該功能表命令。
+### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>使用選單指令插入代碼段
+ 要使用功能表命令顯示代碼段瀏覽器,請添加功能表命令,然後在<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A><xref:Microsoft.VisualStudio.Package.ExpansionProvider>介面中調用 方法以響應該功能表命令。
 
-1. 將命令和按鈕新增至您的 .vsct 檔案。 您可以在[使用功能表命令建立擴充](../../extensibility/creating-an-extension-with-a-menu-command.md)功能中找到這麼做的指示。
+1. 向 .vsct 檔案添加命令和按鈕。 您可以在[使用選單指令建立擴充](../../extensibility/creating-an-extension-with-a-menu-command.md)時找到執行此操作的說明。
 
-2. 從 <xref:Microsoft.VisualStudio.Package.ViewFilter> 類別衍生類別，並覆寫 <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> 方法，以表示支援新的功能表命令。 這個範例一律會啟用功能表命令。
+2. 從<xref:Microsoft.VisualStudio.Package.ViewFilter>類派生類並重<xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A>寫 方法以指示對新功能表命令的支援。 此示例始終啟用功能表命令。
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -153,7 +153,7 @@ ms.locfileid: "72723101"
     }
     ```
 
-3. 覆寫 <xref:Microsoft.VisualStudio.Package.ViewFilter> 類別中的 <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> 方法，以取得 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 物件，並在該物件上呼叫 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> 方法。
+3. 重寫類<xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A><xref:Microsoft.VisualStudio.Package.ViewFilter>中 的方法<xref:Microsoft.VisualStudio.Package.ExpansionProvider>以獲取 該物件,並調用<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>該物件上 的方法。
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -203,7 +203,7 @@ ms.locfileid: "72723101"
 
     ```
 
-     在插入程式碼片段的過程中，Visual Studio 會依照指定的順序，在 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 類別中呼叫下列方法：
+     在插入代碼段的過程中<xref:Microsoft.VisualStudio.Package.ExpansionProvider>,Visual Studio 按給定的順序呼叫類別中的以下方法:
 
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
@@ -215,16 +215,16 @@ ms.locfileid: "72723101"
 
 8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
-     呼叫 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> 方法之後，就會插入程式碼片段，而 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 物件會處於用來修改剛插入之程式碼片段的特殊編輯模式。
+     呼叫<xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>方法後,已插入代碼段,<xref:Microsoft.VisualStudio.Package.ExpansionProvider>並且物件處於用於修改剛剛插入的代碼段的特殊編輯模式。
 
-### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>使用快捷方式插入程式碼片段
- 從完成清單中執行快捷方式比執行功能表命令更為複雜。 您必須先將程式碼片段快捷方式加入至 IntelliSense 文字自動完成清單。 接著，您必須偵測到當代碼段快捷方式名稱已插入為完成後的結果。 最後，您必須使用快捷方式名稱取得程式碼片段標題和路徑，並將該資訊傳遞給 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 方法上的 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 方法。
+### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>使用快捷方式插入程式碼段
+ 從完成清單中實現快捷方式比實現功能表命令要涉及得多。 您必須首先將代碼段快捷方式添加到 IntelliSense 單詞完成清單中。 然後,您必須檢測何時由於完成而插入了代碼段快捷方式名稱。 最後,您必須使用快捷方式名稱獲取代碼段標題和路徑,並將該資訊傳遞給<xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A><xref:Microsoft.VisualStudio.Package.ExpansionProvider>方法上的方法。
 
- 若要將程式碼片段快捷方式加入至「自動完成」清單，請將它們新增至 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 類別中的 <xref:Microsoft.VisualStudio.Package.Declarations> 物件。 您必須確認可以將快捷方式識別為程式碼片段名稱。 如需範例，請參閱[逐步解說：取得已安裝程式碼片段（舊版執行）的清單](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)。
+ 要將代碼段快捷方式添加到單詞完成清單中,請將它們添加到<xref:Microsoft.VisualStudio.Package.Declarations><xref:Microsoft.VisualStudio.Package.AuthoringScope>類中的物件。 您必須確保可以將快捷方式標識為代碼段名稱。 例如,請參閱[演練:獲取已安裝的代碼段清單(舊版實現)。](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
- 您可以在 <xref:Microsoft.VisualStudio.Package.Declarations> 類別的 <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> 方法中偵測程式碼片段快捷方式的插入。 由於程式碼片段名稱已經插入原始程式檔中，因此在插入展開時，必須將它移除。 @No__t_0 方法會採用一個範圍來描述程式碼片段的插入點;如果範圍在原始程式檔中包含整個程式碼片段名稱，則該名稱會取代為程式碼片段。
+ 可以檢測類<xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A>方法中的代碼段快捷方式<xref:Microsoft.VisualStudio.Package.Declarations>的 插入。 由於代碼段名稱已插入到源檔中,因此在插入擴展時必須將其刪除。 該方法<xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A>採用一個範圍來描述代碼段的插入點;如果範圍包含原始檔中的整個代碼段名稱,則該名稱將被代碼段替換。
 
- 以下是一個 <xref:Microsoft.VisualStudio.Package.Declarations> 類別的版本，它會在指定快捷方式名稱的情況之下處理程式碼片段插入。 為了清楚起見，已省略 <xref:Microsoft.VisualStudio.Package.Declarations> 類別中的其他方法。 請注意，此類別的函式會採用 <xref:Microsoft.VisualStudio.Package.LanguageService> 物件。 這可以從您的 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 物件版本傳入（例如，您的 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 類別的執行可能會在其程式中採用 <xref:Microsoft.VisualStudio.Package.LanguageService> 物件，並將該物件傳遞至您的 `TestDeclarations` 類別的函式）。
+ 下面是一個<xref:Microsoft.VisualStudio.Package.Declarations>類的版本,該類處理具有快捷方式名稱的代碼段插入。 為了清楚起見,<xref:Microsoft.VisualStudio.Package.Declarations>省略了類中的其他方法。 請注意,此類的建構函式採用物件<xref:Microsoft.VisualStudio.Package.LanguageService>。 這可以從<xref:Microsoft.VisualStudio.Package.AuthoringScope>物件的版本傳入(例如<xref:Microsoft.VisualStudio.Package.AuthoringScope>, 類的實現可能會在其構造函數<xref:Microsoft.VisualStudio.Package.LanguageService>中獲取 物件並將該物件`TestDeclarations`傳遞給類 構造函數)。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -325,7 +325,7 @@ namespace TestLanguagePackage
 }
 ```
 
- 當語言服務取得快捷方式名稱時，它會呼叫 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> 方法，以取得檔案名和程式碼片段標題。 然後語言服務會呼叫 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 類別中的 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 方法，以插入程式碼片段。 在插入程式碼片段的程式期間，會以指定的順序在 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 類別中 Visual Studio 呼叫下列方法：
+ 當語言服務獲取快捷方式名稱時,它將調用<xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A>方法以獲取檔名和代碼段標題。 然後,<xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A>語言服務<xref:Microsoft.VisualStudio.Package.ExpansionProvider>在 類中調用 方法以插入代碼段。 在插入代碼段的過程中,Visual <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Studio 在類中的給定順序調用了以下方法:
 
 1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
@@ -335,15 +335,15 @@ namespace TestLanguagePackage
 
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
-   如需取得語言服務已安裝程式碼片段清單的詳細資訊，請參閱[逐步解說：取得已安裝程式碼片段（舊版執行）的清單](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)。
+   有關獲取語言服務已安裝的代碼段清單的詳細資訊,請參閱[演練:獲取已安裝的代碼段清單(舊版實現)。](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
-## <a name="implementing-the-expansionfunction-class"></a>執行 ExpansionFunction 類別
- 展開函式是內嵌在程式碼片段範本中的命名函數，會傳回一個或多個要放入欄位中的值。 若要在您的語言服務中支援擴充功能，您必須從 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 類別衍生類別，並執行 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> 方法。 接著，您必須覆寫 <xref:Microsoft.VisualStudio.Package.LanguageService> 類別中的 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> 方法，以傳回您所支援之每個擴充功能的 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 類別版本的新具現化。 如果您支援來自擴充函數的可能值清單，您也必須覆寫 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 類別中的 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> 方法，以傳回這些值的清單。
+## <a name="implementing-the-expansionfunction-class"></a>實現擴充功能類別
+ 擴展函數是嵌入在代碼段範本中的命名函數,並返回要放置在欄位中的一個或多個值。 為了支援語言服務中的擴展函數,必須從<xref:Microsoft.VisualStudio.Package.ExpansionFunction>類派生一個類並實現方法<xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A>。 然後,<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A>必須重寫類<xref:Microsoft.VisualStudio.Package.LanguageService>中 的方法,以便返回對所支援的每個擴展函<xref:Microsoft.VisualStudio.Package.ExpansionFunction>數的類版本的新實例化。 如果支援擴展函數中可能的值清單,則還必須重寫<xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A><xref:Microsoft.VisualStudio.Package.ExpansionFunction>類中的方法以返回這些值的清單。
 
- 接受引數或需要存取其他欄位的擴充函數不應該與可編輯的欄位相關聯，因為在呼叫擴充函數時，擴充提供者可能未完全初始化。 因此，擴充函數無法取得其引數或任何其他欄位的值。
+ 獲取參數或需要訪問其他欄位的擴展函數不應與可編輯欄位關聯,因為在調用擴展函數時,擴展提供程式可能無法完全初始化。 因此,擴展函數無法獲得其參數或任何其他欄位的值。
 
 ### <a name="example"></a>範例
- 以下範例示範如何執行稱為 `GetName` 的簡單擴充函數。 這個擴充函式會在每次具現化擴充函式時，將一個數位附加至基類名稱（這會對應到每次插入相關聯的程式碼片段）。
+ 下面是如何實現稱為`GetName`的簡單擴展函數的示例。 每次實例化擴展函數時,此擴展函數都會將一個數位追加到基類名稱(這與每次插入關聯的代碼段時都對應)。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -388,8 +388,8 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)
 - [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)
-- [程式碼片段](../../ide/code-snippets.md)
+- [代碼段](../../ide/code-snippets.md)
 - [逐步解說︰取得已安裝程式碼片段 (舊版實作) 的清單](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

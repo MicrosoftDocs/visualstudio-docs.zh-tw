@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugReferenceInfo2 | Microsoft Docs
+title: IEnumDebug參考資訊2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugReferenceInfo2
 ms.assetid: 7ed01441-686f-4032-8268-a4c750f19f85
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b664b068ac7cd30a7475ab14bfe1b064c98142c2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6132235a7e4789c7d9efe5bae9d7fd531112dab4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324396"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715272"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
-此介面列舉[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。
+此介面枚舉[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。
 
 ## <a name="syntax"></a>語法
 
@@ -28,32 +28,32 @@ ms.locfileid: "66324396"
 IEnumDebugReferenceInfo2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 偵錯引擎 (DE) 會實作這個介面做為其支援的物件參考的一部分，在記憶體中。 支援的參考時，才必須實作這個介面。
+## <a name="notes-for-implementers"></a>實施者說明
+ 除錯引擎 (DE) 實現此介面,作為其對記憶體中物件的引用的支援的一部分。 僅當支援引用時,才能實現此介面。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- Visual Studio 呼叫[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)來取得這個介面。
+## <a name="notes-for-callers"></a>通話備註
+ Visual Studio 調用[Enum 兒童](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)以獲取此介面。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IEnumDebugReferenceInfo2`。
 
 |方法|描述|
 |------------|-----------------|
-|[下一步](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|擷取指定的數目[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)列舉型別序列中的結構。|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|略過指定的數目的[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)列舉序列中的結構。|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|將列舉型別序列重設到開頭。|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|取得的數目[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)中列舉值的結構。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|檢索枚舉序列中指定數量的[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。|
+|[跳](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|跳過枚舉序列中指定數量的[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。|
+|[重設](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|將枚舉序列重置為開頭。|
+|[複製](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|建立與當前枚舉器相同的枚舉狀態的枚舉器。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|獲取枚舉器中[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構的數量。|
 
 ## <a name="remarks"></a>備註
- 參考是本質上的型別和地址，，而屬性是名稱、 類型和地址。 參考仍然存在，只要參考存在於記憶體中的物件。 請參閱[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)如需詳細資訊。
+ 引用本質上是一個類型和位址,而屬性是名稱、類型和位址。 只要引用的物件存在於記憶體中,引用就保持不變。 有關詳細資訊[,請參閱 IDebug 參考 2。](../../../extensibility/debugger/reference/idebugreference2.md)
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

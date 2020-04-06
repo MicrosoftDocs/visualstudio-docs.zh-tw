@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetException | Microsoft Docs
+title: IDebugexception 事件2::獲取異常 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::GetException
 ms.assetid: 7c98f41d-322b-4e72-a514-cbd4823eb70d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 691df8f5a212f1d854d87076a215402c7ce0053c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 332cbb28bd175aa5c3b4187ae735a479ba9de6b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310514"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729857"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
-取得引發這個事件的例外狀況的詳細的描述。
+獲取觸發此事件的異常的詳細說明。
 
 ## <a name="syntax"></a>語法
 
@@ -41,14 +41,14 @@ int GetException( 
 
 ## <a name="parameters"></a>參數
 `pExceptionInfo`\
-[in、 out][EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)會填入的例外狀況描述的結構。
+[進出]用異常說明填充[的EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
 
- [C++只]呼叫端負責釋放中的任何字串[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構，以及釋放[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)結構中的物件。
+ [僅C++]調用方負責釋放[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構中的任何字串,並在結構中釋放[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

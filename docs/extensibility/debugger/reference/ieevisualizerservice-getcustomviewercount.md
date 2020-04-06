@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerCount |Microsoft Docs
+title: IEE視覺化服務::獲取自定義查看器計數 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerCount method
 ms.assetid: f7b095c2-e538-4352-8cad-d4c6d4f6bdbc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82c4699c987d94f5fffad87d26f845facff3180c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 90f040c4ca0736a0312829d196d0991788357edc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350158"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718047"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
-這個方法會從這項服務，取得類型視覺化檢視可用的數目。
+此方法獲取此服務中可用的類型可視化工具的數量。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetCustomViewerCount(
 
 ## <a name="parameters"></a>參數
 `pcelt`\
-[out]傳回類型視覺化檢視可用的數目。
+[出]返回可用的類型可視化工具的數量。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
-- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)類型視覺化檢視將要求傳遞至其支援這個方法。
+- [GetCustomViewer( GetCustomViewer)](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)在支援類型可視化器時將請求傳遞給此方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

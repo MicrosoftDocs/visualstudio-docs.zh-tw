@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsReference | Microsoft Docs
+title: IDebug 參考2::設置值作為參考 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsReference
 ms.assetid: 94a545d2-16b9-45e9-b2e7-4e49ff90aad0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 108061d4957b03d049897985da849ab86563ea47
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f4767dbe08e716d64ea03c18a1c4a6f7d6690a7b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339757"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720302"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-設定參考，以從另一個參考的值。 保留供未來使用。
+設置來自另一個引用的引用的值。 保留供未來使用。
 
 ## <a name="syntax"></a>語法
 
@@ -47,19 +47,19 @@ int SetValueAsReference ( 
 
 ## <a name="parameters"></a>參數
 `rgpArgs`\
-[in]陣列[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)用來判斷如何設定參考值的物件。
+[在]用於確定如何設置引用值的[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件的陣列。
 
 `dwArgCount`\
-[in]陣列中的參考數目。
+[在]陣列中的引用數。
 
 `pValue`\
-[in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)從中設定屬性值的物件。
+[在]要從中設置屬性值的[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件。
 
 `dwTimeout`\
-[in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
+[在]從此方法返回之前等待的最大時間(以毫秒為單位)。 用於`INFINITE`無限期等待。
 
 ## <a name="return-value"></a>傳回值
- 一律傳回 `E_NOTIMPL`。
+ 永遠會傳回 `E_NOTIMPL`。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

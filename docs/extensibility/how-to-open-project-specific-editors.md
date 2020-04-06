@@ -1,5 +1,5 @@
 ---
-title: 作法：開啟專案特定的編輯器 |Microsoft Docs
+title: 如何:打開特定於項目的編輯器 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,51 +7,51 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], opening project-specific editors
 - projects [Visual Studio SDK], opening folders
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e85913f6eead81bcbc2424ef1087f64a3f2446e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3cb6e360a38d64de4976f83b0167d47dc03fbc87
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319244"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710846"
 ---
-# <a name="how-to-open-project-specific-editors"></a>作法：開啟專案特定的編輯器
-如果在開啟的專案項目檔本質上繫結至特定的編輯器中為該專案，專案必須使用專案特定編輯器開啟檔案。 檔案無法委派到 IDE 的機制，來選取一個編輯器。 比方說，而不是使用標準的點陣圖編輯器中，您可以使用此專案特定編輯器選項來指定特定的點陣圖編輯器可辨識對您的專案是唯一的檔案中的資訊。
+# <a name="how-to-open-project-specific-editors"></a>如何:開啟特定於項目的編輯器
+如果專案正在打開的項檔本質上是綁定到該專案的特定編輯器的,則專案必須使用特定於專案的編輯器打開該檔。 檔不能委派給 IDE 選擇編輯器的機制。 例如,可以使用特定於專案的編輯器來指定特定的位圖編輯器,該編輯器可識別專案中唯一的資訊,而不是使用標準位圖編輯器。
 
- IDE 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>時它會判斷特定的專案應該開啟檔案的方法。 如需詳細資訊，請參閱 <<c0> [ 使用 開啟檔案命令顯示檔案](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)。 使用下列指導方針來實作`OpenItem`方法中，使您的專案使用的專案特定編輯器開啟檔案。
+ 當 IDE<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>確定特定專案應打開檔時,它調用該方法。 關於詳細資訊,請參考[檔案指令顯示檔案](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)。 使用以下準則實現`OpenItem`使用特定於專案的編輯器使專案打開檔的方法。
 
-## <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>若要實作的專案特定編輯器 OpenItem 方法
+## <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>使用特定於項目的編輯器來提供 OpenItem 方法
 
-1. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>方法 (`RDT_EditLock`) 來判斷是否已開啟的檔案 （文件資料物件）。
+1. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>方法`RDT_EditLock`( ) 以確定檔案 (文件資料物件) 是否已打開。
 
     > [!NOTE]
-    > 如需有關文件資料和文件檢視物件的詳細資訊，請參閱[文件的自訂編輯器中的資料和文件檢視](../extensibility/document-data-and-document-view-in-custom-editors.md)。
+    > 關於文件資料與文件檢視物件的詳細資訊,請參考[自訂編輯器中的文件資料與文件檢視](../extensibility/document-data-and-document-view-in-custom-editors.md)。
 
-2. 如果檔案已經開啟，請藉由呼叫 resurface 檔案<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>方法並指定值的 IDO_ActivateIfOpen`grfIDO`參數。
+2. 如果檔已打開,則通過調用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>方法並`grfIDO`為 參數指定IDO_ActivateIfOpen值來重新顯示該檔。
 
-     如果檔案已開啟，且所呼叫的專案以外的專案擁有文件，則會顯示警告，開啟 「 編輯器 」 是另一個專案中的使用者。 然後顯示 [檔案] 視窗。
+     如果文件處於打開狀態,並且文檔歸調用專案以外的專案所有,則向使用者顯示一條警告,指出正在打開的編輯器來自另一個專案。 然後,文件視窗將浮出水面。
 
-3. 如果您文字的緩衝區 （文件資料物件） 已經開啟，且您想要附加至另一個檢視，您必須負責連結該檢視。 從專案中，產生的檢視 （文件檢視物件） 的建議的方法如下所示：
+3. 如果文本緩衝區(文檔數據物件)已打開,並且要附加另一個檢視,則負責連接該檢視。 建議從項目中實體化檢視(文件檢視物件)的方法如下:
 
-    1. 呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry>服務，來取得變數的指標，<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2>介面。
+    1. 調用`QueryService`<xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry>服務以獲取指向介面<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2>的指標。
 
-    2. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>方法用來建立文件檢視類別的執行個體。
+    2. 調用<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>方法以創建文檔視圖類的實例。
 
-4. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A>方法，並指定您的文件檢視物件。
+4. 調用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A>方法,指定文檔檢視物件。
 
-     這個方法網站文件視窗中的文件檢視物件。
+     此方法將文件檢視物件設置在文件視窗中。
 
-5. 執行其中一個適當地呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.InitNew%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A>方法。
+5. 對<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.InitNew%2A><xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A>或方法執行適當的調用。
 
-     此時，檢視必須是完全初始化並準備好開啟。
+     此時,視圖應完全初始化並準備打開。
 
-6. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>方法來顯示，並開啟檢視。
+6. 調用<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>方法以顯示並打開檢視。
 
 ## <a name="see-also"></a>另請參閱
-- [開啟和儲存專案項目](../extensibility/internals/opening-and-saving-project-items.md)
-- [如何：開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)
-- [如何：開啟編輯器開啟的文件](../extensibility/how-to-open-editors-for-open-documents.md)
+- [開啟與儲存項目項目](../extensibility/internals/opening-and-saving-project-items.md)
+- [如何:開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)
+- [如何:開啟開啟文件的編輯器](../extensibility/how-to-open-editors-for-open-documents.md)

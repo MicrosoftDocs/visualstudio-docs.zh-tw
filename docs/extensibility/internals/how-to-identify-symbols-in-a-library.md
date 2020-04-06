@@ -1,27 +1,27 @@
 ---
-title: HOW TO：識別文件庫中的符號 |Microsoft Docs
+title: 如何:識別庫中的符號 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
 - Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 550bd16fec0dde508642a362835cde1e2d1637d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1fe920fabd05a875b336467fbba16e4229fa9613
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328711"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708008"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>作法：識別文件庫中的符號
-符號瀏覽工具顯示符號的階層式的檢視。 符號代表命名空間、 物件、 類別、 類別成員和其他語言項目。
+# <a name="how-to-identify-symbols-in-a-library"></a>如何:識別庫中的符號
+符號流覽工具顯示符號的分層檢視。 符號表示命名空間、物件、類、類成員和其他語言元素。
 
- 每個階層中的符號，可識別的符號程式庫所傳遞的瀏覽資訊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員，透過下列介面：
+ 層次結構中的每個符號都可以透過符號庫傳遞到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員的導航資訊通過以下介面進行標識:
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo>
 
@@ -29,11 +29,11 @@ ms.locfileid: "66328711"
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.
 
- 在階層中符號位置區分的符號。 它可讓瀏覽至特定符號的符號瀏覽工具。 唯一、 完整的路徑，該符號會決定位置。 在路徑中的每個項目是一個節點。 路徑的最上層節點的開頭和結尾的特定符號。 例如，如果 M1 方法 C1 類別的成員，而且 C1 是 N1 命名空間中，M1 方法的完整路徑會是 N1。C1。M1。 此路徑包含三個節點：N1，C1 和 M1。
+ 符號在層次結構中的位置區分符號。 它允許符號流覽工具導航到特定符號。 符號的唯一、完全限定的路徑決定了位置。 路徑中的每個元素都是一個節點。 路徑從頂級節點開始,以特定符號結束。 例如,如果 M1 方法是 C1 類的成員,而 C1 位於 N1 命名空間中,則 M1 方法的完整路徑為 N1。C1.M1. 此路徑包含三個節點:N1、C1 和 M1。
 
- 瀏覽資訊可讓[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]以找出、 選取，並持續選取符號在階層中的 物件管理員。 它可讓從一種瀏覽工具巡覽到另一個。 在使用時**物件瀏覽器**瀏覽中的符號[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]專案中，您可以以滑鼠右鍵按一下方法，並開始**呼叫瀏覽器**工具以顯示方法的呼叫歷程圖中。
+ 導航資訊允許[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理器在層次結構中尋找、選擇和保留所選符號。 它允許從一個瀏覽工具導航到另一個流覽工具。 使用**物件瀏覽器**瀏覽專案中的[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]符號時 ,可以右鍵單擊方法並啟動 **「調用瀏覽器」** 工具以在調用圖中顯示該方法。
 
- 兩種形式會描述符號位置。 標準的格式根據符號的完整路徑。 它代表的符號之階層中唯一的位置。 它是獨立的符號瀏覽工具。 若要取得標準格式的資訊，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>方法。 呈現表單描述特定符號瀏覽工具內符號的位置。 符號的位置會相對於階層中其他符號的位置。 指定的符號可能會有數個展示檔路徑，但只有一個正式路徑。 例如，如果 C1 類別繼承自 C2 類別，而這兩個類別是在 N1 的命名空間**物件瀏覽器**會顯示下列階層樹狀結構：
+ 兩個表單描述符號位置。 規範形式基於符號的完全限定路徑。 它表示符號在層次結構中的唯一位置。 它與符號流覽工具無關。 要獲取規範形式資訊,[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理器調<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>用 方法。 簡報文件檔描述符號在特定符號流覽工具中的位置。 符號的位置相對於層次結構中其他符號的位置。 給定的符號可能有多個表示路徑,但只有一個規範路徑。 例如,如果 C1 類是從 C2 類繼承的,並且兩個類都在 N1 命名空間中,**則物件瀏覽器**將顯示以下分層樹:
 
 ```
 N1
@@ -46,15 +46,15 @@ N1
 
 ```
 
- C2 類別，在此範例中，正式路徑為 N1 + C2。 C2 的展示檔路徑包含 C1 和 「 基底和介面 「 節點：N1 + C1 + 「 基底和介面 」 + C2。
+ 在此示例中,C2 類的規範路徑為 N1 + C2。 C2 的表示路徑包括 C1 和「基礎和介面」節點:N1 + C1 = 「基礎和介面」 = C2。
 
- 若要取得呈現表單資訊物件管理員呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>方法。
+ 要獲取表示表單資訊,物件管理器調用<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>方法。
 
-## <a name="to-obtain-canonical-and-presentation-forms-information"></a>若要取得標準，並展示形成的資訊
+## <a name="to-obtain-canonical-and-presentation-forms-information"></a>取得規格及展示表單資訊
 
 1. 實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> 方法。
 
-     物件管理員會呼叫此方法來取得標準的符號路徑中包含的節點清單。
+     物件管理員調用此方法以獲取符號規範路徑中包含的節點清單。
 
     ```vb
     Public Function EnumCanonicalNodes(ByRef ppEnum As Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes) As Integer
@@ -77,9 +77,9 @@ N1
 
 2. 實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> 方法。
 
-     物件管理員會呼叫這個方法，以取得符號的簡報路徑中包含的節點清單。
+     物件管理員調用此方法以獲取符號的表示路徑中包含的節點清單。
 
 ## <a name="see-also"></a>另請參閱
 - [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)
-- [如何：使用物件管理員註冊程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [如何：公開 （expose) 至物件管理員程式庫所提供的符號清單](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [如何:向物件管理員註冊庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [如何:向物件管理員公開函式庫提供的符號清單](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

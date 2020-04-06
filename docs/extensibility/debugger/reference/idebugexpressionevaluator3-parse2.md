@@ -1,27 +1,27 @@
 ---
-title: IDebugExpressionEvaluator3::Parse2 | Microsoft Docs
+title: IDebugExpression評估器3::Parse2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 308ef67bab1d91ace71a5e741a1ed998037a9868
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5254d30ed1a656bfd357fca822efa554d895807e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352740"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729136"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-要剖析的運算式，指定的符號提供者和鑑定框架的位址，將轉換的運算式字串。
+將表達式字串轉換為具有符號提供程式和賦值幀位址的解析表達式。
 
 ## <a name="syntax"></a>語法
 
@@ -53,37 +53,37 @@ HRESULT Parse2 (
 
 ## <a name="parameters"></a>參數
 `upstrExpression`\
-[in]要剖析的運算式字串。
+[在]要解析的表達式字串。
 
 `dwFlags`\
-[in]集合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)常數，以判斷要如何剖析運算式。
+[在][PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)常量的集合,用於確定如何解析運算式。
 
 `nRadix`\
-[in]用來解譯任何數字資訊的基數。
+[在]用於解釋任何數值資訊的 Radix。
 
 `pSymbolProvider`\
-[in]符號提供者的介面。
+[在]符號提供程式的介面。
 
 `pAddress`\
-[in]評估的畫面格的位址。
+[在]評估幀的位址。
 
 `pbstrError`\
-[out]以人類看得懂的文字，會傳回錯誤。
+[出]將錯誤作為人可讀文字返回。
 
 `pichError`\
-[out]傳回字元位置開始的錯誤中的運算式字串。
+[出]傳回表示式字串中錯誤開始位置的字元位置。
 
 `ppParsedExpression`\
-[out]在剖析的運算式會傳回[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)物件。
+[出]返回[IDebugParsed 表示式](../../../extensibility/debugger/reference/idebugparsedexpression.md)物件中的解析表達式。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
-這個方法會產生剖析的運算式，不是實際的值。 剖析的運算式已準備好進行評估，也就是轉換成值。
+此方法生成解析的表達式,而不是實際值。 已解析的表達式已準備好進行計算,即轉換為值。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法，如**CEE**公開 （expose） 的物件[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)介面。
+下面的範例展示如何為公開[IDebugExpression評估器3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)介面的**CEE**物件實現此方法。
 
 ```cpp
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,

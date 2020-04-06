@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Clone |Microsoft Docs
+title: IEnum調試自定義屬性::克隆 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::Clone
 ms.assetid: e6825000-e195-42b4-b296-bfe1e533d79b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9d23cffa6b0d6cd01005a5e8aac39515ab86d26
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b3c6cd55293bf34b0c2780dd76eaf8f4ee81bb69
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324385"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717268"
 ---
 # <a name="ienumdebugcustomattributesclone"></a>IEnumDebugCustomAttributes::Clone
-建立列舉值，包含目前的列舉值相同的列舉型別狀態。
+建立與當前枚舉器相同的枚舉狀態的枚舉器。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int Clone(
 
 ## <a name="parameters"></a>參數
 `ppEnum`\
-[out]傳回這個列舉型別為個別物件的複本。
+[出]將此枚舉的副本作為單獨的物件返回。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 列舉的複本會呼叫這個方法只有在有相同的原始狀態。 不過，複本與原始的狀態是分開的而且可以個別變更。
+ 枚舉的副本在調用此方法時與原始副本具有相同的狀態。 但是,副本和原始副本的狀態是分開的,可以單獨更改。
 
 ## <a name="see-also"></a>另請參閱
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2 | Microsoft Docs
+title: IDebugProcess2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2 interface
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bea73c1bce5367d9686e835bb58dd99a83cc818
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c72659491ec6718397a4fbb494175eea0896c7f7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314133"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723806"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
-此介面代表的連接埠上執行的程序。 如果連接埠的本機連接埠，然後`IDebugProcess2`通常代表實體的程序，在本機電腦上。
+此介面表示在埠上運行的進程。 如果埠是本地埠,則`IDebugProcess2`通常表示本地電腦上的物理進程。
 
 ## <a name="syntax"></a>語法
 
@@ -28,53 +28,53 @@ ms.locfileid: "66314133"
 IDebugProcess2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 若要以群組方式管理程式的自訂連接埠供應商提供的被實作這個介面。 透過連接埠提供者，就必須實作這個介面。
+## <a name="notes-for-implementers"></a>實施者說明
+ 此介面由自定義埠供應商實現,以作為一個組管理程式。 此介面必須由埠供應商實現。
 
- 偵錯引擎也會實作這個介面，如果它支援啟動程式通過[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)。
+ 如果調試引擎支援透過[Launch 暫停](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)啟動程式,則調試引擎也將實現此介面。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 此介面稱為主要是由工作階段的偵錯管理員 (SDM) 來進行互動的程式識別在這個程序中的群組。
+## <a name="notes-for-callers"></a>通話備註
+ 此介面主要由工作階段調試管理員 (SDM) 調用,以便與在此過程中識別的一組程式進行互動。
 
- 呼叫[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)或是[GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)取得此介面。 此介面也會傳回呼叫`IDebugEngineLaunch2::LaunchSuspended`。
+ 調用[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)或[GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)獲取此介面。 此介面也通過調用`IDebugEngineLaunch2::LaunchSuspended`返回。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IDebugProcess2`。
 
 |方法|描述|
 |------------|-----------------|
-|[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)|取得處理序的描述。|
-|[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)|列舉包含在此程序中的程式。|
-|[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|取得標題、 易記名稱或處理序檔案名稱。|
-|[GetServer](../../../extensibility/debugger/reference/idebugprocess2-getserver.md)|取得的 server 執行此程序的機器的執行個體。|
-|[Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|終止處理序。|
-|[Attach](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|將附加至處理程序。|
-|[CanDetach](../../../extensibility/debugger/reference/idebugprocess2-candetach.md)|決定是否 SDM 可以中斷連結程序。|
-|[Detach](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|從處理序偵錯工具會中斷連結。|
-|[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|取得系統處理序識別碼。|
-|[GetProcessId](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|取得這個處理序的全域唯一識別碼。|
-|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [取代]|取得正在偵錯的處理程序之工作階段的名稱。<br /><br /> [已被取代。 應該一律傳回`E_NOTIMPL`。]|
-|[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)|列舉在處理程序中執行的執行緒。|
-|[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|要求的下一個程式在此處理程序停止執行程式碼。|
-|[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|取得的連接埠上執行此程序。|
+|[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)|獲取流程的說明。|
+|[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)|枚舉此過程中包含的程式。|
+|[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|獲取行程的標題、友好名稱或檔名。|
+|[GetServer](../../../extensibility/debugger/reference/idebugprocess2-getserver.md)|獲取此進程運行的計算機伺服器的實例。|
+|[終止](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|終止進程。|
+|[附加](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|附加到進程。|
+|[CanDetach](../../../extensibility/debugger/reference/idebugprocess2-candetach.md)|確定 SDM 是否可以分離進程。|
+|[中斷連結](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|從進程分離調試器。|
+|[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|獲取系統進程識別碼。|
+|[取得行程 Id](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|獲取此過程的全域唯一標識符。|
+|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> 【 已棄用】|獲取調試進程的工作階段的名稱。<br /><br /> *已棄用。 應始終返回`E_NOTIMPL`。|
+|[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)|枚舉進程中運行的線程。|
+|[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|請求行程中運行代碼的下一個程式停止。|
+|[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|獲取此進程正在運行的埠。|
 
 ## <a name="remarks"></a>備註
- `IDebugProcess2`包含一或多個[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面。
+ 包含`IDebugProcess2`一個或多個[IDebug Program2](../../../extensibility/debugger/reference/idebugprogram2.md)介面。
 
 ## <a name="requirements"></a>需求
- 標頭：Msdbg.h
+ 標題: Msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)
-- [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
+- [抓取程序](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
-- [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
+- [抓取程序](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
 - [下一步](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)
-- [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)
+- [事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

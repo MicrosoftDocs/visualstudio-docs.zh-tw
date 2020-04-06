@@ -1,31 +1,31 @@
 ---
-title: Task 類別-內部成員 |Microsoft Docs
+title: 任務類 - 內部成員 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, Task class [.NET Framework]
 - Task class [.NET Framework debug engines]
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bfa171655afd808de4bd86fe0fbdb99531d2ab2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dcf278c0248b344cea4be7cf161ecc91581f5f2e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348421"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712740"
 ---
-# <a name="task-class---internal-members"></a>Task 類別-內部成員
-這篇文章描述的內部成員<xref:System.Threading.Tasks.Task?displayProperty=fullName>類別可協助您實作自訂的偵錯工具。 如需此類別的一般資訊，請參閱<xref:System.Threading.Tasks.Task>參考文章。
+# <a name="task-class---internal-members"></a>工作類別 ─ 內部成員
+本文介紹了説明您實現自定義調試器的<xref:System.Threading.Tasks.Task?displayProperty=fullName>類的內部成員。 有關此類的一般資訊,<xref:System.Threading.Tasks.Task>請參閱參考文章。
 
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **命名空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **組件：** mscorlib (在*mscorlib.dll*)
+ **程式集**:mscorlib(在*mscorlib.dll*中)
 
- 因為您無法從.NET Framework 來存取這些內部成員，下列語法提供通用中繼語言 (CIL)。
+ 由於您無法從 .NET 框架訪問這些內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
 
 ## <a name="syntax"></a>語法
 
@@ -44,28 +44,28 @@ ms.locfileid: "66348421"
 
 |名稱|描述|
 |----------|-----------------|
-|[SetNotificationForWaitCompletion 方法](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|設定或清除 TASK_STATE_WAIT_COMPLETION_NOTIFICATION 狀態位元。|
-|[NotifyDebuggerOfWaitCompletion 方法](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|使用做為中斷點目標偵錯工具的預留位置方法。|
+|[SetNotificationForWaitCompletion 方法](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|設置或清除TASK_STATE_WAIT_COMPLETION_NOTIFICATION狀態位。|
+|[NotifyDebuggerOfWaitCompletion 方法](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|占位符方法用作調試器的斷點目標。|
 
 ### <a name="fields"></a>欄位
 
 |名稱|描述|
 |----------|-----------------|
-|[m_action](../../extensibility/debugger/m-action-field.md)|委派，表示程式碼中執行<xref:System.Threading.Tasks.Task>物件。|
-|[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|儲存的其他屬性<xref:System.Threading.Tasks.Task>物件。|
-|[m_parent](../../extensibility/debugger/m-parent-field.md)|支援欄位<xref:System.Threading.Tasks.Task?displayProperty=fullName>父屬性。|
-|[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|儲存的目前狀態的相關資訊<xref:System.Threading.Tasks.Task>物件。|
-|[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|物件，表示將動作所使用的資料。|
-|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|支援欄位<xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName>屬性。|
-|[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|下一個可用的識別項，如<xref:System.Threading.Tasks.Task>物件。|
-|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|表示工作已取消之前它達到執行中狀態，, 或確認其取消工作，並完成而沒有例外狀況。|
-|[TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)|指出工作執行。|
-|[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|表示工作已完成，因為發生未處理的例外狀況。|
-|[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|表示工作已順利完成執行。|
-|[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|表示工作完成執行其委派，而且在暗中等候附加的子工作完成。|
+|[m_action](../../extensibility/debugger/m-action-field.md)|表示要在物件中執行的代碼的<xref:System.Threading.Tasks.Task>委託。|
+|[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|存儲<xref:System.Threading.Tasks.Task>物件的其他屬性。|
+|[m_parent](../../extensibility/debugger/m-parent-field.md)|父屬性的<xref:System.Threading.Tasks.Task?displayProperty=fullName>備份欄位。|
+|[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|存儲有關<xref:System.Threading.Tasks.Task>物件當前狀態的資訊。|
+|[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|表示操作將使用的數據的物件。|
+|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|屬性的<xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName>後備欄位。|
+|[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|物件的下一個<xref:System.Threading.Tasks.Task>可用標識符。|
+|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|指示任務在到達運行狀態之前已取消,或者任務確認其取消並無異常地完成。|
+|[TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)|指示任務正在運行。|
+|[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|指示任務由於未處理的異常而已完成。|
+|[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|指示任務成功完成執行。|
+|[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|指示任務已完成執行其委託,並隱式等待附加的子任務完成。|
 
 ## <a name="remarks"></a>備註
- 下列的內部方法適合用來偵錯工具引擎因為這些檔案會標示 크 가<xref:System.Threading.Tasks.Task>執行的程式碼：
+ 以下內部方法對除錯器引擎很有用,因為它們標記了代碼執行的入口<xref:System.Threading.Tasks.Task>:
 
 - `Execute`
 
@@ -81,4 +81,4 @@ ms.locfileid: "66348421"
 
 ## <a name="see-also"></a>另請參閱
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
-- [適用於.NET Framework 的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET 框架的並行擴展內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

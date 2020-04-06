@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FLAGS | Microsoft Docs
+title: MACHINE_INFO_FLAGS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO_FLAGS enumeration
 ms.assetid: 1482095d-9a2e-4ef1-9e14-362c0b85194e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77d2c9af733f192526970d08d0ae3d24d2a5bf3f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b74955d65ff34c4787de03c3b03383fe7eb702cc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339241"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714493"
 ---
-# <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
-用來描述機器。
+# <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
+用於描述機器。
 
 ## <a name="syntax"></a>語法
 
@@ -42,17 +42,17 @@ public enum enum_MACHINE_INFO_FLAGS { 
 
 ## <a name="fields"></a>欄位
  `MCIFLAG_TERMINAL_SERVICES_AVAILABLE`\
- 指出使用終端機服務。
+ 指示終端服務可用。
 
 ## <a name="remarks"></a>備註
- 做`Flags`隸屬[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)結構。
+ 用作[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)結構`Flags`的成員。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

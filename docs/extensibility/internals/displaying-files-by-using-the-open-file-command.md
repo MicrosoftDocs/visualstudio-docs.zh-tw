@@ -1,5 +1,5 @@
 ---
-title: 使用 開啟檔案命令顯示檔案 |Microsoft Docs
+title: 使用開啟的檔案命令顯示檔案 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,52 +7,52 @@ helpviewer_keywords:
 - Open File command
 - persistence, supporting Open File command
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19fda87f0e2692d30b9a99777ca11edd7b3906f0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc18442c55b6989c4d8668e1425fdd62a2d4b1b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324332"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708601"
 ---
-# <a name="display-files-by-using-the-open-file-command"></a>使用 開啟檔案命令顯示檔案
-下列步驟描述 IDE 如何處理**開啟的檔案**命令，其位於**檔案**功能表中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 步驟也會說明專案應該如何回應來自這個命令的呼叫。
+# <a name="display-files-by-using-the-open-file-command"></a>使用「開啟檔案」指令顯示檔案
+以下步驟描述 IDE 如何處理**打開檔**命令,該命令在中的 **「檔」** 選單中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可用。 這些步驟還描述了專案應如何回應源自此命令的調用。
 
- 當使用者按一下**開啟的檔案**命令**檔案**功能表上，並選取 [從檔案**開啟檔案**] 對話方塊中，下列程序就會發生：
+ 當使用者按下 **「檔案**」 選單上的 **「開啟檔案」** 命令,並從 **「打開檔案」** 對話框中選擇檔案時,將發生以下過程:
 
-1. 使用執行中的文件表格，IDE 就會判斷檔案是否已在專案中開啟。
+1. 使用正在運行的文檔表,IDE 確定檔是否已在專案中打開。
 
-    - 如果檔案開啟時，IDE 會 resurfaces 視窗。
+    - 如果文件處於打開狀態,IDE 將重新顯示視窗。
 
-    - 如果檔案未開啟，IDE 就會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>來查詢每個專案，以判斷哪個專案可以開啟檔案。
+    - 如果檔未打開,IDE 將調<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>用 查詢每個專案以確定哪個專案可以打開該檔。
 
         > [!NOTE]
-        > 在您專案實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>，提供優先順序值，指出您的專案會開啟檔案的層級。 中提供優先順序值<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列舉型別。
+        > 在的項目實現中<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>,提供了一個優先順序值,指示專案打開檔的水準。 枚舉中<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>提供了優先順序值。
 
-2. 每個專案以表示重要性的優先順序層級這會造成正在開啟檔案的專案。
+2. 每個專案都回應一個優先順序,指示它是打開檔的專案的重要性。
 
-3. IDE 會使用下列準則來判斷哪一個專案開啟的檔案：
+3. IDE 使用以下條件來確定哪個項目開啟檔案:
 
-    - 以最高優先權的專案 (`DP_Intrinsic`) 開啟檔案。 如果多個專案會回應此優先順序，以回應的第一個專案開啟的檔案。
+    - 使用最高優先權(`DP_Intrinsic`) 回應的項目將打開該檔。 如果多個專案回應此優先順序,則第一個回應的專案將打開該檔。
 
-    - 如果沒有任何專案回應具有最高優先順序 (`DP_Intrinsic`)，但所有專案的都回應是相同且較低的優先順序，而作用中的專案開啟的檔案。 如果沒有任何專案是使用中，回應的第一個專案開啟的檔案。
+    - 如果沒有專案以最高優先順序 ()`DP_Intrinsic`回應,但所有專案都回應相同的較低優先順序,則活動專案將打開該檔。 如果沒有專案處於活動狀態,則第一個回應的專案將打開該檔。
 
-    - 如果沒有任何專案宣告檔案的擁有權 (`DP_Unsupported`)，其他檔案專案中開啟檔案。
+    - 如果沒有項目聲明檔的擁有權 (),`DP_Unsupported`則「雜項檔」 專案將打開該檔。
 
-         如果建立的其他檔案專案執行個體，則專案一律會回應該值`DP_CanAddAsExternal`。 這個值表示專案可以開啟檔案。 此專案用來儲存開啟的檔案不在任何其他專案中。 在此專案中的項目清單不會保存;此專案會顯示在**方案總管 中**它在使用時才開啟檔案。
+         如果建立了「雜項檔」 項目的實體,則是一個設定應該`DP_CanAddAsExternal`值 。 此值指示專案可以打開該檔。 此專案用於容納不在任何其他專案中的打開檔。 此專案中的專案清單不持久化;因此,該專案中的專案清單不會保留。僅當此專案用於打開檔時,該專案才在**解決方案資源管理器**中可見。
 
-         其他檔案專案並不表示它可以開啟檔案，方法是，如果尚未建立的專案執行個體。 在此情況下，IDE 會建立其他檔案專案的執行個體，並告知專案，以開啟該檔案。
+         如果「雜項檔」專案未指示可以打開該檔,則尚未創建該專案的實例。 在這種情況下,IDE 將創建「雜項檔」專案的實例,並告訴專案打開該檔。
 
-4. IDE 判斷哪一個專案開啟的檔案，因為它會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>該專案的方法。
+4. 一旦IDE確定哪個項目打開該檔,它將調用該專案<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>上的方法。
 
-5. 專案則會有使用專案特定編輯器] 或 [標準編輯器開啟檔案的選項。 如需詳細資訊，請參閱[如何：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)和[How to:開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)分別。
+5. 然後,專案可以選擇使用特定於專案的編輯器或標準編輯器打開檔。 有關詳細資訊,請參閱[如何:開啟特定於項目的編輯器](../../extensibility/how-to-open-project-specific-editors.md)和[如何:分別開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [使用 [開啟] 命令來顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
-- [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)
-- [如何：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)
-- [如何：開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)
+- [使用「開啟使用」指令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
+- [開啟並儲存項目項目項目](../../extensibility/internals/opening-and-saving-project-items.md)
+- [如何:開啟特定於項目的編輯器](../../extensibility/how-to-open-project-specific-editors.md)
+- [如何:開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)
