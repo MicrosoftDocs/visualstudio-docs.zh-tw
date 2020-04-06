@@ -1,58 +1,58 @@
 ---
-title: 網站支援屬性 |Microsoft Docs
+title: 網站支援屬性 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - web site projects, registration
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07486ea3a962bcb81f65ad0b61ea2e41b3248678
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ef75f99480145475278357a552f3ac74c0289800
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721617"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703490"
 ---
 # <a name="web-site-support-attributes"></a>網站支援屬性
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的網站專案可以擴充以提供 Web 程式設計語言的支援。 語言必須向 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 註冊，如此一來，當選取語言時，專案範本才會出現在 [**新網站**] 對話方塊中。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以擴展網站專案,為 Web 程式設計語言提供支援。 語言必須註冊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]自身,以便專案範本在選擇語言時可以顯示在 **「新建網站」** 對話框中。
 
-IronPython Studio 範例包含網站支援。 此範例包含下列屬性類別，以將 IronPython 註冊為新 Web 專案的程式碼後置語言。
+IronPython 工作室示例包括網站支援。 該示例包含以下屬性類,用於將IronPython註冊為新Web專案的代碼背後語言。
 
-## <a name="websiteprojectattribute"></a>WebSiteProjectAttribute
- 這個屬性會放在語言專案上。 它會在 [**新網站**] 對話方塊的 [**語言**] 清單中，將語言新增至 Web 程式設計語言清單。 例如，下列程式碼會將 IronPython 新增至清單：
+## <a name="websiteprojectattribute"></a>網站項目屬性
+ 此屬性放置在語言專案上。 它將語言添加到 **「新建網站」** 對話框中 **「語言**」清單中的 Web 程式設計語言清單中。 例如,以下代碼將 IronPython 加入清單中:
 
 ```
 [WebSiteProject("IronPython", "Iron Python")]
 public class PythonProjectPackage : ProjectPackage
 ```
 
- 這個屬性也會將範本路徑設定為指向 templates 資料夾。 如需 [範本] 資料夾位置的詳細資訊，請參閱[網站支援範本](../../extensibility/internals/web-site-support-templates.md)。
+ 此屬性還將範本路徑設置以指向範本資料夾。 有關樣本資料夾位置的詳細資訊,請參閱[網站支援樣本](../../extensibility/internals/web-site-support-templates.md)。
 
-## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute
- 這個屬性會放在語言專案上。 它可讓網站專案在**方案總管**中的另一個檔案類型（主要）底下，嵌套一種檔案類型（相關）。
+## <a name="websiteprojectrelatedfilesattribute"></a>網站項目相關檔案屬性
+ 此屬性放置在語言專案上。 它允許網站專案嵌套一個文件類型(相關)在**解決方案資源管理員**中的另一個檔案類型(主文件類型)。
 
- 例如，下列程式碼會指定 IronPython 後置檔案與 .aspx 檔案相關。 在 IronPython 網站方案中建立新的 .aspx 網頁時，會產生新的 .py 原始程式檔，並顯示為 .aspx 頁面的子節點。
+ 例如,以下代碼指定 IronPython 代碼背後檔與 .aspx 文件相關。 在 IronPython 網站解決方案中建立新的 .aspx Web 頁時,將生成新的 .py 源檔,並顯示為 .aspx 頁的子節點。
 
 ```
 [WebSiteProjectRelatedFiles("aspx", "py")]
 public class PythonProjectPackage : ProjectPackage
 ```
 
-## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute
- 這個屬性會放在語言專案封裝上。 它會選取語言的 IntelliSense 提供者。
+## <a name="provideintellisenseproviderattribute"></a>提供感知提供者屬性
+ 此屬性放置在語言專案包上。 它為語言選擇 IntelliSense 提供程式。
 
- 例如，下列程式碼指定應該視需要建立 PythonIntellisenseProvider 的實例 <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>，以提供語言服務。
+ 例如,以下代碼指定應按需創建 PythonIntellisense Provider<xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>的實例來提供語言服務。
 
 ```
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]
 public class PythonPackage : Package, IOleComponent
 ```
 
- 當要求具有程式碼的網頁但未快取時，IVsIntellisenseProject 執行會處理參考並呼叫語言編譯器。
+ IVsIntellisense Project 在請求包含代碼的 Web 頁但不緩存時處理引用並調用語言編譯器。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [網站支援](../../extensibility/internals/web-site-support.md)

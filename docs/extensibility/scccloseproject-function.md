@@ -1,5 +1,5 @@
 ---
-title: SccCloseProject 函式 |Microsoft Docs
+title: SccClose專案功能 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccCloseProject function
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a5fe721a3b51f4d3f210e7f2d5450e4f4bc6f41
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 71df385bc0cf42c2437abfd117c2f84bda5b5432
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333937"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701053"
 ---
-# <a name="scccloseproject-function"></a>SccCloseProject 函式
-此函式會關閉專案時，標示特定的工作階段結束。
+# <a name="scccloseproject-function"></a>SccClose 專案功能
+此函數關閉項目,標誌著特定會話的結束。
 
 ## <a name="syntax"></a>語法
 
@@ -31,22 +31,22 @@ SCCRTN SccCloseProject (
 ```
 
 ### <a name="parameters"></a>參數
- pvContext 原始檔控制外掛程式的內容結構。
+ pvContext 原始程式碼管理外掛程式上下文結構。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函數的源碼管理外掛程式實現應返回以下值之一:
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|已成功關閉專案。|
-|SCC_E_PROJNOTOPEN|沒有任何專案目前開啟。|
-|SCC_E_NOTAUTHORIZED|若要執行這項作業不允許的使用者。|
-|SCC_E_NONSPECIFICERROR|不明確的失敗。|
+|SCC_OK|專案已成功關閉。|
+|SCC_E_PROJNOTOPEN|當前未打開任何專案。|
+|SCC_E_NOTAUTHORIZED|不允許使用者執行此操作。|
+|SCC_E_NONSPECIFICERROR|非特異性故障。|
 
 ## <a name="remarks"></a>備註
- [SccOpenProject](../extensibility/sccopenproject-function.md)一定會呼叫此函式前面。 呼叫此函式接下來是呼叫`SccOpenProject`函式或[SccUninitialize](../extensibility/sccuninitialize-function.md)，完全結束原始檔控制系統的連線。
+ 在此函數之前始終調用[SccOpenProject。](../extensibility/sccopenproject-function.md) 然後調用此函數後,調用`SccOpenProject`函數或[SccUn 初始化](../extensibility/sccuninitialize-function.md),從而完全結束與原始程式碼管理系統的連接。
 
 ## <a name="see-also"></a>另請參閱
-- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

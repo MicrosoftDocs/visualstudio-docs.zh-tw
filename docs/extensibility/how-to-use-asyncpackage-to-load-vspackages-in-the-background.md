@@ -1,63 +1,63 @@
 ---
-title: 作法：使用 AsyncPackage 載入 Vspackage 在背景中的 |Microsoft Docs
+title: 如何:使用異步包在後台載入 VS 包 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64514a6d43d580fbda142dfa65bb3a2d384dff4e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 77690a1947f82f97c4aa12809a80ea61335d216d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324774"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710622"
 ---
-# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>作法：使用 AsyncPackage 載入 Vspackage 在背景中
-正在載入和初始化的 VS 套件可能會導致磁碟 I/O。 如果這類的 I/O 會發生在 UI 執行緒上，它可能會導致回應性問題。 為了解決這個問題，Visual Studio 2015 導入了<xref:Microsoft.VisualStudio.Shell.AsyncPackage>類別，可讓背景執行緒上的封裝載入。
+# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>如何:使用非同步包在後台載入 VS 套件
+載入和初始化 VS 包可能會導致磁碟 I/O。 如果此類I/O發生在UI線程上,則可能導致回應問題。 為了解決這個問題,Visual Studio 2015<xref:Microsoft.VisualStudio.Shell.AsyncPackage>引入了允許在後台線程上載入包的類。
 
-## <a name="create-an-asyncpackage"></a>建立 AsyncPackage
- 您可以開始建立 VSIX 專案 (**檔案** > **新增** > **專案** > **Visual C#**  > **擴充性** > **VSIX 專案**) 和專案中加入 VSPackage (以滑鼠右鍵按一下專案並**新增** > **新的項目** >   **C#項目** > **擴充性** >  **Visual Studio 套件**)。 您接著可以建立您的服務，並將這些服務新增至您的套件。
+## <a name="create-an-asyncpackage"></a>建立非同步
+ 您可以開始建立 VSIX 專案**Project** > (**檔案** > **新專案** > **視覺化 C_** > 延伸**VSIX** > **專案**) 和向專案添加 VS 套件 (右鍵按一下專案,**新增新** > **專案** > **C# 專案** > **)擴展可視化** > **工作室套件**)。 然後,您可以創建服務並將這些服務添加到包中。
 
-1. 衍生中的套件<xref:Microsoft.VisualStudio.Shell.AsyncPackage>。
+1. 從<xref:Microsoft.VisualStudio.Shell.AsyncPackage>派生包。
 
-2. 如果您要提供其查詢可能會導致您的套件以載入的服務：
+2. 如果您提供的服務查詢可能會導致載入您的套件:
 
-    表示 Visual studio 封裝是安全的背景載入，以及選擇加入此行為，您<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>應該設定**AllowsBackgroundLoading**屬性設為 true，在屬性建構函式。
+    要向 Visual Studio 指示您的包對後台載入是安全的,並選擇加入<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>此行為, 您應該在屬性建構函數中將 **「允許後台載入**」屬性設置為 true。
 
    ```csharp
    [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
 
    ```
 
-    若要指出 Visual studio 會安全地具現化您的服務在背景執行緒上，您應該設定<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttributeBase.IsAsyncQueryable%2A>屬性設為 true，在<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>建構函式。
+    要向 Visual Studio 指示在後台線程上實例化服務是安全的,應在構造<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttributeBase.IsAsyncQueryable%2A><xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>函數中 將屬性設置為 true。
 
    ```csharp
    [ProvideService(typeof(SMyTestService), IsAsyncQueryable = true)]
 
    ```
 
-3. 如果您透過 UI 內容載入，則您應該指定**PackageAutoLoadFlags.BackgroundLoad**如<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>或旗標的值 (0x2) 寫入做為您的封裝自動載入項目的值。
+3. 如果透過 UI 上下文載入,則<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>應將或值 (0x2) 的 **「包自動載入 Flags」** 指定到作為包自動載入條目的值編寫的標誌中的後台載入。
 
    ```csharp
    [ProvideAutoLoad(UIContextGuid, PackageAutoLoadFlags.BackgroundLoad)]
 
    ```
 
-4. 如果您有要執行的非同步初始化工作，您應該覆寫<xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>。 移除`Initialize()`VSIX 範本所提供的方法。 (`Initialize()`方法中的**AsyncPackage**密封格式)。 您可以使用任一<xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A>方法，以非同步的服務加入您的套件。
+4. 如果要執行非同步初始化工作,則應重寫<xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>。 刪除`Initialize()`VSIX 範本提供的方法。 (`Initialize()`**非同步包**中的方法是密封的)。 可以使用任何<xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A>方法向包添加非同步服務。
 
-    注意：若要呼叫`base.InitializeAsync()`，您可以變更您的程式碼，以：
+    註:`base.InitializeAsync()`要 呼叫 ,您可以將原始碼變更為:
 
    ```csharp
    await base.InitializeAsync(cancellationToken, progress);
    ```
 
-5. 您必須小心進行 Rpc （遠端程序呼叫） 從您的非同步初始化程式碼 (在**InitializeAsync**)。 這些可能是當您呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>直接或間接。  需要同步處理的負載時，UI 執行緒將會封鎖使用<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>。 預設封鎖模式中，會停用 Rpc。 這表示，如果您嘗試使用 RPC 從非同步工作時，您會鎖死 UI 執行緒是否正在等候您要載入的封裝本身。 一般的替代做法是您在 UI 執行緒的程式碼封送處理，如有需要使用類似**可聯結工作 Factory**的<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>或一些其他不會使用 RPC 的機制。  請勿使用**ThreadHelper.Generic.Invoke**或通常會封鎖呼叫執行緒等候取得至 UI 執行緒。
+5. 您必須注意不要從非同步初始化代碼(**初始化 Async**中)進行 RPC(遠端過程呼叫)。 當您直接或間接調用<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>時,可能會發生這些情況。  當需要同步載入時,UI 線程將<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>使用阻止。 默認阻止模型禁用 RPC。 這意味著,如果您嘗試使用來自非同步任務的 RPC,如果 UI 線程本身正在等待載入套件,則將死鎖。 通常的替代方法是,如果需要,請使用可**加入任務工廠**<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>或其他不使用 RPC 的機制將代碼封送到 UI 線程。  不要使用**ThreadHelper.generic.Invoke 或**通常阻止等待到達 UI 線程的調用線程。
 
-    注意：您應該避免使用**GetService**或是**QueryService**中您`InitializeAsync`方法。 如果您有使用這些，您必須先切換至 UI 執行緒。 替代方法是使用<xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A>從您**AsyncPackage** (藉由將它轉型<xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>。)
+    注意:您應該避免在方法`InitializeAsync`中使用**取得服務**或**查詢服務**。 如果必須使用這些線程,則需要首先切換到 UI 線程。 另一種方法是從<xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A>**Async 套件**中使用(將其強制<xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>轉換到 。)
 
-   C#: 建立 AsyncPackage:
+   C#: 建立非同步套件:
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
@@ -72,29 +72,29 @@ public sealed class TestPackage : AsyncPackage
 }
 ```
 
-## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>將現有的 VSPackage 轉換成 AsyncPackage
- 大部分的工作是建立新的相同**AsyncPackage**。 請遵循步驟 1 到 5 上面。 您也需要額外的請小心使用下列建議：
+## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>將現有 VS 套件轉換為非同步套件
+ 大多數工作與創建新的**Async 包**相同。 按照上面的步驟 1 到 5。 您還需要格外小心以下建議:
 
-1. 請務必移除`Initialize`覆寫，您必須在您的套件。
+1. 請記住刪除套件中的`Initialize`重寫。
 
-2. 避免死結 （deadlock）：可能會在您的程式碼中隱藏的 Rpc。 這現在會在背景執行緒上發生。 請確定如果您正在使用 RPC (比方說， **GetService**)，您必須 (1) 切換至主執行緒，或 （2） 使用非同步版本的 API，如果有一個存在 (比方說， **GetServiceAsync**).
+2. 避免死鎖:代碼中可能有隱藏的 RPC。 現在發生在後台線程上。 請確保,如果要進行 RPC(例如 **,GetService),** 則需要 (1) 切換到主線程,或者 (2) 如果存在 API 的異步版本(例如 **,Get ServiceAsync)。**
 
-3. 請勿過於頻繁執行緒之間進行切換。 嘗試將當地語系化中的背景執行緒，以縮短載入時間可能會發生的工作。
+3. 請勿在線程之間切換過於頻繁。 嘗試當地語系化在後台線程中可能發生的工作,以減少載入時間。
 
-## <a name="querying-services-from-asyncpackage"></a>從 AsyncPackage 查詢服務
- **AsyncPackage**可能會或可能不取決於呼叫端會以非同步方式載入。 比方說，
+## <a name="querying-services-from-asyncpackage"></a>從非同步查詢服務
+ **Async 包**可能載入,也可能不同步載入,具體取決於調用方。 例如，
 
-- 如果呼叫端呼叫**GetService**或是**QueryService** (這兩個同步 Api) 或
+- 如果呼叫者通話**取得服務**或**查詢服務**(同時使用同步 API)或
 
-- 如果呼叫端呼叫**IVsShell::LoadPackage** (或**IVsShell5::LoadPackageWithContext**) 或
+- 如果呼叫者來**叫 IVsShell:載入套件**(或**IVsShell5::loadPackage 與上下文**) 或
 
-- UI 內容，就會觸發負載，但您未指定 UI 內容機制，您可以以非同步方式載入
+- 負載由 UI 上下文觸發,但您沒有指定 UI 上下文機制可以非同步載入您
 
-  然後會以同步方式載入封裝。
+  然後,您的包將同步載入。
 
-  您的套件仍有機會 （在其非同步初始化階段） 要執行的作業關閉 UI 執行緒，但會封鎖 UI 執行緒，該工作完成。 如果呼叫端必須使用**IAsyncServiceProvider**來以非同步方式查詢您的服務，然後您的載入和初始化時，必須以非同步方式假設它們不會立即產生的工作物件上封鎖。
+  包仍然有機會(處於異步初始化階段)從 UI 線程執行工作,儘管 UI 線程將被阻止完成該工作。 如果調用方使用**IAsync ServiceProvider**對服務進行非同步查詢,則載入和初始化將以異步方式完成,前提是它們不會立即阻止生成的任務物件。
 
-  C#: 如何以非同步方式查詢服務：
+  C#:如何非同步查詢服務:
 
 ```csharp
 using Microsoft.VisualStudio.Shell;

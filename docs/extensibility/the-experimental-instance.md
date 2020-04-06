@@ -1,5 +1,5 @@
 ---
-title: 實驗執行個體 |Microsoft Docs
+title: 實驗實例 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,30 +7,30 @@ helpviewer_keywords:
 - VSPackages, experimental builds
 - VSIP, experimental builds
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 773581e7cf9e0f12f507dcd3c768d88724da9f80
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8e2284767a0aa6be58c0f7e38c912783728914cb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316423"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699032"
 ---
 # <a name="the-experimental-instance"></a>實驗執行個體
-為了確保您的 Visual Studio 開發環境，從未經測試的應用程式可能會變更，請 VSSDK 提供實驗性的空間，可供您實驗。 像往常一樣，使用 Visual Studio 開發新的應用程式，但您使用此實驗的執行個體執行。
+為了保護您的 Visual Studio 開發環境免受可能更改它的未經測試的應用程式的影響,VSSDK 提供了一個實驗空間,可用於實驗。 像往常一樣使用 Visual Studio 來開發新應用程式,但使用此實驗實例運行它們。
 
- VSIX 封裝每個應用程式會啟動偵錯模式中的 Visual Studio 實驗執行個體。
+ 每個具有 VSIX 套件的應用程式都會在除錯模式下啟動 Visual Studio 實驗實例。
 
- 如果您想要開始在特定的方案之外的 Visual Studio 實驗執行個體，請在命令視窗執行下列命令：
+ 如果要在特定解決方案之外啟動 Visual Studio 的實驗實例,在命令視窗中執行以下命令:
 
- " *\<Visual studio installation path>* \Common7\IDE\devenv.exe" /RootSuffix Exp
+ "*\<視覺工作室安裝路徑>*[公共7_IDE_devenv.exe] /RootSuffix Exp
 
 > [!NOTE]
-> 實驗性的執行個體底下的登錄寫入`<version number>Exp`和`<version number>Exp_Config`節點。 例如 Visual Studio 2015 實驗登錄區是
+> 實驗實例寫入`<version number>Exp``<version number>Exp_Config`和節點下的註冊表。 例如,Visual Studio 2015 實驗註冊表區域是
 >
 > `HKCU\Software\Microsoft\VisualStudio\14.0Exp` 和 `HKCU\Software\Microsoft\VisualStudio\14.0Exp_Config`
 
- 我們建議您在實驗執行個體中執行您的延伸模組，在開發過程。 當您部署延伸模組時，它會在開發執行個體中執行。 如需有關如何註冊應用程式的詳細資訊，請參閱 <<c0> [ 註冊 Vspackage](../extensibility/internals/registering-vspackages.md)。
+ 我們建議您在開發擴展時在實驗實例中運行擴展。 部署擴展時,它將在開發實例中運行。 有關註冊應用程式的詳細資訊,請參閱[註冊 VS 包](../extensibility/internals/registering-vspackages.md)。

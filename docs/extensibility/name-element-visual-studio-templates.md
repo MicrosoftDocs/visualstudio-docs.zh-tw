@@ -1,5 +1,5 @@
 ---
-title: Name 元素 （Visual Studio 範本） |Microsoft Docs
+title: 名稱元素(可視化工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - Name element [Visual Studio project templates]
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b0365740f5ea8ab20ed79d077134afd32356bcc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344726"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702449"
 ---
-# <a name="name-element-visual-studio-templates"></a>Name 元素 （Visual Studio 範本）
-指定範本的名稱，因為它會出現在**新的專案**或是**加入新項目** 對話方塊。
+# <a name="name-element-visual-studio-templates"></a>名稱元素(視覺化工作室範本)
+指定範本的名稱,如範本顯示在 **「新專案**」或 **「新增新專案」** 對話框中。
 
- \<VSTemplate> \<TemplateData> \<Name>
+ \<VStemplate \<\<>模板数据>名称>
 
 ## <a name="syntax"></a>語法
 
@@ -42,8 +42,8 @@ ms.locfileid: "66344726"
 
 |屬性|描述|
 |---------------|-----------------|
-|`Package`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 套件的 GUID 識別碼。|
-|`ID`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 資源識別碼。|
+|`Package`|可選屬性,用於高級使用者方案。<br /><br /> 指定 Visual Studio 套件識別碼的 GUID。|
+|`ID`|可選屬性,用於高級使用者方案。<br /><br /> 指定 Visual Studio 資源識別碼。|
 
 ### <a name="child-elements"></a>子元素
  無。
@@ -52,18 +52,18 @@ ms.locfileid: "66344726"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
- 需要的文字值，除非`Package`和`ID`屬性使用。
+ 除非使用 `Package` 和 `ID` 屬性，否則需要文字值。
 
- 文字提供範本的名稱。
+ 文字能提供範本的名稱。
 
 ## <a name="remarks"></a>備註
  `Name` 是 `TemplateData` 的必要子項目。
 
 ## <a name="example"></a>範例
- 下列範例顯示的專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。
+ 下面的範例顯示了[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式的專案範本的元數據。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -90,5 +90,5 @@ ms.locfileid: "66344726"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
-- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)

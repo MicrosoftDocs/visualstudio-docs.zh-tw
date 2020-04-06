@@ -1,121 +1,121 @@
 ---
-title: 發行延伸模組使用命令列
+title: 使用命令列發佈延伸
 ms.date: 07/12/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing extensions
 - extension, publishing
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a6b5531bc5dc138f2f90a0a67da39f9583bc4b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 40be0252218f39b4ff98b58caedd7f9f20ce6d5d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320642"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697119"
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>逐步解說：發行的 Visual Studio 擴充功能，透過命令列
+# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>演練:通過命令行發佈可視化工作室擴展
 
-本逐步解說示範如何將 Visual Studio 延伸模組發佈至 Visual Studio Marketplace 使用命令列。 當您新增您的延伸模組至 Marketplace 時，開發人員可以使用[**擴充功能和更新**](../ide/finding-and-using-visual-studio-extensions.md)對話方塊，即可瀏覽是否那里新的和更新的延伸模組。
+本演練演示如何使用命令行將可視化工作室擴展發佈到可視化工作室市場。 將擴展添加到應用商店時,開發人員可以使用[**「擴展和更新**](../ide/finding-and-using-visual-studio-extensions.md)」對話框流覽其中的新擴展和更新的擴展。
 
-VsixPublisher.exe 是發佈至 Marketplace 的 Visual Studio 擴充功能的命令列工具。 它可以存取的 ${VSInstallDir}\VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe。 用於此工具的命令是：**發佈**， **createPublisher**， **deletePublisher**， **deleteExtension**， **登入**，**登出**。
+VsixPublisher.exe 是用於將可視化工作室擴展發佈到應用商店的命令列工具。 可以從 ${VSInstallDir}VSSDK\VisualStudio 整合的\工具\Bin_VsixPublisher.exe 存取它。 此工具上可用的指令是:**請發佈**、**建立發行者**,**刪除發行者**,**刪除延伸**, 登入,**請登**入 , 請登入 ,**請登入**。
 
 ## <a name="commands"></a>命令
 
-### <a name="publish"></a>發行
+### <a name="publish"></a>publish
 
-將延伸模組發佈至 Marketplace。 Vsix、 exe/msi 檔案或連結，可以是延伸模組。 如果延伸模組已存在具有相同的版本，它會覆寫擴充功能。 如果延伸模組不存在，它會建立新的延伸模組。
+發佈到應用商店的擴展。 擴展名可以是 vsix、exe/msi 檔案或連結。 如果擴展已使用相同的版本存在,它將覆蓋擴展。 如果擴展不存在,它將創建新擴展。
 
-|命令選項 |描述 |
+|指令選項 |描述 |
 |---------|---------|
-|裝載 （必要） | 若要發行裝載或做為 「 詳細資訊 URL 」 的連結可能是路徑。 |
-|publishManifest （必要） | 發行路徑資訊清單使用的檔案。 |
-|ignoreWarnings | 發行擴充功能時，忽略警告的清單。 發行延伸模組時，這些警告會顯示為命令列的訊息。 (例如，"VSIXValidatorWarning01，VSIXValidatorWarning02")
-|personalAccessToken | 個人存取權杖 (PAT)，用來驗證 「 發行者 」。 如果未提供，PAT 會取得從登入的使用者。 |
+|有效負載(必要) | 要發佈的有效負載的路徑或用作"更多資訊 URL"的連結。 |
+|發佈清單(必要) | 要使用的發佈清單檔的路徑。 |
+|忽略警告 | 發布擴展時要忽略的警告清單。 發佈擴展時,這些警告顯示為命令行消息。 (例如,"VSIX 驗證器警告 01,VSIX 驗證器警告 02")
+|個人存取權杖 | 用於對發佈者進行身份驗證的個人訪問權杖 (PAT)。 如果未提供,則從登錄使用者獲取 PAT。 |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
 ```
 
-### <a name="createpublisher"></a>createPublisher
+### <a name="createpublisher"></a>建立發行者
 
-在 Marketplace 上建立 「 發行者 」。 也會記錄 「 發行者 」 端插入後續的動作 （例如刪除/發佈擴充功能） 的機器。
+在應用商店中創建發行者。 還將發佈者記錄到計算機中以進行將來的操作(例如,刪除/發佈擴展)。
 
-|命令選項 |描述 |
+|指令選項 |描述 |
 |---------|---------|
-|displayName （必要） | 發行者顯示名稱。 |
-|publisherName （必要） | 「 發行者 」 （例如，識別項） 的名稱。 |
-|personalAccessToken （必要） | 個人存取權杖，用來驗證 「 發行者 」。 |
-|shortDescription | 「 發行者 」 （不是檔案） 的簡短描述。 |
-|longDescription | 「 發行者 」 （不是檔案） 的詳細描述。 |
+|顯示名稱(必要) | 顯示發佈者的名稱。 |
+|發行者名稱 (必要) | 發行者的名稱(例如標識符)。 |
+|個人存取權杖(必要) | 用於對發佈者進行身份驗證的個人訪問權杖。 |
+|shortDescription | 發佈者的簡短描述(不是檔)。 |
+|長描述 | 發行者(不是檔)的長描述。 |
 
 ```
 VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName "{Publisher Display Name}" -personalAccessToken "{Personal Access Token}"
 ```
 
-### <a name="deletepublisher"></a>deletePublisher
+### <a name="deletepublisher"></a>刪除發行者
 
-刪除在 Marketplace 上的 「 發行者 」。
+刪除應用商店上的發行者。
 
-|命令選項 |描述 |
+|指令選項 |描述 |
 |---------|---------|
-|publisherName （必要） | 「 發行者 」 （例如，識別項） 的名稱。 |
-|personalAccessToken （必要） | 個人存取權杖，用來驗證 「 發行者 」。 |
+|發行者名稱 (必要) | 發行者的名稱(例如標識符)。 |
+|個人存取權杖(必要) | 用於對發佈者進行身份驗證的個人訪問權杖。 |
 
 ```
 VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAccessToken "{Personal Access Token}"
 ```
 
-### <a name="deleteextension"></a>deleteExtension
+### <a name="deleteextension"></a>刪除延伸
 
-從 Marketplace 刪除延伸模組。
+從應用商店中刪除擴展。
 
-|命令選項 |描述 |
+|指令選項 |描述 |
 |---------|---------|
-|extensionName （必要） | 若要刪除延伸模組的名稱。 |
-|publisherName （必要） | 「 發行者 」 （例如，識別項） 的名稱。 |
-|personalAccessToken | 個人存取權杖，用來驗證 「 發行者 」。 如果未提供，pat 會取得從登入的使用者。 |
+|分名(必填) | 要刪除的擴展的名稱。 |
+|發行者名稱 (必要) | 發行者的名稱(例如標識符)。 |
+|個人存取權杖 | 用於對發佈者進行身份驗證的個人訪問權杖。 如果未提供,則從登錄用戶獲取 pat。 |
 
 ```
 VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherName "{Publisher Name}"
 ```
 
-### <a name="login"></a>登入
+### <a name="login"></a>login
 
-登入電腦的 「 發行者 」。
+將發行者記錄到計算機中。
 
-|命令選項 |描述 |
+|指令選項 |描述 |
 |---------|---------|
-|personalAccessToken （必要項 | 個人存取權杖，用來驗證 「 發行者 」。 |
-|publisherName （必要） | 「 發行者 」 （例如，識別項） 的名稱。 |
-|overwrite | 指定應該在新的個人存取權杖與覆寫任何現有的發行者。 |
+|個人存取權杖(必要 | 用於對發佈者進行身份驗證的個人訪問權杖。 |
+|發行者名稱 (必要) | 發行者的名稱(例如標識符)。 |
+|overwrite | 指定任何現有發行者都應使用新的個人訪問權杖進行覆蓋。 |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
 ```
 
-### <a name="logout"></a>登出
+### <a name="logout"></a>logout
 
-記錄從機器傳出的 「 發行者 」。
+將發佈者從計算機中註銷。
 
-|命令選項 |描述 |
+|指令選項 |描述 |
 |---------|---------|
-|publisherName （必要） | 「 發行者 」 （例如，識別項） 的名稱。 |
-|ignoreMissingPublisher | 指定此工具應該沒有錯誤，是否指定的發行者是未已登入。 |
+|發行者名稱 (必要) | 發行者的名稱(例如標識符)。 |
+|忽略遺失的發行者 | 指定如果指定的發行者尚未登錄,該工具不應出錯。 |
 
 ```
 VsixPublisher.exe logout -publisherName "{Publisher Name}"
 ```
 
-## <a name="publishmanifest-file"></a>publishManifest 檔案
+## <a name="publishmanifest-file"></a>發佈清單檔案
 
-PublishManifest 檔案由**發佈**命令。 它代表有關 Marketplace 小組須知的延伸模組的所有中繼資料。 正在上傳的延伸模組是否從 VSIX 擴充功能，「 識別 」 屬性必須只有"internalName 」 設定。 這是因為可以從 vsixmanifest 檔案產生的 「 身分識別 」 屬性的其餘部分。 如果 msi/exe 或連結延伸模組的延伸模組，使用者必須提供必要的欄位中的 「 身分識別 」 屬性。 資訊清單的其餘部分包含特定 Marketplace 資訊 (例如，類別，是否問與答已啟用，等等。)。
+**發布**命令使用 publishManifest 檔。 它表示有關應用商店需要知道的擴展的所有元數據。 如果上載的擴展來自 VSIX 擴展,"標識"屬性必須僅設置"內部名稱"。 這是因為可以從 vsixmanifest 檔生成"標識"屬性的其餘部分。 如果擴展是 msi/exe 或連結擴展,則用戶必須在"標識"屬性中提供所需的欄位。 清單的其餘部分包含特定於應用商店的資訊(例如,類別、是否啟用Q&A等)。
 
-VSIX 延伸模組 publishManifest 檔案範例：
+VSIX 延伸名稱發布清單檔範例:
 
 ```json
 {
@@ -134,7 +134,7 @@ VSIX 延伸模組 publishManifest 檔案範例：
 }
 ```
 
-MSI/EXE 或連結 publishManifest 檔案範例：
+MSI/EXE 或 LINK 發佈清單檔範例:
 
 ```json
 {
@@ -167,7 +167,7 @@ MSI/EXE 或連結 publishManifest 檔案範例：
 
 ## <a name="asset-files"></a>資產檔案
 
-資產檔案可供讀我檔案中內嵌影像等項目。 例如，如果擴充功能具有下列的 < 概觀 > Markdown 文件：
+可以提供資產檔,用於在讀讀檔中嵌入圖像等內容。 例如,如果擴展具有以下「概述」標記文檔:
 
 ```markdown
 TestExtension
@@ -176,7 +176,7 @@ This is test extension.
 ![Test logo](images/testlogo.png "Test logo")
 ```
 
-若要解決"images/testlogo.png 」，在上述範例中，使用者可以在提供 「 Assetfile"其發佈像下面資訊清單：
+為了解決前面的示例中的「圖像/testlogo.png」,用戶可以在其發佈清單中提供「資產檔」,如下所示:
 
 ```json
 {
@@ -190,108 +190,108 @@ This is test extension.
 }
 ```
 
-## <a name="publishing-walkthrough"></a>發行的逐步解說
+## <a name="publishing-walkthrough"></a>發佈演練
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>Prerequisites
 
-若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 有關詳細資訊,請參閱[安裝可視化工作室 SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
-### <a name="create-a-visual-studio-extension"></a>建立 Visual Studio 擴充功能
+### <a name="create-a-visual-studio-extension"></a>建立視覺化工作室延伸
 
-在此案例中，我們將使用預設 VSPackage 擴充功能，但相同的步驟都適用於所有類型的延伸模組。
+在這種情況下,我們將使用預設的 VSPackage 擴展,但相同的步驟對於每種擴展都有效。
 
-1. 在 C# 中名為"TestPublish 」 具有功能表命令建立 VSPackage。 如需詳細資訊，請參閱[建立您的第一個延伸模組：Hello World](../extensibility/extensibility-hello-world.md)。
+1. 在 C# 中創建一個 VSPackage,名為"TestPublish",具有功能表命令。 有關詳細資訊,請參閱[創建您的第一個擴展:你好世界](../extensibility/extensibility-hello-world.md)。
 
 ### <a name="package-your-extension"></a>封裝您的延伸模組
 
-1. 使用產品名稱、 作者和版本的正確資訊來更新延伸模組 vsixmanifest。
+1. 使用有關產品名稱、作者和版本的正確資訊更新擴展 vsix 清單。
 
-   ![更新延伸模組 vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![更新延伸 vsixmanifest](media/update-extension-vsixmanifest.png)
 
-2. 在建置您的延伸模組**發行**模式。 現在您的延伸模組會封裝成 VSIX \bin\Release 資料夾中。
+2. 在**釋放**模式下生成擴展。 現在,您的擴展將打包為 [bin_釋放資料夾中的 VSIX》。
 
-3. 您可以按兩下來驗證安裝 VSIX。
+3. 您可以雙擊 VSIX 以驗證安裝。
 
-### <a name="test-the-extension"></a>測試此擴充功能
+### <a name="test-the-extension"></a>測試延伸
 
- 發佈擴充功能之前，請建置並測試它，以確定已正確安裝 Visual Studio 的實驗執行個體中。
+ 在分發擴展之前,請生成並對其進行測試,以確保它在 Visual Studio 的實驗實例中正確安裝。
 
-1. 在 Visual Studio 中開始偵錯。 若要開啟 Visual Studio 的實驗執行個體。
+1. 在可視化工作室中,開始調試。 打開視覺工作室的實驗實例。
 
-2. 在實驗執行個體中，移至**工具**功能表，然後按一下**擴充功能和更新...** .TestPublish 擴充功能應該會出現在中間窗格中，並啟用。
+2. 在實驗實例中,轉到 **"工具"** 功能表,然後單擊 **"擴展和更新..."。** 測試發佈擴展應顯示在中心窗格中並啟用。
 
-3. 在 [**工具**] 功能表中，請確定您看到 [測試] 命令。
+3. 在 **「工具」** 選單上,請確保看到測試命令。
 
-### <a name="publish-the-extension-to-the-marketplace-via-command-line"></a>透過命令列在 marketplace 中發行此延伸模組
+### <a name="publish-the-extension-to-the-marketplace-via-command-line"></a>通過命令列將擴展發佈到應用商店
 
-1. 請確定您已建立您的延伸模組的發行版本，而且它是最新狀態。
+1. 請確保您已構建擴展的發佈版本,並且該版本是最新的。
 
-2. 請確定您已建立 publishmanifest.json 和 overview.md 檔案。
+2. 請確保您已創建 publishmanifest.json 和overview.md檔。
 
-3. 開啟命令列，然後瀏覽至 ${VSInstallDir} \VSSDK\VisualStudioIntegration\Tools\Bin\ 目錄。
+3. 開啟命令列並導航到 $_VSInstallDir_VSSDK_VisualStudio 整合的\工具\Bin_目錄。
 
-4. 若要建立新的發行者，請使用下列命令：
+4. 要建立新發佈伺服器,請使用以下指令:
 
    ```
    VsixPublisher.exe createPublisher -publisherName "TestVSIXPublisher" -displayName "Test VSIX Publisher" -personalAccessToken "{Personal Access Token that is used to authenticate the publisher. If not provided, the pat is acquired from the logged-in users.}"
    ```
 
-5. 在發行者端成功建立，您會看到下列的命令列訊息：
+5. 成功建立發行者時,您將看到以下命令列訊息:
 
    ```
    Added 'Test VSIX Publisher' as a publisher on the Marketplace.
    ```
 
-6. 您可以確認您所瀏覽至您建立新的發行者[Visual Studio Marketplace](https://marketplace.visualstudio.com/manage/publishers)
+6. 您可以通過瀏[覽到 視覺化工作室市場](https://marketplace.visualstudio.com/manage/publishers)來驗證您建立的新發行者
 
-7. 若要發佈新的延伸模組，請使用下列命令：
+7. 要發佈新延伸,請使用以下命令:
 
    ```
    VsixPublisher.exe publish -payload "{Path to vsix file}"  -publishManifest "{path to publishManifest file}"
    ```
 
-8. 在發行者端成功建立，您會看到下列的命令列訊息：
+8. 成功建立發行者時,您將看到以下命令列訊息:
 
    ```
    Uploaded 'MyVsixExtension' to the Marketplace.
    ```
 
-9. 您可以確認您所瀏覽至發行新的延伸模組[Visual Studio Marketplace](https://marketplace.visualstudio.com/)
+9. 您可以通過導航到[可視化工作室市場](https://marketplace.visualstudio.com/)來驗證發佈的新擴展
 
-### <a name="install-the-extension-from-the-visual-studio-marketplace"></a>從 Visual Studio Marketplace 安裝延伸模組
+### <a name="install-the-extension-from-the-visual-studio-marketplace"></a>從視覺化工作室市場安裝擴充
 
-現在，發佈擴充功能時，將它安裝在 Visual Studio，並測試其存在。
+現在,擴展已發佈,請將其安裝在 Visual Studio 中並在那裡進行測試。
 
-1. 在 Visual Studio 中，在**工具**功能表上，按一下 **擴充功能和更新...** .
+1. 在可視化工作室中,在 **"工具"** 功能表上,單擊 **"擴展和更新..."。**
 
-2. 按一下  **Online** TestPublish 然後搜尋。
+2. 按下 **「連線」 然後**搜尋測試發佈。
 
-3. 按一下 [ **下載**]。 然後，延伸模組會排程進行安裝。
+3. 按一下 [下載]  。 然後,將計劃安裝擴展。
 
-4. 若要完成安裝，請關閉 Visual Studio 的所有執行個體。
+4. 要完成安裝,關閉可視化工作室的所有實例。
 
 ## <a name="remove-the-extension"></a>移除擴充功能
 
-從 Visual Studio Marketplace，並從您的電腦，您可以移除延伸模組。
+可以從可視化工作室應用商店和電腦中刪除擴展。
 
-### <a name="to-remove-the-extension-from-the-marketplace-via-command-line"></a>從命令列透過 Marketplace 中移除擴充功能
+### <a name="to-remove-the-extension-from-the-marketplace-via-command-line"></a>透過命令列從應用商店中移除擴展
 
-1. 如果您想要移除擴充功能，請使用下列命令：
+1. 如果要刪除延伸,請使用以下指令:
 
    ```
    VsixPublisher.exe deleteExtension -publisherName "TestVSIXPublisher" -extensionName "MyVsixExtension"
    ```
 
-2. 在成功刪除延伸模組，您會看到下列的命令列訊息：
+2. 成功刪除延伸後,您將看到以下命令列訊息:
 
    ```
    Removed 'MyVsixExtension' from the Marketplace.
    ```
 
-### <a name="to-remove-the-extension-from-your-computer"></a>若要從電腦移除擴充功能
+### <a name="to-remove-the-extension-from-your-computer"></a>從電腦中移除副檔名
 
-1. 在 Visual Studio 中，在**工具**功能表上，按一下**擴充功能和更新**。
+1. 在可視化工作室中,在 **「工具」** 功能表上,按一下 **「擴展和更新**」。
 
-2. 選取 「 MyVsixExtension"，然後按一下**解除安裝**。 然後將排程延伸模組解除安裝。
+2. 選擇"MyVsix 擴展",然後單擊 **"卸載**"。 然後,將安排卸載擴展。
 
-3. 若要完成解除安裝，請關閉所有 Visual Studio 執行個體。
+3. 要完成卸載,關閉可視化工作室的所有實例。

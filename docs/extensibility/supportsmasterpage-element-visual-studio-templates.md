@@ -1,5 +1,5 @@
 ---
-title: SupportsMasterPage 元素（Visual Studio 範本） |Microsoft Docs
+title: 支援主頁面元素(可視化工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <SupportsMasterPage> element [Visual Studio Templates]
 - SupportsMasterPage element [Visual Studio Templates]
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02c3915be318e7c4b3d82965f6d4640069f7a0c4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 384672303d00b72431820b98fa02d09e440a1de5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719389"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699457"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 項目 (Visual Studio 範本)
-指定是否在 [**加入新專案**] 對話方塊上啟用 [**選取主版頁面**] 核取方塊。
+指定在「**新增新項目**」 對話方塊上是否啟用了 **「選擇母版頁**」 「 複選框」。
 
- \<VSTemplate > \<TemplateData > \<SupportsMasterPage >
+ \<VS範本>\<範本資料>\<支援主頁面>
 
 ## <a name="syntax"></a>語法
 
@@ -38,27 +38,27 @@ ms.locfileid: "72719389"
 ### <a name="attributes"></a>屬性
  無。
 
-### <a name="child-elements"></a>子項目
+### <a name="child-elements"></a>子元素
  無。
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|指定將範本分類的資料，並定義它在 [**新增專案**] 或 [**新增專案**] 對話方塊中的顯示方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|指定對範本進行分類的資料,並定義範本在 **「新專案**」或「**新專案」** 對話框中的顯示方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 文字必須是 `true` 或 `false`，指出是否已在 [**加入新專案**] 對話方塊中啟用 [**選取主版頁面**] 核取方塊。
+ 文字必須為`true``false`或 ,指示「**新增新項目**」 對話方塊上是否啟用「**選擇母版頁**」 選單方。
 
 ## <a name="remarks"></a>備註
- `SupportsMasterPage` 是選擇性項目。 預設值是 `false`。
+  是選擇性元素。 預設值是 `false`。
 
- @No__t_0 元素僅適用于 Web 專案範本。
+ 該`SupportsMasterPage`元素僅適用於 Web 項範本。
 
 ## <a name="example"></a>範例
- 下列範例說明包含主版頁面支援之 Web 專案的中繼資料。
+ 下面的範例展示包含對母版頁的支援的 Web 專案的中繼資料。
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -82,6 +82,6 @@ ms.locfileid: "72719389"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

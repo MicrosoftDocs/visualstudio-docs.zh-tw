@@ -1,28 +1,28 @@
 ---
-title: 作法：使用登錄設定管理私人組件庫 |Microsoft Docs
+title: 如何:使用註冊表設置管理專用庫 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b4f33f7ecf974fe527f814b9febdc861101f1ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a2630fc71bea40a4d05e616ae336759ba62431a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318488"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710926"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>作法：使用登錄設定管理私用組件庫
-如果您是系統管理員或獨立模式 Shell 擴充功能的開發人員，您可以控制存取權的控制項、 範本和 Visual Studio 組件庫、 範例庫或私用組件庫中的工具。 若要讓資源庫，可以或無法使用，建立 *.pkgdef*描述的已修改的登錄機碼和其值的檔案。
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>如何:使用註冊表設置管理專用庫
+如果您是獨立命令程式擴展的管理員或開發人員,則可以控制對可視化工作室庫、範例庫或專用庫中的控制項、範本和工具的訪問。 要使庫可用或不可用,請創建一個 *.pkgdef*檔案,用於描述修改後的註冊表項及其值。
 
-## <a name="manage-private-galleries"></a>管理私人組件庫
- 您可以建立 *.pkgdef*檔案來控制多部電腦上的組件庫的存取。 此檔案必須具有下列格式。
+## <a name="manage-private-galleries"></a>管理私人畫廊
+ 您可以創建 *.pkgdef*檔案來控制對多台電腦上的庫的訪問。 此檔必須具有以下格式。
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
@@ -36,22 +36,22 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- `Repositories`索引鍵參考來啟用或停用資源庫。 Visual Studio 組件庫和範例資源庫使用下列存放庫的 Guid:
+ 該`Repositories`鍵是指要啟用或禁用的庫。 視覺化工作室庫與範例庫使用以下儲存庫 GUID:
 
-- Visual Studio 組件庫：0F45E408-7995-4375-9485-86B8DB553DC9
+- 視覺工作室畫廊 : 0F45E408-7995-4375-9485-86B8DB553DC9
 
-- 範例庫：AEB9CB40-D8E6-4615-B52C-27E307F8506C
+- 樣品庫 : AEB9CB40-D8E6-4615-B52C-27E307F8506C
 
-  `Disabled`值是選擇性的。 根據預設，會啟用資源庫。
+  該`Disabled`值是可選的。 默認情況下,啟用了庫。
 
-  `Priority`值會決定文件庫中所列的順序**選項** 對話方塊。 Visual Studio 元件庫優先順序 10 和範例庫優先順序 20。 私用組件庫啟動 100 的優先權。 如果數個組件庫中有相同的優先順序值，以其出現的順序由其當地語系化的值決定`DisplayName`屬性。
+  該`Priority`值確定 **「對話**框中列出庫的順序。 可視化工作室庫具有優先順序 10,示例庫具有優先順序 20。 私人畫廊從優先順序 100 開始。 如果多個庫具有相同的優先順序值,則它們顯示的順序由其本地化`DisplayName`屬性的值決定。
 
-  `Protocol`是 Atom 或 SharePoint 為基礎的組件庫的必要值。
+  基於`Protocol`Atom 或基於 SharePoint 的圖庫需要該值。
 
-  請`DisplayName`，或兩者`DisplayNameResourceID`和`DisplayNamePackageGuid`，必須指定。 如果指定 all，則`DisplayNameResourceID`和`DisplayNamePackageGuid`組用。
+  必須`DisplayName`指定`DisplayNameResourceID``DisplayNamePackageGuid`或兩者 以及與 。 如果全部指定,則使用`DisplayNameResourceID`和`DisplayNamePackageGuid`對。
 
-## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>停用使用.pkgdef 檔案 Visual Studio 組件庫
- 您可以停用資源庫中的 *.pkgdef*檔案。 下列項目會停用 Visual Studio 組件庫：
+## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>使用 .pkgdef 檔案禁用視覺化工作室庫
+ 您可以關閉 *.pkgdef*檔案中的庫。 以下條目禁用視覺工作室庫:
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]
@@ -59,7 +59,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- 下列項目會停用範例庫：
+ 以下項目關閉範例庫:
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]
@@ -68,4 +68,4 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [私用組件庫](../extensibility/private-galleries.md)
+- [私人畫廊](../extensibility/private-galleries.md)

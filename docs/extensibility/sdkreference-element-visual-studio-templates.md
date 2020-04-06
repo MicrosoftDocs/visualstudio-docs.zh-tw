@@ -1,20 +1,20 @@
 ---
-title: SDKReference 元素（Visual Studio 範本） |Microsoft Docs
+title: SDK 參考元素(可視化工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cf1b3bed942894e20132ecd7b06c1884caa9a93
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2f43c813e688c1e175f1d36e6f06125f92404c48
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720084"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700169"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 項目 (Visual Studio 樣板)
 指定項目範本使用 SDK 參考。
@@ -30,19 +30,19 @@ ms.locfileid: "72720084"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和項目
- 下列各節描述屬性、子項目和父項目。
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
  無。
 
-### <a name="child-elements"></a>子項目
+### <a name="child-elements"></a>子元素
  無。
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[參考資料](../extensibility/reference-element-visual-studio-templates.md)|指定項目加入專案時要加入的組件參考。|
+|[參考](../extensibility/reference-element-visual-studio-templates.md)|指定項目加入專案時要加入的組件參考。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
@@ -60,7 +60,7 @@ ms.locfileid: "72720084"
 ...
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [References 元素 (Visual Studio 範本)](../extensibility/references-element-visual-studio-templates.md)
 - [Reference 元素 (Visual Studio 範本)](../extensibility/reference-element-visual-studio-templates.md)
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

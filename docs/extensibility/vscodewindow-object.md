@@ -1,5 +1,5 @@
 ---
-title: VSCodeWindow 物件 |Microsoft Docs
+title: VSCode視窗物件 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,31 +8,31 @@ helpviewer_keywords:
 - views [Visual Studio SDK], VSCodeWindow object
 - VsCodeWindow object
 ms.assetid: cf5fe926-e784-4098-bc01-cac49c7c55c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36b7e0e6806f88efe373dffa3f21ba79baefb281
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 55739b1ef577123ac0395b4c5cfb1e3c5dbc779f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189048"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697963"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow 物件
-程式碼視窗是特殊的文件視窗，可以包含一或多個文字視圖，通常是 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> 物件。
+代碼視窗是一個專用文檔視窗,可以包含一個或多個文本視圖,通常<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>是 物件。
 
- 在架構上，程式碼視窗是在視窗框架內的文件視窗。 就功能而言，程式碼視窗只是包含額外功能的文件視窗。 在多重文件介面（MDI）模式中，程式碼視窗是 MDI 子框架。 如需詳細資訊，請參閱[使用舊版 API 自訂程式碼視窗](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015)。
+ 在架構結構上,代碼視窗是視窗框架內的文檔視窗。 在功能上,代碼視窗只是具有附加功能的文檔視窗。 在多文件介面 (MDI) 模式下,代碼視窗是 MDI 子幀。 關於詳細資訊,請參閱[使用舊 API 自訂代碼視窗](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015)。
 
- 下表包含 <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> 物件中的介面。
+ 下表包括物件中的<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>介面。
 
 |方法|描述|
 |------------|-----------------|
-|<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|提供一般存取機制，以找出全域唯一識別碼（GUID）識別的服務。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|表示多重文件介面（MDI）子系，其中包含一或多個程式碼視圖。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|填滿視窗框架。|
+|<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|提供通用存取機制,用於查找全域唯一標識碼 (GUID) 標識的服務。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|表示包含一個或多個代碼檢視的多個文檔介面 (MDI) 子級。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|填充視窗框架。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
-- [圖形編輯](https://www.microsoft.com/download/details.aspx?id=55984)
+- [數位編輯](https://www.microsoft.com/download/details.aspx?id=55984)

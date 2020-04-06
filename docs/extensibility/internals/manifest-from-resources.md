@@ -1,72 +1,72 @@
 ---
-title: 從 資源資訊清單 |Microsoft Docs
+title: 來自資源的清單 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 917397003d0e14bc9b5ff707926adf5f04f73baa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb853963cc5ca6fbe6080249daa8fcf9c08bf943
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328625"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707284"
 ---
 # <a name="manifest-from-resources"></a>來自資源的資訊清單
-從 [資源] 工具的資訊清單是根據影像資源 （.png 或.xaml 檔案） 的清單，並產生.imagemanifest 檔案，讓這些映像來搭配 Visual Studio 映像服務的主控台應用程式。 此外，此工具可用來將影像新增至現有的.imagemanifest。 這項工具可用於新增高 DPI 和佈景主題的 Visual Studio 延伸模組的映像的支援。 產生的.imagemanifest 檔案應包含在和 Visual Studio 擴充功能 (.vsix) 的一部分部署。
+"來自資源清單"工具是一個控制台應用程式,它獲取圖像資源清單(.png 或 .xaml 檔案),並生成一個 .image 清單檔,允許這些圖像與可視化工作室影像服務一起使用。 此外,此工具可用於將圖像添加到現有的 .image 清單。 此工具可用於將高 DPI 和圖像的鳴制支援添加到 Visual Studio 擴充中。 生成的 .imagemanifest 檔應包含在 Visual Studio 副檔名 (.vsix) 中並部署。
 
-## <a name="how-to-use-the-tool"></a>如何使用工具
+## <a name="how-to-use-the-tool"></a>如何使用該工具
  **語法**
 
- ManifestFromResources /resources:\<Dir1>;\<Img1> /assembly:\<AssemblyName> \<Optional Args>
+ 清單資源/資源:\<第1>;\<Img1>\</ 裝配\<:裝配 名稱>可選阿格斯>
 
  **引數**
 
 ||||
 |-|-|-|
-|**交換器名稱**|**備註**|**必要或選用**|
-|/resources|以分號分隔的映像 」 或 「 目錄清單。 這份清單一律應包含會在資訊清單中的映像的完整清單。 如果只指定的部分清單，不包含的項目將會遺失。<br /><br /> 如果指定的資源檔的影像區域，工具會分割成個別的映像加入資訊清單中的每個 subimage 之前。<br /><br /> 如果影像是.png 檔案，我們建議您格式化這類名稱，使工具可以填入適當的屬性，映像：\<名稱 >。\<寬度 >。\<高度 >.png。|必要|
-|/assembly|Managed 組件 （不包括副檔名） 或執行階段原生組件的路徑裝載 （相對於資訊清單的執行階段位置） 資源的名稱。|必要|
-|/manifest|要提供給產生的.imagemanifest 檔案的名稱。 這也可以包含在不同的位置中建立檔案的絕對或相對路徑。 預設名稱比對組件名稱。<br /><br /> 預設：\<目前的目錄 >\\< 組件\>.imagemanifest|Optional|
-|/guidName|要提供給所有產生的資訊清單中的映像的 GUID 符號的名稱。<br /><br /> 預設：AssetsGuid|Optional|
-|/rootPath|要去除之前建立受管理的資源 Uri 根路徑。 （這個旗標是協助工具，取得相對 URI 的路徑錯誤，導致無法載入資源的情況下）。<br /><br /> 預設：\<目前的目錄 >|Optional|
-|/recursive|設定這個旗標會告訴工具以遞迴方式搜尋 /resources 引數中的任何目錄。 省略此旗標將會在頂層-層次專用搜尋的目錄中。|Optional|
-|/isNative|當組件引數為原生組件的路徑，請設定此旗標。 當組件引數是 managed 組件的名稱，請省略這個旗標。 （請參閱附註 區段，如需有關此旗標的詳細資訊）。|Optional|
-|/newGuids|設定這個旗標會告訴工具建立的映像的 GUID 符號，而不是合併現有的資訊清單中的一個新的值。|Optional|
-|/newIds|設定這個旗標會告訴工具，以建立新的 ID 符號值，而不是將現有的資訊清單中的值合併每個映像。|Optional|
-|/noLogo|設定這個旗標，就會停止列印的產品和著作權資訊。|Optional|
-|/?|列印出說明資訊。|Optional|
-|/help|列印出說明資訊。|Optional|
+|**切換名稱**|**注意**|**必要或選擇**|
+|/資源|影像或目錄的分號分隔清單。 此清單應始終包含將在清單中的圖像的完整清單。 如果只提供了部分清單,則未包含的條目將丟失。<br /><br /> 如果給定的資源檔是圖像條,該工具將在將每個子映射添加到清單之前將其拆分為單獨的圖像。<br /><br /> 如果影像是 .png 檔,我們建議您設定這樣的名稱格式,以便該工具可以填寫影像的正確\<屬性: 名稱>。\<寬度>。\<高度>.png。|必要|
+|/裝配|託管程式集的名稱(不包括擴展)或承載資源的本機程式集的運行時路徑(相對於清單的運行時位置)。|必要|
+|/清單|要為生成的 .imagemanifest 檔提供的名稱。 這還可以包括一個絕對路徑或相對路徑,用於在不同位置創建檔。 默認名稱與程式集名稱匹配。<br /><br /> 預設值:\<目前目錄><\\\>程式集 .imagemanifest|選用|
+|/吉德名稱|要為生成的清單中的所有圖像為 GUID 符號提供的名稱。<br /><br /> 預設值:資產已恢復|選用|
+|/根路徑|在創建託管資源 URI 之前需要剝離的根路徑。 (此標誌用於幫助解決工具獲取相對 URI 路徑錯誤導致資源無法載入的情況。<br /><br /> 預設值:\<目前目錄>|選用|
+|/遞歸|設定此標誌會告訴工具遞迴地搜索 /resources 參數中的任何目錄。 省略此標誌將導致僅對目錄進行頂級搜索。|選用|
+|/是本機|當程式集參數是本機程式集的路徑時,設置此標誌。 當程式集參數是託管程式集的名稱時,省略此標誌。 (有關此標誌的其他資訊,請參閱"備註"部分。|選用|
+|/新吉|設定此標誌會告訴工具為圖像的 GUID 符號創建新值,而不是從現有清單合併該值。|選用|
+|/新識別碼|設定此標誌會告訴工具為每個圖像創建新的 ID 符號值,而不是合併現有清單中的值。|選用|
+|/noLogo|設置此標誌將停止列印產品和版權資訊。|選用|
+|/?|列印説明資訊。|選用|
+|/help|列印説明資訊。|選用|
 
  **範例**
 
-- ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative
+- 清單來源/資源:D:\影像/程式集:我的.程式集.名稱/本機
 
-- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest
+- 清單來源/資源:D:\影像\Image1.png;D:影像\Image1.xaml/程式集:我的.assembly.名稱/清單:MyImageManifest.imagemanifest
 
-- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
+- 清單來源/資源:D:\影像\Image1.png;D:影像\Image1.xaml/程式集:我的.assembly.名稱/guidName:MyImages/newGuids/newIds
 
 ## <a name="notes"></a>注意
 
-- 此工具僅支援.png 和.xaml 檔案。 將會忽略任何其他映像或檔案類型。 所有不受支援的類型，剖析的資源時，會產生警告。 如果不支援映像會找到此工具完成時剖析的資源，將會產生錯誤
+- 該工具僅支援 .png 和 .xaml 檔案。 將忽略任何其他圖像或文件類型。 針對分析資源時遇到的所有不支援的類型生成警告。 如果工具完成分析資源後找不到受支援的影像,則將產生錯誤
 
-- 藉由遵循建議的格式為.png 影像，此工具將會設定.png 大小/維度值的格式指定的大小，即使其不同於映像的實際大小。
+- 通過遵循建議的 .png 圖像格式,該工具將 .png 的大小/尺寸值設置為格式指定的大小,即使它與圖像的實際大小不同。
 
-- .Png 映像，則可以省略的寬度/高度的格式，但此工具會讀取映像的實際寬度/高度，並使用這些映像的大小/維度值。
+- 可以為 .png 圖像省略寬度/高度格式,但該工具將讀取圖像的實際寬度/高度,並將這些寬度/高度用於圖像的大小/尺寸值。
 
-- 針對相同.imagemanifest 多次相同的影像區域上執行此工具將會導致重複的資訊清單項目，因為此工具會嘗試將影像區域分割成獨立映像，並將它們新增至現有的資訊清單。
+- 在同一圖像條上多次為同一圖像清單運行此工具將導致重複的清單條目,因為該工具嘗試將圖像條拆分為獨立圖像並將這些圖像添加到現有清單。
 
-- 合併 （省略 /newGuids 或 /newIds），才應該執行工具所產生資訊清單。 自訂或透過其他方式所產生的資訊清單可能不正確地合併。
+- 合併(省略/新吉德或 /newIds)應僅針對工具生成的清單進行。 已自定義或通過其他方式生成的清單可能無法正確合併。
 
-- 針對原生組件所產生資訊清單可能需要透過手動編輯產生進行比對的資源識別碼，從原生組件的.rc 檔的 ID 符號之後。
+- 為本機程式集生成的清單可能需要在生成後進行手動編輯,以使 ID 符號與本機程式集的 .rc 檔案中的資源 ID 匹配。
 
 ## <a name="sample-output"></a>範例輸出
- **簡單的映像資訊清單**
+ **簡單的影像清單**
 
- 影像資訊清單會類似於此.xml 檔案：
+ 影像清單將類似於此 .xml 檔案:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -90,9 +90,9 @@ ms.locfileid: "66328625"
 </ImageManifest>
 ```
 
- **影像的影像區域的資訊清單**
+ **影像條的影像清單**
 
- 映像的程式資訊清單的影像區域將類似於此.xml 檔案：
+ 影像條的影像清單將類似於此 .xml 檔案:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -127,9 +127,9 @@ ms.locfileid: "66328625"
 </ImageManifest>
 ```
 
- **原生組件映像資源的映像資訊清單**
+ **本機程式集映像資源的影像清單**
 
- 原生映像的映像資訊清單會類似於此.xml 檔案：
+ 這個機映像影像清單會類似於此 .xml 檔案:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

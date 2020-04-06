@@ -1,34 +1,34 @@
 ---
-title: 伺服器 (Visual Studio SDK) |Microsoft Docs
+title: 伺服器(可視化工作室 SDK) |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - servers, debugging
 - debugging [Debugging SDK], servers
 ms.assetid: 62236d64-7956-448c-9ac3-5528f3edac1d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebd991a5bb61211a33cc965668c48644bdcf9a27
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 32fdbb5afca40c3b4fced468d2f9ef0ea5226c00
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348600"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712888"
 ---
 # <a name="servers-visual-studio-sdk"></a>伺服器 (Visual Studio SDK)
-在偵錯工具架構中， *server*:
+在除錯器架構結構中,*伺服器*:
 
-- 是一個容器的連接埠和連接埠提供者和通訊連接埠和連接埠提供者的工作階段偵錯管理員 (SDM) 和偵錯引擎。
+- 是埠和埠供應商的容器,將埠和埠供應商與會話調試管理器 (SDM) 和調試引擎進行通信。
 
-- 可以依名稱、 識別自己，並列舉其連接埠和連接埠提供者。
+- 可以按名稱標識自身,並枚舉其埠和埠供應商。
 
-- 由[IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)介面，只藉由 Visual Studio （Visual Studio 執行的每個執行個體的伺服器的一個執行個體）。
+- 由[IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)介面表示,該介面僅由 Visual Studio 實現(運行的 Visual Studio 的每個實例的伺服器的一個實例)。
 
 ## <a name="see-also"></a>另請參閱
 - [連接埠](../../extensibility/debugger/ports.md)
-- [連接埠提供者](../../extensibility/debugger/port-suppliers.md)
-- [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)
+- [港口供應商](../../extensibility/debugger/port-suppliers.md)
+- [除錯器概念](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)

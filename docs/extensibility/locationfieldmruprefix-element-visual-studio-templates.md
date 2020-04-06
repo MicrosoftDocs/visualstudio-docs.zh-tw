@@ -1,5 +1,5 @@
 ---
-title: LocationFieldMRUPrefix 項目 （Visual Studio 範本） |Microsoft Docs
+title: 位置欄位MRUPrefix元素(視覺工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - <LocationFieldMRUPrefix> element [Visual Studio Templates]
 - LocationFieldMRUPrefix element [Visual Studio Templates]
 ms.assetid: 03443691-9eb5-46f4-9169-cc2552a04bcb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d817f688ffeebecf1655fe10aa58efa664135c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce86eecbab8c31f16ece4628eff28dc40416a0a9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309083"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702816"
 ---
-# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix 項目 （Visual Studio 範本）
-指定最近使用過的 (MRU) 路徑，在**新的專案**並**加入新項目** 對話方塊。
+# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>位置欄位MRUPrefix元素(視覺化工作室範本)
+在 **「新專案**」和 **「新增新專案」** 對話框中指定最近使用的 (MRU) 路徑。
 
 ## <a name="syntax"></a>語法
 
@@ -43,11 +43,11 @@ ms.locfileid: "66309083"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="remarks"></a>備註
- 這個項目應該只用於透過產生的範本[!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)]。
+ 此元素應設定以產生的樣本[!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)]。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
-- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)

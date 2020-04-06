@@ -1,5 +1,5 @@
 ---
-title: SccInitialize 函式 |Microsoft Docs
+title: 初始化功能 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552ec06a4eabf55872358fc8e5d731e47c1eb6ca
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 661e0a24fa1d222079fd5ee728c5f42a5386c75b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721176"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700635"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 函式
-此函式會初始化原始檔控制外掛程式，並提供整合式開發環境（IDE）的功能和限制。
+此功能初始化源代碼管理外掛程式,並為整合式開發環境 (IDE) 提供功能和限制。
 
 ## <a name="syntax"></a>語法
 
@@ -40,58 +40,58 @@ SCCRTN SccInitialize (
 #### <a name="parameters"></a>參數
  `ppvContext`
 
-在原始檔控制外掛程式可以在此放置其內容結構的指標。
+[在]源代碼管理外掛程式可以在此處放置指向其上下文結構的指標。
 
  `hWnd`
 
-在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它所提供之任何對話方塊的父系。
+[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
 
  `lpCallerName`
 
-在呼叫原始檔控制外掛程式的程式名稱。
+[在]呼叫原始程式碼管理外掛程式的程式名稱。
 
  `lpSccName`
 
-[in、out]原始檔控制外掛程式用來放置其本身名稱的緩衝區（不會超過 `SCC_NAME_LEN`）。
+[進出]原始程式碼管理外掛程式放置其自己的名稱(`SCC_NAME_LEN`不要超過)的緩衝區。
 
  `lpSccCaps`
 
-脫銷傳回原始檔控制外掛程式的功能旗標。
+[出]返回原始程式碼管理外掛程式的功能標誌。
 
  `lpAuxPathLabel`
 
-[in、out]原始檔控制外掛程式所放置的字串，會描述[SccOpenProject](../extensibility/sccopenproject-function.md)和[SccGetProjPath](../extensibility/sccgetprojpath-function.md)所傳回的 `lpAuxProjPath` 參數（不會超過 `SCC_AUXLABEL_LEN`）。
+[進出]原始程式碼管理外掛程式放置一個字串,用於描述[SccOpenProject](../extensibility/sccopenproject-function.md)和[SccGetProjPath](../extensibility/sccgetprojpath-function.md)傳回的`SCC_AUXLABEL_LEN``lpAuxProjPath`參數(不要超過 )。
 
  `pnCheckoutCommentLen`
 
-脫銷傳回簽出批註的最大允許長度。
+[出]返回結帳註釋的最大允許長度。
 
  `pnCommentLen`
 
-脫銷傳回其他批註的最大容許長度。
+[出]返回其他註釋的最大允許長度。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式執行應會傳回下列其中一個值：
+ 此函數的源碼管理外掛程式實現應返回以下值之一:
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|原始檔控制初始化成功。|
+|SCC_OK|原始程式碼管理初始化成功。|
 |SCC_E_INITIALIZEFAILED|無法初始化系統。|
-|SCC_E_NOTAUTHORIZED|不允許使用者執行指定的作業。|
-|SCC_E_NONSPECFICERROR|模糊失敗;原始檔控制系統尚未初始化。|
+|SCC_E_NOTAUTHORIZED|不允許使用者執行指定的操作。|
+|SCC_E_NONSPECFICERROR|非特異性故障;源控制系統未初始化。|
 
 ## <a name="remarks"></a>備註
- IDE 第一次載入原始檔控制外掛程式時，會呼叫這個函式。 它可讓 IDE 將特定資訊（例如呼叫者名稱）傳遞給外掛程式。 IDE 也會傳回某些資訊，例如最大可允許的批註長度和外掛程式的功能。
+ IDE 首次載入原始程式碼管理外掛程式時調用此功能。 它使IDE能夠將某些資訊(如調用方名稱)傳遞給外掛程式。 IDE 還會返回某些資訊,例如註釋的最大允許長度和外掛程式的功能。
 
- @No__t_0 指向 `NULL` 指標。 原始檔控制外掛程式可以配置結構供自己使用，並在 `ppvContext` 中儲存該結構的指標。 IDE 會將這個指標傳遞給每個其他 VSSCI API 函式，讓外掛程式可以使用內容資訊，而不需要經過全域儲存並支援外掛程式的多個實例。 呼叫[SccUninitialize](../extensibility/sccuninitialize-function.md)時，應該解除配置此結構。
+ 指向`ppvContext`指標`NULL`。 源代碼管理外掛程式可以分配一個結構供自己使用,並在`ppvContext`中 存儲指向該結構的指標。 IDE 會將此指標傳遞給所有其他 VSSCI API 函數,允許外掛程式在不使用全域儲存的情況下提供上下文資訊,並支援外掛程式的多個實例。 調用[SccUn初始化](../extensibility/sccuninitialize-function.md)時,應處理此結構。
 
- @No__t_0 和 `lpSccName` 參數可讓 IDE 和原始檔控制外掛程式交換名稱。 這些名稱只能用來區別多個實例，也可以實際出現在功能表或對話方塊中。
+ 和`lpCallerName``lpSccName`參數使IDE和原始程式碼管理外掛程式能夠交換名稱。 這些名稱可能僅用於區分多個實例,或者它們實際上可能顯示在菜單或對話框中。
 
- @No__t_0 參數是用來做為批註的字串，用來識別儲存在方案檔中的輔助專案路徑，並在呼叫[SccOpenProject](../extensibility/sccopenproject-function.md)時傳遞至原始檔控制外掛程式。 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] 使用字串 "SourceSafe Project：";其他原始檔控制外掛程式應該避免使用這個特定的字串。
+ 該`lpAuxPathLabel`參數是一個字串,用作註釋,用於識別存儲在解決方案檔中並傳遞到[SccOpenProject](../extensibility/sccopenproject-function.md)調用中的原始程式碼管理外掛程式的輔助專案路徑。 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]使用字串「源安全專案:";其他原始程式碼管理外掛程式應避免使用此特定字串。
 
- @No__t_0 參數可讓原始檔控制外掛程式儲存位旗標，以指出外掛程式的功能。 （如需功能位旗標的完整清單，請參閱[功能旗標](../extensibility/capability-flags.md)）。 例如，如果外掛程式計畫將結果寫入呼叫端提供的回呼函式中，則外掛程式會設定功能位 SCC_CAP_TEXTOUT。 這會指示 IDE 建立版本控制結果的視窗。
+ 該`lpSccCaps`參數為原始程式碼管理外掛程式提供了一個儲存指示外掛程式功能的位標誌的位置。 (有關功能位標誌的完整清單,請參閱[功能標誌](../extensibility/capability-flags.md))。 例如,如果外掛程式計畫將結果寫入調用方提供的回調函數,則外掛程式將SCC_CAP_TEXTOUT設置功能位。 這將發出 IDE 信號,為版本控制結果創建一個視窗。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
 - [SccUninitialize](../extensibility/sccuninitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

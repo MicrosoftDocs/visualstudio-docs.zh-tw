@@ -1,5 +1,5 @@
 ---
-title: 參考項目 （Visual Studio 範本） |Microsoft Docs
+title: 參考元素(可視化工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <References> element [Visual Studio Templates]
 - References element [Visual Studio Templates]
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2ab5c3decc201958bd939a0a9d66dd65a5ef1c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ef31c5e7550ec7c6e4570d156d364afcf4ad6819
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334414"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701607"
 ---
-# <a name="references-element-visual-studio-templates"></a>References 項目 （Visual Studio 範本）
-群組的範本加入至專案的組件參考。
+# <a name="references-element-visual-studio-templates"></a>參考元素(視覺化工作室範本)
+對範本加入專案中的程式集引用進行分組。
 
- \<VSTemplate> \<TemplateContent> \<References>
+ \<VStemplate \<\<>模板内容>引用>
 
 ## <a name="syntax"></a>語法
 
@@ -44,9 +44,9 @@ ms.locfileid: "66334414"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[參考資料](../extensibility/reference-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定項目加入專案時要加入的組件參考。 必須有一或多個`Reference`中的項目`References`項目。|
+|[參考](../extensibility/reference-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定項目加入專案時要加入的組件參考。 元素中必須存在一`Reference``References`個或多個元素。|
 
 ### <a name="parent-elements"></a>父元素
 
@@ -57,10 +57,10 @@ ms.locfileid: "66334414"
 ## <a name="remarks"></a>備註
  `References` 是 `TemplateContent` 的選擇性子項目。
 
- `Reference`並`References`項目僅適用於在 *.vstemplate*檔案具有`Type`屬性值`Item`。
+ `Reference`和`References`元素只能在具有`Type`屬性值`Item`的 *.vstemplate*檔案中使用。
 
 ## <a name="example"></a>範例
- 下列範例說明`TemplateContent`的項目範本的項目。 這段 XML 會將參考加入*System.dll*並*System.Data.dll*組件。
+ 下面的示例說明了項範本`TemplateContent`的元素。 此 XML 添加對*System.dll*和*System.Data.dll*程式集的引用。
 
 ```xml
 <TemplateContent>
@@ -81,5 +81,5 @@ ms.locfileid: "66334414"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
-- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)

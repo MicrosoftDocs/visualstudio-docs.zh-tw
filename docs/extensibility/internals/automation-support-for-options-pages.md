@@ -1,40 +1,40 @@
 ---
-title: 選項頁的自動化支援 |Microsoft Docs
+title: 選項頁的自動化支援 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], automation support
 - automation [Visual Studio SDK], creating Tools Options pages
 ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03360bfc01110e7b4ef73956f0199aaaed9cee2c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: fe45238948d5b4cdebbf9f002f6b242515e7622e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848974"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709924"
 ---
-# <a name="automation-support-for-options-pages"></a>[選項] 頁面的自動化支援
-Vspackage 可以將 [自訂**選項**] 對話方塊提供給 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的 [**工具**] 功能表（[工具] [**選項**] 頁面），並可讓它們可供 automation 模型使用。
+# <a name="automation-support-for-options-pages"></a>選項頁的自動化支援
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackages 可以為 中的 **「工具**選項」功能表(**工具選項**頁)提供自訂**選項**對話框,並可將其提供給自動化模型。
 
 ## <a name="tools-options-pages"></a>工具選項頁
- 若要建立 [**工具選項**] 頁面，VSPackage 必須透過 VSPackage 的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> 方法的執行，提供傳回給環境的使用者控制項實。 （或者，如果是 managed 程式碼，則 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> 方法）。
+ 要建立**工具選項**頁,VSPackage 必須提供透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>VSPackage 方法實現返回給環境的使用者控制項實現。 (或者,對於託管代碼,<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>該方法。
 
- 這是選擇性的，但強烈建議您透過 automation 模型來允許存取這個新頁面。 您可以使用下列步驟來執行此動作：
+ 允許通過自動化模型訪問此新頁面是可選的,但強烈建議。 您可以透過以下步驟執行此操作:
 
-1. 透過 IDispatch 衍生物件的執行，擴充 <xref:EnvDTE._DTE.Properties%2A> 物件。
+1. 通過實現<xref:EnvDTE._DTE.Properties%2A>IDispatch 派生的物件來擴展物件。
 
-2. 將 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 方法（或 <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> 方法的 managed 程式碼）的執行傳回給 IDispatch 衍生的物件。
+2. 將<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法的實現(或對於託管代碼<xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A>的方法)返回到IDispatch派生的物件。
 
-3. 當自動化取用者在自訂**選項**屬性頁上呼叫 <xref:EnvDTE._DTE.Properties%2A> 方法時，環境會使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 方法來取得自訂**工具選項**頁面的自動化執行。
+3. 當自動化消費者在自定義<xref:EnvDTE._DTE.Properties%2A>**Option**屬性頁上調用 該方法時<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>,環境使用 該方法獲取自定義**工具選項**頁的自動化實現。
 
-4. 然後，VSPackage 的 automation 物件會用來提供 <xref:EnvDTE._DTE.Properties%2A>所傳回的每個 <xref:EnvDTE.Property>。
+4. 然後,VSPackage 的自動化物件用於提供返回的<xref:EnvDTE.Property><xref:EnvDTE._DTE.Properties%2A>每個 物件。
 
-   如需執行自訂**工具選項**頁面的範例，請參閱[VSSDK 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
+   有關實現自訂**工具選項**頁的範例,請參閱[VSSDK 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
 
-## <a name="see-also"></a>請參閱
-- [公開專案物件](../../extensibility/internals/exposing-project-objects.md)
+## <a name="see-also"></a>另請參閱
+- [公開項目物件](../../extensibility/internals/exposing-project-objects.md)

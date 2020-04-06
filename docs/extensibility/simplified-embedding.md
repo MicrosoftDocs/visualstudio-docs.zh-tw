@@ -1,39 +1,39 @@
 ---
-title: 簡化嵌入 |Microsoft Docs
+title: 簡化的嵌入 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - simple view embedding
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c77c7f19ff677ddbe8339c88ef3ea46953e23b7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b9bc9619ae1ed75aed3656ff014296f7c7d88fa0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332066"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700079"
 ---
 # <a name="simplified-embedding"></a>簡化嵌入
-當其文件檢視物件的父系 （也就是與之前的子系） 簡化內嵌在編輯器中啟用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，而<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>介面的實作來處理其視窗命令。 簡化的內嵌編輯器無法裝載作用中的控制項。 用來建立編輯器來簡化內嵌的物件會在下圖中顯示。
+當其文件檢視物件父級為 (即創建子 物件[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)])<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>時, 在編輯器中啟用簡化的嵌入,並且介面被實現以處理其視窗命令。 簡化的嵌入編輯器無法承載活動控制件。 用於使用簡化嵌入創建編輯器的物件如下圖所示。
 
- ![簡化的嵌入編輯器圖形](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")來簡化內嵌編輯器
+ ![簡化的嵌入編輯器圖形](../extensibility/media/vssimplifiedembeddingeditor.gif "vs 簡化嵌入編輯器")具有簡化嵌入的編輯器
 
 > [!NOTE]
-> 在此圖中，只有物件的`CYourEditorFactory`物件才能建立標準檔案為基礎的編輯器。 如果您要建立自訂編輯器，您不需要實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>，因為您的編輯器可能會有自己的私用持續性機制。 非自訂編輯器，不過，您必須執行這項作業。
+> 在此圖中的物件中,只需創建`CYourEditorFactory`基於檔案的標準編輯器即可創建物件。 如果要創建自定義編輯器,則不需要實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>,因為編輯器可能有自己的私有持久性機制。 但是,對於非自定義編輯器,您必須這樣做。
 
- 中包含所有的介面實作，以建立編輯器來簡化內嵌`CYourEditorDocument`物件。 不過，若要支援多個檢視的文件資料，分割到不同的資料和檢視物件的介面下表所示。
+ 建立建立具有簡化嵌入的編輯器而實現的所有介面都包含在物件中`CYourEditorDocument`。 但是,要支持文檔數據的多個檢視,可以將介面拆分為單獨的數據,並按照下表所示查看物件。
 
-|介面|介面的位置|使用|
+|介面|介面位置|使用|
 |---------------|---------------------------|---------|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|檢視|提供給父視窗的連線。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|檢視|提供與父窗口的連接。|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|檢視|處理命令。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|檢視|啟用狀態列更新。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|檢視|可讓**工具箱**項目。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|資料|當檔案變更時，會傳送通知。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|資料|啟用檔案類型的 [另存新檔] 功能。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|檢視|啟用**工具箱**專案。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|資料|檔更改時發送通知。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|資料|為檔類型啟用"保存為"功能。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|資料|啟用文件的持續性。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|資料|可讓隱藏項目檔案變更的事件，例如觸發重新載入。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|資料|允許抑制檔更改事件,如重新載入觸發。|

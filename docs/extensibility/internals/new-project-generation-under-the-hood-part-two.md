@@ -1,36 +1,36 @@
 ---
-title: 新專案產生：在幕後，第二部分 |Microsoft Docs
+title: 新專案生成:在引擎蓋下,第二部分 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ea614be39456f5d6a31ea6c9c12221b4db09bbd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8692f2012e5f2733982f04e35a7fed415e49c636
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311012"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707014"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>新專案產生：一探究竟，第二部份
+# <a name="new-project-generation-under-the-hood-part-two"></a>產生新專案︰深入探討，第二部分
 
-在 [產生新專案：在幕後，第一段](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我們可了解如何**新的專案**就會填入方塊的對話方塊。 假設您已選取**Visual C# Windows 應用程式**、 填入**名稱**並**位置**文字方塊中，然後按下的 [確定]。
+在[「新專案生成:罩下」中,第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我們看到了**新項目**對話框的填充方式。 假設您選擇了**Visual C++ Windows 應用程式**,填寫了 **「名稱**和**位置**」文本框,然後按一下"確定」。
 
-## <a name="generating-the-solution-files"></a>產生的方案檔
- 選擇應用程式範本會指示[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]解壓縮和開啟對應的.vstemplate 檔案，並啟動範本，以解譯此檔案中的 XML 命令。 這些命令會建立新的或現有方案中專案和專案項目。
+## <a name="generating-the-solution-files"></a>組建解決方案檔案
+ 選擇應用程式範本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可指示解壓縮並打開相應的 .vstemplate 檔案,並啟動範本來解釋此檔中的 XML 命令。 這些命令在新解決方案或現有解決方案中創建專案和專案項。
 
- 範本會來源檔案，稱為項目範本，從相同的.vstemplate 檔案的.zip 資料夾解壓縮。 範本會將這些檔案複製到新的專案，並據此自訂它們。
+ 樣本從保存 .vstemplate 檔的同一 .zip 資料夾中解壓縮源檔(稱為專案範本)。 樣本將這些文件複製到新專案,並相應地對其進行自定義。
 
-### <a name="template-parameter-replacement"></a>範本參數取代
- 當範本會複製至新的專案項目範本時，它會取代任何範本參數來自訂檔案的字串。 樣板參數是特殊的語彙基元，為前面和後面接著貨幣符號，例如、 $date$。
+### <a name="template-parameter-replacement"></a>樣本參數取代
+ 當範本將專案樣本複製到新專案時,它將任何範本參數替換為用於自訂檔的字串。 樣本參數是一個特殊的標記,它前面是美元符號,例如,$date$。
 
- 讓我們看看一般專案項目範本。 擷取並檢查在 Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 資料夾中的 Program.cs 中。
+ 讓我們看一下典型的專案項範本。 提取並檢查程式檔\微軟可視化工作室 8_Common7_IDE_專案範本_CSharp_Windows_1033_Windows應用程式.zip 資料夾中的Program.cs。
 
 ```csharp
 using System;
@@ -46,7 +46,7 @@ namespace $safeprojectname$
 }
 ```
 
-如果您建立新的 Windows 應用程式專案，名為 Simple 時，範本將會取代`$safeprojectname$`參數與專案的名稱。
+如果創建新的 Windows 應用程式專案名為「簡單」,則範`$safeprojectname$`本將 參數替換為專案的名稱。
 
 ```csharp
 using System;
@@ -62,10 +62,10 @@ namespace Simple
 }
 ```
 
- 如需完整的範本參數清單，請參閱[範本參數](../../ide/template-parameters.md)。
+ 有關樣本參數的完整清單,請參閱[樣本參數](../../ide/template-parameters.md)。
 
-## <a name="a-look-inside-a-vstemplate-file"></a>深入了解。VSTemplate 檔案
- 基本.vstemplate 檔案的格式
+## <a name="a-look-inside-a-vstemplate-file"></a>A 看內部 。VSTemplate 檔案
+ 基本 .vstemplate 檔案具有此格式
 
 ```xml
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
@@ -76,9 +76,9 @@ namespace Simple
 </VSTemplate>
 ```
 
- 我們討論過\<TemplateData > 一節中[產生新專案：在幕後，第一部](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)。 在本節中的標記用來控制的外觀**新的專案** 對話方塊。
+ 我們檢視了「\<新項目產生」中的樣本資料>部分[:在胡德下,第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)。 本節中的標記用於控制 **「新專案」** 對話框的外觀。
 
- 中的標記\<TemplateContent > 區段控制產生新的專案和專案項目。 以下是\<TemplateContent > 從 cswindowsapplication.vstemplate 檔案 \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 資料夾中的區段。
+ \<範本內容>部分中的標記控制新專案和專案項的生成。 下面是[程式檔\<]微軟可視化工作室 8_Common7_PROJECTTemplate_CSharp_Windows_1033_Windows應用程式.zip 資料夾中的 cwindows 應用程式.vstemplate 檔中的範本內容>部分。
 
 ```xml
 <TemplateContent>
@@ -112,26 +112,26 @@ namespace Simple
 </TemplateContent>
 ```
 
- \<專案 > 標記控制的專案時，產生和\<ProjectItem > 標記控制的專案項目產生。 如果參數 ReplaceParameters 為 true，範本將自訂專案檔或項目中的所有範本參數。 在此情況下，所有專案項目所都自訂，但 Settings.settings 除外。
+ 專案\<>标记控制项目的生成,\<而專案項>標記控制專案項的生成。 如果參數替換參數為 true,範本將自定義專案檔或項中的所有範本參數。 在這種情況下,除"設置.設置"外,所有專案項都是自定義的。
 
- TargetFileName 參數會指定產生的專案檔或項目的相對路徑與名稱。 這可讓您建立專案的資料夾結構。 如果您未指定這個引數，專案項目必須與專案項目範本同名。
+ TargetFileName 參數指定結果項目檔或項的名稱和相對路徑。 這允許您為專案創建資料夾結構。 如果不指定此參數,專案項的名稱將與專案項範本相同。
 
- 所產生的 Windows 應用程式資料夾結構看起來像這樣：
+ 產生的 Windows 應用程式資料夾結構如下所示:
 
  ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")
 
- 第一個且唯一\<專案 > 範本讀取的標記：
+ 樣本中的第一\<個也是唯一的專案>標記如下:
 
 ```xml
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">
 ```
 
- 這會指示新的專案範本來建立複製和自訂範本的項目 windowsapplication.csproj Simple.csproj 專案檔。
+ 這指示新專案範本透過複製和自訂樣本項 windows 應用程式.csproj 來創建 Simple.csproj 專案檔。
 
-### <a name="designers-and-references"></a>設計工具和參考
- 您可以看到在 [方案總管] 中，[屬性] 資料夾存在，且包含預期的檔案。 但呢專案參考和設計工具檔案相依性，例如 Resources.resx，到了 Resources.Designer.cs 和 Form1.cs 的 Form1.Designer.cs 嗎？  這些設定在 Simple.csproj 檔案時產生。
+### <a name="designers-and-references"></a>設計師和參考資料
+ 您可以在解決方案資源管理員中看到"屬性"資料夾存在並包含預期檔。 但是,專案引用和設計器文件依賴項(如對 Resources.resx Resources.Designer.cs和Form1.csForm1.Designer.cs)又如何呢?  生成時,這些檔將設置在Simple.csproj檔中。
 
- 以下是\<ItemGroup > 從 Simple.csproj 所建立的專案參考：
+ 下面是建立專案引用\<的 Simple.csproj 的 ItemGroup>:
 
 ```xml
 <ItemGroup>
@@ -144,7 +144,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- 您所見，這些是出現在 [方案總管] 中的六個專案參考。 以下是從另一個區段\<ItemGroup >。 為了清楚起見已刪除的程式碼行數。 這個區段會使 Settings.Designer.cs Settings.settings 而定：
+ 您可以看到,這些是解決方案資源管理器中顯示的六個專案引用。 下面是另\<一個專案組>的一節。 為了清楚起見,刪除了許多行代碼。 此部分使Settings.Designer.cs取決於設置設置:
 
 ```xml
 <ItemGroup>
@@ -156,5 +156,5 @@ namespace Simple
 
 ## <a name="see-also"></a>另請參閱
 
-- [新專案產生：一探究竟，第一部份](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [產生新專案︰深入探討，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)
