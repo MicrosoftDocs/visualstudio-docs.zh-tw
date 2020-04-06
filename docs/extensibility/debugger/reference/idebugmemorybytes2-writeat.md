@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::WriteAt | Microsoft Docs
+title: IDebug記憶位元組2::寫 at |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::WriteAt method
 - WriteAt method
 ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5eefaee08d64952681e91711cdf8347186123e57
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ac9113424c6cd5cce230774a6e5335ffa4d4ba77
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347140"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727526"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
-寫入指定的記憶體，並指定位址開頭的位元組數目。
+從指定的位址開始,寫入指定的記憶體位元組數。
 
 ## <a name="syntax"></a>語法
 
@@ -46,19 +46,19 @@ int WriteAt(
 
 ## <a name="parameters"></a>參數
 `pStartContext`\
-[in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，指定要從何處開始寫入位元組。
+[在][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件,指定從何處開始寫入位元組。
 
 `dwCount`\
-[in]要寫入的位元組數目。
+[在]要寫入的位元組數。
 
 `rgbMemory`\
-[in]要寫入的位元組。 這個陣列會假設為至少`dwCount`個位元組大小。
+[在]要寫入的位元組。 此陣列假定為大小中至少`dwCount`位元組。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`如果並非所有位元組無法寫入，或傳回錯誤碼 (通常`E_FAIL`)。
+ 如果成功,返回`S_OK`;否則,如果`S_FALSE`並非所有位元組都可以寫入或返回錯誤代碼(`E_FAIL`通常),則返回。
 
 ## <a name="remarks"></a>備註
- 如果起始位址不在所表示的 [記憶體] 視窗內[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)物件，就會發生任何寫入和錯誤碼的`E_FAIL`傳回 — 即使要寫入的數量與記憶體空間重疊。
+ 如果起始位址不在此[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)物件表示的記憶體視窗中,則不進行寫入並返回`E_FAIL`其錯誤代碼 -即使寫入量重疊到記憶體空間。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

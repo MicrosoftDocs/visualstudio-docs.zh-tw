@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue | Microsoft Docs
+title: IDebugObject:設定值 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetValue method
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9c6590c45027eb3dce28e2dbac182a967e87d59
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9e4652eb3c77a1871063dfa71b464fb1f7c43f94
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318943"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726364"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-設定物件的值從一系列連續的位元組。
+設置連續位元組序列中物件的值。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int SetValue(
 
 ## <a name="parameters"></a>參數
 `pValue`\
-[in]代表新值的位元組陣列。
+[在]表示新值的位元組。
 
 `nSize`\
-[in]值，以位元組為單位的大小。
+[在]值的大小(以位元組為單位)。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。
+ 如果成功,返回S_OK;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 陣列中的值會複製到這[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，取代任何現有的值。 新值的大小可以大於或小於現有的值。 這`IDebugObject`不能是 null 參考。
+ 陣列中的值將複製到此[IDebugObject 物件](../../../extensibility/debugger/reference/idebugobject.md)中,替換任何現有值。 新值的大小可以大於或小於現有值。 這`IDebugObject`不能為空引用。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

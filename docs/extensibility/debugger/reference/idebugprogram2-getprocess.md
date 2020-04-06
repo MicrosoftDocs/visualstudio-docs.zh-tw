@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProcess | Microsoft Docs
+title: IDebugProgram2::獲取過程 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetProcess
 ms.assetid: 1d602485-ebaf-451c-9165-f2e226f20a90
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b307fb7b4a25fc5a84b30eefd65e72b4f387a07d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aca1842e92e7e1c164a6468e6c1e94a352ef67c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313770"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722789"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
-取得此程式正在執行中的程序。
+獲取此程式正在運行的進程。
 
 ## <a name="syntax"></a>語法
 
@@ -41,15 +41,15 @@ int GetProcess(
 
 ## <a name="parameters"></a>參數
 `ppProcess`\
-[out]傳回[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)代表程序的介面。
+[出]返回表示進程的[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)介面。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 除非偵錯引擎 (DE) 會實作[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)介面，這個方法 DE 的實作應該一律會傳回`E_NOTIMPL`因為 DE 無法判斷哪個處理序正在執行中，因此無法滿足此方法的實作。
+ 除非調試引擎 (DE) 實現[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)介面,否則 DE 此`E_NOTIMPL`方法的實現應始終返回 ,因為 DE 無法確定它在哪個進程中運行,因此無法滿足此方法的實現。
 
- 實作`IDebugEngineLaunch2`介面可讓您表示 DE 必須了解如何建立程序; 因此，DE 實作[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面就能知道它正在中執行哪些處理程序。
+ 實現`IDebugEngineLaunch2`介面意味著 DE 必須知道如何創建進程;因此,DE [IDebug Program2](../../../extensibility/debugger/reference/idebugprogram2.md)介面的實現能夠知道它正在運行的進程。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

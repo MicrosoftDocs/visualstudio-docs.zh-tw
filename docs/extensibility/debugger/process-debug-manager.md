@@ -1,31 +1,31 @@
 ---
-title: 處理偵錯管理員 |Microsoft Docs
+title: 過程除錯管理員 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - machine debug manager
 - debugging [Debugging SDK], Machine Debug Manager
 ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c362ceb6321c49f4e868d2ae00c417e6ba6e2cee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e133c7b335c391208f634537e19a437c317ba26b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351458"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738259"
 ---
-# <a name="process-debug-manager"></a>處理序偵錯管理員
-處理序偵錯管理員 (PDM) 是管理程式的 Visual Studio 的元件和程序，以提供給工作階段偵錯管理員和偵錯引擎。
+# <a name="process-debug-manager"></a>程序除錯管理員
+程序除錯管理員 (PDM) 是 Visual Studio 的一個元件,用於管理程式和進程,使其可供工作階段調試管理器和調試引擎使用。
 
- PDM 管理可進行偵錯的所有處理序。 若要進行偵錯，程式必須向 PDM 的影響。 這項註冊會在啟動程式時，透過連接埠或偵錯引擎的時間完成。
+ PDM 管理所有可以調試的進程。 要調試程式,必須向 PDM 註冊程式。 此註冊在啟動程式時通過埠或調試引擎完成。
 
 ## <a name="see-also"></a>另請參閱
-- [處理序](../../extensibility/debugger/processes.md)
+- [過程](../../extensibility/debugger/processes.md)
 - [偵錯引擎](../../extensibility/debugger/debug-engine.md)
 - [連接埠](../../extensibility/debugger/ports.md)
-- [程式](../../extensibility/debugger/programs.md)
-- [偵錯工具元件](../../extensibility/debugger/debugger-components.md)
+- [Programs](../../extensibility/debugger/programs.md)
+- [除錯器元件](../../extensibility/debugger/debugger-components.md)

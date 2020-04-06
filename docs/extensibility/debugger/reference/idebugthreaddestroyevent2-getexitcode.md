@@ -1,5 +1,5 @@
 ---
-title: IDebugThreadDestroyEvent2::GetExitCode | Microsoft Docs
+title: IDebugThread銷毀事件2::獲取退出碼 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadDestroyEvent2::GetExitCode
 ms.assetid: 8bf47a17-f811-4d9b-bcea-7488908830ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59d72692eff13262c2135585fee14066ab57c8dc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cdbc7600a395fe9fd30cad7deaef81d46411f2c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319976"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718529"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
-取得執行緒的結束代碼。
+獲取線程的退出代碼。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int GetExitCode ( 
 
 ## <a name="parameters"></a>參數
 `pdwExit`\
-[out]傳回執行緒的結束代碼。
+[出]返回線程的退出代碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)

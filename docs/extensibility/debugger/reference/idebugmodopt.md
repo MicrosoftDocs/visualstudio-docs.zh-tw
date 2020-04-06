@@ -1,24 +1,24 @@
 ---
-title: IDebugModOpt | Microsoft Docs
+title: IDebugModOpt |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugModOpt interface
 ms.assetid: ebd525e3-d140-4071-9d8c-41871de4125e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9f8fa5e496056eac2a30114f4062f635775350b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e142ed1229f59cfc22ff33cba48e9e35eb4e4406
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324056"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726989"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
-表示偵錯的選擇性修飾詞。
+表示調試可選修改器。
 
 ## <a name="syntax"></a>語法
 
@@ -26,19 +26,19 @@ ms.locfileid: "66324056"
 IDebugModOpt : IUnknown
 ```
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 取自[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示類別或方法。
+## <a name="notes-for-callers"></a>通話備註
+ 從表示類或方法的[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)對象獲取。
 
 ## <a name="methods"></a>方法
- 這個介面會實作下列方法：
+ 此介面實現以下方法:
 
 |方法|描述|
 |------------|-----------------|
-|[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|擷取一份選擇性修飾詞。|
+|[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|檢索可選修改器的清單。|
 
 ## <a name="requirements"></a>需求
- 標頭：Sh.h
+ 標題: Sh.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll

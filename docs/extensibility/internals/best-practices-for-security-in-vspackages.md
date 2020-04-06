@@ -1,5 +1,5 @@
 ---
-title: 在 Vspackage 中安全性的最佳作法 |Microsoft Docs
+title: VS 包中安全最佳實踐 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,29 +7,29 @@ helpviewer_keywords:
 - security best practices, VSPackages
 - best practices, security
 ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 144bc62176ebc552e7070b29088acf70329a84d4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d4309feeed3233d2149586afb1bf4efafacb21ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309162"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709899"
 ---
-# <a name="best-practices-for-security-in-vspackages"></a>在 Vspackage 中安全性的最佳做法
-若要安裝[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]您在電腦上，您必須執行系統管理認證的內容中。 安全性和部署的基本單位[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]應用程式[VSPackage](../../extensibility/internals/vspackages.md)。 必須使用註冊 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，也需要系統管理認證。
+# <a name="best-practices-for-security-in-vspackages"></a>VS 套件中的安全最佳實務
+要在電腦上[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]安裝 , 必須在具有管理認證的上下文中執行。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]應用程式的安全和部署的基本單位是[VSPackage。](../../extensibility/internals/vspackages.md) VSPackage 必須使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]註冊 ,這也需要管理憑據。
 
- 系統管理員具有完整權限以寫入登錄和檔案系統，並執行任何程式碼。 您必須具有這些權限，來開發、 部署，或安裝 VSPackage。
+ 管理員具有寫入註冊表和文件系統以及運行任何代碼的完整許可權。 您必須具有這些許可權才能開發、部署或安裝 VS 包。
 
- 所安裝，則 VSPackage 會是完全受信任。 因為如此高程度的 VSPackage 相關聯的權限，就可能會不慎安裝具有惡意的 VSPackage。
+ 一旦安裝,VSPackage 即完全受信任。 由於與 VSPackage 關聯的這種高級別許可權,因此可能會無意中安裝具有惡意的 VSPackage。
 
- 使用者應該確定在安裝 Vspackage，僅從信任的來源。 開發 VSPackages 的公司應該強式名稱，登入它們，以確保該竄改的使用者將無法。 開發 VSPackages 的公司應該檢查其外部的相依性，例如 web 服務和遠端安裝，評估，並更正任何安全性問題。
+ 用戶應確保僅從受信任的源安裝 VS 包。 開發 VSPackages 的公司應牢固地命名並簽署它們,以確保使用者防止篡改。 開發 VSPackages 的公司應檢查其外部依賴項(如 Web 服務和遠端安裝),以評估和糾正任何安全問題。
 
- 如需詳細資訊，請參閱 <<c0> [ 安全適用於.NET Framework 程式碼撰寫方針](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90))。
+ 有關詳細資訊,請參閱[.NET 框架的安全編碼準則](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90))。
 
 ## <a name="see-also"></a>另請參閱
-- [增益集安全性](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
+- [外接程式安全性](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
 - [DDEX 安全性](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)
