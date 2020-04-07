@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d51aa0a5ef995abbe150160e378aa8885cc9706
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: bbed62c13fc963af382ede113b138451303d9382
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472678"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759720"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 條件
 
@@ -40,7 +40,7 @@ MSBuild 支援一組特定的條件,可在允許的`Condition`屬性 的任何�
 |()|如果內部包含的運算式評估為 `true`，即會評估為 `true` 的群組機制。|
 |$if$ ( %expression% )、$else$、$endif$|檢查指定的 `%expression%` 是否符合所傳遞自訂範本參數的字串值。 如果 `$if$` 條件評估為 `true`，即會執行它的陳述式，否則會檢查 `$else$` 條件。 如果 `$else$` 條件為`true`，即會執行它的陳述式，否則 `$endif$` 條件會結束運算式評估。<br /><br /> 有關使用的範例,請參閱[可視化工作室專案/專案範本參數邏輯](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)。|
 
-您可以在條件中使用字串方法,如以下範例所示,其中<xref:System.String.TrimEnd>函數僅用於比較字串的相關部分,以區分 .NET 框架和 .NET Core 目標框架。
+您可以在條件中使用字串方法,如以下範例所示,其中[TrimEnd()](/dotnet/api/system.string.trimend)函數僅用於比較字串的相關部分,以區分 .NET 框架和 .NET Core 目標框架。
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
