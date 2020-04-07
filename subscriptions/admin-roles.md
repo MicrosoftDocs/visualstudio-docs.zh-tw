@@ -4,23 +4,25 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 03/02/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: 了解超級管理員和系統管理員角色，以及如何指派系統管理員。
-ms.openlocfilehash: ce76a2aaf970926d171086e65ba2d364e1526d61
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 234153dcb8dd06b33ab7aac78e587439684963f9
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232745"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808383"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Visual Studio 訂用帳戶合約的超級管理員和系統管理員
 
 大量授權客戶的新 Visual Studio 訂用帳戶管理入口網站中有兩個不同角色。 這些角色像是之前存在於 VLSC 中的主要/通知連絡人角色和訂用帳戶管理員角色。
 
-**超級管理員：** 最初設置組織時，主連絡人或通知連絡人預設成為超級管理員。 主要或通知連絡人可以選擇指派其他的超級管理員或系統管理員。 超級管理員可以新增和移除其他系統管理員以及訂閱者。 如果系統中有兩個以上的超級管理員，則超級管理員可以刪除所有超級管理員，但最後必須保留兩個以策安全。
+**超級管理員:** 最初設置組織時,主聯繫人或通知聯繫人默認成為超級管理員。 主要或通知連絡人可以選擇指派其他的超級管理員或系統管理員。 超級管理員可以新增和移除其他系統管理員以及訂閱者。 如果系統中有兩個以上的超級管理員，則超級管理員可以刪除所有超級管理員，但最後必須保留兩個以策安全。
 
-**管理員：** 管理員只能由超級管理員分配。管理員只能在超級管理員分配給他們的協定中管理訂閱者。
+**管理員:** 管理員只能由超級管理員分配。管理員只能在超級管理員分配給他們的協定中管理訂閱者。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
 ## <a name="assigning-administrators"></a>指派系統管理員
 指派新的系統管理員：
@@ -42,10 +44,10 @@ ms.locfileid: "80232745"
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [視覺化工作室文件](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文件](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文件](https://docs.microsoft.com/microsoft-365/)
 
 
 ## <a name="next-steps"></a>後續步驟
