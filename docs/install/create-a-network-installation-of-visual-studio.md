@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ea7efd82aa25844e8eb33745aa53d44be1ed14f6
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544067"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759725"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
@@ -297,4 +297,4 @@ vs_enterprise.exe --layout c:\VSLayout --all
 - [在維護基底上時更新 Visual Studio](update-servicing-baseline.md)
 - [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
-- [安裝 Visual Studio 離線安裝所需的憑證](/install-certificates-for-visual-studio-offline.md)
+- [安裝 Visual Studio 離線安裝所需的憑證](install-certificates-for-visual-studio-offline.md)
