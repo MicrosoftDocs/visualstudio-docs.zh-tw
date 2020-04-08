@@ -8,12 +8,12 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 94d8fdc2765b3a073ca481d09bc38dfbc9b38f2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d53f03ed711b613a44aaf7cd243bd9aadeb2c93b
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589015"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880321"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用測試設定在測試期間包含螢幕和聲音錄製
 
@@ -58,8 +58,14 @@ ms.locfileid: "75589015"
 
 7. 選擇 **"確定**"。 針對測試設定，現在已經設定和儲存診斷追蹤收集器設定。
 
+    ::: moniker range="vs-2017"
     > [!TIP]
     > 若要重設此診斷資料配接器的組態，請在 Visual Studio 中選擇 [重設為預設組態]****，在 Microsoft Test Manager 中則選擇 [重設為預設值]****。
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    > [!TIP]
+    > 要重置此診斷資料適配器的配置,請選擇「**重置為 Visual** Studio 中預設配置」。
+    ::: moniker-end
 
 ## <a name="see-also"></a>另請參閱
 

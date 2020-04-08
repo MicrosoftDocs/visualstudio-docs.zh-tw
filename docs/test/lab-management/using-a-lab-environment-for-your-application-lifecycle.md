@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 499f335edabe77d001a1a2486e7b559abe6c7a8a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75847295"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880334"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用實驗室環境進行開發
 
@@ -53,6 +53,7 @@ ms.locfileid: "75847295"
 
 如需詳細資訊，請參閱[使用建置或發行管理](use-build-or-rm-instead-of-lab-management.md)。
 
+::: moniker range="vs-2017"
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>使用 Microsoft Test Manager 的 Visual Studio Lab Management 功能
 
 當您使用 Visual Studio Enterprise Edition 時，可以使用 Microsoft Test Manager 的 Visual Studio Lab Management 功能來建立及管理實驗室環境。
@@ -126,7 +127,7 @@ Lab Management 會在您環境中的每部電腦上自動安裝測試代理程�
 * [規劃您的實驗室](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
 * [管理實驗室](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
 * [設定 SCVMM 環境](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
-* [管理許可權](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
+* [管理權限](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
 * [變更設定](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
 * [疑難排解](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
 
@@ -136,6 +137,7 @@ Lab Management 會在您環境中的每部電腦上自動安裝測試代理程�
 * [標準實驗室環境](https://msdn.microsoft.com/library/ee390842.aspx)
 * [SCVMM (虛擬) 環境](https://msdn.microsoft.com/library/ee943322.aspx)
 * [建立和使用網路隔離的環境](https://msdn.microsoft.com/library/ee518924.aspx)
+::: moniker-end
 
 ## <a name="see-also"></a>另請參閱
 
