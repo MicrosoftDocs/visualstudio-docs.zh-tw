@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 955a968c52c963c8c6f0204f7687de2bd8482260
+ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590874"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80892771"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
 
@@ -70,17 +70,17 @@ Visual Studio 藉由使用 [TextMate 文法](https://manual.macromates.com/en/la
 
 在下列資料夾中，為 Visual Studio 新增任何新的 TextMate 文法︰
 
-*%使用者設定檔\\% .vs_擴展*
+*%使用者設定檔\\% .vs_延伸*
 
 如果適用於您的情況，在此基底路徑下，新增下列資料夾︰
 
 |資料夾名稱|描述|
 |-----------------|-----------------|
 |\\*\<語言名稱>*|語言資料夾。 將*\<語言名稱>* 替換為語言的名稱。 例如 *\Matlab*。|
-|*\Syntaxes*|文法資料夾。 包含語言的語法 *.json*檔，如*Matlab.json*。|
+|*\Syntaxes*|文法資料夾。 包含語言的語法 *.json*檔,如*Matlab.json*。|
 |**片段*|程式碼片段資料夾。 包含語言的程式碼片段。|
 
-在 Windows 中，會將 *%userprofile%* 解析為 *c:\Users\\\<使用者名稱>* 路徑。 如果系統上不存在 *"擴展"* 資料夾，則需要創建該資料夾。 如果資料夾已存在，它會隱藏。
+在 Windows 中，會將 *%userprofile%* 解析為 *c:\Users\\\<使用者名稱>* 路徑。 如果系統上不存在 *「擴展」* 資料夾,則需要創建該資料夾。 如果資料夾已存在，它會隱藏。
 
 > [!TIP]
 > 如果您在編輯器中有檔案，您將需要關閉它們再重新開啟，以在您新增 TextMate 文法之後查看語法醒目提示。
@@ -92,3 +92,5 @@ Visual Studio 藉由使用 [TextMate 文法](https://manual.macromates.com/en/la
 - [新增語言伺服器通訊協定延伸模組](../extensibility/adding-an-lsp-extension.md)
 - [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)
 - [逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)
+- [範例代碼:文字配合文法](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/TextmateGrammar)
+- [範例代碼:自訂語言支援](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/Ook_Language_Integration)
