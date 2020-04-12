@@ -4,18 +4,18 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 04/07/2020
+ms.date: 04/10/2020
 ms.topic: conceptual
 description: Visual Studio 訂閱 – 我為何會針對我的訂閱者看見 Hotmail 或 Gmail 地址？
-ms.openlocfilehash: e926caa8aef5a655b1f09ab8d6dbab1d70946827
-ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
+ms.openlocfilehash: 44b18bd46d55349fae5a3ece03cee9fe93240148
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80808337"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223680"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>可視化工作室訂閱 – 為什麼我會看到訂閱者的個人帳戶?
-公司從批量許可服務中心 (VLSC) 遷移到新的可視化工作室[訂閱管理門戶](https://manage.visualstudio.com)後,管理員驚訝地發現,某些訂閱者的"登錄電子郵件地址"顯示個人電子郵寄地址,如 Hotmail 或 Outlook。  如需詳細資訊，請參閱[這段影片](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6)。
+公司從批量許可服務中心 (VLSC) 遷移到新的可視化工作室[訂閱管理門戶](https://manage.visualstudio.com)後,管理員驚訝地發現,某些訂閱者的"登錄電子郵件地址"顯示個人電子郵寄地址,如 Hotmail 或 Outlook。  
 
 ## <a name="cause"></a>原因
 此案例是因為與舊版 MSDN 訂閱者體驗相關聯的登入程序所造成。 使用者是從大量授權服務中心 (VLSC) 移轉到 Visual Studio 訂閱系統管理入口網站，而未經修改。 系統管理員可能未發覺使用者以個人帳戶來存取其訂用帳戶權益。 在於 2016 年完成的 Visual Studio 訂閱者移轉之前，若要成功使用 Visual Studio 訂閱，必須完成兩項動作：

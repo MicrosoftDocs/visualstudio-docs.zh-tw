@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 4d5878e2c5950e45f65f8d56efdf53cd7b2e89ea
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094684"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223667"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：為受控碼建立和執行單元測試
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：針對受控碼建立和執行單元測試
 
 本文會引導您使用適用於受控碼的 Microsoft 單元測試架構和 Visual Studio [測試總管]****，來建立、執行和自訂一系列的單元測試。 您可以從開發中的 C# 專案開始，建立執行其程式碼的測試、執行測試，並檢查結果。 然後，變更專案程式碼並重新執行測試。
 
@@ -51,7 +51,7 @@ ms.locfileid: "79094684"
 
 1. 開啟 Visual Studio。
 
-2. 在啟動視窗中，選擇 **"創建新專案**"。
+2. 在啟動視窗中,選擇 **「創建新專案**」。
 
 3. 搜尋並選取 C# [主控台應用程式 (.NET Core)]**** 專案範本，然後按一下 [下一步]****。
 
@@ -149,7 +149,7 @@ ms.locfileid: "79094684"
 
 ::: moniker range="vs-2017"
 
-2. 在 **"新專案**"對話方塊中，展開 **"已安裝"，** 展開**視覺化 C#，** 然後選擇 **"測試**"。
+2. 在 **「新項目**」對話框中,展開 **「已安裝」,** 展開**視覺化 C#,** 然後選擇 **「測試**」。
 
 3. 從範本清單中選取 [MSTest 測試專案 (.NET Core)]****。
 
@@ -165,7 +165,7 @@ ms.locfileid: "79094684"
 
 3. 將專案命名為 **BankTests**。
 
-4. 按一下 **[建立]**。
+4. 按一下頁面底部的 [新增]  。
 
    **BankTests** 專案就會新增至 **Bank** 方案中。
 
@@ -199,7 +199,7 @@ ms.locfileid: "79094684"
 
 ::: moniker-end
 
-*BankAccountTests.cs*檔現在包含以下代碼：
+*BankAccountTests.cs*檔案現在包含以下代碼:
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -219,7 +219,7 @@ namespace BankTests
 
 ### <a name="add-a-using-statement"></a>新增 using 陳述式
 
-向測試類添加[`using`語句](/dotnet/csharp/language-reference/keywords/using-statement)，以便能夠調用被測試的專案，而無需使用完全限定的名稱。 在類別檔案的頂端，加入：
+向測試類添加[`using`語句](/dotnet/csharp/language-reference/keywords/using-statement),以便能夠調用被測試的專案,而無需使用完全限定的名稱。 在類別檔案的頂端，加入：
 
 ```csharp
 using BankAccountNS;
@@ -297,7 +297,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
    在本案例中，測試會失敗。
 
-4. 在 **"測試資源管理器"** 中選擇方法以查看視窗底部的詳細資訊。
+4. 在**測試資源管理員中**選擇方法以檢視視窗底部的詳細資訊。
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>修正程式碼並重新執行測試
 
@@ -321,7 +321,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>重新執行測試
 
-在**測試資源管理器中**，選擇 **"全部運行"** 以重新運行測試。 紅色/綠色狀態列會變成綠色，表示測試已通過。
+測試**資源管理員中**,選擇 **「全部執行」** 以重新執行測試。 紅色/綠色狀態列會變成綠色，表示測試已通過。
 
 ![Visual Studio 2019 的 [測試總管] 顯示已通過測試](media/test-explorer-banktests-passed.png)
 
@@ -431,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>重新測試、重新撰寫和重新分析
 
-假設受測方法中有 Bug，導致 `Debit` 方法不僅不會擲回 <xref:System.ArgumentOutOfRangeException>，更不會輸出具有例外狀況的正確訊息。 目前，測試方法不會處理這種情況。 如果`debitAmount`該值有效（即小於餘額且大於零），則不會捕獲任何異常，因此斷言永遠不會觸發。 然而，測試方法會成功。 這樣就不好了，因為您要的是測試方法在未擲回例外狀況時失敗。
+目前,測試方法沒有處理它應該處理的所有情況。 如果被測方法(`Debit`方法)未能在 大於<xref:System.ArgumentOutOfRangeException>餘額(`debitAmount`或小於零)時引發 ,則測試方法將獲得通過。 這樣就不好了，因為您要的是測試方法在未擲回例外狀況時失敗。
 
 這是測試方法中的錯誤。 若要解決這個問題，請在測試方法的結尾新增 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 判斷提示，以處理未擲回例外狀況的情況。
 
@@ -467,7 +467,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 測試程式碼的改善帶來了更穩固、包含更多資訊的測試方法。 但是更重要的是，它們也改善了受測程式碼。
 
 > [!TIP]
-> 本逐步解說會使用適用於 Managed 程式碼的 Microsoft 單元測試架構。 [測試總管]**** 也可以從已安裝 [測試總管]**** 配接器的協力廠商單元測試架構來執行測試。 有關詳細資訊，請參閱[安裝協力廠商單元測試框架](../test/install-third-party-unit-test-frameworks.md)。
+> 本逐步解說會使用適用於 Managed 程式碼的 Microsoft 單元測試架構。 [測試總管]**** 也可以從已安裝 [測試總管]**** 配接器的協力廠商單元測試架構來執行測試。 有關詳細資訊,請參閱[安裝第三方單元測試框架](../test/install-third-party-unit-test-frameworks.md)。
 
 ## <a name="see-also"></a>另請參閱
 
