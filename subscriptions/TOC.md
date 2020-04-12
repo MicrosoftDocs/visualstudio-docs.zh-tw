@@ -75,7 +75,6 @@
 ### [進階管理員與系統管理員](admin-roles.md)
 ### [設定合約喜好設定](admin-prefs.md)
 ### [概觀](using-admin-portal.md)
-### [影片教學課程：使用管理入口網站](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### 指派訂用帳戶
 #### [新增單一使用者](assign-license.md)
 #### [新增多個使用者](assign-license-bulk.md)
