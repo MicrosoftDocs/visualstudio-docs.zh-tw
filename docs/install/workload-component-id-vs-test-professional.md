@@ -15,12 +15,13 @@ ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: ececc1815ebc578076d059b00ade1a5fde4552a4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: 61a52d98f695a6420dd6081117b8c6c4e83ae0a4
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437345"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276210"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Visual Studio Test Professional 元件目錄
 
@@ -30,7 +31,7 @@ ms.locfileid: "79437345"
 
 * 每個工作負載都有自己的小節 (後面接著工作負載識別碼)，以及一張工作負載可用元件的表格。
 * 安裝工作負載時，預設會安裝「必要」**** 元件。
-* 如果願意，還可以安裝 **"推薦**"和 **"可選**"元件。
+* 如果願意,還可以安裝 **「推薦**」和 **「可選**」元件。
 * 我們還新增了一個章節，當中列出不屬於任何工作負載的額外元件。
 
 當您在 VSIX 資訊清單中設定相依性時，必須僅指定「元件識別碼」。 請使用此頁面上的表格來決定我們的最基本元件相依性。 在某些情況下，這可能意謂著您僅指定一個來自工作負載的元件。 在其他情況下，則可能意謂著您指定來自單一工作負載的多個元件，或來自多個工作負載的多個元件。 如需詳細資訊，請參閱[如何︰將擴充性專案移轉至 Visual Studio 2017 (英文)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 頁面。
@@ -64,6 +65,6 @@ n/a | n/a | n/a
 
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [使用命令列參數安裝視覺化工作室](use-command-line-parameters-to-install-visual-studio.md)
+* [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [命令列參數範例](command-line-parameter-examples.md)
-* [創建視覺化工作室的離線安裝](create-an-offline-installation-of-visual-studio.md)
+* [建立 Visual Studio 的離線安裝](create-an-offline-installation-of-visual-studio.md)

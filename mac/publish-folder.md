@@ -8,25 +8,25 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 0ea70fb1a5898e2415b7f74e93233ca03ea52c45
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73715903"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224494"
 ---
-# <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>使用 Mac 的視覺化工作室發佈到資料夾
+# <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>使用 Mac 的視覺化工作室發布到資料夾
 
-您可以使用"發佈"工具將 .NET 核心主控台發佈或將核心應用ASP.NET到資料夾。
+您可以使用「發布」工具將 .NET 核心控制台發布或將核心應用ASP.NET到資料夾。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 - [視覺化工作室 2019 為 Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019)安裝與 .NET 核心啟用.
 - .NET 核心主控台或ASP.NET核心專案。 如果您還沒有專案，可以[建立新的專案](/visualstudio/mac/create-new-projects?view=vsmac-2019)。
 
 ## <a name="publish-to-folder"></a>發佈到資料夾
 
-使用 Mac 的 Visual Studio，您可以使用"發佈"工具將 .NET Core 專案發佈到資料夾。 發佈到資料夾後，可以將檔案傳輸到其他環境。 若要發佈到資料夾，請執行下列步驟。
+使用 Mac 的 Visual Studio,您可以使用「發布」工具將 .NET Core 專案發布到資料夾。 發佈到資料夾后,可以將檔案傳輸到其他環境。 若要發佈到資料夾，請執行下列步驟。
 
  1. 在 Solution Pad 中，以滑鼠右鍵按一下專案，然後選擇 [發佈]****。
 
@@ -52,7 +52,7 @@ ms.locfileid: "73715903"
 
 ## <a name="customize-publish-options"></a>自訂發佈選項
 
-若要變更發行設定檔的名稱 (這會顯示在 [發佈] 操作功能表中)，請重新命名發行設定檔。 請勿變更檔案的副檔名 (`.puxbml`)。
+若要變更發行設定檔的名稱 (這會顯示在 [發佈] 操作功能表中)，請重新命名發行設定檔。 請勿變更檔案的副檔名 (`.pubxml`)。
 
 若要變更發佈資料夾路徑，請開啟發行設定檔並編輯 `publishUrl` 值。
 

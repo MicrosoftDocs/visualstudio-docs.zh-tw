@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a122ce7ab95ff529d231d34e3cdd4852a0b49b81
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: 7b4ddc14a6409b0e8450a61ab70d7be9d4f88a3c
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437661"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276332"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Visual Studio Enterprise 元件目錄
 
@@ -48,6 +49,6 @@ ms.locfileid: "79437661"
 
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [使用命令列參數安裝視覺化工作室](use-command-line-parameters-to-install-visual-studio.md)
+* [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [命令列參數範例](command-line-parameter-examples.md)
-* [創建視覺化工作室的離線安裝](create-an-offline-installation-of-visual-studio.md)
+* [建立 Visual Studio 的離線安裝](create-an-offline-installation-of-visual-studio.md)

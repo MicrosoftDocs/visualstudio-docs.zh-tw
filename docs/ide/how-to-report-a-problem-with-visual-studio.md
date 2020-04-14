@@ -4,17 +4,17 @@ description: 了解如何回報 Visual Studio 的問題
 ms.date: 03/11/2018
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-ms.author: seiyer
-author: seaniyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97080d4ee2240725f009505cda8429ba8f5975d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64556715"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276497"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>如何回報 Visual Studio 或 Visual Studio 安裝程式的問題
 
@@ -23,7 +23,7 @@ ms.locfileid: "64556715"
 
 您可以使用 Visual Studio 或其安裝程式中所包含的意見反應工具來報告問題。 意見反應工具可讓您輕鬆地將診斷資訊納入您的意見反應中，並協助 Visual Studio 小組更有效率地診斷和修正問題。 以下是回報問題的步驟。
 
-1. **在 Visual Studio 中**，選取右上角的意見反應圖示，然後選取 [回報問題]。 您還可以從功能表 **"説明** > **發送回饋** > **報告問題**"訪問回饋工具。
+1. **在 Visual Studio 中**，選取右上角的意見反應圖示，然後選取 [回報問題]。 您還可以從功能表 **「幫助** > **傳送反饋** > **報告問題**」訪問回饋工具。
 ![Visual Studio 開發人員社群上的回報問題彈出視窗](media/vsfeedbackentry.png) 如果您無法安裝 Visual Studio 或無法在 Visual Studio 中存取意見反應工具，您也可以改為在 **Visual Studio 安裝程式**中回報問題。  在安裝程式中，選取右上角的意見反應圖示，然後選取 [回報問題]。
 ![Visual Studio Developer Community 上的回報問題快顯](media/installer.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "64556715"
 
    ![搜尋類似問題並針對類似問題投票](../ide/media/search-and-vote.png)
 
-1. 若沒有找到您遇到的問題，請選擇畫面底部的 [回報新問題]****。
+1. 如果未找到遇到的問題,請選擇螢幕底部的 **「報告新問題**」。。
 
    > [!NOTE]
    > [回報新問題]**** 按鈕只會顯示在 Visual Studio 的 Developer Community 介面。 您無法直接在 [Developer Community](https://developercommunity.visualstudio.com/) 網站回報問題。
@@ -54,7 +54,7 @@ ms.locfileid: "64556715"
 
    ![回報新問題](../ide/media/report-new-problem.png)
 
-1. 選擇 **"下一步**"以移動到"**附件"** 選項卡。在這裡，您可以捕獲當前螢幕並將其發送到 Microsoft。 若要附加額外的螢幕擷取畫面或其他檔案，請選擇 [附加其他檔案]****。
+1. 選擇**下一步**以移動到「**附件」** 選項卡。在這裡,您可以捕獲當前螢幕並將其發送到 Microsoft。 若要附加額外的螢幕擷取畫面或其他檔案，請選擇 [附加其他檔案]****。
 
    ![將螢幕擷取畫面附加到 Visual Studio 問題報告](media/report-a-problem-screenshot.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "64556715"
 
 1. 選擇 [錄製]**** 索引標籤。
 
-1. 在 [錄製您的動作]**** 下，若您能在目前的 Visual Studio 執行個體重現問題，請加以選取。 如果無法（例如，如果"視覺工作室"掛起）請選擇"**\<創建新實例>** 以在 Visual Studio 的新實例中記錄操作。
+1. 在 [錄製您的動作]**** 下，若您能在目前的 Visual Studio 執行個體重現問題，請加以選取。 如果無法(例如,如果"視覺工作室"掛起)請選擇"**\<創建新實例>** 以在 Visual Studio 的新實例中記錄操作。
 
 1. 選取 [開始錄製]****。 授與權限來執行工具。
 

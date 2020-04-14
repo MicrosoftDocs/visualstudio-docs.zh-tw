@@ -1,22 +1,22 @@
 ---
-title: 報告問題：狀態和常見問題解答
+title: 報告問題:狀態和常見問題解答
 description: 提供 [回報問題] 工具的概觀，並包括問題狀態和定義
 ms.date: 11/15/2018
 ms.custom: seodec18
 ms.topic: conceptual
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d024e28d696a60a9fc77c290283382dcd0e0ede8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6172be3995596807562c1dc7956a1ca8952e5ad4
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74853499"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276471"
 ---
-# <a name="report-a-problem-states-and-faq"></a>報告問題：狀態和常見問題解答
+# <a name="report-a-problem-states-and-faq"></a>報告問題:狀態和常見問題解答
 
 [回報問題] 工具可讓 Visual Studio 開發人員社群提交問題。 您的每個問題報表都會變成我們核心工程系統的工作項目，讓您能夠直接與產品小組交流，以協助我們識別及解決有影響的問題。 與豐富診斷資訊一起提交的意見反應，對於改善 Visual Studio 產品系列至關重要。 我們非常感謝您撥冗回報問題。
 

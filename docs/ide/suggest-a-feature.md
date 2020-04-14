@@ -3,21 +3,21 @@ title: 建議功能
 description: 描述開發人員社群上有哪些建議、提出建議的方式，以及 Microsoft 會如何將這些建議用於 Visual Studio 的藍圖。
 ms.date: 12/17/2018
 ms.topic: conceptual
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74853512"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276484"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>提出 Visual Studio 功能建議
 
-除了 [Visual Studio Developer Community](https://developercommunity.visualstudio.com) (Visual Studio 開發人員社群) 目前回報問題的功能之外，我們也推出了建議功能的新體驗。 這是可讓您直接參與 Visual Studio 工程工作流程的新方式。
+除了 [Visual Studio Developer Community](https://developercommunity.visualstudio.com) (Visual Studio 開發人員社群) 目前回報問題的功能之外，我們也推出了建議功能的新體驗。 這是一種新的方式,您可以直接參與 Visual Studio 的工程工作流程。
 
 ![開發人員社群上的 [Suggest a Feature] \(建議功能\) 按鈕](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -83,7 +83,7 @@ User Voice 網站已經成為唯讀狀態。 您可以在需要時回頭查看�
 
 ![適用於開發人員社群上建議的 [Closed - Not Enough Info] \(已關閉 - 資訊不足\) 狀態](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
-[Closed - Not Enough Info]**** \(已關閉 - 資訊不足\) 代表我們在數次嘗試之後，仍然無法接收到足夠的資訊以充分了解您的功能建議。 我們必須關閉新功能建議，因為我們目前無法進一步採取任何動作。
+**閉關 - 資訊不足**表明,經過幾次嘗試后,我們沒有收到足夠的資訊來完全理解您的功能建議。 我們必須關閉新功能建議，因為我們目前無法進一步採取任何動作。
 
 已找到我們所需的資訊？ 當您已準備好提供額外的資訊時，便可以要求重新啟用該票證。
 
@@ -103,7 +103,7 @@ User Voice 網站已經成為唯讀狀態。 您可以在需要時回頭查看�
 
 ## <a name="faq"></a>常見問題集
 
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>我為何無法在開發人員社群中看見自己的 User Voice 想法？
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>為什麼我無法在開發人員社區中看到我的使用者語音想法?
 
 針對來自舊版 User Voice 論壇中的新功能建議，我們會根據其對廣大社群所產生的影響，以及我們的產品藍圖優先順序，來選擇是否要移轉到開發人員社群。 如果您認為我們未能移轉您的建議，請以新建議的形式將它新增至開發人員社群。
 
