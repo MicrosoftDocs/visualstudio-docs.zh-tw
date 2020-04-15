@@ -6,37 +6,37 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: ae6548892010035564bf29a8eda25b736db97d2a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 627b0b1260a3ccdd401dbb170f8e2dfffadea2dc
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76922996"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389993"
 ---
-借助 Visual Studio，可以輕鬆地構建、調試和運行容器化ASP.NET核心應用，並將它們發佈到 Azure 容器註冊表 （ACR）、Docker Hub、Azure 應用服務或您自己的容器註冊表。 在本文中，我們將發佈到 ACR。
+借助 Visual Studio,可以輕鬆地構建、調試和運行容器化ASP.NET核心應用,並將它們發布到 Azure 容器註冊表 (ACR)、Docker Hub、Azure 應用服務或您自己的容器註冊表。 在本文中，我們將發佈到 ACR。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 已安裝 [網頁程式開發]****、[Azure Tools]**** 工作負載及/或 [.NET Core 跨平台開發]**** 工作負載的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
-* 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊免費試用](https://azure.microsoft.com/offers/ms-azr-0044p/)。
+* 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊免費試用](https://azure.microsoft.com/free/dotnet/)。
 
 ## <a name="installation-and-setup"></a>安裝與設定
 
-對於 Docker 安裝，首先查看[Windows 的 Docker 桌面資訊：安裝 之前需要瞭解哪些內容](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)。 接下來，安裝 [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)。
+對 Docker 安裝,首先檢視[Windows 的 Docker 桌面資訊:安裝 之前需要瞭解哪些內容](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)。 接下來，安裝 [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)。
 
 ## <a name="add-a-project-to-a-docker-container"></a>將專案新增至 Docker 容器
 
 1. 從 Visual Studio 功能表中，選取 [檔案] > [新增] > [專案]****。
 1. 在 [新增專案]**** 對話方塊的 [範本]**** 區段下，選取 [Visual C#] > [Web]****。
-1. 選擇**ASP.NET核心 Web 應用程式**，或者如果要使用 .NET 框架而不是 .NET 核心，請選擇**ASP.NET Web 應用程式**。
+1. 選擇**ASP.NET 核心 Web 應用程式**,或者如果要使用 .NET 架構而不是 .NET 核心,請選擇 ASP.NET Web**應用程式**。
 1. 指定新應用程式的名稱 (或使用預設值)，然後選取 [確定] ****。
 1. 選擇**Web 應用程式**。
 1. 請勾選 [啟用 Docker 支援]**** 核取方塊。
 
    ![啟用 Docker 支援核取方塊](../../media/container-tools/enable-docker-support.PNG)
 
-   螢幕截圖顯示 .NET 核心;如果您使用的是 .NET 框架，它看起來有點不同。
+   屏幕截圖顯示 .NET 核心;如果您使用的是 .NET 框架,它看起來有點不同。
 
 1. 選取您想要 (Windows 或 Linux) 的容器類型，，然後按一下 [確定]****。
 
@@ -67,7 +67,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-上述的 *Dockerfile* 以 [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) 映像為基礎，其中包含藉由建置專案並將其新增至容器來修改基底映像的指示。 如果使用 .NET 框架，則基本映射將有所不同。
+上述的 *Dockerfile* 以 [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) 映像為基礎，其中包含藉由建置專案並將其新增至容器來修改基底映像的指示。 如果使用 .NET 框架,則基本映射將有所不同。
 
 核取新專案對話方塊的 [設定 HTTPS]**** 核取方塊時，*Dockerfile* 會提供兩個連接埠。 其中一個連接埠用於 HTTP 流量，另一個連接埠則用於 HTTPS。 如果未選取該核取方塊，則會為 HTTP 流量提供單一連接埠 (80)。
 
@@ -110,14 +110,14 @@ baf9a678c88d        hellodockertools:dev   "C:\\remote_debugge..."   21 seconds 
     | 設定      | 建議的值  | 描述                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS 首碼** | 全域唯一的名稱 | 用以唯一識別容器登錄的名稱。 |
-    | **訂閱** | 選擇您的訂用帳戶 | 要使用的 Azure 訂用帳戶。 |
-    | **[資源組](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中建立容器登錄的資源群組名稱。 選擇 [新增]**** 以建立新的資源群組。|
+    | **訂用帳戶** | 選擇您的訂用帳戶 | 要使用的 Azure 訂用帳戶。 |
+    | **[資源群組](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中建立容器登錄的資源群組名稱。 選擇 [新增]**** 以建立新的資源群組。|
     | **[Sku](/azure/container-registry/container-registry-skus)** | 標準 | 容器登錄的服務層  |
     | **登錄位置** | 接近您的位置 | 在[區域](https://azure.microsoft.com/regions/)中選擇您附近的 [位置]，或選擇將會使用容器登錄的其他服務所接近的位置。 |
 
     ![Visual Studio 的 [建立 Azure Container Registry] 對話方塊][0]
 
-1. 按一下 **"創建"**
+1. 按一下 [建立] 
 
 ## <a name="next-steps"></a>後續步驟
 

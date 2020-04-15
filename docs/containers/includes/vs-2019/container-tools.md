@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: bd9ac1bda9cb5f5d9cc5d84248200434426307c8
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: d6d519483b350f2c1086c76bc17522b71a435fe9
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80501384"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389940"
 ---
 借助 Visual Studio,可以輕鬆地構建、調試和運行容器化的 .NET、ASP.NET 和ASP.NET核心應用,並將它們發布到 Azure 容器註冊表 (ACR)、Docker Hub、Azure 應用服務或您自己的容器註冊表。 在本文中,我們將向 ACR 發佈ASP.NET核心應用。
 
@@ -21,7 +21,7 @@ ms.locfileid: "80501384"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 已安裝**網頁程式開發**、**Azure Tools** 工作負載及(或) **.NET Core 跨平台開發** 工作負載的 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * [.NET 核心開發工具](https://dotnet.microsoft.com/download/dotnet-core/),用於 .NET 核心開發
-* 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊免費試用](https://azure.microsoft.com/offers/ms-azr-0044p/)。
+* 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊免費試用](https://azure.microsoft.com/free/dotnet/)。
 
 ## <a name="installation-and-setup"></a>安裝與設定
 
@@ -112,7 +112,7 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 
     ![Visual Studio 的 [建立 Azure Container Registry] 對話方塊][0]
 
-1. 按下 **"創建"**
+1. 按一下 [建立] 
 
    ![顯示成功發佈的螢幕擷取畫面](../../media/container-tools/publish-succeeded.png)
 

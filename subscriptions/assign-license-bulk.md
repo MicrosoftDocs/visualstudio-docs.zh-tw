@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 瞭解管理員如何使用批次新增功能或 Microsoft Azure 活動目錄群組向多個訂閱者分配授權
-ms.openlocfilehash: eb641d86733ef794f1d53ae6eee45e0bdf4fde18
-ms.sourcegitcommit: deab74e8f41b30b28c041b048d67b3fff2cceab9
+ms.openlocfilehash: a7742049cdda2568504e54d2c83259bb4a262819
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80994444"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385516"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
@@ -75,10 +75,10 @@ ms.locfileid: "80994444"
 >
 > 以下限制適用於使用 Azure AD 群組新增訂閱者:
 > - 組必須至少包含一個成員。  不支援空組。
-> - 組必須少於 1,000 個使用者 
-> - 所有用戶必須位於組的頂部。  不支援嵌狀群組
-> - 只支援信任的協定
-> - 群組的所有成員必須具有與其 Azure AD 帳號關聯的電子郵件地址
+> - 組的用戶必須少於 1,000 個。 
+> - 所有用戶必須位於組的頂部。  不支援嵌套組。
+> - 僅支援受信任的協定。
+> - 組的所有成員必須具有與其 Azure AD 帳戶關聯的電子郵寄地址。
 > - 對於使用 Azure AD 組添加的訂閱,不支援通知的單獨電子郵寄地址。  
 
 1. 登錄到[https://manage.visualstudio.com](https://manage.visualstudio.com)中的可視化工作室訂閱管理門戶。
@@ -106,6 +106,7 @@ ms.locfileid: "80994444"
 > [!NOTE]
 > 如果已單獨為隨後添加為 Azure AD 組的一部分的使用者分配了訂閱,則這些訂閱將作為組的一部分添加,並且將不再單獨列出。 但是,如果單個訂閱針對不同的訂閱級別,則它們將有兩個訂閱。  範例:如果使用者具有單獨的 Visual Studio 專業訂閱,並且他們是您為其分配 Visual Studio 企業版訂閱的組的成員,則他們將同時擁有這兩個訂閱。  
 
+<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 

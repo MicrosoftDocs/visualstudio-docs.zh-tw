@@ -5,19 +5,19 @@ description: Visual Studio 已發行版本和組件編號的清單，依日期�
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 04/07/2020
+ms.date: 04/14/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 4f157413909d512cd88de7bde67a6c197a0c8d92
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: e2a71f55bf7ea55415375aa20c75e839840af42b
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276314"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385468"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -29,6 +29,9 @@ ms.locfileid: "81276314"
 
 | **版本**| **通路** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.13 | 版本 | 2020年4月14日 | 16.0.28803.718 |
+| 16.4.7 | 版本 | 2020年4月14日 | 16.4.30011.19 |
+| 16.5.4 | 版本 | 2020年4月14日 | 16.5.30011.22 |
 | 16.5.3 | 版本 | 2020年4月7日 | 16.5.30002.166 |
 | 16.6.0 | Preview 2.1 | 2020年4月2日 | 16.6.30001.183 |
 | 16.5.2 | 版本 | 2020年3月31日 | 16.5.29926.136 |
@@ -136,6 +139,7 @@ ms.locfileid: "81276314"
 
 | **版本**| **通路** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.22 | 版本 | 2020年4月14日 | 15.9.28307.1093 |
 | 15.9.21 | 版本 | 2020年3月10日 | 15.9.28307.1064 |
 | 15.9.20 | 版本 | 2020 年 2 月 11 日 | 15.9.28307.1033 |
 | 15.9.19 | 版本 | 2020 年 1 月 14 日 | 15.9.28307.1000 |
