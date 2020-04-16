@@ -2,7 +2,7 @@
 # [新功能](whats-new-in-subscriptions.md)
 # 訂閱
 ## 購買訂用帳戶
-### [零售](https://visualstudio.microsoft.com/vs/pricing)
+### [零售](buy-activate-retail.md)
 ### 雲端 
 #### [概觀](vscloud-overview.md)
 #### [計費常見問題集](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [管理 MPN 的訂閱](manage-mpn-subscriptions.md)
 ### [Microsoft for Startups](program-startups.md)
 ## 登入 
-### [啟用零售訂用帳戶](activate-store-subscriptions.md)
 ### [使用 Microsoft 帳戶登入](sign-in-msa.md)
 ### [使用公司/學校帳戶登入](sign-in-work.md)
 ### [使用 GitHub 登入](sign-in-github.md)
