@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4056e4dedf06ffe86755bf946c77032d6f6782dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702045"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444644"
 ---
 # <a name="private-galleries"></a>私人畫廊
 以將控制項、樣本和工具發布到組織 Intranet 上的*專用函式庫*,可以共用這些控制項、樣本和工具,如下所示:
@@ -42,9 +42,9 @@ ms.locfileid: "80702045"
 
 5. 在**URL**欄位中,輸入託管專用庫的 Atom 源或 SharePoint 網站的 URL。
 
-    1. 如果主機是連線到專用函式庫的 Atom 源,則網址將http://www.mywebsite/mygallery/atom.xml類似於此網址: 。  此網址可以引用檔案或網路路徑。
+    1. 如果主機是連線到專用函式庫的 Atom 源,則網址將`http://www.mywebsite/mygallery/atom.xml`類似於此網址: 。  此網址可以引用檔案或網路路徑。
 
-    2. 如果主機是 SharePoint 站點,則網址將http://mysharepoint/sites/mygallery/forms/AllItems.aspx類似於此 網站: 。
+    2. 如果主機是 SharePoint 站點,則網址將`http://mysharepoint/sites/mygallery/forms/AllItems.aspx`類似於此 網站: 。
 
 ### <a name="manage-private-galleries"></a>管理私人畫廊
  管理員可以通過修改每台電腦上的系統註冊表,同時使專用庫可供多台電腦使用。 為此,請創建一個 *.pkgdef*檔,描述新的註冊表項及其值。  此檔的格式如下。

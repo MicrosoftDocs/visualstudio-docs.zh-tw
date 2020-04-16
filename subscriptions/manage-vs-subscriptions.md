@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
-ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232363"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444867"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
@@ -52,7 +52,6 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 **透過方案取得的訂用帳戶：** 如果您是透過方案取得訂用帳戶，則該訂用帳戶會繫結至您參與的方案。 如需詳細資訊，請聯繫您的方案連絡人。
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [比茲派克](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft 合作夥伴網路](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -106,7 +105,7 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 |    大量授權服務中心 (VLSC)              |    180          |
 |    Microsoft 產品和服務合約 (MPSA)    |    180          |
 |    Visual Studio 雲端訂閱                   |    180          |
-|    程式 (例如 MCT、BizSpark、MPN、Imagine)          |    180          |
+|    程式(例如 MCT、MPN、想像)          |    180          |
 |    禁止轉售 (例如 MVP、MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
@@ -115,15 +114,15 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 > - 如果您有使用中的訂閱，則不會完全移除您的個人資料。
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [視覺化工作室文件](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文件](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文件](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
-您是否管理組織的訂閱？  瞭解有關管理視覺化工作室訂閱的更多詳細資訊：
-- [分配單個訂閱](assign-license.md)
-- [分配多個訂閱](assign-license-bulk.md)
-- [編輯訂閱](edit-license.md)
-- [刪除訂閱](delete-license.md)
+您是否管理組織的訂閱?  瞭解有關管理可視化工作室訂閱的更多詳細資訊:
+- [配置單一訂閱](assign-license.md)
+- [配置多個訂閱](assign-license-bulk.md)
+- [編輯訂用帳戶](edit-license.md)
+- [刪除訂用帳戶](delete-license.md)
 - [確定最大使用量](maximum-usage.md)

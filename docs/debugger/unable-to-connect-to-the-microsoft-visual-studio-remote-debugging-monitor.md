@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d509292bc3c7a909289abf0c73babccfead31532
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
+ms.sourcegitcommit: c3b92a9912a5816f16c6059d1738dbc833851346
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385403"
+ms.locfileid: "81397372"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 由於遠端調試監視器未在遠端電腦上正確設置,或者由於網路問題或存在防火牆,無法訪問遠端電腦,因此可能會出現此消息。
@@ -34,6 +34,7 @@ ms.locfileid: "81385403"
 
 - [除錯器無法連接到遠端電腦。除錯器無法解析指定的電腦名稱](#cannot_connect)
 - [遠端除錯器拒絕連線要求](#rejected)
+- [與遠端終結點的連線已終止](#connection_terminated)
 - [存取記憶體的不合法](#invalid_access)
 - [遠端電腦上沒有按指定名稱執行的伺服器](#no_server)
 - [要求的名稱有效,但找不到請求類型的資料](#valid_name)
@@ -67,17 +68,19 @@ ms.locfileid: "81385403"
 
 如果這些值正確,並且消息提到 Windows**身份驗證**模式,請檢查遠端除錯器是否處於正確的身份驗證模式(**工具>選項**)。
 
-## <a name="the-connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>與遠端終結點的連線已終止
+## <a name="connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>與遠端終結點的連線已終止
 
 如果要除錯 Azure 應用程式服務應用程式,請嘗試使用雲端資源管理員或伺服器資源管理程式中的[附加除錯器](../debugger/remote-debugging-azure.md#remote_debug_azure_app_service),而不是**附加到行程**。
 
 如果使用 **'附加到行程'** 來除錯:
 
-1. 在 **'附加到行程**'對話框或專案屬性中,請確保遠端電腦名稱和埠號與遠端除錯器視窗中顯示的名稱和埠號匹配。 如果不正確,請修復並重試。
+- 在 **'附加到行程**'對話框或專案屬性中,請確保遠端電腦名稱和埠號與遠端除錯器視窗中顯示的名稱和埠號匹配。 如果不正確,請修復並重試。
 
-2. 請查看伺服器上的應用程式日誌(Windows 上的事件查看器),以獲取更多詳細資訊以説明解決問題。
+- 如果嘗試使用主機名進行連接,請嘗試改用 IP 位址。
 
-3. 否則,請嘗試重新啟動具有管理員許可權的可視化工作室,然後重試。
+- 請查看伺服器上的應用程式日誌(Windows 上的事件查看器),以獲取更多詳細資訊以説明解決問題。
+
+- 否則,請嘗試重新啟動具有管理員許可權的可視化工作室,然後重試。
 
 ## <a name="invalid-access-to-memory-location"></a><a name="invalid_access"></a>存取記憶體的不合法
 
