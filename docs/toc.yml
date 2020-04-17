@@ -1,7 +1,7 @@
 - name: Visual Studio IDE 文件
   href: ide/index.yml
   pdf_name: Visual Studio documentation
-- name: 概觀
+- name: 總覽
   expanded: true
   items:
     - name: Visual Studio 概觀
@@ -40,7 +40,7 @@
       href: install/uninstall-visual-studio.md
     - name: Visual Studio 系統管理員指南
       items:
-        - name: 概觀
+        - name: 總覽
           href: install/visual-studio-administrator-guide.md
         - name: 使用命令列
           items:
@@ -52,7 +52,7 @@
           items:
             - name: 建立 Visual Studio 的網路型安裝
               href: install/create-a-network-installation-of-visual-studio.md
-            - name: 網路考量事項
+            - name: 網路考量
               items:
                 - name: 在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio
                   href: install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md
@@ -92,14 +92,14 @@
           items:
             - name: Visual Studio 訂用帳戶：系統管理員概觀
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: 參考
+        - name: 參考資料
           items:
             - name: Visual Studio 工作負載與元件識別碼
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: Workload and component IDs
                   href: install/workload-and-component-ids.md
-                - name: Visual Studio Enterprise
+                - name: Visual Studio 企業版
                   href: install/workload-component-id-vs-enterprise.md
                 - name: Visual Studio Professional
                   href: install/workload-component-id-vs-professional.md
@@ -146,9 +146,9 @@
       href: ide/quickstart-nodejs.md
     - name: 'F#：建立 Web 服務'
       href: ide/quickstart-fsharp.md
-    - name: 'C#：建立 Web 應用程式'
+    - name: 'C#: 建立 Web 應用程式'
       href: ide/quickstart-aspnet-core.md
-    - name: 'C#：建立主控台應用程式'
+    - name: 'C#: 建立主控台應用程式'
       href: ide/quickstart-csharp-console.md
     - name: Visual Basic：建立主控台應用程式
       href: ide/quickstart-visual-basic-console.md
@@ -248,7 +248,7 @@
           href: ide/visual-studio-ide-64-bit-support.md
     - name: 不使用專案或方案來開發
       items:
-        - name: 如何：在不使用專案的情況下開發
+        - name: 作法：在不使用專案的情況下開發
           displayName: Open folder
           href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
         - name: 自訂建置與偵錯工作
@@ -351,7 +351,7 @@
                   href: ide/reference/introduce-local-variable.md
             - name: 重構程式碼
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: refactoring
                   href: ide/refactoring-in-visual-studio.md
                 - name: 為所有參數新增 Null 檢查
@@ -468,7 +468,7 @@
               href: ide/how-to-manage-editor-modes.md
             - name: 管理編輯器視窗
               href: ide/how-to-manage-editor-windows.md
-            - name: 變更字型和色彩
+            - name: 變更字型與色彩
               href: ide/reference/how-to-change-fonts-and-colors-in-the-editor.md
             - name: 管理自動換行
               href: ide/reference/how-to-manage-word-wrap-in-the-editor.md
@@ -487,13 +487,13 @@
               href: ide/create-portable-custom-editor-options.md
             - name: .NET 編碼慣例
               items:
-                - name: 概觀
+                - name: 總覽
                   href: ide/editorconfig-code-style-settings-reference.md
                 - name: 語言慣例
                   href: ide/editorconfig-language-conventions.md
                 - name: 格式設定慣例
                   href: ide/editorconfig-formatting-conventions.md
-                - name: 命名慣例
+                - name: 命名規範
                   href: ide/editorconfig-naming-conventions.md
         - name: 自訂捲軸
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
@@ -577,7 +577,7 @@
           href: ide/class-designer/additional-information-about-errors.md
     - name: 改善您的程式碼
       href: ide/find-and-fix-code-errors.md
-    - name: 秘訣與技巧
+    - name: 秘訣和訣竅
       items:
         - name: 生產力功能
           href: ide/productivity-features.md
@@ -607,7 +607,7 @@
               href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
             - name: 停用 Windows Form 設計工具的 DPI 感知
               href: designers/disable-dpi-awareness.md
-            - name: 參考
+            - name: 參考資料
               items:
                 - name: System.Windows.Forms API >>
                   href: /dotnet/api/system.windows.forms
@@ -615,12 +615,12 @@
               items:
                 - name: '教學課程 1：建立圖片檢視器 (C#)'
                   items:
-                    - name: 概觀
+                    - name: 總覽
                       displayName: Tutorial 1 Picture viewer
                       href: ide/tutorial-1-create-a-picture-viewer.md
-                    - name: '步驟 1:建立 Windows Forms 應用程式專案'
+                    - name: 步驟 1：建立 Windows Forms 應用程式專案
                       href: ide/step-1-create-a-windows-forms-application-project.md
-                    - name: '步驟 2:執行您的應用程式'
+                    - name: 步驟 2：執行應用程式
                       href: ide/step-2-run-your-program.md
                     - name: 步驟 3：設定表單屬性
                       href: ide/step-3-set-your-form-properties.md
@@ -642,12 +642,12 @@
                       href: ide/step-11-run-your-program-and-try-other-features.md
                 - name: '教學課程 2：建立計時數學測驗 (C#)'
                   items:
-                    - name: 概觀
+                    - name: 總覽
                       displayName: Tutorial 2 Timed math quiz
                       href: ide/tutorial-2-create-a-timed-math-quiz.md
-                    - name: '步驟 1:建立專案並將標籤新增至表單'
+                    - name: 步驟 1：建立專案並將標籤新增至表單
                       href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-                    - name: '步驟 2:建立隨機加法問題'
+                    - name: 步驟 2：建立隨機加法問題
                       href: ide/step-2-create-a-random-addition-problem.md
                     - name: 步驟 3：新增倒數計時器
                       href: ide/step-3-add-a-countdown-timer.md
@@ -663,12 +663,12 @@
                       href: ide/step-8-customize-the-quiz.md
                 - name: '教學課程 3：建立配對遊戲 (C#)'
                   items:
-                    - name: 概觀
+                    - name: 總覽
                       displayName: Tutorial 3 Matching game
                       href: ide/tutorial-3-create-a-matching-game.md
-                    - name: '步驟 1:建立專案並將資料表新增至表單'
+                    - name: 步驟 1：建立專案並將資料表新增至表單
                       href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-                    - name: '步驟 2:新增隨機物件與圖示清單'
+                    - name: 步驟 2：新增隨機物件與圖示清單
                       href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
                     - name: 步驟 3：將隨機圖示指派給每一個標籤
                       href: ide/step-3-assign-a-random-icon-to-each-label.md
@@ -694,7 +694,7 @@
           items:
             - name: 使用 3D 資產來打造遊戲和應用程式
               href: designers/working-with-3-d-assets-for-games-and-apps.md
-            - name: 如何：在遊戲或應用程式中使用 3D 資產
+            - name: 作法：在遊戲或應用程式中使用 3D 資產
               href: designers/using-3-d-assets-in-your-game-or-app.md
             - name: 紋理和影像
               items:
@@ -732,7 +732,7 @@
                   href: designers/shader-designer.md
                 - name: 著色器設計工具節點
                   items:
-                    - name: 概觀
+                    - name: 總覽
                       displayName: Shader designer nodes
                       href: designers/shader-designer-nodes.md
                     - name: 常數節點
@@ -796,16 +796,16 @@
         - name: 設計國際化應用程式
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-- name: Build
+- name: 組建
   items:
-    - name: 概觀
+    - name: 總覽
       displayName: Compile build
       href: ide/compiling-and-building-in-visual-studio.md
     - name: 逐步解說：建置應用程式
       href: ide/walkthrough-building-an-application.md
     - name: 建置與清除專案和方案
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: Build clean
           href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
         - name: 變更組建輸出目錄
@@ -914,15 +914,15 @@
           href: ide/how-to-unlock-visual-studio.md
     - name: 調整 Visual Studio 的效能
       items:
-        - name: 效能最佳化
+        - name: 將效能最佳化
           href: ide/optimize-visual-studio-performance.md
         - name: 啟動時間
           href: ide/optimize-visual-studio-startup-time.md
         - name: 載入已篩選的解決方案
           href: ide/filtered-solutions.md
-        - name: 秘訣與技巧
+        - name: 秘訣和訣竅
           href: ide/visual-studio-performance-tips-and-tricks.md
-- name: Accessibility
+- name: 協助工具選項
   items:
     - name: 管理協助工具功能
       href: ide/reference/accessibility-features-of-visual-studio.md
@@ -932,7 +932,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Microsoft 的協助工具產品和服務
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 參考
+- name: 參考資料
   items:
     - name: 鍵盤快速鍵
       items:
@@ -944,7 +944,7 @@
           href: ide/default-keyboard-shortcuts-in-visual-studio.md
     - name: Visual Studio 命令
       items:
-        - name: 參考
+        - name: 參考資料
           displayName: Visual Studio commands
           href: ide/reference/visual-studio-commands.md
         - name: 命令別名
@@ -1042,7 +1042,7 @@
           href: ide/reference/immediate-window.md
         - name: 其他檔案
           href: ide/reference/miscellaneous-files.md
-        - name: 選項。
+        - name: 選項
           items:
             - name: 選項對話方塊
               href: ide/reference/options-dialog-box-visual-studio.md
@@ -1082,9 +1082,9 @@
                   href: ide/reference/task-list-environment-options-dialog-box.md
                 - name: 信任設定
                   href: ide/reference/trust-settings.md
-                - name: Web Browser
+                - name: 網頁瀏覽器
                   href: ide/reference/web-browser-environment-options-dialog-box.md
-            - name: 專案與解決方案
+            - name: 專案和方案
               items:
                 - name: 一般
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
@@ -1102,7 +1102,7 @@
               items:
                 - name: 一般
                   href: ide/reference/options-text-editor-general.md
-                - name: 檔案副檔名
+                - name: 副檔名
                   href: ide/reference/options-text-editor-file-extension.md
                 - name: 所有語言
                   items:
@@ -1132,7 +1132,7 @@
                   items:
                     - name: 進階
                       href: ide/reference/options-text-editor-c-cpp-advanced.md
-                    - name: Experimental
+                    - name: 實驗
                       href: ide/reference/options-text-editor-c-cpp-experimental.md
                     - name: 格式化
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
@@ -1166,7 +1166,7 @@
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: 進行 Lint 檢查
                       href: ide/reference/options-text-editor-javascript-linting.md
-                    - name: 隨附此逐步解說的專案
+                    - name: 專案
                       href: ide/reference/options-text-editor-javascript-project.md
                 - name: U-SQL
                   items:
@@ -1194,11 +1194,11 @@
                   href: ide/reference/options-windows-forms-designer-data-ui-customization.md
             - name: XAML 設計工具
               href: ide/reference/xaml-designer.md
-        - name: '[輸出] 視窗'
+        - name: 輸出視窗
           href: ide/reference/output-window.md
         - name: 專案屬性
           items:
-            - name: 參考
+            - name: 參考資料
               displayName: Project properties
               href: ide/reference/project-properties-reference.md
             - name: 應用程式頁面，專案設計工具 (UWP)
@@ -1269,7 +1269,7 @@
           href: ide/reference/team-explorer-reference.md
         - name: 工具箱
           items:
-            - name: 參考
+            - name: 參考資料
               displayName: Toolbox
               href: ide/reference/toolbox.md
             - name: 元件索引標籤、工具箱
@@ -1280,7 +1280,7 @@
               href: ide/reference/toolbox-html-tab.md
     - name: Devenv 命令列參數
       items:
-        - name: 參考
+        - name: 參考資料
           displayName: devenv command-line switches
           href: ide/reference/devenv-command-line-switches.md
         - name: '-? (devenv.exe)'
@@ -1335,11 +1335,13 @@
           href: ide/user-permissions-and-visual-studio.md
         - name: Windows 資訊保護 (WIP)
           href: ide/exempt-visual-studio-from-wip.md
+        - name: 聯邦資訊處理標準 (FIPS)
+          href: ide/fips-support-visual-studio.md
     - name: 雙向語言輸入
       href: ide/use-bidirectional-languages.md
     - name: Microsoft Help Viewer
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: Help Viewer
           href: help-viewer/overview.md
         - name: 安裝與管理本機內容
@@ -1359,7 +1361,7 @@
                   href: help-viewer/logical-operators-search-expressions.md
         - name: 自訂說明檢視器
           href: help-viewer/customize.md
-        - name: Accessibility
+        - name: 協助工具選項
           href: help-viewer/accessibility-features.md
         - name: 快速鍵
           href: help-viewer/shortcut-keys.md
@@ -1367,7 +1369,7 @@
       href: designers/the-visual-studio-image-library.md
     - name: Dotfuscator Community
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: Dotfuscator Community
           href: ide/dotfuscator/index.md
         - name: Dotfuscator 的功能
@@ -1389,7 +1391,7 @@
           href: /visualstudio/productinfo/release-rhythm/
         - name: Visual Studio 2017
           items:
-            - name: 目前的版本資訊
+            - name: 目前版本資訊
               href: /visualstudio/releasenotes/vs2017-relnotes/
             - name: 預覽版本資訊
               href: /visualstudio/releasenotes/vs2017-preview-relnotes/
@@ -1403,7 +1405,7 @@
               href: /visualstudio/productinfo/vs2017-system-requirements-vs/
         - name: Visual Studio 2019
           items:
-            - name: 目前的版本資訊
+            - name: 目前版本資訊
               href: /visualstudio/releases/2019/release-notes/
             - name: 預覽版本資訊
               href: /visualstudio/releases/2019/release-notes-preview/
@@ -1421,7 +1423,7 @@
           href: /visualstudio/productinfo/vs-servicing-vs/
     - name: 客戶經驗改進計畫
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: Customer Experience Improvement Program
           href: ide/visual-studio-experience-improvement-program.md
         - name: 由系統產生的記錄檔
@@ -1430,7 +1432,7 @@
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
 - name: 傳送意見反應
   items:
-    - name: 概觀
+    - name: 總覽
       href: ide/feedback-options.md
     - name: 回報問題
       items:
