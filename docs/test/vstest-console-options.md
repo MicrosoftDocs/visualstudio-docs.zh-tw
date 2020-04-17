@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfca799111c83f29924c997218c42f09bff5568a
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: 40f8bc4847201d1bd0298bc91432996ecce58d65
+ms.sourcegitcommit: 4bcd6abb89feff1cf8251e3ded73fdc30b67e347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224455"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81615552"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令列選項
 
@@ -43,7 +43,7 @@ ms.locfileid: "81224455"
 |**/UseVsixExtensions**|此選項可讓 *vstest.console.exe* 處理序使用或略過測試回合中已安裝的 VSIX 延伸模組 (若有的話)。<br />這個選項已被取代。 從 Visual Studio 的下一個主要版本開始，就可能會移除這個選項。 移至以 NuGet 套件形式提供的取用延伸模組。<br />範例： `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*path*]**|強制 *vstest.console.exe* 處理序在測試回合中使用來自指定路徑 (若有的話) 的自訂測試配接器。<br />範例： `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*platform type*]**|要用於測試執行的目標平台架構。<br />有效值為 x86、x64 和 ARM。|
-|**/Framework: [*framework version*]**|要用於測試執行的目標 .NET 版本。<br />範例值為 `Framework35`、`Framework40`、`Framework45`、`FrameworkUap10`、`.NETCoreApp,Version=v1.1`。<br />如果目標 Framework 指定為 **Framework35**，則會在 CLR 4.0 的「相容性模式」中執行測試。<br />範例： `/Framework:framework40`|
+|**/Framework: [*framework version*]**|要用於測試執行的目標 .NET 版本。<br />範例值為 `Framework35`、`Framework40`、`Framework45`、`FrameworkUap10`、`.NETCoreApp,Version=v1.1`。<br />TargetFrameworkAttribute 用於從程式集中自動檢測此選項,並預設`Framework40`為 屬性不存在時。 如果從 .NET 核心程式集中刪除[TargetFramework 屬性](https://docs.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute),則必須顯式指定此選項。<br />如果目標框架指定為**Framework35,** 則測試在 CLR 4.0"相容性模式"<br />範例： `/Framework:framework40`|
 |**/TestCaseFilter:[*expression*]**|執行符合指定之運算式的測試。<br /><Expression\> 的格式為 <property\>=<value\>[\|<Expression\>]。<br />範例： `/TestCaseFilter:"Priority=1"`<br />範例： `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** 命令列選項無法與 **/Tests** 命令列選項搭配使用。 <br />如需建立和使用運算式的資訊，請參閱 [ 篩選](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)。|
 |**/?**|顯示使用資訊。|
 |**/Logger:[*uri/friendlyname*]**|指定測試結果的記錄器。<br />範例:要將結果記錄到視覺化工作室測試結果檔 (TRX),請使用<br />**/記錄:trx**<br />**[;紀錄檔名稱 =\<預設為唯一的>檔名。**|

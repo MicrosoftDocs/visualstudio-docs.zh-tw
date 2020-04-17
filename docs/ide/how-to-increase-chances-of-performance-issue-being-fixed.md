@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 1a83a9c16e915bde2958193c640c0981f5edc005
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: f5c83a145eb56dcb95c6e9a299c690ae960442c9
+ms.sourcegitcommit: 4bcd6abb89feff1cf8251e3ded73fdc30b67e347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276451"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81615046"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何增加解決效能問題的機會
 
@@ -74,17 +74,17 @@ Visual Studio 是一個大型的複雜平臺,支持多種語言、項目類型�
 如果您不確定導致崩潰的原因或它們看起來是隨機的,則可以在每次 Visual Studio 崩潰時在本地捕獲轉儲,並將這些轉儲附加到單獨的反饋專案。 要在 Visual Studio 當機時在本地儲存轉儲,在管理員命令視窗中執行以下命令:
 
 ```
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe"
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpType /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpType /t REG_DWORD /d 2
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpCount /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpCount /t REG_DWORD /d 2
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\CrashDumps"
 ```
 
 根據需要自定義轉儲計數和轉儲資料夾。 [在此處](/windows/win32/wer/collecting-user-mode-dumps)查找有關這些設置的詳細資訊。
