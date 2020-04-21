@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16be10dc69f203e52eb0dccc0e0738399d37ee3d
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595718"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649427"
 ---
 # <a name="debug-page-project-designer"></a>專案設計工具、偵錯頁
 
@@ -84,8 +84,8 @@ ms.locfileid: "75595718"
 
 ## <a name="see-also"></a>另請參閱
 
-- [首先查看調試器](../../debugger/debugger-feature-tour.md)
-- [C# 調試配置的專案設置](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [視覺化基本調試配置的專案設置](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [如何：以限制權限偵錯 ClickOnce 應用程式](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [偵錯工具簡介](../../debugger/debugger-feature-tour.md)
+- [C# 除錯設定的項目設定](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [視覺化基本除錯設定的項目設定](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [安全點擊一次應用程式](../../deployment/securing-clickonce-applications.md)
 - [如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 03/25/2020
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: 了解如何下載和安裝 Visual Studio 訂用帳戶中所含的 Visual Studio IDE。
-ms.openlocfilehash: 154e5449603a8a92d2c2a52887fc4631b8dd0ab9
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 84666b0fd4362002fe15b21a6f23cd96c9cdc6a1
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273968"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649539"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 權益
 
@@ -23,7 +23,7 @@ ms.locfileid: "80273968"
 *(此範例中使用 Visual Studio Enterprise。)*
 
 下載 IDE：
-1. 登錄到[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2. 在 [工具] 區段中找出 Visual Studio IDE 磚，然後按一下權益磚底部的 [下載]**** 連結。  您也可以從[下載](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)頁面進行下載。
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise 磚](_img/vs-ide-experience/vs-ide-tile.png)
@@ -36,15 +36,15 @@ ms.locfileid: "80273968"
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise 下載詳細資料](_img/vs-ide-experience/vs-ide-download-details.png)
 6. 按一下所下載的安裝程式套件。  如果提示立即安裝，請按一下 [執行]****。
-7. 在使用者帳戶控制對話方塊中，按一下"**是**"。
+7. 在使用者帳戶控制對話方塊中,按一下「**是**」。
 8. 按一下 [繼續]**** 接受授權條款。
 9. 安裝程式啟動時，請選擇您想要的工作負載、個別元件和語言套件，方法是在對應的索引標籤上選擇它們。
    > [!div class="mx-imgBorder"]
    > ![自訂 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10. 按一下 **[安裝]**。
+10. 按一下 [Install]  。
 
-11. 安裝完成時，您可以選擇修改安裝，或啟動 Visual Studio。  按一下 [啟動]**** 開始使用。  如果安裝了多個版本，則將列出這些版本。
+11. 安裝完成時，您可以選擇修改安裝，或啟動 Visual Studio。  按一下 [啟動]**** 開始使用。  如果安裝了多個版本,則將列出這些版本。
     > [!div class="mx-imgBorder"]
     > ![啟動 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
 
@@ -69,7 +69,7 @@ ms.locfileid: "80273968"
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  是         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 
-<sup>1</sup>  *包括： 不轉售 （NFR）， 視覺工作室行業合作夥伴 （VSIP）， 微軟合作夥伴網路 （MPN）， FTE， MCT 軟體&服務開發人員， BizSpark， 想像， 最有價值的專業人士 （MVP）， 區域總監 （RD）. 不包括：MCT 軟體&服務。*
+<sup>1</sup>  *包括: 不轉售 (NFR), 視覺工作室行業合作夥伴 (VSIP), 微軟合作夥伴網络 (MPN), FTE, MCT 軟體&服務開發人員, BizSpark, 想像, 最有價值的專業人士 (MVP), 區域總監 (RD). 不包括:MCT 軟體&服務。*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新客戶前往[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)探索購買 Visual Studio 的不同選項。
@@ -78,15 +78,15 @@ ms.locfileid: "80273968"
 
 ## <a name="support-resources"></a>支援資源
 - 如需 Visual Studio IDE 的說明，請查看這些資源：
-  - 技術支援：[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - 技術支援:[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [文件](/visualstudio/)
-- 有關視覺工作室訂閱的銷售、訂閱、帳戶和計費説明，請聯繫視覺化工作室[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 有關視覺工作室訂閱的銷售、訂閱、帳戶和計費説明,請聯絡可視化工作室[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [視覺化工作室文件](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文件](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文件](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 安裝 Visual Studio 之後，請別忘了起用這些其他重要的權益：

@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b145dd4d82887122009553afd883abb6cade849e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 65ef0edf76780ba7c8b6f5d9347195c286bec466
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697782"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649850"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>演練:向自訂編輯器新增功能
 建立自定義編輯器後,可以向其添加更多功能。
@@ -34,7 +34,7 @@ ms.locfileid: "80697782"
 
 3. 通過設置<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>介面實現編輯器工廠。
 
-     有關詳細資訊,請參閱[編輯器工廠](../extensibility/editor-factories.md)。
+     有關詳細資訊,請參閱[編輯器工廠](/visualstudio/extensibility/editor-factories?view=vs-2015)。
 
 4. 確定是希望編輯器使用就地激活還是簡化嵌入來管理文檔檢視物件視窗。
 

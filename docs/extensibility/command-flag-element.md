@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7173bc1ebc5507eadf319c0374f4c878dea62857
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739772"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649374"
 ---
 # <a name="command-flag-eelement"></a>命令標誌 Eelement
 修改其父元素。
@@ -60,7 +60,6 @@ ms.locfileid: "80739772"
 |PostExec|使命令不阻塞。 開發環境將延遲執行,直到完成所有預處理查詢。<br /><br /> 合法:`Button`|
 |路由到文件|該命令路由到活動文檔。<br /><br /> 合法:`Button`|
 |水平拉伸|設置此標誌時,寬度將成為組合框的最小寬度,如果工具列上有空間,組合框將拉伸以填充可用空間。 僅當工具列水準停靠時,並且工具列上只有一個組合框可以使用標誌(除第一個組合框外,所有組合框上都忽略該標誌),才會發生這種情況。<br /><br /> 合法:`Combo`|
-|文字選單使用按鈕|對`ButtonText`功能表使用該欄位。 預設欄位是`MenuText`指定欄位。<br /><br /> 合法:`Button`|
 |文字變更|指令或選單文字可以在執行時更改,通常透過方法`QueryStatus`。<br /><br /> 適用於: `Button`, ,`Menu`|
 |文字變更按鈕|合法:`Button`|
 |文字 Isanchor 命令|對於功能表控制器,功能表的文本取自預設(錨點)命令。 錨點命令是選擇或鎖定的最後一個命令。 如果未設置此標誌,功能表控制器將使用其自己的`MenuText`欄位。 但是,單擊功能表控制器仍啟用該控制器的最後一個選定命令。<br /><br /> 我們建議您將此標誌與`TextChanges`標誌合併。<br /><br /> 此標誌僅適用於類型功能表控制器或功能表控制器鎖定的功能表。<br /><br /> 合法:`Menu`|

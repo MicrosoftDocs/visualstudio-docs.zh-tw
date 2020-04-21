@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: 435185a628dbf256802ae36dae45eac60d304a54
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544057"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649684"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的新功能
 
@@ -39,6 +39,23 @@ ms.locfileid: "80544057"
 我們很高興地宣佈擴大我們的合作夥伴 CAST 亮點所提供的福利。 
 - Visual Studio 企業版訂閱中包含的權益期限已延長至六個月。  
 - Visual Studio 專業訂閱者現在可以收到訂閱,允許他們評估單個應用程式三個月。 
+
+## <a name="2020-q2-april-june"></a>2020 年第 2 季 (4 月至 6 月)
+
+### <a name="visual-studio-subscriptions-portal"></a>可視化工作室訂閱門戶
+
+可視化工作室訂閱門戶的外觀和易用性發生了重大變化。  
+
+- 福利磁貼已調整大小,並且都顯示在視窗中,因此您無需向左或向右滾動來查看給定類別中的所有磁貼。 
+- 您可以選擇顯示所有可用權益,或使用類別選取器僅顯示一個類別。
+   > [!div class="mx-imgBorder"]
+   > ![新的福利類別選擇器](_img/whats-new/whats-new-category-picker.png)
+- 我們還將訂閱選取器從視窗的右上角移動到更易於訪問的位置。
+   > [!div class="mx-imgBorder"]
+   > ![新的訂閱選取器](_img/whats-new/whats-new-sub-picker.png)
+- 我們在福利列表頂部添加了"特色福利",以標註新的或受歡迎的福利。  
+   > [!div class="mx-imgBorder"]
+   > ![新的特色優勢](_img/whats-new/whats-new-featured.png)
 
 ## <a name="next-steps"></a>後續步驟
 - 檢視新的[訂閱管理門戶](https://manage.visualstudio.com)UI 及其新功能

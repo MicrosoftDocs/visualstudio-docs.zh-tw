@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶中所含的 Parasoft Virtualize/SOA Test Professional 訂用帳戶。
-ms.openlocfilehash: 5f6673ecd3721232feb727ceda2c399e2ee12348
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: 320223c76178259d86c2abc942a5852115c6c94a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301908"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649459"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -20,7 +20,7 @@ ms.locfileid: "80301908"
 
 ## <a name="activation-steps"></a>啟用步驟
 
-1. 要使用您的帕拉軟虛擬化/SOAtest 專業桌面權益，請登錄[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+1. 要使用您的帕拉軟虛擬化/SOAtest 專業桌面權益,請[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)登入 。
 
 2. 在 [工具] 區段找到 [Parasoft] 磚，並按一下權益磚底部的 [取得代碼]**** 連結。   您會收到已成功擷取代碼的通知。  按一下 [啟動]****。
    > [!div class="mx-imgBorder"]
@@ -47,7 +47,7 @@ ms.locfileid: "80301908"
 
 9. 選擇您想要的語言，然後按一下 [確定]****。
 
-10. [Parasoft SOAtest & Virtualize 安裝精靈] 隨即啟動。  按 [下一步]****。
+10. [Parasoft SOAtest & Virtualize 安裝精靈] 隨即啟動。  按 [下一步]  。
     > [!div class="mx-imgBorder"]
     > ![Parasoft 權益安裝開始](_img/vs-parasoft/vs-parasoft-start-install.png)
 
@@ -82,7 +82,7 @@ ms.locfileid: "80301908"
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 ||
 
-<sup>1</sup>  *包括：微軟合作夥伴網路（企業）。 不包括：不轉售 （NFR）、視覺工作室行業合作夥伴 （VSIP）、FTE、MCT 軟體&服務開發人員、BizSpark、想像、最有價值的專業 （MVP）、區域總監 （RD）。 MCT 軟體&服務。*
+<sup>1</sup>  *包括:微軟合作夥伴網路(企業)。 不包括:不轉售 (NFR)、視覺工作室行業合作夥伴 (VSIP)、FTE、MCT 軟體&服務開發人員、BizSpark、想像、最有價值的專業 (MVP)、區域總監 (RD)。 MCT 軟體&服務。*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新客戶前往[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)探索購買 Visual Studio 的不同選項。
@@ -91,14 +91,14 @@ ms.locfileid: "80301908"
 - 需要 Parasoft 產品說明嗎？  請參閱這些資源：
   - 技術支援： https://www.parasoft.com/support/
   - Parasoft Resource Center： https://www.parasoft.com/resources/
-- 有關視覺工作室訂閱的銷售、訂閱、帳戶和計費説明，請聯繫視覺化工作室[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 有關視覺工作室訂閱的銷售、訂閱、帳戶和計費説明,請聯絡可視化工作室[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [視覺化工作室文件](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文件](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文件](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
-通過啟動[Azure DevTest 個人積分](vs-azure.md)，利用您自己的開發沙箱。 
+通過啟動[Azure DevTest 個人積分](vs-azure.md),利用您自己的開發沙箱。 

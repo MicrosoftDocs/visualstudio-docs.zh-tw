@@ -1,18 +1,18 @@
 ---
-title: 辦公室 365 專業加優惠 |微軟文檔
+title: 辦公室 365 專業加優惠 |微軟文件
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 9c70adf7-7d1b-4322-8e34-9149e8735a13
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: 瞭解某些 Visual Studio 訂閱中包含的 Office 365 專業版優勢。
-ms.openlocfilehash: ce0527fbf4912ed55ed99f9368c8f10dde68a091
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: 3db596912739562b65a0568864dfdf224cc28b3a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301920"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649488"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365 Pro Plus
 
@@ -22,7 +22,7 @@ ms.locfileid: "80301920"
 > 您的 Visual Studio 訂閱允許您使用 Office 365 專業加號進行生產使用。  
 
 > [!IMPORTANT]
-> 我們已意識到獲取 Office 365 專業版 Plus 的產品金鑰的問題。  我們正在處理此問題，並在問題解決時提供更新。 
+> 我們已意識到獲取 Office 365 專業版 Plus 的產品密鑰的問題。  我們正在處理此問題,並在問題解決時提供更新。 
 
 
 ## <a name="getting-started-with-office-365-pro-plus"></a>開始使用 Office 365 Pro Plus
@@ -30,24 +30,24 @@ ms.locfileid: "80301920"
 遵循下列步驟下載並啟用 Office 365 Pro Plus：
 1. 登入您的 Visual Studio Enterprise 訂用帳戶。
 2. 按一下 [下載]**** 索引標籤。
-3. 您會看到一份精選下載的清單。 在 Office 清單中，選擇**Office 365 專業加號**。
+3. 您會看到一份精選下載的清單。 在 Office 清單中,選擇**Office 365 專業加號**。
    > [!div class="mx-imgBorder"]
    > ![辦公室 365 專業加下載](_img/vs-office365/vs-office365-downloads.png)
-0. 要安裝 Office 365 專業版 Plus，您需要產品金鑰。  按一下 Office 365 專業加清單下的 **"獲取"鍵**連結。
+0. 要安裝 Office 365 專業版 Plus,您需要產品密鑰。  按下 Office 365 專業加清單下的 **「獲取」鍵**連結。
    > [!div class="mx-imgBorder"]
    > ![辦公室 365 專業加獲取產品金鑰](_img/vs-office365/vs-office365-get-key.png)
 0. 飛出視窗會顯示您已領取的任何金鑰，以及您可以使用的金鑰。  若要取得新的金鑰，請按一下 [Office Professional Plus 2019]**** 清單下的 [領取金鑰]****。
    > [!div class="mx-imgBorder"]
-   > ![Office 365 專業加索賠產品金鑰](_img/vs-office365/vs-office365-claim-key.png)
+   > ![Office 365 專業加索賠產品密鑰](_img/vs-office365/vs-office365-claim-key.png)
 0. 記錄您剛才索取的金鑰。 (您可以隨時返回此清單再次查看)。
 0. 關閉飛出視窗。
-0. 按一下 **"下載**"按鈕。
+0. 按下 **「下載**」按鈕。
    > [!div class="mx-imgBorder"]
    > ![辦公室 365 專業加入門下載](_img/vs-office365/vs-office365-download-button.png)
 0. 使用您的 Microsoft 帳戶登入。 (若您已登入，請按一下 [下一步]****)。
 0. 輸入您的產品金鑰、國家/地區或區域，以及語言，然後按一下 [下一步]****。
    > [!div class="mx-imgBorder"]
-   > ![Office 365 專業加輸入產品金鑰](_img/vs-office365/vs-office365-enter-key.png)
+   > ![Office 365 專業加輸入產品密鑰](_img/vs-office365/vs-office365-enter-key.png)
 0. 再按一下 [下一步] **** 。
 0. 按一下 [安裝]**** 以安裝 Office 應用程式。
 
@@ -65,7 +65,7 @@ ms.locfileid: "80301920"
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 |  |
 
-<sup>1</sup>  *包括：不轉售 （NFR）、視覺工作室行業合作夥伴 （VSIP）、微軟合作夥伴網路 （MPN）、FTE、MCT 軟體&服務開發人員、BizSpark、最有價值的專業 （MVP）、區域總監 （RD）、MCT 軟體&服務、想像、微軟合作夥伴網路。*
+<sup>1</sup>  *包括:不轉售 (NFR)、視覺工作室行業合作夥伴 (VSIP)、微軟合作夥伴網路 (MPN)、FTE、MCT 軟體&服務開發人員、BizSpark、最有價值的專業 (MVP)、區域總監 (RD)、MCT 軟體&服務、想像、微軟合作夥伴網路。*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新客戶前往[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)探索購買 Visual Studio 的不同選項。
@@ -74,18 +74,18 @@ ms.locfileid: "80301920"
 
 ## <a name="support-resources"></a>支援資源
 - 如需任何 EMS 元件的技術支援，請前往 https://support.microsoft.com/allproducts 並選取產品。
-- 有關視覺工作室訂閱的銷售、訂閱、帳戶和計費説明，請聯繫視覺化工作室[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 有關視覺工作室訂閱的銷售、訂閱、帳戶和計費説明,請聯絡可視化工作室[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [視覺化工作室文件](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文件](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文件](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure 開發人員測試單個信用](vs-azure.md)如果您計畫為 Office 開發應用程式，則需要啟動[Office 開發人員訂閱](vs-office-dev.md)
+- [Azure 開發人員測試單個信用](vs-azure.md)如果您計劃為 Office 開發應用程式,則需要啟動[Office 開發人員訂閱](vs-office-dev.md)
 

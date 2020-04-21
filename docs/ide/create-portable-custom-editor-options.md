@@ -7,31 +7,31 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5fdb0cc217062190e02e70b6361c8a3a2aa2f935
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301955"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81648530"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 建立可攜式自訂編輯器設定
 
-您可以將 Editor [Config](https://editorconfig.org/)檔添加到專案或代碼庫，以便為在代碼庫中工作的每個人強制實施一致的編碼樣式。 EditorConfig 設定優先於全域 Visual Studio 文字編輯器設定。 這表示您可以自訂每個程式碼基底，以使用該專案專屬的文字編輯器設定。 您仍然可以在 Visual Studio 的 [選項]**** 對話方塊中設定自己的個人編輯器喜好設定。 每當您使用沒有 *.editorconfig* 檔案的程式碼基底時，或 *.editorconfig* 檔案不覆寫特定設定時，就會套用那些設定。 縮排樣式&mdash;定位點或空格，即為這類喜好設定的範例之一。
+您可以將 Editor [Config](https://editorconfig.org/)檔添加到專案或代碼庫,以便為在代碼庫中工作的每個人強制實施一致的編碼樣式。 EditorConfig 設定優先於全域 Visual Studio 文字編輯器設定。 這表示您可以自訂每個程式碼基底，以使用該專案專屬的文字編輯器設定。 您仍然可以在 Visual Studio 的 [選項]**** 對話方塊中設定自己的個人編輯器喜好設定。 每當您使用沒有 *.editorconfig* 檔案的程式碼基底時，或 *.editorconfig* 檔案不覆寫特定設定時，就會套用那些設定。 縮排樣式&mdash;定位點或空格，即為這類喜好設定的範例之一。
 
 許多程式碼編輯器和 IDE，包括 Visual Studio，都支援 EditorConfig 設定。 它是隨附於程式碼的可攜式元件，甚至可以強制規範 Visual Studio 之外的編碼樣式。
 
 ::: moniker range=">=vs-2019"
 
-在 Visual Studio 中向專案添加 Editor Config 檔時，將根據編輯器配置設置設置新程式碼的格式。 除非運行以下命令之一，否則不會更改現有代碼的格式：
+在 Visual Studio 中向專案添加 Editor Config 檔時,將根據編輯器配置設置設置新代碼行的格式。 除非執行以下指令之一,否則不會更改現有代碼的格式:
 
- - [代碼清理](../ide/code-styles-and-code-cleanup.md)**（Ctrl**+**K**， **Ctrl**+**E**），它應用任何空白設置，如縮進樣式和選定的代碼樣式設置，如如何`using`對指令進行排序。
- - **編輯**>**高級**+**K**+**D****Ctrl****Format Document****Ctrl**格式文檔（或預設設定檔中的 Ctrl K 、Ctrl D），它僅應用空白設置，如縮進樣式。 >
+ - [代碼清理](../ide/code-styles-and-code-cleanup.md)**(Ctrl**+**K**, **Ctrl**+**E**),它應用任何空白設置,如縮進樣式和選定的代碼`using`樣式設置,如如何 對指令進行排序。
+ - **編輯**>**進**+階**K**+>格式文件**Format Document**(或預設設定檔中的 Ctrl K 、Ctrl D),它僅應用空白設定,如縮進樣式。**D****Ctrl****Ctrl**
 
  ::: moniker-end
 
 ::: moniker range="=vs-2017"
 
-在 Visual Studio 中向專案添加 Editor Config 檔時，將根據編輯器配置設置設置新程式碼的格式。 除非運行文檔格式（在預設設定檔中**編輯** > **高級** > **格式文檔**或**Ctrl**+**K** **、Ctrl**+**D），** 否則不會更改現有代碼的格式。 設置文檔僅影響空白設置（如縮進樣式），除非您已配置 Format 文檔[以執行其他代碼清理](../ide/code-styles-and-code-cleanup.md#apply-code-styles)。
+在 Visual Studio 中向專案添加 Editor Config 檔時,將根據編輯器配置設置設置新代碼行的格式。 除非執行文件格式(在預設設定檔中**編輯** > **進階** > **格式文件**或**Ctrl**+ **K、Ctrl**+**D),** 否則不會更改現有代碼的格式。**K** 設定文件僅影響空白設定(如縮進樣式),除非您已設定 Format 文件[以執行其他程式碼清理](../ide/code-styles-and-code-cleanup.md#apply-code-styles)。
 
  ::: moniker-end
 
@@ -72,7 +72,7 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](https://editorconfig.o
 
 ## <a name="add-and-remove-editorconfig-files"></a>新增及移除 EditorConfig 檔案
 
-當您將 EditorConfig 檔案新增至專案或程式碼基底之後，您撰寫的任何新程式碼都會根據 EditorConfig 檔案設定格式。 但是，添加 EditorConfig 檔不會將現有樣式轉換為新的樣式，直到您格式化文檔或運行[代碼清理](../ide/code-styles-and-code-cleanup.md)。 例如，如果您在檔案中使用了定位字元設定格式的縮排，而且新增了以空格縮排的 EditorConfig 檔案，縮排字元不會自動轉換為空格。 當您格式化文檔（**編輯** > **高級** > **格式文檔**或**Ctrl**+**K** **，Ctrl**+**D**）時，編輯器設定檔中的空白設置將應用於現有的程式碼。
+當您將 EditorConfig 檔案新增至專案或程式碼基底之後，您撰寫的任何新程式碼都會根據 EditorConfig 檔案設定格式。 但是,新增 EditorConfig 檔不會將現有樣式轉換為新的樣式,直到您格式化文件或執行[程式碼清理](../ide/code-styles-and-code-cleanup.md)。 例如，如果您在檔案中使用了定位字元設定格式的縮排，而且新增了以空格縮排的 EditorConfig 檔案，縮排字元不會自動轉換為空格。 當您格式化文件(**編輯** > **進階** > **格式文件**或**Ctrl**+**K** **,Ctrl**+**D**)時,編輯器設定檔中的空白設定將應用於現有的程式碼列。
 
 如果您從專案或程式碼基底移除了 EditorConfig 檔案，且想要依照全域編輯器設定為新的程式碼設定格式，就必須關閉並重新開啟任何開啟的程式碼檔案。
 
@@ -80,7 +80,7 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](https://editorconfig.o
 
 1. 在 Visual Studio 中開啟專案或解決方案。 選取專案或解決方案節點，視您的 *.editorconfig* 設定應套用至解決方案中的所有專案或僅只一個專案而定。 您也可以選取專案或解決方案中的資料夾，將 *.editorconfig* 檔案新增到此資料夾。
 
-1. 從功能表列中，選擇 **"專案** > **添加新專案**"，或按**Ctrl**+**Shift**+**A**。
+1. 從選單列中,選擇 **「專案** > **新增新專案**」,或按**Ctrl**+**Shift**+**A**。
 
    [新增項目]**** 對話方塊隨即開啟。
 
@@ -104,17 +104,17 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](https://editorconfig.o
 
 - Visual Studio 中 IntelliCode 的[程式碼推斷功能](/visualstudio/intellicode/code-style-inference)可從現有程式碼推斷程式碼樣式。 然後它會使用已定義的程式碼樣式喜好設定來建立非空白的 EditorConfig 檔案。
 
-- 從 Visual Studio 2019 開始，您可以[以 [工具]**** > [選項]**** 中的程式碼樣式設定為基礎產生 EditorConfig 檔案](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files)。
+- 從 Visual Studio 2019 開始，您可以[以 [工具]**** > [選項]**** 中的程式碼樣式設定為基礎產生 EditorConfig 檔案](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files)。
 
 ## <a name="file-hierarchy-and-precedence"></a>檔案階層和優先順序
 
-將 *.editorconfig 檔*添加到檔層次結構中的資料夾時，其設置將應用於該級別及以下的所有適用檔。 您也可以覆寫特定專案、程式碼基底，或程式碼基底組件的 EditorConfig 設定，這樣它就會使用和其他程式碼基底組件不同的慣例。 當您納入來自其他地方的程式碼，但不想變更其慣例時，這非常有用。
+將 *.editorconfig 檔案*添加到檔層次結構中的資料夾時,其設置將應用於該級別及以下的所有適用檔。 您也可以覆寫特定專案、程式碼基底，或程式碼基底組件的 EditorConfig 設定，這樣它就會使用和其他程式碼基底組件不同的慣例。 當您納入來自其他地方的程式碼，但不想變更其慣例時，這非常有用。
 
 若要覆寫部分或全部的 EditorConfig 設定，請將 *.editorconfig* 檔案新增至您想要套用這些覆寫設定的檔案階層層級。 新的 EditorConfig 檔案設定會套用到相同層級和任何子目錄中的檔案。
 
 ![EditorConfig 階層](../ide/media/vside_editorconfig_hierarchy.png)
 
-如果要覆蓋某些（但不是所有設置），請僅指定 *.editorconfig*檔中的這些設置。 只有明確列在較低層級檔案中的屬性才會被覆寫。 從更高級別的 *.editorconfig 檔*的其他設置繼續應用。 如果想要確保「不」__ 套用「任何」__ 較高層級 *.editorconfig* 檔案的設定到此程式碼基底組件，請在較低層級的 *.editorconfig* 檔案中新增 ```root=true``` 屬性：
+如果要覆蓋某些(但不是所有設置),請僅指定 *.editorconfig*檔中的這些設置。 只有明確列在較低層級檔案中的屬性才會被覆寫。 從更高級別的 *.editorconfig 檔*的其他設置繼續應用。 如果想要確保「不」__ 套用「任何」__ 較高層級 *.editorconfig* 檔案的設定到此程式碼基底組件，請在較低層級的 *.editorconfig* 檔案中新增 ```root=true``` 屬性：
 
 ```ini
 # top-most EditorConfig file
@@ -145,7 +145,7 @@ Visual Studio 可透過提供 IntelliSense 完成清單協助您編輯 *.editorc
 
 ![使用 EditorConfig 前的程式碼](../ide/media/vside_editorconfig_before.png)
 
-向專案添加名為 *.editorconfig*的新檔，內容如下。 `[*.cs]` 設定表示這項變更只會套用到此專案中的 C# 程式碼檔案。
+加入專案加入*名為 .editorconfig*的新檔,內容如下。 `[*.cs]` 設定表示這項變更只會套用到此專案中的 C# 程式碼檔案。
 
 ```ini
 # Top-most EditorConfig file
@@ -156,7 +156,7 @@ root = true
 indent_style = tab
 ```
 
-現在，當您按**Tab**鍵時，您將獲得選項卡字元而不是空格。
+現在,當您按**Tab**鍵時,您將獲得選項卡字元而不是空格。
 
 ![以 TAB 鍵新增定位字元](../ide/media/vside_editorconfig_tab.png)
 
@@ -166,11 +166,11 @@ indent_style = tab
 
    **「此檔案類型的使用者偏好由此專案的編碼慣例覆寫。」**
 
-這意味著，如果**工具** > **選項** > **文字編輯器**中的任何編輯器設置（如縮進大小和樣式、選項卡大小或編碼約定）在目錄結構中專案或上方的 Editor Config 檔中指定，則 EditorConfig 檔中的約定將覆蓋**選項**中的設置。 您可以透過切換 [工具]**** > [選項]**** > [文字編輯器]**** 中的 [遵循專案編碼慣例]**** 選項來控制這個行為。 取消選取此選項會關閉 Visual Studio 的 EditorConfig 支援。
+這意味著,如果**工具** > **選項** > **文本編輯器**中的任何編輯器設置(如縮進大小和樣式、選項卡大小或編碼約定)在目錄結構中專案或上方的 Editor Config 檔中指定,則 EditorConfig 檔中的約定將覆蓋**選項**中的設置。 您可以透過切換 [工具]**** > [選項]**** > [文字編輯器]**** 中的 [遵循專案編碼慣例]**** 選項來控制這個行為。 取消選取此選項會關閉 Visual Studio 的 EditorConfig 支援。
 
 ![編碼選項 - 遵循專案編碼慣例](media/coding_conventions_option.png)
 
-您可以通過打開命令提示符並從包含專案的磁片根運行以下命令，在父目錄中查找任何 *.editorconfig*檔：
+您可以透過開啟指令提示符並從包含項目的磁碟根執行以下命令,在父目錄中尋找任何 *.editorconfig*檔案:
 
 ```Shell
 dir .editorconfig /s

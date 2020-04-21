@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中所含的 Visual Studio App Center 權益。
-ms.openlocfilehash: abe929398035bef8800949712ad6cc4e0ac93721
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: d47e3cfef8be2a3a03dab94d6a38f2ecde160f0c
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301867"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649785"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Visual Studio App Center
 
@@ -24,7 +24,7 @@ App Center 是應用程式的任務控制機制。
 
 ## <a name="activation-steps"></a>啟用步驟
 開始使用 Visual Studio App Center 非常簡單。
-1. 登錄到[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 尋找 Visual Studio App Center 圖格，然後按一下 [開始使用]****。
     > [!div class="mx-imgBorder"]
@@ -50,7 +50,7 @@ App Center 是應用程式的任務控制機制。
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 已包括                                                            |是 |
 ||
 
-<sup>1</sup>  *包括： 不轉售 （NFR）， FTE， 視覺工作室行業合作夥伴 （VSIP）， 想像， 微軟合作夥伴網路 （MPN）， MCT 軟體&服務， MCT 軟體&服務開發人員， BizSpark， 最有價值的專業人士 （MVP）， 區域總監 （RD）.*
+<sup>1</sup>  *包括: 不轉售 (NFR), FTE, 視覺工作室行業合作夥伴 (VSIP), 想像, 微軟合作夥伴網络 (MPN), MCT 軟體&服務, MCT 軟體&服務開發人員, BizSpark, 最有價值的專業人士 (MVP), 區域總監 (RD).*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新客戶前往[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)探索購買 Visual Studio 的不同選項。
@@ -62,7 +62,7 @@ App Center 是應用程式的任務控制機制。
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>問：我收到不支援瀏覽器的錯誤。  出了什麼問題？
 答：App Center 需要一些較舊瀏覽器不提供的較新功能。  若不支援您的瀏覽器，請依照這些步驟執行：
 1. 開啟不同的瀏覽器，例如 Microsoft Edge 或最新版本的 Google Chrome 或 Firefox，或 Safari。
-2. 連接到視覺化工作室[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)並登錄。
+2. 連接到可視化工作室[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)並登錄。
 3. 現在按一下 Visual Studio App Center 圖格上的 [開始使用]**** 連結。
 
 您現在應該可以存取 App Center 入口網站並建立您的帳戶。
@@ -71,14 +71,14 @@ App Center 是應用程式的任務控制機制。
 - 需要 App Center 的說明？
   - 在 [App Center 說明中心](https://intercom.help/appcenter/) \(英文\) 取得建議與解答。
   - 查看完整的 [App Center 文件](/appcenter/)
-- 有關視覺工作室訂閱的銷售、訂閱、帳戶和計費説明，請聯繫視覺化工作室[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 有關視覺工作室訂閱的銷售、訂閱、帳戶和計費説明,請聯絡可視化工作室[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [視覺化工作室文件](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文件](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [微軟 365 文件](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：

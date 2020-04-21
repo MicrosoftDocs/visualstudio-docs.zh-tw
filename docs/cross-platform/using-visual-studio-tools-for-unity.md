@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d1bca9bed18de822de71ca441387adeaefc65ec3
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302256"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649389"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -33,7 +33,7 @@ ms.locfileid: "79302256"
 
 您可以從 Visual Studio 快速存取 Unity 指令碼文件。 如果 Visual Studio Tools for Unity 在本機找不到應用程式開發介面文件，則會嘗試在線上尋找。
 
-- 在視覺化工作室中，突出顯示游標或將游標放在要瞭解的 Unity API 上，然後按**Ctrl**+**Alt**+**M** **，Ctrl**+**H**
+- 在可檢視化工作室中,突出顯示游標或將游標放在要瞭解的 Unity API 上,然後按**Ctrl**+**Alt**+**M** **,Ctrl**+**H**
 
 ## <a name="intellisense-for-unity-api-messages"></a>Unity API 訊息的 IntelliSense
 
@@ -71,7 +71,7 @@ Intellisense 程式碼編譯可在 MonoBehaviour 指令碼中輕鬆地實作 Uni
 
 使用 MonoBehavior 精靈建立空白 MonoBehavior 方法定義：
 
-1. 在 Visual Studio 中，將游標放置在要插入方法的位置，然後按**Ctrl**+**Shift**+**M**啟動單行為嚮導。
+1. 在 Visual Studio 中,將游標放置在要插入方法的位置,然後按**Ctrl**+**Shift**+**M**啟動單行為精靈。
 
 2. 在 [建立指令碼方法]**** 視窗中，標記您要加入之每個方法名稱旁的核取方塊。
 
@@ -91,7 +91,7 @@ Intellisense 程式碼編譯可在 MonoBehaviour 指令碼中輕鬆地實作 Uni
 
 Unity 專案總管會使用與 Unity 編輯器一樣的方式顯示您的所有 Unity 專案檔案與目錄。 這與使用一般 Visual Studio 方案總管瀏覽 Unity 指令碼的方式不同，一般 Visual Studio 方案總管會將它們組織為專案與 Visual Studio 產生的方案。
 
-- 在 Visual Studio 主功能表上，選擇 [檢視] > [Unity 專案總管]****。 鍵盤快速鍵 **：Alt**+**移位**+**E**
+- 在 Visual Studio 主功能表上，選擇 [檢視] > [Unity 專案總管]****。 鍵盤捷徑 **:Alt**+**移位**+**E**
 
    ![檢視 Unity 專案總管視窗。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -194,7 +194,7 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
    ![DLL 的目標架構設定為 Unity 架構。](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
-3. 將 DLL 複製到 Unity 專案的 Assets 資料夾。 在 Unity 中，資產是與 Unity 應用程式一起封裝及部署的檔案，以便可以在執行階段載入。 由於 DLL 在運行時連結，因此必須將 DLL 部署為資產。 為了將 DLL 部署為資產，Unity Editor 會要求將 DLL 放在 Unity 專案的 [Assets] 資料夾中。 有兩種方式可讓您完成這個步驟：
+3. 將 DLL 複製到 Unity 專案的 Assets 資料夾。 在 Unity 中，資產是與 Unity 應用程式一起封裝及部署的檔案，以便可以在執行階段載入。 由於 DLL 在運行時連結,因此必須將 DLL 部署為資產。 為了將 DLL 部署為資產，Unity Editor 會要求將 DLL 放在 Unity 專案的 [Assets] 資料夾中。 有兩種方式可讓您完成這個步驟：
 
    - 修改 DLL 專案的組建設定，以包含將輸出 DLL 和 PDB 檔案從其輸出資料夾複製到 Unity 專案之 [Assets]**** 資料夾的建置後工作。
 
@@ -202,7 +202,7 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
    由於 PDB 檔案包含 DLL 的偵錯符號，並將 DLL 程式碼對應至其原始程式碼形式，因此偵錯時會需要這些檔案。 如果您是以舊版執行階段為目標，Visual Studio Tools for Unity 將會使用 DLL 和 PDB 中的資訊來建立 DLL.MDB 檔案，這是舊版 Unity 指令碼引擎所使用的偵錯符號格式。 如果您是以新的執行階段為目標，並使用可攜式 PDB，則 Visual Studio Tools for Unity 將不會嘗試執行任何的符號轉換，因為新的 Unity 執行階段是以原生方式使用可攜式 PDB。
 
-   有關產生 PDB 的更多資訊，請參閱[此處](/visualstudio/debugger/how-to-set-debug-and-release-configurations)。 如果您是以新的執行階段為目標，請確定 [偵錯資訊] 設定為 [可攜式]，以便正確地產生可攜式 PDB。 如果您是以舊版執行階段為目標，則需要使用 [完整]。
+   有關產生 PDB 的更多資訊，請參閱[此處](../debugger/how-to-set-debug-and-release-configurations.md)。 如果您是以新的執行階段為目標，請確定 [偵錯資訊] 設定為 [可攜式]，以便正確地產生可攜式 PDB。 如果您是以舊版執行階段為目標，則需要使用 [完整]。
 
 4. 為程式碼偵錯。 您現在可以連同 Unity 專案的原始程式碼一起為 DLL 原始程式碼偵錯，並使用您慣用的所有偵錯功能，例如中斷點和逐步執行程式碼。
 
@@ -213,8 +213,8 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 |Command|快速鍵|快速鍵命令名稱|
 |-------------|--------------|---------------------------|
 |開啟 MonoBehavior 精靈|**Ctrl**+**換檔**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|開啟 Unity Project Explorer|**Alt**+**移位**+**E**|**View.UnityProjectExplorer**|
-|存取 Unity 文件|**Ctrl**+**Alt**+**M， Ctrl**+**H**|**Help.UnityAPIReference**|
-|附加至 Unity 偵錯工具 (播放器或編輯器)|**_無預設值_**|**Debug.AttachUnityDebugger**|
+|開啟 Unity Project Explorer|**Alt**+**移位**+**元 E**|**View.UnityProjectExplorer**|
+|存取 Unity 文件|**Ctrl**+**Alt**+**M, Ctrl**+**H**|**Help.UnityAPIReference**|
+|附加至 Unity 偵錯工具 (播放器或編輯器)|**_沒有預設值_**|**Debug.AttachUnityDebugger**|
 
 如果您不喜歡預設值，可以變更快速鍵組合。 如需如何變更它的詳細資訊，請參閱[識別及自訂 Visual Studio 中的鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。

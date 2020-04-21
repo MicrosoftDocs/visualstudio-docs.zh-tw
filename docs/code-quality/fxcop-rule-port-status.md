@@ -1,5 +1,5 @@
 ---
-title: FxCop 規則埠狀態
+title: FxCop 規則連接埠狀態
 ms.date: 05/21/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fccd167bfafd4c27895b01927aaabc1e77eab91c
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: c6328678365da0f8292360e51f35b4a2ec0133f2
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79303208"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649351"
 ---
-# <a name="fxcop-rule-port-status"></a>Fxcop 規則埠狀態
+# <a name="fxcop-rule-port-status"></a>Fxcop 規則連接埠狀態
 
-如果您以前在 Visual Studio 中使用靜態代碼分析，您可能想知道這些規則中的哪些在當前實現中作為[FxCop 分析器](install-fxcop-analyzers.md)可用。 此頁列出了移植的規則以及尚未移植的規則，以及是否有移植這些規則的計畫。
+如果您以前在 Visual Studio 中使用靜態代碼分析,您可能想知道這些規則中的哪些在當前實現中作為[FxCop 分析器](install-fxcop-analyzers.md)可用。 此頁列出了移植的規則以及尚未移植的規則,以及是否有移植這些規則的計劃。
 
 ## <a name="ported-rules"></a>移植的規則
 
-roslyn-Analyzer repo 中的[自動生成文檔頁](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)包含已移植到 FxCop 分析器的最新規則清單。 該頁還具有其他資訊，例如預設情況下是否啟用了規則，以及它是否具有關聯的*代碼修復程式*。 （[代碼修復](../ide/quick-actions.md)是 Visual Studio 中的燈泡圖示功能表中提供的一鍵式修復。
+roslyn-Analyzer repo 中的[自動生成文檔頁](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)包含已移植到 FxCop 分析器的最新規則清單。 此頁面還具有其他資訊,例如預設情況下是否啟用規則,以及它是否具有關聯的*程式碼修復程式*。 ([代碼修復](../ide/quick-actions.md)是 Visual Studio 中的燈泡圖示功能表中提供的一鍵式修復。
 
-截至本頁日期，已移植到[FxCop 分析器](install-fxcop-analyzers.md)的 FxCop 規則清單包括：
+截至本頁日期,已移植到[FxCop分析器](install-fxcop-analyzers.md)的FxCop規則清單包括:
 
 規則識別碼 | Title
 --------|---------
@@ -36,14 +36,14 @@ roslyn-Analyzer repo 中的[自動生成文檔頁](https://github.com/dotnet/ros
 [CA1010](ca1010-collections-should-implement-generic-interface.md) | 集合應該實作泛型介面
 [CA1012](ca1012-abstract-types-should-not-have-constructors.md) | 抽象類型不應該有建構函式
 [CA1014](ca1014-mark-assemblies-with-clscompliantattribute.md) | 使用 CLS 符合標記程式集
-[CA1016](ca1016-mark-assemblies-with-assemblyversionattribute.md) | 使用程式集版本戳記程式集
-[CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | 使用"可分割"標記程式集
+[CA1016](ca1016-mark-assemblies-with-assemblyversionattribute.md) | 使用程式集版本標記程式集
+[CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | 使用「可分割」標記程式集
 [CA1018](ca1018-mark-attributes-with-attributeusageattribute.md) | 必須以 AttributeUsageAttribute 標記屬性
 [CA1019](ca1019-define-accessors-for-attribute-arguments.md) | 定義屬性引數的存取子
 [CA1021](ca1021.md) | 避免使用 out 參數
 [CA1024](ca1024-use-properties-where-appropriate.md) | 建議在適當時使用屬性
 [CA1027](ca1027-mark-enums-with-flagsattribute.md) | 必須以 FlagsAttribute 標記列舉
-[CA1028](ca1028-enum-storage-should-be-int32.md) | 枚舉存儲應為 Int32
+[CA1028](ca1028-enum-storage-should-be-int32.md) | Enttt
 [CA1030](ca1030-use-events-where-appropriate.md) | 建議在適當時使用事件
 [CA1031](ca1031-do-not-catch-general-exception-types.md) | 不要攔截一般例外狀況類型
 [CA1032](ca1032-implement-standard-exception-constructors.md) | 必須實作標準例外狀況建構函式
@@ -52,24 +52,24 @@ roslyn-Analyzer repo 中的[自動生成文檔頁](https://github.com/dotnet/ros
 [CA1036](ca1036-override-methods-on-comparable-types.md) | 必須在 Comparable 類型中覆寫方法
 [CA1040](ca1040-avoid-empty-interfaces.md) | 避免使用空的介面
 [CA1041](ca1041-provide-obsoleteattribute-message.md) | 必須提供 ObsoleteAttribute 訊息
-[CA1043](ca1043-use-integral-or-string-argument-for-indexers.md) | 對索引子使用積分或字串參數
+[CA1043](ca1043-use-integral-or-string-argument-for-indexers.md) | 對索引器使用積分或字串參數
 [CA1044](ca1044-properties-should-not-be-write-only.md) | 屬性不應該為唯寫的
 [CA1050](ca1050-declare-types-in-namespaces.md) | 類型必須在命名空間中宣告
 [CA1051](ca1051-do-not-declare-visible-instance-fields.md) | 不要宣告可見的執行個體欄位
 [CA1052](ca1052-static-holder-types-should-be-sealed.md) | 靜態支架類型應為靜態或不可繼承
-[CA1053](ca1053-static-holder-types-should-not-have-constructors.md) | 靜態支架類型不應具有建構函式（CA1053 是 FXCop 分析儀[CA1052](ca1052-static-holder-types-should-be-sealed.md)的一部分）
+[CA1053](ca1053-static-holder-types-should-not-have-constructors.md) | 靜態支架類型不應具有構造函數(CA1053 是 FXCop 分析儀[CA1052](ca1052-static-holder-types-should-be-sealed.md)的一部分)
 [CA1054](ca1054-uri-parameters-should-not-be-strings.md) | Uri 參數不應是字串
 [CA1055](ca1055-uri-return-values-should-not-be-strings.md) | Uri 傳回值不應是字串
 [CA1056](ca1056-uri-properties-should-not-be-strings.md) | Uri 屬性不應是字串
 [CA1058](ca1058-types-should-not-extend-certain-base-types.md) | 類型不應該擴充特定基底類型
-[CA1060](ca1060-move-p-invokes-to-nativemethods-class.md) | 將 pinvoke 移動到本機方法類
+[CA1060](ca1060-move-p-invokes-to-nativemethods-class.md) | 將 pinvoke 移至本機方法類別
 [CA1061](ca1061-do-not-hide-base-class-methods.md) | 不要隱藏基底類別方法
 [CA1062](ca1062-validate-arguments-of-public-methods.md) | 必須驗證公用方法的引數
 [CA1063](ca1063-implement-idisposable-correctly.md) | 正確實現 I 一次性
 [CA1064](ca1064-exceptions-should-be-public.md) | 例外狀況必須是公用
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 不要在非預期的位置中引發例外狀況
-CA1066 | 類型{0}應實現 IEqua\<可 T>，因為它重寫等於
-CA1067 | 在實現可 iequa0t\<時，重寫物件。相等（物件）>
+CA1066 | 類型{0}應實現 IEqua\<可 T>,因為它重寫等於
+CA1067 | 在實現可 iequa0t\<時,重寫物件。相等(物件)>
 [CA1068](ca1068.md) | CancellationToken 參數必須位於最後
 CA1200 | 請避免使用具有前置詞的 cref 標記
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | 不要將常值當作已當地語系化的參數傳遞
@@ -83,9 +83,9 @@ CA1200 | 請避免使用具有前置詞的 cref 標記
 [CA1502](ca1502-avoid-excessive-complexity.md) | 避免造成過度複雜的方法
 [CA1505](ca1505-avoid-unmaintainable-code.md) | 應避免撰寫無法維護的程式碼
 [CA1506](ca1506-avoid-excessive-class-coupling.md) | 應避免使用結合過度的類別
-[CA1507](ca1507.md) | 使用 名稱表示符號名稱
-CA1508 | 避免死條件碼
-CA1509 | 代碼指標規則規範檔中的無效條目
+[CA1507](ca1507.md) | 使用名稱表示符號名稱
+CA1508 | 避免死條件代碼
+CA1509 | 代碼指標規則規範檔案中的無效項目
 [CA1707](ca1707-identifiers-should-not-contain-underscores.md) | 識別項名稱不應該包含底線
 [CA1708](ca1708-identifiers-should-differ-by-more-than-case.md) | 識別項名稱不應該只靠大小寫區別
 [CA1710](ca1710-identifiers-should-have-correct-suffix.md) | 識別項應該使用正確的後置字元
@@ -97,10 +97,10 @@ CA1509 | 代碼指標規則規範檔中的無效條目
 [CA1717](ca1717-only-flagsattribute-enums-should-have-plural-names.md) | 只有 FlagsAttribute 列舉應該使用複數名稱
 [CA1720](ca1720-identifiers-should-not-contain-type-names.md) | 識別碼包含類型名稱
 [CA1721](ca1721-property-names-should-not-match-get-methods.md) | 屬性名稱不應該和其中有 get 的方法名稱相符
-[CA1724](ca1724-type-names-should-not-match-namespaces.md) | 類型名稱不應與命名空間匹配
+[CA1724](ca1724-type-names-should-not-match-namespaces.md) | 類型名稱不應與命名空間配對
 [CA1725](ca1725-parameter-names-should-match-base-declaration.md) | 參數名稱應該符合基底類型的宣告
 [CA1801](ca1801.md) | 必須檢閱未使用的參數
-[CA1802](ca1802.md) | 在適當情況下使用文本
+[CA1802](ca1802.md) | 在適當使用文字
 [CA1806](ca1806.md) | 不要忽略方法的結果
 [CA1810](ca1810.md) | 必須將參考類型內部的靜態欄位初始化
 [CA1812](ca1812.md) | 避免使用未執行個體化的內部類別
@@ -110,22 +110,22 @@ CA1509 | 代碼指標規則規範檔中的無效條目
 [CA1816](ca1816.md) | 處置方法應調用"抑制終結"
 [CA1819](ca1819.md) | 屬性不應該傳回陣列
 [CA1820](ca1820.md) | 應該使用字串長度測試空白字串
-[CA1821](ca1821.md) | 刪除空終端子
+[CA1821](ca1821.md) | 刪除空終結器
 [CA1822](ca1822.md) | 將成員標記為 static
 [CA1823](ca1823.md) | 避免包含未使用的私用欄位
 [CA1824](ca1824.md) | 組件必須標記 NeutralResourcesLanguageAttribute
-CA1825 | 避免零長度陣列分配。
+CA1825 | 避免零長度數組分配。
 CA1826 | 請勿在可索引集合上使用枚舉方法。 而是直接使用集合
 [CA2000](ca2000.md) | 必須在超出範圍前處置物件
 [CA2002](ca2002.md) | 不要鎖定具有弱式識別的物件
 [CA2007](ca2007.md) | 考慮在等待的任務上調用配置Await
-CA2008 | 在未傳遞任務計畫程式的情況下不要創建任務
+CA2008 | 在未傳遞工作計劃程式, 並不要建立工作
 CA2009 | 不要在不可改變的集合值上調用"不可改變集合"
-CA2010 | 始終使用使用標記為 PreserveSigAttribute 的方法返回的值
+CA2010 | 始終使用使用標記為 PreserveSigAttribute 的方法傳回的值
 [CA2100](ca2100.md) | 必須檢閱 SQL 查詢中是否有安全性弱點
 [CA2101](ca2101.md) | 必須指定 P/Invoke 字串引數的封送處理
 [CA2119](ca2119.md) | 密封方法以滿足私用介面的要求
-[CA2153](ca2153.md) | 不捕獲損壞的狀態異常
+[CA2153](ca2153.md) | 不捕捉損壞的狀態異常
 [CA2200](ca2200.md) | 重新引發以保留堆疊詳細資訊。
 [CA2201](ca2201.md) | 不要引發保留的例外狀況類型
 [CA2207](ca2207.md) | 必須將實值類型的靜態欄位內嵌初始化
@@ -142,7 +142,7 @@ CA2010 | 始終使用使用標記為 PreserveSigAttribute 的方法返回的值
 [CA2226](ca2226.md) | 運算子應該有對稱的多載
 [CA2227](ca2227.md) | 集合屬性應該為唯讀
 [CA2229](ca2229.md) | 必須實作序列化建構函式
-[CA2231](ca2231.md) | 超載運算子等於重寫數值型別 等於
+[CA2231](ca2231.md) | 載入運算子等於重寫值類型 等於
 [CA2234](ca2234.md) | 傳遞系統 uri 物件而不是字串
 [CA2235](ca2235.md) | 必須標記所有不可序列化的欄位
 [CA2237](ca2237.md) | 以可序列化標記 ISerializable 類型
@@ -172,46 +172,46 @@ CA2244 | 不要重複索引元素初始化
 [CA3010](ca3010.md) | 檢閱程式碼是否有 XAML 插入式攻擊弱點
 [CA3011](ca3011.md) | 檢閱程式碼是否有 DLL 插入式攻擊弱點
 [CA3012](ca3012.md) | 檢閱程式碼是否有 regex 插入式攻擊弱點
-CA3061 | 不按 URL 添加架構
+CA3061 | 不按網址加入架構
 [CA3075](ca3075.md) | XML 中不安全的 DTD 處理
 [CA3076](ca3076.md) | 不安全的 XSLT 腳本處理。
 [CA3077](ca3077.md) | API 設計、XmlDocument 和 XmlTextReader 中的不安全處理
-[CA3147](ca3147.md) | 使用驗證防偽權杖標記動詞處理常式
+[CA3147](ca3147.md) | 使用驗證防偽權杖標記動辭處理程式
 [CA5350](ca5350.md) | 請勿使用弱式密碼編譯演算法
-[CA5351](ca5351.md) | 不使用損壞的加密演算法
+[CA5351](ca5351.md) | 不使用損壞的加密演演算法
 CA5358 | 不要使用不安全的 Cipher 模式
-CA5359 | 不禁用證書驗證
-CA5360 | 在反序列化中不要調用危險方法
-CA5361 | 不要禁用增強式加密的 S通道使用
+CA5359 | 不禁用憑證驗證
+CA5360 | 在反序列化中不要呼叫危險方法
+CA5361 | 不要關閉強加密的 S 通道使用
 CA5362 | 不要在可序列化類中引用自我
-CA5363 | 不禁用請求驗證
+CA5363 | 不禁用要求驗證
 CA5364 | 不使用已棄用的安全協定
 CA5365 | 不禁用 HTTP 標頭檢查
 CA5366 | 將 XmlReader 用於資料集讀取 Xml
-CA5367 | 不使用指標欄位序列化類型
-CA5368 | 為從頁面派生的類設置檢視狀態使用者金鑰
+CA5367 | 不使用指標欄位序列化型態
+CA5368 | 為從頁面派生的類別設定檢視狀態使用者金鑰
 CA5369 | 使用 XmlReader 進行反序列化
 CA5370 | 使用 XmlReader 驗證讀取器
 CA5371 | 使用 XmlReader 進行架構讀取
 CA5372 | 將 XmlReader 用於 XPathDocument
 CA5373 | 不使用已過時的金鑰衍生函式
 CA5374 | 請勿使用 Xsl 轉換
-CA5375 | 不使用帳戶共用訪問簽名
-CA5376 | 僅使用共用訪問協定
-CA5377 | 使用容器級訪問策略
+CA5375 | 不要存取帳號分享存取簽名
+CA5376 | 只使用共享存取協定
+CA5377 | 使用容器級存取原則
 CA5378 | 請勿停用 ServicePointManagerSecurityProtocols
-CA5379 | 不使用弱鍵派生函數演算法
-CA9999 | 分析器版本不匹配
+CA5379 | 不使用弱鍵派生函數演演算法
+CA9999 | 剖析器版本不匹配
 
 ## <a name="unported-rules"></a>未移植規則
 
-尚未移植到[FxCop 分析器](install-fxcop-analyzers.md)的規則集包括尚未移植但仍[可能移植](#rules-that-may-be-ported)的規則，以及已棄用且[不會移植](#deprecated-rules)的規則。
+尚未移植到[FxCop 分析器](install-fxcop-analyzers.md)的規則集包括尚未移植但仍[可能移植](#rules-that-may-be-ported)的規則,以及已棄用且[不會移植](#deprecated-rules)的規則。
 
 ### <a name="rules-that-may-be-ported"></a>可移植的規則
 
-以下 FxCop 舊版分析規則尚未作為分析器實現，但仍可能仍然存在。 這可能是由於阻塞技術原因，或者僅僅是規則優先順序較低。 有關每個規則的移植狀態的詳細資訊，請按一下 **"跟蹤問題"** 列中的連結。
+以下FxCop舊版分析規則尚未作為分析器實現,但仍可能仍然存在。 這可能是由於阻塞技術原因,或者僅僅是規則優先順序較低。 有關每個規則的移植狀態的詳細資訊,請單擊 **「跟蹤問題」** 欄中的連結。
 
-規則識別碼 | 跟蹤問題
+規則識別碼 | 追蹤問題
 --- | ---
 [CA1002](ca1002-do-not-expose-generic-lists.md) | [https://github.com/dotnet/roslyn-analyzers/issues/369](https://github.com/dotnet/roslyn-analyzers/issues/369)
 [CA1004](ca1004-generic-methods-should-provide-type-parameter.md) | [https://github.com/dotnet/roslyn-analyzers/issues/370](https://github.com/dotnet/roslyn-analyzers/issues/370)
@@ -272,7 +272,7 @@ CA9999 | 分析器版本不匹配
 
 ### <a name="deprecated-rules"></a>已棄用的規則
 
-以下 FxCop 舊版分析規則被棄用，不會作為分析器實現。 有關詳細資訊，您可以在[roslyn 分析器 GitHub 問題頁上](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)按規則 ID（例如**CA1009）** 進行搜索。
+以下FxCop舊版分析規則被棄用,不會作為分析器實現。 有關詳細資訊,您可以在[roslyn 分析器 GitHub 問題頁上](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)按規則 ID(例如**CA1009)** 進行搜索。
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)
@@ -286,7 +286,7 @@ CA9999 | 分析器版本不匹配
 - [CA1400](ca1400-p-invoke-entry-points-should-exist.md)
 - [CA1406](ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
 - [CA1504](ca1504-review-misleading-field-names.md)
-- [CA1701](ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701](ca1701.md)
 - [CA1702](ca1702.md)
 - [CA1703](ca1703.md)
 - [CA1800](ca1800.md)
@@ -338,7 +338,7 @@ CA9999 | 分析器版本不匹配
 - [CA2210](ca2210.md)
 - [CA2220](ca2220.md)
 - [CA2221](ca2221.md)
-- [CA2222](ca2222.md) （[理由](https://github.com/dotnet/roslyn-analyzers/issues/1378)）
+- [CA2222](ca2222.md) ([理由](https://github.com/dotnet/roslyn-analyzers/issues/1378))
 - [CA2223](ca2223.md)
 - [CA2228](ca2228.md)
 - [CA2230](ca2230.md)
