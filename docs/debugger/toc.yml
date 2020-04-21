@@ -1,6 +1,6 @@
 - name: 偵錯工具文件
   href: index.yml
-- name: 概觀
+- name: 總覽
   items:
     - name: 什麼是偵錯？
       href: what-is-debugging.md
@@ -36,7 +36,7 @@
       href: view-historical-application-state.md
     - name: 適合完全初學者的偵錯
       href: debugging-absolute-beginners.md
-- name: 操作指南
+- name: 作法指南
   items:
     - name: 使用偵錯工具巡覽程式碼
       href: navigating-through-code-with-the-debugger.md
@@ -152,7 +152,7 @@
               href: how-to-find-which-dll-your-program-crashed-in.md
         - name: 檢視指令碼文件
           href: how-to-view-script-documents.md
-    - name: 秘訣與技巧
+    - name: 秘訣和訣竅
       items:
         - name: 偵錯工具祕訣與技巧
           href: debugger-tips-and-tricks.md
@@ -447,7 +447,7 @@
             - name: 在偵錯時檢查 XAML 屬性
               href: inspect-xaml-properties-while-debugging.md
             - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md
             - name: 在 Blend 中偵錯 XAML
               href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML 和 CSS
@@ -507,7 +507,7 @@
                 - name: 在偵錯時檢查 XAML 屬性
                   href: inspect-xaml-properties-while-debugging.md
                 - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
-                  href: xaml-hot-reload.md
+                  href: ../xaml-tools/xaml-hot-reload.md
                 - name: 使用 WPF 樹狀架構視覺化檢視
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: 顯示 WPF 追蹤資訊
@@ -678,7 +678,7 @@
       items:
         - name: 使用 Live Share 撰寫程式碼及對其偵錯
           href: /visualstudio/liveshare/use/vs
-    - name: 傾印檔
+    - name: 傾印檔案
       items:
         - name: 使用傾印檔案
           href: using-dump-files.md
@@ -686,7 +686,7 @@
           href: dump-file-summary-extensibility-api.md
     - name: 偵錯工具安全性
       href: debugger-security.md
-- name: 參考
+- name: 參考資料
   items:
     - name: 偵錯使用者介面參考
       items:
@@ -840,7 +840,7 @@
                   href: how-to-search-for-a-process-in-processes-view.md
                 - name: 顯示處理序屬性
                   href: how-to-display-process-properties.md
-            - name: Threads
+            - name: 執行緒
               items:
                 - name: 執行緒檢視
                   href: threads-view.md

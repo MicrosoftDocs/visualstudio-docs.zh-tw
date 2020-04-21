@@ -1,6 +1,6 @@
 - name: 部署文件
   href: index.yml
-- name: 概觀
+- name: 總覽
   items:
     - name: 部署概觀
       href: deploying-applications-services-and-components-resources.md
@@ -56,9 +56,9 @@
           href: /visualstudio/javascript/publish-nodejs-app-azure
     - name: Python
       items:
-        - name: 發佈到 Azure App Service
+        - name: 發佈至 Azure App Service
           href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
-- name: 操作指南
+- name: 作法指南
   items:
     - name: ClickOnce 安全性和部署
       items:
@@ -94,8 +94,6 @@
               href: how-to-set-a-security-zone-for-a-clickonce-application.md
             - name: 為 ClickOnce 應用程式設定自訂權限
               href: how-to-set-custom-permissions-for-a-clickonce-application.md
-            - name: 以受限制的權限對 ClickOnce 應用程式進行偵錯
-              href: how-to-debug-a-clickonce-application-with-restricted-permissions.md
             - name: 將信任的發行者新增至用戶端電腦
               href: how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md
             - name: 重新簽署應用程式和部署資訊清單
@@ -104,7 +102,7 @@
               href: how-to-configure-the-clickonce-trust-prompt-behavior.md
             - name: 使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce)
               href: how-to-sign-setup-files-with-signtool-exe-clickonce.md
-        - name: 發佈
+        - name: 發行
           items:
             - name: 發佈 ClickOnce 應用程式
               href: publishing-clickonce-applications.md
@@ -256,7 +254,7 @@
               href: strings-element-bootstrapper.md
             - name: <Schedules> 元素 (啟動載入器)
               href: schedules-element-bootstrapper.md
-- name: 參考
+- name: 參考資料
   items:
     - name: ClickOnce 參考
       items:
