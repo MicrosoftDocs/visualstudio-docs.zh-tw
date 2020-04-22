@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 31eab6c10451bb6be9e53870bf2724c188d650f4
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 0b4b699c01522878d83e59aadb2c6a54e9d7517f
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649502"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760175"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>管理 Visual Studio 中的 npm 套件
 
@@ -84,15 +84,15 @@ npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬
 ::: moniker range=">=vs-2019"
 右鍵按**下 npm**節點以執行以下操作之一:
 
-* **安裝新的 npm 套件**開啟 UI 以安裝新套件
+* **安裝新的 npm 套件**打開 UI 以安裝新包。
 * **安裝 npm 套件**運行 npm 安裝命令以安裝*套件*中列出的所有包。 (執行`npm install`.)
-* **更新 npm 套件**將套件更新到套件中指定的版本 *.* (執行`npm update --save`.)
+* **更新 npm 套件**根據*包.json*中指定的 semver 範圍,將包更新到最後一個版本。 (運行`npm update --save`.)。 通常使用"*"或"*"指定Semver範圍。 有關詳細資訊[,package.json 設定](../javascript/configure-packages-with-package-json.md)。
 
 右鍵按下套件節點以執行以下操作之一:
 
 * **安裝 npm 套件**執行 npm 安裝指令以安裝套件中列出的*套件*版本. (執行`npm install`.)
-* **更新 npm 套件**將套件更新到套件中指定的版本 *.* (執行`npm update --save`.)
-* **卸載 npm 套件**卸載套件並將其從*包中刪除.json* `npm uninstall --save`(運行 .)
+* **更新 npm 套件**根據*包.json*中指定的 semver 範圍,將包更新為最後一個版本。 (執行`npm update --save`.)通常使用"*"或"*"指定Semver範圍。
+* **卸載 npm 套件**卸載套件並將其從*包中刪除.* `npm uninstall --save`
 ::: moniker-end
 ::: moniker range="vs-2017"
 以滑鼠右鍵按一下套件節點或 **npm** 節點，來採取下列其中一個動作：
