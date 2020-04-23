@@ -6,12 +6,12 @@ manager: lank
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: 瞭解管理員如何向訂閱者特定訂閱 GUID
-ms.openlocfilehash: 722aaedcd6da0224311960d1587d0c2c24eec60f
-ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
+ms.openlocfilehash: e2e8cd4f5d07f218fc23c0b7b6f28ababc25263f
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760154"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072589"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>在可視化工作室訂閱管理門戶中分配特定訂閱
 
@@ -49,6 +49,7 @@ ms.locfileid: "81760154"
 
 > [!IMPORTANT]
 > 為確保成功上傳,請確保:
+> - 選擇 **「大量新增**」時,正在使用對話框中連結的範本。  不要使用範本的本地存儲副本,因為它可能不包含所有必需的欄位。  使用舊範本將導致上載失敗。 
 > - 範本**中顯示的所有**欄位都已完成。
 > - **錯誤訊息**列中未列出任何錯誤。
 > - 每個 GUID 在範本中只使用一次。 

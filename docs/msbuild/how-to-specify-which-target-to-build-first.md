@@ -12,16 +12,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c679b2a43ec799035f9bafb6a03a546808498342
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 7656237be5cf7906293a294885cfa3e6c8bd4e36
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543993"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072524"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>如何：指定要優先建置的目標
 
-專案檔可以包含一或多個 `Target` 項目來定義專案的建置方式。 Microsoft Build Engine (MSBuild) 引擎產生它找到的第一個專案和任何依賴項,`DefaultTargets`除非專案`InitialTargets`檔包含 屬性、 屬性或目標,使用 **-target**開關在命令列中指定。
+專案檔可以包含一或多個 `Target` 項目來定義專案的建置方式。 Microsoft Build Engine (MSBuild) 引擎產生它找到的第一個目標和任何依賴項,`DefaultTargets`除非專案`InitialTargets`檔包含 屬性、 屬性或目標,使用 **-target**開關在命令列中指定。
 ## <a name="use-the-initialtargets-attribute"></a>使用 InitialTargets 屬性
 
 `Project` 項目的 `InitialTargets` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。

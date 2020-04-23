@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f13910e2481e574e18c7a8efaee6601137c0720
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: 7948f9da5922ba5f5e3582924bbccd56d50219a0
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224468"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072563"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 條件
 
@@ -49,7 +49,7 @@ MSBuild 支援一組特定的條件,可在允許的`Condition`屬性 的任何�
         <TargetFrameworks>net45;net48;netstandard2.1;netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
     </PropertyGroup>
 
-    <PropertyGroup Condition="'$(TargetFramework.TrimEnd('0123456789.'))' == 'net'">
+    <PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789.`))' == 'net'">
         <!-- Properties for .NET Framework -->
     </PropertyGroup>
 
