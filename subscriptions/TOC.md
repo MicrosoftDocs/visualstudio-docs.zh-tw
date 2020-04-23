@@ -77,6 +77,7 @@
 ### 指派訂用帳戶
 #### [新增單一使用者](assign-license.md)
 #### [新增多個使用者](assign-license-bulk.md)
+#### [指派特定訂閱](assign-guid.md)
 ### [編輯訂用帳戶](edit-license.md)
 ### [刪除訂用帳戶](delete-license.md)
 ### [搜尋訂閱](search-license.md)
