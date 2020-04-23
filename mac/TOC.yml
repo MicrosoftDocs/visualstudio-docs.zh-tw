@@ -1,6 +1,6 @@
 - name: Visual Studio for Mac
   href: index.yml
-- name: 開始使用
+- name: 快速入門
   items:
     - name: IDE 教學課程
       href: ide-tour.md
@@ -20,7 +20,7 @@
       href: uninstall.md
 - name: 使用者帳戶
   items:
-    - name: 概觀
+    - name: 總覽
       href: user-accounts.md
     - name: 登入
       href: signing-in.md
@@ -32,9 +32,9 @@
       href: customizing-the-ide.md
     - name: 擴充 Visual Studio for Mac
       href: extending-visual-studio-mac.md
-- name: 專案與解決方案
+- name: 專案和方案
   items:
-    - name: 概觀
+    - name: 總覽
       href: projects-and-solutions.md
     - name: 建立新專案
       href: create-new-projects.md
@@ -46,13 +46,13 @@
       href: project-multitargeting.md
     - name: 管理專案中的參考
       items:
-        - name: 概觀
+        - name: 總覽
           href: managing-references-in-a-project.md
         - name: 逐步解說 - 在專案中包含 NuGet 套件
           href: nuget-walkthrough.md
     - name: 管理應用程式資源
       href: managing-app-resources.md
-    - name: 如何：開啟多個解決方案或執行個體
+    - name: 作法：開啟多個解決方案或執行個體
       href: open-multiple-solutions.md
 - name: 原始檔編輯器
   items:
@@ -84,7 +84,7 @@
       href: keyboard-shortcuts.md
 - name: 偵錯
   items:
-    - name: 概觀
+    - name: 總覽
       href: debugging.md
     - name: 資料視覺效果
       href: data-visualizations.md
@@ -92,13 +92,13 @@
       href: source-link.md
 - name: 編譯和建置
   items:
-    - name: 概觀
+    - name: 總覽
       href: compiling-and-building.md
     - name: 建置和清除專案與方案
       href: building-and-cleaning-projects-and-solutions.md
     - name: 建置動作
       href: build-actions.md
-    - name: 如何：設定多個啟始專案
+    - name: 作法：設定多個啟始專案
       href: set-startup-projects.md
     - name: 自訂組建系統
       href: customizing-build-system.md
@@ -110,7 +110,7 @@
           href: create-and-edit-configurations.md
 - name: 版本控制
   items:
-    - name: 概觀
+    - name: 總覽
       href: version-control.md
     - name: 設定 Git 存放庫
       href: set-up-git-repository.md
@@ -122,9 +122,9 @@
       href: working-with-subversion.md
 - name: Web 應用程式部署
   items:
-    - name: 概觀
+    - name: 總覽
       href: web-app-deployment.md
-    - name: 發佈到 Azure App Service
+    - name: 發佈至 Azure App Service
       href: publish-app-svc.md
     - name: 發佈到資料夾
       href: publish-folder.md
@@ -150,7 +150,7 @@
           href: launch-settings.md
     - name: Azure
       items:
-        - name: 概觀
+        - name: 總覽
           href: azure-workload.md
         - name: Azure Functions 簡介
           href: azure-functions.md
@@ -175,14 +175,14 @@
         - name: 使用 Unity 工具
           href: using-vsmac-tools-unity.md
         - name: 在 Unity 中使用 .NET 4.x
-          href: /visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context
-        - name: 變更記錄檔
-          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context
+          href: /visualstudio/cross-platform/unity-scripting-upgrade?context=visualstudio/mac/context
+        - name: 變更記錄
+          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
     - name: 使用 Xamarin 開發行動應用程式
       href: /visualstudio/mac/xamarin
-- name: Accessibility
+- name: 協助工具選項
   items:
-    - name: 概觀
+    - name: 總覽
       href: accessibility.md
     - name: 設定 IDE 協助工具選項
       href: accessibility-ide-options.md
