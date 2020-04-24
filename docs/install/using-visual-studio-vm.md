@@ -2,7 +2,7 @@
 title: 在 Azure 虛擬機器上使用 Visual Studio
 titleSuffix: ''
 description: 了解如何在 Azure 虛擬機器上使用 Visual Studio
-ms.date: 12/06/2019
+ms.date: 04/23/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,18 +17,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8daf933292c521bb50d294dff2a380b130a4f2ce
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6095a3d7d8bfa7a5ee367da2c93d16113a777d0c
+ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113798"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82109477"
 ---
-# <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Azure 上的可視工作室圖像
+# <a name="visual-studio-images-on-azure"></a><a id="top"> </a>在 Azure 上 Visual Studio 映射
 
 在預先設定的 Azure 虛擬機器 (VM) 中使用 Visual Studio，是從零開始到建立已啟動並執行中之開發環境的快速簡單方式。 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure) 中提供具有各種不同 Visual Studio 設定的系統映像。
 
-不熟悉 Azure 嗎？ [創建一個免費的 Azure 帳戶](https://azure.microsoft.com/free)。
+不熟悉 Azure 嗎？ [建立免費的 Azure 帳戶](https://azure.microsoft.com/free)。
 
 ## <a name="what-configurations-and-versions-are-available"></a>有哪些設定和版本可用？
 
@@ -36,10 +36,10 @@ ms.locfileid: "76113798"
 
 | 發行版本                                                                                                                                          | 版本              |    產品版本    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [視覺工作室 2019： 最新 （版本 16.4）](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise、Community | 版本 16.4.0    |
-| [視覺工作室 2019： RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 版本 16.0.9    |
-| [Visual Studio 2017：最新版 (15.9 版)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise、Community | 版本 15.9.17   |
-| [Visual Studio 2017：RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise、Community | 版本 15.0.27   |
+| [Visual Studio 2019：最新（版本16.5）](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise、Community | 版本16.5。4    |
+| [Visual Studio 2019： RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 版本16.0.13    |
+| [Visual Studio 2017：最新版 (15.9 版)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise、Community | 版本15.9.22   |
+| [Visual Studio 2017：RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise、Community | 版本15.0.28   |
 | [Visual Studio 2015：最新版 (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise、Community | 14.0.25431.01 版 |
 
 > [!NOTE]

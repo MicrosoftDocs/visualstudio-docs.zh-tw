@@ -5,19 +5,19 @@ description: Visual Studio 已發行版本和組件編號的清單，依日期�
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 04/16/2020
+ms.date: 04/23/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c9021e2202701e01ee0e34fbf074f07fc1c1b8f0
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: 33d82e84b28fa85bf4cfb014ecd292f31e0c84cb
+ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544350"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82109451"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -27,8 +27,9 @@ ms.locfileid: "81544350"
 
 下表列出 Visual Studio 2019 迄今為止的組建編號和發行日期。
 
-| **版本**| **通路** | **發行日期** | **組建版本** |
+| **版本**| **頻道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.6.0 | Preview 4 | 2020年4月23日 | 16.6.30021.99 |
 | 16.6.0 | Preview 3 | 2020年4月16日 | 16.6.30014.187 |
 | 16.0.13 | 版本 | 2020年4月14日 | 16.0.28803.718 |
 | 16.4.7 | 版本 | 2020年4月14日 | 16.4.30011.19 |
@@ -138,7 +139,7 @@ ms.locfileid: "81544350"
 
 下表列出 Visual Studio 2017 迄今為止的組建編號和發行日期。
 
-| **版本**| **通路** | **發行日期** | **組建版本** |
+| **版本**| **頻道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.22 | 版本 | 2020年4月14日 | 15.9.28307.1093 |
 | 15.9.21 | 版本 | 2020年3月10日 | 15.9.28307.1064 |
@@ -315,7 +316,7 @@ ms.locfileid: "81544350"
 
 ## <a name="see-also"></a>另請參閱
 
-* [視覺工作室釋放節奏](/visualstudio/productinfo/release-rhythm/)
+* [Visual Studio release 節奏](/visualstudio/productinfo/release-rhythm/)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [用於偵測及管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)
