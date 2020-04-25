@@ -1,6 +1,6 @@
 ---
 title: 建立單元測試方法虛設常式
-ms.date: 04/01/2019
+ms.date: 04/24/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9b9c0d2bfba0a55ef0362f031bfa32e986a05a10
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75844310"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82152997"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用建立單元測試命令來建立單元測試方法虛設常式
 
@@ -22,11 +22,11 @@ ms.locfileid: "75844310"
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> [建立單元測試]**** 功能表命令僅供以 .NET Framework 為目標 (非 .NET Core) 的受控程式碼使用。
+> [**建立單元測試**] 功能表命令僅適用于以 .NET Framework （但不是 .net Core）為目標的 c # 程式碼。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> **"創建單元測試"** 功能表命令僅適用于託管代碼。
+> [**建立單元測試**] 功能表命令僅適用于 c # 程式碼。
 ::: moniker-end
 
 [建立單元測試]**** 功能表命令可延伸，並可用來產生 MSTest、MSTest V2、NUnit 和 xUnit 測試。

@@ -1,40 +1,40 @@
 ---
-title: Visual Studio 訂閱可在 Microsoft 商店中購買 |微軟文件
+title: Visual Studio 訂閱可在 Microsoft Store 中購買 |Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
 ms.topic: conceptual
-description: 瞭解如何在 Microsoft 應用商店中購買 Visual Studio 訂閱,並在可視化工作室訂閱門戶中激活它們。
-ms.openlocfilehash: 878baa887491305586ffb2ca40f3c4d9dae03cd5
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+description: 瞭解如何在 Microsoft Store 中購買 Visual Studio 訂用帳戶，並在 Visual Studio 訂用帳戶入口網站中加以啟用。
+ms.openlocfilehash: f8102a10f049c04695ba1d5415febd9cee3d7130
+ms.sourcegitcommit: 960bab34e126c9ca449560a76a839a8f8c3263fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81447777"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82072490"
 ---
-# <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio 訂閱可透過 Microsoft 應用商店獲得
-Visual Studio 訂閱可透過多種管道獲得,包括[大量授權、](https://www.microsoft.com/licensing/default)雲端解決方案供應商、[視覺化工作室應用商店](https://marketplace.visualstudio.com/subscriptions)和Microsoft應用商店。  本文將探討通過[微軟商店](https://www.microsoft.com/search?q=visual+studio+subscription)購買和啟動訂閱。  
+# <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio 訂閱可透過 Microsoft Store 取得
+Visual Studio 訂用帳戶可透過各種不同的通道取得，包括[大量授權](https://www.microsoft.com/licensing/default)、雲端解決方案提供者、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)和 Microsoft Store。  本文將透過[Microsoft Store](https://www.microsoft.com/store/collections/visualstudio)探索購買和啟用訂閱。  
 
 ## <a name="how-to-buy-subscriptions"></a>如何購買訂閱
-需要幫助決定哪個訂閱適合您?  檢視我們的[訂閱的權益頁面](https://visualstudio.microsoft.com/vs/benefits/)。  
+需要協助決定哪一個訂用帳戶適合您嗎？  查看我們的[訂閱權益頁面](https://visualstudio.microsoft.com/vs/benefits/)。  
 
-可透過 Microsoft 應用商店提供的可視化工作室訂閱包括:
-- [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
+透過 Microsoft Store 提供的 Visual Studio 訂閱包括：
+- [Visual Studio 企業版](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
 - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
 - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
 
-每個訂閱都提供了進行初始購買或續訂現有訂閱的選項。  續訂定價(反映大幅折扣)僅適用於現有訂閱。 
+每個訂用帳戶都提供初始購買或更新現有訂用帳戶的選項。  只有現有的訂用帳戶才能使用更新價格，這會反映出重大折扣。 
 
 > [!IMPORTANT]
-> 要有資格以折扣續訂價格續訂訂閱,應在訂閱過期之前續訂。  
+> 若要以折扣續訂價格來續訂訂閱，應在到期前更新訂用帳戶。  
 
-## <a name="how-to-activate-subscriptions"></a>如何啟動訂閱
-通過 Microsoft 應用商店購買 Visual Studio 訂閱後,可以從購買後收到的付款「確認頁面」或「確認電子郵件」開始啟動過程。
+## <a name="how-to-activate-subscriptions"></a>如何啟用訂閱
+透過 Microsoft Store 購買 Visual Studio 訂用帳戶之後，您可以從購買後收到的付款「確認頁面」或「確認電子郵件」開始啟用程式。
 
 1. 在確認電子郵件或確認購買頁面中，按一下 [按一下這裡登入]****。
-2. 您將被重定到[https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs)。
+2. 系統會將您重新[https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs)導向至。
 3. 輸入要求 Visual Studio 訂用帳戶存取權的電子郵件地址，然後按一下 [繼續]****。
 4. 根據您所使用的帳戶類型，您可能會被重新導向至兩個不同登入頁面的其中之一：
     - 使用個人「Microsoft 帳戶」(MSA) 的訂閱者會看到 [Microsoft 帳戶密碼] 頁面。
@@ -42,18 +42,18 @@ Visual Studio 訂閱可透過多種管道獲得,包括[大量授權、](https://
 5. 輸入您的密碼，或完成您組織的登入需求。
 6. 成功登入後，[啟用您的 Visual Studio 訂用帳戶] 視窗即會出現。
 7. 輸入從「付款確認頁面」或「確認電子郵件」取得的產品金鑰資訊，然後按一下 [啟動]****。
-8. 訂閱現在應在[「訂閱」](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)頁上可見,您應該有權訪問所有訂閱權益。
+8. 訂用帳戶現在應該會顯示在 [訂用帳戶[] 頁面上](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，您應該可以存取訂閱的擁有權益。
 
-## <a name="support-for-microsoft-store"></a>支援微軟商店
-如果您對通過 Microsoft 應用商店進行購買有任何疑問,則提供説明。  聯絡[微軟商店支援](https://support.microsoft.com/help/28808/microsoft-store-contact-support?ocid=MSCOMStoreFooter-ContactUs)。
+## <a name="support-for-microsoft-store"></a>Microsoft Store 的支援
+如果您有任何關於透過 Microsoft Store 購買的問題，請提供協助。  聯絡[Microsoft Store 支援](https://support.microsoft.com/help/28808/microsoft-store-contact-support?ocid=MSCOMStoreFooter-ContactUs)。
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文件](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文件](https://docs.microsoft.com/azure/devops/)
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文件](https://docs.microsoft.com/microsoft-365/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
-啟動訂閱後,請造訪[「權益」](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)頁面,查看訂閱中包含的所有工具、服務、培訓和支持權益。  我們建議設置這些優勢以開始:
+啟用訂用帳戶之後，請造訪[權益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)頁面，以查看您的訂用帳戶中包含的所有工具、服務、訓練和支援權益。  我們建議您設定這些優點以開始使用：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

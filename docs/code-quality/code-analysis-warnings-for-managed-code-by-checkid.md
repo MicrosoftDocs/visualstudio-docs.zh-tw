@@ -106,6 +106,7 @@ f1_keywords:
 - CA1505
 - CA1506
 - CA1507
+- CA1508
 - CA1600
 - CA1601
 - CA1700
@@ -265,18 +266,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83ed654a6e0795e5930580f9d13198631b5d695e
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.openlocfilehash: d4f532baf1434ea318a86ce2cb2fc717fff98623
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82109490"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153015"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>CheckId 受控碼的程式碼分析警告
 
 下表依照警告的 CheckId 識別項列出 Managed 程式碼的程式碼分析警告。
 
-| CheckId | 警告 | 說明 |
+| CheckId | 警告 | 描述 |
 |---------| - | - |
 | CA2007 | [CA2007：不要直接等待工作](ca2007.md) | 非同步方法會[awaits](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task>直接等候。 當非同步方法<xref:System.Threading.Tasks.Task>直接等候時，接續會在建立工作的同一個執行緒中發生。 這種行為在效能方面可能會很昂貴，而且可能會導致 UI 執行緒上發生鎖死。 請考慮<xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType>呼叫以指示接續的意圖。 |
 | CA1000 | [CA1000：不要在泛型型別上宣告靜態成員](../code-quality/ca1000.md) | 呼叫泛型類型的靜態成員時，必須為類型指定類型引數。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定類型引數。 在上述兩種情況下，指定型別引數的語法不同且容易混淆。 |
@@ -375,7 +376,9 @@ ms.locfileid: "82109490"
 | CA1502 | [CA1502：避免造成過度複雜的方法](../code-quality/ca1502.md) | 這個規則會測量整個方法中線性獨立路徑的數目，此數目是由條件分支的數目與複雜度決定。 |
 | CA1504 | [CA1504：必須檢閱可能造成誤導的欄位名稱](../code-quality/ca1504.md) | 執行個體欄位名稱的開頭為 "s_"，或是 static (在 Visual Basic 中為 Shared) 欄位名稱的開頭為 "m_"。 |
 | CA1505 | [CA1505：應避免撰寫無法維護的程式碼](../code-quality/ca1505.md) | 類型或方法的維護性指標值很低。 維護性指標很低代表類型或方法很可能會難以維護，而應該列為需要重新設計的候選目標。 |
-| CA1506 |[CA1506：應避免使用結合過度的類別](../code-quality/ca1506.md) | 這個規則會測量類別的耦合，方法是計算類型或方法包含的唯一類型參考數目。 |
+| CA1506 | [CA1506：應避免使用結合過度的類別](../code-quality/ca1506.md) | 這個規則會測量類別的耦合，方法是計算類型或方法包含的唯一類型參考數目。 |
+| CA1507 | [CA1507：使用 nameof 取代字串](../code-quality/ca1507.md) | 字串常值是用來做為可使用`nameof`運算式的引數。 |
+| CA1508 | [CA1508：避免失效的條件式程式碼](../code-quality/ca1508.md) | 方法具有條件式程式碼，一律會`true`在`false`執行時間評估為或。 這會導致條件`false`分支中的無作用程式碼。 |
 | CA1600 | [CA1600：不要使用 Idle 處理序優先權](../code-quality/ca1600.md) | 請勿將處理序優先權設定為 Idle。 具有 System.Diagnostics.ProcessPriorityClass.Idle 的處理序會在應該閒置的時候佔用 CPU，因而阻礙 CPU 待命。 |
 | CA1601 | [CA1601：不要使用會妨礙電源狀態變更的計時器](../code-quality/ca1601.md) | 更高頻率的週期性活動會使 CPU 始終處於忙碌狀態，並且會干擾用於關閉顯示器和硬碟的省電閒置計時器。 |
 | CA1700 | [CA1700：不要在列舉值名稱中包含 'Reserved'](../code-quality/ca1700.md) | 這項規則假設名稱中包含 "reserved" 的列舉成員目前並未使用，但是在未來版本會是重新命名或移除的替代符號 (Placeholder)。 重新命名或移除成員是中斷變更。 |

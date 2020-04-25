@@ -13,18 +13,18 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ef26a566229c228711ba6e57de50402df255c3dd
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189522"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153021"
 ---
 # <a name="add-tags-to-project-templates"></a>將標籤新增到專案範本
 
 從 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 16.1 版 Preview 2 開始，您可以將語言、平台和專案類型標籤新增到您的專案範本。 
 
-標記在 **"新專案"** 對話方塊中的兩個位置使用：
+標記用於 [**新增專案**] 對話方塊中的兩個位置：
 
 - 標籤會出現在範本描述下面。
 
@@ -40,9 +40,9 @@ ms.locfileid: "73189522"
 
 當您採取下列其中一個動作時，您可以在專案範本的 *.vstemplate* XML 中新增或編輯標籤：
 
-* 使用"匯出範本"嚮導[創建新專案範本](how-to-create-project-templates.md)。
-* [更新現有專案範本](how-to-update-existing-templates.md)。
-* [創建新的 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)。
+* 使用 [匯出範本] 嚮導來[建立新的專案範本](how-to-create-project-templates.md)。
+* [更新您現有的專案範本](how-to-update-existing-templates.md)。
+* [建立新的 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)。
 
 ## <a name="syntax"></a>語法
 
@@ -93,7 +93,7 @@ Visual Studio 提供內建標籤清單。 當您新增內建標籤時，標籤�
 
 下列清單顯示 Visual Studio 中可用的內建標籤。 對應值顯示在括弧中。
 
-| Language | 平台 | 專案類型 |
+| 語言標記 | 平臺標記 | 專案類型標記 |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | 雲端 (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | 主控台 (`console`) |
@@ -147,7 +147,7 @@ Visual Studio 提供內建標籤清單。 當您新增內建標籤時，標籤�
 
 ## <a name="see-also"></a>另請參閱
 
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
-- [創建專案和專案範本](creating-project-and-item-templates.md)
-- [自訂專案和專案範本](customizing-project-and-item-templates.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [建立專案與項目範本](creating-project-and-item-templates.md)
+- [自訂專案和項目範本](customizing-project-and-item-templates.md)
 - [開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)
