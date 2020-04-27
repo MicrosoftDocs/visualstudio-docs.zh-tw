@@ -7,7 +7,10 @@
       "build_output_subfolder": "vsdocsdocs",
       "locale": "zh-tw",
       "monikers": [],
-      "moniker_ranges": ["vs-2015", ">= vs-2017"],
+      "moniker_ranges": [
+        "vs-2015",
+        ">= vs-2017"
+      ],
       "xref_query_tags": [
         "/dotnet",
         "/uwp/api"
@@ -29,7 +32,10 @@
       "build_output_subfolder": "mac",
       "locale": "zh-tw",
       "monikers": [],
-      "moniker_ranges": ["vsmac-2017", "vsmac-2019"],
+      "moniker_ranges": [
+        "vsmac-2017",
+        "vsmac-2019"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -120,7 +126,6 @@
       "Publish",
       "Pdf"
     ]
-
   },
   "need_generate_pdf_url_template": true,
   "targets": {
@@ -131,5 +136,8 @@
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
   "enable_branch_build_custom_validation": true,
-  "enable_pull_request_custom_validation": true
+  "enable_pull_request_custom_validation": true,
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }
