@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f588ae1b32b8b8d47d6323ee32d02c9053a3de32
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 634916d9ab4ef0ce3119fcb5695301598992f38c
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634210"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167292"
 ---
 # <a name="exec-task"></a>Exec 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "77634210"
 
 |參數|描述|
 |---------------|-----------------|
-|`Command`|必要的 `String` 參數。<br /><br /> 一或多個要執行的命令。 這些可以是系統命令，如 attrib，或可執行檔，如*程式.exe、runprogram.bat*或*setup.msi*。 *runprogram.bat*<br /><br /> 此參數可以包含多行命令。 或者，您可以將多個命令放在一個批次檔中，然後使用此參數來執行該批次檔。|
+|`Command`|必要的 `String` 參數。<br /><br /> 一或多個要執行的命令。 這些可以是系統命令，例如 [attrib] 或 [可執行檔]，例如 [ *program*]、[ *runprogram.bat*] 或 [ *setup.exe*]。<br /><br /> 此參數可以包含多行命令。 或者，您可以將多個命令放在一個批次檔中，然後使用此參數來執行該批次檔。|
 |`ConsoleOutput`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 每個項目輸出都是工具發出的標準輸出或標準錯誤資料流。 這只有在 `ConsoleToMsBuild` 設為 `true` 時才會擷取。|
 |`ConsoleToMsBuild`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，工作會擷取工具的標準錯誤和標準輸出，讓它們可在 `ConsoleOutput` 輸出參數中使用。<br /><br />預設：`false`。|
 |`CustomErrorRegularExpression`|選擇性的 `String` 參數。<br /><br /> 指定在工具輸出中用來檢查錯誤行的規則運算式。 這適用於會產生異常格式之輸出的工具。<br /><br />預設值：`null` (沒有自訂處理)。|
@@ -49,13 +49,13 @@ ms.locfileid: "77634210"
 |`StdOutEncoding`|選擇性的 `String` 輸出參數。<br /><br /> 指定所擷取工作標準輸出資料流的編碼方式。 預設值是目前的主控台輸出編碼方式。|
 |`WorkingDirectory`|選擇性的 `String` 參數。<br /><br /> 指定將執行命令的目錄。<br /><br />預設值：專案的目前工作目錄。|
 
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
+
 ## <a name="remarks"></a>備註
 
-當要執行的工作的特定 MSBuild 任務無法接通，此任務非常有用。 不過，`Exec` 工作不同於更特定的工作，無法根據其執行之工具或命令的結果進行其他處理或條件式作業。
+當您想要執行之作業的特定 MSBuild 工作無法使用時，這項工作很有用。 不過，`Exec` 工作不同於更特定的工作，無法根據其執行之工具或命令的結果進行其他處理或條件式作業。
 
-任務`Exec`調用*cmd.exe，* 而不是直接調用進程。
-
-除了本文件所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 有關這些附加參數及其說明的清單，請參閱[ToolTask 擴展基類](../msbuild/tooltaskextension-base-class.md)。
+工作`Exec`會呼叫*cmd.exe* ，而不是直接叫用進程。
 
 ## <a name="example"></a>範例
 
@@ -77,4 +77,4 @@ ms.locfileid: "77634210"
 ## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

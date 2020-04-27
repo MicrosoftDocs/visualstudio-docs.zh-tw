@@ -158,6 +158,10 @@ f1_keywords:
 - CA1823
 - CA1824
 - CA1825
+- CA1826
+- CA1827
+- CA1828
+- CA1829
 - CA1900
 - CA1901
 - CA1903
@@ -266,12 +270,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d4f532baf1434ea318a86ce2cb2fc717fff98623
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.openlocfilehash: 554de8df2d05d0ae4f248762891dd0cec543e5a9
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153015"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167380"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>CheckId 受控碼的程式碼分析警告
 
@@ -424,6 +428,10 @@ ms.locfileid: "82153015"
 | CA1823 | [CA1823：避免包含未使用的私用欄位](../code-quality/ca1823.md) | 偵測到似乎不能在組件內存取的私用欄位。 |
 | CA1824 |[CA1824：組件必須標記 NeutralResourcesLanguageAttribute](../code-quality/ca1824.md) | NeutralResourcesLanguage 屬性會通知資源管理員，這是用來顯示元件中性文化特性之資源的語言。 這可改善載入第一個資源的查詢效能，而且可以減少您的工作集。 |
 | CA1825 |[CA1825：避免長度為零的陣列配置](../code-quality/ca1825.md) | 初始化長度為零的陣列會導致不必要的記憶體配置。 相反地，請藉由呼叫<xref:System.Array.Empty%2A?displayProperty=nameWithType>來使用靜態配置的空陣列實例。 記憶體配置會在此方法的所有調用之間共用。 |
+| CA1826 |[CA1826： Use 屬性，而不是 Linq 可列舉方法](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>LINQ 方法是在支援對等、更有效率的屬性的型別上使用。 |
+| CA1827 |[CA1827：如果有任何可用的 Count/LongCount，請勿使用](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>使用<xref:System.Linq.Enumerable.LongCount%2A>了或方法， <xref:System.Linq.Enumerable.Any%2A>其中方法會更有效率。 |
+| CA1828 |[CA1828：當可以使用 AnyAsync 時，請勿使用 CountAsync/LongCountAsync](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>使用<xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A>了或方法， <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A>其中方法會更有效率。 |
+| CA1829 |[CA1829：使用 Length/Count 屬性，而不是可列舉的 Count 方法](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>LINQ 方法是在支援對等、更有效率`Length`或`Count`屬性的型別上使用。 |
 | CA1900 | [CA1900：實值類型欄位應該為可移植的](../code-quality/ca1900.md) | 這項規則會檢查在 64 位元作業系統上封送處理至 Unmanaged 程式碼時，使用明確配置所宣告的結構是否會正確地對齊。 |
 | CA1901 | [CA1901： P/Invoke 宣告應該是可移植的](../code-quality/ca1901.md) | 這項規則會評估每個參數的大小和 P/Invoke 的傳回值，並且在 32 位元和 64 位元作業系統上封送處理至 Unmanaged 程式碼時驗證參數的大小是否正確。 |
 | CA1903 | [CA1903：只使用來自目標架構的 API](../code-quality/ca1903.md) | 某一個成員或類型使用的是 Service Pack 中所導入的成員或類型，但是專案的目標 Framework 中卻沒有包含該成員或類型。 |
