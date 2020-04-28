@@ -3,12 +3,12 @@ author: ghogen
 ms.author: ghogen
 ms.topic: include
 ms.date: 4/23/2020
-ms.openlocfilehash: 38ac6925e98f4eb17b57d083c45977cb3f0f29ea
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: 40108f56ee9d64688fc665fdef0e0ab731bddfff
+ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167291"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82204495"
 ---
 ### <a name="tooltaskextension-parameters"></a>ToolTaskExtension 參數
 
@@ -16,7 +16,7 @@ ms.locfileid: "82167291"
 
 下表描述基類的參數：
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 | - | - |
 | <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | 選擇性的 `bool` 參數。<br /><br /> 當設定為`true`時，此工作會將 **/q**傳遞至*cmd.exe*命令列，讓命令列不會複製到 stdout。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | 選擇性 `String` 陣列參數。<br /><br /> 環境變數組陣列，以等號分隔。 這些變數是在規則環境區塊以外傳遞至繁衍的可執行檔，或選擇性地覆寫。 |
