@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ed82bd8ba3845541d7dce628f99fb78b62ab9f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595705"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255561"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
 
@@ -64,14 +64,15 @@ Devenv 可讓您從命令列針對 IDE 設定不同選項、建置專案、偵�
 
 |命令列參數|描述|
 | - |-----------------|
-|[/命令](command-devenv-exe.md)|啟動 IDE，並執行指定的命令。<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
+|[/Command](command-devenv-exe.md)|啟動 IDE，並執行指定的命令。<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|在偵錯工具的控制下載入 C++ 可執行檔。 此參數不適用於 Visual Basic 或 C# 可執行檔。 如需詳細資訊，請參閱[在偵錯工具中自動啟動處理序](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。<br /><br /> `devenv /debugexe mysln.exe`|
-|[/差異](diff.md)|比較兩個檔案。 採用四個參數：*原始檔案*、*目的檔案*、*源顯示名稱*（可選）和目標*顯示名稱*（可選）。<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
+|[/Diff](diff.md)|比較兩個檔案。 採用四個參數： *SourceFile*、 *TargetFile*、 *SourceDisplayName* （選擇性）和*TargetDisplayName* （選擇性）。<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
 |[/DoNotLoadProjects](donotloadprojects-devenv-exe.md)|開啟指定的解決方案，而不載入任何專案。<br /><br /> `devenv /donotloadprojects mysln.sln`|
-|[/編輯](edit-devenv-exe.md)|在這個應用程式的作用中執行個體中開啟指定的檔案。 如果沒有執行中的執行個體，則會以簡易視窗配置啟動新的執行個體。<br /><br /> `devenv /edit File1 File2`|
+|[/Edit](edit-devenv-exe.md)|在這個應用程式的作用中執行個體中開啟指定的檔案。 如果沒有執行中的執行個體，則會以簡易視窗配置啟動新的執行個體。<br /><br /> `devenv /edit File1 File2`|
 |[/LCID 或 /L](lcid-devenv-exe.md)|設定 IDE 的預設語言。 如果 Visual Studio 安裝中未包含指定的語言，則會忽略此設定。<br /><br /> `devenv /l 1033`|
-|[/日誌](log-devenv-exe.md)|啟動 Visual Studio，並將所有活動記錄至記錄檔。<br /><br /> `devenv /log mylogfile.xml`|
-|[/無濺](nosplash-devenv-exe.md)|開啟 IDE，而不顯示啟動顯示畫面。<br /><br /> `devenv /nosplash File1 File2`|
+|[/Log](log-devenv-exe.md)|啟動 Visual Studio，並將所有活動記錄至記錄檔。<br /><br /> `devenv /log mylogfile.xml`|
+|[/NoSplash](nosplash-devenv-exe.md)|開啟 IDE，而不顯示啟動顯示畫面。<br /><br /> `devenv /nosplash File1 File2`|
+|[/ResetSettings](resetsettings-devenv-exe.md)|還原 Visual Studio 預設設定。 選擇性地將設定重設為指定的 `.vssettings` 檔案。<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Run 或 /R](run-devenv-exe.md)|編譯並執行指定的方案。<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|編譯並執行指定的方案、執行方案時最小化 IDE，以及在方案完成執行之後關閉 IDE。<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|以安全模式啟動 Visual Studio。 此參數只會載入預設環境、預設服務，以及隨附的協力廠商封裝版本。<br /><br /> 此參數不需使用引數。|
@@ -82,17 +83,16 @@ Devenv 可讓您從命令列針對 IDE 設定不同選項、建置專案、偵�
 |命令列參數|描述|
 | - |-----------------|
 |[/?](q-devenv-exe.md)|在 [命令提示字元]**** 視窗中顯示 `devenv` 參數的說明。<br /><br /> 此參數不需使用引數。|
-|[/生成](build-devenv-exe.md)|根據所指定方案的組態，建置指定的方案或專案。<br /><br /> `devenv mysln.sln /build`|
-|[/清潔](clean-devenv-exe.md)|刪除 build 命令所建立的任何檔案，而不會影響原始程式檔。<br /><br /> `devenv mysln.sln /clean`|
-|[/部署](deploy-devenv-exe.md)|根據方案組態，建置方案以及部署所需的檔案。<br /><br /> `devenv mysln.sln /deploy`|
-|[/出](out-devenv-exe.md)|可讓您指定要在建置時接收錯誤的檔案。<br /><br /> `devenv mysln.sln /build Debug /out log.txt`|
-|[/專案](project-devenv-exe.md)|要建置、清除或部署的專案。 只有在同時提供 `/Build`、`/Rebuild`、`/Clean` 或 `/Deploy` 參數時，才能使用此參數。<br /><br /> `devenv mysln.sln /build Debug /project proj1`|
+|[/Build](build-devenv-exe.md)|根據所指定方案的組態，建置指定的方案或專案。<br /><br /> `devenv mysln.sln /build`|
+|[/Clean](clean-devenv-exe.md)|刪除 build 命令所建立的任何檔案，而不會影響原始程式檔。<br /><br /> `devenv mysln.sln /clean`|
+|[/Deploy](deploy-devenv-exe.md)|根據方案組態，建置方案以及部署所需的檔案。<br /><br /> `devenv mysln.sln /deploy`|
+|[/Out](out-devenv-exe.md)|可讓您指定要在建置時接收錯誤的檔案。<br /><br /> `devenv mysln.sln /build Debug /out log.txt`|
+|[/Project](project-devenv-exe.md)|要建置、清除或部署的專案。 只有在同時提供 `/Build`、`/Rebuild`、`/Clean` 或 `/Deploy` 參數時，才能使用此參數。<br /><br /> `devenv mysln.sln /build Debug /project proj1`|
 |[/ProjectConfig](projectconfig-devenv-exe.md)|指定要建置或部署的專案組態。 只有在同時提供 `/Project` 參數時，才能使用此參數。<br /><br /> `devenv mysln.sln /build Release /project proj1 /projectconfig Release`|
-|[/重建](rebuild-devenv-exe.md)|根據所指定方案的組態，清除後建置指定的方案或專案。<br /><br /> `devenv mysln.sln /rebuild`|
-|[/ResetSettings](resetsettings-devenv-exe.md)|還原 Visual Studio 預設設定。 選擇性地將設定重設為指定的 `.vssettings` 檔案。<br /><br /> `devenv /resetsettings mysettings.vssettings`|
-|[/升級](upgrade-devenv-exe.md)|將指定的解決方案檔及其所有專案檔，或指定的專案檔，升級為這些檔案目前的 Visual Studio 格式。<br /><br /> `devenv mysln.sln /upgrade`|
+|[/Rebuild](rebuild-devenv-exe.md)|根據所指定方案的組態，清除後建置指定的方案或專案。<br /><br /> `devenv mysln.sln /rebuild`|
+|[/Upgrade](upgrade-devenv-exe.md)|將指定的解決方案檔及其所有專案檔，或指定的專案檔，升級為這些檔案目前的 Visual Studio 格式。<br /><br /> `devenv mysln.sln /upgrade`|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [常規、環境、選項對話方塊](general-environment-options-dialog-box.md)
-- [用於 VSPackage 開發的 Devenv 命令列交換器](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)
+- [選項對話方塊、環境、一般](general-environment-options-dialog-box.md)
+- [適用于 VSPackage 開發的 Devenv 命令列參數](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)

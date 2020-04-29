@@ -11,20 +11,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7b36a829e2e406ecd3f10ba3a2b588c6f7df25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633755"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255568"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：在多個專案檔中使用相同的目標
 
-如果您已創作了多個 MSBuild 專案檔案，您可能發現需要在不同的專案檔案中使用相同的任務和目標。 您可以不在每個專案檔中包含這些工作或目標的完整描述，而是在一個個別的專案檔中儲存目標，然後將該專案匯入到任何其他需要使用該目標的專案中。
+如果您已撰寫數個 MSBuild 專案檔，您可能會發現需要在不同的專案檔中使用相同的工作和目標。 您可以不在每個專案檔中包含這些工作或目標的完整描述，而是在一個個別的專案檔中儲存目標，然後將該專案匯入到任何其他需要使用該目標的專案中。
+
 ## <a name="use-the-import-element"></a>使用 Import 項目
 
- 使用 `Import` 元素可將一個專案檔插入到另一個專案檔中。 正在導入的專案檔案必須是有效的 MSBuild 專案檔案，並且包含格式良好的 XML。 `Project` 屬性會指定所匯入之專案檔的路徑。 有關元素的詳細資訊，`Import`請參閱[導入元素 （MSBuild）。](../msbuild/import-element-msbuild.md)
-使用 `Import` 元素可將一個專案檔插入到另一個專案檔中。 正在導入的專案檔案必須是有效的 MSBuild 專案檔案，並且包含格式良好的 XML。 `Project` 屬性會指定所匯入之專案檔的路徑。 有關元素的詳細資訊，`Import`請參閱[導入元素 （MSBuild）。](../msbuild/import-element-msbuild.md)
+使用 `Import` 元素可將一個專案檔插入到另一個專案檔中。 匯入的專案檔必須是有效的 MSBuild 專案檔，且包含格式正確的 XML。 `Project` 屬性會指定所匯入之專案檔的路徑。 如需元素的`Import`詳細資訊，請參閱[Import 元素（MSBuild）](../msbuild/import-element-msbuild.md)。
 
 #### <a name="to-import-a-project"></a>匯入專案
 
@@ -38,9 +38,9 @@ ms.locfileid: "77633755"
 
 ## <a name="order-of-evaluation"></a>評估順序
 
- 當 MSBuild`Import`到達元素時，導入的專案將有效地插入到`Import`元素位置的導入專案中。 因此，`Import` 元素的位置會影響屬性和項目的值。 請務必了解所匯入之專案所設定的屬性和項目，以及所匯入之專案所使用的屬性和項目。
+ 當 MSBuild 到達`Import`元素時，匯入的專案會有效地插入至匯入專案的`Import`元素位置。 因此，`Import` 元素的位置會影響屬性和項目的值。 請務必了解所匯入之專案所設定的屬性和項目，以及所匯入之專案所使用的屬性和項目。
 
- 在組建專案時，會先評估所有屬性，然後才評估項目。 例如，以下 XML 定義導入的專案檔案*MyCommon.目標*：
+ 在組建專案時，會先評估所有屬性，然後才評估項目。 例如，下列 XML 會定義匯入的專案檔*mycommon.targets*：
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -54,7 +54,7 @@ ms.locfileid: "77633755"
 </Project>
 ```
 
- 以下 XML 定義*MyApp.proj*，它導入*MyCommon.target：*
+ 下列 XML 定義了*MyApp. proj*，它會匯入*mycommon.targets*：
 
 ```xml
 <Project
@@ -71,7 +71,7 @@ ms.locfileid: "77633755"
 
  `Name="MyCommon"`
 
- 由於專案是在`Name` *MyApp.proj*中定義該屬性後導入的，因此`Name`*MyCommon.target*中的定義將覆蓋*MyApp.proj*中的定義。 如果是在定義 Name 屬性之前就匯入專案，組建就會顯示下列訊息：
+ 因為專案是在*myapp. proj*中`Name`定義屬性之後匯入，所以*mycommon.targets* `Name`中的定義會覆寫*myapp. proj*中的定義。 如果是在定義 Name 屬性之前就匯入專案，組建就會顯示下列訊息：
 
  `Name="MyApp"`
 
@@ -85,7 +85,7 @@ ms.locfileid: "77633755"
 
 ## <a name="example"></a>範例
 
- 下面的代碼示例顯示了第二個代碼示例導入的*MyCommon.target*檔。 *.target*檔評估導入專案的屬性以配置生成。
+ 下列程式碼範例顯示第二個程式碼範例匯入的*mycommon.targets*檔案。 *.Targets*檔案會評估來自匯入專案的屬性以設定組建。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -104,7 +104,7 @@ ms.locfileid: "77633755"
 
 ## <a name="example"></a>範例
 
- 以下代碼示例導入*MyCommon.target*檔。
+ 下列程式碼範例會匯入*mycommon.targets*檔案。
 
 ```xml
 <Project DefaultTargets="Build"
@@ -116,7 +116,7 @@ ms.locfileid: "77633755"
 </Project>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)
 - [目標](../msbuild/msbuild-targets.md)
