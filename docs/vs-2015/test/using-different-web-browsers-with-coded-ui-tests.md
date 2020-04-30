@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851223"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586330"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "75851223"
 
 - 安裝 [Selenium components for Coded UI Cross Browser Testing](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting) (自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件)。
 
-  **哪些功能是所有網頁瀏覽器都支援的？**
+  **所有網頁瀏覽器都支援哪些功能？**
 
 - [加入用於控制功能的自訂程式碼](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) (例如屬性、搜尋和播放等候程式等功能)。
 
@@ -73,7 +73,7 @@ ms.locfileid: "75851223"
 
 2. 在 [延伸模組和更新] 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
 
-3. 反白顯示延伸模組並選擇 [下載]。
+3. 反白顯示延伸模組並選擇 [下載]****。
 
    > [!TIP]
    > 您也可以在[這裡](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)下載自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件。
@@ -85,21 +85,21 @@ ms.locfileid: "75851223"
 
 1. 啟用 Just My Code：
 
-    1. 在 [工具] 功能表中選擇 [選項]，然後選擇 [偵錯]。
+    1. 在 [工具]**** 功能表中選擇 [選項]****，然後選擇 [偵錯]****。
 
-    2. 選取 [啟用 Just My Code]。
+    2. 選取 [啟用 Just My Code]****。
 
 2. 停用 CLR 例外狀況：
 
-    1. 在 [偵錯] 功能表中選擇 [例外狀況]。
+    1. 在 [偵錯]**** 功能表中選擇 [例外狀況]****。
 
-    2. 取消核取 [通用語言執行平台例外狀況] 的 [使用者未處理]。
+    2. 取消核取 [通用語言執行平台例外狀況]**** 的 [使用者未處理]****。
 
-## <a name="generate"></a>*我在自動程式碼 UI 測試中看不到變更 browserwindow.currentbrowser 的選項。*
+## <a name="i-dont-see-the-option-to-change-browserwindowcurrentbrowser-in-the-coded-ui-test"></a><a name="generate"></a> *我在自動程式碼 UI 測試中看不到變更 BrowserWindow.CurrentBrowser 的選項。*
  您使用的 [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] 版本可能不支援使用多種 Web 瀏覽器進行自動程式碼 UI 測試。 若要使用自動程式化 UI 測試，您必須使用 Visual Studio 企業版。
 
  *我還應該知道什麼？*
- **備註**
+ **注意事項**
 
 - ![必要條件 prereq](../test/media/prereq.png "Prereq")不支援 Apple Safari web 瀏覽器。
 
@@ -109,13 +109,13 @@ ms.locfileid: "75851223"
 
 - ![必要條件 prereq](../test/media/prereq.png "Prereq")不支援將瀏覽器特定的 UI 動作自動化，例如最大化、最小化和還原。
 
-  **祕訣**
+  **提示**
 
-- ![秘訣](../test/media/tip.png "提示")您可以設定輸出，在自動程式碼 UI 記錄中包含螢幕擷取畫面。 若要這麼做，您需要完成 QTAgent32.exe.config 檔案的某些組態設定。 根據預設，這個檔案會安裝在下列位置：
+- ![秘訣](../test/media/tip.png "秘訣")您可以設定輸出，在自動程式碼 UI 記錄中包含螢幕擷取畫面。 若要這麼做，您需要完成 QTAgent32.exe.config 檔案的某些組態設定。 根據預設，這個檔案會安裝在下列位置：
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
-   設定下列的值：
+   設定下列值：
 
   - `EqtTraceLevel` 區段中的`system.diagnostics`。
 
@@ -127,7 +127,7 @@ ms.locfileid: "75851223"
 
 ## <a name="external-resources"></a>外部資源
 
-### <a name="videos"></a>Videos
+### <a name="videos"></a>影片
  [在 IE 中記錄並在任何位置播放](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
  [使用自動程式碼 UI 測試產生器撰寫跨瀏覽器的測試](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
@@ -138,18 +138,18 @@ ms.locfileid: "75851223"
 
  [針對跨瀏覽器測試失敗問題進行疑難排解](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-### <a name="guidance"></a>指引
+### <a name="guidance"></a>指導
  [使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：測試內部](https://msdn.microsoft.com/library/jj159340.aspx)
 
- [使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試](https://msdn.microsoft.com/library/jj159335.aspx)
+ [使用 Visual Studio 2012 測試持續傳遞–第5章：自動化系統測試](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>常見問題集
- [自動程式碼 UI 測試常見問題集 - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
+ [自動程式碼 UI 測試常見問題集 - 1](https://docs.microsoft.com/archive/blogs/mathew_aniyan/content-index-for-coded-ui-test)
 
  [自動程式碼 UI 測試常見問題集 - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>論壇
  [Visual Studio 使用者介面自動化測試 (包括自動程式碼 UI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)[支援的設定和平臺自動程式化 Ui 測試和動作記錄](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)使用自動程式化[ui 測試記錄來分析](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)自動程式化 ui 測試

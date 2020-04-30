@@ -10,22 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4c44b4e642ff1137df7f0afe02502224060a64
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c5f1d34a6d21e6d4f413275ee21651feb7ec3dec
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302907"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586684"
 ---
 # <a name="property-functions"></a>屬性函式
 
-屬性函數是 MSBuild 屬性定義中顯示的對 .NET 框架方法的調用。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。
+屬性函式會呼叫出現在 MSBuild 屬性定義中 .NET Framework 方法。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。
 
 在不使用 MSBuild 工作的情況下，您可以讀取系統時間、比較字串、比對規則運算式，以及執行組建指令碼中的其他動作。 MSBuild 會嘗試將字串轉換為數字或將數字轉換為字串，並視需要進行其他轉換。
 
 從屬性函式傳回的字串值具有逸出的[特殊字元](msbuild-special-characters.md)。 如果您想要將值視為直接放入專案檔中，請使用 `$([MSBuild]::Unescape())` 來取消逸出特殊字元。
 
-屬性函數可用於 .NET 框架 4 及更高版本。
+屬性函數適用于 .NET Framework 4 和更新版本。
 
 ## <a name="property-function-syntax"></a>屬性函式語法
 
@@ -174,8 +174,8 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |string NormalizePath(params string[] path)|取得所提供路徑的規範化完整路徑，並確保它包含目前作業系統的正確目錄分隔符號字元。|
 |string NormalizeDirectory(params string[] path)|取得所提供目錄的規範化完整路徑，並確保它包含目前作業系統的正確目錄分隔符號字元，且後面有斜線。|
 |string EnsureTrailingSlash(string path)|如果指定的路徑後面沒有斜線，請新增一個。 如果此路徑是空字串，請不要修改它。|
-|string GetPathOfFileAbove(string file, string startingDirectory)|搜索並返回當前生成檔位置上方的目錄結構中檔的完整路徑，或基於`startingDirectory`（如果指定）返回該檔的完整路徑。|
-|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|查找並返回該檔的目錄，該目錄位於指定的目錄中或目錄結構上方的位置。|
+|string GetPathOfFileAbove(string file, string startingDirectory)|搜尋並傳回目錄結構中，位於目前組建檔案位置上方之檔案的完整路徑，如果有指定`startingDirectory`，則會傳回根據。|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|找出並傳回指定目錄中的檔案目錄，或在該目錄上方目錄結構中的位置。|
 |string MakeRelative(string basePath, string path)|讓 `path` 成為 `basePath` 的相對項。 `basePath` 必須是絕對目錄。 如果 `path` 不能成為相對的，它就會被逐字傳回。 類似於 `Uri.MakeRelativeUri`。|
 |string ValueOrDefault(string conditionValue, string defaultValue)|只有當參數 'conditionValue' 為空時，才傳回參數 'defaultValue' 中的字串；否則，傳回值 conditionValue。|
 
@@ -229,7 +229,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
 
-如果`GetPathOfFileAbove`位於目前的目錄上方的目錄結構中，MSBuild 中的屬性函數將返回指定檔的路徑。 它在功能上相當於呼叫
+MSBuild `GetPathOfFileAbove`中的屬性函式會傳回指定檔案的路徑（如果位於目前目錄上方的目錄結構中）。 它在功能上相當於呼叫
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -263,7 +263,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Windows 64 位作業系統維護一個**HKEY_LOCAL_MACHINE_SOFTWARE_Wow6432Node**登錄機碼，該金鑰為 32 位應用程式提供**HKEY_LOCAL_MACHINE_SOFTWARE**註冊表視圖。
+Windows 64 位作業系統會維護**HKEY_LOCAL_MACHINE \software\wow6432node**登錄機碼，以提供32位應用程式的**HKEY_LOCAL_MACHINE \software**登錄視圖。
 
 根據預設，在 WOW64 上執行的 32 位元應用程式會存取 32 位元登錄檢視，而 64 位元應用程式會存取 64 位元登錄檢視。
 
@@ -339,6 +339,10 @@ Output:
   Value2 = b
 -->
 ```
+
+## <a name="msbuild-condition-functions"></a>MSBuild 條件函數
+
+函數`Exists`和`HasTrailingSlash`不是屬性函式。 它們可與`Condition`屬性搭配使用。 請參閱[MSBuild 條件](msbuild-conditions.md)。
 
 ## <a name="see-also"></a>另請參閱
 

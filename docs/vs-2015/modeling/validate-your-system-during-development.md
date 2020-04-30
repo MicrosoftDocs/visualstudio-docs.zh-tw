@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b3de5cb1cc62d159567eee804c1aadef865e500a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a1beeef572282a642e4a989086ac0fd228409fec
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845400"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586277"
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致
 
 ## <a name="external-resources"></a>外部資源
 
-|**分類**|**Links**|
+|**類別**|**連結**|
 |------------------|---------------|
 |**影片**|![連結至影片](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9： Doug 七：程式碼瞭解和使用 Visual Studio 2010 的系統設計](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif "PlayVideo")[頻道9：使用分層圖架構應用程式](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-5-Architecting-an-Application)<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 如何系列：如何使用分層圖驗證程式代碼](https://msdn.microsoft.com/vstudio/gg501755)|
 |**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**部落格**|-   [Visual Studio ALM + Team Foundation Server 部落格](https://blogs.msdn.com/b/visualstudioalm)|
+|**網路**|-   [Visual Studio ALM + Team Foundation Server 部落格](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**技術文件和日誌**|[MSDN 架構中心](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[模型使用者需求](../modeling/model-user-requirements.md)[分析和模型化架構](../modeling/analyze-and-model-your-architecture.md)

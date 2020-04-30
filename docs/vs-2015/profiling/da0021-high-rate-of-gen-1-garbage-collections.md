@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa840bbb088e83ab8435f1cfbd0f2468c05605ae
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d901d09350af063a11e3d156f36a100df85e7718
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844694"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586914"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021：高比率的 Gen 1 記憶體回收
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "75844694"
   
  第 0 代中的物件通常會以頻繁且非常有效率的方式回收。 第 1 代中的物件則不會以太頻繁也不會太有效率的方式回收。 最後，在第 2 代中長時間執行的物件則不會太常回收。 第 2 代回收，是執行完整的記憶體回收，也是最耗費資源的作業。  
   
- 發生太高比例的第 1 代記憶體回收時，就會引發此規則。 如果有太多存留期相當短的物件在第 0 代回收之後存留下來，但接著就能在第 1 代回收中回收，則記憶體管理的成本可能會變得過高。 如需詳細資訊，請參閱 MSDN 網站上 Rico Mariani's Performance Tidbits 的[中間存留期危機 (英文)](https://blogs.msdn.com/ricom/archive/2003/12/04/41281.aspx) 文章。  
+ 發生太高比例的第 1 代記憶體回收時，就會引發此規則。 如果有太多存留期相當短的物件在第 0 代回收之後存留下來，但接著就能在第 1 代回收中回收，則記憶體管理的成本可能會變得過高。 如需詳細資訊，請參閱 MSDN 網站上 Rico Mariani's Performance Tidbits 的[中間存留期危機 (英文)](https://docs.microsoft.com/archive/blogs/ricom/mid-life-crisis) 文章。  
   
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
  按兩下 [錯誤清單] 視窗中的訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。 尋找 **.NET CLR Memory\\# of Gen 0 Collections** 和 **.NET CLR Memory\\# of Gen 1 Collections** 欄。 判斷是否有特定的程式執行階段，當中的記憶體回收較頻繁發生。 比較這些值與 **% Time in GC** 欄，查看 Managed 記憶體配置的模式是否會造成過多的記憶體管理負擔。  

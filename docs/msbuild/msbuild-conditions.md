@@ -10,27 +10,29 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, conditions
 - conditions [MSBuild]
+- Exists, MSBuild condition function
+- HasTrailingSlash, MSBuild condition function
 ms.assetid: 9d7aa308-b667-48ed-b4c9-a61e49eb0a85
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7948f9da5922ba5f5e3582924bbccd56d50219a0
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: 61ffb650a87fa992a07d749687498cbb8ec6482d
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072563"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586830"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 條件
 
-MSBuild 支援一組特定的條件,可在允許的`Condition`屬性 的任何位置應用。 下表說明這些條件。
+MSBuild 支援一組可在允許`Condition`屬性時套用的特定條件。 下表說明這些條件。
 
-|條件|描述|
+|狀況|說明|
 |---------------|-----------------|
-|'`stringA`' == '`stringB`'|如果 `stringA` 等於 `stringB`，即會評估為 `true`。<br /><br /> 例如：<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。 此檢查不區分大小寫。|
-|'`stringA`' != '`stringB`'|如果 `stringA` 不等於 `stringB`，即會評估為 `true`。<br /><br /> 例如：<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。 此檢查不區分大小寫。|
+|'`stringA`' == '`stringB`'|如果 `stringA` 等於 `stringB`，即會評估為 `true`。<br /><br /> 例如：<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。 這種檢查不區分大小寫。|
+|'`stringA`' != '`stringB`'|如果 `stringA` 不等於 `stringB`，即會評估為 `true`。<br /><br /> 例如：<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。 這種檢查不區分大小寫。|
 |\<, >, \<=, >=|評估運算元的數值。 如果關聯式評估為 true，即會傳回 `true`。 運算元必須評估為十進位或十六進位數字。 十六進位數字必須以 "0x" 開頭。 **注意︰** 在 XML 中，必須逸出字元 `<` 和 `>`。 符號 `<` 是以 `&lt;` 表示。 符號 `>` 是以 `&gt;` 表示。|
 |Exists('`stringA`')|如果有名稱為 `stringA` 的檔案或資料夾存在，即會評估為 `true`。<br /><br /> 例如：<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。|
 |HasTrailingSlash ('`stringA`')|如果指定的字串包含尾端反斜線 (\\) 或斜線 (/) 字元，即會評估為 `true`。<br /><br /> 例如：<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。|
@@ -38,9 +40,9 @@ MSBuild 支援一組特定的條件,可在允許的`Condition`屬性 的任何�
 |And|如果這兩個運算元都評估為 `true`，即會評估為 `true`。|
 |Or|如果至少有一個運算元評估為 `true`，即會評估為 `true`。|
 |()|如果內部包含的運算式評估為 `true`，即會評估為 `true` 的群組機制。|
-|$if$ ( %expression% )、$else$、$endif$|檢查指定的 `%expression%` 是否符合所傳遞自訂範本參數的字串值。 如果 `$if$` 條件評估為 `true`，即會執行它的陳述式，否則會檢查 `$else$` 條件。 如果 `$else$` 條件為`true`，即會執行它的陳述式，否則 `$endif$` 條件會結束運算式評估。<br /><br /> 有關使用的範例,請參閱[可視化工作室專案/專案範本參數邏輯](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)。|
+|$if$ ( %expression% )、$else$、$endif$|檢查指定的 `%expression%` 是否符合所傳遞自訂範本參數的字串值。 如果 `$if$` 條件評估為 `true`，即會執行它的陳述式，否則會檢查 `$else$` 條件。 如果 `$else$` 條件為`true`，即會執行它的陳述式，否則 `$endif$` 條件會結束運算式評估。<br /><br /> 如需用法的範例，請參閱[Visual Studio 專案/專案範本參數邏輯](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)。|
 
-您可以在條件中使用字串方法,如以下範例所示,其中[TrimEnd()](/dotnet/api/system.string.trimend)函數僅用於比較字串的相關部分,以區分 .NET 框架和 .NET Core 目標框架。
+您可以在條件中使用字串方法（如下列範例所示），其中[TrimEnd （）](/dotnet/api/system.string.trimend)函數只會用來比較字串的相關部分，以區別 .NET FRAMEWORK 和 .net Core 目標 framework。
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -59,5 +61,5 @@ MSBuild 支援一組特定的條件,可在允許的`Condition`屬性 的任何�
 ## <a name="see-also"></a>另請參閱
 
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
-- [條件建構](../msbuild/msbuild-conditional-constructs.md)
-- [演練:從頭開始建立 MSBuild 專案檔](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
+- [條件式結構](../msbuild/msbuild-conditional-constructs.md)
+- [逐步解說：從頭開始建立 MSBuild 專案檔案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
