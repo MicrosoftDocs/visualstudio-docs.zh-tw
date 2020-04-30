@@ -67,8 +67,8 @@
 ## [Unity 遊戲開發](/visualstudio/mac/unity-tools)
 ### [安裝](/visualstudio/mac/setup-vsmac-tools-unity)
 ### [使用 Unity 工具](/visualstudio/mac/using-vsmac-tools-unity)
-### [在 Unity 中使用 .NET 4.x](/visualstudio/mac//visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
-### [變更記錄](/visualstudio/mac//visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+### [在 Unity 中使用 .NET 4.x](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
+### [變更記錄](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [使用 Xamarin 開發行動裝置應用程式](/visualstudio/mac/xamarin)
 
 # [協助工具選項](/visualstudio/mac/accessibility)
