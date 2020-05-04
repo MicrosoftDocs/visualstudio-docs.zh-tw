@@ -432,6 +432,8 @@
                   href: ca1507.md
                 - name: 'CA1508:避免使用無作用條件式程式碼'
                   href: ca1508.md
+                - name: CA1509：程式碼度量設定檔中的項目無效
+                  href: ca1509.md
             - name: 行動性警告
               items:
                 - name: 總覽
@@ -575,6 +577,8 @@
                   href: ca2006.md
                 - name: 'CA2007:不直接等候工作'
                   href: ca2007.md
+                - name: CA2009：請勿對 ImmutableCollection 值呼叫 TolmmutableCollection
+                  href: ca2009.md
             - name: 安全性警告
               items:
                 - name: 總覽
