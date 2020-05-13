@@ -1,4 +1,4 @@
----
+﻿---
 title: 發行至網站
 ms.date: 01/29/2019
 ms.topic: quickstart
@@ -19,38 +19,38 @@ ms.locfileid: "71127940"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至網站
 
-您可以使用 [發行]**** 工具，從 Visual Studio 將 ASP.NET、ASP.NET Core、.NET Core 及 Python 應用程式發行至網站。 針對 Node.js，支援這些步驟但使用者介面不同。
+æ‚¨å¯ä»¥ä½¿ç”¨ [ç™¼è¡Œ]**** å·¥å…·ï¼Œå¾ž Visual Studio å°‡ ASP.NETã€ASP.NET Coreã€.NET Core åŠ Python æ‡‰ç”¨ç¨‹å¼ç™¼è¡Œè‡³ç¶²ç«™ã€‚ é‡å° Node.jsï¼Œæ”¯æ´é€™äº›æ­¥é©Ÿä½†ä½¿ç”¨è€…ä»‹é¢ä¸åŒã€‚
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> 如果您需要將 Windows 桌面應用程式發行至網路檔案共用，請參閱[使用 ClickOnce 部署桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 或 Visual Basic)。 有關C++/CLI，請參閱[使用 ClickOnce 部署本機應用](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，或者對於 C/C++，請參閱[使用安裝程式部署本機應用](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+> å¦‚æžœæ‚¨éœ€è¦å°‡ Windows æ¡Œé¢æ‡‰ç”¨ç¨‹å¼ç™¼è¡Œè‡³ç¶²è·¯æª”æ¡ˆå…±ç”¨ï¼Œè«‹åƒé–±[ä½¿ç”¨ ClickOnce éƒ¨ç½²æ¡Œé¢æ‡‰ç”¨ç¨‹å¼](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# æˆ– Visual Basic)ã€‚ æœ‰é—œC++/CLIï¼Œè«‹åƒé–±[ä½¿ç”¨ ClickOnce éƒ¨ç½²æœ¬æ©Ÿæ‡‰ç”¨](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)ï¼Œæˆ–è€…å°æ–¼ C/C++ï¼Œè«‹åƒé–±[ä½¿ç”¨å®‰è£ç¨‹å¼éƒ¨ç½²æœ¬æ©Ÿæ‡‰ç”¨](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)ã€‚
 
 ## <a name="publish-to-a-web-site"></a>發行至網站
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]**** (或使用 [建置]**** > [發行]**** 功能表項目)。
+1. åœ¨ [æ–¹æ¡ˆç¸½ç®¡] ä¸­ï¼Œä»¥æ»‘é¼ å³éµæŒ‰ä¸€ä¸‹å°ˆæ¡ˆï¼Œç„¶å¾Œé¸æ“‡ [ç™¼è¡Œ]**** (æˆ–ä½¿ç”¨ [å»ºç½®]**** > [ç™¼è¡Œ]**** åŠŸèƒ½è¡¨é …ç›®)ã€‚
 
-    ![解決方案資源管理器中專案內容功能表上的"發佈"命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
+    ![è§£æ±ºæ–¹æ¡ˆè³‡æºç®¡ç†å™¨ä¸­å°ˆæ¡ˆå…§å®¹åŠŸèƒ½è¡¨ä¸Šçš„"ç™¼ä½ˆ"å‘½ä»¤](../deployment/media/quickstart-publish.png "é¸æ“‡ [ç™¼è¡Œ]")
 
-1. 如果您之前已設定任何發行設定檔，[發行]**** 窗格會隨即出現。 選取 [建立新設定檔]****。
+1. å¦‚æžœæ‚¨ä¹‹å‰å·²è¨­å®šä»»ä½•ç™¼è¡Œè¨­å®šæª”ï¼Œ[ç™¼è¡Œ]**** çª—æ ¼æœƒéš¨å³å‡ºç¾ã€‚ é¸å– [å»ºç«‹æ–°è¨­å®šæª”]****ã€‚
 
-1. 在 [挑選發行目標]**** 對話方塊中，選擇 [IIS、FTP 等等]****。
+1. åœ¨ [æŒ‘é¸ç™¼è¡Œç›®æ¨™]**** å°è©±æ–¹å¡Šä¸­ï¼Œé¸æ“‡ [IISã€FTP ç­‰ç­‰]****ã€‚
 
-    ![選擇 [IIS、FTP 等等]。](../deployment/media/quickstart-publish-iis-ftp.png "選擇 [IIS、FTP 等等]。")
+    ![é¸æ“‡ [IISã€FTP ç­‰ç­‰]ã€‚](../deployment/media/quickstart-publish-iis-ftp.png "é¸æ“‡ [IISã€FTP ç­‰ç­‰]ã€‚")
 
-1. 選取 [發行]****。 設定檔發行設定對話方塊隨即開啟。
+1. é¸å– [ç™¼è¡Œ]****ã€‚ è¨­å®šæª”ç™¼è¡Œè¨­å®šå°è©±æ–¹å¡Šéš¨å³é–‹å•Ÿã€‚
 
     ![選擇資料夾](../deployment/media/quickstart-publish-settings-web.png "選擇資料夾")
 
-1. 在 [發行方法]**** 欄位中，選擇一種方法，例如 [Web Deploy]**** 或 [FTP]****。 您看到之設定接下來會對應至您的發行方法。 Web Deploy 可簡化將 Web 應用程式和網站部署到 IIS 伺服器的作業，而且必須安裝為伺服器上的應用程式。 請使用 [Web platform installer](https://www.microsoft.com/web/downloads/platform.aspx) 進行安裝。
+1. åœ¨ [ç™¼è¡Œæ–¹æ³•]**** æ¬„ä½ä¸­ï¼Œé¸æ“‡ä¸€ç¨®æ–¹æ³•ï¼Œä¾‹å¦‚ [Web Deploy]**** æˆ– [FTP]****ã€‚ æ‚¨çœ‹åˆ°ä¹‹è¨­å®šæŽ¥ä¸‹ä¾†æœƒå°æ‡‰è‡³æ‚¨çš„ç™¼è¡Œæ–¹æ³•ã€‚ Web Deploy å¯ç°¡åŒ–å°‡ Web æ‡‰ç”¨ç¨‹å¼å’Œç¶²ç«™éƒ¨ç½²åˆ° IIS ä¼ºæœå™¨çš„ä½œæ¥­ï¼Œè€Œä¸”å¿…é ˆå®‰è£ç‚ºä¼ºæœå™¨ä¸Šçš„æ‡‰ç”¨ç¨‹å¼ã€‚ è«‹ä½¿ç”¨ [Web platform installer](https://www.microsoft.com/web/downloads/platform.aspx) é€²è¡Œå®‰è£ã€‚
 
-1. 設定發行方法的必要設定，然後選取 [驗證連線]****。 如果伺服器或目標可供使用且您的設定正確，則會顯示一則訊息指出已驗證連線，且您已經準備好發行。
+1. è¨­å®šç™¼è¡Œæ–¹æ³•çš„å¿…è¦è¨­å®šï¼Œç„¶å¾Œé¸å– [é©—è­‰é€£ç·š]****ã€‚ å¦‚æžœä¼ºæœå™¨æˆ–ç›®æ¨™å¯ä¾›ä½¿ç”¨ä¸”æ‚¨çš„è¨­å®šæ­£ç¢ºï¼Œå‰‡æœƒé¡¯ç¤ºä¸€å‰‡è¨Šæ¯æŒ‡å‡ºå·²é©—è­‰é€£ç·šï¼Œä¸”æ‚¨å·²ç¶“æº–å‚™å¥½ç™¼è¡Œã€‚
 
-    ![驗證您的連接](../deployment/media/quickstart-publish-web-deploy.png "驗證您的連接")
+    ![é©—è­‰æ‚¨çš„é€£æŽ¥](../deployment/media/quickstart-publish-web-deploy.png "é©—è­‰æ‚¨çš„é€£æŽ¥")
 
-1. 選取 [設定]**** 設定其他部署設定，例如是否要部署 [偵錯] 或 [發行] 組態，然後選取 [儲存]****。 如果您要遠端偵錯，則需要 [偵錯] 組態。
+1. é¸å– [è¨­å®š]**** è¨­å®šå…¶ä»–éƒ¨ç½²è¨­å®šï¼Œä¾‹å¦‚æ˜¯å¦è¦éƒ¨ç½² [åµéŒ¯] æˆ– [ç™¼è¡Œ] çµ„æ…‹ï¼Œç„¶å¾Œé¸å– [å„²å­˜]****ã€‚ å¦‚æžœæ‚¨è¦é ç«¯åµéŒ¯ï¼Œå‰‡éœ€è¦ [åµéŒ¯] çµ„æ…‹ã€‚
 
-1. 若要發行，請選取 [發行]****。 [輸出] 視窗會顯示部署進度和結果。
+1. è‹¥è¦ç™¼è¡Œï¼Œè«‹é¸å– [ç™¼è¡Œ]****ã€‚ [è¼¸å‡º] è¦–çª—æœƒé¡¯ç¤ºéƒ¨ç½²é€²åº¦å’Œçµæžœã€‚
 
 ## <a name="next-steps"></a>後續步驟
 

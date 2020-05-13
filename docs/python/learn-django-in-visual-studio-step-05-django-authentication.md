@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio 中的了解 Django 教學課程步驟 5，驗證
 titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Django 基本知識，特別是 [Django Web 專案] 範本所提供的驗證功能。
