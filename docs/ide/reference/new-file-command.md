@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fe8a99ee59a347fdcb7cff601b75139760630f7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595952"
 ---
 # <a name="new-file-command"></a>新增檔案命令
@@ -29,14 +29,14 @@ ms.locfileid: "75595952"
 File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 `filename`
 
-選擇項。 檔案名稱。 如果未提供名稱，會提供預設名稱。 如果未列出任何範本名稱，則會建立文字檔。
+選擇性。 檔案名稱。 如果未提供名稱，會提供預設名稱。 如果未列出任何範本名稱，則會建立文字檔。
 
-## <a name="switches"></a>交換機
+## <a name="switches"></a>交換器
 /t:`templatename`\
-選擇項。 指定要建立之檔案的類型。
+選擇性。 指定要建立之檔案的類型。
 
 /t:`templatename` 引數語法會鏡像 [新增檔案] 對話方塊中所找到的資訊。 輸入分類名稱，緊接著一個反斜線 (`\`) 和範本名稱，並且以引號括住整個字串。
 
@@ -46,10 +46,10 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 /t:"Visual C++\C++ File (.cpp)"
 ```
 
-上述範例指出 C++ 檔案範本位於 [新增檔案] 對話方塊的 Visual C++ 分類。
+上述範例指出 C++ 檔案範本位於 [新增檔案]**** 對話方塊的 Visual C++ 分類。
 
 /e:`editorname`\
-選擇項。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式] 對話方塊。
+選擇性。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式]**** 對話方塊。
 
 /e:`editorname` 引數語法會使用出現在 [開啟方式] 對話方塊並使用引號括住的編輯器名稱。
 
@@ -66,10 +66,10 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
-- [即時運算視窗](../../ide/reference/immediate-window.md)
+- [即時視窗](../../ide/reference/immediate-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)

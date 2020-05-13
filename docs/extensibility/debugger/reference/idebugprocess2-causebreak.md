@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::CauseBreak | Microsoft Docs
+title: IDebugProcess2::原因中斷 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::CauseBreak
 ms.assetid: efda8865-2319-4d53-90bf-6d9d74cd5195
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fbe4f3cac40306467e6efc7d87ca860a6d6f3f0e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 298312ae285eed1de29a3092db900f06e8f7d19a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353234"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724168"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
-下一步 也就是程式執行的程式碼，在此程序中的要求會中止，並傳送[IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)事件物件。
+請求在此過程中運行代碼的下一個程式停止併發送[IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)事件物件。
 
 ## <a name="syntax"></a>語法
 
@@ -38,7 +38,7 @@ int CauseBreak();
 ```
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

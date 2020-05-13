@@ -1,5 +1,5 @@
 ---
-title: 註冊專案和專案範本 |Microsoft Docs
+title: 註冊項目和項目範本 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e35a476ab8fe8d8de3ce11dd117de4c84a3befa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b64504c39b1fc3c4a82530b265cfd0e96832b4f2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724633"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705816"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
-專案類型必須註冊其專案和專案專案範本所在的目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 會使用與您的專案類型相關聯的註冊資訊，來決定要在 [**加入新專案**] 和 [**加入新專案**] 對話方塊中顯示的內容。
+專案類型必須註冊其專案和專案專案範本所在的目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用與項目類型關聯的註冊資訊來確定要在 **「添加新專案和****添加新項目**」對話框中顯示的內容。
 
- 如需範本的詳細資訊，請參閱[加入專案和專案專案範本](../../extensibility/internals/adding-project-and-project-item-templates.md)。
+ 有關範本的詳細資訊,請參閱[新增專案和專案專案範本](../../extensibility/internals/adding-project-and-project-item-templates.md)。
 
-## <a name="registry-entries-for-projects"></a>專案的登錄專案
- 下列範例會顯示 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio \\ <*版本*> 下的登錄專案。 隨附的資料表說明範例中使用的元素。
+## <a name="registry-entries-for-projects"></a>專案的註冊表項
+ 以下範例顯示HKEY_LOCAL_MACHINE\軟體\微軟_VisualStudio\\<*版本*>下的注册表项。 隨附的表說明瞭示例中使用的元素。
 
 ```
 [Projects\{ProjectGUID}]
@@ -37,15 +37,15 @@ ms.locfileid: "72724633"
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|[屬性]|輸入|描述|
+|名稱|類型|描述|
 |----------|----------|-----------------|
-|@|REG_SZ|這種專案的預設名稱。|
-|DisplayName|REG_SZ|要從在封裝下註冊的附屬 DLL 中抓取之名稱的資源識別碼。|
-|封裝|REG_SZ|封裝下註冊之套件的類別識別碼。|
-|ProjectTemplatesDir|REG_SZ|專案範本檔案的預設路徑。 [**新增專案**] 範本會顯示專案範本檔案。|
+|@|REG_SZ|此類項目的預設名稱。|
+|DisplayName|REG_SZ|要從在「包」下註冊的衛星 DLL 檢索的名稱的資源 ID。|
+|Package|REG_SZ|在「包」下註冊的包的類 ID。|
+|專案樣本Dir|REG_SZ|專案範本檔的預設路徑。 專案範本檔由**新專案**樣本顯示。|
 
-### <a name="registering-item-templates"></a>註冊專案範本
- 您必須註冊用來儲存專案範本的目錄。
+### <a name="registering-item-templates"></a>註冊項目範本
+ 您必須註冊存儲專案範本的目錄。
 
 ```
 [Projects\{ProjectGUID}\AddItemTemplates\TemplateDirs\{VSPackageGUID}\1]
@@ -55,21 +55,21 @@ ms.locfileid: "72724633"
 "SortPriority"=dword:00000064
 ```
 
-| [屬性] | 輸入 | 描述 |
+| 名稱 | 類型 | 描述 |
 |--------------------------|-----------| - |
-| @ | REG_SZ | 新增專案範本的資源識別碼。 |
-| TemplatesDir | REG_SZ | [**加入新專案**] wizard 的對話方塊中所顯示專案專案的路徑。 |
-| TemplatesLocalizedSubDir | REG_SZ | 字串的資源識別碼，其名稱為保存當地語系化範本的 TemplatesDir 子目錄。 因為 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 會從附屬 Dll 載入字串資源（如果有的話），每個附屬 DLL 都可以包含不同的當地語系化子目錄名稱。 |
-| SortPriority | REG_DWORD | 設定 SortPriority，以管理範本在 [**加入新專案**] 對話方塊中的顯示順序。 較大的 SortPriority 值較早出現在範本清單中。 |
+| @ | REG_SZ | 添加專案範本的資源 ID。 |
+| 範本迪爾 | REG_SZ | **"添加新專案**"嚮導的對話框中顯示的專案項的路徑。 |
+| 樣本本地化子 Dir | REG_SZ | 命名儲存本地化範本的 TemplatesDir 子目錄的字串的資源 ID。 由於[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]如果具有附屬 DLL,則從附屬 DLL 載入字串資源,因此每個附屬 DLL 可以包含不同的當地語系化子目錄名稱。 |
+| 排序優先權 | REG_DWORD | 設置排序優先順序以控制範本在「**新增新項目**」對話框中的顯示順序。 較大的排序優先順序值出現在範本清單中的較早位置。 |
 
-### <a name="registering-file-filters"></a>註冊檔案篩選
- （選擇性）您可以在提示輸入檔案名時，註冊 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用的篩選準則。 例如，[**開啟**檔案] 對話方塊的 [[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 篩選] 是：
+### <a name="registering-file-filters"></a>註冊檔案篩選器
+ 或者,您可以註冊在提示檔名時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用的篩選器。 例如,「[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]**開啟檔案」** 對話框的篩選器是:
 
- **視覺C#效果檔案（\* .cs、\* .resx、\* 設定、\*、\* .wsdl）;\* .cs、\* .resx、\* 設定、0、1 .wsdl）**
+ **可\*視化 C# 檔(.cs、.resx、.\*\*設置、.xsd、.wsdl);\* \*\*.cs,\*\*.resx,\*. 設置,\*.xsd, .wsdl)**
 
- 為了支援註冊多個篩選準則，每個篩選器都會在 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio \\ <*版本*> \Projects \\ {\<*ProjectGUID*>} \Filters 的其自有子機碼中註冊\\ <*子*機碼 >。 子機碼名稱是任意的; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 會忽略子機碼的名稱，並只使用其值。
+ 為了支援多個篩選器的註冊,每個\\<篩選器在HKEY_LOCAL_MACHINE\軟體\Microsoft_VisualStudio*Version*版本\\\<>_项目 [*ProjectGUID*>]\\<下>"下註冊自己的子*鍵*。 子鍵名稱是任意的;[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]忽略子鍵的名稱,只使用其值。
 
- 您可以藉由設定旗標來控制用來篩選的內容，如下表所示。 如果篩選器未設定任何旗標，則會在 [**加入現有專案**] 對話方塊和 [**開啟**檔案] 對話方塊中的通用篩選後列出，但不會用於 [檔案中**尋找**] 對話方塊。
+ 您可以通過設定標記來控制使用篩選器的上下文,如下表所示。 如果篩選器未設定任何標誌,它將在「**新增現有項目**」對話框和 **「打開檔案」** 對話框中的常用篩選器之後列出,但不會在「**在檔案中搜尋**」對話框中使用。
 
 ```
 [Projects\{ProjectGUID}\Filters\MyLanguageFilter]
@@ -82,43 +82,43 @@ ms.locfileid: "72724633"
 "SortPriority"=dword:00000064
 ```
 
-|[屬性]|輸入|描述|
+|名稱|類型|描述|
 |----------|----------|-----------------|
-|CommonFindFilesFilter|REG_DWORD|讓篩選準則成為 [檔案**中尋找**] 對話方塊中的其中一個通用篩選準則。 一般篩選準則會在篩選器清單中列出，然後篩選器才會標示為通用。|
-|CommonOpenFilesFilter|REG_DWORD|讓篩選準則成為 [**開啟**檔案] 對話方塊中的其中一個通用篩選準則。 一般篩選準則會在篩選器清單中列出，然後篩選器才會標示為通用。|
-|FindInFilesFilter|REG_DWORD|在 [檔案**中尋找**] 對話方塊中列出一般篩選器之後的篩選準則。|
-|NotOpenFileFilter|REG_DWORD|表示篩選準則不會用於 [**開啟**檔案] 對話方塊中。|
-|NotAddExistingItemFilter|REG_DWORD|表示篩選準則不會在 [**加入現有專案**] 對話方塊中使用。|
-|SortPriority|REG_DWORD|設定 SortPriority 以管理篩選器的顯示順序。 較大的 SortPriority 值會在較早的篩選清單中出現。|
+|常見搜尋檔案篩選器|REG_DWORD|使篩選器成為「**在檔案中搜尋**」對話框中的常見篩選器之一。 在篩選器未標記為公共篩選器之前,篩選器將列在篩選器清單中。|
+|常見開啟檔案篩選器|REG_DWORD|使篩選器成為 **「打開檔」** 對話框中常見的篩選器之一。 在篩選器未標記為公共篩選器之前,篩選器將列在篩選器清單中。|
+|尋找檔案篩選器|REG_DWORD|在「**在檔案中搜尋**」對話框中列出常見篩選器後篩選器。|
+|未開啟檔案篩選器|REG_DWORD|指示篩選器未在 **「打開檔」** 對話方塊中使用。|
+|未新增現有項目篩選器|REG_DWORD|指示篩選器未在 **「添加現有項目」** 對話方塊中使用。|
+|排序優先權|REG_DWORD|設置排序優先順序以控制篩選器的顯示順序。 較大的排序優先順序值出現在篩選器清單中的較早位置。|
 
 ## <a name="directory-structure"></a>目錄結構
- Vspackage 可以將範本檔案和資料夾放在本機或遠端磁片上的任何位置，只要該位置是透過整合式開發環境（IDE）註冊即可。 不過，為了方便組織，我們建議您在產品的安裝路徑底下採用下列目錄結構。
+ 只要位置是通過整合式開發環境 (IDE) 註冊,VS 包就可以將範本檔和資料夾放在本地或遠端磁碟上的任意位置。 但是,為了便於組織,我們建議在產品的安裝路徑下採用以下目錄結構。
 
- \Templates
+ *範本
 
- \Projects （包含專案範本）
+ *專案(包含項目範本)
 
- \Applications and
+ *應用
 
- \Components
+ *元件
 
  \ ...
 
- \ProjectItems （包含專案專案）
+ *專案專案(包含項目 )
 
- \Class
+ *類別
 
- \Form
+ *表格
 
- \Web 頁面
+ *網頁
 
- \HelperFiles （包含多檔案專案專案中所使用的檔案）
+ • 協助檔案(包含多檔案項目項目中使用的檔案)
 
- \WizardFiles
+ *精靈檔案
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)
-- [精靈](../../extensibility/internals/wizards.md)
+- [嚮導](../../extensibility/internals/wizards.md)
 - [當地語系化應用程式](../../ide/globalizing-and-localizing-applications.md)
 - [通常用來擴充專案的物件 CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

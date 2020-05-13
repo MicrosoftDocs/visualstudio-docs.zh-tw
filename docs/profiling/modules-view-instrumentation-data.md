@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f6449ad30edf11d3d315532cc33db2a79c14f90b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778527"
 ---
 # <a name="modules-view---instrumentation-data"></a>模組檢視 - 檢測資料
@@ -29,11 +29,11 @@ ms.locfileid: "74778527"
 |**名稱**|函式或模組的名稱。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
 |**呼叫次數**|呼叫此函式或模組的總次數。|
-|**原始程式檔**|含有這個函式定義的原始程式檔。|
+|**原始檔案**|含有這個函式定義的原始程式檔。|
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
-|**處理序 ID**|分析執行的處理序 ID (PID)。|
-|**處理序名稱**|模組或函式於其中執行的處理序名稱。|
+|**處理序識別碼**|分析執行的處理序 ID (PID)。|
+|**流程名稱**|模組或函式於其中執行的處理序名稱。|
 |**時間專有探查額外負荷**|因檢測造成此函式或模組的時間額外負荷。|
 |**時間內含探查額外負荷**|因檢測造成此函式或模組及其子函式的時間額外負荷。|
 
@@ -60,7 +60,7 @@ ms.locfileid: "74778527"
 |**最小功能專屬耗用 (Elapsed Exclusive) 時間**|-   對於函式，這是呼叫此模組或函式的最小功能專屬耗用時間。<br />-   對於模組，這是所有呼叫此模組中之函式的最小功能專屬耗用時間。|
 
 ## <a name="application-inclusive-values"></a>應用程式內含值
- 應用程式內含值表示函數在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含在子函式中花費的時間。
+ 應用程式內含值表示函式在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含在子函式中花費的時間。
 
 |資料行|描述|
 |------------|-----------------|
@@ -81,7 +81,7 @@ ms.locfileid: "74778527"
 |**最大應用程式專屬 (Application Exclusive) 時間**|-   對於函式，這是呼叫此函式的最大應用程式專屬時間。<br />-   對於模組，這是所有呼叫此模組中之函式的最大應用程式專屬時間。|
 |**最小應用程式專屬 (Application Exclusive) 時間**|-   對於函式，這是呼叫此模組或函式的最小應用程式專屬時間。<br />-   對於模組，這是所有呼叫此模組中之函式的最小應用程式專屬時間。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [模組檢視](../profiling/modules-view-sampling-data.md)
-- [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [模組視圖 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)

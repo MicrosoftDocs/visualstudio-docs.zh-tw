@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957227"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步驟 4：使用完整的 Flask Web 專案範本
 
-**上一步：[提供靜態檔案、新增頁面，然後使用範本繼承](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**上一個步驟：[提供靜態檔案、新增頁面，以及使用範本繼承](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 既然您已透過利用 Visual Studio 的「空白 Flask 應用程式專案」範本來建置應用程式以探索 Flask 的基本知識，現在便可輕鬆了解「Flask Web 專案」範本所產生更完整應用程式。
 
@@ -35,21 +35,21 @@ ms.locfileid: "62957227"
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>步驟 4-1：從範本建立專案
 
-1. 在 Visual Studio 中，移至 [方案總管]，在本教學課程稍早建立的 [LearningFlask] 方案上按一下滑鼠右鍵，然後選取 [新增] > [新增專案]。 (或者，如果您想要使用新的方案，請依序選取 [檔案] > [新增] > [專案])。
+1. 在 Visual Studio 中，轉到**解決方案資源管理器**，按右鍵本教程中較早創建的**學習法帕斯克**解決方案，然後選擇"**添加新** > **專案**"。 （或者，如果要使用新解決方案 **，請選擇"****檔** > **新專案** > "。
 
-1. 在 [新增專案] 對話方塊中，搜尋並選取 [Flask Web 專案] 範本，將專案命名為 "FlaskWeb"，然後選取 [確定]。
+1. 在新專案對話方塊中，搜索並選擇**Flask Web 專案**範本，調用專案"FlaskWeb"，然後選擇 **"確定**"。
 
-1. 由於該範本再次包含 *requirements.txt* 檔案，因此 Visual Studio 會詢問要在何處安裝這些相依性。 選擇 [安裝至虛擬環境] 選項，然後在 [新增虛擬環境] 對話方塊中，選取 [建立] 並接受預設值。
+1. 由於該範本再次包含 *requirements.txt* 檔案，因此 Visual Studio 會詢問要在何處安裝這些相依性。 選擇 [安裝至虛擬環境]**** 選項，然後在 [新增虛擬環境]**** 對話方塊中，選取 [建立]**** 並接受預設值。
 
-1. 在 Visual Studio 完成虛擬環境設定之後，將 **FlaskWeb** 專案設定為 Visual Studio 方案的預設專案，方法是在 [方案總管] 的該專案上按一下滑鼠右鍵，然後選取 [設定為啟始專案]。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
+1. 一旦 Visual Studio 完成虛擬環境的設置，通過將"**解決方案資源管理器**"中的該專案按右鍵並選擇 **"設置為啟動專案**"，將**FlaskWeb**專案設置為 Visual Studio 解決方案的預設值。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 
     ![將 FlaskWeb 專案顯示為啟始專案的 [方案總管]](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. 依序選取 [偵錯] > [開始偵錯] (**F5**)，或使用工具列上的 [網頁伺服器] 按鈕來執行伺服器：
+1. 選擇**調試** > **啟動調試**（**F5**） 或使用工具列上的**Web 服務器**按鈕運行伺服器：
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/flask/run-web-server-toolbar-button.png)
 
-1. 範本建立的應用程式有三個頁面，分別是 Home (首頁)、About (關於) 和 Contact (連絡)，您可以使用瀏覽列在它們之間來回瀏覽。 請花一兩分鐘的時間檢查應用程式的不同組件。 若要透過 [登入] 命令來驗證應用程式，請使用先前建立的進階使用者認證。
+1. 範本建立的應用程式有三個頁面，分別是 Home (首頁)、About (關於) 和 Contact (連絡)，您可以使用瀏覽列在它們之間來回瀏覽。 請花一兩分鐘的時間檢查應用程式的不同組件。 若要透過 [登入]**** 命令來驗證應用程式，請使用先前建立的進階使用者認證。
 
     ![Flask Web 專案應用程式的完整瀏覽器檢視](media/flask/step04-full-app-desktop-view.png)
 
@@ -59,7 +59,7 @@ ms.locfileid: "62957227"
 
 1. 您可以讓這個應用程式繼續執行，在接下來的各節中都會用到它。
 
-    如果您想停止應用程式並[認可對原始檔控制所做的變更](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)，請先開啟 [Team Explorer] 中的 [變更] 頁面，接著在虛擬環境的資料夾 (可能是 **env**) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]。
+    如果您想停止應用程式並[認可對原始檔控制所做的變更](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)，請先開啟 [Team Explorer]**** 中的 [變更]**** 頁面，接著在虛擬環境的資料夾 (可能是 **env**) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]****。
 
 ### <a name="examine-what-the-template-creates"></a>檢查範本建立的項目
 
@@ -69,20 +69,20 @@ ms.locfileid: "62957227"
   - *runserver.py*：可在開發伺服器上執行應用程式的指令碼。
   - *requirements.txt*：包含 Flask 0.x 的相依性。
 - *FlaskWeb* 資料夾包含所有應用程式檔案：
-  - *\_\_init.py\_\_* 會將應用程式程式碼標示為 Python 模組、建立 Flask 物件，以及匯入應用程式的檢視。
+  - init.py將應用代碼標記為 Python 模組，創建 Flask 物件，並導入應用的視圖。 * \_ \_ \_ *
   - *views.py* 包含用以轉譯頁面的程式碼。
   - *static* 資料夾包含名為 *content* (CSS 檔案)、*fonts* (字型檔案) 及 *scripts* (JavaScript 檔案) 的子資料夾。
   - *templates* 資料夾針對每個擴充 *layout.html* 的特定頁面，包含 *layout.html* 基底範本，以及 *about.html*、*contact.html* 和 *index.html*。
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>問題：Visual Studio 專案之間是否可以共用虛擬環境？
 
-回答：可以，不過這麼做的時候要注意到不同專案經過一段時間後可能會使用不同套件；因此，所共用虛擬環境必須針對使用該虛擬環境的所有專案，包含所有相關套件。
+答：可以，不過這麼做的時候要注意到不同專案經過一段時間後可能會使用不同的套件。因此，共用的虛擬環境必須針對使用該虛擬環境的所有專案，包含所有相關的套件。
 
 不過，若要使用現有的虛擬環境，請執行下列作業：
 
-1. 在 Visual Studio 中提示安裝相依性時，請選取 [我將自行安裝] 選項。
-1. 在 [方案總管] 中的 [Python 環境] 節點上按一下滑鼠右鍵，然後選取 [新增現有虛擬環境]。
-1. 瀏覽並選取包含虛擬環境的資料夾，然後選取 [確定]。
+1. 在 Visual Studio 中提示安裝相依性時，請選取 [我將自行安裝]**** 選項。
+1. 在 [方案總管]**** 中的 [Python 環境]**** 節點上按一下滑鼠右鍵，然後選取 [新增現有虛擬環境]****。
+1. 瀏覽並選取包含虛擬環境的資料夾，然後選取 [確定]****。
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>步驟 4-2：了解專案範本所建立的檢視和頁面範本
 
@@ -164,7 +164,7 @@ def about():
 
 為了啟用 Jade，專案範本會先在 *requirements.txt* 中包含 pyjade 套件。
 
-應用程式的 *\_\_init\_\_.py* 檔案會包含下行：
+應用的*\_\_\_\_init .py*檔包含一行
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
@@ -236,4 +236,4 @@ block content
 
 - [撰寫您的第一個 Flask 應用程式，第 4 部分 - 表單和一般檢視](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) \(英文\) (docs.djangoproject.com)
 - [GitHib 上的 Jade (文件)](https://github.com/liuliqiang/pyjade) \(英文\) (github.com)
-- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask) \(英文\)

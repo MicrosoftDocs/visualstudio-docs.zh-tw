@@ -1,5 +1,5 @@
 ---
-title: 提供對物件管理員中的符號清單公開 （expose) |Microsoft Docs
+title: 公開提供給物件管理器的符號清單 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,31 +9,31 @@ helpviewer_keywords:
 - lists, symbols for the object manager
 - symbols, exposing lists to the object manager
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8b9660fd1e59307b1ad576a72629feea5482433
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bb15b7d9b29c578a0acf43fd1aa9cfdea88e23ae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328788"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708080"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>HOW TO：公開 （expose) 至物件管理員程式庫所提供的符號清單
-符號瀏覽工具，**類別檢視**，**物件瀏覽器**，**呼叫瀏覽器**並**尋找符號結果**，傳遞至新資料的要求[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員。 物件管理員尋找適當的程式庫，並要求新的符號清單。 藉由提供要求的資料，以回應的程式庫[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件的管理員，透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員會呼叫方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面取得的資料，並使用它來填入，或更新的符號瀏覽工具的檢視。
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何:向物件管理員公開函式庫提供的符號清單
+符號瀏覽工具,**類別瀏覽器**,**呼叫瀏覽器**和**尋找符號結果**,將新資料的請求傳遞[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]給 物件管理器。**Object Browser** 物件管理員查找適當的庫並請求新的符號清單。 庫通過介面向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員提供請求的數據<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>來回應。 物件[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]管理員調用介面<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>中 的方法來獲取數據,並用它來填充或更新符號流覽工具的檢視。
 
- 叫用的工具、 節點已展開，或重新整理檢視時，程式庫可能會收到資料的要求。 第一次叫用的符號瀏覽工具時，物件管理員會要求要提供最上層清單的程式庫。 當使用者展開清單節點時，則程式庫會提供該節點下的子系清單。 每個物件管理員查詢包含感興趣的項目的索引。 若要顯示新的清單，物件管理員必須決定多少項目會在清單中，項目，其名稱、 存取範圍，以及其他屬性的類型。
+ 當調用工具、展開節點或刷新檢視時,庫可能會收到數據請求。 首次調用符號流覽工具時,物件管理員請求庫提供頂級清單。 當用戶展開清單節點時,庫會提供該節點下的子節點的清單。 每個物件管理器查詢都包含感興趣的項的索引。 要顯示新清單,物件管理員必須確定清單中的項數、項的類型、名稱、可訪問性和其他屬性。
 
 > [!NOTE]
-> 下列的 managed 程式碼範例示範如何提供透過實作的符號清單<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面。 物件管理員這個介面中呼叫的方法，並使用取得的資料填入，或更新的符號瀏覽工具。
+> 以下託管代碼示例演示如何通過實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面提供符號清單。 物件管理員呼叫此介面中的方法,並使用獲取的數據填充或更新符號流覽工具。
 >
-> 如需原生程式碼符號提供者實作，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>介面。
+> 對於本機代碼符號提供程式實現,請使用介面<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>。
 
-## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>物件管理員提供的符號清單
+## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>向物件管理員提供符號清單
 
-1. 取得的符號清單中的項目數目，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>方法。 下列範例會示範如何 object manager 取得資訊清單中的項目數。
+1. 通過實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>方法獲取符號清單中的項數。 下面的範例演示了物件管理員如何獲取有關清單中項數的資訊。
 
     ```vb
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()
@@ -55,7 +55,7 @@ ms.locfileid: "66328788"
 
     ```
 
-2. 取得類別目錄以及指定的清單項目的屬性的相關資訊，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>方法。 中指定的項目分類<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>列舉型別。 下列範例會示範物件管理員如何取得屬性的指定分類的項目。
+2. 通過實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>方法獲取有關給定清單項的類別和屬性的資訊。 項類別在枚舉中<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>指定。 下面的範例演示了物件管理員如何獲取給定類別的項屬性。
 
     ```vb
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer
@@ -150,7 +150,7 @@ ms.locfileid: "66328788"
 
     ```
 
-3. 取得指定的清單項目之文字表示，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>方法。 下列範例示範如何取得指定項目的完整名稱。
+3. 通過實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>方法獲取給定清單項的文本表示形式。 下面的示例演示如何獲取給定項的全名。
 
     ```vb
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer
@@ -168,7 +168,7 @@ ms.locfileid: "66328788"
 
     ```
 
-4. 取得指定的清單項目圖示的資訊，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>方法。 圖示代表的型別 （類別、 方法等等） 和協助工具 （私人、 公用，依此類推） 的清單項目。 下列範例示範如何取得根據指定的項目屬性圖示的資訊。
+4. 通過實現 方法獲取給定清單項<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>的 圖示資訊。 該圖示表示清單項的類型(類、方法等)和可訪問性(私有、公共等)。 下面的範例展示如何根據給定項屬性獲取圖示資訊。
 
     ```vb
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer
@@ -250,7 +250,7 @@ ms.locfileid: "66328788"
 
     ```
 
-5. 取得有關指定的清單項目是否可展開藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法。 下列範例示範如何取得在指定的項目是否可展開的資訊。
+5. 通過實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法獲取給定清單項是否可以擴展的資訊。 下面的範例示範如何獲取有關是否可以展開給定項的資訊。
 
     ```vb
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer
@@ -277,7 +277,7 @@ ms.locfileid: "66328788"
 
     ```
 
-6. 藉由實作取得子清單的指定的清單項目的符號<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>方法。 下列範例示範如何取得子清單的指定項目符號**呼叫**或是**的呼叫端**圖形。
+6. 通過實現方法獲取給定清單項的符號的<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>子清單。 下面的範例展示如何取得給定項的子符號清單,用於**呼叫**或**呼叫者**圖形。
 
     ```vb
     ' Call graph list.
@@ -466,6 +466,6 @@ ms.locfileid: "66328788"
 
 ## <a name="see-also"></a>另請參閱
 - [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)
-- [如何：使用物件管理員註冊程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [如何：識別文件庫中的符號](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
-- [舊版語言服務擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)
+- [如何:向物件管理員註冊庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [如何:識別庫中的符號](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+- [傳統語言服務可擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)

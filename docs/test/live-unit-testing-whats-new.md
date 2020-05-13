@@ -12,10 +12,10 @@ ms.workload:
 - dotnet
 monikerRange: vs-2017
 ms.openlocfilehash: 7f7ab0c257bfed4521e95d9da12eaa0b9e25a71e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114267"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Visual Studio 2017 中 Live Unit Testing 的新功能
@@ -26,7 +26,7 @@ ms.locfileid: "76114267"
 
 從 Visual Studio 2017 15.4 版開始，Live Unit Testing 包含數個區域的改善和增強功能：
 
-- **改善發現能力**. 對於不知道有 Live Unit Testing 功能的使用者，只要使用者開啟內含單元測試但未啟用 Live Unit Testing 的方案，Visual Studio IDE 就會顯示提及 Live Unit Testing 的金色列。 金色列中所呈現的資訊可讓使用者深入了解並啟用 Live Unit Testing。 不符合 Live Unit Testing 必要條件時，金色列也會顯示資訊。 它們包括：
+- **改善發現能力**. 對於不知道有 Live Unit Testing 功能的使用者，只要使用者開啟內含單元測試但未啟用 Live Unit Testing 的方案，Visual Studio IDE 就會顯示提及 Live Unit Testing 的金色列。 金色列中所呈現的資訊可讓使用者深入了解並啟用 Live Unit Testing。 不符合 Live Unit Testing 必要條件時，金色列也會顯示資訊。 其中包括：
 
   - 遺漏測試配接器。
   - 具有舊版測試配接器。
@@ -38,7 +38,7 @@ ms.locfileid: "76114267"
 
 - **可靠性和效能**：Live Unit Testing 現在確保系統可以進一步偵測尚未完成完全載入專案的時間，並避免 Live Unit Testing 損毀。 組建效能改善也可在系統知道專案檔中沒有任何變更的情況下，避免對 MSBuild 專案進行重新評估。
 
-- **其他使用者介面精簡**：按一下滑鼠右鍵手勢中令人混淆的 [Live Test Set – Include/Exclude] (即時測試集 - 包含/排除) 選項已重新命名為 [Live Unit Testing Include/Exclude] (Live Unit Testing 包含/排除)。 已移除 [測試] > [Live Unit Testing] 功能表上的 [Reset clean] \(全新重設\) 選項。 現在選取 [工具] > [選項] > [Live Unit Testing]，然後選取 [Delete Persisted Data] \(刪除持續性資料\) 即可予以存取。
+- **其他使用者介面精簡**：按一下滑鼠右鍵手勢中令人混淆的 [Live Test Set – Include/Exclude] (即時測試集 - 包含/排除)**** 選項已重新命名為 [Live Unit Testing Include/Exclude] (Live Unit Testing 包含/排除)****。 已移除 [測試]**** > [Live Unit Testing]**** 功能表上的 [Reset clean] \(全新重設\)**** 選項。 現在可以通過選擇 **"工具** > **選項** > **即時單元測試"** 和"**刪除持久資料**"來訪問它。
 
 ## <a name="version-153"></a>15.3 版本
 
@@ -56,7 +56,7 @@ ms.locfileid: "76114267"
 
 - 已將數個額外的可設定選項新增至 [工具]/[選項]/[Live Unit Testing]/[一般]。 您可以限制用於 Live Unit Testing 的記憶體。 您也可以針對開啟的方案，以指定保存 Live Unit Testing 資料的檔案路徑。
 
-- 已將數個額外的功能表項目新增至 [測試]/[Live Unit Testing] 的功能表列底下。 [重設清除] 會刪除保存資料並再次產生它。 [選項] 會跳至 [工具]/[選項]/[Live Unit Testing]/[一般]。
+- 已將數個額外的功能表項目新增至 [測試]/[Live Unit Testing] 的功能表列底下。 [重設清除]**** 會刪除保存資料並再次產生它。 [選項]**** 會跳至 [工具]/[選項]/[Live Unit Testing]/[一般]。
 
 - 您現在可以使用下列屬性，以在原始程式碼中指定要從 Live Unit Testing 排除已設定目標的測試方法：
 
@@ -64,7 +64,7 @@ ms.locfileid: "76114267"
   - 針對 NUnit：`[Category("SkipWhenLiveUnitTesting")]`
   - 針對 MSTest：`[TestCategory("SkipWhenLiveUnitTesting")]`
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Live Unit Testing 簡介](live-unit-testing-intro.md)
 - [Visual Studio 的 Live Unit Testing](live-unit-testing.md)

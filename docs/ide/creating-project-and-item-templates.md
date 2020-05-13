@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589756"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301948"
 ---
 # <a name="project-and-item-templates"></a>專案範本與項目範本
 
@@ -23,11 +23,11 @@ ms.locfileid: "75589756"
 
 ## <a name="visual-studio-templates"></a>Visual Studio 範本
 
-安裝 Visual Studio 時會安裝一些預先定義的專案範本和項目範本。 這些範本 (例如 **ASP.NET Web 應用程式**和**類別庫**範本) 可讓您在建立新專案時選擇。 項目範本 (例如程式碼檔案、XML 檔案、HTML 頁面和樣式表) 會顯示在 [新增項目] 對話方塊中。
+安裝 Visual Studio 時會安裝一些預先定義的專案範本和項目範本。 這些範本 (例如 **ASP.NET Web 應用程式**和**類別庫**範本) 可讓您在建立新專案時選擇。 項目範本 (例如程式碼檔案、XML 檔案、HTML 頁面和樣式表) 會顯示在 [新增項目]**** 對話方塊中。
 
 使用者可將這些範本當作起點開始建立專案，或擴充現有的專案。 專案範本提供特定專案類型所需的檔案、包含標準組件參考，並設定預設專案屬性和編譯器選項。 項目範本複雜多變，從有特定副檔名的單一空檔案，到具有虛設常式程式碼的多個原始程式碼檔案、設計工具資訊檔案和內嵌資源，都有可能。
 
-您可以使用已安裝範本、撰寫自己的自訂範本，或下載並使用社群所建立的範本。 如需詳細資訊，請參閱[如何：建立專案範本](../ide/how-to-create-project-templates.md)和[如何：建立項目範本](../ide/how-to-create-item-templates.md)。
+您可以使用已安裝範本、撰寫自己的自訂範本，或下載並使用社群所建立的範本。 有關詳細資訊，請參閱[如何：創建專案範本](../ide/how-to-create-project-templates.md)和[如何：創建專案範本](../ide/how-to-create-item-templates.md)。
 
 ## <a name="contents-of-a-template"></a>範本的內容
 
@@ -37,41 +37,41 @@ ms.locfileid: "75589756"
 
 ::: moniker range="vs-2017"
 
-- .vstemplate 檔案，包含從 [新增專案] 和 [新增項目] 視窗中從範本建立專案或項目以及顯示範本所需的中繼資料。
+- .vstemplate** 檔案，包含從 [新增專案]**** 和 [新增項目]**** 視窗中從範本建立專案或項目以及顯示範本所需的中繼資料。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- .vstemplate 檔案，包含從 [新增專案] 頁面或 [新增項目] 對話方塊中從範本建立專案或項目以及顯示範本所需的中繼資料。
+- .vstemplate** 檔案，包含從 [新增專案]**** 頁面或 [新增項目]**** 對話方塊中從範本建立專案或項目以及顯示範本所需的中繼資料。
 
 ::: moniker-end
 
    如需 *.vstemplate* 檔案的詳細資訊，請參閱[範本標籤](template-tags.md)和[範本參數](../ide/template-parameters.md)。
 
-當這些檔案壓縮成 .zip 檔案並放入正確的資料夾時，Visual Studio 會自動在下列位置顯示它們：
+當這些檔案壓縮成 .zip** 檔案並放入正確的資料夾時，Visual Studio 會自動在下列位置顯示它們：
 
 ::: moniker range="vs-2017"
 
-- 專案範本會出現在 [新增專案] 視窗。
+- 專案範本會出現在 [新增專案]**** 視窗。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- 專案範本會出現在 [建立新專案] 頁面。
+- 專案範本會出現在 [建立新專案]**** 頁面。
 
 ::: moniker-end
 
-- 項目範本會出現在 [新增項目] 視窗。
+- 項目範本會出現在 [新增項目]**** 視窗。
 
-如需範本資料夾的詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+有關範本資料夾的詳細資訊，請參閱[如何：查找和組織範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [如何：建立專案範本](../ide/how-to-create-project-templates.md)
-- [如何：建立項目範本](../ide/how-to-create-item-templates.md)
+- [如何：創建專案範本](../ide/how-to-create-project-templates.md)
+- [如何：創建專案範本](../ide/how-to-create-item-templates.md)
 - [範本標籤](template-tags.md)
 - [範本參數](../ide/template-parameters.md)
 - [自訂範本](../ide/customizing-project-and-item-templates.md)
-- [Visual Studio 範本中的 NuGet 套件](/nuget/visual-studio-extensibility/visual-studio-templates)
+- [視覺工作室範本中的 NuGet 包](/nuget/visual-studio-extensibility/visual-studio-templates)

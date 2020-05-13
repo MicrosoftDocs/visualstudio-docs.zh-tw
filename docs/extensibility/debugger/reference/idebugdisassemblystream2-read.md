@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Read |Microsoft Docs
+title: IDebugdisassemblystream2::閱讀 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::Read
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c74ed1de1d12cc7384ee8f7d27dad910c7b9c9d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4a4f5c0250405c2e2a0314b52c4cbc64d749fc0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310346"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732090"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
-讀取從目前的位置，在反組譯碼資料流中的指示。
+讀取從拆解流中的當前位置開始的指令。
 
 ## <a name="syntax"></a>語法
 
@@ -47,26 +47,26 @@ int Read( 
 
 ## <a name="parameters"></a>參數
 `dwInstructions`\
-[in]反組譯的指令數目。 此值也是最大長度`prgDisassembly`陣列。
+[在]要拆卸的說明數。 此值也是`prgDisassembly`數位的最大長度。
 
 `dwFields`\
-[in]從旗標的組合[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)列舉，指出欄位`prgDisassembly`要填寫。
+[在][DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)枚舉中的標誌的組合,指示要填寫`prgDisassembly`的 欄位。
 
 `pdwInstructionsRead`\
-[out]傳回實際解譯的指令的數目。
+[出]返回實際拆解的說明數。
 
 `prgDisassembly`\
-[out]陣列[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)會填入反組譯碼中，反組譯指示每一個結構的結構。 這個陣列的長度取決於`dwInstructions`參數。
+[出]一系列用拆解代碼填充[的拆解數據](../../../extensibility/debugger/reference/disassemblydata.md)結構,每個拆解指令一個結構。 此陣列的長度由`dwInstructions`參數決定。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 可取得指示目前的範圍中的可用的最大數目，請呼叫[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)方法。
+ 可透過調用[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)方法獲取當前作用網域中可用的最大指令數。
 
- 藉由呼叫可變更下一個指令會從讀取目前位置[搜尋](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)方法。
+ 可以通過調用[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)方法更改讀取下一個指令的當前位置。
 
- `DSF_OPERANDS_SYMBOLS`旗標可以加入至`DSF_OPERANDS`中的旗標`dwFields`參數來指出反組譯指示時，是否應使用符號名稱。
+ 可以將`DSF_OPERANDS_SYMBOLS`標誌添加到參數中`DSF_OPERANDS`的標誌`dwFields`中,以指示在拆解指令時應使用符號名稱。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

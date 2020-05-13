@@ -2,7 +2,7 @@
 title: Visual Studio 系統管理員指南
 titleSuffix: ''
 description: 深入了解如何在企業環境中部署 Visual Studio。
-ms.date: 06/02/2019
+ms.date: 03/09/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9f4b044cddee59254e0b4f5198e75e3fa774aab7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: bda9a73a7a1aabb2d288653ff4d7b20b1c40db8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114201"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79190280"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 系統管理員指南
 
@@ -40,7 +40,7 @@ ms.locfileid: "76114201"
 
 * 決定您的服務需求。
 
-  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 如需詳細資訊，請參閱[Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)頁面的「***企業和專業客戶的支援選項***」一節，以及[如何：在服務基準頁面上更新 Visual Studio](update-servicing-baseline.md) 。
+  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 有關詳細資訊，請參閱[Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)頁面中的 ***"企業和專業客戶支援"*** 部分，以及["如何在服務基準頁上更新 Visual Studio"。](update-servicing-baseline.md)
 
   如果您打算套用服務更新和累積的功能更新，您可以選擇最新版本。
 
@@ -62,7 +62,7 @@ ms.locfileid: "76114201"
 
 * 決定您的服務需求。
 
-  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 如需詳細資訊，請參閱[Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)頁面的***舊版 Visual Studio 的支援***一節，以及[如何：在服務基準頁面上更新 Visual Studio](update-servicing-baseline.md) 。
+  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 有關詳細資訊，請參閱[Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)頁面的 Visual Studio 舊***版本的支援部分***，以及["如何在服務基準頁上更新 Visual Studio"。](update-servicing-baseline.md)
 
   如果您打算套用服務更新和累積的功能更新，您可以選擇最新版本。
 
@@ -107,13 +107,21 @@ ms.locfileid: "76114201"
 
 ## <a name="step-4---deploy-updates"></a>步驟 4 - 部署更新
 
-* 定期執行您在步驟 1 所使用的命令來新增更新過的元件，以[使用 Visual Studio 最新更新來重新整理網路位置](update-a-network-installation-of-visual-studio.md?view=vs-2019)。
+* 通過定期運行步驟 1 中使用的命令來添加更新的元件，使用 Visual Studio[的最新更新刷新網路位置](update-a-network-installation-of-visual-studio.md?view=vs-2019)。
 
-  您可以使用更新指令碼來更新 Visual Studio。 若要這麼做，請使用 [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) 命令列參數。
+  您可以使用更新指令碼來更新 Visual Studio。 為此，請使用[`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019)命令列參數。
 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>步驟 5 - (選擇性) 使用 Visual Studio Tools
 
 我們提供數種工具來協助您[偵測和管理用戶端電腦上已安裝的 Visual Studio 執行個體](tools-for-managing-visual-studio-instances.md?view=vs-2019)。
+
+## <a name="advanced-configuration"></a>進階組態
+
+預設情況下，Visual Studio 安裝允許從錯誤清單 F1 和代碼連結在必應搜索中包含自訂類型。 您可以配置 Visual Studio 以禁用搜索機制，禁止通過按策略更改以下登錄機碼的值來包括任何自訂使用者類型：
+
+**"放置自訂類型 Bing 搜索" DWORD 0**
+
+註冊表位於私有註冊表配置單元的 [軟體]微軟[VisualStudio]16.0\{實例 Id}>Roslyn_\*內部_診斷目錄中。 有關如何打開註冊表配置單元的說明，請參閱[編輯 Visual Studio 實例的註冊表](tools-for-managing-visual-studio-instances.md?view=vs-2019#editing-the-registry-for-a-visual-studio-instance)。
 
 ::: moniker-end
 
@@ -146,23 +154,31 @@ ms.locfileid: "76114201"
 
 ## <a name="step-4---deploy-updates"></a>步驟 4 - 部署更新
 
-* 定期執行您在步驟 1 所使用的命令來新增更新過的元件，以[使用 Visual Studio 最新更新來重新整理網路位置](update-a-network-installation-of-visual-studio.md?view=vs-2017)。
+* 通過定期運行步驟 1 中使用的命令來添加更新的元件，使用 Visual Studio[的最新更新刷新網路位置](update-a-network-installation-of-visual-studio.md?view=vs-2017)。
 
-  您可以使用更新指令碼來更新 Visual Studio。 若要這麼做，請使用 [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) 命令列參數。
+  您可以使用更新指令碼來更新 Visual Studio。 為此，請使用[`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019)命令列參數。
 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>步驟 5 - (選擇性) 使用 Visual Studio Tools
 
 我們提供數種工具來協助您[偵測和管理用戶端電腦上已安裝的 Visual Studio 執行個體](tools-for-managing-visual-studio-instances.md?view=vs-2017)。
 
+## <a name="advanced-configuration"></a>進階組態
+
+預設情況下，Visual Studio 安裝允許從錯誤清單 F1 和代碼連結在必應搜索中包含自訂類型。 您可以配置 Visual Studio 以禁用搜索機制，禁止通過按策略更改以下登錄機碼的值來包括任何自訂使用者類型：
+
+**"放置自訂類型 Bing 搜索" DWORD 0**
+
+註冊表位於私有註冊表配置單元的 [軟體]微軟[VisualStudio]15.0\{實例 Id}>Roslyn_\*內部_診斷目錄中。 有關如何打開註冊表配置單元的說明，請參閱[編輯 Visual Studio 實例的註冊表](tools-for-managing-visual-studio-instances.md?view=vs-2017#editing-the-registry-for-a-visual-studio-instance)。
+
 ::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [命令列參數範例](command-line-parameter-examples.md)
 * [安裝 Visual Studio 離線安裝所需的憑證](install-certificates-for-visual-studio-offline.md)
 * [匯入或匯出安裝組態](import-export-installation-configurations.md)
 * [Visual Studio Setup Archives](https://devblogs.microsoft.com/setup/tag/vs2017/) (Visual Studio 安裝封存)
-* [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)
+* [視覺化工作室產品生命週期和服務](/visualstudio/releases/2019/servicing/)
 * [同步的自動載入設定](../extensibility/synchronously-autoloaded-extensions.md)

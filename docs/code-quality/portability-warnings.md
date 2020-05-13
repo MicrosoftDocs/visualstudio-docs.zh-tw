@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, portability warnings
 - warnings, portability
 ms.assetid: 902e859a-2153-4970-baaa-8a5b4a11806f
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61efbc2022b2c0cd60e005936e148bbaf1d900a4
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: f48cef7ffaf08fc26566fdd04bee15a3e3e1b85f
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091726"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167569"
 ---
 # <a name="portability-warnings"></a>可攜性警告
 可攜性警告支援跨不同作業系統的可攜性。

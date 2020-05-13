@@ -1,25 +1,25 @@
 ---
-title: Icon 元素 |Microsoft Docs
+title: 圖示元素 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Icon
 - Icon element (VSCT XML schema)
 ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd56391084788729c0f8439728f9afffd59da946
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf4f8a69e565620007fba4b9970ce96bb1513995
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311246"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710512"
 ---
-# <a name="icon-element"></a>Icon 元素
-Guid 屬性的圖示標記會定義點陣圖的 guid。 `id`屬性選取點陣圖區中的位置。 這是選擇性的項目。 如果這個項目不包含值**guidOfficeIcon:msotcidNoIcon**會隱含。
+# <a name="icon-element"></a>圖示元素
+圖示標記的 guid 屬性是已定義的點陣圖的 guid。 屬性`id`選擇點陣圖條中的槽。 這是選擇性的項目。 如果未包含此元素,則隱含了**guidOfficeIcon:msotcidNoIcon**的值。
 
 ## <a name="syntax"></a>語法
 
@@ -34,12 +34,12 @@ Guid 屬性的圖示標記會定義點陣圖的 guid。 `id`屬性選取點陣�
 
 |屬性|描述|
 |---------------|-----------------|
-|guid|必要項。 定義點陣圖的 guid。|
-|id|必要項。 選取的位置中的點陣圖區。|
+|guid|必要。 已定義的點陣圖的 guid。|
+|id|必要。 選擇點陣圖條中的插槽。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |無。|無。|
 
@@ -47,7 +47,7 @@ Guid 屬性的圖示標記會定義點陣圖的 guid。 `id`屬性選取點陣�
 
 |元素|描述|
 |-------------|-----------------|
-|[Buttons 元素](../extensibility/buttons-element.md)||
+|[按鈕項目](../extensibility/buttons-element.md)||
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

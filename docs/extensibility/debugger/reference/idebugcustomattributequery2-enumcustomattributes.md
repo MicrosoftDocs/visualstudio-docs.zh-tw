@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::EnumCustomAttributes |Microsoft Docs
+title: IDebug自定義屬性查詢2::枚舉屬性 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::EnumCustomAttributes
 ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc9cc9158939ac0cbd7cac482961e2078b8249ad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b00ead2236a36c2fa12e1ad154b9f853aa2224d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322237"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732593"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
-取得附加至這個欄位的所有自訂屬性的列舉值。
+獲取附加到此欄位的所有自定義屬性的枚舉器。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int EnumCustomAttributes(
 
 ## <a name="parameters"></a>參數
 `ppEnum`\
-[out]會傳回[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)物件，表示自訂屬性的清單; 如果沒有自訂屬性，否則會傳回 null 值。
+[出]返回表示自定義屬性清單的[IEnumDebugCustom 屬性](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)物件;否則,如果沒有自定義屬性,則返回 null 值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，傳回 S_OK 或 S_FALSE，如果此欄位上沒有自訂屬性。 否則，傳回錯誤碼;
+ 如果成功,則返回S_OK或S_FALSE如果此欄位上沒有自定義屬性。 否則,返回錯誤代碼;否則,將返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 欄位可以有多個自訂屬性。
+ 欄位可以有多個自定義屬性。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

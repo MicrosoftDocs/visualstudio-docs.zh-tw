@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName | Microsoft Docs
+title: IDebugCoreServer3::獲取伺服器友好名稱 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::GetServerFriendlyName
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba0675038a495a91755794d7e43ad57cfc7d438a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eec30783041a1240d8f85815c06f4ca60729a484
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326945"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732892"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
-擷取伺服器的易記名稱。
+檢索伺服器的友好名稱。
 
 ## <a name="syntax"></a>語法
 
@@ -41,19 +41,19 @@ int GetServerFriendlyName(
 
 ## <a name="parameters"></a>參數
 `pbstrName`\
-[out]傳回伺服器的易記名稱。
+[出]返回伺服器的友好名稱。
 
 > [!NOTE]
-> 呼叫端負責釋放字串。
+> 調用方負責釋放字串。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`，否則會傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 若為使用者啟動的伺服器，這個方法所傳回的名稱會是伺服器的完整名稱。 若為自動啟動伺服器，名稱會是該機器的伺服器上執行。
+ 對於使用者啟動的伺服器,此方法返回的名稱是伺服器的全名。 對於自動啟動的伺服器,名稱是伺服器運行的計算機的名稱。
 
- 機器導向名稱時，請呼叫[GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)方法。
+ 對於面向電腦的名稱,調用[GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
-- [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)
+- [取得伺服器名稱](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

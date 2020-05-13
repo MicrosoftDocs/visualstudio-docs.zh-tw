@@ -1,20 +1,20 @@
 ---
-title: TargetPlatformName 元素（Visual Studio 範本） |Microsoft Docs
+title: 目標平臺名稱元素(可視化工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f22fb5d94b0f8c5147f014abdb973a23b1b9e24e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718938"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699272"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 項目 (Visual Studio 樣板)
 指定專案範本的目標平台。 這個項目用來指定用於建立 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式的專案範本。
@@ -28,22 +28,22 @@ ms.locfileid: "72718938"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和項目
- 下列各節描述屬性、子項目和父項目。
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
  無。
 
-### <a name="child-elements"></a>子項目
+### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|指定專案範本的目標作業系統版本。|
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] 或 [加入新項目] 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
@@ -64,6 +64,6 @@ ms.locfileid: "72718938"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

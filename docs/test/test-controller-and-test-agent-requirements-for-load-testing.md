@@ -1,5 +1,5 @@
 ---
-title: 負載測試的測試控制器和測試代理程式需求
+title: 負載測試的 Test Controller 和 Test Agent 需求
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588638"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>負載測試的測試控制器和測試代理程式需求
@@ -22,7 +22,7 @@ ms.locfileid: "75588638"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="hardware-and-software-requirements"></a>硬體與軟體需求
+## <a name="hardware-and-software-requirements"></a>硬體和軟體需求
 
 測試控制器和測試代理程式電腦都有特定的硬體和軟體需求。 此外，如果您想要跨多個語言部署測試控制器和測試代理程式電腦，就必須規劃如何支援這些語言。
 
@@ -30,7 +30,7 @@ ms.locfileid: "75588638"
 
 下表顯示部署測試控制器和測試代理程式的建議硬體需求。
 
-|**組態**|**元件**|**CPU**|**HD**|**記憶體**|
+|**組態**|**元件**|**Cpu**|**HD**|**記憶體**|
 |-|-------------------|-|------------|-|
 |少於 500 位虛擬使用者|測試代理程式|2.6 GHz|10 GB|2 GB|
 |少於 1000 位虛擬使用者|測試代理程式|雙重處理器 2.6 GHz|10 GB|2 GB|
@@ -39,7 +39,7 @@ ms.locfileid: "75588638"
 |N x 30 部電腦於測試環境中。 這包括要測試的代理程式和伺服器。|測試控制器|N 2.6 GHz 處理器|||
 
 > [!NOTE]
-> 虛擬使用者的人數會隨著每個測試而大不相同。 造成這個變異的主要原因是「考慮時間」或使用者延遲的變異。 如需詳細資訊，請參閱[編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)。 在負載測試中，Web 測試一般都比單元測試更為有效，而且可產生更多的負載。 上表數字的有效情況：對一般 Web 應用程式執行 Web 測試時，搭配 3-5 秒的考慮時間。
+> 虛擬使用者的人數會隨著每個測試而大不相同。 造成這個變異的主要原因是「考慮時間」** 或使用者延遲的變異。 如需詳細資訊，請參閱[編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)。 在負載測試中，Web 測試一般都比單元測試更為有效，而且可產生更多的負載。 上表數字的有效情況：對一般 Web 應用程式執行 Web 測試時，搭配 3-5 秒的考慮時間。
 
 這裡提供的方針可做為硬體規劃的一般指引。 測試資料的數量和測試代理程式的數目會使測試效能產生極大的差異。 對測試代理程式而言，CPU 速度和可用的記憶體將會限制測試負載。 此外，視測試代理程式的數目和測試的相關資料數量而定，測試控制器會需要更大量的資源。
 
@@ -59,6 +59,6 @@ ms.locfileid: "75588638"
 
 您可以監視代理程式電腦來判定它們的資源需求，方法為觀察在測試期間執行和縮放的 *QTAgent\*.exe* 處理序。 *QTAgent\*.exe* 處理序上最常見的瓶頸為 CPU 使用率。 如果 CPU 使用率持續保持在九十幾，則表示代理程式的負載相當重。 次常見的瓶頸為記憶體使用量。 針對需求測試，監視這些資源有助於判定是否應增加電腦資源，或是以不同方式分散測試。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)

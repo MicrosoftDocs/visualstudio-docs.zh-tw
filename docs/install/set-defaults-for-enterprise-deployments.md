@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d03912eecd7b3cfa3563fc095453fee3ddf9b163
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114290"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>設定 Visual Studio 企業部署的預設值
@@ -50,7 +50,7 @@ ms.locfileid: "76114290"
 
 您可以設定下列登錄值：
 
-| **Name** | **Type** | **Default** | **描述** |
+| **名稱** | **類型** | **預設** | **描述** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | 儲存套件資訊清單和套件承載 (後者為選擇性) 的目錄。 如需詳細資訊，請參閱[停用或移動套件快取](disable-or-move-the-package-cache.md)頁面。 |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | 保留套件承載，即使已安裝它們。 您可以隨時變更該值。 停用原則將移除您所修復或修改之執行個體的任何已快取套件承載。 如需詳細資訊，請參閱[停用或移動套件快取](disable-or-move-the-package-cache.md)頁面。 |
@@ -63,8 +63,8 @@ ms.locfileid: "76114290"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [安裝 Visual Studio](install-visual-studio.md)
+- [安裝視覺化工作室](install-visual-studio.md)
 - [停用或移動套件快取](disable-or-move-the-package-cache.md)
-- [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [使用命令列參數安裝視覺化工作室](use-command-line-parameters-to-install-visual-studio.md)

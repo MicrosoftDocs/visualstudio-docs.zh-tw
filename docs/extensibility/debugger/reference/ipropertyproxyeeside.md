@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide | Microsoft Docs
+title: IProperty代理Eeside |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide interface
 ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6528b146ad3128dd880e594b25ebb5df88bb8f2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c89cecbf22091a45e31c307c5b523ac8aa4c924e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353446"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714851"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
-這個介面會提供方法來檢視相關聯的物件上的資料。 這個介面是支援的類型視覺化檢視的一部分。
+此介面提供查看關聯對象上的數據的方法。 此介面是類型可視化器支援的一部分。
 
 ## <a name="syntax"></a>語法
 
@@ -28,33 +28,33 @@ ms.locfileid: "66353446"
 IPropertyProxyEESide : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 運算式評估工具會實作這個介面，以支援類型視覺化檢視。
+## <a name="notes-for-implementers"></a>實施者說明
+ 運算式賦值器實現此介面以支援類型可視化器。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 呼叫[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)來取得這個介面。 呼叫[QueryInterface](/cpp/atl/queryinterface)上[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面，以取得[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)介面。
+## <a name="notes-for-callers"></a>通話備註
+ 調用[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)以獲取此介面。 在[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面上調使用[查詢介面](/cpp/atl/queryinterface)以取得[IPropertyProxy 提供程式介面](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)。
 
-## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下列方法會實作此介面：
+## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
+ 以下方法由此介面實現:
 
 |方法|描述|
 |------------|-----------------|
-|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|初始化資料來源提供者，以便您可以存取物件的資料。|
-|[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|擷取物件的組件的相關資訊。|
-|[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|取得物件的初始資料。|
-|[CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)|建立的現有的資料存放區的複本。|
-|[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|建立現有的資料儲存體的參考。|
-|[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|擷取包含這個物件的組件的內容中的特定組件相關資訊。|
+|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|初始化資料來源提供者,以便可以存取物件資料。|
+|[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|檢索有關物件程序集的資訊。|
+|[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|獲取對象的初始數據。|
+|[CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)|建立現有資料存儲的複本。|
+|[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|創建對現有資料存儲的引用。|
+|[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|檢索包含此物件的程式集上下文中的特定程式集的資訊。|
 
 ## <a name="remarks"></a>備註
- 類型視覺化檢視會使用此介面來存取這個介面是一部分的物件相關聯的值。 透過存取的資料[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)介面，可提供資料的唯讀檢視。
+ 類型可視化工具使用此介面訪問與此介面所參與的物件關聯的值。 數據通過[IEEDataStorage介面](../../../extensibility/debugger/reference/ieedatastorage.md)進行訪問,該介面提供數據的唯讀檢視。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

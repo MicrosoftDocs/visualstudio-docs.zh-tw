@@ -1,5 +1,5 @@
 ---
-title: 升級自訂專案 |Microsoft Docs
+title: 升級自訂項目 |微軟文件
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
 manager: jillfra
-ms.openlocfilehash: 5046a35cbc681ede4aff85023feeccd71a61b5b2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c91013e7d5650e82fd9e5f6e39e28c4609e4fbfe
+ms.sourcegitcommit: c1339f64fbeee6f17bf80fedea81afc8dac40dc0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693831"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82037203"
 ---
 # <a name="upgrading-custom-projects"></a>升級自訂專案
-若您變更保存於產品不同 Visual Studio 版本間的專案檔資訊，則需要支援將舊版專案檔升級為新版。 若要支援升級，可讓您參與**Visual Studio 轉換精靈**，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>介面。 此介面包含僅適用於複本升級的機制。 專案升級會在解決方案開啟時發生。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 介面應由 Project Factory 實作，或至少從 Project Factory 取得。  
+若您變更保存於產品不同 Visual Studio 版本間的專案檔資訊，則需要支援將舊版專案檔升級為新版。 要支援升級,允許您參與**可視化工作室轉換嚮導**<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>,實現 該介面。 此介面包含僅適用於複本升級的機制。 專案升級會在解決方案開啟時發生。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 介面應由 Project Factory 實作，或至少從 Project Factory 取得。  
   
  使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 介面的舊機制仍受支援，但就概念而言，則是在專案開啟時升級專案系統。 因此即使已呼叫或實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 介面，<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 介面仍是由[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 環境呼叫。 此方法可讓您使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 只實作升級的複本與專案部分，並委派 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 介面就地完成其餘的工作 (可能在新的位置)。  
   
- 實作範例<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>，請參閱 < [VSSDK 範例](../misc/vssdk-samples.md)。  
+ 有關<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>的 執行例,請參閱[VSSDK 範例](../misc/vssdk-samples.md)。  
   
  下列情節會伴隨專案升級發生：  
   
@@ -56,11 +56,11 @@ ms.locfileid: "65693831"
 6. <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> 介面的用途是實作任何需要在專案升級時發生的檔案升級種類。 此介面並非從 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 呼叫，但會用作升級專案系統內檔案的機制，而主要專案系統可能不會直接察覺到。 比方說，若處理編譯器相關檔案和內容的開發小組與處理其餘專案系統的開發小組不同，就會發生此狀況。  
   
 ## <a name="ivsprojectupgrade-implementation"></a>IVsProjectUpgrade 實作  
- 如果您的專案系統會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>，它不能參與**Visual Studio 轉換精靈**。 不過，即使您實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 介面，仍可將檔案升級委派給 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 實作。  
+ 如果項目系統僅實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>,則無法參與**可視化工作室轉換精靈**。 不過，即使您實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 介面，仍可將檔案升級委派給 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 實作。  
   
 #### <a name="to-implement-ivsprojectupgrade"></a>實作 IVsProjectUpgrade  
   
-1. 當使用者嘗試開啟專案時，環境會在專案開啟後、使用者可對專案進行任何動作前，呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 方法 若已提示使用者升級解決方案，則會將 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> 旗標傳入 `grfUpgradeFlags` 參數。 如果使用者直接開啟專案，這類可藉由使用**加入現有專案**命令，然後在<xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS>旗標不會傳遞，且專案需提示使用者進行升級。  
+1. 當使用者嘗試開啟專案時，環境會在專案開啟後、使用者可對專案進行任何動作前，呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 方法 若已提示使用者升級解決方案，則會將 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> 旗標傳入 `grfUpgradeFlags` 參數。 如果使用者直接打開專案(例如使用 **"添加現有專案"** 命令),則<xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS>不會傳遞 標誌,並且專案需要提示使用者升級。  
   
 2. 為了回應 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 呼叫，專案必須評估專案檔是否已升級。 若專案不需要將專案類型升級至新版，則可以只傳回 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 旗標。  
   
@@ -98,7 +98,7 @@ ms.locfileid: "65693831"
   
 - 若您處理自己的專案重新載入，則環境會呼叫您的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> (VSITEMID_ROOT) 實作。 當您收到此呼叫時，請重新載入專案的第一個執行個體 (Project1)，並繼續升級專案檔。 若您為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>) 傳回 `true`，環境便知道您會處理自己的專案重新載入。  
   
-- 若您未處理自己的專案重新載入，則為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>) 傳回 `false`。 在此情況下前, <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>([QEF_ForceEdit_NoPrompting](assetId:///T:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags?qualifyHint=False&autoUpgrade=True)， [QEF_DisallowInMemoryEdits](assetId:///T:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags?qualifyHint=False&autoUpgrade=True)，) 傳回時，環境就會建立另一個新專案，例如 Project2 執行個體為如下所示：  
+- 若您未處理自己的專案重新載入，則為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>) 傳回 `false`。 在這種情況下,在返回<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>[(QEF_ForceEdit_NoPrompting,QEF_DisallowInMemoryEdits](/dotnet/api/microsoft.visualstudio.shell.interop.tagvsqueryeditflags))之前,環境將創建另一個新的專案實例,例如 Project2,如下[QEF_DisallowInMemoryEdits](/dotnet/api/microsoft.visualstudio.shell.interop.tagvsqueryeditflags)所示:  
   
   1. 環境對您的第一個專案物件 (Project1) 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A>，讓此物件處於非使用中狀態。  
   
@@ -109,7 +109,7 @@ ms.locfileid: "65693831"
   4. 環境第二次呼叫 `IVsProjectUpgrade::UpgradeProject` ，以判斷是否應升級專案物件。 不過，此呼叫會在專案新的第二個執行個體 (Project2) 執行。 此為在解決方案中開啟的專案。  
   
       > [!NOTE]
-      > 您的第一個專案執行個體 (Project1) 處於非使用中狀態，因此必須從 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 實作的第一個呼叫傳回 <xref:Microsoft.VisualStudio.VSConstants.S_OK>。 請參閱[基本專案](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36)實作`IVsProjectUpgrade::UpgradeProject`。  
+      > 您的第一個專案執行個體 (Project1) 處於非使用中狀態，因此必須從 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 實作的第一個呼叫傳回 <xref:Microsoft.VisualStudio.VSConstants.S_OK>。 有關`IVsProjectUpgrade::UpgradeProject`的 實作,請參閱[基本專案](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36)。  
   
   5. 您呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>，並傳入 `rgfQueryEdit` 參數的 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> 值。  
   
@@ -118,6 +118,6 @@ ms.locfileid: "65693831"
   若您無法升級，請從 `IVsProjectUpgrade::UpgradeProject` 傳回 <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>。 若不需要升級或您選擇不升級，請將 `IVsProjectUpgrade::UpgradeProject` 呼叫視為無作業。 若您傳回 <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>，預留位置節點就會加入專案的解決方案中。  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 轉換精靈](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
- [升級專案項目](../misc/upgrading-project-items.md)   
+ [視覺化工作室轉換精靈](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [升級項目項目](../misc/upgrading-project-items.md)   
  [專案](../extensibility/internals/projects.md)

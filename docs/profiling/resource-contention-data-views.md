@@ -13,21 +13,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771526"
 ---
 # <a name="resource-contention-data-views"></a>資源爭用資料檢視
 本節包含程式碼剖析工具資料檔案的檢視與報告，而此檔案含有執行緒爭用分析資料。
 
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
 - [摘要檢視 - 分析爭用資料](../profiling/resource-contention-data-views.md)
 
  顯示分析資料的圖形化時間軸，並列出參與最多封鎖事件的函式和資源。
 
-- [呼叫樹狀圖檢視](../profiling/call-tree-view-contention-data.md)
+- [調用樹狀檢視](../profiling/call-tree-view-contention-data.md)
 
  顯示階層樹狀結構，表示執行的分析中，函式的執行路徑和資源爭用資料。
 
@@ -67,7 +67,7 @@ ms.locfileid: "74771526"
 
  按處理序和執行緒列出資源爭用。
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 - [函式詳細資料檢視](../profiling/function-details-view.md)
 
  顯示選取的函式及所呼叫函式 (由該所選函式呼叫的函式) 之間關聯性的圖形化圖表。

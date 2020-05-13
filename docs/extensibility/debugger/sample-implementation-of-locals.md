@@ -1,64 +1,64 @@
 ---
-title: 範例實作的區域變數 |Microsoft Docs
+title: 局部變數的樣本實施 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], local variables
 - expression evaluation, local variables
 ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c65ed0e3def028e710255d08ee1fe40080bfde5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6b70e0f9091d40ed6b5fc44934606f42ccd84b21
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315021"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713078"
 ---
-# <a name="sample-implementation-of-locals"></a>區域變數的範例實作
+# <a name="sample-implementation-of-locals"></a>部份變數的樣本實作
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 以下是如何 Visual Studio 取得區域變數方法從運算式評估工具 (EE) 的概觀：
+ 以下是 Visual Studio 如何從運算式賦值器 (EE) 取得方法的局部變數的概述:
 
-1. Visual Studio 會呼叫偵錯引擎 (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)若要取得[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)代表堆疊框架，包括區域變數的所有屬性的物件。
+1. Visual Studio 調用調試引擎的 (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)獲取[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)物件,該物件表示堆疊幀的所有屬性,包括局部變數。
 
-2. `IDebugStackFrame2::GetDebugProperty` 呼叫[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)以取得說明的方法，在其中發生中斷點的物件。 DE 提供符號提供者 ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md))、 地址 ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md))，並繫結器 ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md))。
+2. `IDebugStackFrame2::GetDebugProperty`調用[GetMethod Property](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)獲取描述斷點發生方法的物件。 DE 提供符號提供者 ([IDebugSymbolProvider),](../../extensibility/debugger/reference/idebugsymbolprovider.md)位址 ([IDebugAddress)](../../extensibility/debugger/reference/idebugaddress.md)與活頁夾 ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).
 
-3. `IDebugExpressionEvaluator::GetMethodProperty` 呼叫[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)與提供`IDebugAddress`物件來取得[IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)表示包含指定的位址的方法。
+3. `IDebugExpressionEvaluator::GetMethodProperty`使用提供`IDebugAddress`的物件調用[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)以獲取表示包含指定位址的方法的[IDebugContainerField。](../../extensibility/debugger/reference/idebugcontainerfield.md)
 
-4. `IDebugContainerField`介面中查詢[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)介面。 這是此介面可存取方法的區域變數。
+4. 查詢`IDebugContainerField` [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)介面的介面。 正是這個介面提供了對方法的局部變數的訪問。
 
-5. `IDebugExpressionEvaluator::GetMethodProperty` 具現化類別 (稱為`CFieldProperty`範例中) 執行`IDebugProperty2`介面代表方法的區域變數。 `IDebugMethodField`物件會置於這`CFieldProperty`物件連同`IDebugSymbolProvider`， `IDebugAddress`，和`IDebugBinder`物件。
+5. `IDebugExpressionEvaluator::GetMethodProperty`實例化運行`IDebugProperty2`介面以表示方法`CFieldProperty`的 局部變數的類(在示例中調用)。 物件`IDebugMethodField``CFieldProperty``IDebugSymbolProvider`與`IDebugAddress`、`IDebugBinder`物件一起放置在此物件中。
 
-6. 當`CFieldProperty`初始化物件時， [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md)上呼叫`IDebugMethodField`若要取得的物件[FIELD_INFO](../../extensibility/debugger/reference/field-info.md)結構，其中包含可顯示資訊的方法本身。
+6. 初始化`CFieldProperty`物件時`IDebugMethodField`, 在物件上調用[GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md)以取得有關方法本身的所有可顯示資訊[FIELD_INFO](../../extensibility/debugger/reference/field-info.md)結構。
 
-7. `IDebugExpressionEvaluator::GetMethodProperty` 會傳回`CFieldProperty`物件做為`IDebugProperty2`物件。
+7. `IDebugExpressionEvaluator::GetMethodProperty`將`CFieldProperty`物件為物件`IDebugProperty2`傳回 。
 
-8. Visual Studio 呼叫[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)針對傳回`IDebugProperty2`篩選條件的物件`guidFilterLocalsPlusArgs`，就會傳回[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件，包含方法的區域變數。 這個列舉型別會填入藉由呼叫[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)並[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)。
+8. Visual Studio 使用篩選器`IDebugProperty2`在返回 的物件上調用[Enum](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)`guidFilterLocalsPlusArgs`兒童 ,該篩選器 返回包含該方法的局部變數的[IEnum DebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件。 此枚舉通過調用[枚舉本地變數](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)和[枚舉參數](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)來填充。
 
-9. Visual Studio 呼叫[下一步](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)若要取得[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)每個本機的結構。 此結構包含一個指向`IDebugProperty2`本機介面。
+9. 可視化工作室調用[下一個](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)獲取每個本地[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)結構。 此結構包含指向本地`IDebugProperty2`介面的指標。
 
-10. Visual Studio 呼叫[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)的每個本機，以取得區域的名稱、 值和型別。 這項資訊會顯示在**區域變數**視窗。
+10. Visual Studio 為每個本地呼叫[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)以獲取本地名稱、值和類型。 此資訊將顯示在 **「局部變數」** 視窗中。
 
 ## <a name="in-this-section"></a>本節內容
- [實作 GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)說明的實作[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)。
+ [實現 GetMethod 屬性](../../extensibility/debugger/implementing-getmethodproperty.md)描述[GetMethod Property](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)的實現。
 
- [列舉區域變數](../../extensibility/debugger/enumerating-locals.md)描述如何偵錯引擎 (DE) 會呼叫列舉區域變數或引數。
+ [列舉局部變數](../../extensibility/debugger/enumerating-locals.md)描述調試引擎 (DE) 如何呼叫枚舉本地變數或參數。
 
- [取得本機屬性](../../extensibility/debugger/getting-local-properties.md)描述 DE 會呼叫，以取得名稱、 類型和值的一或多個區域變數的方式。
+ [取得本地端屬性](../../extensibility/debugger/getting-local-properties.md)描述 DE 如何呼叫以獲取一個或多個局部變數的名稱、類型和值。
 
- [取得本機值](../../extensibility/debugger/getting-local-values.md)討論取得 local，這需要服務的評估內容所指定的繫結器物件的值。
+ [取得本地端值](../../extensibility/debugger/getting-local-values.md)討論獲取本地值,這需要計算上下文提供的活頁夾物件的服務。
 
- [評估區域變數](../../extensibility/debugger/evaluating-locals.md)說明評估區域變數的方式。
+ [評估本地人](../../extensibility/debugger/evaluating-locals.md)解釋如何評估局部變數。
 
 ## <a name="related-sections"></a>相關章節
- [評估內容](../../extensibility/debugger/evaluation-context.md)提供 DE 呼叫運算式評估工具 (EE) 時所傳遞的引數。
+ [評估上下文](../../extensibility/debugger/evaluation-context.md)提供 DE 調用表示式賦值器 (EE) 時傳遞的參數。
 
- [MyCEE 範例](https://msdn.microsoft.com/library/624a018b-9179-402f-9d48-3aec87b48f4f)示範建立 MyC 語言的運算式評估工具的其中一個實作方法。
+ [MyCEE 樣本](https://msdn.microsoft.com/library/624a018b-9179-402f-9d48-3aec87b48f4f)演示為 MyC 語言創建表達式賦值器的一種實現方法。
 
 ## <a name="see-also"></a>另請參閱
-- [顯示區域變數](../../extensibility/debugger/displaying-locals.md)
+- [顯示本地變數](../../extensibility/debugger/displaying-locals.md)

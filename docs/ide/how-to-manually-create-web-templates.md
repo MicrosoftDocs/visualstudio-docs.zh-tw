@@ -11,18 +11,18 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 245b20dd9cad465129d6c79c38e53b6379c2c09c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591004"
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手動建立網站範本
 
-建立網站範本與建立其他種類的範本不同。 因為 Web 專案範本出現在 [加入新網站] 對話方塊中，並且依程式語言分類 Web 專案項目，所以 *vstemplate* 檔案必須將範本指定為網站範本，並識別程式設計語言。
+建立網站範本與建立其他種類的範本不同。 由於 Web 專案範本顯示在 **"添加新網站"** 對話方塊中，並且 Web 專案項按程式設計語言進行分類，*因此 vstemplate*檔必須指定範本為 Web 範本並標識程式設計語言。
 
 > [!NOTE]
-> 網站範本必須包含空的 *webproj* 檔案，而且 *.vstemplate* 檔案必須在 `Project` 元素的 `File` 屬性中參考它。 雖然 Web 專案不需要 *.proj* 專案檔，但網站範本要正確運作就必須建立此虛設常式檔案。
+> Web 範本必須包含空 *.webproj*檔，並且必須在元素`File`屬性中的*vstemplate*檔中引用該檔。 `Project` 雖然 Web 專案不需要 *.proj* 專案檔，但網站範本要正確運作就必須建立此虛設常式檔案。
 
 ## <a name="to-manually-create-a-web-template"></a>手動建立網站範本
 
@@ -30,11 +30,11 @@ ms.locfileid: "75591004"
 
 2. 修改或刪除專案中的檔案，或將新檔案新增至專案。
 
-3. 在與專案相同的目錄中，使用 *vstemplate* 副檔名來建立並儲存 XML 檔案。 在 Visual Studio 中，請不要將它新增至專案。
+3. 創建 XML 檔，並將其與*vstemplate*檔案名副檔名一起保存在與專案相同的目錄中。 在 Visual Studio 中，請不要將它新增至專案。
 
-4. 編輯 *vstemplate* XML 檔案，以提供專案範本中繼資料。 如需詳細資訊，請參閱[後續範例](#example)。
+4. 編輯*vstemplate* XML 檔以提供專案範本中繼資料。 如需詳細資訊，請參閱[後續範例](#example)。
 
-5. 找出 *vstemplate* 檔案中的 `ProjectType` 元素，並將文字值設為 `Web`。
+5. 在`ProjectType` *vstemplate*檔中查找元素，並將文本值設置為`Web`。
 
 6. 在 `ProjectType` 項目後面，新增 `ProjectSubType` 項目，並將文字值設為範本的程式設計語言。 程式設計語言可以是下列其中一個值：
 
@@ -52,13 +52,13 @@ ms.locfileid: "75591004"
      </TemplateData>
      ```
 
-7. 在包含 *vstemplate* 檔案的範本中選取檔案，並以滑鼠右鍵按一下選取項目，選擇 [傳送到] > [壓縮的 (zipped) 資料夾]。 檔案即會壓縮成 *.zip* 檔案。
+7. 選擇範本中的檔（包括*vstemplate*檔），按右鍵所選內容，然後選擇"**發送到** > **壓縮（壓縮）"資料夾**。 檔被壓縮到 *.zip*檔中。
 
-8. 將 *.zip* 範本檔放在 Visual Studio 專案範本目錄中。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<版本\>\ProjectTemplates*。
+8. 將 *.zip*範本檔放在視覺化工作室專案範本目錄中。 預設情況下，此目錄是 *%USERPROFILE%%*文檔_視覺\<工作室\>版本 \ProjectTemplates*。
 
 ## <a name="example"></a>範例
 
-下列範例示範 Web 專案範本的基本 *vstemplate* 檔案：
+下面的示例顯示了 Web 專案範本的基本*vstemplate*檔：
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Project"
@@ -81,7 +81,7 @@ ms.locfileid: "75591004"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
+- [創建專案和專案範本](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)

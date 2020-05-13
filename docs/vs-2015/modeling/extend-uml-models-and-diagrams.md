@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849795"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586725"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>擴充 UML 模型和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "75849795"
 
  如需詳細資訊，請參閱這段影片：![連結至影片](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How Do I 系列： UML 工具和](https://msdn.microsoft.com/vstudio/ff859492)擴充性。
 
-## <a name="Requirements"></a> 需求
+## <a name="requirements"></a><a name="Requirements"></a> 需求
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
@@ -85,7 +85,7 @@ ms.locfileid: "75849795"
 
  如需詳細資訊，請參閱[整合 UML 模型與其他模型和工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)。
 
-## <a name="generation"></a>產生
+## <a name="generation"></a>世代
  從模型可以產生程式碼、指令碼、組態、文件、新模型或其他成品。
 
  在 Fabrikam 設計的行李系統中，專案之間大部分的程式碼都相同。 主要變動的部分是機場內行李流程的計劃。 設計小組有了前幾個專案的經驗後，工具開發人員就會建立範本，該範本會從行李流程模型產生大部分變動程式碼和其他檔案 (例如使用者文件)。 這樣可大幅縮短每一個新專案的開發時間並降低錯誤率。
@@ -106,17 +106,17 @@ ms.locfileid: "75849795"
 
  如需詳細資訊，請參閱[在程式碼中讀取 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。
 
-## <a name="domain-specific-languages"></a>領域特定語言
+## <a name="domain-specific-languages"></a>特定領域語言
  如果您經常使用特定類型的模型，建立特定領域語言可能會對您有所幫助。 相較於 UML 模型，建立此工具將可讓您更貼近商務需求，但也需付出更多心力在建置和維護上。 如需詳細資訊，請參閱[適用于 Visual Studio 網域特定語言的模型化 SDK](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)。
 
 ## <a name="external-resources"></a>外部資源
 
-|**分類**|**Links**|
+|**類別**|**連結**|
 |------------------|---------------|
 |**影片**|![連結至影片](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「如何」系列： UML 工具和](https://msdn.microsoft.com/vstudio/ff859492)擴充性<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif "PlayVideo")[頻道9：使用 Visual Studio 的 UML](https://channel9.msdn.com/posts/clinted/)|
 |**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格](https://blogs.msdn.com/b/visualstudioalm)|
+|**網路**|[Visual Studio ALM + Team Foundation Server 部落格](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**技術文件和日誌**|[MSDN 架構中心](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  建立適用于 UML 模型擴充性之[應用程式](../modeling/create-models-for-your-app.md) [API 參考的](../modeling/api-reference-for-uml-modeling-extensibility.md)模型

@@ -329,8 +329,12 @@
                   href: ide/reference/generate-constructor.md
                 - name: 產生解構函式
                   href: ide/reference/generate-deconstructor.md
+                - name: 新增明確的轉換
+                  href: ide/reference/add-explicit-cast.md
                 - name: 將參數新增至方法
                   href: ide/reference/add-parameter.md
+                - name: 產生參數
+                  href: ide/reference/generate-parameter.md
                 - name: 從建構函式產生私人欄位
                   href: ide/reference/generate-private-field-from-constructor.md
                 - name: 產生覆寫
@@ -350,12 +354,16 @@
                 - name: 總覽
                   displayName: refactoring
                   href: ide/refactoring-in-visual-studio.md
+                - name: 為所有參數新增 Null 檢查
+                  href: ide\reference\add-null-checks-for-parameters.md
                 - name: 變更方法簽章
                   href: ide/reference/change-method-signature.md
                 - name: 將匿名型別轉換為類別
                   href: ide/reference/convert-anonymous-type-to-class.md
                 - name: 將匿名型別轉換為元組
                   href: ide/reference/convert-anonymous-type-to-tuple.md
+                - name: 在自動屬性及完整屬性之間轉換
+                  href: ide/reference/convert-between-auto-property-and-full-property.md
                 - name: For 迴圈與 foreach 陳述式之間的轉換
                   href: ide/reference/convert-for-loop-to-foreach.md
                 - name: Get 方法與屬性之間的轉換
@@ -378,8 +386,6 @@
                   href: ide/reference/extract-method.md
                 - name: 擷取區域函式
                   href: ide/reference/extract-local-function.md
-                - name: 產生參數
-                  href: ide/reference/generate-parameter.md
                 - name: 內嵌暫存變數
                   href: ide/reference/inline-temporary-variable.md
                 - name: 針對未匯入的類型完成 IntelliSense
@@ -866,7 +872,7 @@
   href: deployment/index.yml
 - name: 延伸 Visual Studio >>
   displayName: Visual Studio SDK
-  href: extensibility/visual-studio-sdk.md
+  href: extensibility/index.yml
 - name: 分析架構並製作架構模型 >>
   href: modeling/analyze-and-model-your-architecture.md
 - name: 將 Visual Studio 個人化
@@ -1329,6 +1335,8 @@
           href: ide/user-permissions-and-visual-studio.md
         - name: Windows 資訊保護 (WIP)
           href: ide/exempt-visual-studio-from-wip.md
+        - name: 聯邦資訊處理標準 (FIPS)
+          href: ide/fips-support-visual-studio.md
     - name: 雙向語言輸入
       href: ide/use-bidirectional-languages.md
     - name: Microsoft Help Viewer

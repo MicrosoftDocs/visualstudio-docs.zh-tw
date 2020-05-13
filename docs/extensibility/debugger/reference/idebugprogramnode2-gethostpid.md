@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostPid | Microsoft Docs
+title: IDebugProgramnode2::獲取HostPid |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetHostPid
 ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ad7ba35bcc95434e7857c9b4f89b10fd332366c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1257bda23bcdfaceb58d1d087ae2848be8f969b1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351163"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722031"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
-取得裝載程式的處理序的系統處理序識別碼。
+獲取承載程序的進程的系統進程標識符。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetHostPid ( 
 
 ## <a name="parameters"></a>參數
 `pdwHostPid`\
-[out]傳回裝載處理序的系統處理序識別碼。
+[出]返回託管進程的系統進程標識符。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
- 下列範例示範如何實作這個方法來簡單`CProgram`實作的物件[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面。
+ 下面的範例展示如何實現[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面`CProgram`的簡單物件實現此方法。
 
 ```cpp
 HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {

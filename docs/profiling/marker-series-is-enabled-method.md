@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22a7baa08a29cd77506e48762179118b3bbb2d1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63002760"
 ---
-# <a name="markerseriesisenabled-method"></a>marker_series::is_enabled 方法
+# <a name="marker_seriesis_enabled-method"></a>marker_series::is_enabled 方法
 判斷是否有任何工作階段啟用該提供者。
 
 ## <a name="syntax"></a>語法
@@ -45,4 +45,4 @@ bool is_enabled(
  **命名空間：** Concurrency::diagnostic
 
 ## <a name="see-also"></a>另請參閱
-- [marker_series 類別](../profiling/marker-series-class.md)
+- [marker_series類](../profiling/marker-series-class.md)

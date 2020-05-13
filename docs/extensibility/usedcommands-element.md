@@ -1,5 +1,5 @@
 ---
-title: UsedCommands 元素 |Microsoft Docs
+title: 已使用指令元素 ( C) :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66361ad58c15e8539fcda6d0ec4468dd8b68289b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76732b2a9700f1737af495098c8c23aa4b618819
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718618"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698744"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 項目
-UsedCommands 元素會將 UsedCommand 元素和其他 UsedCommands 群組分組。
+「已用命令」元素對「已命令」元素和其他「已用命令」群組。
 
- UsedCommands 元素是選擇性的。 如果您未呼叫在封裝外部定義的命令，則不需要在 .vsct 檔案中包含此區段。
+ 「已使用命令」元素是可選的。 如果不調用套件外定義的命令,則不必在 .vsct 檔中包含此部分。
 
 ## <a name="syntax"></a>語法
 
@@ -34,25 +34,25 @@ UsedCommands 元素會將 UsedCommand 元素和其他 UsedCommands 群組分組�
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和項目
- 下列各節描述屬性、子項目和父項目。
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
 
 |屬性|描述|
 |---------------|-----------------|
-|條件|選擇項。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
-### <a name="child-elements"></a>子項目
+### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[UsedCommand 元素](../extensibility/usedcommand-element.md)|由其他程式碼所執行的命令。|
+|[UsedCommand 元素](../extensibility/usedcommand-element.md)|由其他代碼實現的命令。|
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定義 VSPackage 為整合式開發環境（IDE）提供的所有專案，這些專案代表命令（例如，功能表項目、功能表、工具列和下拉式方塊）。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定義 VSPackage 向整合式開發環境 (IDE) 提供的命令(例如,選單項、功能表、工具列和組合框)的所有元素。|
 
 ## <a name="example"></a>範例
 
@@ -64,6 +64,6 @@ UsedCommands 元素會將 UsedCommand 元素和其他 UsedCommands 群組分組�
 </UsedCommands>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [UsedCommand 元素](../extensibility/usedcommand-element.md)
 - [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

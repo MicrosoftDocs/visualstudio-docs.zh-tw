@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetRegistryRoot | Microsoft Docs
+title: IDebug運算式評估器::設置註冊根 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::SetRegistryRoot method
 ms.assetid: 790886d8-1975-4d3c-9a75-cd86c1faf4ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2f64272b38b6a41e8637e884f19da62d2fd1a1e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 11e7cd69ed3f1e1b23cc0f2f03f3fd2cf912d308
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325602"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729423"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
-這個方法設定的登錄根目錄。 用於並排顯示偵錯。
+此方法設置註冊表根。 用於並行調試。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int SetRegistryRoot(
 
 ## <a name="parameters"></a>參數
 `ustrRegistryRoot`\
-[in]新的登錄根目錄。
+[在]新的註冊表根。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 運算式評估工具會先具現化，並點時，通常設定指定的登錄根登錄機碼的 Visual Studio 特定版本 (hkey_local_machine\software\microsoft\visualstudio\\ *X.Y*，其中 *X.Y* 是版本號碼)。
+ 指定的註冊表根通常在表達式賦值器首次實例化並指向 Visual Studio 的特定版本的註冊表\\項(HKEY_LOCAL_MACHINE_SOFTWARE_Microsoft_VisualStudio*X.Y*,其中*X.Y*是版本號) 時設置。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

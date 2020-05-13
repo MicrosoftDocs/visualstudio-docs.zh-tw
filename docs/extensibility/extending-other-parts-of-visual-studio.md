@@ -1,50 +1,50 @@
 ---
-title: 擴充 Visual Studio 的其他部分 |Microsoft Docs
+title: 擴展視覺工作室的其他部分 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces
 ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31cbad96f52b3c29c417c3d380c39dd4cc610dd6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3c9076fbba822a1dfcff1ef13294ebd4dcafd9e9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341083"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711757"
 ---
-# <a name="extend-other-parts-of-visual-studio"></a>擴充 Visual Studio 的其他部分
+# <a name="extend-other-parts-of-visual-studio"></a>擴展視覺工作室的其他部分
 
-有許多的多個組件，您可以擴充的 Visual Studio 使用者介面。 這裡我們將示範一些。
+可視化工作室 UI 中還有更多部分可以擴展。 在這裡,我們向您展示幾個。
 
-## <a name="create-a-vspackage"></a>建立 VSPackage
+## <a name="create-a-vspackage"></a>建立 VS 套件
 
-Visual Studio 擴充性的基本建置組塊是 Vspackage。  了解如何加入 VSPackage:[使用 VSPackage 建立擴充功能](../extensibility/creating-an-extension-with-a-vspackage.md)
+可視化工作室擴充性的基本建構塊是 VSPackages。  瞭解如何新增 VS 套件:[使用 VS 套件建立延伸](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-## <a name="extend-the-toolbox"></a>擴充工具箱
+## <a name="extend-the-toolbox"></a>延伸工具箱
 
-了解如何將新控制項和其他項目新增至 [工具箱] 中，以及如何使用 [工具箱] 的功能：
+瞭解如何向工具箱新增新控制項和其他專案以及如何使用工具箱功能:
 
 - [建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)
 
-- [建立 Windows Forms 工具箱控制項](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [建立 Windows 表單工具箱控制項](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
-## <a name="extend-the-status-bar"></a>擴充狀態列
+## <a name="extend-the-status-bar"></a>延伸狀態列
 
-了解如何讀取和寫入狀態列的進度列，以及如何提供動畫和其他 UI:[擴充狀態列](../extensibility/extending-the-status-bar.md)。
+瞭解如何讀取與寫入狀態列與進度列,以及如何提供動畫和其他 UI:[延伸狀態列](../extensibility/extending-the-status-bar.md)。
 
 ::: moniker range="vs-2017"
 
 ## <a name="create-custom-start-pages"></a>建立自訂起始頁
 
-了解如何讓您自己的起始頁，從頭開始或可下載的開始頁面範例：[建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。
+瞭解如何從頭開始或從可下載的起始頁面範例建立您自己的起始[頁:建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。
 
 ::: moniker-end
 
-## <a name="write-to-the-activity-log"></a>寫入活動記錄檔
+## <a name="write-to-the-activity-log"></a>寫入活動紀錄
 
-了解如何寫入活動記錄檔：[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。
+瞭解如何寫入作用紀錄:[如何:使用作用紀錄](../extensibility/how-to-use-the-activity-log.md)。

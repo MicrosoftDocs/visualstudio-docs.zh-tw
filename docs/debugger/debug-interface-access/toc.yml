@@ -20,7 +20,7 @@
           items:
             - name: 符號類型的語彙階層架構
               href: lexical-hierarchy-of-symbol-types.md
-            - name: 註釋
+            - name: Annotation
               href: annotation.md
             - name: 區塊
               href: block.md

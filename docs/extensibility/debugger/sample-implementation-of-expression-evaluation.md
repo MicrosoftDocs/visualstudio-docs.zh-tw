@@ -1,5 +1,5 @@
 ---
-title: 範例運算式評估的實作 |Microsoft Docs
+title: 運算式評估的範例實現 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,37 +7,37 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluators
 - expression evaluation, examples
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0135c8dd61ca2505c1458bc157b574e6bcbee09a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf994a61ed9283463cd01aa468018f6acce5e209
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315077"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713104"
 ---
-# <a name="sample-implementation-of-expression-evaluation"></a>運算式評估的範例實作
+# <a name="sample-implementation-of-expression-evaluation"></a>運算式樣本實作
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 針對**監看式** 視窗的運算式時，Visual Studio 會呼叫[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)產生[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)物件。 `IDebugExpressionContext2::ParseText` 具現化的運算式評估工具 (EE) 和呼叫[剖析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)若要取得[IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)物件。
+ 對於**監視**視窗運算式,Visual Studio 調用[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)生成[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)物件。 `IDebugExpressionContext2::ParseText`實例化運算式賦值器 (EE) 並呼叫[Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)取得[IDebugParsed 運算](../../extensibility/debugger/reference/idebugparsedexpression.md)式物件。
 
- `IDebugExpressionEvaluator::Parse`會執行下列工作：
+ 執行`IDebugExpressionEvaluator::Parse`以下工作:
 
-1. [C++只]剖析的運算式，若要尋找的錯誤。
+1. [僅C++]分析表達式以查找錯誤。
 
-2. 具現化類別 (稱為`CParsedExpression`在此範例中) 執行`IDebugParsedExpression`介面，並儲存在類別中，運算式才能進行剖析。
+2. 實例化運行`IDebugParsedExpression`介面並在類中`CParsedExpression`存儲 要解析的表達式的類(在此示例中稱為)。
 
-3. 傳回`IDebugParsedExpression`介面從`CParsedExpression`物件。
+3. 從`IDebugParsedExpression``CParsedExpression`物件返回介面。
 
 > [!NOTE]
-> 在接下來的範例和 MyCEE 範例中，運算式評估工具不會分開評估剖析。
+> 在 MyCEE 範例之後和其中的範例中,表達式賦值器不會將分析與評估分開。
 
 ## <a name="managed-code"></a>Managed 程式碼
- 下列程式碼示範如何實作`IDebugExpressionEvaluator::Parse`managed 程式碼中。 這個版本的方法會延後到剖析[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)當剖析的程式碼也會評估一次 (請參閱[評估 監看運算式](../../extensibility/debugger/evaluating-a-watch-expression.md))。
+ 以下代碼顯示了託管代碼中的`IDebugExpressionEvaluator::Parse`實現。 此版本的方法將解析延遲到[EvaluateSync,](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)因為用於分析的代碼也會同時計算(請參閱[評估 Watch 運算式](../../extensibility/debugger/evaluating-a-watch-expression.md))。
 
 ```csharp
 namespace EEMC
@@ -63,8 +63,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>Unmanaged 程式碼
-下列程式碼是實作`IDebugExpressionEvaluator::Parse`unmanaged 程式碼中。 這個方法會呼叫 helper 函式， `Parse`、 要剖析的運算式和檢查是否發生錯誤，但這個方法會忽略所產生的值。 型式的評估會延後到[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)時就會評估，其中剖析運算式 (請參閱[評估 監看運算式](../../extensibility/debugger/evaluating-a-watch-expression.md))。
+## <a name="unmanaged-code"></a>非託管代碼
+以下代碼是在非託管代碼`IDebugExpressionEvaluator::Parse`中的實現。 此方法調用説明器函數`Parse`, 以解析表示式並檢查錯誤,但此方法忽略生成的值。 正式計算延遲到[評估同步](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md),在計算表達式時解析表達式(請參閱[評估觀察表達式](../../extensibility/debugger/evaluating-a-watch-expression.md))。
 
 ```cpp
 STDMETHODIMP CExpressionEvaluator::Parse(
@@ -108,5 +108,5 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [評估監看式視窗運算式](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
-- [評估監看式運算式](../../extensibility/debugger/evaluating-a-watch-expression.md)
+- [檢視「監視」視窗運算式](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
+- [監控監視運算式](../../extensibility/debugger/evaluating-a-watch-expression.md)

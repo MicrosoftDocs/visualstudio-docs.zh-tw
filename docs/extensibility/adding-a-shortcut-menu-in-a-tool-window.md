@@ -1,5 +1,5 @@
 ---
-title: 在工具視窗中加入快捷方式功能表 |Microsoft Docs
+title: 在工具視窗中加入快捷方式選單 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,38 +8,38 @@ helpviewer_keywords:
 - shortcut menus, adding to tool windows
 - tool windows, adding context menus
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef3ba3e9a59ac1289803260b5894b05927205a20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5b5b79721aa910c46e2580228d3f3a7836f70d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633425"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740290"
 ---
-# <a name="add-a-shortcut-menu-in-a-tool-window"></a>在工具視窗中新增快捷方式功能表
-這個逐步解說會將快捷方式功能表放在工具視窗中。 快捷方式功能表是當使用者以滑鼠右鍵按一下按鈕、文字方塊或視窗背景時，所出現的功能表。 快捷方式功能表上的命令與其他功能表或工具列上的命令列為相同。 若要支援快捷方式功能表，請在 *.vsct*檔案中指定它，並顯示它，以回應滑鼠右鍵按一下。
+# <a name="add-a-shortcut-menu-in-a-tool-window"></a>在工具視窗中加入快捷選單
+本演練將快捷方式功能表放在工具視窗中。 快捷選單是當使用者右鍵按下按鈕、文字框或視窗背景時顯示的功能表。 快捷功能表上的命令與其他功能表或工具列上的命令相同。 要支援快捷選單,請在 *.vsct*檔中指定它,並顯示它以響應滑鼠的右鍵按一下。
 
-工具視窗是由自訂工具視窗類別中的 WPF 使用者控制項所組成，而此類別繼承自 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>。
+工具視窗由從<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>繼承的自定義工具視窗類中的 WPF 使用者控制元件組成。
 
-本逐步解說示範如何將快捷方式功能表建立為 Visual Studio 功能表，方法是在 *.vsct*檔案中宣告功能表項目，然後使用 Managed Package Framework 在定義工具視窗的類別中執行它們。 這種方法可協助 Visual Studio 命令、UI 專案和 Automation 物件模型的存取。
+本演練演示如何創建快捷方式功能表作為 Visual Studio 選單,通過在 *.vsct*檔中聲明功能表項,然後使用託管包框架在定義工具視窗的類中實現它們。 此方法便於造訪 Visual Studio 命令、UI 元素和自動化物件模型。
 
-或者，如果您的快捷方式功能表不會存取 Visual Studio 功能，您可以使用使用者控制項中 XAML 專案的 <xref:System.Windows.FrameworkElement.ContextMenu%2A> 屬性。 如需詳細資訊，請參閱[CoNtextMenu](/dotnet/framework/wpf/controls/contextmenu)。
+或者,如果快捷功能表無法存訪 Visual Studio 功能,則可以使用<xref:System.Windows.FrameworkElement.ContextMenu%2A>使用者控制項中的 XAML 元素的屬性。 有關詳細資訊,請參閱[上下文選單](/dotnet/framework/wpf/controls/contextmenu)。
 
 ## <a name="prerequisites"></a>Prerequisites
-從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+從 Visual Studio 2015 開始,您不會從下載中心安裝 Visual Studio SDK。 它作為可選功能包含在可視化工作室設置中。 以後還可以安裝 VS SDK。 有關詳細資訊,請參閱[安裝可視化工作室 SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
-## <a name="create-the-tool-window-shortcut-menu-package"></a>建立工具視窗快捷方式功能表封裝
+## <a name="create-the-tool-window-shortcut-menu-package"></a>建立工具視窗快捷方式選單包
 
-1. 建立名為 `TWShortcutMenu` 的 VSIX 專案，並在其中新增名為**快捷**方式的工具視窗範本。 如需建立工具視窗的詳細資訊，請參閱[使用工具視窗建立擴充](../extensibility/creating-an-extension-with-a-tool-window.md)功能。
+1. 創建名為`TWShortcutMenu`VSIX 專案的 VSIX,並將名為 **「捷徑功能表」** 的工具視窗樣本添加到其中。 有關創建工具視窗的詳細資訊,請參閱[使用工具窗口創建副檔](../extensibility/creating-an-extension-with-a-tool-window.md)名。
 
-## <a name="specifying-the-shortcut-menu"></a>指定快捷方式功能表
-此逐步解說中所示的快捷方式功能表，可讓使用者從用來填滿工具視窗背景的色彩清單中進行選取。
+## <a name="specifying-the-shortcut-menu"></a>指定快捷選單
+快捷方式功能表(如本演練中顯示的功能表)允許使用者從用於填充工具視窗背景的顏色清單中選擇。
 
-1. 在*ShortcutMenuPackage*中，于名為 GuidShortcutMenuPackageCmdSet 的 GuidSymbol 元素中尋找，並宣告快捷方式功能表、快捷方式功能表群組和功能表選項。 GuidSymbol 元素現在看起來應該像這樣：
+1. 在 *「快捷選單包.vsct」* 中,在名為 GuidMenuMenuPackageCmdSet 的 GuidSymbol 元素中尋找,並聲明快捷選單、快捷選單組和功能表選項。 GuidSymbol 元素現在應如下所示:
 
     ```xml
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here
@@ -52,7 +52,7 @@ ms.locfileid: "72633425"
     </GuidSymbol>
     ```
 
-2. 在 [按鈕] 元素之前，建立功能表元素，然後在其中定義快捷方式功能表。
+2. 在 Buttons 元素之前,創建一個功能表元素,然後在其中定義快捷功能表。
 
     ```vb
     <Menus>
@@ -65,9 +65,9 @@ ms.locfileid: "72633425"
     </Menus>
     ```
 
-    快捷方式功能表沒有父系，因為它不是功能表或工具列的一部分。
+    快捷功能表沒有父功能表,因為它不是功能表或工具列的一部分。
 
-3. 建立群組元素，其中包含快捷方式功能表項目，並將群組與快捷方式功能表建立關聯。
+3. 使用包含快捷選單項的 Group 元素創建組元素,並將組與快捷功能表相關聯。
 
     ```xml
     <Groups>
@@ -77,7 +77,7 @@ ms.locfileid: "72633425"
     </Groups>
     ```
 
-4. 在 [按鈕] 元素中，定義將出現在快捷方式功能表上的個別命令。 按鈕元素看起來應該像這樣：
+4. 在「按鈕」元素中,定義將顯示在快捷功能表上的各個命令。 按鈕元素應如下所示:
 
     ```xml
     <Buttons>
@@ -112,7 +112,7 @@ ms.locfileid: "72633425"
     </Buttons>
     ```
 
-5. 在*ShortcutMenuCommand.cs*中，新增命令集 GUID、快捷方式功能表和功能表項目的定義。
+5. 在*ShortcutMenuCommand.cs*中,添加命令集 GUID、快捷功能表和功能表項的定義。
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
@@ -122,21 +122,21 @@ ms.locfileid: "72633425"
     public const int cmdidBlue = 0x104;
     ```
 
-    這些是在*ShortcutMenuPackage .vsct*檔案的 [符號] 區段中所定義的相同命令識別碼。 這裡不包含內容群組，因為只有在 *.vsct*檔案中才需要它。
+    這些是*在快捷方式功能表包.vsct*檔「符號」部分中定義的相同的命令指示。 此處不包括上下文組,因為它僅在 *.vsct*檔中是必需的。
 
-## <a name="implementing-the-shortcut-menu"></a>執行快捷方式功能表
- 本節會執行快捷方式功能表及其命令。
+## <a name="implementing-the-shortcut-menu"></a>實現快捷選單
+ 本節實現快捷功能表及其命令。
 
-1. 在*ShortcutMenu.cs*中，工具視窗可以取得功能表命令服務，但它所包含的控制項不能。 下列步驟顯示如何讓功能表命令服務可供使用者控制項使用。
+1. 在*ShortcutMenu.cs*中,工具視窗可以獲取菜單命令服務,但它包含的控制項不能。 以下步驟演示如何使功能表命令服務可供使用者控制件使用。
 
-2. 在*ShortcutMenu.cs*中，新增下列 using 指示詞：
+2. 在*ShortcutMenu.cs*中,加入以下使用指令:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
     using System.ComponentModel.Design;
     ```
 
-3. 覆寫工具視窗的 Initialize （）方法，以取得功能表命令服務並新增控制項，並將功能表命令服務傳遞給此函式：
+3. 重寫工具視窗的初始化() 方法以取得選單指令服務並新增控制項,將選單指令服務傳遞給建構函數:
 
     ```csharp
     protected override void Initialize()
@@ -146,7 +146,7 @@ ms.locfileid: "72633425"
     }
     ```
 
-4. 在快捷方式工具視窗的函式中，移除加入控制項的那一行。 此函數現在看起來應該像這樣：
+4. 在「快捷方式功能表」工具視窗建構函數中,刪除添加控制項的行。 建構函數現在應如下所示:
 
     ```csharp
     public ShortcutMenu() : base(null)
@@ -157,7 +157,7 @@ ms.locfileid: "72633425"
     }
     ```
 
-5. 在 [ *ShortcutMenuControl.xaml.cs*] 中，為功能表命令服務新增 [私用] 欄位，並變更控制項的程式，以取得功能表命令服務。 然後使用功能表命令服務來新增內容功能表命令。 ShortcutMenuControl 的函式現在看起來應該類似下列程式碼。 稍後將會定義命令處理常式。
+5. 在*ShortcutMenuControl.xaml.cs*中,為功能表命令服務添加專用欄位,並更改控制項構造函數以獲取選單命令服務。 然後使用功能表指令服務添加上下文選單命令。 快捷功能表控制構造函數現在應類似於以下代碼。 稍後將定義命令處理程式。
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -183,7 +183,7 @@ ms.locfileid: "72633425"
     }
     ```
 
-6. 在*ShortcutMenuControl*中，將 <xref:System.Windows.UIElement.MouseRightButtonDown> 事件加入最上層 <xref:System.Windows.Controls.UserControl> 元素。 XAML 檔案現在看起來應該像這樣：
+6. 在*快捷方式MenuControl.xaml*中<xref:System.Windows.UIElement.MouseRightButtonDown>,<xref:System.Windows.Controls.UserControl>向頂級 元素添加事件。 XAML 檔案現在應如下所示:
 
     ```vb
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"
@@ -205,7 +205,7 @@ ms.locfileid: "72633425"
     </UserControl>
     ```
 
-7. 在*ShortcutMenuControl.xaml.cs*中，新增事件處理常式的 stub。
+7. 在*ShortcutMenuControl.xaml.cs*中,為事件處理程式添加存根。
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
@@ -214,7 +214,7 @@ ms.locfileid: "72633425"
     }
     ```
 
-8. 將下列 using 指示詞新增至同一個檔案：
+8. 將以下使用指令加入同一檔案:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -224,7 +224,7 @@ ms.locfileid: "72633425"
     using System.Windows.Media;
     ```
 
-9. 依照下列方式執行 `MyToolWindowMouseRightButtonDown` 事件。
+9. 按照`MyToolWindowMouseRightButtonDown`如下方式實施事件。
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
@@ -240,9 +240,9 @@ ms.locfileid: "72633425"
     }
     ```
 
-    這會建立快捷方式功能表的 <xref:System.ComponentModel.Design.CommandID> 物件、識別滑鼠點擊的位置，然後使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> 方法開啟該位置的快捷方式功能表。
+    這將為快捷<xref:System.ComponentModel.Design.CommandID>菜單創建一個物件,標識滑鼠單擊的位置,並使用 方法打開該<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A>位置的 快捷功能表。
 
-10. 執行命令處理常式。
+10. 實現命令處理程式。
 
     ```csharp
     private void ChangeColor(object sender, EventArgs e)
@@ -264,18 +264,18 @@ ms.locfileid: "72633425"
     }
     ```
 
-    在此情況下，只有一個方法會藉由識別 <xref:System.ComponentModel.Design.CommandID> 並據以設定背景色彩，來處理所有功能表項目的事件。 如果功能表項目包含不相關的命令，您就會為每個命令建立個別的事件處理常式。
+    在這種情況下,只有一種方法通過標識<xref:System.ComponentModel.Design.CommandID>和相應地設置背景顏色來處理所有功能表項的事件。 如果功能表項包含不相關的命令,則為每個命令創建單獨的事件處理程式。
 
-## <a name="test-the-tool-window-features"></a>測試控管視窗功能
+## <a name="test-the-tool-window-features"></a>測試工具視窗功能
 
-1. 建置此專案並開始偵錯。 實驗實例隨即出現。
+1. 建置此專案並開始偵錯。 出現實驗實例。
 
-2. 在實驗實例中，按一下 [**視圖]/[其他視窗**]，然後按一下 [**快顯功能表**]。 這麼做應該會顯示您的工具視窗。
+2. 在實驗實例中,按下 **「查看/其他視窗**」,然後單擊 **「快捷功能表**」。。 執行此操作應顯示工具視窗。
 
-3. 以滑鼠右鍵按一下工具視窗的主體。 應該會顯示具有色彩清單的快捷方式功能表。
+3. 右鍵單擊工具視窗的正文。 應顯示包含顏色清單的快捷功能表。
 
-4. 按一下快捷方式功能表上的色彩。 工具視窗背景色彩應變更為選取的色彩。
+4. 單擊快捷功能表上的顏色。 工具視窗背景顏色應更改為選取的顏色。
 
-## <a name="see-also"></a>請參閱
-- [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
-- [使用和提供服務](../extensibility/using-and-providing-services.md)
+## <a name="see-also"></a>另請參閱
+- [命令、選單和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+- [使用與提供服務](../extensibility/using-and-providing-services.md)

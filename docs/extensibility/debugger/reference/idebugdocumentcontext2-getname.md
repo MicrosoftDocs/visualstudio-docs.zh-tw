@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetName |Microsoft Docs
+title: IDebug文件上下文2::獲取名稱 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::GetName
 ms.assetid: 546c5b2e-f166-4edb-9e61-57d797ca98a1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d968a908a43b215162a46cea7d9e0251ff40d431
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 253ef509a60e8bb2ce177235f4b93b370e66f484
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349124"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731805"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
-取得包含這個文件內容的文件可顯示名稱。
+獲取包含此文件上下文的文件的可顯示名稱。
 
 ## <a name="syntax"></a>語法
 
@@ -43,19 +43,19 @@ int GetName(
 
 ## <a name="parameters"></a>參數
 `gnType`\
-[in]值，以從[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列舉，指定要傳回名稱的類型。
+[在]GETNAME_TYPE[枚舉中](../../../extensibility/debugger/reference/getname-type.md)指定要返回的名稱類型的值。
 
 `pbstrFileName`\
-[out]傳回檔案的名稱。
+[出]返回檔的名稱。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
-這個方法通常會在呼叫轉送[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)方法，除非文件內容會寫入至儲存文件名稱 （如範例中顯示）。
+此方法通常將調用轉接到[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)方法,除非編寫文檔上下文以儲存文檔名稱本身(如示例所示)。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法來簡單`CDebugContext`公開的物件[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面。
+下面的範例展示如何為公開[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)`CDebugContext`介面的簡單物件實現此方法。
 
 ```cpp
 HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)

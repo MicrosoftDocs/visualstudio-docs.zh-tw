@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c0a9967f1248c6dc23c5d70be35788ad9e05eb2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566302"
 ---
 # <a name="modify-load-test-logging-settings"></a>修改負載測試記錄設定
@@ -21,13 +21,13 @@ ms.locfileid: "75566302"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-「測試控制器」會在測試執行時，將所有收集的負載測試樣本資料多工緩衝處理至資料庫記錄。 像是計時詳細資料和錯誤詳細資料這類額外資料會在測試完成時載入至資料庫。
+「測試控制器」** 會在測試執行時，將所有收集的負載測試樣本資料多工緩衝處理至資料庫記錄。 像是計時詳細資料和錯誤詳細資料這類額外資料會在測試完成時載入至資料庫。
 
-|工作|相關主題|
+|Task|相關主題|
 |-|-----------------------|
 |**負載測試失敗時儲存記錄：** 您可以指定是否要在每次負載測試失敗時都儲存一次測試記錄。|-   [如何：指定測試失敗是否會儲存至測試記錄](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**設定記錄檔的檔案大小上限：** 您可以編輯與測試控制器服務建立關聯的 XML 組態檔，指定要用於記錄檔的檔案大小上限。|修改 *QTCcontroller.exe.config* XML 組態檔中的 `<add key="LogSizeLimitInMegs" value="20"/>`。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [設定負載測試回合設定](../test/configure-load-test-run-settings.md)
+- [配置負載測試回合設定](../test/configure-load-test-run-settings.md)

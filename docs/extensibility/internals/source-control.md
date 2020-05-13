@@ -1,46 +1,46 @@
 ---
-title: 原始檔控制 |Microsoft Docs
+title: 源代碼管理 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK]
 ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12b6cc2b4218f8bf00d338c609442d217ae3678f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8ff7904e9abc3df8ed36f8c196ce4c1175b4d9af
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322471"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704989"
 ---
-# <a name="source-control"></a>原始檔控制
-本章節將討論的整合功能，以及實作原始檔控制選項[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，透過原始檔控制外掛程式或原始檔控制 VSPackage。
+# <a name="source-control"></a>原始程式碼控制
+本節討論通過原始程式碼管理外掛程式或原始程式碼管理 VSPackage 實現原始程式碼[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]管理作為 整合功能的選項。
 
 ## <a name="in-this-section"></a>本節內容
-- [基本資訊](../../extensibility/internals/source-control-integration-essentials.md)
+- [基本功能](../../extensibility/internals/source-control-integration-essentials.md)
 
- 顯示您必須開始使用原始檔控制的重要資訊。
+ 提供必須開始使用原始程式碼管理的重要資訊。
 
 - [概觀](../../extensibility/internals/source-control-integration-overview.md)
 
- 實作原始檔控制的兩個可用選項的概觀。
+ 實現原始程式碼管理的兩個可用選項的概述。
 
 - [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)
 
- 討論如何建立原始檔控制外掛程式，提供透過原始檔控制功能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]原始檔控制使用者介面 (UI)。
+ 討論如何創建透過原始碼管理使用者介面(UI)提供原始程式碼管理功能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]的原始程式。
 
 - [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- 討論如何建立原始檔控制 VSPackage，不僅提供原始檔控制功能，但可以用來自訂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]原始檔控制 UI。
+ 討論如何建立原始碼管理 VSPackage,該原始程式碼管理不僅提供原始程式碼管理功能,還可[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]用於自訂原始程式碼管理 UI。
 
 ## <a name="related-sections"></a>相關章節
 - [原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)
 
- 原始檔控制外掛程式 API 的參考。
+ 源控制外掛程式 API 的引用。
 
 - [擴充專案](../../extensibility/extending-projects.md)
 

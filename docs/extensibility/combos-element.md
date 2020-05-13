@@ -1,25 +1,25 @@
 ---
-title: Combos 元素 |Microsoft Docs
+title: 組合元素 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
 ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e0d4c15a5255a621268b239cb2cde4439b4c02b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d005ea69aea7f0331877326abe4087fcff403553
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334894"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739810"
 ---
-# <a name="combos-element"></a>Combos 元素
-群組[Combo 元素](../extensibility/combo-element.md)項目。
+# <a name="combos-element"></a>組合項目
+組合[元素元素進行群組](../extensibility/combo-element.md)。
 
 ## <a name="syntax"></a>語法
 
@@ -37,20 +37,20 @@ ms.locfileid: "66334894"
 
 |屬性|描述|
 |---------------|-----------------|
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[Combos 元素](../extensibility/combos-element.md)|分組下拉式項目。|
-|[Combo 元素](../extensibility/combo-element.md)|定義會出現在下拉式方塊中的命令。|
+|[組合項目](../extensibility/combos-element.md)|對組合元素進行分組。|
+|[組合項目](../extensibility/combo-element.md)|定義顯示在組合框中的命令。|
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|描述|
 |-------------|-----------------|
-|[Commands 元素](../extensibility/commands-element.md)|表示 [VSPackage] 工具列上的命令的集合。|
+|[指令元素](../extensibility/commands-element.md)|表示 VSPackage 工具列上的命令集合。|
 
 ## <a name="example"></a>範例
 
@@ -77,5 +77,5 @@ ms.locfileid: "66334894"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+- [VS 套件如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [命令、選單和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

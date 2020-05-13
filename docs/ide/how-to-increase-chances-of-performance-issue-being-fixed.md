@@ -1,200 +1,200 @@
 ---
-title: 如何增加修正效能問題的機率
-description: 在 Visual Studio 中提交效能問題的其他資訊和最佳作法
-author: seaniyer
-ms.author: seiyer
+title: 如何增加解決效能問題的機會
+description: 在可視化工作室中提交性能問題的其他資訊和最佳實踐
+author: madskristensen
+ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 119de27298acafee7dc563a30246b18da42f9f29
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f5c83a145eb56dcb95c6e9a299c690ae960442c9
+ms.sourcegitcommit: 4bcd6abb89feff1cf8251e3ded73fdc30b67e347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918167"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81615046"
 ---
-# <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何增加修正效能問題的機率
+# <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何增加解決效能問題的機會
 
-「回報[問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)」工具廣泛由 Visual Studio 使用者用來報告問題的範圍。 Visual Studio 小組會在使用者意見反應中遇到損毀並緩慢趨勢，並解決影響廣泛使用者 swath 的問題。 特定的意見反應票證越容易採取動作，產品小組就越可能很快就能診斷並解決問題。 本檔說明報告當機或緩慢問題時的最佳作法，使其更容易採取動作。
+Visual Studio 使用者廣泛使用「[報告問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)」工具來報告一系列問題。 Visual Studio 團隊發現使用者反饋的崩潰和緩慢趨勢,並解決影響廣大用戶的問題。 特定反饋票證越可操作,產品團隊就越有可能快速診斷和解決該反饋票證。 本文檔介紹了在報告崩潰或慢速問題時最佳做法,使其更具可操作性。
 
 ## <a name="general-best-practices"></a>一般最佳作法
 
-Visual Studio 是一個大型、複雜的平臺，支援多種語言、專案類型、平臺等等。 其執行方式是在會話中安裝和使用元件的功能、安裝的延伸模組、Visual Studio 設定、電腦設定，最後是正在編輯之程式碼的圖形。 由於變數數目的不同，因此很難判斷來自某個使用者的問題報告是否與另一位使用者的問題報告具有相同的基礎問題，即使可見的徵兆相同也一樣。 因此，以下是一些最佳作法，可確保您的特定問題報告具有更高的診斷可能性。
+Visual Studio 是一個大型的複雜平臺,支持多種語言、項目類型、平臺等。 它的性能是一個功能,用於在會話中安裝和處於活動狀態的元件、安裝的擴展、Visual Studio 設置、計算機配置,以及最後編輯的代碼的形狀。 鑒於變數數,很難判斷來自一個使用者的問題報告與其他用戶的問題報告具有相同的基礎問題,即使可見癥狀相同。 因此,下面是一些最佳做法,以確保您的特定問題報告更有可能被診斷。
 
-**盡可能提供特定的標題**
+**提供盡可能具體的標題**
 
-尋找所回報問題的相異簽章，並盡可能在標題中包含。 如果標題是描述性的，較不可能發生不相關問題的使用者（但相同的表面徵兆）將會對您的票證進行投票或留言，因此更難診斷*您*的問題。
+查找所報告問題的不同簽名,並盡可能在標題中包括。 如果標題是描述性的,則出現不相關問題(但相同的表面癥狀)的使用者不太可能對您的票證進行投票或評論,從而使診斷*您的*問題更加困難。
 
-**若不確定，請記錄新的問題報告**
+**有疑問時,請記錄新問題報告**
 
-許多問題可能不會有任何特殊的簽章或重現的步驟。 在這種情況下，新的報表會比附議或另一份報表上的批註更好，這會報告類似的外部*徵兆*。 視報表的類型而定，將其他診斷檔案包含在您的報表中，如本檔稍後所述。
+許多問題可能沒有任何獨特的簽名或步驟重現。 在這種情況下,新的報告比對另一份報告的投票結果或評論要好,該報告報告有類似的外在*癥狀*。 根據報表的類型,將其他診斷檔包含在報表中,如本文檔後面所述。
 
-**問題特有的最佳作法**
+**特定於問題的最佳做法**
 
-以下描述的問題很難診斷，而不需要有良好的診斷檔案。 找出最能描述您問題的案例之後，請遵循該案例的特定意見反應步驟。
+下面描述的問題,很難診斷沒有良好的診斷檔。 確定最能描述您的問題的情況后,請按照特定於該案例的反饋步驟操作。
 
--   當機[：](#crashes)當進程（Visual Studio）意外終止時，就會發生損毀。
+-   [崩潰:](#crashes)當行程(可視化工作室)意外終止時,將發生崩潰。
 
--   [無回應：](#unresponsiveness)VS 會變得沒有回應一段頗長的時間。
+-   [沒有回應:](#unresponsiveness)VS 在較長時間內變得無回應。
 
--   [緩慢問題：](#slowness-and-high-cpu-issues)VS 中的任何特定動作速度低於所需
+-   [慢速問題:](#slowness-and-high-cpu-issues)VS 的任何特定操作都比預期慢
 
--   [高 CPU：](#slowness-and-high-cpu-issues)非預期的高 CPU 使用量長時間
+-   [高 CPU:](#slowness-and-high-cpu-issues)時間過長的意外高 CPU 使用率
 
--   [跨進程問題：](#out-of-process-issues)Visual Studio 衛星進程所造成的問題
+-   [行程外問題:](#out-of-process-issues)由視覺工作室衛星進程引起的問題
 
 ## <a name="crashes"></a>損毀
-當進程（Visual Studio）意外終止時，就會發生損毀。
+當行程(可視化工作室)意外終止時,將發生崩潰。
 
-**直接重現損毀**
+**直接重現崩潰**
 
-直接可重現的損毀是具有下列所有特性的案例：
+直接可重現的崩潰是具有以下所有特徵的案例:
 
-- 可以遵循一組已知的步驟來觀察
+- 可以通過執行一組已知的步驟來觀察
 
-- 可以在多部電腦上觀察到（如果有的話）
+- 在多台電腦上觀察到(如果可用)
 
-- 可以在範例程式碼中重現，或在可連結或提供作為意見反應一部分的專案中重新產生（如果步驟牽涉到開啟專案或檔）
+- 可以在範例代碼或項目複製,該代碼或專案可以連結到回饋或作為回饋的一部分提供(如果步驟涉及打開項目或文檔)
 
-針對這些問題，請遵循「如何回報[問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)」中的步驟，並務必包含：
+對於這些問題,請按照"[如何報告問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)"中的步驟操作,並確保包括:
 
 -   重現問題的步驟
 
--   如上面所述的獨立重現專案。 如果不可能進行獨立重現，請包含：
+-   如上所述的獨立重現專案。 如果無法獨立重新進行,請包括:
 
-    -   開啟專案的語言（C\#、 C++等）
+    -   開放項目的語言(C、C++\#等)
 
-    -   專案類型（主控台應用程式、ASP.NET 等）
+    -   專案類型 (主控台應用程式、ASP.NET等)
 
-
-> [!NOTE]
-> **最寶貴的意見反應：** 在此情況下，最寶貴的意見反應是重現問題的一組步驟和範例原始程式碼。
-
-**不明的當機**
-
-如果您不確定造成當機或其為隨機的原因，您可以在每次 Visual Studio 損毀時，于本機捕捉傾印，並將其附加至個別的意見專案。 若要在 Visual Studio 損毀時將傾印儲存在本機，請在 [系統管理員命令] 視窗中執行下列命令：
-
-```
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe"
-
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpType /t REG_DWORD /d 2
-
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpCount /t REG_DWORD /d 2
-
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
-```
-
-適當地自訂傾印計數和傾印資料夾。 如需這些設定的詳細資訊，請參閱[這裡](/windows/win32/wer/collecting-user-mode-dumps)。
 
 > [!NOTE]
-> 使用工作管理員所捕捉到的傾印可能是錯誤的位，因此較不能使用。 前述程式是捕捉堆積傾印的慣用方式。 如果您想要使用 [工作管理員]，請關閉目前正在執行的工作管理員，啟動32位工作管理員（% windir%\\syswow64\\taskmgr），並從該處收集堆積傾印。
+> **最有價值的回饋:** 在這種情況下,最有價值的反饋是複製問題以及示例原始程式碼的步驟集。
+
+**未知錯誤**
+
+如果您不確定導致崩潰的原因或它們看起來是隨機的,則可以在每次 Visual Studio 崩潰時在本地捕獲轉儲,並將這些轉儲附加到單獨的反饋專案。 要在 Visual Studio 當機時在本地儲存轉儲,在管理員命令視窗中執行以下命令:
+
+```
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe"
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpType /t REG_DWORD /d 2
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpCount /t REG_DWORD /d 2
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\CrashDumps"
+```
+
+根據需要自定義轉儲計數和轉儲資料夾。 [在此處](/windows/win32/wer/collecting-user-mode-dumps)查找有關這些設置的詳細資訊。
+
+> [!NOTE]
+> 使用任務管理器捕獲的轉儲可能是錯誤的位,這使得它們使用得更少。 上述過程是捕獲堆轉儲的首選方法。 如果確實要使用任務管理器,關閉當前正在運行的任務管理器,啟動 32 位任務管理器(%windir%\\syswow64\\taskmgr.exe),並從那裡收集堆轉儲。
 
 > [!NOTE] 
-> 此方法所產生的每個傾印檔案，大小上限為 4 GB。 請務必將 DumpFolder 設定為具有足夠磁碟空間的位置，或適當地調整 DumpCount。
+> 此方法生成的每個轉儲檔的大小將高達 4 GB。 請確保將轉儲資料夾設置為具有足夠驅動器空間的位置,或適當調整轉儲計數。
 
-每次 Visual Studio 損毀時，它會建立一個傾印檔（ **devenv .exe）。 [number] dmp**檔案已設定的位置。
+每次 Visual Studio 崩潰時,它都會創建轉儲檔**devenv.exe。數位_dmp**檔在配置的位置。
 
-然後，使用 Visual Studio 的「回報問題 ...」特徵. 它可讓您附加適當的傾印。
+然後,使用可視化工作室的"報告問題..."特徵。 它允許您附加相應的轉儲。
 
-1.  找出您所報告之損毀的傾印檔案（尋找具有正確建立時間的檔案）
+1.  尋找要回報的錯誤的傾印檔案(尋找有正確建立時間的檔案)
 
-2.  可能的話，請在提交意見反應之前壓縮檔案（\*.zip）以縮小其大小
+2.  如果可能,在提交回饋之前\*壓縮檔 (.zip) 以減小其大小
 
-3.  遵循「[如何回報問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)」中的步驟，並將堆積傾印附加至新的意見反應專案。
+3.  按照「[如何報告問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)」中的步驟操作,並將堆轉儲附加到新的反饋項。
 
 > [!NOTE] 
-> **最寶貴的意見反應：** 在此情況下，最寶貴的意見反應是在當機時所捕捉到的堆積傾印。
+> **最有價值的回饋:** 對於這種情況,最有價值的反饋是在崩潰時捕獲的堆轉儲。
 
 ## <a name="unresponsiveness"></a>無回應
-VS 會變得沒有回應一段頗長的時間。
+VS 在較長時間內變得無回應。
 
 **直接重現無回應**
 
-如發生損毀的對應章節中所述，對於可輕易重現的問題，在多部電腦上看得到，而且可以在小型範例中示範，最寶貴的意見報告包括重現問題的步驟，並包含示範問題的原始碼範例。
+如崩潰的相應部分所述,對於易於重現、在多台計算機上看到且可在小示例中演示的問題,最有價值的反饋報告包括重現問題的步驟,並包括演示該問題的示例原始程式碼。
 
-**未知的無回應**
+**未知沒有回應**
 
-如果無回應以無法預期的方式來進行資訊清單，在下一次出現時，啟動 Visual Studio 的新實例，並從該實例回報問題。
-在 [[記錄] 畫面](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)中，請務必選取沒有回應的 Visual Studio 會話。
+如果無回應以不可預知的方式表現出來,則在下一次發生時,啟動 Visual Studio 的新實例並報告該實例中的問題。
+在[「錄制」螢幕](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)中,請確保選擇無回應的可視化工作室會話。
 
-如果沒有回應的 Visual Studio 實例是在系統管理員模式中啟動，則第二個實例也必須以系統管理員模式啟動。
-
->[!NOTE] 
-> **最寶貴的意見反應：** 在此情況下，最寶貴的意見反應是在無回應時所捕捉到的堆積傾印。
-
-## <a name="slowness-and-high-cpu-issues"></a>緩慢和高 CPU 問題
-
-當緩慢的作業或高 CPU 事件正在進行時，所捕捉到的效能追蹤會導致緩慢或高 CPU 使用量問題最具動作。
+如果在管理員模式下啟動無回應的 Visual Studio 實例,則第二個實例也需要在管理員模式下啟動。
 
 >[!NOTE] 
-> 可能的話，請將每個案例隔離在個別的特定意見反應報告中。
-例如，如果輸入和流覽速度都很慢，請針對每個問題遵循下列步驟一次。 這可協助產品小組找出特定問題的原因。
+> **最有價值的回饋:** 對於這種情況,最有價值的反饋是在無回應時捕獲的堆轉儲。
 
-若要獲得最佳效能，請遵循下列步驟：
+## <a name="slowness-and-high-cpu-issues"></a>速度慢和 CPU 問題高
 
-1.  如果尚未執行，請複製 Visual Studio 開啟，您將會在其中重現問題
+使速度緩慢或 CPU 使用率高的問題最可操作的是,在操作緩慢或 CPU 事件正在進行時捕獲的性能跟蹤。
 
-    -   已設定所有專案來重現問題。 例如，如果您需要在開啟特定檔案時載入特定專案，請確定這兩個步驟都已完成，然後再繼續進行。
+>[!NOTE] 
+> 如果可能,在單獨的特定反饋報告中隔離每個方案。
+例如,如果鍵入和導航速度都很慢,請按問題執行以下步驟一次。 這有助於產品團隊隔離特定問題的原因。
 
-    -   如果您*未*回報載入解決方案的特定問題，請在錄製效能追蹤之前，嘗試等候5-10 分鐘（或更多，視解決方案大小而定）。 解決方案載入程式會產生大量的資料，因此等候幾分鐘的時間，可協助我們將焦點放在您所報告的特定問題。
+為了獲得最佳捕獲性能的結果,請按照以下步驟操作:
 
-2.  啟動 Visual Studio 的第二個複本 *，而不開啟任何解決方案*
+1.  如果尚未運行,請打開 Visual Studio 的副本,在其中重現問題
 
-3.  在 Visual Studio 的新複本中，開啟 [回報**問題**] 工具
+    -   設置一切以重現問題。 例如,如果需要使用打開的特定檔載入特定專案,請確保這兩個步驟都已完成,然後再繼續。
 
-4.  請遵循如何回報[問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)中的步驟，直到您到達「提供追蹤和堆積傾印（選擇性）」步驟為止。
+    -   如果未*報告特定於*載入解決方案的問題,請嘗試在打開解決方案後等待 5-10 分鐘(或更多),然後再記錄性能追蹤。 解決方案載入過程會產生大量資料,因此等待幾分鐘有助於我們專注於您報告的特定問題。
 
-5.  選擇記錄 Visual Studio 的第一份複本（遇到效能問題的人）並開始錄製。
+2.  啟動 Visual Studio 的第二個複本 *,無需開啟解決方案*
 
-    -   隨即會出現 [錄製器] 應用程式，並開始錄製。
+3.  Visual Studio 的新複本中開啟 **「報告問題**」工具
 
-    -   在**錄製期間，請**在 Visual Studio 的第一個複本中執行有問題的動作。 如果沒有出現在記錄的時間內，我們很難以修正特定的效能問題。
+4.  按照[「如何報告問題」](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)中的步驟操作,直到達到"提供跟蹤和堆轉儲(可選)"步驟。
 
-    -   如果動作短于30秒，而且可以輕鬆地重複，請重複此動作以進一步示範問題。
+5.  選擇錄製 Visual Studio 的第一個副本(遇到性能問題的拷貝)並開始錄製。
 
-    -   在大部分情況下，60秒的追蹤就足以示範問題，特別是有問題的動作持續（或重複）超過30秒時。 您可以視需要調整持續時間，以捕捉您想要修正的行為。
+    -   步驟記錄器應用程式將顯示並開始錄製。
 
-6.  當您想要報告的緩慢作業或高 CPU 事件完成時，請在步驟錄製器中按一下 [停止錄製]。 可能需要幾分鐘的時間來處理效能追蹤。
+    -   **在錄製過程中,** 在 Visual Studio 的第一個副本中執行有問題的操作。 如果特定性能問題未在記錄的時間內出現,我們很難糾正這些問題。
 
-7.  完成後，將會有數個附件可供您的意見反應。 附加可能有助於重現問題的任何其他檔案（範例專案、螢幕擷取畫面、影片等等）。
+    -   如果操作短於 30 秒,並且可以輕鬆重複,請重複該操作以進一步演示問題。
 
-8.  提交意見反應。
+    -   在大多數情況下,60 秒的痕跡足以證明問題,特別是如果有問題的操作持續(或重複)超過 30 秒。 可以根據需要調整持續時間,以捕獲要修復的行為。
 
-在錄製效能追蹤時，如果您要回報的緩慢作業或高 CPU 已到達結尾，則會立即停止錄製。 如果收集的資訊太多，則會覆寫最舊的資訊。 如果在有趣的作業之後，追蹤並未立即停止（在幾秒內），則會覆寫有用的追蹤資料。
+6.  一旦要報告的慢速操作或高 CPU 事件完成,單擊「步驟記錄器」中的「停止記錄」。 處理性能跟蹤可能需要幾分鐘時間。
 
-請勿直接將效能追蹤附加至開發人員論壇網站上的現有意見反應專案。 Visual Studio 內建的「回報問題」工具中，要求/提供其他資訊是支援的工作流程。 如果需要效能追蹤才能解決先前的意見專案，我們會將意見反應專案的狀態設定為「需要更多資訊」，這可以用與報告新問題的相同方式回應。 如需詳細指示，請參閱報告問題工具的檔中的「[需要更多資訊」一節](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info)。
+7.  完成後,您的反饋將包含多個附件。 附加可能有助於重現問題的任何其他檔(示例專案、螢幕截圖、視頻等)。
+
+8.  提交反饋。
+
+錄製性能追蹤時,如果報告操作緩慢或 CPU 高結束,則立即停止錄製。 如果收集了太多資訊,則最舊的資訊將被覆蓋。 如果在有趣的操作後(幾秒鐘內)沒有停止跟蹤,則有用的跟蹤數據將被覆蓋。
+
+不要直接將性能跟蹤附加到開發人員社區網站上的現有反饋專案。 請求/提供其他資訊是 Visual Studio 的內建「報告問題」工具中支援的工作流。 如果需要性能跟蹤來解決以前的反饋項目,我們將反饋項的狀態設置為"需要更多資訊",該狀態可以回應與報告新問題相同的方式。 有關詳細說明,請參閱「報告問題」工具文件中的[「需要更多資訊」部分](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info)。
 
 > [!NOTE] 
-> **最寶貴的意見反應：** 對於幾乎所有的緩慢/高 CPU 問題，最寶貴的意見反應是您嘗試執行之動作的高階描述，以及效能追蹤（\*.etl），它會在這段時間內捕捉行為。
+> **最有價值的回饋:** 對於幾乎所有速度緩慢/CPU 高的問題,最有價值的反饋是您嘗試做什麼的高級描述,以及捕獲該期間行為的性能跟蹤 (.etl.zip)。\*
 
-**先進的效能追蹤**
+**進階效能追蹤**
 
-在「報告-問題」工具中的追蹤收集功能，足以應付大部分的情況。 但有時候需要更多的追蹤收集控制權（例如，具有較大緩衝區大小的追蹤），在此情況下，PerfView 是很棒的工具可供使用。 使用 PerfView 工具手動錄製效能追蹤的步驟，請參閱使用[PerfView 記錄效能](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView)追蹤頁面。
+「報告問題」工具中的跟蹤收集功能對於大多數方案都足夠。 但是,有時需要對跟蹤集合進行更多的控制(例如,緩衝區大小的跟蹤),在這種情況下,PerfView 是一個偉大的工具。 使用 PerfView 工具手動錄製效能追蹤的步驟,請參閱[PerfView 頁面的錄製效能追蹤](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView)。
 
-## <a name="out-of-process-issues"></a>跨進程問題
+## <a name="out-of-process-issues"></a>行程外問題
 
 > [!NOTE]
-> 從 Visual Studio 2019 16.3 版開始，跨進程記錄檔會自動附加至使用「回報問題」工具提交的意見反應。 不過，如果問題直接重現，遵循下列步驟仍然可以協助新增額外的資訊，以協助您更進一步診斷問題。
+> 從 Visual Studio 2019 版本 16.3 開始,行程外日誌將自動附加到使用「報告問題」工具提交的反饋。 但是,如果問題可以直接重現,則按照以下步驟執行以下步驟仍有助於添加其他資訊以説明更好地診斷問題。
 
-有一些附屬程式會平行執行以 Visual Studio，並從主要 Visual Studio 程式外部提供各種功能。 如果其中一個附屬進程發生錯誤，通常會在 Visual Studio 端上看到為 ' StreamJsonRpc. RemoteInvocationException ' 或 ' StreamJsonRpc. ConnectionLostException '。
+有許多衛星進程與 Visual Studio 並行運行,並提供來自主視覺工作室進程之外的各種功能。 如果其中一個衛星進程發生錯誤,通常在視覺工作室一側被視為"StreamJsonRpc.遠端調用異常"或"StreamJsonRpc.連接丟失異常"。
 
-導致這些類型的問題最具動作的是，提供可依照下列步驟來收集的其他記錄：
+使這些類型的問題最可操作的是提供其他日誌,可以通過以下步驟收集:
 
-1.  如果這是可直接重現的問題，請從刪除 **% temp%/servicehub/logs**資料夾開始。 如果您無法重現此問題，請將此資料夾保持不變，並忽略下列專案符號：
+1.  如果這是直接可重現的問題,則從刪除 **%temp%/servicehub/logs**資料夾開始。 如果無法重現此問題,請保持此資料夾完好無損並忽略以下項目符號:
 
-    -   將全域環境變數**ServiceHubTraceLevel**設定為**All**
+    -   將全域環境變數**ServiceHub 追蹤等級**設定為**全部**
     -   重現問題。
 
-2.  在[這裡](https://www.microsoft.com/download/details.aspx?id=12493)下載 Microsoft Visual Studio 和 .NET Framework 記錄收集工具。
-3.  執行工具。 這會將 zip 檔案輸出至 **% temp%/vslogs.zip**。 請將該檔案附加到您的意見反應。
+2.  [在此處](https://www.microsoft.com/download/details.aspx?id=12493)下載微軟視覺工作室和 .NET 框架日誌收集工具。
+3.  執行工具。 這會將 zip 檔案輸出到 **%temp%/vslogs.zip**。 請將該檔附加到您的反饋中。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 意見反應選項](../ide/feedback-options.md)
-* [回報 Visual Studio for Mac 的問題](/visualstudio/mac/report-a-problem)
+* [報告 Mac 視覺工作室的問題](/visualstudio/mac/report-a-problem)
 * [回報 C++ 的問題](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)
-* [Developer Community 資料隱私權](developer-community-privacy.md)
+* [視覺工作室開發人員社區](https://developercommunity.visualstudio.com/)
+* [開發人員社群資料隱私權](developer-community-privacy.md)

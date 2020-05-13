@@ -2,55 +2,62 @@
 title: Visual Studio 訂用帳戶的新功能
 description: 了解您可以用來管理 Visual Studio 訂用帳戶的新功能和更新功能。
 ms.custom: ''
-ms.date: 08/26/2019
+ms.date: 04/01/2020
 ms.topic: conceptual
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.openlocfilehash: b78126d44922fefebbb86bad24788ba6a28e8e04
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
-ms.translationtype: HT
+ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
+ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060401"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649684"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的新功能
 
 我們會經常更新訂用帳戶權益套件，使其對於而言更加實用。 我們也會改良訂閱者和訂用帳戶的管理入口網站，為您提供最佳的使用體驗。  請繼續閱讀，深入了解按季排列的最新功能和更新。
 
-## <a name="2019-q3-june-august"></a>2019 年第 3 季 (6 月到 8 月)
+## <a name="2020-q1-january-march"></a>2020 第 1 季 (1 月至 3 月)
 
-### <a name="contact-my-admin-available-for-subscribers---august-2019"></a>訂閱者可以使用 [Contact my Admin] \(連絡我的管理員\) - 2019 年 8 月
-許多 Visual Studio 訂閱者會透過其公司或學校取得其訂用帳戶，且這些訂用帳戶是由系統管理員指派及管理。  在大型或複雜的組織中，需要管理員協助的訂閱者很難得知要連絡誰。  為了協助訂閱者，我們在訂閱者入口網站 (網址為 https://my.visualstudio.com/subscriptions ) 中新增了 [Contact my Admin] \(連絡我的管理員\) 功能。 如需詳細資訊，請參閱[連絡系統管理員](contact-my-admin.md)一文。 
+### <a name="subscriptions-administration-portal"></a>訂閱管理門戶
+2020 年第一季度,Visual Studio 訂閱管理門https://manage.visualstudio.com戶在 中出現了新的外觀和一些新功能。 對門戶的更改包括新的色彩配置和某些工具的重新排列。  訂閱分配、協定詳細資訊和最大使用量的概述現在由左上角的按鈕控制。  這有助於最大化您最常執行的管理任務的可用螢幕空間,例如分配和編輯訂閱。  
 
-### <a name="agreement-preferences-available-for-super-admins---august-2019"></a>超級管理員可以使用合約喜好設定 - 2019 年 8 月
-訂用帳戶管理入口網站中的一項新功能，現在可讓超級管理員取得其合約的全域喜好設定。  這可讓您設定喜好設定，以減少管理員在指派訂用帳戶時所需的工作量，並提供更佳的功能控制，例如管理員是否可以為其組織以外的使用者建立訂用帳戶。  如需詳細資訊，請參閱[設定合約喜好設定](admin-prefs.md)一文。 
+我們還組合了添加 invididual 訂閱者的選項,並在下拉**清單和添加**功能表中執行批量添加。 
 
-## <a name="2019-q2-april-june"></a>2019 第 2 季 (4 月至 6 月)
+   > [!div class="mx-imgBorder"]
+   > ![訂閱管理門戶的新 UI](_img/whats-new/new-admin-ui.png)
 
-### <a name="visual-studio-with-github-enterprise-subscriptions"></a>包含 GitHub Enterprise 訂用帳戶的 Visual Studio
-在 5 月的 //build 會議上，Microsoft 宣佈 Enterprise 合約客戶現可購買包含 GitHub Enterprise 的 Visual Studio 訂用帳戶。  這是以單一較低價格同時取得 Visual Studio 訂閱和 GitHub Enterprise 的簡單方法。  
+#### <a name="connect-emails"></a>連線電子郵件
+我們可以輕鬆地將使用 Microsoft 帳戶 (MSA) 的訂閱者與 Azure 活動目錄 (Azure AD) 進行匹配,因此您可以快速連結這兩個標識。  使用 Azure AD 標識可提高安全性和簡化訂閱管理。  有關詳細資訊,請瀏覽我們的[個人登入文章](personal-email-sign-ins.md)。 
 
-GitHub Enterprise 可使用透過 Enterprise 合約取得 Visual Studio Enterprise 和 Visual Studio Professional 訂用帳戶。 即使您的 Enterprise 合約未到續約時間，另有「升級」優惠可讓您新增 GitHub Enterprise。
+#### <a name="add-subscribers-using-azure-active-directory-groups"></a>使用 Azure 的目錄群組新增訂閱者
+如果您的組織使用 Azure 活動目錄 (Azure AD),則現在可以使用 Azure AD 組管理訂閱。  將訂閱分配給組使您能夠非常快速地向多個使用者提供相同類型的訂閱。  將新使用者添加到 Azure AD 組時,將自動為其分配訂閱。  如果從 Azure AD 組中刪除使用者,則其訂閱也會被刪除。  這有助於您的組織自動執行訂閱管理,從而節省管理員的時間和精力。  有關詳細資訊,請查看文檔中的[「新增多個使用者](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions)」文章。 
 
-若要深入了解權益、選項及定價，請瀏覽 https://visualstudio.microsoft.com/subscriptions/visual-studio-github 。 
+### <a name="cast-highlight"></a>CAST Highlight
+我們很高興地宣佈擴大我們的合作夥伴 CAST 亮點所提供的福利。 
+- Visual Studio 企業版訂閱中包含的權益期限已延長至六個月。  
+- Visual Studio 專業訂閱者現在可以收到訂閱,允許他們評估單個應用程式三個月。 
 
-如果組織的 Visual Studio 已經包含 GitHub Enterprise 訂用帳戶，您可以從我們的文件深入了解[管理 Visual Studio 和 GitHub Enterprise](assign-github.md) 訂用帳戶。  
+## <a name="2020-q2-april-june"></a>2020 年第 2 季 (4 月至 6 月)
 
-## <a name="2019-q1-january-march"></a>2019 第 1 季 (1 月至 3 月)
+### <a name="visual-studio-subscriptions-portal"></a>可視化工作室訂閱門戶
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>[訂用帳戶系統管理入口網站](https://manage.visualstudio.com)已新增使用量上限
-Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤曾購買和指派的訂用帳戶數量，並識別過去一年和整個合約持續時間內，每個層級曾指派的訂用帳戶尖峰數目。 這可協助您了解目前的訂用帳戶使用量，規劃未來的購買方案。 
+可視化工作室訂閱門戶的外觀和易用性發生了重大變化。  
 
-  > [!div class="mx-imgBorder"]
-  > ![[使用量上限] 功能表](_img/maximum-usage/maximum-usage-menu.png)
+- 福利磁貼已調整大小,並且都顯示在視窗中,因此您無需向左或向右滾動來查看給定類別中的所有磁貼。 
+- 您可以選擇顯示所有可用權益,或使用類別選取器僅顯示一個類別。
+   > [!div class="mx-imgBorder"]
+   > ![新的福利類別選擇器](_img/whats-new/whats-new-category-picker.png)
+- 我們還將訂閱選取器從視窗的右上角移動到更易於訪問的位置。
+   > [!div class="mx-imgBorder"]
+   > ![新的訂閱選取器](_img/whats-new/whats-new-sub-picker.png)
+- 我們在福利列表頂部添加了"特色福利",以標註新的或受歡迎的福利。  
+   > [!div class="mx-imgBorder"]
+   > ![新的特色優勢](_img/whats-new/whats-new-featured.png)
 
-您也可以查看指派的執行歷程記錄，包括您的購買和指派。   
-
-如需詳細資訊，請參閱[使用量上限](maximum-usage.md)一文。 
-
-
-
-
-
-現在就是這麼容易！
+## <a name="next-steps"></a>後續步驟
+- 檢視新的[訂閱管理門戶](https://manage.visualstudio.com)UI 及其新功能
+- 瞭解有關[CAST 亮點](vs-cast.md)的更多
+- 請務必在此處查看有關 Visual Studio 訂閱中新增功能的最新資訊!

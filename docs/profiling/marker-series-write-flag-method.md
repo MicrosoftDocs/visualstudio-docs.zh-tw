@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f09cca9bd1e3babccb0debc369881a0efa00fa0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62830807"
 ---
-# <a name="markerserieswriteflag-method"></a>marker_series::write_flag 方法
+# <a name="marker_serieswrite_flag-method"></a>marker_series::write_flag 方法
 將旗標寫入並行視覺化檢視追蹤檔。
 
 ## <a name="syntax"></a>語法
@@ -60,4 +60,4 @@ void write_flag(
  **命名空間：** Concurrency::diagnostic
 
 ## <a name="see-also"></a>另請參閱
-- [marker_series 類別](../profiling/marker-series-class.md)
+- [marker_series類](../profiling/marker-series-class.md)

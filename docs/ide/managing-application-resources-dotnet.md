@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e53c3701e31733c54869c71820956d674ed4fb8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593690"
 ---
 # <a name="manage-application-resources-net"></a>管理應用程式資源 (.NET)
@@ -31,17 +31,17 @@ ms.locfileid: "75593690"
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[管理應用程式資源 (Visual Studio for Mac)](/visualstudio/mac/managing-app-resources)。
 
-如需 .NET 桌面應用程式中的資源的詳細資訊，請參閱[桌面應用程式中的資源](/dotnet/framework/resources/index)。
+有關 .NET 桌面應用中的資源的詳細資訊，請參閱[桌面應用中的資源](/dotnet/framework/resources/index)。
 
 ## <a name="work-with-resources"></a>使用資源
 
 在 受控碼專案中，開啟 [專案屬性] 視窗。 您可以透過下列方式開啟 [屬性] 視窗：
 
-- 在 [方案總管] 中，以滑鼠右鍵按一下專案節點，並選取 [屬性]
+- 按右鍵**解決方案資源管理器**中的專案節點並選擇**屬性**
 - 在 **Ctrl**+**Q** 搜尋方塊中，輸入**專案屬性**
-- 在 [方案總管] 中選擇 **Alt**+**Enter**
+- 在**解決方案資源管理器**中選擇**Alt**+**Enter**
 
-選取 [**資源**] 索引標籤。如果您的專案尚未包含 .resx 檔案、新增和刪除不同種類的資源，以及修改現有的資源，您可以加入該檔案 *。*
+選擇"**資源**"選項卡。如果專案不包含 *.resx*檔，則可以添加 .resx 檔，添加和刪除不同類型的資源，並修改現有資源。
 
 ## <a name="resources-in-other-project-types"></a>其他專案類型中的資源
 
@@ -50,7 +50,7 @@ ms.locfileid: "75593690"
 - 通用 Windows 平台 (UWP) 應用程式，請參閱[應用程式資源和資源管理系統](/windows/uwp/app-resources/)
 - C++ 專案，請參閱[使用資源檔](/cpp/windows/working-with-resource-files)和[如何：建立資源](/cpp/windows/how-to-create-a-resource)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [桌面應用程式中的資源 (.NET Framework)](/dotnet/framework/resources/index)
+- [桌面應用中的資源（.NET 框架）](/dotnet/framework/resources/index)
 - [管理應用程式資源 (Visual Studio for Mac)](/visualstudio/mac/managing-app-resources)

@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::PreloadModules | Microsoft Docs
+title: IDebug運算式評估器2::P重新載入模組 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::PreloadModules
 - PreloadModules
 ms.assetid: bcf9b968-ee14-4a92-88ad-926268a44e03
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 46df8c3d50a08098ca75e7b115a931ad7580a91b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: db345fb2936ef7278675407549798ae669487f06
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325513"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729325"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
-預先載入指定的符號提供者所指定的模組。
+預載入指定符號提供程式指定的模組。
 
 ## <a name="syntax"></a>語法
 
@@ -40,16 +40,16 @@ int PreloadModules (
 
 ## <a name="parameters"></a>參數
 `pSym`\
-[in]符號提供者，將預先載入的模組。
+[在]將為其預載入模組的符號提供程式。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
-當您執行裝載處理序附加，則會使用這個選擇性的方法。 它可讓 EE 機會 '暖機' 做為附加的一部分。
+執行託管進程附加時,使用此可選方法。 它使 EE 有機會作為附加的一部分" 預熱」。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法，如**ExpressionEvaluatorPackage**公開 （expose） 的物件[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)介面。
+下面的範例展示如何為公開[IDebugExpression評估器2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)介面的**運算式計算機包**物件實現此方法。
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules

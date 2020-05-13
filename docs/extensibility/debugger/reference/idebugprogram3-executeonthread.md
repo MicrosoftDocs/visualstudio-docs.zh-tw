@@ -1,27 +1,27 @@
 ---
-title: IDebugProgram3::ExecuteOnThread | Microsoft Docs
+title: IDebugProgram3::執行線程 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 798a0caca394a21d6ee12a99efeacb2f27f6969c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 201c08352bc5b616298349c52197529ef3f1a7d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343608"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722655"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
-偵錯工具將程式執行。 執行緒會傳回給哪一個執行緒執行程式時，正在檢視使用者的偵錯工具資訊。
+執行調試器程式。 返回線程以向調試器提供有關使用者在執行程式時正在查看的線程的資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -38,22 +38,22 @@ int ExecuteOnThread(
 
 ## <a name="parameters"></a>參數
 `pThread`\
-[in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件。
+[在][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 有三種不同的方式偵錯工具可以繼續執行停止後的執行：
+ 除錯器在停止後可以恢復執行的三種不同方式:
 
-- 執行：取消任何先前的步驟，並一直執行，直到下一個中斷點，依此類推。
+- 執行:取消任何上一步,並一直運行到下一個斷點等。
 
-- 步驟：取消任何舊的步驟，並執行，直到新的步驟會完成。
+- 步驟:取消任何舊步驟,並一直運行到新步驟完成。
 
-- 繼續：再次執行，並讓任何舊的步驟保持在作用中。
+- 繼續:再次運行,並保留任何舊步驟處於活動狀態。
 
-  執行緒傳遞給`ExecuteOnThread`決定哪個步驟來取消時很有用。 如果您不知道執行的執行緒，執行會取消所有步驟。 了解的執行緒，您只需要取消作用中執行緒上的步驟。
+  在決定要取消`ExecuteOnThread`哪個步驟時,傳遞給的線程非常有用。 如果不知道線程,運行執行將取消所有步驟。 瞭解線程后,只需取消活動線程上的步驟。
 
 ## <a name="see-also"></a>另請參閱
-- [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
+- [執行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
 - [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)

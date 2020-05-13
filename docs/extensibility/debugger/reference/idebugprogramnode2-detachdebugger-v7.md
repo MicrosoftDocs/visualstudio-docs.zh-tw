@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
+title: IDebugProgramNode2::Detach調試器_V7 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::DetachDebugger
 - IDebugProgramNode2::DetachDebugger_V7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 241db5db55897932120b3253ff5185cb852ea77b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 925f1b07662ece35d21f9b647681bc898428c4c7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351210"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722117"
 ---
-# <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
+# <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 
 > [!Note]
-> 已被取代。 請勿使用。
+> 廢棄。 請勿使用。
 
 ## <a name="syntax"></a>語法
 
@@ -41,14 +41,14 @@ int DetachDebugger_V7 ();
 
 ## <a name="return-value"></a>傳回值
 
-實作應該一律傳回`E_NOTIMPL`。
+實現應始終返回`E_NOTIMPL`。
 
 ## <a name="remarks"></a>備註
 
 > [!WARNING]
-> 截至 Visual Studio 2005 中，這個方法不會再使用，並應該一律傳回`E_NOTIMPL`。
+> 自 Visual Studio 2005 起,此方法不再使用`E_NOTIMPL`,應始終返回 。
 
-偵錯工具意外結束時，會呼叫這個方法。 呼叫這個方法時，DE 應該繼續程式，如同使用者已從它中斷連結。 應該不傳送任何偵錯事件。 程式應該要在其所在之可附加的偵錯工具的另一個執行個體的狀態。
+當調試器意外退出時,將調用此方法。 調用此方法時,DE 應像使用者從程式分離時一樣恢復該程式。 不應再發送調試事件。 程序應處於一種狀態,可以從調試器的另一個實例附加該程式。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,18 +1,19 @@
 ---
 title: 瀏覽儲存體以上傳資料
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0f2522117f4c5a5b85e99e2779d10cffcb7f22
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: ece3ffa3a273e903f403fd7df7005bfb54172f62
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777402"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638447"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>瀏覽儲存體以上傳資料或下載模型和記錄檔
 
@@ -20,16 +21,16 @@ ms.locfileid: "72777402"
 
 ## <a name="to-access-all-data-on-the-remote-machine-or-file-share"></a>若要存取位於遠端電腦或檔案共用的所有資料
 
-1. 開啟 [伺服器總管]。
+1. 開啟 [伺服器總管]****。
 2. 展開遠端電腦或批次 AI 計算內容。
-3. 以滑鼠右鍵按一下 [儲存體]，然後按一下 [瀏覽]。
+3. 以滑鼠右鍵按一下 [儲存體]****，然後按一下 [瀏覽]****。
 
-    ![儲存體](media/manage-storage/browse-storage.png)
+    ![儲存](media/manage-storage/browse-storage.png)
 
 ## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>若要存取位於遠端電腦或檔案共用上的特定作業資料
 
 1. 請開啟[作業歷程記錄](job-details.md)
-2. 選取作業。
-3. 按一下 [工作資料夾] 或按一下 [StdOut / Stderr] 以快速存取這些重要記錄檔。
+2. 選取工作。
+3. 按一下 [工作資料夾]**** 或按一下 [StdOut / Stderr]**** 以快速存取這些重要記錄檔。
 
-    ![儲存體](media/manage-storage/job-workingfolder.png)
+    ![儲存](media/manage-storage/job-workingfolder.png)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7627a5df1b3fcc5d26e33353e91f525b8083ccdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72637301"
 ---
 # <a name="filter-nodes"></a>篩選節點
@@ -21,7 +21,7 @@ ms.locfileid: "72637301"
 
 ## <a name="filter-node-reference"></a>篩選節點參考
 
-|節點|詳細資料|內容|
+|節點|詳細資料|屬性|
 |----------|-------------|----------------|
 |**模糊**|使用高斯函數，使材質中的像素變得模糊。<br /><br /> 您可以用此來減少材質中的色彩詳細資料或雜訊。<br /><br /> **輸入：**<br /><br /> `UV`: `float2`<br /> 要測試的材質座標。<br /><br /> **輸出：**<br /><br /> `Output`: `float4`<br /> 模糊效果的色彩值。|**紋理**<br /> 與模糊期間使用之取樣器產生關聯的材質暫存器。|
 |**反滲透**|減少指定色彩中的色彩量。<br /><br /> 當移除色彩時，色彩值會相當接近灰階。<br /><br /> **輸入：**<br /><br /> `RGB`: `float3`<br /> 要去色的色彩。<br /><br /> `Percent`: `float`<br /> 若要移除的色彩百分比，以 [0, 1] 範圍內的標準化數值表示。<br /><br /> **輸出：**<br /><br /> `Output`: `float3`<br /> 已去色的色彩。|**明亮度**<br /> 提供給紅色、綠色和藍色色彩元件的加權。|

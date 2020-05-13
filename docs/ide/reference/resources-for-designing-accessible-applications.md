@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "70107841"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>設計無障礙應用程式的資源
@@ -40,23 +40,23 @@ ms.locfileid: "70107841"
 
 ## <a name="windows-applications"></a>Windows 應用程式
 
-* **[逐步解說：建立 Windows 型無障礙應用程式](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** ：本文提供逐步指示，說明如何將 "Certified for Windows" 標誌的五個協助工具需求納入 Windows 範例應用程式中。
+* **[逐步解說：建立 Windows 型無障礙應用程式](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**：本文提供逐步指示，說明如何將 "Certified for Windows" 標誌的五個協助工具要求納入 Windows 應用程式中範例。
 
 * **鍵盤使用者介面設計指導方針**：本技術文章描述如何設計可讓使用者從鍵盤巡覽的 Windows 應用程式。 如需詳細資訊，請參閱[鍵盤使用者介面設計指導方針](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)。
 
-* **主控台協助工具**：此技術文章說明可在 Windows XP 中公開協助工具輔助主控台的 API 和事件。 如需詳細資訊，請參閱[主控台協助工具](/previous-versions/windows/desktop/dnacc/console-accessibility)。
+* **主控台可訪問性**本技術文章介紹用於在 Windows XP 中公開主控台以用於協助工具的 API 和事件。 如需詳細資訊，請參閱[主控台協助工具](/previous-versions/windows/desktop/dnacc/console-accessibility)。
 
 ## <a name="websites"></a>網站
 
-- [逐步解說：Accessibility Guidelines for Using Image Controls, Menu Controls, and AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) (使用影像控制項、功能表控制項和 AutoPostBack 的協助工具方針)：本文提供在網頁範例中包含可存取控制項的逐步指示。 其亦提供 Web 的一些協助工具設計祕訣。
+- [逐步解說：使用影像控制項、功能表控制項和 AutoPostBack 的可及性方針](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202)：本文提供在網頁範例中包含可存取控制項的逐步指示。 其亦提供 Web 的一些協助工具設計祕訣。
 
 - **Creating Accessible Web Pages with DHTML** (建立含有 DHTML 的可存取網頁)：此技術文章列出可存取的 HTML 4.0 元素以及可存取的 Web 設計祕訣。 如需詳細資訊，請參閱 [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (建立具有 DHTML 的可存取網頁)。
 
 ### <a name="third-party-resources"></a>協力廠商資源
 
-- **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** (全球資訊網協會 (W3C) 的 Web 協助工具計劃)：本網站提供可存取之網站開發的指導方針和技術。 如需詳細資訊，請參閱 [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)。
+- **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** (全球資訊網協會 (W3C) 的 Web 協助工具計劃)：本網站提供可存取之網站開發的指導方針和技術。 有關詳細資訊，請參閱[https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)。
 
 ## <a name="see-also"></a>另請參閱
 
-* [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [視覺工作室的協助工具](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Visual Studio for Mac 的協助工具](/visualstudio/mac/accessibility/)

@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779545"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 計數器
@@ -45,7 +45,7 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 
 可攜式事件是一組不屬於特定處理器的 CPU 計數器。 其他所有的 CPU 計數器都稱為平台事件，在各種平台上可能不支援。
 
- 可攜式和平台事件的計數器都以 .*xml* 檔案定義，其中提供有關計數器的特定值。 不同 CPU 有多個檔案，因為 (例如) Intel 和 AMD 的 CPU 資料不同。 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 分析工具使用此資訊對使用者顯示適當的計數器 (可攜式和平台) 進行效能度量。
+ 可擕式和平臺事件的計數器在 中定義。*xml*檔，其中提供了與計數器相關的特定值。 不同 CPU 有多個檔案，因為 (例如) Intel 和 AMD 的 CPU 資料不同。 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 分析工具使用此資訊對使用者顯示適當的計數器 (可攜式和平台) 進行效能度量。
 
 ### <a name="portable-events"></a>可攜式事件
 
@@ -53,27 +53,27 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 
 **一般事件**
 
-|事件名稱|事件描述|
+|活動名稱|事件說明|
 |----------------|-----------------------|
 |Instructions Retired|表示直到事件完成已執行的指令數目。|
 |Non Halted Cycles|表示處理器只在這些循環未停止 (例如正在等候 I/O)。|
 
 **前端事件**
 
-|事件名稱|事件描述|
+|活動名稱|事件說明|
 |----------------|-----------------------|
 |ITLB Misses|表示導致遺漏的指令轉譯旁觀緩衝區查閱數。|
 
 **分支事件**
 
-|事件名稱|事件描述|
+|活動名稱|事件說明|
 |----------------|-----------------------|
 |Branches Retired|表示直到事件完成已執行的分支指令數目。|
 |Mis-predicted Branches|表示因為處理器預測不正確的路徑而錯估的分支。 錯估的分支會影響效能，因為處理器必須捨棄所有完成的工作，然後要在正確的路徑上重新啟動。|
 
 **記憶體事件︰**
 
-|事件名稱|事件描述|
+|活動名稱|事件說明|
 |----------------|-----------------------|
 |L2 Cache Read Misses|表示第二個層級快取讀取遺漏的數目。|
 |L2 Cache Read References|表示第二個層級快取讀取參考的數目。 包括載入遺漏和讀取擁有權 (RFO) 的遺漏和叫用。|
@@ -88,31 +88,31 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 
 #### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>檢視目前平台支援的所有 CPU 計數器清單
 
-1. 在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。
+1. 在性能資源管理器中，按右鍵性能會話，**然後按一下屬性**。
 
-2. 執行下列任一步驟：
+2. 執行下列其中一個動作：
 
-   - 按一下 [取樣]，然後從 [樣本] 事件清單選取 [效能計數器]。 CPU 計數器會列在 [可用的效能計數器] 中。
+   - 按一下 [取樣]****，然後從 [樣本]**** 事件清單選取 [效能計數器]****。 CPU 計數器會列在 [可用的效能計數器]**** 中。
 
-      **注意** 按一下 [取消] 可回到前一個取樣組態。
+      **注意** 按一下 [取消]**** 可回到前一個取樣組態。
 
      -或-
 
-   - 選取 [CPU 計數器]，然後選取 [收集 CPU 計數器]。 CPU 計數器會列在 [可用的計數器] 中。
+   - 選取 [CPU 計數器]****，然後選取 [收集 CPU 計數器]****。 CPU 計數器會列在 [可用的計數器]**** 中。
 
-      **注意** 按一下 [取消] 可回到前一個計數器收集組態。
+      **注意**按一下 **"取消"** 返回到以前的計數器集合配置。
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>檢視目前平台支援的 Windows 計數器清單
 
-1. 在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。
+1. 在性能資源管理器中，按右鍵性能會話，**然後按一下屬性**。
 
-2. 按一下 [Windows 計數器]。
+2. 按一下 [Windows 計數器]****。
 
-3. 選取 [收集 Windows 計數器]。
+3. 選取 [收集 Windows 計數器]****。
 
-4. 從 [計數器分類] 清單中，選取計數器群組。 群組的 Windows 計數器會顯示在清單方塊中。
+4. 從 [計數器分類]**** 清單中，選取計數器群組。 群組的 Windows 計數器會顯示在清單方塊中。
 
-     **注意：** 按一下 [取消] 可回到前一個計數器收集組態。
+     **注意：** 按一下 [取消]**** 可回到前一個計數器收集組態。
 
 ### <a name="command-line"></a>命令列
 
@@ -124,13 +124,13 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 
 2. 類型
 
-     **\<Visual Studio 效能工具目錄>\VSPerfCmd /querycounters**
+     **\<視覺化工作室性能工具目錄>_VSPerfCmd /查詢計數器**
 
-     其中 \<Visual Studio 效能工具目錄> 是您 Visual Studio 安裝的效能工具目錄路徑。 若要取得效能工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
+     * \<其中視覺工作室性能工具目錄>* 是視覺化工作室安裝的性能工具目錄的路徑。 若要取得效能工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [概述](../profiling/overviews-performance-tools.md)
-[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)
-[如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)
+[如何：選擇採樣事件](../profiling/how-to-choose-sampling-events.md)
+[如何：如何收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)
 [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)

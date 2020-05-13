@@ -12,54 +12,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34225858e88f4ee969f0e51013bcdb04812d425f
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.openlocfilehash: 78a47cb2a5aefd7d20e0b8087f5f3ad735716175
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77144776"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79431276"
 ---
-# <a name="overview-of-source-code-analyzers"></a>原始程式碼分析器的總覽
+# <a name="overview-of-source-code-analyzers"></a>原始程式碼分析器概述
 
-.NET Compiler Platform （"Roslyn"）程式碼分析器會C#檢查您或 Visual Basic 的程式碼，以瞭解樣式、品質和可維護性、設計和其他問題。
+.NET 編譯器平臺 （"Roslyn"） 代碼分析器檢查您的 C# 或 Visual Basic 代碼，瞭解樣式、品質和可維護性、設計和其他問題。
 
-- 有些分析器內建 Visual Studio。 這些分析器的診斷識別碼（或程式碼）的格式為 IDExxxx，例如 IDE0067。 大部分的內建分析器都會檢查程式[代碼樣式](../ide/code-styles-and-code-cleanup.md)，而您可以在 [[文字編輯器](../ide/code-styles-and-code-cleanup.md)] [選項] 頁面或在[EditorConfig](../ide/editorconfig-code-style-settings-reference.md)檔案中設定喜好設定。 幾個內建分析器會查看程式碼品質。
+- 某些分析器內置於視覺化工作室中。 這些分析器的診斷 ID 或代碼是 IDExxxx 格式，例如 IDE0067。 大多數這些內置分析器檢查[代碼樣式](../ide/code-styles-and-code-cleanup.md)，您可以在[文字編輯器選項頁](../ide/code-styles-and-code-cleanup.md)或[編輯器設定檔中](../ide/editorconfig-code-style-settings-reference.md)配置首選項。 少數內置分析器查看代碼品質。
 
-- 您可以將其他分析器安裝為 NuGet 套件或 Visual Studio 延伸模組。 例如，
+- 您可以將其他分析器安裝為 NuGet 包或 Visual Studio 擴展。 例如：
 
-  - [FxCop 分析器](../code-quality/install-fxcop-analyzers.md)，Microsoft 建議的程式碼品質分析器
-  - 協力廠商分析器，例如[stylecop 能夠](https://www.nuget.org/packages/StyleCop.Analyzers/)、 [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/)、 [XUnit 分析器](https://www.nuget.org/packages/xunit.analyzers/)和[Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
+  - [FxCop 分析儀](../code-quality/install-fxcop-analyzers.md)，微軟推薦的代碼品質分析儀
+  - 協力廠商分析儀，如[StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/)StyleCop、Roslynator、XUnit[分析儀](https://www.nuget.org/packages/xunit.analyzers/)和[聲納分析儀](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)[ ](https://www.nuget.org/packages/Roslynator.Analyzers/)
 
-如果分析器發現違反規則，則會在程式碼編輯器中回報（做為有問題的程式碼下的*波浪*線）和 [錯誤清單] 視窗。
+如果分析器發現規則衝突，則在代碼編輯器（作為違規代碼下的*波浪*）和"錯誤清單"視窗中報告它們。
 
-許多分析器規則或「診斷」都有一或多個相關聯的「程式碼修正」，可套用以修正問題。 內建於 Visual Studio 的分析器診斷各有相關聯的程式碼修正。 程式碼修正會顯示在燈泡圖示功能表中，並顯示其他類型的[快速動作](../ide/quick-actions.md)。 如需這些程式碼修正的資訊，請參閱[一般的快速動作](../ide/common-quick-actions.md)。
+許多分析器規則或「診斷」** 都有一或多個相關聯的「程式碼修正」**，可套用以修正問題。 內建於 Visual Studio 的分析器診斷各有相關聯的程式碼修正。 程式碼修正會顯示在燈泡圖示功能表中，並顯示其他類型的[快速動作](../ide/quick-actions.md)。 如需這些程式碼修正的資訊，請參閱[一般的快速動作](../ide/common-quick-actions.md)。
 
 ![分析器違規和快速動作程式碼修正](../code-quality/media/built-in-analyzer-code-fix.png)
 
-## <a name="source-code-analysis-versus-legacy-analysis"></a>原始碼分析與舊版分析
+## <a name="source-code-analysis-versus-legacy-analysis"></a>原始程式碼分析與舊版分析
 
-Roslyn 分析器的來源分析會取代 managed 程式碼的[舊版分析](../code-quality/code-analysis-for-managed-code-overview.md)。 許多舊版分析規則都已經改寫為 Roslyn 程式碼分析器。 對於較新的專案範本，例如 .NET Core 和 .NET Standard 專案，舊版分析甚至無法使用。
+Roslyn 分析器的源分析取代了託管代碼[的舊分析](../code-quality/code-analysis-for-managed-code-overview.md)。 許多舊分析規則已被重寫為 Roslyn 代碼分析器。 對於較新的專案範本（如 .NET Core 和 .NET 標準專案），即使舊版分析也不可用。
 
-如同舊版分析規則違規，原始程式碼分析違規會出現在 Visual Studio 的 [錯誤清單] 視窗中。 此外，原始程式碼的分析違規也會在程式碼編輯器中顯示為*波浪線*在違規程序代碼之下。 波形曲線色彩取決於規則的[嚴重性設定](../code-quality/use-roslyn-analyzers.md#rule-severity)。 下圖顯示三個違規&mdash;一個紅色、一個綠色和一個灰色：
+與舊版分析規則衝突一樣，原始程式碼分析衝突也顯示在 Visual Studio 中的"錯誤清單"視窗中。 此外，原始程式碼分析衝突也會在代碼編輯器中顯示為違規代碼下的*波浪。* 波形曲線色彩取決於規則的[嚴重性設定](../code-quality/use-roslyn-analyzers.md#rule-severity)。 下圖顯示了三個衝突&mdash;，一個是紅色、一個綠色和一個灰色：
 
-![Visual Studio 中的程式碼編輯器中的波浪線](media/diagnostics-severity-colors.png)
+![視覺工作室中的代碼編輯器中的晃動](media/diagnostics-severity-colors.png)
 
-程式碼分析器會在組建階段檢查程式碼，例如舊版分析（如果已啟用），但也會在您輸入時即時偵測。 若您啟用[完整解決方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#toggle-full-solution-analysis)，程式碼分析器也會在設計階段提供並未在編輯器中開啟的程式碼檔案分析。
+代碼分析器在生成時檢查代碼，如舊版分析（如果啟用了代碼），但在鍵入時也即時進行。 您可以將即時代碼分析的範圍配置為僅針對當前文檔、所有打開的文檔或整個解決方案執行。 請參閱[如何：配置即時代碼分析的範圍](./configure-live-code-analysis-scope-managed-code.md)。
 
 > [!TIP]
-> 只有在將分析器作為 NuGet 套件安裝時，才會顯示程式碼分析器的建置期間錯誤和警告。 內建分析器（例如，IDE0067 和 IDE0068）永遠不會在組建期間執行。
+> 只有在將分析器作為 NuGet 套件安裝時，才會顯示程式碼分析器的建置期間錯誤和警告。 內置分析器（例如 IDE0067 和 IDE0068）在生成期間從不運行。
 
-Roslyn 程式碼分析器不僅會回報舊版分析所需的相同類型問題，還可讓您輕鬆地修正檔案或專案中發生的一或多個違規。 這些動作稱為「程式碼修正」。 程式碼修正是 IDE 特有的;在 Visual Studio 中，它們會實作為[快速動作](../ide/quick-actions.md)。 並非所有分析器診斷都有相關聯的程式碼修正。
+Roslyn 代碼分析器不僅報告與舊版分析相同的問題類型，而且使您能夠輕鬆修復檔或專案中的一個或所有衝突發生。 這些動作稱為「程式碼修正」**。 代碼修復特定于 IDE;在視覺工作室中，它們被實現為["快速操作](../ide/quick-actions.md)"。 並非所有分析器診斷都有相關聯的程式碼修正。
 
 > [!NOTE]
-> [**分析** > **執行程式碼分析**] 功能表選項只適用于舊版分析。
+> 在 Visual Studio 2019 16.5 版本之前，**分析** > **運行代碼分析**功能表選項執行舊版分析。 從 Visual Studio 2019 16.5 開始，**運行代碼分析**功能表選項將執行基於 Roslyn 的基於 Roslyn 的分析器，用於所選項目或解決方案。
 
-若要區別來自程式碼分析器的違規和錯誤清單中的舊版分析，請查看**Tool**資料行。 若 [工具] 值與 [方案總管] 中其中一個分析器組件 (例如 **Microsoft.CodeQuality.Analyzers**) 相符，則此違規即來自程式碼分析器。 否則，違規即來自於舊版分析。
+要區分錯誤清單中的代碼分析器和遺留分析的違規情況，請查看 **"工具"** 列。 若 [工具] 值與 [方案總管]**** 中其中一個分析器組件 (例如 **Microsoft.CodeQuality.Analyzers**) 相符，則此違規即來自程式碼分析器。 否則，違規即來自於舊版分析。
 
 ![[錯誤清單] 中的 [工具] 欄](media/code-analysis-tool-in-error-list.png)
 
 > [!TIP]
-> 專案檔中的**RunCodeAnalysis** MSBuild 屬性僅適用于舊版分析。 如果您安裝分析器，請在專案檔中將**RunCodeAnalysis**設定為**false** ，以避免在組建之後執行舊版分析。
+> 專案檔案中的**RunCodeAnalysis** MSBuild 屬性僅適用于舊版分析。 如果安裝分析器，請將**RunCodeAnalysis**設置為專案檔案中**的 false，** 以防止生成後運行舊分析。
 >
 > ```xml
 > <RunCodeAnalysis>false</RunCodeAnalysis>
@@ -67,23 +67,23 @@ Roslyn 程式碼分析器不僅會回報舊版分析所需的相同類型問題�
 
 ## <a name="nuget-package-versus-vsix-extension"></a>NuGet 套件與 VSIX 延伸模組
 
-您可以透過 NuGet 套件，針對每個專案安裝 Roslyn 程式碼分析器。 有些也可以做為 Visual Studio 延伸模組，在這種情況下，它們會套用至您在 Visual Studio 中開啟的任何解決方案。 這兩種[安裝分析器](../code-quality/install-roslyn-analyzers.md)的方法之間有一些重要的行為差異。
+Roslyn 代碼分析儀可通過 NuGet 包按專案安裝。 有些還可以作為 Visual Studio 擴展，在這種情況下，它們適用于您在 Visual Studio 中打開的任何解決方案。 這兩種[安裝分析器](../code-quality/install-roslyn-analyzers.md)的方法之間有一些重要的行為差異。
 
-### <a name="scope"></a>範圍
+### <a name="scope"></a>影響範圍
 
-如果您將分析器安裝為 Visual Studio 擴充功能，它們會套用至解決方案層級和所有 Visual Studio 的實例。 如果您將分析器安裝為 NuGet 套件 (這是慣用方法)，則只會套用至安裝 NuGet 套件的專案。 在小組環境中，安裝為 NuGet 套件的分析器會將範圍限制在處理該專案的「所有開發人員」。
+如果將分析器安裝為 Visual Studio 擴展，則它們將應用於解決方案級別和 Visual Studio 的所有實例。 如果您將分析器安裝為 NuGet 套件 (這是慣用方法)，則只會套用至安裝 NuGet 套件的專案。 在小組環境中，安裝為 NuGet 套件的分析器會將範圍限制在處理該專案的「所有開發人員」**。
 
 ### <a name="build-errors"></a>建置錯誤
 
 若要在建置期間施行規則 (包括透過命令列或作為持續整合 (CI) 組建的一部分)，請將分析器安裝為 NuGet 套件。 如果您將分析器安裝為延伸模組，則分析器警告和錯誤不會顯示在組建報告中。
 
-下圖顯示建立包含分析器規則違規之專案的命令列組建輸出：
+下圖顯示了生成包含分析器規則衝突的專案的命令列生成輸出：
 
 ![包含違規的 MSBuild 輸出](media/command-line-build-analyzers.png)
 
 ### <a name="rule-severity"></a>規則嚴重性
 
-您無法從安裝為 Visual Studio 擴充功能的分析器設定規則的嚴重性。 若要設定[規則嚴重性](../code-quality/use-roslyn-analyzers.md#rule-severity)，請將分析器安裝為 NuGet 套件。
+您不能從作為 Visual Studio 擴展安裝的分析器中配置規則的嚴重性。 若要設定[規則嚴重性](../code-quality/use-roslyn-analyzers.md#rule-severity)，請將分析器安裝為 NuGet 套件。
 
 ## <a name="next-steps"></a>後續步驟
 

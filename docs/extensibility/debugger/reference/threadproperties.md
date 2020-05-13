@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTIES |Microsoft Docs
+title: 線程屬性 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTIES structure
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0e39102fa66c04a15042ffd82086ac66d3058ca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316175"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713429"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
-描述執行緒屬性。
+描述線程的屬性。
 
 ## <a name="syntax"></a>語法
 
@@ -53,38 +53,38 @@ public struct THREADPROPERTIES { 
 
 ## <a name="members"></a>成員
  `dwFields`\
- 從旗標的組合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)列舉，描述在此結構中的哪一個欄位都有效。
+ [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)枚舉中的標誌的組合,描述此結構中的哪些欄位有效。
 
  `dwThreadId`\
- 執行緒 id。
+ 線程識別碼。
 
  `dwSuspendCount`\
- 執行緒暫停計數。
+ 線程掛起計數。
 
  `dwThreadState`\
- 值，以從[THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)列舉，指出作業的執行緒的狀態。
+ [來自 THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)枚舉的值,指示操作線程的狀態。
 
  `bstrPriority`\
- 字串，指定的執行緒優先權。例如，"上方 Normal"、"Normal"或者 「 時間重大 」。
+ 指定線程優先權的字串;字串例如,"高於正常"、"正常"或"時間關鍵"。
 
  `bstName`\
- 執行緒名稱。
+ 線程名稱。
 
  `bstrLocation`\
- 執行緒位置 （通常是最上層的堆疊框架），通常表示為目前停止執行方法的名稱。
+ 線程位置(通常是最頂層堆疊幀)通常表示為當前停止執行的方法的名稱。
 
 ## <a name="remarks"></a>備註
- 此結構會填入藉由呼叫[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法。 因此傳回的資訊通常會用於填入**執行緒**視窗。
+ 此結構由對[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法的調用填充。 傳回的資訊通常用於填充 **「線程」** 視窗。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)
 - [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)

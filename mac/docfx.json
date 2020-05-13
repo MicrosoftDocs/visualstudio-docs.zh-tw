@@ -106,13 +106,7 @@
         "2017/**/*.yml": "Visual Studio 2017 for Mac"
       },
       "feedback_system": {
-        "2017/**/*.md": "",
-        "kb-support/*.md": "None",
-        "kb-support/**/*.md": "None"
-      },
-      "disable_contribution_on_translation_quality": {
-        "kb-support/*.md": ["HT","MT","MTE75","MTE95","Blank"],
-        "kb-support/**/*.md": ["HT","MT","MTE75","MTE95","Blank"]
+        "2017/**/*.md": ""
       },
       "feedback_github_repo": {
         "2017/**/*.md": ""

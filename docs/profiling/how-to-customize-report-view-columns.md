@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778969"
 ---
 # <a name="how-to-customize-report-view-columns"></a>如何：自訂報表檢視資料行
@@ -34,7 +34,7 @@ Visual Studio Team System Development 版的效能工具已完全整合至整合
 
 - [呼叫端/被呼叫端檢視](../profiling/caller-callee-view.md)
 
-- [呼叫樹狀圖檢視](../profiling/call-tree-view.md)
+- [調用樹狀檢視](../profiling/call-tree-view.md)
 
 - [配置檢視](../profiling/dotnet-memory-allocations-view.md)
 
@@ -48,12 +48,12 @@ Visual Studio Team System Development 版的效能工具已完全整合至整合
 
 1. 開啟報表檢視。
 
-2. 以滑鼠右鍵按一下報表檢視介面，然後按一下 [新增/移除資料行]。
+2. 以滑鼠右鍵按一下報表檢視介面，然後按一下 [新增/移除資料行]****。
 
-     [新增/移除資料行] 對話方塊隨即顯示。
+     [新增/移除欄位]**** 對話方塊隨即出現。
 
 3. 選取您要新增的資料行。
 
 4. 按一下箭號按鈕以重新排列資料行。
 
-5. 按一下 [確定]。
+5. 按一下 [確定]****。

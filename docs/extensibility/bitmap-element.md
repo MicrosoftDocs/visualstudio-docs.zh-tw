@@ -1,25 +1,25 @@
 ---
-title: Bitmap 元素 |Microsoft Docs
+title: 圖元素 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cba0f5ccd3228466740a9fb907e6c20ce5400c48
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2d663351aad7d381dd5bfe4cbaa0a263cc70b821
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333577"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740004"
 ---
-# <a name="bitmap-element"></a>Bitmap 元素
-定義點陣圖。 從資源或者從檔案載入點陣圖。
+# <a name="bitmap-element"></a>點陣圖元素
+定義點陣圖。 點陣圖從資源或檔載入。
 
 ## <a name="syntax"></a>語法
 
@@ -34,11 +34,11 @@ ms.locfileid: "66333577"
 
 |屬性|描述|
 |---------------|-----------------|
-|guid|必要項。 GUID/識別碼命令識別碼的 GUID。<br /><br /> 無法與任何 VSPackage 或其他命令群組相關聯的點陣圖的 guid 屬性。  它應該是唯一之點陣圖定義，且不應用於其他用途。|
-|resID|GUID/識別碼的命令識別項的識別碼。 需要 resID 或 href 屬性。<br /><br /> ResID 屬性會決定要載入命令資料表合併期間點陣圖區整數資源識別碼。  載入命令資料表時，會從相同模組的資源載入的資源識別碼所指定的點陣圖。|
-|usedList|需要 resID 屬性是否存在。 選取可用的映像中的點陣圖區。|
-|href|點陣圖的路徑。 需要 resID 或 href 屬性。<br /><br /> 指定的映像檔，內嵌在產生的二進位檔中搜尋 include 路徑。  在命令資料表合併期間複製映像，並不需要任何額外的資源查閱或負載。  UsedList 屬性不存在，在區域中的所有映像可用。 **注意：** 映像可能會提供包含數種格式之一 *.bmp*， *.png*，並 *.gif*。  舊版編譯器不支援部分的透明度的 alpha 資訊的 32 位元點陣圖影像。 這些版本的因應措施是使用 *.png*格式。|
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|guid|必要。 GUID/ID 命令識別碼的 GUID。<br /><br /> 位圖的 guid 屬性不與任何 VSPackage 或其他命令組關聯。  它應該是位圖定義的唯一,不應用於任何其他目的。|
+|渣 油|GUID/ID 命令識別碼的識別碼。 需要 resID 或 href 屬性。<br /><br /> resID 屬性是一個整數資源 ID,用於確定在命令表合併期間要載入的點陣圖條帶。  載入指令表時,資源 ID 指定的點陣圖將從同一模組的資源載入。|
+|已使用清單|如果存在 resID 屬性,則為必填項。 選擇點陣圖列中的可用影像。|
+|href|位圖的路徑。 需要 resID 或 href 屬性。<br /><br /> 將搜索包含路徑以查找指示的圖像檔,該檔嵌入到生成的二進位檔案中。  在命令表合併期間,將複製映射,無需其他資源查找或載入。  如果使用的 List 屬性不存在,則條帶中的所有圖像都可用。 **註:** 影像可以以多種格式之一提供,包括 *.bmp、.png*和 *.png**.gif*。  早期版本的編譯器不支援具有 Alpha 資訊的 32 位元圖圖像,以便獲得部分透明度。 這些版本的解決方法是使用 *.png*格式。|
+|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
  無。
@@ -47,7 +47,7 @@ ms.locfileid: "66333577"
 
 |元素|描述|
 |-------------|-----------------|
-|[Bitmaps 元素](../extensibility/bitmaps-element.md)|分組點陣圖項目。|
+|[點陣圖元素](../extensibility/bitmaps-element.md)|對位圖元素。|
 
 ## <a name="example"></a>範例
 
@@ -58,4 +58,4 @@ ms.locfileid: "66333577"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

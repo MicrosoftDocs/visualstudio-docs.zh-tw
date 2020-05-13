@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH | Microsoft Docs
+title: NAME_MATCH |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - NAME_MATCH enumeration
 ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09ddb4653d1f13024360daca30eab40ebf57df0f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 66a0e725f6362034e2d1a9b1df49d2a83d154ce7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346733"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714304"
 ---
-# <a name="namematch"></a>NAME_MATCH
-選取 比對名稱的大小寫選項。
+# <a name="name_match"></a>NAME_MATCH
+選擇匹配名稱的案例選項。
 
 ## <a name="syntax"></a>語法
 
@@ -48,13 +48,13 @@ public enum NameMatchOptions { 
  未指定任何選項。
 
  `nmCaseSensitive`\
- 表示要比對的名稱會區分大小寫。
+ 指示要匹配的名稱區分大小寫。
 
  `nmCaseInsensitive`\
- 表示要比對的名稱不區分大小寫。
+ 指示要匹配的名稱不區分大小寫。
 
 ## <a name="remarks"></a>備註
- 下列方法，以傳遞做為引數：
+ 為參數傳遞給以下方法:
 
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 
@@ -65,11 +65,11 @@ public enum NameMatchOptions { 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
 ## <a name="requirements"></a>需求
- 標頭： sh.h
+ 標題: sh.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

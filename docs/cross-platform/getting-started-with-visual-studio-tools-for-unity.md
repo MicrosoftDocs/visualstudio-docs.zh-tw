@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824576"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302270"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
 
@@ -49,35 +49,35 @@ Unity 安裝所隨附的 Visual Studio 版本可能不是最新的。 建議您�
 
 1. [下載 Visual Studio 安裝程式](../install/install-visual-studio.md)或開啟它 (若已安裝)。
 
-1. 針對您想要的 Visual Studio 版本按一下 (若已安裝) 或 [安裝] (針對新安裝)。
+1. 針對您想要的 Visual Studio 版本按一下**** (若已安裝) 或 [安裝]**** (針對新安裝)。
 
-1. 在 [工作負載] 索引標籤上，捲動到 [行動與遊戲] 區段，然後選取 [使用 Unity 進行遊戲開發] 工作負載。
+1. 在 [工作負載]**** 索引標籤上，捲動到 [行動與遊戲]**** 區段，然後選取 [使用 Unity 進行遊戲開發]**** 工作負載。
 
     ![Unity 工作負載](media/vstu_unity-workload.png)
 
-1. 按一下安裝程式視窗右下角的 [修改] (若已安裝) 或 [安裝] (針對新安裝)。
+1. 按一下安裝程式視窗右下角的 [修改]**** (若已安裝) 或 [安裝]**** (針對新安裝)。
 
 ## <a name="configure-unity-for-use-with-visual-studio"></a>設定 Unity 以搭配 Visual Studio 使用
 
 從 Unity 2018.1 開始，Visual Studio 應該是 Unity 中的預設外部指令碼編輯器。 您可以確認這一點，或將外部指令碼編輯器變更為特定版本 Visual Studio：
 
-1. 從 [編輯] 功能表，選取 [喜好設定]。
+1. 從 [編輯]**** 功能表，選取 [喜好設定]****。
 
    ![選取 [喜好設定]](media/vstu_unity-preferences.png)
 
-2. 在 [喜好設定] 對話方塊中，選取 [外部工具] 索引標籤。
+2. 在 [喜好設定] 對話方塊中，選取 [外部工具]**** 索引標籤。
 
-3. 從 [External Script Editor] \(外部指令碼編輯器\) 下拉式清單中選擇您想要的 Visual Studio 版本 (若已列出)，否則請選取 [瀏覽]。
+3. 從 [External Script Editor] \(外部指令碼編輯器\)**** 下拉式清單中選擇您想要的 Visual Studio 版本 (若已列出)，否則請選取 [瀏覽]****。
 
    ![選取 [Visual Studio]](media/vstu_unity-external-tools.png)
 
-4. 若已選取 [瀏覽]，請瀏覽到您 Visual Studio 安裝目錄中的 **Common7/IDE** 目錄，然後選取 [devenv.exe]。 接著，按一下 [開啟]。
+4. 若已選取 [瀏覽]****，請瀏覽到您 Visual Studio 安裝目錄中的 **Common7/IDE** 目錄，然後選取 [devenv.exe]****。 然後按一下 [開啟] ****。
 
    ![選取 [開啟]](media/vstu_browse-for-application.png)
 
-5. 在 [External Script Editor] \(外部指令碼編輯器\) 清單中選取 Visual Studio 之後，請確認已選取 [Editor Attaching] \(編輯器附加\) 核取方塊。
+5. 在 [External Script Editor] \(外部指令碼編輯器\)**** 清單中選取 Visual Studio 之後，請確認已選取 [Editor Attaching] \(編輯器附加\)**** 核取方塊。
 
-6. 關閉 [喜好設定] 對話方塊以完成設定程序。
+6. 關閉 [喜好設定]**** 對話方塊以完成設定程序。
 
 ## <a name="support-for-older-versions"></a>針對舊版的支援
 
@@ -88,7 +88,7 @@ Unity 安裝所隨附的 Visual Studio 版本可能不是最新的。 建議您�
    [下載 Visual Studio 2015 Tools for Unity](https://marketplace.visualstudio.com/items?itemName=SebastienLebreton.VisualStudio2015ToolsforUnity)
 
 > [!NOTE]
-> Visual Studio Tools for Unity 需要 Unity 5.2 與更新的版本，以及支援延伸模組的 Visual Studio 版本，例如 Visual Studio Community、Professional、Premium 或 Enterprise。 若要確認 Unity 安裝中已啟用 Visual Studio Tools for Unity，請從 [說明] 功能表中選取 [About Unity] \(關於 Unity\)，並在對話方塊左下角尋找「已啟用 Microsoft Visual Studio Tools for Unity」文字。
+> Visual Studio Tools for Unity 需要 Unity 5.2 與更新的版本，以及支援延伸模組的 Visual Studio 版本，例如 Visual Studio Community、Professional、Premium 或 Enterprise。 若要確認 Unity 安裝中已啟用 Visual Studio Tools for Unity，請從 [說明]**** 功能表中選取 [About Unity] \(關於 Unity\)****，並在對話方塊左下角尋找「已啟用 Microsoft Visual Studio Tools for Unity」文字。
 > ![ Unity](media/vstu_about-unity.png)
 
 ## <a name="next-steps"></a>後續步驟

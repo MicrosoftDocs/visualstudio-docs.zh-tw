@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FIELDS | Microsoft Docs
+title: PROCESS_INFO_FIELDS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROCESS_INFO_FIELDS enumeration
 ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe9a1854fe5583d001e1dc156bfad5833fd1c08f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f81709e7146bbdef13daa3564bb784fd9c08d58e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309449"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714017"
 ---
-# <a name="processinfofields"></a>PROCESS_INFO_FIELDS
-指定的擷取處理序的資訊類型。
+# <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
+指定要檢索進程的資訊類型。
 
 ## <a name="syntax"></a>語法
 
@@ -58,45 +58,45 @@ public enum enum_PROCESS_INFO_FIELDS { 
 
 ## <a name="fields"></a>欄位
  `PIF_FILE_NAME`\
- 初始化/使用`bstrFileName`欄位[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)結構。
+ 初始化/使用`bstrFileName`[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)結構的欄位。
 
  `PIF_BASE_NAME`\
- 初始化/使用`bstrBaseName`欄位`PROCESS_INFO`結構。
+ 初始化/使用`bstrBaseName`結構欄位`PROCESS_INFO`。
 
  `PIF_TITLE`\
- 初始化/使用`bstrTitle`欄位`PROCESS_INFO`結構。
+ 初始化/使用`bstrTitle`結構欄位`PROCESS_INFO`。
 
  `PIF_PROCESS_ID`\
- 初始化/使用`ProcessId`欄位`PROCESS_INFO`結構。
+ 初始化/使用`ProcessId`結構欄位`PROCESS_INFO`。
 
  `PIF_SESSION_ID`\
- 初始化/使用`dwSessionId`欄位`PROCESS_INFO`結構。
+ 初始化/使用`dwSessionId`結構欄位`PROCESS_INFO`。
 
  `PIF_ATTACHED_SESSION_NAME`\
- 初始化/使用`bstrAttachedSessionName`欄位`PROCESS_INFO`結構。
+ 初始化/使用`bstrAttachedSessionName`結構欄位`PROCESS_INFO`。
 
  `PIF_CREATION_TIME`\
- 初始化/使用`CreationTime`欄位`PROCESS_INFO`結構。
+ 初始化/使用`CreationTime`結構欄位`PROCESS_INFO`。
 
  `PIF_FLAGS`\
- 初始化/使用`Flags`欄位`PROCESS_INFO`結構。
+ 初始化/使用`Flags`結構欄位`PROCESS_INFO`。
 
  `PIF_ALL`\
  填寫所有欄位。
 
 ## <a name="remarks"></a>備註
- 傳遞給[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)方法，以表示哪些欄位[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)結構會進行初始化。
+ 傳遞給[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)方法,指示要初始化[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)結構的哪些欄位。
 
- 也用於`Fields`欄位`PROCESS_INFO`表示哪些欄位已使用且有效的結構。
+ 還用於`Fields`結構欄位,`PROCESS_INFO`以指示使用哪些欄位有效。
 
- 這些旗標可能會結合的位元`OR`。
+ 這些旗標可以稍微`OR`結合 。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

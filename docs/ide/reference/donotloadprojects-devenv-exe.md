@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51e3341082ff354fc8bc87a89b3d7bc56e4e7887
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569851"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
@@ -30,11 +30,11 @@ ms.locfileid: "75569851"
 devenv /DoNotLoadProjects SolutionName
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 
-*SolutionName*
+*解決方案名稱*
 
-必要項。 要開啟之解決方案的完整路徑和名稱。
+必要。 要開啟之解決方案的完整路徑和名稱。
 
 ## <a name="example"></a>範例
 
@@ -44,7 +44,7 @@ devenv /DoNotLoadProjects SolutionName
 devenv /donotloadprojects MySln.sln
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中已篩選的方案](../filtered-solutions.md)
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

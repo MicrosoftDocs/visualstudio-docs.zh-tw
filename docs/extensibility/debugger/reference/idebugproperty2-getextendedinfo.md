@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetExtendedInfo | Microsoft Docs
+title: IDebug屬性2::獲取擴展資訊 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetExtendedInfo
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: acf070d6f00dcb4e775662a6fdc8c4c3d589ae85
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 34d6cd880ccae520bf000ad01b52223857f4f10f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343170"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721482"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
-取得擴充屬性的資訊。
+獲取屬性的擴展資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -43,26 +43,26 @@ int GetExtendedInfo ( 
 
 ## <a name="parameters"></a>參數
 `guidExtendedInfo`\
-[in]決定要擷取的擴充資訊的類型的 GUID。 如需詳細資訊，請參閱 < 備註 >。
+[在]確定要檢索的擴展資訊的類型的 GUID。 有關詳細資訊,請參閱備註。
 
 `pExtendedInfo`\
-[out]傳回`VARIANT`(C++) 或物件 (C#)，可用來擷取擴充的屬性的資訊。 比方說，這個參數可能會傳回`IUnknown`介面，可以查詢[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。 如需詳細資訊，請參閱 < 備註 >。
+[出]返回可用於`VARIANT`檢索擴展屬性資訊的 (C++) 或物件 (C#)。 例如,此參數可能會返回一個`IUnknown`介面,該介面可以查詢[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。 有關詳細資訊,請參閱備註。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETEXTENDEDINFO_NO_EXTENDEDINFO`如果擷取沒有延伸資訊。
+ 如果成功,返回`S_OK`;否則返回錯誤代碼。 如果沒有`S_GETEXTENDEDINFO_NO_EXTENDEDINFO`要檢索的擴展資訊,則返回。
 
 ## <a name="remarks"></a>備註
- 這個方法存在，以擷取本身就無法藉由呼叫所擷取的資訊[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)方法。
+ 此方法的存在是為了檢索無法通過調用[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)方法檢索的資訊。
 
- （因為不提供任何組件名稱，GUID 值會指定 C#） 此方法通常可辨識下列的 Guid。 供內部使用，可以建立額外的 Guid。
+ 此方法通常可識別以下 GUID(GUID 值指定為 C#,因為名稱在任何程式集中不可用)。 可以創建其他 GUID 供內部使用。
 
 |名稱|GUID|描述|
 |----------|----------|-----------------|
-|guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|傳回`IUnknown`文件的介面。 通常[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面可以從此`IUnknown`介面。|
-|guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|傳回`IUnknown`的文件內容的介面。 通常[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面可以從此`IUnknown`介面。|
-|guidCustomViewerSupported|{d9c9da31-ffbe-4eeb-9186-23121e3c088c}|傳回字串，包含 CLSID 的自訂檢視器，通常由運算式評估工具進行實作。|
-|guidExtendedInfoSlot|{6df235ad-82c6-4292-9c97-7389770bc42f}|傳回代表所要的位置數目，如果這個屬性表示 managed 程式碼的本機位址的 32 位元數字。|
-|guidExtendedInfoSignature|{b5fb6d46-f805-417f-96a3-8ba737073ffd}|傳回字串，包含與屬性物件相關聯的變數簽章。|
+|吉德檔案|[3f98de84-fee9-11d0-b47f-00a0244a1d2]|返回文`IUnknown`檔的介面。 通常,可以從此`IUnknown`介面獲取[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。|
+|吉德代碼內容|[e2fc65e-56ce-11d1-b528-00ax004a8797]|返回文`IUnknown`檔 上下文的介面。 通常,可以從此`IUnknown`介面獲取[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面。|
+|吉德自訂檢視器支援|[d9c9da31-ffbe-4eeb-9186-23121e3c088c]|返回包含自定義檢視器的 CLSID 的字串,通常由表達式賦值器實現。|
+|吉德擴充資訊槽|[6df235ad-82c6-4292-9c97-7389770bc42f]|如果此屬性表示託管代碼本地位址,則返回表示所需插槽號的 32 位數位。|
+|吉德延伸資訊簽名|[b5fb6d46-f805-417f-96a3-8ba737073ffd]|返回一個字串,其中包含與屬性對象關聯的變數的簽名。|
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

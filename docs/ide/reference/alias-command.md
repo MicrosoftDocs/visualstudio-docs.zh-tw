@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 031f1a4bab1acee3f3d0999b17c0b607f7808df9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596901"
 ---
 # <a name="alias-command"></a>別名命令
@@ -35,19 +35,19 @@ ms.locfileid: "75596901"
 Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 `aliasname`\
-選擇項。 新別名的名稱。 如果未提供 `aliasname` 的值，則會出現目前別名和其定義清單。
+選擇性。 新別名的名稱。 如果未提供 `aliasname` 的值，則會出現目前別名和其定義清單。
 
 `aliasstring`\
-選擇項。 完整命令名稱或現有別名，以及任何您想要建立為別名的參數。 如果未提供 `aliasstring` 的值，則會顯示所指定別名的別名和別名字串。
+選擇性。 完整命令名稱或現有別名，以及任何您想要建立為別名的參數。 如果未提供 `aliasstring` 的值，則會顯示所指定別名的別名和別名字串。
 
-## <a name="switches"></a>交換機
+## <a name="switches"></a>交換器
 /delete 或 /del 或 /d\
-選擇項。 刪除指定的別名，並移除它不進行自動完成。
+選擇性。 刪除指定的別名，並移除它不進行自動完成。
 
 /reset\
-選擇項。 將預先定義的別名清單重設為其原始設定。 亦即，它會還原所有預先定義的別名，並移除所有使用者定義的別名。
+選擇性。 將預先定義的別名清單重設為其原始設定。 亦即，它會還原所有預先定義的別名，並移除所有使用者定義的別名。
 
 ## <a name="remarks"></a>備註
 因為別名代表命令，所以它們必須位於命令列的開頭。
@@ -75,9 +75,9 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 >Tools.Alias
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)

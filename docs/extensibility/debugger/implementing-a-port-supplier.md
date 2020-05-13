@@ -1,35 +1,35 @@
 ---
-title: 實作連接埠提供者 |Microsoft Docs
+title: 實施埠供應商 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], implementing port suppliers
 - port suppliers, implementing
 ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd5ba2a96b94cce65dc901a523232b1c3e0a45b9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8218e372ad3aece922811bc20cfd7650f33296f3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349982"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738550"
 ---
-# <a name="implement-a-port-supplier"></a>實作連接埠提供者
-連接埠提供者會提供工作階段的偵錯管理員 (SDM) 的要求上的連接埠。 對非 DCOM 機器或新的裝置時需要支援偵錯時，就必須實作連接埠提供者。 比方說，若要提供對手機偵錯，您可能會設定連接埠提供者，提供連接埠，連接到行動電話 （也許是透過 IR 或儲存格連接），並列舉的處理程序和手機上執行的程式。
+# <a name="implement-a-port-supplier"></a>實施埠供應商
+埠供應商應要求向工作階段調試管理器 (SDM) 提供連接埠。 除錯到非 DCOM 電腦或新設備需要支援時,必須實現埠供應商。 例如,要向手機提供調試,可以設置一個埠供應商,該埠提供埠,這些埠連接到手機(可能通過 IR 或手機連接),並枚舉在電話上運行的進程和程式。
 
- 對於以 Windows 為基礎的電腦 （包括遠端偵錯） 上的偵錯程式，Visual Studio 會提供原生和 Common Language Runtime (CLR) 處理程序的連接埠提供者，因此不需要設定您自己的連接埠提供者，在這些情況下。
+ 對於基於 Windows 的電腦上的調試程式(包括遠端調試),Visual Studio 為本機和通用語言運行時 (CLR) 進程提供埠供應商,因此在這些情況下無需設置您自己的埠供應商。
 
 ## <a name="in-this-section"></a>本節內容
- [實作並註冊連接埠提供者](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)討論 SDM 與連接埠提供者和它的連接埠的互動方式。
+ [實施和註冊埠供應商](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)討論 SDM 如何與埠供應商及其埠進行互動。
 
- [所需的連接埠供應商介面](../../extensibility/debugger/required-port-supplier-interfaces.md)文件以取得連接埠提供者，您必須實作的介面。
+ [所需的連接埠供應商介面](../../extensibility/debugger/required-port-supplier-interfaces.md)記錄獲取埠供應商時必須實現的介面。
 
 ## <a name="related-sections"></a>相關章節
- [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)描述主要的偵錯架構概念。
+ [除錯器概念](../../extensibility/debugger/debugger-concepts.md)描述主要的調試體系結構概念。
 
 ## <a name="see-also"></a>另請參閱
- [Visual Studio 偵錯工具擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [視覺化工作室除錯器可擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

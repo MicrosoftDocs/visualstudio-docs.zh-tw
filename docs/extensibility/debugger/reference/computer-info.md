@@ -1,27 +1,27 @@
 ---
-title: COMPUTER_INFO |Microsoft Docs
+title: COMPUTER_INFO |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - COMPUTER_INFO structure
 ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 55d3eb6c321875b479d8df597b963fc3ac30db12
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 27794dff51646b72dbbfda81ead02e5206ade78b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346577"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737663"
 ---
-# <a name="computerinfo"></a>COMPUTER_INFO
-描述偵錯工具執行所在的電腦。
+# <a name="computer_info"></a>COMPUTER_INFO
+描述運行調試器的電腦。
 
 ## <a name="syntax"></a>語法
 
@@ -45,24 +45,24 @@ public struct COMPUTER_INFO
 
 ## <a name="members"></a>成員
 `wProcessorArchitecture`\
-識別微處理器的架構。
+標識微處理器的體系結構。
 
 `wSuiteMask`\
-識別套件的遮罩。
+標識套件掩碼。
 
 `dwOperatingSystemVersion`\
-作業系統版本號碼。
+操作系統版本號。
 
 ## <a name="remarks"></a>備註
-此結構由[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)方法。
+此結構由[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)方法返回。
 
 ## <a name="requirements"></a>需求
-標頭：Msdbg.h
+標題: Msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
-- [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [取得電腦資訊](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

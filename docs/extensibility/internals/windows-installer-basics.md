@@ -1,71 +1,71 @@
 ---
-title: Windows Installer 基本概念 |Microsoft Docs
+title: Windows 安裝程式基礎知識 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a6e671b8b5a20d10624e8f89b601c23087237d2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aeea0b17a3c234bb7670642fb9ae0a442c9d60cd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721501"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703422"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本概念
-Windows Installer 會在使用者的電腦上安裝和卸載應用程式或軟體產品，以稱為 Windows Installer 元件（有時稱為 WICs 或只是元件）的單位來執行這些工作。 GUID 會識別每個 WIC，這是使用 Windows Installer 安裝的基本單位和參考計數。
+Windows 安裝程式在使用者的電腦上安裝和卸載應用程式或軟體產品,以稱為 Windows 安裝程式元件(有時稱為 WIC 或只是元件)的單位執行這些任務。 GUID 識別每個 WIC,這是使用 Windows 安裝程式的安裝和引用計數的基本單元。
 
- 如需 Windows Installer 的完整檔，請參閱 Platform SDK 主題， [Windows Installer](/previous-versions/2kt85ked(v=vs.120))。
+ 有關 Windows 安裝程式的全面文件,請參閱平臺 SDK 主題[「Windows 安裝程式](/previous-versions/2kt85ked(v=vs.120))」。
 
-## <a name="authoring-a-vspackage"></a>撰寫 VSPackage
- Windows Installer 使用安裝套件，其中包含 Windows Installer 需要安裝、卸載或修復產品，以及執行安裝程式使用者介面（UI）的資訊。 每個安裝套件都包含一個 .msi 檔案，其中包含安裝資料庫、摘要資訊資料流程，以及安裝各部分的資料流程。 若要使用安裝程式，您必須撰寫安裝。 因為安裝程式會根據元件的概念來組織安裝，並將安裝的相關資訊儲存在關係資料庫中，所以廣泛撰寫安裝套件的程式需要執行下列步驟：
+## <a name="authoring-a-vspackage"></a>製作音 VS 套件
+ Windows 安裝程式使用安裝包,其中包含 Windows 安裝程式安裝、卸載或修復產品以及運行安裝使用者介面 (UI) 所需的資訊。 每個安裝包都包含一個 .msi 檔,該檔包含安裝資料庫、摘要資訊流和安裝各個部分的數據流。 要使用安裝程式,必須編寫安裝。 由於安裝程式圍繞元件的概念組織安裝,並將有關安裝的資訊儲存在關係資料庫中,因此創作安裝包的過程大致需要以下步驟:
 
-1. 規劃您的安裝程式撰寫，以支援您的版本控制和並存策略。
+1. 規劃設置創作以支援版本控制和並行策略。
 
-2. 識別要呈現給使用者的功能。
+2. 標識要呈現給使用者的功能。
 
-3. 將 VSPackage 和相依性組織成元件。
+3. 將 VS 包和依賴項組織到元件中。
 
-4. 在安裝資料庫中填入資訊。
+4. 使用資訊填充安裝資料庫。
 
-5. 驗證安裝套件。
+5. 驗證安裝包。
 
-   本檔主要涉及程式的第一個和第三個步驟。 在這些步驟中，您會將 VSPackage 功能組織成 WICs，以便將您的版本控制和服務策略納入考慮，以將後續版本的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 其餘三個步驟會在 Platform SDK 的 Windows Installer 檔中詳細說明。
+   本文檔主要涉及該過程的第一個和第三步。 在這些步驟中,您將 VSPackage 功能組織到 WIC 中,以便可以制定版本控制和服務[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]策略,以考慮的後續版本。 其餘三個步驟詳在平臺 SDK 中的 Windows 安裝程序文檔中。
 
-## <a name="key-terms"></a>主要詞彙
- 以下是與 Windows Installer 技術相關之重要詞彙的定義。
+## <a name="key-terms"></a>主要詞彙：
+ 以下是與 Windows 安裝程式技術相關的關鍵術語的定義。
 
- 可以安裝在電腦上的資源檔、登錄機碼、快捷方式等等。 這些資源會以邏輯方式分組到 Windows Installer 元件中。
+ 可能安裝到計算機的資源檔、註冊表項、快捷方式等。 這些資源以邏輯方式分組到 Windows 安裝程式元件中。
 
- Windows Installer 元件（WIC）基本安裝單位，代表以一個單位安裝和卸載的相關資源的邏輯群組。 Windows Installer 元件是以唯一的元件識別碼或 GUID 來識別。 此外，Windows Installer 會在 WIC 層級維護其參考計數。 如需最大版本控制彈性，請在指定的 WIC 中包含不只一個主要資源（例如 DLL）。 請注意，在您識別並填入 WIC 之後，請為它提供 GUID 並加以部署，您無法變更其組合。 如需詳細資訊，請參閱將[應用程式組織成元件](/windows/desktop/Msi/organizing-applications-into-components)。
+ Windows 安裝程式元件 (WIC) 表示作為設備安裝並卸載的相關資源的邏輯分組的基本安裝單元。 Windows 安裝程式元件由唯一元件 ID 或 GUID 識別。 此外,Windows 安裝程式在 WIC 級別保持其引用計數。 為了獲得最大的版本控制靈活性,在給定的 WIC 中只包含一個主資源(如 DLL)。 請注意,在標識和填充WIC、為其提供GUID並部署它後,無法更改其組成。 有關詳細資訊,請參閱[將應用程式組織到元件](/windows/desktop/Msi/organizing-applications-into-components)中。
 
- 封裝（可轉散發套件）部署的單位，其中包含這個檔案可能指向的 .msi 檔案和外部來源檔案。 套件包含 Windows Installer 執行 UI 以及安裝或卸載應用程式時所需的所有資訊。
+ 包(Redist 包)一個部署單元,由 .msi 檔和外部源文件組成,此檔可能會指向該檔。 包包含 Windows 安裝程式運行 UI 以及安裝或卸載應用程式所需的所有資訊。
 
- .msi 檔案是 COM 結構化的儲存體檔案，其中包含安裝應用程式所需的指示和資料。 每個套件都包含至少一個 .msi 檔案。 .Msi 檔案包含安裝程式資料庫、摘要資訊資料流程，而且可能有一或多個轉換和內部來源檔案。 要安裝的檔案可以壓縮成封包，並儲存在 .msi 檔的資料流程中，或儲存、壓縮或未壓縮的來源媒體上的 .msi 檔案外。 如需詳細資訊，請參閱[Windows Installer 副檔名](/windows/desktop/Msi/windows-installer-file-extensions)。
+ .msi 檔案 A COM 結構化儲存檔案,其中包含安裝應用程式所需的說明和資料。 每個包至少包含一個 .msi 檔。 .msi 檔包含安裝程式資料庫、摘要資訊流,以及可能一個或多個轉換和內部源檔。 要安裝的檔案可以壓縮到機櫃中並存儲在 .msi 檔案中的流中,也可以存儲在源介質上的 .msi 檔案之外,進行壓縮或未壓縮。 關於詳細資訊,請參閱[Windows 安裝程式檔副檔名](/windows/desktop/Msi/windows-installer-file-extensions)。
 
-## <a name="windows-installer-rules-enforcement"></a>強制執行 Windows Installer 規則
- 兩組規則會決定透過您的安裝程式元件來部署資源。 其中一個規則集是由 Windows Installer 本身維護，而您應將第二組強制執行為安裝作者。
+## <a name="windows-installer-rules-enforcement"></a>Windows 安裝程式規則強制
+ 兩組規則確定通過設置的元件部署資源。 一個規則集由 Windows 安裝程式本身維護,而應強制第二個集作為安裝作者。
 
 > [!NOTE]
-> 只有當您執行 .msi 檔案的驗證時，才會強制執行 Windows Installer 規則。 儘管如此，您匯將這些規則視為最佳作法。 如需詳細資訊，請參閱[驗證安裝資料庫](/windows/desktop/Msi/validating-an-installation-database)和[封裝驗證](/windows/desktop/Msi/package-validation)。
+> 僅當運行 .msi 檔案的驗證時,才會強制實施 Windows 安裝程式規則。 不過,請注意,應將這些規則視為最佳實踐。 有關詳細資訊,請參閱[驗證安裝資料庫](/windows/desktop/Msi/validating-an-installation-database)和[套件驗證](/windows/desktop/Msi/package-validation)。
 
-#### <a name="installer-enforced-rules"></a>安裝程式強制執行的規則
+#### <a name="installer-enforced-rules"></a>安裝程式強制規則
 
-- 指定元件中的所有檔案都必須安裝到相同的目錄。 相反地，安裝在不同資料夾的檔案必須屬於不同的元件。
+- 給定元件中的所有檔都必須安裝到同一目錄。 相反,安裝到獨立資料夾的檔必須屬於單獨的元件。
 
-- 每個元件只能有一個金鑰路徑。 金鑰路徑只是代表整個元件的檔案或登錄機碼。
+- 每個元件只能有一個密鑰路徑。 密鑰路徑只是表示整個元件的檔或註冊表項。
 
-#### <a name="component-provider-responsibilities"></a>元件提供者責任
+#### <a name="component-provider-responsibilities"></a>元件-供應商職責
 
-- 可能會分別在後續版本中運送的任何兩個資源，都應該存在於不同的元件中。 只有在您確定這些資源永遠不會另行寄送時，才應該將資源分組成相同的元件。 事實上，建議所有的主要資源（例如 Dll）一律存在於個別的 WICs 中。 如需詳細資訊，請參閱[定義安裝程式元件](/windows/desktop/Msi/defining-installer-components)。
+- 在後續版本中可能單獨提供的任何兩個資源都應存在於單獨的元件中。 僅當確定這些資源永遠不會單獨發貨時,才應將資源分組到同一元件中。 事實上,建議所有主資源(例如 DLL)始終存在於單獨的 WIC 中。 有關詳細資訊,請參閱[定義安裝程式元件](/windows/desktop/Msi/defining-installer-components)。
 
-- 沒有任何已建立版本的資源應該在一個以上的 WIC 中出貨。
+- 任何版本化資源都不應在多個WIC中發貨。
 
-## <a name="see-also"></a>請參閱
-- [當元件規則中斷時，會發生什麼事？](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)
+## <a name="see-also"></a>另請參閱
+- [如果組件規則斷開,會發生什麼情況?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

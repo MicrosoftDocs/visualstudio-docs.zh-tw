@@ -1,5 +1,5 @@
 ---
-title: 開啟和儲存專案項目 |Microsoft Docs
+title: 開啟與儲存項目項目 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,59 +7,59 @@ helpviewer_keywords:
 - files [Visual Studio], opening and saving
 - editors [Visual Studio SDK], file persistence
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77a3417bc15bc9c4c6149b4e77dc4fdcebe5cd6e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bbb89d99e401be6bae7d8ee9be8ee33fa7574723
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314925"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706960"
 ---
 # <a name="opening-and-saving-project-items"></a>開啟和儲存專案項目
-當您新增新的專案類型時，您必須管理的開啟和儲存您的專案檔案中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 下列主題討論不同的方法，來開啟和儲存檔案。
+新增新項目類型時,必須在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境(IDE) 中管理專案檔的打開和儲存。 以下主題討論打開和保存檔的不同方法。
 
 ## <a name="in-this-section"></a>本節內容
 - [使用開啟檔案命令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
 
- 提供 IDE 的處理方式的逐步說明**開啟檔案**命令，並在回應此命令的專案的角色。
+ 提供 IDE 如何處理**Open File**命令以及專案在回應此命令中的作用的分步說明。
 
 - [使用開啟方式命令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
 
- 提供 IDE 的處理方式的詳細的逐步說明**開啟**命令，提示檔案具有一些選擇的標準編輯器開啟。
+ 提供 IDE 如何處理 **「打開隨用」** 命令的詳細分步說明,從而提示打開具有一些標準編輯器選擇的檔。
 
-- [如何：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)
+- [如何︰開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)
 
- 提供逐步指示，來指定，應該使用專案特定編輯器中開啟專案中的特定類型的檔案。
+ 提供分步說明,用於指定應使用特定於專案的編輯器打開專案中特定類型的檔。
 
-- [如何：開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)
+- [如何︰開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)
 
- 提供逐步指示，來指定如何啟用 IDE 中您的專案類型開啟檔案的標準編輯器。
+ 提供分步說明,說明如何指定如何使IDE為專案類型中的文件打開標準編輯器。
 
-- [如何：針對開啟的文件開啟編輯器](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [如何︰針對開啟的文件開啟編輯器](../../extensibility/how-to-open-editors-for-open-documents.md)
 
- 提供逐步指示，開啟專案特定的編輯器開啟的檔案。
+ 提供分步說明,用於打開打開的檔案的專案特定編輯器。
 
 - [儲存標準文件](../../extensibility/internals/saving-a-standard-document.md)
 
- 提供 IDE 的處理方式的詳細的說明**儲存**，**另存新檔**，並**全部儲存**標準編輯器中開啟的文件的命令。
+ 詳細說明 IDE 如何處理標準編輯器中開啟的文件的 **「儲存**、**儲存為**」和 **「儲存所有」** 命令。
 
 - [儲存自訂文件](../../extensibility/internals/saving-a-custom-document.md)
 
- 提供的圖表和詳細的說明如何處理 IDE**儲存**，**另存新檔**，並**全部儲存**在自訂編輯器中開啟的文件的命令。
+ 提供一個圖表,並詳細說明 IDE 如何處理在自定義編輯器中打開的文檔**的保存**、**儲存為**和**保存所有**命令。
 
 - [決定要開啟專案中檔案的編輯器](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
 
- 討論 IDE 來選取適當的編輯器或設計工具檔案會遵循的程序。
+ 討論 IDE 為檔案選擇適當的編輯器或設計器的過程。
 
 ## <a name="related-sections"></a>相關章節
 - [建立自訂編輯器和設計工具](../../extensibility/creating-custom-editors-and-designers.md)
 
- 列出四種類型的編輯器在 IDE 可以裝載，並提供每個編輯器的說明。
+ 列出 IDE 可以承載的四種編輯器類型,並給出每個編輯器的說明。
 
 - [專案類型](../../extensibility/internals/project-types.md)
 
- 討論專案如何控制的程式碼進行編譯和建置的方式、 如何開啟編輯器，以及如何格式化專案項目。
+ 討論專案如何控制代碼的編譯和生成方式、編輯器的打開方式以及如何設置專案專案的格式。

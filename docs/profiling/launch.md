@@ -10,13 +10,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9834c10c58fb343de0707fa0b805586a6cdebcb3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778605"
 ---
-# <a name="launch"></a>啟動
+# <a name="launch"></a>Launch
 **Launch** 選項會使用取樣方法來啟動分析工具，也會啟動指定的應用程式。
 
  若要使用 **Launch** 選項，您必須在 **Start** 選項中指定 **Sample** 方法。
@@ -33,11 +33,11 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>有效選項
  在單一命令列上，下列 VSPerfCmd 選項可以與 **Launch** 選項一起使用。
 
- **Start：** `Method` 初始化命令列 profiler 會話，並設定指定的分析方法。
+ **開始：**`Method`初始化命令列探測器會話並設置指定的分析方法。
 
  **GlobalOn** 和 **GlobalOff** 繼續 (**GlobalOn**) 或暫停 (**GlobalOff**) 分析，但未結束分析工作階段。
 
- **ProcessOn：** `PID` 和**ProcessOff**：針對指定的進程，`PID` 繼續（**ProcessOn**）或暫停（**ProcessOff**）程式碼剖析。
+ **進程打開：**`PID`和**進程關閉**：`PID`恢復 （**進程打開**） 或暫停 （**進程關閉**） 分析指定的進程.
 
  **TargetCLR** 指定要在分析工作階段中載入多個版本時分析的 .NET Framework Common Language Runtime (CLR) 版本。 預設會分析第一個載入的版本。
 
@@ -46,14 +46,14 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
  **Console** 在新視窗中啟動指定的命令列應用程式。
 
- **Args：** `ArgList` 指定要傳遞給應用程式的引數清單。
+ **Args：**`ArgList`指定要傳遞給應用程式的參數清單。
 
  **LineOff** 停用程式行層級分析資料的收集。
 
 ## <a name="sampling-options"></a>取樣選項
  下列其中一個取樣間隔選項可以指定於 **Launch** 命令列上。 預設取樣間隔為 10,000,000 個處理器時脈週期。
 
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**] 指定取樣間隔的數目和類型。
+ **計時器**[**] = =**`Cycles`**PF****= ：**`Events``Reload`=`FriendlyName`**sys****= ：**`Events`***** 計數器 *** ***`Name`、 、**、**、 、 GC [：**分配**&#124;**存留期**] 指定取樣間隔的數量和類型。
 
 - **Timer** - 每 `Cycles` 個未暫止處理器時脈週期取樣一次。 如果未指定 `Cycles`，會使用 10,000,000 個週期。
 
@@ -73,8 +73,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服務](../profiling/command-line-profiling-of-services.md)

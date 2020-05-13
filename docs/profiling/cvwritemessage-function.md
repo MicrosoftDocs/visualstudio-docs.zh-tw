@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea9fd21c346a61939683ee05e3cb9ef3123cc03d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62936656"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage 函式
@@ -99,9 +99,9 @@ HRESULT CvWriteMessageExVA(
 
  `level` 範圍的重要性層級。
 
- `pMarkerSeries` 有效的標記系列內容。 不可以是 NULL。
+ `pMarkerSeries` 有效的標記系列內容。 不能是 NULL。
 
- `pMessage` 訊息格式字串。 不可以是 NULL。
+ `pMessage` 訊息格式字串。 不能是 NULL。
 
 ## <a name="return-value"></a>傳回值
  當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。
@@ -114,4 +114,4 @@ HRESULT CvWriteMessageExVA(
  **ANSI：** CvWriteMessageA、CvWriteMessageVA、CvWriteMessageExA、CvWriteMessageExVA
 
 ## <a name="see-also"></a>另請參閱
-- [C++ 程式庫參考](../profiling/cpp-library-reference.md)
+- [C++庫參考](../profiling/cpp-library-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 選項、文字編輯器、C#、IntelliSense
+title: IntelliSense、C#、文字編輯器、選項
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,23 +17,23 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596212"
 ---
-# <a name="options-text-editor-c-intellisense"></a>選項、文字編輯器、C#、IntelliSense
+# <a name="options-text-editor-c-intellisense"></a>IntelliSense、C#、文字編輯器、選項
 
-使用 [IntelliSense] 選項頁修改影響 C# 之 IntelliSense 行為的設定。 若要存取此選項頁面，選擇 [工具] > [選項]，然後選擇 [文字編輯器] > [C#] > [IntelliSense]。
+使用 [IntelliSense]**** 選項頁修改影響 C# 之 IntelliSense 行為的設定。 要訪問此選項頁，請選擇 **"工具** > **選項**"，然後選擇**文字編輯器** > **C#** > **IntelliSense**。
 
-[IntelliSense] 頁面包含下列選項：
+[IntelliSense]**** 頁面包含下列選項：
 
 ## <a name="completion-lists"></a>完成清單
 
 - 輸入一個字元後顯示完成清單*
 
-   選取這個選項時，IntelliSense 會在您開始輸入時自動顯示完成清單。 未選取這個選項時，仍然可以從 [IntelliSense] 功能表或按 **CTRL**+**空格鍵**來使用 IntelliSense 完成。
+   選取這個選項時，IntelliSense 會在您開始輸入時自動顯示完成清單。 未選取這個選項時，仍然可以從 [IntelliSense]**** 功能表或按 **CTRL**+**空格鍵**來使用 IntelliSense 完成。
 
 - 在刪除字元後顯示完成清單
 
@@ -53,7 +53,7 @@ ms.locfileid: "75596212"
 
 - 在識別碼後鍵入 ?-Tab 時包含程式碼片段
 
-   選取這個選項時，在識別碼之後按下 **?** +**Tab**，IntelliSense 會將 C# 程式碼片段的別名新增至完成清單
+   選擇此選項後，IntelliSense 會在完成清單中添加 C# 程式碼片段的別名 **。**+**在**識別碼後按下選項卡
 
 ## <a name="enter-key-behavior"></a>ENTER 鍵行為
 
@@ -77,13 +77,13 @@ ms.locfileid: "75596212"
 
 - 一律在按下 ENTER 鍵時加入新行
 
-   指定如果您對完成清單中的項目輸入「任何字元」，然後按 **ENTER**，則會自動新增新的一行，並將游標移到這個新行。
+   指定如果您對完成清單中的項目輸入「任何字元」**，然後按 **ENTER**，則會自動新增新的一行，並將游標移到這個新行。
 
 ## <a name="show-name-suggestions"></a>顯示名稱建議
 
 針對您最近選取的成員執行自動物件名稱完成。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
-- [使用 IntelliSense](../../ide/using-intellisense.md)
+- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [Using IntelliSense](../../ide/using-intellisense.md)

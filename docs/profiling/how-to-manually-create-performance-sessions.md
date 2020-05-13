@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 46c0f1bfeee785feebf1d643b0796c1308053403
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778826"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>如何：手動建立效能工作階段
@@ -27,16 +27,16 @@ ms.locfileid: "74778826"
 
 ### <a name="to-manually-create-a-performance-session"></a>手動建立效能工作階段
 
-1. 在 [偵錯] 功能表上，指向 [分析工具]、[效能總管]，然後按一下 [新增效能工作階段]。
+1. 在 [偵錯]**** 功能表上，指向 [分析工具]****、[效能總管]****，然後按一下 [新增效能工作階段]****。
 
-     空白的效能工作階段就會加入至 [效能總管]。
+     空白的效能工作階段就會加入至 [效能總管]****。
 
-2. 以滑鼠右鍵按一下 [目標]，然後按一下 [加入目標二進位檔]。
+2. 以滑鼠右鍵按一下 [目標]****，然後按一下 [加入目標二進位檔]****。
 
-3. 在 [加入目標二進位檔] 對話方塊中，選取檔案名稱，然後按一下 [開啟]。
+3. 在 [加入目標二進位檔]**** 對話方塊中，選取檔案名稱，然後按一下 [開啟]****。
 
      新的二進位檔就會加入。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [效能總管](../profiling/performance-explorer.md)
-- [快速入門](../profiling/getting-started-with-performance-tools.md)
+- [開始使用](../profiling/getting-started-with-performance-tools.md)

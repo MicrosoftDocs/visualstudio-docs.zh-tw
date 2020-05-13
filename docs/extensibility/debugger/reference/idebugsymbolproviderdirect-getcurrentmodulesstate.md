@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesState | Microsoft Docs
+title: IDebugSymbol 提供者直接::獲取當前模組狀態 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetCurrentModulesState
 - IDebugSymbolProviderDirect::GetCurrentModulesState
 ms.assetid: a0c85318-5686-4eed-b213-21f2b9e681e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59f1917f420e4815bcd525f131e4b524e53e6b3f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c9e7cf711b5cf6823059945f85b9c3db30701ccf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347323"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719079"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
-擷取符號提供者為成員的符號群組的相關資訊。
+檢索有關符號提供程式是其成員的符號組的資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -42,16 +42,16 @@ int GetCurrentModulesState(
 
 ## <a name="parameters"></a>參數
 `pState`\
-[out]符號提供者群組的狀態。
+[出]符號提供程式組的狀態。
 
 `count`\
-[out]在群組中的模組數目。
+[出]組中的模組數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 每當模組是新增或移除的符號群組時，狀態會變更。 因此，這個方法可用來偵測如果已修改的符號群組。
+ 每當將模組添加到符號組或從符號組中刪除時,狀態都會更改。 因此,此方法可用於檢測符號組是否已被修改。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

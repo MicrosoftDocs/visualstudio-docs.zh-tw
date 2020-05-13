@@ -1,20 +1,21 @@
 ---
 title: 產生參數重構
-ms.date: 06/19/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: e95e76c35afdb8cdbe38c8b33329734ba68361b1
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: 372a3f705e5e85c0edb31a754105f61056402b9f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329088"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094358"
 ---
 # <a name="generate-parameter"></a>產生參數
 
@@ -22,19 +23,21 @@ ms.locfileid: "67329088"
 
 - C#
 
-**功能：** 自動產生方法帳戶。
+- Visual Basic
 
-**時機：** 目前的內容中沒有所參考方法中的變數，並收到錯誤；您可以產生參數做為程式碼修正。 
+**內容：** 自動生成方法參數。
 
-**原因：** 您可以在不會遺失內容的情況下，快速修改方法簽章。
+**何時：** 引用方法中的變數，該變數在當前上下文中不存在並收到錯誤;因此，請引用當前上下文中不存在的變數。但是，如果該方法在當前上下文中不存在，則會導致錯誤。可以生成參數作為代碼修復。 
 
-## <a name="how-to"></a>操作說明
+**原因：** 您可以快速修改方法簽名，而不會丟失上下文。
 
-1. 將您的游標放在變數名稱中並按下 **Ctrl**+ **。** 以觸發 [快速動作與重構]  功能表。
-1. 選取 [產生參數]  。
+## <a name="how-to"></a>操作方式
+
+1. 將游標放在變數名稱中，然後按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
+1. 選取 [產生參數]****。
 
    ![產生參數](media/generate-parameter.png) 
 
 ## <a name="see-also"></a>另請參閱
 
-- [重構](../refactoring-in-visual-studio.md)
+- [Refactoring](../refactoring-in-visual-studio.md)

@@ -13,18 +13,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 626db2638912c9eaa49ea74e702c9ba24f6fd33f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a76246096eec8779ce331e93f01be5ab791d1cdb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75576338"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633950"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>如何：建置包含資源的專案
-如果您要建置專案的當地語系化版本，就必須將所有使用者介面項目分隔成適用於各種語言的資源檔。 如果專案只會使用字串，資源檔就能使用文字檔。 或者，您可以使用 *.resx* 檔案作為資源檔。
+
+如果您要建置專案的當地語系化版本，就必須將所有使用者介面項目分隔成適用於各種語言的資源檔。 如果專案只會使用字串，資源檔就能使用文字檔。 或者，您可以將 *.resx*檔用作資源檔。
 
 ## <a name="compile-resources-with-msbuild"></a>使用 MSBuild 編譯資源
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所提供的一般工作程式庫包含 `GenerateResource` 工作，讓您可用來編譯 *.resx* 檔或文字檔中的資源。 此工作包含 `Sources` 參數來指定要編譯哪一個資源檔，以及 `OutputResources` 參數來指定輸出資源檔的名稱。 如需 `GenerateResource` 工作的詳細資訊，請參閱 [GenerateResource 工作](../msbuild/generateresource-task.md)。
+
+MSBuild 提供的常見任務的庫包括一個`GenerateResource`任務，可用於編譯 *.resx*或文字檔中的資源。 此工作包含 `Sources` 參數來指定要編譯哪一個資源檔，以及 `OutputResources` 參數來指定輸出資源檔的名稱。 有關任務的詳細資訊，`GenerateResource`請參閱[生成資源任務](../msbuild/generateresource-task.md)。
 
 #### <a name="to-compile-resources-with-msbuild"></a>使用 MSBuild 編譯資源
 
@@ -37,7 +39,8 @@ ms.locfileid: "75576338"
 4. 使用從 `Output` 項目(Element) 建立的項目 (Item) 做為另一個工作的輸入。
 
 ## <a name="example"></a>範例
-下列程式碼範例示範 `Output` 項目如何指定 `GenerateResource` 工作的 `OutputResources` 屬性將包含已編譯的資源檔 *alpha.resources*和 *beta.resources*，而這兩個檔案會置於 `Resources` 項目清單中。 藉由將這些 *.resources* 檔案識別為相同名稱的項目集合，您可以輕鬆地使用它們作為另一個工作的輸入，例如 [Csc](../msbuild/csc-task.md) 工作。
+
+下列程式碼範例示範 `Output` 項目如何指定 `GenerateResource` 工作的 `OutputResources` 屬性將包含已編譯的資源檔 *alpha.resources*和 *beta.resources*，而這兩個檔案會置於 `Resources` 項目清單中。 通過將這些 *.resources*檔標識為同名專案的集合，可以輕鬆地將它們用作另一個任務（如[Csc](../msbuild/csc-task.md)任務）的輸入。
 
 此工作相當於使用 [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) 的 **/compile** 參數：
 
@@ -53,6 +56,7 @@ ms.locfileid: "75576338"
 ```
 
 ## <a name="example"></a>範例
+
 下列範例專案包含兩個工作：`GenerateResource` (可編譯資源) 和 `Csc` (可編譯原始程式碼檔案和已編譯的資源檔案)。 `GenerateResource` 工作所編譯的資源檔會儲存在 `Resources` 項目中，然後傳遞到 `Csc` 工作。
 
 ```xml
@@ -76,8 +80,9 @@ ms.locfileid: "75576338"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
-- [ MSBuild](../msbuild/msbuild.md)
-- [GenerateResource 工作](../msbuild/generateresource-task.md)
+## <a name="see-also"></a>另請參閱
+
+- [MSBuild](../msbuild/msbuild.md)
+- [生成資源任務](../msbuild/generateresource-task.md)
 - [Csc 工作](../msbuild/csc-task.md)
 - [Resgen.exe (資源檔產生器)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

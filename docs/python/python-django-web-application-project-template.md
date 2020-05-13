@@ -11,15 +11,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 136c03ef11071e5d548e36e45a6a541cffce1469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784796"
 ---
 # <a name="django-web-project-template"></a>Django Web 專案範本
 
-[Django (英文)](https://www.djangoproject.com/) 是高階的 Python 架構，專為快速、安全且可擴充的網頁程式開發所設計。 Visual Studio 中的 Python 支援提供數個專案範本，可設定以 Django 為基礎的 Web 應用程式結構。 若要在 Visual Studio 中使用範本，請選取 [檔案] > [新增] > [專案]，搜尋 "Django"，然後從 [空白 Django Web 專案]、[Django Web 專案] 和 [投票 Django Web 專案] 範本中選取。 如需所有範本的逐步解說，請參閱[學習 Django 教學課程](learn-django-in-visual-studio-step-01-project-and-solution.md)。
+[Django (英文)](https://www.djangoproject.com/) 是高階的 Python 架構，專為快速、安全且可擴充的網頁程式開發所設計。 Visual Studio 中的 Python 支援提供數個專案範本，可設定以 Django 為基礎的 Web 應用程式結構。 要在視覺化工作室中使用範本，請選擇 **"檔** > **新專案** > **"，** 搜索"Django"，然後從**空白 Django Web 專案****、Django Web**專案和**投票 Django Web 專案**範本中進行選擇。 如需所有範本的逐步解說，請參閱[學習 Django 教學課程](learn-django-in-visual-studio-step-01-project-and-solution.md)。
 
 Visual Studio 針對 Django 專案提供完整的 IntelliSense：
 
@@ -45,13 +45,13 @@ Django 專案一般是透過其 *manage.py* 檔案進行管理，而此檔案是
 
 ## <a name="django-management-console"></a>Django 管理主控台
 
-Django 管理主控台的存取方式是透過 [專案] 功能表上的各種命令，或是以滑鼠右鍵按一下 [方案總管] 中的專案。
+Django 管理主控台通過 **"專案"** 功能表上的各種命令或按右鍵**解決方案資源管理器**中的專案來訪問。
 
-- **開啟 Django 殼層**：在您的應用程式內容中開啟可讓您操作模型的殼層：
+- **打開 Django 外殼**：在應用程式上下文中打開一個 shell，使您能夠操作模型：
 
     ![開啟 Django 殼層命令的結果](media/template-django-console-shell.png)
 
-- **Django 同步 DB**：在**互動式** 視窗中執行 `manage.py syncdb`：
+- **Django 同步資料庫**：`manage.py syncdb`在**互動式**視窗中執行：
 
     ![Django 同步 DB 命令的結果](media/template-django-console-sync-db.png)
 
@@ -66,4 +66,4 @@ Django 管理主控台的存取方式是透過 [專案] 功能表上的各種命
 ## <a name="see-also"></a>另請參閱
 
 - [學習 Django 教學課程](learn-django-in-visual-studio-step-01-project-and-solution.md)
-- [發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [發佈到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

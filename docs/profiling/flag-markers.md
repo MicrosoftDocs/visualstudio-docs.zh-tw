@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969935"
 ---
 # <a name="flag-markers"></a>旗標標記
@@ -23,24 +23,24 @@ ms.locfileid: "62969935"
 ## <a name="flag-importance"></a>旗標重要性
  旗標會依其重要性以不同的大小顯示。 與所有標記一樣，重要性可以是低、普通、高或嚴重。  下圖顯示標記的外觀 (依重要性層級排列)︰
 
- ![[低]、[普通]、[高] 和 [嚴重] 重要性標記](../profiling/media/cvmarkerimportance.png "CVMarkerImportance") 顯示旗標重要性的標記
+ ![低、正常、高和關鍵重要性標記](../profiling/media/cvmarkerimportance.png "CVMarker 重要性")顯示標誌重要性的標記
 
 ## <a name="flag-category"></a>旗標分類
  旗標共有五種不同的色彩，依其分類以其中一種顯示。 如果有五種以上的類別，則會重複使用這些色彩。 您無法選擇色彩。 與所有標記一樣，分類可以是任何整數。 下圖顯示前五個類別的色彩。
 
- ![五種分類標記色彩](../profiling/media/cvmarkercategory.png "CVMarkerCategory") 顯示分類的標記
+ ![類別標記的五種顏色](../profiling/media/cvmarkercategory.png "CV標記類別")顯示類別的標記
 
 ## <a name="alerts"></a>警示
  警示為紅色旗標，表示嚴重的應用程式事件，例如例外狀況。  以下是警示︰
 
- ![並行視覺化檢視警示標記](../profiling/media/cvmarkeralert.png "CVMarkerAlert") 警示標記
+ ![併發視覺化器警報標記](../profiling/media/cvmarkeralert.png "CVMarkerAlert")警報標記
 
 ## <a name="aggregation-flags"></a>彙總旗標
  有時旗標發生的位置太靠近並行視覺化檢視中的另一個旗標，以至於無法個別繪製。 發生這種情況時，會顯示一個表示基礎旗標的灰色*彙總旗標*。 當您將指標放在這些圖示的其中一個時，工具提示會顯示所代表基礎旗標的數目。 若要檢視旗標，請將它放大。 如果您縮放到最大後仍然出現彙總旗標，可以在[標記報表](../profiling/markers-report.md)中檢視基礎旗標。
 
  彙總旗標以不同大小繪製。 大小取決於最重要的旗標在彙總中的重要性層級。 下圖顯示以遞增的重要性順序排序的彙總旗標。
 
- ![顯示四種重要性層級的彙總旗標](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate") 依重要性層級排序的彙總旗標
+ ![顯示四個重要性級別的聚合標誌](../profiling/media/cvmarkeraggregate.png "CV標記聚合")按重要性級別聚合標誌
 
 ## <a name="see-also"></a>另請參閱
 - [並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)

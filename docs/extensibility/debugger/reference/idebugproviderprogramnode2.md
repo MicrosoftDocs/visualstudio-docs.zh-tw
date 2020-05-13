@@ -1,5 +1,5 @@
 ---
-title: IDebugProviderProgramNode2 | Microsoft Docs
+title: IDebug提供程式程序節點2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33c4a4914e15a8ecbea0d4f28c2325a952a042de
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 815a945f6fb591960ebf0bf4b4fcd9d842ffefd3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353811"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720676"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
-此介面中，封送處理程式相關的介面跨處理序界限。
+此介面跨進程邊界封送程序相關介面。
 
 ## <a name="syntax"></a>語法
 
@@ -28,28 +28,28 @@ ms.locfileid: "66353811"
 IDebugProviderProgramNode2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 偵錯引擎 (DE) 實作的相同物件上實作這個介面[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)以支援跨處理序界限的封送處理的介面。
+## <a name="notes-for-implementers"></a>實施者說明
+ 除錯引擎 (DE) 在實現[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)以支援跨行程邊界封送介面的同一物件上實現此介面。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 呼叫[QueryInterface](/cpp/atl/queryinterface)上`IDebugProgramNode2`介面，以取得此介面。 如果無法取得此介面，DE 不支援封送處理的介面。
+## <a name="notes-for-callers"></a>通話備註
+ 在`IDebugProgramNode2`介面上調用[查詢介面](/cpp/atl/queryinterface)以獲取此介面。 如果無法獲取此介面,DE 不支援介面的封送。
 
-## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 這個介面會實作下列方法：
+## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
+ 此介面實現以下方法:
 
 |方法|描述|
 |------------|-----------------|
-|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|取得指定的介面，跨處理序界限。|
+|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|跨進程邊界獲取指定的介面。|
 
 ## <a name="remarks"></a>備註
- DE 執行不同的處理序空間中，從正在偵錯程式時，會實作這個介面： 例如，當 DE 執行 Visual Studio 處理序空間，而不是正在偵錯之程式的處理序空間中。
+ 當 DE 在獨立於正在除錯的程式的進程空間中執行時,將實現此介面:例如,當 DE 在 Visual Studio 進程空間中執行時,而不是調試程式的進程空間。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: 階層和選取 |Microsoft Docs
+title: 層次結構和選擇 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,39 +7,39 @@ helpviewer_keywords:
 - selection
 - hierarchies
 ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3d59a5160b5c20a3243426eaf1fda4b72e58e93
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a0e38c2cea464abded5ecf6ee2c8ac087868b07e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328871"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708132"
 ---
-# <a name="hierarchies-and-selection"></a>階層和選取範圍
-當您自訂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您應該了解如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]處理階層，例如專案，以及如何使用選取範圍內容來決定向使用者顯示的內容。 本章節將討論的概念[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]階層和選取範圍。
+# <a name="hierarchies-and-selection"></a>層次結構與選擇
+自定義[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]時,應瞭解如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]處理 層次結構(如專案)以及如何使用選擇上下文來確定向使用者顯示的內容。 位置討論層次結構與選擇的概念[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
 
 ## <a name="in-this-section"></a>本節內容
 - [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
- 描述專案階層和階層的一般概念。
+ 描述專案層次結構和層次結構的一般概念。
 
-- [選取項目及在 IDE 中的貨幣](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+- [IDE 選擇與貨幣](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 
- 描述如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會維護使用者的目前作用中物件的相關資訊，並讓追蹤貨幣的 Vspackage。
+ 描述[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 如何維護有關使用者當前活動物件的資訊,並允許 VSPackages 追蹤貨幣。
 
-- [選取內容物件](../../extensibility/internals/selection-context-objects.md)
+- [選擇內容物件](../../extensibility/internals/selection-context-objects.md)
 
- 討論如何判斷使用者的選取項目內容焦點視窗上的模型。
+ 討論如何確定用戶選擇上下文對視窗的關注模型。
 
-- [使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)
+- [向使用者的回饋](../../extensibility/internals/feedback-to-the-user.md)
 
- 討論如何提供可用的功能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用者目前的選取項目內容和整體 IDE 內容為基礎。
+ 討論[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中的 可用功能如何基於使用者的當前選擇上下文和整體 IDE 上下文。
 
 ## <a name="related-sections"></a>相關章節
-- [專案類型架構](../../extensibility/internals/project-types-architecture.md)
+- [專案類型架構結構](../../extensibility/internals/project-types-architecture.md)
 
- 提供有關專案類型的詳細技術資訊。
+ 提供有關項目類型的詳細技術資訊。

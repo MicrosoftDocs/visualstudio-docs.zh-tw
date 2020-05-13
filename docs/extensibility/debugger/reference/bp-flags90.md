@@ -1,27 +1,27 @@
 ---
-title: BP_FLAGS90 | Microsoft Docs
+title: BP_FLAGS90 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - BP_FLAGS90 enumeration
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c423b8ecf0e4591913be5ef875057a947f42614
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5628af4a6e5c4deae3de02340e882bd2605e22d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319150"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738054"
 ---
-# <a name="bpflags90"></a>BP_FLAGS90
-列舉有效的值，選擇性旗標。 選擇性旗標可用來指定其他資訊，當您設定中斷點。 這個列舉型別會擴充[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)列舉型別。
+# <a name="bp_flags90"></a>BP_FLAGS90
+枚舉可選標誌的有效值。 設置斷點時,可選標誌可用於指定其他資訊。 此枚舉擴展了[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)枚舉。
 
 ## <a name="syntax"></a>語法
 
@@ -54,23 +54,23 @@ public enum enum_BP_FLAGS90
 
 ## <a name="fields"></a>欄位
 `BP90_FLAG_NONE`\
-不指定任何中斷點旗標。
+指定無斷點標誌。
 
 `BP90_FLAG_MAP_DOCPOSITION`\
-指定偵錯引擎 (DE) 應該使用的文件位置來對應中斷點。 這是僅適用於指令碼導向的原始程式檔等動態伺服器網頁 (ASP) 中設定中斷點。
+指定除錯引擎 (DE) 應使用文件位置映射斷點。 這僅適用於在面向腳稿的源檔中設置的斷點,如活動伺服器頁 (ASP)。
 
 `BP90_FLAG_DONT_STOP`\
-指定偵錯引擎中，應該處理中斷點，但，偵錯引擎最終應該不只如此;亦即[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)應該不會傳送事件的物件。 這個旗標被設計用於主要與追蹤點。
+指定斷點應由調試引擎處理,但調試引擎最終不應停止;也就是說,不應發送[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)事件物件。 此標誌設計主要用於跟蹤點。
 
 `BP90_FLAG_TRACEPOINT_CONTINUE`\
-使用原生偵錯引擎來判斷是否應該清除逐步執行的狀態。 它會有所不同 BP90_FLAG_DONT_STOP，因為如果在追蹤點執行巨集 BP90_FLAG_DONT_STOP 未設定。
+本機調試引擎用於確定是否應清除步進狀態。 它與BP90_FLAG_DONT_STOP不同,因為如果跟蹤點執行宏,則不設置BP90_FLAG_DONT_STOP。
 
 ## <a name="requirements"></a>需求
-標頭：Msdbg90.h
+標題: Msdbg90.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

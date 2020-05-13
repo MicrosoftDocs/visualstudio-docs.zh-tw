@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolution2::GetBreakpointType |Microsoft Docs
+title: IDebugError 突破點決議2::獲取斷點類型 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2::GetBreakpointType
 ms.assetid: 0bdb1152-4752-4464-ae7c-6d666dc293b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4715dbd6fd3997be932cfd0d8944a30940e1d07
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f933baed55216054ecfec3b3b4c29f15da652ba4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327763"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730060"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
-取得中斷點類型。
+獲取斷點類型。
 
 ## <a name="syntax"></a>語法
 
@@ -41,16 +41,16 @@ int GetBreakpointType(
 
 ## <a name="parameters"></a>參數
 `pBPType`\
-[out]傳回值，以從[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)描述的中斷點類型列舉。
+[出]從描述斷點類型的[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)枚舉中返回值。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
-這個方法會傳回類型的中斷點無法繫結，因此需要錯誤中斷點事件。
+此方法返回未能綁定的斷點類型,因此需要錯誤斷點事件。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法來簡單`CDebugErrorBreakpointResolution`公開的物件[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)介面。
+下面的示例演示如何為公開`CDebugErrorBreakpointResolution`[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)介面的簡單物件實現此方法。
 
 ```
 HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)

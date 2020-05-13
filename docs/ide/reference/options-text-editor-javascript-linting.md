@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605963"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>選項對話方塊：文字編輯器 \> JavaScript/TypeScript \> Linting
+# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>選項對話方塊：文字編輯器\>JavaScript/TypeScript\>林亭
 
-使用 [選項]  對話方塊的 [Linting]  頁面，設定在程式碼編輯器中分析程式碼的選項。 若要存取此頁面，請在功能表列上依序選擇 [工具]   > [選項]  ，然後依序展開 [文字編輯器]   > [JavaScript/TypeScript]   > [Linting]  。
+使用 [選項]**** 對話方塊的 [Linting]**** 頁面，設定在程式碼編輯器中分析程式碼的選項。 要訪問此頁面，在功能表列上，選擇 **"工具** > **選項**"，然後展開**文字編輯器** > **JavaScript/TypeScript** > **Linting**。
 
 ## <a name="eslint-settings"></a>ESLint 設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "68605963"
 
 ### <a name="uielement-list"></a>UIElement 清單
 
-|選項|說明|
+|選項|描述|
 |------------|-----------------|
 |**啟用 ESLint**|選取此選項時，程式碼編輯器可讓您對程式碼進行靜態分析。|
 |**列出專案中的所有內含檔案，即使是關閉的檔案也列出**|選取此選項時，將分析已關閉的檔案，除非僅針對開啟的檔案報告診斷。|
@@ -41,4 +41,4 @@ ms.locfileid: "68605963"
 
 ## <a name="see-also"></a>另請參閱
 
-- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
+- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)

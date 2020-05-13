@@ -1,110 +1,110 @@
 ---
-title: Hello World 延伸模組教學課程 |Microsoft Docs
+title: 你好世界擴展教程 |微軟文件
 ms.date: 03/14/2019
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0345d67a4202b8b267d213e0c288847e2774f722
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: c66f48a4b3c5948393e10f34810f3cb87c78c924
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404126"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711655"
 ---
-# <a name="create-your-first-extension-hello-world"></a>建立您的第一個擴充功能： Hello World
+# <a name="create-your-first-extension-hello-world"></a>建立您的第一個擴展:你好世界
 
-此 Hello World 範例會逐步引導您建立 Visual Studio 的第一個延伸模組。 本教學課程說明如何將新的命令加入 Visual Studio。
+此 Hello World 示例引導您為 Visual Studio 創建第一個擴展。 本教程演示如何向 Visual Studio 添加新命令。
 
-在此過程中，您將瞭解如何：
+在此過程中,您將學習如何:
 
-* **[建立擴充性專案](#create-an-extensibility-project)**
-* **[新增自訂命令](#add-a-custom-command)**
-* **[修改原始程式碼](#modify-the-source-code)**
-* **[執行它](#run-it)**
+* **[建立擴充性項目](#create-an-extensibility-project)**
+* **[新增自訂指令](#add-a-custom-command)**
+* **[變更原始碼](#modify-the-source-code)**
+* **[加以執行](#run-it)**
 
-在此範例中，您將使用C#視覺效果來新增名為「假設 Hello World！」的自訂功能表按鈕。 如下所示：
+此範例中,您將使用 Visual C# 添加名為「問好世界! 如下所示:
 
-![Hello World 命令](media/hello-world-say-hello-world.png)
-
-> [!NOTE]
-> 本文適用于 Windows 上的 Visual Studio。 如 Visual Studio for Mac，請參閱[Visual Studio for Mac 中](/visualstudio/mac/extending-visual-studio-mac-walkthrough)的擴充性逐步解說。
-
-## <a name="prerequisites"></a>必要條件：
-
-開始之前，請確定您已安裝**Visual Studio 延伸模組開發**工作負載，其中包含您需要的 VSIX 範本和範例程式碼。
+![你好世界命令](media/hello-world-say-hello-world.png)
 
 > [!NOTE]
-> 您可以使用任何版本的 Visual Studio （「社區」、「專業」或「企業」）來建立 Visual Studio 擴充性專案。
+> 本文適用於 Windows 上的可視化工作室。 有關 Mac 的視覺化工作室,請參閱[Mac 視覺工作室中的擴充性演練](/visualstudio/mac/extending-visual-studio-mac-walkthrough)。
 
-## <a name="create-an-extensibility-project"></a>建立擴充性專案
+## <a name="prerequisites"></a>Prerequisites
+
+在開始之前,請確保已安裝**Visual Studio 擴展開發**工作負荷,其中包括您需要的 VSIX 範本和範例代碼。
+
+> [!NOTE]
+> 您可以使用任何版本的視覺工作室(社區、專業版或企業版)創建可視化工作室擴展性專案。
+
+## <a name="create-an-extensibility-project"></a>建立擴充性項目
 
 ::: moniker range="vs-2017"
 
-步驟 1： 從 [檔案] 功能表選取 [新增] >  [專案]。
+步驟 1： 從 [檔案]**** 功能表選取 [新增]**** > [專案]****。
 
-步驟 2： 在右上方的 [搜尋] 方塊中，輸入 "vsix"，然後選取C# [Visual **vsix] 專案**。 在對話方塊底部輸入 "HelloWorld" 作為**名稱**，然後選取 **[確定]** 。
+步驟 2： 在右上角的搜尋框中,鍵入「vsix」並選擇 Visual C# **VSIX 專案**。 在對話框底部輸入 **「HelloWorld」,** 然後選擇 **「確定**」。
 
 ![新增專案](media/hello-world-new-project.png)
 
-您現在應該會看到 [消費者入門] 頁面和一些範例資源。
+現在,您應該會看到"入門"頁和一些示例資源。
 
-如果您需要離開本教學課程並回頭返回，您可以在 [**開始] 頁面**的 [**最近**] 區段中找到新的 HelloWorld 專案。
+如果您需要離開本教程並返回本教程,您可以在 **"最近**"部分的 **"開始頁面"** 中找到您的新 HelloWorld 專案。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-步驟 1： 從 [檔案] 功能表選取 [新增] >  [專案]。 搜尋 "vsix" 並選取 [Visual C# **vsix] 專案**，然後選取 [**下一步]** 。
+步驟 1： 從 [檔案]**** 功能表選取 [新增]**** > [專案]****。 搜尋"vsix",然後選擇可視化 C# **VSIX 專案**,然後**選擇"下一個**"。
 
-步驟 2： 輸入 "HelloWorld" 作為**專案名稱**，然後選取 [**建立**]。
+步驟 2： 為**專案名稱**輸入"HelloWorld",然後選擇 **"創建**"。
 
 ![新增專案](media/hello-world-new-project-2019.png)
 
-您現在應該會在**方案總管**中看到 HelloWorld 專案。
+現在,您應該在**解決方案資源管理器**中看到 HelloWorld 專案。
 
 ::: moniker-end
 
-## <a name="add-a-custom-command"></a>新增自訂命令
+## <a name="add-a-custom-command"></a>新增自訂指令
 
-步驟 1： 如果您選取*extension.vsixmanifest*資訊清單檔，您可以看到哪些選項可變更，例如 [描述]、[作者] 和 [版本]。
+步驟 1： 如果選擇 *.vsix清單清單*檔,您可以看到哪些選項是可更改的,例如說明、作者和版本。
 
-步驟 2： 以滑鼠右鍵按一下專案（而非方案）。 在操作功能表上，依序選取 [**加入**] 和 [**新增專案**]。
+步驟 2： 右鍵單擊專案(不是解決方案)。 在上下文選單上,選擇 **「添加**」,然後**選擇「新建項**」。
 
-步驟 3： 選取 [**擴充**性] 區段，然後選擇 [**命令**]。
+步驟 3： 選擇「**擴充性**」 部份, 然後選擇**指令**。
 
-步驟 4： 在底部的 [**名稱**] 欄位中，輸入檔案名，例如*Command.cs*。
+步驟 4： 在底部的**名稱「 欄**位中,輸入檔案名稱」,如*Command.cs*。
 
-![自訂命令](media/hello-world-vsix-command.png)
+![自訂指令](media/hello-world-vsix-command.png)
 
-您的新命令檔會顯示在**方案總管**中。 在 [**資源**] 節點底下，您會找到與命令相關的其他檔案。 例如，如果您想要修改影像，那麼 PNG 檔案就在這裡。
+您的新命令檔在**解決方案資源管理器**中可見。 在 **「資源」** 節點下,您將找到與您的指令相關的其他檔。 例如,如果要修改圖像,PNG 檔就在這裡。
 
-## <a name="modify-the-source-code"></a>修改原始程式碼
+## <a name="modify-the-source-code"></a>變更原始碼
 
-此時，會自動產生命令和按鈕文字，而不會有太大的樂趣。 如果您想要進行變更，您可以修改 .VSCT 檔案和 CS 檔案。
+此時,命令和按鈕文本是自動生成的,不是很有趣。 如果要進行更改,可以修改 VSCT 檔和 CS 檔。
 
-* .VSCT 檔案可讓您重新命名命令，以及定義它們在 Visual Studio 命令系統中的位置。 當您流覽 .VSCT 檔案時，您會注意到說明 .VSCT 程式碼中每個區段的批註。
+* VSCT 檔案是您可以重新命名命令以及定義命令在 Visual Studio 命令系統中的位置的位置。 在瀏覽 VSCT 檔時,您會注意到解釋 VSCT 代碼的每個部分控制項的註解。
 
-* CS 檔案是您可以在其中定義動作的位置，例如 click 處理常式。
+* CS 檔案是您可以定義操作(如單擊處理程式)的位置。
 
 ::: moniker range="vs-2017"
 
-步驟 1： 在**方案總管**中，尋找新命令的 .vsct 檔案。 在此情況下，它會被稱為*CommandPackage. .vsct*。
+步驟 1： 在**解決方案資源管理員**中,尋找新命令的 VSCT 檔。 在這種情況下,它將稱為*命令包.*
 
-![命令封裝 .vsct](media/hello-world-command-package-vsct.png)
+![命令套件 vct](media/hello-world-command-package-vsct.png)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-步驟 1： 在**方案總管**中，尋找擴充功能與套件的 .vsct 檔案。 在此情況下，它會被稱為*HelloWorldPackage. .vsct*。
+步驟 1： 在**解決方案資源管理員**中,尋找副檔名 VS 套件的 VSCT 檔案。 在這種情況下,它將被稱為*HelloWorldPackage.vsct。*
 
 ::: moniker-end
 
-步驟 2： 將 `ButtonText` 參數變更為 `Say Hello World!`。
+步驟 2： 將`ButtonText`參數變更`Say Hello World!`為 。
 
 ```xml
   ...
@@ -118,7 +118,7 @@ ms.locfileid: "75404126"
   ...
 ```
 
-步驟 3： 返回**方案總管**並尋找*Command.cs*檔案。 在 `Execute` 方法中，將字串 `message` 從 `string.Format(..)` 變更為 `Hello World!`。
+步驟 3： 返回**解決方案資源管理員**並找到*Command.cs*檔。 在`Execute`方法中,將字串`message`從`string.Format(..)``Hello World!`變更為 。
 
 ```csharp
   ...
@@ -140,33 +140,33 @@ ms.locfileid: "75404126"
   ...
 ```
 
-請務必將您的變更儲存至每個檔案。
+請確保將更改儲存到每個檔中。
 
 ## <a name="run-it"></a>加以執行
 
-您現在可以在 Visual Studio 實驗實例中執行原始程式碼。
+您現在可以在可視化工作室實驗實例中運行原始程式碼。
 
-步驟 1： 按**F5**執行 [**開始調試**] 命令。 此命令會建立您的專案，並啟動偵錯工具，啟動名為**實驗實例**的 Visual Studio 的新實例。
+步驟 1： 按**F5**以運行 **「開始調試」** 命令。 此命令生成項目並啟動除錯器,啟動稱為**實驗實例**的 Visual Studio 的新實例。
 
 ::: moniker range="vs-2017"
 
-您會在 Visual Studio 標題列中看到 [**實驗實例**] 這一詞。
+您將在"視覺工作室"標題列中看到"**實驗實例**"一詞。
 
 ![實驗實例標題列](media/hello-world-exp-instance.png)
 
 ::: moniker-end
 
-步驟 2： 在**實驗實例**的 [**工具**] 功能表上，按一下 [**說 Hello World！** ]。
+步驟 2： 在**實驗實例****的工具**功能表上,單擊 **"打你好世界!"**
 
 ![最終結果](media/hello-world-final-result.png)
 
-您應該會看到來自新自訂命令的輸出，在此案例中，畫面中央的對話方塊會提供您**Hello World！** 訊息。
+您應該看到來自新自定義命令的輸出,在這種情況下,螢幕中心的對話框將為您提供**Hello World!** 訊息。
 
 ## <a name="next-steps"></a>後續步驟
 
-既然您已經知道使用 Visual Studio 擴充性的基本概念，您可以在這裡深入瞭解：
+現在,您已經瞭解了使用 Visual Studio 可擴充性的基礎知識,您可以在此處瞭解詳細資訊:
 
-* [開始開發 Visual Studio 擴充](starting-to-develop-visual-studio-extensions.md)功能-範例、教學課程。 併發布您的擴充功能
-* [Visual Studio 2017 SDK 的新](what-s-new-in-the-visual-studio-2017-sdk.md)功能-Visual Studio 2017 中的新擴充功能
-* [Visual Studio 2019 SDK 的新](whats-new-visual-studio-2019-sdk.md)功能-Visual Studio 2019 中的新擴充功能
-* 在[VISUAL STUDIO SDK 內](internals/inside-the-visual-studio-sdk.md)-瞭解 Visual Studio 擴充性的詳細資料
+* [開始開發可視化工作室擴展](starting-to-develop-visual-studio-extensions.md)- 示例,教程。 並發布您的延伸
+* [視覺工作室 2017 SDK 中的新增功能](what-s-new-in-the-visual-studio-2017-sdk.md)- Visual Studio 2017 中新的擴充功能
+* [視覺工作室 2019 SDK 中的新增功能](whats-new-visual-studio-2019-sdk.md)- Visual Studio 2019 中新的擴充功能
+* [在視覺化工作室 SDK 中](internals/inside-the-visual-studio-sdk.md)- 瞭解視覺化工作室可擴充性的詳細資訊

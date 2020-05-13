@@ -16,23 +16,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90b56d3b36545ecfe97015fc301ce3ce72e781ba
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d23799e5ce5bf391915ac459c69c27b990211f0a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588365"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094544"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation 工作
+
 使用 XSLT 或已編譯的 XSLT 來轉換 XML 輸入，並輸出到輸出裝置或檔案。
 
 ## <a name="parameters"></a>參數
+
  下表說明 `XslTransformation` 工作的參數。
 
 |參數|描述|
 |---------------|-----------------|
 |`OutputPaths`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定 XML 轉換的輸出檔案。|
-|`Parameters`|選擇性的 `String` 參數。<br /><br /> 指定「XSLT 輸入」文件的參數。|
+|`Parameters`|選擇性的 `String` 參數。<br /><br /> 指定「XSLT 輸入」文件的參數。  提供原始 XML，將每個參數保留`<Parameter Name="" Value="" Namespace="" />`為 。|
 |`XmlContent`|選擇性的 `String` 參數。<br /><br /> 以字串形式指定 XML 輸入。|
 |`XmlInputPaths`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定 XML 輸入檔案。|
 |`XslCompiledDllPath`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定已編譯的 XSLT。|
@@ -40,8 +42,22 @@ ms.locfileid: "75588365"
 |`XslInputPath`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定 XSLT 輸入檔案。|
 
 ## <a name="remarks"></a>備註
- 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>請參閱
+ 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
+
+## <a name="example"></a>範例
+
+在下面的示例中，XSL 轉換檔*轉換.xslt*用於修改 xml 檔`$(XmlInputFileName)`。 轉換後的 XML 寫入`$(IntermediateOutputPath)output.xml`。 XSL 變換採用`$(Parameter1)`輸入參數。
+
+```xml
+    <XslTransformation XslInputPath="transform.xslt"
+                       XmlInputPaths="$(XmlInputFileName)"
+                       OutputPaths="$(IntermediateOutputPath)output.xml"
+                       Parameters="&lt;Parameter Name='Parameter1' Value='$(Parameter1)'/&gt;"/>
+```
+
+## <a name="see-also"></a>另請參閱
+
+- [XSLT 參數](/dotnet/standard/data/xml/xslt-parameters)
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)

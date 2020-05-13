@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars |Microsoft Docs
+title: IDebug屬性3::獲取字串字元 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetStringChars
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16d352ae5397d786c5d77f56a513e9ae2db2d7b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 693a29bc30ef206428713ace36275389de1b7f0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348834"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721090"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-擷取此屬性相關聯的字串，並將它儲存在使用者提供的緩衝區。
+檢索與此屬性關聯的字串,並將其存儲在使用者提供的緩衝區中。
 
 ## <a name="syntax"></a>語法
 
@@ -45,24 +45,24 @@ int GetStringChars(
 
 ## <a name="parameters"></a>參數
 `buflen`\
-[in]使用者提供的緩衝區可容納的字元數上限。
+[在]使用者提供的緩衝區可以保留的最大字元數。
 
 `rgString`\
-[out]傳回的字串。
+[出]返回字串。
 
- [C++只]，`rgString`是接收之字串的 Unicode 字元的緩衝區的指標。 這個緩衝區必須至少是`buflen`字元 （而不是個位元組） 的大小。
+ [C++僅`rgString`],是指向接收字串 Unicode 字元的緩衝區的指標。 此緩衝區的大小必須至少`buflen`為字元(而不是位元組)。
 
 `pceltFetched`\
-[out]傳回的實際儲存在緩衝區中的字元數的位置。 (可以是`NULL`在C++。)
+[出]返回緩衝區中實際存儲的字元數。 (可在`NULL`C++。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。
+如果成功,返回`S_OK`;否則返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
-在C++，必須小心以確保至少是緩衝區`buflen`長度 Unicode 字元。 請注意，Unicode 字元長的 2 個位元組。
+在C++時,必須注意確保緩衝區至少`buflen`為 Unicode 字元長。 請注意,Unicode 字元長 2 位元組。
 
 > [!NOTE]
-> 在C++，傳回的字串不包含結束的 null 字元。 如果指定的話，`pceltFetched`會在字串中指定的字元數。
+> 在C++,返回的字串不包括終止空字元。 如果給定,`pceltFetched`將指定字串中的字元數。
 
 ## <a name="example"></a>範例
 

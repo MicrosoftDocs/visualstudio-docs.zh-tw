@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b3f5cfb583ec4fceb9fb7428b08c00f6ca8e26b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999957"
 ---
-# <a name="markerimportance-enumeration"></a>marker_importance 列舉
+# <a name="marker_importance-enumeration"></a>marker_importance 列舉
 表示並行視覺化檢視標記的重要性層級。
 
 ## <a name="syntax"></a>語法
@@ -32,7 +32,7 @@ enum marker_importance;
 
 ### <a name="values"></a>值
 
-|名稱|說明|
+|名稱|描述|
 |----------|-----------------|
 |`critical_importance`|指定標記有極高重要性。|
 |`high_importance`|指定標記有高重要性。|
@@ -45,4 +45,4 @@ enum marker_importance;
  **命名空間：** Concurrency::diagnostic
 
 ## <a name="see-also"></a>另請參閱
-- [diagnostic 命名空間](../profiling/diagnostic-namespace.md)
+- [診斷命名空間](../profiling/diagnostic-namespace.md)

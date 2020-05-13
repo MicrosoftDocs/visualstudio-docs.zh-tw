@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62809553"
 ---
 # <a name="remote-r-service-for-linux"></a>適用於 Linux 的遠端 R 服務
@@ -22,9 +22,9 @@ ms.locfileid: "62809553"
 
 當您完成遠端電腦的設定後，下列步驟會將 Visual Studio R 工具 (RTVS) 連線到該服務：
 
-1. 選取 [R 工具] > [Windows] > [工作區] 以開啟 [工作區] 視窗。
-1. 選取 [新增連線] 。
-1. 給予連線一個名稱並提供 URL，例如 `https://localhost:5444` (適用於 Linux 的 Windows 子系統) 或 `https://public-ip:5444` (Azure 容器)。 完成時請選取 [儲存]。
+1. 選擇**R 工具** > **Windows** > **工作區**以打開**工作區**視窗。
+1. 選擇 **"添加連接**"。
+1. 給予連線一個名稱並提供 URL，例如 `https://localhost:5444` (適用於 Linux 的 Windows 子系統) 或 `https://public-ip:5444` (Azure 容器)。 完成時請選取 [儲存]****。
 1. 選取連線圖示或按兩下連線項目。
 1. 提供登入認證。 使用者名稱必須加上 `<<unix>>\` 的前置詞，如 `<<unix>>\ruser1` (所有連線到 Linux 遠端電腦的連線都必須如此)。
 1. 若您使用的是自我簽署的憑證，您可能會看見警告訊息。 訊息會提供修正警告的指示。
@@ -87,19 +87,19 @@ ms.locfileid: "62809553"
 
 #### <a name="create-a-vm"></a>建立 VM
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
-1. 巡覽至 [虛擬機器]，然後選取 [新增]。
+1. 登錄到 Azure[門戶](https://portal.azure.com)。
+1. 巡覽至 [虛擬機器]，然後選取 [新增]****。
 1. 在可用的 VM 映像清單中，搜尋它並選取下列項目中的其中一個：
     - Ubuntu Server：`Ubuntu Server 16.04 LTS`
     - 資料科學 VM：`Linux Data Science` (請參閱[資料科學虛擬機器](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/)以取得詳細資料)
-1. 將部署模型設為 `Resource manager`，然後選取 [建立]。
+1. 將部署模型設為 `Resource manager`，然後選取 [建立]****。
 1. 為 VM 選擇一個名稱，提供使用者名稱及密碼 (由於系統不支援 SSH 公開金鑰登入，因此需要密碼)。
 1. 對 VM 設定進行任何其他想要的變更。
-1. 選擇 VM 大小、驗證設定，然後選取 [建立]。 建立 VM 之後，請繼續下一節。
+1. 選擇 VM 大小、驗證設定，然後選取 [建立]****。 建立 VM 之後，請繼續下一節。
 
 #### <a name="configure-the-vm"></a>設定 VM
 
-1. 在 VM 的 [網路] 區段中，新增 5444 作為允許的輸入連接埠。 若要使用不同的連接埠，請在 RTVS 精靈設定檔案 (*/etc/rtvs/rtvsd.config.json*) 中變更設定。
+1. 在 VM 的 [網路]**** 區段中，新增 5444 作為允許的輸入連接埠。 若要使用不同的連接埠，請在 RTVS 精靈設定檔案 (*/etc/rtvs/rtvsd.config.json*) 中變更設定。
 1. (選擇性) 設定 DNS 名稱；您也可以使用 IP 位址。
 1. 使用 SSH 用戶端 (例如適用於 Windows 的 PuTTY) 連線到 VM。
 1. 遵循上述適用於[實體 Ubuntu 電腦](#physical-ubuntu-computer)的指示。

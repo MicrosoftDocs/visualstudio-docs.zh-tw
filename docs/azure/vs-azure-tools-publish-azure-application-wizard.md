@@ -4,21 +4,21 @@ description: 了解如何在 Visual Studio 發佈 Azure 應用程式精靈中進
 author: ghogen
 manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 312a7e072ff5dfbe1a462abb68c8a74a42823e82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bc3c58343c699833a5a12eee6f79c023f57a2e85
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550328"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489645"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>使用 Visual Studio 發佈 Azure 應用程式精靈
 
-在 Visual Studio 中開發 web 應用程式之後，您可以使用 [發佈 Azure 應用程式] 精靈，將應用程式發佈至 Azure 雲端服務。
+在 Visual Studio 中開發 web 應用程式之後，您可以使用 [發佈 Azure 應用程式]**** 精靈，將應用程式發佈至 Azure 雲端服務。
 
 > [!Note]
 > 本文是關於部署到雲端服務，而不是網站。 如需部署到網站的相關資訊，請參閱 [如何部署到 Azure 網站](https://social.msdn.microsoft.com/Search/windowsazure?query=How%20to%20Deploy%20an%20Azure%20Web%20Site&Refinement=138&ac=4#refinementChanges=117&pageNumber=1&showMore=false)。
@@ -31,21 +31,21 @@ ms.locfileid: "62550328"
 
 1. 在 Visual Studio 中建立或開啟 Azure 雲端服務專案。
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後從操作功能表中選取 [發佈]。
+1. 在 [方案總管]**** 中，以滑鼠右鍵按一下專案，然後從操作功能表中選取 [發佈]****。
 
 **如果您有未啟用 Azure 的 Web 應用程式專案︰**
 
 1. 在 Visual Studio 中建立或開啟 Azure 雲端服務專案。
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後從操作功能表中選取 [轉換] > [轉換為 Azure 雲端服務專案]。
+1. 在 [方案總管]**** 中，以滑鼠右鍵按一下專案，然後從操作功能表中選取 [轉換]**** > [轉換為 Azure 雲端服務專案]****。
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下新建立的 Azure 專案，然後從操作功能表中選取 [發佈]。
+1. 在 [方案總管]**** 中，以滑鼠右鍵按一下新建立的 Azure 專案，然後從操作功能表中選取 [發佈]****。
 
 ## <a name="sign-in-page"></a>登入頁面
 
 ![登入頁面](./media/vs-azure-tools-publish-azure-application-wizard/sign-in.png)
 
-**帳戶** - 選取帳戶或選取帳戶下拉式清單中的 [新增帳戶]。
+**帳戶** - 選取帳戶或選取帳戶下拉式清單中的 [新增帳戶]****。
 
 **選擇您的訂用帳戶** - 選擇要用於部署的訂用帳戶。
 
@@ -53,17 +53,17 @@ ms.locfileid: "62550328"
 
 ![一般設定](./media/vs-azure-tools-publish-azure-application-wizard/settings-common-settings.png)
 
-**雲端服務** - 使用下拉式清單中，選取現有的雲端服務，或選取 &lt;新建>，然後建立雲端服務。 資料中心會針對每項雲端服務顯示於括號內。 建議雲端服務的資料中心位置與儲存體帳戶的資料中心位置相同 (進階設定)。
+**雲端服務** - 使用下拉式清單中，選取現有的雲端服務，或選取 &lt;新建>****，然後建立雲端服務。 資料中心會針對每項雲端服務顯示於括號內。 建議雲端服務的資料中心位置與儲存體帳戶的資料中心位置相同 (進階設定)。
 
-**環境** - 選取 [生產] 或 [預備]。 如果您想要在測試環境中部署應用程式，請選擇預備環境。
+**環境** - 選取 [生產]**** 或 [預備]****。 如果您想要在測試環境中部署應用程式，請選擇預備環境。
 
-**建置組態** - 選取 [偵錯] 或 [發行]。
+**建置組態** - 選取 [偵錯]**** 或 [發行]****。
 
-**服務組態** - 選取 [雲端] 或 [本機]。
+**服務組態** - 選取 [雲端]**** 或 [本機]****。
 
 **啟用所有角色的遠端桌面**：如果您想要從遠端連線到服務，請選取此選項。 此選項主要用於疑難排解。 如需詳細資訊，請參閱[使用 Visual Studio 啟用 Azure 雲端服務中角色的遠端桌面連線](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)。
 
-**啟用所有 Web 角色的 Web Deploy**：選取此選項以啟用服務的 Web 部署。 您也必須選取 [啟用所有角色的遠端桌面] 選項，才能使用這項功能。 如需詳細資訊，請參閱[使用 Visual Studio 發佈雲端服務](vs-azure-tools-publishing-a-cloud-service.md)。
+**啟用所有 Web 角色的 Web Deploy**：選取此選項以啟用服務的 Web 部署。 您也必須選取 [啟用所有角色的遠端桌面]**** 選項，才能使用這項功能。 如需詳細資訊，請參閱[使用 Visual Studio 發佈雲端服務](vs-azure-tools-publishing-a-cloud-service.md)。
 
 ## <a name="settings-page---advanced-settings-tab"></a>設定頁面 - 進階設定索引標籤
 
@@ -79,11 +79,11 @@ Azure 儲存體帳戶會儲存應用程式部署的封裝。 部署應用程式�
 
 **部署更新** - 如果您只想要部署已更新的元件，請選取此選項。 這種部署類型比完整部署更快速。 如果您想要針對您的雲端服務維護固定的虛擬 IP 位址，應該核取此選項。
 
-**部署更新 - 設定** - 此對話方塊用來進一步指定您希望更新角色的方式。 如果您選擇 [累加式更新]，就會逐一更新應用程式的每個執行個體，讓應用程式隨時可供使用。 如果您選擇 [同時更新]，即會同時更新應用程式的所有執行個體。 同時更新較為快速，但是您的服務可能無法在更新過程中使用。
+**部署更新 - 設定** - 此對話方塊用來進一步指定您希望更新角色的方式。 如果您選擇 [累加式更新]****，就會逐一更新應用程式的每個執行個體，讓應用程式隨時可供使用。 如果您選擇 [同時更新]****，即會同時更新應用程式的所有執行個體。 同時更新較為快速，但是您的服務可能無法在更新過程中使用。
 
 ![部署設定](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
 
-**啟用 IntelliTrace** - 指定您是否要啟用 IntelliTrace。 有了 IntelliTrace，您可以於角色執行個體在 Azure 中執行時，記錄其廣泛的偵錯資訊。 如果您需要找出問題的原因，您可以從 Visual Studio 使用 IntelliTrace 記錄檔來瀏覽程式碼，如同它是在 Azure 中執行。 如需使用 IntelliTrace 的詳細資訊，請參閱[使用 Visual Studio 和 IntelliTrace 進行已發佈 Azure 雲端服務的偵錯](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)。
+**啟用 IntelliTrace** - 指定您是否要啟用 IntelliTrace。 有了 IntelliTrace，您可以於角色執行個體在 Azure 中執行時，記錄其廣泛的偵錯資訊。 如果您需要找出問題的原因，您可以從 Visual Studio 使用 IntelliTrace 記錄來瀏覽程式碼，如同它是在 Azure 中執行。 如需使用 IntelliTrace 的詳細資訊，請參閱[使用 Visual Studio 和 IntelliTrace 進行已發佈 Azure 雲端服務的偵錯](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)。
 
 **啟用分析** - 指定您是否要啟用效能分析。 Visual Studio 分析工具可讓您取得雲端服務執行情況在計算方面的深入分析。 如需有關如何使用 Visual Studio 分析工具的詳細資訊，請參閱[測試 Azure 雲端服務的效能](./vs-azure-tools-performance-profiling-cloud-services.md)。
 
@@ -99,14 +99,14 @@ Azure 儲存體帳戶會儲存應用程式部署的封裝。 部署應用程式�
 
 ![總結](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**目標設定檔** - 您可以選擇從您所選擇的設定建立發行設定檔。 例如，您可能會建立一個設定檔用於測試環境，並建立另一個用於生產。 若要儲存這個設定檔，請選擇 **儲存** 圖示。 此精靈會建立設定檔並將它儲存在 Visual Studio 專案。 若要修改設定檔名稱，請開啟 [目標設定檔] 清單，然後選擇 [&lt;管理...&gt;]。
+**目標設定檔** - 您可以選擇從您所選擇的設定建立發行設定檔。 例如，您可能會建立一個設定檔用於測試環境，並建立另一個用於生產。 若要儲存這個設定檔，請選擇 [**儲存**] 圖示。 此精靈會建立設定檔並將它儲存在 Visual Studio 專案。 若要修改設定檔名稱，請開啟 [目標設定檔]**** 清單，然後選擇 [&lt;管理...&gt;]****。
 
    > [!Note]
    > 發佈設定檔會出現在 Visual Studio 的 [方案總管] 中，而且設定檔設定會寫入至副檔名為.azurePubxml 的檔案。 設定會儲存為 XML 標記的屬性。
 
 ## <a name="publishing-your-application"></a>發佈您的應用程式
 
-設定專案部署的所有設定後，請選取對話方塊底部的 [發佈]。 您可以在 Visual Studio 中監視 [輸出]  視窗中的處理序狀態。
+設定專案部署的所有設定後，請選取對話方塊底部的 [發佈]****。 您可以在 Visual Studio 的 [輸出]**** 窗格中監視處理序狀態。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -118,6 +118,6 @@ Azure 儲存體帳戶會儲存應用程式部署的封裝。 部署應用程式�
 
 - [測試 Azure 雲端服務的效能](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [為 Azure 雲端服務和虛擬機器設定診斷功能](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)。
+- [設定 Azure 雲服務和虛擬機器的診斷](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)。
 
-- [什麼是 Application Insights？](/azure/application-insights/app-insights-overview)
+- [什麼是應用見解?](/azure/application-insights/app-insights-overview)

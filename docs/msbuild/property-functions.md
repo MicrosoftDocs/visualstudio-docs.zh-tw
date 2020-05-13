@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0551162a00437b01c7357dfdac16462aad8f2fc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c5f1d34a6d21e6d4f413275ee21651feb7ec3dec
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597382"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586684"
 ---
 # <a name="property-functions"></a>屬性函式
 
-在 .NET Framework 第 4 和 4.5 版中，屬性函式可用於評估 MSBuild 指令碼。 屬性函式可用於屬性出現的任何位置。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。
+屬性函式會呼叫出現在 MSBuild 屬性定義中 .NET Framework 方法。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。
 
- 在不使用 MSBuild 工作的情況下，您可以讀取系統時間、比較字串、比對規則運算式，以及執行組建指令碼中的其他動作。 MSBuild 會嘗試將字串轉換為數字或將數字轉換為字串，並視需要進行其他轉換。
- 
+在不使用 MSBuild 工作的情況下，您可以讀取系統時間、比較字串、比對規則運算式，以及執行組建指令碼中的其他動作。 MSBuild 會嘗試將字串轉換為數字或將數字轉換為字串，並視需要進行其他轉換。
+
 從屬性函式傳回的字串值具有逸出的[特殊字元](msbuild-special-characters.md)。 如果您想要將值視為直接放入專案檔中，請使用 `$([MSBuild]::Unescape())` 來取消逸出特殊字元。
+
+屬性函數適用于 .NET Framework 4 和更新版本。
 
 ## <a name="property-function-syntax"></a>屬性函式語法
 
@@ -37,7 +39,7 @@ ms.locfileid: "75597382"
 
 所有建置屬性值都是字串值。 您可以使用字串 (執行個體) 方法操作任何屬性值。 例如，您可以使用下列程式碼，從代表完整路徑的建置屬性，擷取磁碟機名稱 (前三個字元)：
 
-```fundamental
+```
 $(ProjectOutputFolder.Substring(0,3))
 ```
 
@@ -45,7 +47,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 在您的組建指令碼中，您可以存取許多系統類別的靜態屬性和方法。 若要取得靜態屬性的值，請使用下列語法，其中 \<Class> 是系統類別的名稱，而 \<Property> 是屬性的名稱。
 
-```fundamental
+```
 $([Class]::Property)
 ```
 
@@ -57,7 +59,7 @@ $([Class]::Property)
 
 若要呼叫靜態方法，請使用下列語法，其中 \<Class> 是系統類別的名稱、\<Method> 是方法的名稱，而 (\<Parameters>) 是方法的參數清單：
 
-```fundamental
+```
 $([Class]::Method(Parameters))
 ```
 
@@ -121,7 +123,7 @@ $([Class]::Method(Parameters))
 
 如果您存取的靜態屬性傳回物件執行個體，您就可以叫用該物件的執行個體方法。 若要叫用執行個體方法，請使用下列語法，其中 \<Class> 是系統類別的名稱、\<Property> 是屬性的名稱、\<Method> 是方法的名稱，而 (\<Parameters>) 是方法的參數清單：
 
-```fundamental
+```
 $([Class]::Property.Method(Parameters))
 ```
 
@@ -137,13 +139,13 @@ $([Class]::Property.Method(Parameters))
 
 您組建中的數個靜態方法可以存取來提供算術、位元邏輯和逸出字元支援。 您可以使用下列語法存取這些方法，其中 \<Method> 是方法的名稱，而 (\<Parameters>) 是方法的參數清單。
 
-```fundamental
+```
 $([MSBuild]::Method(Parameters))
 ```
 
 例如，若要將兩個具有數值的屬性加在一起，請使用下列程式碼。
 
-```fundamental
+```
 $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
@@ -172,8 +174,8 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |string NormalizePath(params string[] path)|取得所提供路徑的規範化完整路徑，並確保它包含目前作業系統的正確目錄分隔符號字元。|
 |string NormalizeDirectory(params string[] path)|取得所提供目錄的規範化完整路徑，並確保它包含目前作業系統的正確目錄分隔符號字元，且後面有斜線。|
 |string EnsureTrailingSlash(string path)|如果指定的路徑後面沒有斜線，請新增一個。 如果此路徑是空字串，請不要修改它。|
-|string GetPathOfFileAbove(string file, string startingDirectory)|根據目前的組建檔案位置搜尋檔案，或如果指定，則根據 `startingDirectory` 搜尋。|
-|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|在指定的目錄中，或在該目錄上方目錄結構中的位置中找到檔案。|
+|string GetPathOfFileAbove(string file, string startingDirectory)|搜尋並傳回目錄結構中，位於目前組建檔案位置上方之檔案的完整路徑，如果有指定`startingDirectory`，則會傳回根據。|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|找出並傳回指定目錄中的檔案目錄，或在該目錄上方目錄結構中的位置。|
 |string MakeRelative(string basePath, string path)|讓 `path` 成為 `basePath` 的相對項。 `basePath` 必須是絕對目錄。 如果 `path` 不能成為相對的，它就會被逐字傳回。 類似於 `Uri.MakeRelativeUri`。|
 |string ValueOrDefault(string conditionValue, string defaultValue)|只有當參數 'conditionValue' 為空時，才傳回參數 'defaultValue' 中的字串；否則，傳回值 conditionValue。|
 
@@ -181,7 +183,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 
 您可以組合屬性函式，以構成較複雜的函式，如下列範例所示。
 
-```fundamental
+```
 $([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))
 ```
 
@@ -195,7 +197,7 @@ MSBuild 中的 `DoesTaskHostExist` 屬性函式會傳回目前是否已為指定
 
 此屬性函式具有下列語法：
 
-```fundamental
+```
 $([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 ```
 
@@ -205,7 +207,7 @@ MSBuild 中的 `EnsureTrailingSlash` 屬性函式會加上尾端斜線 (如果�
 
 此屬性函式具有下列語法：
 
-```fundamental
+```
 $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
 ```
 
@@ -215,7 +217,7 @@ MSBuild `GetDirectoryNameOfFileAbove` 屬性函式會在路徑中的目前目錄
 
  此屬性函式具有下列語法：
 
-```fundamental
+```
 $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 ```
 
@@ -227,7 +229,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
 
-MSBuild 中的 `GetPathOfFileAbove` 屬性函式會傳回此項目的前置檔案路徑。 它在功能上相當於呼叫
+MSBuild `GetPathOfFileAbove`中的屬性函式會傳回指定檔案的路徑（如果位於目前目錄上方的目錄結構中）。 它在功能上相當於呼叫
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -235,7 +237,7 @@ MSBuild 中的 `GetPathOfFileAbove` 屬性函式會傳回此項目的前置檔�
 
 此屬性函式具有下列語法：
 
-```fundamental
+```
 $([MSBuild]::GetPathOfFileAbove(dir.props))
 ```
 
@@ -245,7 +247,7 @@ MSBuild `GetRegistryValue` 屬性函式會傳回登錄機碼的值。 此函式�
 
 下列範例顯示如何使用此函式：
 
-```fundamental
+```
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
 $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
@@ -257,11 +259,11 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 
 此屬性函式的語法為：
 
-```fundamental
+```
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Windows 64 位元作業系統會維護 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** 登錄機碼，此登錄機碼會呈現 32 位元應用程式的 **HKEY_LOCAL_MACHINE\SOFTWARE** 登錄檢視。
+Windows 64 位作業系統會維護**HKEY_LOCAL_MACHINE \software\wow6432node**登錄機碼，以提供32位應用程式的**HKEY_LOCAL_MACHINE \software**登錄視圖。
 
 根據預設，在 WOW64 上執行的 32 位元應用程式會存取 32 位元登錄檢視，而 64 位元應用程式會存取 64 位元登錄檢視。
 
@@ -273,9 +275,9 @@ Windows 64 位元作業系統會維護 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node
 |RegistryView.Registry64|64 位元應用程式登錄檢視。|
 |RegistryView.Default|符合應用程式執行所在之處理序的登錄檢視。|
 
-範例如下。
+以下是一個範例。
 
- ```fundamental
+ ```
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
@@ -287,7 +289,7 @@ MSBuild `MakeRelative` 屬性函式會傳回與第一個路徑相對之第二個
 
 此屬性函式具有下列語法：
 
-```fundamental
+```
 $([MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2)))
 ```
 
@@ -338,7 +340,11 @@ Output:
 -->
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="msbuild-condition-functions"></a>MSBuild 條件函數
+
+函數`Exists`和`HasTrailingSlash`不是屬性函式。 它們可與`Condition`屬性搭配使用。 請參閱[MSBuild 條件](msbuild-conditions.md)。
+
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)
 

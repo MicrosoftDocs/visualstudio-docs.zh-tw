@@ -1,5 +1,5 @@
 ---
-title: 舊版語言服務 2 中的參數資訊 |Microsoft Docs
+title: 舊語言服務中的參數資訊2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,43 +7,43 @@ helpviewer_keywords:
 - language services [managed package framework], IntelliSense Parameter Info
 - Parameter Info (IntelliSense), supporting in language services [managed package framework]
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed95be7611c4733e2d10691bb0bf5eeb798a67b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e2c40c9ca5c038a70714545f4133db0c0dd686d5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314663"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706740"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>舊版語言服務中的參數資訊
-IntelliSense 的 參數資訊就是當使用者輸入的參數清單時，會顯示方法的簽章的工具提示開始字元 （通常是左括號） 的方法參數清單。 在輸入每個參數及參數分隔符號 （通常為逗號） 型別時，工具提示會更新以顯示下一個參數以粗體顯示。
+IntelliSense 參數資訊是一個工具提示,當用戶鍵入方法參數清單的參數清單開始字元(通常是打開的括弧)時,顯示方法的簽名。 當輸入每個參數並鍵入參數分隔符(通常是逗號)時,工具提示將更新以粗體顯示下一個參數。
 
- Managed 的封裝架構 (MPF) 類別提供管理參數資訊工具提示的支援。 參數會啟動，參數接下來，而且參數結尾字元，而且必須提供的方法簽章和其相關聯的參數清單，就必須偵測剖析器。
+ 託管包框架 (MPF) 類別支援管理參數資訊工具提示。 解析器必須檢測參數開始、參數下一個和參數結束字元,並且必須提供方法簽名及其關聯參數的清單。
 
- 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解，請參閱[擴充編輯器和語言服務](../../extensibility/extending-the-editor-and-language-services.md)。
+ 舊語言服務是作為 VSPackage 的一部分實現的,但實現語言服務功能的較新方法是使用 MEF 擴展。 要瞭解更多資訊,請參閱[延伸編輯器和語言服務](../../extensibility/extending-the-editor-and-language-services.md)。
 
 > [!NOTE]
-> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
+> 我們建議您儘快開始使用新的編輯器 API。 這將提高語言服務的性能,並允許您利用新的編輯器功能。
 
 ## <a name="implementation"></a>實作
- 剖析器應設定觸發程序值<xref:Microsoft.VisualStudio.Package.TokenTriggers>設定當它找到的參數清單開始字元 （通常左括號）。 它應該設定<xref:Microsoft.VisualStudio.Package.TokenTriggers>找到參數分隔符號 （通常是以逗號） 時，觸發程序。 這會導致更新，而且以粗體顯示的下一個參數的參數資訊工具提示。 剖析器應設定觸發程序值<xref:Microsoft.VisualStudio.Package.TokenTriggers>時如果找到參數清單結尾字元 （通常右括號）。
+ 解析器應設定觸發值<xref:Microsoft.VisualStudio.Package.TokenTriggers>,當它找到參數清單開始字元(通常是開放的括弧)時設置它。 當它找到參數分隔<xref:Microsoft.VisualStudio.Package.TokenTriggers>符(通常是逗號)時,它應設置觸發器。 這將導致更新參數資訊工具提示,以粗體顯示下一個參數。 如果找到參數清單結束字元(通常是<xref:Microsoft.VisualStudio.Package.TokenTriggers>近括弧),解析器應設置觸發器值。
 
- <xref:Microsoft.VisualStudio.Package.TokenTriggers>觸發程序值開始呼叫<xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A>方法，再呼叫<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法的剖析器剖析原因為<xref:Microsoft.VisualStudio.Package.ParseReason>。 如果剖析器會判斷之前參數清單開始字元的識別碼是可辨識的方法名稱，它會傳回一份在方法簽章相符<xref:Microsoft.VisualStudio.Package.AuthoringScope>物件。 如果找不到任何方法簽章，就會顯示在清單中的第一個簽章的參數資訊工具提示。 依照多個簽章的輸入，然後更新此工具提示。 參數清單結尾字元輸入時，會從檢視中移除的參數資訊工具提示。
+ 觸發器<xref:Microsoft.VisualStudio.Package.TokenTriggers>值啟動對<xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A>方法的 調用,該方法反過來<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A><xref:Microsoft.VisualStudio.Package.ParseReason>調用具有 分析原因的方法解析器。 如果解析器確定參數清單開始字元之前的標識符是可識別的方法名稱,它將返回<xref:Microsoft.VisualStudio.Package.AuthoringScope>物件中的匹配方法簽名的清單。 找不到任何方法簽名,則參數資訊工具提示將顯示清單中的第一個簽名。 然後,當鍵入更多的簽名時,將更新此工具提示。 鍵入參數清單結束字元時,將從檢視中刪除參數資訊工具提示。
 
 > [!NOTE]
-> 若要確保已正確格式化的參數資訊工具提示，您必須覆寫的屬性上<xref:Microsoft.VisualStudio.Package.Methods>類別，以提供適當的字元。 基底<xref:Microsoft.VisualStudio.Package.Methods>類別假設 C#-樣式方法簽章。 請參閱<xref:Microsoft.VisualStudio.Package.Methods>類別，如需有關如何完成。
+> 為了確保參數資訊工具提示的格式正確,必須重寫<xref:Microsoft.VisualStudio.Package.Methods>類的屬性以提供相應的字元。 基<xref:Microsoft.VisualStudio.Package.Methods>類假定 C#樣式的方法簽名。 有關如何完成<xref:Microsoft.VisualStudio.Package.Methods>此操作的詳細資訊,請參閱該類。
 
-## <a name="enabling-support-for-the-parameter-info"></a>啟用支援的參數資訊
- 若要支援的參數資訊工具提示，您必須設定`ShowCompletion`具名的參數<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>至`true`。 語言服務會讀取此登錄項目的值從<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A>屬性。
+## <a name="enabling-support-for-the-parameter-info"></a>開啟參數資訊支援
+ 要支援參數資訊工具提示,必須將的`ShowCompletion`<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>命名參數設定為`true`。 語言服務從<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A>屬性中讀取此註冊表項的值。
 
- 颾魤 ㄛ<xref:Microsoft.VisualStudio.Package.LanguagePreferences.ParameterInformation%2A>屬性必須設為`true`參數資訊工具提示會顯示。
+ 此外,<xref:Microsoft.VisualStudio.Package.LanguagePreferences.ParameterInformation%2A>必須`true`將 屬性設置為「參數資訊」工具提示才能顯示。
 
 ### <a name="example"></a>範例
- 以下是一個簡單的例子，偵測參數清單的字元，並設定適當的觸發程序。 這個範例是僅供示範用途。 它會假設您的掃描器，包含方法`GetNextToken`的識別，並從文字行，傳回權杖。 範例程式碼只需設定觸發程序，每當它看見正確類型的字元。
+ 下面是檢測參數清單字元和設置相應觸發器的簡化範例。 此示例僅用於說明目的。 它假定掃描器包含一個標識和返回`GetNextToken`文本行中的權杖的方法。 範例代碼只要看到正確的字元類型,即可設置觸發器。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -91,17 +91,17 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>剖析器中支援的參數資訊工具提示
- <xref:Microsoft.VisualStudio.Package.Source>類別會做出一些假設的內容<xref:Microsoft.VisualStudio.Package.AuthoringScope>和<xref:Microsoft.VisualStudio.Package.AuthoringSink>類別時的參數資訊工具提示會顯示，並且會更新。
+## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>支援解析器中的參數資訊工具提示
+ 當<xref:Microsoft.VisualStudio.Package.Source>顯示和更新參數資訊工具提示時,<xref:Microsoft.VisualStudio.Package.AuthoringScope>類<xref:Microsoft.VisualStudio.Package.AuthoringSink>對和 類的內容進行一些假設。
 
-- 指定剖析器<xref:Microsoft.VisualStudio.Package.ParseReason>輸入參數清單的起點字元時。
+- 鍵入參數清單開始字元<xref:Microsoft.VisualStudio.Package.ParseReason>時,將給出解析器。
 
-- 指定的位置<xref:Microsoft.VisualStudio.Package.ParseRequest>物件是參數清單開始字元之後，立即。 剖析器必須收集可在所有的方法宣告的簽章的位置，並將它們儲存在您的版本中的清單<xref:Microsoft.VisualStudio.Package.AuthoringScope>物件。 這份清單包含方法名稱、 方法型別 （或傳回型別），以及一份可用的參數。 這份清單稍後搜尋的方法簽章或簽章，以顯示參數資訊工具提示中。
+- 物件中<xref:Microsoft.VisualStudio.Package.ParseRequest>給出的位置緊接參數清單開始字元。 解析器必須收集該位置上可用的所有方法聲明的簽名,並將它們存儲在<xref:Microsoft.VisualStudio.Package.AuthoringScope>物件版本中的清單中。 此清單包括方法名稱、方法類型(或返回類型)和可能參數的清單。 稍後將搜尋此清單,查找要在參數資訊工具提示中顯示的方法簽名或簽名。
 
-  剖析器必須再剖析由指定的行<xref:Microsoft.VisualStudio.Package.ParseRequest>物件來收集輸入的方法，以及使用者過程的進展的名稱是輸入參數。 藉由傳遞至方法的名稱即可達成<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>方法<xref:Microsoft.VisualStudio.Package.AuthoringSink>物件，然後再呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>剖析方法的參數清單開始字元時，呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>方法時的參數清單下一個字元是剖析，而最後呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>方法剖析的參數清單結尾字元時。 會由使用這些方法呼叫的結果<xref:Microsoft.VisualStudio.Package.Source>類別，以適當地更新參數資訊工具提示。
+  然後,解析器必須分析<xref:Microsoft.VisualStudio.Package.ParseRequest>物件指定的行,以收集要輸入的方法的名稱以及使用者在鍵入參數方面所走的路。 這是通過將方法的名稱<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>傳遞<xref:Microsoft.VisualStudio.Package.AuthoringSink>給 物件上的方法,然後在解析參數清單開始字元時<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>調用 該方法,在解析參數清單下一個字元<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>時調用 該方法,最後在解析參數清單結束字<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>元時調用 該方法來實現。 <xref:Microsoft.VisualStudio.Package.Source>類使用這些方法調用的結果來適當地更新參數資訊工具提示。
 
 ### <a name="example"></a>範例
- 以下是文字的使用者可能輸入行。 這一行下方的數字會指出哪一個步驟由剖析器 （假設剖析將從左到右） 的一行中該位置。 這裡的假設是之前, 的所有項目已經過剖析方法簽章，包括 「 testfunc"方法簽章。
+ 下面是使用者可能輸入的文本行。 行下方的數位指示解析器在行中該位置執行哪個步驟(假設解析移動從左到右)。 此處的假設是,行之前的所有內容已解析為方法簽名,包括"testfunc"方法簽名。
 
 ```
 testfunc("a string",3);
@@ -109,9 +109,9 @@ testfunc("a string",3);
      12          3 4
 ```
 
- 剖析器接受步驟說明如下：
+ 解析器執行的步驟概述如下:
 
-1. 剖析器呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>以文字"testfunc 」。
+1. 解析器使用文本<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>「testfunc」呼叫。
 
 2. 剖析器呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>。
 

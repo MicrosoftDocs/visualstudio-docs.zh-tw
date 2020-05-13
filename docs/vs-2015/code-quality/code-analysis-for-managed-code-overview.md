@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 33ab4a000fac75c51c32e8a6d37de62e006160b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72610065"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Managed 程式碼的程式碼分析概觀
@@ -31,12 +31,12 @@ Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組
 ## <a name="ide-integrated-development-environment-integration"></a>IDE (整合式開發環境) 整合
  開發人員可以對專案自動執行程式碼分析，或者也可以手動執行分析。
 
- 若要每次建置專案時都執行程式碼分析，請在專案的屬性頁上選取 [建置時啟用程式碼分析 (定義 CODE_ANALYSIS 常數)]。 如需詳細資訊，請參閱[如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
+ 若要每次建置專案時都執行程式碼分析，請在專案的屬性頁上選取 [建置時啟用程式碼分析 (定義 CODE_ANALYSIS 常數)]****。 有關詳細資訊，請參閱[如何：啟用和禁用自動代碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
 
- 若要在專案上手動執行程式碼分析，請在 [分析] 功能表上，按一下 [針對 _ProjectName_ 執行程式碼分析]。 如需詳細資訊，請參閱[如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
+ 若要在專案上手動執行程式碼分析，請在 [分析]**** 功能表上，按一下 [針對 _ProjectName_ 執行程式碼分析]****。 有關詳細資訊，請參閱[如何：啟用和禁用自動代碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
 
 ## <a name="rule-sets"></a>規則集
- 受控碼的程式碼分析規則會分組成「規則集」。 您可以使用其中一個 Microsoft 標準規則集，或建立自訂規則集來滿足特定需求。 如需詳細資訊，請參閱[使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。
+ 受控碼的程式碼分析規則會分組成「規則集」**。 您可以使用其中一個 Microsoft 標準規則集，或建立自訂規則集來滿足特定需求。 如需詳細資訊，請參閱[使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。
 
 ## <a name="in-source-suppression"></a>原始檔中隱藏項目
  最大的用途是指出某個警告不適用。 這會通知程式開發人員和其他稍後可能會檢閱程式碼的人員，指出您已經調查此警告並且隱藏或忽略它。
@@ -65,5 +65,5 @@ Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組
 ## <a name="team-build-integration"></a>Team Build 整合
  您可以使用建置系統的整合式功能，執行分析工具做為建置流程的一部分。 如需詳細資訊，請參閱[建置應用程式](/azure/devops/pipelines/index)。
 
-## <a name="see-also"></a>請參閱
- [使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)[如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+## <a name="see-also"></a>另請參閱
+ [使用規則集對代碼分析規則進行分組](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)[如何：啟用和禁用自動代碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

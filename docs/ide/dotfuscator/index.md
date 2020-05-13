@@ -18,10 +18,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: f1b2c0bfd4adbd4a952a64f20fc3d2639a8abb5f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "75918450"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
@@ -66,7 +66,7 @@ Dotfuscator Community 提供現成的基本保護。
 Dotfuscator Community 的註冊使用者，以及 ***PreEmptive Protection - Dotfuscator Professional*** (全球頂尖的 [.NET Obfuscator][net-obfuscator]) 使用者，將有更多的應用程式保護方法可以使用。
 如需增強 Dotfuscator 的相關資訊，請參閱[升級頁面][upgrades]。
 
-## <a name="getting-started"></a>使用者入門
+## <a name="getting-started"></a>開始使用
 
 ::: moniker range="vs-2019"
 

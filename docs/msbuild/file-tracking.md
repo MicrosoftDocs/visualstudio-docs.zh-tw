@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee4620e845205a936bbdf48a9872c4dec3305ea
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9335ca6608d36edbd17e47a441e13aecaa41c890
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596030"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634197"
 ---
 # <a name="file-tracking"></a>檔案追蹤
+
 檔案追蹤會記錄對 Windows 檔案系統處理序及其子處理序的呼叫。 呼叫下列函式，程式可以控制此記錄開啟和關閉的時間，並指定要使用的記錄檔。
 
 - [EndTrackingContext](../msbuild/endtrackingcontext.md) 停止追蹤目前的內容。

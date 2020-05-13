@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::Parse | Microsoft Docs
+title: IDebugExpression評估器::P微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::Parse method
 ms.assetid: e6e31b3a-63a7-4293-bcda-267eb78dffb6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b732369aa5cf5a828dfad512c643f109346abcb7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d1af9d3f253a9849f54bb5a50d432b98eb4ad7b8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325644"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729501"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
-這個方法會將剖析的運算式中的運算式字串。
+此方法將表達式字串轉換為解析的運算式。
 
 ## <a name="syntax"></a>語法
 
@@ -51,28 +51,28 @@ int Parse(
 
 ## <a name="parameters"></a>參數
 `upstrExpression`\
-[in]要剖析的運算式字串。
+[在]要解析的表達式字串。
 
 `dwFlags`\
-[in]集合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)常數，以判斷要如何剖析運算式。
+[在][PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)常量的集合,用於確定如何解析運算式。
 
 `nRadix`\
-[in]用來解譯任何數字資訊的基數。
+[在]用於解釋任何數值資訊的 Radix。
 
 `pbstrError`\
-[out]以人類看得懂的文字，會傳回錯誤。
+[出]將錯誤作為人可讀文字返回。
 
 `pichError`\
-[out]傳回字元位置開始的錯誤中的運算式字串。
+[出]傳回表示式字串中錯誤開始位置的字元位置。
 
 `ppParsedExpression`\
-[out]在剖析的運算式會傳回[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)物件。
+[出]返回[IDebugParsed 表示式](../../../extensibility/debugger/reference/idebugparsedexpression.md)物件中的解析表達式。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 這個方法會產生剖析的運算式，不是實際的值。 剖析的運算式已準備好進行評估，也就是轉換成值。
+ 此方法生成解析的表達式,而不是實際值。 已解析的表達式已準備好進行計算,即轉換為值。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

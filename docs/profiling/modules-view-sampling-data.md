@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ead219ddf482af5917842118d386c6fefe67973
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772710"
 ---
 # <a name="modules-view---sampling-data"></a>模組檢視 - 取樣資料
@@ -30,18 +30,18 @@ ms.locfileid: "74772710"
 |資料行|描述|
 |------------|-----------------|
 |**名稱**|模組、函式、行號或指令指標位址的名稱。|
-|**處理序 ID**|分析執行的處理序 ID (PID)。|
-|**處理序名稱**|處理程序的名稱。|
+|**處理序識別碼**|分析執行的處理序 ID (PID)。|
+|**流程名稱**|處理序的名稱。|
 |**模組名稱**|包含該函式、程式行或指令指標的模組名稱。|
 |**模組路徑**|包含該模組、函式、程式行或指令指標的模組路徑。|
-|**原始程式檔**|含有這個函式定義的原始程式檔。|
+|**原始檔案**|含有這個函式定義的原始程式檔。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
 |**內含樣本**|-   對於函式，這是執行中的此函式或此函式呼叫之函式的樣本數，亦即包含此函式的呼叫堆疊樣本。<br />-   對於模組，這是至少有一個該模組的函式正在其中執行的樣本數量。<br />-   對於程式行或指令，這是此程式行或指令正在其中執行的樣本數量。|
 |**內含樣本 %**|-   對於函式或模組，這是分析執行中此函式或模組的內含樣本佔所有樣本的百分比。<br />-   對於程式行或指令，這是分析執行中，其中正在執行此程式行或指令之所有樣本的百分比。|
 |**專有樣本**|-   對於函式，這是此函式直接在其中執行的呼叫堆疊樣本數，亦即此函式在呼叫堆疊最上方的樣本數量。<br />-   對於模組，這是模組中函式之專有樣本的總和。<br />-   對於程式行或指令，這是此程式行或指令正在其中執行的樣本數量。|
 |**專有樣本 %**|-   對於函式或模組，這是分析執行中此函式或模組的專有樣本佔所有樣本的百分比。<br />-   對於程式行或指令，這是分析執行中，其中正在執行此程式行或指令之所有樣本的百分比。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)
-- [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [模組視圖 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [模組檢視](../profiling/modules-view-instrumentation-data.md)

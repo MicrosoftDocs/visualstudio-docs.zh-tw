@@ -1,5 +1,5 @@
 ---
-title: 將功能表命令的文字變更 |Microsoft Docs
+title: 變更選單指令的文字 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - text, menus
 - commands, changing text
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ba19a6536be7f0f5855ee9035e80989c105cbf7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ff6af7bdd64342e86201af79dbe5c7968b247d6b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321115"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739841"
 ---
-# <a name="change-the-text-of-a-menu-command"></a>變更功能表命令的文字
-下列步驟示範如何使用變更功能表命令的文字標籤<xref:System.ComponentModel.Design.IMenuCommandService>服務。
+# <a name="change-the-text-of-a-menu-command"></a>變更選單指令的文字
+以下步驟演示如何使用<xref:System.ComponentModel.Design.IMenuCommandService>服務更改功能表命令的文本標籤。
 
-## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>變更功能表命令標籤與 IMenuCommandService
+## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>使用 IMenu 指令服務變更選單指令標籤
 
-1. 建立 VSIX 專案，名為`MenuText`功能表命令與名為**ChangeMenuText**。 如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的延伸模組](../extensibility/creating-an-extension-with-a-menu-command.md)。
+1. 建立`MenuText`VSIX 專案,該專案名為 **「更改選單文字**」的功能表命令。 關於詳細資訊,請參閱[使用選單指令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)。
 
-2. 在  *.vsct*檔案中，新增`TextChanges`旗標設為您的功能表命令，如下列範例所示。
+2. 在 *.vsct*檔中`TextChanges`,將標誌添加到功能表命令,如以下範例所示。
 
     ```xml
     <Button guid="guidChangeMenuTextPackageCmdSet" id="ChangeMenuTextId" priority="0x0100" type="Button">
@@ -39,7 +39,7 @@ ms.locfileid: "66321115"
     </Button>
     ```
 
-3. 在  *ChangeMenuText.cs*檔案中，建立事件處理常式將會在顯示的功能表命令之前呼叫。
+3. 在*ChangeMenuText.cs*檔案中,創建一個事件處理程式,該處理程式將在顯示選單命令之前調用。
 
     ```csharp
     private void OnBeforeQueryStatus(object sender, EventArgs e)
@@ -52,11 +52,11 @@ ms.locfileid: "66321115"
     }
     ```
 
-    您也可以藉由變更來更新這個方法中的功能表命令的狀態<xref:System.ComponentModel.Design.MenuCommand.Visible%2A>， <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>，並<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A>上的屬性<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>物件。
+    還可以<xref:System.ComponentModel.Design.MenuCommand.Visible%2A>透過<xref:System.ComponentModel.Design.MenuCommand.Checked%2A><xref:System.ComponentModel.Design.MenuCommand.Enabled%2A><xref:Microsoft.VisualStudio.Shell.OleMenuCommand>更改物件上的、屬性來更新此方法中的功能表命令的狀態。
 
-4. ChangeMenuText 建構函式中的原始命令初始化和放置程式碼取代程式碼會建立<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>(而非`MenuCommand`)，表示功能表命令，新增<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>事件處理常式，並提供功能表功能表命令服務命令。
+4. 在 ChangeMenuText 建構函數中,將原始命令初始化和放置代碼取代為代碼,<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>該代碼 建立`MenuCommand`一個( 而不是 )表示<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>選單命令、添加事件處理程式並將功能表命令授予功能表命令到選單命令服務的代碼。
 
-    它應該看起來如下：
+    下面是它應該是什麼樣子:
 
     ```csharp
     private ChangeMenuText(Package package)
@@ -81,8 +81,8 @@ ms.locfileid: "66321115"
     }
     ```
 
-5. 建置此專案並開始偵錯。 Visual Studio 的實驗執行個體隨即出現。
+5. 建置此專案並開始偵錯。 視覺工作室的實驗實例出現。
 
-6. 在 [**工具**] 功能表您應該會看到名為的命令**叫用 ChangeMenuText**。
+6. 在 **'工具'** 選單上,您應該看到名為 **「呼叫變更選單文字**」的命令。
 
-7. 按一下 [命令]。 訊息方塊宣布，您應該會看到**MenuItemCallback**已呼叫。 當您關閉訊息方塊時，您應該會看到 [工具] 功能表命令的名稱，現在是**新的文字**。
+7. 單擊該命令。 您應該會看到訊息框,宣佈已呼叫**MenuItem 回覆**。 當您關閉訊息框時,您應該看到「工具」功能表上的命令的名稱現在是 **「新文字**」。

@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_ADDRESS | Microsoft Docs
+title: BP_LOCATION_CODE_ADDRESS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_ADDRESS structure
 ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 51137b5a5a69c80ecd7129d4c645f63b5805d27d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c215630e522adabdbd285e00d4bcd87cae22a931
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319136"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738034"
 ---
-# <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
-描述在程式碼中的位址中斷點的位置。
+# <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
+描述代碼中地址的斷點位置。
 
 ## <a name="syntax"></a>語法
 
@@ -37,28 +37,28 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 
 ## <a name="members"></a>成員
 `bstrContext`\
-中斷點的內容，通常是呼叫堆疊上所示的方法或函式的名稱。
+斷點的上下文,通常是在調用堆疊上看到的方法或函數名稱。
 
 `bstrModuleUrl`\
-包含中斷點之模組的 URL。
+包含斷點的模組的 URL。
 
 `bstrFunction`\
-包含中斷點的函式的名稱。
+包含斷點的函數的名稱。
 
 `bstrAddress`\
-位址中斷點，以將它繫結的運算式評估工具會剖析[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件。
+斷點的位址,由表達式賦值器解析,以將其綁定到[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件。
 
 ## <a name="remarks"></a>備註
-此結構是隸屬[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的聯集的一部分。
+此結構是作為聯合的一部分[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的成員。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

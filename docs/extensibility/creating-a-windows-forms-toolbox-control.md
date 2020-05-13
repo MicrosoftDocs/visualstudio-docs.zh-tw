@@ -1,5 +1,5 @@
 ---
-title: 建立 Windows Forms 工具箱控制項 |Microsoft Docs
+title: 建立 Windows 表單工具箱控制件 |微軟文件
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,76 +7,76 @@ helpviewer_keywords:
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3887a2d54f2744504f587b848bc1395090c3904c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d7e7749302252c5d56f21c58de9b6ac23f898572
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345416"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739578"
 ---
-# <a name="create-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
+# <a name="create-a-windows-forms-toolbox-control"></a>建立 Windows 表單工具箱控制項
 
-Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工具 (VS SDK)，可讓您建立**工具箱**安裝擴充功能時，會自動新增的控制項。 本逐步解說示範如何使用範本來建立簡單的計數器控制項，您就可以散發給其他使用者。
+Visual Studio 擴充工具 (VS SDK) 中包含的 Windows 窗體工具箱控制項專案樣本允許您創建**工具箱**控制項,該控制檔在安裝擴充時會自動新增。 本演練演示如何使用範本創建可分發給其他用戶的簡單計數器控制項。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
-從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+從 Visual Studio 2015 開始,您不會從下載中心安裝 Visual Studio SDK。 它作為可選功能包含在可視化工作室設置中。 以後還可以安裝 VS SDK。 有關詳細資訊,請參閱[安裝可視化工作室 SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-the-toolbox-control"></a>建立工具箱控制項
 
-Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並提供的所有功能，才能將控制項加入**工具箱**。
+Windows 表單工具箱控制項樣本建立未定義的使用者控制項,並提供將控制項添加到**工具箱**所需的所有功能。
 
-### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>建立使用 Windows Forms 工具箱控制項的延伸模組
+### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>使用 Windows 表單工具箱控制件建立副檔名
 
-1. 建立 VSIX 專案，名為`MyWinFormsControl`。 您可以找到在 VSIX 專案範本**新的專案**對話方塊中的，藉由搜尋 「 vsix"。
+1. 創建名為的`MyWinFormsControl`VSIX 專案。 您可以通過搜尋"vsix"在 **"新項目**"對話框中找到 VSIX 專案範本。
 
-2. 當專案開啟時，新增**Windows Forms 工具箱控制項**名為的項目範本`Counter`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#**  > **擴充性**，然後選取**Windows Forms 工具箱控制項**
+2. 打開專案時,添加名為的`Counter`Windows**窗體工具箱控制項**樣本。 在**解決方案資源管理器**中,右鍵單擊專案節點並選擇「**添加新** > **項**」。 在 **'新增新項目'** 對話框中,轉到**視覺化 C#** > **可擴充性**並選擇**Windows 窗體工具箱控制項**
 
-3. 這會將使用者控制項，新增`ProvideToolboxControlAttribute`<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>要放置在控制項**工具箱**，和**Microsoft.VisualStudio.ToolboxControl**資產部署的 VSIX 資訊清單中的項目。
+3. 這將添加使用者控件,一個`ProvideToolboxControlAttribute`<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>將控制項放在**工具箱**中,以及**Microsoft.VisualStudio.Toolbox 控制**資產項目在 VSIX 清單中進行部署。
 
-### <a name="build-a-user-interface-for-the-control"></a>建置使用者介面控制項
+### <a name="build-a-user-interface-for-the-control"></a>為控制程式建構使用者介面
 
-`Counter`控制項，需要兩個子控制項：<xref:System.Windows.Forms.Label>來顯示目前的計數，和<xref:System.Windows.Forms.Button>計數重設為 0。 沒有任何其他子控制項所需的因為呼叫端會以程式設計方式遞增計數器。
+該`Counter`控制項需要兩個子控制項<xref:System.Windows.Forms.Label>: 一個用於顯示當前計數<xref:System.Windows.Forms.Button>,和將計數重置為 0。 不需要其他子控件,因為調用方將以程式設計方式增加計數器。
 
 #### <a name="to-build-the-user-interface"></a>建置使用者介面
 
-1. 在 [**方案總管] 中**，按兩下*Counter.cs*在設計工具中開啟它。
+1. 在**解決方案資源管理器**中,按兩下*Counter.cs*在設計器中打開它。
 
-2. 移除**按這裡 ！** 當您將 Windows Forms 工具箱控制項項目範本包含預設的按鈕。
+2. 刪除 **「按下此處」!** 添加 Windows 窗體工具箱控制項項樣本時預設包含的按鈕。
 
-3. 從**工具箱**，拖曳`Label`控制項，然後`Button`其下方的控制項至設計介面。
+3. 從**工具箱**中,拖動`Label`控件 ,`Button`然後將其下方 的控件拖動到設計圖面。
 
-4. 調整 150 整體使用者控制項的大小、 50 像素為單位，並調整大小的按鈕控制項為 50，20 像素為單位。
+4. 將使用者整體控制件的大小調整到 150、50 像素,並將按鈕控制項的大小調整到 50、20 圖元。
 
-5. 在 [**屬性**] 視窗中，設定下列值在設計介面上的控制項。
+5. 在 **「屬性」** 視窗中,為設計圖面上的控制項設定以下值。
 
-    |控制項|屬性|值|
+    |控制|屬性|值|
     |-------------|--------------|-----------|
     |`Label1`|**Text**|""|
     |`Button1`|**名稱**|btnReset|
     |`Button1`|**Text**|重設|
 
-### <a name="code-the-user-control"></a>使用者控制項的程式碼
+### <a name="code-the-user-control"></a>編寫使用者控制程式的代碼
 
-`Counter`控制項會公開遞增計數器，此計數器會遞增，每當引發事件的方法**重設**按鈕，然後將目前的計數、 顯示文字，以及是否要顯示的三個屬性或隱藏**重設** 按鈕。 `ProvideToolboxControl` 屬性會決定 [工具箱]  顯示 `Counter` 控制項的位置。
+此`Counter`控制項會公開一個方法以遞增計數器、每當計數器增加時引發的事件、**一個「重置」** 按鈕以及儲存目前的計數、顯示文字以及是否顯示或隱藏 **「重置」** 按鈕的三個屬性。 `ProvideToolboxControl` 屬性會決定 [工具箱] **** 顯示 `Counter` 控制項的位置。
 
-#### <a name="to-code-the-user-control"></a>使用者控制項的程式碼
+#### <a name="to-code-the-user-control"></a>編寫使用者控制程式的代碼
 
-1. 按兩下表單，以開啟其 load 事件處理常式程式碼視窗中。
+1. 按兩下單單以在程式碼視窗中打開其載入事件處理程式。
 
-2. 上述事件處理常式方法中，控制項類別中建立要儲存的計數器值的字串和儲存的顯示文字，如下列範例所示的整數。
+2. 在事件處理程式方法的上方,在控件類中創建一個整數來存儲計數器值和一個字串來存儲顯示文本,如下例所示。
 
     ```csharp
     int currentValue;
     string displayText;
     ```
 
-3. 建立下列公用屬性宣告。
+3. 創建以下公共財產聲明。
 
     ```csharp
     public int Value {
@@ -95,9 +95,9 @@ Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並
 
     ```
 
-    呼叫端可以存取這些屬性，取得或設定計數器的顯示文字，以顯示或隱藏**重設** 按鈕。 呼叫端可以取得目前的唯讀值`Value`屬性，但它們不能值直接設定。
+    呼叫者可以存取這些屬性以取得和設定計數器的顯示文字,並顯示或隱藏 **「重置」** 按鈕。 調用方可以獲取唯`Value`讀屬性的當前值,但不能直接設置該值。
 
-4. 將下列程式碼置於`Load`控制項事件。
+4. 將以下代碼放在控制項的`Load`事件中。
 
     ```csharp
     private void Counter_Load(object sender, EventArgs e)
@@ -108,9 +108,9 @@ Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並
 
     ```
 
-    設定**標籤**中的文字<xref:System.Windows.Forms.UserControl.Load>事件可讓載入前套用其值的目標屬性。 設定**標籤**建構函式中的文字會導致空**標籤**。
+    在<xref:System.Windows.Forms.UserControl.Load>事件中設定**Label**文本可使目標屬性在應用其值之前載入。 在建構函數中設定 **「標籤**」文本將導致**標籤**為空。
 
-5. 建立下列公用方法，以遞增計數器。
+5. 創建以下公共方法以增加計數器。
 
     ```csharp
     public void Increment()
@@ -122,15 +122,15 @@ Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並
 
     ```
 
-6. 加入宣告`Incremented`控制項類別的事件。
+6. 向控制項類添加`Incremented`事件的聲明。
 
     ```csharp
     public event EventHandler Incremented;
     ```
 
-    呼叫端可以新增處理常式，此事件以回應變更計數器的值。
+    呼叫方可以向此事件添加處理程式以回應計數器值的更改。
 
-7. 返回設計檢視，然後按兩下**重設**按鈕，以產生`btnReset_Click`事件處理常式，然後在下列範例所示填入。
+7. 返回到設計檢視並按兩下 **「重置**」按鈕以`btnReset_Click`生成 事件處理程式,然後填寫它,如以下示例所示。
 
     ```csharp
     private void btnReset_Click(object sender, EventArgs e)
@@ -141,7 +141,7 @@ Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並
 
     ```
 
-8. 在類別定義正上方的 `ProvideToolboxControl` 屬性宣告中，將第一個參數的值從 `"MyWinFormsControl.Counter"` 變更為 `"General"`。 這會設定主控 [工具箱]  控制項的項目群組名稱。
+8. 在類別定義正上方的 `ProvideToolboxControl` 屬性宣告中，將第一個參數的值從 `"MyWinFormsControl.Counter"` 變更為 `"General"`。 這會設定主控 [工具箱] **** 控制項的項目群組名稱。
 
     下列範例會顯示 `ProvideToolboxControl` 屬性和調整過的類別定義。
 
@@ -152,72 +152,72 @@ Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並
 
 ### <a name="test-the-control"></a>測試控制項
 
- 若要測試**工具箱**控制第一次在開發環境中進行測試，然後在已編譯的應用程式中進行測試。
+ 要測試**工具箱**控件,請先在開發環境中測試它,然後在編譯的應用程式中對其進行測試。
 
 #### <a name="to-test-the-control"></a>測試控制項
 
-1. 按下**F5**要**開始偵錯**。
+1. 以**F5** **以開始除錯**。
 
-    此命令會建置專案，並開啟第二個安裝了控制項的 Visual Studio 的實驗性執行個體。
+    此命令生成專案並打開已安裝控制項的 Visual Studio 的第二個實驗實例。
 
-2. 在 Visual Studio 的實驗性執行個體，建立**Windows Forms 應用程式**專案。
+2. 在可視化工作室的實驗實例中,創建**Windows 窗體應用程式**專案。
 
-3. 在 **方案總管**，按兩下*Form1.cs*開啟設計工具中，如果它尚未開啟。
+3. 在**解決方案資源管理器**中,按兩下*Form1.cs*在設計器中打開它(如果尚未打開)。
 
-4. 在 **工具箱**，則`Counter`控制項應該顯示在**一般**一節。
+4. 在**工具箱**中`Counter`,控制項應顯示在 **「常規」** 部分中。
 
-5. 拖曳`Counter`控制項至表單，然後加以選取。 `Value`， `Message`，並`ShowReset`屬性會顯示在**屬性**視窗中的，以及繼承自屬性<xref:System.Windows.Forms.UserControl>。
+5. 將`Counter`控件拖動到窗體中,然後選擇它。 `Message``Value`<xref:System.Windows.Forms.UserControl>屬性會顯示在 **「屬性」** 視窗中, 以及從繼承的屬性 。 `ShowReset`
 
-6. 將 `Message` 屬性設定為 `Count:`。
+6. 將 `Message` 屬性設為 `Count:`。
 
-7. 拖曳<xref:System.Windows.Forms.Button>控制項至表單，並再設定名稱和文字屬性的按鈕`Test`。
+7. 將<xref:System.Windows.Forms.Button>控制器拖曳到表單,然後會按鈕的名稱與文字屬性設定`Test`為 。
 
-8. 按兩下 button 以開啟*Form1.cs*中程式碼檢視，並建立 click 處理常式。
+8. 按兩下按鈕以在代碼檢視中打開*Form1.cs*並創建單擊處理程式。
 
-9. 在 click 處理常式呼叫`counter1.Increment()`。
+9. 在按一下處理程式中,呼`counter1.Increment()`叫 。
 
-10. 在建構函式，呼叫後面`InitializeComponent`，型別`counter1``.``Incremented +=`，然後按 **索引標籤** 兩次。
+10. 在構造函數中,在`InitializeComponent`調用 後鍵`counter1``.``Incremented +=`入 ,然後按**Tab**兩次。
 
-    Visual Studio 產生的表單層次處理常式`counter1.Incremented`事件。
+    Visual Studio`counter1.Incremented`為 事件生成表單級處理程式。
 
-11. 反白顯示`Throw`陳述式中的事件處理常式，型別`mbox`，然後按 **索引標籤** 兩次，以從 mbox 程式碼片段中產生一個訊息方塊。
+11. 突顯事件`Throw`處理程式中的語句,鍵`mbox`入 ,然後按**Tab**兩次從 mbox 代碼段生成消息框。
 
-12. 在下一行中，新增下列`if` / `else`區塊來設定的可見性**重設** 按鈕。
+12. 在下一行上,`if`/`else`添加以下塊以設置 **「重置」** 按鈕的可見性。
 
     ```csharp
     if (counter1.Value < 5) counter1.ShowReset = false;
     else counter1.ShowReset = true;
     ```
 
-13. 請按 **F5**。
+13. 按 **F5**。
 
-    表單隨即開啟。 `Counter`控制項會顯示下列文字。
+    窗體將打開。 該`Counter`控件顯示以下文本。
 
-    **計數：0**
+    **計數: 0**
 
-14. 按一下 [測試]  。
+14. 按一下 [ **測試**]。
 
-    計數器遞增和 Visual Studio 會顯示訊息方塊。
+    計數器增量和可視化工作室顯示一個消息框。
 
-15. 關閉訊息方塊。
+15. 關閉消息框。
 
-    **重設**按鈕就會消失。
+    **"重置**"按鈕將消失。
 
-16. 按一下 **測試**直到在計數器達到**5**關閉訊息方塊的每一次。
+16. 按下 **「測試**」,直到計數器每次達到**5**個關閉消息框。
 
-    **重設**按鈕隨即再度出現。
+    **"重置"** 按鈕重新出現。
 
-17. 按一下 [重設]  。
+17. 按一下 [重設]****。
 
-    此計數器會重設為**0**。
+    計數器重置為**0**。
 
 ## <a name="next-steps"></a>後續步驟
 
-當您建置**工具箱**控制項，Visual Studio 會建立名為的檔案*ProjectName.vsix*您專案的 \bin\debug\ 資料夾中。 您可以將控制項部署上傳 *.vsix*檔案到網路或網站。 當使用者在開啟 *.vsix*是安裝檔案，該控制項，並將其加入 Visual Studio**工具箱**使用者的電腦上。 或者，您可以上傳 *.vsix*的檔案[Visual Studio Marketplace](https://marketplace.visualstudio.com/) ，讓使用者可以瀏覽來尋找它**工具** >  **擴充功能和更新**對話方塊。
+生成**工具箱**控制項時,Visual Studio 會在專案的 [bin_調試] 資料夾中創建名為*ProjectName.vsix*的檔。 通過將 *.vsix*檔上傳到網路或網站,可以部署控制項。 當使用者打開 *.vsix*檔時,將安裝該控制項並將其添加到使用者電腦上的 Visual Studio**工具箱**中。 或者,您可以將 *.vsix*檔上傳到[可視化工作室應用商店](https://marketplace.visualstudio.com/),以便使用者可以通過在 **「工具** > **擴展和更新**」對話框中流覽來找到它。
 
 ## <a name="see-also"></a>另請參閱
 
-- [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
+- [擴展視覺工作室的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
 - [建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)
-- [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
-- [Windows Form 控制項開發的基本概念](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+- [擴展視覺工作室的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Windows 表單控制式開發基礎知識](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

@@ -1,35 +1,35 @@
 ---
-title: 執行緒 |Microsoft Docs
+title: 線程 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], threads
 - threading [Debugging SDK]
 ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9759536e1b27018a3361bbb723b4cde0f88269e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8ed5c06e0c42dac1f0539cc2c7c5886d95b23ae1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333664"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712484"
 ---
-# <a name="threads"></a>執行緒
-在偵錯工具架構中，*執行緒*:
+# <a name="threads"></a>Threads
+在除錯器架構結構中,*線程*:
 
-- 是計算的基本單位。 執行緒會以循序方式執行其指示的內容中的單一呼叫堆疊，從一個程式碼內容移至下一步。
+- 是計算的基本單位。 線程在單個調用堆疊的上下文中按順序執行其指令,從一個代碼上下文移動到下一個代碼上下文。
 
-- 可以識別本身，以及在執行的程式。 執行緒可以命名為、 擱置，而且繼續。 執行緒也可以列舉其相關聯的堆疊框架，並在某些情況下可以移至另一個堆疊框架。 指定的堆疊框架的內容，執行緒可以傳回其相關聯的邏輯執行緒，如果有的話。 執行緒必須屬性，例如暫停計數，可顯示在**執行緒**在 IDE 的視窗。
+- 可以標識自身及其正在運行的程式。 可以命名、掛起和恢復線程。 線程還可以枚舉其關聯的堆疊幀,在某些情況下,可以移動到另一個堆疊幀。 給定堆疊幀的上下文,線程可以返回其關聯的邏輯線程(如果有)。 線程具有可在 IDE**的「線程」** 視窗中顯示的屬性(如掛起計數)。
 
-- 由[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)通常所偵錯引擎 (DE) 或由於執行程式的虛擬機器建立的介面。
+- 由[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)介面表示,通常由調試引擎 (DE) 或虛擬機作為執行程序的結果創建。
 
 ## <a name="see-also"></a>另請參閱
-- [程式](../../extensibility/debugger/programs.md)
-- [堆疊框架](../../extensibility/debugger/stack-frames.md)
+- [Programs](../../extensibility/debugger/programs.md)
+- [堆疊幀](../../extensibility/debugger/stack-frames.md)
 - [偵錯引擎](../../extensibility/debugger/debug-engine.md)
-- [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)
-- [工作階段偵錯管理員](../../extensibility/debugger/session-debug-manager.md)
+- [除錯器概念](../../extensibility/debugger/debugger-concepts.md)
+- [工作階段除錯管理員](../../extensibility/debugger/session-debug-manager.md)

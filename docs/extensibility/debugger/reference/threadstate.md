@@ -1,5 +1,5 @@
 ---
-title: THREADSTATE |Microsoft Docs
+title: 線程狀態 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - THREADSTATE enumeration
 ms.assetid: 62efdd7c-25b1-4fd3-9d06-ac1830a418a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d86baeeab046a7e605979d3af2d6329998f796ba
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1b291cc1668b2b867729da11d4c561f74567f257
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727502"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713331"
 ---
 # <a name="threadstate"></a>THREADSTATE
-指定執行緒的狀態。
+指定線程的狀態。
 
 ## <a name="syntax"></a>語法
 
@@ -50,30 +50,30 @@ public enum enum_THREADSTATE { 
 
 ## <a name="fields"></a>欄位
  `THREADSTATE_RUNNING`\
- 表示執行緒正在執行。
+ 指示線程正在運行。
 
  `THREADSTATE_STOPPED`\
- 表示執行緒因為中斷點而停止。
+ 指示線程由於斷點而停止。
 
  `THREADSTATE_FRESH`\
- 表示執行緒已建立，但尚未執行程式碼。
+ 指示線程已創建,但尚未運行代碼。
 
  `THREADSTATE_DEAD`\
- 表示執行緒已失效。
+ 指示線程已死。
 
  `THREADSTATE_FROZEN`\
- 表示執行緒已凍結（無法執行任何執行）。
+ 指示線程已凍結(無法執行)。
 
 ## <a name="remarks"></a>備註
- 用於[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構的 `dwThreadState` 欄位。
+ 用於`dwThreadState`[執行緒屬性](../../../extensibility/debugger/reference/threadproperties.md)結構的欄位。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg。h
+ 標題: msdbg.h
 
- 命名空間： VisualStudio。 Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 元件： VisualStudio. Interop .dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

@@ -1,31 +1,31 @@
 ---
-title: 安全性問題 |Microsoft Docs
+title: 安全問題 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Debugging SDK]
 - debugging [Debugging SDK], security
 ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dc31022611d7148d2cb52182b2a10336215afdc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 40898f5633eac374206ed40bfcac96d9c1c5b753
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345621"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713056"
 ---
 # <a name="security-issues"></a>安全性問題
-若要偵錯使用 Visual Studio 的程式，所需的權限僅限於都相同的開發人員需要用來執行程式。 這包括大多數的情況下執行遠端偵錯。 某些情況下，包含其他服務，例如網際網路資訊服務，可能需要較高層級的權限。
+要使用 Visual Studio 調試程式,所需的唯一許可權與開發人員運行程式所需的許可權相同。 這包括大多數情況下的遠端調試。 某些涉及其他服務(如 Internet 資訊服務)的情況可能需要更高級別的許可權。
 
- 當 Visual Studio 執行時，處理序偵錯管理員 (PDM) 會在本機電腦上追蹤偵錯處理序。 遠端電腦上，稱為 「 計劃*msvsmon.exe*由開發人員處理遠端偵錯，並提供 PDM 啟動。 (*msvsmon.exe*不是服務，而且必須以手動方式啟動，才能啟用該電腦上的遠端偵錯。)當 Visual Studio (或*msvsmon.exe*) 是未執行，沒有任何處理序會追蹤偵錯。
+ 當 Visual Studio 執行時,行程除錯管理員 (PDM) 追蹤本地電腦上的調試過程。 開發人員遠端啟動名為*msvsmon.exe*的程式,以處理遠端除錯並使 PDM 可用。 *(msvsmon.exe*不是服務,必須手動啟動才能在該電腦上啟用遠端調試。當 Visual Studio (或*msvsmon.exe*) 未執行時,不會追蹤任何進程以進行調試。
 
- 開發人員可以偵錯他們開始任何特殊權限的程式。 開發人員甚至可以偵錯處理序啟動由其他人，對方是否相同的安全性群組的成員。 若要啟用遠端偵錯，則只需要將所需的檔案複製到遠端電腦，並啟動*msvsmon.exe*。 如需詳細資訊，請參閱 <c0> [ 遠端偵錯](../../debugger/remote-debugging.md)。
+ 開發人員可以調試他們啟動的程式,無需特殊許可權。 如果其他人是同一安全組的成員,開發人員甚至可以調試由其他人啟動的進程。 而且,為了啟用遠端調試,只需將所需的檔案複製到遠端電腦並啟動*msvsmon.exe。* 有關詳細資訊,請參閱[遠端除錯](../../debugger/remote-debugging.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [偵錯工作](../../extensibility/debugger/debugging-tasks.md)
-- [處理序偵錯管理員](../../extensibility/debugger/process-debug-manager.md)
+- [除錯工作](../../extensibility/debugger/debugging-tasks.md)
+- [程序除錯管理員](../../extensibility/debugger/process-debug-manager.md)
 - [遠端偵錯](../../debugger/remote-debugging.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75850059"
 ---
 # <a name="set-up-remote-workspaces"></a>設定遠端工作區
@@ -26,7 +26,7 @@ ms.locfileid: "75850059"
 
 ## <a name="install-an-ssl-certificate"></a>安裝 SSL 憑證
 
-RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器上有 SSL 憑證。 您可以使用受信任的憑證授權單位所簽署的憑證 (建議)，或自我簽署憑證 （自我簽署憑證會導致 RTVS 在連線時發出警告）。無論使用哪一種，您都必須將它安裝在電腦上，並允許存取其私密金鑰。
+RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器上有 SSL 憑證。 您可以使用受信任的憑證授權單位所簽署的憑證 (建議)，或自我簽署憑證 （自簽章憑證會導致 RTVS 在連接時發出警告。使用任一，則需要將其安裝到電腦上並允許訪問其私密金鑰。
 
 ### <a name="obtain-a-trusted-certificate"></a>取得受信任的憑證
 
@@ -42,7 +42,7 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 ### <a name="obtain-a-self-signed-certificate-windows"></a>取得自我簽署憑證 (Windows)
 
-如果您有受信任的憑證，請略過本節。 相較於來自受信任授權單位的憑證，自我簽署的憑證就像是您自行建立的身分證。 此程序當然比使用受信任的授權單位更為簡單，但因為缺乏強有力的驗證，表示攻擊者可以他們自己的憑證取代未簽署的憑證，擷取用戶端與伺服器之間的所有流量。 因此，「自我簽署憑證應該僅用於受信任網路上的測試案例，絕不能用在生產環境中」。
+如果您有受信任的憑證，請略過本節。 相較於來自受信任授權單位的憑證，自我簽署的憑證就像是您自行建立的身分證。 此程序當然比使用受信任的授權單位更為簡單，但因為缺乏強有力的驗證，表示攻擊者可以他們自己的憑證取代未簽署的憑證，擷取用戶端與伺服器之間的所有流量。 因此，「自我簽署憑證應該僅用於受信任網路上的測試案例，絕不能用在生產環境中」**。
 
 基於這個理由，RTVS 在連線使用自我簽署憑證的伺服器時，一律會發出下列警告︰
 
@@ -67,7 +67,7 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 ### <a name="install-the-certificate"></a>安裝憑證
 
-若要在遠端電腦上安裝憑證，請從命令提示字元執行 certlm.msc (憑證管理員)。 以滑鼠右鍵按一下 [個人] 資料夾，然後選取 [所有工作] > [匯入] 命令︰
+若要在遠端電腦上安裝憑證，請從命令提示字元執行 certlm.msc** (憑證管理員)。 以滑鼠右鍵按一下 [個人]**** 資料夾，然後選取 [所有工作]**** > [匯入]**** 命令︰
 
 ![匯入憑證命令](media/workspaces-remote-certificate-import.png)
 
@@ -75,14 +75,14 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 一旦匯入憑證，即授與 `NETWORK SERVICE` 帳戶讀取私密金鑰的權限，如下列指示所述。 `NETWORK_SERVICE` 是執行 R 服務訊息代理程式所使用的帳戶，這是終止 SSL 連線連入伺服器電腦的服務。
 
-1. 從系統管理員命令提示字元執行 certlm.msc (憑證管理員)。
-1. 展開 [個人] > [憑證]，並以滑鼠右鍵按一下您的憑證，然後選取 [所有工作] > [管理私密金鑰]。
-1. 以滑鼠右鍵按一下憑證，然後選取 [所有工作] 下的 [管理私密金鑰] 命令。
-1. 在出現的對話方塊中，選取 [新增] 並輸入 `NETWORK SERVICE` 為帳戶名稱︰
+1. 從系統管理員命令提示字元執行 certlm.msc** (憑證管理員)。
+1. 展開**個人** > **證書**，按右鍵您的證書，然後選擇 **"所有任務** > **管理私密金鑰**"。
+1. 以滑鼠右鍵按一下憑證，然後選取 [所有工作]**** 下的 [管理私密金鑰]**** 命令。
+1. 在出現的對話方塊中，選取 [新增]**** 並輸入 `NETWORK SERVICE` 為帳戶名稱︰
 
     ![[管理私密金鑰] 對話方塊, 新增 NETWORK_SERVICE](media/workspaces-remote-manage-private-key-dialog.png)
 
-1. 選取兩次 [確定] 關閉對話方塊並認可變更。
+1. 選取兩次 [確定]**** 關閉對話方塊並認可變更。
 
 ## <a name="install-an-ssl-certificate-on-ubuntu"></a>在 Ubuntu 上安裝 SSL 憑證
 
@@ -115,7 +115,7 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 ### <a name="configure-rtvs-daemon"></a>設定 RTVS 精靈
 
-您必須在 /etc/rtvs/rtvsd.config.json 中設定 SSL 憑證檔案路徑 (PFX 的路徑)。 分別使用檔案路徑與密碼來更新 `X509CertificateFile` 和 `X509CertificatePassword`。
+您必須在 /etc/rtvs/rtvsd.config.json** 中設定 SSL 憑證檔案路徑 (PFX 的路徑)。 分別使用檔案路徑與密碼來更新 `X509CertificateFile` 和 `X509CertificatePassword`。
 
 ```json
 {
@@ -148,14 +148,14 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
     - 在 *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\* 中建立資料夾，然後複製所有必要的二進位檔。
     - 安裝 `RHostBrokerService` 和 `RUserProfileService` 並設定自動啟動。
     - 設定 `seclogon` 服務自動啟動。
-    - 在預設連接埠 5444 上，將 Microsoft.R.Host.exe 和 Microsoft.R.Host.Broker.exe 新增至防火牆輸入規則。
+    - 在預設連接埠 5444 上，將 Microsoft.R.Host.exe** 和 Microsoft.R.Host.Broker.exe** 新增至防火牆輸入規則。
 
 電腦重新開機時會自動啟動 R 服務︰
 
 - **R 主機訊息代理程式服務**處理 Visual Studio 與電腦上執行 R 程式碼之處理序間的所有 HTTPS 流量。
 - **R 使用者設定檔服務**是處理 Windows 使用者設定檔建立的特殊權限元件。 新使用者第一次登入 R 伺服器電腦時，會呼叫此服務。
 
-您可以在服務管理主控台中看到這些服務 (compmgmt.msc)。
+您可以在服務管理主控台中看到這些服務 (compmgmt.msc**)。
 
 ## <a name="install-r-services-on-linux"></a>在 Linux 上安裝 R 服務
 
@@ -184,7 +184,7 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
     不過，如果您要在網際網路伺服器 (例如 Azure VM) 上安裝憑證，請使用伺服器的完整網域名稱 (FQDN)，因為網際網路伺服器的 FQDN 與其 NETBIOS 名稱絕不會相同。
 
-    若要使用 FQDN，請巡覽至 R 服務的安裝位置 (預設為 %PROGRAM FILES%\R Remote Service for Visual Studio\1.0)，並在文字編輯器中開啟 Microsoft.R.Host.Broker.Config.json 檔案，然後使用下列內容取代其內容，以將 CN 指派給任何的伺服器 FQDN，例如 `foo.westus.cloudapp.azure.com`：
+    若要使用 FQDN，請巡覽至 R 服務的安裝位置 (預設為 %PROGRAM FILES%\R Remote Service for Visual Studio\1.0**)，並在文字編輯器中開啟 Microsoft.R.Host.Broker.Config.json** 檔案，然後使用下列內容取代其內容，以將 CN 指派給任何的伺服器 FQDN，例如 `foo.westus.cloudapp.azure.com`：
 
     ```json
     {
@@ -199,11 +199,11 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 ## <a name="troubleshooting"></a>疑難排解
 
-**問： R 伺服器電腦沒有回應，我該怎麼做？**
+**問：R 伺服器電腦沒有回應，我該怎麼辦？**
 
 嘗試從命令列 ping 遠端電腦：`ping remote-machine-name`。 如果 ping 失敗，請確定電腦正在執行。
 
-**問： R 互動視窗顯示遠端電腦已開啟，但為什麼服務未執行？**
+**問：R 交互視窗表示遠端電腦已打開，但為什麼服務未運行？**
 
 有三個可能的原因：
 
@@ -211,23 +211,23 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 - 通訊埠 5444 連接埠的連入和連出連線未啟用 `Microsoft.R.Host.Broker` 和 `Microsoft.R.Host` 防火牆規則。
 - 未安裝具有 `CN=<remote-machine-name>` 的SSL 憑證。
 
-完成任何上述變更後，請重新啟動電腦。 然後透過工作管理員 ([服務] 索引標籤) 或 services.msc 確定 `RHostBrokerService` 和 `RUserProfileService` 正在執行。
+完成任何上述變更後，請重新啟動電腦。 然後透過工作管理員 ([服務] 索引標籤) 或 services.msc** 確定 `RHostBrokerService` 和 `RUserProfileService` 正在執行。
 
-**問：在連接到 R 伺服器時，R 互動視窗為什麼會說「401拒絕存取」？**
+**問：為什麼 R 交互視窗在連接到 R 伺服器時說"401 訪問被拒絕"？**
 
 可能有二個原因：
 
 - `NETWORK SERVICE` 帳戶很可能無法存取 SSL 憑證的私密金鑰。 請依稍早的指示授與私密金鑰的 `NETWORK SERVICE` 存取權。
-- 確定 `seclogon` 服務正在執行。 使用 services.msc 設定 `seclogon` 自動啟動。
+- 確定 `seclogon` 服務正在執行。 使用 services.msc** 設定 `seclogon` 自動啟動。
 
-**問：在連接到 R 伺服器時，R 互動視窗為何會說「找不到404」？**
+**問：為什麼 R 交互視窗在連接到 R 伺服器時說"未找到 404"？**
 
 此錯誤可能是因為遺漏 Visual C++ 可轉散發程式庫。 檢查 R 互動視窗看看是否有關於遺漏文件庫的訊息 (DLL)。 然後檢查是否安裝 VS 2015 可轉散發套件以及已安裝 R。
 
-**問：我無法從 R 互動視窗存取網際網路/資源，我該怎麼做？**
+**問：我無法從 R 交互視窗訪問互聯網/資源，我該怎麼辦？**
 
 確定 `Microsoft.R.Host.Broker` 和 `Microsoft.R.Host` 的防火牆規則允許通訊埠 5444 的傳出存取。 套用變更之後，重新啟動電腦。
 
-**問：我已嘗試過所有這些解決方案，而且仍然無法正常執行。現在怎麼辦？**
+**問：我嘗試了所有這些解決方案，它仍然不起作用。現在怎麼辦？**
 
-查看*C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*中的記錄檔。此資料夾包含每個執行中 R Broker 服務實例的個別記錄檔。 只要服務重新啟動，就會建立新的記錄檔。 請檢查最新記錄檔中是否有發生問題的線索。
+在 C 中查找日誌檔 *：[Windows]服務設定檔\網路服務\AppData\本地\Temp*。此資料夾包含運行的 R 代理服務的每個實例的單獨日誌檔。 只要服務重新啟動，就會建立新的記錄檔。 請檢查最新記錄檔中是否有發生問題的線索。

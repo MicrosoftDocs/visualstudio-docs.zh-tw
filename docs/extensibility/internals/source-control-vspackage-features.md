@@ -1,43 +1,43 @@
 ---
-title: 原始檔控制 VSPackage 功能 |Microsoft Docs
+title: 原始碼管理 VS 套件功能 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, features
 ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 513f43787040075ea0904c97b1aca9866359520a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a01b9d8fbf5f8d0645b5245d21b05aba9e7dacea
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322485"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705023"
 ---
 # <a name="source-control-vspackage-features"></a>原始檔控制 VSPackage 功能
-本章節描述各種功能的原始檔控制 VSPackage。 它概述註冊，並選取 VSPackage，詳細資料，並討論三個主要的原始檔控制相關功能： 處理查詢編輯查詢儲存 (QEQS) 事件、 字符取代和原始檔控制的自訂使用者介面 (UI)函式。
+本節介紹原始程式碼管理 VSPackage 的各種功能。 它概述了此類 VSPackage 的註冊和選擇詳細資訊,並討論了三個主要的原始程式碼管理相關功能:處理查詢-編輯查詢保存 (QEQS) 事件、字形替換以及原始碼管理功能的自定義使用者介面 (UI)。
 
 ## <a name="in-this-section"></a>本節內容
 - [註冊和選取](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)
 
- 描述封裝註冊和選取機制。
+ 描述包註冊和選擇機制。
 
 - [查詢編輯查詢儲存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)
 
- 說明查詢編輯查詢儲存事件和原始檔控制 VSPackage 如何處理它們的角色。
+ 解釋查詢編輯查詢保存事件的角色以及原始程式碼管理 VSPackage 如何處理這些事件。
 
 - [字符控制項](../../extensibility/internals/glyph-control-source-control-vspackage.md)
 
- 描述圖像 （glyph） 控制項，以及如何加以實作的層級。
+ 描述字形控件的級別以及如何實現它們。
 
 - [自訂使用者介面](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)
 
- 概述可以指定原始檔控制 VSPackage 的 UI 項目。
+ 概述原始碼管理 VSPackage 可以指定的 UI 元素。
 
 ## <a name="related-sections"></a>相關章節
 - [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- 討論如何建立原始檔控制 VSPackage，不僅提供原始檔控制功能，但可以用來自訂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]原始檔控制 UI。
+ 討論如何建立原始碼管理 VSPackage,該原始程式碼管理不僅提供原始程式碼管理功能,還可[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]用於自訂原始程式碼管理 UI。

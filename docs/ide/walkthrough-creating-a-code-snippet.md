@@ -1,6 +1,6 @@
 ---
 title: 逐步解說：建立程式碼片段
-ms.date: 06/10/2019
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -17,16 +17,16 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: adb0415e926bba9a1809c77f0f35b43d78263f43
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1bfadb4b8d1836d131b669ea43f28f522f3fbd8b
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597291"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472804"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>逐步解說：建立程式碼片段
 
-只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您可以選擇性地運用取代參數和專案參考。 使用 [程式碼片段管理員] ([工具] > [程式碼片段管理員]) 上的 [匯入] 按鈕，將程式碼片段匯入至您的 Visual Studio 安裝。
+只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您可以選擇性地運用取代參數和專案參考。 使用 [程式碼片段管理員]**** ([工具]**** > [程式碼片段管理員]****) 上的 [匯入]**** 按鈕，將程式碼片段匯入至您的 Visual Studio 安裝。
 
 ## <a name="snippet-template"></a>程式碼片段範本
 
@@ -54,7 +54,7 @@ ms.locfileid: "75597291"
 
 2. 在 **Title** 元素中填入程式碼片段標題。 請使用 **Square Root** 作為標題。
 
-3. 在 **Code** 元素的 **Languages** 屬性中，填入程式碼片段的語言。 針對 C#，請使用 **CSharp**，針對 Visual Basic 則請使用 **VB**。
+3. 在 **Code** 元素的 **Languages** 屬性中，填入程式碼片段的語言。 對於 C#,使用**CSharp**,用於視覺化基礎,使用**VB**,對於C++,請使用**CPP**。
 
    > [!TIP]
    > 若要查看所有可用的語言值，請瀏覽[程式碼片段結構描述參考](code-snippets-schema-reference.md)頁面上的[程式碼元素屬性區段](code-snippets-schema-reference.md#attributes)。
@@ -84,31 +84,31 @@ ms.locfileid: "75597291"
 
 ## <a name="import-a-code-snippet"></a>匯入程式碼片段
 
-1. 您可以使用 [程式碼片段管理員]，將程式碼片段匯入至您的 Visual Studio 安裝。 選擇 [工具] > [程式碼片段管理員] 來開啟它。
+1. 您可以使用 [程式碼片段管理員]****，將程式碼片段匯入至您的 Visual Studio 安裝。 通過選擇**工具** > **代碼代碼段管理器**打開它。
 
-2. 按一下 [匯出] 按鈕。
+2. 按一下 [匯入]**** 按鈕。
 
-3. 移至您在先前程序中儲存程式碼片段的位置，並選取它，然後按一下 [開啟]。
+3. 移至您在先前程序中儲存程式碼片段的位置，並選取它，然後按一下 [開啟]****。
 
-4. [匯入程式碼片段] 對話方塊隨即開啟，要求您從右窗格的選項中選擇要新增程式碼片段的位置。 其中一個選項應該是 [我的程式碼片段]。 選取它，然後依序按一下 [完成] 和 [確定]。
+4. [匯入程式碼片段]**** 對話方塊隨即開啟，要求您從右窗格的選項中選擇要新增程式碼片段的位置。 其中一個選項應該是 [我的程式碼片段]****。 選取它，然後依序按一下 [完成]**** 和 [確定]****。
 
 5. 視程式碼語言而定，該程式碼片段會被複製到下列其中一個位置：
 
    ::: moniker range="vs-2017"
 
-   *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual C#\My Code Snippets*
-    *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
+   *%USERPROFILE%*文件_視覺工作室 2017_代碼代碼段\可視 C\我的代碼段*
+    *%USERPROFILE%\文檔_視覺工作室 2017_代碼代碼段_視覺基本_我的代碼片段*
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual C#\My Code Snippets*
-    *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets*
+   *%USERPROFILE%*文件_視覺工作室 2019_代碼代碼段\可視 C\我的代碼段*
+    *%USERPROFILE%\文檔_Visual Studio 2019_代碼代碼段_可視基礎_我的代碼段*
 
    ::: moniker-end
 
-6. 開啟 C# 或 Visual Basic 專案來測試程式碼片段。 在編輯器中開啟程式碼檔案後，從右鍵功能表選擇 [程式碼片段] > [插入程式碼片段]，然後選擇 [我的程式碼片段]。 您應該會看見名為 **Square Root** 的程式碼片段。 對它按兩下。
+6. 開啟 C# 或 Visual Basic 專案來測試程式碼片段。 在編輯器中打開代碼檔後,從右鍵單擊功能表中選擇 > **程式碼段插入代碼段**,然後從 **「我的代碼代碼片段**」中選擇**Snippets**。 您應該會看見名為 **Square Root** 的程式碼片段。 對它按兩下。
 
    系統會將程式碼片段插入程式碼檔案中。
 
@@ -129,9 +129,9 @@ ms.locfileid: "75597291"
    > [!TIP]
    > 由於您正在 Visual Studio 放置該檔案的目錄中編輯它，您並不需要將它重新匯入至 Visual Studio。
 
-2. 將 **Author** 和 **Description** 項目新增至 **Header** 項目，並填入其資料。
+2. 將 **「作者」** 和 **「描述」** 元素新增到**標題**元素,然後填寫它們。
 
-3. **Header** 項目看起來應該類似這樣：
+3. **標頭**元素應如下所示:
 
    ```xml
    <Header>
@@ -141,7 +141,7 @@ ms.locfileid: "75597291"
    </Header>
    ```
 
-4. 開啟 [程式碼片段管理員]，然後選取程式碼片段。 在右窗格中，您應該會看到 [描述] 和 [作者] 欄位現在已被填入。
+4. 開啟**代碼段管理員**並選擇代碼段。 在右窗格中，您應該會看到 [描述]**** 和 [作者]**** 欄位現在已被填入。
 
    ![[程式碼片段管理員] 中的程式碼片段描述](media/code-snippet-description-author.png)
 
@@ -228,6 +228,6 @@ ms.locfileid: "75597291"
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)

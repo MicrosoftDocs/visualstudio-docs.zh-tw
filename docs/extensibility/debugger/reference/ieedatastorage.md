@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage | Microsoft Docs
+title: IEEData儲存 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage interface
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab42216df5c7d5f3d2d349ccf07e595ab3fc616c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad7da71d31e1093d87d68bb39958a71a117f5d5f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335640"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718183"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
-這個介面會表示為位元組陣列。
+此介面表示位元組。
 
 ## <a name="syntax"></a>語法
 
@@ -28,31 +28,31 @@ ms.locfileid: "66335640"
 IEEDataStorage : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 運算式評估工具 (EE) 會實作這個介面來表示的位元組陣列 (用來擷取和變更資料類型視覺化檢視[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)介面)。 EE 通常會實作這個介面來支援外部類型視覺化檢視。
+## <a name="notes-for-implementers"></a>實施者說明
+ 運算式賦值器 (EE) 實現此介面以表示位元組(類型可視化器用於透過[IProperty ProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)介面檢索和更改數據)。 EE 通常實現此介面以支援外部類型可視化工具。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 上的方法`IPropertyProxyEESide`所有的介面會傳回此介面。 呼叫[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)若要取得[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)介面。 呼叫[QueryInterface](/cpp/atl/queryinterface)上[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面，以取得[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)介面。
+## <a name="notes-for-callers"></a>通話備註
+ 介面上`IPropertyProxyEESide`的方法都返回此介面。 呼叫[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)以取得[IPropertyProxyEESide 介面](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)。 在[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面上調使用[查詢介面](/cpp/atl/queryinterface)以取得[IPropertyProxy 提供程式介面](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)。
 
-## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- `IEEDataStorage`介面會實作下列方法：
+## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
+ 介面`IEEDataStorage`實作以下方法:
 
 |方法|描述|
 |------------|-----------------|
-|[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|擷取指定之提供的緩衝區的資料位元組數目。|
-|[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|擷取可用的資料位元組數目。|
+|[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|將指定的數據位元組數檢索到提供的緩衝區。|
+|[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|檢索可用數據位元組數。|
 
 ## <a name="remarks"></a>備註
- 此介面的類型視覺化檢視來存取特定物件所持有的資料。 資料會被視為位元組陣列，讓類型視覺化檢視，來操作方式都需要呈現給使用者。
+ 此介面由類型可視化器用於存取特定物件持有的數據。 數據被視為位元組,允許類型可視化器以向使用者呈現數據所需的任何方式操作數據。
 
- 自訂檢視器也可以使用這個介面，如有需要，通常是自訂檢視器會使用一種自訂介面，雖然[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)或是[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) （適用於字串導向的資料）。
+ 如果需要,自定義查看器也可以使用此介面,儘管更通常自定義查看器將使用自定義介面[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)或[GetStringChars(](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)對於面向字串的數據)。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

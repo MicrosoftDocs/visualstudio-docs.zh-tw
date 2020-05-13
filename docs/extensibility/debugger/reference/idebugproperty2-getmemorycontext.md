@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetMemoryContext | Microsoft Docs
+title: IDebug屬性2:獲取記憶體上下文 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetMemoryContext
 ms.assetid: 91793d25-790f-4881-a5c0-d0458e534514
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 84ea336050582e2f23aafbbf74599f92c82d20fc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8fa610af3ae00d30462c1a3a0c825e5a85722cdc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343064"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721468"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
-取得屬性值的記憶體內容。
+獲取屬性值的記憶體上下文。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>參數
 `ppMemory`\
-[out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，表示此屬性相關聯的記憶體。
+[出]返回表示與此屬性關聯的記憶體的[IDebugMemoryMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT`如果沒有要擷取記憶體內容。
+ 如果成功,返回`S_OK`;否則返回錯誤代碼。 如果沒有`S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT`要檢索的記憶體上下文,則返回。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

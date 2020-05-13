@@ -1,31 +1,31 @@
 ---
-title: AsyncVoidMethodBuilder 結構-內部成員 |Microsoft Docs
+title: 非同步虛無方法構建器結構 - 內部成員 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, AsyncVoidMethodBuilder structure [.NET Framework]
 - AsyncVoidMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: fe2970ab-d4c5-4355-a8e4-772ee0a57178
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 109f7d0491420ce4f3df2179dad15a582213d439
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 866a53fae7bb2cc5325112b84d992da6f95af246
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350932"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739294"
 ---
-# <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder 結構-內部成員
-本主題描述的內部成員<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>類別。 如需此類別的一般資訊，請參閱<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>參考主題。
+# <a name="asyncvoidmethodbuilder-structure---internal-members"></a>非同步VoidMethodBuilder結構 - 內部成員
+本主題介紹<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>類的內部成員。 有關此類的一般資訊,<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>請參閱參考主題。
 
- **命名空間︰** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **命名空間:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **組件：** mscorlib （在 mscorlib.dll 中)
+ **程式集**:mscorlib(在 mscorlib.dll 中)
 
- 因為您無法從.NET Framework 來存取這些內部成員，下列語法提供通用中繼語言 (CIL)。
+ 由於您無法從 .NET 框架訪問這些內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
 
 ## <a name="syntax"></a>語法
 
@@ -39,9 +39,9 @@ ms.locfileid: "66350932"
 
 |名稱|描述|
 |----------|-----------------|
-|[ObjectIdForDebugger 屬性](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|取得物件，可用來唯一識別這個產生器偵錯工具。|
-|[m_objectIdForDebugger 欄位](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|表示偵錯工具用來唯一識別這個產生器的延遲初始化的物件。|
+|[物件 IdforDebugger 屬性](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|獲取可用於唯一標識調試器此生成器的物件。|
+|[m_objectIdForDebugger欄位](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|表示調試器用於唯一標識此生成器的懶惰初始化物件。|
 
 ## <a name="see-also"></a>另請參閱
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [適用於.NET Framework 的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET 框架的並行擴展內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

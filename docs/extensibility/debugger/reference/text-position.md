@@ -1,5 +1,5 @@
 ---
-title: TEXT_POSITION | Microsoft Docs
+title: TEXT_POSITION |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_POSITION structure
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7f53cb7a0dacc58a0d4a8109ea6dd3ca3ab710e1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336302"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713416"
 ---
-# <a name="textposition"></a>TEXT_POSITION
-描述在指定的文字行和資料行位置。
+# <a name="text_position"></a>TEXT_POSITION
+描述給定文本中的行和列位置。
 
 ## <a name="syntax"></a>語法
 
@@ -44,16 +44,16 @@ public struct TEXT_POSITION { 
 ## <a name="members"></a>成員
 
 `dwLine`\
-原始程式檔中一行的索引。
+源檔中行的索引。
 
 `dwColumn`\
-符合的字元位移。
+字元偏移成行。
 
 ## <a name="remarks"></a>備註
 
-此結構會在[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)並[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構。
+此結構用於[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)和[拆解數據](../../../extensibility/debugger/reference/disassemblydata.md)結構。
 
-會填入這個結構，藉由呼叫下列方法：
+此結構透過呼叫以下方法填充:
 
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
@@ -63,9 +63,9 @@ public struct TEXT_POSITION { 
 
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
 
-此結構會做為參數傳遞，下列方法：
+此結構作為參數傳遞給以下方法:
 
-- [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
+- [取得文字](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 
 - [onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)
 
@@ -77,20 +77,20 @@ public struct TEXT_POSITION { 
 
 ## <a name="requirements"></a>需求
 
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 - [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
 - [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
-- [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
+- [取得文字](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

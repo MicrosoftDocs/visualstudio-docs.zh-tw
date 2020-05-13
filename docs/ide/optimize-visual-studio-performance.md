@@ -13,10 +13,10 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596992"
 ---
 # <a name="optimize-visual-studio-performance"></a>最佳化 Visual Studio 效能
@@ -29,7 +29,7 @@ ms.locfileid: "75596992"
 
 ::: moniker range="vs-2017"
 
-如果您已在使用 Visual Studio 2017，請確認執行的是 15.6 版或更新版本。 資料顯示 15.6 版中的解決方案載入速度快兩或三倍。 在[這裡](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)下載。
+如果您已在使用 Visual Studio 2017，請確認執行的是 15.6 版或更新版本。 資料顯示 15.6 版中的解決方案載入速度快兩或三倍。 在 [這裡](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)下載。
 
 ::: moniker-end
 
@@ -49,9 +49,9 @@ ms.locfileid: "75596992"
 
 ## <a name="help-us-improve"></a>協助我們改善
 
-您的意見反應可協助我們改善。 使用 [回報問題] 功能，「記錄」追蹤，並將它傳送給我們。 選取 [快速啟動] 旁的意見反應圖示，或從功能表列中選取 [說明] > [傳送意見反應] > [回報問題]。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](../ide/how-to-report-a-problem-with-visual-studio.md)。
+您的意見反應可協助我們改善。 使用 [回報問題]**** 功能，「記錄」追蹤，並將它傳送給我們。 選取 [快速啟動]**** 旁的意見反應圖示，或從功能表列中選取 [說明]**** > [傳送意見反應]**** > [回報問題]****。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](../ide/how-to-report-a-problem-with-visual-studio.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [效能秘訣與訣竅](../ide/visual-studio-performance-tips-and-tricks.md)
+- [性能提示和技巧](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Visual Studio 部落格 - 使用 Visual Studio 2017 15.6 版更快速地載入解決方案](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

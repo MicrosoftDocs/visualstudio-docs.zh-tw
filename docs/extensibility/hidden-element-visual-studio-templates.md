@@ -1,5 +1,5 @@
 ---
-title: 隱藏項目 （Visual Studio 範本） |Microsoft Docs
+title: 隱藏元素(可視化工作室範本) |微軟文件
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,21 +8,21 @@ f1_keywords:
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c00fa2c9aff8664c637219c59cb174f5a16e655
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341048"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711116"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>隱藏的項目 （Visual Studio 範本）
+# <a name="hidden-element-visual-studio-templates"></a>隱藏元素(視覺化工作室範本)
 
-指定是否該範本會出現在新的專案或**加入新項目**對話方塊。
+指定樣本是顯示在新項目還是 **「添加新項目」** 對話方塊中。
 
 ```xml
 <VSTemplate>
@@ -53,23 +53,23 @@ ms.locfileid: "66341048"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
 
 需要文字值。
 
-文字必須是`true`或`false`，這表示範本是否會出現在**新增專案**或是**加入新項目**對話方塊。
+文字必須為`true``false`或 ,指示範本是否將顯示在 **「新專案**」或 **「新增新專案」** 對話框中。
 
 ## <a name="remarks"></a>備註
 
-`Hidden` 是選擇性項目。
+ 是選擇性元素。
 
-如果不指定的任何其他子項目`TemplateData`所需的項目。
+如果指定,則不需要`TemplateData`元素的其他子元素。
 
 ## <a name="example"></a>範例
 
-下列範例說明的中繼資料C#範本。
+下面的範例說明了 C# 範本的中繼資料。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -98,5 +98,5 @@ ms.locfileid: "66341048"
 
 ## <a name="see-also"></a>另請參閱
 
-- [範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
+- [樣本架構參照](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)

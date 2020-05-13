@@ -1,41 +1,41 @@
 ---
-title: 實作 GetMethodProperty |Microsoft Docs
+title: 實現 GetMethod 屬性 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - GetMethodProperty method
 - IDebugExpressionEvaluator2 property
 ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f802733f74677a0426a99fb662302d816ad34721
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 252d09eee9c69ca75cb46d28dde807f2c500737f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344286"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738522"
 ---
-# <a name="implement-getmethodproperty"></a>實作 GetMethodProperty
+# <a name="implement-getmethodproperty"></a>實現 GetMethod 屬性
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
-Visual Studio 會呼叫偵錯引擎 (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)，接著呼叫[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)取得堆疊框架上目前方法的相關資訊。
+Visual Studio 呼叫除錯引擎 (DE) [GetDebugProperty,](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)這反過來又調用[GetMethod Property](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)來取得有關堆疊幀上當前方法的資訊。
 
-這個實作`IDebugExpressionEvaluator::GetMethodProperty`會執行下列工作：
+此執行`IDebugExpressionEvaluator::GetMethodProperty`以下工作:
 
-1. 呼叫[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)，並傳入[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)物件。 符號提供者 (SP) 會傳回[IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)代表包含指定的位址的方法。
+1. 調用[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md),傳入[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)物件。 符號提供者 (SP) 傳回[IDebugContainerField,](../../extensibility/debugger/reference/idebugcontainerfield.md)表示包含指定位址的方法。
 
-2. 取得[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)從`IDebugContainerField`。
+2. 從獲取[IDebugMethodField。](../../extensibility/debugger/reference/idebugmethodfield.md) `IDebugContainerField`
 
-3. 具現化類別 (稱為`CFieldProperty`在此範例中) 可實[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)介面，並包含`IDebugMethodField`TECHED-SERVICES 從傳回的物件
+3. 實例化實現[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)介面並包含從`IDebugMethodField`SP 返回的物件的類(在此示例`CFieldProperty`中稱為)。
 
-4. 傳回`IDebugProperty2`介面從`CFieldProperty`物件。
+4. 從`IDebugProperty2``CFieldProperty`物件返回介面。
 
 ## <a name="managed-code"></a>Managed 程式碼
-此範例示範如何實作`IDebugExpressionEvaluator::GetMethodProperty`managed 程式碼中。
+此示例顯示了託管代碼中的`IDebugExpressionEvaluator::GetMethodProperty`實現。
 
 ```csharp
 namespace EEMC
@@ -66,8 +66,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>Unmanaged 程式碼
-此範例示範如何實作`IDebugExpressionEvaluator::GetMethodProperty`unmanaged 程式碼中。
+## <a name="unmanaged-code"></a>非託管代碼
+此示例顯示了非託管代碼中的`IDebugExpressionEvaluator::GetMethodProperty`實現。
 
 ```
 [CPP]
@@ -125,4 +125,4 @@ STDMETHODIMP CExpressionEvaluator::GetMethodProperty(
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [區域變數的範例實作](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [部份變數的樣本實作](../../extensibility/debugger/sample-implementation-of-locals.md)

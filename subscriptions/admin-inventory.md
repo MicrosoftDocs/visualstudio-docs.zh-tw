@@ -3,15 +3,16 @@ title: 清查生產前環境 | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/17/2020
+ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
+ms.date: 03/06/2020
 ms.topic: conceptual
 description: 了解系統管理員要進行生產前清查的責任
-ms.openlocfilehash: 6d7dd3b49c11e94ffa09bc07bd745582f348763d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: dc307d9d2f83666c6648a35b3e28a81da2de5c38
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476733"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232763"
 ---
 # <a name="inventory-of-pre-production-environment"></a>清查生產前環境
 Visual Studio 訂用帳戶透過計算使用者　(而不是裝置) 來簡化資產管理。
@@ -25,20 +26,22 @@ Visual Studio 系統管理員必須將 Visual Studio 訂用帳戶指派給**特�
 - 取得手動重新調解的協助。 登錄您的員工，協助協調開發和測試使用者與開發和測試環境。
 
 ## <a name="resources"></a>資源
-- [Visual Studio 授權技術白皮書](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+- [視覺工作室許可白皮書](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [大量授權條款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
+
+## <a name="see-also"></a>另請參閱
+- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 深入了解系統管理員的責任：
 - [系統管理員責任](admin-responsibilities.md)
 - [管理大型小組及外部承攬人](manage-teams.md)
-- [追蹤使用者指派及處理訂單](assignments-orders.md)
+- [追蹤使用者指派和處理訂單](assignments-orders.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量
 
-## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
-- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
+
 

@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace 項目 （Visual Studio 範本）
+title: 建立位置元素(視覺化工作室範本)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - CreateInPlace element [Visual Studio Templates]
 - <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da14da9606c2fcd84f053aff30139eec5751c673
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341784"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739656"
 ---
-# <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace 項目 （Visual Studio 範本）
-指定是否要建立專案和執行參數取代在指定的位置，或執行參數取代的暫存位置中，然後將專案儲存至指定的位置。
+# <a name="createinplace-element-visual-studio-templates"></a>建立 InPlace 元素(視覺化工作室樣本)
+指定是在指定位置建立專案並執行參數替換,還是在臨時位置執行參數替換,然後將專案保存到指定位置。
 
- \<VSTemplate> \<TemplateData> \<CreateInPlace>
+ \<vstemplate>\<範本資料>\<創建原>
 
 ## <a name="syntax"></a>語法
 
@@ -45,15 +45,15 @@ ms.locfileid: "66341784"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 此文字必須是 `true` 或 `false`。 如果`true`，專案會建立，而且在指定的位置上執行參數取代**新的專案** 對話方塊。 如果`false`執行參數取代的暫存位置中，專案再複製到指定的位置。
+ 此文字必須是 `true` 或 `false`。 如果`true`創建專案並在 **「新專案」** 對話方塊中指定的位置執行參數替換。 如果在`false`暫時位置執行 參數替換,然後將專案複製到指定位置。
 
 ## <a name="remarks"></a>備註
- `CreateInPlace` 是選擇性項目。 預設值為 `true`。
+  是選擇性元素。 預設值是 `true`。
 
 ## <a name="example"></a>範例
  下列範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本的中繼資料。
@@ -85,4 +85,4 @@ ms.locfileid: "66341784"
 
 ## <a name="see-also"></a>另請參閱
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)

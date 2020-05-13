@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::LoadSymbols |Microsoft Docs
+title: IDebugModule3::載入符號 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3::LoadSymbols
 ms.assetid: 7548c8c1-cbc6-48aa-a845-19058d4a85bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1b23e7b1ae837087db198795ffeda6a5827f045
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4c61339305200acc9a6c572a1a96595dc4cb6f50
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323848"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726783"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
-載入目前模組的符號。
+載入目前的模組的符號。
 
 ## <a name="syntax"></a>語法
 
@@ -38,12 +38,12 @@ int LoadSymbols();
 ```
 
 ## <a name="return-value"></a>傳回值
- 如果方法成功，它會傳回`S_OK`。 如果失敗，它會傳回錯誤碼。
+ 如果方法成功，它會傳回 `S_OK`。 如果方法失敗，則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 這個方法會從目前的搜尋路徑載入符號 (這可以藉由呼叫改變[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)方法)。
+ 此方法從當前搜索路徑載入符號(可以通過調用[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)方法來更改)。
 
- 這個方法是透過[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)方法。
+ 此方法優先於[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

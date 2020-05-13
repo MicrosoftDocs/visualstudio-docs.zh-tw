@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75776148"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
@@ -32,11 +32,11 @@ ms.locfileid: "75776148"
 
 - 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別存取資料來源。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>必要條件
 
 若要完成這個逐步解說，您需要：
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 - Microsoft Access 或 Microsoft Excel，以便提供至少其中一種測試方法的資料。
 
@@ -46,11 +46,11 @@ ms.locfileid: "75776148"
 
 1. 如果您的測試專案中已經有 *app.config* 檔案，請移至[定義自訂組態區段](#define-a-custom-configuration-section)。
 
-2. 在 [方案總管]中，以滑鼠右鍵按一下您的測試專案，然後選取 [新增] > [新增項目]。
+2. 在 [方案總管] **** 中，以滑鼠右鍵按一下您的測試專案，然後選取 [新增]**** > [新增項目]****。
 
-     [新增項目] 視窗隨即開啟。
+     [新增項目]**** 視窗隨即開啟。
 
-3. 選取 [應用程式組態檔] 範本，然後按一下 [新增]。
+3. 選取 [應用程式組態檔]**** 範本，然後按一下 [新增]****。
 
 ## <a name="define-a-custom-configuration-section"></a>定義自訂組態區段
 
@@ -159,7 +159,7 @@ ms.locfileid: "75776148"
 </microsoft.visualstudio.testtools>
 ```
 
-最終的 *app.config* 檔案看起來應該像這樣：
+最終*的應用程式.config*檔應如下所示：
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -267,7 +267,7 @@ ms.locfileid: "75776148"
 > [!IMPORTANT]
 > 部署項目 (例如資料來源)，使其能供部署目錄中的測試存取。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [對程式碼進行單元測試](../test/unit-test-your-code.md)
+- [單元測試代碼](../test/unit-test-your-code.md)
 - [如何：建立資料驅動型單元測試](../test/how-to-create-a-data-driven-unit-test.md)

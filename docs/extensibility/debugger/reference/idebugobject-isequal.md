@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsEqual | Microsoft Docs
+title: IDebugObject::是平等的 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::IsEqual method
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf592fa83a18c47bf676b84073c0be0e4cb476e8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13018e31fb5f8bed89a0a290d687360a605a855d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323577"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726511"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
-比較物件與這個物件。
+將物件與此對象進行比較。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int IsEqual(
 
 ## <a name="parameters"></a>參數
 `pObject`\
-[in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示要比較的物件。
+[在]表示要與之比較的物件的[IDebugObject 物件](../../../extensibility/debugger/reference/idebugobject.md)。
 
 `pfIsEqual`\
-[out]會傳回非零 (`TRUE`) 如果物件的值相等，否則會傳回零 (`FALSE`)。
+[出]如果物件的值相等,`TRUE`則傳回非零 ( ),否則,返回零`FALSE`()。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。
+ 如果成功,返回S_OK;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 一般而言，這個方法可以比較所表示之值的地址`pObject`參數，而這[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件; 如果位址相等，則物件可視為相等。
+ 通常,此方法可以比較`pObject`參數和此[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件表示的值的位址;如果位址相等,則物件可以視為相等。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -1,7 +1,7 @@
 - name: Visual Studio Tools for AI
   items:
     - name: Visual Studio Tools for AI
-      href: index.yml
+      href: overview.md
     - name: 總覽
       href: about-ai-tools.md
     - name: 安裝

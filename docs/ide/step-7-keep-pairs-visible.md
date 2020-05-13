@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eeca594849625b548857a23b9d5c8e278dcdf07c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579288"
 ---
 # <a name="step-7-keep-pairs-visible"></a>步驟 7：讓配對保持可見
@@ -33,9 +33,9 @@ ms.locfileid: "77579288"
        > [!IMPORTANT]
        > Use the programming language control at the top right of this page to view either the C# code snippet or the Visual Basic code snippet.<br><br>![Programming language control for Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
-     您剛才加入的 `if` 陳述式的第一行會檢查玩家所選擇的第一個標籤中的圖示是否與第二個標籤中的圖示相同。 如果圖示相同，程式即執行在 C# 中大括號之間或 Visual Basic 中 `if` 陳述式內的三個陳述式。 前兩個陳述式會重設 `firstClicked` 和 `secondClicked` 參考變數，如此他們便不會再追蹤任何的標籤 （您可以從計時器的 <xref:System.Windows.Forms.Timer.Tick> 事件處理常式辨識這兩個語句）。第三個語句是 `return` 語句，它會指示程式略過方法中的其餘語句，而不執行它們。
+     您剛才加入的 `if` 陳述式的第一行會檢查玩家所選擇的第一個標籤中的圖示是否與第二個標籤中的圖示相同。 如果圖示相同，程式即執行在 C# 中大括號之間或 Visual Basic 中 `if` 陳述式內的三個陳述式。 前兩個陳述式會重設 `firstClicked` 和 `secondClicked` 參考變數，如此他們便不會再追蹤任何的標籤  （可以從計時器<xref:System.Windows.Forms.Timer.Tick>的事件處理常式中識別這兩個語句。第三個語句是`return`一個語句，它告訴程式跳過方法中其餘語句而不執行它們。
 
-     如果在中C#進行程式設計，您可能已經注意到有些程式碼使用單一等號（`=`），而其他語句則使用兩個等號（`==`）。 請考慮為何某些地方使用 `=`，而其他地方使用 `==`。
+     如果在 C# 中程式設計，您可能已經注意到某些代碼使用單個等號 （），`=`而其他語句使用兩個等號 （）。`==` 請考慮為何某些地方使用 `=`，而其他地方使用 `==`。
 
      這是一個顯示差異的好範例。 請仔細觀察 `if` 陳述式中括號之間的程式碼。
 
@@ -57,15 +57,15 @@ ms.locfileid: "77579288"
     firstClicked = null;
     ```
 
-     這兩個陳述式中的第一個會檢查兩個圖示是否相同。 因為會比較兩個值，所以C#程式會使用 `==` 等號比較運算子。 第二個陳述式會實際變更值 (稱為「指派」)，方法是將 `firstClicked` 參考變數設為等於 `null` 以進行重設。 這就是它為何改用 `=` 指派運算子的緣故。 C#會使用 `=` 來設定值，並 `==` 來比較它們。 Visual Basic 則是使用 `=` 來進行變數指派和比較。
+     這兩個陳述式中的第一個會檢查兩個圖示是否相同。 由於正在比較兩個值，因此 C# 程式`==`使用相等運算子。 第二個陳述式會實際變更值 (稱為「指派」**)，方法是將 `firstClicked` 參考變數設為等於 `null` 以進行重設。 這就是它為何改用 `=` 指派運算子的緣故。 C#`=`用於設置值並`==`比較它們。 Visual Basic 則是使用 `=` 來進行變數指派和比較。
 
-2. 儲存並執行程式，然後開始在表單中選擇圖示。 如果您選擇不相符的配對，計時器的 Tick 事件觸發器和這兩個圖示都會消失。 如果您選擇相符的配對，則會執行新的 `if` 語句，而 return 語句會導致方法略過啟動計時器的程式碼，如此圖示就會保持可見，如下圖所示。
+2. 儲存並執行程式，然後開始在表單中選擇圖示。 如果您選擇不相符的配對，計時器的 Tick 事件觸發器和這兩個圖示都會消失。 如果選擇匹配對，則執行新`if`語句，並且 return 語句會導致該方法跳過啟動計時器的代碼，因此圖示保持可見，如下圖所示。
 
      ![您在本教學課程中建立的遊戲](../ide/media/express_finishedgame.png)<br/>
-*具有可見圖示配對的****配對遊戲***
+***匹配****帶有可見圖示對*的遊戲
 
-## <a name="to-continue-or-review"></a>繼續或檢視
+## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移至下一個教學課程步驟，請參閱 **[步驟8：新增方法以驗證玩家是否贏了](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)** 。
+- 要轉到下一個教程步驟，請參閱**[步驟 8：添加一種方法來驗證玩家是否獲勝](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)**。
 
 - 若要返回上一個教學課程步驟，請參閱[步驟 6：新增計時器](../ide/step-6-add-a-timer.md)。

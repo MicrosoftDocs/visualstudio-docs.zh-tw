@@ -1,5 +1,5 @@
 ---
-title: TEXT_DOC_ATTR_2 | Microsoft Docs
+title: TEXT_DOC_ATTR_2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_DOC_ATTR_2 enumeration
 ms.assetid: 2333b33b-042b-4ac6-9ebe-e66f95f52f51
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24c5bc4a25bae6da1831f242501fdf0d6b66ca26
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: afbb7d7f4525050e73dafaed906dbc504cc8b52e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322305"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713449"
 ---
-# <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
+# <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 描述文件的屬性。
 
 ## <a name="syntax"></a>語法
@@ -38,21 +38,21 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 
 ## <a name="members"></a>成員
  `TEXT_DOC_ATTR_READONLY_2`\
- 表示文件是唯讀的。
+ 指示文檔是唯讀的。
 
 ## <a name="remarks"></a>備註
 
 > [!NOTE]
-> 此值未實際定義適用於 C# 組件中。 相反地，您必須將定義複製到原始程式檔中。
+> 此值實際上未在 C# 的程式集中定義。 相反,必須將定義複製到源檔。
 
- 作為引數[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)方法。
+ 作為參數傳遞給[上更新文檔屬性](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)方法。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

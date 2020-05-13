@@ -11,25 +11,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04f7a66884238856ba6988b9f1e8c648f4ff1d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72666648"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>選項、文字編輯器、U-SQL、IntelliSense
 
-使用 [IntelliSense] 選項頁面修改 U-SQL 的一些文字編輯器設定。 若要存取此選項頁面，選擇 [工具] > [選項]，然後選擇 [文字編輯器] > [U-SQL] > [IntelliSense]。
+使用 [IntelliSense]**** 選項頁面修改 U-SQL 的一些文字編輯器設定。 要訪問此選項頁，請選擇 **"工具** > **選項**"，然後選擇**文字編輯器** > **U-SQL** > **IntelliSense**。
 
 ## <a name="intellisense-settings"></a>IntelliSense 設定
 
-選取核取方塊，以啟用 [快速諮詢] 或 [Intellisense]。 當您將滑鼠指標暫留在變數上時，就會顯示快速諮詢。
+選取核取方塊，以啟用 [快速諮詢]**** 或 [Intellisense]****。 當您將滑鼠指標暫留在變數上時，就會顯示快速諮詢。
 
 ## <a name="completion-lists"></a>完成清單
 
-- **輸入一個字元後顯示完成清單**
+- **鍵入字元後顯示完成清單**
 
-   選取這個選項時，IntelliSense 會在您開始輸入時自動顯示完成清單。 如果您沒有選取此選項，仍然可以從 [IntelliSense] 功能表或按 **Ctrl** + **空格鍵**來使用 IntelliSense 完成。
+   選取這個選項時，IntelliSense 會在您開始輸入時自動顯示完成清單。 如果不選擇此選項，IntelliSense 完成仍可從 IntelliSense 功能表或按**Ctrl** + **空格鍵**獲得。
 
 - **將關鍵字置於完成清單中**
 
@@ -53,7 +53,7 @@ ms.locfileid: "72666648"
 
    選取時，當您輸入完成清單建議的所有字元之後，系統會自動新增一行，且游標會移動到新的行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
-- [使用 IntelliSense](../../ide/using-intellisense.md)
+- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [Using IntelliSense](../../ide/using-intellisense.md)

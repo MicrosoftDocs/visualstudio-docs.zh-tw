@@ -7,10 +7,10 @@ ms.author: dominicn
 ms.date: 08/29/2019
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
 ms.openlocfilehash: b4f1cfc3dfdffcc3dd4cb90cd7d29d4333578b9a
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71128412"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中編譯和建置
@@ -19,7 +19,7 @@ Visual Studio for Mac 可用來在專案開發期間建置應用程式和建立�
 
 成功的建置表示原始程式碼包含正確的語法，而且對程式庫、組件與其他元件的所有靜態參考都能成功解析。 建置程序會產生應用程式可執行檔。 這個可執行檔接著可透過偵錯與其他類型的手動與自動測試來驗證程式碼品質。 完整測試您的應用程式之後，您便能編譯發行版本以部署到您的客戶。
 
-在 Mac 上，您可以使用下列任一方法來建置您的應用程式：Visual Studio for Mac、MSBuild 命令列工具或 Azure Pipelines。
+在 Mac 上，可以使用以下任何方法構建應用程式：適用于 Mac 的視覺化工作室、MSBuild 命令列工具或 Azure 管道。
 
 | 建置方法 | 優點 |
 | --- |--- | --- |

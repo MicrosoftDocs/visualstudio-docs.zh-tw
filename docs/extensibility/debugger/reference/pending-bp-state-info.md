@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE_INFO | Microsoft Docs
+title: PENDING_BP_STATE_INFO |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE_INFO structure
 ms.assetid: 4d73ceff-43f9-4e95-8dba-88e1fab2def3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 306f3f6ac5f12d2a26da958d50fae87c6e174355
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d66ecc63e133a75148f06b59b8f1ccf61fe2658d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349883"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714083"
 ---
-# <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
-包含已準備好繫結至程式碼位置的中斷點的狀態資訊。
+# <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
+包含有關準備綁定到代碼位置的斷點狀態的資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -43,23 +43,23 @@ public struct PENDING_BP_STATE_INFO { 
 
 ## <a name="members"></a>成員
  `state`\
- 值，以從[PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)列舉，指定暫止中斷點的狀態。
+ PENDING_BP_STATE[Entle 的號選擇](../../../extensibility/debugger/reference/pending-bp-state.md)掛起斷點狀態的值。
 
  `flags`\
- 從旗標的組合[PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)列舉，指定是否要虛擬化的中斷點。
+ [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)枚舉中的標誌的組合,用於指定斷點是否虛擬化。
 
 ## <a name="remarks"></a>備註
- 此結構會傳遞至[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)填滿其中的方法。
+ 此結構傳遞給填寫該結構的[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)方法。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
-- [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [取得狀態](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)
 - [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)
 - [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)

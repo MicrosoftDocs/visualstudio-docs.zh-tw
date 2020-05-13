@@ -1,25 +1,25 @@
 ---
-title: 功能表項目 |Microsoft Docs
+title: 選單元素 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
 ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef5124bc59a4eb0671ba5493f79ea301aa48fc71
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6382abed36aba66087066bf5664ae55682e39e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346633"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702582"
 ---
-# <a name="menus-element"></a>功能表項目
-定義所有功能表和工具列 VSPackage 實作。
+# <a name="menus-element"></a>選單元素
+定義 VSPackage 實現的所有功能表和工具列。
 
 ## <a name="syntax"></a>語法
 
@@ -37,20 +37,20 @@ ms.locfileid: "66346633"
 
 |屬性|描述|
 |---------------|-----------------|
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[功能表項目](../extensibility/menus-element.md)|定義所有功能表和工具列 VSPackage 實作。|
-|[功能表項目](../extensibility/menu-element.md)|表示單一的功能表或工具列。|
+|[選單元素](../extensibility/menus-element.md)|定義 VSPackage 實現的所有功能表和工具列。|
+|[選單元素](../extensibility/menu-element.md)|表示單個功能表或工具列。|
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|描述|
 |-------------|-----------------|
-|[Commands 元素](../extensibility/commands-element.md)|表示在 VSPackage 中命令的集合。|
+|[指令元素](../extensibility/commands-element.md)|表示 VSPackage 中命令的集合。|
 
 ## <a name="example"></a>範例
 
@@ -78,5 +78,5 @@ ms.locfileid: "66346633"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+- [VS 套件如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [命令、選單和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

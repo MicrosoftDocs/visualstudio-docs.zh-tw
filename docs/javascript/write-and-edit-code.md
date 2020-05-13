@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62840753"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
@@ -30,9 +30,9 @@ ms.locfileid: "62840753"
 
 您可以使用 IDE 將新檔案新增至您的專案。
 
-1. 當您的專案在 Visual Studio 中開啟時，以滑鼠右鍵按一下 [方案總管] (右窗格) 中的資料夾或專案節點，然後選擇 [新增] > [新增項目]。
+1. 在 Visual Studio 中打開專案後，按右鍵解決方案資源管理器（右窗格）中的資料夾或專案節點，然後**Add** > 選擇"**添加新專案**"。
 
-1. 在 [新增檔案] 對話方塊的 [一般] 類別下，選擇您要新增的檔案類型 (例如 [JavaScript 檔案])，然後選擇 [開啟]。
+1. 在 [新增檔案]**** 對話方塊的 [一般]**** 類別下，選擇您要新增的檔案類型 (例如 [JavaScript 檔案]****)，然後選擇 [開啟]****。
 
     這會將新檔案新增至您的專案，並在編輯器中開啟該檔案。
 
@@ -52,7 +52,7 @@ IntelliSense 是您撰寫程式碼時的重要資源。 它可以顯示類型可
 
 ## <a name="check-syntax"></a>檢查語法
 
-語言服務使用 ESLint 提供語法檢查和 Lint 檢查。 如果您需要設定編輯器中的語法檢查選項，請選取 [工具] > [選項] > [JavaScript/TypeScript] > [Linting]。 [Linting] 選項會將您導向至全域 ESLint 組態檔。
+語言服務使用 ESLint 提供語法檢查和 Lint 檢查。 如果需要在編輯器中設置語法檢查選項，請選擇**工具** > **選項** > **JavaScript/TypeScript** > **林亭**。 [Linting] 選項會將您導向至全域 ESLint 組態檔。
 
 在下列程式碼中，您會看到運算式上的綠色語法醒目提示 (綠色波浪線)。 將滑鼠停留在語法醒目提示上方。
 
@@ -60,7 +60,7 @@ IntelliSense 是您撰寫程式碼時的重要資源。 它可以顯示類型可
 
 此訊息的最後一行告訴您：語言服務必須要有逗號 (`,`)。 綠色波浪線表示警告。 紅色波浪線表示錯誤。
 
-在下方窗格中，您可以按一下 [錯誤清單] 索引標籤來查看警告和描述，以及檔案名稱和行號。
+在下方窗格中，您可以按一下 [錯誤清單]**** 索引標籤來查看警告和描述，以及檔案名稱和行號。
 
 ![檢視錯誤清單](../javascript/media/write-code-error-list.png)
 
@@ -70,23 +70,23 @@ IntelliSense 是您撰寫程式碼時的重要資源。 它可以顯示類型可
 
 工具列是 Visual Studio 功能表列下的按鈕列，有助您提高撰寫程式碼的效率。 例如，您可以切換 IntelliSense 完成模式 ([IntelliSense](../ide/using-intellisense.md) 是程式碼撰寫的輔助工具，可顯示其他項目中符合的方法清單)，增加或減少行的縮排，也可以為不要編譯的程式碼加上註解。 在本節中，我們會為一些程式碼加上註解。
 
-在編輯器中選取一或多行程式碼，然後選擇工具列上的 [註解選取行] 按鈕 ![加上註解按鈕](../javascript/media/write-code-comment-out.png)。 如果您習慣使用鍵盤，請按 **Ctrl**+**K**、**Ctrl**+**C**。
+在編輯器中選取一或多行程式碼，然後選擇工具列上的 [註解選取行]**** 按鈕 ![加上註解按鈕](../javascript/media/write-code-comment-out.png)。 如果您喜歡使用鍵盤，請按**Ctrl**+**K**， **Ctrl**+**C**。
 
 JavaScript 註解字元 `//` 會新增至每個選取行的開頭，為程式碼加上註解。
 
 ## <a name="collapse-code-blocks"></a>摺疊程式碼區塊
 
-如果您需要整理某些區域的程式碼檢視，您可以將它摺疊。 選擇函式第一行邊緣中其內有減號的小型灰色方塊。 或者，如果您是鍵盤使用者，請將游標放在建構函式程式碼中的任何位置，然後按 **Ctrl**+**M**、**Ctrl**+**M**。
+如果您需要整理某些區域的程式碼檢視，您可以將它摺疊。 選擇函式第一行邊緣中其內有減號的小型灰色方塊。 或者，如果您是鍵盤使用者，請將游標放在建構函式代碼的任意位置，然後按**Ctrl**+**M** **、Ctrl**+**M**。
 
 ![大綱摺疊按鈕](../javascript/media/write-code-collapse-code.png)
 
-程式碼區塊只會摺疊到第一行，並且後面接著省略符號 (`...`)。 若要再次展開程式碼區塊，請按一下現在其內有加號的相同灰色方塊，或再次按 **Ctrl**+**M**、**Ctrl**+**M**。 這項功能稱為[大綱](../ide/outlining.md)，而且特別適用於摺疊較長的函式或整個類別。
+程式碼區塊只會摺疊到第一行，並且後面接著省略符號 (`...`)。 要再次展開代碼塊，請按一下現在具有加號的同一灰色框，或再次按**Ctrl**+**M、Ctrl** ** ** + **M。** 這項功能稱為[大綱](../ide/outlining.md)，而且特別適用於摺疊較長的函式或整個類別。
 
 ## <a name="view-definitions"></a>檢視定義
 
-Visual Studio 編輯器讓檢查類型、函式等定義變得十分輕鬆。其中一種方式是巡覽至包含定義的檔案，例如在參考程式設計項目的任何位置選擇 [移至定義]。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看下列範例中 `render` 方法的定義。
+Visual Studio 編輯器便於檢查類型、函數等的定義。一種方法是導航到包含定義的檔，例如，在引用程式設計元素的任意位置選擇 **"轉到定義**"。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看下列範例中 `render` 方法的定義。
 
-以滑鼠右鍵按一下 `render`，然後從操作功能表選擇 [查看定義]。 或者，您也可以按 **Alt**+**F12**。
+以滑鼠右鍵按一下 `render`，然後從操作功能表選擇 [查看定義]****。 或者，按**Alt**+**F12**。
 
    快顯視窗隨即出現，並內含 `render` 方法的定義。 您可以在快顯視窗內捲動，或甚至查看已查看程式碼中另一種類型的定義。
 
@@ -96,13 +96,13 @@ Visual Studio 編輯器讓檢查類型、函式等定義變得十分輕鬆。其
 
 ## <a name="use-code-snippets"></a>使用程式碼片段
 
-Visual Studio 提供實用的「程式碼片段」，讓您可以用來快速且輕鬆地產生常用的程式碼區塊。 [程式碼片段](../ide/code-snippets.md)適用於不同的程式設計語言 (包括 JavaScript)。 請在程式碼檔案中新增 `for` 迴圈。
+Visual Studio 提供實用的「程式碼片段」**，讓您可以用來快速且輕鬆地產生常用的程式碼區塊。 [程式碼片段](../ide/code-snippets.md)適用於不同的程式設計語言 (包括 JavaScript)。 請在程式碼檔案中新增 `for` 迴圈。
 
-將游標放在您想要插入程式碼片段的位置，然後按一下右鍵並選擇 [程式碼片段] > [插入程式碼片段]。
+將游標放在要插入程式碼片段的位置，按右鍵並選擇 **"程式碼片段** > **插入程式碼片段**"。
 
 ![Visual Studio 中的程式碼片段](../javascript/media/write-code-insert-snippet.png)
 
-[插入程式碼片段] 方塊隨即出現在編輯器中。 選擇 [一般]，然後按兩下清單中的 [for] 項目。
+[插入程式碼片段]**** 方塊隨即出現在編輯器中。 選擇 [一般]****，然後按兩下清單中的 [for]**** 項目。
 
 ![Visual Studio 中的 for 迴圈程式碼片段](../javascript/media/write-code-insert-snippet-for-loop.png)
 
@@ -114,7 +114,7 @@ for (var i = 0; i < length; i++) {
 }
 ```
 
-您可以選擇 [編輯] > [IntelliSense] > [插入程式碼片段]，然後選擇您語言的資料夾，以查看程式設計語言的可用程式碼片段。
+您可以通過選擇 **"編輯** > **智慧感知** > **插入程式碼片段**"，然後選擇語言的資料夾來查看語言的可用程式碼片段。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -122,5 +122,5 @@ for (var i = 0; i < length; i++) {
 - [巡覽程式碼](../ide/navigating-code.md)
 - [大綱](../ide/outlining.md)
 - [移至定義和查看定義](../ide/go-to-and-peek-definition.md)
-- [重構](../ide/refactoring-in-visual-studio.md)
+- [Refactoring](../ide/refactoring-in-visual-studio.md)
 - [使用 IntelliSense](../ide/using-intellisense.md)

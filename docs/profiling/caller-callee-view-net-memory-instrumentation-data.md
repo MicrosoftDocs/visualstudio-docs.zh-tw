@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c51f4bc1e823f565670bf1f6df77553ff4658d6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779723"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>呼叫端/被呼叫端檢視 - .NET 記憶體檢測資料
@@ -33,19 +33,19 @@ ms.locfileid: "74779723"
 
 |資料行|描述|
 |------------|-----------------|
-|**函式名稱**|函式的名稱。|
-|**函式位址**|函式的位址。|
+|**函數名稱**|函數的名稱。|
+|**功能位址**|函式的位址。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
 |**呼叫次數**|呼叫此函式的總次數。|
-|**原始程式檔**|含有這個函式定義的原始程式檔。|
+|**原始檔案**|含有這個函式定義的原始程式檔。|
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|包含該函式的模組路徑。|
-|**處理序 ID**|分析執行的處理序 ID。|
-|**處理序名稱**|指派給處理序的名稱。|
+|**處理序識別碼**|分析執行的處理序 ID。|
+|**流程名稱**|指派給處理序的名稱。|
 |**時間專有探查額外負荷**|檢測對此函式造成的時間額外負荷。 已經從所有專有時間減去探查額外負荷。|
 |**時間內含探查額外負荷**|檢測對此函式及其子函式造成的時間額外負荷。 已經從所有內含時間減去探查額外負荷。|
-|**Type**|函式的內容︰<br /><br /> **0** - 目前的函式<br /><br /> **1** - 呼叫目前函式的函式<br /><br /> **2** - 目前的函式所呼叫的函式<br /><br /> 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|
-|**根函式名稱**|目前函式的名稱。 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|
+|**類型**|函式的內容︰<br /><br /> **0** - 目前的函式<br /><br /> **1** - 呼叫目前函式的函式<br /><br /> **2** - 目前的函式所呼叫的函式<br /><br /> 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
+|**根函式名稱**|目前函數的名稱。 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
 
 ## <a name="net-memory-allocation-values"></a>.NET 記憶體配置值
 
@@ -83,7 +83,7 @@ ms.locfileid: "74779723"
 |**最小功能專屬耗用 (Elapsed Exclusive) 時間**|在此內容中呼叫此函式的最小功能專屬耗用 (Elapsed Exclusive) 時間。|
 
 ## <a name="application-inclusive-values"></a>應用程式內含值
- 應用程式內含值表示函數在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含在子函式中花費的時間。
+ 應用程式內含值表示函式在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含在子函式中花費的時間。
 
 |資料行|描述|
 |------------|-----------------|
@@ -104,8 +104,8 @@ ms.locfileid: "74779723"
 |**最大應用程式專屬 (Application Exclusive) 時間**|在此內容中呼叫此函式的最大應用程式專屬 (Application Exclusive) 時間。|
 |**最小應用程式專屬 (Application Exclusive) 時間**|在此內容中呼叫此函式的最小應用程式專屬 (Application Exclusive) 時間。|
 
-## <a name="see-also"></a>請參閱
-- [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
-- [呼叫者/被呼叫者檢視 - .NET 記憶體取樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [呼叫端/被呼叫端檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)
+## <a name="see-also"></a>另請參閱
+- [操作方式：自訂報表檢視列](../profiling/how-to-customize-report-view-columns.md)
+- [調用方/被叫方視圖 - .NET 記憶體採樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [調用方/被叫方視圖 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)
 - [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)

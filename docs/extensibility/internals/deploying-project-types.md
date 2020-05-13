@@ -1,28 +1,28 @@
 ---
-title: 部署專案類型 |Microsoft Docs
+title: 部署項目型態 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], managed-code
 - projects [Visual Studio SDK], aggregator
 ms.assetid: 7f132f67-8589-464c-90dc-0d57ae02aa8f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac03682fa1158f5da9c694cf1be5282717c07b55
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 835e85ade4d309d0b5692aa9b857476cd6b5927a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312170"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708781"
 ---
-# <a name="deploy-project-types"></a>部署專案類型
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 安裝新的專案類型彙總工具 (*ProjectAggregator2.dll*) 和也進行轉散發的 Windows Installer 套件 (*ProjectAggregator2.msi*)。 您必須使用新的彙總工具適用於 managed 程式碼專案類型。 ProjectAggregator2 可解決限制[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案正常運作時，防止 managed 程式碼專案類型的彙總工具。 下列步驟說明如何變更您 VSPackage 也可以使用新的彙總工具。
+# <a name="deploy-project-types"></a>部署項目類型
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]安裝一個新的項目類型聚合器 *(Project聚合器2.dll*)以及用於重新分發的 Windows 安裝程式套件 (*ProjectAg 聚合器 2.msi*)。 您必須將新的聚合器用於託管代碼項目類型。 ProjectAg聚合器2圍繞[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案聚合器中阻止託管代碼項目類型正常工作的限制進行工作。 以下步驟描述如何更改 VSPackage 以使用新的聚合器。
 
-1. 從您的方案移除 NativeHierarchyWrapper 專案。
+1. 從解決方案中刪除本機層次結構包裝器專案。
 
-2. 移除任何 NativeHierarchyWrapper 二進位檔從您的設定。
+2. 從設置中刪除任何本機層次結構包裝二進位檔。
 
-3. 新增*ProjectAggregator2.msi*至您的安裝。
+3. 將*Project 聚合器2.msi*添加到您的設定中。

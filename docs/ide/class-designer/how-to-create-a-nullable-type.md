@@ -15,17 +15,17 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592226"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>如何：在類別設計工具中建立可為 Null 的型別
 
 特定實值型別不一定具有 (或需要) 定義的值。 這種情況在資料庫中為常見做法，其中的部分欄位不會指派任何值。 比方說，您可能將 null 值指派給資料庫欄位，以表示該欄位尚未指派值。
 
-「可為 Null 的型別」是一種延伸的實值型別，其可接受該類型的一般範圍值，也可接受 null 值。 例如，您可將 -2147483648 到 2147483647 的任何值或 null 值指派給可為 Null 的 `Int32` (亦表示為Nullable\<Int32>)。 您可將 `True`、`False` 或 null 值 (完全沒有值) 指派給 Nullable\<bool>。
+「可為 Null 的型別」** 是一種延伸的實值型別，其可接受該類型的一般範圍值，也可接受 null 值。 例如，您可將 -2147483648 到 2147483647 的任何值或 null 值指派給可為 Null 的 `Int32` (亦表示為Nullable\<Int32>)。 您可將 `True`、`False` 或 null 值 (完全沒有值) 指派給 Nullable\<bool>。
 
 可為 Null 的型別是 <xref:System.Nullable%601> 結構的執行個體。 每個可為 Null 的型別，其執行個體皆有 `HasValue` 和 `Value` 這兩個公用唯讀屬性：
 
@@ -45,22 +45,22 @@ ms.locfileid: "75592226"
 
 1. 在類別圖表中，展開現有類別，或建立新的類別。
 
-2. 若要將類別新增至專案，請按一下 [類別圖表] 功能表上的 [新增] >  [新增類別]。
+2. 若要將類別新增至專案，請按一下 [類別圖表]**** 功能表上的 [新增]**** >  [新增類別]****。
 
-3. 若要展開類別圖形，請按一下 [類別圖表] 功能表上的 [展開]。
+3. 若要展開類別圖形，請按一下 [類別圖表]**** 功能表上的 [展開]****。
 
-4. 選取類別圖形。 在 [類別圖表] 功能表上，按一下 [新增] >  [欄位]。 接著，在類別圖形和 [類別細節] 視窗中，即會出現一個新欄位 (預設名稱為 [欄位])。
+4. 選取類別圖形。 在 [類別圖表]**** 功能表上，按一下 [新增]**** >  [欄位]****。 接著，在類別圖形和 [類別細節]**** 視窗中，即會出現一個新欄位 (預設名稱為 [欄位]****)。
 
-5. 在 [類別細節] 視窗 (或類別圖形本身) 的 [名稱] 資料行中，將新欄位的名稱變更為有效且有意義的名稱。
+5. 在 [類別細節]**** 視窗 (或類別圖形本身) 的 [名稱]**** 資料行中，將新欄位的名稱變更為有效且有意義的名稱。
 
-6. 在 [類別細節] 視窗的 [類型] 資料行中，藉由指定下列項目，將類型宣告為可為 Null 的型別：
+6. 在 [類別細節]**** 視窗的 [類型]**** 資料行中，藉由指定下列項目，將類型宣告為可為 Null 的型別：
 
     - `int?` (Visual C#)
     - `Nullable(Of Integer)` (Visual Basic)
 
 ## <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>若要使用程式碼編輯器，新增可為 Null 的型別
 
-1. 將類別加入至專案。 在方案總管中，選取專案節點，然後按一下 [專案] 功能表上的 [新增類別]。
+1. 將類別加入至專案。 在方案總管**** 中，選取專案節點，然後按一下 [專案]**** 功能表上的 [新增類別]****。
 
 2. 若為新類別，可在 .cs 或 .vb 檔案中，將新類別中的一或多個可為 Null 的型別新增至類別宣告。
 
@@ -83,12 +83,12 @@ ms.locfileid: "75592226"
 
 4. 展開類別圖形的詳細資料，然後將滑鼠指標移至類別成員上方。 工具提示會顯示每個成員的宣告。
 
-5. 以滑鼠右鍵按一下類別圖形，然後按一下 [類別細節]。 您可以在 [類別細節] 視窗中檢視或修改新類型的屬性。
+5. 以滑鼠右鍵按一下類別圖形，然後按一下 [類別細節]****。 您可以在 [類別細節]**** 視窗中檢視或修改新類型的屬性。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:System.Nullable%601>
-- [可為 Null 的型別](/dotnet/csharp/programming-guide/nullable-types/index)
+- [可空類型](/dotnet/csharp/programming-guide/nullable-types/index)
 - [使用可為 Null 的型別](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)
 - [如何：識別可為 Null 的型別](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
-- [可為 Null 的值類型](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)
+- [空數值型別](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

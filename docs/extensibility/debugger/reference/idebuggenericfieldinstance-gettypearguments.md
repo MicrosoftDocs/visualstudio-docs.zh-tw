@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericFieldInstance::GetTypeArguments |Microsoft Docs
+title: IDebugGenericField實例::獲取類型參數 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetTypeArguments
 - IDebugGenericFieldInstance::GetTypeArguments
 ms.assetid: 6e7e0f95-181a-4805-adb3-c2407de0ab93
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7fbd896e2798ed42c382d9975ec70a7e8aebbd7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c41a3f314f641ed4bff116959b6d70f0a5fb9dcb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351237"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728188"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
-擷取這個執行個體的型別參數引數。
+檢索此實例的類型參數參數參數。
 
 ## <a name="syntax"></a>語法
 
@@ -44,16 +44,16 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>參數
 `cArgs`\
-[in]型別參數數目。
+[在]類型參數數。
 
 `ppArgs`\
-[out]傳回型別參數的陣列。
+[出]返回類型參數陣組。
 
 `pcArgs`\
-[in、 out]中的成員數目`ppArgs`陣列。
+[進出]`ppArgs`陣列中的成員數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

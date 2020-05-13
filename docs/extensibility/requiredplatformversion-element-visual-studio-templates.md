@@ -1,29 +1,29 @@
 ---
-title: RequiredPlatformVersion 元素 （Visual Studio 範本） |Microsoft Docs
+title: 所需平臺版本元素(可視化工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd166e41588ee440d9e0a1e90494aaa8f5091909
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3bc22f97401fe5e3724f2e44c873c72acbf65be1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334147"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701488"
 ---
-# <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 元素 （Visual Studio 範本）
-指定的專案範本正常運作所需的作業系統最低版本。 這個項目用於建立的專案範本[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]應用程式。
+# <a name="requiredplatformversion-element-visual-studio-templates"></a>必需平臺版本元素(可視化工作室範本)
+指定專案範本正常工作所需的作業系統的最小版本。 此元素用於創建[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]應用的專案範本。
 
- `RequiredPlatformVersion`值會直接與作業系統的版本。 如果`RequiredPlatformVersion`高於作業系統的版本，不會顯示範本，這是在**新的專案** 對話方塊。 若要指定的範本[!INCLUDE[win8](../debugger/includes/win8_md.md)]或更高版本，設定`RequiredPlatformVersion`6.2.0 到。 若要指定的範本[!INCLUDE[win81](../debugger/includes/win81_md.md)]或更高版本，設定`RequiredPlatformVersion`至 6.3.0。
+ 該`RequiredPlatformVersion`值與操作系統的版本直接進行比較。 如果`RequiredPlatformVersion`高於作業系統版本,則範本不會顯示在 **「新項目**」對話方塊中。 要為[!INCLUDE[win8](../debugger/includes/win8_md.md)]或更高指定範本,請設置`RequiredPlatformVersion`為 6.2.0。 要為[!INCLUDE[win81](../debugger/includes/win81_md.md)]或更高指定範本,請設置`RequiredPlatformVersion`為 6.3.0。
 
- 指定的範本`RequiredPlatformVersion`= 8 都與先前的客戶相容[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]範本。
+ 指定`RequiredPlatformVersion`|8 的範本與以前[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]的客戶 樣本相容。
 
- VSTemplate TemplateData...TargetPlatformName RequiredPlatformVersion
+ VSTemplate 樣本資料 ...目標平台名稱必需平臺版本
 
 ## <a name="syntax"></a>語法
 
@@ -44,13 +44,13 @@ ms.locfileid: "66334147"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|指定專案範本的目標平台。|
+|[樣本平台名稱](../extensibility/templatedata-element-visual-studio-templates.md)|指定專案範本的目標平台。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
 ## <a name="remarks"></a>備註
- 此文字會指定範本所需的最低作業系統版本。
+ 此文字指定範本所需的最小作業系統版本。
 
 ## <a name="example"></a>範例
  這個範例會指定專案範本以 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或更新版本為目標。
@@ -69,6 +69,6 @@ ms.locfileid: "66334147"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [TargetPlatformName 元素 （Visual Studio 範本）](../extensibility/targetplatformname-element-visual-studio-templates.md)
+- [目標平台名稱元素(視覺化工作室範本)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)

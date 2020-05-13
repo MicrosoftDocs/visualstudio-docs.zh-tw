@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568863"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>內嵌暫存變數重構
@@ -31,11 +31,11 @@ ms.locfileid: "75568863"
 
 **原因：** 移除暫存變數可讓程式碼變得較容易閱讀。
 
-## <a name="how-to"></a>操作說明
+## <a name="how-to"></a>操作方式
 
 1. 醒目標示要內嵌的暫存變數，或將文字游標放在要內嵌的暫存變數內：
 
-   - C#:
+   - C#：
 
        ![醒目提示的程式碼 - C#](media/inline-highlight-cs.png)
 
@@ -46,15 +46,15 @@ ms.locfileid: "75568863"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
    - **滑鼠**
-      - 在程式碼上按一下滑鼠右鍵，然後選取 [快速動作與重構] 功能表。
+      - 在程式碼上按一下滑鼠右鍵，然後選取 [快速動作與重構]**** 功能表。
 
-3. 從 [預覽] 快顯視窗中選取 [內嵌暫存變數]。
+3. 從 [預覽] 快顯視窗中選取 [內嵌暫存變數]****。
 
    系統會移除變數，並以變數的值取代使用該變數的地方。
 
-   - C#:
+   - C#：
 
       ![內嵌結果 - C#](media/inline-result-cs.png)
 
@@ -62,6 +62,6 @@ ms.locfileid: "75568863"
 
       ![內嵌結果 - Visual Basic](media/inline-result-vb.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [重構](../refactoring-in-visual-studio.md)
+- [Refactoring](../refactoring-in-visual-studio.md)

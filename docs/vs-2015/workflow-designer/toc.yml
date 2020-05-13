@@ -50,17 +50,17 @@
               href: dowhile-activity-designer.md
             - name: ForEach\<T>
               href: foreach-t-activity-designer.md
-            - name: 如果
+            - name: If
               href: if-activity-designer.md
             - name: 平行
               href: parallel-activity-designer.md
             - name: ParallelForEach\<T>
               href: parallelforeach-t-activity-designer.md
-            - name: Pick
+            - name: 挑選
               href: pick-activity-designer.md
             - name: PickBranch
               href: pickbranch-activity-designer.md
-            - name: 序列
+            - name: 順序
               href: sequence-activity-designer.md
             - name: Switch\<T>
               href: switch-t-activity-designer.md
@@ -82,15 +82,15 @@
               href: state-machine-activity-designers.md
             - name: StateMachine
               href: statemachine-activity-designer.md
-            - name: 狀況
+            - name: State
               href: state-activity-designer.md
             - name: FinalState
               href: finalstate-activity-designer.md
-            - name: 轉換
+            - name: Transition
               href: transition-activity-designer.md
-        - name: 訊息
+        - name: Messaging (傳訊)
           items:
-            - name: 訊息
+            - name: Messaging (傳訊)
               href: messaging-activity-designers.md
             - name: CorrelationScope
               href: correlationscope-activity-designer.md
@@ -100,7 +100,7 @@
               href: receive-activity-designer.md
             - name: ReceiveAndSendReply
               href: receiveandsendreply-template-designer.md
-            - name: 傳送
+            - name: Send
               href: send-activity-designer.md
             - name: SendAndReceiveReply
               href: sendandreceivereply-template-designer.md
@@ -138,7 +138,7 @@
               href: compensableactivity-activity-designer.md
             - name: Compensate
               href: compensate-activity-designer.md
-            - name: Confirm
+            - name: 確認
               href: confirm-activity-designer.md
             - name: TransactionScope
               href: transactionscope-activity-designer.md

@@ -18,10 +18,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d9e8b23492f23d39977b4eb26f8ee633b8463f27
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565210"
 ---
 # <a name="multitooltask-task"></a>MultiToolTask 工作
@@ -34,15 +34,15 @@ ms.locfileid: "75565210"
 
 |參數|描述|
 |---------------|-----------------|
-|**EnvironmentVariablesToSet**|選擇性的 **string[]** 參數。|
-|**SemaphoreProcCount**|選擇性的 **string** 參數。|
-|**SchedulerFunction**|選擇性的 **string** 參數。|
+|**EnvironmentVariablesToSet**|可選**字串*** 參數。|
+|**SemaphoreProcCount**|可選**字串**參數。|
+|**SchedulerFunction**|可選**字串**參數。|
 |**SchedulerVerbose**|選擇性的 **bool** 參數。|
-|**Sources**|必要的 **ITaskItem[]** 參數。|
-|**TaskAssemblyName**|選擇性的 **string** 參數。|
-|**TaskName**|必要的 **string** 參數。|
-|**TrackerLogDirectory**|必要的 **string** 參數。|
+|**來源**|必需**的 ITaskItem]** 參數。|
+|**TaskAssemblyName**|可選**字串**參數。|
+|**TaskName**|所需的**字串**參數。|
+|**TrackerLogDirectory**|所需的**字串**參數。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[工作參考](../msbuild/msbuild-task-reference.md)
+[任務引用](../msbuild/msbuild-task-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: IDE 中的選取專案和貨幣 |Microsoft Docs
+title: IDE 中的選擇和貨幣 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,60 +8,60 @@ helpviewer_keywords:
 - selection, Visual Studio IDE
 - IDE, currency
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edff400420ca5f0c93e1df85fb9118eee6302d02
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f580b7c8e1651dcbcd053476ae756399a0ac3482
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72723970"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705574"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE 中的選取項目和貨幣
-@No__t_0 的整合式開發環境（IDE）會使用*選取內容來*維護使用者目前選取之物件的相關資訊。 有了選取內容，Vspackage 可以透過兩種方式參與貨幣追蹤：
+整合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]式開發環境 (IDE) 使用選擇*上下文*維護使用者當前選擇的物件的資訊。 使用選擇上下文,VSPackages 可透過兩種方式參與貨幣追蹤:
 
-- 藉由將 Vspackage 的相關貨幣資訊傳播至 IDE。
+- 通過將有關 VSPackages 的貨幣資訊傳播到 IDE。
 
-- 藉由監視使用者目前在 IDE 中的作用中選取範圍。
+- 通過監視使用者當前在 IDE 中的活動選擇。
 
-## <a name="selection-context"></a>選取範圍內容
- @No__t_0 IDE 會在它自己的全域選取範圍內容物件中，以全域方式追蹤 IDE 貨幣。 下表顯示組成選取內容的元素。
+## <a name="selection-context"></a>選擇內容
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 全域追蹤其自己的全域選擇上下文物件中的 IDE 貨幣。 下表顯示了構成選擇上下文的元素。
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|目前階層|通常是目前的專案;Null 目前的階層表示整個方案是最新的。|
-|目前的 ItemID|目前階層中選取的專案;當 [專案] 視窗中有多個選項時，可以有多個目前的專案。|
-|目前的 `SelectionContainer`|保留一或多個屬性視窗應該顯示內容的物件。|
+|目前層次結構|通常是當前專案;NULL 電流層次結構表示整個解決方案是最新的。|
+|目前項目 ID|當前層次結構中的選定項;當項目視窗中有多個選擇時,可以有多個當前項。|
+|目前`SelectionContainer`|保存屬性視窗應為其顯示屬性的一個或多個物件。|
 
- 此外，環境會維護兩個全域清單：
+ 此外,環境維護兩個全域清單:
 
-- 作用中 UI 命令識別碼的清單
+- 使用 UI 命令識別碼清單
 
-- 目前使用中元素類型的清單。
+- 目前活動元素類型的清單。
 
-### <a name="window-types-and-selection"></a>視窗類型和選取範圍
- @No__t_0 IDE 會將視窗組織成兩種一般類型：
+### <a name="window-types-and-selection"></a>視窗型態與選擇
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 將視窗組織成兩種常規類型:
 
-- 階層-類型 windows
+- 層次結構類型視窗
 
-- 框架視窗，例如工具和文件視窗
+- 框架視窗,如工具和文件視窗
 
-  IDE 會以不同的方式追蹤每個視窗類型的貨幣。
+  IDE 對這些窗口類型的不同跟蹤貨幣。
 
-  最常見的專案類型視窗是 IDE 所控制的 [方案瀏覽器]。 專案類型視窗會追蹤全域選取範圍內容的全域階層和 ItemID，而視窗會依賴使用者的選取專案來判斷目前的階層。 針對專案類型的 windows，環境會提供全域服務 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>，Vspackage 可以透過此監視 open 元素的目前值。 環境中的屬性流覽是由這個全域服務所驅動。
+  最常見的項目類型視窗是 IDE 控制的解決方案資源管理員。 項目類型視窗追蹤全域選擇上下文的全域層次結構和 ItemID,該視窗依賴於使用者的選擇來確定當前層次結構。 對於項目類型視窗,環境提供全域服務<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>,VS包可以通過該服務監視打開元素的當前值。 環境中的屬性流覽由此全域服務驅動。
 
-  另一方面，框架視窗會使用框架視窗內的 DocObject 來推送 SelectionCoNtext 值（階層/ItemID/SelectionContainer 三個）。 執行個體時提供 SQL Server 登入。 框架視窗會針對此目的使用服務 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>。 DocObject 只能推送選取容器的值，讓階層和 ItemID 的區域值保持不變，如同一般用於 MDI 子檔。
+  另一方面,框架視窗使用框架視窗中的 DocObject 推送選擇上下文值(層次結構/ItemID/選擇容器三重奏)。 . 框架視窗為此使用服務<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>。 DocObject 只能推送選擇容器的值,從而使層次結構和 ItemID 的本地值保持不變,這是 MDI 子文檔的典型值。
 
-### <a name="events-and-currency"></a>活動和貨幣
- 可能會發生兩種類型的事件，這會影響環境的貨幣概念：
+### <a name="events-and-currency"></a>事件和貨幣
+ 可能發生兩種類型的事件,這些事件會影響環境的貨幣概念:
 
-- 傳播至全域層級並變更視窗框架選取內容的事件。 這類事件的範例包括開啟的 MDI 子視窗、開啟的全域工具視窗，或開啟的專案類型工具視窗。
+- 傳播到全域級別並更改視窗框架選擇上下文的事件。 此類事件的範例包括正在打開的 MDI 子視窗、正在打開的全域工具視窗或正在打開的項目類型工具視窗。
 
-- 變更視窗框架選取內容中追蹤之元素的事件。 範例包括變更 DocObject 內的選取範圍，或變更專案類型視窗中的選取範圍。
+- 更改視窗框架選擇上下文中追蹤的元素的事件。 範例包括在 DocObject 中更改選擇或在專案類型視窗中更改選擇。
 
-## <a name="see-also"></a>請參閱
-- [選取內容物件](../../extensibility/internals/selection-context-objects.md)
+## <a name="see-also"></a>另請參閱
+- [選取項目內容物件](../../extensibility/internals/selection-context-objects.md)
 - [使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)

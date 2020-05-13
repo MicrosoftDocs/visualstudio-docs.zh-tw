@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62960156"
 ---
 # <a name="zoom-control-threads-view"></a>縮放控制 (執行緒檢視)
@@ -26,10 +26,10 @@ ms.locfileid: "62960156"
  在時間軸檢視中拖曳，建立黃色醒目提示的區域以放大。 放開滑鼠按鈕之後，選取的範圍就會在時間軸檢視中放大。
 
 ## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>使用滑鼠滾輪來縮放
- 按一下時間軸上的任一點 (確定滑鼠焦點在該點上)，然後按下 **Ctrl** 並移動滑鼠滾輪 (向前放大、向後縮小)。
+ 按一下時間表上的任何點（以確保它有滑鼠焦點），然後按**Ctrl**並移動滑鼠滾輪（向前放大;向後縮小）。
 
 ## <a name="see-also"></a>另請參閱
 - [管理通道](../profiling/manage-channels.md)
 - [開啟/關閉測量模式](../profiling/measure-mode-on-off.md)
-- [執行緒檢視](../profiling/threads-view-parallel-performance.md)
-- [使用率導覽](../profiling/utilization-navigator.md)
+- [執行緒視圖](../profiling/threads-view-parallel-performance.md)
+- [利用率導航器](../profiling/utilization-navigator.md)

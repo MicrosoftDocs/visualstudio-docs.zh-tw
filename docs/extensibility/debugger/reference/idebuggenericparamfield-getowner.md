@@ -1,27 +1,27 @@
 ---
-title: IDebugGenericParamField::GetOwner | Microsoft Docs
+title: IDebugGenericParamField::獲取擁有者 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetOwner
 ms.assetid: c7f6d166-a69e-40c4-bd0b-1a1fdf9aaacf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9752dfa90250bd427cb7a3d18e6e73775f25efb9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 040b8cf21cda1a0634c1c423516109b1ef214f01
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330293"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727868"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
-擷取此泛型參數的型別或方法擁有者。
+檢索此泛型參數的類型或方法擁有者。
 
 ## <a name="syntax"></a>語法
 
@@ -39,13 +39,13 @@ int GetOwner(
 
 ## <a name="parameters"></a>參數
 `ppOwner`\
-[out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)擁有此泛型參數的物件。
+[出]返回擁有此泛型參數的[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法，如**CDebugGenericParamFieldType**公開 （expose） 的物件[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。
+下面的範例展示如何為公開[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面的**CDebugGenericParamFieldType**物件實現此方法。
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetOwner(IDebugField** ppOwner)

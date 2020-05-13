@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d180d5a5d723d8085537f2993aac022d74df2c08
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595692"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
@@ -29,15 +29,15 @@ ms.locfileid: "75595692"
 devenv /Edit [File1[ FileN]...]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 
-- *File1*
+- *檔1*
 
-  選擇項。 要在現有 Visual Studio 執行個體中開啟的檔案。 如果沒有任何 Visual Studio 執行個體存在，即會建立具有簡易視窗配置的新執行個體，而工具會在新的執行個體中開啟 *File1*。
+  選擇性。 要在現有 Visual Studio 執行個體中開啟的檔案。 如果沒有任何 Visual Studio 執行個體存在，即會建立具有簡易視窗配置的新執行個體，而工具會在新的執行個體中開啟 *File1*。
 
 - *FileN*
 
-  選擇項。 要在現有 Visual Studio 執行個體中開啟的一或多個其他檔案。
+  選擇性。 要在現有 Visual Studio 執行個體中開啟的一或多個其他檔案。
 
 ## <a name="remarks"></a>備註
 
@@ -57,6 +57,6 @@ devenv /edit MyFile.cs
 devenv /edit MyFile1.cs MyFile2.cs MyFile3.cs
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

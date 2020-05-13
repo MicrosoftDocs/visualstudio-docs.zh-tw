@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999093"
 ---
 # <a name="intellisense"></a>IntelliSense
 
-在您撰寫程式碼時，Visual Studio IntelliSense 會直接顯示您可以呼叫的函式、物件成員、函式引數和[程式碼片段](code-snippets-for-r.md)等相關資訊。 它也會在您鍵入時顯示可能的完整命令，並在您按 **Tab** 鍵或 **Enter** 鍵時完成 (請參閱 [進階] 索引標籤的 [[編輯器] 選項](editing-r-code-in-visual-studio.md#editor-options))。 在編輯器與 [Interactive 視窗](interactive-repl-for-r-in-visual-studio.md)中皆能使用 IntelliSense。
+在您撰寫程式碼時，Visual Studio IntelliSense 會直接顯示您可以呼叫的函式、物件成員、函式引數和[程式碼片段](code-snippets-for-r.md)等相關資訊。 它還會在鍵入時顯示可能的完成情況，並在按下 **"選項卡"** 或 **"輸入**"鍵時完成（請參閱 **"高級**"選項卡的[編輯器選項](editing-r-code-in-visual-studio.md#editor-options)）。 在編輯器與 [Interactive 視窗](interactive-repl-for-r-in-visual-studio.md)中皆能使用 IntelliSense。
 
 ![顯示函式簽章的 IntelliSense](media/intellisense-function-signature.png)
 
@@ -25,22 +25,22 @@ ms.locfileid: "62999093"
 
 ![IntelliSense 自動完成功能表](media/intellisense-auto-complete-menu.png)
 
-按 **Tab** 鍵 (或 **Enter** 鍵、**空格**鍵，視選項的設定方式而定) 插入下拉式清單中選取的項目。 您可以使用方向鍵來變更選取範圍。
+按 **"選項卡**"（或**輸入**，或**空格**），具體取決於選項的設置方式），插入下拉清單中選定的項。 您可以使用方向鍵來變更選取範圍。
 
 IntelliSense 也提供 R 物件成員的建議︰
 
 ![物件成員的 IntelliSense 建議](media/intellisense-auto-complete-r-objects.png)
 
-按 **Esc** 鍵時會一併關閉功能表。 您可以用 **Ctrl**+**空格**鍵再次開啟它。
+按**ESC**將完全關閉功能表。 你可以把它帶回來與**Ctrl**+**空間**。
 
 為函式呼叫輸入開頭的 `(` 會插入結尾 `)`，然後叫出簽章說明，如先前所示︰
 
 ![函式的 IntelliSense 簽章說明](media/intellisense-function-signature.png)
 
-同樣地，**Esc** 鍵會關閉快顯視窗；針對函式簽章，您可以使用 **Ctrl**+**Shift**+**空格**鍵再次開啟它。
+再次 **，ESC**關閉快顯視窗;對於函數簽名，您可以使用**Ctrl**+**移位**+**空間**再次將其提起。
 
 > [!Tip]
-> 如果參數說明模糊了下方的文字，請按住 **Ctrl** 鍵讓參數說明文字變成半透明。
+> 如果參數有助於遮蓋其下方的文本，請按住**Ctrl**鍵以使參數有助於文本半透明。
 
 ## <a name="intellisense-for-user-defined-functions-and-variables"></a>使用者定義函式和變數的 IntelliSense
 

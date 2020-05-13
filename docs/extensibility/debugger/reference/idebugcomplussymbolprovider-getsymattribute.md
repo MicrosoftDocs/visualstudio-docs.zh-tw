@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetSymAttribute | Microsoft Docs
+title: IDebugComPlus符號提供程式::獲取Sym屬性 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymAttribute
 - GetSymAttribute
 ms.assetid: 6cbaac92-a60b-4165-a7f5-c34407770f3c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d4da2269211d4ae3e61061cbd3dee5f9d5e1264
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb405bd0cf6f3ec846e3b146e4fd02399d583fb7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336681"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733766"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
-擷取與指定的父屬性指定模組的偵錯符號。
+使用指定模組的給定父屬性檢索調試符號。
 
 ## <a name="syntax"></a>語法
 
@@ -52,31 +52,31 @@ int GetSymAttribute (
 
 ## <a name="parameters"></a>參數
 `ulAppDomainID`\
-[in]應用程式定義域的識別項。
+[在]應用程式域的標識碼。
 
 `guidModule`\
-[in]模組的唯一識別碼。
+[在]模組的唯一標識碼。
 
 `tokParent`\
-[in]父屬性的語彙基元。
+[在]父屬性的權杖。
 
 `pstrName`\
-[in]模組的名稱。
+[在]模組的名稱。
 
 `cBuffer`\
-[in]如輸出所需的位元組數目`buffer`。
+[在]輸出`buffer`所需的位元組數。
 
 `pcBuffer`\
-[out]輸出的長度`buffer`。
+[出]輸出`buffer`的長度。
 
 `buffer`\
-[out]包含符號的陣列。
+[出]包含符號的陣列。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。
+下面的範例展示如何為公開[IDebugComPlusSymbol提供程式](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbol提供程式**物件實現此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetSymAttribute(

@@ -18,13 +18,13 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114982"
 ---
-# <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>當您安裝或使用 Visual Studio 時，針對網路相關錯誤進行疑難排解
+# <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>安裝或使用視覺化工作室時解決與網路相關的錯誤
 
 對於您在使用防火牆或 Proxy 伺服器的情況下安裝或使用 Visual Studio 時可能會遇到的常見網路或 Proxy 相關錯誤，我們皆有提供解決方案。
 
@@ -69,13 +69,13 @@ ms.locfileid: "76114982"
       您必須在 `proxyaddress="<http://<yourproxy:port#>` 中插入您的網路的正確 Proxy 位址。
 
      > [!NOTE]
-     > 如需詳細資訊，請參閱 [&lt;defaultProxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) 和 [&lt;proxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) 頁面。
+     > 有關詳細資訊，請參閱[&lt;預設代理&gt;元素（網路設置）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/)和[&lt;代理&gt;元素（網路設置）](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)頁面。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  1. 在下列位置尋找 **devenv.exe.config** (devenv.exe configuration 檔案)： **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** 或 **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**。
+  1. 在下列位置尋找 **devenv.exe.config** (devenv.exe configuration 檔案)：**%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** 或 **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**。
 
   2. 在設定檔中，找出 `<system.net>` 區塊，並加入下列程式碼：
 
@@ -88,7 +88,7 @@ ms.locfileid: "76114982"
       您必須在 `proxyaddress="<http://<yourproxy:port#>` 中插入您的網路的正確 Proxy 位址。
 
      > [!NOTE]
-     > 如需詳細資訊，請參閱 [&lt;defaultProxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) 和 [&lt;proxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) 頁面。
+     > 有關詳細資訊，請參閱[&lt;預設代理&gt;元素（網路設置）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/)和[&lt;代理&gt;元素（網路設置）](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)頁面。
 
 ::: moniker-end
 
@@ -133,23 +133,23 @@ Visual Studio 使用傳輸層安全性 (TLS) 1.2 通訊協定連線到網路資�
   > [!NOTE]
   > 此清單可能不含私人擁有的 NuGet 伺服器 URL。 您可以在 %APPData%\Nuget\NuGet.Config 中檢查您所使用的 NuGet 伺服器。
 
-## <a name="error-failed-to-parse-id-from-parent-process"></a>錯誤：「無法從父進程剖析識別碼」
+## <a name="error-failed-to-parse-id-from-parent-process"></a>錯誤："無法從父進程解析 ID"
 
-當您使用 Visual Studio 啟動載入器和網路磁碟機機上的回應. json 檔案時，可能會遇到這個錯誤訊息。 錯誤的來源是 Windows 中的使用者帳戶控制（UAC）。
+當您在網路磁碟機上使用 Visual Studio 引導器和回應.json 檔時，可能會遇到此錯誤訊息。 錯誤的源是 Windows 中的使用者帳戶控制 （UAC）。
 
-以下是可能發生此錯誤的原因：對應的網路磁碟機機或[UNC](/dotnet/standard/io/file-path-formats#unc-paths)共用已連結至使用者的存取權杖。 當啟用 UAC 時，會建立兩個使用者[存取權杖](/windows/win32/secauthz/access-tokens)：一個*具備*系統管理員存取權，另一個則*沒有*系統管理員存取權。 建立網路磁碟機機或共用時，會連結到該使用者的目前存取權杖。 因為啟動載入器必須以系統管理員的身分執行，所以如果磁片磁碟機或共用未連結到具有系統管理員存取權的使用者存取權杖，就無法存取網路磁碟機或共用。
+此錯誤可能發生的原因：映射的網路磁碟機或[UNC](/dotnet/standard/io/file-path-formats#unc-paths)共用連結到使用者的訪問權杖。 啟用 UAC 後，將創建兩[個使用者訪問權杖](/windows/win32/secauthz/access-tokens)：一個*具有*管理員存取權限，另一個*沒有*管理員存取權限。 創建網路磁碟機或共用時，使用者的當前訪問權杖將連結到該權杖。 由於引導者必須以管理員身份運行，因此如果磁碟機或共用未連結到具有管理員存取權限的使用者訪問權杖，則它將無法訪問網路磁碟機或共用。
 
-### <a name="to-fix-this-error"></a>修正此錯誤
+### <a name="to-fix-this-error"></a>若要修正這個錯誤
 
-您可以使用 `net use` 命令，也可以變更 UAC 群組原則設定。 如需這些因應措施以及如何執行這些因應措施的詳細資訊，請參閱下列 Microsoft 支援文章：
+您可以使用 該命令`net use`，也可以更改 UAC 群組原則設置。 有關這些解決方法以及如何實現它們的詳細資訊，請參閱以下 Microsoft 支援文章：
 
-* [當 UAC 設定為 Windows 中的 [提示認證] 時，無法從提高許可權的提示字元使用對應的磁片磁碟機](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
-* [在 Windows 作業系統中開啟使用者帳戶控制之後，程式可能無法存取某些網路位置](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
+* [當 UAC 配置為 Windows 中的"提示憑據"時，從提升的提示符中無法映射磁碟機](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [在 Windows 作業系統中打開使用者帳戶控制後，程式可能無法訪問某些網路位置](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [安裝 Visual Studio](install-visual-studio.md)
+* [安裝視覺化工作室](install-visual-studio.md)

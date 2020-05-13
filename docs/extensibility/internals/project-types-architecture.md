@@ -1,47 +1,47 @@
 ---
-title: 專案類型架構 |Microsoft Docs
+title: 項目類型體系結構 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], architecture
 ms.assetid: 9c1d940f-8a54-41f7-a8aa-c870e324371c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d77524097509c45c23d6a3d9cc147e5aba6691d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e53929b1ec2ed9c73191bf16f1cedc84a53b58f2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318891"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706312"
 ---
 # <a name="project-types-architecture"></a>專案類型架構
-本章節包含在專案類型架構的詳細的資訊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
+本節包含有關[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中 項目類型的體系結構的詳細資訊。
 
 ## <a name="in-this-section"></a>本節內容
-- [專案模型的元素](../../extensibility/internals/elements-of-a-project-model.md)
+- [專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)
 
- 列出專案類型可使用的服務，它必須實作的介面。
+ 列出項目類型可以使用的服務及其必須實現的介面。
 
 - [專案模型的核心元件](../../extensibility/internals/project-model-core-components.md)
 
- 描述專案類型都必須實作與選擇性可實作以提供其他功能的介面。
+ 描述項目類型必須實現,可選地可以實現,以提供其他功能。
 
 - [建立專案類型的時機](../../extensibility/internals/when-to-create-project-types.md)
 
- 輸入可協助您決定當您必須在其中建立專案和時，您可以使用另一個[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]擴充功能，例如 Vspackage 和編輯器，來達成相同的目標。
+ 説明您確定何時必須創建項目類型,以及何時可以使用另一個[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]擴充性功能(如 VSPackages 和編輯器)來實現相同的目標。
 
 - [階層和選取範圍](../../extensibility/internals/hierarchies-and-selection.md)
 
- 描述如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]會使用階層和選取範圍內容來提供一致且簡化的使用者體驗。
+ 描述如何使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]層次結構和選擇上下文來提供一致和簡化的用戶體驗。
 
 ## <a name="related-sections"></a>相關章節
 - [專案子類型](../../extensibility/internals/project-subtypes.md)
 
- 說明如何專案子類型可讓您自訂的專案系統的行為[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]和[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]。
+ 說明專案子類型如何自定義[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]和[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]的專案系統的行為。
 
 - [專案類型](../../extensibility/internals/project-types.md)
 
- 提供專案的概觀，做為基本建置組塊的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 說明專案如何控制建置和編譯程式碼的其他主題會提供連結。
+ 提供專案概述,作為[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成開發環境 (IDE) 的基本構建基塊。 連結指向其他主題,這些主題解釋了專案如何控制構建和編譯代碼。

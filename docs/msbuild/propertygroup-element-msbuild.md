@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7497578b977b66c83a8b5f9f37f03743f864bcd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597369"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632923"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup 元素 (MSBuild)
-包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 項目。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個 `Property` 項目都必須是 `PropertyGroup` 項目的子系。
+
+包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 項目。 MSBuild 專案中使用的每個`Property`元素都必須是`PropertyGroup`元素的子項目。
 
  \<Project> \<PropertyGroup>
 
@@ -40,6 +41,7 @@ ms.locfileid: "75597369"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
+
  下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
@@ -50,17 +52,18 @@ ms.locfileid: "75597369"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[Property](../msbuild/property-element-msbuild.md)|選擇性項目。<br /><br /> 使用者定義的屬性名稱，其中包含屬性值。 `PropertyGroup` 項目中可能有零或多個 *Property* 項目。|
+|[屬性](../msbuild/property-element-msbuild.md)|選擇性項目。<br /><br /> 使用者定義的屬性名稱，其中包含屬性值。 `PropertyGroup` 項目中可能有零或多個 *Property* 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
+| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔案所需的根項目。 |
 
 ## <a name="example"></a>範例
+
  下列程式碼範例示範如何根據條件設定屬性。 在此範例中，如果 `CompileConfig` 屬性的值為 `DEBUG`，則會在 `PropertyGroup` 項目內設定 `Optimization`、`Obfuscate` 及 `OutputPath` 屬性。
 
 ```xml
@@ -71,6 +74,7 @@ ms.locfileid: "75597369"
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>請參閱
-- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+## <a name="see-also"></a>另請參閱
+
+- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)

@@ -1,38 +1,38 @@
 ---
-title: 考量卸載及重新載入巢狀專案 |Microsoft Docs
+title: 卸載和重新載入嵌套專案的注意事項 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, unloading and reloading
 - projects [Visual Studio SDK], unloading and reloading nested
 ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a45cf72f09ddf4e5ac1d68b59c2b13e64982744
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ab705953eea1fcac99883bb4f88c0e95eced108
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335545"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709294"
 ---
-# <a name="considerations-for-unloading-and-reloading-nested-projects"></a>卸載及重新載入巢狀的專案的考量
+# <a name="considerations-for-unloading-and-reloading-nested-projects"></a>卸載並重新載入嵌套項目的注意事項
 
-當您實作巢狀的專案類型時，您必須執行額外步驟，當您卸除並重新載入專案。 若要正確通知方案事件的接聽程式，您必須正確地引發`OnBeforeUnloadProject`和`OnAfterLoadProject`事件。
+實現嵌套項目類型時,在卸載和重新載入專案時必須執行其他步驟。 要正確通知偵聽器到解決方案事件,必須正確引發`OnBeforeUnloadProject``OnAfterLoadProject`和事件。
 
-若要引發這些事件的其中一個原因是進行原始程式碼控制 (SCC)。 您不想從伺服器刪除的項目，然後將它們新增至 SCC 回復為*新*如果沒有`Get`SCC 的作業。 在此情況下，新的檔案會載入 SCC 不足。 您必須在卸載並重新載入的所有檔案，以防它們不同。
+引發這些事件的一個原因是原始程式碼控制 (SCC)。 您不希望 SCC 從伺服器中刪除這些項目,然後將其添加為*新*專案(如果 SCC 中有操作`Get`)。 在這種情況下,將從 SCC 載入新檔。 您必須卸載並重新載入所有檔,以防它們不同。
 
-來源的程式碼控制呼叫`ReloadItem`。 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents>介面來呼叫`OnBeforeUnloadProject`和`OnAfterLoadProject`刪除專案，然後重新建立它。 當您以這種方式實作的介面時，SCC 會告知專案已暫時刪除，並再次新增。 因此，SCC 不操作，在專案上與此專案*實際上*刪除並重新加入。
+原始碼控制呼叫`ReloadItem`。 實現要<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents>調`OnBeforeUnloadProject`用的介面`OnAfterLoadProject`並 刪除專案並重新創建它。 以這種方式實現介面時,SCC 會被告知專案已暫時刪除並再次添加。 因此,SCC 不會在專案上運行,就像*項目實際上*已被刪除並重新添加一樣。
 
-## <a name="reload-projects"></a>重新載入專案
+## <a name="reload-projects"></a>重新載入項目
 
-若要支援的巢狀專案重新載入，您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A>方法。 在您實作`ReloadItem`，關閉巢狀的專案，然後再重新建立它們。
+要支援重新載入嵌套專案,可以實現 該<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A>方法 。 在實現`ReloadItem`中 ,將關閉嵌套專案,然後重新創建這些專案。
 
-通常當專案重新載入時，IDE 會引發<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A>事件。 不過，巢狀專案的刪除或重新載入，父專案啟始的處理程序中，而不在 IDE。 父專案不會引發解決方案事件和 IDE 沒有任何資訊的程序初始化，因為未引發的事件。
+通常,在重新載入專案時,IDE 會<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A><xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A>引發和事件。 但是,對於刪除並重新載入的嵌套專案,父專案將啟動進程,而不是 IDE。 由於父專案不引發解決方案事件,並且IDE沒有關於進程初始化的資訊,因此不會引發這些事件。
 
-若要處理這個程序，父專案呼叫`QueryInterface`上<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents>介面。 `IVsFireSolutionEvents` 具有函式，告訴 IDE 引發`OnBeforeUnloadProject`事件，以卸載巢狀的專案，然後再引發`OnAfterLoadProject`事件，以重新載入相同的專案。
+要處理此過程,父專案調用`QueryInterface`<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents>介面。 `IVsFireSolutionEvents`具有告訴 IDE`OnBeforeUnloadProject`引發 事件以卸載嵌套專案`OnAfterLoadProject`,然後引發 事件以重新載入同一專案的函數。
 
 ## <a name="see-also"></a>另請參閱
 

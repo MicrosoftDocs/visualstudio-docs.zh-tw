@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2090eeac014feb6a3a4308c920140d7934d3b0e4
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68606002"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>選項對話方塊：文字編輯器 \> JavaScript/TypeScript \> 程式碼驗證
+# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>選項對話方塊：文字編輯器\>JavaScript/TypeScript\>代碼驗證
 
-使用 [選項]  對話方塊的 [程式碼驗證]  頁面，修改會影響 JavaScript 處理錯誤方式的設定。 您可以透過選擇功能表列上的 [工具]   > [選項]  ，並展開 [文字編輯器]   > [JavaScript/TypeScript]   > [程式碼驗證]  來存取 [程式碼驗證]  頁面。
+使用 [選項]**** 對話方塊的 [程式碼驗證]**** 頁面，修改會影響 JavaScript 處理錯誤方式的設定。 您可以透過選擇功能表列上的 [工具]**** > [選項]****，並展開 [文字編輯器]**** > [JavaScript/TypeScript]**** > [程式碼驗證]**** 來存取 [程式碼驗證]**** 頁面。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
-[程式碼驗證]  頁面包含下列區段：
+[程式碼驗證]**** 頁面包含下列區段：
 
 ## <a name="javascript-errors"></a>JavaScript 錯誤
 

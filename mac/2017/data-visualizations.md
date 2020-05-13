@@ -1,16 +1,16 @@
 ---
 title: 偵錯 - 資料視覺效果
-description: 偵錯是程式設計中常見且必要的一部分。 Visual Studio for Mac 包含整個套件的功能，可讓偵錯變容易。 本篇文章探討在偵錯工具中檢查物件時，可檢視的不同資料視覺效果。
+description: 偵錯是程式設計當中常見且必要的一部分。 Visual Studio for Mac 包含整個套件的功能，可讓偵錯變容易。 本篇文章探討在偵錯工具中檢查物件時，可檢視的不同資料視覺效果。
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984752"
 ---
 # <a name="data-visualizations"></a>資料視覺效果
@@ -23,7 +23,7 @@ Visual Studio for Mac 包含支援偵錯工具的 UI，允許在偵錯時將變�
 
 下列清單列出在 Visual Studio for Mac 中進行偵錯時可用的許多新視覺效果。
 
-## <a name="point"></a>點
+## <a name="point"></a>Point
 Point/PointF 或 iOS 和 Mac 中的 CGPoint，會在偵錯板中轉譯為顯示 X 和 Y 值的 Tuple：
 
 ![點視覺效果](media/data-visualizations-image10.png)
@@ -38,12 +38,12 @@ Rectangle/RectangleF 或 iOS 和 Mac 的 CGRect 會顯示尺寸和原點。 與�
 
 ![矩形視覺效果](media/data-visualizations-image12.png)
 
-## <a name="coordinate"></a>協調
+## <a name="coordinate"></a>座標
 座標會繪製在地圖上，並將位置釘選到中央：
 
 [座標視覺效果](media/data-visualizations-image13.png)
 
-## <a name="color"></a>色彩
+## <a name="color"></a>Color
 這會顯示 UIColor、CGColor 和 Color 屬性，用來描述彩色預覽、RGBA 元件、色調-飽和-亮度值和色彩的十六進位值：
 
 ![色彩視覺效果](media/data-visualizations-image14.png)
@@ -72,13 +72,13 @@ Rectangle/RectangleF 或 iOS 和 Mac 的 CGRect 會顯示尺寸和原點。 與�
 ### <a name="medium-length-strings"></a>中等長度字串：
 ![中度字串視覺效果](media/data-visualizations-image19.png)
 
-### <a name="editor"></a>編輯：
+### <a name="editor"></a>編輯器：
 
 ![編輯器視覺效果](media/data-visualizations-image21.png)
 
 ## <a name="ienumerable"></a>IEnumerable
 
-IEnumerable 會列舉所有值；透過按一下 [顯示值] 按鈕，即可檢視每個 IEnumerable 的值。 IEnumerable 選項不會顯示物件 (例如 `Array`、`ArrayList`、`List<>`、`Dictionary<,>`) 的值，因為它們具有自己的偵錯工具視覺化檢視。
+IEnumerable 會列舉所有值；透過按一下 [顯示值]**** 按鈕，即可檢視每個 IEnumerable 的值。 IEnumerable 選項不會顯示物件 (例如 `Array`、`ArrayList`、`List<>`、`Dictionary<,>`) 的值，因為它們具有自己的偵錯工具視覺化檢視。
 
 ![IEnumerable 視覺效果](media/data-visualizations-image22.png)
 
@@ -92,16 +92,16 @@ IEnumerable 會列舉所有值；透過按一下 [顯示值] 按鈕，即可檢�
   * 這會顯示基本類型的原始值。
 * **Enum**
   * 這會顯示不含 enum 類型限定詞的欄位值。
-* **Tuple**
+* **元**
   * 以格式 (,) 顯示
-* **Null**
+* **空**
   * 顯示 "null" 值。
-* **URL**
+* **Url**
   * 這會顯示可按式超連結。
 * **IntPtr**
   * 這會顯示 IntPtr 的十六進位表示法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [檢查 [自動] 視窗和 [本機] 視窗中的變數 (Windows 上的 Visual Studio)](/visualstudio/debugger/autos-and-locals-windows)
 - [檢視視覺化檢視中的字串 (Windows 上的 Visual Studio)](/visualstudio/debugger/string-visualizer-dialog-box)

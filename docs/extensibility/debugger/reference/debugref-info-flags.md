@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS | Microsoft Docs
+title: DEBUGREF_INFO_FLAGS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1adab87ed09ca2ff16d837da084d8cc0b76956fe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318360"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737383"
 ---
-# <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-指定要擷取偵錯參考物件的相關資訊。
+# <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
+指定要檢索的有關調試引用物件的哪些資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -58,45 +58,45 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 
 ## <a name="fields"></a>欄位
 `DEBUGREF_INFO_NAME`\
-初始化/使用`bstrName`欄位在結構中。
+初始化/使用結構`bstrName`中的欄位。
 
 `DEBUGREF_INFO_TYPE`\
-初始化/使用`bstrType`欄位在結構中。
+初始化/使用結構`bstrType`中的欄位。
 
 `DEBUGREF_INFO_VALUE`\
-初始化/使用`bstrValue`欄位在結構中。
+初始化/使用結構`bstrValue`中的欄位。
 
 `DEBUGREF_INFO_ATTRIB`\
-初始化/使用`dwAttrib`欄位在結構中。
+初始化/使用結構`dwAttrib`中的欄位。
 
 `DEBUGREF_INFO_REFTYPE`\
-初始化/使用`dwRefType`欄位在結構中。
+初始化/使用結構`dwRefType`中的欄位。
 
 `DEBUGREF_INFO_REF`\
-初始化/使用`pReference`欄位在結構中。
+初始化/使用結構`pReference`中的欄位。
 
 `DEBUGREF_INFO_VALUE_AUTOEXPAND`\
-[值] 欄位應該包含自動展開值，如果有的話，這種類型的物件。
+值欄位應包含此類型物件的自動展開值(如果可用)。
 
 `DEBUGREF_INFO_NONE`\
-表示會設定任何旗標。
+指示未設置任何標誌。
 
 `DEBUGREF_INFO_ALL`\
-表示旗標的遮罩。
+指示標誌的蒙版。
 
 ## <a name="remarks"></a>備註
-這些旗標會傳遞給[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)並[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)方法以指出哪些欄位[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構會進行初始化。
+這些標誌將傳遞給[Enum 子項](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)和[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)方法,以指示要初始化[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構的欄位。
 
-用於`dwFields`隸屬`DEBUG_REFERENCE_INFO`表示哪些欄位是使用和有效時，會傳回這個結構的結構。
+用於`dwFields``DEBUG_REFERENCE_INFO`結構的成員,用於指示在返回結構時使用哪些欄位並有效。
 
-這些值可能會合併的位元`OR`。
+這些值可以稍微結合`OR`。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

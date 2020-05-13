@@ -13,21 +13,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774159"
 ---
 # <a name="instrumentation-method-data-views"></a>檢測方法資料檢視
 本節包含使用檢測方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。
 
 ## <a name="in-this-section"></a>本節內容
-- [摘要檢視](../profiling/summary-view-instrumentation-data.md)
+- [摘要視圖](../profiling/summary-view-instrumentation-data.md)
 
  列出耗用最多時間的函式，以及執行最多個別工作的函式。
 
-- [呼叫樹狀圖檢視](../profiling/call-tree-view-instrumentation-data.md)
+- [調用樹狀檢視](../profiling/call-tree-view-instrumentation-data.md)
 
  顯示階層式樹狀結構中函式的執行路徑。
 
@@ -43,7 +43,7 @@ ms.locfileid: "74774159"
 
  依函式列出程式碼剖析資料。
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 - [函式詳細資料檢視](../profiling/function-details-view.md)
 
  顯示選取的函式及所呼叫函式 (由該所選函式呼叫的函式) 之間關聯性的圖形化圖表。
@@ -53,7 +53,7 @@ ms.locfileid: "74774159"
  針對所有剖析過的處理序列出開始、結束和存留期時間。
 
 ## <a name="related-sections"></a>相關章節
-- [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
+- [採樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
 
  使用取樣方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。
 
@@ -65,5 +65,5 @@ ms.locfileid: "74774159"
 
  使用執行緒爭用方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。
 
-## <a name="see-also"></a>請參閱
-- [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)
+## <a name="see-also"></a>另請參閱
+- [認識檢測資料值](../profiling/understanding-instrumentation-data-values.md)

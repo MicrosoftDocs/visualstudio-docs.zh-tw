@@ -1,5 +1,5 @@
 ---
-title: 將功能表命令當地語系化 |Microsoft Docs
+title: 當地語系化選單指令 |微軟文件
 ms.date: 10/08/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,45 +10,45 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94f71014440c55da0151d0ebd817aac9f5d2c7ed
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: d363b495eb84dc3bfeabd7bf7c5d05fabcbc4d36
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186272"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702951"
 ---
-# <a name="localize-menu-commands"></a>將功能表命令當地語系化
+# <a name="localize-menu-commands"></a>本地化選單指令
 
-您可以為您的 VSPackage 建立當地語系化的 *.vsct*檔案和當地語系化的 *.resx*檔案，然後更新專案檔以併入變更，以提供功能表和工具列命令的當地語系化文字。
+您可以透過為 VSPackage 建立本地化*的 .vsct*檔案和當地語系化的 *.resx*檔案,然後更新專案檔以合併更改,為選單和工具列命令提供當地語系化文本。
 
-如需如何將安裝體驗當地語系化的詳細資訊，請參閱[當地語系化 VSIX 封裝](../extensibility/localizing-vsix-packages.md)。
+關於如何本地化安裝體驗的資訊,請參考[本地端 VSIX 套件](../extensibility/localizing-vsix-packages.md)。
 
-## <a name="localize-command-names"></a>將命令名稱當地語系化
+## <a name="localize-command-names"></a>本地化指令名稱
 
-在 Vspackage 中，功能表命令和工具列按鈕會定義在 *.vsct*檔案中。
+在 VSPackages 中,功能表命令和工具列按鈕在 *.vsct*檔案中定義。
 
-1. 在**方案總管**中，將 *.vsct*檔案的名稱從 *.vsct*變更為*filename. en-us. .vsct*。
+1. 在**解決方案資源管理員中**,將 *.vsct*檔案的名稱從*filename.vsct*更改為*filename.en-US.vsct*。
 
-2. 為每個當地語系化語言製作 *.vsct*的複本。
+2. 為每個本地化語言創建*檔案名.en-US.vsct*的副本。
 
-    為每個複本*檔案名命名。 {Locale}. .vsct*，其中 *{Locale}* 是特定的文化特性名稱。 如需文化特性名稱值的清單，請參閱[Microsoft 指派的地區設定識別碼](/windows/uwp/publish/supported-languages)。
+    命名每個複本*檔名。區域設置\.vsct*,其中 *[區域設置]* 是特定的區域性名稱。 有關區域性名稱值的清單,請參閱[Microsoft 分配的區域設置。](/windows/uwp/publish/supported-languages)
 
-    這些*檔案名.Vsct*檔案將包含您封裝的當地語系化功能表文字。
+    這些檔*名。區域設定.vsct*檔將包含包的本地化選單文本。
 
-3. 開啟每個*檔案名。* 要當地語系化文字的 .vsct 檔案。
+3. 打開每個*檔名。區域設定.vsct*檔案以本地化文字。
 
-   1. 針對特定語言，適當地修改[ButtonText](../extensibility/buttontext-element.md)元素的值。
+   1. 根據需要修改針對特定語言的[ButtonText](../extensibility/buttontext-element.md)元素值。
 
-   2. 如果您將提供當地語系化的圖示，請修改[點陣圖](../extensibility/bitmap-element.md)值以指向目標檔案。
+   2. 如果要提供當地語系化圖示,請修改[Bitmap](../extensibility/bitmap-element.md)值以指向目標檔。
 
-      下列範例顯示用來開啟 [家族樹狀檢視器] 工具視窗之命令的英文和西班牙文按鈕文字。
+      下面的範例顯示打開「家譜資源管理器」工具視窗的命令的英語和西班牙文按鈕文本。
 
-      [*FamilyTree. en-us. .vsct*]
+      [*Mid.en-US.vsct*]
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -61,7 +61,7 @@ ms.locfileid: "73186272"
    </Button>
    ```
 
-    [*FamilyTree.es-es. .vsct*]
+    [*FamilyTree.es-ES.vsct*]
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -74,25 +74,25 @@ ms.locfileid: "73186272"
    </Button>
    ```
 
-## <a name="localize-other-text-resources"></a>將其他文字資源當地語系化
+## <a name="localize-other-text-resources"></a>本地化其他文字資源
 
-命令名稱以外的文字資源是在資源檔（ *.resx*）中定義。
+命令名稱以外的文字資源在資源(*.resx*) 檔案中定義。
 
-1. 將*VSPackage*重新命名為*VSPackage*。
+1. 重新命名*VSPackage.resx*到*VSPackage.en-US.resx*。
 
-2. 為每個當地語系化的語言製作 VSPackage 的每個 *.resx*檔案的複本。
+2. 為每個本地化語言複製*VSPackage.en-US.resx*檔。
 
-     為每個複製*VSPackage 命名。 {Locale} .resx*，其中 *{Locale}* 是特定的文化特性名稱。
+     命名每個副本*VSPackage。區域設置\.resx*,其中 *[區域設置]* 是特定的區域性名稱。
 
-3. 將*resources. .resx*重新命名為*resources*。
+3. 重新命名*資源.resx*到*資源.en-US.resx*。
 
-4. 為每個當地語系化的語言製作一份*Resources.-US .resx*檔案。
+4. 為每個本地化語言複製*參考資料.en-US.resx*檔案。
 
-     為每個複製*資源命名。 {Locale} .resx*，其中 *{Locale}* 是特定的文化特性名稱。
+     命名每個副本*資源。區域設置\.resx*,其中 *[區域設置]* 是特定的區域性名稱。
 
-5. 開啟每個 *.resx*檔案，以適當地修改特定語言和文化特性的字串值。 下列範例會顯示工具視窗標題列的當地語系化資源定義。
+5. 開啟每個 *.resx*檔以修改特定語言和區域性的字串值。 下面的範例顯示了工具視窗的標題列的本地化資源定義。
 
-     [*Resources. en-us .resx*]
+     【*資源.en-US.resx*]
 
     ```xml
     <data name="ToolWindowTitle" xml:space="preserve">
@@ -100,7 +100,7 @@ ms.locfileid: "73186272"
     </data>
     ```
 
-     [*Resources.es-es .resx*]
+     [*Resources.es-ES.resx*]
 
     ```xml
     <data name="ToolWindowTitle" xml:space="preserve">
@@ -108,25 +108,25 @@ ms.locfileid: "73186272"
     </data>
     ```
 
-## <a name="incorporate-localized-resources-into-the-project"></a>將當地語系化的資源併入專案中
+## <a name="incorporate-localized-resources-into-the-project"></a>將本地化資源合併到項目中
 
-您必須修改*assemblyinfo.cs*檔案和專案檔，以併入當地語系化的資源。
+您必須修改*assemblyinfo.cs*檔案和專案檔以合併當地語系化的資源。
 
-1. 從**方案總管**的 [**屬性**] 節點中，在編輯器中開啟*assemblyinfo.cs*或*assemblyinfo* 。
+1. 從**解決方案資源管理員**中的 **「屬性」** 節點中,在編輯器中打開*assemblyinfo.cs*或*assemblyinfo.vb。*
 
-2. 新增下列專案。
+2. 添加以下項目。
 
     ```csharp
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
     ```
 
-     這會將美式英文設定為預設語言。
+     這將美國英語設置為默認語言。
 
 3. 卸載專案。
 
-4. 在編輯器中開啟專案檔。
+4. 在編輯器中打開專案檔。
 
-5. 在根 `Project` 元素中，加入 `PropertyGroup` 元素，其中包含符合您預設語言的 `UICulture` 元素。
+5. 在根`Project`元素`PropertyGroup`中,添加具有與預設`UICulture`語言 匹配的元素的元素。
 
     ```xml
     <PropertyGroup>
@@ -134,11 +134,11 @@ ms.locfileid: "73186272"
     </PropertyGroup>
     ```
 
-     這會將美式英文設定為 Windows Presentation Foundation （WPF）控制項的預設 UI 文化特性。
+     這將美國英語集為 Windows 演示文稿基礎 (WPF) 控件的預設 UI 區域性。
 
-6. 找出包含 `EmbeddedResource` 元素的 `ItemGroup` 元素。
+6. 找到包含`ItemGroup``EmbeddedResource`元素的元素。
 
-7. 在呼叫*VSPackage*的 `EmbeddedResource` 專案中，將 `ManifestResourceName` 元素取代為設定為 `VSPackage.en-US.Resources`的 `LogicalName` 元素，如下所示：
+7. 在`EmbeddedResource`呼叫*VSPackage.en-US.resx*的元素`ManifestResourceName`中,將`LogicalName`元素`VSPackage.en-US.Resources`取代為 設定為的元素,如下所示:
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -147,9 +147,9 @@ ms.locfileid: "73186272"
     </EmbeddedResource>
     ```
 
-8. 針對每個當地語系化的語言，複製 `VsPackage.en-US`的 `EmbeddedResource` 專案，並將複本的**Include**屬性和**LogicalName**元素設定為目標地區設定。
+8. 對於每個本地化`EmbeddedResource`語言,複製的`VsPackage.en-US`元素,並將副本的 **「包括」** 屬性和**邏輯名稱**元素設置為目標區域設置。
 
-9. 針對每個當地語系化的 `VSCTCompile` 專案，加入指向 `Menus.ctmenu`的 `ResourceName` 元素，如下列範例所示：
+9. 到每個本地化`VSCTCompile`元素,新增`ResourceName``Menus.ctmenu`指向的元素,如以下範例所示:
 
     ```xml
     <ItemGroup>
@@ -159,13 +159,13 @@ ms.locfileid: "73186272"
     </ItemGroup>
     ```
 
-10. 儲存專案檔案並重載專案。
+10. 保存專案檔並重新載入專案。
 
 11. 建置專案。
 
-     這會建立主要元件，以及每種語言的資源元件。 如需當地語系化部署程式的詳細資訊，請參閱[當地語系化 VSIX 封裝](../extensibility/localizing-vsix-packages.md)
+     這將為每個語言創建主程式集和資源程式集。 有關本地化部署的資訊,請參閱[本地化 VSIX 套件](../extensibility/localizing-vsix-packages.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)
-- [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)
+- [延伸選單與指令](../extensibility/extending-menus-and-commands.md)
+- [全球化及當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)

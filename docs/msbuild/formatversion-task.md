@@ -13,14 +13,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b36c4eb63c503132aaf434c64249e4a5fdd3872
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 250c73ce0395f278b72c18605f1666290670e20a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595250"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634106"
 ---
 # <a name="formatversion-task"></a>FormatVersion 工作
+
 將修訂編號附加至版本號碼。
 
 - Case #1: Input: Version=\<undefined>;  Revision=\<don't care>;   Output: OutputVersion="1.0.0.0"
@@ -30,6 +31,7 @@ ms.locfileid: "75595250"
 - Case #3: Input: Version="1.0.0.0"  Revision=\<don't care>;  Output: OutputVersion="1.0.0.0"
 
 ## <a name="parameters"></a>參數
+
  下表說明 `FormatVersion` 工作的參數。
 
 |參數|描述|
@@ -40,8 +42,10 @@ ms.locfileid: "75595250"
 |`Version`|選擇性的 `String` 參數。<br /><br /> 指定要格式化的版本號碼字串。|
 
 ## <a name="remarks"></a>備註
- 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>請參閱
+ 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
+
+## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)

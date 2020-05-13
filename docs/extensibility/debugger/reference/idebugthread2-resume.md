@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Resume | Microsoft Docs
+title: IDebugThread2:恢復 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Resume
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a312b18fead71b343fd1b9beafcf36c904bf1b24
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3899dea7c33946588de4308f42b948ede703361a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320140"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718682"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
-繼續執行的執行緒。
+恢復線程的執行。
 
 ## <a name="syntax"></a>語法
 
@@ -41,16 +41,16 @@ int Resume ( 
 
 ## <a name="parameters"></a>參數
 `pdwSuspendCount`\
-[out]在繼續作業之後，傳回的暫停計數。
+[出]返回恢復操作后的掛起計數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 每個呼叫這個方法會遞減暫停計數到達 0 在哪個階段，實際繼續執行。 此暫停計數會顯示在**執行緒**偵錯視窗。
+ 對此方法的每個調用都會取消掛起計數,直到它達到 0,此時實際恢復執行。 此掛起計數顯示在**線程**調試視窗中。
 
- 每次呼叫這個方法，必須是由先前呼叫[暫止](../../../extensibility/debugger/reference/idebugthread2-suspend.md)方法。 暫停計數決定多少次`IDebugThread2::Suspend`到目前為止已呼叫方法。
+ 對於對此方法的每個調用,必須對[掛起](../../../extensibility/debugger/reference/idebugthread2-suspend.md)方法進行以前的調用。 掛起計數確定到目前為止調用`IDebugThread2::Suspend`該方法的次數。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)
+- [暫停](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

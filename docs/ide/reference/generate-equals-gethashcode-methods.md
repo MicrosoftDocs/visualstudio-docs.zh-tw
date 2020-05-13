@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569279"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>在 Visual Studio 中產生 Equals 與 GetHashCode 方法覆寫
@@ -24,7 +24,7 @@ ms.locfileid: "75569279"
 
 **時機：** 當您有某個類型應由一或多個欄位比對，而不是由記憶體中的物件位置比對時，請產生這些覆寫。
 
-**原因：**
+**為什麼：**
 
 - 如果您要實作實值型別，便應該考慮覆寫 **Equals** 方法，以獲得比在 ValueType 上實作預設 Equals 方法更好的效能。
 
@@ -32,7 +32,7 @@ ms.locfileid: "75569279"
 
 - 覆寫 **GetHashCode** 方法以允許類型在雜湊表中正確運作。 如需更多指引，請參閱[等號比較運算子](/dotnet/standard/design-guidelines/equality-operators)。
 
-## <a name="how-to"></a>操作說明
+## <a name="how-to"></a>操作方式
 
 1. 將游標放在型別宣告行的某個位置。
 
@@ -43,17 +43,17 @@ ms.locfileid: "75569279"
 
 1. 接著，執行下列其中一項操作：
 
-   - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
+   - 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
 
-   - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
+   - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
 
    - 按一下 ![出現於左邊界的螺絲起子](../media/screwdriver-icon.png) 圖示。
 
    ![「產生覆寫」預覽](media/overrides-preview-cs.png)
 
-1. 從下拉式功能表選取 [產生 Equals(object)]或 [產生 Equals 和 GetHashCode]。
+1. 從下拉式功能表選取 [產生 Equals(object)]**** 或 [產生 Equals 和 GetHashCode]****。
 
-1. 在 [選取成員]對話方塊中，選取您想要產生方法的成員：
+1. 在 [選取成員]**** 對話方塊中，選取您想要產生方法的成員：
 
     ![[產生覆寫] 對話方塊](media/overrides-dialog-cs.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "75569279"
 
    ![「產生方法」結果](media/overrides-result-cs.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [程式碼產生](../code-generation-in-visual-studio.md)
+- [代碼生成](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

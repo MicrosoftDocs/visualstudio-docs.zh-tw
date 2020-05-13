@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO_FLAGS | Microsoft Docs
+title: FRAMEINFO_FLAGS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO_FLAGS enumeration
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 56990cf324c09764137b344f875322e80e613403
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3510726400623c5ddf3e7a4d58a4903763b91245
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350495"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736804"
 ---
-# <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
-指定要擷取的堆疊框架物件有關的資訊。
+# <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
+指定要檢索有關堆疊幀物件的資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -117,7 +117,7 @@ public enum enum_FRAMEINFO_FLAGS {
 初始化/使用`m_bstrModule`欄位。
 
 `FIF_STACKRANGE`\
-初始化/使用`m_addrMin`和`m_addrMax`（堆疊範圍） 欄位。
+初始化/使用`m_addrMin``m_addrMax`和堆疊範圍) 欄位。
 
 `FIF_FRAME`\
 初始化/使用`m_pFrame`欄位。
@@ -135,76 +135,76 @@ public enum enum_FRAMEINFO_FLAGS {
 初始化/使用`m_pModule`欄位。
 
 `FIF_FUNCNAME_FORMAT`\
-格式函式名稱。 在傳回的結果`m_bstrFunName`欄位和任何其他欄位會填入。
+設定函數名稱的格式。 結果在欄位中傳回`m_bstrFunName`, 並且不會填寫其他欄位。
 
 `FIF_FUNCNAME_RETURNTYPE`\
-將傳回的型別以`m_bstrFuncName`欄位。
+將返回類型添加到`m_bstrFuncName`欄位中。
 
 `FIF_FUNCNAME_ARGS`\
-將加入的引數`m_bstrFuncName`欄位。
+將參數添加到`m_bstrFuncName`欄位中。
 
 `FIF_FUNCNAME_LANGUAGE`\
-新增的語言`m_bstrFuncName`欄位。
+將語言添加到`m_bstrFuncName`欄位中。
 
 `FIF_FUNCNAME_MODULE`\
-將模組名稱來`m_bstrFuncName`欄位。
+將模組名稱添加到`m_bstrFuncName`欄位中。
 
 `FIF_FUNCNAME_LINES`\
-新增的行數`m_bstrFuncName`欄位。
+將行數添加到`m_bstrFuncName`欄位中。
 
 `FIF_FUNCNAME_OFFSET`\
-將加入至`m_bstrFuncName`欄位從行開頭的位元組位移，如果`FIF_FUNCNAME_LINES`指定。 如果`FIF_FUNCNAME_LINES`未指定，或如果沒有可用的行號，以位元組為單位將位移從函式的開頭。
+如果`FIF_FUNCNAME_LINES`指定,`m_bstrFuncName`則從行的開頭向欄位添加偏移量(以位元組為單位)。 如果未`FIF_FUNCNAME_LINES`指定,或者如果行號不可用,則從函數的開頭添加偏移以位元組為單位。
 
 `FIF_FUNCNAME_ARGS_TYPES`\
-將每個函式引數的類型加入`m_bstrFuncName`欄位。
+將每個函數參數的類型添加到`m_bstrFuncName`欄位中。
 
 `FIF_FUNCNAME_ARGS_NAMES`\
-新增至每個函式引數名稱`m_bstrFuncName`欄位。
+將每個函數參數的名稱添加到`m_bstrFuncName`欄位中。
 
 `FIF_FUNCNAME_ARGS_VALUES`\
-將每個函式引數的值加入`m_bstrFuncName`欄位。
+將每個函數參數的值添加到`m_bstrFuncName`欄位中。
 
 `FIF_FUNCNAME_ARGS_ALL`\
-將型別、 名稱和值的所有引數`m_bstrFuncName`欄位。
+將所有參數的類型、名稱和值添加到`m_bstrFuncName`欄位中。
 
 `FIF_ARGS_TYPES`\
-引數類型會擷取並格式化。
+將檢索參數類型並設置格式。
 
 `FIF_ARGS_NAMES`\
-引數名稱會擷取並格式化。
+檢索參數名稱並設置格式。
 
 `FIF_ARGS_VALUES`\
-將引數值會擷取並格式化。
+將檢索參數值並設置格式。
 
 `FIF_ARGS_ALL`\
-擷取並格式化型別、 名稱和所有的引數的值。
+檢索並格式化所有參數的類型、名稱和值。
 
 `FIF_ARGS_NOFORMAT`\
-指定不格式化的引數 （例如，進行不加入開啟和關閉前後的引數清單括號也新增引數之間的分隔符號）。
+指定不格式化參數(例如,不要在參數列表周圍添加首和閉括弧,也不在參數之間添加分隔符)。
 
 `FIF_ARGS_NO_FUNC_EVAL`\
-指定擷取引數的值時，不應該使用函式 （屬性） 評估。
+指定在檢索參數值時不應使用函數(屬性)計算。
 
 `FIF_FILTER_NON_USER_CODE`\
-偵錯引擎是篩選非使用者程式碼框架，因此它們都不包含。
+調試引擎是篩選非用戶代碼幀,以便不包含這些幀。
 
 `FIF_ARGS_NO_TOSTRING`\
-不允許`ToString()`函式評估或格式傳回函式引數時。
+傳回函數`ToString()`參數 時不允許函數計算或格式化。
 
 `FIF_DESIGN_TIME_EXPR_EVAL`\
-從裝載的應用程式定義域，而不是裝載處理序，就應該取得框架資訊。
+幀資訊應從託管應用域(而不是託管進程)獲取。
 
 ## <a name="remarks"></a>備註
-這些旗標會傳遞給[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)並[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)方法以指出哪些欄位是在初始化[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構。
+這些標誌將傳遞給[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)和[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)方法,以指示要在[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構或結構中初始化哪些欄位。
 
-這些旗標也可用來表示欄位[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構會使用和有效時，會傳回這個結構。 這些值可能會合併的位元`OR`。
+這些標誌還用於指示在返回結構時使用[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構的哪些欄位並有效。 這些值可以稍微結合`OR`。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

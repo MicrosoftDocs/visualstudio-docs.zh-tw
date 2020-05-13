@@ -1,5 +1,5 @@
 ---
-title: CustomDataSignature 元素 （Visual Studio 範本） |Microsoft Docs
+title: 自定義數據簽名元素(可視化工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,22 +7,22 @@ helpviewer_keywords:
 - <CustomDataSignature> Element (Visual Studio Templates)
 - CustomDataSignature Element (Visual Studio Templates)
 ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db2b4d089495245d1a37469df1dc43a19be31866
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ec8bae34da0f007bac65f26c4e442c1d03e56d08
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351969"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739437"
 ---
-# <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature 元素 （Visual Studio 範本）
-指定的文字簽章，以尋找自訂資料。
+# <a name="customdatasignature-element-visual-studio-templates"></a>自訂資料簽名元素(視覺化工作室範本)
+指定文字簽章以尋找自訂資料。
 
- \<VSTemplate > \<TemplateData > \<CustomDataSignature >
+ \<樣本>\<樣本資料>\<自訂資料簽名>
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ ms.locfileid: "66351969"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，以及定義如何顯示在**新的專案**或**加入新項目** 對話方塊。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 對樣本進行分類,並定義如何在 **「新專案**」或「**新增新項目**」對話框中顯示範本。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 文字會是具有文字簽章，才能找出的自訂資料的字串。
+ 文字是具有尋找自訂資料所需的文字簽名的字串。
 
 ## <a name="remarks"></a>備註
- `CustomDataSignature` 是選擇性項目。
+  是選擇性元素。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
-- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)

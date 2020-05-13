@@ -1,5 +1,5 @@
 ---
-title: 偵錯工具中的運算式 |Microsoft Docs
+title: 調試器中的運算式 |微軟文檔
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158488"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302522"
 ---
 # <a name="expressions-in-the-debugger"></a>偵錯工具中的運算式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 使用偵錯工具內建函式維持狀態  
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 使用偵錯工具內建函式維持狀態  
  偵錯工具內建函式可讓您呼叫運算式中的某些 C/C++ 函式，而不需要變更應用程式的狀態。  
   
  偵錯工具內建函式：  
@@ -113,7 +113,7 @@ int main()
 |**字串比較**|strcmp、wcscmp、stricmp、_stricmp、_strcmpi、wcsicmp、_wcscmpi、_wcsnicmp、strncmp、wcsncmp、strnicmp、wcsnicmp|  
 |**字串搜尋**|strchr、wcschr、strstr、wcsstr|  
 |**Win32**|GetLastError()、TlsGetValue()|  
-|**Windows 8**|WindowsGetStringLen ()、WindowsGetStringRawBuffer()<br /><br /> 這些函式要求要進行偵錯的處理序必須在 Windows 8 上執行。 對從 Windows 8 裝置產生的傾印檔案進行偵錯也要求 Visual Studio 電腦必須執行 Windows 8。 不過，如果您是對 Windows 8 裝置進行遠端偵錯，則 Visual Studio 電腦可以執行 Windows 7。|  
+|**視窗 8**|WindowsGetStringLen ()、WindowsGetStringRawBuffer()<br /><br /> 這些函式要求要進行偵錯的處理序必須在 Windows 8 上執行。 對從 Windows 8 裝置產生的傾印檔案進行偵錯也要求 Visual Studio 電腦必須執行 Windows 8。 不過，如果您是對 Windows 8 裝置進行遠端偵錯，則 Visual Studio 電腦可以執行 Windows 7。|  
 |**其他**|__log2<br /><br /> 傳回所指定整數的對數底數 2，並捨入至最接近的較小整數。|  
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - 不支援的運算式  
@@ -128,7 +128,7 @@ int main()
   
 - 不支援`Sizeof` 運算子。  
   
-## <a name="c---unsupported-expressions"></a>C# - 不支援的運算式  
+## <a name="c---unsupported-expressions"></a>c# - 不支援的運算式  
   
 ### <a name="dynamic-objects"></a>動態物件  
  您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 在 [監看式] 視窗中評估實作 <xref:System.Dynamic.IDynamicMetaObjectProvider> 的物件時，會加入 [動態檢視] 節點。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。  
@@ -180,7 +180,7 @@ int main()
  不支援匯入別名。  
   
 ### <a name="variable-declarations"></a>變數宣告  
- 您無法在偵錯工具視窗中明確宣告新的變數。 不過，您可以在 [即時運算]  視窗中指派新的隱含變數。 這些隱含變數的範圍限於偵錯工作階段，並且無法在偵錯工具之外存取。 例如，陳述式 `o = 5` 將會隱含地建立新變數 `o` ，並將值 5 指派給該變數。 除非偵錯工具能夠推斷類型，否則這類隱含變數屬於 **Object** 類型。  
+ 您無法在偵錯工具視窗中明確宣告新的變數。 不過，您可以在 [即時運算] **** 視窗中指派新的隱含變數。 這些隱含變數的範圍限於偵錯工作階段，並且無法在偵錯工具之外存取。 例如，陳述式 `o = 5` 將會隱含地建立新變數 `o` ，並將值 5 指派給該變數。 除非偵錯工具能夠推斷類型，否則這類隱含變數屬於 **Object** 類型。  
   
 ### <a name="unsupported-keywords"></a>不支援的關鍵字  
   
@@ -215,7 +215,7 @@ int main()
 - 命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。  
   
 ## <a name="see-also"></a>另請參閱  
- [C++ 中的格式規範](../debugger/format-specifiers-in-cpp.md)   
- [Context Operator (C++)](../debugger/context-operator-cpp.md)   
- [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)   
+ [C++格式指定器](../debugger/format-specifiers-in-cpp.md)   
+ [上下文運算子（C++）](../debugger/context-operator-cpp.md)   
+ [格式規格在C#](../debugger/format-specifiers-in-csharp.md)   
  [虛擬變數](../debugger/pseudovariables.md)

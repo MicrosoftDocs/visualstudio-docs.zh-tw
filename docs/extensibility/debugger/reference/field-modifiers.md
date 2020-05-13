@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS | Microsoft Docs
+title: FIELD_MODIFIERS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_MODIFIERS enumeration
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10538f3728647a716a9f3f964a3deedf2a5ae5c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7a24345174854462a2118df626223a8a299cd7f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324488"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736851"
 ---
-# <a name="fieldmodifiers"></a>FIELD_MODIFIERS
-指定的欄位型別修飾詞。
+# <a name="field_modifiers"></a>FIELD_MODIFIERS
+指定欄位型別的修飾符。
 
 ## <a name="syntax"></a>語法
 
@@ -106,94 +106,94 @@ public enum enum_FIELD_MODIFIERS {
 
 ## <a name="fields"></a>欄位
 `FIELD_MOD_ACCESS_TYPE`\
-表示欄位，無法存取。
+指示無法訪問該欄位。
 
 `FIELD_MOD_ACCESS_PUBLIC`\
-表示欄位具有公用存取。
+指示該字段具有公共訪問許可權。
 
 `FIELD_MOD_ACCESS_PROTECTED`\
-表示欄位已受保護的存取。
+指示該字段具有受保護的訪問許可權。
 
 `FIELD_MOD_ACCESS_PRIVATE`\
-表示欄位具有私用存取。
+指示該字段具有私有訪問許可權。
 
 `FIELD_MOD_NOMODIFIERS`\
-指出欄位有任何修飾詞。
+指示該欄位沒有修飾符。
 
 `FIELD_MOD_STATIC`\
-表示欄位是靜態。
+指示該欄位是靜態的。
 
 `FIELD_MOD_CONSTANT`\
-表示欄位是常數。
+指示該欄位是常量。
 
 `FIELD_MOD_TRANSIENT`\
-表示欄位是暫時性。
+指示該欄位是瞬態的。
 
 `FIELD_MOD_VOLATILE`\
-表示欄位是變動性。
+指示該欄位是可變的。
 
 `FIELD_MOD_ABSTRACT`\
-表示欄位是抽象。
+指示該欄位是抽象的。
 
 `FIELD_MOD_NATIVE`\
-表示欄位是原生。
+指示該欄位是本機欄位。
 
 `FIELD_MOD_SYNCHRONIZED`\
-表示欄位同步處理。
+指示該欄位是同步的。
 
 `FIELD_MOD_VIRTUAL`\
-表示欄位是虛擬。
+指示該欄位是虛擬的。
 
 `FIELD_MOD_INTERFACE`\
-表示欄位是一種介面。
+指示該欄位是介面。
 
 `FIELD_MOD_FINAL`\
-表示欄位是最後一個。
+指示該欄位為最終欄位。
 
 `FIELD_MOD_SENTINEL`\
-表示欄位的 sentinel。
+指示該欄位是哨兵。
 
 `FIELD_MOD_INNERCLASS`\
-表示欄位是內部的類別。
+指示該欄位是內部類。
 
 `FIELD_TYPE_OPTIONAL`\
-表示欄位為選擇性。
+指示該欄位是可選的。
 
 `FIELD_MOD_BYREF`\
-表示欄位的參考引數。 這是專為方法引數。
+指示該欄位是引用參數。 這是專門針對方法參數的。
 
 `FIELD_MOD_HIDDEN`\
-表示欄位必須是隱藏或顯示在另一個內容;比方說，[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]靜態區域變數。
+指示欄位必須隱藏或顯示在其他上下文中;否則,該欄位必須隱藏或顯示在其他上下文中。例如,[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]靜態局部變數。
 
 `FIELD_MOD_MARSHALASOBJECT`\
-表示欄位代表的物件`IUnknown`介面。
+指示該欄位表示具有`IUnknown`介面的物件。
 
 `FIELD_MOD_SPECIAL_NAME`\
-表示欄位具有特殊的名稱，例如`.ctor`建構函式 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]只)。
+指示該欄位具有特殊名稱,例如,`.ctor`對於建構函數[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]( 僅)。
 
 `FIELD_MOD_HIDEBYSIG`\
-表示欄位含有`Overloads`套用至它的關鍵字 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]只)。
+指示該欄位已`Overloads`應用於該欄位[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]( 僅)。
 
 `FIELD_MOD_WRITEONLY`\
-表示欄位是唯寫。 此值不會納入`FIELD_MOD_ALL`，因為這類的唯寫屬性欄位只能使用函式評估。 使用者必須明確地要求`FIELD_MOD_WRITEONLY`欄位。
+指示該欄位是僅寫入的。 此值不包括在`FIELD_MOD_ALL`中 ,因為此類僅寫入欄位的唯一用途是函數評估。 用戶必須顯式請求`FIELD_MOD_WRITEONLY`欄位。
 
 `FIELD_MOD_ACCESS_MASK`\
-表示欄位存取遮罩。
+指示欄位訪問的掩碼。
 
 `FIELD_MOD_MASK`\
-表示欄位修飾詞的遮罩。
+指示欄位修改器的蒙版。
 
 ## <a name="remarks"></a>備註
-用於`dwModifiers`隸屬[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)結構。
+用於`dwModifiers`[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)結構的成員。
 
-這些值也會傳遞給[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)來篩選特定欄位的方法。
+這些值也會傳遞給[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)方法,以篩選特定欄位。
 
 ## <a name="requirements"></a>需求
-標頭： sh.h
+標題: sh.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f44ce4736900fde35716ca3ec9dabb2d55c6df51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588378"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072489"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 工作
 
@@ -40,7 +40,7 @@ ms.locfileid: "75588378"
 
 ## <a name="remarks"></a>備註
 
- 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+ 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單,請參閱[工作延伸基項](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
 
@@ -55,7 +55,7 @@ ms.locfileid: "75588378"
 </Package>
 ```
 
-在此範例中，若您想要修改 `/Package/mp:PhoneIdentity/PhonePublisherId`，請使用
+在此範例中，若您想要修改 `/Package/mp:PhoneIdentity/PhoneProductId`，請使用
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -79,7 +79,7 @@ ms.locfileid: "75588378"
 
 `dn` 在這裡的用途是預設命名空間的假造命名空間前置詞。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

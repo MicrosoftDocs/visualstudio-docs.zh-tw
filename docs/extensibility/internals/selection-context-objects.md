@@ -1,45 +1,45 @@
 ---
-title: 選取範圍內容物件 |Microsoft Docs
+title: 選擇上下文物件 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc4f0aad4dd3f28f28259d0ca439a0cda1a520d9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4e4f33dd0168a667b8f266ea606cecf0c26d62f1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72723906"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705516"
 ---
 # <a name="selection-context-objects"></a>選取項目內容物件
-@No__t_0 的整合式開發環境（IDE）會使用全域選取範圍內容物件，來判斷應該在 IDE 中顯示的內容。 IDE 中的每個視窗都可以有自己的選擇內容物件，並將其推送至全域選取範圍內容。 當該視窗具有焦點時，IDE 會使用視窗中的值來更新全域選取範圍內容。 如需詳細資訊，請參閱對[使用者的意見](../../extensibility/internals/feedback-to-the-user.md)反應。
+集成[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]開發環境 (IDE) 使用全域選擇上下文物件來確定 IDE 中應顯示的內容。 IDE 中的每個視窗都可以將自己的選擇上下文物件推送到全域選擇上下文。 當視窗具有焦點時,IDE 會使用視窗中的值更新全域選擇上下文。 有關詳細資訊,請參閱[向使用者的回饋](../../extensibility/internals/feedback-to-the-user.md)。
 
- IDE 中的每個視窗框架或網站都有一個稱為 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 的服務。 您的 VSPackage 所建立的物件（置於視窗框架中）必須呼叫 `QueryService` 方法，才能取得 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 介面的指標。
+ IDE 中的每個視窗框架或網站都有一個稱為<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>的服務。 由在視窗幀中設置的 VSPackage 創建的物件必須`QueryService`調用 方法以獲取<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>指向介面的指標。
 
- 框架視窗可在啟動時，將部分選取內容資訊，從傳播到全域選取內容。 這項功能適用于可能必須從空白選取範圍開始的工具視窗。
+ 框架視窗可以在啟動時防止其選擇上下文資訊的某些部分傳播到全域選擇上下文。 此功能對於可能需要從空選擇開始的工具視窗很有用。
 
- 修改全域選取範圍內容會觸發 Vspackage 可以監視的事件。 Vspackage 可以藉由實 `IVsTrackSelectionEx` 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> 介面來執行下列工作：
+ 修改全域選擇上下文將觸發 VSPackages 可以監視的事件。 VS套件可以通過`IVsTrackSelectionEx`實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>和 介面執行以下任務:
 
-- 更新階層中目前使用中的檔案。
+- 更新層次結構中的當前活動檔。
 
-- 監視特定元素類型的變更。 例如，如果您的 VSPackage 使用特殊的 [**屬性**] 視窗，您可以在 [作用中**屬性**] 視窗中監視變更，並在需要時重新開機。
+- 監視對某些類型的元素的更改。 例如,如果您的 VSPackage 使用特殊的**屬性**視窗,則可以監視活動**屬性**視窗中的更改,並在需要時重新啟動。
 
-  下列順序顯示選取追蹤的一般教學課程。
+  以下序列顯示了典型的選擇跟蹤過程。
 
-1. IDE 會從新開啟的視窗中抓取選取內容，並將它放在全域選取內容中。 如果選取範圍內容使用 HIERARCHY_DONTPROPAGATE 或 SELCONTAINER_DONTPROPAGATE，則不會將該資訊傳播至全域內容。 如需詳細資訊，請參閱對[使用者的意見](../../extensibility/internals/feedback-to-the-user.md)反應。
+1. IDE 從新打開的窗口檢索選擇上下文,並將其放入全域選擇上下文中。 如果選擇上下文使用HIERARCHY_DONTPROPAGATE或SELCONTAINER_DONTPROPAGATE,則該資訊不會傳播到全域上下文。 有關詳細資訊,請參閱[向使用者的回饋](../../extensibility/internals/feedback-to-the-user.md)。
 
-2. 通知事件會廣播到任何要求的 VSPackage。
+2. 通知事件將廣播給請求通知的任何 VSPackage。
 
-3. VSPackage 是藉由執行活動（例如更新階層、重新開機工具或其他類似工作）所接收的事件來運作。
+3. VSPackage 通過執行更新層次結構、重新啟動工具或其他類似任務等活動來對它接收的事件執行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>
 - [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

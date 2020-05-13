@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ba237b9c763421287e3878a6a98f59032bfd092
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590770"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>如何：在類別設計工具中將集合關聯視覺化
@@ -32,11 +32,11 @@ ms.locfileid: "75590770"
 
 2. 在類別圖表中，展開類別以便顯示屬性和欄位。
 
-3. 在類別中，以滑鼠右鍵按一下欄位或屬性上，然後選擇 [顯示為集合關聯]。
+3. 在類別中，以滑鼠右鍵按一下欄位或屬性上，然後選擇 [顯示為集合關聯]****。
 
 屬性或欄位會顯示為連結所收集類型的關聯線。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：建立類型之間的關聯](how-to-create-associations-between-types.md)
 - [設計類別和類型](designing-and-viewing-classes-and-types.md)

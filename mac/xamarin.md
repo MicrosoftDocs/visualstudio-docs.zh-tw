@@ -6,10 +6,10 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714475"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 行動裝置應用程式開發
@@ -18,11 +18,11 @@ ms.locfileid: "73714475"
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 
-適用于 Xamarin 的 XAML 熱重載。表單內建于8.3 版和更新版本中的 Visual Studio for Mac。 啟用這項功能後，每次您儲存檔案時，變更都會立即反映在執行中的應用程式中。
+XAML XAML 熱重載入 Xamarin.Forms 內置於 8.3 版及更高版本的 Mac 視覺工作室中。 每次保存檔時，啟用此功能的更改都會立即反映在正在運行的應用中。
 
-若要啟用 XAML 熱重載，可以在**Visual Studio > 喜好設定 > 專案 > Xamarin 熱重載** 上，勾選 **啟用 Xamarin 熱重載** 核取方塊。
+XAML 熱重載入可以通過選中在 Visual Studio >**首選項>專案> Xamarin 熱重載入**啟用**Xamarin 熱重載入**核取方塊。
 
-如需有關熱重載的詳細資訊，請參閱檔中的適用于[Xamarin 的 XAML 熱重載指南](/xamarin/xamarin-forms/xaml/hot-reload)。
+有關熱重新載入的詳細資訊，請參閱文檔中的[XAML 熱重裝。Forms 指南](/xamarin/xamarin-forms/xaml/hot-reload)。
 
 ## <a name="android"></a>Android
 
@@ -53,11 +53,11 @@ Xamarin 提供可讓您建立美觀 Mac 應用程式的原生 Mac API 繫結。
 > [!Note]
 > 這些產品只能搭配 Visual Studio Enterprise 訂閱使用。
 
-### <a name="profiler"></a>程式碼剖析工具
+### <a name="profiler"></a>分析工具
 
 Xamarin Profiler 有三種工具可供分析所用。 [Xamarin Profiler 簡介](/xamarin/tools/profiler/index?tabs=macos)指南探討這些工具測量的內容，以及它們如何分析您的應用程式，並釐清每個畫面上顯示的資料意義。
 
-### <a name="inspector"></a>檢查程式
+### <a name="inspector"></a>Inspector
 
 Xamarin Inspector 提供互動式的 C# 主控台與使用者工具。 它可以當作檢查即時應用程式時的偵錯或診斷輔助工具、教學工具、記錄工具或試驗工具。
 

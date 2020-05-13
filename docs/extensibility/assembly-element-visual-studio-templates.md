@@ -1,5 +1,5 @@
 ---
-title: Assembly 項目 （Visual Studio 範本） |Microsoft Docs
+title: 裝配元件(可視化工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - Assembly element [Visual Studio templates]
 - <Assembly> element [Visual Studio templates]
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13c52b7f913e35ace3e0fd41227e27b6c00e90e2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352201"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740041"
 ---
-# <a name="assembly-element-visual-studio-templates"></a>Assembly 項目 （Visual Studio 範本）
-指定的範本會使用該組件的參考加入至專案的組件的相關資訊。
+# <a name="assembly-element-visual-studio-templates"></a>裝配元件(可視化工作室範本)
+指定有關程式集的資訊,範本用於將該程式集的引用添加到專案。
 
- \<VSTemplate > \<TemplateContent >\<參考 >\<參考 >\<組件 >
+ \<樣本>\<範本內容>\<參考>\<參考>\<程式集>
 
 ## <a name="syntax"></a>語法
 
@@ -50,9 +50,9 @@ ms.locfileid: "66352201"
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 此文字會指定要加入至專案，項目樣板具現化時的組件。 這個組件名稱必須指定其中一種以下列方式：
+ 此文字指定在實例化專案樣本時要添加到專案的程式集。 必須透過以下方式的一個指定此程式集名稱:
 
-- 為完整的組件名稱。 例如: 
+- 作為完整的程式集名稱。 例如：
 
     ```
     <Assembly>
@@ -60,7 +60,7 @@ ms.locfileid: "66352201"
     </Assembly>
     ```
 
-- 以簡單文字的參考。 例如: 
+- 作為簡單的文本引用。 例如：
 
     ```
     <Assembly> System </Assembly>
@@ -69,10 +69,10 @@ ms.locfileid: "66352201"
 ## <a name="remarks"></a>備註
  `Assembly` 是 `Reference` 的必要子項目。
 
- `Reference`，`References,`並`Assembly`項目僅適用於在 *.vstemplate*所`Type`屬性值`Item`。
+ `References,``Reference`和`Assembly`元素只能在具有`Type`屬性值`Item`的 *.vstemplate*檔案中使用。
 
 ## <a name="example"></a>範例
- 下列範例說明`TemplateContent`的項目範本的項目。 這段 XML 會將參考加入*System.dll*並*System.Data.dll*組件。
+ 下面的示例說明了項範本`TemplateContent`的元素。 此 XML 添加對*System.dll*和*System.Data.dll*程式集的引用。
 
 ```
 <TemplateContent>
@@ -93,5 +93,5 @@ ms.locfileid: "66352201"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: 使用 Visual Studio for Mac 進行調試
+title: 使用 Mac 的視覺化工作室進行調試
 description: 偵錯是程式設計當中常見且必要的一部分。 作為成熟的 IDE，Visual Studio for Mac 包含整個套件的功能，可讓偵錯變容易。 從安全偵錯到資料視覺效果，本文將說明如何使用在 Visual Studio for Mac 偵錯的完整潛力。
 author: therealjohn
 ms.author: johmil
@@ -7,29 +7,29 @@ ms.date: 12/13/2019
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75397968"
 ---
-# <a name="debugging-with-visual-studio-for-mac"></a>使用 Visual Studio for Mac 進行調試
+# <a name="debugging-with-visual-studio-for-mac"></a>使用 Mac 的視覺化工作室進行調試
 
-Visual Studio for Mac 具有支援 .Net Core、.NET Framework、Unity 和 Xamarin 應用程式的偵錯工具。
+適用于 Mac 的視覺化工作室具有支援 .Net Core、.NET 框架、Unity 和 Xamarin 應用程式的調試器。
 
 Visual Studio for Mac 使用 [*Mono Soft Debugger*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/)，它實作到 Mono 執行階段之中，讓 Visual Studio for Mac 能跨所有平台進行 Managed 程式碼的偵錯。
 
 ## <a name="the-debugger"></a>偵錯工具
 
-Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程式進行 Managed (C# 或 F#) 程式碼的偵錯。 Mono 軟偵錯工具與一般的偵錯工具不同之處在于，它是內建于 Mono 執行時間的合作式偵錯工具;產生的程式碼和 Mono 執行時間會與 IDE 合作，以提供偵錯工具體驗。 Mono 執行階段會透過網路通訊協定公開偵錯功能，您可以在 [Mono 文件](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)中深入了解。
+Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程式進行 Managed (C# 或 F#) 程式碼的偵錯。 單聲道軟調試器不同于常規調試器，因為它是內置於單聲道運行時的合作調試器;生成的代碼和單聲道運行時與 IDE 配合提供調試體驗。 Mono 執行階段會透過網路通訊協定公開偵錯功能，您可以在 [Mono 文件](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)中深入了解。
 
 硬式偵錯工具，例如 [LLDB]( http://lldb.llvm.org/index.html) 或 [GDB]( https://www.gnu.org/software/gdb/)，會控制程式，而被偵錯的程式不必知情或合作，但在您需要偵錯原生 iOS 或 Android 程式碼，偵錯 Xamarin 應用程式時仍然十分有用。
 
-針對 .NET Core 和 ASP.NET Core 應用程式，Visual Studio for Mac 會使用 .NET Core 偵錯工具。 此偵錯工具也是一個合作的偵錯工具，可與 .NET 執行時間搭配使用。
+對於 .NET 核心和 ASP.NET核心應用程式，Mac 的 Visual Studio 使用 .NET Core 調試器。 此調試器也是一個協作調試器，與 .NET 運行時配合使用。
 
 ## <a name="using-the-debugger"></a>使用偵錯工具
 
-若要開始進行任何應用程式的偵錯，請務必確定組態已設為 [偵錯]。 偵錯組態會提供有用的一組工具來支援偵錯，例如中斷點、使用資料的視覺化檢視，以及檢視呼叫堆疊：
+若要開始進行任何應用程式的偵錯，請務必確定組態已設為 [偵錯]****。 偵錯組態會提供有用的一組工具來支援偵錯，例如中斷點、使用資料的視覺化檢視，以及檢視呼叫堆疊：
 
 ![偵錯組態](media/debugging-image_0.png)
 
@@ -39,18 +39,18 @@ Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程�
 
 ![在邊界設定中斷點](media/debugging-image0.png)
 
-您可以移至 [中斷點] 面板，檢視程式碼中已設定的所有中斷點：
+您可以通過訪問**中斷點鍵盤**來查看代碼中設置的所有中斷點：
 
 ![中斷點的清單](media/debugging-image0a.png)
 
 ## <a name="start-debugging"></a>開始偵錯
 
-若要開始進行偵錯工具，請選取 [目標瀏覽器]、[裝置] 或 [模擬器/模擬器]：
+要開始調試，請選擇目標瀏覽器、設備或模擬器/模擬器：
 
-![的](media/debugging-image_0.png)
-Debug 設定 ![選取目標裝置](media/debugging-image1.png)
+![調試配置](media/debugging-image_0.png)
+![選擇目標設備](media/debugging-image1.png)
 
-然後按 [播放] 按鈕，或 **Cmd + return** 部署您的應用程式。 當您到達中斷點時，程式碼反白顯示為黃色：
+然後按 [播放]**** 按鈕，或 **Cmd + return** 部署您的應用程式。 當您到達中斷點時，程式碼反白顯示為黃色：
 
 ![反白顯示已到達中斷點](media/debugging-image2.png)
 
@@ -60,13 +60,13 @@ Debug 設定 ![選取目標裝置](media/debugging-image1.png)
 
 ## <a name="conditional-breakpoints"></a>條件式中斷點
 
-您也可以設定規則，指出應該發生中斷點的情況，這就是新增「條件中斷點」。 若要設定條件中斷點，請存取 [中斷點屬性] 視窗，這可以透過兩種方式進行：
+您也可以設定規則，指出應該發生中斷點的情況，這就是新增「條件中斷點」**。 若要設定條件中斷點，請存取 [中斷點屬性] 視窗****，這可以透過兩種方式進行：
 
 * 若要新增條件中斷點，請在您想要設定中斷點的程式碼行號左邊，以滑鼠右鍵按一下編輯器邊界，然後選取 [新增中斷點]：
 
  ![[中斷點] 操作功能表](media/debugging-image4.png)
 
-* 若要新增現有中斷點的條件，請以滑鼠右鍵按一下中斷點，然後選取 [中斷點屬性]，或在 [中斷點] 板中選取 [編輯中斷點] 按鈕，如下所示：
+* 若要新增現有中斷點的條件，請以滑鼠右鍵按一下中斷點，然後選取 [中斷點屬性]****，或在 [中斷點] 板**** 中選取 [編輯中斷點] 按鈕，如下所示：
 
  ![在 [中斷點] 板中編輯現有的中斷點](media/debugging-image5.png)
 
@@ -83,9 +83,9 @@ Debug 設定 ![選取目標裝置](media/debugging-image1.png)
 下面是四個按鈕：
 
 * **播放** - 這會開始執行程式碼，直到下一個中斷點。
-* **不進入函式** - 這會執行下一行程式碼。 如果下一行是函式呼叫，不進入函式會執行該函式，並在函式「之後」的下一行程式碼停止。
+* **單一步驟**- 這將執行下一行代碼。 如果下一行是函式呼叫，不進入函式會執行該函式，並在函式「之後」** 的下一行程式碼停止。
 * **逐步執行** - 這也會執行下一行程式碼。 如果下一行是函式呼叫，逐步執行會停止在函式的第一行，讓您繼續一行一行地進行函式的偵錯。 如果下一行不是函式，它的行為與「不進入函式」相同。
-* **跳離函式** - 這會回到呼叫目前函式的行。
+* **步出**- 這將返回到調用當前函數的行。
 
 ## <a name="debugging-monos-class-libraries"></a>Mono 類別庫偵錯
 
@@ -93,10 +93,10 @@ Xamarin 產品隨附 Mono 類別庫的原始程式碼，您可以使用它從偵
 
 因為這項功能會在偵錯期間消耗較多的記憶體，所以它預設會關閉。
 
-若要啟用這項功能，請流覽至**Visual Studio for Mac > 喜好設定 > 偵錯工具**，並確定已選取 [**逐步執行外部程式碼**] 選項，如下**所**示：
+要啟用此功能，請流覽到**Visual Studio 以獲取 Mac >首選項>調試器**，並確保**選擇**"**進入外部代碼**"選項，如下圖所示：
 
-![逐步執行外部程式碼選項](media/debugging-image8.png)
+![單步進入外部代碼選項](media/debugging-image8.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [在 Visual Studio (Windows) 中偵錯](/visualstudio/debugger/)

@@ -1,30 +1,30 @@
 ---
-title: 將目錄新增至新的 [專案] 對話方塊 |Microsoft Docs
+title: 將目錄新增到新項目對話框 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - New Project dialog box, extending
 ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e81d09c2a4e97ca5f3da112e593b04b219e6314
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 827e383bba13c9742deb654bf3d680adeb3c109b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328009"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710238"
 ---
-# <a name="add-directories-to-the-new-project-dialog-box"></a>將目錄新增至 [新增專案] 對話方塊
-當您建立新的專案類型時，您也可以註冊新的目錄中**新的專案**對話方塊來顯示它們做為範本使用。 下列程式碼範例說明如何註冊新的目錄，也稱為節點。 在範例中，VSPackage，所公開的範本*CLSID_Package*，註冊。 如此一來，左邊**新的專案**對話方塊會提供加入的節點名稱，取決於*Folder_Label_ResID*資源。 此資源會從 VSPackage 附屬 DLL 載入。
+# <a name="add-directories-to-the-new-project-dialog-box"></a>將目錄新增到「新項目」對話框
+創建新項目類型時,還可以在 **「新專案」** 對話框中註冊新目錄以將其顯示為範本。 以下代碼示例說明瞭如何註冊新目錄(也稱為節點)。 在此範例中,VSPackage 公開的範本*CLSID_Package*, 註冊。 因此,"**新專案"** 對話方塊的左側提供添加的節點,名稱由*Folder_Label_ResID*資源確定。 此資源從 VSPackage 衛星 DLL 載入。
 
- **資料夾**的值代表所在資料夾的 GUID *Folder_Label_ResID*節點會顯示。 在此範例中，代表 GUID**其他專案**資料夾中的**專案類型**窗格**新專案** 對話方塊。 如果**其他專案**值不存在，此標籤位於最上層。
+ **"資料夾**"值表示顯示*Folder_Label_ResID*節點的資料夾的 GUID。 在此範例中,GUID 表示 **「新項目**」對話框「**項目類型」** 窗格中的 **「其他專案**」 。 如果 **「其他專案**」值不存在,則標籤將放置在頂層。
 
- `TemplatesDir`值會指定包含專案範本的目錄的完整路徑。 這些檔案可以是 *.vsz*檔案或要複製的一般範本檔案。
+ 該`TemplatesDir`值指定包含專案範本的目錄的完整路徑。 這些檔可以是 *.vsz*檔案或要複製的典型範本檔。
 
- 如果您指定`TemplatesLocalizedSubDir`，它必須是字串，可命名的子目錄的資源識別碼`TemplatesDir`保存當地語系化的範本。 因為[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]載入字串資源的附屬 DLL 如果您沒有帳戶，每個附屬 DLL 可包含不同的子目錄名稱。 `SortPriority`值指定排序的優先順序。
+ 如果指定`TemplatesLocalizedSubDir`,它必須是命名儲存本地化範本的子目錄`TemplatesDir`的 字串的資源識別碼。 由於[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]如果具有一個子目錄,則從附屬 DLL 載入字串資源,因此每個附屬 DLL 可以包含不同的子目錄名稱。 該`SortPriority`值指定排序優先順序。
 
 ```
 NoRemove NewProjectTemplates
@@ -46,6 +46,6 @@ NoRemove NewProjectTemplates
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)
-- [將項目新增至 [加入新項目] 對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
-- [將目錄新增至 [加入新項目] 對話方塊](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+- [註冊項目和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)
+- [新增項目新增項目新增項目對話框](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [新增項目新增的項目中](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

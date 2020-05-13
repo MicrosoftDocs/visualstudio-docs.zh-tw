@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::Abort | Microsoft Docs
+title: IDebugExpression2::中止 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::Abort
 ms.assetid: 4fcb712e-1bdb-4b75-a440-35cc79ee147e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c85a746ab4c916a0aae81b40dd3539264c5572f6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5de2e34a8ae1e038c2109627099dacc5bd03a1ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326029"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729769"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
-這個方法會取消非同步運算式評估為已啟動，藉由呼叫[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法。
+此方法取消由對[評估 Async](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法調用啟動的非同步表達式計算。
 
 ## <a name="syntax"></a>語法
 
@@ -38,10 +38,10 @@ int Abort();
 ```
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 後取消非同步運算式評估，則都不會傳送[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)事件回撥的事件傳遞給[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)或[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法。
+ 取消非同步表示式計算後,不要向傳遞給[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)或[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法的事件回檔發送[IDebugExpressionExpressionExpressionExpressionCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)事件。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

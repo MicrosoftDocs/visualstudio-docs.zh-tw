@@ -1,5 +1,5 @@
 ---
-title: 查詢編輯查詢儲存（原始檔控制 VSPackage） |Microsoft Docs
+title: 查詢編輯查詢儲存(來源控制 VS 套件) |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,33 +7,33 @@ helpviewer_keywords:
 - Query Edit Query Save events
 - source control packages, Query Edit Query Save events
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be12297bdaeb112d7421b02da1153ed62d6d14f8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c09ac0cb4f51b8f2484b95d403ff6d0445631479
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724776"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705964"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>查詢編輯查詢儲存 (原始檔控制 VSPackage)
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 編輯器可以廣播查詢編輯查詢儲存（QEQS）事件。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 原始檔控制存根會執行 QEQS 服務，使其成為 QEQS 事件的收件者。 這些事件接著會委派給目前作用中的原始檔控制 VSPackage。 作用中的原始檔控制 VSPackage 會實作用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 和其方法。 @No__t_0 介面的方法通常會在第一次編輯檔之前，以及在儲存檔之前立即呼叫。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]編輯人員可以廣播查詢編輯查詢保存 (QEQS) 事件。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]源代碼管理存根實現 QEQS 服務,因此它是 QEQS 事件的接收者。 然後,這些事件將委派給當前活動的原始程式碼管理 VSPackage。 活動源控件 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>實現 及其方法。 `IVsQueryEditQuerySave2`介面的方法通常在文檔首次編輯之前和文檔保存之前立即調用。
 
-## <a name="queryeditquerysave-events"></a>QueryEditQuerySave 事件
- [原始檔控制 VSPackage] 必須藉由執行 `IVsQueryEditQuerySave2` 介面和必要的方法來處理 QEQS 事件。 以下是 VSPackage 至少必須執行之兩種方法的簡短描述。 實際的執行必須符合原始檔控制模型的邏輯。
+## <a name="queryeditquerysave-events"></a>查詢編輯儲存事件
+ 原始碼管理 VSPackage 必須`IVsQueryEditQuerySave2`透過實作介面和必要的方法來處理 QEQS 事件。 以下是 VSPackage 必須至少實現的兩種方法的簡要說明。 實際實現必須符合原始程式碼管理模型的邏輯。
 
-### <a name="queryeditfiles-method"></a>QueryEditFiles 方法
- 當任何專案或編輯器想要修改檔案時，就會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>。 在理想的情況下，這個方法會在檔案被修改以及儲存檔案*之前*呼叫。 當叫用時，`IVsQueryEditQuerySave2::QueryEditFiles` 方法會檢查指定的檔案是否在原始檔控制之下、是否需要簽出，以及是否可以重載它們。 如果情況導致檔案無法編輯，`IVsQueryEditQuerySave2::QueryEditFiles` 方法會指示呼叫程式取消編輯。 呼叫者也可以指定叫用模式。 在「無訊息」模式中，這個方法只有在不會造成 UI 出現時才會採取動作。 如果無法避免 UI，則必須傳回旗標來表示問題。
+### <a name="queryeditfiles-method"></a>查詢編輯檔案方法
+ 您<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>可以變更檔案時, 將呼叫 。 理想情況下,在修改檔並保存檔*之前*調用此方法。 呼叫時,`IVsQueryEditQuerySave2::QueryEditFiles`該方法會檢查給定檔是否處於原始碼管理之下,是否需要簽出這些檔,以及是否可以重新載入這些檔。 如果情況阻止檔可編輯,`IVsQueryEditQuerySave2::QueryEditFiles`則該方法會告訴調用程式取消編輯。 調用方也可以指定調用模式。 在"靜默"模式下,此方法僅在它不導致出現任何 UI 時才執行操作。 如果 UI 不可避免,則必須返回標誌以指示問題。
 
- 方法會以交易方式運作;也就是說，如果在單一檔案上取消編輯，則會取消所有檔案的編輯。 相反地，如果允許編輯，則會允許所有檔案使用。 如果這個方法可以針對一組指定的檔案編輯一次，它就必須一律允許在相同檔案集的後續呼叫上進行編輯。 [允許編輯] 迴圈會繼續進行，直到檔案關閉、儲存和重載為止;直到其屬性（屬性）變更為止;或直到原始檔控制封裝變更為止。 執行 `IVsQueryEditQuerySave2::QueryEditFiles` 方法時要考慮的案例包括多個檔案、特殊檔案、從使用者取消和記憶體中的編輯。
+ 該方法以事務方式運行;也就是說,如果單個檔上取消編輯,則取消所有檔的編輯。 相反,如果允許編輯,則允許對所有文件進行編輯。 如果此方法允許對一組給定的文件進行編輯一次,則必須始終允許對同一組檔的後續調用進行編輯。 允許編輯迴圈將繼續,直到關閉、保存和重新載入檔;直到他們的屬性(屬性)發生變化;或直到源控制包被更改。 實現`IVsQueryEditQuerySave2::QueryEditFiles`該方法時需要考慮的情況包括多個檔、特殊文件、使用者取消和記憶體內編輯。
 
-### <a name="querysavefiles-method"></a>QuerySaveFiles 方法
- 當任何專案或編輯器需要儲存一組檔案時，就會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>。 當叫用時，`IVsQueryEditQuerySave2::QuerySaveFiles` 方法會檢查指定的檔案是否為唯讀，以及它們是否在原始檔控制之下。 如果需要簽出檔案，則會將呼叫委派給原始檔控制封裝。 如果情況導致無法儲存檔案，`IVsQueryEditQuerySave2::QuerySaveFiles` 方法就必須告知編輯器取消儲存。 如同 `IVsQueryEditQuerySave2::QueryEditFiles` 方法，呼叫者可以指定調用模式。 在「無訊息」模式中，這個方法只有在不會造成 UI 出現時才會採取動作。 如果無法避免 UI，則必須傳回旗標來表示問題。
+### <a name="querysavefiles-method"></a>查詢儲存檔案方法
+ 您<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>可以在任何項目或編輯器需要儲存一組檔案時,將呼叫 。 呼叫時,`IVsQueryEditQuerySave2::QuerySaveFiles`該方法會檢查給定檔是否為唯讀檔,以及這些檔案是否處於原始碼管理之下。 如果需要簽出檔,則調用將委派給原始程式碼管理包。 如果情況阻止保存檔,`IVsQueryEditQuerySave2::QuerySaveFiles`則方法必須告訴編輯器取消保存。 與方法`IVsQueryEditQuerySave2::QueryEditFiles`一樣,調用方可以指定調用模式。 在"靜默"模式下,此方法僅在它不導致出現任何 UI 時才執行操作。 如果 UI 不可避免,則必須返回標誌以指示問題。
 
- 這個方法的行為必須以交易方式運作;也就是說，如果在單一檔案上取消儲存，則會取消所有檔案的儲存。 相反地，如果允許儲存，所有檔案都必須允許它。 如同 `IVsQueryEditQuerySave2::QueryEditFiles` 方法，要考慮執行 `IVsQueryEditQuerySave2::QuerySaveFiles` 方法的案例包括多個檔案、特殊檔案、取消使用者和記憶體中編輯。
+ 此方法必須以事務方式運行;也就是說,如果單個檔中的保存被取消,則所有檔的保存將被取消。 相反,如果允許保存,則必須允許所有文件進行保存。 與該方法一`IVsQueryEditQuerySave2::QueryEditFiles`樣,在`IVsQueryEditQuerySave2::QuerySaveFiles`實現 該方法時需要考慮的案例包括多個檔、特殊檔、使用者取消和記憶體內編輯。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>

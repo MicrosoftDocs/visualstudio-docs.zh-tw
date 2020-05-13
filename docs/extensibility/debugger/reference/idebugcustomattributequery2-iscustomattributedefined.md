@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined |Microsoft Docs
+title: IDebug自定義屬性查詢2::是自定義屬性定義 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e2ecd70eeeddb4b61d8ed8d307bd579c68ef519
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7be649a5d65f88d8263bbe8950fda1a157855ed2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335831"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732543"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-判斷名稱是否存在的自訂屬性。
+確定自定義屬性是否存在名稱。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int IsCustomAttributeDefined(
 
 ## <a name="parameters"></a>參數
 `pszCustomAttributeName`\
-[in]字串，包含要尋找的自訂屬性的名稱。
+[在]包含要尋找的自訂屬性的名稱的字串。
 
 ## <a name="return-value"></a>傳回值
- 會傳回 S_OK 如果自訂屬性定義此欄位中，否則會傳回 S_FALSE。
+ 如果在此欄位上定義了自定義屬性,則返回S_OK,否則返回S_FALSE。
 
 ## <a name="remarks"></a>備註
- 若要取得自訂屬性相關聯的屬性位元組，請呼叫[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)方法。
+ 要取得與自定義屬性關聯的屬性位元組,請呼叫[GetCustom屬性ByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

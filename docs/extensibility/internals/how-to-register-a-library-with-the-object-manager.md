@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用物件管理員註冊程式庫 |Microsoft Docs
+title: 如何:向物件管理器註冊庫 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,36 +9,36 @@ helpviewer_keywords:
 - IVsObjectManager2 interface, registering library with object manager
 - libraries, symbol-browsing tools
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7481b9710237bcd1e624b07f8985b5708f271bef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4bd1032d2ba67a0c0f3338560a80038ed3215531
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312058"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707935"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>作法：使用物件管理員註冊程式庫
-符號瀏覽工具，例如**類別檢視**，**物件瀏覽器**，**呼叫瀏覽器**並**尋找符號結果**，讓您檢視在您的專案或外部元件的符號。 這些符號包括命名空間、 類別、 介面、 方法和其他語言項目。 程式庫追蹤這些符號，並公開 （expose） 才能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員，以填入資料的工具。
+# <a name="how-to-register-a-library-with-the-object-manager"></a>如何:向物件管理員註冊庫
+符號瀏覽工具(如**類檢視**、**物件瀏覽器**、**調用瀏覽器**和**尋找符號結果**)使您能夠查看專案或外部元件中的符號。 這些符號包括命名空間、類、介面、方法和其他語言元素。 庫跟蹤這些符號,並將其公開給使用數據填充工具[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]的物件管理器。
 
- 物件管理員會追蹤的所有可用媒體櫃。 每個程式庫必須向 object manager 之後，才提供符號瀏覽工具的符號。
+ 物件管理員追蹤所有可用的庫。 在提供符號流覽工具的符號之前,每個庫都必須向物件管理器註冊。
 
- 一般而言，當載入 VSPackage 註冊程式庫。 不過，也可以在另一次所需。 VSPackage 關閉時，您取消註冊文件庫。
+ 通常,在 VSPackage 載入時註冊庫。 但是,可以根據需要在另一時間完成。 當 VSPackage 關閉時,您將取消註冊庫。
 
- 若要註冊文件庫，請使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A>方法。 Managed 程式碼程式庫，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>方法。
+ 要註冊庫,請使用方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A>。 對託管碼庫,請使用方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>。
 
- 若要取消註冊文件庫，請使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>方法。
+ 要取消註冊庫,請使用方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>。
 
- 若要取得物件管理員 中，參考<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>，傳遞<xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager>服務識別碼`GetService`方法。
+ 要取得對物件管理員的引用,<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2><xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager>將服務 ID`GetService`傳遞給方法。
 
-## <a name="register-and-unregister-a-library-with-the-object-manager"></a>註冊和取消註冊文件庫，與物件管理員
+## <a name="register-and-unregister-a-library-with-the-object-manager"></a>向物件管理員註冊和取消註冊庫
 
-### <a name="to-register-a-library-with-the-object-manager"></a>若要使用物件管理員註冊程式庫
+### <a name="to-register-a-library-with-the-object-manager"></a>向物件管理員註冊庫
 
-1. 建立程式庫。
+1. 創建庫。
 
     ```vb
     Private m_CallBrowserLibrary As CallBrowser.Library = Nothing
@@ -55,7 +55,7 @@ ms.locfileid: "66312058"
 
     ```
 
-2. 取得物件的參考<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>輸入，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>方法。
+2. 獲取對<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>類型物件的引用,並調<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>用 方法。
 
     ```vb
     Private Sub RegisterLibrary()
@@ -109,9 +109,9 @@ ms.locfileid: "66312058"
 
     ```
 
-### <a name="to-unregister-a-library-with-the-object-manager"></a>若要取消登錄程式庫，與物件管理員
+### <a name="to-unregister-a-library-with-the-object-manager"></a>向物件管理員取消註冊庫
 
-1. 取得物件的參考<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>輸入，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>方法。
+1. 獲取對<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>類型物件的引用,並調<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>用 方法。
 
     ```vb
     Private Sub UnregisterLibrary()
@@ -165,6 +165,6 @@ ms.locfileid: "66312058"
     ```
 
 ## <a name="see-also"></a>另請參閱
-- [舊版語言服務擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)
+- [傳統語言服務可擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)
 - [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)
-- [如何：公開 （expose) 至物件管理員程式庫所提供的符號清單](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [如何:向物件管理員公開函式庫提供的符號清單](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

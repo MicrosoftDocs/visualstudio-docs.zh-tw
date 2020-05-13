@@ -1,5 +1,5 @@
 ---
-title: IntelliSenseHostFlags | Microsoft Docs
+title: IntelliSenseHostFlags |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - IntelliSense, IntellisenseHostFlags enumeration
 - IntellisenseHostFlags enumeration
 ms.assetid: 0930640b-eb84-48ef-a8f7-d4268f55c99c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d0e66f70b91985882df5691d05175995b4f6ca8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328083"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710262"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
-指定 IntelliSense 主機旗標。
+指定 IntelliSense 主機標誌。
 
 ## <a name="syntax"></a>語法
 
@@ -40,14 +40,14 @@ enum IntellisenseHostFlags
 
 |成員|描述|
 |-------------|-----------------|
-|`IHF_READONLYCONTEXT`|內容緩衝區是唯讀的。|
-|`IHF_NOSEPARATESUBJECT`|沒有主旨文字。 內容緩衝區包含 IntelliSense 目標 (表示`!IHF_READONLYCONTEXT`)。|
-|`IHF_SINGLELINESUBJECT`|無法多-列支援的主旨文字。|
+|`IHF_READONLYCONTEXT`|上下文緩衝區是唯讀的。|
+|`IHF_NOSEPARATESUBJECT`|無主題文本。 上下文緩衝區包含 IntelliSense 目標`!IHF_READONLYCONTEXT`(暗示 )。|
+|`IHF_SINGLELINESUBJECT`|主題文本不支援多行。|
 |`IHF_FORCECOMMITTOCONTEXT`|與 `CanCommitIntoReadOnlyBuffer` 相同。|
-|`IHF_OVERTYPE`|編輯 （在主旨或內容） 應該在取代模式中。|
+|`IHF_OVERTYPE`|編輯(在主題或上下文中)應在過度類型模式下完成。|
 
 ## <a name="requirements"></a>需求
- SingleFileeditor.idl
+ 單檔案編輯器.idl
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

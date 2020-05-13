@@ -1,5 +1,9 @@
 - name: Visual Studio 中的測試工具
-  href: improve-code-quality.md
+  href: index.yml
+- name: 總覽
+  items:
+    - name: 初步認識測試工具
+      href: improve-code-quality.md
 - name: 單元測試
   items:
     - name: 單元測試工具概觀
@@ -14,14 +18,10 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
-        - name: HOW TO：使用 IntelliTest 產生單元測試
-          href: generate-unit-tests-for-your-code-with-intellitest.md
         - name: 總覽
-          href: intellitest-manual/introduction.md
-        - name: 使用者入門
-          href: intellitest-manual/getting-started.md
-        - name: 章節索引
           href: intellitest-manual/index.md
+        - name: 作法：使用 IntelliTest 產生單元測試
+          href: generate-unit-tests-for-your-code-with-intellitest.md
         - name: 測試產生
           href: intellitest-manual/test-generation.md
         - name: 動態執行符號

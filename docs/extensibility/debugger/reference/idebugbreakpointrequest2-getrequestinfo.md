@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetRequestInfo | Microsoft Docs
+title: IDebugBreakpoint請求2::獲取請求資訊 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2::GetRequestInfo
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3523c72fa1a7ea14fbf1b4a69caf04cfebb82911
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 995272ccfd7a2bcac5c7c934413d6be0197de17d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352904"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734945"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
-取得描述此中斷點要求的中斷點要求資訊。
+獲取描述此斷點請求的斷點請求資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int GetRequestInfo( 
 
 ## <a name="parameters"></a>參數
 `dwFields`\
-[in]從旗標的組合[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉，決定哪些欄位`pBPRequestInfo`參數都必須填寫。
+[在][BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)枚舉中的標誌的組合,用於確定要填充參數`pBPRequestInfo`中的 欄位。
 
 `pBPRequestInfo`\
-[out]指定[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構以填入中斷點要求的描述。
+[出]指定要用斷點請求的說明填充[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
- 下列範例示範如何實作這個方法來簡單`CDebugBreakpointRequest`公開的物件[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)介面。
+ 下面的範例展示如何為公開`CDebugBreakpointRequest`[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)介面的簡單物件實現此方法。
 
 ```
 HRESULT CDebugBreakpointRequest::GetRequestInfo(

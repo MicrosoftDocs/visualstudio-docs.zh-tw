@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: db1a551e20c597f98052471910bcb696c878675f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62429818"
 ---
 # <a name="refactor-python-code"></a>重構 Python 程式碼
@@ -28,8 +28,8 @@ Visual Studio 提供數個可自動轉換和清除 Python 原始程式碼的命�
 
 ## <a name="rename"></a>重新命名
 
-1. 以滑鼠右鍵按一下您要重新命名的識別項並選取 [重新命名]，或將插入點放在該識別項中並選取 [編輯] > [重構] > [重新命名] 功能表命令 (**F2**)。
-2. 在出現的 [重新命名] 對話方塊中，輸入識別項的新名稱並選取 [確定]：
+1. 以滑鼠右鍵按一下您要重新命名的識別項並選取 [重新命名]****，或將插入點放在該識別項中並選取 [編輯]**** > [重構]**** > [重新命名]**** 功能表命令 (**F2**)。
+2. 在出現的 [重新命名]**** 對話方塊中，輸入識別項的新名稱並選取 [確定]****：
 
    ![[重新命名] 的新識別項名稱提示](media/code-refactor-rename-1.png)
 
@@ -37,17 +37,17 @@ Visual Studio 提供數個可自動轉換和清除 Python 原始程式碼的命�
 
    ![選取套用變更的位置的 [重新命名 (Rename)] 對話方塊](media/code-refactor-rename-2.png)
 
-4. 選取 [套用] 以變更您的原始程式碼檔。 (這個動作無法回復。)
+4. 選取 [套用]**** 以變更您的原始程式碼檔。 (這個動作無法回復。)
 
 ## <a name="extract-method"></a>擷取方法
 
 1. 選取要擷取到另一個方法的程式碼或運算式。
-2. 選取 [編輯] > [重構] > [擷取方法] 功能表命令，或輸入 **Ctrl**+**R** > **M**。
+2. 選擇 **"編輯** > **重構** > **提取"方法**功能表命令或鍵入**Ctrl**+**R** > **M**。
 3. 在出現的對話方塊中，輸入新的方法名稱，指定將它擷取到何處，並選取所有結束變數。 未選取要結束的變數會轉變成方法引數︰
 
    ![[擷取方法] 對話方塊](media/code-refactor-extract-method-1.png)
 
-4. 選取 [確定]，就會依此修改程式碼︰
+4. 選取 [確定]****，就會依此修改程式碼︰
 
    ![擷取方法的結果](media/code-refactor-extract-method-2.png)
 
@@ -71,7 +71,7 @@ Visual Studio 會嘗試篩選出未實際定義於模組中的成員，例如已
 
 撰寫程式碼時，對於完全未使用的模組，很容易得到 `import` 陳述式。 由於 Visual Studio 會分析您的程式碼，因此可以查看範圍內是否使用了匯入的名稱 (陳述式即出現在該範圍下方)，以自動判斷 `import` 陳述式是否有必要。
 
-以滑鼠右鍵按一下編輯器中的任意處並選取 [移除匯入]，這樣會提供選項讓您從 [所有範圍] 或僅從 [目前的範圍] 移除：
+以滑鼠右鍵按一下編輯器中的任意處並選取 [移除匯入]****，這樣會提供選項讓您從 [所有範圍]**** 或僅從 [目前的範圍]**** 移除：
 
 ![[移除匯入] 功能表](media/code-refactor-remove-imports-1.png)
 

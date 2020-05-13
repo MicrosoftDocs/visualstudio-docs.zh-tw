@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 202c30b1786e7e3ddb27583ddaeda9180d680b53
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774883"
 ---
 # <a name="how-to-serialize-symbol-information"></a>如何：序列化符號資訊
@@ -26,15 +26,15 @@ ms.locfileid: "74774883"
 
 ### <a name="to-automatically-serialize-symbol-information"></a>自動序列化符號資訊
 
-1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。
+1. 在 **[工具]** 功能表上，按一下 **[選項]**。
 
-     **[選項]** 對話方塊將會顯示。
+     [選項]**** 對話方塊即會出現。
 
-2. 按一下 [效能工具]。
+2. 按一下 [效能工具]****。
 
-3. 在 [一般設定] 下方，選取 [自動序列化符號資訊]。
+3. 在 [一般設定]**** 下方，選取 [自動序列化符號資訊]****。
 
-## <a name="see-also"></a>請參閱
-- [設定效能工作階段](../profiling/configuring-performance-sessions.md)
-- [操作說明：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)
+## <a name="see-also"></a>另請參閱
+- [配置性能會話](../profiling/configuring-performance-sessions.md)
+- [如何：引用 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)
 - [如何：儲存分析的報告檔案](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

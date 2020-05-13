@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::CreateTypeFromPrimitive | Microsoft Docs
+title: IDebugcomPlus符號提供者::從原始創建類型 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 - CreateTypeFromPrimitive
 ms.assetid: 37213cc2-a038-42ea-9b28-3ae40d4cfe69
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c20ba30a7212c89048d18fab3b20c57260ec5185
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b5759110c60bf25c0197c370bebdd45f71c2a22
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338879"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734151"
 ---
 # <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
-從指定的基本類型建立類型。
+從指定的基元類型創建類型。
 
 ## <a name="syntax"></a>語法
 
@@ -44,19 +44,19 @@ int CreateTypeFromPrimitive(
 
 ## <a name="parameters"></a>參數
 `dwPrimType`\
-[in]值從[CorElementType 列舉](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)表示基本類型。
+[在]表示基元[類型的 CorElementType 枚舉中](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)的值。
 
 `pAddress`\
-[in]位址物件，表示所[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
+[在]由[IDebug 位址](../../../extensibility/debugger/reference/idebugaddress.md)介面表示的位址物件。
 
 `ppType`\
-[in]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述類型的物件。
+[在]返回描述該類型的[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。
+下面的範例展示如何為公開[IDebugComPlusSymbol提供程式](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbol提供程式**物件實現此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::CreateTypeFromPrimitive(

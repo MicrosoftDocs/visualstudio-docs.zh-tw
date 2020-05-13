@@ -1,5 +1,5 @@
 ---
-title: SEEK_START | Microsoft Docs
+title: SEEK_START |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - SEEK_START enumeration
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: de4aa0214ab97c330ddfb689076a2c378c4d227a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca1c38027123ca5147a6a7ab1fa6a3f92966409a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329301"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713594"
 ---
-# <a name="seekstart"></a>SEEK_START
-指定要啟動的反組譯碼資料流中搜尋的位置。
+# <a name="seek_start"></a>SEEK_START
+指定在拆解流中開始查找的位置。
 
 ## <a name="syntax"></a>語法
 
@@ -50,29 +50,29 @@ public enum enum_SEEK_START { 
 
 ## <a name="fields"></a>欄位
  `SEEK_START_BEGIN`\
- 搜尋目前文件的開頭開始。
+ 在當前文件的開頭開始查找。
 
  `SEEK_START_END`\
- 啟動搜尋目前文件的結尾。
+ 在當前文件的末尾開始查找。
 
  `SEEK_START_CURRENT`\
- 啟動搜尋目前文件目前的位置。
+ 開始在當前文件的當前位置查找。
 
  `SEEK_START_CODECONTEXT`\
- 開始搜尋在目前文件指定的程式碼內容。
+ 開始在當前文件的給定代碼上下文中尋找。
 
  `SEEK_START_CODELOCID`\
- 開始搜尋在指定的程式碼位置識別碼。 透過呼叫所取得的程式碼位置識別項[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)。
+ 開始在給定的代碼位置標識符處查找。 代碼位置識別碼是透過調用[GetCurrentlocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)獲得的。
 
 ## <a name="remarks"></a>備註
- 作為引數[搜尋](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)方法。
+ 作為參數傳遞給[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)方法。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

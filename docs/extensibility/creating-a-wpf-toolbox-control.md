@@ -1,5 +1,5 @@
 ---
-title: 建立 WPF 工具箱控制項 |Microsoft Docs
+title: 建立 WPF 工具箱控制件 |微軟文件
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,43 +7,43 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc124c767ac9a84e62c17fb868e1dc114642f884
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c1400efb0095760bf1cee302dd33dcf6ebb90152
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349036"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739576"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>建立 WPF 工具箱控制項
 
-(Windows Presentation Framework) 的 WPF 工具箱控制項 範本可讓您建立會自動新增至 WPF 控制項**工具箱**安裝擴充功能時。 本逐步解說示範如何使用範本來建立**工具箱**可以散發給其他使用者的控制項。
+以 WPF(Windows 展示框架)工具箱控制樣本,您可以創建在安裝擴充名時自動添加到**工具箱**中的 WPF 控制件。 本演練演示如何使用範本創建可分發給其他使用者**的工具箱**控件。
 
-從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+從 Visual Studio 2015 開始,您不會從下載中心安裝 Visual Studio SDK。 它作為可選功能包含在可視化工作室設置中。 以後還可以安裝 VS SDK。 有關詳細資訊,請參閱[安裝可視化工作室 SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-the-toolbox-control"></a>建立工具箱控制項
 
-### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>建立 WPF 工具箱控制項擴充功能
+### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>使用 WPF 工具箱控制器
 
-1. 建立 VSIX 專案，名為`MyToolboxControl`。 您可以找到在 VSIX 專案範本**新的專案**藉由搜尋 「 vsix 」 的對話方塊。
+1. 創建名為的`MyToolboxControl`VSIX 專案。 您可以通過搜尋"vsix"在 **"新項目**"對話框中找到 VSIX 專案範本。
 
-2. 當專案開啟時，新增**WPF 工具箱控制項**名為的項目範本`MyToolboxControl`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#**  > **擴充性**，然後選取**WPF 工具箱控制項**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為*MyToolboxControl.cs*。
+2. 打開專案時,添加名為`MyToolboxControl`**的 WPF 工具箱控制**項範本。 在**解決方案資源管理器**中,右鍵單擊專案節點並選擇「**添加新** > **項**」。 在 **'新增新項目'** 對話框中,跳到**視覺化 C#** > **可擴充性**並選擇**WPF 工具箱控制件**。 在視窗底部的**名稱「 欄**位中」,將指令檔名變更為*MyToolboxControl.cs*。
 
-    方案現在包含使用者控制項、 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> ，將控制項加入至**工具箱**，和**Microsoft.VisualStudio.ToolboxControl**資產的 VSIX 資訊清單中的項目 部署。
+    該解決方案現在包含一個使用者控件,一`ProvideToolboxControlAttribute`<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>個將控制項添加到**工具箱**,以及**Microsoft.VisualStudio.Toolbox控制**資產條目,用於部署。
 
-#### <a name="to-create-the-control-ui"></a>若要建立 UI 控制項
+#### <a name="to-create-the-control-ui"></a>建立控制者介面
 
-1. 開啟*MyToolboxControl.xaml*設計工具中。
+1. 在設計器中打開*MyToolboxControl.xaml。*
 
     設計工具會顯示包含了 <xref:System.Windows.Controls.Button> 控制項的 <xref:System.Windows.Controls.Grid> 控制項。
 
-2. 排列格線版面配置。 當您選取<xref:System.Windows.Controls.Grid>控制，藍色的控制列會出現在方格上方和左邊緣。 您可以按一下橫條圖，來將資料列和資料行新增至方格。
+2. 排列網格佈局。 選擇<xref:System.Windows.Controls.Grid>控制項時,藍色控制列將顯示在網格的頂部和左邊緣。 您可以通過按一下條形來向網格添加行和列。
 
-3. 加入子控制項至格線。 您可以藉由將它從放置子控制項**工具箱**一節的方格中，或藉由設定其`Grid.Row`和`Grid.Column`XAML 中的屬性。 下列範例會將兩個標籤上方格的第二個資料列上的按鈕上方的資料列。
+3. 將子控制項添加到網格。 可以通過將子控件從**工具箱**拖動到網格的一部分,或者通過在 XAML 中設置其`Grid.Row`和`Grid.Column`屬性來定位子控制件。 下面的示例在網格的頂行上添加兩個標籤,在第二行上添加一個按鈕。
 
     ```xaml
     <Grid>
@@ -55,15 +55,15 @@ ms.locfileid: "66349036"
 
 ## <a name="renaming-the-control"></a>重新命名控制項
 
- 根據預設，您的控制項將會出現在**工具箱**作為**MyToolboxControl**群組中名為**MyToolboxControl.MyToolboxControl**。 您可以變更這些名稱*MyToolboxControl.xaml.cs*檔案。
+ 預設情況下,您的控制項會顯示在名為**MyToolboxControl.MyToolbox 控制**群組中的 **「我的工具箱控制」工具箱中**。 **Toolbox** 您可以在*MyToolboxControl.xaml.cs*檔中更改這些名稱。
 
-1. 開啟*MyToolboxControl.xaml.cs*程式碼檢視中。
+1. 在代碼檢視中打開*MyToolboxControl.xaml.cs。*
 
-2. 尋找`MyToolboxControl`類別，並將它重新命名為 TestControl。 (若要這樣做最快的方法是重新命名類別，然後選取**重新命名**從內容功能表，並完成步驟。 (如需詳細資訊**重新命名**命令，請參閱[重新命名重構 (C#)](../ide/reference/rename.md)。)
+2. 查找類`MyToolboxControl`並將其重命名為測試控制。 (執行此操作的最快方法是重命名類,然後從上下文菜單中選擇 **"重新命名**"並完成這些步驟。 ( 有關**重新命名**指令的詳細資訊,請參閱[重新命名重構 (C#)](../ide/reference/rename.md)。
 
-3. 移至`ProvideToolboxControl`屬性並將變更的第一個參數的值**測試**。 這是將包含控制項中的群組名稱**工具箱**。
+3. 轉到`ProvideToolboxControl`屬性 並將第一個參數的值更改為 **「測試**」。 這是將在**工具箱**中包含控制項的元件名稱。
 
-    產生的程式碼看起來應該像這樣：
+    產生的代碼應如下所示:
 
     ```csharp
     [ProvideToolboxControl("Test", true)]
@@ -76,28 +76,28 @@ ms.locfileid: "66349036"
     }
     ```
 
-## <a name="build-test-and-deployment"></a>建置、 測試和部署
+## <a name="build-test-and-deployment"></a>組建、測試及部署
 
- 當您偵錯專案時，您應該會發現在安裝控制項**工具箱**的 Visual Studio 的實驗執行個體。
+ 除錯專案時,應找到安裝在 Visual Studio 實驗實例**工具箱**中的控制項。
 
 ### <a name="to-build-and-test-the-control"></a>建置和測試控制項
 
-1. 重建專案並開始偵錯。
+1. 重建專案並開始調試。
 
-2. 在 Visual Studio 的新執行個體中建立 WPF 應用程式專案。 請確定會開啟 XAML 設計工具。
+2. 在 Visual Studio 的新執行個體中建立 WPF 應用程式專案。 確保 XAML 設計器處於打開狀態。
 
-3. 在 [工具箱]  中尋找控制項，並將它拖曳至設計介面。
+3. 在 [工具箱] **** 中尋找控制項，並將它拖曳至設計介面。
 
-4. 開始偵錯 WPF 應用程式。
+4. 開始調試 WPF 應用程式。
 
-5. 請確認您的控制項，會出現。
+5. 驗證控件是否出現。
 
 ### <a name="to-deploy-the-control"></a>部署內容
 
-1. 建置測試的專案之後，您可以找到 *.vsix*檔案中 * \bin\debug\*專案的資料夾。
+1. 產生測試專案後,您可以在專案的 _bin_除\*錯 資料夾中找到 *.vsix*檔。
 
-2. 安裝在本機電腦上按兩下 *.vsix*檔案，並遵循安裝程序。 若要解除安裝控制項，請前往**工具** > **擴充功能和更新**並尋找的控制項擴充功能，然後按一下 **解除安裝**。
+2. 您可以透過雙擊 *.vsix*檔案並遵循安裝過程將其安裝在本地電腦上。 要卸載控制項,請轉到 **「工具** > **擴展」和「更新」** 並查找控制項延伸,然後單擊「**卸載**」。
 
-3. 上傳 *.vsix*檔案到網路或網站。
+3. 將 *.vsix*檔上載到網路或網站。
 
-    如果您上傳檔案[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站，其他使用者可以使用**工具** > **擴充功能和更新**在 Visual Studio 中尋找上線控制，並安裝它。
+    如果將檔上載到[可視化工作室應用商店](https://marketplace.visualstudio.com/)網站,其他使用者可以使用 Visual Studio 中的**工具** > **擴展和更新**連線查找控制項並安裝它。

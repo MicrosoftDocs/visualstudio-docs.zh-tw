@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Microsoft Docs
+title: 埃瓦爾格茲 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - EVALFLAGS enumeration
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2a56f7d5fe4741fa887814691eddcf8df93030cd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337885"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737117"
 ---
 # <a name="evalflags"></a>EVALFLAGS
-指定控制運算式評估的旗標。
+指定控制表達式計算的標誌。
 
 ## <a name="syntax"></a>語法
 
@@ -54,37 +54,37 @@ public enum enum_EVALFLAGS {
 
 ## <a name="fields"></a>欄位
 `EVAL_RETURNVALUE`\
-指定的評估傳回的值，如果有的話。
+指定計算返回值(如果有)。
 
 `EVAL_NOSIDEEFFECTS`\
 指定不允許副作用。
 
 `EVAL_ALLOWBPS`\
-指定中斷點停止。
+指定在斷點停止。
 
 `EVAL_ALLOWERRORREPORT`\
-指定允許主應用程式報告的錯誤。 主要用於在 Internet Explorer 中的指令碼中的運算式評估。
+指定允許向主機報告錯誤。 主要用於在 Internet 資源管理器中文本中的運算式計算。
 
 `EVAL_FUNCTION_AS_ADDRESS`\
-要評估做為位址，而不是叫用函式的強制函式。
+強制函數作為位址計算,而不是調用函數。
 
 `EVAL_NOFUNCEVAL`\
-函式可防止進行評估。 例如，請考慮`int`運算式中的語彙基元`myExpression(int) + 10`。 為位址，但不是能作為值，就可以正確評估此函式。
+防止計算函數。 例如,`int`考慮表達`myExpression(int) + 10`式 中的標記。 此功能可以正確計算為位址,但不能作為值。
 
 `EVAL_NOEVENTS`\
-旗標，指出工作階段的偵錯管理員 (SDM) 或 ide，不應該傳送之運算式評估期間發生的事件。
+標記以指示不應將表達式計算期間發生的事件發送到工作階段調試管理器 (SDM) 或 IDE。
 
 ## <a name="remarks"></a>備註
-這些旗標會傳遞做為引數[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)並[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)方法。
+這些標誌作為參數傳遞給[評估Async](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)和[評估同步](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)方法。
 
-這些旗標可能會與位元 OR 運算結合。
+這些標誌可以與位或組合。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

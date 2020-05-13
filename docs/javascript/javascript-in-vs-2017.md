@@ -10,24 +10,23 @@ dev_langs:
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
-ms.author: wilkelly
+ms.author: jillfra
 manager: jillfra
-monikerRange: vs-2017
-ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888654"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649635"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
 JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio IDE 中撰寫 JavaScript 程式碼時，可以使用大部分或所有標準編輯輔助，包括程式碼片段、IntelliSense 等等。 您可以為許多應用程式類型和服務撰寫 JavaScript 程式碼。
 
 > [!NOTE]
-> 我們已投入整個社群的努力使 [MDN Web 文件](https://developer.mozilla.org/en-US/)成為 Web 上一應俱全的一流開發資源，方法是將 docs.microsoft.com 中的所有 (500 以上的頁面) Microsoft JavaScript API 參考重新導向至其 MDN 對應項目。 如需詳細資料，請參閱本[宣告](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)。
+> 我們加入了全社區的努力,通過將 Microsoft JavaScript API 引用的所有(500 多頁)從docs.microsoft.com重定向到其 MDN 對應項,使[MDN Web 文件](https://developer.mozilla.org/en-US/)成為 Web 的一站式開發資源。 如需詳細資料，請參閱本[宣告](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)。
 
-## <a name="ES6"></a> ECMAScript 2015 (ES6) 和更新版本的支援
+## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> ECMAScript 2015 (ES6) 和更新版本的支援
 
 Visual Studio 現在支援 ECMAScript 語言更新的語法，例如 ECMAScript 2015/2016。
 
@@ -59,7 +58,7 @@ tsconfig 檔案的必要設定如下︰
 輸出位置以及 `node_modules` 或 `temp` 等非專案資料夾，應該加入此設定。
 - `enableAutoDiscovery`︰這項設定允許自動偵測和下載定義檔案，如先前所述。
 - `compileOnSave`︰此設定會告知編譯器是否只要來源檔案儲存在 Visual Studio 中，就應該隨時重新編譯。
-- `typeAcquisition`：這組設定控制自動類型擷取的行為 (會在[本節](/visualstudio/ide/javascript-intellisense#Auto)中進一步解釋)。
+- `typeAcquisition`：這組設定控制自動類型擷取的行為 (會在[本節](../ide/javascript-intellisense.md#Auto)中進一步解釋)。
 
 若要將 JavaScript 檔案轉換成 CommonJS 模組，並將其放入 `./out` 資料夾中，您可以使用下列 `tsconfig.json` 檔案：
 
@@ -119,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] 中的 JavaScript IntelliSense 現在會顯示更多有關參數及成員清單的資訊。 此項新資訊是由 TypeScript 語言服務提供，使用程式碼更容易了解的幕後靜態分析。 您可以在[這裡](/visualstudio/ide/javascript-intellisense/)深入了解新的 IntelliSense 體驗和其運作方式。
 
-## <a name="JSX"></a>JSX 語法支援
+## <a name="jsx-syntax-support"></a><a name="JSX"></a>JSX 語法支援
 
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] 中的 JavaScript 充分支援 JSX 語法。 JSX 是一種語法集，可讓 HTML 在 JavaScript 檔案中標記。
 
@@ -147,7 +146,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 - `package.json` 和 `bower.json` 會列出專案所使用的相依性，而且根據預設，會包含在自動類型擷取 (ATA) 中
 - 最上層 `node_modules` 資料夾包含程式庫原始程式碼，而且預設會從專案內容中排除其內容
-- 每個其他 `.js`、`.jsx`、`.ts` 和 `.tsx` 檔案都可能是「您自己的」其中一個原始程式碼，而且必須包含在專案內容中
+- 每個其他 `.js`、`.jsx`、`.ts` 和 `.tsx` 檔案都可能是「您自己的」** 其中一個原始程式碼，而且必須包含在專案內容中
 
 在多數情況下，您只要開啟專案及使用預設專案組態，就可以獲得絕佳體驗。 不過，如果專案很大或具有不同的資料夾結構，還可進一步設定語言服務，讓您能夠更專注於自己的原始程式碼。
 
@@ -261,7 +260,7 @@ XML 文件註解有時稱為 VSDocs，先前可以用來使用其他資料來裝
 因為新語言服務具有靜態分析功能，而不是執行引擎 (如需差異的資訊，請閱讀[本問題](https://github.com/Microsoft/TypeScript/issues/4789))，所以無法再偵測到一些 JavaScript 模式。
 最常見的模式是 "expando" 模式。
 語言服務目前無法在宣告之後附加屬性的物件上提供 IntelliSense。
-例如:
+例如：
 
 ```js
 var obj = {};

@@ -1,27 +1,27 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs
+title: IDebug 突破點檢查和請求2::獲取校驗和 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2::GetChecksum
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a266a827e3dc73ea1c3cc5b3fb28cbb99acba1a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6fe1d2828f15b295f42c7fd756f2ffc407a632c9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314338"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735180"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-擷取的中斷點要求指定總和檢查碼演算法的唯一識別項使用的文件總和檢查碼。
+檢索斷點請求的文檔校驗和,給定要使用的校驗和演演演算法的唯一標識符。
 
 ## <a name="syntax"></a>語法
 
@@ -41,16 +41,16 @@ public int GetChecksum(
 
 ## <a name="parameters"></a>參數
 `guidAlgorithm`\
-[in]總和檢查碼演算法的唯一識別碼。
+[在]校驗和演演演算法的唯一標識符。
 
 `pChecksumData`\
-[out]用中斷點要求的文件總和檢查碼。
+[出]記錄斷點請求的校驗和。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
-下列範例會檢查是否有總和檢查碼的文件，也就是要繫結，符合其中一個從 UI 的函式。
+下面的範例顯示了一個函數,用於檢查文檔的校驗和(即將綁定)是否與UI中的校驗和匹配。
 
 ```cpp
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)

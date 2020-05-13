@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::EnumPersistedPorts |Microsoft Docs
+title: IDebugPort供應商3::枚舉保留埠 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3::EnumPersistedPorts
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 269a49a21fdf2c42c716fba1ab3c8cb293e15a1a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340043"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724448"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
-這個方法會擷取物件，可讓持續性的連接埠清單的列舉型別。
+此方法檢索允許枚舉持久化埠清單的物件。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int EnumPersistedPorts(
 
 ## <a name="parameters"></a>參數
 `PortNames`\
-[in]A [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)結構，其中包含一份以尋找並傳回在持續性的連接埠之間的連接埠名稱。 只有這些持續性連接埠使用這些名稱將會傳回。
+[在]包含要在持久埠之間查找和返回的埠名稱清單[BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)結構。 將僅返回具有這些名稱的持久化埠。
 
 `ppEnum`\
-[out]物件，實作[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)介面。
+[出]實現[IEnum DebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)介面的物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 連接埠提供者會具現化，並儲存連接埠提供者時終結時，會載入保存的連接埠。
+ 實例化埠供應商時載入持久埠,並在埠供應商銷毀時保存。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

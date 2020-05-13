@@ -1,63 +1,63 @@
 ---
-title: 控制執行 |Microsoft Docs
+title: 執行控制 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d7594b91c67fb77d02e238a9336beb8d939714e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e2d338c5470611a5eea0c6279404c4eaddebb2d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345529"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739070"
 ---
-# <a name="control-of-execution"></a>控制執行
-偵錯引擎 (DE) 通常會傳送下列事件的其中一個做為最後一個啟動事件：
+# <a name="control-of-execution"></a>執行控制
+除錯引擎 (DE) 通常作為上次啟動事件傳送以下事件之一:
 
-- 項目點事件，如果將附加至新推出的程式
+- 入口點事件(如果附加到新啟動的程式)
 
-- 載入完成事件，如果將附加至已在執行程式
+- 負載完成事件(如果附加到已執行的程式)
 
-  這兩個這些事件包括停止事件，這表示，DE 等候使用者回應透過 IDE。 如需詳細資訊，請參閱 <<c0> [ 作業模式](../../extensibility/debugger/operational-modes.md)。
+  這兩個事件都停止事件,這意味著 DE 通過 IDE 等待使用者的回應。 有關詳細資訊,請參閱[操作模式](../../extensibility/debugger/operational-modes.md)。
 
-## <a name="stopping-event"></a>正在停止事件
- 當 「 停止 」 事件傳送至偵錯工作階段：
+## <a name="stopping-event"></a>停止事件
+ 當停止事件傳送到除錯工作階段時:
 
-1. 「 計畫 」 與 「 包含目前指令指標的執行緒可以取自事件介面。
+1. 可以從事件介面獲取包含當前指令指標的程式和線程。
 
-2. IDE 判斷目前來源的程式碼檔案，它會顯示成反白顯示在編輯器中的位置。
+2. IDE 確定目前原始程式碼檔和位置,該檔和位置在編輯器中顯示為突出顯示。
 
-3. 偵錯工作階段通常會回應此第一個停止事件所呼叫的程式**繼續**方法。
+3. 除錯工作階段通常透過呼叫程式的 **「繼續」** 方法回應此第一個停止事件。
 
-4. 程式接著執行，直到它遇到停止條件，例如叫用中斷點。 在此情況下，d 會將中斷點事件傳送至偵錯工作階段。 中斷點事件已停止 」 事件，並 DE 再等候使用者回應。
+4. 然後,程式運行,直到它遇到停止條件,如擊中斷點。 在這種情況下,DE 向調試會話發送斷點事件。 斷點事件是停止事件,DE 再次等待用戶回應。
 
-5. 如果使用者選擇，逐步執行，或函式，從 IDE 提示時會呼叫該程式的偵錯工作階段`Step`方法。 IDE，然後將步驟 （指令、 陳述式或程式行） 和步驟 （是否要逐步執行，或從函式） 的類型的單位。 步驟完成時，DE 會將步驟完成的事件傳送至偵錯工作階段，也就是停止事件。
-
-    -或-
-
-    如果使用者選擇繼續執行目前指令指標，則 IDE 提示時會呼叫該程式的偵錯工作階段**Execute**方法。 程式會繼續執行，直到遇到下一個的停止條件。
+5. 如果用戶選擇踏入、執行或退出函數,IDE 會提示調試會話調用`Step`程式 的方法。 然後,IDE 傳遞步進單元(指令、語句或行)和步進類型(是步進、執行還是退出函數)。 步驟完成後,DE 會向調試會話發送一個步驟完成事件,調試會話是停止事件。
 
     -或-
 
-    如果偵錯工作階段是要忽略特定的停止事件，偵錯工作階段會呼叫程式的**繼續**方法。 如果程式逐步執行到，進入，或者跳離函式它遇到停止條件時，接下來的步驟。
+    如果使用者選擇繼續從目前的指令指標執行,IDE 會提示除錯工作階段呼叫**程式的執行方法**。 程序恢復執行,直到遇到下一個停止條件。
 
-   以程式設計的方式，當 DE 遇到停止條件，它會傳送這類停止事件中的當做[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)或是[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)藉由工作階段偵錯管理員 (SDM)[IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)介面。 DE 傳遞[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)並[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)介面來代表程式，並包含目前指令指標的執行緒。 SDM 呼叫[IDebugThread2::EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)若要取得最上層的堆疊框架並呼叫[IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)來取得目前指令與相關聯的文件內容指標。 此文件內容通常是來源的程式碼檔案名稱、 線條與資料行編號。 IDE 會使用這些的原始程式碼，其中包含目前指令指標反白顯示。
+    -或-
 
-   在 SDM 通常會回應此第一個停止事件藉由呼叫[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)。 然後會在程式執行，直到它遇到停止條件，例如叫用的中斷點，案例 DE 會傳送[IDebugBreakpointEvent2 介面](../../extensibility/debugger/reference/idebugbreakpointevent2.md)以 SDM。 中斷點事件已停止 」 事件，並 DE 再等候使用者回應。
+    如果調試會話要忽略特定的停止事件,則調試會話將調用程式的 **"繼續"** 方法。 如果程式在遇到停止條件時步進、越過或退出函數,則繼續執行此步驟。
 
-   如果使用者選擇，逐步執行，或函式，從 IDE 提示時會呼叫 SDM [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)。 然後將傳遞 IDE [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) （指示、 陳述式或線條） 和[STEPKIND](../../extensibility/debugger/reference/stepkind.md)，也就是要逐步執行，或從函式。 步驟完成時，會將傳送 DE [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) SDM，也就是停止事件的介面。
+   在程式設計上,當 DE 遇到停止條件時,它會透過[IDebugEvent 回檔 2](../../extensibility/debugger/reference/idebugeventcallback2.md)介面向工作階段調試管理員 (SDM) 傳送[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)或[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)等停止事件。 DE 傳遞[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)和[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)介面,這些介面表示程式和包含當前指令指標的線程。 SDM 調用[IDebugThread2:enumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)獲取頂部堆疊幀,並調用[IDebugStackFrame2:::獲取文檔上下文](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)以獲取有關當前指令指標的文檔上下文。 此文件上下文通常是原始碼檔名、行號和列號。 IDE 使用這些突出顯示包含當前指令指標的原始程式碼。
 
-   如果使用者選擇繼續執行目前指令指標從，IDE 會要求呼叫 SDM [IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)。 程式會繼續執行，直到遇到下一個的停止條件。
+   SDM 通常通過調用[IDebugProgram2::繼續](../../extensibility/debugger/reference/idebugprogram2-continue.md)來回應第一個停止事件。 然後,程式運行,直到它遇到停止條件,如擊中斷點,在這種情況下,DE 向 SDM 發送[IDebugBreakpointEvent2 介面](../../extensibility/debugger/reference/idebugbreakpointevent2.md)。 斷點事件是停止事件,DE 再次等待用戶回應。
 
-   偵錯封裝偵錯封裝是否要忽略特定的停止事件，會呼叫 SDM，它會呼叫[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)。 如果程式逐步執行到，進入，或者跳離函式它遇到停止條件時，它會繼續步驟。 這表示程式會維護逐步執行的狀態，好讓它知道如何繼續執行。
+   如果使用者選擇踏入、執行或退出函數,IDE 將提示 SDM 呼叫[IDebugProgram2::步驟](../../extensibility/debugger/reference/idebugprogram2-step.md)。 然後,IDE 傳遞[STEPUNIT(](../../extensibility/debugger/reference/stepunit.md)指令、語句或行)和[STEPKIND,](../../extensibility/debugger/reference/stepkind.md)即是步進、執行還是退出函數。 步驟完成後,DE 會向 SDM 發送[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)介面,這是一個停止事件。
 
-   在 SDM 對呼叫`Step`， **Execute**，和**繼續**是非同步的這表示在 SDM 預期呼叫快速傳回。 如果 DE SDM 停止將事件傳送之前的相同執行緒上`Step`， **Execute**，或**繼續**傳回，SDM 停止回應。
+   如果使用者選擇繼續從目前的指令指標執行,IDE 會要求 SDM 呼叫[IDebugProgram2:::執行](../../extensibility/debugger/reference/idebugprogram2-execute.md)。 程序恢復執行,直到遇到下一個停止條件。
+
+   如果除錯套件要忽略特定的停止事件,除錯套件將呼叫 SDM,它呼叫[IDebugProgram2:::繼續](../../extensibility/debugger/reference/idebugprogram2-continue.md)。 如果程式在遇到停止條件時步進、執行或退出函數,則繼續執行此步驟。 這意味著程式保持步進狀態,以便它知道如何繼續。
+
+   SDM`Step`對**的調用**是**Continue**非同步的,這意味著 SDM 希望調用快速返回。 如果 DE 在執行 **「或****」繼續**返回「`Step`之前在同一線程上向 SDM 發送停止事件,則 SDM 掛起。
 
 ## <a name="see-also"></a>另請參閱
-- [偵錯工作](../../extensibility/debugger/debugging-tasks.md)
+- [除錯工作](../../extensibility/debugger/debugging-tasks.md)

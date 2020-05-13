@@ -1,8 +1,8 @@
-## YamlMime:Landing
+### YamlMime:Landing
 title: Visual Studio 中的容器工具
 metadata:
   title: Docker 容器開發工具文件
-  description: 了解如何建置及管理以容器為基礎的應用程式和服務。 取得文件、程式碼範例、教學課程等。
+  description: 了解如何建置及管理以容器為基礎的應用程式和服務。 取得文件、程式碼範例、教學課程等資訊。
   author: ghogen
   manager: jillfra
   ms.prod: visual-studio-windows
@@ -10,62 +10,68 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
+  ms.openlocfilehash: 611e723edbf1abf46d6b4466e3f8f163058ada47
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "75400720"
 landingContent:
-  - title: 容器工具
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Visual Studio 中的容器工具
-            url: overview.md
-  - title: 開始使用
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Visual Studio 中的 Docker
-            url: container-tools.md
-          - text: 在容器中執行建置工具
-            url: /visualstudio/install/build-tools-container
-          - text: 適用於 Kubernetes 的 Visual Studio Tools
-            url: tutorial-kubernetes-tools.md
-  - title: 開發容器化應用程式
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: 具有 Docker Compose 的多容器應用程式
-            url: tutorial-multicontainer.md
-          - text: 容器中的 React.js 應用程式
-            url: container-tools-react.md
-          - text: 偵錯 Docker 應用程式
-            url: edit-and-refresh.md
-  - title: 部署 Docker 容器
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: 部署到 Azure Container Registry
-            url: hosting-web-apps-in-docker.md
-          - text: 部署到 Azure App Service
-            url: deploy-app-service.md
-          - text: 發佈至 Docker Hub
-            url: deploy-docker-hub.md
-  - title: 容器開發工作
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: 作法：設定組建和偵錯環境
-            url: container-build.md
-          - text: 作法：檢視及診斷容器
-            url: view-and-diagnose-containers.md
-          - text: 作法：針對容器開發工具進行疑難排解
-            url: troubleshooting-docker-errors.md
-  - title: 容器工具設定
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: 容器啟動設定
-            url: container-launch-settings.md
-          - text: 容器 MSBuild 屬性
-            url: container-msbuild-properties.md
-          - text: Docker Compose MSBuild 屬性
-            url: docker-compose-properties.md
-          - text: 設定容器工具
-            url: container-tools-configure.md
+- title: 容器工具
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Visual Studio 中的容器工具
+      url: overview.md
+- title: 開始使用
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Visual Studio 中的 Docker
+      url: container-tools.md
+    - text: 在容器中執行建置工具
+      url: /visualstudio/install/build-tools-container
+    - text: 適用於 Kubernetes 的 Visual Studio Tools
+      url: tutorial-kubernetes-tools.md
+- title: 開發容器化應用程式
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 具有 Docker Compose 的多容器應用程式
+      url: tutorial-multicontainer.md
+    - text: 容器中的 React.js 應用程式
+      url: container-tools-react.md
+    - text: 偵錯 Docker 應用程式
+      url: edit-and-refresh.md
+- title: 部署 Docker 容器
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 部署到 Azure Container Registry
+      url: hosting-web-apps-in-docker.md
+    - text: 部署到 Azure App Service
+      url: deploy-app-service.md
+    - text: 發佈至 Docker Hub
+      url: deploy-docker-hub.md
+- title: 容器開發工作
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 如何：設定組建和偵錯環境
+      url: container-build.md
+    - text: 如何：檢視及診斷容器
+      url: view-and-diagnose-containers.md
+    - text: 如何：針對容器開發工具進行疑難排解
+      url: troubleshooting-docker-errors.md
+- title: 容器工具設定
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: 容器啟動設定
+      url: container-launch-settings.md
+    - text: 容器 MSBuild 屬性
+      url: container-msbuild-properties.md
+    - text: Docker Compose MSBuild 屬性
+      url: docker-compose-properties.md
+    - text: 設定容器工具
+      url: container-tools-configure.md

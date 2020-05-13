@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetAttachedSessionName | Microsoft Docs
+title: IDebugProcess2::獲取附加會話名稱 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetAttachedSessionName
 ms.assetid: 7e5e116f-2c0c-4bc8-ad3f-e9fd2318a7e4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d14e76e576aaf3e467ab24083d445c9d9fc5214
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b70fd48adacdbbf936c6997fc373ad4a8d7e696b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353155"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724079"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
-取得正在偵錯此處理程序之工作階段的名稱。 IDE 可以顯示這項資訊偵錯特定的電腦上特定處理序的使用者。
+獲取調試此過程的工作階段的名稱。 IDE 可以向正在特定計算機上調試特定進程的用戶顯示此資訊。
 
 > [!NOTE]
-> 這個方法已被取代，且它的實作應該一律會傳回`E_NOTIMPL`。
+> 此方法被棄用,並且其實現應始終返回`E_NOTIMPL`。
 
 ## <a name="syntax"></a>語法
 
@@ -40,7 +40,7 @@ HRESULT GetAttachedSessionName(
 `pbstrSessionName`\
 
 ## <a name="return-value"></a>傳回值
- 這個方法應該一律傳回`E_NOTIMPL`。
+ 此方法應始終傳`E_NOTIMPL`回 。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

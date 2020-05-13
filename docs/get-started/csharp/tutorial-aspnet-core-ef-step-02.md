@@ -1,5 +1,5 @@
 ---
-title: 步驟2：建立您的第一個 ASP.NET Core Web 應用程式
+title: 第 2 步：創建第一個核心 Web 應用ASP.NET
 description: 使用此影片教學課程和逐步指示，建立您的第一個 ASP.NET Core Web 應用程式。
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -17,13 +17,13 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77580082"
 ---
-# <a name="step-2-create-your-first-aspnet-core-web-app"></a>步驟2：建立您的第一個 ASP.NET Core web 應用程式
+# <a name="step-2-create-your-first-aspnet-core-web-app"></a>第 2 步：創建第一個ASP.NET核心 Web 應用
 
 使用此影片教學課程和逐步指示，建立您的第一個 ASP.NET Core Web 應用程式。
 
@@ -33,12 +33,12 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>啟動 Visual Studio 2019 並建立新專案
 
-啟動 Visual Studio 2019 並按一下 [建立新專案]。 選擇 [ASP.NET Core Web 應用程式]。 選擇 [Web 應用程式] 範本，保留預設的專案名稱和位置。 在具有 ASP.NET Core 版本的下拉式清單中，選擇 [ **ASP.NET Core 2.1** ] 或 [ **ASP.NET Core 2.2**]。 按一下 **[建立]** 。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
+啟動 Visual Studio 2019 並按一下 [建立新專案]****。 選擇 [ASP.NET Core Web 應用程式]****。 選擇 [Web 應用程式]**** 範本，保留預設的專案名稱和位置。 在帶有ASP.NET核心版本的下拉清單中，選擇**ASP.NET酷睿 2.1**或**ASP.NET酷睿 2.2**。 按一下 **[建立]**。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
 
 ![Visual Studio 2019 選擇 ASP.NET Core 專案選項](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
 > [!WARNING]
-> 請確定您選擇的是 ASP .NET Core 2.1 或 ASP.NET Core 2.2。 本教學課程與 ASP.NET Core 3.x 不相容。
+> 請確保選擇 ASP .NET 核心 2.1 或ASP.NET核心 2.2。 本教程與 ASP.NET 酷 3.x 不相容。
 
 ## <a name="explore-the-new-project"></a>探索新專案
 
@@ -64,15 +64,15 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ### <a name="startupcs"></a>Startup.cs
 
-在 *Program.cs* 中建立的 Web 主機會參考啟動類別，並呼叫其方法以設定應用程式。 ConfigureServices 方法負責設定應用程式要使用的任何服務。 `Configure` 方法會設定應用程式的 HTTP 要求管線。 每個要求都會經由此管線，在如此做時與「中介軟體」的每個片段互動。
+在 *Program.cs* 中建立的 Web 主機會參考啟動類別，並呼叫其方法以設定應用程式。 ConfigureServices 方法負責設定應用程式要使用的任何服務。 `Configure` 方法會設定應用程式的 HTTP 要求管線。 每個要求都會經由此管線，在如此做時與「中介軟體」** 的每個片段互動。
 
 ### <a name="indexcshtml"></a>Index.cshtml
 
-網站首頁包含一些 HTML 標記和一些伺服器端的 Razor 程式碼。 它使用 Razor 來指定頁面模型 `IndexModel`，其位於相關聯的 *Index.cshtml.cs* 檔案中。 它也會在 ViewData 中設定值來設定頁面標題。 此 ViewData 值讀取自 *\_Layout.cshtml* 檔案，位於 Pages 資料夾的 Shared 資料夾內。 Layout 檔案為許多 Razor 頁面共用，並為應用程式提供共同的外觀與風格。 每個頁面內容都會在 Layout 檔案的 HTML 中轉譯。
+網站首頁包含一些 HTML 標記和一些伺服器端的 Razor 程式碼。 它使用 Razor 來指定頁面模型 `IndexModel`，其位於相關聯的 *Index.cshtml.cs* 檔案中。 它也會在 ViewData 中設定值來設定頁面標題。 此 ViewData 值在*\_佈局.cshtml*檔中讀取，該檔位於"頁面"資料夾中的"共用"資料夾中。 Layout 檔案為許多 Razor 頁面共用，並為應用程式提供共同的外觀與風格。 每個頁面內容都會在 Layout 檔案的 HTML 中轉譯。
 
 ## <a name="run-the-application"></a>執行應用程式
 
-現在執行應用程式，並在瀏覽器中檢視它。 您可以使用 **Ctrl**+**F5**，或從 Visual Studio 的功能表選擇 [偵錯] > [啟動但不偵錯] 來執行應用程式。
+現在執行應用程式，並在瀏覽器中檢視它。 您可以使用**Ctrl**+**F5**運行應用程式，也可以從 Visual Studio 功能表中選擇 **"無需調試的調試****Debug** > 開始"。
 
 ## <a name="customize-the-application"></a>自訂應用程式
 
@@ -86,7 +86,7 @@ public void OnGet()
 }
 ```
 
-使用這個標記取代 `<div>`Index.cshtml*中的* 內容：
+使用這個標記取代 *Index.cshtml* 中的 `<div>` 內容：
 
 ```cshtml
 <h2>It's @Model.Time right now on the server!</h2>
@@ -124,8 +124,8 @@ public void OnGet()
 
 在下段影片中，您會了解如何將資料支援新增至您的應用程式。
 
-[教學課程：使用 ASP.NET Core 應用程式中的資料](tutorial-aspnet-core-ef-step-03.md)
+[教程：使用ASP.NET核心應用程式中的資料](tutorial-aspnet-core-ef-step-03.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [教學課程：使用 ASP.NET Core 建立 Razor Pages web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [教程：創建一個剃刀頁面網頁應用程式與ASP.NET核心](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

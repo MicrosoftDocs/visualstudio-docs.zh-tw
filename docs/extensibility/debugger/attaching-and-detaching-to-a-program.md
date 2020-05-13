@@ -1,53 +1,53 @@
 ---
-title: 附加和中斷連結至程式 |Microsoft Docs
+title: 附加與分離到程式 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 - debug engines, detaching from programs
 ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edbabb078bc46c55431276e9c1fe8d1f807d76f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d8bd6ea4b51c56a3cc42036b7bd26d34ff3a3eff
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350904"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739276"
 ---
-# <a name="attaching-and-detaching-to-a-program"></a>附加和中斷連結至程式
-附加偵錯工具需要傳送正確的順序，方法和事件，使用適當的屬性。
+# <a name="attaching-and-detaching-to-a-program"></a>附加及分離到程式
+附加除錯器需要發送具有正確屬性的正確方法和事件序列。
 
-## <a name="sequence-of-methods-and-events"></a>序列的方法和事件
+## <a name="sequence-of-methods-and-events"></a>方法與事件的順序
 
-1. 工作階段的偵錯管理員 (SDM) 會呼叫[OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)方法。
+1. 工作階段除錯管理員 (SDM) 呼叫[OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)方法。
 
-    根據偵錯引擎 (DE) 處理序模型，`IDebugProgramNodeAttach2::OnAttach`方法會傳回其中一種下列方法，用來決定接下來的情況。
+    基於調試引擎 (DE) 過程`IDebugProgramNodeAttach2::OnAttach`模型, 該方法傳回以下方法之一,確定接下來會發生什麼。
 
-    如果`S_FALSE`會傳回成功的程式連結的偵錯引擎。 否則，請[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)完成附加程序會呼叫方法。
+    如果`S_FALSE`返回,調試引擎已成功連接到該程式。 否則,將調用[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)方法以完成附加過程。
 
-    如果`S_OK`傳回，預設會在 SDM 相同的程序中載入。 在 SDM 會執行下列工作：
+    如果`S_OK`返回,DE 將載入到與 SDM 相同的進程中。 SDM 執行以下工作:
 
-   1. 呼叫[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)取得 DE 的引擎資訊。
+   1. 致電[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)獲取 DE 的引擎資訊。
 
-   2. 共同建立 DE。
+   2. 共同創建 DE。
 
-   3. 呼叫[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)。
+   3. 通話[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)。
 
-2. DE 傳送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)來使用 SDM`EVENT_SYNC`屬性。
+2. DE 將[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)`EVENT_SYNC`發送到具有 屬性的 SDM。
 
-3. DE 傳送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)來使用 SDM`EVENT_SYNC`屬性。
+3. DE 將[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)`EVENT_SYNC`發送到具有 屬性的 SDM。
 
-4. DE 傳送[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)來使用 SDM`EVENT_SYNC_STOP`屬性。
+4. DE 將[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)`EVENT_SYNC_STOP`發送到具有 屬性的 SDM。
 
-   從程式中斷連結的簡單、 雙步驟程序，如下所示：
+   從程式分離是一個簡單的兩步過程,如下所示:
 
-5. SDM 呼叫[卸離](../../extensibility/debugger/reference/idebugprogram2-detach.md)。
+5. SDM 呼叫[分離](../../extensibility/debugger/reference/idebugprogram2-detach.md)。
 
-6. DE 傳送[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)。
+6. DE 傳送[IDebugProgram 破壞事件2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)
+- [呼叫除錯器事件](../../extensibility/debugger/calling-debugger-events.md)

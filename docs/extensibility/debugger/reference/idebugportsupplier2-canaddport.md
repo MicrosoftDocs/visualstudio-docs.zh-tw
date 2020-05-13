@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::CanAddPort | Microsoft Docs
+title: IDebugPort供應商2::坎加德埠 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::CanAddPort
 ms.assetid: 41f69e0a-e82c-473d-8b7a-0c40fc5730fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 37f4fd246c376d08ab3ca006c543b44c4db2d73d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5d0c67d62f57076f29f2c2ef60d456f517ae97fd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340284"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724756"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
-確認連接埠提供者可以新增新的連接埠。
+驗證埠供應商是否可以添加新埠。
 
 ## <a name="syntax"></a>語法
 
@@ -38,10 +38,10 @@ int CanAddPort();
 ```
 
 ## <a name="return-value"></a>傳回值
- 如果可以加入連接埠，會傳回`S_OK`; 否則傳回`S_FALSE`，表示沒有連接埠可以新增到此連接埠提供者。
+ 如果可以新增連接埠,則傳`S_OK`回 。否則,返回`S_FALSE`以指示無法將任何埠添加到此埠供應商。
 
 ## <a name="remarks"></a>備註
- 呼叫這個方法，然後再呼叫[下列](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)方法，因為第二個方法會建立連接埠，以及加入它，這可能耗時的作業。
+ 在調用[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)方法之前調用此方法,因為後一種方法創建埠並添加它,這可能是一項耗時的操作。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

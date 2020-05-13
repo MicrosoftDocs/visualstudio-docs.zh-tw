@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_METHOD | Microsoft Docs
+title: METADATA_ADDRESS_METHOD |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_METHOD structure
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03a8e4850a2a18ec55655934618ba42a694b412d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bc3dd7a34e4f9a3e1b933781aeaf4e18cad7ec17
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347356"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714460"
 ---
-# <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
-此結構表示的類別方法的位址。
+# <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
+此結構表示類方法的位址。
 
 ## <a name="syntax"></a>語法
 
@@ -47,25 +47,25 @@ public struct METADATA_ADDRESS_METHOD {
  `tokMethod`\
  方法的識別碼。
 
- [C++]`_mdToken`是`typedef`適用於 32 位元`int`。
+ [C++]`_mdToken`是`typedef`32`int`位元的 。
 
  `dwOffset`\
- 從類別的位移開始 （可以代表位移 vtable） 此方法。
+ 類開始到此方法的偏移量(可以表示 vtable 中的偏移量)。
 
  `dwVersion`\
- （這個值是唯一的符號提供者） 的方法版本。
+ 方法的版本(此值對符號提供程式是唯一的)。
 
 ## <a name="remarks"></a>備註
- 此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_METHOD`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。
+ 當`DEBUG_ADDRESS_UNION``ADDRESS_KIND_METHOD`結構欄位設置為[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)舉中的值)`dwKind`時, 此結構是DEBUG_ADDRESS_UNION結構中的聯合的一部分。
 
 ## <a name="requirements"></a>需求
- 標頭： sh.h
+ 標題: sh.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b8c0a4269dcc2b7e647effb10432a984396f395d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: a3a3e68874bb3295f6696bbdadb3c470a7f2a4ad
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918011"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586618"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,34 +38,34 @@ ms.locfileid: "75918011"
   
 - 記錄特定事件  
   
-   請檢查相關的程式碼、發生偵錯工具事件時出現在 [區域變數] 視窗中的資料，以及函式呼叫資訊  
+   請檢查相關的程式碼、發生偵錯工具事件時出現在 [區域變數]**** 視窗中的資料，以及函式呼叫資訊  
   
 - 偵錯難以重現或在部署中所發生的錯誤  
   
   您可以在 Visual Studio Enterprise 版本 (而非 Professional 或 Community 版本) 中使用 IntelliTrace。  
   
-## <a name="what-do-you-want-to-do"></a>請您指定選項。  
+## <a name="what-do-you-want-to-do"></a>您想要做什麼事？  
   
 |||  
 |-|-|  
-|**使用 IntelliTrace 偵錯我的應用程式：**<br /><br /> -顯示過去的事件。<br />-顯示過去事件的呼叫資訊。<br />-儲存我的 IntelliTrace 會話。<br />-控制 IntelliTrace 所收集的資料。|-   [逐步解說：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />-   [設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [歷程偵錯](../debugger/historical-debugging.md)|  
+|**使用 IntelliTrace 偵錯我的應用程式：**<br /><br /> -顯示過去的事件。<br />-顯示過去事件的呼叫資訊。<br />-儲存我的 IntelliTrace 會話。<br />-控制 IntelliTrace 所收集的資料。|-   [逐步解說：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />-   [設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [歷程記錄調試](../debugger/historical-debugging.md)|  
 |**在 Test Manager 的測試工作階段期間收集 IntelliTrace 資料**|-   [在手動測試中收集更多診斷資料](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
 |**從部署的應用程式中收集 IntelliTrace 資料**|-   [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**從 IntelliTrace 記錄檔 (.iTrace 檔案) 開始偵錯。**|-   [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)|  
   
-## <a name="IntelliTraceSupport"></a>我可以使用 IntelliTrace 對哪些應用程式進行偵錯？  
+## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a>我可以使用 IntelliTrace 對哪些應用程式進行偵錯？  
   
 |||  
 |-|-|  
-|**支援**|-使用 .NET Framework 2.0 C#或更高版本的 Visual Basic 和視覺效果應用程式。<br />     您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br />     若要使用 IntelliTrace 來檢查 SharePoint 應用程式，請參閱[逐步解說：使用 intellitrace 來進行 Sharepoint 應用程式](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)的錯用。<br />     若要使用 IntelliTrace 來進行 Microsoft Azure 應用程式的 debug，請參閱[使用 intellitrace 和 Visual Studio 來對已發佈的雲端服務](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)進行程式|  
-|**有限支援**|- F#以實驗性為基礎的應用程式<br />-僅支援事件的 Windows Store 應用程式|  
-|**不支援**|- C++、其他語言和腳本<br />-Windows 服務、Silverlight、Xbox 或 [!INCLUDE[winmobile](../includes/winmobile-md.md)] 應用程式|  
+|**支援**|-使用 .NET Framework 2.0 或更高版本的 Visual Basic 和 Visual c # 應用程式。<br />     您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br />     若要使用 IntelliTrace 來檢查 SharePoint 應用程式，請參閱[逐步解說：使用 intellitrace 來進行 Sharepoint 應用程式](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)的錯用。<br />     若要使用 IntelliTrace 來進行 Microsoft Azure 應用程式的 debug，請參閱[使用 intellitrace 和 Visual Studio 來對已發佈的雲端服務](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)進行程式|  
+|**有限支援**|-以實驗性為基礎的 F # 應用程式<br />-僅支援事件的 Windows Store 應用程式|  
+|**不支援**|-C + +、其他語言和腳本<br />-Windows 服務、Silverlight、Xbox 或[!INCLUDE[winmobile](../includes/winmobile-md.md)]應用程式|  
   
 > [!NOTE]
 > 如果您要偵錯已在執行中的處理序，則不能使用 IntelliTrace。 您必須在處理序啟動時啟動 IntelliTrace。  
   
-## <a name="IntelliTraceVSTraditional"></a> 為什麼要使用 IntelliTrace 進行偵錯？  
- 傳統或「即時」(Live) 偵錯只會顯示應用程式的目前狀態，並只包含有關過去事件的有限資料。 您必須根據應用程式的目前狀態來推斷這些事件，或者必須透過重新執行應用程式來重新建立這些事件。  
+## <a name="why-debug-with-intellitrace"></a><a name="IntelliTraceVSTraditional"></a> 為什麼要使用 IntelliTrace 進行偵錯？  
+ 傳統或「即時」**(Live) 偵錯只會顯示應用程式的目前狀態，並只包含有關過去事件的有限資料。 您必須根據應用程式的目前狀態來推斷這些事件，或者必須透過重新執行應用程式來重新建立這些事件。  
   
  IntelliTrace 透過記錄在這些時間點的特定事件和資料，擴展了這個傳統的偵錯經驗。 這可讓您查看應用程式中發生的事件，而不需要重新啟動它，特別是如果您已逐步執行超過 Bug 的位置時。 在傳統偵錯期間，IntelliTrace 預設會開啟並以隱藏的方式自動收集資料。 這可讓您輕易地切換傳統偵錯和 IntelliTrace 偵錯，以查看所記錄的資訊。 請參閱[Intellitrace 功能](../debugger/intellitrace-features.md)和[Intellitrace 會收集哪些資料？](#WhatData)  
   
@@ -101,20 +101,20 @@ ms.locfileid: "75918011"
   
    如果要診斷部署中的應用程式的問題時，這十分有用。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
   
-## <a name="WhatData"></a> IntelliTrace 會收集哪些資料？  
+## <a name="what-data-does-intellitrace-collect"></a><a name="WhatData"></a> IntelliTrace 會收集哪些資料？  
  **收集事件資訊**  
   
  IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例外狀況、.NET Framework 事件，以及有助於偵錯的其他系統事件。 您可以選擇要收集的 IntelliTrace 事件種類 (除了偵錯工具事件和例外狀況外，這些項目一律會收集)。 請參閱[設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
 - **偵錯工具事件**  
   
-   IntelliTrace 一律會記錄在 Visual Studio Debugger 中發生的事件。 例如，啟動您的應用程式就是一個偵錯工具事件。 其他偵錯工具事件包括停止事件，也就是導致應用程式中斷執行的事件。 例如，您的程式遇到了中斷點、遇到了追蹤點或執行 [逐步執行] 命令時。  
+   IntelliTrace 一律會記錄在 Visual Studio Debugger 中發生的事件。 例如，啟動您的應用程式就是一個偵錯工具事件。 其他偵錯工具事件包括停止事件，也就是導致應用程式中斷執行的事件。 例如，您的程式遇到了中斷點、遇到了追蹤點或執行 [逐步執行]**** 命令時。  
   
    為了協助提高效能，IntelliTrace 不會記錄偵錯工具事件的每個可能的值。 相反地，它會記錄下面這些值：  
   
-  - [區域變數] 視窗中的值。 讓 [區域變數] 視窗保持開啟來查看這些值。  
+  - [區域變數]**** 視窗中的值。 讓 [區域變數]**** 視窗保持開啟來查看這些值。  
   
-  - [自動變數] 視窗中的值 (只有當 [自動變數] 視窗開啟時)  
+  - [自動變數]**** 視窗中的值 (只有當 [自動變數]**** 視窗開啟時)  
   
   - 在您將滑鼠指標放置在來源視窗中的變數上方以查看它的值時，所出現的 DataTips 中的值。 IntelliTrace 不會收集固定的 DataTips 中的值。  
   
@@ -169,24 +169,24 @@ ms.locfileid: "75918011"
   
  若要控制 IntelliTrace 收集呼叫資訊的數量，請僅指定您關心的模組。 這有助於改善應用程式在收集期間的效能。 請參閱[設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
-## <a name="AffectPerformance"></a> IntelliTrace 是否會讓應用程式變慢？  
+## <a name="will-intellitrace-slow-down-my-application"></a><a name="AffectPerformance"></a> IntelliTrace 是否會讓應用程式變慢？  
  根據預設，IntelliTrace 只會針對選取的 IntelliTrace 事件收集資料。 根據程式碼的結構和組織，這不一定會讓您的應用程式變慢。 例如，如果 IntelliTrace 時常記錄某個事件，這可能會讓應用程式變慢。 它也可能會讓您考慮重構應用程式。  
   
- 收集呼叫資訊可能會使應用程式明顯變慢， 也可能會增加要儲存至磁碟之任何 IntelliTrace 記錄檔 (.iTrace 檔案) 的大小。 若要將這些影響降至最低，請只針對您關注的那些模組收集呼叫資訊。  若要變更 .iTrace 檔案的大小上限，請移至 [工具]、[選項]、[IntelliTrace]、[進階]。 請參閱[設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
+ 收集呼叫資訊可能會使應用程式明顯變慢， 也可能會增加要儲存至磁碟之任何 IntelliTrace 記錄檔 (.iTrace 檔案) 的大小。 若要將這些影響降至最低，請只針對您關注的那些模組收集呼叫資訊。  若要變更 .iTrace 檔案的大小上限，請移至 [工具]****、[選項]****、[IntelliTrace]****、[進階]****。 請參閱[設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
 ## <a name="in-this-section"></a>本節內容  
  [IntelliTrace 功能](../debugger/intellitrace-features.md)  
   
  [設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
   
- [包含不容易重現之 Bug 的診斷追蹤資料](https://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
+ [包含難以重現的 Bug 的診斷追蹤資料](https://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
   
  [於部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)  
   
  [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>部落格  
- [Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)  
+ [Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)  
   
-### <a name="forums"></a>Forums  
+### <a name="forums"></a>論壇  
  [Visual Studio 的診斷功能](https://social.msdn.microsoft.com/Forums/vsdebug)

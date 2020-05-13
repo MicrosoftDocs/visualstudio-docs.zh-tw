@@ -14,12 +14,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: b36b1835f38a4ce6fe46d72935dc8cfc144561c3
-  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
+  ms.openlocfilehash: 157d3bc451829b0c91772a66222b563cd07a5eaf
+  ms.sourcegitcommit: 20049ffecc08fdfae45406c26190de900357eef6
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 11/15/2019
-  ms.locfileid: "74118913"
+  ms.lasthandoff: 04/02/2020
+  ms.locfileid: "80620641"
 productDirectory:
   items:
   - title: Visual Studio
@@ -54,6 +54,15 @@ productDirectory:
     - url: https://code.visualstudio.com/updates
       text: 版本資訊
     - url: https://code.visualstudio.com
+      text: 產品頁面
+  - title: Visual Studio Online
+    imageSrc: ./media/vs-ide-2019.svg
+    links:
+    - url: https://docs.microsoft.com/visualstudio/online/
+      text: 文件
+    - url: https://code.visualstudio.com/docs/remote/vsonline
+      text: 使用 Visual Studio Code
+    - url: https://visualstudio.microsoft.com/services/visual-studio-online/
       text: 產品頁面
   - title: Visual Studio 應用程式中心
     imageSrc: ./media/vs-mobile-center.svg

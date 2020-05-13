@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75775877"
 ---
 # <a name="developer-community-data-privacy"></a>開發人員社群資料隱私權
@@ -25,19 +25,19 @@ ms.locfileid: "75775877"
 
 如果您擔心揭露您的身分，請[建立新的 Microsoft 帳戶](https://signup.live.com/)，這不會揭露關於您的任何詳細資料。 使用此帳戶來建立您的報表。
 
-## <a name="data-privacy"></a>資料隱私性
+## <a name="data-privacy"></a>資料隱私權
 
 如果您擔心資料隱私權，請不要在一律公開的初始報表標題或內容中放置您想要保持私用的任何項目。 相反地，請建立報表，然後注意您會在個別的留言中私下傳送詳細資料。 建立問題報表後，您就能夠指定誰可以查看回覆和附件：
 
-1. 在建立的報表中，選擇 [新增留言] 來建立您對問題的私人描述。
+1. 在建立的報表中，選擇 [新增留言]**** 來建立您對問題的私人描述。
 
-2. 在回覆編輯器中，使用 [提交] 和 [取消] 按鈕下方的控制項來指定回覆的對象。 選擇 [可供仲裁者和原始貼文者檢視] 來限制 Microsoft 員工和您自己的可見性。
+2. 在回覆編輯器中，使用 [提交]**** 和 [取消]**** 按鈕下方的控制項來指定回覆的對象。 選擇 [可供仲裁者和原始貼文者檢視]**** 來限制 Microsoft 員工和您自己的可見性。
 
    ![開發人員社群的隱私權控制](media/developer-community-privacy-control.png)
 
    只有您指定的人員才能看到留言以及其中包含的任何影像、連結或程式碼。 留言下的任何回覆具有與原始留言相同的可見性。 即使回覆的私用控制項未正確顯示受限的可見性狀態也是如此。
 
-3. 新增描述，以及重現所需的任何其他資訊、影像和檔案附件。 選擇 [送出] 按鈕以私下傳送這些資訊。
+3. 新增描述，以及重現所需的任何其他資訊、影像和檔案附件。 選擇 [送出]**** 按鈕以私下傳送這些資訊。
 
    > [!NOTE]
    > 附加的檔案有 2-GB 的限制，最多 10 個檔案。 如果您需要上傳較大的檔案，則可以提交新的問題報表，或在私用留言中向 Microsoft 員工要求上傳 URL。
@@ -46,9 +46,9 @@ ms.locfileid: "75775877"
 
 ## <a name="data-we-collect"></a>我們收集的資料
 
-如果從 Visual Studio 安裝程式起始 [回報問題]，我們會收集最新的安裝程式記錄檔。
+如果從 Visual Studio 安裝程式起始 [回報問題]****，我們會收集最新的安裝程式記錄檔。
 
-如果從 Visual Studio 中起始 [回報問題]，我們會收集一或多項下列類型的資料：
+如果從 Visual Studio 中起始 [回報問題]****，我們會收集一或多項下列類型的資料：
 
 - 事件記錄檔中的 Watson 和 .NET 項目
 
@@ -68,7 +68,7 @@ ms.locfileid: "75775877"
 
 - Python 記錄 (若存在)
 
-- Windows Forms 記錄（如果有的話）
+- Windows 表單日誌（如果存在）
 
 - 螢幕擷取畫面 (若您選擇包含它的話)
 
@@ -81,11 +81,11 @@ ms.locfileid: "75775877"
   - 傾印檔案
 
 > [!NOTE]
-> 您所傳送的記錄檔、螢幕擷取畫面和記錄資料，可能會大幅增加 Microsoft 對您問題的瞭解和回應。  因此，我們建議您將其包含在內。 為了保護您的隱私權，任何附加的記錄檔、螢幕擷取畫面和記錄資料，只會在您透過提交所包含的問題報告來提供許可權時，傳送給 Microsoft。 您可以在提交報告之前，看到哪些檔案包含在 [回報問題] 視窗的 [摘要] 步驟中。 您可以取消核取 [摘要] 步驟中的 [附加系統記錄]，以排除報表中的系統記錄檔。 如需參考，請參閱下列螢幕擷取畫面。 
-  > ![回報問題-收集的記錄摘要](media/report-a-problem-logs-collected.png)
+> 您發送的日誌檔、螢幕截圖和記錄資料可以顯著提高 Microsoft 理解和回應您的問題的能力。  因此，我們建議包括他們。 為了保護您的隱私，任何附加的日誌檔、螢幕截圖和記錄資料僅在您通過提交包含它們的問題報告來提供許可權時才會發送給 Microsoft。 在提交報告之前，您可以看到"報告問題"視窗的"摘要"步驟中包含哪些檔。 您可以通過取消選中"摘要"步驟中的"附加系統日誌"從報表中排除系統日誌檔。 有關參考，請參閱以下螢幕截圖。 
+  > ![報告問題 - 收集的日誌摘要](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)
 - [C++ 問題報表的資料隱私權](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

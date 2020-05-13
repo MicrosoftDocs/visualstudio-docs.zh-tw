@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68711255"
 ---
 # <a name="change-a-method-signature-refactoring"></a>變更方法特徵標記重構
@@ -35,11 +35,11 @@ ms.locfileid: "68711255"
 
 **原因：** 您可以手動移除參數或重新排列其順序，然後尋找對該方法的所有呼叫並逐一變更這些呼叫，但這樣可能會造成錯誤。  這個重構工具將可自動執行此工作。
 
-## <a name="how-to"></a>操作說明
+## <a name="how-to"></a>操作方式
 
 1. 醒目標示要修改的方法名稱或它的其中一個使用方式，或將文字游標放在要修改的方法名稱或它的其中一個使用方式內：
 
-   - C#:
+   - C#：
 
        ![醒目提示的程式碼 C#](media/changesignature-highlight-cs.png)
 
@@ -51,28 +51,28 @@ ms.locfileid: "68711255"
 
    - **鍵盤**
       - 按 **CTRL+R**，再按 **CTRL+V**。  (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
-      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構]  功能表，然後從 [預覽] 快顯視窗中選取 [變更簽章]  。
+      - 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [變更簽章]****。
    - **滑鼠**
-      - 選取 [編輯] > [重構] > [移除參數]  。
-      - 選取 [編輯] > [重構] > [重新排列參數]  。
-      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構]  功能表，然後從 [預覽] 快顯視窗中選取 [變更簽章]  。
+      - 選取 [編輯] > [重構] > [移除參數]****。
+      - 選取 [編輯] > [重構] > [重新排列參數]****。
+      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [變更簽章]****。
 
-3. 在 [變更簽章]  快顯對話方塊中，您可以使用右邊的按鈕來變更方法簽章：
+3. 在 [變更簽章]**** 快顯對話方塊中，您可以使用右邊的按鈕來變更方法簽章：
 
    ![[變更簽章] 對話方塊](media/changesignature-dialog-cs.png)
 
-   | 按鈕 | 說明
+   | 按鈕 | 描述
    | ------ | ---
    | **向上/向下** | 將選取的參數在清單中向上和向下移動
    | **移除** | 將選取的參數從清單中移除
    | **還原** | 將所選的已刪除參數還原到清單中
 
    > [!TIP]
-   > 請使用 [預覽參考變更]  核取方塊，以在認可變更之前先[查看將會有的結果](../../ide/preview-changes.md)。
+   > 使用 **"預覽參考更改"** 核取方塊[查看提交結果之前的結果](../../ide/preview-changes.md)。
 
-4. 完成時，按 [確定]  按鈕以進行變更。
+4. 完成時，按 [確定]**** 按鈕以進行變更。
 
-   - C#:
+   - C#：
 
       ![變更特徵標記結果 - C#](media/changesignature-result-cs.png)
 
@@ -82,5 +82,5 @@ ms.locfileid: "68711255"
 
 ## <a name="see-also"></a>另請參閱
 
-- [重構](../refactoring-in-visual-studio.md)
+- [Refactoring](../refactoring-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

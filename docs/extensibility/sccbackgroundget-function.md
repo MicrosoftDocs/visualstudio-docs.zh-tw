@@ -1,5 +1,5 @@
 ---
-title: SccBackgroundGet 函式 |Microsoft Docs
+title: Scc背景取得功能 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccBackgroundGet function
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0805e91f5386f101917ee988e9e0d23d066f48d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334016"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701236"
 ---
-# <a name="sccbackgroundget-function"></a>SccBackgroundGet 函式
-此函式會擷取從原始檔控制每個指定的檔案而不需要使用者互動。
+# <a name="sccbackgroundget-function"></a>Scc背景抓取功能
+此函數從原始程式碼管理檢索每個指定的檔,而沒有使用者互動。
 
 ## <a name="syntax"></a>語法
 
@@ -37,41 +37,41 @@ SCCRTN SccBackgroundGet(
 ### <a name="parameters"></a>參數
  pContext
 
-[in]原始檔控制外掛程式的內容指標。
+[在]源代碼管理外掛程式上下文指標。
 
- nFiles
+ n 檔案
 
-[in]中指定的檔案數目`lpFileNames`陣列。
+[在]`lpFileNames`陣列中指定的檔案數。
 
- lpFileNames
+ lpFile 名稱
 
-[in、 out]要擷取的檔案名稱的陣列。
+[進出]要檢索的文件的名稱陣列。
 
 > [!NOTE]
-> 名稱必須是完整的本機檔案名稱。
+> 名稱必須是完全限定的本地檔名。
 
  dwFlags
 
-[in]命令旗標 (`SCC_GET_ALL`， `SCC_GET_RECURSIVE`)。
+[在]命令標誌`SCC_GET_ALL`(。 `SCC_GET_RECURSIVE`
 
- dwBackgroundOperationID
+ dw背景操作ID
 
-[in]這項作業相關聯的唯一值。
+[在]與此操作關聯的唯一值。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函數的源碼管理外掛程式實現應返回以下值之一:
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|作業已順利完成。|
-|SCC_E_BACKGROUNDGETINPROGRESS|背景擷取已正在的進行 （原始檔控制外掛程式應該傳回這才是它不支援同時批次作業）。|
-|SCC_I_OPERATIONCANCELED|在完成前已取消作業。|
+|SCC_OK|作業順利完成。|
+|SCC_E_BACKGROUNDGETINPROGRESS|後台檢索已在進行中(原始程式碼管理外掛程式應僅當它不支援同時批處理操作時才返回它)。|
+|SCC_I_OPERATIONCANCELED|操作在完成之前已取消。|
 
 ## <a name="remarks"></a>備註
- 不同於載入原始檔控制外掛程式的另一個執行緒上，一律會呼叫此函數。 此函式不應該傳回之前完成;不過，它可以與多個清單的檔案，所有同時呼叫多次。
+ 此函數始終調用與載入原始程式碼管理外掛程式不同的線程。 在完成之前,不應返回此功能;但是,它可以調用多個檔清單,同時調用。
 
- 善用`dwFlags`引數是相同[SccGet](../extensibility/sccget-function.md)。
+ 參數的使用`dwFlags`與[SccGet](../extensibility/sccget-function.md)相同。
 
 ## <a name="see-also"></a>另請參閱
-- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)

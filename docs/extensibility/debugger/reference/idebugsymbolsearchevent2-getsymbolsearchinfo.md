@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Microsoft Docs
+title: IDebug符號搜索事件2::獲取符號搜索資訊 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 ms.assetid: ae9eb72b-f2aa-43b8-87ca-da19d2e78d17
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dcd584e600849ad30f83adef768671dc8f2ab57
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: be498154a8141c61f114682893d0aaf8b841cf95
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320404"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718894"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
-呼叫以擷取結果的符號載入處理序相關的事件處理常式。
+由事件處理程式調用以檢索有關符號載入進程的結果。
 
 ## <a name="syntax"></a>語法
 
@@ -45,22 +45,22 @@ int GetSymbolSearchInfo(
 
 ## <a name="parameters"></a>參數
 `pModule`\
-[out]IDebugModule3 物件，表示已載入符號的模組。
+[出]IDebugModule3 物件,表示為其載入符號的模組。
 
 `pbstrDebugMessage`\
-[in、 out]傳回字串，包含從模組的任何錯誤訊息。 如果沒有任何錯誤，此字串只會包含模組的名稱，但永遠不會是空白。
+[進出]返回包含模組中任何錯誤消息的字串。 如果沒有錯誤,則此字串將僅包含模組的名稱,但它永遠不會為空。
 
 > [!NOTE]
-> [C++]`pbstrDebugMessage`不得`NULL`，而且必須與釋放`SysFreeString`。
+> [C++]`pbstrDebugMessage`無法,`NULL`必須釋放`SysFreeString`與 。
 
 `pdwModuleInfoFlags`\
-[out]從旗標的組合[MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)列舉，指出是否已載入任何符號。
+[出][MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)枚舉中的標誌的組合,指示是否載入了任何符號。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 當處理常式收到[IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)事件之後嘗試載入模組的偵錯符號，處理常式可以呼叫 thismethod 來判斷該負載的結果。
+ 當處理程式嘗試載入模組的調試符號後收到[IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)事件時,處理程式可以調用此方法以確定該載入的結果。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

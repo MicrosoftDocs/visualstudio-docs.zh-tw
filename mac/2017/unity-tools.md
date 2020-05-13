@@ -6,10 +6,10 @@ ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: f275288ea54b4b24996825aeb14c7a55ee3a3018
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62986825"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
@@ -20,7 +20,7 @@ Visual Studio for Mac Tools for Unity 是一種免費的 Visual Studio 延伸模
 
 Unity 整合現成包含在 Visual Studio for Mac，且從 Unity 2018.1 開始，Visual Studio for Mac 是 Unity 專案的預設 C# IDE。
 
-## <a name="overview"></a>總覽
+## <a name="overview"></a>概觀
 
 以下是 Visual Studio for Mac Tools for Unity 的一些主要功能：
 

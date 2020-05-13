@@ -1,5 +1,5 @@
 ---
-title: 新增 最近使用的子功能表清單 |Microsoft Docs
+title: 將最近使用的清單添加到子選單 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,50 +7,50 @@ helpviewer_keywords:
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6eb32f81947f7359f5912e8a558e8df5002a0b80
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf389c0da7ec0aafb6e47dae8f09ffdc3b1d1e4d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352401"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740296"
 ---
-# <a name="add-a-most-recently-used-list-to-a-submenu"></a>新增 最近使用的子功能表清單
-本逐步解說是根據在示範[子功能表加入至功能表](../extensibility/adding-a-submenu-to-a-menu.md)，並示範如何加入子功能表中的動態清單。 動態清單構成建立最近使用的 (MRU) 清單的基礎。
+# <a name="add-a-most-recently-used-list-to-a-submenu"></a>將最近使用的清單加入子選單
+本演練基於[將子功能表添加到功能表](../extensibility/adding-a-submenu-to-a-menu.md)中的演示,並演示如何向子功能表添加動態清單。 動態清單構成創建最近使用 (MRU) 列表的基礎。
 
-動態功能表清單開始功能表上的預留位置。 每一次，就會顯示功能表，Visual Studio 整合式的開發環境 (IDE) 會要求應該在將預留位置顯示的所有命令的 VSPackage。 動態清單可以出現在功能表上的任何位置。 不過，動態清單會通常儲存，並顯示自己本身全部放在子功能表上，或在功能表的底端。 藉由使用這些設計模式，您可以啟用動態清單的命令來進行擴大和縮減而不會影響其他命令功能表上的位置。 在此逐步解說中，動態的 MRU 清單會顯示在現有的子功能表，以換行分隔的子功能表的其餘部分的底部。
+動態功能表清單以功能表上的占位符開頭。 每次顯示功能表時,Visual Studio 整合式開發環境 (IDE) 都會向 VSPackage 詢問應在占位符處顯示的所有命令。 動態清單可能發生在功能表上的任意位置。 但是,動態清單通常由自身存儲在子菜單或功能表底部。 通過使用這些設計模式,您可以啟用命令的動態列表來展開和收縮,而不會影響功能表上其他命令的位置。 在本演練中,動態 MRU 清單顯示在現有子功能表的底部,由一行與子菜單的其餘部分分開。
 
-技術上來說，動態清單也可以套用至工具列。 不過，我們鼓勵使用量，因為工具列應該保持不變，除非使用者採取特定步驟，來變更它。
+從技術上講,動態清單也可以應用於工具列。 但是,我們阻止使用該工具列,因為工具列應保持不變,除非使用者採取特定步驟來更改它。
 
-此逐步解說會建立四個項目變更其順序，每次在於其中已選取的 MRU 清單 （選取的項目移至清單頂端）。
+本演練創建一個 MRU 清單,其中四個專案在每次選擇其中一個專案時都會更改其順序(所選項移動到列表頂部)。
 
-如需功能表和 *.vsct*檔，請參閱[命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。
+關於選單與 *.vsct*檔案的詳細資訊,請參閱[命令、選單和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。
 
-## <a name="prerequisites"></a>必要條件
-若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+## <a name="prerequisites"></a>Prerequisites
+若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 有關詳細資訊,請參閱[可視化工作室 SDK](../extensibility/visual-studio-sdk.md)。
 
-## <a name="create-an-extension"></a>建立擴充功能
+## <a name="create-an-extension"></a>建立延伸模組
 
-- 請依照下列中的程序[子功能表加入功能表](../extensibility/adding-a-submenu-to-a-menu.md)下列程序中建立的已修改的子功能表。
+- 按照將[子功能表添加到菜單](../extensibility/adding-a-submenu-to-a-menu.md)中的過程來創建在以下過程中修改的子功能表。
 
-  在本逐步解說的程序會假設 VSPackage 的名稱是`TopLevelMenu`，這是名稱中使用[Visual Studio 功能表列中加入功能表](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)。
+  本演練中的過程假定 VSPackage 的`TopLevelMenu`名稱為 ,這是在[將菜單添加到 Visual Studio 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)中使用的名稱。
 
-## <a name="create-a-dynamic-item-list-command"></a>建立動態項目清單命令
+## <a name="create-a-dynamic-item-list-command"></a>建立動態項目清單指令
 
-1. 開啟*TestCommandPackage.vsct*。
+1. 開啟*測試指令套件.vsct*.
 
-2. 在`Symbols`區段中`GuidSymbol`節點中名為 guidTestCommandPackageCmdSet，新增的符號`MRUListGroup`群組和`cmdidMRUList`命令，如下所示。
+2. 在名為`Symbols`guidTestCommandPackageCmdSet`GuidSymbol`的 節點`MRUListGroup`中,添加`cmdidMRUList`組和命令的 符號,如下所示。
 
     ```csharp
     <IDSymbol name="MRUListGroup" value="0x1200"/>
     <IDSymbol name="cmdidMRUList" value="0x0200"/>
     ```
 
-3. 在 `Groups`區段中，現有的群組項目之後加入宣告的群組。
+3. 在節中`Groups`,在現有組條目之後添加聲明的組。
 
     ```cpp
     <Group guid="guidTestCommandPackageCmdSet" id="MRUListGroup"
@@ -60,7 +60,7 @@ ms.locfileid: "66352401"
 
     ```
 
-4. 在 `Buttons`區段中，新增一個節點，代表新宣告的命令，在現有的按鈕項目之後。
+4. 在節中`Buttons`,在現有按鈕條目之後添加一個節點以表示新聲明的命令。
 
     ```csharp
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidMRUList"
@@ -74,34 +74,34 @@ ms.locfileid: "66352401"
     </Button>
     ```
 
-    `DynamicItemStart`旗標可啟用動態產生的命令。
+    該`DynamicItemStart`標誌允許動態生成命令。
 
-5. 建置專案，並開始偵錯來測試新的命令的顯示。
+5. 生成專案並開始調試以測試新命令的顯示。
 
-    上**TestMenu**功能表上，按一下 新的子功能表中，**子功能表**，以顯示新的命令**MRU 預留位置**。 在下一個程序中實作命令的動態 MRU 清單之後，此命令標籤將被取代該清單的每次開啟子功能表。
+    在 **「測試選單」** 選單上,按下新的子選單「**子選單**」 以顯示新命令**MRU 占位元**。 在下一個過程中實現命令的動態 MRU 清單後,每次打開子功能表時,此命令標籤都將替換為該清單。
 
-## <a name="filling-the-mru-list"></a>填滿 MRU 清單
+## <a name="filling-the-mru-list"></a>填寫 MRU 清單
 
-1. 在  *TestCommandPackageGuids.cs*，在現有的命令識別碼之後加入下列幾行`TestCommandPackageGuids`類別定義。
+1. 在*TestCommandPackageGuids.cs*中,在`TestCommandPackageGuids`類定義中的現有命令指示后添加以下行。
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
     public const uint cmdidMRUList = 0x200;
     ```
 
-2. 在  *TestCommand.cs*新增下列 using 陳述式。
+2. 在*TestCommand.cs*添加以下 using 語句。
 
     ```csharp
     using System.Collections;
     ```
 
-3. 最後一個 AddCommand 呼叫之後，TestCommand 建構函式中加入下列程式碼。 `InitMRUMenu`稍後定義
+3. 在上次 AddCommand 調用之後的 TestCommand 建構函數中添加以下代碼。 稍後會`InitMRUMenu`定義
 
     ```csharp
     this.InitMRUMenu(commandService);
     ```
 
-4. TestCommand 類別中新增下列程式碼。 此程式碼會初始化字串表示，MRU 清單上顯示的項目的清單。
+4. 在 TestCommand 類中添加以下代碼。 此代碼初始化表示要在 MRU 清單中顯示的項的字串清單。
 
     ```csharp
     private int numMRUItems = 4;
@@ -125,7 +125,7 @@ ms.locfileid: "66352401"
     }
     ```
 
-5. 在後`InitializeMRUList`方法中，新增`InitMRUMenu`方法。 這會初始化 MRU 清單功能表命令。
+5. 在`InitializeMRUList`方法之後,添加`InitMRUMenu`方法。 這將初始化 MRU 清單功能表命令。
 
     ```csharp
     private void InitMRUMenu(OleMenuCommandService mcs)
@@ -143,9 +143,9 @@ ms.locfileid: "66352401"
     }
     ```
 
-    MRU 清單中，您必須建立功能表命令物件的每個可能的項目。 IDE 呼叫`OnMRUQueryStatus`MRU 清單，直到沒有更多的項目中的每個項目的方法。 在 managed 程式碼，知道有沒有更多的項目 ide 的唯一方式是先建立所有可能的項目。 如果您想，您可以將標記為不顯示在其他項目第一次使用`mc.Visible = false;`建立功能表命令之後。 這些項目便可看到稍後透過`mc.Visible = true;`在`OnMRUQueryStatus`方法。
+    您必須為 MRU 清單中的每個可能項創建功能表命令物件。 IDE 調`OnMRUQueryStatus`用 MRU 清單中每個項的方法,直到沒有更多項。 在託管代碼中,IDE 知道沒有更多項的唯一方法是首先創建所有可能的專案。 如果需要,可以在創建菜單命令后使用`mc.Visible = false;`,將其他項標記為最初不可見。 然後,可以使用`mc.Visible = true;``OnMRUQueryStatus`方法稍後使這些項目可見。
 
-6. 在後`InitMRUMenu`方法中，新增下列`OnMRUQueryStatus`方法。 這是設定每個 MRU 項目文字的處理常式。
+6. 在`InitMRUMenu`方法之後,添加以下`OnMRUQueryStatus`方法。 這是為每個 MRU 項設置文本的處理程式。
 
     ```csharp
     private void OnMRUQueryStatus(object sender, EventArgs e)
@@ -162,7 +162,7 @@ ms.locfileid: "66352401"
     }
     ```
 
-7. 在後`OnMRUQueryStatus`方法中，新增下列`OnMRUExec`方法。 這是選取最近使用項目處理常式。 這個方法會將選取的項目移至清單頂端，然後顯示訊息方塊中的 選取的項目。
+7. 在`OnMRUQueryStatus`方法之後,添加以下`OnMRUExec`方法。 這是用於選擇 MRU 項的處理程式。 此方法將所選項移動到清單頂部,然後在消息框中顯示所選項。
 
     ```csharp
     private void OnMRUExec(object sender, EventArgs e)
@@ -192,14 +192,14 @@ ms.locfileid: "66352401"
 
 1. 建置此專案並開始偵錯。
 
-2. 在  **TestMenu**功能表上，按一下**叫用 TestCommand**。 如此一來，就會顯示訊息方塊，指出命令已選取。
+2. 在**測試功能表選**單上,按下 **「調用測試命令**」。 執行此操作將顯示一個消息框,指示該命令已選定。
 
     > [!NOTE]
-    > 此步驟，才能強制載入，並正確地顯示 MRU 清單 VSPackage。 如果您略過此步驟中，MRU 清單將不會顯示。
+    > 此步驟需要強制 VSPackage 載入並正確顯示 MRU 清單。 如果跳過此步驟,將不會顯示 MRU 清單。
 
-3. 在上 **[測試] 功能表**功能表上，按一下**子功能表**。 四個項目清單會顯示子功能表中，以下為分隔符號的結尾。 當您按一下 **項目 3**，應該會出現訊息方塊，並將其顯示的文字**選取項目 3**。 （如果未顯示四個項目清單，請確定您已遵循先前步驟中的指示。）
+3. 在**測試功能表「功能表上**,按下 **」子功能表**。 四個項目的清單顯示在子菜單的末尾,位於分隔符下方。 按一下專案**3**時,應顯示一個訊息框並顯示文本 **「選定專案 3」。。** (如果未顯示四個項目的清單,請確保已遵循前面的步驟中的說明。
 
-4. 再次開啟子功能表。 請注意，**項目 3**現在位於清單頂端和其他項目已推送向下移動一個位置。 按一下 **項目 3**一次，請注意，仍會顯示訊息方塊**選取項目 3**，表示文字是否已正確地移到新位置，以及命令的標籤。
+4. 再次打開子功能表。 請注意,**專案 3**現在位於列表的頂部,其他專案已向下推一個位置。 再次按下**專案 3**並注意到訊息框仍顯示 **「選定專案 3」,** 表示文本與命令標籤一起正確移動到新位置。
 
 ## <a name="see-also"></a>另請參閱
-- [以動態方式加入功能表項目](../extensibility/dynamically-adding-menu-items.md)
+- [動態新增選單項目](../extensibility/dynamically-adding-menu-items.md)

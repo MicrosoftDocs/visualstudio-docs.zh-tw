@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
+title: IDebug運算式評估器2::設置回調 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f347b687066578d5572a89a6e057fd2cb3b79e0b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 907fdaa928b3f84f6ff37490d5c54a9d48515053
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325492"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729342"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-可讓運算式評估工具 (EE)，指定偵錯工具引擎 (DE) 將用來讀取計量設定的回呼介面。
+使運算式賦值器 (EE) 指定除錯器引擎 (DE) 將用於讀取指標設定的回調介面。
 
 ## <a name="syntax"></a>語法
 
@@ -40,16 +40,16 @@ int SetCallback (
 
 ## <a name="parameters"></a>參數
 `pCallback`\
-[in]要用於設定回呼介面。
+[在]用於設置回調的介面。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
-這個方法的運算式評估工具可用來讀取計量設定的工作階段偵錯管理員提供的介面。 它適合用來讀取計量上的遠端偵錯[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]電腦。
+此方法提供工作階段調試管理員的介面,運算式評估器可以使用該介面讀取指標設置。 在遠端調試中讀取[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]計算機上的指標非常有用。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法，如**CEE**公開 （expose） 的物件[IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)介面。
+以下範例展示如何為公開[IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)介面的**CEE**物件實現此方法。
 
 ```cpp
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)

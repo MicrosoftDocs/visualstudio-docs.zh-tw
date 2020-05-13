@@ -4,17 +4,17 @@ description: 了解如何回報 Visual Studio 的問題
 ms.date: 03/11/2018
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-ms.author: seiyer
-author: seaniyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947596"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276497"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>如何回報 Visual Studio 或 Visual Studio 安裝程式的問題
 
@@ -23,17 +23,17 @@ ms.locfileid: "62947596"
 
 您可以使用 Visual Studio 或其安裝程式中所包含的意見反應工具來報告問題。 意見反應工具可讓您輕鬆地將診斷資訊納入您的意見反應中，並協助 Visual Studio 小組更有效率地診斷和修正問題。 以下是回報問題的步驟。
 
-1. **在 Visual Studio 中**，選取右上角的意見反應圖示，然後選取 [回報問題]。 您也可以從功能表的 [說明] > [傳送意見反應] > [回報問題] 來存取意見反應工具。
+1. **在 Visual Studio 中**，選取右上角的意見反應圖示，然後選取 [回報問題]。 您還可以從功能表 **「幫助** > **傳送反饋** > **報告問題**」訪問回饋工具。
 ![Visual Studio 開發人員社群上的回報問題彈出視窗](media/vsfeedbackentry.png) 如果您無法安裝 Visual Studio 或無法在 Visual Studio 中存取意見反應工具，您也可以改為在 **Visual Studio 安裝程式**中回報問題。  在安裝程式中，選取右上角的意見反應圖示，然後選取 [回報問題]。
 ![Visual Studio Developer Community 上的回報問題快顯](media/installer.png)
 
-1. 如果尚未登入，請選取 [登入] 如下列螢幕擷取畫面所示。 依照畫面上的指示操作來登入。
+1. 如果尚未登入，請選取 [登入]**** 如下列螢幕擷取畫面所示。 依照畫面上的指示操作來登入。
 
    ![登入以回報問題](../ide/media/sign-in-new-ux.png)
 
    登入之後您不只可以回報問題，還可以對任何現有意見反應進行投票和評論。
 
-1. 登入後，就能在 [我追蹤的項目] 畫面中看到您的 [問題] 及 [活動]
+1. 登入後，就能在 [我追蹤的項目]**** 畫面中看到您的 [問題]**** 及 [活動]****
 
    ![我追蹤的項目](../ide/media/items-i-follow.png)
 
@@ -43,10 +43,10 @@ ms.locfileid: "62947596"
 
    ![搜尋類似問題並針對類似問題投票](../ide/media/search-and-vote.png)
 
-1. 若沒有找到您遇到的問題，請選擇畫面底部的 [回報新問題]。
+1. 如果未找到遇到的問題,請選擇螢幕底部的 **「報告新問題**」。。
 
    > [!NOTE]
-   > [回報新問題] 按鈕只會顯示在 Visual Studio 的 Developer Community 介面。 您無法直接在 [Developer Community](https://developercommunity.visualstudio.com/) 網站回報問題。
+   > [回報新問題]**** 按鈕只會顯示在 Visual Studio 的 Developer Community 介面。 您無法直接在 [Developer Community](https://developercommunity.visualstudio.com/) 網站回報問題。
 
 1. 建立問題的描述性標題，如此可協助我們將問題發送給適當的 Visual Studio 團隊。
 
@@ -54,33 +54,33 @@ ms.locfileid: "62947596"
 
    ![回報新問題](../ide/media/report-new-problem.png)
 
-1. 選取 [下一步] 移到 [附件] 索引標籤。您可在這裡擷取目前畫面，並傳送給 Microsoft。 若要附加額外的螢幕擷取畫面或其他檔案，請選擇 [附加其他檔案]。
+1. 選擇**下一步**以移動到「**附件」** 選項卡。在這裡,您可以捕獲當前螢幕並將其發送到 Microsoft。 若要附加額外的螢幕擷取畫面或其他檔案，請選擇 [附加其他檔案]****。
 
    ![將螢幕擷取畫面附加到 Visual Studio 問題報告](media/report-a-problem-screenshot.png)
 
-1. 若您不想附加螢幕擷取畫面或[錄製重現](#record-a-repro)，請選取 [下一步] 移到 [摘要] 索引標籤。
+1. 若您不想附加螢幕擷取畫面或[錄製重現](#record-a-repro)，請選取 [下一步]**** 移到 [摘要]**** 索引標籤。
 
-1. 選取 [提交]，連同任何影像、追蹤檔案或傾印檔案送出您的報表。 (如果 [提交] 按鈕呈現灰色，請確定您已提供報表的標題與描述。)
+1. 選取 [提交]****，連同任何影像、追蹤檔案或傾印檔案送出您的報表。 (如果 [提交]**** 按鈕呈現灰色，請確定您已提供報表的標題與描述。)
 
    如需所收集的資料相關資訊，請參閱[我們收集的資料](developer-community-privacy.md#data-we-collect)。
 
 ## <a name="record-a-repro"></a>錄製重現
 
-追蹤和堆積傾印檔案有助於我們診斷問題。 我們很感激您願意使用 [回報問題] 工具記錄重現問題的步驟，並將資料傳送給 Microsoft。 以下是操作說明：
+追蹤和堆積傾印檔案有助於我們診斷問題。 我們很感激您願意使用 [回報問題]**** 工具記錄重現問題的步驟，並將資料傳送給 Microsoft。 以下是操作說明：
 
-1. 在您輸入問題的標題與描述後，選取 [下一步] 前往 [附件] 索引標籤。
+1. 在您輸入問題的標題與描述後，選取 [下一步]**** 前往 [附件]**** 索引標籤。
 
-1. 選擇 [錄製] 索引標籤。
+1. 選擇 [錄製]**** 索引標籤。
 
-1. 在 [錄製您的動作] 下，若您能在目前的 Visual Studio 執行個體重現問題，請加以選取。 若因為 Visual Studio 停止回應等情況而無法這樣做，則選取 [建立新的執行個體>]**\<**，在新的 Visual Studio 執行個體中錄製動作。
+1. 在 [錄製您的動作]**** 下，若您能在目前的 Visual Studio 執行個體重現問題，請加以選取。 如果無法(例如,如果"視覺工作室"掛起)請選擇"**\<創建新實例>** 以在 Visual Studio 的新實例中記錄操作。
 
-1. 選取 [開始錄製]。 授與權限來執行工具。
+1. 選取 [開始錄製]****。 授與權限來執行工具。
 
    ![選擇 [開始錄製] 以在 Visual Studio 問題報告中提供追蹤與堆積傾印檔案](../ide/media/record-dialog-box.png)
 
-1. 出現 [步驟收錄程式] 工具時，請執行重現問題的步驟。
+1. 出現 [步驟收錄程式]**** 工具時，請執行重現問題的步驟。
 
-1. 完成之後，請選擇 [停止錄製] 按鈕。
+1. 完成之後，請選擇 [停止錄製]**** 按鈕。
 
 1. 請稍等幾分鐘，讓 Visual Studio 收集和封裝已錄製的資訊。
 
@@ -94,13 +94,13 @@ ms.locfileid: "62947596"
 
    ![Visual Studio 中需要更多資訊的通知](../ide/media/nmi-notification.png)
 
-1. 按一下 [檢視問題] 連結來篩選及排序檢視，以顯示需要注意的問題。 這些問題旁還會有指標，以在一般搜尋中加以區分。
+1. 按一下 [檢視問題]**** 連結來篩選及排序檢視，以顯示需要注意的問題。 這些問題旁還會有指標，以在一般搜尋中加以區分。
 
 1. 按一下問題即可看到問題的詳細資料檢視。
 
    ![需要更多資訊的通知](../ide/media/nmi-details-view.png)
 
-1. 若要檢視**需要更多資訊**要求，請在問題詳細資料檢視中按一下 [檢視他人的要求與回覆] 連結。 對話方塊隨即顯示要求。
+1. 若要檢視**需要更多資訊**要求，請在問題詳細資料檢視中按一下 [檢視他人的要求與回覆]**** 連結。 對話方塊隨即顯示要求。
 
    ![需要更多資訊的通知](../ide/media/nmi-request.png)
 
@@ -122,8 +122,8 @@ ms.locfileid: "62947596"
 
 ## <a name="see-also"></a>另請參閱
 
-* [告訴我們](../ide/talk-to-us.md)
-* [回報 Visual Studio for Mac 的問題](/visualstudio/mac/report-a-problem)
+* [Visual Studio 意見反應選項](../ide/feedback-options.md)
+* [報告 Mac 視覺工作室的問題](/visualstudio/mac/report-a-problem)
 * [回報 C++ 的問題](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)
-* [Developer Community 資料隱私權](developer-community-privacy.md)
+* [視覺工作室開發人員社區](https://developercommunity.visualstudio.com/)
+* [開發人員社群資料隱私權](developer-community-privacy.md)

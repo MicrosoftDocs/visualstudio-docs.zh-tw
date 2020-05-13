@@ -1,5 +1,5 @@
 ---
-title: 專案和方案
+title: 專案與解決方案
 description: 本文件概述 Visual Studio for Mac 中的專案和方案。
 ms.topic: overview
 author: heiligerdankgesang
@@ -7,15 +7,15 @@ ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
 ms.openlocfilehash: 92e7a47f7ea2b931c0b923d10e115843d315d024
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70107811"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的專案和解決方案
 
-本文能提供 Visual Studio for Mac 中「專案」  和「方案」  的概念概觀。
+本文能提供 Visual Studio for Mac 中「專案」** 和「方案」** 的概念概觀。
 
 > [!NOTE] 
 > 本主題適用於 Visual Studio for Mac。 針對 Windows 上的 Visual Studio，請參閱 [Visual Studio 中的專案和方案](/visualstudio/ide/solutions-and-projects-in-visual-studio)。
@@ -30,7 +30,7 @@ ms.locfileid: "70107811"
 
 ## <a name="solutions"></a>方案
 
-「方案」  是指能將一或多個相關專案分組在一起的容器。 方案是由具有自己獨特格式的文字檔 (副檔名為 `.sln`) 所描述；它通常不適合手動編輯。
+「方案」** 是指能將一或多個相關專案分組在一起的容器。 方案是由具有自己獨特格式的文字檔 (副檔名為 `.sln`) 所描述；它通常不適合手動編輯。
 
 ## <a name="managing-projects-in-the-solution-pad"></a>管理 Solution Pad 中的專案
 
@@ -38,7 +38,7 @@ ms.locfileid: "70107811"
 
 ![具有多個專案的範例方案](media/solution-example.png)
 
-您可以按兩下專案或方案名稱，或是以滑鼠右鍵按一下並選擇 [選項]  ，來管理專案和方案的屬性。
+您可以按兩下專案或方案名稱，或是以滑鼠右鍵按一下並選擇 [選項]****，來管理專案和方案的屬性。
 
 [管理方案和專案屬性](managing-solutions-and-project-properties.md)一文提供這些選項的詳細資訊。
 

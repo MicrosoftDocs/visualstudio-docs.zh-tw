@@ -6,17 +6,17 @@ ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75844266"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>登入 Visual Studio for Mac
 
 登入 Visual Studio for Mac 是您[啟用訂用帳戶](enable-subscription.md)的方式。 當您下載 Visual Studio for Mac 時，預設一律會取得 Community 版本。 如果您有 [Professional 或 Enterprise 授權](https://visualstudio.microsoft.com/vs/compare/)，您應該在第一次執行時登入，以解除鎖定任何其他功能。 此外，您還能獲得以下內容：
 
-* **存取 Visual Studio Dev Essentials 方案** - 此方案包含免費的軟體供應項目、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 。
+* **訪問視覺化工作室開發人員基本功能計畫**– 此計畫包括免費軟體產品、培訓、支援等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 。
 
 * 系統對於相同帳戶不會再次提示輸入認證，即可在 IDE 中**自動連線到 Azure**。
 
@@ -29,9 +29,9 @@ ms.locfileid: "75844266"
 > [!TIP]
 > 登入 Visual Studio for Mac 之前，請確定您已連線至網際網路。 > 訂用帳戶只能在線上啟用。 如果您未連線，請選擇 [我稍後會執行此動作]，並在連線時透過功能表登入。
 
-若要在第一次啟動時登入 Visual Studio for Mac，請執行下列步驟：
+要在首次發佈時登錄 Mac 的 Visual Studio，請執行以下步驟：
 
-1. 按一下登入視窗的 [使用 Microsoft 帳戶登入] 按鈕：
+1. 按一下登入視窗的 [使用 Microsoft 帳戶登入]**** 按鈕：
 
     ![Visual Studio for Mac 中的帳戶對話方塊](media/ide-tour-2019-start-signin.png)
 
@@ -39,29 +39,29 @@ ms.locfileid: "75844266"
 
     ![Microsoft 認證對話方塊](media/signing-in-image13.png)
 
-4. 登入之後，您會看到選取鍵盤快速鍵的選項。 選擇您想要使用並**繼續**的選項。 系統會接著提示您輸入 Visual Studio 2019 for Mac 開始視窗。 您可以在此開啟或建立新的專案：
+4. 登錄後，您將看到一個選項，用於選擇鍵盤快速鍵。 選擇要使用的選項，**然後繼續**。 然後，系統會提示您使用 Visual Studio 2019 的 Mac 啟動視窗。 您可以在此開啟或建立新的專案：
 
     ![登入成功](media/signing-in-image14.png)
 
-或者，您可以使用 [Visual Studio] > [登入] 功能表項目以隨時登入和登出。
+或者，您可以使用 [Visual Studio] > [登入]**** 功能表項目以隨時登入和登出。
 
 ## <a name="adding-multiple-user-accounts"></a>新增多個使用者帳戶
 
 Visual Studio for Mac 支援將多個帳戶新增至您的個人化帳戶。 這些額外帳戶可讓您從任何已新增的帳戶存取資源 (例如 Azure)。
 
-若要新增其他使用者帳戶，請從 Visual Studio for mac 選擇 [Visual Studio] > [帳戶] 功能表。 按一下 [新增] 按鈕，輸入其他的帳戶認證。
+若要新增其他使用者帳戶，請從 Visual Studio for mac 選擇 [Visual Studio] > [帳戶]**** 功能表。 按一下 [新增]**** 按鈕，輸入其他的帳戶認證。
 
 ![管理帳戶](media/signing-in-image15.png)
 
 ## <a name="view-or-change-your-profile-information"></a>檢視或變更您的設定檔資訊
 
-1. 前往 [Visual Studio] > [帳戶] 並選取 [我的設定檔] 按鈕。
+1. 前往 [Visual Studio] > [帳戶]**** 並選取 [我的設定檔]**** 按鈕。
 
-2. 在瀏覽器視窗中，選取 [編輯設定檔] 並變更所要的設定。
+2. 在瀏覽器視窗中，選取 [編輯設定檔]**** 並變更所要的設定。
 
-3. 當您完成時，請選擇 [儲存變更]。
+3. 當您完成時，請選擇 [儲存變更]****。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [登入 Visual Studio (Windows 上)](/visualstudio/ide/signing-in-to-visual-studio)
+- [登入 Visual Studio (在 Windows 上)](/visualstudio/ide/signing-in-to-visual-studio)
 - [使用多個使用者帳戶 (Windows 上的 Visual Studio)](/visualstudio/ide/work-with-multiple-user-accounts)

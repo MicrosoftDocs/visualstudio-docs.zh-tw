@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
 ms.openlocfilehash: 5e8fa7f740275f416f80827276d74be1f05b0e21
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984742"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客戶經驗改進計畫
@@ -20,11 +20,11 @@ Visual Studio 客戶經驗改進計畫 (VSCEIP) 是設計來協助 Microsoft 隨
 
 ## <a name="choice-and-control-over-the-visual-studio-customer-experience-improvement-program"></a>Visual Studio 客戶經驗改進計畫的選擇與控制
 
-VSCEIP 預設為開啟。 您可以遵循下列指示將它關閉，或重新開啟。
+VSCEIP 預設為開啟。 您可以依照下列指示來將它關閉或重新開啟。
 
 1. 開啟 Visual Studio for Mac。
 
-1. 從功能表列中，選擇 [Visual Studio] > [喜好設定] > [其他] > [意見反應]。
+1. 從功能表列中，選擇 [Visual Studio] > [喜好設定] > [其他] > [意見反應]****。
 
 1. 選取您的參與意願：
 
@@ -32,7 +32,7 @@ VSCEIP 預設為開啟。 您可以遵循下列指示將它關閉，或重新開
 
 [!INCLUDE [GDPR-related guidance](../../docs/misc/includes/gdpr-hybrid-note.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [客戶經驗改進計畫 (Windows 上的 Visual Studio)](/visualstudio/ide/visual-studio-experience-improvement-program)
 * [Visual Studio 所收集的系統產生記錄檔 (Windows 上)](/visualstudio/ide/diagnostic-data-collection)

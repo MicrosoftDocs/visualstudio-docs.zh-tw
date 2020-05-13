@@ -13,12 +13,12 @@ caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02639b91ce07ade97e9023dee3de7cfdaf10a07e
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 46790d762369ade78af6c10272fc92e4d5b53fca
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847964"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586796"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 獨立收集器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "75847964"
 
 - [我還可以在哪裏取得 IntelliTrace 資料？](#WhereElse)
 
-## <a name="WhatApps"></a> 哪些 App 與收集器搭配使用？
+## <a name="what-apps-work-with-the-collector"></a><a name="WhatApps"></a>哪些應用程式可與收集器搭配使用？
 
 - 裝載於 Internet Information Services (IIS) 7.0、7.5 和 8.0 版的 ASP.NET Web App
 
@@ -59,7 +59,7 @@ ms.locfileid: "75847964"
 
 - Windows Presentation Foundation (WPF) 和 Windows Forms App。
 
-## <a name="GetStarted"></a> 如何開始？
+## <a name="how-do-i-get-started"></a><a name="GetStarted"></a>如何? 開始使用了嗎？
 
 1. [安裝收集器](#BKMK_Install_the_IntelliTrace_Stand_Alone_Collector)
 
@@ -77,21 +77,21 @@ ms.locfileid: "75847964"
 
 6. [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> 安裝收集器
+## <a name="install-the-collector"></a><a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a>安裝收集器
 
-1. 在 App 伺服器上，建立收集器目錄，例如： **C:\IntelliTraceCollector**
+1. 在您的應用程式伺服器上，建立收集器目錄，例如： **C:\IntelliTraceCollector**
 
 2. 從 Microsoft 下載中心或從 Visual Studio 2103 Update 3 安裝資料夾取得收集器。 [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909)::
 
    - **Microsoft 下載中心**：
 
-     1. 選擇 **IntelliTraceCollector.exe**旁邊的 [下載]。
+     1. 選擇 **IntelliTraceCollector.exe**旁邊的 [下載] ****。
 
      2. 將 IntelliTraceCollector.exe 儲存至收集器目錄，例如： **C:\IntelliTraceCollector**
 
      3. 執行 IntelliTraceCollector.exe。 這會解壓縮 IntelliTraceCollection.cab 檔案。
 
-        \-或-
+        \- 或 -
 
    - **Visual Studio 安裝資料夾**：
 
@@ -107,20 +107,20 @@ ms.locfileid: "75847964"
 
    2. 瀏覽至收集器目錄，例如： **C:\IntelliTraceCollector**
 
-   3. 使用 **expand** 命令 (結尾含句點 ( **.** ))，以展開 IntelliTraceCollection.cab：
+   3. 使用 **expand** 命令 (結尾含句點 (**.**))，以展開 IntelliTraceCollection.cab：
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > 句點 ( **.** ) 會保留含有當地語系化收集計劃的子資料夾。
+       > 句點 (**.**) 會保留含有當地語系化收集計劃的子資料夾。
 
-## <a name="ConfigurePermissionsRunningCollector"></a> 設定收集器目錄的權限
+## <a name="set-up-permissions-for-the-collector-directory"></a><a name="ConfigurePermissionsRunningCollector"></a>設定收集器目錄的許可權
 
 1. 在 App 伺服器上，以系統管理員身分開啟 [命令提示字元] 視窗。
 
 2. 使用 Windows **icacls** 命令，授與伺服器管理員收集器目錄的完整權限。 例如：
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
 3. 收集 Web App 或 SharePoint 應用程式的資料：
 
@@ -128,13 +128,13 @@ ms.locfileid: "75847964"
 
          例如：
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<使用者 domain\userid >* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. 將收集器目錄的讀取和執行權限授與 Web App 或 SharePoint 應用程式的應用程式集區。
 
          例如：
 
-        - 針對 **DefaultAppPool** 應用程式集區中的 Web App：
+        - 針對**DefaultAppPool**應用程式集區中的 Web 應用程式：
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\DefaultAppPool":RX`
 
@@ -142,23 +142,23 @@ ms.locfileid: "75847964"
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-## <a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> 安裝 IntelliTrace PowerShell Cmdlet 以收集 Web App 或 SharePoint 應用程式的資料
+## <a name="install-intellitrace-powershell-cmdlets-to-collect-data-for-web-apps-or-sharepoint-applications"></a><a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a>安裝 IntelliTrace PowerShell Cmdlet 以收集 Web apps 或 SharePoint 應用程式的資料
 
-1. 在 App 伺服器上，確認已啟用 PowerShell。 在大部分的 Windows Server 版本上，您可以在 [伺服器管理員] 系統管理工具中加入這項功能。
+1. 在 App 伺服器上，確認已啟用 PowerShell。 在大部分的 Windows Server 版本上，您可以在 [伺服器管理員] **** 系統管理工具中加入這項功能。
 
-     ![使用伺服器管理員新增 PowerShell](../debugger/media/intellitrace-servermanager-addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
+     ![使用 [伺服器管理員] 新增 PowerShell](../debugger/media/intellitrace-servermanager-addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
 
 2. 安裝 IntelliTrace PowerShell Cmdlet。
 
-    1. 以系統管理員身分開啟 PowerShell 命令視窗。
+    1. 以系統管理員身分開啟 PowerShell 命令提示字元視窗。
 
-        1. 依序選擇 [開始]、[所有程式]、[附屬應用程式]和 [Windows PowerShell]。
+        1. 依序選擇 [開始] ****、[所有程式] ****、[附屬應用程式] **** 和 [Windows PowerShell] ****。
 
         2. 選擇下列其中一個步驟：
 
-            - 在 64 位元作業系統上，開啟 **Windows PowerShell**的捷徑功能表。 選擇 [以系統管理員身分執行]。
+            - 在 64 位元作業系統上，開啟 **Windows PowerShell**的捷徑功能表。 選擇 [以系統管理員身分執行] ****。
 
-            - 在 32 位元作業系統上，開啟 **Windows PowerShell (x86)** 的捷徑功能表。 選擇 [以系統管理員身分執行]。
+            - 在 32 位元作業系統上，開啟 **Windows PowerShell (x86)** 的捷徑功能表。 選擇 [以系統管理員身分執行] ****。
 
     2. 在 PowerShell 命令視窗中，使用 **Import-Module** 命令匯入 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**。
 
@@ -166,9 +166,9 @@ ms.locfileid: "75847964"
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
-## <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> 設定 .iTrace 檔案目錄的權限
+## <a name="set-up-permissions-for-the-itrace-file-directory"></a><a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a>設定 .Itrace 檔案目錄的許可權
 
-1. 在 App 伺服器上，建立 .iTrace 檔案目錄，例如： **C:\IntelliTraceLogFiles**
+1. 在您的應用程式伺服器上，建立 .Itrace 檔案目錄，例如： **C:\IntelliTraceLogFiles**
 
    > [!NOTE]
    > - 若要避免讓應用程式變慢，請選擇本機高速磁碟上不是非常活躍的位置。
@@ -184,7 +184,7 @@ ms.locfileid: "75847964"
 
    - 使用 Windows **icacls** 命令設定權限：
 
-     - 針對 **DefaultAppPool** 應用程式集區中的 Web App：
+     - 針對**DefaultAppPool**應用程式集區中的 Web 應用程式：
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`
 
@@ -196,25 +196,25 @@ ms.locfileid: "75847964"
 
    - 使用 Windows 檔案總管 (或檔案總管) 設定權限：
 
-     1. 開啟 .iTrace 檔案目錄的 [屬性] 。
+     1. 開啟 .iTrace 檔案目錄的 [屬性] **** 。
 
-     2. 在 [安全性] 索引標籤上，依序選擇 [編輯]和 [新增]。
+     2. 在 [安全性] **** 索引標籤上，依序選擇 [編輯] **** 和 [新增] ****。
 
-     3. 請確認 [內建安全性主體] 出現在 [選取這個物件類型] 方塊中。 如果未出現，請選擇 [物件類型] ，以將它加入。
+     3. 請確認 [內建安全性主體] **** 出現在 [選取這個物件類型] **** 方塊中。 如果沒有，請選擇 [**物件類型**] 加以新增。
 
-     4. 請確認您的本機電腦出現在 [從這個位置] 方塊中。 如果未出現，請選擇 [位置] 變更它。
+     4. 請確認您的本機電腦出現在 [從這個位置] **** 方塊中。 如果沒有，請選擇 [**位置**] 來變更它。
 
-     5. 在 [輸入要選取的物件名稱] 方塊中，加入 Web App 或 SharePoint 應用程式的應用程式集區。
+     5. 在 [**輸入要選取的物件名稱**] 方塊中，加入 Web 應用程式或 SharePoint 應用程式的應用程式集區。
 
-     6. 選擇 [檢查名稱] 來解析名稱。 選擇 [確定]。
+     6. 選擇 [檢查名稱] **** 來解析名稱。 選擇 [確定]  。
 
-     7. 請確認應用程式集區具有 [完全控制]。
+     7. 請確認應用程式集區具有 [完全控制] ****。
 
-## <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> 從 Web App 或 SharePoint 應用程式收集資料
+## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a>從 Web 應用程式或 SharePoint 應用程式收集資料
 
 1. 若要開始收集資料，請以系統管理員身分開啟 PowerShell 命令視窗，然後執行此命令：
 
-     `Start-IntelliTraceCollection` `"` *\<ApplicationPool >* `"` *\<h >* *\<FullPathToITraceFileDirectory >*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
     > 執行這個命令之後，請輸入 **Y** ，確認您想要開始收集資料。
@@ -225,19 +225,19 @@ ms.locfileid: "75847964"
 
     |||
     |-|-|
-    |*應用程式集區*|在其中執行應用程式的應用程式集區名稱|
-    |*收集計劃的路徑*|收集計劃 (可進行收集器設定的 .xml 檔案) 的路徑。<br /><br /> 您可以指定收集器所隨附的計劃。 下列計劃適用於 Web App 和 SharePoint 應用程式：<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     僅收集 IntelliTrace 事件和 SharePoint 事件 (包括例外狀況、資料庫呼叫和 Web 伺服器要求)。<br />-   collection_plan.ASP.NET.trace.xml<br />     收集函式呼叫和 collection_plan.ASP.NET.default.xml 中的所有資料。 這個計劃適用於進行詳細分析，但可能會讓 App 變得比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 若要避免讓 App 變慢，請自訂這些計劃，或建立自己的計劃。 基於安全考量，請將任何自訂計劃與收集器檔案放在相同的安全位置。 請參閱 [建立和自訂 IntelliTrace 收集計劃](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx) 和 [如何取得大部分的資料，而不會讓 App 變慢？](#Minimizing) **注意：** 根據預設，.Itrace 檔案的大小上限為 100 MB。 .iTrace 檔案達到這個限制時，收集器會刪除檔案的最早項目，以挪出空間供較新的項目使用。 若要變更此限制，請編輯收集計劃的 `MaximumLogFileSize` 屬性。 <br /><br /> *我可以在哪裡找到這些收集計劃的當地語系化版本？*<br /><br /> 您可以在收集器的子資料夾中找到當地語系化計劃。|
+    |*ApplicationPool*|在其中執行應用程式的應用程式集區名稱|
+    |*收集計劃的路徑*|收集計劃 (可進行收集器設定的 .xml 檔案) 的路徑。<br /><br /> 您可以指定收集器所隨附的計劃。 下列計劃適用於 Web App 和 SharePoint 應用程式：<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     僅收集 IntelliTrace 事件和 SharePoint 事件 (包括例外狀況、資料庫呼叫和 Web 伺服器要求)。<br />-   collection_plan.ASP.NET.trace.xml<br />     收集函式呼叫和 collection_plan.ASP.NET.default.xml 中的所有資料。 這個計劃適用於進行詳細分析，但可能會讓 App 變得比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 若要避免讓 App 變慢，請自訂這些計劃，或建立自己的計劃。 基於安全考量，請將任何自訂計劃與收集器檔案放在相同的安全位置。 請參閱 [建立和自訂 IntelliTrace 收集計劃](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) 和 [如何取得大部分的資料，而不會讓 App 變慢？](#Minimizing) **注意：** 根據預設，.Itrace 檔案的大小上限為 100 MB。 .iTrace 檔案達到這個限制時，收集器會刪除檔案的最早項目，以挪出空間供較新的項目使用。 若要變更此限制，請編輯收集計劃的 `MaximumLogFileSize` 屬性。 <br /><br /> *我可以在哪裡找到這些收集計劃的當地語系化版本？*<br /><br /> 您可以在收集器的子資料夾中找到當地語系化計劃。|
     |*iTrace 檔案目錄的完整路徑*|.iTrace 檔案目錄的完整路徑。 **安全性注意事項：** 提供完整路徑，而不是相對路徑。|
 
      收集器會附加至應用程式集區，並開始收集資料。
 
-     *「我現在可以開啟 .iTrace 檔案嗎？」* 不可以，在資料收集期間會鎖定檔案。
+     *「我現在可以開啟 .iTrace 檔案嗎？」* (Can I open the .iTrace file at this time?)不可以，在資料收集期間會鎖定檔案。
 
 2. 重現問題。
 
 3. 若要取得 .iTrace 檔案的快照，請使用此語法：
 
-     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`
+     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
 4. 若要檢查收集狀態，請使用此語法：
 
@@ -245,18 +245,18 @@ ms.locfileid: "75847964"
 
 5. 若要停止收集資料，請使用此語法：
 
-     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`
+     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
     > 執行這個命令之後，請輸入 **Y** ，確認您想要停止收集資料。 否則，收集器可能會繼續收集資料、.iTrace 檔案會保留鎖定，或檔案可能未包含任何有用的資料。
 
 6. [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="BKMK_Collect_Data_from_Executables"></a> 從 Managed App 收集資料
+## <a name="collect-data-from-a-managed-app"></a><a name="BKMK_Collect_Data_from_Executables"></a>從受管理的應用程式收集資料
 
 1. 若要同時啟動 App 並收集資料，請使用此語法：
 
-     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:` *\<h >* `/f:` *\<FullPathToITraceFileDirectoryAndFileName >* *\<PathToAppExecutableFileAndFileName >*
+     `\IntelliTraceSC.exe launch /cp:` `/f:` *FullPathToIntelliTraceCollectorExecutable>\<h>* *FullPathToITraceFileDirectoryAndFileName \<>* *PathToAppExecutableFileAndFileName \<>* * \< *
 
      例如，從名稱為 **MyApp**的 App 收集資料：
 
@@ -265,7 +265,7 @@ ms.locfileid: "75847964"
     |||
     |-|-|
     |*收集器可執行檔 IntelliTrace 的完整路徑*|收集器可執行檔 IntelliTraceSC.exe 的完整路徑|
-    |*收集計劃的路徑*|收集計劃 (可進行收集器設定的 .xml 檔案) 的路徑。<br /><br /> 您可以指定收集器所隨附的計劃。 下列計劃適用於 Managed App：<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     僅收集 IntelliTrace 事件，包括例外狀況、資料庫呼叫和 Web 伺服器要求。<br />-   collection_plan.ASP.NET.trace.xml<br />     收集函式呼叫和 collection_plan.ASP.NET.default.xml 中的所有資料。 這個計劃適用於進行詳細分析，但可能會讓 App 變得比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 若要避免讓 App 變慢，請自訂這些計劃，或建立自己的計劃。 基於安全考量，請將任何自訂計劃與收集器檔案放在相同的安全位置。 請參閱 [建立和自訂 IntelliTrace 收集計劃](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx) 和 [如何取得大部分的資料，而不會讓 App 變慢？](#Minimizing) **注意：** 根據預設，.Itrace 檔案的大小上限為 100 MB。 .iTrace 檔案達到這個限制時，收集器會刪除檔案的最早項目，以挪出空間供較新的項目使用。 若要變更此限制，請編輯收集計劃的 `MaximumLogFileSize` 屬性。 <br /><br /> *我可以在哪裡找到這些收集計劃的當地語系化版本？*<br /><br /> 您可以在收集器的子資料夾中找到當地語系化計劃。|
+    |*收集計劃的路徑*|收集計劃 (可進行收集器設定的 .xml 檔案) 的路徑。<br /><br /> 您可以指定收集器所隨附的計劃。 下列計劃適用於 Managed App：<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     僅收集 IntelliTrace 事件，包括例外狀況、資料庫呼叫和 Web 伺服器要求。<br />-   collection_plan.ASP.NET.trace.xml<br />     收集函式呼叫和 collection_plan.ASP.NET.default.xml 中的所有資料。 這個計劃適用於進行詳細分析，但可能會讓 App 變得比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 若要避免讓 App 變慢，請自訂這些計劃，或建立自己的計劃。 基於安全考量，請將任何自訂計劃與收集器檔案放在相同的安全位置。 請參閱 [建立和自訂 IntelliTrace 收集計劃](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) 和 [如何取得大部分的資料，而不會讓 App 變慢？](#Minimizing) **注意：** 根據預設，.Itrace 檔案的大小上限為 100 MB。 .iTrace 檔案達到這個限制時，收集器會刪除檔案的最早項目，以挪出空間供較新的項目使用。 若要變更此限制，請編輯收集計劃的 `MaximumLogFileSize` 屬性。 <br /><br /> *我可以在哪裡找到這些收集計劃的當地語系化版本？*<br /><br /> 您可以在收集器的子資料夾中找到當地語系化計劃。|
     |*.iTrace 檔案目錄及檔案名稱的完整路徑*|.iTrace 檔案目錄以及副檔名為 **.itrace** 之 .iTrace 檔案名稱的完整路徑。 **安全性注意事項：** 提供完整路徑，而不是相對路徑。|
     |*應用程式可執行檔案及檔案名稱的完整路徑*|Managed App 的路徑和檔案名稱|
 
@@ -273,7 +273,7 @@ ms.locfileid: "75847964"
 
 3. [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="BKMK_View_IntelliTrace_Log_Files"></a> 在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。
+## <a name="open-the-itrace-file-in-visual-studio-enterprise"></a><a name="BKMK_View_IntelliTrace_Log_Files"></a>在 Visual Studio Enterprise 中開啟 .Itrace 檔案
 
 > [!NOTE]
 > 若要使用 IntelliTrace 進行偵錯並逐步執行程式碼，您必須具有相符的原始程式檔和符號檔。 請參閱[在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
@@ -282,15 +282,15 @@ ms.locfileid: "75847964"
 
 2. 在 Visual Studio 外部按兩下 .iTrace 檔案，或從 Visual Studio 內開啟該檔案。
 
-     Visual Studio 會顯示 [IntelliTrace 摘要] 頁面。 在大部分的區段中，您都可以檢閱事件或其他項目，並選擇一個項目，然後在發生事件的位置以及時間使用 IntelliTrace 開始偵錯。 請參閱[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)。
+     Visual Studio 會顯示 [IntelliTrace 摘要] **** 頁面。 在大部分的區段中，您都可以檢閱事件或其他項目，並選擇一個項目，然後在發生事件的位置以及時間使用 IntelliTrace 開始偵錯。 請參閱[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)。
 
     > [!NOTE]
     > 若要使用 IntelliTrace 進行偵錯並逐步執行程式碼，您必須在開發電腦上具有相符的原始程式檔和符號檔。 請參閱[在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
 
-## <a name="Minimizing"></a> 如何取得大部分的資料，而不會讓 App 變慢？
- IntelliTrace 可以收集大量資料，因此對您 App 效能的影響取決於 IntelliTrace 所收集的資料以及所分析的程式碼種類。 請參閱 [最佳化實際伺服器上的 IntelliTrace 收集](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/18/optimizing-intellitrace-collection-on-production-server.aspx)。
+## <a name="how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a>如何? 取得大部分的資料，而不會讓應用程式變慢？
+ IntelliTrace 可以收集大量資料，因此對您 App 效能的影響取決於 IntelliTrace 所收集的資料以及所分析的程式碼種類。 請參閱 [最佳化實際伺服器上的 IntelliTrace 收集](https://devblogs.microsoft.com/devops/optimizing-intellitrace-collection-on-production-server/)。
 
- 以下是一些取得大部分資料而不會讓應用程式變慢的方法：
+ 以下是一些取得大部分資料而不會讓 App 變慢的方法：
 
 - 只有在您認為沒有問題或是可以重現問題時，才執行收集器。
 
@@ -316,7 +316,7 @@ ms.locfileid: "75847964"
 
 - 檢閱 IntelliTrace 在收集計劃中為其收集資料的模組。 編輯收集計劃，使其只包括您感興趣的模組：
 
-  1. 開啟收集計劃。 尋找 `<ModuleList>` 項目。
+  1. 開啟收集計劃。 尋找 `<ModuleList>` 元素。
 
   2. 在 `<ModuleList>`中，將 `isExclusionList` 屬性設為 `false`。
 
@@ -375,32 +375,32 @@ ms.locfileid: "75847964"
 
    `Employee` 類型具有下列屬性： `Id`、 `Name`和 `HomeAddress`。 `Employee` 與 `Address` 類型之間具有關聯。
 
-   ![員工與位址之間的關聯性](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
+   ![Employee 和 Address 之間的關聯性](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
    收集器會記錄 `id`方法所傳回 `Employee.Id`、 `Employee.Name` 、 `Employee` 和 `AlterEmployee` 物件的值。 不過，收集器不會記錄 `Address` 物件的資訊，不論此物件是否為 Null。 收集器也不會記錄 `AlterEmployee` 方法中區域變數的資料，除非其他方法使用這些區域變數做為參數 (當時記錄為方法參數)。
 
-## <a name="WhereElse"></a> 我還可以在哪裏取得 IntelliTrace 資料？
+## <a name="where-else-can-i-get-intellitrace-data"></a><a name="WhereElse"></a>我還可以在哪裡取得 IntelliTrace 資料？
 
 - 從 Visual Studio Enterprise 中的 IntelliTrace 偵錯工具會話，參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
 - 從 Microsoft Test Manager 中的測試工作階段，請參閱 [如何：收集 IntelliTrace 資料以協助偵錯困難的問題](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015)。
 
-## <a name="where-can-i-get-more-information"></a>哪裡可以取得詳細資訊？
+## <a name="where-can-i-get-more-information"></a>我可以在哪裡取得詳細資訊？
  [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)
 
  [IntelliTrace](../debugger/intellitrace.md)
 
 ### <a name="blogs"></a>部落格
- [遠端使用 IntelliTrace 獨立收集器](https://blogs.msdn.com/b/visualstudioalm/archive/2012/07/09/using-the-intellitrace-standalone-collector-remotely.aspx)
+ [遠端使用 IntelliTrace 獨立收集器](https://devblogs.microsoft.com/devops/using-the-intellitrace-standalone-collector-remotely/)
 
- [建立和自訂 IntelliTrace 收集計劃](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx)
+ [建立和自訂 IntelliTrace 收集計劃](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/)
 
- [最佳化實際伺服器上的 IntelliTrace 收集](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/18/optimizing-intellitrace-collection-on-production-server.aspx)
+ [最佳化實際伺服器上的 IntelliTrace 收集](https://devblogs.microsoft.com/devops/optimizing-intellitrace-collection-on-production-server/)
 
- [Visual Studio ALM + TFS 部落格](https://blogs.msdn.com/b/visualstudioalm)
+ [Visual Studio ALM + TFS 部落格](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)
 
-### <a name="forums"></a>Forums
+### <a name="forums"></a>論壇
  [Visual Studio 偵錯工具](https://social.msdn.microsoft.com/Forums/vsdebug)
 
-### <a name="videos"></a>Videos
+### <a name="videos"></a>影片
  [Channel 9 影片：收集和分析生產環境中的資料](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)

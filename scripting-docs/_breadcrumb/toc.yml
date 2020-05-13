@@ -2,7 +2,7 @@
   tocHref: /
   topicHref: /
   items:
-    - name: 正在處理指令碼
+    - name: 指令碼
       tocHref: /scripting/
       topicHref: /scripting
       items:
@@ -14,7 +14,7 @@
           tocHref: /scripting/winscript/
           topicHref: /scripting/winscript/windows-script-interfaces
           items:
-            - name: 參考資料
+            - name: 參考
               tocHref: /scripting/winscript/reference/
               topicHref: /scripting/winscript/reference/windows-script-interfaces-reference
         - name: JavaScript 執行階段裝載

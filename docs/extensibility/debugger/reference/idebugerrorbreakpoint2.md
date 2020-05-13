@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpoint2 | Microsoft Docs
+title: IDebug錯誤斷點2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpoint2 interface
 ms.assetid: 1f2a4b94-3713-46e9-8272-3917187792bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f25187b2aa88153fcfd712b9dd4b0f651ba8860
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17b20d0f3545b0f7266ad6d0c6423d581233dd3c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327792"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730076"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
-這個介面會表示錯誤或警告中斷點，例如無效的位置、 無效的運算式或為何暫止中斷點具有未繫結 （程式碼不會載入尚未等等） 的原因。
+此介面表示錯誤或警告斷點,例如位置無效、表達式無效或掛起斷點未綁定的原因(代碼尚未載入,等等)。
 
 ## <a name="syntax"></a>語法
 
@@ -28,26 +28,26 @@ ms.locfileid: "66327792"
 IDebugErrorBreakpoint2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 偵錯引擎會實作這個介面做為其支援中斷點的一部分。 這個介面用來報告繫結中斷點的問題。
+## <a name="notes-for-implementers"></a>實施者說明
+ 調試引擎實現此介面作為其對斷點的支援的一部分。 此介面用於報告綁定斷點的問題。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 呼叫[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)取得這個介面。 此介面也可能會傳回 (表示清單的一部分[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)介面) 的呼叫所[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)或[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)。
+## <a name="notes-for-callers"></a>通話備註
+ 對[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)的調用獲取此介面。 此介面也可以返回(作為由[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)介面表示的清單的一部分),由調用[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)或[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)返回。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IDebugErrorBreakpoint2`。
 
 |方法|描述|
 |------------|-----------------|
-|[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|取得造成錯誤的暫止中斷點。|
-|[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|取得描述錯誤的中斷點錯誤解決方式。|
+|[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|獲取導致錯誤的掛起的斷點。|
+|[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|獲取描述錯誤的斷點錯誤解析度。|
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)

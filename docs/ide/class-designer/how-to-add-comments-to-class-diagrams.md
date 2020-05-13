@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a46ad971fa9b68de25b55c6c4c882f29c71d6b68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592252"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>如何：將註解新增至類別圖表
@@ -31,11 +31,11 @@ ms.locfileid: "75592252"
 
 ## <a name="to-add-a-comment"></a>新增註解
 
-1. 將註解從 [類別設計工具工具箱] 拖曳到類別圖表上。
+1. 將註解從 [類別設計工具工具箱]**** 拖曳到類別圖表上。
 
 2. 在圖表上新的註解圖形中按一下，然後鍵入想要的文字。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用類別圖表](designing-and-viewing-classes-and-types.md)
 - [如何：自訂類別圖表](how-to-customize-class-diagrams.md)

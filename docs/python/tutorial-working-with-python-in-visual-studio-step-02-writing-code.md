@@ -12,21 +12,21 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430000"
 ---
-# <a name="step-2-write-and-run-code"></a>步驟 2：撰寫並執行程式碼
+# <a name="step-2-write-and-run-code"></a>步驟 2：撰寫和執行程式碼
 
 **上一步：[建立新的 Python 專案](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
-雖然 [方案總管] 是您用來管理專案檔的位置，但 [編輯器] 視窗通常是處理檔案「內容」的地方，例如原始程式碼。 編輯器會依照內容判定所編輯的檔案類型，包括程式設計語言 (根據副檔名)，並提供適用於該語言的功能，例如使用 IntelliSense 的語法著色和自動完成。
+儘管**解決方案資源管理器**是管理專案檔案的位置，但*編輯器*視窗通常是處理檔*內容*（如原始程式碼）的位置。 編輯器會依照內容判定所編輯的檔案類型，包括程式設計語言 (根據副檔名)，並提供適用於該語言的功能，例如使用 IntelliSense 的語法著色和自動完成。
 
 1. 建立新的「Python 應用程式」專案之後，Visual Studio 編輯器中會開啟名稱為 *PythonApplication1.py* 的預設空白檔案。
 
-1. 在編輯器中，開始鍵入 `print("Hello, Visual Studio")`，並注意 Visual Studio IntelliSense 在過程中如何顯示自動完成選項。 下拉式清單中含外框的選項是您按下 **Tab** 鍵時使用的預設自動完成選項。 涉及到較長的陳述式或識別項時，完成最有幫助。
+1. 在編輯器中，開始鍵入 `print("Hello, Visual Studio")`，並注意 Visual Studio IntelliSense 在過程中如何顯示自動完成選項。 下拉清單中的大綱顯示的選項是按下**Tab**鍵時使用的預設完成。 涉及到較長的陳述式或識別項時，完成最有幫助。
 
     ![IntelliSense 自動完成快顯視窗](media/vs-getting-started-python-04-IntelliSense1b.png)
 
@@ -45,9 +45,9 @@ ms.locfileid: "62430000"
     ![IntelliSense 語法著色和錯誤醒目提示](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > 由於某個人的開發環境是非常私人的事情，因此 Visual Studio 可讓您擁有 Visual Studio 外觀和行為的完整控制權。 請選取 [工具] > [選項] 功能表命令，並瀏覽 [環境] 和 [文字編輯器] 索引標籤下方的設定。 根據預設，您會看到有限數目的選項。若要查看每種程式設計語言的每個選項，請選取對話方塊底部的 [顯示所有設定]。
+    > 由於某個人的開發環境是非常私人的事情，因此 Visual Studio 可讓您擁有 Visual Studio 外觀和行為的完整控制權。 選擇"**工具** > **選項"** 功能表命令並流覽 **"環境和****文字編輯器**"選項卡下的設置。 根據預設，您會看到有限數目的選項。若要查看每種程式設計語言的每個選項，請選取對話方塊底部的 [顯示所有設定]****。
 
-1. 按 **Ctrl**+**F5** 或選取 [偵錯] > [啟動但不偵錯] 功能表項目，來執行已撰寫到這個時間點的程式碼。 如果程式碼仍然發生錯誤，Visual Studio 會向您發出警告。
+1. 通過按**Ctrl**+**F5**或選擇 **"不調試"** 功能表項目的 **"調試** > 開始"來運行您編寫到此點的代碼。 如果程式碼仍然發生錯誤，Visual Studio 會向您發出警告。
 
 1. 當您執行程式時，隨即出現顯示結果的主控台視窗，就如同您從命令列搭配 *PythonApplication1.py* 執行 Python 解譯器。 按某個按鍵來關閉視窗，並返回到 Visual Studio 編輯器。
 
@@ -84,7 +84,7 @@ ms.locfileid: "62430000"
         print(cos(radians(i)))
     ```
 
-1. 使用 **Ctrl**+**F5** 或 [偵錯] >  [啟動但不偵錯]，再次執行程式。 當您完成時，請關閉輸出視窗。
+1. 再次運行程式與**Ctrl**+**F5**或**調試** > **開始沒有調試**。 當您完成時，請關閉輸出視窗。
 
 ## <a name="next-step"></a>後續步驟
 
@@ -95,5 +95,5 @@ ms.locfileid: "62430000"
 
 - [編輯程式碼](editing-python-code-in-visual-studio.md)
 - [格式化程式碼](formatting-python-code.md)
-- [重構程式碼](refactoring-python-code.md)
+- [重構代碼](refactoring-python-code.md)
 - [使用 PyLint](linting-python-code.md)

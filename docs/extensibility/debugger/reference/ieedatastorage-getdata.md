@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetData | Microsoft Docs
+title: IEEData儲存:獲取數據 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage::GetData
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8859b019559f21797e23fa9a568b0ad7d649454
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62a1295aeb2a6afad51dee0f1015e3ab01d13fbb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319641"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718205"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
-從物件擷取指定的位元組數目。
+從物件檢索指定數量的位元組。
 
 ## <a name="syntax"></a>語法
 
@@ -45,19 +45,19 @@ int GetData(
 
 ## <a name="parameters"></a>參數
 `dataSize`\
-[in]要擷取的位元組數目 (`data`陣列必須具有至少下列數量之位元組為單位)。
+[在]要檢查的位元組數(`data`陣列必須至少保留此位元) 。
 
 `sizeGotten`\
-[out]傳回實際擷取的位元組的數目。
+[出]返回實際檢索的位元組數。
 
 `data`\
-[in、 out]要求的資料填入的陣列。
+[進出]要用請求的數據填充的陣列。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 建議的使用這個方法是在本機的陣列，擷取資料的所有位元組，因為沒有任何方法可略過的擷取程序中的位元組。 在此情況下，參數`dataSize`應該所傳回的值[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)方法。
+ 此方法的建議用途是檢索到本地陣列中的所有數據位元組,因為在檢索過程中無法跳過位元組。 在這種情況下,參數`dataSize`應該是[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)方法返回的值。
 
 ## <a name="see-also"></a>另請參閱
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

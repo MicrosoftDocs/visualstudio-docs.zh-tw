@@ -9,12 +9,12 @@ metadata:
   ms.author: dominicn
   ms.date: 09/18/2019
   ms.topic: hub-page
-  ms.openlocfilehash: 2ba2e1348a3abf5c914e1c686e5fd00ff186d9c0
-  ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+  ms.openlocfilehash: 9a0f8e7881dd7083fb9380a04e68d3b04c0071b1
+  ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/10/2019
-  ms.locfileid: "74985042"
+  ms.lasthandoff: 04/02/2020
+  ms.locfileid: "80544077"
 highlightedContent:
   items:
   - title: 安裝 Visual Studio for Mac
@@ -39,7 +39,7 @@ productDirectory:
       text: .NET Core 支援
     - url: ~/asp-net-core.md
       text: .NET Core 使用者入門
-    - url: https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1#build-web-apis-and-web-ui-using-aspnet-core-mvc
+    - url: https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1
       text: ASP.NET 文件
   - title: Azure
     imageSrc: https://docs.microsoft.com/media/logos/logo_azure.svg

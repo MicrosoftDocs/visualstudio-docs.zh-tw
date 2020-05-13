@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodLocationProperty |Microsoft Docs
+title: IDebug運算式評估器::獲取方法定位屬性 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::GetMethodLocationProperty method
 ms.assetid: 52c42a2e-f144-476b-8bef-442464c8fe8e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: faa2767e54e9821c7b3270fa60f5be232a2c232f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6ba87d6c1a1f7370ce5e209440589f362b87035
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325772"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729515"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
-這個方法會將方法的位置和位移轉換成記憶體位址。
+此方法將方法位置和偏移轉換為記憶體位址。
 
 ## <a name="syntax"></a>語法
 
@@ -49,27 +49,27 @@ int GetMethodLocationProperty(
 
 ## <a name="parameters"></a>參數
 `upstrFullyQualifiedMethodPlusOffset`\
-[in]方法的位置和位移、 以字串表示。
+[在]方法位置和偏移,表示為字串。
 
 `pSymbolProvider`\
-[in]符號提供者以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件。
+[在]符號提供程式表示為[IDebugSymbol 提供程式](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件。
 
 `pAddress`\
-[in]在方法中，以表示地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件。
+[在]方法中的位址,表示為[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件。
 
 `pBinder`\
-[in]繫結器表示為[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。
+[在]活頁夾表示為[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。
 
 `ppProperty`\
-[out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)代表的記憶體位址的介面。
+[出]返回表示記憶體位址的[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 傳回的位址可用來設定中斷點，例如使用中。
+ 例如,返回的位址可用於設置斷點。
 
- 儘管有此名稱`upstrFullyQualifiedMethodPlusOffset`，這個參數可以傳遞完整的方法名稱。 在此情況下，選取的方法是包圍`pAddress`。 此參數的解譯方式，是由運算式評估工具及它所支援的語言實作。
+ 儘管名稱`upstrFullyQualifiedMethodPlusOffset`,此參數可以傳遞一個部分限定的方法名稱。 在這種情況下,所選方法是包含的方法`pAddress`。 如何解釋此參數由表達式賦值器及其支援的語言的實現決定。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

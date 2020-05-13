@@ -1,5 +1,5 @@
 ---
-title: 實作原始檔控制外掛程式的最佳作法 |Microsoft Docs
+title: 實現原始程式碼管理外掛程式的最佳做法 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,56 +7,56 @@ helpviewer_keywords:
 - best practices, source control plug-ins
 - source control [Visual Studio SDK], plug-ins
 ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89bc4065a450f82b3cdec33e94f4e17ea700d3c7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 68491f22d63ae3ebb664b7c22188a661dccbf39a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352211"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740049"
 ---
-# <a name="best-practices-for-implementing-a-source-control-plug-in"></a>實作原始檔控制外掛程式的最佳作法
-下列的技術詳細資料可協助您可靠地實作原始檔控制外掛程式在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
+# <a name="best-practices-for-implementing-a-source-control-plug-in"></a>實現原始碼管理外掛程式的最佳做法
+以下技術詳細資訊可以説明您可靠地實現中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]原始程式碼管理外掛程式。
 
 ## <a name="memory-management-issues"></a>記憶體管理問題
- 在大部分情況下，整合式的開發環境 (IDE)，也就是呼叫端，會釋放，並將記憶體配置。 原始檔控制外掛程式傳回呼叫端配置的緩衝區中的字串和其他項目。 例外狀況會在其發生的特定函數的描述中註明。
+ 在大多數情況下,集成開發環境 (IDE),即調用方,釋放和分配記憶體。 原始程式碼管理外掛程式傳回呼叫方分配的緩衝區中的字串和其他項。 異常在特定函數發生的位置的說明中註明。
 
-## <a name="arrays-of-file-names"></a>檔案名稱的陣列
- 傳遞陣列的檔案時，不會傳遞為連續的檔案名稱陣列。 它會當做指標陣列傳遞至檔案名稱。 例如，在[SccGet](../extensibility/sccget-function.md)，所傳遞的檔案名稱`lpFileNames`參數，其中`lpFileNames`實際上是指向`char **`。 `lpFileNames`[0] 是第一個名稱，指向`lpFileNames`[1] 是第二個名稱和等等的指標。
+## <a name="arrays-of-file-names"></a>檔案名陣列
+ 傳遞文件陣列時,不會作為連續的檔名陣組傳遞。 它作為指向檔名的指標陣列傳遞。 例如,在[SccGet](../extensibility/sccget-function.md)中,檔`lpFileNames`名由 參數`lpFileNames`傳遞,其中 實際上是指向`char **`的指標。 `lpFileNames`{0} 是指向名字的指標,[1]`lpFileNames`是指向第二個名稱的指標,等等。
 
-## <a name="large-model"></a>大型模型
- 所有指標都是 32 位元，即使在 16 位元作業系統上。
+## <a name="large-model"></a>大模型
+ 所有指標都是 32 位元,即使在 16 位元作業系統上也是如此。
 
-## <a name="fully-qualified-paths"></a>完整的路徑
- 其中的檔案名稱，或做為引數會指定目錄，它們必須是完整的路徑或 UNC 路徑，不含結束的反斜線。 它是原始檔控制外掛程式，以便在轉譯為相對路徑，如果也就是，需求為基礎的原始檔控制系統的責任。
+## <a name="fully-qualified-paths"></a>完全合格的路徑
+ 如果檔名或目錄被指定為參數,則它們必須是完全限定的路徑或 UNC 路徑,而不進行結束回斜杠。 如果是基礎原始程式碼管理系統的要求,原始程式碼管理外掛程式有責任將這些路徑轉換為相對路徑。
 
-## <a name="specify-a-fully-qualified-path-for-the-registered-dll"></a>指定完整的路徑註冊 dll
- IDE 不會再載入 Dll 從相對路徑 (例如 *.\NewProvider.dll*)。 必須指定 DLL 的完整路徑 (例如*C:\Providers\NewProvider.dll*)。 這項需求會加強安全性的 IDE，藉由防止未經授權或模擬的原始檔控制 Dll 的載入。
+## <a name="specify-a-fully-qualified-path-for-the-registered-dll"></a>指定為註冊的 DLL 指定完全限定的路徑
+ IDE 不再從相對路徑載入 DLL(例如 *,._NewProvider.dll*)。 必須指定 DLL 的完整路徑(例如 *,C:\提供程式\NewProvider.dll*)。 此要求通過防止載入未經授權的或類比的原始程式碼管理 DLL 來增強 IDE 的安全性。
 
-## <a name="check-for-an-existing-vssci-plug-in-when-you-install-your-source-control-plug-in"></a>當您安裝您的原始檔控制外掛程式時檢查現有 VSSCI 外掛程式
- 若要安裝您的原始檔控制外掛程式計劃的使用者可能已經有現有原始檔控制外掛程式安裝在電腦上。 （安裝程式） 安裝程式的外掛程式，您建立應該判斷是否有相關的登錄機碼的現有值。 如果已經設定這些機碼，您的安裝程式應該詢問使用者是否為預設原始檔控制外掛程式註冊您的外掛程式，並取代的已安裝。
+## <a name="check-for-an-existing-vssci-plug-in-when-you-install-your-source-control-plug-in"></a>安裝原始碼管理外掛程式時,請檢查現有 VSSCI 外掛程式
+ 計劃安裝原始程式碼管理外掛程式的使用者可能已經在電腦上安裝了現有的原始程式碼管理外掛程式。 您創建的外掛程式的安裝(設置)程式應確定是否存在相關註冊表項的現有值。 如果已設置這些金鑰,安裝程式應詢問使用者是否將外掛程式註冊為預設原始程式碼管理外掛程式,並替換已安裝的外掛程式。
 
-## <a name="error-result-codes-and-reporting"></a>錯誤結果碼和報告
- `SCC_OK`傳回原始檔控制函式程式碼指出作業已成功的所有檔案。 如果作業失敗，它預期會傳回發生的最後一個錯誤碼。
+## <a name="error-result-codes-and-reporting"></a>錯誤結果代碼和報告
+ 原始程式`SCC_OK`碼 控制函數的返回代碼指示所有檔的操作都已成功。 如果操作失敗,則預期將返回遇到的最後一個錯誤代碼。
 
- 報告的規則是，如果在 IDE 中發生錯誤，IDE 會負責報告它。 如果在原始檔控制系統中發生錯誤，就有一個原始檔控制外掛程式負責報告它。 比方說，**目前沒有選取任何檔案**會報告在 IDE 中，而**此檔案已簽出**回報外掛程式。
+ 報告的規則是,如果 IDE 中發生錯誤,IDE 負責報告錯誤。 如果原始程式碼管理系統中出現錯誤,原始程式碼管理外掛程式負責報告它。 例如,IDE 不會報告**當前選定的任何檔**,而**此檔已簽出**,外掛程式將報告該檔。
 
 ## <a name="the-context-structure"></a>內容結構
- 在呼叫期間[SccInitialize](../extensibility/sccinitialize-function.md)，呼叫端傳遞`ppvContext`參數，也就是未初始化的控制代碼設為 void。 原始檔控制外掛程式可以忽略這個參數或它可以配置的任何類型的結構，並將該結構的指標放入傳遞的指標。 IDE 不了解此結構中，但它會傳遞的指標，此結構在外掛程式中的每個其他呼叫。 這會提供有用的內容快取資訊的外掛程式，它可用來維護跨函式呼叫持續發生，而不使用全域變數的全域狀態資訊。 外掛程式會負責釋放呼叫上的結構[SccUninitialize](../extensibility/sccuninitialize-function.md)。
+ 在調用[Scc 初始化](../extensibility/sccinitialize-function.md)期間,呼叫`ppvContext`方將參數 傳遞參數,參數是一個未初始化的句柄到 void。 源代碼管理外掛程式可以忽略此參數,也可以分配任何類型的結構,並將指向該結構的指標放入傳遞的指標中。 IDE 不理解此結構,但它將指向此結構的指標傳遞到外掛程式中的每個其他調用中。 這為外掛程式提供了有價值的上下文緩存資訊,它可用於維護在函數調用之間持續存在的全域狀態資訊,而無需使用全域變數。 該外掛程式負責在調用[SccUn初始化](../extensibility/sccuninitialize-function.md)時釋放結構。
 
- 如果外掛程式設定`SCC_CAP_REENTRANT`位元[SccInitialize](../extensibility/sccinitialize-function.md) (特別是在`lpSccCaps`參數)，多個內容結構用來追蹤已開啟的所有專案。
+ 如果外掛程式`SCC_CAP_REENTRANT`在[Scc 初始化](../extensibility/sccinitialize-function.md)(特別是`lpSccCaps`參數中)中設置位,則使用多個上下文結構來跟蹤打開的所有專案。
 
-## <a name="bitflags-and-other-command-options"></a>位元旗標和其他命令選項
- 針對每個命令，例如[SccGet](../extensibility/sccget-function.md)，IDE 可以指定命令的行為變更的許多選項。
+## <a name="bitflags-and-other-command-options"></a>位元旗標和其他指令選項
+ 對於每個命令(如[SccGet),IDE](../extensibility/sccget-function.md)可以指定許多選項來更改命令的行為。
 
- 此 API 支援透過 ide 的某些選項的設定`fOptions`參數。 這些選項如下所述[特定的命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)以及它們會影響的命令。 一般情況下，這些是的選項，就不會提示使用者。
+ API 支援 IDE 透過`fOptions`參數設定某些選項。 這些選項在[特定命令使用的 Bitflags](../extensibility/bitflags-used-by-specific-commands.md)中描述,以及它們影響的命令。 通常,這些選項不會提示使用者。
 
- 最使用者可設定的設定選項中未定義這種方式，因為它們在原始檔控制外掛程式相當廣泛。因此，建議的機制就**進階** 按鈕。 例如，在**取得** 對話方塊中，IDE 會顯示其了解，但它也會顯示資訊**進階**外掛程式都具有為這個命令的選項按鈕。 當使用者按一下**進階**按鈕，IDE 呼叫[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)啟用原始檔控制外掛程式，以提示使用者輸入位元旗標或日期/時間等資訊。 外掛程式會傳回此資訊傳遞時所傳回的結構中`SccGet`命令。
+ 大多數用戶可配置的設置選項不是以這種方式定義的,因為它們在原始程式碼管理外掛程式之間差別很大。因此,建議的機制是一個**高級**按鈕。 例如,在 **「獲取」** 對話方塊中,IDE 僅顯示它理解的資訊,但如果外掛程式具有此命令的選項,則該按鈕也會顯示 **「進階」** 按鈕。 當使用者按下 **「高級」** 按鈕時,IDE 會呼叫[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)以啟用原始程式碼管理外掛程式以提示使用者獲取資訊,例如位標誌或日期/時間。 外掛程式`SccGet`在命令期間傳遞回的結構中返回此資訊。
 
 ## <a name="see-also"></a>另請參閱
-- [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
-- [建立原始檔控制外掛程式](../extensibility/internals/creating-a-source-control-plug-in.md)
+- [原始程式管理外掛程式](../extensibility/source-control-plug-ins.md)
+- [建立原始碼管理外掛程式](../extensibility/internals/creating-a-source-control-plug-in.md)

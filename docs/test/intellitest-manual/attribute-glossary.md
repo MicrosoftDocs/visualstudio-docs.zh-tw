@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594301"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302627"
 ---
 # <a name="attribute-glossary"></a>屬性字彙
 
@@ -79,9 +79,9 @@ ms.locfileid: "75594301"
 <a name="pexclass"></a>
 ## <a name="pexclass"></a>PexClass
 
-此屬性會標示包含「探索」的類別。 它相當於 MSTest **TestClassAttribute** (或 NUnit **TestFixtureAttribute**)。 此屬性是選擇性的。
+此屬性會標示包含「探索」** 的類別。 它相當於 MSTest **TestClassAttribute** (或 NUnit **TestFixtureAttribute**)。 這是一個選擇性的屬性。
 
-使用 [PexClass](#pexclass) 所標示的類別必須是「預設可建構的」：
+使用 [PexClass](#pexclass) 所標示的類別必須是「預設可建構的」**：
 
 * 公開匯出的類型
 * 預設建構函式
@@ -245,6 +245,6 @@ class CtorTest(int capacity) {
 
 [詳細資訊](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
 
-## <a name="got-feedback"></a>有任何意見反應嗎？
+## <a name="got-feedback"></a>有人給您意見嗎？
 
 在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。

@@ -1,39 +1,39 @@
 ---
-title: 原始檔控制 VSPackage 的設計元素 |Microsoft Docs
+title: 原始碼管理 VS 套件設計元素 ( C) :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, design elements
 ms.assetid: edd3f2ff-ca32-4465-8ace-4330493b67bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e9b22ea32698d6e996bfee618b0b5ca4da5943d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b5e94829f781c058d9b0ea56cdec6c03c71ffe0c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322473"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705001"
 ---
 # <a name="source-control-vspackage-design-elements"></a>原始檔控制 VSPackage 的設計項目
-在本節中的主題說明結構原始檔控制 VSPackage 必須實作的深度整合。 也會列出介面的原始檔控制 VSPackage 的服務可以實作，並從其他介面和服務可以使用原始檔控制 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]元件來支援它的來源控制模型與功能。
+本節中的主題概述了源控件 VSPackage 實現深度集成時必須實現的結構。 它還列出了原始程式碼管理 VSPackage 可以實現的介面和服務,以及原始程式碼管理 VSPackage 可以從其他[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]元件使用的介面和服務來支援其原始程式碼管理模型和功能。
 
 ## <a name="in-this-section"></a>本節內容
 - [VSPackage 結構](../../extensibility/internals/vspackage-structure-source-control-vspackage.md)
 
- 定義原始檔控制 VSPackage 結構。
+ 定義原始碼管理 VSPackage 的結構。
 
 - [相關的服務和介面](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)
 
- 列出原始檔控制套件的相關介面和服務。
+ 列出與原始程式碼管理包相關的介面和服務。
 
 - [提供的服務](../../extensibility/internals/services-provided-source-control-vspackage.md)
 
- 描述原始檔控制 VSPackage 所提供的原始檔控制服務。
+ 描述原始碼管理 VSPackage 提供的原始程式碼管理服務。
 
 ## <a name="related-sections"></a>相關章節
 - [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- 討論如何建立原始檔控制 VSPackage，不僅提供原始檔控制功能，但可以用來自訂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]原始檔控制 UI。
+ 討論如何建立原始碼管理 VSPackage,該原始程式碼管理不僅提供原始程式碼管理功能,還可[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]用於自訂原始程式碼管理 UI。

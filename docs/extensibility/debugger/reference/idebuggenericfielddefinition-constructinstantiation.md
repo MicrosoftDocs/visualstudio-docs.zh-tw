@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericFieldDefinition::ConstructInstantiation | Microsoft Docs
+title: IDebugGeneric欄位定義::構造即時性 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - ConstructInstantiation
 - IDebugGenericFieldDefinition::ConstructInstantiation
 ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89f7ecfc79cc2a4279a8ca0fccfc527ef63e603b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 352018e50b955ed414af974bc21b62775fd55f53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313218"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728258"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
-建構指定型別引數陣列的欄位執行個體。
+建構給定類型參數陣列的欄位實例。
 
 ## <a name="syntax"></a>語法
 
@@ -44,19 +44,19 @@ int ConstructInstantiation(
 
 ## <a name="parameters"></a>參數
 `cArgs`\
-[in]中的引數`ppArgs`陣列。
+[在]陣列中的`ppArgs`參數數。
 
 `ppArgs`\
-[in]包含型別引數的陣列。 型別引數必須是封閉式的型別 （非泛型或完整具現化泛型）。
+[在]包含類型參數的陣列。 類型參數必須是閉合類型(非泛型或完全實例化泛型)。
 
 `ppConstructedField`\
-[out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面，表示新的欄位。
+[出]返回表示新欄位的[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 不會檢查條件約束。
+ 未檢查約束。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

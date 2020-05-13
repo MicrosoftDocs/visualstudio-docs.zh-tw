@@ -1,57 +1,57 @@
 ---
-title: 繫結中斷點 |Microsoft Docs
+title: 綁定斷點 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f861875e15a9051ab05d1b7398ea5902189830b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 680cff398a43d1ebe9ccf061ad42781500c7cf01
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332571"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739227"
 ---
-# <a name="bind-breakpoints"></a>繫結中斷點
-如果使用者設定中斷點，也許是藉由按下**F9**，IDE 會構成要求，並提示偵錯工作階段，來建立中斷點。
+# <a name="bind-breakpoints"></a>繫結斷點
+如果用戶設置斷點(可能通過按**F9),IDE**將制定請求並提示調試會話創建斷點。
 
 ## <a name="set-a-breakpoint"></a>設定中斷點
- 設定中斷點是兩步驟程序，因為程式碼或中斷點受影響的資料可能尚無法使用。 首先，必須描述中斷點，並接著，當程式碼或資料可供使用，它必須繫結至該程式碼或資料，如下所示：
+ 設置斷點是一個兩步過程,因為受斷點影響的代碼或數據可能尚未可用。 首先,必須描述斷點,然後,當代碼或數據可用時,必須將其綁定到該代碼或數據,如下所示:
 
-1. 中斷點會從相關的偵錯引擎 (DEs)、 要求，然後中斷點繫結至程式碼或資料可供使用。
+1. 從相關調試引擎 (DEs) 請求斷點,然後斷點在可用時綁定到代碼或數據。
 
-2. 中斷點要求會傳送至偵錯工作階段，將它傳送至所有相關的 DEs。 選擇處理中斷點任何 DE 會建立對應的暫止的中斷點。
+2. 斷點請求發送到調試會話,調試會話將其發送到所有相關的 D。 任何選擇處理斷點的 DE 都會創建相應的掛起斷點。
 
-3. 偵錯工作階段會收集 暫止中斷點，並將其傳送回偵錯套件 （Visual Studio 的偵錯元件）。
+3. 除錯工作階段收集掛起的斷點並將其發送回調試包(Visual Studio 的調試元件)。
 
-4. 偵錯封裝會提示要繫結至程式碼或資料的暫止中斷點的偵錯工作階段。 偵錯工作階段會將此要求傳送至所有相關的 DEs。
+4. 調試包提示調試會話將掛起的斷點綁定到代碼或數據。 除錯工作階段將此請求發送到所有相關的 D。
 
-5. 如果 DE 就能將中斷點繫結，它會傳送回到偵錯工作階段中斷點繫結的事件。 如果沒有，它會改為傳送中斷點錯誤事件。
+5. 如果 DE 能夠綁定斷點,它將一個斷點綁定事件發送回調試會話。 如果沒有,它將發送斷點錯誤事件。
 
-## <a name="pending-breakpoints"></a>暫止中斷點
- 暫止中斷點可以繫結到多個程式碼位置。 例如，原始程式碼行C++範本可以繫結至從範本產生每個程式碼序列。 偵錯工作階段可以使用中斷點繫結的事件，來列舉在傳送事件的時間繫結至中斷點的程式碼內容。 更新版本中，可以繫結更多的程式碼內容，因此 DE 可能會傳送多個中斷點繫結的每個繫結要求的事件。 不過，DE 應該傳送每個繫結要求的只有一個中斷點錯誤事件。
+## <a name="pending-breakpoints"></a>暫停的斷點
+ 掛起的斷點可以綁定到多個代碼位置。 例如,C++範本的一行原始碼可以綁定到從範本生成的每個代碼序列。 除錯工作階段可以使用斷點綁定事件枚舉在發送事件時綁定到斷點的代碼上下文。 以後可以綁定更多程式碼上下文,因此 DE 可能會為每個綁定請求發送多個斷點綁定事件。 但是,DE 應僅發送每個綁定請求的一個斷點錯誤事件。
 
 ## <a name="implementation"></a>實作
- 以程式設計的方式，會呼叫偵錯工作階段管理員 (SDM) 偵錯封裝，並為其提供[IDebugBreakpointRequest2](../../extensibility/debugger/reference/idebugbreakpointrequest2.md)包裝的介面[BP_REQUEST_INFO](../../extensibility/debugger/reference/bp-request-info.md)結構描述若要設定的中斷點。 中斷點可以是許多形式，雖然它們最終會解析成的程式碼或資料內容。
+ 在程式設計上,調試包調用會話調試管理器 (SDM),並給它一個[IDebugBreakpointRequest2](../../extensibility/debugger/reference/idebugbreakpointrequest2.md)介面,該介面包裝[BP_REQUEST_INFO](../../extensibility/debugger/reference/bp-request-info.md)結構,該結構描述了要設置的斷點。 儘管斷點可以是多種形式,但它們最終解析為代碼或數據上下文。
 
- SDM 會將每個相關的 DE 此呼叫傳遞藉由呼叫其[CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)方法。 如果 DE 選擇處理中斷點，它會建立並傳回[IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。 在 SDM 會收集這些介面，並將其傳遞回偵錯封裝成單一`IDebugPendingBreakpoint2`介面。
+ SDM 通過調用其[CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)方法將此調用傳遞給每個相關的 DE。 如果 DE 選擇處理斷點,它將創建並返回[IDebug PendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。 SDM 收集這些介面並將其作為單`IDebugPendingBreakpoint2`個 介面傳回調試包。
 
- 到目前為止，已不產生任何事件。
+ 到目前為止,尚未生成任何事件。
 
- 偵錯套件然後嘗試將暫止中斷點繫結至程式碼或資料藉由呼叫[繫結](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)，這藉由德國。
+ 然後,調試包嘗試通過調用 DE 實現的[Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)將掛起的斷點綁定到代碼或數據。
 
- 如果中斷點已繫結，就會傳送 DE [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)偵錯封裝的事件介面。 藉由呼叫這個介面來列舉所有的程式碼內容 （或單一資料內容） 繫結至中斷點的偵錯封裝用法[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)，它會傳回一或多個[IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)介面。 [GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)介面傳回[IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md)介面，並[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)傳回[BP_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-resolution-info.md)包含的程式碼或資料內容的聯集。
+ 如果斷點綁定,DE 會向調試包發送[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)事件介面。 除錯套件使用此介面透過呼叫[EnumBoundBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)來枚舉綁定到斷點的的所有程式碼上下文(或單個資料上下文),該介面返回一個或多個[IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)介面。 [GetBreakpoint 解析](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)介面傳回[IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md)介面[,GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)返回包含代碼或數據上下文[BP_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-resolution-info.md)聯合。
 
- 如果無法繫結中斷點 DE，它會傳送單一[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)偵錯封裝的事件介面。 偵錯封裝擷取的錯誤類型 （錯誤或警告） 和參考用訊息藉由呼叫[GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)，後面接著[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)和[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)。 這會傳回[BP_ERROR_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-error-resolution-info.md)結構，其中包含的錯誤類型和訊息。
+ 如果 DE 無法綁定斷點,它將向調試包發送單個[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)事件介面。 除錯套件透過除錯[的 GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)的檢查錯誤類型(錯誤或警告)與資訊性訊息,然後是[GetBreakpoint 解析](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)與[Get解析資訊](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)。 這將返回包含錯誤類型和消息[BP_ERROR_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-error-resolution-info.md)結構。
 
- 如果 DE 處理中斷點，但無法加以繫結，它會傳回型別的錯誤`BPET_TYPE_ERROR`。 偵錯封裝會顯示錯誤對話方塊，以回應，IDE 會放在左邊的原始程式碼行中斷點字符的驚嘆號圖像 （glyph）。
+ 如果 DE 處理斷點但無法結合, 它會傳回`BPET_TYPE_ERROR`型態錯誤 。 調試包通過顯示錯誤對話框進行回應,IDE 在原始程式碼列左側的斷點字形內放置一個感嘆號。
 
- 如果 DE 處理中斷點，但無法繫結，但是其他 DE 可能會將它繫結，它會傳回一則警告。 IDE 會回應將放在左邊的原始程式碼行的中斷點圖像 （glyph） 的問題圖像 （glyph）。
+ 如果 DE 處理斷點,無法綁定它,但其他 DE 可能會綁定它,則返回警告。 IDE 通過在原始程式碼列左側的斷點字形內放置一個問題字形來回應。
 
 ## <a name="see-also"></a>另請參閱
-- [偵錯工作](../../extensibility/debugger/debugging-tasks.md)
+- [除錯工作](../../extensibility/debugger/debugging-tasks.md)

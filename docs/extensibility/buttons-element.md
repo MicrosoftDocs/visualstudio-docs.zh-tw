@@ -1,25 +1,25 @@
 ---
-title: 按鈕項目 |Microsoft Docs
+title: 按鈕元素 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
 ms.assetid: 9f2cf94d-dec5-4776-a836-9a89c75f0c87
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2150ec240880987bc63bb3c2adf33682ebf34580
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 64ac5621093f30af28ade0817906b767231e4ee1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321167"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739926"
 ---
-# <a name="buttons-element"></a>Buttons 元素
-群組[ 按鈕](../extensibility/button-element.md)項目，表示個別的命令。
+# <a name="buttons-element"></a>按鈕項目
+對[表示](../extensibility/button-element.md)單個命令的按鈕元素進行分組。
 
 ## <a name="syntax"></a>語法
 
@@ -37,20 +37,20 @@ ms.locfileid: "66321167"
 
 |屬性|描述|
 |---------------|-----------------|
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[Buttons 元素](../extensibility/buttons-element.md)|分組按鈕項目。|
-|[按鈕項目](../extensibility/button-element.md)|定義使用者可以互動的命令。|
+|[按鈕項目](../extensibility/buttons-element.md)|對按鈕元素進行分組。|
+|[按鈕項目](../extensibility/button-element.md)|定義用戶可以與之交互的命令。|
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|描述|
 |-------------|-----------------|
-|[Commands 元素](../extensibility/commands-element.md)|表示 [VSPackage] 工具列上的命令的集合。|
+|[指令元素](../extensibility/commands-element.md)|表示 VSPackage 工具列上的命令集合。|
 
 ## <a name="example"></a>範例
 
@@ -67,5 +67,5 @@ ms.locfileid: "66321167"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+- [VS 套件如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [命令、選單和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

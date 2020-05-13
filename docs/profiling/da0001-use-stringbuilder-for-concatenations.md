@@ -15,19 +15,19 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d93de6ce901bfe4d72628f778b18420beb5ebee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779502"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001：使用 StringBuilder 進行串連
 
 |||
 |-|-|
-|規則識別碼|DA0001|
-|Category|.NET Framework 使用方式|
-|分析方法|取樣<br /><br /> 檢測設備|
+|規則 ID|DA0001|
+|類別|.NET Framework 使用方式|
+|分析方法|取樣<br /><br /> 測試設備|
 |訊息|請考慮使用 StringBuilder 來進行字串串連|
 |訊息類型|警告|
 
@@ -40,6 +40,6 @@ ms.locfileid: "74779502"
  StringBuilder 類別是可變動的物件，並不像 System.String，大部分 StringBuilder 上修改此類別之執行個體的方法會傳回該相同執行個體的參考。 您可以插入字元或將文字附加到 StringBuilder 執行個體，然後移除或取代執行個體中的字元，不需要配置新的執行個體並刪除原始執行個體。
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
- 按兩下 [錯誤清單] 視窗中的訊息，巡覽至取樣分析資料的[函式詳細資料檢視](../profiling/function-details-view.md)。 找出程式最常使用字串串連的區段。 對於複雜的字串操作 (包括常見的字串串連作業) 使用 StringBuilder 類別。
+ 按兩下 **"錯誤清單"** 視窗中的消息，以導航到採樣設定檔資料的["功能詳細資訊視圖](../profiling/function-details-view.md)"。 找出程式最常使用字串串連的區段。 對於複雜的字串操作 (包括常見的字串串連作業) 使用 StringBuilder 類別。
 
  如需如何使用字串的詳細資訊，請參閱 Microsoft Patterns and Practices 文件庫中[第 5 章 - 改善 Managed 程式碼的效能 (英文)](/previous-versions/msp-n-p/ff647790(v=pandp.10))的[字串作業 (英文)](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations)一節。

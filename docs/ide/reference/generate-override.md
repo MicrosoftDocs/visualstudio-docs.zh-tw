@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3c3a8f4eaf863fd8174ff70339fffc80141fc38d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569240"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>在 Visual Studio 中產生覆寫
@@ -28,11 +28,11 @@ ms.locfileid: "75569240"
 
 **原因：** 您可以自行撰寫方法簽章，不過，此功能將可自動產生簽章。
 
-## <a name="how-to"></a>操作說明
+## <a name="how-to"></a>操作方式
 
 1. 在 C# 輸入 `override` 或在 Visual Basic 輸入 `Overrides`，後面接著一個空格，可在此處插入覆寫方法。
 
-   - C#:
+   - C#：
 
       ![覆寫 IntelliSense C#](media/override-intellisense-cs.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "75569240"
 
    系統會把選取的方法或屬性新增至類別作為覆寫，並備妥以供實作。
 
-   - C#:
+   - C#：
 
        ![覆寫結果 C#](media/override-result-cs.png)
 
@@ -56,6 +56,6 @@ ms.locfileid: "75569240"
 
        ![覆寫結果 VB](media/override-result-vb.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [程式碼產生](../code-generation-in-visual-studio.md)
+- [代碼生成](../code-generation-in-visual-studio.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63001060"
 ---
 # <a name="concurrency-visualizer-markers"></a>並行視覺化檢視標記
@@ -62,6 +62,6 @@ ms.locfileid: "63001060"
 
 ## <a name="see-also"></a>另請參閱
 - [旗標標記](../profiling/flag-markers.md)
-- [訊息標記](../profiling/message-markers.md)
-- [範圍標記](../profiling/span-markers.md)
+- [消息標記](../profiling/message-markers.md)
+- [跨度標記](../profiling/span-markers.md)
 - [將 EventSource 事件顯示為標記](../profiling/visualizing-eventsource-events-as-markers.md)

@@ -5,7 +5,7 @@ description: 使用 Visual Studio 工作負載和元件識別碼為通用測試�
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/23/2019
+ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,13 @@ ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: c662732a4ba1cd05b1c9affa8fb86305f65b10a7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+open_to_public_contributors: false
+ms.openlocfilehash: 61a52d98f695a6420dd6081117b8c6c4e83ae0a4
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114311"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276210"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Visual Studio Test Professional 元件目錄
 
@@ -29,8 +30,8 @@ ms.locfileid: "76114311"
 此外，也請注意此頁面的下列相關注意事項：
 
 * 每個工作負載都有自己的小節 (後面接著工作負載識別碼)，以及一張工作負載可用元件的表格。
-* 安裝工作負載時，預設會安裝「必要」元件。
-* 您也可以選擇安裝「建議」元件和「選擇性」元件。
+* 安裝工作負載時，預設會安裝「必要」**** 元件。
+* 如果願意,還可以安裝 **「推薦**」和 **「可選**」元件。
 * 我們還新增了一個章節，當中列出不屬於任何工作負載的額外元件。
 
 當您在 VSIX 資訊清單中設定相依性時，必須僅指定「元件識別碼」。 請使用此頁面上的表格來決定我們的最基本元件相依性。 在某些情況下，這可能意謂著您僅指定一個來自工作負載的元件。 在其他情況下，則可能意謂著您指定來自單一工作負載的多個元件，或來自多個工作負載的多個元件。 如需詳細資訊，請參閱[如何︰將擴充性專案移轉至 Visual Studio 2017 (英文)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 頁面。
@@ -45,7 +46,7 @@ ms.locfileid: "76114311"
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
-元件識別碼 | Name | {2&gt;版本&lt;2} | 相依性類型
+元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | 必要
 Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.6.27406.0 | 必要
@@ -54,16 +55,16 @@ Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test
 
 這些是未隨附於任何工作負載但可選取來作為個別元件的元件。
 
-元件識別碼 | Name | {2&gt;版本&lt;2}
+元件識別碼 | 名稱 | 版本
 --- | --- | ---
-N/A | N/A | N/A
+n/a | n/a | n/a
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [命令列參數範例](command-line-parameter-examples.md)
 * [建立 Visual Studio 的離線安裝](create-an-offline-installation-of-visual-studio.md)

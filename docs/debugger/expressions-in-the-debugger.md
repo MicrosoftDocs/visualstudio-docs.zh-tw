@@ -1,6 +1,6 @@
 ---
-title: 偵錯工具中的運算式 |Microsoft Docs
-ms.date: 02/07/2018
+title: 調試器中的運算式 |微軟文檔
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4ab66f288ad8442b6f2b5aab3499e2c1f3857632
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736207"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302165"
 ---
-# <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的運算式
+# <a name="expressions-in-the-visual-studio-debugger"></a>視覺化工作室調試器中的運算式
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。
 
-下列各節將針對 Visual Studio 支援的語言，描述運算式評估的限制。
+以下各節介紹 Visual Studio 支援的語言的運算式評估限制。
 
 ## <a name="f-expressions-are-not-supported"></a>不支援 F# 運算式
 無法辨識 F# 運算式。 如果您正在偵錯 F# 程式碼，您要先將運算式轉譯成 C# 語法，才能在偵錯工具視窗或對話方塊方塊中輸入運算式。 當您將運算式從 F# 轉譯為 C# 時，務必記得 C# 使用 `==` 運算子來測試是否相等，而 F# 使用單一 `=`。
@@ -84,7 +84,7 @@ int main()
 
 ```
 
-### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 使用偵錯工具內建函式維持狀態
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 使用偵錯工具內建函式維持狀態
 偵錯工具內建函式可讓您呼叫運算式中的某些 C/C++ 函式，而不需要變更應用程式的狀態。
 
 偵錯工具內建函式：
@@ -97,14 +97,14 @@ int main()
 
   偵錯工具內建函式還可以讓運算式評估更方便。 例如，在中斷點條件中撰寫 `strncmp(str, "asd")` 比撰寫 `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`更容易。 )
 
-|區域圖|內建函式|
+|區域|內建函式|
 |----------|-------------------------|
-|**字串長度**|strlen、wcslen、strnlen、wcsnlen|
-|**字串比較**|strcmp、wcscmp、stricmp、_stricmp、_strcmpi、wcsicmp、_wcscmpi、_wcsnicmp、strncmp、wcsncmp、strnicmp、wcsnicmp|
-|**字串搜尋**|strchr、wcschr、strstr、wcsstr|
-|**Win32**|GetLastError()、TlsGetValue()|
-|**Windows 8**|WindowsGetStringLen ()、WindowsGetStringRawBuffer()<br /><br /> 這些函式要求要進行偵錯的處理序必須在 Windows 8 上執行。 對從 Windows 8 裝置產生的傾印檔案進行偵錯也要求 Visual Studio 電腦必須執行 Windows 8。 不過，如果您是對 Windows 8 裝置進行遠端偵錯，則 Visual Studio 電腦可以執行 Windows 7。|
-|**其他**|__log2<br /><br /> 傳回所指定整數的對數底數 2，並捨入至最接近的較小整數。|
+|**字串長度**|[斯特倫， wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)，[斯特倫， wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
+|**字串比較**|[斯特康普， wcscmp，](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp) [stricmp， wcsicmp，](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp) [_stricmp， _strcmpi， _wcsicmp， _wcscmpi，](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l)[斯特蘭普， wcsncmp，](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l)[斯特尼普， wcsnicmp，](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp) [_strnicmp， _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
+|**字串搜尋**|[斯特赫， wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l)， [memchr， wmemchr，](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr)[斯特斯特， wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
+|**Win32**|[副解碼代理](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy)，[解碼指標](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29)，[獲取錯誤](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)， [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
+|**視窗 8**|[RoInspect 捕獲的堆疊回溯](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace)， [Windows 比較弦樂 ，](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal) [WindowsGetStringLen](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen)， [WindowsGetStringrawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> 這些函式要求要進行偵錯的處理序必須在 Windows 8 上執行。 對從 Windows 8 裝置產生的傾印檔案進行偵錯也要求 Visual Studio 電腦必須執行 Windows 8。 不過，如果您是對 Windows 8 裝置進行遠端偵錯，則 Visual Studio 電腦可以執行 Windows 7。|
+|**其他**|__log2 // 返回指定整數的日誌基礎 2，四捨五入到最接近的下整數。<br /><br />__findNonNull、解碼HString、解碼溫特限制異常、動態廣播、動態成員查找、GetEnvBlock 長度<br /><br />Stdext_HashMap_Int_OperatorBracket_idx，Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx // 併發：：陣列<>：：運算子[索引<>]和運算子（索引<>）<br /><br />ConcurrencyArray_OperatorBracket_int // 併發：陣列<>：運算子（int，int，...）<br /><br />ConcurrencyArray_OperatorBracket_tidx // 併發：：陣列<>：：運算子[tiled_index<>]和運算子（tiled_index<>）<br /><br />ConcurrencyArrayView_OperatorBracket_idx // 併發：array_view<>：：運算子[索引<>]和運算子（索引<>）<br /><br />ConcurrencyArrayView_OperatorBracket_int // 併發：array_view<>：運算子（int，int，...）<br /><br />ConcurrencyArrayView_OperatorBracket_tidx // 併發：：array_view<>：：操作員[tiled_index<>]和操作員（tiled_index<>）<br /><br />TreeTraverse_Init // 初始化新樹遍歷<br /><br />TreeTraverse_Next // 返回樹中的節點<br /><br />TreeTraverse_Skip // 跳過掛起樹遍歷中的節點"|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - 不支援的運算式
 
@@ -121,7 +121,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>c# - 不支援的運算式
 
 ### <a name="dynamic-objects"></a>動態物件
-您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 在監看式視窗中評估實 <xref:System.Dynamic.IDynamicMetaObjectProvider> 的物件時，會加入動態視圖節點。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。
+您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 在"監視"<xref:System.Dynamic.IDynamicMetaObjectProvider>視窗中計算實現的物件時，將添加動態視圖節點。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。
 
 以下是不支援的動態物件功能：
 
@@ -170,7 +170,7 @@ int main()
 不支援匯入別名。
 
 ### <a name="variable-declarations"></a>變數宣告
-您無法在偵錯工具視窗中明確宣告新的變數。 不過，您可以在 [即時運算] 視窗中指派新的隱含變數。 這些隱含變數的範圍限於偵錯工作階段，並且無法在偵錯工具之外存取。 例如，陳述式 `o = 5` 將會隱含地建立新變數 `o` ，並將值 5 指派給該變數。 除非偵錯工具能夠推斷類型，否則這類隱含變數屬於 **Object** 類型。
+您無法在偵錯工具視窗中明確宣告新的變數。 不過，您可以在 [即時運算] **** 視窗中指派新的隱含變數。 這些隱含變數的範圍限於偵錯工作階段，並且無法在偵錯工具之外存取。 例如，陳述式 `o = 5` 將會隱含地建立新變數 `o` ，並將值 5 指派給該變數。 除非偵錯工具能夠推斷類型，否則這類隱含變數屬於 **Object** 類型。
 
 ### <a name="unsupported-keywords"></a>不支援的關鍵字
 
@@ -204,8 +204,8 @@ int main()
 
 - 命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。
 
-## <a name="see-also"></a>請參閱
-- [C++ 中的格式規範](../debugger/format-specifiers-in-cpp.md)
-- [內容運算子 (C++)](../debugger/context-operator-cpp.md)
-- [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)
+## <a name="see-also"></a>另請參閱
+- [C++格式指定器](../debugger/format-specifiers-in-cpp.md)
+- [Context Operator (C++)](../debugger/context-operator-cpp.md)
+- [格式規格在C#](../debugger/format-specifiers-in-csharp.md)
 - [虛擬變數](../debugger/pseudovariables.md)

@@ -1,5 +1,5 @@
 ---
-title: WizardData 項目 （Visual Studio 範本） |Microsoft Docs
+title: 嚮導數據元素(可視化工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,17 +9,17 @@ helpviewer_keywords:
 - WizardData element [Visual Studio Templates]
 - <WizardData> element [Visual Studio Templates]
 ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5ae7e2e83cb0f8db6cf0b2482547e66ab89497
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aa3f9d2e971d944b964f4b194d1324ff960fbd24
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350772"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740387"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 項目 (Visual Studio 範本)
 
@@ -53,25 +53,25 @@ ms.locfileid: "66350772"
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要項目。<br /><br /> 包含專案範本、 項目範本，或入門套件的所有中繼資料。|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要元素。<br /><br /> 包含專案範本、專案範本或初學者工具組的所有元資料。|
 
 ## <a name="text-value"></a>文字值
 
 可選擇使用文字值。
 
-此文字會指定要傳遞給自訂精靈延伸模組中所指定的自訂 XML [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)項目。
+此文字指定要傳遞到[精靈延伸](../extensibility/wizardextension-element-visual-studio-templates.md)元素中指定的自訂精靈擴展。
 
 ## <a name="remarks"></a>備註
 
-此項目中，可以指定任何的 XML。 XML 將會傳遞做為參數自訂精靈延伸模組，讓此擴充功能使用此項目的內容。 這項資料不進行任何驗證。
+可以在此元素中指定任何 XML。 XML 將作為參數傳遞給自定義嚮導擴展,允許擴展使用此元素的內容。 未對此數據執行驗證。
 
-內容**WizardData**元素傳遞，則保持不變，做為參數字串字典中的參數內`IWizard.RunStarted`方法。 字典索引鍵名為`$wizarddata$`。
+**嚮導資料**元素的內容`IWizard.RunStarted`作為 方法中參數位串字典中的參數傳遞,不變。 字典鍵名稱`$wizarddata$`。
 
 ## <a name="example"></a>範例
 
-下列範例說明的標準專案範本的中繼資料C#Windows 應用程式。
+下面的範例展示 C# Windows 應用程式的標準項目範本的中繼資料。
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"

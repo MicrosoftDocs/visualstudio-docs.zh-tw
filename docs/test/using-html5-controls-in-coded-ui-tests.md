@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 13f5da784a43df5146a66ca868bb6add9a702906
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585583"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
@@ -20,9 +20,9 @@ ms.locfileid: "75585583"
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requirements**
+**需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 > [!WARNING]
 > 在 Internet Explorer 10 之前的版本，可以在相較於 Internet Explorer 處理序更高的權限層級中，執行自動程式碼 UI 測試。 在 Internet Explorer 10 執行自動程式碼 UI 測試時，自動程式碼 UI 測試和 Internet Explorer 程序必須是相同的權限層級。 這是因為 Internet Explorer 10 中的 AppContainer 功能更安全。
@@ -36,7 +36,7 @@ ms.locfileid: "75585583"
 
 ![HTML5 Audio 控制項](../test/media/codedui_html5_audio.png)
 
-|動作|錄製|產生的程式碼|
+|動作|記錄|產生的程式碼|
 |-|---------------|-|
 |**播放音訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|從 00:00:00 播放 \<名稱> 音訊|HtmlAudio.Play(TimeSpan)|
 |**搜尋音訊的特定時間**|搜尋 \<名稱> 音訊的 00:01:48|HtmlAudio.Seek(TimeSpan)|
@@ -47,9 +47,9 @@ ms.locfileid: "75585583"
 
 請參閱 [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement)，以取得您可以在其上新增判斷提示的屬性清單。
 
-**搜尋屬性：** `HtmlAudio` 的搜尋屬性是 `Id`、`Name` 和 `Title`。
+**搜索屬性：**`HtmlAudio`的搜索屬性`Id`為 和`Name` `Title`。
 
-**篩選屬性：** `HtmlAudio` 的篩選屬性是 `Src`、`Class`、`ControlDefinition` 和 `TagInstance`。
+**篩選器屬性：** 的篩選器屬性`HtmlAudio``Src`為 。 `Class` `ControlDefinition` `TagInstance`
 
 > [!NOTE]
 > 搜尋和暫停的時間量可以很大。 在播放時，自動程式碼 UI 測試會等到 `(TimeSpan)` 中指定的時間才暫停音訊。 如果因為某些特殊情況，已經過所指定的時間才按下 [暫停] 命令，就會擲回例外狀況。
@@ -59,7 +59,7 @@ ms.locfileid: "75585583"
 
 ![HTML5 Video 控制項](../test/media/codedui_html5_video.png)
 
-|動作|錄製|產生的程式碼|
+|動作|記錄|產生的程式碼|
 |-|---------------|-|
 |**播放視訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|從 00:00:00 播放 \<名稱> 視訊|HtmlVideo.Play(TimeSpan)|
 |**搜尋視訊的特定時間**|搜尋 \<名稱> 視訊的 00:01:48|HtmlVideo.Seek(TimeSpan)|
@@ -70,21 +70,21 @@ ms.locfileid: "75585583"
 
 請參閱 [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video)，以取得您可以在其上新增判斷提示的屬性清單。
 
-**搜尋屬性：** `HtmlVideo` 的搜尋屬性是 `Id`、`Name` 和 `Title`。
+**搜索屬性：**`HtmlVideo`的搜索屬性`Id`為 和`Name` `Title`。
 
-**篩選屬性：** `HtmlVideo` 的篩選屬性是 `Src`、`Poster`、`Class`、`ControlDefinition` 和 `TagInstance`。
+**篩選器屬性：** 的篩選器`HtmlVideo`屬性為`Src`、`Poster`和`Class``ControlDefinition`。 `TagInstance`
 
 > [!NOTE]
 > 如果您使用 -30s 或 +30s 標籤倒轉或向前快轉視訊時，會彙總以搜尋至適當的時間。
 
-## <a name="progressbar"></a>ProgressBar
+## <a name="progressbar"></a>進度列
 **ProgressBar 控制項：** ProgressBar 是不可互動的控制項。 您可以在此控制項的 `Value` 和 `Max` 屬性上加入判斷提示。 如需詳細資訊，請參閱 [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress)。
 
 ![HTML5 ProgressBar 控制項](../test/media/codedui_html5_progressbar.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [HTML 項目](https://developer.mozilla.org/docs/Web/HTML/Element)
+- [HTML 元素](https://developer.mozilla.org/docs/Web/HTML/Element)
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)
 - [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

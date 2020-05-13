@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3fdc6c6ccd58bcc83cc37ff3a9f7888af837ed6e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595198"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 工作
@@ -36,9 +36,9 @@ ms.locfileid: "75595198"
 |參數|描述|
 |---------------|-----------------|
 |`DelaySign`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則將公開金鑰放在組件中。 如為 `false`，則完整簽署組件。|
-|`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 環境變數組陣列，以等號分隔。 這些變數是在規則環境區塊以外傳遞至繁衍的 *tlbimp.exe* 和 *aximp.exe*，或選擇性地覆寫。|
-|`ExecuteAsTool`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會從適當目標 Framework 跨處理序執行 *tlbimp.exe* 和 *aximp.exe*，以產生必要的包裝函式組件。 此參數會啟用多目標。|
-|`IncludeVersionInInteropName`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則包裝函式名稱會包含 TypeLib 版本。 預設為 `false`。|
+|`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 環境變數組陣列，以等號分隔。 除了或有選擇地重寫常規環境塊之外，這些變數還傳遞給生成的*tlbimp.exe*和*aximp.exe。*|
+|`ExecuteAsTool`|選擇性的 `Boolean` 參數。<br /><br /> 如果`true`從相應的目標框架在 proc 外運行*tlbimp.exe*和*aximp.exe*以生成必要的包裝程式集。 此參數會啟用多目標。|
+|`IncludeVersionInInteropName`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則包裝函式名稱會包含 TypeLib 版本。 預設值為 `false`。|
 |`KeyContainer`|選擇性的 `String` 參數。<br /><br /> 指定持有公開/私密金鑰組的容器。|
 |`KeyFile`|選擇性的 `String` 參數。<br /><br /> 指定包含公開/私密金鑰組的項目。|
 |`NoClassMembers`|選擇性的 `Boolean` 參數。|
@@ -47,7 +47,7 @@ ms.locfileid: "75595198"
 |`ResolvedModules`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。|
 |`SdkToolsPath`|選擇性的 <xref:System.String?displayProperty=fullName> 參數。<br /><br /> 如果 `ExecuteAsTool` 是 `true`，則此參數必須設定為目標 Framework 版本的 SDK 工具路徑。|
 |`StateFile`|選擇性的 `String` 參數。<br /><br /> 指定 COM 元件時間戳記的快取檔案。 如果沒有，則每次執行都會重新產生所有的包裝函式。|
-|`TargetFrameworkVersion`|選擇性的 `String` 參數。<br /><br /> 指定專案目標 Framework 版本。<br /><br /> 預設為 `String.Empty`。 這表示不篩選以目標 Framework 為基礎的參考。|
+|`TargetFrameworkVersion`|選擇性的 `String` 參數。<br /><br /> 指定專案目標 Framework 版本。<br /><br /> 預設值為 `String.Empty`。 這表示不篩選以目標 Framework 為基礎的參考。|
 |`TargetProcessorArchitecture`|選擇性的 `String` 參數。<br /><br /> 指定慣用的目標處理器架構。 平移後，傳遞至 *tlbimp.exe*/machine 旗標。<br /><br /> 參數值應該是 <xref:Microsoft.Build.Utilities.ProcessorArchitecture> 的成員。|
 |`TypeLibFiles`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定 COM 參考的類型程式庫檔案路徑。 此參數中包含的項目可能包含項目中繼資料。 如需詳細資訊，請參閱下面的 [TypeLibFiles 項目中繼資料](#typelibfiles-item-metadata)一節。|
 |`TypeLibNames`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要解析的類型程式庫名稱。 此參數中包含的項目必須包含某些項目中繼資料。 如需詳細資訊，請參閱下面的 [TypeLibNames 項目中繼資料](#typelibnames-item-metadata)一節。|
@@ -84,7 +84,7 @@ ms.locfileid: "75595198"
 
 COM DLL 無須在機器上註冊，此工作便能運作。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)

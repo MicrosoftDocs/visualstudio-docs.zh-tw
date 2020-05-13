@@ -1,5 +1,5 @@
 ---
-title: Content_types] .xml 檔案的結構 |Microsoft Docs
+title: Content_types的結構]xml 檔 |微軟文檔
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,80 +13,80 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3185b70f74478a9a55c4fb918c1535c86d154c76
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 2d6eca44c08cf35e7b2075965c1b6139e7fb95bc
+ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846375"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80395363"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 檔案的結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-包含 VSIX 封裝中之內容類型的相關資訊。 Visual Studio 使用 [Content_Types] .xml 檔案來安裝封裝，但不會安裝檔案本身。  
+包含有關 VSIX 包中內容類型的資訊。 Visual Studio 使用 [Content_Types]xml 檔來安裝包，但它不會自行安裝該檔。  
   
 > [!NOTE]
-> 雖然本主題僅適用于在 VSIX 封裝中使用的 [Content_Type] .xml 檔案，但 [Content_Types] .xml 檔案類型是*開放封裝慣例（OPC）* 標準的一部分。 如需詳細資訊，請參閱《 OPC：在 MSDN 網站上[封裝資料的新標準](https://msdn.microsoft.com/magazine/cc163372.aspx)\ （英文 \）。  
+> 儘管本主題僅適用于 VSIX 包中使用的 [Content_Type]xml 檔，但 [Content_Types]xml 檔案類型是*開放打包約定 （OPC）* 標準的一部分。 有關詳細資訊，請參閱 OPC：在 MSDN 網站上[打包資料的新標準](https://msdn.microsoft.com/magazine/cc163372.aspx)。  
   
-## <a name="attributes-and-elements"></a>屬性和元素  
- 下列各節將描述根項目及其屬性和子項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 以下各節介紹根項目及其屬性和子項目。  
   
-### <a name="root-element"></a>Root 元素  
+### <a name="root-element"></a>根項目  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
-|`Types`|包含用來列舉 VSIX 封裝中之檔案類型的子項目。|  
+|`Types`|包含枚舉 VSIX 包中的檔案類型的子項目。|  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Xmlns`|（必要）。此 [Content_Types] .xml 檔案所使用之架構的位置。|  
+|`Xmlns`|（必需。用於此 [Content_Types]xml 檔的架構的位置。|  
   
-### <a name="attribute-name-attribute"></a>{屬性名稱}特性  
+### <a name="attribute-name-attribute"></a>[屬性名稱]屬性  
   
-|                           {2&gt;值&lt;2}                           |                描述                |
+|                           值                           |                描述                |
 |-----------------------------------------------------------|-------------------------------------------|
-| http://schemas.openformats.org/package/2006/content-types | 內容類型架構的位置。 |
+| `http://schemas.openformats.org/package/2006/content-types` | 內容類型架構的位置。 |
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  `Types` 元素可以包含不限數目的 `Default` 元素。  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
-|`Default`|描述 VSIX 封裝中的內容類型。 封裝中的每個檔案類型都必須有自己的 `Default` 元素。|  
+|`Default`|描述 VSIX 包中的內容類型。 包中的每個檔案類型都必須有自己的`Default`元素。|  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Extension`|VSIX 封裝中檔案的副檔名。|  
-|`ContentType`|描述與副檔名相關聯的內容種類。|  
+|`Extension`|VSIX 包中檔的檔案名副檔名。|  
+|`ContentType`|描述與檔案名副檔名關聯的內容類型。|  
   
-### <a name="attribute-name-attribute"></a>{屬性名稱}特性  
- Visual Studio 會辨識相關聯 `Extension` 類型的下列 `ContentType` 值。  
+### <a name="attribute-name-attribute"></a>[屬性名稱]屬性  
+ Visual Studio 可識別關聯`ContentType``Extension`類型的以下值。  
   
-|副檔名|ContentType|  
+|分機|ContentType|  
 |---------------|-----------------|  
 |txt|text/plain|  
-|.pkgdef|text/plain|  
-|xml|text/xml|  
-|extension.vsixmanifest|text/xml|  
+|普格德夫|text/plain|  
+|Xml|text/xml|  
+|vsixmanifest|text/xml|  
 |htm 或 html|text/html|  
-|.rtf|應用程式/rtf|  
+|Rtf|應用程式/rtf|  
 |pdf|應用程式/pdf|  
-|gif|image/gif|  
-|jpg 或 jpeg|影像/jpg|  
+|GIF|image/gif|  
+|jpg 或 jpeg|圖像/jpg|  
 |tiff|image/tiff|  
-|vsix|application/zip|  
-|zip|application/zip|  
+|vsix|應用程式/zip|  
+|zip|應用程式/zip|  
 |dll|application/octet-stream|  
 |所有其他檔案類型|application/octet-stream|  
   
 ## <a name="example"></a>範例  
   
 ### <a name="description"></a>描述  
- 下列 [Content_Types] .xml 檔案描述一般的 VSIX 封裝。  
+ 以下 [Content_Types]xml 檔描述了典型的 VSIX 包。  
   
 ### <a name="code"></a>程式碼  
   
@@ -101,7 +101,7 @@ ms.locfileid: "75846375"
 </Types>  
 ```  
   
-## <a name="see-also"></a>請參閱  
- [VSIX 封裝  的剖析](../extensibility/anatomy-of-a-vsix-package.md)  
- [VSIX 擴充功能架構1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC：封裝資料的新標準](https://msdn.microsoft.com/magazine/cc163372.aspx)
+## <a name="see-also"></a>另請參閱  
+ [VSIX 套裝軟體的剖析](../extensibility/anatomy-of-a-vsix-package.md)   
+ [VSIX 擴展架構 1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [OPC：打包資料的新標準](https://msdn.microsoft.com/magazine/cc163372.aspx)

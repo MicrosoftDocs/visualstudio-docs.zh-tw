@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565808"
 ---
 # <a name="open-project-command"></a>開啟專案命令
@@ -32,11 +32,11 @@ ms.locfileid: "75565808"
 File.OpenProject filename
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 
 `filename`
 
-必要項。 要開啟之專案或方案的完整路徑和檔名。
+必要。 要開啟之專案或方案的完整路徑和檔名。
 
 > [!NOTE]
 > `filename` 引數的語法需要包含空格的路徑使用引號。
@@ -55,9 +55,9 @@ File.OpenProject filename
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
+- [視覺化工作室命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
-- [尋找/命令方塊](../../ide/find-command-box.md)
+- [查找/命令框](../../ide/find-command-box.md)
 - [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

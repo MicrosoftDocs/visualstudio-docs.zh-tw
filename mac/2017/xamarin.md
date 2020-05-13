@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.openlocfilehash: bba9d3490c12e661277b82dd08d6d7862ec3a8aa
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983465"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 行動裝置應用程式開發
@@ -45,11 +45,11 @@ Xamarin 提供可讓您建立美觀 Mac 應用程式的原生 Mac API 繫結。
 > [!Note]
 > 這些產品只能搭配 Visual Studio Enterprise 訂閱使用。
 
-### <a name="profiler"></a>Profiler
+### <a name="profiler"></a>分析工具
 
 Xamarin Profiler 有三種工具可供分析所用。 [Xamarin Profiler 簡介](/xamarin/tools/profiler/index?tabs=macos)指南探討這些工具測量的內容，以及它們如何分析您的應用程式，並釐清每個畫面上顯示的資料意義。
 
-### <a name="inspector"></a>檢查程式
+### <a name="inspector"></a>Inspector
 
 Xamarin Inspector 提供互動式的 C# 主控台與使用者工具。 它可以當作檢查即時應用程式時的偵錯或診斷輔助工具、教學工具、記錄工具或試驗工具。
 

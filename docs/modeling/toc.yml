@@ -34,9 +34,9 @@
   items:
     - name: 建立應用程式模型
       href: create-models-for-your-app.md
-    - name: 相依性圖表：參考資料
+    - name: 相依性圖表︰參考
       href: layer-diagrams-reference.md
-    - name: 相依性圖表：方針
+    - name: 相依性圖表︰方針
       href: layer-diagrams-guidelines.md
     - name: 共用模型
       items:
@@ -81,7 +81,7 @@
       href: add-custom-properties-to-layer-diagrams.md
 - name: Modeling SDK for Visual Studio - 網域指定的語言
   items:
-    - name: 總覽
+    - name: 概觀
       displayName: Modeling SDK for Visual Studio
       href: modeling-sdk-for-visual-studio-domain-specific-languages.md
     - name: 特定領域語言的使用者入門
@@ -214,14 +214,14 @@
           href: updating-shapes-and-connectors-to-reflect-the-model.md
     - name: 從特定領域語言產生程式碼
       items:
-        - name: 總覽
+        - name: 概觀
           displayName: Generate Code from a Domain-Specific Language
           href: generating-code-from-a-domain-specific-language.md
         - name: 從文字範本存取模型
           href: accessing-models-from-text-templates.md
         - name: 使用文字範本中的 Visual Studio ModelBus
           href: using-visual-studio-modelbus-in-a-text-template.md
-        - name: 逐步解說：對存取模型的文字範本偵錯
+        - name: 逐步解說：對存取模型的文字範本進行偵錯
           href: walkthrough-debugging-a-text-template-that-accesses-a-model.md
         - name: 逐步解說：將主機連線至產生的指示詞處理器
           href: walkthrough-connecting-a-host-to-a-generated-directive-processor.md
@@ -270,7 +270,7 @@
       href: api-reference-for-modeling-sdk-for-visual-studio.md
 - name: 程式碼產生和 T4 文字範本
   items:
-    - name: 總覽
+    - name: 概觀
       displayName: Code Generation and T4 Text Templates
       href: code-generation-and-t4-text-templates.md
     - name: 使用 T4 文字範本在設計階段產生程式碼
@@ -289,7 +289,7 @@
       href: run-time-text-generation-with-t4-text-templates.md
     - name: 撰寫 T4 文字範本
       items:
-        - name: 總覽
+        - name: 概觀
           displayName: Write a T4 Text Template
           href: writing-a-t4-text-template.md
         - name: T4 文字範本指示詞

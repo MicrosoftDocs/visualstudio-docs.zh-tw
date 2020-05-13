@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
+title: DISASSEMBLY_STREAM_FIELDS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3499ce5bfe46f3185dd5c8ca9e2ada055544c8c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318265"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737362"
 ---
-# <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
-指定要擷取反組譯碼欄位的相關資訊。
+# <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
+指定要檢索的有關拆解欄位的資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -99,27 +99,27 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 初始化/使用`dwFlags`([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) 欄位。
 
 `DSF_OPERANDS_SYMBOLS`\
-包含符號名稱，在`bstrOperands`欄位。
+在`bstrOperands`欄位中包括符號名稱。
 
 `DSF_ALL`\
-指定反組譯碼資料流的所有欄位。
+指定拆解流的所有欄位。
 
 ## <a name="remarks"></a>備註
-做為參數傳遞[讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法，以表示哪些欄位[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構會進行初始化。
+作為參數傳遞給[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法,以指示要初始化[拆解數據](../../../extensibility/debugger/reference/disassemblydata.md)結構的哪些欄位。
 
-用於`dwFields`隸屬`DisassemblyData`表示哪些欄位是使用和有效時，會傳回這個結構的結構。
+用於`dwFields``DisassemblyData`結構的成員,用於指示在返回結構時使用哪些欄位並有效。
 
-這些值可能會合併的位元`OR`。
+這些值可以稍微結合`OR`。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
-- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [讀](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

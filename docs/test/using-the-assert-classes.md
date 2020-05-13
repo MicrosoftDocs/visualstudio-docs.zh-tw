@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c36916c79bd783ed2c6ce960b068e85478b9971d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592044"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>使用 Assert 類別進行單元測試
@@ -47,6 +47,6 @@ ms.locfileid: "75592044"
 
 若要確認您預期由應用程式程式碼中之方法擲回的例外狀況，確實是由該方法擲回時，請使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> 方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [對程式碼進行單元測試](../test/unit-test-your-code.md)
+- [單元測試代碼](../test/unit-test-your-code.md)

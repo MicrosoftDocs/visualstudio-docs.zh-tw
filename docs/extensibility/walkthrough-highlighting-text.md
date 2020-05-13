@@ -1,62 +1,62 @@
 ---
-title: 逐步解說：反白顯示文字 |Microsoft Docs
+title: 演練:突出顯示文本 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd19077424aa5f67cd1d3a8d7f9c6be0e822e351
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: c35b1a032993a6c183191aafff77d8adeba4a3ef
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75403600"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697395"
 ---
-# <a name="walkthrough-highlight-text"></a>逐步解說：反白顯示文字
-您可以藉由建立 Managed Extensibility Framework （MEF）元件部分，在編輯器中加入不同的視覺效果。 本逐步解說示範如何在文字檔中反白顯示目前每個字組的每個出現專案。 如果單字在文字檔中出現一次以上，而且您將插入號放在一次中，則會反白顯示每個出現的專案。
+# <a name="walkthrough-highlight-text"></a>演練:突顯文字
+您可以透過建立託管擴展框架 (MEF) 元件部件向編輯器添加不同的視覺效果。 這個演練展示如何突出顯示文本檔中當前單詞的每個匹配項。 如果一個單詞在文本檔中發生不止一次,並且將 caret 定位在一個匹配項中,則每個匹配項都會突出顯示。
 
-## <a name="prerequisites"></a>必要條件：
- 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+## <a name="prerequisites"></a>Prerequisites
+ 從 Visual Studio 2015 開始,您不會從下載中心安裝 Visual Studio SDK。 它作為可選功能包含在可視化工作室設置中。 以後還可以安裝 VS SDK。 有關詳細資訊,請參閱[安裝可視化工作室 SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-mef-project"></a>建立 MEF 專案
 
-1. 建立C# VSIX 專案。 （在 [**新增專案**] 對話方塊中，選取 [**視覺效果C# /** 擴充性]、[ **VSIX 專案**]）。將方案命名為 `HighlightWordTest`。
+1. 創建 C# VSIX 專案。 ( 在 **'新增項目'** 對話框中,選擇**視覺化 C# / 可擴充性**,然後選擇**VSIX 專案**。命名解決方案`HighlightWordTest`。
 
-2. 將編輯器分類器專案範本加入至專案。 如需詳細資訊，請參閱[使用編輯器專案範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)功能。
+2. 加入專案加入編輯器分類器項範本。 關於詳細資訊,請參考[使用編輯器項目樣本建立延伸](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
 
 3. 刪除現有類別檔案。
 
-## <a name="define-a-textmarkertag"></a>定義 TextMarkerTag
- 反白顯示文字的第一個步驟是將 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> 子類別化，並定義其外觀。
+## <a name="define-a-textmarkertag"></a>定義文字標記
+ 突出顯示文本的第一步是子類<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>並定義其外觀。
 
-### <a name="to-define-a-textmarkertag-and-a-markerformatdefinition"></a>若要定義 TextMarkerTag 和 MarkerFormatDefinition
+### <a name="to-define-a-textmarkertag-and-a-markerformatdefinition"></a>定義文字標記與標記格式定義
 
-1. 新增類別檔案，並將其命名為**HighlightWordTag**。
+1. 添加類檔並將其命名為 **「高光WordTag」。。**
 
 2. 加入下列參考：
 
-    1. VisualStudio. CoreUtility
+    1. 微軟.VisualStudio.核心實用程式
 
-    2. VisualStudio。資料
+    2. 微軟.VisualStudio.文本.資料
 
-    3. VisualStudio。邏輯
+    3. 微軟.VisualStudio.文本.邏輯
 
-    4. VisualStudio。 UI
+    4. 微軟.VisualStudio.文字.UI
 
-    5. VisualStudio： UI. Wpf
+    5. 微軟.VisualStudio.文本.UI.Wpf
 
     6. System.ComponentModel.Composition
 
-    7. 簡報。核心
+    7. 簡報簡報
 
-    8. 簡報。架構
+    8. 範例.框架
 
-3. 匯入下列命名空間。
+3. 匯入以下命名空間。
 
     ```csharp
     using System;
@@ -73,7 +73,7 @@ ms.locfileid: "75403600"
     using System.Windows.Media;
     ```
 
-4. 建立繼承自 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> 的類別，並將其命名為 `HighlightWordTag`。
+4. 創建繼承<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>並命名它的`HighlightWordTag`類。
 
     ```csharp
     internal class HighlightWordTag : TextMarkerTag
@@ -82,11 +82,11 @@ ms.locfileid: "75403600"
     }
     ```
 
-5. 建立繼承自 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>的第二個類別，並將其命名為 `HighlightWordFormatDefinition`。 若要將此格式定義用於您的標籤，您必須使用下列屬性匯出它：
+5. 建立從<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>繼承的第二個類別並命名`HighlightWordFormatDefinition`它 。 為了對標記使用此格式定義,必須使用以下屬性匯出它:
 
-    - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>：標記使用此來參考此格式
+    - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>標記用它來參考此格式
 
-    - <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>：這會讓格式出現在 UI 中
+    - <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>:這將導致格式顯示在 UI 中
 
     ```csharp
 
@@ -99,7 +99,7 @@ ms.locfileid: "75403600"
     }
     ```
 
-6. 在 HighlightWordFormatDefinition 的函式中，定義其顯示名稱和外觀。 Background 屬性會定義填滿色彩，而前景屬性則會定義框線色彩。
+6. 在高光字格式定義的建構函數中,定義其顯示名稱和外觀。 "背景"屬性定義填充顏色,而"前景"屬性定義邊框顏色。
 
     ```csharp
     public HighlightWordFormatDefinition()
@@ -111,18 +111,18 @@ ms.locfileid: "75403600"
     }
     ```
 
-7. 在 HighlightWordTag 的函式中，傳入您所建立之格式定義的名稱。
+7. 在高光WordTag的建構函數中,以您創建的格式定義的名稱傳遞。
 
     ```
     public HighlightWordTag() : base("MarkerFormatDefinition/HighlightWordFormatDefinition") { }
     ```
 
-## <a name="implement-an-itagger"></a>執行 ITagger
- 下一個步驟是執行 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> 介面。 這個介面會指派給指定的文字緩衝區、提供文字醒目提示和其他視覺效果的標記。
+## <a name="implement-an-itagger"></a>實施 ITagger
+ 下一步是實現介面<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>。 此介面為給定的文本緩衝區分配提供文本突出顯示和其他視覺效果的標記。
 
-### <a name="to-implement-a-tagger"></a>若要執行標記
+### <a name="to-implement-a-tagger"></a>實作標記
 
-1. 建立一個類別，它會執行 `HighlightWordTag`類型的 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>，並將它命名為 `HighlightWordTagger`。
+1. 建立實用型<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>`HighlightWordTag`態的類別,並`HighlightWordTagger`命名它 。
 
     ```csharp
     internal class HighlightWordTagger : ITagger<HighlightWordTag>
@@ -131,21 +131,21 @@ ms.locfileid: "75403600"
     }
     ```
 
-2. 將下列私用欄位和屬性新增至類別：
+2. 將以下私有欄位和屬性加入:
 
-    - 對應至目前文字視圖的 <xref:Microsoft.VisualStudio.Text.Editor.ITextView>。
+    - 對應目前<xref:Microsoft.VisualStudio.Text.Editor.ITextView>文字檢視的 。
 
-    - <xref:Microsoft.VisualStudio.Text.ITextBuffer>，對應于文本視圖的基礎文本緩衝區。
+    - 對應於<xref:Microsoft.VisualStudio.Text.ITextBuffer>文本檢視的基礎的文本緩衝區。
 
-    - 用來尋找文字的 <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService>。
+    - 尋找<xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService>文字的 。
 
-    - <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>，其具有在文字範圍內流覽的方法。
+    - 具有<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>在文本範圍內導航的方法。
 
-    - <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection>，其中包含要反白顯示的一組文字。
+    - 包含<xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection>要突出顯示的單詞集。
 
-    - <xref:Microsoft.VisualStudio.Text.SnapshotSpan>，對應于目前的文字。
+    - 對應目前<xref:Microsoft.VisualStudio.Text.SnapshotSpan>單字的 。
 
-    - <xref:Microsoft.VisualStudio.Text.SnapshotPoint>，其對應至插入號的目前位置。
+    - 對應於<xref:Microsoft.VisualStudio.Text.SnapshotPoint>caret 的當前位置。
 
     - 鎖定物件。
 
@@ -161,7 +161,7 @@ ms.locfileid: "75403600"
 
     ```
 
-3. 新增可初始化先前所列屬性的函式，並加入 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 和 <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> 事件處理常式。
+3. 添加一個建構函數,用於初始化前面列出的屬性,並<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>添加<xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged>和事件處理程式。
 
     ```csharp
     public HighlightWordTagger(ITextView view, ITextBuffer sourceBuffer, ITextSearchService textSearchService,
@@ -179,7 +179,7 @@ ms.locfileid: "75403600"
 
     ```
 
-4. 事件處理常式會呼叫 `UpdateAtCaretPosition` 方法。
+4. 事件處理常式都呼叫`UpdateAtCaretPosition`方法 。
 
     ```csharp
     void ViewLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)
@@ -197,12 +197,12 @@ ms.locfileid: "75403600"
     }
     ```
 
-5. 您也必須加入 update 方法所呼叫的 `TagsChanged` 事件。
+5. 還必須添加更新方法調用`TagsChanged`的事件。
 
      [!code-csharp[VSSDKHighlightWordTest#10](../extensibility/codesnippet/CSharp/walkthrough-highlighting-text_1.cs)]
      [!code-vb[VSSDKHighlightWordTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-highlighting-text_1.vb)]
 
-6. `UpdateAtCaretPosition()` 方法會尋找文字緩衝區中的每個單字，與游標所在的單字相同，並會建立對應于單字出現之 <xref:Microsoft.VisualStudio.Text.SnapshotSpan> 物件的清單。 然後，它會呼叫 `SynchronousUpdate`，這會引發 `TagsChanged` 事件。
+6. 該方法`UpdateAtCaretPosition()`查找文本緩衝區中與游標定位的單詞相同的每個單詞,並構造對應於該單詞<xref:Microsoft.VisualStudio.Text.SnapshotSpan>出現的物件清單。 然後呼叫`SynchronousUpdate`,引發`TagsChanged`事件 。
 
     ```csharp
     void UpdateAtCaretPosition(CaretPosition caretPosition)
@@ -284,7 +284,7 @@ ms.locfileid: "75403600"
 
     ```
 
-7. `SynchronousUpdate` 會在 `WordSpans` 和 `CurrentWord` 屬性上執行同步更新，並引發 `TagsChanged` 事件。
+7. `SynchronousUpdate`對`WordSpans`與`CurrentWord`屬性執行同步更新,並引發`TagsChanged`事件 。
 
     ```csharp
     void SynchronousUpdate(SnapshotPoint currentRequest, NormalizedSnapshotSpanCollection newSpans, SnapshotSpan? newCurrentWord)
@@ -304,11 +304,11 @@ ms.locfileid: "75403600"
     }
     ```
 
-8. 您必須執行 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> 方法。 這個方法會採用 <xref:Microsoft.VisualStudio.Text.SnapshotSpan> 物件的集合，並傳回標記範圍的列舉。
+8. 您必須實作該<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>方法 。 此方法獲取<xref:Microsoft.VisualStudio.Text.SnapshotSpan>物件的集合,並返回標記範圍的枚舉。
 
-     在C#中，會將此方法實作為 yield 反覆運算器，以啟用延遲評估（也就是只有在存取個別專案時才評估集合）標記。 在 Visual Basic 中，將標記新增至清單，並傳回清單。
+     在 C# 中,將此方法實現為屈服反覆運算器,該反覆運算器支援標記的延遲計算(即僅在存取單個項時評估集)。 在「視覺基本」中,將標記添加到清單中並返回清單。
 
-     在這裡，方法會傳回具有「藍色」 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>（提供藍色背景）的 <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> 物件。
+     在這裡,該方法返回具有<xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601>「藍色<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>」 的物件,該物件提供藍色背景。
 
     ```csharp
     public IEnumerable<ITagSpan<HighlightWordTag>> GetTags(NormalizedSnapshotSpanCollection spans)
@@ -348,14 +348,14 @@ ms.locfileid: "75403600"
     ```
 
 ## <a name="create-a-tagger-provider"></a>建立標記提供者
- 若要建立您的標記，您必須執行 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>。 這個類別是 MEF 元件的一部分，因此您必須設定正確的屬性，才能辨識此延伸模組。
+ 要建立標記器,必須實現<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>。 此類是 MEF 元件部分,因此必須設置正確的屬性,以便識別此擴展。
 
 > [!NOTE]
-> 如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework （mef）](/dotnet/framework/mef/index)。
+> 有關 MEF 的詳細資訊,請參閱[託管擴展性框架 (MEF)。](/dotnet/framework/mef/index)
 
 ### <a name="to-create-a-tagger-provider"></a>建立標記提供者
 
-1. 建立一個名為 `HighlightWordTaggerProvider` 的類別，以執行 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>，並將其匯出為 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 的 "text" 和 <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> 的 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>。
+1. 建立名為的`HighlightWordTaggerProvider`類別<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, 實現 ,並<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>匯出它與<xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>的<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>文字與 a
 
     ```csharp
     [Export(typeof(IViewTaggerProvider))]
@@ -365,7 +365,7 @@ ms.locfileid: "75403600"
     { }
     ```
 
-2. 您必須匯入兩個編輯器服務，<xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService> 和 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>，以具現化標記。
+2. 您必須導入兩個編輯器服務,和<xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService><xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>,以實例化標記。
 
     ```csharp
     [Import]
@@ -376,7 +376,7 @@ ms.locfileid: "75403600"
 
     ```
 
-3. 執行 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> 方法，以傳回 `HighlightWordTagger`的實例。
+3. 實現方法<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A>以返回`HighlightWordTagger`的 實例。
 
     ```csharp
     public ITagger<T> CreateTagger<T>(ITextView textView, ITextBuffer buffer) where T : ITag
@@ -392,18 +392,18 @@ ms.locfileid: "75403600"
     }
     ```
 
-## <a name="build-and-test-the-code"></a>建立並測試程式碼
- 若要測試此程式碼，請建立 HighlightWordTest 方案，並在實驗實例中執行它。
+## <a name="build-and-test-the-code"></a>組建及測試代碼
+ 要測試此代碼,請構建高光WordTest解決方案並在實驗實例中運行它。
 
-### <a name="to-build-and-test-the-highlightwordtest-solution"></a>若要建立並測試 HighlightWordTest 解決方案
+### <a name="to-build-and-test-the-highlightwordtest-solution"></a>建置和測試高光字測試解決方案
 
 1. 建置方案。
 
-2. 當您在偵錯工具中執行此專案時，會啟動 Visual Studio 的第二個實例。
+2. 在除錯器中執行此專案時,將啟動 Visual Studio 的第二個實體。
 
-3. 建立文字檔，並輸入文字，其中會有重複的字組，例如 "hello hello hello"。
+3. 創建文本檔並鍵入一些重複單詞的文本,例如"你好你好"。
 
-4. 將游標放在 "hello" 的其中一個出現位置。 每次發生時都應該以藍色反白顯示。
+4. 將游標放置在"hello"的一個事件中。 每個事件都應以藍色突出顯示。
 
-## <a name="see-also"></a>請參閱
-- [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## <a name="see-also"></a>另請參閱
+- [演練:將內容類型連結到檔案名副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

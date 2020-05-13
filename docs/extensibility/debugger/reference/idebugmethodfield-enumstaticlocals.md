@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumStaticLocals |Microsoft Docs
+title: IDebugMethodfield::EnumStaticLocals |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumStaticLocals method
 ms.assetid: e0c522c4-f759-4c32-ae87-7abcb573e77d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 006f1975c18aa7464531654d9b71fd857953afc9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e0a89b4c1ac4318b6dd070dc086b86b45ad24fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324249"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727149"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
-建立方法的靜態區域變數的列舉值。
+為方法的靜態局部變數創建枚舉器。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int EnumStaticLocals(
 
 ## <a name="parameters"></a>參數
 `ppLocals`\
-[out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，代表靜態區域變數的清單。 如果沒有任何靜態區域變數，則傳回 null 值。
+[出]返回表示靜態局部變數清單的[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件。 如果沒有靜態局部變數,則返回 null 值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK，或如果沒有任何靜態區域變數，則傳回 S_FALSE。 否則會傳回錯誤碼。
+ 如果成功,則返回S_OK或返回S_FALSE如果沒有靜態局部變數。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 每個項目是[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，代表不同類型的靜態區域變數。 呼叫[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)判斷完全代表哪種靜態本機物件的每個物件上的方法。
+ 每個元素都是一個[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件,表示不同類型的靜態局部變數。 調用每個物件上的[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法,以確定物件表示的靜態局部類型。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

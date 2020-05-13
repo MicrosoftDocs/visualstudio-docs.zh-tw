@@ -2056,7 +2056,7 @@
               href: module-info-flags.md
             - name: NAME_MATCH
               href: name-match.md
-            - name: OBJECT_TYPE
+            - name: Object_Type
               href: object-type.md
             - name: PARSEFLAGS
               href: parseflags.md

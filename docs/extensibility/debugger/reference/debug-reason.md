@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Microsoft Docs
+title: DEBUG_REASON |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0502ab10398d37bcafee5316ba7e7566dbab4e01
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59954ea7e89390a5e35dbe0bfb0412da1aabc80f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346158"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737429"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
-指定處理序已啟動偵錯，原因。
+# <a name="debug_reason"></a>DEBUG_REASON
+指定啟動進程以進行調試的原因。
 
 ## <a name="syntax"></a>語法
 
@@ -50,29 +50,29 @@ public enum enum_DEBUG_REASON {
 
 ## <a name="fields"></a>欄位
 `DEBUG_REASON_ERROR`\
-發生非特定的錯誤 （這用做預設條件時沒有其他理由調整）。
+發生非特定錯誤(當其他原因均不合適時,這用作默認條件)。
 
 `DEBUG_REASON_USER_LAUNCHED`\
-在使用者的要求啟動程序。
+該過程是應使用者請求啟動的。
 
 `DEBUG_REASON_USER_ATTACHED`\
-已在執行程序已附加至使用者。
+已運行的進程由使用者附加到。
 
 `DEBUG_REASON_AUTO_ATTACHED`\
-此程序已自動附加至其啟動時。
+該過程在啟動時自動附加到。
 
 `DEBUG_REASON_CAUSALITY`\
-處理序已啟動，因為*Just In Time* (JIT) 偵錯事件。
+此過程是由於即時 (JIT) 除錯事件而啟動*的*。
 
 ## <a name="remarks"></a>備註
-傳回從[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)方法。
+從[GetDebugAthe 方法](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)返回。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

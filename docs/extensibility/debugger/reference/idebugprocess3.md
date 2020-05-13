@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3 | Microsoft Docs
+title: IDebugProcess3 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3 interface
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8db169a06864fad24ef7e6ce4c2d188e2a88ef1d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b423ee2cb95ad55296c452cfdc4b891ee4cd26a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313851"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723539"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
-這個介面會表示執行中處理序和其程式。 這個介面是否存在，在數種方法來取代[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面。 它可讓控制程序中的所有程式。
+此介面表示正在運行的進程及其程式。 此介面作為[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面中多種方法的替換而存在。 它提供對流程中所有程式的控制。
 
 > [!NOTE]
-> [繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)， [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)，以及[步驟](../../../extensibility/debugger/reference/idebugprogram2-step.md)方法已被取代，並且無法再使用。 使用上的對應方法`IDebugProcess3`改為介面。
+> [將棄用"繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)["、執行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)和[步驟](../../../extensibility/debugger/reference/idebugprogram2-step.md)方法,不應再使用。 而是在`IDebugProcess3`介面上使用相應的方法。
 
 ## <a name="syntax"></a>語法
 
@@ -31,35 +31,35 @@ ms.locfileid: "66313851"
 IDebugProcess3 : IDebugProcess2
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 若要以群組方式管理程式的自訂連接埠供應商提供的被實作這個介面。 當程式以群組進行管理時，您可以控制其執行，並建立一種語言的運算式評估工具。 透過連接埠提供者，就必須實作這個介面。
+## <a name="notes-for-implementers"></a>實施者說明
+ 此介面由自定義埠供應商實現,以作為一個組管理程式。 當程式作為一個組進行管理時,您可以控制其執行併為表達式賦值器建立語言。 此介面必須由埠供應商實現。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 此介面稱為主要是由工作階段的偵錯管理員 (SDM) 來進行互動的程式識別在這個程序中的群組。
+## <a name="notes-for-callers"></a>通話備註
+ 此介面主要由工作階段調試管理員 (SDM) 調用,以便與在此過程中識別的一組程式進行互動。
 
- 呼叫[QueryInterface](/cpp/atl/queryinterface)上[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)介面，以取得此介面。
+ 在[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)介面上調用[查詢介面](/cpp/atl/queryinterface)以獲取此介面。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 除了繼承自方法[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)，`IDebugProcess3`實作下列方法。
+ 除了從[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)繼承的方法`IDebugProcess3`外, 還實現了以下方法。
 
 |方法|描述|
 |------------|-----------------|
-|[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|會持續執行，或是逐步執行程序。|
-|[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|開始執行的處理序。|
-|[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|步驟轉送一指令或處理序中的陳述式。|
-|[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|取得處理序已啟動的偵錯的原因。|
-|[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|設定主機的語言，以便偵錯引擎可以載入適當的運算式評估工具。|
-|[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|擷取目前針對此程序設定的語言。|
-|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|此程序，停用編輯後繼續 (ENC)。<br /><br /> 自訂連接埠供應商不會實作這個方法 (它應該會一律傳回`E_NOTIMPL`)。|
-|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|取得這個處理程序的 ENC 狀態。<br /><br /> 自訂連接埠供應商不會實作這個方法 (它應該會一律傳回`E_NOTIMPL`)。|
-|[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|擷取可用的偵錯引擎的唯一識別碼的陣列。|
+|[繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|繼續執行或逐步執行流程。|
+|[執行](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|開始執行進程。|
+|[步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)|在此過程中向前走一條指令或語句。|
+|[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|獲取進程啟動以進行調試的原因。|
+|[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|設置託管語言,以便調試引擎可以載入相應的運算式賦值器。|
+|[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|檢索當前為此過程設置的語言。|
+|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|禁用此過程的編輯並繼續 (ENC)。<br /><br /> 自定義埠供應商不實現此方法(應始終返回`E_NOTIMPL`)。|
+|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|獲取此過程的 ENC 狀態。<br /><br /> 自定義埠供應商不實現此方法(應始終返回`E_NOTIMPL`)。|
+|[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|檢索可用調試引擎的唯一標識符陣列。|
 
 ## <a name="requirements"></a>需求
- 標頭：Msdbg.h
+ 標題: Msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

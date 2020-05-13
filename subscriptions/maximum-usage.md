@@ -3,49 +3,55 @@ title: 使用管理入口網站中的 [使用量上限] 功能
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 03/24/2019
+ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: 了解如何在管理入口網站中檢視已指派的訂用帳戶數目上限
-ms.openlocfilehash: 76360c9843d82350a2b9929b8debfdb4aa4cde82
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0fe9dbe494867c99ba62bcb5f56c372da7ac50aa
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852332"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808357"
 ---
-# <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>使用 [使用量上限] 功能來追蹤已指派的訂用帳戶數目
+# <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>使用最大使用功能追蹤分配的訂閱數
 Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤曾購買和指派的訂用帳戶數量，並識別過去一年和整個合約持續時間內，每個層級曾指派的訂用帳戶尖峰數目。 
+
+## <a name="maximum-usage-overview"></a>最大使用方式概述
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tdQK] 
 
 ## <a name="view-your-maximum-usage"></a>檢視使用量上限
 查看任何合約和訂用帳戶層級指派的訂用帳戶尖峰數目：
 1. 在入口網站左上方下拉式清單中選取您想要檢視的合約。 (如果您只有一份合約，它會是已選取狀態。)
-2. 按一下 [使用量上限] 索引標籤。  
+2. 按一下使用者網格左側的第三個圖示,這是**最大使用次數**圖示。  
     > [!div class="mx-imgBorder"]
     > ![[使用量上限] 功能表](_img/maximum-usage/maximum-usage-menu.png)
-3. 「使用量上限摘要」隨即出現，且會顯示每個層級過去一年內已指派的訂用帳戶最大數目，以及達到該尖峰的日期。  如果達到該尖峰的次數超過一次，則會顯示第一次達到的尖峰。 
-    > [!div class="mx-imgBorder"]
-    > ![[使用量上限] 摘要](_img/maximum-usage/maximum-usage-summary.png)
-4. 若要查看合約存留期間內已指派的訂用帳戶最大數目，請按一下 [Full-Term] \(全程執行期間\) 索引標籤。
+3. 將顯示「12 個月最大使用量」,並顯示您在過去一年中為每個級別分配的最大訂閱數,以及達到該峰值的月份。    
 
 ## <a name="view-your-assignment-history"></a>檢視指派記錄
-按一下 [Export full report] \(匯出完整報告\) 按鈕，除可看到每個訂用帳戶層級的尖峰指派，您還可以看到合約的活動執行帳戶，包括購買和指派。  
+按一下 [Export full report] \(匯出完整報告\)**** 按鈕，除可看到每個訂用帳戶層級的尖峰指派，您還可以看到合約的活動執行帳戶，包括購買和指派。  (您可能需要向下滾動才能看到按鈕。  
 
 > [!div class="mx-imgBorder"]
 > ![[使用量上限] 完整報告](_img/maximum-usage/maximum-usage-full-report.png)
 
 針對每個訂用帳戶層級，此報告會顯示日期您達到新指派上限層級的日期，和您自該日期起已購買的訂用帳戶數目，讓您輕鬆查看任何出現過度分派的日期。  
 
-例如，在上表中可以看到，合約在 2018 年 12 月 13 日時有 123 個 Visual Studio Enterprise 訂用帳戶，且已指派 120 個。  2019 年 1 月 8 日，多指派了一個訂用帳戶，使得總數達到 121 個。  隔天，又指派六個訂用帳戶，並在合約中新增四個訂用帳戶，以平衡新的指派數量。  
-
 ## <a name="frequently-asked-questions"></a>常見問題集
-### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>問： [最大使用量] 中的資訊與入口網站左側 [總覽] 區段中提供的指派資訊有何不同？
-答：總覽中的資訊會顯示每個訂用帳戶層級的*目前*指派和可用的訂閱。  這和在目前年份或合約有效期間已指派訂用帳戶的數目上限會有極大差異。  [使用量上限] 功能可讓您查看何時到達最大指派層級和層級。  這是重要的區別，因為訂用帳戶的計費校正期間是以一年內任何時點已指派訂用帳戶數目上限為基礎。 
+### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>問:最大用法中的資訊與門戶左側「概述」部分中可用的分配資訊如何不同?
+答:概覽中的資訊顯示每個訂閱級別的*當前*分配和可用訂閱。  這和在目前年份或合約有效期間已指派訂用帳戶的數目上限會有極大差異。  使用最大值功能允許您查看何時達到最大分配級別以及級別。  這是重要的區別，因為訂用帳戶的計費校正期間是以一年內任何時點已指派訂用帳戶數目上限為基礎。 
 
 ## <a name="resources"></a>資源
 - [Visual Studio 授權技術白皮書](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [大量授權條款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
+## <a name="see-also"></a>另請參閱
+- [視覺化工作室文件](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文件](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [微軟 365 文件](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>後續步驟
 - 如果您有任何關於訂用帳戶指派或系統管理入口網站其他方面的問題，請連絡 https://visualstudio.microsoft.com/subscriptions/support/ 以尋求協助。 
 - 深入瞭解當您指派更多購買的訂用帳戶時 (稱為[過度分配](handle-overclaimed-license.md))，該怎麼辦。
+

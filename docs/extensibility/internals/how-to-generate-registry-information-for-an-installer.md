@@ -1,5 +1,5 @@
 ---
-title: 如何：產生安裝程式的登錄資訊 |Microsoft Docs
+title: 如何:為安裝程式生成註冊表資訊 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,40 +7,40 @@ helpviewer_keywords:
 - VSPackages, registering
 - VSPackages, registration manifests
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4395732cd8d3fbc71ac902801c71270ff446470
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 84bb58230c6856cc9598e3caea5c710bb3a69f36
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981973"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708065"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>如何：產生安裝程式的登錄資訊
+# <a name="how-to-generate-registry-information-for-an-installer"></a>如何:為安裝程式產生註冊表資訊
 
-*RegPkg*公用程式可以用來產生 managed VSPackage 的註冊資訊清單。 資訊清單可以併入 Windows Installer 安裝套件中。 RegPkg 也可以根據[WINDOWS INSTALLER XML 工具](https://wixtoolset.org/)組，產生可包含在安裝程式來源檔案中的檔案。
+*RegPkg.exe*實用程式可用於為託管 VSPackage 生成註冊清單。 該清單可以合併到 Windows 安裝程式安裝程式包中。 RegPkg 還可以生成一個檔,該檔可以基於 Windows 安裝程式 XML[工具集](https://wixtoolset.org/)包含在設定源檔中。
 
 > [!IMPORTANT]
-> RegPkg 會產生您的開發系統特有的路徑名稱，因此您每次使用 RegPkg 時，都必須編輯輸出以使用適當的 Windows Installer 格式屬性。 例如，`InprocServer32` 值應該是 *\<SystemFolder\>mscoree.dll* ，而路徑應該使用 *\<#filekey*\>和 *\<$componentkey* \>。 以這種方式調整輸出，可支援將 Windows 安裝在不同的磁片磁碟機或不同的目錄、當地語系化的目錄名稱，以及使用者可以選擇的路徑中的電腦。 如需詳細資訊，請參閱在 Windows Installer SDK 中[格式化](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp)。 如果您遵循開發系統路徑的 RegPkg 慣例（例如，表單 File_ 的檔案識別碼 *\<filename\>* ），則需要進行較少的變更。
+> RegPkg 生成特定於開發系統的路徑名稱,因此每次使用 RegPkg 時,都必須編輯輸出以使用適當的 Windows 安裝程式格式化屬性。 例如`InprocServer32`,該值應為*\<「\>系統資料夾 mscoree.dll」,* 路徑應使用*\<\>#filekey*和*\<$componentkey\>*。 以這種方式調整輸出支援將 Windows 安裝在其他驅動器或其他目錄中的電腦、當地語系化的目錄名稱以及使用者可以選擇的路徑。 有關詳細資訊,請參閱在 Windows 安裝程式 SDK 中[格式化](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp)。 如果您遵循開發系統路徑的 RegPkg 約定(例如,表單*的檔\<\>FILE_檔名*的檔指示號)需要進行較少的更改。
 
-## <a name="to-create-a-registration-manifest"></a>若要建立註冊資訊清單
+## <a name="to-create-a-registration-manifest"></a>建立註冊清單
 
-- 使用 **/regfile**參數執行 RegPkg。 提供任何其他參數、輸出檔的名稱，以及 VSPackage 的路徑。
+- 使用 **/regfile**開關運行 RegPkg。 提供任何其他交換機、輸出檔的名稱和 VSPackage 的路徑。
 
-     例如，在命令提示字元中，您會輸入如下所示的內容：
+     例如,在命令提示符下,可以鍵入如下所示的內容:
 
     ```
     <Visual Studio SDK installation path>\VisualStudioIntegration\Tools\Bin\RegPkg /regfile:MyRegFile.reg MyPackage.dll
     ```
 
-## <a name="to-view-a-registration-manifest"></a>若要查看註冊資訊清單
+## <a name="to-view-a-registration-manifest"></a>檢視註冊清單
 
-- 在任何文字編輯器中開啟註冊資訊清單。
+- 開啟任何文字編輯器中的註冊清單。
 
-     下列範例是 RegPkg 針對 IronPython 語言服務所建立的註冊資訊清單：
+     以下範例是 RegPkg 為 IronPython 語言服務建立的註冊清單:
 
     ```
     REGEDIT4
@@ -97,21 +97,21 @@ ms.locfileid: "72981973"
 
     ```
 
-## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>若要建立 Windows Installer XML 工具組包含檔案
+## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>要建立 Windows 安裝程式 XML 工具集,請包括檔案
 
-- 使用 **/wixfile**參數執行 RegPkg。 提供任何其他參數、輸出檔的名稱，以及 VSPackage 的路徑。
+- 使用 **/wix 檔案**開關運行 RegPkg。 提供任何其他交換機、輸出檔的名稱和 VSPackage 的路徑。
 
-     例如，在命令提示字元中，您會輸入如下所示的內容：
+     例如,在命令提示符下,可以鍵入如下所示的內容:
 
     ```
     <Visual Studio SDK installation path>\VisualStudioIntegration\Tools\Bin\RegPkg /codebase /wixfile:IronPython.LanguageService.wxi ..\bin\Release\IronPython.LanguageService.dll
     ```
 
-## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>若要查看 Windows Installer XML 工具組包含檔案
+## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>要檢視 Windows 安裝程式 XML 工具集包括檔案
 
-- 在任何文字編輯器中開啟 Windows Installer XML 工具組包含檔案。
+- 開啟 Windows 安裝程式 XML 工具集包括任何文字編輯器中的檔案。
 
-     下列範例是 RegPkg 為 IronPython 語言服務建立的 include 檔案：
+     以下範例是 RegPkg 為 IronPython 語言服務建立的包含檔:
 
     ```xml
     <Include>
@@ -181,7 +181,7 @@ ms.locfileid: "72981973"
     </Include>
     ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [註冊 Vspackage](../../extensibility/registering-and-unregistering-vspackages.md)
+- [註冊 VS 套件](../../extensibility/registering-and-unregistering-vspackages.md)
 - [VSPackage](../../extensibility/internals/vspackages.md)

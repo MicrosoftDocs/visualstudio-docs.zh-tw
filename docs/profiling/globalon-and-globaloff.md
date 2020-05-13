@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776962"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 和 GlobalOff
@@ -49,15 +49,15 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ## <a name="valid-options"></a>有效選項
  您可以在也包含下列選項的命令列上指定 **GlobalOn** 和 **GlobalOff**。
 
- **Start：** `Method` 初始化命令列 profiler 會話，並設定指定的分析方法。
+ **開始：**`Method`初始化命令列探測器會話並設置指定的分析方法。
 
- **啟動：** `AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
+ **啟動：**`AppName`啟動指定的應用程式並開始使用採樣方法進行分析。
 
- **Attach：** `PID` 開始分析指定的進程。
+ **附加：**`PID`開始分析指定的過程。
 
- {**ProcessOff**&#124;**ProcessOn**} **：** `PID` 會停止或開始分析指定的進程。
+ [**進程關閉**&#124;**進程打開**]**：**`PID`停止或開始對指定進程進行分析。
 
- {**ThreadOff**&#124;**ThreadOn**} **：** `TID` 針對指定的進程停止或開始分析（僅限檢測方法）。
+ [**執行緒關閉**&#124;**執行緒**數 ]**：**`TID`停止或開始分析指定的進程（僅限檢測方法）。
 
 ## <a name="example"></a>範例
  在此範例中，可使用 **GlobalOff** 和 **GlobalOn** 選項，避免收集應用程式啟動和關閉的分析資料。
@@ -77,8 +77,8 @@ VSPerfCmd /Shutdown
 
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服務](../profiling/command-line-profiling-of-services.md)

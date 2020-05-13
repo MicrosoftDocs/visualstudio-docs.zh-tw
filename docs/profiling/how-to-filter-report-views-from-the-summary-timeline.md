@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 191e54189677abc7d89d5f50064ceda6f2669f03
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778943"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>如何：從摘要時間軸篩選報表檢視
@@ -25,4 +25,4 @@ ms.locfileid: "74778943"
 
      您指定的區域會加上陰影。
 
-2. 按一下 [依選取範圍篩選]。
+2. 按一下 [依選取範圍篩選]****。

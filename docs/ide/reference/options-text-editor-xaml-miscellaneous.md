@@ -29,15 +29,15 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: cec66cdb2de3f89358cd0ee90867154cc374a7fd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568200"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>選項、文字編輯器、XAML、其他
 
-使用 [其他] 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [其他] 屬性頁，請展開 [文字編輯器] > [XAML] > [其他] 節點。
+使用 [其他]**** 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項]**** 對話方塊，請按一下 [工具]**** 功能表，然後按一下 [選項]****。 若要存取 [其他]**** 屬性頁，請展開 [文字編輯器]**** > [XAML]**** > [其他]**** 節點。
 
 ## <a name="auto-insert"></a>自動插入
 
@@ -54,6 +54,6 @@ ms.locfileid: "75568200"
 
 使用此設定來控制錯誤和警告的自動產生時機。 如需詳細資訊，請參閱 [XAML 錯誤和警告](../../xaml-tools/xaml-errors-warnings.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [WPF 中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

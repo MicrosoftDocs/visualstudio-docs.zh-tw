@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fbe0dbda58a0c57cacd64c40b66cc640b779bca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d021bdb485846749ea2c7e9dfe483e09738fda46
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593313"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633989"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 工作
-擷取 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 的路徑。
 
+檢索到 Windows 軟體發展工具組 （SDK） 的路徑。
 ## <a name="task-parameters"></a>工作參數
+
+下表說明 `GetFrameworkSdkPath` 工作的參數。
 下表說明 `GetFrameworkSdkPath` 工作的參數。
 
 |參數|描述|
@@ -39,10 +41,12 @@ ms.locfileid: "75593313"
 |`Path`|選擇性的 `String` 輸出參數。<br /><br /> 包含最新的 .NET SDK 路徑 (如果已有任何版本的話)。 否則傳回 `String.Empty`。|
 
 ## <a name="remarks"></a>備註
-除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+
+除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
-下列範例使用 `GetFrameworkSdkPath` 工作，將 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 的路徑儲存在 `SdkPath` 屬性中。
+
+下面的示例使用`GetFrameworkSdkPath`該任務將 Windows SDK 的路徑存儲在屬性中`SdkPath`。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -57,6 +61,7 @@ ms.locfileid: "75593313"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)

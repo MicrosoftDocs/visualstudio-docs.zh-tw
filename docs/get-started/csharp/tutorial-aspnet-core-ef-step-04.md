@@ -1,5 +1,5 @@
 ---
-title: 步驟4：從您的 ASP.NET Core 應用程式公開 Web API
+title: 第 4 步：從ASP.NET核心應用中公開 Web API
 description: 使用此影片教學課程和逐步指示，向您的 ASP.NET Core Web 應用程式新增 Web API。
 ms.custom: get-started
 ms.date: 02/13/2020
@@ -17,13 +17,13 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 5ea9468bdf86986ab542fb1cabc873c9aeb75fd6
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77580046"
 ---
-# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>步驟4：從您的 ASP.NET Core 應用程式公開 Web API
+# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>第 4 步：從 ASP.NET核心應用公開 Web API
 
 請遵循下列步驟將 Web API 新增至現有的 ASP.NET Core 應用程式中。
 
@@ -37,7 +37,7 @@ _觀看並遵循這段影片，向您的第一個 ASP.NET Core 應用程式新�
 
 ## <a name="add-an-api-controller"></a>新增 API 控制器
 
-以滑鼠右鍵按一下專案並加入一個名為 *Api* 的新資料夾。 然後，以滑鼠右鍵按一下此資料夾並選擇 [新增] > [新增 Scaffolded 項目]。 選擇 [使用 Entity Framework 執行動作的 API 控制器]。 現在選擇現有的模型類別，然後按一下 [新增]。
+以滑鼠右鍵按一下專案並加入一個名為 *Api* 的新資料夾。 然後，按右鍵此資料夾並選擇 **"添加新** > **腳手架專案**"。 選擇 [使用 Entity Framework 執行動作的 API 控制器]****。 現在選擇現有的模型類別，然後按一下 [新增]****。
 
 ![Visual Studio 2019 ASP.NET Core Scaffolded API 控制器](media/vs-2019/vs2019-add-scaffold-api.png)
 
@@ -187,7 +187,7 @@ public async Task<IActionResult> DeleteGame([FromRoute] int id)
 
 ## <a name="adding-swagger"></a>新增 Swagger
 
-Swagger 是一個 API 文件和測試工具，可以作為一組服務與中介軟體新增至 ASP.NET Core 應用程式中。 若要這樣做，請以右鍵按一下專案，然後選擇 [管理 NuGet 套件]。 然後，按一下 **[流覽]** ，搜尋 `Swashbuckle.AspNetCore`，然後安裝4.0.1 版本。
+Swagger 是一個 API 文件和測試工具，可以作為一組服務與中介軟體新增至 ASP.NET Core 應用程式中。 若要這樣做，請以右鍵按一下專案，然後選擇 [管理 NuGet 套件]****。 然後，按一下 **"流覽**"，`Swashbuckle.AspNetCore`搜索 ，然後安裝 4.0.1 版本。
 
 ![Visual Studio 2019 從 Nuget 新增 Swashbuckle](media/vs-2019/vs2019-nuget-swashbuckle.png)
 
@@ -202,7 +202,7 @@ services.AddSwaggerGen(c =>
 
 您還需要在檔案頂端新增 `using Swashbuckle.AspNetCore.Swagger;`。
 
-接下來，在 `Configure` 之前的 `UseMvc` 方法中加入下列內容：
+接下來，在 `UseMvc` 之前的 `Configure` 方法中加入下列內容：
 
 ```csharp
 // Enable middleware to serve generated Swagger as a JSON endpoint.
@@ -226,7 +226,7 @@ app.UseSwaggerUI(c =>
 
 在下一個影片中，您將學習如何將應用程式部署至 Azure。
 
-[步驟5：將您的 ASP.NET Core 應用程式部署至 Azure](tutorial-aspnet-core-ef-step-05.md)
+[第 5 步：將ASP.NET核心應用部署到 Azure](tutorial-aspnet-core-ef-step-05.md)
 
 ## <a name="see-also"></a>另請參閱
 

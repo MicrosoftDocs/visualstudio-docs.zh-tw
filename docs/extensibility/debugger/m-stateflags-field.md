@@ -1,30 +1,30 @@
 ---
-title: m_stateFlags 欄位 |Microsoft Docs
+title: m_stateFlags欄位 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_stateFlags field, Task class [.NET Framework debug engines]
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dee91fa96e16cdc2cd1cd75083c381422a99092
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b504d134c8951072795dc2e202cf05082b12cb64
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330855"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738385"
 ---
-# <a name="mstateflags-field"></a>m_stateFlags 欄位
-儲存的目前狀態的相關資訊<xref:System.Threading.Tasks.Task>物件。
+# <a name="m_stateflags-field"></a>m_stateFlags欄位
+存儲有關<xref:System.Threading.Tasks.Task>物件當前狀態的資訊。
 
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **命名空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **組件：** mscorlib (在*mscorlib.dll*)
+ **程式集**:mscorlib(在*mscorlib.dll*中)
 
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。
+ 由於您無法從 .NET 框架訪問此內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
 
 ## <a name="syntax"></a>語法
 
@@ -33,9 +33,9 @@ ms.locfileid: "66330855"
 ```
 
 ## <a name="remarks"></a>備註
- 您通常會使用<xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName>屬性來存取這個值。
+ 通常使用<xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName>屬性訪問此值。
 
- 這個成員可以是下列值的任何組合：
+ 此成員可以是以下值的任意組合:
 
 - [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)
 

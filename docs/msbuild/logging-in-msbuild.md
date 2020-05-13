@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a769f6d0b9aa847899c02c951921dc77bac21a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592187"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633547"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild 中的記錄
+
 記錄功能提供一種方式讓您能夠監視組建的進度。 記錄功能會擷取記錄檔中建置事件、訊息、警告和錯誤。
 
 ## <a name="in-this-section"></a>本節內容
+
 - [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)
 
- 說明 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中各個層面的記錄。
+ 描述 MSBuild 中日誌記錄的各個方面。
 
 - [組建記錄器](../msbuild/build-loggers.md)
 
@@ -41,5 +43,6 @@ ms.locfileid: "75592187"
 
  概述如何建立自訂的轉送記錄器。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [平行建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) 描述如何透過讓專案平行執行的方式，加快建置多個專案的速度。

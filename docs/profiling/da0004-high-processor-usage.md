@@ -15,21 +15,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b324d26d21920bae9f03f909b2eab0c1ce7ab419
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777721"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004：處理器使用率高
 
 |||
 |-|-|
-|規則識別碼|DA0004|
-|Category|分析工具使用方式|
-|分析方法|檢測設備<br /><br /> 取樣|
+|規則 ID|DA0004|
+|類別|分析工具使用方式|
+|分析方法|測試設備<br /><br /> 取樣|
 |訊息|處理器使用率持續在 75% 以上。 請考慮為 CPU 繫結應用程式使用取樣模式。|
-|規則類型|資訊|
+|規則型別|資訊|
 
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。
 

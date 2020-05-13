@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateSync | Microsoft Docs
+title: IDebugExpression2::評估同步 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::EvaluateSync
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77fb52dd140ee58eeb202e88026fb57764d549c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 306ed6af2a0a0b8fdb4525a112e680e289e6e6df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325944"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729683"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
-這個方法會以同步方式評估的運算式。
+此方法同步計算表達式。
 
 ## <a name="syntax"></a>語法
 
@@ -47,30 +47,30 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>參數
 `dwFlags`\
-[in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制運算式評估的列舉型別。
+[在][EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)枚舉中的標誌的組合,用於控制運算式計算。
 
 `dwTimeout`\
-[in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
+[在]從此方法返回之前等待的最大時間(以毫秒為單位)。 用於`INFINITE`無限期等待。
 
 `pExprCallback`\
-[in]此參數一律為 null 值。
+[在]此參數始終為空值。
 
 `ppResult`\
-[out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，其中包含的運算式評估結果。
+[出]返回包含表達式計算結果的[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 一些典型的錯誤碼為：
+如果成功,返回`S_OK`;否則返回錯誤代碼。 一些典型的錯誤代碼是:
 
 |錯誤|描述|
 |-----------|-----------------|
-|E_EVALUATE_BUSY_WITH_EVALUATION|目前正在評估另一個運算式，並不支援同時的運算式評估。|
-|E_EVALUATE_TIMEOUT|評估逾時。|
+|E_EVALUATE_BUSY_WITH_EVALUATION|目前正在計算另一個表達式,並且不支援同時計算表達式。|
+|E_EVALUATE_TIMEOUT|評估超時。|
 
 ## <a name="remarks"></a>備註
-為了同步評估，不需要回到 Visual Studio，評估完成時傳送事件。
+對於同步評估,無需在評估完成後將事件發送回 Visual Studio。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法來簡單`CExpression`實作的物件[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)介面。
+下面的範例展示如何實現[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)介面的簡單`CExpression`物件實現此方法。
 
 ```cpp
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,

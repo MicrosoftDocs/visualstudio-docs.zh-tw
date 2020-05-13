@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567914"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>建置前事件/建置後事件命令列對話方塊
@@ -48,7 +48,7 @@ ms.locfileid: "75567914"
 > [!NOTE]
 > 如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。
 
-## <a name="ui-element-list"></a>UI 元素清單
+## <a name="ui-element-list"></a>UI 項目清單
 
 **命令列編輯方塊**
 
@@ -95,9 +95,9 @@ ms.locfileid: "75567914"
 |`$(TargetFileName)`|組建的主要輸出檔檔案名稱 (定義為主檔名和副檔名)。|
 |`$(TargetExt)`|建置的主要輸出檔副檔名。 副檔名前面有 '.'。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [在 Visual Studio 中指定自訂建置事件](../../ide/specifying-custom-build-events-in-visual-studio.md)
-- [專案設計工具、建置事件頁 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [如何：指定建置事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [如何：指定建置事件 (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [建置事件頁，專案設計器 （C#）](../../ide/reference/build-events-page-project-designer-csharp.md)
+- [如何：指定建置事件（可視基本）](../../ide/how-to-specify-build-events-visual-basic.md)
+- [如何：指定建置事件 （C#）](../../ide/how-to-specify-build-events-csharp.md)

@@ -1,5 +1,5 @@
 ---
-title: SccDiff 函式 |Microsoft Docs
+title: SccDiff 功能 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52da17cbb7f6349d99a04709bbe469501394d4e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9b68df68ce7fa4ad5cbc98db256204ddf8623d2c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327509"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701027"
 ---
-# <a name="sccdiff-function"></a>SccDiff 函式
-此函式會顯示 （或選擇性地只會檢查） 目前的檔案 （位於本機磁碟上） 和最後一個簽入版本之間的差異，即可在來源控制系統。
+# <a name="sccdiff-function"></a>SccDiff 函數
+此函數顯示(或可選地只檢查)當前檔(本地磁碟上)與其在原始程式碼管理系統中的最後簽入版本之間的差異。
 
 ## <a name="syntax"></a>語法
 
@@ -37,55 +37,55 @@ SCCRTN SccDiff(
 ### <a name="parameters"></a>參數
  pvContext
 
-[in]原始檔控制外掛程式的內容結構。
+[在]原始程式碼管理外掛程式上下文結構。
 
  hWnd
 
-[in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。
+[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
 
- lpFileName
+ lpFile 名稱
 
-[in]差異要求的檔案名稱。
+[在]請求差異的檔名。
 
  fOptions
 
-[in]命令的旗標。 如需詳細資訊，請參閱 < 備註 >。
+[在]命令標誌。 有關詳細資訊,請參閱備註。
 
  pvOptions
 
-[in]原始檔控制外掛程式特定選項。
+[在]原始程式碼管理外掛程式特定選項。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函數的源碼管理外掛程式實現應返回以下值之一:
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|工作複本和伺服器版本都相同。|
-|SCC_I_FILESDIFFERS|原始檔控制下的版本不同的工作複本。|
-|SCC_I_RELOADFILE|必須重新載入檔案或專案。|
-|SCC_E_FILENOTCONTROLLED|檔案不是原始檔控制之下。|
-|SCC_E_NOTAUTHORIZED|若要執行這項作業不允許的使用者。|
-|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。 建議使用重試。|
-|SCC_E_NONSPECIFICERROR|不明確的失敗;無法取得檔案的差異。|
-|SCC_E_FILENOTEXIST|找不到本機檔案。|
+|SCC_OK|工作副本和伺服器版本相同。|
+|SCC_I_FILESDIFFERS|工作副本與原始程式碼管理下的版本不同。|
+|SCC_I_RELOADFILE|需要重新載入檔或專案。|
+|SCC_E_FILENOTCONTROLLED|該檔不受原始程式碼管理。|
+|SCC_E_NOTAUTHORIZED|不允許使用者執行此操作。|
+|SCC_E_ACCESSFAILURE|訪問原始程式碼管理系統時出現問題,可能是由於網路或爭用問題。 建議重試。|
+|SCC_E_NONSPECIFICERROR|非特異性故障;未獲取文件差異。|
+|SCC_E_FILENOTEXIST|找不到本地檔。|
 
 ## <a name="remarks"></a>備註
- 此函式有兩種不同的用途。 根據預設，它顯示檔案的變更清單。 原始檔控制外掛程式會自己的視窗中，開啟任何格式，它會選擇，以顯示在磁碟上的使用者的檔案與原始檔控制下的檔案的最新版本之間的差異。
+ 此功能具有兩種不同的用途。 預設情況下,它顯示對檔的更改清單。 原始程式碼管理外掛程式以您選擇的任何格式打開自己的視窗,以顯示使用者在磁碟上的檔案與原始程式碼管理下檔案的最新版本之間的差異。
 
- 或者，IDE 可能只需要判斷檔案是否已變更。 比方說，IDE 可能需要判斷它是否安全地簽出檔案，而不通知使用者。 在此情況下，IDE 會傳入`SCC_DIFF_CONTENTS`旗標。 原始檔控制外掛程式必須檢查在磁碟上，逐位元組，針對原始檔控制檔案的檔案，並傳回值，指出兩個檔案是否不同，而不會向使用者顯示任何項目。
+ 或者,IDE 可能只需要確定檔是否已更改。 例如,IDE 可能需要確定在未通知用戶的情況下簽出檔是否安全。 在這種情況下,IDE 會傳遞`SCC_DIFF_CONTENTS`標誌 。 原始程式碼管理外掛程式必須對照源代碼管理的檔案檢查磁碟上的檔位元組,並返回一個值,指示兩個檔案是否不同而不向使用者顯示任何內容。
 
- 當做效能最佳化，原始檔控制外掛程式可能會使用總和檢查碼或而不是呼叫的逐位元組比較時間戳記為基礎的替代方案`SCC_DIFF_CONTENTS`： 這些形式的比較會很明顯地更快但較不可靠。 並非所有的原始檔控制系統可能會支援這些替代的比較方法，而外掛程式可能切換回內容比較。 所有的原始檔控制外掛程式至少必須支援的內容比較。
+ 作為性能優化,原始程式碼管理外掛程式可以使用基於校驗和或時間戳的替代方法,`SCC_DIFF_CONTENTS`而不是: 這些比較形式顯然更快但不太可靠。 並非所有原始程式碼管理系統都支援這些替代比較方法,外掛程式可能必須回到內容比較。 所有原始程式碼管理外掛程式必須至少支援內容比較。
 
 > [!NOTE]
-> 快速差異旗標互斥。 能夠傳遞任何旗標，但同時傳遞多個無效。 `SCC_DIFF_QUICK_DIFF`這結合了所有的旗標的遮罩可以用來測試，但它應該永遠不會做為參數傳遞。
+> 快速差異標誌是互斥的。 不傳遞任何標誌是有效的,但同時傳遞多個標誌無效。 `SCC_DIFF_QUICK_DIFF`,這是一個包含所有標誌的掩碼,可用於測試,但絕不應作為參數傳遞。
 
 |`fOption`|意義|
 |---------------|-------------|
-|SCC_DIFF_IGNORECASE|（可能會用來快速或視覺效果的差異） 的不區分大小寫比較。|
-|SCC_DIFF_IGNORESPACE|會忽略泛空白字元 （可能會用來快速或視覺效果的差異）。|
-|SCC_DIFF_QD_CONTENTS|以無訊息方式比較檔案，也就是逐位元組。|
-|SCC_DIFF_QD_CHECKSUM|以無訊息模式會透過總和檢查碼時支援檔案的比較。 如果不支援，會回復到的內容比較。|
-|SCC_DIFF_QD_TIME|以無訊息方式比較透過支援時，其時間戳記的檔案。 如果不支援，會回復到的內容比較。|
+|SCC_DIFF_IGNORECASE|區分大小寫的比較(可用於快速或視覺差異)。|
+|SCC_DIFF_IGNORESPACE|忽略空白(可用於快速或視覺差異)。|
+|SCC_DIFF_QD_CONTENTS|靜默比較檔,位元組位元組。|
+|SCC_DIFF_QD_CHECKSUM|在支援時,通過校驗和靜靜比較檔。 如果不支援,則回落到內容的比較。|
+|SCC_DIFF_QD_TIME|在支援時,通過時間戳悄悄地比較檔。 如果不支援,則回落到內容的比較。|
 
 ## <a name="see-also"></a>另請參閱
-- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)

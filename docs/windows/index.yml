@@ -10,15 +10,15 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 1c4358fb1ceef0773a29c6860ee7b670c2d021b1
-  ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+  ms.openlocfilehash: 6ec31d2881abbfe2ae55174ea3f3fb15fd34651f
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 02/15/2020
-  ms.locfileid: "77265564"
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "77904057"
 highlightedContent:
   items:
-  - title: 設定與安裝
+  - title: 設定及安裝
     itemType: download
     url: /visualstudio/install/install-visual-studio
   - title: 歡迎使用 Visual Studio IDE
@@ -50,7 +50,7 @@ conceptualContent:
     - text: 偵錯程式碼
       itemType: tutorial
       url: ../debugger/debugger-feature-tour.md
-    - text: 測試程式碼
+    - text: 測試您的程式碼
       itemType: tutorial
       url: ../test/getting-started-with-unit-testing.md
     - text: 在本機或雲端中存取資料
@@ -94,7 +94,7 @@ conceptualContent:
       itemType: quickstart
       url: /aspnet/core/tutorials/razor-pages/razor-pages-start
 tools:
-  title: 語言
+  title: Languages
   items:
   - title: C++
     imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
@@ -127,7 +127,7 @@ additionalContent:
     - title: 開發
       summary: 使用程式碼編輯器撰寫並管理您的程式碼。
       url: ../ide/index-writing-code.yml
-    - title: 組建
+    - title: Build
       summary: 編譯和建置您的原始程式碼。
       url: ../ide/compiling-and-building-in-visual-studio.md
     - title: 偵錯
@@ -148,9 +148,9 @@ additionalContent:
     - title: 測量效能
       summary: 識別瓶頸，並使用診斷工具將程式碼效能最佳化。
       url: ../profiling/index.yml
-    - title: 擴充
+    - title: Extend
       summary: 將您自己的功能加入至 Visual Studio IDE 來改善您的開發經驗。
-      url: ../extensibility/index.md
+      url: ../extensibility/index.yml
     - title: 資料
       summary: 建立連線到任何資料庫或服務，及任何位置 (本機或雲端) 的資料應用程式。
       url: ../data-tools/accessing-data-in-visual-studio.md
@@ -188,21 +188,21 @@ additionalContent:
         url: /cpp/windows/desktop-applications-visual-cpp
       - text: 使用 .NET 進行行動開發 (Xamarin)
         url: /xamarin/
-      - text: 使用 C++ 的行動裝置程式開發
+      - text: 使用 C++ 進行行動裝置開發
         url: /visualstudio/cross-platform/
       - text: 使用 JavaScript 的行動裝置程式開發
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
         note: (僅 Visual Studio 2017 與 2015)
-    - title: 遊戲
+    - title: 玩遊戲
       links:
       - text: 使用 Unity 的遊戲程式開發
         url: ../cross-platform/visual-studio-tools-for-unity.md
-      - text: 使用 C++ 的遊戲程式開發
+      - text: 使用 C++ 進行遊戲開發
         url: /windows/uwp/gaming/e2e
     - title: 其他工具組
       links:
       - text: Visual Studio 擴充功能開發
-        url: ../extensibility/index.md
+        url: ../extensibility/index.yml
       - text: 使用 C++ 的 Linux 程式開發
         url: /cpp/linux/
       - text: .NET Core 跨平台開發

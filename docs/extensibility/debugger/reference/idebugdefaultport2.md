@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2 | Microsoft Docs
+title: IDebug預設埠2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDefaultPort2 interface
 ms.assetid: 7b3452af-9a96-4c4c-9946-4339b72d3d7b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed38c530ee972e413ee98cc9d94f0f19a9b57069
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f560a3dabefb0a8dede6520dcd8fd47f609a7780
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351710"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732310"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
-這個介面會提供數種方法可以存取連接埠的伺服器和通知功能。
+此介面提供了幾種訪問埠伺服器和通知工具的方法。
 
 ## <a name="syntax"></a>語法
 
@@ -28,30 +28,30 @@ ms.locfileid: "66351710"
 IDebugDefaultPort2 : IDebugPort2
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- Visual Studio 會實作這個介面來代表存取程式的偵錯連接埠。 如果它會處理遠端偵錯自訂連接埠供應商也可以實作這個介面。
+## <a name="notes-for-implementers"></a>實施者說明
+ Visual Studio 實現此介面以表示用於訪問程式的調試埠。 如果自定義埠供應商處理遠端調試,也可以實現此介面。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 方法的引數[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面會提供這個介面。 呼叫[QueryInterface](/cpp/atl/queryinterface)上[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)介面也可以取得此介面。
+## <a name="notes-for-callers"></a>通話備註
+ [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面上的方法的參數提供此介面。 在[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)介面上調用[查詢介面](/cpp/atl/queryinterface)也可以獲取此介面。
 
-## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 中定義的方法除了[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)，這個介面會實作下列方法：
+## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
+ 除了[在 IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)中定義的方法之外,此介面還實現以下方法:
 
 |方法|描述|
 |------------|-----------------|
-|[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|從這個連接埠取得連接埠告知介面。|
-|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|主控此連接埠的伺服器中取得的介面。|
-|[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|判斷是否要將此連接埠執行本機電腦上。|
+|[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|從此埠獲取埠通知介面。|
+|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|獲取承載此埠的伺服器的介面。|
+|[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|確定此埠是否在本地電腦上運行。|
 
 ## <a name="remarks"></a>備註
- 名稱"`IDebugDefaultPort2`」 是一堆一點點，因為它不代表預設連接埠。 會將它稱為 「 IDebugPort3。 」
+ 名稱""`IDebugDefaultPort2`有點用錯,因為它不代表默認埠。 它可以稱為"IDebugPort3"
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

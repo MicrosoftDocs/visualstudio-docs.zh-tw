@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b4eb454f641b5bef7273464d605fb194f650790
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588560"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>設定 Visual Studio 作為 WIP 豁免應用程式
 
 [Windows 資訊保護](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (WIP) 可協助保護企業資料，使其不會從電子郵件、社交媒體和公用雲端之類不受企業控管的應用程式外洩。 WIP 可協助避免企業擁有的裝置與個人裝置發生意外的資料外洩情況，而且不需要變更環境或其他應用程式。
 
-已啟用 WIP 的應用程式應該會防止企業資料移至未受保護的網路位置，以及避免加密個人資料。 Visual Studio 不是已啟用的應用程式，因此除非您免除它，否則它並不適用於已啟用 WIP 的環境。 請遵循本文中的步驟來啟用 Visual Studio，以便在已啟用 WIP 的電腦上運作。
+已啟用** WIP 的應用程式應該會防止企業資料移至未受保護的網路位置，以及避免加密個人資料。 Visual Studio 不是已啟用的應用程式，因此除非您免除它，否則它並不適用於已啟用 WIP 的環境。 請遵循本文中的步驟來啟用 Visual Studio，以便在已啟用 WIP 的電腦上運作。
 
 ## <a name="configure-vs-as-a-wip-exempt-app"></a>設定 VS 作為 WIP 豁免應用程式
 
@@ -34,6 +34,6 @@ ms.locfileid: "75588560"
 
 若要指定 Visual Studio 可以存取您網路上企業資料的位置，請遵循這些[定義受保護應用程式可在其中尋找並傳送企業資料之位置的步驟](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data)。 若要停止 Windows 透過 IP 位址封鎖雲端資源的連線，請務必將 /\*AppCompat\*/ 字串新增至設定。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 WIP 的應用程式行為](/windows/security/information-protection/windows-information-protection/app-behavior-with-wip)

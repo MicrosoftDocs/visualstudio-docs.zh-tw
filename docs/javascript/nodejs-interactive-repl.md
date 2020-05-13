@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: faed930c60869010f740cf0a1e118a40299ce782
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62840654"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>使用 Node.js 互動式視窗
@@ -24,11 +24,11 @@ ms.locfileid: "62840654"
 
 ## <a name="open-the-interactive-window"></a>開啟互動式視窗
 
-若要開啟互動式視窗，請以滑鼠右鍵按一下 [方案總管] 中的 Node.js 專案節點，然後選取 [開啟 Node.js 互動式視窗]。
+若要開啟互動式視窗，請以滑鼠右鍵按一下 [方案總管] 中的 Node.js 專案節點，然後選取 [開啟 Node.js 互動式視窗]****。
 
 ![專案操作功能表中的 Node.js 互動式視窗](../javascript/media/interactivewindow-open-from-project.png)
 
-開啟 Node.js 互動式視窗的預設快速鍵是 **[CTRL] + K、N**。或者，您也可以從工具列選擇 [檢視] > [Windows] > [Node.js 互動式視窗] 來開啟視窗。
+打開 Node.js 交互視窗的預設短切鍵是 **[CTRL] = K、N**。或者，您可以通過選擇 **"查看** > **Windows** > **節點.js 互動式視窗**"從工具列打開視窗。
 
 ## <a name="use-the-repl"></a>使用 REPL
 
@@ -36,7 +36,7 @@ ms.locfileid: "62840654"
 
 ![Node.js 互動式視窗](../javascript/media/interactivewindow.png)
 
-互動式視窗具有數個內建命令，以點前置詞開頭以便與您宣告的任何 JavaScript 函式區別。 支援下列命令：
+互動式視窗具有數個內建命令，以點前置詞開頭以便與您宣告的任何 JavaScript 函式區別。 支援的命令如下：
 
 **.cls、.clear** 清除編輯視窗的內容，但不變更歷程記錄和執行內容。
 

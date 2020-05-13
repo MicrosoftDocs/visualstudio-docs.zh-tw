@@ -6,15 +6,15 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
 ms.openlocfilehash: dca21119a73c03b63a273f7b4c22d70ecdb2a583
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984678"
 ---
 # <a name="editor-behavior"></a>編輯器的行為
 
-可以設定編輯器的行為，讓程式碼在撰寫時即格式化。 這些動作設定於 [Visual Studio] > [喜好設定] > [文字編輯器] > [行為] 下，以下描述其中一些較常用的功能：
+可以設定編輯器的行為，讓程式碼在撰寫時即格式化。 這些操作設置在**Visual Studio >首選項>文字編輯器>行為**）下，下面將介紹一些較常用的功能：
 
 ![編輯器的行為選項](media/source-editor-image9.png)
 
@@ -29,6 +29,6 @@ ms.locfileid: "74984678"
 
 您也可以設定 XML、CSS、HTML 和 JSON 的格式化規則。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [程式碼樣式喜好設定 (Windows 上的 Visual Studio)](/visualstudio/ide/code-styles-and-quick-actions)

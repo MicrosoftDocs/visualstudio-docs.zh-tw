@@ -13,17 +13,17 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 9f31a3f7ae5e0e0ca4150d88870b9e48493bffcc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114955"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>在維護基底上時更新 Visual Studio
 
 我們會在其產品生命週期中經常更新 Visual Studio。 更新有兩種類型： 
 
-* **次要版本更新** (例如，16.0 至 16.1)，其中包含新的功能和元件。  
+* **例如**&mdash;，包含新功能和元件的 16.0 到&mdash;16.1 的次要版本更新。  
 * **服務更新** (例如 16.0.4 至 16.0.5)，其中僅包含重大問題的目標修正程式。
 
 企業系統管理員可以選擇將其用戶端保持在維護基準。 維護基準由維護更新支援，直到下一個維護基準發行過後一年。
@@ -48,7 +48,7 @@ ms.locfileid: "76114955"
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>透過網際網路安裝服務基準
 
-針對網際網路型安裝，請將 `--channelUri` 與不存在的通道資訊清單新增至用來啟動安裝程式的命令列。 這會禁止 Visual Studio 使用最新的可用版本進行更新。 以下為範例：
+針對網際網路型安裝，請將 `--channelUri` 與不存在的通道資訊清單新增至用來啟動安裝程式的命令列。 這會禁止 Visual Studio 使用最新的可用版本進行更新。 以下是範例：
 
 ```cmd
 vs_enterprise.exe --channelUri c:\doesnotexist.chman
@@ -80,12 +80,12 @@ vs_enterprise.exe --channelUri c:\doesnotexist.chman
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-* [安裝 Visual Studio](install-visual-studio.md)
+* [安裝視覺化工作室](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [使用命令列參數安裝視覺化工作室](use-command-line-parameters-to-install-visual-studio.md)
 * [用於偵測及管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)
 * [如何在回應檔中定義設定](automated-installation-with-response-file.md)
 * [控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
-* [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)
+* [視覺化工作室產品生命週期和服務](/visualstudio/releases/2019/servicing/)

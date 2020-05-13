@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode | Microsoft Docs
+title: IDebug程序發佈者2::取消發佈程序節點 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::UnpublishProgramNode
 ms.assetid: 57c7e6e1-b84e-4e14-ad83-cbbb64e2f526
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6c59f4df20be0836d42a5d88431401660d9d5bc0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ae2c3d9f3c9f6c500b10f580035312b2d045689a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343149"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721574"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-若要偵錯引擎 (DEs) 和工作階段的偵錯管理員 (SDM) 的可用性會從指定的程式節點。
+從可用性中刪除指定的程式節點以除錯引擎 (DEs) 和工作階段調試管理員 (SDM)。
 
 ## <a name="syntax"></a>語法
 
@@ -41,15 +41,15 @@ int UnpublishProgramNode(
 
 ## <a name="parameters"></a>參數
 `pProgramNode`\
-[in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，代表要移除之程式節點。
+[在]表示要刪除的程式節點的[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 移除之後，[程式] 節點不再可用來查詢程式資訊。
+ 刪除後,程式節點將不再可供查詢程序資訊。
 
- 若要讓程式節點，請呼叫[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)方法。
+ 要使程式節點可用,請調用[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)

@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1eb28d5a54af1708fa8d3ea7a12887174a15bb
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 102f46ec639719bb2bec70a38c6c7177c63793c1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579597"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632325"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
+
 設定全域執行緒計數，並將該計數指派給目前的執行緒。
 
 ## <a name="syntax"></a>語法
@@ -32,12 +33,15 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 ```
 
 #### <a name="parameters"></a>參數
-[輸入] `threadCount`
+
+[in] `threadCount`
 
  要使用的執行緒數目。
 
 ## <a name="return-value"></a>傳回值
+
  如已更新執行緒計數，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。
 
 ## <a name="requirements"></a>需求
- **標頭：** *FileTracker .h*
+
+ **標頭：** *FileTracker.h*

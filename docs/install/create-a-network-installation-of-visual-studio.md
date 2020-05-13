@@ -1,7 +1,7 @@
 ---
 title: 建立網路型安裝
 description: 了解如何建立網路安裝點以在企業內部署 Visual Studio。
-ms.date: 10/29/2019
+ms.date: 03/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115383"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759725"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
-一般而言，企業系統管理員會建立網路安裝點，以部署至用戶端工作站。 Visual Studio 設計為能讓您快取初始安裝之檔案以及單一資料夾的所有產品更新。 (這個程序也稱為「建立配置」)。
+一般而言，企業系統管理員會建立網路安裝點，以部署至用戶端工作站。 Visual Studio 設計為能讓您快取初始安裝之檔案以及單一資料夾的所有產品更新。 (這個程序也稱為「建立配置」__)。
 
 我們已完成這項作業，因此，用戶端工作站可以使用相同的網路位置來管理其安裝，即使它們尚未更新為最新的服務更新也是一樣。
 
@@ -33,44 +33,44 @@ ms.locfileid: "76115383"
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>下載 Visual Studio 啟動載入器
 
-下載您想要的 Visual Studio 版本的啟動載入器檔案。 請務必選擇 [**儲存**]，然後選擇 [**開啟資料夾**]。
+下載您想要的可視化工作室版本的引導程式檔。 請確保選擇 **「儲存**」,然後選擇 **「打開資料夾**」。
 
 ::: moniker range="vs-2017"
 
-若要取得 Visual Studio 2017 的啟動載入器，請參閱[Visual Studio 舊版](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
+要獲取 Visual Studio 2017 的引導者,請參閱[Visual Studio 早期版本的](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面,瞭解如何執行此操作的詳細資訊。
 
-您的安裝程式可執行檔&mdash;或更具體來說，啟動載入器檔案&mdash;應符合或類似下列其中一項。
+設置可執行檔&mdash;或更具體,引導程式&mdash;檔 應匹配或類似於以下檔之一。
 
-| 版本 | {2&gt;檔案名稱&lt;2} |
+| 版本 | 檔案名稱 |
 |-------------|-----------------------|
-|Visual Studio 企業版 | **vs_enterprise.exe** |
+|Visual Studio Enterprise | **vs_enterprise.exe** |
 |Visual Studio Professional | **vs_professional.exe** |
-|Visual Studio Build Tools   | **vs_buildtools .exe** |
+|Visual Studio Build Tools   | **vs_buildtools.exe** |
 
-其他支援的啟動載入器包括**vs_feedbackclient .exe**、 **vs_teamexplorer .exe**、 **vs_testagent .exe**、 **vs_testcontroller .exe**和**vs_testprofessional .exe**。
+其他支援的引導者包括vs_feedbackclient.exe、vs_teamexplorer.exe、vs_testagent.exe、vs_testcontroller.exe和**vs_testprofessional.exe。** **vs_feedbackclient.exe** **vs_teamexplorer.exe** **vs_testagent.exe** **vs_testcontroller.exe**
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-您的安裝程式可執行檔&mdash;或更明確，啟動載入器檔案&mdash;應符合或類似下列其中一項。
+設置可執行檔&mdash;或更具體,引導程式&mdash;檔 應匹配或類似於以下檔之一。
 
 |版本 | 下載|
 |-------------|-----------------------|
-|Visual Studio 企業版 | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
-| Visual Studio Build Tools   | [**vs_buildtools .exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
+| Visual Studio Build Tools   | [**vs_buildtools.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
-其他支援的啟動載入器包括[vs_teamexplorer .exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/4026077127d25d33789f3882998266946608d8ada378b6ed7c8fff8c07f3dde2/vs_TeamExplorer.exe)、 [vs_testagent .exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/1383bf8bcda3d0e986a2e42c14114aaea8a7b085d31aa0623c9f70b2bad130e4/vs_TestAgent.exe)和[vs_testcontroller .exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/54dcf24b76e7cd9fb8be0ac518a9dfba6daf18fe9b2aa1543411b1cda8820918/vs_TestController.exe)。
+其他支援的引導者包括[vs_teamexplorer.exe、vs_testagent.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/4026077127d25d33789f3882998266946608d8ada378b6ed7c8fff8c07f3dde2/vs_TeamExplorer.exe)和[vs_testcontroller.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/54dcf24b76e7cd9fb8be0ac518a9dfba6daf18fe9b2aa1543411b1cda8820918/vs_TestController.exe)。 [vs_testagent.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/1383bf8bcda3d0e986a2e42c14114aaea8a7b085d31aa0623c9f70b2bad130e4/vs_TestAgent.exe)
 
 ::: moniker-end
 
 >[!TIP]
->如果您先前已下載啟動載入器檔案，而且想要驗證其版本，以下說明。 在 Windows 中，開啟 [檔案瀏覽器]，以滑鼠右鍵按一下啟動載入器檔案，選擇 [**屬性**]，選擇 [**詳細資料**] 索引標籤，然後查看**產品版本**號碼。 若要將該號碼與 Visual Studio 的版本相符，請參閱[Visual Studio 組建編號和發行日期](visual-studio-build-numbers-and-release-dates.md)頁面。
+>如果您以前下載了一個引導程式檔,並希望驗證其版本,請介紹如何。 在 Windows 中,打開檔案資源管理器,右鍵單擊引導程式檔,選擇 **「屬性**」,選擇 **「詳細資訊**」選項卡,然後查看**產品版本**號。 要將該編號與 Visual Studio 版本相匹配,請參閱[Visual Studio 生成編號和發佈日期](visual-studio-build-numbers-and-release-dates.md)頁面。
 
 ## <a name="create-an-offline-installation-folder"></a>建立離線安裝資料夾
 
-您必須具有網際網路連線才能完成此步驟。 若要建立包含所有語言和所有功能的離線安裝，請使用類似下列其中一個範例的命令。
+您必須連接網際網路，才能完成此步驟。 要建立具有所有語言和所有功能的離線安裝,請使用類似於以下範例之一的命令。
 
    > [!IMPORTANT]
    > 完整的 Visual Studio 配置至少需要 35 GB 磁碟空間，且下載需要一些時間。 如需如何僅使用您想要安裝的元件來建立配置的詳細資料，請參閱[自訂網路配置](#customize-the-network-layout)一節。
@@ -90,7 +90,7 @@ ms.locfileid: "76115383"
 
 您可以修改 response.json，以設定安裝程式執行時所使用的預設值。  例如，您可以設定 `response.json` 檔案來自動選取所選的一組特定工作負載。 如需詳細資訊，請參閱[使用回應檔自動安裝 Visual Studio](automated-installation-with-response-file.md)。
 
-而且，如果您遇到 Visual Studio 啟動載入器發生問題，當您將它與回應 json 檔案配對時擲回錯誤，請參閱[當您安裝或使用 Visual Studio 時，針對網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)一節中的「無法從父進程剖析識別碼」一節，以取得執行作業的詳細資訊。
+此外,如果您在將 Visual Studio 引導器與回應.json 檔配對時遇到問題,[請參閱安裝或使用 Visual Studio 頁時疑難排解網路相關錯誤的](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)「無法解析 ID」部分,瞭解有關操作操作的詳細資訊。
 
 ## <a name="copy-the-layout-to-a-network-share"></a>將配置複製到網路共用
 
@@ -123,7 +123,7 @@ xcopy /e c:\VSLayout \\server\products\VS2019
 
 有數個選項可供您用來自訂網路配置。 您可以建立部分配置，以便只包含一組特定[語言地區設定](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)、[工作負載、元件，及其建議或選擇性相依性](workload-and-component-ids.md)。 如果您知道只會在用戶端工作站部署一部分的工作負載，這可能十分有用。 用於自訂配置的一般命令列參數包括：
 
-* `--add` 可指定[工作負載或元件識別碼](workload-and-component-ids.md)。 <br>如果使用 `--add`，則只會下載使用 `--add` 指定的工作負載和元件。  如未使用 `--add`，則會下載所有工作負載和元件。
+* `--add`以指定[工作負載或元件的號。](workload-and-component-ids.md) <br>如果使用 `--add`，則只會下載使用 `--add` 指定的工作負載和元件。  如未使用 `--add`，則會下載所有工作負載和元件。
 * `--includeRecommended` 可包含指定工作負載識別碼的所有建議元件
 * `--includeOptional` 可包含指定工作負載識別碼的所有建議和選擇性元件。
 * `--lang` 可指定[語言地區設定](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)。
@@ -231,14 +231,17 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 ::: moniker range="vs-2019"
 > [!IMPORTANT]
-> 針對離線安裝，如果您收到錯誤訊息，指出「找不到符合下列參數的產品」，請確定您使用的是16.3.5 或更新版本的 `--noweb` 參數。
+> 對於離線安裝,如果收到一條錯誤消息,指出「找不到與以下參數匹配的產品」,請確保將`--noweb`交換機與版本 16.3.5 或更高版本一起使用。
 >
 ::: moniker-end
 
 當您從配置進行安裝時，會從配置中取得已安裝的內容。 不過，如果您選取的元件不在配置中，則會從網際網路取得。  如果您想要防止 Visual Studio 安裝程式下載您配置中遺漏的任何內容，請使用 `--noWeb` 選項。 如果使用 `--noWeb`，而且配置遺失已選取要安裝的任何內容，則安裝程式會失敗。
 
+> [!TIP]
+> 如果要在非 Internet 連接的電腦上從離線來源安裝,請同時`--noWeb``--noUpdateInstaller`指定和選項。 前者阻止下載更新的工作負載、元件等。 後者阻止安裝程式從 Web 自我更新。
+
 > [!IMPORTANT]
-> `--noWeb` 選項不會阻止 Visual Studio 安裝程式檢查更新。 如需詳細資訊，請參閱[控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)頁面。
+> 該`--noWeb`選項不會阻止 Internet 電腦上的 Visual Studio 設置檢查更新。 如需詳細資訊，請參閱[控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)頁面。
 
 ### <a name="error-codes"></a>錯誤碼
 
@@ -257,9 +260,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > [!NOTE]
 > [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 所提供 Visual Studio 啟動載入器，會下載並安裝執行時可用的最新版 Visual Studio。
 >
-> 因此，如果您今天下載 Visual Studio「啟動載入器」，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
+> 因此，如果您今天下載 Visual Studio「啟動載入器」**，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
 >
-> 但是，如果您建立「配置」並從該配置進行安裝，則會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
+> 但是，如果您建立「配置」** 並從該配置進行安裝，則會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
 
 ::: moniker-end
 
@@ -268,29 +271,30 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > [!NOTE]
 > [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads) 所提供 Visual Studio 啟動載入器，會下載並安裝執行時可用的最新版 Visual Studio。
 >
-> 因此，如果您今天下載 Visual Studio「啟動載入器」，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
+> 因此，如果您今天下載 Visual Studio「啟動載入器」**，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
 >
-> 但是，如果您建立「配置」並從該配置進行安裝，則會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
+> 但是，如果您建立「配置」** 並從該配置進行安裝，則會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
 
 ::: moniker-end
 
-如果您需要建立舊版 Visual Studio 的配置，請前往 [https://my.visualstudio.com](https://my.visualstudio.com)，下載「固定」版本的 Visual Studio 啟動載入器。
+如果需要為舊版本的 Visual Studio 創建佈局,[https://my.visualstudio.com](https://my.visualstudio.com)請轉到 下載「固定」版本的 Visual Studio 引導器。
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>如何取得離線安裝程式的支援
 
 如果您的離線安裝發生問題，我們會想要進行了解。 告訴我們的最簡單方式就是使用[回報問題](../ide/how-to-report-a-problem-with-visual-studio.md)工具。 使用此工具時，您可以將我們所需的遙測和記錄檔傳送給我們，來協助我們診斷及修正問題。
 
-我們也提供[**即時聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (僅限英文) 支援選項，可回答有關安裝的相關問題。
+我們也提供[**安裝聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (僅限英文) 支援選項，可回答安裝的相關問題。
 
 我們也提供其他支援選項。 如需清單，請參閱我們的[意見反應](../ide/feedback-options.md)頁面。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 - [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)
-- [當您安裝或使用 Visual Studio 時，針對網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md)
+- [安裝或使用視覺化工作室時解決與網路相關的錯誤](troubleshooting-network-related-errors-in-visual-studio.md)
 - [控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
-- [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)
+- [視覺化工作室產品生命週期和服務](/visualstudio/releases/2019/servicing/)
 - [在維護基底上時更新 Visual Studio](update-servicing-baseline.md)
-- [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
+- [安裝 Visual Studio 離線安裝所需的憑證](install-certificates-for-visual-studio-offline.md)

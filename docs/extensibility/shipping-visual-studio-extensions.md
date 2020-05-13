@@ -1,5 +1,5 @@
 ---
-title: 推出 Visual Studio 擴充功能 |Microsoft Docs
+title: 運輸視覺工作室擴展 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,56 +7,56 @@ helpviewer_keywords:
 - deployment, VSIX
 - satellite DLLs, in VSIX packages
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55c85a11d8bfba90f142a82efcd6d78fb0122f22
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 767bb24bb5cb47f1af1452aa04ebdc91c778e284
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338374"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700116"
 ---
 # <a name="shipping-visual-studio-extensions"></a>推出 Visual Studio 延伸模組
-您完成開發您的擴充功能之後，您可以將它安裝在其他電腦上、 與朋友和同事，共用或 Visual Studio Marketplace 上發行它。 在本節中，我們說明您需要執行以發佈及維護您的延伸模組的所有項目： 使用.vsix 檔案、 發佈、 當地語系化，及更新。
+開發完擴展後,可以在其他計算機上安裝它,與朋友和同事共用它,或在可視化工作室應用商店上發佈。 在本節中,我們將解釋發佈和維護擴展程式所需的所有操作:使用 .vsix 檔、發佈、當地語系化和更新。
 
-## <a name="working-with-vsix-extensions"></a>使用 VSIX 擴充功能
- 您可以藉由建立空白的 VSIX 專案，並再新增另一個項目範本來建立 VSIX 擴充功能。 如需詳細資訊，請參閱 < [VSIX 專案範本](../extensibility/vsix-project-template.md)。
+## <a name="working-with-vsix-extensions"></a>使用 VSIX 延伸
+ 您可以通過創建空白 VSIX 專案,然後向其中添加不同的專案範本來創建 VSIX 擴展。 有關詳細資訊,請參閱[VSIX 專案樣本](../extensibility/vsix-project-template.md)。
 
- 您可以使用 VSIX 格式封裝專案範本、 項目範本，Vspackage，Managed Extensibility Framework (MEF) 元件，來**工具箱**控制項、 組件和自訂類型 （這包括自訂起始頁視覺效果Studio 2017)。 VSIX 格式使用檔案為基礎的部署。 如需 VSIX 封裝的詳細資訊，請參閱[VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)。
+ 您可以使用 VSIX 格式打包專案樣本、專案範本、VSPackage、託管擴展框架 (MEF) 元件、**工具箱**控制項、程式集和自訂類型(這包括 Visual Studio 2017 的自訂起始頁)。 VSIX 格式使用基於檔的部署。 有關 VSIX 套件的詳細資訊,請參閱[VSIX 套件的分析](../extensibility/anatomy-of-a-vsix-package.md)。
 
- VSIX 格式不支援安裝的程式碼片段。 它也不支援某些其他案例，例如寫入至全域組件快取 (GAC) 中，或系統登錄。 如果您需要寫入至 GAC 中，或是在安裝中的登錄，您必須使用 Windows 安裝程式。 如需詳細資訊，請參閱 <<c0> [ 準備擴充功能的 Windows Installer 部署](../extensibility/preparing-extensions-for-windows-installer-deployment.md)。
+ VSIX 格式不支援代碼段的安裝。 它還不支援某些其他方案,如寫入全域程式集緩存 (GAC) 或系統註冊表。 如果需要在安裝中寫入 GAC 或註冊表,則必須使用 Windows 安裝程式。 有關詳細資訊,請參閱為[Windows 安裝程式部署準備延伸](../extensibility/preparing-extensions-for-windows-installer-deployment.md)。
 
-## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>Visual Studio Marketplace 中發佈您的延伸模組
- 您可以將擴充散佈給其他人只要郵寄.vsix 檔案，或將放在伺服器上。 但很多人的手中取得您的程式碼的最佳方式是將它放在[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。 Visual Studio Marketplace 擴充功能可用於 Visual Studio 使用者透過**擴充功能和更新**。 如需詳細資訊，請參閱[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)。
+## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>將擴展發佈到可視化工作室市場
+ 只需將 .vsix 檔郵寄到其他人或放入伺服器,即可將擴展分發給其他人。 但是,讓你的代碼在很多人手中的最好方法是把它放到[視覺工作室市場](https://marketplace.visualstudio.com/vs)。 視覺工作室市場擴展可以通過**擴展和更新**提供給視覺工作室使用者。 如需詳細資訊，請參閱[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)。
 
- 如需示範如何上傳至 Visual Studio Marketplace 的延伸模組的完整範例，請參閱[逐步解說：發行 Visual Studio 擴充功能](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。
+ 有關演示如何將擴展上載到可視化工作室市場的完整示例,請參閱[演練:發佈可視化工作室擴展](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。
 
 ## <a name="private-galleries"></a>Private Galleries
- 當您開發控制項、 範本和工具，則您可以張貼到您內部網路上的私用組件庫與您的組織共用它們。 如需詳細資訊，請參閱[私用組件庫](../extensibility/private-galleries.md)。
+ 在開發控制項、樣本和工具時,可以透過將它們發布到 Intranet 上的專用庫來與組織共享它們。 如需詳細資訊，請參閱 [Private Galleries](../extensibility/private-galleries.md)。
 
-## <a name="localizing-your-extension"></a>當地語系化您的延伸模組
- 如果您計劃發行您的延伸模組，在不同的地區設定中，您應該考慮將它當地語系化。 如需相關資訊的說明，請參閱 <<c0> [ 當地語系化 VSIX 封裝](../extensibility/localizing-vsix-packages.md)。
+## <a name="localizing-your-extension"></a>本地化延伸
+ 如果您計劃在不同區域設置中發佈擴展,則應考慮本地化它。 有關相關內容的說明,請參閱[本地化 VSIX 套件](../extensibility/localizing-vsix-packages.md)。
 
-## <a name="updating-and-versioning-your-extension"></a>更新與版本控制您的延伸模組
- 發佈您的擴充功能之後，會出現一次當您需要更新它。 若要了解如何更新 Visual Studio Marketplace 發佈的延伸模組，請參閱[How to:更新擴充功能](../extensibility/how-to-update-a-visual-studio-extension.md)。
+## <a name="updating-and-versioning-your-extension"></a>更新並控制延伸
+ 發佈擴展后,總有一段時間需要更新它。 要瞭解如何更新已在可視化工作室應用商店上發佈的擴展,請參閱[如何:更新擴展](../extensibility/how-to-update-a-visual-studio-extension.md)。
 
- 您可以設定您的延伸模組，以支援多個版本的 Visual Studio。 如需詳細資訊，請參閱 <<c0> [ 支援多個版本的 Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)。
+ 您可以將擴展設定為支援多個版本的 Visual Studio。 有關詳細資訊,請參閱[支援可視化工作室的多個版本](../extensibility/supporting-multiple-versions-of-visual-studio.md)。
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|Title|描述|
 |-----------|-----------------|
-|[開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)|說明如何使用 VSIX 專案範本，若要安裝自訂專案範本。|
+|[開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)|說明如何使用 VSIX 專案範本安裝自定義專案範本。|
 |[VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)|描述 VSIX 套件的元件。|
-|[VSIX 專案範本](../extensibility/vsix-project-template.md)|提供有關如何封裝和發行延伸模組的逐步指示。|
-|[將 VSIX 封裝當地語系化](../extensibility/localizing-vsix-packages.md)|說明如何藉由使用 extension.vsixlangpack 檔案安裝程序提供當地語系化的文字。|
-|[如何：更新延伸模組](../extensibility/how-to-update-a-visual-studio-extension.md)|描述如何更新您的系統上的擴充功能，以及如何將更新部署至現有的 Visual Studio 擴充功能。|
-|[如何：將相依性新增至 VSIX 套件](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|描述如何將參考加入至 VSIX 部署封裝。|
-|[準備適用於 Windows Installer 部署的擴充功能](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|說明如何使用 Windows 安裝程式將延伸模組部署。|
-|[簽署 VSIX 封裝](../extensibility/signing-vsix-packages.md)|說明如何簽署 VSIX 封裝。|
-|[私用組件庫](../extensibility/private-galleries.md)|說明如何建立擴充功能私用組件庫。|
-|[支援多個 Visual Studio 版本](../extensibility/supporting-multiple-versions-of-visual-studio.md)|示範如何延伸模組支援多個版本的 Visual Studio。|
-|[尋找 Visual Studio](locating-visual-studio.md)|描述如何尋找自訂延伸模組部署的 Visual Studio 執行個體。|
+|[VSIX 專案範本](../extensibility/vsix-project-template.md)|提供有關如何打包和發佈擴展的分步說明。|
+|[將 VSIX 封裝當地語系化](../extensibility/localizing-vsix-packages.md)|說明如何使用擴展.vsixlangpack 檔案為安裝過程提供本地化文本。|
+|[如何：更新延伸模組](../extensibility/how-to-update-a-visual-studio-extension.md)|介紹如何更新系統上的擴展以及如何將更新部署到現有的 Visual Studio 擴展。|
+|[如何︰將相依性加入至 VSIX 封裝](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|描述如何添加對 VSIX 部署套件的引用。|
+|[準備適用於 Windows Installer 部署的延伸模組](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|說明如何使用 Windows 安裝程式部署擴展。|
+|[簽署 VSIX 封裝](../extensibility/signing-vsix-packages.md)|說明如何對 VSIX 包進行簽名。|
+|[私用組件庫](../extensibility/private-galleries.md)|說明如何為擴展創建專用庫。|
+|[支援多個 Visual Studio 版本](../extensibility/supporting-multiple-versions-of-visual-studio.md)|演示如何讓擴展支援多個版本的 Visual Studio。|
+|[尋找 Visual Studio](locating-visual-studio.md)|介紹如何查找用於自定義擴展部署的可視化工作室實例。|

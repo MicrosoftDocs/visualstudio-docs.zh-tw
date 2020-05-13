@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3745e1c2f300c860d281752a0bf81359806c5d5e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0ab604b23a99ab2dd62adca6076168fe264ab1b4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567394"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77630688"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment 工作
+
 從指定產生的程式碼片段來產生暫存程式碼檔。 不會刪除該檔案。
 
 ## <a name="parameters"></a>參數
+
  下表說明 `WriteCodeFragment` 工作的參數。
 
 |參數|描述|
@@ -37,8 +39,10 @@ ms.locfileid: "75567394"
 |`OutputFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 輸出參數。<br /><br /> 指定已產生檔案的路徑。 如果使用檔案名稱來設定此參數，則會在檔案名稱的前面加上目的地資料夾。 如果使用根設定它，則會忽略目的地資料夾。<br /><br /> 如果未設定此參數，輸出檔案名稱就是目的地資料夾、任意檔案名稱，以及所指定語言的預設副檔名。|
 
 ## <a name="remarks"></a>備註
- 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>請參閱
+ 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
+
+## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)

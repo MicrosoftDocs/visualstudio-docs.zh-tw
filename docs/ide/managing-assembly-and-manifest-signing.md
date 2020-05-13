@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f13df00059523ca87e720a999c596e203b20e49
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593677"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
@@ -29,7 +29,7 @@ ms.locfileid: "75593677"
 
 如需在 Visual Basic 和 C# 專案中簽署組件的資訊，請參閱[建立和使用強式名稱的組件](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies)。
 
-如需在專案中C++簽署元件的詳細資訊，請參閱[強式名稱元件（C++/cli）](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)。
+有關在C++專案中簽名程式集的資訊，請參閱[強命名程式集 （C++/CLI）。](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
 
 > [!NOTE]
 > 強式名稱簽章無法保護組件免受反向工程的威脅。 若要防止反向工程，請參閱 [Dotfuscator Community](dotfuscator/index.md)。
@@ -38,13 +38,13 @@ ms.locfileid: "75593677"
 
 您可以簽署 .NET 組件和應用程式資訊清單：
 
-- 可執行檔 ( *.exe*)
+- 可執行檔 (*.exe*)
 
-- 應用程式資訊清單 ( *.exe.manifest*)
+- 應用程式資訊清單 (*.exe.manifest*)
 
-- 部署資訊清單 ( *.application*)
+- 部署資訊清單 (*.application*)
 
-- 共用的元件組件 ( *.dll*)
+- 共用的元件組件 (*.dll*)
 
 簽署下列資產類型：
 
@@ -58,7 +58,7 @@ ms.locfileid: "75593677"
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>如何簽署 Visual Studio 中的組件
 
-使用 [專案屬性] 視窗的 [簽署] 索引標籤來簽署應用程式或元件 (以滑鼠右鍵按一下 [方案總管] 中的專案節點，然後選取 [屬性])。 選取 [簽署] 索引標籤，然後選取 [簽署組件] 核取方塊。
+使用 [專案屬性] 視窗的 [簽署]**** 索引標籤來簽署應用程式或元件 (以滑鼠右鍵按一下 [方案總管]**** 中的專案節點，然後選取 [屬性]****)。 選取 [簽署]**** 索引標籤，然後選取 [簽署組件]**** 核取方塊。
 
 指定金鑰檔。 如果您選擇建立新的金鑰檔，新的金鑰檔一律會使用 *.pfx* 格式建立。 您需要新檔案的名稱和密碼。
 
@@ -67,11 +67,11 @@ ms.locfileid: "75593677"
 
 您也可以指向已經建立的金錀。 如需建立金鑰的詳細資訊，請參閱[如何：建立公開/私密金鑰組](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)。
 
-如果您只能存取公開金鑰，您可以使用延遲簽署，稍後再指派金鑰。 選取 [僅延遲簽署] 核取方塊以啟用延遲簽署。 延遲簽署的專案不會執行，且無法進行偵錯。 不過，您可以搭配使用 [Sn.exe 強式名稱工具](/dotnet/framework/tools/sn-exe-strong-name-tool)與 `-Vr` 選項，在開發期間略過驗證。
+如果您只能存取公開金鑰，您可以使用延遲簽署，稍後再指派金鑰。 選取 [僅延遲簽署]**** 核取方塊以啟用延遲簽署。 延遲簽署的專案不會執行，且無法進行偵錯。 不過，您可以搭配使用 [Sn.exe 強式名稱工具](/dotnet/framework/tools/sn-exe-strong-name-tool)與 `-Vr` 選項，在開發期間略過驗證。
 
 如需簽署資訊清單的資訊，請參閱[如何：簽署應用程式和部署資訊清單](../ide/how-to-sign-application-and-deployment-manifests.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [強式名稱的組件](/dotnet/framework/app-domains/strong-named-assemblies)
+- [強命名程式集](/dotnet/framework/app-domains/strong-named-assemblies)
 - [強式名稱組件 (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

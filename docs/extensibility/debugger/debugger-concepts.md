@@ -1,51 +1,51 @@
 ---
-title: 偵錯工具概念 |Microsoft Docs
+title: 除錯器概念 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK]
 ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d9905281c83287b8b54f57a233c2056462226f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345926"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738990"
 ---
-# <a name="debugger-concepts"></a>偵錯工具概念
-若要建置 Visual Studio 偵錯封裝，您需要先熟悉中設計封裝所使用的架構概念。
+# <a name="debugger-concepts"></a>除錯器概念
+要構建 Visual Studio 調試包,您需要熟悉設計包時使用的體系結構概念。
 
 ## <a name="in-this-section"></a>本節內容
- [偵錯工作階段](../../extensibility/debugger/debug-session.md)說明工作階段的偵錯的架構中的角色。
+ [除錯工作階段](../../extensibility/debugger/debug-session.md)解釋會話在調試體系結構中的角色。
 
- [伺服器](../../extensibility/debugger/servers-visual-studio-sdk.md)哪一部伺服器是以同時為 abstract 和實體的條款中的偵錯架構的定義。
+ [伺服器](../../extensibility/debugger/servers-visual-studio-sdk.md)以抽象和物理術語定義伺服器在調試體系結構方面的內容。
 
- [連接埠供應商](../../extensibility/debugger/port-suppliers.md)哪些連接埠提供者是以偵錯架構的定義。
+ [港口供應商](../../extensibility/debugger/port-suppliers.md)定義埠供應商在調試體系結構方面的內容。
 
- [連接埠](../../extensibility/debugger/ports.md)哪些連接埠是以偵錯架構的定義。
+ [連接埠](../../extensibility/debugger/ports.md)定義埠在調試體系結構方面是什麼。
 
- [處理序](../../extensibility/debugger/processes.md)哪個處理程序是以偵錯架構的定義。
+ [流程](../../extensibility/debugger/processes.md)定義進程在調試體系結構方面是什麼。
 
- [程式節點](../../extensibility/debugger/program-nodes.md)定義以偵錯架構，包括如何，它能識別本身和它正在中執行的程序的程式節點。
+ [程式節點](../../extensibility/debugger/program-nodes.md)定義程式節點的調試體系結構,包括它如何標識自身及其正在運行的進程。
 
- [程式](../../extensibility/debugger/programs.md)定義偵錯架構方面的程式。
+ [排程](../../extensibility/debugger/programs.md)根據調試體系結構定義程式。
 
- [執行緒](../../extensibility/debugger/threads.md)定義偵錯架構方面的執行緒的特性。
+ [螺紋](../../extensibility/debugger/threads.md)定義線程在調試體系結構方面的特徵。
 
- [堆疊框架](../../extensibility/debugger/stack-frames.md)定義偵錯架構方面的堆疊框架。 堆疊框架是堆疊提供執行緒的執行內容的抽象概念。
+ [堆疊幀](../../extensibility/debugger/stack-frames.md)根據調試體系結構定義堆疊幀。 堆疊框架是提供線程執行上下文的堆疊的抽象。
 
- [模組](../../extensibility/debugger/modules.md)定義模組，以進行架構，為實體容器的程式碼，例如可執行檔或 DLL 的偵錯。
+ [模組](../../extensibility/debugger/modules.md)在調試體系結構方面,將模組定義為代碼的物理容器,如可執行檔或 DLL。
 
- [中斷點](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)定義三種中斷點類型 — 暫止、 繫結和錯誤，以偵錯架構。
+ [斷點](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)定義三種類型的斷點 - 掛起、綁定和錯誤 - 在除錯體系結構方面。
 
 ## <a name="related-sections"></a>相關章節
- [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)說明偵錯引擎 (DE) 的運作方式同時在程式碼、 文件，以及運算式評估內容中。 描述三個內容、 位置、 位置或評估與它相關的每個軸。
+ [除錯器上下文](../../extensibility/debugger/debugger-contexts.md)說明除錯引擎 (DE) 如何在程式碼、文件和運算式評估上下文中同時執行。 描述三個上下文中的每一個與它相關的位置、位置或評估。
 
- [偵錯工具元件](../../extensibility/debugger/debugger-components.md)提供 Visual Studio 偵錯元件，包括偵錯引擎 (DE)、 運算式評估工具 (EE) 和符號處理常式 (SH) 的概觀。
+ [除錯器元件](../../extensibility/debugger/debugger-components.md)提供可視化工作室調試元件的概述,其中包括調試引擎 (DE)、運算式賦值器 (EE) 和符號處理程式 (SH)。
 
- [偵錯工作](../../extensibility/debugger/debugging-tasks.md)包含各種偵錯工作，例如啟動程式和評估運算式的連結。
+ [除錯工作](../../extensibility/debugger/debugging-tasks.md)包含指向各種除錯任務的連結,例如啟動程式和評估運算式。

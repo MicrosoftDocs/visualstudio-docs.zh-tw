@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 499f335edabe77d001a1a2486e7b559abe6c7a8a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847295"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880334"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用實驗室環境進行開發
 
 實驗室環境是一個虛擬機器和實體電腦的集合，可用來開發和測試應用程式。 實驗室環境可以包含測試多層應用程式 (例如工作站、Web 伺服器和資料庫伺服器) 所需的多個角色。 此外，您可以使用建置-部署-測試工作流程搭配實驗室環境，將建置、部署和執行應用程式之自動化測試的流程自動化。
 
-* **使用測試計劃執行自動化測試** − 您可以執行自動化測試的集合，稱為「測試計劃」，並檢視進度。
+* **使用測試計劃執行自動化測試** − 您可以執行自動化測試的集合，稱為「測試計劃」**，並檢視進度。
 
 * **使用「建置、部署、測試」工作流程** − 您可以使用「建置、部署、測試」工作流程自動測試多層應用程式。 一般的範例是開始建置、將組建檔案部署到實驗室環境中的適當電腦，然後執行自動化測試的工作流程。 此外，您也可以排定以特定間隔執行工作流程。
 
@@ -30,9 +30,9 @@ ms.locfileid: "75847295"
 
 | 拓撲 | 描述 |
 |---|---|
-|![只有伺服器的拓撲](../media/topology_backend.png)| 此實驗室環境具有「伺服器拓撲」，這種拓撲經常用來在伺服器應用程式上執行手動測試，且允許測試者使用他們自己的用戶端電腦來確認環境中的 Bug。 在後端拓撲中，您的實驗室環境只包含伺服器。 當您使用這種拓撲類型時，通常會使用不屬於環境的用戶端電腦連接到實驗室環境中的伺服器。|
+|![只有伺服器的拓撲](../media/topology_backend.png)| 此實驗室環境具有「伺服器拓撲」**，這種拓撲經常用來在伺服器應用程式上執行手動測試，且允許測試者使用他們自己的用戶端電腦來確認環境中的 Bug。 在後端拓撲中，您的實驗室環境只包含伺服器。 當您使用這種拓撲類型時，通常會使用不屬於環境的用戶端電腦連接到實驗室環境中的伺服器。|
 |![雲端實驗室環境](../media/topology_cloud.png)| 此實驗室環境提供與_伺服器拓樸_類似的功能和特性，但移除在本機環境中執行實體或虛擬機器的需求，這樣可減少安裝時間、簡化維護工作，並將成本降至最低。 在 Microsoft Azure 這樣的雲端環境中，設定多個網站和虛擬機器，加上自訂的網路，快速且容易。|
-|![用戶端實驗室環境](../media/topology_clientserver.png)| 此實驗室環境具有「用戶端伺服器拓撲」，這種拓撲經常用來測試有伺服器和用戶端元件的應用程式。 在用戶端/伺服器拓撲中，用來測試應用程式的所有用戶端和伺服器電腦都在您的實驗室環境中。 當您使用此拓撲時，可以從影響測試的每台電腦收集測試資料。|
+|![用戶端實驗室環境](../media/topology_clientserver.png)| 此實驗室環境具有「用戶端伺服器拓撲」**，這種拓撲經常用來測試有伺服器和用戶端元件的應用程式。 在用戶端/伺服器拓撲中，用來測試應用程式的所有用戶端和伺服器電腦都在您的實驗室環境中。 當您使用此拓撲時，可以從影響測試的每台電腦收集測試資料。|
 
 | | |
 |---|---|
@@ -53,6 +53,7 @@ ms.locfileid: "75847295"
 
 如需詳細資訊，請參閱[使用建置或發行管理](use-build-or-rm-instead-of-lab-management.md)。
 
+::: moniker range="vs-2017"
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>使用 Microsoft Test Manager 的 Visual Studio Lab Management 功能
 
 當您使用 Visual Studio Enterprise Edition 時，可以使用 Microsoft Test Manager 的 Visual Studio Lab Management 功能來建立及管理實驗室環境。
@@ -92,23 +93,23 @@ Lab Management 會在您環境中的每部電腦上自動安裝測試代理程�
 
 標準環境和 SCVMM 環境支援許多相同的功能。 但是有一些重大差異要考慮。 下表比較標準環境和 SCVMM 環境中可用的功能。
 
-|Capability|SCVMM 環境|標準環境|
+|功能|SCVMM 環境|標準環境|
 |-|------------------------|-|
-|**測試**|||
-|執行手動測試|已支援|已支援|
-|執行自動程式碼 UI 及其他自動化測試|已支援|已支援|
-|使用診斷配接器提報大量 Bug|已支援|已支援|
+|**測試中**|||
+|執行手動測試|支援|支援|
+|執行自動程式碼 UI 及其他自動化測試|支援|支援|
+|使用診斷配接器提報大量 Bug|支援|支援|
 |**建置部署**|||
-|自動化建置-部署-測試工作流程|已支援|已支援|
+|自動化建置-部署-測試工作流程|支援|支援|
 |**環境建立和管理**|||
-|使用實體機器和虛擬機器|不支援|已支援|
-|使用協力廠商虛擬機器|不支援|已支援|
-|自動將測試代理程式安裝到實驗室環境中的電腦|已支援|已支援|
-|使用環境快照儲存和部署實驗室環境的狀態|已支援|不支援|
-|根據 VM 範本建立實驗室環境|已支援|不支援|
-|啟動/停止/快照環境|已支援|不支援|
-|使用 [環境檢視器] 連接到環境|已支援|已支援|
-|使用網路隔離同時執行多個環境複本|已支援|不支援|
+|使用實體機器和虛擬機器|不支援|支援|
+|使用協力廠商虛擬機器|不支援|支援|
+|自動將測試代理程式安裝到實驗室環境中的電腦|支援|支援|
+|使用環境快照儲存和部署實驗室環境的狀態|支援|不支援|
+|根據 VM 範本建立實驗室環境|支援|不支援|
+|啟動/停止/快照環境|支援|不支援|
+|使用 [環境檢視器] 連接到環境|支援|支援|
+|使用網路隔離同時執行多個環境複本|支援|不支援|
 
 ### <a name="lab-management-concepts"></a>Lab Management 概念
 
@@ -136,8 +137,9 @@ Lab Management 會在您環境中的每部電腦上自動安裝測試代理程�
 * [標準實驗室環境](https://msdn.microsoft.com/library/ee390842.aspx)
 * [SCVMM (虛擬) 環境](https://msdn.microsoft.com/library/ee943322.aspx)
 * [建立和使用網路隔離的環境](https://msdn.microsoft.com/library/ee518924.aspx)
+::: moniker-end
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [安裝和設定測試代理程式](../../test/lab-management/install-configure-test-agents.md)
 * [Visual Studio Lab Management 指南](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft Docs
+title: IDebugProgramNode2::GetHostMachineName_V7 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetHostMachineName_V7
 - IDebugProgramNode2::GetHostMachineNameIDebugProgramNode2::GetHostMachineName
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03b2566d2c93181439ddecb9d87c5da59b6e6090
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a8c328c83ebe52f842b1990debe07aed3fd764c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351137"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722079"
 ---
-# <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
+# <a name="idebugprogramnode2gethostmachinename_v7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
 > [!Note]
-> 已被取代。 請勿使用。
+> 廢棄。 請勿使用。
 
 ## <a name="syntax"></a>語法
 
@@ -44,16 +44,16 @@ int GetHostMachineName_V7 (
 ## <a name="parameters"></a>參數
 
 `pbstrHostMachineName`\
-[out]傳回在其中執行程式的電腦名稱。
+[出]返回運行程式的電腦的名稱。
 
 ## <a name="return-value"></a>傳回值
 
-實作應該一律傳回`E_NOTIMPL`。
+實現應始終返回`E_NOTIMPL`。
 
 ## <a name="remarks"></a>備註
 
 > [!WARNING]
-> 截至 Visual Studio 2005 中，這個方法不會再使用，並應該一律傳回`E_NOTIMPL`。
+> 自 Visual Studio 2005 起,此方法不再使用`E_NOTIMPL`,應始終返回 。
 
 ## <a name="see-also"></a>另請參閱
 

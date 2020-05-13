@@ -3,21 +3,22 @@ title: 追蹤使用者指派及處理訂單 | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: 深入了解系統管理員要追蹤使用者指派及處理訂單的責任。
-ms.openlocfilehash: bf7fcdb2fae2ad6d354c4320ec26c4f1025766dd
-ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
+ms.openlocfilehash: 200a6d5f83e762bb91451a0d8d7a1871afab4304
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76967329"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232691"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>追蹤使用者指派和處理訂單
 Visual Studio 訂用帳戶系統管理員應該要根據大量授權合約或 Microsoft 產品和服務合約中所述的時間表，追蹤 Visual Studio 使用量，並處理任何使用量增加而產生的訂單。 新的 Visual Studio 訂用帳戶系統管理入口網站提供可顯示可用和已使用之授權的實用追蹤器，進而簡化了此作業。
 
 ## <a name="maximum-usage"></a>使用量上限
-**在下列情況下，貴公司購買 Visual Studio 訂用帳戶的義務會立即生效：**
+**貴公司購買 Visual Studio 訂閱的義務在：**
 - 已將授權指派給使用者，**或**
 - 使用者會與 Visual Studio 軟體互動。
 
@@ -28,13 +29,19 @@ Visual Studio 訂用帳戶系統管理員應該要根據大量授權合約或 Mi
 - 如果從原始指派以來已經過 90 天，Visual Studio 訂用帳戶系統管理員就可以將某個訂閱者的訂用帳戶重新指派給另一個訂閱者。 
     > [!NOTE]
     > 若要避免虛高的使用量上限層級，請務必要先移除現有的訂用帳戶，再新增新的訂用帳戶。 
-- 為協助您監視組織的最大使用量，Visual Studio 訂用帳戶系統[管理入口網站](https://manage.visualstudio.com)中會出現 [[最高使用量](maximum-usage.md)] 報告。 
+- 為了説明您監視組織的最大使用方式，視覺化工作室[訂閱監管中心](https://manage.visualstudio.com)中有一個[最大使用方式](maximum-usage.md)報告。 
 
-## <a name="monthly-subscriptions-open-license-or-open-value"></a>每月訂閱、Open License 或開放值
-您可以透過 Open License 和 Open 值之類的程式或每月的 Visual Studio Marketplace 來指派訂閱。 如果是這樣，您必須在使用者 (員工或外部承包商) 開始與 Visual Studio 授權軟體進行互動的當月內處理額外使用者的訂單。
+## <a name="monthly-subscriptions-open-license-or-open-value"></a>每月訂閱、開放許可證或開放值
+您可能通過開放許可證和開放價值等程式或每月通過視覺化工作室市場分配訂閱。 如果是這樣，您必須在使用者 (員工或外部承包商) 開始與 Visual Studio 授權軟體進行互動的當月內處理額外使用者的訂單。
 
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Enterprise、MPSA 和 Select 合約
-Microsoft Enterprise 合約 (EA)、MPSA 及 Select Plus 合約可讓您隨著時間變化，靈活使用 Visual Studio 軟體並進行授權。 Visual Studio 系統管理員必須提出每年的實際訂單，才能將其軟體授權的最高可達合約期間所建立的使用量上限。
+Microsoft Enterprise 合約 (EA)、MPSA 及 Select Plus 合約可讓您隨著時間變化，靈活使用 Visual Studio 軟體並進行授權。 Visual Studio 管理員必須制定年度 True-Up 命令，以使其軟體許可證達到協定期間確定的最大使用量。
+
+## <a name="see-also"></a>另請參閱
+- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 深入了解系統管理員的責任：
@@ -43,7 +50,3 @@ Microsoft Enterprise 合約 (EA)、MPSA 及 Select Plus 合約可讓您隨著時
 - [管理大型小組及外部承攬人](manage-teams.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量
 
-## <a name="see-also"></a>請參閱
-- [Visual Studio 檔](/visualstudio/)
-- [Azure 文件](/azure/)
-- [Azure DevOps](/azure/devops/)

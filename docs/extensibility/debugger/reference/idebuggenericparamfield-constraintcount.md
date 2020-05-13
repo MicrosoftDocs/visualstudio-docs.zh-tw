@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericParamField::ConstraintCount | Microsoft Docs
+title: IDebugGenericParam欄位::約束計數 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - ConstraintCount
 - IDebugGenericParamField::ConstraintCount
 ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: de00e38fa02447217b30e4a6801001e2663798e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5a8f9809df0fa45021aab640bf3ff547efaa1576
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330449"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728072"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
-傳回與此泛型參數相關聯的條件約束的數目。
+返回與此泛型參數關聯的約束數。
 
 ## <a name="syntax"></a>語法
 
@@ -40,13 +40,13 @@ int ConstraintCount(
 
 ## <a name="parameters"></a>參數
 `pcConst`\
-[in、 out]這個欄位相關聯的條件約束數目。
+[進出]與此欄位關聯的約束數。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法，如**CDebugGenericParamFieldType**公開 （expose） 的物件[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。
+下面的範例展示如何為公開[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面的**CDebugGenericParamFieldType**物件實現此方法。
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::ConstraintCount(ULONG32* pcConst)

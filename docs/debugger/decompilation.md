@@ -1,5 +1,5 @@
 ---
-title: 在偵錯工具時反編譯 .NET 程式碼 |Microsoft Docs
+title: 調試時解編譯 .NET 代碼 |微軟文檔
 ms.date: 2/2/2020
 ms.topic: conceptual
 dev_langs:
@@ -13,102 +13,103 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 46c6110cb977e3a309f27fc5a014522494f18c9a
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.openlocfilehash: d63c05120842d52dd54359e128d0cc5f2a195817
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77506521"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508741"
 ---
-# <a name="generate-source-code-from-net-assemblies-while-debugging"></a>在進行偵錯工具時，從 .NET 元件產生原始程式碼
+# <a name="generate-source-code-from-net-assemblies-while-debugging"></a>調試時從 .NET 程式集生成原始程式碼
 
-在檢查 .NET 應用程式時，您可能會發現您想要查看您沒有的原始程式碼。 例如，在發生例外狀況時中斷，或使用呼叫堆疊來流覽至來源位置。
+調試 .NET 應用程式時，您可能會發現要查看沒有的原始程式碼。 例如，打破異常或使用呼叫堆疊導航到源位置。
 
 > [!NOTE]
-> * 原始程式碼產生（decompilation）僅適用于 .NET 應用程式，而且是以開放原始碼[ILSpy](https://github.com/icsharpcode/ILSpy)專案為基礎。
-> * Decompilation 僅適用于 Visual Studio 2019 16.5 和更新版本。
+> * 原始程式碼生成（解編譯）僅適用于 .NET 應用程式，並且基於開源[ILSpy](https://github.com/icsharpcode/ILSpy)專案。
+> * 解編譯僅在 Visual Studio 2019 16.5 及更高版本中提供。
+> * 將["禁止 Ildasm 屬性"屬性](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute)應用於程式集或模組可防止 Visual Studio 嘗試取消編譯。
 
-## <a name="generate-source-code"></a>產生原始程式碼
+## <a name="generate-source-code"></a>生成原始程式碼
 
-當您正在進行偵錯工具，但沒有可用的原始程式碼時，Visual Studio 顯示 [找**不到原始**碼] 檔，或如果您沒有元件的符號，則**不會載入任何符號**檔。 這兩個檔都有一個**反編譯**的C#原始程式碼選項，會產生目前位置的程式碼。 產生C#的程式碼就可以像任何其他原始程式碼一樣使用。 您可以查看程式碼、檢查變數、設定中斷點等等。
+當您正在調試且沒有原始程式碼可用時，Visual Studio 將顯示 **"源未找到"** 文檔，或者如果沒有程式集的符號"**已載入無符號"** 文檔。 這兩個文檔都有一個 **"去編譯"原始程式碼**選項，用於生成當前位置的 C# 代碼。 然後，可以使用生成的 C# 代碼，就像使用任何其他原始程式碼一樣。 您可以查看代碼、檢查變數、設置中斷點等。
 
-### <a name="no-symbols-loaded"></a>未載入任何符號
+### <a name="no-symbols-loaded"></a>未載入符號
 
-下圖顯示 [**未載入符號**] 訊息。
+下圖顯示了 **"無符號載入"** 消息。
 
-![未載入符號檔的螢幕擷取畫面](media/decompilation-no-symbol-found.png)
+![無符號載入文檔的螢幕截圖](media/decompilation-no-symbol-found.png)
 
-### <a name="source-not-found"></a>找不到來源
+### <a name="source-not-found"></a>未找到源
 
-下圖顯示 [**找不到來源**] 訊息。
+下圖顯示了 **"未找到源"** 消息。
 
-![找不到來原始檔案的螢幕擷取畫面](media/decompilation-no-source-found.png)
+![未找到來源文件的螢幕截圖](media/decompilation-no-source-found.png)
 
-## <a name="generate-and-embed-sources-for-an-assembly"></a>產生並內嵌元件的來源
+## <a name="generate-and-embed-sources-for-an-assembly"></a>生成和嵌入程式集的源
 
-除了產生特定位置的原始程式碼之外，您還可以產生指定之 .NET 元件的所有原始程式碼。 若要這麼做，請移至 [**模組**] 視窗，並從 .net 元件的內容功能表中，選取 [**反編譯原始程式碼**] 命令。 Visual Studio 會產生元件的符號檔，然後將來源內嵌到符號檔中。 在稍後的步驟中，您可以將內嵌的原始程式碼[解壓縮](#extract-and-view-the-embedded-source-code)。
+除了為特定位置生成原始程式碼外，還可以為給定的 .NET 程式集生成所有原始程式碼。 為此，請轉到**模組**視窗和 .NET 程式集的內容功能表，然後選擇 **"去編譯原始程式碼**"命令。 Visual Studio 為程式集生成符號檔，然後將源嵌入到符號檔中。 在後面的步驟中，可以[提取](#extract-and-view-the-embedded-source-code)嵌入的原始程式碼。
 
-![[模組] 視窗中具有反編譯來源命令之元件內容功能表的螢幕擷取畫面。](media/decompilation-decompile-source-code.png)
+![具有取消編譯源命令的模組視窗中程式集內容功能表的螢幕截圖。](media/decompilation-decompile-source-code.png)
 
-## <a name="extract-and-view-the-embedded-source-code"></a>將內嵌的原始程式碼解壓縮並加以查看
+## <a name="extract-and-view-the-embedded-source-code"></a>提取和查看嵌入的原始程式碼
 
-您可以使用 [**模組**] 視窗的內容功能表中的 [**解壓縮原始程式碼**] 命令，將內嵌在符號檔中的原始程式檔解壓縮。
+您可以使用 **"模組"** 視窗的內容功能表中的 **"提取原始程式碼"** 命令提取嵌入在符號檔中的原始檔案。
 
-![[模組] 視窗中具有 [解壓縮來源] 命令之元件內容功能表的螢幕擷取畫面。](media/decompilation-extract-source-code.png)
+![具有資料提取源命令的模組視窗中程式集內容功能表的螢幕截圖。](media/decompilation-extract-source-code.png)
 
-已解壓縮的來源檔案會以[其他](../ide/reference/miscellaneous-files.md)檔案的形式加入至方案中。 [其他檔案] 功能預設會在 Visual Studio 中關閉。 您可以從 **工具** > **選項**  > **環境** ** > ** 檔 中啟用此功能， > 在方案總管 核取方塊**中顯示其他**檔案 若未啟用這項功能，您將無法開啟已解壓縮的原始程式碼。
+提取的原始檔案將作為[雜項檔](../ide/reference/miscellaneous-files.md)添加到解決方案中。 預設情況下，在 Visual Studio 中，雜項檔功能處於關閉狀態。 您可以在 **"工具** > **選項** > **環境** > **Documents**文檔 > **在解決方案資源管理器"核取方塊中顯示"雜項檔**"中啟用此功能。 如果不啟用此功能，您將無法打開提取的原始程式碼。
 
-![啟用 [其他檔案] 選項之 [工具選項] 頁面的螢幕擷取畫面。](media/decompilation-tools-options-misc-files.png)
+![啟用了"雜項檔"選項的工具選項頁的螢幕截圖。](media/decompilation-tools-options-misc-files.png)
 
-已解壓縮的來源檔案會出現在**方案總管**的其他檔案中。
+提取的原始檔案將顯示在**解決方案資源管理器**中的雜項檔中。
 
-![具有其他檔案的方案瀏覽器螢幕擷取畫面。](media/decompilation-solution-explorer.png)
+![包含雜項檔的解決方案資源管理器的螢幕截圖。](media/decompilation-solution-explorer.png)
 
 ## <a name="known-limitations"></a>已知限制
 
 ### <a name="requires-break-mode"></a>需要中斷模式
 
-只有在偵錯工具處於中斷模式且應用程式已暫停時，才可以使用 decompilation 產生原始程式碼。 例如，Visual Studio 在達到中斷點或例外狀況時進入中斷模式。 您可以使用 [**全部中斷**] 命令（![中斷所有圖示](media/decompilation-break-all.png)），輕鬆地觸發下一次執行程式碼時中斷的 Visual Studio。
+僅當調試器處於中斷模式且應用程式暫停時，才可能使用解編譯生成原始程式碼。 例如，Visual Studio 在達到中斷點或異常時進入中斷模式。 您可以使用"**全部中斷"** 命令（斷開所有圖示![](media/decompilation-break-all.png)）輕鬆觸發 Visual Studio 以在下次運行代碼時中斷代碼。
 
-### <a name="decompilation-limitations"></a>Decompilation 限制
+### <a name="decompilation-limitations"></a>取消編譯限制
 
-從 .NET 元件中使用的中繼格式（IL）產生原始程式碼有一些固有的限制。 因此，產生的原始程式碼看起來不像原始的原始程式碼。 大部分的差異都是在執行時間不需要原始原始程式碼中資訊的地方。 例如，在執行時間不需要空白字元、批註和區域變數名稱等資訊。 建議您使用產生的來源來瞭解程式的執行方式，而不是原始原始程式碼的取代。
+從 .NET 程式集中使用的中間格式 （IL） 生成原始程式碼有一些固有的限制。 因此，生成的原始程式碼看起來不像原始原始程式碼。 大多數差異是在運行時不需要原始原始程式碼中的資訊的地方。 例如，運行時不需要空格、注釋和區域變數的名稱等資訊。 我們建議您使用生成的源來瞭解程式的執行方式，而不是作為原始原始程式碼的替換。
 
-### <a name="debug-optimized-or-release-assemblies"></a>Debug 優化或發行元件
+### <a name="debug-optimized-or-release-assemblies"></a>調試優化或釋放程式集
 
-當您從使用編譯器優化編譯的元件進行反向組譯的程式碼時，可能會遇到下列問題：
-- 中斷點不一定會系結至相符的來源位置。
-- 逐步執行可能不一定會逐步執行至正確的位置。
-- 本機變數的名稱不能正確。
-- 某些變數可能無法供評估。
+調試從使用編譯器優化編譯的程式集中解編譯的代碼時，可能會遇到以下問題：
+- 中斷點可能並不總是綁定到匹配的採購位置。
+- 步進可能並不總是步進到正確的位置。
+- 區域變數可能沒有準確的名稱。
+- 某些變數可能可用於評估。
 
-如需更多詳細資料，請參閱 GitHub 問題： [ICSharpCode. 解編程式整合至 VS 偵錯工具](https://github.com/icsharpcode/ILSpy/issues/1901)。
+更多詳細資訊請參閱 GitHub 問題[：ICSharpCode.De編譯器集成到 VS 調試器](https://github.com/icsharpcode/ILSpy/issues/1901)中。
 
-### <a name="decompilation-reliability"></a>Decompilation 可靠性
+### <a name="decompilation-reliability"></a>取消編譯可靠性
 
-相對較小的 decompilation 嘗試百分比可能會導致失敗。 這是因為 ILSpy 中的序列點 null 參考錯誤。  我們已藉由攔截這些問題並正常地將 decompilation 嘗試失敗，以減輕失敗。
+相對較少的取消編譯嘗試可能會導致失敗。 這是由於 ILSpy 中的序列點 null 引用錯誤。  我們通過抓住這些問題並優雅地失敗刪除編譯嘗試來減輕失敗。
 
-如需更多詳細資料，請參閱 GitHub 問題： [ICSharpCode. 解編程式整合至 VS 偵錯工具](https://github.com/icsharpcode/ILSpy/issues/1901)。
+更多詳細資訊請參閱 GitHub 問題[：ICSharpCode.De編譯器集成到 VS 調試器](https://github.com/icsharpcode/ILSpy/issues/1901)中。
 
-### <a name="limitations-with-async-code"></a>非同步程式碼的限制
+### <a name="limitations-with-async-code"></a>不同步代碼的限制
 
-具有 async/await 程式碼模式之反向組譯模組的結果可能不完整或完全失敗。 非同步/等候和產生狀態機器的 ILSpy 實作為僅部分實行。 
+使用非同步/等待代碼模式取消編譯模組的結果可能不完整或完全失敗。 只部分實現了非同步/await 和屈服狀態機的 ILSpy 實現。 
 
-如需更多詳細資料，請參閱 GitHub 問題： PDB 產生器[狀態](https://github.com/icsharpcode/ILSpy/issues/1422)。
+更多詳細資訊可在 GitHub 問題中找到[：PDB 產生器狀態](https://github.com/icsharpcode/ILSpy/issues/1422)。
 
 ### <a name="just-my-code"></a>Just My Code
 
-[Just My Code （JMC）](https://docs.microsoft.com/visualstudio/debugger/just-my-code)設定可讓 Visual Studio 逐步執行系統、架構、程式庫和其他非使用者呼叫。 在偵測會話期間，[**模組**] 視窗會顯示偵錯工具視為 My Code （使用者程式碼）所使用的程式碼模組。
+["僅我的代碼 （JMC）"](https://docs.microsoft.com/visualstudio/debugger/just-my-code)設置允許 Visual Studio 跨跨系統、框架、庫和其他非使用者呼叫。 在調試會話期間，"**模組"** 視窗顯示調試器將哪些代碼模組視為"我的代碼"（使用者代碼）。
 
-優化或發行模組的 Decompilation 會產生非使用者程式碼。 例如，如果偵錯工具在您反向組譯的非使用者程式碼中中斷，則不會顯示 [**任何來源**] 視窗。 若要停用 Just My Code，請流覽至 [**工具**] [ > **選項**] （或 **[** **Debug** > **選項**] **） > debug** > General，然後取消選取 [**啟用 Just My Code**]。
+取消編譯優化或發佈模組會產生非使用者代碼。 例如，如果調試器在已編譯的非使用者代碼中中斷，則會出現 **"無源"** 視窗。 要禁用"僅我的代碼"，請導航到 **"工具** > **選項**"（或**調試** > **選項**）>**調試** > **常規**，然後取消選擇**僅啟用我的代碼**。
 
-### <a name="extracted-sources"></a>已解壓縮的來源
+### <a name="extracted-sources"></a>提取的源
 
-從元件解壓縮的原始程式碼具有下列限制：
-- 無法設定所產生檔案的名稱和位置。
-- 這些檔案是暫時性的，而且會被 Visual Studio 刪除。
-- 檔案會放在單一資料夾，以及原始來源未使用的任何資料夾階層中。
-- 每個檔案的檔案名都包含檔案的總和檢查碼雜湊。
+從程式集中提取的原始程式碼具有以下限制：
+- 生成的檔的名稱和位置不可配置。
+- 這些檔是臨時的，將由 Visual Studio 刪除。
+- 這些檔放置在單個資料夾中，並且不使用原始源的任何資料夾層次結構。
+- 每個檔的檔案名包含檔的校驗和雜湊。
 
-### <a name="generated-code-is-c-only"></a>產生的程式C#代碼僅限
-Decompilation 只會在中C#產生原始程式碼檔。 沒有任何其他語言可產生檔案的選項。
+### <a name="generated-code-is-c-only"></a>生成的代碼僅為 C#
+解編譯僅在 C# 中生成原始程式碼檔。 沒有以任何其他語言生成檔的選項。

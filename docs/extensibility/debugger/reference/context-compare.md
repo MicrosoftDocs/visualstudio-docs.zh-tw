@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_COMPARE | Microsoft Docs
+title: CONTEXT_COMPARE |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28e81e8247e0ab7a7b2e972209805c8bcff053a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1c88b50644d1adda2dd0eaa3b74a828f9739d70b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346392"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737612"
 ---
-# <a name="contextcompare"></a>CONTEXT_COMPARE
-指定的準則來比較兩個記憶體內容。
+# <a name="context_compare"></a>CONTEXT_COMPARE
+指定比較兩個記憶體上下文的條件。
 
 ## <a name="syntax"></a>語法
 
@@ -58,44 +58,44 @@ public enum enum_CONTEXT_COMPARE {
 
 ## <a name="fields"></a>欄位
 `CONTEXT_EQUAL`\
-等於目標記憶體內容的清單中找到的第一個記憶體內容。
+在清單中尋找與目標記憶體上下文相等的第一個記憶體上下文。
 
 `CONTEXT_LESS_THAN`\
-小於目標記憶體內容的清單中找到的第一個記憶體內容。
+查找清單中的第一個記憶體上下文,該上下文小於目標記憶體上下文。
 
 `CONTEXT_GREATER_THAN`\
-大於目標記憶體內容的清單中找到的第一個記憶體內容。
+尋找清單中大於目標記憶體上下文的第一個記憶體上下文。
 
 `CONTEXT_LESS_THAN_OR_EQUAL`\
-小於或等於目標記憶體內容的清單中找到的第一個記憶體內容。
+尋找清單中小於或等於目標記憶體上下文的第一個記憶體上下文。
 
 `CONTEXT_GREATER_THAN_OR_EQUAL`\
-大於或等於目標記憶體內容的清單中找到的第一個記憶體內容。
+尋找清單中大於或等於目標記憶體上下文的第一個記憶體上下文。
 
 `CONTEXT_SAME_SCOPE`\
-位於相同的範圍內，做為目標的記憶體內容的清單中找到的第一個記憶體內容。
+尋找清單中與目標記憶體上下文位於同一作用域中的第一個記憶體上下文。
 
 `CONTEXT_SAME_FUNCTION`\
-在相同的函式，做為目標的記憶體範圍中的清單中找到的第一個記憶體內容。
+尋找清單中與目標記憶體作用域具有相同函數的第一個記憶體上下文。
 
 `CONTEXT_SAME_MODULE`\
-做為目標的記憶體內容相同的模組清單中找到的第一個記憶體內容。
+尋找清單中與目標記憶體上下文位於同一模組中的第一個記憶體上下文。
 
 `CONTEXT_SAME_PROCESS`\
-位於相同的程序，做為目標的記憶體內容的清單中找到的第一個記憶體內容。
+尋找清單中與目標記憶體上下文處於相同進程的第一個記憶體上下文。
 
 ## <a name="remarks"></a>備註
-作為引數[比較](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)方法。
+作為參數傳遞給[比較](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)方法。
 
-這些值用來尋找符合指定的比較準則的清單中的第一個記憶體內容。 記憶體內容給記憶體內容的清單比較自行針對透過`IDebugMemoryContext2::Compare`方法。 在清單中的比較運算子的第一個記憶體內容`true`再傳回。
+這些值用於查找清單中滿足指定比較條件的第一個記憶體上下文。 為記憶體上下文提供記憶體上下文的清單,以便通過方法`IDebugMemoryContext2::Compare`比較自身。 然後返回清單中的第一個記憶體上下文,`true`然後返回比較運算符。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+- [比較](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

@@ -1,58 +1,58 @@
 ---
-title: HOW TO：開啟編輯器開啟的文件 |Microsoft Docs
+title: 如何:打開開啟文件的編輯器 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8342947681bcd8f698c2a646e917b353ec6c9dd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03d0986573ac0d53427f6490370be2bfa1c4cbe7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319319"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710919"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>HOW TO：開啟編輯器開啟的文件
-開啟的文件視窗的專案之前，專案首先必須決定檔案是否已開啟另一個編輯器的文件視窗中。 檔案可以在專案特定的編輯器中，請開啟，或其中一個標準編輯器向[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
+# <a name="how-to-open-editors-for-open-documents"></a>如何:開啟開啟文件的編輯器
+在項目打開文件視窗之前,專案首先必須確定該檔是否已在另一個編輯器的文檔視窗中打開。 這個檔案可以在特定於項目的編輯器中開啟,也可以在中註冊的標準編輯器之一開啟[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
 
-## <a name="open-a-project-specific-editor"></a>開啟專案特定編輯器
- 您可以使用下列程序來開啟專案特定的編輯器已開啟的檔案。
+## <a name="open-a-project-specific-editor"></a>開啟特定於項目的編輯器
+ 使用以下過程為已打開的文件打開特定於專案的編輯器。
 
-### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>若要開啟專案特定的編輯器開啟的檔案
+### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>開啟檔案開啟特定於項目的編輯器
 
 1. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> 方法。
 
-    此呼叫會傳回指標的文件階層、 階層項目，以及視窗框架中，如果適用的話。
+    如果適用,此調用返回指向文檔層次結構、層次結構項和視窗框架的指標。
 
-2. 如果文件開啟時，專案必須檢查是否只有文件資料物件存在，或如果文件檢視物件也會出現。
+2. 如果文件處於打開狀態,則項目必須檢查是否存在文檔數據物件,或者文檔檢視物件是否也存在。
 
-   - 如果文件檢視物件存在，此檢視會針對不同的階層或階層項目，專案會使用檢視的視窗框架指標 resurface 現有的視窗。
+   - 如果存在文件檢視物件,並且此檢視用於其他層次結構或層次結構項,則專案使用指向視圖視窗框架的指標重新顯示現有視窗。
 
-   - 如果文件檢視物件存在，此檢視位於相同的階層和階層項目，專案可以開啟第二個檢視，如果它可以附加至基礎的文件資料物件。 否則，專案也應該使用檢視的視窗框架的指標，來 resurface 現有的視窗。
+   - 如果存在文件檢視物件,並且此視圖適用於同一層次結構和層次結構項,則如果專案可以附加到基礎文檔數據物件,則可以打開第二個檢視。 否則,專案應使用指向檢視視窗框架的指標重新顯示現有視窗。
 
-   - 如果只有文件資料物件存在時，專案應該判斷是否可以使用其檢視文件資料物件。 如果相容的文件資料物件，完成步驟所述[開啟專案特定編輯器](../extensibility/how-to-open-project-specific-editors.md)。
+   - 如果僅存在文件數據物件,則專案應確定是否可以將文檔數據物件用於其檢視。 如果文件資料物件相容,則完成[打開特定於專案的編輯器](../extensibility/how-to-open-project-specific-editors.md)中討論的步驟。
 
-     如果文件資料物件不相容，應該會顯示錯誤，指出檔案正在使用中的使用者。 這個錯誤應該只在暫時的情況下，顯示，例如使用者正在同時編譯檔案時嘗試開啟檔案，而不使用編輯器[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心文字編輯器。 核心文字編輯器可以分享編譯器的文件資料物件。
+     如果文件數據物件不相容,則應向使用者顯示指示檔當前正在使用的錯誤。 此錯誤應僅在暫態情況下顯示,例如當用戶嘗試使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心文本編輯器以外的編輯器打開檔的同時編譯檔時。 核心文字編輯器可以與編譯器共享文檔數據物件。
 
-3. 如果文件不是開啟的因為沒有任何文件資料物件或文件檢視物件，完成中的步驟[開啟專案特定編輯器](../extensibility/how-to-open-project-specific-editors.md)。
+3. 如果文件由於沒有文件資料物件或文檔檢視物件而未打開,則完成[「打開特定於項目的編輯器」](../extensibility/how-to-open-project-specific-editors.md)中的步驟。
 
 ## <a name="open-a-standard-editor"></a>開啟標準編輯器
- 使用下列程序，若要開啟的檔案已存在的標準編輯器開啟。
+ 使用以下過程為已打開的文件打開標準編輯器。
 
-### <a name="to-open-a-standard-editor-for-an-open-file"></a>若要開啟 開啟檔案的標準編輯器
+### <a name="to-open-a-standard-editor-for-an-open-file"></a>開啟檔案開啟標準編輯器
 
 1. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。
 
-     這個方法會先確認，文件尚未開啟藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>。 如果已開啟文件，則被 resurfaced 其編輯器視窗。
+     此方法首先通過調用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>驗證文檔尚未打開。 如果文件已打開,則其編輯器視窗將重新顯示。
 
-2. 如果文件尚未開啟，然後完成中的步驟[How to:開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)。
+2. 如果文件未打開,則完成[「如何打開標準編輯器](../extensibility/how-to-open-standard-editors.md)」中的步驟。
 
 ## <a name="see-also"></a>另請參閱
-- [開啟和儲存專案項目](../extensibility/internals/opening-and-saving-project-items.md)
-- [如何：開啟專案特定的編輯器](../extensibility/how-to-open-project-specific-editors.md)
-- [如何：開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)
+- [開啟與儲存項目項目](../extensibility/internals/opening-and-saving-project-items.md)
+- [如何:開啟特定於項目的編輯器](../extensibility/how-to-open-project-specific-editors.md)
+- [如何:開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 649f933c3d0fc2962ed0f7efc2ab09449bdd72ba
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180350"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444943"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
@@ -23,13 +23,13 @@ ms.locfileid: "70180350"
 
 ::: moniker range="vs-2017"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。 在安裝程式中，請務必選取 [Python 開發]  工作負載。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。 在安裝程式中，請務必選取 [Python 開發]**** 工作負載。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。 在安裝程式中，請務必選取 [Python 開發]  工作負載。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。 在安裝程式中，請務必選取 [Python 開發]**** 工作負載。
 
 ::: moniker-end
 
@@ -40,13 +40,13 @@ ms.locfileid: "70180350"
 ::: moniker range="vs-2017"
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列，依序選擇 [檔案] > [新增] > [專案]  。
+2. 從頂部功能表欄中,選擇 **「檔>」新>專案**"。
 
-3. 在 [新增專案]  對話方塊右上角的搜尋欄位中輸入 "Python Web Project"，選擇中間清單中的 [Web 專案]  ，提供像是 "HelloPython" 的專案名稱，然後選擇 [確定]  。
+3. 在 [新增專案]**** 對話方塊右上角的搜尋欄位中輸入 "Python Web Project"，選擇中間清單中的 [Web 專案]****，提供像是 "HelloPython" 的專案名稱，然後選擇 [確定]****。
 
     ![已選取 Python Web專案的 [新增專案] 對話方塊](media/quickstart-python-00-web-project.png)
 
-    如果您不使用 Python 專案範本，請執行 **Visual Studio 安裝程式**，選取 [更多]  >[修改]  ，再選取 [Python 開發]  工作負載，然後選取 [修改]  。
+    如果您不使用 Python 專案範本，請執行 **Visual Studio 安裝程式**，選取 [更多]**[修改]** > ****，再選取 [Python 開發]**** 工作負載，然後選取 [修改]****。
 
     ![Visual Studio 安裝程式中的 Python 開發工作負載](../python/media/installation-python-workload.png)
 
@@ -57,16 +57,16 @@ ms.locfileid: "70180350"
 
 ::: moniker range=">=vs-2019"
 1. 開啟 Visual Studio 2019。
-2. 在開始畫面選取 [建立新專案]  。
-3. 在 [建立新專案]  對話方塊的頂部搜尋欄位輸入 "Python web"，選擇中間清單內的 [Web 專案]  ，然後選取 [下一步]  ：
+2. 在開始畫面選取 [建立新專案]****。
+3. 在 [建立新專案]**** 對話方塊的頂部搜尋欄位輸入 "Python web"，選擇中間清單內的 [Web 專案]****，然後選取 [下一步]****：
 
     ![以選取的 Python Web 專案建立新專案畫面](media/quickstart-python-00-web-project-2019a.png)
 
-    如果您不使用 Python 專案範本，請執行 **Visual Studio 安裝程式**，選取 [更多]  >[修改]  ，再選取 [Python 開發]  工作負載，然後選取 [修改]  。
+    如果您不使用 Python 專案範本，請執行 **Visual Studio 安裝程式**，選取 [更多]**[修改]** > ****，再選取 [Python 開發]**** 工作負載，然後選取 [修改]****。
 
     ![Visual Studio 安裝程式中的 Python 開發工作負載](../python/media/installation-python-workload.png)
 
-4. 在隨後出現的 [設定新專案]  對話方塊中，輸入 "HelloPython" 作為**專案名稱**，並指定位置，然後選取 [建立]  。 (系統會自動設定**解決方案名稱**以符合**專案名稱**。)
+4. 在隨後出現的 [設定新專案]**** 對話方塊中，輸入 "HelloPython" 作為**專案名稱**，並指定位置，然後選取 [建立]****。 (系統會自動設定**解決方案名稱**以符合**專案名稱**。)
 
     ![設定新專案對話方塊](media/quickstart-python-00-web-project-2019b.png)
 
@@ -75,13 +75,13 @@ ms.locfileid: "70180350"
     ![顯示新建立之空專案的方案總管](media/quickstart-python-01-empty-project-2019.png)
 ::: moniker-end
 
-**問題：在 Visual Studio 中建立 Python 應用程式專案的優點為何？**
+**問題：在 Visual Studio 中為 Python 應用程式建立專案的優點為何？**
 
-**答**：Python 應用程式通常只使用資料夾與檔案來定義，但隨著應用程式變得越來越大，此簡單結構會變得相當麻煩，且可能牽涉到自動產生的檔案、Web 應用程式的 JavaScript 等。 Visual Studio 專案有利於管理此複雜部分。 專案 ( *.pyproj* 檔案) 會識別與您專案建立關聯的所有來源和內容檔案、包含每個檔案的組建資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式整理成邏輯元件。
+**解答**：Python 應用程式通常只使用資料夾與檔案來定義，但隨著應用程式變得越來越大，此簡單結構會變得相當麻煩，且可能牽涉到自動產生的檔案、Web 應用程式的 JavaScript 等。 Visual Studio 專案有利於管理此複雜部分。 專案 (*.pyproj* 檔案) 會識別與您專案建立關聯的所有來源和內容檔案、包含每個檔案的組建資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式整理成邏輯元件。
 
-**問題：顯示在 [方案總管] 中的「解決方案」是什麼？**
+**問題： 什麼是顯示在 [方案總管] 中的「解決方案」？**
 
-**答**：Visual Studio 解決方案是一個容器，可協助您以群組的方式來管理一或多個相關專案，以及儲存非專案特定的組態設定。 解決方案中的專案也可以彼此參考，這樣執行某一專案 (Python 應用程式) 會自動建立第二個專案 (例如 Python 應用程式中使用的 C++ 延伸模組)。
+**解答**：Visual Studio「解決方案」是容器，可協助您以群組的方式管理一或多個相關專案，以及儲存非專案特定的組態設定。 解決方案中的專案也可以彼此參考，這樣執行某一專案 (Python 應用程式) 會自動建立第二個專案 (例如 Python 應用程式中使用的 C++ 延伸模組)。
 
 ## <a name="install-the-flask-library"></a>安裝 Flask 程式庫
 
@@ -90,24 +90,24 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 在這裡，您會使用下列步驟將 Flask 程式庫安裝在 Visual Studio 用於此專案的預設「全域環境」。
 
 ::: moniker range="vs-2017"
-1. 請展開專案的 [Python 環境]  節點，以查看專案的預設環境。
+1. 請展開專案的 [Python 環境]**** 節點，以查看專案的預設環境。
 
     ![顯示預設環境的方案總管](media/quickstart-python-02-default-environment.png)
 
-2. 以滑鼠右鍵按一下環境並選取 [安裝 Python 套件]  。 此命令會開啟 [套件]  索引標籤上的 [Python 環境]  視窗。
+2. 右鍵按下環境並選擇**安裝 Python 套件**。 此命令會開啟 [套件]**** 索引標籤上的 [Python 環境]**** 視窗。
 
-3. 在 [搜尋] 欄位中輸入 "flask"，並選取 [pip install flask from PyPI]  \(從 PyPI 進行 pip 安裝 flask\)。 接受所有的系統管理員權限提示，並觀察 Visual Studio [輸出]  視窗的進度。 (當全域環境的 packages 資料夾位於受保護的區域內，例如 *C:\Program Files*，就會提示提高權限)。
+3. 在 [搜尋] 欄位中輸入 "flask"，並選取 [pip install flask from PyPI]**** \(從 PyPI 進行 pip 安裝 flask\)。 接受所有的系統管理員權限提示，並觀察 Visual Studio [輸出]**** 視窗的進度。 (當全域環境的 packages 資料夾位於受保護的區域內，例如 *C:\Program Files*，就會提示提高權限)。
 
     ![使用 pip install 安裝 Flask 程式庫](media/quickstart-python-03-install-package.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. 請展開專案的 [Python 環境]  節點，以查看專案的預設環境。
+1. 請展開專案的 [Python 環境]**** 節點，以查看專案的預設環境。
 
     ![顯示預設環境的方案總管](media/quickstart-python-02-default-environment-2019.png)
 
-2. 以滑鼠右鍵按一下環境並選取 [管理 Python 套件...]  。此命令會開啟 [套件 (PyPl)]  索引標籤上的 [Python 環境]  視窗。
+2. 右鍵單擊環境並選擇 **「管理 Python 包..."。** 此命令在 **「包 (PyPI)」** 選項卡上開啟**Python 環境**視窗。
 
-3. 在搜尋欄位中輸入 "flask"。 如果下方搜尋方塊出現 **Flask**，您即可跳過此步驟。 否則請選取 [執行命令：pip install flask]  。 接受所有的系統管理員權限提示，並觀察 Visual Studio [輸出]  視窗的進度。 (當全域環境的 packages 資料夾位於受保護的區域內，例如 *C:\Program Files*，就會提示提高權限)。
+3. 在搜尋欄位中輸入 "flask"。 如果下方搜尋方塊出現 **Flask**，您即可跳過此步驟。 否則請選取 [執行命令：pip install flask]****。 接受所有的系統管理員權限提示，並觀察 Visual Studio [輸出]**** 視窗的進度。 (當全域環境的 packages 資料夾位於受保護的區域內，例如 *C:\Program Files*，就會提示提高權限)。
 
     ![使用 pip install 安裝 Flask 程式庫](media/quickstart-python-03-install-package-2019.png)
 ::: moniker-end
@@ -126,15 +126,15 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 **問題：哪裡可以深入了解其他可用的 Python 套件？**
 
-**答**：請前往 [Python Package Index](https://pypi.org/) (Python 套件索引)。
+**解答**：瀏覽 [Python 套件索引](https://pypi.org/) \(英文\)。
 
 ## <a name="add-a-code-file"></a>新增程式碼檔案
 
 您現在準備好可新增一些 Python 程式碼來實作基本的 Web 應用程式。
 
-1. 在 [方案總管]  中，以滑鼠右鍵按一下專案，然後選取 [加入] > [新項目]  。
+1. 右鍵按一下**解決方案資源管理員**中的項目,然後選擇「**添加>新專案**」。
 
-1. 在出現的對話方塊中，選取 [空白 Python 檔案]  ，將其命名為 *app.py*，然後選取 [加入]  。 Visual Studio 會自動在編輯器視窗中開啟檔案。
+1. 在出現的對話方塊中，選取 [空白 Python 檔案]****，將其命名為 *app.py*，然後選取 [加入]****。 Visual Studio 會自動在編輯器視窗中開啟檔案。
 
 1. 將下列程式碼複製並貼入 *app.py*：
 
@@ -161,15 +161,15 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
         app.run('localhost', 4449)
     ```
 
-1. 您可能已經注意到 [加入] > [新項目]  對話方塊顯示可加入 Python 專案的許多其他類型的檔案，包括 Python 類別、Python 套件、Python 單元測試、*web.config* 檔案等等。 一般而言，這些項目範本 顧名思義是使用實用的未定案程式碼建立檔案的好方法。
+1. 您可能已經注意到,「**新增>新專案**」 對話框顯示許多可以添加到 Python 專案的其他類型檔,包括 Python 類別、Python 套件、Python 單元測試 *、Web.config*檔案等。 一般而言，這些項目範本 顧名思義是使用實用的未定案程式碼建立檔案的好方法。
 
 **問題：哪裡可以深入了解 Flask？**
 
-**答**：請從 [Flask Quickstart](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart) (Flask 快速入門) 開始參考 Flask 文件。
+**解答**：請參閱 Flask 文件，從 [Flask 快速入門](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart) \(英文\) 開始。
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 以滑鼠右鍵按一下 [方案總管]  中的 *app.py* ，然後選取 [設定為啟動檔案]  。 執行應用程式時，此命令會找出在 Python 中啟動的程式碼檔案。
+1. 以滑鼠右鍵按一下 [方案總管]**** 中的 *app.py* ，然後選取 [設定為啟動檔案]****。 執行應用程式時，此命令會找出在 Python 中啟動的程式碼檔案。
 
     ::: moniker range="vs-2017"
     ![在方案總管中設定專案的啟動檔](media/quickstart-python-05-set-as-startup-file.png)
@@ -178,11 +178,11 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
     ![在方案總管中設定專案的啟動檔](media/quickstart-python-05-set-as-startup-file-2019.png)
     ::: moniker-end
 
-2. 以滑鼠右鍵按一下 [方案總管]  中的專案，然後選取 [屬性]  。 然後選取 [偵錯]  索引標籤，將 [連接埠號碼]  屬性設定為 `4449`。 這個步驟可確保 Visual Studio 以 `localhost:4449` 啟動瀏覽器，以符合程式碼中的 `app.run` 引數。
+2. 右鍵按下**解決方案資源管理員**的項目並選擇**屬性**。 然後選取 [偵錯]**** 索引標籤，將 [連接埠號碼]**** 屬性設定為 `4449`。 這個步驟可確保 Visual Studio 以 `localhost:4449` 啟動瀏覽器，以符合程式碼中的 `app.run` 引數。
 
-3. 選取 [偵錯] > [啟動但不偵錯]  (**Ctrl**+**F5**)，這樣可以將所做的變更儲存至檔案並執行應用程式。
+3. 選擇**除錯>無需除錯即可啟動****(Ctrl**+**F5),** 它保存對檔的更改並執行應用程式。
 
-4. 命令視窗隨即出現並顯示訊息「* 在 <https://localhost:4449/> 中執行」，然後瀏覽器視窗應會開啟到 `localhost:4449`，您會看到訊息 "Hello, Python!" GET 要求也會出現在命令視窗中，狀態為 200。
+4. 出現一個指令視窗,消息**在\/Hth 執行:/localhost:4449**`localhost:4449`,瀏覽器視窗應 開啟到您看到消息「你好,Python! GET 要求也會出現在命令視窗中，狀態為 200。
 
     如果瀏覽器未自動開啟，請啟動您選擇的瀏覽器並瀏覽到 `localhost:4449`。
 
@@ -194,7 +194,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 **問題：啟動但不偵錯命令和開始偵錯之間有何差異？**
 
-**答**：您可以使用 [開始偵錯]  在 [Visual Studio 偵錯工具](../python/debugging-python-in-visual-studio.md)的內容中執行應用程式，讓您設定中斷點、檢查變數，以及逐行執行程式碼。 在偵錯工具中，應用程式可能會執行得較慢，原因是有各種不同的攔截程序在進行偵錯。 相反地，[開始偵錯]  會直接執行應用程式，就像是您從命令列執行它一樣，沒有任何偵錯內容，而且也會自動啟動瀏覽器並瀏覽到專案屬性的 [偵錯]  索引標籤中指定的 URL。
+**解答**：您使用 [開始偵錯]**** 在 [Visual Studio 偵錯工具](../python/debugging-python-in-visual-studio.md)的環境中執行應用程式，可讓您設定中斷點、檢查變數，以及一行一行地逐步執行程式碼。 在偵錯工具中，應用程式可能會執行得較慢，原因是有各種不同的攔截程序在進行偵錯。 相反地，[開始偵錯]**** 會直接執行應用程式，就像是您從命令列執行它一樣，沒有任何偵錯內容，而且也會自動啟動瀏覽器並瀏覽到專案屬性的 [偵錯]**** 索引標籤中指定的 URL。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -205,7 +205,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 因為您在本快速入門遵循的步驟都相當一般，您可能已經猜到可以且應該將它們自動化。 這類自動化就由 Visual Studio 專案範本負責。 如需建立類似於您在本文中所建立 Web 應用程式但使用較少步驟的示範，請檢閱[快速入門 - 使用範本建立 Python 專案](../python/quickstart-02-python-in-visual-studio-project-from-template.md)。
 
-若要繼續更完整的 Visual Studio Python 教學課程，包括使用互動式視窗、偵錯、資料視覺效果，以及使用 Git，請前往[教學課程：Visual Studio 中的 Python 入門](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)。
+若要繼續更完整的 Visual Studio Python 教學課程，包括使用互動式視窗、偵錯、資料視覺效果，以及使用 Git，請檢閱[教學課程：Visual Studio 中的 Python 使用者入門](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)。
 
 若要深入探索 Visual Studio 所提供的各項功能，請選取下列連結。
 

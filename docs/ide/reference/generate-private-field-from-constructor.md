@@ -1,43 +1,46 @@
 ---
-title: 從自構造函式產生私用欄位
-ms.date: 02/19/2020
+title: 從建構函式產生私人欄位
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ef4188216b669b30b7af9bd725ec432bcd0a774
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: 4eb5dd39d0fb2d4cd9ba8ade0d0408d6e36a4854
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527658"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094026"
 ---
-# <a name="generate-private-field-from-constructor"></a>從自構造函式產生私用欄位
+# <a name="generate-private-field-from-constructor"></a>從建構函式產生私人欄位
 
 此重構適用於： 
 
 - C# 
 
-**功能：** 從函式產生私用欄位。 
+- Visual Basic
 
-時機 **：** 您想要從函式快速新增私用欄位。
+**內容：** 從建構函式生成私有欄位。 
 
-**原因：** 撰寫私用欄位可能既耗時又重複。 使用此重構功能既快速，又可讓程式更加健全。
+**何時：** 您希望從建構函式快速添加私有欄位。
+
+**原因：** 編寫私有欄位可能既耗時又重複。 使用此重構功能既快速，又可讓程式更加健全。
 
 ## <a name="how-to"></a>操作方式 
 
-1. 將游標放在函式中的參數名稱上。
+1. 將游標放在建構函式中的參數名稱上。
 
-2. 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
+2. 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
    
-3. 選取 [**建立並初始化欄位**] 選項。
+3. 選擇"**創建和初始化欄位**"選項。
 
-   ![從自構造函式產生私用欄位](media/generate-private-field-from-constructor.png)
+   ![從建構函式產生私人欄位](media/generate-private-field-from-constructor.png)
 
 ## <a name="see-also"></a>另請參閱 
 
-- [重構](../refactoring-in-visual-studio.md)
+- [Refactoring](../refactoring-in-visual-studio.md)

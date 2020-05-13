@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::Next | Microsoft Docs
+title: IEnum調試模組2::下一個 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2::Next
 ms.assetid: 46b7ccad-b07b-4ec0-b3ce-13981ffab7e8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e5ce512cde85dd305b2d9efb360d805eddbba40e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7b4041f0082bb4a2789c9b9d707ad129f52f1f61
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350295"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716532"
 ---
 # <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
-從列舉中傳回下的一個項目集。
+從枚舉返回下一組元素。
 
 ## <a name="syntax"></a>語法
 
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>參數
 `celt`\
-[in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。
+[在]要檢索的元素數。 還指定`rgelt`數位的最大大小。
 
 `rgelt`\
-[in、 out]陣列[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)来填入的項目。
+[進出]要填充的[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)元素的陣列。
 
 `pceltFetched`\
-[out]傳回的項目數中實際傳回`rgelt`。
+[出]返回中`rgelt`實際返回的元素數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`更少的項目要求的數目可能會傳回; 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 如果`S_FALSE`返回的元素數少於請求的元素數,則返回;否則,返回錯誤代碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

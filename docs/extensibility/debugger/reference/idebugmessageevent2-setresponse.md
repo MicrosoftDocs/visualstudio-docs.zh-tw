@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::SetResponse |Microsoft Docs
+title: IDebug消息事件2::設置回應 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugMessageEvent2::SetResponse method
 - SetResponse method
 ms.assetid: 2a5e318d-3225-4abd-83f1-28323baff6c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 40d12bd15f496c41463aed231345a75a27301835
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc0ca743deac3e7e635d378f8172ddb4c7e39c72
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346872"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727387"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
-如果有的話，從訊息方塊，請設定所做出的回應。
+從消息框中設置回應(如果有)。
 
 ## <a name="syntax"></a>語法
 
@@ -42,10 +42,10 @@ int SetResponse( 
 
 ## <a name="parameters"></a>參數
 `dwResponse`\
-[in]指定回應中，使用 Win32 的慣例`MessageBox`函式。 請參閱[AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)函式，如需詳細資訊。
+[在]使用 Win32`MessageBox`函數的約定指定回應。 有關詳細資訊,請參閱[AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)功能。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)

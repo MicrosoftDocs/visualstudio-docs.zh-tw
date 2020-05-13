@@ -1,5 +1,5 @@
 ---
-title: POPDIRLISTFUNC | Microsoft Docs
+title: 波普迪利斯芬奇 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fef3ab783c736fd2573e8d9df1a513e25d37020
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 52a0c16af0e142bda8527c5244a22e0830ced9e0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326125"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702072"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
-這是提供給回呼函式[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)函式來更新目錄，以及 （選擇性） 若要了解它們在原始檔控制下的檔案名稱的集合。
+這是為[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)函數提供的回調函數,用於更新目錄和(可選)檔名的集合,以找出受原始程式碼管理。
 
- `POPDIRLISTFUNC`應該呼叫回呼，僅適用於這些目錄和檔案名稱 (在清單中指定給`SccPopulateDirList`函式)，實際上是在原始檔控制。
+ `POPDIRLISTFUNC`應僅對實際受原始程式碼管理的目錄和檔名(在提供`SccPopulateDirList`給函數的清單中)調用回調。
 
 ## <a name="signature"></a>簽章
 
@@ -37,29 +37,29 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="parameters"></a>參數
  pvCallerData
 
-[in]若要指定的使用者值[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)。
+[在]提供[SccpopulateDirlist 的使用者](../extensibility/sccpopulatedirlist-function.md)值 。
 
  bFolder
 
-[in]`TRUE`如果中的名稱`lpDirectoryOrFileName`是一個目錄中; 否則為名稱是檔名。
+[在]`TRUE`如果中`lpDirectoryOrFileName`的名稱是目錄;如果否則,名稱是檔名。
 
- lpDirectoryOrFileName
+ lpDirectoryOr檔案名稱
 
-[in]完整的本機路徑是在原始程式碼控制之下的目錄或檔案名稱。
+[在]目錄或檔名的完整本地路徑,由原始程式碼控制。
 
 ## <a name="return-value"></a>傳回值
- IDE 會傳回適當的錯誤程式碼：
+ IDE 傳回錯誤代碼:
 
 |值|描述|
 |-----------|-----------------|
 |SCC_OK|繼續處理。|
 |SCC_I_OPERATIONCANCELED|停止處理。|
-|SCC_E_xxx|任何適當的原始檔控制錯誤應該停止處理。|
+|SCC_E_xxx|任何適當的原始程式碼管理錯誤都應停止處理。|
 
 ## <a name="remarks"></a>備註
- 如果`fOptions`的參數`SccPopulateDirList`函式包含`SCC_PDL_INCLUDEFILES`旗標，則檔案名稱，以及目錄名稱，可能會包含清單。
+ 如果`fOptions``SccPopulateDirList`函數的參數`SCC_PDL_INCLUDEFILES`包含 標誌,則清單可能包含檔名和目錄名。
 
 ## <a name="see-also"></a>另請參閱
-- [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)
+- [IDE 實作的回檔](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)
 - [錯誤碼](../extensibility/error-codes.md)

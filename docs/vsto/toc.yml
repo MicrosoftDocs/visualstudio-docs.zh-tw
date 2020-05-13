@@ -6,9 +6,9 @@
       items:
         - name: 建立適用於 Office 的 VSTO 增益集
           href: create-vsto-add-ins-for-office-by-using-visual-studio.md
-        - name: 快速入門
+        - name: 開始使用
           items:
-            - name: 快速入門
+            - name: 開始使用
               href: getting-started-office-development-in-visual-studio.md
             - name: Office 方案開發概觀
               href: office-solutions-development-overview-vsto.md
@@ -794,6 +794,8 @@
               href: deploying-an-office-solution-by-using-clickonce.md
             - name: 使用 Windows Installer 部署 Office 方案
               href: deploying-an-office-solution-by-using-windows-installer.md
+            - name: 使用 Visual Studio Setup Projects 部署 Office 方案
+              href: deploying-a-vsto-solution-by-using-windows-installer.md
             - name: Office 方案部署疑難排解
               items:
                 - name: Office 方案部署疑難排解

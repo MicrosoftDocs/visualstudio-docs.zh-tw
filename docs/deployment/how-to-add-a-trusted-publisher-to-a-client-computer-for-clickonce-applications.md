@@ -1,5 +1,5 @@
 ---
-title: 將信任的發行者新增至 ClickOnce 應用程式的用戶端電腦
+title: 將受信任的發行者添加到用戶端電腦,用於 ClickOnce 應用
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a874415d35d08fe00989b034c0bd828dbb6d567
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 1423952405a31063ee88ce6fa1dfe0b75d80fe5d
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806889"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649209"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>如何：將新增信任的發行者新增至 ClickOnce 應用程式的用戶端電腦
 您可以使用信任的應用程式部署來設定用戶端電腦，以較高的信任等級執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，而不提示使用者。 下列程序示範如何使用命令列工具 CertMgr.exe 將發行者的憑證新增至用戶端電腦上的受信任發行者存放區。
@@ -38,7 +38,7 @@ ms.locfileid: "72806889"
 
 1. 從 CA 取得數位憑證。
 
-2. 將憑證匯出成 Base64 X.509 ( *.cer*) 格式。 如需憑證格式的詳細資訊，請參閱 [Export a certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)) (匯出憑證)。
+2. 將憑證匯出成 Base64 X.509 (*.cer*) 格式。 如需憑證格式的詳細資訊，請參閱 [Export a certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)) (匯出憑證)。
 
 3. 從用戶端電腦的命令提示字元中，執行下列命令：
 
@@ -48,7 +48,7 @@ ms.locfileid: "72806889"
 
 1. 從 CA 取得數位憑證。
 
-2. 將憑證匯出成 Base64 X.509 ( *.cer*) 格式。 如需憑證格式的詳細資訊，請參閱 [匯出憑證](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))。
+2. 將憑證匯出成 Base64 X.509 (*.cer*) 格式。 有關憑證格式的詳細資訊,請參閱[匯出憑證](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))。
 
 3. 從用戶端電腦的命令提示字元中，執行下列命令：
 
@@ -56,16 +56,16 @@ ms.locfileid: "72806889"
 
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**
 
-## <a name="see-also"></a>請參閱
-- [Walkthrough: Manually deploy a ClickOnce application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md) (逐步解說：手動部署 ClickOnce 應用程式)
+## <a name="see-also"></a>另請參閱
+- [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)
-- [Trusted application deployment overview](../deployment/trusted-application-deployment-overview.md) (信任的應用程式部署概觀)
-- [How to: Enable ClickOnce security settings](../deployment/how-to-enable-clickonce-security-settings.md) (如何：啟用 ClickOnce 安全性設定)
-- [How to: Set a security zone for a ClickOnce application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md) (如何：設定 ClickOnce 應用程式的安全性區域)
-- [如何：設定 ClickOnce 應用程式的自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [如何：以限制的權限對 ClickOnce 應用程式進行偵錯](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [How to: Add a trusted publisher to a client computer for ClickOnce applications](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md) (如何：將信任的發行者新增至 ClickOnce 應用程式的用戶端電腦)
+- [信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)
+- [How to: Enable ClickOnce security settings (如何：啟用 ClickOnce 安全性設定)](../deployment/how-to-enable-clickonce-security-settings.md)
+- [如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [How to: Set custom permissions for a ClickOnce application (如何：設定 ClickOnce 應用程式的自訂權限)](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [如何:除錯具有受限權限的 ClickOnce 應用程式](securing-clickonce-applications.md)
+- [如何：將新增信任的發行者新增至 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
 - [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
 - [How to: Configure the ClickOnce trust prompt behavior](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md) (如何：設定 ClickOnce 信任提示行為)

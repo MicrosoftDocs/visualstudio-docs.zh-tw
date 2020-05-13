@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591706"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>使用程式碼片段的最佳做法
@@ -31,7 +31,7 @@ ms.locfileid: "75591706"
 
 - 尋找可存取的位置。 使用者可能無法存取電腦的 *Program Files* 資料夾，因此應用程式檔案的存檔作業可能無法正常運作。
 
-- 尋找安全位置。 將檔案儲存在根資料夾 (*C:\\* ) 並不安全。 若是應用程式資料，建議儲存在 *Application Data* 資料夾。 若是個別使用者資料，應用程式可以在 *Documents* 資料夾中為每位使用者建立檔案。
+- 尋找安全位置。 將檔存儲在根資料夾 （*C：\\*） 中不安全。 對於應用程式資料，我們建議使用*應用程式資料*資料夾。 若是個別使用者資料，應用程式可以在 *Documents* 資料夾中為每位使用者建立檔案。
 
 - 使用有效的檔案名稱。 您可以使用 <xref:System.Windows.Forms.OpenFileDialog> 和 <xref:System.Windows.Forms.SaveFileDialog> 控制項，從而減少發生無效檔案名稱的可能性。 請注意，從使用者選取檔案到您的程式碼管理檔案的這段時間，檔案可能會遭到刪除。 此外，使用者可能沒有寫入檔案的權限。
 
@@ -45,7 +45,7 @@ ms.locfileid: "75591706"
 
 - 保護資源 (例如事件記錄檔、登錄)
 
-- 儲存密碼
+- 儲存祕密
 
 - 驗證輸入
 
@@ -67,7 +67,7 @@ Visual Studio 所安裝的 IntelliSense 程式碼片段本身並沒有安全性�
 
   - 程式碼片段可能包含以無訊息模式新增至專案，而且可能會從您系統上的任何位置載入的參考。 這些參考可能已從您下載程式碼片段的位置下載到您的電腦。 程式碼片段可能會接著呼叫參考中執行惡意程式碼的方法。 為了保護您自己免於遭受這類攻擊，請檢閱程式碼片段檔案的匯入和參考區塊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Basic IntelliSense 程式碼片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [保護應用程式](../ide/securing-applications.md)

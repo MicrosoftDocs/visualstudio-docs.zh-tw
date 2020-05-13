@@ -10,21 +10,21 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c739cc24d453ad4129d8cb7cc4bfbebec07aa4
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091817"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633716"
 ---
-# <a name="incremental-builds"></a>累加建置
+# <a name="incremental-builds"></a>累加組建
 
 累加組建是已最佳化的組置，因此不會執行輸出檔案與其相關對應輸入檔案為最新的目標。 目標項目可能有 `Inputs` 屬性可指出目標預期作為輸入的項目，以及 `Outputs` 屬性可指出它產生作為輸出的項目。 MSBuild 嘗試尋找這些屬性值之間的 1 對 1 對應。 如果具有 1 對 1 對應，MSBuild 會比較每個輸入項目的時間戳記與其對應輸出項目的時間戳記。 沒有 1 對 1 對應的輸出檔案會與所有輸入檔案進行比較。 如果項目的輸出檔與輸入檔同齡或是前者較新，該項目則可視為最新狀態。
 
 > [!NOTE]
-> 當 MSBuild 評估輸入檔時，只會考慮目前執行中清單的內容。 最後一次組建清單中的變更不會自動使目標過期。
+> 當 MSBuild 評估輸入檔時，只考慮當前執行中清單的內容。 上次生成清單中的更改不會自動使目標過期。
 
-如果所有輸出項目都是最新的，則 MSBuild 會跳過目標。 目標的這個「累加組建」可以大幅改善建置速度。 如果只有某些檔案是最新的，則 MSBuild 會執行目標，但跳過最新項目，進而讓所有項目都具有最新狀態。 此程序稱為「部分累加組建」。
+如果所有輸出項目都是最新的，則 MSBuild 會跳過目標。 目標的這個「累加組建」** 可以大幅改善建置速度。 如果只有某些檔案是最新的，則 MSBuild 會執行目標，但跳過最新項目，進而讓所有項目都具有最新狀態。 此程序稱為「部分累加組建」**。
 
 1 對 1 對應通常是透過項目轉換所產生。 如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。
 
@@ -42,7 +42,7 @@ ms.locfileid: "77091817"
 
 ## <a name="output-inference"></a>輸出推斷
 
-MSBuild 會比較目標的 `Inputs` 和 `Outputs` 屬性，以判斷是否必須執行目標。 在理想情況下，不論是否執行相關聯的目標，累加組建完成之後存在的檔案集應該都會維持不變。 因為工作所建立或改變的屬性和項目可能會影響組建，所以 MSBuild 必須推斷其值，即使跳過影響它們的目標也是一樣。 此程序稱為「輸出推斷」。
+MSBuild 會比較目標的 `Inputs` 和 `Outputs` 屬性，以判斷是否必須執行目標。 在理想情況下，不論是否執行相關聯的目標，累加組建完成之後存在的檔案集應該都會維持不變。 因為工作所建立或改變的屬性和項目可能會影響組建，所以 MSBuild 必須推斷其值，即使跳過影響它們的目標也是一樣。 此程序稱為「輸出推斷」**。
 
 有三種情況：
 
@@ -52,7 +52,7 @@ MSBuild 會比較目標的 `Inputs` 和 `Outputs` 屬性，以判斷是否必須
 
 - 目標沒有過期輸出，將會予以跳過。 MSBuild 會評估目標並變更項目和屬性，就像已執行目標一樣。
 
-若要支援累加編譯，工作必須確保任何 `TaskParameter` 項目的 `Output` 屬性值相當於工作輸入參數。 以下是一些範例：
+若要支援累加編譯，工作必須確保任何 `Output` 項目的 `TaskParameter` 屬性值相當於工作輸入參數。 以下是一些範例：
 
 ```xml
 <CreateProperty Value="123">
@@ -68,7 +68,7 @@ MSBuild 會比較目標的 `Inputs` 和 `Outputs` 屬性，以判斷是否必須
 
 ## <a name="determine-whether-a-target-has-been-run"></a>判斷是否已執行目標
 
-基於輸出推斷，您必須新增目標的 `CreateProperty` 工作來檢查屬性和項目，以判斷是否已執行目標。 將 `CreateProperty` 工作新增至目標，並為它提供其 `Output` 為 "ValueSetByTask" 的 `TaskParameter` 項目。
+基於輸出推斷，您必須新增目標的 `CreateProperty` 工作來檢查屬性和項目，以判斷是否已執行目標。 將 `CreateProperty` 工作新增至目標，並為它提供其 `TaskParameter` 為 "ValueSetByTask" 的 `Output` 項目。
 
 ```xml
 <CreateProperty Value="true">
@@ -79,4 +79,5 @@ MSBuild 會比較目標的 `Inputs` 和 `Outputs` 屬性，以判斷是否必須
 此程式碼會建立 CompileRan 屬性，並為其提供 `true` 值，唯一前提是已執行目標。 如果跳過目標，則不會建立 CompileRan。
 
 ## <a name="see-also"></a>另請參閱
+
 - [目標](../msbuild/msbuild-targets.md)

@@ -1,5 +1,5 @@
 ---
-title: 擴充圖層圖表 |Microsoft Docs
+title: 擴展圖層圖 |微軟文檔
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -13,11 +13,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bfcec64f9401fdbf79e67bee5fe8430452632fbc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301024"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302333"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,23 +34,23 @@ ms.locfileid: "74301024"
 
 - [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)
 
-## <a name="prereqs"></a> 需求
+## <a name="requirements"></a><a name="prereqs"></a>要求
  您必須在想要開發圖層擴充功能的電腦上安裝下列項目：
 
 - Visual Studio
 
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
+- [視覺化工作室 SDK](../extensibility/visual-studio-sdk.md)
 
-- [Visual Studio 2015 的模型 SDK](https://www.microsoft.com/download/details.aspx?id=48148)
+- [2015 年視覺化工作室建模 SDK](https://www.microsoft.com/download/details.aspx?id=48148)
 
-  您必須在想要執行圖層擴充功能的電腦上安裝適合的 Visual Studio 版本。 如需詳細資訊，請參閱[部署圖層模型擴充](../modeling/deploy-a-layer-model-extension.md)功能。
+  您必須在想要執行圖層擴充功能的電腦上安裝適合的 Visual Studio 版本。 有關詳細資訊，請參閱[部署圖層模型擴展](../modeling/deploy-a-layer-model-extension.md)。
 
   若要查看哪些 Visual Studio 版本支援分層圖，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="in-this-section"></a>本節內容
  [將命令和軌跡新增至分層圖](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
 
- [在分層圖中新增自訂架構驗證](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
+ [在分層圖中加入自訂架構驗證](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 
  [將自訂屬性新增至分層圖](../modeling/add-custom-properties-to-layer-diagrams.md)
 
@@ -61,4 +61,4 @@ ms.locfileid: "74301024"
  [分層圖擴充功能疑難排解](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
 
 ## <a name="see-also"></a>另請參閱
- [定義和安裝模型擴充功能](../modeling/define-and-install-a-modeling-extension.md)[分層圖：參考](../modeling/layer-diagrams-reference.md)[分層圖：方針](../modeling/layer-diagrams-guidelines.md)[從程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)[使用分層圖](../modeling/validate-code-with-layer-diagrams.md)從[uml 模型產生](../modeling/generate-files-from-a-uml-model.md)檔案[使用 Visual Studio API 開啟 uml 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
+ [定義並安裝建模擴展層](../modeling/define-and-install-a-modeling-extension.md)[關係圖：參考](../modeling/layer-diagrams-reference.md)[層圖：指南](../modeling/layer-diagrams-guidelines.md)[從代碼創建圖層關係圖](../modeling/create-layer-diagrams-from-your-code.md)[使用層關係圖 驗證代碼](../modeling/validate-code-with-layer-diagrams.md)使用 UML 模型 使用 Visual Studio API 打開[UML 模型 打開 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)[ ](../modeling/generate-files-from-a-uml-model.md)

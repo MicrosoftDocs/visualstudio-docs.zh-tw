@@ -1,39 +1,39 @@
 ---
-title: 評估監看式運算式 |Microsoft Docs
+title: 評估監視運算式 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, watch expressions
 - watch expressions
 ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d50abb359095a727b56bf40ab0d2c7ab1155d0c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9a239e430338e88a0be4bc35ad1c357925f7d8f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315546"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738850"
 ---
-# <a name="evaluate-a-watch-expression"></a>評估監看式運算式
+# <a name="evaluate-a-watch-expression"></a>監控監視運算式
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
-Visual Studio 即可顯示 監看式運算式的值時，它會呼叫[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)，接著呼叫[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)。 此程序會產生[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)物件，其中包含的值和運算式的類型。
+當 Visual Studio 準備好顯示手錶表示式的值時,它呼叫[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md),這反過來又呼叫[評估同步](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)。 此過程生成包含表達式的值和類型的[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)物件。
 
-在此實作中的`IDebugParsedExpression::EvaluateSync`，剖析並同時評估運算式。 此實作會執行下列工作：
+在此實現`IDebugParsedExpression::EvaluateSync`中 ,將同時解析和計算表達式。 此執行以下工作:
 
-1. 會剖析並評估運算式，以產生可儲存值和其類型的泛型物件。 在C#，這表示為`object`在C++，這表示為`VARIANT`。
+1. 分析並計算表達式以生成保存該值及其類型的泛型物件。 在 C# 中,`object`這表示 為 C++`VARIANT`中的一段時間,這 表示為 。
 
-2. 具現化類別 (稱為`CValueProperty`在此範例中) 可實`IDebugProperty2`介面，並儲存在類別中要傳回的值。
+2. 實例化實現`IDebugProperty2`介面並在類中`CValueProperty`存儲 要返回的值的類(在此示例中稱為)。
 
-3. 傳回`IDebugProperty2`介面從`CValueProperty`物件。
+3. 從`IDebugProperty2``CValueProperty`物件返回介面。
 
 ## <a name="managed-code"></a>Managed 程式碼
-這是實作`IDebugParsedExpression::EvaluateSync`managed 程式碼中。 Helper 方法`Tokenize`剖析成剖析樹狀目錄的運算式。 Helper 函式`EvalToken`將語彙基元轉換成的值。 Helper 函式`FindTerm`以遞迴方式周遊剖析樹狀目錄中，呼叫`EvalToken`表示值和套用任何作業 （加法或減法） 的運算式中每一個節點。
+這是`IDebugParsedExpression::EvaluateSync`託管代碼的實現。 説明器方法`Tokenize`將表達式解析為解析樹。 説明器函數`EvalToken`將令牌轉換為值。 説明器函數`FindTerm`遞歸地遍歷解析樹,調`EvalToken`用 表示值的每個節點,並在運算式中應用任何操作(添加或減法)。
 
 ```csharp
 namespace EEMC
@@ -79,8 +79,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>Unmanaged 程式碼
-這是實作`IDebugParsedExpression::EvaluateSync`unmanaged 程式碼中。 Helper 函式`Evaluate`剖析並評估的運算式，傳回`VARIANT`保留所產生的值。 Helper 函式`VariantValueToProperty`配套`VARIANT`到`CValueProperty`物件。
+## <a name="unmanaged-code"></a>非託管代碼
+這是非託管代碼的`IDebugParsedExpression::EvaluateSync`實現。 説明器函數`Evaluate`解析和計算表達式,`VARIANT`返回保留結果值。 說明器函數`VariantValueToProperty`將`VARIANT`捆綁到`CValueProperty`物件中 。
 
 ```cpp
 STDMETHODIMP CParsedExpression::EvaluateSync(
@@ -172,5 +172,5 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [評估監看式視窗運算式](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
-- [運算式評估的範例實作](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
+- [監控監視視窗運算式](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
+- [運算式樣本實作](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

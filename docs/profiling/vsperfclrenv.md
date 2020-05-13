@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2163ebb9b363de8ee638998dbe56fd76f5a891c8
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779905"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
@@ -68,8 +68,8 @@ VSPerfCmd /Attach:MyService.exe
 |選項|描述|
 |------------|-----------------|
 |**TraceOn**|使用檢測方法啟用程式碼剖析功能。 不會啟用記憶體配置程式碼剖析功能或收集物件存留期資料。|
-|**TraceGC**|使用檢測方法啟用記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|
-|**TraceGCLife**|使用檢測方法啟用記憶體配置程式碼剖析功能和收集物件存留期資料。|
+|**跟蹤GC**|使用檢測方法啟用記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|
+|**跟蹤GC生活**|使用檢測方法啟用記憶體配置程式碼剖析功能和收集物件存留期資料。|
 
 ## <a name="vsperfclrenv-options-for-process-sampling-profiling"></a>用於處理序取樣分析的 VSPerfCLREnv 選項
 
@@ -101,7 +101,7 @@ VSPerfCmd /Attach:MyService.exe
 
 |選項|描述|
 |------------|-----------------|
-|**Off**|刪除標準 .NET 程式碼剖析的環境變數。 使用非全域 VSPerfClrEnv 選項來設定分析工具環境變數時，請使用此選項。|
+|**關閉**|刪除標準 .NET 程式碼剖析的環境變數。 使用非全域 VSPerfClrEnv 選項來設定分析工具環境變數時，請使用此選項。|
 |**GlobalOff**|刪除全域 .NET 程式碼剖析的環境變數。 當應用程式由作業系統啟動且不是分析工具時，請使用此選項。|
 
 ## <a name="remarks"></a>備註
@@ -110,6 +110,6 @@ VSPerfCmd /Attach:MyService.exe
 
 如果程式碼剖析期間未設定正確的環境，會在分析期間報告警告且無法正確解析 Managed 函式名稱。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

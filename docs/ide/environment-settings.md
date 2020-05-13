@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588573"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301878"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio 的環境設定
 
@@ -32,21 +32,21 @@ ms.locfileid: "75588573"
 
 若要在第一次開啟 Visual Studio 之後變更開發設定，請遵循下列步驟：
 
-1. 從功能表列中選取 [工具] > [匯入和匯出設定] 以開啟 [匯入和匯出設定精靈]。
+1. 從功能表列中選擇 **"工具** > **導入和匯出設置"** 以打開 **"導入和匯出設置"嚮導**。
 
-1. 在 [匯入和匯出設定精靈] 中，選取 [重設所有設定]，然後選取 [下一步]。
+1. 在 [匯入和匯出設定精靈]**** 中，選取 [重設所有設定]****，然後選取 [下一步]****。
 
    ![Visual Studio 中的匯入和匯出設定精靈](media/reset-all-settings.png)
 
-1. 在 [儲存目前設定] 頁面上，選取 [是] 或 [否]，然後選取 [下一步]。
+1. 在 [儲存目前設定]**** 頁面上，選取 [是]**** 或 [否]****，然後選取 [下一步]****。
 
-1. 在 [選擇預設的設定集合] 頁面上，選擇一個集合，然後選取 [完成]。
+1. 在 [選擇預設的設定集合]**** 頁面上，選擇一個集合，然後選取 [完成]****。
 
    ![Visual Studio 中的設定集合](media/settings-collections.png)
 
-1. 在 [重設完成] 頁面上，選取 [關閉]。
+1. 在 [重設完成]**** 頁面上，選取 [關閉]****。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [跨多部電腦同步處理設定](synchronized-settings-in-visual-studio.md)
 - [將 Visual Studio IDE 個人化](personalizing-the-visual-studio-ide.md)

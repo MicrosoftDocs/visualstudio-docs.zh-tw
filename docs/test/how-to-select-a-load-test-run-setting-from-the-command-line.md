@@ -10,15 +10,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 760cf18062e607e9f9039c6cc5f4adf409134cb5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588989"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>如何：從命令列中選取要使用的負載測試回合設定
 
-負載測試可以包含「回合設定」，這是指會影響負載測試回合的屬性。 這些設定會在 [屬性] 視窗中，依照分類進行組織。 負載測試執行時，它會使用目前設為使用中的回合設定。
+負載測試可以包含「回合設定」**，這是指會影響負載測試回合的屬性。 這些設定會在 [屬性]**** 視窗中，依照分類進行組織。 負載測試執行時，它會使用目前設為使用中的回合設定。
 
 如果您的負載測試只包含一個回合設定，該設定一律為使用中的節點。 如果您的負載測試包含多個回合設定節點，則可以從命令列選取要在執行負載測試時使用的節點。 請參閱[如何：將其他回合設定新增至負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)。
 
@@ -34,9 +34,9 @@ ms.locfileid: "75588989"
 
     `mstest /testcontainer:loadtest1.loadtest`
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [設定負載測試回合設定](../test/configure-load-test-run-settings.md)
+- [配置負載測試回合設定](../test/configure-load-test-run-settings.md)
 - [在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [如何：將其他回合設定新增至負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)
-- [如何：選取負載測試的使用中回合設定](../test/how-to-select-the-active-run-setting-for-a-load-test.md)
+- [如何：向負載測試添加其他回合設定](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [如何：為負載測試選擇活動回合設定](../test/how-to-select-the-active-run-setting-for-a-load-test.md)

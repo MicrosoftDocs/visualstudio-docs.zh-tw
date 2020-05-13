@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2 | Microsoft Docs
+title: IDebugEngineLaunch2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2 interface
 ms.assetid: 5eaf2ad8-3fbf-446e-b48b-5327ad3f5255
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b6f59c9444b0c54f8a230f8eb4487e16b65ebf4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ee77cbd680df2c851d53aac298605023227fa6f8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345230"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730501"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
-使用偵錯引擎 (DE) 來啟動和終止程式。
+除錯引擎 (DE) 用於啟動和終止程式。
 
 ## <a name="syntax"></a>語法
 
@@ -28,28 +28,28 @@ ms.locfileid: "66345230"
 IDebugEngineLaunch2 : IDebugEngine2
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 如果有啟動處理程序無法完全由自訂連接埠處理的特殊需求，自訂 DE 被實作這個介面。 這通常是 DE 屬於解譯器和正在偵錯的程序是指令碼時的案例： 解譯器必須首先，啟動，而且就會再載入指令碼並將其啟動。 連接埠可以啟動解譯器，但指令碼可能需要特殊處理 （這是其中 DE 扮演的角色）。 只有當有獨特的需求，來啟動自訂的連接埠無法處理的程式時，才會實作這個介面。
+## <a name="notes-for-implementers"></a>實施者說明
+ 如果此介面具有啟動不能完全由自定義埠處理的進程的特殊要求,則此介面由自定義 DE 實現。 當 DE 是解釋器的一部分,並且正在調試的過程是一個腳本時,通常就是這種情況:首先需要啟動解釋器,然後載入和啟動腳本。 埠可以啟動解釋器,但腳本可能需要特殊處理(這是 DE 具有角色的位置)。 僅當存在啟動自定義埠無法處理的程式的唯一要求時,才會實現此介面。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 這個介面由工作階段的偵錯管理員 (SDM) 如果 SDM 可以取得此介面從呼叫[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面 （使用 QueryInterface）。 如果可以取得此介面，SDM 知道 DE 有特殊需求，並呼叫這個介面來啟動程式，而不需要啟動它的連接埠。
+## <a name="notes-for-callers"></a>通話備註
+ 如果 SDM 可以從[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面(使用查詢介面)獲取此介面,會話調試管理員 (SDM) 會調用此介面。 如果可以獲取此介面,SDM 知道 DE 具有特殊要求,並調用此介面啟動程式,而不是讓埠啟動它。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IDebugEngineLaunch2`。
 
 |方法|描述|
 |------------|-----------------|
-|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|透過 DE 啟動處理序。|
-|[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|繼續處理序執行。|
-|[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|決定是否會終止處理程序。|
-|[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|結束處理序。|
+|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|通過DE啟動進程。|
+|[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|恢復進程執行。|
+|[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|確定是否可以終止進程。|
+|[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|終止進程。|
 
 ## <a name="requirements"></a>需求
- 標頭：Msdbg.h
+ 標題: Msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

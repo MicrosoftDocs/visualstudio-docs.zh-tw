@@ -1,5 +1,5 @@
 ---
-title: 專案模型的項目 |Microsoft Docs
+title: 專案模型的元素 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,43 +7,43 @@ helpviewer_keywords:
 - project models
 - projects [Visual Studio SDK], elements
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b37997c4245d8234d72ae14a9dda23f44fe2b26
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf847e35878dc84bb32fe81053c01c23e565fc4c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351590"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708529"
 ---
-# <a name="elements-of-a-project-model"></a>專案模型的項目
-介面和實作中的所有專案的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]共用基本結構： 您的專案類型的專案模型。 在您專案的模型，也就是您正在開發的 VSPackage，您可以建立符合您的設計決策，且 IDE 所提供的通用功能搭配運作的物件。 雖然您可以控制如何保存專案項目，例如，您無法控制通知檔案必須 persisted。 當使用者將焦點放在開啟的專案項目，並選擇**儲存**上**檔案**功能表[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]功能表列中，您的專案型別程式碼必須攔截從 IDE 命令、 保留檔案，並將通知傳送回 IDE 會不會再變更的檔案。
+# <a name="elements-of-a-project-model"></a>專案模型的元素
+中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]所有專案的介面和實現共用一個基本結構:專案類型的專案模型。 在專案模型中(即您正在開發的 VSPackage)中,您將創建符合設計決策的物件,並與 IDE 提供的全域功能協同工作。 例如,儘管控制專案項的保留方式,但不控制必須保留檔的通知。 當使用者將焦點放在打開的專案項上並選擇 **「保存在**[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**選單欄上的檔案**」功能表上時,專案類型代碼必須攔截 IDE 的命令,保留檔,並將檔發送回 IDE,通知檔不再更改。
 
- VSPackage 會提供 IDE 介面的存取權的服務透過 IDE 與互動。 比方說，透過特定的服務，您監視和路由命令，並提供選取之項目的專案中的內容資訊。 Vspackage 所需所有通用的 IDE 功能是由服務提供。 如需有關服務的詳細資訊，請參閱[How to:取得服務](../../extensibility/how-to-get-a-service.md)。
+ 您的 VS 套件透過提供對 IDE 介面的存取的服務與 IDE 進行互動。 例如,通過特定服務,您可以監視和路由命令,併為專案中所做的選擇提供上下文資訊。 VSPackage 所需的所有全球 IDE 功能均由服務提供。 有關服務的詳細資訊,請參閱[如何:獲取服務](../../extensibility/how-to-get-a-service.md)。
 
- 其他實作考量：
+ 其他實現注意事項:
 
-- 單一專案模型可以包含多個專案類型。
+- 單個專案模型可以包含多個項目類型。
 
-- 專案類型以及語音應答專案處理站會向獨立 Guid。
+- 項目類型和相應的項目工廠在 GUID 中獨立註冊。
 
-- 每個專案都必須有範本檔案或初始化新的專案檔案，當使用者建立新的專案，透過精靈[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]UI。 比方說，[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]範本初始化項目最後會變成.vcproj 檔案。
+- 當使用者透過[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]UI 創建新專案時,每個專案都必須具有範本檔或嚮導來初始化新專案檔。 例如,[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]模板初始化最終成為 .vcproj 檔的內容。
 
-  下圖顯示主要的介面、 服務和 compose 的典型專案中實作的物件。 您可以使用應用程式協助程式`HierUtil7`，以建立基礎物件和其他程式設計的重複使用。 如需詳細資訊`HierUtil7`應用程式的協助程式，請參閱 <<c2> [ 使用 HierUtil7 專案類別以實作專案類型 (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。</c2>
+  下圖顯示了構成典型項目實現的主要介面、服務和物件。 您可以使用應用程式幫助器`HierUtil7`,創建基礎物件和其他程式設計樣板。 有關`HierUtil7`應用程式協助程式的詳細資訊,請參閱[使用 HierUtil7 專案類別來實現項目類型 (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。
 
-  ![Visual Studio 專案模型圖形](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")專案模型
+  ![視覺化工作室專案模型圖形](../../extensibility/internals/media/vsprojectmodel.gif "vs 專案模型")專案模型
 
-  如需有關介面和服務列在上圖中，與其他選擇性介面不包含在圖表的詳細資訊，請參閱[專案模型的核心元件](../../extensibility/internals/project-model-core-components.md)。
+  有關上圖中列出的介面和服務以及關係圖中未包括的其他可選介面的詳細資訊,請參閱[Project 模型核心元件](../../extensibility/internals/project-model-core-components.md)。
 
-  專案可以支援的命令，並因此必須實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面來參與命令路由，透過命令內容的 Guid。
+  專案可以支援命令,因此必須實現<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面才能通過命令上下文 GUID 參與命令路由。
 
 ## <a name="see-also"></a>另請參閱
-- [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [使用 HierUtil7 專案類別來實作專案類型 (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
-- [專案模型的核心元件](../../extensibility/internals/project-model-core-components.md)
-- [使用 project factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-- [如何：取得服務](../../extensibility/how-to-get-a-service.md)
-- [建立專案類型](../../extensibility/internals/creating-project-types.md)
+- [檢查表:建立新的項目型態](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [使用 HierUtil7 專案類別 (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [專案模型核心元件](../../extensibility/internals/project-model-core-components.md)
+- [使用項目工廠建立項目實體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+- [如何:取得服務](../../extensibility/how-to-get-a-service.md)
+- [建立項目型態](../../extensibility/internals/creating-project-types.md)

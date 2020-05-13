@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::SetLocale | Microsoft Docs
+title: IDebug程式提供程式2::設置本地 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::SetLocale
 ms.assetid: b41d20a7-ba40-4c42-a450-16f413d6a04f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 716ac7155c7e9885088a7197ac78f0834758dafe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dd88eebedc8c6dc5b059cbcd94844ce4191fccc9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324946"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721771"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
-建立要用於任何地區設定特定資源的地區設定。
+建立用於任何特定於區域設置的資源的區域設置。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int SetLocale(
 
 ## <a name="parameters"></a>參數
 `wLangID`\
-[in]若要建立的語言識別碼。 例如，1033 代表英文。
+[在]要建立的語言 ID。 例如,英語為 1033。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

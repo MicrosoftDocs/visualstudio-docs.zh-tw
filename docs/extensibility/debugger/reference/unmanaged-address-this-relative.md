@@ -1,5 +1,5 @@
 ---
-title: UNMANAGED_ADDRESS_THIS_RELATIVE | Microsoft Docs
+title: UNMANAGED_ADDRESS_THIS_RELATIVE |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_THIS_RELATIVE structure
 ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30a70f33edbe3cf817ebe4ad383c54bc02275a72
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea493170c7b422129485fcea4248981a2b506001
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316107"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713260"
 ---
-# <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
-此結構表示的位址，是相對於`this`指標 (`Me` Visual Basic 中)。
+# <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
+此結構表示相對於`this`指標(`Me`在可視化基本中)的位址。
 
 ## <a name="syntax"></a>語法
 
@@ -45,24 +45,24 @@ public struct UNMANAGED_THIS_RELATIVE {
 
 ## <a name="members"></a>成員
  `dwOffset`\
- 位元組位移之基底的位置 （例如，類別 vtable 開頭）。
+ 與基本位置的位元組偏移量(例如,類vtable的開頭)。
 
  `dwBitOffset`\
- 在基底位置的位元位移 (一律為 0 除非參考是位元欄位)。
+ 與基位的偏移(始終為 0,除非引用位欄位)。
 
  `dwBitLength`\
- 代表地址的位元數 (一律為 0 除非參考是位元欄位)。
+ 表示地址的位數(除非引用位欄位,否則始終為 0)。
 
 ## <a name="remarks"></a>備註
- 此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。
+ 當`DEBUG_ADDRESS_UNION``ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`結構欄位設置為[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)舉中的值)`dwKind`時, 此結構是DEBUG_ADDRESS_UNION結構中的聯合的一部分。
 
 ## <a name="requirements"></a>需求
- 標頭： sh.h
+ 標題: sh.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

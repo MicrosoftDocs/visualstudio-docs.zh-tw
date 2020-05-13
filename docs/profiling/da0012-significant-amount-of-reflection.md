@@ -15,21 +15,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c1b96e9a73b488ba9c9920e8ea43e27f78f67ed
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777669"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012：大量的反射
 
 |||
 |-|-|
-|規則識別碼|DA0012|
-|Category|.NET Framework 使用方式|
+|規則 ID|DA0012|
+|類別|.NET Framework 使用方式|
 |分析方法|取樣|
 |訊息|您可能過度使用反映。 這是很消耗資源的作業。|
-|規則類型|警告|
+|規則型別|警告|
 
 ## <a name="cause"></a>原因
  對 System.Reflection 方法 (例如 InvokeMember 和 GetMember) 或 Type 方法 (例如 MemberInvoke) 的呼叫大部分是分析資料。 可能的話，請考慮將這些方法取代為相依組件方法的早期繫結。

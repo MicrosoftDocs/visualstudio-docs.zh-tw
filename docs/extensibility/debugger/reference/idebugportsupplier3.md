@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3 | Microsoft Docs
+title: IDebugPort供應商3 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3 interface
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b471e0799409e68b5a843e39975f54f2ce3b5bc5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f015c21f71f064f2302660ebc75ef00a245348c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314167"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724434"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
-此介面可讓呼叫端判斷連接埠提供者是否可以保留連接埠 （寫入磁碟） 的偵錯工具的引動過程之間，然後以取得這些保留的連接埠清單。
+此介面允許調用方確定埠供應商是否可以在調試器的調用之間保留埠(通過將它們寫入磁碟),然後獲取這些保留的埠的清單。
 
 ## <a name="syntax"></a>語法
 
@@ -28,31 +28,31 @@ ms.locfileid: "66314167"
 IDebugPortSupplier3 : IDebugPortSupplier2
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 自訂的連接埠提供者會實作此介面支援保存或儲存至磁碟的連接埠資訊。 必須為相同的物件上實作這個介面[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)介面。
+## <a name="notes-for-implementers"></a>實施者說明
+ 自定義埠供應商實現此介面以支援保留或將埠資訊保存到磁碟。 此介面必須在與[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)介面相同的對象上實現。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 呼叫[QueryInterface](/cpp/atl/queryinterface)上`IDebugPortSupplier2`介面，以取得此介面。
+## <a name="notes-for-callers"></a>通話備註
+ 在`IDebugPortSupplier2`介面上調用[查詢介面](/cpp/atl/queryinterface)以獲取此介面。
 
-## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 除了繼承自方法[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)介面，此介面支援下列：
+## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
+ 除了從[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)介面繼承的方法外,此介面還支援以下功能:
 
 |方法|描述|
 |------------|-----------------|
-|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|傳回是否連接埠提供者可以保存連接埠 （藉由將它們寫入磁碟） 的偵錯工具的引動過程之間。|
-|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|傳回可用來列舉透過所有連接埠已寫入磁碟的這個連接埠提供者的物件。|
+|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|返回埠供應商是否可以在調試器的調用之間保留埠(通過將它們寫入磁碟)。|
+|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|返回可用於枚舉此埠供應商寫入磁碟的所有埠的物件。|
 
 ## <a name="remarks"></a>備註
- 如果連接埠提供者可以跨引動過程中保存連接埠，它應該實作這個介面。 當連接埠提供者具現化，而且連接埠提供者被終結時寫入磁碟時，應該載入的連接埠。
+ 如果埠供應商可以跨調用保留埠,則應實現此介面。 當埠供應商實例化時,應載入埠,並在埠供應商銷毀時寫入磁碟。
 
- 偵錯引擎通常不會使用連接埠提供者互動，而且必須沒有使用此介面。
+ 調試引擎通常不與埠供應商交互,並且對此介面沒有用處。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

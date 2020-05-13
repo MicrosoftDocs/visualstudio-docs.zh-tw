@@ -1,5 +1,5 @@
 ---
-title: 在 Blend 中 Debug XAML |Microsoft Docs
+title: 在混合中調試 XAML |微軟文件
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,20 +14,20 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eeda91dad54cc189fba6f23ce6d21e6aa9a6c5da
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 8e032f9f99087df26c82b4984c2267a35236bf6e
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850510"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444605"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中偵錯 XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用 [!INCLUDE[blend_first](../includes/blend-first-md.md)] 中的工具為應用程式的 XAML 偵錯。 當您建置專案時，所有錯誤都會顯示在 [結果] 面板中。 只要按兩下錯誤，即可找到與該錯誤相關的標記。 如果需要更多工作空間，您可以按 F12 隱藏 [結果] 面板。  
+您可以使用 [!INCLUDE[blend_first](../includes/blend-first-md.md)] 中的工具為應用程式的 XAML 偵錯。 當您建置專案時，所有錯誤都會顯示在 [結果]**** 面板中。 只要按兩下錯誤，即可找到與該錯誤相關的標記。 如果需要更多工作空間，您可以按 F12 隱藏 [結果]**** 面板。  
   
 ## <a name="syntax-errors"></a>語法錯誤  
- 如果 XAML 或程式碼後置檔案不符合語言的格式規則，就會發生語法錯誤。 錯誤描述有助於您了解修正方法。 這份清單也會指出發生錯誤的檔案名稱與行號。 XAML 錯誤會顯示在 [結果] 面板的 [標記] 索引標籤中。  
+ 如果 XAML 或程式碼後置檔案不符合語言的格式規則，就會發生語法錯誤。 錯誤描述有助於您了解修正方法。 這份清單也會指出發生錯誤的檔案名稱與行號。 XAML 錯誤會顯示在 [結果]**** 面板的 [標記]**** 索引標籤中。  
   
 > [!TIP]
 > XAML 是 XML 架構的標記語言，並且遵循 XML 語法規則。  
@@ -51,23 +51,23 @@ ms.locfileid: "75850510"
   
 ##### <a name="to-create-a-project"></a>若要建立專案  
   
-1. 在 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 中，開啟 [檔案] 功能表，然後按一下 [新增專案]。  
+1. 在 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 中，開啟 [檔案]**** 功能表，然後按一下 [新增專案]****。  
   
-    專案類型清單隨即出現在 [新增專案] 對話方塊的左邊。 當您按一下專案類型時，與該類型有關聯的專案範本會顯示在右邊。  
+    專案類型清單隨即出現在 [新增專案]**** 對話方塊的左邊。 當您按一下專案類型時，與該類型有關聯的專案範本會顯示在右邊。  
   
-2. 在專案類型清單中，按一下 [ **XAML （Windows Store）** ]。  
+2. 在項目類型清單中,單擊**XAML(Windows 應用商店)。**  
   
-3. 在專案範本清單中，按一下 [**空白應用程式**]。  
+3. 在項目範本清單中,按下 **「空白應用**」。  
   
-4. 在 [**名稱**] 文字方塊中，輸入 `DebuggingSample`。  
+4. 在 **「名稱**」 文字`DebuggingSample`框中, 鍵入 。  
   
-5. 在 [位置] 文字方塊中，確認專案的位置。  
+5. 在 [位置]**** 文字方塊中，確認專案的位置。  
   
-6. 按一下 [語言] 清單中的 [Visual C#]，然後按一下 [確定] 建立專案。  
+6. 按一下 [語言]**** 清單中的 [Visual C#]****，然後按一下 [確定]**** 建立專案。  
   
-7. 以滑鼠右鍵按一下設計介面，然後按一下 [檢視原始檔] 以切換至 [分割] 檢視。  
+7. 以滑鼠右鍵按一下設計介面，然後按一下 [檢視原始檔]**** 以切換至 [分割]**** 檢視。  
   
-8. 按下列程式碼右上角的 [複製] 連結以複製程式碼。  
+8. 按下列程式碼右上角的 [複製]**** 連結以複製程式碼。  
   
    ```  
    <Grid HorizontalAlignment="Left" Height="222" VerticalAlignment="Top>  
@@ -97,33 +97,33 @@ ms.locfileid: "75850510"
   
 10. 按 Ctrl+Shift+B 建置專案。  
   
-    螢幕隨即出現錯誤訊息，告訴您無法建置專案，同時應用程式底部的 [結果] 面板也會列出發生的錯誤。  
+    螢幕隨即出現錯誤訊息，告訴您無法建置專案，同時應用程式底部的 [結果]**** 面板也會列出發生的錯誤。  
   
     ![在 Blend for Visual Studio 中偵錯 XAML](../debugger/media/blend-debugxaml-xaml.png "blend_debugXAML_XAML")  
   
 ### <a name="resolving-xaml-errors"></a>解決 XAML 錯誤  
- 偵測到 XAML 錯誤時，設計介面上會出現警示，說明您的專案包含無效的標記。 當您解決錯誤時，[結果] 面板中的錯誤清單也會隨即更新。 當您解決所有錯誤時，設計介面會再次出現並顯示應用程式畫面。  
+ 偵測到 XAML 錯誤時，設計介面上會出現警示，說明您的專案包含無效的標記。 當您解決錯誤時，[結果]**** 面板中的錯誤清單也會隨即更新。 當您解決所有錯誤時，設計介面會再次出現並顯示應用程式畫面。  
   
 ##### <a name="to-resolve-the-xaml-errors"></a>若要解決 XAML 錯誤  
   
-1. 按兩下清單中的第一個錯誤。 此描述為「值 '<' 不是有效的屬性」。 當您按兩下錯誤時，指標隨即找到程式碼中對應的位置。 `<` 前面的 `Button` 為有效字元，並非錯誤訊息中建議的屬性。 如果查看前一行程式碼，您會注意到 `Top` 屬性的右引號不見了。 請輸入右引號。 請注意，[結果] 面板中的錯誤清單隨即更新以反映您的變更。  
+1. 按兩下清單中的第一個錯誤。 此描述為「值 '<' 不是有效的屬性」。 當您按兩下錯誤時，指標隨即找到程式碼中對應的位置。 `<` 前面的 `Button` 為有效字元，並非錯誤訊息中建議的屬性。 如果查看前一行程式碼，您會注意到 `Top` 屬性的右引號不見了。 請輸入右引號。 請注意，[結果]**** 面板中的錯誤清單隨即更新以反映您的變更。  
   
-2. 按兩下描述 "' 0 ' 在名稱開頭無效。" `Margin="0,149,0,0"` 看起來是正確的格式。 但是，請注意 `Margin` 的色彩標示與程式碼中的其他 `Margin` 執行個體不符。 由於這個 `VerticalAlignment="Top` 前方的名稱/值組少了右引號 (`Margin="`)，因此就被視為屬於前一個屬性的值，導致 0 被視為名稱/值組的開頭。 請輸入 `Top` 的右引號。 [結果] 面板中的錯誤清單隨即更新以反映您的變更。  
+2. 按兩下說明"'0'在名稱開頭無效" `Margin="0,149,0,0"`似乎形成良好。 但是，請注意 `Margin` 的色彩標示與程式碼中的其他 `Margin` 執行個體不符。 由於這個 `VerticalAlignment="Top` 前方的名稱/值組少了右引號 (`Margin="`)，因此就被視為屬於前一個屬性的值，導致 0 被視為名稱/值組的開頭。 請輸入 `Top` 的右引號。 [結果]**** 面板中的錯誤清單隨即更新以反映您的變更。  
   
-3. 按兩下剩餘的錯誤 [關閉的 XML 標籤 "Button" 不相符]。 指標隨即移至結尾**方格**標記處 (`</Grid>`)，提示錯誤是發生在 `Grid` 物件內。 請注意，第二個 `Button` 物件少了結尾標記。 在您新增結尾 `/` 之後，[結果] 面板清單也隨即更新。 我們現在已經解決一開始出現的錯誤，但是又出現了兩個錯誤。  
+3. 按兩下剩餘的錯誤 [關閉的 XML 標籤 "Button" 不相符]。 指標隨即移至結尾**方格**標記處 (`</Grid>`)，提示錯誤是發生在 `Grid` 物件內。 請注意，第二個 `Button` 物件少了結尾標記。 在您新增結尾 `/` 之後，[結果]**** 面板清單也隨即更新。 我們現在已經解決一開始出現的錯誤，但是又出現了兩個錯誤。  
   
 4. 按兩下 [無法識別或無法存取成員 "content"。]， `c` 中的 `content` 應該是大寫才對。 請將小寫 "c" 改成大寫 "C"。  
   
-5. 按兩下 屬性 ' Mame ' 不存在於 '<https://schemas.microsoft.com/winfx/2006/xaml>' 命名空間中」。 "Mame" 中的 "M" 應該是 "N" 才對。 請將 "M" 改成 "N"。 現在已經可以解析 XAML，應用程式也隨即顯示在設計介面上。  
+5. 按兩下`https://schemas.microsoft.com/winfx/2006/xaml`名稱空間中不存在屬性"Mame"。 "Mame" 中的 "M" 應該是 "N" 才對。 請將 "M" 改成 "N"。 現在已經可以解析 XAML，應用程式也隨即顯示在設計介面上。  
   
-    ![在 Blend for Visual Studio 中調試 XAML](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
+    ![在 Blend for Visual Studio 中偵錯 XAML](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
   
     按 Ctrl+Shift+B 建置專案，確定不再發生其他任何錯誤。  
   
 ## <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯  
- 您可以在 Visual Studio 中開啟 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 專案，讓應用程式的程式碼偵錯更為容易。 若要在 Visual Studio 中開啟 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 專案，請以滑鼠右鍵按一下 [專案] 面板中的專案，然後按一下 [在 Visual Studio 進行編輯]。 在 Visual Studio 中結束偵錯工作階段之後，請按 Ctrl+Shift+S 儲存所有變更，然後再切換回 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]。 此時會出現要您重新載入專案的提示畫面。 請按一下 [全部皆是] 繼續在 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 中處理專案。  
+ 您可以在 Visual Studio 中開啟 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 專案，讓應用程式的程式碼偵錯更為容易。 若要在 Visual Studio 中開啟 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 專案，請以滑鼠右鍵按一下 [專案]**** 面板中的專案，然後按一下 [在 Visual Studio 進行編輯]****。 在 Visual Studio 中結束偵錯工作階段之後，請按 Ctrl+Shift+S 儲存所有變更，然後再切換回 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]。 此時會出現要您重新載入專案的提示畫面。 請按一下 [全部皆是]**** 繼續在 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 中處理專案。  
   
- 如需有關偵錯工具的詳細資訊，請參閱[Visual Studio 中的 Debug Windows Store 應用程式](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx)。  
+ 有關除錯應用程式的詳細資訊,請參閱[在 Visual Studio 中除錯 Windows 應用商店應用](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx)。  
   
-## <a name="getting-help"></a>取得協助  
- 如果您需要更多協助來進行 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 應用程式的調試，您可以搜尋[Windows Store 應用程式的社區論壇](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps)，以取得您的問題相關文章或張貼問題。
+## <a name="getting-help"></a>取得說明  
+ 如果您需要更多幫助來調試應用[!INCLUDE[blend_subs](../includes/blend-subs-md.md)],則可以在 Windows[應用商店應用社區論壇](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps)中搜索與您的問題相關的帖子或發佈問題。

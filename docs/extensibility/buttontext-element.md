@@ -1,25 +1,25 @@
 ---
-title: ButtonText 元素 |Microsoft Docs
+title: 按鍵文字元素 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - ButtonText element (VSCT XML schema)
 - VSCT XML schema elements, ButtonText
 ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe2440258e95ad0d61998b24dae54b731a998c47
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59308feea2002a18662a7c04b95a92a920f934c4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321219"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739902"
 ---
-# <a name="buttontext-element"></a>ButtonText 元素
-此欄位可讓您指定各種功能表所顯示的文字。 根據預設，`ButtonText`元素會出現在功能表控制站。 `ButtonText`項目也會成為預設值，如果其他的文字欄位為空白。 `ButtonText`元素不可為空白，即使指定的其他文字欄位。
+# <a name="buttontext-element"></a>按鈕文字元素
+此欄位允許您指定出現在各種選單中的文字。 預設情況下,該`ButtonText`元素將顯示在菜單控制器中。 如果`ButtonText`其他文字欄位為空,則元素也變為預設值。 即使`ButtonText`指定了其他文本欄位,元素也不能為空。
 
 ## <a name="syntax"></a>語法
 
@@ -40,10 +40,10 @@ ms.locfileid: "66321219"
 
 |元素|描述|
 |-------------|-----------------|
-|[Strings 元素](../extensibility/strings-element.md)|群組文字項目，例如`ButtonText`和`CommandName`。|
+|[字串元素](../extensibility/strings-element.md)|文字元素(如`ButtonText`與`CommandName`)|
 
 ## <a name="text-value"></a>文字值
- 文字值`ButtonText`項目提供為功能表項目、 combos 和其他可見文字的使用者介面 (UI) 項目顯示的文字。
+ `ButtonText`元素的文本值提供為功能表項、組合和其他具有可見文本的使用者介面 (UI) 元素顯示的文本。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2 | Microsoft Docs
+title: IDebugEngineProgram2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2 interface
 ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 221ab8fd00bc7d98745fdd5cc03dd72b9919b4b2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8e5ccf2327e660a983bcb3032363a92ac8a6f71d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345143"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730307"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
-這個介面會提供多執行緒偵錯支援。
+此介面提供多線程調試支援。
 
 ## <a name="syntax"></a>語法
 
@@ -28,30 +28,30 @@ ms.locfileid: "66345143"
 IDebugEngineProgram2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 偵錯引擎會實作這個介面來支援多個執行緒同時進行偵錯。 這個介面實作的相同物件上實作[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面。
+## <a name="notes-for-implementers"></a>實施者說明
+ 除錯引擎實現此介面以支援多個線程的同步調試。 此介面在實現[IDebug Program2](../../../extensibility/debugger/reference/idebugprogram2.md)介面的同一對象上實現。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 使用[QueryInterface](/cpp/atl/queryinterface)若要取得從這個介面`IDebugProgram2`介面。
+## <a name="notes-for-callers"></a>通話備註
+ 使用[查詢介面](/cpp/atl/queryinterface)`IDebugProgram2`從介面獲取此介面。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IDebugEngineProgram2`。
 
 |方法|描述|
 |------------|-----------------|
-|[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|停止執行此程式中的所有執行緒。|
-|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|監看的執行 （或執行監看的停止） 指定的執行緒上發生。|
-|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|允許 （或不允許） 即使程式停止，在指定的執行緒上發生的運算式評估。|
+|[停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|停止在此程式中運行的所有線程。|
+|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|監視在給定線程上執行(或停止監視執行)。|
+|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|允許(或不允許)在給定線程上進行表達式計算,即使程式已停止也是如此。|
 
 ## <a name="remarks"></a>備註
- Visual Studio 會呼叫這個介面，以回應[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)事件，以及設定程式的 「 執行緒步驟監看式 」 和 「 監看式的運算式評估在執行緒 」 狀態。 [停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)時呼叫的程式是要停止; 這個方法可讓程式終止所有的執行緒有機會。
+ Visual Studio 調用此介面以回應[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)事件,並設置程式的「線程步驟監視」和「線程表達式評估監視」狀態。 每當停止程式時,都會調用"停止";因此,每當程式停止時,都會調用["停止"。](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)此方法使程式有機會終止所有線程。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

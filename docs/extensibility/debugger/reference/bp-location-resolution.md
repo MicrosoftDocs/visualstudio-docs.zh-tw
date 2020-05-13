@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_RESOLUTION | Microsoft Docs
+title: BP_LOCATION_RESOLUTION |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_RESOLUTION structure
 ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: d728c0aae749caa661ae4cb8f29e13f9cd1827fb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f33f01d0c2b8465bbb417b56576118349234970
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353069"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737952"
 ---
-# <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
-描述的特定位置的中斷點解析。
+# <a name="bp_location_resolution"></a>BP_LOCATION_RESOLUTION
+描述特定位置斷點的解析度。
 
 ## <a name="syntax"></a>語法
 
@@ -34,19 +34,19 @@ typedef struct _BP_LOCATION_RESOLUTION {
 
 ## <a name="members"></a>成員
 `pResolution`\
-[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)判斷中斷點和其解決方式的資訊類型的物件。
+[IDebugBreakpoint決議2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)物件,用於確定斷點的類型及其解析度資訊。
 
 ## <a name="remarks"></a>備註
-此結構是隸屬[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的聯集的一部分。
+此結構是作為聯合的一部分[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的成員。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)

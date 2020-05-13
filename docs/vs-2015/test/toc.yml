@@ -112,7 +112,7 @@
           href: testing-a-large-application-with-multiple-ui-maps.md
         - name: 啟用控制項的自動程式化 UI 測試功能
           href: enable-coded-ui-testing-of-your-controls.md
-        - name: 自動程式碼 UI 測試和動作記錄的支援組態和平台
+        - name: 自動程式化 UI 測試和動作記錄的支援組態和平台
           href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
         - name: 擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel
           items:
