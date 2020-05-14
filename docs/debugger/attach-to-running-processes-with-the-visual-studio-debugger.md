@@ -1,5 +1,5 @@
 ---
-title: 使用除錯器連接到正在執行的行程 |微軟文件
+title: 使用偵錯工具附加至執行中進程 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/14/2020
 ms.topic: conceptual

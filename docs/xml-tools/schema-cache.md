@@ -1,4 +1,4 @@
----
+﻿---
 title: XML 編輯器架構快取
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -120,7 +120,7 @@ XML 編輯器亦支援結構描述快取目錄中任意數目的結構描述目�
 
 ### <a name="to-add-another-directory-of-common-schemas"></a>加入通用結構描述的其他目錄
 
-1. 編輯 XML 編輯器架構快取目錄中的*catalog .xml*檔案。
+1. 編輯 XML 編輯器架構快取目錄中的*catalog.xml*檔案。
 
 2. 加入指向其他結構描述目錄的新 `<Catalog href="..."/>` 項目。
 

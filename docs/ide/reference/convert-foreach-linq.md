@@ -1,4 +1,4 @@
----
+﻿---
 title: 將 Foreach 迴圈轉換為 LINQ
 descritpion: Convert any foreach loop that uses an IEnumerable to a LINQ query or a LINQ call form (also known as a LINQ method).
 ms.date: 03/10/2020
