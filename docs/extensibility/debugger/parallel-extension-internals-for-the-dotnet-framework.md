@@ -1,40 +1,40 @@
 ---
-title: 適用於.NET Framework 進行平行擴充內部資訊 |Microsoft Docs
+title: .NET 框架的並行擴展內部 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, internals [.NET Framework]
 ms.assetid: 93e07cfa-91fa-464c-b866-8bf5570411df
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ecc13be90259c68fa4d37daa5139b27b4ea8c7f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6a3583e94a0bfff4474db03aa9d083add921f3da
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351487"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738268"
 ---
-# <a name="parallel-extension-internals-for-the-net-framework"></a>適用於.NET Framework 的平行擴充內部資訊
-本章節描述內部型別、 方法和欄位的類別可協助您實作自訂的 parallel extensions 到.NET Framework 偵錯工具。
+# <a name="parallel-extension-internals-for-the-net-framework"></a>.NET 框架的並行擴展內部
+本節介紹內部類型、方法和類欄位,這些類可説明您實現對 .NET 框架的並行擴展的自定義調試器。
 
 ## <a name="in-this-section"></a>本節內容
- [Task 類別](../../extensibility/debugger/task-class-internal-members.md)描述的內部資料成員<xref:System.Threading.Tasks.Task?displayProperty=fullName>類別。
+ [任務類](../../extensibility/debugger/task-class-internal-members.md)描述<xref:System.Threading.Tasks.Task?displayProperty=fullName>類的內部數據成員。
 
- [TaskScheduler 類別](../../extensibility/debugger/taskscheduler-class-internal-members.md)描述的內部資料成員<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>類別。
+ [工作計劃器類](../../extensibility/debugger/taskscheduler-class-internal-members.md)描述<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>類的內部數據成員。
 
- [ContingentProperties 類別](../../extensibility/debugger/contingentproperties-class-internal-members.md)描述的內部資料成員`System.Threading.Tasks.ContingentProperties`類別。
+ [或有屬性類別](../../extensibility/debugger/contingentproperties-class-internal-members.md)描述`System.Threading.Tasks.ContingentProperties`類的內部數據成員。
 
- [AsyncTaskMethodBuilder 結構](../../extensibility/debugger/asynctaskmethodbuilder-structure-internal-members.md)描述的內部成員<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>結構。
+ [非同步工作方法建構器結構](../../extensibility/debugger/asynctaskmethodbuilder-structure-internal-members.md)描述<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>結構的內部成員。
 
- [AsyncTaskMethodBuilder\<TResult > 結構](../../extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members.md)描述的內部成員<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>結構。
+ [非同步任務方法建\<構器 TResult>结构](../../extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members.md)描述<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>結構的內部成員。
 
- [AsyncVoidMethodBuilder 結構](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md)描述的內部成員<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>結構。
+ [非同步VoidMethodBuilder結構](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md)描述<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>結構的內部成員。
 
 ## <a name="see-also"></a>另請參閱
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
-- [Visual Studio 偵錯工具擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-- [平行程式設計](/dotnet/standard/parallel-programming/index)
+- [視覺化工作室除錯器可擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+- [平行編程式](/dotnet/standard/parallel-programming/index)

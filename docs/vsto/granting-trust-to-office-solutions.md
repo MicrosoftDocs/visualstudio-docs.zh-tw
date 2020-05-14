@@ -1,5 +1,5 @@
 ---
-title: 授與信任給 Office 方案
+title: 授予 Office 解決方案的信任
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,38 +16,38 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826930"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79303299"
 ---
-# <a name="grant-trust-to-office-solutions"></a>授與信任給 Office 方案
-  將信任授與為 Office 方案表示修改每個目標電腦的安全性原則信任方案組件、 應用程式資訊清單、 部署資訊清單和文件。 信任可以由您或使用者授與至 Office 方案之用。
+# <a name="grant-trust-to-office-solutions"></a>授予 Office 解決方案的信任
+  向 Office 解決方案授予信任意味著修改每個目的電腦的安全性原則，以信任解決方案程式集、應用程式清單、部署清單和文檔。 您或最終使用者都可以信任 Office 解決方案。
 
- 您可以簽署應用程式和部署資訊清單，以授與完全信任給 Office 方案。
+ 您可以通過簽署應用程式和部署清單來授予 Office 解決方案完全信任。
 
- 使用者可以授與信任給 Office 方案進行信任決策中的[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示。
+ 最終使用者可以通過在[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示中做出信任決策來授予 Office 解決方案的信任。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="Signing"></a> 藉由簽署應用程式和部署資訊清單信任方案
- 所有的應用程式和部署的 Office 解決方案必須使用識別發行者的憑證來簽署資訊清單。 憑證提供的基礎進行信任決策。
+## <a name="trust-the-solution-by-signing-the-application-and-deployment-manifests"></a><a name="Signing"></a>通過簽署應用程式和部署清單來信任解決方案
+ Office 解決方案的所有應用程式和部署清單都必須使用標識發行者的證書進行簽名。 證書為做出信任決策提供了基礎。
 
- 是為您建立的暫時憑證，並在建置階段授與信任，因此在偵錯時，會執行方案。 如果您發佈使用的暫時憑證簽署的解決方案時，您就會提示使用者進行信任決策。
+ 臨時證書是為您創建的，並在生成時授予信任，因此在調試解決方案時將運行解決方案。 如果發佈使用臨時證書簽名的解決方案，將提示最終使用者做出信任決策。
 
- 如果您登入解決方案中使用已知且受信任的憑證，而不提示使用者進行信任決策會自動安裝方案。 如需如何取得憑證來簽署的詳細資訊，請參閱[ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)。 取得憑證之後，憑證必須明確信任新增至信任的發行者清單。 如需詳細資訊，請參閱[如何：新增信任的發行者至 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)。
+ 如果使用已知且受信任的證書對解決方案進行簽名，則解決方案將自動安裝，而不會提示最終使用者做出信任決策。 有關如何獲取簽章憑證的詳細資訊，請參閱[ClickOnce 和身份驗證](../deployment/clickonce-and-authenticode.md)。 獲取證書後，必須通過將其添加到"受信任的發行者"清單來顯式信任該證書。 有關詳細資訊，請參閱[如何：將受信任的發行者添加到用於 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)。
 
- 如果開發人員登入解決方案中使用的暫時憑證，系統管理員可以重新已知且受信任的憑證與自訂使用簽署資訊清單產生和編輯工具 (*mage.exe*)，而這也是Microsoft.NET Framework 工具。 如需有關如何簽署方案的詳細資訊，請參閱[How to:簽署 Office 方案](../vsto/how-to-sign-office-solutions.md)和[How to:重新簽署應用程式和部署資訊清單](../ide/how-to-sign-application-and-deployment-manifests.md)。
+ 如果開發人員使用臨時證書對解決方案進行簽名，則管理員可以使用 Microsoft .NET 框架工具之一的清單生成和編輯工具 *（mage.exe）* 使用已知且受信任的證書重新對自訂進行簽名。 有關簽名解決方案的詳細資訊，請參閱[如何：對 Office 解決方案進行簽名](../vsto/how-to-sign-office-solutions.md)以及如何[：對應用程式和部署清單進行簽名](../ide/how-to-sign-application-and-deployment-manifests.md)。
 
-## <a name="TrustPrompt"></a>使用 ClickOnce 信任提示信任方案
- [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 會提示使用者進行信任決策，如果沒有整個組織的原則，信任方案的憑證。 如果使用者授與信任給方案，內含清單項目會建立包含 URL 和公開金鑰，來儲存此信任決策。 稍後執行的受信任的自訂時，使用者不會提示一次。
+## <a name="trust-the-solution-by-using-the-clickonce-trust-prompt"></a><a name="TrustPrompt"></a>使用 ClickOnce 信任提示信任解決方案
+ [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]如果沒有信任解決方案證書的組織範圍策略，則提示最終使用者做出信任決策。 如果最終使用者向解決方案授予信任，則創建包含清單條目，其中包含一個 URL 和一個公開金鑰來存儲此信任決策。 稍後運行受信任的自訂項時，不會再次提示最終使用者。
 
- 系統管理員可以停用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示，或需要提示字元，則只會針對會使用 Authenticode 憑證簽署的解決方案。 如需如何變更這些設定的 MyComputer、 近端內部網路、 網際網路、 TrustedSites 和 UntrustedSites 區域的詳細資訊，請參閱[How to:設定 ClickOnce 信任提示行為](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。
+ 管理員可以禁用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示，或要求僅對使用身份驗證憑證簽名的解決方案執行提示。 有關如何更改"我的電腦"、"本地內聯網"、"互聯網"、"受信任的網站"和不受信任的網站區域的這些設置的詳細資訊，請參閱[：配置 ClickOnce 信任提示行為](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [保護 Office 方案](../vsto/securing-office-solutions.md)
-- [將信任授與文件](../vsto/granting-trust-to-documents.md)
-- [針對 Office 方案安全性進行疑難排解](../vsto/troubleshooting-office-solution-security.md)
-- [指定 Office 方案的安全性考量](../vsto/specific-security-considerations-for-office-solutions.md)
+- [安全辦公室解決方案](../vsto/securing-office-solutions.md)
+- [授予文檔信任](../vsto/granting-trust-to-documents.md)
+- [排除 Office 解決方案安全性](../vsto/troubleshooting-office-solution-security.md)
+- [Office 解決方案的特定安全注意事項](../vsto/specific-security-considerations-for-office-solutions.md)

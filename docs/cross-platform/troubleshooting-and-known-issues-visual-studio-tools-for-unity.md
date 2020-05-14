@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "66261120"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
@@ -25,7 +25,7 @@ ms.locfileid: "66261120"
 
 ### <a name="confirm-editor-attaching-is-enabled"></a>確認已啟用 [編輯器附加]
 
-在 Unity 功能表中，選取 編輯 > [喜好設定]，然後選取 [外部工具] 索引標籤。確認已啟用 [編輯器附加] 核取方塊。 如需詳細資訊，請參閱 [Unity 喜好設定文件](https://docs.unity3d.com/Manual/Preferences.html)。
+在 Unity 功能表中，選擇 **"編輯>首選項**"，然後選擇"**外部工具**"選項卡。確認啟用**了"編輯器附加**"核取方塊。 如需詳細資訊，請參閱 [Unity 喜好設定文件](https://docs.unity3d.com/Manual/Preferences.html)。
 
 ### <a name="unable-to-attach"></a>無法附加
 
@@ -124,15 +124,15 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>回報使用 Visual Studio Tools for Unity 進行偵錯時 Visual Studio 凍結的情形
 
-*在 Windows 上*：
+*在 Windows 上：*
 
 1. 開啟新的 Visual Studio 執行個體。
 
-1. 開啟 [附加至處理序] 對話方塊。 在新的 Visual Studio 執行個體的主功能表上，選擇 [偵錯] 、[附加至處理序] 。
+1. 開啟 [附加至處理序] 對話方塊。 在新的 Visual Studio 執行個體的主功能表上，選擇 [偵錯] ****、[附加至處理序] ****。
 
-1. 將偵錯工具附加至 Visual Studio 的已凍結執行個體。 在 [附加至處理序]  對話方塊中，從 [可使用的處理序]  資料表選取 Visual Studio 的已凍結執行個體，然後選擇 [附加]  按鈕。
+1. 將偵錯工具附加至 Visual Studio 的已凍結執行個體。 在 [附加至處理序] **** 對話方塊中，從 [可使用的處理序] **** 資料表選取 Visual Studio 的已凍結執行個體，然後選擇 [附加] **** 按鈕。
 
-1. 暫停偵錯工具。 在 Visual Studio 新執行個體的主功能表上，選擇 [偵錯]、[全部中斷]，或直接按 **Ctrl+Alt+Break**。
+1. 暫停偵錯工具。 在 Visual Studio 新執行個體的主功能表上，選擇 [偵錯]****、[全部中斷]****，或直接按 **Ctrl+Alt+Break**。
 
 1. 建立執行緒傾印。 在命令視窗中輸入下列命令，然後按 **Enter** 鍵：
 
@@ -140,9 +140,9 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
     Debug.ListCallStack /AllThreads /ShowExternalCode
     ```
 
-    您可能需要先顯示 [命令]  視窗。 在 Visual Studio 主功能表上，選擇 [檢視] 、[其他視窗] 、[命令視窗] 。
+    您可能需要先顯示 [命令] **** 視窗。 在 Visual Studio 主功能表上，選擇 [檢視] ****、[其他視窗] ****、[命令視窗] ****。
 
-*在 Mac 上*：
+*在 Mac 上：*
 
 1. 開啟終端機，並取得 Visual Studio for Mac 的 PID：
 
@@ -168,4 +168,4 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
     bt all
     ```
 
-最後，將執行緒傾印傳送至 [vstusp@microsoft.com](mailto:vstusp@microsoft.com)，並提供您在 Visual Studio 變成凍結時所執行的動作描述。
+最後，將執行緒轉儲發送到[vstusp@microsoft.com](mailto:vstusp@microsoft.com)，以及 Visual Studio 凍結時您正在執行的操作的說明。

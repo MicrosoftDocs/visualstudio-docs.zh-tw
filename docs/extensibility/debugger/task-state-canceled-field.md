@@ -1,30 +1,30 @@
 ---
-title: TASK_STATE_CANCELED 欄位 |Microsoft Docs
+title: TASK_STATE_CANCELED欄位 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_CANCELED field, Task class [.NET Framework debug engines]
 ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e8b2906c2a8061a7153533036fcab7de82ca1d1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d59335a418febef45ebe35d4590c72b486921639
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348397"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712752"
 ---
-# <a name="taskstatecanceled-field"></a>TASK_STATE_CANCELED 欄位
-已達到執行中狀態，或確認其取消作業，然後完成而沒有例外狀況前，已取消工作。
+# <a name="task_state_canceled-field"></a>TASK_STATE_CANCELED欄位
+任務在到達運行狀態之前已取消,或者它確認其取消並無一例外地完成。
 
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **命名空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **組件：** mscorlib （在 mscorlib.dll 中)
+ **程式集**:mscorlib(在 mscorlib.dll 中)
 
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。
+ 由於您無法從 .NET 框架訪問此內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
 
 ## <a name="syntax"></a>語法
 
@@ -33,7 +33,7 @@ ms.locfileid: "66348397"
 ```
 
 ## <a name="remarks"></a>備註
- 如果[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)欄位會包含此值，請<xref:System.Threading.Tasks.Task.Status%2A>屬性會傳回<xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>。
+ 如果[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)欄位包含此值<xref:System.Threading.Tasks.Task.Status%2A>,則屬性<xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>將傳回 。
 
 ## <a name="see-also"></a>另請參閱
 - [工作類別](../../extensibility/debugger/task-class-internal-members.md)

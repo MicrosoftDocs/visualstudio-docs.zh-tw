@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
-ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71301685"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>將區域函式轉換為方法
@@ -20,11 +20,11 @@ ms.locfileid: "71301685"
 
 - C#
 
-**功能：** 將區域函式轉換為方法。
+**內容：** 將局部函數轉換為方法。
 
-**時機：** 您有要在目前本機內容以外定義的區域函式。
+**何時：** 您有一個要在當前本地上下文之外定義的本地函數。
 
-**原因：** 建議您將區域函式轉換為方法，以便您可以在本機內容之外呼叫。 當您的區域函式變得太長時，建議您轉換為方法。 在不同的方法中定義函式時，您的程式碼會更方便閱讀。
+**原因：** 您希望將本地函數轉換為方法，以便可以在本地上下文之外調用它。 當您的區域函式變得太長時，建議您轉換為方法。 在不同的方法中定義函式時，您的程式碼會更方便閱讀。
 
 ## <a name="convert-local-function-to-method-refactoring"></a>將區域函式轉換為方法重構
 
@@ -32,7 +32,7 @@ ms.locfileid: "71301685"
 
     ![將區域函式轉換為方法程式碼範例](media/convert-local-function-to-method.png)
 
-2. 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
+2. 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
 
     ![將區域函式轉換為方法程式碼修正範例](media/convert-local-function-to-method-codefix.png)
 
@@ -42,5 +42,5 @@ ms.locfileid: "71301685"
 
 ## <a name="see-also"></a>另請參閱
 
-- [重構](../refactoring-in-visual-studio.md)
-- [.NET 開發人員的秘訣](../csharp-developer-productivity.md)
+- [Refactoring](../refactoring-in-visual-studio.md)
+- [.NET 開發人員的祕訣](../csharp-developer-productivity.md)

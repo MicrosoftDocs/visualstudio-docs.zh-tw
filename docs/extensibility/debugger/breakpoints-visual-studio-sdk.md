@@ -1,53 +1,53 @@
 ---
-title: 中斷點 (Visual Studio SDK) |Microsoft Docs
+title: 斷點(可視化工作室 SDK) |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints
 ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be901dcb4692fa556008199aeea250c9427b3167
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7c9d61c82886f237e8c9f544a59d8fe167548277
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332521"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739199"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>中斷點 (Visual Studio SDK)
-有三種中斷點類型： 暫止、 繫結和錯誤。
+有三種類型的斷點:掛起、綁定和錯誤。
 
- **暫止的中斷點：**
+ **暫停的斷點:**
 
-- 是包含將中斷點繫結至一個或多個程式中的一或多個程式碼內容所需的所有資訊的抽象概念。 每次程式正在偵錯原因可載入的程式碼的偵錯引擎會檢查以查看 是否可以結合的所有暫止中斷點。
+- 是一個抽象,它包含將斷點綁定到一個或多個程式中的一個或多個代碼上下文所需的所有資訊。 每次調試程式會導致代碼載入時,調試引擎都會檢查所有掛起的斷點,以查看是否可以綁定它們。
 
-   暫止中斷點本身永遠不會繫結至程式碼，但而是會收集，所以包含它所產生的所有繫結的中斷點。
+   掛起的斷點本身從不綁定到代碼,而是收集並據說包含它生成的所有綁定斷點。
 
-- 由[IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。
+- 由[IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面表示。
 
-  **繫結的中斷點：**
+  **繫結斷點:**
 
-- 是中斷點的抽象概念與相關聯，或繫結到單一程式碼內容。 每個繫結的中斷點會產生回應的暫止中斷點。 暫止中斷點可以不過，產生一個以上的繫結的中斷點。
+- 是與單個程式碼上下文關聯或綁定到單個程式碼上下文的斷點的抽象。 每個綁定斷點都是為了回應掛起的斷點而生成的。 但是,掛起的斷點可以生成多個綁定斷點。
 
-   卸載程式碼時，就可以解除繫結並捨棄繫結的中斷點。
+   卸載代碼時,可以取消綁定斷點並丟棄綁定斷點。
 
-- 由[IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)介面。
+- 由[IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)介面表示。
 
-  **錯誤中斷點：**
+  **錯誤斷點:**
 
-- 為描述錯誤中嘗試暫止中斷點繫結程式碼內容的抽象概念。 其中一個錯誤在位置或中斷點運算式本身說明錯誤中斷點。 如需詳細資訊，請參閱 <<c0> [ 繫結中斷點](../../extensibility/debugger/binding-breakpoints.md)。
+- 是描述嘗試將掛起的斷點綁定到代碼上下文時的錯誤的抽象。 錯誤斷點描述位置或斷點運算式本身的錯誤。 有關詳細資訊,請參閱[綁定斷點](../../extensibility/debugger/binding-breakpoints.md)。
 
-   中斷點錯誤可以是錯誤或警告。
+   斷點錯誤可以是錯誤或警告。
 
-- 由[IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)介面。
+- 由[IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)介面表示。
 
 ## <a name="see-also"></a>另請參閱
-- [程式](../../extensibility/debugger/programs.md)
-- [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)
-- [程式碼內容](../../extensibility/debugger/code-context.md)
+- [Programs](../../extensibility/debugger/programs.md)
+- [除錯器概念](../../extensibility/debugger/debugger-concepts.md)
+- [代碼內容](../../extensibility/debugger/code-context.md)
 - [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)

@@ -1,32 +1,32 @@
 ---
-title: 符號提供者 |Microsoft Docs
+title: 符號提供者 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - symbol handler
 - debugging [Debugging SDK], symbol handler
 ms.assetid: 5fce651b-fead-4418-81b0-a011df7644ab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65debb8fcb41bec1d42c82654c26bc7d19c04a67
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 31b90846d9494ee046cf9dc4a3e5de9ff033ea3f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348512"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712813"
 ---
 # <a name="symbol-provider"></a>符號提供者
-運算式評估工具實作必須存取以評估變數和運算式語言編譯器所產生的符號偵錯資訊。 它會藉由使用介面的符號提供者 (SP)，也稱為符號處理常式。
+運算式賦值器實現必須造訪語言編譯器生成的符號調試資訊,以便計算變數和運算式。 它通過使用符號提供程式 (SP) 的介面(也稱為符號處理程式)來這樣做。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供 managed 程式碼，以及使用程式資料庫 (PDB) 符號的檔案格式的原生程式碼的預存程序。 除非沒有強式需要為您的程式使用自訂的格式儲存的符號，而是建議您在使用所提供的預存程序[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用程式資料庫 (PDB) 符號檔案格式為託管代碼和本機代碼提供 SP。 除非程式非常需要使用以自訂格式儲存的符號,否則建議您使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供的 SP。
 
-## <a name="implementation-notes"></a>實作注意事項
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，預存程序，使用 Common Language Runtime (CLR) 介面與預期的偵錯引擎。 如此一來，Visual Studio 偵錯引擎會使用預存程序必須支援的 CLR。 所有 CLR 偵錯介面的完整清單可在 debugref.doc，也就是組件的[!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]。
+## <a name="implementation-notes"></a>實作附註
+ 除錯[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]引擎需要使用通用語言執行時 (CLR) 介面與 SP 進行對話。 因此,將配合 Visual Studio 調試引擎工作的 SP 必須支援 CLR。 所有 CLR 除錯介面的完整清單可以在 debugref.doc 中找到[!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)],這是的一部分。
 
- 如果您的預存程序只會使用您自訂的偵錯引擎，您可以在根據您的偵錯引擎的需求適當地實作預存程序。
+ 如果您的 SP 將僅與自訂調試引擎一起使用,則可以根據調試引擎的需要,實現您認為合適的 SP。
 
 ## <a name="see-also"></a>另請參閱
-- [偵錯工具元件](../../extensibility/debugger/debugger-components.md)
+- [除錯器元件](../../extensibility/debugger/debugger-components.md)

@@ -1,27 +1,27 @@
 ---
-title: CommandPlacement 元素 |Microsoft Docs
+title: 命令放置元素 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c43dab922d51d2d3f96ffaba0ef24f8f0e18fa1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dcf9f23b5e860b895baa4c2a7a783f2ee15fcc77
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341875"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739738"
 ---
-# <a name="commandplacement-element"></a>CommandPlacement 元素
-CommandPlacement 元素可讓按鈕、 群組和包含在一個以上的群組或功能表的功能表。 藉由使用 CommandPlacement 元素，您不必完全重新定義這些項目，若要修改的使用者介面外觀。
+# <a name="commandplacement-element"></a>命令放置元素
+「命令放置」元素允許按鈕、組和功能表包含在多個組或功能表中。 通過使用 Command 放置元素,您不必完全重新定義這些專案,以修改使用者介面的外觀。
 
- 如需詳細資訊，請參閱 <<c0> [ 建立可重複使用的按鈕群組](../extensibility/creating-reusable-groups-of-buttons.md)。
+ 關於詳細資訊,請參閱[建立可重用的按鈕群組](../extensibility/creating-reusable-groups-of-buttons.md)。
 
 ## <a name="syntax"></a>語法
 
@@ -38,22 +38,22 @@ CommandPlacement 元素可讓按鈕、 群組和包含在一個以上的群組�
 
 |屬性|描述|
 |---------------|-----------------|
-|guid|必要項。 中所定義的命令集的 guid [Symbols 元素](../extensibility/symbols-element.md)。|
-|id|必要項。 功能表、 群組或放置時，如中所定義的命令識別碼`Symbols Element`。|
-|priority|必要項。 判斷項目在其父項目中的視覺位置。|
-|條件|選擇性。 請參閱[條件式 Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|guid|必要。 命令集的 guid,如[符號元素](../extensibility/symbols-element.md)中定義的那樣。|
+|id|必要。 要放置的功能表、組或命令的 ID,如`Symbols Element`中定義的那樣。|
+|priority|必要。 確定項在其父元素中的可視位置。|
+|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|父代|必要項。 功能表或裝載要放置的項目群組中。|
+|父系|必要。 承載要放置的項的功能表或組。|
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[CommandPlacements 元素](../extensibility/commandplacements-element.md)|指定 CommandPlacements 和 CommandPlacement 元素的群組。|
+|[命令放置元素](../extensibility/commandplacements-element.md)|指定命令放置和指令放置元素的群組。|
 
 ## <a name="example"></a>範例
 
@@ -67,5 +67,5 @@ CommandPlacement 元素可讓按鈕、 群組和包含在一個以上的群組�
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [CommandPlacements 元素](../extensibility/commandplacements-element.md)
-- [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [命令放置元素](../extensibility/commandplacements-element.md)
+- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

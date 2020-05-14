@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField |Microsoft Docs
+title: IDebugClassfield |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField interface
 ms.assetid: 49358cbc-8973-4862-9dcc-79b1248e6712
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d01ee3867481b8ab9bb100f2623c1197492666
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 11b0e4cd7c851e65edf299f45ec97273804c25d8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329457"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734297"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
-這個介面會表示為類型的類別。
+此介面將類表示為類型。
 
 ## <a name="syntax"></a>語法
 
@@ -28,33 +28,33 @@ ms.locfileid: "66329457"
 IDebugClassField : IDebugContainerField
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 符號提供者所實作的相同物件上實作這個介面[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面。 這個介面是特製化，表示類別型別。
+## <a name="notes-for-implementers"></a>實施者說明
+ 符號提供程式在實現[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面的同一對象上實現此介面。 此介面是表示類類型的專門化。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 介面的數目有方法可傳回此介面，包括[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)， [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)，並[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)。 此外，您可以使用[QueryInterface](/cpp/atl/queryinterface)若要取得從這個介面[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法會傳回旗標`FIELD_TYPE_CLASS`。
+## <a name="notes-for-callers"></a>通話備註
+ 許多介面都有可以返回此介面的方法,包括[IDebugSymbolProvider、IDebugMethodField](../../../extensibility/debugger/reference/idebugsymbolprovider.md)和[IDebugCustom 屬性](../../../extensibility/debugger/reference/idebugcustomattribute.md)。 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 此外,如果[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法`FIELD_TYPE_CLASS`返回標誌 ,則可以使用[QueryInterface](/cpp/atl/queryinterface)從[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面獲取此介面。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 上的方法除了[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)並[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面，這個介面會實作下列：
+ 除了[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)和[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面上的方法外,此介面還實現了以下功能:
 
 |方法|描述|
 |------------|-----------------|
-|[EnumBaseClasses](../../../extensibility/debugger/reference/idebugclassfield-enumbaseclasses.md)|建立此類別的基底類別的列舉值。|
-|[DoesInterfaceExist](../../../extensibility/debugger/reference/idebugclassfield-doesinterfaceexist.md)|決定是否特定介面會定義在類別中。|
-|[EnumNestedClasses](../../../extensibility/debugger/reference/idebugclassfield-enumnestedclasses.md)|建立此類別的巢狀類別的列舉值。|
-|[GetEnclosingClass](../../../extensibility/debugger/reference/idebugclassfield-getenclosingclass.md)|取得包含這個類別的類別。|
-|[EnumInterfacesImplemented](../../../extensibility/debugger/reference/idebugclassfield-enuminterfacesimplemented.md)|建立這個類別所實作之介面的列舉值。|
-|[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)|建立這個類別的建構函式的列舉值。|
-|[GetDefaultIndexer](../../../extensibility/debugger/reference/idebugclassfield-getdefaultindexer.md)|取得預設索引子名稱。|
-|[EnumNestedEnums](../../../extensibility/debugger/reference/idebugclassfield-enumnestedenums.md)|建立這個類別的巢狀的列舉值的列舉值。|
+|[EnumBaseClasses](../../../extensibility/debugger/reference/idebugclassfield-enumbaseclasses.md)|為此類的基類創建枚舉器。|
+|[DoesInterfaceExist](../../../extensibility/debugger/reference/idebugclassfield-doesinterfaceexist.md)|確定是否在類中定義了特定介面。|
+|[EnumNestedClasses](../../../extensibility/debugger/reference/idebugclassfield-enumnestedclasses.md)|為此類的嵌套類創建枚舉器。|
+|[GetEnclosingClass](../../../extensibility/debugger/reference/idebugclassfield-getenclosingclass.md)|獲取包含此類的類。|
+|[EnumInterfacesImplemented](../../../extensibility/debugger/reference/idebugclassfield-enuminterfacesimplemented.md)|為此類實現的介面創建枚舉器。|
+|[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)|為此類的構造函數創建枚舉器。|
+|[GetDefaultIndexer](../../../extensibility/debugger/reference/idebugclassfield-getdefaultindexer.md)|獲取預設索引器的名稱。|
+|[EnumNestedEnums](../../../extensibility/debugger/reference/idebugclassfield-enumnestedenums.md)|為此類的嵌套枚舉器創建枚舉器。|
 
 ## <a name="requirements"></a>需求
- 標頭： sh.h
+ 標題: sh.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

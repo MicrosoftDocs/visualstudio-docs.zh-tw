@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b70e26adc7c0c9a8dc409d9b4b971b233418b8e1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594275"
 ---
 # <a name="install-unit-test-frameworks"></a>安裝單元測試架構
@@ -26,9 +26,9 @@ Visual Studio 方案可包含多個單元測試專案，這些專案使用不同
 
 使用 **NuGet 套件管理員**安裝協力廠商單元測試架構。
 
-1. 以滑鼠右鍵按一下會包含您測試程式碼的專案，然後選取 [管理 NuGet 套件]。
+1. 以滑鼠右鍵按一下會包含您測試程式碼的專案，然後選取 [管理 NuGet 套件]****。
 
-2. 在 **NuGet 套件管理員**中，搜尋您想要安裝的測試架構，然後按一下 [安裝]。
+2. 在 **NuGet 套件管理員**中，搜尋您想要安裝的測試架構，然後按一下 [安裝]****。
 
    ![Visual Studio 中的 NuGet 套件管理員](media/vs-2019/nuget-package-manager.png)
 
@@ -38,16 +38,16 @@ Visual Studio 方案可包含多個單元測試專案，這些專案使用不同
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>更新至最新穩定的測試配接器版本
 
-1. 巡覽至 [工具] > [NuGet 套件管理員] > [管理方案的 NuGet 套件]，開啟解決方案的 NuGet 套件管理員。
+1. 通過導航到**工具** > **NuGet 包管理器** > **管理 NuGet 包的解決方案**，打開解決方案的 Nuget 包管理器。
 
-2. 按一下 [更新] 索引標籤並搜尋已安裝的 MSTest、NUnit 或 xUnit 測試配接器。
+2. 按一下 [更新]**** 索引標籤並搜尋已安裝的 MSTest、NUnit 或 xUnit 測試配接器。
 
 3. 選取每個測試配接器，然後選取下拉式功能表中最新穩定的版本。
 
-4. 選擇 [安裝] 按鈕。
+4. 選擇 [安裝]**** 按鈕。
 
    ![升級測試配接器](media/install-adapter-upgrade.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [對程式碼進行單元測試](../test/unit-test-your-code.md)
+- [單元測試代碼](../test/unit-test-your-code.md)

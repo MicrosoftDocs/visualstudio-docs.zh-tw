@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetPhysicalStackRange | Microsoft Docs
+title: IDebugStackFrame2::獲取物理堆疊範圍 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cf0db9fa776116f1536ae137444160385a8b6a1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3df924c6c8a4373082d61575e4ad8a7ec3f161d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347705"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719665"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
-取得的堆疊框架相關聯的實體位址範圍的電腦相關表示法。
+獲取與堆疊幀關聯的物理地址範圍的與計算機相關的表示形式。
 
 ## <a name="syntax"></a>語法
 
@@ -43,18 +43,18 @@ int GetPhysicalStackRange ( 
 
 ## <a name="parameters"></a>參數
 `paddrMin`\
-[out]傳回此堆疊框架相關聯的最小實體位址。
+[出]返回與此堆疊幀關聯的最低物理位址。
 
 `paddrMax`\
-[out]傳回此堆疊框架相關聯的最高的實體位址。
+[出]返回與此堆疊幀關聯的最高物理位址。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 這個方法所傳回的資訊供工作階段的偵錯管理員 (SDM) 中，來排序的堆疊框架。
+ 此方法返回的信息由會話調試管理器 (SDM) 用於對堆疊幀進行排序。
 
- 它會假設，呼叫堆疊成長時，也就是，在越來越多的較低的記憶體位址，會新增新的堆疊框架。 執行階段架構必須提供符合這項假設的實體堆疊範圍。
+ 假定調用堆棧會向下擴展,也就是說,在記憶體地址越來越低時添加新堆棧幀。 運行時體系結構必須提供與此假設相匹配的物理堆疊範圍。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

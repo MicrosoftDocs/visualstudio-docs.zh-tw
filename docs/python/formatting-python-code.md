@@ -11,26 +11,26 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957527"
 ---
 # <a name="format-python-code"></a>格式化 Python 程式碼
 
 Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的格式化選項。
 
-- 若要格式化選取範圍︰選取 [編輯] > [進階] > [格式化選取範圍] 或按 **Ctrl**+**E** > **F**。
-- 若要格式化整個檔案︰選取 [編輯] > [進階] > [格式化文件] 或按 **Ctrl**+**E** > **D**。
+- 要設置所選內容的格式：選擇 **"編輯** > **高級** > **格式選擇**"或按**Ctrl**+**E** > **F**。
+- 要格式化整個檔：選擇**編輯** > **高級** > **格式文檔**或按**Ctrl**+**E** > **D**。
 
-選項是透過 [工具] > [選項] > [文字編輯器] > [Python] > [格式] 及其巢狀索引標籤來設定。 您需要選取 [顯示所有設定] 來使這些選項出現：
+選項通過**工具** > **選項** > **文字編輯器** > **Python** > **格式**及其嵌套選項卡進行設置。 您需要選取 [顯示所有設定]**** 來使這些選項出現：
 
 ![Visual Studio 中的 Python 格式選項](media/options-editor-formatting.png)
 
-格式選項預設會設定成符合 [PEP 8 樣式指南](https://www.python.org/dev/peps/pep-0008/) \(英文\) 的超集合。 [一般] 索引標籤能決定何時套用格式；針對其他三個索引標籤的設定，會於本文章中說明。
+格式選項預設會設定成符合 [PEP 8 樣式指南](https://www.python.org/dev/peps/pep-0008/) \(英文\) 的超集合。 [一般]**** 索引標籤能決定何時套用格式；針對其他三個索引標籤的設定，會於本文章中說明。
 
-此外，[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)也會將實用的 [[填滿註解段落]](#fill-comment-paragraph-command) 命令新增至 [編輯] > [進階] 功能表中，如後續小節中所述。
+此外，[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)也會將實用的 [[填滿註解段落]****](#fill-comment-paragraph-command) 命令新增至 [編輯]**** > [進階]**** 功能表中，如後續小節中所述。
 
 ## <a name="spacing"></a>間距
 
@@ -42,7 +42,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 下表提供各種選項範例：
 
-| 類別定義選項 | 已核取 | 已清除 |
+| 類別定義選項 | 已檢查 | 已清除 |
 | --- | --- | --- |
 | **在類別宣告的名稱與基底清單之間插入空格** | `class X (object): pass` | `class X(object): pass` |
 | **在基底清單括號內插入空格** | `class X( object ): pass` | `class X(object): pass` |
@@ -50,7 +50,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 <br/>
 
-| 函式定義選項 | 已核取 | 已清除 |
+| 函式定義選項 | 已檢查 | 已清除 |
 | --- | --- | --- |
 | **在函式宣告的名稱與參數清單之間插入空格** | `def X (): pass` | `def X(): pass` |
 | **在參數清單括號內插入空格** | `def X( a, b ): pass` | `def X(a, b): pass` |
@@ -60,14 +60,14 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 <br/>
 
-| 運算子選項 | 已核取 | 已清除 |
+| 運算子選項 | 已檢查 | 已清除 |
 | --- | --- | --- |
 | **在二元運算子前後插入空格** | `a + b` | `a+b` |
 | **在指派前後插入空格** | `a = b` | `a=b` |
 
 <br/>
 
-| 運算式間距選項 | 已核取 | 已清除 |
+| 運算式間距選項 | 已檢查 | 已清除 |
 | --- | --- | --- |
 | **在函式呼叫的名稱與引數清單之間插入空格** | `X ()` | `X()` |
 | **在空白引數清單括號內插入空格** | `X( )` | `X()` |
@@ -84,7 +84,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 ## <a name="statements"></a>陳述式
 
-[陳述式] 選項控制以更多 Pythonic 格式自動重新撰寫各種陳述式。
+[陳述式]**** 選項控制以更多 Pythonic 格式自動重新撰寫各種陳述式。
 
 | 選項 | 格式之前 | 格式之後 |
 | --- | --- | --- |
@@ -94,7 +94,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 ## <a name="wrapping"></a>換行
 
-[包裝] 讓您設定 [註解寬度上限] (預設值為 80)。 如已設定 [將太寬的註解換行] 選項，Visual Studio 會重新格式化註解，使不超過寬度上限。
+[包裝]**** 讓您設定 [註解寬度上限]**** (預設值為 80)。 如已設定 [將太寬的註解換行]**** 選項，Visual Studio 會重新格式化註解，使不超過寬度上限。
 
 ```python
 # Wrapped to 40 columns
@@ -109,7 +109,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 ## <a name="fill-comment-paragraph-command"></a>填滿註解段落命令
 
-[編輯] > [進階] > [填滿註解段落] (**Ctrl**+**E** > **P**) 會自動重排和格式化註解文字、結合較短的行和拆解較長的行。
+**編輯** > **高級**+**E** > **P****Ctrl****Fill Comment Paragraph**填充注釋段落 （ Ctrl E P ） 重新流和格式注釋文本，合併短行和分解長行。 > 
 
 例如：
 

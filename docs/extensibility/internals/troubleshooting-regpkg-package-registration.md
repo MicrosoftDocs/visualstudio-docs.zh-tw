@@ -1,40 +1,40 @@
 ---
-title: 針對 RegPkg 套件註冊進行疑難排解 |Microsoft Docs
+title: 故障排除 RegPkg 包裝註冊 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - RegPkg
 ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 386a1a17c036207d122e4b3c7cb142a628dcfe38
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ebae9f7c5b4d1a6dcfee20c3b36c02f8ead2e0bc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72722270"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704321"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>針對 RegPkg 套件註冊進行疑難排解
 > [!NOTE]
-> 在 Visual Studio 中註冊封裝的慣用方法是使用 .pkgdef 檔案。 這可讓您進行延伸模組部署，而不需要存取系統登錄。 .Pkgdef 檔案是使用[CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)建立的。
+> 在 Visual Studio 中註冊包的首選方法是使用 .pkgdef 檔。 這允許擴展部署,而無需訪問系統註冊表。 Pkgdef 檔案是透過使用[CreatePkgDef 實用程式](../../extensibility/internals/createpkgdef-utility.md)創建的。
 
- 若要在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中使用 RegPkg 註冊封裝，您必須使用適用于您的套件的 RegPkg 版本。
+ 要在中使用 RegPkg[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]註冊包,必須使用適合您的包的 RegPkg 版本。
 
 ## <a name="regpkg-versions-related-to-package-versions"></a>與套件版本相關的 RegPkg 版本
- 有兩個版本的 RegPkg。 其中一個版本包含在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中。 使用此版本來註冊已使用下列其中一個元件建立的封裝：
+ RegPkg 有兩個版本。 中包含版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 使用此版本可以註冊使用以下程式集之一生成的套件:
 
-1. VisualStudioShell 9.0 .dll
+1. 微軟.VisualStudioShell.9.0.dll
 
-2. VisualStudioShell 10.0 .dll
+2. 微軟.VisualStudioShell.10.0.dll
 
-3. VisualStudioShell 11.0 .dll
+3. 微軟.VisualStudioShell.11.0.dll
 
-   它無法註冊使用先前的 VisualStudio 元件所建立的封裝。
+   它不能註冊使用早期的 Microsoft.VisualStudio.Shell.dll 程式集構建的包。
 
-   舊版的 RegPkg 可以註冊使用 VisualStudio 所建立的封裝，也就是。 不過，它無法註冊使用該元件的較新版本所建立的封裝。
+   早期版本的 RegPkg 可以註冊使用 Microsoft.VisualStudio.shell.dll 程式集構建的包。 但是,它不能註冊使用該程式集的更高版本生成的包。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSPackage](../../extensibility/internals/vspackages.md)

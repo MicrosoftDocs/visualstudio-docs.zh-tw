@@ -10,17 +10,17 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 9ddfe065d30b958e52e22f30f946d01d626fcf0e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591407"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>如何：替代範本中的參數
 
 從範本建立檔案時，範本參數可讓您取代類別名稱和命名空間等識別碼。 您可以將範本參數新增至現有的範本，或使用範本參數建立您自己的範本。
 
-以格式 $<參數>$ 撰寫範本參數。 如需完整的範本參數清單，請參閱[範本參數](../ide/template-parameters.md)。
+以格式 $<參數>**$ 撰寫範本參數。 如需完整的範本參數清單，請參閱[範本參數](../ide/template-parameters.md)。
 
 下節示範如何修改範本，以「安全的專案名稱」取代命名空間的名稱。
 
@@ -32,7 +32,7 @@ ms.locfileid: "75591407"
     namespace $safeprojectname$
     ```
 
-1. 在範本的 *vstemplate* 檔案中，找出包含此檔案的 `ProjectItem` 元素。
+1. 在範本的*vstemplate*檔中，找到包含`ProjectItem`此檔的元素。
 
 1. 將 `ProjectItem` 項目的 `ReplaceParameters` 屬性設定為 `true`：
 
@@ -40,9 +40,9 @@ ms.locfileid: "75591407"
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
+- [創建專案和專案範本](../ide/creating-project-and-item-templates.md)
 - [範本參數](../ide/template-parameters.md)
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
 - [ProjectItem 項目 (Visual Studio 項目範本)](../extensibility/projectitem-element-visual-studio-item-templates.md)

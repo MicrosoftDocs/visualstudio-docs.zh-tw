@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9780a4ee81a4d063b5cfb7f66b1a5ea023d8fa2f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75573400"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂驗證規則程式碼
@@ -42,17 +42,17 @@ ms.locfileid: "75573400"
 
 3. (選擇性) 在「類別庫」專案中，加入 Microsoft.VisualStudio.QualityTools.WebTestFramework DLL 的參考。
 
-4. 建立從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> 類別衍生的類別。 實作 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*> 成員。
+4. 建立從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> 類別衍生的類別。 實作<xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*> 成員。
 
 5. (選擇性) 建立新的「類別庫」專案。
 
 6. (選擇性) 在測試專案中，加入包含自訂驗證規則之類別庫專案的參考。
 
-7. 在 [測試專案] 中，使用 [Web 效能測試編輯器] 開啟 Web 效能測試。
+7. 在測試專案中，在**Web 效能測試編輯器**中打開 Web 效能測試。
 
-8. 若要將自訂驗證規則新增至 Web 效能測試要求，請以滑鼠右鍵按一下要求，然後選取 [新增驗證規則]。
+8. 要將自訂驗證規則添加到 Web 效能測試請求，請按右鍵請求並選擇 **"添加驗證規則**"。
 
-     [新增驗證規則] 對話方塊隨即出現。 您會在 [選取規則] 清單中看到您的自訂驗證規則，以及預先定義的驗證規則。 選取您的自訂驗證規則，然後選擇 [確定]。
+     [新增驗證規則]**** 對話方塊隨即出現。 您會在 [選取規則]**** 清單中看到您的自訂驗證規則，以及預先定義的驗證規則。 選取您的自訂驗證規則，然後選擇 [確定]****。
 
 9. 執行您的 Web 效能測試。
 
@@ -243,7 +243,7 @@ Namespace SampleWebTestRules
 End Namespace
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

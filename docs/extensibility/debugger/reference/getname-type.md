@@ -1,5 +1,5 @@
 ---
-title: GETNAME_TYPE | Microsoft Docs
+title: GETNAME_TYPE |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1bdcbc4171c8a481ee0c45456ef5600f5150c6d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d0d146ec4ed7340bde36b298df9d455257b35fe
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317589"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736669"
 ---
-# <a name="getnametype"></a>GETNAME_TYPE
-指定要擷取檔案的名稱類型。
+# <a name="getname_type"></a>GETNAME_TYPE
+指定要檢索的檔案的名稱類型。
 
 ## <a name="syntax"></a>語法
 
@@ -54,35 +54,35 @@ public enum enum_GETNAME_TYPE {
 
 ## <a name="fields"></a>欄位
 `GN_NAME`\
-指定的文件或內容的易記名稱。
+指定文件或上下文的友好名稱。
 
 `GN_FILENAME`\
-指定的文件或內容的完整路徑。
+指定文件或上下文的完整路徑。
 
 `GN_BASENAME`\
-指定的基底檔案名稱，而不是文件或內容的完整路徑。
+指定基本檔名,而不是文檔或上下文的完整路徑。
 
 `GN_MONIKERNAME`\
-Moniker 的表單中指定的文件或內容的唯一名稱。
+以名字物件的形式指定文檔或上下文的唯一名稱。
 
 `GN_URL`\
-指定的文件或內容的 URL 名稱。
+指定文件或上下文的 URL 名稱。
 
 `GN_TITLE`\
-如果有的話，請指定的文件的標題。
+指定文件的標題(如果存在)。
 
 `GN_STARTPAGEURL`\
-取得處理程序的起始頁面 URL。
+獲取進程的起始頁網址。
 
 ## <a name="remarks"></a>備註
-這些值會做為參數傳遞[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)， [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)，並[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法，來指定要傳回名稱的類型。
+這些值作為參數傳遞給[GetName、GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)[GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)和[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法,以指定要返回的名稱類型。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

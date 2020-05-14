@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesInfo | Microsoft Docs
+title: IDebugSymbol 供應商直接:獲取電流模塊資訊 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetCurrentModulesInfo
 - GetCurrentModulesInfo
 ms.assetid: b3b45ed2-ea4e-4389-b78a-11fc9796a6c1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 67afbf985a8fb9934c1a105d1620becc80f00535
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a51a7bbbe081d323ea478b64917507ce43b45762
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347431"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719127"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
-擷取符號群組中的模組的相關資訊。
+檢索有關符號組中模塊的資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -48,22 +48,22 @@ int GetCurrentModulesInfo(
 
 ## <a name="parameters"></a>參數
 `pCount`\
-[in]中的模組數目`ppGuids`陣列。
+[在]陣列中的`ppGuids`模組數。
 
 `ppGuids`\
-[in]陣列，其中包含模組的唯一識別碼。
+[在]包含模組的唯一標識符的陣列。
 
 `pADIds`\
-[in]針對應用程式定義域的識別項。
+[在]應用程式域的標識碼。
 
 `pCurrentState`\
-[in]目前的符號群組的狀態。
+[在]符號組的當前狀態。
 
 `ppCDModItfs`\
-[out]傳回物件，包含符號群組中的模組。
+[出]返回包含符號組中模組的物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

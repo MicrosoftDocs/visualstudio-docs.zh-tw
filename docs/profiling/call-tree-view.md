@@ -17,24 +17,24 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773331"
 ---
-# <a name="call-tree-view"></a>呼叫樹狀圖檢閱
+# <a name="call-tree-view"></a>呼叫樹狀圖檢視
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出其所呼叫的所有函式，以及這些函式呼叫的效能資料。
 
- [呼叫樹狀圖] 檢視也可展開並反白顯示花最多時間或最常取樣的函式的執行路徑。 若要顯示效能資源使用最多的路徑，請以滑鼠右鍵按一下函式，然後按一下 [展開最忙碌路徑]。
+ [呼叫樹狀圖] 檢視也可展開並反白顯示花最多時間或最常取樣的函式的執行路徑。 若要顯示效能資源使用最多的路徑，請以滑鼠右鍵按一下函式，然後按一下 [展開最忙碌路徑]****。
 
- 分析執行中的每個處理序都會顯示為根節點。 您可以設定 [呼叫樹狀圖] 檢視的開始節點，方法是以滑鼠右鍵按一下您想要設定為開始節點的節點，然後選取 [設定根目錄]。
+ 分析執行中的每個處理序都會顯示為根節點。 您可以設定 [呼叫樹狀圖] 檢視的開始節點，方法是以滑鼠右鍵按一下您想要設定為開始節點的節點，然後選取 [設定根目錄]****。
 
- 設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 您可以將根節點重設回先前檢視的節點。 在 [呼叫樹狀圖檢視] 視窗中，按一下滑鼠右鍵，然後選取 [重設根目錄]。
+ 設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 您可以將根節點重設回先前檢視的節點。 在 [呼叫樹狀圖檢視] 視窗中，按一下滑鼠右鍵，然後選取 [重設根目錄]****。
 
- [呼叫樹狀圖] 檢視可以自訂以新增或移除資料行。 以滑鼠右鍵按一下 [Column Name Title Bar] (資料行名稱標題列)，然後選取 [新增/移除資料行]。
+ [呼叫樹狀圖] 檢視可以自訂以新增或移除資料行。 以滑鼠右鍵按一下 [Column Name Title Bar] (資料行名稱標題列)****，然後選取 [新增/移除資料行]****。
 
- [呼叫樹狀圖] 檢視可以設定透過限制呈現的資料量來減少雜訊。 使用減少雜訊，可讓檢視中的效能問題更為顯著。 容易區分效能問題時，分析會較容易。 如需詳細資訊，請參閱[如何：在報表檢視中設定減少雜訊](../profiling/how-to-configure-noise-reduction-in-report-views.md)。
+ [呼叫樹狀圖] 檢視可以設定透過限制呈現的資料量來減少雜訊。 使用減少雜訊，可讓檢視中的效能問題更為顯著。 容易區分效能問題時，分析會較容易。 有關詳細資訊，請參閱[如何：在報表檢視中配置降噪](../profiling/how-to-configure-noise-reduction-in-report-views.md)。
 
 > [!NOTE]
 > 如果設定減少雜訊在啟用時顯示警告，則會在報表中顯示資訊列。
@@ -45,11 +45,11 @@ ms.locfileid: "74773331"
 
 - [呼叫樹狀圖檢視](../profiling/call-tree-view-instrumentation-data.md)
 
-- [呼叫樹狀圖檢視 - 取樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+- [調用樹狀檢視 - 採樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
 - [呼叫樹狀圖檢視](../profiling/call-tree-view-contention-data.md)
 
-## <a name="see-also"></a>請參閱
-- [效能報告檢視](../profiling/performance-report-views.md)
-- [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)
+## <a name="see-also"></a>另請參閱
+- [性能報表檢視](../profiling/performance-report-views.md)
+- [認識檢測資料值](../profiling/understanding-instrumentation-data-values.md)
 - [了解取樣資料值](../profiling/understanding-sampling-data-values.md)

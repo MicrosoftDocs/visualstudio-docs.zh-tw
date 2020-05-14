@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778085"
 ---
 # <a name="understand-performance-collection-methods"></a>了解效能收集方法
@@ -28,11 +28,11 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
 
 |方法|描述|
 |------------|-----------------|
-|[取樣](#sampling)|收集應用程式所執行的工作相關統計資料。|
-|[檢測](#instrumentation)|收集有關每個函式呼叫的詳細計時資訊。|
-|[並行](#concurrency)|收集有關多執行緒應用程式的詳細資訊。|
+|[採樣](#sampling)|收集應用程式所執行的工作相關統計資料。|
+|[儀錶](#instrumentation)|收集有關每個函式呼叫的詳細計時資訊。|
+|[併發](#concurrency)|收集有關多執行緒應用程式的詳細資訊。|
 |[.NET 記憶體](#net-memory)|收集有關 .NET 記憶體配置和記憶體回收的詳細資訊。|
-|[階層互動](#tier-interaction)|收集 SqlServer 資料庫的同步 ADO.NET 函式呼叫相關資訊。<br /><br /> 階層互動分析可以使用任何版本的 Visual Studio 來收集。 不過，階層互動分析資料只能在 Visual Studio Enterprise 中檢視。|
+|[層交互](#tier-interaction)|收集 SqlServer 資料庫的同步 ADO.NET 函式呼叫相關資訊。<br /><br /> 階層互動分析可以使用任何版本的 Visual Studio 來收集。 不過，階層互動分析資料只能在 Visual Studio Enterprise 中檢視。|
 
 藉由使用某些分析方法，您也可以收集其他資料，例如軟體和硬體的效能計數器。 如需詳細資訊，請參閱[收集其他效能資料](../profiling/collecting-additional-performance-data.md)。
 
@@ -51,11 +51,11 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
 
 [使用取樣收集效能統計資料](../profiling/collecting-performance-statistics-by-using-sampling.md)
 
-[認識取樣資料值](../profiling/understanding-sampling-data-values.md)
+[了解取樣資料值](../profiling/understanding-sampling-data-values.md)
 
 [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
 
-## <a name="instrumentation"></a>檢測設備
+## <a name="instrumentation"></a>測試設備
 
 檢測分析方法可收集已進行程式碼剖析的應用程式中詳細的函式呼叫計時資料。 檢測分析適用於下列項目：
 
@@ -76,7 +76,7 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
 
 [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)
 
-[使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)
+[使用儀器收集詳細的計時資料](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)
 
 [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)
 
@@ -114,7 +114,7 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
 
 [了解記憶體配置和物件存留期資料值](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
 
-[收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
+[收集 .NET 記憶體分配和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
 [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)
 
@@ -122,15 +122,15 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
 
 階層互動分析會將有關 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 頁面或其他應用程式與 [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] 資料庫之間的同步 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 呼叫資訊，加入至程式碼剖析資料檔案。 資料包括呼叫的數目和時間，以及最大和最小次數。 階層互動資料可以加入至利用取樣、檢測、.NET 記憶體或並行方法收集的分析資料。
 
-![階層互動分析資料](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
+![層交互設定檔資料](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
 
 由程式碼剖析工具收集的階層互動資料
 
 [收集階層互動資料](../profiling/collecting-tier-interaction-data.md)
 
-[階層互動檢視](../profiling/tier-interaction-views.md)
+[層交互視圖](../profiling/tier-interaction-views.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[如何：收集網站的效能資料](../profiling/how-to-collect-performance-data-for-a-web-site.md)
-[效能分析的初學者指南](../profiling/beginners-guide-to-performance-profiling.md)
+[如何：為網站](../profiling/how-to-collect-performance-data-for-a-web-site.md)
+收集效能資料[初學者性能分析指南](../profiling/beginners-guide-to-performance-profiling.md)

@@ -8,10 +8,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8824e1836d8a49de91cf0e3b9cccf2e85a7de18
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597343"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>用於執行負載測試的測試代理程式和測試控制器概觀
@@ -19,7 +19,7 @@ ms.locfileid: "75597343"
 Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬負載。 這些機器必須設為單一測試控制器和一個或多個測試代理程式。 測試控制器和測試代理程式可以用來產生單一電腦無法產生的多個負載。
 
 > [!NOTE]
-> 您也可以使用雲端式負載測試提供虛擬機器，產生多位使用者同時存取網站之負載。 不過，不支援在雲端裝載的虛擬機器上使用測試控制器/測試代理程式設定。 如需雲端式負載測試的詳細資訊，請參閱 [使用 Azure Test Plans 執行負載測試](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)。
+> 您也可以使用雲端式負載測試提供虛擬機器，產生多位使用者同時存取網站之負載。 但是，不支援在雲託管虛擬機器上使用測試控制器/測試代理設置。 如需雲端式負載測試的詳細資訊，請參閱 [使用 Azure Test Plans 執行負載測試](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -89,6 +89,6 @@ Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬
 
 安裝測試控制器和一個或多個代理程式後，您可以在負載測試的測試設定中指定是否使用測試控制器進行遠端執行。 此外，您還可以在測試設定中指定與代理程式關聯的角色能使用的資料和診斷配接器。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)

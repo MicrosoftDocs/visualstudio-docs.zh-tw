@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
+title: IDebug符號提供者:獲取語言 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetLanguage method
 ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dfa11a1df6460c08431d7b23fabe5d94674baad2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 876466d3617131815f6aa48b8b7dfb68b645ecb2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347607"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719236"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-這個方法會取得已編譯程式碼在偵錯位址使用的語言。
+此方法獲取用於在調試位址編譯代碼的語言。
 
 ## <a name="syntax"></a>語法
 
@@ -45,19 +45,19 @@ int GetLanguage(
 
 ## <a name="parameters"></a>參數
 `pAddress`\
-[in]位址物件，表示所[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
+[在]由[IDebug 位址](../../../extensibility/debugger/reference/idebugaddress.md)介面表示的位址物件。
 
 `pguidLanguage`\
-[out]傳回`GUID`所指定的語言。
+[出]傳回`GUID`指定語言的 。
 
 `pguidLanguageVendor`\
-[out]傳回`GUID`，指定的語言廠商。
+[出]傳回`GUID`指定 語言供應商的 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 偵錯引擎會呼叫此方法來取得所需選取正確的運算式評估工具的資訊。
+ 調試引擎調用此方法以獲取選擇正確運算式賦值器所需的資訊。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

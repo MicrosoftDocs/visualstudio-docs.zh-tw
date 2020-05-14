@@ -280,12 +280,14 @@
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: 在 IIS 電腦上對 ASP.NET 進行遠端偵錯
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
-        - name: 在 Azure 上對 ASP.NET 進行遠端偵錯
+        - name: 在 Azure 上對 ASP.NET Core 進行遠端偵錯
           href: remote-debugging-azure.md
         - name: '對 C# 或 Visual Basic 專案進行遠端偵錯'
           href: remote-debugging-csharp.md
         - name: 對 C++ 專案進行遠端偵錯
           href: remote-debugging-cpp.md
+        - name: 在 Linux 上對 .NET Core 進行遠端偵錯
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: 遠端偵錯工具連接埠指派
           href: remote-debugger-port-assignments.md
         - name: 設定 Windows 防火牆以進行遠端偵錯
@@ -445,7 +447,7 @@
             - name: 在偵錯時檢查 XAML 屬性
               href: inspect-xaml-properties-while-debugging.md
             - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md
             - name: 在 Blend 中偵錯 XAML
               href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML 和 CSS
@@ -505,7 +507,7 @@
                 - name: 在偵錯時檢查 XAML 屬性
                   href: inspect-xaml-properties-while-debugging.md
                 - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
-                  href: xaml-hot-reload.md
+                  href: ../xaml-tools/xaml-hot-reload.md
                 - name: 使用 WPF 樹狀架構視覺化檢視
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: 顯示 WPF 追蹤資訊
@@ -588,8 +590,6 @@
                   items:
                     - name: COM 伺服器和容器偵錯
                       href: com-server-and-container-debugging.md
-                    - name: 使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
-                      href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
                 - name: ActiveX 控制項
                   items:
                     - name: 對 ActiveX 控制項進行偵錯

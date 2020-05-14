@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7b0e1ca6d73e27f216f80054f87a35cf5389179
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114227"
 ---
-# <a name="options-dialog-box-environment--extensions"></a>選項對話方塊：環境 \> 延伸模組
+# <a name="options-dialog-box-environment--extensions"></a>選項對話方塊：環境\>擴展
 
 您可以使用這個頁面，設定有關 Visual Studio 如何執行更新，以及如何更新和探索擴充功能的選項。
 
@@ -35,4 +35,4 @@ ms.locfileid: "76114227"
 
 ## <a name="additional-extension-galleries"></a>其他擴充組件庫
 
-這個企業版功能可支援專屬擴充功能的組件庫。 如需詳細資訊，請參閱[私人資源庫](../../extensibility/private-galleries.md)。
+這個企業版功能可支援專屬擴充功能的組件庫。 有關詳細資訊，請參閱[私人畫廊](../../extensibility/private-galleries.md)。

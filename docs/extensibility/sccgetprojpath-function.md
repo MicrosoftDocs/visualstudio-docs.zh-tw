@@ -1,5 +1,5 @@
 ---
-title: SccGetProjPath 函式 |Microsoft Docs
+title: SccGetProjPath 功能 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b31a17e89003967aef6a423dda87572b4a07c387
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 281787da3499c081fbbe6f59b7b8175a4dbf24d7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353672"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700696"
 ---
-# <a name="sccgetprojpath-function"></a>SccGetProjPath 函式
-此函數會提示使用者輸入專案路徑，也就是只對原始檔控制外掛程式有意義的字串。 使用者時，它會呼叫：
+# <a name="sccgetprojpath-function"></a>SccGetProjPath 功能
+此函數提示使用者輸入項目路徑,這是一個僅對原始程式碼管理外掛程式有意義的字串。 當使用者為:
 
 - 建立新的專案
 
-- 將現有專案加入至版本控制
+- 將現有專案加入版本控制
 
-- 嘗試尋找現有的版本控制專案
+- 嘗試尋找現有版本控制項目
 
 ## <a name="syntax"></a>語法
 
@@ -46,73 +46,73 @@ SCCRTN SccGetProjPath (
 ### <a name="parameters"></a>參數
  pvContext
 
-[in]原始檔控制外掛程式的內容結構。
+[在]原始程式碼管理外掛程式上下文結構。
 
  hWnd
 
-[in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。
+[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
 
  lpUser
 
-[in、 out]使用者名稱 （不要超過 SCC_USER_SIZE，包括 NULL 結束字元）
+[進出]使用者名稱(不超過SCC_USER_SIZE,包括 NULL 終止符)
 
  lpProjName
 
-[in、 out]IDE 專案、 專案工作區中或 makefile （不要超過 SCC_PRJPATH_SIZE，包括 NULL 結束字元） 的名稱。
+[進出]IDE 專案、專案工作區或 makefile 的名稱(不超過SCC_PRJPATH_SIZE,包括 NULL 終止符)。
 
- lpLocalPath
+ lp 本地路徑
 
-[in、 out]專案的工作路徑。 如果`bAllowChangePath`是`TRUE`，原始檔控制外掛程式可以修改此字串 （不要超過 _MAX_PATH，包括 null 結束字元）。
+[進出]專案的工作路徑。 如果是`bAllowChangePath``TRUE`,原始程式碼管理外掛程式可以修改此字串(不超過_MAX_PATH,包括空終止符)。
 
  lpAuxProjPath
 
-[in、 out]傳回的專案路徑 （不要超過 SCC_PRJPATH_SIZE，包括 NULL 結束字元） 的緩衝區。
+[進出]返回的項目路徑的緩衝區(不超過SCC_PRJPATH_SIZE,包括 NULL 終止符)。
 
- bAllowChangePath
+ bAllow 改變路徑
 
-[in]如果是這`TRUE`，原始檔控制外掛程式可以提示您輸入並修改`lpLocalPath`字串。
+[在]如果是`TRUE`,原始程式碼管理外掛程式可以`lpLocalPath`提示和修改 字串。
 
- pbNew
+ pb 新
 
-[in、 out]傳入的值會指出是否要建立新的專案。 傳回值會指出成功建立專案：
+[進出]中的值表示是否創建新專案。 傳回的值表示建立項目的成功:
 
 |傳入|解譯|
 |--------------|--------------------|
-|true|使用者可建立新的專案。|
-|false|使用者可能不會建立新的專案。|
+|TRUE|用戶可以創建新專案。|
+|FALSE|使用者可能無法創建新專案。|
 
 |傳出|解譯|
 |--------------|--------------------|
-|true|建立新的專案。|
-|false|選取現有的專案。|
+|TRUE|創建了一個新專案。|
+|FALSE|已選擇現有專案。|
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函數的源碼管理外掛程式實現應返回以下值之一:
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|已成功建立或擷取專案。|
+|SCC_OK|已成功創建或檢索專案。|
 |SCC_I_OPERATIONCANCELED|已取消作業。|
-|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。|
-|SCC_E_CONNECTIONFAILURE|發生問題，嘗試連接到原始檔控制系統。|
+|SCC_E_ACCESSFAILURE|訪問原始程式碼管理系統時出現問題,可能是由於網路或爭用問題。|
+|SCC_E_CONNECTIONFAILURE|嘗試連接到原始程式碼管理系統時出現問題。|
 |SCC_E_NONSPECIFICERROR|發生未指定的錯誤。|
 
 ## <a name="remarks"></a>備註
- 此函式的目的是取得參數 ide`lpProjName`和`lpAuxProjPath`。 原始檔控制外掛程式會提示使用者提供這項資訊之後，它便會將這兩個字串傳遞回 IDE。 IDE 仍然存在這些字串在其方案檔案，並將它們傳遞至[SccOpenProject](../extensibility/sccopenproject-function.md)每當使用者開啟此專案。 這些字串可讓外掛程式來追蹤與專案相關的資訊。
+ 此函數的目的是使 IDE`lpProjName`取得`lpAuxProjPath`參數與 。 在原始程式碼管理外掛程式提示使用者獲取此資訊後,它將這兩個字串傳回 IDE。 IDE 將這些字串保留在其解決方案檔中,並在使用者打開此專案時將其傳遞到[SccOpenProject。](../extensibility/sccopenproject-function.md) 這些字串使外掛程式能夠追蹤與專案關聯的資訊。
 
- 第一次呼叫函式，`lpAuxProjPath`設為空字串。 `lProjName` 也可能是空的或包含 IDE 專案名稱，這可能會使用原始檔控制外掛程式，或忽略。 此函式成功傳回時，外掛程式會傳回兩個對應的字串。 IDE 會不做出任何假設這些字串，不會使用它們，並將不允許使用者修改它們。 如果使用者想要變更設定，會呼叫 IDE`SccGetProjPath`同樣地，在相同的值將它傳遞先前的收到先前的時間。 這可讓這兩個字串外掛程式完整控制。
+ 初調用函數時,`lpAuxProjPath`將設定為空字串。 `lProjName`也可能為空,或者可能包含 IDE 專案名稱,原始程式碼管理外掛程式可能使用或忽略該名稱。 當函數成功返回時,外掛程式將返回兩個相應的字串。 IDE 不對這些字串進行假設,不會使用它們,也不會允許使用者修改它們。 如果使用者想要更改設置,IDE 將再次調`SccGetProjPath`用 ,傳遞與上次接收的相同值。 這使外掛程式能夠完全控制這兩個字串。
 
- 針對`lpUser`、 IDE 可能會傳入使用者名稱，或它可能只需傳入指標設為空字串。 如果沒有使用者名稱，則原始檔控制外掛程式應該使用它做為預設值。 不過，如果沒有名稱傳遞，或具有指定名稱的登入失敗，外掛程式應該會提示使用者輸入登入和傳遞回名稱`lpUser`當它收到有效的登入。 因為外掛程式可能會變更此字串，IDE 一律會配置大小的緩衝區 (`SCC_USER_LEN`+ 1)。
+ 對於`lpUser`,IDE 可能會傳遞使用者名,也可以簡單地將指標傳遞到空字串。 如果存在使用者名,原始程式碼管理外掛程式應將其用作預設值。 但是,如果未傳遞任何名稱,或者登入失敗與給定的名稱,外掛程式應提示使用者登入,並在收到有效的登錄時將`lpUser`名稱傳回 。 由於外掛程式可能會更改此字串,因此IDE將始終分配大小緩衝區 (+1)。`SCC_USER_LEN`
 
 > [!NOTE]
-> IDE 會執行的第一個動作可能會呼叫`SccOpenProject`函式或`SccGetProjPath`函式。 因此，這兩者有相同`lpUser`參數，可讓原始檔控制外掛程式，以將使用者登入兩次。 即使從函式傳回指出失敗，外掛程式必須填妥此使用有效的登入名稱的字串。
+> IDE 執行的第一個操作可能是`SccOpenProject`對函數或函數`SccGetProjPath`的調用。 因此,它們都有相同的`lpUser`參數,這使得原始程式碼管理外掛程式可以在任一時間登錄使用者。 即使從函數返回指示失敗,外掛程式也必須用有效的登錄名填充此字串。
 
- `lpLocalPath` 是，使用者會將專案的目錄。 它可能是空字串。 如果沒有目前定義的 （若為嘗試從原始檔控制系統下載之專案的使用者） 的目錄，而且如果`bAllowChangePath`是`TRUE`，原始檔控制外掛程式可以提示使用者輸入，或使用其他方法，將其擁有字串`lpLocalPath`。 如果`bAllowChangePath`是`FALSE`，外掛程式不應該變更字串，因為使用者已使用指定的目錄中。
+ `lpLocalPath`是使用者保存專案的目錄。 它可能是一個空字串。 如果目前沒有定義目錄(例如,使用者嘗試從原始碼管理系統下載專案),如果是`bAllowChangePath``TRUE`,原始程式碼管理外掛程式可以提示使用者輸入或使用其他方法將其自己的字串放入`lpLocalPath`。 如果是`bAllowChangePath``FALSE`,外掛程式不應更改字串,因為使用者已在指定的目錄中工作。
 
- 如果使用者建立新的專案，將原始檔控制下，原始檔控制外掛程式可能無法實際建立它在原始檔控制系統中時`SccGetProjPath`呼叫。 相反地，它會傳遞回非零的值給字串`pbNew`，指出將會在原始檔控制系統中建立專案。
+ 如果用戶創建新專案以置於原始程式碼管理之下,則在調用原始`SccGetProjPath`程式碼管理系統中,原始程式碼管理外掛程式實際上可能不會創建它。 相反,它將字串與的非`pbNew`零值一起傳遞,指示將在原始程式碼管理系統中創建專案。
 
- 例如，如果中的使用者**新的專案**Visual Studio 中的精靈會將他或她的專案加入至原始檔控制、 Visual Studio 會呼叫此函式，和外掛程式判斷它是否可以在 原始檔控制系統，以建立新的專案包含 Visual Studio 專案。 如果使用者按一下**取消**之前完成精靈，永遠不會建立專案。 如果使用者按一下 **[確定]** ，Visual Studio 會呼叫`SccOpenProject`，並傳入`SCC_OPT_CREATEIFNEW`，並在該時間建立原始檔控制專案。
+ 例如,如果 Visual Studio 中的 **「新專案**」精靈中的使用者將專案添加到原始碼管理中,Visual Studio 將呼叫此函數,該外掛程式確定是否可以在原始程式碼管理系統中創建新專案以包含 Visual Studio 專案。 如果使用者在完成嚮導之前按**下 「取消」 的,** 則永遠不會建立專案。 如果用戶按下 **「確定**」,則此時將調`SccOpenProject`用 Visual `SCC_OPT_CREATEIFNEW`Studio 傳入 ,並創建源控制的專案。
 
 ## <a name="see-also"></a>另請參閱
-- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

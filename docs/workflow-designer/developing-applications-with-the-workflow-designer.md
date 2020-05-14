@@ -17,32 +17,32 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51c38a16ddbdca376dbc9788ca49783c7956d101
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597083"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301724"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>使用工作流程設計工具開發應用程式
 
-工作流程設計工具是視覺化設計工具和偵錯工具，用於在 Visual Studio 中進行[Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) （WF）應用程式的圖形化結構和偵測。 它可讓您透過使用範本和活動設計工具，來撰寫複合工作流應用程式、活動程式庫或 Windows Communication Foundation （WCF）服務。
+工作流設計器是視覺化工作室中[Windows 工作流基礎](/dotnet/framework/windows-workflow-foundation/index)（WF） 應用程式的圖形構造和調試的視覺化設計器和調試器。 它使您能夠使用範本和活動設計器組成複合工作流應用程式、活動庫或 Windows 通信基礎 （WCF） 服務。
 
-## <a name="install-windows-workflow-foundation"></a>安裝 Windows Workflow Foundation
+## <a name="install-windows-workflow-foundation"></a>安裝 Windows 工作流基礎
 
-若要使用 Visual Studio 中的工作流程專案範本，請先安裝**Windows Workflow Foundation**元件。
+要在視覺化工作室中使用工作流專案範本，請首先安裝**Windows 工作流基礎**元件。
 
-1. 開啟 Visual Studio 安裝程式。 藉由選取 [**工具**] > [**取得工具和功能**] 中的 [Visual Studio]，即可快速開啟它。
+1. 打開視覺化工作室安裝程式。 通過選擇視覺化工作室中的**工具和功能****，** > 可以快速打開它。
 
-1. 在 Visual Studio 安裝程式中，選取 [**個別元件**] 索引標籤。
+1. 在視覺化工作室安裝程式中，選擇 **"單個元件**"選項卡。
 
-1. 向下流覽至 [**開發活動**] 分類，然後選取 [ **Windows Workflow Foundation** ] 元件。
+1. 向下滾動到 **"開發活動"** 類別，然後選擇**Windows 工作流基礎**元件。
 
-   ![Visual Studio 的 Windows Workflow Foundation 元件](media/windows-workflow-foundation-component.png)
+   ![視覺化工作室的 Windows 工作流基礎元件](media/windows-workflow-foundation-component.png)
 
-1. 選取 [修改]。
+1. 選取 [修改]****。
 
-   Visual Studio 會安裝**Windows Workflow Foundation**元件。
+   視覺化工作室安裝**Windows 工作流基礎**元件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [Windows Workflow Foundation （.NET Framework）](/dotnet/framework/windows-workflow-foundation/index)
+- [Windows 工作流基礎 （.NET 框架）](/dotnet/framework/windows-workflow-foundation/index)

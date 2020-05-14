@@ -10,10 +10,10 @@ metadata:
   manager: jillfra
   ms.date: 09/17/2019
   ms.openlocfilehash: a2fc975c390283104fc4aa2c79244dba7e4e669e
-  ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/24/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "71238096"
 landingContent:
 - title: 關於部署
@@ -28,7 +28,7 @@ landingContent:
   linkLists:
   - linkListType: quickstart
     links:
-    - text: 發佈至 Azure App Service
+    - text: 發佈到 Azure App Service
       url: quickstart-deploy-to-azure.md
     - text: 發佈到適用於 Linux 的 App Service
       url: quickstart-deploy-to-linux.md

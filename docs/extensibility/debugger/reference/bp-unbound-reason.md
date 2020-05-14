@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON | Microsoft Docs
+title: BP_UNBOUND_REASON |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9de6812f3a61feca8ca8e7153fb281369c3312bd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350560"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737781"
 ---
-# <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-提供中斷點已繫結的原因。
+# <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
+給出斷點未綁定的原因。
 
 ## <a name="syntax"></a>語法
 
@@ -48,26 +48,26 @@ public enum enum_BP_UNBOUND_REASON {
 
 ## <a name="fields"></a>欄位
 `BPUR_UNKNOWN`\
-未知的原因。
+原因不明。
 
 `BPUR_CODE_UNLOADED`\
-包含中斷點的程式碼已卸載。
+已卸載包含斷點的代碼。
 
 `BPUR_BREAKPOINT_REBIND`\
-中斷點具有已重新繫結至不同的位置中。 這可以在下班之後編輯並繼續作業時的中斷點會移動，或當中斷點繫結至已不再有效的路徑與檔案。
+斷點已反彈到其他位置。 當斷點移動時,或者斷點綁定到具有不再有效的路徑的檔時,可以在"編輯並繼續"操作之後發生這種情況。
 
 `BPUR_ BREAKPOINT_ERROR`\
-中斷點會判斷它繫結之後會發生錯誤。 這是受管理的條件不再是有效的中斷點。
+斷點在綁定後被確定為錯誤。 這種情況不再有效的託管斷點會發生這種情況。
 
 ## <a name="remarks"></a>備註
-所傳回[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)方法。
+由[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)方法返回。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

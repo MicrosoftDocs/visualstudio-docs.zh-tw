@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50c5aed4f12cc5bef9bc50c2a41009de4e6ad811
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969897"
 ---
 # <a name="export-button-concurrency-visualizer"></a>匯出按鈕 (並行視覺化檢視)
-[匯出] 按鈕可讓您將專屬記錄的呼叫堆疊匯出為 .*csv* 檔案或與 Microsoft Excel 這類其他工具搭配使用。
+通過 **"匯出**"按鈕，您可以將呼叫堆疊匯出為 。用於您自己的記錄或用於其他工具（如 Microsoft Excel）的*csv*檔。
 
 ## <a name="see-also"></a>另請參閱
 - [並行視覺化檢視](../profiling/concurrency-visualizer.md)

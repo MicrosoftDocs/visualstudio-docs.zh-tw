@@ -1,5 +1,5 @@
 ---
-title: SccEnumChangedFiles 函式 |Microsoft Docs
+title: SccEnum更改檔案功能 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccEnumChangedFiles function
 ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18eab5e5785ea003976c7e291028d5ff964177d8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0b1826a87b20d6bc92254fc4a86b8e0b756400ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351873"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700910"
 ---
-# <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函式
-指定本機檔案的清單，此函式，判斷哪些檔案是從原始程式碼控制資料庫中對應的版本不同。
+# <a name="sccenumchangedfiles-function"></a>SccEnum 更改檔案功能
+給定本地檔案的清單,此函數確定哪些檔不同於原始程式碼管理資料庫中的相應版本。
 
 ## <a name="syntax"></a>語法
 
@@ -37,31 +37,31 @@ SCCRTN SccEnumChangedFiles(
 ### <a name="parameters"></a>參數
  pContext
 
-[in]原始檔控制外掛程式的內容指標。
+[在]源代碼管理外掛程式上下文指標。
 
  hWnd
 
-[in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。
+[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
 
  cFiles
 
-[in]中指定的檔案名稱數目`lpFileNames`陣列。 也會指定大小`plIsFileDifferent`陣列。
+[在]`lpFileNames`陣列中指定的檔名數。 您可以指定陣列的`plIsFileDifferent`大小 。
 
- lpFileNames
+ lpFile 名稱
 
-[in]若要檢查的本機檔案名稱的陣列。
+[在]要檢查的本地檔名陣列。
 
- plIsFileDifferent
+ PlIsFile 不同
 
-[in、 out]值，表示每個檔案的不同狀態的陣列 (陣列至少必須有`cFiles`項目)。 非零值的方法，是不同的檔案。
+[進出]指示每個文件差異狀態的值陣列(陣列必須至少有`cFiles`項目)。 非零表示檔不同。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函數的源碼管理外掛程式實現應返回以下值之一:
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|作業已順利完成。|
+|SCC_OK|作業順利完成。|
 |SCC_UNSPECIFIEDERROR|一般錯誤。|
 
 ## <a name="see-also"></a>另請參閱
-- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,36 +1,36 @@
 ---
-title: 加入及移除專案項目
+title: 新增和移除專案項目
 description: 本文件描述如何在 Visual Studio for Mac 中新增和移除專案項目
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
 ms.openlocfilehash: 94bb56fba0b90f29c291bc2c4b95976810dd21c6
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983613"
 ---
-# <a name="adding-and-removing-project-items"></a>加入及移除專案項目
+# <a name="adding-and-removing-project-items"></a>新增和移除專案項目
 
-您可以在 [Solution Pad] 的專案節點上按一下滑鼠右鍵，並瀏覽至 [新增] > [新增檔案]，以將新的專案項目新增至您的專案中：
+您可以在 [Solution Pad]**** 的專案節點上按一下滑鼠右鍵，並瀏覽至 [新增] > [新增檔案]****，以將新的專案項目新增至您的專案中：
 
 ![新增專案項目](media/add-and-remove-project-items-image1.png)
 
-這會顯示 [新增檔案] 對話方塊，其中除了預設範本之外，還會根據您所建立的應用程式類型提供檔案範本，例如空白類別或空白列舉。 例如，如果您要撰寫 iOS 應用程式，則可以選取 [分鏡腳本] 來建立新的空白分鏡腳本檔案：
+這會顯示 [新增檔案] 對話方塊，其中除了預設範本之外，還會根據您所建立的應用程式類型提供檔案範本，例如空白類別或空白列舉。 例如，如果您要撰寫 iOS 應用程式，則可以選取 [分鏡腳本]**** 來建立新的空白分鏡腳本檔案：
 
 ![在 iOS 中新增空白分鏡腳本](media/add-and-remove-project-items-image2.png)
 
 ## <a name="adding-existing-files"></a>新增現有檔案
 
-以滑鼠右鍵按一下專案節點，然後選取 [**新增] > [加入**檔案]，即可將現有的檔案加入至專案。或者，若要新增整個資料夾，請選取 [**新增] > [加入現有資料夾**]。這會顯示 [檔案瀏覽器]，讓您在系統中搜尋要新增的必要專案。
+您可以通過按右鍵"專案"節點並選擇 **"添加>添加檔..."** 將現有檔添加到專案中。或者，要添加整個資料夾，請選擇"**添加>添加現有資料夾..."** 這將顯示檔瀏覽器，允許您在系統中搜索要添加的所需專案。
 
 ## <a name="removing-items"></a>移除項目
 
-若要移除目前專案中的項目，請以滑鼠右鍵按一下項目，然後選取 [移除]
+若要移除目前專案中的項目，請以滑鼠右鍵按一下項目，然後選取 [移除]****
 
-![移除項目](media/add-and-remove-project-items-image3.png)
+![Remove Item](media/add-and-remove-project-items-image3.png)
 
 這會顯示刪除項目對話方塊。 請選取其中一個選項，將它從專案中移除：
 
@@ -39,6 +39,6 @@ ms.locfileid: "74983613"
 * **刪除** - 從專案和磁碟中移除項目。
 * **從專案中移除** - 從專案中移除項目，但不會從磁碟中移除項目
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio (Windows)中的方案和專案](/visualstudio/ide/solutions-and-projects-in-visual-studio)

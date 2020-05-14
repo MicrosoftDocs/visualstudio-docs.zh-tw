@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595445"
 ---
 # <a name="secure-applications"></a>保護應用程式
@@ -38,11 +38,11 @@ ms.locfileid: "75595445"
 - [Dotfuscator](dotfuscator/index.md)　為免費，而且有助於保護 .NET 組件不會遭受反向工程和未經授權的使用，例如未經授權的偵錯。
 - [強式名稱簽署](managing-assembly-and-manifest-signing.md)可以用來唯一識別軟體元件，並防止名稱詐騙。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [.NET 中的安全性](/dotnet/standard/security/index)
+- [.NET 的安全性](/dotnet/standard/security/index)
 - [Azure 安全性](/azure/security/)
 - [Windows 10 行動裝置版安全性指南](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Apache Cordova 平台安全性功能](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
 - [ASP.NET Core 安全性](/aspnet/core/security/?view=aspnetcore-2.1)
-- [Windows Forms 安全性](/dotnet/framework/winforms/windows-forms-security)
+- [Windows 表單安全性](/dotnet/framework/winforms/windows-forms-security)

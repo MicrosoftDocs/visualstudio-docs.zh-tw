@@ -2,7 +2,7 @@
 # [新功能](whats-new-in-subscriptions.md)
 # 訂閱
 ## 購買訂用帳戶
-### [零售](https://visualstudio.microsoft.com/vs/pricing)
+### [零售](buy-activate-retail.md)
 ### 雲端 
 #### [概觀](vscloud-overview.md)
 #### [計費常見問題集](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [管理 MPN 的訂閱](manage-mpn-subscriptions.md)
 ### [Microsoft for Startups](program-startups.md)
 ## 登入 
-### [啟用零售訂用帳戶](activate-store-subscriptions.md)
 ### [使用 Microsoft 帳戶登入](sign-in-msa.md)
 ### [使用公司/學校帳戶登入](sign-in-work.md)
 ### [使用 GitHub 登入](sign-in-github.md)
@@ -28,17 +27,19 @@
 #### [Azure DevTest 個人點數](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Azure DevTest 隨用隨付](vs-azure-payg.md)
+#### [Azure EA DevTest](azure-ea-devtest.md)
 #### [CAST 醒目提示](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility + Security](vs-ems.md)
-#### [Microsoft 365](vs-m365.md)
-#### [Office 365 訂閱](vs-office365.md)
+#### [Microsoft 365 開發人員](vs-m365.md)
+#### [Office 365 Pro Plus](vs-office365.md)
 #### [Parasoft](vs-parasoft.md)
 #### [Power BI Pro](vs-pbi.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Visual Studio IDE](vs-ide-benefit.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Windows 開發人員帳戶](vs-windows-dev.md)
+#### [Windows 虛擬桌面](vs-windows-virtual-desktop.md)
 ### 專業開發
 #### [CODE Magazine](vs-code-magazine.md)
 #### [DataCamp](vs-datacamp.md)
@@ -73,10 +74,10 @@
 ### [進階管理員與系統管理員](admin-roles.md)
 ### [設定合約喜好設定](admin-prefs.md)
 ### [概觀](using-admin-portal.md)
-### [影片教學課程：使用管理入口網站](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### 指派訂用帳戶
 #### [新增單一使用者](assign-license.md)
 #### [新增多個使用者](assign-license-bulk.md)
+#### [指派特定訂閱](assign-guid.md)
 ### [編輯訂用帳戶](edit-license.md)
 ### [刪除訂用帳戶](delete-license.md)
 ### [搜尋訂閱](search-license.md)

@@ -1,120 +1,120 @@
 ---
-title: 作法：安裝原始檔控制外掛程式 |Microsoft Docs
+title: 如何:安裝原始程式碼管理外掛程式 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9c0ac87aec3d6ac2532909772238e020e33bf78f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334917"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707998"
 ---
-# <a name="how-to-install-a-source-control-plug-in"></a>HOW TO：安裝原始檔控制外掛程式
-建立原始檔控制外掛程式包含三個步驟：
+# <a name="how-to-install-a-source-control-plug-in"></a>如何:安裝原始碼管理外掛程式
+建立原始碼管理外掛程式包括三個步驟:
 
-1. 使用這份文件原始檔控制外掛程式 API 參考 > 一節中所定義的函式中建立 DLL。
+1. 使用本文件的源碼管理外掛程式 API 引用部分中定義的函數創建 DLL。
 
-2. 實作原始檔控制外掛程式 API 定義的函式。 當[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]呼叫，讓介面和對話方塊可從外掛程式。
+2. 實現原始程式碼管理外掛程式 API 定義的功能。 調用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]時,使介面和對話框可從外掛程式。
 
-3. 藉由適當的登錄項目註冊 DLL。
+3. 通過進行適當的註冊表項來註冊 DLL。
 
 ## <a name="integration-with-visual-studio"></a>與 Visual Studio 整合
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援原始檔控制外掛程式符合原始檔控制外掛程式 API。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支援符合原始碼管理外掛程式 API 的原始程式碼管理外掛程式。
 
-### <a name="register-the-source-control-plug-in"></a>註冊的原始檔控制外掛程式
- 原始檔控制系統可以呼叫執行的整合式的開發環境 (IDE) 之前，它必須先找到原始檔控制外掛程式 API 會將匯出的 DLL。
+### <a name="register-the-source-control-plug-in"></a>註冊原始程式管理外掛程式
+ 在正在執行的整合式開發環境 (IDE) 可以呼叫原始程式碼管理系統之前,必須首先找到匯出 API 的原始程式碼管理外掛程式 DLL。
 
-#### <a name="to-register-the-source-control-plug-in-dll"></a>若要註冊的原始檔控制外掛程式的 DLL
+#### <a name="to-register-the-source-control-plug-in-dll"></a>註冊原始程式碼管理外掛程式 DLL
 
-1. 新增兩個項目底下**HKEY_LOCAL_MACHINE**中的索引鍵**軟體**子機碼，指定您的公司名稱的子機碼後接您的產品名稱子機碼。 模式是**HKEY_LOCAL_MACHINE\SOFTWARE\\\<公司名稱 >\\\<產品名稱 >\\\<項目 >**  =  *值*。 兩個項目一律會呼叫**SCCServerName**並**SCCServerPath**。 每一個都是一般的字串。
+1. 在 **「軟體」** 子鍵中**HKEY_LOCAL_MACHINE**鍵下添加兩個條目,該鍵指定公司名稱子鍵後跟產品名稱子鍵。 該模式是**HKEY_LOCAL_MACHINE_\\\<軟體 公司\\\<名稱>產品名稱\\\<>條目>** = *值*。 這兩個項目始終稱為**SCCServer 名稱**和**SCCServerPath**。 每個字串都是常規字串。
 
-    比方說，如果您的公司名稱是 Microsoft 和您的原始檔控制產品稱為 SourceSafe，則此登錄路徑會**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe**。 在這個子機碼，第一個項目中， **SCCServerName**，是使用者可讀的字串命名您的產品。 第二個項目中， **SCCServerPath**，來源的完整路徑控制 IDE 應該連接至的外掛程式 DLL。 以下提供範例登錄項目：
+    例如,如果您的公司名稱是 Microsoft,並且原始程式碼管理產品名為 SourceSafe,則此註冊表路徑將為**HKEY_LOCAL_MACHINE_SOFTWARE_Microsoft_SourceSafe**。 在此子鍵中,第一個條目**SCCServerName**是用戶可讀的字串,用於命名您的產品。 第二個條目**SCCServerPath**是 IDE 應連接到的原始程式碼管理外掛程式 DLL 的完整路徑。 下面提供了範例註冊表項:
 
-   |範例登錄項目|範例值|
+   |範例註冊表條目|範例值|
    |---------------------------|------------------|
-   |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerName|Microsoft Visual SourceSafe|
-   |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerPath|*c:\vss\win32\ssscc.dll*|
+   |HKEY_LOCAL_MACHINE_SOFTWARE_微軟\來源安全\SCCServer名稱|Microsoft Visual SourceSafe|
+   |HKEY_LOCAL_MACHINE_SOFTWARE_微軟\來源安全\SCCServer路徑|*c:\vss_win32_sscc.dll*|
 
    > [!NOTE]
-   > SCCServerPath 是 SourceSafe 外掛程式的完整路徑。 您的原始檔控制外掛程式會使用不同的公司和產品名稱，但相同的登錄項目路徑。
+   > SCCServerPath 是源安全外掛程式的完整路徑。 原始程式碼管理外掛程式將使用不同的公司和產品名稱,但相同的註冊表輸入路徑。
 
-2. 下列選擇性的登錄項目可用來修改您的原始檔控制外掛程式的行為。 為相同的子機碼中的這些項目移**SccServerName**並**SccServerPath**。
+2. 以下可選註冊表項可用於修改原始程式碼管理外掛程式的行為。 這些項目與**SccServerName**和**SccServerPath**位於同一個子鍵中。
 
-   - **HideInVisualStudioregistry**可以使用項目，如果您不想控制隨插即用-單元才會出現在您的來源**外掛程式選取範圍**份[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 此項目也會影響自動切換到原始檔控制外掛程式。 此項目的的可能用法之一是如果您提供的原始碼控制套件，以取代您的原始檔控制外掛程式，但您想要讓使用者從使用原始檔控制外掛程式，以便在原始檔控制套件移轉更容易。 安裝原始檔控制套件時，它會設定此登錄項目，會隱藏外掛程式。
+   - 如果您不希望原始程式碼管理外掛[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]程式出現在的**外掛程式選擇**清單中,可以使用**HideInVisualStudio 註冊表**。 此項目還將影響自動切換到原始程式碼管理外掛程式。 此項的一個可能用途是,如果提供一個原始程式碼管理包,以取代原始程式碼管理外掛程式,但您希望使用戶更容易從使用原始程式碼管理外掛程式遷移到原始程式碼管理包。 安裝原始程式碼管理包時,它會設置此註冊表項,該註冊表項將隱藏外掛程式。
 
-      **HideInVisualStudio**是 DWORD 值，且設定為*1*隱藏外掛程式或*0*顯示外掛程式。 如果未出現的登錄項目，預設行為是顯示外掛程式。
+      **HideInVisualStudio**是一個 DWORD 值,設置為*1*以隱藏外掛程式或*0*以顯示外掛程式。 如果未顯示註冊表項,則默認行為是顯示外掛程式。
 
-   - **DisableSccManager**登錄項目可以用來停用或隱藏**啟動\<原始檔控制伺服器 >** 通常會出現的功能表選項**檔案** > **原始檔控制**子功能表。 選取此功能表選項呼叫[SccRunScc](../../extensibility/sccrunscc-function.md)函式。 您的原始檔控制外掛程式可能不支援外部程式，因此您可能想要停用，或甚至隱藏**啟動**功能表選項。
+   - **"禁用SccManager**註冊表"可用於禁用或隱藏啟動**\<源控制伺服器>** 功能表選項,該功能表通常出現在 **'檔案** > **源控制"** 子功能表下。 選擇此功能表選項將調用[SccRunScc](../../extensibility/sccrunscc-function.md)函數。 源代碼管理外掛程式可能不支援外部程式,因此您可能需要禁用甚至隱藏 **「啟動」** 選單選項。
 
-      **DisableSccManager**是 DWORD 值，且設定為*0*若要啟用**啟動\<原始檔控制伺服器 >** 功能表選項，設定為*1*至停用功能表選項，並將設定為*2*隱藏功能表選項。 如果未出現此登錄項目，預設行為是顯示的功能表選項。
+      **禁用SccManager**是一個 DWORD 值,設置為*0*以啟用**啟動\<源控制伺服器>** 選單選項,設置為*1*以禁用功能表選項,並設置為*2*以隱藏選單選項。 如果未顯示此註冊表項,則默認行為是顯示功能表選項。
 
-   | 範例登錄項目 | 範例值 |
+   | 範例註冊表項 | 範例值 |
    | - |--------------|
-   | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio | 1 |
-   | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager | 1 |
+   | HKEY_LOCAL_MACHINE_SOFTWARE_微軟_來源安全_隱藏視覺工作室 | 1 |
+   | HKEY_LOCAL_MACHINE_SOFTWARE_微軟\來源安全\禁用Scc管理員 | 1 |
 
-3. 新增子機碼中， **SourceCodeControlProvider**下方**HKEY_LOCAL_MACHINE**中的索引鍵**軟體**子機碼。
+3. 在**軟體**子鍵中**HKEY_LOCAL_MACHINE**鍵下添加子鍵 **「原始程式碼控制提供者**」。
 
-    這個子機碼，登錄項目底下**ProviderRegKey**設為字串，表示您放置在步驟 1 中的登錄子機碼。 模式是**HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *軟體\\< 公司名稱\>\\< 產品名稱\>* .
+    在此子鍵下,註冊表項**提供程式 RegKey**設置為一個字串,該字串表示您在步驟 1 中放置在註冊表中的子鍵。 模式是**HKEY_LOCAL_MACHINE_SOFTWARE_原始碼控制提供者\供應商RegKey** = *\\軟體\>\\\><公司名称<产品名称*。
 
-    以下是這個子機碼的範例內容。
+    以下是此子鍵的示例內容。
 
    |登錄項目|範例值|
    |--------------------|------------------|
-   |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey|SOFTWARE\Microsoft\SourceSafe|
+   |HKEY_LOCAL_MACHINE_SOFTWARE_原始程式碼控制提供者\供應商雷吉|軟體\微軟\來源安全|
 
    > [!NOTE]
-   > 您的原始檔控制外掛程式會使用相同的子機碼和項目名稱，但此值將會不同。
+   > 原始程式碼管理外掛程式將使用相同的子鍵和條目名稱,但值將不同。
 
-4. 建立名為的子機碼**InstalledSCCProviders**下方**SourceCodeControlProvider**子機碼，並將放置該子機碼下的一個項目。
+4. 在**原始碼管理提供程式**子鍵下建立名為 **「已安裝SCC提供程式」** 的子鍵,然後將一個項目放在該子鍵下。
 
-    此項目的名稱 （如同 SCCServerName 項目指定的值），提供者的使用者可讀名稱且值為，同樣地，在步驟 1 中建立的子機碼。 模式是**HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< 顯示名稱\>**  = *軟體\\< 公司名稱\>\\< 產品名稱\>* 。
+    此條目的名稱是提供程式的用戶可讀名稱(與為 SCCServerName 條目指定的值相同),該值再次成為步驟 1 中創建的子鍵。 模式是**HKEY_LOCAL_MACHINE_SOFTWARE_源代碼控制提供程式\已安裝SCC\\供應商<顯示名稱\>***\\\>\\\>* = 軟體<公司名稱<產品名稱。
 
-    例如: 
+    例如：
 
-   |範例登錄項目|範例值|
+   |範例註冊表項|範例值|
    |---------------------------|------------------|
-   |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\Microsoft Visual SourceSafe|SOFTWARE\Microsoft\SourceSafe|
+   |HKEY_LOCAL_MACHINE_SOFTWARE_原始程式碼控制提供者\已安裝SCC供應商\微軟視覺源安全|軟體\微軟\來源安全|
 
    > [!NOTE]
-   > 可以有多個原始檔控制外掛程式在這種方式中註冊。 這是如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]找出所有安裝原始檔控制外掛程式 API 為基礎的外掛程式。
+   > 可以以這種方式註冊多個原始程式碼管理外掛程式。 這是查找[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]所有已安裝的基於 API 的原始程式碼管理外掛程式的方式。
 
-## <a name="how-an-ide-locates-the-dll"></a>IDE 如何找出 DLL
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 有兩個方式來尋找原始檔控制外掛程式 DLL:
+## <a name="how-an-ide-locates-the-dll"></a>IDE 如何定位 DLL
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 有兩種尋找原始碼管理外掛程式 DLL 的方法:
 
-- 尋找預設原始檔控制外掛程式並連接到它以無訊息模式。
+- 查找預設原始程式碼管理外掛程式並靜默連接到它。
 
-- 尋找所有已註冊的原始檔控制外掛程式，從中使用者選擇其中一個。
+- 查找使用者從中選擇一個的所有已註冊的原始程式碼管理外掛程式。
 
-  若要找出 DLL 中的第一個方法，IDE 會尋找底下**HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider**子機碼項目的**ProviderRegKey**。 此項目的值會指向另一個子機碼。 IDE 接著會尋找名為的項目**SccServerPath**下方的第二個子機碼中**HKEY_LOCAL_MACHINE**。 此項目的值會指向該 DLL 中的 IDE。
-
-> [!NOTE]
-> IDE 無法載入 Dll 從相對路徑 (例如 *.\NewProvider.DLL*)。 必須指定 DLL 的完整路徑 (例如*c:\Providers\NewProvider.DLL*)。 這是藉由防止未經授權或模擬外掛程式的 Dll 載入加強安全性的 IDE。
-
- 若要在第二種方法中，找出 DLL，IDE 會尋找底下**HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders**子機碼的所有項目。 每個項目都有名稱和值。 IDE 會向使用者顯示這些名稱的清單。 當使用者選擇的名稱時，IDE 會在指向子機碼所選取名稱尋找的值。 IDE 會尋找名為的項目**SccServerPath**下方的子機碼中**HKEY_LOCAL_MACHINE**。 這個項目的值會指向正確的 DLL 中的 IDE。
-
- 原始檔控制外掛程式需要支援兩種尋找 DLL，因此，設定**ProviderRegKey**，覆寫任何先前的設定。 更重要的是，它必須加入本身的清單**InstalledSccProviders**這樣使用者就能選擇使用哪一個原始檔控制外掛程式。
+  要以第一種方式定位 DLL,IDE 將查找項目**提供程式 RegKey****的HKEY_LOCAL_MACHINE\軟體\原始碼管理提供程式**子鍵下。 此條目的值指向另一個子鍵。 然後,IDE 在**HKEY_LOCAL_MACHINE**下的第二個子鍵中查找名為**SccServerPath**的條目。 此條目的值將 IDE 指向 DLL。
 
 > [!NOTE]
-> 因為**HKEY_LOCAL_MACHINE**機碼時，只有一個原始檔控制外掛程式可以註冊為預設原始檔控制外掛程式指定的電腦上 (不過，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]讓使用者可以判斷哪一個原始檔控制外掛程式他們想要實際用於特定的解決方案）。 在安裝過程中，檢查看看是否已經設定原始檔控制外掛程式;如果是的話，，詢問使用者要設定新的原始檔控制外掛程式安裝為預設值。 在 解除安裝期間請勿移除通用於所有原始檔控制外掛程式中的其他登錄子機碼**HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider**; 移除只有您特定 SCC 子機碼。
+> IDE 不會從相對路徑載入 DLL(例如 *,._NewProvider.DLL*)。 必須指定 DLL 的完整路徑(例如 *,c:\提供程式\NewProvider.DLL)。* 這通過防止載入未經授權的或類比的外掛程式 DLL 來增強 IDE 的安全性。
 
-## <a name="how-the-ide-detects-version-1213-support"></a>IDE 會 1.2/1.3 版支援的偵測
- 如何沒有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵測是否外掛程式支援原始檔控制外掛程式 API 版本 1.2 和 1.3 功能嗎？ 若要宣告進階的功能，原始檔控制外掛程式必須實作對應的函式：
+ 要以第二種方式查找 DLL,IDE 會查找所有條目**的HKEY_LOCAL_MACHINE\軟體\原始程式碼管理提供程式\已安裝SCCProviders**子鍵下。 每個條目都有一個名稱和一個值。 IDE 向使用者顯示這些名稱的清單。 當用戶選擇名稱時,IDE 會查找指向子鍵的選定名稱的值。 IDE 在**HKEY_LOCAL_MACHINE**下該子鍵中查找名為**SccServerPath**的條目。 該條目的值將IDE指向正確的DLL。
 
- 首先，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]會檢查呼叫所傳回的值[SccGetVersion](../../extensibility/sccgetversion-function.md)。 它必須是大於或等於 1.2。
+ 源代碼管理外掛程式需要支援找到 DLL 的方法,從而設置**提供程式 RegKey,** 覆蓋任何以前的設置。 更重要的是,它必須將自己添加到**已安裝 Scc 提供程式**清單中,以便用戶可以選擇要使用的原始程式碼管理外掛程式。
 
- 下一步[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]判斷是否支援特定的新功能藉由檢查`lpSccCaps`上的引數[SccInitialize](../../extensibility/sccinitialize-function.md)。
+> [!NOTE]
+> 由於使用了**HKEY_LOCAL_MACHINE**密鑰,因此在給定電腦上只能將一個原始程式碼管理外掛程式註冊為預設原始程式碼管理外掛[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]程式(但是, 允許用戶確定要實際用於特定解決方案的原始程式碼管理外掛程式)。 在安裝過程中,請檢查是否設置了原始程式碼管理外掛程式;如果安裝過程,請檢查是否已設置原始程式碼管理外掛程式。如果是這樣,請詢問使用者是否將安裝的新原始程式碼管理外掛程式設置為預設值。 在卸載期間,不要刪除**HKEY_LOCAL_MACHINE_SOFTWARE_SourceCodeControlProvider**; 中所有原始程式碼外掛程式所共有的其他註冊表子鍵。僅刪除您的特定 SCC 子金鑰。
 
- 如果這些條件都符合，就可以呼叫在 1.2 和 1.3 版中支援的新函式。
+## <a name="how-the-ide-detects-version-1213-support"></a>IDE 如何檢測版本 1.2/1.3 支援
+ 如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵測外掛程式是否支援原始程式碼管理外掛程式 API 版本 1.2 和 1.3 功能? 要聲明進階功能,原始程式碼管理外掛程式必須實現相應的功能:
+
+ 首先,[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通過調用[SccGetVersion](../../extensibility/sccgetversion-function.md)檢查返回的值。 它必須大於或等於1.2。
+
+ 接下來,[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通過`lpSccCaps`檢查[Scc 初始化](../../extensibility/sccinitialize-function.md)上的參數來確定是否支援特定的新功能。
+
+ 如果滿足這兩個條件,則可以調用版本 1.2 和 1.3 中支援的新功能。
 
 ## <a name="see-also"></a>另請參閱
-- [開始使用原始檔控制外掛程式](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
+- [開始使用原始碼管理外掛程式](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

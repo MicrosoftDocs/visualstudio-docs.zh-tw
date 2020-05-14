@@ -1,33 +1,33 @@
 ---
-title: 執行控制和狀態評估 |Microsoft Docs
+title: 執行控制和狀態評估 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], execution control
 - expression evaluation, control of execution
 ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bda531e94bdea07ee37eed2b0b79e6f0667ba28e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dc76ae97e8baa6ce78dd4d565109d6a19e2051e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315247"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738749"
 ---
-# <a name="execution-control-and-state-evaluation"></a>執行控制和狀態評估
-偵錯應用程式需要實作逐步執行函式、 中斷點、 停止和繼續執行這類執行控制項功能。 Visual Studio 偵錯基底偵錯工具元件之間傳送的事件其執行控制項。
+# <a name="execution-control-and-state-evaluation"></a>執行控制及狀態評估
+調試應用程式需要實現諸如步進函數、在斷點停止和繼續執行等執行控制功能。 Visual Studio 除錯以除錯器元件之間發送的事件,其執行控制。
 
 ## <a name="in-this-section"></a>本節內容
- [程式控制項](../../extensibility/debugger/program-control.md)列出的程式層級發生下列常式： 設定下一個陳述式、 執行、 逐步執行、 繼續、 暫停及繼續。
+ [程式控制](../../extensibility/debugger/program-control.md)列出了在程式級別發生的以下例程:設置下一個語句、執行、步進、繼續、掛起和恢復。
 
- [中斷點相關的方法](../../extensibility/debugger/breakpoint-related-methods.md)定義繫結和暫止中斷點的 Visual Studio 支援的類型。
+ [與斷點相關的方法](../../extensibility/debugger/breakpoint-related-methods.md)定義 Visual Studio 支援的綁定和掛起的斷點類型。
 
- [呼叫堆疊評估](../../extensibility/debugger/call-stack-evaluation.md)討論實作的方法，以便檢視呼叫堆疊的堆疊框架處於中斷模式時。
+ [呼叫堆疊評估](../../extensibility/debugger/call-stack-evaluation.md)討論允許在中斷模式下查看調用堆疊堆疊幀的方法的實現。
 
- [運算式評估](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)說明如何偵錯引擎 (DE)、 運算式評估 (EE) 和工作階段偵錯管理員參與的剖析和其中一個 IDE 視窗中輸入運算式的評估。
+ [運算運算](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)說明除錯引擎 (DE)、表示式運算 (EE) 和工作階段除錯管理員如何參與對輸入到 IDE 視窗之一的表示式的解析和評估。
 
- [控制事件](../../extensibility/debugger/control-events.md)討論用來在受控制的程式執行期間傳送事件的介面。
+ [控制事件](../../extensibility/debugger/control-events.md)討論用於在程式受控執行期間發送事件的介面。

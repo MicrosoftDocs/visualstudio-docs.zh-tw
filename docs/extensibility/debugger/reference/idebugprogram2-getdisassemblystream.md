@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetDisassemblyStream |Microsoft Docs
+title: IDebugProgram2::獲取拆解流 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetDisassemblyStream
 ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 71389ef210d50becaab4d25e29194c2a40000497
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2160f963ad1f3f37291519ced30b8096e33a6116
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308767"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722857"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
-取得此程式或此程式的組件的反組譯碼資料流。
+獲取此程式或此程式的一部分的拆解流。
 
 ## <a name="syntax"></a>語法
 
@@ -45,19 +45,19 @@ int GetDisassemblyStream( 
 
 ## <a name="parameters"></a>參數
 `dwScope`\
-[in]指定的值從[DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)定義反組譯碼資料流的範圍的列舉型別。
+[在]指定定義拆解流範圍[的DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)枚舉中的值。
 
 `pCodeContext`\
-[in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示要從何處開始反組譯碼資料流的位置。
+[在][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件,表示啟動拆解流的位置。
 
 `ppDisassemblyStream`\
-[out]傳回[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)物件，表示反組譯碼資料流。
+[出]返回表示拆解[流的IDebugDisdisssstream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_DISASM_NOTSUPPORTED`反組譯碼不支援此特定的架構。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。 如果`E_DISASM_NOTSUPPORTED`此特定體系結構不支援拆解,則返回。
 
 ## <a name="remarks"></a>備註
- 如果`dwScopes`參數具有`DSS_HUGE`旗標[DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)列舉型別，則反組譯碼應該會傳回大量的反組譯碼指示，例如，整個檔案或模組。 如果`DSS_HUGE`未設定旗標，則應該反組譯碼不再侷限於小的區域，通常是，在單一函式。
+ 如果`dwScopes`參數[DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)具有`DSS_HUGE`DISASSEMBLY_STREAM_SCOPE 枚 舉集的標誌,則拆解應返回大量拆解指令,例如,對於整個檔或模組。 如果未設置`DSS_HUGE`標誌,則拆解應限制為一個小區域,通常是單個函數的區域。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

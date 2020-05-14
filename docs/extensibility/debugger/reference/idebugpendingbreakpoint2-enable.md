@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Enable | Microsoft Docs
+title: IDebug 待定突破點2::啟用 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::Enable method
 - Enable method
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f05424cfb9e3188c3b4306ad961de24f6757e807
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f796aef9533e3861a870b0a0543ae6b4aeb11de1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311672"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725900"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
-切換暫止中斷點的啟用的狀態。
+切換掛起斷點的啟用狀態。
 
 ## <a name="syntax"></a>語法
 
@@ -42,18 +42,18 @@ int Enable(
 
 ## <a name="parameters"></a>參數
 `fEnable`\
-[in]設定為非零 (`TRUE`) 若要啟用暫止中斷點的行，或為零 (`FALSE`) 若要停用。
+[在]設置為非零`TRUE`( ) 以啟用掛起的斷點,`FALSE`或設置為零 ( ) 以禁用。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果中斷點已遭刪除。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。 如果`E_BP_DELETED`斷點已被刪除,則返回。
 
 ## <a name="remarks"></a>備註
-當暫止中斷點已啟用或停用時，它從繫結的所有中斷點會都設定成相同的狀態。
+啟用或禁用掛起的斷點時,從該斷點綁定的所有斷點都設置為相同的狀態。
 
-可能會視需要多次呼叫這個方法，即使已啟用或停用中斷點。
+即使斷點已啟用或禁用,也可以根據需要多次調用此方法。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法來簡單`CPendingBreakpoint`公開的物件[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。
+下面的示例演示如何為公開`CPendingBreakpoint`[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面的簡單對象實現此方法。
 
 ```cpp
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)

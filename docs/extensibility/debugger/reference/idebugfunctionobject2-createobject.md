@@ -1,28 +1,28 @@
 ---
-title: IDebugFunctionObject2::CreateObject |Microsoft Docs
+title: IDebug函數物件2::創建物件 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2::CreateObject
 - CreateObject
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87d1c2cd71b57136e26a2bc30004547dc4b8dee5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6de1a30a032919a90fbb3d760837d5eeca00feaf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313417"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728487"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
-建立會使用指定評估旗標設定和逾時值的建構函式的物件。
+創建使用建構函數給定評估標誌設置和超時值的物件。
 
 ## <a name="syntax"></a>語法
 
@@ -50,28 +50,28 @@ int CreateObject (
 
 ## <a name="parameters"></a>參數
 `pConstructor`\
-[in][IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)物件，表示要建立之物件的建構函式。
+[在]表示要建立物件的建構函數的[IDebug 函式物件](../../../extensibility/debugger/reference/idebugfunctionobject.md)。
 
 `dwArgs`\
-[in]中的參數數目`pArg`陣列。 表示傳遞至建構函式的參數數目。
+[在]陣列中的`pArg`參數數。 表示傳遞給構造函數的參數數。
 
 `pArgs`\
-[in]陣列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示的參數傳遞至建構函式。
+[在][IDebugObject 物件的](../../../extensibility/debugger/reference/idebugobject.md)陣列,表示傳遞給建構函數的參數。
 
 `dwEvalFlags`\
-[in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉，指定要如何進行評估。
+[在][EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)枚舉中的標誌組合,用於指定如何執行計算。
 
 `dwTimeout`\
-[in]最大時間 （毫秒），這個方法返回之前等候。 使用**無限**無限期等候。
+[在]從此方法返回之前等待的最大時間(以毫秒為單位)。 使用**INFINITE**無限期等待。
 
 `ppObject`\
-[out]傳回**IDebugObject**代表新建立的物件。
+[出]返回表示新創建物件的**IDebugObject。**
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 呼叫這個方法來建立物件，表示類別或其他需要的建構函式，為參數的複雜類型的執行個體。
+ 調用此方法以創建表示類實例的物件,或需要構造函數(即參數)的其他複雜類型。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

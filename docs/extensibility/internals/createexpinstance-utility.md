@@ -1,5 +1,5 @@
 ---
-title: CreateExpInstance 公用程式 |Microsoft Docs
+title: 建立實體實用程式 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - createexpinstance
 - createexpinst
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed03833b6c109ca78feb86c1cfe41fa453022c66
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6a6b302976495e6067fad14317856cda4ac4625f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341907"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709247"
 ---
-# <a name="createexpinstance-utility"></a>CreateExpInstance 公用程式
-使用**CreateExpInstance**公用程式來建立、 重設，或刪除 Visual Studio 的實驗執行個體。 您可以使用實驗性執行個體，偵錯及測試 Visual Studio 擴充功能，而不需要變更基礎的產品。
+# <a name="createexpinstance-utility"></a>建立 ExpInstance 實用程式
+使用**CreateExpInstance**實用程式創建、重置或刪除 Visual Studio 的實驗實例。 您可以使用實驗實例調試和測試 Visual Studio 擴展,而無需更改基礎產品。
 
 ## <a name="syntax"></a>語法
 
@@ -31,28 +31,28 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 ```
 
 ## <a name="parameters"></a>參數
- **/ 建立**建立實驗執行個體。
+ **/建立**創建實驗實例。
 
- **/ 重設**刪除實驗的執行個體，並接著會建立一個新。
+ **/重置**刪除實驗實例,然後創建新實例。
 
- **/ 清除**刪除實驗執行個體。
+ **/清潔**刪除實驗實例。
 
- **/ VSInstance**目錄，其中包含要複製基底的 Visual Studio 執行個體的名稱。
+ **/VS實體**包含要複製的基本 Visual Studio 實體的目錄名稱。
 
- **/ RootSuffix**的後置字元附加至實驗執行個體目錄的名稱。
+ **/根素綴**追加到實驗實例目錄名稱的後綴。
 
 ## <a name="remarks"></a>備註
- 當您使用 Visual Studio 擴充功能上時，您可以按 f5 鍵開啟預設的實驗執行個體，然後安裝目前的擴充功能。 如果實驗執行個體功能，Visual Studio 會建立一個具有預設設定。
+ 處理 Visual Studio 擴充時,可以按 F5 打開預設實驗實例並安裝當前擴展。 如果沒有可用的實驗實例,Visual Studio 將創建具有預設設置的實例。
 
- 實驗執行個體的預設位置取決於 Visual Studio 版本號碼。 例如，Visual Studio 2015 中，位置是 *%localappdata%\Microsoft\VisualStudio\14.0Exp\\* 。 目錄位置中的所有檔案都視為該執行個體的一部分。 除非目錄名稱會變成預設位置，任何其他的實驗性執行個體不會載入 Visual studio。
+ 實驗實例的預設位置取決於 Visual Studio 版本號。 例如,對於 Visual Studio 2015,位置為 *%localappdata%*微軟_VisualStudio_14.0Exp\\*。 目錄位置中的所有檔都被視為該實例的一部分。 除非目錄名稱更改為預設位置,否則 Visual Studio 不會載入任何其他實驗實例。
 
- 在開啟的實驗執行個體時，visual Studio 不會存取系統登錄。 這不同於舊版的 Visual Studio 中，使用的登錄區的實驗性版本。
+ Visual Studio 打開實驗實例時無法訪問系統註冊表。 這與早期版本的 Visual Studio 不同,後者使用註冊表配置單元的實驗版本。
 
- **CreateExpInstance**公用程式來取代**VsRegEx**公用程式。
+ **CreateExpEx**實用程式取代了**VsRegEx**實用程式。
 
- 下列範例會重設 Visual Studio 的預設實驗性執行個體：
+ 以下範例重置 Visual Studio 的預設實驗實例:
 
- **CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp**
+ **建立Expinstance.exe /重置/VSInstance=14.0 /RootSuffix_Exp**
 
 ## <a name="see-also"></a>另請參閱
 - [VSPackage](../../extensibility/internals/vspackages.md)

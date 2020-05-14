@@ -1,5 +1,5 @@
 ---
-title: 步驟5：將您的 ASP.NET Core 應用程式部署至 Azure
+title: 第 5 步：將ASP.NET核心應用部署到 Azure
 description: 透過此影片和逐步指示，將您的 ASP.NET Core Web 應用程式部署至 Azure。
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -17,13 +17,13 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77580026"
 ---
-# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>步驟5：將您的 ASP.NET Core 應用程式部署至 Azure
+# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>第 5 步：將ASP.NET核心應用部署到 Azure
 
 請遵循這些步驟來將您的 ASP.NET Core 應用程式和其資料庫部署至 Azure。
 
@@ -37,7 +37,7 @@ _觀看此影片並跟著操作，以將您的第一個 ASP.NET Core 應用程�
 
 ## <a name="publish-to-azure-app-service"></a>發佈到 Azure App Service
 
-在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 保留 [App Service] 和 [建立新的] 的預設設定，然後按一下 [發佈] 按鈕。 如果您還沒有 Azure 帳戶，請按一下 [建立您的免費 Azure 帳戶] 並完成簡短的註冊程序。
+在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]****。 保留 [App Service]**** 和 [建立新的]**** 的預設設定，然後按一下 [發佈]**** 按鈕。 如果您還沒有 Azure 帳戶，請按一下 [建立您的免費 Azure 帳戶]**** 並完成簡短的註冊程序。
 
 新增 SQL Server。 指定系統管理員使用者名稱和密碼。
 
@@ -45,19 +45,19 @@ _觀看此影片並跟著操作，以將您的第一個 ASP.NET Core 應用程�
 
 新增 Application Insights。
 
-按一下 [建立] 按鈕以繼續。
+按一下"**創建**"按鈕以繼續。
 
 ![Visual Studio 2019 建立新的 Azure App Service](media/vs-2019/vs2019-azure-create-new-app-service.png)
 
 ## <a name="exploring-the-azure-portal-and-your-hosted-app"></a>探索 Azure 入口網站和您的託管應用程式
 
-建立應用程式服務之後，您的網站會在瀏覽器中啟動。 當瀏覽器在載入時，您也可以在 Azure 入口網站中尋找該 App Service。 若您探索應用程式服務的可用選項，您會找到 [概觀] 區段，您可以在該處啟動和停止應用程式。
+建立應用程式服務之後，您的網站會在瀏覽器中啟動。 當瀏覽器在載入時，您也可以在 Azure 入口網站中尋找該 App Service。 若您探索應用程式服務的可用選項，您會找到 [概觀]**** 區段，您可以在該處啟動和停止應用程式。
 
 ![Azure App Service 選項](media/vs-2019/vs2019-azure-app-service-menu-options.png)
 
 ### <a name="scalability"></a>延展性
 
-您可以檢查選項，將應用程式相應增加和相應放大。相應增加指的是將指定給裝載應用程式的每個實例的資源提高。 相應放大是指增加裝載您應用程式之執行個體的數目。 您可以為應用程式設定自動調整，這樣系統會增加裝載您應用程式之執行個體的數量，以回應負載增加，然後會在負載減少時減少執行個體。
+您可以檢查用於向上和擴展應用的選項。向上擴展是指增加給託管應用的每個實例的資源。 相應放大是指增加裝載您應用程式之執行個體的數目。 您可以為應用程式設定自動調整，這樣系統會增加裝載您應用程式之執行個體的數量，以回應負載增加，然後會在負載減少時減少執行個體。
 
 ### <a name="security-and-compliance"></a>安全性與合規性
 

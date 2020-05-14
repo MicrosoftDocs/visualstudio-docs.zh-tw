@@ -1,28 +1,28 @@
 ---
-title: IDebugCustomAttributeQuery::GetCustomAttributeByName |Microsoft Docs
+title: IDebug自定義屬性查詢::按名稱獲取自定義屬性 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::GetCustomAttributeByName
 - GetCustomAttributeByName
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df4dfa880104b9989e49761beb823c960de85391
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e1c87fd105d2dbdc18bd4689c4680f2825c9e3be
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346062"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732636"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
-擷取自訂屬性，指定其名稱。
+檢索給定其名稱的自定義屬性。
 
 ## <a name="syntax"></a>語法
 
@@ -44,19 +44,19 @@ int GetCustomAttributeByName(
 
 ## <a name="parameters"></a>參數
 `pszCustomAttributeName`\
-[in]自訂屬性的名稱。
+[在]自定義屬性的名稱。
 
 `ppBlob`\
-[in、 out]包含自訂屬性資料的位元組陣列。
+[in,出]包含自定義屬性數據的位元組。
 
 `pdwLen`\
-[out]以位元組為單位的長度`ppBlob`參數。
+[出]`ppBlob`參數的長度(以位元組為單位)。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回 `S_OK`。 如果自訂屬性不存在，就會傳回`S_FALSE`。 否則會傳回錯誤碼。
+如果成功，則傳回 `S_OK`。 如果自訂屬性不存在,請傳`S_FALSE`回 。 否則會傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法，如**CDebugClassFieldSymbol**公開 （expose） 的物件[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)介面。
+下面的範例展示如何為公開[IDebugCustom屬性查詢](../../../extensibility/debugger/reference/idebugcustomattributequery.md)介面的**CDebugClassFieldSymbol**物件實現此方法。
 
 ```cpp
 HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(

@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::IsCustomAttributeDefined |Microsoft Docs
+title: IDebugMethod欄位:是自定義屬性定義 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::IsCustomAttributeDefined method
 ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f088a3e0fb3cd88d2b5d178ed61441d52c9efe16
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d60e7a451a18ff8efbf47a008831109cd7f747c9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324131"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727114"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
-判斷是否已定義特定的自訂屬性。
+確定是否已定義特定的自定義屬性。
 
 ## <a name="syntax"></a>語法
 
@@ -41,10 +41,10 @@ int IsCustomAttributeDefined(
 
 ## <a name="parameters"></a>參數
 `pszCustomAttributeName`\
-[in]字串，包含要尋找的自訂屬性的名稱。
+[在]包含要尋找的自訂屬性的名稱的字串。
 
 ## <a name="return-value"></a>傳回值
- 會傳回 S_OK 如果自訂屬性定義在此方法，否則會傳回 S_FALSE。
+ 如果在此方法上定義了自定義屬性,則返回S_OK,否則返回S_FALSE。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

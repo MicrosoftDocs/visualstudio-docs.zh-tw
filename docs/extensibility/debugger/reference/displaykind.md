@@ -1,27 +1,27 @@
 ---
-title: DisplayKind |Microsoft Docs
+title: 顯示金德 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c15726a3725b756e646e73804643f6b1ab36374
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7634ae3ee03b7e577f0621ffc263e4d45bfe194
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318270"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737258"
 ---
 # <a name="displaykind"></a>DisplayKind
-列舉有效的值，代表要從需要的資訊種類[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，並向使用者顯示。
+枚舉表示要從[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件獲取的資訊類型並顯示給使用者的有效值。
 
 ## <a name="syntax"></a>語法
 
@@ -52,14 +52,14 @@ public enum enum_DisplayKind
 欄位的名稱。
 
 `DisplayKind_Type`\
-欄位型別。
+欄位的類型。
 
 ## <a name="requirements"></a>需求
-標頭：Ee.h
+標題: Ee.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE | Microsoft Docs
+title: BP_COND_STYLE |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ded3d31f9be2d0a02a238ead4bc989cc21b4922a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca704ca186308ea9e44c4fa7edc6617cbac806eb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351818"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738108"
 ---
-# <a name="bpcondstyle"></a>BP_COND_STYLE
-指定中斷點條件樣式暫止和繫結中斷點。
+# <a name="bp_cond_style"></a>BP_COND_STYLE
+指定掛起和綁定斷點的斷點條件樣式。
 
 ## <a name="syntax"></a>語法
 
@@ -46,23 +46,23 @@ public enum enum_BP_COND_STYLE {
 
 ## <a name="fields"></a>欄位
 `BP_COND_NONE`\
-當到達中斷點的位置時，就會引發中斷點。 沒有指定中斷點條件。
+到達斷點位置時觸發斷點。 未指定斷點條件。
 
 `BP_COND_WHEN_TRUE`\
-條件運算式與中斷點相關聯的時評估為僅，就會引發中斷點`true`。
+僅當與斷點關聯的條件表達式計算到`true`時,才觸發斷點。
 
 `BP_COND_WHEN_CHANGED`\
-引發中斷點與中斷點相關聯的條件式運算式的值時，才已經從其先前的評估。
+僅當與斷點關聯的條件表達式的值與其以前的計算相比發生更改時,才觸發斷點。
 
 ## <a name="remarks"></a>備註
-用於`styleCondition`隸屬[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構。
+用於[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構`styleCondition`的成員。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

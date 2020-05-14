@@ -1,5 +1,5 @@
 ---
-title: VisibilityConstraints 元素 |Microsoft Docs
+title: 可見性約束元素 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - VSCT XML schema elements, VisibilityConstraints
 - VisibilityConstraints element (VSCT XML schema)
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee64b4b8ccebe6e63b5c558df68e0a5625b37884
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b1aaa9573b883910ac6fa5d921a9bc79ce1c1cf3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310658"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698197"
 ---
-# <a name="visibilityconstraints-element"></a>VisibilityConstraints 元素
-VisibilityConstraints 元素會決定靜態群組的命令和工具列可見。 可見性會先受到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]沒有載入 VSPackage 的整合式的開發環境 (IDE)。
+# <a name="visibilityconstraints-element"></a>可見性限制元素
+"可見性約束"元素確定命令組和工具列組的靜態可見性。 可見性首先由[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 控制,無需載入 VSPackage。
 
 ## <a name="syntax"></a>語法
 
@@ -39,20 +39,20 @@ VisibilityConstraints 元素會決定靜態群組的命令和工具列可見。 
 
 |屬性|描述|
 |---------------|-----------------|
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[VisibilityItem 元素](../extensibility/visibilityitem-element.md)|決定命令和工具列的靜態可見。|
-|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|決定靜態群組的命令和工具列可見。|
+|[可見性項目元素](../extensibility/visibilityitem-element.md)|確定命令和工具列的靜態可見性。|
+|[可見性限制](../extensibility/visibilityconstraints-element.md)|確定命令組和工具列的靜態可見性。|
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|描述|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表 VSPackage 提供給 IDE 的命令 （例如，功能表項目、 功能表、 工具列和下拉式方塊） 的所有項目。|
+|[指令表元素](../extensibility/commandtable-element.md)|定義表示 VSPackage 向 IDE 提供的命令的所有元素(例如,功能表項、功能表、工具列和組合框)。|
 
 ## <a name="example"></a>範例
 
@@ -64,5 +64,5 @@ VisibilityConstraints 元素會決定靜態群組的命令和工具列可見。 
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [VisibilityItem 元素](../extensibility/visibilityitem-element.md)
-- [Visual Studio 命令表 (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [可見性項目元素](../extensibility/visibilityitem-element.md)
+- [視覺化工作室命令表 (.Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

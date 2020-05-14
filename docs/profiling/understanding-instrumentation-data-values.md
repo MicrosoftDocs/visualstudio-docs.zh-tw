@@ -12,15 +12,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3dace7b13816c63664ccb4dabfed52d1c5fb7523
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778072"
 ---
 # <a name="understand-instrumentation-data-values"></a>了解檢測資料值
 
-Visual Studio 的「檢測」分析方法會記錄所分析應用程式中函式呼叫、程式碼行及指示的詳細計時資訊
+Visual Studio 的「檢測」** 分析方法會記錄所分析應用程式中函式呼叫、程式碼行及指示的詳細計時資訊
 
 檢測方法會在已進行程式碼剖析的二進位檔中目標函式的開始和結束處，以及在那些函式每次呼叫其他函式的前後插入程式碼。 插入程式碼會記錄下列資訊︰
 
@@ -32,11 +32,11 @@ Visual Studio 的「檢測」分析方法會記錄所分析應用程式中函式
 
 對於呼叫堆疊上的每個函式，在記錄間隔時，分析工具分析會將間隔加入至函式的四個資料值之一或多個值。 分析會根據兩項準則將間隔加入至函式的資料值：
 
-- 函式程式碼或「子函式」 (由該函式呼叫的函式) 中是否發生間隔。
+- 函式程式碼或「子函式」** (由該函式呼叫的函式) 中是否發生間隔。
 
 - 間隔中是否發生作業系統事件。
 
-函式間隔的資料值或資料範圍稱為「功能內含耗用」、「功能專屬耗用」、「應用程式內含」及「應用程式專屬」：
+函式間隔的資料值或資料範圍稱為「功能內含耗用」**、「功能專屬耗用」**、「應用程式內含」** 及「應用程式專屬」**：
 
 - 函式的所有間隔都會加入至功能內含耗用資料值。
 
@@ -96,7 +96,7 @@ Visual Studio 的「檢測」分析方法會記錄所分析應用程式中函式
 
 100 * 函式應用程式專屬 / 工作階段應用程式內含
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[分析效能工具資料](../profiling/analyzing-performance-tools-data.md)
+[分析性能工具資料](../profiling/analyzing-performance-tools-data.md)
 [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)

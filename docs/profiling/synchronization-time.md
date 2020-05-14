@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae73f7b9a9838a006dce47bf44b0ed46aa0b84fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62965306"
 ---
 # <a name="synchronization-time"></a>同步處理時間
@@ -29,4 +29,4 @@ ms.locfileid: "62965306"
   若要了解執行緒封鎖事件的根本原因，請仔細檢查封鎖的呼叫堆疊和分析報表。
 
 ## <a name="see-also"></a>另請參閱
-- [執行緒檢視](../profiling/threads-view-parallel-performance.md)
+- [執行緒視圖](../profiling/threads-view-parallel-performance.md)

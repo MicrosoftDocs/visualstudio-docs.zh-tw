@@ -1,5 +1,5 @@
 ---
-title: IDebugReturnValueEvent2 | Microsoft Docs
+title: IDebug返回值事件2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReturnValueEvent2
 ms.assetid: 2daded43-e427-4fbb-a19e-f3834e3723af
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03f3a46c7213a48b527f2756e5a4915ca59e48f8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d0afc4284795ae8dcae7b41d9207ddc6e7c11e67
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345662"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720258"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
-這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 之後逐步執行出或函式。
+此介面由除錯引擎 (DE) 在離開或超過函數後發送到工作階段調試管理員 (SDM)。
 
 ## <a name="syntax"></a>語法
 
@@ -28,28 +28,28 @@ ms.locfileid: "66345662"
 IDebugReturnValueEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- DE 會實作這個介面來報告出或透過已分層式的函式的傳回值。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](/cpp/atl/queryinterface)若要存取`IDebugEvent2`介面。
+## <a name="notes-for-implementers"></a>實施者說明
+ DE 實現此介面以報告已退出或退出的函數的返回值。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與此介面相同的對象上實現。 SDM 使用[查詢介面](/cpp/atl/queryinterface)訪問`IDebugEvent2`介面。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- DE 建立，並傳送這個事件物件，以報告函式的傳回值。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)附加至正在進行偵錯程式時，會將 SDM 所提供的回呼函式。
+## <a name="notes-for-callers"></a>通話備註
+ DE 創建並發送此事件物件以報告函數的返回值。 該事件使用 SDM 在附加到正在調試的程式時提供的[IDebugEvent 回檔2](../../../extensibility/debugger/reference/idebugeventcallback2.md)回檔函數進行發送。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IDebugReturnValueEvent2`。
 
 |方法|描述|
 |------------|-----------------|
-|[GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)|取得跳離函式傳回的值。|
+|[GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)|獲取退出函數時返回的值。|
 
 ## <a name="remarks"></a>備註
- 函式所傳回的值，可由呼叫[GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)。 傳回的值會出現在**自動變數**視窗。
+ 函數返回的值可以通過調用[GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)獲得。 返回的值將顯示在 **「自動」** 視窗中。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

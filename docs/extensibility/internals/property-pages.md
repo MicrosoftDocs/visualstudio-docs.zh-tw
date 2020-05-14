@@ -1,5 +1,5 @@
 ---
-title: 屬性頁 |Microsoft Docs
+title: 屬性頁 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,77 +7,77 @@ helpviewer_keywords:
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51487b35686da9676f201a157ddb8e47afb75ce8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ac788f51bcdc52cd39469a272909890333c5016b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72725050"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706061"
 ---
 # <a name="property-pages"></a>屬性頁
-使用者可以使用屬性頁來查看和變更與專案設定相關且獨立的屬性。 在 **屬性** 視窗中，或在提供所選取物件之屬性頁視圖的物件方案總管 工具列上，會啟用 **屬性頁** 按鈕。 屬性頁是由環境所建立，適用于方案和專案。 不過，它們也可以提供給使用設定相依屬性的專案專案。 當專案中的檔案需要不同的編譯器切換設定才能正確建立時，可能會使用這項功能。
+用戶可以使用屬性頁查看和更改與專案配置無關的屬性和 - 獨立屬性。 屬性**頁**按鈕在 **「屬性」** 視窗或解決方案資源管理器工具列上為提供所選物件的屬性頁視圖的物件啟用。 屬性頁由環境創建,可用於解決方案和專案。 但是,它們也可以提供給使用與配置相關的屬性的專案項。 當專案中的檔需要不同的編譯器開關設置才能正確生成時,可能會使用此功能。
 
 ## <a name="using-property-pages"></a>使用屬性頁
- 如果屬性頁已顯示，而選取範圍變更（例如，從方案到專案），則頁面中顯示的資訊會變更，以顯示新選取專案的屬性。 如果物件上沒有支援屬性頁的屬性，則屬性頁會是空的。
+ 如果屬性頁已顯示且所選內容發生更改(例如,從解決方案到專案),則頁面中顯示的資訊將更改以顯示新選擇的屬性。 如果物件上沒有支援屬性頁的屬性,則屬性頁為空。
 
- 如果選取多個物件，[屬性] 頁面會顯示所有選取專案的屬性交集。 如果選取的專案未包含 [設定相依屬性]，而且按一下 [方案總管] 工具列上的 [**屬性頁**] 按鈕，焦點就會變更為屬性視窗。 如需屬性視窗和選取專案的相關詳細資訊，請參閱[擴充屬性](../../extensibility/internals/extending-properties.md)。
+ 如果選擇了多個物件,則屬性頁將顯示所有選定項的屬集。 如果所選項不包含與配置相關的屬性,並且按下"解決方案資源管理器"工具列上**的屬性頁**按鈕,則對焦將更改為"屬性"視窗。 關於屬性視窗與選擇的詳細資訊,請參考[副檔屬性](../../extensibility/internals/extending-properties.md)。
 
- 如果顯示多個物件的屬性，而且您變更了屬性頁上的值，則物件的所有值都會設定為新值，即使它們最初是不同的，而且當個別物件的屬性顯示時，該頁面也會是空白的。
+ 如果為多個物件顯示屬性,並在屬性頁上更改值,則物件的所有值都設置為新值,即使它們最初不同,並且當顯示單個物件的屬性時頁面為空也是如此。
 
- @No__t_1 中提供兩種一般類型的**ProjectProperty 頁面**對話方塊。 在第一個中，針對 Visual Basic 專案，例如，使用欄位格式來顯示內容頁，如下列螢幕擷取畫面所示。 在第二個（如本節稍後所示）中，屬性頁會主控類似于 [屬性] 視窗中找到的屬性方格。
+ 中提供了兩種一般類型的**項目屬性頁**[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]對話框 。 例如,在第一個中,對於 Visual Basic 專案,屬性頁使用欄位格式顯示,如下圖所示。 在第二部分(本節後面顯示)中,屬性頁承載的屬性網格與屬性視窗中的屬性網格類似。
 
- ![Visual Basic 屬性頁](../../extensibility/internals/media/vsvbproppages.gif "vsVBPropPages")具有欄位格式和樹狀結構的專案屬性頁對話方塊
+ ![視覺化基本屬性頁](../../extensibility/internals/media/vsvbproppages.gif "vsVBPropPages")具有欄位格式與樹結構的項目屬性頁對話框
 
- [屬性頁] 對話方塊中的樹狀結構不是使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 建立的。 環境（根據 <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> 介面傳遞給它的層級名稱）會建立它。
+ 屬性頁對話框中的樹結構不是使用 建<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>構的 。 環境基於介面<xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages><xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>傳遞給它的級別名稱,生成它。
 
- @No__t_0 屬性頁上只能使用兩個最上層的類別：
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]屬性頁面上只有兩個頂級類別可用:
 
-- 通用屬性，會顯示所選取物件或物件的與設定無關的資訊。 如此一來，當選取其中一個 [通用屬性] 子類別時，就無法使用位於對話方塊頂端的 [設定]、[平臺] 和 [Configuration Manager] 選項。
+- 公共屬性,它顯示所選物件或物件與配置無關的資訊。 因此,當選擇「通用屬性」子類別之一時,對話框頂部的「設定、平臺」和「設定管理員」選項不可用。
 
-- 設定屬性，其中包含與解決方案或專案的偵錯工具、優化和組建參數相關的設定相關資訊。
+- 配置屬性,其中包含與解決方案或項目的調試、優化和生成參數相關的配置資訊。
 
-  您無法建立任何額外的頂層類別，但可以選擇不要在 `IVsPropertyPage` 的執行中顯示其中一種。 例如，如果您沒有任何與設定無關的屬性可顯示給物件，您可以選擇不顯示 [通用屬性] 類別。 當您在設定物件（執行 `IVsCfg`、`IVsProjectCfg` 和相關介面的物件）中執行 `ISpecifyPropertyPages` 時，您會顯示通用屬性（如果 `ISpecifyPropertyPages` 是從專案的流覽物件和設定屬性中執行）。
+  不能創建任何其他頂級類別,但可以選擇在的實現中不顯示其中一`IVsPropertyPage`個類別。 例如,如果您沒有任何與配置無關的屬性要顯示物件,則可以選擇不顯示"公共屬性"類別。 在配置物件(對`ISpecifyPropertyPages`象`IVsCfg`實現`IVsProjectCfg`) 和相關介面中實現時,如果從專案`ISpecifyPropertyPages`的流覽物件和配置屬性實現,則顯示公共屬性。
 
-  最上層類別底下顯示的每個類別，都代表個別的屬性頁。 對話方塊中可用的類別和子類別目錄專案，是由您的 `ISpecifyPropertyPages` 和 `IVsPropertyPage` 的執行所決定。
+  顯示在頂級類別下的每個類別表示單獨的屬性頁。 對話框中可用的類別和子類別條目由和`ISpecifyPropertyPages``IVsPropertyPage`的實現確定。
 
-  `IDispatch` 選取容器中的專案物件，其中包含要在屬性頁上顯示的屬性，可執行 `ISpecifyPropertyPages` 來列舉類別識別碼的清單。 類別識別碼會當做變數傳遞至 `ISpecifyPropertyPages`，並用來具現化屬性頁。 類別識別碼清單也會傳遞給 `IVsPropertyPage`，以在對話方塊的左側建立樹狀結構。 屬性頁接著會將資訊傳回至執行 `ISpecifyPropertyPages` 的 `IDispatch` 物件，並填入每個頁面的資訊。
+  `IDispatch`選擇容器中具有要在屬性頁上顯示的屬性的物件,以`ISpecifyPropertyPages`枚舉類 I 的清單。 類I以變數傳遞到`ISpecifyPropertyPages`,並用於實例化屬性頁。 類別指示清單也會傳遞給,`IVsPropertyPage`以建立對話框左邊的樹結構。 然後,屬性頁將信息傳遞回實現`IDispatch``ISpecifyPropertyPages`並填充每個頁面的資訊的物件。
 
-  流覽物件的屬性是使用選取容器中每個物件的 `IDispatch` 來抓取。
+  使用`IDispatch`選擇容器中的每個物件檢索流覽物件的屬性。
 
-  在 VSPackage 中執行 `Help::DisplayTopicFromF1Keyword` 可提供 [說明] 按鈕的功能。
+  在`Help::DisplayTopicFromF1Keyword`VSPackage 中實現為"説明"按鈕提供了功能。
 
-  如需詳細資訊，請參閱 MSDN library 中的 `IDispatch` 和 `ISpecifyPropertyPages`in。
+  有關詳細資訊,請參閱`IDispatch`MSDN`ISpecifyPropertyPages`庫中和。
 
-  範例中顯示的第二個屬性頁類型會主控屬性方格的形式，如下列螢幕擷取畫面所示。
+  示例中顯示的第二種屬性頁承載屬性網格的形式,如下圖所示。
 
-  ![VC 屬性頁](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")具有屬性方格的 [屬性頁] 對話方塊
+  ![VC 屬性頁](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")屬性頁對話框包含屬性格線
 
-  @No__t_0 和 `IVSMDPropertyGrid` 的介面（在 vsmanaged 中宣告）是用來建立和填入對話方塊或視窗內的屬性方格。
+  介面`IVSMDPropertyBrowser``IVSMDPropertyGrid`和 (在 vs 託管.h 中聲明)用於在對話框或視窗中創建和填充屬性網格。
 
-  從舊版的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，專案的架構已大幅變更。 特別是，使用中專案的概念已變更。 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中，沒有使用中專案的概念。 在先前的開發環境中，使用中的專案是組建和部署命令會預設為的專案，不論內容為何。 現在，解決方案會控制並仲裁哪些組建和部署命令適用于哪些專案。
+  與過去的版本相比,專案的體系結構已經發生了很大變化[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 特別是,哪個項目處於活動狀態的概念已經改變。 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中,沒有活動專案的概念。 在以前的開發環境中,活動項目是產生和部署指令的項目,無論上下文如何,都預設為 。 現在,解決方案控制和仲裁生成和部署命令適用於哪些專案。
 
-  先前的作用中專案現在是以三種不同的方式之一來捕捉：
+  以前處於活動狀態的項目現在以三種不同方式之一捕獲:
 
-- 啟始專案
+- 啟動項目
 
-   您可以從方案的屬性頁指定專案或專案，當使用者按下 F5 或從 [組建] 功能表選取 [執行] 時，就會啟動。 這的運作方式類似于舊的使用中專案，其名稱會以粗體字顯示在方案總管中。
+   您可以從解決方案的屬性頁指定專案或專案,當使用者按 F5 或從「生成」功能表中選擇「執行」時,該專案將啟動該專案或專案。 其工作方式與舊活動項目類似,其名稱以粗體顯示在解決方案資源管理器中。
 
-   您可以藉由呼叫 `DTE.Solution.SolutionBuild.StartupProjects`，將啟始專案當做 automation 模型中的屬性來抓取。 在 VSPackage 中，您可以呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> 或 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> 方法。 `IVsSolutionBuildManager` 是以服務方式提供，`QueryService` 在 SID_SVsSolutionBuildManager 上。 如需詳細資訊，請參閱[專案設定物件](../../extensibility/internals/project-configuration-object.md)和[解決方案](../../extensibility/internals/solution-configuration.md)設定。
+   您可以通過調`DTE.Solution.SolutionBuild.StartupProjects`用 來檢索啟動專案作為自動化模型中的屬性。 在 VSPackage 中,<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>呼<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>叫或方法。 `IVsSolutionBuildManager`可在SID_SVsSolutionBuildManager`QueryService`作為服務提供。 關於詳細資訊,請參考[專案設定物件](../../extensibility/internals/project-configuration-object.md)與[解決方案設定](../../extensibility/internals/solution-configuration.md)。
 
-- 有效的解決方案組建設定
+- 活動解決方案產生設定
 
-   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 具有有效的解決方案設定，可在自動化模型中藉由執行 `DTE.Solution.SolutionBuild.ActiveConfiguration` 來取得。 解決方案設定是一個集合，其中包含方案中每個專案的一個專案設定（每個專案可以在多個平臺上有多個具有不同名稱的設定）。 如需與解決方案的屬性頁相關的詳細資訊，請參閱[解決方案](../../extensibility/internals/solution-configuration.md)設定。
+   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]具有活動解決方案配置,可通過實現`DTE.Solution.SolutionBuild.ActiveConfiguration`在自動化模型中提供。 解決方案配置是一個集合,其中包含解決方案中每個專案的一個專案配置(每個專案可以在多個平臺上具有多個配置,名稱不同)。 有關解決方案屬性頁的詳細資訊,請參閱[解決方案設定](../../extensibility/internals/solution-configuration.md)。
 
-- 目前選取的專案
+- 目前選取的項目
 
-   執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> 方法，以取出專案階層和專案專案，或選取的專案。 從 DTE，您會使用 `SelectedItems.SelectedItem.Project` 和 `SelectedItems.SelectedItem.ProjectItem` 方法。 核心 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 檔的這些標題底下有範例程式碼。
+   實現方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A>以檢索專案層次結構和專案項或所選項。 在 DTE 中,`SelectedItems.SelectedItem.Project`您`SelectedItems.SelectedItem.ProjectItem`將使用和方法。 核心[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]文件中這些標題下有示例代碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 - [專案組態物件](../../extensibility/internals/project-configuration-object.md)

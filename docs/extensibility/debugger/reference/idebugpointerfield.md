@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField | Microsoft Docs
+title: IDebugPointerfield |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerField interface
 ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6939296fa2bfa59aad1824529f8b708a4cd5cb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a69797cc513b96c364f0357f22788fc9bcd65657
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308851"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725603"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
-這個介面會表示為指標類型。
+此介面表示指標類型。
 
 ## <a name="syntax"></a>語法
 
@@ -28,30 +28,30 @@ ms.locfileid: "66308851"
 IDebugPointerField : IDebugContainerField
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 符號提供者會實作這個介面來代表指標。
+## <a name="notes-for-implementers"></a>實施者說明
+ 符號提供程式實現此介面以表示指標。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 使用[QueryInterface](/cpp/atl/queryinterface)若要取得從這個介面[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)傳回`FIELD_TYPE_POINTER`。
+## <a name="notes-for-callers"></a>通話備註
+ 如果[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)傳回`FIELD_TYPE_POINTER`,請使用[查詢介面](/cpp/atl/queryinterface)從[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面獲取此介面。
 
-## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 上的方法除了`IDebugField`和`IDebugContainerField`介面，這個介面會實作下列方法：
+## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
+ 除了`IDebugField``IDebugContainerField`和介面上的方法之外,此介面還實現以下方法:
 
 |方法|描述|
 |------------|-----------------|
-|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述指標的目標。|
+|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|返回描述指標目標的[IDebugField。](../../../extensibility/debugger/reference/idebugfield.md)|
 
 ## <a name="remarks"></a>備註
- 在 C /C++，如果使用它來使用陣列標記法指標可以是一個容器。 例如，假設`char *pString`，`pString`的類型指標為`char`。 `pString[3]` 具有型別的一種容器，是一個指向`char`參考該容器的第四個項目。
+ 在 C/C++ 中,如果指標與陣列表示法一起使用,則可以是容器。 例如,給定`char *pString``pString`的具有`char`指向的指標類型。 `pString[3]`具有容器的類型,該容器是引用`char`該容器的第四個元素的指標。
 
 ## <a name="requirements"></a>需求
- 標頭： sh.h
+ 標題: sh.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

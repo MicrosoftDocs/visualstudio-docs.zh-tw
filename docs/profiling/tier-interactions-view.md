@@ -13,19 +13,19 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778137"
 ---
 # <a name="tier-interactions-view"></a>階層互動檢視
 
 階層互動分析提供透過 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 與資料庫通訊的多介層應用程式函式執行時間的其他資訊。 只針對同步函式呼叫收集資料。
 
-**Requirements**
+**需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 互動檢視會以兩個窗格顯示階層互動資料︰
 
@@ -33,7 +33,7 @@ ms.locfileid: "74778137"
 
 - 當您按一下主要窗格中的資料庫呼叫節點時，該資料庫呼叫的執行個體資料隨即會顯示在詳細資料窗格中。
 
-  時間會以毫秒數或 CPU 時脈週期數來顯示。 若要變更顯示的時間單位，請按一下 [工具] 功能表，按一下 [選項]，然後選擇其中一項 [時間值顯示為] 選項。
+  時間會以毫秒數或 CPU 時脈週期數來顯示。 若要變更顯示的時間單位，請按一下 [工具]**** 功能表，按一下 [選項]****，然後選擇其中一項 [時間值顯示為]**** 選項。
 
 ## <a name="master-pane"></a>主要窗格
 

@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Microsoft Docs
+title: IDebugcomPlus符號提供者::從位置獲取位址 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetAddressesInModuleFromPosition
 - IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 ms.assetid: f901c66e-f53c-4ea0-8004-d8fcbf46f916
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3000b93a9ce7f3ba56325943d48c5ac686ddde38
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7295d49faa8799731a13f500b31d436df6dc66a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338718"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734027"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
-將指定的模組中的文件位置對應的偵錯位址陣列。
+將指定模組中的文件位置映射到調試位址陣列。
 
 ## <a name="syntax"></a>語法
 
@@ -50,28 +50,28 @@ int GetAddressesInModuleFromPosition(
 
 ## <a name="parameters"></a>參數
 `ulAppDomainID`\
-[in]應用程式定義域識別項。
+[在]應用程式域識別碼。
 
 `guidModule`\
-[in]模組的唯一識別碼。
+[在]模組的唯一標識碼。
 
 `pDocPos`\
-[in]文件位置。
+[在]文檔位置。
 
 `fStatmentOnly`\
-[in]如果`TRUE`，限制為單一陳述式的偵錯位址。
+[在]如果`TRUE`,則將調試位址限制為單個語句。
 
 `ppEnumBegAddresses`\
-[out]傳回與這個陳述式或列相關聯的開始偵錯位址的列舉值。
+[出]返回與此語句或行關聯的起始調試位址的枚舉器。
 
 `ppEnumEndAddresses`\
-[out]傳回與這個陳述式或列相關聯的結束偵錯位址的列舉值。
+[出]返回與此語句或行關聯的結束調試位址的枚舉器。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
- 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。
+ 下面的範例展示如何為公開[IDebugComPlusSymbol提供程式](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbol提供程式**物件實現此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(

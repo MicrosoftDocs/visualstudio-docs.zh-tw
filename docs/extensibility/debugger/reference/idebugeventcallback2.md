@@ -1,5 +1,5 @@
 ---
-title: IDebugEventCallback2 | Microsoft Docs
+title: IDebugEvent回撥2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEventCallback2
 ms.assetid: 2c935ee0-2e22-4be0-a852-73736f33c8c9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3d76c3e41159e9bc200acdb788c13ad5f995cc3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a74825a955afdde03e63673c4b1b6afda5904953
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310518"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729879"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
-這個介面用於偵錯引擎 (DE) 傳送偵錯事件工作階段的偵錯管理員 (SDM)。
+除錯引擎 (DE) 使用此介面向工作階段除錯管理員 (SDM) 傳送除錯事件。
 
 ## <a name="syntax"></a>語法
 
@@ -28,33 +28,33 @@ ms.locfileid: "66310518"
 IDebugEventCallback2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 會實作這個介面來接收來自偵錯引擎的事件。
+## <a name="notes-for-implementers"></a>實施者說明
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]實現此介面以從調試引擎接收事件。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 偵錯引擎通常會接收這個介面，當呼叫 SDM [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)，[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)，或[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)。 偵錯引擎藉由呼叫將事件傳送至 SDM[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)。
+## <a name="notes-for-callers"></a>通話備註
+ 當 SDM 調用[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)、[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)或[啟動掛起](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)時,除錯引擎通常會接收此介面。 調試引擎通過調用[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)向 SDM 發送事件。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IDebugEventCallback2`。
 
 |方法|描述|
 |------------|-----------------|
-|[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|傳送通知的偵錯事件，以在 SDM。|
+|[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|向 SDM 發送除錯事件通知。|
 
 ## <a name="remarks"></a>備註
- 雖然[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)並[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)指定它們需要`IDebugEventCallback2`介面，這不是，和介面指標一律為 null 的值。 偵錯引擎必須改用`IDebugEventCallback2`介面的呼叫中收到[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)，[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)，或[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)。
+ 儘管[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)和[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)指定`IDebugEventCallback2`它們採用介面,但事實並非如此,並且介面指標將始終為空值。 相反,除錯引擎必須使用除錯中`IDebugEventCallback2`收到的介面來[連線](../../../extensibility/debugger/reference/idebugprogram2-attach.md)、[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)或[啟動暫停](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)。
 
- 如果封裝會實作[IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) managed 程式碼，它強烈建議您，<xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A>要傳遞至不同的介面上叫用[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)。
+ 如果套件在託管代碼中實現[IDebugEvent 回檔](../../../extensibility/debugger/reference/idebugeventcallback2.md)<xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A>,強烈建議 在傳遞給[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)的各種介面上調用 。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
-- [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)
-- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)
+- [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)

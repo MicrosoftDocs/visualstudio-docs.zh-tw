@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakEvent2 | Microsoft Docs
+title: IDebugBreakevent2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakEvent2 interface
 ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c500c6a54cc63dbcb8c7c6ad23c92d2105b9842
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1af6ce13de529fef5e16b3bc1be7053f0e1347b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314409"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735400"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
-這個介面會告知工作階段的偵錯管理員 (SDM) 已成功完成非同步的中斷。
+此介面告訴工作階段調試管理器 (SDM) 已成功完成非同步中斷。
 
 ## <a name="syntax"></a>語法
 
@@ -28,21 +28,21 @@ ms.locfileid: "66314409"
 IDebugBreakEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- DE 會實作這個介面來支援在程式中的使用者符號。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上 (使用 SDM [QueryInterface](/cpp/atl/queryinterface)若要存取`IDebugEvent2`介面)。
+## <a name="notes-for-implementers"></a>實施者說明
+ DE 實現此介面以支援程式中的用戶中斷。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須在與此介面相同的對象上實現(SDM 使用`IDebugEvent2`[查詢介面](/cpp/atl/queryinterface)存取介面)。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- SDM 呼叫[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)當使用者已要求要暫停進行偵錯的程式。 當已成功暫停程式時，會將傳送 DE`IDebugBreakEvent2`事件。 此事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)它附加到正在偵錯程式時，在 SDM 所提供的回呼函式。
+## <a name="notes-for-callers"></a>通話備註
+ 當使用者請求暫停正在調試的程式時,SDM 將調用[「原因中斷](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)」。。 成功暫停程式後,DE 將傳`IDebugBreakEvent2`送事件 。 此事件使用 SDM 提供的[IDebugEvent 回調2](../../../extensibility/debugger/reference/idebugeventcallback2.md)回檔功能在附加到正在調試的程式時發送。
 
 ## <a name="remarks"></a>備註
- 例如，使用者可以選取**全部中斷**命令**偵錯**功能表來中斷程式執行無限迴圈。 在 SDM 會告訴程式停止藉由呼叫[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)。 DE 傳送`IDebugBreakEvent2`最後停止程式。
+ 例如,用戶可以在 **「調試」** 選單上選擇 **「全部中斷」** 命令,以從運行無限迴圈的程式中斷開。 SDM 通過調用[「原因中斷](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)」告訴程式停止。 當程式最終`IDebugBreakEvent2`停止時,DE 發送。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

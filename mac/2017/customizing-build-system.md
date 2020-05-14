@@ -6,31 +6,31 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983443"
 ---
 # <a name="customizing-the-build-system"></a>自訂組建系統
 
 MSBuild 是 Microsoft 所開發的組建引擎，可用來建置主要的 .NET 應用程式。 而 Mono 架構也有它自己的 Microsoft Build Engine 實作，稱為 **xbuild**。 不過，xbuild 已遭淘汰，改為在所有作業系統上使用 MSBuild。
 
-**MSBuild** 主要用來作為 Visual Studio for Mac 中專案的組建系統。
+**MSBuild**主要用於作為 Mac 視覺化工作室中專案的構建系統。
 
 MSBuild 的運作方式為採用一組輸入 (例如來源檔案) 並將其轉換為輸出 (例如可執行檔)。 它會透過叫用編譯器等工具來達成此輸出。
 
 ## <a name="msbuild-file"></a>MSBuild 檔案
 
-MSBuild 會使用稱為專案檔的 XML 檔案，以定義屬於專案一部分的「項目」 (例如影像資源)，以及建置專案所需的「屬性」。 這個專案檔一律是以副檔名 `proj` 結尾，例如 C# 專案的 `.csproj`。
+MSBuild 會使用稱為專案檔的 XML 檔案，以定義屬於專案一部分的「項目」** (例如影像資源)，以及建置專案所需的「屬性」**。 這個專案檔一律是以副檔名 `proj` 結尾，例如 C# 專案的 `.csproj`。
 
 ### <a name="viewing-the-msbuild-file"></a>檢視 MSBuild 檔案
 
-您可以滑鼠右鍵按一下專案名稱，然後選取 [在搜尋工具中顯示]來找到 MSBuild 檔案。 搜尋工具視窗會顯示與您專案相關的所有檔案和資料夾，包括 `.csproj` 檔案，如下圖所示：
+您可以滑鼠右鍵按一下專案名稱，然後選取 [在搜尋工具中顯示]**** 來找到 MSBuild 檔案。 搜尋工具視窗會顯示與您專案相關的所有檔案和資料夾，包括 `.csproj` 檔案，如下圖所示：
 
 ![搜尋工具中的 csproj 位置](media/customizing-build-system-image1.png)
 
-若要在 Visual Studio for Mac 中使用新的索引標籤顯示 `.csproj`，請以滑鼠右鍵按一下專案名稱，並瀏覽至 [工具] > [編輯檔案]：
+若要在 Visual Studio for Mac 中使用新的索引標籤顯示 `.csproj`，請以滑鼠右鍵按一下專案名稱，並瀏覽至 [工具] > [編輯檔案]****：
 
 ![在來源編輯器中開啟 csproj](media/customizing-build-system-image2.png)
 
@@ -78,9 +78,9 @@ MSBuild 中有兩種基本資料類型：*項目*和*屬性*，下列各節會�
 
 可以使用 `$()` 語法從運算式參考屬性。 例如，`$(Foo)` 會評估為 `Foo` 屬性的值。 如果尚未設定屬性，它會評估為空字串，而且不會產生任何錯誤。
 
-#### <a name="items"></a>Items
+#### <a name="items"></a>項目
 
-項目提供一種以清單或集合輸入組建系統的處理方法，通常代表檔案。 每個項目都包含項目「類型」、項目「規格」和選擇性的任意「中繼資料」。 請注意，MSBuild 不會在個別項目上運作，而是對指定類型的所有項目 (稱為項目「集」) 執行
+項目提供一種以清單或集合輸入組建系統的處理方法，通常代表檔案。 每個項目都包含項目「類型」**、項目「規格」** 和選擇性的任意「中繼資料」**。 請注意，MSBuild 不會在個別項目上運作，而是對指定類型的所有項目 (稱為項目「集」**) 執行
 
 項目是藉由宣告 `ItemGroup` 來建立。 可以有任意數目的 ItemGroup，而 ItemGroup 可以包含任何數目的項目。
 
@@ -103,5 +103,5 @@ MSBuild 中有兩種基本資料類型：*項目*和*屬性*，下列各節會�
 
 若要更詳細了解 MSBuild，可使用下列資源：
 
-* [MSBuild 概觀](/visualstudio/msbuild/msbuild)
-* [MSBuild 概念](/visualstudio/msbuild/msbuild-concepts)
+* [MSBuild 概述](/visualstudio/msbuild/msbuild)
+* [MS構建概念](/visualstudio/msbuild/msbuild-concepts)

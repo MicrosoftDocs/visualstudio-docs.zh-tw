@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::LaunchSuspended |Microsoft Docs
+title: IDebugEngine啟動2::啟動暫停 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2::LaunchSuspended
 ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cef6382009d8139b8c166ce6b75a692e8e309557
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e802c17d0a93aabbe5c6c0a8573abc6a551944ae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337187"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730551"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
-這個方法會啟動處理序，透過 偵錯引擎 (DE)。
+此方法通過調試引擎 (DE) 啟動進程。
 
 ## <a name="syntax"></a>語法
 
@@ -65,51 +65,51 @@ int LaunchSuspended(
 
 ## <a name="parameters"></a>參數
 `pszMachine`\
-[in]用來啟動處理序中的機器名稱。 若要指定本機電腦中使用 null 值。
+[在]要在其中啟動進程的機器的名稱。 使用 null 值指定本地電腦。
 
 `pPort`\
-[in][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)介面，表示程式將執行中的連接埠。
+[在][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)介面表示程式將在其中運行的埠。
 
 `pszExe`\
-[in]若要啟動的可執行檔名稱。
+[在]要啟動的可執行檔的名稱。
 
 `pszArgs`\
-[in]要傳遞至可執行檔的引數。 如果不有任何引數，則可能是 null 值。
+[在]要傳遞給可執行檔的參數。 如果沒有參數,則可能是 null 值。
 
 `pszDir`\
-[in]可執行檔所使用的工作目錄名稱。 可能是 null 值，如果所沒有的工作目錄。
+[在]可執行檔使用的工作目錄的名稱。 如果不需要工作目錄,則可能是空值。
 
 `bstrEnv`\
-[in]NULL 終止的字串，後面接著其他的 NULL 結束字元的環境區塊。
+[在]NULL 終止字串的環境塊,後跟一個額外的 NULL 終止符。
 
 `pszOptions`\
-[in]可執行檔的選項。
+[在]可執行檔的選項。
 
 `dwLaunchFlags`\
-[in]指定[LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)工作階段。
+[在]指定會話[的LAUNCH_FLAGS。](../../../extensibility/debugger/reference/launch-flags.md)
 
 `hStdInput`\
-[in]替代的輸入資料流的控制代碼。 如果不需要重新導向，則可能是 0。
+[在]處理備用輸入流。 如果不需要重定向,則可能是 0。
 
 `hStdOutput`\
-[in]替代的輸出資料流的控制代碼。 如果不需要重新導向，則可能是 0。
+[在]處理備用輸出流。 如果不需要重定向,則可能是 0。
 
 `hStdError`\
-[in]替代錯誤輸出資料流的控制代碼。 如果不需要重新導向，則可能是 0。
+[在]處理備用錯誤輸出流。 如果不需要重定向,則可能是 0。
 
 `pCallback`\
-[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)接收偵錯工具事件的物件。
+[在]接收調試器事件的[IDebugEvent 回調2](../../../extensibility/debugger/reference/idebugeventcallback2.md)物件。
 
 `ppDebugProcess`\
-[out]傳回產生[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示啟動的程序。
+[出]返回表示啟動過程的結果[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 通常[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]會啟動程式，使用[LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)方法，然後將偵錯工具附加至暫止的程式。 不過，有一些情況下，偵錯引擎可能需要在此情況下啟動程式 （例如，如果偵錯引擎是解譯器的一部分，而且正在偵錯程式是解譯的語言），[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]使用`IDebugEngineLaunch2::LaunchSuspended`方法.
+ 通常,[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]使用[Launch 暫停](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)方法啟動程式,然後將除錯器附加到掛起的程式。 但是,在某些情況下,調試引擎可能需要啟動程式(例如,如果調試引擎是解釋器的一部分,並且正在調試的程式是解釋語言),在這種情況下[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)],使用 該`IDebugEngineLaunch2::LaunchSuspended`方法。
 
- [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)方法稱為啟動程序之後處理序已成功啟動在暫停狀態。
+ 在進程以掛起狀態成功啟動后,將調用[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)方法以啟動進程。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

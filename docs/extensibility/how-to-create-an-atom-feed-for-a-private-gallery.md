@@ -1,40 +1,40 @@
 ---
-title: 作法：建立的 Atom 摘要私用組件庫 |Microsoft Docs
+title: 如何:為專用庫創建 Atom 源 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027a7f70240695e64051ef6c16fd3e5469d75900
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c72fbf2d3973ffd84de1cf6f33788c43511c3ce4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340892"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711003"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>作法：建立私用組件庫摘要的 Atom
-您可以建立 Atom (RSS) 到內部網路位置包含延伸模組，並加入至摘要**擴充功能和更新**為私用組件庫。 如需詳細資訊，請參閱[私人資源庫](../extensibility/private-galleries.md)。
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何:為專用函式庫建立 Atom 源
+您可以建立 Atom (RSS) 來源到包含延伸的 Intranet 位置,並將來源為專用函式庫加入**到擴充與更新**。 有關詳細資訊,請參閱[私人畫廊](../extensibility/private-galleries.md)。
 
-## <a name="create-an-atom-feed"></a>建立 Atom 摘要
- 若要建立的 Atom 摘要為私用組件庫，您先收集您的擴充功能 ( *.vsix*檔案) 的資料夾。 您可以將它們組織到子資料夾如果您想要。 您也需要下列資源：
+## <a name="create-an-atom-feed"></a>建立原子來源
+ 要將 Atom 源建立為專用庫,請首先將擴展名 *(.vsix*檔)收集到資料夾中。 如果需要,可以將它們組織到子資料夾中。 您還需要以下資源:
 
-- *Atom.xml*為私用組件庫提供延伸模組的檔案。 如需有關如何連接資訊*atom.xml*的檔案**擴充功能和更新**，請參閱[私用主機庫](../extensibility/private-galleries.md)。
+- 使擴展作為專用庫可用的*atom.xml*檔。 有關如何將*Atom.xml*檔案連接到**延伸和更新**的資訊,請參閱[專用函式庫](../extensibility/private-galleries.md)。
 
-- 包含任何擴充功能 （例如，螢幕擷取畫面） 從擷取的映像檔案的資料夾。 *Atom.xml*檔案會包含這些影像的相對連結，以便在有提供**擴充功能和更新**。
+- 包含從副檔名中提取的任何影像檔的資料夾(例如,螢幕截圖)。 *Atom.xml*檔包含指向這些圖像的相對連結,以便它們在**擴展和更新**中可用。
 
-  例如，假設您已收集下列兩個延伸模組到到資料夾：
+  例如,假設您已將以下兩個擴展收集到一個資料夾中:
 
-- *Template_Wizard_239.vsix*，這是空的 VSIX 專案範本。
+- *Template_Wizard_239.vsix*,這是一個空的 VSIX 專案範本。
 
-- *SelectionHighlight.vsix*，這是以反白顯示選取的字的所有執行個體的工具。
+- *選擇高亮顯示.vsix*, 這是一個突出顯示選定單詞的所有實例的工具。
 
-  內容*atom.xml*檔案就會類似下列的範例：
+  *atom.xml*檔案的內容類似於以下範例:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -70,7 +70,7 @@ ms.locfileid: "66340892"
 </feed>
 ```
 
- 請注意兩個連結標記是指產生資料夾中的映像的螢幕擷取畫面。
+ 請注意,兩個鏈接標記是指生成的圖像資料夾中的屏幕截圖。
 
 ## <a name="see-also"></a>另請參閱
-- [私用組件庫](../extensibility/private-galleries.md)
+- [私人畫廊](../extensibility/private-galleries.md)

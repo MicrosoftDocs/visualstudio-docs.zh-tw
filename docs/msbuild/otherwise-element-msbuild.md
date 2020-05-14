@@ -18,17 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460a02b3e2115c7ccb91258ffe960668e64fb363
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594838"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633040"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 元素 (MSBuild)
+
 指定只有當所有 `When` 項目的條件評估為 `false` 時，才需執行的程式碼區塊。
 
- \<專案 > \<當 \<> 選擇 \< 時，選擇 > > ... \<> 選擇 \<。
+ \<專案>\<選擇>\<當>\<選擇>...\<否則>\<選擇>...
 
 ## <a name="syntax"></a>語法
 
@@ -41,31 +42,35 @@ ms.locfileid: "75594838"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
+
  下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
+
  無。
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[Choose](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子元素，以選取要執行的一個程式碼區段。 `Otherwise` 元素中可能有零個或多個 `Choose` 元素。|
+|[選擇](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子元素，以選取要執行的一個程式碼區段。 `Otherwise` 元素中可能有零個或多個 `Choose` 元素。|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 元素。 `Otherwise` 元素中可能有零個或多個 `ItemGroup` 元素。|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 項目。 `Otherwise` 元素中可能有零個或多個 `PropertyGroup` 元素。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[Choose](../msbuild/choose-element-msbuild.md)|評估子元素，以選取要執行的一個程式碼區段。|
+|[選擇](../msbuild/choose-element-msbuild.md)|評估子元素，以選取要執行的一個程式碼區段。|
 
 ## <a name="remarks"></a>備註
+
  `Choose` 項目中可能只有一個 `Otherwise` 項目，而且它必須是最後一個項目。
 
  `Choose`、`When` 和 `Otherwise` 元素會一起用來提供選取一個程式碼區段的方式，以執行一些可能的替代方案。 如需詳細資訊，請參閱[條件式建構](../msbuild/msbuild-conditional-constructs.md)。
 
 ## <a name="example"></a>範例
+
  下列專案使用 `Choose` 元素來選取 `When` 元素中要設定的屬性值集合。 如果兩個 `When` 元素的 `Condition` 屬性都評估為 `false`，則 `Otherwise` 元素中的屬性值已設定。
 
 ```xml
@@ -113,6 +118,7 @@ ms.locfileid: "75594838"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
-- [條件式建構](../msbuild/msbuild-conditional-constructs.md)
-- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+## <a name="see-also"></a>另請參閱
+
+- [條件構造](../msbuild/msbuild-conditional-constructs.md)
+- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)

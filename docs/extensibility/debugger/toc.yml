@@ -124,7 +124,7 @@
           href: program-nodes.md
         - name: Programs
           href: programs.md
-        - name: 執行緒
+        - name: Threads
           href: threads.md
         - name: 堆疊框架
           href: stack-frames.md

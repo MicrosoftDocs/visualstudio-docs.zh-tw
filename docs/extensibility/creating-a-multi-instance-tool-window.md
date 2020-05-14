@@ -1,38 +1,38 @@
 ---
-title: 建立多個執行個體工具視窗 |Microsoft Docs
+title: 建立多實體工具視窗 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9c31f1c439db69b3795d789758b0604a539ef81
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33585f623f846e16200d430ad2c886fe0874b537
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341633"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739620"
 ---
-# <a name="create-a-multi-instance-tool-window"></a>建立多個執行個體工具視窗
-您可以程式設計的工具視窗，讓多個執行個體可以同時開啟。 根據預設，工具視窗可以有開啟的只有一個執行個體。
+# <a name="create-a-multi-instance-tool-window"></a>建立多實體工具視窗
+您可以對工具視窗進行程式設計,以便可以同時打開該工具視窗的多個實例。 預設情況下,工具視窗只能打開一個實例。
 
-當您使用多重執行個體工具視窗時，您可以顯示在相同的時間資訊的數個相關的來源。 例如，您可以將多行放<xref:System.Windows.Forms.TextBox>控制的多重執行個體工具視窗中，以便在程式設計的工作階段期間會同時提供數個程式碼片段。 此外，比方說，您可以將放入<xref:System.Windows.Forms.DataGrid>控制項和下拉式清單方塊的多重執行個體工具視窗中，如此可以同時追蹤多個即時資料來源。
+使用多實例工具視窗時,可以同時顯示多個相關信息源。 例如,您可以將多行<xref:System.Windows.Forms.TextBox>控制件放在多實例工具視窗中,以便在程式設計作業階段期間同時提供多個程式碼段。 此外,例如,您可以將<xref:System.Windows.Forms.DataGrid>控制件和下拉清單框放在多實例工具視窗中,以便可以同時追蹤多個即時資料來源。
 
-## <a name="create-a-basic-single-instance-tool-window"></a>建立基本 （單一執行個體） 的工具視窗
+## <a name="create-a-basic-single-instance-tool-window"></a>建立基本(單實體)工具視窗
 
-1. 建立專案，名為**MultiInstanceToolWindow**使用 [VSIX] 範本，然後新增名為的自訂工具視窗項目範本**MIToolWindow**。
+1. 使用 VSIX 範本建立名為 **「多實例工具視窗**」的專案,並添加名為**MIToolWindow**的自訂工具視窗項範本。
 
     > [!NOTE]
-    > 如需使用工具視窗建立擴充功能的詳細資訊，請參閱[建立的擴充功能與工具視窗](../extensibility/creating-an-extension-with-a-tool-window.md)。
+    > 有關使用工具視窗建立擴充的詳細資訊,請參考[使用工具視窗建立擴充](../extensibility/creating-an-extension-with-a-tool-window.md)。
 
-## <a name="make-a-tool-window-multi-instance"></a>讓工具視窗多重執行個體
+## <a name="make-a-tool-window-multi-instance"></a>讓工具視窗多實體
 
-1. 開啟*MIToolWindowPackage.cs*檔案，並尋找`ProvideToolWindow`屬性。 和`MultiInstances=true`參數，如下列範例所示：
+1. 打開*MIToolWindowPackage.cs*檔並`ProvideToolWindow`找到該 屬性。 與`MultiInstances=true`參數,如以下範例所示:
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -44,15 +44,15 @@ ms.locfileid: "66341633"
     {. . .}
     ```
 
-2. 在  *MIToolWindowCommand.cs*檔案中，尋找`ShowToolWindos()`方法。 在這種方法，呼叫<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>方法，並設定其`create`旗標設為`false`，因此它會逐一查看現有的工具視窗中執行個體之前可用`id`找到。
+2. *在 MIToolWindowCommand.cs*檔案中,尋找`ShowToolWindos()`方法 。 在此方法中,調用<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>方法並將`create`其 標誌`false`設置為 ,以便它將遍接現有工具視窗實例,直到找到可用`id`實例。
 
-3. 若要建立的工具視窗中執行個體，呼叫<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>方法，並設定其`id`可用的值並將其`create`旗標設為`true`。
+3. 要建立工具視窗實體,<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>請呼叫方法並將設定`id`為可用值,其`create`旗標設定為`true`。
 
-    根據預設，windows 7`id`的參數<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>方法是`0`。 此值可讓單一執行個體工具視窗。 裝載一個以上的執行個體，每個執行個體必須有自己的唯一`id`。
+    預設的選項`id`<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>, 方法的參數值`0`為 。 此值創建一個單實例工具視窗。 要託管多個實例,每個實例都必須有自己的唯一`id`。
 
-4. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>所傳回的物件<xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A>工具視窗中執行個體的屬性。
+4. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>工具視窗實體<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame><xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A>的屬性傳回的物件上的方法。
 
-5. 根據預設，`ShowToolWindow`方法所建立的工具視窗項目範本建立單一執行個體工具視窗。 下列範例示範如何修改`ShowToolWindow`方法用來建立多個執行個體。
+5. 預設情況下,`ShowToolWindow`由工具視窗項目樣本建立的方法將建立單實例工具視窗。 下面的範例展示如何修改`ShowToolWindow`方法以創建多個實例。
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

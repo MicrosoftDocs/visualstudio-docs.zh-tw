@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerList |Microsoft Docs
+title: IDebug屬性3::獲取自定義查看器清單 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerList
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d8a439863f577237699950b3d70eb15d75ec77a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 212f8d251232d35ee7d9cc46074a21239eea29f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348863"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721157"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
-取得與這個屬性相關聯的自訂檢視器的清單。
+獲取與此屬性關聯的自定義檢視器的清單。
 
 ## <a name="syntax"></a>語法
 
@@ -47,27 +47,27 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>參數
 `celtSkip`\
-[in]略過的檢視器的數目。
+[在]要跳過的查看者數。
 
 `celtRequested`\
-[in]若要擷取的檢視器的數目 (也會指定的大小`rgViewers`陣列)。
+[在]要檢索的查看器數(也指定`rgViewers`數位的大小)。
 
 `rgViewers`\
-[in、 out]陣列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)来填入結構。
+[進出]要填充[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)結構的陣列。
 
 `pceltFetched`\
-[out]傳回的檢視器的實際數目。
+[出]返回的實際查看者數。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
-若要支援類型視覺化檢視，這個方法會呼叫轉送[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法。 如果運算式評估工具也支援自訂檢視器，這個屬性的類型，這個方法可以將適當的自訂檢視器附加至清單。
+為了支援類型可視化工具,此方法將調用轉發到[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法。 如果表達式賦值器還支援此屬性類型的自定義查看器,則此方法可以將相應的自定義查看器追加到清單中。
 
-請參閱[類型視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)如類型視覺化檢視和自訂檢視器之間的差異的詳細資訊。
+有關[型態視覺化器和自訂檢視器之間的差異的詳細資訊,請參考類型視覺化器和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法，如**CProperty**公開 （expose） 的物件[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面。
+下面的範例展示如何為公開[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面的**CProperty**物件實現此方法。
 
 ```cpp
 STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)

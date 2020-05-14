@@ -1,5 +1,5 @@
 ---
-title: DOCCONTEXT_COMPARE | Microsoft Docs
+title: DOCCONTEXT_COMPARE |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f31b33eeb782e71a87103d26a3bb78175611644e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 75e4453cae63f484961cb2d0f3385a703709f83b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318137"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737224"
 ---
-# <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
-指定的準則來比較兩個文件內容。
+# <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
+指定比較兩個文檔上下文的條件。
 
 ## <a name="syntax"></a>語法
 
@@ -48,29 +48,29 @@ enum enum_DOCCONTEXT_COMPARE {
 
 ## <a name="fields"></a>欄位
 `DOCCONTEXT_EQUAL`\
-找到的第一個文件內容等於目標文件內容的清單中。
+尋找清單中與目標文件上下文相等的第一個文檔上下文。
 
 `DOCCONTEXT_LESS_THAN`\
-小於目標文件內容的清單中找到的第一個文件內容。
+尋找清單中的第一個小於目標文件上下文的文件上下文。
 
 `DOCCONTEXT_GREATER_THAN`\
-大於目標文件內容的清單中找到的第一個文件內容。
+尋找清單中大於目標文件上下文的第一個文檔上下文。
 
 `DOCCONTEXT_SAME_DOCUMENT`\
-在目標文件內容相同文件中的清單中找到的第一個文件內容。
+尋找清單中與目標文件上下文位於同一文檔中的第一個文件上下文。
 
 ## <a name="remarks"></a>備註
-作為引數[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。
+作為參數傳遞給[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。
 
-這些值會用來指定在清單中尋找第一個文件內容的比較準則。 文件內容有一份文件內容來比較自行針對透過`IDebugDocumentContext2::Compare`方法。 在清單中的比較運算子的第一個文件內容`true`再傳回。
+這些值用於指定查找清單中的第一個文檔上下文的比較條件。 文檔上下文將給出文檔上下文的清單,以便`IDebugDocumentContext2::Compare`通過方法 比較自身。 然後傳回清單中的第一個文件上下文`true`, 然後傳回比較運算符。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+- [比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

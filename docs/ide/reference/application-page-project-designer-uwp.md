@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
-ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77173081"
 ---
 # <a name="application-property-page-uwp-projects"></a>應用程式屬性頁 (UWP 專案)
 
-使用 [應用程式] 屬性頁指定通用 Windows 平台 (UWP) 專案的組件和套件資訊，並以 Windows 10 版本為目標。
+使用 [應用程式]**** 屬性頁指定通用 Windows 平台 (UWP) 專案的組件和套件資訊，並以 Windows 10 版本為目標。
 
 ![應用程式屬性頁](media/application-page-uwp.png)
 
-若要存取 [應用程式] 頁面，請在 [方案總管] 中選擇專案節點。 然後選擇功能表列上的 [專案] > [屬性]。 屬性頁會在 [應用程式] 索引標籤上開啟。
+若要存取 [應用程式]**** 頁面，請在 [方案總管]**** 中選擇專案節點。 然後在功能表列上選擇 **"專案** > **屬性**"。 屬性頁會在 [應用程式]**** 索引標籤上開啟。
 
 ## <a name="general-section"></a>[一般] 區段
 
-**組件名稱**&mdash;指定將保留組件資訊清單之輸出檔的名稱。
+**程式集名稱**&mdash;指定將保存組件資訊清單的輸出檔案的名稱。
 
 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>。
 
-**預設命名空間**&mdash;指定新增至專案之檔案的基底命名空間。 如需命名空間的相關詳細資訊，請參閱[命名空間 (C# 程式設計手冊)](/dotnet/csharp/programming-guide/namespaces/)、[命名空間 (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces)，或[命名空間 (C++)](/cpp/cpp/namespaces-cpp)。
+**預設命名空間**&mdash;指定添加到專案的檔的基本命名空間。 如需命名空間的相關詳細資訊，請參閱[命名空間 (C# 程式設計手冊)](/dotnet/csharp/programming-guide/namespaces/)、[命名空間 (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces)，或[命名空間 (C++)](/cpp/cpp/namespaces-cpp)。
 
 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.RootNamespace%2A>。
 
-**組件資訊**&mdash;選擇此按鈕會顯示[組件資訊對話方塊](../../ide/reference/assembly-information-dialog-box.md)。
+**程式集資訊**&mdash;選擇此按鈕將顯示["程式集資訊"對話方塊](../../ide/reference/assembly-information-dialog-box.md)。
 
-**套件資訊清單**&mdash;選擇此按鈕會開啟資訊清單設計工具。 資訊清單設計工具可以透過選擇 [方案總管] 中的 **Package.appxmanifest** 檔案加以存取。 如需詳細資訊，請參閱[使用資訊清單設計工具設定套件](/windows/msix/package/packaging-uwp-apps#configure-your-project)。
+**包清單**&mdash;選擇此按鈕將打開清單設計器。 資訊清單設計工具可以透過選擇 [方案總管]**** 中的 _Package.appxmanifest_ 檔案加以存取。 如需詳細資訊，請參閱[使用資訊清單設計工具設定套件](/windows/msix/package/packaging-uwp-apps#configure-your-project)。
 
 ## <a name="targeting-section"></a>目標鎖定區段
 

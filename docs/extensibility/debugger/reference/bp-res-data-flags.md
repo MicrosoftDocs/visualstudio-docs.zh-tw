@@ -1,5 +1,5 @@
 ---
-title: BP_RES_DATA_FLAGS | Microsoft Docs
+title: BP_RES_DATA_FLAGS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RES_DATA_FLAGS enumeration
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7573d9bde08f69a7c7e7707d7631dc71e2d8d5e6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d0b687a54ddc1ed111b664a819dacfed6709196d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350650"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737873"
 ---
-# <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
-指定是否要模擬資料中斷點或實作中的硬體。
+# <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
+指定數據斷點是在硬體中模擬還是實現。
 
 ## <a name="syntax"></a>語法
 
@@ -42,17 +42,17 @@ public enum enum_BP_RES_DATA_FLAGS {
 
 ## <a name="fields"></a>欄位
 `BP_RES_DATA_EMULATED`\
-指定模擬的資料中斷點。
+指定正在模擬數據斷點。
 
 ## <a name="remarks"></a>備註
-用於`dwFlags`隸屬[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)結構。
+用於[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)結構`dwFlags`的成員。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents |Microsoft Docs
+title: IDebugProgram提供程式2::觀看提供者事件 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb0968f96300ab62e4b4ee4b34b3e7f574f4b0fc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4a48e082556cf96a35ed83afd5008d3240e600b1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343437"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721757"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
-允許的連接埠事件通知程序。
+允許通知進程埠事件。
 
 ## <a name="syntax"></a>語法
 
@@ -51,38 +51,38 @@ int WatchForProviderEvents(
 
 ## <a name="parameters"></a>參數
 `Flags`\
-[in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：
+[在][PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)枚舉中的標誌的組合。 以下標誌是此呼叫的典型標誌:
 
 |旗標|描述|
 |----------|-----------------|
-|`PFLAG_REMOTE_PORT`|呼叫端在遠端電腦上執行。|
-|`PFLAG_DEBUGGEE`|呼叫端目前正在偵錯 （每個節點都會傳回封送處理的其他資訊）。|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|已附加至呼叫端，但不是啟動偵錯工具。|
-|`PFLAG_REASON_WATCH`|呼叫端想要監看事件。 如果未設定此旗標。 然後會移除回呼事件和呼叫端不會再收到通知。|
+|`PFLAG_REMOTE_PORT`|呼叫者在遠端電腦上運行。|
+|`PFLAG_DEBUGGEE`|當前正在調試調用方(返回有關每個節點的編組的其他資訊)。|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|調用方已附加到調試器,但未啟動。|
+|`PFLAG_REASON_WATCH`|呼叫者希望監視事件。 如果未設置此標誌。 然後刪除回調事件,呼叫者不再接收通知。|
 
 `pPort`\
-[in]呼叫處理序的連接埠上執行。
+[在]調用進程正在運行的埠。
 
 `processId`\
-[in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構包含該程式處理序的識別碼有問題。
+[在]包含包含相關程式的進程 ID 的[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構。
 
 `EngineFilter`\
-[in]偵錯引擎處理序相關聯的 Guid 的陣列。
+[在]與進程關聯的調試引擎的 GUID 陣列。
 
 `guidLaunchingEngine`\
-[in]（如果有的話），請啟動此程序的偵錯引擎的 GUID。
+[在]啟動此過程的調試引擎的 GUID(如果有)。
 
 `pEventCallback`\
-[in][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)接收事件通知的物件。
+[在]接收事件通知的[IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 當呼叫端想要移除使用這個方法由先前呼叫所建立的事件處理常式時，呼叫端傳遞相同的參數，如同第一次，但分葉關閉`PFLAG_REASON_WATCH`旗標。
+ 當調用方想要刪除以前調用此方法時建立的事件處理程式時,調用方傳遞的參數與首次調用時相同,但會離開`PFLAG_REASON_WATCH`標誌。
 
 ## <a name="example"></a>範例
- 下列範例示範如何實作這個方法，如**CDebugEngine**公開 （expose） 的物件[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面。
+ 下面的範例展示如何為公開[IDebugProgram.Provider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面的**CDebugEngine**物件實現此方法。
 
 ```cpp
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(

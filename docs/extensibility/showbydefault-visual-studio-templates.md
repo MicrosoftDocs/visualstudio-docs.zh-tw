@@ -1,5 +1,5 @@
 ---
-title: ShowByDefault 元素（Visual Studio 範本）
+title: 顯示預設元素(視覺化工作室樣本)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <ShowByDefault> element [Visual Studio Templates]
 - ShowByDefault element [Visual Studio Templates]
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2405e46a7f1ed8d2e4ae33b1b58ec44e06aa7d3b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720107"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700101"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault 元素（Visual Studio 範本）
-如果 `false`，則指定範本只會顯示在指定的[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)之下。
+# <a name="showbydefault-element-visual-studio-templates"></a>顯示預設元素(視覺化工作室樣本)
+如果`false`指定範本將僅在指定的[樣本組 ID](../extensibility/templategroupid-element-visual-studio-templates.md)下顯示。
 
- \<.Vstemplate > \<TemplateData > \<ShowByDefault >
+ \<VStemplate>\<範本資料>\<顯示預設>
 
 ## <a name="syntax"></a>語法
 
@@ -33,19 +33,19 @@ ms.locfileid: "72720107"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和項目
- 下列各節描述屬性、子項目和父項目。
+ 下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
  無。
 
-### <a name="child-elements"></a>子項目
+### <a name="child-elements"></a>子元素
  無。
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] 或 [加入新項目] 對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
@@ -53,7 +53,7 @@ ms.locfileid: "72720107"
  此文字必須是 `true` 或 `false`。 如果為 true，請指定範本將會針對所有專案類型顯示。 如果為 false，則範本只會顯示在指定的 `TemplateGroupID` 之下。
 
 ## <a name="remarks"></a>備註
- `ShowByDefault` 是選擇性項目。 預設值是 `true`。
+  是選擇性元素。 預設值是 `true`。
 
 ## <a name="example"></a>範例
  下列範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本的中繼資料。
@@ -83,7 +83,7 @@ ms.locfileid: "72720107"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [TemplateGroupID 元素 (Visual Studio 範本)](../extensibility/templategroupid-element-visual-studio-templates.md)

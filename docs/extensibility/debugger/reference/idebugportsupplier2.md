@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2 | Microsoft Docs
+title: IDebugPort供應商2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2 interface
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 947a311cb1e83eaa131730725aeb7938e5615f0f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ddce454e6634d8cc177019e9d30b0ffcc7e7f1cc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340056"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724481"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
-這個介面會提供工作階段的偵錯管理員 (SDM) 的連接埠。
+此介面向工作階段調試管理員 (SDM) 提供連接埠。
 
 ## <a name="syntax"></a>語法
 
@@ -28,11 +28,11 @@ ms.locfileid: "66340056"
 IDebugPortSupplier2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
-自訂的連接埠提供者會實作這個介面來代表連接埠提供者。
+## <a name="notes-for-implementers"></a>實施者說明
+自定義埠供應商實現此介面以表示埠供應商。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
-呼叫`CoCreateInstance`與連接埠供應商的`GUID`傳回此介面 （這是取得這個介面的典型方式）。 例如: 
+## <a name="notes-for-callers"></a>通話備註
+`CoCreateInstance`使用埠供應商的`GUID`調用返回此介面(這是獲取此介面的典型方法)。 例如：
 
 ```cpp
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
@@ -49,36 +49,36 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 }
 ```
 
-呼叫[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)會傳回這個介面，代表目前正在使用的連接埠供應商[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。
+對[GetPortSupplier 的](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)調用返回此介面,表示[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]正在使用的 當前埠供應商。
 
-- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)傳回這個介面，代表建立連接埠的連接埠供應商。
+- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)返回此介面,表示創建埠的埠供應商。
 
-- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)代表一份`IDebugPortSupplier`介面 (`IEnumDebugPortSuppliers`介面取自[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)，代表所有連接埠供應商向[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).
+- [IEnum DebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)`IDebugPortSupplier`表示`IEnumDebugPortSuppliers`介面清單( 介面是從[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]獲取的,表示註冊的所有埠供應商)。
 
-偵錯引擎通常不會互動與連接埠提供者。
+調試引擎通常不與埠供應商互動。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 下表顯示的方法`IDebugPortSupplier2`。
 
 |方法|描述|
 |------------|-----------------|
-|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|取得連接埠供應商名稱。|
-|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|取得的連接埠供應商識別碼。|
-|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|從連接埠提供者取得的連接埠。|
-|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|列舉已存在的連接埠。|
-|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|確認連接埠提供者支援加入新的連接埠。|
-|[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|新增連接埠。|
-|[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|移除連接埠。|
+|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|獲取埠供應商名稱。|
+|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|獲取埠供應商識別碼。|
+|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|從埠供應商獲取埠。|
+|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|枚舉已存在的埠。|
+|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|驗證埠供應商是否支援添加新埠。|
+|[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|添加埠。|
+|[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|刪除埠。|
 
 ## <a name="remarks"></a>備註
-連接埠提供者可以依名稱和識別碼識別本身、 新增和移除連接埠，並列舉所有連接埠提供者所提供的連接埠。
+埠供應商可以按名稱和 ID 識別自身,添加和刪除埠,並枚舉埠供應商提供的所有埠。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

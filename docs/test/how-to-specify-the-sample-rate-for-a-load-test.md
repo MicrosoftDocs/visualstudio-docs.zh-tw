@@ -9,21 +9,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63b6b9479347b076b7bd9e350e80e4bfa2a36d69
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594821"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>如何：指定負載測試回合設定的採樣速率
 
-使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器]，將屬性變更為符合您的測試需求和目標。
+使用 [新增負載測試精靈]**** 建立負載測試之後，您就可以使用 [負載測試編輯器]****，將屬性變更為符合您的測試需求和目標。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-使用 [負載測試編輯器] 時，您可以在 [屬性] 視窗中編輯回合設定的 [採樣速率] 屬性值。 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
+使用 [負載測試編輯器]**** 時，您可以在 [屬性]**** 視窗中編輯回合設定的 [採樣速率]**** 屬性值。 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
 
-請根據負載測試的長度，為負載測試回合設定選擇 [採樣速率] 屬性的適當值。 較小的取樣率 (例如五秒的預設值) 會在負載測試結果資料庫中佔用較多空間。 若為較長的負載測試，增加取樣率會降低您所收集的資料量。 如需詳細資訊，請參閱[如何：指定負載測試回合設定的採樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
+請根據負載測試的長度，為負載測試回合設定選擇 [採樣速率]**** 屬性的適當值。 較小的取樣率 (例如五秒的預設值) 會在負載測試結果資料庫中佔用較多空間。 若為較長的負載測試，增加取樣率會降低您所收集的資料量。 有關詳細資訊，請參閱[：指定負載測試回合設定的取樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
 
 下面是一些取樣率的方針：
 
@@ -38,19 +38,19 @@ ms.locfileid: "75594821"
 
 1. 開啟負載測試。
 
-     [負載測試編輯器] 隨即出現。 負載測試樹狀結構隨即顯示。
+     [負載測試編輯器]**** 隨即出現。 負載測試樹狀結構隨即顯示。
 
-2. 在負載測試樹狀目錄的 [回合設定] 資料夾中，選擇您要為其指定採樣速率的回合設定。
+2. 在負載測試樹狀目錄的 [回合設定]**** 資料夾中，選擇您要為其指定採樣速率的回合設定。
 
-3. 在 [檢視] 功能表上，選取 [屬性視窗]。
+3. 在 [檢視]**** 功能表上，選取 [屬性視窗]****。
 
-     負載測試回合設定的分類和屬性會顯示在 [屬性] 視窗中。
+     負載測試回合設定的分類和屬性會顯示在 [屬性]**** 視窗中。
 
-4. 在 [採樣速率] 屬性中輸入時間值，表示負載測試將按此頻率收集效能計數器資料。
+4. 在 [採樣速率]**** 屬性中輸入時間值，表示負載測試將按此頻率收集效能計數器資料。
 
-5. 屬性變更完成之後，選擇 [檔案] 功能表上的 [儲存]。 然後您就可以使用新的 [採樣速率] 值來執行負載測試。
+5. 屬性變更完成之後，選擇 [檔案]**** 功能表上的 [儲存]****。 然後您就可以使用新的 [採樣速率]**** 值來執行負載測試。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [設定負載測試回合設定](../test/configure-load-test-run-settings.md)
+- [配置負載測試回合設定](../test/configure-load-test-run-settings.md)
 - [負載測試情節屬性](../test/load-test-scenario-properties.md)

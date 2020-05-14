@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778423"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
@@ -39,7 +39,7 @@ ms.locfileid: "74778423"
 如需對 UWP 應用程式進行分析的詳細資訊，請參閱下列主題：
 
 - [在本機電腦上執行 UWP App](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
-- [在遠端電腦上執行 UWP App](../debugger/run-windows-store-apps-on-a-remote-machine.md)
+- [在遠端電腦上執行 UWP 應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [初步認識分析工具](profiling-feature-tour.md)
 - [JavaScript 記憶體](../profiling/javascript-memory.md)
 - [在本機電腦上分析 UWP App 中的 Visual C++、Visual C# 和 Visual Basic 程式碼](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)
@@ -100,17 +100,17 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 1. 若要從 Windows 8 桌面程式或 Windows Server 2012 中執行的應用程式收集階層互動資料，您必須使用檢測方法。
 
-2. 您無法收集 UWP 應用程式的階層互動資料。
+2. 您無法收集 UWP App 的階層互動資料。
 
 3. 其他支援的 Windows 版本上的所有程式碼剖析方法都可以包含階層互動資料。
 
 **[效能精靈] 和 [效能總管]**
 
-您必須將階層互動資料收集選項加入從 [效能總管] 執行的程式碼剖析。 您也必須將專案、可執行檔或網站加入 [效能總管] 的 [目標] 節點。 請參閱[收集階層互動資料](../profiling/collecting-tier-interaction-data.md)。
+您必須將階層互動資料收集選項加入從 [效能總管] 執行的程式碼剖析。 您也必須將專案、可執行檔或網站加入 [效能總管] 的 [目標] 節點。 請參閱[收集層交互資料](../profiling/collecting-tier-interaction-data.md)。
 
 **在遠端電腦上收集 TIP 資料**
 
-若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 *%VSInstallDir%\Team Tools\Performance Tools\Setups* 資料夾中，複製 **vs\_profiler\_** _\<平台>_ **\_** _\<語言>_ **.exe** 檔案並安裝到遠端電腦。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
+要在遠端電腦上收集層交互資料，必須將**vs\_分析\_器**_\<平臺>_**\_**_\<語言>_ **.exe**檔從 Visual Studio 電腦的 *%VSInstallDir%_團隊工具_性能工具_性能工具_安裝程式*資料夾複製到遠端電腦並安裝它。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
 
 您可以使用 [VSPerfCmd](../profiling/vsperfcmd.md) 或 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 收集程式碼剖析資料。
 
@@ -118,8 +118,8 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 階層互動資料只能在 Visual Studio Enterprise 中檢視。 不提供透過 [VSPerfReport](../profiling/vsperfreport.md) 的檔案型階層互動報告。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[效能總管](../profiling/performance-explorer.md)
-[設定效能工作階段](../profiling/configuring-performance-sessions.md)
-[從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[性能資源管理器](../profiling/performance-explorer.md)
+[從命令列](../profiling/using-the-profiling-tools-from-the-command-line.md)[配置性能會話](../profiling/configuring-performance-sessions.md)
+設定檔

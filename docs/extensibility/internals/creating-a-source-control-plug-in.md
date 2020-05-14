@@ -1,5 +1,5 @@
 ---
-title: 建立原始檔控制外掛程式 |Microsoft Docs
+title: 建立原始碼管理外掛程式 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,43 +7,43 @@ helpviewer_keywords:
 - source control plug-ins
 - source control [Visual Studio SDK], plug-ins
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8489e991a54df5b905289a64fccb0df65c3cec8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9e0d9dc54a61cabe7bdd5c21c10abf0def34ff6a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341932"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709178"
 ---
-# <a name="create-a-source-control-plug-in"></a>建立原始檔控制外掛程式
-Visual Studio SDK 提供的資源，可讓您將加入原始檔控制項功能，以[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 它可讓您使用這份文件中所述的原始檔控制外掛程式 API 使用任何符合的外掛程式 DLL。
+# <a name="create-a-source-control-plug-in"></a>建立原始碼管理外掛程式
+Visual Studio SDK 提供的資源使[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]您能夠向 整合式開發環境 (IDE) 添加原始碼管理功能。 它允許您使用任何符合本文件中概述的原始程式碼管理外掛程式 API 的外掛程式 DLL。
 
 ## <a name="in-this-section"></a>本節內容
 - [開始使用](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 
- 描述如何安裝原始檔控制外掛程式，並反白顯示目前可用的原始檔控制外掛程式 API 版本。
+ 描述如何安裝原始碼管理外掛程式並突出顯示目前可用的原始程式碼管理外掛程式 API 版本。
 
 - [架構](../../extensibility/internals/source-control-plug-in-architecture.md)
 
- 使用架構圖說明的原始檔控制外掛程式整合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。
+ 使用體系結構圖來解釋原始程式碼管理外掛程式與IDE的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合。
 
 - [測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
 
- 提供有關如何安裝及操作的原始檔控制外掛程式測試的指引。
+ 提供有關如何測試原始程式碼管理外掛程式的安裝和操作的指導。
 
 ## <a name="related-sections"></a>相關章節
-- [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
+- [建立原始碼管理 VS 套件](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- 討論如何建立原始檔控制 VSPackage，不僅提供原始檔控制功能，但會取代[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]原始檔控制 UI。
+ 討論如何建立原始碼管理 VSPackage,該原始程式碼管理不僅提供原始程式碼管理功能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)],而且替換原始程式碼管理 UI。
 
-- [原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)
+- [原始程式管理外掛程式](../../extensibility/source-control-plug-ins.md)
 
- 提供原始檔控制外掛程式 API 中的所有項目的完整清單。
+ 提供原始程式碼管理外掛程式 API 中所有元素的完整清單。
 
-- [原始檔控制](../../extensibility/internals/source-control.md)
+- [原始碼管理](../../extensibility/internals/source-control.md)
 
- 討論用來實作原始檔控制的整合功能，為選項[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
+ 討論了實現原始碼管理作為的整合功能的選項[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。

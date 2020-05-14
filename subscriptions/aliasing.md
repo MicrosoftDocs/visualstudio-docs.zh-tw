@@ -3,110 +3,106 @@ title: 登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗 | M
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/14/2020
+ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: 登入可能會因為使用別名或易記名稱而失敗
-ms.openlocfilehash: dff48852e566522ad01ee07bd46cda72b8e1e249
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 0f5ed4fe67dbd863a7ba4c22f10946cbeb1c36b0
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77276629"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79509053"
 ---
-# <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗
-視用於登入的帳戶類型而定，當登入 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 時，可用的訂用帳戶可能無法正確顯示。 其中一個可能的原因是使用「別名」或「易記名稱」，而非使用訂用帳戶指派目標的登入身分識別。 這稱為「別名處理」。
+# <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用別名時，登錄到視覺化工作室訂閱可能會失敗
+根據用於登錄的帳戶類型，在登錄到 時可能無法正確顯示可用訂閱[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。 其中一個可能的原因是使用「別名」或「易記名稱」，而非使用訂用帳戶指派目標的登入身分識別。 這稱為「別名處理」。
 
 ## <a name="what-is-aliasing"></a>別名處理是什麼？
 「別名處理」一詞指的是使用不同身分識別來登入 Windows (或您的 Active Directory) 並存取電子郵件的使用者。
 
-當公司使用 Microsoft Online Service 作為其目錄登入使用 (例如 olivia@contoso.com)，但使用者以別名或易記名稱存取其電子郵件帳戶 (例如 OliviaG@contoso.com) 時，就會發生別名處理。 請確定您的使用者使用「登入電子郵件地址」進行登入，如 Visual Studio 訂用帳戶管理入口網站中所列的 https://manage.visualstudio.com 存取其訂閱
+當公司使用 Microsoft Online Service 作為其目錄登入使用 (例如 JohnD@contoso.com)，但使用者以別名或易記名稱存取其電子郵件帳戶 (例如 John.Doe@contoso.com) 時，就會發生別名處理。 確保使用者使用 "登錄電子郵件地址"（如在）https://manage.visualstudio.com中的管理員門戶中列出來訪問其訂閱。 
 
-## <a name="as-an-administrator-what-options-do-i-have"></a>身為系統管理員，我有哪些選項？
+## <a name="what-are-the-potential-issues"></a>潛在的問題是什麼？
 
-視訂閱者的帳戶類型而定，尋找下列適用的解決方案：
+根據訂閱者的帳戶類型，他們可能會遇到兩個問題之一。 
 
-### <a name="work-or-school-account-upn-mismatch-issue"></a>工作或學校帳戶 UPN 不相符的問題
+### <a name="work-or-school-account-upn-mismatch-issue"></a>工作或學校帳戶 UPN 不匹配問題 
+當公司設置了活動目錄，其中使用者主名稱 （UPN） 與主 SMTP 位址不同時，可能會遇到 UPN 不匹配。 
 
-當公司具有使用中的 Diretory 設定，其中 UPN 與主要 SMTP 位址不相同時，就可能會發生使用者主體名稱（UPN）不符的情況。 
+#### <a name="how-to-detect-if-your-sign-in-address-is-impacted-by-a-upn-mismatch"></a>如何檢測您的登錄位址是否受到 UPN 不匹配的影響 
 
-#### <a name="how-to-detect-if-a-users-sign-in-address-has-a-upn-mismatch"></a>如何偵測使用者的登入位址是否有 UPN 不符
+1. 使用訂閱https://my.visualstudio.com/subscriptions分配電子郵件中提及的登錄位址登錄。
 
-讓使用者完成下列步驟：
+2. 驗證頁面右上角列出的登錄電子郵件地址是否與您用於登錄的位址匹配。  如果沒有，您的 UPN 不匹配，您將無法查看您的訂閱。 
 
-1. 使用其訂用帳戶指派電子郵件中所述的登入位址，登入 https://my.visualstudio.com。  
+> [!div class="mx-imgBorder"]
+> ![登錄電子郵件地址](_img//aliasing/sign-in-email.png)
 
-    > [!NOTE]
-    > 如果他們沒有訂用帳戶指派電子郵件，您可以從公司入口網站中將其重新傳送給他們。  
+#### <a name="how-to-fix-a-upn-mismatch"></a>如何修復 UPN 不匹配
 
-2. 按一下 [訂閱] 索引標籤。
-3. 確認顯示在右上方的電子郵件地址指出「您的登入身分 ...」與其訂用帳戶指派電子郵件中的登入電子郵件地址相同。  如果沒有，則無法存取其訂閱權益。 
+1. 訪問視覺化工作室監管中心[https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
-   > [!div class="mx-imgBorder"]
-   > ![訂閱 頁面](_img/aliasing/aliasing-subscriptions-page.png)
+2. 找到具有 UPN 不匹配問題的訂閱者。 （[篩選器](search-license.md)功能可以方便地查找訂閱者。
 
-#### <a name="how-to-correct-the-upn-mismatch"></a>如何修正 UPN 不相符的問題
+3. 將登錄郵寄地址更改為訂閱者的 UPN 
 
-1. 存取 Visual Studio 系統管理管理入口網站，網址為 https://manage.visualstudio.com 
+0. 保存更改 
 
-2. 找出具有 UPN 不符問題的使用者。  如果您有許多訂用帳戶，[篩選](search-license.md)功能可以讓您更輕鬆。 
-
-3. 將登入電子郵件地址變更為使用者的 UPN。
-
-4. 儲存變更 
-
-5. 要求使用者登出訂閱者入口網站，並使用 UPN 重新登入。   
+0. 通知訂閱者登出訂閱者門戶，並使用 UPN 再次訪問 
 
 ### <a name="personal-account-aliasing-issue"></a>個人帳號別名問題
 
-別名問題也會影響個人帳戶。 
+如果用於登錄到 Visual Studio 訂閱門戶的電子郵件地址與與訂閱關聯的電子郵件地址不匹配，則個人訂閱帳戶也可能會遇到問題。 
 
-#### <a name="how-to-detect-if-a-personal-account-has-an-aliasing-issue"></a>如何偵測個人帳戶是否有別名問題
+#### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>如何檢測您的個人訂閱帳戶是否受到別名問題的影響
 
-1. 登入 https://my.visualstudio.com。
+1. 登錄[https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)
 
-2. 按一下 [**訂閱**] 索引標籤，並檢查您已登入的位址。 
+0. 驗證頁面右上角列出的登錄電子郵件地址是否與您用於登錄的位址匹配。  如果登錄電子郵件地址與用於訪問網站的電子郵件地址不同，則您的帳戶和別名之間存在衝突。
 
-3. 如果登入的電子郵件地址與用來存取網站的電子郵件地址不同，則您的帳戶與別名之間會發生衝突。 
+#### <a name="how-to-fix-an-alias-issue"></a>如何修復別名問題
 
-#### <a name="how-to-fix-a-personal-account-aliasing-issue"></a>如何修正個人帳號別名問題
+Visual Studio 平臺確定主別名的優先順序以顯示訂閱詳細資訊。 
 
-Visual Studio 訂用帳戶平臺會將主要別名的優先順序設為 [顯示訂閱詳細資料]。  若要解決此問題，您必須使用不同的電子郵件別名做為登入的主要別名。 
+1. 轉到**管理登錄到 Microsoft 的方式**。 如果出現提示，請登錄您的 Microsoft 帳戶。 
 
-1. 移至 [[管理您登入 Microsoft 的方式](https://go.microsoft.com/fwlink/p/?linkid=842796)]。
-2. 若出現提示，請登入您的 Microsoft 帳戶。 
-3. 在 [帳號別名] 底下，選取用來指派訂閱的電子郵件地址旁的 [**設為主要**]。 
-4. 在 [帳號別名] 底下，選取用來指派訂閱的電子郵件地址旁的 [設為主要]。 
-5. 登出 Visual Studio 訂閱者入口網站（ https://my.visualstudio.com) 
-6. 使用新的主要別名再次存取入口網站。 
+2. 在"帳號別名"下，選擇在用於分配訂閱的電子郵件地址旁邊**選擇"主**"。 
 
-### <a name="ensure-a-successful-experience-for-your-users"></a>確保您的使用者體驗成功
+> [!div class="mx-imgBorder"]
+> ![設置主電子郵件地址](_img//aliasing/account-aliases.png)
 
-身為系統管理員，有兩個選項可確保您的訂閱者在 https://my.visualstudio.com上具有成功的登入體驗。 
+3. 登出視覺化工作室訂閱門戶 （https://my.visualstudio.com) 
 
-- 第一個選項（建議）是利用目錄帳戶作為 https://manage.visualstudio.com上的登入位址。
-- 第二個選項較不安全，第二個選項（較不安全）是允許您的訂閱者使用不同的電子郵件地址來登入，而不是其目錄電子郵件地址。
+4. 使用用於分配訂閱的帳戶重新登錄，該帳戶現在應該配置為主別名。 
 
-在系統管理員入口網站中完成下列步驟，即可設定這兩個選項：
+## <a name="preventing-aliasing-issues"></a>防止鋸齒化問題
 
-1. 登入 https://manage.visualstudio.com 
+作為管理員，有兩個選項可確保您的訂閱者在 上[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)具有成功的登錄體驗。
+- 第一個選項（建議）是利用目錄帳戶作為 Visual Studio 訂閱門戶的https://my.visualstudio.com登錄。  
+- 第二個選項（安全性較低）是允許訂閱者使用與其目錄電子郵件地址不同的電子郵件地址登錄。
 
-2. 如果您要改變單一使用者，請在資料表中選取該使用者，並以滑鼠右鍵按一下以編輯。 這會開啟一個面板，您可以在其中修改登入電子郵件地址。  
+通過完成以下步驟，在監管中心中配置了這兩個選項：  
+1. 登錄[https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
-3. 在 [登入電子郵件地址] 欄位中進行必要的更新。 
+0. 如果要更改單個使用者，請在表中選擇該使用者，然後按右鍵以進行編輯。 這將打開一個面板，您可以在其中修改登錄電子郵件地址。 在登錄電子郵件地址欄位中進行必要的更新。 按一下"保存"，更改將生效。  
 
-4. 按一下 [儲存]，變更就會生效。  
-如果您需要對大量的使用者進行這些變更，您可以利用大量編輯功能。 如需該程式的詳細資訊，請參閱我們的 [編輯訂閱]] （編輯-license.md）一文中的「**使用大量編輯來編輯多個訂閱者**」一節。  
+0. 如果需要對大量使用者進行這些更改，可以使用大量編輯功能。 有關詳細資訊，[請使用大量編輯文章閱讀編輯多個訂閱者](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit)。
 
-## <a name="next-steps"></a>後續步驟
-深入瞭解如何管理 Visual Studio 訂閱。
-- [指派個別訂閱](assign-license.md)
-- [指派多個訂用帳戶](assign-license-bulk.md)
-- [編輯訂用帳戶](edit-license.md)
-- [刪除訂用帳戶](delete-license.md)
-- [判斷最大使用量](maximum-usage.md)
+> [!NOTE]
+> 對於個人和批量更改，訂閱者將收到一封電子郵件，其中包含其登錄電子郵件地址已更改且需要使用更新的電子郵件地址登錄的電子郵件。 還必須注意，如果訂閱者以前在其他登錄位址下啟動了權益，則需要繼續使用其他登錄位址來訪問它們。  
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
-- [Azure 文件](/azure/)
-- [Microsoft 365 檔](/microsoft-365/)
+- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+
+
+## <a name="next-steps"></a>後續步驟
+詳細瞭解如何管理視覺化工作室訂閱。
+- [分配單個訂閱](assign-license.md)
+- [分配多個訂閱](assign-license-bulk.md)
+- [編輯訂閱](edit-license.md)
+- [確定最大使用量](maximum-usage.md)
+
+

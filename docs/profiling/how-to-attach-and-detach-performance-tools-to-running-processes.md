@@ -19,10 +19,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4c4ae54d6b90166de31c338a5e606eaf31ecd6cc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779164"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：為執行中的處理序附加和中斷連結效能工具
@@ -43,27 +43,27 @@ ms.locfileid: "74779164"
 
 ### <a name="to-attach-to-a-running-process"></a>若要附加至執行中的處理序
 
-1. 在 [偵錯] 功能表上，指向 [分析工具]、[效能總管]，然後按一下 [附加]。
+1. 在 [偵錯]**** 功能表上，指向 [分析工具]****、[效能總管]****，然後按一下 [附加]****。
 
-     [將程式碼剖析工具附加至處理序] 對話方塊隨即出現。
+     [將程式碼剖析工具附加至處理序]**** 對話方塊隨即出現。
 
 2. 按一下您要附加至的處理序名稱。
 
-3. 按一下 [附加]。
+3. 按一下 [附加] ****。
 
 ### <a name="to-detach-from-a-running-process"></a>若要從執行中處理序中斷連結
 
-1. 在 [偵錯] 功能表上，指向 [分析工具]、[效能總管]，然後按一下 [中斷連結]。
+1. 在 [偵錯]**** 功能表上，指向 [分析工具]****、[效能總管]****，然後按一下 [中斷連結]****。
 
-     [將程式碼剖析工具附加至處理序] 對話方塊隨即出現。
+     [將程式碼剖析工具附加至處理序]**** 對話方塊隨即出現。
 
 2. 按一下您要中斷連結的映像名稱。
 
-3. 按一下 [中斷連結]。
+3. 按一下 [中斷連結]****。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [控制資料收集](../profiling/controlling-data-collection.md)
-- [效能工作階段概觀](../profiling/performance-session-overview.md)
-- [操作說明︰啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [性能會話概述](../profiling/performance-session-overview.md)
+- [如何：啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)
 - [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

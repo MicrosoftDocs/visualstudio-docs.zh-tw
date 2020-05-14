@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568707"
 ---
 # <a name="list-memory-command"></a>列出記憶體命令
@@ -31,27 +31,27 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 [/Hex|Signed|Unsigned] [expression]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 `expression`
 
-選擇項。 要從其中開始顯示記憶體的記憶體位址。
+選擇性。 要從其中開始顯示記憶體的記憶體位址。
 
-## <a name="switches"></a>交換機
+## <a name="switches"></a>交換器
 /ANSI&#124;Unicode
 
-選擇項。 顯示對應到記憶體位元組的記憶體字元，ANSI 或 Unicode。
+選擇性。 顯示對應到記憶體位元組的記憶體字元，ANSI 或 Unicode。
 
 /Count:`number`
 
-選擇項。 決定要顯示多少個位元組的記憶體，從 `expression` 開始。
+選擇性。 決定要顯示多少個位元組的記憶體，從 `expression` 開始。
 
 /Format:`formattype`
 
-選擇項。 在 [記憶體] 視窗中檢視記憶體資訊用的格式類型，可能是 OneByte、TwoBytes、FourBytes、EightBytes、Float (32 位元) 或 Double (64 位元)。 如果使用 OneByte，則無法使用 `/Unicode`。
+選擇性。 在 [記憶體]**** 視窗中檢視記憶體資訊用的格式類型，可能是 OneByte、TwoBytes、FourBytes、EightBytes、Float (32 位元) 或 Double (64 位元)。 如果使用 OneByte，則無法使用 `/Unicode`。
 
 /Hex&#124;Signed&#124;Unsigned
 
-選擇項。 指定檢視數字的格式：帶正負號、不帶正負號，或十六進位。
+選擇性。 指定檢視數字的格式：帶正負號、不帶正負號，或十六進位。
 
 ## <a name="remarks"></a>備註
 您不必寫出完整的 **Debug.ListMemory** 命令與所有參數，而可以使用預先定義的別名叫用命令，並將特定的參數預設為指定的值。 例如，若不輸入：
@@ -70,13 +70,13 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
 |Alias|命令和參數|
 |-----------| - |
-|**d**|Debug.ListMemory|
+|**D**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
-|**db**|Debug.ListMemory /Format:OneByte|
-|**dc**|Debug.ListMemory /Format:FourBytes /Ansi|
+|**Db**|Debug.ListMemory /Format:OneByte|
+|**直流**|Debug.ListMemory /Format:FourBytes /Ansi|
 |**dd**|Debug.ListMemory /Format:FourBytes|
-|**df**|Debug.ListMemory /Format:Float|
-|**dq**|Debug.ListMemory /Format:EightBytes|
+|**Df**|Debug.ListMemory /Format:Float|
+|**Dq**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
 
 ## <a name="example"></a>範例
@@ -85,11 +85,11 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [列出呼叫堆疊命令](../../ide/reference/list-call-stack-command.md)
 - [列出執行緒命令](../../ide/reference/list-threads-command.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)

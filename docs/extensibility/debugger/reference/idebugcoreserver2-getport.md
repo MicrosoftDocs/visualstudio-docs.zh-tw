@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPort | Microsoft Docs
+title: IDebugCoreServer2::獲取埠 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetPort
 ms.assetid: 3f5ea4a8-6085-4600-980a-9e48f8b5be56
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59f4507f631887f8ffda37abec8b597087a0e57f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e8dfafffb485150687b1877295a00a8ec6b71cfc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317807"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733103"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
-擷取特定的連接埠。
+檢索特定埠。
 
 ## <a name="syntax"></a>語法
 
@@ -43,13 +43,13 @@ int GetPort( 
 
 ## <a name="parameters"></a>參數
 `guidPort`\
-[in]要擷取之連接埠的 GUID。
+[在]要檢索的埠的 GUID。
 
 `ppPort`\
-[out]傳回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，表示所需的連接埠。
+[出]返回表示所需埠的[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_PORTSUPPLIER_NO_PORT`如果沒有指定的識別項與連接埠。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。 如果沒有`E_PORTSUPPLIER_NO_PORT`具有給定標識符的埠,則返回。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

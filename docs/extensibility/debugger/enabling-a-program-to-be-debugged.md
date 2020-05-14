@@ -1,35 +1,35 @@
 ---
-title: 啟用程式以進行偵錯 |Microsoft Docs
+title: 使程式被除錯 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], enabling for programs
 ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b939b692e4e93243f5f346fcd2fcb2872e989615
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17c6218cd0b25c0cf0134351fd5efd7490b6a1f3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341635"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738888"
 ---
-# <a name="enable-a-program-to-be-debugged"></a>啟用要偵錯程式
-您偵錯引擎 (DE) 可以偵錯程式之前，您必須先啟動 DE 或將它附加至現有的程式。
+# <a name="enable-a-program-to-be-debugged"></a>開啟對程式進行除錯
+在除錯引擎 (DE) 可以除錯程式之前,必須首先啟動 DE 或將其附加到現有程式。
 
 ## <a name="in-this-section"></a>本節內容
- [取得連接埠](../../extensibility/debugger/getting-a-port.md)討論如何以啟用要偵錯程式的第一個步驟取得的連接埠。
+ [取得連接埠](../../extensibility/debugger/getting-a-port.md)討論如何獲取埠作為啟用程式調試的第一步。
 
- [註冊程式](../../extensibility/debugger/registering-the-program.md)說明啟用要偵錯程式的下一步： 登錄與連接埠。 註冊之後，才能偵錯程式藉由附加，或是在 just-in-time (JIT) 偵錯程序。
+ [註冊程式](../../extensibility/debugger/registering-the-program.md)解釋啟用程序調試的下一步:將其註冊到埠。 註冊后,可以通過附加或及時 (JIT) 調試過程對程序進行調試。
 
- [附加至程式](../../extensibility/debugger/attaching-to-the-program.md)說明下一步： 附加至程式的偵錯工具。
+ [附加到程式](../../extensibility/debugger/attaching-to-the-program.md)解釋下一步:將調試器附加到程式。
 
- [啟動基礎附加](../../extensibility/debugger/launch-based-attachment.md)描述啟動時附加至程式中，也就是自動啟動的 SDM。
+ [建基於啟動的附加](../../extensibility/debugger/launch-based-attachment.md)描述程式基於啟動的附件,SDM 在啟動時自動進行該附件。
 
- [傳送所需的事件](../../extensibility/debugger/sending-the-required-events.md)帶領您逐步建立偵錯引擎 (DE) 時所需的事件，並將它附加至程式。
+ [傳送所需事件](../../extensibility/debugger/sending-the-required-events.md)在創建除錯引擎 (DE) 並將其附加到程式時,執行所需的事件。
 
 ## <a name="related-sections"></a>相關章節
- [建立自訂的偵錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)定義偵錯引擎 (DE)，並說明透過 DE 介面和它們會導致偵錯工具不同的作業模式之間轉換的方式實作的服務。
+ [建立自訂除錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)定義調試引擎 (DE),並描述通過 DE 介面實現的服務,以及它們如何導致調試器在不同操作模式之間轉換。

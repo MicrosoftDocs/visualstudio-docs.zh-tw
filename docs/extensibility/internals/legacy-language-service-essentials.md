@@ -1,5 +1,5 @@
 ---
-title: 舊版語言服務的基本資訊 |Microsoft Docs
+title: 傳統語言服務要點 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,41 +8,41 @@ helpviewer_keywords:
 - Visual Studio, integrating programming languages
 - programming languages, integrating into Visual Studio
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6259adde14f6579b43d63adc44a66b02aea3957f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 501bccf755293e86e8a9dc23fce125a10c882376
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344895"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707416"
 ---
 # <a name="legacy-language-service-essentials"></a>舊版語言服務的基本資訊
-您必須提供語言服務以整合到 Visual Studio 的程式設計語言。 本主題說明在舊版語言服務中可用的功能。
+您必須提供語言服務,以便將程式設計語言整合到 Visual Studio 中。 本主題介紹舊語言服務中可用的功能。
 
- 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作語言服務的新方式，請參閱[編輯器和語言服務延伸模組](../../extensibility/editor-and-language-service-extensions.md)。
+ 舊語言服務是作為 VSPackage 的一部分實現的,但實現語言服務功能的較新方法是使用 MEF 擴展。 要瞭解有關實現語言服務的新方法的詳細資訊,請參閱[編輯器和語言服務擴展](../../extensibility/editor-and-language-service-extensions.md)。
 
 > [!NOTE]
-> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
+> 我們建議您儘快開始使用新的編輯器 API。 這將提高語言服務的性能,並允許您利用新的編輯器功能。
 
- 舊版語言服務提供下列功能：
+ 傳統語言服務提供以下功能:
 
 |功能|描述|
 |-------------|-----------------|
-|語法標色|會導致編輯器檢視來顯示不同的色彩和字型樣式語言的不同項目。 此差異可以輕鬆地讀取及編輯檔案。<br /><br /> 如需一般資訊，請參閱 <<c0> [ 語法著色舊版語言服務中](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)。<br /><br /> 如需在 managed 的 package framework (MPF) 這項功能的詳細資訊，請參閱[舊版語言服務中的語法上色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。|
-|陳述式完成|完成陳述式或使用者已開始輸入的關鍵字。 陳述式完成可協助使用者更輕鬆地與少打一些字以及較少錯誤的機率輸入困難的陳述式。<br /><br /> 如需一般資訊，請參閱 <<c0> [ 舊版語言服務中的陳述式完成](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)。<br /><br /> MPF 這項功能的相關資訊，請參閱[舊版語言服務中的文字自動完成](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)。|
-|括號對稱|反白顯示配對字元，例如大括號。 當使用者輸入的結尾字元例如"}"，大括號比對會反白顯示對應的開頭字元，例如"{"。 封入字元的數個層級時，這項功能可協助確認封入字元正確對應的使用者。<br /><br /> MPF 這項功能的相關資訊，請參閱[舊版語言服務中的大括號比對](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)。|
-|參數資訊工具提示|會顯示一份可能的使用者目前輸入的多載方法的簽章。<br /><br /> 如需一般資訊，請參閱 <<c0> [ 舊版語言服務中的參數資訊](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)。<br /><br /> MPF 這項功能的相關資訊，請參閱[舊版語言服務中的參數資訊](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)。|
-|錯誤標記|會顯示波浪式紅色底線，也就是彎曲語法不正確的文字。 錯誤標記通常用來讓使用者了解拼錯的關鍵字、 封閉的括號、 無效的字元，與類似的錯誤。<br /><br /> 在 MPF 類別中，錯誤標記處理中自動<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A>方法的<xref:Microsoft.VisualStudio.Package.AuthoringSink>類別。|
+|語法標色|使編輯器檢視顯示不同語言元素的不同顏色和字體樣式。 這種區別可以使讀取和編輯檔變得更加容易。<br /><br /> 有關一般資訊,請參閱[舊語言服務中的語法著色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)。<br /><br /> 有關託管套件框架 (MPF) 中此功能的資訊,請參閱[舊語言服務中的語法著色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。|
+|陳述式完成|完成使用者已開始鍵入的語句或關鍵字。 語句完成可幫助使用者更輕鬆地輸入困難語句,減少鍵入次數和錯誤機會。<br /><br /> 有關一般資訊,請參閱[舊語言服務中的語句完成](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)。<br /><br /> 有關 MPF 中此功能的資訊,請參考[舊語言服務中的字完成](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)。|
+|括號對稱|突出顯示配對的字元,如大括弧。 當用戶鍵入結束字元(如"*")時,大括弧匹配將突出顯示相應的開口字元,如"*"。 當包含字元有多個級別時,此功能可幫助使用者確認封閉字元正確配對。<br /><br /> 有關 MPF 中此功能的資訊,請參閱[舊語言服務中的「大括弧匹配](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)」。|
+|參數資訊工具提示|顯示使用者當前鍵入的重載方法的可能簽名的清單。<br /><br /> 有關一般資訊,請參閱[舊語言服務中的參數資訊](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)。<br /><br /> 有關 MPF 中此功能的資訊,請參考[舊語言服務中的參數資訊](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)。|
+|錯誤標記|在語法不正確的文本下顯示波浪紅色下劃線,也稱為波浪形下劃線。 錯誤標記通常用於使用戶瞭解拼字、未閉合括弧、無效字元和類似的錯誤。<br /><br /> 在 MPF 類中,錯誤標<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A><xref:Microsoft.VisualStudio.Package.AuthoringSink>記在 類的方法中自動處理。|
 
- 這些功能需要剖析原始程式碼的語言服務。 您通常可以重複使用的 token 化和剖析您的編譯器或解譯器的程式碼。
+ 其中許多功能需要語言服務來分析原始碼。 通常,您可以為編譯器或解釋器重用標記和解析代碼。
 
- 下列功能與程式設計語言支援，但不是語言服務的一部分：
+ 以下功能與對程式設計語言的支援相關,但不是語言服務的一部分:
 
 | 功能 | 描述 |
 |-----------------------| - |
-| 運算式評估工具 | 支援[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]透過驗證中斷點，並提供一份運算式的偵錯工具，顯示在 **[自動變數]** 偵錯視窗。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 偵錯的語言服務支援](../../extensibility/internals/language-service-support-for-debugging.md)。 |
-| 符號瀏覽工具 | 支援**物件瀏覽器**，**類別檢視**，**呼叫瀏覽器**，以及**尋找符號結果**。 |
+| 運算式賦值器 | 通過驗證[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]斷點並提供要在**Autos**調試視窗中顯示的表達式清單,支援調試器。<br /><br /> 有關詳細資訊,請參閱[除錯的語言服務支援](../../extensibility/internals/language-service-support-for-debugging.md)。 |
+| 符號瀏覽工具 | 支援**物件瀏覽器**,**類別檢視**、**除錯瀏覽器**與**尋找器的瀏覽器**。 |

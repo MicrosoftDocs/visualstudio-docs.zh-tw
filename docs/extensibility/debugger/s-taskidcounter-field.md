@@ -1,30 +1,30 @@
 ---
-title: s_taskIdCounter 欄位 |Microsoft Docs
+title: s_taskIdCounter欄位 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_taskIdCounter field, Task class [.NET Framework debug engines]
 ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dca3e82b3adef44fd3d9473ba5eff0164bb12c8d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b4c91d47fc1123a6737873fd27b7c95e0a98487
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318914"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713123"
 ---
-# <a name="staskidcounter-field"></a>s_taskIdCounter 欄位
-下一個可用的識別項，如<xref:System.Threading.Tasks.Task>物件。
+# <a name="s_taskidcounter-field"></a>s_taskIdCounter 欄位
+物件的下一個<xref:System.Threading.Tasks.Task>可用標識符。
 
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **命名空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **組件：** mscorlib （在 mscorlib.dll 中)
+ **程式集**:mscorlib(在 mscorlib.dll 中)
 
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。
+ 由於您無法從 .NET 框架訪問此內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
 
 ## <a name="syntax"></a>語法
 

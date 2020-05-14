@@ -54,7 +54,7 @@
           href: vs-azure-tools-debug-cloud-services-virtual-machines.md
         - name: 了解進行 Azure 雲端服務偵錯的各種方式
           href: vs-azure-tools-debugging-cloud-services-overview.md
-        - name: 針對 Azure 雲端服務與虛擬機器設定診斷
+        - name: 為 Azure 雲端服務和虛擬機器設定診斷
           href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
         - name: 使用 Emulator Express 在本機電腦上執行 Azure 雲端服務及對其進行偵錯
           href: vs-azure-tools-emulator-express-debug-run.md
@@ -80,7 +80,7 @@
           href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md
         - name: 管理服務設定與設定檔
           href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
-        - name: 設定具名驗證認證
+        - name: 設定具名的驗證認證
           href: vs-azure-tools-setting-up-named-authentication-credentials.md
     - name: 使用 Azure 儲存體
       items:
@@ -98,9 +98,9 @@
           href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: 儲存體總管協助工具
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-- name: Cloud Explorer
+- name: 雲端總管
   items:
-    - name: 使用伺服器總管來瀏覽及管理儲存體資源
+    - name: 使用伺服器總管瀏覽和管理儲存體資源
       href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
     - name: 在 Cloud Explorer 中管理與您的 Azure 帳戶關聯的資源
       href: vs-azure-tools-resources-managing-with-cloud-explorer.md

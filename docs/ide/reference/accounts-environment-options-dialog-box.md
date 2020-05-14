@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595900"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>選項對話方塊、環境、帳戶
@@ -29,19 +29,19 @@ ms.locfileid: "75595900"
 
 ### <a name="enable-device-code-flow"></a>啟用裝置程式碼流程
 
-選取此選項時，當您選取 [檔案] > [帳戶設定] 頁面的 [新增帳戶]，Visual Studio 的行為會變更。 您並不會看到 [登入您的帳戶] 頁面，而是出現對話方塊，其提供您 URL 和程式碼以貼入至網頁來登入。 若無法以正常方式登入 Visual Studio，例如使用較舊版本的 Internet Explorer 或防火牆限制存取時，此選項十分有用。 如需詳細資訊，請參閱 [Work with multiple user accounts](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow)。
+選取此選項時，當您選取 [檔案]**** > [帳戶設定]**** 頁面的 [新增帳戶]****，Visual Studio 的行為會變更。 您並不會看到 [登入您的帳戶]**** 頁面，而是出現對話方塊，其提供您 URL 和程式碼以貼入至網頁來登入。 若無法以正常方式登入 Visual Studio，例如使用較舊版本的 Internet Explorer 或防火牆限制存取時，此選項十分有用。 如需詳細資訊，請參閱 [Work with multiple user accounts](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow)。
 
 ## <a name="registered-azure-clouds"></a>已註冊的 Azure 雲端
 
-本節說明可讓您透過一或多個用來登入 Visual Studio 帳戶存取的 Azure 雲端執行個體。 例如，您可能擁有貴公司資料中心的 Azure 私人執行個體存取權。 或者，您可以存取主權或政府的 Azure 實例，例如 Azure 中國 21 Vianet 或 Azure 美國政府。 根據預設，全域 Azure 雲端執行個體會出現在清單中且無法移除。
+本節說明可讓您透過一或多個用來登入 Visual Studio 帳戶存取的 Azure 雲端執行個體。 例如，您可能擁有貴公司資料中心的 Azure 私人執行個體存取權。 或者，您可能有權訪問 Azure 的主權或政府實例，如 Azure 中國 21 Vianet 或 Azure 美國政府。 根據預設，全域 Azure 雲端執行個體會出現在清單中且無法移除。
 
-選擇 [新增] 按鈕，註冊額外的 Azure 雲端。 [新增 Azure 雲端] 對話方塊會列出數個您可以連線的已知 Azure 雲端執行個體，或者您也可以將 URL 輸入至私人 Azure 端點。
+選擇 [新增]**** 按鈕，註冊額外的 Azure 雲端。 [新增 Azure 雲端]**** 對話方塊會列出數個您可以連線的已知 Azure 雲端執行個體，或者您也可以將 URL 輸入至私人 Azure 端點。
 
 ![新增 Azure 雲端執行個體](media/add-new-azure-cloud.png)
 
 註冊額外的 Azure 雲端後，您可以在登入 Visual Studio 時選擇希望登入的 Azure 雲端。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [跨多部電腦同步處理設定](../synchronized-settings-in-visual-studio.md)
 - [登入 Visual Studio](../signing-in-to-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs
+title: IDebugStackFrame3::獲取解說碼上下文 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3::GetUnwindCodeContext method
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a63883b8c2f1f7e09070173281f5e9eeda528352
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 488f675c39bb01c87aca13a9bef8cc4a715ecf18
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352094"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719493"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
-傳回代表位置，如果堆疊回溯作業的程式碼內容時發生。
+如果發生堆疊展開操作,則返回表示位置的代碼上下文。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int GetUnwindCodeContext(
 
 ## <a name="parameters"></a>參數
 `ppCodeContext`\
-[out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示程式碼的內容位置，如果發生堆疊回溯。
+[出]返回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件,該物件表示發生堆疊展開時的代碼上下文位置。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 即使這個方法可能會傳回位置的程式碼內容之後的堆疊回溯,，它不一定表示堆疊回溯可以實際發生在目前的堆疊框架。
+ 儘管此方法可能在堆疊展開后返回位置的代碼上下文,但這並不一定意味著堆疊展開實際上可能發生在當前堆疊幀中。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)

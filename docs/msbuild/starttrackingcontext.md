@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b84753974eeecb8dca85035d50635d0bee47645
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 50f62704897d68b0e323b948b8f4ed7e96a10c9a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595042"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632104"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
+
 啟動追蹤內容。
 
 ## <a name="syntax"></a>語法
@@ -32,6 +33,7 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
 ```
 
 #### <a name="parameters"></a>參數
+
 [in] `intermediateDirectory`
 
  儲存追蹤記錄的目錄。
@@ -41,7 +43,9 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  找到追蹤內容。 這個名稱是用來建立記錄檔的名稱。
 
 ## <a name="return-value"></a>傳回值
+
  如已建立追蹤內容，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。
 
 ## <a name="requirements"></a>需求
- **標頭：** *FileTracker .h*
+
+ **標頭：** *FileTracker.h*

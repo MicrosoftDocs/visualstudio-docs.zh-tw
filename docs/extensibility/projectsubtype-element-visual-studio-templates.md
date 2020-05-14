@@ -1,5 +1,5 @@
 ---
-title: ProjectSubType 項目 （Visual Studio 範本） |Microsoft Docs
+title: 專案子類型元素(可視化工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - ProjectSubType element [Visual Studio Templates]
 - <ProjectSubType> element [Visual Studio Templates]
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16852378609b058bc1f5c1c02ea2ad54a37a2ac9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335914"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701837"
 ---
-# <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 項目 （Visual Studio 範本）
-將範本分類的子類別目錄中指定的值為`ProjectType`項目。
+# <a name="projectsubtype-element-visual-studio-templates"></a>專案子型別元素(視覺化工作室範本)
+將範本類別為`ProjectType`元素中指定值的子類別。
 
- \<VSTemplate> \<TemplateData> \<ProjectSubType>
+ \<VStemplate>\<範本資料>\<專案子類型>
 
 ## <a name="syntax"></a>語法
 
@@ -45,30 +45,30 @@ ms.locfileid: "66335914"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案] **** 或 [加入新項目] **** 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 這個值會指定範本的子類別。
+ 此值指定範本的子類別。
 
 ## <a name="remarks"></a>備註
  `ProjectSubType` 是 `TemplateData` 的選擇性子項目。
 
- `ProjectSubType`項目會提供子類別目錄[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)項目。 這個值可以包含：
+ 該`ProjectSubType`元素為[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)元素提供子類別。 這個值可以包括:
 
-- `SmartDevice-NETCFv1`：指定範本的目標[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]1.0 版。
+- `SmartDevice-NETCFv1`:指定範本以[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]版本 1.0 為目標。
 
-- `SmartDevice-NETCFv2`：指定範本的目標[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]2.0 版。
+- `SmartDevice-NETCFv2`:指定範本以[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]版本 2.0 為目標。
 
-  如果範本中包含`ProjectType`值的項目`Web`，則`ProjectSubType`項目會指定範本的程式設計語言。 這個項目可以有下列值：
+  如果範本包含`ProjectType`的值的元素`Web`,`ProjectSubType`則元素指定範本的程式設計語言。 此元素可以具有以下值:
 
-- `CSharp`：指定此範本會建立[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Web 專案或項目。
+- `CSharp`:指定範本建立[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Web 專案或項。
 
-- `VisualBasic`：指定此範本會建立[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Web 專案或項目。
+- `VisualBasic`:指定範本建立[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Web 專案或項。
 
 ## <a name="example"></a>範例
- 下列範例顯示的專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]裝置應用程式目標[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]2.0 版。
+ 下面的範例顯示了針對版本 2.0[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]的裝置應用程式的專案樣本[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]的元資料。
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -96,6 +96,6 @@ ms.locfileid: "66335914"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
-- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
-- [ProjectType 項目 （Visual Studio 範本）](../extensibility/projecttype-element-visual-studio-templates.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)
+- [專案類型元素(視覺化工作室範本)](../extensibility/projecttype-element-visual-studio-templates.md)

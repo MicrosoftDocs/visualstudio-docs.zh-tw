@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565873"
 ---
 # <a name="shell-command"></a>Shell 命令
@@ -34,27 +34,27 @@ ms.locfileid: "75565873"
 Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 `path`
 
-必要項。 要執行之檔案或要開啟之文件的路徑和檔案名稱。 如果指定的檔案不在 PATH 環境變數的其中一個目錄中，則需要完整路徑。
+必要。 要執行之檔案或要開啟之文件的路徑和檔案名稱。 如果指定的檔案不在 PATH 環境變數的其中一個目錄中，則需要完整路徑。
 
 `args`
 
-選擇項。 任何要傳遞給已叫用程式的引數。
+選擇性。 任何要傳遞給已叫用程式的引數。
 
-## <a name="switches"></a>交換機
+## <a name="switches"></a>交換器
 /commandwindow [或] /command [或] /c [或] /cmd
 
-選擇項。 指定可執行檔的輸出會顯示在 [命令] 視窗中。
+選擇性。 指定可執行檔的輸出會顯示在 [命令]**** 視窗中。
 
 /dir:`folder` [或] /d: `folder`
 
-選擇項。 指定要在執行程式時設定的工作目錄。
+選擇性。 指定要在執行程式時設定的工作目錄。
 
 /outputwindow [或] /output [或] /out [或] /o
 
-選擇項。 指定可執行檔的輸出會顯示在 [輸出] 視窗中。
+選擇性。 指定可執行檔的輸出會顯示在 [輸出]**** 視窗中。
 
 ## <a name="remarks"></a>備註
 必須緊接在 `Tools.Shell` 後面指定 /dir /o /c 參數。 在可執行檔名稱後面指定的任何內容都是當成命令列引數傳遞給它。
@@ -78,16 +78,16 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 > 如果您不要使用常值引號 (""") 括住路徑字串，則 Windows 只會使用字串部分，最多到第一個空格。 例如，如果上述路徑字串未正確地加上引號，則 Windows 會尋找名為 "Program" 且位在 C:\ 根目錄的檔案。 如果 C:\Program.exe 可執行檔實際可用 (即使是透過不正當竄改所安裝的可執行檔)，則 Windows 會嘗試執行該程式來取代所需 "c:\Program Files\SomeFile.exe" 程式。
 
 ## <a name="example"></a>範例
-下列命令會使用 xcopy.exe 將 `MyText.txt` 檔案複製至 `Text` 資料夾。 xcopy.exe 的輸出會同時顯示在 [命令視窗] 和 [輸出] 視窗中。
+下列命令會使用 xcopy.exe 將 `MyText.txt` 檔案複製至 `Text` 資料夾。 xcopy.exe 的輸出會同時顯示在 [命令視窗]**** 和 [輸出]**** 視窗中。
 
 ```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [輸出視窗](../../ide/reference/output-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)

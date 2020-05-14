@@ -6,18 +6,18 @@ ms.topic: troubleshooting
 helpviewer_keywords:
 - xaml edit and continue, troubleshooting
 - xaml hot reload, troubleshooting
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 33ac236c9f9dd91bc0eef34e7ff9f3aa658cb4be
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 73d8653b2bcf06801c18e21d9a13b21843abc7d7
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589129"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706375"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>對 XAML 熱重新載入進行疑難排解
 
@@ -35,7 +35,7 @@ WPF 和 UWP 應用程式支援 XAML 熱重載。 如需作業系統和工具需�
 
 ![可用的 XAML 熱重載](../debugger/media/xaml-hot-reload-available.png)
 
-如果您看不到應用程式內的工具列，請開啟**Debug** > **選項**， > **一般**。 請確定已選取 [**啟用 xaml 的 UI 偵錯工具**] 和 [**啟用 xaml 熱重載**] 這兩個選項。
+如果您看不到應用程式內的工具列，請開啟 [ **Debug** ] > **選項** >  **[一般**]。 請確定已選取 [**啟用 xaml 的 UI 偵錯工具**] 和 [**啟用 xaml 熱重載**] 這兩個選項。
 
 ![啟用 XAML 熱重載](../debugger/media/xaml-hot-reload-enable.png)
 
@@ -45,14 +45,14 @@ WPF 和 UWP 應用程式支援 XAML 熱重載。 如需作業系統和工具需�
 
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>確認您使用的是 [啟動偵錯工具]，而不是 [附加至進程]
 
-XAML 熱重載需要在應用程式啟動時，環境變數 `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` 設為1。 Visual Studio 會在**Debug** > **開始調試**（或**F5**）命令中自動設定此項。 如果您想要在**Debug** >  [**附加至進程**] 命令時使用 XAML 熱重載，請自行設定環境變數。
+XAML 熱重載需要在應用程式啟動時，環境變數 `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` 設為1。 Visual Studio 會自動將此設定為**Debug** > **開始調試**（或**F5**）命令的一部分。 如果您想要使用 XAML 熱重載搭配**Debug** > [**附加至進程**] 命令，請自行設定環境變數。
 
 > [!NOTE]
 > 若要設定環境變數，請使用 [啟動] 按鈕來搜尋「環境變數」，然後選擇 [**編輯系統內容變數**]。 在開啟的對話方塊中，選擇 [**環境變數**]，然後將它新增為使用者變數，並將值設定為 [`1`]。 若要清除，請在完成調試時移除變數。
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>請確認您的 MSBuild 屬性是否正確
 
-根據預設，[來源資訊] 會包含在 [偵錯工具] 設定中。 它是由專案檔（例如 * .csproj）中的 MSBuild 屬性所控制。 針對 WPF，屬性為 `XamlDebuggingInformation`，必須設定為 `True`。 對於 UWP，屬性為 `DisableXbfLineInfo`，必須設定為 `False`。 例如:
+根據預設，[來源資訊] 會包含在 [偵錯工具] 設定中。 它是由專案檔（例如 * .csproj）中的 MSBuild 屬性所控制。 若為 WPF，屬性為 `XamlDebuggingInformation`，必須設定為 `True`。 對於 UWP，屬性為 `DisableXbfLineInfo`，必須設定為 `False`。 例如：
 
 WPF
 
@@ -70,6 +70,6 @@ UWP
 
 如果您的 XAML 檔案在**錯誤清單**中顯示錯誤，則 Xaml 熱重載可能無法正常執行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 XAML 熱重載撰寫和偵測執行中的 XAML 程式碼](xaml-hot-reload.md)

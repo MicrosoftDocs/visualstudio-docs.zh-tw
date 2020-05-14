@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetEEService | Microsoft Docs
+title: IDebugBinder3::獲取服務 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetEEService method
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3afc38551dc04e7fc7f6d55df81c5b7248127acd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7c08d7df4a6b05be489f6b9ab06569c085f3b1f8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327138"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735821"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
-這個方法會傳回要求的服務。
+此方法返回請求的服務。
 
 ## <a name="syntax"></a>語法
 
@@ -47,22 +47,22 @@ Int GetEEService(
 
 ## <a name="parameters"></a>參數
 `vendor`\
-[in]`GUID` （null 的值是可接受的） 之供應商。
+[在]`GUID`供應商的 null 值是可以接受的)。
 
 `language`\
-[in]`GUID`的 （null 的值是可接受） 的語言。
+[在]`GUID`語言(空值是可以接受的)。
 
 `iid`\
-[in]`IID`要取得的服務。
+[在]`IID`獲得的服務。
 
 `ppService`\
-[out]要求的服務介面。
+[出]與請求的服務的介面。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 傳遞`IID`for [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)介面 (`IID_IEEVisualizerServiceProvider`) 類型視覺化檢視服務是否可用。 如果運算式評估工具可以取得的話[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)介面，以支援類型視覺化檢視。 請參閱[視覺化及檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)如需詳細資訊。
+ 傳遞[IEE 視覺化服務提供者](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)介面`IID_IEEVisualizerServiceProvider`(), 以檢視類型可視化工具服務`IID`是否可用。 如果是這樣,表達式賦值器可以獲取[IEE 可視化器服務](../../../extensibility/debugger/reference/ieevisualizerservice.md)介面以支援類型可視化器。 關於詳細資訊[,請參閱可視化和檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

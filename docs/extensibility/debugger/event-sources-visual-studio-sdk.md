@@ -1,27 +1,27 @@
 ---
-title: 事件來源 (Visual Studio SDK) |Microsoft Docs
+title: 活動源(可視化工作室 SDK) |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96ab4fc69cab50bc5554d626d9c2ac86d49283f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315302"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738780"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>事件來源 (Visual Studio SDK)
-有兩個來源的事件： 偵錯引擎 (DE) 和工作階段進行偵錯管理員 (SDM)。 從裝置傳送的事件會有非 NULL 引擎，而從 SDM 傳送事件都有 NULL 引擎。
+# <a name="event-sources-visual-studio-sdk"></a>事件來源(視覺化工作室 SDK)
+事件有兩個源:調試引擎 (DE) 和會話調試管理器 (SDM)。 從 DE 傳送的事件具有非 NULL 引擎,而從 SDM 發送的事件具有 NULL 引擎。
 
 ## <a name="example"></a>範例
-下列範例示範如何將傳送**IDebugProgramCreateEvent2**從以 SDM DE。
+下面的範例展示如何將**IDebugProgramCreateEvent2**從 DE 發送到 SDM。
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();

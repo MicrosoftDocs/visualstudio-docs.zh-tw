@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::DiagnoseWebDebuggingError |Microsoft Docs
+title: IDebugCoreServer3::Diagnose網络調試錯誤 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::DiagnoseWebDebuggingError
 ms.assetid: 8c4570ca-ae55-42f2-bbaa-8d8e75d2fa19
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 52b6d634da7cda9c7b90b8cd4f7d93e7accc033d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fec5b8fbe1cae18b8221702fe14443df231d8880
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317788"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732959"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
-若要判斷為什麼 auto-attach 的嘗試失敗。
+嘗試確定自動附加失敗的原因。
 
 ## <a name="syntax"></a>語法
 
@@ -41,16 +41,16 @@ int DiagnoseWebDebuggingError(
 
 ## <a name="parameters"></a>參數
 `pszUrl`\
-[in]目前未使用;一律應該設為 null 的值。
+[在]當前未使用;應始終設定為 null 值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 以下是其他常見的傳回碼：
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。 以下是其他典型的退貨代碼:
 
 |程式碼|描述|
 |----------|-----------------|
-|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|無法判斷為何無法啟動偵錯的遠端伺服器。|
-|`S_WEBDBG_DEBUG_VERB_BLOCKED`|無法偵錯在遠端伺服器上，可能是因為權限不足，或因為未啟用 DEBUG 動詞命令。|
-|`E_WEBDBG_DEBUG_VERB_BLOCKED`|Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令，才能啟用偵錯。|
+|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|無法確定遠端伺服器無法啟動調試的原因。|
+|`S_WEBDBG_DEBUG_VERB_BLOCKED`|無法在遠端伺服器上調試,可能是由於許可權不足或未啟用 DEBUG 謂詞。|
+|`E_WEBDBG_DEBUG_VERB_BLOCKED`|Web 伺服器已鎖定並阻止啟用除錯所需的 DEBUG 謂詞。|
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

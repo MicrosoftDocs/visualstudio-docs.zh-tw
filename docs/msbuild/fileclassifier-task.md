@@ -17,14 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd533507e1c498ae315529bd8ab17dd175b7f836
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579676"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634184"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 工作
+
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> 工作會將一組來源資源分類為將內嵌至組件的來源資源。 如果無法將資源當地語系化，即會將它內嵌至主應用程式組件；否則，會將它內嵌至附屬組件。
 
 ## <a name="task-parameters"></a>工作參數
@@ -34,16 +35,18 @@ ms.locfileid: "77579676"
 |`CLREmbeddedResource`|未使用的。|
 |`CLRResourceFiles`|未使用的。|
 |`CLRSatelliteEmbeddedResource`|未使用的。|
-|`Culture`|選擇性的 **String** 參數。<br /><br /> 指定組建的文化特性。 如果組建為不可當地語系化，則此值可以是 **null**。 如果是 **null**，預設值即為 **CultureInfo.InvariantCulture** 所傳回的小寫值。|
+|`Culture`|可選**字串**參數。<br /><br /> 指定組建的文化特性。 如果組建為不可當地語系化，則此值可以是 **null**。 如果是 **null**，預設值即為 **CultureInfo.InvariantCulture** 所傳回的小寫值。|
 |`MainEmbeddedFiles`|選擇性的 **ITaskItem[]** 輸出參數。<br /><br /> 指定內嵌於主組件的不可當地語系化資源。|
 |`OutputType`|必要的 **String** 參數。<br /><br /> 指定要內嵌所指定原始程式檔的檔案類型。 有效值為 **exe**、**winexe** 或 **library**。|
 |`SatelliteEmbeddedFiles`|選擇性的 **ITaskItem[]** 輸出參數。<br /><br /> 針對 **Culture** 參數所指定的文化特性，指定要內嵌到附屬組件的可當地語系化檔案。|
-|`SourceFiles`|必要的 **ITaskItem[]** 參數。<br /><br /> 指定要分類的檔案清單。|
+|`SourceFiles`|必需**的 ITaskItem]** 參數。<br /><br /> 指定要分類的檔案清單。|
 
 ## <a name="remarks"></a>備註
+
 如果未設定 **Culture** 參數，使用 **SourceFiles** 參數指定的所有資源都是不可當地語系化的；除非它們與設為 **false** 的 **Localizable** 屬性相關聯，否則，它們是可當地語系化的。
 
 ## <a name="example"></a>範例
+
 下列範例會將單一來源檔案分類為資源，然後將它內嵌於加拿大法文 (fr-CA) 文化特性的附屬組件中。
 
 ```xml
@@ -64,8 +67,9 @@ ms.locfileid: "77579676"
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
-- [工作參考](../msbuild/wpf-msbuild-task-reference.md)
+- [任務引用](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)
 - [建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

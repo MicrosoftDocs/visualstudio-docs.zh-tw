@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb3ef4d928aaac57f39a48e5be212c1148ef58eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552677"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries 函式
@@ -39,11 +39,11 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
 ```
 
 #### <a name="parameters"></a>參數
- `pProvider` CvInitProvider 先前初始化的提供者物件。 不可以是 NULL。
+ `pProvider` CvInitProvider 先前初始化的提供者物件。 不能是 NULL。
 
  `pSeriesName` 標記系列名稱。 不可以是 NULL，但允許空字串。
 
- `ppMarkerSeries` 將儲存標記系列內容的輸出變數位址。 不可以是 NULL。
+ `ppMarkerSeries` 將儲存標記系列內容的輸出變數位址。 不能是 NULL。
 
 ## <a name="return-value"></a>傳回值
  成功建立標記系列時傳回 S_OK，發生任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。
@@ -56,4 +56,4 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
  **ANSI：** CvCreateMarkerSeriesA
 
 ## <a name="see-also"></a>另請參閱
-- [C++ 程式庫參考](../profiling/cpp-library-reference.md)
+- [C++庫參考](../profiling/cpp-library-reference.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71693005"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客戶經驗改進計畫
@@ -21,17 +21,17 @@ Visual Studio 客戶經驗改進計畫 (VSCEIP) 是設計來協助 Microsoft 隨
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
 > [!NOTE]
-> VSCEIP 遙測加入宣告或登出設定不適用於 Visual Studio 中的 [回報問題]。 當您回報問題記錄檔時，只有在您按一下 [Submit] 提供許可權時，才會收集並傳送給 Microsoft。 如果您想要在提交至「回報問題」之前記錄管理，請參閱[意見資料隱私權](./developer-community-privacy.md)以取得詳細資訊。
+> VSCEIP 遙測加入宣告或退出設置不適用於視覺化工作室中的"報告問題"。 當您報告問題時，只有在通過按一下"提交"提供許可權時，才會收集問題日誌並將其發送給 Microsoft。 如果您有興趣在提交"報告問題"之前管理日誌，請參閱[回饋資料隱私](./developer-community-privacy.md)瞭解更多詳細資訊。
 
 ## <a name="opt-in-or-out"></a>選擇加入或退出
 
 VSCEIP 預設為開啟。 您可以遵循下列指示將它關閉，或重新開啟：
 
-1. 在 Visual Studio 中，選擇 [說明] > [傳送意見反應]，然後選取 [設定]。
+1. 在視覺化工作室中，選擇 **"説明** > **發送回饋**"，然後選擇 **"設置**"。
 
-   [Visual Studio 經驗改進計畫] 對話方塊隨即開啟。
+   [Visual Studio 經驗改進計畫]**** 對話方塊隨即開啟。
 
-1. 若要選擇退出，請選取 [否，我不願意參與]，然後選取 [確定]。 若要選擇加入，請選取 [是，我願意參與]，然後選取 [確定]。
+1. 若要選擇退出，請選取 [否，我不願意參與]****，然後選取 [確定]****。 若要選擇加入，請選取 [是，我願意參與]****，然後選取 [確定]****。
 
    ![[Visual Studio 經驗改進計畫] 對話方塊](media/experience-improvement-program.png)
 
@@ -45,7 +45,7 @@ VSCEIP 預設為開啟。 您可以遵循下列指示將它關閉，或重新開
 
 - 在 64 位元作業系統上，機碼 = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
 - 在 32 位元作業系統上，機碼 = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
-- 啟用群組原則時，機碼 = **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**
+- 啟用群組原則時，鍵 = **HKEY_LOCAL_MACHINE\軟體\策略\微軟_VisualStudio_SQM**
 
 ::: moniker-end
 
@@ -53,19 +53,19 @@ VSCEIP 預設為開啟。 您可以遵循下列指示將它關閉，或重新開
 
 - 在 64 位元作業系統上，機碼 = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
 - 在 32 位元作業系統上，機碼 = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
-- 啟用群組原則時，機碼 = **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**
+- 啟用群組原則時，鍵 = **HKEY_LOCAL_MACHINE\軟體\策略\微軟_VisualStudio_SQM**
 
 ::: moniker-end
 
-項目 = **OptIn**
+條目 =**選擇**
 
-值 = (DWORD)
+Value = (DWORD)
 
-- **0** 是選擇退出 (關閉 VSCEIP)
-- **0** 是選擇加入 (開啟 VSCEIP)
+- **0**已退出宣告（關閉 VSCEIP）
+- **1**加入宣告（打開 VSCEIP）
 
 > [!CAUTION]
-> 不當編輯登錄可能會對系統造成嚴重損害。 在變更登錄前，您應先備份電腦上任何重要的資料。 如果　您在套用手動變更之後遇到問題，也可以使用 [上次的正確設定] 啟動選項。
+> 不當編輯登錄可能會造成系統嚴重受損。 在變更登錄之前，應備份電腦上的所有重要資料。 如果應用手動更改後遇到問題，也可以使用 **"上次已知良好配置**啟動"選項。
 
 如需 VSCEIP 收集、處理或傳輸之資訊的詳細資訊，請參閱 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)。
 
@@ -74,5 +74,5 @@ VSCEIP 預設為開啟。 您可以遵循下列指示將它關閉，或重新開
 * [Visual Studio 所收集的診斷資訊](diagnostic-data-collection.md)
 * [Visual Studio 意見反應選項](../ide/feedback-options.md)
 * [如何回報 Visual Studio 的問題](../ide/how-to-report-a-problem-with-visual-studio.md)
-* [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)
+* [視覺工作室開發人員社區](https://developercommunity.visualstudio.com/)
 * [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)

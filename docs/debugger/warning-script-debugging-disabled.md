@@ -1,5 +1,5 @@
 ---
-title: 警告：已停用腳本調試 |Microsoft Docs
+title: '警告: 文稿除錯已關閉 |微軟文件'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91875a370f6d072cf2dd69807f516b8f1a808461
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728204"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81648508"
 ---
 # <a name="warning-script-debugging-disabled"></a>警告：已停用指令碼偵錯
 在 Internet Explorer 中，目前停用指令碼偵錯功能
@@ -29,19 +29,19 @@ ms.locfileid: "72728204"
 
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>若要在 Internet Explorer 中啟用指令碼偵錯
 
-1. 在 Internet Explorer 中，從 [工具] 功能表選擇 [網際網路選項]。
+1. 在 Internet Explorer 中，從 [工具]**** 功能表選擇 [網際網路選項]****。
 
-2. 在 [網際網路選項] 對話方塊中，按一下 [進階] 索引標籤。
+2. 在 [網際網路選項]**** 對話方塊中，按一下 [進階]**** 索引標籤。
 
-3. 在 [進階] 索引標籤中，查看 [設定] 方塊下的 [瀏覽] 分類。
+3. 在 [進階]**** 索引標籤中，查看 [設定]**** 方塊下的 [瀏覽]**** 分類。
 
-4. 清除 [停用指令碼偵錯 (Internet Explorer)]。
+4. 清除 [停用指令碼偵錯 (Internet Explorer)]****。
 
-5. 按一下 [確定]。
+5. 按一下 [確定]  。
 
 6. 結束並且重新啟動 Internet Explorer。
 
      新的設定目前已經生效。
 
-## <a name="see-also"></a>請參閱
-- [如何：附加至指令碼](../debugger/how-to-attach-to-script.md)
+## <a name="see-also"></a>另請參閱
+- [如何:附加到腳本](attach-to-running-processes-with-the-visual-studio-debugger.md)

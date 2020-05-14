@@ -12,44 +12,44 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591290"
 ---
 # <a name="manage-external-tools"></a>管理外部工具
 
-您可以使用 [工具]，從 Visual Studio 內部呼叫外部工具。 [工具] 功能表中有提供一些預設的工具，且您可以另外自行加入可執行檔來自訂該功能表。
+您可以使用 [工具]****，從 Visual Studio 內部呼叫外部工具。 [工具]**** 功能表中有提供一些預設的工具，且您可以另外自行加入可執行檔來自訂該功能表。
 
 ## <a name="tools-available-on-the-tools-menu"></a>[工具] 功能表上提供的工具
 
-[工具] 功能表包含數個內建命令，包括：
+[工具]**** 功能表包含數個內建命令，包括：
 
 ::: moniker range="vs-2017"
 
-* [延伸模組和更新] 可用來[管理 Visual Studio 延伸模組](finding-and-using-visual-studio-extensions.md)
-* [程式碼片段管理員] 可用來[組織程式碼片段](code-snippets.md)
-* [自訂] 可用來[自訂功能表和工具列](how-to-customize-menus-and-toolbars-in-visual-studio.md)
-* [選項] 可用來[設定各種不同的 Visual Studio IDE 和其他工具選項](reference/options-dialog-box-visual-studio.md)
+* [延伸模組和更新]**** 可用來[管理 Visual Studio 延伸模組](finding-and-using-visual-studio-extensions.md)
+* [程式碼片段管理員]**** 可用來[組織程式碼片段](code-snippets.md)
+* [自訂]**** 可用來[自訂功能表和工具列](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [選項]**** 可用來[設定各種不同的 Visual Studio IDE 和其他工具選項](reference/options-dialog-box-visual-studio.md)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-* [程式碼片段管理員] 可用來[組織程式碼片段](code-snippets.md)
-* [自訂] 可用來[自訂功能表和工具列](how-to-customize-menus-and-toolbars-in-visual-studio.md)
-* [選項] 可用來[設定各種不同的 Visual Studio IDE 和其他工具選項](reference/options-dialog-box-visual-studio.md)
+* [程式碼片段管理員]**** 可用來[組織程式碼片段](code-snippets.md)
+* [自訂]**** 可用來[自訂功能表和工具列](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [選項]**** 可用來[設定各種不同的 Visual Studio IDE 和其他工具選項](reference/options-dialog-box-visual-studio.md)
 
 ::: moniker-end
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>將新的工具新增至 [工具] 功能表
 
-您可加入外部工具，讓它顯示在 [工具] 功能表。
+您可加入外部工具，讓它顯示在 [工具]**** 功能表。
 
-1. 選擇 [工具] > [外部工具]，以開啟 [外部工具] 對話方塊。
+1. 選擇 [工具]**** > [外部工具]****，以開啟 [外部工具]**** 對話方塊。
 
-1. 按一下 [加入]，然後填入資訊。 例如，下列輸入內容會讓 **Windows 檔案總管**的開啟位置，會是於 Visual Studio 中目前所開啟之檔案所在的目錄：
+1. 按一下 [加入]****，然後填入資訊。 例如，以下條目導致**Windows 資源管理器**在視覺化工作室中當前打開的檔目錄打開：
 
    * 標題：`Open File Location`
 
@@ -57,17 +57,17 @@ ms.locfileid: "75591290"
 
    * 引數：`/root, "$(ItemDir)"`
 
-   ![[外部工具] 對話方塊](media/external-tools-dialog.png)
+   ![外部工具對話方塊](media/external-tools-dialog.png)
 
 以下是在定義外部工具時可以使用的引數完整清單：
 
-|Name|引數|描述|
+|名稱|引數|描述|
 |----------|--------------|-----------------|
 |項目路徑|$(ItemPath)|目前檔案的完整檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
 |項目目錄|$(ItemDir)|目前檔案的目錄 (磁碟機 + 路徑)。|
-|項目檔名|$(ItemFilename)|目前檔案的檔案名稱 (檔案名稱)。|
+|項目檔案名稱|$(ItemFilename)|目前檔案的檔案名稱 (檔案名稱)。|
 |項目副檔名|$(ItemExt)|目前檔案的副檔名。|
-|目前的行|$(CurLine)|程式碼視窗中滑鼠游標目前的行位置。|
+|目前行|$(CurLine)|程式碼視窗中滑鼠游標目前的行位置。|
 |目前的資料行|$(CurCol)|程式碼視窗中滑鼠游標目前的資料行位置。|
 |目前的文字|$(CurText)|選取的文字。|
 |目標路徑|$(TargetPath)|要建置之項目的完整檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
@@ -76,13 +76,13 @@ ms.locfileid: "75591290"
 |目標副檔名|$(TargetExt)|要建置之項目的副檔名。|
 |二進位檔目錄|$(BinDir)|正在建置之二進位檔的最終位置 (定義為磁碟機 + 路徑)。|
 |專案目錄|$(ProjectDir)|目前專案的目錄 (磁碟機 + 路徑)。|
-|專案檔名|$(ProjectFileName)|目前專案的檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
+|專案檔案名稱|$(ProjectFileName)|目前專案的檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
 |方案目錄|$(SolutionDir)|目前方案的目錄 (磁碟機 + 路徑)。|
-|方案檔名|$(SolutionFileName)|目前方案的檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
+|方案檔案名稱|$(SolutionFileName)|目前方案的檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
 
 > [!NOTE]
-> IDE 狀態列會顯示 **目前這一行**和**目前資料行**的變數，以指出插入點在作用中**程式碼編輯器**的位置。 **目前的文字**變數則會傳回在該位置選取的文字或程式碼。
+> IDE 狀態列顯示 **"當前行**"和 **"當前列"** 變數，以指示插入點位於活動**代碼編輯器**中的位置。 **"當前文本"** 變數返回該位置選擇的文本或代碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [C/C++ 建置工具](/cpp/build/reference/c-cpp-build-tools)
+- [C/C++構建工具](/cpp/build/reference/c-cpp-build-tools)

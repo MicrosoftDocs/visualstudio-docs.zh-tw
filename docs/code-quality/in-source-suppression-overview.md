@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 67bb0d7ca38d4312dc2a1f1e7a8f50d0102a328a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587442"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408726"
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 
@@ -78,7 +78,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **範圍**-隱藏警告的目標。 如果未指定目標，則會將它設定為屬性的目標。 支援的[範圍](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope)包括下列各項：
 
-  - `module`-此範圍會隱藏對元件的警告。 它是套用至整個專案的全域隱藏專案。
+  - [`module`](#module-suppression-scope) -此範圍會隱藏對元件的警告。 它是套用至整個專案的全域隱藏專案。
 
   - `resource`-（僅限[舊版 FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md) ）此範圍會抑制診斷資訊中寫入模組（元件）一部分之資源檔的警告。 Roslyn 分析器診斷的C#/VB 編譯器不會讀取/遵守此範圍，只會分析原始程式檔。
 
@@ -91,6 +91,8 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   - `namespaceanddescendants`-（需要編譯器 3.x. x 版或更高版本，以及 Visual Studio 2019）此範圍會隱藏命名空間及其所有子系符號中的警告。 舊版分析會忽略 `namespaceanddescendants` 值。
 
 - **Target** -用來指定隱藏警告之目標的識別碼。 它必須包含完整的專案名稱。
+
+當您在 Visual Studio 中看到警告時，可以藉由[將隱藏專案新增至全域隱藏](../code-quality/use-roslyn-analyzers.md#suppress-violations)專案檔案來查看 `SuppressMessage` 的範例。 隱藏專案屬性和其必要屬性會顯示在預覽視窗中。
 
 ## <a name="suppressmessage-usage"></a>SuppressMessage 使用方式
 
@@ -147,15 +149,6 @@ public class Animal
 }
 ```
 
-## <a name="generated-code"></a>產生的程式碼
-
-Managed 程式碼編譯器和一些協力廠商工具會產生程式碼，以加速程式碼開發。 出現在原始程式檔中的編譯器產生的程式碼，通常會以 `GeneratedCodeAttribute` 屬性來標示。
-
-您可以選擇是否要針對產生的程式碼隱藏程式碼分析警告和錯誤。 如需有關如何隱藏這類警告和錯誤的詳細資訊，請參閱[如何：隱藏所產生程式碼的警告](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。
-
-> [!NOTE]
-> 程式碼分析會在套用至整個元件或單一參數時，忽略 `GeneratedCodeAttribute`。
-
 ## <a name="global-level-suppressions"></a>全域層級隱藏式
 
 Managed 程式碼分析工具會檢查元件、模組、類型、成員或參數層級所套用的 `SuppressMessage` 屬性。 它也會對資源和命名空間引發違規。 這些違規必須套用於全域層級，且範圍設定為目標。 例如，下列訊息會抑制命名空間違規：
@@ -174,11 +167,35 @@ Managed 程式碼分析工具會檢查元件、模組、類型、成員或參數
 > [!NOTE]
 > `Target` 一律包含完整的專案名稱。
 
-## <a name="global-suppression-file"></a>全域隱藏專案檔案
+### <a name="global-suppression-file"></a>全域隱藏專案檔案
 
 全域隱藏專案檔案會維護不會指定目標的全域層級隱藏專案或隱藏專案。 例如，元件層級違規的隱藏式會儲存在這個檔案中。 此外，某些 ASP.NET 隱藏專案會儲存在此檔案中，因為在表單後方的程式碼中，不提供專案層級設定。 當您第一次在 [**錯誤清單**] 視窗中，選取 [**隱藏**] 命令的 [**在專案隱藏檔中**] 選項時，就會建立全域隱藏專案檔案，並將其新增至您的專案。
 
-## <a name="see-also"></a>請參閱
+### <a name="module-suppression-scope"></a>模組隱藏範圍
+
+您可以使用**模組**範圍，隱藏整個元件的程式碼品質違規。
+
+例如， _GlobalSuppressions_專案檔中的下列屬性會隱藏 ASP.NET Core 專案的 ConfigureAwait 違規：
+
+`[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="generated-code"></a>產生的程式碼
+
+Managed 程式碼編譯器和一些協力廠商工具會產生程式碼，以加速程式碼開發。 出現在原始程式檔中的編譯器產生的程式碼，通常會以 `GeneratedCodeAttribute` 屬性來標示。
+
+針對原始程式碼分析（FxCop 分析器），您可以使用專案或方案根目錄中的[editorconfig](../code-quality/configure-fxcop-analyzers.md)檔案，隱藏產生的程式碼中的訊息。 使用檔案模式來比對產生的程式碼。 例如，若要排除 * *. designer.cs*檔案中的 CS1591 警告，請在設定檔中使用此檔案。
+
+``` cmd
+[*.designer.cs]
+dotnet_diagnostic.CS1591.severity = none
+```
+
+針對舊版程式碼分析，您可以選擇是否要針對產生的程式碼隱藏程式碼分析警告和錯誤。 如需有關如何隱藏這類警告和錯誤的詳細資訊，請參閱[如何：隱藏所產生程式碼的警告](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。
+
+> [!NOTE]
+> 程式碼分析會在套用至整個元件或單一參數時，忽略 `GeneratedCodeAttribute`。
+
+## <a name="see-also"></a>另請參閱
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

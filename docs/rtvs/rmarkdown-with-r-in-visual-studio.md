@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 32cfabfe61a8c1dc8f04cd2d024b07a92b1eb7e2
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72888563"
 ---
 # <a name="create-r-markdown-documents"></a>建立 R Markdown 文件
@@ -34,7 +34,7 @@ Visual Studio R 工具 (RTVS) 提供 R Markdown 項目範本、編輯器支援 (
 
     ```
 
-1. 使用 [檔案] > [新增] > [檔案] 功能表命令，並從清單中選取 [R] > [R Markdown] 來建立新的 R Markdown 檔案。 在專案的內容中，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選取 [新增 R Markdown] (或 [新增] > [新增項目]，然後從清單中選取 [R Markdown])。
+1. 使用 **"檔** > **新** > **檔**"功能表命令創建新 R 標記檔，並從清單中選擇**R R** > **標記**。 在專案的內容中，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選取 [新增 R Markdown]**** (或 [新增]**** > [新增項目]****，然後從清單中選取 [R Markdown]****)。
 
 1. 新檔案的預設內容如下︰
 
@@ -64,8 +64,8 @@ Visual Studio R 工具 (RTVS) 提供 R Markdown 項目範本、編輯器支援 (
 
 ## <a name="previews"></a>預覽
 
-Visual Studio 2017 版本 15.5 和更新版本會自動提供 R Markdown 的即時預覽。 若要開啟編輯器和預覽之間的自動同步功能，請選取 [R 工具] > [Markdown] > [自動同步] (**Ctrl**+**Shift**+**Y**)。 若您並未使用自動同步，您可以使用 [R 工具] > [Markdown] > [Reload R Markdown Preview] (重新載入 R Markdown 預覽) 來重新整理預覽。
+Visual Studio 2017 版本 15.5 和更新版本會自動提供 R Markdown 的即時預覽。 要打開編輯器和預覽之間的自動同步，請選擇 R **Tools** > **標記自動** > **同步****（Ctrl**+**Shift**+**Y**）。 如果不使用自動同步，則可以使用**R Tools** > **標記** > **重新載入 R 標記預覽刷新預覽**。
 
-您也可以藉由用滑鼠在編輯器上按右鍵並選取其中一個**預覽**命令來在 HTML、PDF 及 Microsoft Word 格式中預覽檔案。 相同的命令同樣也可以在 [R 工具] > [Markdown] 功能表上找到。 (在舊版的 Visual Studio 中，您可以在 [R 工具] > [發佈] 功能表中找到這些命令。)
+您也可以藉由用滑鼠在編輯器上按右鍵並選取其中一個**預覽**命令來在 HTML、PDF 及 Microsoft Word 格式中預覽檔案。 R**工具** > **標記功能表**中也提供了相同的命令。 （在早期版本的 Visual Studio 中，這些命令位於**R Tools** > **發佈**功能表中。
 
 ![RMarkdown 即時預覽和其他預覽功能表命令](media/rmarkdown-live-preview.png)

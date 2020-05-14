@@ -1,5 +1,5 @@
 ---
-title: SccCreateSubProject 函式 |Microsoft Docs
+title: Scccreate 子專案功能 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccCreateSubProject function
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aa70f6b42a6722ac66340807503ee4494795b0d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 74354e05b16830f599dd706fbe48aadd75b11a18
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327528"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701044"
 ---
-# <a name="scccreatesubproject-function"></a>SccCreateSubProject 函式
-這個函式具有指定之名稱所指定的現有父專案底下建立子專案`lpParentProjPath`引數。
+# <a name="scccreatesubproject-function"></a>SccCreate 子專案功能
+此函數在參數指定的現有父專案下創建具有給定名稱的`lpParentProjPath`子專案。
 
 ## <a name="syntax"></a>語法
 
@@ -39,66 +39,66 @@ SCCRTN SccCreateSubProject(
 ### <a name="parameters"></a>參數
  pContext
 
-[in]原始檔控制外掛程式的內容指標。
+[在]源代碼管理外掛程式上下文指標。
 
  hWnd
 
-[in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。
+[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
 
  lpUser
 
-[in、 out]（最多 SCC_USER_SIZE，包括 NULL 結束字元) 使用者名稱。
+[進出]使用者名(最多SCC_USER_SIZE,包括 NULL 終止符)。
 
  lpParentProjPath
 
-[in]識別父專案 （最多 SCC_PRJPATH_SIZE，包括 NULL 結束字元) 的路徑的字串。
+[在]標識父項目的路徑的字串(最多SCC_PRJPATH_SIZE,包括 NULL 終止符)。
 
- lpSubProjName
+ lpSubProj 名稱
 
-[in]建議的子專案名稱 （最多 SCC_PRJPATH_SIZE，包括 NULL 結束字元)。
+[在]建議的子專案名稱(最多SCC_PRJPATH_SIZE,包括 NULL 終止符)。
 
  lpAuxProjPath
 
-[in、 out]輔助的字串，識別 （最多 SCC_PRJPATH_SIZE，包括 NULL 結束字元) 專案。
+[進出]標識項目的輔助字串(最多SCC_PRJPATH_SIZE,包括 NULL 終止字)。
 
  lpSubProjPath
 
-[in、 out]識別的路徑 （最多 SCC_PRJPATH_SIZE，包括 NULL 結束字元) 的子專案的輸出字串。
+[進出]標識子項目的路徑的輸出字串(最多SCC_PRJPATH_SIZE,包括 NULL 終止符)。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函數的源碼管理外掛程式實現應返回以下值之一:
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|已成功建立子專案。|
+|SCC_OK|已成功創建子專案。|
 |SCC_E_INITIALIZEFAILED|無法初始化父專案。|
-|SCC_E_INVALIDUSER|使用者可能無法登入原始檔控制系統。|
+|SCC_E_INVALIDUSER|使用者無法登錄到原始程式碼管理系統。|
 |SCC_E_COULDNOTCREATEPROJECT|無法建立子專案。|
-|SCC_E_PROJSYNTAXERR|無效的專案的語法。|
-|SCC_E_UNKNOWNPROJECT|父專案是未知的原始檔控制外掛程式。|
+|SCC_E_PROJSYNTAXERR|無效的專案語法。|
+|SCC_E_UNKNOWNPROJECT|源控件外掛程式未知父專案。|
 |SCC_E_INVALIDFILEPATH|無效或無法使用的檔案路徑。|
-|SCC_E_NOTAUTHORIZED|若要執行這項作業不允許的使用者。|
-|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。 建議使用重試。|
-|SCC_E_CONNECTIONFAILURE|沒有原始檔控制外掛程式的連線問題。|
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不明確的失敗。|
+|SCC_E_NOTAUTHORIZED|不允許使用者執行此操作。|
+|SCC_E_ACCESSFAILURE|訪問原始程式碼管理系統時出現問題,可能是由於網路或爭用問題。 建議重試。|
+|SCC_E_CONNECTIONFAILURE|存在原始程式碼管理外掛程式連接問題。|
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|非特異性故障。|
 
 ## <a name="remarks"></a>備註
- 如果子專案名稱已經存在，函式可以變更預設名稱來建立唯一的帳戶，例如藉由加入 「 _\<數字 > 」 給它。 呼叫端必須準備好接受變更`lpUser`， `lpSubProjPath`，和`lpAuxProjPath`。 `lpSubProjPath`並`lpAuxProjPath`引數會用於呼叫[SccOpenProject](../extensibility/sccopenproject-function.md)。 它們不應該修改時傳回呼叫端。 這些字串會提供方法的原始檔控制外掛程式，以追蹤需要與專案產生關聯的資訊。 呼叫端的 IDE 不會顯示傳回時，這兩個參數，因為外掛程式可以使用可能不適合檢視的格式化的字串。 函式會傳回成功或失敗的程式碼，以及如果成功，會填滿變數`lpSubProjPath`新專案的完整的專案路徑。
+ 如果已存在名稱的子專案,則函數可以更改預設名稱以創建唯一名稱,例如向其中添加"#\<數位>"。 調用方必須準備好接受`lpUser`對`lpSubProjPath`的`lpAuxProjPath`更改。 然後`lpSubProjPath`,`lpAuxProjPath`在調用[SccOpenProject](../extensibility/sccopenproject-function.md)中使用 和 參數。 調用方不應在返回時修改它們。 這些字串為原始程式碼管理外掛程式提供了一種追蹤它需要與專案關聯的資訊的方法。 呼叫者 IDE 在傳回時不會顯示這兩個參數,因為外掛程式可以使用可能不適合查看的格式化字串。 函數返回成功或失敗代碼,如果成功,則用新專案的完整專案路徑填充`lpSubProjPath`變數。
 
- 此函數很相似[SccGetProjPath](../extensibility/sccgetprojpath-function.md)，只不過它以無訊息方式建立專案，而不是提示使用者選取其中一個。 當`SccCreateSubProject`函式呼叫時，`lpParentProjName`和`lpAuxProjPath`將為空白，且將會對應到有效的專案。 這些字串通常會收到由先前呼叫從 IDE`SccGetProjPath`函式或[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)。
+ 此函數類似於[SccGetProjPath,](../extensibility/sccgetprojpath-function.md)只不過它默默地創建一個專案,而不是提示用戶選擇一個專案。 呼叫函數`SccCreateSubProject`時`lpParentProjName``lpAuxProjPath`, 不會為空,並且將對應於有效的專案。 這些字串通常由IDE從以前對`SccGetProjPath`函數的調用或[SccGet父專案路徑](../extensibility/sccgetparentprojectpath-function.md)接收。
 
- `lpUser`引數是使用者名稱。 IDE 會在相同的使用者名稱，它必須從先前接收傳遞`SccGetProjPath`，和原始檔控制外掛程式應該做為預設值的名稱。 如果使用者已經有使用外掛程式的開啟連線，然後外掛程式應該嘗試排除任何提示，以確定函式會以無訊息模式運作。 不過，如果登入失敗時，外掛程式應該會提示使用者登入，當它收到有效的登入，傳遞回名稱`lpUser`。 因為外掛程式可能會變更此字串，IDE 一律會配置的緩衝區大小 （SCC_USER_LEN + 1 或 SCC_USER_SIZE，其中包括 null 結束字元的空間）。 如果字串變更時，新的字串必須是有效的登入名稱 （至少為有效舊字串形式）。
+ 參數`lpUser`是使用者名。 IDE 將傳遞以前從`SccGetProjPath`接收的相同使用者名,原始程式碼管理外掛程式應使用該名稱作為預設值。 如果使用者已與外掛程式建立了打開的連接,則外掛程式應嘗試消除任何提示,以確保該函數靜默工作。 但是,如果登錄失敗,外掛程式應提示使用者登錄,並在收到有效的登錄時,將名稱轉`lpUser`回 。 由於外掛程式可能會更改此字串,因此IDE將始終分配大小緩衝區(SCC_USER_LEN+1或SCC_USER_SIZE,其中包括空終止符的空間)。 如果更改了字串,則新字串必須是有效的登錄名(至少與舊字串一樣有效)。
 
-## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreateSubProject 和 SccGetParentProjectPath 的技術提示
- 已簡化方案和專案加入原始檔控制在 Visual Studio 中的系統會提示使用者在原始檔控制系統中選取位置的次數降到最低。 如果原始檔控制外掛程式支援這兩個新函數，這些變更會啟動 Visual Studio`SccCreateSubProject`和`SccGetParentProjectPath`。 不過，下列的登錄項目可用來停用這些變更並還原成先前的 Visual Studio (原始檔控制外掛程式 API 版本 1.1) 行為：
+## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreate 子專案和 SccGet 父項目路徑的技術說明
+ 在 Visual Studio 中,將解決方案和專案添加到原始碼管理中已簡化,以最大程度地減少提示使用者選擇原始程式碼管理系統中位置的次數。 如果原始程式資料管理外掛程式同時支援新`SccCreateSubProject``SccGetParentProjectPath`功能和,則 Visual Studio 將啟動這些更改。 但是,以下註冊表項可用於禁用這些更改並恢復到以前的 Visual Studio(原始程式碼管理外掛程式 API 版本 1.1)行為:
 
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001**
+ **[HKEY_CURRENT_USER_軟體\微軟[VisualStudio]8.0\源控制]"不創建解決方案 RootfolderinSourceControl"=dword:0000001**
 
- 如果此登錄項目不存在，或設為 dword:00000000，Visual Studio 會嘗試使用新的函式`SccCreateSubProject`和`SccGetParentProjectPath`。
+ 如果這個註冊表項不存在或設定為 dword:00000000,Visual Studio 將試著`SccCreateSubProject``SccGetParentProjectPath`使用新功能和 。
 
- 如果登錄項目設定為 dword: 00000001，Visual Studio 不會嘗試使用這些新的函式，並加入原始檔控制中的運算運作方式如同在舊版的 Visual Studio。
+ 如果註冊表項設置為 dword:00000001,Visual Studio 不會嘗試使用這些新功能,並且添加到原始碼管理的操作將像在 Visual Studio 的早期版本中那樣工作。
 
 ## <a name="see-also"></a>另請參閱
-- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

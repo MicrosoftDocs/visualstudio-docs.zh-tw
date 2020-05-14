@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments | Microsoft Docs
+title: IDebugBinder3::獲取類型參數 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetTypeArguments method
 ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9d301dbb99e88ba4552ad59d9116f64dc032371
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b7667b06348c5e1b2865b24ab49095772808d6c4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330749"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735697"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
-這個方法會擷取與這個物件相關聯的引數類型的清單。
+此方法檢索與此物件關聯的參數類型的清單。
 
 ## <a name="syntax"></a>語法
 
@@ -47,22 +47,22 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>參數
 `skip`\
-[in]取得引數型別之前，要略過的欄位數目。
+[在]取得參數類型之前要跳過的欄位數。
 
 `count`\
-[in]要傳回的引數欄位數目 (也會指定的大小`ppFields`陣列)。
+[在]要返回的參數位段數(也指定`ppFields`數位的大小)。
 
 `ppFields`\
-[in、 out]將會填入這個方法傳回的欄位的陣列。
+[進出]返回此方法時將填充的欄位陣列。
 
 `pFetched`\
-[out]\(選擇性)引數的數字輸入實際傳回的欄位。
+[出]\(可選) 實際傳回的參數型態欄位數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 可以事先取得引數類型的數目，與[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)。
+ 可以使用[GetType參數計數](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)提前獲取參數類型的數量。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetException |Microsoft Docs
+title: IDebugEngine2::設置異常 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetException
 ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2234c0c0b571e763d3b143b5606fe61c43f25cde
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7398db3c15c58821e05eff839a1022276401d569
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352537"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730942"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
-指定偵錯引擎 (DE) 應該如何處理指定的例外狀況。
+指定調試引擎 (DE) 應如何處理給定的異常。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int SetException( 
 
 ## <a name="parameters"></a>參數
 `pException`\
-[in][EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構，描述例外狀況，以及如何進行偵錯。
+[在]描述異常以及如何調試異常[EXCEPTION_INFO結構。](../../../extensibility/debugger/reference/exception-info.md)
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 若要停止產生第一個可能發生的例外狀況的程式，第二個機會，可指示規定或不完全。
+ 可以指示 DE 在第一次機會、第二次機會或根本不發生異常時停止程式生成異常。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

@@ -1,40 +1,40 @@
 ---
-title: 傳送所需的事件 |Microsoft Docs
+title: 傳送所需事件 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], required events
 ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ef1bb6c436faaefb309ab62db02ee43a0486ab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc83b47e53607fe1111ececbbf892c96f7bbb639
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345586"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713001"
 ---
-# <a name="send-the-required-events"></a>傳送所需的事件
-使用此程序傳送必要的事件。
+# <a name="send-the-required-events"></a>傳送所需事件
+使用此過程發送所需事件。
 
-## <a name="process-for-sending-required-events"></a>傳送必要的事件的處理序
- 下列事件是必要的在這個順序，當建立偵錯引擎 (DE)，並將它連結至程式：
+## <a name="process-for-sending-required-events"></a>傳送所需事件的過程
+ 依此順序,建立除錯引擎 (DE) 並將其附加到程式時,需要以下事件:
 
-1. 傳送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)事件工作階段的偵錯管理員 (SDM) DE 初始化偵錯的處理序中的一或多個程式時的物件。
+1. 當 DE 初始化以除錯行程中的一個或多個程式時,將[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)事件物件發送到工作階段調試管理員 (SDM)。
 
-2. 當要偵錯程式附加至時，傳送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) SDM 事件物件。 此事件可能會停止 」 事件，視您的引擎設計而定。
+2. 將要除錯的程式附加到時,將[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)事件物件發送到SDM。 此事件可能是停止事件,具體取決於您的發動機設計。
 
-3. 如果程式附加至處理序啟動時，傳送[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)通知 IDE 新執行緒的 SDM 事件物件。 此事件可能會停止 」 事件，視您的引擎設計而定。
+3. 如果程式在啟動進程時附加到,則向 SDM 發送[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)事件物件以通知新線程的 IDE。 此事件可能是停止事件,具體取決於您的發動機設計。
 
-4. 傳送[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) SDM 正在偵錯程式完成的載入，或當附加至程式完成時的事件物件。 這個事件必須停止事件。
+4. 當正在除錯的程式完成載入或附加到程式時,將[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)事件物件發送到 SDM。 此事件必須是停止事件。
 
-5. 如果要進行偵錯應用程式啟動時，傳送[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) SDM 時執行的執行階段架構中的程式碼的第一個指令的物件事件。 這個事件永遠是 「 停止 」 事件。 當逐步執行偵錯工作階段，IDE 會停止此事件。
+5. 如果啟動要調試的應用程式,則在運行時體系結構中的第一個代碼指令即將執行時,向 SDM 發送[IDebugEntryPoint2](../../extensibility/debugger/reference/idebugentrypointevent2.md)事件物件。 此事件始終是停止事件。 踏入調試會話時,IDE 將在此事件中停止。
 
 > [!NOTE]
-> 許多語言會使用全域初始設定式或外部的先行編譯的函式 （從 CRT 程式庫或 _Main） 在其程式碼的開頭。 如果您正在偵錯的程式語言包含這些類型的初始項目點之前的項目，此程式碼執行，而且就會傳送項目點事件時的使用者進入點，例如**主要**或`WinMain`，是已達到。
+> 許多語言在其代碼的開頭使用全域初始化程式或外部預編譯函數(來自 CRT 庫或_Main)。 如果要除錯的程式的語言在初始入口點之前包含這些類型的元素之一,則運行此代碼,並在達到使用者入口點(如**主**或`WinMain`)時發送入口點事件。
 
 ## <a name="see-also"></a>另請參閱
-- [啟用要偵錯程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [開啟對程式進行除錯](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

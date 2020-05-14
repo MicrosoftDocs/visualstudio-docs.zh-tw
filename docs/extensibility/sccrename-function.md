@@ -1,5 +1,5 @@
 ---
-title: SccRename 函式 |Microsoft Docs
+title: sccrename 函數 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccRename function
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b2928653507b670160c72ca3ce09a0227a4170
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 88a917e43729b3049e488264c260f8455ab08fe4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720760"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700421"
 ---
 # <a name="sccrename-function"></a>SccRename 函式
-此函式會重新命名原始檔控制系統中的檔案。
+此函數重新命名原始碼管理系統中的檔案。
 
 ## <a name="syntax"></a>語法
 
@@ -34,38 +34,38 @@ SCCRTN SccRename(
 ```
 
 #### <a name="parameters"></a>參數
- pvCoNtext
+ pvContext
 
-在原始檔控制外掛程式的內容結構。
+[在]原始程式碼管理外掛程式上下文結構。
 
  hWnd
 
-在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它所提供之任何對話方塊的父系。
+[在]源控件外掛程式可以用作它提供的任何對話框的父級的IDE視窗句柄。
 
- lpFileName
+ lpFile 名稱
 
-在要重新命名之檔案的完整檔案名。
+[在]要重新命名的檔案的完全限定檔名。
 
- lpNewName
+ lp 新名稱
 
-在完整的新名稱。 如果目錄路徑不同，則檔案已從一個子目錄移到另一個。
+[在]完全限定的新名稱。 如果目錄路徑不同,則檔已從一個子目錄移動到另一個子目錄。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式執行應會傳回下列其中一個值：
+ 此函數的源碼管理外掛程式實現應返回以下值之一:
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|重新命名作業已成功完成。|
-|SCC_E_PROJNOTOPEN|專案未在原始檔控制下開啟。|
-|SCC_E_FILENOTCONTROLLED|檔案不在原始檔控制之下。|
-|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或競爭問題。|
-|SCC_E_NOTAUTHORIZED|使用者未獲授權，無法完成此操作。|
-|SCC_E_COULDNOTCREATEPROJECT|無法在重新命名過程中建立專案。|
+|SCC_OK|重新命名操作已成功完成。|
+|SCC_E_PROJNOTOPEN|專案在原始程式碼管理下不開放。|
+|SCC_E_FILENOTCONTROLLED|該檔不受原始程式碼管理。|
+|SCC_E_ACCESSFAILURE|訪問原始程式碼管理系統時出現問題,可能是由於網路或爭用問題。|
+|SCC_E_NOTAUTHORIZED|用戶無權完成此操作。|
+|SCC_E_COULDNOTCREATEPROJECT|無法作為重命名過程的一部分創建專案。|
 |SCC_E_OPNOTPERFORMED|未執行操作。|
-|SCC_E_NONSPECIFICERROR|發生未指定或一般的錯誤。|
+|SCC_E_NONSPECIFICERROR|發生未指定或常規錯誤。|
 
 ## <a name="remarks"></a>備註
- 此函式可以用來重新命名檔案，或在原始檔控制系統中將檔案移到另一個位置。 原始檔控制外掛程式不應嘗試存取磁片上的檔案。 IDE 會負責重新命名本機檔案。
+ 此功能可用於重新命名檔案或將其從一個位置移到原始碼管理系統中的另一個位置。 原始程式碼管理外掛程式不應嘗試存取磁碟上的檔案。 IDE 負責重新命名本地檔案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

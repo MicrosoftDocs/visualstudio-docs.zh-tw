@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::SetDebuggerPresent | Microsoft Docs
+title: IDebug程序發佈者2::set調試器存在 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::SetDebuggerPresent
 ms.assetid: c88c3ff4-3632-4199-b5de-83c6d21bcf75
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 402a9a65344af02dd4c321f4a1e449b012af36ee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b551c644346b66d907fa4f75b11b24c8b9538e27
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343309"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721598"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
-告知偵錯工具存在並在執行計劃發行者。
+告訴程式發佈者調試器存在並運行。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int SetDebuggerPresent(
 
 ## <a name="parameters"></a>參數
 `fDebuggerPresent`\
-[in]非零 (`TRUE`) 如果偵錯工具，則為零 (`FALSE`) 如果不是。
+[在]如果存在調試器`TRUE`,則非零 (`FALSE`), 如果 不存在,則為零 ( )。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 偵錯工具的存在與否會反映在從傳回的資料[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法： 那里傳回值是設定或清除先前呼叫`SetDebuggerPresent`方法。
+ 調試器的存在或不存在反映在從[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法返回的數據中:返回的值`SetDebuggerPresent`由對 該方法的事先調用設置或清除。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)

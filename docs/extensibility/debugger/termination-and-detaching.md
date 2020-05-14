@@ -1,30 +1,30 @@
 ---
-title: 終止並中斷連結 |Microsoft Docs
+title: 終止與分離 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - programs, termination events
 - debug engines, detaching from programs
 ms.assetid: 268c1e51-6363-45d1-964c-1ab99bdfa4f9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aafb94e0a07462d93cc77a34f7199f61f944d0f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0b88255d618ce42fa55d878f192d31523ba3f83b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333717"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712485"
 ---
-# <a name="termination-and-detaching"></a>終止並中斷連結
-下節說明正常終止。
+# <a name="termination-and-detaching"></a>終止與分離
+以下部分介紹正常終止。
 
-## <a name="discussion"></a>討論
- 在後[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)或是[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)介面持續發生，如果沒有任何中斷點、 例外狀況、 執行階段錯誤或要進行偵錯應用程式中的無限迴圈正在進行偵錯程式會執行到完成為止。 此程序已正常終止。
+## <a name="discussion"></a>討論區
+ [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)或[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)介面繼續後,如果要調試的應用程式中沒有斷點、異常、運行時錯誤或無限迴圈,則正在調試的程式將運行到完成。 此過程是正常的終止。
 
- 您必須傳送[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)實作正常終止。 正常終止需要執行[IDebugProgramDestroyEvent2::GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md)方法。
+ 您必須發送[IDebugProgram 銷毀事件2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)來實現正常終止。 正常終止需要運行[IDebugProgram銷毀事件2::getExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md)方法。
 
 ## <a name="see-also"></a>另請參閱
-- [建立自訂的偵錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+- [建立自訂除錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: 5806d463780368515e59c2614ed9cfaaa4ab4b91
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77071943"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行單元測試
@@ -42,7 +42,7 @@ ms.locfileid: "77071943"
 
 ![設定測試根目錄和測試架構](../javascript/media/unit-test-project-properties.png)
 
-您可以使用 [新增項目] 對話方塊，將簡單的空白測試新增至您的專案。 相同專案中同時支援 JavaScript 和 TypeScript。
+您可以使用 [新增項目]**** 對話方塊，將簡單的空白測試新增至您的專案。 相同專案中同時支援 JavaScript 和 TypeScript。
 
 ![新增單元測試](../javascript/media/unit-test-add-new-item.png)
 
@@ -63,19 +63,19 @@ describe('Test Suite 1', function() {
 })
 ```
 
-如果您尚未在專案屬性中設定單元測試選項，則必須確定 [屬性] 視窗中的 [測試架構] 屬性已針對您的單元測試檔案設定為正確的測試架構。 這是由單元測試檔案範本自動完成。
+如果您尚未在專案屬性中設定單元測試選項，則必須確定 [屬性]**** 視窗中的 [測試架構]**** 屬性已針對您的單元測試檔案設定為正確的測試架構。 這是由單元測試檔案範本自動完成。
 
 ![測試架構](../javascript/media/UnitTestsFrameworkMocha.png)
 
 > [!Note]
 > 單元測試選項優先於個別檔案的設定。
 
-開啟 [測試總管] (選擇 [測試] > [Windows] > [測試總管]) 之後，Visual Studio 會探索並顯示測試。 如果一開始未顯示測試，則重建專案以重新整理清單。
+打開測試資源管理器（選擇**測試** > **視窗** > **測試資源管理器**）後，視覺化工作室發現並顯示測試。 如果一開始未顯示測試，則重建專案以重新整理清單。
 
 ![測試總管](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> 請勿在 `outdir`tsconfig.json`outfile` 中使用 *或* 選項，因為 [測試總管] 無法在 TypeScript 檔案中尋找您的單元測試。
+> 請勿在 *tsconfig.json* 中使用 `outdir` 或 `outfile` 選項，因為 [測試總管] 無法在 TypeScript 檔案中尋找您的單元測試。
 
 ## <a name="run-tests"></a>執行測試
 
@@ -83,7 +83,7 @@ describe('Test Suite 1', function() {
 
 ### <a name="run-tests-in-visual-studio-2017"></a>在 Visual Studio 2017 中執行測試
 
-您可以按一下 [測試總管] 中的 [全部執行] 連結來執行測試。 或者，您可以選取一或多個測試或群組，按一下滑鼠右鍵，然後從捷徑功能表中選取 [執行選取的測試] 來執行測試。 測試會在背景中執行，而 [測試總管] 會自動更新並顯示結果。 此外，您也可以選取 [偵錯選取的測試]，對選取的測試進行偵錯。
+您可以按一下 [測試總管] 中的 [全部執行]**** 連結來執行測試。 或者，您可以選取一或多個測試或群組，按一下滑鼠右鍵，然後從捷徑功能表中選取 [執行選取的測試]**** 來執行測試。 測試會在背景中執行，而 [測試總管] 會自動更新並顯示結果。 此外，您也可以選取 [偵錯選取的測試]****，對選取的測試進行偵錯。
 
 > [!Warning]
 > 使用 Node 8 以上版本對單元測試進行偵錯目前僅適用於 JavaScript 測試檔案，TypeScript 測試檔案將無法叫用中斷點。 因應措施是使用 `debugger` 關鍵字。
@@ -130,7 +130,7 @@ Test execution time: 1.5731 Seconds
 > [!NOTE]
 > 如果您收到錯誤，指出找不到 *vstest.console.exe*，請確定您已開啟開發人員命令提示字元，而不是一般的命令提示字元。
 
-## <a name="addingFramework"></a>新增單元測試架構的支援
+## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>新增單元測試架構的支援
 
 您可以使用 JavaScript 實作 探索和執行邏輯，以新增其他測試架構的支援。 您可以使用測試架構的名稱新增資料夾來完成此動作：
 
@@ -150,7 +150,7 @@ Test execution time: 1.5731 Seconds
 ## <a name="unit-tests-in-other-project-types"></a>其他專案類型中的單元測試
 您並不限於只能在 Node.js 專案中撰寫單元測試。 當您將 TestFramework 和 TestRoot 屬性新增至任何 C# 或 Visual Basic 專案時，會列舉那些測試，且您可以使用 [測試總管] 視窗執行它們。
 
-若要啟用此功能，請以滑鼠右鍵按一下 [方案總管] 中的專案節點、選擇 [卸載專案]，然後選擇 [編輯專案]。 然後在專案檔中，將下列兩個項目新增至屬性群組。
+若要啟用此功能，請以滑鼠右鍵按一下 [方案總管] 中的專案節點、選擇 [卸載專案]****，然後選擇 [編輯專案]****。 然後在專案檔中，將下列兩個項目新增至屬性群組。
 
 > [!NOTE]
 > 請確定您要新增項目的屬性群組不包含指定的條件。
@@ -174,4 +174,4 @@ Test execution time: 1.5731 Seconds
 </PropertyGroup>
 ```
 
-某些測試架構可能需要額外的 npm 封裝以進行測試偵測。 例如，jest 需要 jest 編輯器-支援 npm 套件。 如有需要，請參閱特定架構的檔。
+某些測試框架可能需要額外的 npm 包才能進行測試檢測。 例如，jest 需要 jest-編輯器支援 npm 包。 如有必要，請查看特定框架的文檔。

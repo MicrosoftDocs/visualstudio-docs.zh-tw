@@ -1,86 +1,86 @@
 ---
-title: 註冊和選取（原始檔控制 VSPackage） |Microsoft Docs
+title: 註冊和選擇(源控制 VS 包) |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d6ca60c74ae9956f38418ea6048bb0c8050be2c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 973eb19916a737dfa775fe79ee62cb3d11fe0123
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724512"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705712"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>註冊和選取 (原始檔控制 VSPackage)
-原始檔控制 VSPackage 必須註冊，才能向 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 公開。 如果註冊了多個原始檔控制 VSPackage，使用者就可以選取要在適當時間載入哪一個 VSPackage。 如需 Vspackage 的詳細資訊，以及如何註冊這些專案，請參閱[vspackage](../../extensibility/internals/vspackages.md) 。
+必須註冊原始碼管理 VSPackage 才能將[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]公開給 。 如果註冊了多個原始程式碼管理 VSPackage,用戶可以選擇在適當時間載入的 VSPackage。 有關[VSPackages](../../extensibility/internals/vspackages.md)以及如何註冊它們的更多詳細資訊,請參閱 VS 包。
 
-## <a name="registering-a-source-control-package"></a>註冊原始檔控制封裝
- 原始檔控制封裝已註冊，因此 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 環境可以找到它，並查詢其支援的功能。 這是根據延遲載入配置，其中只有在需要其功能或命令或明確要求時，才會建立封裝的實例。
+## <a name="registering-a-source-control-package"></a>註冊原始碼管理員
+ 源控件包已註冊,以便[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境可以找到它並查詢其支援的功能。 這符合延遲載入方案,其中僅在需要或顯式請求包的功能或命令時創建包實例。
 
- Vspackage 會將資訊放在特定版本的登錄機碼中，HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\*x. y*，其中*X*是主要版本號碼，而*Y*是次要版本號碼。 這種作法可支援多個版本 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的並存安裝。
+ VS包將資訊放在特定於版本的註冊表項中\\,HKEY_LOCAL_MACHINE_SOFTWARE_Microsoft_VisualStudio*X.Y,* 其中*X*是主要版本號 *,Y*是次要版本號。 這種做法提供了支援並行安裝多個版本的的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]功能。
 
- @No__t_0 的使用者介面（UI）支援從多個已安裝的原始檔控制外掛程式（透過原始檔控制介面卡套件），以及原始檔控制 Vspackage 的選取專案。 一次只能有一個作用中的原始檔控制外掛程式或 VSPackage。 不過，如下所述，IDE 允許透過自動解決方案式的封裝交換器制，在原始檔控制外掛程式和 Vspackage 之間切換。 原始檔控制 VSPackage 的部分有一些需求，可啟用此選取機制。
+ 使用者介面[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)](UI) 支援從多個已安裝的原始程式碼管理外掛程式(透過原始碼管理配接器套件)和原始程式碼管理 VSPackage 中進行選擇。 一次只能有一個活動原始程式碼管理外掛程式或 VSPackage。 但是,如下所述,IDE 允許透過基於解決方案的自動包交換機制在原始程式碼管理外掛程式和 VSPackage 之間切換。 原始碼管理 VSPackage 有一些要求來啟用此選擇機制。
 
 ### <a name="registry-entries"></a>登錄項目
- 原始檔控制套件需要三個私人 Guid：
+ 原始碼管理套件需要三個專用 GUID:
 
-- 封裝 GUID：這是包含原始檔控制執行之封裝的主要 GUID （在本節中稱為 ID_Package）。
+- 包 GUID:這是包含原始程式碼管理實現(本節中稱為ID_Package)的包的主要 GUID。
 
-- 原始檔控制 GUID：這是原始檔控制 VSPackage 的 GUID，用來向 Visual Studio 原始檔控制 Stub 註冊，也會當做命令 UI 內容 GUID 使用。 原始檔控制服務 GUID 會在原始檔控制 GUID 之下註冊。 在此範例中，原始檔控制 GUID 稱為 ID_SccProvider。
+- 原始程式碼管理 GUID:這是用於向可視化工作室原始碼管理存根註冊的原始程式碼管理 VSPackage 的 GUID,也可用作命令 UI 上下文 GUID。 原始程式碼管理服務 GUID 在原始碼管理 GUID 下註冊。 在此示例中,源控件 GUID 稱為ID_SccProvider。
 
-- 原始檔控制服務 GUID：這是 Visual Studio 所使用的私用服務 GUID （在本節中稱為 SID_SccPkgService）。 此外，原始檔控制封裝也需要定義 Vspackage、工具視窗等的其他 Guid。
+- 原始程式碼管理服務 GUID:這是 Visual Studio 使用的專用服務 GUID(本節中稱為SID_SccPkgService)。 除此之外,原始程式碼管理包還需要為 VSPackage、工具視窗等定義其他 GUID。
 
-  下列登錄專案必須由原始檔控制 VSPackage 所建立：
+  以下註冊表項必須由原始碼管理 VSPackage 進行:
 
-| 機碼名稱 | 分 |
+| 機碼名稱 | 項目 |
 | - | - |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | （預設值） = rg_sz： {ID_SccProvider} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | （預設值） = rg_sz：封裝 > 的 \<Friendly 名稱<br /><br /> 服務 = rg_sz： {SID_SccPkgService} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | （預設值） = rg_sz： # \<Resource > 當地語系化名稱的識別碼<br /><br /> Package = rg_sz： {ID_Package} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> （請注意，索引鍵名稱 `SourceCodeControl` 已由 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用，而且無法做為 \<PackageName > 的選擇）。 | （預設值） = rg_sz： {ID_Package} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | (默認) = rg_sz:[ID_SccProvider] |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | (預設)\<= rg_sz:包>的友好名稱<br /><br /> 服務 = rg_sz:[SID_SccPkgService] |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | (預設) = rg_sz:*\<本地化名稱的資源 ID><br /><br /> 包 = rg_sz:[ID_Package] |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (請注意,金鑰名稱`SourceCodeControl`、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]已由 和\<不可用作為 包名稱>的選擇。 | (默認) = rg_sz:[ID_Package] |
 
-## <a name="selecting-a-source-control-package"></a>選取原始檔控制封裝
- 數個原始檔控制外掛程式以 API 為基礎的外掛程式和原始檔控制 Vspackage 可能會同時註冊。 選取原始檔控制外掛程式或 VSPackage 的程式必須確定 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 在適當的時間載入外掛程式或 VSPackage，而且可能會延遲載入不必要的元件，直到需要它們為止。 此外，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須從其他非使用中的 Vspackage 中移除所有 UI，包括功能表項目、對話方塊和工具列，以及顯示作用中 VSPackage 的 UI。
+## <a name="selecting-a-source-control-package"></a>選擇原始碼管理員
+ 可以同時註冊多個基於原始程式碼管理外掛程式的外掛程式和原始程式碼管理 VS 包。 選擇原始程式碼管理外掛程式或 VSPackage 的過程必須[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]確保在適當的時間 載入外掛程式或 VSPackage,並可以延遲載入不必要的元件,直到需要它們。 此外,[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必須從其他非活動 VS 包中刪除所有 UI,包括選單項、對話框和工具列,並顯示活動 VSPackage 的 UI。
 
- 當執行下列任何一項作業時，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 載入原始檔控制 VSPackage：
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]執行以下任一動作時,載入原始碼管理 VSPackage:
 
-- 方案已開啟（當方案在原始檔控制之下時）。
+- 解決方案打開(當解決方案處於原始程式碼控制之下時)。
 
-   開啟原始檔控制下的方案或專案時，IDE 會使指定給該方案的原始檔控制 VSPackage 載入。
+   打開原始碼管理下的解決方案或專案時,IDE會導致載入為該解決方案指定的原始程式碼管理 VSPackage。
 
-- [原始檔控制 VSPackage] 的任何功能表命令都會執行。
+- 將執行原始碼管理 VSPackage 的任何功能表命令。
 
-  原始檔控制 VSPackage 應該只在實際使用時載入其所需的任何元件（亦稱為延遲載入）。
+  原始碼管理 VSPackage 應僅在實際使用元件(也稱為延遲載入)時載入其所需的任何元件。
 
-### <a name="automatic-solution-based-vspackage-swapping"></a>自動以解決方案為基礎的 VSPackage 交換
- 您可以透過 [**原始檔控制**] 類別下的 [[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**選項**] 對話方塊，手動交換原始檔控制 vspackage。 自動以解決方案為基礎的套件交換表示已針對特定方案指定的原始檔控制封裝，會在該方案開啟時自動設為 [作用中]。 每個原始檔控制封裝都應該執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 會處理原始檔控制外掛程式（執行原始檔控制外掛程式 API）和原始檔控制 Vspackage 之間的切換。
+### <a name="automatic-solution-based-vspackage-swapping"></a>基於解決方案的自動 VS 套件交換
+ 您可以透過 **「源控制**」[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]類別下的 **「選項**」對話方塊手動交換原始碼管理 VS 套件。 基於解決方案的自動包交換意味著在打開該解決方案時,已為特定解決方案指定的原始程式碼管理包將自動設置為活動。 每個原始碼管理員都應實<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A><xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>作與 。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]處理原始碼管理外掛程式(實現原始碼管理外掛程式 API)和原始程式碼管理 VS 套件之間的交換機。
 
- 原始檔控制介面卡套件是用來切換至任何原始檔控制外掛程式以 API 為基礎的外掛程式。 切換至中繼原始檔控制介面卡封裝，以及判斷哪些原始檔控制外掛程式必須設定為作用中或非作用中的程式，對使用者而言是透明的。 當任何原始檔控制外掛程式為作用中時，介面卡套件一律是作用中狀態。 在兩個原始檔控制外掛程式之間切換，只是載入和卸載外掛程式 DLL。 不過，切換到原始檔控制 VSPackage 會牽涉到與 IDE 的互動，以載入適當的 VSPackage。
+ 原始碼管理介面管理介面管理外掛程式的外掛程式 API。 切換到中間原始程式碼管理配接器包並確定必須設置為活動或非活動的原始程式碼管理外掛程式的過程對使用者是透明的。 當任何原始程式碼管理外掛程式處於活動狀態時,適配器包始終處於活動狀態。 在兩個原始程式碼管理外掛程式之間切換只需載入和卸載外掛程式 DLL 即可。 但是,切換到原始程式碼管理 VSPackage 需要與 IDE 互動以載入相應的 VSPackage。
 
- 當開啟任何方案，且 VSPackage 的登錄機碼位於方案檔時，會呼叫原始檔控制 VSPackage。 開啟方案時，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 會尋找登錄值，並載入適當的原始檔控制 VSPackage。 所有原始檔控制 Vspackage 都必須有上述的登錄專案。 原始檔控制下的方案會標示為與特定的原始檔控制 VSPackage 相關聯。 原始檔控制 Vspackage 必須執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>，才能啟用自動以解決方案為基礎的 VSPackage 交換。
+ 當打開任何解決方案並且 VSPackage 的註冊表項位於解決方案檔中時,將調用原始程式碼管理 VSPackage。 打開解決方案後,[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]尋找註冊表值並載入相應的原始程式碼管理 VSPackage。 所有原始碼管理 VS 包必須具有上述註冊表項。 受原始碼管理的解決方案被標記為與特定的原始碼管理 VSPackage 相關聯。 原始碼管理 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>必須實現實現,以啟用基於解決方案的自動 VSPackage 交換。
 
-### <a name="visual-studio-ui-for-package-selection-and-switching"></a>選取和切換套件的 Visual Studio UI
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 在 [**原始檔控制**] 類別之下的 [**選項**] 對話方塊中，提供原始檔控制 VSPackage 和外掛程式選擇的 UI。 它允許使用者選取作用中的原始檔控制外掛程式或 VSPackage。 下拉式清單包括：
+### <a name="visual-studio-ui-for-package-selection-and-switching"></a>用來選擇與切換的視覺化工作室 UI
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]在 **「源控制**」類別下的 **「選項**」對話框中為源代碼管理 VSPackage 和外掛程式選擇提供 UI。 它允許使用者選擇活動源控制外掛程式或 VSPackage。 下拉清單包括:
 
-- 所有已安裝的原始檔控制封裝
+- 所有已安裝的源碼管理套件
 
-- 所有已安裝的原始檔控制外掛程式
+- 所有已安裝的源碼管理外掛程式
 
-- "None" 選項，可停用原始程式碼控制
+- 關閉原始碼控制的「無」選項
 
-  只有作用中原始檔控制選項的 UI 是可見的。 VSPackage 選取專案會隱藏先前 VSPackage 的 UI，並顯示新的 ui。 使用中的 VSPackage 會以每個使用者為基礎來選取。 如果使用者有多個 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的複本同時開啟，則每一個都可能使用不同的作用中 VSPackage。 如果有多個使用者登入相同的電腦，每個使用者都可以有個別的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 開啟實例，每個都有不同的使用中 VSPackage。 當使用者關閉 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的多個實例時，針對最後一個開啟的方案，作用中的原始檔控制 VSPackage 會變成預設的原始檔控制 VSPackage，以在重新開機時設定為使用中狀態。
+  只有活動原始程式碼管理選擇的 UI 可見。 VSPackage 選擇隱藏上一個 VSPackage 的 UI,並顯示新 VSPackage 的 UI。 活動 VS 包是按使用者選擇的。 如果使用者具有多個同時打開的副本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)],則每個副本可能使用不同的活動 VS 包。 如果多個使用者登錄到同一台電腦,則每個使用者可以具有單獨的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]打開實例,每個實例具有不同的活動 VSPackage。 當使用者關閉的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]多個實例時,為最後一個打開的解決方案處於活動狀態的原始程式碼管理 VSPackage 將成為預設原始程式碼管理 VSPackage,在重新啟動時設置為活動。
 
-  不同于舊版的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，IDE 重新開機不再是切換原始檔控制 Vspackage 的唯一方法。 VSPackage 選取專案是自動的。 切換套件需要 Windows 使用者權限（不是系統管理員或 Power User）。
+  與的早期版本不同[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)],IDE 重新啟動不再是切換原始程式碼管理 VSPackages 的唯一方法。 VSPackage 選擇是自動的。 切換包需要 Windows 用戶許可權(不是管理員或超級使用者)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>
-- [功能](../../extensibility/internals/source-control-vspackage-features.md)
+- [特性](../../extensibility/internals/source-control-vspackage-features.md)
 - [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [VSPackage](../../extensibility/internals/vspackages.md)

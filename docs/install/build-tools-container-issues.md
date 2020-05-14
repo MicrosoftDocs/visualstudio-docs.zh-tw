@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
-ms.sourcegitcommit: b873fce7ba40d825fcb59555360c002bbfcecd9e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77611122"
 ---
 # <a name="known-issues-for-containers"></a>容器的已知問題
@@ -50,11 +50,11 @@ ms.locfileid: "77611122"
 
 ## <a name="build-tools-container"></a>建置工具容器
 
-當您使用建置工具容器時，可能會發生下列已知問題。 若要查看問題是否已獲得修正，或是否有其他已知問題，請瀏覽 [https://developercommunity.visualstudio.com](https://developercommunity.visualstudio.com)。
+當您使用建置工具容器時，可能會發生下列已知問題。 若要查看問題是否已獲得修正，或是否有其他已知問題，請瀏覽 https://developercommunity.visualstudio.com。
 
 * 在[某些情況](https://github.com/Microsoft/vstest/issues/940)下，IntelliTrace 在容器內可能無法運作。
 * 在適用於 Windows 的 Docker 舊版上，預設容器映像大小只有 20 GB，因此無法容納「建置工具」。 依照[變更映像大小的指示](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits)增加到 127 GB 以上。
-若要確認磁碟空間的問題，請查看記錄檔以取得詳細資訊。 如果磁碟空間不足，您的 `vslogs\dd_setup_<timestamp>_errors.log` 檔案將包含下列內容： 
+要確認磁碟空間問題，請查看日誌檔以瞭解更多資訊。 如果`vslogs\dd_setup_<timestamp>_errors.log`磁碟空間不足，檔將包括以下內容： 
 ```
 Pre-check verification: Visual Studio needs at least 91.99 GB of disk space. Try to free up space on C:\ or change your target drive.
 Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
@@ -63,6 +63,6 @@ Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
 
 ## <a name="see-also"></a>另請參閱
 
-* [將建置工具安裝至容器](build-tools-container.md)
-* [容器的進階範例](advanced-build-tools-container.md)
+* [將生成工具安裝到容器中](build-tools-container.md)
+* [容器高級示例](advanced-build-tools-container.md)
 * [Visual Studio Build Tools 工作負載和元件識別碼](workload-component-id-vs-build-tools.md)

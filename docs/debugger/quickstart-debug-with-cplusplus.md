@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: b619b2b6c93da8be399b2fc35d81ffe226f408ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "65679406"
 ---
-# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 C++ 進行偵錯
+# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具來偵錯 C++
 
 Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用程式。 本主題提供了解一些基本功能的快速方法。
 
@@ -28,13 +28,13 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 1. 開啟 Visual Studio 並建立專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **c++**，選擇 [範本]，然後選擇 [建立新的主控台應用程式專案]。 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **c++**，選擇 [範本]****，然後選擇 [建立新的主控台應用程式專案]****。 在出現的對話方塊中選擇 [建立]****。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新專案] 對話方塊的左窗格中，於 [Visual C++] 下選擇 [Windows Desktop]，然後在中間的窗格中選擇 [Windows 主控台應用程式]。 接著，輸入 **MyDbgApp** 之類的名稱，然後按一下 [確定]。
+    從頂部功能表列中，選擇 **"檔** > **新專案** > **"。** 在 [新專案]**** 對話方塊的左窗格中，於 [Visual C++]**** 下選擇 [Windows Desktop]****，然後在中間的窗格中選擇 [Windows 主控台應用程式]****。 接著，輸入 **MyDbgApp** 之類的名稱，然後按一下 [確定]****。
     ::: moniker-end
 
-    如果您看不到 [Windows 主控台應用程式] 專案範本，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
+    如果您看不到 [Windows 主控台應用程式]**** 專案範本，請移至 [工具]**** > [取得工具與功能...]****，以開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 [使用 C++ 的桌面開發]**** 工作負載，然後選擇 [修改]**** 按鈕。
 
     Visual Studio 會建立專案。
 
@@ -78,13 +78,13 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 ## <a name="set-a-breakpoint"></a>設定中斷點
 
-「中斷點」是一種標記，會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數值或記憶體行為，或查看程式碼分支是否正在執行。 它是偵錯中最基本的功能。
+「中斷點」** 是一種標記，會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數值或記憶體行為，或查看程式碼分支是否正在執行。 它是偵錯中最基本的功能。
 
 1. 若要設定中斷點，請按一下 `doWork` 函式呼叫左側的裝訂邊 (或選取該行程式碼並按 **F9** 鍵)。
 
-    ![設定中斷點](../debugger/media/dbg-qs-set-breakpoint.png "設定中斷點")
+    ![設置中斷點](../debugger/media/dbg-qs-set-breakpoint.png "設定中斷點")
 
-2. 現在按下 **F5** 鍵 (或選擇 [偵錯] > [開始偵錯])。
+2. 現在按下 **F5** 鍵 (或選擇 [偵錯] > [開始偵錯]****)。
 
     ![叫用中斷點](../debugger/media/dbg-qs-hit-breakpoint.png "叫用中斷點")
 
@@ -99,9 +99,9 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 您可以透過不同的命令來指示偵錯工具繼續。 我們會示出 Visual Studio 2017 開始可用的實用程式碼導覽命令。
 
-在中斷點處暫停時，將滑鼠游標移至陳述式 `c1.push_back(20)` 上方，直到出現綠色的 [執行至點選處] 按鈕 ![執行至點選處](../debugger/media/dbg-tour-run-to-click.png "RunToClick")，然後按 [執行至點選處] 按鈕。
+在中斷點處暫停時，將滑鼠游標移至陳述式 `c1.push_back(20)` 上方，直到出現綠色的 [執行至點選處]**** 按鈕 ![執行至點選處](../debugger/media/dbg-tour-run-to-click.png "運行點擊")，然後按 [執行至點選處]**** 按鈕。
 
-![執行至點選處](../debugger/media/dbg-qs-run-to-click.png "執行至點選處")
+![運行以按一下](../debugger/media/dbg-qs-run-to-click.png "執行至點選處")
 
 應用程式會繼續執行，並呼叫 `doWork`，然後在您按下按鈕所在的程式碼行暫停。
 
@@ -125,7 +125,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 1. 按一下 `c2.front()` 的第二個執行個體，並將 `c2.front()` 變更為 `c2.back()`。
 
-2. 按幾下 **F10** 鍵 (或 [偵錯] > [不進入函式]) ，以繼續進行偵錯工具並執行編輯的程式碼。
+2. 按幾下 **F10** 鍵 (或 [偵錯] > [不進入函式]****) ，以繼續進行偵錯工具並執行編輯的程式碼。
 
     ![編輯後繼續](../debugger/media/dbg-qs-edit-and-continue.gif "編輯後繼續")
 
@@ -138,4 +138,4 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 在本教學課程中，您已了解如何啟動偵錯工具、逐步執行程式碼，以及檢查變數。 建議您進一步查看偵錯工具功能，以及詳細資訊的連結。
 
 > [!div class="nextstepaction"]
-> [偵錯工具簡介](../debugger/debugger-feature-tour.md)
+> [首先查看調試器](../debugger/debugger-feature-tour.md)

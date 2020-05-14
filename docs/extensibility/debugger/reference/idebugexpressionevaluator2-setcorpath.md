@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::SetCorPath | Microsoft Docs
+title: IDebug運算式評估器2::設置路徑 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - SetCorPath
 - IDebugExpressionEvaluator2::SetCorPath
 ms.assetid: 27b614ff-7325-4f9b-8da4-61ee020c9410
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e8300f3cfc54ece6a57c31fcca819ffd8d275d28
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bea93c3f10a946353c52231d0ac3802f0b2ec8e9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313165"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729271"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
-設定 common language runtime (CLR) 載入偵錯工具的路徑。
+設置除錯器中載入的通用語言執行時 (CLR) 的路徑。
 
 ## <a name="syntax"></a>語法
 
@@ -40,13 +40,13 @@ int SetCorPath(
 
 ## <a name="parameters"></a>參數
 `pcstrCorPath`\
-[in]偵錯工具中，載入至 CLR 的路徑。
+[在]在除錯器中載入的 CLR 的路徑。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
- 下列範例示範如何實作這個方法，如**ExpressionEvaluatorPackage**公開 （expose） 的物件[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)介面。
+ 下面的範例展示如何為公開[IDebugExpression評估器2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)介面的**運算式計算機包**物件實現此方法。
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::SetCorPath(LPCOLESTR pcstrCorPath)

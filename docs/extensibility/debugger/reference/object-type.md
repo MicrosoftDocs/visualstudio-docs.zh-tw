@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Microsoft Docs
+title: OBJECT_TYPE |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 726e4978ac2c474b1f23b90f409f25b8a58aceab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349923"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714135"
 ---
-# <a name="objecttype"></a>OBJECT_TYPE
-指定運算式評估工具中的物件的類型。
+# <a name="object_type"></a>Object_Type
+從表達式賦值器指定對象的類型。
 
 ## <a name="syntax"></a>語法
 
@@ -70,59 +70,59 @@ public enum enum_OBJECT_TYPE { 
 
 ## <a name="fields"></a>欄位
  `OBJECT_TYPE_BOOLEAN`\
- 指出物件是布林值。
+ 指示對像是布爾。
 
  `OBJECT_TYPE_CHAR`\
- 指出物件是一個字元。
+ 指示對像是字元。
 
  `OBJECT_TYPE_I1`\
- 指出物件是一個位元組帶正負號的整數。
+ 指示對像是一位節簽名整數。
 
  `OBJECT_TYPE_U1`\
- 指出物件是一個位元組不帶正負號的整數。
+ 指示該對像是一個無符號整數。
 
  `OBJECT_TYPE_I2`\
- 指出物件是二位元組帶正負號的整數。
+ 指示對像是兩位元節簽名整數。
 
  `OBJECT_TYPE_U2`\
- 指出物件是二位元組不帶正負號的整數。
+ 指示該對像是一個兩位元組的無符號整數。
 
  `OBJECT_TYPE_I4`\
- 指出物件是四位元組帶正負號的整數。
+ 指示對像是四位元節簽名整數。
 
  `OBJECT_TYPE_U4`\
- 指出物件是四位元組不帶正負號的整數。
+ 指示該對像是一個四位元組的無符號整數。
 
  `OBJECT_TYPE_I8`\
- 表示此物件是八位元組帶正負號的整數。
+ 指示該對像是一個八位元節簽名整數。
 
  `OBJECT_TYPE_U8`\
- 表示物件的八位元組不帶正負號的整數。
+ 指示該對像是一個八位元組的無符號整數。
 
  `OBJECT_TYPE_R4`\
- 指出物件是四位元組浮點數。
+ 指示物件是四位元組浮點數。
 
  `OBJECT_TYPE_R8`\
- 指出物件是 8 位元組浮點數。
+ 指示對像是八位元組浮點數。
 
  `OBJECT_TYPE_OBJECT`\
- 表示物件的物件。
+ 指示對像是物件。
 
  `OBJECT_TYPE_NULL`\
- 表示為 NULL 的物件。
+ 指示物件為 NULL。
 
  `OBJECT_TYPE_CLASS`\
- 表示物件的類別。
+ 指示對像是類。
 
 ## <a name="remarks"></a>備註
- 作為引數[CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)並[CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)方法。
+ 作為參數傳遞給 Create[原始物件](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)和[創建 ArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)方法。
 
 ## <a name="requirements"></a>需求
- 標頭： ee.h
+ 標題: ee.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

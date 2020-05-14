@@ -1,26 +1,26 @@
 ---
-title: 在 Managed 程式碼的 COM 常數 |Microsoft Docs
+title: 託管代碼中的 COM 常量 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, COM constants and macros
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d855142ad51f5433fbf0053cfbcfc1d8bef8871d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 919d000e44b90e975543f8aa6419968a40149adf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350716"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739836"
 ---
-# <a name="com-constants-in-managed-code"></a>在 managed 程式碼的 COM 常數
-Managed Package Framework (MPF) 提供一些標準的 COM 常數給 managed 程式碼。 這些常數如下所列供您參考。
+# <a name="com-constants-in-managed-code"></a>託管代碼中的 COM 常量
+託管套件框架 (MPF) 使一些標準 COM 常量可用於託管代碼。 下面列出了這些常量,供參考。
 
-## <a name="boolean-hresult-values"></a>布林值的 HRESULT 值
+## <a name="boolean-hresult-values"></a>布林 HRESULT 值
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>
 
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>
@@ -89,7 +89,7 @@ Managed Package Framework (MPF) 提供一些標準的 COM 常數給 managed 程�
 
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>
 
-## <a name="ole-dispatch-errors"></a>OLE 分派錯誤
+## <a name="ole-dispatch-errors"></a>OLE 排程錯誤
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>
@@ -127,4 +127,4 @@ Managed Package Framework (MPF) 提供一些標準的 COM 常數給 managed 程�
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
 ## <a name="see-also"></a>另請參閱
-- [錯誤處理和傳回值](../extensibility/error-handling-and-return-values.md)
+- [錯誤處理與傳回值](../extensibility/error-handling-and-return-values.md)

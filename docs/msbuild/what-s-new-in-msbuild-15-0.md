@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: 49e248ee0e5537ae54957695ca698b041fc1ce8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2503040e074a62422d4c7c904f5ad3a2bd84d6c1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567276"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631025"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 中的新功能
 
@@ -39,9 +39,10 @@ MSBuild 現在已可當作 [.NET Core SDK](https://www.microsoft.com/net/downloa
 - `SDK35ToolsPath` 和 `SDK40ToolsPath` 屬性指向與此版本 Visual Studio 一起封裝的 .NET Framework SDK (例如 4.X 工具的 10.0A)。
 
 ## <a name="updates"></a>更新
+
 - [Project 元素](../msbuild/project-element-msbuild.md)有新的 `SDK` 屬性。 而 `Xmlns` 屬性現在是選擇性的。 如需有關 `SDK` 屬性的詳細資訊，請參閱[如何：使用 MSBuild 專案 SDK](../msbuild/how-to-use-project-sdk.md)、[套件、中繼套件和架構](/dotnet/core/packages)，以及[適用於 .NET Core 之 csproj 格式的新增項目](/dotnet/core/tools/csproj)。
 - 目標外的 [Item 元素](../msbuild/item-element-msbuild.md)有新的 `Update` 屬性。 此外，已經移除對 `Remove` 屬性的限制。
-- *Directory.Build.props* 是使用者定義的檔案，可讓您自訂目錄下的專案。 除非屬性 `ImportDirectoryBuildTargets` 設為 **false**，否則系統會從 *Microsoft.Common.props* 自動匯入這個檔案。 *Directory.Build.targets* 是由 *Microsoft.Common.targets* 匯入的。
+- *目錄.Build.props*是一個使用者定義的檔，為目錄下的專案提供自訂。 除非屬性 `ImportDirectoryBuildTargets` 設為 **false**，否則系統會從 *Microsoft.Common.props* 自動匯入這個檔案。 *Directory.Build.targets* 是由 *Microsoft.Common.targets* 匯入的。
 - 任何未與目前屬性清單衝突的中繼資料，您即可選擇將其表示為屬性。 如需詳細資訊，請參閱 [Item 元素](../msbuild/item-element-msbuild.md)。
 
 ## <a name="new-property-functions"></a>新的屬性函式
@@ -51,5 +52,6 @@ MSBuild 現在已可當作 [.NET Core SDK](https://www.microsoft.com/net/downloa
 - `NormalizeDirectory` 會結合路徑元素，確保具有結尾斜線，及確保輸出字串具有適用於目前作業系統的正確目錄分隔字元。
 - `GetPathOfFileAbove` 會傳回此檔案前一個檔案的路徑。 它在功能上相當於呼叫 `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`
 
-## <a name="see-also"></a>請參閱
-- [ MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>另請參閱
+
+- [MSBuild](../msbuild/msbuild.md)

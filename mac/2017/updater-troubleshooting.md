@@ -7,17 +7,17 @@ ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 8825BBAD-65C0-480F-9868-A01E64F28250
 ms.openlocfilehash: 2ff0703171f5854baed2dd9be3767571a930bcb7
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983491"
 ---
-# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>疑難排解：更新程式發生錯誤，正在抓取資訊
+# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>故障排除：更新程式檢索資訊時出錯
 
 在極少數情況下，當您嘗試[更新 Visual Studio for Mac](update.md) 時，您可能會看到顯示錯誤訊息 [擷取更新資訊時發生錯誤]。 如果發生此錯誤，請嘗試下列步驟來修正：
 
-- 檢查網際網路連線。 連線中斷是造成此錯誤最常見的原因。
+- 請檢查網際網路連線。 連線中斷是造成此錯誤最常見的原因。
   - 如果下載元件失敗，您可以按一下元件名稱旁邊的重試按鈕，以嘗試再次下載。
 - 重新啟動 IDE。
 - 如果您繼續看到此錯誤訊息，若 **.dmg** 仍在您的電腦上 (或者您可以從 [visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20Mac) 下載)，您也可以嘗試使用 Visual Studio 2017 for Mac 安裝程式來更新

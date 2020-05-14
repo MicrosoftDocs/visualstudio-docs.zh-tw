@@ -1,5 +1,5 @@
 ---
-title: SccEndBatch 函式 |Microsoft Docs
+title: SccEndBatch 功能 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccEndBatch function
 ms.assetid: 100e7833-fe0a-45c0-9fca-3e61fd1165b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e915a2e0c508e62a8d34d8d8a5b4fdcd734bbf8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 51fe7e0bc0d417ffa182fbc68fd2779ed0b625d9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353697"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700915"
 ---
-# <a name="sccendbatch-function"></a>SccEndBatch 函式
-此函式結束時，原始檔控制作業的批次。 這些批次可能不是巢狀。
+# <a name="sccendbatch-function"></a>SccEndBatch 功能
+此功能完成一批原始程式碼管理操作。 這些批次可能無法嵌套。
 
 ## <a name="syntax"></a>語法
 
@@ -32,16 +32,16 @@ SCCRTN SccEndBatch(void);
  無。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函數的源碼管理外掛程式實現應返回以下值之一:
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|已成功完成的作業批次。|
-|SCC_E_UNKNOWNERROR|不明確的失敗。|
+|SCC_OK|一批操作成功結束。|
+|SCC_E_UNKNOWNERROR|非特異性故障。|
 
 ## <a name="remarks"></a>備註
- 原始檔控制批次用來跨多個專案或多個內容中執行相同的原始檔控制作業。 批次可用來在 批次作業期間消除多餘的對話方塊，從使用者體驗。 [SccBeginBatch](../extensibility/sccbeginbatch-function.md)而`SccEndBatch`函式做為一組可用來表示的開頭和結尾的作業。 它們不能巢狀。
+ 原始程式碼管理批次處理用於跨多個專案或多個上下文執行相同的原始程式碼管理操作。 批次處理可用於在批次處理操作期間從用戶體驗中消除冗餘對話框。 [SccBeginBatch](../extensibility/sccbeginbatch-function.md)`SccEndBatch`和 函數用作一對,以指示操作的開始和結束。 它們不能嵌套。
 
 ## <a name="see-also"></a>另請參閱
-- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
 - [SccBeginBatch](../extensibility/sccbeginbatch-function.md)

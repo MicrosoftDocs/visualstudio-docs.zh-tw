@@ -1,20 +1,20 @@
 ---
-title: 專案和方案
+title: 專案與解決方案
 description: 本文件概述 Visual Studio for Mac 中的專案和方案。
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
 ms.openlocfilehash: d0cf61c94161e6d6bef6cd580e5fb342a177c1c4
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983517"
 ---
-# <a name="projects-and-solutions"></a>專案和方案
+# <a name="projects-and-solutions"></a>專案與解決方案
 
-Visual Studio for Mac 提供  _Solution Pad_  以顯示整個開放方案的樹狀檢視。 **Solution** Pad 可讓您輕鬆存取個別專案中包含的原始程式碼、資源、使用者介面和組件參考。 根據預設，Solution Pad 會一次開啟一個方案。 每個方案都可以包含許多專案，而且每個專案都可以包含多個項目。
+Mac 的 Visual Studio 提供了一個 _解決方案墊_ ，用於顯示整個開放解決方案的樹狀檢視。 **Solution** Pad 可讓您輕鬆存取個別專案中包含的原始程式碼、資源、使用者介面和組件參考。 根據預設，Solution Pad 會一次開啟一個方案。 每個方案都可以包含許多專案，而且每個專案都可以包含多個項目。
 
 ## <a name="using-projects-and-solutions"></a>使用專案和方案
 
@@ -22,8 +22,8 @@ Visual Studio for Mac 提供  _Solution Pad_  以顯示整個開放方案的�
 
 ## <a name="project-and-solution-options"></a>專案和方案選項
 
-按兩下專案或方案名稱，或者按一下滑鼠右鍵並瀏覽至 [選項]，即可管理專案和方案的屬性。 [管理方案和專案屬性](managing-solutions-and-project-properties.md)一文提供這些選項的詳細資訊。
+按兩下專案或方案名稱，或者按一下滑鼠右鍵並瀏覽至 [選項]****，即可管理專案和方案的屬性。 [管理方案和專案屬性](managing-solutions-and-project-properties.md)一文提供這些選項的詳細資訊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio (Windows)中的方案和專案](/visualstudio/ide/solutions-and-projects-in-visual-studio)

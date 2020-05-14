@@ -8,13 +8,13 @@
           href: analyzing-managed-code-quality-by-using-code-analysis.md
         - name: Managed 程式碼的程式碼分析概觀
           href: code-analysis-for-managed-code-overview.md
-        - name: 作法：啟用和停用自動程式碼分析
+        - name: 如何：啟用和停用自動程式碼分析
           href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-        - name: 作法：啟用和停用完整解決方案分析
+        - name: 如何：啟用和停用完整解決方案分析
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: 自動功能暫停
           href: automatic-feature-suspension.md
-        - name: 作法：手動執行程式碼分析
+        - name: 如何：手動執行程式碼分析
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: 逐步解說：分析受控碼的程式碼缺失
           href: walkthrough-analyzing-managed-code-for-code-defects.md
@@ -24,17 +24,17 @@
               href: suppress-warnings-by-using-the-suppressmessage-attribute.md
             - name: 原始檔中隱藏項目概觀
               href: in-source-suppression-overview.md
-            - name: 作法：使用功能表項目隱藏警告
+            - name: 如何：使用功能表項目隱藏警告
               href: how-to-suppress-warnings-by-using-the-menu-item.md
-            - name: 作法：隱藏所產生程式碼的警告
+            - name: 如何：隱藏所產生程式碼的警告
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-            - name: 作法：自訂程式碼分析字典
+            - name: 如何：自訂程式碼分析字典
               href: how-to-customize-the-code-analysis-dictionary.md
             - name: 匿名方法和程式碼分析
               href: anonymous-methods-and-code-analysis.md
-            - name: 作法：檢視受控碼缺失
+            - name: 如何：檢視受控碼缺失
               href: how-to-view-managed-code-defects.md
-            - name: 作法：為受控碼的缺失建立工作項目
+            - name: 如何：為受控碼的缺失建立工作項目
               href: how-to-create-a-work-item-for-a-managed-code-defect.md
             - name: Managed 程式碼的程式碼分析警告
               items:
@@ -580,7 +580,7 @@
       href: using-the-cpp-core-guidelines-checkers.md
     - name: C/C++ 程式碼分析概觀
       href: code-analysis-for-c-cpp-overview.md
-    - name: 作法：為 C/C++ 專案設定程式碼分析屬性
+    - name: 如何：為 C/C++ 專案設定程式碼分析屬性
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
     - name: 逐步解說：分析 C/C++ 程式碼的缺失
       items:
@@ -608,7 +608,7 @@
           href: intrinsic-functions.md
         - name: 最佳作法和範例
           href: best-practices-and-examples-sal.md
-        - name: 作法：使用 _analysis_assume 來指定其他程式碼資訊
+        - name: 如何：使用 _analysis_assume 來指定其他程式碼資訊
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
         - name: C/C++ 程式碼分析警告
           items:
@@ -1192,19 +1192,19 @@
               href: using-rule-sets-to-group-code-analysis-rules.md
             - name: 逐步解說：設定和使用自訂規則集
               href: walkthrough-configuring-and-using-a-custom-rule-set.md
-            - name: 作法：設定受控碼專案的程式碼分析
+            - name: 如何：設定受控碼專案的程式碼分析
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: 作法：設定 ASP.NET Web 應用程式的程式碼分析
+            - name: 如何：設定 ASP.NET Web 應用程式的程式碼分析
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-            - name: 作法：將程式碼專案規則集與 Team 專案簽入原則進行同步處理
+            - name: 如何：將程式碼專案規則集與 Team 專案簽入原則進行同步處理
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-            - name: 作法：對解決方案中的多個專案指定規則集
+            - name: 如何：對解決方案中的多個專案指定規則集
               href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
             - name: 建立自訂規則集
               items:
                 - name: 建立自訂規則集
                   href: creating-custom-code-analysis-rule-sets.md
-                - name: 作法：建立自訂規則集
+                - name: 如何：建立自訂規則集
                   href: how-to-create-a-custom-rule-set.md
                 - name: 在規則集編輯器中工作
                   href: working-in-the-code-analysis-rule-set-editor.md
@@ -1304,11 +1304,11 @@
               items:
                 - name: 建立和使用程式碼分析簽入原則
                   href: creating-and-using-code-analysis-check-in-policies.md
-                - name: 作法：建立或更新標準程式碼分析簽入原則
+                - name: 如何：建立或更新標準程式碼分析簽入原則
                   href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
                 - name: 為 Managed 程式碼實作自訂簽入原則
                   href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-                - name: 作法：以程式碼分析簽入原則來強制程式碼的可維護性
+                - name: 如何：以程式碼分析簽入原則來強制程式碼的可維護性
                   href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
                 - name: 程式碼分析簽入原則的版本相容性
                   href: version-compatibility-for-code-analysis-check-in-policies.md
@@ -1318,7 +1318,7 @@
       href: measuring-complexity-and-maintainability-of-managed-code.md
     - name: 程式碼度量值
       href: code-metrics-values.md
-    - name: 作法：產生程式碼度量資料
+    - name: 如何：產生程式碼度量資料
       href: how-to-generate-code-metrics-data.md
     - name: 使用程式碼度量資料
       href: working-with-code-metrics-data.md

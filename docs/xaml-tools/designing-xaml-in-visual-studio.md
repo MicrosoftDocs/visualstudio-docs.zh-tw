@@ -1,48 +1,56 @@
 ---
-title: 在 Visual Studio 與 Blend 中設計 XAML
+title: 在視覺工作室和視覺工作室的混合中設計 XAML
 titleSuffix: ''
-ms.date: 08/05/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 97946fc2ed79b83fbc7d3ce3c3dc4960934eb5ab
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: eb18a2face5d9f1831bec35379a423f272c3e6ce
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592977"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649818"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>在 Visual Studio 與 Blend for Visual Studio 中設計 XAML
 
 Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為各種應用程式類型建立更吸引人的使用者介面和豐富的媒體體驗。 這兩個整合式開發環境 (IDE) 共用一組通用的功能，包括視覺化 XAML 編輯器 (設計工具)。 Blend for Visual Studio (支援 WPF 與 UWP 平台) 提供額外的工具來設計視覺狀態和建立動畫。
 
-您可以在 Visual Studio 與 Blend for Visual Studio 之間來回切換，甚至可以在這兩個 IDE 中同時開啟相同的專案。 如果在一個 IDE 中將變更儲存至 XAML 檔案，當您切換到另一個 IDE 時，透過自動重新載入即可套用那些變更。 您可以在任一 IDE 中，透過瀏覽至 [工具] > [選項] > [環境] > [文件]，控制重新載入行為。
+您可以在 Visual Studio 與 Blend for Visual Studio 之間來回切換，甚至可以在這兩個 IDE 中同時開啟相同的專案。 如果在一個 IDE 中將變更儲存至 XAML 檔案，當您切換到另一個 IDE 時，透過自動重新載入即可套用那些變更。 您可以通過瀏覽到任一 IDE 中的 **「工具** > **」選項** > **環境** > **文件**」來控制重新載入行為。
 
 ## <a name="installation"></a>安裝
 
-- 若要建立 WPF 應用程式，請安裝 Visual Studio 中的 [.NET 桌面開發] 工作負載。 此外，也將安裝 Blend for Visual Studio。
-- 若要建立 UWP 應用程式，請安裝 Visual Studio 中的 [通用 Windows 平台開發] 工作負載。 此外，也將安裝 Blend for Visual Studio。
-- 若要建立 Xamarin.Forms 應用程式，請安裝 Visual Studio 中的 [使用 .NET 進行行動開發] 工作負載。 「不」安裝 Blend for Visual Studio；Blend 並不支援 Xamarin.Forms 應用程式。
+- 若要建立 WPF 應用程式，請安裝 Visual Studio 中的 [.NET 桌面開發]**** 工作負載。 此外，也將安裝 Blend for Visual Studio。
+
+     ![視覺化工作室安裝程式 .NET 桌面開發工作負載的螢幕截圖](../xaml-tools/media/dotnet-desktop-dev-workload.png)
+
+- 若要建立 UWP 應用程式，請安裝 Visual Studio 中的 [通用 Windows 平台開發]**** 工作負載。 此外，也將安裝 Blend for Visual Studio。
+
+     ![視覺化工作室安裝程式通用 Windows 平台開發工作負載的螢幕截圖](../xaml-tools/media/uwp-workload.png)
+
+- 若要建立 Xamarin.Forms 應用程式，請安裝 Visual Studio 中的 [使用 .NET 進行行動開發]**** 工作負載。 「不」** 安裝 Blend for Visual Studio；Blend 並不支援 Xamarin.Forms 應用程式。
+
+     ![視覺化工作室安裝程式的 .NET 工作負載移動開發螢幕截圖](../xaml-tools/media/mobile-dev-dotnet-workload.png)
 
 ## <a name="shared-capabilities"></a>共用功能
 
 就大多數基本開發工作而言，Visual Studio 與 Blend for Visual Studio 共用一組相同的視窗和功能，但有些微差異。 一些重點包括：
 
-- **IntelliSense：** 這兩個 Ide 都支援 IntelliSense 功能，例如語句完成。
+- **感知:** 兩個 IDEs 都支援 IntelliSense 功能,如語句完成。
 
-- **調試：** 您可以在[Visual Studio](../debugger/inspect-xaml-properties-while-debugging.md)和[Blend for Visual Studio](../xaml-tools/debug-xaml-in-blend.md)中進行 debug，包括在程式碼中設定中斷點，以在執行應用程式時，使用[熱重載](../xaml-tools/xaml-hot-reload.md)來變更 XAML 程式碼。 為了維持與 Visual Studio 一致的偵錯體驗，Blend for Visual Studio 包含大部分的 Visual Studio 偵錯視窗和工具列。
+- **除錯:** 您可以在 Visual [Studio](inspect-xaml-properties-while-debugging.md)和[Visual Studio 的混合](../xaml-tools/debug-xaml-in-blend.md)中調試,包括在程式碼中設定斷點以調試正在運行的應用,並使用[熱重新載入](../xaml-tools/xaml-hot-reload.md)在應用程式執行時更改 XAML 代碼。 為了維持與 Visual Studio 一致的偵錯體驗，Blend for Visual Studio 包含大部分的 Visual Studio 偵錯視窗和工具列。
 
-- 檔案**重載：** 您可以在 Visual Studio 或 Blend for Visual Studio 中編輯 XAML 檔案。 當您在兩個 IDE 之間切換時，編輯過且已儲存的檔案會自動重新載入。 您可以在任一 IDE 中，透過瀏覽至 [工具] > [選項] > [環境] > [文件]，控制重新載入行為。
+- **檔案重新載入:** 您可以在 Visual Studio 或「Visual Studio 混合」中編輯 XAML 檔。 當您在兩個 IDE 之間切換時，編輯過且已儲存的檔案會自動重新載入。 您可以通過瀏覽到任一 IDE 中的 **「工具** > **」選項** > **環境** > **文件**」來控制重新載入行為。
 
-- **同步處理的版面配置和設定：** 當您使用相同的個人化帳戶登入時，Visual Studio 或 Blend for Visual Studio 的自訂工具視窗配置和設定喜好設定會在您的裝置和版本之間同步處理。 請參閱[跨多部電腦同步處理設定](../ide/synchronized-settings-in-visual-studio.md)。
+- **同步佈局與設定:** 當您使用相同的個人化帳戶登錄時,設計可視化工作室或 Visual Studio 的「混合」的設計自訂工具視窗佈局和設定首選項將跨設備和版本同步。 請參閱[跨多部電腦同步處理設定](../ide/synchronized-settings-in-visual-studio.md)。
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的進階功能
 
 若要提升產能，請考慮使用 Blend for Visual Studio 來處理下列工作。 這些都是 Blend for Visual Studio 可提供比 Visual Studio 設計工具或程式碼本身更多功能之處。
 
-| 工作 | Visual Studio | Blend for Visual Studio | 詳細資訊 |
+| Task | Visual Studio | Blend for Visual Studio | 詳細資訊 |
 | - | - | - | - |
 | **設計視覺狀態** | 沒有任何工具可協助您設計視覺狀態；您必須以程式設計方式建立它們。 | 使用設計工具來根據控制項的狀態變更其外觀。 | [視覺狀態](modify-the-style-of-objects-in-blend.md#visual-states) |
 | **建立動畫** |動畫沒有設計工具，您必須以程式設計方式來建立動畫。 這需要了解動畫、WPF 中的計時系統以及大量編碼專業知識。|您能以視覺化方式建立動畫，並在 Blend for Visual Studio 中預覽。 這比在程式碼中建置動畫來得更多更精準。 您可以新增觸發程序來處理使用者互動，而且可以切換到程式碼以加入事件處理常式和其他功能。|[製作物件動畫](../xaml-tools/animate-objects-in-xaml-designer.md)|
@@ -51,3 +59,8 @@ Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為�
 |**將 UI 連接到資料**|您可以從資源 (例如 SQL Server 資料庫、WCF 或 Web 服務、物件或 SharePoint 清單) 建立資料來源，然後將資料來源繫結至 UI 控制項。<br /><br />設計階段資料必須以手動方式建立才能獲得互動式的設計體驗。|針對 .NET Framework 應用程式，輕鬆建立範例資料來進行原型設計和測試。 準備好時切換到即時資料。<br /><br />Blend for Visual Studio 的資料產生功能相當傑出 (您可以輕鬆地即時新增名稱、數字、URL、相片)，為您節省許多時間。<br /><br />對於即時資料，您可以將 UI 控制項繫結至 XML 檔案，或任何 CLR 資料來源。|[顯示資料](display-data-in-blend.md)|
 
 如需進階 XAML 設計的詳細資訊，請參閱[使用 Blend for Visual Studio 建立 UI](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)。
+
+## <a name="see-also"></a>另請參閱
+
+- [XAML 概觀](xaml-overview.md)
+- [Blend for Visual Studio 概觀](creating-a-ui-by-using-blend-for-visual-studio.md)

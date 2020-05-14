@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f37fb451238ec7ce6f48d8a4d3b91efa9ce04db7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774308"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>指令指標 (IP) 檢視 - 爭用資料
@@ -29,22 +29,22 @@ ms.locfileid: "74774308"
 |**專有封鎖時間 %**|指令執行時的封鎖時間百分比。|
 |**專有爭用**|指令執行時所發生爭用情況的數目。|
 |**專有爭用 %**|指令執行時，在程式碼剖析執行時所發生所有爭用情況的百分比。|
-|**函式位址**|在載入的二進位檔中函式的起始記憶體位址。|
-|**函式名稱**|包含此指令的函式名稱。|
+|**功能位址**|在載入的二進位檔中函式的起始記憶體位址。|
+|**函數名稱**|包含此指令的函式名稱。|
 |**指令位址**|載入的二進位檔中指令的記憶體位址。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
 |**模組名稱**|包含該指令的模組名稱。|
 |**模組路徑**|包含該指令的模組路徑。|
-|**處理序 ID**|已進行程式碼剖析之處理序的處理序 ID (PID)。|
-|**處理序名稱**|處理程序的名稱。|
+|**處理序識別碼**|已進行程式碼剖析之處理序的處理序 ID (PID)。|
+|**流程名稱**|處理序的名稱。|
 |**原始程式碼開頭字元**|此指令開始的原始程式檔行中的字元位移。|
 |**原始程式碼結尾字元**|此指令結束的原始程式檔行中的字元位移。|
-|**原始程式檔**|包含此指令的原始程式檔。|
+|**原始檔案**|包含此指令的原始程式檔。|
 |**原始程式碼開頭行**|此函式在原始程式檔中開始的行號。|
 |**原始程式碼結尾行**|此函式在原始程式檔中結束的行號。|
 
-## <a name="see-also"></a>請參閱
-- [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
+## <a name="see-also"></a>另請參閱
+- [操作方式：自訂報表檢視列](../profiling/how-to-customize-report-view-columns.md)
 - [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view.md)
-- [指令指標 (IP) 檢視 - 取樣](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [指令指標 （IP） 視圖 - 採樣](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 - [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view-sampling-data.md)

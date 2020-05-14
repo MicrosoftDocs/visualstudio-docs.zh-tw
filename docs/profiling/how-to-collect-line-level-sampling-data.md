@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f64040c9180a152650de16b23276ab0e65cc9ead
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776354"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>如何：收集程式行層級取樣資料
@@ -45,17 +45,17 @@ ms.locfileid: "74776354"
 
 - IP - 取得彙總樣本的位址 (僅限 IP 檢視)。
 
-  在 [模組] 檢視中，如果函式包含程式行層級統計資料，統計資料會巢狀於每個函式之下。 此外，巢狀於每一行之下的 IP 層級統計資料也會顯示。
+  在 [模組]**** 檢視中，如果函式包含程式行層級統計資料，統計資料會巢狀於每個函式之下。 此外，巢狀於每一行之下的 IP 層級統計資料也會顯示。
 
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>關閉受控程式碼的程式行層級取樣
  程式行層級取樣預設為開啟。 您可以執行下列其中一個命令，以關閉受控程式碼的程式行層級資料收集：
 
 - 在進行程式碼剖析之前，輸入 **VSPerfCLREnv /samplelineoff**。 這會影響應用程式和服務。
 
-     — 或 —
+     — 或者—
 
-- 啟動應用程式時，輸入 **VSPerfCmd /lineoff \<其他引數>** 。
+- 啟動應用程式時，輸入 **VSPerfCmd /lineoff \<其他引數>**。
 
-## <a name="see-also"></a>請參閱
-- [設定效能工作階段](../profiling/configuring-performance-sessions.md)
-- [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)
+## <a name="see-also"></a>另請參閱
+- [配置性能會話](../profiling/configuring-performance-sessions.md)
+- [分析性能工具資料](../profiling/analyzing-performance-tools-data.md)

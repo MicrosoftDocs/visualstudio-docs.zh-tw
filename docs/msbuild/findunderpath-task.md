@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33912df490b148c91c2a0d152f979bd6149d8ae3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4d97b727dcba8cd16fe97ee33764947797c36db7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566068"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634132"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath 工作
+
 判斷指定項目集合中哪些項目的路徑位於指定資料夾或其子資料夾中。
 
 ## <a name="parameters"></a>參數
+
 下表說明 `FindUnderPath` 工作的參數。
 
 |參數|描述|
@@ -40,9 +42,11 @@ ms.locfileid: "75566068"
 |`UpdateToAbsolutePaths`|選擇性的 `Boolean` 參數。<br /><br /> 如果輸出項目的路徑已更新為絕對路徑，則為 true。|
 
 ## <a name="remarks"></a>備註
-除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+
+除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
+
 下列範例使用 `FindUnderPath` 工作，來判斷 `MyFiles` 項目中所包含的檔案路徑是否已存在於 `SearchPath` 屬性指定的路徑下。 工作完成之後，`FilesNotFoundInPath` 項目包含 *File1.txt* 檔案，而 `FilesFoundInPath` 項目包含 *File2.txt* 檔案。
 
 ```xml
@@ -72,7 +76,8 @@ ms.locfileid: "75566068"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
-- [工作參考](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>另請參閱
+
+- [任務引用](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

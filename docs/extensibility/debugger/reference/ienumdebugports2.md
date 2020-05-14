@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPorts2 | Microsoft Docs
+title: IEnum調試埠2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPorts2
 ms.assetid: 1754eef3-cf62-42e0-b218-1911acba77d4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c24edcd5ef47408cd4c11b3d0548ad34516702a1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f3cc46ef8abb6ef1fbb8f072d97b0fc4a537af1a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326511"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716111"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
-此介面列舉電腦或連接埠的供應商的連接的埠。
+此介面枚舉機器或埠供應商的埠。
 
 ## <a name="syntax"></a>語法
 
@@ -28,34 +28,34 @@ ms.locfileid: "66326511"
 IEnumDebugPorts2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 自訂的連接埠提供者會實作這個介面來代表供應商所建立的連接埠清單。 Visual Studio 會實作這個介面來支援它自己的連接埠提供者。
+## <a name="notes-for-implementers"></a>實施者說明
+ 自定義埠供應商實現此介面以表示供應商創建的埠清單。 Visual Studio 實現此介面以支援其自己的埠供應商。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 呼叫[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)來取得這個介面，表示連接埠提供者所建立的連接埠清單。 呼叫[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)來取得這個介面，表示已儲存的連接埠清單到磁碟。
+## <a name="notes-for-callers"></a>通話備註
+ 呼叫[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)以獲取此介面,表示埠供應商創建的埠清單。 呼叫[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)以取得此介面,表示保存到磁碟的埠清單。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IEnumDebugPorts2`。
 
 |方法|描述|
 |------------|-----------------|
-|[下一步](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|擷取指定的數目的列舉型別序列中的連接埠。|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|略過指定的數目的列舉型別序列中的連接埠。|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|將列舉型別序列重設到開頭。|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|取得列舉值中的連接埠數目。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|檢索枚舉序列中指定數量的埠。|
+|[跳](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|在枚舉序列中跳過指定數量的埠。|
+|[重設](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|將枚舉序列重置為開頭。|
+|[複製](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|建立與當前枚舉器相同的枚舉狀態的枚舉器。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|獲取枚舉器中的埠數。|
 
 ## <a name="remarks"></a>備註
- Visual Studio 會使用此介面，以便填入用來附加至處理序的連接埠清單。
+ Visual Studio 使用此介面幫助填充用於附加到進程的埠清單。
 
- 偵錯引擎通常不使用此介面。
+ 調試引擎通常不使用此介面。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

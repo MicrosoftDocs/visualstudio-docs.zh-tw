@@ -1,24 +1,24 @@
 ---
-title: IDebugBreakpointChecksumRequest2 | Microsoft Docs
+title: IDebug 突破點檢查和請求2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2 interface
 ms.assetid: 9cfdbca5-052c-48e9-8411-e2e9e4065d00
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edfcb7d1603160c2f857508c3dd32ce0696b6d7f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 632c3611f6c03a47a7d46e985eb6aa2685864a7f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352984"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735122"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
-表示中斷點要求的文件總和檢查碼。
+表示斷點請求的文檔校驗和。
 
 ## <a name="syntax"></a>語法
 
@@ -26,20 +26,20 @@ ms.locfileid: "66352984"
 IDebugBreakpointChecksumRequest2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 藉由實作[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯封裝，而且由偵錯引擎。
+## <a name="notes-for-implementers"></a>實施者說明
+ 由[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]調試包實現,由調試引擎使用。
 
 ## <a name="methods"></a>方法
  下表顯示的方法`IDebugBreakpointChecksumRequest2`。
 
 |方法|描述|
 |------------|-----------------|
-|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|擷取的中斷點要求指定總和檢查碼演算法的唯一識別項使用的文件總和檢查碼。|
-|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|判斷是否已啟用這份文件的總和檢查碼。|
+|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|檢索斷點請求的文檔校驗和,給定要使用的校驗和演演演算法的唯一標識符。|
+|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|確定是否為此文檔啟用了校驗和。|
 
 ## <a name="requirements"></a>需求
- 標頭：Msdbg.h
+ 標題: Msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll

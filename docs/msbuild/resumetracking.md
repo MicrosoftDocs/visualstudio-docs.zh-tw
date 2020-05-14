@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bb4663013a73d88ed7c2118816007705834162c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 248bb5e5e01b8209f826478e90b2c60b70922987
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578445"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632494"
 ---
 # <a name="resumetracking"></a>ResumeTracking
+
 在目前的內容中繼續追蹤。
 
 ## <a name="syntax"></a>語法
@@ -32,10 +33,13 @@ HRESULT WINAPI ResumeTracking();
 ```
 
 ## <a name="return-value"></a>傳回值
+
  如已繼續追蹤，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。 如果因為無法取得內容而無法繼續追蹤，則傳回 **E_FAIL**。
 
 ## <a name="requirements"></a>需求
- **標頭：** *FileTracker .h*
+
+ **標頭：** *FileTracker.h*
 
 ## <a name="see-also"></a>另請參閱
+
 - [SuspendTracking](../msbuild/suspendtracking.md)

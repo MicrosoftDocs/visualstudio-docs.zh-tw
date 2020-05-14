@@ -18,17 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65a96b59837d04deb0517d3ab79b3b668e036a20
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579649"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634002"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath 工作
+
+擷取 .NET Framework 組件的路徑。
 擷取 .NET Framework 組件的路徑。
 
 ## <a name="task-parameters"></a>工作參數
+
 下表說明 `GetFrameworkPath` 工作的參數。
 
 |參數|描述|
@@ -41,11 +44,13 @@ ms.locfileid: "77579649"
 |`Path`|選擇性的 `String` 輸出參數。<br /><br /> 包含最新 Framework 版組件的路徑 (如果有的話)。 否則傳回 `null`。|
 
 ## <a name="remarks"></a>備註
-如果已安裝數個版本的 .NET Framework，此工作會傳回 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 設計來執行的版本。
 
-除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+如果安裝了 .NET 框架的多個版本，則此任務將返回 MSBuild 設計為在它上運行的版本。
+
+除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
+
 下列範例使用 `GetFrameworkPath` 工作，將 .NET Framework 的路徑儲存在 `FrameworkPath` 屬性中。
 
 ```xml
@@ -61,5 +66,6 @@ ms.locfileid: "77579649"
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)

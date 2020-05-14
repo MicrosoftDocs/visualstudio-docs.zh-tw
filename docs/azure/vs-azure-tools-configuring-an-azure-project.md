@@ -4,17 +4,17 @@ description: 了解如何在 Visual Studio 中根據 Azure 雲端服務專案的
 author: ghogen
 manager: jillfra
 assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 77985de756274793c99673c79dac26e59129a7ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 609830b5182ef726a6d1933acecb1ddcbf4e25ef
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572473"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489697"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>使用 Visual Studio 來設定 Azure 雲端服務專案
 您可以根據 Azure 雲端服務專案的需求來設定專案。 您可以設定下列類別的專案的屬性：
@@ -26,23 +26,23 @@ ms.locfileid: "62572473"
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>設定 Azure 雲端服務專案的步驟
 1. 在 Visual Studio 中開啟或建立雲端服務專案
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後從操作功能表中選取 [屬性]。
+1. 在 [方案總管]**** 中，以滑鼠右鍵按一下專案，然後從操作功能表中選取 [屬性]****。
 
-1. 在專案的屬性頁面中，選取 [開發] 索引標籤。
+1. 在專案的屬性頁面中，選取 [開發]**** 索引標籤。
 
     ![專案屬性功能表](./media/vs-azure-tools-configuring-an-azure-project/solution-explorer-project-properties-menu.png)
 
-1. 將 [刪除現有部署前先提示] 設定為 [True]。 這項設定可協助確保您不會意外刪除 Azure 中現有的部署
+1. 將 [刪除現有部署前先提示]**** 設定為 [True]****。 這項設定可協助確保您不會意外刪除 Azure 中現有的部署
 
-1. 選取想要的 [服務組態]，以指出您在本機執行雲端服務或對其進行偵錯時，所想要使用的服務組態。 如需有關如何修改某個角色之服務組態的詳細資訊，請參閱[如何使用 Visual Studio 來設定 Azure 雲端服務的角色](./vs-azure-tools-configure-roles-for-cloud-service.md)。
+1. 選取想要的 [服務組態]****，以指出您在本機執行雲端服務或對其進行偵錯時，所想要使用的服務組態。 如需有關如何修改某個角色之服務組態的詳細資訊，請參閱[如何使用 Visual Studio 來設定 Azure 雲端服務的角色](./vs-azure-tools-configure-roles-for-cloud-service.md)。
 
-1. 將 [啟動 Azure 儲存體模擬器] 設定為 [True]，以在您於本機執行雲端服務或對其進行偵錯時，啟動 Azure 儲存體模擬器。
+1. 將 [啟動 Azure 儲存體模擬器]**** 設定為 [True]****，以在您於本機執行雲端服務或對其進行偵錯時，啟動 Azure 儲存體模擬器。
 
-1. 將 [將警告視為錯誤] 設定為 [True]，以確保您在套件驗證發生錯誤時無法發佈。
+1. 將 [將警告視為錯誤]**** 設定為 [True]****，以確保您在套件驗證發生錯誤時無法發佈。
 
-1. 將 [使用 Web 專案連接埠] 設定為 [True]，以確保您的 Web 角色每次在 IIS Express 中於本機啟動時都使用相同的連接埠。
+1. 將 [使用 Web 專案連接埠]**** 設定為 [True]****，以確保您的 Web 角色每次在 IIS Express 中於本機啟動時都使用相同的連接埠。
 
-1. 從 Visual Studio 工具列中，選取 [儲存]。
+1. 從 Visual Studio 工具列中，選取 [儲存]****。
 
 ## <a name="next-steps"></a>後續步驟
 - [使用多個服務組態設定 Azure 專案](vs-azure-tools-multiple-services-project-configurations.md)

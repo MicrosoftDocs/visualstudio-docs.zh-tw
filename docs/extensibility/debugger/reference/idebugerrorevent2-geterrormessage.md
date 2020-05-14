@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorEvent2::GetErrorMessage | Microsoft Docs
+title: IDebugError事件2::獲取錯誤消息 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorEvent2::GetErrorMessage
 ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 049f7a78a414df8202d64c1f25eaba854818c88d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1ff1da2f2a2d24b958a613e6fe5cb58c0081ed3e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327719"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730038"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
-傳回可讓人類看得懂的錯誤訊息建構的資訊。
+返回允許構造人類可讀錯誤消息的資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -51,29 +51,29 @@ int GetErrorMessage(
 
 ## <a name="parameters"></a>參數
 `pMessageType`\
-[out]傳回值，以從[MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)描述的訊息類型的列舉。
+[出]從[消息類型](../../../extensibility/debugger/reference/messagetype.md)枚舉中返回一個值,描述消息的類型。
 
 `pbstrErrorFormat`\
-[out]使用者的最後一個訊息的格式 （如需詳細資訊，請參閱 < 備註 >）。
+[出]向使用者發送的最後消息的格式(有關詳細資訊,請參閱"備註")。
 
 `hrErrorReason`\
-[out]錯誤碼訊息是關於。
+[出]消息所講述的錯誤代碼。
 
 `pdwType`\
-[out]錯誤的嚴重性 (使用如 MB_XXX 常數`MessageBox`; 例如，`MB_EXCLAMATION`或`MB_WARNING`)。
+[出]錯誤的嚴重性(使用`MessageBox`MB_XXX常量`MB_EXCLAMATION``MB_WARNING`;
 
 `pbstrHelpFileName`\
-[out]說明檔 （設為 null 值，如果沒有說明檔） 的路徑。
+[出]説明檔的路徑(如果沒有説明檔,則設置為空值)。
 
 `pdwHelpId`\
-[out][說明] 主題的顯示 （設為 0，如果沒有任何 [說明] 主題） 的識別碼。
+[出]要顯示的幫助主題的 ID(如果沒有幫助主題,則設置為 0)。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 格式化錯誤訊息應該像`"What I was doing.  %1"`。 `"%1"`就會取代呼叫端所衍生自錯誤碼的錯誤訊息 (這會傳入`hrErrorReason`)。 `pMessageType`參數會告訴呼叫端應該顯示的最後一個錯誤訊息的方式。
+ 錯誤訊息的格式應沿`"What I was doing.  %1"`的行。 然後`"%1"`,調用方將替換為從錯誤代碼派生的錯誤消息(在`hrErrorReason`中返回)。 參數`pMessageType`告訴調用方如何顯示最終錯誤消息。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)
-- [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)
+- [訊息類型](../../../extensibility/debugger/reference/messagetype.md)

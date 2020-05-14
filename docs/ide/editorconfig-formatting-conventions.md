@@ -1,32 +1,32 @@
 ---
 title: EditorConfig 的 .NET 格式設定慣例
-ms.date: 07/17/2019
+ms.date: 04/02/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - formatting conventions [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 64f6a45b3a5cc49cd541ceb905356093ea4ec221
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 136744514e5e2e49ec92a443ac590eb5cc34418a
+ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589223"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80892758"
 ---
 # <a name="formatting-conventions"></a>格式設定慣例
 
 Visual Studio 的 EditorConfig 適用格式設定慣例分為下列類別：
 
-- [.NET 格式化設定](#net-formatting-settings)
+- [.NET 格式設定](#net-formatting-settings)
 
-- [C# 格式化設定](#c-formatting-settings)
+- [C# 格式設定](#c-formatting-settings)
 
 ## <a name="rule-format"></a>規則格式
 
@@ -40,7 +40,7 @@ Visual Studio 的 EditorConfig 適用格式設定慣例分為下列類別：
 
 本節中的格式化規則適用於 C# 和 Visual Basic。
 
-- [組合管理 Using](#organize-using-directives)
+- [組織使用](#organize-using-directives)
   - dotnet_sort_system_directives_first
   - dotnet_separate_import_directive_groups
 
@@ -48,7 +48,7 @@ Visual Studio 的 EditorConfig 適用格式設定慣例分為下列類別：
 
 這些格式化規則是關於 `using` 指示詞和 `Imports` 陳述式的排序和顯示。
 
-Editorconfig檔案範例︰
+Editorconfig ** 檔案範例︰
 
 ```ini
 # .NET formatting settings
@@ -65,7 +65,6 @@ dotnet_separate_import_directive_groups = true
 | **適用語言** | C# 和 Visual Basic |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 依字母順序排序 System.* `using` 指示詞，並將它們置於其他 using 指示詞之前。<br /><br />`false` - 請勿將 System.* `using` 指示詞放置在其他 `using` 指示詞之前。 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -89,7 +88,6 @@ using System.Threading.Tasks;
 | **適用語言** | C# 和 Visual Basic |
 | **引進的版本** | Visual Studio 2017 15.5 版 |
 | **值** | `true` - 在 `using` 指示詞群組之間放置空白行。<br /><br />`false` - 在 `using` 指示詞群組之間放置空白行。 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -110,7 +108,7 @@ using Octokit;
 
 本節中的格式化規則只適用於 C# 程式碼。
 
-- [新行字元選項](#new-line-options)
+- [新增選項](#new-line-options)
   - csharp_new_line_before_open_brace
   - csharp_new_line_before_else
   - csharp_new_line_before_catch
@@ -151,12 +149,14 @@ using Octokit;
 - [包裝選項](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
+- [使用指令選項](#using-directive-options) 
+  - csharp_using_directive_placement
 
 ### <a name="new-line-options"></a>新行選項
 
 這些格式化規則是關於格式化程式碼新行的使用。
 
-Editorconfig檔案範例︰
+Editorconfig ** 檔案範例︰
 
 ```ini
 # CSharp formatting settings:
@@ -172,7 +172,7 @@ csharp_new_line_between_query_expression_clauses = true
 
 #### <a name="csharp_new_line_before_open_brace"></a>csharp\_new\_line\_before\_open_brace
 
-此規則是有關左大括弧 `{` 應該和前面的程式碼放在同一行還是放在新行中。 針對此規則，您可以指定 [全部]、[無] 或一或多個程式碼項目，例如**方法**或**屬性**，來定義應於何時套用此規則。 若要指定多個程式碼項目，請使用逗號 (,) 區隔。
+此規則是有關左大括弧 `{` 應該和前面的程式碼放在同一行還是放在新行中。 針對此規則，您可以指定 [全部]****、[無]**** 或一或多個程式碼項目，例如**方法**或**屬性**，來定義應於何時套用此規則。 若要指定多個程式碼項目，請使用逗號 (,) 區隔。
 
 |||
 |-|-|
@@ -180,7 +180,6 @@ csharp_new_line_between_query_expression_clauses = true
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `all` - 針對所有運算式要求大括弧位於新行上 ("Allman" 樣式)。<br /><br />`none` - 針對所有運算式要求大括弧位於同一行上 ("K&R")。<br /><br />`accessors`、`anonymous_methods`、`anonymous_types`、`control_blocks`、`events`、`indexers`、`lambdas`、`local_functions`、`methods`、`object_collection_array_initializers`、`properties`、`types` - 針對指定的程式碼項目要求大括弧位於新行 ("Allman" 樣式)。 |
-| **Visul Studio 預設值** | `all` |
 
 程式碼範例：
 
@@ -210,7 +209,6 @@ void MyMethod() {
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 將 `else` 陳述式置於新行上。<br /><br />`false` - 將 `else` 陳述式置於同一行上。 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -239,7 +237,6 @@ if (...) {
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 將 `catch` 陳述式置於新行上。<br /><br />`false` - 將 `catch` 陳述式置於同一行上。 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -268,7 +265,6 @@ try {
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 要求 `finally` 陳述式位於右大括號之後的新行上。<br /><br />`false` - 要求 `finally` 陳述式位於右大括號的同一行上。 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -302,7 +298,6 @@ try {
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 要求物件初始設定式的成員位於不同行上<br /><br />`false` - 要求物件初始設定式的成員位於同一行上 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -329,7 +324,6 @@ var z = new B()
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 要求匿名類型的成員位於不同行上<br /><br />`false` - 要求匿名類型的成員位於同一行上 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -356,7 +350,6 @@ var z = new
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 要求查詢運算式子句的元素位於不同行上<br /><br />`false` - 要求查詢運算式子句的元素位於同一行上 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -375,7 +368,7 @@ var q = from a in e from b in e
 
 這些格式化規則是關於格式化程式碼縮排的使用。
 
-Editorconfig檔案範例︰
+Editorconfig ** 檔案範例︰
 
 ```ini
 # CSharp formatting settings:
@@ -396,7 +389,6 @@ csharp_indent_case_contents_when_block = true
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 對 `switch` 案例內容進行縮排<br /><br />`false` - 不對 `switch` 案例內容進行縮排 |
-| **Visul Studio 預設值** | `true` |
 
 - 當此規則設定為 **true**，為 i。
 - 當此規則設為 **false** 時，為 d。
@@ -439,7 +431,6 @@ switch(c) {
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 縮排 `switch` 標籤<br /><br />`false` - 不要縮排 `switch` 標籤 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -479,7 +470,6 @@ default:
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `flush_left` - 標籤放在最左邊的資料行<br /><br />`one_less_than_current` - 將標籤置於比目前內容的縮排少一個單位的位置<br /><br />`no_change` - 將標籤置於和目前內容相同縮排的位置 |
-| **Visul Studio 預設值** | `no_change` |
 
 程式碼範例：
 
@@ -531,7 +521,6 @@ class C
 | **規則名稱** | csharp_indent_block_contents |
 | **適用語言** | C# |
 | **值** | `true` - <br /><br />`false` -  |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -556,7 +545,6 @@ Console.WriteLine("Hello");
 | **規則名稱** | csharp_indent_braces |
 | **適用語言** | C# |
 | **值** | `true` - <br /><br />`false` -  |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -581,7 +569,6 @@ static void Hello()
 | **規則名稱** | csharp_indent_case_contents_when_block |
 | **適用語言** | C# |
 | **值** | `true` - <br /><br />`false` -  |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -605,7 +592,7 @@ case 0:
 
 這些格式化規則是關於格式化程式碼空白字元的使用。
 
-Editorconfig檔案範例︰
+Editorconfig ** 檔案範例︰
 
 ```ini
 # CSharp formatting settings:
@@ -642,7 +629,6 @@ csharp_space_between_square_brackets = false
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 在轉換和值之間放入一個空白字元<br /><br />`false` - 移除轉換和值之間的空格 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -662,7 +648,6 @@ int y = (int)x;
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 在控制流程陳述式中的關鍵字後面放入一個空白字元，例如 `for` 迴圈<br /><br />`false` - 移除控制流程陳述式中關鍵字後面的空格，例如 `for` 迴圈 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -682,7 +667,6 @@ for(int i;i<x;i++) { ... }
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `control_flow_statements` - 在控制流程陳述式的括號之間加入空格<br /><br />`expressions` - 在運算式的括號之間加入空格<br /><br />`type_casts` - 在類型轉換中的括號之間加入空格 |
-| **Visul Studio 預設值** | `false` |
 
 如果您略過此規則，或使用 `control_flow_statements`、`expressions` 或 `type_casts` 以外的值，即不套用設定。
 
@@ -707,7 +691,6 @@ int y = ( int )x;
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.7 版 |
 | **值** | `true` - 在型別宣告中基底或介面的冒號之前放入一個空白字元<br /><br />`false` - 移除型別宣告中基底或介面內冒號之前的空格 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -743,7 +726,6 @@ class C: I
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.7 版 |
 | **值** | `true` - 在型別宣告中基底或介面的冒號之後放入一個空白字元<br /><br />`false` - 移除型別宣告中基底或介面內冒號之後的空格 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -779,7 +761,6 @@ class C :I
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.7 版 |
 | **值** | `before_and_after` - 在二元運算子前後插入空格<br /><br />`none` - 移除二元運算子前後的空格<br /><br />`ignore` - 忽略二元運算子前後的空格 |
-| **Visul Studio 預設值** | `before_and_after` |
 
 如果您略過這項規則，或使用 `before_and_after`、`none` 或 `ignore` 以外的值，即不套用設定。
 
@@ -804,7 +785,6 @@ return x  *  (x-y);
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 在方法宣告參數清單的左括弧後面和右括弧前面加上空格字元<br /><br />`false` - 移除方法宣告參數清單的左括弧後面和右括弧前面的空白字元 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -824,7 +804,6 @@ void Bark(int x) { ... }
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.7 版 |
 | **值** | `true` - 在方法宣告的空白參數清單括弧內插入空格<br /><br />`false` - 將方法宣告的空白參數清單括弧內的空格移除 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -859,7 +838,6 @@ void Goo(int x)
 | **規則名稱** | csharp_space_between_method_declaration_name_and_open_parenthesis |
 | **適用語言** | C# |
 | **值** | `true` - 在方法名稱與方法宣告的左括弧之間放入一個空白字元<br /><br />`false` - 移除方法名稱與方法宣告左括弧之間的空白字元 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -879,7 +857,6 @@ void M() { }
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 在方法呼叫的左括弧後面和右括弧前面加上空格字元<br /><br />`false` - 移除方法呼叫的左括弧後面和右括弧前面的空白字元 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -899,7 +876,6 @@ MyMethod(argument);
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.7 版 |
 | **值** | `true` - 在空白引數清單括弧內插入空格<br /><br />`false` - 將空白引數清單括弧內的空格移除 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -935,7 +911,6 @@ void Goo(int x)
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.7 版 |
 | **值** | `true` - 在方法呼叫名稱與左括弧之間插入空格<br /><br />`false` - 將方法呼叫名稱與左括弧之間的空格移除 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -970,7 +945,6 @@ void Goo(int x)
 | **規則名稱** | csharp_space_after_comma |
 | **適用語言** | C# |
 | **值** | `true` - 在逗號後面插入空格<br /><br />`false` - 將逗號後面的空格移除 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -989,7 +963,6 @@ int[] x = new int[] { 1,2,3,4,5 }
 | **規則名稱** | csharp_space_before_comma |
 | **適用語言** | C# |
 | **值** | `true` - 在逗號之前插入空格<br /><br />`false` - 移除逗號之前的空格 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -1008,7 +981,6 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 | **規則名稱** | csharp_space_after_dot |
 | **適用語言** | C# |
 | **值** | `true` - 在點後面插入空格<br /><br />`false` - 將點後面的空格移除 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -1027,7 +999,6 @@ this.Goo();
 | **規則名稱** | csharp_space_before_dot |
 | **適用語言** | C# |
 | **值** | `true` - 在點之前插入空格 <br /><br />`false` - 移除點之前的空格 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -1046,7 +1017,6 @@ this.Goo();
 | **規則名稱** | csharp_space_after_semicolon_in_for_statement |
 | **適用語言** | C# |
 | **值** | `true` - 在 `for` 陳述式的每個分號之後插入空格<br /><br />`false` - 移除 `for` 陳述式每個分號之後的空格 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -1065,7 +1035,6 @@ for (int i = 0;i < x.Length;i++)
 | **規則名稱** | csharp_space_before_semicolon_in_for_statement |
 | **適用語言** | C# |
 | **值** | `true` - 在 `for` 陳述式的每個分號之前插入空格 <br /><br />`false` - 移除 `for` 陳述式每個分號之前的空格 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -1084,7 +1053,6 @@ for (int i = 0; i < x.Length; i++)
 | **規則名稱** | csharp_space_around_declaration_statements |
 | **適用語言** | C# |
 | **值** | `ignore` - 不要移除宣告陳述式中的額外空白字元<br /><br />`false` - 移除宣告陳述式中的額外空白字元 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -1103,7 +1071,6 @@ int x = 0;
 | **規則名稱** | csharp_space_before_open_square_brackets |
 | **適用語言** | C# |
 | **值** | `true` - 在左方括弧 `[` 之前插入空格 <br /><br />`false` - 移除左方括弧 `[` 之前的空格 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -1122,7 +1089,6 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 | **規則名稱** | csharp_space_between_empty_square_brackets |
 | **適用語言** | C# |
 | **值** | `true` - 在空白方括弧 `[ ]` 之間插入空格 <br /><br />`false` - 移除空白方括弧 `[]` 之間的空格 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -1141,7 +1107,6 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 | **規則名稱** | csharp_space_between_square_brackets |
 | **適用語言** | C# |
 | **值** | `true` - 在非空白方括弧 `[ 0 ]` 中插入空白字元 <br /><br />`false` - 移除非空白方括弧 `[0]` 之間的空白字元 |
-| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -1157,7 +1122,7 @@ int index = numbers[0];
 
 這些格式化規則是有關陳述式和程式碼區塊的單一行與個別行的使用。
 
-Editorconfig檔案範例︰
+Editorconfig ** 檔案範例︰
 
 ```ini
 # CSharp formatting settings:
@@ -1174,7 +1139,6 @@ csharp_preserve_single_line_blocks = true
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 將陳述式和成員宣告保留在同一行上<br /><br />`false` - 將陳述式和成員宣告保留在不同的行上 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -1195,7 +1159,6 @@ string name = "John";
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
 | **值** | `true` - 將程式碼區塊保留在單行上<br /><br />`false` - 將程式碼區塊保留在不同的行上 |
-| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -1210,8 +1173,48 @@ public int MyProperty
 }
 ```
 
-## <a name="see-also"></a>請參閱
+### <a name="using-directive-options"></a>使用指令選項
+
+此格式設定規則涉及使用放置在命名空間內部和外部的指令。
+
+Editorconfig ** 檔案範例︰
+
+```ini
+# 'using' directive preferences
+[*.cs]
+csharp_using_directive_placement = outside_namespace
+csharp_using_directive_placement = inside_namespace
+```
+
+#### <a name="csharp_using_directive_placement"></a>csharp_using_directive_placement
+
+|||
+|-|-|
+| **規則名稱** | csharp_using_directive_placement |
+| **適用語言** | C# |
+| **引進的版本** | Visual Studio 2019 16.1 版 |
+| **值** | `outside_namespace`- 使用命名空間外的指令離開<br /><br />`inside_namespace`- 使用命名空間內的指令離開 |
+
+程式碼範例：
+
+```csharp
+// csharp_using_directive_placement = outside_namespace
+using System;
+
+namespace Conventions
+{
+
+}
+
+// csharp_using_directive_placement = inside_namespace
+namespace Conventions
+{
+    using System;
+}
+```
+
+## <a name="see-also"></a>另請參閱
 
 - [語言慣例](editorconfig-language-conventions.md)
 - [命名慣例](editorconfig-naming-conventions.md)
-- [EditorConfig 的 .NET 編碼慣例設定](editorconfig-code-style-settings-reference.md)
+- [.NET 編碼約定設定,用於編輯器配置](editorconfig-code-style-settings-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 精靈 (。在 Vsz) 檔案 |Microsoft Docs
+title: 嚮導 (.Vsz) 檔案 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,25 +7,25 @@ helpviewer_keywords:
 - vsz files
 - wizards, files
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4bbd69bc92ee96fcf93749aa6f700ad76ff72c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0fedf409c0ca320c054ddf1cc16318d08d25463a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309725"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703316"
 ---
 # <a name="wizard-vsz-file"></a>精靈檔 (.Vsz)
 
-整合式的開發環境 (IDE) 使用.vsz 檔案以啟動精靈。 這些.vsz 檔案包含 IDE 用來判斷要呼叫哪一個精靈的資訊和要傳遞給精靈的資訊。
+整合式開發環境 (IDE) 使用 .vsz 檔案啟動精靈。 這些 .vsz 檔包含 IDE 用於確定呼叫哪個精靈以及要傳遞給精靈的資訊的資訊。
 
-.Vsz 檔案是沒有區段.ini 格式的文字檔案的版本。 Ide 的已知的資訊會儲存在檔案開頭。 這會提供 IDE 呼叫 「 精靈 」 與所要傳遞至 IDE.vsz 檔案中的參數之間的連結。 檔案的其餘部分會提供特定的精靈和，要收集的 IDE，而傳遞至特定的精靈參數。
+.vsz 檔案是 .ini 格式的文本檔的版本,該檔沒有節。 IDE 已知的資訊存儲在檔的開頭。 這提供了 IDE 調用的嚮導和要傳遞給 IDE 的 .vsz 檔案中的參數之間的連結。 檔的其餘部分提供特定於嚮導的參數,這些參數將由IDE收集並傳遞給特定嚮導。
 
-下列範例顯示.vsz 檔案的內容。
+下面的範例顯示 .vsz 文件的內容。
 
 ```
 VSWizard 8.0
@@ -34,20 +34,20 @@ Param="WIZARDNAME = Wizard One"
 Param="WIZARDUI = FALSE"
 ```
 
-以下是.vsz 檔案中的組件。
+以下是 .vsz 檔案中的部分。
 
-|組件|描述|
+|部分|描述|
 |----------|-----------------|
-|VSWizard|在檔案中的第一個參數是範本的檔案格式的版本號碼。 6.0、 7.0、 7.1 或 8.0，必須是此版本號碼。 其他數字無法啟動，而且會導致不正確的格式錯誤。|
-|精靈|此欄位會包含 OLE ProgID 的精靈中，或者 cocreated ide 在精靈的 CLSID 的 GUID 字串表示。|
-|參數|這些組件是選擇性的。 您可以新增所需數目。|
+|VSWizard|檔案中的第一個參數是範本檔案格式的版本號。 此版本號必須為 6.0、7.0、7.1 或 8.0。 無法啟動其他數位並導致格式無效錯誤。|
+|精靈|此欄位包含精靈的 OLE ProgID,或者包含由 IDE 共同建立的嚮導 CLSID 的 GUID 字串表示形式。|
+|Param|這些部件是可選的。 您可以根據需要添加盡可能多的。|
 
-參數可讓將額外的自訂參數傳遞給精靈.vsz 檔案。 每個值被當做 variant 的陣列中的字串項目精靈。 如需詳細資訊，請參閱 <<c0> [ 自訂參數](../../extensibility/internals/custom-parameters.md)。
+這些參數使 .vsz 檔案能夠將其他自定義參數傳遞給嚮導。 每個值都作為字串元素傳遞給嚮導的變數組中。 有關詳細資訊,請參閱[自訂參數](../../extensibility/internals/custom-parameters.md)。
 
-若要加入.vsz 檔案中的預設地區設定識別碼，請指定`FALLBACK_LCID`= 的 xxxx，其中 xxxx 會是地區設定識別碼，例如，1033，代表英文。 當`FALLBACK_LCID`參數定義中，精靈會使用提供的後援地區設定識別碼，如果找不到目前的識別碼。
+要將預設區域設定 ID 添加到 .vsz 檔案`FALLBACK_LCID`,請指定 _xxxx,其中 xxx 是區域設定 ID,例如,英語為 1033。 定義`FALLBACK_LCID`參數時,如果未找到當前 ID,嚮導將使用提供的回退區域設置 ID。
 
 ## <a name="see-also"></a>另請參閱
 
 - [自訂參數](../../extensibility/internals/custom-parameters.md)
-- [精靈](../../extensibility/internals/wizards.md)
+- [嚮導](../../extensibility/internals/wizards.md)
 - [範本目錄描述檔 (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

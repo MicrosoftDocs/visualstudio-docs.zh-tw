@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetValueFromString |Microsoft Docs
+title: IDebugenumfield:從String中獲得價值 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetValueFromString method
 ms.assetid: 1ef8ac5e-a3e0-4078-b876-7f5615aedcbb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81b74ecc780e2fd9df3cad5516c25f8a1fa657ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bb340721c9f446b740c2723dc3f6dc05452e74de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345126"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730268"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
-這個方法傳回的列舉常數名稱相關聯的值。
+此方法返回與枚舉常量的名稱關聯的值。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int GetValueFromString(
 
 ## <a name="parameters"></a>參數
 `pszValue`\
-[in]字串，指定要取值的名稱。 請注意，針對C++，這是寬字元字串。
+[在]指定要取得值的名稱的字串。 請注意,對於C++,這是一個寬字元字串。
 
 `pValue`\
-[out]傳回相關聯的數值。
+[出]返回關聯的數值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`，如果名稱不屬於列舉型別，則為錯誤碼。
+ 如果成功,返回`S_OK`;否則,如果`S_FALSE`名稱不是枚舉的一部分,則返回或錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 這個方法會區分大小寫。 如果需要的不區分大小寫的搜尋時 （例如，在 Visual Basic 名稱不區分大小寫之類的語言），使用[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)。
+ 此方法區分大小寫。 如果需要不區分大小寫的搜尋(例如,在名稱不區分大小寫的 Visual Basic 等語言中),請使用[GetValue FromStringCase 對內敏感](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

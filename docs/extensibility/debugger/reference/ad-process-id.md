@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID | Microsoft Docs
+title: AD_PROCESS_ID |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - AD_PROCESS_ID union
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1893b78063e045f341af246fc0ef2c0f2ad1538e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 96a834725f1cf5b14f12a4c1554e67477768ef23
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351417"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738160"
 ---
-# <a name="adprocessid"></a>AD_PROCESS_ID
-指定的處理序識別碼，可能是系統識別碼或 GUID。
+# <a name="ad_process_id"></a>AD_PROCESS_ID
+指定程序識別碼,可以是系統 ID 或 GUID。
 
 ## <a name="syntax"></a>語法
 
@@ -49,18 +49,18 @@ public struct AD_PROCESS_ID {
 
 ## <a name="members"></a>成員
 `ProcessIdType`\
-值，以從[AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)列舉，指定如何解譯`ProcessId`等位 （或 managed 程式碼，來存取結構的成員）。
+[AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)枚舉中的值,用於解釋如何`ProcessId`解釋 聯合(或者對於託管代碼,該結構要訪問的哪個成員)。
 
 `dwProcessId`\
-值，以從系統處理序識別碼。
+進程 ID 作為來自系統的值。
 
 `guidProcessId`\
-處理序識別碼，做為 GUID。
+進程識別碼作為 GUID。
 
-dwUnused 填補。
+dwunused 填充。
 
 ## <a name="remarks"></a>備註
-此結構會傳遞下列方法：
+此結構傳遞給以下方法:
 
 - [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)
 
@@ -68,24 +68,24 @@ dwUnused 填補。
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-- [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
+- [抓取程序](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 
-而且會傳回下列任一方法：
+並從以下方法傳回:
 
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
 
 - [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
-- [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [抓取程序](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
 - [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)

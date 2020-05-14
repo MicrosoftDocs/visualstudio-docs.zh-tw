@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_LOCATION | Microsoft Docs
+title: BP_RESOLUTION_LOCATION |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_LOCATION structure
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ed287f2d90e1ee92c7e0fd4ae685fbb9f38854f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4b11d80e90daec19a14ca509e5a4b9bdb2d1ced4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350589"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737818"
 ---
-# <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
-指定的中斷點解析位置的結構。
+# <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
+指定斷點解析度位置的結構。
 
 ## <a name="syntax"></a>語法
 
@@ -50,41 +50,41 @@ public struct BP_RESOLUTION_LOCATION {
 
 ## <a name="members"></a>成員
 `bpType`\
-值，以從[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)列舉，指定如何解譯`bpResLocation`聯集或`unionmemberX`成員。
+[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)枚舉中指定如何`bpResLocation`解釋`unionmemberX`聯合或 成員的值。
 
 `bpResLocation.bpresCode`\
-[C++只]包含[BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)結構，如果`bpType`  =  `BPT_CODE`。
+[僅C++]如果[BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)包含`bpType` = `BPT_CODE`BP_RESOLUTION_CODE 結構 。
 
 `bpResLocation.bpresData`\
-[C++只]包含[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)結構，如果`bpType`  =  `BPT_DATA`。
+[僅C++]如果[包含](../../../extensibility/debugger/reference/bp-resolution-data.md)BP_RESOLUTION_DATA`bpType` = `BPT_DATA`結構 。
 
 `bpResLocation.unused`\
-[C++只]預留位置。
+[僅C++]占位符。
 
 `unionmember1`\
-[C#只]請參閱有關如何解譯的備註。
+[僅 C]請參閱有關如何解釋的備註。
 
 `unionmember2`\
-[C#只]請參閱有關如何解譯的備註。
+[僅 C]請參閱有關如何解釋的備註。
 
 `unionmember3`\
-[C#只]請參閱有關如何解譯的備註。
+[僅 C]請參閱有關如何解釋的備註。
 
 `unionmember4`\
-[C#只]請參閱有關如何解譯的備註。
+[僅 C]請參閱有關如何解釋的備註。
 
 ## <a name="remarks"></a>備註
-此結構是隸屬[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)並[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構。
+此結構是[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)和[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構的成員。
 
- [C#只]`unionmemberX`成員會根據下表來解譯。 往下的左側資料行`bpType`來判斷每個值然後跨`unionmemberX`成員表示和封送處理`unionmemberX`據此。 請參閱的方式來解譯此結構在 C# 中的範例。
+ [僅 C]成員`unionmemberX`根據下表進行解釋。 往下左欄的值,`bpType`然後跨,以確定`unionmemberX`每個 成員表示什麼,並相應地`unionmemberX`封送 。 有關在 C# 中解釋此結構的方法,請參閱示例。
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
 |`BPT_CODE`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|
-|`BPT_DATA`|`string` （資料運算式）|`string` （函式名稱）|`string` （映像名稱）|`enum_BP_RES_DATA_FLAGS`|
+|`BPT_DATA`|`string`(資料運算式)|`string`(功能名稱)|`string`(影像名稱)|`enum_BP_RES_DATA_FLAGS`|
 
 ## <a name="example"></a>範例
-此範例示範如何解譯`BP_RESOLUTION_LOCATION`C# 中的結構。
+此示例演示如何在 C#`BP_RESOLUTION_LOCATION`中解釋結構。
 
 ```csharp
 using System;
@@ -114,14 +114,14 @@ namespace MyPackage
 ```
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

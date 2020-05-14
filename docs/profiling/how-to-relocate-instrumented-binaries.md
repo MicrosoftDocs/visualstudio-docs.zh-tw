@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: cddbb0b3e27b841441937b7256ea32d722e25f5e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774896"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>如何：重新配置所檢測的二進位檔
@@ -28,15 +28,15 @@ ms.locfileid: "74774896"
 
 ## <a name="to-relocate-instrumented-binary"></a>重新配置所檢測的二進位檔
 
-1. 在 [效能總管]中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。
+1. 在 [效能總管] **** 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性] ****。
 
-2. 在 [屬性頁]中，按一下 [二進位檔] 屬性。
+2. 在 [屬性頁] **** 中，按一下 [二進位檔] **** 屬性。
 
-3. 選取 [重新配置所檢測的二進位檔] 核取方塊。
+3. 選取 [重新配置所檢測的二進位檔] **** 核取方塊。
 
 4. 指定所檢測之二進位檔的位置。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[設定效能工作階段](../profiling/configuring-performance-sessions.md)
+[配置性能會話](../profiling/configuring-performance-sessions.md)
 [VSInstr](../profiling/vsinstr.md)

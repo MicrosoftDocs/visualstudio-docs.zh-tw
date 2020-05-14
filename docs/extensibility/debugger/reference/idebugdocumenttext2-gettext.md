@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Microsoft Docs
+title: IDebug文件文本2::獲取文本 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentText2::GetText
 ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2906c4421c570542579d0326167cd6ecbafb395
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2429bdf3f09eff168210a7b835a9e506d74d63ea
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330657"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731570"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
-從指定之位置的文件中擷取的文字。
+從文件中的指定位置檢索文本。
 
 ## <a name="syntax"></a>語法
 
@@ -47,22 +47,22 @@ int GetText(
 
 ## <a name="parameters"></a>參數
 `pos`\
-[in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示要擷取文字的位置。
+[在]指示[要](../../../extensibility/debugger/reference/text-position.md)檢索的文本的位置TEXT_POSITION結構。
 
 `cMaxChars`\
-[in]要擷取的文字字元的數目上限。
+[在]要檢索的文本的最大字元數。
 
 `pText`\
-[in、 out]要被填入所需的文字緩衝區的指標。 這個緩衝區必須至少包含`cMaxChars`寬字元數。
+[進出]指向要用所需文本填充的緩衝區的指標。 此緩衝區必須能夠包含至少`cMaxChars`數量的寬字元。
 
 `pcNumChars`\
-[out]傳回實際擷取的字元的數。
+[出]返回實際檢索的字元數。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
-這個範例會示範如何從 C# 呼叫這個方法。
+此範例展示如何從 C# 呼叫此方法。
 
 ```csharp
 using System.Runtime.Interop.Services;

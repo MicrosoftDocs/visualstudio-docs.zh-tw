@@ -1,48 +1,48 @@
 ---
-title: IDE 所實作的回呼函式 |Microsoft Docs
+title: IDE 實現的回調功能 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff6ee0a81472ea556aaca478a2ff33db93fe871
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 666486f5b800707a4467a129abeed7a13306f10a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321179"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739901"
 ---
-# <a name="callback-functions-implemented-by-the-ide"></a>IDE 所實作的回呼函式
-若要與整合做越好，並提供統一的使用者體驗，無縫整合式的開發環境 (IDE) 的原始檔控制外掛程式可以使用由 IDE 所實作的回呼函式。 此外掛程式可以呼叫這些函式在適當的時間期間將資訊傳遞給在 IDE 中; 的原始檔控制作業IDE 可以做為內嵌的項目在其原生 UI 中顯示這項資訊。 使用者會有較分散的體驗，在此案例中比若外掛程式採用自己的 UI。
+# <a name="callback-functions-implemented-by-the-ide"></a>IDE 實作的回檔
+為了使與整合式開發環境 (IDE) 的整合盡可能無縫,並提供統一的最終使用者體驗,原始程式碼管理外掛程式可以使用 IDE 實現的回調功能。 外掛程式可以在原始程式碼管理操作期間的適當時間調用這些函數,以將資訊傳遞給 IDE;然後,IDE 可以將其本地 UI 中的嵌入元素顯示此資訊。 與外掛程式使用其自己的 UI 相比,使用者在此方案中具有較少碎片化的體驗。
 
- 必要標頭檔*scc.h*。 預設位置是 *\Program Files\VSIP 8.0\EnvSDK\common\inc\\* 。 它也會有的原始檔控制外掛程式範例的 VSIP 資料夾處於 *\Program Files\VSIP 8.0\MSSCCI\\* 。
+ 需要的標頭檔是*scc.h*。 預設位置是 *[程式檔案]VSIP 8.0\EnvSDK_common_inc\\*。 它還在 VSIP 資料夾中,該資料夾在 *[程式檔]VSIP\\8.0_MSSCCI*處具有原始程式碼管理外掛程式示例。
 
 ## <a name="in-this-section"></a>本節內容
-- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)描述的回呼函式，以供[SccOpenProject](../extensibility/sccopenproject-function.md)顯示從原始檔控制外掛程式，透過 IDE 的訊息。
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)描述[SccOpenProject](../extensibility/sccopenproject-function.md)用於透過 IDE 顯示來自原始碼管理外掛程式的消息的回調功能。
 
-- [POPLISTFUNC](../extensibility/poplistfunc.md)描述的回呼函式，以供[SccPopulateList](../extensibility/sccpopulatelist-function.md)當 IDE 並沒有完整存取權僅適用於原始檔控制外掛程式，例如完整的清單中的資訊版本控制下的檔案。
+- [POPLISTFUNC](../extensibility/poplistfunc.md)描述[SccPopulateList](../extensibility/sccpopulatelist-function.md)在 IDE 無法完全存取僅對原始程式碼管理外掛程式可用的資訊(如版本控制下的檔案的完整清單)時使用的回調功能。
 
-- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)描述的回呼函式，以供[SccQueryChanges](../extensibility/sccquerychanges-function.md)作業。
+- [查詢變更](../extensibility/querychangesfunc.md)描述[SccQuery 更改](../extensibility/sccquerychanges-function.md)操作使用的回調功能。
 
-- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)描述的回呼函式，以供[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)作業。
+- [波普迪利斯芬奇](../extensibility/popdirlistfunc.md)描述[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)操作使用的回調函數。
 
-- [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)描述設定呼叫的回呼函式[SccSetOption](../extensibility/sccsetoption-function.md) ，可讓原始檔控制外掛程式名稱變更回 IDE 進行通訊。
+- [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)描述對[SccSetOption](../extensibility/sccsetoption-function.md)的呼叫設定的回調功能,該調用使原始程式碼管理外掛程式能夠將名稱更改傳回 IDE。
 
 ## <a name="related-sections"></a>相關章節
-- [SccOpenProject](../extensibility/sccopenproject-function.md)開啟專案。
+- [SccOpen專案](../extensibility/sccopenproject-function.md)打開專案。
 
-- [SccPopulateList](../extensibility/sccpopulatelist-function.md)會檢查其目前狀態的檔案清單。 此外，會使用`pfnPopulate`檔案類型不符合的準則時告知呼叫端函式`nCommand`。
+- [Scc填充清單](../extensibility/sccpopulatelist-function.md)檢查檔案清單的目前狀態。 此外,當檔與`pfnPopulate`的條件`nCommand`不匹配時,使用函數通知調用方。
 
-- [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)會檢查目錄和檔案的專案或在原始檔控制的專案中的清單。 每個找到的目錄和檔案名稱會傳遞至回呼函式。
+- [SccpopulateDirlist](../extensibility/sccpopulatedirlist-function.md)檢查受原始碼管理的項目或專案中的目錄和檔案的清單。 找到的每個目錄和檔名都傳遞給回調函數。
 
-- [SccQueryChanges](../extensibility/sccquerychanges-function.md)會檢查已對一份檔案的名稱變更。 每個檔案名稱會傳遞至回呼函式，以及其變更狀態。
+- [SccQuery 變更](../extensibility/sccquerychanges-function.md)檢查對檔案清單所做的名稱更改。 每個檔名都傳遞給回調函數及其更改狀態。
 
-- [SccSetOption](../extensibility/sccsetoption-function.md)設定各種不同的選項。 每個選項開頭`SCC_OPT_xxx`而且有它自己組已定義的值。
+- [SccSetOption](../extensibility/sccsetoption-function.md)設置各種選項。 每個選項都從`SCC_OPT_xxx`並有自己的定義值集開始。
 
-- [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)描述原始檔控制外掛程式 SDK 參考 > 一節的內容。
+- [原始程式管理外掛程式](../extensibility/source-control-plug-ins.md)描述原始程式碼管理外掛程式 SDK 的參考部分的內容。

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568824"
 ---
 # <a name="import-and-export-settings-command"></a>匯入和匯出設定命令
@@ -30,7 +30,7 @@ ms.locfileid: "75568824"
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
-## <a name="switches"></a>參數
+## <a name="switches"></a>交換器
 
 /export:`filename`
 
@@ -46,7 +46,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 ## <a name="remarks"></a>備註
 
-執行此命令而不使用切換參數，會開啟 [匯入和匯出設定精靈]。 如需詳細資訊，請參閱[同步處理您的設定](../synchronized-settings-in-visual-studio.md)和[環境設定](../environment-settings.md)。
+執行此命令而不使用切換參數，會開啟 [匯入和匯出設定精靈]****。 如需詳細資訊，請參閱[同步處理您的設定](../synchronized-settings-in-visual-studio.md)和[環境設定](../environment-settings.md)。
 
 ## <a name="example"></a>範例
 
@@ -56,9 +56,9 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [環境設定](../../ide/environment-settings.md)
 - [同步處理您的設定](../../ide/synchronized-settings-in-visual-studio.md)
 - [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)
-- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
+- [視覺化工作室命令](../../ide/reference/visual-studio-commands.md)

@@ -1,5 +1,5 @@
 ---
-title: 命令列參數 (Visual Studio SDK) |Microsoft Docs
+title: 命令行交換機(可視化工作室 SDK) |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,25 +7,25 @@ helpviewer_keywords:
 - command-line switches
 - command line, switches
 ms.assetid: 0a22516f-f60e-4476-ac5b-f41e5ffaaf8b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753ff049d09bafb5d7f2284f858647a8427ca0e1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: db2967a6fab128b6730fbbe35d34f23464ca2096
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344535"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739763"
 ---
-# <a name="command-line-switches-visual-studio-sdk"></a>命令列參數 (Visual Studio SDK)
-*Devenv.exe*，啟動可執行檔[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)，專為開發的 Vspackage 支援的命令列參數。 Vspackage 也可以提供自己的參數在 Devenv 命令列。 下列主題提供如何在 IDE 中使用命令列參數的相關資訊。
+# <a name="command-line-switches-visual-studio-sdk"></a>命令列交換機(視覺化工作室 SDK)
+*Devenv.exe*是[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]啟動 整合式開發環境 (IDE) 的可執行檔,它支援專門用於開發 VSPackages 的命令列交換機。 VSPackages 還可以在 Devenv 命令行上提供自己的交換機。 以下主題提供有關如何在 IDE 中使用命令行交換機的資訊。
 
 ## <a name="in-this-section"></a>本節內容
-- [VSPackage 開發的 Devenv 命令列參數](../extensibility/devenv-command-line-switches-for-vspackage-development.md)描述您可以使用它來簡化 VSPackage 開發、 偵錯和部署的 Devenv 命令列參數。
+- [以 VSPackage D 開發的 Devenv 指令列交換器](../extensibility/devenv-command-line-switches-for-vspackage-development.md)描述可用於簡化 VSPackage 開發、除錯和部署的 Devenv 命令列交換機。
 
-- [新增命令列參數](../extensibility/adding-command-line-switches.md)說明如何實作、 尋找，並讀取使用者輸入為您的封裝的命令列參數。
+- [新增命令列交換器](../extensibility/adding-command-line-switches.md)描述如何實現、查找和讀取包的使用者輸入的命令行交換機。
 
 ## <a name="related-sections"></a>相關章節
-- [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)Devenv 可讓您設定各種選項的 IDE 中，以及您可以編譯方法，如何建置和偵錯專案，從命令列說明。 此外，還有 Devenv 參數語法和參數的資料表資訊。
+- [德文命令列交換機](../ide/reference/devenv-command-line-switches.md)說明 Devenv 如何為 IDE 設置各種選項,以及如何從命令列編譯、生成和調試專案。 此外,還有有關 Devenv 交換機和交換機表的語法的資訊。

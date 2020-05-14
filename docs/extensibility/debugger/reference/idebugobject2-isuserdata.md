@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsUserData | Microsoft Docs
+title: IDebugObject2::用戶數據 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::IsUserData method
 ms.assetid: 6ffa0d0e-f742-496d-acc7-db74c248bc45
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94c3f6adc9dd75e1ed4ecc4c5fd7f37635099566
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce4a7035ac3786f0cc1644e2ebbb0c142167e2b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317247"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726085"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
-判斷物件是否代表使用者資料。
+確定物件是否表示用戶數據。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int IsUserData(
 
 ## <a name="parameters"></a>參數
 `pfUser`\
-[out]傳回非零值 (`TRUE`) 該物件所代表的使用者資料; 如果零 (`FALSE`) 如果沒有。
+[出]如果物件表示用戶`TRUE`數據,則返回非零 (),零`FALSE`( ) () 如果沒有。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。
+ 如果成功,返回S_OK;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 使用者資料是任何物件，是指定為 JustMyCode （使用者可設定選項，將模組標記為使用者程式碼，並因此出現在堆疊追蹤） 模組的一部分。
+ 用戶數據是被指定為 JustMyCode 的模組的一部分的任何物件(一個使用者可配置的選項,將模組標記為用戶代碼,因此在堆疊追蹤中可見)。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

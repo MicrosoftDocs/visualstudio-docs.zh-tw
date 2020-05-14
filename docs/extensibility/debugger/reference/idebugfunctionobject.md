@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject |Microsoft Docs
+title: IDebug函數物件 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject interface
 ms.assetid: 8d94e97c-a9d1-400c-8a98-a44b5385b33a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fb0d969268e7765abe5c3ebdc9fc000a10a3aa0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6433c1f2c540b040a3b3beccc264377e69592387
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313442"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728497"
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 這個介面會表示函式。
+ 此介面表示函數。
 
 ## <a name="syntax"></a>語法
 
@@ -31,34 +31,34 @@ ms.locfileid: "66313442"
 IDebugFunctionObject : IDebugObject
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 運算式評估工具會實作這個介面來表示函式。
+## <a name="notes-for-implementers"></a>實施者說明
+ 表達式賦值器實現此介面以表示函數。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 這個介面是特製化[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面，並使用取得[QueryInterface](/cpp/atl/queryinterface)上`IDebugObject`介面。
+## <a name="notes-for-callers"></a>通話備註
+ 此介面是[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面的專門化,使用介面上的`IDebugObject`[查詢介面](/cpp/atl/queryinterface)獲得。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 除了繼承自方法[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)，則`IDebugFunctionObject`介面會公開下列方法。
+ 除了從[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)繼承的方法`IDebugFunctionObject`外, 介面還公開了以下方法。
 
 |方法|描述|
 |------------|-----------------|
-|[CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)|建立基本資料物件。|
-|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)|建立使用建構函式的物件。|
-|[CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)|使用沒有建構函式建立物件。|
-|[CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)|建立的陣列物件。|
+|[CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)|創建基元數據物件。|
+|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)|使用構造函數創建物件。|
+|[CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)|創建沒有構造函數的物件。|
+|[CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)|創建陣列物件。|
 |[CreateStringObject](../../../extensibility/debugger/reference/idebugfunctionobject-createstringobject.md)|建立字串物件。|
-|[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)|呼叫函式，並傳回產生的值當做物件。|
+|[評價](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)|調用函數並將結果值作為物件返回。|
 
 ## <a name="remarks"></a>備註
- 此介面可讓運算式評估工具，來代表剖析樹狀結構中的函式。 `Create`這個介面中的方法用來建構物件，代表方法的輸入的參數。 然後藉由呼叫執行函式[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)方法，這個方法會傳回代表函式的傳回值的物件。
+ 此介面使表達式賦值器能夠表示解析樹中的函數。 此`Create`介面中的方法用於建構表示方法的輸入參數的物件。 然後,可以通過調用[評估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)方法來執行該函數,該方法返回表示函數返回值的物件。
 
 ## <a name="requirements"></a>需求
- 標頭： ee.h
+ 標題: ee.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+- [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd27951390cf86712f846fada2835c4d87ec7fe
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594834"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633027"
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
+
 在項目或屬性中儲存工作輸出值。
 
  \<Project> \<Target> \<Task> \<Output>
@@ -39,6 +40,7 @@ ms.locfileid: "75594834"
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
+
  下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
@@ -51,15 +53,17 @@ ms.locfileid: "75594834"
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 
 ### <a name="child-elements"></a>子元素
+
  無。
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
-| [Task](../msbuild/task-element-msbuild.md) | 建立並執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的執行個體。 |
+| [任務](../msbuild/task-element-msbuild.md) | 創建並執行 MSBuild 任務的實例。 |
 
 ## <a name="example"></a>範例
+
  在下列程式碼範例中，示範了在 `Target` 元素內執行的 `Csc` 工作。 傳遞至工作參數的項目和屬性，都在此範例範圍外宣告。 輸出參數 `OutputAssembly` 的值儲存在 `FinalAssemblyName` 項目中，而來自輸出參數 `BuildSucceeded` 的值則儲存在 `BuildWorked` 屬性中。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
 
 ```xml
@@ -79,6 +83,7 @@ ms.locfileid: "75594834"
 </Target>
 ```
 
-## <a name="see-also"></a>請參閱
-- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+## <a name="see-also"></a>另請參閱
+
+- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

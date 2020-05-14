@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumInterfacesImplemented |Microsoft Docs
+title: IDebugClassfield:實現枚舉介面 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumInterfacesImplemented method
 ms.assetid: e5523e45-d350-491e-a92c-fe0ca97d2052
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a5c951ac4f6f33495dad4136a1a09c11e639e029
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 91d9cac6b695ba2a0d34da776fa79ba62ba2e015
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335358"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734482"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
-建立這個類別所實作之介面的列舉值。
+為此類實現的介面創建枚舉器。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int EnumInterfacesImplemented(
 
 ## <a name="parameters"></a>參數
 `ppEnum`\
-[out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，代表實作的介面清單。 如果沒有介面，則傳回 null 值。
+[出]返回表示已實現介面清單的[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件。 如果沒有介面,則返回 null 值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK，或如果沒有在這個類別上實作介面，則傳回 S_FALSE。 否則會傳回錯誤碼。
+ 如果成功,則返回S_OK或返回S_FALSE如果此類上沒有實現介面。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 列舉型別的每個項目是[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)描述介面的物件。 請注意，非受控[!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]程式碼不會使用介面當做離散實體讓這個方法永遠都會傳回 null 值的非受控[!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]程式碼。
+ 枚舉的每個元素都是描述介面的[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)物件。 請注意,非託管[!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]代碼不使用介面作為離散實體,因此此方法始終返回非託管[!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]代碼的 null 值。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

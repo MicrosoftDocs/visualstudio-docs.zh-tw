@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 1ecc66cb58ad11bd431acb341dae0493ce8192da
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77515299"
 ---
 # <a name="make-member-static"></a>將成員設為靜態
@@ -22,22 +22,22 @@ ms.locfileid: "77515299"
 
 - C#
 
-**功能：** 將成員設為靜態。
+**內容：** 使成員保持靜態。
 
-時機 **：** 您希望非靜態成員為靜態。
+**何時：** 您希望非靜態成員是靜態的。
 
-**原因：** 靜態成員可改善可讀性：瞭解特定程式碼是隔離的，讓您更容易瞭解、重新讀取和重複使用。 
+**原因：** 靜態成員提高了可讀性：知道特定代碼是隔離的，可以更容易理解、重讀和重用。 
 
 ## <a name="how-to"></a>操作方式
 
-1. 將您的插入號放在成員名稱上。
+1. 把你的護理放在會員名稱上。
 
-2. 在字行任何地方按 **Ctrl**+ **.** ， （期間），以觸發 [**快速動作與重構**] 功能表。
+2. 按**Ctrl**+**。** （期間）以觸發**快速操作和重構**功能表。
 
    ![將成員設為靜態](media/make-member-static.png)
 
-3. 選取 [設為靜態]。
+3. 選取 [設為靜態]****。
 
 ## <a name="see-also"></a>另請參閱
 
-- [重構](../refactoring-in-visual-studio.md)
+- [Refactoring](../refactoring-in-visual-studio.md)

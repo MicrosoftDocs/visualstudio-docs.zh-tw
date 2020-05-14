@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForThreadStep |Microsoft Docs
+title: IDebugEngineProgram2:::觀看線程步驟 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForThreadStep
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b3f8db95d6e74a2aa1d146bdd37a66803a8503f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf0474d527b7c6f1d180201a463f52a0b17d18fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345150"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730350"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
-監看的執行 （或停止執行監看） 指定的執行緒上發生。
+監視在給定線程上執行(或停止監視執行)。
 
 ## <a name="syntax"></a>語法
 
@@ -47,24 +47,24 @@ int WatchForThreadStep( 
 
 ## <a name="parameters"></a>參數
 `pOriginatingProgram`\
-[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示正在逐步執行程式。
+[在][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件,表示正在步進的程式。
 
 `dwTid`\
-[in]指定要監看之執行緒的識別碼。
+[在]指定要監視的線程的標識碼。
 
 `fWatch`\
-[in]非零 (`TRUE`) 表示開始所識別的執行緒上執行監看`dwTid`，則為零 (`FALSE`) 方法可讓您停止上觀賞執行`dwTid`。
+[在]非零 ()`TRUE`表示開始`dwTid`在所標識的線程上監視執行。否則,零`FALSE`() 表示停止`dwTid`監視在執行 。
 
 `dwFrame`\
-[in]指定控制項的步驟類型的畫面格索引。 當這是值為零 (0) 步驟類型 「 逐步執行 」，是每當所識別的執行緒時，應該停止程式`dwTid`執行。 當`dwFrame`為非零，步驟類型是 「 進入 」 和程式應該停止的執行緒識別時，才`dwTid`正在執行中的索引是相等或更高版本，比在堆疊上框架`dwFrame`。
+[在]指定控制步驟類型的幀索引。 當此值為零(0)時,步驟類型為"進入",每當執行標識`dwTid`的線程時,程式都應停止。 當`dwFrame`是非零時,步驟類型為"步長",並且僅當`dwTid`標識 的線程在堆疊上的索引等於`dwFrame`或高於 的幀中運行時,程式才應停止。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 當工作階段的偵錯管理員 (SDM) 步驟所識別的程式`pOriginatingProgram`參數，它會通知所有其他附加的程式藉由呼叫這個方法。
+ 當會話調試管理器 (SDM)`pOriginatingProgram`步步由 參數標識的程式時,它會通過調用此方法通知所有其他附加的程式。
 
- 這個方法是僅適用於逐步執行同一個執行緒。
+ 此方法僅適用於同一線程步進。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

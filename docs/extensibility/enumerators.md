@@ -1,41 +1,41 @@
 ---
-title: 列舉值 |Microsoft Docs
+title: Enens微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, enumerators
 ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d3a0876dfd3a9d7b9cc86b18f6e9a6ba3b780d3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ee48d064612e5519d5ad7e5eaf04de6c5a697837
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334501"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711860"
 ---
-# <a name="enumerators"></a>列舉程式
-此區段會列出原始檔控制外掛程式必須了解原始檔控制外掛程式 API 中的列舉值資料類型。
+# <a name="enumerators"></a>列舉值
+本節列出了原始程式碼管理外掛程式 API 中的枚舉器數據類型,原始程式碼管理外掛程式必須瞭解這些資料類型。
 
 ## <a name="in-this-section"></a>本節內容
-- [命令的程式碼](../extensibility/command-code-enumerator.md)列舉的選項[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)並[SccPopulateList](../extensibility/sccpopulatelist-function.md)函式。
+- [命令代碼](../extensibility/command-code-enumerator.md)枚舉[SccGet命令選項](../extensibility/sccgetcommandoptions-function.md)和[Scc 填充清單](../extensibility/sccpopulatelist-function.md)函數的選項。
 
-- [訊息](../extensibility/message-enumerator.md)旗標用於列印的回呼，會列舉[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)。
+- [訊息](../extensibility/message-enumerator.md)枚舉用於列印回調[、LPTEXTOUTPROC](../extensibility/lptextoutproc.md)的標誌。
 
-- [檔案狀態碼](../extensibility/file-status-code-enumerator.md)包含名為指定的原始檔控制下的檔案狀態的常數值。
+- [檔案狀態代碼](../extensibility/file-status-code-enumerator.md)包含指定來源控制下檔案狀態的命名常量值。
 
-- [目錄狀態碼](../extensibility/directory-status-code-enumerator.md)包含名為指定的原始檔控制之下的目錄狀態的常數值。
+- [目錄狀態代碼](../extensibility/directory-status-code-enumerator.md)包含指定來源控制下的目錄狀態的命名常量值。
 
 ## <a name="related-sections"></a>相關章節
-- [建立原始檔控制外掛程式](../extensibility/internals/creating-a-source-control-plug-in.md)定義原始檔控制外掛程式 SDK，並說明內含的資源。
+- [建立原始碼管理外掛程式](../extensibility/internals/creating-a-source-control-plug-in.md)定義原始程式碼管理外掛程式 SDK 並描述包含的資源。
 
-- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)提示使用者提供指定的命令的進階選項。
+- [SccGet 命令選項](../extensibility/sccgetcommandoptions-function.md)提示用戶為給定命令提供高級選項。
 
-- [SccPopulateList](../extensibility/sccpopulatelist-function.md)會檢查其目前狀態的檔案清單。 此外，會使用`pfnPopulate`檔案類型不符合的準則時告知呼叫端函式`nCommand`。
+- [Scc填充清單](../extensibility/sccpopulatelist-function.md)檢查檔案清單的目前狀態。 此外,當檔與`pfnPopulate`的條件`nCommand`不匹配時,使用函數通知調用方。
 
-- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)描述的回呼函式，以供[SccOpenProject](../extensibility/sccopenproject-function.md)顯示從原始檔控制外掛程式，透過 IDE 的訊息。
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)描述[SccOpenProject](../extensibility/sccopenproject-function.md)用於透過 IDE 顯示來自原始碼管理外掛程式的消息的回調功能。
 
-- [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)提供完整的原始檔控制外掛程式 API 中的所有項目清單。
+- [原始程式管理外掛程式](../extensibility/source-control-plug-ins.md)提供原始程式碼管理外掛程式 API 中所有元素的完整清單。

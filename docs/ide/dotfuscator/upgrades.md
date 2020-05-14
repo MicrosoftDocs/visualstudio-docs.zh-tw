@@ -25,10 +25,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 08492340022f772beadca8061a216de69fafc8af
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596797"
 ---
 # <a name="upgrade-dotfuscator-community"></a>升級 Dotfuscator Community
@@ -38,36 +38,36 @@ Dotfuscator Community 為所有使用 Microsoft Visual Studio 的開發人員立
 
 ## <a name="registering-dotfuscator-community"></a>註冊 Dotfuscator Community
 
-Dotfuscator 社區的已註冊使用者可存取額外的功能，例如[命令列支援][cli]，這可讓您輕鬆地將 Dotfuscator 的社區整合到您的自動化組建流程中。 註冊也會授與內建工具的存取權，用來[解碼模糊堆疊追蹤][decode-obfuscated]。
+Dotfuscator Community 的已註冊使用者可存取額外的功能，例如[命令列支援][cli]，這可讓您輕鬆地將 Dotfuscator Community 整合到自動建置流程。 註冊也會將存取權授與內建工具，用於[解碼模糊化的堆疊追蹤][decode-obfuscated]。
 
 註冊不但簡單快速，而且完全免費。
-若要註冊 Dotfuscator 的社區，請參閱[完整的 Dotfuscator 社區使用者指南中的指示][register-ce]。
+若要註冊 Dotfuscator Community，請參閱[完整 Dotfuscator Community 使用者指南中的指示][register-ce]。
 
 ## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
-Dotfuscator Community 提供基本層級的保護，而 ***PreEmptive Protection - Dotfuscator Professional***  則包含增強的混淆轉換和保護功能，例如：
+Dotfuscator Community 提供基本層級的保護，而 ***PreEmptive Protection - Dotfuscator Professional *** 則包含增強的混淆轉換和保護功能，例如：
 
-* 智慧財產權保護
+* 智慧財產權保護**
   * 額外的重新命名選項，包括 Enhanced Overload Induction™ 和隨機化識別碼選取。
-  * 存取企業層級的混淆轉換，包括以[達到監控自動化程式碼 decompilation 為目標的轉換][control-flow]。
-  * 能夠[隱藏機密字串][string-encryption]，讓反向組譯程式碼不可能簡單地搜尋。
-  * [不顯眼方式將擁有權和散發字串內嵌至元件][watermarking]的能力，可讓您判斷未經授權的軟體洩漏來源。
-  * 將[多個元件結合成一個][linking]的功能，讓攻擊者更難判斷程式碼專案的角色，因為已排除問題的分離。
-  * 能夠[自動從您的應用程式移除未使用的程式碼][pruning]，以減少出貨的機密程式碼數量。
-* 應用程式完整性保護
-  * 其他[應用程式防護行為][check-actions]。
+  * 存取企業級混淆轉換，包括[目標為防止自動程式碼反向組譯的轉換][control-flow]。
+  * 能夠[混淆敏感性字串][string-encryption]，以防止執行反向組譯程式碼的簡單搜尋。
+  * 能夠[以不顯眼的方式將擁有權和發佈字串嵌入您的組件][watermarking]，讓您判斷未經授權的軟體漏洞來源。
+  * 能夠[將多個組件合併成一個組件][linking]，由於消除了關注點分離 (Separation of Concerns) 的問題，因此攻擊者更難判斷程式碼項目的角色。
+  * 能夠[自動從您的應用程式移除未使用的程式碼][pruning]，以減少送出的敏感性程式碼數量。
+* 應用程式完整性保護**
+  * 額外的[應用程式防禦行為][check-actions]。
   * 能夠在應用程式生命週期結束期限之前提供一段警告期間。
   * 能夠在生命週期結束警告期間或在期限之後通知應用程式程式碼。
 
-Dotfuscator Professional 是業界標準的[.Net 混淆][net-obfuscator]程式，適用于需要持續支援、維護和產品更新的企業開發人員。
+Dotfuscator Professional 是業界標準 [.NET 混淆器][net-obfuscator]，適合需要持續支援、維護和產品更新的企業開發人員。
 此外，Dotfuscator Professional 提供與 Visual Studio 的緊密整合，並針對商業用途授權。
 
-如需 Dotfuscator Professional 的先進應用程式保護功能的詳細資訊，請造訪先占式解決方案的[Dotfuscator 總覽頁面][product-about]，並[將其與 Dotfuscator 社區進行比較][product-compare]。
-如有[完整支援的試用][eval]版，請 preemptive.com。
+如需 Dotfuscator Professional 之進階應用程式保護功能的詳細資訊，請前往 PreEmptive Solutions 的 [Dotfuscator 概觀頁面][product-about]並[與 Dotfuscator Community 進行比較][product-compare]。
+[您可以在 preemptive.com 取得完整支援的試用版][eval]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[完整 Dotfuscator 社區使用者指南中的這篇文章][full]
+[完整《Dotfuscator Community 使用者指南》中的此文章][full]
 
 <!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 

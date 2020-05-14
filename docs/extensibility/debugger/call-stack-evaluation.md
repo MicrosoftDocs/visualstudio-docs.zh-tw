@@ -1,41 +1,41 @@
 ---
-title: 呼叫堆疊評估 |Microsoft Docs
+title: 呼叫堆疊評估 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], call stack evaluation
 - call stacks, evaluation
 ms.assetid: 373d6b49-0459-4cce-816e-05745a44fe49
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa28460c2680a5301768c950eac39caefc5d1dae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b5557d7eae0ffe54b0f01f1f9e95935d71455229
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332478"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739186"
 ---
 # <a name="call-stack-evaluation"></a>呼叫堆疊評估
-若要檢視呼叫堆疊的堆疊框架處於中斷模式時，您必須實作[EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)方法。
+為了在中斷模式下查看調用堆疊的堆疊幀,必須實現[EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)方法。
 
-## <a name="methods-for-evaluation"></a>評估方法
- 針對簡單的偵錯引擎 (DE)，可能只有一個堆疊框架。 若要檢查的堆疊框架處於中斷模式時，您必須實作下列方法[IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)。
-
-|方法|描述|
-|------------|-----------------|
-|[GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|取得堆疊框架的程式碼內容。 程式碼內容代表目前指令指標框架中。|
-|[GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|取得堆疊框架的文件內容。 文件內容代表堆疊框架的原始程式碼中的目前位置。 檢視原始碼，當您在程式中被停止時的必要項。|
-
- 這些方法需要的數個內容相關的介面和方法的實作。 因此，您必須實作[GetDocumentContext](../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)方法和下列方法[IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md)。
+## <a name="methods-for-evaluation"></a>評價方法
+ 對於簡單的調試引擎 (DE),可能只有一個堆疊幀。 要在中斷模式下檢查堆疊幀,必須實現[IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)的以下方法。
 
 |方法|描述|
 |------------|-----------------|
-|[GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|取得文件內容的檔案陳述式範圍。|
+|[GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|獲取堆疊幀的代碼上下文。 代碼上下文表示堆疊框架中的當前指令指標。|
+|[GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|獲取堆疊框架的文檔上下文。 文檔上下文表示堆疊幀的原始程式碼中的當前位置。 在程式中停止時查看原始程式碼所需的。|
 
- 若要列舉的程式碼內容，您必須實作的所有方法[IEnumDebugCodeContexts2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)。
+ 這些方法需要實現多個與上下文相關的介面和方法。 因此,您必須實現[GetDocumentContext](../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)方法和[IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md)的以下方法。
+
+|方法|描述|
+|------------|-----------------|
+|[GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|獲取文檔上下文的檔語句範圍。|
+
+ 要枚舉代碼上下文,必須實現[IEnumDebugCodeContext2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)的所有方法。
 
 ## <a name="see-also"></a>另請參閱
-- [執行控制和狀態評估](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+- [執行控制及狀態評估](../../extensibility/debugger/execution-control-and-state-evaluation.md)

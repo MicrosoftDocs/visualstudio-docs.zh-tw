@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ece317d753cb5c4b0b4e5b0e02707a088e8917
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591732"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78235195"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -20,7 +20,7 @@ ms.locfileid: "75591732"
 
 ## <a name="modular-installation"></a>模組安裝
 
-Visual Studio 的模組安裝程式可讓您選擇並安裝「工作負載」。 工作負載是您慣用程式設計語言或平台所需的功能群組。 此策略有助於將 Visual Studio 安裝項的資源使用量降到更低，這意謂著它的安裝和更新速度也更快。
+Visual Studio 的模組安裝程式可讓您選擇並安裝「工作負載」**。 工作負載是您慣用程式設計語言或平台所需的功能群組。 此策略有助於將 Visual Studio 安裝項的資源使用量降到更低，這意謂著它的安裝和更新速度也更快。
 
 ::: moniker range="vs-2017"
 
@@ -38,13 +38,13 @@ Visual Studio 的模組安裝程式可讓您選擇並安裝「工作負載」。
 
 ## <a name="create-cloud-enabled-apps-for-azure"></a>建立已啟用雲端的 Azure 應用程式
 
-Visual Studio 提供一套工具，可讓您輕鬆建立由 Microsoft Azure 提供技術之支援雲端的應用程式。 您可以直接從 IDE，在 Microsoft Azure 上設定、建置、偵錯、封裝及部署應用程式和服務。 若要取得 Azure 工具和專案範本，請在安裝 Visual Studio 時，選取 [Azure 開發] 工作負載。
+Visual Studio 提供一套工具，可讓您輕鬆建立由 Microsoft Azure 提供技術之支援雲端的應用程式。 您可以直接從 IDE，在 Microsoft Azure 上設定、建置、偵錯、封裝及部署應用程式和服務。 若要取得 Azure 工具和專案範本，請在安裝 Visual Studio 時，選取 [Azure 開發]**** 工作負載。
 
 ![Azure 開發工作負載](../data-tools/media/azure-development-workload.png)
 
 ::: moniker range="vs-2017"
 
-安裝 **Azure 開發**工作負載之後，即可在 [新增專案] 對話方塊中使用 C# 的下列**雲端**範本：
+安裝 **Azure 開發**工作負載之後，即可在 [新增專案]**** 對話方塊中使用 C# 的下列**雲端**範本：
 
 ![Visual Studio 的雲端專案範本](media/cloud-project-templates.png)
 
@@ -60,7 +60,7 @@ Visual Studio 的 [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with
 - [Azure 儲存體連線服務](/azure/vs-azure-tools-connected-services-storage)，適用於 Blob 儲存體、佇列和資料表
 - [Key Vault 連線服務](/azure/key-vault/vs-key-vault-add-connected-service)，用來管理 Web 應用程式的祕密
 
-可用的**連線服務**取決於您的專案類型。 以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [新增] > [連線服務] 來新增服務。
+可用的**連線服務**取決於您的專案類型。 以滑鼠右鍵按一下 [方案總管]**** 中的專案，然後選擇 [新增]**** > [連線服務]**** 來新增服務。
 
 ![Visual Studio 連線服務](media/connected-services.png)
 
@@ -70,11 +70,11 @@ Visual Studio 的 [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with
 
 Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適用於 Web 的應用程式。 您可以使用 ASP.NET、Node.js、Python、JavaScript 及 TypeScript 來建立 Web 應用程式。 Visual Studio 了解 Angular、jQuery、Express 等 Web 架構。 ASP.NET Core 和 .NET Core 可在 Windows、Mac 及 Linux 作業系統上執行。 [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core) 是 MVC、WebAPI 及 SignalR 的重大更新，可以在 Windows、Mac 及 Linux 上執行。  ASP.NET Core 是全新的設計，提供您可組合的簡式 .NET 堆疊，讓您建置現代化的雲端架構 Web 應用程式和服務。
 
-如需詳細資訊，請參閱[新式 Web 工具](https://visualstudio.microsoft.com/vs/modern-web-tooling/)。
+有關詳細資訊，請參閱現代[Web 工具](https://visualstudio.microsoft.com/vs/modern-web-tooling/)。
 
 ## <a name="build-cross-platform-apps-and-games"></a>建置跨平台應用程式和遊戲
 
-您可以使用 Visual Studio 建置 macOS、Linux、Windows、Android、iOS 和其他[行動裝置](https://visualstudio.microsoft.com/vs/mobile-app-development/)用的應用程式和遊戲。
+您可以使用 Visual Studio 為 macOS、Linux 和 Windows 以及 Android、iOS 和其他[行動裝置](https://visualstudio.microsoft.com/vs/mobile-app-development/)構建應用和遊戲。
 
 - 建置在 Windows、macOS 和 Linux 上執行的 [.NET Core](/dotnet/core/) 應用程式。
 
@@ -84,17 +84,17 @@ Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適�
 
 - 使用 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 以 C# 建置 2D 和 3D 遊戲。
 
-- 建置適用於 iOS、Android 和 Windows 裝置的原生 C++ 應用程式。 使用[適用於跨平台開發的 C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)，在為 iOS、Android 和 Windows 建置的程式庫中共用通用程式碼。
+- 建置適用於 iOS、Android 和 Windows 裝置的原生 C++ 應用程式。 使用[適用於跨平台開發的 C++](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development)，在為 iOS、Android 和 Windows 建置的程式庫中共用通用程式碼。
 
 - 使用 [Android 模擬器](../cross-platform/visual-studio-emulator-for-android.md)部署、測試及偵錯 Android 應用程式。
 
 ## <a name="connect-to-databases"></a>連線至資料庫
 
-[伺服器總管] 可協助您在本機、從遠端瀏覽和管理 Azure、Salesforce.com、Office 365 及網站上的 SQL Server 執行個體和資產。 若要開啟 [伺服器總管]，請選擇主功能表上的 [檢視] > [伺服器總管]。 如需使用 [伺服器總管] 的詳細資訊，請參閱[新增連線](../data-tools/add-new-connections.md)。
+[伺服器總管]**** 可協助您在本機、從遠端瀏覽和管理 Azure、Salesforce.com、Office 365 及網站上的 SQL Server 執行個體和資產。 要在主功能表上打開**伺服器資源管理器**，請選擇 **"查看** > **伺服器資源管理器**"。 如需使用 [伺服器總管] 的詳細資訊，請參閱[新增連線](../data-tools/add-new-connections.md)。
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) 是一個適用於 SQL Server、Azure SQL Database 及 Azure SQL 資料倉儲的強大開發環境。 它可讓您建置、偵錯、維護及重構資料庫。 您可以使用資料庫專案，或直接使用內部或外部所連接的資料庫執行個體。
 
-Visual Studio 中的 [SQL Server 物件總管] 提供與 SQL Server Management Studio 類似的資料庫物件檢視。 [SQL Server 物件總管] 可讓您執行輕型的資料庫管理和設計工作。 工作範例包括編輯資料表資料、比較結構描述、直接從 [SQL Server 物件總管] 使用操作功能表來執行查詢等。
+Visual Studio 中的 [SQL Server 物件總管]**** 提供與 SQL Server Management Studio 類似的資料庫物件檢視。 [SQL Server 物件總管] 可讓您執行輕型的資料庫管理和設計工作。 工作範例包括編輯資料表資料、比較結構描述、直接從 [SQL Server 物件總管] 使用操作功能表來執行查詢等。
 
 ![SQL Server 物件總管](../ide/media/vs2015_sqlobjectexplorer.png)
 
@@ -118,9 +118,9 @@ Azure DevOps Services 是雲端式服務，可規劃、裝載，自動化和部�
 
 Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理中樞。 其可讓所有人使用單一方案參與開發流程。 TFS 也適合用來管理異質小組和專案
 
-如果您在網路上有 Azure DevOps 組織或 Team Foundation Server，便可以透過 Visual Studio 中的 [Team Explorer] 視窗與其連線。 在這個視窗中，您可以在原始檔控制簽入或簽出程式碼、管理工作項目、啟動建置和存取小組聊天室及工作區。 您可以從搜尋方塊開啟 [Team Explorer]，也可以從主功能表的 [檢視] > [Team Explorer] 或從 [小組] > [管理連線] 來開啟它。
+如果您在網路上有 Azure DevOps 組織或 Team Foundation Server，便可以透過 Visual Studio 中的 [Team Explorer]**** 視窗與其連線。 在這個視窗中，您可以在原始檔控制簽入或簽出程式碼、管理工作項目、啟動建置和存取小組聊天室及工作區。 您可以從搜尋方塊開啟 [Team Explorer]****，也可以從主功能表的 [檢視]**** > [Team Explorer]**** 或從 [小組]**** > [管理連線]**** 來開啟它。
 
-下圖顯示裝載於 Azure DevOps Services 中解決方案的 [Team Explorer] 視窗。
+下圖顯示裝載於 Azure DevOps Services 中解決方案的 [Team Explorer]**** 視窗。
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer_devops.png)
 
@@ -136,8 +136,8 @@ Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理
 
 若要深入了解如何擴充 Visual Studio，請參閱[擴充 Visual Studio IDE](https://visualstudio.microsoft.com/vs/extend/)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
-- [Visual Studio 2017 的新功能](../ide/whats-new-visual-studio-2017.md)
+- [視覺工作室 2017 的新增功能](../ide/whats-new-visual-studio-2017.md)
 - [Visual Studio 2019 的新功能](../ide/whats-new-visual-studio-2019.md)

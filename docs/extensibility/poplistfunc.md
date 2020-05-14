@@ -1,5 +1,5 @@
 ---
-title: POPLISTFUNC | Microsoft Docs
+title: POPLISTFUNC |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - POPLISTFUNC callback function
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3125c17ad30eec6c374c38df7d4baa9e299314a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6c5f8c1683a993915476ff23f1f5d5f2c2aba462
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336223"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702068"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
-此回呼會提供給[SccPopulateList](../extensibility/sccpopulatelist-function.md) ide 而且由原始檔控制外掛程式用來更新檔案或目錄的清單 (也提供給`SccPopulateList`函式)。
+此回檔由 IDE 提供給[SccPopulateList,](../extensibility/sccpopulatelist-function.md)原始程式碼管理外掛程式用於更新檔或`SccPopulateList`目錄的清單(也提供給函數)。
 
- 當使用者選擇**取得**命令在 IDE 中，IDE 會顯示清單方塊的使用者可以取得的所有檔案。 不幸的是，IDE 不知道使用者可能會收到; 的所有檔案的確切清單只有外掛程式都具有這份清單。 如果其他使用者將檔案新增至原始程式碼控制項專案中，這些檔案應該會出現在清單中，但在 IDE 不知道它們。 IDE 會建置它認為使用者可以取得檔案的清單。 向使用者顯示此清單之前，它會呼叫[SccPopulateList](../extensibility/sccpopulatelist-function.md) `,`讓原始檔控制外掛程式機會加入，並從清單中刪除檔案。
+ 當使用者在 IDE 中選擇**Get**命令時,IDE 將顯示使用者可以獲取的所有檔案的清單框。 遺憾的是,IDE 不知道使用者可能獲得的所有文件的確切清單;只有外掛程式有此清單。 如果其他使用者將檔添加到原始程式碼管理專案,這些檔應出現在清單中,但IDE 不知道它們。 IDE 生成它認為使用者可以獲取的檔的清單。 在向使用者顯示此清單之前,它會調用[SccPopulateList,](../extensibility/sccpopulatelist-function.md)`,`使原始程式碼管理外掛程式有機會從清單中添加和刪除檔。
 
 ## <a name="signature"></a>簽章
- 原始檔控制外掛程式會修改清單，藉由呼叫 IDE 實作函式具有下列原型：
+ 原始程式碼管理外掛程式透過使用以下原型呼叫 IDE 實現函數來修改清單:
 
 ```cpp
 typedef BOOL (*POPLISTFUNC) (
@@ -37,29 +37,29 @@ typedef BOOL (*POPLISTFUNC) (
 ```
 
 ## <a name="parameters"></a>參數
- pvCallerData`pvCallerData`參數傳遞至呼叫端 (IDE) [SccPopulateList](../extensibility/sccpopulatelist-function.md)。 原始檔控制外掛程式應該假設任何有關此參數的內容。
+ pvCallerData`pvCallerData`調用方 (IDE) 傳遞給[SccpopulateList 的](../extensibility/sccpopulatelist-function.md)參數。 原始程式碼管理外掛程式不應假定此參數的內容。
 
- fAddRemove 如果`TRUE`，`lpFileName`是應該加入的檔案清單的檔案。 如果`FALSE`，`lpFileName`是應該從檔案清單中刪除的檔案。
+ fAddRemove `TRUE` `lpFileName` If , 是應添加到檔案清單中的檔。 如果`FALSE``lpFileName`是應從檔案清單中刪除的檔案。
 
- nStatus 狀態的`lpFileName`(組成`SCC_STATUS`位元; 請參閱[檔案狀態碼](../extensibility/file-status-code-enumerator.md)如需詳細資訊)。
+ n`lpFileName`狀態`SCC_STATUS`狀態( 位的組合;有關詳細資訊,請參閱[檔案狀態代碼](../extensibility/file-status-code-enumerator.md))。
 
- 要加入或從清單中刪除的檔案名稱 lpFileName 完整目錄路徑。
+ lpFileName 檔案名的完整目錄路徑,以便從清單中添加或刪除。
 
 ## <a name="return-value"></a>傳回值
 
 |值|描述|
 |-----------|-----------------|
-|`TRUE`|此外掛程式可以繼續呼叫此函式。|
-|`FALSE`|在 IDE 端 （例如不足的記憶體的情況） 已有問題。 外掛程式應該停止的作業。|
+|`TRUE`|外掛程式可以繼續調用此功能。|
+|`FALSE`|IDE 端出現問題(如記憶體不足情況)。 外掛程式應停止操作。|
 
 ## <a name="remarks"></a>備註
- 原始檔控制外掛程式想要加入或刪除的檔案清單中的每個檔案，它會呼叫此函式，並傳入`lpFileName`。 `fAddRemove`旗標會指出新的檔案新增至清單或刪除舊的檔案。 `nStatus`參數會提供檔案的狀態。 當外掛程式 SCC 完成新增及刪除檔案時，它會傳回[SccPopulateList](../extensibility/sccpopulatelist-function.md)呼叫。
+ 對於原始碼管理外掛程式要加入檔案清單中或移除的每個檔案,它將呼叫此函數,傳入`lpFileName`。 這個`fAddRemove`標示加入清單的新檔案或要刪除的舊檔案。 參數`nStatus`提供文件的狀態。 當 SCC 外掛程式完成添加和刪除檔後,它將從[SccPopulateList](../extensibility/sccpopulatelist-function.md)呼叫返回。
 
 > [!NOTE]
-> `SCC_CAP_POPULATELIST`功能位元是需要 Visual Studio。
+> 可視化`SCC_CAP_POPULATELIST`工作室需要功能位。
 
 ## <a name="see-also"></a>另請參閱
-- [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)
-- [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
+- [IDE 實作的回檔](../extensibility/callback-functions-implemented-by-the-ide.md)
+- [原始程式管理外掛程式](../extensibility/source-control-plug-ins.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)
-- [檔案狀態碼](../extensibility/file-status-code-enumerator.md)
+- [檔案狀態代碼](../extensibility/file-status-code-enumerator.md)

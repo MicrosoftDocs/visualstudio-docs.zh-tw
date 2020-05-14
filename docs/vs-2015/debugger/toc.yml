@@ -230,9 +230,9 @@
           href: dump-file-summary-extensibility-api.md
     - name: 還原隱藏的偵錯工具命令
       href: how-to-restore-hidden-debugger-commands.md
-- name: Remote Debugging
+- name: 遠端偵錯
   items:
-    - name: Remote Debugging
+    - name: 遠端偵錯
       href: remote-debugging.md
     - name: 設定 Windows 防火牆進行遠端偵錯
       href: configure-the-windows-firewall-for-remote-debugging.md
@@ -562,9 +562,9 @@
       items:
         - name: 圖形診斷 (對 DirectX 圖形進行偵錯)
           href: visual-studio-graphics-diagnostics.md
-        - name: 總覽
+        - name: 概觀
           href: overview-of-visual-studio-graphics-diagnostics.md
-        - name: 快速入門
+        - name: 開始使用
           href: getting-started-with-visual-studio-graphics-diagnostics.md
         - name: 擷取圖形資訊
           href: capturing-graphics-information.md
@@ -592,7 +592,7 @@
               href: bc-texture-compression-variant.md
         - name: 事件清單
           href: graphics-event-list.md
-        - name: 狀況
+        - name: State
           href: graphics-state.md
         - name: 管線階段
           href: graphics-pipeline-stages.md
@@ -628,9 +628,9 @@
               href: how-to-change-the-graphics-diagnostics-playback-machine.md
             - name: 搭配 ARM 裝置使用圖形診斷
               href: how-to-use-graphics-diagnostics-with-an-arm-device.md
-        - name: 參考資料
+        - name: 參考
           items:
-            - name: 參考資料
+            - name: 參考
               href: reference-programmatic-capture.md
             - name: VsgDbg 類別
               items:

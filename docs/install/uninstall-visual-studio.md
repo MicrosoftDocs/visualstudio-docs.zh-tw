@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: fd21f01f89cb4fe4507775670968496cbb5f99f5
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115011"
 ---
 # <a name="uninstall-visual-studio"></a>解除安裝 Visual Studio
@@ -34,20 +34,20 @@ Visual Studio 是我們提供給開發人員的整合式生產力工具套件，
 
 1. 在電腦上找到 Visual Studio 安裝程式。
 
-     例如，在執行「Windows 10 年度更新版」或更新版本的電腦上，選取 [開始]，然後捲動至字母 [V]，它會列為 [Visual Studio 安裝程式]。
+     例如，在執行「Windows 10 年度更新版」或更新版本的電腦上，選取 [開始]****，然後捲動至字母 [V]****，它會列為 [Visual Studio 安裝程式]****。
 
-     ![Visual Studio 安裝程式](media/locate-the-visual-studio-installer.png "找出 Microsoft Visual Studio 安裝程式")
+     ![視覺化工作室安裝程式](media/locate-the-visual-studio-installer.png "查找微軟視覺化工作室安裝程式")
 
    > [!NOTE]
-   > 在某些電腦上，Visual Studio 安裝程式可能會列在 **"M"** 字母下方，成為 [Microsoft Visual Studio 安裝程式]。<br/><br/> 您也可以在下列位置找到 Visual Studio 安裝程式：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > 在某些電腦上，Visual Studio 安裝程式可能會列在 **"M"** 字母下方，成為 [Microsoft Visual Studio 安裝程式]****。<br/><br/> 您也可以在下列位置找到 Visual Studio 安裝程式：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. 請在安裝程式中尋找您安裝的 Visual Studio 版本。 接著，選擇 [更多]，然後選擇 [解除安裝]。
+1. 請在安裝程式中尋找您安裝的 Visual Studio 版本。 接著，選擇 [更多]****，然後選擇 [解除安裝]****。
 
      ![解除安裝 Visual Studio 2017](media/uninstall-visual-studio.png "解除安裝 Visual Studio 2017")
 
-1. 按一下 [確定] 確認您的選擇。
+1. 按一下 [確定]**** 確認您的選擇。
 
-如果您稍後改變心意而想要重新安裝 Visual Studio 2017，請重新啟動 Visual Studio 安裝程式，然後從選擇畫面中選取 [安裝]。
+如果您稍後改變心意而想要重新安裝 Visual Studio 2017，請重新啟動 Visual Studio 安裝程式，然後從選擇畫面中選取 [安裝]****。
 
 ## <a name="uninstall-visual-studio-installer"></a>解除安裝 Visual Studio 安裝程式
 
@@ -55,9 +55,9 @@ Visual Studio 是我們提供給開發人員的整合式生產力工具套件，
 
 1. 在 Windows 10 中，於 [在這裡輸入要搜尋的文字] 方塊中鍵入**應用程式和功能**。
 1. 尋找 **Microsoft Visual Studio 2017** (或稱 **Visual Studio 2017**)。
-1. 選擇 [解除安裝]。
+1. 選擇**解除安裝**。
 1. 然後，尋找 **Microsoft Visual Studio 安裝程式**。
-1. 選擇 [解除安裝]。
+1. 選擇**解除安裝**。
 
 ::: moniker-end
 
@@ -65,9 +65,9 @@ Visual Studio 是我們提供給開發人員的整合式生產力工具套件，
 
 1. 在電腦上找到 Visual Studio 安裝程式。
 
-     例如，在執行 Windows 10，的電腦上，選取 [開始]，然後捲動到字母 [V]，它在其中列為 [Visual Studio Installer]。
+     例如，在執行 Windows 10，的電腦上，選取 [開始]****，然後捲動到字母 [V]****，它在其中列為 [Visual Studio Installer]****。
 
-     ![開啟 Visual Studio 安裝程式](media/vs-2019/vs-installer-windows-start.png "開啟 Visual Studio 安裝程式")
+     ![打開視覺化工作室安裝程式](media/vs-2019/vs-installer-windows-start.png "打開視覺化工作室安裝程式")
 
      > [!NOTE]
      > 您也可以在下列位置找到 Visual Studio 安裝程式：
@@ -76,15 +76,15 @@ Visual Studio 是我們提供給開發人員的整合式生產力工具套件，
 
     您可能需要更新安裝程式才能繼續。 若是如此，請遵循提示。
 
-1. 請在安裝程式中尋找您安裝的 Visual Studio 版本。 接著，選擇 [更多]，然後選擇 [解除安裝]。
+1. 請在安裝程式中尋找您安裝的 Visual Studio 版本。 接著，選擇 [更多]****，然後選擇 [解除安裝]****。
 
-     ![卸載 Visual Studio 2019](media/vs-2019/vs-installer-uninstall.png "卸載 Visual Studio 2019")
+     ![卸載視覺工作室 2019](media/vs-2019/vs-installer-uninstall.png "卸載視覺工作室 2019")
 
-1. 按一下 [確定] 確認您的選擇。
+1. 按一下 [確定]**** 確認您的選擇。
 
-     ![卸載 Visual Studio 確認](media/vs-2019/uninstall-visualstudio-confirm.png "確認您想要卸載 Visual Studio 2019")
+     ![卸載視覺化工作室確認](media/vs-2019/uninstall-visualstudio-confirm.png "確認要卸載 Visual Studio 2019")
 
-如果稍後改變心意並想要重新安裝 Visual Studio 2019，請再次啟動 Visual Studio 安裝程式，選擇 [可用] 索引標籤，選擇您想要安裝的 Visual Studio 版本，然後選取 [安裝]。
+如果稍後改變心意並想要重新安裝 Visual Studio 2019，請再次啟動 Visual Studio 安裝程式，選擇 [可用]**** 索引標籤，選擇您想要安裝的 Visual Studio 版本，然後選取 [安裝]****。
 
 ## <a name="uninstall-visual-studio-installer"></a>解除安裝 Visual Studio 安裝程式
 
@@ -92,19 +92,19 @@ Visual Studio 是我們提供給開發人員的整合式生產力工具套件，
 
 1. 在 Windows 10 中，於 [在這裡輸入要搜尋的文字] 方塊中鍵入**應用程式和功能**。
 1. 尋找 **Visual Studio 2019**。
-1. 選擇 [解除安裝]。
+1. 選擇**解除安裝**。
 1. 然後，尋找 **Microsoft Visual Studio 安裝程式**。
-1. 選擇 [解除安裝]。
+1. 選擇**解除安裝**。
 
 ::: moniker-end
 
-## <a name="remove-all-files"></a>移除所有檔案
+## <a name="remove-all-files"></a>刪除所有檔
 
-如果您遇到嚴重錯誤，而且無法使用先前的指示來卸載 Visual Studio，就會有「最後手段」選項，您可以考慮改為使用。 如需有關如何完全移除所有 Visual Studio 安裝檔案和產品資訊的詳細資訊，請參閱[移除 Visual Studio](remove-visual-studio.md)頁面。
+如果您遇到災難性錯誤，並且無法使用前面的說明卸載 Visual Studio，則可以考慮使用"最後手段"選項。 有關如何完全刪除所有 Visual Studio 安裝檔和產品資訊的詳細資訊，請參閱[刪除視覺工作室](remove-visual-studio.md)頁面。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [修改 Visual Studio](modify-visual-studio.md)
 * [更新 Visual Studio](update-visual-studio.md)

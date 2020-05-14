@@ -1,72 +1,72 @@
 ---
-title: 自訂色彩的項目 |Microsoft Docs
+title: 自定義可著色物品 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd1d18a6fe142a3b405742dd9e74c1376e713687
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312908"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708988"
 ---
-# <a name="custom-colorable-items"></a>自訂色彩的項目
-您可以覆寫型別的清單標示色彩，例如關鍵字和註解，以及在您的語言服務中實作自訂色彩的項目。
+# <a name="custom-colorable-items"></a>自訂可著色項目
+您可以透過在語言服務中實現自訂可著色項來覆蓋著色類型清單,例如關鍵字和註釋。
 
-## <a name="user-settings-of-colorable-items"></a>使用者設定的可設定色彩的項目
- 您可以顯示**字型和色彩**對話方塊中，選取**選項**上**工具** 功能表，然後選取**字型和色彩**底下**環境**。 當您選取顯示器，例如**文字編輯器**或是**命令視窗**，則**顯示項目**清單方塊會顯示可顯示的所有色彩項目。 您可以檢視和變更字型、 大小、 前景色彩和每個色彩項目的背景色彩。 您的選擇會儲存在登錄中的快取，然後以可設定色彩的項目名稱存取。
+## <a name="user-settings-of-colorable-items"></a>以色項目的使用者設定
+ 您可以通過在 **「工具」** 選單上選擇 **「選項**」,然後在 **「環境**」下選擇 **「字型和顏色**」對話框來顯示「**字型和顏色**」對話框。 當您選擇顯示(如**文字編輯器**或**命令視窗**)時,「**顯示專案」** 清單框顯示該顯示的所有可著色項。 您可以查看和更改每個可著色項的字型、大小、前景顏色和背景顏色。 您的選擇存儲在註冊表中的緩存中,並由可著色的項目名稱訪問。
 
-## <a name="presentation-of-colorable-items"></a>可設定色彩的項目呈現方式
- 因為 IDE 會處理的可設定色彩的項目中的使用者覆寫**字型和色彩**對話方塊，您需要只提供每個自訂色彩項目的名稱。 這個名稱是在顯示的內容**顯示的項目**清單。 可設定色彩的項目會依字母順序顯示。 若要將您的語言服務的自訂色彩項目，就可以使用您語言的名稱，每個名稱，例如**NewLanguage-註解**並**NewLanguage-關鍵字**。
+## <a name="presentation-of-colorable-items"></a>提供可著色物品
+ 由於 IDE 處理 **「 字型和顏色」** 對話框中可著色項的使用者覆蓋,因此只需為每個自定義可著色項提供名稱。 此名稱是 **「顯示項目**」清單中顯示的內容。 可著色項按字母順序顯示。 要對語言服務的自定義可著色項目進行分組,可以使用語言名稱開始每個名稱,例如 **「新建語言 -註釋**」和 **「新建語言 - 關鍵字**」。
 
 > [!CAUTION]
-> 您應該避免與現有的色彩項目的名稱發生衝突的色彩項目的名稱包含語言名稱。 如果您變更其中一個您可設定色彩的項目名稱，在開發期間，您必須重設快取建立第一次存取您可設定色彩的項目。 您可以重設實驗性的快取**CreateExpInstance**工具，它會隨 Visual Studio SDK，通常在目錄中：
+> 應在可著色項名稱中包含語言名稱,以避免與現有可著色項名稱發生衝突。 如果在開發期間更改了其中一個可著色項的名稱,則必須重置首次訪問可著色項時創建的緩存。 您可以使用**CreateExpA 工具**重新設定實驗快取,該工具通常安裝在 Visual Studio SDK 中, 通常位於目錄中:
 >
-> *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+> *C:\程式檔 (x86)\微軟視覺工作室 14.0_VSSDK_視覺工作室集成\工具\Bin*
 >
-> 若要重設快取，請輸入**CreateExpInstance /Reset**。 如需詳細資訊**CreateExpInstance**，請參閱[CreateExpInstance utility](../../extensibility/internals/createexpinstance-utility.md)。
+> 要重置快取,請輸入 **「創建實例/重置**」。 有關**CreateExp 實體的詳細**資訊,請參閱[建立說明實用程式](../../extensibility/internals/createexpinstance-utility.md)。
 
- 永遠不會參考可設定色彩的項目清單中第一個項目。 第一個項目對應至 0，色彩項目的索引和[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]一律會提供預設文字色彩和該項目的屬性。 此未參考的項目處理的最簡單的方式是提供為第一個項目清單中的預留位置色彩項目。
+ 永遠不會引用可著色項清單中的第一項。 第一個項對應於可著色項索引 0,[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]並且 始終提供該專案的預設文本顏色和屬性。 處理此未引用項的最簡單方法是將清單中的占位符可著色項作為第一項提供。
 
-## <a name="implement-custom-colorable-items"></a>實作自訂色彩的項目
+## <a name="implement-custom-colorable-items"></a>實現自訂可著色項目
 
-1. 定義項目必須以色彩標示您的語言，例如關鍵字、 運算子和識別碼。
+1. 定義語言中必須著色的內容,例如關鍵字、運算元和標識碼。
 
-2. 建立這些色彩的項目列舉型別。
+2. 創建這些可著色項的枚舉。
 
-3. 建立從剖析器或掃描器的列舉值傳回的權杖類型的關聯。
+3. 將從解析器或掃描器返回的權杖類型與枚舉值相關聯。
 
-    例如，值，表示語彙基元的型別可能是自訂色彩的項目列舉中的相同值。
+    例如,表示令牌類型的值可以是自定義可著色項枚舉中相同的值。
 
-4. 在您實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法中的您<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>物件中填入從剖析器或掃描器所傳回的語彙基元型別來對應您自訂色彩的項目列舉值的屬性清單。
+4. 在<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A><xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>物件中方法的實現中,使用自定義可著色項中的值填充屬性清單,枚舉與從解析器或掃描器返回的標記類型對應。
 
-5. 在相同的類別可實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>介面，請實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>介面和其兩個方法，<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>。
+5. 在實現<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>介面的同一類中,<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>實現介面及其兩種方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A>,<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>和 。
 
 6. 實作 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> 介面。
 
-7. 如果您想要支援 24 位元或高的色彩值，也會實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>介面。
+7. 如果要支援 24 位元或高顏色值<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>,還要實現介面。
 
-8. 在您的語言服務物件，會建立清單，其中包含您<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>物件，一個用於您的剖析器或掃描器可以識別每個可設定色彩的項目。
+8. 在語言服務物件中,創建一個包含物件<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>的清單,該清單針對解析器或掃描器可以標識的每個可著色項創建一個清單。
 
-    您可以使用自訂色彩的項目列舉中的對應值，以存取清單中的每個項目。 使用做為索引的列舉值清單。 在清單中的第一個項目永遠不會被存取時，因為它會對應至預設的文字樣式[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]永遠會處理本身。 您可以彌補這一點您清單的開頭插入的預留位置色彩的項目。
+    您可以使用自定義可著色項枚舉中的相應值訪問清單中的每個項。 將枚舉值用作清單中的索引。 清單中的第一項永遠不會被訪問,因為它對應於[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]始終處理自身的預設文本樣式。 您可以通過在清單的開頭插入占位符可著色項來補償這一點。
 
-9. 在您實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A>方法，傳回您自訂色彩的項目清單中的項目數目。
+9. 在實現 方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A>時 ,返回自定義可著色項清單中的項目數。
 
-10. 在您實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>方法，傳回要求的色彩項目，從您的清單。
+10. 在實現 方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>時 ,從清單中返回請求的可著色項。
 
-    如需如何實作的範例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>並<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>介面，請參閱<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>。
+    有關如何實現<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem><xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>和介面的示例,請參閱<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>。
 
 ## <a name="see-also"></a>另請參閱
-- [舊版語言服務的模型](../../extensibility/internals/model-of-a-legacy-language-service.md)
+- [傳統語言服務的模型](../../extensibility/internals/model-of-a-legacy-language-service.md)
 - [自訂編輯器中的語法著色](../../extensibility/syntax-coloring-in-custom-editors.md)
-- [舊版語言服務中的語法著色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
-- [實作語法著色](../../extensibility/internals/implementing-syntax-coloring.md)
-- [如何：使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [舊語言服務中的語法著色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+- [實現語法著色](../../extensibility/internals/implementing-syntax-coloring.md)
+- [如何:使用內建的可著色專案](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

@@ -1,5 +1,5 @@
 ---
-title: 專案 |Microsoft Docs
+title: 專案 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,41 +9,41 @@ helpviewer_keywords:
 - projects [Visual Studio SDK]
 - project types [Visual Studio SDK]
 ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfe172d0255a6874d65fb940afd0f6f0beb1657a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 6b7a9299321d2aa80eebb564bf9b926f07ab0108
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848796"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706206"
 ---
-# <a name="projects"></a>Projects
-在 Visual Studio 中，專案是開發人員用來組織原始程式碼檔案和其他資源（出現在**方案總管**中）的容器。 通常，專案是儲存原始程式碼檔案和資源（例如點陣圖檔案）參考C#的檔案（例如專案的 .csproj 檔案）。 專案可讓您組織、建立、偵測和部署原始程式碼、Web 服務和資料庫的參考，以及其他資源。 Vspackage 可以用三種主要方式擴充 Visual Studio 專案系統：*專案類型*、*專案子類型*和*自訂工具*。
+# <a name="projects"></a>專案
+在 Visual Studio 中,專案是開發人員用來組織原始程式碼檔以及**解決方案資源管理器**中顯示的其他資源的容器。 通常,專案是檔(例如,C# 專案的 .csproj 檔),用於存儲對原始程式碼檔和資源(如位圖檔)的引用。 項目允許您組織、構建、除錯和部署原始碼、對 Web 服務和資料庫的引用以及其他資源。 VS 套件可以透過三種主要式延伸 Visual Studio 專案系統:*專案類型*,*專案子型態*與*自訂工具*。
 
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
 - [專案類型](../../extensibility/internals/project-types.md)
 
- *專案類型*加入對新專案類型的支援，例如程式設計語言。 例如，Visual Studio 支援的每個語言都有自己的專案類型，而 IronPython 整合範例包含 IronPython 語言的專案類型。 您必須為C#或 Visual Basic 以外的語言建立專案類型，以自訂專案的建立、進行調試、部署和顯示在**方案總管**中。 如需詳細資訊，請參閱[專案類型](../../extensibility/internals/project-types.md)。
+ *項目類型*增加了對新類型的專案(如程式設計語言)的支援。 例如,Visual Studio 支援的每種語言都有自己的項目類型,IronPython 集成範例包括 IronPython 語言的項目類型。 您必須為 C# 或 Visual Basic 以外的語言建立專案類型,以自訂**如何在解決方案資源管理器**中生成、調試、部署和顯示專案。 有關詳細資訊,請參閱[項目類型](../../extensibility/internals/project-types.md)。
 
 - [專案子類型](../../extensibility/internals/project-subtypes.md)
 
- *專案子類型*是以專案類型為基礎，可用於自訂專案的建立、進行調試和部署方式。 Visual Studio 使用具有智慧型裝置專案的專案子類型;他們會從開發電腦將新建立的程式複製到目標裝置，藉此自訂部署。 C#和 Visual Basic 專案類型可用來做為專案子類型的基礎;C++專案類型不能。 您自己的專案類型也可以當做專案子類型的基礎使用。 如需詳細資訊，請參閱[專案子類型](../../extensibility/internals/project-subtypes.md)。
+ *專案子類型*基於項目類型,可用於自定義專案的生成、調試和部署方式。 Visual Studio 使用智慧設備專案的專案子類型;他們通過將新構建的程式從開發計算機複製到目標設備來自定義部署。 C# 和可視化基本項目類型可用作專案子類型的基礎;C++專案類型不能。 您自己的項目類型也可以用作專案子類型的基礎。 有關詳細資訊,請參閱[項目子類型](../../extensibility/internals/project-subtypes.md)。
 
 - [Web 專案](../../extensibility/internals/web-projects.md)
 
- 說明 Web 專案，然後再建立 Web 應用程式。
+ 解釋 Web 專案,而 Web 專案又創建 Web 應用程式。
 
-- [新專案產生：在幕後，第一項](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)和[新的專案產生：幕後，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [新專案生成:引擎蓋下,第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)和[新專案生成:在引擎蓋下,第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
 
- 說明當您建立新的專案時，實際發生的情況。
+ 說明創建新項目時實際發生的情況。
 
-- [VSSDK 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)包含 VSSDK 中處理專案和方案的範例。
+- [VSSDK 樣本](https://github.com/Microsoft/VSSDK-Extensibility-Samples)包含 VSSDK 中處理專案和解決方案的範例。
 
 ## <a name="related-sections"></a>相關章節
 - [深入探索 Visual Studio SDK](../../extensibility/internals/inside-the-visual-studio-sdk.md)
 
- 說明 Visual Studio 擴充性的不同層面。
+ 解釋可視化工作室擴展性的不同方面。

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Fakes：產生 & 編譯器代碼;命名慣例
+title: 微軟造假：生成&編譯代碼;命名約定
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589327"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的程式碼產生、編譯和命名慣例
@@ -44,7 +44,7 @@ ms.locfileid: "75589327"
 
 篩選條件可以在 *.fakes* 檔案中設定，以限制應該設定哪些虛設常式類型。 您可以在 StubGeneration 項目下加入 Clear、Add、Remove 項目的未繫結數目，已建置所選類型的清單。
 
-例如，下列 *.fakes* 檔案會針對在 System 和 System.IO 命名空間下的類型產生虛設常式，但是排除 System 中任何包含 "Handle" 的類型：
+例如，以下 *.fakes*檔為系統下的類型生成存根，System.IO命名空間，但不包括系統中包含"控制碼"的任何類型：
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -64,19 +64,19 @@ ms.locfileid: "75589327"
 
 - 篩選條件預設不區分大小寫；篩選條件會執行子字串比對：
 
-     `el` 比對 "hello"
+     `el` 比對符合 "hello"
 
 - 將 `!` 新增至篩選條件結尾會讓它變成精確區分大小寫的比對：
 
      `el!` 不符合 "hello"
 
-     `hello!` 比對 "hello"
+     `hello!` 比對符合 "hello"
 
 - 將 `*` 新增至篩選條件的結尾會讓它符合字串的前置詞：
 
      `el*` 不符合 "hello"
 
-     `he*` 比對 "hello"
+     `he*` 比對符合 "hello"
 
 - 以分號分隔之清單中的多個篩選條件會結合為分離：
 
@@ -102,7 +102,7 @@ ms.locfileid: "75589327"
 
 ### <a name="internal-types"></a>內部類型
 
-Fakes 程式碼產生器會針對所產生之 Fakes 組件的可見類型產生填充碼和虛設常式類型。 若要讓 Fakes 和測試組件看見填充組件的內部類型，請將 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性加入填充組件的程式碼，以提供可視性給所產生的 Fakes 組件和測試組件。 以下為範例：
+Fakes 程式碼產生器會針對所產生之 Fakes 組件的可見類型產生填充碼和虛設常式類型。 若要讓 Fakes 和測試組件看見填充組件的內部類型，請將 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性加入填充組件的程式碼，以提供可視性給所產生的 Fakes 組件和測試組件。 以下是範例：
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -126,7 +126,7 @@ Fakes 程式碼產生器會針對所產生之 Fakes 組件的可見類型產生�
         PublicKey=<Test_assembly_public_key>)]
     ```
 
-如果填充組件具有強式名稱，則 Fakes 架構會自動強式簽署產生的 Fakes 組件。 您必須強式簽署測試組件。 請參閱[強式名稱的組件](/dotnet/framework/app-domains/strong-named-assemblies)。
+如果填充組件具有強式名稱，則 Fakes 架構會自動強式簽署產生的 Fakes 組件。 您必須強式簽署測試組件。 請參閱[強命名程式集](/dotnet/framework/app-domains/strong-named-assemblies)。
 
 Fakes 架構會使用相同金鑰來簽署所有產生的組件，因此，您可以使用這個程式碼片段做為起點，來將 Fakes 組件的 **InternalsVisibleTo** 屬性加入至填充組件程式碼。
 
@@ -134,7 +134,7 @@ Fakes 架構會使用相同金鑰來簽署所有產生的組件，因此，您�
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-您可以針對 Fakes 組件指定不同的公用金鑰，例如您已針對填充組件建立的金鑰，方法是指定 *.snk* 檔案的完整路徑，其中包含替代金鑰做為 `KeyFile`.fakes`Fakes` 檔案之 \\`Compilation`*項目中的* 屬性值。 例如：
+通過將包含備用鍵的 *.snk*`KeyFile`檔的完整路徑指定為`Fakes`\\`Compilation`*.fakes*檔元素中的屬性值，可以為 Fakes 程式集指定其他公開金鑰（例如為分片程式集創建的鍵）。 例如：
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -161,7 +161,7 @@ Fakes 架構會使用相同金鑰來簽署所有產生的組件，因此，您�
 
 從單元測試專案中，請新增已編譯 Fakes 組件的參考，這些組件是放置在專案資料夾中的 FakesAssemblies 底下。
 
-1. 建立 .NET 執行階段版本與測試專案相符的新類別庫， 並稱它為 Fakes.Prebuild。 從專案刪除不需要的 *class1.cs* 檔。
+1. 建立 .NET 執行階段版本與測試專案相符的新類別庫， 並稱它為 Fakes.Prebuild。 從專案中刪除*class1.cs*檔，不需要。
 
 2. 將參考加入您所需之 Fakes 的所有系統和協力廠商組件。
 
@@ -205,7 +205,7 @@ attribute of the Assembly element in the .fakes:
 
 - Global.Fakes 包含空白命名空間的填充碼類型。
 
-  **類型名稱**
+  **型別名稱**
 
 - 填充碼前置詞會加入類型名稱，以建置填充碼類型名稱。
 
@@ -249,22 +249,22 @@ attribute of the Assembly element in the .fakes:
 > [!NOTE]
 > - **索引子的 getter 和 setter** 是以類似屬性的方式來處理。 索引子的預設名稱是 `Item`。
 > - 會轉換並串連**參數類型**名稱。
-> - 除非有多載模稜兩可的情況，否則會忽略**傳回型別**。 如果有多載模稜兩可的情況，則傳回型別將會附加在名稱結尾。
+> - 除非存在重載歧義，否則**將忽略返回類型**。 如果有多載模稜兩可的情況，則傳回型別將會附加在名稱結尾。
 
 ### <a name="parameter-type-naming-conventions"></a>參數類型命名慣例
 
 |假設|附加的字串是...|
 |-|-|
 |**類型**`T`|T<br /><br /> 命名空間、巢狀結構和泛型 tics 會被丟棄。|
-|**out 參數**`out T`|`TOut`|
-|**Ref 參數**`ref T`|`TRef`|
+|**出出參數**`out T`|`TOut`|
+|**ref 參數** `ref T`|`TRef`|
 |**陣列類型**`T[]`|`TArray`|
 |**多維陣列**類型 `T[ , , ]`|`T3`|
 |**指標**類型 `T*`|`TPtr`|
-|**泛型類型**`T<R1, ...>`|`TOfR1`|
-|類型  **的**泛型類型引數`!i``C<TType>`|`Ti`|
-|方法  **的**泛型方法引數`!!i``M<MMethod>`|`Mi`|
-|**巢狀類型**`N.T`|會附加 `N`，後接 `T`|
+|**泛型型別**`T<R1, ...>`|`TOfR1`|
+|類型的**泛型型別參數**`!i``C<TType>`|`Ti`|
+|方法的**泛型方法參數**`!!i``M<MMethod>`|`Mi`|
+|**巢狀型別**`N.T`|會附加 `N`，後接 `T`|
 
 ### <a name="recursive-rules"></a>遞迴規則
 
@@ -274,6 +274,6 @@ attribute of the Assembly element in the .fakes:
 
 - 如果產生的名稱與宣告類型的任何成員發生衝突，則會使用編號配置，方法是附加兩位數計數器，從 01 開始。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)
+- [使用微軟假貨隔離正在測試的代碼](../test/isolating-code-under-test-with-microsoft-fakes.md)

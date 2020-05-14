@@ -10,10 +10,10 @@ manager: jillfra
 author: TerryGLee
 ms.author: tglee
 ms.openlocfilehash: 48c93cf8abeb573a3a75e6825a8400355c133f2b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597005"
 ---
 # <a name="f1-help"></a>F1 說明
@@ -24,7 +24,7 @@ ms.locfileid: "75597005"
 
 如果您在尋找鍵盤或 API 名稱的 F1 說明，在按下 **F1** 之前，請務必確認游標位在文字內或在文字的開頭。 如果仍然無效，請從[實用連結](#useful-links)清單中進行選取，或在 https://docs.microsoft.com 上執行搜尋。
 
-## <a name="useful-links"></a>實用連結
+## <a name="useful-links"></a>實用的連結
 
 - 在 [.NET API 瀏覽器](/dotnet/api/)上尋找參考文件。
 - 如需 C# 的說明，請參閱 [C# 指南](/dotnet/csharp/index)。

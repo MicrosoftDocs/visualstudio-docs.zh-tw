@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: e7f331536de264186bc2977cc4acaaab02147e13
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115227"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>在部署 Visual Studio 時自動套用產品金鑰
@@ -100,11 +100,11 @@ ms.locfileid: "76115227"
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 > [!NOTE]
-> 當您執行 Visual Studio 的虛擬實例時，請確定您也將本機 AppData 資料夾和登錄虛擬化。 若要針對虛擬實例進行疑難排解，請執行 `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`。  
+> 運行 Visual Studio 的虛擬實例時，請確保還要虛擬化本地 AppData 資料夾和註冊表。 要對虛擬實例進行故障排除，`C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`請使用 運行 。  
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-* [安裝 Visual Studio](../install/install-visual-studio.md)
-* [建立 Visual Studio 的離線安裝](../install/create-an-offline-installation-of-visual-studio.md)
+* [安裝視覺化工作室](../install/install-visual-studio.md)
+* [創建視覺化工作室的離線安裝](../install/create-an-offline-installation-of-visual-studio.md)

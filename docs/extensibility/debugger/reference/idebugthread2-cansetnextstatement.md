@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::CanSetNextStatement |Microsoft Docs
+title: IDebugThread2::可以設置下一個語句 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::CanSetNextStatement
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 111ace07edf163fa978a3c54628878af51cb7d02
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4232c25bfe9acd7f17c88c28aa4211a9c62175f8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320288"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718848"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
-判斷目前指令指標是否可以設定特定的堆疊框架。
+確定當前指令指標是否可以設置為給定的堆疊幀。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int CanSetNextStatement ( 
 
 ## <a name="parameters"></a>參數
 `pStackFrame`\
-保留供未來使用;設定為 null 的值。 如果這是 null 值時，使用目前的堆疊框架。
+保留供將來使用;設置為空值。 如果這是空值,請使用當前堆疊幀。
 
 `pCodeContext`\
-[in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)描述將要執行的程式碼位置的物件和其內容。
+[在][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件,用於描述即將執行的代碼位置及其上下文。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 如果這個方法會傳回`S_OK`，然後呼叫[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)實際設定下一個陳述式的方法。
+ 如果此方法返回`S_OK`,則調用[SetNext語句](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)方法以實際設置下一個語句。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

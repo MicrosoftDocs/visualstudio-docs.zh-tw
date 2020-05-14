@@ -1,44 +1,44 @@
 ---
-title: 程式 |Microsoft Docs
+title: 程式 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], programs
 - programs, debugging
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e70a970aad250a30e19fd27ac3a47732952b3bf1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d3fd1db5add74d2d94467e1f369916feb5f30d4a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351400"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738202"
 ---
 # <a name="programs"></a>Programs
-在偵錯工具架構中，*程式*:
+在除錯器架構結構中,*程式*:
 
-- 是一組執行緒和一組模組的容器。 程式已在 Windows 作業系統中有沒有單一的比喻。
+- 是一組線程和一組模組的容器。 程式在 Windows 作業系統中沒有單一類比。
 
-     程式是一種表示子處理序。 比方說，當您偵錯網站時，指令碼可視為程式。 雖然指令碼會執行指令碼引擎處理序中，獨立於其他指令碼，它也有它自己的執行緒集。 偵錯引擎 (DE) 附加至程式中，而不必處理程序或執行緒。
+     程式是一種子過程。 例如,在調試網站時,可以將腳本視為程式。 當腳本在腳本引擎進程中運行時,獨立於其他腳本,但它也有自己的一組線程。 除錯引擎 (DE) 附加到程式,而不是行程或線程。
 
-- 可以識別本身和它正在中執行的程序。 程式可以附加、 中斷連結，並說明建立 DE，如果有的話。 程式可以也執行、 停止、 繼續，並會終止。
+- 可以標識自身及其正在運行的進程。 可以附加到程式,與創建它的 DE(如果有)分離並描述該程式。 程式還可以執行、停止、繼續和終止。
 
-- 可以列舉其所有的執行緒。 程式也可以提供自己的反組譯碼資料流，並可以列舉的特定文件位置的所有程式碼內容。
+- 可以枚舉其所有線程。 程式還可以提供自己的拆解流,並可以枚舉給定文檔位置的所有代碼上下文。
 
-- 由[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)介面，建立的程式附加之前，或做為附加的處理序，視實作而定的一部分。 連接埠列舉處理序的程式，每個程式會建立符合對應[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)傳遞做為引數的介面[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)。 同時也建立偵錯引擎`IDebugProgram2`介面來代表程式，這些程式不會建立根據程式節點。 `IDebugProgramNode2`規定所建立的介面會用於實際偵錯時所建立的連接埠僅用於探索處理序中執行的程式。
+- 由[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)介面表示,在附加程式之前創建,或作為附加過程的一部分,具體取決於實現。 當埠枚舉行程的程式時,每個程式都按照作為[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)的參數傳遞給的相應[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面創建。 雖然調試引擎還會創建`IDebugProgram2`介面來表示程式,但這些程式不是根據程式節點創建的。 DE`IDebugProgramNode2`創建的介面用於實際除錯,而埠建立的介面僅用於發現進程中正在運行的程式。
 
 ## <a name="see-also"></a>另請參閱
-- [處理序](../../extensibility/debugger/processes.md)
+- [過程](../../extensibility/debugger/processes.md)
 - [程式節點](../../extensibility/debugger/program-nodes.md)
 - [模組](../../extensibility/debugger/modules.md)
-- [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)
+- [除錯器概念](../../extensibility/debugger/debugger-concepts.md)
 - [偵錯引擎](../../extensibility/debugger/debug-engine.md)
 - [文件位置](../../extensibility/debugger/document-position.md)
-- [程式碼內容](../../extensibility/debugger/code-context.md)
+- [代碼內容](../../extensibility/debugger/code-context.md)
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

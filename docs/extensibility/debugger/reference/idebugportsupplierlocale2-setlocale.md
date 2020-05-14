@@ -1,27 +1,27 @@
 ---
-title: IDebugPortSupplierLocale2::SetLocale | Microsoft Docs
+title: IDebugPort供應商當地語系化2::設置地位 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierLocale2::SetLocale
 ms.assetid: 21e88510-caac-405e-ba45-cb00e19a28bc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 72e662060067f455275465ce4ade7ed824936313
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f35e4f2732427045fac982454ce9f7290a6dc970
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353283"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724312"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
-設定連接埠提供者的地區設定。
+設置埠供應商的區域設置。
 
 ## <a name="syntax"></a>語法
 
@@ -39,10 +39,10 @@ int SetLocale(
 
 ## <a name="parameters"></a>參數
 `wLangID`\
-若要設定的地區設定識別碼。
+要設置區域設置的標識碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugPortSupplierLocale2](../../../extensibility/debugger/reference/idebugportsupplierlocale2.md)

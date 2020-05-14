@@ -1,5 +1,5 @@
 ---
-title: CommandPlacements 元素 |Microsoft Docs
+title: 命令放置元素 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 78a5724a-3b9f-4c78-9c0d-8faa3924f81c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb22359c936caacef81f4c9b81993a46d47ccc0b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a72b087652a654b563fd4e00bacc52290a29fe1c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341889"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739694"
 ---
-# <a name="commandplacements-element"></a>CommandPlacements 元素
-CommandPlacements 元素分組 CommandPlacement 元素和其他 CommandPlacements 分組。
+# <a name="commandplacements-element"></a>命令放置元素
+命令放置元素對命令放置元素和其他命令放置分組。
 
- CommandPlacements 元素是選擇性的。 如果任何命令、 群組或功能表必須包含在次要位置中，您就不必包含本節中的您 *.vsct*檔案。
+ 命令放置元素是可選的。 如果輔助位置中不得包含任何命令、組或功能表,則不必在 *.vsct*檔中包含此部分。
 
 ## <a name="syntax"></a>語法
 
@@ -41,20 +41,20 @@ CommandPlacements 元素分組 CommandPlacement 元素和其他 CommandPlacement
 
 |屬性|描述|
 |---------------|-----------------|
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|條件|選擇性。 請參考[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|CommandPlacements|群組 CommandPlacement 元素，而且其他 CommandPlacements 分組。|
-|[CommandPlacement 元素](../extensibility/commandplacement-element.md)|可讓按鈕、 群組和包含在一個以上的群組或功能表的功能表。|
+|命令放置|對命令放置元素和其他命令放置分組。|
+|[命令放置元素](../extensibility/commandplacement-element.md)|使按鈕、組和功能表包含在多個組或功能表中。|
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|描述|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表命令的所有項目。|
+|[指令表元素](../extensibility/commandtable-element.md)|定義表示命令的所有元素。|
 
 ## <a name="example"></a>範例
 
@@ -68,5 +68,5 @@ CommandPlacements 元素分組 CommandPlacement 元素和其他 CommandPlacement
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [CommandPlacement 元素](../extensibility/commandplacement-element.md)
-- [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [命令放置元素](../extensibility/commandplacement-element.md)
+- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

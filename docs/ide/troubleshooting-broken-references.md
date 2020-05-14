@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5116d2487ca9f53c460e1cae8f362f3ff1bcdf8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565912"
 ---
 # <a name="troubleshoot-broken-references"></a>針對中斷參考進行疑難排解
@@ -43,22 +43,22 @@ ms.locfileid: "75565912"
 
 如果在不同的電腦上共用專案，則當元件位於每部電腦的不同目錄時，可能會找不到某些參考。 參考會儲存在元件檔名稱 (例如 *MyComponent*) 之下。 將參考新增至專案時，會將元件檔的資料夾位置 (例如*C:\MyComponents*) 附加至 **ReferencePath** 專案屬性。
 
-當專案開啟時，它會藉由尋找參考路徑中的目錄，嘗試找出這些參考的元件檔。 如果用來開啟專案的電腦將元件儲存在不同的目錄 (例如 *D:\MyComponents*)，則找不到參考且 [工作清單] 中會出現錯誤。
+當專案開啟時，它會藉由尋找參考路徑中的目錄，嘗試找出這些參考的元件檔。 如果用來開啟專案的電腦將元件儲存在不同的目錄 (例如 *D:\MyComponents*)，則找不到參考且 [工作清單]**** 中會出現錯誤。
 
-若要修正這個問題，您可以刪除中斷的參考，然後使用 [加入參考] 對話方塊將它取代。 另一個解決方法是使用專案屬性頁中的 [參考路徑] 項目，然後修改清單中的資料夾以指向正確的位置。 每部電腦上每位使用者的 [參考路徑] 屬性都會保留。 因此，修改您的參考路徑並不會影響專案的其他使用者。
+若要修正這個問題，您可以刪除中斷的參考，然後使用 [加入參考]**** 對話方塊將它取代。 另一個解決方法是使用專案屬性頁中的 [參考路徑]**** 項目，然後修改清單中的資料夾以指向正確的位置。 每部電腦上每位使用者的 [參考路徑]**** 屬性都會保留。 因此，修改您的參考路徑並不會影響專案的其他使用者。
 
 > [!TIP]
 > 專案對專案參考沒有這些問題。 因此，請盡可能以此取代檔案參考。
 
 ### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>藉由修正參考路徑來修復中斷的專案參考
 
-1. 在方案總管中，以滑鼠右鍵按一下您的專案節點，然後按一下 [屬性]。
+1. 在方案總管**** 中，以滑鼠右鍵按一下您的專案節點，然後按一下 [屬性]****。
 
-   [專案設計工具] 隨即出現。
+   將顯示**專案設計器**。
 
-1. 如果使用 Visual Basic，請選取 [參考] 頁面，然後按一下 [參考路徑] 按鈕。 在 [參考路徑] 對話方塊的 [資料夾] 欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾] 按鈕。
+1. 如果使用 Visual Basic，請選取 [參考]**** 頁面，然後按一下 [參考路徑]**** 按鈕。 在 [參考路徑]**** 對話方塊的 [資料夾]**** 欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾]**** 按鈕。
 
-    如果使用 C#，請選取 [參考路徑] 頁面。 在 [資料夾] 欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾] 按鈕。
+    如果使用 C#，請選取 [參考路徑]**** 頁面。 在 [資料夾]**** 欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾]**** 按鈕。
 
 ## <a name="referenced-file-has-been-deleted"></a>參考的檔案已被刪除
 
@@ -86,8 +86,8 @@ ms.locfileid: "75565912"
 
 ## <a name="com-component-is-not-installed-on-computer"></a>COM 元件未安裝在電腦上
 
-如果一位使用者加入了 COM 元件的參考，而第二位使用者嘗試在未安裝此元件的電腦上執行程式碼，則第二位使用者將收到參考中斷的錯誤。 在第二部電腦上安裝元件將會修正此錯誤。 如需如何在您的專案中使用 COM 元件參考的詳細資訊，請參閱 [.NET Framework 應用程式中的 COM 互通性](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)。
+如果一位使用者加入了 COM 元件的參考，而第二位使用者嘗試在未安裝此元件的電腦上執行程式碼，則第二位使用者將收到參考中斷的錯誤。 在第二部電腦上安裝元件將會修正此錯誤。 有關如何在專案中使用對 COM 元件的引用的詳細資訊，請參閱[.NET 框架應用程式中的 COM 互通性](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [專案設計工具，參考頁 (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)

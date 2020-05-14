@@ -1,5 +1,5 @@
 ---
-title: SccGetExtendedCapabilities 函式 |Microsoft Docs
+title: SccGet 擴充功能 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetExtendedCapabilities function
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa6a067a0b9e8358f503228dbc53e20586b84468
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5247f2de7ffc63db7235f915c72b3274b8fee5f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353659"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700728"
 ---
-# <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 函式
-此函數會傳回原始檔控制外掛程式所支援的其他功能。
+# <a name="sccgetextendedcapabilities-function"></a>SccGet 擴充功能功能
+此功能返回原始程式碼管理外掛程式支援的其他功能。
 
 ## <a name="syntax"></a>語法
 
@@ -35,28 +35,28 @@ SCCRTN SccGetExtendedCapabilities(
 ### <a name="parameters"></a>參數
  pContext
 
-[in]原始檔控制外掛程式的內容指標。
+[在]源代碼管理外掛程式上下文指標。
 
  lSccExCaps
 
-[in]旗標，指定用來測試擴充的功能 (請參閱中的擴充功能程式碼表格[功能旗標](../extensibility/capability-flags.md)可能的旗標)。
+[在]指定要測試的擴展功能的標誌(請參閱["功能"標誌](../extensibility/capability-flags.md)中的擴展功能代碼表,瞭解可能的標誌)。
 
- pbSupported
+ pb 支援
 
-[out]會傳回非零 (`TRUE`) 是否支援指定的功能; 否則會傳回零 (`FALSE`)。
+[出]如果支援指定的功能,`TRUE`則傳回非零 ( ),否則,返回零`FALSE`()。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函數的源碼管理外掛程式實現應返回以下值之一:
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|取得功能作業已順利完成。|
+|SCC_OK|獲取功能操作已成功完成。|
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|發生未知或未指定的錯誤。|
 
 ## <a name="remarks"></a>備註
- 視情況下，會呼叫這個方法也就是當一項功能需要進行測試時，呼叫這個方法是以判斷是否支援功能。 指定一次只能有一個旗標。
+ 此方法是按需調用的;也就是說,當需要測試功能時,將調用此方法以確定該功能是否受支援。 一次只指定一個標誌。
 
 ## <a name="see-also"></a>另請參閱
-- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+- [原始程式碼管理外掛程式 API 功能](../extensibility/source-control-plug-in-api-functions.md)
 - [錯誤碼](../extensibility/error-codes.md)
 - [功能旗標](../extensibility/capability-flags.md)

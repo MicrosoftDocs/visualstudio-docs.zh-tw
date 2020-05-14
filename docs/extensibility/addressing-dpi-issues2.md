@@ -1,57 +1,57 @@
 ---
-title: 定址 DPI Issues2 |Microsoft Docs
+title: 解決 DPI 問題2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2b440ff34a5c1f2c60b8874ba56266b636afde3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 80f16c5b17a41d1f95b9bcb70e90eb8de46ad69d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352256"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740101"
 ---
-# <a name="address-dpi-issues"></a>處理 DPI 問題
-越來越多的裝置都隨附 「 高解析度 」 畫面。 這些畫面通常會有超過 200 個像素為單位，每英吋 (ppi)。 使用這些電腦上的應用程式需要相應增加以符合檢視裝置的一般檢視距離內容需求的內容。 自 2014年起，高密度顯示的主要目標是行動運算裝置 （平板電腦、 蛤殼膝上型電腦和手機）。
+# <a name="address-dpi-issues"></a>解決 DPI 問題
+越來越多的設備使用"高解析度"屏幕發貨。 這些螢幕通常每英寸 (ppi) 超過 200 圖元。 使用這些電腦上的應用程式需要放大內容,以滿足在設備正常查看距離下查看內容的需求。 截至 2014 年,高密度顯示器的主要目標是行動計算裝置(平板電腦、翻蓋筆記型電腦和手機)。
 
-Windows 8.1 和更新版本包含數個功能，讓這些機器能夠使用的顯示和及環境中將機器附加至同時適用之高密度標準密度會顯示在相同的時間。
+Windows 8.1 及更高版本包含多個功能,使這些計算機能夠同時處理顯示器和計算機同時連接到高密度和標準密度顯示器的環境。
 
-- Windows 可以讓您將內容調整成使用 「 讓文字和其他項目放大或縮小 」 的裝置設定 （可自 Windows XP）。
+- Windows 允許您使用"使文本和其他項目變大或更小"設置(自 Windows XP 以來可用)將內容縮放到設備。
 
-- Windows 8.1 和更新版本會自動將內容調整對於大部分的應用程式一致的不同像素密度的顯示器之間移動時。 Windows 上的次要顯示器，當主要的顯示是高密度 （200%調整），而且次要顯示標準密度 （100%) 時，自動相應減少應用程式視窗內容 (針對每個所呈現的 4 個像素顯示的 1 個像素應用程式）。
+- Windows 8.1 和更高版本將自動縮放大多數應用程式的內容,在圖元密度不同的顯示之間移動時,內容將保持一致。 當主顯示器為高密度(200% 縮放),而輔助顯示器為標準密度(100%),Windows 將自動在輔助顯示器上向下縮放應用程式視窗內容(應用程式渲染的每 4 個像素顯示 1 個畫素)。
 
-- Windows 會預設為像素密度的比例，以及檢視顯示 (Windows 7 及更新版本，OEM 可設定) 的距離的權限。
+- Windows 將預設為顯示的圖元密度和查看距離(Windows 7 及更高版本,OEM 可配置)的右縮放。
 
-- 在超過 280 ppi （從 Windows 8.1 S14) 的新裝置上 Windows 可以自動調整設定為 250%內容。
+- Windows 可以在超過 280 ppi 的新設備上自動縮放內容高達 250%(截至 Windows 8.1 S14)。
 
-  Windows 具有處理向上調整 UI 的方式，利用增加的像素計數。 應用程式選擇加入此系統本身宣告為 「 系統 DPI 感知 」。 請不要這樣的應用程式系統相應增加。 這會導致整個應用程式是一致的像素延伸了 「 模糊 」 的使用者體驗。 例如: 
+  Windows 有一種處理向上擴展 UI 的方法,以利用增加的圖元計數。 應用程式通過聲明自身為"系統 DPI 感知"來加入加入此系統。 不這樣做的應用程式將由系統放大。 這可能導致"模糊"用戶體驗,其中整個應用程式均勻地拉伸圖元。 例如：
 
-  ![DPI 問題模糊](../extensibility/media/dpi-issues-fuzzy.png "DPI 問題模糊")
+  ![DPI 模糊問題](../extensibility/media/dpi-issues-fuzzy.png "DPI 模糊問題")
 
-  Visual Studio 中選擇要 DPI 縮放比例感知，並因此未 「 虛擬化。 」
+  Visual Studio 選擇成為 DPI 縮放感知,因此不是「虛擬化」。。
 
-  Windows （和 Visual Studio） 運用數種不同方式處理縮放係數由系統設定的 UI 技術。 例如: 
+  Windows(和 Visual Studio)利用多種 UI 技術,這些技術在處理系統設置的縮放因素時有不同的處理方式。 例如：
 
-- WPF 會測量控制項，以與裝置無關的方式 （單位，不像素為單位）。 WPF UI 會自動調整為目前的 DPI。
+- WPF 以獨立於設備的方式測量控件(單位,而不是圖元)。 WPF UI 會自動擴展當前 DPI。
 
-- 不論 UI 架構的所有文字大小以點表示，因此會被系統 DPI 獨立。 Win32、 WinForms 和 WPF 中的文字已相應增加正確繪製至顯示裝置時。
+- 所有文本大小,無論 UI 框架如何,都以點表示,因此系統將文本大小視為獨立於 DPI 的。 Win32、WinForms 和 WPF 中的文本在繪製到顯示設備時已正確放大。
 
-- Win32/WinForms 對話方塊和視窗有啟用文字 （例如，透過方格、 流程和表格版面配置面板） 調整大小的版面配置的方式。 這些可讓避免字型的大小會增加時不會進行縮放的硬式編碼的像素位置。
+- Win32/WinForms 對話框和視窗具有啟用使用文本調整大小的佈局(例如,通過網格、流和錶佈局面板)的佈局的方法。 這些功能可避免在字體大小增加時未縮放的硬編碼圖元位置。
 
-- 系統所提供的圖示或系統計量 （例如 SM_CXICON 和 SM_CXSMICON） 為基礎的資源已相應增加。
+- 系統或資源基於系統指標(例如,SM_CXICON和SM_CXSMICON)提供的圖示已放大。
 
-## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>較舊的 Win32 GDI (GDI +） 和 WinForms 為基礎的 UI
-在 WPF 高 DPI 感知，Win32/GDI 式程式碼大多不原始寫入的記住 DPI 感知。 Windows 提供的 DPI 縮放比例的 Api。 Win32 問題的修正程式應該使用這些在產品內以一致的方式。 Visual Studio 提供的協助程式類別庫，以避免複製功能，並確保在產品內的一致性。
+## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>較舊的 Win32(GDI、GDI+)和基於 WinForms 的 UI
+雖然 WPF 已經對 DPI 感知很高,但我們大部分基於 Win32/GDI 的代碼最初並不是在考慮到 DPI 意識的情況下編寫的。 Windows 提供了 DPI 縮放 API。 Win32 問題的修復應在整個產品中一致地使用這些問題。 Visual Studio 提供了一個幫助器類庫,以避免複製功能並確保整個產品的一致性。
 
-## <a name="high-resolution-images"></a>高解析度的映像
-本節主要是供開發人員延伸 Visual Studio 2013。 Visual Studio 2015 中，使用內建於 Visual Studio 映像服務。 您可能也會發現您需要支援/目標的 Visual Studio 的許多版本，因此使用 2015年中的 映像服務不是選項因為不存在於舊版。 本章節也是您然後。
+## <a name="high-resolution-images"></a>高解析度影像
+本節主要面向擴展 Visual Studio 2013 的開發人員。 對於 Visual Studio 2015,請使用內建於視覺工作室的圖像服務。 您可能還會發現,您需要支援/定位 Visual Studio 的許多版本,因此在 2015 年使用影像服務不是一個選項,因為它在以前的版本中並不存在。 本部分也適合您。
 
-## <a name="scaling-up-images-that-are-too-small"></a>相應增加太小的映像
-太小的映像可以相應增加，並呈現 GDI 和 WPF 使用的一些常見方法。 受管理的 DPI 協助程式類別可用於內部和外部的 Visual Studio 整合人員在調整圖示、 點陣圖、 imagestrips 和 imagelists 的位址。 Win32 原生 C / C + + 的協助程式可供調整 HICON、 HBITMAP、 HIMAGELIST 和 VsUI::GdiplusImage。 縮放點陣圖的比例通常只需要一行變更之後包含協助程式程式庫的參考。 例如：
+## <a name="scaling-up-images-that-are-too-small"></a>放大太小的影像
+使用一些常用方法,可以在 GDI 和 WPF 上放大和渲染太小的圖像。 託管 DPI 協助器類別可供內部和外部 Visual Studio 整合商使用,用於解決縮放圖示、點陣圖、圖像繪製和影像清單。 基於 Win32 的本機 C/C++幫助器可用於縮放 HICON、HBITMAP、HIMAGELIST 和 VsUI:GdiplusImage。 位圖的縮放通常只需要在包含對幫助器庫的引用後進行單行更改。 例如：
 
 ```cpp
 (Unmanaged) VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
@@ -61,51 +61,51 @@ Windows 8.1 和更新版本包含數個功能，讓這些機器能夠使用的�
 (WinForms) DpiHelper.LogicalToDeviceUnits(ref image);
 ```
 
-調整映象清單取決於 imagelist 是否在載入期間，已完成，或附加在執行階段。 如果是完成在載入時，呼叫`LogicalToDeviceUnits()`與您 imagelist 會點陣圖。 當程式碼需要之前撰寫的 imagelist 載入個別的點陣圖時，請務必調整影像大小的 imagelist 項目：
+縮放影像清單取決於映射清單是在載入時完成,還是在運行時追加。 如果在載入時完成,請像`LogicalToDeviceUnits()`使用位圖一樣調用圖像清單。 當代碼在撰寫影像清單之前需要載入單個點陣圖時,請確保縮放影像清單的影像大小:
 
 ```csharp
 imagelist.ImageSize = DpiHelper.LogicalToDeviceUnits(imagelist.ImageSize);
 ```
 
-在原生程式碼中，維度可以調整，如下所示建立 imagelist 時：
+在本機代碼中,建立影像清單時可以縮放維度,如下所示:
 
 ```cpp
 ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::LogicalToDeviceUnitsY(16), ILC_COLOR32|ILC_MASK, nCount, 1);
 ```
 
-文件庫中的函式允許指定的調整大小的演算法。 當調整映像放入 imagelists，請務必指定用於透明度的背景色彩，或使用 NearestNeighbor 縮放比例 （這會導致在 125%和 150%的扭曲）。
+庫中的函數允許指定大小調整演演演算法。 縮放要放置在圖像清單中的圖像時,請確保指定用於透明度的背景顏色,或使用「最近鄰居」縮放(這將導致 125% 和 150% 的扭曲)。
 
-請參閱<xref:Microsoft.VisualStudio.PlatformUI.DpiHelper>MSDN 上的文件。
+請參閱<xref:Microsoft.VisualStudio.PlatformUI.DpiHelper>MSDN 上的文檔。
 
-下表顯示範例的影像應該如何縮放以相對應的 DPI 縮放係數。 橘色中簡述的映像表示自 （100-200%的 DPI 縮放比例） 的 Visual Studio 2013 起我們最佳做法：
+下表顯示了如何在相應的 DPI 縮放因數下縮放圖像的範例。 橙色中概述的圖像表示我們截至 Visual Studio 2013 的最佳實踐(100%-200% DPI 縮放):
 
 ![DPI 縮放問題](../extensibility/media/dpi-issues-scaling.png "DPI 縮放問題")
 
-## <a name="layout-issues"></a>版面配置問題
-您可以避免常見的版面配置問題，主要是由相應的 UI 中，而另一個是相對於保留點，而不是使用絕對位置 （具體而言，單位為像素）。 例如: 
+## <a name="layout-issues"></a>配置問題
+常見的佈局問題主要通過在 UI 中縮放和相對於彼此而不是使用絕對位置(特別是以像素單位為單位)來避免。 例如：
 
-- 版面配置] / [文字位置需要調整相應增加映像的帳戶。
+- 佈局/文本位置需要調整,以考慮放大的圖像。
 
-- 在方格中的資料行必須能夠調整相應增加文字的寬度。
+- 網格中的列需要調整縮放文本的寬度。
 
-- 硬式編碼的大小或項目之間的空間也會需要相應增加。 因為字型自動相應增加，是通常沒問題，只根據文字維度的大小。
+- 還需要放大元素之間的硬編碼大小或空間。 僅基於文本尺寸的大小通常正常,因為字體會自動縮小。
 
-  Helper 函式可用於<xref:Microsoft.VisualStudio.PlatformUI.DpiHelper>若要允許縮放 X 和 Y 軸上的類別：
+  <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper>說明器函數在類中可用,允許在 X 軸和 Y 軸上縮放:
 
-- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (函式允許調整 X / Y 軸)
+- 邏輯到裝置單位X/邏輯到裝置單元Y(功能允許在 X/Y 軸上縮放)
 
-- int space = DpiHelper.LogicalToDeviceUnitsX (10);
+- 內空間 = DpiHelper.邏輯到設備單元X (10);
 
-- int height = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);
+- int 高度 = VsUI::DpiHelper::邏輯到設備單元(5);
 
-  有 LogicalToDeviceUnits 多載，若要允許縮放物件，例如矩形、 點和大小。
+  有邏輯到設備單元重載,允許縮放物件,如 Rect、點和大小。
 
-## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>使用 「 DPIHelper 程式庫/類別縮放影像和版面配置
-Visual Studio DPI 協助程式程式庫提供原生和 managed 表單，並可供外部使用 Visual Studio shell 的其他應用程式。
+## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>使用 DPIHelper 函式庫/類別縮放影像和佈局
+Visual Studio DPI 幫助器庫以本機和託管形式提供,其他應用程式可以在 Visual Studio 外殼之外使用。
 
-若要使用的程式庫，請前往[Visual Studio VSSDK 擴充性範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)並複製高 DPI_Images_Icons 範例。
+要使用庫,請造訪 Visual [Studio VSSDK 擴充性範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)並克隆高DPI_Images_Icons示例。
 
-原始程式檔中包含*VsUIDpiHelper.h*呼叫的靜態函式和`VsUI::DpiHelper`類別：
+在來源檔案中,包括*VsUIDpiHelper.h*並呼叫`VsUI::DpiHelper`類的 靜態函數:
 
 ```cpp
 #include "VsUIDpiHelper.h"
@@ -116,19 +116,19 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```
 
 > [!NOTE]
-> 請勿在模組層級或類別層級的靜態變數使用 helper 函式。 程式庫也會使用靜態執行緒同步處理，您可能會遇到的問題順序初始化。 請將這些靜態變數轉換成非靜態成員變數，或將包裝函式，因此它們取得建構在第一次存取上）。
+> 請勿在模組級或類級靜態變數中使用説明器函數。 庫還使用靜態進行線程同步,並且可能會遇到訂單初始化問題。 將這些靜態變數轉換為非靜態成員變數,或將它們包裝成一個函數(因此,它們在第一次訪問時構造)。
 
-若要從 Visual Studio 環境內執行的 managed 程式碼存取 DPI helper 函式：
+要從從 Visual Studio 環境執行的託管代碼存取 DPI 說明器函數,請執行以下服務:
 
-- 取用專案必須參考殼層 MPF 的最新版本。 例如: 
+- 使用項目必須引用最新版本的殼牌 MPF。 例如：
 
     ```csharp
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />
     ```
 
-- 請確定專案具有參考**System.Windows.Forms**， **PresentationCore**，並**PresentationUI**。
+- 確保專案具有對**System.Windows.窗體**、**演示文稿核心**和演示文稿**UI**的引用。
 
-- 在程式碼，使用**Microsoft.VisualStudio.PlatformUI** DpiHelper 類別的命名空間和呼叫靜態函式。 支援的類型 （點、 大小、 矩形和等等），都有提供擴充程式函式會傳回新的擴充物件。 例如: 
+- 在代碼中,使用**Microsoft.VisualStudio.PlatformUI**命名空間,並調用 DpiHelper 類的靜態函數。 對於受支援的類型(點、大小、矩形等),提供了返回新縮放物件的擴展函數。 例如：
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;
@@ -138,20 +138,20 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 
     ```
 
-## <a name="dealing-with-wpf-image-fuzziness-in-zoomable-ui"></a>使用 WPF 對 UI 中的映像模糊不清的處理
-在 WPF 中，點陣圖會自動調整大小的 WPF 目前使用高品質的雙立方演算法 （預設值），這非常適用於圖片或大型的螢幕擷取畫面，但因為它會導致模糊不清察覺到不是適當的功能表項目圖示的 DPI 縮放層級.
+## <a name="dealing-with-wpf-image-fuzziness-in-zoomable-ui"></a>處理可縮放 UI 中的 WPF 影像模糊性
+在 WPF 中,位圖由 WPF 自動調整當前 DPI 縮放級別的大小,使用高品質的雙立方演演演算法(預設),該演演演算法適用於圖片或大型螢幕截圖,但不適合功能表本圖示,因為它引入了感知的模糊性。
 
 建議：
 
-- 標誌影像及橫幅插圖，預設值為<xref:System.Windows.Media.BitmapScalingMode>無法使用調整大小模式。
+- 對於徽標圖像和橫幅圖稿,可以使用<xref:System.Windows.Media.BitmapScalingMode>默認調整大小模式。
 
-- 功能表項目和遙控器映像，<xref:System.Windows.Media.BitmapScalingMode>它不會造成其他扭曲成品，以避免模糊不清 （在 200%到 300%） 時，應使用。
+- 對選單項目與圖示影像,<xref:System.Windows.Media.BitmapScalingMode>當它不會導致其他失真偽影消除模糊性(200% 和 300%)時,應使用 。
 
-- 大型的縮放層級不是 100%（比方說，250%或 350%） 的倍數，調整具有雙立方的遙控器映像會導致模糊、 刷淡的 UI。 透過第一個調整 NearestNeighbor 至 100%（例如，200%或 300%） 的最大的多個映像可取得更佳的結果並從該處的雙立方使用自動調整規模。 請參閱 < 特殊案例︰ 適用於大型的 DPI prescaling WPF 映像的詳細資訊層級。
+- 對於大型變焦級別,不要出現 100% 的倍數(例如,250% 或 350%),使用雙立方縮放圖標圖像會導致模糊、沖刷的 UI。 首先將離鄰將影像縮放到最大倍數 100%(例如,200% 或 300%)時,可以獲得更好的結果並從那裡用雙立方進行縮放。 有關詳細資訊,請參閱特殊情況:針對大型 DPI 級別的預縮放 WPF 映射。
 
-  DpiHelper Microsoft.VisualStudio.PlatformUI 命名空間中的類別提供成員<xref:System.Windows.Media.BitmapScalingMode>，可用來繫結。 它可讓 Visual Studio shell 來控制的 DPI 縮放比例根據一致的方式，調整模式在產品內的點陣圖。
+  Microsoft.VisualStudio.PlatformUI 命名空間中的 DpiHelper 類<xref:System.Windows.Media.BitmapScalingMode>提供了可用於 綁定的成員。 它將允許 Visual Studio 外殼根據 DPI 縮放因數統一控制整個產品的位圖縮放模式。
 
-  若要使用它在 XAML 中，加入：
+  要在 XAML 中使用它,添加:
 
 ```xaml
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
@@ -160,22 +160,22 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 
 ```
 
-Visual Studio shell 已經設定這個屬性，在最上層視窗和對話方塊。 WPF 為基礎的 UI，在 Visual Studio 中執行已繼承它。 如果設定不會傳播至 UI 的特定棋子，它可以在 XAML/WPF UI 的根項目上設定。 其中發生這種情況的地方包含 Win32 父系的項目在快顯視窗，例如 Blend 設計工具的 windows 執行的處理。
+Visual Studio 外殼已在頂級視窗和對話框上設置此屬性。 在可視化工作室中運行的基於 WPF 的 UI 將繼承它。 如果該設置未傳播到特定 UI 部分,則可以在 XAML/WPF UI 的根元素上設置該設置。 發生這種情況的地方包括彈出視窗、具有 Win32 父元素的元素以及進程用完的設計師視窗(如 Blend)。
 
-某些 UI 可以調整獨立的系統設定 DPI 縮放層級，例如 Visual Studio 文字編輯器和 WPF 架構設計人員 （WPF 桌面和 Windows 市集）。 在這些情況下，不應該使用 DpiHelper.BitmapScalingMode。 若要修正此問題在編輯器中，IDE 小組建立自訂的屬性標題為 RenderOptions.BitmapScalingMode。 將該屬性值設 HighQuality 或 NearestNeighbor 根據合併的縮放層級系統與您的 UI。
+某些 UI 可以獨立於系統設定的 DPI 縮放等級進行縮放,例如可視化工作室文本編輯器和基於 WPF 的設計器(WPF 桌面和 Windows 應用商店)。 在這些情況下,不應使用 DpiHelper.位映射縮放模式。 為了在編輯器中解決此問題,IDE 團隊創建了一個自定義屬性,名為"呈現選項.BitmapScalingMode"。 根據系統和 UI 的組合縮放級別,將該屬性值設置為"高品質" 或「 最近鄰居」。
 
-## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>特殊案例： prescaling 大型 DPI 層級的 WPF 映像
-不是 100%（比方說，250%，350%等等） 的倍數的非常大型的縮放層級，縮放比例模糊、 刷淡的 UI 中的雙立方結果遙控器映像。 這些映像，務求文字旁的印象，幾乎就像光學視覺效果的。 映像似乎較近的眼睛及移出相對於文字的焦點。 在此放的大小調整的結果便可改善第一次調整 NearestNeighbor 至 100%（例如，200%或 300%） 的最大的多個映像與雙立方至其餘部分 （額外的 50%) 與縮放比例。
+## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>特殊情況:針對大型 DPI 等級的預縮放 WPF 映射
+對於不是 100% 的倍數(例如,250%、350% 等)的非常大的縮放級別,使用雙立方縮放圖示圖像會導致模糊、衝出 UI。 這些圖像與清晰文本的印象幾乎類似於一個光學錯覺。 圖像似乎更接近眼睛,與文本無關。 以首先將「最近鄰居」的影像縮放到最大倍數 100%(例如 200% 或 300%),可以改進此放大大小的縮放結果用雙立方縮放到其餘部分(額外 50%)。
 
-以下是範例中的差異，在結果中，第一個影像會縮放，以改善雙精度浮點數調整的演算法 100%]-> [200%-> 250%與第二個只是使用雙立方 100%]-> [250%。
+下面是結果差異的示例,其中第一個圖像使用改進的雙縮放演演演算法 100%->200%->250%進行縮放,第二個圖像僅以雙立方 100%->250% 進行縮放。
 
-![DPI 問題 Double 縮放的範例](../extensibility/media/dpi-issues-double-scaling-example.png "DPI 問題 Double 縮放的範例")
+![DPI 發出雙重縮放範例](../extensibility/media/dpi-issues-double-scaling-example.png "DPI 發出雙重縮放範例")
 
-若要讓 UI，以用於這個雙精度浮點數調整，XAML 標記，顯示每個影像項目將會需要修改。 下列範例示範如何使用 使用 DpiHelper 程式庫和 Shell.12/14 的 Visual Studio 中的 在 WPF 中調整雙精度浮點數。
+為了使 UI 能夠使用此雙縮放,需要修改用於顯示每個圖像元素的 XAML 標記。 以下示例演示如何在 Visual Studio 中使用 DpiHelper 庫和 Shell.12/14 在 WPF 中使用雙縮放。
 
-步驟 1：Prescale 200%、 300%，並使用 NearestNeighbor 等等的映像。
+步驟 1:使用「最近鄰居」將圖像預縮放為 200%、300%,等等。
 
-Prescale 使用任一個套用的繫結，或使用 XAML 標記延伸的轉換子的映像。 例如: 
+使用應用於綁定的轉換器或使用 XAML 標記擴展對圖像進行預縮放。 例如：
 
 ```xaml
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />
@@ -186,7 +186,7 @@ Prescale 使用任一個套用的繫結，或使用 XAML 標記延伸的轉換�
 
 ```
 
-如果映像也需要設定佈景主題 （最，如果不是全部，應該如此），標記就可以使用不同的轉換程式第一次執行的映像，然後預先調整的佈景主題。 標記可以使用任何一種<xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageConverter>或<xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageSourceConverter>，取決於所需的轉換輸出。
+如果圖像也需要主題(大多數(如果不是全部)應該),標記可以使用不同的轉換器,首先對圖像進行主題化,然後預縮放。 標記可以使用<xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageConverter><xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageSourceConverter>或 ,具體取決於所需的轉換輸出。
 
 ```xaml
 <vsui:DpiPrescaleThemedImageSourceConverter x:Key="DpiPrescaleThemedImageSourceConverter" />
@@ -203,17 +203,17 @@ Prescale 使用任一個套用的繫結，或使用 XAML 標記延伸的轉換�
 </Image>
 ```
 
-步驟 2：請確定最終的大小是正確的目前 DPI。
+步驟 2:確保當前 DPI 的最終大小正確。
 
-因為 WPF 會針對目前使用 BitmapScalingMode 屬性集的 UIElement 上的 DPI 縮放 UI，使用 prescaled 映像，因為其來源會尋找兩個或三倍大比影像控制項應該。 以下是幾種方式來應付這種效果：
+由於 WPF 將使用在 UIElement 上設置的 BitmapScalingMode 屬性縮放當前 DPI 的 UI,因此使用預縮放影像作為其源的圖像控制項看起來將比它應該放大兩到三倍。 以下是對抗此效果的幾種方法:
 
-- 如果您知道原始的映像，在 100%的維度，您可以指定確切的大小的影像控制項。 這些大小將會反映在套用之前調整 UI 的大小。
+- 如果知道原始圖像的尺寸為 100%,則可以指定圖像控制項的確切大小。 在應用縮放之前,這些大小將反映 UI 的大小。
 
     ```xaml
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />
     ```
 
-- 如果不知道原始映像的大小，LayoutTransform 可用來相應減少為最終的映像物件。 例如: 
+- 如果不知道原始圖像的大小,可以使用 LayoutTransform 來縮小最終圖像物件。 例如：
 
     ```xaml
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >
@@ -225,10 +225,10 @@ Prescale 使用任一個套用的繫結，或使用 XAML 標記延伸的轉換�
     </Image>
     ```
 
-## <a name="enabling-hdpi-support-to-the-weboc"></a>啟用以 WebOC 的 HDPI 支援
-根據預設，HDPI 偵測和支援功能，請勿啟用 WebOC 控制項 （例如在 WPF 中或 IWebBrowser2 介面 WebBrowser 控制項）。 結果會是內嵌的控制項與太小而高解析度的顯示器上顯示內容。 以下說明如何啟用特定 web WebOC 執行個體的高 DPI 支援。
+## <a name="enabling-hdpi-support-to-the-weboc"></a>支援 WebOC
+默認情況下,WebOC 控件(如 WPF 中的 Web 瀏覽器控制件或 IWebBrowser2 介面)不啟用 HDPI 檢測和支援。 結果將是一個嵌入式控制項,其顯示內容在高解析度顯示幕上太小。 下面介紹如何在特定的 Web WebOC 實例中啟用高 DPI 支援。
 
-實作 IDocHostUIHandler 介面 (請參閱 MSDN 文章[IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85)):
+實作 IDocHostUIHandler 介面(請參閱[IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85))上的 MSDN 文章:
 
 ```idl
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),
@@ -307,7 +307,7 @@ public interface IDocHostUIHandler
     }
 ```
 
-（選擇性） 實作 ICustomDoc 介面 (請參閱 MSDN 文章[ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85)):
+或者,實現 ICustomDoc 介面(請參閱[ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85))上的 MSDN 文章:
 
 ```idl
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),
@@ -318,7 +318,7 @@ public interface ICustomDoc
 }
 ```
 
-建立關聯之類別的實作 IDocHostUIHandler WebOC 的文件。 如果您實作上述 ICustomDoc 介面，然後只要 WebOC 的文件屬性是有效的將它轉換成 ICustomDoc 並呼叫 SetUIHandler; 方法，傳遞可實作 IDocHostUIHandler 類別而變更。
+將實現 IDocHostUIHandler 的類與 WebOC 的文件相關聯。 如果上述實現 ICustomDoc 介面,則一旦 WebOC 的文件屬性有效,將其轉換為 ICustomDoc 並調用 SetUIHandler 方法,傳遞實現 IDocHostUIHandler 的類。
 
 ```csharp
 // "this" references that class that owns the WebOC control and in this case also implements the IDocHostUIHandler interface
@@ -327,7 +327,7 @@ customDoc.SetUIHandler(this);
 
 ```
 
-如果您未實作 ICustomDoc 介面，則只要 WebOC 的文件屬性是有效的您必須將它轉換成 IOleObject，並呼叫`SetClientSite`方法並傳入實作 IDocHostUIHandler 的類別。 設定傳遞至 DOCHOSTUIINFO DOCHOSTUIFLAG_DPI_AWARE 旗標`GetHostInfo`方法呼叫：
+如果您沒有實現 ICustomDoc 介面,則一旦 WebOC 的文件屬性有效,則需要將其強制轉換為 IOleObject,並調用`SetClientSite`該方法,傳入實現 IDocHostUIHandler 的類。 在傳遞給`GetHostInfo`方法呼叫的 DOCHOSTUIINFO 上設定DOCHOSTUIFLAG_DPI_AWARE標誌:
 
 ```csharp
 public int GetHostInfo(DOCHOSTUIINFO info)
@@ -340,13 +340,13 @@ public int GetHostInfo(DOCHOSTUIINFO info)
 }
 ```
 
-這應該是所有您需要取得 WebOC 控制項支援 HPDI。
+這應該是獲得 WebOC 控制以支援 HPDI 所需的全部功能。
 
-## <a name="tips"></a>秘訣
+## <a name="tips"></a>提示
 
-1. 如果 WebOC 控制項上的文件屬性變更時，您可能需要重新關聯 IDocHostUIHandler 類別的文件。
+1. 如果 WebOC 控件上的文檔屬性發生更改,則可能需要將文檔與 IDocHostUIHandler 類重新關聯。
 
-2. 如果上述無法運作，則不會收取 DPI 旗標變更 WebOC 的已知的問題。 修正此問題的最可靠方式是切換 WebOC，包含兩個不同的縮放百分比值的意義兩次呼叫視覺化縮放。 此外，如果需要此因應措施，它可能需要對每個巡覽呼叫。
+2. 如果上述內容不起作用,則 WebOC 未獲取對 DPI 標誌的更改存在已知問題。 解決此問題的最可靠方法是切換 WebOC 的光學縮放,這意味著兩個調用具有兩個不同的縮放百分比值。 此外,如果需要此解決方法,則可能需要在每個導航調用上執行它。
 
     ```csharp
     // browser2 is a SHDocVw.IWebBrowser2 in this case

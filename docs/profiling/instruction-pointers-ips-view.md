@@ -19,10 +19,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c90d070a3b7125143eda5fd8666b1a4f64312b3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778631"
 ---
 # <a name="instruction-pointers-ips-view"></a>指令指標 (IP) 檢視
@@ -34,7 +34,7 @@ ms.locfileid: "74778631"
 
  對於 .NET 記憶體資料，[程式行] 檢視會識別用於配置記憶體的指令。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view-sampling-data.md)
-- [指令指標 (IP) 檢視 - 取樣](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [指令指標 （IP） 視圖 - 採樣](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 - [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view-contention-data.md)

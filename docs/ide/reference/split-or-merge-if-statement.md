@@ -1,20 +1,21 @@
 ---
 title: split/merge if 陳述式
-ms.date: 06/12/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 405ccd4bc0197ce06aa14982a16dc02f6d13a537
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
-ms.translationtype: HT
+ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160734"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093688"
 ---
 # <a name="split-or-merge-if-statements"></a>split/merge if 陳述式
 
@@ -22,23 +23,25 @@ ms.locfileid: "67160734"
 
 - C#
 
-**功能：** **功能：** 分割或合併 [if](/dotnet/csharp/language-reference/keywords/if-else) 陳述式。
+- Visual Basic
 
-**時機：** 如果想要將使用 `&&` 或 `||` 運算子的 `if` 分割為巢狀 `if` 陳述式，或合併一個 `if` 陳述式與一個外部 `if` 陳述式。
+**內容：****拆分**或合併[（如果](/dotnet/csharp/language-reference/keywords/if-else)語句）。
 
-**原因：** 這主要是樣式偏好問題。  
+**何時：** 您希望將使用`if``&&`或`||`運算子的語句拆分為嵌套`if`語句，或將`if`語句與外部`if`語句合併。
 
-## <a name="how-to"></a>操作說明
+**原因：** 這是一個風格偏好的問題。  
+
+## <a name="how-to"></a>操作方式
 
 如果想要分割 `if` 陳述式：
 
 1. 將游標放在 `if` 陳述式的 `&&` 或 `||` 運算子旁邊。
 
-2. 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構]  功能表。
+2. 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
 
     ![分割 if 陳述式](../media/split-if-statement.png)
 
-3. 選取 [分割成巢狀 if 陳述式]  。
+3. 選取 [分割成巢狀 if 陳述式]****。
 
     ![分割 if 陳述式完成](../media/split-if-statement-complete.png)
 
@@ -46,14 +49,14 @@ ms.locfileid: "67160734"
 
 1. 將游標放在內部 `if` 關鍵字中。
 
-2. 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構]  功能表。
+2. 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
 
     ![合併 if 陳述式](../media/merge-if-statement.png)
 
-3. 選取 [與外部 if 陳述式合併]  。
+3. 選取 [與外部 if 陳述式合併]****。
 
     ![合併 If 陳述式完成](../media/merge-if-statement-complete.png)
 
 ## <a name="see-also"></a>另請參閱
 
-- [重構](../refactoring-in-visual-studio.md)
+- [Refactoring](../refactoring-in-visual-studio.md)

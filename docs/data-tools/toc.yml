@@ -1,4 +1,4 @@
-- name: 總覽
+- name: 概觀
   href: accessing-data-in-visual-studio.md
 - name: 教學課程
   items:
@@ -20,7 +20,7 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Entity Framework 工具
       href: entity-data-model-tools-in-visual-studio.md
-    - name: 資料集
+    - name: DataSets
       items:
         - name: 資料集工具
           href: dataset-tools-in-visual-studio.md
@@ -34,7 +34,7 @@
       href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
     - name: 多層式架構 (N-Tier) 資料應用程式概觀
       href: n-tier-data-applications-overview.md
-- name: 作法指南
+- name: 操作指南
   items:
     - name: 建立資料庫
       href: create-a-sql-database-by-using-a-designer.md
@@ -50,7 +50,7 @@
       href: add-new-data-sources.md
     - name: LINQ to SQL 工具
       items:
-        - name: 總覽
+        - name: 概觀
           displayName: LINQ to SQL tools
           href: linq-to-sql-tools-in-visual-studio2.md
         - name: 變更 DataContext 方法的傳回類型
@@ -105,7 +105,7 @@
           href: validate-data-in-datasets.md
         - name: 將資料儲存回資料庫
           items:
-            - name: 總覽
+            - name: 概觀
               displayName: Save data to database
               href: save-data-back-to-the-database.md
             - name: 在資料庫中插入新的記錄
@@ -116,7 +116,7 @@
               href: hierarchical-update.md
             - name: 處理並行例外狀況
               href: handle-a-concurrency-exception.md
-            - name: 異動
+            - name: 交易
               items:
                 - name: 使用異動儲存資料
                   href: save-data-by-using-a-transaction.md
@@ -142,7 +142,7 @@
               href: add-code-to-tableadapters-in-n-tier-applications.md
             - name: 將資料集和 TableAdapter 分成不同的專案
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: 控制項
+    - name: 控制
       items:
         - name: 將控制項繫結至資料來源
           href: bind-controls-to-data-in-visual-studio.md
@@ -211,7 +211,7 @@
       href: upgrade-dot-mdf-files.md
     - name: 針對資料存取錯誤進行疑難排解
       href: additional-resources-for-troubleshooting-data-access-errors.md
-- name: 參考資料
+- name: 參考
   items:
     - name: O/R 設計工具 (LINQ to SQL)
       items:

@@ -1,31 +1,31 @@
 ---
 title: EditorConfig 檔案的 .NET 命名慣例
-ms.date: 08/07/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d4864cc20813bc57b35e315a3b415cb6902e6361
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588599"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543997"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
-命名慣例關係到程式碼項目的命名，例如類別、屬性和方法。 例如，您可以指定公用成員必須大寫，或私用欄位的開頭必須是 `_`。 您可以藉由在 [.editorconfig 檔案](../ide/create-portable-custom-editor-options.md)中指定來強制執行這些規則。 違反命名規則的項目會出現在 [錯誤清單] 或在名稱下方以建議的形式出現，取決於您為規則選擇的嚴重性。 您不需要建置專案，也能看見違規項目。
+命名慣例關係到程式碼項目的命名，例如類別、屬性和方法。 例如,可以指定公共成員必須大寫,或者私有欄位必須以`_`開頭。 您可以藉由在 [.editorconfig 檔案](../ide/create-portable-custom-editor-options.md)中指定來強制執行這些規則。 違反命名規則的項目會出現在 [錯誤清單]**** 或在名稱下方以建議的形式出現，取決於您為規則選擇的嚴重性。 您不需要建置專案，也能看見違規項目。
 
 針對每一個命名慣例，您必須使用以下描述的屬性來指定其適用的符號、命名樣式以及嚴重性，以強制執行慣例。 屬性的順序不重要。
 
 若要開始，請為您將在每個所需要用來完整描述規則的屬性中使用的命名規則選擇一個標題。 例如：`public_members_must_be_capitalized` 是一個良好且具描述性的命名規則名稱。 此頁面將會在下列各節中以 **<namingRuleTitle\>** 來代稱您選擇的標題。
 
-## <a name="symbols"></a>Symbol
+## <a name="symbols"></a>Symbols
 
 首先，請先識別欲套用命名規則的符號群組。 此屬性具有下列格式：
 
@@ -42,20 +42,23 @@ ms.locfileid: "75588599"
 以下清單會顯示允許的值，您可以逗號分隔來指定多個值。
 
 - \*(請使用此值來指定所有符號)
-- 命名空間
-- 類別
-- 結構
+- namespace
+- Class - 類別
+- struct
 - interface
-- enum
+- 列舉
 - 屬性
 - method
-- Field - 欄位
-- 事件
+- field
+- event
 - 委派
-- 參數
+- 參數 (parameter)
 - type_parameter
-- 本機
+- local
 - local_function
+
+> [!NOTE] 
+> 當前不支援元組成員。
 
 ### <a name="accessibility-levels-of-symbols"></a>符號的存取層級
 
@@ -69,10 +72,10 @@ ms.locfileid: "75588599"
 - public
 - internal 或 friend
 - private
-- 受保護的 - protected
+- protected
 - protected\_internal 或 protected_friend
 - private\_protected
-- 本機
+- local
 
    `local` 存取層級適用於在方法內定義的符號。 當符號的存取性無法在程式碼中定義時，這非常有用。 例如，如果您在常數的命名慣例 (`required_modifiers = const`) 上指定 `applicable_accessibilities = local`，則該規則只套用至在方法內定義的常數，而不套用至在型別中定義的。
 
@@ -107,12 +110,12 @@ ms.locfileid: "75588599"
    > [!NOTE]
    > 如果您有 `static` 或 `shared` 符號的命名規則，則它也套用到 `const` 符號，因為它們是隱含靜態的。 如果您不想要 `static` 命名規則套用到 `const` 符號，請針對 `const` 符號建立個別的命名規則。
 
-命名規則會比對擁有 `required_modifiers` 中指定之「所有」修飾詞的簽章。 如果您省略此屬性時，則會使用空白清單的預設值；換句話說，不需要比對特定修飾詞。 這表示不論是否套用此規則，符號的修飾詞都不會造成影響。
+命名規則會比對擁有 `required_modifiers` 中指定之「所有」** 修飾詞的簽章。 如果您省略此屬性時，則會使用空白清單的預設值；換句話說，不需要比對特定修飾詞。 這表示不論是否套用此規則，符號的修飾詞都不會造成影響。
 
 > [!TIP]
 > 不要為 `required_modifiers` 指定 `*` 的值。 相反地，只需完全省略 `required_modifiers` 屬性，而您的命名規則將套用至任何種類的修飾詞。
 
-## <a name="style"></a>樣式
+## <a name="style"></a>Style
 
 您已識別要套用命名規則的符號群組，現在您可以描述命名樣式。 樣式可以是包含特定前置詞或後置詞的名稱，或是名稱中的每個個別文字都以特定的字元分隔。 您也可以指定大寫樣式。 樣式屬性具有下列格式：
 
@@ -155,7 +158,7 @@ ms.locfileid: "75588599"
 > [!NOTE]
 > 您必須將大寫樣式指定為您命名樣式的一部分，否則您的命名樣式可能會遭到忽略。
 
-## <a name="severity"></a>嚴重性
+## <a name="severity"></a>Severity
 
 若要描述違反您命名規則的嚴重性，請使用下列格式指定一個屬性：
 
@@ -163,16 +166,16 @@ ms.locfileid: "75588599"
 
 下表顯示了允許的嚴重性值，以及其代表的意涵：
 
-嚴重性 | 作用
+Severity | 效果
 ------------ | -------------
-none | 規則已完全隱藏。
+無 | 規則已完全隱藏。
 重構或無訊息 | 未遵循此樣式時，不要向使用者顯示任何內容；但自動產生的程式碼會遵循此樣式。
 建議 | 當未遵循此樣式時，向使用者顯示為建議 (在前兩個字元下方以點狀方式呈現)。 它在編譯時期沒有任何作用。
-warning | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器警告。
-錯誤 | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器錯誤。
+warning | 當未遵循此樣式時，在 [錯誤清單]**** 中顯示編譯器警告。
+error | 當未遵循此樣式時，在 [錯誤清單]**** 中顯示編譯器錯誤。
 
 > [!NOTE]
-> 您不需要建置您的專案，也能看到違反命名規則的項目。 它們會在 [錯誤清單] 中 (或作為建議)，以編輯過後的程式碼方式呈現。
+> 您不需要建置您的專案，也能看到違反命名規則的項目。 它們會在 [錯誤清單]**** 中 (或作為建議)，以編輯過後的程式碼方式呈現。
 
 ## <a name="rule-order"></a>規則順序
 
@@ -184,7 +187,7 @@ warning | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器警告
 
 ::: moniker range=">=vs-2019"
 
-從 Visual Studio 2019 16.2 版開始，在 EditorConfig 檔案中定義命名規則的順序並不重要。 相反地，Visual Studio 會根據規則本身的定義自動排序命名規則。 [EditorConfig 語言服務延伸](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)模組可以分析 EditorConfig 檔案和報表案例，其中檔案中的規則順序與編譯器在執行時間會使用的不同。
+從 Visual Studio 2019 16.2 版開始，在 EditorConfig 檔案中定義命名規則的順序並不重要。 相反地，Visual Studio 會根據規則本身的定義自動排序命名規則。 [EditorConfig 語言服務擴展名](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)可以分析 EditorConfig 檔並報告檔中的規則排序與編譯器在執行時將使用的規則不同的情況。
 
 如果您使用的是舊版 Visual Studio，則 EditorConfig 檔案中的命名慣例應該以最為明確到最不明確的順序排序。 第一個遇到的可套用規則，會是唯一套用的規則。 但是，如果有多個具有相同名稱的規則*屬性*，則最近找到具有該名稱的屬性優先。 如需詳細資訊，請參閱[檔案階層和優先順序](create-portable-custom-editor-options.md#file-hierarchy-and-precedence)。
 
@@ -200,7 +203,7 @@ warning | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器警告
 
 ## <a name="example"></a>範例
 
-下列 .editorconfig 檔案所包含的命名慣例指定公用屬性、方法、欄位、事件及委派必須為大寫。 請注意，此命名慣例指定了多種要套用規則的符號類型，並使用逗號分隔值。
+下列 .editorconfig** 檔案所包含的命名慣例指定公用屬性、方法、欄位、事件及委派必須為大寫。 請注意，此命名慣例指定了多種要套用規則的符號類型，並使用逗號分隔值。
 
 ```ini
 # Public members must be capitalized (public_members_must_be_capitalized)
@@ -226,14 +229,14 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-如果您關閉並重新開啟程式碼檔案，而不是在名稱違規之下看到建議，您會在錯誤清單中看到綠色波浪線和警告：
+如果關閉並重新開啟代碼檔,而不是在名稱衝突下看到建議,在錯誤列表中會看到綠色波浪和警告:
 
 ![命名規則警告](media/editorconfig-naming-rule-warning.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [語言慣例](editorconfig-language-conventions.md)
 - [格式設定慣例](editorconfig-formatting-conventions.md)
 - [Roslyn 命名慣例](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63) \(英文\)
 - [建立可攜式自訂編輯器選項](../ide/create-portable-custom-editor-options.md)
-- [EditorConfig 的 .NET 編碼慣例設定](editorconfig-code-style-settings-reference.md)
+- [.NET 編碼約定設定,用於編輯器配置](editorconfig-code-style-settings-reference.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 03671f314dca3c016f9524bcb246b74e0eb1f837
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62970079"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic 命名空間
@@ -32,14 +32,14 @@ namespace diagnostic;
 
 ### <a name="classes"></a>類別
 
-|名稱|說明|
+|名稱|描述|
 |----------|-----------------|
 |[marker_series 類別](../profiling/marker-series-class.md)|表示由單一提供者產生之事件的序列通道。|
 |[span 類別](../profiling/span-class.md)|定義應用程式階段。|
 
 ### <a name="enumerations"></a>列舉
 
-|名稱|說明|
+|名稱|描述|
 |----------|-----------------|
 |[marker_importance 列舉](../profiling/marker-importance-enumeration.md)|表示並行視覺化檢視標記的重要性層級。|
 
@@ -49,4 +49,4 @@ namespace diagnostic;
  **命名空間：** 並行
 
 ## <a name="see-also"></a>另請參閱
-- [Concurrency 命名空間 (並行視覺化檢視)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+- [併發命名空間（併發視覺化檢視）](../profiling/concurrency-namespace-concurrency-visualizer.md)

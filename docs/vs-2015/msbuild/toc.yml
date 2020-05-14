@@ -156,7 +156,7 @@
                   href: how-to-configure-targets-and-tasks.md
             - name: 疑難排解 .NET Framework 目標錯誤
               href: troubleshooting-dotnet-framework-targeting-errors.md
-        - name: 最佳作法
+        - name: 最佳做法
           href: msbuild-best-practices.md
     - name: MSBuild 中的記錄
       items:
@@ -382,7 +382,7 @@
               href: xmlpoke-task.md
             - name: XslTransformation 工作
               href: xsltransformation-task.md
-        - name: Conditions
+        - name: 條件
           href: msbuild-conditions.md
         - name: 條件式建構
           href: msbuild-conditional-constructs.md
@@ -432,7 +432,7 @@
                   href: updatemanifestforbrowserapplication-task.md
         - name: 要逸出的特殊字元
           href: special-characters-to-escape.md
-    - name: 字彙表
+    - name: 詞彙
       href: msbuild-glossary1.md
     - name: 其他資源
       href: additional-msbuild-resources.md

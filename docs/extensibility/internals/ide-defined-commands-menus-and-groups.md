@@ -1,5 +1,5 @@
 ---
-title: IDE 定義的命令、功能表和群組 |Microsoft Docs
+title: IDE 定義的指令、功能表和組 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,48 +7,48 @@ helpviewer_keywords:
 - .vsct files, environment-defined constants
 - command groups, environment-defined
 ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af6d3e180e2b3d5eb2e0f6c85b7488761e160c69
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6557f49b019a6793698dabe852919ec2e9f28cfd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727289"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707722"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE 定義的命令、功能表和群組
-已定義許多功能表、命令和命令群組供 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 使用。 當您擴充 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 時，也可以使用這些命令。
+許多功能表、命令和命令組已定義供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE使用。 這些命令在擴展[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]時也可用於使用。
 
-## <a name="finding-environment-defined-commands"></a>尋找環境定義的命令
- 環境命令是在 .vsct 檔案的集合中定義的：
+## <a name="finding-environment-defined-commands"></a>尋找環境定義的指令
+ 環境命令由四個 .vsct 檔案組定義:
 
-- SharedCmdDef. .vsct
+- 共用 CmdDef.vsct
 
-- SharedCmdPlace. .vsct
+- 共用 CmdPlace.vsct
 
-- ShellCmdDef. .vsct
+- 殼牌CmdDef.vsct
 
-- ShellCmdPlace. .vsct
+- 殼牌CmdPlace.vsct
 
-  這些檔案位於 *\<Visual STUDIO SDK 安裝路徑 >* \VisualStudioIntegration\Common\Inc \\。 這些檔案會提供功能表和群組的定義和 Guid，您可以在 VSPackage 的命令資料表設定（. .vsct）檔案中使用這些功能，做為您自己的功能表、群組和命令的容器。
+  這些文件位於\\*\<視覺工作室 SDK 安裝路徑>*[VisualStudio 集成]公共\Inc。 這些檔案提供選單和群組的定義和 GUID,您可以在 VSPackage 的命令表設定 (.vsct) 檔案中用作您自己的選單、組和命令的容器。
 
-## <a name="in-this-section"></a>本章節內容
-- [Visual Studio 功能表的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+## <a name="in-this-section"></a>本節內容
+- [Visual Studio 功能表的 GUID 和識別碼](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
 
- 提供 Visual Studio 功能表列上功能表的 GUID 和識別碼值，以及其所包含的群組。
+ 在 Visual Studio 功能表列上提供功能表及其包含的組的 GUID 和 ID 值。
 
-- [Visual Studio 工具列的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
+- [Visual Studio 工具列的 GUID 和識別碼](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
 
- 提供 Visual Studio IDE 中工具列和其所包含之群組的 GUID 和識別碼值。
+ 提供可視化工作室 IDE 中工具列及其包含組的 GUID 和 ID 值。
 
-- [Visual Studio 命令的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
+- [Visual Studio 命令的 GUID 和識別碼](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 
- 提供 Visual Studio IDE 所定義之命令的 GUID 和識別碼值。
+ 提供視覺化工作室 IDE 定義的命令的 GUID 和 ID 值。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 命令表檔案 (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [用來擴充專案系統的 IDE 定義的命令](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
-- [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [VSPackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

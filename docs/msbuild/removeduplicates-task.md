@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 235f96b3d67b0ad2e3c3bd1c486c5c9f2eeb86c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596004"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632780"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates 工作
+
 從指定的項目集合中移除重複項目。
 
 ## <a name="parameters"></a>參數
+
  下表說明 `RemoveDuplicates` 工作的參數。
 
 |參數|描述|
@@ -37,11 +39,13 @@ ms.locfileid: "75596004"
 |`Inputs`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要從中移除重複項目的項目集合。|
 
 ## <a name="remarks"></a>備註
+
  此工作不區分大小寫，而且在判斷重複項目時不會比較項目中繼資料。
 
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
+
  下列範例使用 `RemoveDuplicates` 工作，以從 `MyItems` 項目集合中移除重複項目。 工作完成時，`FilteredItems` 項目集合會包含一個項目。
 
 ```xml
@@ -66,7 +70,7 @@ ms.locfileid: "75596004"
 </Project>
 ```
 
- 下列範例顯示 `RemoveDuplicates` 工作會保留其輸入順序。 當工作完成時，`FilteredItems` 項目集合會以該順序包含 *MyFile2.cs*、*MyFile1.cs* 和 *MyFile3.cs* 項目。
+ 下列範例顯示 `RemoveDuplicates` 工作會保留其輸入順序。 `FilteredItems`任務完成後，項集合按該順序包含*MyFile2.cs、MyFile1.cs*和*MyFile3.cs*項。 *MyFile1.cs*
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -89,7 +93,8 @@ ms.locfileid: "75596004"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
-- [工作參考](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>另請參閱
+
+- [任務引用](../msbuild/msbuild-task-reference.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [工作](../msbuild/msbuild-tasks.md)

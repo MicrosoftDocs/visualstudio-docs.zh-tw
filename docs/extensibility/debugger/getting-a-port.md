@@ -1,37 +1,37 @@
 ---
-title: 取得連接埠 |Microsoft Docs
+title: 取得連接埠 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - ports, getting
 - debugging [Debugging SDK], ports
 ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a57fc69f2ff5b49f1ad4e5449daddda5ff764d8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353788"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738640"
 ---
 # <a name="get-a-port"></a>取得連接埠
-連接埠代表處理程序執行所在機器的連線。 該電腦可能是本機電腦或遠端電腦 (這無法可能執行非 Windows 型作業系統，請參閱[連接埠](../../extensibility/debugger/ports.md)如需詳細資訊)。
+埠表示與運行進程的電腦的連接。 該電腦可以是本地電腦或遠端電腦(可能運行非基於 Windows 的作業系統;有關詳細資訊,請參閱[埠](../../extensibility/debugger/ports.md))。
 
-連接埠由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面。 它用來取得的連接埠連接到電腦上執行的處理序的相關資訊。
+埠由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面表示。 它用於獲取有關在埠連接到的電腦上運行的進程的資訊。
 
-偵錯引擎需要存取連接埠，以便與連接埠登錄程式節點，並滿足要求的處理程序資訊。 例如，如果偵錯引擎會實作[IDebugProgramProvider2](../../extensibility/debugger/reference/idebugprogramprovider2.md)介面的實作[GetProviderProcessData](../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法可能需要的處理程序會要求連接埠要傳回的資訊。
+除錯引擎需要存取埠,以便向埠註冊程式節點並滿足行程資訊請求。 例如,如果調試引擎實現[IDebugProgramProvider2](../../extensibility/debugger/reference/idebugprogramprovider2.md)介面,[則 GetProviderProcessData](../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法的實現可能會要求埠返回必要的進程資訊。
 
-Visual Studio 會提供必要的連接埠為偵錯引擎，它會從連接埠提供者中取得此連接埠。 如果程式已連結至 （內部偵錯工具，或因為發生例外狀況擲回，此觸發程序 Just in Time [JIT] 對話方塊中），則使用者可以選擇的傳輸 （如連接埠提供者的另一個名稱） 來使用。 否則為使用者啟動的偵錯工具中的程式時，如果專案系統會指定要使用的連接埠提供者。 Visual Studio 在可能情況下，具現化所代表的連接埠供應商[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)介面，並藉由呼叫要求新的連接埠[下列](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)使用[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)介面。 此連接埠會接著傳遞給偵錯引擎中一份表單或另一個。
+Visual Studio 向調試引擎提供必要的埠,並從埠供應商處獲取此埠。 如果程式附加到(從調試器內部或由於引發異常而觸發"即時 [JIT] 對話方塊"),則為使用者提供要使用的傳輸選擇(埠供應商的另一個名稱)。 否則,如果使用者從調試器中啟動程式,則專案系統指定要使用的埠供應商。 在這兩個事件中,Visual Studio 會實例化埠供應商(由[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)介面表示),並透過使用[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)介面調用[AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)來請求新的埠。 然後,此埠以這種或另一種形式傳遞到調試引擎。
 
 ## <a name="example"></a>範例
-此程式碼片段示範如何使用提供的連接埠[LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)註冊中的程式節點[ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)。 為了清楚起見已省略與這個概念沒有直接關聯的參數。
+此程式片段示範如何使用提供給[Launch 暫停](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)的埠在[ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)中註冊程式節點。 為了清楚起見,省略了與這一概念沒有直接關係參數的參數。
 
 > [!NOTE]
-> 此範例會使用連接埠來啟動並繼續此程序，並假設[IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)連接埠上實作介面。 這不是唯一的方式來執行這些工作，您也可以，連接埠可能會不甚至會涉及以外的其他程式的[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)提供給它。
+> 本示例使用埠啟動和恢復該過程,並假定[IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)介面在埠上實現。 這絕不是執行這些任務的唯一方法,而且除了將程式的[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)交給它之外,埠可能甚至不涉及該埠。
 
 ```cpp
 // This is an IDebugEngineLaunch2 method.
@@ -97,7 +97,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [正在登錄程式](../../extensibility/debugger/registering-the-program.md)
-- [啟用要偵錯程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
-- [連接埠提供者](../../extensibility/debugger/port-suppliers.md)
+- [註冊程式](../../extensibility/debugger/registering-the-program.md)
+- [開啟對程式進行除錯](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [港口供應商](../../extensibility/debugger/port-suppliers.md)
 - [連接埠](../../extensibility/debugger/ports.md)

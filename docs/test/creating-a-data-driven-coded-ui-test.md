@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595354"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式碼 UI 測試
@@ -22,14 +22,14 @@ ms.locfileid: "75595354"
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requirements**
+**需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 - 自動程式化 UI 測試元件
 
 ## <a name="create-a-test-project"></a>建立測試專案
 
-這個範例會建立在 Windows 計算機應用程式上執行的自動程式碼 UI 測試。 它將兩個數字相加，並使用判斷提示來驗證總和是否正確。 接下來，會編碼兩個數字的判斷提示和參數值使其成為資料驅動並儲存在逗號分隔值 (.*csv*) 檔案中。
+這個範例會建立在 Windows 計算機應用程式上執行的自動程式碼 UI 測試。 它將兩個數字相加，並使用判斷提示來驗證總和是否正確。 接下來，對兩個數字的斷言和參數值進行編碼，以成為資料驅動並存儲在逗號分隔值 *（.csv*） 檔中。
 
 ### <a name="step-1---create-a-coded-ui-test"></a>步驟 1 - 建立自動程式碼 UI 測試
 
@@ -38,9 +38,9 @@ ms.locfileid: "75595354"
     ![建立自動程式碼 UI 測試](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
-   > 如果您沒有看到 [自動程式化 UI 測試專案] 範本，則需要[安裝自動程式化 UI 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
+   > 如果看不到**編碼的 UI 測試專案**範本，則需要[安裝編碼的 UI 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
 
-2. 選擇**錄製動作**。
+2. 選擇**記錄操作**。
 
     ![選擇記錄動作](../test/media/cuit_datadriven_generatecodedialog.png)
 
@@ -64,17 +64,17 @@ ms.locfileid: "75595354"
    }
    ```
 
-5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]。 (鍵盤快速鍵：**Ctrl**+**R**,**T**)。
+5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]****。 （鍵盤快速鍵 **：Ctrl**+**R**，**T**）.
 
-    [測試總管] 視窗中會顯示測試結果，而測試結果顯示測試成功還是失敗。 若要開啟 [測試總管] 視窗，請從 [測試] 功能表中選擇 [視窗]，然後選擇 [測試總管]。
+    顯示測試是否通過或失敗的測試結果將顯示在**測試資源管理器**視窗中。 若要開啟 [測試總管] 視窗，請從 [測試]**** 功能表中選擇 [視窗]****，然後選擇 [測試總管]****。
 
-6. 因為資料來源也可以用於判斷提示參數值 (測試用來確認預期的值)；讓我們新增判斷提示來驗證兩個數字的總和是否正確。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後依序選擇 [產生自動程式化 UI 測試的程式碼] 和 [使用自動程式化 UI 測試產生器]。
+6. 因為資料來源也可以用於判斷提示參數值 (測試用來確認預期的值)；讓我們新增判斷提示來驗證兩個數字的總和是否正確。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後依序選擇 [產生自動程式化 UI 測試的程式碼]**** 和 [使用自動程式化 UI 測試產生器]****。
 
     對應計算機中顯示總和的文字控制項。
 
     ![對應 UI 文字控制項](../test/media/cuit_datadriven_addassertion.png)
 
-7. 加入判斷提示，以驗證總和的值是否正確。 選擇值為 **3** 的 [顯示文字] 屬性，然後選擇 [加入判斷提示]。 使用 **AreEqual** 比較子，並確認比較值為 **3**。
+7. 加入判斷提示，以驗證總和的值是否正確。 選擇值為 **3** 的 [顯示文字]**** 屬性，然後選擇 [加入判斷提示]****。 使用 **AreEqual** 比較子，並確認比較值為 **3**。
 
     ![設定判斷提示](../test/media/cuit_datadriven_builderaddassertion2.png)
 
@@ -92,17 +92,17 @@ ms.locfileid: "75595354"
    }
    ```
 
-9. 使用 `ValidateSum()` 方法，確認測試執行。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]。 (鍵盤快速鍵：**Ctrl**+**R**,**T**)。
+9. 使用 `ValidateSum()` 方法，確認測試執行。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]****。 （鍵盤快速鍵 **：Ctrl**+**R**，**T**）.
 
      目前，所有參數值在其方法中都會定義為常數。 接下來，讓我們建立資料集，以將測試設為資料驅動。
 
 ### <a name="step-2---create-a-data-set"></a>步驟 2 - 建立資料集
 
-1. 將文字檔新增至名為 data.csv 的 dataDrivenSample 專案。
+1. 將文字檔新增至名為 data.csv** 的 dataDrivenSample 專案。
 
      ![將逗號分隔值檔案加入專案](../test/media/cuit_datadriven_addcsvfile.png)
 
-2. 將下列資料填入 .*csv* 檔案：
+2. 使用以下資料填充 *.csv*檔：
 
     |Num1|Num2|Sum|
     |-|-|-|
@@ -114,9 +114,9 @@ ms.locfileid: "75595354"
 
      ![將資料填入 .csv 檔案](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3. 務必使用正確的編碼來儲存 .*csv* 檔案。 在 [檔案] 功能表上，選擇 [進階儲存選項]，然後選擇 [Unicode (UTF-8 無簽章) - 字碼頁 65001] 作為編碼。
+3. 使用正確的編碼保存 *.csv*檔非常重要。 在 [檔案]**** 功能表上，選擇 [進階儲存選項]****，然後選擇 [Unicode (UTF-8 無簽章) - 字碼頁 65001]**** 作為編碼。
 
-4. .*csv* 檔案必須複製至輸出目錄，否則無法執行測試。 使用 [屬性] 視窗來複製它。
+4. *.csv*檔必須複製到輸出目錄，否則測試無法運行。 使用 **"屬性"** 視窗複製它。
 
      ![部署 .csv 檔案](../test/media/cuit_datadriven_deploycsvfile.png)
 
@@ -148,7 +148,7 @@ ms.locfileid: "75595354"
 
 ### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>步驟 4 - 使用自動程式化 UI 測試中的資料
 
-1. 將 `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` 新增至 *CodedUITest.cs* 檔案的頂端：
+1. 添加到`using Microsoft.VisualStudio.TestTools.UITesting.WinControls`*CodedUITest.cs*檔的頂部：
 
     ```csharp
     using System;
@@ -179,7 +179,7 @@ ms.locfileid: "75595354"
 
      若要了解要將資料編寫至其中的搜尋屬性，請使用 [自動程式碼 UI 測試編輯器]。
 
-    - 開啟 UIMap.uitest 檔案。
+    - 開啟 UIMap.uitest** 檔案。
 
          ![開啟自動程式碼 UI 測試編輯器](../test/media/cuit_datadriven_opentesteditor.png)
 
@@ -187,23 +187,23 @@ ms.locfileid: "75595354"
 
          ![使用自動程式碼 UI 測試編輯器來協助您的程式碼](../test/media/cuit_datadriven_testeditor.png)
 
-    - 在 [屬性] 視窗中，開啟 [搜尋屬性]。 搜尋屬性 **Name** 值是程式碼中使用資料來源所操作的值。 例如，會將每個資料列的第一欄中的值指派給 `SearchProperties`：`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`。 對於三個反覆項目，這項測試會依序將搜尋屬性的 **Name** 值變更為 3、5 和 6。
+    - 在**屬性**視窗中，打開**搜索屬性**。 搜尋屬性 **Name** 值是程式碼中使用資料來源所操作的值。 例如，會將每個資料列的第一欄中的值指派給 `SearchProperties`：`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`。 對於三個反覆項目，這項測試會依序將搜尋屬性的 **Name** 值變更為 3、5 和 6。
 
          ![使用搜尋屬性來協助編碼](../test/media/cuit_datadriven_searchproperties.png)
 
-3. 儲存組態。
+3. 儲存方案。
 
 ### <a name="step-5---run-the-data-driven-test"></a>步驟 5 - 執行資料驅動測試
 
 重新執行測試，確認測試現在是資料驅動。
 
-您應該會看到使用 .*csv* 檔案中的值透過三個反覆項目的測試回合。 驗證也應該會運作，而且測試在 [測試總管] 中應該顯示為通過。
+您應該看到測試使用 *.csv*檔中的值在三次反覆運算中運行。 驗證也應該會運作，而且測試在 [測試總管] 中應該顯示為通過。
 
-## <a name="q--a"></a>問與答
+## <a name="q--a"></a>問答集
 
-### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> 其他資料來源類型 (例如 SQL Express 或 XML) 的資料來源屬性為何？
+### <a name="what-are-the-data-source-attributes-for-other-data-source-types-such-as-sql-express-or-xml"></a><a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> 其他資料來源類型 (例如 SQL Express 或 XML) 的資料來源屬性為何？
 
-**答：** 您可以使用下表中的範例資料來源字串，方法是將它們複製到您的程式碼，並進行必要的自訂。
+**答：** 您可以通過將示例資料來源字串複製到代碼並進行必要的自訂來使用下表中的示例資料來源字串。
 
 **資料來源類型和屬性**
 
@@ -229,15 +229,15 @@ ms.locfileid: "75595354"
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>問：為什麼無法修改 UIMap.Designer 檔案中的程式碼？
 
-**答：** 每次您使用 [UIMap - 自動程式化 UI 測試產生器] 產生程式碼時，對 UIMapDesigner.cs 檔案中的程式碼所做的變更都會被覆寫。 在本範例中，而且在大多數的情況下，可以對測試的原始程式碼檔案 (即 CodedUITest1.cs) 進行讓測試使用資料來源所需的程式碼變更。
+**答：** 每次使用 UIMap - 編碼的 UI 測試產生器生成代碼時，您在*UIMapDesigner.cs*檔中所做的任何代碼更改都將被覆蓋。 在此示例中，在大多數情況下，可以將使測試使用資料來源所需的代碼更改對測試的原始程式碼檔（即*CodedUITest1.cs*）。
 
-如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 *UIMap.cs* 檔案可用來覆寫 *UIMapDesigner.cs* 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
+如果必須修改記錄的方法，則必須將其複製到*UIMap.cs*檔並重命名它。 *UIMap.cs* 檔案可用來覆寫 *UIMapDesigner.cs* 檔案中的方法和屬性。 您必須移除 Coded UITest.cs** 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)
-- [自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
+- [編碼 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
 - [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

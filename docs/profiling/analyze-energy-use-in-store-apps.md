@@ -15,15 +15,15 @@ ms.workload:
 - uwp
 monikerRange: vs-2017
 ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73144741"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP App 中的能源耗用量
 
-Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或部分時間使用自己的電池執行之低電源平板裝置上的功率和能源消耗情形。 在電池供電的裝置上，使用太多能源的應用程式可能導致客戶諸多不滿，最後客戶可能會解除安裝應用程式。 最佳化能源利用，可以提高客戶對應用程式的採用率。
+Visual Studio [能源消耗]**** 分析工具可協助您分析 UWP App 在全部或部分時間使用自己的電池執行之低電源平板裝置上的功率和能源消耗情形。 在電池供電的裝置上，使用太多能源的應用程式可能導致客戶諸多不滿，最後客戶可能會解除安裝應用程式。 最佳化能源利用，可以提高客戶對應用程式的採用率。
 
 ## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a>能源消耗分析工具是什麼，它的運作方式為何，以及測量什麼內容
 
@@ -36,7 +36,7 @@ Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或
 
 [能源消耗] 分析工具使用下列「 *功率* 」(Power) 和「 *能源*」(Energy) 的定義：
 
-- 「*功率* 」(Power) 用於測量在某段時間內完成工作的用電速率。 在電子學中，功率的標準單位是「 *瓦*」(Watt)，其定義為一安培電流流經一伏特電位差時，工作完成的速率。 在 [用電量] 圖形上，單位顯示為毫瓦 **mW** ，相當於千分之一瓦特。
+- 「*功率* 」(Power) 用於測量在某段時間內完成工作的用電速率。 在電子學中，功率的標準單位是「 *瓦*」(Watt)，其定義為一安培電流流經一伏特電位差時，工作完成的速率。 在 [用電量] **** 圖形上，單位顯示為毫瓦 **mW** ，相當於千分之一瓦特。
 
    請注意，由於功率是一種速率，因此有方向 (工作在某段時間內可能增加或減少) 和速度 (工作增加或減少的量)。
 
@@ -89,14 +89,14 @@ if (performance && performance.mark) {
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>收集應用程式的能源分析資料
 
-1. 在 [偵錯] 功能表上，選擇 [啟動診斷但不偵錯]。
+1. 在 [偵錯] **** 功能表上，選擇 [啟動診斷但不偵錯] ****。
 
-     ![選擇診斷中樞的能源耗用量](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![選擇 [診斷中樞] 內的 [能源消耗]](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. 選擇 [ **能源消耗** ]，然後選擇 [ **開始**]。
 
     > [!NOTE]
-    > 當您啟動 [能源消耗] 分析工具時，可能會看到 [使用者帳戶控制] 視窗，要求您提供執行 *VsEtwCollector.exe* 的權限。 選擇 [ **是**]。
+    > 啟動**能耗**探測器時，您可能會看到**使用者帳戶控制**視窗，請求您許可權運行*VsEtwCollector.exe*。 選擇 [ **是**]。
 
 3. 執行您的應用程式進行資料收集。
 
@@ -122,16 +122,16 @@ if (performance && performance.mark) {
 ## <a name="analyze-energy-profile-data"></a>分析能源分析資料
  能源分析資料會顯示在 Visual Studio 文件視窗中：
 
- ![能源分析工具報告頁面](../profiling/media/energyprof_all.png "ENERGYPROF_All")
+ ![能量探測器報告頁](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
 |||
 |-|-|
-|![步驟1](../profiling/media/procguid_1.png "ProcGuid_1")|報告檔的名稱為 Report*YYYYMMDD-HHMM*.diagsession。 如果您決定儲存報告，可以變更名稱。|
-|![步驟2](../profiling/media/procguid_2.png "ProcGuid_2")|時間軸會顯示程式碼剖析工作階段的長度、應用程式週期啟用事件，以及使用者標記。|
-|![步驟3](../profiling/media/procguid_3.png "ProcGuid_3")|您可以拖曳藍色巡覽列，選取時間軸的區域，將報告限制在時間軸的一部分。|
-|![步驟4](../profiling/media/procguid_4.png "ProcGuid_4")|[ **用電量** ] 圖形是多行折線圖，顯示程式碼剖析工作階段期間由裝置資源造成的電源輸出變更。 能源消耗分析工具會追蹤 CPU、網路活動和螢幕顯示器使用的電源。|
-|![步驟5](../profiling/media/procguid_6.png "ProcGuid_6")|[ **資源 (開啟/關閉)**  ] 圖形提供網路能源成本的詳細資料。 [ **網路** ] 橫條圖表示網路連接開啟的時間。 [ **資料傳輸** ] 子橫條圖是應用程式透過網路接收或傳送資料的時間。|
-|![步驟6](../profiling/media/procguid_6a.png "ProcGuid_6a")|[ **用電量摘要** ] 會顯示所選時間軸中 CPU、網路活動和螢幕顯示器使用的能源總計比例。|
+|![步驟 1](../profiling/media/procguid_1.png "ProcGuid_1")|報告檔的名稱為 Report*YYYYMMDD-HHMM*.diagsession。 如果您決定儲存報告，可以變更名稱。|
+|![步驟 2](../profiling/media/procguid_2.png "ProcGuid_2")|時間軸會顯示程式碼剖析工作階段的長度、應用程式週期啟用事件，以及使用者標記。|
+|![步驟 3](../profiling/media/procguid_3.png "ProcGuid_3")|您可以拖曳藍色巡覽列，選取時間軸的區域，將報告限制在時間軸的一部分。|
+|![步驟 4](../profiling/media/procguid_4.png "ProcGuid_4")|[ **用電量** ] 圖形是多行折線圖，顯示程式碼剖析工作階段期間由裝置資源造成的電源輸出變更。 能源消耗分析工具會追蹤 CPU、網路活動和螢幕顯示器使用的電源。|
+|![步驟 5](../profiling/media/procguid_6.png "ProcGuid_6")|[ **資源 (開啟/關閉)**  ] 圖形提供網路能源成本的詳細資料。 [ **網路** ] 橫條圖表示網路連接開啟的時間。 [ **資料傳輸** ] 子橫條圖是應用程式透過網路接收或傳送資料的時間。|
+|![步驟 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|[ **用電量摘要** ] 會顯示所選時間軸中 CPU、網路活動和螢幕顯示器使用的能源總計比例。|
 
  **若要分析能源分析資料**
 
@@ -140,7 +140,7 @@ if (performance && performance.mark) {
 ## <a name="optimize-energy-use"></a>最佳化能源利用
  除了傳輸資料之外，網路連線初始化、維護及關閉連線都會產生能源成本。 某些網路在資料已傳送或接收後仍然保持連線一段時間，以便讓更多資料透過單一連線傳輸。 您可以使用 [ **資源 (開啟/關閉)** ] 窗格檢查應用程式與連接互動的方式。
 
- ![關閉&#40; &#41;窗格&#47;上的資源](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
+ ![資源&#40;&#47;關閉&#41;窗格](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
 
  如果 [ **網路** ] 和 [ **資料傳輸** ] 橫條圖顯示長時間開啟連接，間歇地傳送一系列的小型資料封包，您可以批次處理資料，使其在單一傳輸中傳送，減少開啟網路的時間，因此節省能源成本。
 
@@ -154,9 +154,9 @@ if (performance && performance.mark) {
 
    UWP App 適用的 Visual Studio 模擬器可讓您模擬網路資訊 API 的資料連線屬性。 請參閱[在模擬器中執行 UWP App](../debugger/run-windows-store-apps-in-the-simulator.md)
 
-- [CPU 使用量] 工具可以協助您降低因無效率函式所造成的 CPU 負載。 請參閱[分析 CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md)。
+- [CPU 使用量]**** 工具可以協助您降低因無效率函式所造成的 CPU 負載。 請參閱[分析 CPU 使用率](../profiling/beginners-guide-to-performance-profiling.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

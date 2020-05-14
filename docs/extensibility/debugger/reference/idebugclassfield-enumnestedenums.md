@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedEnums |Microsoft Docs
+title: IDebugClassField::枚外數位 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumNestedEnums method
 ms.assetid: 90fd0cef-9145-4de6-91d4-6c881df39d6e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b8d69c79ed1e27d2c65908d02730f46f4ed6f85
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 38ee3ccd1ffd3130bc918da18c631cf08683f064
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313102"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734403"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
-建立這個類別的巢狀的列舉值的列舉值。
+為此類的嵌套枚舉器創建枚舉器。
 
 ## <a name="syntax"></a>語法
 
@@ -41,15 +41,15 @@ int EnumNestedEnums(
 
 ## <a name="parameters"></a>參數
 `ppEnum`\
-[out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示巢狀的列舉型別的清單。 如果不有任何巢狀列舉型別，則傳回 null 值。
+[出]返回表示嵌套枚舉清單的[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件。 如果沒有嵌套枚舉,則返回 null 值。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回 S_OK，或如果沒有任何巢狀的列舉值，則傳回 S_FALSE。 否則會傳回錯誤碼。
+如果成功,則返回S_OK或返回S_FALSE如果沒有嵌套的枚舉器。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-列舉型別的每個項目是[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)物件，描述巢狀的列舉型別。
+枚舉的每個元素都是描述嵌套枚舉的[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)物件。
 
-在類別內宣告的列舉型別會被視為巢狀的列舉型別。 例如，假設︰
+在類中聲明的枚舉被視為嵌套枚舉。 例如，假設：
 
 ```
 class RootClass {
@@ -57,7 +57,7 @@ class RootClass {
 };
 ```
 
-`EnumNestedEnums`方法會傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，其中包含一個[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)物件，表示`NestedEnum`列舉型別。
+該方法`EnumNestedEnums`將返回一個[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件,該物件包含一個表示枚舉`NestedEnum`的[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)物件。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

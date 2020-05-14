@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2fa0547682351d1a7ba4efe4ce3b4350b906462c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779021"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>如何：收集 Windows 事件追蹤 (ETW) 資料
@@ -30,12 +30,12 @@ Windows 事件追蹤 (ETW) 是高效率的核心層級追蹤功能，可讓程�
 
 ## <a name="to-enable-event-trace-providers"></a>啟用事件追蹤提供者
 
-1. 在 [效能總管]中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。
+1. 在 [效能總管] **** 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性] ****。
 
-2. 在 [屬性頁] 中，按一下 [Windows 事件] 屬性。
+2. 在 [屬性頁]**** 中，按一下 [Windows 事件] **** 屬性。
 
-3. 在 [選取要從中收集資料的事件追蹤提供者] 清單中，選取要用來對應用程式進行程式碼剖析的事件提供者。
+3. 在 [選取要從中收集資料的事件追蹤提供者]**** 清單中，選取要用來對應用程式進行程式碼剖析的事件提供者。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[設定效能工作階段](../profiling/configuring-performance-sessions.md)
+[配置性能會話](../profiling/configuring-performance-sessions.md)

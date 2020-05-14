@@ -1,27 +1,27 @@
 ---
-title: IDebugCodeContext3::GetModule | Microsoft Docs
+title: IDebugCode上下文3:獲取模組 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3::GetModule
 ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6fa2cbc3f7902e3f3cd7674cf9e2d3effb80942e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 20e4bbc32aef11c91e4f5c642bb48acb26633fe1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338874"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734204"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
-擷取的偵錯模組介面的參考。
+檢索對調試模組介面的引用。
 
 ## <a name="syntax"></a>語法
 
@@ -39,13 +39,13 @@ public int GetModule(
 
 ## <a name="parameters"></a>參數
 `ppModule`\
-[out]偵錯模組介面的參考。
+[出]對調試模組介面的引用。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法，如**CDebugCodeContext**公開 （expose） 的物件[IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)介面。
+下面的範例展示如何為公開[IDebugToSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)介面的**CDebugCodeContext物件**實現此方法。
 
 ```cpp
 HRESULT CDebugCodeContext::GetModule(IDebugModule2** ppModule)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortRequest2 | Microsoft Docs
+title: IDebugPortRequest2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortRequest2 interface
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83f70a9fe027f004ef3829827ba8af40f7fb72e3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 163718fda344ba5f3f44ef630b4eba3e5613dc61
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340316"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724794"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
-這個介面會描述連接埠。 若要將連接埠新增至連接埠提供者會使用這個描述。
+此介面描述埠。 此說明用於將埠添加到埠供應商。
 
 ## <a name="syntax"></a>語法
 
@@ -28,28 +28,28 @@ ms.locfileid: "66340316"
 IDebugPortRequest2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- Visual Studio 通常會實作這個介面，在過程中從連接埠提供者取得偵錯連接埠。
+## <a name="notes-for-implementers"></a>實施者說明
+ Visual Studio 通常在從埠供應商獲取調試埠的過程中實現此介面。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 這個介面傳入[下列](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)建立偵錯連接埠。 呼叫[GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)傳回這個介面，代表用來在一開始建立連接埠的要求。
+## <a name="notes-for-callers"></a>通話備註
+ 此介面傳遞到[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)以創建除錯埠。 對[GetPortRequest 的](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)調用將返回此介面,表示最初用於創建埠的請求。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IDebugPortRequest2`。
 
 |方法|描述|
 |------------|-----------------|
-|[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|取得要建立的連接埠的名稱。|
+|[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|獲取要建立的埠的名稱。|
 
 ## <a name="remarks"></a>備註
- 偵錯引擎通常不會使用連接埠提供者互動，而且必須沒有使用此介面。
+ 調試引擎通常不與埠供應商交互,並且對此介面沒有用處。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

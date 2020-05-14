@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a547122579da8bb19935e268a1845a8ed8d4b03
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114225"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>專案設計工具、My 擴充頁 (Visual Basic)
-使用 [專案設計工具] 的 [My 延伸模組] 頁面管理專案中的 `My` 命名空間延伸模組。 `My` 命名空間延伸模組可讓您自訂 `My` 命名空間，新增您自己的自訂成員。 如需建立自訂 `My` 命名空間延伸模組的資訊，請參閱[擴充 Visual Basic 中的 My 命名空間](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)。
+使用 [專案設計工具]**** 的 [My 延伸模組]**** 頁面管理專案中的 `My` 命名空間延伸模組。 `My` 命名空間延伸模組可讓您自訂 `My` 命名空間，新增您自己的自訂成員。 如需建立自訂 `My` 命名空間延伸模組的資訊，請參閱[擴充 Visual Basic 中的 My 命名空間](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)。
 
-若要存取 [My 延伸模組] 頁面，在方案總管中按兩下專案節點的 [我的專案]。 [專案設計工具] 出現時，請按一下 [My 延伸模組] 索引標籤。
+若要存取 [My 延伸模組]**** 頁面，在方案總管**** 中按兩下專案節點的 [我的專案]****。 [專案設計工具]******** 出現時，請按一下 [My 延伸模組] 索引標籤。
 
 ## <a name="uielement-list"></a>UIElement 清單
 下列選項可讓您新增或移除專案中的 `My` 命名空間延伸模組。 `My` 命名空間延伸模組必須先安裝成 Visual Studio 項目範本，才能提供新增。 如需發佈和安裝 `My` 命名空間延伸模組的資訊，請參閱[封裝和部署自訂的 My 延伸模組](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)。
@@ -34,13 +34,13 @@ ms.locfileid: "76114225"
 
  **增延伸模組**
 
-按一下此按鈕將已安裝的 `My` 命名空間延伸模組加入專案中。 一份所有可能的 `My` 命名空間延伸模組清單隨即出現。 選取您要新增至專案的 `My` 命名空間延伸模組，然後按一下 [確定] 新增它。
+按一下此按鈕將已安裝的 `My` 命名空間延伸模組加入專案中。 一份所有可能的 `My` 命名空間延伸模組清單隨即出現。 選取您要新增至專案的 `My` 命名空間延伸模組，然後按一下 [確定]**** 新增它。
 
  **移除延伸模組**
 
-在 [My 命名空間延伸模組] 清單中選取一或多個參考，然後一下此按鈕移除專案的 `My` 命名空間延伸模組。
+在 [My 命名空間延伸模組]**** 清單中選取一或多個參考，然後一下此按鈕移除專案的 `My` 命名空間延伸模組。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [擴充 Visual Basic 中的 My 命名空間](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [封裝和部署自訂的 My 擴充](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)

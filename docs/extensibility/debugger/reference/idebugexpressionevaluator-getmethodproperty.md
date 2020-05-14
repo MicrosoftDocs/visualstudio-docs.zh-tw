@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodProperty |Microsoft Docs
+title: IDebug運算式評估器::獲取方法屬性 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::GetMethodProperty method
 ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d965161f6f0a6aadd8aab89a3001e56c2e807fa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ebcf24ee39505091ff79c1f2f31d505217f77efb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325699"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729512"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
-這個方法會取得屬性的物件，其中包含 區域變數、 引數和 其他屬性的方法。
+此方法獲取包含方法的局部變數、參數和其他屬性的屬性物件。
 
 ## <a name="syntax"></a>語法
 
@@ -49,25 +49,25 @@ int GetMethodProperty(
 
 ## <a name="parameters"></a>參數
 `pSymbolProvider`\
-[in]符號提供者使用，以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件。
+[在]要使用的符號提供者,表示為[IDebugSymbol 提供程式](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件。
 
 `pAddress`\
-[in]在程式碼，以表示中的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件應該是解析成最接近包含函式。
+[在]代碼中的位址(表示為[IDebugAddress 物件](../../../extensibility/debugger/reference/idebugaddress.md))應解析為最近的包含函數。
 
 `pBinder`\
-[in]要使用的繫結器表示為[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。
+[在]要使用的活頁夾,表示為[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。
 
 `fIncludeHiddenLocals`\
-[in]非零值 (`TRUE`) 表示要包含隱藏的區域變數; 零 (`FALSE`) 表示保留隱藏 [區域變數]
+[在]非零`TRUE`() 表示包括隱藏的局部變數;零`FALSE`( ) 意味著排除隱藏的當地人
 
 `ppProperty`\
-[out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示的方法。
+[出]返回表示方法的[IDebug Property2](../../../extensibility/debugger/reference/idebugproperty2.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 隱藏 [區域變數] 通常是由編譯器所產生的變數。
+ 隱藏的局部變數通常是編譯器生成的變數。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

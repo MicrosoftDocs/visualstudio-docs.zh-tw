@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7468fbd6422248f2f15bf74e70cdf9c5bee849c3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593625"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
@@ -32,19 +32,19 @@ ms.locfileid: "75593625"
 devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 
-- *SolutionName*
+- *解決方案名稱*
 
   方案檔的完整路徑和名稱。
 
-- *ProjectName*
+- *專案名稱*
 
   專案檔的完整路徑和名稱。
 
-- `/Out` *OutputFilename*
+- `/Out`*輸出檔案名*
 
-  選擇項。 您要將工具的輸出傳送到其中的檔案名稱。 如果檔案已經存在，工具就會將輸出附加至檔案結尾。
+  選擇性。 您要將工具的輸出傳送到其中的檔案名稱。 如果檔案已經存在，工具就會將輸出附加至檔案結尾。
 
 ## <a name="remarks"></a>備註
 
@@ -52,7 +52,7 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
 - 請以雙引號括住包含空格的字串。
 
-- 摘要資訊 (包含錯誤) 可以顯示在 [命令] 視窗中，或使用 `/Out` 參數指定的任何記錄檔中。
+- 摘要資訊 (包含錯誤) 可以顯示在 [命令]**** 視窗中，或使用 `/Out` 參數指定的任何記錄檔中。
 
 ## <a name="example"></a>範例
 
@@ -62,10 +62,10 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
 - [/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/重建（德文夫.exe）](../../ide/reference/rebuild-devenv-exe.md)
 - [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

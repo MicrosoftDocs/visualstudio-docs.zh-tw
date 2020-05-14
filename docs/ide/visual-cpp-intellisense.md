@@ -8,21 +8,21 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594210"
 ---
 # <a name="visual-c-intellisense-features"></a>Visual C++ IntelliSense 功能
 
-IntelliSense 是一組功能的名稱，這些功能可讓撰寫程式碼變得更方便。 IntelliSense for C++ 適用於獨立檔案以及屬於 C++ 專案的檔案。 在跨平台專案中，某些 IntelliSense 功能可用於共用程式碼專案中的 *.cpp* 和 *.c* 檔案，即使您是在 Android 或 iOS 內容中亦然。
+IntelliSense 是一組功能的名稱，這些功能可讓撰寫程式碼變得更方便。 IntelliSense for C++ 適用於獨立檔案以及屬於 C++ 專案的檔案。 在跨平臺專案中，一些 IntelliSense 功能在共用代碼專案中的 *.cpp*和 *.c*檔中可用，即使您處於 Android 或 iOS 上下文中也是如此。
 
 此文章提供 C+ + IntelliSense 功能的概觀。 如需為專案設定 IntelliSense 與如何針對問題進行疑難排解的詳細資訊，請參閱[設定 C++ IntelliSense 專案](visual-cpp-intellisense-configuration.md)。
 
 ## <a name="intellisense-features-in-c"></a>C++ 中的 IntelliSense 功能
 
-IntelliSense 是一組功能的名稱，這些功能可讓撰寫程式碼變得更方便。 由於不同的人對於方便有不同的想法，因此幾乎所有的 IntelliSense 功能都能在 [文字編輯器] > [C/C++] > [進階] 屬性頁下的 [選項] 對話方塊中啟用或停用。 請從功能表列上的 [工具] 功能表使用 [選項] 對話方塊。
+IntelliSense 是一組功能的名稱，這些功能可讓撰寫程式碼變得更方便。 由於不同的人對於方便有不同的想法，因此幾乎所有的 IntelliSense 功能都能在 [文字編輯器]**** > [C/C++]**** > [進階]**** 屬性頁下的 [選項]**** 對話方塊中啟用或停用。 請從功能表列上的 [工具]**** 功能表使用 [選項]**** 對話方塊。
 
 ![[工具選項] 對話方塊](../ide/media/sintellisensecpptoolsoptions.PNG)
 
@@ -34,23 +34,23 @@ IntelliSense 是一組功能的名稱，這些功能可讓撰寫程式碼變得�
 
 當您開始輸入關鍵字、型別、函式、變數名稱或其他編譯器可辨識的程式元素時，編輯器會提供建議，幫您自動完成文字。
 
-如需圖示及其意義的清單，請參閱[類別檢視和物件瀏覽器圖示](../ide/class-view-and-object-browser-icons.md)。
+有關圖示及其含義的清單，請參閱[類視圖和物件瀏覽器圖示](../ide/class-view-and-object-browser-icons.md)。
 
 ![Visual C&#43;&#43; 自動完成文字視窗](../ide/media/vs2015_cpp_complete_word.png)
 
-您第一次叫用成員清單時，它只會顯示目前內容可存取的成員。 如果您在那之後按 **Ctrl**+**J**，便會顯示所有成員而不論是否能存取。 如果您第三次叫用它，會顯示更多的程式項目清單。 您可以在 [文字編輯器] > [C/C++] > [一般] > [自動列出成員] 下的 [選項] 對話方塊中關閉成員清單。
+您第一次叫用成員清單時，它只會顯示目前內容可存取的成員。 如果之後按**Ctrl**+**J，** 則顯示所有成員，而不考慮可訪問性。 如果您第三次叫用它，會顯示更多的程式項目清單。 您可以在 [文字編輯器]**** > [C/C++]**** > [一般]**** > [自動列出成員]**** 下的 [選項]**** 對話方塊中關閉成員清單。
 
 ![Visual C&#43;&#43; 成員清單](../ide/media/vs2015_cpp_list_members.png)
 
 ## <a name="parameter-help"></a>參數說明
 
-當您輸入函式呼叫的左括號或在類別樣板變數宣告上的角括號時，編輯器會顯示一個小視窗，其中具有每個函式或建構函式多載的參數類型。 「目前」參數會根據游標位置以粗體顯示。 您可以在 [文字編輯器] > [C/C++] > [一般] > [參數資訊] 下的 [選項] 對話方塊中關閉參數資訊。
+當您輸入函式呼叫的左括號或在類別樣板變數宣告上的角括號時，編輯器會顯示一個小視窗，其中具有每個函式或建構函式多載的參數類型。 「目前」參數會根據游標位置以粗體顯示。 您可以在 [文字編輯器]**** > [C/C++]**** > [一般]**** > [參數資訊]**** 下的 [選項]**** 對話方塊中關閉參數資訊。
 
 ![Visual C&#43;&#43; 參數說明](../ide/media/vs_2015_cpp_param_help.png)
 
 ## <a name="quick-info"></a>快速諮詢
 
-當您將滑鼠游標停留在變數時，會內嵌出現一個小視窗，其中顯示類型資訊和類型定義所在的標頭。 將游標暫留在函式呼叫，可查看函式的簽章。 您可以在 [文字編輯器] > [C/C++] > [一般] > [自動快速諮詢] 下的 [選項] 對話方塊中關閉快速諮詢。
+當您將滑鼠游標停留在變數時，會內嵌出現一個小視窗，其中顯示類型資訊和類型定義所在的標頭。 將游標暫留在函式呼叫，可查看函式的簽章。 您可以在 [文字編輯器]**** > [C/C++]**** > [一般]**** > [自動快速諮詢]**** 下的 [選項]**** 對話方塊中關閉快速諮詢。
 
 ![Visual C&#43;&#43; QuickInfo](../ide/media/vs2015_cpp_quickinfo.png)
 
@@ -62,7 +62,7 @@ IntelliSense 是一組功能的名稱，這些功能可讓撰寫程式碼變得�
 
 ### <a name="code-colorization-and-fonts"></a>程式碼顏色標示和字型
 
-預設色彩和字型可以在 [環境] > [字型和色彩] 下的 [選項] 對話方塊中變更。 您可以在這裡變更許多 UI 視窗的字型，而不只是編輯器。 C++ 特有的設定會以 "C++" 為開頭；其他設定則適用於所有語言。
+預設色彩和字型可以在 [環境]**** > [字型和色彩]**** 下的 [選項]**** 對話方塊中變更。 您可以在這裡變更許多 UI 視窗的字型，而不只是編輯器。 C++ 特有的設定會以 "C++" 為開頭；其他設定則適用於所有語言。
 
 ## <a name="cross-platform-intellisense"></a>跨平台 IntelliSense
 
@@ -72,7 +72,7 @@ IntelliSense 是一組功能的名稱，這些功能可讓撰寫程式碼變得�
 
 ![已將 iOS 選取為作用中的專案。](../ide/media/intellisensecppcrossplatform2.png)
 
-請注意以下各點：
+請注意：
 
 - 第 6 行上的 `#ifdef` 分支呈現灰色，表示非使用中的區域，因為 `__ANDROID__` 不是針對 iOS 專案而定義。
 
@@ -90,21 +90,21 @@ IntelliSense 是一組功能的名稱，這些功能可讓撰寫程式碼變得�
 
 ## <a name="intellisense-for-stand-alone-files"></a>獨立檔案的 IntelliSense
 
-當您開啟任何專案以外的單一檔案時，仍可使用 IntelliSense。 您可以在 [文字編輯器] > [C/C++] > [進階] 下的 [選項] 對話方塊中啟用或停用特定的 IntelliSense 功能。 若要針對不是專案一部分的單一檔案設定 IntelliSense，請尋找 [非專案檔案的 IntelliSense 及瀏覽功能] 區段。
+當您開啟任何專案以外的單一檔案時，仍可使用 IntelliSense。 您可以在 [文字編輯器]**** > [C/C++]**** > [進階]**** 下的 [選項]**** 對話方塊中啟用或停用特定的 IntelliSense 功能。 若要針對不是專案一部分的單一檔案設定 IntelliSense，請尋找 [非專案檔案的 IntelliSense 及瀏覽功能]**** 區段。
 
 ![Visual C&#43;&#43; 單一檔案 IntelliSense](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
-依預設，單一檔案 IntelliSense 僅使用標準 include 目錄來尋找標頭檔。 若要新增其他目錄，請開啟 [方案] 節點上的捷徑功能表，並將您的目錄新增至 [偵錯原始程式檔] 清單，如下圖所示：
+依預設，單一檔案 IntelliSense 僅使用標準 include 目錄來尋找標頭檔。 若要新增其他目錄，請開啟 [方案]**** 節點上的捷徑功能表，並將您的目錄新增至 [偵錯原始程式檔]**** 清單，如下圖所示：
 
 ![將路徑加入標頭檔。](../ide/media/intellisensedebugyourcode.jpg)
 
 ## <a name="enable-or-disable-features"></a>啟用或停用功能
 
-由於不同的人對於方便有不同的想法，因此幾乎所有的 IntelliSense 功能都能在 [文字編輯器] > [C/C++] > [進階] 屬性頁下的 [選項] 對話方塊中啟用或停用。 請從功能表列上的 [工具] 功能表使用 [選項] 對話方塊。
+由於不同的人對於方便有不同的想法，因此幾乎所有的 IntelliSense 功能都能在 [文字編輯器]**** > [C/C++]**** > [進階]**** 屬性頁下的 [選項]**** 對話方塊中啟用或停用。 請從功能表列上的 [工具]**** 功能表使用 [選項]**** 對話方塊。
 
 ![[工具選項] 對話方塊](../ide/media/sintellisensecpptoolsoptions.PNG)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [使用 IntelliSense](../ide/using-intellisense.md)
+- [Using IntelliSense](../ide/using-intellisense.md)
 - [設定 C++ IntelliSense 專案](visual-cpp-intellisense-configuration.md)

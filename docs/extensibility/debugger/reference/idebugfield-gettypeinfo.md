@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetTypeInfo | Microsoft Docs
+title: IDebugField:獲取類型資訊 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetTypeInfo method
 ms.assetid: bb5acfa3-04c3-4088-be84-9ff8926cd16f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc48442e27315e289c812c14e0ae70d8b8fd437a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: faa3464f0396999f36604aa88c429235d4849688
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333108"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728774"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
-這個方法會取得型別無關的符號或類型資訊。
+此方法獲取有關符號或類型的資訊與類型無關。
 
 ## <a name="syntax"></a>語法
 
@@ -41,15 +41,15 @@ int GetTypeInfo(
 
 ## <a name="parameters"></a>參數
 `pTypeInfo`\
-[out]傳回中所提供的類型資訊[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)結構。
+[出]返回提供的[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)結構中的類型資訊。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 比方說，獨立於類型的資訊會包括 AppDomain、 模組，以及包含符號的類別。
+ 與類型無關的資訊將包括 AppDomain、模組和包含符號的類。
 
 ## <a name="see-also"></a>另請參閱
-- [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)
+- [取得類型](../../../extensibility/debugger/reference/idebugfield-gettype.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

@@ -1,5 +1,5 @@
 ---
-title: CustomParameter 元素 （Visual Studio 範本） |Microsoft Docs
+title: 自定義參數元素(可視化工作室範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - CustomParameters element [Visual Studio project templates]
 ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbf76edec01cce52768f36dc534d50b580b64230
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9063a354f03b896e189566e8d84a18caf7509db8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322268"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739424"
 ---
-# <a name="customparameter-element-visual-studio-templates"></a>CustomParameter 元素 （Visual Studio 範本）
-包含自訂的參數名稱和值，以從範本建立專案或項目時使用。
+# <a name="customparameter-element-visual-studio-templates"></a>自訂參數元素(視覺化工作室範本)
+包含自定義參數名稱和值,用於從範本創建專案或項時使用。
 
 ## <a name="syntax"></a>語法
 
@@ -36,8 +36,8 @@ ms.locfileid: "66322268"
 
 |屬性|描述|
 |---------------|-----------------|
-|`Name`|必要項。 參數名稱。 參數的格式為 $*名稱*$。|
-|`Value`|必要項。 參數的取代值。|
+|`Name`|必要。 參數名稱。 參數的格式是 $*名稱*$。|
+|`Value`|必要。 參數的替換值。|
 
 ### <a name="child-elements"></a>子元素
  無。
@@ -46,13 +46,13 @@ ms.locfileid: "66322268"
 
 |元素|描述|
 |-------------|-----------------|
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|群組精靈會讓參數替代項目時，要傳遞至 [範本] 精靈的自訂參數。|
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|對嚮導進行參數替換時要傳遞給範本嚮導的自定義參數進行分組。|
 
 ## <a name="remarks"></a>備註
- 當範本包含`CustomParameter`項目，每個執行個體`Name`屬性會取代`Value`中建立的專案或項目檔案的屬性。
+ 當範本包含`CustomParameter`元素時,每個實例的`Name`屬性 都將替換為創建的專案`Value`或項 檔中的屬性。
 
 ## <a name="example"></a>範例
- 下列範例示範如何使用在範本中的數個自訂參數。 當從具有下列自訂參數的所有執行個體的範本建立專案或項目`$color1$`並`$color2$`範本中的檔案將會取代`Red`和`Blue`分別。
+ 下面的範例展示如何在範本中使用多個自定義參數。 從您有以下自訂參數的樣本建立項目或項目`$color1$`, 樣本檔中的所有實體會`$color2$`取代為`Red`與`Blue`。
 
 ```
 <CustomParameters>
@@ -62,6 +62,6 @@ ms.locfileid: "66322268"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [CustomParameters 項目 （Visual Studio 範本）](../extensibility/customparameters-element-visual-studio-templates.md)
+- [自訂參數元素(視覺化工作室範本)](../extensibility/customparameters-element-visual-studio-templates.md)
 - [範本參數](../ide/template-parameters.md)
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)

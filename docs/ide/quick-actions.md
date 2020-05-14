@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596953"
 ---
 # <a name="quick-actions"></a>快速動作
@@ -23,34 +23,34 @@ ms.locfileid: "75596953"
 
 快速動作可用於：
 
-- 針對[程式碼分析器](../code-quality/roslyn-analyzers-overview.md)規則的違規情況套用程式碼修正
+- 為[代碼分析器](../code-quality/roslyn-analyzers-overview.md)規則衝突應用代碼修復
 
 ::: moniker range=">=vs-2019"
 
-- [隱藏](../code-quality/use-roslyn-analyzers.md#suppress-violations)程式碼分析器規則違規或[設定](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)其嚴重性
+- [禁止](../code-quality/use-roslyn-analyzers.md#suppress-violations)違反代碼分析器規則或[配置](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)其嚴重性
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-- [隱藏](../code-quality/use-roslyn-analyzers.md#suppress-violations)程式碼分析器規則的違規情況
+- [禁止](../code-quality/use-roslyn-analyzers.md#suppress-violations)代碼分析器規則衝突
 
 ::: moniker-end
 
-- 套用重構作業 (例如，[內嵌暫存變數](../ide/reference/inline-temporary-variable.md))
+- 應用重構（例如，[內聯臨時變數](../ide/reference/inline-temporary-variable.md)）
 
-- 產生程式碼 (例如，[引進區域變數](../ide/reference/introduce-local-variable.md))
+- 生成代碼（例如，[引入區域變數](../ide/reference/introduce-local-variable.md)）
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[重構 (Visual Studio for Mac)](/visualstudio/mac/refactoring)。
 
-快速動作的套用方式包括使用燈泡 ![燈泡圖示](media/light-bulb-icon.png) 或螺絲起子 ![螺絲起子圖示](media/screwdriver-icon.png) 圖示，以及按 **Ctrl**+ **.** 當游標位於可使用動作的程式碼行上時。 如果有紅色波浪線指出錯誤，而且 Visual Studio 有適用於該錯誤的修正，您將會看到錯誤燈泡 ![錯誤燈泡圖示](media/error-light-bulb-icon.png)。
+快速![操作可以通過使用燈泡燈泡圖示](media/light-bulb-icon.png)或螺絲刀![螺絲刀圖示圖示](media/screwdriver-icon.png)，或通過按**Ctrl**+**應用。** 當游標位於可使用動作的程式碼行上時。 如果有紅色波浪線指出錯誤，而且 Visual Studio 有適用於該錯誤的修正，您將會看到錯誤燈泡 ![錯誤燈泡圖示](media/error-light-bulb-icon.png)。
 
 例如，協力廠商可以針對任何語言，在 SDK 當中提供自訂診斷和建議，而 Visual Studio 燈泡會依據那些規則來顯示。
 
 ## <a name="icons"></a>圖示
 
-當有快速動作可用時，顯示的圖示會指出可用的修正或重構類型。 *螺絲起子*![螺絲起子圖示](media/screwdriver-icon.png) 圖示表示有動作可以變更程式碼，但您不應該使用它們。 *黃色*燈泡 ![燈泡圖示](media/light-bulb-icon.png) 圖示表示有一些*動作可供您用*來改善程式碼。 *錯誤*燈泡 ![錯誤燈泡圖示](media/error-light-bulb-icon.png) 圖示表示有可在程式碼中修正錯誤的動作。
+當有快速動作可用時，顯示的圖示會指出可用的修正或重構類型。 「螺絲起子」** ![螺絲起子圖示](media/screwdriver-icon.png)圖示表示有可變更程式碼的動作，但不一定要使用。 「黃色燈泡」** ![燈泡圖示](media/light-bulb-icon.png)圖示表示有「應」** 執行的動作，以改善程式碼。 「錯誤燈泡」** ![錯誤燈泡圖示](media/error-light-bulb-icon.png)圖示表示有動作可修正您程式碼中的錯誤。
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>顯示燈泡或螺絲起子
 
@@ -62,16 +62,16 @@ ms.locfileid: "75596953"
 
 - 當您將插入號 (游標) 移至適用的程式碼行時的編輯器左邊界中
 
-您也可以按 **Ctrl**+。 即可看到可用快速動作與重構的清單。
+您也可以按**Ctrl**+**。** 即可看到可用快速動作與重構的清單。
 
-若要查看可能的修正，請選取燈泡旁的向下箭號或 [顯示可能的修正] 連結。 隨即顯示可用的 [快速動作] 清單。
+若要查看可能的修正，請選取燈泡旁的向下箭號或 [顯示可能的修正]**** 連結。 隨即顯示可用的 [快速動作] 清單。
 
 ![放大的燈泡](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 中的程式碼產生](../ide/code-generation-in-visual-studio.md)
+- [視覺化工作室中的代碼生成](../ide/code-generation-in-visual-studio.md)
 - [常用的快速動作](../ide/common-quick-actions.md)
-- [程式碼樣式及快速動作](../ide/code-styles-and-code-cleanup.md)
+- [代碼樣式和快速操作](../ide/code-styles-and-code-cleanup.md)
 - [撰寫和重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [重構 (Visual Studio for Mac)](/visualstudio/mac/refactoring)

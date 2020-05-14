@@ -1,22 +1,23 @@
 ---
-title: 產生 using
-ms.date: 02/19/2019
+title: 產生的 using
+ms.date: 03/10/2020
 ms.topic: reference
-author: kendrahavens
-ms.author: kehavens
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: f3b3435e10d6bb9a71fd16b9286759b136c167f4
-ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
+ms.openlocfilehash: 903b160bac0e8096062e09fd78ff4c92c46cf8ee
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77544551"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094309"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>在 Visual Studio 中新增遺漏的 using
 
@@ -24,29 +25,31 @@ ms.locfileid: "77544551"
 
 - C#
 
-**功能：** 讓您立即為複製和貼上的程式碼新增必要的匯入或[使用](/dotnet/csharp/language-reference/keywords/using-directive)指示詞。
+- Visual Basic
 
-時機 **：** 從您的專案或其他來源中的不同位置複製程式碼，並將它貼入新的程式碼，是常見的作法。 這個快速動作會尋找複製和貼上程式碼缺少匯入指示詞，然後提示您加入它們。 這個程式碼修正也可以將專案的參考加入至專案。
+**內容：** 允許您立即添加必要的導入或使用[指令](/dotnet/csharp/language-reference/keywords/using-directive)進行複製和粘貼代碼。
 
-**原因：** 因為快速動作會自動新增必要的匯入，所以您不需要手動複製程式碼所需的 `using` 指示詞。
+**何時：** 通常的做法是從專案或其他源的不同位置複製代碼並將其粘貼到新代碼中。 此快速操作查找缺少複製和粘貼代碼的導入指令，然後提示您添加它們。 此代碼修復還可以從專案到專案增加參考。
+
+**原因：** 由於"快速操作"會自動添加必要的導入，因此無需手動複製代碼所需的`using`指令。
 
 ## <a name="add-missing-usings-refactoring"></a>新增遺漏的 using 重構
 
-1. 複製檔案中的程式碼，並將它貼入新的檔案，而不包含必要的 `using` 指示詞。 產生的錯誤會伴隨程式碼修正，以加入遺漏的 `using` 指示詞。
+1. 從檔案複製代碼並將其粘貼到新檔中，而不包含必要的`using`指令。 生成的錯誤附帶添加缺少`using`的指令的代碼修復程式。
 
     > [!NOTE]
-    > 您需要在 [工具] > [選項] > [文字編輯器] > [C#] > [進階] > [Using 指示詞] 中啟用此建議。
+    > 您需要在 [工具] > [選項] > [文字編輯器] > [C#] > [進階] > [Using 指示詞]**** 中啟用此建議。
 
-2. 選取 Ctrl+. 以開啟 [快速動作與重構] 功能表。
+2. 選取 Ctrl+. 以開啟 [快速動作與重構]**** 功能表。
 
-    ![產生 using](media/generate-using-codefix.png)
+    ![產生的 using](media/generate-using-codefix.png)
 
-3. 選取 [使用**您的參考\<]\>** 以新增遺失的參考。
+3. 選取 [使用\<您的參考\>]**** 以新增遺失的參考。
 
     ![產生 using 結果](media/generate-using-result.png)
 
 ## <a name="see-also"></a>另請參閱
 
-- [程式碼產生](../code-generation-in-visual-studio.md)
+- [產生程式碼](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)
-- [.NET 開發人員的秘訣](../csharp-developer-productivity.md)
+- [.NET 開發人員的提示](../csharp-developer-productivity.md)

@@ -12,21 +12,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778046"
 ---
 # <a name="understand-sampling-data-values"></a>了解取樣資料值
 
-Visual Studio 分析工具的「取樣」分析方法會依設定的間隔來中斷電腦處理器，並收集函式呼叫堆疊。 「呼叫堆疊」是一個動態結構，其中儲存在處理器上執行的函式相關資訊。
+Visual Studio 分析工具的「取樣」** 分析方法會依設定的間隔來中斷電腦處理器，並收集函式呼叫堆疊。 「呼叫堆疊」** 是一個動態結構，其中儲存在處理器上執行的函式相關資訊。
 
 分析工具分析會判斷處理器是否正在執行目標處理序中的程式碼。 如果處理器未在執行目標處理序中的程式碼，則會捨棄此樣本。
 
 如果處理器在執行目標程式碼，分析工具會讓呼叫堆疊上每個函式的樣本計數遞增。 取樣時，呼叫堆疊上只能有一個函式正在執行程式碼。 堆疊上的其他函式則是函式呼叫階層中的父代，會等候其子系傳回。
 
-對於樣本事件，該分析工具會讓目前正在執行其指示的函式「專有」樣本計數遞增。 因為專有樣本也是函式總 (內含) 樣本數的一部分，所以目前作用中函式的內含樣本計數也會遞增。
+對於樣本事件，該分析工具會讓目前正在執行其指示的函式「專有」** 樣本計數遞增。 因為專有樣本也是函式總 (內含**) 樣本數的一部分，所以目前作用中函式的內含樣本計數也會遞增。
 
  分析工具會讓呼叫堆疊上所有其他函式的內含樣本計數遞增。
 
@@ -50,7 +50,7 @@ Visual Studio 分析工具的「取樣」分析方法會依設定的間隔來中
 
 就程式碼剖析執行時的專有樣本總數，函式或資料範圍的專有樣本所佔的百分比。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
-[分析效能工具資料](../profiling/analyzing-performance-tools-data.md)
+[分析性能工具資料](../profiling/analyzing-performance-tools-data.md)

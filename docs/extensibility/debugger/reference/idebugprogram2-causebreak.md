@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak |Microsoft Docs
+title: IDebugProgram2::原因中斷 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::CauseBreak
 ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a01b5982b4f747bd70c3a35bc0b7191bb54cd21b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e96db32d7ba5a01f89530623c949500a265cdb60
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311350"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723105"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
-程式停止執行下一個要求的時間執行其執行緒嘗試的其中一個。
+請求程式在下次線程嘗試運行時停止執行。
 
 ## <a name="syntax"></a>語法
 
@@ -38,12 +38,12 @@ int CauseBreak();
 ```
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)接下來，程式會嘗試將執行程式碼之後會呼叫這個方法, 時，就會傳送事件。
+ 當程式下次嘗試在調用此方法後運行代碼時,將發送[IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)事件。
 
- 這個方法是非同步方法會立即傳回而不一定會等候程式停止。
+ 此方法是異步的,因為該方法立即返回,而不一定等待程式停止。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

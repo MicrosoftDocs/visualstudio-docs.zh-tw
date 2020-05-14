@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO | Microsoft Docs
+title: MODULE_INFO |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO structure
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db67710fd7ee71cddf1e7dbee030cb208a1de86c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339114"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714306"
 ---
-# <a name="moduleinfo"></a>MODULE_INFO
-描述特定模組 （DLL、 EXE 或組件）。
+# <a name="module_info"></a>MODULE_INFO
+描述特定模組(DLL、EXE 或程式集)。
 
 ## <a name="syntax"></a>語法
 
@@ -63,55 +63,55 @@ public struct MODULE_INFO { 
 
 ## <a name="members"></a>成員
  `dwValidFields`\
- 從旗標的組合[MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)列舉，指定哪些欄位都已填寫。
+ [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)枚舉中的標誌的組合,用於指定填寫哪些欄位。
 
  `m_bstrName`\
  模組名稱。
 
  `m_bstrUrl`\
- 模組的 URL。
+ 模組 URL。
 
  `m_bstrVersion`\
  模組版本。
 
  `m_bstrDebugMessage`\
- 是選擇性的訊息相關模組，比方說，「 無法載入符號。 」
+ 有關模組的可選消息,例如,"無法載入符號"。
 
  `m_addrLoadAddress`\
- 模組載入地址。
+ 模組載入位址。
 
  `m_addrPreferredLoadAddress`\
- 模組的慣用的載入位址。
+ 模組的首選負載位址。
 
  `m_dwSize`\
  模組大小。
 
  `m_dwLoadOrder`\
- 模組的載入順序。
+ 模組載入順序。
 
  `m_TimeStamp`\
- 符號檔案上次修改時間。
+ 上次修改符號文件的時間。
 
  `m_bstrUrlSymbolLocation`\
- 符號檔的位置 (例如，"。\\") 指定模組中。 用做為起始的位置來尋找符號的模組。
+ 符號檔的位置(例如,".")\\在模組中指定。 用作查找模組符號的起始位置。
 
  `m_dwModuleFlags`\
- 從旗標的組合[MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)說明模組的列舉型別。
+ 描述模組[MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)枚舉的標誌的組合。
 
 ## <a name="remarks"></a>備註
- 此結構會傳遞至[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)填滿其中的方法。
+ 此結構傳遞給填寫它的[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)方法。
 
- 此結構會對應至每個模組中所列**模組**視窗。
+ 此結構對應於 **「模組」** 視窗中列出的每個模組。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

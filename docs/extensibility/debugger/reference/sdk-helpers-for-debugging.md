@@ -1,5 +1,5 @@
 ---
-title: SDK 協助程式進行偵錯 |Microsoft Docs
+title: 除除錯的 SDK 說明器 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,32 +9,32 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74b9047ef6df1e6bf20a5b5a95e40e27ed1b1926
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9edb7c508fdea6736a71c0f70c0d2ff305d4a399
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329218"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713642"
 ---
 # <a name="sdk-helpers-for-debugging"></a>適用於偵錯的 SDK 協助程式
-這些函式和宣告是實作偵錯引擎、 運算式評估工具和符號中的提供者的全域 helper 函式C++。
+這些函數和聲明是全域説明器函數,用於在C++中實現調試引擎、表達式賦值器和符號提供程式。
 
 > [!NOTE]
-> 此時沒有任何受管理的版本，這些函式和宣告。
+> 目前這些函數和聲明沒有託管版本。
 
-## <a name="overview"></a>總覽
- 為了讓偵錯引擎、 運算式評估工具和符號提供者以供 Visual Studio，您必須註冊它們。 這是藉由設定登錄子機碼和項目，亦稱為 「 設定度量 」。 下列全域函式被設計來簡化更新這些計量的程序。 若要了解這些函式會更新每個登錄子機碼的版面配置的登錄位置，請參閱章節。
+## <a name="overview"></a>概觀
+ 為了使調試引擎、表達式評估器和符號提供程式由 Visual Studio 使用,必須對其進行註冊。 這是通過設置註冊表子鍵和條目(也稱為"設置指標")來完成的。 以下全域函數旨在簡化更新這些指標的過程。 請參閱註冊表位置部分,瞭解這些函數更新的每個註冊表子鍵的佈局。
 
-## <a name="general-metric-functions"></a>一般計量函式
- 這些是偵錯引擎所使用的一般函式。 運算式評估工具針對特製化函式，並稍後詳述符號提供者。
+## <a name="general-metric-functions"></a>一般指標函數
+ 這些是調試引擎使用的一般函數。 稍後將詳細介紹表達式賦值器和符號提供程式的專用函數。
 
-### <a name="getmetric-method"></a>GetMetric 方法
- 從登錄擷取的基準值。
+### <a name="getmetric-method"></a>取得測量方法
+ 從註冊表檢索指標值。
 
 ```cpp
 HRESULT GetMetric(
@@ -49,15 +49,15 @@ HRESULT GetMetric(
 
 |參數|描述|
 |---------------|-----------------|
-|pszMachine|[in]將寫入其註冊，可能是遠端機器的名稱 (`NULL`表示本機電腦)。|
-|pszType|[in]其中一個計量的類型。|
-|guidSection|[in]特定引擎、 評估工具、 例外狀況等的 GUID。這會指定計量的類型特定的項目底下的子區段。|
-|pszMetric|[in]要取得的計量。 這會對應至特定值的名稱。|
-|pdwValue|[in]儲存體的計量值的位置。 有數種 GetMetric 可傳回 DWORD （如此範例所示）、 BSTR、 GUID 或 Guid 的陣列。|
-|pszAltRoot|[in]若要使用替代的登錄根目錄。 若要設定`NULL`使用預設值。|
+|pszMachine|[在]寄存器將被寫入的遠端電腦的名稱(`NULL`表示本地電腦)。|
+|pszType|[在]指標類型之一。|
+|吉德科|[在]特定引擎、評估器、異常等的 GUID。這指定特定元素的指標類型下的子節。|
+|pszMetric|[在]要獲取的指標。 這對應於特定的值名稱。|
+|pdwValue|[在]指標中值的存儲位置。 GetMetric 有多種類型可以返回 DWORD(如本示例中所示)、BSTR、GUID 或 GUID 陣列。|
+|pszAltRoot|[在]要使用的備用註冊表根。 設置為`NULL`使用預設值。|
 
-### <a name="setmetric-method"></a>SetMetric 方法
- 在登錄中設定指定的度量值。
+### <a name="setmetric-method"></a>設定指標方法
+ 在註冊表中設置指定的指標值。
 
 ```cpp
 HRESULT SetMetric(
@@ -72,15 +72,15 @@ HRESULT SetMetric(
 
 |參數|描述|
 |---------------|-----------------|
-|pszType|[in]其中一個計量的類型。|
-|guidSection|[in]特定引擎、 評估工具、 例外狀況等的 GUID。這會指定計量的類型特定的項目底下的子區段。|
-|pszMetric|[in]要取得的計量。 這會對應至特定值的名稱。|
-|dwValue|[in]儲存體的位置中計量的值。 有數種 SetMetric 可儲存 （在此範例中） 的 DWORD、 BSTR、 GUID 或 Guid 的陣列。|
-|fUserSpecific|[in]如果計量是特定使用者，而且它應該寫入至使用者的登錄區，而不是本機電腦的 hive，則為 TRUE。|
-|pszAltRoot|[in]若要使用替代的登錄根目錄。 若要設定`NULL`使用預設值。|
+|pszType|[在]指標類型之一。|
+|吉德科|[在]特定引擎、評估器、異常等的 GUID。這指定特定元素的指標類型下的子節。|
+|pszMetric|[在]要獲取的指標。 這對應於特定的值名稱。|
+|dwValue|[在]指標中值的存儲位置。 SetMetric 有多種類型可以儲存 DWORD(在此範例中)、BSTR、GUID 或 GUID 陣列。|
+|fUser 特異性|[在]如果指標是特定於使用者的,並且應該將其寫入使用者的配置單元而不是本地電腦配置單元,則為 TRUE。|
+|pszAltRoot|[在]要使用的備用註冊表根。 設置為`NULL`使用預設值。|
 
-### <a name="removemetric-method"></a>RemoveMetric 方法
- 從登錄中移除指定的計量。
+### <a name="removemetric-method"></a>刪除測量方法
+ 從註冊表中刪除指定的指標。
 
 ```cpp
 HRESULT RemoveMetric(
@@ -93,13 +93,13 @@ HRESULT RemoveMetric(
 
 |參數|描述|
 |---------------|-----------------|
-|pszType|[in]其中一個計量的類型。|
-|guidSection|[in]特定引擎、 評估工具、 例外狀況等的 GUID。這會指定計量的類型特定的項目底下的子區段。|
-|pszMetric|[in]要移除度量。 這會對應至特定值的名稱。|
-|pszAltRoot|[in]若要使用替代的登錄根目錄。 若要設定`NULL`使用預設值。|
+|pszType|[在]指標類型之一。|
+|吉德科|[在]特定引擎、評估器、異常等的 GUID。這指定特定元素的指標類型下的子節。|
+|pszMetric|[在]要刪除的指標。 這對應於特定的值名稱。|
+|pszAltRoot|[在]要使用的備用註冊表根。 設置為`NULL`使用預設值。|
 
-### <a name="enummetricsections-method"></a>EnumMetricSections 方法
- 列舉在登錄中的不同計量的區段。
+### <a name="enummetricsections-method"></a>列舉參數法
+ 枚舉註冊表中的各個指標部分。
 
 ```cpp
 HRESULT EnumMetricSections(
@@ -113,133 +113,133 @@ HRESULT EnumMetricSections(
 
 |參數|描述|
 |---------------|-----------------|
-|pszMachine|[in]將寫入其註冊，可能是遠端機器的名稱 (`NULL`表示本機電腦)。|
-|pszType|[in]其中一個計量的類型。|
-|rgguidSections|[in、 out]預先配置的 Guid，以填入的陣列。|
-|pdwSize|[in]Guid 可以在儲存的最大數目`rgguidSections`陣列。|
-|pszAltRoot|[in]若要使用替代的登錄根目錄。 若要設定`NULL`使用預設值。|
+|pszMachine|[在]寄存器將被寫入的遠端電腦的名稱(`NULL`表示本地電腦)。|
+|pszType|[在]指標類型之一。|
+|rgguidSections|[進出]要填寫的預分配 GUID 陣列。|
+|pdwSize|[在]可在`rgguidSections`陣列中存儲的最大 GUID 數。|
+|pszAltRoot|[在]要使用的備用註冊表根。 設置為`NULL`使用預設值。|
 
-## <a name="expression-evaluator-functions"></a>運算式評估工具函式
+## <a name="expression-evaluator-functions"></a>運算式賦值函數
 
-|功能|描述|
+|函式|描述|
 |--------------|-----------------|
-|GetEEMetric|從登錄擷取的基準值。|
-|SetEEMetric|在登錄中設定指定的度量值。|
-|RemoveEEMetric|從登錄中移除指定的計量。|
-|GetEEMetricFile|取得檔案名稱，從指定的計量並將其載入，以字串傳回檔案內容。|
+|取得標準|從註冊表檢索指標值。|
+|設定EEMetric|在註冊表中設置指定的指標值。|
+|移除EEMetric|從註冊表中刪除指定的指標。|
+|GetEEMetricFile|從指定的指標獲取檔名並載入該檔名,將檔內容作為字串返回。|
 
-## <a name="exception-functions"></a>例外狀況的函式
+## <a name="exception-functions"></a>例外函數
 
-|功能|描述|
+|函式|描述|
 |--------------|-----------------|
-|GetExceptionMetric|從登錄擷取的基準值。|
-|SetExceptionMetric|在登錄中設定指定的度量值。|
-|RemoveExceptionMetric|從登錄中移除指定的計量。|
-|RemoveAllExceptionMetrics|從登錄移除所有的例外狀況計量。|
+|取得例外量|從註冊表檢索指標值。|
+|設定例外度量|在註冊表中設置指定的指標值。|
+|刪除例外度量|從註冊表中刪除指定的指標。|
+|移除所有例外指標|從註冊表中刪除所有異常指標。|
 
-## <a name="symbol-provider-functions"></a>符號提供者函式
+## <a name="symbol-provider-functions"></a>符號提供者函數
 
-|功能|描述|
+|函式|描述|
 |--------------|-----------------|
-|GetSPMetric|從登錄擷取的基準值。|
-|SetSPMetric|在登錄中設定指定的度量值。|
-|RemoveSPMetric|從登錄中移除指定的計量。|
+|取得SPMetric|從註冊表檢索指標值。|
+|設定SPMetric|在註冊表中設置指定的指標值。|
+|刪除SPMetric|從註冊表中刪除指定的指標。|
 
-## <a name="enumeration-functions"></a>列舉型別函式
+## <a name="enumeration-functions"></a>列舉函數
 
-|功能|描述|
+|函式|描述|
 |--------------|-----------------|
-|EnumMetricSections|列舉指定的計量類型的所有度量。|
-|EnumDebugEngine|列舉已註冊的偵錯引擎。|
-|EnumEEs|列舉已註冊的運算式評估工具。|
-|EnumExceptionMetrics|列舉所有例外狀況的度量。|
+|枚舉|枚舉指定指標類型的所有指標。|
+|列舉除錯引擎|枚舉已註冊的調試引擎。|
+|EnumEEs|枚舉已註冊的表達式賦值器。|
+|Enum 例外指標|枚舉所有異常指標。|
 
 ## <a name="metric-definitions"></a>計量定義
- 這些定義可以用於預先定義的計量名稱。 名稱對應至各種登錄機碼和值名稱都是定義為寬字元字串： 例如， `extern LPCWSTR metrictypeEngine`。
+ 這些定義可用於預定義的指標名稱。 這些名稱對應於各種註冊表項和值名稱,並且都定義為寬字串:例如。 `extern LPCWSTR metrictypeEngine`
 
-|預先定義的計量類型|描述：基底機碼...|
+|預先定義的指標類型|標題: 基本鍵.|
 |-----------------------------|---------------------------------------|
-|metrictypeEngine|所有偵錯引擎的計量。|
-|metrictypePortSupplier|所有連接埠供應商的計量。|
-|metrictypeException|所有例外狀況的度量。|
-|metricttypeEEExtension|所有的運算式評估工具延伸模組。|
+|指標型引擎|所有調試引擎指標。|
+|指標型連接埠供應商|所有埠供應商指標。|
+|指標類型例外|所有例外指標。|
+|指標型EE延伸|所有表達式賦值器擴展。|
 
-|偵錯引擎屬性|描述|
+|除錯引擎屬性|描述|
 |-----------------------------|-----------------|
-|metricAddressBP|設定為非零值，表示支援位址中斷點。|
-|metricAlwaysLoadLocal|設定為非零值以一律載入在本機的偵錯引擎。|
-|metricLoadInDebuggeeSession|未使用|
-|metricLoadedByDebuggee|設定為非零值，表示具有或正在進行偵錯程式，一律會載入偵錯引擎。|
-|metricAttach|設定為非零值以表示支援以便附加到現有的程式。|
-|metricCallStackBP|設定為非零值，表示支援呼叫堆疊中斷點。|
-|metricConditionalBP|設定為非零值以表示支援的設定條件式中斷點。|
-|metricDataBP|設定為非零值以表示支援在資料變更中斷點的設定。|
-|metricDisassembly|設定為非零，表示反組譯碼清單的生產環境的支援。|
-|metricDumpWriting|設定為非零值以表示傾印寫入 （傾印至輸出裝置的記憶體） 的支援。|
-|metricENC|設定為非零，表示支援編輯後繼續。 **注意：** 自訂的偵錯引擎應該永遠不會將此設定，或應一律設為 0。|
-|metricExceptions|設定為非零值以表示支援的例外狀況。|
-|metricFunctionBP|設定為非零值，表示支援具名中斷點 （中斷呼叫特定函式名稱時的中斷點）。|
-|metricHitCountBP|設定為非零值以表示支援 「 點擊點 」 的中斷點 （只有在達到特定次數之後，才會觸發的中斷點） 的設定。|
-|metricJITDebug|設定為非零，表示支援在 just-in-time 偵錯 （偵錯工具啟動時執行的處理序中發生例外狀況）。|
-|metricMemory|未使用|
-|metricPortSupplier|如果，設定這個連接埠提供者的 clsid 實作其中一個。|
-|metricRegisters|未使用|
-|metricSetNextStatement|設定為非零值以表示支援的設定下一個陳述式 （這會略過中繼的陳述式執行）。|
-|metricSuspendThread|設定為非零值以表示支援暫止執行緒的執行。|
-|metricWarnIfNoSymbols|設定為非零值，表示沒有符號時，會通知使用者。|
-|metricProgramProvider|設定為程式提供者的 CLSID。|
-|metricAlwaysLoadProgramProviderLocal|將此設為非零，表示程式提供者應該一律會載入在本機的。|
-|metricEngineCanWatchProcess|設定為非零值，指出偵錯引擎會監看處理程序事件，而程式的提供者。|
-|metricRemoteDebugging|設定為非零值以表示遠端偵錯的支援。|
-|metricEncUseNativeBuilder|將此設為非零，表示編輯後繼續的管理員應該使用偵錯引擎的 encbuild.dll 編輯後繼續建置的。 **注意：** 自訂的偵錯引擎應該永遠不會將此設定，或應一律設為 0。|
-|metricLoadUnderWOW64|將此設為非零值，表示在 WOW 下偵錯項目處理序中應該載入，偵錯引擎，當偵錯 64 位元處理程序;否則，偵錯引擎會載入 Visual Studio 處理序 （這在 WOW64 下執行） 中。|
-|metricLoadProgramProviderUnderWOW64|將此設為非零值表示 64 位元處理序在 WOW; 下進行偵錯時，程式提供者，應該在偵錯項目程序中載入否則，會載入 Visual Studio 處理序中。|
-|metricStopOnExceptionCrossingManagedBoundary|設定為非零值，表示跨 managed/unmanaged 程式碼界限擲回未處理的例外狀況時，應該停止處理程序。|
-|metricAutoSelectPriority|設定為自動選擇的偵錯引擎 （優先順序較高的值等於更高版本） 的優先權。|
-|metricAutoSelectIncompatibleList|登錄機碼包含所指定要忽略的偵錯引擎 Guid 中自動選取項目。 這些項目都是數字 （0、 1、 2，依此類推） 使用以字串表示的 GUID。|
-|metricIncompatibleList|登錄機碼包含所指定的 Guid，偵錯引擎與此偵錯引擎不相容的項目。|
-|metricDisableJITOptimization|設定為非零值表示應該在偵錯期間停用 （適用於 managed 程式碼）-just-in-time 最佳化。|
+|指標位址BP|設置為非零以指示對地址斷點的支援。|
+|指標始終載入本地|設置為非零,以便始終在本地載入調試引擎。|
+|指標載入除錯工作階段|未使用|
+|公制載入調試儀|設置為非零,以指示調試引擎將始終載入或由正在調試的程式載入。|
+|公製附加|設置為非零以指示對現有程式附件的支援。|
+|公制呼叫堆疊BP|設置為非零以指示對調用堆疊斷點的支援。|
+|公制條件BP|設置為非零以指示對條件斷點設置的支援。|
+|公制數據BP|設置為非零以指示對數據更改設置斷點的支援。|
+|公制拆解|設置為非零表示對生產拆解清單的支援。|
+|指標傾印編寫|設置為非零表示對轉儲寫入的支援(將記憶體轉儲到輸出設備)。|
+|公制ENC|設置為非零表示對編輯和繼續的支援。 **註:** 自定義調試引擎絕不應設置此設置,也應始終將其設置為 0。|
+|公制例外|設置為非零以指示對異常的支援。|
+|公制功能BP|設置為非零以指示對命名斷點的支援(在調用特定函數名稱時中斷的斷點)。|
+|公制HitCountBP|設置為非零表示支援設置「命中點」 斷點(僅在命中一定次數后觸發的斷點)。|
+|公制JIT數據試試|設置為非零以指示對即時調試的支援(在正在運行的進程中發生異常時啟動調試器)。|
+|公制記憶體|未使用|
+|公制連接埠供應商|如果實施,則將此選項設置為埠供應商的 CLSID。|
+|指標註冊|未使用|
+|指標設定下一個聲明|設置為非零表示對設置下一個語句的支援(跳過中間語句的執行)。|
+|指標掛起線程|設置為非零以指示對掛起線程執行的支援。|
+|公制WarnIfNo符號|設置為非零,以指示如果沒有符號時應通知使用者。|
+|公制程式供應商|將這個選項設定為程式提供程式的 CLSID。|
+|指標始終載入程式提供者|將此設置為非零,以指示程式提供程式應始終在本地載入。|
+|公制引擎可以觀察流程|將此設置為非零,以指示調試引擎將監視進程事件,而不是程式提供程式。|
+|指標遠端除錯|將此設置為非零以指示對遠端調試的支援。|
+|公制建築|將此設置為非零,以指示編輯和繼續管理器應使用除錯引擎的 encbuild.dll 來生成"編輯"和"繼續"。 **註:** 自定義調試引擎絕不應設置此設置,也應始終將其設置為 0。|
+|公制負載下WOW64|將此設置為非零,以指示調試引擎應在在 64 位進程調試時在 WOW 下的調試程式中載入;否則,調試引擎將載入到 Visual Studio 進程(在 WOW64 下運行)。|
+|公量負載程式供應商WOW64|將此設置為非零,以指示在在 WOW 下調試 64 位元進程時,程式提供程式應在調試程式中載入;否則,它將載入到可視化工作室進程中。|
+|指標Stopon異常交叉管理邊界|將此設置為非零,以指示如果跨託管/非託管代碼邊界引發未處理的異常,進程應停止。|
+|公制自動選擇優先權|將此設置為自動選擇調試引擎的優先順序(值越高等於優先順序)。|
+|公制自動選擇不相容清單|註冊表項包含指定 GUID 的條目,用於在自動選擇中忽略調試引擎。 這些項目是一個數位(0、1、2 等),GUID 表示為字串。|
+|公制不相容清單|註冊表項包含為與此調試引擎不相容的調試引擎指定的 GUID 的條目。|
+|公制禁用JIT優化|將此設置為非零,以指示在調試期間應禁用即時優化(對於託管代碼)。|
 
-|運算式評估工具內容|描述|
+|運算式賦值器屬性|描述|
 |-------------------------------------|-----------------|
-|metricEngine|這會保留偵錯引擎，支援指定的運算式評估工具的數目。|
-|metricPreloadModules|設定為非零值表示的運算式評估工具對程式啟動時，應預先載入的模組。|
-|metricThisObjectName|設定為"this"的物件名稱。|
+|公制引擎|這保存支援指定表達式賦值器的調試引擎數。|
+|公製預先載入模組|將此設置為非零,以指示在針對程式啟動表達式賦值器時應預載入模組。|
+|公制此物件名稱|將此設定為"this"物件名稱。|
 
-|運算式評估工具延伸模組屬性|描述|
+|運算式賦值器延伸屬性|描述|
 | - |-----------------|
-|metricExtensionDll|支援此延伸模組 dll 名稱。|
-|metricExtensionRegistersSupported|支援的暫存器的清單。|
-|metricExtensionRegistersEntryPoint|用於存取暫存器的進入點。|
-|metricExtensionTypesSupported|支援的類型清單。|
-|metricExtensionTypesEntryPoint|進入點存取型別。|
+|公制延伸Dll|支援此擴展的 dll 的名稱。|
+|公制延伸寄存器支援|支援的寄存器清單。|
+|公制延伸註冊入口點|用於造訪寄存器的入口點。|
+|支援指標延伸類型|支援的類型清單。|
+|指標延伸類型入口點|用於存取類型的入口點。|
 
 |連接埠供應商屬性|描述|
 |------------------------------|-----------------|
-|metricPortPickerCLSID|（對話方塊使用者可以使用選取的連接埠，然後新增要用於偵錯的連接埠） 連接埠選擇器的 CLSID。|
-|metricDisallowUserEnteredPorts|如果使用者輸入連接埠無法新增至連接埠提供者為非零 （基本上是唯讀，這讓連接埠選擇器對話方塊）。|
-|metricPidBase|配置處理序識別碼時，連接埠提供者所使用的基底的處理序識別碼。|
+|公制波特皮克CLSID|埠選取器的 CLSID(用戶可以用於選擇連接埠和添加用於除錯的連接埠的對話框)。|
+|指標"禁止用戶輸入埠"|如果無法將使用者輸入的埠添加到埠供應商(這使得埠選取器對話框本質上是唯讀的),則非零。|
+|公製PidBase|埠供應商在分配流程 ID 時使用的基本流程 ID。|
 
-|預先定義的預存程序存放區類型|描述|
+|預先定義的 SP 儲存類型|描述|
 |-------------------------------|-----------------|
-|storetypeFile|符號會儲存在個別的檔案。|
-|storetypeMetadata|符號會儲存為組件中的中繼資料。|
+|儲存類型檔案|符號存儲在單獨的檔中。|
+|儲存類型中繼資料|符號作為元數據存儲在程式集中。|
 
-|其他屬性|描述|
+|雜項屬性|描述|
 |------------------------------|-----------------|
-|metricShowNonUserCode|設定為非零值，以顯示 nonuser 程式碼。|
-|metricJustMyCodeStepping|設定為非零值，指出要逐步執行可執行只有在使用者程式碼中。|
-|metricCLSID|針對特定的計量類型物件的 CLSID。|
-|metricName|針對特定的計量類型物件的易記名稱。|
-|metricLanguage|語言名稱。|
+|指標顯示非使用者代碼|將此設置為非零以顯示非用戶代碼。|
+|指標正義我的程式碼步進|將此設置為非零,以指示步進只能在用戶代碼中發生。|
+|公制CLSID|特定指標類型的物件的 CLSID。|
+|metricName|特定指標類型的物件的使用者友好名稱。|
+|公制語言|語言名稱。|
 
-## <a name="registry-locations"></a>登錄位置
- 度量是讀取和寫入至登錄，具體而言是在`VisualStudio`子機碼。
+## <a name="registry-locations"></a>登錄表位置
+ 指標是從註冊表讀取並寫入註冊表的,尤其是在子鍵中`VisualStudio`。
 
 > [!NOTE]
-> 大部分的情況下，在 HKEY_LOCAL_MACHINE 機碼會寫入計量。 不過，有時候 HKEY_CURRENT_USER 要目的地的索引鍵。 Dbgmetric.lib 會處理這兩個金鑰。 當取得度量時，它會搜尋 HKEY_CURRENT_USER 先，接著 HKEY_LOCAL_MACHINE。 當它設定計量時，參數會指定要使用哪一個最上層機碼。
+> 大多數時候,指標將寫入HKEY_LOCAL_MACHINE鍵。 但是,有時HKEY_CURRENT_USER將是目標密鑰。 Dbgmetric.lib 處理兩個鍵。 獲取指標時,它首先HKEY_CURRENT_USER搜索,然後HKEY_LOCAL_MACHINE。 設置指標時,參數指定要使用的頂級鍵。
 
- *[registry key]* \
+ *【 註冊金鑰 】*\
 
  `Software`\
 
@@ -247,182 +247,182 @@ HRESULT EnumMetricSections(
 
  `VisualStudio`\
 
- *[版本 root]* \
+ *【版本根]*\
 
- *[計量 root]* \
+ *[公制根]*\
 
- *[metric type]* \
+ *【 指標型態 】*\
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
 |預留位置|描述|
 |-----------------|-----------------|
-|*[registry key]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|
-|*[版本 root]*|Visual Studio 的版本 (例如`7.0`， `7.1`，或`8.0`)。 不過，這個根目錄也可以修改使用 **/rootsuffix**切換至**devenv.exe**。 VSIP，對於這個修飾詞通常是**Exp**，因此版本根是，比方說，8.0Exp。|
-|*[計量 root]*|這是`AD7Metrics`或`AD7Metrics(Debug)`，取決於是否使用 dbgmetric.lib 的偵錯版本。 **注意：** 若要應遵守是否使用 dbgmetric.lib 時，此命名慣例，如果您有偵錯和發行之間的差異必須在登錄中反映出來的版本。|
-|*[metric type]*|要寫入的度量類型： `Engine`， `ExpressionEvaluator`，`SymbolProvider`等等。這些全都定義如所示為 dbgmetric.h `metricTypeXXXX`，其中`XXXX`是特定型別名稱。|
-|*[metric]*|若要將度量指派值的項目名稱。 實際組織的度量取決於計量的類型。|
-|*[metric value]*|指派給計量的值。 此值應該有 （字串、 數字等） 的類型取決於計量。|
+|*【 註冊金鑰 】*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|
+|*【版本根]*|Visual Studio 的版本(`7.0``7.1`例如`8.0`, 或 )。 但是,也可以使用 **/rootsuffix**開關修改此根為**devenv.exe**。 對於 VSIP,此修飾符通常是**Exp**,因此版本根可以是,例如 8.0Exp。|
+|*[公制根]*|這是`AD7Metrics``AD7Metrics(Debug)`或,具體取決於是否使用了 dbgmetric.lib 的調試版本。 **註:** 無論是否使用 dbgmetric.lib,如果調試版本和發佈版本之間存在差異,則必須在註冊表中反映,則應遵守此命名約定。|
+|*【 指標型態 】*|要編寫的指標類型: `Engine` `ExpressionEvaluator`、 `SymbolProvider`、 、 等。這些都定義為 dbgmetric.h`metricTypeXXXX`作為`XXXX`,其中的特定類型名稱。|
+|*[公制]*|要分配值以設置指標的條目的名稱。 指標的實際組織取決於指標類型。|
+|*[公制值]*|分配給指標的值。 值應具有的類型(字串、數位等)取決於指標。|
 
 > [!NOTE]
-> 所有的 Guid 會儲存在格式`{GUID}`。 例如， `{123D150B-FA18-461C-B218-45B3E4589F9B}` 。
+> 所有 GUID 都`{GUID}`以的格式存儲。 例如： `{123D150B-FA18-461C-B218-45B3E4589F9B}` 。
 
 ### <a name="debug-engines"></a>偵錯引擎
- 以下是在登錄中的偵錯引擎度量資訊的組織。 `Engine` 是偵錯引擎的計量類型名稱，以及對應至 *[計量類型]* 上述的登錄樹狀子目錄中。
+ 以下是註冊表中調試引擎指標的組織。 `Engine`是調試引擎的指標類型名稱,對應於上述註冊表子樹中的 *[指標類型]。*
 
  `Engine`\
 
- *[引擎 guid]* \
+ *[發動機 guid]*\
 
- `CLSID` =  *[類別 guid]*
+ `CLSID` = *[類吉德]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
  `PortSupplier`\
 
- `0` =  *[連接埠供應商 guid]*
+ `0` = *[港口供應商 guid]*
 
- `1` =  *[連接埠供應商 guid]*
+ `1` = *[港口供應商 guid]*
 
 |預留位置|描述|
 |-----------------|-----------------|
-|*[引擎 guid]*|偵錯引擎的 GUID。|
-|*[class guid]*|實作此偵錯引擎的類別 GUID。|
-|*[連接埠供應商 guid]*|如果有的話，連接埠供應商的 GUID。 許多偵錯引擎會使用預設連接埠提供者，並因此不會指定他們自己的供應商。 在此情況下，子機碼`PortSupplier`就不會有。|
+|*[發動機 guid]*|調試引擎的 GUID。|
+|*[類吉德]*|實現此調試引擎的類的 GUID。|
+|*[港口供應商 guid]*|埠供應商的 GUID(如果有)。 許多調試引擎使用預設埠供應商,因此不指定自己的供應商。 在這種情況下,子鍵`PortSupplier`將不存在。|
 
 ### <a name="port-suppliers"></a>連接埠提供者
- 以下是在登錄中的連接埠供應商度量資訊的組織。 `PortSupplier` 為連接埠提供者的度量型別名稱且對應於 *[計量類型]* 。
+ 以下是註冊表中的埠供應商指標的組織。 `PortSupplier`是連接埠供應商的指標類型名稱,對應於 *[指標類型]*。
 
  `PortSupplier`\
 
- *[連接埠供應商 guid]* \
+ *[港口供應商 guid]*\
 
- `CLSID` =  *[類別 guid]*
+ `CLSID` = *[類吉德]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
 |預留位置|描述|
 |-----------------|-----------------|
-|*[連接埠供應商 guid]*|連接埠提供者的 GUID|
-|*[class guid]*|類別會實作此連接埠提供者的 GUID|
+|*[港口供應商 guid]*|港口供應商的 GUID|
+|*[類吉德]*|實作此埠供應商的介面|
 
 ### <a name="symbol-providers"></a>符號提供者
- 以下是在登錄中的符號供應商度量資訊的組織。 `SymbolProvider` 符號提供者的度量型別名稱和對應至 *[計量類型]* 。
+ 以下是註冊表中符號供應商指標的組織。 `SymbolProvider`是符號提供者的指標類型名稱,對應於 *[指標類型]*。
 
  `SymbolProvider`\
 
- *[符號提供者 guid]* \
+ *[符號提供者介面]*\
 
  `file`\
 
- `CLSID` =  *[類別 guid]*
+ `CLSID` = *[類吉德]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
  `metadata`\
 
- `CLSID` =  *[類別 guid]*
+ `CLSID` = *[類吉德]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
 |預留位置|描述|
 |-----------------|-----------------|
-|*[符號提供者 guid]*|符號提供者 GUID|
-|*[class guid]*|類別會實作這個符號提供者的 GUID|
+|*[符號提供者介面]*|符號提供者的 GUID|
+|*[類吉德]*|讓此符號提供者的使用者的 GUID|
 
-### <a name="expression-evaluators"></a>運算式評估工具
- 以下是在登錄中的運算式評估工具度量資訊的組織。 `ExpressionEvaluator` 運算式評估工具的計量類型名稱，並對應至 *[計量類型]* 。
+### <a name="expression-evaluators"></a>運算式賦值器
+ 以下是註冊表中表達式賦值器指標的組織。 `ExpressionEvaluator`是表示式賦值器的指標類型名稱,對應於 *[指標類型]*。
 
 > [!NOTE]
-> 計量類型，如`ExpressionEvaluator`中未定義 dbgmetric.h，因為它會假設所有計量變更運算式評估工具會通過適當的運算式評估工具計量函式 (的版面配置`ExpressionEvaluator`子機碼有點變得複雜，因此詳細資料會隱藏 dbgmetric.lib 內）。
+> 的`ExpressionEvaluator`指標類型不在 dbgmetric.h 中定義,因為假定表達式賦值器的所有指標更改都將通過相應的運算式賦值器指標函`ExpressionEvaluator`數( 子鍵的佈局有些複雜,因此詳細資訊隱藏在 dbgmetric.lib 中)。
 
  `ExpressionEvaluator`\
 
- *[語言 guid]* \
+ *[語言吉德]*\
 
- *[vendor guid]* \
+ *[供應商吉德]*\
 
- `CLSID` =  *[類別 guid]*
+ `CLSID` = *[類吉德]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
  `Engine`\
 
- `0` =  *[偵錯引擎 guid]*
+ `0` = *【 除錯引擎 guid]*
 
- `1` =  *[偵錯引擎 guid]*
+ `1` = *【 除錯引擎 guid]*
 
 |預留位置|描述|
 |-----------------|-----------------|
-|*[language guid]*|一種語言的 GUID|
-|*[vendor guid]*|供應商的 GUID|
-|*[class guid]*|類別會實作此運算式評估工具的 GUID|
-|*[偵錯引擎 guid]*|此運算式評估工具的運作方式與偵錯引擎的 GUID|
+|*[語言吉德]*|語言的 GUID|
+|*[供應商吉德]*|供應商的 GUID|
+|*[類吉德]*|實作此表示式賦值器的類的 GUID|
+|*【 除錯引擎 guid]*|此表示式賦值器使用除錯引擎的 GUID|
 
-### <a name="expression-evaluator-extensions"></a>運算式評估工具延伸模組
- 以下是在登錄中的運算式評估工具擴充計量的組織。 `EEExtensions` 是計量的類型名稱的運算式評估工具延伸模組和對應至 *[計量類型]* 。
+### <a name="expression-evaluator-extensions"></a>運算式賦值器延伸
+ 以下是註冊表中表達式賦值器擴展指標的組織。 `EEExtensions`是表示式賦值器延伸名的指標類型名稱,對應於 *[指標類型]*。
 
  `EEExtensions`\
 
- *[延伸模組 guid]* \
+ *[擴充吉德]*\
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
 |預留位置|描述|
 |-----------------|-----------------|
-|*[延伸模組 guid]*|運算式評估工具延伸模組的 GUID|
+|*[擴充吉德]*|運算式賦值器延伸的 GUID|
 
 ### <a name="exceptions"></a>例外狀況
- 以下是在登錄中的例外狀況度量資訊的組織。 `Exception` 例外狀況的度量型別名稱和對應至 *[計量類型]* 。
+ 以下是註冊表中異常指標的組織。 `Exception`是異常的指標類型名稱,對應於 *[指標類型]*。
 
  `Exception`\
 
- *[偵錯引擎 guid]* \
+ *【 除錯引擎 guid]*\
 
- *[例外狀況類型]* \
+ *[例外類型]*\
 
- *[exception]* \
+ *[例外]*\
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
- *[exception]* \
+ *[例外]*\
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
- *[metric] = [metric value]*
+ *[公制] = [公製值]*
 
 |預留位置|描述|
 |-----------------|-----------------|
-|*[偵錯引擎 guid]*|支援例外狀況，偵錯引擎的 GUID。|
-|*[exception types]*|識別可以處理的例外狀況類別的子機碼一般標題。 一般名稱**C++例外狀況**， **Win32 例外狀況**， **Common Language Runtime 例外**，以及**原生執行階段檢查**. 這些名稱也會用來識別特定類別的例外狀況給使用者。|
-|*[exception]*|例外狀況的名稱： 例如， **_com_error**或是**Control-break**。 這些名稱也會用來識別使用者的特定例外狀況。|
+|*【 除錯引擎 guid]*|支援異常的調試引擎的 GUID。|
+|*[例外類型]*|子鍵的一般標題,用於標識可處理的異常類別。 典型名稱是**C++例外****、Win32 異常**,**通用語言執行時異常**與**本機執行時檢查**。 這些名稱還用於標識使用者的特定異常類別。|
+|*[例外]*|例外的名稱:例如 **,_com_error**或**控制中斷**。 這些名稱還用於標識使用者的特定異常。|
 
 ## <a name="requirements"></a>需求
- 這些檔案位於[!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]SDK 安裝目錄 (根據預設， *[磁碟機]* \Program Files\Microsoft Visual Studio 2010 SDK\\)。
+ 這些檔案位於[!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]SDK 安裝目錄中(預設情況下 *,[驅動器][* 程式檔]微軟可視化工作室 2010 SDK\\)。
 
- 標頭： includes\dbgmetric.h
+ 標題: 包含\dbgmetric.h
 
- 程式庫： libs\ad2de.lib、 libs\dbgmetric.lib
+ 庫:libs_ad2de.lib,libs_dbgmetric.lib
 
 ## <a name="see-also"></a>另請參閱
 - [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

@@ -18,25 +18,25 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: d900c0f51b14450f38caf06738739daef2549235
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77580096"
 ---
-# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>教學課程：使用 Entity Framework 搭配 Visual Studio 2019 來建立您的第一個 ASP.NET Core 應用程式
+# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>教程：使用視覺化工作室 2019 使用實體框架創建您的第一個ASP.NET核心應用程式
 
 在本教學課程中，您將建立可使用資料的 ASP.NET Core Web 應用程式，並將它部署至 Azure。 本教學課程包含下列步驟：
 
-- [步驟1：安裝 Visual Studio 2019](#step-1-install-visual-studio-2019)
-- [步驟2：建立您的第一個 ASP.NET Core web 應用程式](tutorial-aspnet-core-ef-step-02.md)
-- [步驟3：使用 Entity Framework 處理資料](tutorial-aspnet-core-ef-step-03.md)
-- [步驟4：從您的 ASP.NET Core 應用程式公開 Web API](tutorial-aspnet-core-ef-step-04.md)
-- [步驟5：將您的 ASP.NET Core 應用程式部署至 Azure](tutorial-aspnet-core-ef-step-05.md)
+- [第 1 步：安裝視覺化工作室 2019](#step-1-install-visual-studio-2019)
+- [第 2 步：創建第一個ASP.NET核心 Web 應用](tutorial-aspnet-core-ef-step-02.md)
+- [第 3 步：使用實體框架處理資料](tutorial-aspnet-core-ef-step-03.md)
+- [第 4 步：從 ASP.NET核心應用公開 Web API](tutorial-aspnet-core-ef-step-04.md)
+- [第 5 步：將ASP.NET核心應用部署到 Azure](tutorial-aspnet-core-ef-step-05.md)
 
-## <a name="step-1-install-visual-studio-2019"></a>步驟1：安裝 Visual Studio 2019
+## <a name="step-1-install-visual-studio-2019"></a>第 1 步：安裝視覺化工作室 2019
 
-透過此影片教學課程和逐步指示，了解如何安裝 Visual Studio 2019。 如果您已安裝 Visual Studio，請直接跳至[步驟2：建立您的第一個 ASP.NET Core web 應用程式](tutorial-aspnet-core-ef-step-02.md)。
+透過此影片教學課程和逐步指示，了解如何安裝 Visual Studio 2019。 如果您已經安裝了 Visual Studio，請跳到[步驟 2：創建第一ASP.NET核心 Web 應用](tutorial-aspnet-core-ef-step-02.md)。
 
 _觀看此影片並跟著操作，以安裝 Visual Studio 並建立您的第一個 ASP.NET Core 應用程式。_
 
@@ -48,29 +48,29 @@ _觀看此影片並跟著操作，以安裝 Visual Studio 並建立您的第一�
 
 ## <a name="start-the-installer"></a>啟動安裝程式
 
-下載完成之後，按一下 [執行] 來啟動安裝程式。
+下載完成之後，按一下 [執行]**** 來啟動安裝程式。
 
 ![Visual Studio 2019 安裝程式](media/vs-2019/vs2019-installer.png)
 
 ## <a name="choose-workloads"></a>選擇工作負載
 
-Visual Studio 可以用於許多不同種類的開發，且工作負載讓您輕鬆就能下載您想要建置的應用程式類型所需的所有項目。 目前請選擇 [ASP.NET 與網頁程式開發] 和 [.NET Core 跨平台開發] 工作負載。 您稍後一律可重新啟動安裝程式，以安裝其他工作負載和元件。
+Visual Studio 可以用於許多不同種類的開發，且工作負載讓您輕鬆就能下載您想要建置的應用程式類型所需的所有項目。 目前請選擇 [ASP.NET 與網頁程式開發]**** 和 [.NET Core 跨平台開發]**** 工作負載。 您稍後一律可重新啟動安裝程式，以安裝其他工作負載和元件。
 
 ![Visual Studio 2019 選擇工作負載](media/vs-2019/vs2019-choose-workloads.png)
 
 ## <a name="install"></a>安裝
 
-按一下 [安裝] 並讓安裝程式下載並安裝 Visual Studio。
+按一下 [安裝]**** 並讓安裝程式下載並安裝 Visual Studio。
 
 ## <a name="run-visual-studio-for-the-first-time"></a>第一次執行 Visual Studio
 
-當安裝程式完成時，Visual Studio 應該會自動啟動。 系統可能會提示您登入，這樣提供一些很棒的相關功能，但目前您可以選擇稍後再登入。 接下來，您可以選擇佈景主題和開發設定。 設定這些選項之後，您就能啟動您的第一個專案。 按一下 [建立新專案]，然後選擇 [ASP.NET Core Web 應用程式]。
+當安裝程式完成時，Visual Studio 應該會自動啟動。 系統可能會提示您登入，這樣提供一些很棒的相關功能，但目前您可以選擇稍後再登入。 接下來，您可以選擇佈景主題和開發設定。 設定這些選項之後，您就能啟動您的第一個專案。 按一下 [建立新專案]****，然後選擇 [ASP.NET Core Web 應用程式]****。
 
 ![Visual Studio 2019 建立新的 ASP.NET Core Web 應用程式專案](media/vs-2019/vs2019-create-new-project.png)
 
 ## <a name="explore-aspnet-core-project-types"></a>探索 ASP.NET Core 專案類型
 
-您可以選擇您的專案名稱和位置，然後挑選 [建立]。 現在，選擇您 ASP.NET Core 應用程式要使用的範本。 您可選擇下列選項：
+您可以選擇您的專案名稱和位置，然後挑選 [建立]****。 現在，選擇您 ASP.NET Core 應用程式要使用的範本。 您可選擇下列選項：
 
 - 空白。 空白專案範本可讓您從最初開始。
 - API。 最適合 Web API。
@@ -88,7 +88,7 @@ Visual Studio 可以用於許多不同種類的開發，且工作負載讓您輕
 - 公司或學校帳戶公司或學校帳戶。 此選項使用 Active Directory、Azure AD 或 Office 365 來驗證。
 - Windows 驗證。 適合內部網路應用程式。
 
-選取 [沒有驗證的標準 Web 應用程式] 範本，然後按一下 [**建立**]。
+選擇沒有身份驗證的標準 Web 應用程式範本，然後按一下"**創建**"。
 
 ![Visual Studio 2019 選擇 ASP.NET Core 專案選項](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -96,8 +96,8 @@ Visual Studio 可以用於許多不同種類的開發，且工作負載讓您輕
 
 在下一個影片中，您將會深入了解您的第一個 ASP.NET Core 專案。
 
-[教學課程：建立您的第一個 ASP.NET Core Web 應用程式](tutorial-aspnet-core-ef-step-02.md)
+[教程：創建第一個ASP.NET核心 Web 應用](tutorial-aspnet-core-ef-step-02.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [教學課程：開始使用C#和 ASP.NET Core](tutorial-aspnet-core.md)不含影片逐步解說的更詳細教學課程
+- [教程：從 C# 和 ASP.NET 核心開始](tutorial-aspnet-core.md)更詳細的教程，無需視頻演練

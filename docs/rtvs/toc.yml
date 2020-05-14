@@ -1,4 +1,4 @@
-- name: 總覽
+- name: 概觀
   items:
     - name: 適用於 Visual Studio 的 R 工具
       href: index.md
@@ -8,7 +8,7 @@
   items:
     - name: 安裝
       href: installing-r-tools-for-visual-studio.md
-    - name: 取得協助
+    - name: 取得說明
       href: getting-started-help.md
 - name: 教學課程
   items:
@@ -16,7 +16,7 @@
       href: getting-started-with-r.md
 - name: 範例
   href: getting-started-samples.md
-- name: 作法指南
+- name: 操作指南
   items:
     - name: R 專案
       items:
@@ -56,9 +56,9 @@
       href: variable-explorer.md
     - name: 偵錯
       href: debugging-r-in-visual-studio.md
-- name: 參考資料
+- name: 參考
   items:
-    - name: 選項
+    - name: 選項。
       href: options-for-r-tools-in-visual-studio.md
     - name: 常見問題集
       href: faq.md

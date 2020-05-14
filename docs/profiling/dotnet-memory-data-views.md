@@ -13,17 +13,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779268"
 ---
 # <a name="net-memory-data-views"></a>.NET 記憶體資料檢視
 本節包含程式碼剖析工具資料檔案的檢視與報告，而此檔案含有 .NET 記憶體程式碼剖析資料。
 
 ## <a name="in-this-section"></a>本節內容
-- [摘要檢視](../profiling/summary-view-dotnet-memory-data.md)
+- [摘要視圖](../profiling/summary-view-dotnet-memory-data.md)
 
  列出配置最多記憶體的函式和型別。
 
@@ -35,15 +35,15 @@ ms.locfileid: "74779268"
 
  列出在程式碼剖析執行中配置的型別、執行個體數目、大小 (位元組) 和型別的記憶體回收層代。
 
-- [呼叫樹狀圖檢視 - 取樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+- [呼叫樹狀檢視 - 取樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
  顯示階層式樹狀圖，表示程式碼剖析執行中函式的執行路徑和記憶體配置資料。
 
-- [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [模組視圖 - 採樣](../profiling/modules-view-dotnet-memory-sampling-data.md)
 
  依模組組織 .NET 記憶體配置資料，並列出配置記憶體時正在執行的函式、原始程式碼行及指令。
 
-- [呼叫者/被呼叫者檢視 - .NET 記憶體取樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [呼叫端/被呼叫端檢視 - .NET 記憶體取樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
 
  列出所選函式的記憶體配置資料、呼叫所選函式的函式，以及所選函式呼叫的函式。
 
@@ -59,11 +59,11 @@ ms.locfileid: "74779268"
 
  列出程式碼剖析執行中函式指令的記憶體配置資料。
 
-- [呼叫樹狀圖檢視 - 檢測](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [呼叫樹狀檢視 - 檢測設備](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 
  顯示階層式樹狀圖，表示程式碼剖析執行中檢測的函式的執行路徑、記憶體配置資料及詳細的計時資料。
 
-- [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [模組檢視 - 檢測設備](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 
  依模組組織程式碼剖析資料，並列出模組的函式、記憶體配置資料及詳細的計時資訊。
 
@@ -75,7 +75,7 @@ ms.locfileid: "74779268"
 
  列出程式碼剖析執行中檢測的函式的記憶體配置資料。
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 - [函式詳細資料檢視](../profiling/function-details-view.md)
 
  顯示選取的函式及所呼叫函式 (由該所選函式呼叫的函式) 之間關聯性的圖形化圖表。

@@ -1,5 +1,5 @@
 ---
-title: IDebugDynamicField | Microsoft Docs
+title: IDebug動態場 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDynamicField interface
 ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58a4838afc0d52ab60ae0a11de419393d68dfc06
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 15f0ddf70849377d37ec74839550de6057b3450c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351335"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731309"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
-此介面代表變數的類型。
+此介面表示變數的類型。
 
 ## <a name="syntax"></a>語法
 
@@ -28,22 +28,22 @@ ms.locfileid: "66351335"
 IDebugDynamicField : IDebugField
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 符號提供者會實作這個介面，可以在執行階段決定任何類型的基底類別。 這適用於 managed 程式碼。
+## <a name="notes-for-implementers"></a>實施者說明
+ 此介面由符號提供程式實現,作為可在運行時確定的任何類型的基類。 這僅適用於託管代碼。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 此介面代表可從中衍生更具特製化的介面的基底類別。
+## <a name="notes-for-callers"></a>通話備註
+ 此介面表示可以從中提取更專用的介面的基類。
 
-## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 此介面沒有提供任何方法以外繼承自`IDebugField`。
+## <a name="methods-in-vtable-order"></a>依 Vtable 順序排列的方法
+ 此介面不提供除從`IDebugField`繼承的方法之外的任何其他方法。
 
 ## <a name="requirements"></a>需求
- 標頭： sh.h
+ 標題: sh.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

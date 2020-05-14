@@ -24,6 +24,8 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: 作法指南
   items:
+    - name: 使用效能提示
+      href: perftips.md
     - name: CPU 使用量
       href: cpu-usage.md
     - name: 記憶體使用量
@@ -32,18 +34,16 @@
           href: analyze-memory-usage.md
         - name: 分析 .NET 物件的記憶體使用量
           href: dotnet-alloc-tool.md
-        - name: 自訂原生 ETW 堆積事件
-          href: custom-native-etw-heap-events.md
         - name: 記憶體使用量 (不使用偵錯工具)
           href: memory-usage-without-debugging2.md
+        - name: 自訂原生 ETW 堆積事件
+          href: custom-native-etw-heap-events.md
     - name: 從命令列測量效能
       href: profile-apps-from-command-line.md
     - name: 分析 GPU 使用量
       href: gpu-usage.md
     - name: 分析資源取用量
       href: application-timeline.md
-    - name: 使用效能提示
-      href: perftips.md
     - name: 分析網路使用量
       href: network-usage.md
     - name: 分析 JavaScript 記憶體

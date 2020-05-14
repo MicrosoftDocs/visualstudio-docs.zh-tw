@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76542681"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>針對「開啟資料夾」自訂建置及對工作進行偵錯
@@ -28,31 +28,31 @@ Visual Studio 知道如何執行許多不同的語言和程式碼基底，但它
 
 使用下列 *.json* 檔案來自定您無專案的程式碼基底：
 
-|[檔案名稱]|用途|
+|檔案名稱|目的|
 |-|-|
-|*tasks.vs.json*|指定自訂建置命令和編譯器參數，以及任意 (非建置相關) 工作。<br>透過 [方案總管] 的右鍵功能表項目 [設定工作] 來存取。|
-|*launch.vs.json*|針對偵錯指定命令列引數。<br>透過 [方案總管] 的右鍵功能表項目 [偵錯並啟動設定] 來存取。|
+|*tasks.vs.json*|指定自訂建置命令和編譯器參數，以及任意 (非建置相關) 工作。<br>透過 [方案總管]**** 的右鍵功能表項目 [設定工作]**** 來存取。|
+|*launch.vs.json*|針對偵錯指定命令列引數。<br>透過 [方案總管]**** 的右鍵功能表項目 [偵錯並啟動設定]**** 來存取。|
 
-這些 *.json* 檔案都是位於您程式碼基底之根資料夾中名為 *.vs* 的隱藏資料夾內。 當您在 [方案總管] 中的檔案或資料夾上選取 [設定工作] 或 [偵錯並啟動設定] 時，Visual Studio 會視需要建立 *tasks.vs.json* 和 *launch.vs.json* 檔案。 這些 *.json* 檔案會隱藏，因為使用者通常都不會想要將它簽入原始檔控制。 不過，如果您想要能夠將它簽入原始檔控制，請將檔案拖曳到您程式碼基底的根目錄中，這樣便能夠顯示它們。
+這些 *.json* 檔案都是位於您程式碼基底之根資料夾中名為 *.vs* 的隱藏資料夾內。 當您在 [方案總管]**** 中的檔案或資料夾上選取 [設定工作]**** 或 [偵錯並啟動設定]**** 時，Visual Studio 會視需要建立 *tasks.vs.json* 和 *launch.vs.json* 檔案。 這些 *.json* 檔案會隱藏，因為使用者通常都不會想要將它簽入原始檔控制。 不過，如果您想要能夠將它簽入原始檔控制，請將檔案拖曳到您程式碼基底的根目錄中，這樣便能夠顯示它們。
 
 > [!TIP]
-> 若要在 Visual Studio 中檢視隱藏的檔案，請選擇 [方案總管] 工具列上的 [顯示所有檔案] 按鈕。
+> 若要在 Visual Studio 中檢視隱藏的檔案，請選擇 [方案總管]**** 工具列上的 [顯示所有檔案]**** 按鈕。
 
 ## <a name="define-tasks-with-tasksvsjson"></a>以 tasks.vs.json 定義工作
 
-您可以針對您目前在工作區中所擁有的檔案自動化建置指令碼或任何其他外部作業，方法是直接在 IDE 中以工作的形式執行它們。 您能以滑鼠右鍵按一下檔案或資料夾，並選取 [設定工作] 來設定新工作。
+您可以針對您目前在工作區中所擁有的檔案自動化建置指令碼或任何其他外部作業，方法是直接在 IDE 中以工作的形式執行它們。 您能以滑鼠右鍵按一下檔案或資料夾，並選取 [設定工作]**** 來設定新工作。
 
 ![設定 [工作] 功能表](../ide/media/customize-configure-tasks-menu.png)
 
-這會建立 (或開啟) *.vs* 資料夾中的 *tasks.vs.json* 檔案。 您可以在此檔案中定義組建工作或任意工作，然後使用您從 [方案總管] 右鍵功能表中給予它的名稱來叫用它。
+這會建立 (或開啟) *.vs* 資料夾中的 *tasks.vs.json* 檔案。 您可以在此檔案中定義組建工作或任意工作，然後使用您從 [方案總管]**** 右鍵功能表中給予它的名稱來叫用它。
 
-您可以將自訂工作新增到個別檔案中，也可以新增到特定類型的所有檔案中。 例如，您可以將 NuGet 套件檔案設定成包含「還原套件」工作，或是將所有原始程式檔設定成包含靜態分析工作 (例如針對所有 *.js* 檔案提供 Linter)。
+您可以將自訂工作新增到個別檔案中，也可以新增到特定類型的所有檔案中。 例如，NuGet 包檔可以配置為具有"還原包"任務，或者可以將所有原始檔案配置為具有靜態分析任務，如所有 *.js*檔的 linter。
 
 ### <a name="define-custom-build-tasks"></a>定義自訂建置工作
 
-如果您的程式碼基底使用 Visual Studio 無法辨識的自訂組建工具，則在您完成一些設定步驟前，將無法在 Visual Studio 中執行程式碼並對它進行偵錯。 Visual Studio 有提供*建置工作*，可讓您告訴 Visual Studio 建置、重新建置及清除您程式碼的方式。 *tasks.vs.json* 建置工作檔案會將 Visual Studio 內部開發迴圈與您程式碼基底所使用的自訂建置工具結合。
+如果您的程式碼基底使用 Visual Studio 無法辨識的自訂組建工具，則在您完成一些設定步驟前，將無法在 Visual Studio 中執行程式碼並對它進行偵錯。 Visual Studio 有提供*建置工作*，可讓您告訴 Visual Studio 建置、重新建置及清除您程式碼的方式。 *任務.vs.json*生成任務檔將 Visual Studio 內部開發迴圈與代碼庫使用的自訂生成工具耦合。
 
-我們以包含名為 *hello.cs* 之單一 C# 檔案的程式碼基底為例。 這類程式碼基底的 Makefile 看起來可能會像這樣：
+我們以包含名為 *hello.cs* 之單一 C# 檔案的程式碼基底為例。 這類程式碼基底的 Makefile** 看起來可能會像這樣：
 
 <!-- markdownlint-disable MD010 -->
 ```makefile
@@ -73,7 +73,7 @@ bin:
 ```
 <!-- markdownlint-enable MD010 -->
 
-針對這種包含建置、清理及重建目標的 Makefile，您可以定義下列 tasks.vs.json 檔案。 它包含針對建置、重新建置及清理程式碼基底的三個建置工作，並使用 NMAKE 作為建置工具。
+針對這種包含建置、清理及重建目標的 Makefile**，您可以定義下列 tasks.vs.json** 檔案。 它包含針對建置、重新建置及清理程式碼基底的三個建置工作，並使用 NMAKE 作為建置工具。
 
 ```json
 {
@@ -117,20 +117,20 @@ bin:
 }
 ```
 
-在您於 *tasks.vs.json* 中定義組建工作之後，系統會將額外的右鍵功能表 (操作功能表) 項目新增至 [方案總管] 中的相對應檔案。 在此範例中，[建置]、[重建] 和 [清理] 選項會新增至任何 Makefile 檔案的操作功能表。
+在您於 *tasks.vs.json* 中定義組建工作之後，系統會將額外的右鍵功能表 (操作功能表) 項目新增至 [方案總管]**** 中的相對應檔案。 在此範例中，[建置]、[重建] 和 [清理] 選項會新增至任何 Makefile** 檔案的操作功能表。
 
 ![具有 [建置]、[重新建置] 及 [清理] 的 Makefile 操作功能表](media/customize-build-rebuild-clean.png)
 
 > [!NOTE]
-> 基於其 `contextType` 設定，這些命令會出現在操作功能表中的 [設定工作] 命令底下。 [建置]、[重新建置] 及 [清理] 為建置命令，因此會出現在操作功能表中間的建置區段中。
+> 基於其 `contextType` 設定，這些命令會出現在操作功能表中的 [設定工作]**** 命令底下。 [建置]、[重新建置] 及 [清理] 為建置命令，因此會出現在操作功能表中間的建置區段中。
 
-當您選取其中一項選項時，系統便會執行該工作。 輸出會顯示在 [輸出] 視窗中，而建置錯誤則會顯示在 [錯誤清單] 中。
+當您選取其中一項選項時，系統便會執行該工作。 輸出會顯示在 [輸出]**** 視窗中，而建置錯誤則會顯示在 [錯誤清單]**** 中。
 
 ### <a name="define-arbitrary-tasks"></a>定義任意工作
 
-您可以在 *tasks.vs.json* 檔案中定義任意工作，以執行幾乎任何您想要的動作。 例如，您可以定義工作以顯示目前在 [輸出] 視窗中已選取之檔案的名稱，或是列出指定目錄中的檔案。
+您可以在 *tasks.vs.json* 檔案中定義任意工作，以執行幾乎任何您想要的動作。 例如，您可以定義工作以顯示目前在 [輸出]**** 視窗中已選取之檔案的名稱，或是列出指定目錄中的檔案。
 
-下列範例示範定義單一工作的 *tasks.vs.json* 檔案。 叫用該工作時，它會顯示目前已選取之 *.js* 檔案的檔案名稱。
+下面的示例顯示了定義單個*任務的任務. vs.json*檔。 叫用該工作時，它會顯示目前已選取之 *.js* 檔案的檔案名稱。
 
 ```json
 {
@@ -151,12 +151,12 @@ bin:
 - `appliesTo` 能指定可執行該命令的檔案。
 - `command` 屬性能指定要叫用的命令。 在此範例中，`COMSPEC` 環境變數會用來識別命令列解譯器，通常為 *cmd.exe*。
 - `args` 屬性能指定要傳遞至已叫用命令的引數。
-- `${file}` 巨集會在 [方案總管] 中擷取選取的檔案。
+- `${file}` 巨集會在 [方案總管]**** 中擷取選取的檔案。
 
-在儲存 *tasks.vs.json* 之後，您能以滑鼠右鍵按一下資料夾中的任何 *.js* 檔案，然後選擇 [Echo filename]。 該檔案名稱會顯示在 [輸出] 視窗中。
+在儲存 *tasks.vs.json* 之後，您能以滑鼠右鍵按一下資料夾中的任何 *.js* 檔案，然後選擇 [Echo filename]****。 該檔案名稱會顯示在 [輸出]**** 視窗中。
 
 > [!NOTE]
-> 如果您的程式碼基底沒有包含 *tasks.vs.json* 檔案，您可以在 [方案總管] 中，從該檔案的右鍵功能表或操作功能表選擇 [設定工作] 來建立一個。
+> 如果您的程式碼基底沒有包含 *tasks.vs.json* 檔案，您可以在 [方案總管]**** 中，從該檔案的右鍵功能表或操作功能表選擇 [設定工作]**** 來建立一個。
 
 下一個範例會定義能列出 *bin* 目錄的檔案及子資料夾的工作。
 
@@ -178,7 +178,7 @@ bin:
 
 - `${outDir}` 為在 `tasks` 區段之前最先定義的自訂巨集。 它接著會被稱為 `args` 屬性。
 
-此工作適用於所有檔案。 當您在 [方案總管] 中開啟任何檔案的操作功能表時，該工作的名稱 [列出輸出] 會出現在功能表的底部。 當您選擇 [列出輸出] 時，*bin* 目錄的內容會列於 Visual Studio 中的 [輸出] 視窗。
+此工作適用於所有檔案。 當您在 [方案總管]**** 中開啟任何檔案的操作功能表時，該工作的名稱 [列出輸出]**** 會出現在功能表的底部。 當您選擇 [列出輸出]**** 時，*bin* 目錄的內容會列於 Visual Studio 中的 [輸出]**** 視窗。
 
 ![操作功能表中的任意工作](../ide/media/customize-arbitrary-task-menu.png)
 
@@ -205,33 +205,33 @@ bin:
 |-|-|
 |`"*"`| 工作可供工作區中的所有檔案及資料夾使用|
 |`"*/"`| 工作可供工作區中的所有資料夾使用|
-|`"*.js"`| 工作可供工作區中所有具有 .js 副檔名的檔案使用|
-|`"/*.js"`| 工作可供工作區根目錄中所有具有 .js 副檔名的檔案使用|
-|`"src/*/"`| 工作可供 src 資料夾的所有子資料夾使用|
-|`"makefile"`| 工作可供工作區中的所有 Makefile 檔案使用|
-|`"/makefile"`| 工作僅可供工作區根目錄中的 Makefile 使用|
+|`"*.js"`| 工作可供工作區中所有具有 .js** 副檔名的檔案使用|
+|`"/*.js"`| 工作可供工作區根目錄中所有具有 .js** 副檔名的檔案使用|
+|`"src/*/"`| 工作可供 src** 資料夾的所有子資料夾使用|
+|`"makefile"`| 工作可供工作區中的所有 Makefile** 檔案使用|
+|`"/makefile"`| 工作僅可供工作區根目錄中的 Makefile** 使用|
 
 #### <a name="macros-for-tasksvsjson"></a>適用於 tasks.vs.json 的巨集
 
 |||
 |-|-|
 |`${env.<VARIABLE>}`| 指定針對開發人員命令提示字元所設定的任何環境變數 (例如 ${env.PATH}、${env.COMSPEC} 等)。 如需詳細資訊，請參閱[適用於 Visual Studio 的開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)。|
-|`${workspaceRoot}`| 工作區資料夾的完整路徑 (例如 C:\sources\hello)|
-|`${file}`| 選取來執行此工作之檔案或資料夾的完整路徑 (例如 C:\sources\hello\src\hello.js)|
-|`${relativeFile}`| 檔案或資料夾的相對路徑 (例如 src\hello.js)|
-|`${fileBasename}`| 沒有路徑或副檔名的檔案名稱 (例如 hello)|
-|`${fileDirname}`| 不包括檔案名稱的檔案完整路徑 (例如 C:\sources\hello\src)|
-|`${fileExtname}`| 所選取檔案的副檔名 (例如 .js)|
+|`${workspaceRoot}`| 工作區資料夾的完整路徑 (例如 C:\sources\hello**)|
+|`${file}`| 選取來執行此工作之檔案或資料夾的完整路徑 (例如 C:\sources\hello\src\hello.js**)|
+|`${relativeFile}`| 檔案或資料夾的相對路徑 (例如 src\hello.js**)|
+|`${fileBasename}`| 沒有路徑或副檔名的檔案名稱 (例如 hello**)|
+|`${fileDirname}`| 檔的完整路徑，不包括檔案名（例如 *，C：\源\hello\src）*|
+|`${fileExtname}`| 所選取檔案的副檔名 (例如 .js**)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>搭配 launch.vs.json 設定偵錯
 
-若要設定 CMake 專案以進行調試，請參閱[設定 CMake 的調試](/cpp/build/configure-cmake-debugging-sessions)程式。
+要配置用於調試的"製作"專案，請參閱[配置 CMake 調試會話](/cpp/build/configure-cmake-debugging-sessions)。
 
-1. 若要針對偵錯設定您的程式碼基底，請在 [方案總管] 中，從可執行檔的右鍵功能表或操作功能表選擇 [偵錯並啟動設定] 功能表項目。
+1. 若要針對偵錯設定您的程式碼基底，請在 [方案總管]**** 中，從可執行檔的右鍵功能表或操作功能表選擇 [偵錯並啟動設定]**** 功能表項目。
 
    ![[偵錯並啟動設定] 操作功能表](media/customize-debug-launch-menu.png)
 
-1. 在 [選取偵錯工具] 對話方塊中，選擇其中一個選項，然後選擇 [選取] 按鈕。
+1. 在 [選取偵錯工具]**** 對話方塊中，選擇其中一個選項，然後選擇 [選取]**** 按鈕。
 
    ![[選取偵錯工具] 對話方塊](media/customize-select-a-debugger.png)
 
@@ -251,16 +251,16 @@ bin:
    }
    ```
 
-1. 接下來，以滑鼠右鍵按一下 [方案總管] 中的可執行檔，並選擇 [設定為啟動項目]。
+1. 接下來，以滑鼠右鍵按一下 [方案總管]**** 中的可執行檔，並選擇 [設定為啟動項目]****。
 
-   系統會將該可執行檔指定為您程式碼基底的啟動項目，且偵錯 [啟動] 按鈕的標題也會變更以反映該可執行檔的名稱。
+   系統會將該可執行檔指定為您程式碼基底的啟動項目，且偵錯 [啟動]**** 按鈕的標題也會變更以反映該可執行檔的名稱。
 
    ![自訂的 [啟動] 按鈕](media/customize-start-button.png)
 
    當您選擇 **F5** 時，偵錯工具會啟動，並於您可能已經設定的所有中斷點上停止。 所有您熟悉的偵錯工具視窗都會可供使用並運作。
 
    > [!IMPORTANT]
-   > 如需有關「開啟資料夾」專案中C++自訂群組建和「偵錯工具」工作的詳細資訊，請參閱[Visual Studio 中的組建系統的C++開啟資料夾支援](/cpp/build/open-folder-projects-cpp)。
+   > 有關C++打開資料夾專案中的自訂生成和調試任務的其他詳細資訊，請參閱[Visual Studio 中C++生成系統的打開資料夾支援](/cpp/build/open-folder-projects-cpp)。
 
 ### <a name="specify-arguments-for-debugging"></a>指定偵錯的引數
 
@@ -309,10 +309,10 @@ Visual Studio 會從名為 *settings.json* 的檔案讀取有限的設定 (若�
 
 讀取自 *.gitignore* 檔案的設定會套用至其父目錄及所有子目錄。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [適用於 C++ 的「開啟資料夾」專案](/cpp/build/open-folder-projects-cpp)
 - [適用於 C++ 的 CMake 專案](/cpp/build/cmake-projects-in-visual-studio)
-- [NMAKE 參考](/cpp/build/reference/nmake-reference)
+- [NMAKE 引用](/cpp/build/reference/nmake-reference)
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)

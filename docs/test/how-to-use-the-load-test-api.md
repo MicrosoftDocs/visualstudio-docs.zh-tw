@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3d949b8c73bb155b2e6fe4900c54c6d5314d26c4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588807"
 ---
 # <a name="how-to-use-the-load-test-api"></a>如何：使用負載測試 API
@@ -26,7 +26,7 @@ Visual Studio 支援能夠控制或增強負載測試的負載測試外掛程式
 > [!TIP]
 > 使用物件瀏覽器檢查 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 命名空間。 Visual C# 和 Visual Basic 編輯器都提供 IntelliSense 支援，以便使用命名空間中的類別來撰寫程式碼。
 
-您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[如何：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)和[如何：建立要求層級外掛程式](../test/how-to-create-a-request-level-plug-in.md)。
+您也可以建立 Web 效能測試的外掛程式。 有關詳細資訊，請參閱[如何：創建 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)和[如何：創建請求級外掛程式](../test/how-to-create-a-request-level-plug-in.md)。
 
 ## <a name="to-use-the-loadtesting-namespace"></a>若要使用 LoadTesting 命名空間
 
@@ -46,20 +46,20 @@ Visual Studio 支援能夠控制或增強負載測試的負載測試外掛程式
 
 8. 使用 [負載測試編輯器] 加入新的負載測試外掛程式。
 
-    1. 以滑鼠右鍵按一下負載測試的根節點，然後選擇 [新增負載測試外掛程式]。
+    1. 以滑鼠右鍵按一下負載測試的根節點，然後選擇 [新增負載測試外掛程式]****。
 
-    2. [新增負載測試外掛程式] 對話方塊隨即顯示。
+    2. [新增負載測試外掛程式]**** 對話方塊隨即顯示。
 
-    3. 在 [所選外掛程式的屬性] 窗格中，設定外掛程式要在執行階段中使用的初始值。
+    3. 在 [所選外掛程式的屬性]**** 窗格中，設定外掛程式要在執行階段中使用的初始值。
 
         > [!NOTE]
-        > 您可以視需要從外掛程式公開任意數目的屬性。只要將它們設為公用、可設定，以及基底類型（例如整數、布林或字串）即可。 您之後也可以使用 [屬性] 視窗來編輯負載測試外掛程式屬性。
+        > 可以從外掛程式中公開盡可能多的屬性。只需將它們公開、可設置以及基類型（如整數、布林或字串）進行公開。 您之後也可以使用 [屬性]**** 視窗來編輯負載測試外掛程式屬性。
 
 9. 執行負載測試。
 
-     如需 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 的實作，請參閱[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
+     有關 的<xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>實現，請參閱[如何：創建負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [為負載測試建立自訂程式碼和外掛程式](../test/create-custom-code-and-plug-ins-for-load-tests.md)

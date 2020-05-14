@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::EnumProperties | Microsoft Docs
+title: IDebugStackFrame2::枚舉屬性 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::EnumProperties
 ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba4cf74c41d321cc03684ec6717a9eea74e9a622
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f822f20cf4fb7a6fd5aa71b9cc1ec26bcd90e234
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321849"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719907"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
-建立堆疊框架，例如本機變數與相關聯屬性的列舉值。
+為與堆疊框架關聯的屬性(如局部變數)創建枚舉器。
 
 ## <a name="syntax"></a>語法
 
@@ -51,28 +51,28 @@ int EnumProperties ( 
 
 ## <a name="parameters"></a>參數
 `dwFieldSpec`\
-[in]從旗標的組合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉，指定哪些欄位中列舉[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構要進行填寫。
+[在][DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)枚舉中的標誌的組合,指定要填充枚舉[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構中的欄位。
 
 `nRadix`\
-[in]要用於格式化數字的任何資訊基數。
+[在]用於格式化任何數值資訊的半徑。
 
 `refiid`\
-[in]使用選取之篩選的 GUID [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構的列舉，例如`guidFilterLocals`。
+[在]選擇要枚[舉DEBUG_PROPERTY_INFO結構](../../../extensibility/debugger/reference/debug-property-info.md)的篩選器的 GUID,例如`guidFilterLocals`。
 
 `dwTimeout`\
-[in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
+[在]從此方法返回之前等待的最大時間(以毫秒為單位)。 用於`INFINITE`無限期等待。
 
 `pcelt`\
-[out]傳回列舉的屬性數目。 這等同於呼叫[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)方法。
+[出]返回枚舉的屬性數。 這與調用[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)方法相同。
 
 `ppEnum`\
-[out]傳回[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件，其中包含所需的屬性清單。
+[出]返回包含所需屬性清單的[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 這個方法可讓您透過單一呼叫會擷取所有選取的屬性，因為它的速度比循序呼叫[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)並[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)方法。
+ 由於此方法允許使用單個調用檢索所有選定的屬性,因此比按順序調用[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)和[Enum 兒童](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)方法要快。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

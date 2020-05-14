@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568655"
 ---
 # <a name="log-command-window-output-command"></a>記錄命令視窗輸出命令
 
-將來自 [命令] 視窗的所有輸入和輸出複製到檔案中。
+將來自 [命令]**** 視窗的所有輸入和輸出複製到檔案中。
 
 ## <a name="syntax"></a>語法
 
@@ -30,24 +30,24 @@ ms.locfileid: "75568655"
 Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>引數
 
 `filename`\
-選擇項。 記錄檔的名稱。 根據預設，檔案會建立在使用者的設定檔資料夾中。 如果檔案名稱已經存在，就會將記錄附加至現有的檔案結尾。 如果未指定任何檔案，則會使用最近指定的檔案。 如果沒有先前的檔案存在，會建立預設記錄檔，稱為 cmdline.log。
+選擇性。 記錄檔的名稱。 根據預設，檔案會建立在使用者的設定檔資料夾中。 如果檔案名稱已經存在，就會將記錄附加至現有的檔案結尾。 如果未指定任何檔案，則會使用最近指定的檔案。 如果沒有先前的檔案存在，會建立預設記錄檔，稱為 cmdline.log。
 
 > [!TIP]
 > 若要變更儲存記錄檔的位置，請輸入檔案的完整路徑，如果路徑包含任何空格則以引號括住。
 
-## <a name="switches"></a>交換機
+## <a name="switches"></a>交換器
 
 /on\
-選擇項。 開始在指定的檔案中記錄 [命令] 視窗，並將新資訊附加至檔案。
+選擇性。 開始在指定的檔案中記錄 [命令]**** 視窗，並將新資訊附加至檔案。
 
 /off\
-選擇項。 停止 [命令] 視窗的記錄。
+選擇性。 停止 [命令]**** 視窗的記錄。
 
 /overwrite\
-選擇項。 如果在 `filename` 引數指定的檔案符合現有檔案，即會覆寫該檔案。
+選擇性。 如果在 `filename` 引數指定的檔案符合現有檔案，即會覆寫該檔案。
 
 ## <a name="remarks"></a>備註
 
@@ -73,9 +73,9 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 >Tools.LogCommandWindowOutput /on
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
+- [視覺化工作室命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
-- [尋找/命令方塊](../../ide/find-command-box.md)
+- [查找/命令框](../../ide/find-command-box.md)
 - [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

@@ -3,21 +3,22 @@ title: 管理 Visual Studio 訂閱
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706976"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444867"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
 Visual Studio [訂閱者入口網站](https://my.visualstudio.com)可讓您在單一位置管理您的所有訂用帳戶和方案成員資格。 您可以針對您的設定檔進行變更、使用訂用帳戶隨附的所有權益，並在訂用帳戶之間快速輕鬆地切換。
 
-## <a name="managing-multiple-subscriptions"></a>管理多重訂閱
+## <a name="managing-multiple-subscriptions"></a>管理多個訂用帳戶
 
 Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方案整合為較佳的單一入口網站體驗。 例如，您可能因為工作原因而使用 Visual Studio Enterprise 這類標準訂閱，在家則使用每月的 Visual Studio Professional 訂閱或 Visual Studio Dev Essentials 成員資格。
 
@@ -51,7 +52,6 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 **透過方案取得的訂用帳戶：** 如果您是透過方案取得訂用帳戶，則該訂用帳戶會繫結至您參與的方案。 如需詳細資訊，請聯繫您的方案連絡人。
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft 合作夥伴網路](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -69,10 +69,10 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 您可以輕鬆地變更設定檔中的連絡人資訊與喜好設定。
 
 1. 在訂閱者入口網站右上角，按一下您的名稱。
-2. 按一下 [編輯設定檔] 按鈕。
-3. 在 [關於] 索引標籤中，您可以變更名稱、電子郵件、國家/地區、設定檔圖片和連絡人喜好設定。 在 [喜好設定] 索引標籤中，您可以選取慣用的語言、日期和時間模式、時區以及使用者介面主題。
-4. 完成變更時，請按一下 [儲存]。
-5. 按一下瀏覽器的 [返回] 按鈕，返回「權益」頁面。
+2. 按一下 [編輯設定檔]**** 按鈕。
+3. 在 [關於]**** 索引標籤中，您可以變更名稱、電子郵件、國家/地區、設定檔圖片和連絡人喜好設定。 在 [喜好設定]**** 索引標籤中，您可以選取慣用的語言、日期和時間模式、時區以及使用者介面主題。
+4. 完成變更時，請按一下 [儲存]****。
+5. 按一下瀏覽器的 [返回]**** 按鈕，返回「權益」頁面。
 
 ### <a name="setting-communications-preferences"></a>設定通訊喜好設定
 如果您想要接收關於您的訂閱和權益的定期更新 (包括 Visual Studio 訂閱電子報)，請[更新您的喜好設定](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)，方法是選取您 Visual Studio 設定檔中的 [Visual Studio 訂閱] 核取方塊。 您隨時可以變更這些設定和取消訂閱。 
@@ -88,27 +88,41 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 若要新增其他帳戶：
 
 1. 使用您的 Microsoft 帳戶 (MSA) 登入[訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
-2. 按一下 [訂閱] 索引標籤。
-3. 在 [相關連結] 中，選擇 [新增其他帳戶]。
-4. 輸入您的公司帳戶/學校帳戶電子郵件地址，然後按一下 [新增]。
+2. 按一下 [訂閱]**** 索引標籤。
+3. 在 [相關連結]**** 中，選擇 [新增其他帳戶]****。
+4. 輸入您的公司帳戶/學校帳戶電子郵件地址，然後按一下 [新增]****。
 
-新增其他帳戶之後，您可以按一下 [訂閱] 索引標籤，然後選擇 [相關連結] 區段中的適當選項，隨時更新帳戶或將其移除。
+新增其他帳戶之後，您可以按一下 [訂閱]**** 索引標籤，然後選擇 [相關連結]**** 區段中的適當選項，隨時更新帳戶或將其移除。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>問：如果我未更新訂閱，Microsoft 會保留我的資料多久？
 答：根據購買管道，Microsoft 維護客戶資料的時間長度不一。
 
-| 頻道                                                | 持續時間 (天數) |
+| 通路                                                | 持續時間 (天數) |
 |--------------------------------------------------------|-----------------|
 |    零售 (例如透過 Microsoft Store)               |    360          |
 |    大量授權服務中心 (VLSC)              |    180          |
 |    Microsoft 產品和服務合約 (MPSA)    |    180          |
 |    Visual Studio 雲端訂閱                   |    180          |
-|    程式 (例如 MCT、BizSpark、MPN、Imagine)          |    180          |
+|    程式(例如 MCT、MPN、想像)          |    180          |
 |    禁止轉售 (例如 MVP、MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
 > [!NOTE]
 > - 如果您選擇關閉 Microsoft 帳戶或 Azure AD，則會立即匿名您的個人資料。
 > - 如果您有使用中的訂閱，則不會完全移除您的個人資料。
+
+## <a name="see-also"></a>另請參閱
+- [視覺化工作室文件](https://docs.microsoft.com/visualstudio/)
+- [Azure 開發人員文件](https://docs.microsoft.com/azure/devops/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
+- [微軟 365 文件](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>後續步驟
+您是否管理組織的訂閱?  瞭解有關管理可視化工作室訂閱的更多詳細資訊:
+- [配置單一訂閱](assign-license.md)
+- [配置多個訂閱](assign-license-bulk.md)
+- [編輯訂用帳戶](edit-license.md)
+- [刪除訂用帳戶](delete-license.md)
+- [確定最大使用量](maximum-usage.md)

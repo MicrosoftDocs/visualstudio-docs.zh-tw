@@ -9,23 +9,23 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585531"
 ---
-# <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>使用填充碼來隔離您的應用程式進行單元測試
+# <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>使用希姆奇將應用隔離以進行單元測試
 
-**填充碼類型**是 Microsoft Fakes Framework 用來讓您將測試中的元件與環境隔離的兩項技術之一。 Shim 會讓對特定方法的呼叫轉向至您撰寫為測試一部分的程式碼。 有許多方法會取決於外部條件傳回不同的結果，不過填充碼會受您的測試所控制，並且可在每個呼叫中傳回一致的結果。 這可讓您更輕鬆地撰寫測試。
+**Shim 類型**是 Microsoft 假軟體框架用來將測試中的元件與環境隔離的兩種技術之一。 填充碼會將指向特定方法的呼叫轉向至您撰寫來做為測試一部分的程式碼。 有許多方法會取決於外部條件傳回不同的結果，不過填充碼會受您的測試所控制，並且可在每個呼叫中傳回一致的結果。 這使得編寫測試變得更加容易。
 
-使用*填充*碼，將您的程式碼與不屬於方案的元件隔離。 若要隔離解決方案的元件，請使用*存根*。
+使用*希姆奇*將代碼與不屬於解決方案的程式集隔離開來。 要將解決方案的元件彼此隔離，請使用*存根*。
 
-如需總覽和「快速入門」指引，請參閱[使用 Microsoft Fakes 隔離測試中的程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)。
+有關概述和"快速啟動"指南，請參閱[使用 Microsoft Fakes 測試的代碼](../test/isolating-code-under-test-with-microsoft-fakes.md)。
 
-**Requirements**
+**需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 - .NET Framework 專案
 
 > [!NOTE]
@@ -33,7 +33,7 @@ ms.locfileid: "75585531"
 
 ## <a name="example-the-y2k-bug"></a>範例：Y2K Bug
 
-請考慮在2000年1月1日擲回例外狀況的方法：
+請考慮在 2000 年 1 月 1 日引發異常的方法：
 
 ```csharp
 // code under test
@@ -64,19 +64,19 @@ using (ShimsContext.Create()) {
 
 ## <a name="how-to-use-shims"></a>如何使用填充碼
 
-首先，新增 Fakes 元件：
+首先，添加假元件：
 
-1. 在**方案總管**中，展開單元測試專案的 [**參考**] 節點。
+1. 在**解決方案資源管理器中**，展開單元測試專案的**參考節點**。
 
-   - 如果您在 Visual Basic 中工作，選取 [方案總管] 工具列中的 [顯示所有檔案]，才能看見 [參考] 節點。
+   - 如果您在 Visual Basic 中工作，選取 [方案總管]**** 工具列中的 [顯示所有檔案]****，才能看見 [參考]**** 節點。
 
-2. 選取包含您要建立填充碼之類別定義的元件。 例如，如果您要填充**日期時間**，請選取 **System.dll**。
+2. 選擇包含要為其創建分義器的類定義的程式集。 例如，如果要進行"**日期時間"，** 請選擇 **"系統.dll**"。
 
-3. 在捷徑功能表上，選擇 [新增 Fakes 組件]。
+3. 在捷徑功能表上，選擇 [新增 Fakes 組件]****。
 
 ### <a name="use-shimscontext"></a>使用 ShimsContext
 
-在單元測試架構中使用填充碼類型時，請將測試程式碼包裝在 `ShimsContext` 中，以控制填充碼的存留期。 否則，填充碼會持續到 AppDomain 關閉為止。 建立 `ShimsContext` 的最簡單方式為使用靜態 `Create()` 方法，如下列程式碼所示：
+在單元測試框架中使用神馬類型時，將測試代碼包裝在 中`ShimsContext`以控制希姆的存留期。 否則，hims 將一直持續到 AppDomain 關閉。 建立 `ShimsContext` 的最簡單方式為使用靜態 `Create()` 方法，如下列程式碼所示：
 
 ```csharp
 //unit test code
@@ -88,11 +88,11 @@ public void Y2kCheckerTest() {
 }
 ```
 
-請務必適當處置每個填充碼內容。 根據經驗法則，請在 `using` 語句內呼叫 `ShimsContext.Create`，以確保適當清除已註冊的填充碼。 例如，您可能會註冊測試方法的填充碼，將 `DateTime.Now` 方法取代成永遠都會傳回 2000 年 1 月 1 日的委派。 如果您忘記清除測試方法中已註冊的填充碼，測試回合的其餘部分一律會傳回2000年1月的第一個，做為 `DateTime.Now` 值。 這可能會讓人感到意外和混淆。
+請務必適當處置每個填充碼內容。 根據經驗，調用`ShimsContext.Create``using`語句的內部，以確保正確清除已註冊的希姆。 例如，您可能會註冊測試方法的填充碼，將 `DateTime.Now` 方法取代成永遠都會傳回 2000 年 1 月 1 日的委派。 如果您忘記在測試方法中清除已註冊的墊片，則測試回合的其餘部分將始終返回 2000 年 1 月 1`DateTime.Now`日的值。 這可能會讓人感到意外和混淆。
 
 ### <a name="write-a-test-with-shims"></a>撰寫含填充碼的測試
 
-在您的測試程式碼中，請插入您要假造之方法的「繞道」。 例如：
+在您的測試程式碼中，請插入您要假造之方法的「繞道」**。 例如：
 
 ```csharp
 [TestClass]
@@ -153,7 +153,7 @@ End Class
 
 填充碼類別名稱是在原始類型名稱前面加上 `Fakes.Shim` 而構成。
 
-填充碼藉由將「繞道」插入至受測應用程式的程式碼中來運作。 只要原始方法的呼叫發生，Fakes 系統就會執行繞道，因此呼叫的是您的填充程式碼，而不是呼叫實際的方法。
+填充碼藉由將「繞道」** 插入至受測應用程式的程式碼中來運作。 只要原始方法的呼叫發生，Fakes 系統就會執行繞道，因此呼叫的是您的填充程式碼，而不是呼叫實際的方法。
 
 請注意繞道會在執行階段建立和刪除。 一定要在 `ShimsContext` 的生命週期內建立繞道。 在處置繞道的時候，會移除您在繞道作用時建立的任何填充碼。 最好的做法是在 `using` 陳述式內進行。
 
@@ -401,7 +401,7 @@ public class MyClass : IEnumerable<int> {
 }
 ```
 
-藉由呼叫 Bind 方法，您可以在 MyClass 中填充 `IEnumerable<int>` 的執行：
+您可以通過調用 Bind 方法來來`IEnumerable<int>`來來來來討論 MyClass 中的實現：
 
 ```csharp
 // unit test code
@@ -426,7 +426,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
 如果尚未明確設定此行為，則會使用靜態 `ShimsBehaviors.Current` 屬性所傳回的執行個體。 根據預設，這個屬性傳回的行為會擲回 `NotImplementedException` 例外狀況。
 
-您隨時可以設定任何填充碼執行個體的 `InstanceBehavior` 屬性，藉以變更行為。 例如，下列程式碼片段會將填充碼變更為不會執行任何動作的行為，或傳回傳回類型的預設值，也就是 `default(T)`：
+您隨時可以設定任何填充碼執行個體的 `InstanceBehavior` 屬性，藉以變更行為。 例如，以下程式碼片段將 shim 更改為不執行任何操作或返回返回類型的預設值的行為，即`default(T)`：
 
 ```csharp
 // unit test code
@@ -458,13 +458,13 @@ ShimMyClass.BehaveAsNotImplemented();
 
 ## <a name="concurrency"></a>並行
 
-填充碼類型適用於在 AppDomain 中的所有執行緒，且沒有執行緒相似性。 如果您打算使用支援並行的測試執行器，這是很重要的事實。 涉及填充碼類型的測試無法同時執行。 這個屬性不是由 Fakes 執行階段強制設定的。
+填充碼類型適用於在 AppDomain 中的所有執行緒，且沒有執行緒相似性。 如果您計畫使用支援併發的測試流道，這是一個重要事實。 涉及希姆類型的測試不能同時運行。 這個屬性不是由 Fakes 執行階段強制設定的。
 
 ## <a name="call-the-original-method-from-the-shim-method"></a>從填充碼方法呼叫原始方法
 
-假設您想要在驗證傳遞至方法的檔案名之後，將文字寫入檔案系統。 在這種情況下，您會在填充碼方法的中間呼叫原始方法。
+假設您要在驗證傳遞給 方法的檔案名後將文本寫入檔案系統。 在這種情況下，您將在 shim 方法的中間調用原始方法。
 
-解決這個問題的第一種方法是使用委派和 `ShimsContext.ExecuteWithoutShims()`包裝原始方法的呼叫，如下列程式碼所示：
+解決此問題的第一種方法是使用委託和`ShimsContext.ExecuteWithoutShims()`（） 對原始方法進行調用，如以下代碼中：
 
 ```csharp
 // unit test code
@@ -478,7 +478,7 @@ ShimFile.WriteAllTextStringString = (fileName, content) => {
 };
 ```
 
-另一種方法是將填充碼設定為 null、呼叫原始方法，然後還原填充碼。
+另一種方法是將 shim 設置為 null，調用原始方法，並還原 shim。
 
 ```csharp
 // unit test code
@@ -503,7 +503,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="systemenvironment"></a>System.Environment
 
-若要 <xref:System.Environment?displayProperty=fullName>填充碼，請將下列內容新增至**Assembly**元素後面的 fakes 檔案：
+要 him，<xref:System.Environment?displayProperty=fullName>在**程式集**元素之後將以下內容添加到 mscorlib.fakes 檔中：
 
 ```xml
 <ShimGeneration>
@@ -511,7 +511,7 @@ ShimFile.WriteAllTextStringString = shim;
 </ShimGeneration>
 ```
 
-重建方案之後，<xref:System.Environment?displayProperty=fullName> 類別中的方法和屬性可供填充，例如：
+重建解決方案後，<xref:System.Environment?displayProperty=fullName>類中的方法和屬性可供分問，例如：
 
 ```csharp
 System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
@@ -521,8 +521,8 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 填充碼在來自 .NET 基底類別庫 **mscorlib** 和 **System** 的類型上並非全部都能使用。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 Microsoft Fakes 隔離測試中的程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Peter Provost's blog: Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) (Peter Provost 部落格︰Visual Studio 2012 填充碼)
-- [Video (1h16): Testing untestable code with fakes in Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411) (影片 (1 小時 16 分鐘)：在 Visual Studio 2012 中使用 Fakes 測試不可測試的程式碼)
+- [彼得·普羅沃斯特的博客：視覺工作室2012年希姆](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [視頻 （1h16）：在 Visual Studio 2012 中使用假代碼測試無法測試的代碼](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

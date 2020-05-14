@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d1f7e912ed5960c52e3f0bfa40fe9b87e91a2e6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778696"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>如何：指定其他的檢測選項
@@ -30,17 +30,17 @@ ms.locfileid: "74778696"
 
 ## <a name="to-specify-additional-instrumentation-option"></a>指定其他的檢測選項
 
-1. 在 [效能總管] 中，選取 [效能工作階段]，然後以滑鼠右鍵按一下並選取 [屬性]。
+1. 在 [效能總管]**** 中，選取 [效能工作階段]****，然後以滑鼠右鍵按一下並選取 [屬性]****。
 
-2. 在 [屬性頁] 中，按一下 [進階] 屬性。
+2. 在 [屬性頁]**** 中，按一下 [進階]**** 屬性。
 
-3. 在 [其他檢測選項] 方塊中輸入選項。
+3. 在 [其他檢測選項]**** 方塊中輸入選項。
 
      例如，使用 /CONTROL:THREAD 以指定程式碼剖析層級。 如需選項的完整清單，請參閱 [VSInstr](../profiling/vsinstr.md)。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]****。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[設定效能工作階段](../profiling/configuring-performance-sessions.md)
-[從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[從命令列配置性能會話](../profiling/configuring-performance-sessions.md)
+[設定檔](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -1,77 +1,77 @@
 ---
-title: VSCT XML 結構描述參考 |Microsoft Docs
+title: VSCT XML 架構參考 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio command table configuration files (VSCT), XML schema
 - VSCT XML schema elements
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94197efeadf8cd7148cbc41f3f71df625718bba7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 923a0c4b64fcae3a409a2298d6d481f6e1bb14db
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350725"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697911"
 ---
-# <a name="vsct-xml-schema-reference"></a>VSCT XML 結構描述參考
-提供的命令資料表編譯器結構描述項目，允許的子系項目和屬性每個。
+# <a name="vsct-xml-schema-reference"></a>VSCT XML 架構參考
+提供命令表編譯器架構元素的表,每個元素都允許子元素和屬性。
 
- 以 XML 為基礎的命令資料表設定 (.vsct) 檔案的整合式的開發環境 (IDE) 中定義 VSPackage 提供的命令項目。 這些項目包含功能表項目、 功能表、 工具列和下拉式方塊。
+ 基於 XML 的指令表配置 (.vsct) 檔案定義 VSPackage 向整合式開發環境 (IDE) 提供的命令元素。 這些元素包括功能表項、功能表、工具列和組合框。
 
 > [!NOTE]
-> VSCT 編譯器可以執行前置處理器在.vsct 檔。 這通常是因為C++您可以定義前置處理器，包含與具有相同的語法中所使用的巨集C++檔案。 .vsct 提供這個範例檔案**新的專案**VSPackage 專案建立精靈。
+> VSCT 編譯器可以在 .vsct 檔上運行預處理器。 由於這通常是C++預處理器,因此可以定義具有與C++檔相同的語法的包含和宏。 新專案精靈為 VSPackage**專案**建立的 .vsct 檔案中提供了這方面的範例。
 
-## <a name="optional-elements"></a>選擇性的項目
- 某些 VSCT 項目是選擇性的。 如果`Parent`未指定引數，Group_Undefined:0將隱含。 如果`Icon`未指定引數，會隱含 guidOfficeIcon:msotcidNoIcon。 攠摝坫定義時，模擬，也就是通常未使用，是選擇性的。
+## <a name="optional-elements"></a>選擇元素
+ 某些 VSCT 元素是可選的。 如果未指定`Parent`參數,則Group_Undefined:0將被暗示。 如果未指定`Icon`參數,則暗示為 guidOfficeIcon:msotcidNoIcon。 定義快捷鍵時,通常未使用的仿真是可選的。
 
- 可能在編譯時期內嵌點陣圖項目，藉由指定的位置中的點陣圖區`href`引數。 點陣圖區是在合併過程中複製而不是擷取自 DLL 的資源。 當`href`提供引數，則`usedList`引數會變成選用項目，並使用視為點陣圖區中的所有位置。
+ 通過在`href`參數中指定位圖條的位置,可以在編譯時嵌入位圖項。 位圖條條在合併期間複製,而不是從 DLL 的資源中提取。 提供`href`參數時,`usedList`參數變為可選,並且考慮使用位圖條中的所有插槽。
 
- 使用符號名稱，必須定義所有的 GUID 和 ID 值。 可能會定義這些名稱，在標頭檔或 VSCT\<符號 > 區段。 符號名稱必須是本機路徑，包含透過\<Include > 項目，或所參考\<Extern > 項目。 符號名稱從檔案匯入標頭中指定\<Extern > 如果它遵循簡單的模式的項目 #define 符號值。 值可以是另一個符號，只要該符號已定義過。 GUID 定義必須遵循任一 OLE 或C++格式。 識別碼值可能是十進位數字或會加上 0 x 的十六進位數字，下列幾行中所示：
+ 所有 GUID 和 ID 值都必須使用符號名稱來定義。 這些名稱可以在標題檔中或在 VSCT\<符號>部分中定義。 符號名稱必須是本地的,通過\<「包括>元素包含」,或者\<由 Extern> 元素引用。 符號名稱從\<Extern> 元素中指定的標頭檔中導入,如果它遵循#define SYMBOL VALUE 的簡單模式。 只要該符號以前定義,該值可能是另一個符號。 GUID 定義必須遵循 OLE 或C++格式。 ID 值可以是十進位數位或十六進位數字,前面是 0x,如以下行所示:
 
-- {6D484634-E53D-4a2c-ADCB-55145C9362C8}
+- [6D484634-E53D-4a2c-ADCB-55145C9362C8]
 
-- {0x6d484634 0xe53d、 0x4a2c，{0xad、 0xcb，0x55、 0x14，0x5c、 0x93，0x62，0xc8 建立}}
+- { 0x6d484634, 0xe53d, 0x4a2c, { 0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8 |
 
-  可能會使用 XML 註解，但是反覆存取的圖形化使用者介面 (GUI) 工具可能會捨棄它們。 內容\<註釋 > 項目保證維持不論格式為何。
+  可以使用 XML 註釋,但往返圖形使用者介面 (GUI) 工具可能會放棄它們。 \<無論格式如何,註釋>元素的內容都保證得到維護。
 
 ## <a name="schema-hierarchy"></a>結構描述階層
- .Vsct 檔案具有下列主要項目。
+ .vsct 檔具有以下主要元素。
 
-- [CommandTable 元素](../extensibility/commandtable-element.md)
+- [指令表元素](../extensibility/commandtable-element.md)
 
-- [Extern 元素](../extensibility/extern-element.md)
+- [外部元素](../extensibility/extern-element.md)
 
-- [包含項目](../extensibility/include-element.md)
+- [包括元素](../extensibility/include-element.md)
 
 - [定義項目](../extensibility/define-element.md)
 
-- [Commands 元素](../extensibility/commands-element.md)
+- [指令元素](../extensibility/commands-element.md)
 
-- [CommandPlacements 元素](../extensibility/commandplacements-element.md)
+- [命令放置元素](../extensibility/commandplacements-element.md)
 
-- [VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)
+- [可見性限制元素](../extensibility/visibilityconstraints-element.md)
 
-- [KeyBindings 元素](../extensibility/keybindings-element.md)
+- [鍵繫結元素](../extensibility/keybindings-element.md)
 
-- [UsedCommands 元素](../extensibility/usedcommands-element.md)
+- [已用指令元素](../extensibility/usedcommands-element.md)
 
-- [父項目](../extensibility/parent-element.md)
+- [父元素](../extensibility/parent-element.md)
 
-- [Icon 元素](../extensibility/icon-element.md)
+- [圖示元素](../extensibility/icon-element.md)
 
-- [Strings 元素](../extensibility/strings-element.md)
+- [字串元素](../extensibility/strings-element.md)
 
-- [Command Flag 元素](../extensibility/command-flag-element.md)
+- [命令旗標元素](../extensibility/command-flag-element.md)
 
-- [Symbols 元素](../extensibility/symbols-element.md)
+- [符號元素](../extensibility/symbols-element.md)
 
-- [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)
+- [條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)
 
 ## <a name="see-also"></a>另請參閱
-- [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [在 Vspackage 中路由傳送命令](../extensibility/internals/command-routing-in-vspackages.md)
+- [VS 套件如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [VS 套件的指令路由](../extensibility/internals/command-routing-in-vspackages.md)

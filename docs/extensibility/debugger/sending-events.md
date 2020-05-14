@@ -1,41 +1,41 @@
 ---
-title: 傳送事件 |Microsoft Docs
+title: 傳送事件 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], sending events
 ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a2c87b2e05e4ffe94d77333095438f43b644976
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5ec0d3aa29da562147b71b8efde49baf07d8ae0b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311346"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713034"
 ---
 # <a name="send-events"></a>傳送事件
-偵錯工具與偵錯引擎 (DE) 之間的通訊機制是 DCOM 所根據的事件模型。 事件會傳送為 COM 物件，且每個事件具有指定的參數：
+除錯器和除錯引擎 (DE) 之間的通訊機制是基於 DCOM 的事件模型。 事件作為 COM 物件傳送,每個事件都有指定:
 
-- 呼叫事件 DE。
+- 調用事件的 DE。
 
-- 描述發生什麼事。
+- 所發生的事情的描述。
 
-- 處理程序、 方案，以及識別發生事件的內容的執行緒資訊。 此程序不會傳送規定所傳來的事件。
+- 標識事件發生地上下文的進程、程序和線程資訊。 不會為從 DE 發送的事件發送進程。
 
-- 事件類型，指出事件是否為同步或非同步。
+- 指示事件是同步事件還是異步的事件類型。
 
-  使用方法傳送所有的偵錯事件[IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)。
+  所有調試事件都使用[IDebugEvent回調2::事件](../../extensibility/debugger/reference/idebugeventcallback2-event.md)發送。
 
 ## <a name="in-this-section"></a>本節內容
- [事件來源](../../extensibility/debugger/event-sources-visual-studio-sdk.md)說明兩個來源的事件： 偵錯引擎 (DE) 和工作階段進行偵錯管理員 (SDM)。
+ [事件來源](../../extensibility/debugger/event-sources-visual-studio-sdk.md)解釋兩個事件源:調試引擎 (DE) 和會話調試管理器 (SDM)。
 
- [支援的事件類型](../../extensibility/debugger/supported-event-types.md)討論目前支援的事件類型： 非同步和同步。
+ [受支援的事件型態](../../extensibility/debugger/supported-event-types.md)討論當前支援的事件類型:非同步和同步。
 
- [事件描述](../../extensibility/debugger/event-descriptions.md)定義事件和其使用的原因。
+ [事件描述](../../extensibility/debugger/event-descriptions.md)定義事件及其使用原因。
 
 ## <a name="related-sections"></a>相關章節
- [建立自訂的偵錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)說明 DE 解譯器或作業系統，提供偵錯服務的運作方式。
+ [建立自訂除錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)描述 DE 如何與解釋器或作業系統一起提供調試服務。

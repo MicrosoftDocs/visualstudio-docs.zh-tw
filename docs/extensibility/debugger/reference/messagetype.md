@@ -1,5 +1,5 @@
 ---
-title: MESSAGETYPE | Microsoft Docs
+title: 消息類型 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MESSAGETYPE enumeration
 ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c17860bb47f493031e6db1134aec498611b07f1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b4d0fd12495a59427500c16ef6f37d9f8b6e61f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339198"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714491"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
-指定訊息類型和原因。
+指定消息類型和原因。
 
 ## <a name="syntax"></a>語法
 
@@ -52,34 +52,34 @@ public enum enum_MESSAGETYPE { 
 
 ## <a name="fields"></a>欄位
  `MT_OUTPUTSTRING`\
- 表示訊息應傳送至輸出視窗。 這是從互斥`MT_MESSAGEBOX`。
+ 指示應將消息發送到輸出視窗。 這是來自`MT_MESSAGEBOX`的相互排斥。
 
  `MT_MESSAGEBOX`\
- 指示訊息應該會顯示訊息方塊。 這是從互斥`MT_OUTPUTSTRING`。
+ 指示消息應顯示在消息框中。 這是來自`MT_OUTPUTSTRING`的相互排斥。
 
  `MT_TYPE_MASK`\
- 要找出訊息的目的地的遮罩值。
+ 用於隔離消息目標的掩碼值。
 
  `MT_REASON_EXCEPTION`\
- 表示在發生例外狀況，正在顯示訊息方塊。 這是從互斥`MT_REASON_TRACEPOINT`。
+ 指示消息框由於異常而顯示。 這是來自`MT_REASON_TRACEPOINT`的相互排斥。
 
  `MT_REASON_TRACEPOINT`\
- 表示顯示訊息方塊的結果叫用追蹤點。 這是互斥`MT_REASON_EXCEPTION`。
+ 指示由於命中跟蹤點而顯示消息框。 這是相互排斥的`MT_REASON_EXCEPTION`。
 
  `MT_REASON_MASK`\
- 要找出所顯示的訊息的原因的遮罩值。
+ 用於隔離顯示消息原因的掩碼值。
 
 ## <a name="remarks"></a>備註
- 會傳回這些值從[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)並[GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)方法。
+ 這些值從[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)和[GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)方法返回。
 
- 其中一個原因值可以結合使用位元的輸出目的地值的其中一個`OR`。
+ 其中一個原因值可以使用位值`OR`與輸出目標值之一組合。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

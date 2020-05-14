@@ -1,86 +1,86 @@
 ---
-title: 新增項目加入新項目對話方塊 |Microsoft Docs
+title: 新增項目新增到「新增新項目」對話框 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a9921103bf5954061fbb61c405ba1d36ffb782
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af7f9e5c792785a23ad1674a50abeb4eb6d3cba9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328058"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710221"
 ---
-# <a name="add-items-to-the-add-new-item-dialog-box"></a>將項目新增至 [加入新項目] 對話方塊
-加入項目至的程序**加入新項目**對話方塊開頭的登錄機碼。 下列登錄項目中所示**AddItemTemplates**一節包含可在哪一個項目中的目錄名稱與路徑**加入新項目**放 對話方塊。
+# <a name="add-items-to-the-add-new-item-dialog-box"></a>新增項目新增項目新增項目對話框
+向「**添加新項目**」對話框添加項的過程從註冊表項開始。 若以下註冊表項目所示 **,「AddItemTemplates」** 部分包含目錄的路徑和名稱,其中放置了「**添加新項目」** 對話框中提供的項。
 
 > [!NOTE]
-> 資料表的正後方的程式碼片段包含其他資訊的登錄項目。
+> 代碼段緊接的表包含有關註冊表項的其他資訊。
 
- 本章節位於**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**。
+ 此部分位於**HKEY_LOCAL_MACHINE_SOFTWARE_微軟[VisualStudio]14.0Exp_專案**下。
 
- 第一個 GUID 是這種; 專案的 CLSID第二個 GUID 指出新增的項目範本的已註冊的專案類型：
+ 第一個 GUID 是此類專案的 CLSID;第二個 GUID 指示「新增項目」樣本的已註冊項目類型:
 
- **\\{C061DB26-5833-11D2-96F5-000000000000}\\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
+ **\\[C061DB26-5833-11D2-96F5-0000000000]\\新增項目\\樣本範本Dir\\[ACEF4EB2-57CF-11D2-96F4-000000000000000]\\1**
 
- **@** = #6
+ **@**• #6
 
- **TemplatesDir** = \\&lt;Visual Studio SDK 安裝路徑&gt;\\VSIntegration\\&lt;SomeFolder&gt; \\&lt;SomePackage&gt;\\&lt;SomeProject&gt;\\&lt;SomeProjectItems&gt;
+ **樣本Dir** = \\&gt;&lt;&lt;視覺化工作室 SDK 安裝路徑 VS 整合一些資料夾一些套件一些項目專案\\\\&lt;&gt;\\&lt;&gt;\\&lt;&gt;\\&gt;
 
- **SortPriority** = dword:00000064
+ **排序優先權**= dword:00000064
 
-| 名稱 | 類型 | 資料 (從 *.rgs*檔案) | 描述 |
+| 名稱 | 類型 | 資料(來自 *.rgs*檔案) | 描述 |
 |------------------|-----------| - | - |
-| @ （預設值） | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | 資源識別碼**加入項目**範本。 |
-| Val TemplatesDir | REG_SZ | %TEMPLATE_PATH%\\&lt;SomeProjectItems&gt; | 在對話方塊中顯示的專案項目路徑**加入新項目**精靈。 |
-| Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | 判斷樹狀節點中顯示的檔案中的排序次序**加入新項目** 對話方塊。 |
+| * (預設) | REG_SZ | ±%IDS_ADDITEM_TEMPLATES_ENTRY% | **添加項目**範本的資源 ID。 |
+| 瓦爾範本Dir | REG_SZ | %TEMPLATE_PATH%\\&lt;某些項目項目&gt; | **"添加新專案**"嚮導的對話框中顯示的專案項的路徑。 |
+| Val 排序優先權 | REG_DWORD | 100[!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]( ) | 確定「**新增新項目」** 對話框中顯示的檔案的樹節點中的排序順序。 |
 
 > [!NOTE]
-> Visual C# 和 Visual Basic 專案類型 GUID 如下所示：
-> - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
-> - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
+> Visual C# 和視覺化基本項目類型的 GUIDS 如下所示:
+> - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: [FAE04EC0-301F-11D3-BF4B-00C04F79EFBC]
+> - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]:[F184B08F-C81C-45F6-A57F-5ABD9991F28F]
 
- 針對列出的目錄**TemplatesDir**，即*TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;* ，是在左邊的節點**新增新的項目**對話方塊方塊中的樹狀結構。 在樹狀目錄中的其他項目為基礎的根目錄中的子目錄。 可加入至專案的檔案是在右窗格中的項目**加入新項目** 對話方塊。
+ **TemplatesDir**列出的目錄*\\&lt;(%TEMPLATE_PATH%&gt;某些項目專案*)是 **「新增新專案」** 對話框樹左側的節點。 樹中的其他元素基於該根目錄中的子目錄。 可添加到專案中的檔案是 **「新增新項目」** 對話框右側窗格中的項目。
 
- 一般而言，這個資料夾將包含範本檔案，例如 HTML 範本專案或 *.cpp*檔案，以及任何 *.vsz*檔案來啟動精靈。 若要控制的項目顯示的方式，您也可以包含 *.vsdir*當地語系化目錄名稱和圖示的檔案。 當地語系化的字串會出現在對話方塊中，表示此節點中的標題**加入新項目**對話方塊方塊中的樹狀結構。
+ 通常,此資料夾將包含專案的範本檔,如範本 HTML 或 *.cpp*檔,以及用於啟動精靈的任何 *.vsz*檔案。 要控制項目的顯示方式,還可以包括用於本地化目錄名稱和圖示的 *.vsdir*檔案。 當地語系化字串是顯示在「**新增新項目」** 對話方塊樹中表示此節點的對話框中顯示的標題。
 
- 不過，您沒有將所有項目在其中一個 *.vsdir*檔案。 您可以有一個 *.vsdir*檔案的目錄中的每個項目。 如需詳細資訊，請參閱 < [Wizard (.vsz) 檔](../../extensibility/internals/wizard-dot-vsz-file.md)並[範本目錄描述 (.vsdir) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。
+ 但是,您不必在一個 *.vsdir*檔中擁有所有內容。 對於目錄中的每個專案,可以有一個 *.vsdir*檔。 關於詳細資訊,請參閱精靈[(.vsz) 檔案與](../../extensibility/internals/wizard-dot-vsz-file.md)[樣本目錄標題 (.vsdir) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。
 
 > [!NOTE]
-> *.Vsdir*是選擇性的範本目錄中的檔案。 如果您只想要將專案項目放在目錄中，並顯示在**加入新項目** 對話方塊中，您可以將該檔案中指定的範本目錄置於**TemplatesDir**陳述式。 在右窗格中會顯示檔案**加入新項目**該專案的對話方塊。 不過，如果您想要顯示的檔案或圖示的當地語系化的標題，您必須包含至少一個 *.vsdir*範本目錄中的檔案。
+> 樣本目錄中的 *.vsdir*檔是可選的。 如果只想將專案元素放在目錄中並在 **「添加新專案」** 對話框中顯示,則可以將該檔放在**樣本表**表中指定的範本目錄中。 然後,該檔將顯示在該專案的「**添加新專案」** 對話框的右側窗格中。 但是,如果要顯示檔的本地化標題或圖示,則必須在範本目錄中至少包含一個 *.vsdir*檔。
 
-## <a name="group-project-items"></a>群組的專案項目
- 如果您想要包含在資料夾中的樣板群組**加入新項目**對話方塊方塊樹狀目錄中，您必須使用項目範本根目錄底下的子目錄中。 當**加入新項目**對話方塊會顯示給使用者，他們也會看到子資料夾，並可以從中選取專案項目。
+## <a name="group-project-items"></a>群組項目項目
+ 如果要在 **「添加新專案」** 對話方塊樹中的資料夾中包含樣本組,則必須在根範本目錄下具有包含其中項的子目錄。 向使用者顯示「**添加新項目**」對話框時,他們還會看到子資料夾,並能夠從這些資料夾中選擇專案元素。
 
- 在程式碼區段之排序優先順序會決定相對於其他元素樹狀節點的樹狀目錄中建立此範本目錄的位置。 針對**加入新項目** 對話方塊之排序優先順序是所有您必須包含您的項目將會顯示在對話方塊中正確的位置。
+ 代碼段中的排序優先順序確定在樹中相對於樹節點的其他元素創建此範本目錄的位置。 對於「**添加新專案」** 對話框,排序優先順序是必須包含的,以便項目將顯示在對話框中的正確位置。
 
- 您也可以實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>介面，以篩選中所顯示的內容**加入新項目** 對話方塊。 藉由實作這個介面，您可以設定一個範本目錄，例如包含的磁碟上 50 的範本和精靈檔案。 如此一來，您可以使用隸屬於某個專案類型、 其他 30 檔案屬於另一個專案類型，以及可用在專案的一般型別中的所有檔案的 20 個檔案的不同專案類型。 在這種方式，根據哪個專案建立範本，您可以顯示一組不同的範本檔案。
+ 您還可以實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>該介面來篩選「**添加新項目」** 對話框中顯示的內容。 通過實現此介面,可以在磁碟上設置一個範本目錄,其中包含 50 個樣本和嚮導檔。 這樣,您可以具有不同的項目類型,其中 20 個檔屬於一個項目類型,其他 30 個檔屬於另一個項目類型,所有檔都位於一般類型的專案中。 這樣,根據創建的專案範本,可以顯示一組不同的範本檔。
 
- 例如，如果在 Visual Basic 專案中，您可能會有 Web 專案和用戶端專案。 不是一個有用的項目新增至用戶端專案中，web form 和 windows form 不會很有用的項目加入至 Web 伺服器專案。 因此，您可以建立一個包含這兩種專案類型的所有檔案的範本目錄。 然後，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>，您可以隱藏的項目不會顯示根據專案或專案中的專案設定的類型。
+ 例如,在可視化基本專案中,您可能具有 Web 專案和用戶端專案。 Web 表單是要加入客戶端專案的有用項,並且視窗窗體不是要添加到 Web 伺服器專案的有用項。 因此,您可以創建一個範本目錄,其中包含這兩種類型的專案的所有檔。 然後,通過實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>,可以隱藏不應根據專案中的專案或專案設置類型顯示的專案。
 
-## <a name="filter-project-items"></a>篩選專案項目
- `IVsFilterAddProjectItemDlg2` 提供下列方式篩選樹狀目錄 （左窗格） 專案檔 （右窗格） 中的項目：
+## <a name="filter-project-items"></a>篩選項目項目項目
+ `IVsFilterAddProjectItemDlg2`提供以下欄方式篩選樹(左窗格)和專案檔(右窗格)中的元素:
 
-- 當地語系化的名稱 (包含在對話方塊中顯示的原文字幕 *.vsdir*檔案) 所提供`IVsFilterAddProjectItemDlg`。
+- 由 提供的本地化名稱(顯示在 *.vsdir*檔案中的對話框中顯示的`IVsFilterAddProjectItemDlg`標題)。
 
-- 實際名稱的檔案和磁碟上的資料夾 (非當地語系化-沒有 *.vsdir*檔案) 所提供`IVsFilterAddProjectItemDlg`。
+- 按磁碟上的檔案與資料夾(非本地化 = 沒有 *.vsdir*檔案)提供`IVsFilterAddProjectItemDlg`的實際名稱。
 
-- 依類別、 提供`IVsFilterAddProjectItemDlg2`。
+- 按類別,由`IVsFilterAddProjectItemDlg2`提供。
 
-  若要依類別篩選，請提供 類別目錄字串中的項目 *.vsdir*檔案，例如*網頁表單*或是*用戶端項目*Visual Basic 中。 對話方塊程式碼，然後擷取類別目錄分類 *.vsdir*檔案，並將它傳遞給您。 然後，您可以將該資訊傳遞您實作`IVsFilterAddProjectItemDlg2`來篩選**加入新項目**對話方塊中，依類別分組。 為 Web 網頁或用戶端 Win32 應用程式的情況下，您也可以篩選項目。 此外，您可以識別[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]標示 Microsoft Foundation Classes (MFC) 或使用中的範本程式庫 (ATL) 項目中的項目。 當您識別這些項目時，專案系統可以定義自己的分類，以便系統可以根據類別和分類篩選。
+  要按類別進行篩選,請向 *.vsdir*檔中的項(如 Visual Basic 中的*Web 窗體*或*用戶端項*)提供類別字串。 然後,對話框代碼從 *.vsdir*檔檢索類別分類並將其傳遞給您。 然後,您可以將該資訊傳遞給您的實現,`IVsFilterAddProjectItemDlg2`以按類別篩選「**新增新項目**」 對話框。 您還可以篩選網頁的專案或作為用戶端 Win32 應用程式案例。 此外,您可以將標記的項目[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]標識為 Microsoft 基礎類 (MFC) 或活動範本庫 (ATL) 項。 標識這些專案時,專案系統可以定義自己的分類,以便可以根據類別和分類篩選系統。
 
-  如果您實作此篩選器功能時，您不必將對應的每個項目應該隱藏資料表。 您只可以分類為類型的項目，並將分類放在 *.vsdir*檔案。 然後您可以隱藏任何實作介面中有某個特定分類的項目。 如此一來，您可以進行中的項目**加入新項目**對話方塊方塊動態根據專案中的狀態。
+  如果實現此篩選器功能,則不必映射應隱藏的每個項的表。 只需將項分類為類型,並將分類放在 *.vsdir*檔或檔中即可。 然後,您可以通過實現介面來隱藏具有特定分類的任何項。 這樣,您可以根據專案中的狀態使"**添加新專案"** 對話方塊中的項保持動態。
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
-- [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Catid 通常用來擴充專案的物件](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-- [將專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)
-- [範本目錄描述 (.vsdir) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
-- [精靈 (.vsz) 檔案](../../extensibility/internals/wizard-dot-vsz-file.md)
+- [註冊項目和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)
+- [通常用於延伸項目的物件的 CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+- [新增項目和項目項目樣本](../../extensibility/internals/adding-project-and-project-item-templates.md)
+- [樣本目錄描述 (.vsdir) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
+- [匯入匯(.vsz) 檔案](../../extensibility/internals/wizard-dot-vsz-file.md)

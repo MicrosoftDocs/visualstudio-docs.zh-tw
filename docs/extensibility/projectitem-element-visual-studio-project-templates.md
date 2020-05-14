@@ -1,5 +1,5 @@
 ---
-title: ProjectItem 項目 （Visual Studio 專案範本） |Microsoft Docs
+title: 專案元素(可視化工作室專案範本) |微軟文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09f062575cc7d0978fbacede32cfe22d0f98a71c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 11052d8e585f1d06f6d787402001cfbbe2b6810f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335958"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701845"
 ---
-# <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 項目 （Visual Studio 專案範本）
-指定專案範本中所包含的檔案。
+# <a name="projectitem-element-visual-studio-project-templates"></a>專案項目元素(可視化工作室專案範本)
+指定項目範本中包含的檔。
 
 > [!NOTE]
-> `ProjectItem`元素接受不同的屬性，根據該範本是否為專案或項目。 本主題說明`ProjectItem`專案範本的項目。 如需說明`ProjectItem`項目，項目範本，請參閱[ProjectItem 項目 （Visual Studio 項目範本）](../extensibility/projectitem-element-visual-studio-item-templates.md)。
+> 元素`ProjectItem`接受不同的屬性,具體取決於範本是針對項目還是項。 本主題介紹專案`ProjectItem`範本的元素。 有關專案範本`ProjectItem`元素的說明,請參閱[專案專案元素(可視化工作室專案範本)。](../extensibility/projectitem-element-visual-studio-item-templates.md)
 
- \<VSTemplate> \<TemplateContent> \<Project> \<ProjectItem>
+ \<樣本>\<範本內容>\<專案>\<專案項>
 
 ## <a name="syntax"></a>語法
 
@@ -50,12 +50,12 @@ ms.locfileid: "66335958"
 
 | 屬性 | 描述 |
 |---------------------| - |
-| `TargetFileName` | 選擇性屬性。<br /><br /> 從範本建立專案時，請指定專案項目的路徑與名稱。 這個屬性可用於在範本中建立的目錄結構不同的目錄結構 *.zip*檔案，或用來建立項目名稱的參數取代。 |
-| `ReplaceParameters` | 選擇性屬性。<br /><br /> 布林值，指定的項目是否有從範本建立專案時，必須被取代的參數值。 預設值為 `false`。 |
-| `OpenInEditor` | 選擇性屬性。<br /><br /> 布林值，指定是否應該在其各自的編輯器中開啟項目[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]從範本建立專案時。<br /><br /> `OpenInWebBrowser`並`OpenInHelpBrowser`屬性會被忽略的項目上`OpenInEditor`的值`true`。<br /><br /> 預設值為 `false`。 |
-| `OpenInWebBrowser` | 選擇性屬性。<br /><br /> 布林值，指定項目是否應該會開啟網頁瀏覽器從範本建立專案。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在 Web 瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值為 `false`。 |
-| `OpenInHelpBrowser` | 選擇性屬性。<br /><br /> 布林值，指定項目應該會開啟說明檢視器中從範本建立專案時。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在說明瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值為 `false`。 |
-| `OpenOrder` | 選擇性屬性。<br /><br /> 指定數值，表示項目將會開啟在其各自的編輯器中的順序。 所有的值必須是 10 的倍數。 使用更高項目`OpenOrder`值第一次開啟。 |
+| `TargetFileName` | 選擇性屬性。<br /><br /> 指定從範本創建專案時專案項的名稱和路徑。 此屬性可用於創建不同於範本 *.zip*檔案中的目錄結構的目錄結構,或者使用參數替換創建項名稱。 |
+| `ReplaceParameters` | 選擇性屬性。<br /><br /> 布爾值,用於指定項是否具有從範本創建項目時必須替換的參數值。 預設值為 `false`。 |
+| `OpenInEditor` | 選擇性屬性。<br /><br /> Boolean 值,用於指定在從範本創建專案時是否應在其相應的編輯[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]器 中打開該專案。<br /><br /> 和`OpenInWebBrowser``OpenInHelpBrowser`屬性`OpenInEditor`在值為`true`的項上將被忽略。<br /><br /> 預設值是 `false`。 |
+| `OpenInWebBrowser` | 選擇性屬性。<br /><br /> Boolean 值,用於指定在從範本建立專案時是否應打開 Web 瀏覽器。<br /><br /> 只能在 Web 瀏覽器開啟專案本地的 HTML 檔和文字檔。 無法使用此屬性打開外部 URL。<br /><br /> 預設值是 `false`。 |
+| `OpenInHelpBrowser` | 選擇性屬性。<br /><br /> Boolean 值,用於指定在從範本創建專案時是否應在説明查看器中打開該專案。<br /><br /> 只能在幫助瀏覽器中打開專案本地的 HTML 檔和文字檔。 無法使用此屬性打開外部 URL。<br /><br /> 預設值是 `false`。 |
+| `OpenOrder` | 選擇性屬性。<br /><br /> 指定表示專案將在其各自的編輯器中打開的順序的數值。 所有值必須為 10 的倍數。 首先打開值`OpenOrder`較高的項。 |
 
 ### <a name="child-elements"></a>子元素
  無。
@@ -64,52 +64,52 @@ ms.locfileid: "66335958"
 
 |元素|描述|
 |-------------|-----------------|
-|[Project](../extensibility/project-element-visual-studio-templates.md)|指定要加入至專案目錄的檔案。|
+|[專案](../extensibility/project-element-visual-studio-templates.md)|指定要新增到專案的檔案或目錄。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- A `string` ，表示範本中的檔案的名稱或路徑 *.zip*檔案。
+ 表示`string`樣本 *.zip*檔案中檔案的名稱或路徑的 。
 
 ## <a name="remarks"></a>備註
- `ProjectItem` 是選擇性的子系的`Project`。
+ `ProjectItem`是`Project`的可選子項。
 
- `TargetFileName`屬性可以用來建立範本中的目錄結構不同的目錄結構 *.zip*檔案。 例如，如果檔案*MyFile.vb*存在於範本的根目錄 *.zip*檔案，但您想要放置在目錄中名為的檔案*CustomFiles*中所有專案從範本建立，您可以使用下列 XML:
+ 該`TargetFileName`屬性可用於創建不同於範本 *.zip*檔案中的目錄結構的目錄結構。 例如,如果檔案*MyFile.vb*存在於樣本 *.zip*檔案的根目錄中,但您希望該檔放置在從範本建立的所有項目中名為*CustomFiles*的目錄中,則可以使用以下 XML:
 
 ```xml
 <ProjectItem TargetFileName="CustomFiles\MyFile.vb">MyFile.vb</ProjectItem>
 ```
 
- `TargetFileName`屬性也可用來重新命名檔案，其中包含其檔名中的國際字元。 例如，樣板 *.zip*檔案不能包含 Unicode 字元的檔案名稱，因此必須重新命名檔案，才能壓縮成 *.zip*檔案。 `TargetFileName`屬性可用來將檔案名稱設回原始的 Unicode 檔案名稱。
+ 該`TargetFileName`屬性還可用於重新命名其檔名中包含國際字元的檔。 例如,範本 *.zip*檔不能包含具有 Unicode 字元的檔名,因此必須先重新命名該檔,然後才能將其壓縮為 *.zip*檔。 該`TargetFileName`屬性可用於將檔名設置為原始 Unicode 檔名。
 
- `TargetFileName`屬性也可用來重新命名具有參數檔案。 下列程序說明如何將檔案重新命名*MyFile.vb*，位於範本的根目錄 *.zip*檔案，以根據專案名稱的檔案名稱。
+ 該`TargetFileName`屬性還可用於使用參數重新命名檔案。 以下過程說明如何將存在於範本 *.zip*檔案的根目錄中的檔*MyFile.vb*重新命名為基於專案名的檔名。
 
-### <a name="to-rename-files-with-parameters"></a>若要重新命名具有參數檔案
+### <a name="to-rename-files-with-parameters"></a>使用參數重新命名檔案
 
-1. 使用中的下列 XML *.vstemplate*檔案：
+1. 在 *.vstemplate*檔案中使用以下 XML:
 
    ```xml
    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>
    ```
 
-2. 開啟專案檔案 ( *.vbproj* for[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]專案) 中的文字編輯器或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
+2. 在文字編輯器或[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)][!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中打開專案檔(專案的 *.vbproj)。*
 
-3. 看起來類似下列的 XML 專案檔中找到的一行：
+3. 在專案檔中尋找類似 XML 的行:
 
    ```xml
    <Compile Include="MyFile.vb">
    ```
 
-4. 取代下列 XML 程式碼行：
+4. 將代碼行取代為以下 XML:
 
    ```xml
    <Compile Include="$safeprojectname$.vb">
    ```
 
-    檔案名稱從這個範本建立專案時，會根據使用者輸入的名稱**新的專案**對話方塊中，其中所有 unsafe 字元和空格移除。 如需詳細資訊，請參閱 <<c0> [ 範本參數](../ide/template-parameters.md)。
+    使用此範本建立專案時,檔案名將基於使用者在 **「新建專案**」對話框中輸入的名稱,並刪除所有不安全字元和空格。 有關詳細資訊,請參閱[樣本參數](../ide/template-parameters.md)。
 
 ## <a name="example"></a>範例
- 下列範例顯示的專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。
+ 下面的範例顯示了[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式的專案範本的元數據。
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -136,7 +136,7 @@ ms.locfileid: "66335958"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
+- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
 - [範本參數](../ide/template-parameters.md)
 - [ProjectItem 項目 (Visual Studio 項目範本)](../extensibility/projectitem-element-visual-studio-item-templates.md)

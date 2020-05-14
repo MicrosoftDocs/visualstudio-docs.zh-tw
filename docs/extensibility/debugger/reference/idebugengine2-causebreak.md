@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::CauseBreak |Microsoft Docs
+title: IDebugEngine2::原因中斷 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::CauseBreak
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93f9937609a09439b265946e76f0af0381d488f1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62be3ce13ecbc3180cf2bbcce26b04f3d79edb1a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330140"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731162"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
-其中一個其執行緒嘗試執行要求的所有程式進行偵錯此偵錯引擎 (DE) 來停止執行下一次。
+請求此除錯引擎 (DE) 除錯的所有程式在下次線程嘗試執行時停止執行。
 
 ## <a name="syntax"></a>語法
 
@@ -38,10 +38,10 @@ int CauseBreak();
 ```
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 這個方法是非同步： [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)接下來，程式會嘗試將執行之後呼叫這個方法時，就會傳送事件。
+ 此方法是非同步的:當程式在調用此方法後下次嘗試執行時,將發送[IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)事件。
 
 ## <a name="see-also"></a>另請參閱
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

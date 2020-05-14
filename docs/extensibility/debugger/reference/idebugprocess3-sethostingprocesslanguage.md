@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::SetHostingProcessLanguage | Microsoft Docs
+title: IDebugProcess3::設置託管進程語言 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::SetHostingProcessLanguage
 ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 242f35dce9245406c3466784811d79ac1942c49f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a16f2c39fa2d53ffc4d113666ef7630557e61861
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313916"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723561"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
-這個方法會設定程序會裝載下的語言。 然後偵錯引擎 (DE) 載入適當的運算式評估工具使用此語言。
+此方法設置進程將承載下的語言。 然後,調試引擎 (DE) 可以使用此語言載入相應的運算式賦值器。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int SetHostingProcessLanguage(
 
 ## <a name="parameters"></a>參數
 `guidLang`\
-[in]`GUID` DE 應該使用的語言。 指定`GUID_NULL`(C++) 或`Guid.Empty`(C#) 能夠使用預設的語言 DE。
+[在]`GUID` DE 應使用的語言。 指定`GUID_NULL`(C++)`Guid.Empty`或 (C#) 讓 DE 使用預設語言。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`，否則會傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
-- [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)可用來擷取目前的語言設定。
+- [GetHostingProcess 語言](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)可用於檢索當前語言設置。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

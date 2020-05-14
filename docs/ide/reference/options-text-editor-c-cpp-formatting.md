@@ -1,5 +1,5 @@
 ---
-title: 選項、文字編輯器、C/C++、格式
+title: 選項、文字編輯器、C/C++、格式設定
 ms.date: 04/30/2018
 ms.topic: reference
 f1_keywords:
@@ -17,40 +17,40 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596251"
 ---
-# <a name="options-text-editor-cc-formatting"></a>選項、文字編輯器、C/C++、格式
+# <a name="options-text-editor-cc-formatting"></a>選項、文字編輯器、C/C++、格式設定
 
 在使用 C 或 C++ 進行程式設計時，請使用這些屬性頁變更程式碼編輯器的預設行為。
 
 ![C++ Formatting 屬性頁](media/cpp-formatting.png)
 
-若要存取這個頁面，請在 [選項] 對話方塊的左窗格中依序展開 [文字編輯器] 和 [C/C++]，然後按一下 [格式]。
+若要存取這個頁面，請在 [選項]**** 對話方塊的左窗格中依序展開 [文字編輯器]**** 和 [C/C++]****，然後按一下 [格式]****。
 
 > [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 有關詳細資訊，請參閱[個人化視覺化工作室 IDE](../../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="general-page"></a>[一般] 頁面
+## <a name="general-page"></a>一般頁面
 
 此頁面包含在您鍵入時格式化陳述式和區塊的選項。
 
 ::: moniker range="vs-2017"
 
-**Visual Studio 2017 15.7 版和更新版本**：
+**視覺工作室 2017 版本 15.7 及更高版本**：
 
 ::: moniker-end
 
-此頁面也有設定[ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) 5.0 版支援的選項。 ClangFormat 是一個公用程式，可讓您更輕鬆地根據一組可以在 .clang-format 或 _clang-format 檔案中設定的規則，設定程式碼的樣式和格式化。
+頁面也有設定 [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) 5.0 版支援的選項。 ClangFormat 是一個公用程式，可讓您更輕鬆地根據一組可以在 .clang-format 或 _clang-format 檔案中設定的規則，設定程式碼的樣式和格式化。
 
 ### <a name="configuring-clangformat-options"></a>設定 ClangFormat 選項
 
 ::: moniker range="vs-2017"
 
-**Visual Studio 2017 15.7 版和更新版本**：
+**視覺工作室 2017 版本 15.7 及更高版本**：
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ ms.locfileid: "75596251"
 
 這些頁面能啟用各種格式化自訂，但如果已啟用 ClangFormat 便會被忽略。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
-- [使用 IntelliSense](../../ide/using-intellisense.md)
+- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [Using IntelliSense](../../ide/using-intellisense.md)

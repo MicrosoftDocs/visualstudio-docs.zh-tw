@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS | Microsoft Docs
+title: LAUNCH_FLAGS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27975f4055a433891251c675bff3aacaaa9f6bb3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339360"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714710"
 ---
-# <a name="launchflags"></a>LAUNCH_FLAGS
-指定偵錯啟動旗標。
+# <a name="launch_flags"></a>LAUNCH_FLAGS
+指定調試啟動標誌。
 
 ## <a name="syntax"></a>語法
 
@@ -48,28 +48,28 @@ public enum enum_LAUNCH_FLAGS {
 
 ## <a name="fields"></a>欄位
 `LAUNCH_DEBUG`\
-啟動偵錯的處理程序。
+啟動調試過程。
 
 `LAUNCH_NODEBUG`\
-啟動程序，但不偵錯它。
+啟動進程而不調試它。
 
 `LAUNCH_ENABLE_ENC`\
-已被取代，請勿使用。
+棄用,請勿使用。
 
 `LAUNCH_MERGE_ENV`\
-啟動處理程序，並將合併啟動的主控件的環境。
+啟動進程並將環境與啟動主機合併。
 
 ## <a name="remarks"></a>備註
-這些值會傳遞做為引數[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法。
+這些值作為參數傳遞給[Launch 暫停](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法。
 
-這些旗標可能會結合的位元`OR`。
+這些旗標可以稍微`OR`結合 。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

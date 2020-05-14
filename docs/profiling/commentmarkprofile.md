@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d45bab6b909fffa107158236d9050632f114c530
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772779"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
@@ -67,8 +67,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 
 |||
 |-|-|
-|**標題**|包含 VSPerf.h|
-|**程式庫**|使用 VSPerf.lib|
+|**頭**|包含 VSPerf.h|
+|**圖書館**|使用 VSPerf.lib|
 |**Unicode**|實作為 `CommentMarkProfileW` (Unicode) 和 `CommentMarkProfileA` (ANSI)。|
 
 ## <a name="example"></a>範例
@@ -110,5 +110,5 @@ void ExerciseCommentMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>請參閱
-- [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>另請參閱
+- [視覺化工作室探測器 API 參考（本機）](../profiling/visual-studio-profiler-api-reference-native.md)

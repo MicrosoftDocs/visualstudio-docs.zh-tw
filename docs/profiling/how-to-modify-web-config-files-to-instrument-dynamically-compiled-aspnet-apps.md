@@ -1,5 +1,5 @@
 ---
-title: Web.config 檔案：檢測 & 分析動態編譯的 ASP.NET web 應用程式
+title: Web.Config 檔：儀器&設定檔動態編譯ASP.NET Web 應用程式
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
@@ -10,21 +10,21 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 6fb67a5b0da186bd87b9e5c39204e3acccc0529f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775394"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具檢測方法從動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式收集詳細執行時間資料、.NET 記憶體配置資料，以及 .NET 物件存留期資料。
 
- 本主題描述如何修改 *web.config* 組態檔，以啟用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的檢測和分析。
+ 本主題介紹如何修改*Web.config 設定檔*以啟用[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]Web 應用程式的檢測和分析。
 
 > [!NOTE]
-> 當您使用取樣分析方法，或是想要檢測先行編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 模組時，不需要修改 *web.config* 檔案。
+> 當您使用採樣分析方法或要檢測預編譯[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]模組時，不需要修改*Web.config*檔。
 
- *web.config* 檔案的根是 **configuration** 項目。 若要檢測動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式並對其進行分析，您必須新增或修改下列項目：
+ *Web.config*檔的根是**配置**元素。 若要檢測動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式並對其進行分析，您必須新增或修改下列項目：
 
 - **configuration/runtime/assemblyBinding/dependentAssembly** 項目，識別控制程式碼剖析的 Microsoft.VisualStudio.Enterprise.ASPNetHelper 組件。 **dependentAssembly** 項目包含兩個子項目：**assemblyIdentity** 和 **codeBase**。
 
@@ -32,7 +32,7 @@ ms.locfileid: "74775394"
 
 - 兩個 **add** 項目，識別加入至 **configuration/appSettings** 區段之程式碼剖析工具的位置。
 
-  建議您建立原始的 *web.config* 檔案複本，以便用來還原應用程式的組態。
+  我們建議您創建原始*Web.config*檔的副本，可用於還原應用程式的配置。
 
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>加入 ASPNetHelper 組件做為 configuration/runtime/assemblyBinding/dependentAssembly 項目
 
@@ -60,9 +60,9 @@ ms.locfileid: "74775394"
 
    | 屬性名稱 | 屬性值 |
    |--------------------| - |
-   | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
+   | **名稱** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
-   | **culture** | **Neutral** |
+   | **文化** | **中性** |
 
 7. 加入 **codeBase** 項目做為 **dependentAssembly** 項目的子系。
 
@@ -139,7 +139,7 @@ ms.locfileid: "74775394"
 
    | 屬性名稱 | 屬性值 |
    |----------------| - |
-   | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
+   | **關鍵** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
    | **值** | `PerformanceToolsFolder` **\VSInstr.Exe** |
 
 4. 加入另一個 **add** 項目做為 **appSettings** 項目的子系。
@@ -148,7 +148,7 @@ ms.locfileid: "74775394"
 
    |屬性名稱|屬性值|
    |--------------------|---------------------|
-   |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|
+   |**關鍵**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|
    |**值**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` 是程式碼剖析工具可執行檔的路徑。 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
@@ -175,7 +175,7 @@ ms.locfileid: "74775394"
 ```
 
 ## <a name="example"></a>範例
- 以下為完整的 *web.config* 檔案，會啟用動態編譯之 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的檢測和分析。 本範例假設修改前檔案中沒有其他設定。
+ 下面是一個完整的*Web.config*檔，用於檢測和分析動態編譯的[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]Web 應用程式。 本範例假設修改前檔案中沒有其他設定。
 
 ```xml
 <?xml version="1.0"?>
@@ -220,6 +220,6 @@ ms.locfileid: "74775394"
 
 ```
 
-## <a name="see-also"></a>請參閱
-- [如何：檢測動態編譯的 ASP.NET 應用程式並收集詳細計時資料](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
-- [如何：檢測動態編譯的 ASP.NET 應用程式並收集記憶體資料](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
+## <a name="see-also"></a>另請參閱
+- [如何：檢測動態編譯ASP.NET應用程式並收集詳細的計時資料](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [如何：檢測動態編譯ASP.NET應用程式並收集記憶體資料](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

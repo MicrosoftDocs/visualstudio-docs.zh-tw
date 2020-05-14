@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74797124"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
@@ -48,11 +48,11 @@ Visual Studio Tools for Unity 支援預期從 Visual Studio 取得的強大[偵�
 * 檢查及修改變數和引數的值。
 * 向下切入至複雜的物件和資料結構。
 
-### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>適用于 Unity 的 Roslyn 診斷和快速修正
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>羅斯林診斷和快速修復統一
 
-撰寫更好的程式碼，以 Visual Studio 深入瞭解 Unity 專案，以取得最佳作法。
+通過 Visual Studio 對 Unity 專案的深入瞭解，編寫更好的代碼，以捕獲最佳實踐。
 
-![VS 重構字串與 CompareTag 的比較](media/unity-diagnostics.png)
+![VS 重構字串比較與比較標籤](media/unity-diagnostics.png)
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 

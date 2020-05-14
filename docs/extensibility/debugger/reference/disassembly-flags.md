@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_FLAGS | Microsoft Docs
+title: DISASSEMBLY_FLAGS |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0160a14a4ad20e7144e48f767fad88951ca1e473
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ba6d9db3ad2cb1f9bbc9e3cea27aba939c6dd499
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318394"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737367"
 ---
-# <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
-指定反組譯碼的旗標。
+# <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
+指定拆卸的標誌。
 
 ## <a name="syntax"></a>語法
 
@@ -52,34 +52,34 @@ public enum enum_DISASSEMBLY_FLAGS {
 
 ## <a name="fields"></a>欄位
 `DF_DOCUMENTCHANGE`\
-指出這項指示是比前一個不同的文件中。
+指示此指令位於與前一個不同的文檔中。
 
 `DF_DISABLED`\
-表示將不會執行這項指示。
+指示此指令不會執行。
 
 `DF_INSTRUCTION_ACTIVE`\
-指出這項指示是其中一個要執行的下一步 的指示 （可能會有多個）。
+指示此指令是要執行的下一個指令之一(可能有多個指令)。
 
 `DF_DATA`\
-指出這項指示是真正的資料 （而不是程式碼）。
+指示此指令實際上是數據(不是代碼)。
 
 `DF_HASSOURCE`\
-指出這個指示會有來源。 一些指示，例如程式碼剖析或記憶體回收集合程式碼，有沒有對應的來源。
+指示此指令具有源。 某些說明(如分析代碼或垃圾回收代碼)沒有相應的源。
 
 `DF_DOCUMENT_CHECKSUM`\
-表示`bstrDocumentUrl`欄位包含總和檢查碼資料，在文件 URL。 請參閱 < 備註 > 一節[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構總和檢查碼資料的儲存方式。
+指示`bstrDocumentUrl`欄位包含文件 URL 之後的校驗和數據。 有關如何存儲校驗和數據的,請參閱["拆解資料](../../../extensibility/debugger/reference/disassemblydata.md)結構的備註"部分。
 
 ## <a name="remarks"></a>備註
-做`dwFlags`隸屬[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構。
+用作`dwFlags`[拆解數據](../../../extensibility/debugger/reference/disassemblydata.md)結構的成員。
 
-這些旗標可能會結合的位元`OR`。
+這些旗標可以稍微`OR`結合 。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

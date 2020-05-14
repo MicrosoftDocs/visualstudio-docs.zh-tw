@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ec56665b546f962e8b3f4fd35460715390aee30
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777812"
 ---
 # <a name="console"></a>主控台
@@ -31,10 +31,10 @@ VSPerfCmd.exe /Launch:AppName /Console
 ## <a name="required-options"></a>必要選項
  **Console** 只能指定於也包含 **Launch** 選項的命令列。
 
- **啟動：** `AppName` 啟動分析工具和由 `AppName`指定的應用程式。
+ **啟動：**`AppName`啟動探測器和指定的`AppName`應用程式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服務](../profiling/command-line-profiling-of-services.md)

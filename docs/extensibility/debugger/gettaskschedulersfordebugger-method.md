@@ -1,30 +1,30 @@
 ---
-title: GetTaskSchedulersForDebugger 方法 |Microsoft Docs
+title: 取得任務計劃器除錯器方法 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - GetTaskSchedulersForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 58aa236a-5ab8-4695-b303-89dffdbcd946
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8d038c8c67731fe1bff9ec705b5ddf416807a57
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a3b0c8c16b10a4cf2268161d8a2db96c10303b1c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353712"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738641"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger 方法
-擷取的所有陣列<xref:System.Threading.Tasks.TaskScheduler>目前使用中的物件。
+檢索當前處於活動狀態的所有<xref:System.Threading.Tasks.TaskScheduler>物件的陣列。
 
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **命名空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **組件：** mscorlib (在*mscorlib.dll*)
+ **程式集**:mscorlib(在*mscorlib.dll*中)
 
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。
+ 由於您無法從 .NET 框架訪問此內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ ms.locfileid: "66353712"
 ```
 
 ## <a name="return-value"></a>傳回值
- 所有陣列<xref:System.Threading.Tasks.TaskScheduler>且目前正在使用中的物件<xref:System.AppDomain>。
+ 當前在此<xref:System.AppDomain>處於活動狀態的所有<xref:System.Threading.Tasks.TaskScheduler>物件的陣列。
 
 ## <a name="remarks"></a>備註
- 這個方法不是安全執行緒，以及您不應該使用它與其他執行個體同時<xref:System.Threading.Tasks.TaskScheduler>。 只在偵錯工具已暫止的其他所有執行緒時，請從 偵錯工具呼叫此方法。
+ 此方法不安全,不應將其與其他實例同時使用<xref:System.Threading.Tasks.TaskScheduler>。 僅當調試器掛起所有其他線程時,才從調試器調用此方法。
 
 ## <a name="see-also"></a>另請參閱
-- [TaskScheduler 類別](../../extensibility/debugger/taskscheduler-class-internal-members.md)
+- [工作計劃器類](../../extensibility/debugger/taskscheduler-class-internal-members.md)

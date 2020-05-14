@@ -1,33 +1,33 @@
 ---
-title: 運算式評估內容 |Microsoft Docs
+title: 運算運算上下文 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, context
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efaa678b5cbee763fabc9ccaf82c9322176b9102
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e939a4fa5f4673e2f701206c96599c54bc0c3b51
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315228"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738744"
 ---
-# <a name="expression-evaluation-context"></a>運算式評估內容
-在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯**運算式評估內容**:
+# <a name="expression-evaluation-context"></a>運算式運算內容
+在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]除錯中,**表示式計算內容 :**
 
-- 表示運算式評估的內容。 通常，評估內容會對應至在其中評估變數、 參數、 函數和方法的語彙範圍。 比方說，堆疊框架相關聯的運算式評估內容將提供的內容，來評估區域變數、 方法參數和類別成員 （如果適用）。
+- 表示表達式計算的上下文。 通常,計算上下文對應於計算變數、參數、函數和方法的詞法範圍。 例如,與堆疊框架關聯的表達式計算上下文將提供用於評估局部變數、方法參數和類成員(如果適用)的上下文。
 
-- 當程式已經在中斷點停止時，就會存在。 運算式本身是資料結構，表示剖析的運算式，供繫結和指定的內容內評估。
+- 當程式在斷點停止時存在。 表達式本身是一個數據結構,表示可準備在給定上下文中綁定和評估的解析表達式。
 
-     在詳細資料，運算式會建立使用[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)方法。 評估運算式時，它會產生可列印的字串，包含名稱和類型的變數或引數，而其值。 在 [監看式] 視窗或 IDE 的 [區域變數] 視窗中，會顯示這個字串。
+     有關詳細資訊,將使用[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)方法建立運算式。 計算運算式時,它生成一個可列印的字串,其中包含變數或參數的名稱和類型及其值。 此字串顯示在「監視」視窗或 IDE 的「局部變數」視窗中。
 
-     給定`BSTR`並[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)介面，可以建立偵錯引擎 (DE) [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)介面藉由剖析運算式。 指定`IDebugExpression2`介面，DE 可以取得透過同步或非同步運算式評估的值。 此值的名稱和類型的變數或引數，以及顯示會傳送到 IDE。
+     給定`BSTR`和[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)介面,調試引擎 (DE) 可以透過分析運算式創建[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)介面。 給定介面`IDebugExpression2`,DE 可以通過同步或非同步運算式計算獲取值。 此值以及變數或參數的名稱和類型將發送到 IDE 進行顯示。
 
 ## <a name="see-also"></a>另請參閱
 - [運算式評估介面](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
-- [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)
+- [除錯器上下文](../../extensibility/debugger/debugger-contexts.md)

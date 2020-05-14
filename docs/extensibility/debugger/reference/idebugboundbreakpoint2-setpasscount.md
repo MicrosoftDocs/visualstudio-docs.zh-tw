@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetPassCount | Microsoft Docs
+title: IDebug邊界斷點2::SetPassCount |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetPassCount method
 - IDebugBoundBreakpoint2::SetPassCount method
 ms.assetid: b32c12f9-b34d-43bd-a1b9-61af6cf8e51b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee0032a079ff9c67e0a2de350e0405cfa20303db
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bcc7bd57ce0c392a2874f107c6e4d8d5753399d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314515"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735441"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
-設定或變更與此繫結中斷點相關聯的傳遞計數。
+設置或更改與此綁定斷點關聯的傳遞計數。
 
 ## <a name="syntax"></a>語法
 
@@ -42,15 +42,15 @@ int SetPassCount( 
 
 ## <a name="parameters"></a>參數
 `bpPassCount`\
-[in][BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構，指定的傳遞計數。
+[在]指定通過計數[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。 如果`E_BP_DELETED`綁定斷點物件的狀態設置`BPS_DELETED`為[(BP_STATE](../../../extensibility/debugger/reference/bp-state.md)枚舉的一部分),則返回。
 
 ## <a name="remarks"></a>備註
- 傳遞計數會決定當引發中斷點。 藉由呼叫，則可以取得目前行程或叫用的次數[GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)方法。
+ 通過計數確定觸發斷點時。 可以通過調用[GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)方法獲取當前通過計數或命中計數。
 
- 將會遺失任何先前與此中斷點關聯的傳遞計數。
+ 以前與此斷點關聯的任何通過計數都將丟失。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

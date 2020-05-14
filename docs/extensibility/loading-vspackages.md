@@ -1,34 +1,34 @@
 ---
-title: 載入 Vspackage |Microsoft Docs
+title: 正在載入 VS 套件 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c7c2a558abc928524813419df6b7848d34f0f3e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b1c221bf06ef3b7e37e2afc1856f3e54fe5ad95e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309578"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702958"
 ---
-# <a name="load-vspackages"></a>載入 Vspackage
-Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 比方說，Visual Studio 使用專案 factory 或 VSPackage 實作的服務時，會載入 VSPackage。 這項功能稱為延遲的載入，這會盡可能以改善效能。
+# <a name="load-vspackages"></a>載入 VS 套件
+僅當需要 VS 包的功能時,才會載入到 Visual Studio 中。 例如,當 Visual Studio 使用專案工廠或 VSPackage 實現的服務時,將載入 VS 包。 此功能稱為延遲載入,盡可能用於提高性能。
 
 > [!NOTE]
-> Visual Studio 可以判斷特定的 VSPackage 資訊，例如 VSPackage 提供，而不必載入 VSPackage 的命令。
+> Visual Studio 可以確定某些 VSPackage 資訊,例如 VSPackage 提供的命令,而無需載入 VSPackage。
 
- Vspackage 可以例如設定自動載入在特定的使用者介面 (UI) 內容中，開啟方案時。 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>屬性會設定此內容。
+ VS包可以設置為在特定使用者介面 (UI) 上下文中自動載入,例如,當解決方案打開時。 屬性<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>設置此上下文。
 
-### <a name="autoload-a-vspackage-in-a-specific-context"></a>自動載入 VSPackage 中特定的內容
+### <a name="autoload-a-vspackage-in-a-specific-context"></a>在特定內容自動載入 VS 套件
 
-- 新增`ProvideAutoLoad`屬性加入 VSPackage 屬性：
+- 將`ProvideAutoLoad`屬性加入 VSPackage 屬性:
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -39,22 +39,22 @@ Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 
     {. . .}
     ```
 
-     請參閱列舉的欄位<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>如 UI 內容和其 GUID 值的清單。
+     有關 UI 上下<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>文及其 GUID 值的清單,請參閱 的枚舉欄位。
 
-- 在設定的中斷點<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。
+- 在<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法中設置斷點。
 
-- 建置 VSPackage，並開始偵錯。
+- 生成 VS 包並開始調試。
 
-- 載入方案或建立一個。
+- 載入解決方案或創建解決方案。
 
-     VSPackage 載入，並在中斷點停止。
+     VSPackage 在斷點載入和停止。
 
-## <a name="force-a-vspackage-to-load"></a>強制載入 VSPackage
- 在某些情況下 VSPackage 可能必須強制另一個要載入的 VSPackage。 比方說，輕量級 VSPackage 可能會載入較大的 VSPackage，不是 CMDUIContext 可用的內容中。
+## <a name="force-a-vspackage-to-load"></a>強制 VS 套件載入
+ 在某些情況下,VSPackage 可能必須強制載入另一個 VSPackage。 例如,輕巧 VS 套件可能會在無法作為 CMDUIContext 提供的上下文中載入較大的 VS 包。
 
- 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A>方法，以強制載入 VSPackage。
+ 可以使用方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A>強制載入 VSPackage。
 
-- 插入此程式碼<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>的 VSPackage，強制載入的另一個 VSPackage 的方法：
+- 將此代碼插入<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>VSPackage 的方法,該方法強制另一個 VSPackage 載入:
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;
@@ -67,9 +67,9 @@ Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 
 
     ```
 
-     初始化 VSPackage 時，它會強制`PackageToBeLoaded`載入。
+     初始化 VSPackage 時,它`PackageToBeLoaded`將強制 載入。
 
-     強制載入不應該用於 VSPackage 通訊。 使用[使用，並提供服務](../extensibility/using-and-providing-services.md)改。
+     力載入不應用於 VSPackage 通信。 而是[使用與提供服務](../extensibility/using-and-providing-services.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [VSPackage](../extensibility/internals/vspackages.md)

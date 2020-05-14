@@ -1,76 +1,76 @@
 ---
-title: 專案類型 |Microsoft Docs
+title: 項目類型 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, adding
 - projects [Visual Studio SDK], adding new types
 ms.assetid: 263a084f-f97a-4e09-add7-f0e8a6a27daf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d41eb5b21dc22ca0345c9cbf93ce680354d0db
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6b343eeeee0912a6e9cad57ca6d35c33845e4dd4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318768"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706269"
 ---
 # <a name="project-types"></a>專案類型
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包含語言的數種專案類型，例如[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 也可讓您建立您自己的專案類型。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]包括語言(如和[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)][!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]) 的多個項目類型。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]還允許您創建自己的項目類型。
 
 ## <a name="in-this-section"></a>本節內容
-- [基本資訊](../../extensibility/internals/project-type-essentials.md)
+- [基本功能](../../extensibility/internals/project-type-essentials.md)
 
- 顯示您必須開始使用 專案類型的重要資訊。
+ 顯示必須開始處理項目類型的重要資訊。
 
 - [建立專案類型](../../extensibility/internals/creating-project-types.md)
 
- 討論的專案類型的設計。
+ 討論項目類型的設計。
 
 - [將命令加入至方案總管工具列](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 
- 要加入按鈕，您必須遵循的步驟將詳細說明[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**方案總管 中**工具列。
+ 詳細說明向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**解決方案資源管理員**工具列添加按鈕必須遵循的步驟。
 
 - [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
- 討論如何您可以將範本新增至您的專案類型，讓使用者可以建立新的專案和專案項目，根據的模式。
+ 討論如何向項目類型添加範本,以便用戶可以根據模式創建新專案和專案項。
 
 - [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)
 
- 提供有關如何管理您的專案類型支援的項目資訊。
+ 提供有關如何管理項目類型支援的項的資訊。
 
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 
- 討論如何專案類型可支援組態選項，例如偵錯和發行可控制如何建置專案，偵錯等等。
+ 討論項目類型如何支援配置選項,如調試和發佈,這些選項控制專案的生成、調試方式等。
 
 - [支援原始檔控制](../../extensibility/internals/supporting-source-control.md)
 
- 提供有關如何將原始檔控制系統的支援新增至您的專案型別資訊。
+ 提供有關如何向項目類型添加對原始程式碼管理系統的支援的資訊。
 
 - [巢狀專案](../../extensibility/internals/nesting-projects.md)
 
- 說明如何支援您的專案型別*巢狀*，以便專案可以將其分組在一起**方案總管 中**。
+ 說明項目類型如何支援*嵌套*,以便可以在**解決方案資源管理器**中將專案分組在一起。
 
 - [升級專案](../../extensibility/internals/upgrading-projects.md)
 
- 描述如何您的專案類型可以參與的 [升級精靈] 升級專案檔從較早版本的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
+ 描述項目類型如何參與升級嚮導,以從[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]的早期版本升級專案檔。
 
 - [架構](../../extensibility/internals/project-types-architecture.md)
 
- 提供有關專案類型的詳細技術資訊。
+ 提供有關項目類型的詳細技術資訊。
 
 ## <a name="related-sections"></a>相關章節
 - [階層和選取範圍](../../extensibility/internals/hierarchies-and-selection.md)
 
- 概述如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會顯示為階層的專案。
+ 概述了[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成開發環境 (IDE) 如何將項目顯示為層次結構。
 
 - [專案子類型](../../extensibility/internals/project-subtypes.md)
 
- 提供專案子類型的主題連結。 專案子類型啟用大部分種類的專案類型，包括您自己的延伸的模組。
+ 提供指向專案子類型主題的連結。 專案子類型支援大多數項目類型的擴展,包括您自己的項目類型。
 
 - [專案](../../extensibility/internals/projects.md)
 
- 說明如何擴充[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案系統。
+ 描述如何擴展[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案系統。

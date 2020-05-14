@@ -1,5 +1,5 @@
 ---
-title: 步驟 4：加入 CheckTheAnswer() 方法
+title: 步驟 4：新增 CheckTheAnswer() 方法
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,14 +13,14 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def01817fbd42a0da1a0392e00ba9ccff6876470
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 199cee66013392a253139abf8ef1b88b502abac2
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579841"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472620"
 ---
-# <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：加入 CheckTheAnswer() 方法
+# <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：新增 CheckTheAnswer() 方法
 
 在本教學課程的第四個部分中，您將撰寫 `CheckTheAnswer()` 這個方法，用於判斷數學問題的答案是否正確。 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "77579841"
 > [!NOTE]
 > 如果您是在 Visual Basic 中依照步驟一路做下來，您將使用 `Function` 關鍵字，而不會使用慣用的 `Sub` 關鍵字，因為這個方法會傳回值。 理由就是這麼簡單：Sub 不會傳回值，但 Function 會傳回值。
 
-1. 新增 `CheckTheAnswer()` 方法。
+1. 新增 `CheckTheAnswer()` 方法。 此方法應與您使用的其他方法(如`StartTheQuiz()`) 一致。
 
      呼叫這個方法時，它會將 addend1 和 addend2 的值相加，並且將結果與 sum (總和) <xref:System.Windows.Forms.NumericUpDown> 控制項的值比較。 如果值相等，則方法會傳回 `true` 值。 否則，方法會傳回 `false` 值。 您的程式碼應該看起來與下列範例相同。
 
@@ -43,22 +43,22 @@ ms.locfileid: "77579841"
 
      接下來，您將透過更新方法中的程式碼，讓計時器的 <xref:System.Windows.Forms.Timer.Tick> 事件處理常式呼叫新的 `CheckTheAnswer()` 方法，藉此檢查答案。
 
-2. 將下列程式碼加入至 `if else` 陳述式。
+2. 將以下代碼添加到`if else``Timer1_Tick()`方法中的語句中,以便在用戶正確獲得答案時計時器停止。
 
      [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]
      [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]
 
-     如果答案正確，`CheckTheAnswer()` 會傳回 `true`。 事件處理常式會停止計時器，並顯示恭喜訊息，然後再次啟用 [開始] 按鈕。 否則，測驗會繼續。
+     如果答案正確，`CheckTheAnswer()` 會傳回 `true`。 事件處理常式會停止計時器，並顯示恭喜訊息，然後再次啟用 [開始]**** 按鈕。 否則，測驗會繼續。
 
 3. 儲存您的程式，執行程式，開始進行測驗，並提供正確答案給加法問題。
 
     > [!NOTE]
     > 當您輸入答案時，必須在開始輸入答案之前先選取預設值，或是手動刪除零。 您將在本教學課程稍後更正這種行為。
 
-     當您提供正確答案時，訊息方塊隨即開啟，[開始] 按鈕會變成可用，且計時器會停止。
+     當您提供正確答案時，訊息方塊隨即開啟，[開始]**** 按鈕會變成可用，且計時器會停止。
 
-## <a name="to-continue-or-review"></a>繼續或檢視
+## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移至下一個教學課程步驟，請參閱 **[步驟5：新增 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)** 。
+- 要轉到下一個教學步驟,請參閱**[步驟 5:新增數位上下控制的 Enter 事件處理程式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)**。
 
-- 若要回到上一個教學課程步驟，請參閱[步驟 3：新增倒數計時器](../ide/step-3-add-a-countdown-timer.md)。
+- 要返回到前面的教程步驟,請參閱步驟[3:添加倒計時計時器](../ide/step-3-add-a-countdown-timer.md)。

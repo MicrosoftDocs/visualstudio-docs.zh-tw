@@ -5,10 +5,10 @@ author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
 ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75405812"
 ---
 # <a name="intellisense"></a>IntelliSense
@@ -23,21 +23,21 @@ IntelliSense 提供數個功能，可協助增強撰寫和編輯程式碼的體�
 
 完成視窗也支援依類型篩選包含的完成項目。 例如，您可以限制清單的成員只代表類型 (如類別或委派)。 您可以透過按一下代表所要篩選類型的特定圖示，或經由對應於指定類型的鍵盤快速鍵來啟用此篩選程序。 這些圖示位於完成視窗的底部，如下所示：
 
-| 圖示                         | Name          | 關鍵字    | 熱鍵 |
+| 圖示                         | 名稱          | 關鍵字    | 熱鍵 |
 | -----------------------------|---------------| -----------|--------|
-| ![類別圖示](media/classes-icon.png)  | 類別         | `class`    |  ⌥C
+| ![類別圖示](media/classes-icon.png)  | class         | `class`    |  ⌥C
 | ![常數圖示](media/constant-icon.png) | 常數      | `const`    |  ⌥O
 | ![委派圖示](media/delegate-icon.png) | 委派      | `delegate` |  ⌥D
-| ![列舉圖示](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
-| ![事件圖示](media/event-icon.png)    | 事件         |            |  ⌥V
-| ![欄位圖示](media/fields-icon.png)   | Field - 欄位         |            |  ⌥F
-| ![介面圖示](media/interface-icon.png)| interface     | `interface`|  ⌥I
-| ![關鍵字圖示](media/keyword-icon.png)  | keyword       |            |  ⌥K
+| ![列舉圖示](media/enums-icon.png)    | 列舉          | `enum`     |  ⌥E
+| ![事件圖示](media/event-icon.png)    | event         |            |  ⌥V
+| ![欄位圖示](media/fields-icon.png)   | field         |            |  ⌥F
+| ![介面圖示](media/interface-icon.png)| 介面     | `interface`|  ⌥I
+| ![關鍵字圖示](media/keyword-icon.png)  | 關鍵字 (keyword)       |            |  ⌥K
 | ![方法圖示](media/method-icon.png)   | method        |            |  ⌥M
 | ![命名空間圖示](media/namespace-icon.png)| 命名空間     | `namespace`|  ⌥N
 | ![屬性圖示](media/props-icon.png)    | 屬性      |            |  ⌥P
 | ![程式碼片段圖示](media/snippet-icon.png)  | 程式碼片段       | `class`    |  ⌥S
-| ![結構圖示](media/struct-icon.png)   | 結構     | `struct`   |  ⌥S
+| ![結構圖示](media/struct-icon.png)   | structure     | `struct`   |  ⌥S
 
 藉由按一下任何圖示，或是按下對應的快速鍵，完成清單就會僅限於篩選集所定義的類型。  
 
@@ -58,7 +58,7 @@ IntelliSense 的另一項功能是能夠在適當的情況下提供參數清單�
 
 您也可以按下 `control-shift-space` 來手動觸發參數視窗的外觀。 當您的插入號位於對參數清單有效位置時，參數清單會出現在插入號位置附近。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [快速動作 (Windows 上的 Visual Studio)](/visualstudio/ide/quick-actions)
 - [重構程式碼 (Windows 上的 Visual Studio)](/visualstudio/ide/refactoring-in-visual-studio)

@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField::EnumFields |Microsoft Docs
+title: IDebug容器欄位::枚舉場 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugContainerField::EnumFields method
 ms.assetid: 9e5e681b-ad49-4c62-bd95-4afa11d61a57
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6d3edeb677af728b1a0fd0e9cf8685e7919d79e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: afc461d52f81afc2c2e7127a90313bea7b9dacf3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317936"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733232"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
-建立容器的欄位的列舉值。
+為容器的欄位創建枚舉器。
 
 ## <a name="syntax"></a>語法
 
@@ -49,25 +49,25 @@ int EnumFields(
 
 ## <a name="parameters"></a>參數
 `dwKindFilter`\
-[in]組合[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)常數，以選取要列舉的欄位。 欄位類型可以描述儲存體類型，例如類別或基本，或特定的資訊，例如本機、 參數或 「 this 」 指標。
+[在]選擇要枚舉的欄位[的FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)常量的組合。 欄位型態可以描述儲存類型,如類或基元,或特定資訊,如本地、參數或"此"指標。
 
 `dwModifiersFilter`\
-[in]組合[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)常數，以選取要列舉的欄位。 欄位修飾詞可以存取的權限，例如公用或私用或儲存體的資訊，例如虛擬、 靜態或最終。
+[在]選擇要枚舉的欄位的[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)常量的組合。 欄位修改器可以是存取許可權(如公共或私有)或儲存資訊(如虛擬、靜態或最終)。
 
 `pszNameFilter`\
-[in]要列舉的欄位名稱。 如果所有欄位都都要傳回，這可以是 null 值。
+[在]要枚舉的欄位的名稱。 如果要返回所有欄位,這可以為空值。
 
 `nameMatch`\
-[in]值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉，用於控制是否搜尋是否區分大小寫。
+[在][NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚舉中的值,用於控制搜索是否區分大小寫。
 
 `ppEnum`\
-[out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示欄位的清單。 如果沒有任何欄位，則傳回 null 值。
+[出]返回表示欄位清單的[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件。 如果沒有欄位,則返回空值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，傳回 S_OK 或 S_FALSE，如果沒有任何欄位。 否則會傳回錯誤碼。
+ 如果成功,則返回S_OK或S_FALSE如果沒有欄位。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- `dwKindFilter`， `dwModifiersFilter`，和`pszNameFilter`參數可以結合，例如，若要選取所有公開的虛擬方法，名為 「 MyMethod 」。
+ 可以`dwKindFilter`組合`dwModifiersFilter`和`pszNameFilter`參數,例如,選擇名為"MyMethod"的所有公共虛擬方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

@@ -1,5 +1,5 @@
 ---
-title: 隔離待測程式碼與 Microsoft Fake
+title: 使用 Microsoft Fakes 在測試期間隔離程式碼
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -11,15 +11,15 @@ dev_langs:
 - VB
 - CSharp
 ms.openlocfilehash: 662a61bf97e1726892b877dc79a0ef98340a34ec
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566887"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 隔離測試中的程式碼
 
-Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的其他部分，協助您隔離要測試的程式碼。 這些都是在您的測試控制之下的程式碼小片段。 藉由隔離待測的程式碼，您可以在正確的位置尋找測試失敗的原因。 即使其他部分的應用程式並未運作，Stub 和 Shim 也可讓您測試程式碼。
+Microsoft Fakes 會以「虛設常式」** 或「填充碼」** 取代應用程式的其他部分，協助您隔離要測試的程式碼。 這些是受測試所控制的一些程式碼片段。 藉由隔離待測的程式碼，您可以在正確的位置尋找測試失敗的原因。 即使應用程式的其他部分還無法運作，您也可以利用虛設常式和填充碼。
 
 Fakes 分為兩種類別：
 
@@ -29,9 +29,9 @@ Fakes 分為兩種類別：
 
 ![Fakes 會取代其他元件](../test/media/fakes-2.png)
 
-**Requirements**
+**需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 - .NET Framework 專案
 
 > [!NOTE]
@@ -41,7 +41,7 @@ Fakes 分為兩種類別：
 ## <a name="choose-between-stub-and-shim-types"></a>在虛設常式和填充碼類型之間選擇
 由於您會同時開發及更新這些類別，因此您通常會將 Visual Studio 專案視為元件。 您可以考慮針對專案對方案中其他專案或專案所參考之其他組件的呼叫使用虛設常式和填充碼。
 
-一般方針是，對 Visual Studio 方案中的呼叫使用虛設常式，而對其他參考組件的呼叫則使用填充碼。 這是因為在您自己的方案中，依虛設常式需要的方式定義介面以分隔元件是很好的作法。 但是，個別介面定義通常未隨附外部組件 (例如 *System.dll*)，因此您必須改用填充碼。
+一般方針是，對 Visual Studio 方案中的呼叫使用虛設常式，而對其他參考組件的呼叫則使用填充碼。 這是因為在您自己的方案中，依虛設常式需要的方式定義介面以分隔元件是很好的作法。 但是外部程式集（如*System.dll）* 通常不提供單獨的介面定義，因此必須改用希姆。
 
 其他考量為：
 
@@ -51,7 +51,7 @@ Fakes 分為兩種類別：
 
 **內部類型。** 虛設常式和填充碼都可以搭配使用組件屬性 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 存取的內部類型一起使用。
 
-**私用方法。** 如果方法簽章的所有類型都是可見的，填充碼可以取代私用方法呼叫。 虛設常式只能取代可見的方法。
+**私有方法。** 如果方法簽章的所有類型都是可見的，填充碼可以取代私用方法呼叫。 虛設常式只能取代可見的方法。
 
 **介面和抽象方法。** 虛設常式提供可用於測試的介面和抽象方法實作。 填充碼無法檢測介面和抽象方法，因為它們沒有方法主體。
 
@@ -81,9 +81,9 @@ Fakes 分為兩種類別：
 
 2. **新增 Fakes 組件**
 
-    1. 在 [方案總管] 中，展開測試專案的參考清單。 如果在 Visual Basic 中工作，您必須選擇 [顯示所有檔案] 才能看到參考清單。
+    1. 在**解決方案資源管理器中**，展開測試專案的引用清單。 如果在 Visual Basic 中工作，您必須選擇 [顯示所有檔案]**** 才能看到參考清單。
 
-    2. 選取定義介面 (例如 IStockFeed) 之組件的參考。 在此參考的捷徑功能表上，選擇 [新增 Fakes 組件]。
+    2. 選取定義介面 (例如 IStockFeed) 之組件的參考。 在此參考的捷徑功能表上，選擇 [新增 Fakes 組件]****。
 
     3. 重建方案。
 
@@ -168,9 +168,9 @@ Fakes 分為兩種類別：
 
 1. **新增 Fakes 組件**
 
-     在 [方案總管] 中開啟單元測試專案的參考，並且選取包含要假造之方法的組件參考。 在本範例中，`DateTime` 類別是在 *System.dll* 中。  若要查看 Visual Basic 專案中的參考，請選擇 [顯示所有檔案]。
+     在**解決方案資源管理器**中，打開單元測試專案的引用，並選擇對包含要偽造的方法的程式集的引用。 在本範例中，`DateTime` 類別是在 *System.dll* 中。  若要查看 Visual Basic 專案中的參考，請選擇 [顯示所有檔案]****。
 
-     選擇 [新增 Fakes 組件]。
+     選擇 [新增 Fakes 組件]****。
 
 2. **在 ShimsContext 中插入填充碼**
 
@@ -247,6 +247,6 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ## <a name="in-this-section"></a>本節內容
 [使用虛設常式隔離應用程式的各個組件，以便進行單元測試](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
-[使用填充碼將應用程式與其他組件隔離，以便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
+[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 
 [Microsoft Fakes 中的程式碼產生、編譯和命名慣例](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)

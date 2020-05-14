@@ -1,143 +1,143 @@
 ---
-title: 結構和等位 |Microsoft Docs
+title: 結構和聯盟 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - structures [Visual Studio SDK]
 ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2da39e0327f9a0be2cf0f61227de5ea51af03285
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 19d8f547d98488edffc6049be7619e5b5e921d93
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329123"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713487"
 ---
 # <a name="structures-and-unions"></a>Structures and Unions
-以下是結構和等位在 Visual Studio 偵錯 SDK 中。
+以下是可視化工作室調試 SDK 中的結構和聯合。
 
-- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)指定處理序識別碼，可能是系統識別碼或 GUID。
+- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)指定程序識別碼,可以是系統 ID 或 GUID。
 
-- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)描述用以引發中斷點的條件。
+- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)描述斷點將觸發的條件。
 
-- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)描述錯誤的中斷點，包括位置、 程式和執行緒的解析度。
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)描述錯誤斷點的解析度,包括位置、程式和線程。
 
-- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)指定類型的結構，用來描述中斷點的位置。
+- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)指定用於描述斷點位置的結構類型。
 
-- [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)定義描述在程式碼中的位址中斷點位置的元件。
+- [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)定義描述斷點在代碼中位址位置的元件。
 
-- [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)描述直接繫結中正在偵錯之程式的位址中斷點的位置。
+- [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)描述直接綁定到正在調試的程式中的地址的斷點的位置。
 
-- [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)描述在程式碼的原始程式檔中的行中斷點的位置。
+- [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)描述代碼原始檔中行斷點的位置。
 
-- [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)描述在程式碼中的函式中斷點的位移的位置。
+- [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)描述代碼中函數處斷點的偏移位置。
 
-- [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)用於設定使用者可以輸入從 IDE 的字串為基礎的程式碼中斷點。
+- [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)用於根據使用者可以從 IDE 輸入的字串設置代碼斷點。
 
-- [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)用於設定資料中斷點的使用者可以輸入從 IDE 的字串為基礎。
+- [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)用於設置基於使用者可以從 IDE 輸入的字串的數據斷點。
 
-- [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)描述的特定位置的中斷點解析。
+- [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)描述特定位置斷點的解析度。
 
-- [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)計數和條件的項目，會需要先前傳遞之後引發中斷點的描述。
+- [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)描述以前傳遞斷點後將觸發斷點的計數和條件。
 
-- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)包含中斷點的實作所需的資訊。
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)包含實現斷點所需的資訊。
 
-- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)包含實作中斷點時所需的資訊 (與相同[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構但包含廠商的 GUID、 條件約束和追蹤點的資訊)。
+- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)包含實現斷點所需的資訊(與[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構相同,但包括供應商 GUID、約束和跟蹤點資訊)。
 
-- [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)描述程式碼中斷點的位置。
+- [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)描述代碼斷點的位置。
 
-- [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)描述結果的繫結資料中斷點。
+- [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)描述綁定數據斷點的結果。
 
-- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)描述程式碼中斷點或資料中斷點的繫結的中斷點資訊。
+- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)描述代碼斷點或數據斷點的邊界斷點資訊。
 
-- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)指定中斷點解析位置的結構。
+- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)指定斷點解析度位置的結構。
 
-- [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)描述的字串陣列。
+- [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)描述字串陣列。
 
-- [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)指定取自中繼資料的欄位類型的相關資訊。
+- [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)指定有關從元數據獲取的欄位類型的資訊。
 
-- [CODE_PATH](../../../extensibility/debugger/reference/code-path.md)描述函式或方法的呼叫。
+- [CODE_PATH](../../../extensibility/debugger/reference/code-path.md)描述對函數或方法的調用。
 
-- [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md)說明偵錯工具執行所在的電腦。
+- [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md)描述運行調試器的電腦。
 
-- [CONST_GUID_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md)描述的 Guid 清單。
+- [CONST_GUID_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md)描述 GUID 的清單。
 
-- [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)描述記憶體內容或程式碼內容。
+- [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)描述記憶體上下文或程式碼上下文。
 
-- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)描述正在偵錯程式中的位址。
+- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)描述正在調試的程式中的位址。
 
-- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)代表不同種類的位址數的其中一個。
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)表示多種不同類型的位址之一。
 
-- [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)識別自訂檢視器或類型視覺化檢視。
+- [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)標識自定義查看器或類型可視化工具。
 
-- [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)說明偵錯屬性，依序描述的階層式本質上具有名稱、 類型和值物件。
+- [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)描述調試屬性,該屬性依次描述具有名稱、類型和值的分層性質的物件。
 
-- [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)描述的參考。
+- [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)描述引用。
 
-- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)描述反組譯碼，以顯示 IDE。
+- [拆解資料](../../../extensibility/debugger/reference/disassemblydata.md)描述拆解到 IDE 以進行顯示。
 
-- [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)描述正在偵錯之程式所擲回例外狀況或執行階段錯誤。
+- [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)描述正在調試的程式引發的異常或運行時錯誤。
 
-- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)描述的本機變數、 參數或其他欄位。
+- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)描述局部變數、參數或其他欄位。
 
-- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)描述堆疊框架。
+- [框架資訊](../../../extensibility/debugger/reference/frameinfo.md)描述堆疊幀。
 
-- [GUID_ARRAY](../../../extensibility/debugger/reference/guid-array.md)描述可用的偵錯引擎的唯一識別碼的陣列。
+- [GUID_ARRAY](../../../extensibility/debugger/reference/guid-array.md)描述可用調試引擎的唯一標識符陣列。
 
-- [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)用來設定模組的 JustMyCode 資訊。
+- [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)用於為模組設置 JustMyCode 資訊。
 
-- [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)描述特定的電腦。
+- [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)描述特定電腦。
 
-- [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)描述陣列內的項目陣列。
+- [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)描述陣列中的陣列元素。
 
-- [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)描述欄位的類別或結構的位址。
+- [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)描述類或結構欄位的位址。
 
-- [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)描述 （通常是函式或方法） 的範圍內的區域變數的位址。
+- [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)描述作用域(通常是函數或方法)中的局部變數的位址。
 
-- [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)描述類別的方法的位址。
+- [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)描述類方法的位址。
 
-- [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)描述方法或函式的參數。
+- [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)描述方法或函數的參數。
 
-- [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)描述方法或函式的傳回值。
+- [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)描述方法或函數的返回值。
 
-- [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)描述取自中繼資料欄位型別。
+- [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)描述從元數據獲取的欄位類型。
 
-- [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)描述特定模組 （DLL、 EXE 或組件）。
+- [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)描述特定模組(DLL、EXE 或程式集)。
 
-- [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)說明中搜尋的符號搜尋路徑的狀態資訊。
+- [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)描述有關已搜索的符號搜索路徑的狀態資訊。
 
-- [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)描述原生的地址。
+- [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)描述本機位址。
 
-- [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)描述取自 PDB 符號的欄位型別。
+- [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)描述從 PDB 符號獲取的欄位類型。
 
-- [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)描述準備好要繫結至程式碼位置的中斷點的狀態。
+- [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)描述準備綁定到代碼位置的斷點的狀態。
 
-- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)描述程序。
+- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)描述流程。
 
-- [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)描述的清單[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)代表程式節點物件。
+- [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)描述表示程式節點的[IDebug ProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件的清單。
 
-- [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)說明在機器上執行的程序。
+- [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)描述在電腦上運行的進程。
 
-- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)描述中指定的文字行和資料行位置。
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)描述給定文本中的行和列位置。
 
-- [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)說明執行緒的屬性。
+- [執行緒屬性](../../../extensibility/debugger/reference/threadproperties.md)描述線程的屬性。
 
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)描述欄位的類型。
 
-- [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)描述實體的位址。
+- [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)描述物理位址。
 
-- [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)描述的相對位址`this`指標 (`Me` Visual Basic 中)。
+- [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)描述相對於`this`指標的位址(`Me`在可視化基本)。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h、 sh.h 或 ee.h
+ 標題: msdbg.h, sh.h 或 ee.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

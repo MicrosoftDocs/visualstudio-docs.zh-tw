@@ -1,27 +1,27 @@
 ---
-title: 訊息列舉值 |Microsoft Docs
+title: 消息枚舉器 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a702e7eae6bc6bcdace62d61f27f78c23aeaa95f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e09b72bd228839268cffc228dd0dc503cc82bd9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349018"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702512"
 ---
-# <a name="message-enumerator"></a>訊息的列舉值
-下列旗標會用於`TEXTOUTPROC`函式，也就是 IDE 提供呼叫時的回呼函式[SccOpenProject](../extensibility/sccopenproject-function.md) (請參閱[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)如回呼的詳細資訊函式）。
+# <a name="message-enumerator"></a>訊息列舉器
+以下標誌用於`TEXTOUTPROC`函數,該函數是IDE在調用[SccOpenProject](../extensibility/sccopenproject-function.md)時提供的回調函數(有關回調函數的詳細資訊,請參閱[LPTEXTOUTPROC)。](../extensibility/lptextoutproc.md)
 
- 如果 IDE 會要求取消程序，它可能會取消訊息。 在此情況下，原始檔控制外掛程式會使用`SCC_MSG_STARTCANCEL`詢問顯示 IDE**取消** 按鈕。 在此之後，可能會傳送任何一組一般訊息。 如果任何這些傳回`SCC_MSG_RTN_CANCEL`，則外掛程式，則會結束作業，並傳回。 外掛程式也會輪詢`SCC_MSG_DOCANCEL`定期來判斷是否使用者已取消作業。 當所有作業完成都之後，或如果使用者已取消，外掛程式會傳送`SCC_MSG_STOPCANCEL`。 `SCC_MSG_INFO`，SCC_MSG_WARNING，並且 SCC_MSG_ERROR 類型用於捲動訊息清單中顯示的訊息。 `SCC_MSG_STATUS` 是一種特殊類型，指出文字應該出現在狀態列或暫存的顯示區域中。 它不會永久清單中。
+ 如果要求 IDE 取消進程,它可能會收到取消消息之一。 在這種情況下,原始程式碼管理外掛`SCC_MSG_STARTCANCEL`程式用於要求 IDE 顯示 **「取消」** 按鈕。 在此之後,可能會發送任何一組正常消息。 如果其中任何一個`SCC_MSG_RTN_CANCEL`返回,則外掛程式將退出該操作並返回。 外掛程式還會定期輪`SCC_MSG_DOCANCEL`詢 以確定使用者是否已取消該操作。 完成所有操作或使用者已取消操作後, 外掛程式`SCC_MSG_STOPCANCEL`會送出 。 SCC_MSG_WARNING`SCC_MSG_INFO`和SCC_MSG_ERROR類型用於顯示在消息滾動清單中的郵件。 `SCC_MSG_STATUS`是一種特殊類型,指示文本應顯示在狀態列或臨時顯示區域中。 它不會永久保留在清單中。
 
 ## <a name="syntax"></a>語法
 
@@ -40,24 +40,24 @@ enum { 
 ```
 
 ## <a name="members"></a>成員
- 表示取消，從回呼傳回 SCC_MSG_RTN_CANCEL。
+ SCC_MSG_RTN_CANCEL從回調返回以指示取消。
 
- SCC_MSG_RTN_OK，從繼續回呼傳回。
+ SCC_MSG_RTN_OK從回調返回以繼續。
 
- SCC_MSG_INFO 訊息僅供參考。
+ SCC_MSG_INFO消息是資訊性的。
 
- SCC_MSG_WARNING 訊息是警告。
+ SCC_MSG_WARNING消息是一個警告。
 
- SCC_MSG_ERROR 訊息會產生錯誤。
+ SCC_MSG_ERROR消息是一個錯誤。
 
- SCC_MSG_STATUS 訊息供狀態列。
+ SCC_MSG_STATUS消息用於狀態列。
 
- SCC_MSG_DOCANCEL 沒有文字;傳回 IDE`SCC_MSG_RTN_OK`或`SCC_MSG_RTN_CANCEL`。
+ SCC_MSG_DOCANCEL 無文字;IDE`SCC_MSG_RTN_OK``SCC_MSG_RTN_CANCEL`傳回或 。
 
- SCC_MSG_STARTCANCEL 啟動的 [取消] 執行迴圈。
+ SCC_MSG_STARTCANCEL啟動取消迴圈。
 
  SCC_MSG_STOPCANCEL 停止取消迴圈。
 
 ## <a name="see-also"></a>另請參閱
-- [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
+- [原始程式管理外掛程式](../extensibility/source-control-plug-ins.md)
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

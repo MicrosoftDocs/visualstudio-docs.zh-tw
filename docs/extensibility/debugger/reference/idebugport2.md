@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2 | Microsoft Docs
+title: IDebugPort2 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2 interface
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb489cddf090bf9958dee57f424ba009eb2c2209
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62912be9fdfecc98a264a58c9713cc12ccaf28f2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326852"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725225"
 ---
 # <a name="idebugport2"></a>IDebugPort2
-這個介面表示在電腦上的偵錯連接埠。
+此介面表示電腦上的調試埠。
 
 ## <a name="syntax"></a>語法
 
@@ -28,35 +28,35 @@ ms.locfileid: "66326852"
 IDebugPort2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 自訂的連接埠提供者會實作這個介面來代表電腦上的偵錯連接埠。
+## <a name="notes-for-implementers"></a>實施者說明
+ 自定義埠供應商實現此介面以表示電腦上的調試埠。
 
- 如果連接埠支援事件的傳送埠，它也必須實作<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>介面，以支援<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>介面，進而提供[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)介面。
+ 如果埠支援發送埠事件,它還必須實現<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>介面以支援介面,該<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>介面反過來提供[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)介面。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 若要呼叫[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)或是[下列](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)傳回此介面，表示要求的通訊埠。
+## <a name="notes-for-callers"></a>通話備註
+ 對[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)或[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)的調用返回此介面,表示請求的埠。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IDebugPort2`。
 
 |方法|描述|
 |------------|-----------------|
-|[GetPortName](../../../extensibility/debugger/reference/idebugport2-getportname.md)|傳回的連接埠名稱。|
-|[GetPortId](../../../extensibility/debugger/reference/idebugport2-getportid.md)|傳回的連接埠識別碼。|
-|[GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)|傳回用來建立連接埠 （如果有的話） 的要求。|
-|[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)|傳回此連接埠的連接埠供應商。|
-|[GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)|傳回指定處理程序的識別項的處理序的介面。|
-|[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)|列舉連接埠上執行的所有處理程序。|
+|[GetPortName](../../../extensibility/debugger/reference/idebugport2-getportname.md)|返回埠名稱。|
+|[GetPortId](../../../extensibility/debugger/reference/idebugport2-getportid.md)|返回埠標識碼。|
+|[GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)|返回用於創建埠的請求(如果可用)。|
+|[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)|返回此埠的埠供應商。|
+|[抓取程序](../../../extensibility/debugger/reference/idebugport2-getprocess.md)|返回進程介面,給定進程的標識符。|
+|[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)|枚舉在埠上運行的所有進程。|
 
 ## <a name="remarks"></a>備註
- 本機連接埠可存取所有的處理程序和本機電腦上執行的程式。 Windows CE 架構裝置的序列纜線連接或非 DCOM 電腦的網路連線，可能代表其他連接埠。 `IDebugPort2`介面用來尋找名稱和識別碼的連接埠，並列舉所有的連接埠上執行的處理程序。 啟動和終止的連接埠上的處理序的功能會實作`IDebugPortEx2`介面。
+ 本地埠提供對本地電腦上運行的所有進程和程式的訪問。 其他埠可能表示與基於 Windows CE 的裝置的串列電纜連接,或與非 DCOM 電腦的網路連接。 介面`IDebugPort2`用於查找埠的名稱和標識符,並枚舉在埠上運行的所有進程。 在`IDebugPortEx2`介面中實現了在埠上啟動和終止進程的設施。
 
 ## <a name="requirements"></a>需求
- 標頭： msdbg.h
+ 標題: msdbg.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)

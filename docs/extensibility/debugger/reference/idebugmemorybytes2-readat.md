@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::ReadAt | Microsoft Docs
+title: IDebug記憶位元組2::閱讀AT |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::ReadAt method
 - ReadAt method
 ms.assetid: b413684d-4155-4bd4-ae30-ffa512243b5f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a1083239dbb00e5b953fe7a72c27a350ffe34cc2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f909ac3d2e2993879e4c24140abbf23c2ee8d545
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314306"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727529"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
-讀取指定的位置開始的位元組序列。
+從給定位置開始讀取位元組序列。
 
 ## <a name="syntax"></a>語法
 
@@ -50,31 +50,31 @@ int ReadAt(
 
 ## <a name="parameters"></a>參數
 `pStartContext`\
-[in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，指定要從何處開始讀取的位元組。
+[在][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件,指定從何處開始讀取位元組。
 
 `dwCount`\
-[in]要讀取的位元組數目。 也會指定的長度`rgbMemory`陣列。
+[在]要讀取的位元組數。 還指定陣列的長度`rgbMemory`。
 
 `rgbMemory`\
-[in、 out]實際讀取的位元組填入的陣列。
+[進出]填充的位元組實際讀取。
 
 `pdwRead`\
-[out]傳回實際讀取的連續位元組數目。
+[出]返回實際讀取的連續位元組數。
 
 `pdwUnreadable`\
-[in、 out]傳回無法讀取的位元組數目。 可能是 null 值，如果用戶端不願就無法讀取的位元組數目。
+[進出]返回不可讀位元組的數量。 如果用戶端對不可讀位元元數不感興趣,則可能是null值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。
+ 如果成功,返回S_OK;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 如果要求 100 個位元組和前 50 個可讀取、 後 20，則無法讀取，而且其餘 30 是可讀取，則這個方法會傳回：
+ 如果請求 100 個字節,並且前 50 個字節可讀,則接下來的 20 個不可讀,其餘 30 個字節是可讀的,則此方法將返回:
 
- *`pdwRead` = 50
+ *`pdwRead`= 50
 
- *`pdwUnreadable` = 20
+ *`pdwUnreadable`= 20
 
- 在此情況下，因為`*pdwRead + *pdwUnreadable < dwCount`，呼叫端必須進行額外的呼叫來讀取原始要求的 100 個剩餘的 30 個位元組而[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)傳入物件`pStartContext`必須進階參數由 70。
+ 在這種情況下,由於`*pdwRead + *pdwUnreadable < dwCount`調用方必須進行額外的調用才能讀取原始 100 個請求的剩餘 30`pStartContext`個字節, 並且參數中傳遞的[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)對象必須提前 70 個。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

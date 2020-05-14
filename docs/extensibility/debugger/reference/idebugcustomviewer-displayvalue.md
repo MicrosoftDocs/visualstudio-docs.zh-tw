@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer::DisplayValue | Microsoft Docs
+title: IDebugCustom查看器::D播放價值 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer::DisplayValue
 ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d6ff987e12e70a9d3dd443cfafc45d2698469b8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 32e444d0d6a30484f708d3001b95e7a71856edd5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335696"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732448"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
-顯示指定的值，會呼叫這個方法。
+呼叫此方法以顯示指定的值。
 
 ## <a name="syntax"></a>語法
 
@@ -47,24 +47,24 @@ int DisplayValue(
 
 ## <a name="parameters"></a>參數
 `hwnd`\
-[in]父視窗
+[在]父視窗
 
 `dwID`\
-[in]支援多個類型的自訂檢視器的識別碼。
+[在]支援多種類型的自定義檢視器的 ID。
 
 `pHostServices`\
-[in] 保留。 一律設為 null。
+[in] 保留。 始終設定為 null。
 
 `pDebugProperty`\
-[in]介面，可用來擷取要顯示的值。
+[在]可用於檢索要顯示的值的介面。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 這個方法會建立必要的視窗、 顯示值、 等待輸入，並關閉視窗，所有傳回給呼叫端之前，顯示是"modal"。 這表示此方法必須處理的顯示屬性的值，無法建立輸出，以等候使用者輸入，若要終結視窗的視窗的所有層面。
+ 顯示是"模態的",因為此方法將創建必要的視窗、顯示值、等待輸入並關閉視窗,所有這些都在返回到調用方之前。 這意味著該方法必須處理顯示屬性值的所有方面,從為輸出創建視窗,到等待使用者輸入,到銷毀視窗。
 
- 若要支援上變更值，指定[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)物件，您可以使用[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)方法： 如果此值可以表示為字串。 否則，就必須建立自訂的介面 — 獨佔運算式評估工具實作此`DisplayValue`方法，實作的相同物件上`IDebugProperty3`介面。 這個自訂的介面會提供方法來變更資料的任意規模或複雜度。
+ 要支援更改給定[IDebug Property3](../../../extensibility/debugger/reference/idebugproperty3.md)物件上的值,可以使用[SetValueAsString WithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)方法 —如果該值可以表示為字串串。 否則,有必要在實現`DisplayValue``IDebugProperty3`介面的同一對象上創建自定義介面(獨佔表達式賦值器實現此方法)。 此自定義介面將提供用於更改任意大小或複雜性的數據的方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)

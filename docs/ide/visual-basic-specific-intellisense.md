@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 118de9ec05bcd5c56376376619bea0c5148d36ab
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594184"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Visual Basic 程式碼檔案的 IntelliSense
@@ -37,9 +37,9 @@ Visual Basic 原始程式碼編輯器提供下列 IntelliSense 功能：
 
     當陳述式要參考列舉成員時，IntelliSense 會顯示 `Enum` 的成員清單。 當陳述式要參考 `Boolean` 時，IntelliSense 會顯示 true-false 下拉式功能表。
 
-完成預設可以關閉，只要在 [Visual Basic] 資料夾取消選取 [一般] 屬性頁的 [自動列出成員] 即可。
+完成預設可以關閉，只要在 [Visual Basic]**** 資料夾取消選取 [一般]**** 屬性頁的 [自動列出成員]**** 即可。
 
-您可以叫用 [列出成員]、[自動完成文字] 或 **Alt**+**向右鍵**，手動叫用完成。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。
+您可以通過調用清單成員、完整單詞或**Alt**+**右箭頭**來手動調用完成。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。
 
 ## <a name="intellisense-in-zone"></a>IntelliSense in Zone
 
@@ -49,12 +49,12 @@ IntelliSense in Zone 可協助需要透過 [!INCLUDE[ndptecclick](../deployment/
 
 - 顯示 [列出成員] 中可用的所選區域 API，以及需要額外權限的無法使用 API。
 
-如需詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)。
+有關詳細資訊，請參閱[ClickOnce 應用程式的代碼訪問安全性](../deployment/code-access-security-for-clickonce-applications.md)。
 
 ## <a name="filtered-completion-lists"></a>篩選後的自動完成清單
 
-在 Visual Basic 中，IntelliSense 完成清單有兩個接近清單底部的索引標籤控制項。 預設選取的 [通用] 索引標籤會顯示最常用來完成您所撰寫陳述式的項目。 [全部] 索引標籤會顯示所有可用於進行自動完成的項目，包含也在 [通用] 索引標籤上的項目。
+在 Visual Basic 中，IntelliSense 完成清單有兩個接近清單底部的索引標籤控制項。 預設選取的 [通用]**** 索引標籤會顯示最常用來完成您所撰寫陳述式的項目。 [全部]**** 索引標籤會顯示所有可用於進行自動完成的項目，包含也在 [通用]**** 索引標籤上的項目。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 IntelliSense](../ide/using-intellisense.md)

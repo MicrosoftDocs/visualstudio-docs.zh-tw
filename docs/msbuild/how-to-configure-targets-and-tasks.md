@@ -8,20 +8,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f1bc76789ef80c1138efb94bda42442702c05
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe2955feb50a28e5ba631cdeddd169973a42ed25
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596342"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633885"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>如何：設定目標和工作
+
+不論開發電腦的環境是哪一種，您都可以將選取的 MSBuild 工作設定為在所針對的環境中執行。 例如，當您使用 64 位元電腦來建置以 32 位元架構為目標的應用程式時，就會在 32 位元處理程序中執行選取的工作。
 不論開發電腦的環境是哪一種，您都可以將選取的 MSBuild 工作設定為在所針對的環境中執行。 例如，當您使用 64 位元電腦來建置以 32 位元架構為目標的應用程式時，就會在 32 位元處理程序中執行選取的工作。
 
 > [!NOTE]
 > 如果是以 .NET 語言 (例如 Visual C# 或 Visual Basic) 來撰寫組建工作，而未使用原生資源或工具，則它不需任何修改，即可在任何目標內容中執行。
 
 ## <a name="usingtask-attributes-and-task-parameters"></a>UsingTask 屬性和工作參數
+
 下列 `UsingTask` 屬性會影響特定建置程序中工作的所有作業：
 
 - `Runtime` 屬性如果存在的話，會設定通用語言執行平台 (CLR) 版本，並且可接受下列任何一個值：`CLR2`、`CLR4`、`CurrentRuntime` 或 `*` (任何執行階段)。
@@ -74,6 +77,7 @@ ms.locfileid: "75596342"
 ```
 
 ## <a name="task-factories"></a>工作 Factory
+
 MSBuild 會在執行工作之前，先檢查看看它是否是指定為在目前的軟體內容中執行。 如果是這樣指定工作的，MSBuild 就會將它傳遞給 AssemblyTaskFactory 以在目前的處理程序中執行它；否則，MSBuild 會將工作傳遞給 TaskHostFactory 以在符合目標內容的處理程序中執行它。 即使目前的內容和目標內容相符，您仍可藉由將 `TaskFactory` 設定為 `TaskHostFactory`，來強制讓工作跨處理序執行 (基於隔離、安全性或其他原因)。
 
 ```xml
@@ -84,6 +88,7 @@ MSBuild 會在執行工作之前，先檢查看看它是否是指定為在目前
 ```
 
 ## <a name="phantom-task-parameters"></a>虛設項目工作參數
+
 `MSBuildRuntime` 和 `MSBuildArchitecture` 與任何其他工作參數相同，都可從建置屬性來設定。
 
 ```xml
@@ -105,7 +110,8 @@ MSBuild 會在執行工作之前，先檢查看看它是否是指定為在目前
 `MSBuildRuntime` 和 `MSBuildArchitecture` 參數提供最具彈性的方式，來設定目標內容，但是範圍也最受限制。 一方面，因為它們是設定在工作執行個體本身，並且在即將執行工作之前才會評估，所以它們可以從評估時間和建置階段可用屬性的完整範圍衍生其值。 在另一方面，這些參數僅適用於特定目標中工作的特定執行個體。
 
 > [!NOTE]
-> 工作參數是在父節點的內容中評估，不是工作主機的內容。 執行階段或架構相依的環境變數 (例如「程式檔案」位置) 將評估為符合父節點的值。 不過，如果工作直接讀取相同的環境變數，它會正確地在工作主機的內容中進行評估。
+> 工作參數是在父節點的內容中評估，不是工作主機的內容。 執行階段或架構相依的環境變數 (例如「程式檔案」** 位置) 將評估為符合父節點的值。 不過，如果工作直接讀取相同的環境變數，它會正確地在工作主機的內容中進行評估。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [設定目標和工作](../msbuild/configuring-targets-and-tasks.md)

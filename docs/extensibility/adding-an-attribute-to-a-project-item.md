@@ -1,28 +1,28 @@
 ---
-title: 將屬性加入至專案項目 |Microsoft Docs
+title: 將屬性新增到項目項目 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - attributes [Visual Studio], adding to a project item
 ms.assetid: 404a71d5-cce5-44e7-9eaf-d747c794fedb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8524ebc866d92cfe39a19dc79165da7c38025628
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 059eef0b6a215f1f02c77df63f777fbfda5dff19
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352372"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740197"
 ---
-# <a name="add-an-attribute-to-a-project-item"></a>將屬性加入專案項目
-方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>取得和設定的專案項目屬性的值。 SetItemAttribute 建立屬性如果已經存在，將它新增至專案項目中繼資料。
+# <a name="add-an-attribute-to-a-project-item"></a>新增屬性到項目項目
+方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A><xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>以及獲取和設置項目項屬性的值。 SetItemAttribute 創建屬性(如果不存在),將其添加到專案項元資料。
 
-## <a name="add-an-attribute-to-a-project-item"></a>將屬性加入專案項目
+## <a name="add-an-attribute-to-a-project-item"></a>新增屬性到項目項目
 
-- 下列程式碼會使用<xref:EnvDTE.DTE>automation 物件和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>方法，將屬性加入至專案項目。 專案項目 ID 被取自專案項目名稱"program.cs"。 屬性"MyAttribute"會加入至這個專案項目，而且 「 MyValue"的值。
+- 以下代碼使用<xref:EnvDTE.DTE>自動化物件和方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>向專案項添加屬性。 項目項 ID 從專案項名稱"program.cs"獲取。 屬性"MyAttribute"將添加到此專案項中,並給出值"MyValue"。
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -44,4 +44,4 @@ ms.locfileid: "66352372"
     ```
 
 ## <a name="see-also"></a>另請參閱
-- [保存在 MSBuild 專案檔中的資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+- [MSBuild 專案檔中的持久資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

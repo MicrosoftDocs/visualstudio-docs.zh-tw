@@ -1,27 +1,27 @@
 ---
-title: IDebugSourceServerModule::GetSourceServerData | Microsoft Docs
+title: IDebugSource伺服器模組::獲取源伺服器數據 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSourceServerModule::GetSourceServerData
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e24fb48014d8a336e9d46ceb8471e2efe126de1f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c0388e4a1916a16f7e429fa4f32c45ed62fdb02e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321887"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719925"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
-擷取來源伺服器資訊的陣列。
+檢索源伺服器資訊陣組。
 
 ## <a name="syntax"></a>語法
 
@@ -41,16 +41,16 @@ public int GetSourceServerData(
 
 ## <a name="parameters"></a>參數
 `pDataByteCount`\
-[out]中的資料陣列的位元組數目。
+[出]數據陣列中的位元組數。
 
 `ppData`\
-[out]參考的資料陣列。
+[出]對數據陣列的引用。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="example"></a>範例
-下列範例示範如何實作這個方法，如**CModule**公開 （expose） 的物件[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)介面。
+下面的範例展示如何為公開[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)介面的**CModule**物件實現此方法。
 
 ```cpp
 HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)

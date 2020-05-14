@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddb4b5b80ab33e0136b14ce824f5be1b8cb9f6a3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c93d69fb72d88c65e8037f8cec1e2747dbdbff95
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587325"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649328"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 
-Microsoft 混合最小規則著重于支援 Common Language Runtime 之C++專案中最嚴重的問題，包括潛在的安全性漏洞和應用程式損毀。
+Microsoft 混合最小規則側重於支援通用語言運行時C++專案中最關鍵的問題,包括潛在的安全漏洞和應用程序崩潰。
 
-將此規則集包含在您為支援 Common Language Runtime 之C++專案所建立的任何自訂規則集中。
+在為支援通用語言運行時C++專案創建的任何自定義規則集中包括此規則集。
 
 |規則|描述|
 |----------|-----------------|
@@ -86,18 +86,18 @@ Microsoft 混合最小規則著重于支援 Common Language Runtime 之C++專案
 |[C28182](../code-quality/c28182.md)|取值的指標為 NULL。 指標所包含的 NULL 值與另一個指標相同。|
 |[C28202](../code-quality/c28202.md)|非靜態成員的參考不合法|
 |[C28203](../code-quality/c28203.md)|類別成員的參考模稜兩可。|
-|[C28205](../code-quality/c28205.md)|\_成功\_ 或 \_在不合法的內容中使用\_失敗\_|
+|[C28205](../code-quality/c28205.md)|\_在\_非法\_的權\_中\_使用的成功或失敗|
 |[C28206](../code-quality/c28206.md)|左運算元指向結構，請使用 '->'|
 |[C28207](../code-quality/c28207.md)|左運算元是結構，請使用 '.'|
 |[C28210](../code-quality/c28210.md)|_On_failure_ 內容的註釋不能在明確 pre context 中|
 |[C28211](../code-quality/c28211.md)|SAL_context 需要靜態內容名稱|
 |[C28212](../code-quality/c28212.md)|註釋需要指標運算式|
-|[C28213](../code-quality/c28213.md)|\_使用\_extended-decl-modifier-seq\_注釋\_ 批註必須用來參考先前的宣告，而不需要修改。|
+|[C28213](../code-quality/c28213.md)|\_使用\_del\_\_註釋 註釋必須用於引用,無需修改,以前的聲明。|
 |[C28214](../code-quality/c28214.md)|屬性參數名稱必須是 p1...p9|
 |[C28215](../code-quality/c28215.md)|typefix 不能套用到已經有 typefix 的參數|
 |[C28216](../code-quality/c28216.md)|checkReturn 註釋只適用於特定函式參數的後置條件。|
 |[C28217](../code-quality/c28217.md)|對於函式，註釋的參數數目不符合檔案中找到的參數數目|
-|[C28218](../code-quality/c28218.md)|針對函式參數，注釋的參數不符合檔案中找到的|
+|[C28218](../code-quality/c28218.md)|對於函數參數,註解的參數與在檔案中找到的參數不匹配|
 |[C28219](../code-quality/c28219.md)|註釋中標註的參數需要列舉的成員|
 |[C28220](../code-quality/c28220.md)|註釋中標註的參數需要整數運算式|
 |[C28221](../code-quality/c28221.md)|註釋中的參數需要字串運算式|
@@ -134,7 +134,7 @@ Microsoft 混合最小規則著重于支援 Common Language Runtime 之C++專案
 |[C28267](../code-quality/c28267.md)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤。|
 |[C28272](../code-quality/c28272.md)|函式參數的註釋在檢查時，與函式宣告不一致|
 |[C28273](../code-quality/c28273.md)|對於函式，線索與函式宣告不一致|
-|[C28275](../code-quality/c28275.md)|\_宏\_值\_ 的參數為 null|
+|[C28275](../code-quality/c28275.md)|巨\_\_集\_值的參數為空|
 |[C28279](../code-quality/c28279.md)|找到符號的 'begin'，但沒有相符的 'end'|
 |[C28280](../code-quality/c28280.md)|找到符號的 'end'，但沒有相符的 'begin'|
 |[C28282](../code-quality/c28282.md)|格式字串必須在前置條件中|
@@ -152,8 +152,8 @@ Microsoft 混合最小規則著重于支援 Common Language Runtime 之C++專案
 |[C28304](../code-quality/c28304.md)|發現有位置不正確的 \_Notref\_ 運算子套用至語彙基元。|
 |[C28305](../code-quality/c28305.md)|剖析語彙基元時發現錯誤。|
 |[C28350](../code-quality/c28350.md)|註釋描述了條件不適用的狀況。|
-|[C28351](../code-quality/c28351.md)|註釋描述條件中不可以使用動態值 (變數)。|
-|[CA1001 具有](../code-quality/ca1001.md)|具有可處置欄位的類型應該為可處置|
-|[CA1821 必須](../code-quality/ca1821.md)|必須移除空的完成項|
+|[C28351](/cpp/code-quality/c28351)|註釋描述條件中不可以使用動態值 (變數)。|
+|[CA1001](../code-quality/ca1001.md)|具有可處置欄位的類型應該為可處置|
+|[CA1821](../code-quality/ca1821.md)|必須移除空的完成項|
 |[CA2213](../code-quality/ca2213.md)|可處置的欄位應該受到處置|
 |[CA2231](../code-quality/ca2231.md)|在覆寫 ValueType.Equals 上多載等號運算子|

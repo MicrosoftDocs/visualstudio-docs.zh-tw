@@ -14,21 +14,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 87e7c6b2d94602eca9e81098bb50bd0330b2bcd9
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779385"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017：作用中的記憶體分頁至磁碟的比率很高
 
 |||
 |-|-|
-|規則識別碼|DA0017|
-|Category|記憶體和分頁|
+|規則 ID|DA0017|
+|類別|記憶體和分頁|
 |程式碼剖析方法|全部|
 |訊息|發生高比率的使用中記憶體分頁到磁碟。 您的應用程式可能是記憶體繫結。|
-|規則類型|資訊|
+|規則型別|資訊|
 
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。
 
@@ -45,7 +45,7 @@ ms.locfileid: "74779385"
  分頁經常以大量分頁作業從磁碟讀取或寫入磁碟。 例如，Pages Output/sec 數經常遠比 Page Writes/sec 數還大。 因為 Pages Output/sec 還包含系統檔案快取的變更資料頁。 不過，不一定可以輕鬆地判斷哪些處理序直接負責分頁或原因。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 按兩下 [錯誤清單] 視窗中的訊息，瀏覽至[標記](../profiling/marks-view.md)檢視。 尋找 **Memory\Pages/sec** 欄。 判斷是否有特定的程式執行階段，當中的分頁 IO 活動比其他階段更繁重。
+ 按兩下"錯誤清單"視窗中的消息以導航到["標記"](../profiling/marks-view.md)視圖。 尋找 **Memory\Pages/sec** 欄。 判斷是否有特定的程式執行階段，當中的分頁 IO 活動比其他階段更繁重。
 
  如果您在負載測試情節中收集 ASP.NET 應用程式的分析資料，請嘗試在設定額外實體記憶體 (或 RAM) 的機器上再次執行負載測試。
 

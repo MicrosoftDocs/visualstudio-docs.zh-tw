@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: 總覽
+    - name: 概觀
       href: overview.md
     - name: 快速入門
       expanded: true
@@ -40,7 +40,7 @@
           href: container-build.md
     - name: 疑難排解
       href: troubleshooting-docker-errors.md
-    - name: 參考資料
+    - name: 參考
       items:
         - name: 適用於容器專案的 MSBuild 屬性
           href: container-msbuild-properties.md

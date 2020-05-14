@@ -1,5 +1,5 @@
 ---
-title: VSTextBuffer 物件 |Microsoft Docs
+title: VSText緩衝區物件 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,42 +8,42 @@ helpviewer_keywords:
 - VSTextBuffer object, reference
 - views [Visual Studio SDK], VSTextBuffer object
 ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1895efa9ef10e1e554b98844619507224f09126
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a5ea44d2b22c96d49f334f2ea33f9db8d69b5eb0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189021"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697717"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 物件
-文字緩衝區物件代表 Unicode 文字的資料流程，通常與檔案相關聯。 您可以在 [核心編輯器] 的內容之外使用 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 物件，就像在 wizard 中一樣。
+文本緩衝區物件表示 Unicode 文本流,通常與檔關聯。 物件<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>可以在核心編輯器的上下文之外使用,如嚮導。
 
- 下表顯示 `VSTextBuffer`的介面。
+ 下表顯示了`VSTextBuffer`的介面。
 
 |方法|描述|
 |------------|-----------------|
-|[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|標準的 OLE 介面。 用於在緩衝區中進行復原/重做處理。|
-|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|標準的 OLE 介面。|
-|[IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|標準的 OLE 介面。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|可讓您建立複合動作（也就是在單一復原/重做單位中分組的動作）。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|啟用由文本緩衝區所管理之檔資料的持續性。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|提供基本的服務;由許多用戶端使用。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextFind>|用來搜尋緩衝區。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|提供使用二維座標的讀取和寫入功能。 繼承自 `IVsTextBuffer`。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|提供使用一維座標的讀取和寫入功能。 繼承自 `IVsTextBuffer`。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|針對緩衝區中的文字提供快速、以資料流程為導向的順序存取。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|提供泛型屬性集合的存取權。 最重要的屬性是緩衝區的名稱（或名字標記）。 您可以藉由建立 GUID 並使用它做為索引鍵，在緩衝區中儲存您自己的亂數據。|
+|[IOleCommand目標](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|標準 OLE 介面。 用於在緩衝區中撤銷/重做處理。|
+|[IPersist 檔案](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|標準 OLE 介面。|
+|[I堅持流](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|標準 OLE 介面。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|啟用創建複合操作(即,在單個撤銷/重做單元中分組的操作)。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|啟用由文本緩衝區管理的文件數據的持久性。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|提供基本服務;許多用戶端使用。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextFind>|用於搜索緩衝區。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|使用二維座標提供讀寫功能。 繼承自 `IVsTextBuffer`。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|使用一維座標提供讀寫功能。 繼承自 `IVsTextBuffer`。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|提供對緩衝區中文本的快速、面向流的順序訪問。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|提供對屬性的通用集合的訪問。 最重要的屬性是緩衝區的名稱或名稱。 通過創建 GUID 並將其用作密鑰,可以使用此介面將您自己的隨機數據存儲在緩衝區中。|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|支援事件的連接點。|
 
 ## <a name="remarks"></a>備註
- `VSTextBuffer` 通常是透過 `IVsTextBuffer`上的 `QueryInterface` 呼叫來找到。 如需詳細資訊，請參閱[文字緩衝區](/visualstudio/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?view=vs-2015)。
+ `VSTextBuffer`通常透過`QueryInterface`呼叫`IVsTextBuffer`找到 。 有關詳細資訊,請參閱[文字緩衝區](/visualstudio/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?view=vs-2015)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>
 - <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
-- [圖形編輯](https://www.microsoft.com/download/details.aspx?id=55984)
+- [數位編輯](https://www.microsoft.com/download/details.aspx?id=55984)

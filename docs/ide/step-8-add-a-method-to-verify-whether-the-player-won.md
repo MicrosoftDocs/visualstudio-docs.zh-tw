@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 881fa0d90390a059bea28cb19584381f814396d3
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579758"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>步驟 8：新增方法以驗證玩家是否贏了
@@ -31,22 +31,22 @@ ms.locfileid: "77579758"
      [!code-vb[VbExpressTutorial4Step8#10](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_1.vb)]
 
       > [!IMPORTANT]
-      > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>Docs.Microsoft.com](../ide/media/docs-programming-language-control.png) 的 ![程式設計語言控制項     
+      > 使用此頁面右上角的程式設計語言控制項查看 C# 程式碼片段或 Visual Basic 程式碼片段。<br><br>![程式設計語言控制Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)     
 
-     方法會使用中C#的另一個 `foreach` 迴圈，或在 Visual Basic 中 `For Each` 迴圈，以流覽 <xref:System.Windows.Forms.TableLayoutPanel>中的每個標籤。 它會使用等號比較運算子（ C#中的`==` 和 Visual Basic 中的 `=`）來檢查每個標籤的圖示色彩，以確認它是否符合背景。 如果色彩符合，則圖示會維持不可見狀態，而且玩家尚未配對剩餘的所有圖示。 在這種情況下，程式會使用 `return` 陳述式略過此方法的其餘部分。 如果迴圈通過所有的標籤，但未執行 `return` 陳述式，這表示已配對表單上的所有的圖示。 程式會顯示 MessageBox 恭喜玩家獲勝的播放程式，然後呼叫表單的 `Close()` 方法以結束遊戲。
+     該方法使用 C# 或 Visual `For Each` Basic 中的迴圈中的另一個<xref:System.Windows.Forms.TableLayoutPanel>`foreach`迴圈來遍歷 中的每個標籤。 它使用相等運算子（`==`在 C#`=`和 Visual Basic 中）檢查每個標籤的圖示顏色，以驗證它是否與背景匹配。 如果色彩符合，則圖示會維持不可見狀態，而且玩家尚未配對剩餘的所有圖示。 在這種情況下，程式會使用 `return` 陳述式略過此方法的其餘部分。 如果迴圈通過所有的標籤，但未執行 `return` 陳述式，這表示已配對表單上的所有的圖示。 程式會顯示 MessageBox 恭喜玩家獲勝的播放程式，然後呼叫表單的 `Close()` 方法以結束遊戲。
 
 2. 接下來，讓標籤的 <xref:System.Windows.Forms.Control.Click> 事件處理常式呼叫新的 `CheckForWinner()` 方法。 確定您的程式會在顯示玩家所選擇的第二個圖示之後立即檢查贏家。 尋找您在其中設定第二個已選擇圖示之色彩的程式碼行，然後立即呼叫 `CheckForWinner()` 方法，如下列程式碼所示。
 
      [!code-csharp[VbExpressTutorial4Step8#11](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_2.cs)]
      [!code-vb[VbExpressTutorial4Step8#11](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_2.vb)]
 
-3. 儲存並執行程式。 玩遊戲並將所有的圖示配對。 當您贏得時，程式會顯示一個祝賀**MessageBox** （如下列螢幕擷取畫面所示），然後關閉此方塊。
+3. 儲存並執行程式。 玩遊戲並將所有的圖示配對。 獲勝後，程式將顯示一個祝賀**訊息方塊**（如以下螢幕截圖所示），然後關閉該框。
 
-     ![比對遊戲與 MessageBox](../ide/media/express_tut4step8.png)<br/>
-*使用* ***MessageBox*** ***配對遊戲***
+     ![配對遊戲和 MessageBox](../ide/media/express_tut4step8.png)<br/>
+***匹配遊戲****與****訊息方塊***
 
-## <a name="to-continue-or-review"></a>繼續或檢視
+## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移至下一個教學課程步驟，請參閱 **[步驟9：嘗試其他功能](../ide/step-9-try-other-features.md)** 。
+- 要轉到下一個教程步驟，請參閱**[步驟 9：嘗試其他功能](../ide/step-9-try-other-features.md)**。
 
-- 若要返回上一個教學課程步驟，請參閱[步驟 7：讓配對保持可見](../ide/step-7-keep-pairs-visible.md)。
+- 要返回到前面的教程步驟，請參閱步驟[7：保持對可見](../ide/step-7-keep-pairs-visible.md)。

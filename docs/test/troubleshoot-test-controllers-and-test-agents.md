@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565951"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>負載測試中測試控制器和測試代理程式的疑難排解策略
@@ -29,7 +29,7 @@ ms.locfileid: "75565951"
 當您執行負載測試時，若您嘗試連接至測試代理程式電腦並收集效能計數器，便可能會接收到錯誤。 「遠端登錄」服務是負責提供效能計數器資料給遠端電腦的服務。 在某些作業系統上，遠端登錄服務並不會自動啟動。 若要修正此問題，請手動啟動「遠端登錄」服務。
 
 > [!NOTE]
-> 您可以在 [控制台] 中存取「遠端登錄」服務。 選擇 [系統管理工具]，然後選擇 [服務]。
+> 您可以在 [控制台]**** 中存取「遠端登錄」服務。 選擇 [系統管理工具]****，然後選擇 [服務]****。
 
 造成這個問題的另一個原因，是您沒有讀取效能計數器的足夠權限。 對於本機測試回合，執行測試的使用者帳戶必須是 [Power Users] 群組 (或更高) 的成員，或 [Performance Monitor Users] 群組的成員。 對於遠端測試回合，設定控制器執行的帳戶必須是 [Power Users] 群組 (或更高) 的成員，或 [Performance Monitor Users] 群組的成員。
 
@@ -41,7 +41,7 @@ ms.locfileid: "75565951"
 
 1. 停止測試控制器服務。 在命令提示中，鍵入 `net stop vsttcontroller`。
 
-2. 開啟*qtcontroller.exe.config*檔案。此檔案位於控制器安裝目錄中。
+2. 打開檔*QTController.exe.config*。此檔位於控制器安裝目錄中。
 
 3. 在該檔案的系統診斷區段中，編輯 `EqtTraceLevel` 參數的項目。 您的程式碼應該會與以下相似：
 
@@ -86,7 +86,7 @@ ms.locfileid: "75565951"
 
 當您嘗試設定測試代理程式時，可能會接收到下列錯誤：
 
-**錯誤8110。無法連接到指定的控制器電腦或存取控制器物件。**
+**錯誤 8110。無法連接到指定的控制器電腦或存取控制器物件。**
 
 在有超過一張以上網路介面卡的電腦上安裝測試控制器，便可能導致此錯誤。
 
@@ -97,11 +97,11 @@ ms.locfileid: "75565951"
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>取得網路介面卡的 IP 位址
 
-1. 選擇 [開始]，然後選擇 [執行]。
+1. 選擇 **"開始"，** 然後選擇 **"運行**"。
 
-     [執行] 對話方塊隨即顯示。
+     [執行]**** 對話方塊隨即顯示。
 
-2. 鍵入 `cmd`，然後選擇 [確定]。
+2. 鍵入 `cmd`，然後選擇 [確定]****。
 
      命令提示字元隨即開啟。
 
@@ -113,7 +113,7 @@ ms.locfileid: "75565951"
 
 1. 停止測試控制器服務。 在命令提示中，鍵入 `net stop vsttcontroller`。
 
-2. 開啟*qtcontroller.exe.config*檔案。這個檔案位於 *% ProgramFiles （x86）% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
+2. 打開檔*QTController.exe.config*。此檔位於 *%程式檔 （x86）%\微軟視覺工作室\2017_企業_通用7_IDE*。
 
 3. 將 `BindTo` 屬性的項目加入至應用程式設定。 指定控制器要繫結之網路介面卡的 IP 位址。 您的程式碼應該會與以下相似：
 
@@ -139,6 +139,6 @@ ms.locfileid: "75565951"
 
 這適用於測試控制器、測試代理程式服務和測試代理程式處理序。 在超過一個以上網路介面卡的電腦上所執行的每一個處理序，都必須設定 `BindTo` 屬性。 這三個處理序的 `BindTo` 屬性設定程序都一樣，和前述針對測試控制器所指定的設定程序相同。 若要設定測試代理程式服務與測試代理程式處理序的記錄層次，請使用[在測試控制器電腦上設定記錄層次](#set-the-logging-level-on-a-test-controller-computer)中列出的組態檔。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [測試控制器和測試代理程式](../test/configure-test-agents-and-controllers-for-load-tests.md)

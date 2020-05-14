@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660f63f68435f4c4eba8d1c3dfb2438541da4841
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589288"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634080"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
+
 提供自動化方式來偵測、下載及安裝應用程式及其必要條件。 它可用來做為單一安裝程式，針對組成應用程式的所有元件整合個別的安裝程式。
 
 ## <a name="task-parameters"></a>工作參數
+
 以下描述 `GenerateBootstrapper` 工作的參數。
 
 - `ApplicationFile`
@@ -76,7 +78,7 @@ ms.locfileid: "75589288"
   </BootstrapperItem>
   ```
 
-   `Include` 屬性代表應該安裝的必要條件名稱。 `ProductName` 項目中繼資料為選擇性，而且萬一找不到套件，建置引擎將使用它作為易記名稱。 除非未指定 `ApplicationFile`，否則這些項目不是必要的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 輸入參數。 您應該基於每個必須針對您應用程式安裝的必要條件包含一個項目。
+   `Include` 屬性代表應該安裝的必要條件名稱。 `ProductName` 項目中繼資料為選擇性，而且萬一找不到套件，建置引擎將使用它作為易記名稱。 除非未指定任何`ApplicationFile`參數，否則不需要這些專案。 您應該基於每個必須針對您應用程式安裝的必要條件包含一個項目。
 
    如果未指定 `BootstrapperItems` 和 `ApplicationFile` 參數，將會產生建置錯誤。
 
@@ -84,7 +86,7 @@ ms.locfileid: "75589288"
 
    選擇性的 `String` 輸出參數。
 
-   指定 *setup.exe* 的建置位置
+   指定*setup.exe*的生成位置
 
 - `ComponentsLocation`
 
@@ -149,9 +151,11 @@ ms.locfileid: "75589288"
    如果是 `true`，啟動載入器會在指定的輸入啟動載入器項目上執行 XSD 驗證。 此參數的預設值為 `false`。
 
 ## <a name="remarks"></a>備註
-除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+
+除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
+
 下列範例會使用 `GenerateBootstrapper` 工作來安裝必須安裝 .NET Framework 2.0 的應用程式。
 
 ```xml
@@ -175,6 +179,7 @@ ms.locfileid: "75589288"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
-- [工作參考](../msbuild/msbuild-task-reference.md)
+- [任務引用](../msbuild/msbuild-task-reference.md)

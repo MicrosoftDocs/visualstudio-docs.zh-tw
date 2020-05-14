@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f7183f20139df82d14f80ee4b57e28b4aed3a66
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566783"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>跨多部電腦同步處理 Visual Studio 設定
@@ -27,36 +27,36 @@ ms.locfileid: "75566783"
 
 - 使用者定義的命令別名。 如需有關如何定義命令別名的詳細資訊，請參閱 [Visual Studio 命令別名](../ide/reference/visual-studio-command-aliases.md)。
 
-- [視窗] > [管理視窗配置] 頁面中的使用者定義視窗配置。
+- **視窗** > **管理視窗佈局**頁中使用者定義的視窗佈局。
 
-- 位於 [工具] > [選項] 頁面的下列選項：
+- **"工具** > **選項**"頁中的以下選項：
 
-  - [環境] > [一般] 選項頁面上的主題和功能表列大小寫設定。
+  - **"環境** > **常規**選項"頁上的主題和功能表列大小寫設置。
 
-  - [環境] > [字型和色彩] 選項頁面上的所有設定。
+  - **"環境** > **字體和顏色**"選項頁上的所有設置。
 
-  - [環境] > [鍵盤] 選項頁面上的所有鍵盤快速鍵。
+  - **"環境** > **鍵盤"** 選項頁上的所有鍵盤快速鍵。
 
-  - [環境] > [索引標籤和視窗] 選項頁面上的所有設定。
+  - **"環境** > **"選項卡和 Windows**選項頁上的所有設置。
 
-  - [環境] > [啟動] 選項頁面上的所有設定。
+  - **"環境** > **啟動"** 選項頁上的所有設置。
 
-  - [文字編輯器] 選項頁面上的所有設定，例如[程式碼樣式喜好設定](code-styles-and-code-cleanup.md)。
+  - [文字編輯器]**** 選項頁面上的所有設定，例如[程式碼樣式喜好設定](code-styles-and-code-cleanup.md)。
 
-  - [XAML 設計工具] 選項頁面上的所有設定。
+  - **XAML 設計器**選項頁上的所有設置。
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>關閉特定電腦的同步設定
 
-Visual Studio 的同步設定預設為開啟。 您可以移至 [工具] > [選項] > [環境] > [帳戶] 頁面，然後取消勾選 [登入 Visual Studio 時同步處理多部裝置的設定]，即可關閉電腦的同步設定。
+Visual Studio 的同步設定預設為開啟。 您可以通過訪問 **"工具** > **選項** > **環境** > **帳戶**"頁並在登錄到 Visual Studio 時取消跨**設備的同步設置**來關閉電腦上的同步設置。
 
 例如，如果您決定不要同步處理電腦 "A" 上 Visual Studio 的設定，則任何在電腦 "A" 上面的設定變更都不會出現在電腦 "B" 或電腦 "C" 上。 電腦 "B" 和 "C" 會繼續互相同步處理，但不會和電腦 "A" 同步。
 
 > [!NOTE]
-> 如果您取消選取 [工具] > [選項] > [環境] > [帳戶] 頁面上的選項而選擇不要同步處理設定，您在同一部電腦上所擁有的其他版本 Visual Studio 不會受到影響。 Visual studio 的那些並存安裝將繼續同步處理其設定 (除非您也在該處取消選取選項)。
+> 如果選擇不通過取消"**工具** > **選項** > **環境** > **帳戶**"頁上的選項來同步設置，則同一台電腦上的其他版本的 Visual Studio 不會受到影響。 Visual studio 的那些並存安裝將繼續同步處理其設定 (除非您也在該處取消選取選項)。
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>同步處理 Visual Studio 系列產品和版本之間的設定
 
-設定會在「並存」安裝的 Visual Studio 版本之間同步處理。 Visual Studio 系列產品中 (包括 Blend for Visual Studio) 的設定也會同步處理。 不過，個別系列產品可能有它自己不會與 Visual Studio 共用的設定。 例如，電腦 A 上的 Blend for Visual Studio 專屬設定不會和電腦 A 或 B 上的 Visual Studio 共用。
+設定會在「並存」** 安裝的 Visual Studio 版本之間同步處理。 Visual Studio 系列產品中 (包括 Blend for Visual Studio) 的設定也會同步處理。 不過，個別系列產品可能有它自己不會與 Visual Studio 共用的設定。 例如，電腦 A 上的 Blend for Visual Studio 專屬設定不會和電腦 A 或 B 上的 Visual Studio 共用。
 
 ## <a name="side-by-side-synchronized-settings"></a>並存同步設定
 
@@ -71,9 +71,9 @@ Visual Studio 的同步設定預設為開啟。 您可以移至 [工具] > [選�
 
 1. 升級至 Visual Studio 2017 15.3 版或更新版本。
 
-2. 使用 [匯入和匯出設定精靈] 將您所有現有設定匯出至 *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* 資料夾外的某個位置。
+2. 使用 [匯入和匯出設定精靈]**** 將您所有現有設定匯出至 *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* 資料夾外的某個位置。
 
-3. 開啟 [VS 2017 的開發人員命令提示字元]，並執行 `devenv /resetuserdata`。
+3. 開啟 [VS 2017 的開發人員命令提示字元]****，並執行 `devenv /resetuserdata`。
 
 1. 開啟 Visual Studio，並從匯出的設定檔中匯入儲存的設定。
 
@@ -87,9 +87,9 @@ Visual Studio 的同步設定預設為開啟。 您可以移至 [工具] > [選�
 
 ## <a name="reset-synchronized-settings"></a>重設同步設定
 
-若要將所有設定重設為其預設值，請登入 Visual Studio，然後選取 [工具] > [匯入和匯出設定] 以開啟 [匯入和匯出設定精靈]。 選取 [重設所有設定]，然後遵循精靈的其餘步驟進行。
+要將所有設置重置為其預設值，請登錄到 Visual Studio，然後選擇 **"工具** > **導入和匯出設置"** 以打開 **"導入和匯出設置"嚮導**。 選取 [重設所有設定]****，然後遵循精靈的其餘步驟進行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [個人化 IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [環境設定](../ide/environment-settings.md)

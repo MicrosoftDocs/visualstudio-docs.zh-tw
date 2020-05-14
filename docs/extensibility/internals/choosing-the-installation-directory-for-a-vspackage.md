@@ -1,65 +1,65 @@
 ---
-title: 選擇 vspackage 的安裝目錄 |Microsoft Docs
+title: 為 VS 套件選擇安裝目錄 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 249efe70cdcc2cf8ef600ca4d9e009e094e1b105
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b8391cbdd3a857ea4ebaf3a36655520935f1a128
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309113"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709767"
 ---
-# <a name="choose-the-installation-directory-for-a-vspackage"></a>選擇 vspackage 的安裝目錄
-VSPackage 和其支援的檔案必須是使用者的檔案系統上。 位置取決於 VSPackage 是否管理或未受管理，您的並排顯示版本設定配置和使用者選擇。
+# <a name="choose-the-installation-directory-for-a-vspackage"></a>選擇 VSPackage 的安裝目錄
+VSPackage 及其支援文件必須位於使用者的檔案系統上。 位置取決於 VSPackage 是託管還是非託管、並行版本控制方案和用戶選擇。
 
-## <a name="unmanaged-vspackages"></a>Unmanaged 的 Vspackage
- Unmanaged 的 VSPackage 是 COM 伺服器可安裝在任何位置。 其登錄資訊必須精確地反映其位置。 安裝程式使用者介面 (UI) 應該提供的預設位置為的子目錄`ProgramFilesFolder`Windows Installer 屬性值。 例如：
+## <a name="unmanaged-vspackages"></a>非託管 VS 套件
+ 非託管 VSPackage 是可在任何位置安裝的 COM 伺服器。 其註冊信息必須準確反映其位置。 安裝程式使用者介面 (UI) 應提供預設位置作為 Windows`ProgramFilesFolder`安裝程式屬性值 的子目錄。 例如：
 
-*&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\V1.0\\*
+*&lt;程式檔案資料夾&gt;\\&lt;我的&gt;\\&lt;公司 MyVS&gt;包產品 #V1.0\\*
 
- 應該允許使用者變更預設目錄來容納保持小型的開機磁碟分割的使用者，且想要安裝另一個磁碟區上的應用程式和工具。
+ 應允許使用者更改預設目錄,以適應保留小型引導分區並更願意在另一卷上安裝應用程式和工具的使用者。
 
- 如果您的並排顯示配置使用已建立版本的 VSPackage，您可以使用子目錄來儲存不同的版本。 例如: 
+ 如果並行方案使用版本化 VSPackage,則可以使用子目錄來存儲不同的版本。 例如：
 
- *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2002\\*
+ *&lt;程式檔案資料夾&gt;\\&lt;我的&gt;\\&lt;公司&gt;\\MyVS 套件產品\\V1.0 2002\\*
 
- *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2003\\*
+ *&lt;程式檔案資料夾&gt;\\&lt;我的&gt;\\&lt;公司&gt;\\MyVS 套件產品\\V1.0 2003\\*
 
- *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2005\\*
+ *&lt;程式檔案資料夾&gt;\\&lt;我的&gt;\\&lt;公司&gt;\\MyVS 套件產品\\V1.0 2005\\*
 
 ## <a name="managed-vspackages"></a>Managed VSPackage
- Managed 的 Vspackage 也可以安裝在任何位置。 不過，您應該考慮永遠將它們安裝至全域組件快取 (GAC) 中，以減少組件載入時間。 Managed 的 Vspackage 一律是強式名稱組件，因為它們安裝在 GAC 中表示其強式名稱簽章驗證需要只能在安裝階段。 安裝在檔案系統在其他地方的強式名稱組件必須每次載入時驗證其簽章。 當您安裝在 GAC 中的 managed 的 Vspackage 時，使用 regpkg 工具 **/assembly**參數寫入登錄項目指向組件的強式名稱。
+ 託管 VS 套件也可以安裝在任何位置。 但是,應考慮始終將它們安裝到全域程式集緩存 (GAC) 以縮短程式集載入時間。 由於託管 VSPackages 始終是強名稱程式集,因此在 GAC 中安裝它們意味著其強名稱簽名驗證僅在安裝時才需要。 檔案系統中其他位置安裝的強命名程式集必須在每次載入時驗證其簽名。 在 GAC 中安裝託管 VSPackages 時,請使用 regpkg 工具的 **/程式集**開關寫入指向程式集的強名稱的註冊表項。
 
- 如果您安裝在 GAC 以外的位置中的 managed 的 Vspackage，請依照先前選擇的目錄階層給 unmanaged Vspackage 的建議。 使用 regpkg 工具 **/ 程式碼基底**參數寫入登錄 VSPackage 組件的路徑所指向的項目。
+ 如果在 GAC 以外的位置安裝託管 VS 包,請按照前面為非託管 VSPackages 提供的建議來選擇目錄層次結構。 使用 regpkg 工具的 **/codebase**開關編寫指向 VSPackage 程式集路徑的註冊表項。
 
- 如需詳細資訊，請參閱 <<c0> [ 註冊和取消註冊 Vspackage](../../extensibility/registering-and-unregistering-vspackages.md)。
+ 有關詳細資訊,請參閱[註冊和取消註冊 VS 包](../../extensibility/registering-and-unregistering-vspackages.md)。
 
-## <a name="satellite-dlls"></a>附屬 Dll
- 依照慣例，VSPackage 附屬 Dll，其中包含為特定地區設定的資源，位於的子目錄*VSPackage*目錄。 子目錄會對應到地區設定識別碼 (LCID) 值。
+## <a name="satellite-dlls"></a>附屬 DLL
+ 按照慣例,包含特定區域設置資源的 VSPackage 衛星 DLL 位於*VSPackage*目錄的子目錄中。 子目錄對應於區域設置 ID (LCID) 值。
 
- [管理 Vspackage](../../extensibility/managing-vspackages.md)文章指出登錄項目控制 where[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]實際上會尋找 VSPackage 的附屬 DLL。 不過，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]嘗試載入附屬 DLL 中命名的 LCID 值，以下列順序：
+ ["管理 VSPackages"](../../extensibility/managing-vspackages.md)一文指示註冊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]表項 控制實際查找 VSPackage 的衛星 DLL 的位置。 但是,[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]嘗試按以下順序在名為 LCID 值的子目錄中載入衛星 DLL:
 
-1. 預設 LCID (Visual Studio LCID，例如 *\1033* 英文)
+1. 預設 LCID(視覺工作室 LCID;例如,英語 *#1033)*
 
-2. 使用預設的子語言的預設 LCID。
+2. 預設 LCID 與預設子語言。
 
 3. 系統預設 LCID。
 
-4. 預設子語言使用系統預設 LCID。
+4. 系統預設 LCID 與預設子語言。
 
-5. 美國英文 ( *。 \1033*或是 *。 \0x409*)。
+5. 美國英語 *(.1033*或 *.\0x409*)。
 
-如果您的 VSPackage DLL 包含資源和**SatelliteDll\DllName**登錄項目指向它，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]嘗試載入它們依上述順序。
+如果您的 VSPackage DLL 包含**SatelliteDll\DllName**資源,並且 SatelliteDll_DllName[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]註冊表條目 指向它,則嘗試按上述順序載入它們。
 
 ## <a name="see-also"></a>另請參閱
-- [共用和建立版本的 Vspackage 之間進行選擇](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
-- [管理 Vspackage](../../extensibility/managing-vspackages.md)
-- [管理套件註冊](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+- [在分享與版本化 VS 套件之間進行選擇](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
+- [管理 VSPackages](../../extensibility/managing-vspackages.md)
+- [管理包註冊](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

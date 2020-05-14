@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2599238e18415fb494d3d72fdf24305d7ba1b0b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75589899"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 影像庫
@@ -31,7 +31,7 @@ Visual Studio 映像庫包含出現在 Microsoft Visual Studio、Microsoft Windo
 
 映像庫分為五類：通用項目、動作、註釋、圖示和物件。 讀我檔案是以適用於通用項目和圖示類型的 PDF 格式加入的。 其中包含有關如何在您的應用程式中正確使用這些映像的資訊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [安裝 Visual Studio](../install/install-visual-studio.md)
-- [影像、點陣圖和中繼檔](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)
+- [安裝視覺化工作室](../install/install-visual-studio.md)
+- [圖像、點陣圖和中繼檔](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

@@ -1,5 +1,5 @@
 ---
-title: 取得已安裝程式碼片段（舊版）的清單 |Microsoft Docs
+title: 取得已安裝的代碼段清單(舊代碼段) |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,28 +7,28 @@ helpviewer_keywords:
 - code snippets, retrieving list
 - GetSnippets method
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 072827bbb9676ba49df5ccd69f329ea9b04c78b2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d3d5ef857973555c4b2d201f98957bd2c39328b5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721651"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703645"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>逐步解說︰取得已安裝程式碼片段 (舊版實作) 的清單
-程式碼片段是一段程式碼，可以使用功能表命令（可在已安裝的程式碼片段清單中選擇），或從 IntelliSense 完成清單中選取程式碼片段快捷方式，插入來源緩衝區。
+代碼段是一段代碼,可以使用菜單命令(允許在已安裝的代碼段清單中選擇)或從 IntelliSense 完成清單中選擇代碼段快捷方式,插入到源緩衝區中。
 
- @No__t_0 方法會取得特定語言 GUID 的所有程式碼片段。 這些程式碼片段的快捷方式可以插入 IntelliSense 完成清單中。
+ 該方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A>獲取特定語言 GUID 的所有代碼段。 這些程式碼段的快捷方式可以插入到 IntelliSense 完成清單中。
 
- 如需在 managed package framework （MPF）語言服務中執行程式碼片段的詳細資訊，請參閱[支援舊版語言服務中的程式碼片段](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)。
+ 有關在託管套件架構 (MPF) 語言服務中實現代碼段的詳細資訊,請參閱[舊語言服務中對程式碼段的支援](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)。
 
-### <a name="to-retrieve-a-list-of-code-snippets"></a>若要取出程式碼片段清單
+### <a name="to-retrieve-a-list-of-code-snippets"></a>檢索程式清單
 
-1. 下列程式碼顯示如何取得指定語言的程式碼片段清單。 結果會儲存在 <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> 結構的陣列中。 這個方法會使用靜態 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 方法，從 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> 服務取得 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> 介面。 不過，您也可以使用提供給 VSPackage 的服務提供者，並呼叫 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> 方法。
+1. 以下代碼演示如何獲取給定語言的代碼段清單。 結果儲存在結構陣列中<xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion>。 此方法使用靜態<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager><xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>從 服務獲取介面。 但是,您也可以使用提供給 VSPackage 的服務提供者並<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>調用 方法。
 
     ```csharp
     using System;
@@ -103,10 +103,10 @@ ms.locfileid: "72721651"
 
 ### <a name="to-call-the-getsnippets-method"></a>呼叫 GetSnippets 方法
 
-1. 下列方法顯示如何在剖析作業完成時呼叫 `GetSnippets` 方法。 在以 <xref:Microsoft.VisualStudio.Package.ParseReason> 原因啟動的剖析作業之後，會呼叫 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> 方法。
+1. 以下方法演示如何在分析操作完成時`GetSnippets`調用該方法。 該方法<xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>是在分析操作後呼叫的,該分析操作是啟動<xref:Microsoft.VisualStudio.Package.ParseReason>的原因 。
 
 > [!NOTE]
-> 基於效能考慮，會快取 `expansionsList` 陣列清單。 程式碼片段的變更不會反映在清單中，直到語言服務停止並重載為止（例如，藉由停止並重新啟動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]）。
+> 出於`expansionsList`性能原因緩存陣列清單。 在停止並重新載入語言服務(例如,透過停止和重新啟動[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)])之前,對代碼段的更改不會反映在清單中。
 
 ```csharp
 class TestLanguageService : LanguageService
@@ -125,13 +125,13 @@ class TestLanguageService : LanguageService
 }
 ```
 
-### <a name="to-use-the-snippet-information"></a>使用程式碼片段資訊
+### <a name="to-use-the-snippet-information"></a>使用代碼欄位資訊
 
-1. 下列程式碼顯示如何使用 `GetSnippets` 方法所傳回的程式碼片段資訊。 會從剖析器呼叫 `AddSnippets` 方法，以回應用來填入程式碼片段清單的任何剖析原因。 這應該在第一次完成完整剖析之後才會發生。
+1. 以下代碼演示如何使用`GetSnippets`方法返回的代碼段資訊。 該方法`AddSnippets`從解析器調用,以回應用於填充代碼段清單的任何分析原因。 這應該在首次完成完整分析後進行。
 
-     @No__t_0 方法會建立稍後在完成清單中顯示的宣告清單。
+     該方法`AddDeclaration`生成一個聲明清單,該清單稍後顯示在完成清單中。
 
-     @No__t_0 類別包含可以在完成清單中顯示的所有資訊，以及宣告的類型。
+     該`TestDeclaration`類包含可在完成清單中顯示的所有資訊以及聲明類型。
 
     ```csharp
     class TestAuthoringScope : AuthoringScope
@@ -176,5 +176,5 @@ class TestLanguageService : LanguageService
 
     ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [舊版語言服務中對程式碼片段的支援](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)

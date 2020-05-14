@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9d0d9b7ab681a266115673b48f2c2604c5ff869c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772723"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>模組檢視 - .NET 記憶體取樣資料
@@ -26,11 +26,11 @@ ms.locfileid: "74772723"
 |資料行|描述|
 |------------|-----------------|
 |**名稱**|模組、函式、行號或指令位址的名稱。|
-|**處理序 ID**|分析執行的處理序 ID (PID)。|
-|**處理序名稱**|處理程序的名稱。|
+|**處理序識別碼**|分析執行的處理序 ID (PID)。|
+|**流程名稱**|處理序的名稱。|
 |**模組名稱**|包含該函式的模組名稱。|
 |**模組路徑**|模組的路徑。|
-|**原始程式檔**|含有這個函式定義的原始程式檔。|
+|**原始檔案**|含有這個函式定義的原始程式檔。|
 |**函式行號**|原始程式檔中這個函式的開頭行號。|
 |**內含配置**|-   對於函式，這是該函式所建立物件的總數。 該數量包含此函式呼叫之函式建立的物件。<br />-   對於模組，則為在分析執行中，當至少執行一個該模組之函式時所配置的物件數量。 該數量包含在該模組函式呼叫的函式中建立的物件。<br />-   對於程式行或指令，這是該程式行或指令配置的物件總數。|
 |**內含配置 %**|分析執行期間，模組、函式、程式行或指令的內含配置佔所有已配置物件的百分比。|
@@ -41,8 +41,8 @@ ms.locfileid: "74772723"
 |**專有位元組**|-   對於函式，這是該函式配置的位元組總數。 該數量不包含由此函式呼叫之函式所配置的位元組。<br />-   對於模組，這是該模組中的函式所配置的專有位元組總和。<br />-   對於程式行或指令，這是此程式行或指令配置的物件總數。|
 |**專有位元組 %**|分析執行期間，模組、函式、程式行或指令的專有位元組佔所有已配置位元組的百分比。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
-- [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [模組視圖 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [模組檢視](../profiling/modules-view-sampling-data.md)
 - [模組檢視](../profiling/modules-view-instrumentation-data.md)

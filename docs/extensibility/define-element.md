@@ -1,25 +1,25 @@
 ---
-title: 定義項目 |Microsoft Docs
+title: 定義元素 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Define
 - Define element (VSCT XML schema)
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d82bd5050955f69e23c71569a13ac1a5d428aef2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348139"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712266"
 ---
 # <a name="define-element"></a>定義項目
-定義的符號名稱和值組。 這個符號可以評估的條件式屬性。 如需詳細資訊，請參閱 <<c0> [ 條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。 另請參閱[Symbols 元素](../extensibility/symbols-element.md)。
+定義符號名稱和值對。 此符號可以通過條件屬性計算。 有關詳細資訊,請參閱[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。 另請參考[符號元素](../extensibility/symbols-element.md)。
 
 ## <a name="syntax"></a>語法
 
@@ -34,9 +34,9 @@ ms.locfileid: "66348139"
 
 |屬性|描述|
 |---------------|-----------------|
-|名稱|必要項。 符號名稱：<br /><br /> name="Mode"|
-|value|必要項。 符號的值：<br /><br /> value="Standard"|
-|條件|選擇性。 如需詳細資訊，請參閱 <<c0> [ 條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|NAME|必要。 符號的名稱:<br /><br /> 名稱="模式"|
+|value|必要。 符號的值:<br /><br /> 值="標準"|
+|條件|選擇性。 有關詳細資訊,請參閱[條件屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
  無。
@@ -45,7 +45,7 @@ ms.locfileid: "66348139"
 
 |元素|描述|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表命令的 VSPackage 提供整合式的開發環境 (IDE) 的所有項目。 例如，功能表項目、 功能表、 工具列和下拉式方塊。|
+|[指令表元素](../extensibility/commandtable-element.md)|定義表示 VS 套件向整合式開發環境 (IDE) 提供的命令的所有元素。 例如,功能表項、功能表、工具列和組合框。|
 
 ## <a name="example"></a>範例
 
@@ -55,4 +55,4 @@ ms.locfileid: "66348139"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [視覺化工作室指令表 (.vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

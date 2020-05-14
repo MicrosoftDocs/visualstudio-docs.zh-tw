@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b3f47f41466d8eb7ddf0a4700428b6e28500b61
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596303"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 參考
@@ -29,11 +29,11 @@ Windows Presentation Foundation (WPF) 擴充 Microsoft Build Engine (MSBuild) �
 
 ## <a name="in-this-section"></a>本節內容
 
-[WPF .targets 檔案](../msbuild/wpf-dot-targets-files.md)
+[WPF .目的檔案](../msbuild/wpf-dot-targets-files.md)
 
 描述 WPF .targets 檔案。
 
-[WPF MSBuild 工作參考](../msbuild/wpf-msbuild-task-reference.md)
+[WPF MSBuild 任務引用](../msbuild/wpf-msbuild-task-reference.md)
 
 列出可用的 WPF 建置工作。
 
@@ -57,6 +57,6 @@ Windows Presentation Foundation (WPF) 擴充 Microsoft Build Engine (MSBuild) �
 
 建置工作視窗組件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [ MSBuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b5f00b3e71f0deb15d6266640db39751f2ae22f
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76269095"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>在 Visual Studio 中編譯與建置
@@ -28,7 +28,7 @@ ms.locfileid: "76269095"
 | 建置方法 | 優點 |
 | --- |--- | --- |
 | IDE |- 立即建立組建並在偵錯工具中加以測試。<br />- 對 C++ 和 C# 專案執行多處理器組建。<br />- 自訂建置系統的不同層面。 |
-| CMake | -使用 CMake 工具建立專案<br />-在 Linux 和 Windows 平臺上使用相同的組建系統。 |
+| CMake | - 使用 CMake 工具生成專案<br />- 跨 Linux 和 Windows 平臺使用相同的構建系統。 |
 | MSBuild 命令列| - 無須安裝 Visual Studio 即可建置專案。<br />- 對所有專案類型執行多處理器建置。<br />- 自訂建置系統大部分的區域。|
 | Azure Pipelines | - 將建置流程自動化，這是持續整合/持續傳遞管線的一部分。<br />- 在每個組建套用自動化的測試。<br />- 在建置流程採用幾乎不受限制的雲端式資源。<br />- 修改建置工作流程，以及建立建置活動以執行深入自訂的工作。|
 
@@ -46,15 +46,15 @@ ms.locfileid: "76269095"
 之後，請參閱[在Visual Studio 中建置和清除專案與方案](building-and-cleaning-projects-and-solutions-in-visual-studio.md)來了解可對流程自訂的不同層面。 自訂包括[變更輸出目錄](how-to-change-the-build-output-directory.md)、[指定自訂建置事件](specifying-custom-build-events-in-visual-studio.md)、[管理專案相依性](how-to-create-and-remove-project-dependencies.md)、[管理組建記錄檔](how-to-view-save-and-configure-build-log-files.md)和[隱藏編譯器警告](how-to-suppress-compiler-warnings.md)。
 
 您可以從中探索其他各種工作：
-- [了解建置組態](understanding-build-configurations.md)
+- [瞭解組建組態](understanding-build-configurations.md)
 - [了解建置平台](understanding-build-platforms.md)
-- [管理專案及解決方案屬性](managing-project-and-solution-properties.md)。
+- [管理專案和解決方案屬性](managing-project-and-solution-properties.md)。
 - 使用 [C#](how-to-specify-build-events-csharp.md) 和 [Visual Basic](how-to-specify-build-events-visual-basic.md) 指定建置事件。
 - [設定建置選項](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [平行建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [建置 (編譯) 網站專案](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
 - [編譯與建置 (Visual Studio for Mac)](/visualstudio/mac/compiling-and-building)
-- [Visual Studio 中的 CMake 專案](/cpp/build/cmake-projects-in-visual-studio)
+- [在視覺工作室中製作專案](/cpp/build/cmake-projects-in-visual-studio)

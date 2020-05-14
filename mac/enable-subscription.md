@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
 ms.openlocfilehash: 2074207876df78bc6a268db909e5fa190073f9ba
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984043"
 ---
 # <a name="enable-subscription"></a>啟用訂用帳戶
@@ -28,7 +28,7 @@ Visual Studio for Mac 提供三種不同的訂用帳戶層級供您選擇，可�
 
 如果您的訂用帳戶已過期，則會有兩個選項：
 
-1. 更新您的訂閱 您可以瀏覽至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以更新您的訂閱。
+1. 更新您的訂閱 您可以通過流覽 來[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)續訂訂閱。
 
 2. 如果您有具有作用中訂用帳戶的其他帳戶，則可以將它新增至 Visual Studio for Mac，如[新增多個使用者帳戶](signing-in.md)一文中所述。 Visual Studio for Mac 會從您新增的所有帳戶中偵測到最適合的可用授權。
 
@@ -44,6 +44,6 @@ Visual Studio for Mac 提供三種不同的訂用帳戶層級供您選擇，可�
 
 如果已針對沒有網際網路連線的電腦購買了 Visual Studio Enterprise 2019 for Mac，您可以在不啟用的狀況下繼續使用 Visual Studio for Mac，但無法使用 Xamarin Inspector、Xamarin Profiler 和內嵌組件功能。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [登入 Visual Studio (Windows 上)](/visualstudio/ide/signing-in-to-visual-studio)
+- [登入 Visual Studio (在 Windows 上)](/visualstudio/ide/signing-in-to-visual-studio)

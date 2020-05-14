@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_RETVAL | Microsoft Docs
+title: METADATA_ADDRESS_RETVAL |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_RETVAL structure
 ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ff96d5ca9d292d9e2952b9a2e5e1f628b54d43b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f2437d10078eb623e063b3292d96ef9bb4a9cf64
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746341"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714266"
 ---
-# <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
-此結構表示從方法或函式的傳回值。
+# <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
+此結構表示方法或函數的返回值。
 
 ## <a name="syntax"></a>語法
 
@@ -47,28 +47,28 @@ public struct METADATA_ADDRESS_RETVAL {
 
 ## <a name="members"></a>成員
  `tokMethod`\
- 這個傳回值是針對方法的識別碼。
+ 此返回值所針對的方法的 ID。
 
  `dwCorType`\
- 傳回值的基底型別。 這是從值`CorElementType`.NET Framework SDK corhdr.h 檔案中定義的列舉型別。
+ 返回值的基本類型。 這是 .NET`CorElementType`框架 SDK corhdr.h 檔中定義的枚舉中的值。
 
  `dwSigSize`\
- 傳回值的簽章的大小 (儲存在`rgSig`)。
+ 返回值簽名的大小(存儲在中`rgSig`)。
 
  `rgSig`\
- 建構簽章的傳回值的位元組陣列。
+ 組成返回值簽名的位元組。
 
 ## <a name="remarks"></a>備註
- 此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_RETVAL`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。
+ 當`DEBUG_ADDRESS_UNION``ADDRESS_KIND_RETVAL`結構欄位設置為[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)舉中的值)`dwKind`時, 此結構是DEBUG_ADDRESS_UNION結構中的聯合的一部分。
 
 ## <a name="requirements"></a>需求
- 標頭： sh.h
+ 標題: sh.h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間:微軟.VisualStudio.調試器.互通
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

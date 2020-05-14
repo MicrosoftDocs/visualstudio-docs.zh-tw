@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2febef6987cf3440f92f6a6c505840cfe3ca3448
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579883"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步驟 2：建立隨機加法問題
@@ -31,7 +31,7 @@ ms.locfileid: "77579883"
 
 1. 在表單設計工具中選擇表單 (**Form1**)。
 
-2. 在功能表列上依序選擇 [檢視] > [程式碼]。
+2. 在功能表列上，選擇 **"查看** > **代碼**"。
 
      依您使用的程式設計語言而定，會出現 *Form1.cs* 或 *Form1.vb*，如此您就可以檢視表單的後置程式碼。
 
@@ -71,16 +71,16 @@ ms.locfileid: "77579883"
      您在物件後面輸入一個點時，IntelliSense 會顯示物件的成員清單，例如屬性、方法和事件。
 
     > [!NOTE]
-    > 當您使用 `Next()` 方法搭配 `Random` 物件時 (例如，當您呼叫 `randomizer.Next(50)` 時)，會得到小於 50 (從 0 到 49) 的隨機數字。 在這個範例中，您呼叫了 `randomizer.Next(51)`。 您使用 51 而不是 50，如此這兩個數字就會相加並得出從 0 到 100 的答案。 如果您將 50 傳給 `Next()` 方法，它會選擇 0 至 49 的數字，所以可能的最大答案是 98，而不是 100。 當方法中的前兩個陳述式執行之後，**addend1** 和 **addend2** 這兩個整數變數會各自保存一個從 0 至 50 的隨機數字。 這個螢幕擷取畫面C#顯示程式碼，但 IntelliSense 的運作方式與 Visual Basic 相同。
+    > 當您使用 `Next()` 方法搭配 `Random` 物件時 (例如，當您呼叫 `randomizer.Next(50)` 時)，會得到小於 50 (從 0 到 49) 的隨機數字。 在這個範例中，您呼叫了 `randomizer.Next(51)`。 您使用 51 而不是 50，如此這兩個數字就會相加並得出從 0 到 100 的答案。 如果您將 50 傳給 `Next()` 方法，它會選擇 0 至 49 的數字，所以可能的最大答案是 98，而不是 100。 當方法中的前兩個陳述式執行之後，**addend1** 和 **addend2** 這兩個整數變數會各自保存一個從 0 至 50 的隨機數字。 此螢幕截圖顯示 C# 代碼，但 IntelliSense 的工作方式與視覺基本版相同。
 
      仔細查看這些陳述式。
 
      [!code-csharp[VbExpressTutorial3Step2#18](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_4.cs)]
      [!code-vb[VbExpressTutorial3Step2#18](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_4.vb)]
 
-     這些陳述式會設定 [plusLeftLabel] 和 [plusRightLabel] 的 [Text] 屬性，讓它們顯示兩個隨機數字。 您必須使用整數的 `ToString()` 方法將數字轉換為文字。 在程式設計中，字串表示文字。 Label 控制項只會顯示文字，不會顯示數字。
+     這些陳述式會設定 [plusLeftLabel]**** 和 [plusRightLabel]**** 的 [Text]**** 屬性，讓它們顯示兩個隨機數字。 您必須使用整數的 `ToString()` 方法將數字轉換為文字。 在程式設計中，字串表示文字。 Label 控制項只會顯示文字，不會顯示數字。
 
-6. 在設計視窗中，按兩下 [開始] 按鈕，或是選擇該按鈕，然後選擇 **Enter** 鍵。
+6. 在設計視窗中，按兩下 [開始]**** 按鈕，或是選擇該按鈕，然後選擇 **Enter** 鍵。
 
      當受測者選擇這個按鈕時，測驗就會開始，而您剛加入了 Click 事件處理常式來實作該行為。
 
@@ -89,19 +89,19 @@ ms.locfileid: "77579883"
      [!code-csharp[VbExpressTutorial3Step2#4](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_5.cs)]
      [!code-vb[VbExpressTutorial3Step2#4](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_5.vb)]
 
-     第一個陳述式會呼叫新的 `StartTheQuiz()` 方法。 第二個陳述式會將 [startButton] 控制項的 [Enabled] 屬性設定為 [False]，如此受測者就無法在測驗期間選擇該按鈕。
+     第一個陳述式會呼叫新的 `StartTheQuiz()` 方法。 第二個陳述式會將 [startButton]**** 控制項的 [Enabled]**** 屬性設定為 [False]****，如此受測者就無法在測驗期間選擇該按鈕。
 
-8. 儲存您的程式碼，並執行程式碼，然後選擇 [開始] 按鈕。
+8. 儲存您的程式碼，並執行程式碼，然後選擇 [開始]**** 按鈕。
 
-     此時會出現隨機加法問題，如下列螢幕擷取畫面所示。
+     出現隨機添加問題，如下圖所示。
 
      ![隨機加法問題](../ide/media/express_additionproblem.png)<br/>
 *隨機加法問題*
 
      在本教學課程的下一個步驟中，您將加入總和。
 
-## <a name="to-continue-or-review"></a>繼續或檢視
+## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移至下一個教學課程步驟，請參閱 **[步驟3：新增倒數計時器](../ide/step-3-add-a-countdown-timer.md)** 。
+- 要轉到下一個教程步驟，請參閱**[步驟 3：添加倒計時計時器](../ide/step-3-add-a-countdown-timer.md)**。
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 1：建立專案並將標籤新增至表單](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)。

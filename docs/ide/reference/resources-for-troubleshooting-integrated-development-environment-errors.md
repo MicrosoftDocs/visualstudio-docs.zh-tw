@@ -94,10 +94,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593612"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於針對整合式開發環境錯誤進行疑難排解的資源
@@ -119,9 +119,9 @@ ms.locfileid: "75593612"
 
 ## <a name="product-support"></a>產品支援
 
-如果您在嘗試其他資源之後仍有疑問，則可以前往 [Microsoft 支援服務](https://support.microsoft.com/en-us)網站，連絡 Microsoft 支援服務。 如需區域中可用產品支援的詳細資訊，請參閱[Visual Studio 意見反應選項](../../ide/feedback-options.md)頁面。
+如果您在嘗試其他資源之後仍有疑問，則可以前往 [Microsoft 支援服務](https://support.microsoft.com/en-us)網站，連絡 Microsoft 支援服務。 有關您所在地區提供的產品支援的資訊，請參閱[視覺化工作室回饋選項](../../ide/feedback-options.md)頁面。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [對網路相關錯誤或 Proxy 錯誤進行疑難排解](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [疑難排解 (Visual Studio for Mac)](/visualstudio/mac/troubleshooting)

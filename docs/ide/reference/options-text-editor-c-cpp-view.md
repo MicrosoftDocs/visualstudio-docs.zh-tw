@@ -12,17 +12,17 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278688"
 ---
 # <a name="options-text-editor-cc-view"></a>選項、文字編輯器、C/C++、檢視
 
 在使用 C 或 C++ 進行程式設計時，請使用這些屬性頁變更程式碼編輯器的預設行為。
 
-若要存取此屬性頁面，請選擇 [工具] > [選項] 並展開 [文字編輯器]、[C/C++]，然後選擇 [檢視]。
+要訪問此屬性頁，請選擇 **"工具** > **選項**"並展開**文字編輯器**，然後展開**C/C++**，然後選擇 **"查看**"。
 
 ## <a name="code-squiggles"></a>程式碼波浪線
 
@@ -56,5 +56,5 @@ ms.locfileid: "77278688"
 
 ## <a name="see-also"></a>另請參閱
 
-- [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)
-- [在 C++ 中重構 (VC 部落格)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)
+- [設置特定于語言的編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)
+- [Refactoring in C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/) (在 C++ 中重構 (VC 部落格))

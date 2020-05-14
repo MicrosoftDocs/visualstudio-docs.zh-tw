@@ -1,5 +1,5 @@
 ---
-title: 步驟5：新增 NumericUpDown 控制項的 Enter 事件處理常式
+title: 步驟 5：添加數位向上向下控制項的輸入事件處理常式
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 17fb9ba8e82739ddb0a420f52b6f7f945a6454b8
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579839"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步驟 5：加入 NumericUpDown 控制項的事件處理常式
@@ -39,15 +39,15 @@ ms.locfileid: "77579839"
 
      在解決此問題之前，請先思考到底發生什麼事。 請思考，當您輸入 **3** 時，為什麼 **0** 沒有消失，以及為什麼 **350** 變成 **100**，但不是立即變更。
 
-     這個行為似乎有些奇怪，不過對於程式碼邏輯而言是合理的。 當您選擇 [開始] 按鈕時，它的 [Enabled] 屬性會設定為 [False]，所以按鈕會呈現灰色且無法使用。 您的程式會將目前的選取項目 (焦點) 切換到具有次低 TabIndex 值的控制項，也就是加法問題的 NumericUpDown 控制項。 當您使用 **Tab** 鍵移至 NumericUpDown 控制項時，游標會自動定位在控制項開頭，這就是為什麼您輸入的數字會從左邊出現，而不是從右邊出現的原因。 如果您指定的值大於 [MaximumValue] 屬性的值 (該值設為 100)，該屬性的值就會取代您輸入的數字。
+     這個行為似乎有些奇怪，不過對於程式碼邏輯而言是合理的。 當您選擇 [開始]**** 按鈕時，它的 [Enabled]**** 屬性會設定為 [False]****，所以按鈕會呈現灰色且無法使用。 您的程式會將目前的選取項目 (焦點) 切換到具有次低 TabIndex 值的控制項，也就是加法問題的 NumericUpDown 控制項。 當您使用 **Tab** 鍵移至 NumericUpDown 控制項時，游標會自動定位在控制項開頭，這就是為什麼您輸入的數字會從左邊出現，而不是從右邊出現的原因。 如果您指定的值大於 [MaximumValue]**** 屬性的值 (該值設為 100)，該屬性的值就會取代您輸入的數字。
 
 ## <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>若要加入 NumericUpDown 控制項的 Enter 事件處理常式
 
-1. 選擇表單上的第一個 **NumericUpDown** 控制項 (名為 "sum")，然後在 [屬性] 對話方塊中選擇工具列上的 [事件] 圖示。
+1. 選擇表單上的第一個 **NumericUpDown** 控制項 (名為 "sum")，然後在 [屬性]**** 對話方塊中選擇工具列上的 [事件]**** 圖示。
 
    ![屬性工具列中的事件按鈕](media/control-properties-events.png)
 
-   [屬性] 對話方塊中的 [事件] 索引標籤會顯示可以針對表單上所選擇項目回應 (處理) 的所有事件。 由於您選擇了 NumericUpDown 控制項，因此所有列出的事件都會與該控制項相關。
+   [屬性]**** 對話方塊中的 [事件]**** 索引標籤會顯示可以針對表單上所選擇項目回應 (處理) 的所有事件。 由於您選擇了 NumericUpDown 控制項，因此所有列出的事件都會與該控制項相關。
 
 2. 選擇 **Enter** 事件、輸入 `answer_Enter`，然後按 **Enter** 鍵。
 
@@ -55,20 +55,20 @@ ms.locfileid: "77579839"
 
    現在您已為 sum NumericUpDown 控制項加入 Enter 事件處理常式，並且將處理常式命名為 **answer_Enter**。
 
-3. 在 **answer_Enter** 事件處理常式的方法中新增下列程式碼：
+3. 在**answer_Enter**事件處理常式的方法中，添加以下代碼：
 
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
      [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
-     這個程式碼看似複雜，但是逐步查看後就能了解它。 首先，查看方法的頂端：C# 中的 `object sender` 或 Visual Basic 中的 `sender As System.Object`。 這個參數會參考要引發其事件的物件，稱為 sender。 在這個案例中，sender 物件為 NumericUpDown 控制項。 因此，在方法的第一行中，您會指定 sender 不是一般物件，而是更具體的 NumericUpDown 控制項 （每個 NumericUpDown 控制項都是物件，但並非每個物件都是 NumericUpDown 控制項）。NumericUpDown 控制項在這個方法中會命名為**answerBox** ，因為它將用於表單上的所有 NumericUpDown 控制項，而不只是 sum NumericUpDown 控制項。 由於您是在這個方法中宣告 answerBox 變數，因此其範圍僅適用於這個方法。 換句話說，變數只能夠在這個方法內使用。
+     這個程式碼看似複雜，但是逐步查看後就能了解它。 首先，查看方法的頂端：C# 中的 `object sender` 或 Visual Basic 中的 `sender As System.Object`。 這個參數會參考要引發其事件的物件，稱為 sender。 在這個案例中，sender 物件為 NumericUpDown 控制項。 因此，在方法的第一行中，您會指定 sender 不是一般物件，而是更具體的 NumericUpDown 控制項  （每個數位向上向下控制項都是一個物件，但並不是每個物件都是"數位向上向下"控制項。此方法中的數位 UpDown 控制項名為**answerBox，** 因為它將用於表單上的所有數位向上向下控制項，而不僅僅是數位向上向下控制項的總和。 由於您是在這個方法中宣告 answerBox 變數，因此其範圍僅適用於這個方法。 換句話說，變數只能夠在這個方法內使用。
 
      下一行驗證 answerBox 是否已成功從物件轉換 (轉型) 為 NumericUpDown 控制項。 如果轉換失敗，變數的值會是 `null` (C#) 或 `Nothing` (Visual Basic)。 第三行會取得 NumericUpDown 控制項中所出現答案的長度，而第四行會根據這個長度選取控制項中的目前值。 現在，當受測者選擇控制項時，Visual Studio 就會引發這個事件，進而選取目前的答案。 一旦受測者開始輸入不同的答案，就會立即清除上一個答案，並以新的答案取代。
 
 4. 在 **Windows Forms 設計工具**中，選擇 difference **NumericUpDown** 控制項。
 
-5. 在 [屬性] 對話方塊的 [事件] 頁面中，向下捲動至 [Enter] 事件，並選擇該列結尾的下拉箭號，然後選擇您剛才新增的 `answer_Enter` 事件處理常式。
+5. 在 [屬性]**** 對話方塊的 [事件]**** 頁面中，向下捲動至 [Enter]**** 事件，並選擇該列結尾的下拉箭號，然後選擇您剛才新增的 `answer_Enter` 事件處理常式。
 
 6. 針對 product (積數) 和 quotient (商數) NumericUpDown 控制項重複上述步驟。
 
@@ -76,8 +76,8 @@ ms.locfileid: "77579839"
 
      當您選擇 **NumericUpDown** 控制項時，現有的值就會自動選取，然後在您開始輸入不同的值時清除。
 
-## <a name="to-continue-or-review"></a>繼續或檢視
+## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移至下一個教學課程步驟，請參閱 **[步驟6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)** 。
+- 要轉到下一個教程步驟，請參閱**[步驟 6：添加減法問題](../ide/step-6-add-a-subtraction-problem.md)**。
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 4︰新增 CheckTheAnswer() 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)。

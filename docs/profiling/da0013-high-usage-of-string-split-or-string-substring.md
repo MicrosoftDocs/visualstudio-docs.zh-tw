@@ -18,21 +18,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d42469ac5236a41eda96af5d1fe896a5ed84a321
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779399"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013：String.Split 或 String.Substring 的用量高
 
 |||
 |-|-|
-|規則識別碼|DA0013|
-|Category|.NET Framework 使用方式指導|
+|規則 ID|DA0013|
+|類別|.NET Framework 使用方式指導|
 |分析方法|取樣|
 |訊息|考慮減少使用 String.Split 和 String.Substring 函式。|
-|規則類型|警告|
+|規則型別|警告|
 
 ## <a name="cause"></a>原因
  呼叫 System.String.Split 或 System.String.Substring 方法是分析資料的重要部分。 如果您要測試某個子字串是否存在字串中，請考慮使用 System.String.IndexOf 或 System.String.IndexOfAny。
@@ -43,4 +43,4 @@ ms.locfileid: "74779399"
  如果在應用程式中管理記憶體配置很重要，請考慮使用 String.Split 和 String.Substr 方法的替代方案。 例如，您可以使用 IndexOf 或 IndexOfAny 方法在字元 String 內尋找特定子字串，而不需建立新的 String 類別執行個體。
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
- 按兩下 [錯誤清單] 視窗中的訊息，巡覽至取樣分析資料的[函式詳細資料檢視](../profiling/function-details-view.md)。 檢查呼叫函式，找出最常使用 System.String.Split 或 System.String.Substr 方法的程式區段。 可能的話，請使用 IndexOf 或 IndexOfAny 方法在字元 String 字串內尋找特定子字串，而不需建立新的 String 類別執行個體。
+ 按兩下 **"錯誤清單"** 視窗中的消息，以導航到採樣設定檔資料的["功能詳細資訊視圖](../profiling/function-details-view.md)"。 檢查呼叫函式，找出最常使用 System.String.Split 或 System.String.Substr 方法的程式區段。 可能的話，請使用 IndexOf 或 IndexOfAny 方法在字元 String 字串內尋找特定子字串，而不需建立新的 String 類別執行個體。

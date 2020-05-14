@@ -56,15 +56,15 @@
       href: walkthrough-capturing-graphics-information-programmatically.md
     - name: 逐步解說：因裝置狀態而遺漏的物件
       href: walkthrough-missing-objects-due-to-device-state.md
-    - name: 逐步解說：因頂點著色而遺漏的物件
+    - name: 逐步解說：因端點著色而遺漏的物件
       href: walkthrough-missing-objects-due-to-vertex-shading.md
     - name: 逐步解說：因管線設定錯誤而遺漏的物件
       href: walkthrough-missing-objects-due-to-misconfigured-pipeline.md
-    - name: 逐步解說：對因著色而產生的顯示錯誤進行偵錯
+    - name: 逐步解說：偵錯因著色而產生的顯示錯誤
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
-    - name: 逐步解說：使用圖形診斷對計算著色器進行偵錯
+    - name: 逐步解說：使用圖形診斷來偵錯計算著色器
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: 作法：變更圖形診斷播放電腦
+    - name: 如何：變更圖形診斷播放電腦
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: 參考 (程式設計擷取)
   items:

@@ -1,28 +1,28 @@
 ---
-title: IDebugArrayObject2::GetBaseIndices | Microsoft Docs
+title: IDebugarray物件2::獲取基本索引 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetBaseIndices
 - IDebugArrayObject2::GetBaseIndices
 ms.assetid: 882951a2-3da0-49bf-8d1e-7daedd13ffe6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04252ed40cd0ac2c0e5f41bc1104104aeee302c4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 925ce3a7bcce9f787e02c2bd2714f8b26d8cec26
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317565"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736142"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
-擷取陣列中指定的維度數目的每個索引的基底的索引 （下限）。
+給定陣列中的維度數,檢索每個索引的基本索引(下限)。
 
 ## <a name="syntax"></a>語法
 
@@ -42,16 +42,16 @@ int GetBaseIndices (
 
 ## <a name="parameters"></a>參數
 `dwRank`\
-[in]陣列的維度 （陣序） 數目。
+[在]陣列的維度(排名)數。
 
 `dwIndices`\
-[out]陣列基底索引 （下限）。
+[出]陣列的基本索引(下限)。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 例如，此函式會如以下所建立的陣列傳回 '5'C#程式碼：
+ 例如,此函數將為以下 C# 代碼建立的陣列傳回「5」:
 
 ```
 int[] lengths = { 12 };

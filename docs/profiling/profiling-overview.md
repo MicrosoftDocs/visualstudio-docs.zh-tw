@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c0d1c8cfb94b74f54eaaddd6b8d6d0fd17216b94
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77577956"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Visual Studio 中用於測量效能的工具概觀
@@ -27,4 +27,4 @@ ms.locfileid: "77577956"
 
 * [分析記憶體使用量](../profiling/memory-usage.md)以找出效能瓶頸。
 
-* [使用 .Net 物件組態工具來分析記憶體使用量](../profiling/dotnet-alloc-tool.md)，以識別 .net 應用程式中的效能瓶頸。
+* [使用 .NET 物件分配工具分析記憶體使用方式](../profiling/dotnet-alloc-tool.md)，以識別 .NET 應用中的性能瓶頸。

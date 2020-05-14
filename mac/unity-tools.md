@@ -6,10 +6,10 @@ ms.author: johmil
 ms.date: 10/25/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: c411ae1730c2bd9b4f92729a8480d7fa399d0894
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74797238"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
@@ -48,11 +48,11 @@ Visual Studio for Mac Tools for Unity 支援預期從 Visual Studio 取得的所
 
 使用[重新命名、重構和內容動作](refactoring.md)的快速功能表和鍵盤快速鍵，來撰寫更多實用程式碼。
 
-### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>適用于 Unity 的 Roslyn 診斷和快速修正
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>羅斯林診斷和快速修復統一
 
-撰寫更好的程式碼，以 Visual Studio for Mac 深入瞭解 Unity 專案，以取得最佳作法。 
+編寫更好的代碼，通過 Visual Studio 捕獲最佳實踐，以便 Mac 深入瞭解 Unity 專案。 
 
-![VS for Mac 重構字串與 CompareTag 比較](media/using-vsmac-tools-unity-image9.png)
+![VS 用於 Mac 重構字串與比較標籤的比較](media/using-vsmac-tools-unity-image9.png)
 
 ### <a name="browse-and-add-new-files"></a>瀏覽並新增檔案
 

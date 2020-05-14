@@ -1,5 +1,5 @@
 ---
-title: 選項、文字編輯器、C#、進階
+title: 進階、C#、文字編輯器、選項
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -10,31 +10,31 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8f6bd03b9d652909022adab169682160ae541677
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.openlocfilehash: d0e04a011612cdebebd244fc061981b713b858a7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76124500"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431484"
 ---
-# <a name="options-text-editor-c-advanced"></a>選項、文字編輯器、C#、進階
+# <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 
-使用 [進階] 選項頁面來修改 C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 若要存取此選項頁面，請選擇 [工具] > [選項]，然後選擇 [文字編輯器] > [C#] > [進階]。
+使用 [進階]**** 選項頁面來修改 C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 要訪問此選項頁，請選擇 **"工具** > **選項**"，然後選擇**文字編輯器** > **C#** > **高級**。
 
 > [!NOTE]
 > 並非所有選項都會列在此處。
 
 ## <a name="analysis"></a>分析
 
-- 啟用完整解決方案分析
+- 即時代碼分析或背景分析範圍
 
-   除了開啟程式碼檔案之外，您也必須為解決方案中的所有檔案啟用程式法分析。 如需詳細資訊，請參閱[完整解決方案分析](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)。
+   配置託管代碼的背景分析範圍。 有關詳細資訊，請參閱[如何：為託管代碼配置即時代碼分析範圍](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
 
 ## <a name="using-directives"></a>using 指示詞
 
 - 排序 using 時先放置 'System' 指示詞
 
-   選取後，快顯功能表中的 [移除並排序 Using] 命令會對 `using` 指示詞進行排序，並將 'System' 命名空間置於清單頂端。
+   選中後，按右鍵功能表中的 **"刪除和排序使用"** 命令對`using`指令進行排序，並將"系統"命名空間放在清單頂部。
 
    排序之前：
 
@@ -60,7 +60,7 @@ ms.locfileid: "76124500"
 
 - 使用指示詞群組來進行分隔
 
-   選取後，快顯功能表中的 [移除並排序 Using] 命令會透過在具有相同根命名空間的指示詞群組之間插入空白行來分隔 `using` 指示詞。
+   選取後，快顯功能表中的 [移除並排序 Using]**** 命令會透過在具有相同根命名空間的指示詞群組之間插入空白行來分隔 `using` 指示詞。
 
    排序之前：
 
@@ -87,7 +87,7 @@ ms.locfileid: "76124500"
    using System.Linq;
    ```
 
-- 針對 .NET Framework 元件中的類型建議 using
+- 建議使用 .NET 框架程式集中的類型
 - 為 NuGet 套件中的類型建議 Using
 
    選取這些選項後，[快速動作](../quick-actions.md)可用來安裝 NuGet 套件，並為未參考的類型新增 `using` 指示詞。
@@ -118,7 +118,7 @@ ms.locfileid: "76124500"
 
 ## <a name="block-structure-guides"></a>區塊結構輔助線
 
-選取這些核取方塊可在程式碼中的大括號 ( **{}** ) 之間顯示虛線垂直線。 然後，您可以輕鬆查看宣告層級和程式碼層級建構的個別程式碼區塊。
+選擇這些核取方塊以在代碼中的捲曲括弧 （**{}**） 之間顯示虛線垂直線。 然後，您可以輕鬆查看宣告層級和程式碼層級建構的個別程式碼區塊。
 
 ## <a name="editor-help"></a>編輯器說明
 
@@ -126,10 +126,10 @@ ms.locfileid: "76124500"
 
    選取此選項時，會在您鍵入 `///` 註解簡介後插入 XML 文件註解的 XML 元素。 如需有關 XML 文件的詳細資訊，請參閱 [XML 文件註解 (C# 程式設計指南)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：在文件產生中插入 XML 註解](../../ide/reference/generate-xml-documentation-comments.md)
-- [XML 文件註解 (C# 程式設計手冊)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
+- [XML 文檔注釋（C# 程式設計指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [使用 XML 註解記錄您的程式碼 (C# 指南)](/dotnet/csharp/codedoc)
-- [設定語言專用編輯器的選項](../../ide/reference/setting-language-specific-editor-options.md)
+- [設置特定于語言的編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)
 - [C# IntelliSense](../../ide/visual-csharp-intellisense.md)

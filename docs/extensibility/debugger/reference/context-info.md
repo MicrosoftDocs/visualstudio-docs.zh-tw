@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO | Microsoft Docs
+title: CONTEXT_INFO |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO structure
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6c50d5ea930f05d22b68416978909cceca17727d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4838df34c14b936af15b8a7a582a6d30ea12bee1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346457"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737563"
 ---
-# <a name="contextinfo"></a>CONTEXT_INFO
-此結構描述的記憶體內容或程式碼內容。
+# <a name="context_info"></a>CONTEXT_INFO
+此結構描述記憶體上下文或代碼上下文。
 
 ## <a name="syntax"></a>語法
 
@@ -53,40 +53,40 @@ public struct CONTEXT_INFO {
 
 ## <a name="members"></a>成員
 `dwFields`\
-從他的旗標的組合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)列舉，指定哪些欄位都已填寫<strong>。</strong>
+[他CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)的旗標中的旗標的組合,用於指定填寫哪些欄位<strong>。</strong>
 
 `bstrModuleUrl`\
-內容所在位置的模組名稱。
+上下文所在的模組的名稱。
 
 `bstrFunction`\
-函式名稱，其內容所在的位置。
+上下文所在的函數名稱。
 
 `posFunctionOffset`\
-A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，辨識與程式碼內容相關聯的函式的行和資料行位移。
+標識與代碼上下文關聯的函數的行和列偏移的[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構。
 
 `bstrAddress`\
-指定之內容所在的程式碼中的位址。
+給定上下文所在的代碼中的位址。
 
 `bstrAddressOffset`\
-在指定的內容所在的程式碼中的位址位移。
+給定上下文所在的代碼中位址的偏移量。
 
 `bstrAddressAbsolute`\
-指定之內容所在的記憶體中的絕對位址。
+給定上下文所在的記憶體中的絕對位址。
 
 ## <a name="remarks"></a>備註
-此結構會從呼叫傳回[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)方法。
+此結構從對[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)方法的調用返回。
 
-此結構的典型用法是支援**記憶體**偵錯視窗。
+此結構的典型用途是支援**記憶體**調試視窗。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標題: msdbg.h
 
-命名空間：Microsoft.VisualStudio.Debugger.Interop
+命名空間:微軟.VisualStudio.調試器.互通
 
-組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+程式集:微軟.VisualStudio.除錯器.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
 - [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

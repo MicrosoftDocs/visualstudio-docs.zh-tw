@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 8fc43cef8526b2ca79bb0b88a1d56ef4f4a2a65a
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77275262"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio 安裝的命令列參數範例
@@ -51,7 +51,7 @@ ms.locfileid: "77275262"
    ```
 
   > [!NOTE]
-  > 這兩個命令都是建議的。 第一個命令更新 Visual Studio 安裝程式。 第二個命令更新 Visual Studio 執行個體。 若要避免 [使用者帳戶控制] 對話方塊，請以系統管理員身分執行命令提示字元。
+  > 建議使用這兩個命令。 第一個命令更新 Visual Studio 安裝程式。 第二個命令更新 Visual Studio 執行個體。 若要避免 [使用者帳戶控制] 對話方塊，請以系統管理員身分執行命令提示字元。
 
 * 使用法文語言套件以無訊息方式安裝 Visual Studio 的桌面執行個體，並只在安裝產品時傳回。
 
@@ -64,7 +64,7 @@ ms.locfileid: "77275262"
 
 ## <a name="using---wait"></a>使用 --wait
 
-* 在批次檔或指令碼中使用，以等候 Visual Studio 安裝程式完成，然後再執行下一個命令。 針對批次檔，`%ERRORLEVEL%` 環境變數會包含命令的傳回值，如[使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 頁面中所述。 有些命令公用程式需要額外的參數來等候完成，以及取得安裝程式的傳回值。 以下為與 PowerShell 指令碼命令 'Start-Process' 搭配使用的其他參數範例：
+* 在批次檔或指令碼中使用，以等候 Visual Studio 安裝程式完成，然後再執行下一個命令。 對於批次檔，`%ERRORLEVEL%`環境變數將包含命令的傳回值，如["使用命令列"參數中記錄以安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)頁。 有些命令公用程式需要額外的參數來等候完成，以及取得安裝程式的傳回值。 以下為與 PowerShell 指令碼命令 'Start-Process' 搭配使用的其他參數範例：
 
    ```cmd
    start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
@@ -223,7 +223,7 @@ ms.locfileid: "77275262"
 
 ## <a name="see-also"></a>另請參閱
 
-* [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [建立 Visual Studio 的離線安裝](create-an-offline-installation-of-visual-studio.md)
+* [視覺工作室管理員指南](visual-studio-administrator-guide.md)
+* [使用命令列參數安裝視覺化工作室](use-command-line-parameters-to-install-visual-studio.md)
+* [創建視覺化工作室的離線安裝](create-an-offline-installation-of-visual-studio.md)
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)

@@ -1,61 +1,61 @@
 ---
-title: 程式碼資訊清單 |Microsoft Docs
+title: 向代碼清單 |微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9d7662579ae00538c211fa3cb92cc181b6a97a8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 768561ef289f0f652f082d40ee9856843721f1ff
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328593"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707260"
 ---
 # <a name="manifest-to-code"></a>資訊清單至程式碼
-資訊清單以程式碼工具是 Visual Studio 映像服務採用.imagemanifest 檔案，並產生包裝函式的檔案或檔案參考中的映像資訊清單的值的主控台應用程式C++， C#，適用於 Visual Studio 的 VB 或.vsct 檔案延伸模組。 此工具會產生可用於從 Visual Studio 映像服務直接提出要求的映像或傳遞到 Api 的資訊清單的值，如果程式碼不會處理任何自己的 UI 和轉譯的包裝函式檔案。
+"向代碼清單"工具是一個控制台應用程式,它為 Visual Studio 影像服務獲取 .imagemanifest 檔,並生成包裝檔或檔,用於引用影像清單的值,用於 C++、C#、VB 或 .vsct 檔案,用於 Visual Studio 擴展名。 此工具生成包裝檔,可用於直接從 Visual Studio 影像服務請求圖像,或者如果代碼不處理其自己的任何 UI 和呈現,則用於透過 API 傳遞清單值。
 
-## <a name="how-to-use-the-tool"></a>如何使用工具
+## <a name="how-to-use-the-tool"></a>如何使用該工具
  **語法**
 
- ManifestToCode /manifest:\<映像資訊清單檔案 > /language:\<程式碼語言 >\<選擇性引數 >
+ 清單代碼/清單:\<影像清單檔>/語言\<: 程式碼語言\<> 可選Args>
 
  **引數**
 
 ||||
 |-|-|-|
-|**交換器名稱**|**備註**|**必要或選用**|
-|/manifest|若要建立或更新的程式碼包裝函式使用映像資訊清單的路徑。|必要|
-|/language|要在其中產生的程式碼包裝函式語言。<br /><br /> 有效值：CPP、 C++，CS、 CSharp、 C#，VB 或 VSCT 值不區分大小寫。<br /><br /> VSCT 語言則會忽略選項、 /monikerClass、 /classAccess 和 /namespace 選項。|必要|
-|/imageIdClass|ImageIdClass 和相關聯的工具所建立的檔案名稱。 針對C++語言選項，.h 檔案產生。<br /><br /> 預設：\<資訊清單路徑 > \MyImageIds。\<l a n g e >|Optional|
-|/monikerClass|MonikerClass 和相關聯的工具所建立的檔案名稱。 針對C++語言選項，.h 檔案產生。 這會忽略 VSCT 語言。<br /><br /> 預設：\<資訊清單路徑 > \MyMonikers。\<l a n g e >|Optional|
-|/classAccess|ImageIdClass 和 monikerClass 存取修飾詞。 請確定所指定語言的存取修飾詞無效。 這會忽略 VSCT 語言選項。<br /><br /> 預設：Public|Optional|
-|/namespace|在程式碼包裝函式中定義的命名空間。 這會忽略 VSCT 語言選項。 可能是 '。 ':: ' 是有效的命名空間的分隔符號，不論所選擇的語言選項。<br /><br /> 預設：MyImages|Optional|
-|/noLogo|設定這個旗標，就會停止列印的產品和著作權資訊。|Optional|
-|/?|列印出說明資訊。|Optional|
-|/help|列印出說明資訊。|Optional|
+|**切換名稱**|**注意**|**必要或選擇**|
+|/清單|用於創建或更新代碼包裝器的圖像清單的路徑。|必要|
+|/語言|生成代碼包裝器的語言。<br /><br /> 有效值:CPP、C++、CS、C夏普、C#、VB 或 VSCT 這些值不區分大小寫。<br /><br /> 對於 VSCT 語言選項,將忽略 /monikerClass、/classAccess 和 /命名空間選項。|必要|
+|/影像 IdClass|圖像 IdClass 的名稱和工具創建的關聯檔。 對於C++語言選項,僅生成 .h 檔。<br /><br /> 默認值:\<清單路徑>_MyImageIds。\<朗·特特·>|選用|
+|/名稱類別|名字物件類的名稱和工具創建的關聯檔。 對於C++語言選項,僅生成 .h 檔。 對於 VSCT 語言,將忽略這一點。<br /><br /> 默認值:\<清單路徑>_MyMonikers。\<朗·特特·>|選用|
+|/類訪問|圖像 IdClass 和名字類別的訪問修改器。 確保訪問修改器對給定語言有效。 對於 VSCT 語言選項,將忽略此選項。<br /><br /> 預設值:公共|選用|
+|/命名空間|在代碼包裝器中定義的命名空間。 對於 VSCT 語言選項,將忽略此選項。 無論選擇何種語言選項,'.'或"::"都是有效的命名空間分隔符。<br /><br /> 預設值:我的影像|選用|
+|/noLogo|設置此標誌將停止列印產品和版權資訊。|選用|
+|/?|列印説明資訊。|選用|
+|/help|列印説明資訊。|選用|
 
  **範例**
 
-- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp
+- 清單代碼/清單:D:\Mymanifest.圖像清單/語言:CSharp
 
-- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace： 我:: 命名空間 /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend
+- 清單Tocode/清單:D:\MyManifest.imagemanifest/語言:C++/命名空間:我的:::名稱空間/圖像IdClass:MyImageIds/名字類別:MyMonikers/classAccess:朋友
 
-- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds
+- 清單代碼/清單:D:\MyManifest.圖像清單/語言:VSCT/圖像IdClass:MyImageIds
 
 ## <a name="notes"></a>注意
 
-- 我們建議您使用這項工具與資源 工具的資訊清單所產生的映像資訊清單。
+- 我們建議您將此工具與「來自資源清單」工具生成的圖像清單一起使用。
 
-- 此工具只會查看符號項目，以產生程式碼包裝函式。 如果映像資訊清單包含沒有符號，產生的程式碼包裝函式會是空的。 如果沒有映像或映像資訊清單中不會使用符號的映像，他們將會排除從程式碼包裝函式。
+- 該工具僅查看符號項目以生成代碼包裝器。 如果圖像清單不包含符號,則生成的代碼包裝器將為空。 如果圖像清單中有一個不使用符號的圖像或圖像集,則它們將從代碼包裝器中排除。
 
 ## <a name="sample-output"></a>範例輸出
- **C# 包裝函式**
+ **C# 包裝**
 
- 一對簡單的映像識別碼和影像 moniker 類別的 C# 會類似下列程式碼：
+ C# 的一對簡單影像 ID 和影像名稱物件類別將類似於以下代碼:
 
 ```csharp
 //-----------------------------------------------------------------------------
@@ -96,9 +96,9 @@ namespace MyImages
 }
 ```
 
- **C++包裝函式**
+ **C++包裝**
 
- 一對簡單的映像識別碼和映像的 moniker 類別，如C++將會類似於下列程式碼：
+ 一對用於C++的簡單影像 ID 和影像名字物件類別將類似於以下代碼:
 
 ```cpp
 //-----------------------------------------------------------------------------
@@ -155,9 +155,9 @@ __declspec(selectany) const ImageMoniker MyMonikers::MyImage2 = { MyImageIds::As
 }
 ```
 
- **Visual Basic 包裝函式**
+ **可視基本包裝器**
 
- 一對簡單的映像識別碼和影像 moniker 類別的 Visual Basic 會類似下列程式碼：
+ Visual Basic 的一對簡單影像 ID 和影像名稱物件類別將類似於以下代碼:
 
 ```vb
 ' -----------------------------------------------------------------------------
@@ -211,9 +211,9 @@ Namespace MyImages
 End Namespace
 ```
 
- **VSCT 包裝函式**
+ **VSCT 包裝器**
 
- .Vsct 檔案的映像識別碼的一組會如下所示：
+ .vsct 檔案的圖像 ID 會類似於:
 
 ```xml
 <?xml version='1.0' encoding='utf-8'?>

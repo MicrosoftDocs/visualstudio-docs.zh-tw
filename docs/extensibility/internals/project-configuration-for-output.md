@@ -1,49 +1,49 @@
 ---
-title: 輸出的專案設定 |Microsoft Docs
+title: 輸出項目設定 :微軟文件
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b6337d82e51cf728d69f7aabb46e9d4444ec564
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 78b95457af4c5d806fdfcc20f49ac4e82df36488
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72725886"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706662"
 ---
 # <a name="project-configuration-for-output"></a>輸出的專案組態
-每個設定都可以支援一組會產生輸出專案（例如可執行檔或資源檔）的組建進程。 這些輸出專案是使用者的私用，而且可以放在連結相關輸出類型的群組中，例如可執行檔（.exe、.dll、.lib）和原始程式檔（.idl、.h 檔案）。
+每個配置都可以支援一組生成進程,這些生成進程生成輸出項(如可執行檔或資源檔)。 這些輸出項是使用者專用的,可以放置在連結相關輸出類型的組中,如可執行檔(.exe、.dll、.lib)和源檔(.idl、.h 檔)。
 
- 輸出專案可以透過 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> 方法提供，並使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> 方法進行列舉。 當您想要將輸出專案分組時，您的專案也應該會執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> 介面。
+ 輸出項可以通過這些方法提供<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2>,<xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>並隨 這些方法枚舉。 如果要對輸出項目進行群組,專案還應實現介面<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup>。
 
- 藉由執行 `IVsOutputGroup` 所開發的結構，可讓專案根據使用方式將輸出分組。 例如，DLL 可能會與其程式資料庫（PDB）群組在一起。
+ 通過實現`IVsOutputGroup`開發的構造允許項目根據使用方式對輸出進行分組。 例如,DLL 可能與其程式資料庫 (PDB) 進行分組。
 
 > [!NOTE]
-> PDB 檔案包含調試資訊，而且會在建立 .dll 或 .exe 時指定 [產生 Debug Info] 選項時建立。 .Pdb 檔案通常只會針對 Debug 專案設定而產生。
+> PDB 檔包含除錯資訊,並在生成 .dll 或 .exe 時指定"生成除錯資訊"選項時創建該檔。 .pdb 檔通常僅用於除錯專案配置。
 
- 專案必須針對其支援的每個設定傳回相同的群組數目，即使群組中包含的輸出數目可能與設定不同。 例如，專案 Matt 的 DLL 可能會在 Debug 設定中包含 mattd 和 mattd，但僅包含零售設定中的 Matt。
+ 項目必須為其支援的每個配置返回相同數量的組,即使組中包含的輸出數可能因配置而異。 例如,專案 Matt 的 DLL 可能包括除錯配置中的 mattd.dll 和 mattd.pdb,但在零售配置中僅包括 matt.dll。
 
- 這些群組也具有相同的識別碼資訊，例如標準名稱、顯示名稱和群組資訊（從設定到專案內的設定）。 這種一致性可讓部署和封裝繼續運作，即使設定變更也一樣。
+ 從專案中的配置到配置,這些組還具有相同的標識符資訊,如規範名稱、顯示名稱和組資訊。 這種一致性允許部署和打包繼續運行,即使配置發生變化也是如此。
 
- 群組也可以有金鑰輸出，以允許封裝快捷方式指向有意義的內容。 在指定的設定中，任何群組可能是空的，因此不應該對群組的大小進行任何假設。 任何設定中每個群組的大小（輸出數目）可能會與相同設定中另一個群組的大小不同。 它也可以與另一個設定中相同群組的大小不同。
+ 組還可以具有密鑰輸出,允許打包快捷方式指向有意義的內容。 給定配置中的任何組可能為空,因此不應對組的大小進行假設。 任何配置中每個組的大小(輸出數)可能不同於同一配置中另一個組的大小。 它也可能與另一個配置中同一組的大小不同。
 
- ![輸出群組圖形](../../extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")輸出群組
+ ![輸出群組圖形](../../extensibility/internals/media/vsoutputgroups.gif "vs 輸出群組")輸出群組
 
- @No__t_0 介面的主要用途是提供組建、部署和調試層管理物件的存取權，並允許專案自由分組輸出。 如需使用此介面的詳細資訊，請參閱[專案設定物件](../../extensibility/internals/project-configuration-object.md)。
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg>介面的主要用途是提供生成、部署和調試管理物件的訪問,並允許專案自由分組輸出。 有關使用此介面的詳細資訊,請參考[專案設定物件](../../extensibility/internals/project-configuration-object.md)。
 
- 在上圖中，組建群組具有跨設定（cmd.exe 或 b. .exe）的按鍵輸出，因此使用者可以建立建立的快捷方式，並知道不論部署的設定為何，快捷方式都能正常執行。 群組來源沒有金鑰輸出，因此使用者無法建立其快捷方式。 如果建立的 Debug 群組具有金鑰輸出，但建立的零售群組不是，則會是不正確的執行。 接著，如果有任何設定的群組不包含任何輸出，因此沒有金鑰檔案，則包含該群組且含有輸出的其他設定不能有金鑰檔案。 安裝程式編輯器會假設群組的正式名稱和顯示名稱，加上金鑰檔的存在，並不會根據設定而變更。
+ 在上圖中,Group Built 具有跨配置(bD.exe 或 b.exe)的關鍵輸出,因此使用者可以創建"已建"快捷方式,並且知道無論部署的配置如何,快捷方式都工作。 組源沒有金鑰輸出,因此使用者無法創建其快捷方式。 如果調試組"構建"具有密鑰輸出,但零售組生成沒有,則這將是不正確的實現。 因此,如果任何配置具有不包含輸出的組,因此沒有密鑰檔,則具有該組包含輸出的其他配置不能具有密鑰檔。 安裝程式編輯器假定規範名稱和組顯示名稱,加上密鑰檔的存在,不會根據配置進行更改。
 
- 請注意，如果專案有不想封裝或部署的 `IVsOutputGroup`，就足以將該輸出放在群組中。 您仍然可以藉由執行會傳回所有設定輸出的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> 方法（不論群組為何），正常地列舉輸出。
+ 請注意,如果專案具有它不想`IVsOutputGroup`打包或部署的 a,則不將該輸出放在組中就足夠了。 通過實現返回配置的所有輸出<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A>的方法,無論分組如何,仍可以正常枚舉輸出。
 
- 如需詳細資訊，請參閱在[適用于專案之 MPF](https://github.com/tunnelvisionlabs/MPFProj10)的自訂專案範例中執行 `IVsOutputGroup`。
+ 有關詳細資訊,請參閱[專案 MPF](https://github.com/tunnelvisionlabs/MPFProj10)`IVsOutputGroup`的自定義專案示例中的實現。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 - [建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)
 - [專案組態物件](../../extensibility/internals/project-configuration-object.md)

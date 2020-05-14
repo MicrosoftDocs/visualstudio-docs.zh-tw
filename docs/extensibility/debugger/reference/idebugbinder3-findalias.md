@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::FindAlias |Microsoft Docs
+title: IDebugBinder3::查找別名 |微軟文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::FindAlias method
 ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8387a3302395d6e25c2b00dd360286e533531168
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0a697e39d21b1c25a98c09ad6cc4837cca7a293
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344428"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735871"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
-這個方法會找出的指定名稱的別名。 在程式中，這將會搜尋所有的別名。
+此方法定位一個別名,給定一個名稱。 這將搜索程式中的所有別名。
 
 ## <a name="syntax"></a>語法
 
@@ -43,16 +43,16 @@ int FindAlias(
 
 ## <a name="parameters"></a>參數
 `pcstrName`\
-[in]若要尋找別名名稱。
+[在]要查找的別名的名稱。
 
 `ppAlias`\
-[out]所表示的別名 （如果有的話） 找到[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)介面。
+[出]找到(如果有)由[IDebugAlias 介面](../../../extensibility/debugger/reference/idebugalias.md)表示的別名。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`（如果找不到別名） 或錯誤碼。
+ 如果成功,返回`S_OK`;否則,返回`S_FALSE`(如果未找到別名)或錯誤代碼。
 
 ## <a name="remarks"></a>備註
- 這個方法會初始化為 null，然後再呼叫; 的目的地物件然後它會測試之後，來判斷已找到別名為 null 值。
+ 此方法在調用之前將目標物件初始化為 null;然後,它會在之後測試一個空值,以確定是否找到別名。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

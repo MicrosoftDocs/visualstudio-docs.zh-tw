@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778150"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 和 ThreadOff
@@ -44,11 +44,11 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 ## <a name="valid-options"></a>有效選項
  您可以在也包含下列子命令的命令列上指定 **ThreadOn** 和 **ThreadOff**。
 
- **Start：** `Method` 初始化命令列分析會話，並設定指定的分析方法。
+ **開始：**`Method`初始化命令列分析會話並設置指定的分析方法。
 
  **GlobalOff**&#124;**GlobalOn** 在命令列分析工作階段中，停止或開始分析所有處理序。
 
- {**ProcessOff**&#124;**ProcessOn**} **：** `TID` 會停止或開始分析指定的進程。
+ [**進程關閉**&#124;**進程打開**]**：**`TID`停止或開始對指定進程進行分析。
 
 ## <a name="example"></a>範例
  在此範例中，**ThreadOff** 子命令是用來停止收集分析資料，僅收集應用程式啟動資料。
@@ -65,8 +65,8 @@ VSPerfCmd /Shutdown
 
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [設定檔ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服務](../profiling/command-line-profiling-of-services.md)
