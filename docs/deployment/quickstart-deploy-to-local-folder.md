@@ -1,4 +1,4 @@
-﻿---
+---
 title: 部署到本機資料夾
 ms.date: 01/29/2019
 ms.topic: quickstart
