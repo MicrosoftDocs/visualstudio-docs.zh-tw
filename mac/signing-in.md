@@ -3,20 +3,20 @@ title: 登入 Visual Studio for Mac
 description: 如何登入 Visual Studio for Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d5bfb81264c3503643c51c621cad29df44acef92
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75844266"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173185"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>登入 Visual Studio for Mac
 
 登入 Visual Studio for Mac 是您[啟用訂用帳戶](enable-subscription.md)的方式。 當您下載 Visual Studio for Mac 時，預設一律會取得 Community 版本。 如果您有 [Professional 或 Enterprise 授權](https://visualstudio.microsoft.com/vs/compare/)，您應該在第一次執行時登入，以解除鎖定任何其他功能。 此外，您還能獲得以下內容：
 
-* **訪問視覺化工作室開發人員基本功能計畫**– 此計畫包括免費軟體產品、培訓、支援等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 。
+* **Visual Studio Dev Essentials 程式的存取權**–此套裝程式含免費的軟體供應專案、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 。
 
 * 系統對於相同帳戶不會再次提示輸入認證，即可在 IDE 中**自動連線到 Azure**。
 
@@ -29,7 +29,7 @@ ms.locfileid: "75844266"
 > [!TIP]
 > 登入 Visual Studio for Mac 之前，請確定您已連線至網際網路。 > 訂用帳戶只能在線上啟用。 如果您未連線，請選擇 [我稍後會執行此動作]，並在連線時透過功能表登入。
 
-要在首次發佈時登錄 Mac 的 Visual Studio，請執行以下步驟：
+若要在第一次啟動時登入 Visual Studio for Mac，請執行下列步驟：
 
 1. 按一下登入視窗的 [使用 Microsoft 帳戶登入]**** 按鈕：
 
@@ -39,7 +39,7 @@ ms.locfileid: "75844266"
 
     ![Microsoft 認證對話方塊](media/signing-in-image13.png)
 
-4. 登錄後，您將看到一個選項，用於選擇鍵盤快速鍵。 選擇要使用的選項，**然後繼續**。 然後，系統會提示您使用 Visual Studio 2019 的 Mac 啟動視窗。 您可以在此開啟或建立新的專案：
+4. 登入之後，您會看到選取鍵盤快速鍵的選項。 選擇您想要使用並**繼續**的選項。 系統會接著提示您輸入 Visual Studio 2019 for Mac 開始視窗。 您可以在此開啟或建立新的專案：
 
     ![登入成功](media/signing-in-image14.png)
 
@@ -51,7 +51,7 @@ Visual Studio for Mac 支援將多個帳戶新增至您的個人化帳戶。 這
 
 若要新增其他使用者帳戶，請從 Visual Studio for mac 選擇 [Visual Studio] > [帳戶]**** 功能表。 按一下 [新增]**** 按鈕，輸入其他的帳戶認證。
 
-![管理帳戶](media/signing-in-image15.png)
+![管理帳戶](media/user-accounts-login.png)
 
 ## <a name="view-or-change-your-profile-information"></a>檢視或變更您的設定檔資訊
 

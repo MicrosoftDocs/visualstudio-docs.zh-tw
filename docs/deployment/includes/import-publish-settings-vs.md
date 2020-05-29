@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f286002112667ba763419f0e3d6265dbe1942212
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143533"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173865"
 ---
 
 1. 在您已於 Visual Studio 中開啟 ASP.NET 專案的電腦上，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [發行]****。
@@ -17,7 +17,7 @@ ms.locfileid: "68143533"
 
 1. 巡覽至您在上一節中所建立發行設定檔的位置。
 
-1. 在 [匯入發行設定檔]**** 對話方塊中，巡覽至您在上一節中建立的設定檔並加以選取，然後按一下 [開啟]****。
+1. 在 [匯**入發行設定檔**] 對話方塊中，流覽至並選取您在上一節中建立的設定檔，然後按一下 [**開啟**]。
 
     Visual Studio 隨即開始部署程序，而 [輸出] 視窗會顯示進度和結果。
 

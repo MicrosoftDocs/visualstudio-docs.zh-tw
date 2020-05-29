@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ff5091a7ca7136cd8b62f75ee7f317b1e5b1f3be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79301997"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173719"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio 中的部署概觀
 
@@ -26,26 +26,26 @@ ms.locfileid: "79301997"
 
 針對許多常見的應用程式類型，您可以直接從 Visual Studio 中的 [方案總管] 來部署應用程式。 如需這項功能的快速導覽，請參閱[部署簡介](../deployment/deploying-applications-services-and-components.md)。
 
-![選擇發佈選項](../deployment/media/quickstart-publish-azure.png)
+![選擇發佈選項](../deployment/media/quickstart-publish-dialog.png)
 
 ## <a name="what-publishing-options-are-right-for-me"></a>適合我的發行選項為何？
 
 在 Visual Studio 內，可以直接將應用程式發行至下列目標：
 
-- [Azure App Service](#azure-app-service)
-- [Azure 虛擬機器](#azure-virtual-machines)
-- [檔案系統](#file-system)
-- [自訂目標 (IIS、FTP 等)](#custom-targets-iis-ftp)，包含所有任意 Web 伺服器。
+- [Azure](#azure)
+- [Docker Container Registry](#docker-container-registry)
+- [資料夾](#folder)
+- [自訂目標 (IIS、FTP)](#Custom targets (IIS、FTP))
 
 在 [發行]**** 索引標籤上，您可以選取現有的發行設定檔、匯入現有的發行設定檔，或使用這裡所述的選項建立新的發行設定檔。 若要了解 IDE 中不同應用程式類型的發佈選項，請參閱[部署簡介](../deployment/deploying-applications-services-and-components.md)。
 
-## <a name="azure-app-service"></a>Azure App Service
+## <a name="azure"></a>Azure 
 
-[Azure App Service](/azure/app-service/app-service-web-overview) 和 [Linux 上的 App Service](/azure/app-service/containers/app-service-linux-intro) 可協助開發人員快速建立各種可調整的 Web 應用程式和服務，而不需要維護基礎結構。
+### <a name="azure-app-service"></a>Azure App Service
+
+[Azure App Service](/azure/app-service/app-service-web-overview)可協助開發人員快速建立可擴充的 web 應用程式和服務，而不需要維護基礎結構。 App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管理這些虛擬機器。 App Service 中每個應用程式都會獲指派唯一的 \*.azurewebsites.net URL；「免費」以外的所有定價層都允許為網站指派自訂網域名稱。
 
 您可以透過為上層 App Service 選擇[定價層或方案](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)，來決定 App Service 計算能力的強弱。 您可以讓多個 Web 應用程式 (及其他應用程式類型) 共用相同的 App Service，而不需變更定價層。 例如，您可以在相同的 App Service 上同時裝載開發、預備和生產 Web 應用程式。
-
-App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管理這些虛擬機器。 App Service 中每個應用程式都會獲指派唯一的 \*.azurewebsites.net URL；「免費」以外的所有定價層都允許為網站指派自訂網域名稱。
 
 ### <a name="when-to-choose-azure-app-service"></a>選擇 Azure App Service 的時機
 
@@ -58,7 +58,7 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 
 如需發行至 App Service 的詳細資訊，請參閱[快速入門 - 發行至 Azure App Service](quickstart-deploy-to-azure.md) 及[快速入門 - 將 ASP.NET Core 發行至 Linux ](quickstart-deploy-to-linux.md)。
 
-## <a name="azure-virtual-machines"></a>Azure 虛擬機器
+### <a name="azure-virtual-machines"></a>Azure 虛擬機器
 
 [Azure 虛擬機器 (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) 可讓您建立和管理雲端中任意數目的計算資源。 假設負有 VM 上所有軟體和更新的責任，即可依應用程式要求視需要進行自訂。 您可以透過「遠端桌面」直接存取虛擬機器，每部機器都會依需要維持其獲指派的 IP 位址。
 
@@ -75,11 +75,19 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 
 > 如果您想要在自己的資料中心或其他內部部署電腦中使用 Azure 虛擬機器，則做法是使用 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)。
 
-## <a name="file-system"></a>檔案系統
+## <a name="docker-container-registry"></a>Docker Container Registry
+
+如果您的應用程式使用 Docker，您可以將容器化應用程式發佈至 Docker 容器登錄。
+
+### <a name="when-to-choose-docker-container-registry"></a>選擇 Docker Container Registry 的時機
+
+- 您想要部署容器化應用程式
+
+## <a name="folder"></a>資料夾
 
 部署至檔案系統，表示只需要將應用程式檔案複製到您自己電腦上的特定資料夾。 這最常用於進行測試；或者，如果電腦也執行伺服器，則用來部署應用程式以供有限數目的人員使用。 如果在網路上共用目標資料夾，則部署至檔案系統之後，其他可能接著將它部署至特定伺服器的人員將可使用 Web 應用程式檔案。
 
-任何正在執行伺服器的本機電腦都可以透過網際網路或內部網路使用應用程式，而這取決於其設定方式和其所連接的網路。 （如果您將電腦直接連接到 Internet，請特別注意保護電腦免受外部安全威脅。由於您管理這些電腦，因此您可以完全控制軟體和硬體設定。
+任何正在執行伺服器的本機電腦都可以透過網際網路或內部網路使用應用程式，而這取決於其設定方式和其所連接的網路。 （如果您將電腦直接連線到網際網路，請特別小心保護它免于遭受外部安全性威脅）。因為您管理這些機器，所以您可以完全控制軟體和硬體設定。
 
 請注意，如果您因任何原因 (例如電腦存取) 而無法使用 Azure App Service 或 Azure 虛擬機器這類雲端服務，則可以在自己的資料中心內使用 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)。 Azure Stack 既可讓您透過 Azure App Service 和「Azure 虛擬機器」來管理和使用計算資源，又可讓所有項目保留在內部部署環境中。
 
@@ -116,9 +124,9 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 
 教學課程：
 
-- [使用發佈工具部署 .NET 核心應用程式](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [將ASP.NET核心應用發佈到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [在可視C++部署](/cpp/windows/deployment-in-visual-cpp)
+- [使用發行工具部署 .NET Core 應用程式](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [將 ASP.NET core 應用程式發行至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Visual C++ 中的部署](/cpp/windows/deployment-in-visual-cpp)
 - [部署 UWP 應用程式](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [使用 Web Deploy 將 Node.js 應用程式發行至 Azure](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [將 Python 應用程式發佈到 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

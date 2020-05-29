@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1236c3057cd209bd5c7c81304a2168704927c506
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71127940"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173673"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至網站
 
@@ -24,33 +24,29 @@ ms.locfileid: "71127940"
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> 如果您需要將 Windows 桌面應用程式發行至網路檔案共用，請參閱[使用 ClickOnce 部署桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 或 Visual Basic)。 有關C++/CLI，請參閱[使用 ClickOnce 部署本機應用](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，或者對於 C/C++，請參閱[使用安裝程式部署本機應用](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+> 如果您需要將 Windows 桌面應用程式發行至網路檔案共用，請參閱[使用 ClickOnce 部署桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 或 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
 
 ## <a name="publish-to-a-web-site"></a>發行至網站
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]**** (或使用 [建置]**** > [發行]**** 功能表項目)。
 
-    ![解決方案資源管理器中專案內容功能表上的"發佈"命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
+    ![[專案] 內容功能表上的 [發佈] 命令方案總管](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
 1. 如果您之前已設定任何發行設定檔，[發行]**** 窗格會隨即出現。 選取 [建立新設定檔]****。
 
-1. 在 [挑選發行目標]**** 對話方塊中，選擇 [IIS、FTP 等等]****。
+1. 在 [**發行**] 對話方塊中，選擇 [**網頁伺服器（IIS）**]。
 
-    ![選擇 [IIS、FTP 等等]。](../deployment/media/quickstart-publish-iis-ftp.png "選擇 [IIS、FTP 等等]。")
+    ![選擇發行目標](../deployment/media/quickstart-publish-iis.png "選擇 [IIS、FTP 等等]。")
 
-1. 選取 [發行]****。 設定檔發行設定對話方塊隨即開啟。
+1. 選擇 [ **Web Deploy** ] 作為部署方法。 Web Deploy 可簡化將 Web 應用程式和網站部署到 IIS 伺服器的作業，而且必須安裝為伺服器上的應用程式。 請使用 [Web platform installer](https://www.microsoft.com/web/downloads/platform.aspx) 進行安裝。
 
-    ![選擇資料夾](../deployment/media/quickstart-publish-settings-web.png "選擇資料夾")
+    ![選擇部署方法](../deployment/media/quickstart-publish-iis-web-deploy.png "選擇 [IIS、FTP 等等]。")
 
-1. 在 [發行方法]**** 欄位中，選擇一種方法，例如 [Web Deploy]**** 或 [FTP]****。 您看到之設定接下來會對應至您的發行方法。 Web Deploy 可簡化將 Web 應用程式和網站部署到 IIS 伺服器的作業，而且必須安裝為伺服器上的應用程式。 請使用 [Web platform installer](https://www.microsoft.com/web/downloads/platform.aspx) 進行安裝。
+1. 設定 publish 方法所需的設定，然後選取 **[完成]**。 
 
-1. 設定發行方法的必要設定，然後選取 [驗證連線]****。 如果伺服器或目標可供使用且您的設定正確，則會顯示一則訊息指出已驗證連線，且您已經準備好發行。
+    ![Web Deploy 連線詳細資料](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
-    ![驗證您的連接](../deployment/media/quickstart-publish-web-deploy.png "驗證您的連接")
-
-1. 選取 [設定]**** 設定其他部署設定，例如是否要部署 [偵錯] 或 [發行] 組態，然後選取 [儲存]****。 如果您要遠端偵錯，則需要 [偵錯] 組態。
-
-1. 若要發行，請選取 [發行]****。 [輸出] 視窗會顯示部署進度和結果。
+1. 若要發佈，請在 [摘要] 頁面中選取 [**發佈**]。 [輸出] 視窗會顯示部署進度和結果。
 
 ## <a name="next-steps"></a>後續步驟
 
