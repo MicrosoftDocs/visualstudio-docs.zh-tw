@@ -18,18 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8064ce4c13419238ca5877893a731d2ac53afb25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633638"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173508"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 項目 (MSBuild)
 
-包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 元素。 MSBuild 專案中使用的每個項都必須指定為`ItemGroup`元素的子項。
+包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 元素。 MSBuild 專案中使用的每個專案都必須指定為元素的子系 `ItemGroup` 。
 
-\<Project> \<ItemGroup>
+\<Project>
+\<ItemGroup>
 
 ## <a name="syntax"></a>語法
 
@@ -56,13 +57,13 @@ ms.locfileid: "77633638"
 
 |元素|描述|
 |-------------|-----------------|
-|[專案](../msbuild/item-element-msbuild.md)|定義建置程序的輸入。 `ItemGroup` 中可能有零或多個 `Item` 項目。|
+|[項目](../msbuild/item-element-msbuild.md)|定義建置程序的輸入。 `ItemGroup` 中可能有零或多個 `Item` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
 | 元素 | 描述 |
 | - | - |
-| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔案所需的根項目。 |
+| [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 | [目標](../msbuild/target-element-msbuild.md) | 從 .NET Framework 3.5 開始，`ItemGroup` 項目可以出現在 `Target` 項目內部。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。 |
 
 ## <a name="example"></a>範例
@@ -86,8 +87,12 @@ ms.locfileid: "77633638"
 </Project>
 ```
 
+在簡單的專案檔中，您通常會使用單一 `ItemGroup` 元素，但您也可以使用多個 `ItemGroup` 元素。 使用多個 `ItemGroup` 元素時，會將專案合併成單一 `ItemGroup` 。 例如，某些專案可能包含在匯入的檔案 `ItemGroup` 中定義的個別元素。
+
+ItemGroups 可以使用屬性來套用條件 `Condition` 。 在此情況下，只有在符合條件時，才會將專案加入至專案清單。 請參閱[MSBuild 條件](msbuild-conditions.md)
+
 ## <a name="see-also"></a>另請參閱
 
-- [專案檔案架構引用](../msbuild/msbuild-project-file-schema-reference.md)
+- [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)
-- [常見 MS 生成專案項](../msbuild/common-msbuild-project-items.md)
+- [一般 MSBuild 專案專案](../msbuild/common-msbuild-project-items.md)

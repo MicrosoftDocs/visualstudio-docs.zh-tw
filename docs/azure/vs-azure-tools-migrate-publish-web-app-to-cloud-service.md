@@ -9,25 +9,26 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: a5f918cac9d2b9e97c047e8823d7702768134336
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: c3d622d52e6ae1c1e25563fdbb05f68a9ecc91d0
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489671"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84179995"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>作法：從 Visual Studio 將 Web 應用程式移轉並發佈至 Azure 雲端服務
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>如何：從 Visual Studio 遷移 web 應用程式並將其發佈至 Azure 雲端服務
 
 若要利用 Azure 的主機服務和延展性，您可以將 Web 應用程式移轉並部署至 Azure 雲端服務。 僅需要最低程度的變更。 本文僅涵蓋至雲端服務的部署，關於 App Service 的部分，請參閱[在 Azure App Service 中部署 Web 應用程式](/azure/app-service/app-service-deploy-local-git)。
 
 > [!Important]
-> 僅特定的 ASP.NET、Silverlight、WCF 及 WCF 工作流程專案支援此移轉。 ASP.NET Core 專案不支援。 請參閱[支援的專案範本](#supported-project-templates)。
+> 只有特定的 ASP.NET、WCF 及 WCF 工作流程專案支援此遷移。 ASP.NET Core 專案不支援。 請參閱[支援的專案範本](#supported-project-templates)。
 
 ## <a name="migrate-a-project-to-cloud-services"></a>將專案移轉至雲端服務
 
-1. 以滑鼠右鍵按一下 Web 應用程式專案，並選取 [轉換] > **轉換成 Microsoft Azure 雲端服務專案**。 (請注意，如果您在解決方案中已經有 Web 角色專案，此命令不會顯示。)
-1. Visual Studio 會在包含必要 Web 角色的解決方案中建立雲端服務專案。 此專案的名稱與您的應用程式專案相同，後面加上尾碼 `.Azure`。
-1. 對於 MVC 2、MVC 3、MVC 4 和 Silverlight 商務應用程式所需的組件，Visual Studio 也會將 [複製到本機]**** 屬性設定為 true。 此屬性會將這些組件新增到用於部署的服務封裝中。
+1. 以滑鼠右鍵按一下方案節點，然後選取 [**新增] > 新專案 ...** ]，並將新的**Azure 雲端服務（傳統）** 專案新增至現有的方案。
+1. 在 [**新增 Microsoft Azure 雲端服務（傳統）** ] 對話方塊中，按一下 [確定]，而不將任何角色新增至專案。
+1. 以滑鼠右鍵按一下新加入的雲端服務專案底下的 [角色] 節點，然後選取 [**在方案中新增 Web 角色專案 ...**]。
+1. 在 [**與角色專案關聯**] 對話方塊中，選取您想要與 web 角色建立關聯的專案。
 
    > [!Important]
    > 如果此 Web 應用程式有其他必要組件或檔案，您必須手動設定這些檔案的屬性。 如需如何設定這些屬性的資訊，請參閱[將檔案包含在服務封裝內](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package)。
@@ -79,7 +80,6 @@ ms.locfileid: "81489671"
 | --- | --- |
 | ASP.NET Web 應用程式<br/>(包括 MVC 2、MVC 3、MVC 4) | 在 **Azure 活動記錄檔**的 [部署]**** 索引標籤中選取該 URL。 |
 | ASP.NET 空白 Web 應用程式 | 如果您的應用程式中有預設 `.aspx` 網頁，請在 **Azure 活動記錄檔**的 [部署]**** 索引標籤中選取該 URL。 若要瀏覽至不同的網頁，請在瀏覽器中輸入下列格式的 URL：`<deployment_url>/<page_name>.aspx` |
-| Silverlight 應用程式<br/>Silverlight 商務應用程式<br/>Silverlight 瀏覽應用程式 | 使用下列格式的 URL 瀏覽至應用程式的特定網頁：`<deployment_url>/<page_name>.aspx` |
 | WCF 服務應用程式<br/>WCF 工作流程服務應用程式 | 將 `.svc` 檔案設定做為 WCF 服務專案的起始頁。 然後瀏覽至 `<deployment_url>/<service_file>.svc` |
 | ASP.NET 動態實體<br/>ASP.NET 動態資料 Linq to SQL | 依照下一節所述，更新連接字串。 然後瀏覽至 `<deployment_url>/<page_name>.aspx`。 對於 Linq to SQL，您必須使用 Azure SQL 資料庫。 |
 
@@ -117,9 +117,6 @@ ms.locfileid: "81489671"
 | Web | ASP.NET MVC 2 空白 Web 應用程式 |
 | Web | ASP.NET 動態資料實體 Web 應用程式 |
 | Web | ASP.NET 動態資料 Linq to SQL Web 應用程式 |
-| Silverlight | Silverlight 應用程式 |
-| Silverlight | Silverlight 商務應用程式 |
-| Silverlight | Silverlight 瀏覽應用程式 |
 | WCF | WCF 服務應用程式 |
 | WCF | WCF 工作流程服務應用程式 |
 | 工作流程 | WCF 工作流程服務應用程式 |

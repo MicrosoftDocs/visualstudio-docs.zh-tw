@@ -1,5 +1,5 @@
 ---
-title: 發佈到 Azure App Service
+title: 發佈至 Azure App Service
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4bbff0c2d149afddc355afe5f6c93e9d0aea54c0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 842f7912d88031d720f438800ef6b54133ce05c9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72806906"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184482"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至 Azure App Service
 
@@ -29,25 +29,35 @@ ms.locfileid: "72806906"
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
-## <a name="publish-to-azure-app-service"></a>發佈到 Azure App Service
+## <a name="publish-to-azure-app-service-on-windows"></a>發佈至 Windows 上的 Azure App Service
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]**** (或使用 [建置]**** > [發行]**** 功能表項目)。
 
-    ![解決方案資源管理器中專案內容功能表上的"發佈"命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
+    ![[專案] 內容功能表上的 [發佈] 命令方案總管](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
-1. 如果您之前已設定任何發行設定檔，[發行]**** 窗格隨即出現；在此情況下，請選取 [建立新設定檔]****。
+1. 在 [**發佈**] 對話方塊中，選取 [ **Azure**]。
 
-1. 在 [挑選發行目標]**** 對話方塊中，選擇 [App Service]****。
+    ![選擇發行目標](../deployment/media/quickstart-publish-azure.png)
 
-    ![選擇 Azure 應用服務](../deployment/media/quickstart-publish-azure.png "選擇 Azure 應用服務")
+1. 選取 [Azure App Service （Windows）] * * 和 **[下一步]**。
 
-1. 選取 [發行]****。 [建立 App Service]**** 對話方塊隨即出現。 如有必要，請使用您的 Azure 帳戶登入，接著預設 App Service 設定會填入欄位。
+    ![選擇 Linux 上的 Azure App Service](../deployment/media/quickstart-publish-windows-select-azure-service.png)
 
-    ![建立應用程式服務](../deployment/media/quickstart-publish-settings-app-service.png "創建 Azure 應用服務")
+1. 如有需要，請使用您的 Azure 帳戶登入。 選取 [**建立新的 Azure App Service ...** ]
 
-1. 選取 [建立]****。 Visual Studio 會將應用程式部署至 Azure App Service，並在瀏覽器中載入 Web 應用程式。 專案屬性 [發行]**** 窗格會顯示網站 URL 和其他詳細資料。
+    ![用來建立新實例 Azure App Service 的連結](../deployment/media/quickstart-publish-windows-create-new-link.png)
 
-    ![顯示設定檔摘要的 [發行] 屬性窗格](../deployment/media/quickstart-publish-app-service-summary.png)
+1. 在 [**建立 Azure App Service （Windows）** ] 對話方塊中，會填入 [**應用程式名稱**]、[**資源群組**] 和 [ **App Service 方案**] 專案欄位。 您可以保留這些名稱，或變更它們。 準備好時，請選取 [**建立**]。
+
+    ![選擇 Azure App Service](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
+
+1. 在 [**發行**] 對話方塊中，已自動選取新建立的實例。 準備好時，按一下 **[完成]**。
+
+    ![選擇 Azure App Service](../deployment/media/quickstart-publish-windows-select-instance.png)
+
+1. 選取 [發佈] 。 Visual Studio 會將應用程式部署至 Azure App Service，並在瀏覽器中載入 Web 應用程式。 專案屬性 [發行]**** 窗格會顯示網站 URL 和其他詳細資料。
+
+    ![顯示設定檔摘要的 [發行] 屬性窗格](../deployment/media/quickstart-publish-windows-summary-page.png)
 
 ## <a name="clean-up-resources"></a>清除資源
 

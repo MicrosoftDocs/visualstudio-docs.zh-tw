@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af7649a75fbf3ded0cf5d09e9063b49f4fcab1b2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 609c764192673e4d3f9fbd99a1bc572e9d78db7f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633326"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183518"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多目標概觀
 
@@ -36,11 +36,11 @@ ms.locfileid: "77633326"
 
 ## <a name="target-framework-and-platform"></a>目標架構和平台
 
- 「目標架構」** 是建置專案以在其上執行的 .NET Framework 版本，而「目標平台」** 是建置專案以在其上執行的系統平台。  例如，您可能想要設定 .NET Framework 2.0 應用程式，在與 802x86 處理器系列 (x86) 相容的 32 位元平台上執行。 目標 Framework 和目標平台的組合稱為「目標內容」**。 如需詳細資訊，請參閱[目標 Framework 和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。
+ 「目標架構」** 是建置專案以在其上執行的 .NET Framework 版本，而「目標平台」** 是建置專案以在其上執行的系統平台。  例如，您可能會想要將 .NET Framework 2.0 應用程式設為目標，以便在與 80x86 processor 系列（x86）相容的32位平臺上執行。 目標 Framework 和目標平台的組合稱為「目標內容」**。 如需詳細資訊，請參閱[目標 Framework 和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。
 
 ## <a name="toolset-toolsversion"></a>Toolset (ToolsVersion)
 
- 工具組會將工具、工作以及用來建立應用程式的目標收集在一起。 工具集包括編譯器，如*csc.exe*和*vbc.exe、* 通用目的檔案 *（microsoft.common.target）* 和常見任務檔 *（microsoft.common.tasks）。* 4.5 工具組可以用來以 .NET Framework 版本 2.0、3.0、3.5、4 和 4.5 為目標。 不過，2.0 工具組只能用來以 .NET Framework 版本 2.0 為目標。 如需詳細資訊，請參閱 [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。
+ 工具組會將工具、工作以及用來建立應用程式的目標收集在一起。 工具組包含的編譯器，例如*csc*和*vbc*、通用目標檔案（*microsoft common .targets*）和通用工作檔案（*microsoft common. tasks*）。 4.5 工具組可以用來以 .NET Framework 版本 2.0、3.0、3.5、4 和 4.5 為目標。 不過，2.0 工具組只能用來以 .NET Framework 版本 2.0 為目標。 如需詳細資訊，請參閱 [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。
 
 ## <a name="reference-assemblies"></a>參考組件
 
