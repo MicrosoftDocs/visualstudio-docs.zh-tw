@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1158015f1a7065514511b8d62810c937382b7f
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: f5ff05fa7c8fe68d7c09f4881efc249a74959b2b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638678"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180216"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>在 Visual Studio 中從 Azure Machine Learning 資源庫建立 AI 專案
 
@@ -24,7 +24,7 @@ Azure Machine Learning 與 Visual Studio Tools for AI 整合。 您可以使用�
 [安裝 Visual Studio Tools for AI](installation.md) 之後，您就可以使用 Azure Machine Learning 範例庫中預先製作的配方，輕鬆建立新的 Python 專案。
 
 > [!NOTE]
-> 您必須安裝 Azure Machine Learning Workbench。 若要安裝，請參閱 [Azure Machine Learning 安裝快速入門](/azure/machine-learning/preview/quickstart-installation)
+> 您必須安裝 Azure Machine Learning Workbench。 
 
 1. 啟動 Visual Studio。 開啟 [AI Tools] (AI 工具)**** 功能表，然後選擇 [選取叢集]**** 以開啟**伺服器總管**
 

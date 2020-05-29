@@ -1,100 +1,102 @@
 ---
-title: 創建布拉佐爾網路應用程式
-description: 在 Mac 視覺化工作室中提供有關 ASP.NET核心應用中的 Blazor 支援的資訊。
+title: 建立 Blazor web 應用程式
+description: 提供 Visual Studio for Mac 中 ASP.NET Core 應用程式中 Blazor 支援的相關資訊。
 author: jongalloway
 ms.author: jogallow
 ms.date: 12/17/2019
 ms.technology: vs-ide-general
 ms.assetid: D2717D3A-9225-40A8-8155-7D0143B2CA60
-ms.openlocfilehash: dbc49a0ea9b4e4fa7880b6226331d447339b6575
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 978e3676d587bcd54a8e9d0b8b81f5d6c52a92bc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75737583"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180271"
 ---
-# <a name="create-blazor-web-apps"></a>創建布拉佐爾網路應用程式
+# <a name="create-blazor-web-apps"></a>建立 Blazor web 應用程式
 
-本指南介紹了創建第一個 Blazor Web 應用的介紹。 有關更深入的指導，請參閱[ASP.NET核心布拉佐爾簡介](/aspnet/core/blazor/index)。
+本指南提供建立您的第一個 Blazor web 應用程式的簡介。 如需更深入的指引，請參閱[ASP.NET Core Blazor 簡介](/aspnet/core/blazor/index)。
 
-適用于 Mac 的視覺化工作室（從 8.4 版開始）包括對開發和發佈核心 Blazor 伺服器應用程式ASP.NET的支援。 Blazor 是一個使用 .NET 構建互動式用戶端 Web UI 的框架，它為 Web 開發人員提供了以下優勢：
+ASP.NET Core Blazor 支援兩種不同的裝載選項;Blazor 伺服器和 Blazor WebAssembly。 Visual Studio for Mac 支援這兩種裝載模型。 Visual Studio for Mac 8.4 + 支援 Blazor Server，Visual Studio for Mac 8.6 + 同時支援兩者。 如需 Blazor 裝載模型的詳細資訊，請參閱[ASP.NET Core Blazor 裝載模型](https://docs.microsoft.com/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1)。 在 Visual Studio for Mac 中的偵錯工具 Blazor WebAssembly 專案的支援將于8.6 之後推出。
+
+什麼是 Blazor？ Blazor 是使用 .NET 建立互動式用戶端 web UI 的架構，可為 網頁程式開發人員提供下列優點：
 
 * 以 C# 撰寫而不是 JavaScript。
 * 利用 .NET 程式庫的現有 .NET 生態系統。
 * 跨伺服器和用戶端共用應用程式邏輯。
-* 受益于。NET 的性能、可靠性和安全性。
-* 借助 PC、Linux 和 macOS 上的視覺化工作室，提高工作效率。
+* 受益于。NET 的效能、可靠性和安全性。
+* 使用電腦、Linux 和 macOS 上的 Visual Studio 保持生產力。
 * 以常用的語言、架構和工具建置，不僅穩定、功能豐富，而且容易使用。
 
-## <a name="creating-a-new-blazor-project"></a>創建新的布拉佐爾專案
+## <a name="creating-a-new-blazor-server-project"></a>建立新的 Blazor 伺服器專案
 
-1. 在 **"開始"視窗中**，選擇 **"新建"** 以創建新專案：
+1. 在 [**開始] 視窗**中，選取 [**新增**] 以建立新的專案：
 
-   ![Mac 啟動視窗的視覺化工作室，突出顯示了新選擇](media/blazor-new-project.png)
-1. 在 **"新專案**"對話方塊中，選擇 **.NET 核心**>**應用**> **Blazor 伺服器應用**，然後選擇 **"下一步**：![選擇已選擇 Blazor 伺服器應用範本的新專案對話方塊"範本](media/blazor-project-template.png)
+   ![反白顯示新選取範圍的 Visual Studio for Mac 開始視窗](media/blazor-new-project.png)
+1. 在 [**新增專案**] 對話方塊中，選取 [ **.net Core** > **應用**程式 > **Blazor 伺服器應用程式**]，然後選取 **[下一步]**： ![ 選擇 [新增專案] 對話方塊中已選取 Blazor 伺服器應用程式範本的範本](media/blazor-project-template.png)
 
-1. 選擇 .NET 核心 3.1 作為目標框架，然後選擇 **"下一步**"。 
-   ![配置顯示的新 Blazor 伺服器應用對話方塊，並將目標框架選擇為 .NET 核心 3.1](media/blazor-select-target-framework.png)
+1. 選取 [.NET Core 3.1] 做為 [目標 framework]，然後選取 **[下一步]**。 
+   ![設定新的 Blazor 伺服器應用程式對話方塊，並以選取的目標 Framework 顯示到 .NET Core 3。1](media/blazor-select-target-framework.png)
 
-1. 為專案選擇名稱，如果需要，請添加 Git 支援。 選取 [Create] \(建立\)**** 以建立專案。
-   ![B 配置輸入專案名稱時顯示的新 Blazor 伺服器應用對話方塊](media/blazor-name-project.png)
+1. 選擇專案的 [名稱]，並視需要新增 Git 支援。 選取 [Create] \(建立\)**** 以建立專案。
+   ![BConfigure 您在輸入專案名稱時顯示的新 Blazor 伺服器應用程式對話方塊](media/blazor-name-project.png)
 
-   Mac 視覺化工作室在"代碼"佈局視窗中打開您的專案。
-1. 選擇 **"在不** > **調試的情況下運行啟動**"以運行應用。
+   Visual Studio for Mac 會在 [程式碼配置] 視窗中開啟您的專案。
+1. 選取 [**執行**]  >  [**啟動但不**進行偵測] 以執行應用程式。
 
-   視覺工作室啟動[Kestrel，](/aspnet/core/fundamentals/servers/kestrel)打開瀏覽器到`https://localhost:5001`，並顯示您的Blazor網路應用程式。
+   Visual Studio 啟動[Kestrel](/aspnet/core/fundamentals/servers/kestrel)，將瀏覽器開啟至 `https://localhost:5001` ，並顯示您的 Blazor web 應用程式。
 
-   ![野生動物園中的布拉佐爾網路應用程式](media/blazor-new-app-in-edge.png)
+   ![在 Safari 中 Blazor web 應用程式](media/blazor-new-app-in-edge.png)
 
-## <a name="blazor-support-in-visual-studio-for-mac"></a>Mac 視覺工作室中的布拉佐爾支援
+## <a name="blazor-support-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的 Blazor 支援
 
-適用于 Mac 的視覺化工作室（從 8.4 版開始）包含新功能，可説明您創建新的 Blazor 伺服器專案。 並且，它還為您提供您期望的標準支援，例如構建、運行和調試 Blazor 專案。 
+Visual Studio for Mac （從8.4 版開始）包含新的功能，可協助您建立新的 Blazor 伺服器專案。 同樣地，它會提供您預期的標準支援，例如建立、執行和 Blazor 專案的調試。 在 Visual Studio for Mac 8.6 中，已加入建立和執行 Blazor WebAssembly 專案的支援。
 
-在上面的演練中，我們看到了 Blazor 伺服器應用程式專案範本如何説明您創建新的 Blazor 伺服器應用專案。 讓我們來看看 Visual Studio 中支援 Blazor 伺服器專案開發的其他功能。
+在上述逐步解說中，我們已看到 Blazor 伺服器應用程式專案範本如何協助您建立新的 Blazor 伺服器應用程式專案。 讓我們看看 Visual Studio for Mac 中的一些額外功能，以支援 Blazor 專案開發。
 
-### <a name="editor-support-for-razor-files"></a>編輯支援 *.razor*檔
-適用于 Mac 的 Visual Studio 包括支援編輯 .razor 檔 - 創建 Blazor 應用程式時將使用的大多數檔。 IDE 的 Windows 和 Mac 版本共用 .razor 檔的相同編輯器。 您將看到對 .razor 檔的完整著色和完成支援，包括專案中聲明的 Razor 元件的完成情況。
+### <a name="editor-support-for-razor-files"></a>*Razor*檔案的編輯器支援
+Visual Studio for Mac 包括編輯 razor 檔案的支援-您在建立 Blazor 應用程式時將使用的大部分檔案。 IDE 的 Windows 和 Mac 版本會共用相同的 razor 檔案編輯器。 您會看到 razor 檔案的完整顏色標示和完成支援，包括專案中所宣告的 Razor 元件完成。
 
-![Mac 編輯器視窗的視覺化工作室，顯示 Blazor 的"無意義"](media/blazor-intellisense.png)
+![顯示 Blazor Intellisense 的 Visual Studio for Mac 編輯器視窗](media/blazor-intellisense.png)
 
-### <a name="publishing-blazor-applications-to-azure-app-service"></a>將 Blazor 應用程式發佈到 Azure 應用服務
-您還可以將 Blazor 應用程式直接發佈到 Azure 應用服務。 如果沒有 Azure 帳戶在 Azure 上運行 Blazor 應用，則始終可以[在此處註冊免費](https://azure.microsoft.com/free)應用，該帳戶還包括 12 個月的免費熱門服務、200 美元的免費 Azure 積分以及超過 25 個始終免費的服務。
+### <a name="publishing-blazor-applications-to-azure-app-service"></a>將 Blazor 應用程式發佈至 Azure App Service
+您也可以將 Blazor 應用程式直接發行到 Azure App Service。 如果您沒有 Azure 帳戶可在 Azure 上執行 Blazor 應用程式，您隨時都可以在[這裡註冊免費](https://azure.microsoft.com/free)的免費熱門服務12個月、$200 個免費的 Azure 點數，以及超過25項永遠免費的服務。
 
-![顯示 Azure 發佈體驗的 Mac 視覺化工作室](media/blazor-azure-publish.png)
+![顯示 Azure 發佈經驗的 Visual Studio for Mac](media/blazor-azure-publish.png)
 
 ## <a name="project-anatomy"></a>專案解析
 
-預設情況下，Blazor Web 應用程式包括幾個目錄和檔。 在入門時，您需要熟悉以下主要功能：
+根據預設，Blazor web 應用程式包含幾個目錄和檔案。 當您開始使用時，以下是您必須熟悉的主要部分：
 
 ### <a name="pages-folder"></a>Pages 資料夾
 
-此資料夾包含專案的網頁，這些網頁使用 *.razor*檔副檔名。
+此資料夾包含專案的網頁，其使用*razor*副檔名。
 
 ### <a name="shared-folder"></a>共用資料夾
 
-此資料夾包括共用元件，也使用 *.razor*副檔名。 您將看到，這包括*MainLayout.razor*，用於在整個應用程式中定義公共佈局。 它還包括共用的*NavMenu.razor*元件，該元件在所有頁面上使用。 如果要創建可重用的元件，它們將位於 **"共用"** 資料夾中。
+此資料夾包含共用的元件，也會使用*razor*副檔名。 您會看到這包括*MainLayout*，這是用來定義跨應用程式的一般版面配置。 它也包含共用的*navmenu.cshtml razor*元件，用於所有頁面。 如果您要建立可重複使用的元件，它們會進入**共用**資料夾。
 
 ### <a name="app-settings"></a>應用程式設定
 
-*appSettings.json*檔包含配置資料，如連接字串。
+*AppSettings*包含設定資料，例如連接字串。
 
-有關配置的詳細資訊，請參閱 ASP.NET[指南中的配置](/aspnet/core/fundamentals/configuration/index)。
+如需設定的詳細資訊，請參閱[ASP.NET 中](/aspnet/core/fundamentals/configuration/index)的設定指南。
 
 ### <a name="wwwroot-folder"></a>wwwroot 資料夾
 
-此資料夾包含靜態檔，如 HTML、JavaScript 和 CSS 檔。 如需詳細資訊，請參閱 [ASP.NET Core 中的靜態檔案](/aspnet/core/fundamentals/static-files)。
+此資料夾包含靜態檔案，例如 HTML、JavaScript 和 CSS 檔案。 如需詳細資訊，請參閱 [ASP.NET Core 中的靜態檔案](/aspnet/core/fundamentals/static-files)。
 
 ### <a name="programcs"></a>Program.cs
 
-此檔包含程式的進入點。 如需詳細資訊，請參閱 [ASP.NET Core Web 主機](/aspnet/core/fundamentals/host/web-host)。
+此檔案包含程式的進入點。 如需詳細資訊，請參閱 [ASP.NET Core Web 主機](/aspnet/core/fundamentals/host/web-host)。
 
 ### <a name="startupcs"></a>Startup.cs
 
-此檔包含配置應用行為的代碼，例如應用是否需要 Cookie 的同意。 如需詳細資訊，請參閱 [ASP.NET Core 中的應用程式啟動](/aspnet/core/fundamentals/startup)。
+此檔案包含設定應用程式行為的程式碼，例如應用程式是否需要同意 cookie。 如需詳細資訊，請參閱 [ASP.NET Core 中的應用程式啟動](/aspnet/core/fundamentals/startup)。
 
 ## <a name="summary"></a>摘要
-在本教程中，您瞭解了如何在 Visual Studio 中為 Mac 創建新的 Blazor 伺服器應用程式，並瞭解了適用于 Mac 的 Visual Studio 提供的一些功能，以説明您創建 Blazor 應用程式。
+在本教學課程中，您已瞭解如何在 Visual Studio for Mac 中建立新的 Blazor 伺服器應用程式，並學習 Visual Studio for Mac 提供的一些功能，以協助您建立 Blazor 應用程式。
 
 ## <a name="see-also"></a>另請參閱
 
-有關創建 Blazor Web 應用程式的更全面的指南，請參閱[ASP.NET核心 Blazor 簡介](/aspnet/core/blazor/index)。
+如需建立 Blazor web 應用程式的更完整指南，請參閱[ASP.NET Core Blazor 簡介](/aspnet/core/blazor/index)。

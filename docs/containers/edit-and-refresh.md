@@ -1,6 +1,6 @@
 ---
-title: 在本地 Docker 容器中調試應用 |微軟文檔
-description: 瞭解如何修改在本地 Docker 容器中運行的應用，通過"編輯"和"刷新"刷新容器，然後設置調試中斷點。
+title: 在本機 Docker 容器中偵錯工具 |Microsoft Docs
+description: 瞭解如何修改在本機 Docker 容器中執行的應用程式、透過 [編輯] 和 [重新整理] 重新整理容器，然後設定 [偵錯工具中斷點]。
 ms.author: ghogen
 author: ghogen
 manager: jillfra
@@ -9,44 +9,44 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c73adff20ea253ac854d99b90c4161a963343e29
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75916526"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184805"
 ---
-# <a name="debug-apps-in-a-local-docker-container"></a>在本地 Docker 容器中調試應用
+# <a name="debug-apps-in-a-local-docker-container"></a>在本機 Docker 容器中的偵錯工具
 
-Visual Studio 提供了一種一致的方式來開發 Docker 容器並在本地驗證應用程式。 您可以在 Linux 或 Windows 容器中運行和調試應用，這些容器在安裝了 Docker 的本地 Windows 桌面上運行，並且不必在每次更改代碼時重新開機容器。
+Visual Studio 提供一致的方式來開發 Docker 容器，並在本機驗證您的應用程式。 您可以在安裝了 Docker 的本機 Windows 桌面上，執行 Linux 或 Windows 容器中的應用程式，並不需要重新開機容器。
 
-本文演示如何使用 Visual Studio 在本地 Docker 容器中啟動應用，進行更改，然後刷新瀏覽器以查看更改。 本文還介紹了如何為容器化應用設置調試的中斷點。 支援的專案類型包括 .NET 框架和 .NET 核心 Web 和主控台應用。 在本文中，我們使用ASP.NET核心 Web 應用和 .NET 框架主控台應用。
+本文說明如何使用 Visual Studio 在本機 Docker 容器中啟動應用程式、進行變更，然後重新整理瀏覽器以查看變更。 本文也會示範如何設定中斷點以進行容器化應用程式的偵錯工具。 支援的專案類型包括 .NET Framework 和 .NET Core web 和主控台應用程式。 在本文中，我們會使用 ASP.NET Core web 應用程式和 .NET Framework 主控台應用程式。
 
-如果您已有受支援類型的專案，Visual Studio 可以創建 Dockerfile 並將專案配置為在容器中運行。 請參閱[視覺化工作室中的容器工具](overview.md)。
+如果您已經有支援類型的專案，Visual Studio 可以建立 Dockerfile，並將您的專案設定為在容器中執行。 請參閱[Visual Studio 中的容器工具](overview.md)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
-要調試本地 Docker 容器中的應用，必須安裝以下工具：
+若要在本機 Docker 容器中偵錯工具，必須安裝下列工具：
 
 ::: moniker range="vs-2017"
 
-* 安裝了 Web 開發工作負載的[視覺化工作室 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+* 已安裝 Web 開發工作負載的[Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-* 安裝了 Web 開發工作負載的[視覺化工作室 2019](https://visualstudio.microsoft.com/downloads)
+* 已安裝 Web 開發工作負載的[Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
-要在本地運行 Docker 容器，您必須具有本地 Docker 用戶端。 您可以使用 Docker[工具箱](https://www.docker.com/products/docker-toolbox)，這需要禁用 Hyper-V。 您還可以使用 Docker[用於 Windows](https://www.docker.com/get-docker)，它使用 Hyper-V 並且需要 Windows 10。
+若要在本機執行 Docker 容器，您必須擁有本機 Docker 用戶端。 您可以使用[Docker 工具箱](https://www.docker.com/products/docker-toolbox)，這需要停用 hyper-v。 您也可以使用[適用於 Windows 的 Docker](https://www.docker.com/get-docker)（使用 hyper-v），而且需要 Windows 10。
 
-Docker 容器可用於 .NET 框架和 .NET 核心專案。 讓我們來看以下兩個範例。 首先，我們查看 .NET 核心 Web 應用。 然後，我們查看 .NET 框架主控台應用。
+Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以下兩個範例。 首先，我們會查看 .NET Core web 應用程式。 然後，我們會查看 .NET Framework 的主控台應用程式。
 
 ## <a name="create-a-web-app"></a>建立 Web 應用程式
 
-如果您有專案，並且添加了[概述](overview.md)中所述的 Docker 支援，請跳過此部分。
+如果您有專案，而且已如[總覽](overview.md)中所述新增 Docker 支援，請略過本節。
 
 ::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
@@ -57,11 +57,11 @@ Docker 容器可用於 .NET 框架和 .NET 核心專案。 讓我們來看以下
 
 ### <a name="edit-your-code-and-refresh"></a>編輯您的程式碼並重新整理
 
-要快速反覆運算更改，可以在容器中啟動應用程式。 然後，繼續進行更改，像使用 IIS Express 一樣查看它們。
+若要快速反復查看變更，您可以在容器中啟動應用程式。 然後，繼續進行變更，如同使用 IIS Express 一樣加以查看。
 
-1. 確保 Docker 設置為使用正在使用的容器類型（Linux 或 Windows）。 按右鍵 Taskbar 上的 Docker 圖示，然後根據需要選擇 **"切換到 Linux 容器**"或 **"切換到 Windows 容器**"。
+1. 請確定 Docker 已設定為使用您所使用的容器類型（Linux 或 Windows）。 以滑鼠右鍵按一下工作列上的 [Docker] 圖示，然後選擇 [**切換至 Linux 容器**] 或 [視需要**切換到 Windows 容器**]。
 
-1. （.NET 核心 3 及更高版本）在 .NET Core >= 3.0 的預設範本中，不會啟用編輯代碼並刷新本節中所述的運行網站。 要啟用它，添加 NuGet 包[Microsoft.AspNetCore.Mvc.Razor.運行時編譯](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/)。 在*Startup.cs*中，向 方法中的代碼`IMvcBuilder.AddRazorRuntimeCompilation`添加對分機方法`ConfigureServices`的調用。 您只需要在 DEBUG 模式下啟用此功能，因此請按照如下方式對其進行編碼：
+1. （僅限 .NET Core 3 和更新版本）在 .NET Core 的預設範本中，不會啟用編輯您的程式碼並重新整理執行中的網站，如本節所述 >= 3.0。 若要啟用它，請新增[microsoft.aspnetcore.mvc.razor.runtimecompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/)的 NuGet 套件。 在*Startup.cs*中，將擴充方法的呼叫新增 `IMvcBuilder.AddRazorRuntimeCompilation` 至方法中的程式碼 `ConfigureServices` 。 您只需要在 [DEBUG] 模式中啟用此功能，因此請遵循下列程式碼：
 
     ```csharp
     public IWebHostEnvironment Env { get; set; }
@@ -81,21 +81,31 @@ Docker 容器可用於 .NET 框架和 .NET 核心專案。 讓我們來看以下
     }
     ```
 
-   有關詳細資訊，請參閱[ASP.NET 酷睿中的 Razor 檔編譯](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1)。
+    修改 `Startup` 方法，如下所示：
 
-1. 將**解決方案配置**設置為**調試**。 然後，按**Ctrl**+**F5**生成 Docker 映射並在本地運行。
+    ```csharp
+    public Startup(IConfiguration configuration, IWebHostEnvironment webHostEnvironment)
+    {
+        Configuration = configuration;
+        Env = webHostEnvironment;
+    }
+    ```
 
-    在 Docker 容器中生成和運行容器映射時，Visual Studio 會在預設瀏覽器中啟動 Web 應用。
+   如需詳細資訊，請參閱[ASP.NET Core 中的 Razor 檔案編譯](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1)。
 
-1. 轉到 *"索引"* 頁。 我們將在此頁面上進行更改。
-1. 返回到視覺化工作室並打開*索引.cshtml*。
-1. 將以下 HTML 內容添加到檔的末尾，然後保存更改。
+1. 將**解決方案**設定設為**Debug**。 然後，按下**Ctrl** + **F5**來建立您的 Docker 映射，並在本機執行。
+
+    建立容器映射並在 Docker 容器中執行時，Visual Studio 會在預設瀏覽器中啟動 web 應用程式。
+
+1. 移至 [*索引*] 頁面。 我們將在此頁面上進行變更。
+1. 返回 Visual Studio，然後開啟*Index. cshtml*。
+1. 將下列 HTML 內容新增至檔案結尾，然後儲存變更。
 
     ```html
     <h1>Hello from a Docker container!</h1>
     ```
 
-1. 在輸出視窗中，當 .NET 生成完成並且看到以下行時，切換回瀏覽器並刷新頁面：
+1. 在 [輸出] 視窗中，當 .NET 組建完成時，您會看到下列幾行，切換回您的瀏覽器並重新整理頁面：
 
    ```output
    Now listening on: http://*:80
@@ -106,60 +116,60 @@ Docker 容器可用於 .NET 框架和 .NET 核心專案。 讓我們來看以下
 
 ### <a name="debug-with-breakpoints"></a>使用中斷點進行偵錯
 
-通常，更改需要進一步檢查。 您可以為此任務使用 Visual Studio 的調試功能。
+變更通常需要進一步的檢查。 您可以使用 Visual Studio 的偵錯工具功能進行這項工作。
 
-1. 在視覺工作室，打開*Index.cshtml.cs*。
-2. 將`OnGet`方法的內容替換為以下代碼：
+1. 在 Visual Studio 中，開啟*Index.cshtml.cs*。
+2. 將方法的內容取代 `OnGet` 為下列程式碼：
 
    ```csharp
        ViewData["Message"] = "Your application description page from within a container";
    ```
 
-3. 在程式碼的左側，設置中斷點。
-4. 要開始調試並命中中斷點，請按 F5。
-5. 切換到視覺化工作室以查看中斷點。 檢查值。
+3. 在程式程式碼的左邊，設定中斷點。
+4. 若要開始進行調試，並叫用中斷點，請按 F5。
+5. 切換至 Visual Studio 以查看中斷點。 檢查值。
 
    ![中斷點](media/edit-and-refresh/breakpoint.png)
 
 ## <a name="create-a-net-framework-console-app"></a>建立.NET Framework 主控台應用程式
 
-使用 .NET 框架主控台應用專案時，不支援添加不進行業務流程的 Docker 支援的選項。 即使您只使用單個 Docker 專案，您仍可以使用以下過程。
+當您使用 .NET Framework 主控台應用程式專案時，不支援新增不含協調流程之 Docker 支援的選項。 您仍然可以使用下列程式，即使您只使用單一 Docker 專案也一樣。
 
-1. 創建新的 .NET 框架主控台應用專案。
-1. 在解決方案資源管理器中，按右鍵專案節點，然後選擇"**添加** > **容器業務流程支援**"。  在顯示的對話方塊中，選擇 **"Docker 撰寫**"。 Dockerfile 將添加到您的專案中，並添加具有相關支援檔的 Docker 撰寫專案。
+1. 建立新的 .NET Framework 主控台應用程式專案。
+1. 在方案總管中，以滑鼠右鍵按一下專案節點，然後選取 [**新增**  >  **容器協調流程支援**]。  在出現的對話方塊中，選取 [ **Docker Compose**]。 系統會將 Dockerfile 新增至您的專案，並加入具有相關聯支援檔案的 Docker Compose 專案。
 
 ### <a name="debug-with-breakpoints"></a>使用中斷點進行偵錯
 
-1. 在解決方案資源管理器中，打開*Program.cs*。
-2. 將`Main`方法的內容替換為以下代碼：
+1. 在方案總管中，開啟*Program.cs*。
+2. 將方法的內容取代 `Main` 為下列程式碼：
 
    ```csharp
        System.Console.WriteLine("Hello, world!");
    ```
 
 3. 在程式碼行的左側設定中斷點。
-4. 按 F5 開始調試並命中中斷點。
-5. 切換到視覺化工作室以查看中斷點並檢查值。
+4. 按 F5 開始進行調試，並叫用中斷點。
+5. 切換至 Visual Studio 以查看中斷點並檢查值。
 
    ![中斷點](media/edit-and-refresh/breakpoint-console.png)
 
-## <a name="container-reuse"></a>容器重用
+## <a name="container-reuse"></a>容器重複使用
 
-在開發週期中，Visual Studio 僅在更改 Dockerfile 時重建容器映射和容器本身。 如果不更改 Dockerfile，Visual Studio 將從較早的運行中重用該容器。
+在開發週期期間，Visual Studio 只會在您變更 Dockerfile 時，只重建您的容器映射和容器本身。 如果您未變更 Dockerfile，Visual Studio 會重複使用先前執行的容器。
 
-如果手動修改了容器，並希望使用乾淨的容器映射重新開機，請使用 Visual Studio 中的 **"生成** > **乾淨"** 命令，然後正常生成。
+如果您手動修改了您的容器，並想要使用全新的容器映射重新開機，請使用 Visual Studio 中的 [**組建**] [  >  **清除**] 命令，然後以一般方式建立。
 
 ## <a name="troubleshoot"></a>疑難排解
 
-瞭解如何[排除視覺工作室 Docker 開發故障](troubleshooting-docker-errors.md)。
+瞭解如何針對[Docker 開發 Visual Studio 進行疑難排解](troubleshooting-docker-errors.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
-通過閱讀 Visual [Studio 如何構建容器化應用程式](container-build.md)，獲取更多詳細資訊。
+閱讀[Visual Studio 如何建立容器化應用程式](container-build.md)，以取得更多詳細資料。
 
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>進一步了解 Docker 與 Visual Studio、Windows 和 Azure
 
-* 瞭解有關使用[Visual Studio 的容器開發](/visualstudio/containers)方面。
-* 要生成和部署 Docker 容器，請參閱[Azure 管道的 Docker 集成](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker)。
-* 有關 Windows 伺服器和 Nano 伺服器文章的索引，請參閱[Windows 容器資訊](/virtualization/windowscontainers/)。
-* 瞭解[Azure 庫伯奈斯服務](https://azure.microsoft.com/services/kubernetes-service/)並查看[Azure 庫伯奈斯服務文件](/azure/aks)。
+* 深入瞭解[使用 Visual Studio 的容器開發](/visualstudio/containers)。
+* 若要建立和部署 Docker 容器，請參閱[Azure Pipelines 的 docker 整合](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker)。
+* 如需 Windows Server 和 Nano Server 文章的索引，請參閱[windows 容器資訊](/virtualization/windowscontainers/)。
+* 瞭解[Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/)並參閱[Azure Kubernetes Service 檔](/azure/aks)。

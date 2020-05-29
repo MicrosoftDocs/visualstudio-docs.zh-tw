@@ -5,27 +5,27 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75678875"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183949"
 ---
 # <a name="create-a-new-project"></a>建立新的專案
 
 ## <a name="opening-the-project-creation-dialog"></a>開啟專案建立對話方塊
 
-有幾種方式可在 Visual Studio for Mac 中建立新的專案。 首次打開 Mac 的視覺化工作室時，將顯示啟動視窗。 從這裡，您可以選擇 **"新建"，** 該功能將帶您到專案創建螢幕。
+有幾種方式可在 Visual Studio for Mac 中建立新的專案。 當您第一次開啟 Visual Studio for Mac 時，就會顯示 [啟動] 視窗。 您可以從這裡選擇 [**新增**]，這會帶您前往 [專案建立] 畫面。
 
 > [!TIP]
-> 此外，從啟動視窗，您還可以打開和搜索最近的專案和解決方案。 您也可以移至功能表列並選擇 [檔案] > [最近使用的解決方案]****
+> 此外，您也可以從 [開始] 視窗開啟並搜尋最近使用的專案和方案。 您也可以移至功能表列並選擇 [檔案] > [最近使用的解決方案]****
 
-![使用創建新專案啟動視窗](media/first-run-project.png)
+![建立新專案的啟動視窗](media/first-run-project.png)
 
-如果 Visual Studio for Mac 已經開啟並載入解決方案，您可以移至功能表列並選擇 [檔案] > [新增解決方案]**** 來建立新的解決方案。 以這種方式創建新解決方案將關閉已載入的解決方案。
+如果 Visual Studio for Mac 已經開啟並載入解決方案，您可以移至功能表列並選擇 [檔案] > [新增解決方案]**** 來建立新的解決方案。 以這種方式建立新的方案會關閉已載入的方案。
 
-## <a name="creating-a-new-project-from-a-template"></a>從範本建立新專案
+## <a name="creating-a-new-project"></a>建立新專案
 
 [新增專案]**** 對話方塊預設會顯示您最近使用的範本，並依「最近用過的順序」** 排序。
 

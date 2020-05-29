@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 03/16/2020
+ms.date: 05/20/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,33 +15,37 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bf251ade250a466cefe02db6f5cc709a0c18837b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a6321e840941958fb2618a551a0212d6dc797cfb
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437739"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183375"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
-**更新[16.5 版本](/visualstudio/releases/2019/release-notes/)**
+**已針對[16.6 版本](/visualstudio/releases/2019/release-notes/)更新**
 
 >[!div class="button"]
 >[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
-使用 Visual Studio 2019，您會獲得同類產品中最佳的工具和服務，任何開發人員、任何應用程式及任何平台均適用。 無論您是第一次使用 Visual Studio，或是已使用多年，這個新版本還是有許多好用的功能！
+Visual Studio 不斷改變，以符合開發人員的需求。 在**[Microsoft Build](https://mybuild.microsoft.com/)** library 的下列影片中，加入我們的一些[最新功能](/visualstudio/releases/2019/release-notes/)的教學課程，並[搶先查看](/visualstudio/releases/2019/release-notes-preview/)內容： <br><br>*影片長度：44.58 分鐘*
 
-以下是新增功能的概要回顧：
+> [!VIDEO https://channel9.msdn.com/Events/Build/2020/BOD111/player]
 
-* **[開發](#develop)**：通過提高性能、即時代碼清理和更好的搜尋結果，保持專注和高效。
-* **[協作](#collaborate)**：通過 Git 優先工作流、即時編輯和調試以及 Visual Studio 中的代碼評論，享受自然協作。
-* **[調試](#debug)**：突出顯示並導航到特定值，優化記憶體使用，並自動拍攝應用程式執行的快照。
+使用 Visual Studio 2019，您會獲得同類產品中最佳的工具和服務，任何開發人員、任何應用程式及任何平台均適用。 無論您是第一次使用 Visual Studio，還是已使用過數年，我們最新的版本都有很多的需要！
+
+以下是最新功能的高階回顧：
+
+* **[開發](#develop)**：透過改良的效能、即時程式碼清理和更好的搜尋結果，保持焦點和生產力。
+* **[共同](#collaborate)** 作業：透過 Git 優先工作流程、即時編輯和偵錯工具，以及直接在 Visual Studio 中撰寫程式碼的方式，享用自然合作。
+* **[Debug](#debug)**：反白顯示並流覽至特定值、優化記憶體使用，以及自動執行應用程式的快照集。
 
 如需此版本中所有新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes/)。
 
 ## <a name="develop"></a>開發
 
-檢視下列影片以深入了解如何使用新功能來節省時間。 <br><br>*視頻長度： 3.00 分鐘*
+檢視下列影片以深入了解如何使用新功能來節省時間。 <br><br>*影片長度：3.00 分鐘*
 
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
@@ -104,23 +108,23 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 
 ### <a name="test-explorer"></a>測試總管
 
-**16.2 中的新增**功能：我們更新了測試資源管理器，以更好地處理大型測試集、更輕鬆地篩選、更易於發現的命令、選項卡式播放清單視圖和可自訂列，以便對顯示的測試資訊進行微調。
+**16.2 的新**功能：我們已更新測試瀏覽器，以提供更佳的大型測試集處理、更輕鬆的篩選、更容易探索的命令、索引標籤式播放清單，以及可自訂的資料行，讓您微調要顯示的測試資訊。
 
    ![顯示測試總管中的使用者介面改良功能的螢幕擷取畫面](media/vs-2019/test-explorer-ui.png)
 
 ### <a name="net-core"></a>.NET Core
 
-**新增功能 16.3**：我們已包含對 .NET Core 3.0 的支援。 跨平臺、開源&mdash;，並完全支援微軟。
+**16.3 的新**功能：我們已包含 .net Core 3.0 的支援。 跨平臺、開放原始碼， &mdash; 並受到 Microsoft 的完整支援。
 
-有關詳細資訊，請參閱[宣佈 .NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/)博客文章。
+如需詳細資訊，請參閱[宣佈 .Net Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/)的 blog 文章。
 
 ## <a name="collaborate"></a>共同作業
 
-檢視下列影片以深入了解如何進行團隊合作來解決問題。 <br><br>*視頻長度： 4.22 分鐘*
+檢視下列影片以深入了解如何進行團隊合作來解決問題。 <br><br>*影片長度：4.22 分鐘*
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
-### <a name="git-first-workflow"></a>Git 優先工作流
+### <a name="git-first-workflow"></a>Git 優先工作流程
 
 開啟 Visual Studio 2019 時，您會注意到新的開始視窗。
 
@@ -132,7 +136,7 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 
 開始視窗也包含開啟專案或解決方案、開啟本機資料夾，或建立新專案的選項。
 
-有關詳細資訊，請參閱["獲取代碼：我們如何設計新的 Visual Studio"視窗](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/)博客文章。
+如需詳細資訊，請參閱[取得程式碼：我們如何設計新的 Visual Studio 開始視窗的](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/)blog 文章。
 
 ### <a name="live-share"></a>Live Share
 
@@ -154,7 +158,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ## <a name="debug"></a>偵錯
 
-檢視下列影片以深入了解如何在進行偵錯時使用精確目標設定來集中精力。 <br><br>*視頻長度： 3.54 分鐘*
+檢視下列影片以深入了解如何在進行偵錯時使用精確目標設定來集中精力。 <br><br>*影片長度：3.54 分鐘*
 
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
@@ -178,7 +182,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
    ![Visual Studio 2019 中的新 [監看式] 視窗和格式值功能](media/search-watch-window.png)
 
-有關詳細資訊，請參閱 Visual [Studio 2019 中的增強功能：在"監視"、自動和本地變數 Windows 博客文章中搜索物件和屬性](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/)。
+如需詳細資訊，請參閱[Visual Studio 2019 中的增強功能：在監看式、自動變數和區域變數 Windows blog 文章中搜尋物件和屬性](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/)。
 
 ### <a name="snapshot-debugger"></a>快照集偵錯工具
 
@@ -192,21 +196,21 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ### <a name="microsoft-edge-insider-support"></a>Microsoft Edge Insider 支援
 
-**16.2 中的新增**功能：您可以在 JavaScript 應用程式中設置中斷點，並使用[Microsoft 邊緣內部人員](https://www.microsoftedgeinsider.com/)瀏覽器啟動調試會話。 當您這樣做的時候，Visual Studio 會在已啟用偵錯功能的情況下開啟新的瀏覽器視窗，讓您可以用來在 Visual Studio 內逐步執行應用程式 JavaScript。
+**16.2 的新**功能：您可以在 JavaScript 應用程式中設定中斷點，並使用[Microsoft Edge](https://www.microsoftedgeinsider.com/)測試人員瀏覽器啟動 debug 會話。 當您這樣做的時候，Visual Studio 會在已啟用偵錯功能的情況下開啟新的瀏覽器視窗，讓您可以用來在 Visual Studio 內逐步執行應用程式 JavaScript。
 
    ![瀏覽器中顯示 JavaScript 程式碼轉譯的螢幕擷取畫面](media/vs-2019/edge-chromium-breakpoint.png)
 
 ### <a name="pinnable-properties-tool"></a>可固定屬性工具
 
-**新增功能 16.4**：現在，使用新的"可固定屬性"工具調試物件時，可以更輕鬆地通過屬性標識物件。 只需將游標懸停在要在"監視"、自動和區域變數視窗的調試器視窗中顯示的屬性上，選擇 pin 圖示，然後立即在視窗頂部看到要查找的資訊！
+**16.4 的新**功能：現在，使用新的可固定屬性工具進行偵錯工具時，可以更輕鬆地依屬性來識別物件。 只要將游標暫留在您想要在 [監看式]、[自動變數] 和 [區域變數] 視窗的 [偵錯工具] 視窗中顯示的屬性上方，選取釘選圖示，即可立即在視窗頂端看到您要尋找的資訊！
 
-   ![演示如何使用"可固定屬性"工具在視覺化工作室調試器中固定屬性的動畫](media/vs-2019/debugger-pinnable-properties.gif)
+   ![動畫，顯示如何使用可固定屬性工具釘選 Visual Studio 偵錯工具中的屬性](media/vs-2019/debugger-pinnable-properties.gif)
 
-有關詳細資訊，請參閱[可固定屬性：調試&顯示託管物件您的方式](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/)博客文章。
+如需詳細資訊，請參閱[可固定屬性： Debug & 以您的方式顯示您的](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/)blog 文章的受控物件。
 
 ## <a name="whats-next"></a>後續步驟
 
-我們對 Visual Studio 2019 的更新通常附帶可大幅改善您開發體驗的新功能。 要瞭解更多關於我們的最新創新，請查看[視覺工作室博客](https://devblogs.microsoft.com/visualstudio/)。 有關我們迄今為止在預覽版上發佈的內容的記錄，請查看[預覽版本資訊](/visualstudio/releases/2019/release-notes-preview/)。 有關我們計畫下一步發佈的清單，請參閱[視覺化工作室路線圖](/visualstudio/productinfo/vs-roadmap)。
+我們對 Visual Studio 2019 的更新通常附帶可大幅改善您開發體驗的新功能。 若要深入瞭解我們最新的創新，請參閱[Visual Studio 的 Blog](https://devblogs.microsoft.com/visualstudio/)。 如需我們在預覽版中發行之內容的記錄，請參閱[預覽版本](/visualstudio/releases/2019/release-notes-preview/)資訊。 如需我們接下來要發行之內容的清單，請參閱[Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap)。
 
 想深入了解 Visual Studio 2019 中還包含哪些內容嗎？ 請參閱 [Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap/)。
 
@@ -221,7 +225,7 @@ Visual Studio 2019 預設會安裝這項服務。
 ## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 2019 版本資訊](/visualstudio/releases/2019/release-notes/)
-* [Visual Studio 2019 適用于 Mac 發行筆記](/visualstudio/releasenotes/vs2019-mac-relnotes/)
-* [視覺工作室 2019 SDK 中的新增功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [微軟構建會議](https://www.microsoft.com/build)
+* [Visual Studio 2019 for Mac 版本資訊](/visualstudio/releasenotes/vs2019-mac-relnotes/)
+* [Visual Studio 2019 SDK 的新功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Microsoft Build 會議](https://www.microsoft.com/build)
 * [Microsoft Ignite 會議](https://www.microsoft.com/ignite)

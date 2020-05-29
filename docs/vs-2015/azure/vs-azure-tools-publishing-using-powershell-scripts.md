@@ -11,20 +11,20 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 264647dbb22e90d722bc8a80a5b05c08d6e8366b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 6913ec4c80b5cb87cf6cd980ff2da73fab309a02
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917483"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184012"
 ---
-# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 指令碼來發佈開發與測試環境
+# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 指令碼來發行至開發和測試環境
 
 當您在 Visual Studio 中建立 Web 應用程式時，您可以產生 Windows PowerShell 指令碼，以供稍後用來將網站自動發佈至 Azure 做為 Azure App Service 或虛擬機器中的 Web 應用程式。 您可以在 Visual Studio 編輯器中編輯和擴充 Windows PowerShell 指令碼以符合需求，或將指令碼整合到現有組建、測試和發佈指令碼。
 
 使用這些指令碼，您可以佈建網站的自訂版本 (也稱為開發和測試環境)，以做臨時使用。 例如，您可以在 Azure 虛擬機器上或網站的預備位置上設定網站的特定版本，以執行測試套件、重現錯誤、測試錯誤修正、試驗提議的變更，或設定用來進行示範或展示的自訂環境。 在建立用來發佈專案的指令碼後，您可以視需要重新執行指令碼來重建相同環境，或對 Web 應用程式的自有組建執行指令碼以建立用於測試的自訂環境。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>Prerequisites
 
 * Azure SDK 2.3 或更新版本。 請參閱 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)。 (要產生 Web 專案的指令碼並不需要用到 Azure SDK。 這項功能是供 Web 專案使用，而非供雲端服務中的 Web 角色使用。)
 * Azure PowerShell 0.7.4 或更新版本。 請參閱 [如何安裝和設定 Azure PowerShell](/powershell/azure/overview)。
@@ -40,7 +40,7 @@ ms.locfileid: "75917483"
 
 ## <a name="scripts-that-visual-studio-generates"></a>Visual Studio 所產生的指令碼
 
-Visual Studio 會產生名為 **PublishScripts** 的方案層級資料夾，並內含兩個 Windows PowerShell 檔案，一個是用於虛擬機器或網站的發佈指令碼，一個是含有可在指令碼中使用之函式的模組。 Visual Studio 也會產生 JSON 格式的檔案，以指定您要部署之專案的詳細資料。
+Visual Studio 會產生一個解決方案層級的資料夾 (稱為 **PublishScripts**)，其中包含兩個 Windows PowerShell 檔案、您的虛擬機器或網站的發行指令碼，以及含有指令碼中可用函數的模組。 Visual Studio 也會產生 JSON 格式的檔案，以指定您要部署之專案的詳細資料。
 
 ### <a name="windows-powershell-publish-script"></a>Windows PowerShell 發佈指令碼
 
@@ -52,7 +52,7 @@ Visual Studio 所產生的 Windows PowerShell 模組包含發佈指令碼所使�
 
 ### <a name="json-configuration-file"></a>JSON 組態檔
 
-JSON 檔案建立在 [組態] 資料夾，其包含的組態資料可確切指定要部署至 Azure 的資源。 Visual Studio 所產生之檔案的名稱是 project-name-WAWS-dev.json (如果您建立網站) 或 project name-VM-dev.json (如果您建立虛擬機器)。 以下是建立網站時所產生之 JSON 組態檔的範例。 其中大多數的值都簡單易懂。 網站名稱是由 Azure 產生，因此可能不符合您的專案名稱。
+JSON 檔案建立於 **Configurations** 資料夾中，而且包含可明確指定要部署至 Azure 資源的組態資料。 Visual Studio 所產生之檔案的名稱是 project-name-WAWS-dev.json (如果您建立網站) 或 project name-VM-dev.json (如果您建立虛擬機器)。 以下是建立網站時所產生之 JSON 組態檔的範例。 其中大多數的值都簡單易懂。 網站名稱是由 Azure 產生，因此可能不符合您的專案名稱。
 
 ```json
 {
@@ -144,7 +144,7 @@ JSON 檔案建立在 [組態] 資料夾，其包含的組態資料可確切指�
 
 您可以編輯 JSON 組態以變更執行發佈指令碼時會進行的作業。 `cloudService` 和 `virtualMachine` 是必要區段，但如果您不需要 `databases` 區段，則可以將它刪除。 Visual Studio 所產生的預設組態檔中的空白屬性是選用屬性；預設組態檔中具有值的屬性則是必要屬性。
 
-如果您有內含多個部署環境 (稱為位置) 的網站而不是在 Azure 中的單一生產網站，您可以在 JSON 組態檔的網站名稱中加入位置名稱。 例如，如果您擁有名為 **mysite** 的網站和名為 **test** 的位置，則 URI 是 `mysite-test.cloudapp.net`，但要在組態檔中使用的正確名稱是 mysite(test)。 只有在訂用帳戶中已存在網站和位置時才能這麼做。 如果不存在，請執行指令碼 (不指定位置) 來建立網站，然後在 [Azure 入口網站](https://portal.azure.com/)中建立位置，之後再以修改過的網站名稱執行指令碼。 如需 Web 應用程式部署位置的詳細資訊，請參閱 [針對 Azure App Service 中的 Web 應用程式設定預備環境](/azure/app-service/web-sites-staged-publishing)。
+如果您有內含多個部署環境 (稱為位置) 的網站而不是在 Azure 中的單一生產網站，您可以在 JSON 組態檔的網站名稱中加入位置名稱。 例如，如果您有名為 **mysite** 的網站以及名為 **test** 的部署位置，則 URI 為 `mysite-test.cloudapp.net`，但要用於組態檔中的正確名稱為 mysite(test)。 只有在訂用帳戶中已存在網站和位置時才能這麼做。 如果不存在，請執行指令碼 (不指定位置) 來建立網站，然後在 [Azure 入口網站](https://portal.azure.com/)中建立位置，之後再以修改過的網站名稱執行指令碼。 如需 Web 應用程式部署位置的詳細資訊，請參閱 [針對 Azure App Service 中的 Web 應用程式設定預備環境](/azure/app-service/web-sites-staged-publishing)。
 
 ## <a name="how-to-run-the-publish-scripts"></a>如何執行發佈指令碼
 
@@ -154,11 +154,11 @@ JSON 檔案建立在 [組態] 資料夾，其包含的組態資料可確切指�
 
 1. 建立專案的 Web Deploy 封裝。 Web Deploy 封裝是經過壓縮的封存檔 (.zip 檔案)，內含您想要複製到網站或虛擬機器的檔案。 您可以在 Visual Studio 中為任何 Web 應用程式建立 Web Deploy 封裝。
 
-   ![建立 Web 部署封裝](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
+   ![建立 Web Deploy 封裝](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
    如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Web 部署封裝](https://msdn.microsoft.com/library/dd465323.aspx)。 您也可以自動建立 Web Deploy 套件，如[自訂和擴充發佈指令碼](#customizing-and-extending-the-publish-scripts)中所述。
 
-1. 在 [方案總管] 中，開啟指令碼的內容功能表，然後選擇 [以 PowerShell ISE 開啟]。
+1. 在 [方案總管]**** 中，開啟指令碼的內容功能表，然後選擇 [以 PowerShell ISE 開啟]****。
 1. 如果第一次在此電腦上執行 Windows PowerShell 指令碼，請以系統管理員權限開啟命令提示字元視窗，並輸入下列命令：
 
     ```powershell
@@ -244,7 +244,7 @@ JSON 檔案建立在 [組態] 資料夾，其包含的組態資料可確切指�
     }
     ```
 
-1. 以下列程式碼取代 `New-WebDeployPackage`，並取代建構 `$msbuildCmd` 的程式行中的預留位置。 此程式碼係用於 Visual Studio 2015。 如果您使用的是 Visual Studio 2017，請將**VisualStudioVersion**屬性變更為 `15.0` （`12.0` 以進行 Visual Studio 2013）。
+1. 以下列程式碼取代 `New-WebDeployPackage`，並取代建構 `$msbuildCmd` 的程式行中的預留位置。 此程式碼係用於 Visual Studio 2015。 如果您使用的是 Visual Studio 2017，請將**VisualStudioVersion**屬性變更為 `15.0` （ `12.0` 適用于 Visual Studio 2013）。
 
     ```powershell
     function New-WebDeployPackage
@@ -252,7 +252,7 @@ JSON 檔案建立在 [組態] 資料夾，其包含的組態資料可確切指�
         #Write a function to build and package your web application
     ```
 
-    若要建置 Web 應用程式，使用 MsBuild.exe。 如需說明，請參閱下列網址中的 MSBuild 命令列參考：[http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
+    若要建置 Web 應用程式，使用 MsBuild.exe。 如需說明，請參閱 MSBuild 命令列參考，網址為：[http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -308,22 +308,22 @@ return $WebDeployPackage
     若要自動測試應用程式，請將程式碼加入 `Test-WebApplication`。 請務必要將 **Publish-WebApplication.ps1** 中呼叫這些函式的程式行取消註解。 如果您沒有提供實作，您可以使用 Visual Studio 手動建置專案，然後執行發佈指令碼以發佈至 Azure。
 
 ## <a name="publishing-function-summary"></a>發佈函式摘要
-若要取得可以在 Windows PowerShell 命令提示字元使用之函式的說明，請使用 `Get-Help function-name`命令。 說明中會包括參數說明和範例。 **AzureWebAppPublishModule.psm1** 和 **Publish-WebApplication.ps1** 指令碼原始程式檔中也有相同的說明文字。 指令碼和說明都已當地語系化為 Visual Studio 所使用的語言。
+若要取得可以在 Windows PowerShell 命令提示字元使用之函式的說明，請使用 `Get-Help function-name`命令。 說明中會包括參數說明和範例。 腳本來源檔案中也有相同的解說文字**azurewebapppublishmodule.psm1. .psm1**和**publish-webapplication.ps1**。 指令碼和說明都已當地語系化為 Visual Studio 所使用的語言。
 
 **AzureWebAppPublishModule**
 
 | 函式名稱 | 描述 |
 | --- | --- |
-| Add-AzureSQLDatabase |建立新的 Azure SQL Database。 |
-| Add-AzureSQLDatabases |從 Visual Studio 所產生的 JSON 組態檔中的值建立 Azure SQL Database。 |
+| Add-AzureSQLDatabase |建立新的 Azure SQL 資料庫。 |
+| Add-AzureSQLDatabases |從 Visual Studio 所產生的 JSON 組態檔中的值建立 Azure SQL 資料庫。 |
 | Add-AzureVM |建立 Azure 虛擬機器並傳回所部署 VM 的 URL。 函式會設定必要條件，然後呼叫 **New-AzureVM** 函式 (Azure 模組) 以建立新的虛擬機器。 |
 | Add-AzureVMEndpoints |將新的輸入端點加入至虛擬機器，並傳回具有新端點的虛擬機器。 |
 | Add-AzureVMStorage |在目前的訂用帳戶中建立新的 Azure 儲存體帳戶。 帳戶名稱開頭是 "devtest"，後面接著唯一的英數字元字串。 此函式會傳回新儲存體帳戶的名稱。 指定新儲存體帳戶的位置或同質群組。 |
-| Add-AzureWebsite |使用指定的名稱和位置建立網站。 此函式會呼叫 Azure 模組中的 **New-AzureWebsite** 函式。 如果訂用帳戶還沒有具有指定名稱的網站，此函式會建立該網站並傳回網站物件。 否則，它會傳回 `$null`。 |
+| Add-AzureWebsite |使用指定的名稱和位置建立網站。 此函式會呼叫 Azure 模組中的 **New-AzureWebsite** 函式。 如果訂用帳戶還沒有具有指定名稱的網站，此函式會建立該網站並傳回網站物件。 否則會傳回 `$null`。 |
 | Backup-Subscription |在指令碼範圍的 `$Script:originalSubscription` 變數中儲存目前的 Azure 訂用帳戶。 此函式會在指令碼範圍中，儲存目前的 Azure 訂用帳戶 (由 `Get-AzureSubscription -Current` 取得) 與其儲存體帳戶，以及此指令碼所變更的訂用帳戶 (儲存在 `$UserSpecifiedSubscription` 變數中) 與其儲存體帳戶。 透過儲存這些值，您可以使用函式 (例如 `Restore-Subscription`) 將原始的目前訂用帳戶和儲存體帳戶還原為目前狀態 (如果目前狀態已變更)。 |
 | Find-AzureVM |取得指定的 Azure 虛擬機器。 |
 | Format-DevTestMessageWithTime |在訊息前面加上日期和時間。 此函式是專為寫入 Error 和 Verbose 串流的訊息所設計。 |
-| Get-AzureSQLDatabaseConnectionString |組合連接字串來連線到 Azure SQL Database。 |
+| Get-AzureSQLDatabaseConnectionString |組合連接字串來連線到 Azure SQL 資料庫。 |
 | Get-AzureVMStorage |傳回指定位置或同質群組中，名稱模式為 "devtest *" （不區分大小寫）的第一個儲存體帳戶名稱。如果 "devtest*" 儲存體帳戶不符合位置或同質群組，則函式會忽略它。 指定位置或同質群組。 |
 | Get-MSDeployCmd |傳回執行 MsDeploy.exe 工具的命令。 |
 | New-AzureVMEnvironment |在訂用帳戶中尋找或建立符合 JSON 組態檔中的值的虛擬機器。 |
@@ -337,7 +337,7 @@ return $WebDeployPackage
 | Test-Member |如果屬性或方法是物件的成員，則傳回 `$true` 。 否則傳回 `$false`。 |
 | Write-ErrorWithTime |寫入前面會加上目前時間的錯誤訊息。 此函式會呼叫 **Format-DevTestMessageWithTime** 函式，以在將訊息寫入 Error 串流之前在訊息前面加上時間。 |
 | Write-HostWithTime |將前面會加上目前時間的訊息寫入主機程式 (**Write-Host**)。 寫入主機程式的效果並不一定。 大部分裝載 Windows PowerShell 的程式會將這些訊息寫入標準輸出。 |
-| Write-VerboseWithTime |寫入前面會加上目前時間的詳細資訊訊息。 它會呼叫 **Write-Verbose**，所以只有當指令碼搭配 **Verbose** 參數執行或當 [VerbosePreference] 喜好設定設為 [繼續] 時，才會顯示訊息。 |
+| Write-VerboseWithTime |寫入前面會加上目前時間的詳細資訊訊息。 它會呼叫 **Write-Verbose**，所以只有當指令碼搭配 **Verbose** 參數執行或當 [VerbosePreference]**** 喜好設定設為 [繼續]**** 時，才會顯示訊息。 |
 
 **Publish-WebApplication**
 
@@ -350,4 +350,4 @@ return $WebDeployPackage
 | Test-WebApplication |此函式未實作。 您可以在此函式新增命令來測試應用程式。 |
 
 ## <a name="next-steps"></a>後續步驟
-請參閱[使用 Windows PowerShell 撰寫指令碼](https://technet.microsoft.com/library/bb978526.aspx)來深入了解 PowerShell 指令碼，並參閱[指令碼中心](https://azure.microsoft.com/documentation/scripts/)內的其他 Azure PowerShell 指令碼。
+請參閱[使用 Windows PowerShell 撰寫指令碼](/powershell/scripting/overview)來深入了解 PowerShell 指令碼，並參閱[指令碼中心](https://azure.microsoft.com/documentation/scripts/)內的其他 Azure PowerShell 指令碼。

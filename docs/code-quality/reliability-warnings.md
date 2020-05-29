@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4b888dbbe7a26e5ff333ec39aa0fdfcec90b429
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: d45deadc48445e043535e84b36718a14f5b391f6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586207"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182803"
 ---
 # <a name="reliability-warnings"></a>可靠性警告
 
@@ -33,5 +33,7 @@ ms.locfileid: "82586207"
 |[CA2003:不要將 Fiber 視為執行緒](../code-quality/ca2003.md)|Managed 執行緒被視為 Win32 執行緒。|
 |[CA2004:必須移除對 GC.KeepAlive 的呼叫](../code-quality/ca2004.md)|如果您要轉換成 SafeHandle 使用方式，請移除所有對 GC 的呼叫。KeepAlive （物件）。 在此情況下，類別應該不需要呼叫 GC。KeepAlive，假設它們沒有完成項，但依賴 SafeHandle 來完成作業系統控制碼。|
 |[CA2006:必須使用 SafeHandle 封裝原生資源](../code-quality/ca2006.md)|在 Managed 程式碼中使用 IntPtr，可能會有潛在的安全性和可靠性問題。 必須檢閱所有使用 IntPtr 的情況，判斷是否需要在該處使用 SafeHandle (或類似技術)。|
-|[CA2007:不直接等候工作](../code-quality/ca2007.md)|非同步方法會[awaits](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task>直接等候。|
-|[CA2009：不要在 ImmutableCollection 值上呼叫 Tolmmutablecollection](../code-quality/ca2009.md)|`ToImmutable`不必要地在<xref:System.Collections.Immutable>命名空間的不可變集合上呼叫方法。|
+|[CA2007:不直接等候工作](../code-quality/ca2007.md)|非同步方法會[awaits](/dotnet/csharp/language-reference/keywords/await)直接等候 <xref:System.Threading.Tasks.Task> 。|
+|[CA2009：請勿對 ImmutableCollection 值呼叫 TolmmutableCollection](../code-quality/ca2009.md)|`ToImmutable`不必要地在命名空間的不可變集合上呼叫方法 <xref:System.Collections.Immutable> 。|
+|[CA2011：不要在其 setter 中指派屬性](../code-quality/ca2011.md) | 屬性在其本身的[set 存取](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)子中不小心指派了值。 |
+|[CA2015：請勿針對衍生自 MemoryManager T 的類型定義完成項 &lt;&gt;](../code-quality/ca2015.md) | 將完成項加入至衍生自的類型 <xref:System.Buffers.MemoryManager%601> 時，可能會允許記憶體在仍由使用時釋放 <xref:System.Span%601> 。 |

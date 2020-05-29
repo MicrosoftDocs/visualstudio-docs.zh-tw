@@ -16,24 +16,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beb16ae52f880e31bd19a185d47b13c02026752f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916150"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183557"
 ---
-# <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>在設計階段于 Visual Studio （C#， C++/cli，Visual Basic， F#）中進行 Debug
+# <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>在設計階段的 Visual Studio 中進行調試（c #、c + +/CLI、Visual Basic、F #）
 
 若要在設計階段時（而不是在應用程式執行時）進行偵錯工具代碼，您可以**使用 [即時**運算] 視窗。
 
-若要從 XAML 設計工具（例如宣告式資料系結案例），對應用程式背後的 XAML 程式碼進行偵錯工具，您可以使用**debug** > **附加至進程**。
+若要從 xaml 設計工具（例如宣告式資料系結案例）對應用程式背後的 xaml 程式碼進行驗證，您可以使用**debug**  >  **Attach 來處理**。
 
 ## <a name="use-the-immediate-window"></a>使用即時運算視窗
 
 您可以使用 **[Visual Studio 即時**運算] 視窗來執行函式或副程式，而不需要執行您的應用程式。 如果函數或副程式包含中斷點，Visual Studio 會在中斷點中斷。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 這項功能*在設計階段*稱為「調試」。
 
-下列範例在 Visual Basic 中。 您也可以在、 F#和C++/cli 應用程式中C# **，于設計階段使用 [即時**運算] 視窗。
+下列範例在 Visual Basic 中。 您也可以在設計階段使用 c #、F # 和 c + +/CLI 應用程式中**的 [即時**運算] 視窗。
 
 1. 將下列程式碼貼入空白的 Visual Basic 主控台應用程式：
 
@@ -59,17 +59,17 @@ ms.locfileid: "75916150"
 
 1. 在行**尾函數**上設定中斷點。
 
-1. 選取 [ **Debug** > **Windows** > **immediate**] 來開啟 [即時運算] 視窗。 在視窗中輸入 `?MyFunction`，然後按**enter**鍵。
+1. 選取 [立即**調試**程式 **]，以**開啟 [即時運算] 視窗  >  **Windows**  >  ** **。 `?MyFunction`在視窗中輸入，然後按**enter**。
 
    叫用中斷點，而 [**區域變數**] 視窗中**MyFunction**的值為**1**。 當應用程式處於中斷模式時，您可以檢查呼叫堆疊和其他的偵錯工具視窗。
 
 1. 選取 [Visual Studio] 工具列上的 [**繼續**]。 應用程式會結束，而在 [即時運算] 視窗**中則會**傳回**1** 。 請確定您仍處於設計模式。
 
-1. 再次**在 [即時**運算] 視窗中輸入 `?MyFunction`，然後按**enter**鍵。 叫用中斷點，而 [**區域變數**] 視窗中**MyFunction**的值為**2**。
+1. `?MyFunction`再次在 [ **Immediate**即時運算] 視窗中輸入，然後按**enter**鍵。 叫用中斷點，而 [**區域變數**] 視窗中**MyFunction**的值為**2**。
 
-1. 若未選取 [**繼續**]，請**在 [** 即時運算] 視窗中輸入 `?MySub()`，然後按**enter**鍵。 叫用中斷點，而 [**區域變數**] 視窗中**MyFunction**的值為**3**。 當應用程式處於中斷模式時，您可以檢查應用程式狀態。
+1. 若未選取 [**繼續**]，請 `?MySub()` 在 [即時運算] 視窗中輸入，然後按**enter**。 **Immediate** 叫用中斷點，而 [**區域變數**] 視窗中**MyFunction**的值為**3**。 當應用程式處於中斷模式時，您可以檢查應用程式狀態。
 
-1. 選取 **\[繼續\]** 。 再次叫用中斷點，而 [**區域變數**] 視窗中的**MyFunction**值現在是**2**。 [**即時**運算] 視窗傳回的**運算式已經過評估，而且沒有任何值**。
+1. 選取 [繼續]  。 再次叫用中斷點，而 [**區域變數**] 視窗中的**MyFunction**值現在是**2**。 [**即時**運算] 視窗傳回的**運算式已經過評估，而且沒有任何值**。
 
 1. 再次選取 [**繼續**]。 應用程式會結束，而且會**在 [即時**運算] 視窗中傳回**2** 。 請確定您仍處於設計模式。
 
@@ -83,17 +83,17 @@ ms.locfileid: "75916150"
 
 1. 開啟包含您要進行偵錯工具之自訂控制項的 XAML 頁面。
 
-   針對以 Windows 組建16299或更新版本為目標的 UWP 專案，此步驟會啟動*UwpSurface*進程。 針對 Windows 組建16299之前的 WPF 或 UWP 版本，此步驟將啟動*xdesproc.exe*進程。
+   針對以 Windows 組建16299或更新版本為目標的 UWP 專案，此步驟會啟動*UwpSurface*進程。 針對以 Windows 組建16299或更新版本為目標的 WPF 專案，此步驟會啟動*WpfSurface*進程。 針對 Windows 組建16299之前的 WPF 或 UWP 版本，此步驟將啟動*xdesproc.exe]* 進程。 
 
 1. 開啟 Visual Studio 的第二個執行個體。 請勿在第二個實例中開啟方案或專案。
 
-1. 在 Visual Studio 的第二個實例中，開啟 [**調試**程式] 功能表，然後選擇 [**附加至進程 ...** ]。
+1. 在 Visual Studio 的第二個實例中，開啟 [**調試**程式] 功能表，然後選擇 [**附加至進程 ...**]。
 
-1. 視您的專案類型而定（請參閱先前的步驟），從可用的進程清單中選取*UwpSurface*或*xdesproc.exe*處理常式。
+1. 視您的專案類型而定（請參閱先前的步驟），從可用的進程清單中選取*UwpSurface*、 *WpfSurface*或*xdesproc.exe]* 進程。
 
 1. 在 [**附加至進程**] 對話方塊的 [**附加至**] 欄位中，為您想要進行 debug 的自訂控制項選擇正確的程式碼類型。
 
-   如果您的自訂控制項是以 .NET 語言撰寫的，請選擇適當的 .NET 程式碼類型，例如**Managed （CoreCLR）** 。 如果您已在中C++撰寫自訂控制項，請選擇 [**原生**]。
+   如果您的自訂控制項是以 .NET 語言撰寫的，請選擇適當的 .NET 程式碼類型，例如**Managed （CoreCLR）**。 如果您的自訂控制項已以 c + + 撰寫，請選擇 [**原生**]。
 
 1. 按一下 [**附加**] 按鈕，附加 Visual Studio 的第二個實例。
 
@@ -107,6 +107,6 @@ ms.locfileid: "75916150"
 
 1. 在 Visual Studio 的第二個實例中，對程式碼進行偵錯工具。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [偵錯工具安全性](../debugger/debugger-security.md)

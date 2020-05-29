@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f756d432d9ff4d3824c1f1165c63710e4d10c2e9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8210ceeb26c3350822d95f85af7689a37894dba9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594886"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184051"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>使用 MSBuild 取得組建記錄檔
 
@@ -47,7 +47,7 @@ msbuild MyProject.proj -t:go -v:diag
 
 下表顯示記錄檔的詳細資訊 (資料行值) 對記錄哪些類型的訊息 (資料列的值) 有什麼影響。
 
-|                                       | Quiet | 最小 | 正常 | 詳細 | Diagnostic |
+|                                       | Quiet | 基本 | 正常 | 詳細 | Diagnostic |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
 | Errors                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | 警告                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
@@ -64,7 +64,7 @@ msbuild MyProject.proj -t:go -v:diag
 msbuild MyProject.proj -t:go -fileLogger
 ```
 
- 在下列範例中，會將記錄檔命名為 *MyProjectOutput.log*，並將記錄檔輸出的詳細資訊設為 `diagnostic`。 您可以使用 **-filelog 參數**（`flp`） 開關指定這兩個設置。
+ 在下列範例中，會將記錄檔命名為 *MyProjectOutput.log*，並將記錄檔輸出的詳細資訊設為 `diagnostic`。 您可以使用 **-fileLoggerParameters** （）參數來指定這兩個設定 `flp` 。
 
 ```cmd
 msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic
@@ -76,7 +76,7 @@ msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diag
 
  下列範例會將整個記錄檔儲存至 *msbuild1.log*、只將錯誤儲存至 *JustErrors.log*，並且只將警告儲存至 *JustWarnings.log*。 這個範例會針對這三個檔案的每個檔案使用檔案號碼。 檔案號碼會指定於 **-fl** 和 **-flp** 參數 (例如，`-fl1` 和 `-flp1`) 的正後方。
 
- 檔 2 和 3`flp`的 **-filelog 參數**（ ） 的開關指定每個檔的名稱以及每個檔中要包含的內容。 由於未指定檔案 1 的名稱，因此會使用 *msbuild1.log* 的預設名稱。
+ 檔案2和3的 **-fileLoggerParameters** （ `flp` ）參數會指定每個檔案的名稱，以及要在每個檔案中包含的內容。 由於未指定檔案 1 的名稱，因此會使用 *msbuild1.log* 的預設名稱。
 
 ```cmd
 msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly
@@ -86,7 +86,7 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
 ## <a name="save-a-binary-log"></a>儲存二進位記錄檔
 
-您可以使用 **-binaryLogger** （**bl**） 開關以壓縮的二進位格式保存日誌。 此記錄檔包含建置程序的詳細描述，並可以由特定的記錄分析工具讀取。
+您可以使用 **-binaryLogger** （**bl**）參數，將記錄檔儲存為壓縮的二進位格式。 此記錄檔包含建置程序的詳細描述，並可以由特定的記錄分析工具讀取。
 
 在下列範例中，會建立具有名稱 *binarylogfilename* 的二進位記錄檔。
 
