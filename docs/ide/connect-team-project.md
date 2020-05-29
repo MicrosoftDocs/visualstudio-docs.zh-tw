@@ -1,16 +1,16 @@
 ---
 title: 在 Team Explorer 中連線到專案
-ms.date: 03/31/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: fe4ce27d8783d457015310ef4d6fadfde230b97c
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 8b79dff4815b8a03d81d66a3d64d0e23439e4021
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472748"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183700"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>在 Team Explorer 中連線到專案
 
@@ -19,7 +19,7 @@ ms.locfileid: "80472748"
 ![Visual Studio 中的 Team Explorer [首頁]](media/team-explorer/team-explorer.png)
 
 > [!TIP]
-> 如果您開啟 Visual Studio 且未顯示 **Team Explorer**，請從功能表列選擇 [檢視]**** > **Team Explorer** 將它開啟。
+> 如果您開啟 Visual Studio 而且**Team Explorer**未出現，請從功能表列選擇 [ **View**  >  **Team Explorer** ]，或按**ctrl** + **&#92;**、 **ctrl** + **M**來開啟它。
 
 ## <a name="connect-to-a-project-or-repository"></a>連線到專案或存放庫
 
@@ -44,4 +44,4 @@ ms.locfileid: "80472748"
 
 - [Team Explorer 參考](reference/team-explorer-reference.md)
 - [連線到專案 (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)
-- [連接到項目的故障排除](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)
+- [針對連接到專案的問題進行疑難排解](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)

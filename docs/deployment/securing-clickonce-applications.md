@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09d447a33e73c2f27598b027788b3cf1dcd2822b
-ms.sourcegitcommit: 960bab34e126c9ca449560a76a839a8f8c3263fb
+ms.openlocfilehash: 24b8416508ee5800ab581a1a58cedee1e5725cab
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82139633"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184441"
 ---
 # <a name="secure-clickonce-applications"></a>保護 ClickOnce 應用程式
 在 .NET Framework 中，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式受到程式碼存取安全性條件約束的限制，因此能夠協助限制程式碼對受保護之資源和作業的存取。 因此，很重要的是您必須了解程式碼存取安全性的含意，照著撰寫 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 您的應用程式可以使用完全信任或部分信任區域 (例如網際網路和內部網路區域) 以限制存取。
@@ -41,11 +41,11 @@ ms.locfileid: "82139633"
  預設的使用權限是根據應用程式原始版本的部署位置而定，此應用程式的更新仍會繼承這些使用權限。 如果將應用程式設定為從 Web 或網路位置檢查是否有更新，且發現有新版本可用時，原始安裝程序可能會取得網際網路或內部網路區域的使用權限，而非「完全信任」使用權限。 若要避免使用者看到提示，系統管理員可以指定 ClickOnce 部署原則，將特定的應用程式發行者定義為受信任的來源。 在部署此原則的電腦上，會自動授與使用權限，因此使用者就不會看到提示。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。 若要設定信任的應用程式部署，可以在電腦或企業層級安裝憑證。 如需詳細資訊，請參閱 [ 如何： 新增 ClickOnce 應用程式的用戶端電腦受信任的發行者](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)。
 
 ## <a name="code-access-security-policies"></a>程式碼存取安全性原則
- 應用程式的許可權是由應用程式資訊清單之[ \<trustInfo> 元素](../deployment/trustinfo-element-clickonce-application.md)元素中的設定所決定。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會根據專案的 [安全性] **** 屬性頁設定，自動產生此資訊。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式只能取得它所要求的特定權限， 例如，假設檔案存取需要「完全信任」權限，如果應用程式要求「檔案存取」權限，那麼它只能取得「檔案存取」權限，而不是「完全信任」權限。 當您開發 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，應該確定只要求應用程式所需的特定權限。 在大部分情況下，您可以使用 [網際網路] 或 [近端內部網路] 區域將應用程式限制為部分信任。 如需詳細資訊，請參閱[如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。 如果應用程式需要自訂權限，您可以建立自訂區域。 如需詳細資訊，請參閱[如何：設定 ClickOnce 應用程式的自訂許可權](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。
+ 應用程式的許可權是由應用程式資訊清單的[ \<trustInfo> element](../deployment/trustinfo-element-clickonce-application.md)元素中的設定所決定。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會根據專案的 [安全性] **** 屬性頁設定，自動產生此資訊。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式只能取得它所要求的特定權限， 例如，假設檔案存取需要「完全信任」權限，如果應用程式要求「檔案存取」權限，那麼它只能取得「檔案存取」權限，而不是「完全信任」權限。 當您開發 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，應該確定只要求應用程式所需的特定權限。 在大部分情況下，您可以使用 [網際網路] 或 [近端內部網路] 區域將應用程式限制為部分信任。 如需詳細資訊，請參閱[如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。 如果應用程式需要自訂權限，您可以建立自訂區域。 如需詳細資訊，請參閱[如何：設定 ClickOnce 應用程式的自訂許可權](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。
 
  若包含部署應用程式的區域預設權限以外的權限，在安裝或更新期間，將會造成提示使用者授權。 若要避免使用者看到提示，系統管理員可以指定 ClickOnce 部署原則，將特定的應用程式發行者定義為受信任的來源。 在部署此原則的電腦上，使用權限會自動授與，因此使用者就不會看到提示。
 
- 身為開發人員，您有責任確保您的應用程式能以適當的使用權限執行。 如果應用時間在執行階段要求區域外的權限，可能會發生安全性例外狀況。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可讓您在目標安全性區域中偵錯應用程式， 並於開發安全應用程式時提供協助。 如需詳細資訊，請參閱[使用 system.object 的 Debug ClickOnce 應用程式](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)。
+ 身為開發人員，您有責任確保您的應用程式能以適當的使用權限執行。 如果應用時間在執行階段要求區域外的權限，可能會發生安全性例外狀況。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可讓您在目標安全性區域中，對您的應用程式進行調試，並提供開發安全應用程式的協助。 如需詳細資訊，請參閱[使用 system.object 的 Debug ClickOnce 應用程式](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)。
 
  如需代碼啟用安全性和 ClickOnce 的詳細資訊，請參閱[ClickOnce 應用程式的代碼啟用安全性](../deployment/code-access-security-for-clickonce-applications.md)。
 

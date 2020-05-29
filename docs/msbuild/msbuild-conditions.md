@@ -18,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61ffb650a87fa992a07d749687498cbb8ec6482d
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 926c54be9d31a6d0708b33248b6887c0ac7e324e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586830"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184064"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 條件
 
-MSBuild 支援一組可在允許`Condition`屬性時套用的特定條件。 下表說明這些條件。
+MSBuild 支援一組可在允許屬性時套用的特定條件 `Condition` 。 下表說明這些條件。
 
 |狀況|說明|
 |---------------|-----------------|
@@ -37,8 +37,8 @@ MSBuild 支援一組可在允許`Condition`屬性時套用的特定條件。 下
 |Exists('`stringA`')|如果有名稱為 `stringA` 的檔案或資料夾存在，即會評估為 `true`。<br /><br /> 例如：<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。|
 |HasTrailingSlash ('`stringA`')|如果指定的字串包含尾端反斜線 (\\) 或斜線 (/) 字元，即會評估為 `true`。<br /><br /> 例如：<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> 不需要以單引號括住簡單的英數字元字串或布林值。 不過，需要使用單引號括住空白值。|
 |!|如果運算元評估為 `false`，即會評估為 `true`。|
-|And|如果這兩個運算元都評估為 `true`，即會評估為 `true`。|
-|Or|如果至少有一個運算元評估為 `true`，即會評估為 `true`。|
+|`And`|如果這兩個運算元都評估為 `true`，即會評估為 `true`。|
+|`Or`|如果至少有一個運算元評估為 `true`，即會評估為 `true`。|
 |()|如果內部包含的運算式評估為 `true`，即會評估為 `true` 的群組機制。|
 |$if$ ( %expression% )、$else$、$endif$|檢查指定的 `%expression%` 是否符合所傳遞自訂範本參數的字串值。 如果 `$if$` 條件評估為 `true`，即會執行它的陳述式，否則會檢查 `$else$` 條件。 如果 `$else$` 條件為`true`，即會執行它的陳述式，否則 `$endif$` 條件會結束運算式評估。<br /><br /> 如需用法的範例，請參閱[Visual Studio 專案/專案範本參數邏輯](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)。|
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 862310c8c763ce366798bfacd4f4759d606bb33c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3355636eba7556a472d8ce272437fb07c30714be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71128201"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184151"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>使用 Visual Studio 將應用程式部署到本機資料夾
 
@@ -24,29 +24,29 @@ ms.locfileid: "71128201"
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> 如果您需要將 Windows 桌面應用程式發行至本機資料夾，請參閱[使用 ClickOnce 部署桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 或 Visual Basic)。 有關C++/CLI，請參閱[使用 ClickOnce 部署本機應用](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，或者對於 C/C++，請參閱[使用安裝程式部署本機應用](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+> 如果您需要將 Windows 桌面應用程式發行至本機資料夾，請參閱[使用 ClickOnce 部署桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 或 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
 
 ## <a name="deploy-to-a-local-folder"></a>部署到本機資料夾
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]**** (或使用 [建置]**** > [發行]**** 功能表項目)。
 
-    ![解決方案資源管理器中專案內容功能表上的"發佈"命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
+    ![[專案] 內容功能表上的 [發佈] 命令方案總管](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
-1. 如果您之前已設定任何發行設定檔，[發行]**** 窗格會隨即出現。 選取 [建立新設定檔]****。
+1. 在 [**發行**] 對話方塊中，選取 [**資料夾**]。
 
-1. 在 [挑選發行目標]**** 對話方塊中，選擇 [資料夾]****。
+    ![選擇資料夾作為發佈目標](../deployment/media/quickstart-publish-folder.png "選擇資料夾")
 
-    ![選擇本地資料夾作為發佈目標](../deployment/media/quickstart-publish-folder.png "選擇資料夾")
+1. 輸入路徑，或選取 **[流覽]** 以指定資料夾。
 
-1. 輸入路徑，或選取 [瀏覽]**** 來指定本機資料夾。
+    ![指定資料夾的路徑](../deployment/media/quickstart-publish-folder-path.png "選擇資料夾")
 
-1. 選取 [發行]****。 Visual Studio 會建置專案，並將其發行至指定的資料夾。 專案屬性 [發行]**** 窗格隨即出現，並顯示設定檔摘要。
+1. 選取 [發佈] 。 Visual Studio 會建置專案，並將其發行至指定的資料夾。 專案屬性 [發行]**** 窗格隨即出現，並顯示設定檔摘要。
 
     ![顯示設定檔摘要的 [發行] 屬性窗格](../deployment/media/quickstart-publish-folder-summary.png)
 
-1. 若要設定部署設定，請在設定檔摘要中選取 [設定]****，並選取 [設定]**** 索引標籤。
+1. 若要設定部署設定，請選取發行設定檔摘要中的 [**編輯**]，然後選取 [**設定**] 索引標籤。
 
-    ![設定檔設置](../deployment/media/quickstart-profile-settings.png "設定檔設定")
+    ![設定檔設定](../deployment/media/quickstart-profile-settings.png "設定檔設定")
 
 1. 設定選項，例如是否要部署 [偵錯] 或 [發行] 組態，然後選取 [儲存]****。
 

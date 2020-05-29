@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b1d178adbbb847b2629ee785a7a0fa4e990a46dd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 182042db9a744d037e295a8448f8c49a9c7b3a97
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587715"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184792"
 ---
 # <a name="configure-fxcop-analyzers"></a>設定 FxCop 分析器
 
 [FxCop 分析器封裝](install-fxcop-analyzers.md)是由舊版分析中最重要的 "FxCop" 規則所組成，轉換成以 .NET Compiler Platform 為基礎的程式碼分析器。 針對某些 FxCop 規則，您可以透過可設定的[選項](fxcop-analyzer-options.md)，精簡程式碼基底中應該套用的部分。 每個選項都是藉由將索引鍵/值組新增至[EditorConfig](https://editorconfig.org)檔來指定。 設定檔可以是[專案特有](#per-project-configuration)的，也可以在兩個或多個專案之間[共用](#shared-configuration)。
 
 > [!TIP]
-> 以滑鼠右鍵按一下**方案總管**中的專案，然後選取 [**加入** > **新專案**]，將 editorconfig 檔案新增至您的專案。 在 [**加入新專案**] 視窗的 [搜尋] 方塊中，輸入**editorconfig** 。 選取 [ **editorconfig 檔案（預設）** ] 範本，然後選擇 [**新增**]。
+> 以滑鼠右鍵按一下**方案總管**中的專案，然後選取 [**加入**  >  **新專案**]，將 editorconfig 檔案新增至您的專案。 在 [**加入新專案**] 視窗的 [搜尋] 方塊中，輸入**editorconfig** 。 選取 [ **editorconfig 檔案（預設）** ] 範本，然後選擇 [**新增**]。
 >
 > ![在 Visual Studio 中將 editorconfig 檔案新增至專案](media/add-editorconfig-file.png)
 
@@ -64,13 +64,27 @@ ms.locfileid: "75587715"
 |-|-|
 | dotnet_code_quality。RuleId. 選項名稱 = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
 
-## <a name="per-project-configuration"></a>每個專案的設定
+## <a name="enabling-editorconfig-based-configuration"></a>啟用以 Editorconfig 為基礎的設定
+
+### <a name="vs2019-163-and-later--fxcopanalyzers-package-version-33x-and-later"></a>VS2019 16.3 和更新版本 + FxCopAnalyzers 套件 3.3. x 版和更新版本
+
+可以針對下列範圍啟用以 EditorConfig 為基礎的分析器設定：
+
+- 特定檔
+- 特定資料夾
+- 特定專案
+- 特定解決方案
+- 整個存放庫
+
+若要啟用設定，請在對應的目錄中新增包含選項的*editorconfig*檔案。 這個檔案也可以包含以 EditorConfig 為基礎的診斷嚴重性設定專案。 詳細資訊請看[這裡](use-roslyn-analyzers.md#rule-severity)。
+
+### <a name="prior-to-vs2019-163-or-using-an-fxcopanalyzers-package-version-prior-to-33x"></a>在 VS2019 16.3 之前，或使用 3.3. x 之前的 FxCopAnalyzers 套件版本
+
+#### <a name="per-project-configuration"></a>每個專案的設定
 
 若要針對特定專案啟用以 EditorConfig 為基礎的分析器設定，請將*EditorConfig*檔案新增至專案的根目錄。
 
-目前不會對存在於不同目錄層級（例如方案和專案層級）的 editorconfig 檔案進行階層式支援。
-
-## <a name="shared-configuration"></a>共用設定
+#### <a name="shared-configuration"></a>共用設定
 
 您可以在兩個或多個專案之間共用 FxCop 分析器設定的 editorconfig 檔案，但它需要一些額外的步驟。
 
@@ -103,7 +117,7 @@ ms.locfileid: "75587715"
 > [!NOTE]
 > 此處所述之 EditorConfig 檔的任意共用位置，僅適用于設定特定 FxCop 分析器規則的範圍。 針對其他設定（例如規則嚴重性、一般編輯器設定和程式碼樣式），EditorConfig 檔案必須一律放在專案資料夾或父資料夾中。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [FxCop 分析器的規則範圍選項](fxcop-analyzer-options.md)
 - [分析器設定](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)

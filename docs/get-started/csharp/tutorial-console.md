@@ -1,5 +1,5 @@
 ---
-title: 教程：創建一個簡單的 C# 主控台應用程式
+title: '教學課程：建立簡單的 c # 主控台應用程式'
 description: 了解如何逐步在 Visual Studio 中建立 C# 主控台應用程式。
 ms.custom: seodec18, get-started
 ms.date: 02/18/2020
@@ -15,14 +15,14 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 00798f5eb7261df0a039c82566018cbb0efe710a
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78215425"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183284"
 ---
-# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教程：在視覺化工作室創建一個簡單的 C# 主控台應用程式
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立簡單的 c # 主控台應用程式
 
 在 C# 的這個教學課程中，您將使用 Visual Studio 建立並執行主控台應用程式，並在這樣做的同時探索 Visual Studio 整合式開發環境 (IDE) 的一些功能。
 
@@ -46,8 +46,8 @@ ms.locfileid: "78215425"
 
 1. 開啟 Visual Studio 2017。
 
-2. 從頂部功能表列中，選擇 **"檔** > **新專案** > **"。**
-   （或者，按**Ctrl**+**移位**+**N**。
+2. 從頂端功能表列中 **，選擇 [** 檔案] [新增] [  >  **New**  >  **專案**]。
+   （或者，按**Ctrl** +**Shift** +**N**）。
 
 3. 在 [新增專案]**** 對話方塊的左窗格中，展開 C#]****，然後選擇 [.NET Core]****。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]****。 接著，將檔案命名為 ***Calculator***。
 
@@ -79,7 +79,7 @@ ms.locfileid: "78215425"
 
 1. 開啟 Visual Studio 2019。
 
-1. 在啟動視窗中，選擇 **"創建新專案**"。
+1. 在 [開始] 視窗中，選擇 [**建立新專案**]。
 
    ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
@@ -100,7 +100,7 @@ ms.locfileid: "78215425"
    >
    > 接下來，選擇 Visual Studio 安裝程式中的 [修改]**** 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續]**** 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中鍵入或輸入 *Calculator*。 然後，選擇 **"創建**"。
+1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中鍵入或輸入 *Calculator*。 然後選擇 [**建立**]。
 
    ![在 [設定您的新專案] 視窗中，以 'Calculator' 命名您的專案](./media/vs-2019/csharp-name-your-calculator-project.png)
 
@@ -135,11 +135,11 @@ ms.locfileid: "78215425"
     請注意，當您這麼做時，Visual Studio 中的 IntelliSense 功能會提供您自動完成項目的選項。
 
     > [!NOTE]
-    > 以下動畫無意複製前面的代碼。 它僅用於顯示自動完成功能的工作原理。
+    > 下列動畫並非用於複製上述程式碼。 其目的只是要說明自動完成功能的運作方式。
 
     ![顯示 Visual Studio IDE 中 IntelliSense 自動完成功能的整數數學代碼動畫](./media/integer-math-intellisense.gif)
 
-1. 選擇**計算機**旁邊的綠色 **"開始"** 按鈕來生成和運行程式，或按**F5**。
+1. 選擇 [**計算機**] 旁的綠色 [**開始**] 按鈕，以建立並執行您的程式，或按**F5**。
 
    ![選擇 [Calculator] 按鈕以從工具列執行應用程式](./media/csharp-console-calculator-button.png)
 
@@ -241,7 +241,7 @@ ms.locfileid: "78215425"
 
 讓我們修正程式碼來處理小數。
 
-1. 按**Ctrl** + **F**打開 **"查找和替換**"控制項。
+1. 按**Ctrl**  +  **H**以開啟 [**尋找和取代**] 控制項。
 
 1. 將 `int` 變數的每個執行個體變更為 `float`。
 
@@ -257,7 +257,7 @@ ms.locfileid: "78215425"
 
 不過，應用程式僅會產生小數結果。 讓我們進一步調校程式碼，讓應用程式也可以計算小數。
 
-1. 使用 [尋找和取代]**** 控制項 (**Ctrl** + **F**)，將 `float` 變數的每個執行個體變更為 `double`，以及將 `Convert.ToInt32` 方法的每個執行個體變更為 `Convert.ToDouble`。
+1. 使用 [**尋找和取代**] 控制項（**Ctrl**  +  **H**）將變數的每個實例變更 `float` 為 `double` ，並將方法的每個實例變更 `Convert.ToInt32` 為 `Convert.ToDouble` 。
 
 1. 執行您的計算機應用程式，將數字 **42.5** 除以數字 **119.75**。
 
@@ -271,21 +271,21 @@ ms.locfileid: "78215425"
 
 我們已改善基本計算機應用程式，但還不具備處理例外狀況的保險方式，例如使用者輸入錯誤。
 
-例如，如果嘗試將數位除以零，或者當應用需要數位字元時輸入 Alpha 字元（反之亦然），則應用可能會停止工作、返回錯誤或返回意外的非數位結果。
+例如，如果您嘗試將數位零除，或在應用程式預期有數位字元時輸入英文字元（反之亦然），則應用程式可能會停止運作、傳回錯誤，或傳回非預期的非數值結果。
 
-讓我們演練一些常見的使用者輸入錯誤，如果它們出現在那裡，在調試器中找到它們，並在代碼中修復它們。
+讓我們逐步解說幾個常見的使用者輸入錯誤，在偵錯工具中找出它們（如果出現的話），並在程式碼中修正。
 
 > [!TIP]
 > 如需偵錯工具及其運作方式的詳細資訊，請參閱 [Visual Studio 偵錯工具初探](../../debugger/debugger-feature-tour.md)頁面。
 
 ### <a name="fix-the-divide-by-zero-error"></a>修正「除以零」錯誤
 
-當您嘗試將數位除以零時，主控台應用可能會凍結，然後顯示代碼編輯器中的問題。
+當您嘗試將數位零除時，主控台應用程式可能會凍結，然後顯示程式碼編輯器中的錯誤。
 
    ![Visual Studio 程式碼編輯器顯示「除以零」錯誤](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
-> 有時，應用不會凍結，調試器不會顯示除以零的錯誤。 相反，應用可能會返回意外的非數位結果，如無窮大符號。 以下代碼修復仍然適用。
+> 有時候，應用程式不會凍結，而且偵錯工具不會顯示零除的錯誤。 相反地，應用程式可能會傳回未預期的非數值結果，例如無限大符號。 下列程式碼修正仍然適用。
 
 讓我們變更程式碼來處理此錯誤。
 
@@ -309,7 +309,7 @@ ms.locfileid: "78215425"
 
    ![Visual Studio 程式碼編輯器中經修改的「切換」區段](./media/csharp-console-calculator-switch-code.png)
 
-現在，當您將任何數字除以零時，應用程式會要求輸入其他數字。 更妙的是：它不會停止要求，直到你提供一個數位，而不是零。
+現在，當您將任何數字除以零時，應用程式會要求輸入其他數字。 更棒的是：它不會停止詢問，直到您提供零以外的數位為止。
 
    ![Visual Studio 程式碼編輯器顯示「除以零」錯誤](./media/csharp-console-calculator-dividebyzero.png)
 
@@ -329,7 +329,7 @@ ms.locfileid: "78215425"
 
 讓我們開始吧。
 
-1. 刪除命名空間中`Calculator`打開和關閉大括弧之間的所有內容：
+1. 刪除 `Calculator` 命名空間中的左右大括弧之間的所有內容：
 
     ```csharp
     using System;
@@ -468,11 +468,11 @@ ms.locfileid: "78215425"
 
 1. 如果您尚未這麼做，請關閉計算機應用程式。
 
-1. 關閉視覺化工作室中的 **"輸出**"窗格。
+1. 關閉 Visual Studio 中的 [**輸出**] 窗格。
 
    ![關閉 Visual Studio 中的 [輸出] 窗格](./media/csharp-calculator-close-output-pane.png)
 
-1. 在視覺化工作室中，按**Ctrl**+**S**保存你的應用。
+1. 在 Visual Studio 中，按**Ctrl** + **S**以儲存您的應用程式。
 
 1. 關閉 Visual Studio。
 

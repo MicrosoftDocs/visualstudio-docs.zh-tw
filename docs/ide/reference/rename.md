@@ -1,6 +1,6 @@
 ---
 title: 重構重新命名
-ms.date: 01/26/2018
+ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dbccd4732f56d671fd74f59916885ea338136f8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8d5b3d32b23b336dc86a92c33bcb97d02312f2dc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565457"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182949"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>為程式碼符號重新命名的重構
 
@@ -45,7 +45,7 @@ ms.locfileid: "75565457"
 
        ![醒目提示的程式碼 - Visual Basic](media/rename-highlight-vb.png)
 
-2. 接著，執行下列其中一項操作：
+2. 接下來，使用鍵盤或滑鼠，如下所示：
 
    - **鍵盤**
       - 按 **CTRL+R**，再按 **CTRL+R**。 (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
@@ -70,17 +70,19 @@ ms.locfileid: "75565457"
 
 ## <a name="remarks"></a>備註
 
-- 從 Visual Studio 2019 版本 16.3 開始，當您重命名與所輸入的檔案名稱匹配的類型時，將出現一個核取方塊，使您能夠同時重命名該檔。 重命名類、介面或枚舉時將顯示此選項。 對於具有多個定義的部分類型，不支援此選項。
+- 從 Visual Studio 2019 版本16.3 開始，當您重新命名符合其所在檔案名稱的類型時，會出現一個核取方塊，可讓您同時重新命名檔案。 當您重新命名類別、介面或列舉時，會出現此選項。 具有多個定義的部分類型不支援此選項。
 
-   ![使用檔重命名動畫 - C#](media/rename-with-file-animated-cs.gif)
+   ![使用 file-C 重新命名動畫#](media/rename-with-file-animated-cs.gif)
 
 - 如果您使用已經存在的名稱，因而造成衝突，[重新命名]**** 方塊將會警告您。
 
    ![重新命名衝突](media/rename-conflict-cs.png)
 
-- 重新命名符號的另一個方法是在編輯器中變更其名稱。 然後，在符號名稱中的游標下，按**Ctrl**+**。** 或者，只要展開出現的燈泡圖示功能表，然後選擇 [將 \<舊名稱> 重新命名為 \<新名稱>]****。
+- 重新命名符號的另一個方法是在編輯器中變更其名稱。 然後，將游標放在符號名稱中，按下**Ctrl** + **。** 或直接展開顯示的燈泡圖示功能表，然後選擇 [**重新 \<old name> 命名 \<new name> 為**]。
+
+   ![在編輯器中重新命名](media/rename-with-editor-cs.png)
 
 ## <a name="see-also"></a>另請參閱
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 了解系統管理員如何指派訂閱者授權
-ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: a90d6f3fec1f619cda397788c130f7514307effd
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564156"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183466"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 訂閱系統管理入口網站中指派授權
 身為 Visual Studio 訂閱系統管理員，您可以使用系統管理入口網站，將訂閱指派給個別使用者和使用者群組。
@@ -20,7 +20,7 @@ ms.locfileid: "82564156"
 對於使用者群組，您可以選擇如何指派訂閱。  
 - 您可以一次指派一個訂用帳戶。
 - 您也可以使用[大量新增](assign-license-bulk.md)功能，快速且輕鬆地上傳訂閱者清單及其訂用帳戶資訊。
-- 如果您的組織使用 Microsoft Azure Active Directory （Azure AD），您可以使用 Azure AD 群組來指派使用者群組的訂閱。  （這項功能正以階段部署，而且可能無法立即提供給您的組織使用）。
+- 如果您的組織使用 Microsoft Azure Active Directory （Azure AD），您可以[使用 Azure AD 群組來指派](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions)使用者群組的訂閱。  
 
 
 ## <a name="add-a-single-subscriber"></a>新增一位訂閱者
@@ -39,7 +39,11 @@ ms.locfileid: "82564156"
    > [!div class="mx-imgBorder"]
    > ![訂閱者詳細資料](_img/assign-license-add/subscriber-details.png)
 
-    如果您想要讓此訂閱者在登入 [Visual Studio 訂用帳戶入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)時可存取軟體下載，請務必保持 [下載設定]**** 區段的 [下載] 切換按鈕為啟用狀態。 如果您選擇停用下載，則使用者無法存取軟體下載，但仍可存取訂用帳戶中所含的所有其他權益。
+    > [!NOTE]
+    > 若要在您輸入訂閱者名稱時顯示 Azure Active Directory 租使用者的成員，則系統管理員必須是租使用者的成員。 
+
+
+    如果您想要讓此訂閱者在登入 [Visual Studio 訂用帳戶入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)時可存取軟體下載，請務必保持 [下載設定]**** 區段的 [下載] 切換按鈕為啟用狀態。 如果您選擇停用下載，使用者將無法存取軟體下載。  也會停用對產品金鑰的存取。  訂閱者仍可存取訂用帳戶中包含的所有其他權益。
    > [!div class="mx-imgBorder"]
    > ![存取下載項目](media/access-to-downloads.png)
 
@@ -54,7 +58,7 @@ ms.locfileid: "82564156"
 ## <a name="resend-assignment-emails"></a>重新傳送指派電子郵件
 新增訂閱者之後，系統會將指派電子郵件自動傳送給新的訂閱者，並提供進一步的指示。 您可以選取訂閱者，然後按一下頂端功能表中的 [**重新**傳送] 按鈕，隨時重新傳送指派電子郵件。  若要重新傳送電子郵件給多個使用者，請在選取訂閱者時按住**Ctrl**鍵。  當您按一下 [**重新**傳送] 按鈕時，您會看到對話方塊，要求您確認是否要重新傳送給那些訂閱者。  
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)

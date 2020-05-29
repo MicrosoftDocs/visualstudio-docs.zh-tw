@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911603"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182868"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中快照集偵錯的疑難排解和已知問題
 
-如果本文所述的步驟無法解決您的問題，請在[開發人員的論壇](https://developercommunity.visualstudio.com/spaces/8/index.html)上搜尋問題，或選擇 [說明] > [**傳送意見**反應]， > 在 Visual Studio 中回報**問題** **] 來回報**新的問題。
+如果本文中描述的步驟無法解決您的問題，請在[開發人員的論壇](https://developercommunity.visualstudio.com/spaces/8/index.html)上搜尋問題，**或選擇 [** 說明] [傳送意見反應] [回報  >  **Send Feedback**  >  Visual Studio 中**的問題**] 報告新的問題。
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>問題：「附加快照偵錯工具」遇到 HTTP 狀態碼錯誤
 
@@ -30,14 +30,38 @@ ms.locfileid: "72911603"
 
 ### <a name="401-unauthorized"></a>（401）未經授權
 
-此錯誤表示 Visual Studio 對 Azure 發出的 REST 呼叫使用了不正確認證。 Azure Active Directory Easy OAuth 模組的已知錯誤可能會產生此錯誤。
+此錯誤表示 Visual Studio 對 Azure 發出的 REST 呼叫使用了不正確認證。 
 
 請執行下列步驟：
 
-* 請確定您的 Visual Studio 個人化帳戶具有您要附加的 Azure 訂用帳戶和資源的許可權。 若要判斷這種情況，您可以從**Debug**檢查是否在對話方塊中使用資源， > **附加快照偵錯工具 ...**  > **Azure 資源** > **選取現有**的，或在 Cloud Explorer 中。
+* 請確定您的 Visual Studio 個人化帳戶具有您要附加的 Azure 訂用帳戶和資源的許可權。 若要判斷這種情況，您可以透過 [ **Debug**  >  **Attach 快照偵錯工具 ...**  >  ] 來檢查對話方塊中的資源是否可用**Azure 資源**  > **選取 [現有**]，或在 Cloud Explorer 中。
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
-### <a name="403-forbidden"></a>（403）禁止
+如果您已在 App Service 上啟用驗證/授權（EasyAuth），您可能會在呼叫堆疊錯誤訊息中遇到401錯誤與 LaunchAgentAsync。 請確定**未驗證要求時要採取的動作**是設定為允許 Azure 入口網站中的**匿名要求（無動作）** ，並改為在 D:\Home\sites\wwwroot 中提供具有下列內容的 authorization. json。 
+
+```
+{
+  "routes": [
+    {
+      "path_prefix": "/",
+      "policies": {
+        "unauthenticated_action": "RedirectToLoginPage"
+      }
+    },
+    {
+      "http_methods": [ "POST" ],
+      "path_prefix": "/41C07CED-2E08-4609-9D9F-882468261608/api/agent",
+      "policies": {
+        "unauthenticated_action": "AllowAnonymous"
+      }
+    }
+  ]
+}
+```
+
+第一個路由會有效地保護您的應用程式網域，類似于**使用 [IdentityProvider] 登入**。 第二個路由會公開驗證以外的 SnapshotDebugger AgentLaunch 端點，只有在已為您的 app service 啟用 SnapshotDebugger 預先安裝的網站延伸模組時，*才*會執行預先定義的動作來啟動 SnapshotDebugger 診斷代理程式。 如需有關授權 json 設定的詳細資訊，請參閱[URL 授權規則](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html)。
+
+### <a name="403-forbidden"></a>(403) 禁止
 
 此錯誤表示許可權遭到拒絕。 這可能是許多不同的問題所造成。
 
@@ -54,8 +78,8 @@ ms.locfileid: "72911603"
 請執行下列步驟：
 
 * 確認您已在您要附加的 App Service 資源上部署並執行網站。
-* 確認網站可以在 HTTPs://\<資源\>取得。 azurewebsites.net
-* 請確認在 HTTPs://\<資源\>存取時，正確執行的自訂 web 應用程式不會傳回狀態碼404。 azurewebsites.net
+* 確認網站可在 HTTPs://取得 \<resource\> 。 azurewebsites.net
+* 在 HTTPs://時，確認正確執行的自訂 web 應用程式不會傳回狀態碼 404 \<resource\> 。 azurewebsites.net
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
 ### <a name="406-not-acceptable"></a>（406）無法接受
@@ -64,7 +88,7 @@ ms.locfileid: "72911603"
 
 請執行下列步驟：
 
-* 確認您的網站可在 HTTPs://\<資源\>取得。 azurewebsites.net
+* 確認您的網站可在 HTTPs:// \<resource\> . azurewebsites.net 使用。
 * 確認您的網站尚未遷移至新的實例。 快照偵錯工具會使用 ARRAffinity 的概念，將要求路由傳送至特定實例，這可能會間歇產生此錯誤。
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
@@ -82,7 +106,7 @@ ms.locfileid: "72911603"
 
 ::: moniker range="vs-2017"
 
-* 在 Azure 入口網站中，確認 AppSettings for SnapshotDebugger （SNAPSHOTDEBUGGER_EXTENSION_VERSION）和 InstrumentationEngine （INSTRUMENTATIONENGINE_EXTENSION_VERSION）的大小寫為大寫。 如果沒有，請手動更新設定，這會強制重新開機網站。
+* 在 Azure 入口網站中確認 SnapshotDebugger （SNAPSHOTDEBUGGER_EXTENSION_VERSION）和 InstrumentationEngine （INSTRUMENTATIONENGINE_EXTENSION_VERSION）的 AppSettings 是否為大寫。 如果沒有，請手動更新設定，這會強制重新開機網站。
 ::: moniker-end
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
@@ -107,7 +131,7 @@ ms.locfileid: "72911603"
 
 請執行下列步驟：
 
-1. 請確定您有用來建立及部署應用程式的相同版本原始程式碼。 請確定您正在載入適用於部署的正確符號。 若要這樣做，請在進行快照集偵錯時檢視 [模組] 視窗，並確認 [符號檔案] 資料行顯示針對正在偵錯的組載入的 .pdb 檔案。 快照偵錯工具將嘗試自動為部署下載及使用符號。
+1. 請確定您有用來建立及部署應用程式的相同版本原始程式碼。 請確定您正在載入適用於部署的正確符號。 若要這樣做，請在進行快照集偵錯時檢視 [模組]**** 視窗，並確認 [符號檔案] 資料行顯示針對正在偵錯的組載入的 .pdb 檔案。 快照偵錯工具將嘗試自動為部署下載及使用符號。
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題：開啟快照集時沒有載入符號
 
@@ -117,7 +141,7 @@ ms.locfileid: "72911603"
 
 請執行下列步驟：
 
-- 按一下此頁面上的 [變更符號設定...] 連結。 在 [偵錯] > [符號] 設定中，新增一個符號快取目錄。 在設定符號路徑之後，重新啟動快照集偵錯。
+- 按一下此頁面上的 [變更符號設定...]**** 連結。 在 [偵錯] > [符號]**** 設定中，新增一個符號快取目錄。 在設定符號路徑之後，重新啟動快照集偵錯。
 
    專案中可用的符號或 .pdb 檔案都必須與您的 App Service 部署相符。 大部分的部署 (透過 Visual Studio、搭配 Azure Pipelines 或 Kudu 的 CI/CD 進行的部署) 將會和 App Service 一起發行您的符號檔案。 設定符號快取目錄讓 Visual Studio 能夠使用這些符號。
 
@@ -129,7 +153,7 @@ ms.locfileid: "72911603"
 
 請執行下列步驟：
 
-- 請確定已安裝的快照偵錯工具元件。 開啟 Visual Studio 安裝程式，並勾選 Azure 工作負載中的 [快照偵錯工具] 元件。
+- 請確定已安裝的快照偵錯工具元件。 開啟 Visual Studio 安裝程式，並勾選 Azure 工作負載中的 [快照偵錯工具]**** 元件。
 ::: moniker range="< vs-2019"
 - 確定您的應用程式受到支援。 目前僅支援部署至 Azure App Service 的 ASP.NET (4.6.1+) 和 ASP.NET Core (2.0 +) 應用程式。
 ::: moniker-end
@@ -173,7 +197,7 @@ Visual Studio 2019 在您的 Azure App Service 上需要較新版本的快照偵
 
 ### <a name="enable-agent-logs"></a>啟用代理程式記錄
 
-若要啟用和停用代理程式記錄，請開啟的 Visual Studio，瀏覽至 [工具] > [選項] > [快照集偵錯工具] > [啟用代理程式記錄]。 請注意，如果也已經啟用*在工作階段開始時刪除舊的代理程式記錄*，每個成功的 Visual Studio 附加都將會刪除先前的代理程式記錄。
+若要啟用和停用代理程式記錄，請開啟的 Visual Studio，瀏覽至 [工具] > [選項] > [快照集偵錯工具] > [啟用代理程式記錄]**。 請注意，如果也已經啟用*在工作階段開始時刪除舊的代理程式記錄*，每個成功的 Visual Studio 附加都將會刪除先前的代理程式記錄。
 
 您可以在下列位置找到代理程式記錄：
 
@@ -181,7 +205,7 @@ Visual Studio 2019 在您的 Azure App Service 上需要較新版本的快照偵
   - 瀏覽至您 App Service 的 Kudu 網站 (也就是 yourappservice.**scm**.azurewebsites.net)，並瀏覽至 [偵錯主控台]。
   - 代理程式記錄儲存在以下目錄：D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS：
-  - 登入您的 VM，代理程式記錄儲存在以下目錄：C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+  - 登入您的 VM，代理程式記錄檔會儲存如下： C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics \<Version> \ SnapshotDebuggerAgent_ * .txt
 - AKS
   - 瀏覽至以下目錄：/tmp/diag/AgentLogs/*
 
@@ -193,8 +217,8 @@ Visual Studio 2019 在您的 Azure App Service 上需要較新版本的快照偵
   - 錯誤記錄會自動傳送至 D:\Home\LogFiles\eventlog.xml，事件會以 `<Provider Name="Instrumentation Engine" />` 或「生產中斷點」標記
 - VM/VMSS：
   - 登入您的 VM 並開啟事件檢視器。
-  - 開啟下列檢視：[Windows 記錄] > [應用程式]。
-  - 使用*生產中斷點*或*檢測引擎*，依據*事件來源* *篩選目前的記錄*。
+  - 開啟下列檢視：[Windows 記錄] > [應用程式]**。
+  - 使用*生產中斷點*或*檢測引擎*，依據*事件來源**篩選目前的記錄*。
 - AKS
   - 檢測引擎記錄位於 /tmp/diag/log.txt (在DockerFile 中設定 MicrosoftInstrumentationEngine_FileLogPath)
   - ProductionBreakpoint logging at /tmp/diag/shLog.txt
@@ -209,19 +233,19 @@ Visual Studio 2019 在您的 Azure App Service 上需要較新版本的快照偵
 
 ## <a name="site-extension-upgrade"></a>網站延伸模組升級
 
-快照集偵錯和 Application Insights 相依於 ICorProfiler，系統會將 ICorProfiler 載入至網站處理序，並在升級期間造成檔案鎖定的問題。 我們建議採用此程序，以確保您的生產網站不需要停機。
+快照集偵錯和 Application Insights 相依於 ICorProfiler，系統會將 ICorProfiler 載入至網站處理序，並在升級期間造成檔案鎖定的問題。 我們建議採用此程序，以確保您的生產網站沒有停機時間。
 
 - 在您的 App Service 內建立[部署位置](/azure/app-service/web-sites-staged-publishing)，並將網站部署至位置。
 - 從 Visual Studio 的 [Cloud Explorer] 或從 Azure 入口網站交換位置與生產環境。
 - 停止位置網站。 這需要幾秒鐘來關閉所有執行個體中的網站 w3wp.exe 處理序。
-- 從 Kudu 網站或 Azure 入口網站升級位置網站延伸模組 ([App Service 刀鋒視窗] > [開發工具] > [擴充功能] > [更新])。
-- 啟動位置網站。 我們建議您造訪網站以再次啟用它。
+- 從 Kudu 網站或 Azure 入口網站升級位置網站延伸模組 ([App Service 刀鋒視窗] > [開發工具] > [擴充功能] > [更新]**)。
+- 啟動位置網站。 我們建議您造訪網站以再次使用它。
 - 交換位置與生產環境。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 偵錯](../debugger/index.yml)
-- [使用快照偵錯工具來進行即時 ASP.NET 應用程式的 Debug](../debugger/debug-live-azure-applications.md)
-- [使用快照偵錯工具來進行即時 ASP.NET Azure 虛擬 Machines\Virtual 機擴展集的調試](../debugger/debug-live-azure-virtual-machines.md)
-- [使用快照偵錯工具進行即時 ASP.NET Azure Kubernetes 的調試](../debugger/debug-live-azure-kubernetes.md)
+- [使用快照偵錯工具針對即時 ASP.NET 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)
+- [使用快照偵錯工具針對即時 ASP.NET Azure 虛擬機器\虛擬機器擴展集進行偵錯](../debugger/debug-live-azure-virtual-machines.md)
+- [使用快照偵錯工具針對即時 ASP.NET Azure Kubernetes 進行偵錯](../debugger/debug-live-azure-kubernetes.md)
 - [快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)

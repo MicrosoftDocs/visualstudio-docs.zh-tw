@@ -4,23 +4,27 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 03/02/2020
+ms.date: 05/10/2020
 ms.topic: conceptual
 description: 瞭解系統管理員如何使用大量新增功能或 Microsoft Azure Active Directory 群組，將授權指派給多個訂閱者
-ms.openlocfilehash: 7fb9987b0d25da1be8a01f0cef82e019c20460d1
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564182"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182894"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
 
 若要新增大量使用者群組，您可以使用大量新增功能，或者如果您的組織使用 Microsoft Azure Active Directory （Azure AD），您可以使用 Azure AD 群組。 本文將說明這兩個選項的程式。 
 
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
+
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>使用大量新增來指派訂閱
-1. 登入 Visual Studio 訂用帳戶管理入口https://manage.visualstudio.com網站，網址為。
+1. 登入 Visual Studio 訂用帳戶管理入口網站，網址為 https://manage.visualstudio.com 。
 
 2. 若要一次加入多個訂閱者，請流覽至 [**管理訂閱者**] 索引標籤。選擇 [**新增**] 索引標籤，然後在下拉式選單中選擇 [**大量新增**]。  
 
@@ -32,6 +36,9 @@ ms.locfileid: "82564182"
    > 請一律下載這個範本的最新版本。 如果您使用舊版本，則大量上傳可能會失敗。
 
 3. 在 Excel 試算表中，請將您想要指派訂用帳戶之個人的資訊填入欄位中。 （*參考*是選擇性欄位）。完成之後，請將檔案儲存在本機。
+
+    > [!NOTE]
+    > 範本中的其中一個欄位可讓系統管理員啟用或停用訂閱者下載軟體的能力。  停用下載也會停用其產品金鑰的存取權。
 
    為了協助確保順利上傳，請觀察下列最佳做法：
 
@@ -60,7 +67,7 @@ ms.locfileid: "82564182"
    0. 返回 [node.js] 入口網站，然後選擇 [**新增**]。
    0. 選取 [**大量新增**]。
    0. 因為您已經儲存 Excel 檔案，所以您不需要下載範本。  按一下 **[流覽]**，找出您剛儲存的檔案，然後按一下 [**開啟**]。
-   0. 按一下 [確定]  。
+   0. 按一下 [確定]。
 
 
     上傳成功時，您會看到訂閱者清單和確認訊息。
@@ -74,6 +81,7 @@ ms.locfileid: "82564182"
 > [!IMPORTANT]
 >
 > 下列限制適用于用於新增訂閱者的 Azure AD 群組：
+> - 當您一開始將群組新增至管理入口網站時，系統管理員必須是 AAD 租使用者的成員。  新增群組之後，對群組成員資格的變更不需要系統管理員介入。 
 > - 群組必須包含至少一個成員。  不支援空的群組。
 > - 群組必須少於1000個使用者。 
 > - 所有使用者都必須位於群組的最高層級。  不支援嵌套的群組。
@@ -81,7 +89,11 @@ ms.locfileid: "82564182"
 > - 群組的所有成員都必須有與其 Azure AD 帳戶相關聯的電子郵件地址。
 > - 使用 Azure AD 群組新增的訂閱不支援個別的通知電子郵件地址。  
 
-1. 登入 Visual Studio 訂用帳戶管理入口網站[https://manage.visualstudio.com](https://manage.visualstudio.com)，網址為。
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
+
+1. 登入 Visual Studio 訂用帳戶管理入口網站，網址為 [https://manage.visualstudio.com](https://manage.visualstudio.com) 。
 
 2. 若要一次加入多個訂閱者，請流覽至 [**管理訂閱者**] 索引標籤。
 
@@ -106,9 +118,6 @@ ms.locfileid: "82564182"
 > [!NOTE]
 > 如果您已將訂用帳戶個別指派給後續新增為 Azure AD 群組之一部分的使用者，這些訂用帳戶將會新增為群組的一部分，且不會再個別列出。 不過，如果個別的訂用帳戶屬於不同的訂用帳戶層級，則會有兩個訂閱。  範例：如果使用者擁有個別的 Visual Studio Professional 訂用帳戶，而他們是您指派 Visual Studio Enterprise 訂閱之群組的成員，則兩者都有。  
 
-<br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>問：我可以選擇要在 Azure AD 群組中指派多個訂用帳戶層級嗎？ 
@@ -120,7 +129,7 @@ ms.locfileid: "82564182"
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>問：我已將某人新增到我的 Azure AD 安全性群組，但在訂用帳戶系統管理入口網站中看不到它們，而且他們沒有訂用帳戶。 為什麼看不到呢？  
 答：根據您的組織設定 Azure AD 的方式，您可能會在新增使用者之前，看到最多24小時的延遲。 如果超過24小時，[請聯絡支援](https://visualstudio.microsoft.com/support/support-overview-vs)人員。  
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)

@@ -14,43 +14,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 153df515fc762b7262dce81d8c1d1c4fe617ad61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a72b5bc3f3645d9af1008f2c178ab285e8b45449
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900607"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184129"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 和應用程式設定
-Windows Forms 的應用程式設定可讓您輕鬆地建立、 儲存及維護自訂應用程式和用戶端上的使用者喜好設定。 下列文件會描述應用程式設定檔在 ClickOnce 應用程式中的運作方式，以及 ClickOnce 如何移轉設定，當使用者升級至下一個版本。
+Windows Forms 的應用程式設定可讓您輕鬆地在用戶端上建立、儲存及維護自訂應用程式和使用者喜好設定。 下列檔描述應用程式佈建檔在 ClickOnce 應用程式中的使用方式，以及 ClickOnce 如何在使用者升級到下一個版本時遷移設定。
 
- 下列資訊僅適用於預設應用程式設定提供者， \<xref:System.Configuration.LocalFileSettingsProvider > 類別。 如果您提供自訂提供者時，它會儲存其資料的方式，以及如何升級設定版本之間，會決定該提供者。 如需有關應用程式設定提供者的詳細資訊，請參閱 <<c0> [ 應用程式設定架構](/dotnet/framework/winforms/advanced/application-settings-architecture)。
+ 下列資訊僅適用于預設的應用程式設定提供者（ <xref:System.Configuration.LocalFileSettingsProvider> 類別）。 如果您提供自訂提供者，該提供者會決定它儲存其資料的方式，以及它如何在版本之間升級其設定。 如需應用程式設定提供者的詳細資訊，請參閱[應用程式設定架構](/dotnet/framework/winforms/advanced/application-settings-architecture)。
 
-## <a name="application-settings-files"></a>應用程式設定檔
- 應用程式設定會使用兩個檔案： *\<應用程式 >。 .exe.config*並*user.config*，其中*應用程式*是 Windows Forms 應用程式的名稱。 *user.config*建立在您的應用程式會儲存使用者範圍設定用戶端第一次。 *\<應用程式 >。 .exe.config*，相較之下，將會在部署之前如果存在定義設定的預設值。 Visual Studio 會自動包含此檔案，當您使用其**發佈**命令。 如果您建立 ClickOnce 應用程式使用*Mage.exe*或是*MageUI.exe*，您必須先確定此檔案是包含應用程式的其他檔案，當您填入您的應用程式資訊清單。
+## <a name="application-settings-files"></a>應用程式佈建檔案
+ 應用程式設定會取用兩個檔案： * \<app> .exe. config*和*app.config*，其中*應用*程式是 Windows Forms 應用程式的名稱。 當您的應用程式第一次儲存使用者範圍的設定時，會在用戶端上建立*user .config* 。 相較之下，如果您定義設定的預設值，則* \<app> .exe .config*會在部署之前存在。 當您使用其**Publish**命令時，Visual Studio 將會自動包含此檔案。 如果您使用*mage.exe*或*mageui.exe*建立 ClickOnce 應用程式，則在填入應用程式資訊清單時，您必須確定此檔案包含在應用程式的其他檔案中。
 
- 不使用 ClickOnce 部署，應用程式的 Windows Forms 應用程式中 *\<應用程式 >。 .exe.config*檔案會儲存在應用程式目錄中，雖然*user.config*儲存檔案在使用者的**Documents and Settings**資料夾。 在 ClickOnce 應用程式中， *\<應用程式 >。 .exe.config*居住在 ClickOnce 應用程式快取內的應用程式目錄並*user.config*位於 ClickOnce 資料目錄該應用程式。
+ 在未使用 ClickOnce 部署的 Windows Forms 應用程式中，應用程式的* \<app> .exe .config*檔案會儲存在應用程式目錄中，而*使用者 .config*檔案則會儲存在使用者的 [**檔和設定**] 資料夾中。 在 ClickOnce 應用程式中， * \<app> .exe*是存在於 clickonce 應用程式快取內的應用程式目錄中，而*使用者 .config*則位於該應用程式的 clickonce 資料目錄中。
 
- 不論您如何部署您的應用程式，應用程式設定可確保安全的讀取存取權 *\<應用程式 >。 .exe.config*，和安全的讀取/寫入存取權*user.config*。
+ 無論您如何部署應用程式，應用程式設定都會確保對* \<app> .exe*的安全讀取權限，以及對*user .config*的安全讀取/寫入存取權。
 
- 在 ClickOnce 應用程式中使用的應用程式設定的組態檔的大小會受到 ClickOnce 快取大小。 如需詳細資訊，請參閱 < [ClickOnce 快取概觀](../deployment/clickonce-cache-overview.md)。
+ 在 ClickOnce 應用程式中，應用程式設定所使用的配置檔案大小會受到 ClickOnce 快取的大小所限制。 如需詳細資訊，請參閱[ClickOnce cache 總覽](../deployment/clickonce-cache-overview.md)。
 
 ## <a name="version-upgrades"></a>版本升級
- 如同每個版本的 ClickOnce 應用程式是與所有其他版本隔離，ClickOnce 應用程式的應用程式設定會與隔離以及其他版本的設定。 當您的使用者升級至較新版的應用程式時，應用程式設定就會比較與合併成一組新的設定檔設定的更新的版本所提供的最新 （最高編號） 版本的設定。
+ 就像 ClickOnce 應用程式的每個版本都與所有其他版本隔離，ClickOnce 應用程式的應用程式設定也會與其他版本的設定隔離。 當您的使用者升級至較新版本的應用程式時，應用程式設定會比較最新（最高編號）版本的設定與更新版本提供的設定，並將設定合併成一組新的設定檔案。
 
- 下表說明如何應用程式設定會決定要複製的設定。
+ 下表描述應用程式設定如何決定要複製哪些設定。
 
 |變更類型|升級動作|
 |--------------------|--------------------|
-|設定新增至 *\<應用程式 >。 .exe.config*|新的設定會合併到目前的版本 *\<應用程式 >。 .exe.config*|
-|設定移除了 *\<應用程式 >。 .exe.config*|目前的版本中移除舊的設定 *\<應用程式 >。 .exe.config*|
-|設定的預設值已變更;中的原始預設值仍然設定本機設定*user.config*|此設定會合併到目前的版本*user.config*與新的預設值，做為值|
-|設定的預設值已變更;設定中的非預設*user.config*|此設定會合併到目前的版本*user.config*保留為非預設值|
+|已新增至* \<app> .exe .config*的設定|新的設定會合並到目前版本的* \<app> .exe .config*|
+|已從* \<app> .exe .config*移除設定|舊的設定會從目前版本的* \<app> .exe .config*中移除|
+|設定的預設值已變更;*user .config*中的本機設定仍然設定為原始的預設值|此設定會合並到目前版本的*使用者 .config*中，新的預設值為|
+|設定的預設值已變更;*user .config*中的設定設為非預設值|此設定會合並到目前版本的*使用者 .config*中，並保留非預設值|
 
-如果您已建立您自己的應用程式設定包裝函式類別，並想要自訂更新邏輯，您可以覆寫\<xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A > 方法。
+如果您已建立自己的應用程式設定包裝函式類別，而且想要自訂更新邏輯，您可以覆寫 <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> 方法。
 
 ## <a name="clickonce-and-roaming-settings"></a>ClickOnce 和漫遊設定
- ClickOnce 不適用於漫遊設定，可讓您依照您跨電腦在網路上的設定檔。 如果您需要漫遊設定，您必須實作應用程式設定提供者可透過網路、 儲存設定，或是開發您自己的自訂設定類別，用於儲存在遠端電腦上的設定。 如需在 設定提供者的詳細資訊，請參閱[應用程式設定架構](/dotnet/framework/winforms/advanced/application-settings-architecture)。
+ ClickOnce 無法與漫遊設定搭配使用，這可讓您的設定檔在網路上的電腦之間進行追蹤。 如果您需要漫遊設定，您需要執行可透過網路儲存設定的應用程式設定提供者，或是開發您自己的自訂設定類別，以便在遠端電腦上儲存設定。 如需設定提供者的詳細資訊，請參閱[應用程式設定架構](/dotnet/framework/winforms/advanced/application-settings-architecture)。
 
 ## <a name="see-also"></a>另請參閱
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
