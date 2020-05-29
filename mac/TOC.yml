@@ -6,6 +6,8 @@
       href: ide-tour.md
     - name: 適用於 Windows 使用者的 Visual Studio for Mac
       href: vsmac-for-windows-users.md
+    - name: 整合式終端
+      href: integrated-terminal.md
 - name: 安裝
   items:
     - name: 安裝 Visual Studio 2019 for Mac

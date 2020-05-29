@@ -230,9 +230,9 @@
           href: dump-file-summary-extensibility-api.md
     - name: 還原隱藏的偵錯工具命令
       href: how-to-restore-hidden-debugger-commands.md
-- name: 遠端偵錯
+- name: Remote Debugging
   items:
-    - name: 遠端偵錯
+    - name: Remote Debugging
       href: remote-debugging.md
     - name: 設定 Windows 防火牆進行遠端偵錯
       href: configure-the-windows-firewall-for-remote-debugging.md
@@ -244,8 +244,6 @@
       items:
         - name: 遠端偵錯錯誤和疑難排解
           href: remote-debugging-errors-and-troubleshooting.md
-        - name: 遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視沒有連線至這部電腦的權限
-          href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer.md
         - name: 嘗試聯繫遠端電腦時，發生 DCOM 錯誤。 存取遭到拒絕。
           href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
         - name: 遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視，目前是以不同的使用者身分在執行
@@ -258,8 +256,6 @@
           href: error-kerberos-authentication-failed.md
         - name: 確認目標電腦上的 DNS 設定都正確
           href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
-        - name: Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。
-          href: error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md
         - name: Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
           href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
         - name: 無法起始 DCOM 通訊
@@ -278,7 +274,7 @@
           href: error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md
         - name: 網站背景工作處理序已被 IIS 終止
           href: error-web-site-worker-process-has-been-terminated-by-iis.md
-        - name: 無法連線至電腦 \<名稱>。 網路上找不到這部電腦。
+        - name: 無法連線至電腦 \<name>。 網路上找不到這部電腦。
           href: error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md
         - name: 只有使用 Microsoft .NET Framework 2.0 或更新版本時才支援混合模式偵錯
           href: error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md
@@ -562,9 +558,9 @@
       items:
         - name: 圖形診斷 (對 DirectX 圖形進行偵錯)
           href: visual-studio-graphics-diagnostics.md
-        - name: 概觀
+        - name: 總覽
           href: overview-of-visual-studio-graphics-diagnostics.md
-        - name: 開始使用
+        - name: 快速入門
           href: getting-started-with-visual-studio-graphics-diagnostics.md
         - name: 擷取圖形資訊
           href: capturing-graphics-information.md
@@ -592,7 +588,7 @@
               href: bc-texture-compression-variant.md
         - name: 事件清單
           href: graphics-event-list.md
-        - name: State
+        - name: 狀況
           href: graphics-state.md
         - name: 管線階段
           href: graphics-pipeline-stages.md
@@ -628,9 +624,9 @@
               href: how-to-change-the-graphics-diagnostics-playback-machine.md
             - name: 搭配 ARM 裝置使用圖形診斷
               href: how-to-use-graphics-diagnostics-with-an-arm-device.md
-        - name: 參考
+        - name: 參考資料
           items:
-            - name: 參考
+            - name: 參考資料
               href: reference-programmatic-capture.md
             - name: VsgDbg 類別
               items:
