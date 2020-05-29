@@ -1,23 +1,23 @@
 ---
 title: XAML 概觀
-ms.date: 01/10/2020
+ms.date: 05/20/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2556387f523769bba93708a9c00d1f7c62429c0f
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.openlocfilehash: 97f3bc7777023903d5fc38ad1bda7cde45b683b6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886420"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183479"
 ---
 # <a name="overview-of-xaml"></a>XAML 概觀
 
 Extensible Application Markup Language (XAML) 是一種以 XML 為基礎的宣告式語言。 XAML 在下列類型的應用程式中廣泛用來建置使用者介面：
 
 - [Windows Presentation Foundation (WPF) 應用程式](/dotnet/framework/wpf/advanced/xaml-in-wpf)
-- [通用 Windows 平台 (UWP) 應用程式](/windows/uwp/xaml-platform/xaml-overview)
+- [通用 Windows 平臺（UWP）應用程式](/windows/uwp/xaml-platform/xaml-overview)
 - [Xamarin.Forms 應用程式](/xamarin/xamarin-forms/xaml/)
 
 下列 XAML 程式碼定義了一個簡單的按鈕控制項。
@@ -36,9 +36,9 @@ Visual Studio 和 Blend for Visual Studio 提供「XAML 設計工具」，可協
 
 ## <a name="whats-new"></a>新功能
 
-如需最新資訊，請參閱[XAML 開發人員工具的新功能 Visual Studio 2019 的](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/)blog 文章和 YouTube 上 Visual Studio Video 的[新 XAML 功能](https://youtu.be/yI9OyA4ZM2E)。
+如需最新資訊，請參閱[xaml 開發人員工具的新功能 Visual Studio 2019 的](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/)blog 文章、 [Visual Studio 2019 版本 16.7 Preview 1 中的 xaml 工具改善](https://devblogs.microsoft.com/visualstudio/improvements-to-xaml-tooling-in-visual-studio-2019-version-16-7-preview-1/)和 YouTube 上 VISUAL STUDIO video 的[新 xaml 功能](https://youtu.be/yI9OyA4ZM2E)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [WPF 應用程式中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [UWP 應用程式中的 XAML](/windows/uwp/xaml-platform/xaml-overview)

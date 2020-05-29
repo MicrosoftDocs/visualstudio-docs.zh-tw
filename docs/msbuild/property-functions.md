@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5f1d34a6d21e6d4f413275ee21651feb7ec3dec
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586684"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183648"
 ---
 # <a name="property-functions"></a>屬性函式
 
@@ -57,7 +57,7 @@ $([Class]::Property)
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-若要呼叫靜態方法，請使用下列語法，其中 \<Class> 是系統類別的名稱、\<Method> 是方法的名稱，而 (\<Parameters>) 是方法的參數清單：
+若要呼叫靜態方法，請使用下列語法，其中 \<Class> 是系統類別的名稱、 \<Method> 是方法的名稱，而（ \<Parameters> ）是方法的參數清單：
 
 ```
 $([Class]::Method(Parameters))
@@ -71,57 +71,57 @@ $([Class]::Method(Parameters))
 
 在靜態屬性函式中，您可以使用以下系統類別的靜態方法或屬性：
 
-- System.Byte
-- System.Char
-- System.Convert
-- System.DateTime
-- System.Decimal
-- System.Double
-- System.Enum
-- System.Guid
-- System.Int16
-- System.Int32
-- System.Int64
-- System.IO.Path
-- System.Math
-- System.Runtime.InteropServices.OSPlatform
-- System.Runtime.InteropServices.RuntimeInformation
-- System.UInt16
-- System.UInt32
-- System.UInt64
-- System.SByte
-- System.Single
-- System.String
-- System.StringComparer
-- System.TimeSpan
-- System.Text.RegularExpressions.Regex
-- System.UriBuilder
-- System.Version
-- Microsoft.Build.Utilities.ToolLocationHelper
+- <xref:System.Byte?displayProperty=nameWithType>
+- <xref:System.Char?displayProperty=nameWithType>
+- <xref:System.Convert?displayProperty=nameWithType>
+- <xref:System.DateTime?displayProperty=nameWithType>
+- <xref:System.Decimal?displayProperty=nameWithType>
+- <xref:System.Double?displayProperty=nameWithType>
+- <xref:System.Enum?displayProperty=nameWithType>
+- <xref:System.Guid?displayProperty=nameWithType>
+- <xref:System.Int16?displayProperty=nameWithType>
+- <xref:System.Int32?displayProperty=nameWithType>
+- <xref:System.Int64?displayProperty=nameWithType>
+- <xref:System.IO.Path?displayProperty=nameWithType>
+- <xref:System.Math?displayProperty=nameWithType>
+- <xref:System.Runtime.InteropServices.OSPlatform?displayProperty=nameWithType>
+- <xref:System.Runtime.InteropServices.RuntimeInformation?displayProperty=nameWithType>
+- <xref:System.UInt16?displayProperty=nameWithType>
+- <xref:System.UInt32?displayProperty=nameWithType>
+- <xref:System.UInt64?displayProperty=nameWithType>
+- <xref:System.SByte?displayProperty=nameWithType>
+- <xref:System.Single?displayProperty=nameWithType>
+- <xref:System.String?displayProperty=nameWithType>
+- <xref:System.StringComparer?displayProperty=nameWithType>
+- <xref:System.TimeSpan?displayProperty=nameWithType>
+- <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>
+- <xref:System.UriBuilder?displayProperty=nameWithType>
+- <xref:System.Version?displayProperty=nameWithType>
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper?displayProperty=nameWithType>
 
 此外，您可以使用下列靜態方法和屬性：
 
-- System.Environment::CommandLine
-- System.Environment::ExpandEnvironmentVariables
-- System.Environment::GetEnvironmentVariable
-- System.Environment::GetEnvironmentVariables
-- System.Environment::GetFolderPath
-- System.Environment::GetLogicalDrives
-- System.IO.Directory::GetDirectories
-- System.IO.Directory::GetFiles
-- System.IO.Directory::GetLastAccessTime
-- System.IO.Directory::GetLastWriteTime
-- System.IO.Directory::GetParent
-- System.IO.File::Exists
-- System.IO.File::GetCreationTime
-- System.IO.File::GetAttributes
-- System.IO.File::GetLastAccessTime
-- System.IO.File::GetLastWriteTime
-- System.IO.File::ReadAllText
+- [System.Environment::CommandLine](xref:System.Environment.CommandLine*)
+- [System.Environment::ExpandEnvironmentVariables](xref:System.Environment.ExpandEnvironmentVariables*)
+- [System. 環境：： GetEnvironmentVariable](xref:System.Environment.GetEnvironmentVariable*)
+- [System.Environment::GetEnvironmentVariables](xref:System.Environment.GetEnvironmentVariables*)
+- [System.Environment::GetFolderPath](xref:System.Environment.GetFolderPath*)
+- [System.Environment::GetLogicalDrives](xref:System.Environment.GetLogicalDrives*)
+- [System.IO.Directory::GetDirectories](xref:System.IO.Directory.GetDirectories*)
+- [System.IO.Directory::GetFiles](xref:System.IO.Directory.GetFiles*)
+- [System.IO.Directory::GetLastAccessTime](xref:System.IO.Directory.GetLastAccessTime*)
+- [System.IO.Directory::GetLastWriteTime](xref:System.IO.Directory.GetLastWriteTime*)
+- [System.IO.Directory::GetParent](xref:System.IO.Directory.GetParent*)
+- [System.IO.File::Exists](xref:System.IO.File.Exists*)
+- [System.web. File：： GetCreationTime](xref:System.IO.File.GetCreationTime*)
+- [System.web. File：： GetAttributes](xref:System.IO.File.GetAttributes*)
+- [System.web. File：： GetLastAccessTime](xref:System.IO.File.GetLastAccessTime*)
+- [System.web. File：： GetLastWriteTime](xref:System.IO.File.GetLastWriteTime*)
+- [System.IO.File::ReadAllText](xref:System.IO.File.ReadAllText*)
 
 ### <a name="calling-instance-methods-on-static-properties"></a>在靜態屬性上呼叫執行個體方法
 
-如果您存取的靜態屬性傳回物件執行個體，您就可以叫用該物件的執行個體方法。 若要叫用執行個體方法，請使用下列語法，其中 \<Class> 是系統類別的名稱、\<Property> 是屬性的名稱、\<Method> 是方法的名稱，而 (\<Parameters>) 是方法的參數清單：
+如果您存取的靜態屬性傳回物件執行個體，您就可以叫用該物件的執行個體方法。 若要叫用實例方法，請使用下列語法，其中 \<Class> 是系統類別的名稱，是屬性的名稱， \<Property> \<Method> 是方法的名稱，而（ \<Parameters> ）是方法的參數清單：
 
 ```
 $([Class]::Property.Method(Parameters))
@@ -137,7 +137,7 @@ $([Class]::Property.Method(Parameters))
 
 ### <a name="msbuild-property-functions"></a>MSBuild 屬性函式
 
-您組建中的數個靜態方法可以存取來提供算術、位元邏輯和逸出字元支援。 您可以使用下列語法存取這些方法，其中 \<Method> 是方法的名稱，而 (\<Parameters>) 是方法的參數清單。
+您組建中的數個靜態方法可以存取來提供算術、位元邏輯和逸出字元支援。 您可以使用下列語法存取這些方法，其中 \<Method> 是方法的名稱，而（ \<Parameters> ）是方法的參數清單。
 
 ```
 $([MSBuild]::Method(Parameters))
@@ -174,7 +174,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |string NormalizePath(params string[] path)|取得所提供路徑的規範化完整路徑，並確保它包含目前作業系統的正確目錄分隔符號字元。|
 |string NormalizeDirectory(params string[] path)|取得所提供目錄的規範化完整路徑，並確保它包含目前作業系統的正確目錄分隔符號字元，且後面有斜線。|
 |string EnsureTrailingSlash(string path)|如果指定的路徑後面沒有斜線，請新增一個。 如果此路徑是空字串，請不要修改它。|
-|string GetPathOfFileAbove(string file, string startingDirectory)|搜尋並傳回目錄結構中，位於目前組建檔案位置上方之檔案的完整路徑，如果有指定`startingDirectory`，則會傳回根據。|
+|string GetPathOfFileAbove(string file, string startingDirectory)|搜尋並傳回目錄結構中，位於目前組建檔案位置上方之檔案的完整路徑， `startingDirectory` 如果有指定，則會傳回根據。|
 |GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|找出並傳回指定目錄中的檔案目錄，或在該目錄上方目錄結構中的位置。|
 |string MakeRelative(string basePath, string path)|讓 `path` 成為 `basePath` 的相對項。 `basePath` 必須是絕對目錄。 如果 `path` 不能成為相對的，它就會被逐字傳回。 類似於 `Uri.MakeRelativeUri`。|
 |string ValueOrDefault(string conditionValue, string defaultValue)|只有當參數 'conditionValue' 為空時，才傳回參數 'defaultValue' 中的字串；否則，傳回值 conditionValue。|
@@ -229,7 +229,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
 
-MSBuild `GetPathOfFileAbove`中的屬性函式會傳回指定檔案的路徑（如果位於目前目錄上方的目錄結構中）。 它在功能上相當於呼叫
+MSBuild 中的屬性函式會傳回指定檔案的 `GetPathOfFileAbove` 路徑（如果位於目前目錄上方的目錄結構中）。 它在功能上相當於呼叫
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -342,7 +342,7 @@ Output:
 
 ## <a name="msbuild-condition-functions"></a>MSBuild 條件函數
 
-函數`Exists`和`HasTrailingSlash`不是屬性函式。 它們可與`Condition`屬性搭配使用。 請參閱[MSBuild 條件](msbuild-conditions.md)。
+函數 `Exists` 和 `HasTrailingSlash` 不是屬性函式。 它們可與屬性搭配使用 `Condition` 。 請參閱[MSBuild 條件](msbuild-conditions.md)。
 
 ## <a name="see-also"></a>另請參閱
 

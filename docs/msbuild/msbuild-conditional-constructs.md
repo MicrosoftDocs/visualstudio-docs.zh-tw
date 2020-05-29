@@ -22,16 +22,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a7d6693a24d208cab6bd3b58ce16dcba8a32b190
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633378"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184285"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild 條件式建構
 
-MSBuild 提供了一種機制，用於使用[選擇](../msbuild/choose-element-msbuild.md)、[時](../msbuild/when-element-msbuild.md)等元素[進行](../msbuild/otherwise-element-msbuild.md)處理。
+MSBuild 提供一種機制，可使用[Choose](../msbuild/choose-element-msbuild.md)、 [When](../msbuild/when-element-msbuild.md)和[其他](../msbuild/otherwise-element-msbuild.md)專案來進行/或處理。
 
 ## <a name="use-the-choose-element"></a>使用 Choose 元素
 
@@ -79,9 +79,21 @@ MSBuild 提供了一種機制，用於使用[選擇](../msbuild/choose-element-m
 </Project>
 ```
 
+在此範例中，會使用編譯器常數的條件 `DEFINED_CONSTANT` 。 這些包含在屬性中 `DefinedConstants` 。 正則運算式會用來比對以分號分隔之清單中的確切常數。
+
+```xml
+<Choose>
+   <When Condition="$([System.Text.RegularExpressions.Regex]::IsMatch(
+         $(DefineConstants), '^(.*;)*DEFINED_CONSTANT(;.*)*$'))">
+      <!-- When DEFINED_CONSTANT is defined. -->
+   </When>
+   <!-- other conditions -->
+</Choose>
+```
+
 ## <a name="see-also"></a>另請參閱
 
 - [Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)
-- [當元素（MSBuild）](../msbuild/when-element-msbuild.md)
+- [When 元素（MSBuild）](../msbuild/when-element-msbuild.md)
 - [Otherwise 元素 (MSBuild)](../msbuild/otherwise-element-msbuild.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

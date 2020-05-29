@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094569"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183063"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory 工作
 
@@ -43,16 +43,16 @@ ms.locfileid: "79094569"
 |參數|描述|
 |---------------|-----------------|
 |`DestinationFile`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數<br /><br /> 要建立之 *.zip* 檔案的完整路徑。|
-|`Overwrite`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，會覆寫存在的目的地檔案。 預設為 `false`。|
+|`Overwrite`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true` ，則會覆寫目的地檔案（如果有的話）。 預設為 `false`。|
 |`SourceDirectory`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要從其中建立 *.zip* 封存的目錄。|
 
 ## <a name="remarks"></a>備註
 
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 有關這些附加參數及其說明的清單，請參閱[任務擴展基類](../msbuild/taskextension-base-class.md)。
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱[TaskExtension 基類](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
 
- 以下示例（如果用作導入的 *.target*檔）在生成專案後從輸出目錄中創建 *.zip*存檔。 該`$(OutputPath)`屬性通常在 MSBuild 專案檔案中定義，因此導入以下檔的專案檔案將生成 zip 存檔`output.zip`：
+ 下列範例（如果做為匯入的 *.targets*檔案使用）會在建立專案之後，從輸出目錄建立 *.zip*封存。 `$(OutputPath)`屬性通常會定義在 MSBuild 專案檔中，因此匯入下列檔案的專案檔會產生 zip 封存 `output.zip` ：
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -69,4 +69,4 @@ ms.locfileid: "79094569"
 ## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

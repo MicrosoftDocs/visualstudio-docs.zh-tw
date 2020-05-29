@@ -1,7 +1,7 @@
 ---
 title: 變更記錄檔 (Visual Studio Tools for Unity，Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 12/02/2019
+ms.date: 5/19/2020
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,200 +10,254 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 5599153f79b273249e93c48aaa197214d92f5fe7
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 4fa5a68a15dd5b53d5a626ff5c46e9739db504fc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232912"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184558"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>變更記錄檔 (Visual Studio Tools for Unity，Mac)
 
 Visual Studio Tools for Unity 變更記錄。
 
-## <a name="2520"></a>2.5.2.0
-
-2020 年 3 月 23 日發佈
+## <a name="2610"></a>2.6.1.0
+2020年5月19日發行
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **調試：**
+- **整合**
 
-  - 修復了連接時執行緒的註冊。
+  - 如果我們無法在 Unity 端建立訊息伺服器，就會發出警告。
+
+  - 在輕量編譯期間適當地執行分析器。
+
+  - 已修正 Unity Hub 安裝的 API 檔。
+  
+  - 修正偵錯工具視覺化檢視當機。
+
+## <a name="2600"></a>2.6.0.0
+2020年4月14日發行
+
+### <a name="new-features"></a>新功能
+
+- **整合**
+
+  - 已新增 [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0012.md) 診斷。 在中偵測並包裝對協同程式的呼叫 `StartCoroutine()` 。
+
+  - 已新增 [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0013.md) 診斷。 偵測和移除無效或重複的 `SerializeField` 屬性。
+
+  - 已新增 [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0014.md) 診斷。 `GetComponent()`使用非元件或非介面類別型呼叫的偵測。
+
+  - 已新增 [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0009.md) 的抑制器 `IDE0051` 。 請不要使用屬性來旗標方法， `ContextMenu` 或使用屬性（attribute）來加以參考（ `ContextMenuItem` 未使用）。
+
+  - 已新增 [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0010.md) 的抑制器 `IDE0051` 。 不要將 `ContextMenuItem` 屬性標示為未使用的欄位。
+
+  - 已新增 [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0011.md) 的抑制器 `IDE0044` 。 不要讓屬性成為唯讀的欄位 `ContextMenuItem` 。
+
+  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md)、 [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) 和 [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) 現在同時適用于 `SerializeReference` 和 `SerializeField` 屬性。
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **整合**
+
+  - 只有在編輯器能夠進行通訊時，才將開始/停止命令傳送至 Unity。
+
+  - 已修正具有繼承訊息的 QuickInfo 檔。
+
+  - 訊息的固定訊息範圍 `CreateInspectorGUI` 。
+
+  - 不要報告具有多型修飾詞的 [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md) 方法。
+
+- **求**
+
+  - 已修正別名 using 的處理。
+  
+  - 已修正 null 值的處理。  
+
+## <a name="2520"></a>2.5.2.0
+
+2020年3月23日發行
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **偵錯工具**
+
+  - 已修正附加時的執行緒註冊。
 
 ## <a name="2510"></a>2.5.1.0
 
-2020 年 3 月 3 日發佈
+2020年3月3日發行
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
-  - 添加了[`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md)的抑制器。 與調用、調用重複、StartCo 常式或 StopCo 常式一起使用的私有方法不應標記為未使用。
+  - 已新增 [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) 的抑制器 `IDE0051` 。 搭配 Invoke、InvokeRepeating、StartCoroutine 或 StopCoroutine 使用的私用方法不應標記為未使用。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
-  - 固定上拉迪斯莫斯/OnDrawGizmos 選定文檔
+  - 已修正 OnDrawGizmos/OnDrawGizmosSelected 檔。
 
-- **評價：**
+- **求**
 
-  - 固定 lambda 參數檢查。
+  - 已修正 lambda 引數檢查。
 
 ## <a name="2501"></a>2.5.0.1
 
-2020 年 2 月 19 日發佈
+2020年2月19日發行
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
-  - 修復了[`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md)郵件簽名不正確的診斷檢查。 當檢查具有多個繼承級別的類型時，此診斷可能會失敗，以下消息： `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`。
+  - 已修正 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) 不正確訊息簽章的診斷檢查。 檢查具有多個繼承層級的類型時，此診斷可能會失敗，並出現下列訊息： `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added` 。
 
-## <a name="2500"></a>2.5.0.0
+## <a name="2500"></a>2.5.0.0 起
 
-2020 年 1 月 22 日發佈
+2020年1月22日發行
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
-  - 添加了對 HLSL 檔的支援。
+  - 已新增 HLSL 檔案的支援。
   
-  - 切換到新的資料夾對話方塊 UI。
+  - 切換至新的資料夾對話方塊 UI。
   
-  - 切換到新的可訪問屬性網格進行設置。
+  - 切換至新的可存取屬性方格以進行設定。
 
-  - 添加了[`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md)的抑制器。 不應將具有該`SerializeField`屬性的私有欄位標記為未使用。
+  - 已新增 [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) 的抑制器 `IDE0051` 。 具有屬性的私用欄位 `SerializeField` 不應標示為未使用。
 
-  - 添加了[`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md)的抑制器。 不應將具有`SerializeField`屬性的欄位標記為未分配。  
+  - 已新增 [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) 的抑制器 `CS0649` 。 具有屬性的欄位 `SerializeField` 不應標記為未指派。  
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
-  - 固定專案生成（`GenerateTargetFrameworkMonikerAttribute`目標並不總是正確定位）
+  - 已修正專案產生（ `GenerateTargetFrameworkMonikerAttribute` 目標不一定是正確的位置）。
 
-- **評價：**
+- **求**
 
-  - 固定字串計算（不使用 ToString（） 調用）
+  - 已修正字串評估（不使用 ToString （）呼叫）
 
 ## <a name="2420"></a>2.4.2.0
 
-2019 年 12 月 3 日發佈
+2019年12月3日發行
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
-  - 使用使用者定義的介面進行固定診斷。
+  - 已修正使用者定義介面的診斷。
 
-  - 修復了具有格式錯誤的運算式的快速工具提示。
+  - 已修正具有格式錯誤之運算式的快速工具提示。
   
 ## <a name="2410"></a>2.4.1.0
 
-2019 年 11 月 6 日發佈
+2019年11月6日發行
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
-  - 添加了對 Unity 後臺進程的支援。 （調試器能夠自動連接到主進程，而不是子進程）。
+  - 已新增 Unity 背景進程的支援。 （偵錯工具可以自動連接到主要進程，而不是子進程）。
 
-  - 為 Unity 消息添加了一個快速工具提示，顯示關聯的文檔。
+  - 加入 Unity 訊息的快速工具提示，顯示相關聯的檔。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
-  - 修復了具有高級二進位`UNT0002`和調用運算式的標記比較分析器。
+  - 已修正 `UNT0002` 具有「先進的二進位」和「調用」運算式的標記比較分析器。
 
 ### <a name="deprecated-features"></a>已被取代的功能
 
-- **集成：**
+- **整合**
 
-  - 展望未來，統一視覺工作室工具將僅支援視覺工作室 2017+。
+  - 接下來，Visual Studio Tools for Unity 只會支援 Visual Studio 2017 +。
 
 ## <a name="2400"></a>2.4.0.0
 
-2019 年 10 月 15 日發佈
+2019年10月15日發行
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
-  - 為所有 Unity 消息`IDE0060`添加了（未使用的參數）抑制器。
+  - 已為 [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md) `IDE0060` 所有 Unity 訊息新增（未使用的參數）的抑制器。
 
-  - 為 標記為`TooltipAttribute`的欄位添加了快速工具提示。 （這將適用于使用此欄位的簡單獲取訪問器）。
+  - 已為標記為的欄位新增快速工具提示 `TooltipAttribute` 。 （這也適用于使用此欄位的簡單 get 存取子）。
 
 ## <a name="2330"></a>2.3.3.0
 
-2019 年 9 月 23 日發佈
+2019年9月23日發行
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
-  - 添加了 IDE0060 的新抑制器，以防止 IDE 顯示快速修復以刪除未使用的參數。
-    - `USP0005`的`IDE0060`：Unity 消息由 Unity 運行時調用。
+  - 新增 IDE0060 的抑制器，以防止 IDE 顯示快速修正以移除未使用的參數。
+    - `USP0005`針對 `IDE0060` ： unity 訊息是由 unity 執行時間叫用。
 
 ## <a name="2320"></a>2.3.2.0
 
-2019 年 9 月 16 日發佈
+2019年9月16日發行
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
-  - 通過添加特定于 Unity 的新診斷，加深了 Visual Studio 對 Unity 專案的理解。 我們也隱藏了對 Unity 專案不適用的通用 C# 診斷，讓 IDE 更有智慧。 例如，IDE 不會顯示快速修復來更改檢查器變數`readonly`，這將阻止您在 Unity 編輯器中修改該變數。
-    - `UNT0001`：整合通訊由運行時調用，即使它們為空，也不聲明它們以避免 Unity 運行時的未必要處理。
-    - `UNT0002`：使用字串相等性標記比較比內置比較標記方法慢。
-    - `UNT0003`：對於型別安全，最好使用 Get元件的通用形式。
-    - `UNT0004`：更新消息取決於畫面播放速率，應使用 Time.deltaTime 而不是 Time.固定 DeltaTime。
-    - `UNT0005`：固定更新消息與畫面播放速率無關，應使用 Time.固定增量時間而不是 Time.deltaTime。
-    - `UNT0006`： 檢測到此 Unity 消息不正確的方法簽名。
-    - `UNT0007`：Unity 覆蓋 Unity 物件的空比較運算子，該運算子與空合併不相容。
-    - `UNT0008`：Unity 覆蓋 Unity 物件的 null 比較運算子，該運算子與空傳播不相容。
-    - `UNT0009`：將初始化OnLoad屬性應用於類時，需要提供靜態建構函式。 InitializeOnLoad 屬性可確保其在編輯器啟動時受到呼叫。
-    - `UNT0010`：單一行為只能使用 Add 元件（） 創建。 MonoBehaviours 是元素，且應附加至 GameObject。
-    - `UNT0011`：只能使用 CreateInstance（） 創建可腳本物件。 ScriptableObject 須由 Unity 引擎建立來處理 Unity 訊息方法。
-    - `USP0001`對於`IDE0029`： 統一物件不應使用空合併。
-    - `USP0002`對於`IDE0031`： 統一物件不應使用 null 傳播。
-    - `USP0003`的`IDE0051`：Unity 消息由 Unity 運行時調用。
-    - `USP0004`對於`IDE0044`： 具有序列化欄位屬性的欄位不應是唯讀的。
+  - 我們已藉由加入 Unity 專屬的新診斷，來深度對 Unity 專案的瞭解 Visual Studio。 我們也隱藏了對 Unity 專案不適用的通用 C# 診斷，讓 IDE 更有智慧。 例如，IDE 不會顯示快速修正來將偵測器變數變更為， `readonly` 這會讓您無法修改 Unity 編輯器中的變數。
+    - `UNT0001`：執行時間會呼叫 Unity 訊息，即使它們是空的，也不會宣告它們來避免 Unity 執行時間處理 uncesseray。
+    - `UNT0002`：使用字串相等的標記比較會比內建的 CompareTag 方法慢。
+    - `UNT0003`：使用泛型形式的 GetComponent 是型別安全的慣用方法。
+    - `UNT0004`：更新訊息會相依于畫面播放速率，而且應該使用 deltaTime 而不是 fixedDeltaTime。
+    - `UNT0005`： FixedUpdate 訊息與框架速率無關，應使用 fixedDeltaTime 而不是 deltaTime。
+    - `UNT0006`：偵測到此 Unity 訊息的方法簽章不正確。
+    - `UNT0007`： Unity 會針對與 null 聯合不相容的 Unity 物件，覆寫 null 比較運算子。
+    - `UNT0008`： Unity 會針對與 null 傳播不相容的 Unity 物件，覆寫 null 比較運算子。
+    - `UNT0009`：將 InitializeOnLoad 屬性套用至類別時，您必須提供靜態的函式。 InitializeOnLoad 屬性可確保其在編輯器啟動時受到呼叫。
+    - `UNT0010`： MonoBehaviours 只能使用 AddComponent （）來建立。 MonoBehaviours 是元素，且應附加至 GameObject。
+    - `UNT0011`： ScriptableObject 只能使用 CreateInstance （）來建立。 ScriptableObject 須由 Unity 引擎建立來處理 Unity 訊息方法。
+    - `USP0001`針對 `IDE0029` ： Unity 物件不應該使用 null 聯合。
+    - `USP0002`針對 `IDE0031` ： Unity 物件不應該使用 null 傳播。
+    - `USP0003`針對 `IDE0051` ： unity 訊息是由 unity 執行時間叫用。
+    - `USP0004`針對 `IDE0044` ：具有 SerializeField 屬性的欄位不應設為 readonly。
 
 ## <a name="2310"></a>2.3.1.0
 
-2019 年 9 月 4 日發佈
+2019年9月4日發行
 
 ### <a name="new-features"></a>新功能
 
-- **評價：**
+- **求**
 
-  - 添加了對更好類型顯示的支援，`List<object>`即而不是`List'1[[System.Object, <corlib...>]]`。
+  - 已新增對較佳類型顯示的支援，亦即， `List<object>` 而不是 `List'1[[System.Object, <corlib...>]]` 。
 
-  - 添加了對指標成員訪問的支援，`p->data->member`即 。
+  - 已新增對指標成員存取的支援，亦即 `p->data->member` 。
 
-  - 添加了對陣列初始化器中的隱式轉換的支援，`new byte [] {1,2,3,4}`即 。
+  - 已在陣列初始化運算式中新增隱含轉換的支援，亦即 `new byte [] {1,2,3,4}` 。
 
-  - 在檢查位元組陣列和字串時添加了對十六進位編輯器的支援。
+  - 已新增在檢查位元組陣列和字串時的十六進位編輯器支援。
 
 ## <a name="2300"></a>2.3.0.0
 
-2019 年 8 月 13 日發佈
+2019年8月13日發行
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **評價：**
+- **求**
 
-  - 修復了異常步進問題。
+  - 修正例外狀況的逐步執行問題。
 
-  - 修復了偽識別碼（如$exception）的評估。
+  - 已修正虛擬識別碼的評估（例如 $exception）。
 
-  - 防止取消引用無效位址時崩潰。  
+  - 解除引用無效位址時，避免損毀。  
 
-  - 修復了卸載的應用域的問題。
+  - 已修正卸載 appdomain 的問題。
 
 ## <a name="2200"></a>2.2.0.0
 
@@ -211,11 +265,11 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **評價：**
+- **求**
 
   - 已修正 IntPtr 型別的檢閱。
 
-- **調試：**
+- **偵錯工具**
 
   - 已修正捕捉點與函數中斷點的處理方式。
 
@@ -225,13 +279,13 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **調試：**
+- **偵錯工具**
 
   - 已新增對捕捉例外狀況子類別的支援。
 
   - 已新增對 MDS 通訊協定 2.5.1 的支援。
 
-- **集成：**
+- **整合**
 
   - 已新增對 asmdef 檔案的資源。
 
@@ -239,11 +293,11 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
   - 已修正與 Unity 播放機通訊時，對格式不正確訊息的處理方式。
 
-- **評價：**
+- **求**
 
   - 已修正運算式中命名空間的處理方式。
 
@@ -253,7 +307,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **評價：**
+- **求**
 
   - 已修正包含非可剖析式運算式的錯誤報告。
 
@@ -263,13 +317,13 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
   - 已將 MonoBehaviour API 更新為 2019.1。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
   - 已修正 Unity 專案總管效能。
 
@@ -283,7 +337,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
   - 已停用 Unity 專案的完整組建，改為使用 IntelliSense 錯誤和警告。 事實上，Unity 會使用代表 Unity 內部工作的類別庫專案，建立一個 Visual Studio 方案。 也就是說，當 Unity 的編譯管線遭到關閉時，它永遠不會使用或挑選 Visual Studio 中的組建結果。 在 Visual Studio 中建置只是消耗資源而已。 如果您因為有相依的工具或設定而需要完整建置，您可以停用此最佳化 (設定/Tools for Unity/停用專案的完整建置)。
   
@@ -295,7 +349,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
   - 已新增 Unity 執行目標的自訂圖示。
 
@@ -305,7 +359,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
   - 已新增在儲存時自動重新整理 Unity 資產資料庫的支援。 這預設會啟用，且在 Visual Studio 中儲存指令碼時，會觸發在 Unity 端的重新編譯。 您可以在 [工具]\\[選項]\\[Tools for Unity]\\[儲存時重新整理 Unity 的 AssetDatabase] 中停用此功能。
 
@@ -315,7 +369,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **調試：**
+- **偵錯工具**
 
   - 已修正組件篩選和空白框架的框架檢查。
 
@@ -325,7 +379,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
   - 暫時將 Mono 設定為此版本之預設且唯一可用的偵錯工具。
 
@@ -335,7 +389,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
   - 新增 [附加至 Unity 並試玩] 的支援。
 
@@ -345,11 +399,11 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **專案生成：**
+- **專案產生：**
 
   - 處理解決方案檔案時，保留外部屬性。
   
-- **評價：**
+- **求**
 
   - 已新增對別名限定名稱 (目前僅限於全域命名空間) 的支援。 因此，運算式評估工具現在會接受使用表單 global::namespace.type 的類型。
 
@@ -361,13 +415,13 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
-  - 更新了`ScriptableObject`API。
+  - 已更新 `ScriptableObject` API。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
   - 從範本移除命名空間。
 
@@ -377,37 +431,37 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **專案生成：**
+- **專案產生：**
 
-  - 公用和序列化欄位將不會再造成警告。 我們已經自動抑制了 Unity 專案中`CS0649`創建`IDE0051`這些消息的 和 編譯器警告。
+  - 公用和序列化欄位將不會再造成警告。 `CS0649` `IDE0051` 在建立這些訊息的 Unity 專案中，我們已自動隱藏和編譯器警告。
 
-- **集成：**
+- **整合**
 
   - 如果有超過一個的 Unity 處理序在執行，系統會提示附加到特定執行個體。
 
-- **評價：**
+- **求**
 
   - 新增區域函式的支援。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **調試：**
+- **偵錯工具**
 
   - 已修正使用舊版通訊協定版本時具名變數上的自訂屬性。
 
 ## <a name="2002"></a>2.0.0.2
 
-發行於 2019 年 2 月 4 日
+2019 年 2 月 4 日發行
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
   - 更新 MonoBehaviour API。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **調試：**
+- **偵錯工具**
 
   - 已修正偵錯工具中的設定基本值。
 
@@ -417,7 +471,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
   - 已修正安裝套件自我內含項目。
 
@@ -426,7 +480,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **調試：**
+- **偵錯工具**
 
   - 用 Windows 的相同核心 Unity 偵錯工具，取代 Mac 上的 Unity 偵錯工具。
 
@@ -442,7 +496,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **調試：**
+- **偵錯工具**
 
   - 已修正對格式不正確或不受支援之運算式的運算式評估。
 
@@ -452,17 +506,17 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **調試：**
+- **偵錯工具**
 
   - 在 [附加] 對話方塊中新增更多用戶端資訊 (IP、電腦名稱)。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **調試：**
+- **偵錯工具**
 
   - 已修正用於與 Unity 偵錯工具引擎通訊之程式庫中的死結，該死結造成 Visual Studio 或 Unity 凍結，特別是在按下 [附加到 Unity] 或重新啟動遊戲時。
 
-- **集成：**
+- **整合**
 
   - 修正選取其他預設編輯器時的 Unity 外掛程式啟用問題。
 
@@ -474,7 +528,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
   - 針對 Unity 已修正的 Unity 效能 Bug 復原因應措施。
 
@@ -484,7 +538,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
   - 修正了著色器的程式碼著色支援。
 
@@ -498,7 +552,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 修正了 OnApplicationFocus 訊息中的錯字。
 
-- **專案生成：**
+- **專案產生：**
 
   - Unity 效能 Bug 的暫時性因應措施：在產生專案時，會快取 MonoIslands。
 
@@ -510,7 +564,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
   - 新增了基本著色器程式碼完成功能的支援。
 
@@ -522,7 +576,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
   - 已新增 Unity 專案總管中額外範本的支援。
 
@@ -532,7 +586,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
   - 已新增偵測和附加至透過 USB 所連線 Android Player 的支援。
 
@@ -542,11 +596,11 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **專案生成：**
+- **專案產生：**
 
   - 已新增 Unity 2018.1 中新專案產生器的支援。
 
-- **集成：**
+- **整合**
 
   - 已新增專用設定的選項面板。
 
@@ -556,11 +610,11 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **專案生成：**
+- **專案產生：**
 
   - 已修正 Mono 版本偵測。
 
-- **集成：**
+- **整合**
 
   - 已修正 2018.1 的時間問題和外掛程式啟用問題。
 
@@ -572,7 +626,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
   - 已修正按兩下時展開/摺疊資料夾
 
@@ -582,13 +636,13 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **專案生成：**
+- **專案產生：**
 
   - 已新增 .NET Standard 的支援。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
   - 修正自動化 pdb 對 mdb 的偵錯符號轉換。
 
@@ -598,7 +652,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
   - 已修正在嘗試變更陣列大小期間，間接呼叫 EditorPrefs.GetBool 對檢查的影響。
 
@@ -624,13 +678,13 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **調試：**
+- **偵錯工具**
 
   - 已新增可攜式偵錯符號檔的支援。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **專案生成：**
+- **專案產生：**
 
   - 已修正錯誤新增至組件檔名的額外 .dll 副檔名。
 
@@ -642,7 +696,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **專案生成：**
+- **專案產生：**
 
   - 已新增對 .NET 4.6 設定檔的支援。
 
@@ -652,11 +706,11 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **調試：**
+- **偵錯工具**
 
   - 如果不確定要附加的 Unity，請啟動 [附加到處理序] 對話方塊。
 
-- **專案生成：**
+- **專案產生：**
 
   - 使用 Unity 5.6 時，總是啟用不安全的編譯參數。
 
@@ -666,7 +720,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
   - 已新增當地語系化資源的支援。
 
@@ -676,11 +730,11 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
-- **集成：**
+- **整合**
 
   - 已新增透過 [附加至處理序] 視窗附加至播放器和編輯器的支援。
 
-- **專案生成：**
+- **專案產生：**
 
   - 使用 mcs.rsp 檔案修正組件名稱參考。
 
@@ -690,7 +744,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
   - 已修正編譯時的著色器錯誤訊息。
 
@@ -700,7 +754,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
-- **集成：**
+- **整合**
 
   - 已修正混合式和一般專案的作用中文件追蹤。
 

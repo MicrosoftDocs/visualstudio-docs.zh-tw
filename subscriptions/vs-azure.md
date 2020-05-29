@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: conceptual
 description: 瞭解如何啟用 Visual Studio 訂用帳戶中所含的 Azure DevTest 個人點數權益。
-ms.openlocfilehash: f1e566750c4eb6928dd3c7c3e3407db1d161d621
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 50e784a60dc50232bc390233e2ad80dc91d0f4ab
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564169"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183609"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  有了[每月 Azure DevTest 的個別點數](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，azure 就是您用於開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
@@ -50,7 +50,10 @@ ms.locfileid: "82564169"
 
 有數種方式可以繼續使用 Azure 的每月信用額度。  若要儲存您的 Azure 資源，您必須將[資源傳輸](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)至另一個 Azure 訂用帳戶，而不論您在下方選擇的動作為何。 
 
-- **如果您直接購買 Visual Studio 訂**用帳戶，請透過[Microsoft Store](https://www.microsoft.com/store/collections/visualstudiosubscription/#:~:text=)購買新的訂用帳戶或續訂您的訂用帳戶。  
+- **如果您直接購買 Visual Studio 訂**用帳戶，請透過 Microsoft Store 購買新的訂用帳戶或續訂您的訂用帳戶。  
+    - [Visual Studio 企業版](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
 - **如果您組織中的某人購買貴組織的訂用**帳戶，請[洽詢您的 Visual Studio 訂閱管理員](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin)，並要求提供您所需的每月信用額度的訂閱。  
 - 如果您在與另一個 Microsoft 帳戶相關聯的相同訂用帳戶層級上**有另一個**作用中的 Visual Studio 訂用帳戶，您可以在 Visual Studio 訂用帳戶[入口網站](https://my.visualstudio.com/subscriptions)中[新增其他帳戶](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile)，以將 Azure 權益轉移至另一個有效的 Visual Studio 訂用  
 
@@ -69,30 +72,30 @@ ms.locfileid: "82564169"
 ## <a name="eligibility"></a>資格
 |                 訂用帳戶等級/方案                 |           優點           |                         可續約？                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             是                             |
-|              含 GitHub Enterprise 的 Visual Studio Enterprise               |     每月信用點數 $150 美元     |                             是                             |
+|              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             Yes                             |
+|              含 GitHub Enterprise 的 Visual Studio Enterprise               |     每月信用點數 $150 美元     |                             Yes                             |
 |               Visual Studio Enterprise 每月               |        無法使用        |                                                             |
-|             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             是
-|              含 GitHub Enterprise 的 Visual Studio Professional              |     每月信用點數 $150 美元     |                             是                             |
+|             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             Yes
+|              含 GitHub Enterprise 的 Visual Studio Professional              |     每月信用點數 $150 美元     |                             Yes                             |
 |              Visual Studio Professional 每月              |        無法使用        |                                                             |
-|                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             是                             |
-|                        MSDN 平台                        |     每月信用點數 $100 美元     |                             是                             |
-|               Visual Studio Enterprise - NFR\*               |     每月信用點數 $150 美元     |                             是                             |
-|                Visual Studio Enterprise - FTE                |     每月信用點數 $150 美元     |                             是                             |
-|     Visual Studio Enterprise - Microsoft 合作夥伴網路     |     每月信用點數 $150 美元     |                             是                             |
+|                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             Yes                             |
+|                        MSDN 平台                        |     每月信用點數 $100 美元     |                             Yes                             |
+|               Visual Studio Enterprise - NFR\*               |     每月信用點數 $150 美元     |                             Yes                             |
+|                Visual Studio Enterprise - FTE                |     每月信用點數 $150 美元     |                             Yes                             |
+|     Visual Studio Enterprise - Microsoft 合作夥伴網路     |     每月信用點數 $150 美元     |                             Yes                             |
 |    Visual Studio Professional - Microsoft 合作夥伴網路    |        無法使用        |                                                             |
 |        Visual Studio Enterprise – Imagine (Standard)         |        無法使用        |                                                             |
 |         Visual Studio Enterprise – Imagine (Premium)         |        無法使用        |                                                             |
-|             Visual Studio Enterprise – BizSpark              |     每月信用點數 $150 美元     |                             是                             |
-|      Visual Studio Enterprise – MCT 軟體與服務      |     每月信用點數 $100 美元     |                             是                             |
-| Visual Studio Enterprise – MCT 軟體與服務開發人員 |     每月信用點數 $150 美元     |                             是                             |
+|             Visual Studio Enterprise – BizSpark              |     每月信用點數 $150 美元     |                             Yes                             |
+|      Visual Studio Enterprise – MCT 軟體與服務      |     每月信用點數 $100 美元     |                             Yes                             |
+| Visual Studio Enterprise – MCT 軟體與服務開發人員 |     每月信用點數 $150 美元     |                             Yes                             |
 
 *包括禁止轉售 (NFR)、最有價值專家 (MVP)、區域經理 (RD)、Visual Studio 產業夥伴 (VSIP)
 
 > [!NOTE]
-> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶前往[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)以探索 Visual Studio 購買的不同選項。
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶前往以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索 Visual Studio 購買的不同選項。
 
-不確定您使用哪一個訂用帳戶？  連接到[https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
+不確定您使用哪一個訂用帳戶？  連接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>問：如何在 Azure 入口網站內提交技術支援事件？
@@ -113,7 +116,7 @@ ms.locfileid: "82564169"
 - 如需 Visual Studio 訂閱的銷售、訂閱、帳戶和計費的協助，請聯絡 Visual Studio[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)

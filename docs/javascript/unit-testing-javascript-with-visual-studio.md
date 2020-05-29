@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e3e0b1c1579614454580d2f5446b31c718d7f35
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77071943"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183102"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行單元測試
 
@@ -28,9 +28,6 @@ ms.locfileid: "77071943"
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 * 匯出執行器 (此架構是適用於 Visual Studio 的 Node.js 工具所特定)
-
-> [!WARNING]
-> Tape 的問題目前會導致 Tape 測試無法執行。 如果合併了 [PR #361](https://github.com/substack/tape/pull/361)，應該就能解決問題。
 
 如果不支援您最愛的架構，請參閱[新增單元測試架構的支援](#addingFramework)，以取得新增支援的資訊。
 
@@ -70,7 +67,7 @@ describe('Test Suite 1', function() {
 > [!Note]
 > 單元測試選項優先於個別檔案的設定。
 
-打開測試資源管理器（選擇**測試** > **視窗** > **測試資源管理器**）後，視覺化工作室發現並顯示測試。 如果一開始未顯示測試，則重建專案以重新整理清單。
+開啟 [測試瀏覽器] （選擇 [**測試**] [  >  **Windows**  >  **test Explorer**]）之後，Visual Studio 會探索並顯示測試。 如果一開始未顯示測試，則重建專案以重新整理清單。
 
 ![測試總管](../javascript/media/UnitTestsDiscoveryMocha.png)
 
@@ -174,4 +171,4 @@ Test execution time: 1.5731 Seconds
 </PropertyGroup>
 ```
 
-某些測試框架可能需要額外的 npm 包才能進行測試檢測。 例如，jest 需要 jest-編輯器支援 npm 包。 如有必要，請查看特定框架的文檔。
+某些測試架構可能需要額外的 npm 封裝以進行測試偵測。 例如，jest 需要 jest 編輯器-支援 npm 套件。 如有需要，請參閱特定架構的檔。
