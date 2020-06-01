@@ -7,12 +7,12 @@ ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 7c90cb398e174d5b023668040352de11e1caaee3
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 192cb7118a9f431ce2e7a9396b67a919fad10bb9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386167"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84200364"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>我要如何指派 Visual Studio 訂閱？
 
@@ -22,7 +22,7 @@ ms.locfileid: "81386167"
 
 1. 在 [manage.visualstudio.com](https://manage.visualstudio.com) 上，選取頁面頂端的[管理訂閱者](https://manage.visualstudio.com/subscribers)索引標籤
 2. 選取 [新增]，然後輸入您要指派訂閱之使用者的名稱與電子郵件地址。
-    - 如果您的組織使用 Azure Active Directory，[名稱] 欄位會搜尋以尋找您目前主管中的人員。 您可以從搜尋結果中選取，或手動新增某人。
+    1. 如果您的組織使用 Azure Active Directory，[名稱] 欄位會搜尋以尋找目前目錄中的人員。 您可以從搜尋結果中選取，或手動新增某人。
 3. 如果您想要讓此訂閱者在登入 [Visual Studio 訂閱入口網站](https://my.visualstudio.com/)時可存取軟體下載，請務必將 [下載設定] 區段的 [下載] 切換按鈕維持為啟用狀態。
 4. 完成 [通訊喜好設定] 區段，讓我們知道要使用哪些語言將指派電子郵件傳送給您的訂閱者。
 5. 如果您想要新增與指派相關聯的任何附註，請使用 [參考] 選取項目。
