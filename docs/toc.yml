@@ -910,6 +910,8 @@
           href: ide/signing-in-to-visual-studio.md
         - name: Work with multiple user accounts
           href: ide/work-with-multiple-user-accounts.md
+        - name: 使用需要多重要素驗證的帳戶
+          href: ide/work-with-multi-factor-authentication.md
         - name: 延長試用版或更新授權
           href: ide/how-to-unlock-visual-studio.md
     - name: 調整 Visual Studio 的效能

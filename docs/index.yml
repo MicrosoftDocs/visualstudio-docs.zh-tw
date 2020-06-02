@@ -6,7 +6,7 @@ metadata:
   title: Visual Studio 產品系列文件
   description: 探索 Visual Studio 產品系列的文件。
   ms.topic: hub-page
-  ms.date: 11/13/2019
+  ms.date: 05/13/2020
   searchScope: []
   titleSuffix: ''
   ms.author: ghogen
@@ -14,12 +14,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: 157d3bc451829b0c91772a66222b563cd07a5eaf
-  ms.sourcegitcommit: 20049ffecc08fdfae45406c26190de900357eef6
+  ms.openlocfilehash: 11c6b0a98cb9cbbb0cbf9731bddd4c30547973c8
+  ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/02/2020
-  ms.locfileid: "80620641"
+  ms.lasthandoff: 05/29/2020
+  ms.locfileid: "84183245"
 productDirectory:
   items:
   - title: Visual Studio
@@ -55,7 +55,7 @@ productDirectory:
       text: 版本資訊
     - url: https://code.visualstudio.com
       text: 產品頁面
-  - title: Visual Studio Online
+  - title: Visual Studio Codespaces
     imageSrc: ./media/vs-ide-2019.svg
     links:
     - url: https://docs.microsoft.com/visualstudio/online/
@@ -79,6 +79,6 @@ productDirectory:
     - url: https://visualstudio.microsoft.com/subscriptions
       text: visualstudio.com 的資訊
     - url: https://my.visualstudio.com
-      text: 入口網站
+      text: 訂閱者入口網站
     - url: https://manage.visualstudio.com
-      text: 管理
+      text: 系統管理員入口網站

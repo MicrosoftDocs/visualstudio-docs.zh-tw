@@ -338,6 +338,10 @@
                   href: ca1067.md
                 - name: CA1068：CancellationToken 參數必須位於最後
                   href: ca1068.md
+                - name: CA1069：列舉不能有重複的值
+                  href: ca1069.md
+                - name: CA1070：請勿將事件欄位宣告為 virtual
+                  href: ca1070.md
                 - name: 'CA2210:組件應該具備有效的強式名稱'
                   href: ca2210.md
             - name: 文件警告
@@ -579,6 +583,10 @@
                   href: ca2007.md
                 - name: CA2009：請勿對 ImmutableCollection 值呼叫 TolmmutableCollection
                   href: ca2009.md
+                - name: CA2011：請勿在屬性 setter 中指派屬性
+                  href: ca2011.md
+                - name: CA2015：請勿針對衍生自 MemoryManager<T> 的類型定義完成項
+                  href: ca2015.md
             - name: 安全性警告
               items:
                 - name: 總覽
@@ -740,12 +748,24 @@
                   href: ca3147.md
                 - name: 'CA5358:不要使用不安全的 Cipher 模式'
                   href: ca5358.md
+                - name: CA5359：請勿停用憑證驗證
+                  href: ca5359.md
                 - name: 'CA5361:請勿為安全通道停用強式密碼編譯'
                   href: ca5361.md
+                - name: CA5362：還原序列化物件圖中的可能參考循環
+                  href: ca5362.md
                 - name: CA5363：請勿停用要求驗證
                   href: ca5363.md
                 - name: 'CA5364:請勿使用已取代的安全性通訊協定'
                   href: ca5364.md
+                - name: CA5365：請勿停用 HTTP 標頭檢查
+                  href: ca5365.md
+                - name: CA5366：請使用 XmlReader 為 DataSet 讀取 XML
+                  href: ca5366.md
+                - name: CA5367：請勿將具有指標欄位的類型序列化
+                  href: ca5367.md
+                - name: CA5368：為衍生自頁面的類別設定 ViewStateUserKey
+                  href: ca5368.md
                 - name: CA5369：請使用 XmlReader 進行還原序列化
                   href: ca5369.md
                 - name: CA5370：請使用 XmlReader 驗證讀取器
@@ -756,20 +776,50 @@
                   href: ca5372.md
                 - name: CA5373：不使用已過時的金鑰衍生函式
                   href: ca5373.md
+                - name: CA5374：請勿使用 XslTransform
+                  href: ca5374.md
                 - name: 'CA5378:請勿停用 ServicePointManagerSecurityProtocols'
                   href: ca5378.md
+                - name: CA5379：請勿使用弱式金鑰衍生函數 (Key Derivation Function) 演算法
+                  href: ca5379.md
                 - name: CA5380：不新增憑證至根存放區
                   href: ca5380.md
                 - name: CA5381：確保憑證不新增至根存放區
                   href: ca5381.md
+                - name: CA5382：在 ASP.Net Core 中使用安全的 Cookie
+                  href: ca5382.md
+                - name: CA5383：請確認在 ASP.Net Core 中使用安全的 Cookie
+                  href: ca5383.md
+                - name: CA5384：請勿使用數位簽章演算法 (DSA)
+                  href: ca5384.md
+                - name: CA5385：使用有足夠金鑰大小的 Rivest–Shamir–Adleman (RSA) 加密演算法
+                  href: ca5385.md
                 - name: 'CA5386:避免將 SecurityProtocolType 值寫入程式碼'
                   href: ca5386.md
+                - name: CA5387：請勿使用反覆項目數不足的弱式金鑰衍生函數 (Key Derivation Function)
+                  href: ca5387.md
+                - name: CA5388：使用弱式金鑰衍生函數 (Key Derivation Function) 時，請確保反覆項目數足夠
+                  href: ca5388.md
                 - name: CA5389：不將封存項目路徑新增至目標檔案系統路徑
                   href: ca5389.md
+                - name: CA5390：請勿使用硬式編碼加密金鑰
+                  href: ca5390.md
+                - name: CA5394：請勿使用不安全的隨機性
+                  href: ca5394.md
+                - name: CA5396：將 HttpCookie 的 HttpOnly 設為 true
+                  href: ca5396.md
                 - name: CA5397：請勿使用已過時的 SslProtocols 通訊協定
                   href: ca5397.md
                 - name: CA5398：避免以硬式編碼方式寫入 SslProtocols 值
                   href: ca5398.md
+                - name: CA5399：確認停用 HttpClient 憑證撤銷清單檢查
+                  href: ca5399.md
+                - name: CA5400：確認未停用 HttpClient 憑證撤銷清單檢查
+                  href: ca5400.md
+                - name: CA5401：請勿使用具有非預設 IV 的 CreateEncryptor
+                  href: ca5401.md
+                - name: CA5402：使用具有預設 IV 的 CreateEncryptor
+                  href: ca5402.md
                 - name: 'CA5403:不要硬式編碼憑證'
                   href: ca5403.md
             - name: 用法警告
@@ -863,5 +913,11 @@
                   href: ca2242.md
                 - name: 'CA2243:屬性字串常值必須正確剖析'
                   href: ca2243.md
+                - name: CA2244：請勿複製索引元素初始化
+                  href: ca2244.md
+                - name: CA2245：請勿將屬性指派給屬性自身
+                  href: ca2245.md
+                - name: CA2246：請勿在相同的陳述式中指派符號及其成員
+                  href: ca2246.md
             - name: 自動功能暫停
               href: automatic-feature-suspension.md
