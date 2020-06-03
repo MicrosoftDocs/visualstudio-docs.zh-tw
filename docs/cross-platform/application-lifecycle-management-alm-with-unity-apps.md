@@ -61,7 +61,7 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 |-------------|--------------------------|-------------------------|
 |[使用 Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) 或 Azure Repos|是|就像任何其他專案一樣，Unity 專案就只是一組可放入版本控制系統的檔案，但此表格後面將會說明一些特殊考量。|
 |[開始使用 Azure Repos 中的 Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|是|請參閱表格後面的注意事項。|
-|[提高代碼品質](../test/improve-code-quality.md)|是||
+|[改善程式碼品質](../test/improve-code-quality.md)|是||
 |[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)|是||
 |[使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)|是||
 
@@ -73,7 +73,7 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 
 3. Unity 專案中的二進位資產 (例如紋理或音訊檔) 可能會佔用大量儲存體。 各種原始檔控制系統 (如 Git) 會針對進行的每一項變更儲存唯一的檔案複本，即使變更只影響一小部分的檔案也是一樣。 這可能會讓 Git 儲存機制變得過大。 若要解決這個問題，Unity 開發人員通常會選擇只將最後一個資產加入其儲存機制，並使用不同的方法來保留其資產的工作歷程記錄 (例如 OneDrive、DropBox 或 git-annex)。 因為這類資產一般不需要進行版本控制以及原始程式碼變更，所以這種方式適用。 開發人員一般也會將專案編輯器的 [資產序列化模式] 設定為 [強制文字]，以文字格式 (非允許在原始檔控制中進行合併的二進位格式) 來儲存場景檔案。 如需詳細資訊，請參閱[編輯器設定 (英文)](https://docs.unity3d.com/Manual/class-EditorManager.html) (Unity 文件)。
 
-## <a name="build"></a>Build
+## <a name="build"></a>組建
 
 參考連結：**[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
@@ -93,19 +93,19 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 |手動測試|是||
 |測試管理員 (錄製和播放測試)|僅限 Windows 裝置及 Android 模擬器||
 |程式碼涵蓋範圍|n/a|不適用，因為是在 Unity 內進行單元測試，而非 Visual Studio 內，請見下文。|
-|[單元測試代碼](../test/unit-test-your-code.md)|在 Unity 內，而非 Visual Studio 內|Unity 提供了自己的單元測試框架，作為[Unity 測試控管](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802)（Unity 資產存儲）的一部分。 單元測試結果會在 Unity 內報告，但不會顯示在 Visual Studio 內。|
+|[對程式碼進行單元測試](../test/unit-test-your-code.md)|在 Unity 內，而非 Visual Studio 內|Unity 提供自己的單元測試架構做為[unity 測試控管](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802)（Unity 資產存放區）的一部分。 單元測試結果會在 Unity 內報告，但不會顯示在 Visual Studio 內。|
 |[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)|否|自動程式化 UI 測試會依賴應用程式 UI 中的可讀取控制項；Unity 應用程式在本質上是圖形，因此，自動程式化 UI 測試工具無法讀取內容。|
 
 ## <a name="improve-code-quality"></a>改善程式碼品質
 
-參考連結：**[提高代碼品質](../test/improve-code-quality.md)**
+參考連結： **[改善程式碼品質](../test/improve-code-quality.md)**
 
 |功能|支援 Unity|其他註解|
 |-------------|--------------------------|-------------------------|
 |[分析受控碼品質](../code-quality/code-analysis-for-managed-code-overview.md)|是|可以在 Visual Studio 內分析 C# 指令碼。|
 |[使用程式碼複製品偵測來尋找重複程式碼](https://msdn.microsoft.com/library/hh205279.aspx)|是|可以在 Visual Studio 內分析 C# 指令碼。|
 |[測量受控程式碼的複雜度和維護性](../code-quality/code-metrics-values.md)|是|可以在 Visual Studio 內分析 C# 指令碼。|
-|[性能工具](../profiling/performance-explorer.md)|否|使用 [Unity 分析工具 (英文)](https://docs.unity3d.com/Manual/Profiler.html) (Unity 網站)。|
+|[效能工具](../profiling/performance-explorer.md)|否|使用 [Unity 分析工具 (英文)](https://docs.unity3d.com/Manual/Profiler.html) (Unity 網站)。|
 |[分析 .NET Framework 記憶體問題](https://msdn.microsoft.com/library/dn342825.aspx)|否|Visual Studio 工具並不會為程式碼剖析而連結 Unity 所使用的 Mono 架構。 使用 [Unity 分析工具 (英文)](http://docs.unity3d.com/Manual/Profiler.html) (Unity 文件)。|
 
 ## <a name="release-management"></a>版本管理
@@ -116,7 +116,7 @@ Visual Studio 與 Azure DevOps Services 和 Team Foundation Server 共同提供�
 |-------------|--------------------------|-------------------------|
 |管理發行處理序|是||
 |部署至伺服器以便透過指令碼進行側面載入|是||
-|上傳至應用程式存放區|部分|您可以針對某些應用程式存放區，使用擴充功能來自動化此程序。 請參閱 [Extensions for Azure DevOps Services](https://marketplace.visualstudio.com/VSTS) (適用於 Azure DevOps Services 的延伸模組)；例如 [extension for Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) (適用於 Google Play 的延伸模組)。|
+|上傳至應用程式存放區|Partial|您可以針對某些應用程式存放區，使用擴充功能來自動化此程序。 請參閱 [Extensions for Azure DevOps Services](https://marketplace.visualstudio.com/VSTS) (適用於 Azure DevOps Services 的延伸模組)；例如 [extension for Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) (適用於 Google Play 的延伸模組)。|
 
 ## <a name="monitor-with-hockeyapp"></a>使用 HockeyApp 監視
 

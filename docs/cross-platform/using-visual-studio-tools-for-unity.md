@@ -33,7 +33,7 @@ ms.locfileid: "81649389"
 
 您可以從 Visual Studio 快速存取 Unity 指令碼文件。 如果 Visual Studio Tools for Unity 在本機找不到應用程式開發介面文件，則會嘗試在線上尋找。
 
-- 在可檢視化工作室中,突出顯示游標或將游標放在要瞭解的 Unity API 上,然後按**Ctrl**+**Alt**+**M** **,Ctrl**+**H**
+- 在 Visual Studio 中，反白顯示或將游標放在您想要瞭解的 Unity API 上方，然後按**ctrl** + **Alt** + **M**、 **ctrl** + **H**
 
 ## <a name="intellisense-for-unity-api-messages"></a>Unity API 訊息的 IntelliSense
 
@@ -71,7 +71,7 @@ Intellisense 程式碼編譯可在 MonoBehaviour 指令碼中輕鬆地實作 Uni
 
 使用 MonoBehavior 精靈建立空白 MonoBehavior 方法定義：
 
-1. 在 Visual Studio 中,將游標放置在要插入方法的位置,然後按**Ctrl**+**Shift**+**M**啟動單行為精靈。
+1. 在 Visual Studio 中，將游標放在您想要插入方法的位置，然後按**Ctrl** + **Shift** + **M**以啟動 MonoBehavior wizard。
 
 2. 在 [建立指令碼方法]**** 視窗中，標記您要加入之每個方法名稱旁的核取方塊。
 
@@ -91,7 +91,7 @@ Intellisense 程式碼編譯可在 MonoBehaviour 指令碼中輕鬆地實作 Uni
 
 Unity 專案總管會使用與 Unity 編輯器一樣的方式顯示您的所有 Unity 專案檔案與目錄。 這與使用一般 Visual Studio 方案總管瀏覽 Unity 指令碼的方式不同，一般 Visual Studio 方案總管會將它們組織為專案與 Visual Studio 產生的方案。
 
-- 在 Visual Studio 主功能表上，選擇 [檢視] > [Unity 專案總管]****。 鍵盤捷徑 **:Alt**+**移位**+**E**
+- 在 Visual Studio 主功能表上，選擇 [檢視] > [Unity 專案總管]****。 鍵盤快速鍵： **Alt** + **Shift** + **E**
 
    ![檢視 Unity 專案總管視窗。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -194,7 +194,7 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
    ![DLL 的目標架構設定為 Unity 架構。](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
-3. 將 DLL 複製到 Unity 專案的 Assets 資料夾。 在 Unity 中，資產是與 Unity 應用程式一起封裝及部署的檔案，以便可以在執行階段載入。 由於 DLL 在運行時連結,因此必須將 DLL 部署為資產。 為了將 DLL 部署為資產，Unity Editor 會要求將 DLL 放在 Unity 專案的 [Assets] 資料夾中。 有兩種方式可讓您完成這個步驟：
+3. 將 DLL 複製到 Unity 專案的 Assets 資料夾。 在 Unity 中，資產是與 Unity 應用程式一起封裝及部署的檔案，以便可以在執行階段載入。 由於 Dll 會在執行時間連結，因此 Dll 必須部署為資產。 為了將 DLL 部署為資產，Unity Editor 會要求將 DLL 放在 Unity 專案的 [Assets] 資料夾中。 有兩種方式可讓您完成這個步驟：
 
    - 修改 DLL 專案的組建設定，以包含將輸出 DLL 和 PDB 檔案從其輸出資料夾複製到 Unity 專案之 [Assets]**** 資料夾的建置後工作。
 
@@ -212,9 +212,9 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
 |Command|快速鍵|快速鍵命令名稱|
 |-------------|--------------|---------------------------|
-|開啟 MonoBehavior 精靈|**Ctrl**+**換檔**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|開啟 Unity Project Explorer|**Alt**+**移位**+**元 E**|**View.UnityProjectExplorer**|
-|存取 Unity 文件|**Ctrl**+**Alt**+**M, Ctrl**+**H**|**Help.UnityAPIReference**|
-|附加至 Unity 偵錯工具 (播放器或編輯器)|**_沒有預設值_**|**Debug.AttachUnityDebugger**|
+|開啟 MonoBehavior 精靈|**Ctrl** +**Shift** +**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|開啟 Unity Project Explorer|**Alt** +**Shift** +**E**|**View.UnityProjectExplorer**|
+|存取 Unity 文件|**Ctrl** +**Alt** +**M、Ctrl** +**H**|**Help.UnityAPIReference**|
+|附加至 Unity 偵錯工具 (播放器或編輯器)|**_無預設值_**|**Debug.AttachUnityDebugger**|
 
 如果您不喜歡預設值，可以變更快速鍵組合。 如需如何變更它的詳細資訊，請參閱[識別及自訂 Visual Studio 中的鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。

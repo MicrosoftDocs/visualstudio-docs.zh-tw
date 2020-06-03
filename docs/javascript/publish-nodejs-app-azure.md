@@ -41,13 +41,13 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
 * 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 
     ::: moniker range=">=vs-2019"
-    如果您尚未安裝 Visual Studio 2019,請轉到 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費安裝它。
+    如果您尚未安裝 Visual Studio 2019，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)]   頁面免費進行安裝。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    如果您尚未安裝 Visual Studio 2017,請轉到 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費安裝它。
+    如果您尚未安裝 Visual Studio 2017，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)]   頁面免費進行安裝。
     ::: moniker-end
 
-    如果您需要安裝工作負載,但已經擁有可視化工作室,請轉到 **「工具** > **獲取工具和功能...",** 這將打開可視化工作室安裝程式。 選擇 [Node.js 開發]**** 工作負載，然後選擇 [修改]****。
+    如果您需要安裝工作負載，但已經有 Visual Studio，請移至 [**工具**]  >  [**取得工具和功能 ...**]，這會開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發]**** 工作負載，然後選擇 [修改]****。
 
     ![VS 安裝程式中的 Node.js 工作負載](../ide/media/quickstart-nodejs-workload.png)
 
@@ -65,7 +65,7 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
     按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **Node.js**，然後選擇 [建立新的基礎 Azure Node.js Express 4 應用程式]**** (TypeScript)。 在出現的對話方塊中選擇 [建立]****。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂部功能表欄中,選擇 **「檔** > **新專案** > **」。。** 在 [新增專案]**** 對話方塊的左窗格中，展開 **TypeScript**，然後選擇 **Node.js**。 在中間窗格中,選擇**基本 Azure Node.js Express 4 應用程式**,然後選擇 **"確定**"。
+    從頂端功能表列中 **，選擇 [** 檔案] [新增] [  >  **New**  >  **專案**]。 在 [新增專案]**** 對話方塊的左窗格中，展開 **TypeScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [**基本的 Azure Node.js Express 4 應用程式**]，然後選擇 **[確定]**。
 
     ![建立新的 TypeScript Express 應用程式](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end
@@ -75,7 +75,7 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
 
 1. 按 **F5** 來建置和執行應用程式，並確定一切都如預期般運作。
 
-1. 選擇**檔案** > **新增到源控制項**以建立項目的本地 Git 儲存庫。
+1. 選取**File**[檔案] [  >  **新增至原始檔控制**]，以建立專案的本機 Git 存放庫。
 
     此時，使用 Express 架構且以 TypeScript 撰寫的 Node.js 應用程式會運作，並簽入至本機原始檔控制。
 
@@ -87,7 +87,7 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
 
 1. 確定已使用 [工具]**** > [延伸模組和更新]**** 功能表項目安裝和啟用 [Visual Studio 的 GitHub 延伸模組](https://visualstudio.github.com/)。
 
-2. 從功能表中選擇 **「查看** > **其他 Windows** > **GitHub」。。**
+2. 從功能表選取 [**查看**  >  **其他 Windows**  >  **GitHub**]。
 
     [GitHub] 視窗隨即開啟。
 
@@ -130,7 +130,7 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
     > [!WARNING]
     > App Service 部署流程會使用一組啟發學習法，來決定要嘗試和執行哪一種類型的應用程式。 如果在已部署的內容中偵測到 .*sln* 檔案，則會假設正在部署 MSBuild 型專案。 上述新增的設定會覆寫此邏輯，並明確指定這是 Node.js 應用程式。 若沒有此設定，當 .*sln* 檔案是部署至 App Service 之存放庫的一部分時，Node.js 應用程式將無法部署。
 
-7. 在 **「應用程式設定**」下,添加另`WEBSITE_NODE_DEFAULT_VERSION`一個`8.9.0`名稱和值的設置。
+7. 在 [**應用程式設定**] 下，加入名稱為 `WEBSITE_NODE_DEFAULT_VERSION` 且值為的另一個設定 `8.9.0` 。
 
 8. 完成部署後，請開啟 App Service，然後選取 [部署選項]****。
 
