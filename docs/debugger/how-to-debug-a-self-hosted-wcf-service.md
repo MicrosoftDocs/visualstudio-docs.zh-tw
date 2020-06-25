@@ -1,7 +1,7 @@
 ---
-title: 如何： Debug 自我裝載的 WCF 服務 |Microsoft Docs
+title: 如何-Debug 自我裝載的 WCF 服務 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,27 +17,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12654a6aa1abb34c9813e8d29c7608814021a3f0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8eda0f8bc6ee20a706eb74336c43d86934a9e457
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733974"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350364"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：偵錯自我裝載的 WCF 服務
-「自我裝載服務」是一項不會在 IIS、WCF 服務主機或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 程式開發伺服器內部執行的 WCF 服務。 若要進行自我裝載的 WCF 的調試，最簡單的方式就是設定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 在 [**調試**] 功能表上選擇 [**開始調試**] 時啟動用戶端和伺服器。
+「自我裝載服務」** 是一項不會在 IIS、WCF 服務主機或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 程式開發伺服器內部執行的 WCF 服務。 若要進行自我裝載的 WCF 的調試，最簡單的方式是設定在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [**調試**] 功能表上選擇 [**開始調試**] 時啟動用戶端和伺服器。
 
  如果 WCF 服務是在內自我裝載或無法以這種方式啟動的進程（例如 NT 服務），您就無法使用這個方法。 相反地，您可以執行下列其中一項動作：
 
 - 將偵錯工具手動附加至裝載進程。 如需詳細資訊，請參閱[附加至](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)執行中的進程。
 
-     — 或 —
+     — 或者—
 
 - 開始對用戶端進行調試，然後逐步執行至服務的呼叫。 這需要您在 app.config 檔案中啟用偵錯工具。 如需詳細資訊，請[限制 WCF 調試](../debugger/limitations-on-wcf-debugging.md)程式。
 
 ### <a name="to-start-both-client-and-host-from-visual-studio"></a>從 Visual Studio 啟動用戶端和主機
 
-1. 建立同時包含用戶端和伺服器專案的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案。
+1. 建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 同時包含用戶端和伺服器專案的方案。
 
 2. 當您在 [**調試**程式] 功能表上選擇 [**啟動**] 時，請設定方案來啟動用戶端和伺服器進程。
 
@@ -45,7 +45,7 @@ ms.locfileid: "72733974"
 
    2. 按一下 [**設定啟始專案**]。
 
-   3. 在 [**方案 \<name > 屬性**] 對話方塊中，選取 [**多個啟始專案**]。
+   3. 在 [**方案 \<name> 屬性**] 對話方塊中，選取 [**多個啟始專案**]。
 
    4. 在 [**多個啟始專案**] 方格中，于對應至伺服器專案的行上，按一下 [**動作**]，然後選擇 [**啟動**]。
 
@@ -53,7 +53,7 @@ ms.locfileid: "72733974"
 
    6. 按一下 [確定]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯 WCF 服務](../debugger/debugging-wcf-services.md)
 - [WCF 偵錯的限制](../debugger/limitations-on-wcf-debugging.md)
 - [如何：逐步執行 WCF 服務](../debugger/how-to-step-into-wcf-services.md)

@@ -33,7 +33,7 @@ ms.locfileid: "85285383"
 > 從 Visual Studio 2019 開始，延伸模組所提供的最上層功能表會放在 [**延伸**模組] 功能表底下。
 :::moniker-end
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 

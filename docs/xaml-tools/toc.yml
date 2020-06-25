@@ -2,6 +2,8 @@
   href: index.yml
 - name: XAML 概觀
   href: xaml-overview.md
+- name: XAML 程式碼編輯器
+  href: xaml-code-editor.md
 - name: XAML 設計工具
   items:
     - name: 在 Visual Studio 與 Blend 中設計 XAML
@@ -20,7 +22,7 @@
       href: debugging-or-disabling-project-code-in-xaml-designer.md
     - name: Blend for Visual Studio
       items:
-        - name: 概觀
+        - name: 總覽
           href: creating-a-ui-by-using-blend-for-visual-studio.md
         - name: 繪製圖案與路徑
           href: draw-shapes-and-paths.md
@@ -30,7 +32,7 @@
           href: animate-objects-in-xaml-designer.md
         - name: 顯示資料
           href: display-data-in-blend.md
-    - name: 參考
+    - name: 參考資料
       items:
         - name: XAML 錯誤和警告
           href: xaml-errors-warnings.md

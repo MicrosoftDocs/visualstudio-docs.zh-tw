@@ -551,6 +551,14 @@
                   href: ca1828.md
                 - name: CA1829：請使用 Length/Count 屬性，不要使用 Enumerable.Count 方法
                   href: ca1829.md
+                - name: CA1831：在適用情況下，請使用 AsSpan 做為字串，不要使用範圍型的索引子
+                  href: ca1831.md
+                - name: CA1832：請使用 AsSpan 或 AsMemory 來取得陣列的 ReadOnlySpan 或 ReadOnlyMemory 部分，不要使用範圍型的索引子
+                  href: ca1832.md
+                - name: CA1833：請使用 AsSpan 或 AsMemory 取得陣列的 Span 或 Memory 部分，不要使用範圍型的索引子
+                  href: ca1833.md
+                - name: CA1835：請優先使用 Stream ReadAsync/WriteAsync 方法的記憶體多載
+                  href: ca1835.md
             - name: 可攜性警告
               items:
                 - name: 總覽
@@ -585,6 +593,12 @@
                   href: ca2009.md
                 - name: CA2011：請勿在屬性 setter 中指派屬性
                   href: ca2011.md
+                - name: CA2012：必須正確使用 ValueTasks
+                  href: ca2012.md
+                - name: CA2013：請勿使用具有值類型的 ReferenceEquals
+                  href: ca2013.md
+                - name: CA2014：請勿在迴圈中使用 stackalloc
+                  href: ca2014.md
                 - name: CA2015：請勿針對衍生自 MemoryManager<T> 的類型定義完成項
                   href: ca2015.md
             - name: 安全性警告
@@ -750,6 +764,8 @@
                   href: ca5358.md
                 - name: CA5359：請勿停用憑證驗證
                   href: ca5359.md
+                - name: CA5360：請勿在還原序列化時呼叫危險的方法
+                  href: ca5360.md
                 - name: 'CA5361:請勿為安全通道停用強式密碼編譯'
                   href: ca5361.md
                 - name: CA5362：還原序列化物件圖中的可能參考循環
@@ -778,6 +794,12 @@
                   href: ca5373.md
                 - name: CA5374：請勿使用 XslTransform
                   href: ca5374.md
+                - name: CA5375：請勿使用帳戶共用存取簽章
+                  href: ca5375.md
+                - name: CA5376：請使用 SharedAccessProtocol HttpsOnly
+                  href: ca5376.md
+                - name: CA5377：請使用容器層級存取原則
+                  href: ca5377.md
                 - name: 'CA5378:請勿停用 ServicePointManagerSecurityProtocols'
                   href: ca5378.md
                 - name: CA5379：請勿使用弱式金鑰衍生函數 (Key Derivation Function) 演算法
@@ -804,8 +826,16 @@
                   href: ca5389.md
                 - name: CA5390：請勿使用硬式編碼加密金鑰
                   href: ca5390.md
+                - name: CA5391：請在 ASP.NET Core MVC 控制器中使用防偽權杖
+                  href: ca5391.md
+                - name: CA5392：請對 P/Invokes 使用 DefaultDllImportSearchPaths 屬性
+                  href: ca5392.md
+                - name: CA5393：請勿使用不安全的 DllImportSearchPath 值
+                  href: ca5393.md
                 - name: CA5394：請勿使用不安全的隨機性
                   href: ca5394.md
+                - name: CA5395：遺漏動作方法的 HttpVerb 屬性
+                  href: ca5395.md
                 - name: CA5396：將 HttpCookie 的 HttpOnly 設為 true
                   href: ca5396.md
                 - name: CA5397：請勿使用已過時的 SslProtocols 通訊協定
@@ -919,5 +949,7 @@
                   href: ca2245.md
                 - name: CA2246：請勿在相同的陳述式中指派符號及其成員
                   href: ca2246.md
+                - name: CA2248：請提供正確的列舉引數給 Enum.HasFlag
+                  href: ca2248.md
             - name: 自動功能暫停
               href: automatic-feature-suspension.md

@@ -1,7 +1,7 @@
 ---
-title: 如何：在記憶體中向上或向下分頁 |Microsoft Docs
+title: 如何在記憶體中向上或向下翻頁 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f93b24c9349a28176164d667c96133668cf3f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 79216ba29047101c9b9d2c6618cae013640542b8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733028"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349415"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>如何：在記憶體中向上或向下翻頁
 
-當您在 [記憶體] 視窗或 [反組譯碼] 視窗中檢視記憶體內容時，可以使用垂直捲軸在記憶體空間中上下移動。
+當您在 [記憶體]**** 視窗或 [反組譯碼]**** 視窗中檢視記憶體內容時，可以使用垂直捲軸在記憶體空間中上下移動。
 
 ### <a name="to-page-up-or-down-in-memory"></a>若要在記憶體中向上或向下翻頁
 
@@ -46,7 +46,7 @@ ms.locfileid: "72733028"
 
 - 請按一下垂直捲軸頂端或底端的箭頭。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [記憶體視窗](../debugger/memory-windows.md)
 - [如何：使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)
 - [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

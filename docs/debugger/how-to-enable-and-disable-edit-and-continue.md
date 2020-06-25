@@ -1,8 +1,8 @@
 ---
-title: 如何：啟用和停用編輯後繼續 |Microsoft Docs
+title: 如何-啟用和停用編輯後繼續 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -26,34 +26,34 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 2c8486bdcd7bc737d3851eabd88734df4efd80b7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 1907a67412a787148da7a6679e173383e2bb7423
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430530"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349662"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何：啟用和停用編輯後繼續（C#，VB， C++）
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何：啟用和停用編輯後繼續（c #、VB、c + +）
 
-在設計階段，您可以在 [Visual Studio**選項**] 對話方塊中停用或啟用 [**編輯後繼續**]。 [編輯後繼續] 只能用於偵錯組建中。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。
+在設計階段，您可以在 [Visual Studio**選項**] 對話方塊中停用或啟用 [**編輯後繼續**]。 [**編輯後繼續**] 僅適用于 debug 組建。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。
 
-針對 [ C++原生]，[**編輯後繼續**] 需要使用 [`/INCREMENTAL`] 選項。 如需中C++功能需求的詳細資訊，請參閱這[篇 Blog 文章](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)和[編輯C++後繼續（）](../debugger/edit-and-continue-visual-cpp.md)。
+針對原生 c + +，[**編輯後繼續**] 需要使用 `/INCREMENTAL` 選項。 如需 c + + 中功能需求的詳細資訊，請參閱這[篇 blog 文章](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)和[編輯後繼續（c + +）](../debugger/edit-and-continue-visual-cpp.md)。
 
 **若要啟用或停用 [編輯後繼續]：**
 
-1. 如果您是在調試階段中，請停止調試（**Debug** > **停止調試**或**Shift**+**F5**）。
+1. 如果您是在調試進程中，請停止調試（[**調試**] [  >  **停止調試**] 或**Shift** + **F5**）。
 
-1. 在 **[工具**]  > **選項**> （或**Debug** > **選項**） >**調試** > **一般**，請在右窗格中選取 [**編輯後繼續**]。
+1. 在 [**工具**  >  **選項**] > （或 [**調試**  >  **選項**]） > **Debugging**  >  **[一般**]，然後在右窗格中選取 [**編輯後繼續**]。
 
     > [!NOTE]
     > 如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 [編輯後繼續]。 如需詳細資訊，請參閱[IntelliTrace](../debugger/intellitrace.md)。
 
-1. 針對C++程式碼，請確定已選取 [**啟用原生編輯後繼續**]，並設定其他選項：
-    - **繼續時套用變更 (僅限原生)**
+1. 若為 c + + 程式碼，請確定已選取 [**啟用原生編輯後繼續**]，並設定其他選項：
+    - **繼續時套用變更（僅限機器碼）**
 
-      如果選取此選項，當您繼續從中斷狀態進行偵錯工具時，Visual Studio 會自動編譯並套用程式碼變更。 否則，您可以選擇使用**Debug**來套用變更  >  會套用程式**代碼變更**。
+      如果選取此選項，當您繼續從中斷狀態進行偵錯工具時，Visual Studio 會自動編譯並套用程式碼變更。 否則，您可以選擇使用 [ **Debug**] [套用程式  >  **代碼變更**] 來套用變更。
 
-    - **警告出現過時的程式碼 (僅限原生)**
+    - **警告過時程式碼（僅限原生）**
 
       若選取此選項，會提供有關過時程式碼的警告。
 

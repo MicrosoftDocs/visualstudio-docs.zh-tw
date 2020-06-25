@@ -2,7 +2,7 @@
 title: 以編輯後繼續在中斷模式中套用編輯 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.variables.failededit
 dev_langs:
@@ -23,27 +23,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05340b4922262eb134aca8fef4bf215342e5a997
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: acdd5b85c77b177dfb5f6d8129594967e902337c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734024"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350295"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何：以編輯後繼續在中斷模式中套用編輯（Visual Basic）
 您可以在中斷模式中使用 [編輯後繼續] 編輯程式碼，並繼續進行而不需停止及重新啟動執行。
 
-如需在進行偵錯工具時使用 [編輯後繼續] 的限制，請參閱支援的程式[代碼變更（C#和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。
+如需在進行調試時使用 [編輯後繼續] 的限制，請參閱支援的程式[代碼變更（c # 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。
 
 ### <a name="to-edit-code-in-break-mode"></a>在中斷模式中編輯程式碼
 
 1. 執行下列其中一種方法進入中斷模式
 
-    - 在程式碼中設定中斷點，然後從 [偵錯] 功能表中選擇 [開始偵錯]，並等待應用程式叫用中斷點。
+    - 在程式碼中設定中斷點，然後從 [偵錯]**** 功能表中選擇 [開始偵錯]****，並等待應用程式叫用中斷點。
 
          -或-
 
-    - 開始偵錯，然後從 [偵錯] 功能表中選取 [全部中斷]。
+    - 開始偵錯，然後從 [偵錯]**** 功能表中選取 [全部中斷]****。
 
          -或-
 
@@ -51,15 +51,15 @@ ms.locfileid: "72734024"
 
 2. 進行任何想要和支援的程式碼變更。
 
-     如需詳細資訊，請參閱[支援的C#程式碼變更（和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。
+     如需詳細資訊，請參閱支援的程式[代碼變更（c # 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。
 
     > [!NOTE]
     > 如果您嘗試進行 [編輯後繼續] 不允許的程式碼變更，您的編輯會被加上紫色波浪線，而且 [工作清單] 中會出現工作。 除非您復原不合法的程式碼變更，否則將無法繼續執行程式碼。
 
-3. 在 [偵錯] 功能表上，按一下 [繼續] 以恢復執行。
+3. 在 [偵錯]**** 功能表上，按一下 [繼續]**** 以恢復執行。
 
      這時程式碼便會一併執行您套用至專案的編輯。
 
-## <a name="see-also"></a>請參閱
-- [支援的程式碼C#變更（和 Visual Basic）](../debugger/supported-code-changes-csharp.md)
+## <a name="see-also"></a>另請參閱
+- [支援的程式碼變更（c # 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)
 - [編輯後繼續 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

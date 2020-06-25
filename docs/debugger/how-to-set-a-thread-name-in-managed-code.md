@@ -1,7 +1,7 @@
 ---
-title: 如何：在 Managed 程式碼中設定執行緒名稱 |Microsoft Docs
+title: 如何在 Managed 程式碼中設定執行緒名稱 |Microsoft Docs
 ms.date: 04/27/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b55b7b2be0fc546a9dcbbec03480f332724e7e2e
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: c3f95608b5b10cd206d4d59a6ccf876214ae045a
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286371"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349181"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>如何：在 Managed 程式碼中設定執行緒名稱
 在所有 Visual Studio 版本中，都可以將執行緒命名。 將執行緒命名後，在 [執行緒]**** 視窗中追蹤執行緒會很方便。

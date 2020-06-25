@@ -1,7 +1,7 @@
 ---
-title: 如何：展開和折迭 Spy + + 樹狀結構 |Microsoft Docs
+title: 如何展開和折迭 Spy + + 樹狀結構 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Expanding and Collapsing Spy++ Trees
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
@@ -10,24 +10,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6deedaf8b3d6ca9aee3029934dd87ae01b94f355
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8f67a88c153e5bfef2644eb731d68229a54ffcbc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733318"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349584"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>如何：展開和摺疊 Spy++ 樹狀結構
-您可以使用兩種方法來展開和折迭視窗、進程和執行緒的流覽：按一下視窗中的圖示，或使用 [**樹狀**] 功能表。 樹狀結構中的 + 和-圖示的作用與在 [ C++專案] 視窗中的一樣。
+您可以使用兩種方法來展開和折迭視窗、進程和執行緒的流覽：按一下視窗中的圖示，或使用 [**樹狀**] 功能表。 樹狀結構中的 + 和-圖示的作用就如同在 c + + 專案視窗中一樣。
 
  **樹狀目錄**功能表包含四個命令：
 
 |功能表命令|描述|
 |------------------|-----------------|
-|[展開一層]|將目前選取的專案展開至下一個層級。|
+|[展開一層]****|將目前選取的專案展開至下一個層級。|
 |**展開分支**|完全展開目前選取的專案。|
-|[全部展開]|完全展開視窗中的所有專案。|
-|[摺疊]|完全折迭目前選取的專案。|
+|**全部展開**|完全展開視窗中的所有專案。|
+|**摺疊**|完全折迭目前選取的專案。|
 
 > [!TIP]
 > 如果您展開進程，就會看到該進程擁有的所有線程。 如果您展開執行緒，您會看到它擁有的所有視窗清單。
@@ -38,7 +38,7 @@ ms.locfileid: "72733318"
 
 2. 從 [**樹狀**] 功能表中，選擇其中一個 [展開] 或 [折迭] 命令。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [使用 Spy++](../debugger/using-spy-increment.md)
 - [Spy++ 檢視](../debugger/spy-increment-views.md)
 - [Spy++ 參考](../debugger/spy-increment-reference.md)

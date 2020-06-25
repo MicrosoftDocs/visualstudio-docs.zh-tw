@@ -1,7 +1,7 @@
 ---
 title: Debug 64 位應用程式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a805942e85540b776ceacd972a09a71bb80cbb4
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: ca7feade173db9ccf8c86daaeb1399ef3e10a08b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911590"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350767"
 ---
 # <a name="debug-64-bit-applications"></a>偵錯 64 位元應用程式
 您可以對本機電腦或遠端電腦上執行的 64 位元應用程式進行偵錯。
@@ -52,10 +52,10 @@ ms.locfileid: "72911590"
 
 - 您在使用 Visual Studio 時遇到停止回應或效能問題。 如果此問題經常發生，您可以收集 Visual Studio 的傾印 (devenv.exe) 和背景工作處理序 (msvsmon.exe)，然後傳送給 Microsoft。 如需回報問題的資訊，請參閱 [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [64 位元應用程式](/dotnet/framework/64-bit-apps)
+- [64位應用程式](/dotnet/framework/64-bit-apps)
 - [Configuring Programs for 64-Bit](/cpp/build/configuring-programs-for-64-bit-visual-cpp) (為 64 位元設定程式)
-- [Visual Studio IDE 64 位元支援](../ide/visual-studio-ide-64-bit-support.md)
+- [Visual Studio IDE 64 位支援](../ide/visual-studio-ide-64-bit-support.md)
 - [使用傾印檔案](../debugger/using-dump-files.md)
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [遠端偵錯](../debugger/remote-debugging.md)

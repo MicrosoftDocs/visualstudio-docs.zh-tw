@@ -1,7 +1,7 @@
 ---
-title: 如何：編輯暫存器值 |Microsoft Docs
+title: 如何-編輯暫存器值 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.register.edit
 dev_langs:
@@ -19,20 +19,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccaa124b64ad462f633e760695f931afaae531
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8f7a341fa3f8d41bf4788db5bb4b4957fd8cca81
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733411"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349818"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>如何：編輯暫存器值（C#、 C++、Visual Basic、） F#
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>如何：編輯暫存器值（c #、c + +、Visual Basic、F #）
 
-只有在透過 [選項] 對話方塊的 [偵錯] 節點啟用位址層級偵錯時，才可以使用 [暫存器] 視窗。
+只有在透過 [選項]**** 對話方塊的 [偵錯]**** 節點啟用位址層級偵錯時，才可以使用 [暫存器] 視窗。
 
 ### <a name="to-change-the-value-of-a-register"></a>若要變更暫存器值
 
-1. 在 [暫存器] 視窗中使用 TAB 鍵或滑鼠，將插入點移至要變更的值上。 輸入時，游標必須放在要覆寫的值的前面。
+1. 在 [暫存器]**** 視窗中使用 TAB 鍵或滑鼠，將插入點移至要變更的值上。 輸入時，游標必須放在要覆寫的值的前面。
 
 2. 輸入新值。
 
@@ -42,5 +42,5 @@ ms.locfileid: "72733411"
     > [!CAUTION]
     > 由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點暫存器中的某些最小顯著性位元變更。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)

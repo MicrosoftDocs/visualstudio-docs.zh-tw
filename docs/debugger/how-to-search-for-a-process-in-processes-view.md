@@ -1,7 +1,7 @@
 ---
-title: 作法：搜尋處理序中處理序檢視 |Microsoft Docs
+title: 如何-在進程視圖中搜尋進程 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Processes view
 - processes, searching for
@@ -11,33 +11,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6b57226b14963759bb4d78afff3beb5559a63e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e823ecb1f7523c1a6f094d5669f4a37a72e84f60
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798986"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349285"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>作法：在處理序檢視中搜尋處理序
-您可以使用它的處理序識別碼或模組字串做為搜尋準則來搜尋特定處理序中處理序檢視。 您也可以指定搜尋的初始方向。 在對話方塊中的欄位會顯示選取的處理序的屬性，在處理序樹狀目錄中。
+# <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在處理序檢視中搜尋處理序
+您可以使用處理序識別碼或模組字串做為搜尋準則，在進程視圖中搜尋特定進程。 您也可以指定搜尋的初始方向。 對話方塊中的欄位會在進程樹狀結構中顯示所選取進程的屬性。
 
-### <a name="to-search-for-a-process-in-processes-view"></a>搜尋處理序檢視中的處理序
+### <a name="to-search-for-a-process-in-processes-view"></a>在進程視圖中搜尋進程
 
-1. 因此排列的視窗，Spy + + 和作用[處理序檢視](../debugger/processes-view.md)視窗會顯示。
+1. 排列視窗，讓 [Spy + +] 和 [作用中[進程] 視圖](../debugger/processes-view.md)視窗可見。
 
-2. 從**搜尋**功能表上，選擇**尋找處理序**
+2. 從 [**搜尋**] 功能表中，選擇 [**尋找進程**]
 
-    [處理序搜尋對話方塊](../debugger/process-search-dialog-box.md)隨即開啟。
+    [[處理搜尋] 對話方塊](../debugger/process-search-dialog-box.md)隨即開啟。
 
-3. 輸入的處理序識別碼或模組字串做為搜尋準則。
+3. 輸入處理序識別碼或模組字串做為搜尋準則。
 
-4. 清除，您不想指定值的任何欄位。
+4. 清除您不想要指定值的任何欄位。
 
    > [!TIP]
-   > 若要尋找模組所擁有的所有處理程序，請清除**程序**方塊，然後輸入中的模組名稱**模組** 方塊中。 然後使用**尋找下一個**繼續搜尋處理序。
+   > 若要尋找模組所擁有的所有進程，請清除 [**進程**] 方塊，並在 [**模組**] 方塊中輸入模組名稱。 然後使用 **[尋找下一個]** 繼續搜尋處理常式。
 
-5. 選擇**向上**或是**向下**初始搜尋的方向。
+5. 針對搜尋的初始方向，選擇 [**向上**] 或 [**向下**]。
 
-6. 按一下 [確定 **Deploying Office Solutions**]。
+6. 按一下 [確定]。
 
-   如果找到相符的處理程序，它會以醒目提示**處理序檢視**視窗。
+   如果找到相符的進程，則會在 [**進程視圖**] 視窗中反白顯示。

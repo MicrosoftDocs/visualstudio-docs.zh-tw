@@ -8,55 +8,65 @@ metadata:
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
-  ms.date: 10/30/2019
-  ms.openlocfilehash: 94bbe9a81a38b255eba6cc6b15812743328a0f27
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.date: 06/03/2020
+  ms.openlocfilehash: 4f522f6613424c3251344207381d2eaf31705c9c
+  ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "79549923"
+  ms.lasthandoff: 06/23/2020
+  ms.locfileid: "85289114"
 landingContent:
-- title: 關於分析
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: 初步認識分析工具
-      url: profiling-feature-tour.md
-  - linkListType: concept
-    links:
-    - text: 執行分析工具的方式
-      url: running-profiling-tools-with-or-without-the-debugger.md
 - title: 開始使用
   linkLists:
-  - linkListType: quickstart
-    links:
-    - text: 分析 CPU 使用量 (C#、Visual Basic)
-      url: quickstart-cpu-usage-managed.md
-    - text: 分析 CPU 使用量 (C++)
-      url: quickstart-cpu-usage-native.md
-    - text: 分析 CPU 使用量 (ASP.NET)
-      url: quickstart-cpu-usage-aspnet.md
   - linkListType: tutorial
     links:
     - text: 開始分析 CPU 使用量
       url: beginners-guide-to-performance-profiling.md
     - text: 開始測量記憶體使用量
       url: memory-usage.md
-- title: 其他效能工具
-  linkLists:
   - linkListType: how-to-guide
     links:
     - text: 效能提示
       url: perftips.md
-    - text: 從命令列測量 CPU 使用量
-      url: profile-apps-from-command-line.md
-    - text: 測量 .NET 物件的記憶體使用量
+- title: 基礎
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 初步認識分析工具
+      url: profiling-feature-tour.md
+    - text: 執行分析工具的方式
+      url: running-profiling-tools-with-or-without-the-debugger.md
+  - linkListType: concept
+    links:
+    - text: 了解效能收集方法
+      url: understanding-performance-collection-methods-perf-profiler.md
+- title: 效能工具
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: CPU 使用量
+      url: cpu-usage.md
+    - text: 資料庫
+      url: analyze-database.md
+    - text: 事件檢視器
+      url: events-viewer.md
+    - text: 記憶體使用量
+      url: memory-usage-without-debugging2.md
+    - text: .NET Object Allocation 追蹤
       url: dotnet-alloc-tool.md
+    - text: GPU 使用量 (Direct3D)
+      url: gpu-usage.md
+    - text: .NET Async
+      url: analyze-async.md
     - text: 分析資源取用量 (XAML)
       url: application-timeline.md
-    - text: 分析 GPU 使用量 (Direct3D)
-      url: gpu-usage.md
-    - text: 分析網路使用量 (UWP)
-      url: network-usage.md
-    - text: 分析能源使用量 (UWP)
-      url: analyze-energy-use-in-store-apps.md
+- title: 輔助線
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 最佳化分析工具設定
+      url: optimize-profiler-settings.md
+    - text: 從命令列測量效能
+      url: profile-apps-from-command-line.md
+    - text: 同時使用多個分析工具
+      url: use-multiple-profiler-tools-simultaneously.md

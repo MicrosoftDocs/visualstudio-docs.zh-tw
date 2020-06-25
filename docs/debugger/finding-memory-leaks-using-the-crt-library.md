@@ -1,7 +1,7 @@
 ---
 title: 使用 CRT 程式庫尋找記憶體流失 |Microsoft Docs
 ms.date: 10/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae879d8ed03653959ae926cc372300db9b71b9f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182647"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350481"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>尋找 CRT 程式庫的記憶體流失問題
 

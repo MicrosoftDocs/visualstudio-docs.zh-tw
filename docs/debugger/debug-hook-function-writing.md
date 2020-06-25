@@ -1,7 +1,7 @@
 ---
-title: 撰寫偵錯攔截函式 |Microsoft Docs
+title: 正在寫入的調試攔截函式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vc.hooks
 dev_langs:
@@ -21,25 +21,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82145d39adc519bfd1324cc36805cea7b97b1664
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 038c976380ff1e1f0a1a7c4c150fc462f6b1d1db
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563369"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350715"
 ---
 # <a name="debug-hook-function-writing"></a>撰寫偵錯攔截函式
 本節將說明一些您可以撰寫的自訂偵錯攔截函式，這些函式可讓您將程式碼插入偵錯工具正常處理中的某些預先定義點。
 
 ## <a name="in-this-section"></a>本節內容
- [用戶端區塊攔截函式](../debugger/client-block-hook-functions.md)提供指引和原型中撰寫驗證或報告的資料儲存於 _CLIENT_BLOCK 區塊內容的函式。
+ [用戶端區塊攔截](../debugger/client-block-hook-functions.md)函式提供指導方針和原型，用於撰寫可驗證或報告 _CLIENT_BLOCK 區塊中所儲存之資料內容的函式。
 
- [配置攔截函式](../debugger/allocation-hook-functions.md)定義配置攔截函式、 探索其不同用法、 指出限制，和提供原型。
+ [配置](../debugger/allocation-hook-functions.md)攔截函式定義配置攔截函式、探索其不同的使用、指出限制，並提供原型。
 
- [配置攔截和 CRT 記憶體配置](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)描述限制在配置攔截函式，明確忽略`_CRT_BLOCK`封鎖如果它們呼叫任何配置內部記憶體的 C 執行階段程式庫函式。 這個主題也列出如果配置攔截沒有忽略 `_CRT_BLOCK` 區塊的後果 (附範例)，以及如何變更預設配置攔截函式 **CrtDefaultAllocHook**。
+ [配置攔截和 CRT 記憶體配置](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)描述在對 `_CRT_BLOCK` 配置內部儲存體的 C 執行時間程式庫函式進行任何呼叫時，明確忽略區塊之配置攔截功能的限制。 這個主題也列出如果配置攔截沒有忽略 `_CRT_BLOCK` 區塊的後果 (附範例)，以及如何變更預設配置攔截函式 **CrtDefaultAllocHook**。
 
- [報告攔截函式](../debugger/report-hook-functions.md)討論`_CrtSetReportHook`，可用來篩選報告以專注於特定類型的配置。 這個主題也提供原型。
+ [報告](../debugger/report-hook-functions.md)攔截函式討論 `_CrtSetReportHook` ，您可以使用它來篩選報表，以專注于特定類型的配置。 這個主題也提供原型。
 
 ## <a name="related-sections"></a>相關章節
 
-- [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)-若要偵錯技術的 C 執行階段程式庫，包括使用 CRT 偵錯程式庫、 報告巨集、 連結之間的差異`malloc`和`_malloc_dbg`，撰寫偵錯攔截函式和 CRT偵錯堆積。
+- [CRT 偵錯工具技術](../debugger/crt-debugging-techniques.md)-C 執行時間程式庫的偵錯工具技術連結，包括使用 CRT Debug 程式庫、用於報告的宏、和之間的差異、撰寫偵錯工具攔截函式 `malloc` `_malloc_dbg` ，以及 CRT 偵錯工具堆積。

@@ -2,7 +2,7 @@
 title: 檢查變數-自動變數和區域變數視窗 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/18/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -15,31 +15,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b159f631534135ac568fb03dbffa46ae0360fc47
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74904078"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350741"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>檢查 [自動變數] 和 [區域變數] 視窗中的變數
 
-當您進行調試時 **，[自動**變數] 和 [**區域變數**] 視窗會顯示變數值。 只有在進行調試過程時，才可以使用 windows。 [自動變數] 視窗會顯示目前中斷點周圍**使用的變數**。 [**區域變數**] 視窗會顯示本機範圍中定義的變數，這通常是目前的函式或方法。 如果這是您第一次嘗試偵錯工具代碼，您可能會想要在進行本文之前，先閱讀適用于徹底初學者和[偵錯工具技術和工具](../debugger/write-better-code-with-visual-studio.md) [的偵錯工具](../debugger/debugging-absolute-beginners.md)。
+當您進行調試時 **，[自動**變數] 和 [**區域變數**] 視窗會顯示變數值。 只有在進行調試過程時，才可以使用 windows。 [自動變數] 視窗會顯示目前中斷點周圍**使用的變數**。 [**區域變數**] 視窗會顯示本機範圍中定義的變數，這通常是目前的函式或方法。 如果這是您第一次嘗試偵錯工具代碼，您可能會想要在進行本文之前，先閱讀適用于徹底初學者和[偵錯工具技術和工具](../debugger/write-better-code-with-visual-studio.md)[的偵錯工具](../debugger/debugging-absolute-beginners.md)。
 
- [**自動**變數] 視窗適用C#于、Visual Basic C++、和 Python 程式碼，但不適用於 JavaScript F#或。
+ [自動變數] 視窗**適用于 c** #、Visual Basic、c + + 和 Python 程式碼，但不適用於 JavaScript 或 F #。
 
-若要開啟 **[自動**變數] 視窗，請在 [調試] 時選取 [ **Debug** > **Windows** ** > 自動**變數]，或按**Ctrl**+**Alt**+**V** > **A**。
+若要開啟 **[自動**變數] 視窗，請在 [調試] 時選取 [ **Debug**Windows 自動變數]  >  **Windows**  >  ** **，或按**Ctrl** + **Alt** + **V**  >  **A**。
 
-若要開啟 [**區域變數**] 視窗，請在 [調試] 時選取 [ **Debug** > **Windows** > **區域變數**]，或按**Alt**+**4**。
+若要開啟 [**區域變數**] 視窗，請在 [調試] 時選取 [ **Debug**  >  **Windows**  >  **區域變數**]，或按**Alt** + **4**。
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 如 Visual Studio for Mac，請參閱[Visual Studio for Mac 中的資料視覺效果](/visualstudio/mac/data-visualizations)。
 
 ## <a name="use-the-autos-and-locals-windows"></a>使用 [自動變數] 和 [區域變數] 視窗
 
-陣列**和物件會在 [自動**變數] 和 [**區域變數**] 視窗中顯示為樹狀目錄控制項。 選取變數名稱左邊的箭號，以展開視圖以顯示欄位和屬性。 以下是 [**區域變數**] 視窗中 <xref:System.IO.FileStream?displayProperty=fullName> 物件的範例：
+陣列**和物件會在 [自動**變數] 和 [**區域變數**] 視窗中顯示為樹狀目錄控制項。 選取變數名稱左邊的箭號，以展開視圖以顯示欄位和屬性。 以下是 <xref:System.IO.FileStream?displayProperty=fullName> [**區域變數**] 視窗中的物件範例：
 
-![區域變數-FileStream](../debugger/media/locals-filestream.png "區域變數 - FileStream")
+![區域變數 - FileStream](../debugger/media/locals-filestream.png "區域變數 - FileStream")
 
 [區域變數 **] 或**[自動**變數**] 視窗中的紅色值表示自上次評估之後，值已變更。 這項變更可能來自先前的調試階段，或因為您已變更視窗中的值。
 
@@ -51,12 +51,12 @@ ms.locfileid: "74904078"
 
 您可以輸入值的運算式，例如 `a + b`。 偵錯工具接受大部分的有效語言運算式。
 
-在原生 C++ 程式碼中，您可能必須限定變數名稱的內容。 如需詳細資訊，請參閱[內容運算子 (C++)](../debugger/context-operator-cpp.md)。
+在原生 C++ 程式碼中，您可能必須限定變數名稱的內容。 如需詳細資訊，請參閱[CoNtext operator （c + +）](../debugger/context-operator-cpp.md)。
 
 >[!CAUTION]
 >在您變更值和運算式之前，請先確定您已瞭解這些結果。 一些可能的問題包括：
 >
->- 評估某些運算式可能會變更變數的值，或是影響程式的狀態。 例如，評估 `var1 = ++var2` 會變更 `var1` 和 `var2`兩者的值。 這些運算式會被視為具有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 如果您不知道，副作用可能會導致非預期的結果。
+>- 評估某些運算式可能會變更變數的值，或是影響程式的狀態。 例如，評估會 `var1 = ++var2` 變更和的值 `var1` `var2` 。 這些運算式會被視為具有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 如果您不知道，副作用可能會導致非預期的結果。
 >
 >- 由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使看似無害的編輯，也可能會導致浮點變數中某些位的變更。
 
@@ -82,7 +82,7 @@ ms.locfileid: "74904078"
 
 在 [自動變數] 或 [區域變數] 視窗中查看物件的屬性清單時，您也可以切換屬性名稱，並篩選出未釘選的屬性。  您可以藉由選取 [自動變數] 或 [區域變數] 視窗上方工具列中的按鈕，來存取每個選項。
 
-![篩選我的最愛屬性](../debugger/media/filter-pinned-properties-locals.png "篩選我的最愛屬性")
+![篩選我的最愛屬性](../debugger/media/filter-pinned-properties-locals.png "篩選我的最愛屬性") 
 ![切換屬性名稱](../debugger/media/toggle-property-names.gif "切換屬性名稱")
 
 ::: moniker-end
@@ -91,17 +91,17 @@ ms.locfileid: "74904078"
 
 您可以使用 [**偵錯工具位置**] 工具列來選取所**需的函**式、執行緒或進程，以變更 [自動變數] 和 [**區域變數**] 視窗的內容。
 
-若要啟用 [**偵錯工具位置**] 工具列，請按一下工具列區域的空白部分，然後從下拉式清單中選取 [ **Debug Location** ]，或選取 [ **View** > **工具列** > **debug location**]。
+若要啟用 [**偵錯工具位置**] 工具列，請按一下工具列區域的空白部分，並從下拉式清單中選取 [偵錯工具**位置**]，或選取 [**流覽**  >  **工具列**] [  >  **偵錯工具位置**]。
 
 設定中斷點，並開始偵錯。 到達中斷點時，會暫停執行，而且您可以在 [**調試位置**] 工具列中看到位置。
 
 ![[調試位置] 工具列](../debugger/media/debuglocationtoolbar.png "偵錯位置工具列")
 
-## <a name="bkmk_whatvariables"></a>[自動變數] 視窗中C#的C++變數（、、Visual Basic、Python）
+## <a name="variables-in-the-autos-window-c-c-visual-basic-python"></a><a name="bkmk_whatvariables"></a>[自動變數] 視窗中的變數（c #、c + +、Visual Basic、Python）
 
 不同的程式碼語言會**在 [自動**變數] 視窗中顯示不同的變數。
 
-- 在 C# 和 Visual Basic 中，[自動變數] 視窗會顯示目前或前一行使用的任何變數。 例如，在或C# Visual Basic 程式碼中，宣告下列四個變數：
+- 在 C# 和 Visual Basic 中，[自動變數]**** 視窗會顯示目前或前一行使用的任何變數。 例如，在 c # 或 Visual Basic 程式碼中，宣告下列四個變數：
 
    ```csharp
        public static void Main()
@@ -114,13 +114,13 @@ ms.locfileid: "74904078"
        }
    ```
 
-   在 `c = 3;`行上設定中斷點，並啟動偵錯工具。 當執行暫停時， **[自動**變數] 視窗將會顯示：
+   在行上設定中斷點 `c = 3;` ，並啟動偵錯工具。 當執行暫停時， **[自動**變數] 視窗將會顯示：
 
-   ![自動變數-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
+   ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
 
-   `c` 的值為0，因為尚未執行行 `c = 3`。
+   的值 `c` 是0，因為尚未執行此行 `c = 3` 。
 
-- 在C++中，[自動變數] 視窗會在執行暫停的目前行之前，顯示至少三行**中所使用**的變數。 例如，在程式C++代碼中，宣告六個變數：
+- 在 c + + 中，[自動變數] 視窗會在執行暫停的目前行之前，顯示至少三行**中所使用**的變數。 例如，在 c + + 程式碼中，宣告六個變數：
 
    ```C++
        void main() {
@@ -134,16 +134,16 @@ ms.locfileid: "74904078"
        }
    ```
 
-    在行 `e = 5;` 上設定中斷點，並執行偵錯工具。 當執行停止時， **[自動**變數] 視窗將會顯示：
+    在行上設定中斷點 `e = 5;` ，並執行偵錯工具。 當執行停止時， **[自動**變數] 視窗將會顯示：
 
-    ![自動C++](../debugger/media/autos-cplus.png "自動C++")
+    ![自動變數-C + +](../debugger/media/autos-cplus.png "自動變數-C + +")
 
-    變數 `e` 未初始化，因為尚未執行行 `e = 5`。
+    變數未 `e` 初始化，因為尚未執行這一行 `e = 5` 。
 
-## <a name="bkmk_returnValue"></a> View return values of method calls
- 在 .NET 和C++程式碼中，您可以在不進入或跳過方法呼叫**時，檢查 [自動**變數] 視窗中的傳回值。 當方法呼叫傳回值不是儲存在本機變數時，可能會很有用。 方法可用來做為參數，或做為另一個方法的傳回值。
+## <a name="view-return-values-of-method-calls"></a><a name="bkmk_returnValue"></a> View return values of method calls
+ 在 .NET 和 c + + 程式碼中，您可以在不進入或跳過方法呼叫**時，檢查 [自動**變數] 視窗中的傳回值。 當方法呼叫傳回值不是儲存在本機變數時，可能會很有用。 方法可用來做為參數，或做為另一個方法的傳回值。
 
- 例如，下列C#程式碼會新增兩個函數的傳回值：
+ 例如，下列 c # 程式碼會新增兩個函數的傳回值：
 
 ```csharp
 static void Main(string[] args)
@@ -167,15 +167,15 @@ private static int subtractVars(int i, int j)
 }
 ```
 
-若要查看 [自動變數] 視窗中 `sumVars()` 和 `subtractVars()` 方法呼叫的傳回值：
+若要 `sumVars()` `subtractVars()` 在 [自動變數] 視窗中查看和方法呼叫的傳回值：
 
 1. 在 `int x = sumVars(a, b) + subtractVars(c, d);` 行上設定中斷點。
 
 1. 開始進行調試，並于中斷點暫停執行時 **，選取 [** 不進入函式] 或按**F10**。 您應該**會在 [自動變數] 視窗**中看到下列傳回值：
 
-  ![自動變數傳回值C#](../debugger/media/autosreturnvaluecsharp2.png "自動變數傳回值C#")
+  ![自動變數傳回值 C#](../debugger/media/autosreturnvaluecsharp2.png "自動變數傳回值 C#")
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [什麼是偵錯？](../debugger/what-is-debugging.md)
 - [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)

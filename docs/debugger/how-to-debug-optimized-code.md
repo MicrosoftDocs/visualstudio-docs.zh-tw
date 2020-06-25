@@ -1,7 +1,7 @@
 ---
-title: 作法：偵錯工具優化程式碼 |Microsoft Docs
+title: 如何-Debug 優化程式碼 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 590925a894f1bf9bfe70d9dd1bf6142fcb6a2e34
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e3c08ce9605560173d6f29817372dee4af8d622e
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430672"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349974"
 ---
-# <a name="how-to-debug-optimized-code"></a>作法：對最佳化程式碼進行偵錯
+# <a name="how-to-debug-optimized-code"></a>如何：偵錯最佳化程式碼
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
+> 您看到的對話方塊與功能表命令，可能會因您所使用的設定或版本，而與說明中所述不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
 > [!NOTE]
 > [/Zo (增強最佳化的偵錯)](/cpp/build/reference/zo-enhance-optimized-debugging) 編譯器選項 (在 Visual Studio Update 3 引入) 會針對最佳化程式碼 (不使用 **/Od** 編譯器選項建置的專案) 產生更豐富的偵錯資訊。 請參閱 [/O 選項 (最佳化程式碼)](/cpp/build/reference/o-options-optimize-code))。 這包括改善對於本機變數和內嵌函式的偵錯支援。
@@ -52,7 +52,7 @@ ms.locfileid: "72430672"
 
   全域變數和靜態變數一定會正確顯示， 結構配置也會。 如果您有結構的指標，而且指標的值是正確的，則結構的每個成員變數都會顯示正確的值。
 
-  由於這些限制，您應該盡可能地使用程式的非最佳化版本來進行偵錯。 根據預設，會在C++程式的 Debug 設定中關閉優化，並在發行設定中開啟。
+  由於這些限制，您應該盡可能地使用程式的非最佳化版本來進行偵錯。 根據預設，優化會在 c + + 程式的 Debug 設定中關閉，並在發行設定中開啟。
 
   然而，有時錯誤可能只出現在程式的最佳化版本中。 在這種情況下，您必須偵錯最佳化程式碼。
 
@@ -62,32 +62,32 @@ ms.locfileid: "72430672"
 
 2. 在 [方案總管] 中選取專案。
 
-3. 在 [檢視] 功能表上按一下 [屬性頁]。
+3. 在 [檢視]**** 功能表上按一下 [屬性頁]****。
 
-4. 請確認在 [屬性頁] 對話方塊的 [組態] 下拉式清單中，選取 `Debug`。
+4. 請確認在 [屬性頁]**** 對話方塊的 [組態]**** 下拉式清單中，選取 `Debug`。
 
 5. 在左邊的資料夾檢視中，選取 **C/C++** 資料夾。
 
 6. 在 **C++** 資料夾下方，選取 `Optimization`。
 
-7. 在右邊的屬性清單裡，尋找 `Optimization`。 其旁邊的設定可能是 `Disabled (`[/Od](/cpp/build/reference/od-disable-debug)`)`。 從其他項目 (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`、`Maximum Speed``(`[/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`、`Full Optimization``(`[/Ox](/cpp/build/reference/ox-full-optimization)`)` 或 `Custom`) 中選擇一個項目。
+7. 在右邊的屬性清單裡，尋找 `Optimization`。 旁邊的設定可能會顯示 `Disabled (` [/od](/cpp/build/reference/od-disable-debug) `)` 。 選擇其中一個其他選項（ `Minimum Size``(` [/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` 、 `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` 、 `Full Optimization``(` [/ox](/cpp/build/reference/ox-full-optimization) `)` 或 `Custom` ）。
 
 8. 如果您選擇 `Custom` 的 `Optimization` 選項，現在就可以為其他顯示在屬性清單裡的任一屬性設定其選項。
 
-9. 選取 [專案屬性] 頁面的C++[設定屬性]、[C/] [命令列] 節點，然後將 `(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` 新增至 [**其他選項**] 文字方塊。
+9. 選取 [專案屬性] 頁面的 [設定屬性]、[C/c + +]、[命令列] 節點，然後將 [/Zo] 新增 `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` 至 [**其他選項**] 文字方塊。
 
     > [!WARNING]
     > `/Zo` 需要 Visual Studio 2013 Update 3 或更新版本。
     >
     >  新增 `/Zo` 將會停用 [編輯後繼續](../debugger/edit-and-continue-visual-csharp.md)。
 
-   偵錯最佳化程式碼時，使用 [反組譯碼] 視窗來查看哪些指令已經確實建立和執行。 設定中斷點時，您必須了解中斷點可能會隨著指令移動。 例如，請參考下列程式碼：
+   偵錯最佳化程式碼時，使用 [反組譯碼]**** 視窗來查看哪些指令已經確實建立和執行。 設定中斷點時，您必須了解中斷點可能會隨著指令移動。 例如，請參考下列程式碼：
 
 ```cpp
 for (x=0; x<10; x++)
 ```
 
- 假設您在這行設定中斷點。 您可以預期會叫用 10 次中斷點，但是如果程式碼已完成最佳化，便只會叫用中斷點一次。 原因是第一個指令會將 `x` 值設為 0。 編譯器會辨識這個動作只需做一次，並且將它移出迴圈外。 中斷點會隨著移動。 迴圈內部則仍保留比較和累加 `x` 的指令。 當您檢視 [反組譯碼] 視窗時，為取得更佳控制，[步驟單位](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100))會自動設為指令，這在逐步執行最佳化程式碼時非常有用。
+ 假設您在這行設定中斷點。 您可以預期會叫用 10 次中斷點，但是如果程式碼已完成最佳化，便只會叫用中斷點一次。 原因是第一個指令會將 `x` 值設為 0。 編譯器會辨識這個動作只需做一次，並且將它移出迴圈外。 中斷點會隨著移動。 迴圈內部則仍保留比較和累加 `x` 的指令。 當您檢視 [反組譯碼]**** 視窗時，為取得更佳控制，[步驟單位](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100))會自動設為指令，這在逐步執行最佳化程式碼時非常有用。
 
 ## <a name="see-also"></a>另請參閱
 

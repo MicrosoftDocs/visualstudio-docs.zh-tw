@@ -1,7 +1,7 @@
 ---
 title: 重新整理 UWP 應用程式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 0b1d19c0b607d2c5a09fddc9d4550230e478d57a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dd38a758a69b2e19079a2bc2511e7edf5cbfb0ab
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730315"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348154"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>在 Visual Studio 中重新整理 UWP 應用程式
 
@@ -49,7 +49,7 @@ ms.locfileid: "72730315"
 
 1. 在 Visual Studio 中開啟 UWP 專案，選取 [**本機電腦**] 做為 [偵錯工具目標]。
 
-     ![選取 [調試目標清單]](../debugger/media/js_select_target.png "JS_Select_Target")
+     ![選取偵錯目標清單](../debugger/media/js_select_target.png "JS_Select_Target")
 
 3. 請按 F5 以偵錯模式執行應用程式。
 
@@ -61,5 +61,5 @@ ms.locfileid: "72730315"
 
 8. 切換至應用程式。 應用程式會重載，並使用更新的 HTML 來呈現應用程式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

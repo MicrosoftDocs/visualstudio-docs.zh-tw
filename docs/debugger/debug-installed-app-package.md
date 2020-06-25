@@ -2,7 +2,7 @@
 title: Debug 已安裝的 UWP 應用程式套件 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/07/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.installedapppackagelauncher
 - vs.debug.remote.connection
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5c2e94e9fa80145489bddfb005b7136bdff8a71
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211299"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350728"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>在 Visual Studio 中，對已安裝的 UWP 應用程式套件進行 Debug
 
@@ -38,7 +38,7 @@ Visual Studio 可以在 Windows 10 電腦和 Xbox、HoloLens 和 IoT 裝置上�
 
 ## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>在本機電腦上對已安裝的 UWP 應用程式進行 Debug
 
-1. 在 Visual Studio 中，**選取** > [偵測] [**其他 debug 目標** > ] [偵測**已安裝應用程式套件**]
+1. 在 Visual Studio 中，**選取 [** 偵測] [  >  **其他 debug 目標**] [偵測  >  **已安裝應用程式套件**]
 
 1. 在 [**已安裝的應用程式套件**] 對話方塊的 [連線**類型**] 底下，選取 [**本機電腦**]。
 
@@ -52,9 +52,9 @@ Visual Studio 可以在 Windows 10 電腦和 Xbox、HoloLens 和 IoT 裝置上�
 1. 選取 [**開始**]，或如果應用程式正在執行，請選取 [**附加**]。
 
 > [!NOTE]
-> 您也可以在 Visual Studio 中選取 [**調試** > 程式] [**附加至進程**]，以附加至任何執行中的 UWP 或其他應用程式進程。 您不需要原始的 Visual Studio 專案，即可附加至執行中的進程，但在對您沒有原始程式碼的進程進行處理時，載入應用程式的符號會有很大的説明。 請參閱[在偵錯工具中指定符號和來源](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)檔案。
+> 您也可以在 Visual Studio 中選取 [**調試**程式] [  >  **附加至進程**]，以附加至任何執行中的 UWP 或其他應用程式進程。 您不需要原始的 Visual Studio 專案，即可附加至執行中的進程，但在對您沒有原始程式碼的進程進行處理時，載入應用程式的符號會有很大的説明。 請參閱[在偵錯工具中指定符號和來源](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)檔案。
 
-## <a name="remote"></a>在遠端電腦或裝置上對已安裝的 UWP 應用程式進行 Debug
+## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a>在遠端電腦或裝置上對已安裝的 UWP 應用程式進行 Debug
 
 第一次 Visual Studio 在 Windows 10 裝置上或遠端建立後的 windows 10 電腦上，將已安裝的 UWP 應用程式進行調試，它會在目標裝置上安裝遠端偵錯程式。
 
@@ -62,7 +62,7 @@ Visual Studio 可以在 Windows 10 電腦和 Xbox、HoloLens 和 IoT 裝置上�
 
 1. 如果您要連線到執行建立者更新 Windows 10 的遠端電腦，請在遠端電腦上[手動安裝並啟動遠端偵錯程式](../debugger/remote-debugging.md)。
 
-1. 在 Visual Studio 電腦上 **，選取** > [偵測] [**其他 debug 目標** > ] [偵測**已安裝應用程式套件**]。
+1. 在 Visual Studio 電腦上 **，選取 [** 偵測] [  >  **其他 debug 目標**] [偵測  >  **已安裝應用程式套件**]。
 
 1. 在 [**已安裝的應用程式套件**] 對話方塊的 [連線**類型**] 底下，選取 [**遠端電腦**或**裝置**]。
 
@@ -77,8 +77,8 @@ Visual Studio 可以在 Windows 10 電腦和 Xbox、HoloLens 和 IoT 裝置上�
       如果偵錯工具無法使用電腦名稱稱連接到遠端電腦，請改用 IP 位址。 使用 Xbox、HoloLens 或 IoT 裝置的 IP 位址。
    1. 選取 [**驗證模式**] 旁的驗證選項。
 
-      針對大部分的應用程式，保留預設值 [**通用（未加密的通訊協定）** ]。
-   1. 選取 [**選取**]。
+      針對大部分的應用程式，保留預設值 [**通用（未加密的通訊協定）**]。
+   1. 選取 [選取] 。
 
 1. 在 [**已安裝的應用程式套件**] 底下，選取您要進行 debug 的應用程式，或在 [搜尋] 方塊中輸入其名稱。 **未**執行的已安裝應用程式套件出現在 [未執行] 之下，且**執行中的**應用程式正在執行中。
 
@@ -99,6 +99,6 @@ Visual Studio 可以在 Windows 10 電腦和 Xbox、HoloLens 和 IoT 裝置上�
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [遠端偵錯](../debugger/remote-debugging.md)
-- [設定 Windows 防火牆以進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)
+- [設定 Windows 防火牆以進行遠端偵錯程式](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+- [遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)
 - [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)

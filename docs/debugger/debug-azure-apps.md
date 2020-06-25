@@ -1,7 +1,7 @@
 ---
 title: Azure 服務的 Debug |Microsoft Docs
 ms.date: 09/14/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugger
 ms.assetid: 3d434de3-ee5f-419d-9a94-ac4ac02d635b
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: e7c7ba163010a14102aa3e1b0160e1c3cf294db1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fad1a7d1f07009b169480a9e071c5cae8498f600
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745557"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350754"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>在 Visual Studio 中調試 Azure 服務
 
@@ -33,6 +33,6 @@ ms.locfileid: "72745557"
 
 - 若要在 Azure Service Fabric 上遠端偵錯程式 ASP.NET，請參閱[debug a remote Service Fabric application](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 偵錯](../debugger/index.yml)

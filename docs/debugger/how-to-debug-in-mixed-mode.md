@@ -1,7 +1,7 @@
 ---
-title: HOW TO：在混合模式偵錯 |Microsoft Docs
+title: 如何在混合模式中進行調試 |Microsoft Docs
 ms.date: 11/05/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,52 +17,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53a40c4dc615b5e1b6a3caef3a99be5ab0b56327
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894374"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350104"
 ---
-# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>HOW TO：在混合模式偵錯 (C#， C++，Visual Basic)
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>如何：在混合模式中進行調試（c #、c + +、Visual Basic）
 
-下列程序說明如何啟用 managed 和原生程式碼在一起，也就是會在混合模式偵錯的偵錯。 有兩種的混合模式偵錯的案例：
+下列程式描述如何同時啟用 managed 和機器碼的偵錯工具，也稱為混合模式的偵錯工具。 有兩種混合模式的調試情況：
 
-- 呼叫 DLL 的應用程式以原生程式碼，並在 managed DLL。
+- 呼叫 DLL 的應用程式是以機器碼撰寫，而且 DLL 是受管理的。
 
-- 呼叫 DLL 的應用程式以 managed 程式碼撰寫，且原生程式碼的 DLL。 會引導您完成此案例的更詳細的教學課程，請參閱[偵錯 managed 和原生程式碼](../debugger/how-to-debug-managed-and-native-code.md)。
+- 呼叫 DLL 的應用程式是以 managed 程式碼撰寫，而 DLL 則是機器碼。 如需逐步解說此案例的教學課程，請參閱偵錯工具[和原生程式碼](../debugger/how-to-debug-managed-and-native-code.md)。
 
-您可以讓呼叫的應用程式專案中的 managed 和原生偵錯工具**屬性**頁面。 原生和 managed 應用程式之間的不同設定。
+您可以在呼叫應用程式專案的**屬性**頁中啟用 managed 和原生偵錯工具。 原生和受控應用程式的設定不同。
 
-如果您沒有存取呼叫端應用程式專案，您可以偵錯 DLL 專案的 DLL。 您不需要混合的模式偵錯 DLL 專案。 如需詳細資訊，請參閱[如何：從 DLL 專案進行偵錯](../debugger/how-to-debug-from-a-dll-project.md)。
+如果您沒有呼叫應用程式專案的存取權，您可以從 DLL 專案中，對 DLL 進行的偵錯工具。 您不需要混合模式來只對 DLL 專案進行 debug。 如需詳細資訊，請參閱[如何：從 DLL 專案進行調試](../debugger/how-to-debug-from-a-dll-project.md)程式。
 
 > [!NOTE]
-> 在本文中，根據您的 Visual Studio 設定或版本中的可能會與不同的對話方塊和命令，您會看到。 若要變更您的設定，請選擇**工具** > **匯入和匯出設定**。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
+> 根據您的 Visual Studio 設定或版本，您所看到的對話方塊和命令可能會與本文中的不同。 若要變更您的設定，請選擇 [**工具**] [匯  >  **入和匯出設定**]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
-## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>啟用混合模式偵錯原生的呼叫端應用程式
+## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>針對原生呼叫應用程式啟用混合模式的偵錯工具
 
-1. 選取C++專案中**方案總管**，按一下 **屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下，然後選擇 **屬性**。
+1. 在**方案總管**中選取 c + + 專案，然後按一下 [**屬性**] 圖示，按**Alt** + **enter**鍵，或按一下滑鼠右鍵並選擇 [**屬性**]。
 
-1. 在  **\<專案 > 屬性頁**對話方塊方塊中，展開**組態屬性**，然後選取**偵錯**。
+1. 在 [ ** \<Project> 屬性頁**] 對話方塊中，展開 [設定**屬性**]，然後選取 [**調試**]。
 
 1. 將**偵錯工具類型**設定為**混合**或**自動**。
 
-1. 選取 [確定]  。
+1. 選取 [確定]。
 
-   ![啟用混合的模式偵錯](../debugger/media/dbg-mixed-mode-from-native.png "啟用混合的模式偵錯")
+   ![啟用混合模式偵錯](../debugger/media/dbg-mixed-mode-from-native.png "啟用混合模式偵錯")
 
-## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>啟用混合模式偵錯 managed 呼叫端的應用程式
+## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>針對受管理的呼叫應用程式啟用混合模式的偵錯工具
 
-1. 中，選取 C# 或 Visual Basic 專案**方案總管**，然後選取**屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下並選擇 **屬性**。
+1. 在**方案總管**中選取 c # 或 Visual Basic 專案，然後選取 [**屬性**] 圖示，按**Alt** + **enter**鍵，或按一下滑鼠右鍵並選擇 [**屬性**]。
 
-1. 選取 **偵錯**索引標籤，然後按**啟用機器碼偵錯**。
+1. 選取 [**調試**程式] 索引標籤，然後選取 [**啟用原生程式碼調試**程式]。
 
 1. 關閉 [屬性] 頁面，以儲存變更。
 
    ![啟用機器碼偵錯](../debugger/media/dbg-mixed-mode-from-csharp.png "啟用機器碼偵錯")
 
 > [!NOTE]
-> 自 Visual Studio 2017 開始，在多數的 Visual Studio 版本中，您必須使用 *launchSettings.json* 檔案而非使用專案屬性，來針對 .NET Core 應用程式中的機器碼啟用混合模式偵錯。 如需詳細資訊，請參閱 <<c0> [ 偵錯 managed 和原生程式碼](../debugger/how-to-debug-managed-and-native-code.md)。
+> 自 Visual Studio 2017 開始，在多數的 Visual Studio 版本中，您必須使用 *launchSettings.json* 檔案而非使用專案屬性，來針對 .NET Core 應用程式中的機器碼啟用混合模式偵錯。 如需詳細資訊，請參閱[偵錯工具管理和機器碼](../debugger/how-to-debug-managed-and-native-code.md)。
 
 ## <a name="see-also"></a>另請參閱
 

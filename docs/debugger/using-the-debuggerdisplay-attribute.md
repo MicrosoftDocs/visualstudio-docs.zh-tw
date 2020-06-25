@@ -1,7 +1,7 @@
 ---
 title: 使用 DebuggerDisplay 顯示自訂資訊 |Microsoft Docs
 ms.date: 01/09/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - attributes, debugger
 - DebuggerDisplay attribute
@@ -12,28 +12,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2abb054a0e09d0715e708cc4d1d6fcbed476e0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3511b52ab8c04d9018336b4d63b0659792835d99
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728670"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85347868"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 屬性（C#，Visual Basic， F#， C++/cli）告訴偵錯工具要顯示的內容
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 屬性告訴偵錯工具要顯示的內容（c #、Visual Basic、F #、c + +/CLI）
 
 <xref:System.Diagnostics.DebuggerDisplayAttribute> 控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。 如果套用至基底類型，則屬性也適用于子類別。
 
 `DebuggerDisplay` 屬性有單一引數，這是要在類型執行個體的 [值] 一欄中顯示的字串。 這個字串可以包含括號 (`{` 和 `}`)。 一對括號內的文字會評估為欄位、屬性或方法。
 
-如果類別具有覆寫的 `ToString()` 方法，偵錯工具會使用覆寫的方法，而非預設的 `{<typeName>}`。 因此，如果您已覆寫 `ToString()` 方法，偵錯工具就會使用覆寫的方法，而非預設的`{<typeName>}`，而且您不需要使用 `DebuggerDisplay`。 若兩者都使用，`DebuggerDisplay` 屬性會優先於覆寫的 `ToString()` 方法。 @No__t_0 屬性也會優先于子類別中覆寫的 `ToString()` 方法。
+如果類別具有覆寫的 `ToString()` 方法，偵錯工具會使用覆寫的方法，而非預設的 `{<typeName>}`。 因此，如果您已覆寫 `ToString()` 方法，偵錯工具就會使用覆寫的方法，而非預設的`{<typeName>}`，而且您不需要使用 `DebuggerDisplay`。 若兩者都使用，`DebuggerDisplay` 屬性會優先於覆寫的 `ToString()` 方法。 `DebuggerDisplay`屬性也優先于 `ToString()` 子類別中的覆寫方法。
 
-偵錯工具是否評估這個隱含 `ToString()` 呼叫，是取決於 [工具 / 選項 / 偵錯] 對話方塊中的使用者設定。 Visual Basic 並未實作這個隱含 `ToString()` 評估。
+偵錯工具是否評估這個隱含 `ToString()` 呼叫，是取決於 [工具 / 選項 / 偵錯] **** 對話方塊中的使用者設定。 Visual Basic 並未實作這個隱含 `ToString()` 評估。
 
 > [!IMPORTANT]
-> 如果已核取 [工具/選項 / 偵錯] 對話方塊中的 [在變數視窗中顯示物件的原始結構] 核取方塊，即忽略 `DebuggerDisplay` 屬性。
+> 如果已核取 [工具/選項 / 偵錯] **** 對話方塊中的 [在變數視窗中顯示物件的原始結構] **** 核取方塊，即忽略 `DebuggerDisplay` 屬性。
 
 > [!NOTE]
-> 針對機器碼，只有C++/cli 程式碼才支援這個屬性。
+> 針對機器碼，只有在 c + +/CLI 程式碼中才支援這個屬性。
 
 下表說明 `DebuggerDisplay` 屬性的一些可能用法和範例輸出。
 
@@ -44,10 +44,10 @@ ms.locfileid: "72728670"
 
 `DebuggerDisplay` 也可以接受具名參數。
 
-|參數|用途|
+|參數|目的|
 |----------------|-------------|
-|`Name`、 `Type`|這些參數會影響變數視窗的 [ **名稱** ] 和 [ **類型** ] 欄 (它們可以設定為與建構函式使用相同語法的字串)。過度使用或不當使用這些參數，會造成輸出混淆。|
-|`Target`、 `TargetTypeName`|指定屬性在組件層級使用時的目標類型。|
+|`Name`, `Type`|這些參數會影響變數視窗的 [ **名稱** ] 和 [ **類型** ] 欄 (它們可以設定為與建構函式使用相同語法的字串)。過度使用或不當使用這些參數，會造成輸出混淆。|
+|`Target`, `TargetTypeName`|指定屬性在組件層級使用時的目標類型。|
 
 Autoexp.cs 檔案會在組件層級使用 DebuggerDisplay 屬性。 Autoexp.cs 檔案會決定 Visual Studio 用於 .NET 物件使用的預設展開 (Expansion)。 您可以檢查 autoexp.cs 檔案以取得如何使用 DebuggerDisplay 屬性的範例，或修改和編譯 autoexp.cs 檔案以變更預設展開 (Expansion)。 請務必先備份 autoexp.cs 檔案，再進行修改。
 
@@ -96,9 +96,9 @@ public sealed class MyClass
 ## <a name="example"></a>範例
 下列程式碼範例將示範如何使用 `DebuggerDisplay`搭配 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在偵錯工具變數視窗中檢視時 (例如 [ **監看式** ] 視窗)，它會產生類似下面所示的展開：
 
-|**名稱**|**值**|**Type**|
+|**名稱**|**ReplTest1**|**型別**|
 |--------------|---------------|--------------|
-|機碼|"three"|object {string}|
+|答案|"three"|object {string}|
 |值|3|object {int}|
 
 ```csharp
@@ -179,9 +179,9 @@ class MyHashtable
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)
-- [建立 Managed 物件的自訂檢視](../debugger/create-custom-views-of-managed-objects.md)
-- [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)
+- [建立受控物件的自訂視圖](../debugger/create-custom-views-of-managed-objects.md)
+- [C 中的格式規範#](../debugger/format-specifiers-in-csharp.md)
 - [使用偵錯工具顯示屬性增強偵錯功能](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

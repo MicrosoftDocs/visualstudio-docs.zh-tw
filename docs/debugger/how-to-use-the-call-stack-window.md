@@ -2,7 +2,7 @@
 title: 在偵錯工具中查看呼叫堆疊 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/29/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,56 +29,56 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535986"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348739"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>查看呼叫堆疊，並在偵錯工具中使用 [呼叫堆疊] 視窗
 
-您可以使用 [呼叫堆疊] 視窗來檢視目前堆疊上的函式或程序呼叫。 [呼叫堆疊] 視窗會顯示方法和函式的呼叫順序。 呼叫堆疊是檢查並了解應用程式執行流程的好方法。
+您可以使用 [呼叫堆疊]**** 視窗來檢視目前堆疊上的函式或程序呼叫。 [呼叫堆疊]**** 視窗會顯示方法和函式的呼叫順序。 呼叫堆疊是檢查並了解應用程式執行流程的好方法。
 
 當無法在呼叫堆疊中使用[偵錯工具符號](#bkmk_symbols)時，[**呼叫堆疊**] 視窗可能無法顯示該部分呼叫堆疊的正確資訊，而是改為顯示：
 
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 > [!NOTE]
-> [呼叫堆疊] 視窗類似於某些 IDE (例如 Eclipse) 中的 [偵錯] 檢視方塊。
+> [呼叫堆疊]**** 視窗類似於某些 IDE (例如 Eclipse) 中的 [偵錯] 檢視方塊。
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與此處所描述的不同。 若要變更設定，請選取 [工具] 功能表上的 [匯入和匯出設定]。  請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與此處所描述的不同。 若要變更設定，請選取 [工具]**** 功能表上的 [匯入和匯出設定]****。  請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>在偵錯工具中查看呼叫堆疊
 
 - 進行調試時，請在 [**調試**] 功能表中選取 [ **Windows > 呼叫堆疊**]。
 
-  ![[呼叫堆疊] 視窗](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![呼叫堆疊視窗](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
-執行指標目前所在的堆疊框架位置會以黃色箭頭識別。 這個堆疊框架的資訊預設會出現在 [來源]、[區域變數] **、[** 自動**變數** **]、[監看式]** 和 [反組解碼] 若要將偵錯工具內容變更為堆疊上的另一個框架，請[切換至另一個堆疊框架](#bkmk_switch)。
+執行指標目前所在的堆疊框架位置會以黃色箭頭識別。 這個堆疊框架的資訊預設會出現在 [來源]、[區域變數] **、[** 自動**變數** **]、[監看式]** 和 [反組解碼] **Disassembly** 若要將偵錯工具內容變更為堆疊上的另一個框架，請[切換至另一個堆疊框架](#bkmk_switch)。
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>在 [呼叫堆疊] 視窗中顯示非使用者程式碼
 
-- 以滑鼠右鍵按一下 [呼叫堆疊] 視窗，然後選取 [顯示外部程式碼]。
+- 以滑鼠右鍵按一下 [呼叫堆疊]**** 視窗，然後選取 [顯示外部程式碼]****。
 
 非使用者程式碼是啟用[Just My Code](../debugger/just-my-code.md)時，不會顯示的任何程式碼。 在 managed 程式碼中，預設會隱藏非使用者程式碼框架。 下列標記法會出現在非使用者程式碼框架的位置：
 
 `[<External Code>]`
 
-## <a name="bkmk_switch"></a>切換至另一個堆疊框架（變更偵錯工具內容）
+## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a>切換至另一個堆疊框架（變更偵錯工具內容）
 
 1. 在 [**呼叫堆疊**] 視窗中，以滑鼠右鍵按一下您要查看其程式碼和資料的堆疊框架。
 
     或者，您可以按兩下 [**呼叫堆疊**] 視窗中的框架，切換至該框架。
 
-2. 選取 [切換至框架]。
+2. 選取 [切換至框架]****。
 
-     在您選取的堆疊框架旁邊會出現具有大尾的綠色箭號。 執行指標會留在原來的框架中，並仍以黃色箭頭標示。 如果您從 [偵錯] 功能表中選取 [逐步執行] 或 [繼續]，則會從原本框架而非選取的框架繼續執行。
+     在您選取的堆疊框架旁邊會出現具有大尾的綠色箭號。 執行指標會留在原來的框架中，並仍以黃色箭頭標示。 如果您從 [偵錯]**** 功能表中選取 [逐步執行]**** 或 [繼續]****，則會從原本框架而非選取的框架繼續執行。
 
 ## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>在呼叫堆疊上，查看函式的原始程式碼
 
-- 在 [呼叫堆疊] 視窗，以滑鼠右鍵按一下您要查看原始程式碼的函式，然後選取 [移至原始程式碼]。
+- 在 [呼叫堆疊]**** 視窗，以滑鼠右鍵按一下您要查看原始程式碼的函式，然後選取 [移至原始程式碼]****。
 
 ## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>從 [呼叫堆疊] 視窗執行至特定函式
 
@@ -90,31 +90,31 @@ ms.locfileid: "72535986"
 
 ## <a name="display-calls-to-or-from-another-thread"></a>顯示對另一個執行緒的呼叫
 
-- 以滑鼠右鍵按一下 [呼叫堆疊] 視窗，然後選取 [包含至/從其他執行緒的呼叫]。
+- 以滑鼠右鍵按一下 [呼叫堆疊]**** 視窗，然後選取 [包含至/從其他執行緒的呼叫]****。
 
 ## <a name="visually-trace-the-call-stack"></a>以視覺化方式追蹤呼叫堆疊
 
 在 Visual Studio Enterprise （僅限）中，您可以在進行偵錯工具時，查看呼叫堆疊的 code map。
 
-- 在 [呼叫堆疊] 視窗中，開啟捷徑功能表。 選擇**Code Map 上的 [顯示呼叫堆疊**] （**Ctrl**  + **Shift**  +  **`** ）。
+- 在 [呼叫堆疊]**** 視窗中，開啟捷徑功能表。 選擇 [**在 Code Map 上顯示呼叫堆疊**] （**Ctrl**  +  **Shift**  +  **`** ）。
 
     如需詳細資訊，請參閱在[偵錯工具時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。
 
 ![在 Code Map 上顯示呼叫堆疊](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>在呼叫堆疊上查看函式的反組解碼程式C#代碼C++（、、 F#Visual Basic、）
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>在呼叫堆疊上查看函式的反組解碼程式碼（c #、c + +、Visual Basic、F #）
 
-- 在 [呼叫堆疊] 視窗中，以滑鼠右鍵按一下您要查看反組譯程式碼的函式，然後選取 [移至反組譯碼]。
+- 在 [呼叫堆疊]**** 視窗中，以滑鼠右鍵按一下您要查看反組譯程式碼的函式，然後選取 [移至反組譯碼]****。
 
 ## <a name="change-the-optional-information-displayed"></a>變更所顯示的選擇性資訊
 
-- 以滑鼠右鍵按一下 **呼叫堆疊** 視窗，並設定或清除 **顯示 \<** _您要 > 的資訊_。
+- 以滑鼠右鍵按一下 [**呼叫堆疊**] 視窗，並設定或清除 [**顯示 \<**_the information that you want_**> **]。
 
-## <a name="bkmk_symbols"></a>載入模組的符號（C#、 C++、Visual Basic、） F#
+## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a>載入模組的符號（c #、c + +、Visual Basic、F #）
 
-在 [呼叫堆疊] 視窗中，您可以載入目前尚未載入符號之程式碼的偵錯符號。 這些符號可以是從 Microsoft 公用符號伺服器下載的 .NET 或系統符號，或是您要進行偵錯工具之電腦上符號路徑中的符號。
+在 [呼叫堆疊]**** 視窗中，您可以載入目前尚未載入符號之程式碼的偵錯符號。 這些符號可以是從 Microsoft 公用符號伺服器下載的 .NET 或系統符號，或是您要進行偵錯工具之電腦上符號路徑中的符號。
 
-請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
+請參閱[指定符號（.pdb）和原始](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)檔。
 
 ### <a name="to-load-symbols"></a>若要載入符號
 
@@ -124,23 +124,23 @@ ms.locfileid: "72535986"
 
 ### <a name="to-set-the-symbol-path"></a>若要設定符號路徑
 
-1. 在 [呼叫堆疊] 視窗中，從捷徑功能表選擇 [符號設定]。
+1. 在 [呼叫堆疊]**** 視窗中，從捷徑功能表選擇 [符號設定]****。
 
-     [選項] 對話方塊隨即開啟，並顯示 [符號] 頁面。
+     [選項]**** 對話方塊隨即開啟，並顯示 [符號]**** 頁面。
 
 2. 選取 [**符號設定**]。
 
-3. 在 [選項] 對話方塊中，按一下資料夾圖示。
+3. 在 [選項]**** 對話方塊中，按一下資料夾圖示。
 
-     游標隨即出現在 [符號檔 (.pdb) 位置] 方塊中。
+     游標隨即出現在 [符號檔 (.pdb) 位置]**** 方塊中。
 
 4. 在您要進行偵錯工具的電腦上，輸入符號位置的目錄路徑名稱。 針對本機和遠端偵錯程式，這是您本機電腦上的路徑。
 
 5. 選取 **[確定]** 以關閉 [**選項**] 對話方塊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [呼叫堆疊視窗內的混合程式碼和遺失的資訊](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
-- [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)
-- [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [[呼叫堆疊] 視窗中的混合程式碼和遺失的資訊](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
+- [在偵錯工具中查看資料](../debugger/viewing-data-in-the-debugger.md)
+- [指定符號（.pdb）和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [使用中斷點](../debugger/using-breakpoints.md)

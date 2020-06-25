@@ -1,7 +1,7 @@
 ---
 title: 檢查例外狀況-Visual Studio |Microsoft Docs
 ms.date: 1/18/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dae1609486ec4f3462be89b0526467dd7414647
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 75d044ed5ddaf4b7eb7a66bc09c8b3de3502a50f
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76829786"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350494"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>使用例外狀況協助程式檢查例外狀況 
 
@@ -38,7 +38,7 @@ ms.locfileid: "76829786"
 您可以立即讀取例外狀況協助程式中的例外狀況類型和例外狀況訊息，以及例外狀況是否擲回或未處理。 您可以按一下 [ **View Details** ] 連結，檢查和查看例外狀況物件的屬性。
 
 ## <a name="analyze-null-references"></a>分析 null 參考
-從 Visual Studio 2017 開始，在 .Net 和 C/C++程式碼中，當您遇到 `NullReferenceException` 或 `AccessViolation`時，您會在例外狀況協助程式中看到 null 分析資訊。 分析會顯示為例外狀況訊息底下的文字。 在下面的圖例中，此資訊會顯示為 "**s** is null."。
+從 Visual Studio 2017 開始，在 .Net 和 C/c + + 程式碼中，當您點擊 `NullReferenceException` 或時 `AccessViolation` ，您會在例外狀況協助程式中看到 null 分析資訊。 分析會顯示為例外狀況訊息底下的文字。 在下面的圖例中，此資訊會顯示為 "**s** is null."。
 
 ![例外狀況協助程式 null 分析](media/debugger-exception-helper-default.png)
 
@@ -55,9 +55,9 @@ ms.locfileid: "76829786"
 ![內部例外狀況的例外狀況協助程式](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="inspect-rethrown-exceptions"></a>檢查重新擲回的例外狀況
-在已 `thrown` 例外狀況的情況下，例外狀況協助程式會顯示第一次擲回例外狀況時的呼叫堆疊。 如果擲回例外狀況多次，則只會顯示來自原始例外狀況的呼叫堆疊。
+在例外狀況的情況下，例外狀況協助程式會 `thrown` 顯示第一次擲回例外狀況時的呼叫堆疊。 如果擲回例外狀況多次，則只會顯示來自原始例外狀況的呼叫堆疊。
 
 ![發生重新擲回例外狀況的例外狀況協助程式](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>與 Live Share 共用 debug 會話
-在例外狀況協助程式中，您可以使用 [**啟動 Live Share 會話 ...** ] 連結來啟動[Live Share](https://docs.microsoft.com/visualstudio/liveshare/)會話。加入 Live Share 會話的任何人都可以看到例外狀況協助程式，以及任何其他的偵錯工具資訊。
+在例外狀況協助程式中，您可以使用 [**啟動 Live Share 會話 ...**] 連結來啟動[Live Share](https://docs.microsoft.com/visualstudio/liveshare/)會話。加入 Live Share 會話的任何人都可以看到例外狀況協助程式，以及任何其他的偵錯工具資訊。

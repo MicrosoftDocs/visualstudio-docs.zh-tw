@@ -1,7 +1,7 @@
 ---
-title: 如何：使用原生執行時間檢查 |Microsoft Docs
+title: 如何-使用原生執行時間檢查 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - c.runtime.errorchecks
 dev_langs:
@@ -37,15 +37,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 954cf8436a9f0653685b41920cad84698ae50abb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5fccf510719aa5e960c12fdc807d6375ee31d3d0
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732149"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348843"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>如何：使用原生執行階段檢查
-在 Visual Studio C++專案中，您可以使用原生[runtime_checks](/cpp/preprocessor/runtime-checks)來攔截常見的執行階段錯誤，例如：
+在 Visual Studio c + + 專案中，您可以使用原生[runtime_checks](/cpp/preprocessor/runtime-checks)來攔截常見的執行階段錯誤，例如：
 
 - 堆疊指標損壞
 
@@ -67,7 +67,7 @@ ms.locfileid: "72732149"
 
 - [自訂使用 C 語言執行階段程式庫的執行階段檢查](../debugger/native-run-time-checks-customization.md)
 
-- [不使用 C 語言執行階段程式庫進行執行階段檢查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
+- [不使用 C 執行時間程式庫的執行時間檢查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>在偵錯組建中啟用原生的執行階段檢查
 
@@ -77,7 +77,7 @@ ms.locfileid: "72732149"
 
 - 使用 `runtime_checks` Pragma。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)

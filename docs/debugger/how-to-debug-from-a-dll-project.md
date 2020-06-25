@@ -1,7 +1,7 @@
 ---
-title: HOW TO：從 DLL 專案進行偵錯 |Microsoft Docs
+title: 如何從 DLL 專案進行 Debug |Microsoft Docs
 ms.date: 10/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -18,71 +18,71 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e4df2028a14281ee2343ad48b4b71812d29fca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 081e897b0ff76dd97d2c174bf8c6fbfa2334f8ff
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847963"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350117"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>HOW TO：從 DLL 專案在 Visual Studio 中偵錯 (C#， C++，Visual Basic 中， F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>如何：從 Visual Studio 中的 DLL 專案進行調試（c #、c + +、Visual Basic、F #）
 
-偵錯 DLL 專案的一個方法是在 DLL 專案屬性中指定呼叫端的應用程式。 然後您可以從開始偵錯 DLL 專案本身。 此方法才能運作，應用程式必須在相同的位置，與您設定的一個呼叫相同 DLL。 如果應用程式會尋找並載入 DLL 的不同版本，該版本將不會包含您的中斷點。 偵錯 Dll 的其他方法，請參閱[偵錯 DLL 專案](../debugger/debugging-dll-projects.md)。
+偵錯工具 DLL 專案的其中一種方式是在 DLL 專案屬性中指定呼叫的應用程式。 然後，您就可以從 DLL 專案本身開始進行調試。 若要讓此方法正常執行，應用程式必須在與您所設定的相同位置中呼叫相同的 DLL。 如果應用程式找到並載入不同版本的 DLL，該版本將不會包含您的中斷點。 如需偵錯工具 Dll 的其他方法，請參閱[偵錯工具 dll 專案](../debugger/debugging-dll-projects.md)。
 
-如果您受管理的應用程式呼叫原生 DLL，或您的原生應用程式呼叫的 managed 的 DLL，您可以偵錯 DLL 和呼叫端的應用程式。 如需詳細資訊，請參閱[如何：在混合模式中進行偵錯](../debugger/how-to-debug-in-mixed-mode.md)。
+如果您的受控應用程式呼叫原生 DLL，或您的原生應用程式呼叫受控 DLL，您可以同時對 DLL 和呼叫的應用程式進行 debug。 如需詳細資訊，請參閱[如何：在混合模式中進行調試](../debugger/how-to-debug-in-mixed-mode.md)程式。
 
-原生和 managed DLL 專案會有不同的設定，來指定呼叫的應用程式。
+原生和 managed DLL 專案具有不同的設定，可指定呼叫的應用程式。
 
-## <a name="specify-a-calling-app-in-a-native-dll-project"></a>在原生 DLL 專案中指定呼叫端的應用程式
+## <a name="specify-a-calling-app-in-a-native-dll-project"></a>在原生 DLL 專案中指定呼叫應用程式
 
-1. 選取C++中的 DLL 專案**方案總管**。 選取 **屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下並選擇 **屬性**。
+1. 在**方案總管**中選取 c + + DLL 專案。 選取 [**屬性**] 圖示，按**Alt** + **enter**鍵，或按一下滑鼠右鍵並選擇 [**屬性**]。
 
-1. 在  **\<專案 > 屬性頁**對話方塊方塊中，請確定**組態**在視窗頂端的欄位設定為**偵錯**。
+1. 在 [ ** \<Project> 屬性頁**] 對話方塊中，請確定視窗頂端的 [設定 **] 欄位已**設為 [ **Debug**]。
 
-1. 選取 **組態屬性** > **偵錯**。
+1. 選取 [設定] [**屬性**] [  >  **調試**]。
 
-1. 在 **偵錯工具啟動**清單中，選擇**本機 Windows 偵錯工具**或是**遠端 Windows 偵錯工具**。
+1. 在 [**要啟動的偵錯工具**] 清單中，選擇 [**本機 windows 偵錯工具**] 或 [**遠端 windows 偵錯工具**]。
 
-1. 在 **命令**或**遠端命令**方塊中，新增的完整的路徑和檔名呼叫端的應用程式，例如 *.exe*檔案。
+1. 在 [**命令**] 或 [**遠端命令**] 方塊中，新增呼叫應用程式的完整路徑和檔案名，例如 *.exe*檔案。
 
-   ![偵錯屬性 視窗](../debugger/media/dbg-debugging-properties-dll.png "偵錯屬性 視窗")
+   ![Debug 屬性視窗](../debugger/media/dbg-debugging-properties-dll.png "Debug 屬性視窗")
 
-1. 在 [命令引數] 方塊中，新增必要的程式引數。
+1. 在 [命令引數]**** 方塊中，新增必要的程式引數。
 
 1. 選取 [確定]。
 
-## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>指定呼叫端的應用程式中的 managed DLL 專案
+## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>在 managed DLL 專案中指定呼叫應用程式
 
-1. 中，選取 C# 或 Visual Basic DLL 專案**方案總管 中**。 選取 **屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下並選擇 **屬性**。
+1. 選取**方案總管**中的 c # 或 Visual Basic DLL 專案。 選取 [**屬性**] 圖示，按**Alt** + **enter**鍵，或按一下滑鼠右鍵並選擇 [**屬性**]。
 
-1. 請確定視窗頂端的 [組態] 欄位已設定為 [偵錯]。
+1. 請確定視窗頂端的 [組態]**** 欄位已設定為 [偵錯]****。
 
-1. 底下**啟動動作**:
+1. 在 [**起始動作**] 底下：
 
-   - 適用於.NET Framework Dll，請選取**啟動外部程式**，並新增的完整的路徑和呼叫端的應用程式的名稱。
+   - 針對 .NET Framework Dll，請選取 [**啟動外部程式**]，然後新增呼叫應用程式的完整路徑和名稱。
 
-   - 或者，選取**瀏覽器起始 URL**並填入本機的 ASP.NET 應用程式的 URL。
+   - 或者，選取 [**以 URL 啟動瀏覽器**] 並填入本機 ASP.NET 應用程式的 url。
 
-   - 適用於.NET Core 的 Dll，**偵錯**屬性頁面會不同。 選取 **可執行檔**從**啟動**下拉式清單中，然後新增 呼叫端的應用程式中的名稱與完整的路徑**可執行檔**欄位。
+   - 針對 .NET Core Dll，[**調試**程式屬性] 頁面是不同的。 從 [**啟動**] 下拉式清單中選取 [**可執行檔**]，然後在 [**可執行檔**] 欄位中新增呼叫應用程式的完整路徑和名稱。
 
-1. 新增任何必要的命令列引數中**命令列引數**或是**應用程式引數**欄位。
+1. 在 [**命令列引數**] 或 [**應用程式引數**] 欄位中新增任何必要的命令列引數。
 
-   ![C# 偵錯屬性 視窗](../debugger/media/dbg-debugging-properties-dll-csharp.png "C# 偵錯屬性 視窗")
+   ![C # 調試屬性視窗](../debugger/media/dbg-debugging-properties-dll-csharp.png "C # 調試屬性視窗")
 
-1. 使用**檔案** > **儲存選取項目**或是**Ctrl**+**S**以儲存變更。
+1. 使用 **[** 檔案] [  >  **儲存選取的專案**] 或**Ctrl** + **S**來儲存變更。
 
-## <a name="debug-from-the-dll-project"></a>從 DLL 專案進行偵錯
+## <a name="debug-from-the-dll-project"></a>從 DLL 專案進行調試
 
-1. DLL 專案中設定中斷點。
+1. 在 DLL 專案中設定中斷點。
 
-1. DLL 專案上按一下滑鼠右鍵，然後選擇 **設定為啟始專案**。
+1. 以滑鼠右鍵按一下 DLL 專案，然後選擇 [**設定為啟始專案**]。
 
-1. 請確定**解決方案組態**欄位設定為**偵錯**。 按下**F5**，按一下綠色**開始**箭號或選取**偵錯** > **開始偵錯**。
+1. 請確定 [**方案**設定] 欄位已設為 [ **Debug**]。 按下**F5**、按一下綠色**開始**箭號，或選取 [**調試**  >  **開始調試**]。
 
-如果偵錯時，不會達到您的中斷點，請確定您的 DLL，輸出 (根據預設， *\<專案 > \Debug*資料夾) 是呼叫的應用程式會呼叫的位置。
+如果偵錯工具未達到您的中斷點，請確定您的 DLL 輸出（根據預設， * \<project> \Debug*資料夾）是呼叫應用程式呼叫的位置。
 
 ## <a name="see-also"></a>另請參閱
-- [Debugging DLL projects](../debugger/debugging-dll-projects.md) (對 DLL 專案進行偵錯)
-- [C# 偵錯設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Visual Basic 偵錯設定的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [C++ 偵錯設定的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [調試 DLL 專案](../debugger/debugging-dll-projects.md)
+- [C # 偵錯工具的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Visual Basic 偵錯工具的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [C + + 偵錯工具的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)

@@ -1,7 +1,7 @@
 ---
-title: HOW TO：顯示視窗屬性 |Microsoft Docs
+title: 如何顯示視窗屬性 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - window properties
 ms.assetid: 4c2f52de-bd91-42cf-9028-67aa75f8bd26
@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c1be02b5adb486cf101dc9b021ea70bbd72674a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d90ecf7745c609bac6267eaa9abd75b5bfe755c7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906748"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349766"
 ---
-# <a name="how-to-display-window-properties"></a>HOW TO：顯示視窗屬性
-若要深入了解中所列的視窗[Windows 檢視](../debugger/windows-view.md)，使用[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)。
+# <a name="how-to-display-window-properties"></a>如何：顯示視窗屬性
+若要進一步瞭解[Windows View](../debugger/windows-view.md)中所列的視窗，請使用 [[視窗屬性] 對話方塊](../debugger/window-properties-dialog-box.md)。
 
-### <a name="to-open-the-window-properties-dialog-box"></a>若要開啟 [視窗屬性] 對話方塊
+### <a name="to-open-the-window-properties-dialog-box"></a>若要開啟視窗屬性對話方塊
 
-1. 選取的項目，然後選擇**屬性**從**檢視**功能表。
+1. 選取專案，然後從 [ **View** ] 功能表中選擇 [**屬性**]。
 
-   無法強制回應屬性對話方塊。 當您按一下 [檢視] 視窗中的項目對項目，對話方塊會自動重新整理每個選取的項目上的資訊。
+   [屬性] 對話方塊不是強制回應。 當您在 [視圖] 視窗中按一下 [從專案到專案] 時，對話方塊會自動重新整理，並顯示每個所選項目的資訊。

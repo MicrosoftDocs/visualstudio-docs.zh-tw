@@ -1,8 +1,8 @@
 ---
-title: 回到呼叫 MFC，如果暫止的函式 |Microsoft Docs
+title: 如果暫停，請回到呼叫 MFC 的函式 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.mfc
 dev_langs:
@@ -24,27 +24,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f846b636d2790839de6d05d048fc7e24d0bc6253
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef96bab28b1a17d4f20728a393511720fd10c624
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906688"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349467"
 ---
-# <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>HOW TO：於暫止時回到呼叫 MFC 的函式
+# <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>如何：如果暫止，回到呼叫 MFC 的函式
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
+> 您看到的對話方塊與功能表命令，可能會因您所使用的設定或版本，而與說明中所述不同。 若要變更您的設定，請在 [工具]**** 功能表上選擇 [匯入和匯出設定]****。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
-如果您使用 [偵錯] 功能表上的 [中斷] 命令來暫止程式並於 MFC 中結束，而且您確定問題位於程式碼時，可以使用 [呼叫堆疊] 視窗巡覽回該函式。 如需詳細資訊，請參閱[如何：使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。
+如果您使用 [偵錯]**** 功能表上的 [中斷]**** 命令來暫止程式並於 MFC 中結束，而且您確定問題位於程式碼時，可以使用 [呼叫堆疊] 視窗巡覽回該函式。 如需詳細資訊，請參閱[如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)。
 
-有時候，您的程式碼可能會在訊息幫浦內中斷。 如果發生這種情形，呼叫堆疊上不會有任何使用者程式碼。 若要避免發生此問題，您可以改用中斷點 (可能含條件與叫用次數) 來取代 [中斷] 命令。 如需詳細資訊，請參閱 [Breakpoints and Tracepoints](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)。
+有時候，您的程式碼可能會在訊息幫浦內中斷。 如果發生這種情形，呼叫堆疊上不會有任何使用者程式碼。 若要避免發生此問題，您可以改用中斷點 (可能含條件與叫用次數) 來取代 [中斷]**** 命令。 如需詳細資訊，請參閱 [Breakpoints and Tracepoints](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)。
 
-## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>瀏覽至呼叫 MFC 的函式
+## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>流覽至呼叫 MFC 的函式
 
-- 使用 [呼叫堆疊] 視窗。
+- 使用 [**呼叫堆疊**] 視窗。
 
 ## <a name="see-also"></a>另請參閱
 
-- [偵錯機器碼常見問題集](../debugger/debugging-native-code-faqs.md)
+- [機器碼偵錯 FAQ](../debugger/debugging-native-code-faqs.md)
 - [偵錯機器碼](../debugger/debugging-native-code.md)

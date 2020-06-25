@@ -2,7 +2,7 @@
 title: Debug 多執行緒應用程式
 description: 使用 [執行緒] 視窗和 [調試位置] 工具列來進行 debug Visual Studio
 ms.date: 02/14/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7b7850d8d7582110152d248683f89981933215
-ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.openlocfilehash: 33375a8970638765d02a94e6e3e9cd8afc1a0fe7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416369"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348648"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>逐步解說：使用執行緒視窗（C#，Visual Basic， C++）來對多執行緒應用程式進行 Debug
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>逐步解說：使用執行緒視窗（c #、Visual Basic、c + +）進行多執行緒應用程式的偵錯工具
 
 數個 Visual Studio 的使用者介面專案可協助您進行多執行緒應用程式的偵錯工具。 本文介紹 [程式碼編輯器] 視窗、[偵錯工具**位置**] 工具列和 [**執行緒**] 視窗中的多執行緒偵錯工具功能。 如需其他工具以進行多執行緒應用程式的詳細資訊，請參閱[開始對多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)進行偵測。
 
@@ -38,38 +38,38 @@ ms.locfileid: "77416369"
 
    ::: moniker range=">=vs-2019"
 
-   如果 [開始] 視窗未開啟，請**選擇 [** 檔案] > [**開始視窗]** 。
+   如果 [開始] 視窗未開啟，請**選擇 [** 檔案 > **] [啟動視窗]**。
 
-   在開始視窗中，選擇 [建立新專案]。
+   在 [開始] 視窗中，選擇 [**建立新專案**]。
 
-   在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來， **C#** 從**C++** [語言] 清單中選擇 [或]，然後從 [平臺] 清單中選擇 [ **Windows** ]。 
+   在 [建立新專案]**** 視窗的搜尋方塊中輸入或鍵入 ASP.NET**。 接下來，從 [語言] 清單中選擇**c #** 或**c + +** ，然後從 [平臺] 清單中選擇 [ **Windows** ]。 
 
-   套用語言和平臺篩選器之後，請選擇 [**主控台應用程式（.net Core）** ]， C++或針對 [**主控台應用程式**範本]，然後選擇 [**下一步]** 。
+   套用語言和平臺篩選器之後，請選擇 [**主控台應用程式（.Net Core）** ]，或針對 [c + +]**主控台應用程式**範本，然後選擇 [**下一步]**。
 
    > [!NOTE]
-   > 如果您看不到正確的範本，請移至 **工具** > **取得工具和功能 ...** ，這會開啟 Visual Studio 安裝程式。 選擇 [NET 桌面開發] 或 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
+   > 如果您看不到正確的範本，請移至 [**工具**] [  >  **取得工具和功能 ...**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發**] 或 [**使用 c + + 進行桌面開發**] 工作負載，然後選擇 [**修改**]。
 
-   在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中鍵入或輸入*MyThreadWalkthroughApp* 。 接著，選擇 [建立]。
+   在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中鍵入或輸入*MyThreadWalkthroughApp* 。 然後選擇 [**建立**]。
 
    ::: moniker-end
    ::: moniker range="vs-2017"
-   從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [**新增專案**] 對話方塊的左窗格中，選擇下列專案：
+   從頂端功能表列中 **，選擇 [** 檔案] [新增] [  >  **New**  >  **專案**]。 在 [**新增專案**] 對話方塊的左窗格中，選擇下列專案：
 
-   - 針對C#應用程式，請在 [**視覺效果C#** ] 底下選擇 [ **Windows 桌面**]，然後在中間窗格中選擇 [**主控台應用程式（.NET Framework）** ]。
-   - 針對C++應用程式，請在 [**視覺效果C++** ] 底下選擇 [ **windows 桌面**]，然後選擇 [ **windows 主控台應用程式**]。
+   - 針對 c # 應用程式，請在 [ **Visual c #**] 下選擇 [ **Windows 桌面**]，然後在中間窗格中選擇 [**主控台應用程式（.NET Framework）**]。
+   - 若是 c + + 應用程式，請在 [ **Visual C++**] 底下，選擇 [ **windows 桌面**]，然後選擇 [ **windows 主控台應用程式**]。
 
-   如果您看不到**主控台應用程式（.Net Core）** ，或C++**主控台應用程式**專案範本，請移至 **工具** > **取得工具和功能 ...** ，這會開啟 Visual Studio 安裝程式。 選擇 [NET 桌面開發] 或 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
+   如果您看不到**主控台應用程式（.net Core）** ，或在 c + + 的**主控台應用程式**專案範本中，請移至 [**工具**] [  >  **取得工具和功能 ...**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發**] 或 [**使用 c + + 進行桌面開發**] 工作負載，然後選擇 [**修改**]。
 
-   然後，輸入類似*MyThreadWalkthroughApp*的名稱，然後按一下 **[確定]** 。
+   然後，輸入類似*MyThreadWalkthroughApp*的名稱，然後按一下 **[確定]**。
 
    選取 [確定]。
    ::: moniker-end
 
    新的主控台專案隨即出現。 建立專案之後，就會出現原始程式檔。 根據您所選擇的語言，來源檔案可能稱為*Program.cs*、 *MyThreadWalkthroughApp*或*Module1*。
 
-1. 將原始程式檔中的程式碼取代C#為C++或範例程式碼，從[開始進行多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)的驗證。
+1. 將原始程式檔中的程式碼，取代為[開始進行多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)的 c # 或 c + + 範例程式碼。
 
-1. 選取 [檔案] > [全部儲存]。
+1. 選取 **[** 檔案] [  >  **全部儲存**]。
 
 ## <a name="start-debugging"></a>開始偵錯
 
@@ -85,25 +85,25 @@ ms.locfileid: "77416369"
    Console.WriteLine();
    ```
 
-1. 在 `Console.WriteLine();` 行上設定中斷點，方法是按一下左側裝訂邊，或選取行，然後按**F9**鍵。
+1. `Console.WriteLine();`按一下左側裝訂邊，或選取行並按**F9**鍵，在行上設定中斷點。
 
    中斷點會在程式程式碼旁邊的左邊裝訂邊中顯示為紅色圓圈。
 
-1. 選取 [ **Debug** ] > **開始進行調試**，或按**F5**。
+1. 選取 [ **Debug**] [  >  **開始調試**]，或按**F5**。
 
    應用程式會以 debug 模式啟動，並在中斷點暫停。
 
-1. 在中斷模式中，選取 [**調試**程式] > [ **Windows** > **執行緒**] 來開啟 [**執行緒**] 視窗。 您必須在 [調試] 會話中，才能開啟或查看**執行緒**和其他調試時間視窗。
+1. 在中斷模式中，選取 [**調試**程式] [ **Threads**  >  **Windows**  >  **執行緒**] 來開啟 [執行緒] 視窗。 您必須在 [調試] 會話中，才能開啟或查看**執行緒**和其他調試時間視窗。
 
 ## <a name="examine-thread-markers"></a>檢查執行緒標記
 
-1. 在原始程式碼中，找出 `Console.WriteLine();` 行。
+1. 在原始程式碼中，找出程式碼 `Console.WriteLine();` 行。
 
    1. 在 [**執行緒**] 視窗中按一下滑鼠右鍵，然後從**功能表選取 [在來源**![中顯示](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")執行緒]。
 
-   源程式碼旁邊的裝訂邊現在會顯示*執行緒標記*圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "執行緒標記")。 執行緒標記表示執行緒會停在這個位置上。 如果位置上有多個已停止的執行緒，則會顯示![多個執行緒](../debugger/media/dbg-multithreaded-show-threads.png "多個執行緒")圖示。
+   源程式碼旁邊的裝訂邊現在會顯示*執行緒標記*圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "執行緒標記")。 執行緒標記表示執行緒會停在這個位置上。 如果位置上有多個已停止的執行緒，則會顯示![多個執行緒](../debugger/media/dbg-multithreaded-show-threads.png "多執行緒")圖示。
 
-1. 將指標移到執行緒標記上。 [資料提示] 隨即出現，其中顯示已停止的執行緒或執行緒的名稱和執行緒 ID 編號。 執行緒名稱可能 `<No Name>`。
+1. 將指標移到執行緒標記上。 [資料提示] 隨即出現，其中顯示已停止的執行緒或執行緒的名稱和執行緒 ID 編號。 執行緒名稱可能是 `<No Name>` 。
 
    >[!TIP]
    >若要協助識別無指定的執行緒，您可以在 [**執行緒**] 視窗中將它們重新命名。 以滑鼠右鍵按一下執行緒，然後選取 [**重新命名**]。
@@ -118,7 +118,7 @@ ms.locfileid: "77416369"
 
 ### <a name="flag-and-unflag-threads-in-source-code"></a>在原始程式碼中為執行緒加上旗標和解除標記
 
-1. 選取 [ **View** > **工具列**] > [ **debug Location**] 來開啟 [**偵錯工具位置**] 工具列。 您也可以在工具列區域中按一下滑鼠右鍵，然後選取 [**調試位置**]。
+1. 選取 [視圖] [工具列] [**流覽**位置] 來開啟 [**偵錯工具位置**] 工具列  >  **Toolbars**  >  ** **。 您也可以在工具列區域中按一下滑鼠右鍵，然後選取 [**調試位置**]。
 
 1. [**偵錯工具位置**] 工具列有三個欄位： [**進程**]、[**執行緒**] 和 [**堆疊框架**]。 下拉 [**執行緒**] 清單，並記下有多少執行緒。 在 [**執行緒**] 清單中，目前執行的執行緒會以 **>** 符號標示。
 
@@ -158,7 +158,7 @@ ms.locfileid: "77416369"
 [**位置**] 欄會顯示每個執行緒在原始程式碼中出現的位置。 選取 [**位置**] 專案旁邊的展開箭號，或將滑鼠停留在該專案上方，以顯示該執行緒的部分呼叫堆疊。
 
 >[!TIP]
->如需執行緒之呼叫堆疊的圖形化視圖，請使用 [[平行堆疊](../debugger/using-the-parallel-stacks-window.md)] 視窗。 若要開啟視窗，在進行調試時，請選取 [ **Debug**> **Windows** > **平行堆疊**]。
+>如需執行緒之呼叫堆疊的圖形化視圖，請使用 [[平行堆疊](../debugger/using-the-parallel-stacks-window.md)] 視窗。 若要開啟視窗，請在進行調試時，選取 [**調試** >  **Windows**  >  **平行堆疊**]。
 
 除了**旗**標、取消**標記**和取消**標記所有線程**，**執行緒**視窗專案的滑鼠右鍵操作功能表具有：
 
@@ -168,7 +168,7 @@ ms.locfileid: "77416369"
 - [**重新命名**]，可讓您變更執行緒名稱。
 - [凍結和解除](#bkmk_freeze)凍結命令。
 
-## <a name="bkmk_freeze"></a>凍結和解除凍結執行緒執行
+## <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a>凍結和解除凍結執行緒執行
 
 您可以凍結並解除凍結，或暫停和繼續執行緒，以控制執行緒執行工作的順序。 凍結和解除凍結執行緒可協助您解決並行問題，例如鎖死和競爭條件。
 
@@ -203,10 +203,10 @@ ms.locfileid: "77416369"
 
 1. 在原始程式碼編輯器中，以滑鼠右鍵按一下執行緒標記，指向 [**切換至執行緒**]，然後從清單中選取另一個執行緒。 請注意，目前的執行緒在三個位置中都有變更。
 
-使用原始程式碼中的執行緒標記時，您只能切換到在該位置停止的執行緒。 使用 [執行緒] 視窗和 [偵錯位置] 工具列時，您可以切換至任何執行緒。
+使用原始程式碼中的執行緒標記時，您只能切換到在該位置停止的執行緒。 使用 [執行緒]**** 視窗和 [偵錯位置]**** 工具列時，您可以切換至任何執行緒。
 
 您現在已瞭解多執行緒應用程式的調試基本概念。 您可以使用 [**執行緒**] 視窗、[**偵錯工具位置**] 工具列中的 [**執行緒**] 清單，或原始程式碼編輯器中的執行緒標記，來觀察、旗標和解除標記，以及凍結和解除凍結執行緒。
 
 ## <a name="see-also"></a>另請參閱
-- [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Debug 多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)

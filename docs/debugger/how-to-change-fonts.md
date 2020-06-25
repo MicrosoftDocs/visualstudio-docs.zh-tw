@@ -1,7 +1,7 @@
 ---
-title: 如何：變更字型 |Microsoft Docs
+title: 如何變更字型 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - fonts, SpyHelp
 ms.assetid: 3ee22eb9-978f-4efd-a5e0-f071745496ce
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf933dc7277f0f4c1533ca071a391b78413b029
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5597d1f7c14e1c37c55751c85e0dc53092c3af1c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733931"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350260"
 ---
 # <a name="how-to-change-fonts"></a>如何：變更字型
 您可以變更 Spy + + 視窗的字型、字型樣式和字型大小。
@@ -30,7 +30,7 @@ ms.locfileid: "72733931"
 
    選取 [**另存字型] 做為預設值**，會使所有未來的 Spy + + 視窗使用此字型。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [使用 Spy++](../debugger/using-spy-increment.md)
 - [Spy++ 檢視](../debugger/spy-increment-views.md)
 - [Spy++ 參考](../debugger/spy-increment-reference.md)

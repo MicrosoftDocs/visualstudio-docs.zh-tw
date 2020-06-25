@@ -1,7 +1,7 @@
 ---
-title: 如何：旗標和解除標記執行緒 |Microsoft Docs
+title: 如何-旗標和解除標記執行緒 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a2ce8b6ec429b3f7f5cd782c3dac52602eff16
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7480f953e2fca57c296d6d1641059993bfa582c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733229"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349623"
 ---
-# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>如何：將執行緒加上旗標C#和解除標記C++（，Visual Basic，）
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>如何：將執行緒加上旗標和解除標記（c #、Visual Basic、c + +）
 
 您可以使用 [**執行緒**]、[**平行堆疊**（執行緒視圖）]、[**平行監看式]** 和 [ **GPU 執行緒**] 視窗中的圖示來標記您想要特別注意的執行緒。 這個圖示可以協助您和其他人區分已加上旗標的執行緒和其他執行緒。
 
@@ -31,12 +31,12 @@ ms.locfileid: "72733229"
 ### <a name="to-flag-or-unflag-a-thread"></a>若要將執行緒加上旗標或取消旗標
 
 - 在 [**執行緒**] 或 [**平行監看**式] 視窗中，尋找您感興趣的執行緒，然後按一下旗標圖示來選取或清除旗標。
-- 在 [**平行堆疊**] 視窗中，以滑鼠右鍵按一下執行緒或執行緒群組，然後選取 [**旗標/\<thread >** ] 或 [取消**標記/\<thread >** ]。
+- 在 [**平行堆疊**] 視窗中，以滑鼠右鍵按一下執行緒或執行緒群組，然後選取 [**旗標 \<thread> /** ] 或 [取消**標記/ \<thread> **]。
 
 ### <a name="to-unflag-all-threads"></a>若要取消所有執行緒的旗標
 
-- 在 [執行緒] 視窗中，以滑鼠右鍵按一下任一執行緒，然後按一下 [將所有執行緒取消旗標]。
-- 在 **平行監看**式 視窗中，選取所有加上旗標的執行緒，然後按一下滑鼠右鍵並選取 取消**標記**
+- 在 [執行緒]**** 視窗中，以滑鼠右鍵按一下任一執行緒，然後按一下 [將所有執行緒取消旗標]****。
+- 在 [**平行監看**式] 視窗中，選取所有加上旗標的執行緒，然後按一下滑鼠右鍵並選取 [取消**標記**
 
 ### <a name="to-display-only-flagged-threads"></a>若只要顯示加上旗標的執行緒
 
@@ -44,23 +44,23 @@ ms.locfileid: "72733229"
 
 ### <a name="to-flag-just-my-code"></a>將 Just My Code 加上旗標
 
-1. 在 [執行緒] 視窗頂端的工具列上，按一下旗標圖示。
+1. 在 [執行緒]**** 視窗頂端的工具列上，按一下旗標圖示。
 
-2. 在下拉式清單中，按一下 [將 Just My Code 加上旗標]。
+2. 在下拉式清單中，按一下 [將 Just My Code 加上旗標]****。
 
 ### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>將與選取的模組關聯的執行緒加上旗標
 
-1. 在 [執行緒] 視窗的工具列上，按一下旗標圖示。
+1. 在 [執行緒]**** 視窗的工具列上，按一下旗標圖示。
 
-2. 在下拉式清單中，按一下 [將自訂模組選取範圍加上旗標]。
+2. 在下拉式清單中，按一下 [將自訂模組選取範圍加上旗標]****。
 
-3. 在 [選取模組] 對話方塊中，選取您要的模組。
+3. 在 [選取模組]**** 對話方塊中，選取您要的模組。
 
-4. (選擇性) 在 [搜尋] 方塊中，鍵入用於搜尋特定模組的字串。
+4. (選擇性) 在 [搜尋]**** 方塊中，鍵入用於搜尋特定模組的字串。
 
 5. 按一下 [確定]。
 
-## <a name="see-also"></a>請參閱
-- [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+## <a name="see-also"></a>另請參閱
+- [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [開始對多執行緒應用程式進行偵錯](../debugger/get-started-debugging-multithreaded-apps.md)
 - [逐步解說：使用執行緒視窗來調試多執行緒應用程式](../debugger/how-to-use-the-threads-window.md)

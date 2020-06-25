@@ -1,11 +1,13 @@
 - name: 分析文件
   href: index.yml
 - name: 總覽
-  href: profiling-overview.md
-- name: 快速入門
   items:
     - name: 分析簡介
       href: profiling-feature-tour.md
+    - name: 使用或不使用偵錯工具來執行分析工具
+      href: running-profiling-tools-with-or-without-the-debugger.md
+- name: 快速入門
+  items:
     - name: 分析 CPU 使用量 (受控)
       href: quickstart-cpu-usage-managed.md
     - name: 分析 CPU 使用量 (原生)
@@ -20,12 +22,22 @@
       href: memory-usage.md
 - name: 概念
   items:
-    - name: 使用或不使用偵錯工具來執行分析工具
-      href: running-profiling-tools-with-or-without-the-debugger.md
+    - name: 了解效能收集方法
+      href: understanding-performance-collection-methods-perf-profiler.md
+    - name: 最佳化分析工具設定
+      href: optimize-profiler-settings.md
+    - name: 同時使用多個分析工具
+      href: use-multiple-profiler-tools-simultaneously.md
 - name: 作法指南
   items:
-    - name: 使用效能提示
+    - name: 效能提示
       href: perftips.md
+    - name: .NET Async
+      href: analyze-async.md
+    - name: 資料庫
+      href: analyze-database.md
+    - name: 事件檢視器
+      href: events-viewer.md
     - name: CPU 使用量
       href: cpu-usage.md
     - name: 記憶體使用量

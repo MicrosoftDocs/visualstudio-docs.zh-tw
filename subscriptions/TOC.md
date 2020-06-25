@@ -74,6 +74,7 @@
 ### [進階管理員與系統管理員](admin-roles.md)
 ### [設定合約喜好設定](admin-prefs.md)
 ### [概觀](using-admin-portal.md)
+### [新增每月訂閱](add-monthly-subs.md)
 ### 指派訂用帳戶
 #### [新增單一使用者](assign-license.md)
 #### [新增多個使用者](assign-license-bulk.md)

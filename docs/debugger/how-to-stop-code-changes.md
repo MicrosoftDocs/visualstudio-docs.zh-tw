@@ -1,7 +1,7 @@
 ---
-title: 如何：停止程式碼變更 |Microsoft Docs
+title: 如何停止程式碼變更 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 545599aa68da79aa7be41f0a2517049146cebc89
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8c4419349e3d83cdc02670821b213678186d933d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732458"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348947"
 ---
 # <a name="how-to-stop-code-changes"></a>如何：停止程式碼變更
 當 [編輯後繼續] 正在套用程式碼變更時，您可以停止該作業。
@@ -32,12 +32,12 @@ ms.locfileid: "72732458"
 
 ### <a name="to-stop-applying-code-changes"></a>若要停止套用程式碼變更
 
-- 選擇 [偵錯] 功能表中的 [停止套用程式碼變更]。
+- 選擇 [偵錯]**** 功能表中的 [停止套用程式碼變更]****。
 
   只有套用程式碼變更時，才能看見這個功能表項目。
 
   如果您選擇此選項，就無法認可任何的程式碼變更。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [編輯後繼續](../debugger/edit-and-continue.md)
 - [選項對話方塊、偵錯、編輯後繼續](https://msdn.microsoft.com/library/bcew296c.aspx)
