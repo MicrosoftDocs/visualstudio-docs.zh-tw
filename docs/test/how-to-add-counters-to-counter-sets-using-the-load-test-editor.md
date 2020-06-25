@@ -1,7 +1,7 @@
 ---
 title: 將計數器新增至計數器集合以進行負載測試
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - counters, counter sets
 - counter sets
@@ -10,12 +10,12 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b83d9c3624a4a268bfeba8a02b224fb9813ad7d1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 754c88bd6dbe76736148718d2f1ad32888623c34
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594325"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288373"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器將計數器新增至計數器集合
 
@@ -57,7 +57,7 @@ ms.locfileid: "75594325"
 
      選取 [所有計數器]**** 選項按鈕，選取所有可用的計數器。
 
-7. 選擇 **"確定**"。
+7. 選擇 [確定]。
 
     > [!NOTE]
     > 另一個將計數器加入至計數器集合的方法是，選擇現有的計數器或計數器類別，選擇 [複製]，然後將它們貼至另一個計數器集合節點。 如果也複製了其他不需要的計數器，可以予以刪除。
@@ -65,4 +65,4 @@ ms.locfileid: "75594325"
 ## <a name="see-also"></a>另請參閱
 
 - [在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [配置負載測試回合設定](../test/configure-load-test-run-settings.md)
+- [設定負載測試回合設定](../test/configure-load-test-run-settings.md)

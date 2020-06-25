@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24b8416508ee5800ab581a1a58cedee1e5725cab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184441"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286293"
 ---
 # <a name="secure-clickonce-applications"></a>保護 ClickOnce 應用程式
 在 .NET Framework 中，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式受到程式碼存取安全性條件約束的限制，因此能夠協助限制程式碼對受保護之資源和作業的存取。 因此，很重要的是您必須了解程式碼存取安全性的含意，照著撰寫 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 您的應用程式可以使用完全信任或部分信任區域 (例如網際網路和內部網路區域) 以限制存取。
@@ -50,7 +50,7 @@ ms.locfileid: "84184441"
  如需代碼啟用安全性和 ClickOnce 的詳細資訊，請參閱[ClickOnce 應用程式的代碼啟用安全性](../deployment/code-access-security-for-clickonce-applications.md)。
 
 ## <a name="code-signing-certificates"></a>程式碼簽署憑證
- 若要使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署發行應用程式，您必須以公開/私密金鑰組簽署應用程式和部署資訊清單。 您可以在 [專案設計工具] **** 的 [簽署] **** 頁面上找到簽署資訊清單的工具。 如需詳細資訊，請參閱 [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md)。 此外，您可以透過發行精靈，在發佈程序期間使用金鑰檔簽署資訊清單。
+ 若要使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署發行應用程式，您必須以公開/私密金鑰組簽署應用程式和部署資訊清單。 您可以在 [專案設計工具] **** 的 [簽署] **** 頁面上找到簽署資訊清單的工具。 如需詳細資訊，請參閱 [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md)。
 
  簽署資訊清單之後，在安裝時，根據 Authenticode 簽章的發行者資訊會顯示在使用權限對話方塊中，讓使用者得知此應用程式是來自受信任的來源。
 

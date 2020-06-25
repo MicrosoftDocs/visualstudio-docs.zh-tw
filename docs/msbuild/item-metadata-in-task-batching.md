@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92613b96d5d85a959e3426df86168c7110b74fed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6152b0e64286c3cadedfcafb0ac530616c4012a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633651"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288984"
 ---
 # <a name="item-metadata-in-task-batching"></a>工作批次處理中的項目中繼資料
 
-MSBuild 能夠根據項中繼資料將項清單劃分為不同的類別或批次，並為每個批次處理運行一次任務。 要確切了解哪個批次要傳遞哪些項目，可能會相當混亂。 本主題涵蓋下列與批次處理相關的常見案例。
+MSBuild 能夠根據專案中繼資料，將專案清單分割成不同的類別或批次，並在每個批次中執行一次工作。 要確切了解哪個批次要傳遞哪些項目，可能會相當混亂。 本主題涵蓋下列與批次處理相關的常見案例。
 
 - 將項目清單分割成批次
 
@@ -32,13 +32,13 @@ MSBuild 能夠根據項中繼資料將項清單劃分為不同的類別或批次
 
 - 篩選項目清單
 
-有關使用 MSBuild 進行批次處理的詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。
+如需使用 MSBuild 批次處理的詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。
 
 ## <a name="divide-an-item-list-into-batches"></a>將項目清單分割成批次
 
 批次處理可讓您根據項目中繼資料，將項目清單分割成不同的批次，然後將每個批次個別傳遞給工作。 這適用於建置附屬組件。
 
-下列範例示範如何根據項目中繼資料，將項目清單分割成批次。 `ExampColl` 項目清單會根據 `Number` 項目中繼資料分割成三個批次。 屬性中`Text`的存在`%(ExampColl.Number)`通知 MSBuild 應執行該批次處理。 `ExampColl` 項目清單會根據 `Number` 中繼資料分割成三個批次，而系統會將每個批次個別傳遞給工作。
+下列範例示範如何根據項目中繼資料，將項目清單分割成批次。 `ExampColl` 項目清單會根據 `Number` 項目中繼資料分割成三個批次。 `%(ExampColl.Number)`屬性中的存在會 `Text` 通知 MSBuild 應該執行批次處理。 `ExampColl` 項目清單會根據 `Number` 中繼資料分割成三個批次，而系統會將每個批次個別傳遞給工作。
 
 ```xml
 <Project
@@ -83,12 +83,12 @@ MSBuild 能夠根據項中繼資料將項清單劃分為不同的類別或批次
 
 ## <a name="divide-several-item-lists-into-batches"></a>將數個項目清單分割成批次
 
-MSBuild 可以基於同一中繼資料將多個項清單劃分為多個批次。 這可讓您輕鬆將不同的項目清單分割成批次，以建置多個組件。 例如，可以將 *.cs*檔的項清單劃分為應用程式批次處理和程式集批次處理，以及資源檔的項清單分為應用程式批次處理和程式集批次處理。 接著，您可以使用批次處理將這些項目清單傳遞給一個工作，然後建置應用程式和組件。
+MSBuild 可以根據相同的中繼資料，將多個專案清單分割成一個批次。 這可讓您輕鬆將不同的項目清單分割成批次，以建置多個組件。 例如，您可以將 *.cs*檔案的專案清單分割成應用程式批次和元件批次，以及將資源檔的專案清單分割成應用程式批次和元件批次。 接著，您可以使用批次處理將這些項目清單傳遞給一個工作，然後建置應用程式和組件。
 
 > [!NOTE]
 > 如果要傳遞給工作的項目清單未包含任何具有所參考中繼資料的項目，系統就會將該項目清單中的每個項目都傳遞給每個批次。
 
-下列範例示範如何根據項目中繼資料，將多個項目清單分割成批次。 `ExampColl` 和 `ExampColl2` 項目清單會分別根據 `Number` 項目中繼資料分割成三個批次。 屬性中`Text`的存在`%(Number)`通知 MSBuild 應執行該批次處理。 `ExampColl` 和 `ExampColl2` 項目清單會根據 `Number` 中繼資料分割成三個批次，而系統會將每個批次個別傳遞給工作。
+下列範例顯示如何根據專案中繼資料，將多個專案清單分割成批次。 `ExampColl` 和 `ExampColl2` 項目清單會分別根據 `Number` 項目中繼資料分割成三個批次。 `%(Number)`屬性中的存在會 `Text` 通知 MSBuild 應該執行批次處理。 `ExampColl` 和 `ExampColl2` 項目清單會根據 `Number` 中繼資料分割成三個批次，而系統會將每個批次個別傳遞給工作。
 
 ```xml
 <Project
@@ -136,9 +136,9 @@ MSBuild 可以基於同一中繼資料將多個項清單劃分為多個批次。
 
 ## <a name="batch-one-item-at-a-time"></a>一次批次處理一個項目
 
-在於建立每個項目時指派給項目的已知項目中繼資料上，也可以執行批次處理。 這可確保集合中的每個項目都具有相同的中繼資料可用於批次處理。 每個項目的 `Identity` 中繼資料值都是唯一的，可用來將項目清單中的每個項目分割成個別的批次。 有關已知項中繼資料的完整清單，請參閱[已知項中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。
+在於建立每個項目時指派給項目的已知項目中繼資料上，也可以執行批次處理。 這可確保集合中的每個項目都具有相同的中繼資料可用於批次處理。 每個項目的 `Identity` 中繼資料值都是唯一的，可用來將項目清單中的每個項目分割成個別的批次。 如需已知專案中繼資料的完整清單，請參閱[已知的專案中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。
 
-下列範例示範如何以一次一個的方式，批次處理項目清單中的每個項目。 由於每個項目的 `Identity` 中繼資料值是唯一的，因此 `ExampColl` 項目清單會分割成六個批次，每個批次包含項目清單的一個項目。 屬性中`Text`的存在`%(Identity)`通知 MSBuild 應執行該批次處理。
+下列範例示範如何以一次一個的方式，批次處理項目清單中的每個項目。 由於每個項目的 `Identity` 中繼資料值是唯一的，因此 `ExampColl` 項目清單會分割成六個批次，每個批次包含項目清單的一個項目。 `%(Identity)`屬性中的存在會 `Text` 通知 MSBuild 應該執行批次處理。
 
 ```xml
 <Project
@@ -224,9 +224,9 @@ Items in ExampColl: Item2;Item5
 
 ## <a name="see-also"></a>另請參閱
 
-- [已知項中繼資料](../msbuild/msbuild-well-known-item-metadata.md)
+- [已知的專案中繼資料](../msbuild/msbuild-well-known-item-metadata.md)
 - [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)
 - [ItemMetadata 項目 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
-- [配料](../msbuild/msbuild-batching.md)
+- [批次處理](../msbuild/msbuild-batching.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

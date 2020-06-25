@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173508"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288971"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 項目 (MSBuild)
 
@@ -48,20 +48,20 @@ ms.locfileid: "84173508"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`Condition`|選擇性屬性。 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
-|`Label`|選擇性屬性。 識別 `ItemGroup`。|
+|`Label`|選擇性屬性。 識別 `ItemGroup`。 |
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|說明|
 |-------------|-----------------|
-|[項目](../msbuild/item-element-msbuild.md)|定義建置程序的輸入。 `ItemGroup` 中可能有零或多個 `Item` 項目。|
+|[Item](../msbuild/item-element-msbuild.md)|定義建置程序的輸入。 `ItemGroup` 中可能有零或多個 `Item` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 描述 |
+| 元素 | 說明 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 | [目標](../msbuild/target-element-msbuild.md) | 從 .NET Framework 3.5 開始，`ItemGroup` 項目可以出現在 `Target` 項目內部。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。 |
@@ -90,6 +90,8 @@ ms.locfileid: "84173508"
 在簡單的專案檔中，您通常會使用單一 `ItemGroup` 元素，但您也可以使用多個 `ItemGroup` 元素。 使用多個 `ItemGroup` 元素時，會將專案合併成單一 `ItemGroup` 。 例如，某些專案可能包含在匯入的檔案 `ItemGroup` 中定義的個別元素。
 
 ItemGroups 可以使用屬性來套用條件 `Condition` 。 在此情況下，只有在符合條件時，才會將專案加入至專案清單。 請參閱[MSBuild 條件](msbuild-conditions.md)
+
+`Label`屬性會在某些組建系統中用於控制組建行為的方式。 您只能在宣告中使用它，做為建立更容易瞭解的 MSBuild 腳本，或做為控制設定以影響組建動作的方式。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fdc6c6ccd58bcc83cc37ff3a9f7888af837ed6e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b99e743cf5bc9e3e634a8738e30d17c8e5517191
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595198"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286176"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 工作
 
@@ -33,11 +33,11 @@ ms.locfileid: "75595198"
 
  下表說明 `ResolveCOMReference` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`DelaySign`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則將公開金鑰放在組件中。 如為 `false`，則完整簽署組件。|
-|`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 環境變數組陣列，以等號分隔。 除了或有選擇地重寫常規環境塊之外，這些變數還傳遞給生成的*tlbimp.exe*和*aximp.exe。*|
-|`ExecuteAsTool`|選擇性的 `Boolean` 參數。<br /><br /> 如果`true`從相應的目標框架在 proc 外運行*tlbimp.exe*和*aximp.exe*以生成必要的包裝程式集。 此參數會啟用多目標。|
+|`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 環境變數組陣列，以等號分隔。 這些變數會傳遞至衍生的*tlbimp.exe*和*aximp.exe* ，以及在一般環境區塊以外或選擇性地覆寫。|
+|`ExecuteAsTool`|選擇性的 `Boolean` 參數。<br /><br /> 如果 `true` 為，則會從適當的目標 framework 跨進程執行*tlbimp.exe*和*aximp.exe* ，以產生必要的包裝函式元件。 此參數會啟用多目標。|
 |`IncludeVersionInInteropName`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則包裝函式名稱會包含 TypeLib 版本。 預設值為 `false`。|
 |`KeyContainer`|選擇性的 `String` 參數。<br /><br /> 指定持有公開/私密金鑰組的容器。|
 |`KeyFile`|選擇性的 `String` 參數。<br /><br /> 指定包含公開/私密金鑰組的項目。|
@@ -57,7 +57,7 @@ ms.locfileid: "75595198"
 
  下表描述將項目傳遞給 `TypeLibNames` 參數的可用項目中繼資料。
 
-|中繼資料|描述|
+|中繼資料|說明|
 |--------------|-----------------|
 |`GUID`|必要的項目中繼資料。<br /><br /> 類型程式庫的 GUID。 如未指定此項目中繼資料，則工作會失敗。|
 |`VersionMajor`|必要的項目中繼資料。<br /><br /> 類型程式庫的主要版本。 如未指定此項目中繼資料，則工作會失敗。|
@@ -70,7 +70,7 @@ ms.locfileid: "75595198"
 
  下表描述將項目傳遞給 `TypeLibFiles` 參數的可用項目中繼資料。
 
-|中繼資料|描述|
+|中繼資料|說明|
 |--------------|-----------------|
 |`EmbedInteropTypes`|選擇性的 `Boolean` 參數。<br /><br />  若為 `true`，就會將 Interop 類型從這個參考直接內嵌到您的組件中，而不是產生 Interop DLL。|
 |`WrapperTool`|選擇性項目中繼資料。<br /><br /> 指定為此類型程式庫產生組件包裝函式使用的包裝函式工具。 如未指定此項目中繼資料，工作會使用預設的包裝函式工具 "tlbimp"。 可用且不區分大小寫的 TypeLib 選項有：<br /><br /> -   `Primary`：當您想要使用 COM 元件已產生的主要 Interop 組件時，請使用此包裝函式工具。 當您使用此包裝函式工具時，請勿指定包裝函式的輸出目錄，因為這會造成工作失敗。<br />-   `TLBImp`：當您想要產生 COM 元件的 Interop 組件時，請使用此包裝函式工具。<br />-   `AXImp`：當您想要產生 ActiveX 控制項的 Interop 組件時，請使用此包裝函式工具。|
@@ -84,7 +84,17 @@ ms.locfileid: "75595198"
 
 COM DLL 無須在機器上註冊，此工作便能運作。
 
+## <a name="msb4803-error"></a>MSB4803 錯誤
+
+如果您嘗試從 CLI 命令執行使用工作的專案 `ResolveCOMReference` `dotnet` ，就會收到錯誤：
+
+```output
+MSB4803: The task "ResolveComReference" is not supported on the .NET Core version of MSBuild. Please use the .NET Framework version of MSBuild.
+```
+
+在 .NET Core 版本的 MSBuild 上不支援這項工作，這是從命令列執行命令時所使用的 `dotnet build` 。 請嘗試從 Visual Studio 開發人員命令提示字元叫用[MSBuild.exe](msbuild-command-line-reference.md)來建立專案，因為這會使用 MSBuild 的 .NET Framework 版本。
+
 ## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

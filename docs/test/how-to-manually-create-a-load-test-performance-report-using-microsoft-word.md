@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Word 建立負載測試效能報表
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, reporting
 - load tests, creating Word reports
@@ -9,12 +9,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c3deee8d35f06e50dbe22001e8a2fa81b41563e0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f630c0e5c054185dcc0dcb87f553dff8dd2ad8f7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113438"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287593"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>如何：使用 Microsoft Word 手動建立負載測試效能報告
 
@@ -44,7 +44,7 @@ ms.locfileid: "76113438"
 
 1. 在 [負載測試結果]**** 中，如果目前沒有顯示圖表檢視，請選擇工具列中的 [圖表]****。
 
-2. (選擇性) 放大您想要複製到 Microsoft Word 文件的特定圖表，如下圖所示。 有關詳細資訊，請參閱[如何：放大圖形的區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+2. (選擇性) 放大您想要複製到 Microsoft Word 文件的特定圖表，如下圖所示。 如需詳細資訊，請參閱[如何：放大圖形中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
      ![圖形檢視縮放控制](../test/media/ltest_zoomcontrol.png)
 

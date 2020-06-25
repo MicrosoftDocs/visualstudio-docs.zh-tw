@@ -1,19 +1,19 @@
 ---
 title: 分析負載測試的虛擬使用者活動
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - virtual user activity chart, viewing
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c997f27e65a8e3992239fac78d52b0b4f19670c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169400"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288399"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>如何：使用虛擬使用者活動圖表分析虛擬使用者在負載測試期間的行為
 
@@ -55,13 +55,13 @@ ms.locfileid: "78169400"
 
    - **瀏覽** (不會在測試或異動中顯示)
 
-   - **網路**
+   - **Network**
 
    - **開始時間**
 
-   - **時間**
+   - **有效期間**
 
-   - **代理**
+   - **代理程式**
 
    - **測試記錄檔** (連結至測試記錄)
 
@@ -72,7 +72,7 @@ ms.locfileid: "78169400"
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>若要使用虛擬使用者活動圖中的篩選選項
 
-1. 在 **"詳細資訊圖例**"中，使用下拉清單選擇 **"測試**"、**頁面**或**事務**。
+1. 在 [**詳細資料圖例**] 中，使用下拉式清單來選取 [**測試**]、[**頁面**] 或 [**交易**]。
 
     **詳細資料圖例面板**
 
@@ -99,11 +99,11 @@ ms.locfileid: "78169400"
    - **顯示有錯誤的結果**：顯示具有錯誤的結果，這些錯誤可協助偵錯。
 
      > [!NOTE]
-     > 可以通過在**Web 效能測試結果檢視器**工具列中選擇 **"表**"按鈕來進一步調查在 **"顯示結果與錯誤**"節點下列出的錯誤類型清單。 有關詳細資訊，請參閱[在表視圖中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
+     > 選擇 [ **Web 效能測試結果檢視器]** 工具列中的 [**資料表]** 按鈕，即可進一步調查 [**顯示有錯誤的結果**] 節點底下列出的錯誤類型清單。 如需詳細資訊，請參閱在[資料表視圖中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
 
      並會隨之更新「虛擬使用者活動圖」****。
 
 ## <a name="see-also"></a>另請參閱
 
 - [在詳細資料檢視中分析虛擬使用者活動](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [演練：使用虛擬使用者活動圖表隔離問題](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [逐步解說：使用虛擬使用者活動圖來隔離問題](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

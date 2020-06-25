@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Excel 建立負載測試效能報表
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, creating Excel reports
 - load tests, reporting
@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8134d2652c1654a65ac303838bd1209a5d061bd0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a94a44d0a826cbda1d50b212f61bef86ad29f05c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589067"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287814"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>如何：使用 Microsoft Excel 建立負載測試效能報告
 
@@ -58,11 +58,11 @@ ms.locfileid: "75589067"
    - 完成負載測試後，在 [負載測試結果]**** 頁面中，選擇工具列的 [建立 Excel 報表]**** 按鈕。
 
       > [!NOTE]
-      > 如果在**Web 效能測試結果檢視器**工具列中禁用"**創建 Excel 報告**"按鈕，則可能需要在啟用 Microsoft Excel 之前運行一次。 安裝 Visual Studio Enterprise 時，會將 Visual Studio Enterprise 負載測試增益集複製到您的電腦以供 Microsoft Excel 使用，但這個增益集的安裝程序要到執行 Microsoft Excel 後才算完成。
+      > 如果 [ **Web 效能測試結果檢視器]** 工具列中的 [**建立 excel 報表**] 按鈕已停用，您可能需要執行一次 Microsoft Excel，才能加以啟用。 安裝 Visual Studio Enterprise 時，會將 Visual Studio Enterprise 負載測試增益集複製到您的電腦以供 Microsoft Excel 使用，但這個增益集的安裝程序要到執行 Microsoft Excel 後才算完成。
 
       Microsoft Excel 隨即開啟 [產生負載測試報告精靈]****。
 
-   **或**
+   **OR**
 
    1. 開啟 Microsoft Excel，選取 [Office]**** 功能區中的 [負載測試]**** 索引標籤，然後選擇 [負載測試報告]****。
 
@@ -85,7 +85,7 @@ ms.locfileid: "75589067"
    > [!NOTE]
    > 您只能為兩個負載測試結果產生比較報告。 如果選取一個或超過兩個的負載測試結果，則會出現警告訊息。
 
-8. 在"**選擇報表頁的計數器**"中，**在"選擇一個或多個計數器以添加到報表**"下，可以使用可展開的計數器清單自訂報表。 在報告中，從兩個已選取之測試回合選取您要比較的計數器，然後選擇 [完成]****。
+8. 在 [**選取報告的計數器**] 頁面的 [**選取一或多個要加入報告的計數器**] 下方，有一個可展開的計數器清單，可以用來自訂您的報告。 在報告中，從兩個已選取之測試回合選取您要比較的計數器，然後選擇 [完成]****。
 
 9. 隨即產生 Excel 活頁簿報告，其中包含下列試算表索引標籤：
 
@@ -113,11 +113,11 @@ ms.locfileid: "75589067"
    - 完成負載測試後，在 [負載測試結果]**** 頁面中，選擇工具列的 [建立 Excel 報表]**** 按鈕。
 
       > [!NOTE]
-      > 如果在**Web 效能測試結果檢視器**工具列中禁用"**創建 Excel 報告**"按鈕，則可能需要在啟用 Microsoft Excel 之前運行一次。 安裝 Visual Studio Enterprise 時，會將 Visual Studio Enterprise 負載測試增益集複製到您的電腦以供 Microsoft Excel 使用，但這個增益集的安裝程序要到執行 Microsoft Excel 後才算完成。
+      > 如果 [ **Web 效能測試結果檢視器]** 工具列中的 [**建立 excel 報表**] 按鈕已停用，您可能需要執行一次 Microsoft Excel，才能加以啟用。 安裝 Visual Studio Enterprise 時，會將 Visual Studio Enterprise 負載測試增益集複製到您的電腦以供 Microsoft Excel 使用，但這個增益集的安裝程序要到執行 Microsoft Excel 後才算完成。
 
       Microsoft Excel 隨即開啟 [產生負載測試報告精靈]****。
 
-   **或**
+   **OR**
 
    1. 開啟 Microsoft Excel，選取 [Office]**** 功能區中的 [負載測試]**** 索引標籤，然後選擇 [負載測試報告]****。
 

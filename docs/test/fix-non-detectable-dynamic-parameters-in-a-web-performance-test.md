@@ -1,7 +1,7 @@
 ---
 title: 在 Web 效能測試中修正無法偵測的動態參數
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs, load tests
 - load tests, walkthroughs
@@ -10,12 +10,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25df1c0d0d3165ba8afb068fc416a872af737a82
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589639"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288750"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>在 Web 效能測試中修正無法偵測的動態參數
 
@@ -122,7 +122,7 @@ ms.locfileid: "75589639"
 
      ![將 Querystring.aspx 設定為起始頁](../test/media/web_test_dynamicparameter_setstartpage.png)
 
-15. 按**Ctrl**+**F5**在瀏覽器中運行 Web 應用程式。 複製 URL。 當您錄製測試時，您將會需要它。
+15. 按**Ctrl** + **F5**在瀏覽器中執行 web 應用程式。 複製 URL。 當您錄製測試時，您將會需要它。
 
 16. 嘗試兩個連結。 它們應該都會顯示訊息「成功。 Dynamic querystring parameter found."
 
@@ -190,7 +190,7 @@ ms.locfileid: "75589639"
 
      ![使用快速尋找隔離動態參數](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
-4. 我們從查看測試編輯器中知道 *，JScriptQuery.aspx*請求的自訂查詢String被分配了一個值：`jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`和，可疑的動態部分是"1v0yhyyr0raa2w4j4pwf5zl"。 在 [尋找目標] 下拉式清單中，移除搜尋字串的可疑部分。 字串應該是 "CustomQueryString=jScriptQueryString___"。
+4. 我們從查看 [測試編輯器] 得知，已為*jscriptquery.aspx*指派一個值： `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` ，而疑似動態部分為 "1v0yhyiyr0raa2w4j4pwf5zl"。 在 [尋找目標] 下拉式清單中，移除搜尋字串的可疑部分。 字串應該是 "CustomQueryString=jScriptQueryString___"。
 
      動態參數的值會在有錯誤之要求前面的其中一個要求中指派。 因此，選取 [向上搜尋] 核取方塊並選擇 [找下一個]，直到您在 [要求] 面板中看見反白顯示之 *Querystring.aspx* 的先前要求。 這應該會在選擇三次 [找下一個] 之後出現。
 

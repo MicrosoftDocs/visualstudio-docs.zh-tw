@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f188b40938c62ae8c3692f096217618f9cb7ff6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183739"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286298"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C\# 中撰寫視覺化檢視
 
@@ -60,7 +60,7 @@ ms.locfileid: "84183739"
 
 3. 在**方案總管**中，以滑鼠右鍵按一下 [**參考**]，然後選擇快捷方式功能表上的 [**加入參考**]。
 
-4. 在 [**加入參考**] 對話方塊的 [**流覽**] 索引標籤上，選取 **[流覽**]，然後尋找 VisualStudio. microsoft.visualstudio.debuggervisualizers.dll .dll。
+4. 在 [**加入參考**] 對話方塊的 [**流覽**] 索引標籤上，選取 **[流覽**] 並尋找 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
 
     您可以在 Visual Studio 的安裝目錄的* \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies*子目錄中找到此 DLL。
 
@@ -106,7 +106,7 @@ ms.locfileid: "84183739"
 
 1. 在**方案總管**中，以滑鼠右鍵按一下 [**參考**]，然後選擇快捷方式功能表上的 [**加入參考**]。
 
-2. 在 [**加入參考**] 對話方塊的 [**流覽**] 索引標籤上，選取 **[流覽**]，然後尋找 [system.web]。
+2. 在 [**加入參考**] 對話方塊的 [**流覽**] 索引標籤上，選取 **[流覽**]，然後尋找 System.Windows.Forms.DLL。
 
     您可以在*C:\Windows\Microsoft.NET\Framework\v4.0.30319*中找到此 DLL。
 
@@ -187,7 +187,7 @@ ms.locfileid: "84183739"
 
 1. 在**方案總管**中，以滑鼠右鍵按一下**MyTestConsole** ，然後選擇快捷方式功能表上的 [**加入參考**]。
 
-2. 在 [**加入參考**] 對話方塊的 **[流覽**] 索引標籤中，選擇 [VisualStudio microsoft.visualstudio.debuggervisualizers.dll .dll]。
+2. 在 [**加入參考**] 對話方塊的 **[流覽**] 索引標籤中，選擇 [Microsoft.VisualStudio.DebuggerVisualizers.DLL]。
 
 3. 按一下 [確定]。
 
@@ -235,6 +235,8 @@ ms.locfileid: "84183739"
 
    如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用視覺化檢閱，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢閱。 如需詳細資訊，請參閱[如何：安裝視覺化](../debugger/how-to-install-a-visualizer.md)程式。
 
+::: moniker range="vs-2017"
+
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>使用視覺化檢視專案範本建立視覺化
 
 到目前為止，本逐步解說已示範如何以手動方式建立視覺化檢視。 這是做為學習練習的完成。 既然您已經知道簡單的視覺化程式的運作方式，就有更簡單的方法可以建立一個：使用視覺化檢視專案範本。
@@ -265,9 +267,10 @@ ms.locfileid: "84183739"
 
 4. 在 [**名稱**] 方塊中，輸入適當的名稱，例如 SecondVisualizer.cs。
 
-5. 按一下 [新增]  。
+5. 按一下 [新增] 。
 
    就是這樣。 查看檔案 SecondVisualizer.cs，並查看範本為您新增的程式碼。 請繼續進行，並使用程式碼進行實驗。 既然您已經瞭解基本概念，就可以開始建立您自己的更複雜且有用的視覺化檢視。
+::: moniker-end
 
 ## <a name="see-also"></a>另請參閱
 

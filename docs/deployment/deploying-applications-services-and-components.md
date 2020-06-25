@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: ab0d62efb8abc3cfbae365312a009bc6d2efea43
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182998"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286348"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
 
@@ -48,7 +48,7 @@ ms.locfileid: "84182998"
 
 ## <a name="publish-to-azure"></a>發佈至 Azure
 
-- **ASP.NET**、 **ASP.NET Core**、 **Python**和**node.js**：使用下列其中一種方法發行至 Azure App Service 或 Azure App Service Linux （使用容器）。
+- **ASP.NET**、 **ASP.NET Core**、 **Python**和**Node.js**：使用下列其中一種方法，發佈至 Azure App Service 或 Azure App Service Linux （使用容器）。
 
   - 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops)。
 
@@ -58,7 +58,7 @@ ms.locfileid: "84182998"
 
   若要使用 [發行]**** 工具，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [發行]****。 （如果您先前已設定任何發行設定檔，則必須按一下 [**建立新的設定檔**]）。在 [發佈] 對話方塊中，選擇 [ **App Service** ] 或 [ **Azure 虛擬機器**]，然後依照設定步驟進行。
 
-  ![選擇 Azure App Service](../deployment/media/quickstart-publish-azure.png "選擇 Azure App Service")
+  ![選擇 Azure App Service](../deployment/media/quickstart-publish-azure-new.png "選擇 Azure App Service")
 
   從 Visual Studio 2017 15.7 版開始，您可以將 ASP.NET Core 應用程式部署至**適用於 Linux 的 App Service**。
 
@@ -91,7 +91,7 @@ ms.locfileid: "84182998"
 
 - **UWP**：您可以封裝您的應用程式，並使用功能表項目加以部署。 如需詳細資訊，請參閱[使用 Visual Studio 封裝 UWP 應用程式](/windows/uwp/packaging/packaging-uwp-apps)。
 
-    ![建立應用程式套件](../deployment/media/feature-tour-create-app-package.jpg)
+    ![建立應用程式套件](../deployment/media/feature-tour-create-app-package.png)
 
 - **Windows 傳統型**：從 Visual Studio 2017 15.4 版開始，您可以使用傳統型橋接器部署至 Microsoft Store。 若要這樣做，請先建立 Windows 應用程式封裝專案。 如需詳細資訊，請參閱[為 Microsoft Store 封裝傳統型應用程式 (傳統型橋接器)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)。
 

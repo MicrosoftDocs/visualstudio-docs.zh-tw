@@ -1,7 +1,7 @@
 ---
 title: 為 Web 效能測試撰寫自訂驗證規則程式碼
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - custom validation rules
 - validation rules, creating
@@ -15,12 +15,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9780a4ee81a4d063b5cfb7f66b1a5ea023d8fa2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8bdf7f7f8f5bfcc7f8403740bea924c967bf3964
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75573400"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288867"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂驗證規則程式碼
 
@@ -48,9 +48,9 @@ ms.locfileid: "75573400"
 
 6. (選擇性) 在測試專案中，加入包含自訂驗證規則之類別庫專案的參考。
 
-7. 在測試專案中，在**Web 效能測試編輯器**中打開 Web 效能測試。
+7. 在測試專案中，開啟**Web 效能測試編輯器**中的 web 效能測試。
 
-8. 要將自訂驗證規則添加到 Web 效能測試請求，請按右鍵請求並選擇 **"添加驗證規則**"。
+8. 若要將自訂驗證規則加入至 web 效能測試要求，請以滑鼠右鍵按一下要求，然後選取 [**新增驗證規則**]。
 
      [新增驗證規則]**** 對話方塊隨即出現。 您會在 [選取規則]**** 清單中看到您的自訂驗證規則，以及預先定義的驗證規則。 選取您的自訂驗證規則，然後選擇 [確定]****。
 

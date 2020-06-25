@@ -1,7 +1,7 @@
 ---
 title: 指定要用於負載測試情節的測試代理程式
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - test agents, load tests
 - load tests, scenarios
@@ -12,23 +12,23 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d23d565752d81bff960027090ddaaf88e9d78ed5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5d9e22200a63544b4539f7bf78c48d5711974776
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588924"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287489"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>如何：指定要用於負載測試情節的測試代理程式
 
-使用 **"新負載測試精靈**"創建負載測試後，可以使用**負載測試編輯器**更改方案屬性以滿足測試需求和目標。
+使用**新的負載測試精靈**來建立負載測試之後，您可以使用**負載測試編輯器**來變更情節屬性，以符合您的測試需求和目標。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> 有關負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
+> 如需負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
 
-通過使用**負載測試編輯器**將**Properties****"代理更改為屬性**"視窗中的屬性來指定代理。
+在 [**屬性**] 視窗中，使用 [**負載測試編輯器**將**代理程式變更為使用**] 屬性來指定代理程式。
 
 如果您是要從遠端使用控制器和代理程式執行負載測試，可以指定想要情節使用的代理程式。 例如，您可以指定特定一組代理程式，以便在分析效能趨勢時維持一致性。 另外，代理程式也可以分散在不同的地理位置，讓代理程式執行的指令碼更親近於代理程式所在地。
 
@@ -39,7 +39,7 @@ ms.locfileid: "75588924"
 
 另一個原因是部分 (但非全部) 代理程式中可能已安裝特定情節所需的軟體。
 
-您可以在測試設定中使用角色，控制針對指定的測試回合選取的代理程式。 有關詳細資訊，請參閱[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
+您可以在測試設定中使用角色，控制針對指定的測試回合選取的代理程式。 如需詳細資訊，請參閱[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
 
 如果測試代理程式電腦的 CPU 使用率超過 75% 或可用的實體記憶體低於 10%，請將更多代理程式加入至您的負載測試，確保代理程式電腦不會成為負載測試的瓶頸。
 

@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: conceptual
 description: 瞭解系統管理員如何使用大量新增功能或 Microsoft Azure Active Directory 群組，將授權指派給多個訂閱者
-ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: bc5f4a9bfc78dd3139202872bdf8d70a050f4039
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182894"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289127"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
@@ -24,18 +24,18 @@ ms.locfileid: "84182894"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>使用大量新增來指派訂閱
-1. 登入 Visual Studio 訂用帳戶管理入口網站，網址為 https://manage.visualstudio.com 。
+1. 登入 Visual Studio 訂用帳戶管理入口網站，網址為 <https://manage.visualstudio.com> 。
 
-2. 若要一次加入多個訂閱者，請流覽至 [**管理訂閱者**] 索引標籤。選擇 [**新增**] 索引標籤，然後在下拉式選單中選擇 [**大量新增**]。  
+1. 若要一次加入多個訂閱者，請流覽至 [**管理訂閱者**] 索引標籤。選擇 [**新增**] 索引標籤，然後在下拉式選單中選擇 [**大量新增**]。  
 
-2. 大量新增使用 Microsoft Excel 範本來上傳訂閱者資訊。 在 [Upload Multiple Subscribers] (上傳多位訂閱者)　對話方塊中，按一下 [下載]**** 來下載範本。
+1. 大量新增使用 Microsoft Excel 範本來上傳訂閱者資訊。 在 [Upload Multiple Subscribers] (上傳多位訂閱者)　對話方塊中，按一下 [下載]**** 來下載範本。
    > [!div class="mx-imgBorder"]
    > ![下載 Excel 範本，以上傳多位訂閱者](media/download-template-upload-subscribers.png)
    >
    > [!NOTE]
    > 請一律下載這個範本的最新版本。 如果您使用舊版本，則大量上傳可能會失敗。
 
-3. 在 Excel 試算表中，請將您想要指派訂用帳戶之個人的資訊填入欄位中。 （*參考*是選擇性欄位）。完成之後，請將檔案儲存在本機。
+1. 在 Excel 試算表中，請將您想要指派訂用帳戶之個人的資訊填入欄位中。 （*參考*是選擇性欄位）。完成之後，請將檔案儲存在本機。
 
     > [!NOTE]
     > 範本中的其中一個欄位可讓系統管理員啟用或停用訂閱者下載軟體的能力。  停用下載也會停用其產品金鑰的存取權。
@@ -48,11 +48,11 @@ ms.locfileid: "84182894"
     - 請確定所有必要的欄位皆已完成。 
     - 檢查 [**錯誤訊息**] 資料行。  如果列出任何錯誤，請在嘗試上傳檔案之前先解決。 
 
-4. 回到 Visual Studio 訂閱管理入口網站。 在 [上傳多位訂閱者]**** 對話方塊中，按一下 [瀏覽]****。
+1. 回到 Visual Studio 訂閱管理入口網站。 在 [上傳多位訂閱者]**** 對話方塊中，按一下 [瀏覽]****。
    > [!div class="mx-imgBorder"]
    > ![瀏覽至先前儲存的範本，以上傳多位訂閱者](media/bulk-add-browse-saved-template.png)
 
-5. 巡覽至您儲存的 Excel 檔案，然後按一下 [確定]****。
+1. 巡覽至您儲存的 Excel 檔案，然後按一下 [確定]****。
    > [!div class="mx-imgBorder"]
    > ![上傳 Excel 範本，以上傳多位訂閱者](media/bulk-upload-subscribers.png)
 
@@ -84,7 +84,7 @@ ms.locfileid: "84182894"
 > - 當您一開始將群組新增至管理入口網站時，系統管理員必須是 AAD 租使用者的成員。  新增群組之後，對群組成員資格的變更不需要系統管理員介入。 
 > - 群組必須包含至少一個成員。  不支援空的群組。
 > - 群組必須少於1000個使用者。 
-> - 所有使用者都必須位於群組的最高層級。  不支援嵌套的群組。
+> - 所有使用者都必須位於群組的最高層級。  「不支援」巢狀群組。
 > - 僅支援信任的合約。
 > - 群組的所有成員都必須有與其 Azure AD 帳戶相關聯的電子郵件地址。
 > - 使用 Azure AD 群組新增的訂閱不支援個別的通知電子郵件地址。  
@@ -132,7 +132,7 @@ ms.locfileid: "84182894"
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟

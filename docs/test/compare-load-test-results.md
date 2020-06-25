@@ -1,7 +1,7 @@
 ---
 title: 分析負載測試結果
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, reporting
 - load tests, results
@@ -9,12 +9,12 @@ ms.assetid: 31874114-459a-45d5-9f8b-2ea503627db8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f85800ea59545ad64a821d1bb8c003ba6eef8c26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d2390b7efde62d475008dcb17aa24ed69ebf4bf5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589340"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288841"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>針對測試比較或趨勢分析報告負載測試結果
 
@@ -41,8 +41,8 @@ ms.locfileid: "75589340"
 
 |工作|相關主題|
 |-|-|
-|**建立效能與壓力報告：** 您可以使用 Microsoft Excel，建立負載測試與 Web 效能測試的報告。|- [如何：使用 Microsoft Excel 創建負載測試性能報告](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**使用 Microsoft Word 手動建立效能與壓力報告：** 您可以透過將摘要、資料表和圖形資料複製並貼入 Microsoft Word 文件，手動建立負載和 Web 效能測試的報告。|- [如何：使用 Microsoft Word 手動創建負載測試性能報告](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**建立效能與壓力報告：** 您可以使用 Microsoft Excel，建立負載測試與 Web 效能測試的報告。|- [如何：使用 Microsoft Excel 建立負載測試效能報表](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
+|**使用 Microsoft Word 手動建立效能與壓力報告：** 您可以透過將摘要、資料表和圖形資料複製並貼入 Microsoft Word 文件，手動建立負載和 Web 效能測試的報告。|- [如何：使用 Microsoft Word 手動建立負載測試效能報表](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Fakes 在測試期間隔離程式碼
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 06/03/2020
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 662a61bf97e1726892b877dc79a0ef98340a34ec
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49330132321c389fc5b6a4842972769896c72637
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566887"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286956"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 隔離測試中的程式碼
 
@@ -31,8 +31,9 @@ Fakes 分為兩種類別：
 
 **需求**
 
-- Visual Studio Enterprise
+- Visual Studio 企業版
 - .NET Framework 專案
+- .NET Core 和 SDK 樣式的專案支援目前為預覽狀態。 [閱讀更多](https://docs.microsoft.com/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
 
 > [!NOTE]
 > - 不支援 .NET Standard 專案。
@@ -41,7 +42,7 @@ Fakes 分為兩種類別：
 ## <a name="choose-between-stub-and-shim-types"></a>在虛設常式和填充碼類型之間選擇
 由於您會同時開發及更新這些類別，因此您通常會將 Visual Studio 專案視為元件。 您可以考慮針對專案對方案中其他專案或專案所參考之其他組件的呼叫使用虛設常式和填充碼。
 
-一般方針是，對 Visual Studio 方案中的呼叫使用虛設常式，而對其他參考組件的呼叫則使用填充碼。 這是因為在您自己的方案中，依虛設常式需要的方式定義介面以分隔元件是很好的作法。 但是外部程式集（如*System.dll）* 通常不提供單獨的介面定義，因此必須改用希姆。
+一般方針是，對 Visual Studio 方案中的呼叫使用虛設常式，而對其他參考組件的呼叫則使用填充碼。 這是因為在您自己的方案中，依虛設常式需要的方式定義介面以分隔元件是很好的作法。 但是外部元件（例如*System.dll* ）通常不會以個別的介面定義提供，因此您必須改用填充碼。
 
 其他考量為：
 
@@ -51,7 +52,7 @@ Fakes 分為兩種類別：
 
 **內部類型。** 虛設常式和填充碼都可以搭配使用組件屬性 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 存取的內部類型一起使用。
 
-**私有方法。** 如果方法簽章的所有類型都是可見的，填充碼可以取代私用方法呼叫。 虛設常式只能取代可見的方法。
+**私用方法。** 如果方法簽章的所有類型都是可見的，填充碼可以取代私用方法呼叫。 虛設常式只能取代可見的方法。
 
 **介面和抽象方法。** 虛設常式提供可用於測試的介面和抽象方法實作。 填充碼無法檢測介面和抽象方法，因為它們沒有方法主體。
 
@@ -81,7 +82,7 @@ Fakes 分為兩種類別：
 
 2. **新增 Fakes 組件**
 
-    1. 在**解決方案資源管理器中**，展開測試專案的引用清單。 如果在 Visual Basic 中工作，您必須選擇 [顯示所有檔案]**** 才能看到參考清單。
+    1. 在**方案總管**中，展開測試專案的 [參考清單]。 如果在 Visual Basic 中工作，您必須選擇 [顯示所有檔案]**** 才能看到參考清單。
 
     2. 選取定義介面 (例如 IStockFeed) 之組件的參考。 在此參考的捷徑功能表上，選擇 [新增 Fakes 組件]****。
 
@@ -168,7 +169,7 @@ Fakes 分為兩種類別：
 
 1. **新增 Fakes 組件**
 
-     在**解決方案資源管理器**中，打開單元測試專案的引用，並選擇對包含要偽造的方法的程式集的引用。 在本範例中，`DateTime` 類別是在 *System.dll* 中。  若要查看 Visual Basic 專案中的參考，請選擇 [顯示所有檔案]****。
+     在**方案總管**中，開啟單元測試專案的 [參考]，然後選取包含您想要假之方法的元件參考。 在本範例中，`DateTime` 類別是在 *System.dll* 中。  若要查看 Visual Basic 專案中的參考，請選擇 [顯示所有檔案]****。
 
      選擇 [新增 Fakes 組件]****。
 

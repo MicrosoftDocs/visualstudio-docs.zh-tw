@@ -1,6 +1,6 @@
 ---
-title: 測量命令列的效能
-description: 從命令列測量應用程式中的 CPU 性能和託管記憶體使用方式。
+title: 從命令列測量效能
+description: 從命令列測量應用程式中的 CPU 效能和受控記憶體使用量。
 ms.custom: ''
 ms.date: 02/21/2020
 ms.topic: conceptual
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638697"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285840"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>從命令列測量應用程式的效能
 
@@ -27,13 +27,13 @@ ms.locfileid: "80638697"
 
 本文所述範例會收集 Microsoft [記事本] 的效能資訊，但您可以使用相同的方法來分析任何處理序。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
-* 視覺工作室 2019 或更高版本
+* Visual Studio 2019 或更新版本
 
 * 熟悉命令列工具
 
-* 您可以在未安裝 Visual Studio 的遠端電腦上收集效能資訊,請在遠端電腦上安裝[視覺化工作室的效能工具](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019)。 這些工具的版本必須與您的視覺工作室版本匹配。
+* 若要在未安裝 Visual Studio 的情況下，在遠端電腦上收集效能資訊，請在遠端電腦上安裝[Visual Studio 的效能工具](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)。 此工具的版本必須符合您的 Visual Studio 版本。
 
 ## <a name="collect-performance-data"></a>收集效能資料
 
@@ -53,9 +53,9 @@ ms.locfileid: "80638697"
 
    必須包含的引數如下：
 
-   * \<*id*> 可識別收集工作階段。 識別碼必須是介於 1-255 之間的數字。
-   * \<*pid*>，您要分析的處理序 PID；在本例中為您在步驟 1 找到的 PID
-   * \<*configFile*>，您要啟動的收集代理程式組態檔。 如需詳細資訊，請參閱[代理程式的組態檔](#config_file)。
+   * \<*id*>識別收集會話。 識別碼必須是介於 1-255 之間的數字。
+   * \<*pid*>，您想要分析之進程的 PID，在此案例中是您在步驟1中找到的 PID
+   * \<*configFile*>，這是您想要啟動之集合代理程式的設定檔。 如需詳細資訊，請參閱[代理程式的組態檔](#config_file)。
 
 1. 調整 [記事本] 的大小，或在其中鍵入某些項目，以確保收集到一些可用的分析資訊。
 
@@ -73,10 +73,20 @@ ms.locfileid: "80638697"
 
 為了方便起見，您可以將該資訊儲存在代理程式組態檔中。 組態檔是一種 *.json* 檔案，其中至少包含 *.dll* 的名稱和其 COM CLSID。 您可以在下列資料夾中找到的範例組態檔如下：
 
-```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
+```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
-* CpuUsage 組態 (基底/高/低)，其會對應至 [CPU 使用量](../profiling/cpu-usage.md)分析工具收集到的資料。
-* DotNetObjectAlloc 組態 (基底/低)，其會對應至 [.NET 物件配置工具](../profiling/dotnet-alloc-tool.md)收集到的資料。
+請參閱下列連結，以下載並查看代理程式設定檔：
+
+- https://aka.ms/vs/diaghub/agentconfig/cpubase
+- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
+- https://aka.ms/vs/diaghub/agentconfig/cpulow
+- https://aka.ms/vs/diaghub/agentconfig/database
+- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
+
+CpuUsage 設定（基底/高/低）對應至針對[CPU 使用量](../profiling/cpu-usage.md)分析工具所收集的資料。
+DotNetObjectAlloc 設定（基底/低）對應至針對[.Net 物件組態工具](../profiling/dotnet-alloc-tool.md)所收集的資料。
 
 組態的基底/高/低是指取樣率。 例如，低表示 100 個範例/秒，而高表示 4000 個範例/秒。
 

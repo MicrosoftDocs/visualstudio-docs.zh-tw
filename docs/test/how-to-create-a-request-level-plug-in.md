@@ -1,7 +1,7 @@
 ---
 title: 建立 Web 效能測試的要求層級外掛程式
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
@@ -9,16 +9,16 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b6e57f92a3f45983321a866f3524974ea99dba82
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03de870da2cd75c8a254010db682903f314cc10d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589140"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287970"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>如何：建立要求層級外掛程式
 
-*請求*是構成 Web 效能測試的聲明性語句。 Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式陳述式之外找出及重複使用程式碼。 您可以建立外掛程式，並將其加入到個別的要求中，也可以加入到包含要求的 Web 效能測試中。 自訂的「要求外掛程式」** 提供您一種方式，可以在特別要求於 Web 效能測試中執行時呼叫程式碼。
+*要求*是構成 web 效能測試的宣告式語句。 Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式陳述式之外找出及重複使用程式碼。 您可以建立外掛程式，並將其加入到個別的要求中，也可以加入到包含要求的 Web 效能測試中。 自訂的「要求外掛程式」** 提供您一種方式，可以在特別要求於 Web 效能測試中執行時呼叫程式碼。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -30,23 +30,23 @@ ms.locfileid: "75589140"
 
 ## <a name="to-create-a-request-level-plug-in"></a>若要建立要求層級外掛程式
 
-1. 在 **"解決方案資源管理器"** 中，按右鍵解決方案，選擇 **"添加"，** 然後選擇 **"新專案**"。
+1. 在**方案總管**中，以滑鼠右鍵按一下方案，選取 [**加入**]，然後選擇 [**新增專案**]。
 
 2. 建立新的**類別庫**專案。
 
-3. 在**解決方案資源管理器**中，按右鍵新類庫中的 **"引用"** 資料夾，然後選擇"**增加參考**"。
+3. 在**方案總管**中，以滑鼠右鍵按一下新類別庫中的 [**參考**] 資料夾，然後選取 [**加入參考**]。
 
      [新增參考]**** 對話方塊隨即顯示。
 
 4. 選擇 [.NET]**** 索引標籤並向下捲動，然後選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，再選擇 [確定]****
 
-     對**微軟的引用.VisualStudio.QualityTools.WebTestFramework**被添加到**解決方案資源管理器**中的**參考**資料夾中。
+     **VisualStudio**的參考會加入至**方案總管**的 [**參考**] 資料夾中。
 
-5. 在**解決方案資源管理器**中，按右鍵包含要向其添加 Web 效能測試請求測試外掛程式的負載測試專案的頂部節點。 選取 [新增參考]****。
+5. 在**方案總管**中，以滑鼠右鍵按一下 web 效能和負載測試專案的頂端節點，其中包含您要加入 web 效能測試要求測試外掛程式的負載測試。 選取 [新增參考]****。
 
-     **將顯示"添加參考"對話方塊**。
+     [**加入參考] 對話方塊隨即顯示**。
 
-6. 選擇"**專案**"選項卡，選擇 **"類庫專案**"，然後選擇 **"確定**"。
+6. 選擇 [**專案**] 索引標籤，選取 [**類別庫] 專案**，然後選擇 **[確定]** 。
 
 7. 在 [程式碼編輯器]**** 中，撰寫外掛程式的程式碼。 首先，建立衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> 的新公用類別。
 
@@ -67,14 +67,14 @@ ms.locfileid: "75589140"
     > [!NOTE]
     > 您可以從外掛程式公開任意數目的屬性，只要讓這些屬性成為公用、可設定且屬於基底型別 (例如整數、布林或字串) 的屬性即可。 您之後也可以使用 [屬性] 視窗來變更 Web 效能測試外掛程式屬性。
 
-14. 選擇 **"確定**"。
+14. 選擇 [確定]。
 
      外掛程式就會新增至 [要求外掛程式]**** 資料夾，這是 HTTP 要求的子資料夾。
 
     > [!WARNING]
     > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
-    > **請求失敗：\<外掛程式>事件中的異常：無法載入檔或程式集"\<外掛程式名稱".DLL 檔案>、版本=n.n.n>、\<區域性=中性、PublicKeyToken_null"或其依賴項之一。系統找不到指定的檔。**
+    > **要求失敗：事件中的例外狀況 \<plug-in> ：無法載入檔案或元件 ' \<"Plug-in name".dll file> ，版本 = \<n.n.n.n> ，文化特性 = 中性，PublicKeyToken = null ' 或其相依性的其中之一。系統找不到指定的檔案。**
     >
     > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)**，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
     >

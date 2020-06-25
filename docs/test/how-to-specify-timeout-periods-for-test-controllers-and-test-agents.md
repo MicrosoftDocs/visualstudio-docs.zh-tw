@@ -1,7 +1,7 @@
 ---
 title: 測試控制器和測試代理程式的逾時期間
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - agents, configuring
 - agetns, timeouts
@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7b06dc7d363cefd568a6e1432582744f486fa222
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594756"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287281"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>如何：指定測試控制器和測試代理程式的逾時期限
 
@@ -46,7 +46,7 @@ ms.locfileid: "75594756"
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>指定測試控制器的代理程式逾時選項
 
-1. 打開位於 %程式檔 （x86）%%的*QTCcontroller.exe.config* XML 設定檔*\2017_企業_Common7_IDE*。
+1. 開啟位於 *% ProgramFiles （x86）% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*的*QTCcontroller.exe.config* XML 設定檔案。
 
 2. 找出 `<appSettings>` 標記。
 
@@ -80,7 +80,7 @@ ms.locfileid: "75594756"
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>指定測試代理程式的代理程式逾時選項
 
-1. 打開位於 %程式檔 （x86）%%的*QTAgentService.exe.config* XML 設定檔*\2017_企業_Common7_IDE*。
+1. 開啟位於 *% ProgramFiles （x86）% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*的*QTAgentService.exe.config* XML 設定檔案。
 
 2. 找出 `<appSettings>` 標記。
 

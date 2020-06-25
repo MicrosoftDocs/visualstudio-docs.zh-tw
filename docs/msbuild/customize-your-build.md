@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b0cb05948f8010964eefe101cbc77d48a149566
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6c52c6b584db94ff3cbe8dc041c00ebe969c9faf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180398"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288932"
 ---
 # <a name="customize-your-build"></a>自訂組建
 
@@ -80,7 +80,7 @@ c:\
 當您需要為個別專案設定屬性或定義會覆寫任何先前設定的目標時，請在最後匯入之後，將該邏輯放在專案檔中。 若要在 SDK 樣式的專案中執行這項操作，您必須先將 SDK 樣式屬性取代為對等的匯入。 請參閱[如何使用 MSBuild 專案 sdk](how-to-use-project-sdk.md)。
 
 > [!NOTE]
-> MSBuild 引擎在評估期間會在所有匯入的檔案中讀取，在開始執行任何專案的組建（包括任何 `PreBuildEvent` ）之前，這些檔案不會被 `PreBuildEvent` 或任何其他部分的組建進程修改。 在下一次調用*msbuild.exe*或下一個 Visual Studio 組建之前，任何修改都不會生效。
+> MSBuild 引擎在評估期間會在所有匯入的檔案中讀取，在開始執行任何專案的組建（包括任何 `PreBuildEvent` ）之前，這些檔案不會被 `PreBuildEvent` 或任何其他部分的組建進程修改。 在下一次叫用*MSBuild.exe*或下一個 Visual Studio 組建之前，任何修改都不會生效。
 
 ### <a name="use-case-multi-level-merging"></a>使用案例：多層級合併
 
@@ -182,7 +182,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 ## <a name="customize-the-solution-build"></a>自訂方案組建
 
 > [!IMPORTANT]
-> 以這種方式自訂方案組建只適用於使用 *MSBuild.exe* 的命令列建置。 它**不**適用於 Visual Studio 內的組建。
+> 以這種方式自訂方案組建只適用於使用 *MSBuild.exe* 的命令列建置。 它**不**適用於 Visual Studio 內的組建。 基於這個理由，不建議您將自訂放在解決方案層級。 自訂解決方案中所有專案的較佳替代方式是使用 *.props*和*目錄. 組建 .targets*檔案，如本文的其他部分所述。
 
 MSBuild 在建置方案檔時，會先在內部將其轉換成專案檔，再建置該檔案。 產生的專案檔會在定義任何目標之前匯入 `before.{solutionname}.sln.targets`，並在匯入目標之後匯入 `after.{solutionname}.sln.targets`，包括安裝到 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` 和 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` 目錄的目標。
 

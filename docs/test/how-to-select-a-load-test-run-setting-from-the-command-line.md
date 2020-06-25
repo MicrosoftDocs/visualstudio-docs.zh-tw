@@ -1,7 +1,7 @@
 ---
 title: 從命令列設定負載測試回合設定
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, command line
 - load tests, run settings, selecting
@@ -9,12 +9,12 @@ ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 760cf18062e607e9f9039c6cc5f4adf409134cb5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 79f1cc833278a62e2871cdc725f5993b12bcdb60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588989"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287554"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>如何：從命令列中選取要使用的負載測試回合設定
 
@@ -36,7 +36,7 @@ ms.locfileid: "75588989"
 
 ## <a name="see-also"></a>另請參閱
 
-- [配置負載測試回合設定](../test/configure-load-test-run-settings.md)
+- [設定負載測試回合設定](../test/configure-load-test-run-settings.md)
 - [在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [如何：向負載測試添加其他回合設定](../test/how-to-add-additional-run-settings-to-a-load-test.md)
-- [如何：為負載測試選擇活動回合設定](../test/how-to-select-the-active-run-setting-for-a-load-test.md)
+- [如何：將其他回合設定加入至負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [如何：選取負載測試的使用中回合設定](../test/how-to-select-the-active-run-setting-for-a-load-test.md)

@@ -1,7 +1,7 @@
 ---
 title: 新增用於負載測試的自訂計數器集合
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - counters, counter sets
 - counter sets
@@ -10,12 +10,12 @@ ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7438f657af2ba40fbda5afefbd8a12cc56a2a4c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e2b78cb68f1e7a7e1f47c6cc3e771353d7e46ca9
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114865"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288425"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器新增自訂計數器集合
 
@@ -49,4 +49,4 @@ ms.locfileid: "76114865"
 ## <a name="see-also"></a>另請參閱
 
 - [在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [配置負載測試回合設定](../test/configure-load-test-run-settings.md)
+- [設定負載測試回合設定](../test/configure-load-test-run-settings.md)

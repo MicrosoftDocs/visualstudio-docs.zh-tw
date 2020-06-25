@@ -2,18 +2,18 @@
 title: 如何使用 C++ 的 Google Test
 description: 在 Visual Studio 中使用 Google Test 來建立 C++ 單元測試。
 ms.date: 05/06/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 31078b060c94f3253232d22681a1a5dae47e03b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bf4db1c01fc79d32f7e498c265b74dec34f67e48
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77279303"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287242"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 Google Test
 
@@ -53,19 +53,19 @@ ms.locfileid: "77279303"
 
 ## <a name="set-additional-options"></a>設定其他選項
 
-從主功能表中，為 Google 測試選擇**工具** > **選項** > **測試配接器**以設置其他選項。 如需這些設定的詳細資訊，請參閱 Google Test 文件。
+從主功能表中，選擇 [**工具**] [選項] [  >  **Options**  >  **適用於 Google Test 的測試配接器**] 以設定其他選項。 如需這些設定的詳細資訊，請參閱 Google Test 文件。
 
 ![Google Test 專案設定](media/cpp-gtest-settings.png)
 
 ## <a name="add-include-directives"></a>新增 include 指示詞
 
-在 test *.cpp*檔中，添加`#include`任何所需的指令，以使程式的類型和函數對測試代碼可見。 一般而言，此程式會在資料夾階層中上移一層。 如果您鍵入 `#include "../"`，IntelliSense 視窗會隨即出現並讓您選取標頭檔的完整路徑。
+在您的測試 *.cpp*檔案中，新增任何所需的指示詞， `#include` 讓測試程式碼可以看到您的程式類型和函式。 一般而言，此程式會在資料夾階層中上移一層。 如果您鍵入 `#include "../"`，IntelliSense 視窗會隨即出現並讓您選取標頭檔的完整路徑。
 
 ![新增 #include 指示詞](media/cpp-gtest-includes.png)
 
 ## <a name="write-and-run-tests"></a>撰寫及執行測試
 
-您現在準備好撰寫及執行 Google Test。 有關測試宏的資訊，請參閱[Google 測試入門。](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) 如需使用**測試總管**探索、執行及分組測試的資訊，請參閱[使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)。
+您現在準備好撰寫及執行 Google Test。 如需測試宏的相關資訊，請參閱[Google Test 入門](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)。 如需使用**測試總管**探索、執行及分組測試的資訊，請參閱[使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,6 +1,6 @@
 ---
 title: 如何：安裝視覺化檢視 |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 06/10/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79fd5522447378b879443eb8dccabfe7081af4f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99d8c0b0181286465ffe8321470d035961803a64
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183622"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286384"
 ---
 # <a name="how-to-install-a-visualizer"></a>如何：安裝視覺化檢視
 建立視覺化檢視後，您必須安裝該視覺化檢視，使 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以使用它。 安裝視覺化檢視的程序很簡單。
@@ -53,6 +53,10 @@ ms.locfileid: "84183622"
     - `net2.0`適用于執行執行時間的 debuggees `.NET Framework` 。
     - `netstandard2.0`適用于使用支援的執行時間 `netstandard 2.0` （ `.NET Framework v4.6.1+` 或 `.NET Core 2.0+` ）的 debuggees。
     - `netcoreapp`適用于執行執行時間的 debuggees `.NET Core` 。 （支援 `.NET Core 2.0+` ）
+
+   如果您想要建立獨立的視覺化檢視，則需要調試層端 DLL。 這個 DLL 包含資料物件的程式碼，可執行檔方法 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> 。
+
+   如果您有多個目標物件端程式碼，則必須將偵錯工具端 DLL 放入資料夾中，以獲得最低支援的 TFM。
 
 4. 重新啟動偵錯工作階段。
 

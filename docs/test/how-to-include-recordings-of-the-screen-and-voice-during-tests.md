@@ -1,19 +1,19 @@
 ---
 title: 在測試期間錄製螢幕及聲音
 ms.date: 10/03/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - test settings, recording desktop video
 ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d53f03ed711b613a44aaf7cd243bd9aadeb2c93b
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 4fb186c97126d843cc47c16fa16a836914ed2e9b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880321"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287762"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用測試設定在測試期間包含螢幕和聲音錄製
 
@@ -56,7 +56,7 @@ ms.locfileid: "80880321"
 
     3. **品質(1-100)：** 您可以指定範圍介於 1 和 100 之間的螢幕和聲音錄製品質。 預設值為 50 (中間範圍)。
 
-7. 選擇 **"確定**"。 針對測試設定，現在已經設定和儲存診斷追蹤收集器設定。
+7. 選擇 [確定]。 針對測試設定，現在已經設定和儲存診斷追蹤收集器設定。
 
     ::: moniker range="vs-2017"
     > [!TIP]
@@ -64,7 +64,7 @@ ms.locfileid: "80880321"
     ::: moniker-end
     ::: moniker range=">=vs-2019"
     > [!TIP]
-    > 要重置此診斷資料適配器的配置,請選擇「**重置為 Visual** Studio 中預設配置」。
+    > 若要重設此診斷資料介面卡的設定，請選擇 Visual Studio 中的 [**重設為預設設定**]。
     ::: moniker-end
 
 ## <a name="see-also"></a>另請參閱

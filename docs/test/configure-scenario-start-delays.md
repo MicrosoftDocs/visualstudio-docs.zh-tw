@@ -1,19 +1,19 @@
 ---
 title: 設定負載測試的情節啟動延遲
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, scenarios, start delays
 ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f962306462538717df694d3bc47719fe31b1e1fe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0d425b457056e256c5c9ed927c99adf002b78dd9
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76111471"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288789"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>在負載測試中設定情節啟動延遲
 
@@ -30,7 +30,7 @@ ms.locfileid: "76111471"
 您可以使用 [負載測試編輯器] 來變更 [屬性]**** 視窗中的 [延遲開始時間]**** 屬性，藉以指定在負載測試中啟動情節之前的延遲。
 
 > [!NOTE]
-> 有關負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
+> 如需負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
 
 當您需要某個情節開始產生另一個情節會使用的項目時，就是您可能會想要使用 [延遲開始時間]**** 屬性的其中一個執行個體範例。 您可以延遲使用項目的情節，讓產生項目的情節可以填入一些資料。
 

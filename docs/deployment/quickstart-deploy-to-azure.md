@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 842f7912d88031d720f438800ef6b54133ce05c9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 19eca9747fa4e9ef80f7de05799a2cee685ce821
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184482"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285518"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至 Azure App Service
 
@@ -37,7 +37,7 @@ ms.locfileid: "84184482"
 
 1. 在 [**發佈**] 對話方塊中，選取 [ **Azure**]。
 
-    ![選擇發行目標](../deployment/media/quickstart-publish-azure.png)
+    ![選擇發行目標](../deployment/media/quickstart-publish-azure-new.png)
 
 1. 選取 [Azure App Service （Windows）] * * 和 **[下一步]**。
 

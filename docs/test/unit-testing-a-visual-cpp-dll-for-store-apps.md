@@ -1,20 +1,20 @@
 ---
-title: 如何測試 UWP 應用的C++ DLL
+title: 如何測試適用于 UWP 應用程式的 c + + DLL
 ms.date: 05/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: jillfra
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7b556f085ae4e4a9c610aefa87b3f9125fb27042
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77274453"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285605"
 ---
-# <a name="how-to-test-a-c-dll"></a>如何測試C++ DLL
+# <a name="how-to-test-a-c-dll"></a>如何測試 c + + DLL
 
 本主題提供一種方式，說明如何使用適用於 C++ 的 Microsoft 單元測試架構，來為通用 Windows 平台 (UWP) app 的 C++ DLL 建立單元測試。 RooterLib DLL 會藉由實作計算某數值的平方根估計數函式，示範微積分中極限理論的模糊記憶。 接著可將這個 DLL 包含在 UWP 應用程式中，以向使用者顯示可利用數學完成的有趣運算。
 
@@ -22,7 +22,7 @@ ms.locfileid: "77274453"
 
 本主題還會建立單一 Visual Studio 方案，以及用於單元測試和要測試之 DLL 的個別專案。 您也可以直接在 DLL 專案中包含單元測試，或是針對單元測試和 .DLL 建立個別方案。 如需使用何種結構的秘訣，請參閱[將單元測試新增至現有的 C++ 應用程式](../test/how-to-use-microsoft-test-framework-for-cpp.md)。
 
-## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a>創建解決方案和單元測試專案
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a>建立方案和單元測試專案
 
 ::: moniker range="vs-2019"
 
@@ -58,7 +58,7 @@ ms.locfileid: "77274453"
 
          在測試執行時，會建立每個測試類別的執行個體。 將會以非指定的順序來呼叫測試方法。 您可以定義在每個模組、類別或方法之前和之後叫用的特殊方法。 如需詳細資訊，請參閱[使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)。
 
-## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a>驗證測試是否在測試資源管理器中運行
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a>確認測試在 Test Explorer 中執行
 
 1. 插入一些測試程式碼：
 
@@ -73,22 +73,22 @@ ms.locfileid: "77274453"
 
 2. 選擇 [測試]**** 功能表上的 [執行]****，然後選擇 [全部執行]****。
 
-     測試專案隨即建置並執行。 將顯示 **"測試資源管理器"** 視窗，測試列在 **"通過測試"** 下。 視窗底部的 **"摘要"** 窗格提供有關所選測試的其他詳細資訊。
+     測試專案隨即建置並執行。 [**測試瀏覽器**] 視窗隨即出現，且測試會列在 [**通過的測試**] 底下。 視窗底部的 [**摘要**] 窗格會提供有關所選取測試的其他詳細資料。
 
      ![測試總管](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
-## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a>將 DLL 專案添加到解決方案
+## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a>將 DLL 專案加入至方案
 
 ::: moniker range="vs-2019"
 
-在**解決方案資源管理器中**，選擇解決方案名稱。 從捷徑功能表選擇 [新增]****，然後選擇 [新增專案]****。 在 [新增專案]**** 對話方塊中，將 [語言]**** 設為 C++，並在搜尋方塊中鍵入 "DLL"。 從結果清單中，選擇 [單元測試應用程式 (通用 Windows - C++/CX)****。
+在 [**方案總管**中，選擇方案名稱。 從捷徑功能表選擇 [新增]****，然後選擇 [新增專案]****。 在 [新增專案]**** 對話方塊中，將 [語言]**** 設為 C++，並在搜尋方塊中鍵入 "DLL"。 從結果清單中，選擇 [單元測試應用程式 (通用 Windows - C++/CX)****。
 
 ![建立 RooterLib 專案](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-在**解決方案資源管理器中**，選擇解決方案名稱。 從捷徑功能表選擇 [新增]****，然後選擇 [新增專案]****。
+在 [**方案總管**中，選擇方案名稱。 從捷徑功能表選擇 [新增]****，然後選擇 [新增專案]****。
 
 ![建立 RooterLib 專案](../test/media/ute_cpp_windows_rooterlib_create.png)
 
@@ -124,13 +124,13 @@ ms.locfileid: "77274453"
 
 3. 將 ROOTERLIB_EXPORTS 符號加入命令列。
 
-    1. 在**解決方案資源管理器**中，選擇**RooterLib**專案，然後從快顯功能表中選擇 **"屬性**"。
+    1. 在**方案總管**中，選擇 [ **RooterLib** ] 專案，然後從快捷方式功能表中選擇 [**屬性**]。
 
          ![加入前置處理器符號定義](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
-    2. 在**RooterLib 屬性頁**對話方塊中，展開**配置屬性**，展開**C++** 並選擇**預處理器**。
+    2. 在 [ **RooterLib 屬性頁**] 對話方塊中，展開 [設定**屬性**]，展開 [ **c + +** ]，選擇 [**預處理器**]
 
-    3. 從 **"預處理器定義"** 清單中選擇**\<"編輯...>"，** 然後在`ROOTERLIB_EXPORTS`**"預處理器定義"** 對話方塊中添加。
+    3. **\<Edit...>** 從 [**預處理器定義**] 清單中選擇，然後 `ROOTERLIB_EXPORTS` 在 [**預處理器定義**] 對話方塊中加入。
 
 4. 加入已宣告函式的最低限度實作。 開啟 *RooterLib.cpp* 並新增下列程式碼︰
 
@@ -166,7 +166,7 @@ ms.locfileid: "77274453"
        #include "..\RooterLib\RooterLib.h"
        ```
 
-3. 加入使用已匯入函式的測試。 將以下代碼添加到*unittest1.cpp*：
+3. 加入使用已匯入函式的測試。 將下列程式碼新增至*unittest1.cpp*：
 
    ```cpp
    TEST_METHOD(BasicTest)
@@ -188,7 +188,7 @@ ms.locfileid: "77274453"
 
 4. 建置方案。
 
-    新測試將顯示在 **"未運行測試**"節點中的**測試資源管理器**中。
+    新測試會出現在 [**測試瀏覽器**] 的 [**未執行的測試**] 節點中。
 
 5. 在 [測試總管]**** 中，選擇 [全部執行]****。
 
@@ -196,7 +196,7 @@ ms.locfileid: "77274453"
 
    您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a>反覆運算增強測試並使其通過
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a>反復擴充測試並使其通過
 
 1. 加入新的測試：
 
@@ -249,7 +249,7 @@ ms.locfileid: "77274453"
 
     ```
 
-5. 生成解決方案，然後在**測試資源管理器**中，選擇 **"全部運行**"。
+5. 建立方案，然後在 [**測試瀏覽器**] 中選擇 [**全部執行**]。
 
      這兩個測試都通過。
 
@@ -291,7 +291,7 @@ ms.locfileid: "77274453"
 
 2. 在 [測試總管]**** 中，選擇 [全部執行]****。
 
-    測試失敗。 在**測試資源管理器**中選擇測試名稱。 失敗的判斷提示會反白顯示。 [測試總管]**** 的詳細資料窗格中會顯示失敗的訊息。
+    測試失敗。 在 [**測試瀏覽器**] 中選擇測試名稱。 失敗的判斷提示會反白顯示。 [測試總管]**** 的詳細資料窗格中會顯示失敗的訊息。
 
     ![NegativeRangeTests 失敗](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -319,13 +319,13 @@ ms.locfileid: "77274453"
 
        ```
 
-   1. 在**測試資源管理器中**，選擇 **"全部運行"** 以測試校正的方法，並確保尚未引入回歸。
+   1. 在 [**測試瀏覽器**] 中，選擇 [**全部執行**] 測試已更正的方法，並確定您未引進回歸。
 
    現在所有測試都通過了。
 
    ![所有測試都成功](../test/media/ute_ult_alltestspass.png)
 
-## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a>在不更改測試的情況下重構代碼
+## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a>重構程式碼而不變更測試
 
 1. 簡化 `SquareRoot` 函式的主要計算：
 

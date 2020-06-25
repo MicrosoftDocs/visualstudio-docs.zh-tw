@@ -1,18 +1,18 @@
 ---
 title: 單元測試以舊版.NET Framework 為目標
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596017"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288165"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：設定以舊版 .NET Framework 為目標的單元測試
 
@@ -24,7 +24,7 @@ ms.locfileid: "75596017"
 
 - 您可以在本機電腦上的 Visual Studio 執行以特定版本 .NET Framework 為目標的單元測試。
 
-- 可以使用命令提示符中的*MSTest.exe*運行針對 .NET 框架特定版本的單元測試。
+- 您可以從命令提示字元使用*MSTest.exe* ，來執行以特定 .NET Framework 版本為目標的單元測試。
 
 - 您可以於建置過程中在組建代理程式上執行單元測試。
 
@@ -54,7 +54,7 @@ ms.locfileid: "75596017"
 
      隨即會顯示您的 Visual Basic 測試專案屬性。
 
-3. 在 **"編譯"** 選項卡上，選擇如下圖所示**的高級編譯選項**。
+3. 在 [**編譯**] 索引標籤上，選擇 [**先進的編譯選項**]，如下圖所示。
 
      ![進階編譯選項](../test/media/howtoconfigureunittest35frameworka.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "75596017"
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>為 C# 單元測試專案重定目標
 
-1. 創建新的 C#**單元測試專案**專案。
+1. 建立新的 c #**單元測試專案**專案。
 
 2. 在 [方案總管]**** 中，從新的 C# 測試專案右鍵功能表選擇 [屬性]****。
 
@@ -83,9 +83,9 @@ ms.locfileid: "75596017"
 
 2. 在 [方案總管]**** 中，從新的 C++ 測試專案選擇 [卸載專案]****。
 
-3. 在 [方案總管]**** 中，選擇卸載的 C++ 測試專案，然後選擇 [編輯 \<專案名稱>.vcxproj]****。
+3. 在**方案總管**中，選擇 [卸載的 c + +] 測試專案，然後選擇 [**編輯 \<project name> .vcxproj**]。
 
-   *.vcxproj*檔將在編輯器中打開。
+   *.Vcxproj*檔案會在編輯器中開啟。
 
 4. 將標籤為 `"Globals"` 的 `PropertyGroup` 中的 `TargetFrameworkVersion` 設定為版本 3.5 或更新版本。 您不應指定用戶端版本：
 
@@ -100,12 +100,12 @@ ms.locfileid: "75596017"
       </PropertyGroup>
     ```
 
-5. 保存並關閉 *.vcxproj*檔。
+5. 儲存並關閉 *.vcxproj*檔案。
 
 6. 在 [方案總管]**** 中，從新的 C++ 測試專案右鍵功能表選取 [重新載入專案]****。
 
 ## <a name="see-also"></a>另請參閱
 
-- [創建共用點解決方案](../sharepoint/create-sharepoint-solutions.md)
+- [建立 SharePoint 方案](../sharepoint/create-sharepoint-solutions.md)
 - [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [高級編譯器設置對話方塊（可視基本）](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+- [Advanced 編譯器設定對話方塊（Visual Basic）](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

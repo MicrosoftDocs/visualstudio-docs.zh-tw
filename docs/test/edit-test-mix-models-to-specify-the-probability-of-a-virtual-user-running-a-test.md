@@ -1,7 +1,7 @@
 ---
 title: 編輯測試混合模型
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
@@ -9,12 +9,12 @@ ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 62c817a2df6c56f70ab2217292feeb545cf66c85
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8ce54af89164b1a71c7328d04635c8735eec1b28
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593209"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288646"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>編輯測試混合模型以指定虛擬使用者執行測試的可能性
 
@@ -39,17 +39,17 @@ ms.locfileid: "75593209"
 |工作|相關主題|
 |-|-----------------------|
 |**指定負載測試的測試混合：** 建立負載測試時，您可以在 [新增負載測試精靈]**** 中指定負載測試的設定。 在 [新增負載測試精靈]**** 中，您可以選擇要加入至初始情節的現有 Web 和單元測試。 當您將測試加入至情節之後，就可以指定情節的測試混合。<br /><br /> 使用負載模型選項，可以讓您對進行負載測試中的網站或應用程式，更為準確地預測其預期真實使用情況。 這是相當重要的，因為不是奠基於準確負載模型的負載測試，可能會產生誤導的結果。|-   [模擬網站或應用程式的預期實際使用情況](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
-|**編輯測試混合模型：** 您可以使用**負載測試編輯器**更改負載測試情節以使用測試混合模型之一。||
-|**為按使用者步調的測試混合模型設定步調延遲：** 如果您的負載測試情節已設定為使用 [按使用者步調的測試混合模型]****，您可以指定設定分佈步調延遲的方式。|-   [如何：使用使用者步速測試混合模型時，將分佈應用於起搏延遲](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
+|**編輯測試混合模型：** 您可以使用**負載測試編輯器**，將負載測試情節變更為使用其中一種測試混合模型。||
+|**為按使用者步調的測試混合模型設定步調延遲：** 如果您的負載測試情節已設定為使用 [按使用者步調的測試混合模型]****，您可以指定設定分佈步調延遲的方式。|-   [如何：在使用使用者步調測試混合模型時，將分佈套用到步調延遲](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 
 ## <a name="change-the-test-mix-model-in-a-scenario"></a>變更情節中的測試混合模型
 
-使用 **"新負載測試精靈**"創建負載測試後，可以使用**負載測試編輯器**更改方案屬性以滿足測試需求和目標。
+使用**新的負載測試精靈**來建立負載測試之後，您可以使用**負載測試編輯器**來變更情節屬性，以符合您的測試需求和目標。
 
 > [!NOTE]
-> 有關負載設置屬性及其說明的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
+> 如需負載設定屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
 
-使用**負載測試編輯器**，您可以通過在 **"屬性"** 視窗中編輯**測試混合類型**屬性來更改負載測試情節中的測試混合模型。
+使用**負載測試編輯器**，您可以在 [**屬性**] 視窗中編輯 [**測試混合類型**] 屬性，藉以變更負載測試情節中的測試混合模型。
 
 ### <a name="to-change-the-test-mix-model"></a>若要變更測試混合模型
 
@@ -73,7 +73,7 @@ ms.locfileid: "75593209"
 
 7. (選擇性) 使用核取方塊並選取所要的測試，指定要初始化或結束的 Web 效能與單元測試。 如需詳細資訊，請參閱[模擬網站或應用程式的預期實際使用情況](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)。
 
-8. 選擇 **"確定**"。
+8. 選擇 [確定]。
 
      [屬性]**** 視窗隨即為 [測試混合類型]**** 屬性顯示新的測試混合模型。
 

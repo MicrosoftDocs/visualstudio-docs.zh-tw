@@ -1,7 +1,7 @@
 ---
 title: 為 Web 效能測試撰寫自訂擷取規則程式碼
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - extraction rules
 - Web performance tests, creating custom extraction rules
@@ -13,12 +13,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 92cce705135daa8bc54a7fab301cf5dcd8cf96d6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 00001662667ed7020909d23cf3cfbd4b8437eabf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591173"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288880"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂擷取規則程式碼
 
@@ -46,7 +46,7 @@ ms.locfileid: "75591173"
 
 6. (選擇性) 在測試專案中，新增包含自訂擷取規則的類別庫專案參考。
 
-7. 在測試專案中，在**Web 效能測試編輯器**中打開 Web 效能測試。
+7. 在測試專案中，開啟**Web 效能測試編輯器**中的 web 效能測試。
 
 8. 若要新增自訂擷取規則，請以滑鼠右鍵按一下 Web 效能測試要求，然後選取 [新增擷取規則]****。
 

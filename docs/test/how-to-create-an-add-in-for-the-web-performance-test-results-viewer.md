@@ -1,7 +1,7 @@
 ---
 title: 建立 Web 效能測試結果檢視器的增益集
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, Visual Studio Add-in
 - Visual Studio Add-in, Web performance tests
@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6da2686a5a68325101e7161a51a8144e7ef42b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 736c43a83a956c02b760b4909a427a82c6fa9e4c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589080"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287827"
 ---
-# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>如何：為 Web 效能測試結果檢視器創建外接程式
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>如何：建立 Web 效能測試結果檢視器的增益集
 
 您可以使用下列命名空間來擴充 [Web 效能測試結果檢視器]**** 的 UI：
 
@@ -24,7 +24,7 @@ ms.locfileid: "75589080"
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-此外，您需要添加對 LoadTest 包 DLL 的引用，該 DLL 位於 *%程式檔 （x86）%\微軟視覺化工作室\\\<版本>_企業_Common7_IDE_私用組件*資料夾中。
+此外，您還需要新增 LoadTestPackage DLL 的參考，這個 DLL 位於 *% ProgramFiles （x86）% \ Microsoft Visual Studio \\ \<version> \Enterprise\Common7\IDE\PrivateAssemblies*資料夾中。
 
 若要擴充 [Web 效能測試結果檢視器]**** 的 UI，您必須建立 Visual Studio 增益集和使用者控制項。 下列程序將說明如何建立增益集、使用者控制項，以及如何實作必要的類別，以便擴充 [Web 效能測試結果檢視器]**** 的 UI。
 
@@ -37,7 +37,7 @@ ms.locfileid: "75589080"
 建立或開啟您可以用來實驗的非生產環境方案，其中包含 ASP.NET Web 應用程式以及 Web 效能和負載測試專案 (含有 ASP.NET Web 應用程式的一個或多個效能測試)。
 
 > [!NOTE]
-> 您可以按照["如何創建 Web 服務測試"](../test/how-to-create-a-web-service-test.md)中的過程創建包含 Web 效能測試的ASP.NET Web 應用程式和 Web 性能和負載測試專案：創建 Web 服務測試並[生成並運行編碼的 Web 效能測試](../test/generate-and-run-a-coded-web-performance-test.md)。
+> 您可以遵循[如何：建立 web 服務測試](../test/how-to-create-a-web-service-test.md)和[產生及執行自動程式化 web 效能測試](../test/generate-and-run-a-coded-web-performance-test.md)中的程式，建立包含 web 效能測試的 ASP.NET web 應用程式和 web 效能和負載測試專案。
 
 ## <a name="create-a-visual-studio-add-in"></a>建立 Visual Studio 增益集
 
@@ -49,13 +49,13 @@ ms.locfileid: "75589080"
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>若要使用增益集精靈建立增益集
 
-1. 在 **"解決方案資源管理器"** 中，按右鍵解決方案，選擇 **"添加**"，然後選擇 **"新專案**"。
+1. 在**方案總管**中，以滑鼠右鍵按一下方案，選擇 [**加入**]，然後選取 [**新增專案**]。
 
 2. 建立新的 **Visual Studio 增益集**專案。
 
     Visual Studio [增益集精靈]**** 隨即啟動。
 
-3. 選擇 [下一步]****。
+3. 選擇 [下一步]。
 
 4. 在 [選取程式設計語言]**** 頁面上，選取您要用來撰寫增益集的程式設計語言。
 
@@ -64,13 +64,13 @@ ms.locfileid: "75589080"
 
 5. 在 [選擇主應用程式]**** 頁面上，選取 [Visual Studio]**** 並清除 [Visual Studio 巨集]****。
 
-6. 選擇 [下一步]****。
+6. 選擇 [下一步]。
 
 7. 在 [輸入名稱和描述]**** 頁面中，鍵入增益集的名稱和描述。
 
      建立增益集之後，其名稱和描述會顯示在 [增益集管理員]**** 的 [可用的增益集]**** 清單中。 您可以為增益集加入詳細的描述資料，讓使用者了解增益集的功能、運作方式等。
 
-8. 選擇 [下一步]****。
+8. 選擇 [下一步]。
 
 9. 在 [選擇增益集選項]**** 頁面上，選取 [當主應用程式啟動時載入增益集]****。
 
@@ -80,7 +80,7 @@ ms.locfileid: "75589080"
 
      可新增至 Visual Studio [關於]**** 對話方塊的資訊包括版本號碼、支援詳細資料、授權資料等等。
 
-12. 選擇 [下一步]****。
+12. 選擇 [下一步]。
 
 13. 您所選取的選項就會顯示在 [摘要]**** 頁面上，供您檢閱。 如果您對設定感到滿意，請選擇 [完成]**** 建立增益集。 如果您想要變更某些設定，請選擇 [上一頁]**** 按鈕。
 
@@ -109,7 +109,7 @@ ms.locfileid: "75589080"
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>若要建立要用於 Web 測試結果檢視器的控制項
 
-1. 在 **"解決方案資源管理器"** 中，按右鍵解決方案，選擇 **"添加**"，然後選擇 **"新專案**"。
+1. 在**方案總管**中，以滑鼠右鍵按一下方案，選擇 [**加入**]，然後選取 [**新增專案**]。
 
 2. 建立新的 **Windows Forms 控制項程式庫**專案。
 
@@ -129,7 +129,7 @@ ms.locfileid: "75589080"
 
     5. 清除 [標題文字]**** 中的文字 "Column1"。
 
-    6. 選擇 **"添加**"。
+    6. 選擇 [**新增**]。
 
     7. 選擇 [關閉]****。
 
@@ -164,7 +164,7 @@ ms.locfileid: "75589080"
 
 3. 向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework** 和 **System.Windows.Forms**。
 
-4. 選擇 **"確定**"。
+4. 選擇 [確定]。
 
 5. 再次以滑鼠右鍵按一下 [參考]**** 節點，然後選取 [新增參考]****。
 
@@ -172,7 +172,7 @@ ms.locfileid: "75589080"
 
 7. 選擇 [查詢]**** 下拉式清單並巡覽至 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*，然後選取 *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* 檔案。
 
-8. 選擇 **"確定**"。
+8. 選擇 [確定]。
 
 9. 以滑鼠右鍵按一下 WebPerfTestResultsViewerAddin 專案節點，然後選取 [新增參考]****。
 
@@ -256,7 +256,7 @@ ms.locfileid: "75589080"
 
 1. 在 [方案總管]**** 中，以滑鼠右鍵按一下 WebPerfTestResultsViewerControl 專案節點，然後選取 [屬性]****。
 
-2. 選取 [應用程式]**** 索引標籤，然後選擇 [目標 Framework]**** 下拉式清單並選取 [.NET Framework 4]**** (或更新版本)。 關閉 **"屬性"** 視窗。
+2. 選取 [應用程式]**** 索引標籤，然後選擇 [目標 Framework]**** 下拉式清單並選取 [.NET Framework 4]**** (或更新版本)。 關閉 [**屬性**] 視窗。
 
    這是支援擴充 [Web 效能測試結果檢視器]**** 所需之 DLL 參考的必要步驟。
 
@@ -266,7 +266,7 @@ ms.locfileid: "75589080"
 
 5. 向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**。
 
-6. 選擇 **"確定**"。
+6. 選擇 [確定]。
 
 7. 在 *UserControl1.cs* 檔案中，加入下列 Using 陳述式：
 
@@ -312,7 +312,7 @@ ms.locfileid: "75589080"
 
 3. 在 [可用的增益集]**** 資料行中，選取 WebPerfTestResultsViewerAddin 增益集的核取方塊，並且清除 [啟動]**** 和 [命令列]**** 資料行下方的核取方塊。
 
-4. 選擇 **"確定**"。
+4. 選擇 [確定]。
 
 ## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>使用 Web 測試結果檢視器執行 Web 效能測試
 

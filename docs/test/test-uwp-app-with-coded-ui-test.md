@@ -1,7 +1,7 @@
 ---
 title: 使用自動程式化 UI 測試來測試 UWP 應用程式
 ms.date: 05/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: fdd3d98bd848bb6fe679809a58f2e316a316f012
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aad17d244d70051a363a4cde294c592968093ba0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590354"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286748"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>建立自動程式化 UI 測試來測試 UWP 應用程式
 
@@ -57,7 +57,7 @@ ms.locfileid: "75590354"
    Me.textBox.Text = Me.button.Name
    ```
 
-1. 按**Ctrl**+**F5**運行應用程式。 您應該會看到如下的內容：
+1. 按**Ctrl** + **F5**執行應用程式。 您應該會看到如下的內容：
 
    ![含有按鈕和文字方塊的 UWP 應用程式](media/uwp-app.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "75590354"
 
    ![[產生自動程式化 UI 測試的程式碼] 對話方塊](../test/media/manually-edit-the-test.png)
 
-1. 如果您的 UWP 應用尚未運行，請按**Ctrl**+**F5**啟動它。
+1. 如果您的 UWP 應用程式尚未執行，請按**Ctrl** + **F5**加以啟動。
 
 1. 開啟 [自動程式化 UI 測試產生器]**** 對話方塊，方法是將游標置於 `CodedUITestMethod1` 方法，然後選擇 [測試]**** > [產生自動程式化 UI 測試的程式碼]**** > [使用自動程式化 UI 測試產生器]****。
 
@@ -98,7 +98,7 @@ ms.locfileid: "75590354"
 
      ![按一下按鈕控制項以設定 Textbox 值](../test/media/uwp-app-button-textbox.png)
 
-1. 新增判斷提示，以確認文字方塊控制項中的文字。 使用交叉線工具選取文字方塊控制項，然後在 [新增判斷提示]**** 對話方塊中選取 [文字]**** 屬性。 然後，選取 [新增判斷提示]**** 或按 **Alt**+**A**。 在 [判斷提示失敗的訊息]**** 方塊中，輸入 **extbox value is unexpected.**， 然後選擇 **"確定**"。
+1. 新增判斷提示，以確認文字方塊控制項中的文字。 使用交叉線工具選取文字方塊控制項，然後在 [新增判斷提示]**** 對話方塊中選取 [文字]**** 屬性。 然後，選取 [新增判斷提示]**** 或按 **Alt**+**A**。 在 [判斷提示失敗的訊息]**** 方塊中，輸入 **extbox value is unexpected.**， 然後選取 **[確定]**。
 
      ![使用交叉線工具選擇文字方塊新增判斷提示](../test/media/add-assertion-for-text.png)
 

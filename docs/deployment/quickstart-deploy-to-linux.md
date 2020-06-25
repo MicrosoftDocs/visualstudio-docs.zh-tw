@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 1a6500b8b38cc6beef21e7da301ec8e1ef7d4bd6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 5b0b45d586fb6eb89eb458329f611d980d9415e0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173226"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285465"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET Core 應用程式發行至 Linux 上的 App Service
 
@@ -36,7 +36,7 @@ ms.locfileid: "84173226"
 
 1. 在 [**發佈**] 對話方塊中，選取 [ **Azure**]。
 
-    ![選擇發行目標](../deployment/media/quickstart-publish-azure.png)
+    ![選擇發行目標](../deployment/media/quickstart-publish-azure-new.png)
 
 1. 選取 [ **Azure App Service （Linux）** **] 和 [下一步]**。
 

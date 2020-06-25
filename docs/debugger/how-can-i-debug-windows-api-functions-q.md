@@ -1,7 +1,7 @@
 ---
 title: Debug Windows API 函式 |Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2016
+ms.date: 06/03/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.api
@@ -22,19 +22,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b5f3842160f4ffc6cecd41e65dd05ab7566dd0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c4141cc1c1bee201435c63317c662181113dff70
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734354"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286398"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>如何偵錯 Windows API 函式？
 如果要偵錯已載入 NT 符號的 Windows API 函式，必須進行下列步驟。
 
 ### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>若要在含載入之 NT 符號的 Windows API 函式上設定中斷點
 
-- 輸入加上函式所在 DLL 名稱的函式名稱。 在 32 位元程式碼中，請使用函式名稱的裝飾形式。 例如，若要在 **MessageBeep** 上設定中斷點，您必須輸入下列程式碼。
+- 在函式[中斷點](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file)中，輸入函式名稱並加上函式所在的 DLL 名稱（請參閱[內容運算子](../debugger/context-operator-cpp.md)）。 在 32 位元程式碼中，請使用函式名稱的裝飾形式。 例如，若要在 **MessageBeep** 上設定中斷點，您必須輸入下列程式碼。
 
     ```cpp
     {,,USER32.DLL}_MessageBeep@4
@@ -42,6 +42,14 @@ ms.locfileid: "72734354"
 
      若要取得裝飾名稱，請參閱[查看裝飾名稱](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0)。
 
-## <a name="see-also"></a>請參閱
-- [偵錯機器碼常見問題集](../debugger/debugging-native-code-faqs.md)
+     您可以測試裝飾名稱，並在反組解碼程式碼中加以查看。 在 Visual Studio 偵錯工具的函式中暫停時，以滑鼠右鍵按一下 [程式碼編輯器] 或 [呼叫堆疊] 視窗中的函式，然後選擇 [**移至**反組解碼]。
+
+- 在64位程式碼中，您可以使用未修飾的名稱。
+
+    ```cpp
+    {,,USER32.DLL}MessageBeep
+    ```
+
+## <a name="see-also"></a>另請參閱
+- [機器碼偵錯 FAQ](../debugger/debugging-native-code-faqs.md)
 - [偵錯機器碼](../debugger/debugging-native-code.md)

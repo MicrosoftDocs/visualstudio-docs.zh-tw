@@ -11,16 +11,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70ce19a6dcd9c61b0e14d0d88c52072f59f87fb9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631155"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289140"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>逐步解說：建立內嵌工作
 
-MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 從 .NET Framework 4 版開始，您可以在專案檔中建立內嵌工作。 您不必建立個別的組件來裝載工作。 有關詳細資訊，請參閱[內聯任務](../msbuild/msbuild-inline-tasks.md)。
+MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 從 .NET Framework 4 版開始，您可以在專案檔中建立內嵌工作。 您不必建立個別的組件來裝載工作。 如需詳細資訊，請參閱[內嵌](../msbuild/msbuild-inline-tasks.md)工作。
 
  本逐步解說示範如何建立並執行這些內嵌工作：
 
@@ -46,11 +46,11 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 #### <a name="to-create-and-modify-a-project-file"></a>建立並修改專案檔
 
-1. 在視覺化工作室中，使用 C# Windows**表單應用程式**範本創建新專案。 在 [名稱]**** 方塊中，輸入 `InlineTasks`。 輸入方案的 [位置]****，例如 *D:\\*。 確認已選取 [為方案建立目錄]****、已取消選取 [加入至原始檔控制]****，且 [方案名稱]**** 為 **InlineTasks**。
+1. 在 Visual Studio 中，使用 c # **Windows Forms 應用程式**範本建立新的專案。 在 [名稱]**** 方塊中，輸入 `InlineTasks`。 輸入方案的 [位置]****，例如 *D:\\*。 確認已選取 [為方案建立目錄]****、已取消選取 [加入至原始檔控制]****，且 [方案名稱]**** 為 **InlineTasks**。
 
 3. 按一下 [確定]**** 以建立專案檔。
 
-3. 在**解決方案資源管理器**中，按右鍵**內聯任務**專案節點，然後按一下 **"卸載專案**"。
+3. 在**方案總管**中，以滑鼠右鍵按一下**InlineTasks**專案節點，然後按一下 **[卸載專案**]。
 
 4. 再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 InlineTasks.csproj]****。
 
@@ -86,7 +86,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 3. 儲存專案檔。
 
-   此代碼創建名為 Hello 的內聯任務，該任務沒有參數、引用或`Using`指令。 Hello 工作僅包含一行程式碼，它會在預設記錄裝置 (通常是在主控台視窗) 上顯示 hello 訊息。
+   這段程式碼會建立名為 Hello 的內嵌工作，而且沒有參數、參考或指示詞 `Using` 。 Hello 工作僅包含一行程式碼，它會在預設記錄裝置 (通常是在主控台視窗) 上顯示 hello 訊息。
 
 ### <a name="run-the-hello-task"></a>執行 Hello 工作
 
@@ -96,9 +96,9 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 1. 按一下 [開始]****，按一下 [所有程式]****，接著尋找 **Visual Studio Tools** 資料夾，然後按一下 [Visual Studio 命令提示字元]****。
 
-2. 在**命令提示視窗中**，找到包含專案檔案的資料夾，在這種情況下 *，D：\內聯任務\內聯任務\\*。
+2. 在 [**命令提示字元] 視窗**中，找出包含專案檔的資料夾，在此案例中為*為 d:\inlinetasks\inlinetasks \\ *。
 
-3. 鍵入沒有命令開關**的 msbuild，** 然後按**Enter**。 預設情況下，這將生成*內聯Tasks.csproj*檔並處理預設目標 TestBuild，該目標調用 Hello 任務。
+3. 輸入**msbuild**但不輸入命令參數，然後按**enter**。 根據預設，這會建立*InlineTasks .csproj*檔案，並處理預設的目標 TestBuild，以叫用 Hello 工作。
 
 4. 檢查「命令提示字元視窗」**** 中的輸出。 您應該會看到下列這一行：
 
@@ -133,7 +133,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
    </Target>
    ```
 
-2. 在**命令提示視窗中**，鍵入沒有命令開關**的 msbuild，****然後按**Enter 。 根據預設，這會處理叫用 Echo 工作的預設目標 TestBuild。
+2. 在 [**命令提示字元] 視窗**中，輸入**msbuild**但不輸入命令參數，然後按**enter**。 根據預設，這會處理叫用 Echo 工作的預設目標 TestBuild。
 
 3. 檢查「命令提示字元視窗」**** 中的輸出。 您應該會看到下列這一行：
 
@@ -170,7 +170,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
    </Target>
    ```
 
-2. 在**命令提示視窗中**，鍵入沒有命令開關**的 msbuild，****然後按**Enter 。 根據預設，這會處理叫用 Echo 工作的預設目標 TestBuild。
+2. 在 [**命令提示字元] 視窗**中，輸入**msbuild**但不輸入命令參數，然後按**enter**。 根據預設，這會處理叫用 Echo 工作的預設目標 TestBuild。
 
 3. 檢查「命令提示字元視窗」**** 中的輸出。 您應該會看到下列這一行：
 
@@ -226,7 +226,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
    </Target>
    ```
 
-2. 在**命令提示視窗中**，鍵入沒有命令開關**的 msbuild，****然後按**Enter 。 根據預設，這會處理會叫用 RegX 工作的預設目標 TestBuild。
+2. 在 [**命令提示字元] 視窗**中，輸入**msbuild**但不輸入命令參數，然後按**enter**。 根據預設，這會處理會叫用 RegX 工作的預設目標 TestBuild。
 
 3. 檢查「命令提示字元視窗」**** 中的輸出。 您應該會看到下列這幾行：
 
@@ -250,20 +250,22 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 ### <a name="handle-reserved-characters"></a>處理保留字元
 
- MSBuild 剖析器會以 XML 的方式處理內嵌工作。 在 XML 中具備保留意義的字元 (例如 "\<" 和 ">") 會以如同 XML (而非 .NET 原始碼) 的方式偵測與處理。 若要在程式碼運算式中包含保留字元 (例如 `Files.Length > 0`)，請撰寫 `Code` 元素，讓其內容包含在 CDATA 運算式中，如下所示︰
+ MSBuild 剖析器會以 XML 的方式處理內嵌工作。 在 XML 中具有保留意義的字元（例如 " \<" and "> "）會被偵測並處理為 xml，而不是 .net 原始碼。 若要在程式碼運算式中包含保留字元 (例如 `Files.Length > 0`)，請撰寫 `Code` 元素，讓其內容包含在 CDATA 運算式中，如下所示︰
 
  ```xml
 <Code Type="Fragment" Language="cs">
   <![CDATA[
 
-  // Your code goes here.
-
+  if (Files.Length > 0)
+  {
+      // Your code goes here.
+  }
   ]]>
 </Code>
 ```
 
 ## <a name="see-also"></a>另請參閱
 
-- [內聯任務](../msbuild/msbuild-inline-tasks.md)
+- [內嵌工作](../msbuild/msbuild-inline-tasks.md)
 - [工作](../msbuild/msbuild-tasks.md)
 - [目標](../msbuild/msbuild-targets.md)

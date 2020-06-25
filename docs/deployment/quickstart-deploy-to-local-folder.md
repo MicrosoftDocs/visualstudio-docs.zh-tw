@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3355636eba7556a472d8ce272437fb07c30714be
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: da13cb2b249146c7a29abbab03b66f77594abf4b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184151"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285398"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>使用 Visual Studio 將應用程式部署到本機資料夾
 
@@ -34,7 +34,7 @@ ms.locfileid: "84184151"
 
 1. 在 [**發行**] 對話方塊中，選取 [**資料夾**]。
 
-    ![選擇資料夾作為發佈目標](../deployment/media/quickstart-publish-folder.png "選擇資料夾")
+    ![選擇資料夾作為發佈目標](../deployment/media/quickstart-publish-folder-new.png "選擇資料夾")
 
 1. 輸入路徑，或選取 **[流覽]** 以指定資料夾。
 

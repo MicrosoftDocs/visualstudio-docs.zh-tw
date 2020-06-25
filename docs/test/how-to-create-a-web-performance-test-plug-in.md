@@ -1,7 +1,7 @@
 ---
 title: 建立 Web 效能測試外掛程式
 ms.date: 10/03/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.web.webtestplugin
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc2eeafa41b953f9d853c7ff435a6a9706ae73ca
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c9651f4003647e18ba52e916aeb21e176274de5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589106"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287931"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>如何：建立 Web 效能測試外掛程式
 
@@ -29,35 +29,35 @@ Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式�
 自訂的 Web 效能測試外掛程式可以搭配您所錄製的 Web 效能測試使用，使您能夠以最少量的程式碼，達成對 Web 測試的更高層級控制。 但是，自訂的 Web 效能測試外掛程式也可以與 Web 效能測試程式碼搭配使用。 如需詳細資訊，請參閱[產生和執行 Web 效能測試程式碼](../test/generate-and-run-a-coded-web-performance-test.md)。
 
 > [!NOTE]
-> 您還可以創建負載測試外掛程式。[請參閱如何：創建負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
+> 您也可以建立負載測試外掛程式。請參閱[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>建立自訂的 Web 效能測試外掛程式
 
 1. 開啟包含 Web 效能測試的 Web 效能和負載測試專案。
 
-2. 在**解決方案資源管理器**中，按右鍵解決方案並選擇 **"添加"，** 然後選擇 **"新專案**"。
+2. 在**方案總管**中，以滑鼠右鍵按一下方案並選取 [**加入**]，然後選擇 [**新增專案**]。
 
 3. 建立新的**類別庫**專案。
 
    新的類別庫專案會加入至 [方案總管]****，而且新的類別會出現在 [程式碼編輯器]**** 中。
 
-4. 在**解決方案資源管理器**中，按右鍵新類庫中的 **"引用"** 資料夾，然後選擇"**增加參考**"。
+4. 在**方案總管**中，以滑鼠右鍵按一下新類別庫中的 [**參考**] 資料夾，然後選取 [**加入參考**]。
 
    [新增參考]**** 對話方塊隨即顯示。
 
 5. 選擇 [.NET]**** 索引標籤並向下捲動，然後選取 [Microsoft.VisualStudio.QualityTools.WebTestFramework]****
 
-6. 選擇 **"確定**"。
+6. 選擇 [確定]。
 
-     對**微軟的引用.VisualStudio.QualityTools.WebTestFramework**被添加到**解決方案資源管理器**中的**參考**資料夾中。
+     **VisualStudio**的參考會加入至**方案總管**的 [**參考**] 資料夾中。
 
-7. 在**解決方案資源管理器**中，按右鍵 Web 性能和負載測試專案的頂部節點，其中包含要向其添加 Web 效能測試外掛程式的負載測試，然後選擇"**添加參考**"。
+7. 在**方案總管**中，以滑鼠右鍵按一下 web 效能和負載測試專案的頂端節點，其中包含您要加入 web 效能測試外掛程式的負載測試，然後選取 [**加入參考**]。
 
-8. **將顯示"添加參考"對話方塊**。
+8. [**加入參考] 對話方塊隨即顯示**。
 
-9. 選擇"**專案**"選項卡並選擇 **"類庫專案**"。
+9. 選擇 [**專案**] 索引標籤，然後選取 [**類別庫] 專案**。
 
-10. 選擇 **"確定**"。
+10. 選擇 [確定]。
 
 11. 在 [程式碼編輯器]**** 中，撰寫外掛程式的程式碼。 首先，建立衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> 的新公用類別。
 
@@ -83,25 +83,25 @@ Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式�
 
 14. 開啟 Web 效能測試。
 
-15. 要添加 Web 效能測試外掛程式，請選擇工具列上的 **"添加 Web 測試外掛程式**"。
+15. 若要加入 web 效能測試外掛程式，請選擇工具列上的 [**加入 Web 測試外掛程式]** 。
 
      [新增 Web 測試外掛程式]**** 對話方塊隨即出現。
 
-16. 在 **"選擇外掛程式"** 下，選擇 Web 效能測試外掛程式類。
+16. 在 **[選取外掛程式]** 底下，選取您的 web 效能測試外掛程式類別。
 
 17. 在 [所選外掛程式的屬性]**** 窗格中，設定外掛程式要在執行階段中使用的初始值。
 
     > [!NOTE]
     > 您可以從外掛程式公開任意數目的屬性，只要讓這些屬性成為公用、可設定且屬於基底型別 (例如整數、布林或字串) 的屬性即可。 您之後也可以使用 [屬性] 視窗來變更 Web 效能測試外掛程式屬性。
 
-18. 選擇 **"確定**"。
+18. 選擇 [確定]。
 
      此外掛程式就會新增至 [Web 測試外掛程式]**** 資料夾。
 
     > [!WARNING]
     > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
-    > **請求失敗：\<外掛程式>事件中的異常：無法載入檔或程式集"\<外掛程式名稱".DLL 檔案>、版本=n.n.n>、\<區域性=中性、PublicKeyToken_null"或其依賴項之一。系統找不到指定的檔。**
+    > **要求失敗：事件中的例外狀況 \<plug-in> ：無法載入檔案或元件 ' \<"Plug-in name".dll file> ，版本 = \<n.n.n.n> ，文化特性 = 中性，PublicKeyToken = null ' 或其相依性的其中之一。系統找不到指定的檔案。**
     >
     > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)**，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
     >
@@ -112,7 +112,7 @@ Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式�
 
 下列程式碼會建立自訂的 Web 效能測試外掛程式，它會將項目加入至代表測試反覆項目的 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestContext> 中。
 
-運行 Web 效能測試後，使用此外掛程式可以在**Web 性能結果檢視器**中的**上下文**選項卡中看到名為**TestiteratonNumber**的添加項。
+執行 web 效能測試之後，您可以使用此外掛程式在 [ **Web 效能結果檢視器**] 的 [**內容**] 索引標籤中，看到名為**看見已 testiteratnionnumber**的新增專案。
 
 ```csharp
 using System;

@@ -1,7 +1,7 @@
 ---
 title: 建立資料驅動的單元測試
 ms.date: 05/08/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
 - vs.test.testresults.unittest.datadriven.failure
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f50dad637d9efa2db347ff9f1b4828abf8c733af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 936c6b2ee9e05d059c09c2aa074829b35b6ca5fd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589184"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287983"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>如何：創建資料驅動的單元測試
+# <a name="how-to-create-a-data-driven-unit-test"></a>如何：建立資料驅動型單元測試
 
 使用適用於受控碼的 Microsoft 單元測試架構，設定單元測試方法來從資料來源擷取值。 這個方法會針對資料來源中每個資料列依序執行，讓您輕鬆地用單一方法來測試各種輸入。
 
@@ -129,9 +129,9 @@ DataSource 屬性有三個建構函式。
 [DataSource(dataSourceSettingName)]
 ```
 
-具有一個參數的建構函式使用存儲在*app.config*檔中的連接資訊來用於解決方案。 *dataSourceSettingsName* 是組態檔中用來指定連接資訊的 XML 項目名稱。
+具有一個參數的處理常式會使用儲存在方案之*app.config*檔案中的連接資訊。 *dataSourceSettingsName* 是組態檔中用來指定連接資訊的 XML 項目名稱。
 
-使用*app.config*檔可以更改資料來源的位置，而無需更改單元測試本身。 有關如何創建和使用*app.config*檔的資訊，請參閱[演練：使用設定檔定義資料來源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+使用*app.config*檔案可讓您變更資料來源的位置，而不需要對單元測試本身進行變更。 如需如何建立及使用*app.config*檔案的詳細資訊，請參閱[逐步解說：使用設定檔來定義資料來源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]
@@ -160,14 +160,14 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>執行測試並檢視結果
 
-當您完成撰寫測試方法後，就可建置測試專案。 測試方法會顯示於 [測試總管]**** 中的 [未執行的測試]**** 群組。 在運行、編寫和重新運行測試時，**測試資源管理器**將結果顯示在 **"失敗測試**、**通過測試****"和"未運行測試**"組中。 您可以選擇 [全部執行] **** 以執行所有測試，或選擇 [執行] **** 以選擇要執行的一小組測試。
+當您完成撰寫測試方法後，就可建置測試專案。 測試方法會顯示於 [測試總管]**** 中的 [未執行的測試]**** 群組。 當您執行、撰寫及重新執行測試時，[**測試瀏覽器**] 會將結果顯示在**失敗的測試**群組、通過的**測試**，而且**不會執行測試**。 您可以選擇 [全部執行] **** 以執行所有測試，或選擇 [執行] **** 以選擇要執行的一小組測試。
 
-[測試總管]**** 頂端的測試結果列會隨您的測試回合產生動畫效果。 在測試回合結束時，如果所有的測試都通過，狀態列會變成綠色，如果有任何測試失敗則變成紅色。 測試回合的摘要將顯示在**測試資源管理器**視窗底部的詳細資訊窗格中。 在底部窗格中選取某個測試以檢視該測試的詳細資料。
+[測試總管]**** 頂端的測試結果列會隨您的測試回合產生動畫效果。 在測試回合結束時，如果所有的測試都通過，狀態列會變成綠色，如果有任何測試失敗則變成紅色。 測試回合的摘要會出現在 [**測試瀏覽器**] 視窗底部的 [詳細資料] 窗格中。 在底部窗格中選取某個測試以檢視該測試的詳細資料。
 
 > [!NOTE]
 > 每個資料的資料列都會有結果，也會有一個摘要結果。 如果資料的每個資料列都測試通過，執行的摘要會顯示為**通過**。 如果有任何資料列測試失敗，執行的摘要會顯示為**失敗**。
 
-如果您執行我們範例中的 `AddIntegers_FromDataSourceTest` 方法，結果列會變成紅色，而測試方法會移至 [失敗的測試]****。 如果來自資料來源的任何反覆執行方法失敗，資料驅動的測試將會失敗。 在 **"測試資源管理器"** 視窗中選擇失敗的資料驅動測試時，詳細資訊窗格將顯示資料行索引標識的每個反覆運算的結果。 在本範例中，它會顯示 `AddIntegers` 演算法並未正確處理負數值。
+如果您執行我們範例中的 `AddIntegers_FromDataSourceTest` 方法，結果列會變成紅色，而測試方法會移至 [失敗的測試]****。 如果來自資料來源的任何反覆執行方法失敗，資料驅動的測試將會失敗。 當您在 [**測試瀏覽器**] 視窗中選擇失敗的資料驅動型測試時，[詳細資料] 窗格會顯示每個反復專案的結果，這是由資料列索引所識別。 在本範例中，它會顯示 `AddIntegers` 演算法並未正確處理負數值。
 
 當受測方法已修正並重新執行測試時，結果列會變成綠色，且測試方法會移動到 [通過的測試]**** 群組。
 
@@ -177,6 +177,6 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
-- [單元測試代碼](../test/unit-test-your-code.md)
-- [使用測試資源管理器運行單元測試](../test/run-unit-tests-with-test-explorer.md)
+- [對程式碼進行單元測試](../test/unit-test-your-code.md)
+- [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)
 - [使用 Microsoft 單元測試架構撰寫適用於 .NET 的單元測試](../test/unit-test-your-code.md)

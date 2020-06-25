@@ -1,18 +1,18 @@
 ---
 title: 讓自動程式化 UI 測試等候特定事件
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e594a6aec3f9e3a9664c5eac829b27f96f12ea0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ea0bd0135ca90f96c2275248da7d116ecfd92e01
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75584448"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286774"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>讓自動程式化 UI 測試在播放期間等候特定事件
 
@@ -22,7 +22,7 @@ ms.locfileid: "75584448"
 
 **需求**
 
-Visual Studio Enterprise
+Visual Studio 企業版
 
 > [!TIP]
 > 您也可以使用自動程式化 UI 測試編輯器，以新增動作之前的延遲。 如需詳細資訊，請參閱[如何：使用自動程式化 UI 測試編輯器，在 UI 動作前插入延遲](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)。
@@ -109,7 +109,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)
-- [演練：創建、編輯和維護編碼的 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-- [編碼 UI 測試的剖析](../test/anatomy-of-a-coded-ui-test.md)
+- [逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [自動程式碼 UI 測試的剖析](../test/anatomy-of-a-coded-ui-test.md)
 - [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [如何：使用自動程式化 UI 測試編輯器，在 UI 動作前插入延遲](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

@@ -1,5 +1,5 @@
 ---
-title: 向視覺工作室功能表欄添加功能表 |微軟文件
+title: 將功能表加入至 Visual Studio 功能表列 |Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,49 +11,51 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91e5a6e1714dbb87abc67fbf722c3bbd1a194a5b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: b87fc73c1ed4b24ccfbd604e3bb08c9b02b62524
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740305"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285383"
 ---
-# <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>向視覺工作室選單欄新增選單
+# <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>將功能表新增至 [Visual Studio] 功能表列
 
-本演練演示如何向 Visual Studio 整合式開發環境 (IDE) 的功能表列添加功能表。 IDE 選單列包含選單類別,如 **'檔案**'、"**編輯**"、"**查看**'、'**視窗**'**與'說明**"。
+本逐步解說示範如何將功能表加入至 Visual Studio 整合式開發環境（IDE）的功能表列。 IDE 功能表列包含功能表**分類，例如**[檔案]、[**編輯**]、[**視圖**]、[**視窗]** 和 [說明] **。**
 
-在將新功能表添加到 Visual Studio 選單欄之前,請考慮是否應將命令放置在現有功能表中。 有關命令放置的詳細資訊,請參閱[Visual Studio 的選單和指令](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)。
+將新的功能表加入 Visual Studio 功能表列之前，請考慮您的命令是否應該放在現有的功能表中。 如需命令放置的詳細資訊，請參閱[Visual Studio 的功能表和命令](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)。
 
-選單在專案的 *.vsct*檔中聲明。 關於選單與 *.vsct*檔案的詳細資訊,請參閱[命令、選單和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。
+功能表會在專案的 *.vsct*檔案中宣告。 如需有關功能表和 *.vsct*檔的詳細資訊，請參閱[命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。
 
-通過完成本演練,您可以創建一個名為**TestMenu**的功能表,其中包含一個命令。
+藉由完成此逐步解說，您可以建立名為**TestMenu**的功能表，其中包含一個命令。
 
+:::moniker range=">=vs-2019"
 > [!NOTE]
-> 在 VS 2019 中,由擴展提供的頂級功能表放在 **「擴展」** 選單下。
+> 從 Visual Studio 2019 開始，延伸模組所提供的最上層功能表會放在 [**延伸**模組] 功能表底下。
+:::moniker-end
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
-從 Visual Studio 2015 開始,您不會從下載中心安裝 Visual Studio SDK。 它作為可選功能包含在可視化工作室設置中。 以後還可以安裝 VS SDK。 有關詳細資訊,請參閱[安裝可視化工作室 SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
-## <a name="create-a-vsix-project-that-has-a-custom-command-item-template"></a>建立具有自訂指令項目的 VSIX 專案
+## <a name="create-a-vsix-project-that-has-a-custom-command-item-template"></a>建立具有自訂命令專案範本的 VSIX 專案
 
-1. 創建名為的`TopLevelMenu`VSIX 專案。 您可以通過搜尋"vsix"在 **"新項目**"對話框中找到 VSIX 專案範本。  關於詳細資訊,請參閱[使用選單指令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)。
+1. 建立名為的 VSIX 專案 `TopLevelMenu` 。 藉由搜尋「vsix」，您可以在 [**新增專案**] 對話方塊中尋找 VSIX 專案範本。  如需詳細資訊，請參閱[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能。
 
-2. 打開專案時,添加名為**TestCommand**的自定義命令項範本。 在**解決方案資源管理器**中,右鍵單擊專案節點並選擇「**添加新** >  **項**」。 在「**新增新項目」** 對話框中,轉到**可視化 C# / 擴充性**,然後選擇 **「自訂命令**」。 在視窗底部的**名稱「 欄**位中」,將指令檔名變更為*TestCommand.cs*。
+2. 當專案開啟時，新增名為**TestCommand**的自訂命令專案範本。 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >   **新專案**]。 在 [**新增專案**] 對話方塊中，移至 [ **Visual c #/** 擴充性]，然後選取 [**自訂命令**]。 在視窗底部的 [**名稱**] 欄位中，將命令檔名稱變更為*TestCommand.cs*。
 
-## <a name="create-a-menu-on-the-ide-menu-bar"></a>在 IDE 選單列建立選單
+## <a name="create-a-menu-on-the-ide-menu-bar"></a>在 IDE 功能表列上建立功能表
 
 ::: moniker range="vs-2017"
 
-1. 在**解決方案資源管理員中**,開啟*測試指令套件.vsct*。
+1. 在**方案總管**中，開啟*TestCommandPackage .vsct*。
 
-    在檔末尾,有一個\<符號>節點,其中包含\<多個 GuidSymbol>节点。 在名為 guidTestCommandPackageCmdSet 的節點中,添加一個新符號,如下所示:
+    在檔案結尾，有一個 \<Symbols> 節點包含數個 \<GuidSymbol> 節點。 在名為 guidTestCommandPackageCmdSet 的節點中，加入新的符號，如下所示：
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. 在\<\<"組>"\<之前 ,在命令>節點中創建空菜單>節點。 在\<"菜單>節點"中,\<添加 功能表>節點,如下所示:
+2. \<Menus>在節點中，于之前建立空的節點 \<Commands> \<Groups> 。 在 \<Menus> 節點中，新增 \<Menu> 節點，如下所示：
 
    ```xml
    <Menus>
@@ -68,37 +70,37 @@ ms.locfileid: "80740305"
    </Menus>
    ```
 
-    功能表`guid`的`id`和值指定命令集和命令集中的特定功能表。
+    `guid`功能表的和值會指定命令集 `id` 和命令集內的特定功能表。
 
-    父`guid`功能`id`表的和值將功能表放置在包含「工具和外接程式」功能表的 Visual Studio 功能表列部分。
+    在 `guid` `id` 包含 [工具] 和 [增益集] 功能表之 [Visual Studio] 功能表列的區段上，該功能表的父項位置的和值。
 
-    `CommandName`字串的值指定文本應出現在菜單項中。
+    字串的值 `CommandName` 指定文字應出現在功能表項目中。
 
-3. 在「\<群組>」部分\<中 ,查找組>\<並更改 父>元素以指向我們剛剛添加的菜單:
+3. 在 \<Groups> 區段中，尋找 \<Group> 並變更 \<Parent> 元素以指向我們剛才新增的功能表：
 
-   ```csharp
+   ```xml
    <Groups>
-         <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+       <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
            <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>
-         </Group>
-       </Groups>
+       </Group>
+   </Groups>
    ```
 
-    這使得組成為新功能表的一部分。
+    這會使群組成為新功能表的一部分。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 在**解決方案資源管理員中**,開啟*頂級選單包.vsct*。
+1. 在**方案總管**中，開啟*TopLevelMenuPackage .vsct*。
 
-    在檔末尾,有一個\<符號>節點,其中包含\<多個 GuidSymbol>节点。 在名為 guidTopLevelMenuPackageCmdSet 的節點中,添加一個新符號,如下所示:
+    在檔案結尾，有一個 \<Symbols> 節點包含數個 \<GuidSymbol> 節點。 在名為 guidTopLevelMenuPackageCmdSet 的節點中，加入新的符號，如下所示：
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. 在\<\<"組>"\<之前 ,在命令>節點中創建空菜單>節點。 在\<"菜單>節點"中,\<添加 功能表>節點,如下所示:
+2. \<Menus>在節點中，于之前建立空的節點 \<Commands> \<Groups> 。 在 \<Menus> 節點中，新增 \<Menu> 節點，如下所示：
 
    ```xml
    <Menus>
@@ -113,48 +115,48 @@ ms.locfileid: "80740305"
    </Menus>
    ```
 
-    功能表`guid`的`id`和值指定命令集和命令集中的特定功能表。
+    `guid`功能表的和值會指定命令集 `id` 和命令集內的特定功能表。
 
-    父`guid`功能`id`表的和值將功能表放置在包含「工具和外接程式」功能表的 Visual Studio 功能表列部分。
+    在 `guid` `id` 包含 [工具] 和 [增益集] 功能表之 [Visual Studio] 功能表列的區段上，該功能表的父項位置的和值。
 
-    `CommandName`字串的值指定文本應出現在菜單項中。
+    字串的值 `CommandName` 指定文字應出現在功能表項目中。
 
-3. 在「\<群組>」部分\<中 ,查找組>\<並更改 父>元素以指向我們剛剛添加的菜單:
+3. 在 \<Groups> 區段中，尋找 \<Group> 並變更 \<Parent> 元素以指向我們剛才新增的功能表：
 
-   ```csharp
+   ```xml
    <Groups>
-         <Group guid="guidTopLevelMenuPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+       <Group guid="guidTopLevelMenuPackageCmdSet" id="MyMenuGroup" priority="0x0600">
            <Parent guid="guidTopLevelMenuPackageCmdSet" id="TopLevelMenu"/>
-         </Group>
-       </Groups>
+       </Group>
+   </Groups>
    ```
 
-    這使得組成為新功能表的一部分。
+    這會使群組成為新功能表的一部分。
 
 ::: moniker-end
 
-4. 找出區段 `Buttons`。 請注意,[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]包範本已生成`Button`其 父`MyMenuGroup`設置為的元素。 因此,此命令將顯示在您的功能表上。
+4. 找出區段 `Buttons`。 請注意， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 封裝範本已產生 `Button` 其父系設定為的元素 `MyMenuGroup` 。 因此，此命令會出現在功能表上。
 
-## <a name="build-and-test-the-extension"></a>組建及測試延伸
+## <a name="build-and-test-the-extension"></a>建立及測試延伸模組
 
-1. 建置此專案並開始偵錯。 應出現實驗實例的實例。
+1. 建置此專案並開始偵錯。 應該會出現實驗實例的實例。
 
 ::: moniker range="vs-2017"
 
-2. 實驗實體中的選單列應包含**TestMenu 選單**。
+2. 實驗實例中的功能表列應該包含 [ **TestMenu** ] 功能表。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. 實驗實體中的**延伸**選單應包含**TestMenu 選單**。
+2. 實驗實例中的 [**擴充**功能] 功能表應該包含 [ **TestMenu** ] 功能表。
 
 ::: moniker-end
 
-3. 在**測試功能表選**單上,按下 **「調用測試命令**」。
+3. 在 [ **TestMenu** ] 功能表上，按一下 [叫用**測試命令**]。
 
-     應顯示一個消息框並顯示消息「頂級功能表中的測試命令包.TestCommand.MenuItem 回撥」」。
+     訊息方塊應該會出現，並顯示「TestCommand Package 內部 TopLevelMenu. TestCommand. MenuItemCallback （）」訊息。
 
 ## <a name="see-also"></a>另請參閱
 
-- [命令、選單和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+- [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

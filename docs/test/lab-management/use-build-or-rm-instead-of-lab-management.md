@@ -1,7 +1,7 @@
 ---
 title: 使用 Azure Pipelines 進行自動化測試
 ms.date: 10/19/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - automated testing, lab management, test lab
 ms.author: mikejo
@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ca762c103ab5b3d3e94b3117dd9570787562b002
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 37455c05a010681eac343287abf25aad642328c7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880126"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286839"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>使用 Azure Test Plans 而非 Lab Management 進行自動化測試
 
 如果您使用 Microsoft Test Manager 和 Lab Management 進行自動化測試或建置、部署、測試自動化，本主題會說明如何使用 Azure Pipelines 與 Team Foundation Server (TFS) 中的[建置和發行](/azure/devops/pipelines/index?view=vsts)功能來達到相同的目標。
 
 > [!NOTE]
-> Microsoft 測試管理員在 Visual Studio 2017 中棄用,並在 Visual Studio 2019 中刪除。
+> Microsoft Test Manager 已在 Visual Studio 2017 中被取代，並已在 Visual Studio 2019 中移除。
 
 ## <a name="build-deploy-test-automation"></a>建置、部署、測試自動化
 

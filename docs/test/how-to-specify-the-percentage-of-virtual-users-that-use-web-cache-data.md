@@ -1,29 +1,29 @@
 ---
-title: 負載測試：使用 Web 緩存資料設置虛擬使用者百分比
+title: 負載測試：使用 web 快取資料設定虛擬使用者百分比
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, virtual users
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8cac3368d0f03c268e086cc8636f1175a15effdd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a31ea50cdedbeb825d03de38a89200b6e8e5200
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113367"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287398"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>如何：指定使用 Web 快取資料之虛擬使用者的百分比
 
-使用 [新增負載測試精靈]**** 建立負載測試之後，您就可以使用 [負載測試編輯器]**** 來變更情節屬性，以便符合您的測試需求和目標。 有關負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
+使用 [新增負載測試精靈]**** 建立負載測試之後，您就可以使用 [負載測試編輯器]**** 來變更情節屬性，以便符合您的測試需求和目標。 如需負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-"**新使用者"屬性的百分比**設置在 **"屬性"** 視窗中。 您可以在 [負載測試編輯器]**** 中編輯負載測試情節屬性。
+[**新使用者的百分比**] 屬性是在 [**屬性**] 視窗中設定。 您可以在 [負載測試編輯器]**** 中編輯負載測試情節屬性。
 
-**新使用者屬性的百分比**會影響負載測試類比 Web 瀏覽器將執行的緩存的方式。 根據預設，[新使用者的百分比]**** 屬性設定為 0%。 如果 [新使用者的百分比]**** 屬性的值設定為 100%，表示負載測試中的每一個 Web 效能測試回合都會被視為網站的初次瀏覽者，其瀏覽器快取中完全沒有之前瀏覽所留下的網站內容。 因此，Web 測試中的所有要求 (包括如影像之類的所有相依要求) 都會被下載。
+[**新使用者的百分比**] 屬性會影響負載測試模擬網頁瀏覽器所執行之快取的方式。 根據預設，[新使用者的百分比]**** 屬性設定為 0%。 如果 [新使用者的百分比]**** 屬性的值設定為 100%，表示負載測試中的每一個 Web 效能測試回合都會被視為網站的初次瀏覽者，其瀏覽器快取中完全沒有之前瀏覽所留下的網站內容。 因此，Web 測試中的所有要求 (包括如影像之類的所有相依要求) 都會被下載。
 
 > [!NOTE]
 > 如果 Web 測試中同樣的可快取資源被要求一次以上時，這些要求不會被下載。
@@ -42,9 +42,9 @@ ms.locfileid: "76113367"
 
      情節的分類和屬性會顯示在 [屬性]**** 視窗中。
 
-4. 通過為新使用者百分比輸入數位，設置 **"新使用者百分比**"屬性的值。
+4. 為新使用者的百分比輸入數位，以設定 [**新使用者的百分比**] 屬性的值。
 
-5. 屬性變更完成之後，選擇 [檔案]**** 功能表上的 [儲存]****。 然後，您可以使用新的 **"新使用者百分比"** 值運行負載測試。
+5. 屬性變更完成之後，選擇 [檔案]**** 功能表上的 [儲存]****。 然後，您可以使用新的 [**新使用者的百分比**] 值來執行負載測試。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,7 +1,7 @@
 ---
 title: 在負載測試結果的圖形上新增和刪除計數器
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load test results graphs, adding counters
 - load test results graph
@@ -11,12 +11,12 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: acb08edf74d3ca35a2449f588976681d679caeb4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b2cefc56d299c9ec917aea555aec1cd9ca53887
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115186"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288464"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>如何：在負載測試結果的圖形上加入和刪除計數器
 
@@ -26,7 +26,7 @@ ms.locfileid: "76115186"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-**效能計數器取樣間隔注意事項**
+**效能計數器取樣間隔考慮**
 
 請根據負載測試的長度，在負載測試回合設定中選擇 [採樣速率]**** 屬性的值。 較小的取樣率 (例如五秒的預設值) 會在負載測試結果資料庫中佔用較多空間。 若為較長的負載測試，增加取樣率會降低您所收集的資料量。 如需詳細資訊，請參閱[如何：指定採樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
 
@@ -39,7 +39,7 @@ ms.locfileid: "76115186"
 |8 - 24 小時|30 秒|
 |> 24 小時|60 秒|
 
-**考慮包括時間詳細資訊以收集百分位數資料**
+**包含用來收集百分位數資料之計時詳細資料的考慮**
 
 在 [負載測試編輯器] 的回合設定中，有一個名為 [計時詳細資料儲存區]**** 的屬性。 如果啟用 [計時詳細資料儲存區]**** 屬性，則在負載測試期間每個個別測試、異動和頁面的執行時間會儲存在負載測試結果儲存機制中。 這可以在 [負載測試分析器]**** 的 [測試]、[異動] 和 [頁面] 索引標籤中顯示第 90 和第 95 個百分位數資料。
 
@@ -47,7 +47,7 @@ ms.locfileid: "76115186"
 
 負載測試結果儲存機制用來儲存計時詳細資料所需的空間可能相當大，尤其是長時間執行的負載測試。 其次，在負載測試結束時，用來將這項資料儲存至負載測試結果儲存機制的時間會比較長，因為在負載測試執行完成之後，這項資料會儲存在負載測試代理程式上。 當負載測試完成時，資料就會儲存至儲存機制中。 預設會啟用 [計時詳細資料儲存區]**** 屬性。 如果您的測試環境發生這種問題，您可能會想要將 [計時詳細資料儲存區]**** 設定為 [無]****。
 
-有關詳細資訊，請參閱[如何：指定時間詳細資訊存儲屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
+如需詳細資訊，請參閱[如何：指定計時詳細資料儲存區屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>若要在負載測試圖形上顯示特定效能計數器
 
@@ -85,4 +85,4 @@ ms.locfileid: "76115186"
 ## <a name="see-also"></a>另請參閱
 
 - [在圖表檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [如何：創建自訂圖形](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [如何：建立自訂圖形](../test/how-to-create-custom-graphs-in-load-test-results.md)

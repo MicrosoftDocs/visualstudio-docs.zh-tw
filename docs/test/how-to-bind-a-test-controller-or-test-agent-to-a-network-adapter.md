@@ -1,7 +1,7 @@
 ---
 title: 將測試控制器或測試代理程式繫結至網路介面卡
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - controllers, netwrok adapter
 - agents, configuring
@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6383d7a16839ba8934bb7f91664379e99da17a36
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 925df819b903be3de3d44127243f3b18d1e9aff5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594782"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288243"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>如何：將測試控制器或測試代理程式繫結至網路介面卡
 
@@ -25,7 +25,7 @@ ms.locfileid: "75594782"
 > [!WARNING]
 > 當您嘗試設定測試代理程式時，可能會接收到下列錯誤：
 >
-> **錯誤 8110。無法連接到指定的控制器電腦或存取控制器物件**
+> **錯誤8110。無法連接到指定的控制器電腦或存取控制器物件**
 >
 > 在有超過一張以上網路介面卡的電腦上安裝測試控制器，便可能導致此錯誤。 也有可能在您嘗試執行測試之前，都能夠成功安裝代理程式，而且不會看到這個問題。
 
@@ -55,7 +55,7 @@ ms.locfileid: "75594782"
 
      `net stop vsttcontroller`
 
-3. 開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition\Common7\IDE* 中的 *QTCcontroller.exe.config XML* 組態檔。
+3. 開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE* 中的 *QTCcontroller.exe.config* XML 組態檔。
 
 4. 找出 `<appSettings>` 標記。
 
@@ -101,7 +101,7 @@ ms.locfileid: "75594782"
 
      **net stop vsttagent**
 
-3. 開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition\Common7\IDE* 中的 *QTAgentService.exe.config* 組態檔。
+3. 開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE* 中的 *QTAgentService.exe.config* XML 組態檔。
 
 4. 找出 `<appSettings>` 標記。
 
@@ -133,4 +133,4 @@ ms.locfileid: "75594782"
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)
 - [修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)
 - [設定測試控制器和測試代理程式的通訊埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [如何：為測試控制器和測試代理指定超時時間](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [如何：指定測試控制器和測試代理程式的超時時間週期](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解合作夥伴如何為其客戶管理 Visual Studio 訂用帳戶。
-ms.openlocfilehash: 7d62025c5e8198a11c013b4ba4adf32a3d09c2dc
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564208"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289023"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>代替客戶管理訂用帳戶的合作夥伴
 若要在 Visual Studio 訂用帳戶[管理入口網站](https://manage.visualstudio.com)中管理訂用帳戶，合作夥伴需要遵循幾個步驟。 
@@ -30,7 +30,7 @@ ms.locfileid: "82564208"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAG]
 
 合作夥伴新增授權的步驟：
-- 登入 https://manage.visualstudio.com。
+- 登入 <https://manage.visualstudio.com>。
 - 選取 [合約] 下拉式清單，然後在底部向下流覽至 [**新增 open license**] 的選項。
 - 在快顯面板中，輸入合約上的授權號碼 (authorization number)、授權號碼 (license number) 和客戶電子郵件地址，並選取核取方塊，然後按一下 [提交]****。
 
@@ -52,7 +52,7 @@ ms.locfileid: "82564208"
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>直接瀏覽 Visual Studio 訂用帳戶管理入口網站的新夥伴
 此案例適用于已加入新 Open License 訂單，但尚未在[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)上註冊，並直接移至 Visual Studio 訂用帳戶系統[管理入口網站](https://manage.visualstudio.com)的新合作夥伴。  請遵循下列步驟：
-- 瀏覽 https://manage.visualstudio.com。
+- 瀏覽 <https://manage.visualstudio.com>。
 - 您會收到錯誤，指出您是無法辨識的使用者。
 - 選取 [OLP Partners] \(OLP 夥伴\)**** 註冊選項，並輸入訂單上所使用的授權號碼 (authorization number)、授權號碼 (license number) 和客戶電子郵件地址，然後選取核取方塊並按一下 [提交]****。
 
@@ -64,10 +64,10 @@ ms.locfileid: "82564208"
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [大量授權條款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
