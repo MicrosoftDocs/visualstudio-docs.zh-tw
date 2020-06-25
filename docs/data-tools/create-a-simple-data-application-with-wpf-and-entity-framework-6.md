@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 735a4cc533312bcfa3823410780b09caa4f53fde
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4aa978098c459d9e55ef0dc1423080357e067a5b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173937"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282757"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
 
-本逐步解說示範如何在 Visual Studio 中建立基本的「表單資料」應用程式。 應用程式會使用 SQL Server LocalDB、Northwind 資料庫、Entity Framework 6 和 Windows Presentation Foundation。 它會示範如何使用主版詳細資料來執行基本的資料系結，而且它也有一個自訂系結導覽器，其中包含 **[下一步]、[****上移**] ** **、[**移至開始**]、[移**至結束**]、[**更新**]
+本逐步解說示範如何在 Visual Studio 中建立基本的「表單資料」應用程式。 應用程式會使用 SQL Server LocalDB、Northwind 資料庫、Entity Framework 6 （不 Entity Framework Core）和 Windows Presentation Foundation for .NET Framework （不是 .NET Core）。 它會示範如何使用主版詳細資料來執行基本的資料系結，而且它也有一個自訂系結導覽器，其中包含 **[下一步]、[****上移**] ** **、[**移至開始**]、[移**至結束**]、[**更新**]
 
 本文著重于在 Visual Studio 中使用資料工具，並不會嘗試以任何深度來說明基礎技術。 它假設您已熟悉 XAML、Entity Framework 和 SQL 的基本概念。 這個範例也不會示範模型 ViewModel （MVVM）架構，這是 WPF 應用程式的標準。 不過，您可以將此程式碼複製到您自己的 MVVM 應用程式中，但只需要進行一些修改。
 
@@ -102,7 +102,7 @@ ms.locfileid: "84173937"
 
      ![將實體類別新增為數據源](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3. 按一下 [完成]  。
+3. 按一下 [完成] 。
 
 4. 在程式碼視圖中，流覽至*mainwindow.xaml* 。 基於此範例的目的，我們將 XAML 保持簡單。 將 [Mainwindow.xaml] 的標題變更為更具描述性的名稱，並將其 [高度] 和 [寬度] 增加為 [600 x 800]。 您稍後可以隨時變更。 現在，將這三個數據列定義加入主要方格中，一列用於導覽按鈕、一個用於客戶的詳細資料，另一個則用於顯示其訂單的方格：
 

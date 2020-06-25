@@ -1,7 +1,7 @@
 ---
 title: 建立專案範本
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ExportTemplateWizard
 helpviewer_keywords:
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f4caebfdc4e61b683e0f1407d1522f6da2328fcf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e6f168244971a348cdb7938af463538d0fa2acaf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591069"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284382"
 ---
 # <a name="how-to-create-project-templates"></a>如何：建立專案範本
 
@@ -29,9 +29,9 @@ ms.locfileid: "75591069"
 
 2. 編輯專案，直到它準備好匯出成範本。 例如，您可能想要編輯程式碼檔案，指出應該執行參數取代的地方。 請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
 
-3. 在 **"專案**"功能表上，選擇 **"匯出範本**"。
+3. 在 [**專案**] 功能表上，選擇 [**匯出範本**]。
 
-   將打開 **"匯出範本嚮導**"。
+   [**匯出範本 Wizard]** 隨即開啟。
 
 4. 在 [選擇範本類型]**** 頁面上，選取 [專案範本]****。 選取您想要匯出至範本的專案，然後選擇 [下一步]****。
 
@@ -63,6 +63,6 @@ ms.locfileid: "75591069"
 
 ## <a name="see-also"></a>另請參閱
 
-- [創建專案和專案範本](../ide/creating-project-and-item-templates.md)
-- [如何：創建專案範本](../ide/how-to-create-item-templates.md)
+- [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
+- [如何：建立專案範本](../ide/how-to-create-item-templates.md)
 - [開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)

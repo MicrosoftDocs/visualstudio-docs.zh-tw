@@ -5,16 +5,16 @@ ms.author: ghogen
 author: ghogen
 manager: jillfra
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: c73adff20ea253ac854d99b90c4161a963343e29
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 26562268167abdfc5ee643618ec1610da231f9f0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184805"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283160"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本機 Docker 容器中的偵錯工具
 
@@ -24,7 +24,7 @@ Visual Studio 提供一致的方式來開發 Docker 容器，並在本機驗證�
 
 如果您已經有支援類型的專案，Visual Studio 可以建立 Dockerfile，並將您的專案設定為在容器中執行。 請參閱[Visual Studio 中的容器工具](overview.md)。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 若要在本機 Docker 容器中偵錯工具，必須安裝下列工具：
 

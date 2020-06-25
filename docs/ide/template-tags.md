@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: ef26a566229c228711ba6e57de50402df255c3dd
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.openlocfilehash: 37a1965712920420bdc4d784a003dbfbd2f2167a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153021"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285214"
 ---
 # <a name="add-tags-to-project-templates"></a>將標籤新增到專案範本
 
@@ -56,7 +56,7 @@ ms.locfileid: "82153021"
 
 您可以在進階使用者案例中使用下列選擇性屬性：
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`Package`|指定 Visual Studio 套件識別碼的 GUID。|
 |`ID`|指定 Visual Studio 資源識別碼。|
@@ -77,7 +77,7 @@ ms.locfileid: "82153021"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|說明|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(必要) 將範本分類，並定義範本在 [新增專案]**** 對話方塊或 [加入新項目]**** 對話方塊中的顯示方式。|
 
@@ -122,7 +122,7 @@ Visual Studio 提供內建標籤清單。 當您新增內建標籤時，標籤�
         <Name>My template</Name>
         <Description>A basic template</Description>
         <Icon>TemplateIcon.ico</Icon>
-        <ProjectType>CSharp</ProjectType>
+        <ProjectType>csharp</ProjectType>
         <LanguageTag>C#</LanguageTag>
         <PlatformTag>windows</PlatformTag>
         <PlatformTag>linux</PlatformTag>

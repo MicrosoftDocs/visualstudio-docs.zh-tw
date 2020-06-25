@@ -1,7 +1,7 @@
 ---
 title: 如何：加入、更新或移除 WCF 資料服務參考
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - service references [Visual Studio]
 - WCF Data Service reference
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 494e85049a173749d418276340389ebe826a0b0b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f5f5a1e14a6eab7537c8ce64636f0f34378ad7f0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184223"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282367"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何：新增、更新或移除 WCF 資料服務參考
 
@@ -57,7 +57,7 @@ ms.locfileid: "84184223"
 
 1. 按一下 [確定]****，將參考新增至專案中。
 
-     會產生服務用戶端（proxy），並將描述服務的中繼資料新增*至 app.config 檔案*。
+     會產生服務用戶端（proxy），並將描述服務的中繼資料新增至*app.config*檔案。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. 在**方案總管**中，按兩下或點擊 [**已連線的服務**] 節點。
@@ -86,7 +86,7 @@ ms.locfileid: "84184223"
 
 1. 按一下 **[完成]** ，將參考加入至專案。
 
-     會產生服務用戶端（proxy），並將描述服務的中繼資料新增*至 app.config 檔案*。
+     會產生服務用戶端（proxy），並將描述服務的中繼資料新增至*app.config*檔案。
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ ms.locfileid: "84184223"
 
 1. 按一下 [確定]****，將參考新增至專案中。
 
-    服務用戶端（proxy）會產生，而描述服務的中繼資料則會新增*至 app.config 檔案*。
+    服務用戶端（proxy）會產生，而描述服務的中繼資料會新增至*app.config*檔案。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. 在**方案總管**中，按兩下或點擊 [**已連線的服務**] 節點。 
@@ -129,7 +129,7 @@ ms.locfileid: "84184223"
 
 1. 按一下 **[完成]** ，將參考加入至專案。
 
-    服務用戶端（proxy）會產生，而描述服務的中繼資料則會新增*至 app.config 檔案*。
+    服務用戶端（proxy）會產生，而描述服務的中繼資料會新增至*app.config*檔案。
 
 ::: moniker-end
 
@@ -151,7 +151,7 @@ ms.locfileid: "84184223"
 
 - 在**方案總管**中，以滑鼠右鍵按一下服務參考，然後按一下 [**刪除**]。
 
-     服務用戶端將會從解決方案移除，而描述服務的中繼資料將會從*app.config*檔案中移除。
+     服務用戶端將會從解決方案中移除，而描述服務的中繼資料將會從*app.config*檔案中移除。
 
     > [!NOTE]
     > 任何參考服務參考的程式碼都必須手動移除。

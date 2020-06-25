@@ -1,7 +1,7 @@
 ---
 title: 以 TableAdapter 直接存取資料庫
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -23,18 +23,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8fe408c090dbdc2157cd52977d4bbed66cfe9109
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 22d84e9b4beafd64cc629a295bcfa7f9f67afb6d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586688"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282562"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>以 TableAdapter 直接存取資料庫
 
-除了 `InsertCommand`、`UpdateCommand`和 `DeleteCommand`之外，也會使用可直接對資料庫執行的方法來建立 Tableadapter。 您可以呼叫這些方法（`TableAdapter.Insert`、`TableAdapter.Update`和 `TableAdapter.Delete`）直接運算元據庫中的資料。
+除了 `InsertCommand` 、和之外，也會 `UpdateCommand` `DeleteCommand` 使用可直接對資料庫執行的方法來建立 tableadapter。 您可以呼叫這些方法（ `TableAdapter.Insert` 、 `TableAdapter.Update` 和 `TableAdapter.Delete` ），直接在資料庫中運算元據。
 
-如果您不想要建立這些直接方法，請將 TableAdapter 的 `GenerateDbDirectMethods` 屬性設定為 [**屬性**] 視窗中的 [`false`]。 如果除了 TableAdapter 的主查詢之外，還有任何查詢新增至 TableAdapter，它們就是不會產生這些 `DbDirect` 方法的獨立查詢。
+如果您不想要建立這些直接方法，請 `GenerateDbDirectMethods` `false` 在 [**屬性**] 視窗中將 TableAdapter 的屬性設定為。 如果除了 TableAdapter 的主查詢之外，還有任何查詢新增至 TableAdapter，它們就是不會產生這些方法的獨立查詢 `DbDirect` 。
 
 ## <a name="send-commands-directly-to-a-database"></a>直接將命令傳送至資料庫
 
@@ -42,7 +42,7 @@ ms.locfileid: "75586688"
 
 ### <a name="to-insert-new-records-directly-into-a-database"></a>將新記錄直接插入資料庫
 
-- 呼叫 TableAdapter 的 `Insert` 方法，傳入每個資料行的值做為參數。 下列程式會使用 Northwind 資料庫中的 `Region` 資料表做為範例。
+- 呼叫 TableAdapter 的 `Insert` 方法，並傳入每個資料行的值做為參數。 下列程式會使用 `Region` Northwind 資料庫中的資料表做為範例。
 
     > [!NOTE]
     > 如果您沒有可用的實例，請具現化您要使用的 TableAdapter。
@@ -52,7 +52,7 @@ ms.locfileid: "75586688"
 
 ### <a name="to-update-records-directly-in-a-database"></a>直接在資料庫中更新記錄
 
-- 呼叫 TableAdapter 的 `Update` 方法，傳入每個資料行的新和原始值做為參數。
+- 呼叫 TableAdapter 的 `Update` 方法，並傳入每個資料行的新和原始值做為參數。
 
     > [!NOTE]
     > 如果您沒有可用的實例，請具現化您要使用的 TableAdapter。
@@ -62,7 +62,7 @@ ms.locfileid: "75586688"
 
 ### <a name="to-delete-records-directly-from-a-database"></a>直接從資料庫刪除記錄
 
-- 呼叫 TableAdapter 的 `Delete` 方法，傳入每個資料行的值做為 `Delete` 方法的參數。 下列程式會使用 Northwind 資料庫中的 `Region` 資料表做為範例。
+- 呼叫 TableAdapter 的 `Delete` 方法，並傳入每個資料行的值做為方法的參數 `Delete` 。 下列程式會使用 `Region` Northwind 資料庫中的資料表做為範例。
 
     > [!NOTE]
     > 如果您沒有可用的實例，請具現化您要使用的 TableAdapter。
@@ -70,6 +70,6 @@ ms.locfileid: "75586688"
      [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]
      [!code-csharp[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)

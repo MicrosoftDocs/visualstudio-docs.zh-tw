@@ -2,7 +2,7 @@
 title: 如何：將專案設定成以多重平台為目標
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b86a5c95131a4dcb2e6af199b57e9c8302790b5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0618d571258817b5e9653a38a7801c2e4d14e687
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114460"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284564"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：將專案設定成以多重平台為目標
 
@@ -29,7 +29,7 @@ Visual Studio 提供一種方式，可以讓方案一次以數個不同 CPU 架�
 
 1. 從 [建置]**** 功能表中，按一下 [組態管理員]****。
 
-2. 在 [使用中的方案平台]**** 方塊中，選取您想要設為方案目標的平台，或選取 [\<新增>]**** 建立新的平台。 Visual Studio 將編譯您的應用程式，以將 [組態管理員]**** 對話方塊中設為使用中平台的平台設為目標。
+2. 在 [使用中的**方案平臺**] 方塊中，選取您想要作為解決方案目標的平臺，或選取 **\<New>** 以建立新的平臺。 Visual Studio 將編譯您的應用程式，以將 [組態管理員]**** 對話方塊中設為使用中平台的平台設為目標。
 
 ## <a name="remove-a-platform"></a>移除平台
 
@@ -37,7 +37,7 @@ Visual Studio 提供一種方式，可以讓方案一次以數個不同 CPU 架�
 
 1. 從 [建置]**** 功能表中，按一下 [組態管理員]****。
 
-2. 在 [使用中的方案平台]**** 方塊中，選取 [\<編輯>]****。 [編輯方案平台]**** 對話方塊隨即開啟。
+2. 在 [使用中的**方案平臺**] 方塊中，選取 **\<Edit>** 。 [編輯方案平台]**** 對話方塊隨即開啟。
 
 3. 按一下您想要移除的平台，然後按一下 [移除]****。
 
@@ -63,6 +63,6 @@ Visual Studio 提供一種方式，可以讓方案一次以數個不同 CPU 架�
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：創建和編輯配置](../ide/how-to-create-and-edit-configurations.md)
-- [瞭解組建組態](../ide/understanding-build-configurations.md)
+- [How to：建立和編輯設定](../ide/how-to-create-and-edit-configurations.md)
+- [了解組建組態](../ide/understanding-build-configurations.md)
 - [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

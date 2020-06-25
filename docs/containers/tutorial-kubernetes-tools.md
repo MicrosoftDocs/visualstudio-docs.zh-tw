@@ -1,19 +1,19 @@
 ---
 title: Kubernetes 工具教學課程 |Microsoft Docs
 ms.date: 06/08/2018
-ms.topic: conceptual
+ms.topic: tutorial
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 931f8c2a6d3be130ef78f59f9b3853d28fad8cd4
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 02a672321a11889d88a8af3305e64a66fe779080
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444683"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283186"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>開始使用 Visual Studio Kubernetes 工具
 
@@ -21,7 +21,7 @@ Visual Studio Kubernetes 工具可協助簡化以 Kubernetes 為目標的容器�
 
 本教學課程涵蓋如何使用 Visual Studio 將 Kubernetes 支援新增至專案，併發布至 AKS。 如果您主要想要使用[Azure Dev Spaces](/azure/dev-spaces/)來對 AKS 中執行的專案進行偵錯工具和測試，您可以改為跳至[Azure Dev Spaces 教學](/azure/dev-spaces/get-started-netcore-visualstudio)課程。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 若要利用這種新功能，您需要：
 
@@ -145,7 +145,7 @@ Visual Studio Kubernetes 工具可協助簡化以 Kubernetes 為目標的容器�
 
    ![[發行至 Azure AKS] 功能表項目的螢幕擷取畫面](media/tutorial-kubernetes-tools/k8s-tools-publish-solution.png)
 
-4. 選擇您的訂用帳戶和 AKS 叢集，以及您剛才建立的 ACR 發行設定檔。 然後按一下 [ **確定**]。
+4. 選擇您的訂用帳戶和 AKS 叢集，以及您剛才建立的 ACR 發行設定檔。 然後按一下 [確定] 。
 
    ![[發佈至 AKS] 畫面的螢幕擷取畫面](media/tutorial-kubernetes-tools/k8s-tools-publish-to-aks.png)
 

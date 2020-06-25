@@ -1,28 +1,28 @@
 ---
 title: 新增連線
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c4e28eb9dfa3e3677f70d0557bb53ad8f9c3b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587065"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283056"
 ---
 # <a name="add-new-connections"></a>新增連線
 
 您可以使用**伺服器總管**、 **Cloud Explorer**或**SQL Server 物件總管**，測試與資料庫或服務的連接，以及流覽資料庫內容和架構。 這些視窗的功能會與某個範圍重迭。 基本的差異如下：
 
-- 伺服器總管
+- Server Explorer
 
    預設會安裝在 Visual Studio 中。 可以用來測試連接及查看 SQL Server 資料庫、已安裝 ADO.NET 提供者的任何其他資料庫，以及一些 Azure 服務。 也會顯示低層級的物件，例如系統效能計數器、事件記錄檔和訊息佇列。 如果資料來源沒有 ADO.NET 提供者，它就不會顯示在這裡，但是您仍然可以透過程式設計方式連接，從 Visual Studio 使用它。
 
-- Cloud Explorer
+- 雲端總管
 
    以手動方式將此視窗安裝為[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS)的 Visual Studio 延伸模組。 提供探索及連線到 Azure 服務的特殊功能。
 
@@ -50,10 +50,10 @@ ms.locfileid: "75587065"
 
 選擇資料來源之後，請按一下 [**測試連接**]。 如果不成功，您將需要根據廠商的檔進行疑難排解。
 
-![測試連接](../data-tools/media/raddata-test-connection.png)
+![[測試連接]](../data-tools/media/raddata-test-connection.png)
 
 如果測試成功，您就可以開始建立*資料來源*，這是一個 Visual Studio 詞彙，這是一個真正表示以基礎資料庫或服務為基礎的*資料模型*。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

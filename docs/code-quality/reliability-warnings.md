@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d45deadc48445e043535e84b36718a14f5b391f6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 3449723394f603b4b726fa8ebf2258e2c8f4c46c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182803"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283381"
 ---
 # <a name="reliability-warnings"></a>可靠性警告
 
 可靠性警告支援程式庫和應用程式可靠性，例如正確的記憶體和執行緒使用方式。 可靠性規則包括：
 
-|規則|描述|
+|規則|說明|
 |----------|-----------------|
 |[CA2000:必須在超出範圍前處置物件](../code-quality/ca2000.md)|因為可能會發生例外事件以防止執行物件的完成項，所以應在物件的所有參考都超出範圍之前，明確處置物件。|
 |[CA2001:避免呼叫有問題的方法](../code-quality/ca2001.md)|成員呼叫了可能有危險或問題的方法。|
@@ -35,5 +35,8 @@ ms.locfileid: "84182803"
 |[CA2006:必須使用 SafeHandle 封裝原生資源](../code-quality/ca2006.md)|在 Managed 程式碼中使用 IntPtr，可能會有潛在的安全性和可靠性問題。 必須檢閱所有使用 IntPtr 的情況，判斷是否需要在該處使用 SafeHandle (或類似技術)。|
 |[CA2007:不直接等候工作](../code-quality/ca2007.md)|非同步方法會[awaits](/dotnet/csharp/language-reference/keywords/await)直接等候 <xref:System.Threading.Tasks.Task> 。|
 |[CA2009：請勿對 ImmutableCollection 值呼叫 TolmmutableCollection](../code-quality/ca2009.md)|`ToImmutable`不必要地在命名空間的不可變集合上呼叫方法 <xref:System.Collections.Immutable> 。|
-|[CA2011：不要在其 setter 中指派屬性](../code-quality/ca2011.md) | 屬性在其本身的[set 存取](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)子中不小心指派了值。 |
+|[CA2011：請勿在屬性 setter 中指派屬性](../code-quality/ca2011.md) | 屬性在其本身的[set 存取](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)子中不小心指派了值。 |
+|[CA2012：正確使用 ValueTasks](../code-quality/ca2012.md) | 從成員調用傳回的 ValueTasks 是要直接等待。  嘗試多次使用 ValueTask，或在已知完成前直接存取一個結果，可能會導致例外狀況或損毀。  忽略這類 ValueTask 可能表示功能錯誤，而且可能會降低效能。 |
+|[CA2013：不要使用具有實數值型別的 ReferenceEquals](../code-quality/ca2013.md) | 使用比較值時 <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> ，如果 objA 和 objB 是實值型別，則會在將它們傳遞至方法之前先將它們裝箱 <xref:System.Object.ReferenceEquals%2A> 。 這表示即使 objA 和 objB 都代表實數值型別的相同實例，但此方法仍會傳回 <xref:System.Object.ReferenceEquals%2A> false。 |
+|[CA2014：不要在迴圈中使用 stackalloc。](../code-quality/ca2014.md) | Stackalloc 所配置的堆疊空間只會在目前方法的調用結尾處釋放。  在迴圈中使用它，可能會導致無限制的堆疊成長和最終的堆疊溢位狀況。 |
 |[CA2015：請勿針對衍生自 MemoryManager T 的類型定義完成項 &lt;&gt;](../code-quality/ca2015.md) | 將完成項加入至衍生自的類型 <xref:System.Buffers.MemoryManager%601> 時，可能會允許記憶體在仍由使用時釋放 <xref:System.Span%601> 。 |

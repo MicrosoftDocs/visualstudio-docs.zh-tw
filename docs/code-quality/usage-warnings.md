@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01dfa23896f006dbf904a3e097e0d6fa296e0361
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 9c94fac97a340c8c315ec91e3c5ebb68cac0d516
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184571"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283342"
 ---
 # <a name="usage-warnings"></a>用法警告
 
@@ -27,7 +27,7 @@ ms.locfileid: "84184571"
 
 ## <a name="in-this-section"></a>本節內容
 
-|規則|描述|
+|規則|說明|
 |----------|-----------------|
 |[CA1801:必須檢閱未使用的參數](../code-quality/ca1801.md)|方法簽章包括不用於方法主體中的參數；|
 |[CA1806:不要忽略方法的結果](../code-quality/ca1806.md)|已建立但從未使用新物件、已呼叫會建立並傳回新字串的方法，而新字串從未使用過，或者 COM 或 P/Invoke 方法傳回從未使用的 HRESULT 或錯誤碼。|
@@ -72,6 +72,7 @@ ms.locfileid: "84184571"
 |[CA2241:必須提供格式化方法的正確引數](../code-quality/ca2241.md)|傳遞至 System.string 的格式引數不包含對應至每個物件引數的格式專案，反之亦然。|
 |[CA2242:必須正確測試 NaN](../code-quality/ca2242.md)|此運算式針對 Single.Nan 或 Double.Nan 測試值。 使用 Single.IsNan(Single) 或 Double.IsNan(Double) 即可測試值。|
 |[CA2243:屬性字串常值必須正確剖析](../code-quality/ca2243.md)|屬性的字串常值參數無法正確剖析 URL、GUID 或版本。|
-|[CA2244：不要複製索引的元素初始化](../code-quality/ca2244.md)|物件初始化運算式有一個以上具有相同常數索引的索引項目目初始化運算式。 除了最後一個初始化運算式之外，所有的都是多餘的。|
-|[CA2245：不要將屬性指派給本身](../code-quality/ca2245.md)|屬性不小心指派給本身。|
-|[CA2246：不要在相同的語句中指派符號和其成員](../code-quality/ca2246.md)|不建議在相同的語句中指派符號和其成員（也就是欄位或屬性）。 如果成員存取預定要在指派之前使用符號的舊值，或在此語句中指派新的值，則不會很清楚。|
+|[CA2244：請勿複製索引元素初始化](../code-quality/ca2244.md)|物件初始化運算式有一個以上具有相同常數索引的索引項目目初始化運算式。 除了最後一個初始化運算式之外，所有的都是多餘的。|
+|[CA2245：請勿將屬性指派給屬性自身](../code-quality/ca2245.md)|屬性不小心指派給本身。|
+|[CA2246：請勿在相同的陳述式中指派符號及其成員](../code-quality/ca2246.md)|不建議在相同的語句中指派符號和其成員（也就是欄位或屬性）。 如果成員存取預定要在指派之前使用符號的舊值，或在此語句中指派新的值，則不會很清楚。|
+|[CA2248：提供正確的 ' enum ' 引數給 ' Enum. HasFlag '](../code-quality/ca2248.md)|當做引數傳遞至方法呼叫的列舉類型 `HasFlag` ，與呼叫的列舉類型不同。|

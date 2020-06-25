@@ -1,7 +1,7 @@
 ---
 title: 變更方法簽章
-description: 移除或變更方法參數的順序。 以滑鼠右鍵按一下方法、選取 [快速動作與重構]，然後選取 [變更簽章]。
-ms.date: 01/26/2018
+description: 新增、移除或變更方法參數的順序。 以滑鼠右鍵按一下方法、選取 [快速動作與重構]，然後選取 [變更簽章]。
+ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68711255"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283866"
 ---
 # <a name="change-a-method-signature-refactoring"></a>變更方法特徵標記重構
 
@@ -51,7 +51,7 @@ ms.locfileid: "68711255"
 
    - **鍵盤**
       - 按 **CTRL+R**，再按 **CTRL+V**。  (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
-      - 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [變更簽章]****。
+      - 按**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [變更簽章]****。
    - **滑鼠**
       - 選取 [編輯] > [重構] > [移除參數]****。
       - 選取 [編輯] > [重構] > [重新排列參數]****。
@@ -59,19 +59,27 @@ ms.locfileid: "68711255"
 
 3. 在 [變更簽章]**** 快顯對話方塊中，您可以使用右邊的按鈕來變更方法簽章：
 
-   ![[變更簽章] 對話方塊](media/changesignature-dialog-cs.png)
+   ![[變更簽章] 對話方塊](media/change-signature.png)
 
-   | 按鈕 | 描述
+   | 按鈕 | 說明
    | ------ | ---
    | **向上/向下** | 將選取的參數在清單中向上和向下移動
+   | **新增** | 新增參數至清單
    | **移除** | 將選取的參數從清單中移除
-   | **還原** | 將所選的已刪除參數還原到清單中
+   | **Restore** | 將所選的已刪除參數還原到清單中
 
    > [!TIP]
-   > 使用 **"預覽參考更改"** 核取方塊[查看提交結果之前的結果](../../ide/preview-changes.md)。
+   > 使用 [**預覽參考變更**] 核取方塊，以在認可之前[查看結果](../../ide/preview-changes.md)。
 
-4. 完成時，按 [確定]**** 按鈕以進行變更。
+4. 選取 [**變更**簽章] 對話方塊中的 [**新增**]，將會開啟 [**加入參數**] 對話方塊。 [加入參數] 對話方塊可讓您新增類型名稱和參數名稱。 您可以選擇使參數為必要或選擇性且具預設值。 您可以接著在呼叫位置新增值並為該值選擇具名引數，或是引進 TODO 變數。 TODO 變數會將 TODO 放在您的程式碼中，讓您可以瀏覽每個錯誤並個別瀏覽每個呼叫位置，然後決定要傳遞的內容。 針對選擇性參數，您可以選擇完全省略呼叫位置。
 
+    ![新增參數對話方塊-C#](media/add-parameter-dialog.png)
+
+5. 當您完成新增參數後，請按 [**確定]** 按鈕以預覽變更。
+
+    ![[變更簽章] 對話方塊](media/change-signature.png)
+
+6. 按 **[確定]** 以查看變更。
    - C#：
 
       ![變更特徵標記結果 - C#](media/changesignature-result-cs.png)
@@ -82,5 +90,5 @@ ms.locfileid: "68711255"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

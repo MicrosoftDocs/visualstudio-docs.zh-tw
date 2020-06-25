@@ -2,7 +2,7 @@
 title: 使用 Visual Basic 開發人員設定管理組建設定
 ms.date: 11/21/2018
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - advanced build configurations
 - building with Visual Basic developer settings (Visual Studio)
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5243223e554f8e31fe2ffa9d667c09d0a3e1dbc0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8593f32b31dc70be08c777e86ae404da0578c48d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115154"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284226"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在套用 Visual Basic 開發者設定的情況下管理組建組態
 
@@ -29,7 +29,7 @@ ms.locfileid: "76115154"
 
 根據預設，Visual Basic 開發人員設定會隱藏開啟 [組態管理員]**** 對話方塊和[專案設計工具](../ide/reference/application-page-project-designer-visual-basic.md)中的 [組態]**** 和 [平台]**** 清單的選項。
 
-1. 在 **[工具]** 功能表上，按一下 **[選項]**。
+1. 在 **[工具]** 功能表上，按一下 **[選項]** 。
 
 2. 展開 [專案和方案]****，然後按一下 [一般]****。
 
@@ -38,12 +38,12 @@ ms.locfileid: "76115154"
 
 3. 按一下 [顯示進階組建組態]****。
 
-4. 按一下 [確定]****。
+4. 按一下 [確定]。
 
      在 [組建]**** 功能表上現在已可使用 [組態管理員]****，且 [組態]**** 和 [平台]**** 清單也會顯示在 [專案設計工具]**** 中。
 
 ## <a name="see-also"></a>另請參閱
 
-- [瞭解組建組態](../ide/understanding-build-configurations.md)
+- [了解組建組態](../ide/understanding-build-configurations.md)
 - [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
 - [環境設定](../ide/environment-settings.md)

@@ -2,22 +2,22 @@
 title: 隱藏專案和 NuGet 套件的編譯器警告
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b604f6a1392353d304897a233b74c0d81fc258df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 53db72495b64236441b9ce517c0eb25dc09a207c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114504"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283953"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：隱藏編譯器警告
 
-您可以簡化組建記錄檔，方法是篩選掉一或多個類型的編譯器警告。 例如，您可能只想檢閱當您將組建記錄檔詳細等級設定為 [一般]****、[詳細資料]**** 或 [診斷]**** 時所產生的部分輸出。 有關詳細性的詳細資訊，請參閱[操作：查看、保存和配置生成日誌檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
+您可以簡化組建記錄檔，方法是篩選掉一或多個類型的編譯器警告。 例如，您可能只想檢閱當您將組建記錄檔詳細等級設定為 [一般]****、[詳細資料]**** 或 [診斷]**** 時所產生的部分輸出。 如需詳細資訊，請參閱[如何：查看、儲存和設定組建記錄](../ide/how-to-view-save-and-configure-build-log-files.md)檔。
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>隱藏 Visual C# 或 F\# 的特定警告
 
@@ -25,7 +25,7 @@ ms.locfileid: "76114504"
 
 1. 在方案總管**** 中，選擇您想要隱藏警告的專案。
 
-1. 在功能表列上，選擇 **"查看** > **屬性頁**"。
+1. 在功能表列上，選擇 [**視圖**] [  >  **屬性頁**]。
 
 1. 選擇 [組建]**** 頁面。
 
@@ -33,13 +33,13 @@ ms.locfileid: "76114504"
 
 1. 重建方案。
 
-## <a name="suppress-specific-warnings-for-c"></a>禁止針對C++的特定警告
+## <a name="suppress-specific-warnings-for-c"></a>隱藏 c + + 的特定警告
 
 使用 [組態屬性]**** 屬性頁隱藏 C++ 專案的特定警告。
 
 1. 在方案總管**** 中，選擇您想要隱藏警告的專案或原始程式檔。
 
-1. 在功能表列上，選擇 **"查看** > **屬性頁**"。
+1. 在功能表列上，選擇 [**視圖**] [  >  **屬性頁**]。
 
 1. 選擇 [組態屬性]**** 分類，並選擇 [C/C++]**** 分類，然後選擇 [進階]**** 頁面。
 
@@ -61,9 +61,9 @@ ms.locfileid: "76114504"
 
 1. 在方案總管**** 中，選擇您想要隱藏警告的專案。
 
-1. 在功能表列上，選擇 **"專案** > **卸載專案**"。
+1. 在功能表列上，選擇 [**專案**]  >  **[卸載專案**]。
 
-1. 在 [方案總管]**** 中，以滑鼠右鍵按一下開啟專案的捷徑功能表，然後選擇 [編輯 \<專案名稱>.vbproj]****。
+1. 在**方案總管**中，以滑鼠右鍵按一下開啟專案的捷徑功能表，然後選擇 [編輯 \<ProjectName>.vbproj]****。
 
     隨即在程式碼編輯器中開啟 XML 專案檔。
 
@@ -102,11 +102,11 @@ ms.locfileid: "76114504"
    > </Project>
    > ```
 
-1. 將更改保存到 *.vbproj*檔。
+1. 將變更儲存至*vbproj*檔案。
 
-1. 在功能表列上，選擇 **"專案** > **重新載入專案**"。
+1. 在功能表列上，選擇 [**專案**] [  >  **重載專案**]。
 
-1. 在功能表列上，選擇 **"生成** > **重建解決方案**"。
+1. 在功能表列上，選擇 [**建立**] [  >  **重建方案**]。
 
     [輸出]**** 視窗不會再顯示您所指定的警告。
 
@@ -132,6 +132,6 @@ ms.locfileid: "76114504"
 
 ## <a name="see-also"></a>另請參閱
 
-- [演練：構建應用程式](../ide/walkthrough-building-an-application.md)
-- [如何：查看、保存和配置生成日誌檔](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)
+- [如何：查看、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)

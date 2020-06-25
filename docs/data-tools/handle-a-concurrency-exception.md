@@ -1,7 +1,7 @@
 ---
 title: 處理並行例外狀況
 ms.date: 09/11/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,24 +18,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 462d0a9beb88a8fb6d73bf0672bb012c75b8ea93
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586597"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282354"
 ---
 # <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
 
-當兩個使用者同時嘗試在資料庫中變更相同的資料時，就會引發並行例外狀況（<xref:System.Data.DBConcurrencyException?displayProperty=fullName>）。 在此逐步解說中，您會建立 Windows 應用程式，以說明如何攔截 <xref:System.Data.DBConcurrencyException>、找出造成錯誤的資料列，以及學習如何處理它的策略。
+<xref:System.Data.DBConcurrencyException?displayProperty=fullName>當兩個使用者同時嘗試在資料庫中變更相同的資料時，就會引發並行例外狀況（）。 在此逐步解說中，您會建立 Windows 應用程式，以說明如何攔截 <xref:System.Data.DBConcurrencyException> 、找出造成錯誤的資料列，以及學習如何處理它的策略。
 
 此逐步解說會引導您完成下列程式：
 
-1. 建立新的 [Windows Forms 應用程式] 專案。
+1. 建立新的**Windows Forms 應用程式**專案。
 
 2. 建立以 Northwind Customers 資料表為基礎的新資料集。
 
-3. 建立具有 <xref:System.Windows.Forms.DataGridView> 以顯示資料的表單。
+3. 使用來建立表單， <xref:System.Windows.Forms.DataGridView> 以顯示資料。
 
 4. 以 Northwind 資料庫中 Customers 資料表的資料填入資料集。
 
@@ -45,7 +45,7 @@ ms.locfileid: "75586597"
 
 7. 攔截錯誤，然後顯示記錄的不同版本，讓使用者判斷是否要繼續並更新資料庫，或取消更新。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>先決條件
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -67,13 +67,13 @@ ms.locfileid: "75586597"
 
 一開始先建立新的 Windows Forms 應用程式：
 
-1. 在 Visual Studio 中，於 [檔案] 功能表上選取 [新增] > [專案]。
+1. 在 Visual Studio 中，於 [檔案]  功能表上選取 [新增]   > [專案]  。
 
-2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
+2. 展開左窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
 3. 在中間窗格中，選取 [ **Windows Forms 應用程式**] 專案類型。
 
-4. 將專案命名為**ConcurrencyWalkthrough**，然後選擇 **[確定]** 。
+4. 將專案命名為**ConcurrencyWalkthrough**，然後選擇 **[確定]**。
 
      隨即建立**ConcurrencyWalkthrough**專案，並將其新增至**方案總管**，並在設計工具中開啟新表單。
 
@@ -94,7 +94,7 @@ ms.locfileid: "75586597"
     > [!NOTE]
     > 如果您要連接到本機資料庫檔案，請在詢問您是否要將檔案新增至專案時，選取 [**否**]。
 
-4. 在 [將**連接字串儲存到應用程式佈建檔**] 畫面上，選取 **[下一步]** 。
+4. 在 [將**連接字串儲存到應用程式佈建檔**] 畫面上，選取 **[下一步]**。
 
 5. 展開 [**資料表]** 節點，然後選取 [ **Customers** ] 資料表。 資料集的預設名稱應為**NorthwindDataSet**。
 
@@ -102,7 +102,7 @@ ms.locfileid: "75586597"
 
 ## <a name="create-a-data-bound-datagridview-control"></a>建立資料系結 DataGridView 控制項
 
-在本節中，您會將 [ **Customers** ] 專案從 [**資料來源**] 視窗拖曳至 Windows Form，以建立 <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType>。
+在本節中，您會將 <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> [ **Customers** ] 專案從 [**資料來源**] 視窗拖曳至 Windows Form，以建立。
 
 1. 若要開啟 [**資料來源**] 視窗，請在 [**資料**] 功能表上，選擇 [**顯示資料來源**]。
 
@@ -112,7 +112,7 @@ ms.locfileid: "75586597"
 
 4. 將資料表拖曳至表單的空白區域。
 
-     名為**CustomersDataGridView**的 <xref:System.Windows.Forms.DataGridView> 控制項和名為**CustomersBindingNavigator**的 <xref:System.Windows.Forms.BindingNavigator> 會加入至系結至 <xref:System.Windows.Forms.BindingSource>的表單。 這會接著系結至 NorthwindDataSet 中的 Customers 資料表。
+     <xref:System.Windows.Forms.DataGridView>名為**CustomersDataGridView**的控制項和 <xref:System.Windows.Forms.BindingNavigator> 名為**CustomersBindingNavigator**的會加入至系結至的表單 <xref:System.Windows.Forms.BindingSource> 。 這會接著系結至 NorthwindDataSet 中的 Customers 資料表。
 
 ## <a name="test-the-form"></a>測試表單
 
@@ -120,9 +120,9 @@ ms.locfileid: "75586597"
 
 1. 選取**F5**以執行應用程式。
 
-     表單隨即出現，其中會顯示 [Customers] 資料表中的資料，其中會填入 [<xref:System.Windows.Forms.DataGridView>] 控制項。
+     表單隨即出現，其中會 <xref:System.Windows.Forms.DataGridView> 填入 [Customers] 資料表中的資料。
 
-2. 在 [偵錯] 功能表上，選取 [停止偵錯]。
+2. 在 [偵錯]**** 功能表上，選取 [停止偵錯]****。
 
 ## <a name="handle-concurrency-errors"></a>處理並行錯誤
 
@@ -150,33 +150,33 @@ ms.locfileid: "75586597"
 
 ### <a name="add-code-to-handle-the-concurrency-exception"></a>加入程式碼以處理並行例外狀況
 
-當您嘗試執行更新並引發例外狀況時，通常會想要利用引發的例外狀況所提供的資訊來執行某個動作。 在本節中，您會新增嘗試更新資料庫的程式碼。 您也會處理任何可能引發的 <xref:System.Data.DBConcurrencyException>，以及任何其他例外狀況。
+當您嘗試執行更新並引發例外狀況時，通常會想要利用引發的例外狀況所提供的資訊來執行某個動作。 在本節中，您會新增嘗試更新資料庫的程式碼。 您也會處理任何 <xref:System.Data.DBConcurrencyException> 可能引發的，以及任何其他例外狀況。
 
 > [!NOTE]
-> `CreateMessage` 和 `ProcessDialogResults` 方法稍後會在逐步解說中新增。
+> `CreateMessage`稍後的 `ProcessDialogResults` 逐步解說中會加入和方法。
 
-1. 在 `Form1_Load` 方法底下新增下列程式碼：
+1. 在方法下方新增下列程式碼 `Form1_Load` ：
 
    [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
    [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
 
-2. 取代 `CustomersBindingNavigatorSaveItem_Click` 方法以呼叫 `UpdateDatabase` 方法，使其看起來如下所示：
+2. 取代 `CustomersBindingNavigatorSaveItem_Click` 方法以呼叫方法， `UpdateDatabase` 使其看起來如下所示：
 
    [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
    [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
 ### <a name="display-choices-to-the-user"></a>顯示使用者的選擇
 
-您剛才撰寫的程式碼會呼叫 `CreateMessage` 程式，向使用者顯示錯誤資訊。 在此逐步解說中，您會使用訊息方塊向使用者顯示記錄的不同版本。 這可讓使用者選擇是否要以變更來覆寫記錄，或取消編輯。 一旦使用者選取訊息方塊上的選項（按一下按鈕），回應就會傳遞給 `ProcessDialogResult` 方法。
+您剛才撰寫的程式碼會呼叫程式， `CreateMessage` 向使用者顯示錯誤資訊。 在此逐步解說中，您會使用訊息方塊向使用者顯示記錄的不同版本。 這可讓使用者選擇是否要以變更來覆寫記錄，或取消編輯。 一旦使用者選取訊息方塊上的選項（按一下按鈕），回應就會傳遞至 `ProcessDialogResult` 方法。
 
-在程式**代碼編輯器**中新增下列程式碼，以建立訊息。 請在 `UpdateDatabase` 方法下方輸入此程式碼：
+在程式**代碼編輯器**中新增下列程式碼，以建立訊息。 在方法下方輸入此程式碼 `UpdateDatabase` ：
 
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>處理使用者的回應
 
-您也需要程式碼來處理使用者對訊息方塊的回應。 這些選項可以使用建議的變更來覆寫資料庫中的目前記錄，或放棄本機變更，並使用目前在資料庫中的記錄來重新整理資料表。 如果使用者選擇 **[是]** ，則會呼叫 <xref:System.Data.DataTable.Merge%2A> 方法，並將*preserveChanges*引數設定為**true**。 這會導致更新嘗試成功，因為記錄的原始版本現在會符合資料庫中的記錄。
+您也需要程式碼來處理使用者對訊息方塊的回應。 這些選項可以使用建議的變更來覆寫資料庫中的目前記錄，或放棄本機變更，並使用目前在資料庫中的記錄來重新整理資料表。 如果使用者選擇 **[是]**，則 <xref:System.Data.DataTable.Merge%2A> 會呼叫方法，並將*preserveChanges*引數設定為**true**。 這會導致更新嘗試成功，因為記錄的原始版本現在會符合資料庫中的記錄。
 
 在上一節中新增的程式碼下方新增下列程式碼：
 
@@ -191,7 +191,7 @@ ms.locfileid: "75586597"
 
 2. 表單出現後，讓它保持執行並切換至 Visual Studio IDE。
 
-3. 在 [檢視] 功能表上，選擇 [伺服器總管]。
+3. 在 [檢視]**** 功能表上，選擇 [伺服器總管]****。
 
 4. 在**伺服器總管**中，展開您的應用程式正在使用的連線，然後展開 [**資料表]** 節點。
 
@@ -206,12 +206,12 @@ ms.locfileid: "75586597"
 
 8. 在表單上的第一筆記錄（**ALFKI**）中，將 [**連絡人姓名**] 變更為**Maria Anders1**。
 
-9. 選取 [儲存] 按鈕。
+9. 選取 [儲存]**** 按鈕。
 
      會引發並行錯誤，並顯示訊息方塊。
 
    選取 [**否**] 會取消更新，並使用目前在資料庫中的值來更新資料集。 選取 [**是]** 會將建議的值寫入資料庫。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

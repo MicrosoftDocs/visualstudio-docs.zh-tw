@@ -1,23 +1,23 @@
 ---
-title: 將ASP.NET核心 Docker 容器部署到 Azure 應用服務 |微軟文檔
-description: 瞭解如何使用視覺化工作室容器工具將ASP.NET核心 Web 應用部署到 Azure 應用服務
+title: 將 ASP.NET Core Docker 容器部署至 Azure App Service |Microsoft Docs
+description: 瞭解如何使用 Visual Studio 容器工具將 ASP.NET Core web 應用程式部署至 Azure App Service
 author: ghogen
 manager: jillfra
 ms.technology: vs-azure
 ms.devlang: dotnet
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 6c1d56f788294826853ad441313597255308bb39
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: db4d114b743484e651d12831cfbe639fe41246ab
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027295"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283239"
 ---
-# <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用視覺化工作室將ASP.NET核心容器部署到 Azure 應用服務
+# <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET Core 容器部署至 Azure App Service
 
-本教程將引導您完成使用 Visual Studio 將容器化ASP.NET核心 Web 應用程式發佈到[Azure 應用服務](/azure/app-service)。 Azure 應用服務是 Azure 中託管的單容器 Web 應用的適當服務。
+本教學課程將逐步引導您使用 Visual Studio，將容器化的 ASP.NET Core web 應用程式發佈至[Azure App Service](/azure/app-service)。 針對 Azure 中裝載的單一容器 web 應用程式，Azure App Service 是適當的服務。
 
 如果您沒有 Azure 訂用帳戶，請在開始前建立[免費帳戶](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "77027295"
 ::: moniker range=">=vs-2019"
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)，其中包含 *ASP.NET 和 Web 部署*工作負載。
 ::: moniker-end
-- 安裝[Docker 桌面](https://docs.docker.com/docker-for-windows/install/)
+- 安裝[Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
 
 ## <a name="create-an-aspnet-core-web-app"></a>建立 ASP.NET Core Web 應用程式
 
@@ -42,9 +42,9 @@ ms.locfileid: "77027295"
 2. 在 [新增專案]**** 對話方塊的 [範本]**** 區段下，選取 [Visual C#] > [Web]****。
 3. 選取 **ASP.NET Core Web 應用程式**。
 4. 指定新應用程式的名稱 (或使用預設值)，然後選取 [確定] ****。
-5. 選擇**Web 應用程式**。
+5. 選取 [ **Web 應用程式**]。
 6. 請勾選 [啟用 Docker 支援]**** 核取方塊。
-7. 選擇**Linux**容器類型，然後按一下 **"確定**"。 不支援將 Windows 容器作為容器部署到 Azure 應用服務。
+7. 選取 [ **Linux** ] 容器類型，然後按一下 **[確定]**。 Windows 容器不支援以容器的形式部署至 Azure App Service。
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 1. 從 Visual Studio 的開始視窗中，選擇 [建立新專案]****。
@@ -53,55 +53,96 @@ ms.locfileid: "77027295"
 1. 選擇 [Web 應用程式]****。
 1. 使用 [設定 HTTPS]**** 核取方塊，選擇您是否需要 SSL 支援。
 1. 請勾選 [啟用 Docker 支援]**** 核取方塊。
-1. 選擇容器類型，然後按一下 **"創建**"。 不支援將 Windows 容器作為容器部署到 Azure 應用服務。
+1. 選取 [容器類型]，然後按一下 [**建立**]。
 ::: moniker-end
 
-## <a name="deploy-the-container-to-azure"></a>將容器部署到 Azure
+## <a name="deploy-the-container-to-azure"></a>將容器部署至 Azure
+
+::: moniker range="vs-2017"
 
 1. 在**方案總管**中以滑鼠右鍵按一下專案，並選擇 [發佈]****。
-1. 在發佈目標對話方塊上，選擇**應用服務 Linux**或**應用服務**。 這是將承載 Web 服務器的作業系統。
-1. 只能發佈到應用服務，也可以發佈到應用服務和 Azure 容器註冊表 （ACR）。 要在 Azure 容器註冊表 （ACR） 中發佈容器，請選擇為**容器創建新的應用服務**，然後按一下 **"發佈**"。
+1. 在 [發行目標] 對話方塊中，選擇 [ **App Service Linux** ] 或 [ **App Service**]。 這是將裝載 web 伺服器的作業系統。
+1. 您只能發行至 App Service，或者可以同時發行至 App Service 和 Azure Container Registry （ACR）。 若要在 Azure Container Registry （ACR）中發佈容器，請選擇 [**建立容器的新 App Service**]，然後按一下 [**發佈**]。
 
-   ![發佈對話方塊的螢幕截圖](media/deploy-app-service/publish-app-service-linux.PNG)
+   ![[發行] 對話方塊的螢幕擷取畫面](media/deploy-app-service/publish-app-service-linux.PNG)
 
-   要僅在不使用 Azure 容器註冊表的情況下發布到 Azure 應用服務，請選擇 **"創建新**"，然後按一下"**發佈**"。
+   若只要發佈至 Azure App Service，而不使用 Azure Container Registry，**請選擇 [新建]**，然後按一下 [**發佈**]。
 
-1. 檢查您是否使用與 Azure 訂閱關聯的帳戶登錄，並選擇唯一名稱、訂閱、資源組、託管計畫和容器註冊表（如果適用）或接受預設值。
+1. 請確認您已使用與您的 Azure 訂用帳戶相關聯的帳戶登入，然後選擇唯一的名稱、訂用帳戶、資源群組、主控方案和容器登錄（如果適用），或接受預設值。
 
-   ![發佈設置的螢幕截圖](media/deploy-app-service/publish-app-service-linux2.png)
+   ![發佈設定的螢幕擷取畫面](media/deploy-app-service/publish-app-service-linux2.png)
 
-1. 選擇 **[建立]**。 容器將部署到所選資源組和容器註冊表中的 Azure。 此過程需要一些時間。 完成後，"**發佈"** 選項卡將顯示有關已發佈內容的資訊，包括網站 URL。
+1. 選擇 **[建立]** 。 您的容器會部署至您選取的資源群組和容器登錄中的 Azure。 此程式需要一些時間。 完成時，[**發佈**] 索引標籤會顯示已發行內容的相關資訊，包括網站 URL。
 
-   ![發佈選項卡的螢幕截圖](media/deploy-app-service/publish-succeeded.PNG)
+   ![[發佈] 索引標籤的螢幕擷取畫面](media/deploy-app-service/publish-succeeded.PNG)
 
-1. 按一下網站連結以驗證應用在 Azure 中按預期工作。
+1. 按一下 [網站] 連結，以確認您的應用程式在 Azure 中如預期般運作。
 
-   ![Web 應用程式的螢幕截圖](media/deploy-app-service/web-application-running.png)
+   ![Web 應用程式的螢幕擷取畫面](media/deploy-app-service/web-application-running.png)
 
-1. 發佈設定檔將保存與您選擇的所有詳細資訊一起，例如資源組和容器註冊表。
+1. 發行設定檔會與您選取的所有詳細資料一起儲存，例如資源群組和容器登錄。
 
-1. 要使用相同的發佈設定檔進行再次部署，請使用 **"發佈"** 按鈕 **、Web 發佈活動**視窗中的 **"發佈**"按鈕，或按右鍵**解決方案資源管理器**中的專案，然後選擇內容功能表上的 **"發佈**"項。
+1. 若要使用相同的發行設定檔再次部署，請使用 [**發佈**] 按鈕、[ **Web 發行活動**] 視窗上的 [**發行**] 按鈕，或以滑鼠右鍵按一下**方案總管**中的專案，然後選擇內容功能表上的 [**發行**] 專案。
+:::moniker-end
+:::moniker range=">=vs-2019"
+1. 在**方案總管**中以滑鼠右鍵按一下專案，並選擇 [發佈]****。
+1. 在 [**發佈**] 對話方塊中，選擇 [ **Azure** ] 目標。
 
-## <a name="view-container-settings"></a>查看容器設置
+   ![發行嚮導的螢幕擷取畫面](media/deploy-app-service/publish-choices.png)
 
-在[Azure 門戶](https://portal.azure.com)中，可以打開已部署的應用服務。
+1. 在 [**特定目標**] 索引標籤上，選擇適當的部署目標，例如**App Service （Windows）** 或**App Service （Linux）**，視您的容器類型而定。
 
-您可以通過打開 " +*容器設置"* 功能表（使用 Visual Studio 2019 版本 16.4 或更高版本時）查看已部署的應用服務的設置。
+   ![發行嚮導特定目標索引標籤的螢幕擷取畫面](media/deploy-app-service/publish-app-service-windows.png)
 
-![Azure 門戶中容器設置功能表的螢幕截圖](media/deploy-app-service/container-settings-menu.png)
+1. 如果您未使用想要使用的訂用帳戶登入正確的 Azure 帳戶，請使用 [**發佈**] 視窗左上方的按鈕進行登入。
 
-從那裡，您可以查看容器資訊、查看或下載日誌或設置連續部署。 請參閱[Azure 應用服務連續部署 CI/CD](/azure/app-service/containers/app-service-linux-ci-cd)。
+1. 您可以使用現有的 app service，或按一下 [**建立新的 Azure App Service** ] 連結來建立新的應用程式服務。 藉由展開資源群組來尋找 treeview 中現有的 app service，或將**View**設定變更為 [**資源類型**] 以依類型排序。
+
+   ![顯示選擇 App Service 的螢幕擷取畫面](media/deploy-app-service/publish-app-service-windows2.png)
+
+1. 如果您建立一個新的資源群組和 app service，將會在 Azure 中產生。 您可以視需要變更名稱，前提是它們是唯一的。
+
+   ![顯示建立 App Service 的螢幕擷取畫面](media/deploy-app-service/publish-app-service-windows3.png)
+
+1. 您可以接受預設的主控方案或立即變更主控方案，或稍後在 Azure 入口網站中。 在 `S1` 其中一個支援的區域中，預設值為（小型）。 若要建立主控方案，請選擇 [**主控方案**] 下拉式清單旁邊的 [**新增**]。 [**主控方案**] 視窗隨即出現。
+
+   ![顯示主控方案選項的螢幕擷取畫面](media/deploy-app-service/hosting-plan.png)
+
+   您可以在[Azure App Service 計畫] 總覽](/azure/app-service/overview-hosting-plans)中查看這些選項的詳細資料。
+
+1. 當您完成選取或建立這些資源之後，請選擇 **[完成]**。 您的容器會部署至您所選取之資源群組和應用程式服務中的 Azure。 此程式需要一些時間。 完成時，[**發佈**] 索引標籤會顯示已發行內容的相關資訊，包括網站 URL。
+
+   ![[發佈] 索引標籤的螢幕擷取畫面](media/deploy-app-service/publish-succeeded-windows.png)
+
+1. 按一下 [網站] 連結，以確認您的應用程式在 Azure 中如預期般運作。
+
+   ![Web 應用程式的螢幕擷取畫面](media/deploy-app-service/web-application-running2.png)
+
+1. 發行設定檔會儲存您所選取的所有詳細資料，例如資源群組和 app service。
+
+1. 若要使用相同的發行設定檔再次部署，請使用 [**發佈**] 按鈕、[ **Web 發行活動**] 視窗上的 [**發行**] 按鈕，或以滑鼠右鍵按一下**方案總管**中的專案，然後選擇內容功能表上的 [**發行**] 專案。
+:::moniker-end
+
+## <a name="view-container-settings"></a>查看容器設定
+
+在[Azure 入口網站](https://portal.azure.com)中，您可以開啟已部署的 App Service。
+
+您可以藉由開啟 [**容器設定**] 功能表（當您使用 Visual Studio 2019 16.4 版或更新版本），來查看已部署 App Service 的設定。
+
+![Azure 入口網站中 [容器設定] 功能表的螢幕擷取畫面](media/deploy-app-service/container-settings-menu.png)
+
+您可以從該處查看容器資訊、查看或下載記錄，或設定連續部署。 請參閱[Azure App Service 持續部署 CI/CD](/azure/app-service/containers/app-service-linux-ci-cd)。
 
 ## <a name="clean-up-resources"></a>清除資源
 
-要刪除與本教程關聯的所有 Azure 資源，請使用[Azure 門戶](https://portal.azure.com)刪除資源組。 要查找與已發佈的 Web 應用程式關聯的資源組，請選擇 **"查看** > **其他 Windows** > **Web 發佈活動**"，然後選擇齒輪圖示。 "**發佈"** 選項卡將打開，其中包含資源組。
+若要移除與本教學課程相關聯的所有 Azure 資源，請使用[Azure 入口網站](https://portal.azure.com)刪除資源群組。 若要尋找與已發佈 web 應用程式相關聯的資源群組，請選擇 [**查看**  >  **其他 Windows**  >  **web 發行活動**]，然後選擇齒輪圖示。 [**發佈**] 索引標籤隨即開啟，其中包含資源群組。
 
-在 Azure 門戶中，選擇 **"資源組**"，選擇資源組以打開其詳細資訊頁。 驗證這是正確的資源組，然後選擇 **"刪除資源組**"，鍵入名稱，然後選擇 **"刪除**"。
+在 [Azure 入口網站中，選擇 [**資源群組**]，選取資源群組以開啟其詳細資料頁面。 確認這是正確的資源群組，然後選擇 [**移除資源群組**]，輸入名稱，然後選擇 [**刪除**]。
 
 ## <a name="next-steps"></a>後續步驟
 
-瞭解有關[Azure 應用服務 Linux](/azure/app-service/containers/app-service-linux-intro)的更多。
+深入瞭解[Azure App Service](/azure/app-service/overview)。
 
 ## <a name="see-also"></a>另請參閱
 
-[部署到 Azure 容器註冊表](hosting-web-apps-in-docker.md)
+[部署至 Azure Container Registry](hosting-web-apps-in-docker.md)

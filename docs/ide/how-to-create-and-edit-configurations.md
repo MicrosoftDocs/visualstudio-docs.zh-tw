@@ -2,7 +2,7 @@
 title: 如何：建立和編輯組態
 ms.date: 06/21/2017
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - solution build configurations, editing
 - build configurations, creating
@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 754d2ceef776ab0dea2d8d51151d4170839173b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5b3ecd4abb05148130b0d87e287cbe199557951
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114695"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284499"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：建立和編輯組態
 
@@ -40,7 +40,7 @@ ms.locfileid: "76114695"
 若要開發 [組態管理員]**** 對話方塊，請在**方案總管**中，開啟方案的捷徑功能表，然後選擇 [組態管理員]****。
 
 > [!NOTE]
-> 如果 **Configuration Manager** 命令未出現在捷徑功能表，請查看功能表列上的 [建置]**** 功能表底下。 如果功能表列上也沒有顯示，請選擇 **"工具** > **選項**"，然後在 **"選項"** 對話方塊的左側窗格中，展開 **"專案和解決方案** > **常規**"，並在右側窗格中選擇"**顯示高級組建組態**"核取方塊。
+> 如果 **Configuration Manager** 命令未出現在捷徑功能表，請查看功能表列上的 [建置]**** 功能表底下。 如果沒有出現在功能表列上，請選擇 [**工具**] [  >  **選項**]，然後在 [**選項**] 對話方塊的左窗格中，展開 [**專案和方案**]  >  **[一般**]，然後在右窗格中，選取 [**顯示先進的組建**設定] 核取方塊。
 
 在 [Configuration Manager]**** 對話方塊中，您可以使用 [使用中的方案組態]**** 下拉式清單選取整個方案的組建組態、修改現有的組建組態，或建立新的組態。 您可以使用 [使用中的方案平台]**** 下拉式清單選取組態目標針對的平台、修改現有的方案平台，或新增平台。 [專案內容]**** 窗格會列出方案中的專案。 針對每個專案，您可以選取專案特定的組態與平台、修改現有的組態與平台，或建立新的組態或新增平台。 您也可以選取核取方塊，指出當您使用整個方案的組態來建置或部署方案時，是否包含每個專案。
 
@@ -120,7 +120,7 @@ ms.locfileid: "76114695"
 
 ## <a name="see-also"></a>另請參閱
 
-- [瞭解組建組態](../ide/understanding-build-configurations.md)
+- [了解組建組態](../ide/understanding-build-configurations.md)
 - [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [管理專案和解決方案屬性](managing-project-and-solution-properties.md)
 - [建立和編輯組態 (Visual Studio for Mac)](/visualstudio/mac/create-and-edit-configurations)

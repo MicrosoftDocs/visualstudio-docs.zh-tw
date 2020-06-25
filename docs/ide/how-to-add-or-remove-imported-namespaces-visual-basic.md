@@ -1,7 +1,7 @@
 ---
 title: 如何：新增或移除匯入的命名空間 (Visual Basic)
 ms.date: 06/21/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - adding imported namespaces
 - removing imported namespaces
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e636969164c4cf2526bb85add95e7cfe02ce6176
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a50fdb643029bed8a44ce6999d4a8ce062ba3dcf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593326"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284735"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>如何：新增或移除匯入的命名空間 (Visual Basic)
 
@@ -36,7 +36,7 @@ ms.locfileid: "75593326"
 3. 在 [匯入的命名空間]**** 清單中，選取您要新增之命名空間的核取方塊。
 
     > [!NOTE]
-    > 若要匯入，命名空間必須位在參考的元件中。 如果命名空間未出現在清單中，則您必須將參考新增至包含它的元件中。 有關詳細資訊，請參閱[管理專案中的引用](managing-references-in-a-project.md)。
+    > 若要匯入，命名空間必須位在參考的元件中。 如果命名空間未出現在清單中，則您必須將參考新增至包含它的元件中。 如需詳細資訊，請參閱[管理專案中的參考](managing-references-in-a-project.md)。
 
 ### <a name="to-remove-an-imported-namespace"></a>移除匯入的命名空間
 

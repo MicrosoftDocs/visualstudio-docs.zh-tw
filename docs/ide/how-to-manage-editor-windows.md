@@ -1,7 +1,7 @@
 ---
 title: 如何：管理編輯器視窗
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editor windows
 - windows, managing editor windows
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af752c99c87bf470922db03bf5d4746151fa8f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 461593e4c77d7c90210ae1bb78741a1fff9616ec
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591017"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284187"
 ---
 # <a name="how-to-manage-editor-windows"></a>如何：管理編輯器視窗
 

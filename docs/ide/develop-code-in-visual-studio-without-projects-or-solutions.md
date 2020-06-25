@@ -1,6 +1,6 @@
 ---
 title: 不使用專案或方案來開發程式碼
-ms.date: 02/21/2018
+ms.date: 06/22/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a9459868d569a7466dccf92e4b548c0500bf80
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75aeb721ea5625523d29e20193ac406037abedc2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596290"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284889"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 
@@ -26,21 +26,29 @@ ms.locfileid: "75596290"
 
 ## <a name="open-any-code"></a>開啟任何程式碼
 
-您可以透過下列方式在 Visual Studio 中開啟任何程式碼：
+您可以透過下列方式在 Visual Studio 中開啟程式碼：
 
-- 在視覺化工作室功能表列上，選擇 **"檔** > **打開** > **資料夾**"，然後流覽到代碼位置。
+- 在 [Visual Studio] 功能表列上 **，選擇 [** 檔案] [  >  **開啟**  >  **資料夾**]，然後流覽至程式碼位置。
 
 - 在包含程式碼之資料夾 (按一下滑鼠右鍵) 的操作功能表上，選擇 [在 Visual Studio 中開啟]**** 命令。
 
 ::: moniker range="vs-2017"
 - 在 Visual Studio [起始頁]**** 上，選擇 [開啟資料夾]**** 連結。
+
+    > [!IMPORTANT]
+    > 並非所有程式碼都可以使用 [Visual Studio**起始頁**] 中的 [**開啟資料夾**] 連結來開啟。 例如，如果您的程式碼檔案已另存為方案的一部分 &mdash; ，則在 .sln 檔案中， &mdash; 您必須使用此處所列的其中一個其他選項來開啟您的程式碼。
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 - 在 [開始] 視窗上，選擇 [開啟資料夾]**** 連結。
+
+    > [!IMPORTANT]
+    > 並非所有程式碼都可以使用 [Visual Studio 開始] 視窗中的 [**開啟資料夾**] 連結來開啟。 例如，如果您的程式碼檔案已另存為方案的一部分 &mdash; ，則在 .sln 檔案中， &mdash; 您必須使用此處所列的其中一個其他選項來開啟您的程式碼。
+
 ::: moniker-end
 
-- 如果您是鍵盤使用者，請按視覺工作室中的**Ctrl**+**Shift**+**Alt**+**O。**
+- 如果您是鍵盤使用者，請**Ctrl** + 在 Visual Studio 中按 Ctrl**Shift** + **Alt** + **O** 。
 
 - 從複製的 GitHub 存放庫開啟程式碼。
 
@@ -54,7 +62,7 @@ ms.locfileid: "75596290"
 
    ![GitHub 複製按鈕](./media/VSIDE_Code_Clone.png)
 
-1. 在 Visual Studio 中，選擇 [Team Explorer]**** 索引標籤以開啟 [Team Explorer]****。 如果看不到該選項卡，則從 **"查看** > **Team 總管**"中打開它。
+1. 在 Visual Studio 中，選擇 [Team Explorer]**** 索引標籤以開啟 [Team Explorer]****。 如果您看不到此索引標籤，請從 [ **View**  >  **Team Explorer**開啟]。
 
 1. 在 [Team Explorer] 中的 [本機 Git 儲存機制]**** 區段底下，選擇 [複製]**** 命令，然後將 GitHub 頁面的 URL 貼到文字方塊中。
 
@@ -62,7 +70,7 @@ ms.locfileid: "75596290"
 
 1. 選擇 [複製]**** 按鈕，以將專案的檔案複製到本機 Git 儲存機制。 視儲存機制的大小而定，此程序可能會花費數分鐘的時間。
 
-1. 將回購克隆到系統後，在 **"Team 總管"** 中，在新克隆的回購的上下文（按右鍵）功能表上選擇 **"打開**"命令。
+1. 將存放庫複製到您的系統之後，在**Team Explorer**中，選擇新複製之存放庫的內容（以滑鼠右鍵按一下）功能表上的 [**開啟**] 命令。
 
    ![複製的存放庫](./media/VSIDE_Code_Clone3.png)
 
@@ -118,6 +126,6 @@ ms.locfileid: "75596290"
 ## <a name="see-also"></a>另請參閱
 
 - [自訂建置與偵錯工作](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [適用於 C++ 的「開啟資料夾」專案](/cpp/build/open-folder-projects-cpp)
+- [C++ 的開啟資料夾專案](/cpp/build/open-folder-projects-cpp)
 - [C++ 中的 CMake 專案](/cpp/build/cmake-projects-in-visual-studio)
 - [在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)

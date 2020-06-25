@@ -1,25 +1,25 @@
 ---
-title: 視覺化工作室容器工具 Docker 撰寫生成設置
+title: Visual Studio 容器工具 Docker Compose 組建設定
 author: ghogen
-description: 容器工具生成流程概述
+description: 容器工具組建流程的總覽
 ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
-ms.topic: conceptual
-ms.openlocfilehash: 85cb8745a14439cfb09036a1bc96e6bd0fa15ae4
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.topic: reference
+ms.openlocfilehash: 6d352461fd6ad96ae40d9c38a250c93018b1cd9a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988510"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283147"
 ---
-# <a name="docker-compose-build-properties"></a>Docker 組合生成屬性
+# <a name="docker-compose-build-properties"></a>Docker Compose 組建屬性
 
-除了容器[工具生成屬性](container-msbuild-properties.md)中描述的控制單個 Docker 專案的屬性外，還可以通過設置 MSBuild 用於構建解決方案的 Docker 合成屬性來自訂 Visual Studio 如何構建 Docker 合成專案。 您還可以通過在 Docker Compose 設定檔中設置檔標籤來控制視覺化工作室調試器如何運行 Docker 合成應用。
+除了可控制個別 Docker 專案的屬性（[容器工具組建屬性](container-msbuild-properties.md)中所述）之外，您也可以藉由設定 MSBuild 用來建立方案的 Docker Compose 屬性，自訂 Visual Studio 建立 Docker Compose 專案的方式。 您也可以藉由在 Docker Compose 設定檔案中設定檔案卷標，來控制 Visual Studio 偵錯工具如何執行 Docker Compose 應用程式。
 
-## <a name="how-to-set-the-msbuild-properties"></a>如何設置 MSBuild 屬性
+## <a name="how-to-set-the-msbuild-properties"></a>如何設定 MSBuild 屬性
 
-要設置屬性的值，請編輯專案檔案。 對於 Docker Compose 屬性，此專案檔案是具有 .dcproj 副檔名的檔，除非在下一節中的表中另有說明。 例如，假設您要指定在開始調試時啟動瀏覽器。 您可以在 .dcproj 專案檔案中設置`DockerLaunchAction`屬性，如下所示。
+若要設定屬性的值，請編輯專案檔。 對於 Docker Compose 屬性，這個專案檔是副檔名為 docker-compose.dcproj 的檔案，除非下一節的表格中另有指示。 例如，假設您想要指定在開始進行偵錯工具時啟動瀏覽器。 您可以 `DockerLaunchAction` 在 docker-compose.dcproj 專案檔中設定屬性，如下所示。
 
 ```xml
 <PropertyGroup>
@@ -27,30 +27,30 @@ ms.locfileid: "79988510"
 </PropertyGroup>
 ```
 
-您可以將屬性設置添加到現有`PropertyGroup`元素，如果沒有，則創建新`PropertyGroup`元素。
+您可以將屬性設定加入至現有的專案 `PropertyGroup` ，如果沒有的話，請建立新的 `PropertyGroup` 元素。
 
 ## <a name="docker-compose-msbuild-properties"></a>Docker Compose MSBuild 屬性
 
-下表顯示了可用於 Docker 撰寫專案的 MSBuild 屬性。
+下表顯示可用於 Docker Compose 專案的 MSBuild 屬性。
 
 | 屬性名稱 | Location | 描述 | 預設值  |
 |---------------|----------|-------------|----------------|
-|其他組合檔路徑|直流普羅伊|指定分號分隔清單中的其他撰寫檔，以便發送到所有命令的 docker-compose.exe。 允許從 Docker 組合專案檔案 （dcproj） 中相對路徑。|-|
-|DockerCompose 基礎檔路徑|直流普羅伊|指定 Docker-compose 檔的檔案名的第一部分，而不指定 *.yml*副檔名。 例如： <br>1. DockerComposeBaseFilePath = null/未定義：使用基本檔路徑*Docker-compose，* 檔將命名為*docker-compose.yml*和*docker-compose.override.yml*<br>2. DockerComposeBaseFilePath =*我的dockercompose：* 檔將命名為*mydockercompose.yml*和*mydockercompose.override.yml*<br> 3. DockerComposeBase檔路徑 = *..\mydockercompose*： 檔將向上一級。 |碼頭組成|
-|DockerCompose 構建參數|直流普羅伊|指定要傳遞給`docker-compose build`命令的額外參數。 例如， `--parallel --pull` |
-|DockerCompose 向下參數|直流普羅伊|指定要傳遞給`docker-compose down`命令的額外參數。 例如， `--timeout 500`|-|  
-|DockerCompose 專案路徑|csproj 或 vbproj|Docker 組合專案 （dcproj） 檔的相對路徑。 在發佈服務專案時設置此屬性以查找存儲在 docker-compose.yml 檔中的關聯映射生成設置。|-|
-|DockerComposeUp 參數|直流普羅伊|指定要傳遞給`docker-compose up`命令的額外參數。 例如， `--timeout 500`|-|
-|碼頭開發模式|直流普羅伊| 控制是否啟用了"主機上的構建"優化（"快速模式"調試）。  允許的值是**快速**和**常規**的 。 | 快速 |
-|DockerLaunchAction| 直流普羅伊 | 指定要在 F5 或 Ctrl+F5 上執行的啟動操作。  允許的值為"無"、啟動瀏覽器和啟動WCF測試用戶端|None|
-|Docker啟動瀏覽器| 直流普羅伊 | 指示是否啟動瀏覽器。 如果指定了 DockerLaunchAction，則忽略該操作。 | False |
-|Docker服務名稱| 直流普羅伊|如果指定了 DockerLaunchAction 或 DockerLaunchBrowser，則 DockerServiceName 是應啟動的服務的名稱。  使用此屬性可確定將啟動 Docker 組合檔可能引用的許多專案中的哪些專案。|-|
-|DockerServiceUrl| 直流普羅伊 | 啟動瀏覽器時使用的 URL。  有效的替換權杖是"[服務 IPAddress]"、"[服務埠]"和"{Scheme}"。  例如： [Scheme]：//[服務 IP位址]：[服務埠]|-|
-|DockerTargetOS| 直流普羅伊 | 構建 Docker 映射時使用的目標作業系統。|-|
+|AdditionalComposeFilePaths|docker-compose.dcproj|在以分號分隔的清單中指定要傳送給所有命令 docker-compose.exe 的其他撰寫檔案。 允許來自 docker 撰寫專案檔（docker-compose.dcproj）的相對路徑。|-|
+|DockerComposeBaseFilePath|docker-compose.dcproj|指定 docker 撰寫檔案之檔案名的第一個部分，不含副檔名*yml* 。 例如： <br>1. DockerComposeBaseFilePath = null/undefined：使用基底檔案路徑*docker-撰寫*，而檔案將命名為*docker-compose.dev.debug.yml. yml*和*docker-compose.dev.debug.yml。 yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*：檔案將命名為*mydockercompose. yml*和*mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.。\mydockercompose*：檔案會在一個層級上啟動。 |docker-compose.dev.debug.yml|
+|DockerComposeBuildArguments|docker-compose.dcproj|指定要傳遞至命令的額外參數 `docker-compose build` 。 例如， `--parallel --pull` |
+|DockerComposeDownArguments|docker-compose.dcproj|指定要傳遞至命令的額外參數 `docker-compose down` 。 例如， `--timeout 500`|-|  
+|DockerComposeProjectPath|.csproj 或 vbproj|Docker 撰寫專案（docker-compose.dcproj）檔案的相對路徑。 發佈服務專案時設定此屬性，以尋找儲存在 docker-compose.dev.debug.yml. yml 檔案中的相關聯映射組建設定。|-|
+|DockerComposeUpArguments|docker-compose.dcproj|指定要傳遞至命令的額外參數 `docker-compose up` 。 例如， `--timeout 500`|-|
+|DockerDevelopmentMode|docker-compose.dcproj| 控制是否啟用「內部主機」優化（「快速模式」的調試功能）。  允許的值為**快速**和**一般**。 | 快速 |
+|DockerLaunchAction| docker-compose.dcproj | 指定要在 F5 或 Ctrl + F5 上執行的啟動動作。  允許的值為 None、LaunchBrowser 和 LaunchWCFTestClient|None|
+|DockerLaunchBrowser| docker-compose.dcproj | 指出是否要啟動瀏覽器。 如果已指定 DockerLaunchAction，則會忽略。 | False |
+|DockerServiceName| docker-compose.dcproj|如果指定了 DockerLaunchAction 或 DockerLaunchBrowser，則 DockerServiceName 就是應該啟動的服務名稱。  使用此屬性可判斷 docker 撰寫檔案可以參考的其中一個可能的專案將會啟動。|-|
+|DockerServiceUrl| docker-compose.dcproj | 啟動瀏覽器時要使用的 URL。  有效的取代權杖為 "{ServiceIPAddress}"、"{ServicePort}" 和 "{圖式}"。  例如： {配置}：//{ServiceIPAddress}： {ServicePort}|-|
+|DockerTargetOS| docker-compose.dcproj | 建立 Docker 映射時使用的目標 OS。|-|
 
 ## <a name="example"></a>範例
 
-如果通過設置`DockerComposeBaseFilePath`到相對路徑來更改 Docker 撰寫檔的位置，則還需要確保更改生成上下文，以便它引用解決方案資料夾。 例如，如果 Docker 撰寫檔是名為*DockerComposeFiles 的*資料夾，則 Docker 撰寫檔應將生成上下文設置為".."或"./.."，具體取決於它與解決方案資料夾相關的位置。
+如果您變更 docker 撰寫檔案的位置，藉由將設定 `DockerComposeBaseFilePath` 為相對路徑，您也必須確定組建內容已變更，使其參考解決方案資料夾。 例如，如果您的 docker 撰寫檔案是名為*DockerComposeFiles*的資料夾，則 docker 撰寫檔案應該將組建內容設定為 "..." 或 ".。/... "，視其相對於方案資料夾的位置而定。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -75,7 +75,7 @@ ms.locfileid: "79988510"
 </Project>
 ```
 
-*mydockercompose.yml*檔應如下所示，生成上下文設置為解決方案資料夾的相對路徑（在本例中為`..`）。
+*Mydockercompose. yml*檔案看起來應該像這樣，而組建內容設定為方案資料夾的相對路徑（在此案例中為 `..` ）。
 
 ```yml
 version: '3.4'
@@ -89,11 +89,11 @@ services:
 ```
 
 > [!NOTE]
-> DockerComposeBuild 參數、DockerComposeDown 參數和 DockerComposeUp 參數在 Visual Studio 2019 版本 16.3 中是新的。
+> DockerComposeBuildArguments、DockerComposeDownArguments 和 DockerComposeUpArguments 是 Visual Studio 2019 16.3 版的新功能。
 
-## <a name="docker-compose-file-labels"></a>Docker 撰寫檔標籤
+## <a name="docker-compose-file-labels"></a>Docker Compose 檔案卷標
 
-您還可以通過將名為*docker-compose.vs.debug.yml（* 用於**調試**配置）或*docker-compose.vs.is.is.yml（* 用於**發佈**配置）的檔放在與*docker-compose.yml*檔相同的目錄中來覆蓋某些設置。  在此檔中，您可以按照如下方式指定設置：
+您也可以在與*docker-compose.dev.debug.yml*檔案相同的目錄中放置名為*docker-compose.dev.debug.yml*的檔案，或 Yml （適用于**debug**設定）或*docker-compose.dev.debug.yml. yml* （針對**發行**設定）來覆寫某些設定。  在此檔案中，您可以指定設定，如下所示：
 
 ```yml
 services:
@@ -102,18 +102,18 @@ services:
       com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\my_app_folder"
 ```
 
-在值周圍使用雙引號，如前面的示例所示，並使用反斜線作為路徑中反斜線的逸出字元。
+如上述範例所示，使用雙引號括住值，並使用反斜線做為路徑中反斜線的 escape 字元。
 
-|標籤名稱|描述|
+|標籤名稱|說明|
 |----------|-----------|
-|com.microsoft.visualstudio.debuggee.參數|開始調試時傳遞給程式的參數。 對於 .NET Core 應用，這些參數通常是 NuGet 包的其他搜索路徑，然後是專案輸出程式集的路徑。|
-|com.microsoft.visualstudio.debuggee.killprogram|此命令用於停止在容器內運行的偵錯工具（如有必要）。|
-|com.microsoft.visualstudio.debuggee.程式|開始調試時啟動的程式。 對於 .NET 核心應用，此設置通常是**點網**。|
-|com.microsoft.visualstudio.debuggee.工作目錄|開始調試時用作起始目錄的目錄。 此設置通常是 Linux 容器的 */app，* 或 Windows 容器的*C：\app。*|
+|visualstudio。引數|啟動偵錯工具時，傳遞給程式的引數。 針對 .NET Core 應用程式，這些引數通常是 NuGet 套件的額外搜尋路徑，後面接著專案輸出元件的路徑。|
+|visualstudio 調試 killprogram。|此命令可用來停止在容器內執行的偵錯工具程式（如有必要）。|
+|visualstudio 偵錯工具。|啟動偵錯工具時啟動的程式。 針對 .NET Core 應用程式，這種設定通常是**dotnet**。|
+|visualstudio 調試 workingdirectory。|開始進行調試時，做為啟動目錄使用的目錄。 此設定通常是針對 Linux 容器 */app* ，或是適用于 Windows 容器的*C:\app* 。|
 
-## <a name="customize-the-app-startup-process"></a>自訂應用啟動過程
+## <a name="customize-the-app-startup-process"></a>自訂應用程式啟動進程
 
-在使用`entrypoint`該設置啟動應用並使之依賴于配置之前，可以運行命令或自訂腳本。 例如，如果只需在**調試**模式下通過運行`update-ca-certificates`來設置證書，而不需要在**發佈**模式下設置證書，則只能在*docker-compose.vs.debug.yml*中添加以下代碼：
+您可以先執行命令或自訂腳本，再使用設定啟動應用程式 `entrypoint` ，並使其相依于設定。 例如，如果您只需要執行，而不是在 [發行] 模式中，只在 [ **debug** ] 模式中設定憑證， `update-ca-certificates` 您只能在*docker-compose.dev.debug.yml. yml*中新增下列程式碼： **Release**
 
 ```yml
 services:
@@ -123,16 +123,16 @@ services:
       ...
 ```
 
-如果省略*docker-compose.vs.release.yml*或*docker-compose.vs.s.debug.yml，* 則 Visual Studio 會根據預設設置生成一個。
+如果您省略*docker-compose.dev.debug.yml. yml*或*docker-compose.dev.debug.yml. yml* ，則 Visual Studio 會根據預設值產生一個。
 
 ## <a name="next-steps"></a>後續步驟
 
-有關 MSBuild 屬性的資訊，請參閱[MSBuild 屬性](../msbuild/msbuild-properties.md)。
+如需有關 MSBuild 屬性的一般資訊，請參閱[Msbuild 屬性](../msbuild/msbuild-properties.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-[容器工具生成屬性](container-msbuild-properties.md)
+[容器工具組建屬性](container-msbuild-properties.md)
 
-[容器工具啟動設置](container-launch-settings.md)
+[容器工具啟動設定](container-launch-settings.md)
 
 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)

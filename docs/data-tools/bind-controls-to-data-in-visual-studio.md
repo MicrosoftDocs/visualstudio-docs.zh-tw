@@ -1,7 +1,7 @@
 ---
 title: 將控制項系結至資料
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data, displaying
 - data sources, displaying data
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e0746de34a16dc181baff3c8b843b123c2ae434
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3d812316de46caf7480146003f7ba1950ae3b9e2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587026"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283030"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>將控制項繫結至 Visual Studio 中的資料
 
@@ -28,7 +28,7 @@ ms.locfileid: "75587026"
 
 ## <a name="data-sources"></a>資料來源
 
-在資料系結的內容中，資料來源代表可以系結至您的使用者介面之記憶體中的資料。 實際上，資料來源可以是 Entity Framework 類別、資料集、封裝在 .NET proxy 物件中的服務端點、LINQ to SQL 類別，或任何 .NET 物件或集合。 有些資料來源可讓您從 [資料來源] 視窗拖曳項目，以建立資料繫結控制項，有些資料來源則否。 下表顯示支援的資料來源。
+在資料系結的內容中，資料來源代表可以系結至您的使用者介面之記憶體中的資料。 實際上，資料來源可以是 Entity Framework 類別、資料集、封裝在 .NET proxy 物件中的服務端點、LINQ to SQL 類別，或任何 .NET 物件或集合。 有些資料來源可讓您從 [資料來源]**** 視窗拖曳項目，以建立資料繫結控制項，有些資料來源則否。 下表顯示支援的資料來源。
 
 | 資料來源 | **Windows Form 設計工具**的拖放功能支援 | **WPF 設計工具**的拖放功能支援 | **Silverlight Designer** 的拖放功能支援 |
 | - | - | - | - |
@@ -36,37 +36,37 @@ ms.locfileid: "75587026"
 | 實體資料模型 | 是<sup>1</sup> | 是 | 是 |
 | LINQ to SQL 類別 | 否<sup>2</sup> | 否<sup>2</sup> | 否<sup>2</sup> |
 | 服務 (包括 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、WCF 服務和 Web 服務) | 是 | 是 | 是 |
-| 物件 | 是 | 是 | 是 |
+| Object | 是 | 是 | 是 |
 | SharePoint | 是 | 是 | 是 |
 
 1. 使用**實體資料模型**wizard 來產生模型，然後將這些物件拖曳至設計工具。
 
-2. LINQ to SQL 類別不會出現在 [資料來源] 視窗中。 不過，您可以根據 LINQ to SQL 類別加入新的物件資料來源，然後將這些物件拖曳至設計工具，來建立資料繫結控制項。 如需詳細資訊，請參閱[逐步解說：建立 LINQ to SQL 類別（O-R 設計工具）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)。
+2. LINQ to SQL 類別不會出現在 [資料來源]**** 視窗中。 不過，您可以根據 LINQ to SQL 類別加入新的物件資料來源，然後將這些物件拖曳至設計工具，來建立資料繫結控制項。 如需詳細資訊，請參閱[逐步解說：建立 LINQ to SQL 類別（O-R 設計工具）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)。
 
 ## <a name="data-sources-window"></a>資料來源視窗
 
-資料來源可在 [資料來源] 視窗中以項目形式用於專案。 當表單設計介面是專案中的使用中視窗時，您也可以選擇 [ **View** > **其他 Windows** > **資料來源**] 來開啟它（當專案開啟時），即可看到這個視窗。 您可以從這個視窗拖曳專案，以建立系結至基礎資料的控制項，而且您也可以用滑鼠右鍵按一下來設定資料來源。
+資料來源可在 [資料來源]**** 視窗中以項目形式用於專案。 當表單設計介面是專案中的使用中視窗時，您也可以選擇 [**視圖**] [  >  **其他視窗**] [  >  **資料來源**] 來開啟它（開啟專案時），即可看到這個視窗。 您可以從這個視窗拖曳專案，以建立系結至基礎資料的控制項，而且您也可以用滑鼠右鍵按一下來設定資料來源。
 
 ![資料來源視窗](../data-tools/media/raddata-data-sources-window.png)
 
-對於 [資料來源] 視窗中的每個資料類型，將項目拖曳到設計工具時都會建立一個預設控制項。 在您從 [**資料來源**] 視窗拖曳專案之前，您可以變更所建立的控制項。 如需詳細資訊，請參閱[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
+對於 [資料來源]**** 視窗中的每個資料類型，將項目拖曳到設計工具時都會建立一個預設控制項。 在您從 [**資料來源**] 視窗拖曳專案之前，您可以變更所建立的控制項。 如需詳細資訊，請參閱[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
 ## <a name="tasks-involved-in-binding-controls-to-data"></a>將控制項繫結至資料的相關工作
 
 下表列出將控制項系結至資料時，您可以執行的一些最常見工作。
 
-|工作|詳細資訊|
+|Task|詳細資訊|
 |----------| - |
-|開啟 [資料來源] 視窗。|在編輯器中開啟設計介面，然後選擇 [ **View** > **Data 來源**]。|
+|開啟 [資料來源]**** 視窗。|在編輯器中開啟設計介面，然後選擇 [**視圖**] [  >  **資料來源**]。|
 |將資源來源新增至專案。|[新增資料來源](../data-tools/add-new-data-sources.md)|
-|設定當您從 [資料來源] 視窗中將項目拖曳到設計工具時建立的控制項。|[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
-|修改與 [資料來源] 視窗中之項目相關聯的控制項清單。|[將自訂控制項新增至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
+|設定當您從 [資料來源]**** 視窗中將項目拖曳到設計工具時建立的控制項。|[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
+|修改與 [資料來源]**** 視窗中之項目相關聯的控制項清單。|[將自訂控制項新增至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
 |建立資料繫結控制項。|[將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)|
 |系結至物件或集合。|[Visual Studio 中的物件繫結](../data-tools/bind-objects-in-visual-studio.md)|
 |篩選出現在 UI 中的資料。|[在 Windows Forms 應用程式中篩選和排序資料](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |自訂控制項的標題。|[自訂 Visual Studio 為資料繫結的控制項建立標題的方式](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)
-- [Windows Forms 資料繫結](/dotnet/framework/winforms/windows-forms-data-binding)
+- [Windows Forms 資料系結](/dotnet/framework/winforms/windows-forms-data-binding)

@@ -1,7 +1,7 @@
 ---
 title: 在專案和項目範本中新增名稱參數
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - template parameters
 - template parameters, substituting
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 9ddfe065d30b958e52e22f30f946d01d626fcf0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c8b6e0570567e8eb696fda61fe9db7bbd4a2f1b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591407"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283940"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>如何：替代範本中的參數
 
@@ -32,7 +32,7 @@ ms.locfileid: "75591407"
     namespace $safeprojectname$
     ```
 
-1. 在範本的*vstemplate*檔中，找到包含`ProjectItem`此檔的元素。
+1. 在範本的 *.vstemplate*檔案中，找出 `ProjectItem` 包含此檔案的元素。
 
 1. 將 `ProjectItem` 項目的 `ReplaceParameters` 屬性設定為 `true`：
 
@@ -42,7 +42,7 @@ ms.locfileid: "75591407"
 
 ## <a name="see-also"></a>另請參閱
 
-- [創建專案和專案範本](../ide/creating-project-and-item-templates.md)
+- [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
 - [範本參數](../ide/template-parameters.md)
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
 - [ProjectItem 項目 (Visual Studio 項目範本)](../extensibility/projectitem-element-visual-studio-item-templates.md)

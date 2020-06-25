@@ -165,6 +165,10 @@ f1_keywords:
 - CA1827
 - CA1828
 - CA1829
+- CA1831
+- CA1832
+- CA1833
+- CA1835
 - CA1900
 - CA1901
 - CA1903
@@ -177,6 +181,9 @@ f1_keywords:
 - CA2007
 - CA2009
 - CA2011
+- CA2012
+- CA2013
+- CA2014
 - CA2015
 - CA2100
 - CA2101
@@ -279,18 +286,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ea04276b7b2fe3dfb5814fbd31602134641b8ef
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b4bfee67e23c40d8ddf9dbfac42bc803d5576c43
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180034"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283407"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>CheckId 受控碼的程式碼分析警告
 
 下表依照警告的 CheckId 識別項列出 Managed 程式碼的程式碼分析警告。
 
-| CheckId | 警告 | 描述 |
+| CheckId | 警告 | 說明 |
 |---------| - | - |
 | CA1000 | [CA1000：不要在泛型類型上宣告靜態成員](../code-quality/ca1000.md) | 呼叫泛型類型的靜態成員時，必須為類型指定類型引數。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定類型引數。 在上述兩種情況下，指定型別引數的語法不同且容易混淆。 |
 | CA1001 | [CA1001：具有可處置欄位的類型應該為可處置](../code-quality/ca1001.md) | 類別會宣告及實作類型為 System.IDisposable 的執行個體欄位，且該類別不會實作 IDisposable。 宣告 IDisposable 欄位的類別會間接擁有 Unmanaged 資源，且應實作 IDisposable 介面。 |
@@ -357,7 +364,7 @@ ms.locfileid: "84180034"
 | CA1067 | [CA1067：實作 IEquatable 時覆寫 Equals](../code-quality/ca1067.md) | 型別 <xref:System.IEquatable%601> 會執行，但不會覆寫 <xref:System.Object.Equals%2A> 方法。 |
 | CA1068 | [CA1068：CancellationToken 參數必須位於最後](../code-quality/ca1068.md) | 方法的 CancellationToken 參數不是最後一個參數。 |
 | CA1069 | [CA1069：列舉不能有重複的值](../code-quality/ca1069.md) | 列舉有多個成員明確指派相同的常數值。 |
-| CA1070 | [CA1070：不要將事件欄位宣告為虛擬](../code-quality/ca1070.md) | [類似欄位的事件](/dotnet/csharp/language-reference/language-specification/classes#field-like-events)已宣告為虛擬。 |
+| CA1070 | [CA1070：請勿將事件欄位宣告為 virtual](../code-quality/ca1070.md) | [類似欄位的事件](/dotnet/csharp/language-reference/language-specification/classes#field-like-events)已宣告為虛擬。 |
 | CA1200 | [CA1200：請避免使用具有前置詞的 cref 標記](../code-quality/ca1200.md) | XML 檔標記中的[cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute)屬性工作表示「程式碼參考」。 它會指定標記的內部文字是程式碼項目，例如類型、方法或屬性。 請避免使用具有前置詞 `cref` 的標記，因為它會防止編譯器驗證參考。 它也會防止 Visual Studio 的整合式開發環境（IDE）在重構期間尋找和更新這些符號參考。 |
 | CA1300 | [CA1300:必須指定 MessageBoxOptions](../code-quality/ca1300.md) | 若要對使用由右至左讀取順序的文化特性 (Culture) 正確顯示訊息方塊，MessageBoxOptions 列舉類型的 RightAlign 和 RtlReading 成員必須傳遞至 Show 方法。 |
 | CA1301 | [CA1301:避免使用重複的快速鍵](../code-quality/ca1301.md) | 便捷鍵也稱為快速鍵，可讓鍵盤使用 ALT 鍵存取控制項。 當多個控制項有重複的存取金鑰時，存取金鑰的行為未妥善定義。 |
@@ -443,6 +450,10 @@ ms.locfileid: "84180034"
 | CA1827 |[CA1827：不要在可使用 Any 時使用 Count/LongCount](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A><xref:System.Linq.Enumerable.LongCount%2A>使用了或方法，其中 <xref:System.Linq.Enumerable.Any%2A> 方法會更有效率。 |
 | CA1828 |[CA1828：不要在可使用 AnyAsync 時使用 CountAsync/LongCountAsync](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A><xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A>使用了或方法，其中 <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> 方法會更有效率。 |
 | CA1829 |[CA1829：請使用 Length/Count 屬性，不要使用 Enumerable.Count 方法](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>LINQ 方法是在支援對等、更有效率或屬性的型別上使用 `Length` `Count` 。 |
+| CA1831 |[CA1831：適當時，請使用 AsSpan 而不是字串的以範圍為基礎的索引子](../code-quality/ca1831.md) | 在字串上使用範圍索引子，並隱含地將值指派給 ReadOnlySpan &lt; char &gt; 類型時， <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> 會使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生字串要求部分的複本。 |
+| CA1832 |[CA1832：使用 AsSpan 或 AsMemory，而不是以範圍為基礎的索引子，以取得陣列的 ReadOnlySpan 或 ReadOnlyMemory 部分](../code-quality/ca1832.md) | 在陣列上使用範圍索引子，並隱含地將值指派給 <xref:System.ReadOnlySpan%601> 或 <xref:System.ReadOnlyMemory%601> 類型時，將會 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生陣列所要求部分的複本。 |
+| CA1833 |[CA1833：使用 AsSpan 或 AsMemory，而不是以範圍為基礎的索引子，以取得陣列的 Span 或記憶體部分](../code-quality/ca1833.md) | 在陣列上使用範圍索引子，並隱含地將值指派給 <xref:System.Span%601> 或 <xref:System.Memory%601> 類型時，將會 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生陣列所要求部分的複本。 |
+| CA1835 |[CA1835：偏好 ' ReadAsync ' 和 ' WriteAsync ' 的以 Memory' 為基礎的多載](../code-quality/ca1835.md) | ' Stream ' 具有 ' ReadAsync ' 多載，其接受 ' Memory &lt; byte &gt; ' 作為第一個引數，而 ' WriteAsync ' 多載接受 ' ReadOnlyMemory &lt; Byte &gt; ' 做為第一個引數。 偏好呼叫以記憶體為基礎的多載，這會更有效率。 |
 | CA1900 | [CA1900:實值類型欄位應該為可移植的](../code-quality/ca1900.md) | 這項規則會檢查在 64 位元作業系統上封送處理至 Unmanaged 程式碼時，使用明確配置所宣告的結構是否會正確地對齊。 |
 | CA1901 | [CA1901： P/Invoke 宣告應該是可移植的](../code-quality/ca1901.md) | 這項規則會評估每個參數的大小和 P/Invoke 的傳回值，並且在 32 位元和 64 位元作業系統上封送處理至 Unmanaged 程式碼時驗證參數的大小是否正確。 |
 | CA1903 | [CA1903:只使用來自目標架構的 API](../code-quality/ca1903.md) | 某一個成員或類型使用的是 Service Pack 中所導入的成員或類型，但是專案的目標 Framework 中卻沒有包含該成員或類型。 |
@@ -454,7 +465,10 @@ ms.locfileid: "84180034"
 | CA2006 | [CA2006:必須使用 SafeHandle 封裝原生資源](../code-quality/ca2006.md) | 在 Managed 程式碼中使用 IntPtr，可能會有潛在的安全性和可靠性問題。 必須檢閱所有使用 IntPtr 的情況，判斷是否需要在該處使用 SafeHandle (或類似技術)。 |
 | CA2007 | [CA2007:不直接等候工作](ca2007.md) | 非同步方法會[awaits](/dotnet/csharp/language-reference/keywords/await)直接等候 <xref:System.Threading.Tasks.Task> 。 當非同步方法直接等候時 <xref:System.Threading.Tasks.Task> ，接續會在建立工作的同一個執行緒中發生。 這種行為在效能方面可能會很昂貴，而且可能會導致 UI 執行緒上發生鎖死。 請考慮呼叫 <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> 以指示接續的意圖。 |
 | CA2009 | [CA2009：請勿對 ImmutableCollection 值呼叫 TolmmutableCollection](ca2009.md) | `ToImmutable`不必要地在命名空間的不可變集合上呼叫方法 <xref:System.Collections.Immutable> 。 |
-| CA2011 | [CA2011：不要在其 setter 中指派屬性](ca2011.md) | 屬性在其本身的[set 存取](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)子中不小心指派了值。 |
+| CA2011 | [CA2011：請勿在屬性 setter 中指派屬性](ca2011.md) | 屬性在其本身的[set 存取](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)子中不小心指派了值。 |
+| CA2012 | [CA2012：正確使用 ValueTasks](ca2012.md) | 從成員調用傳回的 ValueTasks 是要直接等待。  嘗試多次使用 ValueTask，或在已知完成前直接存取一個結果，可能會導致例外狀況或損毀。  忽略這類 ValueTask 可能表示功能錯誤，而且可能會降低效能。 |
+| CA2013 | [CA2013：不要使用具有實數值型別的 ReferenceEquals](ca2013.md) | 使用比較值時 <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> ，如果 objA 和 objB 是實值型別，則會在將它們傳遞至方法之前先將它們裝箱 <xref:System.Object.ReferenceEquals%2A> 。 這表示即使 objA 和 objB 都代表實數值型別的相同實例，但此方法仍會傳回 <xref:System.Object.ReferenceEquals%2A> false。 |
+| CA2014 | [CA2014：不要在迴圈中使用 stackalloc。](ca2014.md) | Stackalloc 所配置的堆疊空間只會在目前方法的調用結尾處釋放。  在迴圈中使用它，可能會導致無限制的堆疊成長和最終的堆疊溢位狀況。 |
 | CA2015 | [CA2015：請勿針對衍生自 MemoryManager T 的類型定義完成項 &lt;&gt;](ca2015.md) | 將完成項加入至衍生自的類型 <xref:System.Buffers.MemoryManager%601> 時，可能會允許記憶體在仍由使用時釋放 <xref:System.Span%601> 。 |
 | CA2100 | [CA2100:必須檢閱 SQL 查詢中是否有安全性弱點](../code-quality/ca2100.md) | 方法會使用透過字串引數所建置的字串，將 System.Data.IDbCommand.CommandText 屬性設定為方法。 這項規則假設字串引數包含使用者輸入。 從使用者輸入所建置的 SQL 命令字串很容易遭到 SQL 插入 (SQL Injection) 攻擊。 |
 | CA2101 |[CA2101 必須：指定 P/Invoke 字串引數的封送處理](../code-quality/ca2101.md) | 平台叫用成員允許部分信任的呼叫端、具有字串參數，並且未明確封送處理字串。 這樣會造成安全性弱點。 |
@@ -544,17 +558,21 @@ ms.locfileid: "84180034"
 | CA2241 | [CA2241:必須提供格式化方法的正確引數](../code-quality/ca2241.md) | 傳遞至 System.String.Format 的格式引數不包含對應至每個物件引數的格式項目，反之亦然。 |
 | CA2242 |[CA2242:必須正確測試 NaN](../code-quality/ca2242.md) | 此運算式針對 Single.Nan 或 Double.Nan 測試值。 使用 Single.IsNan(Single) 或 Double.IsNan(Double) 即可測試值。 |
 | CA2243 |[CA2243:屬性字串常值必須正確剖析](../code-quality/ca2243.md) | 屬性的字串常值參數未針對 URL、GUID 或版本進行正確剖析。 |
-| CA2244 | [CA2244：不要複製索引的元素初始化](../code-quality/ca2244.md) | 物件初始化運算式有一個以上具有相同常數索引的索引項目目初始化運算式。 除了最後一個初始化運算式之外，所有的都是多餘的。 |
-| CA2245 | [CA2245：不要將屬性指派給本身](../code-quality/ca2245.md) | 屬性不小心指派給本身。 |
-| CA2246 | [CA2246：不要在相同的語句中指派符號和其成員](../code-quality/ca2246.md) | 不建議在相同的語句中指派符號和其成員（也就是欄位或屬性）。 如果成員存取預定要在指派之前使用符號的舊值，或在此語句中指派新的值，則不會很清楚。 |
+| CA2244 | [CA2244：請勿複製索引元素初始化](../code-quality/ca2244.md) | 物件初始化運算式有一個以上具有相同常數索引的索引項目目初始化運算式。 除了最後一個初始化運算式之外，所有的都是多餘的。 |
+| CA2245 | [CA2245：請勿將屬性指派給屬性自身](../code-quality/ca2245.md) | 屬性不小心指派給本身。 |
+| CA2246 | [CA2246：請勿在相同的陳述式中指派符號及其成員](../code-quality/ca2246.md) | 不建議在相同的語句中指派符號和其成員（也就是欄位或屬性）。 如果成員存取預定要在指派之前使用符號的舊值，或在此語句中指派新的值，則不會很清楚。 |
 | CA5122 | [CA5122 P-INVOKE P/Invoke 宣告不應該是安全關鍵](../code-quality/ca5122.md) | 在執行安全性敏感作業時，會將方法標記為 SecuritySafeCritical，但透明程式碼也能安全地使用。 透明程式碼不可直接透過 P/Invoke 呼叫機器碼。 因此，即使將 P/Invoke 標示為安全性安全關鍵，透明程式碼仍然不能呼叫它，而且會導致安全性分析錯誤。 |
 | CA5359 | [CA5359 不要停用憑證驗證](../code-quality/ca5359.md) | 憑證可以協助驗證服務器的身分識別。 用戶端應該驗證伺服器憑證，以確保要求會傳送到預期的伺服器。 如果 Servicepointmanager.servercertificatevalidationcallback 一律 `true` 會傳回，任何憑證都會通過驗證。 |
+| CA5360 | [CA5360 不會在還原序列化中呼叫危險的方法](../code-quality/ca5360.md) | 不安全的還原序列化是當未受信任的資料被用來濫用應用程式的邏輯、導致阻絕服務（DoS）攻擊，或甚至是在還原序列化時執行任意程式碼時，就會發生的弱點。 當應用程式還原序列化其控制之下的不受信任資料時，惡意使用者經常可以濫用這些還原序列化功能。 具體而言，在還原序列化的過程中叫用危險的方法。 成功的不安全還原序列化攻擊可能會讓攻擊者執行攻擊，例如 DoS 攻擊、驗證略過，以及遠端程式碼執行。 |
 | CA5362 | [CA5362 已還原序列化物件圖形中的潛在參考週期](../code-quality/ca5362.md) | 如果還原序列化不受信任的資料，則處理已還原序列化之物件圖形的任何程式碼都必須處理參考迴圈，而不會進入無限迴圈。 這同時包含屬於還原序列化回呼一部分的程式碼，以及在還原序列化完成後處理物件圖形的程式碼。 否則，攻擊者可能會使用包含參考週期的惡意資料來執行拒絕服務攻擊。 |
 | CA5365 | [CA5365 不要停用 HTTP 標頭檢查](../code-quality/ca5365.md) | HTTP 標頭檢查可以編碼在回應標頭中找到的換行字元和分行符號（\r 和 \n）。 這種編碼方式有助於避免利用回應標頭所包含之不受信任資料之應用程式的插入式攻擊。 |
 | CA5366 | [CA5366 Use 資料集讀取 XML 的 XmlReader](../code-quality/ca5366.md) | 使用 <xref:System.Data.DataSet> 來讀取具有不受信任資料的 XML 可能會載入危險的外部參考，這應該藉由使用 <xref:System.Xml.XmlReader> 安全解析程式或停用 DTD 處理來加以限制。 |
 | CA5367 | [CA5367 不要將具有指標欄位的類型序列化](../code-quality/ca5367.md) | 此規則會檢查是否有具有指標欄位或屬性的可序列化類別。 無法序列化的成員可以是指標，例如靜態成員或以標記的欄位 <xref:System.NonSerializedAttribute> 。 |
 | CA5368 | [衍生自頁面之類別的 CA5368 設定 ViewStateUserKey](../code-quality/ca5368.md) | 設定 <xref:System.Web.UI.Page.ViewStateUserKey> 屬性可協助您防止應用程式的攻擊，方法是允許您將識別碼指派給個別使用者的檢視狀態變數，讓攻擊者無法使用變數來產生攻擊。 否則，跨網站偽造要求會有弱點。 |
 | CA5374 | [CA5374 不使用 XslTransform](../code-quality/ca5374.md) | 此規則會檢查 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> 是否在程式碼中具現化。 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType>現在已過時，不應使用。 |
+| CA5375 | [CA5375 不使用帳戶共用存取簽章](../code-quality/ca5375.md) | 帳戶 SAS 可以針對不允許服務 SAS 的 blob 容器、資料表、佇列和檔案共用，委派讀取、寫入和刪除作業的存取權。 不過，它不支援容器層級原則，而且對授與的許可權較不具彈性和控制權。 一旦惡意使用者取得，您的儲存體帳戶就會很容易遭到入侵。 |
+| CA5376 | [CA5376 Use SharedAccessProtocol HttpsOnly](../code-quality/ca5376.md) | SAS 是機密資料，無法在 HTTP 上以純文字傳輸。 |
+| CA5377 | [CA5377 使用容器層級存取原則](../code-quality/ca5377.md) | 容器層級存取原則可以隨時修改或撤銷。 它可提供更大的彈性，並控制授與的許可權。 |
 | CA5379 | [CA5379 不使用弱式金鑰衍生函數演算法](../code-quality/ca5379.md) | <xref:System.Security.Cryptography.Rfc2898DeriveBytes>類別預設為使用 <xref:System.Security.Cryptography.HashAlgorithmName.SHA1> 演算法。 您應該指定雜湊演算法，以便在具有 <xref:System.Security.Cryptography.HashAlgorithmName.SHA256> 或更高版本的函式的某些多載中使用。 請注意， <xref:System.Security.Cryptography.Rfc2898DeriveBytes.HashAlgorithm> 屬性只有 `get` 存取子，而且沒有修飾詞 `overriden` 。 |
 | CA5382 | [CA5382 在 ASP.NET Core 中使用安全 cookie](../code-quality/ca5382.md) | 透過 HTTPS 提供的應用程式必須使用安全 cookie，這會向瀏覽器指出 cookie 應僅使用安全通訊端層（SSL）來傳輸。 |
 | CA5383 | [CA5383 確保在 ASP.NET Core 中使用安全 cookie](../code-quality/ca5383.md) | 透過 HTTPS 提供的應用程式必須使用安全 cookie，這會向瀏覽器指出 cookie 應僅使用安全通訊端層（SSL）來傳輸。 |
@@ -563,7 +581,11 @@ ms.locfileid: "84180034"
 | CA5387 | [CA5387 不使用沒有足夠反覆運算計數的弱式金鑰衍生函數](../code-quality/ca5387.md) | 此規則會檢查是否以小於100000的反復專案計數來產生密碼編譯金鑰 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 。 較高的反復專案計數有助於減輕嘗試猜測產生的密碼編譯金鑰的字典攻擊。 |
 | CA5388 | [CA5388 在使用弱式金鑰衍生函式時，確保有足夠的反復專案計數](../code-quality/ca5388.md) | 此規則會檢查是否使用產生的密碼編譯金鑰 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 具有小於100000的反復專案計數。 較高的反復專案計數有助於減輕嘗試猜測產生的密碼編譯金鑰的字典攻擊。 |
 | CA5390 | [CA5390 不會硬式編碼加密金鑰](../code-quality/ca5390.md) | 若要讓對稱演算法成功，只有傳送者和接收者才必須知道秘密金鑰。 當金鑰是硬式編碼時，很容易就會發現。 即使使用已編譯的二進位檔，惡意使用者也很容易將它解壓縮。 一旦私密金鑰遭到入侵，就可以直接解密加密文字，而不會再受到保護。 |
+| CA5391 | [CA5391 在 ASP.NET Core MVC 控制器中使用 antiforgery 權杖](../code-quality/ca5391.md) | 處理 `POST` 、 `PUT` 、 `PATCH` 或要求， `DELETE` 而不需驗證 antiforgery token，可能會容易遭受跨網站偽造要求攻擊。 跨網站要求偽造攻擊可能會將來自已驗證使用者的惡意要求傳送至您的 ASP.NET Core MVC 控制器。 |
+| CA5392 | [CA5392 使用 P/Invoke 的 DefaultDllImportSearchPaths 屬性](../code-quality/ca5392.md) | 根據預設，使用探查的 P/Invoke 函式會 <xref:System.Runtime.InteropServices.DllImportAttribute> 有一些目錄，包括要載入之程式庫的目前工作目錄。 這可能是某些應用程式的安全性問題，因而導致 DLL 劫持。 |
+| CA5393 | [CA5393 不使用 unsafe DllImportSearchPath 值](../code-quality/ca5393.md) | 預設的 DLL 搜尋目錄和元件目錄中可能有惡意的 DLL。 或者，視執行應用程式的位置而定，應用程式的目錄中可能會有惡意的 DLL。 |
 | CA5394 | [CA5394 不使用不安全的隨機性](../code-quality/ca5394.md) | 使用密碼編譯弱式虛擬亂數產生器可能會讓攻擊者預測產生的安全性敏感值。 |
+| CA5395 | [動作方法的 CA5395 遺漏 HttpVerb 屬性](../code-quality/ca5395.md) | 建立、編輯、刪除或以其他方式修改資料的所有動作方法，都必須以 antiforgery 屬性來保護，而不受跨網站要求偽造攻擊。 執行「取得」作業應該是沒有副作用的安全作業，而且不會修改保存的資料。 |
 | CA5396 | [CA5396 將 HttpCookie 的 HttpOnly 設定為 true](../code-quality/ca5396.md) | 做為深層防禦措施，請確定安全性敏感的 HTTP cookie 已標示為 HttpOnly。 這表示 web 瀏覽器應該不允許腳本存取 cookie。 插入的惡意腳本是竊取 cookie 的常見方式。 |
 | CA5399 | [CA5399 明確停用 HttpClient 憑證撤銷清單檢查](../code-quality/ca5399.md) | 已撤銷的憑證已不再受信任。 攻擊者可以使用它來傳遞某些惡意資料，或竊取 HTTPS 通訊中的敏感性資料。 |
 | CA5400 | [CA5400 確保不會停用 HttpClient 憑證撤銷清單檢查](../code-quality/ca5400.md) | 已撤銷的憑證已不再受信任。 攻擊者可以使用它來傳遞某些惡意資料，或竊取 HTTPS 通訊中的敏感性資料。 |

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 713787472ac9c9320bf94c430108aaf330908496
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: d8fbeb9b1631e9cefa132f50a13dc5cf4db58c9d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184597"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283368"
 ---
 # <a name="security-warnings"></a>安全性警告
 
@@ -28,7 +28,7 @@ ms.locfileid: "84184597"
 
 ## <a name="in-this-section"></a>本節內容
 
-|規則|描述|
+|規則|說明|
 |----------|-----------------|
 |[CA2100:必須檢閱 SQL 查詢中是否有安全性弱點](../code-quality/ca2100.md)|方法會使用透過字串引數所建置的字串，將 System.Data.IDbCommand.CommandText 屬性設定為方法。 這項規則假設字串引數包含使用者輸入。 從使用者輸入所建置的 SQL 命令字串很容易遭到 SQL 插入攻擊。|
 |[CA2102:必須使用一般處理常式攔截非 CLSCompliant 例外狀況](../code-quality/ca2102.md)|組件中不是以 RuntimeCompatibilityAttribute 標記或是以 RuntimeCompatibility(WrapNonExceptionThrows = false) 標記的成員包含處理 System.Exception 的 catch 區塊，同時不包含緊接其後的一般 catch 區塊。|
@@ -106,39 +106,47 @@ ms.locfileid: "84184597"
 |[CA3077:API 設計、XML 文件和 XML 文字讀取器中的不安全處理](../code-quality/ca3077.md)|針對衍生自 XMLDocument 和 XMLTextReader 的 API 進行設計時，請留意 DtdProcessing。 若在參考或解析外部實體來源時使用不安全的 DTDProcessing 執行個體，或在 XML 中設定不安全的值，都可能會導致資訊洩漏。|
 |[CA3147:使用 ValidateAntiForgeryToken 標示動詞處理常式](../code-quality/ca3147.md)|在設計 ASP.NET MVC 控制器時，請注意跨網站偽造要求攻擊。 跨網站要求偽造攻擊可能會將來自已驗證使用者的惡意要求傳送至您的 ASP.NET MVC 控制器。|
 |[CA5122 P-INVOKE P/Invoke 宣告不應該是安全關鍵](../code-quality/ca5122.md)|在執行安全性敏感作業時，會將方法標記為 SecuritySafeCritical，但透明程式碼也能安全地使用。 透明程式碼不可直接透過 P/Invoke 呼叫機器碼。 因此，即使將 P/Invoke 標示為安全性安全關鍵，透明程式碼仍然不能呼叫它，而且會導致安全性分析錯誤。|
-|[CA5359：不要停用憑證驗證](../code-quality/ca5359.md)|憑證可以協助驗證服務器的身分識別。 用戶端應該驗證伺服器憑證，以確保要求會傳送到預期的伺服器。 如果 Servicepointmanager.servercertificatevalidationcallback 一律 `true` 會傳回，任何憑證都會通過驗證。|
+|[CA5359：請勿停用憑證驗證](../code-quality/ca5359.md)|憑證可以協助驗證服務器的身分識別。 用戶端應該驗證伺服器憑證，以確保要求會傳送到預期的伺服器。 如果 Servicepointmanager.servercertificatevalidationcallback 一律 `true` 會傳回，任何憑證都會通過驗證。|
+|[CA5360：不要在還原序列化中呼叫危險的方法](../code-quality/ca5360.md)|不安全的還原序列化是當未受信任的資料被用來濫用應用程式的邏輯、導致阻絕服務（DoS）攻擊，或甚至是在還原序列化時執行任意程式碼時，就會發生的弱點。 當應用程式還原序列化其控制之下的不受信任資料時，惡意使用者經常可以濫用這些還原序列化功能。 具體而言，在還原序列化的過程中叫用危險的方法。 成功的不安全還原序列化攻擊可能會讓攻擊者執行攻擊，例如 DoS 攻擊、驗證略過，以及遠端程式碼執行。|
 |[CA5361:請勿為安全通道停用強式密碼編譯](../code-quality/ca5361.md)|設定 `Switch.System.Net.DontEnableSchUseStrongCrypto` 以 `true` 削弱傳出傳輸層安全性（TLS）連線中使用的密碼編譯。 較弱的密碼編譯可能會危害您的應用程式與伺服器之間的通訊機密性，讓攻擊者更容易竊聽敏感性資料。|
-|[CA5362：已還原序列化物件圖形中的可能參考週期](../code-quality/ca5362.md)|如果還原序列化不受信任的資料，則處理已還原序列化之物件圖形的任何程式碼都必須處理參考迴圈，而不會進入無限迴圈。 這同時包含屬於還原序列化回呼一部分的程式碼，以及在還原序列化完成後處理物件圖形的程式碼。 否則，攻擊者可能會使用包含參考週期的惡意資料來執行拒絕服務攻擊。|
+|[CA5362：還原序列化物件圖中的可能參考循環](../code-quality/ca5362.md)|如果還原序列化不受信任的資料，則處理已還原序列化之物件圖形的任何程式碼都必須處理參考迴圈，而不會進入無限迴圈。 這同時包含屬於還原序列化回呼一部分的程式碼，以及在還原序列化完成後處理物件圖形的程式碼。 否則，攻擊者可能會使用包含參考週期的惡意資料來執行拒絕服務攻擊。|
 |[CA5363：請勿停用要求驗證](../code-quality/ca5363.md)|要求驗證是 ASP.NET 中的一項功能，可檢查 HTTP 要求，並判斷它們是否包含可能會導致插入式攻擊的潛在危險內容，包括跨網站腳本。|
 |[CA5364:請勿使用已取代的安全性通訊協定](../code-quality/ca5364.md)|傳輸層安全性（TLS）可保護電腦之間的通訊，最常見的方式是使用超文字安全傳輸通訊協定（HTTPS）。 舊版的 TLS 通訊協定版本比 TLS 1.2 和 TLS 1.3 低，而且更有可能會有新的弱點。 避免較舊的通訊協定版本，將風險降至最低。|
-|[CA5365：不要停用 HTTP 標頭檢查](../code-quality/ca5365.md)|HTTP 標頭檢查可以編碼在回應標頭中找到的換行字元和分行符號（\r 和 \n）。 這種編碼方式有助於避免利用回應標頭所包含之不受信任資料之應用程式的插入式攻擊。|
-|[CA5366：將 XmlReader 用於資料集讀取 XML](../code-quality/ca5366.md)|使用 <xref:System.Data.DataSet> 來讀取具有不受信任資料的 XML 可能會載入危險的外部參考，這應該藉由使用 <xref:System.Xml.XmlReader> 安全解析程式或停用 DTD 處理來加以限制。|
-|[CA5367：不要序列化具有指標欄位的類型](../code-quality/ca5367.md)|此規則會檢查是否有具有指標欄位或屬性的可序列化類別。 無法序列化的成員可以是指標，例如靜態成員或以標記的欄位 <xref:System.NonSerializedAttribute> 。|
-|[CA5368：針對衍生自頁面的類別設定 ViewStateUserKey](../code-quality/ca5368.md)|設定 <xref:System.Web.UI.Page.ViewStateUserKey> 屬性可協助您防止應用程式的攻擊，方法是允許您將識別碼指派給個別使用者的檢視狀態變數，讓攻擊者無法使用變數來產生攻擊。 否則，跨網站偽造要求會有弱點。|
+|[CA5365：請勿停用 HTTP 標頭檢查](../code-quality/ca5365.md)|HTTP 標頭檢查可以編碼在回應標頭中找到的換行字元和分行符號（\r 和 \n）。 這種編碼方式有助於避免利用回應標頭所包含之不受信任資料之應用程式的插入式攻擊。|
+|[CA5366：請使用 XmlReader 為 DataSet 讀取 XML](../code-quality/ca5366.md)|使用 <xref:System.Data.DataSet> 來讀取具有不受信任資料的 XML 可能會載入危險的外部參考，這應該藉由使用 <xref:System.Xml.XmlReader> 安全解析程式或停用 DTD 處理來加以限制。|
+|[CA5367：請勿將具有指標欄位的類型序列化](../code-quality/ca5367.md)|此規則會檢查是否有具有指標欄位或屬性的可序列化類別。 無法序列化的成員可以是指標，例如靜態成員或以標記的欄位 <xref:System.NonSerializedAttribute> 。|
+|[CA5368：為衍生自頁面的類別設定 ViewStateUserKey](../code-quality/ca5368.md)|設定 <xref:System.Web.UI.Page.ViewStateUserKey> 屬性可協助您防止應用程式的攻擊，方法是允許您將識別碼指派給個別使用者的檢視狀態變數，讓攻擊者無法使用變數來產生攻擊。 否則，跨網站偽造要求會有弱點。|
 |[CA5369：請使用 XmlReader 進行還原序列化](../code-quality/ca5369.md)|處理不受信任的 DTD 和 XML 架構可能會啟用載入危險的外部參考，這應該使用具有安全解析程式的 XmlReader，或停用 DTD 和 XML 內嵌架構處理來加以限制。|
 |[CA5370：請使用 XmlReader 驗證讀取器](../code-quality/ca5370.md)|處理不受信任的 DTD 和 XML 架構可能會啟用載入危險的外部參考。 這項危險的載入可以藉由使用具有安全解析程式的 XmlReader，或在停用 DTD 和 XML 內嵌架構處理的情況下受到限制。|
 |[CA5371：請使用 XmlReader 讀取結構描述](../code-quality/ca5371.md)|處理不受信任的 DTD 和 XML 架構可能會啟用載入危險的外部參考。 使用具有安全解析程式的 XmlReader，或已停用 DTD 和 XML 內嵌架構處理時，會限制這種情況。|
 |[CA5372：請為 XPathDocument 使用 XmlReader](../code-quality/ca5372.md)|從不受信任的資料處理 XML 可能會載入危險的外部參考，這可以透過使用具有安全解析程式的 XmlReader 或停用 DTD 處理來加以限制。|
 |[CA5373：不使用已過時的金鑰衍生函式](../code-quality/ca5373.md)|此規則會偵測弱式金鑰衍生方法和的調用 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> `Rfc2898DeriveBytes.CryptDeriveKey` 。 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName>使用弱式演算法 PBKDF1。|
-|[CA5374：不要使用 XslTransform](../code-quality/ca5374.md)|此規則會檢查 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> 是否在程式碼中具現化。 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType>現在已過時，不應使用。|
+|[CA5374：請勿使用 XslTransform](../code-quality/ca5374.md)|此規則會檢查 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> 是否在程式碼中具現化。 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType>現在已過時，不應使用。|
+|[CA5375：不要使用帳戶共用存取簽章](../code-quality/ca5375.md)|帳戶 SAS 可以針對不允許服務 SAS 的 blob 容器、資料表、佇列和檔案共用，委派讀取、寫入和刪除作業的存取權。 不過，它不支援容器層級原則，而且對授與的許可權較不具彈性和控制權。 一旦惡意使用者取得，您的儲存體帳戶就會很容易遭到入侵。|
+|[CA5376：使用 SharedAccessProtocol HttpsOnly](../code-quality/ca5376.md)|SAS 是機密資料，無法在 HTTP 上以純文字傳輸。|
+|[CA5377：使用容器層級存取原則](../code-quality/ca5377.md)|容器層級存取原則可以隨時修改或撤銷。 它可提供更大的彈性，並控制授與的許可權。|
 |[CA5378:請勿停用 ServicePointManagerSecurityProtocols](../code-quality/ca5378.md)|設定 `Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols` 以 `true` 限制使用 TLS 1.0 的 Windows Communication FRAMEWORK （WCF）傳輸層安全性（tls）連線。 該 TLS 版本將會被取代。|
-|[CA5379：請勿使用弱式金鑰衍生函數演算法](../code-quality/ca5379.md)|<xref:System.Security.Cryptography.Rfc2898DeriveBytes>類別預設為使用 <xref:System.Security.Cryptography.HashAlgorithmName.SHA1> 演算法。 您應該指定雜湊演算法，以便在具有 <xref:System.Security.Cryptography.HashAlgorithmName.SHA256> 或更高版本的函式的某些多載中使用。 請注意， <xref:System.Security.Cryptography.Rfc2898DeriveBytes.HashAlgorithm> 屬性只有 `get` 存取子，而且沒有修飾詞 `overriden` 。|
+|[CA5379：請勿使用弱式金鑰衍生函數 (Key Derivation Function) 演算法](../code-quality/ca5379.md)|<xref:System.Security.Cryptography.Rfc2898DeriveBytes>類別預設為使用 <xref:System.Security.Cryptography.HashAlgorithmName.SHA1> 演算法。 您應該指定雜湊演算法，以便在具有 <xref:System.Security.Cryptography.HashAlgorithmName.SHA256> 或更高版本的函式的某些多載中使用。 請注意， <xref:System.Security.Cryptography.Rfc2898DeriveBytes.HashAlgorithm> 屬性只有 `get` 存取子，而且沒有修飾詞 `overriden` 。|
 |[CA5380：不新增憑證至根存放區](../code-quality/ca5380.md)|此規則會偵測將憑證新增至「信任的根憑證授權單位」憑證存放區的程式碼。 根據預設，「信任的根憑證授權單位」憑證存放區是以一組已符合「Microsoft 根憑證計畫」需求的公用 Ca 來設定。|
 |[CA5381：確保憑證不新增至根存放區](../code-quality/ca5381.md)|此規則會偵測可能將憑證新增至「信任的根憑證授權單位」憑證存放區的程式碼。 根據預設，信任的根憑證授權單位憑證存放區是以一組已符合 Microsoft 根憑證計畫需求的公開憑證授權單位單位（Ca）來設定。|
-|[CA5382：在 ASP.NET Core 中使用安全 cookie](../code-quality/ca5382.md)|透過 HTTPS 提供的應用程式必須使用安全 cookie，這會向瀏覽器指出 cookie 應該只能使用傳輸層安全性（TLS）來傳輸。|
-|[CA5383：確保在 ASP.NET Core 中使用安全 cookie](../code-quality/ca5383.md)|透過 HTTPS 提供的應用程式必須使用安全 cookie，這會向瀏覽器指出 cookie 應該只能使用傳輸層安全性（TLS）來傳輸。|
-|[CA5384：不要使用數位簽章演算法（DSA）](../code-quality/ca5384.md)|DSA 是弱式非對稱式加密演算法。|
-|[CA5385：使用具有足夠金鑰大小的 Rivest – Shamir – Adleman （RSA）演算法](../code-quality/ca5385.md)|小於2048位的 RSA 金鑰較容易遭受暴力密碼破解攻擊。|
+|[CA5382：在 ASP.Net Core 中使用安全的 Cookie](../code-quality/ca5382.md)|透過 HTTPS 提供的應用程式必須使用安全 cookie，這會向瀏覽器指出 cookie 應該只能使用傳輸層安全性（TLS）來傳輸。|
+|[CA5383：請確認在 ASP.Net Core 中使用安全的 Cookie](../code-quality/ca5383.md)|透過 HTTPS 提供的應用程式必須使用安全 cookie，這會向瀏覽器指出 cookie 應該只能使用傳輸層安全性（TLS）來傳輸。|
+|[CA5384：請勿使用數位簽章演算法 (DSA)](../code-quality/ca5384.md)|DSA 是弱式非對稱式加密演算法。|
+|[CA5385：使用有足夠金鑰大小的 Rivest–Shamir–Adleman (RSA) 加密演算法](../code-quality/ca5385.md)|小於2048位的 RSA 金鑰較容易遭受暴力密碼破解攻擊。|
 |[CA5386:避免將 SecurityProtocolType 值寫入程式碼](../code-quality/ca5386.md)|傳輸層安全性（TLS）可保護電腦之間的通訊，最常見的方式是使用超文字安全傳輸通訊協定（HTTPS）。 Tls 1.0 和 TLS 1.1 的通訊協定版本已被取代，而 TLS 1.2 和 TLS 1.3 是最新的。 未來，TLS 1.2 和 TLS 1.3 可能會被取代。 若要確保您的應用程式保持安全，請避免硬式編碼通訊協定版本，並以至少 .NET Framework v 4.7.1 為目標。|
-|[CA5387：請勿使用弱式金鑰衍生函式，但反復專案計數不足](../code-quality/ca5387.md)|此規則會檢查是否以小於100000的反復專案計數來產生密碼編譯金鑰 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 。 較高的反復專案計數有助於減輕嘗試猜測產生的密碼編譯金鑰的字典攻擊。|
-|[CA5388：使用弱式金鑰衍生函式時，請確定有足夠的反復專案計數](../code-quality/ca5388.md)|此規則會檢查是否使用產生的密碼編譯金鑰 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 具有小於100000的反復專案計數。 較高的反復專案計數有助於減輕嘗試猜測產生的密碼編譯金鑰的字典攻擊。|
+|[CA5387：請勿使用反覆項目數不足的弱式金鑰衍生函數 (Key Derivation Function)](../code-quality/ca5387.md)|此規則會檢查是否以小於100000的反復專案計數來產生密碼編譯金鑰 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 。 較高的反復專案計數有助於減輕嘗試猜測產生的密碼編譯金鑰的字典攻擊。|
+|[CA5388：使用弱式金鑰衍生函數 (Key Derivation Function) 時，請確保反覆項目數足夠](../code-quality/ca5388.md)|此規則會檢查是否使用產生的密碼編譯金鑰 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 具有小於100000的反復專案計數。 較高的反復專案計數有助於減輕嘗試猜測產生的密碼編譯金鑰的字典攻擊。|
 |[CA5389：不將封存項目路徑新增至目標檔案系統路徑](../code-quality/ca5389.md)|檔案路徑可以是相對的，而且可能會導致檔案系統存取預期的檔案系統目標路徑，使惡意的設定變更和遠端程式碼執行都透過「程式設計」和「等候」技術。|
-|[CA5390：不要硬式編碼加密金鑰](../code-quality/ca5390.md)|若要讓對稱演算法成功，只有傳送者和接收者才必須知道秘密金鑰。 當金鑰是硬式編碼時，很容易就會發現。 即使使用已編譯的二進位檔，惡意使用者也很容易將它解壓縮。 一旦私密金鑰遭到入侵，就可以直接解密加密文字，而不會再受到保護。|
-|[CA5394：不使用不安全的隨機性](../code-quality/ca5394.md)|使用密碼編譯弱式虛擬亂數產生器可能會讓攻擊者預測產生的安全性敏感值。|
-|[CA5396：將 HttpCookie 的 HttpOnly 設定為 true](../code-quality/ca5396.md)|做為深層防禦措施，請確定安全性敏感的 HTTP cookie 已標示為 HttpOnly。 這表示 web 瀏覽器應該不允許腳本存取 cookie。 插入的惡意腳本是竊取 cookie 的常見方式。|
+|[CA5390：請勿使用硬式編碼加密金鑰](../code-quality/ca5390.md)|若要讓對稱演算法成功，只有傳送者和接收者才必須知道秘密金鑰。 當金鑰是硬式編碼時，很容易就會發現。 即使使用已編譯的二進位檔，惡意使用者也很容易將它解壓縮。 一旦私密金鑰遭到入侵，就可以直接解密加密文字，而不會再受到保護。|
+|[CA5391：在 ASP.NET Core MVC 控制器中使用 antiforgery 權杖](../code-quality/ca5391.md)|處理 `POST` 、 `PUT` 、 `PATCH` 或要求， `DELETE` 而不需驗證 antiforgery token，可能會容易遭受跨網站偽造要求攻擊。 跨網站要求偽造攻擊可能會將來自已驗證使用者的惡意要求傳送至您的 ASP.NET Core MVC 控制器。|
+|[CA5392：使用 P/Invoke 的 DefaultDllImportSearchPaths 屬性](../code-quality/ca5392.md)|根據預設，使用探查的 P/Invoke 函式會 <xref:System.Runtime.InteropServices.DllImportAttribute> 有一些目錄，包括要載入之程式庫的目前工作目錄。 這可能是某些應用程式的安全性問題，因而導致 DLL 劫持。|
+|[CA5393：不要使用 unsafe DllImportSearchPath 值](../code-quality/ca5393.md)|預設的 DLL 搜尋目錄和元件目錄中可能有惡意的 DLL。 或者，視執行應用程式的位置而定，應用程式的目錄中可能會有惡意的 DLL。|
+|[CA5394：請勿使用不安全的隨機性](../code-quality/ca5394.md)|使用密碼編譯弱式虛擬亂數產生器可能會讓攻擊者預測產生的安全性敏感值。|
+|[CA5395：遺漏動作方法的 HttpVerb 屬性](../code-quality/ca5395.md)|建立、編輯、刪除或以其他方式修改資料的所有動作方法，都必須以 antiforgery 屬性來保護，而不受跨網站要求偽造攻擊。 執行「取得」作業應該是沒有副作用的安全作業，而且不會修改保存的資料。|
+|[CA5396：將 HttpCookie 的 HttpOnly 設為 true](../code-quality/ca5396.md)|做為深層防禦措施，請確定安全性敏感的 HTTP cookie 已標示為 HttpOnly。 這表示 web 瀏覽器應該不允許腳本存取 cookie。 插入的惡意腳本是竊取 cookie 的常見方式。|
 |[CA5397：請勿使用已過時的 SslProtocols 通訊協定](../code-quality/ca5397.md)|傳輸層安全性（TLS）可保護電腦之間的通訊，最常見的方式是使用超文字安全傳輸通訊協定（HTTPS）。 舊版的 TLS 通訊協定版本比 TLS 1.2 和 TLS 1.3 低，而且更有可能會有新的弱點。 避免較舊的通訊協定版本，將風險降至最低。|
 |[CA5398：避免以硬式編碼方式寫入 SslProtocols 值](../code-quality/ca5398.md)|傳輸層安全性（TLS）可保護電腦之間的通訊，最常見的方式是使用超文字安全傳輸通訊協定（HTTPS）。 Tls 1.0 和 TLS 1.1 的通訊協定版本已被取代，而 TLS 1.2 和 TLS 1.3 是最新的。 未來，TLS 1.2 和 TLS 1.3 可能會被取代。 若要確保您的應用程式保持安全，請避免硬式編碼通訊協定版本。|
-|[CA5399：明確停用 HttpClient 憑證撤銷清單檢查](../code-quality/ca5399.md)|已撤銷的憑證已不再受信任。 攻擊者可以使用它來傳遞某些惡意資料，或竊取 HTTPS 通訊中的敏感性資料。|
-|[CA5400：確定未停用 HttpClient 憑證撤銷清單檢查](../code-quality/ca5400.md)|已撤銷的憑證已不再受信任。 攻擊者可以使用它來傳遞某些惡意資料，或竊取 HTTPS 通訊中的敏感性資料。|
-|[CA5401：不要使用非預設 IV 的 CreateEncryptor](../code-quality/ca5401.md)|對稱式加密應一律使用不可重複的初始化向量來防止字典攻擊。|
-|[CA5402：使用 CreateEncryptor 搭配預設的 IV](../code-quality/ca5402.md)|對稱式加密應一律使用不可重複的初始化向量來防止字典攻擊。|
+|[CA5399：確認停用 HttpClient 憑證撤銷清單檢查](../code-quality/ca5399.md)|已撤銷的憑證已不再受信任。 攻擊者可以使用它來傳遞某些惡意資料，或竊取 HTTPS 通訊中的敏感性資料。|
+|[CA5400：確認未停用 HttpClient 憑證撤銷清單檢查](../code-quality/ca5400.md)|已撤銷的憑證已不再受信任。 攻擊者可以使用它來傳遞某些惡意資料，或竊取 HTTPS 通訊中的敏感性資料。|
+|[CA5401：請勿使用具有非預設 IV 的 CreateEncryptor](../code-quality/ca5401.md)|對稱式加密應一律使用不可重複的初始化向量來防止字典攻擊。|
+|[CA5402：使用具有預設 IV 的 CreateEncryptor](../code-quality/ca5402.md)|對稱式加密應一律使用不可重複的初始化向量來防止字典攻擊。|

@@ -1,7 +1,7 @@
 ---
 title: 自訂功能表與工具列
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.renametoolbar
 - vs.customize.toolbars
@@ -27,12 +27,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed425b120d5d47fb684294ce17bd7d48374c638e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ed85d3a3406cf7abf4bc08e728cc647d605e16ae
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301850"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284395"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自訂功能表和工具列
 
@@ -43,7 +43,7 @@ ms.locfileid: "79301850"
 
 ## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>在功能表列新增、移除或移動功能表
 
-1. 在功能表列上，選擇 **"工具** > **自訂**"。
+1. 在功能表列上，選擇 [**工具**] [  >  **自訂**]。
 
      [自訂]**** 對話方塊隨即開啟。
 
@@ -59,7 +59,7 @@ ms.locfileid: "79301850"
 
 ## <a name="add-remove-or-move-a-toolbar"></a>新增、移除或移動工具列
 
-1. 在功能表列上，選擇 **"工具** > **自訂**"。
+1. 在功能表列上，選擇 [**工具**] [  >  **自訂**]。
 
      [自訂]**** 對話方塊隨即開啟。
 
@@ -83,7 +83,7 @@ ms.locfileid: "79301850"
 
 ## <a name=""></a><a name="customizing_menu">自訂功能表或工具列</a>
 
-1. 在功能表列上，選擇 **"工具** > **自訂**"。
+1. 在功能表列上，選擇 [**工具**] [  >  **自訂**]。
 
     [自訂]**** 對話方塊隨即開啟。
 
@@ -105,7 +105,7 @@ ms.locfileid: "79301850"
 
 ## <a name="reset-a-menu-or-a-toolbar"></a>重設功能表或工具列
 
-1. 在功能表列上，選擇 **"工具** > **自訂**"。
+1. 在功能表列上，選擇 [**工具**] [  >  **自訂**]。
 
     [自訂]**** 對話方塊隨即開啟。
 

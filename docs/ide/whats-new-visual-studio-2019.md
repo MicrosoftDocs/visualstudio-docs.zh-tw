@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a6321e840941958fb2618a551a0212d6dc797cfb
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6b5058e0f1fabbf834a1adfb20d4f3a9a11094f5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183375"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283589"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -227,5 +227,9 @@ Visual Studio 2019 預設會安裝這項服務。
 * [Visual Studio 2019 版本資訊](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 for Mac 版本資訊](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Visual Studio 2019 SDK 的新功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Visual Studio 中 C++ 的新功能](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio.md)
+* [C # 8.0 的新功能](/dotnet/csharp/whats-new/csharp-8.md)
+* [.NET Core 3.1 的新功能](/dotnet/core/whats-new/dotnet-core-3-1.md)
+* [.NET Framework 的新功能](/dotnet/framework/whats-new.md)
 * [Microsoft Build 會議](https://www.microsoft.com/build)
 * [Microsoft Ignite 會議](https://www.microsoft.com/ignite)

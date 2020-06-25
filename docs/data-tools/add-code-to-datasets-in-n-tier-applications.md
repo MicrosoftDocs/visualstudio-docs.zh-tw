@@ -1,7 +1,7 @@
 ---
 title: 將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d35ff68144e92af12f2ee6284076118493c6be9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587117"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283082"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
 
@@ -32,7 +32,7 @@ ms.locfileid: "75587117"
 > 當您分隔資料集與 Tableadapter 時（藉由設定 [**資料集專案**] 屬性），不會自動移動專案中的現有部分資料集類別。 現有的資料集部分類別必須手動移至 dataset 專案。
 
 > [!NOTE]
-> 當需要加入驗證碼時，具類型的資料集會提供用來產生 <xref:System.Data.DataTable.ColumnChanging> 和 <xref:System.Data.DataTable.RowChanging> 事件處理常式的功能。 如需詳細資訊，請參閱[將驗證新增至多層式資料集](../data-tools/add-validation-to-an-n-tier-dataset.md)。
+> 當需要加入驗證碼時，具類型的資料集會提供產生 <xref:System.Data.DataTable.ColumnChanging> 和 <xref:System.Data.DataTable.RowChanging> 事件處理常式的功能。 如需詳細資訊，請參閱[將驗證新增至多層式資料集](../data-tools/add-validation-to-an-n-tier-dataset.md)。
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>若要將程式碼新增至多層式架構應用程式中的資料集
 
@@ -63,9 +63,9 @@ ms.locfileid: "75587117"
     }
     ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [多層式架構 (N-Tier) 資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)
+- [多層式資料應用程式總覽](../data-tools/n-tier-data-applications-overview.md)
 - [將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [建立和設定 TableAdapter](create-and-configure-tableadapters.md)
 - [階層式更新概觀](hierarchical-update.md)

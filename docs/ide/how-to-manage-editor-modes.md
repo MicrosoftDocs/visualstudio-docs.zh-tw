@@ -1,7 +1,7 @@
 ---
 title: 全螢幕和虛擬空間模式
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - word wrap
 - views, virtual space
@@ -24,12 +24,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f224a6e3a1b12ed17799ddf6a2fc5c23f5d4cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3f8f86d635e1e57d82dd2d18084c91a9267f9a0b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591030"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284200"
 ---
 # <a name="how-to-manage-editor-modes"></a>如何：管理編輯器模式
 
@@ -40,9 +40,9 @@ ms.locfileid: "75591030"
 
 ## <a name="enable-full-screen-mode"></a>啟用全螢幕模式
 
-您可以選擇隱藏所有工具視窗，並通過啟用**全屏**模式僅查看文件視窗。
+您可以選擇隱藏所有工具視窗，並藉由啟用**全螢幕**模式來只查看文件視窗。
 
-- 按 **"Alt**+**移位**+**輸入"** 進入或退出**全屏**模式。
+- 按**Alt** + **Shift** + **Enter**鍵，進入或離開**全螢幕**模式。
 
      -- 或 --
 
@@ -54,7 +54,7 @@ ms.locfileid: "75591030"
 
 1. 選取 [工具]**** 功能表上的 [選項]****。
 
-2. 展開 [文字編輯器]**** 資料夾，然後選擇 [所有語言]**** 全域設定此選項，或選擇特定語言的資料夾。 例如，要僅在"可視基本"中打開行號，請選擇**基本** > **文字編輯器**節點。
+2. 展開 [文字編輯器]**** 資料夾，然後選擇 [所有語言]**** 全域設定此選項，或選擇特定語言的資料夾。 例如，若只要在 Visual Basic 中開啟行號，請選擇 [**基本**  >  **文字編輯器**] 節點。
 
 3. 選取 [一般]**** 選項，然後在 [設定]**** 下選取 [啟用虛擬空間]****。
 
@@ -64,4 +64,4 @@ ms.locfileid: "75591030"
 ## <a name="see-also"></a>另請參閱
 
 - [在 Visual Studio 中自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)
-- [字體和顏色、環境、選項對話方塊](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+- [選項對話方塊、環境、字型和色彩](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

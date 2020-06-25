@@ -2,7 +2,7 @@
 title: 使用 Node.js REPL
 description: Visual Studio 提供與 Node.js 執行階段互動的支援
 ms.date: 12/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: faed930c60869010f740cf0a1e118a40299ce782
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8b2bbbdf478f27f936d4897f2ff773baa4cca1d6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62840654"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285000"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>使用 Node.js 互動式視窗
 
@@ -28,7 +28,7 @@ ms.locfileid: "62840654"
 
 ![專案操作功能表中的 Node.js 互動式視窗](../javascript/media/interactivewindow-open-from-project.png)
 
-打開 Node.js 交互視窗的預設短切鍵是 **[CTRL] = K、N**。或者，您可以通過選擇 **"查看** > **Windows** > **節點.js 互動式視窗**"從工具列打開視窗。
+開啟 Node.js 互動式視窗的預設快速鍵是 **[CTRL] + K、N**。或者，您可以選擇 [**視圖**  >  **視窗**  >  **]Node.js [互動式視窗]**，從工具列開啟視窗。
 
 ## <a name="use-the-repl"></a>使用 REPL
 

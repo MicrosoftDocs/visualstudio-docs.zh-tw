@@ -1,7 +1,7 @@
 ---
 title: 在參考管理員中新增參考
 ms.date: 08/02/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfad622a7587246836161cd79bb5b759151df1ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595306"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284722"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用參考管理員新增或移除參考
 
@@ -40,7 +40,7 @@ ms.locfileid: "75595306"
 
 - **COM**，其中列出所有可供參考的 COM 元件
 
-- **專案**
+- **投影**
 
 - **共用的專案**
 
@@ -50,7 +50,7 @@ ms.locfileid: "75595306"
 
 ## <a name="add-a-reference"></a>加入參考
 
-1. 在**方案總管**中，以滑鼠右鍵按一下 [參考]**** 或 [相依性]**** 節點，然後選擇 [新增參考]****。 您還可以按右鍵專案節點並選擇 **"添加** > **參考**"。
+1. 在**方案總管**中，以滑鼠右鍵按一下 [參考]**** 或 [相依性]**** 節點，然後選擇 [新增參考]****。 您也可以在專案節點上按一下滑鼠右鍵，然後選取 [**加入**  >  **參考**]。
 
    [參考管理員]**** 隨即開啟，並依群組列出可用的參考。
 
@@ -58,25 +58,25 @@ ms.locfileid: "75595306"
 
 ## <a name="assemblies-tab"></a>組件索引標籤
 
-[組件]**** 索引標籤會列出可供參考的所有 .NET 組件。 [組件]**** 索引標籤不會列出全域組件快取 (GAC) 中的任何組件，因為 GAC 中的組件是執行階段環境的一部分。 如果部署或複製包含對在 GAC 中註冊的程式集的引用的應用程式，則無論 **"複製本地"** 設置如何，都不得隨應用程式一起部署或複製程式集。 如需詳細資訊，請參閱[管理專案中的參考](../ide/managing-references-in-a-project.md)。
+[組件]**** 索引標籤會列出可供參考的所有 .NET 組件。 [組件]**** 索引標籤不會列出全域組件快取 (GAC) 中的任何組件，因為 GAC 中的組件是執行階段環境的一部分。 如果您部署或複製的應用程式包含在 GAC 中註冊之元件的參考，則不論 [**複製到本機**] 設定為何，該元件都不會隨著應用程式一起部署或複製。 如需詳細資訊，請參閱[管理專案中的參考](../ide/managing-references-in-a-project.md)。
 
-手動新增對任何 EnvDTE 命名空間 (<xref:EnvDTE>、<xref:EnvDTE80>、<xref:EnvDTE90>、<xref:EnvDTE90a> 或 <xref:EnvDTE100>) 的參考時，請在 [屬性]**** 視窗中，將參考的 [內嵌 Interop 類型]**** 屬性設定成 **False**。 由於無法嵌入的某些 EnvDTE 屬性，將此屬性設置為**True**可能會導致生成問題。
+手動新增對任何 EnvDTE 命名空間 (<xref:EnvDTE>、<xref:EnvDTE80>、<xref:EnvDTE90>、<xref:EnvDTE90a> 或 <xref:EnvDTE100>) 的參考時，請在 [屬性]**** 視窗中，將參考的 [內嵌 Interop 類型]**** 屬性設定成 **False**。 將此屬性設定為**True**可能會導致組建問題，因為某些無法內嵌的 EnvDTE 屬性。
 
-所有桌面專案都包含對**mscorlib**的隱式引用。 Visual Basic 專案包含 <xref:Microsoft.VisualBasic> 的隱含參考。 所有專案都包含對**System.Core**的隱式引用，即使它從引用清單中刪除也是如此。
+所有桌面專案都包含**mscorlib**的隱含參考。 Visual Basic 專案包含 <xref:Microsoft.VisualBasic> 的隱含參考。 所有專案都包含**system.object**的隱含參考，即使已從參考清單中移除也一樣。
 
 如果專案類型不支援組件，此索引標籤就不會出現在 [參考管理員] 對話方塊中。
 
-"**程式集**"選項卡由兩個子選項卡組成：
+[**元件**] 索引標籤包含兩個子索引標籤：
 
-1. **框架**列出了構成目標框架的所有程式集。
+1. **架構**會列出組成目標 Framework 的所有元件。
 
    針對不以 .NET Core 或通用 Windows 平台為目標的專案，[Framework]**** 索引標籤會列舉來自目標 Framework 的組件。 使用者必須加入該應用程式所需的任何參考。
 
-   通用 Windows 專案預設會包含目標 Framework 中所有組件的參考。 在託管專案中，**解決方案資源管理器**中的 **"參考"** 資料夾下的唯讀節點指示對整個框架的引用。 因此，"**框架"** 選項卡不會枚舉框架中的任何程式集，而是顯示以下消息："已引用所有框架程式集。 請使用物件瀏覽器瀏覽 Framework 中的參考」。
+   通用 Windows 專案預設會包含目標 Framework 中所有組件的參考。 在 managed 專案中，**方案總管**的 [**參考**] 資料夾下的唯讀節點表示整個架構的參考。 因此，[ **framework** ] 索引標籤不會列舉架構中的任何元件，而是會顯示下列訊息：「所有 framework 元件都已經被參考了。 請使用物件瀏覽器瀏覽 Framework 中的參考」。
 
-2. **擴展**列出了元件和控制項的外部供應商為擴展目標框架而開發的所有程式集。 根據使用者應用程式的用途，可能會需要這些組件。
+2. [**延伸**模組] 會列出外部元件和控制項廠商為了擴充目標 framework 而開發的所有元件。 根據使用者應用程式的用途，可能會需要這些組件。
 
-   **通過**枚舉在以下位置註冊的程式集來填充擴展：
+   **擴充**功能的填入方式是列舉下列位置中註冊的元件：
 
    32 位元電腦：
    - `HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]`
@@ -127,13 +127,13 @@ ms.locfileid: "75595306"
 
   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-  最小版本是應用的最低框架版本。 * \< \> * 如果*\<版本最小\>值*為 v3.0，則*AssemblyFoldersEx*中指定的資料夾將應用於目標 .NET Framework 3.0 及更高版本的專案。
+  *\<VersionMinimum\>* 是適用的最低 framework 版本。 如果 *\<VersionMinimum\>* 是 v3.0，則*AssemblyFoldersEx*中指定的資料夾會套用至以 .NET Framework 3.0 和更新版本為目標的專案。
 
-  *程式集位置\>是要顯示在"增加參考"對話方塊中的程式集的目錄，例如 C：\MyAssembly \< * * *。 **Add Reference**
+  *\<AssemblyLocation\>* 是您想要在 [**加入參考**] 對話方塊中顯示之元件的目錄，例如*C:\MyAssemblies*。
 
   在 `HKEY_LOCAL_MACHINE` 節點下建立登錄機碼，可讓所有使用者都能在 [新增參考]**** 對話方塊中看到指定位置的組件。 在 `HKEY_CURRENT_USER` 節點下建立登錄機碼，只會影響目前使用者的設定。
 
-  再次開啟 [加入參考]**** 對話方塊。 程式集應出現在 **.NET**選項卡上。如果沒有，請確保程式集位於指定的*程式集位置*目錄中，重新開機 Visual Studio，然後重試。
+  再次開啟 [加入參考]**** 對話方塊。 元件應該會出現在 [ **.net** ] 索引標籤上。如果沒有，請確認元件位於指定的*元件位置*目錄中，然後重新開機 Visual Studio，然後再試一次。
 
 ## <a name="projects-tab"></a>[專案] 索引標籤
 
@@ -151,7 +151,7 @@ ms.locfileid: "75595306"
 ## <a name="universal-windows-tab"></a>[通用 Windows] 索引標籤
 
 [通用 Windows]**** 索引標籤會列出 Windows 作業系統執行所在平台特定的所有 SDK。
-此選項卡有兩個子組：**核心**和**擴展**。
+此索引標籤有兩個子群組：**核心**和**擴充**功能。
 
 ### <a name="core-subgroup"></a>[核心] 子群組
 
@@ -159,11 +159,11 @@ ms.locfileid: "75595306"
 
 ### <a name="extensions-subgroup"></a>[延伸模組] 子群組
 
-**擴展程式**列出了擴展目標 Windows 平臺的使用者 SDK。
+[**延伸模組] 會列出擴充**目標 Windows 平臺的使用者 sdk。
 
-SDK 是檔案集合，Visual Studio 會將這個集合視為單一元件。 在 **"擴展"** 選項卡中，應用於從中調用"參考管理器"對話方塊的專案的 SDK 列為單個條目。 新增至專案時，Visual Studio 會使用所有 SDK 內容，因此使用者不需要採取任何進一步動作就可以在 IntelliSense、工具箱、設計工具、物件瀏覽器、組建、部署、偵錯和封裝中利用 SDK 內容。
+SDK 是檔案集合，Visual Studio 會將這個集合視為單一元件。 在 [**擴充**功能] 索引標籤中，套用至已叫用 [參考管理員] 對話方塊之專案的 sdk 會列為 [單一專案]。 新增至專案時，Visual Studio 會使用所有 SDK 內容，因此使用者不需要採取任何進一步動作就可以在 IntelliSense、工具箱、設計工具、物件瀏覽器、組建、部署、偵錯和封裝中利用 SDK 內容。
 
-有關如何在 **"擴展"** 選項卡中顯示 SDK 的資訊，請參閱[創建軟體發展工具組](../extensibility/creating-a-software-development-kit.md)。
+如需有關如何在 [**擴充**功能] 索引標籤中顯示 SDK 的詳細資訊，請參閱[建立軟體發展工具組](../extensibility/creating-a-software-development-kit.md)。
 
 > [!NOTE]
 > 如果專案參考的 SDK 取決於另一個 SDK，則除非您手動新增第二個 SDK 的參考，否則 Visual Studio 不會使用第二個 SDK。 當使用者在 [延伸模組]**** 索引標籤上選擇 SDK 時，[參考管理員] 對話方塊會透過在 [詳細資料] 窗格中列出所有相依性，協助您識別 SDK 相依性。
@@ -172,7 +172,7 @@ SDK 是檔案集合，Visual Studio 會將這個集合視為單一元件。 在 
 
 ## <a name="com-tab"></a>COM 索引標籤
 
-**COM**選項卡列出了可用於引用的所有 COM 元件。 如果您要將參考加入包含內部資訊清單的已註冊 COM DLL，請先移除註冊 DLL。 否則 Visual Studio 會將組件參考新增為 ActiveX 控制項，而不是原生 DLL。
+[ **Com** ] 索引標籤會列出所有可供參考的 COM 元件。 如果您要將參考加入包含內部資訊清單的已註冊 COM DLL，請先移除註冊 DLL。 否則 Visual Studio 會將組件參考新增為 ActiveX 控制項，而不是原生 DLL。
 
 如果專案類型不支援 COM，此索引標籤就不會出現在 [參考管理員] 對話方塊中。
 
@@ -184,13 +184,13 @@ SDK 是檔案集合，Visual Studio 會將這個集合視為單一元件。 在 
 
 請避免將檔案參考加入至同一方案中其他專案的輸出，因為這種做法可能會造成編譯錯誤。 請改用 [參考管理員]**** 對話方塊中的 [方案] 索引標籤來建立專案對專案間的參考。 這樣一來就能夠更有效的管理在專案中所建立的類別庫，使得小組開發更為容易。 如需詳細資訊，請參閱[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)。
 
-您無法瀏覽至 SDK，並將它新增至您的專案。 您只能流覽到檔（例如，程式集或 *.winmd），* 並將其添加到專案中。
+您無法瀏覽至 SDK，並將它新增至您的專案。 您只能流覽至檔案（例如，元件或*winmd*），並將它新增至您的專案。
 
-執行對 WinMD 的檔引用時，預期的佈局是*\<filename>.winmd、fileName* * \<>.dll*和*\<filename>.pri*檔都放在一起。 如果您在下列情境中參考 WinMD，會將不完整的檔案集合複製到專案輸出目錄中，因此造成建置和執行階段失敗發生。
+執行 winmd 的檔案參考時，預期的配置是將* \<FileName> winmd*、 * \<FileName> .dll*和* \<FileName> pri*檔案全部放置在一起。 如果您在下列情境中參考 WinMD，會將不完整的檔案集合複製到專案輸出目錄中，因此造成建置和執行階段失敗發生。
 
-- **原生元件**：原生專案會為每一個不相鄰的命名空間集合建立一個 WinMD，並且建立一個包含實作的 DLL。 WinMD 會有不同的名稱。 參考這個原生元件檔時，MSBuild 不會將採用不同名稱的 WinMD 辨識為同一個元件。 因此，將僅複製同名*\<的 FileName>.dll*和*\<filename>.winmd，* 並且將發生執行階段錯誤。 若要解決這個問題，請建立延伸模組 SDK。 如需詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。
+- **原生元件**：原生專案會為每一個不相鄰的命名空間集合建立一個 WinMD，並且建立一個包含實作的 DLL。 WinMD 會有不同的名稱。 參考這個原生元件檔時，MSBuild 不會將採用不同名稱的 WinMD 辨識為同一個元件。 因此，只會複製名稱相同的* \<FileName> .dll*和* \<FileName> winmd* ，並會發生執行階段錯誤。 若要解決這個問題，請建立延伸模組 SDK。 如需詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。
 
-- **使用控制項**： 至少， XAML 控制項由*\<filename>.winmd*、 * \<filename>.dll、* * \<filename>.pri*、 * \<XamlName>.xaml*和*\<imageName>.jpg*組成。 生成專案時，不會將與檔引用關聯的資源檔案複製到專案的輸出目錄中，並且將*\<僅複製 fileName>.winmd、fileName* * \<>.dll*和*\<filename>.pri。* 將記錄建置錯誤，以通知使用者缺少資源*\<XamlName>.xaml*和*\<ImageName>.jpg。* 若要成功，使用者必須手動將這些資源檔複製到專案輸出目錄中供建置和偵錯/執行階段使用。 若要解決這個問題，請遵循[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)中的步驟建立延伸模組 SDK，或編輯專案檔以新增下列屬性：
+- **使用控制項**：XAML 控制項至少包含 \<FileName>.winmd**、\<FileName>.dll**、\<FileName>.pri**、\<XamlName>.xaml** 和 \<ImageName>.jpg**。 建立專案時，與檔案參考相關聯的資源檔不會複製到專案的輸出目錄中，而且只會複製* \<FileName> winmd*、 * \<FileName> .dll*和* \<FileName> pri* 。 系統會記錄組建錯誤，通知使用者* \<XamlName> 遺漏 resources 和* * \<ImageName> .jpg* 。 若要成功，使用者必須手動將這些資源檔複製到專案輸出目錄中供建置和偵錯/執行階段使用。 若要解決這個問題，請遵循[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)中的步驟建立延伸模組 SDK，或編輯專案檔以新增下列屬性：
 
     ```xml
     <PropertyGroup>
@@ -203,7 +203,7 @@ SDK 是檔案集合，Visual Studio 會將這個集合視為單一元件。 在 
 
 ## <a name="recent"></a>最近
 
-**程式集** **、COM** **、Windows**和**流覽**每個選項卡都支援 **"最近"** 選項卡，該選項卡枚舉最近添加到專案的元件清單。
+[**元件**]、[ **COM**]、[ **Windows**] 和 **[流覽**] 都支援 [**最近**] 索引標籤，此索引標籤會列舉最近新增至專案的元件清單。
 
 ## <a name="search"></a>搜尋
 

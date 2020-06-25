@@ -1,7 +1,7 @@
 ---
 title: 如何：建立和移除專案相依性
 ms.date: 06/21/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ProjectDependenciesDlg
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a286a84d01c6a49b32445106488688ba5b489be
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ad21aeae2d348f56cb722365cd1e2ded249bbefe
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114548"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284460"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：建立和移除專案相依性
 
@@ -31,7 +31,7 @@ ms.locfileid: "76114548"
 
 ## <a name="to-assign-dependencies-to-projects"></a>指派專案相依性
 
-1. 在**解決方案資源管理器中**，選擇專案。
+1. 在 [**方案總管**中，選取專案。
 
 2. 在 [專案]**** 功能表上，選擇 [專案相依性]****。
 
@@ -48,7 +48,7 @@ ms.locfileid: "76114548"
 
 ## <a name="to-remove-dependencies-from-projects"></a>若要從專案移除相依性
 
-1. 在**解決方案資源管理器中**，選擇專案。
+1. 在 [**方案總管**中，選取專案。
 
 2. 在 [專案]**** 功能表上，選擇 [專案相依性]****。
 
@@ -65,5 +65,5 @@ ms.locfileid: "76114548"
 
 - [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
-- [瞭解組建組態](../ide/understanding-build-configurations.md)
+- [了解組建組態](../ide/understanding-build-configurations.md)
 - [管理專案和解決方案屬性](managing-project-and-solution-properties.md)

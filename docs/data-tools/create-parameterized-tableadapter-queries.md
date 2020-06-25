@@ -1,7 +1,7 @@
 ---
 title: 建立參數型 TableAdapter 查詢
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98e1ee8a279933cc2cc59abe70b6ea8af4850676
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586740"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282601"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>建立參數型 TableAdapter 查詢
 
@@ -50,7 +50,7 @@ ms.locfileid: "75586740"
 
 2. 在 [**資料**] 功能表上，選取 [**加入查詢**]。
 
-3. 完成 [搜尋準則產生器] 對話方塊，並將具有所需參數的 WHERE 子句新增至 SQL 陳述式。
+3. 完成 [搜尋準則產生器]**** 對話方塊，並將具有所需參數的 WHERE 子句新增至 SQL 陳述式。
 
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>將查詢加入至現有的資料繫結表單
 
@@ -59,25 +59,25 @@ ms.locfileid: "75586740"
 2. 在 [**資料**] 功能表上，選取 [**新增查詢**] 或 [**資料智慧標籤**]。
 
     > [!NOTE]
-    > 若 [資料] 功能表中的 [新增查詢] 無法使用，請選取表單上顯示您想要新增參數化之資料來源的控制項。 例如，若表單以 <xref:System.Windows.Forms.DataGridView> 控制項顯示資料，請選取此控制項。 若表單以個別控制項顯示資料，請選取任何資料繫結控制項。
+    > 若 [資料]**** 功能表中的 [新增查詢]**** 無法使用，請選取表單上顯示您想要新增參數化之資料來源的控制項。 例如，若表單以 <xref:System.Windows.Forms.DataGridView> 控制項顯示資料，請選取此控制項。 若表單以個別控制項顯示資料，請選取任何資料繫結控制項。
 
 3. 在 [**選取資料來源資料表**] 區域中，選取您要加入參數化的資料表。
 
-4. 如果您要建立新查詢，請在 [新的查詢名稱] 方塊中鍵入名稱。
+4. 如果您要建立新查詢，請在 [新的查詢名稱]**** 方塊中鍵入名稱。
 
      -或-
 
-     選取 [現有的查詢名稱] 方塊中的查詢。
+     選取 [現有的查詢名稱]**** 方塊中的查詢。
 
 5. 在 [**查詢] 文字方塊**中，輸入接受參數的查詢。
 
 6. 選取 [確定]。
 
-     輸入參數的控制項及 [載入] 按鈕會新增至 <xref:System.Windows.Forms.ToolStrip> 控制項中的表單。
+     輸入參數的控制項及 [載入]**** 按鈕會新增至 <xref:System.Windows.Forms.ToolStrip> 控制項中的表單。
 
 ### <a name="query-for-null-values"></a>查詢 null 值
 
-當您想要查詢沒有目前值的記錄時，可以將 TableAdapter 參數指派為 null 值。 例如，請考慮下列在其 `WHERE` 子句中具有 `ShippedDate` 參數的查詢：
+當您想要查詢沒有目前值的記錄時，可以將 TableAdapter 參數指派為 null 值。 例如，請考慮下列在 `ShippedDate` 其子句中具有參數的查詢 `WHERE` ：
 
 ```sql
 SELECT CustomerID, OrderDate, ShippedDate
@@ -92,12 +92,12 @@ WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 
 若要讓查詢接受 null 值：
 
-1. 在  **DataSet 設計工具**中，選取需要接受 null 參數值的 TableAdapter 查詢。
+1. 在 [ **DataSet 設計工具**中，選取需要接受 null 參數值的 TableAdapter 查詢。
 
-2. 在 [**屬性**] 視窗中，選取 [**參數**]，然後按一下省略號（ **...** ）按鈕以開啟 [**參數集合編輯器**]。
+2. 在 [**屬性**] 視窗中，選取 [**參數**]，然後按一下省略號（**...**）按鈕以開啟 [**參數集合編輯器**]。
 
-3. 選取允許 null 值的參數，並將**AllowDbNull**屬性設定為 `true`。
+3. 選取允許 null 值的參數，並將**AllowDbNull**屬性設定為 `true` 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)

@@ -5,19 +5,19 @@ description: 容器工具組建流程的總覽
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
-ms.topic: conceptual
-ms.openlocfilehash: 1b23d918621d79756fd77a1dd9b98009b2769ed3
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.topic: reference
+ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189487"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283199"
 ---
 # <a name="container-tools-build-properties"></a>容器工具組建屬性
 
 您可以藉由設定 MSBuild 用來建立專案的屬性，自訂 Visual Studio 建立容器專案的方式。 例如，您可以變更 Dockerfile 的名稱、指定影像的標記和標籤、提供傳遞至 Docker 命令的其他引數，以及控制 Visual Studio 是否執行特定效能優化，例如在容器環境外建立。 您也可以設定偵錯工具屬性，例如要啟動之可執行檔的名稱，以及要提供的命令列引數。
 
-若要設定屬性的值，請編輯專案檔。 例如，假設您的 Dockerfile 名為*MyDockerfile*。 您可以在專案`DockerfileFile`檔中設定屬性，如下所示。
+若要設定屬性的值，請編輯專案檔。 例如，假設您的 Dockerfile 名為*MyDockerfile*。 您可以 `DockerfileFile` 在專案檔中設定屬性，如下所示。
 
 ```xml
 <PropertyGroup>
@@ -25,7 +25,7 @@ ms.locfileid: "82189487"
 </PropertyGroup>
 ```
 
-您可以將屬性設定加入至現有`PropertyGroup`的專案，如果沒有的話，請建立新`PropertyGroup`的元素。
+您可以將屬性設定加入至現有的專案 `PropertyGroup` ，如果沒有的話，請建立新的 `PropertyGroup` 元素。
 
 下表顯示適用于容器專案的 MSBuild 屬性。 NuGet 套件版本適用于[VisualStudio. Azure 容器](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets/)。
 
@@ -80,7 +80,7 @@ ms.locfileid: "82189487"
 
 如需有關 MSBuild 屬性的一般資訊，請參閱[Msbuild 屬性](../msbuild/msbuild-properties.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Docker Compose 組建屬性](docker-compose-properties.md)
 

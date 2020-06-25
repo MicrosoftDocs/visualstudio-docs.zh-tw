@@ -10,60 +10,67 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1033d4167c03951a642656807aeb9cca83116651
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79132690"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285292"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
-您可以通過登錄個人化帳戶來個人化和優化視覺化工作室的開發體驗。
+您可以登入個人化帳戶，在 Visual Studio 中個人化和優化您的開發體驗。
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[登入 Visual Studio for Mac](/visualstudio/mac/signing-in)。
 
+::: moniker range="vs-2017"
+
+> [! 警告] 使用 Visual Studio 2017 來存取設定為條件式存取的資源，可能會觸發降級的驗證體驗，並在相同的 Visual Studio 會話內多次提示重新驗證。 
+> 若要使用針對條件式存取所設定的資源，請升級至 Visual Studio 2019 Update 16.6 或更新版本。 如需詳細資訊，請參閱[如何搭配使用 Visual Studio 與需要多重要素驗證的帳戶](work-with-multi-factor-authentication.md)。
+
+::: moniker-end
+
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>我為何應該登入 Visual Studio？
 
-當您登入時，您可以擴充 Visual Studio 體驗。 例如，登錄後，可以跨設備[同步設置](synchronized-settings-in-visual-studio.md)、擴展試用版並自動連接到 Azure 服務（僅舉幾例）。
+當您登入時，您可以擴充 Visual Studio 體驗。 例如，在您登入之後，您可以跨裝置[同步處理您的設定](synchronized-settings-in-visual-studio.md)、延長試用版並自動連線到 Azure 服務等等。
 
 以下是您在登入後預期及可執行事項的完整清單：
-- **延長 Visual Studio 試用期** - 您可以額外使用 90 天的 Visual Studio Professional 或 Visual Studio Enterprise，而不受限於 30 天的試用期。 有關詳細資訊，請參閱[擴展試用版或更新許可證](../ide/how-to-unlock-visual-studio.md)。
+- **延長 Visual Studio 試用期** - 您可以額外使用 90 天的 Visual Studio Professional 或 Visual Studio Enterprise，而不受限於 30 天的試用期。 如需詳細資訊，請參閱[延長試用版或更新授權](../ide/how-to-unlock-visual-studio.md)。
 
 - **解除鎖定 Visual Studio Community 版本** - 如果 Community 版本的安裝提示您提供授權，請登入 IDE 來自行解除鎖定。
 
-- **使用與 Visual Studio 訂用帳戶或 Azure DevOps 組織建立關聯的帳戶，就可以解除鎖定 Visual Studio**。 有關詳細說明，請參閱[擴展試用版或更新許可證](../ide/how-to-unlock-visual-studio.md)。
+- **使用與 Visual Studio 訂用帳戶或 Azure DevOps 組織建立關聯的帳戶，就可以解除鎖定 Visual Studio**。 如需詳細指示，請參閱[延長試用版或更新授權](../ide/how-to-unlock-visual-studio.md)。
 
 - **存取 Visual Studio Dev Essentials 方案** - 此方案包含免費的軟體供應項目、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 。
 
-- **同步處理您的 Visual Studio 設定** - 您自訂的設定 (例如按鍵繫結關係、視窗配置和色彩佈景主題)，會在您從任何裝置登入 Visual Studio 時立即套用。 請參閱[視覺化工作室中的同步設置](../ide/synchronized-settings-in-visual-studio.md)。
+- **同步處理您的 Visual Studio 設定** - 您自訂的設定 (例如按鍵繫結關係、視窗配置和色彩佈景主題)，會在您從任何裝置登入 Visual Studio 時立即套用。 請參閱[Visual Studio 中的同步處理設定](../ide/synchronized-settings-in-visual-studio.md)。
 
 - 對於同一個帳戶不會再次提示輸入認證，即可在 IDE 中**自動連線到 Azure 和 Azure DevOps Services 等服務**。
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>如何登入 Visual Studio
 
-首次打開 Visual Studio 時，系統會要求您登錄並提供一些基本的註冊資訊。 
+當您第一次開啟 Visual Studio 時，系統會要求您登入並提供一些基本註冊資訊。 
 
 ![登入提示](../ide/media/vs2019_signinpopup.png)
 
-您應該選擇 Microsoft 帳戶或最能代表您的工作或學校帳戶。 如果您沒有任何這些帳戶，則可以通過按一下登錄按鈕下的連結免費創建 Microsoft 帳戶。 如果您遇到問題，請參閱[如何註冊 Microsoft 帳戶？](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
+您應該選擇 Microsoft 帳戶或最能代表您的工作或學校帳戶。 如果您沒有這些帳戶，您可以按一下 [登入] 按鈕底下的連結，免費建立 Microsoft 帳戶。 如果您遇到問題，請參閱[如何? 註冊 Microsoft 帳戶嗎？](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
-接下來，選擇您在 Visual Studio 中要使用的 UI 設定和色彩佈景主題。 Visual Studio 會記住這些設定，並在您已登入的所有 Visual Studio 環境中同步處理這些設定。 有關同步設置的清單，請參閱[同步設置](../ide/synchronized-settings-in-visual-studio.md)。 如果在視覺化工作室中打開 **"工具** > **選項"** 功能表，則可以稍後更改設置。
+接下來，選擇您在 Visual Studio 中要使用的 UI 設定和色彩佈景主題。 Visual Studio 會記住這些設定，並在您已登入的所有 Visual Studio 環境中同步處理這些設定。 如需已同步處理的設定清單，請參閱[同步](../ide/synchronized-settings-in-visual-studio.md)處理的設定。 稍後如果您在 Visual Studio 中開啟 [**工具**] [選項] 功能表，就可以變更設定  >  **Options** 。
 
 提供設定之後會啟動 Visual Studio，您也將完成登入並準備開始使用。 若要確認您是否已登入，請在 Visual Studio 環境的右上角尋找您的名稱。
 
-![當前在 VS2019 中登錄使用者](../ide/media/vs2019_username.png)
+![VS2019 中目前登入的使用者](../ide/media/vs2019_username.png)
 
-如果您選擇在首次打開 Visual Studio 時不登錄，則稍後很容易登錄。 在視覺化工作室環境的右上角查找**登錄**連結。 
+如果您在第一次開啟 Visual Studio 時選擇不登入，稍後可以輕鬆執行此動作。 尋找 Visual Studio 環境右上角的 [登**入**] 連結。 
 
-![未登錄使用者](../ide/media/vs2019_usernotsignedin.png)
+![未登入使用者](../ide/media/vs2019_usernotsignedin.png)
 
-除非您登出，否則每當啟動 Visual Studio 時便會自動登入，而且會自動套用同步設定的任何變更。 要登出，請按一下 Visual Studio 環境右上角帶有個人資料名稱的圖示，選擇 **"帳戶設置"** 命令，然後選擇 **"登出**"連結。 若要再次登入，請選擇 Visual Studio 環境右上角的 [ **登入** ] 命令。
+除非您登出，否則每當啟動 Visual Studio 時便會自動登入，而且會自動套用同步設定的任何變更。 若要登出，請按一下 Visual Studio 環境右上角的設定檔名稱旁邊的圖示，選擇 [**帳戶設定**] 命令，然後選擇 [**登出**] 連結。 若要再次登入，請選擇 Visual Studio 環境右上角的 [ **登入** ] 命令。
 
 ## <a name="to-change-your-profile-information"></a>若要變更您的設定檔資訊
 
-1. 轉到 **"檔** > **帳戶設置**"並選擇 **"管理視覺化工作室設定檔**"連結。
+1. 移至**File**  >  [檔案] [**帳戶設定**]，然後選擇 [**管理 Visual Studio 設定檔**] 連結。
 
 1. 在瀏覽器視窗中，選取 [編輯設定檔]**** 並變更所要的設定。
 
@@ -71,7 +78,7 @@ ms.locfileid: "79132690"
 
 ## <a name="troubleshooting"></a>疑難排解
 
-如果您在登錄時遇到任何問題，請參閱[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)頁面以獲取有關説明。
+如果您在登入時遇到任何問題，請參閱訂用帳戶[支援](https://visualstudio.microsoft.com/subscriptions/support/)頁面以取得協助。
 
 ## <a name="see-also"></a>另請參閱
 

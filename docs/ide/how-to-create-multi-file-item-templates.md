@@ -1,7 +1,7 @@
 ---
 title: 建立多檔案項目範本
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4a4f0c50fc0a3fe21da560356d3551ca85ef9d66
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593729"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284421"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：建立多檔案項目範本
 
@@ -53,15 +53,15 @@ ms.locfileid: "75593729"
      > [!NOTE]
      > 將衍生自此範本的項目新增至專案時，檔案名稱會衍生自使用者在 [新增項目]**** 對話方塊中輸入的名稱。
 
-1. 選擇要包含在範本中的檔，按右鍵所選內容，然後選擇"**發送到** > **壓縮（壓縮）"資料夾**。
+1. 選取要包含在範本中的檔案，以滑鼠右鍵按一下選取範圍，然後選擇 [**傳送到**  >  **壓縮的（zipped）資料夾**]。
 
-   您選擇的檔將壓縮到 *.zip*檔中。
+   您選取的檔案會壓縮成 *.zip*檔案。
 
-1. 將 *.zip* 檔案複製到使用者項目範本的位置。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ItemTemplates*。 如需詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+1. 將 *.zip* 檔案複製到使用者項目範本的位置。 根據預設，此目錄為 *%USERPROFILE%\Documents\Visual Studio \<Version\> \Templates\ItemTemplates*。 如需詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 1. 結束再重新開啟 Visual Studio。
 
-1. 創建新專案或打開現有專案，然後選擇 **"專案** > **添加新專案**"或按**Ctrl**+**Shift**+**A**。
+1. 建立新的專案，或開啟現有的專案，然後選擇 [**專案**] [  >  **加入新專案**] 或按**Ctrl** + **Shift** + **a**。
 
    多檔案項目範本即會出現在 [新增項目]**** 對話方塊中。
 
@@ -94,7 +94,7 @@ ms.locfileid: "75593729"
 
 ## <a name="see-also"></a>另請參閱
 
-- [創建專案和專案範本](../ide/creating-project-and-item-templates.md)
-- [如何：創建專案範本](../ide/how-to-create-item-templates.md)
+- [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
+- [如何：建立專案範本](../ide/how-to-create-item-templates.md)
 - [範本參數](../ide/template-parameters.md)
-- [如何：替換範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)
+- [如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)

@@ -1,7 +1,7 @@
 ---
 title: 使用說明檢視器索引
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f80b0d63bc7e7fdb89f69607e4529e18f26cc30
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825948"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284954"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>使用說明檢視器索引來尋找主題
 
@@ -28,7 +28,7 @@ ms.locfileid: "67825948"
 
 ## <a name="to-find-a-topic-by-using-the-index"></a>使用索引來尋找主題
 
-在 [索引]  索引標籤上，執行下列任一項工作：
+在 [索引]**** 索引標籤上，執行下列任一項工作：
 
 - 在文字方塊中指定要搜尋的關鍵字。 例如，指定 "update" 來尋找包含 "update"、"updated" 和 "updating" 這類關鍵字的主題。
 
@@ -45,7 +45,7 @@ ms.locfileid: "67825948"
 
 雖然使用索引的程序相當直覺，不過若能了解關鍵字的最佳輸入方式，將有助於提升索引搜尋的生產力。
 
-### <a name="general-guidelines"></a>一般方針
+### <a name="general-guidelines"></a>一般指導方針
 
 - 捲動並檢視所有索引項目。 並非所有主題都是以相同的方式進行索引，而可以協助您的主題可能會位於比您預期的還要高或低的位置。
 
@@ -55,7 +55,7 @@ ms.locfileid: "67825948"
 
     例如，如果 "debugging inline assembly code" 沒有顯示相關的項目，請嘗試輸入 "assembly code, debugging inline"。
 
-- 搭配 [索引]  索引標籤使用篩選，來減少結果數目。
+- 搭配 [索引]**** 索引標籤使用篩選，來減少結果數目。
 
 ### <a name="syntax-tips"></a>語法提示
 
@@ -79,6 +79,6 @@ ms.locfileid: "67825948"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：在 TOC 中尋找主題](../help-viewer/find-topics-toc.md)
+- [如何：在目錄中尋找主題](../help-viewer/find-topics-toc.md)
 - [如何：搜尋主題](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

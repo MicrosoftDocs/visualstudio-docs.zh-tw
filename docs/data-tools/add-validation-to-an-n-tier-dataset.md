@@ -1,7 +1,7 @@
 ---
 title: 將驗證新增至多層式架構 (N-Tier) 資料集
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 426399022c2484dca28bb4f4e1f26c14783a3d19
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 91dbe04c85491a38a221edfb064702085136780f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113305"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283017"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>將驗證新增至多層式架構 (N-Tier) 資料集
 將驗證加入至分成多層式方案的資料集基本上與將驗證加入至單一檔案資料集（單一專案中的資料集）的方式相同。 針對資料執行驗證的建議位置是在資料表的 <xref:System.Data.DataTable.ColumnChanging> 和/或 <xref:System.Data.DataTable.RowChanging> 事件期間。
@@ -31,12 +31,12 @@ ms.locfileid: "76113305"
 > 當您從 Tableadapter 區隔資料集（藉由設定 [**資料集專案**] 屬性）時，不會自動移動專案中的現有部分資料集類別。 現有的部分資料集類別必須手動移至 dataset 專案。
 
 > [!NOTE]
-> [Dataset 設計工具] 不會在中C#自動為 <xref:System.Data.DataTable.ColumnChanging> 和 <xref:System.Data.DataTable.RowChanging> 事件建立事件處理常式。 您必須手動建立事件處理常式，並將事件處理常式連結至基礎事件。 下列程式描述如何在 Visual Basic 和C#中建立必要的事件處理常式。
+> Dataset 設計工具不會自動為和事件建立 c # 中的事件處理常式 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 。 您必須手動建立事件處理常式，並將事件處理常式連結至基礎事件。 下列程式描述如何在 Visual Basic 和 c # 中建立必要的事件處理常式。
 
 ## <a name="validate-changes-to-individual-columns"></a>驗證個別資料行的變更
-藉由處理 <xref:System.Data.DataTable.ColumnChanging> 事件來驗證個別資料行中的值。 當修改資料行中的值時，就會引發 <xref:System.Data.DataTable.ColumnChanging> 事件。 按兩下**DataSet 設計工具**上所需的資料行，以建立 <xref:System.Data.DataTable.ColumnChanging> 事件的事件處理常式。
+藉由處理事件來驗證個別資料行中的值 <xref:System.Data.DataTable.ColumnChanging> 。 <xref:System.Data.DataTable.ColumnChanging>修改資料行中的值時，就會引發事件。 <xref:System.Data.DataTable.ColumnChanging>按兩下 [ **DataSet 設計工具**上所需的資料行，建立事件的事件處理常式。
 
-當您第一次按兩下資料行時，設計工具會產生 <xref:System.Data.DataTable.ColumnChanging> 事件的事件處理常式。 也會建立一個 `If...Then` 語句，以測試特定的資料行。 例如，當您按兩下 Northwind Orders 資料表上**的 [規定**] 資料行時，就會產生下列程式碼：
+當您第一次按兩下資料行時，設計工具會產生事件的事件處理常式 <xref:System.Data.DataTable.ColumnChanging> 。 `If...Then`也會建立一個語句，以測試特定的資料行。 例如，當您按兩下 Northwind Orders 資料表上**的 [規定**] 資料行時，就會產生下列程式碼：
 
 ```vb
 Private Sub OrdersDataTable_ColumnChanging(ByVal sender As System.Object, ByVal e As System.Data.DataColumnChangeEventArgs) Handles Me.ColumnChanging
@@ -47,7 +47,7 @@ End Sub
 ```
 
 > [!NOTE]
-> 在C#專案中，DataSet 設計工具只會針對資料集內的資料集和個別資料表建立部分類別。 DataSet 設計工具不會自動為中C#的 <xref:System.Data.DataTable.ColumnChanging> 和 <xref:System.Data.DataTable.RowChanging> 事件建立事件處理常式，就像它在 Visual Basic 中所做的一樣。 在C#專案中，您必須手動建立方法來處理事件，並將方法連結至基礎事件。 下列程式提供在 Visual Basic 和C#中建立必要事件處理常式的步驟。
+> 在 c # 專案中，DataSet 設計工具只會針對資料集內的資料集和個別資料表建立部分類別。 DataSet 設計工具不會 <xref:System.Data.DataTable.ColumnChanging> 在 c # 中自動建立和事件的事件處理常式， <xref:System.Data.DataTable.RowChanging> 就像在 Visual Basic 中一樣。 在 c # 專案中，您必須手動建立方法來處理事件，並將方法連結至基礎事件。 下列程式提供在 Visual Basic 和 c # 中建立必要事件處理常式的步驟。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -58,11 +58,11 @@ End Sub
 2. 按兩下您想要驗證的資料行。 此動作會建立 <xref:System.Data.DataTable.ColumnChanging> 事件處理常式。
 
     > [!NOTE]
-    > DataSet 設計工具不會自動建立C#事件的事件處理常式。 下一節包含處理中C#事件所需的程式碼。 `SampleColumnChangingEvent` 隨即建立，然後連結至 <xref:System.Data.DataTable.EndInit%2A> 方法中的 <xref:System.Data.DataTable.ColumnChanging> 事件。
+    > DataSet 設計工具不會自動建立 c # 事件的事件處理常式。 下一節包含處理 c # 中的事件所需的程式碼。 `SampleColumnChangingEvent`隨即建立，然後連結至 <xref:System.Data.DataTable.ColumnChanging> 方法中的事件 <xref:System.Data.DataTable.EndInit%2A> 。
 
-3. 新增程式碼，以確認 `e.ProposedValue` 包含符合應用程式需求的資料。 如果建議的值無法接受，請將資料行設定為指出它包含錯誤。
+3. 加入程式碼，以確認 `e.ProposedValue` 包含符合應用程式需求的資料。 如果建議的值無法接受，請將資料行設定為指出它包含錯誤。
 
-     下列程式碼範例會驗證**Quantity**資料行是否包含大於0的值。 如果**Quantity**小於或等於0，則會將資料行設定為錯誤。 如果**Quantity**大於0，`Else` 子句會清除錯誤。 資料行變更事件處理常式中的程式碼應如下所示：
+     下列程式碼範例會驗證**Quantity**資料行是否包含大於0的值。 如果**Quantity**小於或等於0，則會將資料行設定為錯誤。 `Else`如果**Quantity**大於0，子句會清除錯誤。 資料行變更事件處理常式中的程式碼應如下所示：
 
     ```vb
     If (e.Column.ColumnName = Me.QuantityColumn.ColumnName) Then
@@ -102,11 +102,11 @@ End Sub
     ```
 
 ## <a name="validate-changes-to-whole-rows"></a>驗證整個資料列的變更
-藉由處理 <xref:System.Data.DataTable.RowChanging> 事件來驗證整個資料列中的值。 當所有資料行中的值都已認可時，就會引發 <xref:System.Data.DataTable.RowChanging> 事件。 當某個資料行中的值依賴另一個資料行中的值時，必須在 <xref:System.Data.DataTable.RowChanging> 事件中進行驗證。 例如，請考慮 Northwind 中 Orders 資料表的「訂購日期」和「日期」。
+藉由處理事件來驗證整個資料列中的值 <xref:System.Data.DataTable.RowChanging> 。 <xref:System.Data.DataTable.RowChanging>當所有資料行中的值都已認可時，就會引發事件。 <xref:System.Data.DataTable.RowChanging>當某個資料行中的值依賴另一個資料行中的值時，必須在事件中進行驗證。 例如，請考慮 Northwind 中 Orders 資料表的「訂購日期」和「日期」。
 
 輸入訂單時，驗證可確保不會在訂購日期之前或之前輸入訂單。 在此範例中，必須比較「符合規定」和「訂購日期」資料行的值，因此驗證個別資料行變更並沒有意義。
 
-按兩下**DataSet 設計工具**上資料表標題列中的資料表名稱，以建立 <xref:System.Data.DataTable.RowChanging> 事件的事件處理常式。
+在 <xref:System.Data.DataTable.RowChanging> **DataSet 設計工具**上，按兩下資料表標題列中的資料表名稱，建立事件的事件處理常式。
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>若要在整個資料列變更期間加入驗證
 
@@ -114,14 +114,14 @@ End Sub
 
 2. 在設計工具上，按兩下資料表的標題列。
 
-     部分類別是使用 `RowChanging` 事件處理常式所建立，並在 [程式碼編輯器] 中開啟。
+     部分類別是使用 `RowChanging` 事件處理常式所建立，並在程式碼編輯器中開啟。
 
     > [!NOTE]
-    > DataSet 設計工具不會自動為專案中C#的 <xref:System.Data.DataTable.RowChanging> 事件建立事件處理常式。 您必須建立方法來處理 <xref:System.Data.DataTable.RowChanging> 事件並執行程式碼，然後在資料表的初始化方法中連結事件。
+    > DataSet 設計工具不會自動為 <xref:System.Data.DataTable.RowChanging> c # 專案中的事件建立事件處理常式。 您必須建立方法來處理 <xref:System.Data.DataTable.RowChanging> 事件，然後執行程式碼，然後在資料表的初始化方法中連結事件。
 
 3. 在部分類別宣告內加入使用者程式碼。
 
-4. 下列程式碼顯示在 <xref:System.Data.DataTable.RowChanging> 事件期間，要在何處加入使用者程式碼以進行驗證。 此C#範例也包含用來將事件處理常式方法與 `OrdersRowChanging` 事件掛鉤的程式碼。
+4. 下列程式碼示範在何處加入使用者程式碼，以在事件期間進行驗證 <xref:System.Data.DataTable.RowChanging> 。 C # 範例也包含用來將事件處理常式方法與事件掛鉤的程式碼 `OrdersRowChanging` 。
 
     ```vb
     Partial Class OrdersDataTable
@@ -166,8 +166,8 @@ End Sub
     }
     ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [多層式架構 (N-Tier) 資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)
-- [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [多層式資料應用程式總覽](../data-tools/n-tier-data-applications-overview.md)
+- [逐步解說：建立多層式資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [驗證資料集中的資料](../data-tools/validate-data-in-datasets.md)

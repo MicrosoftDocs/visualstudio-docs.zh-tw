@@ -2,7 +2,7 @@
 title: 修復 Visual Studio
 titleSuffix: ''
 description: 了解如何修復 Visual Studio 2017 的安裝
-ms.date: 07/31/2019
+ms.date: 06/15/2020
 ms.custom: seodec18
 ms.topic: conceptual
 author: ornellaalt
@@ -12,18 +12,30 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 368ca6619a2fcff48cc3bcc7eb70913247b631b2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5883889e4ccbeab22d8a11578bcd342ca95e9be
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114743"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285240"
 ---
 # <a name="repair-visual-studio"></a>修復 Visual Studio
 
-::: moniker range="vs-2017"
+有時您的 Visual Studio 安裝會損壞或損毀。 修復適用于修正所有安裝作業（包括更新）的安裝時間問題。
 
-有時您的 Visual Studio 安裝會損壞或損毀。 修復可以修正此問題。
+## <a name="when-to-use-repair"></a>使用 repair 的時機
+* 如果您有安裝承載的問題。 將檔案寫入磁片不成功時可能會發生這種情況，而且無法藉由刪除損毀的檔案來修正此問題。 修復可以重新取得所需的檔案。 
+* 如果您遇到用戶端下載問題。 假設您已解決任何連線或 proxy 問題，修復可能會有説明。 
+* 如果您在更新 Visual Studio 時遇到問題。 修復修正許多常見的更新問題。 
+
+> [!TIP] 
+> 如果安裝問題是因為基礎 Windows 服務（例如 Windows Installer）中的問題所造成，則修復可能會遇到相同的問題。 系統性問題可能包含中斷的 Windows Installer 或不穩定的網際網路連線。 若要檢查是否有系統問題，請使用安裝作業所產生的錯誤報表。
+
+> [!NOTE] 
+> 修復 Visual Studio 重設使用者設定，並重新安裝您已有的元件。 如果您遇到產品問題，請建立[Visual Studio 意見反應票證](https://developercommunity.visualstudio.com/content/problem/post.html?space=8)，因為修復可能無法解決此問題。
+
+## <a name="how-to-repair"></a>如何修復
+::: moniker range="vs-2017"
 
 1. 在您的電腦上找到 **Visual Studio 安裝程式**。
 
@@ -36,7 +48,7 @@ ms.locfileid: "76114743"
 
 1. 開啟安裝程式，選擇 [更多]****，然後選擇 [修復]****。
 
-    ![從視覺化工作室安裝程式修復視覺工作室](media/repair-visual-studio.png "從視覺化工作室安裝程式修復視覺工作室")
+    ![從 Visual Studio 安裝程式修復 Visual Studio](media/repair-visual-studio.png "從 Visual Studio 安裝程式修復 Visual Studio")
 
    > [!NOTE]
    > 修復 Visual Studio 會重設環境。 個別使用者沒有使用提高權限所安裝的擴充、使用者設定和設定檔等本機自訂項目會被移除。 佈景主題、色彩、按鍵繫結等已同步處理的設定會還原。
@@ -49,11 +61,11 @@ ms.locfileid: "76114743"
 
 ::: moniker range="vs-2019"
 
-1. 在電腦上找到 Visual Studio 安裝程式。
+1. 在您的電腦上找到 **Visual Studio 安裝程式**。
 
      例如，在執行 Windows 10，的電腦上，選取 [開始]****，然後捲動到字母 [V]****，它在其中列為 [Visual Studio Installer]****。
 
-     ![打開視覺化工作室安裝程式](media/vs-2019/vs-installer-windows-start.png "打開視覺化工作室安裝程式")
+     ![開啟 Visual Studio 安裝程式](media/vs-2019/vs-installer-windows-start.png "開啟 Visual Studio 安裝程式")
 
      > [!NOTE]
      > 您也可以在下列位置找到 Visual Studio 安裝程式：
@@ -64,7 +76,7 @@ ms.locfileid: "76114743"
 
 1. 請在安裝程式中尋找您安裝的 Visual Studio 版本。 接著，選擇 [更多]****，然後選擇 [修復]****。
 
-     ![維修視覺工作室 2019](media/vs-2019/vs-installer-repair.png "維修視覺工作室 2019")
+     ![修復 Visual Studio 2019](media/vs-2019/vs-installer-repair.png "修復 Visual Studio 2019")
 
    > [!NOTE]
    > 修復 Visual Studio 會重設環境。 個別使用者沒有使用提高權限所安裝的擴充、使用者設定和設定檔等本機自訂項目會被移除。 佈景主題、色彩、按鍵繫結等已同步處理的設定會還原。
@@ -79,7 +91,7 @@ ms.locfileid: "76114743"
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝視覺化工作室](install-visual-studio.md)
+* [安裝 Visual Studio](install-visual-studio.md)
 * [更新 Visual Studio](update-visual-studio.md)
 * [解除安裝 Visual Studio](uninstall-visual-studio.md)
 * [針對 Visual Studio 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)

@@ -2,7 +2,7 @@
 title: 如何：將專案設定成以平台為目標
 ms.date: 08/16/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project settings [Visual Studio], targeting platforms
 - platforms, targeting specific CPUs
@@ -18,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cbe4bc3f982ae18b9f85fe8bf5c21495c98beee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a58b60e23bf08fb86a8dd7bc09d760085b6ea25f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76112549"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284593"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：將專案設定成以平台為目標
 
-Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括 64 位元的平台。 有關 Visual Studio 中的 64 位平臺支援的詳細資訊，請參閱[64 位應用程式](/dotnet/framework/64-bit-apps)。
+Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括 64 位元的平台。 如需 Visual Studio 中64位平臺支援的詳細資訊，請參閱[64 位應用程式](/dotnet/framework/64-bit-apps)。
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>使用組態管理員設定目標平台
 
@@ -35,11 +35,11 @@ Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>將專案設定成以 64 位元平台為目標
 
-1. 在功能表列上，選擇 **"生成** > **組態管理員**"。
+1. 在功能表列上，選擇 [**組建**  >  **Configuration Manager**]。
 
 2. 在 [使用中的方案平台]**** 清單中，選擇 64 位元平台作為方案的目標，然後選擇 [關閉]**** 按鈕。
 
-    1. 如果所需的平臺未顯示在 **"活動解決方案平臺"** 清單中，請選擇 **"新建**"。
+    1. 如果您想要的平臺未出現在 [使用中的**方案平臺**] 清單中，請選擇 [**新增**]。
 
          [新增方案平台]**** 對話方塊隨即出現。
 
@@ -51,6 +51,10 @@ Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括
     3. 如果您想要從目前的平台組態複製設定，請選擇所需項目，然後選擇 [確定]**** 按鈕。
 
 以 64 位元平台為目標的所有專案的屬性會進行更新，而專案的下一個組建會針對 64 位元平台進行最佳化。
+
+> [!NOTE]
+> **Win32**平臺名稱用於 c + + 專案，而這表示**x86**。 Visual Studio 會考慮專案層級平臺和解決方案層級平臺，而專案平臺則來自語言特定的專案系統。 C + + 專案使用**Win32**和**x64**，但是解決方案平臺使用**x86**和**x64**。 當您選擇 [ **x86** ] 做為解決方案設定時，Visual Studio 會選取 c + + 專案的**Win32**平臺。 若要查看專案層級平臺和解決方案層級平臺設定，請開啟**Configuration Manager**並記下兩個平臺設定。 方案層級平臺會顯示在 [使用中的**方案平臺**] 下拉式清單中，而下表顯示每個專案的專案層級平臺。
+> ![顯示方案平臺和專案平臺的螢幕擷取畫面](media/project-platform-win32.png)
 
 ## <a name="target-platforms-in-the-project-designer"></a>在專案設計工具中設定目標平台
 
@@ -68,7 +72,7 @@ Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括
 
 有時候，針對某些自訂組態您可能需要手動編輯專案檔。 其中一個範例是當您有無法在 IDE 中指定的條件時 (例如針對兩個不同平台使用不同的參考)，如下列範例所示。
 
-### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>示例：引用 x86 和 x64 程式集和 DLL
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>範例：參考 x86 和 x64 元件和 Dll
 
 您可能會擁有同時具備 x86 和 x64 版本的 .NET 組件或 DLL。 若要設定您的專案使用這些參考，請先新增參考，然後開啟專案檔並編輯它來新增 `ItemGroup`，其中包含同時參考兩個組態及目標平台的條件。  例如，假設您正在參考的二進位檔是 ClassLibrary1，且針對 Debug 和 Release 組態以及 x86 和 x64 版本有不同的路徑。  然後，請使用四個 `ItemGroup` 元素，其中包含所有設定組合，如下所示：
 
@@ -116,8 +120,8 @@ Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括
 
 ## <a name="see-also"></a>另請參閱
 
-- [了解建置平台](../ide/understanding-build-platforms.md)
+- [了解組建平台](../ide/understanding-build-platforms.md)
 - [/platform (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [64 位元應用程式](/dotnet/framework/64-bit-apps)
 - [Visual Studio IDE 64 位元支援](../ide/visual-studio-ide-64-bit-support.md)
-- [瞭解專案檔案](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)
+- [瞭解專案檔](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)

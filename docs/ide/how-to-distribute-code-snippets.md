@@ -1,7 +1,7 @@
 ---
 title: 將程式碼片段散發為延伸模組
 ms.date: 03/21/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
@@ -12,18 +12,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e77658b2b09f643af18a3f136f5428828cfb5c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c283d5ca29b67e772df2a0bb2e25dee70cd63fd3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591056"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284369"
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：散發程式碼片段
 
 您可以使用 [程式碼片段管理員]****，將您的程式碼片段提供給您的朋友，並讓他們在自己的電腦上安裝程式碼片段。 不過，如果您有數個程式碼片段要散發，或想要更廣泛地散發，您可在 Visual Studio 延伸模組中包含您的程式碼片段檔案。 然後，Visual Studio 使用者可以安裝此延伸模組以取得程式碼片段。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 安裝 **Visual Studio 延伸模組開發**工作負載，以存取 [VSIX 專案]**** 專案範本。
 
@@ -31,7 +31,7 @@ ms.locfileid: "75591056"
 
 ## <a name="set-up-the-extension"></a>設定延伸模組
 
-在此過程中，您將使用在演練中創建的"Hello World"程式碼片段[：創建程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。 本文提供程式碼片段 XML，所以您不必回頭建立程式碼片段。
+在此程式中，您將使用在[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)中所建立的相同 Hello World 程式碼片段。 本文提供程式碼片段 XML，所以您不必回頭建立程式碼片段。
 
 1. 從 [空的 VSIX 專案]**** 範本建立新專案，並將專案命名為 **TestSnippet**。
 
@@ -111,7 +111,7 @@ ms.locfileid: "75591056"
 
    Visual Studio 的第二個執行個體隨即出現。
 
-3. 在實驗實例中，轉到**工具** > **代碼代碼程式碼片段管理器**並將**語言**設置為**基本**。 您應該會看到 *HelloWorldVB* 作為其中一個資料夾，而且您應該能夠展開此資料夾，以查看 *HelloWorldVB* 程式碼片段。
+3. 在實驗實例中，移至 [**工具**] [  >  **程式碼片段管理員**]，並將**語言**設定為 [**基本**]。 您應該會看到 *HelloWorldVB* 作為其中一個資料夾，而且您應該能夠展開此資料夾，以查看 *HelloWorldVB* 程式碼片段。
 
 4. 測試程式碼片段。 在實驗性執行個體中，開啟 Visual Basic 專案，並開啟其中一個程式碼檔案。 將游標放在程式碼中的某處，按一下滑鼠右鍵，然後在 [操作功能表] 上選取 [插入程式碼片段]****。
 

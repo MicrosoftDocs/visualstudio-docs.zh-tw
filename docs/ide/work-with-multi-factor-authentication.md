@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 696664aa5aa92a3e9a675df4803a3e65e3e81f36
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 699580689bcf00d00d2a6e07f814be4d1265bb1d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84185613"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283542"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>如何使用 Visual Studio 搭配需要多重要素驗證的帳戶
 
@@ -33,7 +33,11 @@ ms.locfileid: "84185613"
 > [!WARNING]
 > 不使用此工作流程可能會觸發降級的體驗，而在新增或重新驗證入時 Visual Studio 帳戶時，會產生多個額外的驗證提示。 
 
-### <a name="enabling-system-web-browser"></a>啟用系統網頁瀏覽器  
+### <a name="enabling-system-web-browser"></a>啟用系統網頁瀏覽器
+
+> [!NOTE] 
+> 為了獲得最佳體驗，建議您先清除系統的預設網頁瀏覽器資料，再繼續進行此工作流程。 此外，如果您在 [**存取公司或學校**] 底下的 Windows 10 設定中有公司或學校帳戶，請確認已正確驗證。
+
 若要啟用此工作流程，請移至 Visual Studio 的 [選項] 對話方塊 **（[工具] [> 選項 ...]）**，選取 [**帳戶**] 索引標籤，然後選取 [**新增並**重新驗證帳戶] 底下的 [**系統網頁瀏覽器**] 
 
 :::image type="content" source="media/select-system-web-browser.png" alt-text="從功能表中選取 [系統網頁瀏覽器]。":::
@@ -43,20 +47,22 @@ ms.locfileid: "84185613"
 </br>
 :::image type="content" source="media/add-personalization-account.png" alt-text="將新的個人化帳戶新增至 Visual Studio。" border="false":::
 
-此動作會開啟您系統的預設網頁瀏覽器，要求您登入您的帳戶，並驗證任何必要的 MFA 原則。 
+此動作會開啟您系統的預設網頁瀏覽器，要求您登入您的帳戶，並驗證任何必要的 MFA 原則。
+
+根據您的開發活動和資源設定，系統可能會提示您在會話期間重新輸入您的認證。 當您新增新的資源，或嘗試存取資源，但未事先達到其 CA/MFA 授權需求時，就會發生這種情況。
 
 > [!NOTE] 
-> 透過整個程式讓瀏覽器保持開啟狀態，以獲得最佳體驗，因為關閉瀏覽器可能會觸發額外的授權提示。 
+> 為了獲得最佳體驗，請讓您的瀏覽器保持開啟，直到為您的資源驗證所有 CA/MFA 原則為止。 關閉瀏覽器可能會導致先前建立的 MFA 狀態遺失，而且可能會提示額外的授權提示。
 
 ## <a name="reauthenticating-an-account"></a>重新驗證入時帳戶  
 如果您的帳戶發生問題，Visual Studio 可能會要求您重新輸入您的帳號憑證。  
 
 :::image type="content" source="media/reauthenticate-account.png" alt-text="重新驗證您的 Visual Studio 帳戶。":::
 
-按一下 [**重新輸入您的認證**] 將會開啟系統的預設網頁瀏覽器，並嘗試自動重新整理您的認證。 如果不成功，系統會要求您登入您的帳戶，並驗證任何必要的 MFA 原則。 
+按一下 [**重新輸入您的認證**] 將會開啟系統的預設網頁瀏覽器，並嘗試自動重新整理您的認證。 如果不成功，系統會要求您登入您的帳戶，並驗證任何必要的 CA/MFA 原則。
 
 > [!NOTE] 
-> 透過整個程式讓瀏覽器保持開啟狀態，以獲得最佳體驗，因為關閉瀏覽器可能會觸發額外的授權提示。 
+> 為了獲得最佳體驗，請讓您的瀏覽器保持開啟，直到為您的資源驗證所有 CA/MFA 原則為止。 關閉瀏覽器可能會導致先前建立的 MFA 狀態遺失，而且可能會提示額外的授權提示。
 
 ## <a name="how-to-opt-out-of-using-a-specific-azure-active-directory-tenant-in-visual-studio"></a>如何選擇不在 Visual Studio 中使用特定的 Azure Active Directory 租使用者
 

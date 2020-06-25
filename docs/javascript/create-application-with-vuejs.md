@@ -3,7 +3,7 @@ title: 使用 Node.js 建立 Vue.js 應用程式
 description: 您可以使用 Vue.js 架構在 Visual Studio 中建立 Node.js 應用程式
 ms.custom: seodec18
 ms.date: 07/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: edf5307984b4efc00a7c83c84fe5cb87954a93dd
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.openlocfilehash: e16b09a165421d36c67dad1fc657fd36846cd382
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81744909"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285162"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>使用適用於 Visual Studio 的 Node.js 工具建立 Vue.js 應用程式
 
@@ -29,7 +29,7 @@ Visual Studio 支援使用 JavaScript 或 TypeScript 搭配 [Vue.js](https://vue
 * 辨識 *.vue* 檔案上的 `lang` 屬性
 * Vue.js 專案和檔案範本
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 * 您必須安裝 Visual Studio 2017 15.8 版或更新版本，以及 **Node.js 開發**工作負載。
 
@@ -40,10 +40,10 @@ Visual Studio 支援使用 JavaScript 或 TypeScript 搭配 [Vue.js](https://vue
     如果尚未安裝必要版本，請安裝 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    如果您尚未安裝 Visual Studio,請轉到 Visual [Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 頁面以免費安裝它。
+    如果您尚未安裝 Visual Studio，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)]   頁面，免費進行安裝。
     ::: moniker-end
 
-    如果您需要安裝工作負載,但已經擁有可視化工作室,請轉到 **「工具** > **獲取工具和功能...",** 這將打開可視化工作室安裝程式。 選擇 [Node.js 開發]**** 工作負載，然後選擇 [修改]****。
+    如果您需要安裝工作負載，但已經有 Visual Studio，請移至 [**工具**]  >  [**取得工具和功能 ...**]，這會開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發]**** 工作負載，然後選擇 [修改]****。
 
 * 若要建立 ASP.NET Core 專案，您必須安裝 ASP.NET 與網頁程式開發工作負載，以及 .NET Core 跨平台開發工作負載。
 
@@ -74,7 +74,7 @@ Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用
     按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **asp.net**，然後選擇 [建立新的 ASP.NET Core Web 應用程式]****。 在出現的對話方塊中，鍵入名稱 **client-app**，然後選擇 [建立]****。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂部功能表欄中,選擇 **「檔** > **新專案** > **」。。** 在 [新增專案]**** 對話方塊的左窗格中，展開 [Visual C#]****，然後選擇 [Web]****。 在中間窗格中，選擇 [ASP.NET Core Web 應用程式]****，鍵入名稱 **client-app**，然後選擇 [確定]****。
+    從頂端功能表列中 **，選擇 [** 檔案] [新增] [  >  **New**  >  **專案**]。 在 [新增專案]**** 對話方塊的左窗格中，展開 [Visual C#]****，然後選擇 [Web]****。 在中間窗格中，選擇 [ASP.NET Core Web 應用程式]****，鍵入名稱 **client-app**，然後選擇 [確定]****。
     ::: moniker-end
 
     如果您看不到 [ASP.NET Core Web 應用程式]**** 專案範本，則必須先安裝 **ASP.NET 與網頁程式開發** 工作負載和 **.NET Core** 程式開發工作負載。 若要安裝工作負載，請在 [新增專案]**** 對話方塊 (選取 [檔案]**** > [新增]**** > [專案]****) 的左窗格中，按一下 [開啟 Visual Studio 安裝程式]****。 Visual Studio 安裝程式即會啟動。 選取所需的工作負載。
@@ -119,7 +119,7 @@ Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用
 
 #### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>指出專案會在每次觸發建置時建置用戶端應用程式
 
-1. 在視覺化工作室中,轉到**專案** > **屬性** > **產生事件**。
+1. 在 Visual Studio 中，移至 [**專案**] [屬性] [  >  **Properties**  >  **建立事件**]。
 
 1. 在 [建置前事件命令列]**** 上鍵入 `npm --prefix ./client-app run build`。
 
@@ -199,5 +199,5 @@ cd ../
 ## <a name="see-also"></a>另請參閱
 
 - [Vue 使用者入門指南](https://vuejs.org/v2/guide) \(英文\)。
-- [Vue CLI 專案](https://github.com/vuejs/vue-cli)。
+- [VUE CLI 專案](https://github.com/vuejs/vue-cli)。
 - [Webpack 設定文件](https://webpack.js.org/configuration/) \(英文\)。

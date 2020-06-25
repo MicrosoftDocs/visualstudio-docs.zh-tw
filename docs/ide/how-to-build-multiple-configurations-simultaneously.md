@@ -2,19 +2,19 @@
 title: How to：建立多個設定
 ms.date: 05/13/2020
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ba830937-3317-4674-8cc2-c0cd565603c5
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d6a3b4f9110f85ff42e8b9dcf6dd531c3802e2
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: d7820d56bcb266e8361f36cb5350475f31445800
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183544"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284758"
 ---
 # <a name="how-to-build-multiple-configurations-in-a-single-build-request"></a>如何：在單一組建要求中建立多個設定
 

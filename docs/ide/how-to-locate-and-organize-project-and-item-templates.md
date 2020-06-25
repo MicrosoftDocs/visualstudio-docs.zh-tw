@@ -1,7 +1,7 @@
 ---
 title: 尋找範本
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ecbc5421562ca79466ace0d93a16ac4e3635ddfb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591043"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284239"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：尋找並整理專案範本和項目範本
 
@@ -36,9 +36,9 @@ ms.locfileid: "75591043"
 
 ::: moniker range="vs-2017"
 
-- *\\%程式檔 （x86）% 微軟\\視覺工作室 2017\\\<版>\\通用7_IDE_專案範本\\<語言\>\\<地區設定識別碼\>*
+- *% ProgramFiles （x86）% \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\<Language \> \\<地區設定識別碼\>*
 
-- *%程式檔 （x86）%\\微軟\\視覺工作室 2017\\\<版\\>_Common7_IDE_ItemTemplates<語言\>\\<地區設定識別碼\>*
+- *% ProgramFiles （x86）% \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \Common7\IDE\ItemTemplates \\<Language \> \\<地區設定識別碼\>*
 
 例如，下列目錄有適用於英文的 Visual Basic 項目範本 (LCID 1033)：
 
@@ -48,9 +48,9 @@ ms.locfileid: "75591043"
 
 ::: moniker range=">=vs-2019"
 
-- *\\%程式檔 （x86）% 微軟\\視覺工作室 2019\\\<\\版>通用7_IDE_專案範本\\<語言\>\\<地區設定識別碼\>*
+- *% ProgramFiles （x86）% \\ Microsoft Visual Studio \\ 2019 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\<Language \> \\<地區設定識別碼\>*
 
-- *%程式\\檔 （x86）% 微軟\\視覺工作室 2019\\\<版\\>_Common7_IDE_ItemTemplates<語言\>\\<地區設定識別碼\>*
+- *% ProgramFiles （x86）% \\ Microsoft Visual Studio \\ 2019 \\ \<edition> \Common7\IDE\ItemTemplates \\<Language \> \\<地區設定識別碼\>*
 
 例如，下列目錄有適用於英文的 Visual Basic 項目範本 (LCID 1033)：
 
@@ -87,7 +87,7 @@ ms.locfileid: "75591043"
 ::: moniker-end
 
 > [!TIP]
-> 您可以在**工具** > **選項** > **專案和解決方案** > **位置**中更改使用者範本的已知位置。
+> 您可以在 [**工具**] [選項] [  >  **Options**  >  **專案] 和 [方案**  >  **位置**] 中變更使用者範本的已知位置。
 
 ::: moniker range="vs-2017"
 
@@ -102,7 +102,7 @@ ms.locfileid: "75591043"
 
 1. 在使用者專案範本目錄的程式設計語言資料夾中建立資料夾。 例如，若要為 C# 專案範本建立 **HelloWorld** 類別，請建立下列目錄：
 
-    - *\%USERPROFILE%%\文檔\視覺\<工作室\>版本[範本]專案範本\視覺C_HelloWorld*
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\> \Templates\ProjectTemplates\Visual c # \HelloWorld*
 
 1. 將此類別的所有範本都放在新資料夾中。
 
@@ -114,7 +114,7 @@ ms.locfileid: "75591043"
 
 1. 在使用者項目範本目錄的程式設計語言資料夾中建立資料夾。 例如，若要為 C# 項目範本建立 **HelloWorld** 類別，請建立下列目錄：
 
-    - *\%USERPROFILE%%\文檔\視覺\<工作室\>版本[範本]專案範本\視覺C_HelloWorld*
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\> \Templates\ItemTemplates\Visual c # \HelloWorld*
 
 1. 將此類別的所有範本都放在新資料夾中。
 
@@ -128,7 +128,7 @@ ms.locfileid: "75591043"
 
 1. 尋找包含範本的 *.zip* 檔。
 
-1. 提取 *.zip*檔。
+1. 將 *.zip*檔案解壓縮。
 
 1. 在 Visual Studio 中開啟 *.vstemplate* 檔案。
 
@@ -144,13 +144,13 @@ ms.locfileid: "75591043"
     </TemplateData>
     ```
 
-1. 保存並關閉 *.vstemplate*檔。
+1. 儲存並關閉 *.vstemplate*檔案。
 
 1. 在範本中選取檔案，以滑鼠右鍵按一下選項，選擇 [傳送至] ** [壓縮的 (zipped) 資料夾]** > ****。
 
-   檔被壓縮到 *.zip*檔中。
+   檔案會壓縮成 *.zip*檔案。
 
-1. 刪除提取的範本檔和舊的範本 *.zip*檔。
+1. 刪除已解壓縮的範本檔案和舊範本 *.zip*檔案。
 
 1. 將新的 *.zip* 檔案放在有已刪除 *.zip* 檔案的目錄。
 
@@ -161,5 +161,5 @@ ms.locfileid: "75591043"
 - [自訂範本](../ide/customizing-project-and-item-templates.md)
 - [Visual Studio 範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)
 - [NumberOfParentCategoriesToRollUp (Visual Studio 範本)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
-- [如何：創建專案範本](../ide/how-to-create-project-templates.md)
-- [如何：創建專案範本](../ide/how-to-create-item-templates.md)
+- [如何：建立專案範本](../ide/how-to-create-project-templates.md)
+- [如何：建立專案範本](../ide/how-to-create-item-templates.md)

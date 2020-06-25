@@ -1,7 +1,7 @@
 ---
 title: 建立和設定 TableAdapter
 ms.date: 09/01/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - table adapters, creating
 - creating TableAdapters
@@ -14,16 +14,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e5a557aeeee3fca2bef0367a630dfaca04b3a74
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90dcc8e623f258721c71ef02082500a0736764e4
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586779"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282667"
 ---
 # <a name="create-and-configure-tableadapters"></a>建立和設定 TableAdapter
 
-Tableadapter 會提供您的應用程式與資料庫之間的通訊。 它們會連接到資料庫、執行查詢或預存程式，並傳回新的資料表，或在現有的 <xref:System.Data.DataTable> 中填入傳回的資料。 Tableadapter 也可以將更新的資料從您的應用程式傳送回資料庫。
+Tableadapter 會提供您的應用程式與資料庫之間的通訊。 它們會連接到資料庫、執行查詢或預存程式，並傳回新的資料表，或在現有的中填入 <xref:System.Data.DataTable> 傳回的資料。 Tableadapter 也可以將更新的資料從您的應用程式傳送回資料庫。
 
 當您執行下列其中一個動作時，系統會為您建立 Tableadapter：
 
@@ -49,14 +49,14 @@ Tableadapter 會提供您的應用程式與資料庫之間的通訊。 它們會
 
 - 如果您有資料庫的正確許可權，則可以選擇在基礎資料庫中建立新的預存程式。 如果您沒有這些許可權，就無法使用此選項。
 
-- 您也可以選擇針對 TableAdapter 的**SELECT**、 **INSERT**、 **UPDATE**和**DELETE**命令執行現有的預存程式。 例如，指派給**Update**命令的預存程式會在呼叫 `TableAdapter.Update()` 方法時執行。
+- 您也可以選擇針對 TableAdapter 的**SELECT**、 **INSERT**、 **UPDATE**和**DELETE**命令執行現有的預存程式。 例如，當呼叫方法時，會執行指派給**Update**命令的預存程式 `TableAdapter.Update()` 。
 
-從已選取預存程序將參數對應至資料表中對應的資料行。 例如，如果您的預存程式接受名為 `@CompanyName` 的參數，並將它傳遞給資料表中的 `CompanyName` 資料行，請將 `@CompanyName` 參數的**Source 資料行**設定為 `CompanyName`。
+從已選取預存程序將參數對應至資料表中對應的資料行。 例如，如果您的預存程式接受名為 `@CompanyName` 的參數，並將它傳遞至 `CompanyName` 資料表中的資料行，請將參數的**來源資料行**設定 `@CompanyName` 為 `CompanyName` 。
 
 > [!NOTE]
-> 指派給 SELECT 命令的預存程式，是藉由呼叫您在 wizard 的下一個步驟中命名的 TableAdapter 方法來執行。 預設方法是 `Fill`，因此通常用來執行 SELECT 程式的程式碼是 `TableAdapter.Fill(tableName)`。 如果您從 `Fill`變更預設名稱，請將 `Fill` 替換為您指派的名稱，並以 TableAdapter 的實際名稱取代 "TableAdapter" （例如，`CustomersTableAdapter`）。
+> 指派給 SELECT 命令的預存程式，是藉由呼叫您在 wizard 的下一個步驟中命名的 TableAdapter 方法來執行。 預設的方法是 `Fill` ，因此通常用來執行 SELECT 程式的程式碼是 `TableAdapter.Fill(tableName)` 。 如果您從變更預設名稱 `Fill` ，請 `Fill` 以您指派的名稱取代，並以 tableadapter 的實際名稱取代 "TableAdapter" （例如 `CustomersTableAdapter` ）。
 
-- 選取 [**建立方法以直接將更新傳送至資料庫**] 選項相當於將 [`GenerateDBDirectMethods`] 屬性設定為 [true]。 當原始 SQL 陳述式未提供足夠的資訊，或查詢不是可更新的查詢時，就無法使用此選項。 例如，在**聯結**查詢和傳回單一（純量）值的查詢中，可能會發生這種情況。
+- 選取 [**建立方法以直接將更新傳送至資料庫**] 選項相當於將 `GenerateDBDirectMethods` 屬性設定為 [true]。 當原始 SQL 陳述式未提供足夠的資訊，或查詢不是可更新的查詢時，就無法使用此選項。 例如，在**聯結**查詢和傳回單一（純量）值的查詢中，可能會發生這種情況。
 
 Wizard 中的**Advanced 選項**可讓您：
 
@@ -66,23 +66,23 @@ Wizard 中的**Advanced 選項**可讓您：
 
 ## <a name="configure-a-tableadapters-fill-method"></a>設定 TableAdapter 的 Fill 方法
 
-有時候，您可能會想要變更 TableAdapter 資料表的架構。 若要這樣做，您可以修改 TableAdapter 的主要 `Fill` 方法。 Tableadapter 是使用定義相關聯資料表之架構的主要 `Fill` 方法所建立。 主要 `Fill` 方法是以您原先設定 TableAdapter 時輸入的查詢或預存程式為基礎。 這是 DataSet 設計工具中資料表下的第一個（最上層）方法。
+有時候，您可能會想要變更 TableAdapter 資料表的架構。 若要這樣做，您可以修改 TableAdapter 的主要 `Fill` 方法。 Tableadapter 是使用 `Fill` 定義相關聯資料表之架構的主要方法所建立。 主要 `Fill` 方法是以您原先設定 TableAdapter 時輸入的查詢或預存程式為基礎。 這是 DataSet 設計工具中資料表下的第一個（最上層）方法。
 
 ![具有多個查詢的 TableAdapter](../data-tools/media/tableadapter.gif)
 
-您對 TableAdapter 的主要 `Fill` 方法所做的任何變更，都會反映在相關聯之資料表的架構中。 例如，從 main `Fill` 方法中的查詢中移除資料行，也會從相關聯的資料表中移除資料行。 此外，從 main `Fill` 方法中移除資料行，會從該 TableAdapter 的任何額外查詢中移除該資料行。
+您對 TableAdapter 的 main 方法所做的任何變更， `Fill` 都會反映在相關聯之資料表的架構中。 例如，從 main 方法的查詢中移除資料行， `Fill` 也會從相關聯的資料表中移除資料行。 此外，從 main 方法中移除資料行， `Fill` 會從該 TableAdapter 的任何額外查詢中移除該資料行。
 
 您可以使用 [TableAdapter 查詢設定] Wizard 來建立和編輯 TableAdapter 的其他查詢。 這些額外的查詢必須符合資料表架構，除非它們傳回純量值。  每個額外的查詢都有您指定的名稱。
 
-下列範例說明如何呼叫名為 `FillByCity`的其他查詢：
+下列範例說明如何呼叫名為的其他查詢 `FillByCity` ：
 
 `CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, "Seattle")`
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>使用新的查詢啟動 TableAdapter 查詢設定向導
 
-1. 在 [DataSet 設計工具] 中開啟資料集。
+1. 在 [DataSet 設計工具]**** 中開啟資料集。
 
-2. 如果您要建立新的查詢，請將**查詢**物件從 [**工具箱**] 的 [**資料集**] 索引標籤拖曳至 <xref:System.Data.DataTable>，或從 TableAdapter 的快捷方式功能表選取 [**加入查詢**]。 您也可以將**查詢**物件拖曳至**DataSet 設計工具**的空白區域，以建立沒有相關聯 <xref:System.Data.DataTable>的 TableAdapter。 這些查詢只能傳回單一（純量）值，或對資料庫執行 UPDATE、INSERT 或 DELETE 命令。
+2. 如果您要建立新的查詢，請從 [**工具箱**] 的 [**資料集**] 索引標籤，將**查詢**物件拖曳至 <xref:System.Data.DataTable> ，或從 TableAdapter 的快捷方式功能表選取 [**加入查詢**]。 您也可以將**查詢**物件拖曳至**DataSet 設計工具**的空白區域，以建立沒有相關聯的 TableAdapter <xref:System.Data.DataTable> 。 這些查詢只能傳回單一（純量）值，或對資料庫執行 UPDATE、INSERT 或 DELETE 命令。
 
 3. 在 [**選擇您的資料連線**] 畫面上，選取或建立查詢將使用的連接。
 
@@ -110,11 +110,11 @@ Wizard 中的**Advanced 選項**可讓您：
 
      將**查詢**物件從 [**工具箱**] 的 [**資料集**] 索引標籤拖曳至**DataSet 設計工具**的空白區域，即可加入全域查詢。
 
-- 提供查詢來執行所需的工作，例如 `SELECT COUNT(*) AS CustomerCount FROM Customers`。
+- 提供查詢來執行所需的工作，例如 `SELECT COUNT(*) AS CustomerCount FROM Customers` 。
 
     > [!NOTE]
     > 直接將**查詢**物件拖曳至**DataSet 設計工具**會建立只傳回純量（單一）值的方法。 雖然您選取的查詢或預存程式可能會傳回一個以上的值，但 wizard 所建立的方法只會傳回單一值。 例如，查詢可能會傳回所傳回資料第一列的第一個資料行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)
