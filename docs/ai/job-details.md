@@ -5,24 +5,24 @@ ms.author: jillfra
 manager: jillfra
 monikerRange: vs-2017
 ms.date: 11/13/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 55865e4907175664e8a8bfb8a813ff8d02c85b69
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 2e404d6a258ebb480b3eb02e615097872714db03
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638436"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371543"
 ---
 # <a name="view-recent-job-performance-and-details"></a>檢視最近的作業效能和詳細資料
 
 提交作業之後，您可以檢視作業清單，以查看它們的狀態、期間及其他資訊。
 
-1. 在**伺服器資源管理員**中,展開特定的計算上下文。
+1. 在 [**伺服器總管**中，展開特定的計算內容。
 2. 按兩下 [作業]****。
 3. 您會看到已提交到該計算內容的作業清單。
-4. 在清單中選擇特定**作業**以詳細資訊。
+4. 選取清單中的特定**工作**以查看詳細資料。
 
 ![監視作業](media/job-details/monitor-jobs.png)
 

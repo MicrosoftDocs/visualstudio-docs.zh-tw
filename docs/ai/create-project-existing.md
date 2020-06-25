@@ -5,15 +5,15 @@ ms.author: jillfra
 manager: jillfra
 monikerRange: vs-2017
 ms.date: 11/13/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 416a3358f6fab1fa106f54a360fc156abc16c6dc
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 8c0909259291bc5d2db2c4a9c8b87b1a0321d362
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638631"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371712"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>從現有程式碼建立 AI 專案
 
@@ -36,7 +36,7 @@ ms.locfileid: "80638631"
 
 4. 若要設定啟動檔案，請在 [方案總管]**** 中找到檔案，並按一下滑鼠右鍵，然後選取 [設定為啟動檔案]****。
 
-5. 通過按**Ctrl**+**F5**或選擇**調試>啟動而不調試運行**程式。
+5. 按**Ctrl** + **F5**或選取 [ **Debug] > [啟動但不進行調試**程式]，以執行程式。
 
 > [!div class="nextstepaction"]
 > [教學課程：在 Visual Studio 中使用 Python](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)

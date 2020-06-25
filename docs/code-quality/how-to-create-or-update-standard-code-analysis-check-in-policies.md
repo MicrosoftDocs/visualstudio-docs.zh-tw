@@ -1,7 +1,7 @@
 ---
 title: 建立或更新標準程式碼分析簽入原則
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f64d2776b0d442d074c99c82287f1e7c482f1e
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.openlocfilehash: 7167368128cb5946118a7692c50c15109feb79a0
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77506501"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371894"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：建立或更新標準程式碼分析簽入原則
 
@@ -25,11 +25,11 @@ ms.locfileid: "77506501"
 > [!NOTE]
 > 只有當您使用 Team Foundation Server 時，才可使用這項功能。
 
-程式碼分析簽入原則會在專案設定中設定，並套用至每個程式碼專案。 程式碼分析回合是針對程式碼專案的專案（. .xxproj）檔案中的程式碼專案所設定。 程式碼分析回合會在本機電腦上執行。 當您啟用程式碼分析簽入原則時，要簽入之程式碼專案中的檔案必須在其上次編輯後編譯，且包含的程式碼分析執行至少必須在變更的電腦上執行專案設定中的規則。已進行。
+程式碼分析簽入原則會在專案設定中設定，並套用至每個程式碼專案。 程式碼分析回合是針對程式碼專案的專案（. .xxproj）檔案中的程式碼專案所設定。 程式碼分析回合會在本機電腦上執行。 當您啟用程式碼分析簽入原則時，要簽入之程式碼專案中的檔案必須在其上次編輯後編譯，且包含的程式碼分析執行至少必須在進行變更的電腦上執行。
 
 - 針對 managed 程式碼，您可以藉由指定包含程式碼分析規則子集的*規則集*來設定簽入原則。
 
-- 針對 C/C++程式碼，在 Visual Studio 2017 15.6 版和更早版本中，簽入原則會要求執行所有程式碼分析規則。 您可以新增預處理器指示詞，以停用 Azure DevOps 專案中個別程式碼專案的特定規則。 在15.7 和更新版本中，您可以使用 **/analyze：規則集**來指定要執行的規則。 如需詳細資訊，請參閱[使用規則集指定C++要執行的規則](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)。
+- 針對 C/c + + 程式碼，在 Visual Studio 2017 15.6 版和更早版本中，簽入原則會要求執行所有程式碼分析規則。 您可以新增預處理器指示詞，以停用 Azure DevOps 專案中個別程式碼專案的特定規則。 在15.7 和更新版本中，您可以使用 **/analyze：規則集**來指定要執行的規則。 如需詳細資訊，請參閱[使用規則集指定要執行的 c + + 規則](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)。
 
 在您指定 managed 程式碼的簽入原則之後，小組成員可以將程式碼專案的程式碼分析設定同步處理到 Azure DevOps 專案原則設定。
 
@@ -52,7 +52,7 @@ ms.locfileid: "77506501"
 |選項|描述|
 |------------|-----------------|
 |**強制簽入僅包含屬於目前方案的檔案。**|程式碼分析只能在方案和專案設定檔中指定的檔案上執行。 此原則可保證會分析屬於方案一部分的所有程式碼。|
-|**強制執行 CC++ /程式碼分析（/analyze）**|需要使用/analyze 編譯器選項C++來建立所有 C 或專案，以在可以簽入之前執行程式碼分析。|
+|**強制執行 C/c + + 程式碼分析（/analyze）**|需要使用/analyze 編譯器選項來建立所有 C 或 c + + 專案，以在可以簽入之前執行程式碼分析。|
 |**針對受控碼強制執行程式碼分析**|要求所有 managed 專案必須先執行程式碼分析和組建，才能將它們簽入。|
 
 ## <a name="to-specify-a-managed-rule-set"></a>若要指定受管理的規則集
@@ -61,7 +61,7 @@ ms.locfileid: "77506501"
 
 - 選取 [Microsoft 標準規則集]。
 
-- 按一下 [ **\<從原始檔控制選取規則集]，選取自訂規則集 .。。>** 。 然後，在原始檔控制瀏覽器中輸入規則集的版本控制路徑。 版本控制路徑的語法為：
+- 按一下以選取自訂規則集 **\<Select Rule Set from Source Control...>** 。 然後，在原始檔控制瀏覽器中輸入規則集的版本控制路徑。 版本控制路徑的語法為：
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 

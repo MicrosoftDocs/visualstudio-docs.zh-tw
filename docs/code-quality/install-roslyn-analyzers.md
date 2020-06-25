@@ -1,7 +1,7 @@
 ---
 title: 安裝 Roslyn 分析器
 ms.date: 08/03/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9a833cb46811bd97467fdb048272c9feb2bb7873
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ce30dd25c43f1ac8254dbdb6b04b747a976f3557
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587377"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371751"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>安裝 .NET Compiler Platform 程式碼分析器
 
@@ -31,17 +31,17 @@ Visual Studio 包含一組核心的 .NET Compiler Platform （*Roslyn*）分析�
 2. 使用 [[套件管理員主控台](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)] 或 [[套件管理員] UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)，在 Visual Studio 中安裝套件。
 
    > [!NOTE]
-   > 每個分析器套件的 www.nuget.org 頁面會顯示要貼入**封裝管理員主控台**的命令。 甚至還有一個方便的按鈕，可將文字複製到剪貼簿。
+   > 每個分析器套件的 [www.nuget.org] 頁面會顯示要貼入**封裝管理員主控台**的命令。 甚至還有一個方便的按鈕，可將文字複製到剪貼簿。
 
-   分析器元件會安裝並顯示在**方案總管**的 [**參考**] > **分析器**底下。
+   系統會安裝分析器元件，並出現在 [**參考**] 分析器底下的**方案總管**  >  ** **。
 
 ## <a name="to-install-vsix-analyzers"></a>安裝 VSIX 分析器
 
 ::: moniker range="vs-2017"
 
-1. 在 Visual Studio 中，選取 [**工具**] > [**擴充功能和更新**]。
+1. 在 Visual Studio 中，選取 [**工具**] [ > **擴充功能和更新**]。
 
-   [擴充功能和更新] 對話方塊隨即開啟。
+   [擴充功能和更新]**** 對話方塊隨即開啟。
 
    > [!NOTE]
    > 或者，您也可以直接從[Visual Studio Marketplace](https://marketplace.visualstudio.com)尋找和下載分析器延伸模組。
@@ -50,7 +50,7 @@ Visual Studio 包含一組核心的 .NET Compiler Platform （*Roslyn*）分析�
 
 ::: moniker range=">=vs-2019"
 
-1. 在 Visual Studio 中，選取 **擴充**功能 > **管理延伸**模組。
+1. 在 Visual Studio 中，選取 [**擴充**功能] [ > **管理擴充**功能]。
 
    [**管理延伸**模組] 對話方塊隨即開啟。
 
@@ -81,22 +81,22 @@ Visual Studio 包含一組核心的 .NET Compiler Platform （*Roslyn*）分析�
 
 ::: moniker range="vs-2017"
 
-如果您想要檢查是否已安裝延伸模組，請選取 [**工具**] > [**擴充功能和更新**]。 在 [**擴充功能和更新**] 對話方塊中，選取左側的 [**已安裝**] 類別，然後依名稱搜尋延伸模組。
+如果您想要檢查是否已安裝延伸模組，請選取 [**工具**] [  >  **擴充功能和更新**]。 在 [**擴充功能和更新**] 對話方塊中，選取左側的 [**已安裝**] 類別，然後依名稱搜尋延伸模組。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-如果您想要檢查是否已安裝延伸模組，請選取 [**延伸**模組] > [**管理延伸**模組]。 在 [**管理擴充**功能] 對話方塊中，選取左側的 [**已安裝**] 類別，然後依名稱搜尋延伸模組。
+如果您想要檢查是否已安裝延伸模組，請選取 [**擴充**功能] [  >  **管理延伸**模組]。 在 [**管理擴充**功能] 對話方塊中，選取左側的 [**已安裝**] 類別，然後依名稱搜尋延伸模組。
 
 ::: moniker-end
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 > [!div class="nextstepaction"]
 > [在 Visual Studio 中使用程式碼分析器](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的程式碼分析器總覽](../code-quality/roslyn-analyzers-overview.md)
 - [安裝 FxCop 分析器](../code-quality/install-fxcop-analyzers.md)

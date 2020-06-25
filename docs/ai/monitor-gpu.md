@@ -5,15 +5,15 @@ ms.author: jillfra
 manager: jillfra
 monikerRange: vs-2017
 ms.date: 11/13/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cc9491edb2e38ef96aa8ad6d554a53d43e5957f
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 694c4e12c719431b36e2fda1e58998651be39086
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638718"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371465"
 ---
 # <a name="monitoring-gpu-utilization"></a>監視 GPU 使用率
 

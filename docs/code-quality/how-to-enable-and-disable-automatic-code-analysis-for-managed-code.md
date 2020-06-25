@@ -1,16 +1,16 @@
 ---
 title: 停用舊版程式碼分析
 ms.date: 10/04/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42d981505817a4de72ed60b896742d4551ca0ee4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 532fe62ceee3ab32fc203976af58dd867b97b453
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587494"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371881"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>如何：啟用和停用受控碼的二進位程式碼分析
 

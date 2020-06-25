@@ -1,43 +1,43 @@
 ---
-title: AI 視覺化工作室工具概述
+title: Visual Studio Tools for AI 總覽
 author: jillre
 ms.author: jillfra
 manager: jillfra
 monikerRange: vs-2017
 ms.date: 11/13/2017
-ms.topic: conceptual
+ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: 388408f83fc18899ce34e2d58fdca05c713424bd
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: c138d09ec229343e38edc8bbba50a5cac73e000a
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386453"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371504"
 ---
-# <a name="overview-of-visual-studio-tools-for-ai"></a>AI 視覺化工作室工具概述
+# <a name="overview-of-visual-studio-tools-for-ai"></a>Visual Studio Tools for AI 總覽
 
-適用於 AI 的視覺化工作室工具是整合式開發環境 (IDE),可用於建構、測試和部署深度學習解決方案。 從以下教學和範例中瞭解有關如何使用 AI 工具的更多資訊。
+Visual Studio Tools for AI 是一種整合式開發環境（IDE），您可以用來建立、測試及部署深度學習解決方案。 從下列教學課程和範例深入瞭解如何使用 AI 工具。
 
 ## <a name="install-the-extension"></a>安裝延伸模組
 
-請參閱[安裝 AI 可視化工作室工具](installation.md)頁面,瞭解如何下載和安裝擴展。
+請參閱[安裝 Visual Studio Tools for AI](installation.md)頁面，以瞭解如何下載並安裝擴充功能。
 
-## <a name="5-minute-quickstart"></a>5 分鐘快速入門 
+## <a name="5-minute-quickstart"></a>5分鐘快速入門 
 
 瞭解如何使用[TensorFlow 和 Python](tensorflow-local.md)執行深度學習解決方案
 
-## <a name="step-by-step-tutorial"></a>分步教程
+## <a name="step-by-step-tutorial"></a>逐步教學課程
 
-瞭解如何在[雲教程中從訓練 TensorFlow 模型](tensorflow-vm.md)構建深度學習解決方案。
+瞭解如何從在[雲端訓練 TensorFlow 模型](tensorflow-vm.md)教學課程中建立深度學習解決方案。
 
 ## <a name="samples"></a>範例
 
-流覽[「示例」儲存庫](https://github.com/Microsoft/samples-for-ai)和[機器學習庫中](https://gallery.cortanaintelligence.com/projects)的範例。
+流覽[範例存放庫](https://github.com/Microsoft/samples-for-ai)和 Machine Learning 資源[庫](https://gallery.cortanaintelligence.com/projects)中的範例。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
-要瞭解有關適用於 AI 的可視化工作室工具的詳細資訊,包括系統要求和支援選項,請參閱[有關 AI 的可視化工作室工具](about-ai-tools.md)頁面。
+若要深入瞭解 Visual Studio Tools for AI，包括系統需求和支援選項，請參閱[about Visual Studio Tools for AI](about-ai-tools.md)頁面。
 
 ## <a name="see-also"></a>另請參閱
-[視覺工作室可擴充性](/visualstudio/extensibility/?view=vs-2017)
+[Visual Studio 擴充性](/visualstudio/extensibility/?view=vs-2017)

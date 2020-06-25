@@ -1,7 +1,7 @@
 ---
 title: 使用程式碼分析簽入原則
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de2322b42be2591fa0f6cdcfc49572322dcd140
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 883b5e231036c446c1cbf1fbc2fc125a01b3de62
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587481"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371855"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：以程式碼分析簽入原則強制維護程式碼
 
@@ -35,7 +35,7 @@ Team Foundation 版本控制的系統管理員可以將程式碼分析維護性�
 
      [**新增簽入原則**] 對話方塊隨即出現。
 
-3. 在 [**簽入原則**] 清單中，選取 [程式**代碼分析**] 核取方塊，然後按一下 **[確定]** 。
+3. 在 [**簽入原則**] 清單中，選取 [程式**代碼分析**] 核取方塊，然後按一下 **[確定]**。
 
      [程式**代碼分析原則編輯器**] 對話方塊隨即出現。
 
@@ -55,9 +55,9 @@ Team Foundation 版本控制的系統管理員可以將程式碼分析維護性�
 
      此外，如果您想要違反規則以防止組建成功，請選取規則描述旁的 [將**警告視為錯誤**] 核取方塊。
 
-3. 按一下 [ **確定**]。 新的簽入原則現在適用于未來的簽入。
+3. 按一下 [確定]。 新的簽入原則現在適用于未來的簽入。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [程式碼度量值](../code-quality/code-metrics-values.md)
 - [建立和使用程式碼分析簽入原則](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

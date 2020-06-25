@@ -5,15 +5,15 @@ ms.author: jillfra
 manager: jillfra
 monikerRange: vs-2017
 ms.date: 11/13/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: ece3ffa3a273e903f403fd7df7005bfb54172f62
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 188ebee353261ba49f6677a0f96db68b7e8d46d9
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638447"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371608"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>瀏覽儲存體以上傳資料或下載模型和記錄檔
 

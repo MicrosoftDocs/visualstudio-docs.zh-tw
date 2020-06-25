@@ -1,7 +1,7 @@
 ---
 title: 受控碼的自訂程式碼分析簽入原則
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
 - vs.code.analysis.browsefortfsruleset
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9386d89ce995131bdb89f94201fa8475058ddba0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b9eec66ec24c30b6e0df835d16805ea00eb08ac2
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587390"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371764"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>為受控碼實作自訂程式碼分析簽入原則
 
@@ -60,7 +60,7 @@ ms.locfileid: "75587390"
 
      如需詳細資訊，請參閱[Git 和 Azure Repos](/azure/devops/repos/git/overview?view=vsts)。
 
-2. 按一下您所建立的規則集檔案，然後按一下 **[完成]** 。
+2. 按一下您所建立的規則集檔案，然後按一下 **[完成]**。
 
      檔案會加入至原始檔控制，並簽出給您。
 
@@ -69,7 +69,7 @@ ms.locfileid: "75587390"
 4. 在 [**簽入**] 對話方塊中，您可以選擇新增批註，然後按一下 [**簽入**]。
 
     > [!NOTE]
-    > 如果您已為 Azure DevOps 專案設定程式碼分析簽入原則，而且已選取 [**強制簽入僅包含屬於目前方案**的檔案]，則會觸發原則失敗警告。 在 [原則失敗] 對話方塊中，選取 [覆**寫原則失敗並繼續簽入**]。 新增必要的批註，然後按一下 **[確定]** 。
+    > 如果您已為 Azure DevOps 專案設定程式碼分析簽入原則，而且已選取 [**強制簽入僅包含屬於目前方案**的檔案]，則會觸發原則失敗警告。 在 [原則失敗] 對話方塊中，選取 [覆**寫原則失敗並繼續簽入**]。 新增必要的批註，然後按一下 **[確定]**。
 
 ### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>將規則集檔案指定為簽入原則
 
@@ -79,7 +79,7 @@ ms.locfileid: "75587390"
 
 3. 在 [**簽入原則**] 清單中，按兩下 [程式**代碼分析**]，並確定已選取 [**針對 Managed 程式碼強制執行程式碼分析**] 核取方塊。
 
-4. 在 **執行此規則集** 清單中，按一下  **\<從原始檔控制選取規則集 >** 。
+4. 在 [**執行此規則集**] 清單中，按一下 [] **\<Select Rule Set from Source Control>** 。
 
 5. 在 [版本控制] 中，輸入簽入原則規則集檔案的路徑。
 
@@ -122,6 +122,6 @@ ms.locfileid: "75587390"
 
 ::: moniker-end
 
-6. 在 **執行此規則集** 清單中，按一下 **\<流覽 >** 。
+6. 在 [**執行此規則集**] 清單中，按一下 [] **\<Browse>** 。
 
 8. 選取簽入原則規則集檔案的本機版本。
