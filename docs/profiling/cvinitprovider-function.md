@@ -1,7 +1,7 @@
 ---
 title: CvInitProvider 函式 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvInitProvider
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a97be63cd782397e984fd8dbce7da844efa07540
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b06190568454977bfcb54d65db9011fc979f7591
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552663"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329571"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 函式
 初始化標記提供者。 必須在任何其他並行視覺化檢視 SDK 函式之前呼叫。
@@ -39,8 +39,8 @@ HRESULT CvInitProvider(
 ## <a name="return-value"></a>傳回值
  成功初始化提供者時傳回 S_OK，發生任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  **標頭︰** *cvmarkers.h*
 
 ## <a name="see-also"></a>另請參閱
-- [C++庫參考](../profiling/cpp-library-reference.md)
+- [C + + 程式庫參考](../profiling/cpp-library-reference.md)

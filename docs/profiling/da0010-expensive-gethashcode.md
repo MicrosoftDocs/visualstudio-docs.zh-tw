@@ -1,7 +1,7 @@
 ---
-title: DA0010：GetHashCode 高度耗費資源 | Microsoft Docs
+title: DA0010-昂貴的 GetHashCode |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAExpensiveGetHashCode
 - vs.performance.DA0010
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ce982c7a98fd12749c66c89e47bd895d2fb6a5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e94e30281163a9834453a14ca8900da616a6b884
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777682"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328206"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010：GetHashCode 高度耗費資源
 

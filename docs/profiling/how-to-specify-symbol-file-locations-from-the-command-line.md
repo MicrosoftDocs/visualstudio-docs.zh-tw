@@ -1,7 +1,7 @@
 ---
-title: 如何：從命令列指定符號檔位置 | Microsoft Docs
+title: 如何-從命令列指定符號檔位置 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 604863cbef5e42b31450ea09dffa56a1a00ae992
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f9238c922b8adda3ce7d99571182d4b5ce91f35f
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77476894"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329016"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：從命令列指定符號檔位置
 若要顯示符號資訊 (例如函式名稱和行號)，VSPerfReport 命令列工具需要存取已進行程式碼剖析之元件的符號 (.*pdb*) 檔案和 Windows 系統檔。 符號檔是在元件編譯時建立。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。 VSPerfReport 會自動搜尋下列位置中是否有符號檔：
@@ -48,7 +48,7 @@ ms.locfileid: "77476894"
 
     `srv*<LocalStore>*https://msdl.microsoft.com/download/symbols`
 
-    您*<LocalStore>* 創建的本地目錄的路徑在哪裡。
+    其中 *<LocalStore>* 是您所建立的本機目錄路徑。
 
 ## <a name="specify-component-symbol-files"></a>指定元件符號檔
  針對要進行程式碼剖析之元件的 .*pdb* 檔，程式碼剖析工具會在其原始位置 (可能儲存於元件或包含程式碼剖析資料檔的資料夾中) 進行搜尋。 您可以加入一或多個路徑至 **_NT_SYMBOL_PATH** 或 **/SymbolPath** 選項，以指定其他要搜尋的位置。 請使用分號分隔路徑。
@@ -60,6 +60,6 @@ ms.locfileid: "77476894"
   set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols
  ```
 
- 以下 VSPerfReport 命令列使用 **/SymbolPath**選項將*C：_專案\Symbols*目錄添加到搜索路徑。
+ 下列 VSPerfReport 命令列會使用 **/SymbolPath**選項將*C:\Projects\Symbols*目錄新增至搜尋路徑。
 
  **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

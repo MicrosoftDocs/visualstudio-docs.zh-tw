@@ -1,7 +1,7 @@
 ---
-title: DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式 | Microsoft Docs
+title: DA0018-32 位應用程式正以進程 managed 記憶體限制執行 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7bebd25f499131b4beda109ebb9ac468c2435b1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 43535ed4a2e4e3a941b18fe315c3a5015639a0c6
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780061"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328435"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式
 
@@ -47,7 +47,7 @@ ms.locfileid: "74780061"
  當 Managed 堆積的總大小接近預設限制時，記憶體管理的負擔通常會變大而開始影響應用程式的回應性和延展性。
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
- 按兩下"錯誤清單"視窗中的消息以導航到["標記"](../profiling/marks-view.md)視圖。 尋找 **.NET CLR Memory\\# Bytes in all Heaps** 和 **# Total committed bytes** 欄。 判斷是否有特定的程式執行階段，當中的 Managed 記憶體配置比其他階段更繁重。 將 **# Bytes in all Heaps** 欄的值與 **.NET CLR Memory\\# of Gen 0 Collections**、**.NET CLR Memory\\# of Gen 1 Collections** 和 **.NET CLR Memory\\# of Gen 2 Collections** 欄中報告的記憶體回收速度比較，判斷 Managed 記憶體配置的模式是否會影響記憶體回收的速率。
+ 按兩下 [錯誤清單] 視窗中的訊息，流覽至 [[標記](../profiling/marks-view.md)] 視圖。 尋找 **.NET CLR Memory\\# Bytes in all Heaps** 和 **# Total committed bytes** 欄。 判斷是否有特定的程式執行階段，當中的 Managed 記憶體配置比其他階段更繁重。 將 **# Bytes in all Heaps** 欄的值與 **.NET CLR Memory\\# of Gen 0 Collections**、**.NET CLR Memory\\# of Gen 1 Collections** 和 **.NET CLR Memory\\# of Gen 2 Collections** 欄中報告的記憶體回收速度比較，判斷 Managed 記憶體配置的模式是否會影響記憶體回收的速率。
 
  在 .NET Framework 應用程式中，通用語言執行平台限制 Managed 堆積的大小上限要稍微小於處理序位址空間之私用區域部分大小上限的一半。 對於在 32 位元電腦上執行的 32 位元處理序，2GB 代表處理序位址空間之私用部分的上限。 當 Managed 堆積的總大小開始接近預設限制時，可能會增加管理記憶體的負擔，且會降低應用程式效能。
 
@@ -59,9 +59,9 @@ ms.locfileid: "74780061"
 
 - 採取步驟解除 32 位元處理序之虛擬記憶體大小上限的架構限制
 
-  若要最佳化 Managed 記憶體資源的應用程式使用方式，請在 .NET 記憶體配置分析執行中收集 Managed 記憶體配置資料。 查看[.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)報告以瞭解應用程式的記憶體分配模式。
+  若要最佳化 Managed 記憶體資源的應用程式使用方式，請在 .NET 記憶體配置分析執行中收集 Managed 記憶體配置資料。 請參閱[.Net 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)報表，以瞭解應用程式的記憶體配置模式。
 
-  使用[物件存留期視圖](../profiling/object-lifetime-view.md)確定程式的資料物件中哪些在生成中存活，然後從那裡回收。
+  使用 [[物件存留期] 視圖](../profiling/object-lifetime-view.md)，判斷哪一個程式的資料物件會存留在產生中，然後從該處回收。
 
   使用[配置檢視](../profiling/dotnet-memory-allocations-view.md)可判斷導致這些配置的執行路徑。
 

@@ -1,7 +1,7 @@
 ---
-title: 如何：手動建立效能工作階段 | Microsoft Docs
+title: 如何手動建立效能會話 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.wizard.dllpage
 - vs.performance.wizard.exepage
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 46c0f1bfeee785feebf1d643b0796c1308053403
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a1701322bec623c6bb2657f78ecdcc1dc16dde1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778826"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327672"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>如何：手動建立效能工作階段
 您可以手動建立效能工作階段， 而且不需要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中開啟專案便可以完成。 如需詳細資訊，請參閱[設定效能工作階段](../profiling/configuring-performance-sessions.md)。
@@ -39,4 +39,4 @@ ms.locfileid: "74778826"
 
 ## <a name="see-also"></a>另請參閱
 - [效能總管](../profiling/performance-explorer.md)
-- [開始使用](../profiling/getting-started-with-performance-tools.md)
+- [快速入門](../profiling/getting-started-with-performance-tools.md)

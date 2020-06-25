@@ -1,7 +1,7 @@
 ---
-title: DA0014：極高比率的使用中記憶體分頁到磁碟 | Microsoft Docs
+title: DA0014-極高比率的使用中記憶體分頁到磁片 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAMemoryBound
 - vs.performance.DA0014
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e068771ba0fcc9b044ba7ff5243a75ceb3161e03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 40a3b6e584c774f4824fa89afa2c76d59c240657
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779404"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328060"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014：極高比率的使用中記憶體分頁到磁碟
 
@@ -45,7 +45,7 @@ ms.locfileid: "74779404"
 > 當使用中記憶體的分頁程度達到非常高的比率時，就會引發這個規則。 當分頁程度很高但不是極高時，則會改為引發資訊性規則 [DA0017︰高比率的使用中記憶體分頁到磁碟](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 按兩下"錯誤清單"視窗中的消息以導航到["標記"](../profiling/marks-view.md)視圖。 尋找 **Memory\Pages/sec** 欄。 判斷是否有特定的程式執行階段，當中的分頁 IO 活動比其他階段更繁重。
+ 按兩下 [錯誤清單] 視窗中的訊息，流覽至 [[標記](../profiling/marks-view.md)] 視圖。 尋找 **Memory\Pages/sec** 欄。 判斷是否有特定的程式執行階段，當中的分頁 IO 活動比其他階段更繁重。
 
  如果您在負載測試情節中收集 ASP.NET 應用程式的分析資料，請嘗試在設定額外實體記憶體 (或 RAM) 的機器上再次執行負載測試。
 

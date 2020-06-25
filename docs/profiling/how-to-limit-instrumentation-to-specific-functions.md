@@ -1,7 +1,7 @@
 ---
-title: 如何：限制檢測特定函式 | Microsoft Docs
+title: 如何限制檢測特定函式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 34a63645933a173e449cf4292cc3d014cc3ec740
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0ca92b9f4b7594abc0815038799147ac44091cb3
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74775315"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327630"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：限制檢測特定函式
 您可以透過在 [效能工作階段]**** 或目標二進位檔屬性頁的 [進階]**** 頁面中設定選項，將檢測和資料收集限制在一或多個函式：
@@ -40,9 +40,9 @@ ms.locfileid: "74775315"
 
 3. 在 [其他檢測選項]**** 文字方塊中，使用下列語法輸入您要檢測之函式的名稱：
 
-    **/包括：** `FuncSpec` **[;** `FuncSpec` **]**`...`
+    **/include：** `FuncSpec`**[;** `FuncSpec`**]**`...`
 
-    `FuncSpec` 是命名空間和函式名稱。 其格式`Namespace`**為 ：：**`FunctionName`。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。
+    `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace` **：：** `FunctionName` 。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。
 
    > [!NOTE]
    > 若要列出二進位檔中的函式，請在分析工具安裝目錄中開啟命令提示字元視窗 (請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md))，然後鍵入 **vsinstr /DumpFuncs**
@@ -59,9 +59,9 @@ ms.locfileid: "74775315"
 
 4. 在 [其他檢測選項]**** 文字方塊中，使用下列語法輸入您要檢測之函式的名稱：
 
-    **/包括：** `FuncSpec` **[;** `FuncSpec` **]**`...`
+    **/include：** `FuncSpec`**[;** `FuncSpec`**]**`...`
 
-    `FuncSpec` 是命名空間和函式名稱。 其格式`Namespace`**為 ：：**`FunctionName`。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。
+    `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace` **：：** `FunctionName` 。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。
 
    > [!NOTE]
    > 若要列出二進位檔中的函式，請在分析工具安裝目錄中開啟命令提示字元視窗 (請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md))，然後鍵入 **vsinstr /DumpFuncs**

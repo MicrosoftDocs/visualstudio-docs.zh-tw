@@ -7,29 +7,29 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 962ca0cf3960195ffabefb5a9bd2c6cc7e72590c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984920"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289413"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>安裝 Visual Studio 2017 for Mac
 
 > [!NOTE]
-> Visual Studio 2019 為 Mac[現在可用](installation.md?view=vsmac-2019)。 針對舊版的 Visual Studio for Mac，請參閱 Visual Studio [下載頁面](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)。
+> 適用于 Mac 的 Visual Studio 2019[現](installation.md?view=vsmac-2019)已開放下載。 針對舊版的 Visual Studio for Mac，請參閱 Visual Studio [下載頁面](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)。
 
 ## <a name="downgrading-from-visual-studio-2019-for-mac"></a>從 Visual Studio 2019 for Mac 降級嗎？
 
 為了獲得最佳體驗，在降級之前，您應該確定[解除安裝](uninstall.md) Visual Studio 2019 for Mac。 如果您遇到導致您下載的問題，請務必透過[回報問題](report-a-problem.md)讓我們知道。
  
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 若要在下載 Visual Studio for Mac 時開始開發原生的跨平台應用程式，有必須安裝和設定以做為準備的數個項目。
 
 若要在 Visual Studio 中使用 iOS，您需要下列各項：
 
-- 具有 macOS Sierra 10.12 或以上版本的 Mac
+- 具有 macOS High Sierra 10.13 或以上版本的 Mac。
 - Xcode 9.3 或更新版本。 通常建議使用最新穩定版本。
 - Apple ID。 如果您還沒有 Apple 識別碼，可以在 https://appleid.apple.com 建立一個新識別碼。 安裝及登入 Xcode 時需要有 Apple 識別碼。
 
@@ -115,7 +115,7 @@ ms.locfileid: "74984920"
 
 1. [使用 Xamarin Android SDK 管理員](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
 2. [Android SDK 模擬器](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [設置用於開發的設備](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+4. [設定裝置以進行開發](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 應用程式、ASP.NET Core Web 應用程式、Unity 遊戲開發
 

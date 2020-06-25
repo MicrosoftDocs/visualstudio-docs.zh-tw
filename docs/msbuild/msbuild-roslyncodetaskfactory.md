@@ -10,23 +10,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78865371"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289205"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>具有 RoslynCodeTaskFactory 的 MSBuild 內嵌工作
 
 類似於 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md)，RoslynCodeTaskFactory 使用跨平台 Roslyn 編譯器來產生用於作為內嵌工作的記憶體中工作組件。  RoslynCodeTaskFactory 工作以 .NET Standard 為目標，並且可以使用 .NET Framework 和 .NET Core 執行階段，以及 Linux 和 Mac OS 等其他平台。
 
 >[!NOTE]
->RoslynCodeTaskFactory 僅適用於 MSBuild 15.8 和更新版本。 MSBuild 版本遵循視覺工作室版本，因此 RoslynCodeTaskFactory 在 Visual Studio 15.8 及以上版本中提供。
+>RoslynCodeTaskFactory 僅適用於 MSBuild 15.8 和更新版本。 MSBuild 版本遵循 Visual Studio 版本，因此在 Visual Studio 2017 15.8 版和更高版本中提供 RoslynCodeTaskFactory。
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>具有 RoslynCodeTaskFactory 之內嵌工作的結構
 
- RoslynCodeTaskFactory 內嵌工作的宣告方式與 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) 相同，唯一的差異是 RoslynCodeTaskFactory 內嵌工作以 .NET Standard 為目標。  內聯任務及其包含`UsingTask`它的元素通常包含在 *.target*檔中，並根據需要導入到其他專案檔案中。 以下是基本的內嵌工作。 請注意，它不會執行任何動作。
+ RoslynCodeTaskFactory 內嵌工作的宣告方式與 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) 相同，唯一的差異是 RoslynCodeTaskFactory 內嵌工作以 .NET Standard 為目標。  內嵌工作和 `UsingTask` 包含它的元素通常會包含在 *.targets*檔案中，並視需要匯入其他專案檔中。 以下是基本的內嵌工作。 請注意，它不會執行任何動作。
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -56,7 +56,7 @@ ms.locfileid: "78865371"
 
 `DoNothing` 工作的其餘項目是空的，它們的用途是用來說明內嵌工作的順序和結構。 本主題後續內容中將提供更強固的範例。
 
-- `ParameterGroup` 則是選擇性元素。 指定時，它將會宣告工作的參數。 有關輸入和輸出參數的詳細資訊，請參閱本主題後面的[輸入和輸出參數](#input-and-output-parameters)。
+- `ParameterGroup` 則是選擇性元素。 指定時，它將會宣告工作的參數。 如需輸入和輸出參數的詳細資訊，請參閱本主題稍後的[輸入和輸出參數](#input-and-output-parameters)。
 
 - `Task` 項目會描述並包含工作原始程式碼。
 
@@ -83,7 +83,7 @@ ms.locfileid: "78865371"
 
 - 如果 `Type` 的值是 `Fragment`，則程式碼會定義 `Execute` 方法的內容，但不會定義簽章或 `return` 陳述式。
 
-程式碼本身通常會出現在 `<![CDATA[` 標記和 `]]>` 標記之間。 因為此程式碼是在 CDATA 區段中，所以您不必擔心逸出保留的字元，如 "\<" 或 ">"。
+程式碼本身通常會出現在 `<![CDATA[` 標記和 `]]>` 標記之間。 因為程式碼是在 CDATA 區段中，所以您不需要擔心轉義保留的字元，例如 " \<" or "> "。
 
 或者，您可以使用 `Code` 項目的 `Source` 屬性，來指定包含您工作程式碼的檔案位置。 原始程式檔中的程式碼必須是 `Type` 屬性所指定的類型。 如果 `Source` 屬性存在，`Type` 的預設值為 `Class`。 如果 `Source` 不存在，預設值為 `Fragment`。
 
@@ -117,7 +117,7 @@ Log.LogError("Hello, world!");
 </Project>
 ```
 
-您可以將 HelloWorld 任務保存在名為*HelloWorld.target*的檔中，然後從專案中調用它，如下所示。
+您可以將 HelloWorld 工作儲存在名為*HelloWorld*的檔案中，然後從專案叫用它，如下所示。
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -164,7 +164,7 @@ Log.LogError("Hello, world!");
 
 - `Tally` 是 System.Int32 類型的輸出參數。
 
-如果 `Code` 項目具有 `Fragment` 或 `Method` 的 `Type` 屬性，則會自動為每個參數建立屬性。  在 RoslynCodeTaskFactory 中`Code`，如果元素`Type`具有`Class`的屬性，則不必指定`ParameterGroup`，因為它是從原始程式碼推斷的（這與 不同）。 `CodeTaskFactory` 否則，必須在工作原始程式碼中明確宣告屬性，而且屬性必須完全符合它們的參數定義。
+如果 `Code` 項目具有 `Fragment` 或 `Method` 的 `Type` 屬性，則會自動為每個參數建立屬性。  在 RoslynCodeTaskFactory 中，如果專案 `Code` 具有 `Type` 的屬性 `Class` ，則您不需要指定 `ParameterGroup` ，因為它是從原始程式碼推斷（這與不同 `CodeTaskFactory` ）。 否則，必須在工作原始程式碼中明確宣告屬性，而且屬性必須完全符合它們的參數定義。
 
 ## <a name="example"></a>範例
 
@@ -256,6 +256,57 @@ Log.LogError("Hello, world!");
 
         <Message Text="File name: '$(MyFileName)'" />
     </Target>
+</Project>
+```
+
+## <a name="provide-backward-compatibility"></a>提供回溯相容性
+
+`RoslynCodeTaskFactory`第一次在 MSBuild 版本15.8 中推出。 假設您有想要支援舊版 Visual Studio 和 MSBuild 的情況， `RoslynCodeTaskFactory` 但無法使用時，但是 `CodeTaskFactory` 您想要使用相同的組建腳本。 您可以使用 `Choose` 使用屬性的結構， `$(MSBuildVersion)` 在組建時間決定是要使用 `RoslynCodeTaskFactory` 還是切換回 `CodeTaskFactory` ，如下列範例所示：
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition=" '$(MSBuildVersion.Substring(0,2))' >= 16 Or
+    ('$(MSBuildVersion.Substring(0,2))' == 15 And '$(MSBuildVersion.Substring(3,1))' >= 8)">
+      <PropertyGroup>
+        <TaskFactory>RoslynCodeTaskFactory</TaskFactory>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <TaskFactory>CodeTaskFactory</TaskFactory>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  
+  <UsingTask
+    TaskName="HelloWorld"
+    TaskFactory="$(TaskFactory)"
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <ParameterGroup />
+    <Task>
+      <Using Namespace="System"/>
+      <Using Namespace="System.IO"/>
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
+         Log.LogError("Using RoslynCodeTaskFactory");
+      ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+
+  <Target Name="RunTask" AfterTargets="Build">
+    <Message Text="MSBuildVersion: $(MSBuildVersion)"/>
+    <Message Text="TaskFactory: $(TaskFactory)"/>
+    <HelloWorld />
+  </Target>
+
 </Project>
 ```
 

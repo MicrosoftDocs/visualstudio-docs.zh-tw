@@ -1,7 +1,7 @@
 ---
-title: 如何：選擇收集方法 | Microsoft Docs
+title: 如何選擇收集方法 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, choosing collection method
 - profiling tools, choosing collection method
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4dbc54fc394f75778f74d9b6b02e93882129cdb9
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776341"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329268"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：選擇收集方法
 
@@ -31,12 +31,12 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 
 - 在精靈的第一個頁面上，選取下列其中一個選項︰
 
-| 選項 | 描述 |
+| 選項 | 說明 |
 |----------------------------| - |
 | **CPU 取樣** | 收集對初始分析和 CPU 使用率問題分析有用的應用程式統計資料。 |
-| **儀錶** | 收集對重點分析和輸入/輸出效能問題分析有用的詳細計時資料。 |
+| **校驗** | 收集對重點分析和輸入/輸出效能問題分析有用的詳細計時資料。 |
 | **.NET 記憶體配置** | 使用取樣分析方法來收集 .NET Framework 記憶體配置資料。 |
-| **併發** | 收集數值資源爭用資料。 |
+| **並行** | 收集數值資源爭用資料。 |
 
 ## <a name="performance-explorer"></a>效能總管
 
@@ -52,7 +52,7 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 
 1. 在 [效能總管]**** 中，選取效能工作階段。
 
-     性能會話檔案名具有 。*psess*擴展。
+     效能會話檔案名的名稱為。*.psess*擴充功能。
 
 2. 以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]****。
 
@@ -92,6 +92,6 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 
 ## <a name="see-also"></a>另請參閱
 
-[配置性能會話](../profiling/configuring-performance-sessions.md)
-[瞭解採樣資料值](../profiling/understanding-sampling-data-values.md)
-[性能會話屬性](../profiling/performance-session-properties.md)
+[設定效能會話](../profiling/configuring-performance-sessions.md) 
+[瞭解取樣資料值](../profiling/understanding-sampling-data-values.md) 
+[效能會話屬性](../profiling/performance-session-properties.md)

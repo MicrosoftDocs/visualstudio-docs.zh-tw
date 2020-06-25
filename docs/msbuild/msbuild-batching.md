@@ -1,6 +1,6 @@
 ---
 title: MSBuild 批次處理 | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 06/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
@@ -11,25 +11,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78aeef8ea651aac1fe2a780207474399f4bbcf09
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633430"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289270"
 ---
 # <a name="msbuild-batching"></a>MSBuild 批次處理
 
-MSBuild 能夠根據項中繼資料將項清單劃分為不同的類別或批次，並為每個批次處理運行一次目標或任務。
+MSBuild 會根據專案中繼資料，將專案清單分割成不同的類別或批次，並使用每個批次執行一次目標或工作。
 
 ## <a name="task-batching"></a>工作批次處理
 
 工作批次處理可讓您將項目清單分割成不同的批次，並分別將各批次傳遞給工作，以簡化專案檔案。 這表示即使工作可能要執行若干次，專案檔也只需要宣告一次工作和其屬性。
 
-您指定 MSBuild 在其中一個任務屬性中使用 %（ItemMetaDataName\<>） 標記法來執行任務的批次處理。 下列範例會根據 `Color` 項目中繼資料值，將 `Example` 項目清單分割成批次，並將每個批次個別傳遞給 `MyTask` 工作。
+您可以使用 `%(ItemMetaDataName)` 其中一個工作屬性中的標記法，指定要讓 MSBuild 以工作執行批次處理。 下列範例會根據 `Color` 項目中繼資料值，將 `Example` 項目清單分割成批次，並將每個批次個別傳遞給 `MyTask` 工作。
 
 > [!NOTE]
-> 如果您不需參考工作屬性中其他位置的項目清單，或中繼資料名稱可能模稜兩可，您可以使用 %(\<ItemCollection.ItemMetaDataName>) 標記法，來完整限定要用於批次處理的項目中繼資料值。
+> 如果您未在工作屬性中的其他位置參考專案清單，或中繼資料名稱可能不明確，您可以使用% <ItemCollection. ItemMetaDataName>）標記法來完整限定要用於批次處理的專案中繼資料值。
 
 ```xml
 <Project
@@ -57,9 +57,9 @@ MSBuild 能夠根據項中繼資料將項清單劃分為不同的類別或批次
 
 ## <a name="target-batching"></a>目標批次處理
 
-MSBuild 在目標運行目標之前檢查目標的輸入和輸出是否處於最新狀態。 如果輸入和輸出都是最新的，則會略過目標。 如果目標內部的任務使用批次處理，MSBuild 需要確定每批物料的輸入和輸出是否最新。 否則，每次叫用目標時均會執行。
+MSBuild 會在執行目標之前檢查目標的輸入和輸出是否為最新狀態。 如果輸入和輸出都是最新狀態，則會略過目標。 如果目標內的工作使用批次處理，MSBuild 必須判斷每個專案批次的輸入和輸出是否為最新狀態。 否則，每次叫用時，就會執行目標。
 
-下列範例示範包含 `Outputs` 屬性與 %(\<ItemMetaDataName>) 標記法的 `Target` 項目。 MSBuild 將根據`Example``Color`項中繼資料將項清單劃分為多個批次，並分析每個批次的輸出檔案的時間戳記。 如果批次的輸出不是最新狀態，則會執行目標。 否則，會略過目標。
+下列範例顯示的 `Target` 元素包含 `Outputs` 具有 `%(ItemMetadataName)` 標記法的屬性。 MSBuild 會 `Example` 根據專案中繼資料，將專案清單分割成批次 `Color` ，並分析每個批次輸出檔案的時間戳記。 如果批次的輸出不是最新狀態，則會執行目標。 否則，會略過目標。
 
 ```xml
 <Project
@@ -86,6 +86,122 @@ MSBuild 在目標運行目標之前檢查目標的輸入和輸出是否處於最
 ```
 
 如需目標批次處理的其他範例，請參閱[目標批次處理中的項目中繼資料](../msbuild/item-metadata-in-target-batching.md)。
+
+## <a name="item-and-property-mutations"></a>專案和屬性變化
+
+本節說明在使用目標批次處理或工作批次處理時，如何瞭解變更屬性和/或專案中繼資料的效果。
+
+由於目標批次處理和工作批次處理是兩個不同的 MSBuild 作業，因此請務必瞭解 MSBuild 在每個案例中所使用的批次形式。 當批次處理語法 `%(ItemMetadataName)` 出現在目標的工作中，而不是在目標的屬性中時，MSBuild 會使用工作批次處理。 指定目標批次處理的唯一方式是在目標屬性（通常是屬性）上使用批次處理語法 `Outputs` 。
+
+透過目標批次處理和工作批次處理，可以將批次視為獨立執行。 所有批次都是以屬性和專案中繼資料值的相同初始狀態複本開始。 在批次執行期間，屬性值的任何變化都不會顯示在其他批次中。 請考慮下列範例：
+
+```xml
+  <ItemGroup>
+    <Thing Include="2" Color="blue" />
+    <Thing Include="1" Color="red" />
+  </ItemGroup>
+
+  <Target Name="DemoIndependentBatches">
+    <ItemGroup>
+      <Thing Condition=" '%(Color)' == 'blue' ">
+        <Color>red</Color>
+        <NeededColorChange>true</NeededColorChange>
+      </Thing>
+    </ItemGroup>
+    <Message Importance="high"
+             Text="Things: @(Thing->'%(Identity) is %(Color); needed change=%(NeededColorChange)')"/>
+  </Target>
+```
+
+輸出如下：
+
+```output
+Target DemoIndependentBatches:
+  Things: 2 is red; needed change=true;1 is red; needed change=
+```
+
+`ItemGroup`目標中的是隱含的工作，而且 `%(Color)` 在 `Condition` 屬性中，會執行工作批次處理。 有兩個批次：一個用於紅色，另一個用於藍色。 `%(NeededColorChange)`只有在 `%(Color)` 中繼資料為藍色時，才會設定屬性，而此設定只會影響執行藍色批次時符合條件的個別專案。 工作 `Message` 的 `Text` 屬性不會觸發批次（儘管 `%(ItemMetadataName)` 是語法），因為它是在專案轉換內使用。
+
+批次會獨立執行，但不會平行執行。 當您存取在批次執行中變更的中繼資料值時，這會產生差異。 在您根據批次執行中的某些中繼資料設定屬性的情況下，屬性會採用*最後一個*設定的值：
+
+```xml
+   <PropertyGroup>
+       <SomeProperty>%(SomeItem.MetadataValue)</SomeProperty>
+   </PropertyGroup>
+```
+
+批次執行之後，屬性會保留的最終值 `%(MetadataValue)` 。
+
+雖然批次獨立執行，但請務必考慮目標批次處理和工作批次處理之間的差異，並瞭解哪種類型適用于您的情況。 請考慮下列範例，以進一步瞭解這項區別的重要性。
+
+工作可以是隱含的，而不是明確的，這在隱含工作發生工作批次處理時可能會造成混淆。 當 `PropertyGroup` 或 `ItemGroup` 元素出現在中時 `Target` ，群組中的每個屬性宣告都會以隱含方式處理，就像個別的[CreateProperty](createproperty-task.md)或[CreateItem](createitem-task.md)工作一樣。 這表示當目標是批次時，此行為會不同，而不會批次處理目標時（亦即，缺少 `%(ItemMetadataName)` 屬性中的語法時 `Outputs` ）。 當鎖定目標時，會 `ItemGroup` 針對每個目標執行一次，但當目標未批次處理時， `CreateItem` 會使用工作批次處理來批次處理或工作的隱含對等 `CreateProperty` 專案，因此目標只會執行一次，而群組中的每個專案或屬性則會使用工作批次處理分別進行批次處理。
+
+下列範例說明在中繼資料進行變化的情況下，目標批次處理與工作批次處理的比較。 假設您的資料夾 A 和 B 具有一些檔案：
+
+```
+A\1.stub
+B\2.stub
+B\3.stub
+```
+
+現在查看這兩個類似專案的輸出。
+
+```xml
+    <ItemGroup>
+      <StubFiles Include="$(MSBuildThisFileDirectory)**\*.stub"/>
+
+      <StubDirs Include="@(StubFiles->'%(RecursiveDir)')"/>
+    </ItemGroup>
+
+    <Target Name="Test1" AfterTargets="Build" Outputs="%(StubDirs.Identity)">
+      <PropertyGroup>
+        <ComponentDir>%(StubDirs.Identity)</ComponentDir>
+        <ComponentName>$(ComponentDir.TrimEnd('\'))</ComponentName>
+      </PropertyGroup>
+
+      <Message Text=">> %(StubDirs.Identity) '$(ComponentDir)' '$(ComponentName)'"/>
+    </Target>
+```
+
+輸出如下：
+
+```output
+Test1:
+  >> A\ 'A\' 'A'
+Test1:
+  >> B\ 'B\' 'B'
+```
+
+現在，請移除 `Outputs` 指定目標批次處理的屬性。
+
+```xml
+    <ItemGroup>
+      <StubFiles Include="$(MSBuildThisFileDirectory)**\*.stub"/>
+
+      <StubDirs Include="@(StubFiles->'%(RecursiveDir)')"/>
+    </ItemGroup>
+
+    <Target Name="Test1" AfterTargets="Build">
+      <PropertyGroup>
+        <ComponentDir>%(StubDirs.Identity)</ComponentDir>
+        <ComponentName>$(ComponentDir.TrimEnd('\'))</ComponentName>
+      </PropertyGroup>
+
+      <Message Text=">> %(StubDirs.Identity) '$(ComponentDir)' '$(ComponentName)'"/>
+    </Target>
+```
+
+輸出如下：
+
+```output
+Test1:
+  >> A\ 'B\' 'B'
+  >> B\ 'B\' 'B'
+```
+
+請注意，標題 `Test1` 只會列印一次，但在上一個範例中，它會列印兩次。 這表示目標不會批次處理。  因此，輸出會 confusingly 不同。
+
+原因是，在使用目標批次處理時，每個目標批次都會在目標中執行所有屬性和專案之獨立複本的所有專案，但當您省略 `Outputs` 屬性時，會將屬性群組中的個別行視為不同的可能批次工作。 在此情況下， `ComponentDir` 會批次處理工作（它會使用 `%(ItemMetadataName)` 語法），因此，在 `ComponentName` 行執行的時間，這兩個行的批次 `ComponentDir` 都已完成，而第二個則是根據第二行所示來判斷值。
 
 ## <a name="property-functions-using-metadata"></a>使用中繼資料的屬性函式
 

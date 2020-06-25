@@ -1,7 +1,7 @@
 ---
-title: 如何：參考 Windows 符號資訊 | Microsoft Docs
+title: 如何參考 Windows 符號資訊 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, symbol servers
 - servers, symbol servers
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 28bbd4b584d679c03c58ba8532ced3f28f16d6aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 88df7c676e6dbd95704716eb8a361f2fce7f66d4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774909"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328827"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>如何：參考 Windows 符號資訊
 Visual Studio 程式碼剖析工具會使用符號 (.*pdb*) 檔案來解析符號名稱，例如程式二進位檔案中的函式名稱。 您可以遵循下列步驟來自動下載並更新本機電腦上之 Windows 版本的正確 .*pdb* 檔案。
@@ -33,7 +33,7 @@ Visual Studio 程式碼剖析工具會使用符號 (.*pdb*) 檔案來解析符�
 
 1. 建立要包含符號檔案資訊的資料夾，例如 C:\SymbolCache。
 
-2. 在 **[工具]** 功能表上，按一下 **[選項]**。
+2. 在 **[工具]** 功能表上，按一下 **[選項]** 。
 
      [ **選項** ] 對話方塊隨即出現。
 
@@ -48,5 +48,5 @@ Visual Studio 程式碼剖析工具會使用符號 (.*pdb*) 檔案來解析符�
      您也可以按一下省略符號按鈕 (**...**)，然後從 [瀏覽資料夾]**** 對話方塊選取一個目錄。
 
 ## <a name="see-also"></a>另請參閱
-- [配置性能會話](../profiling/configuring-performance-sessions.md)
+- [設定效能工作階段](../profiling/configuring-performance-sessions.md)
 - [如何：序列化符號資訊](../profiling/how-to-serialize-symbol-information.md)

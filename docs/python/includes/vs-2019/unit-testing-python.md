@@ -10,35 +10,35 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8adce700524c4ade6c627aa91480460f8f2571f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e84b9de4eca681812209eb17f492d5e07522d3b5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71933465"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292156"
 ---
-## <a name="select-the-test-framework-for-a-python-project"></a>選擇 Python 專案的測試框架
+## <a name="select-the-test-framework-for-a-python-project"></a>選取 Python 專案的測試架構
 
-Visual Studio 支援兩個針對 Python、[單元測試](https://docs.python.org/3/library/unittest.html)和[熱測試](https://pytest.org/en/latest/)的測試框架（在 Visual Studio 2019 中提供，從版本 16.3 開始）。 預設情況下，在創建 Python 專案時不會選擇任何框架。 要指定框架，請按右鍵解決方案資源管理器中的專案名稱並選擇"**屬性**"選項。 這將打開專案設計器，它允許您通過 **"測試"** 選項卡配置測試。在此選項卡中，您可以選擇要用於專案的測試框架。 
+Visual Studio 支援適用于 Python、 [unittest](https://docs.python.org/3/library/unittest.html)和[pytest](https://pytest.org/en/latest/)的兩種測試架構（可從16.3 版開始 Visual Studio 2019）。 根據預設，當您建立 Python 專案時，不會選取任何架構。 若要指定架構，請在方案總管中的專案名稱上按一下滑鼠右鍵，然後選取 [**屬性**] 選項。 這會開啟 [專案設計工具]，可讓您透過 [**測試**] 索引標籤來設定測試。從這個索引標籤中，您可以選取要用於專案的測試架構。 
 
-* 對於**單元測試**框架，專案的根目錄用於測試發現。 可以在 **"測試"** 選項卡上修改此位置以及用於標識測試的文字模式，以達到使用者指定的值。
-* 對於**pytest**框架，使用標準 pytest .ini 設定檔指定測試位置和檔案名模式等測試選項。 有關詳細資訊，請參閱[pythe 參考文檔](https://docs.pytest.org/en/latest/reference.html#ini-options-ref)。
+* 針對**unittest**架構，專案的根目錄會用於測試探索。 您可以在 [**測試**] 索引標籤上，針對使用者指定的值，修改這個位置，以及用於識別測試的文字模式。
+* 針對**pytest**架構，測試位置和檔案名模式之類的測試選項是使用標準的 pytest 設定檔來指定。 如需詳細資訊，請參閱[pytest 參考檔](https://docs.pytest.org/en/latest/reference.html#ini-options-ref)。
 
-保存框架選擇和設置後，測試發現將啟動測試資源管理器。 如果測試資源管理器視窗尚未打開，則導航到工具列並選擇**測試** > **資源管理器**。
+儲存架構的選取專案和設定之後，就會在測試瀏覽器中起始測試探索。 如果 [測試瀏覽器] 視窗尚未開啟，請流覽至工具列，然後選取 [**測試**  >  **測試瀏覽器**]。
 
-## <a name="configure-testing-for-python-without-a-project"></a>配置沒有專案的 Python 測試
-Visual Studio 允許您使用 Python 代碼[打開資料夾](../../quickstart-05-python-visual-studio-open-folder.md)，在沒有專案的情況下運行和測試現有的 Python 代碼。 在這些情況下，您需要使用**PythonSettings.json**檔來配置測試。 
-1. 使用 **"打開本地資料夾"** 選項打開現有 Python 代碼。 
+## <a name="configure-testing-for-python-without-a-project"></a>設定不含專案的 Python 測試
+Visual Studio 可讓您使用 Python 程式碼[開啟資料夾](../../quickstart-05-python-visual-studio-open-folder.md)，以執行和測試現有的 python 程式碼，而不需要專案。 在這些情況下，您必須使用檔案**上的PythonSettings.js**來設定測試。 
+1. 使用 [**開啟本機資料夾**] 選項來開啟現有的 Python 程式碼。 
 
    ![Visual Studio 啟動畫面](../../media/quickstart-open-folder/01-open-local-folder.png)
 
-1. 在"解決方案資源管理器"視窗中，按一下"**顯示所有檔**"圖示以顯示當前資料夾中的所有檔。
+1. 在 [方案總管] 視窗中，按一下 [**顯示所有**檔案] 圖示，以顯示目前資料夾中的所有檔案。
 
-   ![顯示所有檔按鈕](../../media/unit-test-show-files.png)
+   ![顯示所有檔案按鈕](../../media/unit-test-show-files.png)
 
-1. 導航到 **"本地設置"** 資料夾中的**PythonSettings.json**檔。 如果在 **"本地設置"** 資料夾中未看到此檔，請手動創建該檔。
+1. 流覽至 [**本機設定**] 資料夾內的檔案**PythonSettings.js** 。 如果您在 [**本機設定**] 資料夾中看不到這個檔案，請手動建立。
    
-1. 將欄位**TestFramework**添加到設置檔中，並將其設置為 **"熱測試**"或 **"單元測試"，** 具體取決於要使用的測試框架。
+1. 將欄位**mstest.testframework**新增至設定檔，並將它設定為**pytest**或**unittest** ，視您想要使用的測試架構而定。
 
     ```json
     {
@@ -49,9 +49,9 @@ Visual Studio 允許您使用 Python 代碼[打開資料夾](../../quickstart-05
     ```
 
     > [!Note]
-    > 對於**單元測試**框架，如果 PythonSettings.json 檔中未指定欄位**單元測試RootDirectory**和**UnitTestPattern，** 則分別添加和分配預設值"." 和"test_.py"。
+    > 針對**unittest**架構，如果在檔案的 PythonSettings.js中未指定**UnitTestRootDirectory**和**UnitTestPattern**欄位，則會分別新增和指派預設值 "." 和 "test *. .py"。
 
-1. 如果資料夾包含與包含測試的資料夾分開的**src**目錄，請使用**PythonSettings.json**檔中的 **"搜索路徑"** 欄位指定**src**資料夾的路徑。
+1. 如果您的資料夾包含**的 src**目錄與包含測試的資料夾不同，請使用您在**PythonSettings.js**檔案中的 [ **SearchPaths** ] 欄位，指定**src**資料夾的路徑。
 
     ```json
     {
@@ -62,23 +62,23 @@ Visual Studio 允許您使用 Python 代碼[打開資料夾](../../quickstart-05
     }
     ```
 
-1. 保存對 PythonSettings.json 檔的更改，以啟動指定框架的測試發現。 
+1. 將您對 PythonSettings.js的變更儲存至檔案，以起始指定架構的測試探索。 
    > [!Note]
-   > 如果測試資源管理器視窗已打開**CTRL** + **R，A**還會觸發發現。
+   > 如果 [測試瀏覽器] 視窗已開啟**CTRL**  +  **R，則**也會觸發探索。
 
 ## <a name="discover-and-view-tests"></a>探索及檢視測試
 
-預設情況下，Visual Studio 將**單元測試**和**pytest**測試標識為名稱以`test`開頭的方法。 要查看測試發現，執行以下操作：
+根據預設，Visual Studio 會將**unittest**和**pytest**測試識別為名稱開頭為的方法 `test` 。 若要查看測試探索，請執行下列動作：
 
-1. 打開[Python 專案](../../managing-python-projects-in-visual-studio.md)。
+1. 開啟[Python 專案](../../managing-python-projects-in-visual-studio.md)。
 
-1. 在 Visual Studio 中載入專案後，在解決方案資源管理器中按右鍵專案，並從"屬性**測試**"選項卡中選擇**單元測試**或**檢測**框架。
+1. 在 Visual Studio 中載入專案之後，請在方案總管中以滑鼠右鍵按一下專案，然後從 [屬性**測試**] 索引標籤中選取**unittest**或**pytest**架構。
    > [!Note]
-   > 如果使用 pytest 框架，則可以使用標準 pytest .ini 設定檔指定測試位置和檔案名模式。 預設情況下，使用工作區/專案資料夾，其模式為`test_*py`和`*_test.py`。 有關詳細資訊，請參閱[pythe 參考文檔](https://docs.pytest.org/en/latest/reference.html#ini-options-ref)。
+   > 如果您使用 pytest 架構，則可以使用標準的 pytest 設定檔來指定測試位置和檔案名模式。 預設會使用工作區/專案資料夾，其模式為 `test_*py` 和 `*_test.py` 。 如需詳細資訊，請參閱[pytest 參考檔](https://docs.pytest.org/en/latest/reference.html#ini-options-ref)。
 
-1. 選擇框架後，再次按右鍵專案，然後選擇 **"添加新** > **項**"，然後選擇**Python 單元測試**，然後**添加**。
+1. 選取架構之後，再次以滑鼠右鍵按一下專案並選取 [**加入**  >  **新專案**]，然後選取 [ **Python 單元測試**] 後面接著 [**新增**]。
 
-1. 此操作創建一個*test_1.py*檔，該檔的代碼導入標準`unittest`模組，從`unittest.TestCase`派生測試類，`unittest.main()`並在直接運行腳本時調用：
+1. 此動作會使用匯入標準模組的程式碼建立*test_1 .py*檔案 `unittest` ，從衍生測試類別 `unittest.TestCase` ，並在 `unittest.main()` 您直接執行腳本時叫用：
 
     ```python
     import unittest
@@ -91,29 +91,29 @@ Visual Studio 允許您使用 Python 代碼[打開資料夾](../../quickstart-05
         unittest.main()
     ```
 
-1. 如有必要，保存該檔，然後使用**測試** > **資源管理器**功能表命令打開**測試資源管理器**。
+1. 視需要儲存檔案，然後使用**Test Explorer** [**測試**  >  **測試 explorer** ] 功能表命令開啟 [測試] explorer。
 
-1. **測試資源管理器**搜索您的專案以搜索測試並如下所示顯示它們。 按兩下測試會開啟其原始程式檔。
+1. [**測試瀏覽器**] 會搜尋專案中的測試，並顯示它們，如下所示。 按兩下測試會開啟其原始程式檔。
 
     ![[測試總管] 顯示預設的 test_A](../../media/unit-test-a-2.png) 
 
-1. 向專案添加更多測試時，可以使用工具列上的 **"分組"** 功能表在**測試資源管理器**中組織視圖：
+1. 當您將更多測試加入至專案時，您可以使用工具列上的 [**群組依據**] 功能表，在 [**測試瀏覽器**] 中組織此視圖：
 
     ![[測試總管] 的 [群組依據] 工具列功能表](../../media/unit-test-group-menu-2.png) 
 
-1. 您還可以在 **"搜索"** 欄位中輸入文本以按名稱篩選測試。
+1. 您也可以在 [**搜尋**] 欄位中輸入文字，以依名稱篩選測試。
 
-有關`unittest`模組和編寫測試的詳細資訊，請參閱[Python 2.7 文檔](https://docs.python.org/2/library/unittest.html)或 Python [3.7 文檔](https://docs.python.org/3/library/unittest.html)（python.org）。
+如需 `unittest` 模組和撰寫測試的詳細資訊，請參閱[python 2.7 檔](https://docs.python.org/2/library/unittest.html)或[python 3.7 檔](https://docs.python.org/3/library/unittest.html)（python.org）。
 
 ## <a name="run-tests"></a>執行測試
 
-在**測試資源管理器**中，您可以通過多種方式運行測試：
+在**測試瀏覽器**中，您可以透過各種方式來執行測試：
 
 - [全部執行]**** 會執行所有顯示的測試 (視篩選條件而定)。
-- "**運行"** 功能表提供命令，用於以組身份運行失敗、通過或不運行測試。
+- [**執行**] 功能表提供命令，讓您以群組的方式執行失敗、通過或未執行的測試。
 - 您可以選取一或多個測試，以滑鼠右鍵按一下，然後選取 [執行選取的測試]****。
 
-測試在後臺運行，**測試資源管理器**在完成每個測試時更新其狀態：
+測試會在背景執行，而且**測試瀏覽器**會在每個測試完成時更新其狀態：
 
 - 通過的測試會顯示綠色的打勾圖示，以及執行測試所花費的時間：
 
@@ -130,10 +130,10 @@ Visual Studio 允許您使用 Python 代碼[打開資料夾](../../quickstart-05
 因為單元測試是程式碼片段，所以它們和其他程式碼一樣會有錯誤，並在某些情況下需要以偵錯工具執行。 在偵錯工具中，您可以設定中斷點、檢視變數，以及逐步檢視程式碼。 Visual Studio 也提供診斷工具以進行單元測試。
 
 > [!Note]
-> 預設情況下，測試調試使用 ptvsd 4 調試器。 如果要改用 ptvsd 3，則可以在**工具** > **選項** > **Python** > 調試上選擇 **"使用舊調試器****"** 選項。 
+> 根據預設，測試偵錯工具會使用適用于 Visual Studio 2017 （15.8 版和更新版本）和 debugpy （適用于 Visual Studio 2019 （版本16.5 和更新版本）的 ptvsd 4 偵錯工具。 如果您想要改用 ptvsd 3，可以選取 [**工具**] [選項] [Python] [**使用舊版偵錯工具**] 選項  >  **Options**  >  **Python**  >  ** **。 
 
-要開始調試，請在代碼中設置初始中斷點，然後在**測試資源管理器**中按右鍵測試（或選擇），然後選擇 **"調試選定測試**"。 Visual Studio 會以與針對應用程式碼一樣的方式，啟動 Python 偵錯工具。
+若要開始進行偵錯工具，請在程式碼中設定初始中斷點，然後以滑鼠右鍵按一下 [**測試瀏覽器**] 中的測試（或選取），然後選取 [偵測**選取的測試**]。 Visual Studio 會以與針對應用程式碼一樣的方式，啟動 Python 偵錯工具。
 
 ![對測試進行偵錯](../../media/unit-test-debugging.png)
 
-您還可以使用 **"分析所選測試的代碼覆蓋率**"。 如需詳細資訊，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
+您也可以**針對選取的測試使用 [分析程式碼涵蓋範圍**]。 如需詳細資訊，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。

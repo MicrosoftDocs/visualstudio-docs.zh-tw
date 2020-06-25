@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e26a889c65b80d5a83cc6b2b3a726aa9ad2319
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 8b1a9d109b833d17783beb39c5f34cf6b9ed3274
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184454"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292889"
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 
@@ -40,7 +40,7 @@ ms.locfileid: "84184454"
 
 - **原始程式碼的行**-指出原始程式檔中出現的確切源程式碼數，包括空白行。 從 Visual Studio 2019 16.4 版和 CodeAnalysis （2.9.5）開始提供此計量。
 
-- **可執行程式碼的行**數-指出可執行程式程式碼或作業的近似數目。 這是可執行程式碼中的作業數目計數。 從 Visual Studio 2019 16.4 版和 CodeAnalysis. 計量（2.9.5）開始提供此標準。 此值通常會接近先前的計量（程式**程式碼**），這是舊版模式中使用的 MSIL 指令式計量。
+- **可執行程式碼的行**數-指出可執行程式程式碼或作業的近似數目。 這是可執行程式碼中的作業數目計數。 從 Visual Studio 2019 16.4 版和 CodeAnalysis （2.9.5）開始提供此計量。 此值通常會接近先前的計量（程式**程式碼**），這是舊版模式中使用的 MSIL 指令式計量。
 ::: moniker-end
 ::: moniker range="vs-2017"
 

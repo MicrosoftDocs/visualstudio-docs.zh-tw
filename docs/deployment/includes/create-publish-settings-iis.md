@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: b8002d9e911c8d8c07a5aaf5286168e49a374a7c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143526"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292133"
 ---
 
 1. 關閉並重新開啟 IIS 管理主控台，以在 UI 中顯示更新的組態選項。
@@ -12,6 +12,8 @@ ms.locfileid: "68143526"
 2. 在 IIS 中，以滑鼠右鍵按一下 [預設的網站]****，然後選擇 [部署]**** > [設定 Web Deploy 發行]****。
 
     ![設定 Web Deploy 組態](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
+
+   如果您看不到 [**部署**] 功能表，請參閱上一節，確認 Web Deploy 正在執行。
 
 3. 查看 [設定 Web Deploy 發行]**** 對話方塊中的設定。
 

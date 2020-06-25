@@ -1,7 +1,7 @@
 ---
-title: DA0023：高 GC CPU 時間 | Microsoft Docs
+title: DA0023-高垃圾收集 CPU 時間 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0023
 - vs.performance.23
@@ -13,14 +13,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f0dd45486f526954d7dfce45cd607ff6196eae00
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f83dd64d1f432e2f6628a0b1c5852be9fede305b
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777643"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328417"
 ---
-# <a name="da0023-high-gc-cpu-time"></a>DA0023：高 GC CPU 時間
+# <a name="da0023-high-gc-cpu-time"></a>DA0023：高記憶體回收 CPU 時間
 
 |||
 |-|-|
@@ -48,4 +48,4 @@ ms.locfileid: "74777643"
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
  按兩下 [錯誤清單] 視窗中的訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。 尋找 **.NET CLR Memory\\% Time in GC** 欄。 判斷是否有特定的程式執行階段，當中的 Managed 記憶體回收負荷比其他階段還繁重。 比較 % Time in GC 的值與在 **# of Gen 0 Collections**、**# of Gen 1 Collections**、**# of Gen 2 Collections** 值中報告的記憶體回收速率。
 
- % Time in GC 值會嘗試報告應用程式花費在執行記憶體回收的時間量與處理總量成比例的時間。 請注意，有時候 % Time in GC 值可能會報告很高的值，但不是因為有過多記憶體回收。 有關計算 GC 值中 % 時間的詳細資訊，請參閱[不同工具報告的 Perf 資料之間的差異 -](https://devblogs.microsoft.com/maoni/archive/difference-between-perf-data-reported-by-different-tools-4.aspx) **MAoni 在**MSDN 上的 Weblog 的 4 個條目。 如果發生分頁錯誤或應用程式在記憶體回收期間由電腦上其他較高優先順序的工作優先佔用，% Time in GC 計數器會反映這些額外的延遲。
+ % Time in GC 值會嘗試報告應用程式花費在執行記憶體回收的時間量與處理總量成比例的時間。 請注意，有時候 % Time in GC 值可能會報告很高的值，但不是因為有過多記憶體回收。 如需有關 [% Time in GC] 值的計算方式的詳細資訊，請參閱 MSDN 上的**Maoni 的**[各種不同工具專案報告的效能資料差異](https://devblogs.microsoft.com/maoni/archive/difference-between-perf-data-reported-by-different-tools-4.aspx)。 如果發生分頁錯誤或應用程式在記憶體回收期間由電腦上其他較高優先順序的工作優先佔用，% Time in GC 計數器會反映這些額外的延遲。

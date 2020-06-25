@@ -1,7 +1,7 @@
 ---
-title: 如何：設定目前的工作階段 | Microsoft Docs
+title: 如何設定目前的會話 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - current performance sessions
 - Performance Explorer, selecting sessions
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 70f33888be5097d2682133cda363099bb815c5b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eb60a431ae1fd1f6d44b8aa1477d74705eb532d7
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778748"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328358"
 ---
 # <a name="how-to-set-the-current-session"></a>如何：設定目前的工作階段
 
@@ -37,7 +37,7 @@ ms.locfileid: "74778748"
 
 ## <a name="see-also"></a>另請參閱
 
-[配置性能會話](../profiling/configuring-performance-sessions.md)
-[性能資源管理器視窗](../profiling/performance-explorer-window.md)
-[性能會話屬性](../profiling/performance-session-properties.md)
-[性能會話概述](../profiling/performance-session-overview.md)
+[設定效能會話](../profiling/configuring-performance-sessions.md) 
+[效能總管視窗](../profiling/performance-explorer-window.md) 
+[效能會話屬性](../profiling/performance-session-properties.md) 
+[效能會話總覽](../profiling/performance-session-overview.md)

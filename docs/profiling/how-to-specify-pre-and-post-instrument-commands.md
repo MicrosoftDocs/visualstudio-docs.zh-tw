@@ -1,7 +1,7 @@
 ---
-title: 如何：指定檢測前置和檢測後續命令 | Microsoft Docs
+title: 如何指定檢測前置和檢測後續命令 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.instrument
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ad5558ed01e5bb1b8d12b7a4cc65b4d677d0cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ba91e04342b9b78e3c6acae5296857a6f00f2aba
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778709"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328999"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>如何：指定檢測前置和檢測後續命令
 
@@ -45,9 +45,9 @@ ms.locfileid: "74778709"
 3. 在 [檢測前置事件]**** 底下的 [命令列]**** 文字方塊中輸入命令。
 
     > [!NOTE]
-    > 您可以按一下與 **"命令列"** 框連續的省略號按鈕 **（...）** 進行流覽並選擇相應的 .exe、.cmd 或 .bat 檔。
+    > 您可以按一下 [**命令列**] 方塊旁的省略號按鈕 **（...）** ，以流覽並選取適當的 .exe、.cmd 或 .bat 檔案。
 
-4. 按一下 [確定]****。
+4. 按一下 [確定]。
 
      若要停止執行命令但不將它移除，請選取 [從檢測中排除]**** 核取方塊。 若要修改編譯器或連結器設定，請使用專案屬性頁。
 
@@ -64,12 +64,12 @@ ms.locfileid: "74778709"
 3. 在 [檢測後續事件]**** 底下的 [命令列]**** 文字方塊中輸入命令。
 
     > [!NOTE]
-    > 您可以按一下與 **"命令列"** 框連續的省略號按鈕 **（...）** 進行流覽並選擇相應的 .exe、.cmd 或 .bat 檔。
+    > 您可以按一下 [**命令列**] 方塊旁的省略號按鈕 **（...）** ，以流覽並選取適當的 .exe、.cmd 或 .bat 檔案。
 
-4. 按一下 [確定]****。
+4. 按一下 [確定]。
 
      若要停止執行命令但不將它移除，請選取 [從檢測中排除]**** 核取方塊。 若要修改編譯器或連結器設定，請使用專案屬性頁。
 
 ## <a name="see-also"></a>另請參閱
 
-[配置性能會話](../profiling/configuring-performance-sessions.md)
+[設定效能工作階段](../profiling/configuring-performance-sessions.md)
