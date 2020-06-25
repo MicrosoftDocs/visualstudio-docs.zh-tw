@@ -1,7 +1,7 @@
 ---
 title: Windows Communication Foundation 和 WCF Data Services
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -35,12 +35,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: abcfde777223ada130e06ab7766319e1d982258c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c1f24a33a482b1994d0d8667b4fc71cf968e4625
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585934"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281041"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 
@@ -52,11 +52,11 @@ Windows Communication Foundation （WCF）是統一的架構，可建立安全�
 
 ### <a name="what-are-wcf-data-services"></a>WCF Data Services 的內容
 
-WCF Data Services 是開放式資料（OData）通訊協定標準的執行。  WCF Data Services 可讓您將表格式資料公開為一組 REST Api，可讓您使用標準 HTTP 動詞命令（例如 GET、POST、PUT 或 DELETE）來傳回資料。 在伺服器端上，WCF Data Services 由[ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis)取代，以建立新的 OData 服務。 WCF Data Services 用戶端程式庫會繼續成為在 .NET 應用程式中使用 OData 服務的好選擇（從 Visual Studio （**Project** > **加入服務參考**）。 如需詳細資訊，請參閱 [WCF Data Services 4.5](/dotnet/framework/data/wcf)。
+WCF Data Services 是開放式資料（OData）通訊協定標準的執行。  WCF Data Services 可讓您將表格式資料公開為一組 REST Api，可讓您使用標準 HTTP 動詞命令（例如 GET、POST、PUT 或 DELETE）來傳回資料。 在伺服器端上，WCF Data Services 由[ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis)取代，以建立新的 OData 服務。 WCF Data Services 用戶端程式庫會持續成為在 .net 應用程式中使用 OData 服務的最佳選擇，Visual Studio （**Project**  >  **加入服務參考**）。 如需詳細資訊，請參閱 [WCF Data Services 4.5](/dotnet/framework/data/wcf)。
 
 ### <a name="wcf-programming-model"></a>WCF 程式設計模型
 
-WCF 程式設計模型是以兩個實體之間的通訊為基礎： WCF 服務和 WCF 用戶端。 程式設計模型會封裝在 .NET 的 <xref:System.ServiceModel> 命名空間中。
+WCF 程式設計模型是以兩個實體之間的通訊為基礎： WCF 服務和 WCF 用戶端。 程式設計模型會封裝在 <xref:System.ServiceModel> .net 的命名空間中。
 
 ### <a name="wcf-service"></a>WCF 服務
 
@@ -65,12 +65,12 @@ WCF 服務是以定義服務與用戶端之間合約的介面為基礎。 它會
 [!code-csharp[WCFWalkthrough#6](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.cs)]
 [!code-vb[WCFWalkthrough#6](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.vb)]
 
-藉由使用 <xref:System.ServiceModel.OperationContractAttribute> 屬性來標記 WCF 服務所公開的函式或方法，即可加以定義。
+您可以定義由 WCF 服務所公開的函式或方法，其方式是使用屬性來標記它們 <xref:System.ServiceModel.OperationContractAttribute> 。
 
 [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.cs)]
 [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.vb)]
 
-此外，您可以使用 <xref:System.Runtime.Serialization.DataContractAttribute> 屬性來標記複合類型，藉以公開序列化的資料。 這會啟用用戶端中的資料系結。
+此外，您可以使用屬性來標記複合類型，藉以公開序列化的資料 <xref:System.Runtime.Serialization.DataContractAttribute> 。 這會啟用用戶端中的資料系結。
 
 定義介面及其方法之後，會將其封裝在執行介面的類別中。 單一 WCF 服務類別可以執行多個服務合約。
 
@@ -82,9 +82,9 @@ WCF 服務會透過所謂的*端點*來公開取用。 端點提供與服務通�
 
 ### <a name="wcf-client"></a>WCF Client - WCF 用戶端
 
-WCF 用戶端是由可讓應用程式與 WCF 服務通訊的*proxy* ，以及符合為服務定義之端點的端點所組成。 Proxy 會在*app.config*檔案的用戶端上產生，並包含服務所公開之類型和方法的相關資訊。 對於公開多個端點的服務，用戶端可以選取最符合其需求的服務，例如，透過 HTTP 進行通訊並使用 Windows 驗證。
+WCF 用戶端是由可讓應用程式與 WCF 服務通訊的*proxy* ，以及符合為服務定義之端點的端點所組成。 Proxy 會在*app.config*檔案的用戶端上產生，並且包含服務所公開之類型和方法的相關資訊。 對於公開多個端點的服務，用戶端可以選取最符合其需求的服務，例如，透過 HTTP 進行通訊並使用 Windows 驗證。
 
-建立 WCF 用戶端之後，您可以參考程式碼中的服務，就像任何其他物件一樣。 例如，若要呼叫稍早所示的 `GetData` 方法，您可以撰寫類似下面的程式碼：
+建立 WCF 用戶端之後，您可以參考程式碼中的服務，就像任何其他物件一樣。 例如，若要呼叫稍 `GetData` 早所示的方法，您可以撰寫類似下面的程式碼：
 
 [!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.cs)]
 [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]
@@ -111,7 +111,7 @@ WCF Visual Studio 範本提供服務開發的基本類別結構。 [**加入新�
 
 藉由使用 WCF 服務主機，您可以測試 WCF 服務，而不需要在開發期間撰寫額外的程式碼或認可特定主機。
 
-若要深入瞭解 WCF 服務主機，請參閱[wcf 服務主機（WcfSvcHost .exe）](/dotnet/framework/wcf/wcf-service-host-wcfsvchost-exe)。
+若要深入瞭解 WCF 服務主機，請參閱[wcf 服務主機（WcfSvcHost.exe）](/dotnet/framework/wcf/wcf-service-host-wcfsvchost-exe)。
 
 #### <a name="wcf-test-client"></a>WCF 測試用戶端
 
@@ -119,11 +119,11 @@ WCF Visual Studio 範本提供服務開發的基本類別結構。 [**加入新�
 
 當您按**F5**來進行 wcf 服務專案的偵錯工具時，Wcf 測試用戶端會開啟並顯示在設定檔案中定義的服務端點清單。 您可以測試參數並啟動服務，並重複此程式來持續測試及驗證您的服務。
 
-若要深入瞭解 WCF 測試用戶端，請參閱[wcf 測試用戶端（WcfTestClient .exe）](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe)。
+若要深入瞭解 WCF 測試用戶端，請參閱[wcf 測試用戶端（WcfTestClient.exe）](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe)。
 
 ### <a name="accessing-wcf-services-in-visual-studio"></a>存取 Visual Studio 中的 WCF 服務
 
-Visual Studio 簡化了建立 WCF 用戶端的工作，並自動為您使用 [**加入服務參考**] 對話方塊新增的服務產生 proxy 和端點。 所有必要的設定資訊都會新增至*app.config 檔案*。 在大部分的情況下，您只需要具現化服務，才能使用它。
+Visual Studio 簡化了建立 WCF 用戶端的工作，並自動為您使用 [**加入服務參考**] 對話方塊新增的服務產生 proxy 和端點。 所有必要的設定資訊都會新增至*app.config*檔案。 在大部分的情況下，您只需要具現化服務，才能使用它。
 
 [**加入服務參考**] 對話方塊可讓您輸入服務的位址，或搜尋在解決方案中定義的服務。 對話方塊會傳回服務的清單，以及這些服務所提供的作業。 它也可讓您定義要在程式碼中用來參考服務的命名空間。
 
@@ -133,7 +133,7 @@ Visual Studio 簡化了建立 WCF 用戶端的工作，並自動為您使用 [**
 
 某些 Windows Communication Foundation （WCF）服務會公開多個端點，用戶端可以透過此服務進行通訊。 例如，服務可能會公開一個使用 HTTP 系結的端點，以及使用者名稱和密碼安全性，以及使用 FTP 和 Windows 驗證的第二個端點。 從防火牆外部存取服務的應用程式可能會使用第一個端點，而第二個則可能用於內部網路。
 
-在這種情況下，您可以將 `endpointConfigurationName` 指定為服務參考之函式的參數。
+在這種情況下，您可以將指定為服務參考之函式的 `endpointConfigurationName` 參數。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -154,7 +154,7 @@ Visual Studio 簡化了建立 WCF 用戶端的工作，並自動為您使用 [**
     > [!NOTE]
     > 將*ServiceReference*取代為服務參考的命名空間，並將*Service1Client*取代為服務的名稱。
 
-3. IntelliSense 清單會顯示，其中包含此函數的多載。 選取 `endpointConfigurationName As String` 多載。
+3. IntelliSense 清單會顯示，其中包含此函數的多載。 選取多載 `endpointConfigurationName As String` 。
 
 4. 在多載之後，輸入 `=` *ConfigurationName*，其中*ConfigurationName*是您要使用之端點的名稱。
 
@@ -165,13 +165,13 @@ Visual Studio 簡化了建立 WCF 用戶端的工作，並自動為您使用 [**
 
 1. 在**方案總管**中，以滑鼠右鍵按一下包含服務參考之專案的**app.config**檔案，然後按一下 [**開啟**]。 檔案會出現在程式碼編輯器中。
 
-2. 搜尋檔案中的 `<Client>` 標記。
+2. `<Client>`在檔案中搜尋標記。
 
-3. 在 `<Client>` 標籤下方搜尋 `<Endpoint>`開頭的標記。
+3. 在標記下方搜尋， `<Client>` 以尋找以開頭的標記 `<Endpoint>` 。
 
-     如果服務參考提供多個端點，則會有兩個以上的 `<Endpoint` 標記。
+     如果服務參考提供多個端點，則會有兩個或多個 `<Endpoint` 標記。
 
-4. 在 `<EndPoint>` 標籤中，您會發現 `name="`*SomeService*`"` 參數（其中*SomeService*代表端點名稱）。 這是可傳遞給服務參考之函式的 `endpointConfigurationName As String` 多載的端點名稱。
+4. 在 `<EndPoint>` 標記內，您會找到 `name="` *SomeService* `"` 參數（其中*SomeService*代表端點名稱）。 這是可傳遞給服務參考之函式多載的端點名稱 `endpointConfigurationName As String` 。
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>如何：以非同步方式呼叫服務方法
 
@@ -186,7 +186,7 @@ Windows Communication Foundation （WCF）服務中的大部分方法可能會�
 
 ### <a name="to-call-a-service-method-asynchronously"></a>若要以非同步方式呼叫服務方法
 
-1. 在 **方案總管**中，選取 服務參考。
+1. 在 [**方案總管**中，選取 [服務參考]。
 
 2. 在 [**專案**] 功能表上，按一下 [**設定服務參考**]。
 
@@ -200,7 +200,7 @@ Windows Communication Foundation （WCF）服務中的大部分方法可能會�
 
 1. 按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
 
-   隨即出現 [資料來源] 視窗。
+   隨即出現 [資料來源]**** 視窗。
 
 2. 在 [**資料來源**] 視窗中，展開服務參考的節點。 服務所傳回的任何複合類型。
 
@@ -210,13 +210,13 @@ Windows Communication Foundation （WCF）服務中的大部分方法可能會�
 
 5. 按一下您要系結的控制項類型。
 
-6. 將欄位拖曳至表單上。 控制項會新增至表單，連同 <xref:System.Windows.Forms.BindingSource> 元件和 <xref:System.Windows.Forms.BindingNavigator> 元件。
+6. 將欄位拖曳至表單上。 控制項會連同元件和元件一起加入表單中 <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> 。
 
 7. 針對您想要系結的任何其他欄位，重複步驟4到6。
 
 ### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>若要將控制項系結至 WCF 服務所傳回的複合類型
 
-1. 在 [**資料**] 功能表上，選取 [**顯示資料來源**]。 隨即出現 [資料來源] 視窗。
+1. 在 [**資料**] 功能表上，選取 [**顯示資料來源**]。 隨即出現 [資料來源]**** 視窗。
 
 2. 在 [**資料來源**] 視窗中，展開服務參考的節點。 服務所傳回的任何複合類型。
 
@@ -224,7 +224,7 @@ Windows Communication Foundation （WCF）服務中的大部分方法可能會�
 
 4. 按一下 [ **DataGridView** ]，將資料顯示在方格或**詳細**資料中，以在個別控制項中顯示資料。
 
-5. 將節點拖曳至表單上。 控制項會連同 <xref:System.Windows.Forms.BindingSource> 元件和 <xref:System.Windows.Forms.BindingNavigator> 元件加入至表單。
+5. 將節點拖曳至表單上。 控制項會連同元件和元件加入至表單 <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> 。
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>如何：設定服務以重複使用現有的類型
 
@@ -234,7 +234,7 @@ Windows Communication Foundation （WCF）服務中的大部分方法可能會�
 
 ### <a name="to-disable-type-sharing-in-a-single-assembly"></a>停用單一元件中的類型共用
 
-1. 在 **方案總管**中，選取 服務參考。
+1. 在 [**方案總管**中，選取 [服務參考]。
 
 2. 在 [**專案**] 功能表上，按一下 [**設定服務參考**]。
 
@@ -244,7 +244,7 @@ Windows Communication Foundation （WCF）服務中的大部分方法可能會�
 
 ### <a name="to-disable-type-sharing-in-all-assemblies"></a>停用所有元件中的類型共用
 
-1. 在 **方案總管**中，選取 服務參考。
+1. 在 [**方案總管**中，選取 [服務參考]。
 
 2. 在 [**專案**] 功能表上，按一下 [**設定服務參考**]。
 
@@ -252,22 +252,22 @@ Windows Communication Foundation （WCF）服務中的大部分方法可能會�
 
 ## <a name="related-topics"></a>相關主題
 
-| 標題 | 描述 |
+| Title | 描述 |
 | - | - |
 | [逐步解說：在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | 逐步示範如何在 Visual Studio 中建立和使用 WCF 服務。 |
 | [逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | 提供逐步示範如何在 Visual Studio 中建立和使用 WCF Data Services。 |
 | [使用 WCF 開發工具](/dotnet/framework/wcf/using-the-wcf-development-tools) | 討論如何在 Visual Studio 中建立和測試 WCF 服務。 |
-| | [如何：新增、更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
+| | [如何：加入、更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
 | [針對服務參考進行疑難排解](../data-tools/troubleshooting-service-references.md) | 提供服務參考時可能發生的一些常見錯誤，以及如何預防它們。 |
-| [ WCF 服務](../debugger/debugging-wcf-services.md) | 說明您在對 WCF 服務進行調試時可能會遇到的常見調試問題和技巧。 |
+| [調試 WCF 服務](../debugger/debugging-wcf-services.md) | 說明您在對 WCF 服務進行調試時可能會遇到的常見調試問題和技巧。 |
 | [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | 提供用於建立具類型資料集以及將 TableAdapter 和資料集程式碼分成多個專案的逐步指示。 |
 | [設定服務參考對話方塊](../data-tools/configure-service-reference-dialog-box.md) | 描述 [**設定服務參考**] 對話方塊的使用者介面元素。 |
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

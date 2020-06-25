@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c16b603f1c38eeb3e71718937e7c669ae8ebc9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184545"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280872"
 ---
 # <a name="create-custom-data-visualizers"></a>建立自訂資料視覺化檢視
+
  *視覺化檢視*是 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 偵錯工具使用者介面的一部分，會以適合其資料類型的方式來顯示變數或物件。 例如，HTML 視覺化檢視會解讀 HTML 字串，並顯示出現在瀏覽器視窗中的結果。 點陣圖視覺化檢視會解讀點陣圖結構，並顯示它所代表的圖形。 有些視覺化檢視可讓您修改及查看資料。
 
  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 偵錯工具包含六個標準視覺化檢視。 文字、HTML、XML 和 JSON 視覺化檢視會在字串物件上處理。 WPF 樹狀結構視覺化顯示 WPF 物件視覺化樹狀結構的屬性。 資料集視覺化適用于 DataSet、DataView 和 DataTable 物件。
@@ -74,11 +75,23 @@ ms.locfileid: "84184545"
 
 ### <a name="to-create-the-visualizer-object-source-for-the-debuggee-side"></a>建立偵錯工具端的視覺化物件來源
 
-您可以 <xref:System.Diagnostics.DebuggerVisualizerAttribute> 在偵錯工具端程式碼中使用，以指定要視覺化的類型（偵錯工具端物件來源）。
+在偵錯工具端程式碼中，編輯 <xref:System.Diagnostics.DebuggerVisualizerAttribute> ，提供要視覺化的類型（偵錯工具端物件來源）（ <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ）。 `Target`屬性會設定物件來源。 如果您省略物件來源，則視覺化檢視會使用預設物件來源。
 
-1. 在偵錯工具端程式碼中，編輯 <xref:System.Diagnostics.DebuggerVisualizerAttribute> ，並為它提供物件來源（ <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ）。 `Target`屬性會設定物件來源。 如果您省略物件來源，則視覺化檢視會使用預設物件來源。
+::: moniker range=">=vs-2019"
+偵錯工具端程式碼包含視覺化的物件來源。 資料物件可以覆寫的方法 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> 。 如果您想要建立獨立的視覺化檢視，就必須要有調試的端 DLL。
+::: moniker-end
 
-1. 若要讓視覺化檢視編輯和顯示資料物件，請從覆寫 `TransferData` 或 `CreateReplacementObject` 方法 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> 。
+在偵錯工具端程式碼中：
+
+- 若要讓視覺化檢視編輯資料物件，物件來源必須繼承自 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ，並覆寫 `TransferData` 或 `CreateReplacementObject` 方法。
+
+- 如果您需要在您的視覺化程式中支援多目標，您可以在偵錯工具端專案檔中使用下列目標 Framework 標記（Tfm）。
+
+   ```xml
+   <TargetFrameworks>net20;netstandard2.0;netcoreapp2.0</TargetFrameworks>
+   ```
+
+   這些是唯一支援的 Tfm。
 
 ## <a name="see-also"></a>另請參閱
 

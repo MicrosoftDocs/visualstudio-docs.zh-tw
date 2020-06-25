@@ -1,7 +1,7 @@
 ---
 title: 使用 TableAdapter DBDirect 方法儲存資料
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,30 +16,30 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586207"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281605"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>使用 TableAdapter DBDirect 方法儲存資料
 
-本逐步解說提供詳細的指示，說明如何使用 TableAdapter 的 DBDirect 方法，直接針對資料庫執行 SQL 語句。 TableAdapter 的 DBDirect 方法可讓您妥善控制您的資料庫更新。 您可以使用它們來執行特定的 SQL 語句和預存程式，方法是呼叫應用程式所需的個別 `Insert`、`Update`和 `Delete` 方法（而不是在單一呼叫中執行 UPDATE、INSERT 和 DELETE 子句的多載 `Update` 方法）。
+本逐步解說提供詳細的指示，說明如何使用 TableAdapter 的 DBDirect 方法，直接針對資料庫執行 SQL 語句。 TableAdapter 的 DBDirect 方法可讓您妥善控制您的資料庫更新。 您可以使用它們來執行特定的 SQL 語句和預存程式，方法是呼叫 `Insert` `Update` `Delete` 應用程式所需的個別、和方法（而不是 `Update` 在單一呼叫中執行 UPDATE、INSERT 和 DELETE 子句的多載方法）。
 
 在這個逐步解說期間，您將了解如何：
 
-- 建立新的 **Windows Forms 應用程式**。
+- 建立新的**Windows Forms 應用程式**。
 
 - 使用 [[資料來源設定]](../data-tools/media/data-source-configuration-wizard.png)[建立] 來建立及設定資料集。
 
-- 從 [資料來源] 視窗拖曳項目時，選取要在表單上建立的控制項。 如需詳細資訊，請參閱[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
+- 從 [資料來源]**** 視窗拖曳項目時，選取要在表單上建立的控制項。 如需詳細資訊，請參閱[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
-- 從 [資料來源] 視窗將項目拖曳至表單，以建立資料繫結表單。
+- 從 [資料來源]**** 視窗將項目拖曳至表單，以建立資料繫結表單。
 
 - 新增方法來直接存取資料庫，並執行插入、更新和刪除。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>先決條件
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -61,29 +61,29 @@ ms.locfileid: "75586207"
 
 第一個步驟是建立**Windows Forms 應用程式**。
 
-1. 在 Visual Studio 中，於 [檔案] 功能表上選取 [新增] > [專案]。
+1. 在 Visual Studio 中，於 [檔案]  功能表上選取 [新增]   > [專案]  。
 
-2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
+2. 展開左窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
 3. 在中間窗格中，選取 [ **Windows Forms 應用程式**] 專案類型。
 
-4. 將專案命名為**TableAdapterDbDirectMethodsWalkthrough**，然後選擇 **[確定]** 。
+4. 將專案命名為**TableAdapterDbDirectMethodsWalkthrough**，然後選擇 **[確定]**。
 
-     隨即建立 **TableAdapterDbDirectMethodsWalkthrough** 專案，並將其新增至 [方案總管]。
+     隨即建立 **TableAdapterDbDirectMethodsWalkthrough** 專案，並將其新增至 [方案總管]****。
 
 ## <a name="create-a-data-source-from-your-database"></a>從您的資料庫建立資料來源
 
-此步驟使用 [資料來源組態精靈]，根據 Northwind 範例資料庫中的 `Region` 資料表建立資料來源。 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需設定 Northwind 範例資料庫的詳細資訊，請參閱[如何：安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
+此步驟使用 [資料來源組態精靈]****，根據 Northwind 範例資料庫中的 `Region` 資料表建立資料來源。 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需設定 Northwind 範例資料庫的詳細資訊，請參閱[如何：安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ### <a name="to-create-the-data-source"></a>若要建立資料來源
 
 1. 在 [**資料**] 功能表上，選取 [**顯示資料來源**]。
 
-   [資料來源] 視窗隨即開啟。
+   [資料來源]**** 視窗隨即開啟。
 
-2. 在 [資料來源] 視窗中，選取 [新增新資料來源]，以啟動 [資料來源組態精靈]。
+2. 在 [資料來源]**** 視窗中，選取 [新增新資料來源]****，以啟動 [資料來源組態精靈]****。
 
-3. 在 [**選擇資料來源類型**] 畫面上，選取 [**資料庫**]，然後選取 **[下一步]** 。
+3. 在 [**選擇資料來源類型**] 畫面上，選取 [**資料庫**]，然後選取 **[下一步]**。
 
 4. 在 [**選擇您的資料連線**] 畫面上，執行下列其中一項：
 
@@ -91,33 +91,33 @@ ms.locfileid: "75586207"
 
          -或-
 
-    - 選取 [新增連線] 啟動 [新增/修改連線] 對話方塊。
+    - 選取 [新增連線]**** 啟動 [新增/修改連線]**** 對話方塊。
 
-5. 如果您的資料庫需要密碼，請選取選項以包含機密資料，然後選取 **[下一步]** 。
+5. 如果您的資料庫需要密碼，請選取選項以包含機密資料，然後選取 **[下一步]**。
 
-6. 在 [將**連接字串儲存到應用程式佈建檔**] 畫面上，選取 **[下一步]** 。
+6. 在 [將**連接字串儲存到應用程式佈建檔**] 畫面上，選取 **[下一步]**。
 
 7. 在 [**選擇您的資料庫物件**] 畫面上，展開 [**資料表]** 節點。
 
-8. 選取 [`Region`] 資料表，然後選取 **[完成]** 。
+8. 選取 `Region` 資料表，然後選取 **[完成]**。
 
-     **NorthwindDataSet** 隨即會新增至您的專案，且 `Region` 資料表會出現在 [資料來源] 視窗中。
+     **NorthwindDataSet** 隨即會新增至您的專案，且 `Region` 資料表會出現在 [資料來源]**** 視窗中。
 
 ## <a name="add-controls-to-the-form-to-display-the-data"></a>將控制項新增至表單以顯示資料
 
-從 [資料來源] 視窗將項目拖曳至表單，以建立資料繫結控制項。
+從 [資料來源]**** 視窗將項目拖曳至表單，以建立資料繫結控制項。
 
 若要在 Windows form 上建立資料繫結控制項，請將 [主要**區域**] 節點從 [**資料來源**] 視窗拖曳至表單上。
 
-<xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、`RegionTableAdapter`、<xref:System.Windows.Forms.BindingSource>和 <xref:System.Windows.Forms.BindingNavigator> 會出現在元件匣中。
+<xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、、 `RegionTableAdapter` <xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator> 會出現在元件匣中。
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>加入會呼叫個別 TableAdapter DbDirect 方法的按鈕
 
-1. 從 [工具箱] 將三個 <xref:System.Windows.Forms.Button> 控制項拖曳至 **Form1** (位於 **RegionDataGridView** 下方)。
+1. 從 [工具箱]**** 將三個 <xref:System.Windows.Forms.Button> 控制項拖曳至 **Form1** (位於 **RegionDataGridView** 下方)。
 
-2. 在每個按鈕上，設定下列 [名稱] 及 [文字] 屬性。
+2. 在每個按鈕上，設定下列 [名稱]**** 及 [文字]**** 屬性。
 
-    |Name|文字|
+    |Name|Text|
     |----------|----------|
     |`InsertButton`|**插入**|
     |`UpdateButton`|**更新**|
@@ -134,7 +134,7 @@ ms.locfileid: "75586207"
 
 ### <a name="to-add-code-to-update-records-in-the-database"></a>加入程式碼以更新資料庫中的記錄
 
-1. 按兩下 [UpdateButton] 建立 Click 事件的事件處理常式，並在程式碼編輯器中開啟表單。
+1. 按兩下 [UpdateButton]**** 建立 Click 事件的事件處理常式，並在程式碼編輯器中開啟表單。
 
 2. 以下列程式碼取代 `UpdateButton_Click` 事件處理常式：
 
@@ -166,8 +166,8 @@ ms.locfileid: "75586207"
 
 - 將搜尋功能加入至表單。
 
-- 在 [資料來源] 視窗中選取 [使用精靈設定資料集]，將其他資料表新增至資料集。 您可以藉由將關聯節點拖曳至表單，加入顯示關聯資料的控制項。 如需詳細資訊，請參閱[dataset 中的關聯](relationships-in-datasets.md)性。
+- 在 [資料來源]**** 視窗中選取 [使用精靈設定資料集]****，將其他資料表新增至資料集。 您可以藉由將關聯節點拖曳至表單，加入顯示關聯資料的控制項。 如需詳細資訊，請參閱[dataset 中的關聯](relationships-in-datasets.md)性。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

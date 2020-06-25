@@ -1,7 +1,7 @@
 ---
 title: 設定從資料來源視窗拖曳時要建立的控制項
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Data Sources Window, select controls
 - Windows Forms, displaying data
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5193f3e3a0a1f4a06cc4830036ecf63806a1dbee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f5a3cf2d1f34ca9a3d0c2918a8f3f0a3e05260f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586181"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281535"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>設定從 [資料來源] 視窗拖曳時要建立的控制項
 
@@ -37,7 +37,7 @@ ms.locfileid: "75586181"
 2. 在 [**資料來源**] 視窗中，選取代表您要設定之資料表或物件的專案。
 
    > [!TIP]
-   > 如果 [**資料來源**] 視窗未開啟，您可以選取 [ **View** > **其他 Windows** > **資料來源**] 來開啟它。
+   > 如果 [**資料來源**] 視窗未開啟，您可以選取 [**視圖**] [  >  **其他視窗**] [  >  **資料來源**] 加以開啟。
 
 3. 按一下專案的下拉式功能表，然後按一下功能表中的下列其中一個專案：
 
@@ -69,6 +69,6 @@ ms.locfileid: "75586181"
 
      如果您不想要建立資料行或屬性的控制項，請在下拉式功能表中選取 [**無**]。 如果您想要將父資料表或物件拖曳至設計工具，但不想要包含特定的資料行或屬性，這會很有用。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)

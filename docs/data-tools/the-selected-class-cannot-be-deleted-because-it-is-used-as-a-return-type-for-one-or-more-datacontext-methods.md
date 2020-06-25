@@ -1,32 +1,32 @@
 ---
 title: 無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回類型。
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 249a5338985983509f04e0ff268b2f30e2773f71
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: faea45cc7198be91a45d0bb57a62ce2730011ee2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113555"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281327"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回類型。
 
-有一個或多個 <xref:System.Data.Linq.DataContext> 方法的傳回型別是選取的實體類別 (Class)。 刪除做為 <xref:System.Data.Linq.DataContext> 方法之傳回型別的實體類別，會導致專案編譯失敗。 若要刪除選取的實體類別，請識別使用它的 <xref:System.Data.Linq.DataContext> 方法，並將這些方法的傳回型別設定為不同的實體類別。
+有一個或多個 <xref:System.Data.Linq.DataContext> 方法的傳回型別是選取的實體類別 (Class)。 刪除當做方法之傳回類型使用的實體類別， <xref:System.Data.Linq.DataContext> 會導致專案編譯失敗。 若要刪除選取的實體類別，請識別使用它的 <xref:System.Data.Linq.DataContext> 方法，並將這些方法的傳回型別設定為不同的實體類別。
 
-若要將 <xref:System.Data.Linq.DataContext> 方法的傳回型別還原成它們原來自動產生的類型，請先從 [方法] 窗格中刪除 <xref:System.Data.Linq.DataContext> 方法，然後再次將物件從**伺服器總管**/**資料庫總管** 拖曳至 **O/R 設計工具**。
+若要將 <xref:System.Data.Linq.DataContext> 方法的傳回型別還原成它們原來自動產生的類型，請先從 [方法]**** 窗格中刪除 <xref:System.Data.Linq.DataContext> 方法，然後再次將物件從**伺服器總管**/**資料庫總管** 拖曳至 **O/R 設計工具**。
 
-## <a name="to-correct-this-error"></a>若要改正這項錯誤
+## <a name="to-correct-this-error"></a>更正這個錯誤
 
-1. 選取 [方法] 窗格中的 <xref:System.Data.Linq.DataContext> 方法，然後檢查 [屬性] 視窗中的 [傳回型別] 屬性，以識別將實體類別用作傳回型別的 <xref:System.Data.Linq.DataContext> 方法。
+1. 選取 [方法]**** 窗格中的 <xref:System.Data.Linq.DataContext> 方法，然後檢查 [屬性]**** 視窗中的 [傳回型別]**** 屬性，以識別將實體類別用作傳回型別的 <xref:System.Data.Linq.DataContext> 方法。
 
 2. 將**傳回型別**設定為不同的實體類別，或從方法窗格中刪除 <xref:System.Data.Linq.DataContext> 方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fc87c4690978d33f6fdc8e0f5bc937cb16e6e915
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62957981"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279805"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，然後使用範本繼承
 
@@ -65,7 +65,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 1. 在 [方案總管]**** 中，以滑鼠右鍵按一下 Visual Studio 專案的 **HelloDjangoApp** 資料夾，選取 [新增]**** > [新增資料夾]****，並將資料夾命名為 `static`。
 
-1. 以滑鼠右鍵按一下 **static** 資料夾，並選取 [新增]**** > [新增項目]****。 在顯示的對話方塊中，選擇 **"樣式表"** 範本，命名檔`site.css`，然後選擇 **"確定**"。 **site.css** 檔案會出現在專案中，並在編輯器中開啟。 您的資料夾結構應該與下列影像類似：
+1. 以滑鼠右鍵按一下 **static** 資料夾，並選取 [新增]**** > [新增項目]****。 在出現的對話方塊中，選取 [**樣式**表單] 範本，將檔案命名為 `site.css` ，然後選取 **[確定]**。 **site.css** 檔案會出現在專案中，並在編輯器中開啟。 您的資料夾結構應該與下列影像類似：
 
     ![方案總管中所顯示的靜態檔案結構](media/django/step03-static-file-structure.png)
 
@@ -102,6 +102,22 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>問題：組織靜態檔案有任何慣例嗎？
 
 回答：您可以依偏好將其他的 CSS、JavaScript 和 HTML 檔案新增至您的 *static* 資料夾。 組織靜態檔案的一般方式是建立名為 *fonts*、*scripts* 和 *content* 的子資料夾 (針對樣式表和任何其他檔案)。 在各種情況中，請記得要將那些資料夾包含在 `{% static %}` 參考中的檔案相對路徑。
+
+### <a name="question-can-i-complete-the-same-task-without-using-the--load-staticfiles--tag"></a>問題：我可以完成相同的工作，而不使用 {% load staticfiles%} 標記嗎？
+
+回答：沒錯，您可以。
+
+```html
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" type="text/css" href="../../static/site.css" />
+    </head>
+    <body>
+        <span class="message">{{ message }}</span>{{ content }}
+    </body>
+</html>
+```
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>步驟 3-3：將頁面加入應用程式
 
@@ -160,11 +176,11 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     <div><a href="about">About</a></div>
     ```
 
-1. 使用 **"檔** > **保存所有"** 功能表命令保存所有檔，或僅按**Ctrl**+**Shift**+**S**。 (技術上來說並不需要此步驟，因為在 Visual Studio 中執行專案會自動儲存檔案。 不過，知道有這個命令也很好！)
+1. 使用 **[檔案**] [  >  **全部儲存**] 功能表命令來儲存所有檔案，或直接按**Ctrl** + **Shift** + **S**。 (技術上來說並不需要此步驟，因為在 Visual Studio 中執行專案會自動儲存檔案。 不過，知道有這個命令也很好！)
 
 1. 執行專案以觀察結果並檢查頁面之間的瀏覽。 完成時，關閉伺服器。
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>問題：我嘗試使用 "index" (索引) 於首頁連結，但無法運作。 原因為何？
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>問題：我嘗試使用 "index" (索引) 於首頁連結，但無法運作。 為什麼？
 
 答：雖然在 *views.py* 中的檢視函式的名稱是 `index`，但是 Django 專案中 *urls.py* 檔案的 URL 路由模式並不包含符合 "index" (索引) 字串的規則運算式。 若要符合該字串，您必須為 `^index$` 模式新增另一個項目。
 

@@ -4,18 +4,18 @@ description: 在 Visual Studio 中進行雲端服務或虛擬機器的偵錯
 author: mikejo5000
 manager: jillfra
 ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 2536a56f76a048cab6a3bf9a5ec026d22fe112a7
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: 06344d536f0bb6db5f13329ece2c5202205bcefb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489736"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280709"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>在 Visual Studio 中進行 Azure 雲端服務或虛擬機器的偵錯
 
@@ -25,7 +25,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
 使用 Azure 計算模擬器在本機電腦上偵錯您的雲端服務可以節省時間和金錢。 透過在部署服務之前於本機偵錯服務，您可以改善可靠性和效能，而不需支付運算時間。 不過，某些錯誤可能只有當您在 Azure 中執行雲端服務本身時才會發生。 如果在發佈您的服務時啟用遠端偵錯，接著將偵錯工具附加至角色執行個體，則可以偵錯這些錯誤。
 
-模擬器會模擬 Azure 運算服務，並在您的本機環境中執行，使得您可以在部署雲端服務之前對其測試和偵錯。 模擬器會處理您的角色執行個體的生命週期，並可讓您存取模擬的資源，例如本機儲存體。 當您從 Visual Studio 偵錯或執行您的服務時，它會自動啟動模擬器做為背景應用程式，然後將服務部署至模擬器。 當服務在本機環境中執行時，您可以使用模擬器來檢視服矛。 您可以執行完整版或精簡版的模擬器。 (從 Azure 2.3 開始,模擬器的明示版本為預設值。請參考[使用模擬器 Express 在本地執行與除錯雲服務](vs-azure-tools-emulator-express-debug-run.md)。
+模擬器會模擬 Azure 運算服務，並在您的本機環境中執行，使得您可以在部署雲端服務之前對其測試和偵錯。 模擬器會處理您的角色執行個體的生命週期，並可讓您存取模擬的資源，例如本機儲存體。 當您從 Visual Studio 偵錯或執行您的服務時，它會自動啟動模擬器做為背景應用程式，然後將服務部署至模擬器。 當服務在本機環境中執行時，您可以使用模擬器來檢視服矛。 您可以執行完整版或精簡版的模擬器。 （從 Azure 2.3 開始，此模擬器的 express 版本是預設值）。請參閱[使用模擬器 Express 在本機執行雲端服務並對其進行偵錯工具](vs-azure-tools-emulator-express-debug-run.md)。
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>在您的本機電腦上偵錯您的雲端服務
 
@@ -187,6 +187,6 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
 
 ## <a name="next-steps"></a>後續步驟
 
-* 使用**IntelliTrace**從發佈伺服器收集呼叫和事件的日誌。 請參閱 [使用 IntelliTrace 和 Visual Studio 偵錯發佈的雲端服務](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)。
+* 使用**IntelliTrace**從發行伺服器收集呼叫和事件的記錄檔。 請參閱 [使用 IntelliTrace 和 Visual Studio 偵錯發佈的雲端服務](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)。
 
 * 不論角色是在開發環境中或在 Azure 中執行，請使用 **Azure 診斷** 來記錄在角色內執行的程式碼的詳細資訊。 請參閱 [使用 Azure 診斷收集記錄資料](/azure/cloud-services/cloud-services-dotnet-diagnostics)。

@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：儲存異動中的資料
 ms.date: 09/08/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,18 +17,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c0efdda51a52b18697828e1772eb4a71435753e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586233"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281626"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>逐步解說：儲存異動中的資料
 
-本逐步解說示範如何使用 <xref:System.Transactions> 命名空間，將資料儲存在交易中。 在此逐步解說中，您將建立 Windows Forms 應用程式。 您將使用 [資料來源設定向導]，在 Northwind 範例資料庫中建立兩個數據表的資料集。 您會將資料繫結控制項加入至 Windows form，而您將修改 BindingNavigator 的 [儲存] 按鈕的程式碼，以更新 TransactionScope 內的資料庫。
+本逐步解說示範如何使用命名空間，將資料儲存在交易中 <xref:System.Transactions> 。 在此逐步解說中，您將建立 Windows Forms 應用程式。 您將使用 [資料來源設定向導]，在 Northwind 範例資料庫中建立兩個數據表的資料集。 您會將資料繫結控制項加入至 Windows form，而您將修改 BindingNavigator 的 [儲存] 按鈕的程式碼，以更新 TransactionScope 內的資料庫。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>先決條件
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -50,25 +50,25 @@ ms.locfileid: "75586233"
 
 第一個步驟是建立**Windows Forms 應用程式**。
 
-1. 在 Visual Studio 中，於 [檔案] 功能表上選取 [新增] > [專案]。
+1. 在 Visual Studio 中，於 [檔案]  功能表上選取 [新增]   > [專案]  。
 
-2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
+2. 展開左窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
 3. 在中間窗格中，選取 [ **Windows Forms 應用程式**] 專案類型。
 
-4. 將專案命名為**SavingDataInATransactionWalkthrough**，然後選擇 **[確定]** 。
+4. 將專案命名為**SavingDataInATransactionWalkthrough**，然後選擇 **[確定]**。
 
-     隨即建立 **SavingDataInATransactionWalkthrough** 專案，並將其新增至 [方案總管]。
+     隨即建立 **SavingDataInATransactionWalkthrough** 專案，並將其新增至 [方案總管]****。
 
 ## <a name="create-a-database-data-source"></a>建立資料庫資料來源
 
-此步驟使用 [**資料來源設定] Wizard** ，根據 Northwind 範例資料庫中的 `Customers` 和 `Orders` 資料表來建立資料來源。
+此步驟使用 [**資料來源設定] Wizard** ，根據 `Customers` `Orders` Northwind 範例資料庫中的和資料表建立資料來源。
 
 1. 若要開啟 [**資料來源**] 視窗，請在 [**資料**] 功能表上，選取 [**顯示資料來源**]。
 
-2. 在 [資料來源] 視窗中，選取 [新增新資料來源]，以啟動 [資料來源組態精靈]。
+2. 在 [資料來源]**** 視窗中，選取 [新增新資料來源]****，以啟動 [資料來源組態精靈]****。
 
-3. 在 [**選擇資料來源類型**] 畫面上，選取 [**資料庫**]，然後選取 **[下一步]** 。
+3. 在 [**選擇資料來源類型**] 畫面上，選取 [**資料庫**]，然後選取 **[下一步]**。
 
 4. 在 [**選擇您的資料連線**] 畫面上，執行下列其中一項：
 
@@ -76,31 +76,31 @@ ms.locfileid: "75586233"
 
          -或-
 
-    - 選取 [新增連線] 以啟動 [新增/修改連線] 對話方塊，並建立 Northwind 資料庫的連線。
+    - 選取 [新增連線]**** 以啟動 [新增/修改連線]**** 對話方塊，並建立 Northwind 資料庫的連線。
 
-5. 如果您的資料庫需要密碼，請選取選項以包含機密資料，然後選取 **[下一步]** 。
+5. 如果您的資料庫需要密碼，請選取選項以包含機密資料，然後選取 **[下一步]**。
 
-6. 在 [將**連接字串儲存到應用程式佈建檔**] 畫面上，選取 **[下一步]** 。
+6. 在 [將**連接字串儲存到應用程式佈建檔**] 畫面上，選取 **[下一步]**。
 
 7. 在 [**選擇您的資料庫物件**] 畫面上，展開 [**資料表]** 節點。
 
-8. 選取 `Customers` 並 `Orders` 資料表，然後選取 **[完成]** 。
+8. 選取 `Customers` 和 `Orders` 資料表，然後選取 **[完成]**。
 
-     **NorthwindDataSet** 會新增至您的專案中，且 `Customers` 和 `Orders` 資料表會出現在 [資料來源] 視窗中。
+     **NorthwindDataSet** 會新增至您的專案中，且 `Customers` 和 `Orders` 資料表會出現在 [資料來源]**** 視窗中。
 
 ## <a name="add-controls-to-the-form"></a>將控制項新增至表單
 
-您可以從 [資料來源] 視窗將項目拖曳至表單，以建立資料繫結控制項。
+您可以從 [**資料來源**] 視窗將專案拖曳至表單，以建立資料繫結控制項。
 
 1. 在 [**資料來源**] 視窗中，展開 [ **Customers** ] 節點。
 
-2. 從 [資料來源] 視窗，將 [客戶] 主節點拖曳至 **Form1**。
+2. 從 [資料來源]**** 視窗，將 [客戶]**** 主節點拖曳至 **Form1**。
 
-   <xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、`CustomersTableAdapter`、<xref:System.Windows.Forms.BindingSource>和 <xref:System.Windows.Forms.BindingNavigator> 會出現在元件匣中。
+   <xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、、 `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator> 會出現在元件匣中。
 
 3. 將 [相關**orders** ] 節點（而非 [主要**orders** ] 節點，但 [ **Fax** ] 資料行下方的相關子資料工作表節點）拖曳至**CustomersDataGridView**下方的表單。
 
-   <xref:System.Windows.Forms.DataGridView> 隨即出現在表單上。 `OrdersTableAdapter` 和 <xref:System.Windows.Forms.BindingSource> 會出現在元件匣中。
+   <xref:System.Windows.Forms.DataGridView> 隨即出現在表單上。 `OrdersTableAdapter`和 <xref:System.Windows.Forms.BindingSource> 會出現在元件匣中。
 
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>將參考加入至 System.object 元件
 
@@ -108,15 +108,15 @@ ms.locfileid: "75586233"
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>加入 System.Transactions DLL 檔案的參考
 
-1. 在 [專案] 功能表上，選取 [新增參考]。
+1. 在 [專案]**** 功能表上，選取 [新增參考]****。
 
-2. 選取 [系統] [**交易**] （在 [ **.net** ] 索引標籤上），然後選取 **[確定]** 。
+2. 選取 [系統] [**交易**] （在 [ **.net** ] 索引標籤上），然後選取 **[確定]**。
 
      隨即會將 **System.Transactions** 的參考新增至專案。
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>修改 BindingNavigator 的 [SaveItem] 按鈕中的程式碼
 
-針對第一個放置在表單上的資料表，預設會將程式碼新增至 <xref:System.Windows.Forms.BindingNavigator>上 [儲存] 按鈕的 `click` 事件。 您必須手動加入程式碼以更新所有其他資料表。 在此逐步解說中，我們會將現有的儲存程式碼從 [儲存] 按鈕的 click 事件處理常式重構。 我們也會建立一些方法，以根據是否需要加入或刪除資料列來提供特定的更新功能。
+針對第一個放置在表單上的資料表，預設會將程式碼新增至中 `click` [儲存] 按鈕的事件 <xref:System.Windows.Forms.BindingNavigator> 。 您必須手動加入程式碼以更新所有其他資料表。 在此逐步解說中，我們會將現有的儲存程式碼從 [儲存] 按鈕的 click 事件處理常式重構。 我們也會建立一些方法，以根據是否需要加入或刪除資料列來提供特定的更新功能。
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>修改自動產生的儲存程式碼
 
@@ -129,13 +129,13 @@ ms.locfileid: "75586233"
 
 對關聯資料變更的協調順序如下：
 
-- 刪除子記錄。 （在此情況下，請刪除 `Orders` 資料表中的記錄）。
+- 刪除子記錄。 （在此情況下，請刪除資料表中的記錄 `Orders` ）。
 
-- 刪除父記錄。 （在此情況下，請刪除 `Customers` 資料表中的記錄）。
+- 刪除父記錄。 （在此情況下，請刪除資料表中的記錄 `Customers` ）。
 
-- 插入父記錄。 （在此情況下，請將記錄插入 `Customers` 資料表中）。
+- 插入父記錄。 （在此情況下，請將記錄插入 `Customers` 資料表中。）
 
-- 插入子記錄。 （在此情況下，請將記錄插入 `Orders` 資料表中）。
+- 插入子記錄。 （在此情況下，請將記錄插入 `Orders` 資料表中。）
 
 ### <a name="to-delete-existing-orders"></a>刪除現有訂單
 
@@ -167,9 +167,9 @@ ms.locfileid: "75586233"
 
 ## <a name="run-the-application"></a>執行應用程式
 
-按 **F5** 執行應用程式。
+按**F5**執行應用程式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：使用交易儲存資料](../data-tools/save-data-by-using-a-transaction.md)
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

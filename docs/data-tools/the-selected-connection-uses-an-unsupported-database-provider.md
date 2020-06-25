@@ -1,19 +1,19 @@
 ---
 title: 選取的連接使用不支援的資料提供者
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 4d25dfa1-8fa4-4529-9b90-973bc2ec2993
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5e11feefc6e513dcaffa92389946ffef51f10d4a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 52b88e1de91c2b2da629b6b9034ac552b8d88d5d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586142"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281314"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>選取的連接使用不支援的資料提供者
 
@@ -23,7 +23,7 @@ ms.locfileid: "75586142"
 
 若要更正這個錯誤，請只將使用 .NET Framework Data Provider SQL Server 的資料連線中的專案加入至**O/R 設計**工具。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:System.Data.SqlClient>
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

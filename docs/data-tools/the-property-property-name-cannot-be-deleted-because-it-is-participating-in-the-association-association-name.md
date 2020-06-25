@@ -1,19 +1,19 @@
 ---
 title: 無法刪除屬性，因為其正在參與關聯
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 389873cc-92dd-48da-bfca-0f6c8e0ae3c2
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e1890535fb008c8e8be6ee9dea0eda3ab3844da6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3e7a5063846e05fd55880e1727dd829c2db0c3a5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648150"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281392"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>無法刪除屬性&lt;屬性名稱&gt;，因為其正在參與關聯&lt;關聯名稱&gt;
 
@@ -25,12 +25,12 @@ ms.locfileid: "72648150"
 
 1. 在 **O/R 設計工具**上，選取在錯誤訊息指出的資料類別之間連接的關聯線。
 
-2. 按兩下這條線以開啟 [關聯編輯器] 對話方塊。
+2. 按兩下這條線以開啟 [關聯編輯器]**** 對話方塊。
 
-3. 從 [關聯屬性] 中移除屬性。
+3. 從 [關聯屬性]**** 中移除屬性。
 
 4. 試著再次刪除屬性。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

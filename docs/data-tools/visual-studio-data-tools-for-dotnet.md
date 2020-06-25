@@ -1,7 +1,7 @@
 ---
 title: 適用于 .NET 的資料工具
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 author: ghogen
 ms.author: ghogen
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 1dcd8c256259baeef36939e19ce785e5efe7c80b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 67cf4969a5db8900910b375d4cf560b1e30da4eb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586038"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281067"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於 .NET 的 Visual Studio Data Tools
 
@@ -26,7 +26,7 @@ Visual Studio 和 .NET 一起提供廣泛的 API 和工具支援，以便連接�
 
 ![ADO.NET 架構](../data-tools/media/raddata-ado-net-architecture-diagram.png)
 
-## <a name="typical-workflow"></a>一般流程
+## <a name="typical-workflow"></a>一般工作流程
 
 一般工作流程如下：
 
@@ -42,6 +42,6 @@ Visual Studio 和 .NET 一起提供廣泛的 API 和工具支援，以便連接�
 
 您可以略過步驟3並程式設計 .NET 應用程式，直接將命令發行至資料庫，而不是使用模型。 在此情況下，您會發現相關文件： [ADO.NET](/dotnet/framework/data/adonet/index)。 請注意，當您在記憶體中填入自己的物件，然後將 UI 控制項資料系結至這些物件時，您仍然可以使用**資料來源設定 Wizard**和設計工具來產生資料系結程式碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 Visual Studio 存取資料](../data-tools/accessing-data-in-visual-studio.md)

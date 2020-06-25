@@ -1,7 +1,7 @@
 ---
 title: 將資料集和 TableAdapter 分成不同的專案
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, separating Datasets and TableAdapters
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8df444646512ecd4dba866fccf6da5fdf7a8bab3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 504e2411d20a85c85047e4827d613bf4f48034e9
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586220"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281548"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>將資料集和 TableAdapter 分成不同的專案
 具類型的資料集已經過增強，因此可以在不同的專案中產生[tableadapter](create-and-configure-tableadapters.md)和 dataset 類別。 這可讓您快速分隔應用層，並產生多層式資料應用程式。
@@ -30,7 +30,7 @@ ms.locfileid: "75586220"
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>將資料集分隔成不同的專案
 
-1. 開啟包含資料集（ *.xsd*檔案）的方案。
+1. 開啟包含資料集（*.xsd*檔案）的方案。
 
     > [!NOTE]
     > 如果方案不包含您要將資料集程式碼分隔的專案，請建立專案，或將現有的專案加入至方案。
@@ -52,15 +52,15 @@ ms.locfileid: "75586220"
 
      資料集會在**資料集專案**屬性的選取專案中產生，而**TableAdapter**程式碼則會產生到目前的專案中。
 
-根據預設，當您分隔資料集和 TableAdapter 程式碼之後，結果會是每個專案中的個別類別檔案。 原始專案具有名為*DatasetName*的檔案，也就是包含 TableAdapter 程式碼的*DatasetName.Designer.cs*。 在**資料集專案**屬性中指定的專案具有名為*DatasetName*的檔案，其中包含資料集程式碼。
+根據預設，當您分隔資料集和 TableAdapter 程式碼之後，結果會是每個專案中的個別類別檔案。 原始專案具有名為*DatasetName*的檔案，也就是包含 TableAdapter 程式碼的*DatasetName.Designer.cs*。 在**資料集專案**屬性中指定的專案具有名為*DatasetName*的檔案，其中包含資料集程式碼。 *DatasetName.DataSet.Designer.cs*
 
 > [!NOTE]
 > 若要查看產生的類別檔案，請選取資料集或 TableAdapter 專案。 然後，在**方案總管**中，選取 [**顯示所有**檔案]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [多層式架構 (N-Tier) 資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)
-- [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [多層式資料應用程式總覽](../data-tools/n-tier-data-applications-overview.md)
+- [逐步解說：建立多層式資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [階層式更新](../data-tools/hierarchical-update.md)
 - [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

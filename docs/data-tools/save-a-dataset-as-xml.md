@@ -1,7 +1,7 @@
 ---
 title: 將資料集儲存為 XML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3198b94b1248f20b178e85e9e75a2765e6191c28
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cc8854581903ab58a327ff18be7b3b7c0f860a3b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586298"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281730"
 ---
 # <a name="save-a-dataset-as-xml"></a>將資料集儲存為 XML
 
-藉由呼叫資料集上可用的 XML 方法，存取資料集中的 XML 資料。 若要以 XML 格式儲存資料，您可以呼叫 <xref:System.Data.DataSet.GetXml%2A> 方法或 <xref:System.Data.DataSet>的 <xref:System.Data.DataSet.WriteXml%2A> 方法。
+藉由呼叫資料集上可用的 XML 方法，存取資料集中的 XML 資料。 若要以 XML 格式儲存資料，您可以呼叫 <xref:System.Data.DataSet.GetXml%2A> 方法或的 <xref:System.Data.DataSet.WriteXml%2A> 方法 <xref:System.Data.DataSet> 。
 
 呼叫 <xref:System.Data.DataSet.GetXml%2A> 方法會傳回字串，其中包含格式為 XML 之資料集中所有資料表的資料。
 
@@ -33,18 +33,18 @@ ms.locfileid: "75586298"
 
 ## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>將 dataset 中的資料以 XML 形式儲存至變數
 
-- <xref:System.Data.DataSet.GetXml%2A> 方法會傳回 <xref:System.String>。 宣告 <xref:System.String> 類型的變數，並為其指派 <xref:System.Data.DataSet.GetXml%2A> 方法的結果。
+- <xref:System.Data.DataSet.GetXml%2A> 方法會傳回 <xref:System.String>。 宣告類型為的變數 <xref:System.String> ，並將方法的結果指派給它 <xref:System.Data.DataSet.GetXml%2A> 。
 
      [!code-vb[VbRaddataSaving#12](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_1.vb)]
      [!code-csharp[VbRaddataSaving#12](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_1.cs)]
 
 ## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>將 dataset 中的資料儲存為 XML 檔案
 
-- <xref:System.Data.DataSet.WriteXml%2A> 方法有數個多載。 宣告變數，並為其指派可儲存檔案的有效路徑。 下列程式碼顯示如何將資料儲存至檔案：
+- <xref:System.Data.DataSet.WriteXml%2A>方法有數個多載。 宣告變數，並為其指派可儲存檔案的有效路徑。 下列程式碼顯示如何將資料儲存至檔案：
 
      [!code-vb[VbRaddataSaving#13](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_2.vb)]
      [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

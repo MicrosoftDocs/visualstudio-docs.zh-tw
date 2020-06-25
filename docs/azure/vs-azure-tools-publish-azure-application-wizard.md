@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: bc3c58343c699833a5a12eee6f79c023f57a2e85
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: 477b7860c320730d6362cdb7e0fcb46ad3bc7d17
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489645"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280527"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>使用 Visual Studio 發佈 Azure 應用程式精靈
 
@@ -97,7 +97,7 @@ Azure 儲存體帳戶會儲存應用程式部署的封裝。 部署應用程式�
 
 ## <a name="summary-page"></a>摘要頁面
 
-![總結](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
+![[摘要]](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
 **目標設定檔** - 您可以選擇從您所選擇的設定建立發行設定檔。 例如，您可能會建立一個設定檔用於測試環境，並建立另一個用於生產。 若要儲存這個設定檔，請選擇 [**儲存**] 圖示。 此精靈會建立設定檔並將它儲存在 Visual Studio 專案。 若要修改設定檔名稱，請開啟 [目標設定檔]**** 清單，然後選擇 [&lt;管理...&gt;]****。
 
@@ -118,6 +118,6 @@ Azure 儲存體帳戶會儲存應用程式部署的封裝。 部署應用程式�
 
 - [測試 Azure 雲端服務的效能](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [設定 Azure 雲服務和虛擬機器的診斷](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)。
+- 設定[Azure 雲端服務和虛擬機器的診斷](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)。
 
-- [什麼是應用見解?](/azure/application-insights/app-insights-overview)
+- [什麼是 Application Insights？](/azure/application-insights/app-insights-overview)

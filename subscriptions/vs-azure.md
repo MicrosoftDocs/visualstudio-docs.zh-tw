@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: conceptual
 description: 瞭解如何啟用 Visual Studio 訂用帳戶中所含的 Azure DevTest 個人點數權益。
-ms.openlocfilehash: 50e784a60dc50232bc390233e2ad80dc91d0f4ab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 55092145d5760e235dc0c38c5a191760af2a2bc1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183609"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279766"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  有了[每月 Azure DevTest 的個別點數](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，azure 就是您用於開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
@@ -72,23 +72,23 @@ ms.locfileid: "84183609"
 ## <a name="eligibility"></a>資格
 |                 訂用帳戶等級/方案                 |           優點           |                         可續約？                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             Yes                             |
-|              含 GitHub Enterprise 的 Visual Studio Enterprise               |     每月信用點數 $150 美元     |                             Yes                             |
+|              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             是                             |
+|              含 GitHub Enterprise 的 Visual Studio Enterprise               |     每月信用點數 $150 美元     |                             是                             |
 |               Visual Studio Enterprise 每月               |        無法使用        |                                                             |
-|             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             Yes
-|              含 GitHub Enterprise 的 Visual Studio Professional              |     每月信用點數 $150 美元     |                             Yes                             |
+|             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             是
+|              含 GitHub Enterprise 的 Visual Studio Professional              |     每月信用點數 $150 美元     |                             是                             |
 |              Visual Studio Professional 每月              |        無法使用        |                                                             |
-|                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             Yes                             |
-|                        MSDN 平台                        |     每月信用點數 $100 美元     |                             Yes                             |
-|               Visual Studio Enterprise - NFR\*               |     每月信用點數 $150 美元     |                             Yes                             |
-|                Visual Studio Enterprise - FTE                |     每月信用點數 $150 美元     |                             Yes                             |
-|     Visual Studio Enterprise - Microsoft 合作夥伴網路     |     每月信用點數 $150 美元     |                             Yes                             |
+|                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             是                             |
+|                        MSDN 平台                        |     每月信用點數 $100 美元     |                             是                             |
+|               Visual Studio Enterprise - NFR\*               |     每月信用點數 $150 美元     |                             是                             |
+|                Visual Studio Enterprise - FTE                |     每月信用點數 $150 美元     |                             是                             |
+|     Visual Studio Enterprise - Microsoft 合作夥伴網路     |     每月信用點數 $150 美元     |                             是                             |
 |    Visual Studio Professional - Microsoft 合作夥伴網路    |        無法使用        |                                                             |
 |        Visual Studio Enterprise – Imagine (Standard)         |        無法使用        |                                                             |
 |         Visual Studio Enterprise – Imagine (Premium)         |        無法使用        |                                                             |
-|             Visual Studio Enterprise – BizSpark              |     每月信用點數 $150 美元     |                             Yes                             |
-|      Visual Studio Enterprise – MCT 軟體與服務      |     每月信用點數 $100 美元     |                             Yes                             |
-| Visual Studio Enterprise – MCT 軟體與服務開發人員 |     每月信用點數 $150 美元     |                             Yes                             |
+|             Visual Studio Enterprise – BizSpark              |     每月信用點數 $150 美元     |                             是                             |
+|      Visual Studio Enterprise – MCT 軟體與服務      |     每月信用點數 $100 美元     |                             是                             |
+| Visual Studio Enterprise – MCT 軟體與服務開發人員 |     每月信用點數 $150 美元     |                             是                             |
 
 *包括禁止轉售 (NFR)、最有價值專家 (MVP)、區域經理 (RD)、Visual Studio 產業夥伴 (VSIP)
 
@@ -106,7 +106,7 @@ ms.locfileid: "84183609"
 
 如需完整的詳細資料，請流覽[技術支援](vs-tech-support.md)檔。
 
-### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>問：如何擁有我使用我的 Azure DevTest 個別點數所建立的智慧財產權？
+### <a name="q-who-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>問：誰擁有我使用我的 Azure DevTest 個別點數所建立的智慧財產？
 答：在該公司提供的資源上建立的智慧財產，就是提供資源之公司的智慧財產。 因此，如果您透過雇主收到您的 Visual Studio 訂用帳戶，則會套用其智慧財產原則。 
 
 ## <a name="support-resources"></a>支援資源
@@ -119,7 +119,7 @@ ms.locfileid: "84183609"
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟

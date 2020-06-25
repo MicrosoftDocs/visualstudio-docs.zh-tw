@@ -6,19 +6,19 @@ manager: jillfra
 assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: ca65086ce7ce09a1ca288c2f5cd04c31e00f8e95
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: ddb0f2610473841a69ec69600cf9ef83cb898340
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911902"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280679"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>使用 Visual Studio 的已連接服務加入 Azure 儲存體
 
-使用 Visual Studio 時，您可以使用 [加入已連接服務] 對話方塊，將下列任何服務連接到「Azure 儲存體」：
+使用 Visual Studio 時，您可以使用 [加入已連接服務]**** 對話方塊，將下列任何服務連接到「Azure 儲存體」：
 
 - C# 雲端服務
 - .NET 後端行動服務
@@ -28,7 +28,7 @@ ms.locfileid: "72911902"
 
 已連接服務功能會將所有必要的參考和連接程式碼新增到您的專案中，並適當地修改組態檔。
 
-完成之後，[加入已連接服務] 對話方塊會自動顯示文件，當中會詳細說明開始使用 Blob 儲存體、佇列及資料表所需的步驟。
+完成之後，[加入已連接服務]**** 對話方塊會自動顯示文件，當中會詳細說明開始使用 Blob 儲存體、佇列及資料表所需的步驟。
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 若是 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中已連線的服務](/visualstudio/mac/connected-services)。
@@ -37,31 +37,31 @@ ms.locfileid: "72911902"
 
 1. 在 Visual Studio 中開啟您的專案
 
-1. 在 [方案總管] 中，於 [已連接服務] 節點上按一下滑鼠右鍵，然後從操作功能表中選取 [加入已連接服務]。
+1. 在 [方案總管]**** 中，於 [已連接服務]**** 節點上按一下滑鼠右鍵，然後從操作功能表中選取 [加入已連接服務]****。
 
     ![新增 Azure 已連接服務](./media/vs-azure-tools-connected-services-storage/IC796702.png)
 
-1. 在 [已連接服務] 頁面中，選取 [使用 Azure 儲存體的雲端儲存體]。
+1. 在 [已連接服務]**** 頁面中，選取 [使用 Azure 儲存體的雲端儲存體]****。
 
     ![新增 Azure 儲存體](./media/vs-azure-tools-connected-services-storage/add-azure-storage.png)
 
-1. 在 [Azure 儲存體] 對話方塊中，選取現有的儲存體帳戶，然後選取 [新增]。
+1. 在 [Azure 儲存體]**** 對話方塊中，選取現有的儲存體帳戶，然後選取 [新增]****。
 
-    如果您需要建立儲存體帳戶，請移至下一個步驟。 否則，跳到步驟 6。
+    如果您需要建立儲存體帳戶，請移至下一個步驟。 否則，請前往步驟 6。
 
     ![將現有的儲存體帳戶新增到專案](./media/vs-azure-tools-connected-services-storage/select-azure-storage-account.png)
 
 1. 建立儲存體帳戶：
 
-   1. 選取對話方塊底部的 [建立新的儲存體帳戶]。
+   1. 選取對話方塊底部的 [建立新的儲存體帳戶]****。
 
-   1. 填寫 [建立儲存體帳戶] 對話方塊，然後選取 [建立]。
+   1. 填寫 [建立儲存體帳戶]**** 對話方塊，然後選取 [建立]****。
 
        ![新的 Azure 儲存體帳戶](./media/vs-azure-tools-connected-services-storage/create-storage-account.png)
 
-   1. 顯示 [Azure 儲存體] 對話方塊時，新的儲存體帳戶會出現在清單中。 選取清單中的新儲存體帳戶，然後選取 [新增]。
+   1. 顯示 [Azure 儲存體]**** 對話方塊時，新的儲存體帳戶會出現在清單中。 選取清單中的新儲存體帳戶，然後選取 [新增]****。
 
-1. 儲存體已連接服務會出現在您專案的 [服務參考] 節點之下。
+1. 儲存體已連接服務會出現在您專案的 [服務參考]**** 節點之下。
 
 ## <a name="how-your-project-is-modified"></a>您的專案修改方式
 
@@ -72,9 +72,9 @@ ms.locfileid: "72911902"
 - 雲端服務專案 (Web 角色和背景工作角色) - [發生什麼事 - 雲端服務專案](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
 - WebJob 專案 - [發生什麼事 - WebJob 專案](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [MSDN 論壇： Azure 儲存體](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [MSDN 論壇︰Azure 儲存體](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Microsoft Azure 儲存體小組部落格 (英文)](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Azure 儲存體文件](/azure/storage/)
 - [已連線的服務 (Visual Studio for Mac)](/visualstudio/mac/connected-services)

@@ -6,21 +6,21 @@ manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301696"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280540"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>在 Visual Studio 中設定 Azure 專案，以便使用多個服務組態
 
 Visual Studio 中的 Azure 雲端服務專案包含三個組態檔：`ServiceDefinition.csdef`、`ServiceConfiguration.Local.cscfg` 和 `ServiceConfiguration.Cloud.cscfg`：
 
-- `ServiceDefinition.csdef` 會部署至 Azure，以描述雲端服務及其角色的需求，並提供適用於所有執行個體的設定。 可以使用 Azure 服務託管運行時 API 在運行時讀取設置。 唯有當雲端服務停止時，您才可以在 Azure 上更新此檔案。
+- `ServiceDefinition.csdef` 會部署至 Azure，以描述雲端服務及其角色的需求，並提供適用於所有執行個體的設定。 您可以在執行時間使用 Azure 服務裝載執行時間 API 來讀取設定。 唯有當雲端服務停止時，您才可以在 Azure 上更新此檔案。
 - `ServiceConfiguration.Local.cscfg` 和 `ServiceConfiguration.Cloud.cscfg` 提供定義檔中的設定值，並指定每個角色要執行的執行個體數目。 "Local" 檔案含有用於本機偵錯的值；"Cloud" 檔案會部署至 Azure 以做為 `ServiceConfiguration.cscfg`，並提供伺服器環境的設定。 當您的雲端服務在 Azure 中執行時，可以更新此檔案。
 
 您可以在 Visual Studio 中使用適當角色的屬性頁來管理和修改組態設定 (以滑鼠右鍵按一下角色，然後選取 [屬性]****，或按兩下角色)。 您可以將變更的範圍限定為在 [服務組態]**** 下拉式清單中選擇的任何組態。 除了以下各節描述的內容之外，Web 與背景工作角色的屬性相去不遠。
@@ -39,13 +39,13 @@ Visual Studio 中的 Azure 雲端服務專案包含三個組態檔：`ServiceDef
 
 將 [執行個體] **** 計數屬性設定為服務應對此角色執行的執行個體數目。
 
-將 [VM 大小]**** 屬性設為 [超小]****、[小型]****、[中型]****、[大型]**** 或 [特大]****。  有關詳細資訊，請參閱[雲服務的大小](/azure/cloud-services/cloud-services-sizes-specs)。
+將 [VM 大小]**** 屬性設為 [超小]****、[小型]****、[中型]****、[大型]**** 或 [特大]****。  如需詳細資訊，請參閱[雲端服務的大小](/azure/cloud-services/cloud-services-sizes-specs)。
 
 ### <a name="startup-action-web-role-only"></a>啟動動作 (僅限 Web 角色)
 
 設定此屬性，可指定當您開始偵錯時，Visual Studio 應針對 HTTP 端點或 HTTPS 端點或兩者啟動網頁瀏覽器。
 
-僅當已為角色定義 HTTPS**終結點時，HTTPS 終結點**選項才可用。 您可以在 [端點] **** 屬性頁面上定義 HTTPS 端點。
+只有在您已為角色定義 HTTPS 端點時，才可以使用 [ **HTTPs 端點**] 選項。 您可以在 [端點] **** 屬性頁面上定義 HTTPS 端點。
 
 如果您已新增 HTTPS 端點，則預設會啟用 HTTPS 端點選項，而在您開始偵錯時，Visual Studio 除了會為 HTTP 端點啟動瀏覽器之外，還會為此端點啟動瀏覽器 (假設兩種啟動選項均已啟用)。
 
@@ -55,7 +55,7 @@ Web 角色預設會啟用診斷。 Azure 雲端服務專案和儲存體帳戶已
 
 ## <a name="settings-page"></a>設定頁面
 
-在 [設定]**** 頁面上，您可以利用成對的名稱和數值形式將設定加入組態。 在角色中運行的代碼可以使用[Azure 託管庫](/previous-versions/azure/dn602775(v=azure.11))（特別是[Get配置設置值](/previous-versions/azure/reference/ee772857(v=azure.100))方法）提供的類在運行時讀取配置設置的值。
+在 [設定]**** 頁面上，您可以利用成對的名稱和數值形式將設定加入組態。 在角色中執行的程式碼可以使用[Azure Managed 程式庫](/previous-versions/azure/dn602775(v=azure.11))所提供的類別（尤其是[GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100))方法），在執行時間讀取您的設定值。
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>設定儲存體帳戶的連接字串
 
