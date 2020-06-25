@@ -1,17 +1,17 @@
 ---
 title: 偵錯或停用 XAML 設計工具的專案程式碼
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ce29bcef43877ec8a41235545652278645cad123
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592991"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331060"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>偵錯或停用 XAML 設計工具的專案程式碼
 
@@ -33,17 +33,17 @@ ms.locfileid: "75592991"
 
 ## <a name="to-determine-if-project-code-is-causing-an-exception"></a>判斷專案程式碼是否會造成例外狀況
 
-1. 在未處理的例外狀況對話方塊中，選擇 [按一下此處可重新載入設計工具] 連結。
+1. 在未處理的例外狀況對話方塊中，選擇 [按一下此處可重新載入設計工具] **** 連結。
 
-2. 在功能表列上選擇 [偵錯] > [開始偵錯]，以建置及執行應用程式。
+2. 在功能表列上選擇 [ **Debug**] [  >  **開始調試**程式]，以建立並執行應用程式。
 
      如果應用程式順利建置並執行，則設計階段的例外狀況可能是由在設計工具中執行的專案程式碼所造成。
 
 ## <a name="to-debug-project-code-running-in-the-designer"></a>偵錯在設計工具中執行的專案程式碼
 
-1. 在未處理的例外狀況對話方塊中，選擇 [按一下此處可停用執行中的專案程式碼並重新載入設計工具] 連結。
+1. 在未處理的例外狀況對話方塊中，選擇 [按一下此處可停用執行中的專案程式碼並重新載入設計工具] **** 連結。
 
-2. 在 [Windows 工作管理員] 中，選擇 [結束工作] 按鈕關閉 Visual Studio XAML 設計工具目前執行的所有執行個體。
+2. 在 [Windows 工作管理員] 中，選擇 [結束工作] **** 按鈕關閉 Visual Studio XAML 設計工具目前執行的所有執行個體。
 
      ![TaskManager 中的 XAML 設計工具執行個體](media/xaml_taskmanager.png)
 
@@ -53,30 +53,30 @@ ms.locfileid: "75592991"
 
 5. 設定專案程式碼的中斷點。
 
-6. 在 Visual Studio 新執行個體的功能表上，選擇 [偵錯] > [附加至處理序]。
+6. 在新的 Visual Studio 實例的功能表列上，選擇 [ **Debug**] [  >  **附加至進程**]。
 
-7. 在 [附加至處理序] 對話方塊的 [可使用的處理序] 清單中，選擇 [XDesProc.exe]，然後選擇 [附加] 按鈕。
+7. 在 [附加至處理序] **** 對話方塊的 [可使用的處理序] **** 清單中，選擇 [XDesProc.exe] ****，然後選擇 [附加] **** 按鈕。
 
      ![XAML 設計工具處理序](media/xaml_attach.png)
 
      這是 Visual Studio 第一個執行個體的 XAML 設計工具處理序。
 
-8. 在 Visual Studio 第一個執行個體的功能表列上，選擇 [偵錯] > [開始偵錯]。
+8. 在第一個 Visual Studio 實例的功能表列上，選擇 [ **Debug**] [  >  **開始調試**]。
 
      您現在可以進入正在設計工具中執行的程式碼。
 
 ## <a name="to-disable-project-code-in-the-designer"></a>停用設計工具中的專案程式碼
 
-- 在未處理的例外狀況對話方塊中，選擇 [按一下此處可停用執行中的專案程式碼並重新載入設計工具] 連結。
+- 在未處理的例外狀況對話方塊中，選擇 [按一下此處可停用執行中的專案程式碼並重新載入設計工具] **** 連結。
 
-- 或者，在 XAML 設計工具的工具列上選擇 [停用專案程式碼] 按鈕。
+- 或者，在 XAML 設計工具**** 的工具列上選擇 [停用專案程式碼]**** 按鈕。
 
      ![[停用專案程式碼] 按鈕](media/xaml_disablecode.png)
 
      您可以再次切換按鈕重新啟用專案程式碼。
 
     > [!NOTE]
-    > 至於以 ARM 或 X64 處理器為目標的專案，Visual Studio 無法在設計工具中執行專案程式碼，所以停用設計工具中的 [停用專案程式碼] 按鈕。
+    > 至於以 ARM 或 X64 處理器為目標的專案，Visual Studio 無法在設計工具中執行專案程式碼，所以停用設計工具中的 [停用專案程式碼] **** 按鈕。
 
 - 無論哪個選項都會導致重新載入設計工具，然後停用所有相關聯專案的程式碼。
 
@@ -90,12 +90,12 @@ ms.locfileid: "75592991"
 
 在 XAML 設計工具中，您可以將控制項顯示選項變更為僅顯示來自 Windows SDK 的平台控制項。 這可以提高 XAML 設計工具的可靠性。
 
-若要變更控制項顯示選項，請按一下 [設計工具] 視窗左下角的圖示，然後選取 [控制項顯示選項] 下的選項：
+若要變更控制項顯示選項，請按一下 [設計工具] 視窗左下角的圖示，然後選取 [控制項顯示選項]**** 下的選項：
 
 ![控制項顯示選項](media/control_display_options.png)
 
-當您選取 [僅顯示平台控制項] 時，來自 SDK、客戶使用者控制項等的所有自訂控制項都將無法完全呈現。 相反地，它們會被後援控制項取代，以示範控制項的大小與位置。
+當您選取 [僅顯示平台控制項]**** 時，來自 SDK、客戶使用者控制項等的所有自訂控制項都將無法完全呈現。 相反地，它們會被後援控制項取代，以示範控制項的大小與位置。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](designing-xaml-in-visual-studio.md)
+- [在 Visual Studio 與 Blend for Visual Studio 中設計 XAML](designing-xaml-in-visual-studio.md)

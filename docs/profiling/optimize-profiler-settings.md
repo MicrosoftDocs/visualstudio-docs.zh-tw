@@ -1,7 +1,7 @@
 ---
 title: 優化 Profiler 設定 |Microsoft Docs
 ms.date: 4/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Profiler, improve performance
 author: Sagar-S-S
@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff76364026230d08d03c91d14bddba3c325e7be
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 1ef802958817b43dd66973db66a80d328454aa83
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290188"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329261"
 ---
 # <a name="optimizing-profiler-settings"></a>優化 Profiler 設定
 

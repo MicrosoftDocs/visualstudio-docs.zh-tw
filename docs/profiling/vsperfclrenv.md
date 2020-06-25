@@ -1,7 +1,7 @@
 ---
 title: VSPerfCLREnv | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - command-line tools, VSPerfCLREnv
 - command line, tools
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2163ebb9b363de8ee638998dbe56fd76f5a891c8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 828768b59e4ab465e4723d399d406b994fa8c8ce
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779905"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330425"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -65,17 +65,17 @@ VSPerfCmd /Attach:MyService.exe
 
 下表描述用於檢測程式碼剖析的 VSPerfCLREnv 選項︰
 
-|選項|描述|
+|選項|說明|
 |------------|-----------------|
 |**TraceOn**|使用檢測方法啟用程式碼剖析功能。 不會啟用記憶體配置程式碼剖析功能或收集物件存留期資料。|
-|**跟蹤GC**|使用檢測方法啟用記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|
-|**跟蹤GC生活**|使用檢測方法啟用記憶體配置程式碼剖析功能和收集物件存留期資料。|
+|**TraceGC**|使用檢測方法啟用記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|
+|**TraceGCLife**|使用檢測方法啟用記憶體配置程式碼剖析功能和收集物件存留期資料。|
 
 ## <a name="vsperfclrenv-options-for-process-sampling-profiling"></a>用於處理序取樣分析的 VSPerfCLREnv 選項
 
 下表描述用於取樣程式碼剖析的 VSPerfCLREnv 選項︰
 
-|選項|描述|
+|選項|說明|
 |------------|-----------------|
 |**SampleOn**|使用取樣方法啟用程式碼剖析功能。 不會啟用記憶體配置程式碼剖析功能或收集物件存留期資料。|
 |**SampleGC**|使用取樣方法啟用記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|
@@ -86,7 +86,7 @@ VSPerfCmd /Attach:MyService.exe
 
 若要分析受管理服務和由作業系統啟動而不是使用者啟動的 ASP.NET Web 應用程式，請選擇使用進行全域程式碼剖析的 VSPerfCLREnv 選項。 下表描述 VSPerfCLREnv 選項的全域版本︰ 這些選項可在登錄中設定適當的環境變數。
 
-|選項|描述|
+|選項|說明|
 |------------|-----------------|
 |**GlobalTraceOn**|使用檢測方法啟用全域程式碼剖析功能。 不會收集記憶體配置事件或物件存留期資料。|
 |**GlobalTraceGC**|使用檢測方法啟用全域記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|
@@ -99,9 +99,9 @@ VSPerfCmd /Attach:MyService.exe
 
  當您完成對 Managed 應用程式進行程式碼剖析時，使用下列其中一個選項來刪除 VSPerfCLREnv 所加入的環境變數。 下表描述如何刪除這兩個標準和全域環境變數︰
 
-|選項|描述|
+|選項|說明|
 |------------|-----------------|
-|**關閉**|刪除標準 .NET 程式碼剖析的環境變數。 使用非全域 VSPerfClrEnv 選項來設定分析工具環境變數時，請使用此選項。|
+|**停止**|刪除標準 .NET 程式碼剖析的環境變數。 使用非全域 VSPerfClrEnv 選項來設定分析工具環境變數時，請使用此選項。|
 |**GlobalOff**|刪除全域 .NET 程式碼剖析的環境變數。 當應用程式由作業系統啟動且不是分析工具時，請使用此選項。|
 
 ## <a name="remarks"></a>備註

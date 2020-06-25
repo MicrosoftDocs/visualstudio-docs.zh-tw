@@ -2,7 +2,7 @@
 title: CPU 取樣的初級開發人員指南
 ms.custom: seodec18
 ms.date: 02/27/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c6a5a0eb84e4f06fd1b4dd248a1bce952b2c7197
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a58803747e0da411012226325c390352edf4e919
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779801"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330591"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 取樣的初級開發人員指南
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [取樣]**** 資料。
@@ -33,10 +33,10 @@ ms.locfileid: "74779801"
 
  依指定的間隔，[取樣]**** 方法會收集在應用程式中執行函式的詳細資訊。 在您完成執行程式碼剖析後，程式碼剖析資料的 [摘要]**** 檢閱會顯示最常使用的函式呼叫樹狀圖，稱為 [最忙碌路徑]****，其中在應用程式中的大部分工作都已執行。 此檢視也列出正在執行最多個別工作的函式，並提供讓您用來專注於取樣工作階段特定區段的時間軸圖形。
 
- 如果 [取樣]**** 沒有提供您所需的資料，則其他程式碼剖析工具集合方法可提供不同種類的資訊，這可能會很有幫助。 有關這些其他方法的詳細資訊，請參閱[如何：選擇集合方法](../profiling/how-to-choose-collection-methods.md)。
+ 如果 [取樣]**** 沒有提供您所需的資料，則其他程式碼剖析工具集合方法可提供不同種類的資訊，這可能會很有幫助。 如需這些其他方法的詳細資訊，請參閱[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)。
 
 > [!TIP]
-> 如果設定檔調用 Windows 函數的代碼，則應確保具有最新的 。*pdb*檔。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 有關如何確保擁有所需檔的詳細資訊，請參閱["如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)"。
+> 如果您剖析呼叫 Windows 函式的程式碼，您應該確定您擁有最新的。*pdb*檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確認您擁有所需檔案的詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。
 
 ## <a name="create-and-run-a-performance-session"></a>建立和執行效能工作階段
  若要取得您要分析的資料，您必須先建立效能工作階段，然後再執行工作階段。 [效能精靈]**** 可讓您進行這兩項工作。
@@ -69,7 +69,7 @@ ms.locfileid: "74779801"
 
  建議您先檢查 [最忙碌路徑]****，接著檢查執行最多工作之函式的清單，最後使用 [摘要時間表]**** 來專注於其他函式以開始分析資料。 您也可以在 [錯誤清單]**** 視窗中檢視分析建議和警告。
 
- 請注意此取樣方法可能無法提供您所需的資訊。 例如，只有在應用程式執行使用者模式程式碼時才會收集樣本。 因此，取樣不會擷取某些功能，例如輸入和輸出作業。 [程式碼剖析工具] 提供讓您專注於重要資料的數個收集方法。 有關其他方法的詳細資訊，請參閱[：選擇集合方法](../profiling/how-to-choose-collection-methods.md)。
+ 請注意此取樣方法可能無法提供您所需的資訊。 例如，只有在應用程式執行使用者模式程式碼時才會收集樣本。 因此，取樣不會擷取某些功能，例如輸入和輸出作業。 [程式碼剖析工具] 提供讓您專注於重要資料的數個收集方法。 如需其他方法的詳細資訊，請參閱[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)。
 
  圖中的每個編號區域與程序中的步驟相關。
 
@@ -93,15 +93,15 @@ ms.locfileid: "74779801"
 
     - [函式詳細資料]**** 視窗的下方窗格會顯示函式程式碼本身。 如果您檢查程式碼並找到最佳化其效能的機會，請按一下原始程式檔名稱，在 Visual Studio 編輯器中開啟檔案。
 
-3. 要繼續分析，請從 **"查看**"下拉清單中選擇 **"摘要**"，返回到 **"摘要"** 視圖。 然後檢查 [執行最多個別工作的函式]**** 中的函式。 此清單顯示含有最多專有樣本的函式。 這些函式的函式主體中的程式碼執行相當多的工作，您或許可以對它最佳化。 若要進一步分析特定函式，請按一下函式名稱，將它顯示在 [函式詳細資料]**** 檢視中。
+3. 若要繼續分析，請從 [ **view** ] 下拉式清單中選取 [**摘要**]，返回 [**摘要**] 視圖。 然後檢查 [執行最多個別工作的函式]**** 中的函式。 此清單顯示含有最多專有樣本的函式。 這些函式的函式主體中的程式碼執行相當多的工作，您或許可以對它最佳化。 若要進一步分析特定函式，請按一下函式名稱，將它顯示在 [函式詳細資料]**** 檢視中。
 
      ![執行最多工作的函式清單](../profiling/media/functions_mostwork.png "Functions_MostWork")
 
      若要繼續調查程式碼剖析執行，可以使用 [摘要]**** 檢視中的時間表，從選取的區段顯示 [最忙碌路徑]**** 和 [執行最多個別工作的函式]****，重新分析程式碼剖析資料的某個區段。 例如，專注於時間表的較小尖峰，可能會顯示整個程式碼剖析執行分析中未顯示的高度耗費資源之呼叫樹狀圖和函式。
 
-     要重新分析線段，請在 **"摘要時間軸"** 框中選擇一個段，然後按一下"**按選擇篩選**"。
+     若要重新分析區段，請在 [**摘要時程表**] 方塊中選取區段，然後按一下 [**依選取專案篩選**]。
 
-     ![效能摘要檢視時間表](../profiling/media/performancesummary.png "性能摘要")
+     ![效能摘要檢視時間表](../profiling/media/performancesummary.png "PerformanceSummary")
 
 4. 分析工具也會使用一組規則來建議改善分析回合的方式，並且識別可能的效能問題。 如果找到問題，就會在 [錯誤清單]**** 視窗中顯示警告。 若要開啟 [錯誤清單]**** 視窗，請在 [檢視]**** 功能表上，按一下 [錯誤清單]****。
 
@@ -122,11 +122,11 @@ ms.locfileid: "74779801"
 
 4. 在重新執行工作階段之後，會將另一個資料檔案加入 [效能總管]**** 中此工作階段的 [報告]** 資料夾。 選取原始和新的程式碼剖析資料，以滑鼠右鍵按一下選取範圍，然後按一下 [比較效能報告]****。
 
-     新視窗隨即開啟並顯示比較結果。 有關如何使用比較視圖的詳細資訊，請參閱[如何：比較效能資料檔](../profiling/how-to-compare-performance-data-files.md)。
+     新視窗隨即開啟並顯示比較結果。 如需如何使用比較視圖的詳細資訊，請參閱[如何：比較效能資料檔案](../profiling/how-to-compare-performance-data-files.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [效能總管](../profiling/performance-explorer.md)
-- [開始使用](../profiling/getting-started-with-performance-tools.md)
+- [快速入門](../profiling/getting-started-with-performance-tools.md)
 - [概觀](../profiling/overviews-performance-tools.md)
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

@@ -1,21 +1,22 @@
 ---
 title: XAML 程式碼編輯器
+description: 流覽 XAML 程式碼編輯器，Visual Studio
 ms.date: 06/16/2020
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d789ac099e6d0bba7a44f0d6efd7a19beec54c19
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290207"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329184"
 ---
 # <a name="xaml-code-editor"></a>XAML 程式碼編輯器
 
-[VISUAL STUDIO IDE](../get-started/visual-studio-ide.md)中的 XAML 程式碼編輯器包含建立適用于 Windows 平臺的 WPF 和 UWP 應用程式所需的所有工具，以及適用于[Xamarin](/xamarin/xamarin-forms/user-interface/text/editor/)的功能。 本文概述當您開發以 XAML 為基礎的應用程式時，程式碼編輯器所扮演的角色，以及 Visual Studio 2019 中 XAML 程式碼編輯器特有的功能。
+[VISUAL STUDIO IDE](../get-started/visual-studio-ide.md)中的 XAML 程式碼編輯器包含建立適用于 Windows 平臺的 WPF 和 UWP 應用程式所需的所有工具，以及適用于[Xamarin](/xamarin/xamarin-forms/user-interface/text/editor/)的功能。 本文概述程式碼編輯器在您開發 XAML 應用程式時所扮演的角色，以及 Visual Studio 2019 中 XAML 程式碼編輯器特有的功能。
 
 首先，我們來看一下 IDE （整合式開發環境）與開放式 WPF 專案。 下圖顯示您將搭配 XAML 程式碼編輯器使用的幾個主要 IDE 工具。
 
@@ -182,7 +183,7 @@ ms.locfileid: "85290207"
 
 程式碼片段是可重複使用的程式碼區塊，您可以使用滑鼠右鍵操作功能表命令 [**插入程式碼片段**] 或鍵盤快速鍵（**ctrl** + **K**、 **ctrl** + **X**）的組合，在程式碼檔案中插入。 我們已增強[IntelliSense](../ide/using-intellisense.md) ，使其支援顯示 XAML 程式碼片段，這適用于內建程式碼片段和您手動新增的任何自訂程式碼片段。 一些現成的 XAML 程式碼片段包括 `#region` 、 `Column definition` 、 `Row definition` 、 `Setter` 和 `Tag` 。
 
-![XAML 程式碼編輯器，並在 IntelliSense 中顯示 #region 選項](media/xaml-code-snippets.png "XAML 程式碼編輯器的螢幕擷取畫面，其中包含在 IntelliSense 中顯示的 #region 選項")
+![XAML 程式碼編輯器和 XAML 程式碼片段選項會顯示在 IntelliSense 中](media/xaml-code-snippets.png "XAML 程式碼編輯器的螢幕擷取畫面，其中包含在 IntelliSense 中顯示的 XAML 程式碼片段選項")
 
 如需詳細資訊，請參閱[程式碼片段](../ide/code-snippets.md)和[c # 程式碼片段](../ide/visual-csharp-code-snippets.md)頁面。
 

@@ -1,7 +1,7 @@
 ---
-title: DA0039：非常高比率的鎖定爭用 | Microsoft Docs
+title: DA0039-鎖定爭用率非常高 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.39
 - vs.performance.DA0039
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f64f717bf87fb4636c7c2f4e6f11a08236d08ada
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a84810778beb11a9b3022f4633a6a7e1b3390164
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779359"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332336"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039：鎖定爭用的比率非常高
 
@@ -36,7 +36,7 @@ ms.locfileid: "74779359"
  分析資料收集的系統效能資料指出，應用程式執行期間發生過高的鎖定爭用率。 請考慮使用並行分析方法再次進行分析，以尋找爭用的原因。
 
 ## <a name="rule-description"></a>規則描述
- 鎖定是用來保護多執行緒應用程式中必須一次由一個執行緒依序執行的重要程式碼區段。 Microsoft .NET 通用語言執行平台 (CLR) 提供一組完整的同步處理和鎖定原始物件。 例如，C# 語言支援鎖定陳述式 (在 Visual Basic 中為 SyncLock)。 Managed 應用程式可以呼叫 System.Threading 命名空間中的 Monitor.Enter 和 Monitor.Exit 方法來直接取得及釋放鎖定。 .NET Framework 支援額外的同步處理和鎖定原始物件，包括支援 Mutexes、ReaderWriterLocks 和 Semaphores 的類別。 如需詳細資訊，請參閱 MSDN 網站上《.NET Framework 開發人員手冊》中的[同步處理原始物件概觀](/dotnet/standard/threading/overview-of-synchronization-primitives)。 .NET Framework 類別本身是位於 Windows 作業系統內建之較低層級的同步處理服務之上。 這些類別包括重要區段物件以及許多不同的 Wait 和事件發送訊號函式。 有關詳細資訊，請參閱 MSDN 庫中 Win32 和 COM 開發的[同步](/windows/win32/sync/synchronization)部分。
+ 鎖定是用來保護多執行緒應用程式中必須一次由一個執行緒依序執行的重要程式碼區段。 Microsoft .NET 通用語言執行平台 (CLR) 提供一組完整的同步處理和鎖定原始物件。 例如，C# 語言支援鎖定陳述式 (在 Visual Basic 中為 SyncLock)。 Managed 應用程式可以呼叫 System.Threading 命名空間中的 Monitor.Enter 和 Monitor.Exit 方法來直接取得及釋放鎖定。 .NET Framework 支援額外的同步處理和鎖定原始物件，包括支援 Mutexes、ReaderWriterLocks 和 Semaphores 的類別。 如需詳細資訊，請參閱 MSDN 網站上《.NET Framework 開發人員手冊》中的[同步處理原始物件概觀](/dotnet/standard/threading/overview-of-synchronization-primitives)。 .NET Framework 類別本身是位於 Windows 作業系統內建之較低層級的同步處理服務之上。 這些類別包括重要區段物件以及許多不同的 Wait 和事件發送訊號函式。 如需詳細資訊，請參閱 MSDN Library 中的 Win32 和 COM 開發的[同步](/windows/win32/sync/synchronization)處理一節。
 
  用來同步處理和鎖定的基礎 .NET Framework 類別和原生 Windows 物件兩者都是必須使用連鎖作業變更的共用記憶體位置。 連鎖作業使用硬體特定的指令在共用的記憶體位置中運作，使用不可部分完成的作業變更其狀態。 不可部分完成的作業在機器中的所有處理器則保證一致。 Locks 和 WaitHandles 是當設定或重設時會自動使用連鎖作業的 .NET 物件。 您的應用程式中可能有其他共用的記憶體資料結構，也會要求您使用連鎖作業以安全執行緒的方式進行更新。 如需詳細資訊，請參閱 MSDN Library 的＜.NET Framework＞一節中的 [Interlocked 作業](/dotnet/api/system.threading.interlocked)。
 
@@ -47,7 +47,7 @@ ms.locfileid: "74779359"
  在分析執行期間所做的測量指出有非常大量的鎖定爭用時，就會引發這個規則。 鎖定爭用會延遲等待鎖定的執行緒執行。 即使是在較低階的硬體上執行的單元測試或負載測試中相當少量的鎖定爭用也還是應該進行調查。
 
 > [!NOTE]
-> 當分析資料中報告的鎖爭用率顯著但不過高時，將觸發[DA0038：高鎖爭用率](../profiling/da0038-high-rate-of-lock-contentions.md)資訊消息，而不是此警告訊息。
+> 當分析資料中報告的鎖定爭用比率很高，但沒有過多時，會引發[DA0038：高比率的鎖定爭用](../profiling/da0038-high-rate-of-lock-contentions.md)資訊訊息，而不是此警告訊息。
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
  按兩下訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。  尋找 **.NET CLR LocksAndThreads\Contention Rate / sec** 欄。 判斷是否有特定的程式執行階段，當中的鎖定爭用比其他階段更繁重。

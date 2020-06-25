@@ -1,7 +1,7 @@
 ---
 title: 可取得 ASP.NET Web 應用程式並行資料的分析工具命令列
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - concurrency profiling method
 - profiling tools,concurrency method
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4941e9fde651e9274eeafeffc4aefa27483f3730
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b7cb9d1c245f07f27eca097e0fa774710906d38c
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779658"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331894"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>使用分析工具命令列收集 ASP.NET Web 應用程式的並行資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的並行方法可讓您收集資源爭用資料。
@@ -26,7 +26,7 @@ ms.locfileid: "74779658"
 
 |Task|相關內容|
 |----------|---------------------|
-|將分析工具附加至執行中的 ASP.NET 應用程式|-   [如何：將探測器附加到ASP.NET應用程式以收集併發資料](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
+|將分析工具附加至執行中的 ASP.NET 應用程式|-   [如何：將分析工具附加至 ASP.NET 應用程式以收集並行資料](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
 
 ## <a name="reference"></a>參考
 - [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)
@@ -45,8 +45,8 @@ ms.locfileid: "74779658"
 
 |Task|相關內容|
 |----------|---------------------|
-|**分析獨立 (用戶端) 應用程式**|-   [收集併發資料](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
-|**分析服務**|-   [收集併發資料](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
+|**分析獨立 (用戶端) 應用程式**|-   [收集並行資料](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
+|**分析服務**|-   [收集並行資料](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
 
 ### <a name="analyze-concurrency-data-views-and-reports"></a>分析並行資料檢視和報表
 - [資源爭用資料檢視](../profiling/resource-contention-data-views.md)

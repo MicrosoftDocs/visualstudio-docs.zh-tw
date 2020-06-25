@@ -1,7 +1,7 @@
 ---
 title: CvIsEnabled 函式 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvIsEnabledEx
 - cvmarkers/CvIsEnabled
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92763e352d04d5aa3e88a68bad7adfcd05897027
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 53de9ee136c9bd12c732339b4c1c8a223fe1a3ac
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62945410"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330061"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled 函式
 判斷任何工作階段是否已啟用指定的 ETW 提供者。
@@ -47,8 +47,8 @@ HRESULT CvIsEnabledEx(
 ## <a name="return-value"></a>傳回值
  如果提供者目前已啟用，傳回 S_OK。 如果提供者目前已停用，傳回 S_FALSE。 發生任何錯誤時傳回錯誤碼。 使用 FAILED 巨集可檢查是否有錯誤狀況，然後檢查是 S_OK/S_FALSE。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  **標頭︰** *cvmarkers.h*
 
 ## <a name="see-also"></a>另請參閱
-- [C++庫參考](../profiling/cpp-library-reference.md)
+- [C + + 程式庫參考](../profiling/cpp-library-reference.md)

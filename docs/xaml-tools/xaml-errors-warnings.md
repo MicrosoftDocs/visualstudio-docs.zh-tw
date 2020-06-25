@@ -1,23 +1,23 @@
 ---
 title: XAML 錯誤和警告
 ms.date: 03/06/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
-author: karann-msft
+author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8a36a91f40fd4857e50d5262c1598ee096697e7
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 9b46bf15390f12e7fb0873c7e4c39abf94530821
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276463"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330407"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 錯誤和警告
 
-撰寫 XAML 時，Visual Studio 會在您鍵入的同時分析程式碼。 偵測到錯誤時，程式碼行上會出現曲線。 將滑鼠指標停留在曲線上時，即會顯示錯誤或警告的詳細資訊。 對於某些錯誤和警告,將顯示一個快速操作燈泡,並使用**Ctrl**+**。** 鍵盤快速鍵以顯示可修正問題的選項。
+撰寫 XAML 時，Visual Studio 會在您鍵入的同時分析程式碼。 偵測到錯誤時，程式碼行上會出現曲線。 將滑鼠指標停留在曲線上時，即會顯示錯誤或警告的詳細資訊。 針對某些錯誤和警告，會顯示 [快速動作] 燈泡，並使用**Ctrl** + **。** 鍵盤快速鍵以顯示可修正問題的選項。
 
 ## <a name="error-types"></a>錯誤類型
 

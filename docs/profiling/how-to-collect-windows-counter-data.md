@@ -1,7 +1,7 @@
 ---
-title: 如何：收集 Windows 計數器資料 | Microsoft Docs
+title: 如何收集 Windows 計數器資料 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.syscounter
 - vs.performance.property.wincounter
@@ -15,16 +15,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c85187fd54d61fdf40956c8aee3c0a222d95a313
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16e29d82d1cee2237886d88a24929b4c794464a5
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776315"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330872"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>如何：收集 Windows 計數器資料
 
-Windows 計數器是程式碼剖析期間可以設定的間隔收集的系統效能計數器。 在程式碼剖析工具報告的 [標記] 檢視中，每個收集間隔會有一個標示為 [自動標記]**** 的資料列。 該資料列包含以該間隔描述效能計數器值的資料行。 要將分析限制在兩個特定標記之間的時間段，請選擇標記，按右鍵，然後從快顯功能表中選擇 **"按** > **標記**篩選"。
+Windows 計數器是程式碼剖析期間可以設定的間隔收集的系統效能計數器。 在程式碼剖析工具報告的 [標記] 檢視中，每個收集間隔會有一個標示為 [自動標記]**** 的資料列。 該資料列包含以該間隔描述效能計數器值的資料行。 若要將分析限制于兩個特定標記之間的一段時間，請選取標記，**以**滑鼠右鍵按一下，然後  >  從快捷方式功能表選取 [依**標記**篩選]。
 
 > [!NOTE]
 > Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
@@ -45,10 +45,10 @@ Windows 計數器是程式碼剖析期間可以設定的間隔收集的系統效
 
 7. 選取對應用程式進行程式碼剖析時要使用的計數器。
 
-8. 按一下 [套用]****。
+8. 按一下 [套用] **。**
 
 ## <a name="see-also"></a>另請參閱
 
-[配置性能會話](../profiling/configuring-performance-sessions.md)
-[性能會話屬性](../profiling/performance-session-properties.md)
+[設定效能會話](../profiling/configuring-performance-sessions.md) 
+[效能會話屬性](../profiling/performance-session-properties.md) 
 [CPU 和 Windows 計數器](../profiling/cpu-and-windows-counters.md)

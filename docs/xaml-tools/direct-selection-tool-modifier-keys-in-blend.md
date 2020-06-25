@@ -2,25 +2,25 @@
 title: 直接選取工具輔助按鍵
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1ac2ee5c5e71dd08e7c9aee81e640cf6f856b6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0931eef87bce1a942e9c8740d248d213f1b778a4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650948"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332309"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的直接選取工具輔助按鍵
 
-下表列出您可以用來修改現有路徑圖形的 [直接選取]工具 ![[直接選取] 工具](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) 快速鍵。 若要新增或移除現有路徑上的點，或結合兩個現有路徑，請使用**畫筆**工具。
+下表列出您可以用來修改現有路徑圖形的 [直接選取]**** 工具 ![[直接選取] 工具](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) 快速鍵。 若要新增或移除現有路徑上的點，或結合兩個現有路徑，請使用**畫筆**工具。
 
-|若要執行這項操作|請這樣做|Pointer|
+|若要執行這項操作|執行方式|Pointer|
 | - |-------------|-------------|
 |使路徑上的點顯示正切函數控點|按一下路徑上的點|![使路徑上的點顯示正切函數控點](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> 移動點的指標|
 |移動路徑上的點|拖曳路徑上的點|![移動路徑上的點](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> 移動點的指標|
@@ -33,7 +33,7 @@ ms.locfileid: "72650948"
 |選取線段並將其彎成曲線，以通過指標的位置。|將滑鼠指標停在路徑中的線段上，按住 **Alt** 鍵，然後拖曳線段|![選取線段並將其彎成曲線，以通過指標的位置。](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> 轉換線段的指標|
 |個別調整另一側正切函數的一端|直接選取點或線段，按住 **Alt** 鍵，然後拖曳正切函數的結束點|![個別調整另一側正切函數的一端](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png)<br /><br /> 轉換正切函數的指標|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [畫板輔助按鍵](../xaml-tools/artboard-modifier-keys-in-blend.md)
 - [畫筆工具輔助按鍵](../xaml-tools/pen-tool-modifier-keys-in-blend.md)

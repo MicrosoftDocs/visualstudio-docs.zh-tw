@@ -2,7 +2,7 @@
 title: 將效能工具附加至執行中的處理序
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.attach
 helpviewer_keywords:
@@ -18,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c4ae54d6b90166de31c338a5e606eaf31ecd6cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 58bbf5fa291d71b26cd303a7d43719fde8605c0a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779164"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331140"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：為執行中的處理序附加和中斷連結效能工具
 程式碼剖析工具可以用來附加至或中斷連結執行中的處理序，以協助取樣與蒐集效能資料。 當您想要避免蒐集應用程式載入時間的資料，或是在處理序進入特定狀態後監視其效能時，就可以使用這種方法來執行處理序的程式碼剖析。
@@ -63,7 +63,7 @@ ms.locfileid: "74779164"
 
 ## <a name="see-also"></a>另請參閱
 - [控制資料收集](../profiling/controlling-data-collection.md)
-- [性能會話概述](../profiling/performance-session-overview.md)
+- [效能工作階段概觀](../profiling/performance-session-overview.md)
 - [如何：啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)
 - [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

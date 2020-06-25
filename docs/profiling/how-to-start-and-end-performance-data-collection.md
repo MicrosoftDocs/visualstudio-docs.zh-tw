@@ -1,7 +1,7 @@
 ---
-title: 如何︰啟動和結束效能資料收集 | Microsoft Docs
+title: 如何-啟動和結束效能資料收集 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.wizard.summarypage
 helpviewer_keywords:
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: da75306018cf19855c7cb7f74ac3ffc4e84bcd9a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eedc7f42f2372452fa2cb96279e8b936bdc15e27
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774507"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331330"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>如何：啟動和結束效能資料收集
 您必須將要進行程式碼剖析的目標二進位檔加入至效能工作階段，然後才能開始進行程式碼剖析。 若要加入目標，請以滑鼠右鍵按一下 [效能總管]**** 中的 [目標]****，然後按一下 [加入目標二進位檔]****。 在 [加入目標二進位檔]**** 對話方塊中，選取檔案名稱，然後按一下 [開啟]****。 新的二進位檔就會加入。
@@ -40,4 +40,4 @@ ms.locfileid: "74774507"
 
 ## <a name="see-also"></a>另請參閱
 - [控制資料收集](../profiling/controlling-data-collection.md)
-- [如何：暫停和恢復效能資料收集](../profiling/how-to-pause-and-resume-performance-data-collection.md)
+- [如何：暫停和繼續效能資料收集](../profiling/how-to-pause-and-resume-performance-data-collection.md)

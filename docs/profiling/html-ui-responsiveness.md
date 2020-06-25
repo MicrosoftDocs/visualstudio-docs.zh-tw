@@ -2,7 +2,7 @@
 title: 分析 UWP App 中 HTML UI 的回應性 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - JavaScript
 helpviewer_keywords:
@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a483d1382ea1f67c14aa4674016331bfe0f76e7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189381"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331414"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析通用 Windows App 中 HTML UI 的回應性
 本主題描述如何使用 UI 回應性分析工具隔離應用程式中的效能問題；該效能工具可供通用 Windows App 使用。
@@ -40,7 +40,7 @@ ms.locfileid: "73189381"
 
 1. 如果您是從 Visual Studio 執行應用程式，請在 [標準]**** 工具列上的 [開始偵錯]**** 清單中選擇部署目標，例如 [本機電腦]**** 或 [裝置]****。
 
-2. 在**調試**功能表上，選擇**性能探測器**。
+2. 在 [**調試**] 功能表上，選擇 [**效能**分析工具]。
 
      如果您要變更分析工具的分析目標，請選擇 [變更目標]****。
 
@@ -76,11 +76,11 @@ ms.locfileid: "73189381"
 
 1. 在 Visual Studio 中開啟應用程式。
 
-2. 測試您的應用程式是否存在 UI 回應性問題 （按**Ctrl**+**F5**啟動應用而不進行調試。
+2. 測試您的應用程式是否存在 UI 回應性問題 （按**Ctrl** +按**F5**以啟動您的應用程式而不進行調試。）
 
      如果您發現問題，請繼續測試以嘗試縮小發生問題的時間範圍，或者嘗試找出造成行為的觸發程序。
 
-3. 切換到視覺工作室（按**Alt**+**標籤**）並停止你的應用程式 （**Shift**+**F5**）。
+3. 切換至 Visual Studio （按**Alt** + **Tab**）並停止您的應用程式（**Shift** + **F5**）。
 
 4. 選擇性地將使用者標記加入程式碼，請使用 [標記程式碼以供分析](#ProfileMark)]。
 
@@ -109,7 +109,7 @@ ms.locfileid: "73189381"
 
      下圖顯示具有反白顯示之感興趣的區域的 CPU 使用率圖表。
 
-     ![CPU 利用率圖](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
+     ![CPU 使用率圖表](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
 
 11. 使用 [檢視時間軸詳細資料](#TimelineDetails) 以取得有關執行頻率太高或花費太多時間完成之事件的詳細資訊。 例如，請查看下列項目：
 
@@ -128,7 +128,7 @@ ms.locfileid: "73189381"
 
 13. 放大時，請選取 CPU 使用率或視覺輸送量圖形的一部分。 確定選取範圍時，分析工具下方窗格的時間軸詳細資料圖形會變成只顯示選取的時段。
 
-### <a name="isolate-a-visual-throughput-problem"></a><a name="IsolateVisualThroughput"></a>隔離可視輸送量問題
+### <a name="isolate-a-visual-throughput-problem"></a><a name="IsolateVisualThroughput"></a>找出視覺輸送量問題
  CPU 使用率超量期間可能會導致畫面播放速率降低或不一致。 如果您開發多媒體應用程式和遊戲，視覺輸送量圖表可能會比 CPU 使用率圖表提供更重要的資料。
 
  若要找出視覺輸送量問題，請依照上一節中所述的步驟執行，但是使用視覺輸送量圖表做為其中一個關鍵資料點。
@@ -197,7 +197,7 @@ if (performance.mark && performance.measure) {
 
  這個範例顯示 CPU 使用率圖形的外觀：
 
- ![CPU 利用率圖](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
+ ![CPU 使用率圖表](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
 
  使用這個圖形：
 
@@ -307,15 +307,15 @@ if (performance.mark && performance.measure) {
 ## <a name="profiler-event-reference"></a>Profiler event reference
  在 UI 回應性分析工具中，分析工具事件已分類和色彩標示。 這些是事件分類：
 
-- **載入。** 指出當應用程式第一次載入時，花在擷取應用程式資源和剖析 HTML 和 CSS 的時間。 這可能包括網路要求。
+- **載入.** 指出當應用程式第一次載入時，花在擷取應用程式資源和剖析 HTML 和 CSS 的時間。 這可能包括網路要求。
 
-- **腳本。** 指出花在剖析及執行 JavaScript 的時間。 這包括 DOM 事件、計時器、指令碼評估和動畫畫面格工作。 它包含使用者程式碼和程式庫程式碼。
+- **位.** 指出花在剖析及執行 JavaScript 的時間。 這包括 DOM 事件、計時器、指令碼評估和動畫畫面格工作。 它包含使用者程式碼和程式庫程式碼。
 
-- **Gc。** 指出花在記憶體回收的時間。
+- **GC.** 指出花在記憶體回收的時間。
 
-- **樣式：** 指出花在剖析 CSS 以及計算項目展示和配置的時間。
+- **樣式.** 指出花在剖析 CSS 以及計算項目展示和配置的時間。
 
-- **渲染。** 指出花在繪製螢幕的時間。
+- **轉譯.** 指出花在繪製螢幕的時間。
 
 - **影像解碼中：** 指出花在解壓縮及解碼影像的時間。
 
@@ -342,7 +342,7 @@ if (performance.mark && performance.measure) {
 |Windows 執行階段錯誤|指令碼|在 Windows 執行階段物件中發生的事件，觸發已註冊的接聽程式。|
 |記憶體回收|GC|花費時間收集不再使用之物件的記憶體。|
 |CSS 計算|樣式|對 DOM 進行變更，導致必須重新計算所有受影響項目的樣式屬性。|
-|版面配置|樣式|對 DOM 進行變更，導致必須重新計算所有受影響項目的大小和 (或) 位置。|
+|Layout|樣式|對 DOM 進行變更，導致必須重新計算所有受影響項目的大小和 (或) 位置。|
 |繪畫|轉譯|對 DOM 進行視覺變更，並嘗試重新轉譯頁面上受影響的部分。|
 |轉譯圖層|轉譯|對 DOM 的獨立轉譯片段 (稱為圖層) 進行視覺變更，導致必須轉譯頁面上受影響的部分。|
 |影像解碼中|影像解碼中|DOM 中包含影像，並嘗試將影像從其原始格式解壓縮及解碼成點陣圖。|

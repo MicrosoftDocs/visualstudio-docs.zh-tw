@@ -1,7 +1,7 @@
 ---
-title: 如何：在報表檢視中設定減少雜訊 | Microsoft Docs
+title: 如何-在報表查看中設定減少雜訊 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.noisereduction.dialog
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2920d2d7f6a77fe8fdbd62a0788f570818390eea
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776328"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330803"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在報表檢視中設定減少雜訊
 效能報告可透過限制 [呼叫樹狀圖] 檢視和 [配置] 檢視中呈現的資料量來減少雜訊。 藉由減少雜訊，效能問題將更為顯著。 在分析效能報告時，這一點非常有用。
@@ -52,7 +52,7 @@ ms.locfileid: "74776328"
 
 3. 若要停用修剪，請清除 [啟用修剪]****。
 
-4. 按一下 [確定]****。
+4. 按一下 [確定]。
 
 ### <a name="to-configure-folding-for-a-performance-report"></a>設定折疊效能報告
 
@@ -75,10 +75,10 @@ ms.locfileid: "74776328"
 
 3. 若要停用摺疊，請清除 [啟用摺疊]****。
 
-4. 按一下 [確定]****。
+4. 按一下 [確定]。
 
 ## <a name="see-also"></a>另請參閱
-- [自訂性能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)
-- [如何：從檢測中排除或包含短函數](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
-- [調用樹狀檢視](../profiling/call-tree-view.md)
+- [自訂效能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)
+- [如何：從檢測排除或包含精簡函式](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
+- [呼叫樹狀圖檢閱](../profiling/call-tree-view.md)
 - [配置檢視](../profiling/dotnet-memory-allocations-view.md)

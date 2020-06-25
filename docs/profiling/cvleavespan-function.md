@@ -1,7 +1,7 @@
 ---
 title: CvLeaveSpan 函式 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvLeaveSpan
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 776c24777403b9d88de31e11d0c28fe104666600
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 113d6aafbd09f6b726613405a8c1eb82f9e202e5
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62974109"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330034"
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan 函式
 標記範圍的結尾。
@@ -36,8 +36,8 @@ HRESULT CvLeaveSpan(
 ## <a name="return-value"></a>傳回值
  當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  **標頭︰** *cvmarkers.h*
 
 ## <a name="see-also"></a>另請參閱
-- [C++庫參考](../profiling/cpp-library-reference.md)
+- [C + + 程式庫參考](../profiling/cpp-library-reference.md)

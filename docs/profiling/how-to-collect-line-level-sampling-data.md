@@ -1,7 +1,7 @@
 ---
-title: 如何：收集程式行層級取樣資料 | Microsoft Docs
+title: 如何收集程式列層級取樣資料 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f64040c9180a152650de16b23276ab0e65cc9ead
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 55afe3be6b01e382c82fb41b7a09fa5f84c92365
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776354"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330896"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>如何：收集程式行層級取樣資料
 程式行層級取樣是程式碼剖析工具的一項功能，可以在需要大量處理器資源的函式 (例如包含大量專有樣本的函式) 中判斷處理器花最多時間處理的程式碼。
@@ -54,8 +54,8 @@ ms.locfileid: "74776354"
 
      — 或者—
 
-- 啟動應用程式時，輸入 **VSPerfCmd /lineoff \<其他引數>**。
+- 啟動應用程式時，請輸入**VSPerfCmd \<other arguments> /lineoff **。
 
 ## <a name="see-also"></a>另請參閱
-- [配置性能會話](../profiling/configuring-performance-sessions.md)
-- [分析性能工具資料](../profiling/analyzing-performance-tools-data.md)
+- [設定效能工作階段](../profiling/configuring-performance-sessions.md)
+- [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)

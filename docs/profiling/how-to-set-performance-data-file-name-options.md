@@ -1,7 +1,7 @@
 ---
-title: 如何：設定效能資料檔案名稱選項 | Microsoft Docs
+title: 如何設定效能資料檔案名稱選項 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc42b63524a867c0893aa255180c740d03d4b5fe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 368dfd4c67277305672a89be9e5ab811d341b009
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778761"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330023"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>如何：設定效能資料檔案名稱選項
 
@@ -27,9 +27,9 @@ ms.locfileid: "74778761"
 |||
 |-|-|
 |*路徑*|包含報告的目錄。 預設位置是方案資料夾，或是使用者專案及方案的預設位置。|
-|*VSP 檔*|程式碼剖析資料檔案的名稱。 預設的名稱是經過程式碼剖析的方案或可執行檔的名稱。|
+|*VSP-檔案*|程式碼剖析資料檔案的名稱。 預設的名稱是經過程式碼剖析的方案或可執行檔的名稱。|
 |*YYMMDD*|日期戳記，顯示收集程式碼剖析資料的年、月、日。|
-|*（N）*|如果有一個以上程式碼剖析資料檔案，則檔名會加入括號和遞增數字。|
+|*位*|如果有一個以上程式碼剖析資料檔案，則檔名會加入括號和遞增數字。|
 
 ## <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>變更效能工作階段之程式碼剖析資料檔案的命名語法
 

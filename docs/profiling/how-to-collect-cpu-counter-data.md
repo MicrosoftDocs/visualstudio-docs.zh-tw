@@ -1,7 +1,7 @@
 ---
-title: 如何：收集 CPU 計數器資料 | Microsoft Docs
+title: 如何收集 CPU 計數器資料 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.cpucounters
 helpviewer_keywords:
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 98291051a135a95ab72b4c3bfa09743d9620b94e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c500316bd53ddce8bf731876e5963e6ef253bb27
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776367"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330920"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 計數器資料
 
@@ -44,7 +44,7 @@ CPU 事件計數器可用來收集硬體特定的效能資料。 本文說明當
 
 - 透過檢測分析時，從一或多個計數器收集資料。
 
-- 透過取樣分析時，將計數器事件指定為取樣間隔。 有關詳細資訊，請參閱[如何：選擇採樣事件](../profiling/how-to-choose-sampling-events.md)。
+- 透過取樣分析時，將計數器事件指定為取樣間隔。 如需詳細資訊，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)。
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>透過檢測分析時收集 CPU 效能計數器資料
 
@@ -61,7 +61,7 @@ CPU 事件計數器可用來收集硬體特定的效能資料。 本文說明當
 
 ## <a name="see-also"></a>另請參閱
 
-[配置性能會話](../profiling/configuring-performance-sessions.md)
-[性能會話屬性](../profiling/performance-session-properties.md)
-[CPU 和 Windows 計數器](../profiling/cpu-and-windows-counters.md)
-[如何：選擇採樣事件](../profiling/how-to-choose-sampling-events.md)
+[設定效能會話](../profiling/configuring-performance-sessions.md) 
+[效能會話屬性](../profiling/performance-session-properties.md) 
+[CPU 和 Windows 計數器](../profiling/cpu-and-windows-counters.md) 
+[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)

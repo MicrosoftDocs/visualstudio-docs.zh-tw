@@ -1,7 +1,7 @@
 ---
 title: 使用分析工具取樣方法收集應用程式統計資料
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 07840ab2-3a92-4744-ac87-48b19e0ceecd
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 17217a51c58e1d30b6e6854ee9dbb0c1fb662a3a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 96ae175451d5cb99268f3cd89a5f8ec5142744af
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779684"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331911"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>使用分析工具取樣方法收集服務的應用程式統計資料
 本節說明從命令列使用取樣方法收集 Windows 服務之效能統計資料的程序和選項。
@@ -26,9 +26,9 @@ ms.locfileid: "74779684"
 
 |Task|相關內容|
 |----------|---------------------|
-|**將分析工具附加至 .NET 服務**|-   [如何：將探測器附加到 .NET 服務以收集應用程式統計資訊](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|
-|**添加層交互資料**|-   [收集層交互資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
-|**將分析工具附加至 C/C++ 服務**|-   [如何：將探測器附加到本機服務以收集應用程式統計資訊](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|
+|**將分析工具附加至 .NET 服務**|-   [如何：將分析工具附加至 .NET 服務以收集應用程式統計資料](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|
+|**新增階層互動資料**|-   [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+|**將分析工具附加至 C/C++ 服務**|-   [如何：將分析工具附加至原生服務以收集應用程式統計資料](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|
 
 ## <a name="related-tasks"></a>相關工作
 
@@ -38,7 +38,7 @@ ms.locfileid: "74779684"
 |----------|---------------------|
 |**使用檢測方法進行分析**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
 |**分析 .NET 記憶體配置和記憶體回收**|-   [收集 .NET 記憶體資料](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
-|**分析資源爭用和執行緒活動**|-   [收集併發資料](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
+|**分析資源爭用和執行緒活動**|-   [收集並行資料](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
 
 ### <a name="profile-by-using-the-sampling-method"></a>使用取樣方法進行分析
 
@@ -48,4 +48,4 @@ ms.locfileid: "74779684"
 |**分析 ASP.NET Web 應用程式**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 
 ### <a name="analyze-sampling-data-views-and-reports"></a>分析取樣資料檢視和報表
-- [採樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
+- [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)

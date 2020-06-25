@@ -1,7 +1,7 @@
 ---
-title: 如何：自訂報表檢視資料行 | Microsoft Docs
+title: 如何-自訂報表檢視資料行 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.columnchooser.dialogbox
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 58d2a7b7c83f1260427ff0d805510e08ae35c019
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778969"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329806"
 ---
 # <a name="how-to-customize-report-view-columns"></a>如何：自訂報表檢視資料行
 Visual Studio Team System Development 版的效能工具已完全整合至整合式開發環境 (Integrated Development Environment，IDE)，可提供流暢的使用者經驗。 下列清單是可透過新增、移除及重新排列資料行來自訂的代表性檢視︰
@@ -32,9 +32,9 @@ Visual Studio Team System Development 版的效能工具已完全整合至整合
 
 - [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view.md)
 
-- [呼叫端/被呼叫端檢視](../profiling/caller-callee-view.md)
+- [呼叫端/被呼叫端視圖](../profiling/caller-callee-view.md)
 
-- [調用樹狀檢視](../profiling/call-tree-view.md)
+- [呼叫樹狀圖檢閱](../profiling/call-tree-view.md)
 
 - [配置檢視](../profiling/dotnet-memory-allocations-view.md)
 
@@ -56,4 +56,4 @@ Visual Studio Team System Development 版的效能工具已完全整合至整合
 
 4. 按一下箭號按鈕以重新排列資料行。
 
-5. 按一下 [確定]****。
+5. 按一下 [確定]。
