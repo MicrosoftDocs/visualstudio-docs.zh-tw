@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30acc1f38ea0d27a3a8245f586b3c41765330c50
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 24436a76841ae663f733e7c76eeb16065ed1f57b
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283394"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382662"
 ---
 # <a name="performance-warnings"></a>效能警告
 效能警告支援高效能程式庫和應用程式。
 
 ## <a name="in-this-section"></a>本節內容
 
-| 規則 | 說明 |
+| 規則 | 描述 |
 | - | - |
 | [CA1800:不要執行不必要的轉換](../code-quality/ca1800.md) | 重複轉型會降低效能，尤其是在精簡型態的反覆運算陳述式中執行轉型時。 |
 | [CA1801:必須檢閱未使用的參數](../code-quality/ca1801.md) | 方法簽章包括不用於方法主體中的參數； |
@@ -53,7 +53,8 @@ ms.locfileid: "85283394"
 | [CA1827：不要在可使用 Any 時使用 Count/LongCount](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A><xref:System.Linq.Enumerable.LongCount%2A>使用了或方法，其中 <xref:System.Linq.Enumerable.Any%2A> 方法會更有效率。 |
 | [CA1828：不要在可使用 AnyAsync 時使用 CountAsync/LongCountAsync](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A><xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A>使用了或方法，其中 <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> 方法會更有效率。 |
 | [CA1829：請使用 Length/Count 屬性，不要使用 Enumerable.Count 方法](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>LINQ 方法是在支援對等、更有效率或屬性的型別上使用 `Length` `Count` 。 |
-| [CA1831：適當時，請使用 AsSpan 而不是字串的以範圍為基礎的索引子](../code-quality/ca1831.md) | 在字串上使用範圍索引子，並隱含地將值指派給 ReadOnlySpan &lt; char &gt; 類型時， <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> 會使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生字串要求部分的複本。 |
-| [CA1832：使用 AsSpan 或 AsMemory，而不是以範圍為基礎的索引子，以取得陣列的 ReadOnlySpan 或 ReadOnlyMemory 部分](../code-quality/ca1832.md) | 在陣列上使用範圍索引子，並隱含地將值指派給 <xref:System.ReadOnlySpan%601> 或 <xref:System.ReadOnlyMemory%601> 類型時，將會 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生陣列所要求部分的複本。 |
-| [CA1833：使用 AsSpan 或 AsMemory，而不是以範圍為基礎的索引子，以取得陣列的 Span 或記憶體部分](../code-quality/ca1833.md) | 在陣列上使用範圍索引子，並隱含地將值指派給 <xref:System.Span%601> 或 <xref:System.Memory%601> 類型時，將會 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生陣列所要求部分的複本。 |
+| [CA1830：偏好 StringBuilder 上的強型別附加和插入方法多載](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>和會 <xref:System.Text.StringBuilder.Insert%2A> 提供多載，供 system.string 以外的多種類型之用。  可能的話，偏好使用 ToString （）和以字串為基礎之多載的強型別多載。 |
+| [CA1831：在適用情況下，請使用 AsSpan 做為字串，不要使用範圍型的索引子](../code-quality/ca1831.md) | 在字串上使用範圍索引子，並隱含地將值指派給 ReadOnlySpan &lt; char &gt; 類型時， <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> 會使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生字串要求部分的複本。 |
+| [CA1832：請使用 AsSpan 或 AsMemory 來取得陣列的 ReadOnlySpan 或 ReadOnlyMemory 部分，不要使用範圍型的索引子](../code-quality/ca1832.md) | 在陣列上使用範圍索引子，並隱含地將值指派給 <xref:System.ReadOnlySpan%601> 或 <xref:System.ReadOnlyMemory%601> 類型時，將會 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生陣列所要求部分的複本。 |
+| [CA1833：請使用 AsSpan 或 AsMemory 取得陣列的 Span 或 Memory 部分，不要使用範圍型的索引子](../code-quality/ca1833.md) | 在陣列上使用範圍索引子，並隱含地將值指派給 <xref:System.Span%601> 或 <xref:System.Memory%601> 類型時，將會 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生陣列所要求部分的複本。 |
 | [CA1835：偏好 ' ReadAsync ' 和 ' WriteAsync ' 的以 Memory' 為基礎的多載](../code-quality/ca1835.md) | ' Stream ' 具有 ' ReadAsync ' 多載，其接受 ' Memory &lt; byte &gt; ' 作為第一個引數，而 ' WriteAsync ' 多載接受 ' ReadOnlyMemory &lt; Byte &gt; ' 做為第一個引數。 偏好呼叫以記憶體為基礎的多載，這會更有效率。 |

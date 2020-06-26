@@ -1,7 +1,7 @@
 ---
-title: HOW TO：建立封裝資訊清單 |Microsoft Docs
+title: 如何-建立套件資訊清單 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - FSharp
 - VB
@@ -18,29 +18,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8083ca9a8d3025b1760edde96279a0cd557f722
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc3a1263136fe4c50b2c7020e1557a7a693691b6
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899736"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382519"
 ---
-# <a name="how-to-create-a-package-manifest"></a>HOW TO：建立套件資訊清單
-若要部署您的應用程式的必要條件，您可以使用啟動載入器套件。 啟動載入器套件會包含單一產品資訊清單檔案的套件資訊清單但每個地區設定。 在不同的當地語系化版本之間共用的功能應該移入產品資訊清單。
+# <a name="how-to-create-a-package-manifest"></a>How to: Create a package manifest (如何：建立封裝資訊清單)
+若要部署應用程式的必要條件，您可以使用啟動載入器套件。 啟動載入器套件包含單一產品資訊清單檔案，但每個地區設定都有套件資訊清單。 跨不同當地語系化版本的共用功能應該會進入產品資訊清單。
 
- 如需有關產品資訊清單的詳細資訊，請參閱[How to:建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)。
+ 如需產品資訊清單的詳細資訊，請參閱[如何：建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)。
 
-## <a name="create-the-package-manifest"></a>建立封裝資訊清單
+## <a name="create-the-package-manifest"></a>建立套件資訊清單
 
-#### <a name="to-create-the-package-manifest"></a>若要建立封裝資訊清單
+#### <a name="to-create-the-package-manifest"></a>建立套件資訊清單
 
-1. 建立啟動載入器套件目錄。 這個範例會使用*C:\package*。
+1. 建立啟動載入器套件的目錄。 這個範例會使用*C:\package*。
 
-2. 建立一個子目錄的地區設定，名稱，例如*en*英文。
+2. 建立具有地區設定名稱的子目錄，例如*en*代表英文。
 
-3. 在 Visual Studio 中，建立名為 XML 檔案*package.xml*，並將它儲存*C:\package\en*資料夾。
+3. 在 Visual Studio 中，建立名為*package.xml*的 XML 檔案，並將它儲存至*C:\package\en*資料夾。
 
-4. 加入至清單的啟動載入器套件名稱、 此當地語系化的封裝資訊清單中和選擇性的授權合約的文化特性的 XML。 下列 XML 程式碼會使用變數`DisplayName`和`Culture`，更新版本的項目中定義。
+4. 加入 XML 以列出啟動載入器套件的名稱、此當地語系化套件資訊清單的文化特性，以及選用的授權合約。 下列 XML 會使用後面的 `DisplayName` `Culture` 元素中定義的變數和。
 
     ```xml
     <Package
@@ -50,7 +50,7 @@ ms.locfileid: "62899736"
         LicenseAgreement="eula.txt">
     ```
 
-5. 加入 XML 以列出的地區設定特定目錄中的所有檔案。 下列 XML 程式碼會使用檔案，稱為*eula.txt*這是適用於**en**地區設定。
+5. 新增 XML 以列出地區設定特定目錄中的所有檔案。 下列 XML 會使用名為*eula.txt*的檔案，該檔案適用于**en**地區設定。
 
     ```xml
     <PackageFiles>
@@ -58,7 +58,7 @@ ms.locfileid: "62899736"
     </PackageFiles>
     ```
 
-6. 加入 XML 以定義可當地語系化啟動載入器套件的字串。 下列 XML 會將錯誤字串，如**en**地區設定。
+6. 加入 XML 以定義啟動載入器套件的可當地語系化字串。 下列 XML 會加入**en**地區設定的錯誤字串。
 
     ```xml
       <Strings>
@@ -71,10 +71,10 @@ ms.locfileid: "62899736"
     </Strings>
     ```
 
-7. 複製*C:\package*到 Visual Studio 啟動載入器目錄的資料夾。 若為 Visual Studio 2010，則 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*目錄。
+7. 將*C:\package*資料夾複製到 Visual Studio 啟動載入器目錄。 針對 Visual Studio 2010，這是*\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*目錄。
 
 ## <a name="example"></a>範例
- 封裝資訊清單包含地區設定特有的資訊，例如錯誤訊息、 軟體授權條款，以及語言套件。
+ 封裝資訊清單包含地區設定特定的資訊，例如錯誤訊息、軟體授權條款及語言套件。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -99,4 +99,4 @@ installing this package.</String>
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [產品和套件結構描述參考](../deployment/product-and-package-schema-reference.md)
+- [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)

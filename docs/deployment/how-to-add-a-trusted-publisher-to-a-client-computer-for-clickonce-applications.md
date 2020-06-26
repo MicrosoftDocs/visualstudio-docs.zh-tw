@@ -1,7 +1,7 @@
 ---
-title: 將受信任的發行者添加到用戶端電腦,用於 ClickOnce 應用
+title: 將信任的發行者新增至 ClickOnce 應用程式的用戶端電腦
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1423952405a31063ee88ce6fa1dfe0b75d80fe5d
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 594c012aaa49a5b62e9f254f924a71f4934d1ebe
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649209"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382610"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>如何：將新增信任的發行者新增至 ClickOnce 應用程式的用戶端電腦
 您可以使用信任的應用程式部署來設定用戶端電腦，以較高的信任等級執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，而不提示使用者。 下列程序示範如何使用命令列工具 CertMgr.exe 將發行者的憑證新增至用戶端電腦上的受信任發行者存放區。
@@ -48,7 +48,7 @@ ms.locfileid: "81649209"
 
 1. 從 CA 取得數位憑證。
 
-2. 將憑證匯出成 Base64 X.509 (*.cer*) 格式。 有關憑證格式的詳細資訊,請參閱[匯出憑證](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))。
+2. 將憑證匯出成 Base64 X.509 (*.cer*) 格式。 如需憑證格式的詳細資訊，請參閱[匯出憑證](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))。
 
 3. 從用戶端電腦的命令提示字元中，執行下列命令：
 
@@ -65,7 +65,7 @@ ms.locfileid: "81649209"
 - [How to: Enable ClickOnce security settings (如何：啟用 ClickOnce 安全性設定)](../deployment/how-to-enable-clickonce-security-settings.md)
 - [如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [How to: Set custom permissions for a ClickOnce application (如何：設定 ClickOnce 應用程式的自訂權限)](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [如何:除錯具有受限權限的 ClickOnce 應用程式](securing-clickonce-applications.md)
+- [如何：以限制的許可權對 ClickOnce 應用程式進行 Debug](securing-clickonce-applications.md)
 - [如何：將新增信任的發行者新增至 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
 - [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
 - [How to: Configure the ClickOnce trust prompt behavior](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md) (如何：設定 ClickOnce 信任提示行為)

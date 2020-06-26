@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c94fac97a340c8c315ec91e3c5ebb68cac0d516
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a0ff6ba1f654f3a9b909012f159cd3daaf2892f3
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283342"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382623"
 ---
 # <a name="usage-warnings"></a>用法警告
 
@@ -27,7 +27,7 @@ ms.locfileid: "85283342"
 
 ## <a name="in-this-section"></a>本節內容
 
-|規則|說明|
+|規則|描述|
 |----------|-----------------|
 |[CA1801:必須檢閱未使用的參數](../code-quality/ca1801.md)|方法簽章包括不用於方法主體中的參數；|
 |[CA1806:不要忽略方法的結果](../code-quality/ca1806.md)|已建立但從未使用新物件、已呼叫會建立並傳回新字串的方法，而新字串從未使用過，或者 COM 或 P/Invoke 方法傳回從未使用的 HRESULT 或錯誤碼。|
@@ -75,4 +75,5 @@ ms.locfileid: "85283342"
 |[CA2244：請勿複製索引元素初始化](../code-quality/ca2244.md)|物件初始化運算式有一個以上具有相同常數索引的索引項目目初始化運算式。 除了最後一個初始化運算式之外，所有的都是多餘的。|
 |[CA2245：請勿將屬性指派給屬性自身](../code-quality/ca2245.md)|屬性不小心指派給本身。|
 |[CA2246：請勿在相同的陳述式中指派符號及其成員](../code-quality/ca2246.md)|不建議在相同的語句中指派符號和其成員（也就是欄位或屬性）。 如果成員存取預定要在指派之前使用符號的舊值，或在此語句中指派新的值，則不會很清楚。|
+|[CA2247：傳遞給 TaskCompletionSource 函數的引數應該是 TaskCreationOptions 列舉，而不是 System.threading.tasks.taskcontinuationoptions> 列舉](../code-quality/ca2246.md)|TaskCompletionSource 具有可控制基礎工作的 TaskCreationOptions，以及接受儲存在工作中之物件狀態的函式。  不小心傳遞 System.threading.tasks.taskcontinuationoptions> 而不是 TaskCreationOptions，會導致呼叫將這些選項視為狀態。|
 |[CA2248：提供正確的 ' enum ' 引數給 ' Enum. HasFlag '](../code-quality/ca2248.md)|當做引數傳遞至方法呼叫的列舉類型 `HasFlag` ，與呼叫的列舉類型不同。|

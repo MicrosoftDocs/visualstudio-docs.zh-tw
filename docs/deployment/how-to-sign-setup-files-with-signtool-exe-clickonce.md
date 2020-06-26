@@ -1,7 +1,7 @@
 ---
-title: HOW TO：簽署安裝程式檔案使用 SignTool.exe (ClickOnce) |Microsoft Docs
+title: 如何使用 SignTool.exe （ClickOnce）簽署安裝程式檔案 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9e1911b6e86058b7f078f40fa10ca5e0e4e53c0
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928400"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382064"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>HOW TO：使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>How to: Sign setup files with SignTool.exe (ClickOnce) (如何：使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce))
 您可以使用 *SignTool.exe* 簽署安裝程式 (*setup.exe*)。 這項程序有助於確保不會在使用者電腦上安裝遭到修改的檔案。
 
  根據預設，ClickOnce 具有已簽署的資訊清單和已簽署的安裝程式。 不過，如果您稍後要變更安裝程式的參數，就必須在稍後簽署安裝程式。 如果在簽署安裝程式之後變更參數，簽章會損毀。
@@ -36,25 +36,25 @@ ms.locfileid: "62928400"
 
 1. 在開發電腦上，安裝您要用來簽署資訊清單的憑證。
 
-2. 在 [方案總管] 中選取專案。
+2. 在 [方案總管]**** 中選取專案。
 
-3. 在 [專案] 功能表上，按一下[*ProjectName* 屬性]。
+3. 在 [專案]**** 功能表上，按一下[*ProjectName 屬性]* ****。
 
-4. 在 [簽署] 頁面上，清除的 [簽署 ClickOnce 資訊清單]。
+4. 在 [簽署]**** 頁面上，清除的 [簽署 ClickOnce 資訊清單]****。
 
-5. 在 [發佈] 頁面上，按一下 [必要條件]。
+5. 在 [發佈]**** 頁面上，按一下 [必要條件]****。
 
-6. 確定已選取所有必要條件，然後按一下 [確定]。
+6. 確定已選取所有必要條件，然後按一下 [確定]****。
 
-7. 在 [發佈] 頁面上，確認發佈設定，然後按一下 [立即發佈]。
+7. 在 [發佈]**** 頁面上，確認發佈設定，然後按一下 [立即發佈]****。
 
      方案隨即將未簽署的應用程式資訊清單、未簽署的部署資訊清單、版本特定檔案，以及未簽署的安裝程式發行至發行資料夾位置。
 
-8. 在 [發佈] 頁面上，按一下 [必要條件]。
+8. 在 [發佈]**** 頁面上，按一下 [必要條件]****。
 
-9. 在 [必要條件] 對話方塊中，清除 [建立安裝程式以安裝必要條件元件]。
+9. 在 [必要條件]**** 對話方塊中，清除 [建立安裝程式以安裝必要條件元件]****。
 
-10. 在 [發佈] 頁面上，確認發佈設定，然後按一下 [立即發佈]。
+10. 在 [發佈]**** 頁面上，確認發佈設定，然後按一下 [立即發佈]****。
 
      方案隨即將已簽署的應用程式資訊清單、已簽署的部署資訊清單，以及版本特定檔案發行至發行資料夾位置。 發行流程不會覆寫未簽署的安裝程式。
 

@@ -1,45 +1,45 @@
 ---
-title: 如何：將必要條件納入 ClickOnce 應用程式 |Microsoft Docs
+title: 如何-包含 ClickOnce 應用程式的必要條件 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94ed90b9fcdd0c4ffe35789d00de4bbbd4aaa355
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 957b375a3f3a00e653118b59c48b7233197c30ca
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557639"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382389"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>如何：與 ClickOnce 應用程式一起包含必要元件
-在您隨 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式散發必要條件軟體之前，必須先將這些必要條件的安裝程式套件下載到您的開發電腦。 當您發行應用程式並選擇 [從應用程式的相同位置下載必要條件] 時，如果安裝程式套件不在 [套件] 資料夾中，就會發生錯誤。
+在您隨 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式散發必要條件軟體之前，必須先將這些必要條件的安裝程式套件下載到您的開發電腦。 當您發行應用程式並選擇 [從應用程式的相同位置下載必要條件]**** 時，如果安裝程式套件不在 [套件]**** 資料夾中，就會發生錯誤。
 
 > [!NOTE]
 > 若要加入 .NET Framework 的安裝程式套件，請參閱[開發人員 .NET Framework 部署指南](/dotnet/framework/deployment/deployment-guide-for-developers)。
 
-## <a name="Package"></a> 若要使用 Package.xml 新增安裝程式套件
+## <a name="to-add-an-installer-package-by-using-packagexml"></a><a name="Package"></a> 若要使用 Package.xml 新增安裝程式套件
 
-1. 在 [檔案總管] 中，開啟 [套件] 資料夾。
+1. 在 [檔案總管] 中，開啟 [套件]**** 資料夾。
 
-    根據預設，此路徑為 `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`。
+    根據預設，此路徑為 `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\` 。
 
 2. 開啟您要新增的必要條件資料夾，然後開啟安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 版本的語言資料夾 (例如，**en** 代表英文)。
 
 3. 在 [記事本] 中，開啟 *Package.xml* 檔案。
 
-4. 找出包含 `http://go.microsoft.com/fwlink`的**Name**元素，然後複製 URL。 包括 **LinkID** 部分。
+4. 找出包含的**Name**元素 `http://go.microsoft.com/fwlink` ，然後複製 URL。 包括 **LinkID** 部分。
 
    > [!NOTE]
-   > 如果沒有**Name**元素包含 `http://go.microsoft.com/fwlink`，請在必要條件的根資料夾中開啟 **.xml**檔案，然後找出**fwlink**字串。
+   > 如果沒有**Name**元素包含 `http://go.microsoft.com/fwlink` ，請在必要條件的根資料夾中開啟**Product.xml**檔案，然後找出**fwlink**字串。
 
    > [!IMPORTANT]
-   > 有些必要條件包含多個安裝程式套件 (例如，用於 32 位元或 64 位元系統)。 如果有多個 [Name] 元素包含 **fwlink**，則必須針對每一個元素重覆其餘步驟。
+   > 有些必要條件包含多個安裝程式套件 (例如，用於 32 位元或 64 位元系統)。 如果有多個 [Name]**** 元素包含 **fwlink**，則必須針對每一個元素重覆其餘步驟。
 
-5. 將 URL 貼上瀏覽器的網址列，然後在系統提示您執行或儲存時，選擇 [儲存]。
+5. 將 URL 貼上瀏覽器的網址列，然後在系統提示您執行或儲存時，選擇 [儲存]****。
 
     這個步驟會將安裝程式檔下載至您的電腦。
 
@@ -50,4 +50,4 @@ ms.locfileid: "77557639"
     現在您可以隨應用程式散發安裝程式套件。
 
 ## <a name="see-also"></a>另請參閱
-- [如何：使用 ClickOnce 應用程式安裝必要元件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [How to: Install prerequisites with a ClickOnce application](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) (如何：使用 ClickOnce 應用程式安裝必要元件)

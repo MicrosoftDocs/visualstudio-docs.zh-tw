@@ -1,7 +1,7 @@
 ---
-title: HOW TO：指定供 ClickOnce 部署的詳細資訊記錄檔 |Microsoft Docs
+title: 如何指定 ClickOnce 部署的詳細資訊記錄檔 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,30 +15,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d57c9aa618ec3df91b130cb2f870d88b01c323c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e1d2ca7c58d7da85ad67e56eae7713e517a1d2c
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406695"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381765"
 ---
-# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>HOW TO：指定供 ClickOnce 部署使用的詳細資訊記錄檔
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 會維護所有部署的活動記錄檔。 這些記錄檔記錄有關安裝、 初始化、 更新及解除安裝的詳細資料[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。 若要增加詳細資料，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]寫入這些記錄檔，使用登錄編輯程式 (*regedit.exe*) 指定的詳細資訊層級。
+# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>How to: Specify verbose log files for ClickOnce deployments (如何：指定 ClickOnce 部署的詳細資訊記錄檔)
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]維護所有部署的活動記錄檔。 這些記錄檔詳述有關安裝、初始化、更新和卸載部署的詳細資料 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 若要增加寫入這些記錄檔的詳細資料 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，請使用登錄編輯程式（*regedit.exe*）來指定詳細資訊層級。
 
 > [!CAUTION]
-> 如果您不當使用登錄編輯程式，您可能會導致嚴重的問題，可能會要求您重新安裝作業系統。 使用登錄編輯程式的風險須自行承擔。
+> 如果您不正確地使用登錄編輯程式，可能會導致嚴重問題，而需要重新安裝作業系統。 您必須自行負擔使用「登錄編輯程式」的風險。
 
- 下列程序描述如何指定詳細等級[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]記錄檔以取得目前的使用者。 若要減少層級的詳細資訊，請移除此登錄值。
+ 下列程式描述如何為目前的使用者指定記錄檔的詳細資訊層級 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 若要減少詳細等級，請移除此登錄值。
 
 ### <a name="to-specify-verbose-log-files"></a>若要指定詳細資訊記錄檔
 
-1. 開啟*Regedit.exe*。
+1. 開啟 *Regedit.exe*。
 
-2. 瀏覽至節點**HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**。
+2. 流覽至 [ **HKEY_CURRENT_USER \software\classes\software\microsoft\windows\currentversion\deployment**] 節點。
 
-3. 如有必要，建立名為的新字串值`LogVerbosityLevel`。
+3. 如有必要，請建立名為的新字串值 `LogVerbosityLevel` 。
 
-4. 設定`LogVerbosityLevel`值`1`。
+4. 將 `LogVerbosityLevel` 值設定為 `1` 。
 
 ## <a name="see-also"></a>另請參閱
 - [針對 ClickOnce 部署進行疑難排解](../deployment/troubleshooting-clickonce-deployments.md)

@@ -1,7 +1,7 @@
 ---
-title: HOW TO：啟用 CD 安裝的 AutoStart |Microsoft Docs
+title: 如何-啟用 CD 安裝的自動啟動 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,34 +16,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f5510ae63507aebb97a7f8bdfd3e367f1afc85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ff96cdfe412e5016c04daa2b22922b0ec47a3a3
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928513"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382441"
 ---
-# <a name="how-to-enable-autostart-for-cd-installations"></a>HOW TO：啟用 CD 安裝的 AutoStart
-部署時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]透過卸除式媒體例如 CD-ROM 或 DVD-ROM 的應用程式，您可以讓`AutoStart`以便[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]插入媒體時，將會自動啟動應用程式。
+# <a name="how-to-enable-autostart-for-cd-installations"></a>How to: Enable AutoStart for CD installations (如何：啟用 CD 安裝的 AutoStart)
+透過卸載 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 式媒體（例如 cd-rom 或 dvd-rom）部署應用程式時，您可以啟用， `AutoStart` 以便在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 插入媒體時自動啟動應用程式。
 
- `AutoStart` 您可以上啟用**發佈**頁面**專案設計工具**。
+ `AutoStart`可以在 [**專案設計**工具] 的 [**發行**] 頁面上啟用。
 
-### <a name="to-enable-autostart"></a>若要啟用自動啟動
+### <a name="to-enable-autostart"></a>啟用自動啟動
 
-1. 選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。
+1. 在**方案總管**中選取專案時，按一下 [**專案**] 功能表上的 [**屬性**]。
 
-2. 按一下 [發佈] 索引標籤。
+2. 按一下 [Publish (發行)] **** 索引標籤。
 
-3. 按一下 [選項] 按鈕。
+3. 按一下 [ **選項** ] 按鈕。
 
-     **發行選項** 對話方塊隨即出現。
+     [**發行選項**] 對話方塊隨即出現。
 
-4. 按一下 **部署**。
+4. 按一下 [部署]****。
 
-5. 選取 **若是使用光碟安裝時自動啟動安裝程式插入光碟後**核取方塊。
+5. 選取 [cd**安裝後自動啟動安裝程式**] 核取方塊。
 
-     *Autorun.inf*檔案會複製到發行位置，在發行應用程式。
+     當應用程式發行時，會將*自動*播放檔案複製到發行位置。
 
 ## <a name="see-also"></a>另請參閱
 - [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)
-- [如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [如何：使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

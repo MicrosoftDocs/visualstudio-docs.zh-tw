@@ -1,7 +1,7 @@
 ---
-title: HOW TO：自動累加 ClickOnce 的發行版本 |Microsoft Docs
+title: 如何自動遞增 ClickOnce 發行版本 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,32 +17,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cce9dfe48e34d642b115c8391de73c0350ce515b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 710f2d045af4da92116334e64efa5ce528563d1d
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928491"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382597"
 ---
-# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>HOW TO：自動累加 ClickOnce 的發佈版本
+# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>如何：自動累加 ClickOnce 的發佈版本
 
-發佈時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，變更`Publish Version`屬性可讓應用程式以更新形式發行。 根據預設，Visual Studio 會自動遞增`Revision`數目`Publish Version`每次發行應用程式。
+發行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，變更 `Publish Version` 屬性會導致應用程式發佈為更新。 根據預設，Visual Studio 會在 `Revision` `Publish Version` 您每次發行應用程式時，自動遞增的數目。
 
-您可以在停用此行為**發佈**頁**專案設計工具**。
+您可以在 [**專案設計**工具] 的 [**發行**] 頁面上停用此行為。
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
+> 您看到的對話方塊與功能表命令，可能會因您所使用的設定或版本，而與說明中所述不同。 若要變更您的設定，請在 [工具]**** 功能表上選擇 [匯入和匯出設定]****。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
-## <a name="to-disable-automatically-incrementing-the-publish-version"></a>若要停用 自動遞增發行版本
+## <a name="to-disable-automatically-incrementing-the-publish-version"></a>若要停用自動遞增發佈版本
 
-1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。
+1. 在方案總管 **** 中選取專案之後，按一下 [專案] **** 功能表中 [屬性] ****。
 
-2. 按一下 [發佈] 索引標籤。
+2. 按一下 [Publish (發行)] **** 索引標籤。
 
-3. 在 **發行版本**區段中，清除**隨著每次發行自動遞增修訂**核取方塊。
+3. 在 [**發行版本**] 區段中，清除 [**每次發行時自動遞增修訂**] 核取方塊。
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：設定 ClickOnce 發佈版本](../deployment/how-to-set-the-clickonce-publish-version.md)
+- [How to: Set the ClickOnce publish version (如何：設定 ClickOnce 發行版本)](../deployment/how-to-set-the-clickonce-publish-version.md)
 - [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)
-- [如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [如何：使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
