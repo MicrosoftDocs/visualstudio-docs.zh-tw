@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumInjectedSources::Reset | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25cfc11bb0a7d44a36071c4eb7b4ca68c6d5603d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1f00b0ad5eae835e4ed5aacb4819cb25b342e2f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744474"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468256"
 ---
 # <a name="idiaenuminjectedsourcesreset"></a>IDiaEnumInjectedSources::Reset
 將列舉序列重設為開頭。
@@ -31,5 +31,5 @@ HRESULT Reset();
 ## <a name="return-value"></a>傳回值
  傳回 `S_OK`。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

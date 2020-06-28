@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_samplerSlot | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 41c751ba-81be-4bd3-838f-8373fc146157
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a311b7139ba9b6d93eac1d50308db2e951c5c4d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 64cc4dbae33e8522e323681196a7401735f0257b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739379"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462383"
 ---
 # <a name="idiasymbolget_samplerslot"></a>IDiaSymbol::get_samplerSlot
 抓取取樣器位置。
@@ -30,10 +30,10 @@ HRESULT get_samplerSlot(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷保存取樣器位置之 `DWORD` 的指標。
+脫銷包含取樣器位置之的指標 `DWORD` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

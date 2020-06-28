@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumFrameData：： get_Count |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec182918cccb42cf4d1c3cfdb3ae816aeef97a73
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6b0e14272474724579a34480254e399c92d825f1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744633"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468340"
 ---
 # <a name="idiaenumframedataget_count"></a>IDiaEnumFrameData::get_Count
 抓取框架資料元素的數目。
@@ -36,8 +36,8 @@ HRESULT get_Count ( 
 脫銷傳回框架資料元素的數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)

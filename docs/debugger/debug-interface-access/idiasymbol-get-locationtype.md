@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_locationType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b10668a4767d411f48df213c79ae6508e7c0bf28
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 244f9c1b696b03a085e665c5e45abf200c5774cf
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739847"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462970"
 ---
 # <a name="idiasymbolget_locationtype"></a>IDiaSymbol::get_locationType
 抓取資料符號的位置類型。
@@ -33,14 +33,14 @@ HRESULT get_locationType ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)列舉中的值，指定資料符號的位置類型，例如 `static` 或 `local`。
+脫銷傳回[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)列舉中的值，指定資料符號的位置類型，例如 `static` 或 `local` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> @No__t_0 的傳回值表示該屬性不適用於符號。
+> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

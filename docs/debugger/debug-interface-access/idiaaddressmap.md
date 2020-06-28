@@ -1,7 +1,7 @@
 ---
 title: IDiaAddressMap | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e06acf045ce1893762d5c898752dd6bc40de50a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ddf4b1c2a6a22170fb52da200bbd53c2b6b96e62
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744984"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468529"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 可讓您控制 DIA SDK 如何計算 debug 物件的虛擬和相對虛擬位址。
@@ -29,7 +29,7 @@ IDiaAddressMap : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示 `IDiaAddressMap` 的方法。
+ 下表顯示的方法 `IDiaAddressMap` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -43,19 +43,19 @@ IDiaAddressMap : IUnknown
 |[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|提供位址對應以支援影像版面配置翻譯。|
 
 ## <a name="remarks"></a>備註
- 這個介面所提供的控制項會封裝在您提供的兩組資料中：影像標頭和位址對應。 大部分的用戶端會使用[IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法來尋找影像的適當偵錯工具資訊，而方法通常會探索所有必要的標頭並對應資料本身。 不過，有些用戶端會執行特殊處理和搜尋資料。 這類用戶端會使用 `IDiaAddressMap` 介面的方法，為 DIA SDK 提供搜尋結果。
+ 這個介面所提供的控制項會封裝在您提供的兩組資料中：影像標頭和位址對應。 大部分的用戶端會使用[IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法來尋找影像的適當偵錯工具資訊，而方法通常會探索所有必要的標頭並對應資料本身。 不過，有些用戶端會執行特殊處理和搜尋資料。 這類用戶端會使用介面的方法 `IDiaAddressMap` ，為 DIA SDK 提供搜尋結果。
 
 ## <a name="notes-for-callers"></a>呼叫者的注意事項
- 此介面可從 DIA 會話物件取得。 用戶端會在 DIA 會話物件介面（通常是[IDiaSession](../../debugger/debug-interface-access/idiasession.md)）上呼叫 `QueryInterface` 方法，以取出 `IDiaAddressMap` 介面。
+ 此介面可從 DIA 會話物件取得。 用戶端會 `QueryInterface` 在 DIA 會話物件介面（通常是[IDiaSession](../../debugger/debug-interface-access/idiasession.md)）上呼叫方法，以取得 `IDiaAddressMap` 介面。
 
 ## <a name="requirements"></a>需求
  標頭： Dia2。h
 
  程式庫： diaguids
 
- DLL： msdia80
+ DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

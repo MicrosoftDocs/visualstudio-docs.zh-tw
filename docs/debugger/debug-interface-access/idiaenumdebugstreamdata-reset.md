@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumDebugStreamData：： Reset |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7237951c930fb302ec1fcd6766beb510c5f985da
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f89406100ca4f033ba88b19f61a1cb7f91396638
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744802"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468438"
 ---
 # <a name="idiaenumdebugstreamdatareset"></a>IDiaEnumDebugStreamData::Reset
 重設為列舉序列的開頭。
@@ -31,5 +31,5 @@ HRESULT Reset ();
 ## <a name="return-value"></a>傳回值
  傳回 `S_OK`。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

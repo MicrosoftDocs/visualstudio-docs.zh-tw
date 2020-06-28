@@ -1,7 +1,7 @@
 ---
 title: 區塊 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c39c69900859957f0d0746c688334f31c8419d5f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 45e1d97c694806857d9ee7920e6d4fd640db4582
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745464"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462264"
 ---
-# <a name="block"></a>區塊
-每個程式碼區塊都是以 `SymTagBlock` 符號來識別。 區塊符號是用來識別函式內的嵌套範圍。
+# <a name="block"></a>封鎖
+每個程式碼區塊都是以符號來識別 `SymTagBlock` 。 區塊符號是用來識別函式內的嵌套範圍。
 
-## <a name="properties"></a>內容
+## <a name="properties"></a>屬性
  下表顯示對此符號類型有效的屬性。
 
 |屬性|資料類型|描述|
@@ -41,7 +41,7 @@ ms.locfileid: "72745464"
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|傳回 `SymTagBlock` （其中一個[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)值）。|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|傳回此區塊在可執行檔中的虛擬位址。|
 
-## <a name="see-also"></a>請參閱
-- [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
+## <a name="see-also"></a>另請參閱
+- [符號類型的語彙階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)
 - [符號位置](../../debugger/debug-interface-access/symbol-locations.md)

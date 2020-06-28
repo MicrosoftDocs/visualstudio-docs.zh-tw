@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol：： get_relativeVirtualAddress |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5425ab60987c93e4697989176e005ee669afbef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3e7ff0b8a9227cd05086f84e5db1a569fb2ffb2f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739417"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462452"
 ---
 # <a name="idiasymbolget_relativevirtualaddress"></a>IDiaSymbol::get_relativeVirtualAddress
-抓取位置的相對虛擬位址（RVA）。 當[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設定為 `LocIsStatic` 時使用。
+抓取位置的相對虛擬位址（RVA）。 當[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設定為時，請使用 `LocIsStatic` 。
 
 ## <a name="syntax"></a>語法
 
@@ -36,10 +36,10 @@ HRESULT get_relativeVirtualAddress ( 
 脫銷傳回位置的相對虛擬位址。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> @No__t_0 的傳回值表示該屬性不適用於符號。
+> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
 
 ## <a name="example"></a>範例
 
@@ -49,6 +49,6 @@ DWORD       rva;
 pSymbol->get_relativeVirtualAddress( &rva );
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

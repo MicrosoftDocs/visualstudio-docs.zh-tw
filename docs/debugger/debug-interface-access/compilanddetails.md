@@ -1,7 +1,7 @@
 ---
 title: CompilandDetails |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0bcedda06119149413895415272c1a18934bce7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: da102a8968bc3e29091f6b4b58ee6ef78c6c3fb3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280825"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462250"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 編譯模組資訊會在具有 `SymTagCompiland` 標記（低詳細資料）和 `SymTagCompilandDetails` 標記（高細節）的符號之間分割。 `SymTagCompilandDetails`提供與符號不提供之編譯模組相關的豐富資訊 `SymTagCompiland` 。

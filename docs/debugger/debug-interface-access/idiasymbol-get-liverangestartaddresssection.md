@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_liveRangeStartAddressSection | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a23f0661d8af6417d754fd7a71c66c5dd3ef1135
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2b8ba63eb1b68cc5e630e650bff80d86d6fb0b3f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739898"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463026"
 ---
 # <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 傳回區域符號有效範圍之起始位址的區段部分。
@@ -36,7 +36,7 @@ HRESULT get_liveRangeStartAddressSection ( 
 脫銷傳回起始位址範圍的區段部分。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
 > [!NOTE]
 > 傳回的錯誤碼表示符號沒有即時範圍資訊。
@@ -51,7 +51,7 @@ HRESULT get_liveRangeStartAddressSection ( 
 
  程式庫： diaguids
 
- DLL： msdia100
+ DLL： msdia100.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

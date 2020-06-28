@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumDebugStreams::Skip | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fb1cb952c41d412df72ff7c0f0ad90e56ee6c0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dac8022970384d4fd2c205d3553cd02b9cbf1856
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744707"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468375"
 ---
 # <a name="idiaenumdebugstreamsskip"></a>IDiaEnumDebugStreams::Skip
 在列舉序列中略過指定數目的 debug 資料流程。
@@ -36,7 +36,7 @@ HRESULT Skip ( 
 在列舉序列中要略過的 debug 資料流程數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，如果沒有其他要略過的記錄，則會傳回 `S_FALSE`。
+ 如果成功， `S_OK` 會傳回; 否則， `S_FALSE` 如果沒有其他要略過的記錄，則會傳回。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

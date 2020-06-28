@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_paramBasePointerRegisterId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bdfb5d276e4dc7414c78529c2a6f1644597cd3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2fe29506c0d25d2afc9914c21774dbf353a7a341
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739520"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462578"
 ---
 # <a name="idiasymbolget_parambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
-抓取暫存器的識別碼，該暫存器會保存參數的基底指標。 當[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設定為 `SymTagFunction` 時使用。
+抓取暫存器的識別碼，該暫存器會保存參數的基底指標。 當[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設定為時，請使用 `SymTagFunction` 。
 
 ## <a name="syntax"></a>語法
 
@@ -36,10 +36,10 @@ HRESULT get_paramBasePointerRegisterId ( 
 脫銷傳回包含參數之基底指標的暫存器識別碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> @No__t_0 的傳回值表示該屬性不適用於符號。
+> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
 
 ## <a name="remarks"></a>備註
 
@@ -48,7 +48,7 @@ HRESULT get_paramBasePointerRegisterId ( 
 
  程式庫： diaguids
 
- DLL： msdia100
+ DLL： msdia100.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaDataSource：： openSession |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dd6ab61db3e3bafd594298aa41d32bce64d4941
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b49c90374975865edcac8a94c504e1fa991d711a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744924"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468501"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 開啟查詢符號的會話。
@@ -36,7 +36,7 @@ ppSession
 脫銷傳回代表開啟會話的[IDiaSession](../../debugger/debug-interface-access/idiasession.md)物件。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。 下表顯示這個方法的可能傳回值。
+如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。 下表顯示這個方法的可能傳回值。
 
 |值|描述|
 |-----------|-----------------|
@@ -47,7 +47,7 @@ ppSession
 ## <a name="remarks"></a>備註
 這個方法會開啟資料來源的[IDiaSession](../../debugger/debug-interface-access/idiasession.md)物件。
 
-`IDiaSession` 物件會在資料來源中執行查詢。 會話會管理每一組 debug 符號的一個位址空間。 如果資料來源符號所描述的 .exe 或 .dll 檔案在多個位址範圍中為使用中（例如，因為多個進程已載入），則應該使用每個位址範圍的一個會話。
+`IDiaSession`物件會在資料來源中執行查詢。 會話會管理每一組 debug 符號的一個位址空間。 如果資料來源符號所描述的 .exe 或 .dll 檔案在多個位址範圍中為使用中（例如，因為多個進程已載入），則應該使用每個位址範圍的一個會話。
 
 ## <a name="example"></a>範例
 
@@ -60,7 +60,7 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

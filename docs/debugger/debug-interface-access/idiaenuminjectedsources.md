@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumInjectedSources | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: feaf5d372279c6ab24053058a14aba4b3a71fd78
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8ecd669e546f12972c2a11c3b038322ceaf18fc1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744464"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468242"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 列舉資料來源中包含的各種插入來源。
@@ -29,7 +29,7 @@ IDiaEnumInjectedSources : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示 `IDiaEnumInjectedSources` 的方法。
+下表顯示的方法 `IDiaEnumInjectedSources` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -44,10 +44,10 @@ IDiaEnumInjectedSources : IUnknown
 ## <a name="remarks"></a>備註
 
 ## <a name="notes-for-callers"></a>呼叫者的注意事項
-藉由呼叫[IDiaSession：： findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)方法與特定原始程式檔的名稱，或使用 `IDiaEnumInjectedSources` 介面的 GUID 呼叫[IDiaSession：： getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法，即可取得此介面。
+藉由呼叫[IDiaSession：： findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)方法與特定原始程式檔的名稱，或使用介面的 GUID 呼叫[IDiaSession：： getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法，即可取得此介面 `IDiaEnumInjectedSources` 。
 
 ## <a name="example"></a>範例
-這個範例會示範如何取得（`GetEnumInjectedSources` 函式），並使用（`DumpAllInjectedSources` 函式） `IDiaEnumInjectedSources` 介面。 如需 `PrintPropertyStorage` 函數的執行，請參閱[IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)介面。 如需替代輸出，請參閱[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)介面。
+這個範例會示範如何取得（函式 `GetEnumInjectedSources` ）並使用（函式 `DumpAllInjectedSources` ） `IDiaEnumInjectedSources` 介面。 如需函數的執行，請參閱[IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)介面 `PrintPropertyStorage` 。 如需替代輸出，請參閱[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)介面。
 
 ```C++
 
@@ -110,9 +110,9 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)

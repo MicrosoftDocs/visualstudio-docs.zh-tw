@@ -1,7 +1,7 @@
 ---
 title: FunctionArgType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3508c785dc583f6f40b055372aaf93e7f3c24a5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c732e91649116529d30591ba9182d65d4007c211
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745078"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468613"
 ---
 # <a name="functionargtype"></a>FunctionArgType
 函式的每個參數都是以 `SymTagFunctionArgType` 符號來識別。
 
-## <a name="properties"></a>內容
+## <a name="properties"></a>屬性
  下表顯示此符號類型的其他有效屬性。
 
 |屬性|資料類型|描述|
@@ -36,6 +36,6 @@ ms.locfileid: "72745078"
 |[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|參數的型別。|
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|類型符號的識別碼。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [FunctionType](../../debugger/debug-interface-access/functiontype.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumFrameData：： Clone |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47f6119eac1d48a7819f67bc57660c53e6b93b54
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2c7325c861e8e5186faa4056edd9b282ab47e64d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744657"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468361"
 ---
 # <a name="idiaenumframedataclone"></a>IDiaEnumFrameData::Clone
 建立枚舉器，其中包含與目前列舉值相同的列舉狀態。
@@ -36,7 +36,7 @@ HRESULT Clone( 
 脫銷傳回[IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)物件，其中包含重複的列舉值。 畫面格資料不會重複，只有枚舉器。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

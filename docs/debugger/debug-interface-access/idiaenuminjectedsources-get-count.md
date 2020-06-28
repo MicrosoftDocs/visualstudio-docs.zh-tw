@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumInjectedSources::get_Count | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ed8e0ca64e7e15fe38d706a1a7e0ed9f45cdcd3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1f332a7427431f5cd481530030e18d9a10368f67
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744526"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468284"
 ---
 # <a name="idiaenuminjectedsourcesget_count"></a>IDiaEnumInjectedSources::get_Count
 抓取插入的來源數目。
@@ -36,8 +36,8 @@ HRESULT get_Count ( 
 脫銷傳回插入的來源數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
 - [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)

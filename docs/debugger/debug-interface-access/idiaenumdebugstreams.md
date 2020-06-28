@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumDebugStreams | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e14e594b385a2fa93f51eed4dec36d74db347e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e73087786e43c254c9635b239f59e7b4dd982090
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744685"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468368"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 列舉資料來源中包含的各種 debug 資料流程。
@@ -29,11 +29,11 @@ IDiaEnumDebugStreams : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示 `IDiaEnumDebugStreams`的方法。
+下表顯示的方法 `IDiaEnumDebugStreams` 。
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|抓取此列舉值的 `IEnumVARIANT` 版本。|
+|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|抓取 `IEnumVARIANT` 此列舉值的版本。|
 |[IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)|抓取 debug 資料流程的數目。|
 |[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)|透過索引來抓取 debug 資料流程。|
 |[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)|在列舉序列中，捕獲指定數目的 debug 資料流程。|
@@ -45,10 +45,10 @@ IDiaEnumDebugStreams : IUnknown
 Debug 資料流程的內容與執行相依，而且資料格式未記載。
 
 ## <a name="notes-for-callers"></a>呼叫者的注意事項
-呼叫[IDiaSession：： getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)方法，以取得 `IDiaEnumDebugStreams` 物件。
+呼叫[IDiaSession：： getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)方法來取得 `IDiaEnumDebugStreams` 物件。
 
 ## <a name="example"></a>範例
-這個範例會示範如何存取此介面中可用的資料流程。 如需 `PrintStreamData` 函數的執行，請參閱[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)介面。
+這個範例會示範如何存取此介面中可用的資料流程。 如需函數的執行，請參閱[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)介面 `PrintStreamData` 。
 
 ```C++
 void DumpAllDebugStreams( IDiaSession* pSession)
@@ -82,9 +82,9 @@ void DumpAllDebugStreams( IDiaSession* pSession)
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
 - [IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)

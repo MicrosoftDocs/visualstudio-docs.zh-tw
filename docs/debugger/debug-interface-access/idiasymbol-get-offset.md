@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol：： get_offset |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: feb7620e507c5e57cf025211e42d541440af22f3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 71105c6c3f93f259bdb6ce8e5f46abe30c5953c2
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739581"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462613"
 ---
 # <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
-抓取符號位置的位移。 當[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)`LocIsRegRel` 或 `LocIsBitField` 時，請使用。
+抓取符號位置的位移。 當[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)為或時，請使用 `LocIsRegRel` `LocIsBitField` 。
 
 ## <a name="syntax"></a>語法
 
@@ -36,21 +36,21 @@ HRESULT get_offset ( 
 脫銷傳回符號位置的位移（以位元組為單位）。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> @No__t_0 的傳回值表示該屬性不適用於符號。
+> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
 
 ## <a name="remarks"></a>備註
- 位移是來自先前決定的某個已知點。 例如，`LocIsBitField` 位置類型的位移通常是從包含類別的開頭開始。
+ 位移是來自先前決定的某個已知點。 例如， `LocIsBitField` 位置類型的位移通常是從包含類別的開頭開始。
 
 ## <a name="requirements"></a>需求
 
 |需求|描述|
 |-----------------|-----------------|
 |標頭：|dia2。h|
-|版本:|DIA SDK v7.0|
+|版本：|DIA SDK v7.0|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

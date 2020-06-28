@@ -7,12 +7,12 @@ ms.assetid: 2c83cd19-2692-4aef-9cd7-b7842639cbce
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 69eb2e1f388c75301f7b32fc38c81ef48ab90a10
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 63e64b64b855df6f287dad0fbec363f8b783f6a2
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386127"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85503458"
 ---
 ## <a name="how-long-does-it-take-for-my-cloud-subscription-to-be-canceled"></a>取消雲端訂閱需要多久的時間？
 
