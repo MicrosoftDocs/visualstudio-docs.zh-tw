@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback::NotifyOpenDBG | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70607af90469594491223afa5f316dc63bf935b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0d4572df216e04e645cae92bf479d17166edc256
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743073"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466746"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
 當候選的 dbg 檔案已開啟時呼叫。
@@ -38,10 +38,10 @@ HRESULT NotifyOpenDBG ( 
 
  `resultCode`
 
-在表示套用至這個檔案的成功（`S_OK`）或負載失敗的程式碼。
+在指出套用至此檔案的成功（ `S_OK` ）或負載失敗的程式碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。 傳回碼通常會被忽略。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。 傳回碼通常會被忽略。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

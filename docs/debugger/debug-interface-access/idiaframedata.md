@@ -1,7 +1,7 @@
 ---
 title: IDiaFrameData | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d586cfe3e78a320ffed42e7181463eb79a6b313a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ee2f68066de6a41e6fd6a1cf4143613a7597d6f1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743461"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467180"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 公開堆疊框架的詳細資料。
@@ -29,7 +29,7 @@ IDiaFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示 `IDiaFrameData` 的方法。
+下表顯示的方法 `IDiaFrameData` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -45,9 +45,9 @@ IDiaFrameData : IUnknown
 |[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|抓取堆疊上推送之已儲存暫存器的位元組數目。|
 |[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|抓取在呼叫目前的函式之前，用來計算暫存器集的程式字串。|
 |[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|抓取表示系統例外狀況處理已生效的旗標。|
-|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|抓取表示C++例外狀況處理作用中的旗標。|
+|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|抓取表示 c + + 例外狀況處理作用中的旗標。|
 |[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|抓取旗標，指出區塊包含函數的進入點。|
-|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|抓取表示基底指標已配置給此位址範圍內之程式碼的旗標。 此方法已淘汰。|
+|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|抓取表示基底指標已配置給此位址範圍內之程式碼的旗標。 此方法已被取代。|
 |[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|捕獲編譯器特定的框架類型。|
 |[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|抓取封閉函數的框架資料介面。|
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|執行堆疊回溯，並傳回堆疊引導框架介面中暫存器的目前狀態。|
@@ -59,7 +59,7 @@ IDiaFrameData : IUnknown
  藉由呼叫[IDiaEnumFrameData：： Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)或[IDiaEnumFrameData：： Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)方法來取得此介面。 如需詳細資訊，請參閱[IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)介面。
 
 ## <a name="example"></a>範例
- 這個範例會列印出 `IDiaFrameData` 物件的屬性。 如需如何取得 `IDiaFrameData` 介面的範例，請參閱[IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)介面。
+ 這個範例會列印出物件的屬性 `IDiaFrameData` 。 如需如何取得介面的範例，請參閱[IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)介面 `IDiaFrameData` 。
 
 ```C++
 void PrintFrameData(IDiaFrameData* pFrameData){
@@ -117,9 +117,9 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)

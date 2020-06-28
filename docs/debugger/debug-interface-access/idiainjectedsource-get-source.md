@@ -1,7 +1,7 @@
 ---
 title: IDiaInjectedSource：： get_source |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b389df8220766ffbdbf865a2b8e70877fe91b3f1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8408145d83b3b78f8392603466980495ab32d24b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743342"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467026"
 ---
 # <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 抓取原始程式碼位元組。
@@ -39,14 +39,14 @@ HRESULT get_source ( 
 
  `pcbData`
 
-脫銷傳回位元組數目，表示傳回的位元組數。 如果 `NULL` `data`，則 `pcbData` 是可用的資料位元組總數。
+脫銷傳回位元組數目，表示傳回的位元組數。 如果 `data` 為 `NULL` ，則 `pcbData` 是可用的資料位元組總數。
 
  `data[]`
 
 脫銷要填入來源位元組的緩衝區。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援此屬性，則傳回。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

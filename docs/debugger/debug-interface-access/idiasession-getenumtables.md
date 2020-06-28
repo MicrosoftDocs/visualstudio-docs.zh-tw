@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::getEnumTables | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41679304986f5de948119a2958524b8f269ceb42
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4b9b229de3818b00379d95a5c19e35c7e83c845e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741914"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465423"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 抓取符號存放區中包含的所有資料表的列舉值。
@@ -36,10 +36,10 @@ HRESULT getEnumTables (
 脫銷傳回[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)物件。 使用此介面來列舉符號存放區中的資料表。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
 ## <a name="example"></a>範例
-這個範例會呈現一般函式，該函式會使用 `getEnumTables` 方法來取得特定的列舉值物件。 如果找到列舉值，函數會傳回可轉換成所需介面的指標。否則，函數會傳回 `NULL`。
+這個範例會呈現一般函式，該函式會使用 `getEnumTables` 方法來取得特定的列舉值物件。 如果找到列舉值，函數會傳回可轉換成所需介面的指標。否則，函數會傳回 `NULL` 。
 
 ```C++
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
@@ -67,6 +67,6 @@ IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

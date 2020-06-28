@@ -1,7 +1,7 @@
 ---
 title: IDiaStackFrame | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a54bd52f3783bb0bedc279cffafab2f21e0b0f39
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e3cadcfd8fed1818e18d276503c0843e0567addf
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741549"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464909"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 公開堆疊框架的屬性。
@@ -33,9 +33,9 @@ IDiaStackFrame : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|抓取旗標，指出已為此位址範圍中的程式碼配置基底指標。 此方法已淘汰。|
+|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|抓取旗標，指出已為此位址範圍中的程式碼配置基底指標。 此方法已被取代。|
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|抓取框架的位址基底。|
-|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|抓取表示C++例外狀況處理已生效的旗標。|
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|抓取表示 c + + 例外狀況處理已生效的旗標。|
 |[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|抓取旗標，指出區塊包含函數的進入點。|
 |[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|抓取推播于堆疊上的本機變數的位元組數目。|
 |[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|抓取堆疊上推送之參數的位元組數目。|
@@ -54,7 +54,7 @@ IDiaStackFrame : IUnknown
 堆疊框架是函數呼叫在其執行期間的抽象概念。
 
 ## <a name="notes-for-callers"></a>呼叫者的注意事項
-藉由呼叫[IDiaEnumStackFrames：： Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)方法取得此介面。 如需取得 `IDiaStackFrame` 介面的範例，請參閱[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)介面。
+藉由呼叫[IDiaEnumStackFrames：： Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)方法取得此介面。 如需取得介面的範例，請參閱[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)介面 `IDiaStackFrame` 。
 
 ## <a name="example"></a>範例
 這個範例會顯示堆疊框架的各種屬性。
@@ -105,9 +105,9 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
 - [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)

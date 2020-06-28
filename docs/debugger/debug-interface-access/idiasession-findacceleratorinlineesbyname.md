@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findAcceleratorInlineesByName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: e203e5c2-6563-43fa-be56-3063955043ab
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 007477d3f0de3767b0c5ef0af977f969505884ed
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: abd6f8afb7275503fa3de855575e9dcb6dad0fb3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742303"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465843"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 針對對應至指定之內嵌函數名稱的內嵌框架，傳回符號的列舉。
@@ -37,19 +37,19 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 
  `option`
 
-在搜尋對應至 `name`的內嵌畫面格時，所要使用的名稱搜尋選項。 如需詳細資訊，請參閱[NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)。
+在搜尋對應于的內嵌框架時，所要使用的名稱搜尋選項 `name` 。 如需詳細資訊，請參閱[NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)。
 
  `ppResult`
 
-脫銷以結果初始化之 `IDiaEnumSymbols` 介面指標的指標。
+脫銷以 `IDiaEnumSymbols` 結果初始化之介面指標的指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此函式只會在快速鍵 stub 函數中搜尋 inlinees。 它會忽略C++原生程式記錄。
+ 此函式只會在快速鍵 stub 函數中搜尋 inlinees。 它會忽略原生 c + + 程式記錄。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

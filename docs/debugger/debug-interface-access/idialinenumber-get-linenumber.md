@@ -1,7 +1,7 @@
 ---
 title: IDiaLineNumber::get_lineNumber | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 726f5df7ff898675fc9253b47785c666d435a387
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 172ef1631dedc3caf90d3facf1d2061dc8590fa4
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743209"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466879"
 ---
 # <a name="idialinenumberget_linenumber"></a>IDiaLineNumber::get_lineNumber
 抓取原始程式檔中的行號。
@@ -36,7 +36,7 @@ HRESULT get_lineNumber ( 
 脫銷傳回原始程式檔中的行號。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援此屬性，則傳回。 否則會傳回錯誤碼。
 
 ## <a name="example"></a>範例
 
@@ -46,5 +46,5 @@ DWORD linenum;
 pLine->get_lineNumber( &linenum );
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_classParentId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ea947bf788c6f8fe7b4111e3888029b9d4bf31
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 65c4dc9d14808edbfef2076bf89478e4432c44ea
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740862"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464097"
 ---
 # <a name="idiasymbolget_classparentid"></a>IDiaSymbol::get_classParentId
 抓取符號的類別父系識別碼。
@@ -36,10 +36,10 @@ HRESULT get_classParentId ( 
 脫銷傳回符號的類別父系識別碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> @No__t_0 的傳回值表示該屬性不適用於符號。
+> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
 
 ## <a name="remarks"></a>備註
  識別碼是 DIA SDK 所建立的唯一值，用來將所有符號標記為唯一。
@@ -49,7 +49,7 @@ HRESULT get_classParentId ( 
 |需求|描述|
 |-----------------|-----------------|
 |標頭：|dia2。h|
-|版本:|DIA SDK v7.0|
+|版本：|DIA SDK v7.0|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

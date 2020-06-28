@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkHelper::pdataForVA | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d51736a80021847881db164c9e176a010124638
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d6e9b3e812311ef3d9555584d72ebb966098232a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741393"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464706"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 傳回與虛擬位址相關聯的 PDATA 資料區塊。
@@ -51,12 +51,12 @@ HRESULT pdataForVA( 
 [in、out]以要求的資料填入的緩衝區。 不可以是 `NULL`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 如果指定的位址沒有 PDATA，則會傳回 `S_FALSE`。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 如果指定的位址沒有 PDATA，則傳回 `S_FALSE` 。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
  編譯模組的 PDATA （名為 ". PDATA" 的區段）包含函式例外狀況處理的相關資訊。
 
- 呼叫者知道要傳回多少資料，讓呼叫端不需要詢問有多少資料可用。 因此，如果 `NULL` `pbData` 參數，則此方法的執行可接受傳回錯誤。
+ 呼叫者知道要傳回多少資料，讓呼叫端不需要詢問有多少資料可用。 因此，如果參數為，則可接受此方法的實作為傳回錯誤 `pbData` `NULL` 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

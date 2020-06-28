@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::put_loadAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39db3bc0e0107e734f5de3f6902a2ca0fcc55bb0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 807346ef5a34c0b175257fe2099dc25e8de692f6
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741896"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465381"
 ---
 # <a name="idiasessionput_loadaddress"></a>IDiaSession::put_loadAddress
 設定可執行檔的載入位址，該檔案會對應到此符號存放區中的符號。
@@ -41,5 +41,5 @@ HRESULT put_loadAddress ( 
 > [!NOTE]
 > 當您取得[IDiaSession](../../debugger/debug-interface-access/idiasession.md)物件時，如果您需要在符號上使用任何虛擬屬性，則在開始使用物件之前，必須呼叫這個方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

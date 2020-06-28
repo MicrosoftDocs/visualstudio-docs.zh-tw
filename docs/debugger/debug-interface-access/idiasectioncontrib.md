@@ -1,7 +1,7 @@
 ---
 title: IDiaSectionContrib | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 807b9ada9b9424481a184e548e741131d66ab853
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 82d1a52616273a1cfe1d54580c91ec4ba6e1c09e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742464"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466067"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 抓取描述區段貢獻的資料，也就是由編譯模組貢獻給影像的連續記憶體區塊。
@@ -29,7 +29,7 @@ IDiaSectionContrib : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示 `IDiaSectionContrib` 的方法。
+下表顯示的方法 `IDiaSectionContrib` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -61,10 +61,10 @@ IDiaSectionContrib : IUnknown
 ## <a name="remarks"></a>備註
 
 ## <a name="notes-for-callers"></a>呼叫者的注意事項
-這個介面是藉由呼叫[IDiaEnumSectionContribs：： Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)和[IDiaEnumSectionContribs：： Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)方法來取得。 如需取得 `IDiaSectionContrib` 介面的範例，請參閱[IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)介面。
+這個介面是藉由呼叫[IDiaEnumSectionContribs：： Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)和[IDiaEnumSectionContribs：： Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)方法來取得。 如需取得介面的範例，請參閱[IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)介面 `IDiaSectionContrib` 。
 
 ## <a name="example"></a>範例
-此函式會顯示每個區段的位址以及任何相關聯的符號。 請參閱[IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)介面，以瞭解如何取得 `IDiaSectionContrib` 介面。
+此函式會顯示每個區段的位址以及任何相關聯的符號。 請參閱[IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)介面，以瞭解如何 `IDiaSectionContrib` 取得介面。
 
 ```C++
 void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)
@@ -131,9 +131,9 @@ void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
 - [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)

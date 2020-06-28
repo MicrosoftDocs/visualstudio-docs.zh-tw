@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSourceFiles | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 091d2f5996d53341e57c5c1b2125609642a156eb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 810ccbfc47a7fabaefdca5a1f6c158b328c4509c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744020"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467845"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 列舉資料來源中包含的各種來源檔案。
@@ -29,11 +29,11 @@ IDiaEnumSourceFiles : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示 `IDiaEnumSourceFiles` 的方法。
+下表顯示的方法 `IDiaEnumSourceFiles` 。
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|抓取此列舉值的 `IEnumVARIANT Interface` 版本。|
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|抓取 `IEnumVARIANT Interface` 此列舉值的版本。|
 |[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|抓取原始檔的數目。|
 |[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|藉由索引來抓取原始程式檔。|
 |[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|在列舉序列中，抓取指定的來源檔案數目。|
@@ -44,10 +44,10 @@ IDiaEnumSourceFiles : IUnknown
 ## <a name="remarks"></a>備註
 
 ## <a name="notes-for-callers"></a>呼叫者的注意事項
-在[IDiaTable](../../debugger/debug-interface-access/idiatable.md)物件上呼叫 `QueryInterface` 方法，以取得此介面。 如需詳細資訊，請參閱範例。
+`QueryInterface`在[IDiaTable](../../debugger/debug-interface-access/idiatable.md)物件上呼叫方法，以取得此介面。 如需詳細資訊，請參閱範例。
 
 ## <a name="example"></a>範例
-這個範例示範如何從 DIA 會話物件中的資料表清單取得 `IDiaEnumSourceFiles` 介面。 如需存取原始程式檔資訊的範例，請參閱[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)介面。
+這個範例會示範如何 `IDiaEnumSourceFiles` 從 DIA 會話物件中的資料表清單取得介面。 如需存取原始程式檔資訊的範例，請參閱[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)介面。
 
 ```C++
 
@@ -84,9 +84,9 @@ IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

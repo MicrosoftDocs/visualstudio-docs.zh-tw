@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkFrame | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b2657127726e387e81a5b28c639abbaa5399019
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ee80b9bbb6d16f2aa4264491593d1864bdade690
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741433"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464804"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 維護[IDiaFrameData：： execute](../../debugger/debug-interface-access/idiaframedata-execute.md)方法調用之間的堆疊內容。
@@ -29,7 +29,7 @@ IDiaStackWalkFrame : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示 `IDiaStackWalkFrame` 的方法。
+ 下表顯示的方法 `IDiaStackWalkFrame` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -43,15 +43,15 @@ IDiaStackWalkFrame : IUnknown
  此介面會在程式執行期間用來讀取和寫入暫存器，以及存取記憶體和尋找傳回位址。
 
 ## <a name="notes-for-callers"></a>呼叫者的注意事項
- 用戶端應用程式會執行此介面，並將介面的實例傳遞至[IDiaFrameData：： execute](../../debugger/debug-interface-access/idiaframedata-execute.md)方法。 再次使用此介面的相同實例，以在每次叫用 `execute` 方法時維護暫存器的狀態。 @No__t_0 方法也會使用這個介面來判斷傳回位址。
+ 用戶端應用程式會執行此介面，並將介面的實例傳遞至[IDiaFrameData：： execute](../../debugger/debug-interface-access/idiaframedata-execute.md)方法。 再次使用此介面的相同實例，以在每次叫用方法時維護暫存器的狀態 `execute` 。 `execute`方法也會使用這個介面來判斷傳回位址。
 
 ## <a name="requirements"></a>需求
  標頭： Dia2。h
 
  程式庫： diaguids
 
- DLL： msdia80
+ DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)

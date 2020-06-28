@@ -1,7 +1,7 @@
 ---
 title: IDiaPropertyStorage：： Enum |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00bd1ea5e20d30fa1d2c32101b56f55d169f1ce2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 89c5b6418e832dd145837e579cfded3f47022e00
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742948"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466599"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
 取得此集合中屬性的列舉值。
@@ -36,7 +36,7 @@ HRESULT Enum ( 
 脫銷傳回 `IEnumSTATPROPSTG` 物件（在 VisualStudio 中），代表屬性的列舉。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

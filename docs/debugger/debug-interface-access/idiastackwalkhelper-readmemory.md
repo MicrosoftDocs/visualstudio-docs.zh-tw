@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkHelper：： readMemory |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57afd033b2d969a4ed57dc713b2c4266e0ead632
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bc768db3f42f610a8efd30cea567e721929cb291
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741354"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464692"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 從記憶體中可執行檔的影像讀取資料區塊。
@@ -49,15 +49,15 @@ HRESULT readMemory( 
 
  `pcbData`
 
-脫銷傳回實際讀取的位元組數目。 如果 `NULL` `pbData`，則這是可用的資料位元組總數。
+脫銷傳回實際讀取的位元組數目。 如果 `pbData` 為 `NULL` ，則這是可用的資料位元組總數。
 
  `pbData`
 
 [in、out]填入記憶體讀取的緩衝區。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)

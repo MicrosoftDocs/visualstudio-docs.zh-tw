@@ -1,7 +1,7 @@
 ---
 title: IDiaSession | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f983275974ed0ec3fb0e6091f5b9e73cdccd76ef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7fb8c5336a14180b3742fa02a91e6532b6e5831
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741848"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465346"
 ---
 # <a name="idiasession"></a>IDiaSession
 提供 debug 符號的查詢內容。
@@ -29,11 +29,11 @@ IDiaSession : IUnknown
 ```
 
 ## <a name="methods"></a>方法
-下表顯示 `IDiaSession` 的方法。
+下表顯示的方法 `IDiaSession` 。
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|抓取可執行檔的載入位址，此檔案會對應至這個符號存放區中的符號。 這與傳遞給 `put_loadAddress` 方法的值相同。|
+|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|抓取可執行檔的載入位址，此檔案會對應至這個符號存放區中的符號。 這是傳遞給方法的相同值 `put_loadAddress` 。|
 |[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|設定可執行檔的載入位址，該檔案會對應到此符號存放區中的符號。 **注意：** 當您取得 `IDiaSession` 物件，以及開始使用物件之前，請務必呼叫這個方法。|
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|抓取全域範圍的參考。|
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|抓取符號存放區中包含的所有資料表的列舉值。|
@@ -71,10 +71,10 @@ IDiaSession : IUnknown
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|針對對應至指定來源位置的內嵌框架，傳回符號的列舉。|
 
 ## <a name="remarks"></a>備註
-建立 `IDiaSession` 物件之後，請務必呼叫[IDiaSession：:P ut_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)方法，而傳遞給 `put_loadAddress` 方法的值必須為非零，才能存取符號的任何虛擬位址（VA）屬性。 載入位址來自于載入所要調試之可執行檔的任何程式。 例如，您可以呼叫 Win32 函數 `GetModuleInformation`，以取得可執行檔的控制碼，以抓取可執行檔的載入位址。
+在建立物件之後，請務必呼叫[IDiaSession：:p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)方法， `IDiaSession` 而傳遞給方法的值必須為 `put_loadAddress` 非零，才能存取符號的任何虛擬位址（VA）屬性。 載入位址來自于載入所要調試之可執行檔的任何程式。 例如，您可以呼叫 Win32 函數，以取得可執行檔的 `GetModuleInformation` 控制碼，以抓取可執行檔的載入位址。
 
 ## <a name="example"></a>範例
-這個範例示範如何取得 `IDiaSession` 介面，做為 DIA SDK 一般初始化的一部分。
+這個範例示範如何在 DIA SDK 的 `IDiaSession` 一般初始化中取得介面。
 
 ```C++
 CComPtr<IDiaDataSource> pSource;
@@ -114,12 +114,12 @@ void InitializeDIA(const char *szFilename)
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
-- [Exe](../../debugger/debug-interface-access/exe.md)
+- [Convert.exe](../../debugger/debug-interface-access/exe.md)
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)
