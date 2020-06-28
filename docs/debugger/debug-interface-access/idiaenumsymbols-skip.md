@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSymbols：： Skip |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9252826470decd3cddfabdcc2a00e22037d5de5c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fea037e4e99cc5c8822987c30a94adf37ebe276e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743914"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467705"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
 略過列舉序列中指定數目的符號。
@@ -36,7 +36,7 @@ HRESULT Skip ( 
 在要略過的列舉序列中的符號數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，如果沒有其他要略過的符號，則會傳回 `S_FALSE`。
+ 如果成功， `S_OK` 會傳回; 否則， `S_FALSE` 如果沒有其他要略過的符號，則會傳回。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

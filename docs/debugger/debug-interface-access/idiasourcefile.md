@@ -1,7 +1,7 @@
 ---
 title: IDiaSourceFile | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08334c59ea061cee1618c76aa61ec6aa6fb8d7d4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c28559eb3b936505cf03c6499dd79178554645bf
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741782"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465161"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 代表原始檔。
@@ -29,7 +29,7 @@ IDiaSourceFile : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示 `IDiaSourceFile` 的方法。
+下表顯示的方法 `IDiaSourceFile` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -77,9 +77,9 @@ void ShowSourceFiles(IDiaTable *pTable)
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)
 - [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaInjectedSource：： get_sourceCompression |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9428b30df82d92a8c74511644aaf97f2166807a2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e32450e355d757081efaf66e7c5abaf179e7fd95
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743325"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467019"
 ---
 # <a name="idiainjectedsourceget_sourcecompression"></a>IDiaInjectedSource::get_sourceCompression
 抓取所使用之來源壓縮的指標。
@@ -36,10 +36,10 @@ HRESULT get_sourceCompression ( 
 脫銷傳回所使用之來源壓縮的指標。 值為零表示未使用任何來源壓縮。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援此屬性，則傳回。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
  這個方法所傳回的值是特定于所使用的編譯器。 例如，編譯器可能會使用執行長度編碼或 Huffman 樣式壓縮。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

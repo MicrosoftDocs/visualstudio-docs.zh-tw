@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findLinesByLinenum | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5d64e9484b9450f5211e271df3b154ebab0fa75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 240eb3196ac47bf48bc6d6c3ef3ca844ec010dde
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742096"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465661"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
 判斷原始程式檔中指定行號位於或接近的編譯模組行號。
@@ -59,7 +59,7 @@ HRESULT findLinesByLinenum ( 
 脫銷傳回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta，其中包含所抓取的行號清單。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
 ## <a name="example"></a>範例
 下列範例示範如何開啟原始程式檔、列舉此檔案所提供的 compilands，以及在原始程式檔中尋找每個編譯模組啟動的行號。
@@ -101,7 +101,7 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)

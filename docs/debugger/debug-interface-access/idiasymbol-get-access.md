@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol：： get_access |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8f476a95215eda69a3655540891017eac2c88e4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e14a713772a183100753212effcb696e5d5f1f05
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741094"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464388"
 ---
 # <a name="idiasymbolget_access"></a>IDiaSymbol::get_access
 抓取類別成員的存取修飾詞。
@@ -33,21 +33,21 @@ HRESULT get_access ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷傳回[CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)列舉中的值，指定類別成員的存取修飾詞。
+脫銷從指定類別成員之存取修飾詞的[CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)列舉傳回值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> @No__t_0 的傳回值表示該屬性不適用於符號。
+> 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
 ## <a name="requirements"></a>需求
 
 |需求|描述|
 |-----------------|-----------------|
 |標頭：|dia2。h|
-|版本:|DIA SDK v7.0|
+|版本：|DIA SDK v7.0|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)

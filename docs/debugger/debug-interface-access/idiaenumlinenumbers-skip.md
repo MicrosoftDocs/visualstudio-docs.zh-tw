@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumLineNumbers：： Skip |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58b959db58688fd13c3539f720315971e774a96d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9301b3567b88079c9d7ff91dbfb866a048324294
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744365"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468193"
 ---
 # <a name="idiaenumlinenumbersskip"></a>IDiaEnumLineNumbers::Skip
 在列舉序列中略過指定數目的行號。
@@ -36,7 +36,7 @@ HRESULT Skip ( 
 在要略過的列舉序列中的行號數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，如果沒有更多行號可略過，則會傳回 `S_FALSE`。
+ 如果成功， `S_OK` 會傳回; 否則， `S_FALSE` 如果沒有更多行號可以略過，則會傳回。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

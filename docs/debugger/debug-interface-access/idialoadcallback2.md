@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7db8b6a115acdafeca2e7e0adbe11be97834cd6d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 248e73d9a17ed8baab1bcaf583e71cf02f821bfe
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742954"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466613"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 從 DIA 符號尋找程式接收回呼，允許在尋找進程上加諸限制。
@@ -46,9 +46,9 @@ IDiaLoadCallback2 : IDiaLoadCallback
 
  程式庫： diaguids
 
- DLL： msdia80
+ DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

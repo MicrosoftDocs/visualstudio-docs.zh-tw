@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkFrame：： searchForReturnAddressStart |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ad1c42a39b9c35cc1436488e19481f2b286b6f5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 361aa5083f0d3abafc42ddbacf9bee4e464a3336
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741453"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464811"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
 在指定的堆疊框架中，搜尋位於或接近指定位址的傳回位址。
@@ -43,11 +43,11 @@ HRESULT searchForReturnAddressStart ( 
 
  `returnAddress`
 
-脫銷傳回最接近 `startAddress` 的函式傳回位址。
+脫銷將最接近的函式傳回位址傳回至 `startAddress` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

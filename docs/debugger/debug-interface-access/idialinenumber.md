@@ -1,7 +1,7 @@
 ---
 title: IDiaLineNumber | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 819fe28b9ba3fb95e749f0be53702dd7fdccf008
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c5b1bafd47f4888d9fa352553c4337d0c6c932bd
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743099"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466788"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 存取描述從影像文字位元組區塊對應至原始程式檔行號之程式的資訊。
@@ -29,7 +29,7 @@ IDiaLineNumber : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示 `IDiaLineNumber` 的方法。
+下表顯示的方法 `IDiaLineNumber` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -54,7 +54,7 @@ IDiaLineNumber : IUnknown
 藉由呼叫[IDiaEnumLineNumbers：： Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)或[IDiaEnumLineNumbers：： Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)方法來取得此介面。
 
 ## <a name="example"></a>範例
-下列函式會顯示函式中所使用的行號（以 `pSymbol` 表示）。
+下列函式會顯示函式中所使用的行號（以表示 `pSymbol` ）。
 
 ```C++
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
@@ -139,9 +139,9 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)
