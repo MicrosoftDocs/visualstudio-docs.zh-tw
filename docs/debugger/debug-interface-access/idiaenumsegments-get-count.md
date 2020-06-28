@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSegments::get_Count | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16287d83c19ef01f5ba59127ce49bec4b7312b4b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 74597d8e5deab9fc572500bef0b4175fd5722d96
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744224"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468055"
 ---
 # <a name="idiaenumsegmentsget_count"></a>IDiaEnumSegments::get_Count
 抓取區段的數目。
@@ -35,8 +35,8 @@ HRESULT get_Count ( 
 - [out，retval]傳回區段的數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
 - [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findLinesByVA | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2513825fd2b6f4e6035f9f23295f0c9f00385d0a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c5e39793e2060daebf93759feb9c64622a9cf880
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742081"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465577"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 抓取指定虛擬位址（VA）範圍內所包含之行的行號資訊。
@@ -64,6 +64,6 @@ IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSourceFile::get_fileName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6e871570ad49a4efe2df320f98fe56b5372c6bb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 35935f3f61fbbdc4ded91c7f1ec2f3d03e6cefab
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741799"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465290"
 ---
 # <a name="idiasourcefileget_filename"></a>IDiaSourceFile::get_fileName
 抓取來原始檔案名。
@@ -36,7 +36,7 @@ HRESULT get_fileName ( 
 脫銷傳回來原始檔案名。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

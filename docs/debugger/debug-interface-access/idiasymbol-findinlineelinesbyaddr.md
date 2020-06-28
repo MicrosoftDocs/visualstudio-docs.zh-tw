@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findInlineeLinesByAddr | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: f1ab47ca-c851-48ea-9c12-47fb80b31102
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1709120dfa8e115f4b14a4ee4e2d1c7ffb293329
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6ea271ae921ebefe9c579a89b487a6f96c014f1d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741213"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464545"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
 抓取列舉型別，可讓用戶端逐一查看在指定的位址範圍內，直接或間接內嵌之所有函式的行號資訊。
@@ -49,9 +49,9 @@ HRESULT findInlineeLinesByAddr ( 
 脫銷保存 `IDiaEnumLineNumbers` 物件，其中包含所抓取的行號清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

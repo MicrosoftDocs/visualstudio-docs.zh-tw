@@ -1,7 +1,7 @@
 ---
 title: IDiaFrameData::execute | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c9af8293dfc6a35e5f0e42d9596494d74b10aa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2587d10b613200b1bf850636f613abbb497e04de
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743689"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467446"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 執行堆疊回溯，並在堆疊引導框架介面中傳回結果。
@@ -36,7 +36,7 @@ HRESULT execute ( 
 在保存框架暫存器狀態的[IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。 下表顯示這個方法的可能傳回值。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。 下表顯示這個方法的可能傳回值。
 
 |值|描述|
 |-----------|-----------------|
@@ -46,8 +46,8 @@ HRESULT execute ( 
 |E_DIA_VALUE|計算值時發生錯誤（例如，除數為零）。|
 
 ## <a name="remarks"></a>備註
- 這個方法是在調試過程中呼叫，以便回溯堆疊。 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)物件是由用戶端應用程式所執行，以接收暫存器的更新，以及提供 `execute` 方法所使用的方法。
+ 這個方法是在調試過程中呼叫，以便回溯堆疊。 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)物件是由用戶端應用程式所執行，以接收暫存器的更新，以及提供方法所使用的方法 `execute` 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

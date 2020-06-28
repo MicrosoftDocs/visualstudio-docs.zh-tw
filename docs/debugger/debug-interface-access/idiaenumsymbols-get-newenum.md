@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSymbols::get__NewEnum | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dccfb37d2abe38a9fd1c805f03acd7172ca01af6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d988d40df1033c95b57d916b7d1587deff109254
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743965"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467782"
 ---
 # <a name="idiaenumsymbolsget__newenum"></a>IDiaEnumSymbols::get__NewEnum
-抓取此列舉值的 <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> 版本。
+抓取 <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> 此列舉值的版本。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get__NewEnum ( 
 #### <a name="parameters"></a>參數
  pRetVal
 
-脫銷傳回表示此列舉值之 <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> 版本的 `IUnknown` 介面。
+脫銷傳回 `IUnknown` 表示 <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> 此列舉值版本的介面。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

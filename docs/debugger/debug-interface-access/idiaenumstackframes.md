@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumStackFrames | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e6adb3157b67b89ef2c05f59eaaf2c7084d9d8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9322af6bf04e21430ed49be8e631f3a7dc63643
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744013"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467824"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 列舉可用的各種堆疊框架。
@@ -35,7 +35,7 @@ ms.locfileid: "72744013"
 藉由呼叫[IDiaStackWalker：： getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)或[IDiaStackWalker：： getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)方法來取得此介面。
 
 ## <a name="example"></a>範例
-這個範例會示範如何取得和使用 `IDiaEnumStackFrames` 介面。 如需 `PrintStackFrame` 函數的執行，請參閱[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)介面。
+這個範例會示範如何取得和使用 `IDiaEnumStackFrames` 介面。 如需函數的執行，請參閱[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)介面 `PrintStackFrame` 。
 
 ```C++
 void DumpStackFrames(IDiaStackWalker*     pStackWalker,
@@ -67,9 +67,9 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
 - [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)

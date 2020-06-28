@@ -1,7 +1,7 @@
 ---
 title: IDiaPropertyStorage：： ReadDWORD |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1764ec83a69dcc5daff267767594473bf690b341
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9d654fdfdfeacc9071081a65f3ad94b2ad240ae5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742901"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466585"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
-讀取屬性集內的 `DWORD` 值。
+讀取 `DWORD` 屬性集中的值。
 
 ## <a name="syntax"></a>語法
 
@@ -34,17 +34,17 @@ HRESULT ReadDWORD ( 
 #### <a name="parameters"></a>參數
  `id`
 
-在要讀取之屬性的識別碼（`PROPID` 在 Wtypes.h 中定義為 `ULONG`）。
+在要讀取之屬性的識別碼（ `PROPID` 在 wtypes.h 中定義為 `ULONG` ）。
 
  `pValue`
 
 脫銷傳回屬性值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則會傳回錯誤碼。 如果屬性不是 `DWORD` 類型，則傳回 `E_INVALIDARG`。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。 `E_INVALIDARG`如果屬性不是型別，則傳回 `DWORD` 。
 
 ## <a name="remarks"></a>備註
- @No__t_0 是由 Windows 定義為32位不帶正負號的整數。
+ `DWORD`由 Windows 定義為32位不帶正負號的整數。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

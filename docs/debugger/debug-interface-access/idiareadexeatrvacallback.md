@@ -1,7 +1,7 @@
 ---
 title: IDiaReadExeAtRVACallback | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aee44ff3acc1d7423e19de8fd64be0e46d8e372
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8fc4d27f3ef8c9329feddd6bf7d8342ceae1b263
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742798"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466452"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
 可讓用戶端應用程式提供可執行檔的位元組，如相對虛擬位址所指定。
@@ -29,7 +29,7 @@ IDiaReadExeAtRVACallback : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示 `IDiaReadExeAtRVACallback` 的方法。
+ 下表顯示的方法 `IDiaReadExeAtRVACallback` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -46,9 +46,9 @@ IDiaReadExeAtRVACallback : IUnknown
 
  程式庫： diaguids
 
- DLL： msdia80
+ DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

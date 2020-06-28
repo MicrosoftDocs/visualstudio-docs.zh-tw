@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSegments::Next | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34062b654cbaccec053c5ac50bfb041d37a0f4e6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f8e87efa1ed616a38ccb79fec1e286417c10124b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744196"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468027"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
 抓取列舉序列中指定數目的區段。
@@ -46,8 +46,8 @@ HRESULT Next ( 
 脫銷傳回已提取列舉值中的區段數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 如果沒有其他區段，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 如果沒有其他區段，則傳回 `S_FALSE` 。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

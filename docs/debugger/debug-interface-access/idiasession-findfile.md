@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findFile | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9751127007b4e7823cf6d2ae35ed2fe80cb83b8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2ba8422ed2be8f06ac64fb9c7fa81c5b1b3c3f3c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742285"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465822"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
 依編譯模組和名稱來抓取原始程式檔。
@@ -36,11 +36,11 @@ HRESULT findFile ( 
 #### <a name="parameters"></a>參數
  `pCompiland`
 
-在[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表要做為搜尋內容使用的編譯模組。 將此參數設定為 `NULL`，以在所有 compilands 中尋找原始檔。
+在[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表要做為搜尋內容使用的編譯模組。 將此參數設定為 `NULL` ，即可在所有 compilands 中尋找原始檔。
 
  `name`
 
-在指定要抓取之來源檔案的名稱。 將此參數設定為所有要抓取之來源檔案的 `NULL`。
+在指定要抓取之來源檔案的名稱。 將此參數設定為，以 `NULL` 取得所有原始程式檔的抓取。
 
  `option`
 
@@ -51,7 +51,7 @@ HRESULT findFile ( 
 脫銷傳回[IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)物件，其中包含所抓取之來源檔案的清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
 ## <a name="example"></a>範例
 
@@ -60,7 +60,7 @@ IDiaEnumSourceFiles* pEnum;
 pSession->findFile( NULL, L"sourcefile.cpp", nsFNameExt, &pEnum );
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSectionContribs：： Clone |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad6a561308999092344fe4c20038ec2cb78a86f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2c2e568b36d8c0ae561565f86f411a235d4fbf2b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744330"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468179"
 ---
 # <a name="idiaenumsectioncontribsclone"></a>IDiaEnumSectionContribs::Clone
 建立枚舉器，其中包含與目前列舉值相同的列舉狀態。
@@ -36,7 +36,7 @@ HRESULT Clone( 
 脫銷傳回[IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)物件，其中包含重複的列舉值。 投稿區段不會重複，只有枚舉器。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

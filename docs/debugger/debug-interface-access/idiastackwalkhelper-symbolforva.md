@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkHelper::symbolForVA | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f646616fddc0e7727ef9e8e80d9c29fbcba6ebc0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 90b157b0f5b09353ede1af1d344f1f9adf68debd
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741316"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464629"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
 抓取包含指定之虛擬位址的符號。
@@ -41,8 +41,8 @@ HRESULT symbolForVA( 
 脫銷[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示位於指定位址的符號。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

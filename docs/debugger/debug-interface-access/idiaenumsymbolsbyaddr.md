@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSymbolsByAddr | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d8cddaa39635be534e2247b48a370ed88b29ab4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 92062883ea97fdc6251ffa600e31230fb448f73b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743819"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467579"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 依位址列舉資料來源中包含的各種符號。
@@ -29,7 +29,7 @@ IDiaEnumSymbolsByAddr : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示 `IDiaEnumSymbolsByAddr` 的方法。
+下表顯示的方法 `IDiaEnumSymbolsByAddr` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -41,7 +41,7 @@ IDiaEnumSymbolsByAddr : IUnknown
 |[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|建立物件的複本。|
 
 ## <a name="remarks"></a>備註
-此介面提供依位址分組的符號。 若要處理依型別分組的符號，例如 `SymTagUDT` （使用者定義型別）或 `SymTagBaseClass`，請使用[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)介面。
+此介面提供依位址分組的符號。 若要使用依型別分組的符號（例如， `SymTagUDT` 使用者定義型別）或 `SymTagBaseClass` ，請使用[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)介面。
 
 ## <a name="notes-for-callers"></a>呼叫者的注意事項
 藉由呼叫[IDiaSession：： getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)方法來取得此介面。
@@ -98,9 +98,9 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

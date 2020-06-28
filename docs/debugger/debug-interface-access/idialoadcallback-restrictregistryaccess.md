@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback::RestrictRegistryAccess | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2240ef2d20b46e50e36942553d76b83fce6232b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 18436d28fbee7ba12cea2398eb1fa6abbd8ac23b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743056"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466732"
 ---
 # <a name="idialoadcallbackrestrictregistryaccess"></a>IDiaLoadCallback::RestrictRegistryAccess
 判斷是否可以使用登錄查詢來尋找符號搜尋路徑。
@@ -29,10 +29,10 @@ HRESULT RestrictRegistryAccess();
 ```
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
 ## <a name="remarks"></a>備註
- 除了 `S_OK` 以外的任何傳回碼，都可防止查詢登錄中的符號搜尋路徑。
+ 以外的任何傳回碼 `S_OK` 會防止查詢登錄中的符號搜尋路徑。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumLineNumbers | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c779b82f0e62b2ba71a1ebed8ac695ab0cf0ac7e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f84e14aa3942f512ef1f4cd19bad0372c60e9fbc
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744345"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468186"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 列舉資料來源中包含的各種行號。
@@ -29,7 +29,7 @@ IDiaEnumLineNumbers : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示 `IDiaEnumLineNumbers` 的方法。
+下表顯示的方法 `IDiaEnumLineNumbers` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -57,7 +57,7 @@ IDiaEnumLineNumbers : IUnknown
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
 
 ## <a name="example"></a>範例
-這個範例會示範如何從會話取得 `IDiaEnumLineNumbers` 介面。 在此情況下，此範例會示範如何取得函式的行號列舉（以 `pSymbol` 表示）。 如需使用行號的更完整範例，請參閱[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)介面。
+這個範例顯示如何 `IDiaEnumLineNumbers` 從會話取得介面。 在此情況下，此範例會示範如何取得函式的行號列舉（以表示 `pSymbol` ）。 如需使用行號的更完整範例，請參閱[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)介面。
 
 ```C++
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
@@ -90,9 +90,9 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

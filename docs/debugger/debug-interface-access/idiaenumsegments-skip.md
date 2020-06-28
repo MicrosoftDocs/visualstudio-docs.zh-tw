@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSegments::Skip | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efedd0e24c96259f1c9e9b6fc7522ee250bd4b25
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a17d8be6292a67475ae259e519749ba2422894a0
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744174"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467950"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
 略過列舉序列中指定數目的區段。
@@ -36,7 +36,7 @@ HRESULT Skip ( 
 在列舉序列中要略過的區段數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，如果沒有其他要略過的區段，則會傳回 `S_FALSE`。
+ 如果成功， `S_OK` 會傳回; 否則， `S_FALSE` 如果沒有其他要略過的區段，則會傳回。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

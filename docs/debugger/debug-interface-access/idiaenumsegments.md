@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSegments | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eff457d539317d2f8c7d77dfc85eb16063650c14
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cd6a0716d0bae5a223cff3439834c87b9650e7a5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744149"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467943"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 列舉資料來源中包含的各種區段。
@@ -29,7 +29,7 @@ IDiaEnumSegments : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示 `IDiaEnumSegments` 的方法。
+下表顯示的方法 `IDiaEnumSegments` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -44,10 +44,10 @@ IDiaEnumSegments : IUnknown
 ## <a name="remarks"></a>備註
 
 ## <a name="notes-for-callers"></a>呼叫者的注意事項
-在[IDiaTable](../../debugger/debug-interface-access/idiatable.md)物件上呼叫 `QueryInterface` 方法，以取得此介面。 如需詳細資訊，請參閱範例。
+`QueryInterface`在[IDiaTable](../../debugger/debug-interface-access/idiatable.md)物件上呼叫方法，以取得此介面。 如需詳細資訊，請參閱範例。
 
 ## <a name="example"></a>範例
-這個範例會示範如何從資料表取得 `IDiaEnumSections` 介面。 如需更完整的區段使用範例，請參閱[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)介面。
+這個範例顯示如何 `IDiaEnumSections` 從資料表取得介面。 如需更完整的區段使用範例，請參閱[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)介面。
 
 ```C++
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
@@ -69,9 +69,9 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

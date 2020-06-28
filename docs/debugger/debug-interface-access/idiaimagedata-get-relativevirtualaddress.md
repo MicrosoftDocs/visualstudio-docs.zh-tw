@@ -1,7 +1,7 @@
 ---
 title: IDiaImageData::get_relativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc7a808da6bb11907fc239f4b320e4dd93a2d19
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3aef31e953c8e73e38c91afe53d821d80be725fa
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743433"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467145"
 ---
 # <a name="idiaimagedataget_relativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
 抓取模組虛擬記憶體中相對於應用程式的位置。
@@ -36,7 +36,7 @@ HRESULT get_relativeVirtualAddress ( 
 脫銷傳回模組的相對虛擬記憶體位移。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

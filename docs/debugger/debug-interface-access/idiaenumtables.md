@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumTables | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d505219468f802a3eff9df0ad766fd1a353d5166
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2f1e2997ebf6916c684751b3d19f68cf044d992f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743695"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467453"
 ---
 # <a name="idiaenumtables"></a>IDiaEnumTables
 列舉資料來源中包含的各種資料表。
@@ -29,7 +29,7 @@ IDiaEnumTables : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示 `IDiaEnumTables` 的方法。
+ 下表顯示的方法 `IDiaEnumTables` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -47,7 +47,7 @@ IDiaEnumTables : IUnknown
 藉由呼叫[IDiaSession：： getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法來取得此介面。
 
 ## <a name="example"></a>範例
-這個範例會示範如何從會話取得 `IDiaEnumTables` 介面。 如需更完整的使用資料表範例，請參閱[IDiaTable](../../debugger/debug-interface-access/idiatable.md)介面。
+這個範例顯示如何 `IDiaEnumTables` 從會話取得介面。 如需更完整的使用資料表範例，請參閱[IDiaTable](../../debugger/debug-interface-access/idiatable.md)介面。
 
 ```C++
 void ShowTableNames(IDiaSession *pSession)
@@ -66,8 +66,8 @@ void ShowTableNames(IDiaSession *pSession)
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)

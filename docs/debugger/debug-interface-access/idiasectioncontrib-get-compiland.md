@@ -1,7 +1,7 @@
 ---
 title: IDiaSectionContrib：： get_compiland |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a398d7cc0ff8efc9dacc726205cd0d8fa02473
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d0243b5d083b33c9838edc93e6570a2df606f543
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742710"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466340"
 ---
 # <a name="idiasectioncontribget_compiland"></a>IDiaSectionContrib::get_compiland
 抓取提供此區段之編譯模組符號的參考。
@@ -36,7 +36,7 @@ HRESULT get_compiland ( 
 脫銷傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表提供此區段的編譯模組。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援此屬性，則傳回。 否則會傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

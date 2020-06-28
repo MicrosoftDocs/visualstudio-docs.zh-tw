@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumStackFrames::Next | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffde40e221823d9656c4b6414b14067ac9d0537a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 77d50a6c59ea376950d8cd4653f29ba7d04f36ad
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744032"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467838"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
 從列舉序列中抓取指定的堆疊框架元素數目。
@@ -46,7 +46,7 @@ HRESULT Next( 
 脫銷傳回已提取列舉值中的堆疊框架元素數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回 `S_OK`。 如果沒有其他堆疊框架，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果沒有其他堆疊框架，則傳回。 否則會傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)

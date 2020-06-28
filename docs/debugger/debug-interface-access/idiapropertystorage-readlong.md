@@ -1,7 +1,7 @@
 ---
 title: IDiaPropertyStorage::ReadLONG | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af9d65c571c5e0a281b968d922c9b5170bd1c561
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 697d93af1256d76e5448de5cbc34e04ffc26927f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742895"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466578"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
-讀取屬性集內的 `LONG` 值。
+讀取 `LONG` 屬性集中的值。
 
 ## <a name="syntax"></a>語法
 
@@ -34,17 +34,17 @@ HRESULT ReadDLONG ( 
 #### <a name="parameters"></a>參數
  `id`
 
-在要讀取之屬性的識別碼（`PROPID` 在 Wtypes.h 中定義為 `ULONG`）。
+在要讀取之屬性的識別碼（ `PROPID` 在 wtypes.h 中定義為 `ULONG` ）。
 
  `pValue`
 
 脫銷傳回屬性值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則會傳回錯誤碼。 如果屬性不是 `LONG` 類型，則傳回 `E_INVALIDARG`。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。 `E_INVALIDARG`如果屬性不是型別，則傳回 `LONG` 。
 
 ## <a name="remarks"></a>備註
- @No__t_0 是由 Windows 定義為32位帶正負號的整數。
+ `LONG`由 Windows 定義為32位帶正負號的整數。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

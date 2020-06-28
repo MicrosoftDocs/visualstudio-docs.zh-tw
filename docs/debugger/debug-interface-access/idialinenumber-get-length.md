@@ -1,7 +1,7 @@
 ---
 title: IDiaLineNumber：： get_length |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f803fac1439d384133f0819859f2917072a8790
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3804d018569a0b2e0ee5a11a3bb5edc8363cfffc
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743189"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466886"
 ---
 # <a name="idialinenumberget_length"></a>IDiaLineNumber::get_length
 抓取區塊中的位元組數目。
@@ -36,10 +36,10 @@ HRESULT get_length ( 
 脫銷傳回區塊中的位元組數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援此屬性，則傳回。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
  區塊是[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)物件所代表之行上的原始程式碼長度。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

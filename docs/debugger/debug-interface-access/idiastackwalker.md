@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalker | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2366c933bf072c295b29d06ff5610bd3735c0077
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4d80e20200966c65258485782fec5865158f114a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741514"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464846"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 提供方法，以使用 .pdb 檔案中的資訊進行堆疊的逐步解說。
@@ -29,7 +29,7 @@ IDiaStackWalker: IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示 `IDiaStackWalker` 的方法。
+下表顯示的方法 `IDiaStackWalker` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -40,10 +40,10 @@ IDiaStackWalker: IUnknown
 這個介面是用來取得已載入模組的堆疊框架清單。 每個方法都會傳遞一個[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)物件（由用戶端應用程式所執行），以提供建立堆疊框架清單所需的資訊。
 
 ## <a name="notes-for-callers"></a>呼叫者的注意事項
-這個介面是藉由呼叫具有類別識別碼 `CLSID_DiaStackWalker` 的 `CoCreateInstance` 方法，以及 `IID_IDiaStackWalker` 的介面識別碼來取得。 此範例會顯示如何取得此介面。
+這個介面是藉由呼叫 `CoCreateInstance` 具有類別識別碼的方法 `CLSID_DiaStackWalker` ，以及的介面 ID 來取得 `IID_IDiaStackWalker` 。 此範例會顯示如何取得此介面。
 
 ## <a name="example"></a>範例
-這個範例會示範如何取得 `IDiaStackWalker` 介面。
+這個範例會顯示如何取得 `IDiaStackWalker` 介面。
 
 ```C++
 
@@ -64,8 +64,8 @@ if (FAILED(hr))
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

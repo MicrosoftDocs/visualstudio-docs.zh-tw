@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSectionContribs | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e332bacdeaeca00d4e43d80807ee5f95c51c7e93
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ebc0fe8391c6390d62cffbb591c4cef1ea52976f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744241"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468069"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
 列舉資料來源中包含的各種區段貢獻。
@@ -29,7 +29,7 @@ IDiaEnumSectionContribs : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示 `IDiaEnumSectionContribs`的方法。
+下表顯示的方法 `IDiaEnumSectionContribs` 。
 
 |方法|描述|
 |------------|-----------------|
@@ -47,7 +47,7 @@ IDiaEnumSectionContribs : IUnknown
 從[IDiaSession：： getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法取得此介面。 如需詳細資訊，請參閱範例。
 
 ## <a name="example"></a>範例
-這個範例會示範如何取得（`GetEnumSectionContribs` 函式），並使用（`ShowSectionContribs` 函式） `IDiaEnumSectionContribs` 介面。 如需使用區段投稿的更完整範例，請參閱[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)介面。
+這個範例會示範如何取得（函式 `GetEnumSectionContribs` ）並使用（函式 `ShowSectionContribs` ） `IDiaEnumSectionContribs` 介面。 如需使用區段投稿的更完整範例，請參閱[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)介面。
 
 ```C++
 
@@ -104,9 +104,9 @@ void ShowSectionContribs(IDiaSession *pSession)
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumTables::Next | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 688652fe3915e1974d5d0e1d04fb1ac075863d8c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9d425e16e18338c0269ccbf88030a47c7b184507
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743733"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467523"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 抓取列舉序列中指定數目的資料表。
@@ -46,8 +46,8 @@ HRESULT Next ( 
 脫銷傳回已提取枚舉器中的資料表數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 如果沒有其他資料表，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 如果沒有其他資料表，則傳回 `S_FALSE` 。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

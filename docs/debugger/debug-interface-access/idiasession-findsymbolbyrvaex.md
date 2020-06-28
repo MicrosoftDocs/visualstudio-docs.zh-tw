@@ -1,7 +1,7 @@
 ---
 title: IDiaSession：： findSymbolByRVAEx |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d9b27cee1c8df3eb26d64f4f860c33e0d4bf45f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 807025265de5c088f1af24ec76402cdbf3a516a7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742042"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465549"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
 抓取指定的符號類型，其中包含或最接近指定的相對虛擬位址（RVA）和位移。
@@ -48,10 +48,10 @@ HRESULT findSymbolByRVAEx ( 
 
  `displacement`
 
-脫銷傳回值，指定在 `rva` 中指定的相對虛擬位址的位移。
+脫銷傳回值，指定在中指定的相對虛擬位址的位移 `rva` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
 ## <a name="example"></a>範例
 
@@ -61,7 +61,7 @@ LONG disp = 0;
 pSession->findSymbolByRVAEx( rva, SymTagFunction, &pFunc, &disp );
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

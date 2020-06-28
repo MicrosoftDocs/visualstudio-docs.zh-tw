@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol：： findSymbolsForAcceleratorPointerTag |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: fb66852c-c5f7-4140-b9fe-20cb4e51a9fe
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1544471bd4ff9166d4c8f4c10f48840db6f576f3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3219312a96e5ad23c0eef519d077faedacb2b824
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741123"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464419"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-傳回C++ AMP stub 函數中快速鍵指標標記的數目。
+傳回 C++ AMP stub 函數中快速鍵指標標記的數目。
 
 ## <a name="syntax"></a>語法
 
@@ -35,11 +35,11 @@ HRESULT findSymbolsForAccleratorPointerTag (
 
  `ppResult`
 
-脫銷以結果初始化之 `IDiaEnumSymbols` 介面指標的指標。
+脫銷介面指標的指標， `IDiaEnumSymbols` 它會以結果初始化。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

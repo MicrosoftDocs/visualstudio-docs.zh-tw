@@ -1,7 +1,7 @@
 ---
 title: IDiaSectionContrib::get_virtualAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5c3fb1615e76dbe3799fda0773a084dd1c4ac7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cee48dcfcd79c12d31d843aa20523e6d7214f740
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742493"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466081"
 ---
 # <a name="idiasectioncontribget_virtualaddress"></a>IDiaSectionContrib::get_virtualAddress
 抓取貢獻的虛擬位址（VA）。
@@ -36,7 +36,7 @@ HRESULT get_virtualAddress ( 
 脫銷傳回貢獻的 VA。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援此屬性，則傳回。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

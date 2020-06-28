@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSourceFiles::Next | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 526c857acbe1283e16312355c181c56c67e19883
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7081c85d64e76900d6f310cfc8ff6cde51087fc3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744071"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467908"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 在列舉序列中，抓取指定的來源檔案數目。
@@ -46,9 +46,9 @@ HRESULT Next ( 
 脫銷傳回提取枚舉器中的原始檔數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 如果沒有其他原始檔，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果沒有其他原始檔案，則傳回。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

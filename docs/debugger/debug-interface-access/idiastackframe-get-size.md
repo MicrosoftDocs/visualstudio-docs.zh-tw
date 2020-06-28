@@ -1,7 +1,7 @@
 ---
 title: IDiaStackFrame::get_size | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04fec0f24cd8d905b41e8eb142ab3f1f37023860
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 238dfd6195b2f7538978a46df6a36d21b6c19250
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741591"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464958"
 ---
 # <a name="idiastackframeget_size"></a>IDiaStackFrame::get_size
 捕獲堆疊框架的大小（以位元組為單位）。
@@ -36,7 +36,7 @@ HRESULT get_size ( 
 脫銷傳回堆疊框架的大小（以位元組為單位）。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則會傳回 `S_FALSE`。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援此屬性，則傳回。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

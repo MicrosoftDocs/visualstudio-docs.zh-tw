@@ -1,7 +1,7 @@
 ---
 title: IDiaStackFrame::get_type | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a2a433c33d46215168238e9956ce0427171b24
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e2e3001287938449313cf6fcc85d8476985993db
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741563"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464950"
 ---
 # <a name="idiastackframeget_type"></a>IDiaStackFrame::get_type
 抓取框架類型。
@@ -36,7 +36,7 @@ HRESULT get_type ( 
 脫銷傳回[StackFrameTypeEnum 列舉](../../debugger/debug-interface-access/stackframetypeenum.md)列舉中的值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則會傳回 `S_FALSE`。 否則會傳回錯誤碼。
+ 如果成功，則傳回 `S_OK`。 `S_FALSE`如果不支援此屬性，則傳回。 否則會傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
