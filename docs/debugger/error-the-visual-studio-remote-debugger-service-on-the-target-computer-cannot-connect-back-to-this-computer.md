@@ -1,9 +1,9 @@
 ---
-title: 錯誤：目標電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦
+title: 錯誤-目的電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 695c4c9e84ce9eb851a551dc9821bff00123a35c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 975d2d1c1f66fe06f8fc3a9568f790fbe4c21e36
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737412"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460386"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>錯誤：目標電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦
 此錯誤表示當遠端偵錯程式服務嘗試連接到您要進行偵錯工具的電腦時，無法進行驗證的使用者帳戶。 當使用舊版的偵錯工具進行遠端處理，且遠端偵錯程式是以服務方式執行時，可能會發生此錯誤。
@@ -31,16 +31,16 @@ ms.locfileid: "72737412"
 |||||
 |-|-|-|-|
 ||LocalSystem 帳戶|網域帳戶|在兩台電腦上都具有相同使用者名稱和密碼的本機帳戶|
-|兩台電腦都位於相同的網域|[是]|[是]|[是]|
-|網域上具有雙向信任的兩台電腦|否|否|[是]|
-|工作群組中的一或兩台電腦|否|否|[是]|
-|不同網域上的電腦|否|否|[是]|
+|兩台電腦都位於相同的網域|是|是|是|
+|網域上具有雙向信任的兩台電腦|否|否|是|
+|工作群組中的一或兩台電腦|否|否|是|
+|不同網域上的電腦|否|否|是|
 
  其他情況：
 
 - 您用來執行 Visual Studio 遠端偵錯工具服務的帳戶，必須是遠端機器上的系統管理者，這樣才能偵錯任何處理序。
 
-- 這個帳戶也必須在使用 [本機安全性原則] 系統管理工具的遠端電腦上，獲得 `Log on as a service` 使用權限。
+- 這個帳戶也必須在使用 [本機安全性原則]**** 系統管理工具的遠端電腦上，獲得 `Log on as a service` 使用權限。
 
 - 如果您使用本機帳戶存取電腦，就必須在本機帳戶下執行 Visual Studio 遠端偵錯工具服務。
 
@@ -52,28 +52,28 @@ ms.locfileid: "72737412"
 
 ### <a name="to-add-log-on-as-a-service-privilege"></a>若要加入「以服務方式登入」權限
 
-1. 在 [開始] 功能表上，選擇 [控制台]。
+1. 在 [開始]**** 功能表上，選擇 [控制台]****。
 
-2. 必要時，在 [控制台] 中選擇 [傳統檢視]。
+2. 必要時，在 [控制台] 中選擇 [傳統檢視]****。
 
-3. 連按兩下 [系統管理工具]。
+3. 連按兩下 [系統管理工具] ****。
 
-4. 在 [系統管理工具] 視窗中按兩下 [本機安全性原則]。
+4. 在 [系統管理工具] 視窗中按兩下 [本機安全性原則]****。
 
-5. 在 [本機安全設定] 視窗中展開 [本機原則] 資料夾。
+5. 在 [本機安全設定]**** 視窗中展開 [本機原則]**** 資料夾。
 
-6. 按一下 [使用者權限指派]。
+6. 按一下 **[使用者權限指派]**。
 
-7. 在 [原則] 欄中按兩下 [以服務方式登入]，檢視 [以服務方式登入] 對話方塊中目前的本機群組原則指派。
+7. 在 [原則]**** 欄中按兩下 [以服務方式登入]****，檢視 [以服務方式登入]**** 對話方塊中目前的本機群組原則指派。
 
-8. 若要新增使用者，請按一下 [新增使用者或群組] 按鈕。
+8. 若要新增使用者，請按一下 [新增使用者或群組]**** 按鈕。
 
-9. 完成新增使用者後，按一下 [確定]。
+9. 完成新增使用者後，按一下 [確定]****。
 
 ### <a name="to-work-around-this-error"></a>若要解決這個錯誤
 
 - 將遠端偵錯監視當成應用程式執行，不要當成服務執行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [遠端偵錯](../debugger/remote-debugging.md)

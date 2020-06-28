@@ -1,7 +1,7 @@
 ---
-title: 錯誤： Web 服務器已經鎖定，並會封鎖 DEBUG 動詞命令 |Microsoft Docs
+title: 錯誤-Web 服務器已鎖定，並會封鎖 DEBUG 動詞命令 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9564f077a5379f44d2beb4d7851453dd6b35fa48
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: abef1edefad63e340170e7934f4ad87cce268e46
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736947"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460360"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令
 逐步執行 Web 應用程式或 XML Web Service 失敗，因為已執行 IIS 鎖定工具，並已安裝啟動 URLScan。 這種情況會鎖定 IIS 而無法接收 DEBUG 動詞命令。
@@ -48,6 +48,6 @@ ms.locfileid: "72736947"
 
 7. 重新啟動伺服器或重新啟動 IIS。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-- [錯誤：Web 伺服器找不到要求的資源](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+- [錯誤： Web 服務器找不到要求的資源](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::getSrcLineOnTypeDefn | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: ad554d18-9988-4b64-ad71-e7594c266e94
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f28dc5e60343cc6aacdf456d5475afbfc7db5e9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e19ce48a8716952f53a1caa6a44fd5ba3d817f4e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738788"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461347"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
 抓取原始程式檔和行號，指出指定的使用者定義型別定義所在的位置。
@@ -30,11 +30,11 @@ HRESULT getSrcLineOnTypeDefn(
 #### <a name="parameters"></a>參數
  `ppResult`
 
-脫銷@No__t_0 物件，其中包含使用者定義的原始程式檔和行號。
+脫銷`IDiaLineNumber`物件，其中包含使用者定義的原始程式檔和行號。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

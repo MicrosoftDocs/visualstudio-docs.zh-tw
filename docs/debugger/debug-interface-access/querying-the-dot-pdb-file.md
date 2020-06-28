@@ -1,7 +1,7 @@
 ---
 title: 查詢。Pdb 檔案 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a22bc8fbe65795a3c5162607a12690081e565666
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 7a7cff092d06b8845993dcf1a35b271da0c0a33c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917111"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461158"
 ---
 # <a name="querying-the-pdb-file"></a>查詢 .Pdb 檔案
-程式資料庫檔案（副檔名 .pdb）是一個二進位檔案，其中包含在編譯和連結專案的過程中所收集的類型和符號的偵錯工具資訊。 當您使用C++ **/zi**或 **/zi**編譯 C/程式，或使用 **/debug**選項 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]或 [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] 程式時，會建立 PDB 檔案。 物件檔案包含用於偵錯工具之 .pdb 檔案的參考。 如需 pdb 檔案的詳細資訊，請參閱[pdb](/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100))檔案。 DIA 應用程式可以使用下列一般步驟來取得可執行映射內各種符號、物件和資料元素的詳細資訊。
+程式資料庫檔案（副檔名 .pdb）是一個二進位檔案，其中包含在編譯和連結專案的過程中所收集的類型和符號的偵錯工具資訊。 當您使用 **/zi**或 **/zi**或 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] 使用 **/debug**選項的、或程式編譯 C/c + + 程式時，會建立 PDB 檔案。 物件檔案包含用於偵錯工具之 .pdb 檔案的參考。 如需 pdb 檔案的詳細資訊，請參閱[pdb](/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100))檔案。 DIA 應用程式可以使用下列一般步驟來取得可執行映射內各種符號、物件和資料元素的詳細資訊。
 
 ### <a name="to-query-the-pdb-file"></a>若要查詢 .pdb 檔案
 
@@ -65,7 +65,7 @@ ms.locfileid: "75917111"
     }
     ```
 
-4. 使用 `IDiaSession` 中的方法，查詢資料來源中的符號。
+4. 使用中的方法 `IDiaSession` 來查詢資料來源中的符號。
 
     ```C++
     CComPtr<IDiaSymbol> pglobal;
@@ -90,5 +90,5 @@ ms.locfileid: "75917111"
     }
     ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

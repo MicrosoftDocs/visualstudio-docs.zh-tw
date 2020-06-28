@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_typeIds | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4db7c1d7e3ed19268d94b28a7f0500788f7d21f5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 36bf189b8137c5a1a632dffd0b5a5d1641a9c24c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739078"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461689"
 ---
 # <a name="idiasymbolget_typeids"></a>IDiaSymbol::get_typeIds
 抓取此符號之編譯器特定類型識別碼值的陣列。
@@ -39,17 +39,17 @@ HRESULT get_typeIds ( 
 
  `pcTypeIds`
 
-脫銷傳回寫入的 `typeIds` 數目，或者，如果 `NULL` `typeIds`，則可使用的類型識別碼總數。
+脫銷傳回寫入的數目 `typeIds` ，或者，如果 `typeIds` 是 `NULL` ，則為可用的類型識別碼總數。
 
  `typeIds[]`
 
 脫銷要填入類型識別碼的陣列。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> @No__t_0 的傳回值表示該屬性不適用於符號。
+> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

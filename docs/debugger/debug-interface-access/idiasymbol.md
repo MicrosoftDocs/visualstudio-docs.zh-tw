@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c22e4b5d0fdb965cceb87fdff878c93b76e96b15
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0214d3e8d097efa31b3f8b02e67f419226a093a4
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738767"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461340"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 描述項號實例的屬性。
@@ -29,10 +29,10 @@ IDiaSymbol : IUnknown
 ```
 
 ## <a name="methods-in-alphabetical-order"></a>依字母順序排列的方法
-下表顯示 `IDiaSymbol`的方法。
+下表顯示的方法 `IDiaSymbol` 。
 
 > [!NOTE]
-> 根據符號的類型，符號只會針對其中一些方法傳回有意義的資料。 如果方法傳回 `S_OK`，則該方法會傳回有意義的資料。
+> 根據符號的類型，符號只會針對其中一些方法傳回有意義的資料。 如果方法 `S_OK` 傳回，則該方法會傳回有意義的資料。
 
 |方法|描述|
 |------------|-----------------|
@@ -49,8 +49,8 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasymbol-findinlineelinesbyrva.md)|抓取列舉型別，可讓用戶端逐一查看指定的相對虛擬位址（RVA）中，此符號內的所有函式的行號資訊（直接或間接內嵌）。|
 |[IDiaSymbol::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasymbol-findinlineelinesbyva.md)|抓取列舉型別，可讓用戶端逐一查看指定虛擬位址（VA）中此符號內，直接或間接內嵌之所有函式的行號資訊。|
 |[IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasymbol-findsymbolsbyrvaforacceleratorpointertag.md)|假設有對應的標記值，這個方法會傳回在指定的相對虛擬位址上，此存根函式中所包含的符號列舉。|
-|[IDiaSymbol::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasymbol-findsymbolsforacceleratorpointertag.md)|傳回C++ AMP stub 函數中快速鍵指標標記的數目。|
-|[IDiaSymbol::get_acceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-acceleratorpointertags.md)|傳回對應至C++ AMP 快速鍵 stub 函數的所有快速鍵指標標記值。|
+|[IDiaSymbol::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasymbol-findsymbolsforacceleratorpointertag.md)|傳回 C++ AMP stub 函數中快速鍵指標標記的數目。|
+|[IDiaSymbol::get_acceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-acceleratorpointertags.md)|傳回對應至 C++ AMP 快速鍵 stub 函數的所有快速鍵指標標記值。|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|抓取類別成員的存取修飾詞。|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|抓取位址位置的位移部分。|
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|抓取位址位置的區段部分。|
@@ -89,11 +89,11 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_frontEndBuild](../../debugger/debug-interface-access/idiasymbol-get-frontendbuild.md)|抓取前端組建編號。|
 |[IDiaSymbol::get_function](../../debugger/debug-interface-access/idiasymbol-get-function.md)|抓取表示公用符號是否參考函數的旗標。|
 |[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|抓取符號的 GUID。|
-|[IDiaSymbol::get_hasAlloca](../../debugger/debug-interface-access/idiasymbol-get-hasalloca.md)|抓取旗標，指出函數是否包含 `alloca`的呼叫。|
+|[IDiaSymbol::get_hasAlloca](../../debugger/debug-interface-access/idiasymbol-get-hasalloca.md)|抓取旗標，指出函數是否包含的呼叫 `alloca` 。|
 |[IDiaSymbol::get_hasAssignmentOperator](../../debugger/debug-interface-access/idiasymbol-get-hasassignmentoperator.md)|抓取表示使用者定義資料類型是否已定義任何指派運算子的旗標。|
 |[IDiaSymbol::get_hasCastOperator](../../debugger/debug-interface-access/idiasymbol-get-hascastoperator.md)|抓取表示使用者定義資料類型是否已定義任何轉換運算子的旗標。|
 |[IDiaSymbol::get_hasDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-hasdebuginfo.md)|抓取表示編譯模組是否包含任何調試資訊的旗標。|
-|[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|抓取旗標，指出函C++式是否具有-樣式的例外狀況處理常式。|
+|[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|抓取旗標，指出函數是否具有 c + + 樣式的例外狀況處理常式。|
 |[IDiaSymbol::get_hasEHa](../../debugger/debug-interface-access/idiasymbol-get-haseha.md)|抓取表示函數是否有非同步例外狀況處理常式的旗標。|
 |[IDiaSymbol::get_hasInlAsm](../../debugger/debug-interface-access/idiasymbol-get-hasinlasm.md)|抓取表示函式是否有內嵌元件的旗標。|
 |[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|抓取旗標，指出函數是否包含 longjmp 命令（C 樣式例外狀況處理的一部分）。|
@@ -106,9 +106,9 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|抓取表示函式是否已標記為內嵌屬性的旗標。|
 |[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|抓取旗標，指出函數是否有來自中斷指令的傳回。|
 |[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|抓取表示函數是否為基類虛擬函式的旗標。|
-|[IDiaSymbol::get_isAcceleratorGroupSharedLocal](../../debugger/debug-interface-access/idiasymbol-get-isacceleratorgroupsharedlocal.md)|抓取旗標，指出符號是否對應至針對C++ AMP 加速器編譯之程式碼中的群組共用本機變數。|
-|[IDiaSymbol::get_isAcceleratorPointerTagLiveRange](../../debugger/debug-interface-access/idiasymbol-get-isacceleratorpointertagliverange.md)|抓取旗標，指出符號是否對應至針對C++ AMP 加速器編譯之程式碼中指標變數的標記元件的*定義範圍符號*。 定義範圍符號是位址範圍的變數位置。|
-|[IDiaSymbol::get_isAcceleratorStubFunction](../../debugger/debug-interface-access/idiasymbol-get-isacceleratorstubfunction.md)|指出符號是否對應至針對對應至 `parallel_for_each` 呼叫之快速鍵所編譯之著色器的最上層函式符號。|
+|[IDiaSymbol::get_isAcceleratorGroupSharedLocal](../../debugger/debug-interface-access/idiasymbol-get-isacceleratorgroupsharedlocal.md)|抓取旗標，指出符號是否對應至針對 C++ AMP 快速鍵編譯之程式碼中的群組共用本機變數。|
+|[IDiaSymbol::get_isAcceleratorPointerTagLiveRange](../../debugger/debug-interface-access/idiasymbol-get-isacceleratorpointertagliverange.md)|抓取旗標，指出符號是否對應至針對 C++ AMP 快速鍵編譯之程式碼中指標變數的標記元件的*定義範圍符號*。 定義範圍符號是位址範圍的變數位置。|
+|[IDiaSymbol::get_isAcceleratorStubFunction](../../debugger/debug-interface-access/idiasymbol-get-isacceleratorstubfunction.md)|指出符號是否對應至針對對應至呼叫之快速鍵所編譯之著色器的最上層函式符號 `parallel_for_each` 。|
 |[IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)|抓取旗標，指出資料是否為許多符號之匯總的一部分。|
 |[IDiaSymbol::get_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|抓取表示符號檔是否包含 C 類型的旗標。|
 |[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|抓取表示模組是否從通用中繼語言（CIL）轉換成機器碼的旗標。|
@@ -118,19 +118,19 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|抓取旗標，指出 managed 編譯模組是否與連結器的 LTCG 連結。|
 |[IDiaSymbol::get_isMatrixRowMajor](../../debugger/debug-interface-access/idiasymbol-get-ismatrixrowmajor.md)|指定矩陣是否為數據列主要。|
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|抓取旗標，指出 managed 編譯模組是否為 .netmodule （僅包含中繼資料）。|
-|[IDiaSymbol::get_isMultipleInheritance](../../debugger/debug-interface-access/idiasymbol-get-ismultipleinheritance.md)|指定 `this` 指標是否指向具有多重繼承的資料成員。|
+|[IDiaSymbol::get_isMultipleInheritance](../../debugger/debug-interface-access/idiasymbol-get-ismultipleinheritance.md)|指定指標是否 `this` 指向具有多重繼承的資料成員。|
 |[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|抓取表示函數是否有[naked](/cpp/cpp/naked-cpp)屬性的旗標。|
 |[IDiaSymbol::get_isOptimizedAway](../../debugger/debug-interface-access/idiasymbol-get-isoptimizedaway.md)|指定變數是否已優化。|
-|[IDiaSymbol::get_isPointerBasedOnSymbolValue](../../debugger/debug-interface-access/idiasymbol-get-ispointerbasedonsymbolvalue.md)|指定 `this` 指標是否以符號值為基礎。|
+|[IDiaSymbol::get_isPointerBasedOnSymbolValue](../../debugger/debug-interface-access/idiasymbol-get-ispointerbasedonsymbolvalue.md)|指定指標是否 `this` 以符號值為基礎。|
 |[IDiaSymbol::get_isPointerToDataMember](../../debugger/debug-interface-access/idiasymbol-get-ispointertodatamember.md)|指定這個符號是否為資料成員的指標。|
 |[IDiaSymbol::get_isPointerToMemberFunction](../../debugger/debug-interface-access/idiasymbol-get-ispointertomemberfunction.md)|指定這個符號是否為成員函式的指標。|
 |[IDiaSymbol::get_isReturnValue](../../debugger/debug-interface-access/idiasymbol-get-isreturnvalue.md)|指定變數是否攜帶傳回值。|
 |[IDiaSymbol::get_isSdl](../../debugger/debug-interface-access/idiasymbol-get-issdl.md)|指定是否使用/SDL 選項來編譯模組。|
-|[IDiaSymbol::get_isSingleInheritance](../../debugger/debug-interface-access/idiasymbol-get-issingleinheritance.md)|指定 `this` 指標是否指向具有單一繼承的資料成員。|
+|[IDiaSymbol::get_isSingleInheritance](../../debugger/debug-interface-access/idiasymbol-get-issingleinheritance.md)|指定指標是否 `this` 指向具有單一繼承的資料成員。|
 |[IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)|抓取旗標，指出資料是否已分割為個別符號的匯總。|
 |[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|抓取表示函數或 Thunk 層是否為靜態的旗標。|
 |[IDiaSymbol::get_isStripped](../../debugger/debug-interface-access/idiasymbol-get-isstripped.md)|抓取旗標，指出是否已從符號檔中移除私用符號。|
-|[IDiaSymbol::get_isVirtualInheritance](../../debugger/debug-interface-access/idiasymbol-get-isvirtualinheritance.md)|指定 `this` 指標是否指向具有虛擬繼承的資料成員。|
+|[IDiaSymbol::get_isVirtualInheritance](../../debugger/debug-interface-access/idiasymbol-get-isvirtualinheritance.md)|指定指標是否 `this` 指向具有虛擬繼承的資料成員。|
 |[IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)|抓取來源的語言。|
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|抓取此符號所表示之物件所使用的記憶體位元組數目。|
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|抓取符號之詞彙父系的參考。|
@@ -153,7 +153,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|抓取旗標，指出函式是否已用[noreturn](/cpp/cpp/noreturn)屬性宣告。|
 |[IDiaSymbol::get_noStackOrdering](../../debugger/debug-interface-access/idiasymbol-get-nostackordering.md)|抓取旗標，指出是否無法在堆疊緩衝區檢查過程中完成堆疊排序。|
 |[IDiaSymbol::get_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|抓取旗標，指出是否永遠不會到達函數或標籤。|
-|[IDiaSymbol::get_numberOfAcceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-numberofacceleratorpointertags.md)|傳回C++ AMP stub 函數中快速鍵指標標記的數目。|
+|[IDiaSymbol::get_numberOfAcceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-numberofacceleratorpointertags.md)|傳回 C++ AMP stub 函數中快速鍵指標標記的數目。|
 |[IDiaSymbol::get_numberOfModifiers](../../debugger/debug-interface-access/idiasymbol-get-numberofmodifiers.md)|抓取套用至原始類型的修飾詞數目。|
 |[IDiaSymbol::get_numberOfRegisterIndices](../../debugger/debug-interface-access/idiasymbol-get-numberofregisterindices.md)|抓取註冊索引的數目。|
 |[IDiaSymbol::get_numberOfRows](../../debugger/debug-interface-access/idiasymbol-get-numberofrows.md)|抓取矩陣中的資料列數目。|
@@ -173,7 +173,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)|抓取位置的 register 指示項。|
 |[IDiaSymbol::get_registerType](../../debugger/debug-interface-access/idiasymbol-get-registertype.md)|捕獲暫存器類型。|
 |[IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)|抓取位置的相對虛擬位址（RVA）。|
-|[IDiaSymbol::get_restrictedType](../../debugger/debug-interface-access/idiasymbol-get-restrictedtype.md)|指定是否將 `this` 指標標示為受限制。|
+|[IDiaSymbol::get_restrictedType](../../debugger/debug-interface-access/idiasymbol-get-restrictedtype.md)|指定指標是否 `this` 標示為受限制。|
 |[IDiaSymbol::get_samplerSlot](../../debugger/debug-interface-access/idiasymbol-get-samplerslot.md)|抓取取樣器位置。|
 |[IDiaSymbol::get_scoped](../../debugger/debug-interface-access/idiasymbol-get-scoped.md)|抓取表示使用者定義資料類型是否出現在 nonglobal 的詞法範圍中的旗標。|
 |[IDiaSymbol::get_signature](../../debugger/debug-interface-access/idiasymbol-get-signature.md)|抓取符號的簽章值。|
@@ -203,8 +203,8 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_uavSlot](../../debugger/debug-interface-access/idiasymbol-get-uavslot.md)|抓取 uav 位置。|
 |[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)|抓取使用者定義型別（UDT）的各種。|
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|抓取表示使用者定義資料類型是否未對齊的旗標。|
-|[IDiaSymbol::get_undecoratedName](../../debugger/debug-interface-access/idiasymbol-get-undecoratedname.md)|抓取C++裝飾或連結名稱的未裝飾名稱稱。|
-|[IDiaSymbol::get_undecoratedNameEx](../../debugger/debug-interface-access/idiasymbol-get-undecoratednameex.md)|@No__t_0 方法的延伸，會根據延伸模組欄位的值來抓取未修飾的名稱。|
+|[IDiaSymbol::get_undecoratedName](../../debugger/debug-interface-access/idiasymbol-get-undecoratedname.md)|抓取 c + + 裝飾的未裝飾名稱稱，或連結的名稱。|
+|[IDiaSymbol::get_undecoratedNameEx](../../debugger/debug-interface-access/idiasymbol-get-undecoratednameex.md)|`get_undecoratedName`方法的延伸，會根據延伸模組欄位的值來抓取未修飾的名稱。|
 |[IDiaSymbol::get_unmodifiedTypeId](../../debugger/debug-interface-access/idiasymbol-get-unmodifiedtypeid.md)|抓取原始（未修改）類型的識別碼。|
 |[IDiaSymbol::get_upperBound](../../debugger/debug-interface-access/idiasymbol-get-upperbound.md)|抓取 FORTRAN 陣列維度的上限。|
 |[IDiaSymbol::get_upperBoundId](../../debugger/debug-interface-access/idiasymbol-get-upperboundid.md)|抓取 FORTRAN 陣列維度上限的符號識別碼。|
@@ -261,7 +261,7 @@ IDiaSymbol : IUnknown
 這個範例會示範如何在指定的相對虛擬位址上顯示函式的本機變數。 它也會顯示不同類型的符號如何彼此相關。
 
 > [!NOTE]
-> `CDiaBSTR` 是包裝 `BSTR` 的類別，而且當具現化超出範圍時，會自動處理釋放字串。
+> `CDiaBSTR`是包裝的類別，當具現 `BSTR` 化超出範圍時，會自動處理釋放字串。
 
 ```C++
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )
@@ -336,13 +336,13 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 ```
 
 ## <a name="requirements"></a>需求
-`Header:` Dia2。h
+`Header:`Dia2。h
 
 程式庫： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

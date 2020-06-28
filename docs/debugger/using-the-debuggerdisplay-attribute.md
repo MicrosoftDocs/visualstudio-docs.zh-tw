@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3511b52ab8c04d9018336b4d63b0659792835d99
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85347868"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418778"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 屬性告訴偵錯工具要顯示的內容（c #、Visual Basic、F #、c + +/CLI）
 
@@ -27,10 +27,10 @@ ms.locfileid: "85347868"
 
 如果類別具有覆寫的 `ToString()` 方法，偵錯工具會使用覆寫的方法，而非預設的 `{<typeName>}`。 因此，如果您已覆寫 `ToString()` 方法，偵錯工具就會使用覆寫的方法，而非預設的`{<typeName>}`，而且您不需要使用 `DebuggerDisplay`。 若兩者都使用，`DebuggerDisplay` 屬性會優先於覆寫的 `ToString()` 方法。 `DebuggerDisplay`屬性也優先于 `ToString()` 子類別中的覆寫方法。
 
-偵錯工具是否評估這個隱含 `ToString()` 呼叫，是取決於 [工具 / 選項 / 偵錯] **** 對話方塊中的使用者設定。 Visual Basic 並未實作這個隱含 `ToString()` 評估。
+偵錯工具是否評估這個隱含 `ToString()` 呼叫取決於 [工具]/[**選項]/[調試**程式] 對話方塊中的使用者設定。
 
 > [!IMPORTANT]
-> 如果已核取 [工具/選項 / 偵錯] **** 對話方塊中的 [在變數視窗中顯示物件的原始結構] **** 核取方塊，即忽略 `DebuggerDisplay` 屬性。
+> 如果在 [**工具]/[選項]/[調試**] 對話方塊中選取 [**在變數視窗中顯示物件的原始結構**] 核取方塊，則 `DebuggerDisplay` 會忽略屬性。
 
 > [!NOTE]
 > 針對機器碼，只有在 c + +/CLI 程式碼中才支援這個屬性。
@@ -98,7 +98,7 @@ public sealed class MyClass
 
 |**名稱**|**ReplTest1**|**型別**|
 |--------------|---------------|--------------|
-|答案|"three"|object {string}|
+|Key|"three"|object {string}|
 |值|3|object {int}|
 
 ```csharp

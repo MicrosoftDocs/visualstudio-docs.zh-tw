@@ -1,7 +1,7 @@
 ---
 title: 介面（Debug Interface Access SDK） |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -13,17 +13,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0aa48ae0d3c3b6b05ea469baea1a1e1aa106667
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 902a3d361eb06288a0e50e9f384b67a2a8c61aa1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738690"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461270"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>介面 (偵錯介面存取 SDK)
 方法會依字母順序列于目錄中的每個介面底下，並以 Vtable 順序列示在介面頁面上。
 
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
 
 [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 
@@ -166,6 +166,6 @@ ms.locfileid: "72738690"
 
 描述 DIA SDK 中可用的常數。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [參考資料](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+- [參考](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

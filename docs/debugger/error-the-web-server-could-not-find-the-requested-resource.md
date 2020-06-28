@@ -1,7 +1,7 @@
 ---
-title: 錯誤： Web 服務器找不到要求的資源 |Microsoft Docs
+title: 錯誤-Web 服務器找不到要求的資源 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 dev_langs:
 - CSharp
 - VB
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c9b428a03595f387c5ff6fb6f0b8ca35172752
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5cce9afe8f27b25a01c0f6276164522a78a2ed9a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737253"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460347"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>錯誤：Web 伺服器找不到要求的資源
 基於安全性考量，IIS 已傳回泛型錯誤。
@@ -32,5 +32,5 @@ ms.locfileid: "72737253"
 
  如需針對 IIS 進行疑難排解的詳細資訊，請參閱 [IIS 管理與系統管理](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration)。
 
-## <a name="see-also"></a>請參閱
-- [錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+## <a name="see-also"></a>另請參閱
+- [錯誤： Web 服務器已鎖定，且正在封鎖 DEBUG 動詞命令](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

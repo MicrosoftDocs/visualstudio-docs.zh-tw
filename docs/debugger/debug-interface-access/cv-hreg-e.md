@@ -1,7 +1,7 @@
 ---
 title: CV_HREG_e | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aac055930e9d1b016bbdc4949cbbdbee798cfaa2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ee15d5b4d6a0959397d8d62753455c7a26f01f78
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745309"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462104"
 ---
 # <a name="cv_hreg_e"></a>CV_HREG_e
 指定目標暫存器。
 
 > [!NOTE]
-> 由於 `CV_HREG_e` 列舉太大而無法在這裡完整複製，因此會提供縮寫的版本做為參考。 遺漏的專案會以斜體來示。 完整的列舉可在 cvconst 標頭檔中取得。
+> 因為 `CV_HREG_e` 列舉太大而無法在這裡完整複製，所以會提供縮寫的版本做為參考。 遺漏的專案會以斜體來示。 完整的列舉可在 cvconst 標頭檔中取得。
 
 ## <a name="syntax"></a>語法
 
@@ -408,28 +408,28 @@ enum CV_HREG_e {
 } CV_HREG_e;
 ```
 
-## <a name="elements"></a>項目
-CV_REG_ * Intel 80x86 和 ix86 處理器所使用的暫存器，以及 p-code。
+## <a name="elements"></a>元素
+CV_REG_ * Intel 80x86 和 ix86 處理器所使用的註冊，以及 p 程式碼。
 
-CV_R68_ * 68K 處理器所使用的註冊。
+CV_R68_ 的68K 處理器所使用的註冊。
 
-CV_M4_ * MIPS 4000 系列處理器所使用的註冊。
+CV_M4_ 由 MIPS 4000 系列處理器所使用的註冊。
 
 CV_ALPHA_ * 數位設備公司 Alpha AXP 系列處理器所使用的註冊。
 
 CV_PPC_ * Motorola/IBM PowerPC 處理器所使用的註冊。
 
-CV_SH3_ * 和 CV_SH_ \* Hitachi SH3 和 Hitachi SH 系列處理器所使用的註冊。
+CV_SH3_ * 以及 \* HITACHI SH3 和 HITACHI SH 系列處理器所使用的 CV_SH_ 暫存器。
 
-CV_ARM_ * Advanced RISC Machine （ARM）處理器所使用的註冊。
+CV_ARM_ * 先進 RISC 機器（ARM）處理器所使用的註冊。
 
 CV_IA64_ * Intel IA64 系列處理器所使用的註冊。
 
 CV_TRI_ * Infineon 技術 TriCore 處理器所使用的註冊。
 
-CV_AM33_ * Matsushita/Panasonic AM33 和相關處理器所使用的暫存器。
+CV_AM33_ * Matsushita/Panasonic AM33 和相關處理器所使用的註冊。
 
-CV_M32R_ * Mitsubishi M32R 處理器所使用的暫存器。
+CV_M32R_ * Mitsubishi M32R 處理器所使用的註冊。
 
 ## <a name="remarks"></a>備註
 每個處理器類型都會使用它自己唯一的一組暫存器。
@@ -449,7 +449,7 @@ CV_M32R_ * Mitsubishi M32R 處理器所使用的暫存器。
 ## <a name="requirements"></a>需求：
 標頭： cvconst。h
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
 - [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)

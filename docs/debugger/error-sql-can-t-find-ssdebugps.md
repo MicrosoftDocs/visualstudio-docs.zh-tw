@@ -1,7 +1,7 @@
 ---
-title: 錯誤：SQL 可以&#39;t 找不到 SSDEBUGPS |Microsoft Docs
+title: 錯誤-SQL 可以&#39;t 尋找 SSDEBUGPS.DLL |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.sqlde_cant_find_ssdebugps
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 854105ea5d94f6d3b09ce73a23ec45ccab9e797c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edebb932e11554b24296314817eea514743525b1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850504"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460503"
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>錯誤：SQL 可以&#39;t 找不到 SSDEBUGPS
+# <a name="error-sql-can39t-find-ssdebugps"></a>錯誤： SQL 可以&#39;找不到 SSDEBUGPS.DLL
 
 SSDEBUGPS.dll 是 SQL Server 偵錯主機元件。
 
@@ -30,15 +30,15 @@ SSDEBUGPS.dll 是 SQL Server 偵錯主機元件。
 
 有兩個方法可以解決這個錯誤：一是重新執行遠端偵錯安裝程式，二是將該檔案複製到 [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] 電腦。
 
-若要重新執行遠端偵錯安裝程式，請遵循指示[遠端偵錯](../debugger/remote-debugging.md)。
+若要重新執行遠端偵錯程式設定，請遵循[遠端](../debugger/remote-debugging.md)偵測中的指示。
 
-如果找得到 ssdebugps.dll 的複本，就可以將該複本複製到 [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] 電腦。 如果有這個檔案，會在 \Program Files\ Common Files\Microsoft Shared\SQL Debugging 目錄中。 您可能會發現它在另一個[!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)]機器，或已安裝 Visual Studio 2005 的電腦上。
+如果找得到 ssdebugps.dll 的複本，就可以將該複本複製到 [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] 電腦。 如果有這個檔案，會在 \Program Files\ Common Files\Microsoft Shared\SQL Debugging 目錄中。 您可能會在另一部 [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] 電腦上，或在已安裝 Visual Studio 2005 的電腦上找到它。
 
 將 SSDEBUGPS.dll 複製到 SQL Server 2005 電腦：
 
 1. 將該檔案複製到 [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] 電腦上具有相同名稱和路徑的目錄。
 
-2. 開啟 [命令提示字元] 並執行下列命令，即可登錄該檔案：
+2. 開啟 [命令提示字元]**** 並執行下列命令，即可登錄該檔案：
 
     ```cmd
     regsvr32 ssdebugps.dll

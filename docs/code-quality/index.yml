@@ -5,17 +5,17 @@ metadata:
   title: 程式碼分析器
   description: 了解 Visual Studio 如何協助您分析程式碼品質。
   ms.prod: visual-studio-windows
-  ms.technology: vs-ide-general
+  ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
-  author: jillre
-  ms.author: jillfra
+  author: Mikejo5000
+  ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: 45be3779e7ed8a625d9029c8eb03a69374c43ae8
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 2bafba53a131ca440b7d1e9cb68d18ac0ac833dd
+  ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74316363"
+  ms.lasthandoff: 06/27/2020
+  ms.locfileid: "85462092"
 landingContent:
 - title: 分析 C 和 C++ 程式碼
   linkLists:

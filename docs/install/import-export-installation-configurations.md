@@ -3,7 +3,7 @@ title: 匯入或匯出安裝組態
 titleSuffix: ''
 description: 了解如何將安裝設定匯出為 .vsconfig 檔案以和其他人共用，以及如何將它匯入以進行複製。
 ms.date: 05/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.about
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 12d22334094b848350d44d245685532fed196389
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4dcad21ce0a77e18bed0b077f731a509916e9e63
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114850"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418817"
 ---
 # <a name="import-or-export-installation-configurations"></a>匯入或匯出安裝組態
 
@@ -70,7 +70,7 @@ ms.locfileid: "76114850"
 
 ## <a name="automatically-install-missing-components"></a>自動安裝遺漏的元件
 
-**Visual Studio 2019 中的新增功能**：當您將 .vsconfig 檔保存到解決方案根目錄，然後打開解決方案時，Visual Studio 會自動檢測缺少哪些元件，並提示您安裝它們。
+**Visual Studio 2019 的新**功能：當您將 .vsconfig 檔案儲存至方案根目錄，然後開啟方案時，Visual Studio 會自動偵測哪些元件遺失，並提示您進行安裝。
 
 ![[方案總管] 建議使用其他元件](../install/media/vs-2019/solution-explorer-config-file.png)
 

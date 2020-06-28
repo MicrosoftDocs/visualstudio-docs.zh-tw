@@ -3,7 +3,7 @@ title: 選取安裝位置
 description: 了解如何將下載快取、共用元件、SDK 和工具的位置變更為不同的磁碟機，來減少 Visual Studio 在系統磁碟機上的安裝磁碟使用量。 例如，將一些檔案從 C 磁碟機移至 D 磁碟機。
 ms.date: 03/30/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - change installation locations for Visual Studio
 - select an installation location for Visual Studio files
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7f80d3c30c536e58811f8ca92676694b6d010010
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5751ddeca2ba690ec29ff905ec7e8330a7199eab
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76111783"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419116"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>在 Visual Studio 2017 中選取安裝位置
 
@@ -33,7 +33,7 @@ ms.locfileid: "76111783"
 
 ::: moniker range="vs-2017"
 
-**版本 15.7 中的新增**功能：您可以通過更改某些檔的位置來減少視覺工作室在系統磁碟機上的安裝佔用空間。 具體而言，您可以針對下載快取、共用元件、SDK 和工具檔案使用不同的位置。
+**15.7 版的新**功能：您可以變更某些檔案的位置，以減少系統磁片磁碟機上 Visual Studio 的安裝使用量。 具體而言，您可以針對下載快取、共用元件、SDK 和工具檔案使用不同的位置。
 
 ::: moniker-end
 
@@ -46,18 +46,18 @@ ms.locfileid: "76111783"
 
 1. 當您安裝 Visual Studio 時，選擇 [安裝位置]**** 索引標籤。
 
-   ![視覺工作室 2017 - 選擇安裝位置](media/vs-installation-locations.png "選取安裝位置。")
+   ![Visual Studio 2017-選取安裝位置](media/vs-installation-locations.png "選取安裝位置。")
 
 1. 在 [Visual Studio IDE]**** 區段中，接受預設。 Visual Studio 會安裝核心產品，並包含本版 Visual Studio 的特定檔案。
 
-   !["安裝位置"選項卡的視覺化工作室 IDE 部分](media/vs-installation-locations-ide.png "接受"安裝位置"選項卡的視覺化工作室 IDE 部分的預設值。")
+   ![[安裝位置] 索引標籤的 Visual Studio IDE 區段](media/vs-installation-locations-ide.png "接受 [安裝位置] 索引標籤之 [Visual Studio IDE] 區段的預設值。")
 
    > [!TIP]
    > 如果您的系統磁碟機是固態硬碟 (SSD)，建議您接受系統磁碟機上的預設位置。 理由何在？ 當您使用 Visual Studio 開發時，您會讀取並寫入大量檔案，其會增加磁碟 I/O 活動。 最好選擇最快的磁碟機來處理負載。
 
 1. 在 [下載快取]**** 區段中，決定是否要保留下載快取，然後決定要儲存其檔案的位置。
 
-     ![下載"安裝位置"選項卡的緩存部分](media/vs-installation-locations-cache.png "選擇安裝後是否保留下載快取，然後指定要存儲檔的磁碟機。")
+     ![[安裝位置] 索引標籤的 [下載快取] 區段](media/vs-installation-locations-cache.png "選擇是否要在安裝後保留下載快取，然後指定要儲存檔案的磁片磁碟機。")
 
     1. 核取或取消核取 [在安裝後保留下載快取]****。
 
@@ -72,7 +72,7 @@ ms.locfileid: "76111783"
 
 1. 在 [共用的元件、工具及 SDK]**** 區段中，指定您要儲存檔案以供並存 Visual Studio 安裝共用的磁碟機。 SDK 和工具也會儲存在此目錄中。
 
-   !["安裝位置"選項卡的共用元件、工具和 SDK 部分](media/vs-installation-locations-shared.png "指定要存儲共用元件、工具和 SDK 的位置。")
+   ![[安裝位置] 索引標籤的共用元件、工具和 Sdk 區段](media/vs-installation-locations-shared.png "指定您要儲存共用元件、工具和 Sdk 的位置。")
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ ms.locfileid: "76111783"
 
 1. 當您安裝 Visual Studio 時，選擇 [安裝位置]**** 索引標籤。
 
-   ![視覺工作室 2019 - 選擇安裝位置](media/vs-2019/vs-installer-installation-locations.png "選取安裝位置。")
+   ![Visual Studio 2019-選取安裝位置](media/vs-2019/vs-installer-installation-locations.png "選取安裝位置。")
 
 1. 在 [Visual Studio IDE]**** 區段中，接受預設。 Visual Studio 會安裝核心產品，並包含本版 Visual Studio 的特定檔案。
 
@@ -108,7 +108,7 @@ ms.locfileid: "76111783"
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝視覺化工作室](install-visual-studio.md)
-* [更新 Visual Studio](update-visual-studio.md)
-* [修改 Visual Studio](update-visual-studio.md)
+* [安裝 Visual Studio](install-visual-studio.md)
+* [更新 Visual Studio 2017](update-visual-studio.md)
+* [修改 Visual Studio 2017](update-visual-studio.md)
 * [解除安裝 Visual Studio](uninstall-visual-studio.md)

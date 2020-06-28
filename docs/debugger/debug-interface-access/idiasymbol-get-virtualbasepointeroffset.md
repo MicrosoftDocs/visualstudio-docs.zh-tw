@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol：： get_virtualBasePointerOffset |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af45900b142d50a82d6a7365e499686656bbdb41
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f18ac0aa983c36ec52cac22962d9639a30027c28
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738856"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461445"
 ---
 # <a name="idiasymbolget_virtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
 抓取虛擬基底指標的位移。
@@ -36,10 +36,10 @@ HRESULT get_virtualBasePointerOffset ( 
 脫銷傳回虛擬基底指標的位移。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> @No__t_0 的傳回值表示該屬性不適用於符號。
+> 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

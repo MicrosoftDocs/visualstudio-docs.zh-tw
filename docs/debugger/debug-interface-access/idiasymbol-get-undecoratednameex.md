@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol：： get_undecoratedNameEx |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48efbc249d076853e12bc54d2e8a8d438570e740
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 25942c76d8e568d6354c9a6a2b2c69c806cde352
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738999"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461599"
 ---
 # <a name="idiasymbolget_undecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
-抓取C++裝飾（連結）名稱的部分或全部未裝飾名稱稱。
+抓取 c + + 裝飾（連結）名稱的部分或全部未裝飾名稱稱。
 
 ## <a name="syntax"></a>語法
 
@@ -38,16 +38,16 @@ HRESULT get_undecoratedNameEx( 
 
  `pRetVal`
 
-脫銷傳回C++裝飾名稱的未裝飾名稱稱。
+脫銷傳回 c + + 裝飾名稱的未裝飾名稱稱。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> `S_FALSE` 的傳回值表示該屬性不適用於符號。
+> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
 
 ## <a name="remarks"></a>備註
- `undecorateOptions` 可以是下列旗標的組合。
+ `undecorateOptions`可以是下列旗標的組合。
 
 > [!NOTE]
 > 旗標名稱不會在 DIA SDK 中定義，因此您必須將宣告新增至您的程式碼，或使用原始值。
@@ -62,10 +62,10 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|停用宣告語言規範的擴充。|
 |UNDNAME_RESERVED1|0x0020|保留。|
 |UNDNAME_RESERVED2|0x0040|保留。|
-|UNDNAME_NO_THISTYPE|0x0060|停用 `this` 類型上的所有修飾詞。|
+|UNDNAME_NO_THISTYPE|0x0060|停用類型上的所有修飾詞 `this` 。|
 |UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|停用成員的存取規範擴充。|
 |UNDNAME_NO_THROW_SIGNATURES|0x0100|停用擴充函式和函式指標的「擲回簽章」。|
-|UNDNAME_NO_MEMBER_TYPE|0x0200|停用 `static` 或 `virtual` 成員的擴充。|
+|UNDNAME_NO_MEMBER_TYPE|0x0200|停用 `static` 或成員的展開 `virtual` 。|
 |UNDNAME_NO_RETURN_UDT_MODEL|0x0400|停用針對 UDT 傳回的 Microsoft 模型展開。|
 |UNDNAME_32_BIT_DECODE|0x0800|Undecorates 32 位裝飾名稱。|
 |UNDNAME_NAME_ONLY|0x1000|只取得主要宣告的名稱;只傳回 [scope：：] 名稱。  展開範本參數。|
@@ -75,5 +75,5 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|隱藏檢查是否有有效的識別碼字元。|
 |UNDNAME_NO_PTR64|0x20000|不包含輸出中的 ptr64。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

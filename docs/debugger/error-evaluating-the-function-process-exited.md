@@ -1,7 +1,7 @@
 ---
-title: 錯誤：目標處理序已結束，代碼&#39;程式碼&#39;時評估該函式&#39;函式&#39;|Microsoft Docs
+title: 錯誤-在評估函式 &#39;函式&#39; 時，目標進程結束，程式碼 &#39;程式碼&#39; |Microsoft Docs
 ms.date: 4/06/2018
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
@@ -9,39 +9,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d82b6011a0dfa7f2c388e7d5f39a9ebabcd663
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1721196becf1f746d81fa7e3d4ff5f0371e3f57
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850813"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460774"
 ---
-# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>錯誤：目標處理序已結束，代碼&#39;程式碼&#39;時評估該函式&#39;函式&#39;
+# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>錯誤：在評估函式 &#39;函式時，目標進程結束，程式碼 &#39;程式碼&#39;&#39;
 
-完整訊息文字：評估函式 'function' 時，目標處理序結束，代碼 '為 code' 的。
+完整郵件內文：評估函式 ' function ' 時，目標進程以程式碼 ' code ' 結束。
 
-若要讓您更輕鬆地檢查.NET 物件的狀態，偵錯工具會自動強制執行額外的程式碼偵錯的處理序 (通常是屬性 getter 方法和`ToString`函式)。 在大部分情況下，這些函式會順利完成，或擲回的偵錯工具就可以攔截的例外狀況。 不過，有某些情況下，在其中例外狀況無法攔截，因為它們跨核心界限，需要使用者訊息幫浦，或無法復原。 為結果、 屬性 getter 或執行程式碼的 ToString 方法，來明確地終止處理序 (例如，呼叫`ExitProcess()`) 或擲回無法攔截未處理例外狀況 (比方說， `StackOverflowException`) 將會終止偵錯處理序並結束偵錯工作階段。 如果您遇到此錯誤訊息發生這種情況。
+為了讓您更輕鬆地檢查 .NET 物件的狀態，偵錯工具會自動強制已調試的進程執行額外的程式碼（通常是屬性 getter 方法和函式 `ToString` ）。 在大部分的情況下，這些函式會順利完成，或擲回偵錯工具可能攔截到的例外狀況。 不過，在某些情況下無法攔截例外狀況，因為它們跨越核心界限、需要使用者訊息提取或無法復原。 因此，執行程式碼以明確終止進程（例如，呼叫）或擲回無法攔截之未處理的例外狀況（例如）的屬性 getter 或 ToString 方法， `ExitProcess()` `StackOverflowException` 會終止已調試的進程並結束 debug 會話。 如果您遇到這個錯誤訊息，就會發生這種情況。
 
-此問題的一個常見原因是，當偵錯工具會評估呼叫其本身的屬性，這可能會導致堆疊溢位例外狀況。 無法復原的堆疊溢位例外狀況，就會終止目標處理序。
+這個問題的其中一個常見原因是，當偵錯工具評估呼叫本身的屬性時，這可能會造成堆疊溢位例外狀況。 無法復原堆疊溢位例外狀況，且目標進程將會終止。
 
 ## <a name="to-correct-this-error"></a>更正這個錯誤
 
-有兩個可能的解決方案，此問題。
+此問題有兩個可能的解決方案。
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>解決方案 1:防止偵錯工具呼叫 ToString 方法的 getter 屬性 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>方案 #1：防止偵錯工具呼叫 getter 屬性或 ToString 方法 
 
-錯誤訊息會告訴您偵錯工具嘗試呼叫函式的名稱。 函式的名稱，您可以嘗試重新評估該函式，從**Immediate**視窗來偵錯評估。 偵錯時，可以從評估**即時運算** 視窗，因為與隱含評估從不同**自動變數/區域變數/監看式**windows，偵錯工具中斷未處理的例外狀況。
+錯誤訊息會告訴您，偵錯工具嘗試呼叫的函式名稱。 使用函式的名稱，您可以嘗試從 [即時**運算] 視窗**重新評估該函式，以進行評估。 從 [即時運算] 視窗進行評估時，可能會進行偵錯工具，因為與 [自動**變數/區域變數/監看****式] 視窗**的隱含評估不同，偵錯工具會中斷未處理的例外
 
-如果您可以修改這個函式，您可以防止偵錯工具呼叫屬性 getter 或`ToString`方法。 請嘗試下列其中一項：
+如果您可以修改這個函式，您可以防止偵錯工具呼叫屬性 getter 或 `ToString` 方法。 請嘗試下列其中一項：
 
-* 將方法變更為其他類型的程式碼除了屬性 getter 或 ToString 方法和問題就會消失。
+* 將方法變更為其他類型的程式碼，但屬性 getter 或 ToString 方法除外，問題就會消失。
     -或-
-* (如`ToString`) 定義`DebuggerDisplay`屬性的類型，以及您可以偵錯工具以外的項目評估`ToString`。
+* （適用于 `ToString` ）在 `DebuggerDisplay` 型別上定義屬性，而且您可以讓偵錯工具評估以外的某個專案 `ToString` 。
     -或-
-* （適用於屬性 getter)Put`[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]`屬性上的屬性。 這非常有用，如果您有必須一直保持 API 相容性的原因，屬性的方法，但它其實應該是一種方法。
+* （適用于屬性 getter）將 `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` 屬性放在屬性上。 如果您的方法需要針對 API 相容性而保留屬性，但它應該是方法，這會很有用。
 
-如果您無法修改這個方法，您可能可以替代指令處中斷目標處理序，並再試一次評估。
+如果您無法修改此方法，您可以在其他指令中斷目標進程，然後重試評估。
 
-### <a name="solution-2-disable-all-implicit-evaluation"></a>解決方案 2:停用所有隱含的評估
+### <a name="solution-2-disable-all-implicit-evaluation"></a>解決方案 #2：停用所有隱含評估
 
-如果先前的解決方案不修正此問題，請移至**工具** > **選項**，然後取消選取設定**偵錯** >  **一般** > **啟用屬性評估及其他隱含函式呼叫**。 這將會停用大部分的隱含函式評估，並應可解決問題。
+如果先前的解決方案無法修正問題，請移至 [**工具**] [  >  **選項**]， **Debugging**然後取消核取 [  >  **一般**  >  **啟用屬性評估及其他隱含函式呼叫**] 設定。 這會停用大部分的隱含函式評估，並應解決此問題。

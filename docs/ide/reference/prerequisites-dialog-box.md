@@ -7,17 +7,17 @@ f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 helpviewer_keywords:
 - Prerequisites dialog box
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ecbba1a1c5e8670fd9adcafdfed8cec21dd3912
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf555a9a4b7c73e4e204bcc42e6b57d3ab96cd01
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567901"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419168"
 ---
 # <a name="prerequisites-dialog-box"></a>必要條件對話方塊
 
@@ -31,7 +31,7 @@ ms.locfileid: "75567901"
 
 |元素|描述|
 |-------------|-----------------|
-|**建立安裝程式以安裝必要條件元件**|將必要條件元件包含在應用程式的安裝程式 (*Setup.exe*) 中，才能在安裝應用程式之前，依照相依性的順序進行安裝。 依預設，會選取這個選項。 如果沒有選取這個選項，則不會建立 *Setup.exe*。|
+|**建立安裝程式以安裝必要條件元件**|將必要條件元件包含在應用程式的安裝程式 (*Setup.exe*) 中，才能在安裝應用程式之前，依照相依性的順序進行安裝。 預設會選取這個選項。 如果沒有選取這個選項，則不會建立 *Setup.exe*。|
 |**選擇要安裝的必要條件**|指定是否要安裝元件，例如 .NET Framework 和 C++ 執行階段程式庫。<br /><br />例如，選取 **SQL Server 2012 Express** 旁的核取方塊，即指定安裝程式必須確認這個元件是否已安裝在目標電腦上，如果尚未安裝就會進行安裝。<br /><br />如需各個必要條件套件的詳細資訊，請參閱[必要條件資訊](#prerequisites-information)。|
 |**從元件廠商的網站下載必要條件**|指定從廠商的網站安裝必要條件元件。 這是預設選項。|
 |**從應用程式的相同位置下載必要條件**|指定從應用程式的相同位置安裝必要條件元件。 這個選項會將所有的必要條件套件複製到發行位置。 必要條件套件必須放在開發電腦上，這個選項才能正常運作。|
@@ -46,7 +46,7 @@ ms.locfileid: "75567901"
 
 |元素|描述|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|這個套件會安裝下列項目：<br /><br /> -   .NET Framework 2.0、3.0 和 3.5 版。<br />-   支援 32 位元 (x86) 及 64 位元 (x64) 作業系統上的所有 .NET Framework 版本。<br />-   隨著這個套件一併安裝之每個 .NET Framework 版本的語言套件。<br />-   .NET Framework 2.0 及 3.0 的 Service Pack。<br /><br /> .NET Framework 3.0 隨附於 Windows Vista，.NET Framework 3.5 則隨附於 Visual Studio。 所有針對 32 位元作業系統編譯，而且目標架構設定為 [.NET Framework 3.5]**** 的 Visual Basic 和 C# 專案，以及針對 64 位元作業系統編譯的 Visual Basic 和 C# 專案，都需要 .NET Framework 3.5。 （不支援 IA64。請注意，預設情況下，為任何 CPU 體系結構編譯了 Visual Basic 和 C# 專案。 如需詳細資訊，請參閱 [Framework 目標概觀](../../ide/visual-studio-multi-targeting-overview.md)和 [64 位元應用程式的部署必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。|
+|**.NET Framework 3.5 SP1**|這個套件會安裝下列項目：<br /><br /> -   .NET Framework 2.0、3.0 和 3.5 版。<br />-   支援 32 位元 (x86) 及 64 位元 (x64) 作業系統上的所有 .NET Framework 版本。<br />-   隨著這個套件一併安裝之每個 .NET Framework 版本的語言套件。<br />-   .NET Framework 2.0 及 3.0 的 Service Pack。<br /><br /> .NET Framework 3.0 隨附於 Windows Vista，.NET Framework 3.5 則隨附於 Visual Studio。 所有針對 32 位元作業系統編譯，而且目標架構設定為 [.NET Framework 3.5]**** 的 Visual Basic 和 C# 專案，以及針對 64 位元作業系統編譯的 Visual Basic 和 C# 專案，都需要 .NET Framework 3.5。 （不支援 IA64）。請注意，預設會針對任何 CPU 架構編譯 Visual Basic 和 c # 專案。 如需詳細資訊，請參閱 [Framework 目標概觀](../../ide/visual-studio-multi-targeting-overview.md)和 [64 位元應用程式的部署必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。|
 |**Microsoft .NET Framework 4.x**|這個套件會在 x86 和 x64 平台安裝 .NET Framework 4.x。|
 |**Microsoft System CLR Types for SQL Server 2014 (x64 和 x86)**|此套件會安裝適用於 x64 或 x86 SQL Server 2014 的 Microsoft System CLR Types。|
 |**SQL Server 2008 R2 Express**|此套件會安裝 Microsoft SQL Server 2008 R2 Express (Microsoft SQL Server 2008 R2 的免費版本)，這是適用於小型網路、伺服器或傳統型應用程式的理想資料庫。 它可以免費用於開發和生產環境。|
@@ -58,7 +58,7 @@ ms.locfileid: "75567901"
 
 ## <a name="see-also"></a>另請參閱
 
-- [發佈頁面，專案設計器](../../ide/reference/publish-page-project-designer.md)
-- [應用程式部署先決條件](../../deployment/application-deployment-prerequisites.md)
+- [專案設計工具、發行頁](../../ide/reference/publish-page-project-designer.md)
+- [應用程式部署必要條件](../../deployment/application-deployment-prerequisites.md)
 - [64 位元應用程式的部署必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
 - [Framework 目標概觀](../../ide/visual-studio-multi-targeting-overview.md)

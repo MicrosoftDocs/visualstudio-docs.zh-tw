@@ -1,7 +1,7 @@
 ---
-title: 錯誤：無法進行&#39;調試，因為系統上已啟用內核偵錯工具 |Microsoft Docs
+title: 錯誤-因為系統上已啟用內核偵錯工具，所以無法&#39;t 進行偵測 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a966869ff1d200a51c6019a6ae937bea7c447bd
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 80c27ef642697a8514a0809095b980d8c38a47d8
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737751"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460861"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：無法進行&#39;調試，因為系統上已啟用內核偵錯工具
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：因為系統上已啟用內核偵錯工具，所以無法&#39;t 進行偵測
 當您對 Managed 程式碼進行偵錯時，可能會收到下列錯誤訊息：
 
 ```cmd
@@ -36,27 +36,27 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 - 使用 CLR 2.0、3.0 或 3.5 版的應用程式。
 
-## <a name="solution"></a>方案
+## <a name="solution"></a>解決方法
 
 #### <a name="to-fix-this-problem"></a>若要修復這個問題
 
 - 將您的應用程式升級為使用 CLR 4.0 或 4.5 版
 
-   -或-
+   – 或 –
 
 - 停用核心偵錯而以 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 進行偵錯。
 
-   -或-
+   – 或 –
 
 - 使用核心偵錯工具進行偵錯，不要使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
 
-   -或-
+   – 或 –
 
 - 在核心偵錯工具中，停用使用者模式例外狀況。
 
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>若要在目前工作階段中停用核心偵錯
 
-- 在命令提示中，輸入：
+- 在命令提示字元中，輸入：
 
     ```cmd
     Kdbgctrl.exe -d
@@ -64,7 +64,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>若要停用所有工作階段的核心偵錯 (Windows Vista 和 Windows 7)
 
-1. 在命令提示中，輸入：
+1. 在命令提示字元中，輸入：
 
     ```cmd
     bcdedit /debug off
@@ -98,6 +98,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
      `gn`
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

@@ -1,9 +1,9 @@
 ---
-title: 錯誤：Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。
+title: 錯誤-Microsoft Visual Studio 遠端偵錯監視（MSVSMON.EXE）似乎未在遠端電腦上執行。
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.server_machine_no_default
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9558ff4d470d30df19ea5982eb6acbcc708eea
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 6ba7fb30bcb5ac04a823b4ba654382ac23a966fe
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916246"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460607"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>錯誤：Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。
 這個錯誤訊息表示 Visual Studio 無法在遠端電腦上找到正確的 Visual Studio 遠端偵錯監視執行個體。 必須安裝 Visual Studio 遠端偵錯監視，才能執行遠端偵錯。 如需下載和設定遠端偵錯程式的詳細資訊，請參閱[遠端](../debugger/remote-debugging.md)偵測。
@@ -51,11 +51,11 @@ ms.locfileid: "75916246"
 
 - 您可以停止遠端偵錯工具，再以使用的本機電腦帳戶重新啟動它。
 
-- 您可以從命令列使用 **/allow \<使用者名稱>** 參數：`msvsmon /allow <username@computer>` 啟動遠端偵錯工具
+- 您可以從命令列使用 **/allow \<username> **參數啟動遠端偵錯程式：`msvsmon /allow <username@computer>`
 
-- 您可以將使用者新增至遠端偵錯工具的權限 (在遠端偵錯工具視窗：[工具] > [權限])。
+- 您可以將使用者新增至遠端偵錯工具的權限 (在遠端偵錯工具視窗：[工具] > [權限]****)。
 
-- 如果無法使用前述步驟中的方法，您可以允許任何使用者執行遠端偵錯。 在遠端偵錯工具視窗中，移至 [工具] > [選項] 對話方塊。 當您選取 [無驗證]時，可以接著選取 [允許任何使用者執行偵錯]。 不過，您應該只有在沒有任何選擇或在私人網路上，才使用這個選項。
+- 如果無法使用前述步驟中的方法，您可以允許任何使用者執行遠端偵錯。 在遠端偵錯工具視窗中，移至 [工具] > [選項]**** 對話方塊。 當您選取 [無驗證]   **** 時，可以接著選取 [允許任何使用者執行偵錯] ****。 不過，您應該只有在沒有任何選擇或在私人網路上，才使用這個選項。
 
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>遠端電腦上的防火牆不允許連入連線至遠端偵錯工具
  Visual Studio 電腦上的防火牆和遠端電腦上的防火牆必須設定為允許 Visual Studio 和遠端偵錯工具之間的通訊。 如需遠端偵錯工具所用連接埠的相關資訊，請參閱 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。 如需設定 Windows 防火牆的相關資訊，請參閱 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。
@@ -70,9 +70,9 @@ ms.locfileid: "75916246"
  您可能需要在別的時間執行遠端偵錯，或重新排定其他時間的網路工作。
 
 ## <a name="more-help"></a>詳細的說明
- 若要取得更多遠端偵錯程式說明，包括命令列參數，請按一下 [說明] > [遠端偵錯程式] 視窗中的**使用**方式。 如果您沒有開啟，您可以將下列程式程式碼複製到 [檔案**瀏覽器**] 視窗，以看到網頁。 （您必須將 \<Visual Studio 安裝目錄 > 取代為 Visual Studio 安裝的位置）。
+ 若要取得更多遠端偵錯程式說明，包括命令列參數，請按一下 [說明] > [遠端偵錯程式] 視窗中的**使用**方式。 如果您沒有開啟，您可以將下列程式程式碼複製到 [檔案**瀏覽器**] 視窗，以看到網頁。 （您必須將取代 \<Visual Studio installation directory> 為 Visual Studio 安裝的位置）。
 
- res:// *\<Visual Studio 安裝目錄 >* \ COMMON7 \ IDE \ 遠端 %2 0 偵錯工具 \ x64 \ msvsmon .exe/help .htm
+ res:// *\<Visual Studio installation directory>* \Common7\IDE\Remote% 20Debugger\x64\msvsmon.exe/help.htm
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)

@@ -1,7 +1,7 @@
 ---
-title: 錯誤：RPC 需要驗證 |Microsoft Docs
+title: 錯誤-RPC 需要驗證 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.rpc_requires_authentication
 dev_langs:
@@ -14,22 +14,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c473916a6b689984f234736eb8b763056fc002d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e98daf3697c86eec7767135c9ad85d67cd6e958a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850452"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460581"
 ---
 # <a name="error-rpc-requires-authentication"></a>錯誤：RPC 需要驗證
 Visual Studio 偵錯工具無法連接至遠端電腦。 本機電腦上啟用了 RPC 原則，會阻止遠端偵錯進行。
 
 ### <a name="to-correct-this-error"></a>更正這個錯誤
 
-1. 執行`\` *windir*`\system32\regedt32.exe`
+1. 執行 `\` *windir*`\system32\regedt32.exe`
 
-2. 找出並刪除`HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`。
+2. 找出並刪除 `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients` 。
 
 3. 重新啟動您的電腦，如此登錄變更才會生效。
 
-4. 如果問題持續發生，請連絡您的網域系統管理員的相關**電腦設定 > 系統管理範本 > System > 遠端程序呼叫 > 未驗證的 RPC 用戶端的限制**群組原則設定。
+4. 如果問題持續發生，請洽詢您的網域系統管理員，瞭解**電腦設定 > 系統管理範本 > 系統 > 遠端程序呼叫 > 未驗證的 RPC 用戶端**群組原則設定的限制。

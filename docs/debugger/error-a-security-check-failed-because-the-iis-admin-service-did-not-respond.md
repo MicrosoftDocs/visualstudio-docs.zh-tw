@@ -1,7 +1,7 @@
 ---
-title: 錯誤：安全性檢查失敗，因為 IIS 管理服務沒有回應 |Microsoft Docs
+title: 錯誤-安全性檢查失敗，因為 IIS 管理服務沒有回應 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.iis_not_responding
 dev_langs:
@@ -16,19 +16,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f668de3d7c7e9a8bd075beb972199cf849feea65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1b9620edf10d2d3cab8da8231e561fc77d7e6af5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737878"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460874"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>錯誤：安全性檢查失敗，因為 IIS 管理服務沒有回應
-當 IIS 管理服務沒有回應時，就會發生這個錯誤。 這通常表示 IIS 安裝有問題。 首先，確認使用 [系統管理工具] 的 [服務] 工具驗證服務是否在執行。
+當 IIS 管理服務沒有回應時，就會發生這個錯誤。 這通常表示 IIS 安裝有問題。 首先，確認使用 [系統管理工具]**** 的 [服務]**** 工具驗證服務是否在執行。
 
 ### <a name="to-correct-this-error"></a>更正這個錯誤
 
-- 使用 [新增或移除程式] 控制台來重新安裝 IIS。
+- 使用 [新增或移除程式]**** 控制台來重新安裝 IIS。
 
 - -或-
 
@@ -44,5 +44,5 @@ ms.locfileid: "72737878"
 
      如需其他資訊，請參閱 IIS 文件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Security page
 - Security page in Project Designer
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 272d37ef9e73aa5dd0d10ca0210b18a945f993fd
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 0839adcf0e6c61141d2a14ad8903c532af76804c
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649829"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418895"
 ---
 # <a name="security-page-project-designer"></a>專案設計工具、安全性頁
 
@@ -29,7 +29,7 @@ ms.locfileid: "81649829"
 
 ## <a name="security-settings"></a>安全性設定
 
- **啟用"單擊一次安全設置"**
+ **啟用 ClickOnce 安全性設定**
 
 決定是否在設計階段啟用安全性設定。 清除這個選項後，就無法使用 [安全性]**** 頁面上的所有其他選項。
 
@@ -76,11 +76,11 @@ WPF 網頁瀏覽器應用程式專案預設選取此選項。
 
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>
-- [ClickOnce 應用程式的代碼存取安全性](../../deployment/code-access-security-for-clickonce-applications.md)
-- [操作方式:啟用"按一次安全設置"](../../deployment/how-to-enable-clickonce-security-settings.md)
-- [如何:為點擊次數應用程式設定安全區域](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [如何:為 ClickOnce 應用程式設定自訂權限](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [安全點擊一次應用程式](../../deployment/securing-clickonce-applications.md)
-- [單擊"一次安全和部署"](../../deployment/clickonce-security-and-deployment.md)
+- [ClickOnce 應用程式的代碼啟用安全性](../../deployment/code-access-security-for-clickonce-applications.md)
+- [如何：啟用 ClickOnce 安全性設定](../../deployment/how-to-enable-clickonce-security-settings.md)
+- [如何：設定 ClickOnce 應用程式的安全性區域](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [如何：設定 ClickOnce 應用程式的自訂許可權](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [保護 ClickOnce 應用程式](../../deployment/securing-clickonce-applications.md)
+- [ClickOnce 安全性和部署](../../deployment/clickonce-security-and-deployment.md)
 - [專案屬性參考](../../ide/reference/project-properties-reference.md)
 - [[進階安全性設定] 對話方塊](../../ide/reference/advanced-security-settings-dialog-box.md)

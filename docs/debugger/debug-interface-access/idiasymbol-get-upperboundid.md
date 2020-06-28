@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol：： get_upperBoundId |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 640bce657df53bec66ab75575f35fcd68131a82a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6d573f54a6264562c02960448768a8409fcc5e5a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738944"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461543"
 ---
 # <a name="idiasymbolget_upperboundid"></a>IDiaSymbol::get_upperBoundId
 抓取 FORTRAN 陣列維度上限的符號識別碼。
@@ -35,13 +35,13 @@ HRESULT get_upperBoundId ( 
 - [out，]傳回代表 FORTRAN 陣列維度上限的符號識別碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> @No__t_0 的傳回值表示該屬性不適用於符號。
+> 的傳回值 `S_FALSE` 表示此屬性無法用於符號。
 
 ## <a name="remarks"></a>備註
  識別碼是 DIA SDK 所建立的唯一值，用來將所有符號標記為唯一。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

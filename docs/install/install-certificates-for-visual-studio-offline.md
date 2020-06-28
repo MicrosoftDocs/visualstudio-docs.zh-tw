@@ -3,7 +3,7 @@ title: 安裝離線安裝所需的憑證
 description: 了解如何安裝 Visual Studio 離線安裝的憑證。
 ms.date: 08/08/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b2570876ddaa03753b1c0d3fb9f9ddc772bbbcb8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 525294d2cf3c33dfdb1c5796dabf1c2a7a78bf91
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114657"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418804"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 
@@ -178,7 +178,7 @@ Visual Studio 安裝程式只要求系統上必須安裝根憑證。
 
 在安裝系統上的一個檢查方法是遵循下列步驟：
 
-1. 運行**mmc.exe**。<br/>
+1. 執行**mmc.exe**。<br/>
   a. 按一下 [檔案]****，然後選取 [新增/移除嵌入式管理單元]****。<br/>
   b. 按兩下 [憑證]****，並選取 [電腦帳戶]****，然後按一下 [下一步]****。<br/>
   c. 選取 [本機電腦]****，並按一下 [完成]****，然後按一下 [確定]****。<br/>
@@ -205,7 +205,7 @@ Visual Studio 安裝程式只要求系統上必須安裝根憑證。
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝視覺化工作室](install-visual-studio.md)
+* [安裝 Visual Studio](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [使用命令列參數安裝視覺化工作室](use-command-line-parameters-to-install-visual-studio.md)
+* [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)

@@ -9,23 +9,23 @@ helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16be10dc69f203e52eb0dccc0e0738399d37ee3d
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649427"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418739"
 ---
 # <a name="debug-page-project-designer"></a>專案設計工具、偵錯頁
 
 使用專案設計工具**** 的 [偵錯頁面]**** 設定在 Visual Basic 或 C# 專案中的偵錯行為屬性。
 
-若要存取 [偵錯]**** 頁面，請選取方案總管**** 中的專案節點。 在 [專案]**** 功能表上，選擇 [\<專案名稱> 屬性]****。 當專案設計工具**** 出現時，請按一下 [偵錯]**** 索引標籤。
+若要存取 [偵錯]**** 頁面，請選取方案總管**** 中的專案節點。 在 [**專案**] 功能表上，選擇 [ ** \<ProjectName> 屬性**]。 當專案設計工具**** 出現時，請按一下 [偵錯]**** 索引標籤。
 
 > [!NOTE]
 > 本主題不適用於 UWP 應用程式。 若為 UWP 應用程式，請參閱[啟動偵錯工作階段 (VB、C#、C++ 和 XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
@@ -34,7 +34,7 @@ ms.locfileid: "81649427"
 
 下列選項可讓您選取要顯示或修改的設定和平台。
 
-**組態**
+**Configuration**
 
 指定要顯示或修改的組態設定。 設定可以是 [偵錯]**** (預設)、[發行]**** 或 [所有設定]****。
 
@@ -48,7 +48,7 @@ ms.locfileid: "81649427"
 
 **起始專案**
 
-選擇這個選項可指定在對應用程式進行偵錯時，應該要啟動可執行檔 (適用於 Windows 應用程式和主控台應用程式專案)。 預設會選取此選項。
+選擇這個選項可指定在對應用程式進行偵錯時，應該要啟動可執行檔 (適用於 Windows 應用程式和主控台應用程式專案)。 預設會選取這個選項。
 
 **啟動外部程式**
 
@@ -85,7 +85,7 @@ ms.locfileid: "81649427"
 ## <a name="see-also"></a>另請參閱
 
 - [偵錯工具簡介](../../debugger/debugger-feature-tour.md)
-- [C# 除錯設定的項目設定](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [視覺化基本除錯設定的項目設定](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [安全點擊一次應用程式](../../deployment/securing-clickonce-applications.md)
+- [C# 偵錯組態的專案設定](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Project Settings for a Visual Basic Debug Configuration](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [保護 ClickOnce 應用程式](../../deployment/securing-clickonce-applications.md)
 - [如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol：： get_uavSlot |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: a70648f2-3b25-439f-8099-239ac602515a
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 077a0a7895e93714bfe7b64b658c59f4d38ead4e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c0d4afea1525a52453d83b804cfb06a95bce932c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739041"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461655"
 ---
 # <a name="idiasymbolget_uavslot"></a>IDiaSymbol::get_uavSlot
 抓取 uav 位置。
@@ -30,10 +30,10 @@ HRESULT get_uavSlot(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-脫銷保留 uav 位置之 `DWORD` 的指標。
+脫銷包含 uav 位置之的指標 `DWORD` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
 author: TerryGLee
-ms.author: tglee
-manager: jillfra
+ms.author: ghogen
+manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ebc2da5e71dbdee13df4cf658f3681804879f58
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0c0e6e9d41bb1d4bd7446bb77306ca5a4551906f
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596927"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419103"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>進階編譯器設定對話方塊 (Visual Basic)
 
@@ -28,9 +28,9 @@ ms.locfileid: "75596927"
 
 1. 在方案總管**** 中，選擇專案節點 (而不是 [方案]**** 節點)。
 
-2. 按一下 [專案]**** 功能表上的 [屬性]****。 當**專案設計器**出現時，按一下 **"編譯"** 選項卡。
+2. 按一下 [專案]**** 功能表上的 [屬性]****。 當 [**專案設計**工具] 出現時，按一下 [**編譯**] 索引標籤。
 
-3. 在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定]**** 和 [平台]****。 在簡化的組建設定中，不會顯示 [設定]**** 和 [平台]**** 清單。 有關詳細資訊，請參閱[操作操作：設置調試和發佈配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
+3. 在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定]**** 和 [平台]****。 在簡化的組建設定中，不會顯示 [設定]**** 和 [平台]**** 清單。 如需詳細資訊，請參閱[如何：設定偵錯工具和發行設定](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
 4. 按一下 [進階編譯選項]****。
 
@@ -50,7 +50,7 @@ ms.locfileid: "75596927"
 
 預設會清除此核取方塊，以停用編譯器最佳化。 選取此核取方塊，可啟用編譯器最佳化。 編譯器最佳化可讓您的輸出檔案變得更小、更快、更有效率。 不過，因為最佳化導致輸出檔中的程式碼重新排列，編譯器最佳化可能會使偵錯困難。
 
- **DLL 基本位址**
+ **DLL 基底位址**
 
 此文字方塊會以十六進位格式顯示預設的 DLL 基底位址。 在類別庫和控制項程式庫專案中，您可以使用這個文字方塊來指定在建立 DLL 時要使用的基底位址。
 
@@ -78,7 +78,7 @@ ms.locfileid: "75596927"
 
 **產生序列化組件**
 
-此設定指定編譯器是否會建立 XML 序列化組件。 如果您已在程式碼中使用該類別將類型序列化，則序列化組件可提升 <xref:System.Xml.Serialization.XmlSerializer> 的啟動效能。 此選項的預設值為 **"自動**"。**Auto**指定僅在用於<xref:System.Xml.Serialization.XmlSerializer>將代碼中的類型編碼為 XML 時才生成序列化程式集。 [關閉]**** 指定不論您的程式碼是否使用 <xref:System.Xml.Serialization.XmlSerializer>，永遠不會產生序列化組件。 **On** 指定永遠會產生序列化組件。 序列化組件將命名為 `TypeName`.XmlSerializers.dll。
+此設定指定編譯器是否會建立 XML 序列化組件。 如果您已在程式碼中使用該類別將類型序列化，則序列化組件可提升 <xref:System.Xml.Serialization.XmlSerializer> 的啟動效能。 此選項的預設值為 [**自動**]。**Auto**指定只有在您已使用 <xref:System.Xml.Serialization.XmlSerializer> 將程式碼中的類型編碼為 XML 時，才會產生序列化元件。 [關閉]**** 指定不論您的程式碼是否使用 <xref:System.Xml.Serialization.XmlSerializer>，永遠不會產生序列化組件。 **On** 指定永遠會產生序列化組件。 序列化組件將命名為 `TypeName`.XmlSerializers.dll。
 
 ## <a name="see-also"></a>另請參閱
 

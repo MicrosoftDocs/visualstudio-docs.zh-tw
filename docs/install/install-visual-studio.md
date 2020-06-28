@@ -4,7 +4,7 @@ titleSuffix: ''
 description: 了解如何逐步安裝 Visual Studio。
 ms.date: 12/13/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.about
 helpviewer_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d8e6e3a857c9bbf5577cf395f698f64cfb11bddc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 132aaa8da49814c10afe3089e21d391aa2964673
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302991"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419155"
 ---
 # <a name="install-visual-studio"></a>安裝 Visual Studio
 
@@ -104,7 +104,7 @@ ms.locfileid: "79302991"
 
 ::: moniker range="vs-2017"
 
-要獲取 Visual Studio 2017 的引導者，請參閱[Visual Studio 早期版本的](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，瞭解如何執行此操作的詳細資訊。
+若要取得 Visual Studio 2017 的啟動載入器，請參閱[Visual Studio 舊版](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
 
 ::: moniker-end
 
@@ -131,7 +131,7 @@ ms.locfileid: "79302991"
 
 2. 我們將會要求您認可 Microsoft [授權條款](https://visualstudio.microsoft.com/license-terms/)和 Microsoft [隱私權聲明](https://privacy.microsoft.com/privacystatement)。 選擇 [繼續]****。
 
-   ![授權條款和隱私權聲明](media/privacy-and-license-terms.png "微軟授權條款和隱私權聲明")
+   ![授權條款和隱私權聲明](media/privacy-and-license-terms.png "Microsoft 授權條款與隱私權聲明")
 
 ## <a name="step-4---choose-workloads"></a>步驟 4 - 選擇工作負載
 
@@ -139,9 +139,9 @@ ms.locfileid: "79302991"
 
  ::: moniker range="vs-2017"
 
-1. 在**視覺化工作室安裝程式**中查找所需的工作負載。
+1. 在**Visual Studio 安裝程式**中找出您想要的工作負載。
 
-   ![視覺化工作室 2017： 安裝工作負載](../install/media/vs-installer-installing-workloads.png)
+   ![Visual Studio 2017：安裝工作負載](../install/media/vs-installer-installing-workloads.png)
 
      例如，選擇「.NET 桌面開發」工作負載。 它隨附預設核心編輯器，其中包括超過 20 種語言的基本程式碼編輯支援、能夠從任何資料夾開啟及編輯程式碼而不需要專案，以及整合的原始程式碼控制。
 
@@ -153,9 +153,9 @@ ms.locfileid: "79302991"
 
 ::: moniker range="vs-2019"
 
-1. 在**視覺化工作室安裝程式**中查找所需的工作負載。
+1. 在**Visual Studio 安裝程式**中找出您想要的工作負載。
 
-   ![視覺化工作室 2019： 安裝工作負載](../install/media/vs-2019/vs-installer-workloads.png)
+   ![Visual Studio 2019：安裝工作負載](../install/media/vs-2019/vs-installer-workloads.png)
 
      例如，選擇 [ASP.NET 與網頁程式開發] 工作負載。 它隨附預設核心編輯器，其中包括超過 20 種語言的基本程式碼編輯支援、能夠從任何資料夾開啟及編輯程式碼而不需要專案，以及整合的原始程式碼控制。
 
@@ -166,21 +166,21 @@ ms.locfileid: "79302991"
  ::: moniker-end
 
 > [!TIP]
-> 您可以在安裝後，隨時安裝一開始未安裝的工作負載或元件。 如果打開了視覺化工作室，則轉到 > **"工具獲取工具和功能..."，** 打開視覺化工作室安裝程式。 **Tools** 或者，從 [開始] 功能表開啟 [Microsoft Visual Studio 安裝程式]****。 您可以在此選擇想要安裝的工作負載或元件。 然後，選擇 [修改]****。
+> 您可以在安裝後，隨時安裝一開始未安裝的工作負載或元件。 如果您已 Visual Studio 開啟，請移至 [**工具**] [  >  **取得工具與功能 ...** ]，以開啟 [Visual Studio 安裝程式]。 或者，從 [開始] 功能表開啟 [Microsoft Visual Studio 安裝程式]****。 您可以在此選擇想要安裝的工作負載或元件。 然後，選擇 [修改]****。
 
 ## <a name="step-5---choose-individual-components-optional"></a>步驟 5：選取個別元件 (選擇性)
 
-如果您不想使用工作負載功能自訂 Visual Studio 安裝，或者希望添加比工作負載安裝更多的元件，則可以通過從 **"單個元件**"選項卡安裝或添加單個元件來執行此操作。
+如果您不想使用 [工作負載] 功能來自訂您的 Visual Studio 安裝，或想要新增比工作負載安裝更多的元件，您可以從 [**個別元件**] 索引標籤安裝或新增個別元件來執行此動作。選擇您想要的內容，然後依照提示進行。
 
 ::: moniker range="vs-2017"
 
-  ![視覺工作室 2017 - 安裝單個元件](media/vs-installer-installing-components.png "安裝視覺化工作室各個元件")
+  ![Visual Studio 2017-安裝個別元件](media/vs-installer-installing-components.png "安裝 Visual Studio 個別元件")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![視覺工作室 2019 - 安裝單個元件](media/vs-2019/vs-installer-individual-components.png "安裝視覺化工作室各個元件")
+  ![Visual Studio 2019-安裝個別元件](media/vs-2019/vs-installer-individual-components.png "安裝 Visual Studio 個別元件")
 
 ::: moniker-end
 
@@ -190,13 +190,13 @@ ms.locfileid: "79302991"
 
 ::: moniker range="vs-2017"
 
-  ![視覺工作室 2017 - 安裝語言包](media/vs-installer-installing-language-packs.png "安裝視覺化工作室語言包")
+  ![Visual Studio 2017-安裝語言套件](media/vs-installer-installing-language-packs.png "安裝 Visual Studio 語言套件")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![視覺工作室 2019 - 安裝語言包](media/vs-2019/vs-installer-language-packs.png "安裝視覺化工作室語言包")
+  ![Visual Studio 2019-安裝語言套件](media/vs-2019/vs-installer-language-packs.png "安裝 Visual Studio 語言套件")
 
 ::: moniker-end
 
@@ -210,7 +210,7 @@ ms.locfileid: "79302991"
 
 **15.7 的新功能**：現在您可以減少 Visual Studio 在系統磁碟機上的安裝使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
 
-  ![視覺工作室 2017 - 更改安裝位置](media/installation-options-by-location.png "更改安裝位置")
+  ![Visual Studio 2017-變更安裝位置](media/installation-options-by-location.png "變更安裝位置")
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ ms.locfileid: "79302991"
 
 您可以減少系統磁碟機上的 Visual Studio 安裝磁碟使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
 
-  ![視覺工作室 2019 - 選擇安裝位置](media/vs-2019/vs-installer-installation-locations.png "選擇安裝位置")
+  ![Visual Studio 2019-選取安裝位置](media/vs-2019/vs-installer-installation-locations.png "選取安裝位置")
 
 ::: moniker-end
 
@@ -247,7 +247,7 @@ ms.locfileid: "79302991"
 
 1. 在完成 Visual Studio 安裝後，請選擇 [啟動]**** 按鈕以開始使用 Visual Studio 來進行開發。
 
-1. 在啟動視窗中，選擇 **"創建新專案**"。
+1. 在 [開始] 視窗中，選擇 [**建立新專案**]。
 
 1. 在搜尋方塊中，輸入您想要建立的應用程式類型，以查看可用的範本清單。 範本清單取決於您在安裝期間所選擇的工作負載。 若要查看不同的範本，請選擇不同的工作負載。
 
@@ -261,9 +261,9 @@ ms.locfileid: "79302991"
 
 ## <a name="see-also"></a>另請參閱
 
-* [更新 Visual Studio](update-visual-studio.md)
-* [修改 Visual Studio](modify-visual-studio.md)
+* [更新 Visual Studio 2017](update-visual-studio.md)
+* [修改 Visual Studio 2017](modify-visual-studio.md)
 * [解除安裝 Visual Studio](uninstall-visual-studio.md)
-* [創建視覺化工作室的離線安裝](create-an-offline-installation-of-visual-studio.md)
-* [使用命令列參數安裝視覺化工作室](use-command-line-parameters-to-install-visual-studio.md)
-* [為 Mac 安裝視覺化工作室](/visualstudio/mac/installation)
+* [建立 Visual Studio 的離線安裝](create-an-offline-installation-of-visual-studio.md)
+* [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [安裝 Visual Studio for Mac](/visualstudio/mac/installation)

@@ -1,7 +1,7 @@
 ---
-title: 錯誤：工作組遠端登入失敗 |Microsoft Docs
+title: 錯誤-工作組遠端登入失敗 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.workgroup_remote_logon_failure
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1ee0cfbd021eb7d6a03a791713d187d3c8877c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 97045215098b1f59d5f76a928e9e0a1ab8362756
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736265"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460088"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>錯誤：工作群組遠端登入失敗
 這個錯誤為：
@@ -36,7 +36,7 @@ ms.locfileid: "72736265"
 
 - 遠端機器上沒有符合名稱和密碼的帳戶。
 
-- 如果 Visual Studio 電腦和遠端電腦都位於工作群組中，則發生這個錯誤的原因，可能是因為遠端電腦上的預設 [本機安全性原則] 設定。 [本機安全性原則] 的預設設定是 [僅適用於來賓 - 本機使用者以來賓身分驗證]。 若要在此設定上偵錯，您必須將遠端電腦上的設定變更為 [一般 - 本機使用者以自我身分驗證]。
+- 如果 Visual Studio 電腦和遠端電腦都位於工作群組中，則發生這個錯誤的原因，可能是因為遠端電腦上的預設 [本機安全性原則]**** 設定。 [本機安全性原則]**** 的預設設定是 [僅適用於來賓 - 本機使用者以來賓身分驗證]****。 若要在此設定上偵錯，您必須將遠端電腦上的設定變更為 [一般 - 本機使用者以自我身分驗證]****。
 
 > [!NOTE]
 > 您必須是系統管理員，才能進行下列工作。
@@ -47,32 +47,32 @@ ms.locfileid: "72736265"
 
 ### <a name="to-add-user-rights-assignments"></a>若要加入使用者權限指派
 
-1. 開啟 [本機安全性原則] 視窗。
+1. 開啟 [本機安全性原則]**** 視窗。
 
-2. 展開 [本機原則] 資料夾。
+2. 展開 [本機原則]**** 資料夾。
 
-3. 按一下 [使用者權限指派]。
+3. 按一下 **[使用者權限指派]**。
 
-4. 在 [原則] 一欄中，按兩下 [偵錯程式] 來檢視 [本機安全性原則設定] 對話方塊中的目前本機群組原則指派。
+4. 在 [原則]**** 一欄中，按兩下 [偵錯程式]**** 來檢視 [本機安全性原則設定]**** 對話方塊中的目前本機群組原則指派。
 
      ![本機安全性原則使用者權限](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
 
-5. 若要新增使用者，請按一下 [新增使用者或群組] 按鈕。
+5. 若要新增使用者，請按一下 [新增使用者或群組]**** 按鈕。
 
 ### <a name="to-change-the-sharing-and-security-model"></a>若要變更共用和安全性模式
 
-1. 開啟 [本機安全性原則] 視窗。
+1. 開啟 [本機安全性原則]**** 視窗。
 
-2. 展開 [本機原則] 資料夾。
+2. 展開 [本機原則]**** 資料夾。
 
-3. 按一下 [安全性選項]。
+3. 按一下 [安全性選項]****。
 
-4. 在 [原則] 欄中按兩下 [網路存取: 本機帳戶的共用和資訊安全模型]。
+4. 在 [原則]**** 欄中按兩下 [網路存取: 本機帳戶的共用和資訊安全模型]****。
 
-5. 在 [網路存取: 本機帳戶的共用和資訊安全模型] 對話方塊中，將值變更為 [傳統 - 本機使用者自我驗證]，然後按一下 [套用] 按鈕。
+5. 在 [網路存取: 本機帳戶的共用和資訊安全模型]**** 對話方塊中，將值變更為 [傳統 - 本機使用者自我驗證]****，然後按一下 [套用]**** 按鈕。
 
      ![本機安全性原則安全性選項](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [遠端偵錯](../debugger/remote-debugging.md)

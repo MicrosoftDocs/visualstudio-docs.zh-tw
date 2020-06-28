@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 516e2aaf4a55ad6422200f9fef1cbbf2d435af7b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fee2244792d73924793ae82def1f533b909403c5
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597330"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418856"
 ---
 # <a name="signing-page-project-designer"></a>專案設計工具、簽署頁
 
@@ -79,9 +79,9 @@ ms.locfileid: "75597330"
 
 [選擇強式名稱金鑰檔]**** 清單
 
-可讓您指定用來簽署組件的新或現有強式名稱金鑰檔。 選擇**\<"流覽...">** 以選擇現有金鑰檔。
+可讓您指定用來簽署組件的新或現有強式名稱金鑰檔。 選取 **\<Browse...>** 以選取現有的金鑰檔。
 
-選擇**\<"新建...">** 以創建新的金鑰檔，以便對程式集進行簽名。 [建立強式名稱金鑰]**** 對話方塊隨即出現，可用來指定金鑰檔名稱並使用密碼來保護金鑰檔。 密碼長度至少必須是 6 個字元。 如果您指定密碼，則會建立個人資訊交換 (.pfx) 檔案；如果您未指定密碼，則會建立強式名稱金鑰 (.snk) 檔案。
+選取 **\<New...>** 即可建立用來簽署元件的新金鑰檔。 [建立強式名稱金鑰]**** 對話方塊隨即出現，可用來指定金鑰檔名稱並使用密碼來保護金鑰檔。 密碼長度至少必須是 6 個字元。 如果您指定密碼，則會建立個人資訊交換 (.pfx) 檔案；如果您未指定密碼，則會建立強式名稱金鑰 (.snk) 檔案。
 
 [變更密碼]**** 按鈕
 
@@ -101,8 +101,8 @@ ms.locfileid: "75597330"
 ## <a name="see-also"></a>另請參閱
 
 - [專案屬性參考](../../ide/reference/project-properties-reference.md)
-- [管理程式集和清單簽名](../../ide/managing-assembly-and-manifest-signing.md)
-- [如何：對應用程式和部署清單進行簽名](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [管理元件和資訊清單簽署](../../ide/managing-assembly-and-manifest-signing.md)
+- [如何：簽署應用程式和部署資訊清單](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [如何：簽署組件 (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [如何：使用強式名稱簽署組件](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
-- [強式名稱的組件](/dotnet/framework/app-domains/strong-named-assemblies)
+- [強式名稱的元件](/dotnet/framework/app-domains/strong-named-assemblies)

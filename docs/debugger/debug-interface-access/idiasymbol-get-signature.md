@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_signature | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da52e72f218d7ef3207d13c843df7e1bc5f8c40b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0f61ec7fafba66f241d737205de45153a46cec4c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739348"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461988"
 ---
 # <a name="idiasymbolget_signature"></a>IDiaSymbol::get_signature
 抓取符號的簽章值。
@@ -36,10 +36,10 @@ HRESULT get_signature ( 
 脫銷傳回符號的簽章值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> @No__t_0 的傳回值表示該屬性不適用於符號。
+> 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
