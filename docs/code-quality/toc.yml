@@ -551,6 +551,8 @@
                   href: ca1828.md
                 - name: CA1829：請使用 Length/Count 屬性，不要使用 Enumerable.Count 方法
                   href: ca1829.md
+                - name: CA1830：建議在 StringBuilder 上使用強型別 Append 及 Insert 方法多載
+                  href: ca1830.md
                 - name: CA1831：在適用情況下，請使用 AsSpan 做為字串，不要使用範圍型的索引子
                   href: ca1831.md
                 - name: CA1832：請使用 AsSpan 或 AsMemory 來取得陣列的 ReadOnlySpan 或 ReadOnlyMemory 部分，不要使用範圍型的索引子
@@ -949,6 +951,8 @@
                   href: ca2245.md
                 - name: CA2246：請勿在相同的陳述式中指派符號及其成員
                   href: ca2246.md
+                - name: CA2247：傳遞到 TaskCompletionSource 建構函式的引數應為 TaskCreationOptions 列舉，而非 TaskContinuationOptions 列舉
+                  href: ca2247.md
                 - name: CA2248：請提供正確的列舉引數給 Enum.HasFlag
                   href: ca2248.md
             - name: 自動功能暫停
