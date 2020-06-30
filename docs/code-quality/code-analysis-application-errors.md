@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587780"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521312"
 ---
 # <a name="code-analysis-application-errors"></a>程式碼分析應用程式錯誤
 
@@ -26,14 +26,14 @@ ms.locfileid: "75587780"
 
 ## <a name="in-this-section"></a>本節內容
 
-|||
+|程式碼|描述|
 |-|-|
 |[CA0001](ca0001.md)|在 managed 程式碼分析工具中引發例外狀況，但未指出預期的錯誤情況。|
 |[CA0051](ca0051.md)|未選取任何規則。|
 |[CA0052](ca0052.md)|未選取要分析的目標。|
 |[CA0053](ca0053.md)|無法載入規則元件。|
 |[CA0054](ca0054.md)|自訂規則元件包含不正確 XML 資源。|
-|[CA0055](ca0055.md)|無法載入檔案：\<路徑 >|
+|[CA0055](ca0055.md)|無法載入檔案：\<path>|
 |[CA0056](ca0056.md)|專案檔具有不正確的分析工具版本。|
 |[CA0057](ca0057.md)|違規無法對應到目前的目標和規則集。|
 |[CA0058](ca0058.md)|無法載入參考的元件。|
@@ -54,7 +54,7 @@ ms.locfileid: "75587780"
 |[CA0503](ca0503.md)|屬性已被取代。 使用取代屬性|
 |[CA0504](ca0504.md)|已忽略規則目錄，因為它不存在|
 |[CA0505](ca0505.md)|屬性已被取代。 使用取代屬性|
-|[FxCopCmd 錯誤](fxcopcmd-errors.md)|Managed 程式碼分析錯誤。|
+|[Fxcopcmd.exe 錯誤](fxcopcmd-errors.md)|Managed 程式碼分析錯誤。|
 
 ## <a name="related-sections"></a>相關章節
 

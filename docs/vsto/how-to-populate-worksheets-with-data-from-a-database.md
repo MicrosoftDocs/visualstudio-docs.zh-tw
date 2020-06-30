@@ -1,7 +1,7 @@
 ---
 title: 如何：將資料庫的資料填入工作表
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a1e01f5c9fc1372cda4d7d31f8ba56b90e166e7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985853"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520116"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>如何：將資料庫的資料填入工作表
 
@@ -35,15 +35,15 @@ ms.locfileid: "72985853"
 
 1. 在 Visual Studio 中開啟 Excel 檔層級專案，並在設計工具中開啟工作表。
 
-2. 開啟 [資料來源] 視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱[新增連接](../data-tools/add-new-connections.md)。
+2. 開啟 [資料來源] **** 視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱[新增連接](../data-tools/add-new-connections.md)。
 
 3. 將您想要的欄位或資料表從 [**資料來源**] 視窗拖曳至您的工作表。
 
 工作表上會建立下列其中一個控制項：
 
-- 如果您拖曳欄位，則會在工作表上建立 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項。 如需詳細資訊，請參閱[NamedRange control](../vsto/namedrange-control.md)。
+- 如果您拖曳欄位， <xref:Microsoft.Office.Tools.Excel.NamedRange> 就會在工作表上建立控制項。 如需詳細資訊，請參閱[NamedRange control](../vsto/namedrange-control.md)。
 
-- 如果您拖曳資料表，就會在工作表上建立 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。 如需詳細資訊，請參閱[ListObject control](../vsto/listobject-control.md)。
+- 如果您拖曳資料表， <xref:Microsoft.Office.Tools.Excel.ListObject> 就會在工作表上建立控制項。 如需詳細資訊，請參閱[ListObject control](../vsto/listobject-control.md)。
 
 您可以在 [**資料來源**] 視窗中選取資料表或欄位，然後從下拉式清單中選擇不同的控制項，以加入不同的控制項。
 
@@ -67,7 +67,7 @@ ms.locfileid: "72985853"
 
 如需如何將更新傳送至具類型資料集和資料庫的詳細資訊，請參閱[如何：使用主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [新增資料來源](../data-tools/add-new-data-sources.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3b2e1fd025d559889f0ea41d39879e251e80fa64
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: f837822e47c911e3c27d9d41e31ae9cd448d4fc5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586697"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520493"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式的程式碼品質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,14 +26,14 @@ Visual Studio 中的程式碼分析工具會檢查您的程式碼是否有常見
 
 ## <a name="in-this-section"></a>本節內容
 
-|||
+|Title|描述|
 |-|-|
 |[分析 Visual Basic 和 C# 程式碼品質](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|在 Visual Basic 和 C# 專案中使用程式碼分析。|
 |[分析 C++ 程式碼品質](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|在 C++專案中使用程式碼分析。|
 
 ## <a name="more-code-analysis-info"></a>更多程式碼分析資訊
 
-|||
+|Title|描述|
 |-|-|
 |[MSDN Library 中的程式碼分析](https://msdn.microsoft.com/library/dd264897.aspx)|尋找在 Visual Studio Ultimate、Visual Studio Premium 和 Visual Studio Professional 中使用程式碼分析的詳細資訊。|
 |[MSDN 程式碼分析小組部落格](https://blogs.msdn.com/b/codeanalysis/)|在程式碼分析小組部落格上尋找詳細資訊，包括技術文件和範例。|

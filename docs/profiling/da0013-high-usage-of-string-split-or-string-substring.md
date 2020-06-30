@@ -17,16 +17,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 49c403c401a3a60213519d0b01131e811f5105dd
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: a475ef1f4d60d7dfb0d2ea7189295bad47426c0a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328086"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520610"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013：String.Split 或 String.Substring 的高用量
 
-|||
+|Item|值|
 |-|-|
 |規則 ID|DA0013|
 |類別|.NET Framework 使用方式指導|

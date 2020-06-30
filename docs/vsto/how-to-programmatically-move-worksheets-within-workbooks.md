@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式移動工作表在活頁簿內
+title: 如何：以程式設計方式在活頁簿內移動工作表
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7e62e397bd9f8c2a0e8e8c8b7ed6581e289a9efc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4594395eb887a950c9ff0ba41cd8d3c625d35dc3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812734"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519818"
 ---
-# <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>HOW TO：以程式設計方式移動工作表在活頁簿內
+# <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>如何：以程式設計方式在活頁簿內移動工作表
   您可以透過程式設計方式變更工作表在活頁簿中相對於其他工作表的位置。 如果您不指定移動工作表的位置，Excel 會建立新的活頁簿來包含它。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "62812734"
      [!code-csharp[Trin_VstcoreExcelAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreExcelAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#24)]
 
-## <a name="to-move-a-worksheet-in-a-vsto-add-in"></a>在 VSTO 增益集中移動工作表
+## <a name="to-move-a-worksheet-in-a-vsto-add-in"></a>若要在 VSTO 增益集中移動工作表
 
 1. 將活頁簿中的工作表總數指派給變數之後，再移動第一個工作表使它成為最後一個。
 

@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式開啟現有文件
+title: 如何：以程式設計方式開啟現有檔
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,38 +13,38 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 490dda6e5357cd0933c6a8b494cc4373038e5c1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eba4d110b06147db384a4d7aafe01c7d9f272ba3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812379"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519895"
 ---
-# <a name="how-to-programmatically-open-existing-documents"></a>HOW TO：以程式設計方式開啟現有文件
-  <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法會開啟完整的路徑和檔案名稱所指定的現有 Microsoft Office Word 文件。 這個方法會傳回<xref:Microsoft.Office.Interop.Word.Document>表示開啟的文件。
+# <a name="how-to-programmatically-open-existing-documents"></a>如何：以程式設計方式開啟現有檔
+  <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法會開啟以完整路徑和檔案名指定的現有 Microsoft Office Word 檔。 這個方法會傳回 <xref:Microsoft.Office.Interop.Word.Document> 代表已開啟檔的。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="to-open-a-document"></a>若要開啟的文件
+## <a name="to-open-a-document"></a>若要開啟檔
 
-- 呼叫<xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法的<xref:Microsoft.Office.Interop.Word.Documents>集合，並提供文件的路徑。
+- 呼叫 <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 集合的方法 <xref:Microsoft.Office.Interop.Word.Documents> ，並提供檔的路徑。
 
      [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]
 
-## <a name="to-open-a-document-as-read-only"></a>若要開啟 文件標記為唯讀
+## <a name="to-open-a-document-as-read-only"></a>以唯讀方式開啟檔
 
-- 呼叫<xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法，提供路徑給文件，並設定*ReadOnly*引數**True**方法呼叫中。
+- 呼叫 <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 方法，並提供檔的路徑，然後在方法呼叫中將*ReadOnly*引數設定為**True** 。
 
      [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
      [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]
 
 ## <a name="compile-the-code"></a>編譯程式碼
- 這個程式碼範例需要下列項目：
+ 這段程式碼範例需要下列項目：
 
-- 名為文件*NewDocument.doc*必須存在於一個名為目錄*測試*上磁碟機 c。
+- 名為*NewDocument.doc*的檔必須存在於磁片磁碟機 C 上名為*Test*的目錄中。
 
 ## <a name="see-also"></a>另請參閱
-- [如何：以程式設計方式建立新文件](../vsto/how-to-programmatically-create-new-documents.md)
-- [如何：以程式設計方式關閉文件](../vsto/how-to-programmatically-close-documents.md)
+- [如何：以程式設計方式建立新檔](../vsto/how-to-programmatically-create-new-documents.md)
+- [如何：以程式設計方式關閉檔](../vsto/how-to-programmatically-close-documents.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

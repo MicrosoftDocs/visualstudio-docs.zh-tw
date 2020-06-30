@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4352575c811d76241721fc8343b6a48c012eddb7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 102e41e45caac8d0567786579130e0953ec68b30
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917409"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521234"
 ---
 # <a name="image-service-and-catalog"></a>影像服務與資料庫目錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -20,9 +20,8 @@ ms.locfileid: "75917409"
 
  Visual Studio 2015 中引進的映射服務可讓開發人員取得裝置的最佳影像，以及使用者所選擇的主題來顯示影像，包括其顯示所在內容的正確主題。 採用映射服務可協助消除與資產維護、HDPI 調整和主題相關的重大難題。  
 
-|||  
+|**今天的問題**|**適用**|  
 |-|-|  
-|**今天的問題**|**方案**|  
 |背景色彩混合|內建 Alpha 混合|  
 |主題（部分）影像|主題中繼資料|  
 |高對比模式|替代高對比資源|  
@@ -41,7 +40,7 @@ ms.locfileid: "75917409"
 
   使用映射服務之前和之後的 Visual Studio shell 工具列：  
 
-  ![之前和之後的映射服務](../extensibility/media/image-service-before-and-after.png "影像服務之前及之後")  
+  ![影像服務之前及之後](../extensibility/media/image-service-before-and-after.png "影像服務之前及之後")  
 
 ## <a name="how-it-works"></a>運作方式  
  映射服務可以提供適用于任何支援之 UI 架構的點陣圖影像：  
@@ -89,7 +88,7 @@ ms.locfileid: "75917409"
 </ImageManifest>  
 ```  
 
- **Symbols**  
+ **符號**  
 
  為方便閱讀和維護，映射資訊清單可以使用符號做為屬性值。 符號的定義如下：  
 
@@ -102,13 +101,12 @@ ms.locfileid: "75917409"
 </Symbols>  
 ```  
 
-|||  
+|**Subelement**|**[定義]**|  
 |-|-|  
-|**子項目**|**定義**|  
-|[匯入]|匯入指定資訊清單檔的符號，以用於目前的資訊清單|  
-|GUID|符號代表 GUID，且必須符合 GUID 格式|  
-|識別碼|符號代表識別碼，且必須為非負整數|  
-|字串|符號代表任一字元串值|  
+|匯入|匯入指定資訊清單檔的符號，以用於目前的資訊清單|  
+|Guid|符號代表 GUID，且必須符合 GUID 格式|  
+|ID|符號代表識別碼，且必須為非負整數|  
+|String|符號代表任一字元串值|  
 
  符號會區分大小寫，並使用 $ （符號-名稱）語法來參考：  
 
@@ -118,24 +116,23 @@ ms.locfileid: "75917409"
 </Image>  
 ```  
 
- 所有資訊清單都有預先定義的符號。 這些可以用在 \<來源 > 的 Uri 屬性中，或 \<將 > 元素匯入本機電腦上的參考路徑。  
+ 所有資訊清單都有預先定義的符號。 這些可以用在或元素的 Uri 屬性中 \<Source> \<Import> ，以參考本機電腦上的路徑。  
 
-|||  
+|**符號**|**說明**|  
 |-|-|  
-|**符號**|**描述**|  
 |CommonProgramFiles|% CommonProgramFiles% 環境變數的值|  
 |LocalAppData|% LocalAppData% 環境變數的值|  
 |ManifestFolder|包含資訊清單檔案的資料夾|  
 |MyDocuments|目前使用者的 [我的文件] 資料夾的完整路徑|  
 |ProgramFiles|% ProgramFiles% 環境變數的值|  
-|System|Windows\System32 資料夾|  
+|系統|Windows\System32 資料夾|  
 |WinDir|% WinDir% 環境變數的值|  
 
- **影像**  
+ **映像**  
 
- \<影像 > 元素會定義可由標記所參考的影像。 同時採用的 GUID 和識別碼會形成影像標記。 影像的標記在整個影像庫中必須是唯一的。 如果有一個以上的映射具有指定的名字，則在建立程式庫時所遇到的第一個影像就是保留的一個。  
+ \<Image>元素會定義可由標記所參考的影像。 同時採用的 GUID 和識別碼會形成影像標記。 影像的標記在整個影像庫中必須是唯一的。 如果有一個以上的映射具有指定的名字，則在建立程式庫時所遇到的第一個影像就是保留的一個。  
 
- 它至少必須包含一個來源。 大小中立的來源可提供各種大小的最佳結果，但並非必要。 如果要求服務的影像大小未定義于 \<影像中 > 專案，而且沒有任何大小中立的來源，則服務會選擇最佳的大小特定來源，並將其調整為所要求的大小。  
+ 它至少必須包含一個來源。 大小中立的來源可提供各種大小的最佳結果，但並非必要。 如果要求服務的影像大小未定義于元素中， \<Image> 而且沒有任何大小中立的來源，則服務會選擇最佳的大小特定來源，並將其調整為所要求的大小。  
 
 ```xml  
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">  
@@ -144,16 +141,15 @@ ms.locfileid: "75917409"
 </Image>  
 ```  
 
-|||  
+|**屬性**|**[定義]**|  
 |-|-|  
-|**屬性**|**定義**|  
-|GUID|具備影像標記的 GUID 部分|  
-|識別碼|具備影像標記的識別碼部分|  
+|Guid|具備影像標記的 GUID 部分|  
+|ID|具備影像標記的識別碼部分|  
 |AllowColorInversion|[選用，預設值為 true]指出影像在深色背景上使用時，是否可以以程式設計方式反轉其色彩。|  
 
- **來源**  
+ **Source**  
 
- \<來源 > 元素會定義單一影像來源資產（XAML 和 PNG）。  
+ \<Source>元素會定義單一影像來源資產（XAML 和 PNG）。  
 
 ```xml  
 <Source Uri="uri" Background="background">  
@@ -163,36 +159,34 @@ ms.locfileid: "75917409"
 
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **屬性** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **定義**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|      URI      |                                                                                                                                                                                                                                                                                                               具備定義可從中載入影像之位置的 URI。 可以是下列其中一項：<br /><br /> -使用 application:///授權單位的[PACK URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)<br />-絕對元件資源參考<br />-包含原生資源之檔案的路徑                                                                                                                                                                                                                                                                                                               |
+| **屬性** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **[定義]**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|      Uri      |                                                                                                                                                                                                                                                                                                               具備定義可從中載入影像之位置的 URI。 可以是下列其中一項：<br /><br /> -使用 application:///授權單位的[PACK URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)<br />-絕對元件資源參考<br />-包含原生資源之檔案的路徑                                                                                                                                                                                                                                                                                                               |
 |  背景   | 選擇性表示要使用來源的背景類型。<br /><br /> 可以是下列其中一項：<br /><br /> *Light：* 來源可以在淺色背景上使用。<br /><br /> <em>深色：</em>來源可以用於深色背景上。<br /><br /> *Systeminformation.highcontrast：* 來源可以在高對比模式的任何背景上使用。<br /><br /> *HighContrastLight：* 來源可以在高對比模式的淺背景上使用。<br /><br /> *HighContrastDark：* 來源可以在高對比模式的深色背景上使用。<br /><br /> 如果省略 Background 屬性，則可以在任何背景使用來源。<br /><br /> 如果背景為*淺*、*暗*、 *HighContrastLight*或*HighContrastDark*，則來源的色彩永遠不會反轉。 如果 [背景] 省略或設為*systeminformation.highcontrast*，則來源色彩的反轉是由影像的**AllowColorInversion**屬性所控制。 |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
- \<的來源 > 專案只能有下列其中一個選擇性子項目：  
+ 專案 \<Source> 只能有下列其中一個選擇性子項目：  
 
-||||  
+|**元素**|**屬性（全部必要）**|**[定義]**|  
 |-|-|-|  
-|**目**|**屬性（全部必要）**|**定義**|  
-|\<大小 >|{2&gt;值&lt;2}|來源將用於指定大小的影像（以裝置為單位）。 影像將會是正方形。|  
-|\<SizeRange >|MinSize、MaxSize|來源將用於從 MinSize 到大小上限（裝置單位）的影像。 影像將會是正方形。|  
-|\<維度 >|寬度, 高度|來源將用於指定的寬度和高度（以裝置為單位）的影像。|  
-|\<DimensionRange >|MinWidth、MinHeight、<br /><br /> MaxWidth、MaxHeight|來源將用於從最小寬度/高度到所含的最大寬度/高度（以裝置單位）為單位的影像。|  
+|\<Size>|值|來源將用於指定大小的影像（以裝置為單位）。 影像將會是正方形。|  
+|\<SizeRange>|MinSize、MaxSize|來源將用於從 MinSize 到大小上限（裝置單位）的影像。 影像將會是正方形。|  
+|\<Dimensions>|寬度，高度|來源將用於指定的寬度和高度（以裝置為單位）的影像。|  
+|\<DimensionRange>|MinWidth、MinHeight、<br /><br /> MaxWidth、MaxHeight|來源將用於從最小寬度/高度到所含的最大寬度/高度（以裝置單位）為單位的影像。|  
 
- \<的來源 > 專案也可以有選擇性的 \<NativeResource > 子項目，以定義從原生元件（而非 managed 元件）載入的 \<來源 >。  
+ 專案 \<Source> 也可以有選擇性的 \<NativeResource> 子項目，它會定義 \<Source> 從原生元件載入而非 managed 元件的。  
 
 ```xml  
 <NativeResource Type="type" ID="int" />  
 ```  
 
-|||  
+|**屬性**|**[定義]**|  
 |-|-|  
-|**屬性**|**定義**|  
 |類型|具備原生資源的類型，XAML 或 PNG|  
-|識別碼|具備原生資源的整數識別碼部分|  
+|ID|具備原生資源的整數識別碼部分|  
 
  **ImageList**  
 
- \<ImageList > 元素會定義可在單一帶狀中傳回的影像集合。 視需要依需求建立帶狀。  
+ \<ImageList>元素會定義可在單一帶狀中傳回的影像集合。 視需要依需求建立帶狀。  
 
 ```xml  
 <ImageList>  
@@ -201,11 +195,10 @@ ms.locfileid: "75917409"
  </ImageList>  
 ```  
 
-|||  
+|**屬性**|**[定義]**|  
 |-|-|  
-|**屬性**|**定義**|  
-|GUID|具備影像標記的 GUID 部分|  
-|識別碼|具備影像標記的識別碼部分|  
+|Guid|具備影像標記的 GUID 部分|  
+|ID|具備影像標記的識別碼部分|  
 |外部|[選用，預設值為 false]指出影像標記是否參考目前資訊清單中的影像。|  
 
  所包含之影像的標記不需要參考在目前資訊清單中定義的影像。 如果在影像媒體櫃中找不到包含的影像，則會在其位置中使用空白的預留位置影像。  
@@ -215,15 +208,15 @@ ms.locfileid: "75917409"
 ### <a name="first-steps-managed"></a>第一個步驟（受控）  
  若要使用映射服務，您必須將下列部分或所有元件的參考新增至您的專案：  
 
-- **VisualStudio. ImageCatalog .dll**  
+- **Microsoft.VisualStudio.ImageCatalog.dll**  
 
   - 如果您使用內建的映射目錄 KnownMonikers，則為必要項  
 
-- **VisualStudio. 影像處理 .dll**  
+- **Microsoft.VisualStudio.Imaging.dll**  
 
   - 如果您在 WPF UI 中使用**CrispImage**和**ImageThemingUtilities** ，則為必要項  
 
-- **VisualStudio. 影像處理 DesignTime .dll**  
+- **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
 
   - 如果您使用**ImageMoniker**和**ImageAttributes**類型，則為必要  
 
@@ -235,15 +228,15 @@ ms.locfileid: "75917409"
 
   - **EmbedInteropTypes**應該設定為 true  
 
-- **VisualStudio 公用程式 .dll**  
+- **Microsoft.VisualStudio.Utilities.dll**  
 
   - 如果您使用 ImageThemingUtilities 的**BrushToColorConverter** ，則為必要。WPF UI 中的**ImageBackgroundColor**  
 
-- **VisualStudio > 中的\<VSVersion。0**  
+- **VisualStudio \<VSVersion> 。0**  
 
   - 如果您使用**IVsUIObject**類型，則為必要  
 
-- **VisualStudio. Shell .dll。**  
+- **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
 
   - 如果您使用 WinForms 相關的 UI 協助程式，則為必要  
 
@@ -312,7 +305,7 @@ ms.locfileid: "75917409"
 
  更新現有的 WPF UI 是一個相當簡單的程式，其中包含三個基本步驟：  
 
-1. 將 UI 中所有 \<影像 > 元素取代為 \<CrispImage > 元素  
+1. \<Image>以元素取代 UI 中的所有元素 \<CrispImage>  
 
 2. 將所有來源屬性變更為 [名字] 屬性  
 
@@ -444,11 +437,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
        this.BitmapIndex = <Value>;  
        ```  
 
-   2. 請參閱 一節。  
+   2. 請參閱 < 如何在新的工具視窗中使用影像名字的步驟 #1？ 一節。  
 
 4. 用來開啟工具視窗的命令。  
 
-   - 請參閱 一節。  
+   - 請參閱 < 如何在新的工具視窗中使用影像名字的步驟 #2？ 一節。  
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>如何? 在 .vsct 檔案中使用影像名字標記嗎？  
  更新您的 .vsct 檔案，如下列批註行所示：  
@@ -493,7 +486,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
  **如果 .vsct 檔案也需要由較舊版本的 Visual Studio 讀取，該怎麼辦？**  
 
- 較舊版本的 Visual Studio 無法辨識**IconIsMoniker**命令旗標。 您可以在支援的 Visual Studio 版本上，使用來自映射服務的映射，但繼續在舊版的 Visual Studio 上使用舊樣式的映射。 若要這樣做，您可以將 .vsct 檔案保持不變（因而與舊版 Visual Studio 相容），並建立 CSV （逗點分隔值）檔案，該檔案會從 .vsct 檔案的 \<點陣圖 > 專案中定義的 GUID/識別碼配對對應到影像標記 GUID/識別碼組。  
+ 較舊版本的 Visual Studio 無法辨識**IconIsMoniker**命令旗標。 您可以在支援的 Visual Studio 版本上，使用來自映射服務的映射，但繼續在舊版的 Visual Studio 上使用舊樣式的映射。 若要這樣做，您可以將 .vsct 檔案保持不變（因而與舊版 Visual Studio 相容），並建立 CSV （逗點分隔值）檔案，該檔案會從 .vsct 檔案的元素中所定義的 GUID/識別碼組對應 \<Bitmaps> 到映射標記 GUID/識別碼配對。  
 
  對應 CSV 檔案的格式為：  
 
@@ -509,7 +502,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]  
 ```  
 
- **IconMappingFilename**是以隱含方式 $PackageFolder 根的相對路徑（如上述範例所示），或在環境變數所定義的目錄中明確地建立根目錄的絕對路徑，例如 @ "%UserProfile%\dir1\dir2\MyMappingFile.csv"。  
+ **IconMappingFilename**是以隱含方式 $PackageFolder 根的相對路徑（如上述範例所示），或以環境變數所定義之目錄明確根的絕對路徑，例如 @ "% UserProfile% \dir1\dir2\MyMappingFile.csv"。  
 
 ## <a name="how-do-i-port-a-project-system"></a>如何? 為專案系統建立埠嗎？  
  **如何提供專案的 ImageMonikers**  
@@ -520,7 +513,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 3. 變更圖示的原始 VSHPROPIDs 的執行方式，以便在擴充點要求時，建立圖示的「舊版」版本。 **IVsImageService2**提供取得這些圖示所需的功能  
 
-   **VB/C# project 類別的額外需求**  
+   **VB/c # 專案類別的額外需求**  
 
    只有在偵測到您的專案是**最外層**的類別時，才執行**VSHPROPID_SupportsIconMonikers** 。 否則，實際的最外層類別在現實中可能不支援影像標記，而您的基底類別可以有效地「隱藏」自訂映射。  
 
@@ -570,17 +563,17 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 2. 如果您只使用**KnownMonikers**，請執行下列動作：  
 
-   - 將資訊清單中的 \<映射 > 區段取代為 \<Images/>。  
+   - \<Images>將資訊清單的區段取代為 \<Images/> 。  
 
-   - 移除所有 subimage 識別碼（具有 \<imagestrip 名稱的任何專案 > _ # #）。  
+   - 移除所有的 subimage 識別碼（任何專案 \<imagestrip name> _ # #）。  
 
    - 建議：將 AssetsGuid 符號和圖像塊符號重新命名，以符合其使用方式。  
 
-   - 以 $ （ImageCatalogGuid）取代每個**ContainedImage**的 GUID，以 $ （\<的名字值 >）取代每個**ContainedImage**的識別碼，並將 External = "true" 屬性新增至每個**ContainedImage**  
+   - 以 $ （ImageCatalogGuid）取代每個**ContainedImage**的 GUID，以 $ （）取代每個**ContainedImage**的識別碼 \<moniker> ，並將 External = "true" 屬性新增至每個**ContainedImage**  
 
-       - \<的名字標記 > 應取代為符合映射但具有 "KnownMonikers" 的**KnownMoniker** 。 已從名稱中移除。  
+       - \<moniker>應取代為符合映射但具有 "KnownMonikers" 的**KnownMoniker** 。 已從名稱中移除。  
 
-   - 新增 < 匯入資訊清單 = "$ （ManifestFolder）\\< 相對安裝目錄路徑到\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\> 在 \<符號 > 區段的頂端。  
+   - 將 <匯入資訊清單 = "$ （ManifestFolder） \\<相對安裝目錄路徑 \> \Microsoft.VisualStudio.ImageCatalog.imagemanifest"/新增至 \> 區段的頂端 \<Symbols> 。  
 
        - 相對路徑是由在資訊清單的安裝程式撰寫中定義的部署位置所決定。  
 
@@ -657,7 +650,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ### <a name="samples"></a>範例  
  GitHub 上的數個 Visual Studio 範例已更新，以示範如何使用映射服務作為各種 Visual Studio 擴充點的一部分。  
 
- 如需最新範例，請參閱[http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) 。  
+ 檢查 [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) 最新的範例。  
 
 ### <a name="tooling"></a>Tooling  
  已建立一組映射服務的支援工具，以協助建立/更新可與映射服務搭配使用的 UI。 如需每個工具的詳細資訊，請參閱工具隨附的檔。 這些工具組含在[Visual Studio 2015 SDK 中。](https://msdn.microsoft.com/library/bb166441.aspx)  
@@ -668,7 +661,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **ManifestToCode**  
 
- Manifest to Code 工具會接受映射資訊清單檔案，並產生包裝函式檔案，以參考程式碼（C++、 C#或 VB）或 .vsct 檔中的資訊清單值。  
+ Manifest to Code 工具會採用映射資訊清單檔，並產生包裝函式檔案，以參考程式碼中的資訊清單值（c + +、c # 或 VB）或 .vsct 檔。  
 
  **ImageLibraryViewer**  
 
@@ -676,7 +669,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 ## <a name="faq"></a>常見問題集  
 
-- 載入 \<參考包含 = "VisualStudio. * 時，是否有任何相依性必須包含在內。DesignTime "/>？  
+- 載入時是否有任何相依性必須包含 \<Reference Include="Microsoft.VisualStudio.*.Interop.14.0.DesignTime" /> ？  
 
   - 在所有 interop Dll 上設定 EmbedInteropTypes = "true"。  
 
@@ -690,9 +683,8 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
   - 當 CPS 更新為使用標記時，就會移除這些物件。 您不再需要呼叫**StockIconService**，只要使用 CPS 公用程式中的**ToProjectSystemType （）** 擴充方法，將所需的**KnownMoniker**傳遞給方法或屬性即可。 您可以在下方找到從**ImageName**到**KnownMonikers**的對應：  
 
-    |||  
-    |-|-|  
     |**ImageName**|**KnownMoniker**|  
+    |-|-|  
     |ImageName. OfflineWebApp|KnownImageIds. Web|  
     |ImageName. WebReferencesFolder|KnownImageIds. Web|  
     |ImageName. OpenReferenceFolder|KnownImageIds.FolderOpened|  
@@ -710,19 +702,19 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |ImageName. WindowsForm|KnownImageIds.WindowsForm|  
     |ImageName. WindowsUserControl|KnownImageIds. UserControl|  
     |ImageName. WindowsComponent|KnownImageIds.ComponentFile|  
-    |ImageName. XmlSchema|KnownImageIds. XMLSchema|  
-    |ImageName. XmlFile|KnownImageIds. XMLFile|  
+    |ImageName.Xml架構|KnownImageIds.XML架構|  
+    |ImageName.Xml檔案|KnownImageIds.XML檔案|  
     |ImageName. WebForm|KnownImageIds. Web|  
     |ImageName WebService|KnownImageIds WebService|  
     |ImageName. WebUserControl|KnownImageIds.WebUserControl|  
     |ImageName. WebCustomUserControl|KnownImageIds.WebCustomControl|  
     |ImageName. AspPage|KnownImageIds.ASPFile|  
     |ImageName. GlobalApplicationClass|KnownImageIds. SettingsFile|  
-    |ImageName. WebConfig|KnownImageIds. ConfigurationFile|  
-    |ImageName. Html 網頁|KnownImageIds.HTMLFile|  
+    |ImageName. WebConfig|KnownImageIds.ConfigurationFile|  
+    |ImageName.HtmlPage|KnownImageIds.HTMLFile|  
     |ImageName 樣式表單|KnownImageIds 樣式表單|  
-    |ImageName. ScriptFile|KnownImageIds.JSScript|  
-    |ImageName. TextFile|KnownImageIds。檔|  
+    |ImageName. ScriptFile|KnownImageIds.JS腳本|  
+    |ImageName. TextFile|KnownImageIds.Document able|  
     |ImageName. SettingsFile|KnownImageIds 設定|  
     |ImageName .Resources|KnownImageIds.DocumentGroup|  
     |ImageName 點陣圖|KnownImageIds 映射|  
@@ -732,7 +724,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |ImageName. XWorld|KnownImageIds.XWorldFile|  
     |ImageName 音訊|KnownImageIds 音效|  
     |ImageName 影片|KnownImageIds 媒體|  
-    |ImageName .Cab|KnownImageIds.CABProject|  
+    |ImageName.Cab|KnownImageIds.CAB專案|  
     |ImageName .Jar|KnownImageIds.JARFile|  
     |ImageName. 環境|KnownImageIds DataTable|  
     |ImageName. PreviewFile|KnownImageIds。報表|  
@@ -758,7 +750,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
   - 我正在更新完成清單提供者。 哪些**KnownMonikers**符合舊的**StandardGlyphGroup**和**StandardGlyph**值？  
 
-    ||||  
+    |名稱|名稱|名稱|  
     |-|-|-|  
     |GlyphGroupClass|GlyphItemPublic|ClassPublic|  
     |GlyphGroupClass|GlyphItemInternal|ClassInternal|  
@@ -948,7 +940,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
     |GlyphGroupError||StatusError|  
     |GlyphBscFile||ClassFile|  
-    |GlyphAssembly||參考資料|  
+    |GlyphAssembly||參考|  
     |GlyphLibrary||程式庫|  
     |GlyphVBProject||VBProjectNode|  
     |GlyphCoolProject||CSProjectNode|  
@@ -963,9 +955,9 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphInformation||StatusInformation|  
     |GlyphReference||ClassMethodReference|  
     |GlyphRecursion||遞迴|  
-    |GlyphXmlItem||標記|  
+    |GlyphXmlItem||Tag|  
     |GlyphJSharpProject||DocumentCollection|  
-    |GlyphJSharpDocument||文件|  
+    |GlyphJSharpDocument||Document|  
     |GlyphForwardType||GoToNext|  
     |GlyphCallersGraph||對|  
     |GlyphCallGraph||CallFrom|  

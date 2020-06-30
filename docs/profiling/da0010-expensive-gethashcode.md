@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e94e30281163a9834453a14ca8900da616a6b884
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 8f94277822d1fcd4210f0f8d79591fc4e2ed3d9e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328206"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520675"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010：GetHashCode 高度耗費資源
 
-|||
+|Item|值|
 |-|-|
 |規則 ID|DA0010|
 |類別|.NET Framework 使用方式|

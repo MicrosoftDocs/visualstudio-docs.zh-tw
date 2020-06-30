@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式加入頁首和頁尾文件
+title: 如何：以程式設計方式在檔中加入頁首和頁尾
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7859657b52e5d96280646387f70686d2804e6fe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52724103df17a1eaaf364f255f127a576beda798
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967617"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519921"
 ---
-# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>HOW TO：以程式設計方式加入頁首和頁尾文件
+# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>如何：以程式設計方式在檔中加入頁首和頁尾
   您可以使用 <xref:Microsoft.Office.Interop.Word.Section> 的 <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> 屬性和 <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> 屬性，將文字加入文件的頁首和頁尾。 文件的每個區段都包含三個頁首和頁尾：
 
 - <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>
@@ -70,6 +70,6 @@ ms.locfileid: "62967617"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]
 
 ## <a name="see-also"></a>另請參閱
-- [如何：以程式設計方式建立新文件](../vsto/how-to-programmatically-create-new-documents.md)
-- [如何：以程式設計方式擴充文件中的範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [如何：以程式設計方式在文件中找到項目執行迴圈](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+- [如何：以程式設計方式建立新檔](../vsto/how-to-programmatically-create-new-documents.md)
+- [如何：以程式設計方式在檔中擴充範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [如何：以程式設計方式對檔中找到的專案執行迴圈](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)

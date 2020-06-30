@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式在 Outlook 中移動項目
+title: 如何：以程式設計方式在 Outlook 中移動專案
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f686a47d18fa91909de489f12f9c7a8c1306d1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812552"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519908"
 ---
-# <a name="how-to-programmatically-move-items-in-outlook"></a>HOW TO：以程式設計方式在 Outlook 中移動項目
-  此範例中移動的未閱讀的電子郵件訊息**收件匣**資料夾，名為**測試**。 此範例只會移動有這個字的訊息**測試**在`Subject`欄位。
+# <a name="how-to-programmatically-move-items-in-outlook"></a>如何：以程式設計方式在 Outlook 中移動專案
+  這個範例會將未讀取的電子郵件訊息從**收件**匣移至名為**Test**的資料夾。 此範例只會在欄位中移動具有「**測試**」一詞的訊息 `Subject` 。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -30,12 +30,12 @@ ms.locfileid: "62812552"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要：
 
-- Outlook 郵件資料夾名為**測試**。
+- 名為**Test**的 Outlook 郵件資料夾。
 
-- 電子郵件訊息的文字**測試**在`Subject`欄位。
+- 在欄位中抵達「**測試**」一詞的電子郵件訊息 `Subject` 。
 
 ## <a name="see-also"></a>另請參閱
 - [使用資料夾](../vsto/working-with-folders.md)
-- [如何：以程式設計方式依名稱擷取資料夾](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [如何：以程式設計方式在特定資料夾中搜尋](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [如何：以程式設計方式依名稱取得資料夾](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [如何：以程式設計方式在特定資料夾內搜尋](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
 - [如何：以程式設計方式在收到電子郵件訊息時執行動作](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
