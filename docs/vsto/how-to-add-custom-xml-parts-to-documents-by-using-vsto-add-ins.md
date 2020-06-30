@@ -1,7 +1,7 @@
 ---
-title: 使用 VSTO 增益集的文件中加入自訂 XML 組件
+title: 使用 VSTO 增益集將自訂 XML 元件新增至檔
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a22620fc112dab49942340175860303f50f9c39e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 92c00ea69069b7374f5f595cc6f198aac23d1f91
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210777"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538290"
 ---
-# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>作法：使用 VSTO 增益集將自訂 XML 組件新增至文件
+# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>如何：使用 VSTO 增益集將自訂 XML 元件新增至檔
   您可以將 XML 資料儲存在下列類型的文件中，方法是在 VSTO 增益集中建立自訂 XML 組件：
 
 - Microsoft Office Excel 活頁簿。
@@ -35,9 +35,9 @@ ms.locfileid: "66210777"
 
 - Microsoft Office PowerPoint 簡報。
 
-  如需詳細資訊，請參閱 <<c0> [ 自訂 XML 組件概觀](../vsto/custom-xml-parts-overview.md)。
+  如需詳細資訊，請參閱[自訂 XML 元件總覽](../vsto/custom-xml-parts-overview.md)。
 
-  **適用於：** 本主題中的資訊適用於 Excel、 PowerPoint 和 Word 的 應用程式層級專案。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。
+  **適用對象：** 本主題資訊適用於 Excel、PowerPoint 和 Word 應用程式層級專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。
 
 ## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>將自訂 XML 組件加入至 Excel 活頁簿
 
@@ -48,7 +48,7 @@ ms.locfileid: "66210777"
      [!code-vb[Trin_AddCustomXmlPartExcelAppLevel#1](../vsto/codesnippet/VisualBasic/trin_addcustomxmlpartexcelapplevel/ThisAddIn.vb#1)]
      [!code-csharp[Trin_AddCustomXmlPartExcelAppLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartExcelAppLevel/ThisAddIn.cs#1)]
 
-2. 新增`AddCustomXmlPartToWorkbook`方法，以`ThisAddIn`Excel 的 VSTO 增益集專案中的類別。
+2. 將 `AddCustomXmlPartToWorkbook` 方法新增至 `ThisAddIn` Excel VSTO 增益集專案中的類別。
 
 3. 從專案中的其他程式碼呼叫方法。 例如，若要在使用者開啟活頁簿時建立自訂 XML 組件，請從 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> 事件的事件處理常式呼叫方法。
 
@@ -61,26 +61,26 @@ ms.locfileid: "66210777"
      [!code-vb[Trin_AddCustomXmlPartWordAppLevel#1](../vsto/codesnippet/VisualBasic/Trin_AddCustomXmlPartWordAppLevel/ThisAddIn.vb#1)]
      [!code-csharp[Trin_AddCustomXmlPartWordAppLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartWordAppLevel/ThisAddIn.cs#1)]
 
-2. 新增`AddCustomXmlPartToDocument`方法，以`ThisAddIn`Word VSTO 增益集專案中的類別。
+2. 將 `AddCustomXmlPartToDocument` 方法新增至 `ThisAddIn` Word VSTO 增益集專案中的類別。
 
 3. 從專案中的其他程式碼呼叫方法。 例如，若要在使用者開啟文件時建立自訂 XML 組件，請從 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> 事件的事件處理常式呼叫方法。
 
 ## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>將自訂 XML 組件加入至 PowerPoint 簡報
 
-1. 加入新<xref:Microsoft.Office.Core.CustomXMLPart>物件至[Microsoft.Office.Interop.PowerPoint._Presentation.CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29)展示檔中的集合。 <xref:Microsoft.Office.Core.CustomXMLPart> 包含您要儲存在簡報中的 XML 字串。
+1. 在簡報中，將新的 <xref:Microsoft.Office.Core.CustomXMLPart> 物件加入[_Presentation 至 CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29)集合。 <xref:Microsoft.Office.Core.CustomXMLPart> 包含您要儲存在簡報中的 XML 字串。
 
      下列程式碼範例會將自訂 XML 組件加入至指定的簡報。
 
      [!code-csharp[Trin_AddCustomXmlPartPowerPointAppLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartPowerPointAppLevel/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddCustomXmlPartPowerPointAppLevel#1](../vsto/codesnippet/VisualBasic/Trin_AddCustomXmlPartPowerPointAppLevel/ThisAddIn.vb#1)]
 
-2. 新增`AddCustomXmlPartToPresentation`方法，以`ThisAddIn`PowerPoint VSTO 增益集專案中的類別。
+2. `AddCustomXmlPartToPresentation` `ThisAddIn` 在 POWERPOINT 的 VSTO 增益集專案中，將方法新增至類別。
 
-3. 從專案中的其他程式碼呼叫方法。 例如，若要在使用者開啟簡報時，請建立自訂 XML 組件，從事件處理常式中呼叫方法[Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14))事件。
+3. 從專案中的其他程式碼呼叫方法。 例如，若要在使用者開啟簡報時建立自訂 XML 元件，請從 AfterPresentationOpen 事件的事件處理[EApplication_Event](/previous-versions/office/developer/office-2010/ff762843(v=office.14))程式呼叫方法。
 
 ## <a name="robust-programming"></a>穩固程式設計
  為了簡單起見，這個範例使用定義為方法中區域變數的 XML 字串。 通常，您應從外部來源取得 XML，例如檔案或資料庫。
 
 ## <a name="see-also"></a>另請參閱
-- [自訂 XML 組件概觀](../vsto/custom-xml-parts-overview.md)
-- [如何：將自訂 XML 組件新增至文件層級自訂](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
+- [自訂 XML 元件總覽](../vsto/custom-xml-parts-overview.md)
+- [如何：將自訂 XML 元件加入至檔層級自訂](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)

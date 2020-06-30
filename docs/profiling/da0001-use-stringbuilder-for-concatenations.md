@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 137d21019973ac78a74429e957429d69d91edbf8
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 6a645816ed046c2ce253a9f882c1425c48347573
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332117"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541735"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001：使用 StringBuilder 進行串連
 
-|||
+|Item|值|
 |-|-|
 |規則 ID|DA0001|
 |類別|.NET Framework 使用方式|

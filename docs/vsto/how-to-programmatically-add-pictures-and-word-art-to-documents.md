@@ -1,7 +1,7 @@
 ---
 title: 以程式設計方式將圖片和文字美工圖案新增至檔
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45b3030875539035f93bd340354e7041028200d2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 621051c827b08e66d68bc348401c2a939e279bcf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253815"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538082"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>作法：以程式設計方式將圖片和文字美工圖案新增至檔
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>如何：以程式設計方式將圖片和文字美工圖案新增至檔
   您可以在設計階段或執行階段，將圖片和繪圖物件加入至您的文件。 文字藝術師可讓您將裝飾文字加入至 Microsoft Office Word 文件。 這些特殊文字效果是繪圖物件，您可自訂並將它們插入至文件。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "71253815"
 
 3. 在 [**文字**] 群組中，按一下 [**藝術字**]，然後選取 [藝術字] 樣式。
 
-4. 將您想要在檔中顯示的文字加入至 [**編輯藝術文字**] 對話方塊，然後按一下 **[確定]** 。
+4. 將您想要在檔中顯示的文字加入至 [**編輯藝術文字**] 對話方塊，然後按一下 **[確定]**。
 
      加入至文件的文字即會套用選取的文字藝術師樣式。
 
@@ -97,7 +97,7 @@ ms.locfileid: "71253815"
 
 ## <a name="compile-the-code"></a>編譯程式碼
 
-- 磁片磁碟機 C 上必須有一個名為*SamplePicture*的圖片。
+- 磁片磁碟機 C 上必須有一個名為*SamplePicture.jpg*的圖片。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：以程式設計方式開啟現有檔](../vsto/how-to-programmatically-open-existing-documents.md)

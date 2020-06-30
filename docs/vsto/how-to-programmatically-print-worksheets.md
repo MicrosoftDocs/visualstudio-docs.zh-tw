@@ -1,7 +1,7 @@
 ---
-title: 作法：以程式設計方式列印工作表
+title: 如何：以程式設計方式列印工作表
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 764723d0749cd82739d8e67ee71104f41a0f9065
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: b0affdd34ad1cb302beacdc1abc9d02275878afd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490588"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537887"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>作法：以程式設計方式列印工作表
+# <a name="how-to-programmatically-print-worksheets"></a>如何：以程式設計方式列印工作表
 
 您可以列印活頁簿中的任何工作表。
 
@@ -36,7 +36,7 @@ ms.locfileid: "69490588"
     [!code-csharp[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#22)]
     [!code-vb[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#22)]
 
-   方法可讓您在 [**預覽列印**] 視窗中顯示指定的物件。 <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> 下列程式碼假設您有名為 `Sheet1` 的 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。
+   <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A>方法可讓您在 [**預覽列印**] 視窗中顯示指定的物件。 下列程式碼假設您有名為 `Sheet1` 的 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。
 
 ### <a name="to-preview-a-page-before-printing"></a>在列印前先預覽頁面
 
@@ -54,7 +54,7 @@ ms.locfileid: "69490588"
     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#14)]
     [!code-vb[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#14)]
 
-   方法可讓您在 [**預覽列印**] 視窗中顯示指定的物件。 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>
+   <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>方法可讓您在 [**預覽列印**] 視窗中顯示指定的物件。
 
 ### <a name="to-preview-a-page-before-printing"></a>在列印前先預覽頁面
 
@@ -66,7 +66,7 @@ ms.locfileid: "69490588"
 ## <a name="see-also"></a>另請參閱
 
 - [使用工作表](../vsto/working-with-worksheets.md)
-- [如何：以程式設計方式檢查工作表中的拼寫](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [如何：以程式設計方式在工作表中檢查拼寫](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [工作表主專案](../vsto/worksheet-host-item.md)
 - [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

@@ -15,36 +15,36 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 111f0b85a601d931ac17bde46f7170fa81e71815
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 033d8f0e22ec040ffb10821993a5a9c647ee401e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661402"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538914"
 ---
-# <a name="ca1307-specify-stringcomparison"></a>CA1307：指定 StringComparison
+# <a name="ca1307-specify-stringcomparison"></a>CA1307:必須指定 StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|SpecifyStringComparison|
 |CheckId|CA1307|
-|Category|Microsoft。全球化|
+|類別|Microsoft。全球化|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 字串比較作業會使用未設定 <xref:System.StringComparison> 參數的方法多載。
+ 字串比較作業會使用未設定參數的方法多載 <xref:System.StringComparison> 。
 
 ## <a name="rule-description"></a>規則描述
  許多字串作業（最重要的 <xref:System.String.Compare%2A> 和 <xref:System.String.Equals%2A> 方法）都會提供可接受 <xref:System.StringComparison> 列舉值做為參數的多載。
 
- 每當具有 <xref:System.StringComparison> 參數的多載存在時，就應該使用它，而不是採用此參數的多載。 藉由明確地設定此參數，您的程式碼通常會變得更清楚且更容易維護。
+ 每當具有參數的多載存在時 <xref:System.StringComparison> ，就應該使用它，而不是採用此參數的多載。 藉由明確地設定此參數，您的程式碼通常會變得更清楚且更容易維護。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請將字串比較方法變更為接受 <xref:System.StringComparison> 列舉做為參數的多載。 例如：將 `String.Compare(str1, str2)` 變更為 `String.Compare(str1, str2, StringComparison.Ordinal)`。
+ 若要修正此規則的違規情形，請將字串比較方法變更為接受 <xref:System.StringComparison> 列舉做為參數的多載。 例如：將變更 `String.Compare(str1, str2)` 為 `String.Compare(str1, str2, StringComparison.Ordinal)` 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  當程式庫或應用程式適用于有限的本機物件，因此不會進行當地語系化時，可以安全地隱藏此規則的警告。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [全球化警告](../code-quality/globalization-warnings.md) [CA1309：使用序數 StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)

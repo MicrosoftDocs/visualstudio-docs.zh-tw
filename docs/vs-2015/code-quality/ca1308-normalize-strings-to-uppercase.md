@@ -15,21 +15,21 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: dfe8495184bf4daadb3bf8899ee2857a9743c842
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c068fcda7d03ae91435c040d2110d632668d832a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661393"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538732"
 ---
-# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308：必須將字串標準化為大寫字母
+# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308:必須將字串標準化為大寫字母
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
-|Category|Microsoft。全球化|
+|類別|Microsoft。全球化|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -44,5 +44,5 @@ ms.locfileid: "72661393"
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  當您不是根據結果來進行安全性決策時（例如，當您在 UI 中顯示時），可以放心地隱藏警告訊息。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [全球化警告](../code-quality/globalization-warnings.md)

@@ -1,7 +1,7 @@
 ---
 title: 如何：建立網域指定的語言方案
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -13,17 +13,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 175da19782927f8c84b9fae0e6d9820a22bd891a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594665"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541787"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：建立網域指定的語言方案
 特定領域語言（DSL）是使用特製化的 Visual Studio 解決方案所建立。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>必要條件
 
 在您可以開始此程式之前，請先安裝下列元件：
 
@@ -38,7 +38,7 @@ ms.locfileid: "75594665"
 1. 藉由建立新的**特定領域語言設計**工具專案來啟動 DSL Wizard。
 
    > [!NOTE]
-   > 您為專案選擇的名稱最好是有效的視覺C#識別碼，因為它可能會用來產生程式碼。
+   > 您為專案選擇的名稱最好是有效的 Visual c # 識別碼，因為它可能會用來產生程式碼。
 
    ::: moniker range="vs-2017"
 
@@ -58,14 +58,14 @@ ms.locfileid: "75594665"
 
    - 如果您的電腦已完整安裝使用此副檔名的另一個 Visual Studio 延伸模組，請考慮將它卸載。 在 [**工具**] 功能表上，按一下 [**擴充管理員**]。
 
-4. 檢查並視需要調整 wizard 其餘頁面中的欄位。 當您對設定感到滿意時，請按一下 **[完成]** 。 如需設定的詳細資訊，請參閱[DSL 設計工具 Wizard 頁面](#settings)。
+4. 檢查並視需要調整 wizard 其餘頁面中的欄位。 當您對設定感到滿意時，請按一下 **[完成]**。 如需設定的詳細資訊，請參閱[DSL 設計工具 Wizard 頁面](#settings)。
 
     此 wizard 會建立一個方案，其中包含兩個名為**Dsl**和**DslPackage**的專案。
 
    > [!NOTE]
-   > 如果您看到一則訊息，提醒您不要從不受信任的來源執行文字模板，請按一下 **[確定]** 。 您可以設定此訊息，不要再次出現。
+   > 如果您看到一則訊息，提醒您不要從不受信任的來源執行文字模板，請按一下 **[確定]**。 您可以設定此訊息，不要再次出現。
 
-## <a name="settings"></a>DSL 設計工具 Wizard 頁面
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>DSL 設計工具 Wizard 頁面
  您可以讓數個欄位的預設值保持不變。 不過，請確定您已設定 [副檔名] 欄位。
 
 ### <a name="solution-settings-page"></a>解決方案設定頁面
@@ -73,7 +73,7 @@ ms.locfileid: "75594665"
 選擇類似您想要建立之 DSL 的範本。 不同的範本提供了方便的起點。 當您選取解決方案範本時，嚮導會顯示描述。 如需解決方案範本的詳細資訊，請參閱[選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。
 
  **您要將特定領域語言命名為什麼？**
-預設為解決方案名稱。 此值會產生程式碼。 它必須是有效的C#類別名稱。
+預設為解決方案名稱。 此值會產生程式碼。 它必須是有效的 c # 類別名稱。
 
 ### <a name="file-extension-page"></a>[副檔名] 頁面
  **模型檔案使用哪個延伸模組？**
@@ -87,11 +87,11 @@ ms.locfileid: "75594665"
 
 - 輸入不同的副檔名。
 
-     \-或-
+     \- 或 -
 
 - 重設 Visual Studio 實驗實例。 這會取消註冊您先前建立的所有 Dsl。 在 [**開始**] 功能表上，依序按一下 [**所有程式**]、[ **Microsoft Visual Studio 2010 SDK**] 和 [**工具**]，然後**重設 Microsoft Visual Studio 2010 實驗實例**。 您可以重建任何其他您想要再次使用的 Dsl。
 
-     \-或-
+     \- 或 -
 
 - 如果您的電腦已完整安裝使用此副檔名的 Visual Studio 延伸模組，請將它卸載。 在 [**工具**] 功能表上，按一下 [**擴充管理員**]。
 
@@ -116,7 +116,7 @@ ms.locfileid: "75594665"
 
  如需強式命名的詳細資訊，請參閱[建立和使用強式名稱的元件](/dotnet/standard/assembly/create-use-strong-named)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
 - [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

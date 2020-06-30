@@ -1,9 +1,9 @@
 ---
-title: '&lt;friendlyName&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
+title: '&lt;friendlyName &gt; 元素（Visual Studio 中的 Office 開發）'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d038e825173f95ddfe4106022c7c9924090b3a5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6629212fcc981ba3decb3b02d63975bc9826dc1f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972352"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541657"
 ---
-# <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName&gt;元素 （在 Visual Studio 中的 Office 程式開發）
+# <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName &gt; 元素（Visual Studio 中的 Office 開發）
   `friendlyName` 命名空間的 `vstov4` 項目會儲存已安裝的程式清單中顯示的名稱。
 
 ## <a name="syntax"></a>語法
@@ -39,7 +39,7 @@ ms.locfileid: "62972352"
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例
 
 ### <a name="description"></a>描述
- 下列程式碼範例說明使用 `friendlyName` 部署之應用程式層級方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
+ 下列程式碼範例說明使用 `friendlyName` 部署之應用程式層級方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
 

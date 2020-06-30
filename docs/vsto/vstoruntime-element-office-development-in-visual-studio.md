@@ -1,7 +1,7 @@
 ---
-title: '&lt;vstoRuntime&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
+title: '&lt;V m e &gt; 元素（Visual Studio 中的 Office 開發）'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 98f483748cce9c3a053c800f9bdd6e0f3d651da2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 985afe50d7c6edcfdb34e2ca046f59c5f7b664a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982143"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541878"
 ---
-# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime&gt;元素 （在 Visual Studio 中的 Office 程式開發）
+# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;V m e &gt; 元素（Visual Studio 中的 Office 開發）
   `vstoRuntime` 命名空間的 `vstav3` 項目包含特定 Office 方案支援的 Visual Studio Tools for Office Runtime 版本。
 
 ## <a name="syntax"></a>語法
@@ -40,14 +40,14 @@ ms.locfileid: "62982143"
 
 |屬性|描述|
 |---------------|-----------------|
-|`release`|必要項。 Visual Studio Tools for Office Runtime 的發行版本。|
-|`version`|必要項。 Visual Studio Tools for Office Runtime 的版本號碼。|
+|`release`|必要。 Visual Studio Tools for Office Runtime 的發行版本。|
+|`version`|必要。 Visual Studio Tools for Office Runtime 的版本號碼。|
 |`supportUrl`|選擇性。 Visual Studio Tools for Office Runtime 的安裝位置連結。|
 
  `vstoRuntime` 沒有任何項目。
 
 ## <a name="example"></a>範例
- 下列程式碼範例說明使用 `vstoRuntime` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
+ 下列程式碼範例說明使用 `vstoRuntime` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中提供之較大範例的一部分。
 
 ```xml
 <vstav3:vstoRuntime

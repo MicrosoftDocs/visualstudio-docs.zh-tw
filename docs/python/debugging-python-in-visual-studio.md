@@ -2,7 +2,7 @@
 title: 針對 Python 程式碼進行偵錯
 description: Visual Studio 提供針對 Python 程式碼的豐富偵錯功能，其中包括設定中斷點、逐步執行、檢查值、查看例外狀況，以及在互動式視窗中偵錯。
 ms.date: 05/12/2020
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 293e431fb00f6817fdbba19186613345cb90275a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2fdbd2e7f47e75b4d80d07f6af3a6f998dfd72d6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285643"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541150"
 ---
 # <a name="debug-your-python-code"></a>偵錯您的 Python 程式碼
 
@@ -161,7 +161,7 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 [互動式偵錯]**** 視窗支援[標準 REPL 命令](python-interactive-repl-in-visual-studio.md#meta-commands)以外的特殊中繼命令：
 
-| 命令 | 引數 | 說明 |
+| Command | 引數 | 描述 |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | 從目前的陳述式開始執行程式。 |
 | `$down`, `$d` | 在堆疊追蹤中將目前的框架下移一層。 |

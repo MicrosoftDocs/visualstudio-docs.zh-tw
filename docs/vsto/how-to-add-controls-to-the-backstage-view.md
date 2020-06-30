@@ -1,7 +1,7 @@
 ---
 title: '如何：將控制項加入至 Backstage 檢視 '
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87cea877928baf52b0442ed9b0d952fcf649f155
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 5b4ea5cdcd869f16f987e9431359511831af9573
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986016"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538342"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>如何：將控制項加入至 Backstage 檢視
   當您按一下 [檔案] 索引標籤時，您可以使用功能區設計工具將控制項新增至**開啟的功能表**。當您執行應用程式時，您新增**至 [檔案**] 索引標籤的控制項就會顯示一個名為 [**增益集**] 的群組。
@@ -50,7 +50,7 @@ ms.locfileid: "72986016"
 
     - 核取方塊
 
-    - Gallery
+    - 主機庫
 
     - 功能表
 
@@ -62,9 +62,9 @@ ms.locfileid: "72986016"
 
 4. 拖曳控制項，將其移至功能表上的新位置。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [功能區總覽](../vsto/ribbon-overview.md)
 - [功能區設計工具](../vsto/ribbon-designer.md)
-- [功能區 XML](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [逐步解說：使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

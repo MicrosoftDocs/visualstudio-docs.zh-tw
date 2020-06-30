@@ -14,27 +14,27 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9fa92e773c3dc130d0c0fc0ce05cc270dc9b6e53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef5ccc0cf432a5c6782b76c4623bfdc55f66a8b5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669014"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538551"
 ---
 # <a name="code-analysis-application-errors"></a>程式碼分析應用程式錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 本節參考 managed 程式碼分析工具所產生的錯誤訊息。 若要取得特定錯誤訊息的說明，請在索引的 [**尋找**] 方塊中輸入錯誤代碼。
 
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
 
-|||
+|Item|值|
 |-|-|
 |[CA0001](ca0001.md)|在 managed 程式碼分析工具中引發例外狀況，但未指出預期的錯誤情況。|
 |[CA0051](ca0051.md)|未選取任何規則。|
 |[CA0052](ca0052.md)|未選取要分析的目標。|
 |[CA0053](ca0053.md)|無法載入規則元件。|
 |[CA0054](ca0054.md)|自訂規則元件包含不正確 XML 資源。|
-|[CA0055](ca0055.md)|無法載入檔案： \<path >|
+|[CA0055](ca0055.md)|無法載入檔案：\<path>|
 |[CA0056](ca0056.md)|專案檔具有不正確的分析工具版本。|
 |[CA0057](ca0057.md)|違規無法對應到目前的目標和規則集。|
 |[CA0058](ca0058.md)|無法載入參考的元件。|
@@ -55,10 +55,10 @@ ms.locfileid: "72669014"
 |[CA0503](ca0503.md)|屬性已被取代。 使用取代屬性|
 |[CA0504](ca0504.md)|已忽略規則目錄，因為它不存在|
 |[CA0505](ca0505.md)|屬性已被取代。 使用取代屬性|
-|[FxCopCmd 錯誤](fxcopcmd-errors.md)|Managed 程式碼分析錯誤。|
+|[Fxcopcmd.exe 錯誤](fxcopcmd-errors.md)|Managed 程式碼分析錯誤。|
 
 ## <a name="related-sections"></a>相關章節
 
 - [撰寫安全程式碼的指導方針](https://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
-- [針對應用程式生命週期管理工具中的錯誤進行疑難排解的資源](https://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)
+- [在 Application Lifecycle Management 工具中疑難排解錯誤的資源](https://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

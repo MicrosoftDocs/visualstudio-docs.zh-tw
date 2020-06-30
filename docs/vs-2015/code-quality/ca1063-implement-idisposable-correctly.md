@@ -15,25 +15,25 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fe2982ab9e1b3951583b268eadb44c97c8e4805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04691d2344b232906676180122ad67fff5405891
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663640"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539356"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063：必須正確實作 IDisposable
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063:必須正確實作 IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 未正確執行 `IDisposable`。 此問題的一些原因如下所列：
+ `IDisposable`未正確執行。 此問題的一些原因如下所列：
 
 - IDisposable 會在類別中重新執行。
 
@@ -59,21 +59,21 @@ ms.locfileid: "72663640"
 ## <a name="how-to-fix-violations"></a>如何修正違規
  檢查您的程式碼，並判斷下列哪一個解決方法會修正此違規。
 
-- 從 {0} 所執行的介面清單中移除 IDisposable，並改為覆寫基類處置執行。
+- 從所執行的介面清單中移除 IDisposable {0} ，並改為覆寫基類處置執行。
 
-- 從類型 {0} 移除完成項，覆寫 Dispose （bool 處置），並將完成邏輯放在程式碼路徑中，其中 ' 處置 ' 為 false。
+- 從類型移除完成項 {0} ，覆寫 Dispose （bool 處置），並將完成邏輯放在程式碼路徑中，其中 ' 處置 ' 為 false。
 
-- 移除 {0}、覆寫 Dispose （bool 處置），然後將 dispose 邏輯放在程式碼路徑中，其中 ' 處置 ' 為 true。
+- 移除 {0} 、覆寫 dispose （bool 處置），然後將 dispose 邏輯放在程式碼路徑中，其中 ' 處置 ' 為 true。
 
-- 請確定 {0} 宣告為 public 和 sealed。
+- 請確定 {0} 已宣告為 public 和 sealed。
 
-- 將 {0} 重新命名為 ' Dispose '，並確定它已宣告為 public 和 sealed。
+- 將重新命名 {0} 為 ' Dispose '，並確定它已宣告為 public 和 sealed。
 
-- 請確定 {0} 宣告為 protected、virtual 和未密封。
+- 請確定 {0} 已宣告為 protected、virtual 和未密封。
 
-- 修改 {0}，使其呼叫 Dispose （true），然後呼叫 GC。Gc.suppressfinalize 在目前的物件實例上（在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中為 ' this ' 或 ' Me '），然後傳回。
+- 修改， {0} 使其呼叫 Dispose （true），然後呼叫 GC。Gc.suppressfinalize 在目前的物件實例上（在中為 ' this ' 或 ' Me ' [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ），然後傳回。
 
-- 修改 {0}，使其呼叫 Dispose （false），然後傳回。
+- 修改， {0} 使其呼叫 Dispose （false），然後傳回。
 
 - 如果您要撰寫未密封的根 IDisposable 類別，請確定 IDisposable 的執行遵循本節稍早所述的模式。
 

@@ -15,28 +15,28 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 06d961fee28fa67f1e4f712564f6b3d5ff4073ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8083edf04aa799c8031fbcd1b53a2e17104dd4a6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651623"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538797"
 ---
-# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218：覆寫 Equals 時必須一併覆寫 GetHashCode
+# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218:覆寫 Equals 時必須一併覆寫 GetHashCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
-|Category|Microsoft。使用方式|
+|類別|Microsoft。使用方式|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 公用類型會覆寫 <xref:System.Object.Equals%2A?displayProperty=fullName> 但不會覆寫 <xref:System.Object.GetHashCode%2A?displayProperty=fullName>。
+ 公用類型會覆寫 <xref:System.Object.Equals%2A?displayProperty=fullName> ，但不會覆寫 <xref:System.Object.GetHashCode%2A?displayProperty=fullName> 。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.Object.GetHashCode%2A> 會根據目前的實例傳回值，這適合用於雜湊演算法和資料結構（例如雜湊資料表）。 相同類型且相等的兩個物件，必須傳回相同的雜湊碼，以確保下列類型的實例能夠正常運作：
+ <xref:System.Object.GetHashCode%2A>根據目前的實例傳回值，這適合用於雜湊演算法和資料結構（例如雜湊資料表）。 相同類型且相等的兩個物件，必須傳回相同的雜湊碼，以確保下列類型的實例能夠正常運作：
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,10 +54,10 @@ ms.locfileid: "72651623"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- 執行 <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName> 的類型
+- 執行的類型<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請提供 <xref:System.Object.GetHashCode%2A> 的執行。 對於相同類型的一對物件，您必須確定如果您的 <xref:System.Object.Equals%2A> 的執行會傳回配對的 `true`，則此實值會傳回相同的值。
+ 若要修正此規則的違規情形，請提供的執行 <xref:System.Object.GetHashCode%2A> 。 對於相同類型的一對物件，您必須確定如果的實作為的傳回，則此實作為會傳回相同的值 <xref:System.Object.Equals%2A> `true` 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
@@ -71,7 +71,7 @@ ms.locfileid: "72651623"
  [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorClass/cs/FxCop.Usage.GetHashCodeErrorClass.cs#1)]
 
 ### <a name="comments"></a>註解
- 下列範例會覆寫 <xref:System.Object.GetHashCode> 來修正違規。
+ 下列範例會藉由覆寫來修正違規 <xref:System.Object.GetHashCode> 。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Usage.GetHashCodeFixedClass#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeFixedClass/cs/FxCop.Usage.GetHashCodeFixedClass.cs#1)]
@@ -85,23 +85,23 @@ ms.locfileid: "72651623"
  [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorStruct/cs/FxCop.Usage.GetHashCodeErrorStruct.cs#1)]
 
 ### <a name="comments"></a>註解
- 下列範例會覆寫 <xref:System.Object.GetHashCode> 來修正違規。
+ 下列範例會藉由覆寫來修正違規 <xref:System.Object.GetHashCode> 。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeFixedStruct/cs/FxCop.Usage.GetHashCodeFixedStruct.cs#1)]
 
 ## <a name="related-rules"></a>相關規則
- [CA1046：請勿多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046:不要多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225：運算子多載必須有具名的替代方法](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225:運算子多載必須有具名的替代方法](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226：運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226:運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224：多載等號比較運算子時必須一併覆寫 Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224:多載等號比較運算子時必須一併覆寫 Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2231：覆寫 ValueType.Equals 時必須一併多載等號比較運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231:在覆寫 ValueType.Equals 上多載等號運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - <xref:System.Object.GetHashCode%2A?displayProperty=fullName>

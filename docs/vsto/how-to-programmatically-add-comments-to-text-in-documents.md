@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式在文件中的文字中加入註解
+title: 如何：以程式設計方式將批註新增至檔中的文字
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5aba4c6446b2dbcfcb31c423a28eedd552799b4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967666"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538109"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>HOW TO：以程式設計方式在文件中的文字中加入註解
-  文件類別的註解屬性中某個範圍的 Microsoft Office Word 文件中的文字加入註解。
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>如何：以程式設計方式將批註新增至檔中的文字
+  Document 類別的 comment 屬性會在 Microsoft Office Word 檔中的文字範圍加入批註。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "62967666"
      [!code-vb[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#118)]
      [!code-csharp[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#118)]
 
-## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>將新的註解加入文字中的 VSTO 增益集
+## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>若要在 VSTO 增益集中將新批註加入至文字
 
 1. 呼叫 <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> 屬性的 <xref:Microsoft.Office.Interop.Word._Document.Comments%2A> 方法，並提供範圍和註解文字。
 
@@ -47,5 +47,5 @@ ms.locfileid: "62967666"
  若要變更 Word 加入註解中的使用者縮寫，請使用 <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> 屬性。
 
 ## <a name="see-also"></a>另請參閱
-- [如何：以程式設計方式在文件中移除所有註解](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
-- [文件主項目](../vsto/document-host-item.md)
+- [如何：以程式設計方式從檔中移除所有批註](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
+- [檔主專案](../vsto/document-host-item.md)

@@ -1,9 +1,9 @@
 ---
-title: HOW TO：將結構描述對應至 Visual Studio 中的 Word 文件
+title: 如何：在 Visual Studio 內將架構對應至 Word 檔
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,53 +16,53 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c6f9ee9a7b636c6c12bfe2f8debcc05911e3b04
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 281d9dc18ae1d0550ba844e58d4e39c3723c8dfb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441761"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538147"
 ---
-# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>HOW TO：將結構描述對應至 Visual Studio 中的 Word 文件
-  **重要**本主題有關 Microsoft Word 中設定的資訊是提供專門用於權益與使用個人和組織使用者位於外部皒玿璅其領域，或使用，或開發在執行的程式，第 2010 年 1 月 Microsoft 何時移除特定功能的實作之前由 Microsoft 所授權的 Microsoft Word 產品與自訂 XML 從 Microsoft Word。 有關 Microsoft Word 的這項資訊可能不會讀取或使用的個人或組織在美國或其區域使用，或開發在 2010 年 1 月 10 日之後由 Microsoft 所授權的 Microsoft Word 產品執行的程式;這些產品無法運作此日期之前的授權或購買，以在美國以外的使用授權的產品相同。
+# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>如何：在 Visual Studio 內將架構對應至 Word 檔
+  **重要事項**本主題中針對 Microsoft Word 所設定的資訊，僅適用于在美國境內和其區域以外的個人和組織，或是在 microsoft 從 microsoft Word 移除與自訂 XML 相關的特定功能時，在2010年1月之前，由 Microsoft 授權的 Microsoft Word 產品的權益與使用方式。 這項關於 Microsoft Word 的資訊，可能無法由美國或其所在地區的個人或組織，或其使用或開發在 Microsoft Word 產品于2010年1月10日之後授權的 Microsoft 文字軟體所閱讀或使用。這些產品的行為不會與在該日期之前授權的產品相同，或購買並授權在美國以外使用。
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- 在 Visual Studio 中開啟文件時，您可以將 XML 結構描述對應至文件中。 您使用 Visual Studio 外部開啟文件時，您使用的相同 Microsoft Office Word 工具。 將結構描述對應至文件之前或之後建立 Word 方案的 Office 專案會建立相同的物件。
+ 在 Visual Studio 中開啟檔時，您可以將 XML 架構對應至檔。 當檔在 Visual Studio 外開啟時，您會使用相同的 Microsoft Office Word 工具。 無論您是在建立 Word 方案之前或之後，將架構對應至檔，Office 專案都會建立相同的物件。
 
-## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>若要將 XML 結構描述對應至 Visual Studio 中的 Word 文件
+## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>若要將 XML 架構對應至 Word 檔，請 Visual Studio
 
-1. 開啟 Visual Studio 中的 Word 文件或範本專案。
+1. 在 Visual Studio 內開啟 Word 檔或範本專案。
 
-2. 按一下此選項，將焦點移至設計工具文件中。
+2. 按一下檔，將焦點移至設計工具。
 
-3. 在功能區中，按一下**開發人員** 索引標籤。
+3. 在功能區上，按一下 [**開發人員**] 索引標籤。
 
     > [!NOTE]
-    > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
 
-4. 在  **XML**群組中，按一下**結構描述**。
+4. 在 [ **XML** ] 群組中，按一下 [**架構**]。
 
-     **範本與增益集**對話方塊隨即開啟。
+     [**範本與增益集**] 對話方塊隨即開啟。
 
-5. 按一下 [ **XML 結構描述**] 索引標籤。
+5. 按一下 [ **XML 架構**] 索引標籤。
 
-6. 按一下 **新增結構描述**。
+6. 按一下 [**新增架構**]。
 
-     **新增結構描述**對話方塊隨即開啟。
+     [**加入架構**] 對話方塊隨即開啟。
 
-7. 瀏覽至您的結構描述檔案，加以選取，然後按一下 **開啟**。
+7. 流覽至您的架構檔案，加以選取，然後按一下 [**開啟**]。
 
-     **結構描述設定**對話方塊隨即開啟。
+     [**架構設定**] 對話方塊隨即開啟。
 
-8. 指派別名，或按一下**確定**新增不含別名的結構描述。
+8. 指派別名，或按一下 **[確定]** 以新增不含別名的架構。
 
 9. 按一下 [確定] 。
 
-     **XML 結構**視窗隨即開啟。
+     [ **XML 結構**] 視窗隨即開啟。
 
-10. 拖曳項目從**XML 結構**視窗，以在您的文件中您想要建立對應的控制項的位置。
+10. 將專案從 [ **XML 結構**] 視窗拖曳至您想要建立對應控制項之檔中的位置。
 
 ## <a name="see-also"></a>另請參閱
-- [如何：將結構描述對應至 Visual Studio 內的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
-- [XML 結構描述和文件層級自訂中的資料](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
+- [如何：將架構對應至 Visual Studio 內的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
+- [檔層級自訂中的 XML 架構和資料](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
