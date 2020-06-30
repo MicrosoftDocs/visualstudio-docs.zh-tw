@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式列印文件
+title: 如何：以程式設計方式列印檔案
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3df7ad4a5569a0c123d8c0e284ff7ad57e900355
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 413d0e4f56aeb897af4f16a0dc6c43b4f04eace7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956040"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537822"
 ---
-# <a name="how-to-programmatically-print-documents"></a>HOW TO：以程式設計方式列印文件
+# <a name="how-to-programmatically-print-documents"></a>如何：以程式設計方式列印檔案
   您可以將整個 Microsoft Office Word 文件，或文件的一部分，列印到預設印表機。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="print-a-document-that-is-part-of-a-document-level-customization"></a>列印文件層級自訂一部分的文件
+## <a name="print-a-document-that-is-part-of-a-document-level-customization"></a>列印屬於檔層級自訂一部分的檔
 
 ### <a name="to-print-the-entire-document"></a>列印整份文件
 
@@ -41,7 +41,7 @@ ms.locfileid: "62956040"
      [!code-vb[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#12)]
      [!code-csharp[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#12)]
 
-## <a name="print-a-document-by-using-a-vsto-add-in"></a>使用 VSTO 增益集來列印文件
+## <a name="print-a-document-by-using-a-vsto-add-in"></a>使用 VSTO 增益集來列印檔案
 
 ### <a name="to-print-an-entire-document"></a>列印整份文件
 

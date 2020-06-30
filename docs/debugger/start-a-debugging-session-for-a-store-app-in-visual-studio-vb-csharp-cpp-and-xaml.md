@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b11ea380f9012bc64f577d2da54a4a88b9f94daf
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348232"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536548"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>啟動 UWP 應用程式 的偵錯工作階段
 
@@ -76,7 +76,7 @@ ms.locfileid: "85348232"
 
 您可以在 [Visual Studio] 工具列或專案的 [偵錯工具] 屬性頁中設定偵錯工具目標。 選取下列其中一個選項：
 
-|||
+|名稱|描述|
 |-|-|
 |**本機電腦**|在本機電腦上對目前工作階段中的應用程式進行偵錯。|
 |**類比**|在適用于 UWP 應用程式的 Visual Studio 模擬器中，對應用程式進行 Debug。 模擬器是一個桌面視窗，可模擬本機電腦上可能不存在的裝置功能（例如觸控手勢和裝置輪替）。 只有當您的應用程式的**目標平臺最低版本**小於或等於本機電腦上的作業系統時，才可以使用 [模擬器] 選項。 如需詳細資訊，請參閱[在模擬器中執行 UWP 應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。|
@@ -114,7 +114,7 @@ ms.locfileid: "85348232"
 
 - 針對 c + + 應用程式，從 [**調試**程式] 屬性頁上的 [調試**程式類型**] 下拉式清單中選取下列其中一個偵錯工具。
 
-|||
+|名稱|描述|
 |-|-|
 |**僅限 Managed**|在您的應用程式中偵錯 Managed 程式碼。 JavaScript 程式碼與原生 C/C++ 程式碼都會被忽略。|
 |**僅限原生**|在您的應用程式中偵錯原生 C/C++程式碼。 Managed 程式碼與 JavaScript 程式碼都會被忽略。|

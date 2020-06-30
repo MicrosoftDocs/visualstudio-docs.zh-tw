@@ -1,49 +1,49 @@
 ---
-title: HOW TO：使用延伸模組的規則為基礎的 UI 內容 |Microsoft Docs
+title: 如何：針對延伸模組使用以規則為基礎的 UI 內容 |Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26f66f635b2c248af01067d9dbd96fd997593593
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62425745"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535560"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>HOW TO：針對 Visual Studio 延伸模組使用合乎規則的 UI 內容
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何︰針對 Visual Studio 擴充功能使用合乎規則的 UI 內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStudio.Shell.UIContext>s 會啟動。 不過，這些 UI 內容不是非常細微精密，不離開延伸模組作者任何選擇，但選擇可用的 UI 內容，就會啟動點之前，他們其實想要載入 VSPackage。 如需已知的 UI 內容，請參閱<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>。
+Visual Studio 允許在某些知名的啟用時載入 Vspackage <xref:Microsoft.VisualStudio.Shell.UIContext> 。 不過，這些 UI 內容並不是非常精細，而是讓延伸模組作者不會選擇，而是要挑選一個可在真正想要載入 VSPackage 的點之前啟動的可用 UI 內容。 如需已知 UI 內容的清單，請參閱 <xref:Microsoft.VisualStudio.Shell.KnownUIContexts> 。
 
- 載入封裝可能會造成效能影響，比在需要更快載入它們並非最佳的作法。 Visual Studio 2015 導入規則型 UI 內容，一種機制，讓延伸模組作者可以定義在其下啟動 UI 內容，以及相關聯的 Vspackage 載入的精確條件的概念。
+ 載入封裝可能會對效能造成影響，而且比所需更快載入套件不是最佳作法。 Visual Studio 2015 引進了以規則為基礎之 UI 內容的概念，這是一種機制，可讓延伸模組作者定義在其下啟動和 Vspackage 載入之 UI 內容的精確條件。
 
 ## <a name="rule-based-ui-context"></a>以規則為基礎的 UI 內容
- 「 規則 」 包含新的 UI 內容 (GUID) 和參考一或多個 「 條款 」 的布林運算式結合邏輯"and"、"，"not"作業。 「 條款 」 會在執行階段以動態方式評估，每當任何其條款的變更，會重新評估運算式。 當運算式評估為 true 時，就會啟動相關聯的 UI 內容。 否則，UI 內容會取消已啟動。
+ 「規則」是由新的 UI 內容（GUID）和布林運算式所組成，其參考一或多個「詞彙」與邏輯 "and"、"or"、"not" 作業結合。 「詞彙」會在執行時間動態評估，而且每當其任何字詞變更時，就會重新評估運算式。 當運算式評估為 true 時，會啟用相關聯的 UI 內容。 否則，UI 內容就會取消啟用。
 
- 以規則為基礎的 UI 內容可以使用各種不同的方式：
+ 以規則為基礎的 UI 內容可透過各種不同的方式來使用：
 
-1. 指定命令和工具視窗的可見性條件的約束。 直到符合 UI 內容規則時，您可以隱藏的命令/工具視窗。
+1. 指定命令和工具視窗的可見度條件約束。 您可以隱藏 [命令/工具] 視窗，直到符合 UI 內容規則為止。
 
-2. 為自動載入條件約束： 只在符合規則時，自動載入封裝
+2. 做為自動載入條件約束：只有在符合規則時，才自動載入封裝
 
-3. 延遲的工作： 延遲載入，直到經過指定的間隔，且仍然符合規則。
+3. 延遲的工作：延遲載入，直到指定的間隔過後，仍然符合規則。
 
-   此機制可供任何 Visual Studio 擴充功能。
+   任何 Visual Studio 的延伸模組都可以使用此機制。
 
-## <a name="create-a-rule-based-ui-context"></a>建立規則為基礎的 UI 內容
- 假設您有稱為 TestPackage，可提供後者只適用於具有".config"副檔名的檔案功能表命令擴充功能。 VS2015 之前, 的最佳選項是載入 TestPackage 時<xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A>UI 內容已啟動。 這不是有效的因為載入的方案甚至可能不包含.config 檔案。 告訴我們，請參閱如何以規則為基礎的 UI 內容可用來啟用的 UI 內容時，才具有.config 副檔名的檔案已選取，然後啟動該 UI 內容時，載入 TestPackage。
+## <a name="create-a-rule-based-ui-context"></a>建立以規則為基礎的 UI 內容
+ 假設您有一個稱為 TestPackage 的延伸模組，它提供的功能表命令只適用于副檔名為 ".config" 的檔案。 在 VS2015 之前，最佳選項是在 <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> 啟用 UI 內容時載入 TestPackage。 這並不有效率，因為載入的解決方案可能甚至不會包含 .config 檔案。 讓我們瞭解，只有在選取副檔名為 .config 的檔案時，才可以使用規則型 UI 內容來啟動 UI 內容，並在啟用該 UI 內容時載入 TestPackage。
 
-1. 定義新的 ui 內容 GUID，並加入 VSPackage 類別<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>和<xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>。
+1. 定義新的 UICoNtext GUID，並將新增至 VSPackage 類別 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 和 <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute> 。
 
-    例如，假設新的 ui 內容 「 UIContextGuid"是要加入。 建立 GUID (您可以建立 GUID，依序按一下 工具-> 建立 guid) 是 「 8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B"。 然後，請將下列套件類別：
+    例如，假設要加入新的 UICoNtext "UICoNtextGuid"。 建立的 GUID （您可以按一下 [工具-> 建立 guid] 來建立 GUID）為 "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B"。 然後在您的 package 類別內新增下列內容：
 
    ```csharp
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";
    ```
 
-    針對屬性，新增下列內容：（這些屬性的詳細資料將於稍後說明）
+    針對屬性，新增下列內容：（這些屬性的詳細資料將于稍後說明）
 
    ```csharp
    [ProvideAutoLoad(TestPackage.UIContextGuid)]
@@ -54,17 +54,17 @@ Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStu
        termValues: new[] { "HierSingleSelectionName:.config$" })]
    ```
 
-    這些中繼資料定義新的 ui 內容 GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) 和運算式參考的 「 DotConfig"的詞彙。 「 DotConfig 」 一詞會評估為 true，每當目前的選取範圍，在使用中的階層架構中有符合規則運算式模式的名稱"\\.config$ 」 （結尾為".config"）。 （預設值） 值定義的規則適用於偵錯的選擇性名稱。
+    這些中繼資料會定義新的 UICoNtext GUID （8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B），以及參考單一詞彙 "DotConfig" 的運算式。 每當作用中階層中的目前選取範圍的名稱符合正則運算式模式 " \\ .config $" （結尾為 ".config"）時，"DotConfig" 詞彙就會評估為 true。 （預設值）值會定義適用于進行偵錯工具之規則的選擇性名稱。
 
-    屬性的值會新增至 pkgdef 建置期間之後產生。
+    屬性的值會加入至之後在組建期間產生的 .pkgdef。
 
-2. VSCT 檔案中 TestPackage 的命令，加入適當的命令中的"DynamicVisibility 」 旗標：
+2. 在 TestPackage 命令的 .VSCT 檔案中，將 "DynamicVisibility" 旗標新增至適當的命令：
 
    ```xml
    <CommandFlag>DynamicVisibility</CommandFlag>
    ```
 
-3. 在 VSCT 可視性 區段中，將繫結適當的命令，以新的 ui 內容 #1 中所定義的 GUID:
+3. 在 .VSCT 的可視性區段中，將適當的命令與 #1 中定義的新 UICoNtext GUID 結合：
 
    ```xml
    <VisibilityConstraints>
@@ -72,30 +72,30 @@ Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStu
    </VisibilityConstraints>
    ```
 
-4. 在 [符號] 區段中，新增 ui 內容的定義：
+4. 在 [符號] 區段中，新增 UICoNtext 的定義：
 
    ```xml
    <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    現在，*.config 檔案的內容功能表命令將會顯示在 [方案總管] 中選取的項目是".config"檔案，直到已選取其中一個這些命令，將不會載入封裝時，才。
+    現在，只有在 [solution explorer] 中選取的專案是 ".config" 檔案，且在選取其中一個命令之前，才會顯示 * .config 檔案的內容功能表命令。
 
-   接下來，讓我們使用來確認只有在我們預期當它載入封裝的 偵錯工具。 若要偵錯 TestPackage:
+   接下來，讓我們使用偵錯工具來確認封裝只會在預期的時候載入。 若要進行 TestPackage 的調試：
 
-5. 在設定的中斷點<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。
+5. 在方法中設定中斷點 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 。
 
-6. 建置 TestPackage 並開始偵錯。
+6. 建立 TestPackage 並開始進行調試。
 
-7. 建立專案或開啟其中一個。
+7. 建立專案或開啟一個。
 
-8. 選取副檔名為.config 以外的任何檔案。應該不會叫用中斷點。
+8. 選取副檔名不是 .config 的任何檔案。不應叫用中斷點。
 
-9. 選取的 App.Config 檔案。
+9. 選取 [App.Config] 檔案。
 
-   TestPackage 載入，並在中斷點停止。
+   TestPackage 會在中斷點載入並停止。
 
-## <a name="adding-more-rules-for-ui-context"></a>新增更多的規則的 UI 內容
- 由於 UI 內容規則都是布林運算式，您可以新增更多限制的規則 UI 內容。 例如，在上述的 UI 內容中，您可以指定只在載入內含專案的方案時才套用規則。 如此一來，命令不會顯示是否您開啟".config"檔案以獨立檔案，而非專案的一部分。
+## <a name="adding-more-rules-for-ui-context"></a>新增更多 UI 內容的規則
+ 由於 UI 內容規則是布林運算式，因此您可以為 UI 內容新增更受限制的規則。 例如，在上述 UI 內容中，您可以指定只有在載入具有專案的方案時，才會套用規則。 如此一來，如果您以獨立檔案的形式開啟 ".config" 檔案，而不是做為專案的一部分，則不會顯示命令。
 
 ```csharp
 [ProvideAutoLoad(TestPackage.UIContextGuid)]
@@ -106,12 +106,12 @@ Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStu
     termValues: new[] { VSConstants.UICONTEXT_SolutionHasSingleProject_string , VSConstants.UICONTEXT_SolutionHasMultipleProjects_string , "HierSingleSelectionName:.config$" })]
 ```
 
- 現在運算式會參考三個詞彙。 前兩個詞彙，「 SingleProject"和"MultipleProjects 」，請參閱其他已知的 UI 內容 （由其 Guid 中)。 第三個詞彙，「 DotConfig 」 是以規則為基礎的 UI 內容，而此一我們稍早定義。
+ 現在，運算式會參考三個詞彙。 前兩個詞彙 "SingleProject" 和 "MultipleProjects"，指的是其他已知的 UI 內容（依其 Guid）。 第三個詞彙 "DotConfig" 是我們稍早定義的以規則為基礎的 UI 內容。
 
-## <a name="delayed-activation"></a>延遲的啟用
- 規則可以有選擇性的 「 延遲 」。 以毫秒為單位指定延遲時間。 如果有的話，啟用或停用規則的 UI 內容，該時間間隔延遲的作業，會導致延遲。 若是規則變更之前的延遲間隔，則會發生任何事。 這項機制可用來 「 交錯 」 初始化步驟-特別是單次初始化，而不需要依賴的計時器，或註冊閒置的通知。
+## <a name="delayed-activation"></a>延遲啟用
+ 規則可以有選擇性的「延遲」。 延遲時間以毫秒為單位來指定。 如果存在，延遲會導致規則的 UI 內容啟用或停用，並延遲該時間間隔。 如果規則在延遲間隔之前變更，則不會發生任何事。 這項機制可以用來「錯開」初始化步驟，特別是單次初始化，而不依賴計時器或註冊閒置通知。
 
- 例如，您可以指定您的測試負載規則有 100 毫秒的延遲：
+ 例如，您可以指定測試負載規則的延遲為100毫秒：
 
 ```csharp
 [ProvideAutoLoad(TestPackage.UIContextGuid)]
@@ -124,28 +124,28 @@ Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStu
 ```
 
 ## <a name="term-types"></a>詞彙類型
- 以下是詞彙的支援的各種類型:
+ 以下是支援的各種類型詞彙：
 
-|||
+|詞彙類型|描述|
 |-|-|
-|{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|GUID 是指 UI 內容。 每當 UI 內容因作用中和，則為 false，則一詞將會是 true。|
-|HierSingleSelectionName:\<模式 >|一詞的作用中的階層架構中的選擇是單一項目和選取的項目名稱符合 「 模式 」 所指定的.Net 規則運算式時，將會是 true。|
-|UserSettingsStoreQuery:\<query>|「 查詢 」 到使用者設定存放區必須評估為非零值表示的完整路徑。 查詢分割成"collection"和"propertyName 」，在最後的斜線。|
-|ConfigSettingsStoreQuery:\<query>|「 查詢 」 到組態設定存放區必須評估為非零值表示的完整路徑。 查詢分割成"collection"和"propertyName 」，在最後的斜線。|
-|ActiveProjectFlavor:\<projectTypeGuid>|詞彙將會是 true，每當目前選取的專案特定 （彙總） 和類別，比對指定的專案類型 GUID。|
-|ActiveEditorContentType:\<contentType>|選取的文件時指定的內容類型文字編輯器，將會是 true 一詞。|
-|ActiveProjectCapability:\<Expression>|作用中的專案功能符合提供的運算式時，則為 true 的詞彙。 運算式可以是 VB 類似&#124;CSharp|
-|SolutionHasProjectCapability:\<Expression>|當方案中有任何比對運算式的載入的專案時，與上述類似，但是一詞是如此。|
-|SolutionHasProjectFlavor:\<projectTypeGuid>|解決方案具備特色 （彙總） 的專案，並比對指定的專案類型 GUID 類別時，將會是 true 一詞。|
+|{nnnnnnnn-nnnn-nnnn-nnnnnnnnnnnn}|GUID 會參考 UI 內容。 每當 UI 內容為作用中時，此詞彙將為 true，否則為 false。|
+|HierSingleSelectionName:\<pattern>|只要作用中階層中的選取範圍是單一專案，而且所選取專案的名稱符合「模式」所指定的 .Net 正則運算式時，這個詞彙就會是 true。|
+|UserSettingsStoreQuery:\<query>|"query" 代表使用者設定存放區中的完整路徑，必須評估為非零值。 查詢會分割成最後一個斜線的 "collection" 和 "propertyName"。|
+|ConfigSettingsStoreQuery:\<query>|「查詢」代表 config 設定存放區中的完整路徑，必須評估為非零值。 查詢會分割成最後一個斜線的 "collection" 和 "propertyName"。|
+|ActiveProjectFlavor:\<projectTypeGuid>|只要目前選取的專案是 flavored （匯總），而且具有符合指定專案類型 GUID 的類別，這個詞彙就會是 true。|
+|ActiveEditorContentType:\<contentType>|當選取的檔是具有指定之內容類型的文字編輯器時，此詞彙將會是 true。|
+|ActiveProjectCapability:\<Expression>|當作用中的專案功能符合提供的運算式時，此詞彙為 true。 運算式可能類似 VB &#124; CSharp|
+|SolutionHasProjectCapability:\<Expression>|與上述類似，但當方案具有符合運算式的任何已載入專案時，此詞彙為 true。|
+|SolutionHasProjectFlavor:\<projectTypeGuid>|每當方案具有 flavored （匯總）的專案，且其類別符合指定的專案類型 GUID 時，這個詞彙就會是 true。|
 
-## <a name="compatibility-with-cross-version-extension"></a>副檔名為跨版本相容性
- 規則型的 UI 內容是在 Visual Studio 2015 的新功能，並不會移轉至較早版本。 這會建立為目標的 Visual Studio 會自動載入在 Visual Studio 2013 及更早版本，但可受益於以規則為基礎的 UI 內容以避免被自動載入 Visual Studio 2015 中的多個版本的延伸模組/套件有問題。
+## <a name="compatibility-with-cross-version-extension"></a>與跨版本擴充功能的相容性
+ 以規則為基礎的 UI 內容是 Visual Studio 2015 中的新功能，而且不會移植到舊版。 這會造成延伸模組/套件的問題，其目標為多個版本的 Visual Studio，必須在 Visual Studio 2013 和較舊的環境中自動載入，但可受益于以規則為基礎的 UI 內容，以避免在 Visual Studio 2015 中自動載入。
 
- 為了支援這類套件，AutoLoadPackages 在登錄中的項目現在可以提供其 [值] 欄位來表示在 Visual Studio 2015 及更新版本，應該略過此項目中的旗標。 這可以加上旗標選項，來完成<xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>。 現在可以將加入 Vspackage **SkipWhenUIContextRulesActive**選項設定為其<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>屬性來指出應該忽略的項目，在 Visual Studio 2015 和更新版本。
+ 為了支援這類封裝，登錄中的 AutoLoadPackages 專案現在可以在其 [值] 欄位中提供旗標，以指出應該在 Visual Studio 2015 和更新版本中略過該專案。 這可以藉由將旗標選項新增至來完成 <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> 。 Vspackage 現在可以將**SkipWhenUICoNtextRulesActive**選項新增至其 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 屬性，以指出應該在 Visual Studio 2015 和更新版本中忽略此專案。
 
-## <a name="extensible-ui-context-rules"></a>可延伸的 UI 內容規則
- 某些情況下，封裝無法使用靜態的 UI 內容規則。 例如，假設您有支援擴充性，使得命令狀態根據匯入的 MEF 提供者所支援的編輯器類型的封裝。 如果沒有延伸模組支援目前的編輯類型，此命令會啟用。 在此情況下封裝本身無法使用靜態的 UI 內容規則，因為條款會根據哪一個 MEF 擴充功能可變更。
+## <a name="extensible-ui-context-rules"></a>可擴充的 UI 內容規則
+ 有時候，封裝無法使用靜態 UI 內容規則。 例如，假設您的封裝支援擴充性，因此命令狀態是以匯入的 MEF 提供者所支援的編輯器類型為基礎。 如果有支援目前編輯類型的擴充功能，則會啟用命令。 在這種情況下，封裝本身無法使用靜態 UI 內容規則，因為這些詞彙會根據可用的 MEF 延伸模組而變更。
 
- 若要支援這類套件，以規則為基礎的 UI 內容支援硬式編碼運算式"*"表示所有下列條款會與加入或者。 這是用來定義主要封裝的已知的規則型 UI 內容，並將繫結至這個內容其命令狀態。 之後針對主要封裝任何 MEF 擴充功能也可以新增其條款，它支援而不會影響其他條款或主要運算式編輯器。
+ 為了支援這類封裝，以規則為基礎的 UI 內容支援硬式編碼運算式 "*"，指出其底下的所有詞彙將會與或聯結。 這可讓主要套件定義已知的以規則為基礎的 UI 內容，並將其命令狀態與此內容結合。 之後，任何以主要封裝為目標的 MEF 延伸模組，都可以為其支援的編輯器新增其詞彙，而不會影響其他詞彙或主要運算式。
 
- 建構函式<xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A>文件會示範可延伸的 UI 內容規則的語法。
+ 此 <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> 程式集檔會顯示可擴充 UI 內容規則的語法。

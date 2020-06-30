@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 77214948609bd73a2a630a62b4c1b7db114cf8e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 87b240dea73cc447f21422d9c165dad67f136075
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665800"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534234"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中常用命令的預設鍵盤快速鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,16 +22,29 @@ ms.locfileid: "72665800"
 您可以選擇這些預設鍵盤快速鍵以存取 Visual Studio 中的常用命令。 如需內含預設快速鍵命令的完整清單，請參閱[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
 > [!NOTE]
-> 您可以開啟 [選項] 對話方塊，展開 [環境] 節點，然後選擇 [鍵盤]，查閱命令的捷徑。
+> 您可以開啟 [選項]**** 對話方塊，展開 [環境]**** 節點，然後選擇 [鍵盤]****，以查看任何命令的捷徑。
 
- **本主題內容**
+ **本主題中的**
 
-||||||
-|-|-|-|-|-|
-|[建置](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[編輯](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[工具](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[視窗](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
-|[偵錯](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[檔案](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[重構](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[檢視](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
+- [建置](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)
 
-## <a name="bkmk_build"></a> 建置
+- [編輯](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)
+
+- [專案](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)
+
+- [工具](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)
+
+- [Window](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)
+
+- [偵錯](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)
+
+- [檔案](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)
+
+- [重構](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)
+
+- [視圖](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
+
+## <a name="build"></a><a name="bkmk_build"></a>建置
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|
@@ -40,7 +53,7 @@ ms.locfileid: "72665800"
 |Build.Compile|Ctrl+F7 [全域]|
 |Build.RunCodeAnalysisonSolution|Alt+F11 [全域]|
 
-## <a name="bkmk_debug"></a> 偵錯
+## <a name="debug"></a><a name="bkmk_debug"></a>Debug.exe
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|
@@ -60,7 +73,7 @@ ms.locfileid: "72665800"
 |Debug.StopDebugging|Shift+F5 [全域]|
 |Debug.ToggleBreakpoint|F9 [全域]|
 
-## <a name="bkmk_edit"></a> 編輯
+## <a name="edit"></a><a name="bkmk_edit"></a> 編輯
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|
@@ -111,7 +124,7 @@ dit.SurroundWith|Ctrl+K、Ctrl+S [全域]|
 |Edit.WordDeleteToEnd|Ctrl+Delete [文字編輯器]|
 |Edit.WordDeleteToStart|Ctrl+退格鍵 [文字編輯器]|
 
-## <a name="bkmk_file"></a> 檔案
+## <a name="file"></a><a name="bkmk_file"></a>文字檔
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|
@@ -127,26 +140,26 @@ dit.SurroundWith|Ctrl+K、Ctrl+S [全域]|
 |File.SaveSelectedItems|Ctrl+S [全域]|
 |File.ViewinBrowser|Ctrl+Shift+W [全域]|
 
-## <a name="bkmk_project"></a> 專案
+## <a name="project"></a><a name="bkmk_project"></a> 專案
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|
 |Project.AddExistingItem|Shift+Alt+A [全域]|
 |Project.AddNewItem|Ctrl+Shift+A [全域]|
 
-## <a name="bkmk_refactor"></a> 重構
+## <a name="refactor"></a><a name="bkmk_refactor"></a>重構
 
-|命令|鍵盤快速鍵 [內容]|
+|Command|鍵盤快速鍵 [內容]|
 |-------------|-----------------------------------|
 |Refactor.ExtractMethod|Ctrl+R、Ctrl+M [全域]|
 
-## <a name="bkmk_tools"></a> 工具
+## <a name="tools"></a><a name="bkmk_tools"></a> 工具
 
-|命令|鍵盤快速鍵 [內容]|
+|Command|鍵盤快速鍵 [內容]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl+Alt+P [全域]|
 
-## <a name="bkmk_view"></a> 檢視
+## <a name="view"></a><a name="bkmk_view"></a>視圖
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|
@@ -167,7 +180,7 @@ iew.TfsTeamExplorer|Ctrl+\\、Ctrl+M [全域]|
 |View.ViewCode|Enter [類別圖]<br /><br /> 或 F7 [設定設計工具]|
 |View.ViewDesigner|Shift+F7 [HTML 編輯器原始碼檢視]|
 
-## <a name="bkmk_window"></a> Window
+## <a name="window"></a><a name="bkmk_window"></a>範圍
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|

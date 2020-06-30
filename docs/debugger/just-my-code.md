@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e233be301630b00031bb90cd95fc78c2697c4e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348427"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536561"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>僅使用 Just My Code 來進行僅限 Debug 的使用者程式碼
 
@@ -196,7 +196,7 @@ Just My Code 在 .NET、c + + 和 JavaScript 專案中的運作方式不同。
 
 <a name="BKMK_JS_User_and_non_user_code"></a>JavaScript Just My Code 藉由將程式碼分類為下列其中一種分類，來控制逐步執行和呼叫堆疊顯示：
 
-|||
+|分類|描述|
 |-|-|
 |**MyCode**|您所擁有並控制的使用者程式碼。|
 |**LibraryCode**|您經常使用的程式庫中的非使用者程式碼，而且您的應用程式會依賴正常運作（例如 WinJS 或 jQuery）。|
@@ -279,7 +279,7 @@ JavaScript 偵錯工具會依照下列順序，將程式碼分類為使用者或
 
 **Eval**、**Function** 和 **ScriptBlock** 索引鍵值組會判斷要如何分類動態產生的程式碼：
 
-|||
+|名稱|說明|
 |-|-|
 |**Eval**|藉由傳遞字串給主機所提供的 `eval` 函式來執行的指令碼。 根據預設，Eval 指令碼會分類為 **MyCode**。|
 |**Function**|藉由傳遞字串給 `Function` 建構函式來執行的指令碼。 根據預設，Function 指令碼會分類為 **LibraryCode**。|
@@ -295,7 +295,7 @@ JavaScript 偵錯工具會依照下列順序，將程式碼分類為使用者或
 
 **MyCode**、**Libraries** 和 **Unrelated** 索引鍵值組會指定您在分類中要包含的 URL 或檔案：
 
-|||
+|名稱|說明|
 |-|-|
 |**MyCode**|分類為 **MyCode** 的 URL 陣列或檔案陣列。|
 |**程式庫**|分類為 **LibraryCode** 的 URL 陣列或檔案陣列。|

@@ -2,7 +2,7 @@
 title: Python 互動式視窗 (REPL)
 description: 在 Visual Studio 中使用互動式視窗 (REPL) 快速進行 Python 程式碼開發。
 ms.date: 02/11/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9608f273683865be767a44dd8f1d66106b97b7e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302760"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533545"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 互動式視窗
 
@@ -25,7 +25,7 @@ Visual Studio 為您的每個 Python 環境提供互動式「讀取、求值、�
 
 Visual Studio 有多個 Python REPL 模式可供選擇：
 
-| REPL | 描述 | 編輯 | 偵錯 | 影像 |
+| REPL | 描述 | 編輯中 | 偵錯 | 影像 |
 | --- | --- | --- | --- | --- |
 | 標準 | 預設的 REPL，直接與 Python 交談 | 標準編輯 (多行等)。 | 是，透過 `$attach` | 否 |
 | 偵錯 | 預設的 REPL，與已完成偵錯的 Python 程序交談 | 標準編輯 | 僅偵錯 | 否 |
@@ -34,21 +34,21 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 
 本文章描述**標準**和**偵錯** REPL 模式。 如需 IPython 模式的詳細資料，請參閱[使用 IPython REPL](interactive-repl-ipython.md)。
 
-有關示例的詳細演練，包括與編輯器（如**Ctrl**+**Enter）** 的交互，請參閱[教程步驟 3：使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。
+如需範例的詳細逐步解說，包括與編輯器的互動（例如**Ctrl** + **Enter**），請參閱[教學課程步驟3：使用互動式複製視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。
 
 ## <a name="open-an-interactive-window"></a>開啟互動式視窗
 
-有幾種方法可以打開環境的**互動式**視窗。
+有數種方式可以開啟環境的**互動式**視窗。
 
-首先，切換到 Python 環境視窗（**查看** > **其他 Windows** > **Python 環境**或**Ctrl**+**K** > **Ctrl），**+**`** 然後為所選環境選擇 **"打開互動式視窗**"命令或按鈕。
+首先，切換至 [Python 環境] 視窗（[**查看**  >  **其他 Windows**  >  **Python 環境**] 或**ctrl** + **K**  >  **ctrl** + **`** ），然後針對所選的環境選取 [**開啟互動式視窗]** 命令或按鈕。
 
 ![[Python 環境] 視窗中的互動式視窗連結](media/interactive-window-opening.png)
 
-其次，在 **"查看** > **其他 Windows"** 功能表的底部附近，有一個用於預設環境的**Python 互動式視窗**命令，以及切換到 **"環境"** 視窗的命令：
+其次，在**View**  >  **其他 Windows**功能表底部附近，有一個適用于您的預設環境的**Python 互動式視窗**命令，以及用來切換至 [**環境**] 視窗的命令：
 
 ![[檢視] > [其他視窗] 中的互動式視窗功能表項目](media/interactive-window-menu.png)
 
-第三種方式， 您可以選取 [偵錯]**** > **執行 [專案 | 檔案] > 在 Python \<互動式** 功能表命令 (**Shift**+**Alt**+**F5**) 中，在專案的啟動檔案上開啟**互動式**視窗，或是針對獨立檔案開啟互動式視窗：
+第三，您可以在專案的啟動檔案上開啟**互動式**視窗，或在獨立檔案中選取 [ **Debug**  >  ** \<Project | File> 在 Python 中執行**Debug] 互動式功能表命令（**Shift** + **Alt** + **F5**）：
 
 ![在 Python Interactive 功能表中執行專案](media/interactive-execute-project.png)
 
@@ -62,16 +62,16 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 
 ## <a name="use-the-interactive-window"></a>使用互動式視窗
 
-**打開互動式**視窗後，您可以在**\>\>** 提示符處逐行輸入代碼。 **互動式**視窗在輸入每一行時執行每行，其中包括導入模組、定義變數等：
+**互動式**視窗開啟之後，您就可以在提示字元逐行輸入程式碼 **\>\>\>** 。 當您輸入時，**互動式**視窗會執行每一行，其中包括匯入模組、定義變數等等：
 
 ![Python 互動式視窗](media/interactive-window.png)
 
-例外情況是在需要其他程式碼行以構成完整的陳述式時，例如當 `for` 陳述式的結尾是冒號時，如上所示。 在這些情況下，行提示字元會變更為 **...**，表示您需要輸入該區塊的其他行，如上圖中的第四和第五行所示。 當您在空白行上按**Enter**時，**互動式**視窗將關閉塊並在解譯器中運行它。
+例外情況是在需要其他程式碼行以構成完整的陳述式時，例如當 `for` 陳述式的結尾是冒號時，如上所示。 在這些情況下，行提示字元會變更為 **...**，表示您需要輸入該區塊的其他行，如上圖中的第四和第五行所示。 當您在空白行按下**enter**時，**互動式**視窗會關閉該區塊，並在解譯器中執行它。
 
 > [!Tip]
-> **互動式**視窗通過自動縮進屬於周圍作用域的語句來改進通常的 Python 命令列 REPL 體驗。 其記錄 (以向上鍵重新叫用) 也會提供多行項目，而命令列 REPL 僅提供單行。
+> **互動式**視窗會藉由自動縮排屬於周圍範圍的語句，來改善一般的 Python 命令列複寫體驗。 其記錄 (以向上鍵重新叫用) 也會提供多行項目，而命令列 REPL 僅提供單行。
 
-<a name="meta-commands"></a>**互動式**視窗還支援多個元命令。 所有中繼命令的開頭都是 `$`，而且您可以輸入 `$help` 來取得中繼命令清單，並輸入 `$help <command>` 來取得特定命令的詳細使用方式。
+<a name="meta-commands"></a>**互動式**視窗也支援數個中繼命令。 所有中繼命令的開頭都是 `$`，而且您可以輸入 `$help` 來取得中繼命令清單，並輸入 `$help <command>` 來取得特定命令的詳細使用方式。
 
 | 中繼命令 | 描述 |
 | --- | --- |
@@ -88,11 +88,11 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 
 ## <a name="switch-scopes"></a>切換範圍
 
-預設情況下，專案的**互動式**視窗範圍限定為專案的開機檔案，就像從命令提示符運行它一樣。 針對獨立的檔案，則會將範圍設定為該檔案。 不過，您在 REPL 工作階段期間隨時可以從**互動式**視窗頂端的下拉式功能表變更範圍：
+根據預設，專案的**互動式**視窗的範圍設定為專案的啟動檔案，就如同您從命令提示字元執行一樣。 針對獨立的檔案，則會將範圍設定為該檔案。 不過，您在 REPL 工作階段期間隨時可以從**互動式**視窗頂端的下拉式功能表變更範圍：
 
 ![互動式視窗範圍](media/interactive-scopes.png)
 
-匯入模組之後 (例如輸入 `import importlib`)，選項會出現在下拉式清單中，可切換為該模組中任何範圍。 **"互動式"** 視窗中的消息還指示新作用域，因此您可以跟蹤會話期間如何達到特定狀態。
+匯入模組之後 (例如輸入 `import importlib`)，選項會出現在下拉式清單中，可切換為該模組中任何範圍。 **互動式**視窗中的訊息也會指出新的範圍，因此您可以追蹤會話期間進入特定狀態的方式。
 
 在範圍中輸入 `dir()` 會顯示該範圍中的有效識別項，包括函數名稱、類別和變數。 例如，使用 `import importlib` 並接著使用 `dir()` 會顯示如下內容：
 
@@ -100,14 +100,14 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 
 ## <a name="send-to-interactive-command"></a>傳送至互動式命令
 
-除了在 **"交互"** 視窗中直接工作外，您還可以在編輯器中選擇代碼，按右鍵，然後選擇"**發送到互動式"** 或按**Ctrl**+**Enter**。
+除了直接在**互動式**視窗內工作之外，您還可以在編輯器中選取程式碼，以滑鼠右鍵按一下，然後選擇 [**傳送至互動式**] 或按**Ctrl** + **enter**鍵。
 
 ![[傳送到 Interactive] 功能表命令](media/interactive-send-to.png)
 
-此命令對於反覆式或演化式程式碼開發非常實用 (包含在開發程式碼時對它進行測試)。 例如，一旦將一段代碼發送到**互動式**視窗並看到其輸出，就可以按向上箭號再次顯示代碼、修改代碼，並通過按**Ctrl**+**Enter**快速測試代碼。 （按輸入末尾的**Enter**執行它，但按輸入中間的**Enter**將插入一條新線。獲得所需的代碼後，可以輕鬆地將其複製回專案檔案中。
+此命令對於反覆式或演化式程式碼開發非常實用 (包含在開發程式碼時對它進行測試)。 例如，當您將一段程式碼傳送至**互動式**視窗並看到其輸出之後，您可以按向上鍵以再次顯示該程式碼，修改它，然後按**Ctrl** + **Enter**快速測試它。 （在輸入的結尾按**enter**鍵會執行它，但在輸入中間按**enter**會插入一個分行符號）。一旦擁有您想要的程式碼，您就可以輕鬆地將它複製回您的專案檔。
 
 > [!Tip]
-> 預設情況下，視覺化工作室刪除**>>>** 和 **...** 將代碼從**互動式**視窗粘貼到編輯器中時，REPL 會提示。 您可以使用"**粘貼刪除 REPL 提示"** 選項在 **"工具** > **選項** > **文字編輯器** > **Python** > **高級"** 選項卡上更改此行為。 請參閱[選項 - 其他選項](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)。
+> 根據預設，Visual Studio 會移除 **>>>** 和 **...** 從**互動式**視窗將程式碼貼入編輯器時，複寫會提示您。 您可以在 [工具] [ **Tools**  >  **選項**  >  ] [**文字編輯器**] [Python] 索引標籤上  >  **Python**  >  **Advanced** ，使用 [貼上] [**移除複寫提示**] 選項 請參閱[選項 - 其他選項](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)。
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
@@ -115,14 +115,14 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 
 程式碼儲存格可在資料分析中使用，且各種文字編輯器都支援程式碼儲存格。
 
-例如，使用程式碼檔案作為便箋時，您通常會有要一次全部傳送的一小塊程式碼。 若要將程式碼分組在一起，請將程式碼標記為「程式碼儲存格」**，方法是在儲存格的開頭，新增以 `#%%` 開始的註解，這會結束前一個儲存格。 代碼儲存格可以折疊和展開，在代碼儲存格中使用**Ctrl**+**Enter**將整個儲存格發送到**互動式**視窗並移動到下一個視窗。
+例如，使用程式碼檔案作為便箋時，您通常會有要一次全部傳送的一小塊程式碼。 若要將程式碼分組在一起，請將程式碼標記為「程式碼儲存格」**，方法是在儲存格的開頭，新增以 `#%%` 開始的註解，這會結束前一個儲存格。 程式碼資料格可以折迭和展開，而在程式碼資料格中使用**Ctrl** + **Enter**會將整個儲存格傳送到**互動式**視窗，然後移至下一個視窗。
 
-Visual Studio 也會偵測以例如 `# In[1]:` 的註解開始的程式碼儲存格，這是您匯出 Jupyter 筆記本作為 Python 檔案時得到的格式。 通過下載為 Python 檔、在 Visual Studio 中打開並使用**Ctrl**+**Enter**運行每個儲存格，此檢測可以輕鬆地從[Azure 筆記本](https://notebooks.azure.com/)運行筆記本。
+Visual Studio 也會偵測以例如 `# In[1]:` 的註解開始的程式碼儲存格，這是您匯出 Jupyter 筆記本作為 Python 檔案時得到的格式。 這項偵測可讓您輕鬆地從[Azure Notebooks](https://notebooks.azure.com/)執行筆記本，方法是下載為 Python 檔案、在 Visual Studio 中開啟，然後使用**Ctrl** + **Enter**來執行每個儲存格。
 
 ![互動式程式碼儲存格](media/interactive-code-cells.png)
 
 ## <a name="intellisense-behavior"></a>IntelliSense 行為
 
-**互動式**視窗包括基於即時物件的 IntelliSense，這與 IntelliSense 僅基於原始程式碼分析的代碼編輯器不同。 這些建議在**互動式**視窗中更為正確，尤其是在動態生成的代碼中。 缺點是，具有附加作用 (例如記錄訊息) 的函數可能會影響您的開發體驗。
+**互動式**視窗包含以即時物件為基礎的 IntelliSense，而不像程式碼編輯器，intellisense 僅以原始程式碼分析為基礎。 這些建議在**互動式**視窗中更加正確，尤其是動態產生的程式碼。 缺點是，具有附加作用 (例如記錄訊息) 的函數可能會影響您的開發體驗。
 
-如果此行為存在問題，則更改 **"完成模式"** 組中**的工具** > **選項** > **Python** > **互動式 Windows**下的設置，如[選項 - 互動式視窗選項](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)中所述。
+如果此行為是問題，請在**Tools**  >  [完成模式] 群組中變更 [工具] [**選項**] [  >  **Python**  >  **互動式視窗**] 底下的設定，如[選項-互動式視窗選項](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)中所述。 **Completion Mode**

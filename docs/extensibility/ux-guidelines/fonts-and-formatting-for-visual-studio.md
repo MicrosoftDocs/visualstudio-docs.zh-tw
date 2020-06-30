@@ -1,5 +1,5 @@
 ---
-title: 可視化工作室的字體和格式 |微軟文件
+title: Visual Studio 的字型和格式 |Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
@@ -8,44 +8,44 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf1550026fb5c9d9395d931f21d48bc4739ea8c3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: fd2e8a41ef4b9708df079e94bcac8b8c06189116
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80698586"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536106"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>適用於 Visual Studio 的字型和格式設定
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>環境字型
- Visual Studio 中的所有字體都必須向使用者公開以進行自定義。 這主要通過「**工具>選項**」 對話方塊中的「**字型和顏色**」 頁完成。 字型設定的三個主要類別是:
+ Visual Studio 內的所有字型都必須公開給使用者進行自訂。 這主要是透過 [**工具] > [選項**] 對話方塊中的 [字型**和色彩**] 頁面來完成。 字型設定的三個主要類別為：
 
-- **環境字型**- IDE(整合式開發環境)的主字型,用於所有介面元素,包括對話框、功能表、工具視窗和文件視窗。 預設情況下,環境字型綁定到當前版本的 Windows 中顯示為 9 pt Segoe UI 的系統字體。 對所有介面元素使用一種字體有助於確保在整個 IDE 中保持一致的字體外觀。
+- **環境字型**-IDE （整合式開發環境）的主要字型，用於所有介面元素，包括對話方塊、功能表、工具視窗和文件視窗。 根據預設，環境字型會系結至目前 Windows 版本中顯示為 9 pt Segoe UI 的系統字型。 所有介面元素都使用一個字型，有助於確保整個 IDE 都具有一致的字型外觀。
 
-- **文字編輯器**─ 在「**工具>選項**」 的文字編輯器頁面中,可以在代碼和其他基於文字的編輯器中顯示的元素進行自訂。
+- **文字編輯器**-可以在 [**工具] > 選項**] 的 [文字編輯器] 頁面中，自訂以程式碼和其他以文字為基礎之編輯器中的元素。
 
-- **特定集合**- 設計器視窗,提供使用者自定義其介面元素可能會公開特定於其設計表面的字體在**工具>選項**的自己的設置頁。
+- **特定集合**-提供使用者自訂其介面專案的設計工具視窗，可能會在 [**工具] > 選項**] 的 [設定] 頁面中，公開其設計介面特有的字型。
 
-### <a name="editor-font-customization-and-resizing"></a>編輯器字型自訂和調整大小
- 使用者通常會根據使用者偏好放大或縮放編輯器中文本的大小和/或顏色,而與一般使用者介面無關。 由於環境字體用於可能出現在編輯器/設計器內部或作為編輯器/設計器的一部分的元素,因此在更改這些字體分類之一時注意預期行為非常重要。
+### <a name="editor-font-customization-and-resizing"></a>編輯自訂字型和調整大小
+ 使用者通常會根據其喜好設定來放大或縮放編輯器中的文字大小和（或）色彩，而與一般使用者介面無關。 因為環境字型是在可能出現在編輯器/設計工具中或做為一部分的元素上使用，所以當其中一個字型分類變更時，請務必注意預期的行為。
 
- 創建出現在編輯器中但不是*內容*一部分的 UI 元素時,使用環境字型而不是文本字體非常重要,以便元素以可預測的方式調整大小。
+ 建立出現在編輯器中但不屬於*內容*一部分的 UI 專案時，請務必使用環境字型，而不是文字字型，讓元素以可預測的方式調整大小。
 
-1. 對於編輯器中的代碼文本,請使用代碼文字字體設置調整大小,並回應編輯器文本的縮放級別。
+1. 針對編輯器中的程式碼文字，使用 [程式碼文字] 字型設定來調整大小，並回應編輯器文字的縮放層級。
 
-2. 介面的所有其他元素應綁定到環境字體設置,並回應環境中的任何全域更改。 這包括(但不限於):
+2. 介面的所有其他元素都應該系結至環境字型設定，並回應環境中的任何全域變更。 這包括（但不限於）：
 
-    - 內容選單中的文字
+    - 內容功能表中的文字
 
-    - 編輯器修飾中的文字,如燈泡菜單文字、快速搜尋編輯器窗格以及瀏覽到窗格
+    - 編輯器裝飾中的文字，例如燈泡功能表文字、快速尋找編輯器窗格，以及流覽至窗格
 
-    - 在對話框中標記文本,如 **"在檔中尋找**"或 **"重構"**
+    - 在對話方塊中標記文字，例如**在**檔案中尋找或**重構**
 
 ### <a name="accessing-the-environment-font"></a>存取環境字型
- 在本機或 WinForms 代碼中,`IUIHostLocale::GetDialogFont``SID_SUIHostLocale`可以通過從服務查詢介面後調用 方法來訪問環境字體。
+ 在原生或 WinForms 程式碼中，您可以在 `IUIHostLocale::GetDialogFont` 從服務中查詢介面之後呼叫方法來存取環境字型 `SID_SUIHostLocale` 。
 
- 對於 Windows 演示文稿基礎 (WPF),`DialogWindow`從 shell 的類派生對話框視窗類`Window`,而不是 WPF 的 類。
+ 若是 Windows Presentation Foundation （WPF），請從 shell 的 `DialogWindow` 類別（而不是 wpf 的類別）衍生您的交談視窗類別 `Window` 。
 
- 在 XAML 中,代碼如下所示:
+ 在 XAML 中，程式碼看起來像這樣：
 
 ```xaml
 <ui:DialogWindow
@@ -59,7 +59,7 @@ ms.locfileid: "80698586"
 </ui:DialogWindow>
 ```
 
-代碼後面:
+程式碼後置：
 
 ```csharp
 internal partial class WebConfigModificationWindow : DialogWindow
@@ -67,9 +67,9 @@ internal partial class WebConfigModificationWindow : DialogWindow
 }
 ```
 
- (替換為`Microsoft.VisualStudio.Shell.11.0`MPF dll 的當前版本。
+ （ `Microsoft.VisualStudio.Shell.11.0` 以 MPF dll 的目前版本取代。）
 
- 要顯示對話框,請對`ShowModal()`類`ShowDialog()`上調用""。 `ShowModal()`在 shell 中設置正確的模態狀態,確保對話框在父視窗中居中,等等。
+ 若要顯示對話方塊，請呼叫 `ShowModal()` 類別上的 "" `ShowDialog()` 。 `ShowModal()`在 shell 中設定正確的強制回應狀態，確保對話方塊會在父視窗中置中，依此類推。
 
  程式碼如下所示：
 
@@ -78,24 +78,24 @@ MyWindow window = new MyWindow();
 window.ShowModal()
 ```
 
- `ShowModal`還一頭野豬? (空布爾)與`DialogResult`,如果需要,可以使用。 如果對話框以 **「確定」** 關閉,則返回值為 true。
+ `ShowModal`傳回 bool？ （可為 null 的布林值） `DialogResult` ，包含，可在需要時使用。 如果對話方塊已關閉但有 **[確定**]，則傳回值為 true。
 
- 如果需要顯示一些不是對話框並在其自己的`HwndSource`中託管的 WPF UI,例如 Win32/WinForms 父視窗的彈出視窗或 WPF 子視窗,則需要`FontFamily`設定`FontSize`WPF 元素的根 元素和 。 (shell 在主視窗中設定屬性,但不會繼承`HWND`經過 。 shell 提供可以綁定屬性的資源,如下所示:
+ 如果您需要顯示一些不是對話方塊且裝載于其本身的 WPF UI （ `HwndSource` 例如，快顯視窗或 Win32/WinForms 父視窗的 WPF 子視窗），您必須在 `FontFamily` `FontSize` WPF 元素的根項目上設定和。 （Shell 會在主視窗上設定屬性，但不會繼承過去 `HWND` ）。 Shell 會提供可系結屬性的資源，如下所示：
 
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />
 <Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />
 ```
 
-### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a>格式 (縮放/ 粗體) 參考
- 某些對話框要求特定文本為粗體或環境字體以外的大小。 以前,大於環境字型的字體被編碼為"`environment font +2`或類似。 使用提供的程式碼段將支援高 DPI 監視器,並確保顯示文本始終以正確的大小和重量顯示(如"光"或"半光")。
+### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a>格式化（縮放/粗體）參考
+ 有些對話方塊需要特定文字為粗體，或是環境字型以外的大小。 先前，大於環境字型的字體會編碼為 " `environment font +2` " 或類似。 使用提供的程式碼片段將支援高 DPI 監視器，並確保顯示文字一律會以正確的大小和粗細（例如光源或 Semilight 做）顯示。
 
 > [!NOTE]
-> 在應用格式設置之前,請確保遵循[文本樣式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).* 中的指南。
+> 套用格式之前，請確定您遵循的是[文字樣式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)中的指引。 * *
 
- 要縮放環境字型,可以按指示設定 TextBlock 或 Label 的樣式。 正確使用的每個代碼段都將生成正確的字體,包括適當的大小和重量變化。
+ 若要調整環境字型，請依指示設定 TextBlock 或標籤的樣式。 這些程式碼片段的每個正確使用，都會產生正確的字型，包括適當的大小和權數變化。
 
- 其中「"`vsui`是對命名`Microsoft.VisualStudio.Shell`空間的引用:
+ 其中 " `vsui` " 是命名空間的參考 `Microsoft.VisualStudio.Shell` ：
 
 ```xaml
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
@@ -103,21 +103,21 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 
 #### <a name="375-environment-font--light"></a>375% 環境字型 + 淺色
 
-**顯示為:** 34 pt 塞戈 UI 燈
+**顯示為：** 34 Pt Segoe UI Light
 
 ::: moniker range="vs-2017"
 
-**用於:(** 罕見)唯一品牌 UI,如"起始頁"
+用於 **：** （罕見）唯一品牌的 UI，例如起始頁中的
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**用於:(** 罕見)唯一品牌 UI
+用於 **：** （罕見）唯一品牌的 UI
 
 ::: moniker-end
 
-**程式碼:** 以前`textBlock`定義的 TextBlock`label`是以前定義的標籤:
+程式性程式**代碼：** 其中 `textBlock` 是先前定義的 TextBlock，而 `label` 是先前定義的標籤：
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -126,7 +126,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
-**XAML:** 設置文本塊或標籤的樣式,如圖所示。
+**XAML：** 設定 TextBlock 或標籤的樣式，如下所示。
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
@@ -134,9 +134,9 @@ label.SetResourceReference(Label.StyleProperty,  
 ```
 
 #### <a name="310-environment-font--light"></a>310% 環境字型 + 淺色
- **顯示為:** 28 pt Segoe UI 燈**用途:** 大簽名對話框標題, 報表中的主標題
+ **顯示為：** 28 Pt Segoe UI 輕用於 **：** 大型簽章對話方塊標題，報表中的主要標題
 
- **程式碼:** 以前`textBlock`定義的 TextBlock`label`是以前定義的標籤:
+ 程式性程式**代碼：** 其中 `textBlock` 是先前定義的 TextBlock，而 `label` 是先前定義的標籤：
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -145,17 +145,17 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);
 ```
 
- **XAML:** 設置文本塊或標籤的樣式,如圖所示。
+ **XAML：** 設定 TextBlock 或標籤的樣式，如下所示。
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>
 ```
 
-#### <a name="200-environment-font--semilight"></a>200% 環境字型 + 半光
- **顯示為:** 18 pt Segoe UI 半光**用於:** 副標題, 標題在中小型對話框
+#### <a name="200-environment-font--semilight"></a>200% 環境字型 + Semilight 做
+ **顯示為：** 18 Pt Segoe UI semilight 做用於：子標題、小型和中型對話方塊中**的**標題
 
- **程式碼:** 以前`textBlock`定義的 TextBlock`label`是以前定義的標籤:
+ 程式性程式**代碼：** 其中 `textBlock` 是先前定義的 TextBlock，而 `label` 是先前定義的標籤：
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -164,7 +164,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);
 ```
 
- **XAML:** 設定文字塊或標籤的樣式,如下所示:
+ **XAML：** 設定 TextBlock 或標籤的樣式，如下所示：
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock> 
@@ -172,9 +172,9 @@ label.SetResourceReference(Label.StyleProperty,  
 ```
 
 #### <a name="155-environment-font"></a>155% 環境字型
- **顯示為:** 14 pt Segoe UI**用於:** 文件井 UI 或報表中的節標題
+ 在檔功能良好的 UI 或報表中，**顯示為：** 14 pt Segoe UI 用於 **：** 區段標題
 
- **程式碼:** 以前`textBlock`定義的 TextBlock`label`是以前定義的標籤:
+ 程式性程式**代碼：** 其中 `textBlock` 是先前定義的 TextBlock，而 `label` 是先前定義的標籤：
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -183,7 +183,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);
 ```
 
- **XAML:** 設定文字塊或標籤的樣式,如下所示:
+ **XAML：** 設定 TextBlock 或標籤的樣式，如下所示：
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock> 
@@ -191,9 +191,9 @@ label.SetResourceReference(Label.StyleProperty,  
 ```
 
 #### <a name="133-environment-font"></a>133% 環境字型
- **顯示為:** 12 pt Segoe UI**用於:** 簽名對話框中較小的副標題與文件井 UI
+ **顯示為：** 12 Pt Segoe UI**用於：** 簽章對話方塊中較小的子標題和檔良好的 UI
 
- **程式碼:** 以前`textBlock`定義的 TextBlock`label`是以前定義的標籤:
+ 程式性程式**代碼：** 其中 `textBlock` 是先前定義的 TextBlock，而 `label` 是先前定義的標籤：
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -202,7 +202,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);
 ```
 
- **XAML:** 設定文字塊或標籤的樣式,如下所示:
+ **XAML：** 設定 TextBlock 或標籤的樣式，如下所示：
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock> 
@@ -210,9 +210,9 @@ label.SetResourceReference(Label.StyleProperty,  
 ```
 
 #### <a name="122-environment-font"></a>122% 環境字型
- **顯示為:** 11 pt Segoe UI**用於:** 簽名對話框中的節標題、樹狀圖中的頂部節點、垂直選項卡導航
+ **顯示為：** 11 Pt Segoe UI**用於：** 簽章對話方塊中的區段標題、樹狀檢視中的前幾個節點、垂直索引標籤導覽
 
- **程式碼:** 以前`textBlock`定義的 TextBlock`label`是以前定義的標籤:
+ 程式性程式**代碼：** 其中 `textBlock` 是先前定義的 TextBlock，而 `label` 是先前定義的標籤：
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -221,17 +221,17 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);
 ```
 
- **XAML:** 設定文字塊或標籤的樣式,如下所示:
+ **XAML：** 設定 TextBlock 或標籤的樣式，如下所示：
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>
 ```
 
-#### <a name="environment-font--bold"></a>環境字型 = 粗體
- **顯示為:** 粗體 9 pt Segoe UI**用於:** 簽名對話框、報表和文件中的標記與子頭
+#### <a name="environment-font--bold"></a>環境字型 + 粗體
+ **顯示為：** 粗體 9 pt Segoe UI 用於：簽章對話方塊、報表和檔良好 UI 中**的**標籤和 subheads
 
- **程式碼:** 以前`textBlock`定義的 TextBlock`label`是以前定義的標籤:
+ 程式性程式**代碼：** 其中 `textBlock` 是先前定義的 TextBlock，而 `label` 是先前定義的標籤：
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -240,17 +240,17 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironmentBoldStyleKey);
 ```
 
- **XAML:** 設定文字塊或標籤的樣式,如下所示:
+ **XAML：** 設定 TextBlock 或標籤的樣式，如下所示：
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>
 ```
 
-### <a name="localizable-styles"></a>可本地化樣式
- 在某些情況下,當地語系化人員需要修改不同區域設置的字體樣式,例如從東亞語言的文本中刪除粗體。 為了使字體樣式的當地語系化成為可能,這些樣式必須存在於 .resx 檔中。 在 Visual Studio 窗體設計器中實現此目的並仍在編輯字體樣式的最佳方法是在設計時顯式設置字體樣式。 儘管這將創建一個完整的字體物件,並且似乎可能會破壞父字體的繼承,但只有 FontStyle 屬性用於設置字體。
+### <a name="localizable-styles"></a>可當地語系化的樣式
+ 在某些情況下，當地語系化人員將需要修改不同地區設定的字型樣式，例如從東亞語言的文字中移除 [粗體]。 為了能夠當地語系化字型樣式，這些樣式必須在 .resx 檔案中。 在 [Visual Studio 表單設計工具] 中完成這項工作並繼續編輯字型樣式的最佳方式，就是在設計階段明確設定字型樣式。 雖然這會建立完整的字型物件，而且看起來可能會中斷父字型的繼承，但是只會使用 FontStyle 屬性來設定字型。
 
- 解決方案是掛接對話框表單的事件`FontChanged`。 在這種情況下,`FontChanged`請遍歷所有控制項並檢查其字型是否已設置。 如果已設置,則根據窗體的字體和控制項以前的字體樣式將其更改為新字體。 代碼中這方面的一個範例是:
+ 解決方法是攔截對話表單的 `FontChanged` 事件。 在 `FontChanged` 事件中，請流覽所有控制項，並檢查其字型是否已設定。 如果已設定，請根據表單的字型和控制項的上一個字型樣式，將它變更為新字型。 在程式碼中的範例如下：
 
 ```csharp
 private void Form1_FontChanged(object sender, System.EventArgs e)
@@ -286,202 +286,202 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 }
 ```
 
- 使用此代碼可確保在更新窗體的字體時,控制件的字體也將更新。 還應從窗體的建構函數調用此方法,因為對話框可能無法獲取的`IUIService`實例,`FontChanged`並且事件永遠不會觸發。 鉤`FontChanged`將允許對話框動態選取新字體,即使對話框已打開也是如此。
+ 使用此程式碼可確保當表單的字型更新時，控制項的字型也會一併更新。 這個方法也應該從表單的「函式」呼叫，因為對話可能無法取得的實例 `IUIService` ，而且 `FontChanged` 永遠不會引發事件。 `FontChanged`如果對話方塊已開啟，則會允許對話動態地取得新的字型。
 
 ### <a name="testing-the-environment-font"></a>測試環境字型
- 為確保 UI 使用環境字型並尊重大小設定,請打開 **「工具>選項>環境>字體和顏色**」,並在「顯示設定」下拉菜單下選擇「環境字體」。
+ 為確保您的 UI 使用環境字型，並遵循大小設定，請開啟 [**工具] > 選項 > 環境 > 字型和色彩**]，然後選取 [顯示設定：] 下拉式功能表底下的 [環境字型]。
 
- ![「工具&gt;選項」對話框中的字型與顏色設定](../../extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201-a_OptionsFonts")<br />「工具&gt;選項」對話框中的字型與顏色設定
+ ![[工具 &gt; 選項] 對話方塊中的字型和色彩設定](../../extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201-a_OptionsFonts")<br />[工具 &gt; 選項] 對話方塊中的字型和色彩設定
 
- 將字體設置為與預設值非常不同的內容。 為了明顯哪個 UI 不更新,請選擇帶有襯線(如"時代新羅馬")的字體,並設置非常大的大小。 然後測試UI以確保它尊重環境。 下面是使用授權對話框的範例:
+ 將字型設定為與預設值非常不同的內容。 若要讓它顯而易見，哪個 UI 不會更新，請選擇具有襯線的字型（例如「Times New Roman」）並設定非常大的大小。 然後測試您的 UI，以確保其遵迴圈境。 以下是使用 [授權] 對話方塊的範例：
 
- ![不尊重環境字型的 UI 文字範例](../../extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201-b_WrongFontDialog")<br />不尊重環境字型的 UI 文字範例
+ ![不遵守環境字型的 UI 文字範例](../../extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201-b_WrongFontDialog")<br />不遵守環境字型的 UI 文字範例
 
- 在這種情況下,「使用者資訊」和「產品資訊」不尊重字體。 在某些情況下,這可能是一個明確的設計選擇,但如果顯式字體未指定為紅線規範的一部分,則可能是一個錯誤。
+ 在此情況下，「使用者資訊」和「產品資訊」並不尊重字型。 在某些情況下，這可能是明確的設計選擇，但如果未指定明確字型做為紅線規格的一部分，則會是 bug。
 
- 要重置字型,請按下 **「工具>選項 >>字體和顏色」** 下「使用預設值」。
+ 若要重設字型，請按一下 [工具] **> > 選項**] 下的 [使用預設值] > 字型和色彩]。
 
 ## <a name="text-style"></a><a name="BKMK_TextStyle"></a>文字樣式
- 文本樣式是指字體大小、粗細和大小寫。 有關實現指南,請參閱[環境字型](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。
+ 文字樣式指的是字型大小、權數和大小寫。 如需執行指引，請參閱[環境字型](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。
 
 ### <a name="text-casing"></a>文字大小寫
 
 #### <a name="all-caps"></a>全部大寫
- 請勿在視覺工作室中對標題或標籤使用所有大寫字母。
+ 請勿在 Visual Studio 中使用標題或標籤的全部大寫。
 
-#### <a name="all-lowercase"></a>所有小寫
- 請勿對視覺工作室中的標題或標籤使用所有小寫。
+#### <a name="all-lowercase"></a>全部小寫
+ Visual Studio 中的標題或標籤不全部使用小寫。
 
 #### <a name="sentence-and-title-case"></a>句子和標題案例
- Visual Studio 中的文本應使用標題案例或句子案例,具體取決於具體情況。
+ 視情況而定，Visual Studio 中的文字應該使用標題大小寫或句子案例。
 
-|使用標題案例:|使用句子案例:|
+|將標題案例用於：|使用的句子案例：|
 |-------------------------|----------------------------|
-|對話框標題|標籤|
-|群組盒|核取方塊|
+|對話方塊標題|標籤|
+|群組方塊|核取方塊|
 |功能表項目|選項按鈕|
-|操作功能表項目|清單盒項目|
+|操作功能表項目|清單方塊專案|
 |按鈕|狀態列|
-|表標籤||
+|資料表標籤||
 |資料行標題||
 |工具提示||
 
 ##### <a name="title-case"></a>字首大寫
- 標題大小寫是一種樣式,其中短語中大多數或所有單詞的第一個字母大寫。 在 Visual Studio 中,標題案例用於許多專案,包括:
+ 「標題大小寫」是一種樣式，其中片語中大部分或所有單字的前幾個字母都是大寫。 在 Visual Studio 中，標題案例會用於許多專案，包括：
 
-- **提示。** 示例:"預覽所選專案"
+- **提示.** 範例：「預覽選取的專案」
 
-- **列標題。** 示例:"系統回應"
+- **資料行標頭。** 範例：「系統回應」
 
-- **功能表項。** 示例:"全部保存"
+- **功能表項目。** 範例：「全部儲存」
 
-  使用標題大小寫時,以下是何時對單詞進行大寫以及何時保留小寫字母的準則:
+  使用標題案例時，這些是何時要將文字大寫，以及何時將其保持小寫的指導方針：
 
-|大寫|評論和範例|
+|大寫|批註和範例|
 |---------------|---------------------------|
 |所有名詞||
-|所有動詞命令|包括"是"和其他形式的"要"|
-|所有副詞|包括"Than"和"何時"|
-|所有形容詞|包括"這個"和"那個"|
-|所有代詞|包括佔有性的「它」和「它是」,代詞「它」和動詞」是「的收縮|
-|第一個單詞和最後一個單詞,無論演講的哪個部分||
-|作為動詞短語一部分的介詞|關閉所有視窗"或"關閉系統"|
-|第一字母縮圖的所有字母|HTML, XML, URL, IDE, RGB|
-|複合詞中的第二個單詞,如果是名詞或適當的形容詞,或者單詞具有相等的權重|交叉引用,微軟前軟體,讀/寫訪問,運行時|
+|所有動詞命令|包括 "Is" 和其他形式的 "to"|
+|所有 adverbs|包含「超過」和「時間」|
+|所有形容詞|包括「此」和「那」|
+|所有代名詞|包括所有格「它」以及「它是」，縮減的代詞「it」和動詞「是」|
+|第一個和最後一個字組，不論語音的部分為何||
+|屬於動詞片語的介係詞|「關閉所有視窗」或「關閉系統」|
+|縮寫的所有字母|HTML、XML、URL、IDE、RGB|
+|複合字組中的第二個單字（如果它是名詞或適當形容詞），或如果單字具有相等的權數|交互參照，Microsoft 預先軟體，讀取/寫入存取，執行時間|
 
 |小寫|範例|
 |---------------|--------------|
-|複合詞中的第二個單詞,如果它是語音的另一部分或修改第一個單詞的分詞|如何,起飛|
-|文章,除非標題中的第一個單字|a、an、the|
-|座標連合|和,但是,也不,或|
-|動詞短語之外有四個或更少字母的單詞的介詞|到,至於,出,在上面|
-|在不定式短語中使用時的"To"|"如何格式化硬碟"|
+|複合字組中的第二個單字（如果它是語音的另一個部分或分詞修改第一個單字）|使用說明，請停用|
+|文章，除非其中一個是標題中的第一個單字|a、an、the|
+|座標連接詞|和，但適用于、或|
+|在動詞片語外部以四個或更少字母的文字介係詞|into，移至，在|
+|在不定片語中使用時的 "To"|「如何格式化硬碟」|
 
-##### <a name="sentence-case"></a>判刑案例
- 句子案例是書寫的標準大寫方法,其中只有句子的第一個單詞大寫,以及任何正確的名詞和代詞"I"。 通常,對於全球受眾來說,句子案例更容易閱讀,尤其是當內容將由機器翻譯時。 使用句子案例:
+##### <a name="sentence-case"></a>句子案例
+ 句子大小寫是標準的大寫方法，其中只有句子的第一個單字是大寫，以及任何適當名詞和代詞「I」。 在一般情況下，句子較容易閱讀，特別是當電腦轉譯內容時。 使用的句子案例：
 
-1. **狀態欄消息。** 這些操作簡單、簡短,僅提供狀態資訊。 示例:"載入專案檔"
+1. **狀態列訊息。** 這些只是簡單、簡短，而且只提供狀態資訊。 範例：「正在載入專案檔」
 
-2. **所有其他 UI 元素**,包括標籤、複選框、單選按鈕和清單框項。 示例:"選擇清單中的所有專案"
+2. **所有其他 UI 元素**，包括標籤、核取方塊、選項按鈕和清單方塊專案。 範例：「選取清單中的所有專案」
 
 ### <a name="text-formatting"></a>文字格式
- Visual Studio 2013 中的預設文本格式由[環境字型](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)控制。 此服務有助於確保在整個 IDE(整合式開發環境)中保持一致的字體外觀,您必須使用它來保證用戶獲得一致的體驗。
+ Visual Studio 2013 中的預設文字格式是由[環境字型](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)所控制。 此服務有助於確保整個 IDE （整合式開發環境）中的字型外觀一致，而且您必須使用它來保證使用者的一致體驗。
 
- Visual Studio 字型服務使用的預設大小來自 Windows,顯示為 9 磅。
+ Visual Studio 字型服務所使用的預設大小來自 Windows，並顯示為 9 pt。
 
- 您可以將格式應用於環境字型。 本主題介紹如何使用樣式以及在哪裡使用樣式。 有關實作資訊,請參閱[環境字型](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。
+ 您可以將格式套用至環境字型。 本主題涵蓋使用樣式的方式和位置。 如需執行資訊，請參閱[環境字型](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。
 
 #### <a name="bold-text"></a>粗體文字
- 粗體文本在視覺工作室中謹慎使用,應保留為:
+ 粗體文字會在 Visual Studio 中謹慎使用，且應保留給：
 
-- 匯出匯中的問題分頁
+- 在嚮導中的問題標籤
 
-- 在解決方案資源管理員中指定活動項目
+- 在方案總管中指定現用專案
 
-- 「屬性」工具視窗中的重寫值
+- [屬性] 工具視窗中的覆寫值
 
-- 視覺化基本編輯器下拉清單中的某些事件
+- [Visual Basic 編輯器] 下拉式清單中的特定事件
 
-- 網頁文件大綱中的伺服器產生的內容
+- 網頁檔大綱中伺服器產生的內容
 
-- 複雜對話框或設計器 UI 中的節標題
+- 複雜對話方塊或設計工具 UI 中的區段標頭
 
 #### <a name="italics"></a>斜體
- Visual Studio 不使用斜體或粗體斜體文本。
+ Visual Studio 不會使用斜體或粗體的斜體文字。
 
 #### <a name="color"></a>Color
 
-- 藍色保留為超連結(導航和命令),絕不應用於方向。
+- 藍色會保留給超連結（導覽和命令），而且永遠不應用於方向。
 
-- 出於以下目的,可以著色較大的標題(環境字體 x 155% 或更高):
+- 較大的標題（環境字型 x 155% 或更新版本）可用於下列用途：
 
-  - 為簽名視覺工作室 UI 提供視覺吸引力
+  - 對簽章 Visual Studio UI 提供視覺效果歡迎
 
-  - 呼籲關注特定區域
+  - 若要呼叫特定區域的注意力
 
-  - 提供從標準深灰色/黑色環境文字顏色的緩解
+  - 從標準深色灰階/黑色環境文字色彩中提供浮雕
 
-- 標題中的顏色應利用現有的 Visual Studio 品牌顏色,主要是主要的紫色、#FF68217A。
+- 標題中的色彩應該利用現有的 Visual Studio 品牌色彩，主要為紫色，#FF68217A。
 
-- 在標題中使用顏色時,必須遵守[Windows 顏色準則](/windows/desktop/uxguide/vis-color),包括對比度和其他輔助功能注意事項。
+- 在標題中使用色彩時，您必須遵守[Windows 色彩方針](/windows/desktop/uxguide/vis-color)，包括對比比例和其他協助工具考慮。
 
 ### <a name="font-size"></a>字型大小
- Visual Studio UI 設計具有更輕的外觀和更多的空白空間。 在可能的情況下,鉻和標題條已減少或刪除。 雖然資訊密度是 Visual Studio 中的一項要求,但排版仍然很重要,重點是更開放的線條間距和字體大小和權重的變化。
+ Visual Studio UI 設計具有更多空白字元的較淡外觀。 可能的話，已減少或移除 chrome 和標題列。 雖然資訊密度是 Visual Studio 的需求，但印刷樣式仍然很重要，著重于更多的開放行間距以及字型大小和權數的變化。
 
- 下表包括 Visual Studio 中使用的顯示字體的設計詳細資訊和可視化範例。 某些顯示字體變體的大小和權重(如半光或輕)已編碼到其外觀中。
+ 下表包含 Visual Studio 中使用之顯示字型的設計詳細資料和視覺效果範例。 某些顯示字型變化的大小和粗細，例如 Semilight 做或淺色，會編碼成其外觀。
 
- 所有顯示字型的實現代碼段都可以在[格式(縮放/粗體)引用](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting)中找到。
+ 所有顯示字型的執行程式碼片段都可以在[格式化（縮放/粗體）參考](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting)中找到。
 
 #### <a name="375-environment-font--light"></a>375% 環境字型 + 淺色
 
-|||
+|使用方式|外觀|
 |-|-|
-|**用法:** 罕見。 僅具有唯一品牌 UI。<br /><br /> **執行:**<br /><br /> - 使用句子案例<br />- 始終使用重量輕<br /><br /> **不要:**<br /><br /> - 用於簽署 UI 以外的 UI,如起始頁<br />- 粗體、斜體或粗斜體<br />- 用於正文文字<br />- 在工具視窗中使用|**顯示為:** 34 pt 塞戈 UI 燈<br /><br /> **視覺範例:**<br /><br /> *當前未使用。可在視覺工作室 2017 起始頁中使用。*|
+|**使用方式：** 比較. 唯一的品牌化 UI。<br /><br /> **對**<br /><br /> -使用句子案例<br />-一律使用輕量<br /><br /> **不要：**<br /><br /> -用於簽章 UI 以外的 UI，例如起始頁<br />-粗體、斜體或粗體斜體<br />-用於本文文字<br />-在工具視窗中使用|**顯示為：** 34 Pt Segoe UI Light<br /><br /> **視覺效果範例：**<br /><br /> *目前未使用。可用於 Visual Studio 2017 起始頁。*|
 
 #### <a name="310-environment-font--light"></a>310% 環境字型 + 淺色
 
 ::: moniker range="vs-2017"
 
-|||
+|使用方式|外觀|
 |-|-|
-|**使用:**<br /><br /> - 簽名對話框中較大的標題<br />- 主要報告標題<br /><br /> **執行:**<br /><br /> - 使用句子案例<br />- 始終使用重量輕<br /><br /> **不要:**<br /><br /> - 用於簽署 UI 以外的 UI,如起始頁<br />- 粗體、斜體或粗斜體<br />- 用於正文文字<br />- 在工具視窗中使用|**顯示為:** 28 pt 塞戈 UI 燈<br /><br /> **視覺範例:**<br /><br /> ![310% 環境字型&#43;光標題的範例](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**使用方式：**<br /><br /> -簽章對話方塊中的較大標題<br />-主報表標題<br /><br /> **對**<br /><br /> -使用句子案例<br />-一律使用輕量<br /><br /> **不要：**<br /><br /> -用於簽章 UI 以外的 UI，例如起始頁<br />-粗體、斜體或粗體斜體<br />-用於本文文字<br />-在工具視窗中使用|**顯示為：** 28 Pt Segoe UI 淺色<br /><br /> **視覺效果範例：**<br /><br /> ![310% 環境字型的範例 &#43; 淺色標題](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-|||
+|使用方式|外觀|
 |-|-|
-|**使用:**<br /><br /> - 簽名對話框中較大的標題<br />- 主要報告標題<br /><br /> **執行:**<br /><br /> - 使用句子案例<br />- 始終使用重量輕<br /><br /> **不要:**<br /><br /> - 用於簽署 UI 以外的 UI<br />- 粗體、斜體或粗斜體<br />- 用於正文文字<br />- 在工具視窗中使用|**顯示為:** 28 pt 塞戈 UI 燈<br /><br /> **視覺範例:**<br /><br /> ![310% 環境字型&#43;光標題的範例](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**使用方式：**<br /><br /> -簽章對話方塊中的較大標題<br />-主報表標題<br /><br /> **對**<br /><br /> -使用句子案例<br />-一律使用輕量<br /><br /> **不要：**<br /><br /> -用於簽章 UI 以外的 UI<br />-粗體、斜體或粗體斜體<br />-用於本文文字<br />-在工具視窗中使用|**顯示為：** 28 Pt Segoe UI 淺色<br /><br /> **視覺效果範例：**<br /><br /> ![310% 環境字型的範例 &#43; 淺色標題](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
-#### <a name="200-environment-font--semilight"></a>200% 環境字型 + 半光
+#### <a name="200-environment-font--semilight"></a>200% 環境字型 + Semilight 做
 
-|||
+|使用方式|外觀|
 |-|-|
-|**使用:**<br /><br /> - 副標題<br />- 中小型對話框中的標題<br /><br /> **執行:**<br /><br /> - 使用句子案例<br />- 始終使用半輕重量<br /><br /> **不要:**<br /><br /> - 粗體、斜體或粗斜體<br />- 用於正文文字<br />- 在工具視窗中使用|**顯示為:** 18 pt 塞戈 UI 塞米萊特<br /><br /> **視覺範例:**<br /><br /> ![200% 環境字型&#43;半光的範例](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
+|**使用方式：**<br /><br /> -子標題<br />-小型和中型對話方塊中的標題<br /><br /> **對**<br /><br /> -使用句子案例<br />-一律使用 Semilight 做權數<br /><br /> **不要：**<br /><br /> -粗體、斜體或粗體斜體<br />-用於本文文字<br />-在工具視窗中使用|**顯示為：** 18 Pt Segoe UI Semillight<br /><br /> **視覺效果範例：**<br /><br /> ![200% 環境字型的範例 &#43; Semilight 做](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
 
 #### <a name="155-environment-font"></a>155% 環境字型
 
-|||
+|使用方式|外觀|
 |-|-|
-|**使用:**<br /><br /> - 文件井 UI 中的節標題<br />- 報告<br /><br /> **執行:** 使用句子案例<br /><br /> **不要:**<br /><br /> - 粗體、斜體或粗斜體<br />- 用於正文文字<br />- 在標準視覺工作室控制項中使用<br />- 在工具視窗中使用|**顯示為:** 14 pt 塞戈 UI<br /><br /> **視覺範例:**<br /><br /> ![155% 環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
+|**使用方式：**<br /><br /> -檔良好 UI 中的區段標題<br />-報表<br /><br /> **Do：** 使用句子案例<br /><br /> **不要：**<br /><br /> -粗體、斜體或粗體斜體<br />-用於本文文字<br />-在標準 Visual Studio 控制項中使用<br />-在工具視窗中使用|**顯示為：** 14 pt Segoe UI<br /><br /> **視覺效果範例：**<br /><br /> ![155% 環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
 
 #### <a name="133-environment-font"></a>133% 環境字型
 
-|||
+|使用方式|外觀|
 |-|-|
-|**使用:**<br /><br /> - 簽署對話框中的較小子標題<br />- 文件井 UI 中的較小子標題<br /><br /> **執行:** 使用句子案例<br /><br /> **不要:**<br /><br /> - 粗體、斜體或粗斜體<br />- 用於正文文字<br />- 在標準視覺工作室控制項中使用<br />- 在工具視窗中使用|**顯示為:** 12 pt 塞戈 UI<br /><br /> **視覺範例:**<br /><br /> ![133% 環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
+|**使用方式：**<br /><br /> -簽章對話方塊中較小的子標題<br />-檔良好 UI 中較小的子標題<br /><br /> **Do：** 使用句子案例<br /><br /> **不要：**<br /><br /> -粗體、斜體或粗體斜體<br />-用於本文文字<br />-在標準 Visual Studio 控制項中使用<br />-在工具視窗中使用|**顯示為：** 12 pt Segoe UI<br /><br /> **視覺效果範例：**<br /><br /> ![133% 環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
 
 #### <a name="122-environment-font"></a>122% 環境字型
 
-|||
+|使用方式|外觀|
 |-|-|
-|**使用:**<br /><br /> - 簽署對話框中的節標題<br />- 樹狀圖中的頂端節點<br />- 垂直選項卡導覽<br /><br /> **執行:** 使用句子案例<br /><br /> **不要:**<br /><br /> - 粗體、斜體或粗斜體<br />- 用於正文文字<br />- 在標準視覺工作室控制項中使用<br />- 在工具視窗中使用|**顯示為:** 11 pt Segoe UI<br /><br /> **視覺範例:**<br /><br /> ![122% 環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
+|**使用方式：**<br /><br /> -簽章對話方塊中的區段標題<br />-樹狀檢視中的最上層節點<br />-垂直 tab 導覽<br /><br /> **Do：** 使用句子案例<br /><br /> **不要：**<br /><br /> -粗體、斜體或粗體斜體<br />-用於本文文字<br />-在標準 Visual Studio 控制項中使用<br />-在工具視窗中使用|**顯示為：** 11 pt Segoe UI<br /><br /> **視覺效果範例：**<br /><br /> ![122% 環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
 
-#### <a name="environment-font--bold"></a>環境字型 = 粗體
+#### <a name="environment-font--bold"></a>環境字型 + 粗體
 
-|||
+|使用方式|外觀|
 |-|-|
-|**使用:**<br /><br /> - 簽署對話框中的標籤與子頭<br />- 報表中的標籤與子頭<br />- 文件井 UI 的標籤與子頭<br /><br /> **執行:**<br /><br /> - 使用句子案例<br />- 使用粗體重量<br /><br /> **不要:**<br /><br /> - 斜體或粗斜體<br />- 用於正文文字<br />- 在標準視覺工作室控制項中使用<br />- 在工具視窗中使用|**顯示為:** 粗體 9 pt Segoe UI<br /><br /> **視覺範例:**<br /><br /> ![環境字型&#43;粗體標題的範例](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
+|**使用方式：**<br /><br /> -簽章對話方塊中的標籤和 subheads<br />-報表中的標籤和 subheads<br />-檔功能良好的 UI 中的標籤和 subheads<br /><br /> **對**<br /><br /> -使用句子案例<br />-使用粗體權數<br /><br /> **不要：**<br /><br /> -斜體或粗體斜體<br />-用於本文文字<br />-在標準 Visual Studio 控制項中使用<br />-在工具視窗中使用|**顯示為：** 粗體 9 pt Segoe UI<br /><br /> **視覺效果範例：**<br /><br /> ![環境字型 &#43; 粗體標題的範例](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
 
 #### <a name="environment-font"></a>環境字型
 
-|||
+|使用方式|外觀|
 |-|-|
-|**用法:** 所有其他文字<br /><br /> **執行:** 使用句子案例<br /><br /> **不要:** 斜體或粗斜體|**顯示為:** 9 pt Segoe UI<br /><br /> **視覺範例:**<br /><br /> ![環境字型的範例](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|
+|**使用方式：** 所有其他文字<br /><br /> **Do：** 使用句子案例<br /><br /> **不要：** 斜體或粗體斜體|**顯示為：** 9 pt Segoe UI<br /><br /> **視覺效果範例：**<br /><br /> ![環境字型的範例](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|
 
-### <a name="padding-and-spacing"></a>填滿與間距
- 標題需要圍繞它們的空間來給予適當的強調。 此空間因點大小和標題附近的其他內容而異,例如水準規則或環境字體中的一行文本。
+### <a name="padding-and-spacing"></a>填補和間距
+ 標題周圍需要一些空間，以提供適當的強調。 這個空間會根據點大小和其他在標題附近的內容而有所不同，例如水準規則或環境字型中的文字行。
 
-- 標題本身的理想填充應為大寫字元高度空間的 90%。 例如,28 pt Segoe UI Light標題的上限高度為 26 磅,填充高度應約為 23 pt,即大約 31 圖元。
+- 標題本身的理想填補應該是大寫字元高度空間的90%。 例如，28 pt Segoe UI 淺色標題的端點高度為 26 pt，而填補應大約為 23 pt，或約31圖元。
 
-- 標題周圍的最小空間應為大寫字元高度的 50%。 當標題附帶規則或其他緊密擬合元素時,可以使用較少的空間。
+- 標題周圍的最小空間應為大寫字元高度的50%。 當標題伴隨規則或其他緊密調整元素時，可能會使用較少的空間。
 
-- 帶粗體環境字體文本應遵循預設行高度間距和填充。
+- 粗體的環境字型文字應遵循預設行高度間距和填補。
 
 ## <a name="see-also"></a>另請參閱
 
-- [MSDN: 字型 (視窗)](/windows/desktop/uxguide/vis-fonts)
-- [MSDN:使用者介面文字(視窗)](/windows/desktop/uxguide/text-ui)
+- [字型（Windows）](/windows/desktop/uxguide/vis-fonts)
+- [使用者介面文字（Windows）](/windows/desktop/uxguide/text-ui)

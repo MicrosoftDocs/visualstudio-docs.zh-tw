@@ -1,7 +1,7 @@
 ---
-title: HOW TO：目標的 Office 多語系使用者介面
+title: 如何：以 Office 多語系使用者介面為目標
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,27 +17,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c495f8a83b58c53404056befd2227b295c3324d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5217f2d6cf67eced00c0c84b9bacda94573c5a09
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961135"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537497"
 ---
-# <a name="how-to-target-the-office-multilingual-user-interface"></a>HOW TO：目標的 Office 多語系使用者介面
-  多語系使用者介面 (MUI) 是一種 Microsoft Office 的功能，讓使用者能夠變更的使用者介面 (UI) 語言。 比方說，使用英文的 UI 終端使用者可以變更 UI 的語言為西班牙文。
+# <a name="how-to-target-the-office-multilingual-user-interface"></a>如何：以 Office 多語系使用者介面為目標
+  多語系使用者介面（MUI）是一項 Microsoft Office 功能，可讓使用者變更使用者介面（UI）的語言。 例如，使用英文 UI 的使用者可以將 UI 的語言變更為西班牙文。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- 如果您的應用程式將由誰使用許多語言的 Office，您可以新增程式碼，以自動 UI 字串以符合 Office 所使用的使用者的電腦上 （如果使用者已安裝正確的資源） 的語言的語言。
+ 如果您的應用程式將由使用許多 Office 語言的人員使用，您可以加入程式碼，以自動變更 UI 字串的語言，使其符合使用者電腦上的 Office 所使用的語言（如果使用者已安裝正確的資源）。
 
 ## <a name="to-check-the-current-office-ui-setting"></a>若要檢查目前的 Office UI 設定
 
-1. 使用<xref:System.Threading.Thread.CurrentUICulture%2A>屬性目前的執行緒。 設定您的 UI 字串，以符合目前使用者的電腦執行的 Office 版本所使用的語言的語言。
+1. 使用 <xref:System.Threading.Thread.CurrentUICulture%2A> 目前線程的屬性。 設定 UI 字串的語言，使其符合目前在使用者電腦上執行之 Office 版本所使用的語言。
 
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]
 
 ## <a name="see-also"></a>另請參閱
-- [如何：透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
-- [在 Office 方案中的晚期繫結](../vsto/late-binding-in-office-solutions.md)
+- [如何：透過主要 interop 元件以 Office 應用程式為目標](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Office 方案中的晚期繫結](../vsto/late-binding-in-office-solutions.md)

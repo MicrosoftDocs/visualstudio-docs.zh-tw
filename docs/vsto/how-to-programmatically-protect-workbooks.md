@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式保護活頁簿
+title: 如何：以程式設計方式保護活頁簿
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,50 +17,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad45097146a7566f2d043fba5e14265c05dc4d7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee7444c63c2d774e9b22ea612049f09429729c79
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955906"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537627"
 ---
-# <a name="how-to-programmatically-protect-workbooks"></a>HOW TO：以程式設計方式保護活頁簿
-  您可以保護 Microsoft Office Excel 活頁簿，以便讓使用者無法加入或刪除工作表，並也以程式設計方式取消保護活頁簿。 或者，您可以指定密碼，指出您是否要保護 （讓使用者無法移動工作表），這個結構，以及表示是否要讓受保護的活頁簿的視窗。
+# <a name="how-to-programmatically-protect-workbooks"></a>如何：以程式設計方式保護活頁簿
+  您可以保護 Microsoft Office Excel 活頁簿，讓使用者無法加入或刪除工作表，也能以程式設計方式取消保護活頁簿。 您可以選擇性地指定密碼、指出是否要保護結構（讓使用者無法移動工作表），以及指出您是否要保護活頁簿的 windows。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- 保護活頁簿並不會防止使用者編輯儲存格。 若要保護的資料，您必須保護工作表。 如需詳細資訊，請參閱[如何：以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)。
+ 保護活頁簿不會阻止使用者編輯資料格。 若要保護資料，您必須保護工作表。 如需詳細資訊，請參閱[如何：以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)。
 
- 下列程式碼範例會使用變數來包含取自於使用者的密碼。
+ 下列程式碼範例會使用變數來包含從使用者取得的密碼。
 
-## <a name="protect-a-workbook-that-is-part-of-a-document-level-customization"></a>保護文件層級自訂一部分的活頁簿
+## <a name="protect-a-workbook-that-is-part-of-a-document-level-customization"></a>保護屬於檔層級自訂一部分的活頁簿
 
-### <a name="to-protect-a-workbook"></a>若要保護的活頁簿
+### <a name="to-protect-a-workbook"></a>保護活頁簿
 
-1. 呼叫<xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A>活頁簿的方法，並包含密碼。 若要使用下列程式碼範例，在中執行`ThisWorkbook`類別，不會在工作表類別。
+1. 呼叫活頁 <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> 簿的方法，並包含密碼。 若要使用下列程式碼範例，請在類別中執行 `ThisWorkbook` ，而不是在工作表類別中執行。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#10)]
      [!code-vb[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#10)]
 
-### <a name="to-unprotect-a-workbook"></a>若要取消保護活頁簿
+### <a name="to-unprotect-a-workbook"></a>取消保護活頁簿
 
-1. 呼叫<xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A>方法，傳遞所需的密碼。 若要使用下列程式碼範例，在中執行`ThisWorkbook`類別，不會在工作表類別。
+1. 呼叫 <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> 方法，並視需要傳遞密碼。 若要使用下列程式碼範例，請在類別中執行 `ThisWorkbook` ，而不是在工作表類別中執行。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#11)]
 
-## <a name="protect-a-workbook-by-using-an-application-level-add-in"></a>使用應用程式層級增益集來保護活頁簿
+## <a name="protect-a-workbook-by-using-an-application-level-add-in"></a>使用應用層級增益集來保護活頁簿
 
-### <a name="to-protect-a-workbook"></a>若要保護的活頁簿
+### <a name="to-protect-a-workbook"></a>保護活頁簿
 
-1. 呼叫<xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A>活頁簿的方法，並包含密碼。 此程式碼範例會使用目前的活頁簿。 若要使用這個範例，請從專案中的 `ThisAddIn` 類別執行程式碼。
+1. 呼叫活頁 <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> 簿的方法，並包含密碼。 這個程式碼範例會使用現用活頁簿。 若要使用這個範例，請從專案中的 `ThisAddIn` 類別執行程式碼。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#6)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#6)]
 
-### <a name="to-unprotect-a-workbook"></a>若要取消保護活頁簿
+### <a name="to-unprotect-a-workbook"></a>取消保護活頁簿
 
-1. 呼叫<xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A>通過的密碼，如有必要，然後將活頁簿的方法。 若要使用這個範例，請從專案中的 `ThisAddIn` 類別執行程式碼。
+1. 呼叫 <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> 使用中活頁簿的方法，並視需要傳遞密碼。 若要使用這個範例，請從專案中的 `ThisAddIn` 類別執行程式碼。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]

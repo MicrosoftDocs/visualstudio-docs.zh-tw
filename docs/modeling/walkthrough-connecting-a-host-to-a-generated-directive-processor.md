@@ -1,7 +1,7 @@
 ---
 title: 將主機連接至產生的指示詞處理器
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a27b856b9c5129f725381afa34bd134009002216
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c782b84f39419272c271f41d217442cc9e001b3f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593976"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535859"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連線至產生的指示詞處理器
 
@@ -37,7 +37,7 @@ ms.locfileid: "75593976"
 
 - 使用產生的指示詞處理器來測試自訂主機。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>必要條件
 
 若要定義 DSL，您必須已安裝下列元件：
 
@@ -67,12 +67,12 @@ ms.locfileid: "75593976"
 
    如需有關建立特定領域語言方案的詳細資訊，請參閱[如何：建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
-2. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
+2. 在 [建置]**** 功能表上，按一下 [建置方案]****。
 
    > [!IMPORTANT]
    > 此步驟會產生指示詞處理器，並在登錄中新增其金鑰。
 
-3. 按一下 [偵錯] 功能表上的 [開始偵錯]。
+3. 在 [**調試**] 功能表上，按一下 [**開始調試**]。
 
     Visual Studio 的第二個實例隨即開啟。
 
@@ -90,7 +90,7 @@ ms.locfileid: "75593976"
 
 1. 開啟 CustomHost 方案。
 
-2. 在 [專案] 功能表上，按一下 [新增參考]。
+2. 在 [專案]**** 功能表上，按一下 [加入參考]****。
 
      [**加入參考**] 對話方塊隨即開啟，並顯示 [ **.net** ] 索引標籤。
 
@@ -118,7 +118,7 @@ ms.locfileid: "75593976"
     Imports Microsoft.Win32
     ```
 
-5. 找出屬性 `StandardAssemblyReferences`的程式碼，並取代為下列程式碼：
+5. 找出屬性的程式碼 `StandardAssemblyReferences` ，並取代為下列程式碼：
 
     > [!NOTE]
     > 在此步驟中，您會加入主機將支援之產生的指示詞處理器所需的元件參考。
@@ -154,7 +154,7 @@ ms.locfileid: "75593976"
     }
     ```
 
-6. 找出函數 `ResolveDirectiveProcessor`的程式碼，並以下列程式碼取代：
+6. 找出函式的程式碼 `ResolveDirectiveProcessor` ，並取代為下列程式碼：
 
     > [!IMPORTANT]
     > 此程式碼包含您要連接之產生的指示詞處理器名稱的硬式編碼參考。 您可以輕鬆地簡化此程式，在此情況下，它會尋找登錄中列出的所有指示詞處理器，並嘗試尋找相符的。 在此情況下，主機會使用任何產生的指示詞處理器。
@@ -228,9 +228,9 @@ ms.locfileid: "75593976"
             }
     ```
 
-7. 在 [檔案] 功能表上按一下 [全部儲存]。
+7. 按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。
 
-8. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
+8. 在 [建置]**** 功能表上，按一下 [建置方案]****。
 
 ## <a name="test-the-custom-host-with-the-directive-processor"></a>使用指示詞處理器測試自訂主機
 
@@ -238,7 +238,7 @@ ms.locfileid: "75593976"
 
 ### <a name="create-a-text-template-to-test-the-custom-host"></a>建立文字模板以測試自訂主機
 
-1. 建立文字檔，並將它命名為 `TestTemplateWithDP.tt`。 您可以使用任何文字編輯器（例如 [記事本]）來建立檔案。
+1. 建立文字檔，並將它命名為 `TestTemplateWithDP.tt` 。 您可以使用任何文字編輯器（例如 [記事本]）來建立檔案。
 
 2. 將下列程式碼加入至此文字檔中：
 
@@ -312,13 +312,13 @@ ms.locfileid: "75593976"
     #>
     ```
 
-3. 在程式碼中，使用您在第一個程式中建立之設計特定語言的 Sample 檔案路徑，取代 \<您的路徑 >。
+3. 在程式碼中，將取代 \<YOUR PATH> 為您在第一個程式中建立之設計特定語言的 Sample 檔案路徑。
 
 4. 儲存並關閉檔案。
 
 ### <a name="test-the-custom-host"></a>測試自訂主機
 
-1. 開啟 [命令提示字元] 視窗。
+1. 開啟命令提示字元視窗。
 
 2. 輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。
 
@@ -327,7 +327,7 @@ ms.locfileid: "75593976"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > 除了輸入位址，您可以在**Windows Explorer**中流覽至 CustomHost 檔案，然後將檔案拖曳到 [命令提示字元] 視窗中。
+    > 除了輸入位址，您可以在**Windows Explorer**中流覽至檔案 CustomHost.exe，然後將檔案拖曳到 [命令提示字元] 視窗中。
 
 3. 輸入空格。
 
@@ -338,13 +338,13 @@ ms.locfileid: "75593976"
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > 您可以在**Windows Explorer**中流覽至 TestTemplateWithDP 檔案，然後將檔案拖曳到 [命令提示字元] 視窗中，而不需要輸入位址。
+    > 除了輸入位址，您可以在**Windows Explorer**中流覽至檔案 TestTemplateWithDP.txt，然後將檔案拖曳到 [命令提示字元] 視窗中。
 
      自訂主應用程式會執行並啟動文字模板轉換進程。
 
-5. 在**Windows Explorer**中，流覽至包含 TestTemplateWithDP 檔案的資料夾。
+5. 在**Windows Explorer**中，流覽至包含檔案的資料夾 TestTemplateWithDP.txt。
 
-     資料夾也包含 TestTemplateWithDP1 檔案。
+     資料夾也包含 TestTemplateWithDP1.txt 的檔案。
 
 6. 開啟這個檔案來查看文字範本轉換的結果。
 
@@ -360,6 +360,6 @@ ms.locfileid: "75593976"
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)

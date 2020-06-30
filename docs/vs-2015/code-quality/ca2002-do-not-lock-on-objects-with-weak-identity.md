@@ -15,21 +15,21 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 557f91d8b00274642accbbfc05b4a60789615bfc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79f97de740ace9ccb59b13b3e4e30b34f38eb2f4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667754"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534663"
 ---
-# <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002：請勿鎖定具有弱式識別的物件
+# <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002:不要鎖定具有弱式識別的物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DoNotLockOnObjectsWithWeakIdentity|
 |CheckId|CA2002|
-|Category|Microsoft 可靠性|
+|類別|Microsoft 可靠性|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -61,7 +61,7 @@ ms.locfileid: "72667754"
  請勿隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關規則
- [CA2213：可處置的欄位應該受到處置](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+ [CA2213:可處置的欄位應該受到處置](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
 ## <a name="example"></a>範例
  下列範例顯示一些違反規則的物件鎖定。
@@ -69,6 +69,6 @@ ms.locfileid: "72667754"
  [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Reliability.LockWeakObjects/cs/FxCop.Reliability.LockWeakObjects.cs#1)]
  [!code-vb[FxCop.Reliability.LockWeakObjects#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Reliability.LockWeakObjects/vb/FxCop.Reliability.LockWeakObjects.vb#1)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  <xref:System.Threading.Monitor> <xref:System.AppDomain>
  [Lock 語句](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) [SyncLock 語句](https://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)

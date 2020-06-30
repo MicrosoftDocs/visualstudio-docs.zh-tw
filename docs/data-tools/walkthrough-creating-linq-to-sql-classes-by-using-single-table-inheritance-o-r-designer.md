@@ -11,15 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9e6974f1b676b623c58eea451270bde98ddcff7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585973"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535261"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>逐步解說：使用單一資料表繼承建立 LINQ to SQL 類別（O/R 設計工具）
-[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)支援單一資料表繼承，因為它通常是在關聯式系統中執行。 本逐步解說會在[如何：使用 O/R 設計工具設定繼承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)主題中提供的一般步驟進行擴充，並提供一些實際資料來示範如何在 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]中使用繼承。
+[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)支援單一資料表繼承，因為它通常是在關聯式系統中執行。 本逐步解說會在[如何：使用 O/R 設計工具設定繼承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)主題中提供的一般步驟進行擴充，並提供一些實際資料來示範中的繼承使用方式 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] 。
 
 在此逐步解說中，您會執行下列工作：
 
@@ -38,7 +38,7 @@ ms.locfileid: "75585973"
 - 將資料顯示在 Windows Form 上。
 
 ## <a name="create-a-table-to-inherit-from"></a>建立要繼承的來源資料表
-若要查看繼承的運作方式，您可以建立一個小型 `Person` 資料表、使用它做為基類，然後建立繼承自它的 `Employee` 物件。
+若要查看繼承的運作方式，您可以建立一個小型 `Person` 資料表、使用它做為基類，然後建立 `Employee` 繼承自它的物件。
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>若要建立用來示範繼承的基底資料表
 
@@ -51,11 +51,11 @@ ms.locfileid: "75585973"
 
     |資料行名稱|資料類型|允許 Null|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**False**|
-    |**Type**|**int**|**True**|
-    |**FirstName**|**nvarchar(200)**|**False**|
-    |**LastName**|**nvarchar(200)**|**False**|
-    |**Manager**|**int**|**True**|
+    |**識別碼**|**int**|**False**|
+    |**型別**|**int**|**True**|
+    |**名字**|**nvarchar(200)**|**False**|
+    |**姓氏**|**nvarchar(200)**|**False**|
+    |**管理員**|**int**|**True**|
 
 3. 將 ID 資料行設定為主索引鍵。
 
@@ -66,13 +66,12 @@ ms.locfileid: "75585973"
 
 ### <a name="to-add-data-to-the-table"></a>若要加入資料至資料表
 
-1. 在資料檢視中開啟資料表 （以滑鼠右鍵按一下**伺服器總管**或**資料庫總管**中的**Person**資料表，然後按一下 [**顯示資料表資料**]）。
+1. 在資料檢視中開啟資料表  （以滑鼠右鍵按一下**伺服器總管**或**資料庫總管**中的**Person**資料表，然後按一下 [**顯示資料表資料**]）。
 
-2. 將下列資料複製至資料表 （您可以將它複製並貼到資料表中，方法是選取 [**結果**] 窗格中的整個資料列）。
+2. 將下列資料複製至資料表  （您可以將它複製並貼到資料表中，方法是選取 [**結果**] 窗格中的整個資料列）。
 
-    ||||||
+    |**識別碼**|**型別**|**名字**|**姓氏**|**管理員**|
     |-|-|-|-|-|
-    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -91,13 +90,13 @@ ms.locfileid: "75585973"
 
 ### <a name="to-create-the-new-windows-forms-application"></a>若要建立新的 Windows Forms 應用程式
 
-1. 在 Visual Studio 中，於 [檔案] 功能表上選取 [新增] > [專案]。
+1. 在 Visual Studio 中，於 [檔案]  功能表上選取 [新增]   > [專案]  。
 
-2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
+2. 展開左窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
 3. 在中間窗格中，選取 [ **Windows Forms 應用程式**] 專案類型。
 
-4. 將專案命名為**InheritanceWalkthrough**，然後選擇 **[確定]** 。
+4. 將專案命名為**InheritanceWalkthrough**，然後選擇 **[確定]**。
 
      **InheritanceWalkthrough** 專案已建立並新增至**方案總管**中。
 
@@ -105,9 +104,9 @@ ms.locfileid: "75585973"
 
 ### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>若要將 LINQ to SQL 檔案新增至專案
 
-1. 在 [專案] 功能表中，按一下 [加入新項目]。
+1. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
 
-2. 按一下 [LINQ to SQL 類別] 範本，然後按一下 [新增]。
+2. 按一下 [LINQ to SQL 類別]**** 範本，然後按一下 [新增]****。
 
      *.Dbml*檔案隨即加入至專案，並開啟**O/R 設計**工具。
 
@@ -126,15 +125,15 @@ ms.locfileid: "75585973"
 
 5. 從 **Employee** 物件中刪除 **Type**、**ID**、**FirstName** 和 **LastName** 屬性。 (亦即刪除 **Manager** 以外的所有屬性。)
 
-6. 從**工具箱**的 [物件關連式設計工具] 索引標籤中，在 **Person** 與 **Employee** 物件之間建立**繼承**。 若要這麼做，請按一下 [工具箱] 中的 [繼承] 項目，然後放開滑鼠按鍵。 接下來，按一下 [ **Employee** ] 物件，然後按一下 [ **O/R 設計**工具] 中的 [ **Person** ] 物件。 然後，繼承線上的箭號會指向**Person**物件。
+6. 從**工具箱**的 [物件關連式設計工具]**** 索引標籤中，在 **Person** 與 **Employee** 物件之間建立**繼承**。 若要這麼做，請按一下 [工具箱]**** 中的 [繼承]**** 項目，然後放開滑鼠按鍵。 接下來，按一下 [ **Employee** ] 物件，然後按一下 [ **O/R 設計**工具] 中的 [ **Person** ] 物件。 然後，繼承線上的箭號會指向**Person**物件。
 
-7. 按一下設計介面上的 [繼承] 線。
+7. 按一下設計介面上的 [繼承]**** 線。
 
-8. 將 [鑑別子屬性] 屬性設定為 **Type**。
+8. 將 [鑑別子屬性]**** 屬性設定為 **Type**。
 
-9. 將 [衍生類別鑑別子值] 屬性設定為 **2**。
+9. 將 [衍生類別鑑別子值]**** 屬性設定為 **2**。
 
-10. 將 [基底類別鑑別子值] 屬性設定為 **1**。
+10. 將 [基底類別鑑別子值]**** 屬性設定為 **1**。
 
 11. 將**繼承預設值**屬性設定為 **Person**。
 
@@ -175,20 +174,20 @@ ms.locfileid: "75585973"
     ```
 
 ## <a name="test-the-application"></a>測試應用程式
-執行應用程式，並確認清單方塊中顯示的記錄都是員工 (**Type** 資料行值為 2 的記錄)。
+執行應用程式，並確認清單方塊中顯示的記錄都是所有員工（其**類型**資料行中的值為2的記錄）。
 
 ### <a name="to-test-the-application"></a>若要測試應用程式
 
-1. 請按 **F5**。
+1. 按 **F5**。
 
 2. 確認只顯示 **Type** 資料行值為 2 的記錄。
 
-3. 關閉表單 (按一下 [偵錯] 功能表上的 [停止偵錯]。)
+3. 關閉表單  （在 [**調試**] 功能表上，按一下 [**停止調試**]）。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [逐步解說：建立 LINQ to SQL 類別 (O-R 設計工具)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [如何：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [如何：在 Visual Basic 或 C# 中產生物件模型](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [如何：在 Visual Basic 或 C 中產生物件模型#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

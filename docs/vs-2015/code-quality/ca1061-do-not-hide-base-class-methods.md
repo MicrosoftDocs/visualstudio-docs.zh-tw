@@ -15,21 +15,21 @@ caps.latest.revision: 11
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 24579e6aa3ba1bf70ed6f195091152b60f3232a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c884eb569d5682326d2dc667363f991467171386
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604006"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533350"
 ---
-# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061：不要隱藏基底類別方法
+# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061:不要隱藏基底類別方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DoNotHideBaseClassMethods|
 |CheckId|CA1061|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式在工作表中的群組資料列
+title: 如何：以程式設計方式在工作表中分組資料列
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,46 +20,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 269ecdb67fe58a5ad2aff6af63ba6ea45647811a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 759ba8c6e0796b25a87e8bf0b08795aed5bade05
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412623"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537874"
 ---
-# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>HOW TO：以程式設計方式在工作表中的群組資料列
-  您可以群組一個或多個完整的資料列。 若要建立群組時的工作表中，使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>如何：以程式設計方式在工作表中分組資料列
+  您可以將一或多個完整的資料列群組在一起。 若要在工作表中建立群組，請使用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="use-a-namedrange-control"></a>使用 NamedRange 控制項
- 如果您新增<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項加入文件層級專案，在設計階段，您可以使用控制項，以程式設計方式建立的群組。 下列範例假設有三個<xref:Microsoft.Office.Tools.Excel.NamedRange>相同的工作表上的控制項： `data2001`， `data2002`，和`dataAll`。 每個具名的範圍指的是工作表中的整個資料列。
+ 如果您 <xref:Microsoft.Office.Tools.Excel.NamedRange> 在設計階段將控制項加入檔層級專案，您可以使用控制項以程式設計方式建立群組。 下列範例假設 <xref:Microsoft.Office.Tools.Excel.NamedRange> 相同的工作表上有三個控制項： `data2001` 、 `data2002` 和 `dataAll` 。 每個命名範圍都會參考工作表中的整個資料列。
 
-### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>若要建立的工作表上的 NamedRange 控制項群組
+### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>若要在工作表上建立 NamedRange 控制項群組
 
-1. 藉由呼叫群組三個具名的範圍<xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A>的每個範圍的方法。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。
+1. 藉由呼叫每個範圍的方法，將三個已命名的範圍組成群組 <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> 。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
 
     > [!NOTE]
-    > 若要取消群組的資料列，請呼叫<xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A>方法。
+    > 若要取消群組資料列，請呼叫 <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> 方法。
 
 ## <a name="use-native-excel-ranges"></a>使用原生 Excel 範圍
- 此程式碼假設您有三個名為的 Excel 範圍`data2001`， `data2002`，和`dataAll`工作表上。
+ 此程式碼假設您在 `data2001` `data2002` 工作表上有三個名為、和的 Excel 範圍 `dataAll` 。
 
-### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>若要在工作表中建立的 Excel 範圍群組
+### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>在工作表中建立 Excel 範圍的群組
 
-1. 藉由呼叫群組三個具名的範圍<xref:Microsoft.Office.Interop.Excel.Range.Group%2A>的每個範圍的方法。 下列範例假設有三個<xref:Microsoft.Office.Interop.Excel.Range>控制項命名為`data2001`， `data2002`，和`dataAll`相同的工作表上。 每個具名的範圍指的是工作表中的整個資料列。
+1. 藉由呼叫每個範圍的方法，將三個已命名的範圍組成群組 <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> 。 下列範例假設 <xref:Microsoft.Office.Interop.Excel.Range> `data2001` 相同的 `data2002` 工作表上有三個名為、和的控制項 `dataAll` 。 每個命名範圍都會參考工作表中的整個資料列。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]
 
     > [!NOTE]
-    > 若要取消群組的資料列，請呼叫<xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A>方法。
+    > 若要取消群組資料列，請呼叫 <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> 方法。
 
 ## <a name="see-also"></a>另請參閱
 - [使用工作表](../vsto/working-with-worksheets.md)
 - [NamedRange 控制項](../vsto/namedrange-control.md)
-- [如何：將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [如何：將 NamedRange 控制項加入至工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)
