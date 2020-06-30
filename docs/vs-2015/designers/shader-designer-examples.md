@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 845c54f382a487578df4d8afbe78f4acde9f358a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e182d921e8ffb019d2044699e3a9c333492497b0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664163"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531557"
 ---
 # <a name="shader-designer-examples"></a>著色器設計工具範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "72664163"
 
 ## <a name="related-topics"></a>相關主題
 
-|||
+|Title|描述|
 |-|-|
 |[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)|示範套用常數色彩至物件的著色器。|
 |[如何：建立基本 Lambert 著色器](../designers/how-to-create-a-basic-lambert-shader.md)|示範套用傳統 Lambert 光源模型至物件的著色器。|

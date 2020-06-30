@@ -1,21 +1,21 @@
 ---
 title: 將命令和軌跡新增至相依性圖表
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d54936c61606b67c298992cd003723327042eb0a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747660"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531387"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>將命令和軌跡新增至相依性圖表
 
@@ -38,7 +38,7 @@ ms.locfileid: "72747660"
 
    此範本隨即建立包含小型工作範例的專案。
 
-2. 若要測試擴充功能，請按**Ctrl** +**f5**或**f5**。
+2. 若要測試擴充功能，請按**Ctrl** + **F5**或**F5**。
 
     Visual Studio 啟動的實驗實例。 在此實例中，建立相依性圖表。 您的命令或軌跡擴充功能應該會在此圖表中運作。
 
@@ -75,19 +75,19 @@ ms.locfileid: "72747660"
 
 3. 在**方案總管**中，以滑鼠右鍵按一下 VSIX 專案，然後選擇 [**設定為啟始專案**]。
 
-4. 在 **source.extension.vsixmanifest**的 [資產]底下，加入命令或軌跡處理常式專案做為 MEF 元件。
+4. 在 **source.extension.vsixmanifest**的 [資產] **** 底下，加入命令或軌跡處理常式專案做為 MEF 元件。
 
-    1. 在 [資產]索引標籤中，選擇 [新增]。
+    1. 在 [資產] **** 索引標籤中，選擇 [新增] ****。
 
-    2. 在 [類型]選取 [Microsoft.VisualStudio.MefComponent]。
+    2. 在 [類型] **** 選取 [Microsoft.VisualStudio.MefComponent] ****。
 
-    3. 在 [來源]選取 [目前方案中的專案] ，然後選取命令或軌跡處理常式專案的名稱。
+    3. 在 [來源] **** 選取 [目前方案中的專案] **** ，然後選取命令或軌跡處理常式專案的名稱。
 
     4. 儲存檔案。
 
 5. 返回命令或軌跡處理常式專案，並加入下列專案參考：
 
-   |**參考資料**|**這可讓您執行**|
+   |**參考**|**這可讓您執行**|
    |-|-|
    |Program Files\Microsoft Visual Studio [版本]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|建立和編輯圖層|
    |Microsoft.VisualStudio.Uml.Interfaces|建立和編輯圖層|
@@ -102,13 +102,13 @@ ms.locfileid: "72747660"
 
      [定義軌跡處理常式](#gesture)
 
-7. 若要測試此功能，請按**Ctrl** +**f5**或**f5**。
+7. 若要測試此功能，請按**Ctrl** + **F5**或**F5**。
 
    Visual Studio 的實驗執行個體隨即開啟。 在此實例中，建立或開啟相依性圖表。
 
 8. 若要在 Visual Studio 的主要實例或另一部電腦上安裝 VSIX，請在 VSIX 專案的**bin**目錄中尋找 **.vsix**檔案。 將它複製到您想要安裝 VSIX 的電腦。 按兩下 [檔案瀏覽器] 中的 VSIX 檔案。
 
-## <a name="command"></a> 定義功能表命令
+## <a name="defining-a-menu-command"></a><a name="command"></a> 定義功能表命令
 
 您可以將其他功能表命令定義加入現有的軌跡或命令專案。 每個命令都由具有下列特性的類別加以定義：
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="gesture"></a> 定義軌跡處理常式
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> 定義軌跡處理常式
 
 當使用者將專案拖曳到相依性圖表上，以及當使用者按兩下圖表中的任何位置時，軌跡處理常式就會回應。
 
@@ -246,7 +246,7 @@ namespace MyLayerExtensions // change to your preference
 
      **OnDragDrop** - 當使用者將項目置放到此圖表上時受呼叫。
 
-- 每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如:
+- 每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如：
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -261,6 +261,6 @@ namespace MyLayerExtensions // change to your preference
 
 - 針對某些拖曳項目類型的處理常式早已受到定義。 例如，使用者可以將專案從方案總管拖曳至相依性圖表。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [將自訂架構驗證加入至相依性圖表](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
+- [將自訂架構驗證新增至相依性圖表](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

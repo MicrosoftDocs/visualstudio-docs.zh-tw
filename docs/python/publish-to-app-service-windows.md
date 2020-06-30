@@ -2,7 +2,7 @@
 title: 在 Windows 上將 Python 應用程式發佈到 Azure App Service
 description: 如何從 Visual Studio 將 Python Web 應用程式直接發佈到 Windows 上的 Azure App Service，包括 web.config 檔案的必要內容。
 ms.date: 01/07/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 0564e9d36fafb32dfdefa1e5a581d298da744a0a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 649d40a3b95f9e3d4df51cc4ab22a3fb79ac1498
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289166"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531842"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>發佈至 Windows 上的 Azure App Service
 
@@ -30,7 +30,7 @@ Visual Studio 2017 和更新版本以及 Visual Studio 2015 的發佈程序有�
 > [!Note]
 > 若要了解 Visual Studio 2015 以及 Visual Studio 2017 和更新版本之間的變更背景，請參閱 [Publish to Azure in Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/) (使用 Visual Studio 2017 發佈到 Azure) 部落格文章。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 針對此逐步解說，您必須具備 Bottle、Flask 或 Django 架構的 Web 應用程式專案。 如果您還沒有專案，但想要嘗試發佈程序，則可以建立簡單的測試專案，如下所示：
 

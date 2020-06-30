@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f98e27408f889f95df706fdfcf304b34a0e7faef
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 9a5b15b481115a1ba8cab59d7839153bd0a611a1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332262"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532154"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504：所分析之處理序的最大工作集 (以位元組為單位)
 
-|||
+|Item|值|
 |-|-|
 |規則 ID|DA0504|
 |類別|資源管理|

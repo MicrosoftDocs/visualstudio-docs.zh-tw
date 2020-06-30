@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：使用文字範本產生程式碼
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -10,12 +10,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff583874778a2f1affd589ef260c6b9eac6b5d06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593505"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532056"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 
@@ -28,7 +28,7 @@ System.Xml 命名空間提供各種工具來載入 XML 文件，然後在記憶�
 在此範例專案中，範本會讀取範例 XML 檔案，並產生對應到每個節點類型的類別。 在手動撰寫的程式碼中，您可以使用這些類別來巡覽 XML 檔案。 您也可以在使用相同節點類型的任何其他檔案上執行應用程式。 範例 XML 檔案的目的是要提供您想要應用程式處理之所有節點類型的範例。
 
 > [!NOTE]
-> 隨附于 Visual Studio 的應用程式[xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)可以從 XML 檔案產生強型別類別。 這裡示範的範本僅當成範例使用。
+> 應用程式[xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)（隨附于 Visual Studio）可以從 XML 檔案產生強型別類別。 這裡示範的範本僅當成範例使用。
 
 以下是範例檔案：
 
@@ -83,9 +83,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 您可以將這項技術套用至任何程式碼專案。 此逐步解說使用 C# 專案，並且基於測試，我們會使用主控台應用程式。
 
-1. 在 [檔案] 功能表上，依序按一下 [新增] 和 [專案]。
+1. 在 [檔案] 功能表**上，按一下**[**新增**]，然後按一下 [**專案**]。
 
-2. 按一下 [] 節點，然後按一下 [範本] 窗格中的 [主控台應用程式]
+2. 按一下 [] **** 節點，然後按一下 [範本] **** 窗格中的 [主控台應用程式] ****
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>將原型 XML 檔案新增至專案
 
@@ -93,9 +93,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 此檔案應該是專案的一部分，讓範本可以讀取它，但它不會內建到編譯的應用程式中。
 
-1. 在方案總管中，以滑鼠右鍵按一下專案，並按一下 [加入] ，然後按一下 [新增項目]。
+1. 在**方案總管**中，以滑鼠右鍵按一下專案，按一下 [**加入**]，然後按一下 [**新增專案**]。
 
-2. 在 [加入新項目] 對話方塊中，從 [範本] 窗格中選取 [XML 檔案] 。
+2. 在 [加入新項目] **** 對話方塊中，從 [範本] **** 窗格中選取 [XML 檔案] **** 。
 
 3. 將範例內容新增至檔案。
 
@@ -131,9 +131,9 @@ namespace MyProject
 
 新增文字模板檔案，並將輸出副檔名設定為 *.cs*。
 
-1. 在方案總管中，以滑鼠右鍵按一下專案，並按一下 [加入]，然後按一下 [新項目]。
+1. 在方案總管 **** 中，以滑鼠右鍵按一下專案，並按一下 [加入] ****，然後按一下 [新項目] ****。
 
-2. 在 [加入新項目] 對話方塊中，從 [範本] 窗格中選取 [文字範本] 。
+2. 在 [加入新項目] **** 對話方塊中，從 [範本] **** 窗格中選取 [文字範本] **** 。
 
     > [!NOTE]
     > 請確定您新增的是「文字範本」，而非「前置處理過的文字範本」。
@@ -270,7 +270,7 @@ public partial class Song {}
 
 ### <a name="access-the-visual-studio-api"></a>存取 Visual Studio API
 
-設定 `<#@template#>` 指示詞的 `hostspecific` 屬性，可讓範本取得 Visual Studio API 的存取權。 範本可以使用此項目來取得專案檔的位置，以避免在範本程式碼中使用絕對檔案路徑。
+設定指示詞的 `hostspecific` 屬性 `<#@template#>` ，可讓範本取得 Visual Studio API 的存取權。 範本可以使用此項目來取得專案檔的位置，以避免在範本程式碼中使用絕對檔案路徑。
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -412,7 +412,7 @@ XML 結構描述變更時，可以輕鬆地產生新的類別。 編譯器會告
 
 本逐步解說示範數個技術以及程式碼產生的優點︰
 
-- *「程式碼產生」* (code generation) 是從 *「模型」* (model) 建立應用程式之原始程式碼的各個部分。 此模型以適合應用程式網域的表單來包含資訊，而且可能會隨著應用程式的存留期變更。
+- *「程式碼產生」* (code generation) 是從 *「模型」*(model) 建立應用程式之原始程式碼的各個部分。 此模型以適合應用程式網域的表單來包含資訊，而且可能會隨著應用程式的存留期變更。
 
 - 強類型是程式碼產生的一個優點。 雖然此模型以更適合使用者的表單來呈現資訊，但是產生的程式碼可讓應用程式的其他部分使用一組類型資訊來處理資訊。
 
@@ -426,9 +426,9 @@ XML 結構描述變更時，可以輕鬆地產生新的類別。 編譯器會告
 
 ## <a name="troubleshoot-the-text-template"></a>針對文字模板進行疑難排解
 
-如果您在 [錯誤清單] 中看到範本轉換或編譯錯誤，或未正確地產生輸出檔案，則可以使用[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技術對文字範本進行疑難排解。
+如果您在 [錯誤清單]**** 中看到範本轉換或編譯錯誤，或未正確地產生輸出檔案，則可以使用[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技術對文字範本進行疑難排解。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)

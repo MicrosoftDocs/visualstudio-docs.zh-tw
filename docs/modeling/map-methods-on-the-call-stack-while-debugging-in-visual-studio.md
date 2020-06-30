@@ -1,7 +1,7 @@
 ---
 title: 進行偵錯時對應呼叫堆疊上的方法
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.progression.debugwithcodemaps
 dev_langs:
@@ -28,12 +28,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a918cc94cd242c74b672ff65c3d5093f111a25f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593300"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532700"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 
@@ -41,21 +41,21 @@ ms.locfileid: "75593300"
 
  ![使用 Code Map 上的堆疊呼叫來偵錯](../debugger/media/debuggermap_overview.png)
 
- 您需要下列項目：
+ 您需要：
 
  ::: moniker range="vs-2017"
 
-- [Visual Studio 企業版](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-- [Visual Studio 企業版](https://visualstudio.microsoft.com/downloads)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
-- 可以進行 debug 的程式碼，例如視覺C#效果、Visual Basic C++、、JavaScript 或 X + +
+- 可以進行 debug 的程式碼，例如 Visual c #、Visual Basic、c + +、JavaScript 或 X + +
 
   請參閱：
 
@@ -71,15 +71,15 @@ ms.locfileid: "75593300"
 
 - [使用對應尋找 bug](#FindBugs)
 
-- [問與答](#QA)
+- [問 & A](#QA)
 
   如需您在處理 code map 時可使用的命令和動作的詳細資訊，請參閱[流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)。
 
-## <a name="MapStack"></a> 對應呼叫堆疊
+## <a name="map-the-call-stack"></a><a name="MapStack"></a> 對應呼叫堆疊
 
 1. 開始偵錯。 （鍵盤： **F5**）
 
-2. 當您的應用程式進入中斷模式，或您逐步執行函式之後，請選擇 [ **Code Map**]。 （鍵盤： **Ctrl** + **Shift** +  **`** ）
+2. 當您的應用程式進入中斷模式，或您逐步執行函式之後，請選擇 [ **Code Map**]。 （鍵盤： **Ctrl**  + **Shift**  +  **`** ）
 
      ![選擇 [Code Map] 開始對應堆疊呼叫](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -89,21 +89,21 @@ ms.locfileid: "75593300"
 
      當您繼續偵錯時，對應會自動更新。 請參閱[使用下一個呼叫堆疊更新對應](#UpdateMap)。
 
-## <a name="MakeNotes"></a> 製作程式碼的筆記
+## <a name="make-notes-about-the-code"></a><a name="MakeNotes"></a> 製作程式碼的筆記
 
  新增批註以追蹤程式碼中發生的狀況。 若要在批註中加入新的一行，請按**Shift + Return**。
 
  ![為 Code Map 上的堆疊呼叫加入註解](../debugger/media/debuggermap_addcomment.png)
 
-## <a name="UpdateMap"></a> 以下一個呼叫堆疊更新地圖
+## <a name="update-the-map-with-the-next-call-stack"></a><a name="UpdateMap"></a> 以下一個呼叫堆疊更新地圖
 
  執行應用程式到下一個中斷點或逐步執行函式。 對應圖中就會加入新的呼叫堆疊。
 
  ![使用下一個堆疊呼叫來更新 Code Map](../debugger/media/debuggermap_addclearcallstack.png)
 
-## <a name="AddRelatedCode"></a> 將相關程式碼新增至地圖
+## <a name="add-related-code-to-the-map"></a><a name="AddRelatedCode"></a> 將相關程式碼新增至地圖
 
- 現在您已有對應-接下來呢？ 如果您要使用C#或 Visual Basic，請加入專案（例如欄位、屬性和其他方法），以追蹤程式碼中發生的狀況。
+ 現在您已有對應-接下來呢？ 如果您要使用 c # 或 Visual Basic，請加入專案（例如欄位、屬性和其他方法），以追蹤程式碼中的情況。
 
  按兩下某個方法以查看它的程式碼定義，或使用方法的捷徑功能表 （鍵盤：選取地圖上的方法，然後按**F12**）
 
@@ -126,7 +126,7 @@ ms.locfileid: "75593300"
 
  ![堆疊呼叫 Code Map 上使用欄位的方法](../debugger/media/debuggermap_foundallreferences.png)
 
-## <a name="FindBugs"></a> 使用地圖尋找 Bug
+## <a name="find-bugs-using-the-map"></a><a name="FindBugs"></a> 使用地圖尋找 Bug
 
  視覺化程式碼可協助您更快速找到 Bug。 例如，假設您正在調查繪圖程式中的 bug。 當您繪製一條線並嘗試復原時，卻沒有發生任何動作，直到您繪製另一條線為止。
 
@@ -140,7 +140,7 @@ ms.locfileid: "75593300"
 
  ![為 Code Map 上的堆疊呼叫新增方法呼叫](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
-## <a name="QA"></a> 問與答
+## <a name="q--a"></a><a name="QA"></a>問 & A
 
 - **並非所有的呼叫都會出現在對應上。因此?**
 
@@ -152,7 +152,7 @@ ms.locfileid: "75593300"
 
    ![使用 [選項] 對話方塊來顯示外部程式碼](../debugger/media/debuggermap_debugoptions.png)
 
-- **變更對應是否會影響程式碼？**
+- **變更對應圖是否會影響程式碼？**
 
    變更對應並不會以任何方式影響程式碼。 請放心地重新命名、移動或移除對應圖上的任何項目。
 
@@ -170,19 +170,19 @@ ms.locfileid: "75593300"
 
   - 若要在加入專案時盡可能少重新排列地圖，請關閉 [**增量**配置]。
 
-- **我可以與其他人共用對應嗎？**
+- **我是否可以和其他人共用對應圖？**
 
    如果您有 Microsoft Outlook，您可以匯出對應、將其傳送給其他人，或將它儲存至您的方案，以便將它簽入原始檔控制。
 
    ![與其他人共用堆疊呼叫 Code Map](../debugger/media/debuggermap_sharewithothers.png)
 
-- **如何? 停止對應自動加入新的呼叫堆疊嗎？**
+- **如何讓對應圖停止自動加入新的呼叫堆疊？**
 
-   選擇 [![&#45; ] 按鈕會在 [對應] 工具列上，Code Map 自動](../debugger/media/debuggermap_automaticupdateicon.gif) 顯示呼叫堆疊。 若要以手動方式將目前的呼叫堆疊加入至地圖，請按**Ctrl** + **Shift** +  **`** 。
+   選擇 ![ [按鈕] &#45; 在 [對應] 工具列上自動顯示 Code Map 上的 [呼叫堆疊] ](../debugger/media/debuggermap_automaticupdateicon.gif) 。 若要以手動方式將目前的呼叫堆疊加入至地圖，請按**Ctrl**  +  **Shift**  +  **`** 。
 
    當您正在進行調試時，地圖會繼續反白顯示對應上的現有呼叫堆疊。
 
-- **專案圖示和箭號代表什麼意思？**
+- **項目圖示和箭號是什麼意思？**
 
    若要取得專案的詳細資訊，請將滑鼠指標移至其上方，並查看專案的工具提示。 您也可以查看**圖例**，以瞭解每個圖示所代表的意義。
 
@@ -200,7 +200,7 @@ ms.locfileid: "75593300"
 
 - [使用對應尋找 bug](#FindBugs)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)
