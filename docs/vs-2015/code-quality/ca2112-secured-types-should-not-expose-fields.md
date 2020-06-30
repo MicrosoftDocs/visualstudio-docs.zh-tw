@@ -15,21 +15,21 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b9c91a7c9833d3d9d5ae283c28ae4d437bd07734
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4267b4f55f78106a4d1e8f3b2f9b296be9ddf618
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658754"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546532"
 ---
-# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112：受保護類型不應公開欄位
+# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112:受保護類型不應該公開欄位
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|SecuredTypesShouldNotExposeFields|
 |CheckId|CA2112|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -45,7 +45,7 @@ ms.locfileid: "72658754"
  基於安全性問題和良好的設計，您應該將公用欄位設為非公用，以修正違規。 如果欄位未保存應保持安全的資訊，而且您不依賴欄位的內容，您可以隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例是由程式庫類型（`SecuredTypeWithFields`）所組成，其中包含不安全的欄位、可建立程式庫類型實例的類型（`Distributor`），以及將實例傳遞給類型時沒有建立它們的許可權，以及可讀取的應用程式程式碼實例的欄位，即使它沒有保護該類型的許可權也一樣。
+ 下列範例是由程式庫類型（ `SecuredTypeWithFields` ）與不安全的欄位所組成， `Distributor` 可以建立程式庫類型之實例的類型（）和將實例傳遞給類型沒有建立它們的許可權，以及可以讀取實例欄位的應用程式程式碼，即使它沒有保護該類型的許可權也一樣。
 
  下列程式庫程式碼違反規則。
 
@@ -64,11 +64,11 @@ ms.locfileid: "72658754"
  此範例會產生下列輸出。
 
  **建立 SecuredTypeWithFields 的實例。** 
-**安全的類型欄位：22、33** 
-**變更受保護類型的欄位 ...** 
- 快取**的物件欄位：99、33**
+**受保護的類型欄位：22、33** 
+正在**變更受保護類型的欄位 ...** 
+快取**的物件欄位：99、33**
 ## <a name="related-rules"></a>相關規則
- [CA1051：不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+ [CA1051:不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [連結要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)[資料與模型](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)化

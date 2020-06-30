@@ -15,25 +15,25 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b190e007cfdb016e54148cf0295c68baf68c5033
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a240a6eea86075bbf7f721f8620b6d135d594c20
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661955"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546662"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024：建議在適當時使用屬性
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024:建議在適當時使用屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的方法具有以 `Get` 開頭的名稱，不接受任何參數，且會傳回不是陣列的值。
+ 公用或受保護的方法具有以開頭的名稱 `Get` 、不接受任何參數，而且會傳回不是陣列的值。
 
 ## <a name="rule-description"></a>規則描述
  在大部分情況下，屬性代表資料和方法會執行動作。 屬性的存取方式就像欄位一樣，讓使用者更容易使用。 如果其中一項條件存在，方法就很適合成為屬性：
@@ -67,7 +67,7 @@ ms.locfileid: "72661955"
 ## <a name="controlling-property-expansion-in-the-debugger"></a>控制偵錯工具中的屬性擴充
  程式設計人員避免使用屬性的原因之一，是因為它們不想讓偵錯工具自動將它展開。 例如，屬性可能牽涉到配置大型物件或呼叫 P/Invoke，但實際上可能不會有任何可觀察的副作用。
 
- 您可以藉由套用 <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>，讓偵錯工具無法自動擴充屬性。 下列範例顯示此屬性會套用至實例屬性。
+ 您可以藉由套用，讓偵錯工具無法自動擴充屬性 <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName> 。 下列範例顯示此屬性會套用至實例屬性。
 
 ```vb
 Imports System

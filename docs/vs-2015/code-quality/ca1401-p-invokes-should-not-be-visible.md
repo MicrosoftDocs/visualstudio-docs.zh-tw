@@ -15,28 +15,28 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f3f867f14f7a2eca4482f1f8d5fb48149f02f43f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f13669959a5874c74753d304371b8ab7db14d4e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661364"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547286"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401：P/Invokes 不應該為可見的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|PInvokesShouldNotBeVisible|
 |CheckId|CA1401|
-|Category|Microsoft. 互通性|
+|類別|Microsoft. 互通性|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用類型中的公用或受保護方法具有 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 屬性（也會由 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中的 `Declare` 關鍵字來執行）。
+ 公用類型中的公用或受保護方法具有 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 屬性（也是由中的 `Declare` 關鍵字來執行 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ）。
 
 ## <a name="rule-description"></a>規則描述
- 以 <xref:System.Runtime.InteropServices.DllImportAttribute> 屬性（或在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中使用 `Declare` 關鍵字定義的方法）標記的方法，會使用平台叫用服務來存取非受控程式碼。 但不得公開 (Expose) 此類方法。 藉由將這些方法保留為私用或內部，您可以藉由允許呼叫端存取非受控 Api （否則無法呼叫），確保您的程式庫無法用來入侵安全性。
+ 以 <xref:System.Runtime.InteropServices.DllImportAttribute> 屬性（或在中使用關鍵字定義的方法）標記的方法會 `Declare` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 使用平台叫用服務來存取未受管理的程式碼。 但不得公開 (Expose) 此類方法。 藉由將這些方法保留為私用或內部，您可以藉由允許呼叫端存取非受控 Api （否則無法呼叫），確保您的程式庫無法用來入侵安全性。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請變更方法的存取層級。

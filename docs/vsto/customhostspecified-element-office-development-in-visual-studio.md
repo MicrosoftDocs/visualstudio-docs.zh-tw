@@ -1,9 +1,9 @@
 ---
-title: '&lt;customHostSpecified&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
+title: '&lt;d &gt; 元素（Visual Studio 中的 Office 開發）'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26597796c99d3ab8740812819cf3aa5568e2985b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 689848f14b4540a54489b4ea5bbad67e493fe276
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956175"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544907"
 ---
-# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customHostSpecified&gt;元素 （在 Visual Studio 中的 Office 程式開發）
-  `customHostSpecified`項目會指出此解決方案不是獨立的應用程式。 Office 方案包含裝載在 Microsoft Office 應用程式的元件。
+# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;d &gt; 元素（Visual Studio 中的 Office 開發）
+  `customHostSpecified`元素表示此方案不是獨立應用程式。 Office 方案包含裝載于 Microsoft Office 應用程式內的元件。
 
 ## <a name="syntax"></a>語法
 
@@ -33,14 +33,14 @@ ms.locfileid: "62956175"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和屬性
- `customHostSpecified` ，則需要 Office 方案的元素。 此元素為`co.v1`命名空間及指定此部署包含將自訂主機，內部部署的元件，並不是獨立的應用程式。
+ `customHostSpecified`Office 方案需要元素。 此元素位於 `co.v1` 命名空間中，指定此部署包含將部署在自訂主機內且不是獨立應用程式的元件。
 
- 這個項目是第一個子系`<entrypoint>`應用程式資訊清單中的項目。 可以是任何其他子項目中，`<entrypoint>`項目或[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]將會在安裝期間引發驗證錯誤。
+ 這個元素是 `<entrypoint>` 應用程式資訊清單中第一個元素的子系。 該元素中不能有其他子項目， `<entrypoint>` 或在 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 安裝期間將會引發驗證錯誤。
 
- 這個項目具有屬性和任何子項目。
+ 這個元素沒有屬性，而且沒有子專案。
 
 ## <a name="example"></a>範例
- 下列程式碼範例說明`customHostSpecified`Office 方案的應用程式資訊清單中的項目。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
+ 下列程式碼範例說明 `customHostSpecified` Office 方案的應用程式資訊清單中的元素。 這個程式碼範例是[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中提供之較大範例的一部分。
 
 ```xml
 <entryPoint>

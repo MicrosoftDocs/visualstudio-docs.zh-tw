@@ -1,7 +1,7 @@
 ---
 title: 建置流程中的程式碼產生
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590549"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546714"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>在組建進程中叫用文字轉換
 
@@ -26,7 +26,7 @@ ms.locfileid: "75590549"
 
 根據不同的建置引擎，建置工作可執行的動作會有些差異。 當您在 Visual Studio 中建立方案時，如果已設定[hostspecific = "true"](../modeling/t4-template-directive.md)屬性，文字模板就可以存取 Visual Studio API （EnvDTE）。 但是當您從命令列建立解決方案，或透過 Visual Studio 起始伺服器組建時，也不會發生這種情況。 在這些情況下，會由 MSBuild 執行組建，並會使用不同的 T4 主機。 這表示當您使用 MSBuild 建立文字模板時，您無法以相同的方式存取專案檔名稱之類的事項。 不過，您可以[使用組建參數，將環境資訊傳遞至文字模板和](#parameters)指示詞處理器。
 
-## <a name="buildserver"></a>設定您的電腦
+## <a name="configure-your-machines"></a><a name="buildserver"></a>設定您的電腦
 
 若要在您的開發電腦上啟用組建工作，請安裝適用于 Visual Studio 的模型 SDK。
 
@@ -36,22 +36,22 @@ ms.locfileid: "75590549"
 
 - % ProgramFiles （x86）% \ Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\TextTemplating
 
-  - VisualStudio. TextTemplating. 15.0 .dll
+  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.15.0.dll
   - Microsoft.TextTemplating.Build.Tasks.dll
   - Microsoft.TextTemplating.targets
 
 - % ProgramFiles （x86）% \ Microsoft Visual Studio\2019\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v4。0
 
-  - VisualStudio. TextTemplating. 15.0 .dll
-  - VisualStudio. TextTemplating. 15.0 .dll
-  - VisualStudio. TextTemplating. .Vshost.exe. 15.0 .dll
+  - Microsoft.VisualStudio.TextTemplating.15.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Interfaces.15.0.dll
+  - Microsoft.VisualStudio.TextTemplating.VSHost.15.0.dll
 
 - % ProgramFiles （x86）% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
-  - VisualStudio. TextTemplating. 15.0 .dll
+  - Microsoft.VisualStudio.TextTemplating.Modeling.15.0.dll
 
 > [!TIP]
-> 如果您在組建伺服器上執行 TextTemplating 組建目標時，取得 CodeAnalysis 方法的 `MissingMethodException`，請確定 Roslyn 元件位於名為*Roslyn*的目錄中，其位於與組建可執行檔相同的目錄中（例如*msbuild.exe*）。
+> 如果您在 `MissingMethodException` 組建伺服器上執行 TextTemplating 組建目標時，取得 CodeAnalysis 方法的，請確定 Roslyn 元件位於與組建可執行檔相同的目錄中名為*Roslyn*的目錄中（例如*msbuild.exe*）。
 
 ## <a name="edit-the-project-file"></a>編輯專案檔
 
@@ -65,7 +65,7 @@ ms.locfileid: "75590549"
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`
 
-\-或-
+\- 或 -
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`
 
@@ -164,7 +164,7 @@ ms.locfileid: "75590549"
 
 在 `AfterTransform` 中，您可以參考檔案清單：
 
-- GeneratedFiles：流程所寫入之檔案的清單。 對於已覆蓋現有唯讀檔案的檔案，`%(GeneratedFiles.ReadOnlyFileOverwritten)` 將會是 true。 您可以從原始檔控制中簽出這些檔案。
+- GeneratedFiles：流程所寫入之檔案的清單。 對於已覆蓋現有唯讀檔案的檔案，將會 `%(GeneratedFiles.ReadOnlyFileOverwritten)` 是 true。 您可以從原始檔控制中簽出這些檔案。
 
 - NonGeneratedFiles：不會遭到覆寫之唯讀檔案的清單。
 
@@ -184,7 +184,7 @@ ms.locfileid: "75590549"
 </ItemGroup>
 ```
 
-要重新導向的實用資料夾是 `$(IntermediateOutputPath)`。
+要重新導向的實用資料夾是 `$(IntermediateOutputPath)` 。
 
 如果您指定輸出檔案名，它的優先順序會高於範本中 output 指示詞所指定的副檔名。
 
@@ -220,7 +220,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>將組建內容資料傳遞至範本
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a>將組建內容資料傳遞至範本
 
 您可以在專案檔中設定參數值。 例如，您可以傳遞[組建](../msbuild/msbuild-properties.md)屬性和[環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)：
 
@@ -252,9 +252,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue` 只有在您使用 MSBuild 時，才會從 `T4ParameterValues` 取得資料。 當您使用 Visual Studio 轉換範本時，參數會有預設值。
+> `ResolveParameterValue``T4ParameterValues`只有當您使用 MSBuild 時，才會從取得資料。 當您使用 Visual Studio 轉換範本時，參數會有預設值。
 
-## <a name="msbuild"></a>在 assembly 和 include 指示詞中使用專案屬性
+## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a>在 assembly 和 include 指示詞中使用專案屬性
 
 Visual Studio 宏（例如 **$ （SolutionDir））** 在 MSBuild 中無法使用。 您可以改用專案屬性。
 
@@ -283,13 +283,13 @@ Visual Studio 宏（例如 **$ （SolutionDir））** 在 MSBuild 中無法使�
 
 這些指示詞會從 MSBuild 和 Visual Studio 裝載中的 T4parameterValues 取得值。
 
-## <a name="q--a"></a>問與答
+## <a name="q--a"></a>問答集
 
 **為什麼要轉換組建伺服器中的範本？我在簽入我的程式碼之前，已轉換 Visual Studio 中的範本。**
 
 如果您更新包含的檔案或範本所讀取的其他檔案，Visual Studio 不會自動轉換檔案。 將範本轉換為組建的一部分，可確保所有專案都是最新的。
 
-**轉換文字模板有哪些其他選項？**
+**其他轉換文字範本的選項為何？**
 
 - [TextTransform 公用程式](../modeling/generating-files-with-the-texttransform-utility.md)可用於命令腳本中。 在大部分的情況下，使用 MSBuild 會比較容易。
 
@@ -299,17 +299,17 @@ Visual Studio 宏（例如 **$ （SolutionDir））** 在 MSBuild 中無法使�
 
 - [執行時間文字模板](../modeling/run-time-text-generation-with-t4-text-templates.md)會在應用程式的執行時間進行轉換。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 ::: moniker range="vs-2017"
 
-- T4 MSbuild 範本中有個很好的指引，位於 `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- T4 MSbuild 範本中有個很好的指引，網址為`%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- T4 MSbuild 範本中有個很好的指引，位於 `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- T4 MSbuild 範本中有個很好的指引，網址為`%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

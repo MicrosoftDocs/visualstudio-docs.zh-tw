@@ -1,5 +1,5 @@
 ---
-title: 檔案項目 |Microsoft Docs
+title: Files 元素 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c669b7cc314bc2d7a999e77d5cfb95251789dd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42e919bbe25047da14940203ac86793430aeadde
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967366"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546506"
 ---
 # <a name="files-element"></a>Files 項目
-  指定要部署使用 SharePoint 專案項目，例如功能項目檔和相依的非 SharePoint 專案的輸出檔案。
+  指定要與 SharePoint 專案專案一起部署的檔案，例如功能元素檔和相依非 SharePoint 專案的輸出。
 
 ## <a name="syntax"></a>語法
 
@@ -42,25 +42,25 @@ ms.locfileid: "62967366"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|選擇性**ProjectItemFileType**項目。<br /><br /> 代表功能項目檔案，以包含與專案項目時將它部署至 SharePoint 的 SharePoint 檔案。|
-|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|選擇性**ProjectOutputFileType**項目。<br /><br /> 表示要加入的專案項目時將它部署至 SharePoint 專案的輸出。|
+|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|選擇性的**ProjectItemFileType**元素。<br /><br /> 代表在部署至 SharePoint 時，要包含在專案專案中的 SharePoint 檔案（例如功能元素檔案）。|
+|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|選擇性的**ProjectOutputFileType**元素。<br /><br /> 代表專案部署至 SharePoint 時，要包含在專案專案中的輸出。|
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|描述|
 |-------------|-----------------|
-|[ProjectItem](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。 這個項目必要的根元素的`.spdata`檔案。|
+|[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 專案專案。 這個元素是檔案的必要根項目 `.spdata` 。|
 
 ## <a name="element-information"></a>項目資訊
 
-|||
+|屬性|值|
 |-|-|
-|**命名空間**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**結構描述名稱**|SharePoint 專案項目結構描述|
-|**驗證檔案**|ProjectItemModelSchema.xsd|
+|**Namespace**|HTTP： \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**架構名稱**|SharePoint 專案專案架構|
+|**驗證檔案**|ProjectItemModelSchema .xsd|
 |**可以是空的**|否|
 
 ## <a name="see-also"></a>另請參閱
-- [SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [SharePoint 專案專案架構參考](../sharepoint/sharepoint-project-item-schema-reference.md)

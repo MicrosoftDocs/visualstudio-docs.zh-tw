@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式參考程式碼中的工作表範圍
+title: 如何：以程式設計方式在程式碼中參考工作表範圍
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,45 +15,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e82b884965c5c7362951c7d94199f90c93fbfc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93673fcc270ce2f1ac43804cb1d794281f28c702
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955950"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547390"
 ---
-# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>HOW TO：以程式設計方式參考程式碼中的工作表範圍
-  您可以使用類似的程序來參考的內容<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。
+# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>如何：以程式設計方式在程式碼中參考工作表範圍
+  您可以使用類似的進程來參考 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件的內容。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="use-a-namedrange-control"></a>使用 NamedRange 控制項
- 下列範例會將<xref:Microsoft.Office.Tools.Excel.NamedRange>加入工作表，然後新增至範圍的儲存格的文字。
+ 下列範例會將加入 <xref:Microsoft.Office.Tools.Excel.NamedRange> 至工作表，然後將文字加入至範圍中的資料格。
 
 ### <a name="to-refer-to-a-namedrange-control"></a>若要參考 NamedRange 控制項
 
-1. 將字串指派給<xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>屬性<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。
+1. 將字串指派給 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 控制項的屬性 <xref:Microsoft.Office.Tools.Excel.NamedRange> 。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#46)]
      [!code-vb[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#46)]
 
 ## <a name="use-native-excel-ranges"></a>使用原生 Excel 範圍
- 下列範例會將原生的 Excel 範圍加入至工作表，並再將文字加入至範圍中的資料格。
+ 下列範例會將原生 Excel 範圍加入工作表，然後將文字加入至範圍中的資料格。
 
-### <a name="to-refer-to-a-native-range-object"></a>若要參考原生的範圍物件
+### <a name="to-refer-to-a-native-range-object"></a>若要參考原生範圍物件
 
-1. 指派字串給<xref:Microsoft.Office.Interop.Excel.Range.Value2%2A>範圍的屬性。
+1. 將字串指派給 <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> 範圍的屬性。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
      [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]
 
 ## <a name="see-also"></a>另請參閱
 - [使用範圍](../vsto/working-with-ranges.md)
-- [如何：以程式設計方式檢查工作表拼字](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [如何：以程式設計方式在工作表中檢查拼寫](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [如何：以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [如何：使用累加式變更資料，以程式設計的方式自動填滿範圍](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
-- [如何：以程式設計方式在工作表範圍中的文字搜尋](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)
+- [如何：以程式設計方式自動以累加方式變更資料填滿範圍](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
+- [如何：以程式設計方式在工作表範圍中搜尋文字](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)
 - [NamedRange 控制項](../vsto/namedrange-control.md)
-- [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)
-- [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)
+- [主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

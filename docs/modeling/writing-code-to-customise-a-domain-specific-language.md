@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3954f271d4bcdc222841bbcb435cdadf115ac263
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b67a50623eb1924c4a18b57524c409f7eba6ab20
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748130"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546870"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>撰寫程式碼來自訂特定領域語言
 
@@ -24,7 +24,7 @@ ms.locfileid: "72748130"
 
 - **自訂命令。** 您可以建立一個命令，讓使用者以滑鼠右鍵按一下圖表，然後可以修改模型來叫用。 如需詳細資訊，請參閱[如何：將命令新增至快捷方式功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
-- **Validation (驗證)，** 您可以撰寫程式碼來驗證模型是否處於正確的狀態。 如需詳細資訊，請參閱[使用特定領域語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。
+- **驗證.** 您可以撰寫程式碼來驗證模型是否處於正確的狀態。 如需詳細資訊，請參閱[使用特定領域語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。
 
 - **覆寫預設行為。** 您可以修改從 Dsldefinition.dsl 檔產生之程式碼的許多層面。 如需詳細資訊，請參閱覆[寫和擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。
 
@@ -72,6 +72,6 @@ ms.locfileid: "72748130"
 
 - **序列化**。 存放區提供將其包含的物件序列化為檔案的標準方式。 您可以自訂序列化和還原序列化的規則。 如需詳細資訊，請參閱[自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)

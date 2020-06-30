@@ -11,28 +11,28 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 487047b7dd3096e65a6e287d79d91d3029f3dc5a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 12132622900d5698a6b78a1914c687a369d7dc03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608989"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547728"
 ---
-# <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133：委派必須繫結至透明度一致的方法
+# <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133:委派必須繫結至具有一致透明度的方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DelegatesMustBindWithConsistentTransparency|
 |CheckId|CA2133|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 > [!NOTE]
 > 此警告僅適用于執行 CoreCLR 的程式碼（Silverlight Web 應用程式專屬的 CLR 版本）。
 
 ## <a name="cause"></a>原因
- 這個警告會在將標記為 <xref:System.Security.SecurityCriticalAttribute> 的委派系結至透明或標記為 <xref:System.Security.SecuritySafeCriticalAttribute> 的方法時引發。 此警告也會引發將透明或安全關鍵性的委派繫結至關鍵方法的方法。
+ 這個警告會在將標記為的委派系結 <xref:System.Security.SecurityCriticalAttribute> 至透明或以標記的方法時引發 <xref:System.Security.SecuritySafeCriticalAttribute> 。 此警告也會引發將透明或安全關鍵性的委派繫結至關鍵方法的方法。
 
 ## <a name="rule-description"></a>規則描述
  委派類型與其系結的方法必須具有一致的透明度。 透明和安全關鍵的委派只能系結至其他透明或安全關鍵的方法。 同樣地，關鍵委派可能只會系結至關鍵方法。 這些系結規則會確保唯一可以透過委派叫用方法的程式碼，也可以直接叫用相同的方法。 例如，系結規則會防止透明的程式碼直接透過透明委派呼叫關鍵程式碼。

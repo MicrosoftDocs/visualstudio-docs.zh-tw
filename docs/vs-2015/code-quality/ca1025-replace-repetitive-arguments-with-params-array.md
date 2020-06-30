@@ -15,28 +15,28 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 21d13611a3c4dd11eb691c746f8746347fb9a83b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84809341d7898aeb3defe0447f2a2f1142eb460a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661974"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546623"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025：必須以參數陣列取代重複的引數
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025:以參數陣列取代重複的引數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
  公用類型中的公用或受保護方法具有三個以上的參數，且其最後三個參數的類型相同。
 
 ## <a name="rule-description"></a>規則描述
- 當引數的確切數目未知，且變數引數是相同的類型，或可以當做相同類型傳遞時，請使用參數陣列，而不是重複的引數。 例如，<xref:System.Console.WriteLine%2A> 方法會提供一般用途的多載，其使用參數陣列接受任意數目的 <xref:System.Object> 引數。
+ 當引數的確切數目未知，且變數引數是相同的類型，或可以當做相同類型傳遞時，請使用參數陣列，而不是重複的引數。 例如， <xref:System.Console.WriteLine%2A> 方法會提供一般用途的多載，其使用參數陣列接受任意數目的 <xref:System.Object> 引數。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請以參數陣列取代重複的引數。

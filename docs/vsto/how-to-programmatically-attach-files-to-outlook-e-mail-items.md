@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式將檔案附加至 Outlook 電子郵件項目
+title: 如何：以程式設計方式將檔案附加至 Outlook 電子郵件專案
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 707c3bb2b6bec9f8db1744d1f28acd4e90a45a57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6cde83fa59f45cbc45e56738f09ccf3099f5c02
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575620"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546129"
 ---
-# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>HOW TO：以程式設計方式將檔案附加至 Outlook 電子郵件項目
-  此範例會將檔案附加至新的郵件項目，並將它傳送至 Armando Pinto。 本範例假設名為 Armando Pinto 人員做為接收者。
+# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>如何：以程式設計方式將檔案附加至 Outlook 電子郵件專案
+  這個範例會將檔案附加到新的訊息項目，並將它傳送至 Armando Pinto。 此範例假設名為 Armando Pinto 的人員以收件者的身分存在。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "62575620"
  [!code-vb[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_AttachFiles/thisaddin.vb#1)]
 
 ## <a name="see-also"></a>另請參閱
-- [使用郵件項目](../vsto/working-with-mail-items.md)
+- [使用訊息項目](../vsto/working-with-mail-items.md)
 - [如何：以程式設計方式傳送電子郵件](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
-- [如何：以程式設計方式儲存附件，從 Outlook 電子郵件項目](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
-- [如何：以程式設計方式建立電子郵件項目](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [如何：以程式設計方式從 Outlook 電子郵件專案儲存附件](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
+- [如何：以程式設計方式建立電子郵件專案](../vsto/how-to-programmatically-create-an-e-mail-item.md)

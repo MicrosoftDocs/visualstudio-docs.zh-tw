@@ -15,21 +15,21 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a550226a5ea1edb3b30e317be6b5682f4c204d52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9533a597a33deaed17ff2a73d56ef306ea7b5613
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667369"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546337"
 ---
-# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201：不要引發保留的例外狀況類型
+# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201:不要引發保留的例外狀況類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
 |CheckId|CA2201|
-|Category|Microsoft。使用方式|
+|類別|Microsoft。使用方式|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -56,31 +56,31 @@ ms.locfileid: "72667369"
 
   **不擲回一般例外狀況**
 
-  如果您在程式庫或架構中擲回一般例外狀況類型（例如 <xref:System.Exception> 或 <xref:System.SystemException>），則會強制取用者攔截所有例外狀況，包括不知道如何處理的未知例外狀況。
+  如果您在程式庫或架構中擲回一般例外狀況類型（例如 <xref:System.Exception> 或） <xref:System.SystemException> ，則會強制取用者攔截所有例外狀況，包括不知道如何處理的未知例外狀況。
 
-  相反地，會擲回已經存在於架構中的衍生型別，或建立您自己的型別，衍生自 <xref:System.Exception>。
+  相反地，會擲回已經存在於架構中的衍生型別，或建立您自己的型別（衍生自） <xref:System.Exception> 。
 
   **擲回特定的例外狀況**
 
   下表顯示當您驗證參數時所要擲回的參數，以及在屬性的 set 存取子中包含 value 參數的例外狀況：
 
-|參數描述|例外|
+|參數描述|例外狀況|
 |---------------------------|---------------|
-|`null` 參考|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|`null`證明|<xref:System.ArgumentNullException?displayProperty=fullName>|
 |超出允許的值範圍（例如集合或清單的索引）|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
 |不正確 `enum` 值|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
-|包含的格式不符合方法的參數規格（例如 `ToString(String)` 的格式字串）|<xref:System.FormatException?displayProperty=fullName>|
+|包含的格式不符合方法的參數規格（例如的格式字串 `ToString(String)` ）|<xref:System.FormatException?displayProperty=fullName>|
 |否則無效|<xref:System.ArgumentException?displayProperty=fullName>|
 
- 當作業對物件的目前狀態無效時，會擲回 <xref:System.InvalidOperationException?displayProperty=fullName>
+ 當作業對物件的目前狀態無效時，會擲回<xref:System.InvalidOperationException?displayProperty=fullName>
 
- 在已處置的物件上執行作業時 <xref:System.ObjectDisposedException?displayProperty=fullName>
+ 當作業在已處置的物件上執行時，會擲回<xref:System.ObjectDisposedException?displayProperty=fullName>
 
- 不支援作業時（例如在覆寫的資料流程中**寫入**），會擲回 <xref:System.NotSupportedException?displayProperty=fullName>
+ 不支援作業時（例如在覆寫的資料流程中）。在已開啟讀取的資料流程中**寫入**會擲回<xref:System.NotSupportedException?displayProperty=fullName>
 
- 當轉換會導致溢位時（例如在明確轉換運算子多載中），會擲回 <xref:System.OverflowException?displayProperty=fullName>
+ 當轉換會導致溢位時（例如在明確轉換運算子多載中）擲回<xref:System.OverflowException?displayProperty=fullName>
 
- 針對所有其他情況，請考慮建立您自己的類型，其衍生自 <xref:System.Exception> 並擲回。
+ 針對所有其他情況，請考慮建立您自己的衍生自的類型， <xref:System.Exception> 並擲回。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請將擲回例外狀況的類型變更為不是其中一個保留類型的特定類型。
@@ -89,4 +89,4 @@ ms.locfileid: "72667369"
  請勿隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關規則
- [CA1031：不要攔截一般例外狀況類型](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+ [CA1031:不要攔截一般例外狀況類型](../code-quality/ca1031-do-not-catch-general-exception-types.md)

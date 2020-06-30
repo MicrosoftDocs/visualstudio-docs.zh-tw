@@ -1,5 +1,5 @@
 ---
-title: SafeControl 項目 |Microsoft Docs
+title: SafeControl 元素 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6b47254a80c9cdadab6ca18f2fb8c3e8540fbd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c9936054c5cc622e6f335d81d1568ebed16518f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827334"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547923"
 ---
 # <a name="safecontrol-element"></a>SafeControl 項目
-  代表 ASPX 控制項或指定為安全的任何使用者存取 SharePoint 網站上的任何 ASPX 頁面上的 Web 組件。
+  代表 ASPX 控制項或 Web 元件，指定為任何使用者在 SharePoint 網站上的任何 ASPX 頁面上存取的安全性。
 
 ## <a name="syntax"></a>語法
 
@@ -40,12 +40,12 @@ ms.locfileid: "62827334"
 
 |屬性|描述|
 |---------------|-----------------|
-|**Assembly**|選擇性**xs: string**屬性。<br /><br /> 定義 ASPX 控制項或 Web 組件的組件名稱。 根據預設，這個屬性會使用 **$SharePoint.Project.AssemblyFullName$** 組件名稱的可取代參數。 如需詳細資訊，請參閱 <<c0> [ 可置換的參數](../sharepoint/replaceable-parameters.md)。|
-|**IsSafe**|選擇性**xs: boolean**屬性。<br /><br /> 指定 Web 組件的 ASPX 控制項是否安全，不受信任的使用者才能存取。|
-|**IsSafeAgainstScript**|選擇性**xs: boolean**屬性。<br /><br /> 指定不受信任的使用者可以檢視或編輯網頁組件的 ASPX 控制項的屬性。|
-|**名稱**|選擇性**xs: string**屬性。<br /><br /> 此集合中的安全控制項項目的名稱。|
-|**命名空間**|選擇性**xs: string**屬性。<br /><br /> ASPX 控制項或 Web 組件的命名空間。|
-|**TypeName**|選擇性**xs: string**屬性。<br /><br /> ASPX 控制項或 Web 組件的型別名稱。|
+|**組件**|選擇性的**xs： string**屬性。<br /><br /> 定義 ASPX 控制項或 Web 元件之元件的名稱。 根據預設，這個屬性會使用元件名稱 **$SharePoint 的 AssemblyFullName $** 可取代參數。 如需詳細資訊，請參閱可[取代的參數](../sharepoint/replaceable-parameters.md)。|
+|**IsSafe**|選擇性的**xs： boolean**屬性。<br /><br /> 指定 ASPX 控制項或 Web 元件是否安全，不受信任的使用者存取。|
+|**IsSafeAgainstScript**|選擇性的**xs： boolean**屬性。<br /><br /> 指定不受信任的使用者是否可以查看或編輯 ASPX 控制項或 Web 元件的屬性。|
+|**名稱**|選擇性的**xs： string**屬性。<br /><br /> 此安全控制項專案在集合中的名稱。|
+|**Namespace**|選擇性的**xs： string**屬性。<br /><br /> ASPX 控制項或 Web 元件的命名空間。|
+|**類型**|選擇性的**xs： string**屬性。<br /><br /> ASPX 控制項或 Web 元件的類型名稱。|
 
 ### <a name="child-elements"></a>子元素
  無。
@@ -54,20 +54,20 @@ ms.locfileid: "62827334"
 
 |元素|描述|
 |-------------|-----------------|
-|[SafeControls](../sharepoint/safecontrols-element.md)|代表 ASPX 控制項和被指定為安全的任何使用者存取 SharePoint 網站上的任何 ASPX 頁面上的 Web 組件的集合。|
+|[SafeControls](../sharepoint/safecontrols-element.md)|代表 ASPX 控制項和 Web 組件的集合，其指定為任何使用者在 SharePoint 網站上的任何 ASPX 頁面上存取的安全性。|
 
 ## <a name="remarks"></a>備註
- 如需有關安全控制項的詳細資訊，請參閱[提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。
+ 如需安全控制項的詳細資訊，請參閱[在專案專案中提供封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。
 
 ## <a name="element-information"></a>項目資訊
 
-|||
+|屬性|值|
 |-|-|
-|**命名空間**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**結構描述名稱**|SharePoint 專案項目結構描述|
-|**驗證檔案**|ProjectItemModelSchema.xsd|
+|**Namespace**|HTTP： \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**架構名稱**|SharePoint 專案專案架構|
+|**驗證檔案**|ProjectItemModelSchema .xsd|
 |**可以是空的**|否|
 
 ## <a name="see-also"></a>另請參閱
-- [SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [SharePoint 專案專案架構參考](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [提供專案專案中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式儲存活頁簿
+title: 如何：以程式設計方式儲存活頁簿
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419475"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547078"
 ---
-# <a name="how-to-programmatically-save-workbooks"></a>HOW TO：以程式設計方式儲存活頁簿
+# <a name="how-to-programmatically-save-workbooks"></a>如何：以程式設計方式儲存活頁簿
   儲存活頁簿有好幾種方式。 您可以儲存活頁簿，而不變更路徑。 如果活頁簿先前沒有儲存過，則應該指定路徑來儲存活頁簿。 如果沒有明確指定路徑，Microsoft Office Excel 會將這個檔案以建立時指定的名稱儲存在目前的資料夾中。 您也可以儲存活頁簿的複本，而不修改記憶體中的已開啟活頁簿。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="save-a-workbook-without-changing-the-path"></a>不變更路徑儲存活頁簿
+## <a name="save-a-workbook-without-changing-the-path"></a>儲存活頁簿而不變更路徑
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>儲存與文件層級自訂相關聯的活頁簿
 
@@ -42,11 +42,11 @@ ms.locfileid: "63419475"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#3)]
 
-## <a name="save-a-workbook-with-a-new-path"></a>使用新路徑儲存活頁簿
+## <a name="save-a-workbook-with-a-new-path"></a>以新路徑儲存活頁簿
  您可以將指定的活頁簿儲存至新位置或使用新名稱儲存，也可以選擇性地指定檔案格式、密碼、存取模式等項目。
 
 > [!NOTE]
-> 您可能想要設定<xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A>屬性，以**False**因為以某些格式儲存，使用新路徑儲存活頁簿需要互動之前。 將此屬性設定為**False**會讓 Excel 使用所有預設值。
+> 在以新路徑儲存活頁簿之前，您可能會想要將 <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> 屬性設定為**False** ，因為以某些格式儲存需要互動。 將此屬性設定為**False** ，會導致 Excel 使用所有預設值。
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>儲存與文件層級自訂相關聯的活頁簿
 
@@ -80,12 +80,12 @@ ms.locfileid: "63419475"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#5)]
 
 ## <a name="robust-programming"></a>穩固程式設計
- 以互動方式取消任何儲存或複製活頁簿的方法，都會在程式碼中引發執行階段錯誤。 比方說，如果您的程序會呼叫<xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A>方法，但不停用提示從 Excel，及您使用者按下滑鼠**取消**出現提示時，Excel 就會引發執行階段錯誤。
+ 以互動方式取消任何儲存或複製活頁簿的方法，都會在程式碼中引發執行階段錯誤。 例如，如果您的程式呼叫 <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> 方法，但未停用 Excel 的提示，而且您的使用者在出現提示時按一下 [**取消**]，則 Excel 會引發執行階段錯誤。
 
 ## <a name="see-also"></a>另請參閱
 - [使用活頁簿](../vsto/working-with-workbooks.md)
-- [Workbook 主項目](../vsto/workbook-host-item.md)
+- [活頁簿主專案](../vsto/workbook-host-item.md)
 - [如何：以程式設計方式關閉活頁簿](../vsto/how-to-programmatically-close-workbooks.md)
-- [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)
-- [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)
+- [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)

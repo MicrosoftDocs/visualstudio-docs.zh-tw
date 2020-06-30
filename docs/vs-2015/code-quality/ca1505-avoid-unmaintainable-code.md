@@ -1,5 +1,5 @@
 ---
-title: CA1505:避免撰寫無法維護程式碼 |Microsoft Docs
+title: CA1505：避免撰寫無法維護程式碼 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,21 +15,21 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 87aacfd675181e35d289b2a054c58f83f3f790fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f2f731b1ac0d87b59c7690d0cf57ade3570ed5f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607580"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547819"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505:應避免撰寫無法維護的程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|AvoidUnmantainableCode|
 |CheckId|CA1505|
-|分類|Microsoft。可維護性|
+|類別|Microsoft。可維護性|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因

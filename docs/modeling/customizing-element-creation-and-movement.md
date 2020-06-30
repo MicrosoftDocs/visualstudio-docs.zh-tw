@@ -1,7 +1,7 @@
 ---
 title: 自訂項目的建立和移動
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
@@ -11,18 +11,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45131ff231e34cf769ac3665344e340f38b9380d
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: a94f1e3321d846578ea42c69e50d48713ff618fb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114252"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547260"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 
 您可以從 [工具箱] 或 [貼上] 或 [移動] 作業，允許專案拖曳至另一個元素。 您可以使用您指定的關聯性，將已移動的元素連結至目標元素。
 
-元素合併指示詞（EMD）會指定當一個模型專案*合併*至另一個模型專案時，會發生什麼事。 這會在以下情形發生：
+元素合併指示詞（EMD）會指定當一個模型專案*合併*至另一個模型專案時，會發生什麼事。 發生這種情況的時機：
 
 - 使用者將從 [工具箱] 拖曳到圖表或圖形上。
 
@@ -38,7 +38,7 @@ ms.locfileid: "76114252"
 
 EMD 的責任是決定如何將物件或物件群組合並到模型中的特定位置。 特別是，它會決定應該具現化哪些關聯性，以將合併的群組連結到模型。 您也可以自訂它來設定屬性，並建立其他物件。
 
-![DSL&#45;EMD&#95;合併](../modeling/media/dsl-emd_merge.png)
+![&#45;EMD&#95;Merge 的 DSL](../modeling/media/dsl-emd_merge.png)
 
 當您定義內嵌關聯性時，會自動產生 EMD。 當使用者將新的子實例加入至父系時，這個預設 EMD 會建立關聯性的實例。 您可以修改這些預設 EMDs，例如藉由新增自訂程式碼。
 
@@ -71,7 +71,7 @@ Merge 指示詞有兩種：
 > [!NOTE]
 > 如果您撰寫自訂的合併程式碼，它只會影響使用此 EMD 執行的合併。 如果有其他 EMDs 會合並相同類型的物件，或者如果有其他自訂程式碼會在不使用 EMD 的情況下建立這些物件，則不會受到您的自訂合併程式碼影響。
 >
-> 如果您想要確保您的自訂程式碼一律會處理新的專案或新的關聯性，請考慮在內嵌關聯性上定義 `AddRule`，並在專案的網域類別上定義一個 `DeleteRule`。 如需詳細資訊，請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。
+> 如果您想要確保您的自訂程式碼一律會處理新的專案或新的關聯性，請考慮在內嵌關聯性上定義， `AddRule` 並 `DeleteRule` 在專案的網域類別上定義。 如需詳細資訊，請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。
 
 ## <a name="example-defining-an-emd-without-custom-code"></a>範例：定義不含自訂程式碼的 EMD
 
@@ -85,15 +85,15 @@ Merge 指示詞有兩種：
 
     當您執行此 DSL 時，它可讓您在圖形之間建立圖形和連接器。 您無法將新的 [ **ExampleElement** ] 圖形從 [工具箱] 拖曳到現有的圖形上。
 
-2. 若要讓使用者將元素合併到 `ExampleElement` 圖形上，請在 `ExampleElement` 網域類別中建立新的 EMD：
+2. 若要讓使用者將元素合併到 `ExampleElement` 圖形上，請在網域類別中建立新的 EMD `ExampleElement` ：
 
-   1. 在 [ **DSL Explorer**] 中，展開 [**網域類別**]。 以滑鼠右鍵按一下 `ExampleElement`，然後按一下 [**加入新的元素合併**指示詞]。
+   1. 在 [ **DSL Explorer**] 中，展開 [**網域類別**]。 以滑鼠右鍵按一下 `ExampleElement` ，然後按一下 [**加入新**的專案合併指示詞]。
 
    2. 請確定 [ **DSL 詳細資料**] 視窗已開啟，讓您可以查看新 EMD 的詳細資料。 （功能表： **View**，**其他視窗**， **DSL Details**）。
 
 3. 在 [DSL 詳細資料] 視窗中設定 [**索引] 類別**，以定義哪些類別的專案可以合併到 `ExampleElement` 物件上。
 
-    在此範例中，選取 [`ExampleElements`]，讓使用者可以將新的專案拖曳至現有的專案。
+    在此範例中，請選取 `ExampleElements` ，讓使用者可以將新的專案拖曳至現有的專案。
 
     請注意，索引類別會變成 [DSL Explorer] 中的 EMD 名稱。
 
@@ -109,7 +109,7 @@ Merge 指示詞有兩種：
 
       您可以使用路徑流覽工具來建立每一個路徑：
 
-      1. 在 [**在路徑建立連結] 底下的 [進程合併**] 底下，按一下 [ **\<新增路徑 >** ]。
+      1. 在 [在**路徑建立連結] 底下的 [進程合併**] 底下，按一下 **\<add path>** 。
 
       2. 按一下清單專案右邊的下拉箭號。 樹狀檢視隨即出現。
 
@@ -141,7 +141,7 @@ Merge 指示詞有兩種：
 
 - EMD 會影響從 [工具箱] 和 [貼上作業] 兩者的建立。
 
-     如果您撰寫的自訂程式碼會建立新的專案，您可以使用 `ElementOperations.Merge` 方法來明確叫用 EMD。 這可確保您的程式碼會以與其他作業相同的方式，將新的專案連結至模型。 如需詳細資訊，請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。
+     如果您撰寫的自訂程式碼會建立新的專案，您可以使用方法來明確叫用 EMD `ElementOperations.Merge` 。 這可確保您的程式碼會以與其他作業相同的方式，將新的專案連結至模型。 如需詳細資訊，請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。
 
 ## <a name="example-adding-custom-accept-code-to-an-emd"></a>範例：將自訂接受程式碼加入至 EMD
 
@@ -151,9 +151,9 @@ Merge 指示詞有兩種：
 
 1. 使用 [**最小語言**解決方案] 範本建立 DSL。 開啟 DSL 定義圖。
 
-2. 在 [DSL Explorer] 中，展開 [**網域類別**]，`ExampleModel`，[**元素合併**] 指示詞。 選取名為 `ExampleElement`的 [元素合併] 指示詞。
+2. 在 [DSL Explorer] 中，展開 [**網域類別**]、[ `ExampleModel` **元素合併**] 指示詞。 選取名為的 [元素合併] 指示詞 `ExampleElement` 。
 
-     此 EMD 會控制使用者如何在模型中建立新的 `ExampleElement` 物件，例如，從 [工具箱] 拖曳。
+     這個 EMD 會控制使用者如何 `ExampleElement` 在模型中建立新的物件，例如，從 [工具箱] 拖曳。
 
 3. 在 [ **DSL 詳細資料**] 視窗中，選取 [**使用自訂接受**]。
 
@@ -161,7 +161,7 @@ Merge 指示詞有兩種：
 
      將報告組建錯誤，類似于： "ElementMergeSample. ExampleElement 未包含 CanMergeExampleElement 的定義 ..."
 
-     您必須 `CanMergeExampleElement`執行方法。
+     您必須執行方法 `CanMergeExampleElement` 。
 
 5. 在**Dsl**專案中建立新的程式碼檔案。 使用下列程式碼取代其內容，並將命名空間變更為專案的命名空間。
 
@@ -190,7 +190,7 @@ Merge 指示詞有兩種：
     }
     ```
 
-    這個簡單的範例會限制可合併到父模型中的專案數目。 如需更有趣的條件，方法可以檢查接收物件的任何屬性和連結。 它也可以檢查合併元素的屬性，這些專案會在 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>中執行。 如需 `ElementGroupPrototypes`的詳細資訊，請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。 如需如何撰寫可讀取模型之程式碼的詳細資訊，請參閱[在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+    這個簡單的範例會限制可合併到父模型中的專案數目。 如需更有趣的條件，方法可以檢查接收物件的任何屬性和連結。 它也可以檢查合併專案的屬性，這些專案會在中執行 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 。 如需的詳細資訊 `ElementGroupPrototypes` ，請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。 如需如何撰寫可讀取模型之程式碼的詳細資訊，請參閱[在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
 6. 測試 DSL：
 
@@ -214,7 +214,7 @@ Merge 指示詞有兩種：
 
 2. 覆寫 `MergeRelate` 方法，並選擇性地覆寫 `MergeDisconnect` 方法。 若要這樣做，您必須設定網域類別的 [**產生雙重衍生**] 屬性。 您的程式碼可以呼叫基類中產生的合併程式碼。 如果您想要在執行合併之後執行其他作業，請使用此選項。
 
-   這些方法只會影響使用此 EMD 執行的合併。 如果您想要影響可建立合併專案的所有方式，替代方法是定義內嵌關聯性上的 `AddRule`，以及合併的網域類別上的 `DeleteRule`。 如需詳細資訊，請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。
+   這些方法只會影響使用此 EMD 執行的合併。 如果您想要影響可建立合併專案的所有方式，替代方法是在內嵌關聯性上定義 `AddRule` ，並 `DeleteRule` 在合併的網域類別上定義。 如需詳細資訊，請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。
 
 ### <a name="to-override-mergerelate"></a>覆寫 MergeRelate
 
@@ -222,13 +222,13 @@ Merge 指示詞有兩種：
 
 2. 在 [Dsldefinition.dsl 檔] 圖表中，選取合併的 [接收] 類別。 通常它是內嵌關聯性之來源端的類別。
 
-     例如，在從最小語言解決方案產生的 DSL 中，選取 [`ExampleModel`]。
+     例如，在從最小語言解決方案產生的 DSL 中，選取 `ExampleModel` 。
 
 3. 在 [**屬性**] 視窗中，將 [**產生衍生的 Double** ] 設定為 [ **true**]。
 
 4. 重建方案。
 
-5. 檢查**Dsl\Generated Files\DomainClasses.cs**的內容。 搜尋名為 `MergeRelate` 的方法，並檢查其內容。 這可協助您撰寫自己的版本。
+5. 檢查**Dsl\Generated Files\DomainClasses.cs**的內容。 搜尋名為的方法 `MergeRelate` ，並檢查其內容。 這可協助您撰寫自己的版本。
 
 6. 在新的程式碼檔案中，撰寫接收類別的部分類別，並覆寫 `MergeRelate` 方法。 請記得呼叫基底方法。 例如：
 
@@ -258,9 +258,9 @@ Merge 指示詞有兩種：
 
 ### <a name="to-write-custom-merge-code"></a>若要撰寫自訂合併程式碼
 
-1. 在**Dsl\Generated Code\DomainClasses.cs**中，檢查名為 `MergeRelate`的方法。 這些方法會建立新專案與現有模型之間的連結。
+1. 在**Dsl\Generated Code\DomainClasses.cs**中，檢查名為 `MergeRelate` 的方法。 這些方法會建立新專案與現有模型之間的連結。
 
-    此外，請檢查名為 `MergeDisconnect`的方法。 當專案被刪除時，這些方法會將元素從模型中取消連結。
+    此外，請檢查名為 `MergeDisconnect` 的方法。 當專案被刪除時，這些方法會將元素從模型中取消連結。
 
 2. 在 [ **DSL Explorer**] 中，選取或建立您想要自訂的元素合併指示詞。 在 [ **DSL 詳細資料**] 視窗中，設定 [**使用自訂合併**]。
 
@@ -268,11 +268,11 @@ Merge 指示詞有兩種：
 
 3. 重建方案。 這需要比平常更長的時間，因為產生的程式碼檔案會從模型中更新。
 
-    將會出現錯誤訊息。 按兩下錯誤訊息，以查看所產生程式碼中的指示。 這些指示會要求您提供兩種方法，`MergeRelate`*YourDomainClass*和 `MergeDisconnect`*YourDomainClass*
+    將會出現錯誤訊息。 按兩下錯誤訊息，以查看所產生程式碼中的指示。 這些指示會要求您提供兩種方法： `MergeRelate` *YourDomainClass*和 `MergeDisconnect` *YourDomainClass*
 
 4. 在不同的程式碼檔案中，將部分類別定義中的方法寫入。 您先前檢查過的範例應該會建議您所需的內容。
 
-   自訂合併程式碼不會影響直接建立物件和關聯性的程式碼，而且不會影響其他 EMDs。 若要確保不論如何建立專案，您的其他變更都會執行，請考慮改為撰寫 `AddRule` 和 `DeleteRule`。 如需詳細資訊，請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。
+   自訂合併程式碼不會影響直接建立物件和關聯性的程式碼，而且不會影響其他 EMDs。 若要確保不論如何建立專案，您的其他變更都會執行，請考慮改為撰寫 `AddRule` 和 `DeleteRule` 。 如需詳細資訊，請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。
 
 ## <a name="redirecting-a-merge-operation"></a>重新導向合併作業
 
@@ -284,7 +284,7 @@ Merge 指示詞有兩種：
 
 ### <a name="to-create-a-forward-merge-directive"></a>建立正向合併指示詞
 
-1. 使用元件模型範本建立 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 解決方案。
+1. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]使用元件模型範本來建立方案。
 
 2. 開啟 Dsldefinition.dsl 檔以顯示 [ **Dsl Explorer** ]。
 
@@ -308,7 +308,7 @@ Merge 指示詞有兩種：
 
 9. 儲存方案，然後按一下 [**方案總管**] 工具列上最右邊的按鈕，以轉換範本。
 
-10. 建置並執行方案。 Visual Studio 的新實例隨即出現。
+10. 建置並執行解決方案。 Visual Studio 的新實例隨即出現。
 
 11. 在**方案總管**中，開啟 mydsl。 [圖表] 和 [ **ComponentLanguage 工具箱**] 隨即出現。
 
@@ -316,7 +316,7 @@ Merge 指示詞有兩種：
 
      您應該不會看到無法使用的指標，而且您應該能夠在現有的**輸入埠**上放置新的。 選取新的**輸入埠**，並將它拖曳至**元件**上的另一個點。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [自訂工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)

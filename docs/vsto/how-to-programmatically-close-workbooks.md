@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式關閉活頁簿
+title: 如何：以程式設計方式關閉活頁簿
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea2ec3162ae7ffdee20f65452f67b0ddf4cc2dd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d3fe0f929632bd7021def9f6597182aa8fea87b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575399"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547494"
 ---
-# <a name="how-to-programmatically-close-workbooks"></a>HOW TO：以程式設計方式關閉活頁簿
+# <a name="how-to-programmatically-close-workbooks"></a>如何：以程式設計方式關閉活頁簿
   您可以關閉現用活頁簿，或是指定要關閉的活頁簿。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -56,6 +56,6 @@ ms.locfileid: "62575399"
 - [使用活頁簿](../vsto/working-with-workbooks.md)
 - [如何：以程式設計方式儲存活頁簿](../vsto/how-to-programmatically-save-workbooks.md)
 - [如何：以程式設計方式開啟活頁簿](../vsto/how-to-programmatically-open-workbooks.md)
-- [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)
-- [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)
+- [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)

@@ -1,18 +1,18 @@
 ---
 title: 控制圖示或 Decorator 的可見度
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76db7caa14050c924706763214e92a6ee3d68975
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748494"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546637"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 裝飾*專案是以*特定領域語言（DSL）形式出現在圖形上的圖示或文字行。 您可以根據模型中屬性的狀態，讓裝飾專案出現並消失。 例如，在代表個人的圖形上，您可能會有不同的圖示，視個人的性別、子女數目等等而有所不同。
@@ -58,13 +58,13 @@ ms.locfileid: "72748494"
 
 1. 將匯出的定義域屬性加入至網域類別。 在 [**屬性**] 視窗中，設定下列值：
 
-     **IsBrowsable =** `False` **-這會隱藏使用者的屬性**
+     **IsBrowsable =** `False`**-這會隱藏使用者的屬性**    
 
-     **Kind =** `Calculated` **-這表示您將提供可計算其值**的程式碼
+     **種類 =** `Calculated`**-這表示您將提供可計算其值的程式碼**    
 
      範例**DecoratorControl**的**名稱**
 
-     **類型** =  `Boolean`
+     **型** = `Boolean`
 
      如需詳細資訊，請參閱[計算和自訂儲存體屬性](../modeling/calculated-and-custom-storage-properties.md)。
 
@@ -76,7 +76,7 @@ ms.locfileid: "72748494"
 
     3. 在 [**篩選] 屬性**中，選取控制項屬性**DecoratorControl**。
 
-    4. 在 [**可見度專案**] 下，輸入 `True`。
+    4. 在 [**可見度專案**] 下，輸入 `True` 。
 
 3. 按一下 [**方案總管**] 工具列中的 [**轉換所有範本**]。
 
@@ -88,7 +88,7 @@ ms.locfileid: "72748494"
 
 6. 請注意缺少的命名空間、類別和方法。  例如，FamilyTree. Person. GetDecoratorControlValue （）。
 
-7. 在不同的程式碼檔案中，撰寫包含遺漏方法的部分類別定義。 例如:
+7. 在不同的程式碼檔案中，撰寫包含遺漏方法的部分類別定義。 例如：
 
     ```
     namespace Company.FamilyTree
@@ -103,9 +103,9 @@ ms.locfileid: "72748494"
 
 8. 重建並執行解決方案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [定義圖案和接點](../modeling/defining-shapes-and-connectors.md)
+- [定義圖案和連接器](../modeling/defining-shapes-and-connectors.md)
 - [設定圖表上的背景影像](../modeling/setting-a-background-image-on-a-diagram.md)
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

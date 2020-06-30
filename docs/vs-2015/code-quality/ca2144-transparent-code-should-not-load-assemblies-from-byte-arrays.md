@@ -11,21 +11,21 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 36b27880b5574e9e47067c240bc162cc15e8d3b6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 91a846d0f347916a22df54eb1f1a042bc686d132
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610311"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546415"
 ---
-# <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144：透明程式碼不可以從位元組陣列載入組件
+# <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144:透明程式碼不可以從位元組陣列載入組件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|TransparentMethodsShouldNotLoadAssembliesFromByteArrays|
 |CheckId|CA2144|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -41,7 +41,7 @@ ms.locfileid: "72610311"
  透明程式碼的安全性檢閱不如關鍵性程式碼的安全性檢閱徹底，因為透明程式碼無法執行安全性敏感動作。 透明程式碼中可能不會注意到從位元組陣列載入的組件，而該位元組陣列可能包含需要稽核之重大或更重要的安全關鍵性程式碼。 因此，透明程式碼不應該從位元組陣列載入元件。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請將載入元件的方法標記為 <xref:System.Security.SecurityCriticalAttribute> 或 <xref:System.Security.SecuritySafeCriticalAttribute> 屬性。
+ 若要修正此規則的違規情形，請使用或屬性來標示載入元件的方法 <xref:System.Security.SecurityCriticalAttribute> <xref:System.Security.SecuritySafeCriticalAttribute> 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。

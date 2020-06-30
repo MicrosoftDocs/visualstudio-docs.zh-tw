@@ -15,30 +15,30 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5753cc660d626098d234fbce93c0bf0269e52bb3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 9565bc1ae3166c0475e8af7f0fde381497309b01
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919042"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547910"
 ---
-# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500：變數名稱不應該與欄位名稱相符
+# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500:變數名稱不應該與欄位名稱相符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如需 Visual Studio 的最新檔，請參閱[CA1500：變數名稱不應該與功能變數名稱相符](/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names)。
 
-|||
+|Item|值|
 |-|-|
 |TypeName|VariableNamesShouldNotMatchFieldNames|
 |CheckId|CA1500|
-|分類|Microsoft。可維護性|
+|類別|Microsoft。可維護性|
 |中斷變更|在與欄位同名的參數上引發時：<br /><br /> -非中斷-如果宣告參數的欄位和方法無法在元件外部看到，不論您所做的變更為何。<br />-中斷-如果您變更欄位的名稱，而且可以在元件外部看到。<br />-中斷-如果您變更參數的名稱，以及可在元件外部看到其宣告的方法。<br /><br /> 在與欄位同名的本機變數上引發時：<br /><br /> -非中斷-如果在元件外部看不到欄位，不論您所做的變更為何。<br />-非中斷-如果您變更本機變數的名稱，而不變更欄位的名稱。<br />-中斷-如果您變更欄位的名稱，它可以在元件外部看到。|
 
 ## <a name="cause"></a>原因
  實例方法會宣告參數或區域變數，其名稱符合宣告類型的實例欄位。 若要攔截違反規則的區域變數，必須使用偵錯工具建立已測試的元件，而且必須要有相關聯的程式資料庫（.pdb）檔案。
 
 ## <a name="rule-description"></a>規則描述
- 當實例欄位的名稱符合參數或區域變數名稱時，會在方法主體內使用 `this` （在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]中`Me`）關鍵字來存取實例欄位。 維護程式碼時，很容易忘記這種差異，並假設參數/區域變數參考實例欄位，這會導致錯誤。 這種情況特別適用于冗長的方法主體。
+ 當實例欄位的名稱符合參數或區域變數名稱時，會在 `this` `Me` 方法主體內使用（in）關鍵字來存取實例欄位 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 。 維護程式碼時，很容易忘記這種差異，並假設參數/區域變數參考實例欄位，這會導致錯誤。 這種情況特別適用于冗長的方法主體。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請重新具名引數/變數或欄位。

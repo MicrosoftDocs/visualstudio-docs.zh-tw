@@ -1,7 +1,7 @@
 ---
 title: Office 方案的部署資訊清單
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,26 +15,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c96f0d87f5a49add1f0e8cebb61bab9659277e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972391"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547546"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Office 方案的部署資訊清單
-  部署資訊清單是 XML 檔案，說明 Office 方案的部署設定，以及識別目前的應用程式版本。
+  部署資訊清單是一個 XML 檔案，其中描述 Office 方案的部署設定，並識別目前的應用程式版本。
 
- 使用 Visual Studio 中的 Office 程式開發[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]中定義的部署資訊清單結構描述[ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)參考。
+ Visual Studio 中的 Office 開發使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)參考中定義的部署資訊清單架構。
 
 ## <a name="remarks"></a>備註
- Office 方案的部署資訊清單檔會識別目前的版本和其他部署設定。 它會參考應用程式資訊清單，並說明解決方案和解決方案中的所有檔案中的目前版本。
+ Office 方案的部署資訊清單檔，可識別目前的版本和其他部署設定。 它會參考應用程式資訊清單，並描述方案的目前版本和中的所有檔案。
 
 ## <a name="file-name-syntax"></a>檔案名稱語法
- 部署資訊清單檔案名稱必須以結尾 *.vsto*延伸模組。 雖然它是一種標準[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署資訊清單中，若要啟用 Visual Studio Tools for Office 執行階段來處理檔案不同的延伸模組。
+ 部署資訊清單檔案的名稱必須以 *. vsto*副檔名結尾。 雖然這是標準的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 部署資訊清單，但擴充功能不同于可讓 Visual Studio Tools for Office 執行時間處理檔案。
 
 ## <a name="example"></a>範例
- 下列程式碼範例說明 Visual Studio Tools for Office 方案的部署資訊清單。
+ 下列程式碼範例說明 Visual Studio Tools for Office 解決方案的部署資訊清單。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

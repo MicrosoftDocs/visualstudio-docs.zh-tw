@@ -15,21 +15,21 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1b7c4c82add8644a1c2c213536c2ad3c0097c3a6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 30eee67d54e4fc3c73b265240fff82b0729e1cfc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661983"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546641"
 ---
-# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023：不應該使用多維索引子
+# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023:不應該使用多維索引子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|IndexersShouldNotBeMultidimensional|
 |CheckId|CA1023|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -45,13 +45,13 @@ ms.locfileid: "72661983"
  請只在仔細考慮非標準索引子的需求之後，才隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示類型 `DayOfWeek03`，其中包含違反規則的多維度索引子。 索引子可以視為轉換類型，因此會更適當地公開為方法。 類型已在 `RedesignedDayOfWeek03` 中重新設計，以符合規則。
+ 下列範例顯示型別， `DayOfWeek03` 其中包含違反規則的多維度索引子。 索引子可以視為轉換類型，因此會更適當地公開為方法。 類型已在中重新設計 `RedesignedDayOfWeek03` ，以符合規則。
 
  [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.OneDimensionForIndexer/cpp/FxCop.Design.OneDimensionForIndexer.cpp#1)]
  [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.OneDimensionForIndexer/cs/FxCop.Design.OneDimensionForIndexer.cs#1)]
  [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.OneDimensionForIndexer/vb/FxCop.Design.OneDimensionForIndexer.vb#1)]
 
 ## <a name="related-rules"></a>相關規則
- [CA1043：必須針對索引子使用整數類或字串引數](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
+ [CA1043:必須針對索引子使用整數或字串引數](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
 
- [CA1024：建議在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024:建議在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)

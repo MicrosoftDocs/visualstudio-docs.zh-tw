@@ -1,7 +1,7 @@
 ---
 title: 將自訂架構驗證新增至相依性圖表
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c3c37feb2f2d68817807f056ee470f0d0d05f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597226"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546917"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>將自訂架構驗證新增至相依性圖表
 
@@ -81,33 +81,33 @@ ms.locfileid: "75597226"
 
 3. 在**方案總管**中，在 VSIX 專案的右鍵功能表上，選擇 [**設定為啟始專案**]。
 
-4. 在 **source.extension.vsixmanifest**的 [資產]下，加入圖層驗證專案做為 MEF 元件：
+4. 在 **source.extension.vsixmanifest**的 [資產] **** 下，加入圖層驗證專案做為 MEF 元件：
 
-    1. 選擇 [新增]。
+    1. 選擇 [新增]****。
 
-    2. 在 [加入新的資產] 對話方塊中，設定：
+    2. 在 [加入新的資產] **** 對話方塊中，設定：
 
-          = 
+         **類型**  = **VisualStudio. [microsoft.visualstudio.mefcomponent]**
 
-          = 
+         **來源**  = **目前方案中的專案**
 
-          = *您的驗證程式專案*
+         **專案**  = *您的驗證程式專案*
 
 5. 您也必須將它加入做為圖層驗證：
 
-    1. 選擇 [新增]。
+    1. 選擇 [新增]****。
 
-    2. 在 [加入新的資產] 對話方塊中，設定：
+    2. 在 [加入新的資產] **** 對話方塊中，設定：
 
-         **輸入** = **VisualStudio. microsoft.visualstudio.architecturetools.layer.validator**。 這不是下拉式清單的其中一個選項。 您必須從鍵盤輸入。
+         **類型**  = **VisualStudio. [microsoft.visualstudio.architecturetools.layer.validator**。 這不是下拉式清單的其中一個選項。 您必須從鍵盤輸入。
 
-          = 
+         **來源**  = **目前方案中的專案**
 
-          = *您的驗證程式專案*
+         **專案**  = *您的驗證程式專案*
 
 6. 返回圖層驗證專案，然後加入下列專案參考：
 
-    |**參考資料**|**這可讓您執行**|
+    |**參考**|**這可讓您執行**|
     |-|-|
     |Microsoft.VisualStudio.GraphModel.dll|讀取架構圖形|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|讀取與圖層相關聯的程式碼 DOM|
@@ -125,7 +125,7 @@ ms.locfileid: "75597226"
 
 9. 若要在 Visual Studio 的主要實例或另一部電腦上安裝 VSIX，請在 VSIX 專案的**bin**目錄中尋找 **.vsix**檔案。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。
 
-## <a name="programming"></a> 程式設計驗證
+## <a name="programming-validation"></a><a name="programming"></a> 程式設計驗證
 
 若要定義圖層驗證擴充功能，您可以定義具有下列特性的類別：
 
@@ -153,7 +153,7 @@ ms.locfileid: "75597226"
   > [!WARNING]
   > 請不要使用 `LogValidationError`的選擇性參數。
 
-當使用者叫用 [驗證架構] 功能表命令時，圖層執行階段系統會分析圖層及其成品，以產生圖形。 圖形包含四個部分：
+當使用者叫用 [驗證架構] **** 功能表命令時，圖層執行階段系統會分析圖層及其成品，以產生圖形。 圖形包含四個部分：
 
 - 在圖形中以節點和連結表示的 Visual Studio 方案的圖層模型。
 
@@ -194,7 +194,7 @@ ms.locfileid: "75597226"
 
 從圖層到程式碼中之項目的連結具有「代表」的類別。
 
-## <a name="debugging"></a> 驗證偵錯
+## <a name="debugging-validation"></a><a name="debugging"></a> 驗證偵錯
 
 若要對您的圖層驗證擴充功能進行偵錯，請按 CTRL + F5。 Visual Studio 的實驗執行個體隨即開啟。 在本執行個體中，開啟或建立圖層模型。 此模型必須與程式碼相關聯，而且必須有至少一個相依性。
 
@@ -210,7 +210,7 @@ ms.locfileid: "75597226"
 
 ### <a name="run-clean-solution-before-validate-architecture"></a>在驗證架構之前執行清除方案
 
-每當您更新驗證程式碼時，請使用實驗性方案中 [建置] 功能表上的 [清除方案] 命令，然後再測試驗證命令。 這是必要的，因為會快取驗證結果。 如果您尚未更新測試相依性圖表或其程式碼，則不會執行驗證方法。
+每當您更新驗證程式碼時，請使用實驗性方案中 [建置] **** 功能表上的 [清除方案] **** 命令，然後再測試驗證命令。 這是必要的，因為會快取驗證結果。 如果您尚未更新測試相依性圖表或其程式碼，則不會執行驗證方法。
 
 ### <a name="launch-the-debugger-explicitly"></a>明確地啟動偵錯工具
 
@@ -220,13 +220,13 @@ ms.locfileid: "75597226"
 
 或者，您可以插入對 `System.Windows.Forms.MessageBox.Show()`的呼叫。 當訊息方塊出現時，請移至 Visual Studio 的主要實例，然後在 [**調試**程式] 功能表上，按一下 [**附加至進程**]。 選取名為 **Graphcmd.exe**的處理序。
 
-一律藉由按 CTRL + F5 ([啟動但不偵錯]) 來啟動實驗執行個體。
+一律藉由按 CTRL + F5 ([啟動但不偵錯]****) 來啟動實驗執行個體。
 
 ### <a name="deploying-a-validation-extension"></a>部署驗證擴充功能
 
 若要在已安裝 Visual Studio 適當版本的電腦上安裝您的驗證擴充功能，請在目標電腦上開啟 VSIX 檔案。
 
-## <a name="example"></a> Example code
+## <a name="example-code"></a><a name="example"></a>範例程式碼
 
 ```csharp
 using System;
@@ -287,6 +287,6 @@ namespace Validator3
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [擴充相依性圖表](../modeling/extend-layer-diagrams.md)

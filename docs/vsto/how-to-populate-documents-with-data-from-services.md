@@ -1,7 +1,7 @@
 ---
 title: 如何：將服務的資料填入檔
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f53000f7d6aa8bdd8261bbe5658607918b6b449
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 01e2a83f464576d1ca780daa17c0d9478f0caa14
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985876"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547143"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>如何：將服務的資料填入檔
 
@@ -31,9 +31,9 @@ ms.locfileid: "72985876"
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>若要使用 web 服務中的資料填入檔層級專案
 
-1. 開啟 [資料來源] 視窗並為您的專案建立服務資料來源。 如需詳細資訊，請參閱[新增資料來源](../data-tools/add-new-data-sources.md)。
+1. 開啟 [資料來源] **** 視窗並為您的專案建立服務資料來源。 如需詳細資訊，請參閱[新增資料來源](../data-tools/add-new-data-sources.md)。
 
-2. 將想要的資料表或欄位從 [資料來源] 視窗拖曳至您的文件。
+2. 將想要的資料表或欄位從 [資料來源] **** 視窗拖曳至您的文件。
 
      即會在文件中建立控制項，並建立 <xref:System.Windows.Forms.BindingSource> 以繫結至專案中的物件類別，然後再產生該服務的類別。
 
@@ -45,11 +45,11 @@ ms.locfileid: "72985876"
 
      您所使用的方法取決於 web 服務所提供的功能。
 
-6. 將 web 服務的資料回應指派給 <xref:System.Windows.Forms.BindingSource>的 <xref:System.Windows.Forms.BindingSource.DataSource%2A> 屬性。
+6. 將 web 服務的資料回應指派給的 <xref:System.Windows.Forms.BindingSource.DataSource%2A> 屬性 <xref:System.Windows.Forms.BindingSource> 。
 
 當您執行專案時，控制項會顯示資料來源中的第一筆記錄。 您可以使用 <xref:System.Windows.Forms.BindingSource>中的物件處理貨幣事件，啟用捲動記錄的功能。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [新增資料來源](../data-tools/add-new-data-sources.md)

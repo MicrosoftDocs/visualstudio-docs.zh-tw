@@ -1,7 +1,7 @@
 ---
-title: 作法：將圖表控制項新增至工作表
+title: 如何：將圖表控制項加入至工作表
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80cc011cb9c2387b86e244f501fd5746ebb67535
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254658"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546233"
 ---
-# <a name="how-to-add-chart-controls-to-worksheets"></a>作法：將圖表控制項新增至工作表
-  您可以在設計階段及執行階段，於文件層級自訂中，將 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項加入 Microsoft Office Excel 工作表。 您也可以在執行階段，於 VSTO 增益集中加入 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項。
+# <a name="how-to-add-chart-controls-to-worksheets"></a>如何：將圖表控制項加入至工作表
+  您可以 <xref:Microsoft.Office.Tools.Excel.Chart> 在設計階段，以及在檔層級自訂的執行時間，將控制項加入 Microsoft Office Excel 工作表。 您也可以在 <xref:Microsoft.Office.Tools.Excel.Chart> 執行時間將控制項加入 VSTO 增益集。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -33,29 +33,29 @@ ms.locfileid: "71254658"
 
 - [在 VSTO 增益集專案中，于執行時間加入圖表控制項](#runtimeaddin)
 
-  如需<xref:Microsoft.Office.Tools.Excel.Chart>控制項的詳細資訊，請參閱[Chart 控制項](../vsto/chart-control.md)。
+  如需控制項的詳細資訊 <xref:Microsoft.Office.Tools.Excel.Chart> ，請參閱[Chart 控制項](../vsto/chart-control.md)。
 
-## <a name="designtime"></a>在設計階段加入圖表控制項
+## <a name="add-chart-controls-at-design-time"></a><a name="designtime"></a>在設計階段加入圖表控制項
  您可以採用您從應用程式中加入圖表的方式，將 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項加入工作表。
 
 > [!NOTE]
-> 控制項無法從 [**工具箱**] 或 [**資料來源**] 視窗使用。 <xref:Microsoft.Office.Tools.Excel.Chart>
+> <xref:Microsoft.Office.Tools.Excel.Chart>控制項無法從 [**工具箱**] 或 [**資料來源**] 視窗使用。
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>將圖表主控制項加入 Excel 工作表
 
 1. 在 [**插入**] 索引標籤的 [**圖表**] 群組中，按一下 [資料**行**]，再按一下圖表的類別目錄，然後按一下您想要的圖表類型。
 
-2. 在 [**插入圖表**] 對話方塊中，按一下 **[確定]** 。
+2. 在 [**插入圖表**] 對話方塊中，按一下 **[確定]**。
 
 3. 在 [**設計**] 索引標籤的 [**資料**] 群組中，按一下 [**選取資料**]。
 
-4. 在 **選取資料來源**對話方塊中，按一下**圖表** **資料範圍**方塊，然後清除任何預設選取項目。
+4. 在 [**選取資料來源**] 對話方塊中，按一下 [**圖表****資料範圍**] 方塊，並清除任何預設選取專案。
 
 5. 在 [**圖表的資料**] 工作表中，選取包含圖表之資料的儲存格範圍（儲存格**A5**到**D8**）。
 
-6. 在 [**選取資料來源**] 對話方塊中，按一下 **[確定]** 。
+6. 在 [**選取資料來源**] 對話方塊中，按一下 **[確定]**。
 
-## <a name="runtimedoclevel"></a>在檔層級專案中，于執行時間加入圖表控制項
+## <a name="add-chart-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>在檔層級專案中，于執行時間加入圖表控制項
  您可以在執行階段，以動態方式加入 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項。 當文件關閉時，動態建立的圖表便不再是文件中的主控制項。 如需詳細資訊，請參閱[在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>以程式設計方式將圖表控制項加入工作表
@@ -65,7 +65,7 @@ ms.locfileid: "71254658"
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]
 
-## <a name="runtimeaddin"></a>在 VSTO 增益集專案中，于執行時間加入圖表控制項
+## <a name="add-chart-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>在 VSTO 增益集專案中，于執行時間加入圖表控制項
  您可以利用程式設計方式，在 VSTO 增益集專案中，將 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項加入任何開啟中的工作表。 如需詳細資訊，請參閱[在 VSTO 增益集的執行時間中擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
  當工作表關閉時，動態建立的圖表控制項便不再是工作表中的主控制項。 如需詳細資訊，請參閱[在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)。

@@ -1,7 +1,7 @@
 ---
-title: 設定 Office 方案的組態資訊
+title: 設定 Office 方案的設定資訊
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,37 +13,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c477068b3aee3325acae0887e11da908d6c33a85
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328891"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545804"
 ---
-# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>作法：設定 Office 方案的組態資訊
-  您可以使用組態檔來設定 Office 方案特有的設定。 您可以指定組件繫結原則、 遠端處理物件、 偵錯和追蹤設定等設定。
+# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>如何：設定 Office 方案的設定資訊
+  您可以使用設定檔來設定 Office 方案特有的設定。 您可以指定 [元件系結原則]、[遠端物件]、[debug] 和 [追蹤設定] 等設定。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-### <a name="to-add-a-configuration-file-to-your-office-project"></a>若要新增至您的 Office 專案的組態檔
+### <a name="to-add-a-configuration-file-to-your-office-project"></a>將設定檔新增至 Office 專案
 
-1. 在 [專案]  功能表中，按一下 [加入新項目]  。
+1. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
 
-2. 在 **分類**窗格中，按一下**一般**。
+2. 在 [**類別**] 窗格中，按一下 **[一般**]。
 
-3. 在 **範本**窗格中，選取**應用程式組態檔**。
+3. 在 [**範本**] 窗格中，選取 [**應用程式佈建檔**]。
 
-4. 在 **名稱**方塊中，輸入相同的名稱做為組件，再加上副檔名 *.config*。例如，呼叫 Excel 專案的組件的組態檔*ExcelWorkbook1.dll*就會命名為*ExcelWorkbook1.dll.config*。
+4. 在 [**名稱**] 方塊中，輸入與元件相同的名稱加上副檔名 *.config*。例如，名為*ExcelWorkbook1.dll*之 Excel 專案元件的設定檔會命名為*ExcelWorkbook1.dll.config*。
 
-5. 按一下 [加入]  。
+5. 按一下 **[新增]** 。
 
-6. 建立您的組態檔，根據應用程式組態檔結構描述。 如需詳細資訊，請參閱 <<c0> [ 適用於.NET Framework 的組態檔結構描述](/dotnet/framework/configure-apps/file-schema/index)。
+6. 根據應用程式佈建檔架構，建立您的設定檔。 如需詳細資訊，請參閱[.NET Framework 的設定檔架構](/dotnet/framework/configure-apps/file-schema/index)。
 
-   沒有任何特殊的考量，如 Office 專案中使用組態檔。
+   使用設定檔與 Office 專案沒有任何特殊考慮。
 
 ## <a name="see-also"></a>另請參閱
-- [適用於.NET Framework 的組態檔結構描述](/dotnet/framework/configure-apps/file-schema/index)
+- [.NET Framework 的設定檔架構](/dotnet/framework/configure-apps/file-schema/index)
 - [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)
 - [部署 Office 方案](../vsto/deploying-an-office-solution.md)

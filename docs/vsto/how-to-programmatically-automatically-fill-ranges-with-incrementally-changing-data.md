@@ -1,7 +1,7 @@
 ---
-title: 以累加方式以程式設計方式變更資料範圍的自動填滿
+title: 以程式設計方式自動填入增量變更資料範圍
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,46 +15,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a514f83d12cd00c4a7792ae0bf2483fdd916897a
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 076381c93d11c2d13bdd89ea5c36c0039e15ef71
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177694"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547468"
 ---
-# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>作法：使用累加式變更資料，以程式設計的方式自動填滿範圍
-  <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法的<xref:Microsoft.Office.Interop.Excel.Range>物件可讓您將會自動填入值的工作表中的範圍。 大多數情況下，<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法用來儲存以累加方式增加或減少的範圍內的值。 您可以藉由提供選擇性的常數，從指定的行為<xref:Microsoft.Office.Interop.Excel.XlAutoFillType>列舉型別。
+# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>如何：以程式設計方式自動以累加方式變更資料填滿範圍
+  <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>物件的方法可 <xref:Microsoft.Office.Interop.Excel.Range> 讓您在工作表中，自動填入值。 最常見的 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 方法是用來儲存範圍內以累加方式增加或減少的值。 您可以從列舉提供選擇性的常數，藉以指定行為 <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> 。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- 使用時，您必須指定兩個範圍<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:
+ 使用時，您必須指定兩個範圍 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> ：
 
-- 呼叫的範圍<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法，它指定填滿的起點，並包含初始值。
+- 呼叫方法的範圍 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> ，指定填滿的起點並包含初始值。
 
-- 您想要填滿時，範圍當做參數傳遞給<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法。 此目的範圍必須包括包含的起始值的範圍。
+- 您想要填入的範圍，做為參數傳遞至 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 方法。 這個目的範圍必須包含包含初始值的範圍。
 
     > [!NOTE]
-    > 您不能傳遞<xref:Microsoft.Office.Tools.Excel.NamedRange>控制的位置<xref:Microsoft.Office.Interop.Excel.Range>。 如需詳細資訊，請參閱 <<c0> [ 主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
+    > 您無法傳遞 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項來取代 <xref:Microsoft.Office.Interop.Excel.Range> 。 如需詳細資訊，請參閱[主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
 
 ## <a name="example"></a>範例
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
  [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]
 
 ## <a name="compile-the-code"></a>編譯程式碼
- 第一個資料格，您想要填入的範圍必須包含一個初始值。
+ 您要填滿之範圍的第一個資料格必須包含初始值。
 
- 這個範例需要您填入三個區域：
+ 此範例會要求您填寫三個區域：
 
-- 資料行 B 是包含五個工作天。 初始的值輸入**星期一**儲存格 B1 中。
+- 資料行 B 包含五個工作日。 在 [初始值] 中，輸入資料格 B1 中的 [**星期一**]。
 
-- C 資料行是加入第五個月。 初始的值輸入**年 1 月**儲存格 C1 中。
+- 資料行 C 包含五個月。 針對 [初始值]，在儲存格 C1 中輸入**一月**。
 
-- 資料行 D 是包含一系列數字，每個資料列的兩個遞增。 初始的值中，輸入**4**儲存格 D1 並**6**在儲存格 D2。
+- Column D 是要包含一連串數位，每個資料列遞增2。 針對初始值，在儲存格 D2 中的儲存格 D1 和**6**中輸入**4** 。
 
 ## <a name="see-also"></a>另請參閱
 - [使用範圍](../vsto/working-with-ranges.md)
-- [如何：以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [如何：以程式設計方式在程式碼中參考工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 - [如何：以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [如何：以程式設計方式執行 Excel 計算](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
-- [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)
+- [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

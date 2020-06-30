@@ -1,5 +1,5 @@
 ---
-title: ExtensionDataItem 項目 |Microsoft Docs
+title: ExtensionDataItem 元素 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 658fb63227f4c4532038d537bde7cc10ca2c4f5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 295ee649cec01e50b237b4fad1798806d460727b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967379"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546545"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 項目
-  自訂資料項目中索引鍵/值格式的 SharePoint 專案項目與相關聯。 金鑰和值必須是字串。
+  與 SharePoint 專案專案相關聯的自訂資料項目（以索引鍵/值格式）。 索引鍵和值都必須是字串。
 
 ## <a name="syntax"></a>語法
 
@@ -36,8 +36,8 @@ ms.locfileid: "62967379"
 
 |屬性|描述|
 |---------------|-----------------|
-|**Key**|所需**xs： 字串**屬性。<br /><br /> 用來儲存和擷取的資料項目的索引鍵。|
-|**值**|所需**xs: string**屬性。<br /><br /> 資料項目的值。|
+|**索引鍵**|必要的**xs： string**屬性。<br /><br /> 用來儲存和取出資料項目的索引鍵。|
+|**ReplTest1**|必要的**xs： string**屬性。<br /><br /> 資料項目的值。|
 
 ### <a name="child-elements"></a>子元素
  無。
@@ -46,19 +46,19 @@ ms.locfileid: "62967379"
 
 |元素|描述|
 |-------------|-----------------|
-|[ExtensionData](../sharepoint/extensiondata-element.md)|代表 SharePoint 專案項目相關聯的自訂資料項目的集合。|
+|[ExtensionData](../sharepoint/extensiondata-element.md)|代表與 SharePoint 專案專案相關聯之自訂資料項目的集合。|
 
 ## <a name="remarks"></a>備註
- 當您自訂的資料使用與相關聯的 SharePoint 專案項目<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>的屬性<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>物件時，Visual Studio 會將資料儲存至新**ExtensionDataItem**中的項目`.spdata`檔案專案項目。 如需詳細資訊，請參閱 <<c0> [ 將資料儲存於 SharePoint 專案系統擴充](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
+ 當您使用物件的屬性將自訂資料與 SharePoint 專案專案產生關聯時 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> ，Visual Studio 會將資料儲存至專案專案之檔案中的新**ExtensionDataItem**元素 `.spdata` 。 如需詳細資訊，請參閱在[SharePoint 專案系統的延伸模組中儲存資料](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
 
 ## <a name="element-information"></a>項目資訊
 
-|||
+|屬性|值|
 |-|-|
-|**命名空間**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**結構描述名稱**|SharePoint 專案項目結構描述|
-|**驗證檔案**|ProjectItemModelSchema.xsd|
+|**Namespace**|HTTP： \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**架構名稱**|SharePoint 專案專案架構|
+|**驗證檔案**|ProjectItemModelSchema .xsd|
 |**可以是空的**|否|
 
 ## <a name="see-also"></a>另請參閱
-- [SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [SharePoint 專案專案架構參考](../sharepoint/sharepoint-project-item-schema-reference.md)

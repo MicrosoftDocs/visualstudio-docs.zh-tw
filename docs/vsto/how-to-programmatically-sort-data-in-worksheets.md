@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式排序工作表中的資料
+title: 如何：以程式設計方式排序工作表中的資料
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eeef19a04245d74d99050930cc3f66da627ffdd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08fa461dc55bf42857e21a5419cab6a0ff147173
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961780"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546974"
 ---
-# <a name="how-to-programmatically-sort-data-in-worksheets"></a>HOW TO：以程式設計方式排序工作表中的資料
+# <a name="how-to-programmatically-sort-data-in-worksheets"></a>如何：以程式設計方式排序工作表中的資料
   您可以在執行階段排序工作表範圍和清單中包含的資料。 下列程式碼會先按第一個資料行的資料，再按第二個資料行的資料，排序名為 `Fruits` 的多欄範圍。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="sort-data-in-a-document-level-customization"></a>排序的文件層級自訂中的資料
+## <a name="sort-data-in-a-document-level-customization"></a>排序檔層級自訂中的資料
 
 ### <a name="to-sort-data-in-a-namedrange-control"></a>排序 NamedRange 控制項的資料
 
@@ -36,7 +36,7 @@ ms.locfileid: "62961780"
     [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
     [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]
 
-   將下列程式碼中的放*Sheet1.vb*或*Sheet1.cs*中的資料進行排序<xref:Microsoft.Office.Tools.Excel.ListObject>控制項。 此程式碼假設您在名為 `Sheet1` 的工作表中，有名為 `fruitList` 的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。
+   將下列程式碼放在*Sheet1 .vb*或*Sheet1.cs*中，以排序控制項中的資料 <xref:Microsoft.Office.Tools.Excel.ListObject> 。 此程式碼假設您在名為 `Sheet1` 的工作表中，有名為 `fruitList` 的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。
 
 ### <a name="to-sort-data-in-a-listobject-control"></a>排序 ListObject 控制項的資料
 
@@ -45,7 +45,7 @@ ms.locfileid: "62961780"
      [!code-csharp[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#79)]
      [!code-vb[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#79)]
 
-## <a name="sort-data-in-a-vsto-add-in"></a>在 VSTO 增益集中的排序資料
+## <a name="sort-data-in-a-vsto-add-in"></a>在 VSTO 增益集中排序資料
 
 ### <a name="to-sort-data-in-a-native-range"></a>排序原生範圍的資料
 
@@ -63,8 +63,8 @@ ms.locfileid: "62961780"
 
 ## <a name="see-also"></a>另請參閱
 - [使用工作表](../vsto/working-with-worksheets.md)
-- [如何：使用累加式變更資料，以程式設計的方式自動填滿範圍](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
-- [如何：以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [如何：以程式設計方式自動以累加方式變更資料填滿範圍](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
+- [如何：以程式設計方式在程式碼中參考工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 - [如何：以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [NamedRange 控制項](../vsto/namedrange-control.md)
 - [ListObject 控制項](../vsto/listobject-control.md)

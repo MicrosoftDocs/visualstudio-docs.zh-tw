@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式搜尋特定的連絡人
+title: 如何：以程式設計方式搜尋特定的連絡人
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: feff583d28bf53f4bffc9b425d52902688b80a4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d8b2302586fc09fcfec6420d97374197eae7e67
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000318"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547065"
 ---
-# <a name="how-to-programmatically-search-for-a-specific-contact"></a>HOW TO：以程式設計方式搜尋特定的連絡人
+# <a name="how-to-programmatically-search-for-a-specific-contact"></a>如何：以程式設計方式搜尋特定的連絡人
   下列範例會在 Outlook 的 [連絡人] 資料夾中，先依名字再依姓氏來搜尋特定連絡人。 該範例假設 [連絡人] 資料夾中有名為 **John Evans** 的連絡人。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -31,4 +31,4 @@ ms.locfileid: "63000318"
 
 ## <a name="see-also"></a>另請參閱
 - [使用連絡人項目](../vsto/working-with-contact-items.md)
-- [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)
+- [VSTO 增益集程式設計入門](../vsto/getting-started-programming-vsto-add-ins.md)

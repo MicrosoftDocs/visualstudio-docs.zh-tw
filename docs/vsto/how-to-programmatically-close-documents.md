@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式關閉文件
+title: 如何：以程式設計方式關閉檔
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 504fe863c746a788e797d3a84c4cd0b3d6c3d19b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 18dc4099f4c1df17efbe2dd3c213332bb73b52c4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422477"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547455"
 ---
-# <a name="how-to-programmatically-close-documents"></a>HOW TO：以程式設計方式關閉文件
+# <a name="how-to-programmatically-close-documents"></a>如何：以程式設計方式關閉檔
   您可以關閉使用中文件，或者指定要關閉的文件。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63422477"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#3)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#3)]
 
-## <a name="close-a-document-that-you-specify-by-name"></a>關閉您依名稱指定的文件
+## <a name="close-a-document-that-you-specify-by-name"></a>關閉您依名稱指定的檔
  對 VSTO 增益集和文件層級自訂而言，依指定名稱關閉文件的方式都是相同的。
 
 ### <a name="to-close-a-document-that-you-specify-by-name"></a>依指定名稱關閉文件
@@ -62,8 +62,8 @@ ms.locfileid: "63422477"
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]
 
 ## <a name="see-also"></a>另請參閱
-- [如何：以程式設計方式開啟現有文件](../vsto/how-to-programmatically-open-existing-documents.md)
-- [如何：以程式設計方式儲存文件](../vsto/how-to-programmatically-save-documents.md)
-- [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)
-- [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [如何：以程式設計方式開啟現有檔](../vsto/how-to-programmatically-open-existing-documents.md)
+- [如何：以程式設計方式儲存檔](../vsto/how-to-programmatically-save-documents.md)
+- [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)
+- [主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

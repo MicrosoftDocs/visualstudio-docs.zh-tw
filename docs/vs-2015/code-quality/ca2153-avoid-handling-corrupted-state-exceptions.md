@@ -8,21 +8,21 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9d4ca2668f2d6241e9a3cca88b4722ee5348abc3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 27d837c09e5f2f90796c149bf58d1114d7e6352d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667416"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546311"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153：避免處理損毀狀態例外狀況
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153:避免處理損毀狀態例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因

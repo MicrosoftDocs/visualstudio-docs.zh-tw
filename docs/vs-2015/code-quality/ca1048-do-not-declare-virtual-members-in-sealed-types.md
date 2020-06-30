@@ -15,30 +15,30 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9f843efe0aa17b6e87fdb047e1f98a3715ae11af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19ae3a4fdc620343f18aa0845c33e1d73529adfe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603319"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546792"
 ---
-# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048：不要在密封類型中宣告 virtual 成員
+# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048:不要在密封類型中宣告 virtual 成員
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DoNotDeclareVirtualMembersInSealedTypes|
 |CheckId|CA1048|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用類型是密封的，並且宣告的方法同時為 `virtual` （在 Visual Basic 中 `Overridable`），而不是最終。 此規則不會針對委派類型報告違規，這必須遵循此模式。
+ 公用類型是密封的，而且會宣告同時為 `virtual` （ `Overridable` 在 Visual Basic 中）且不是最終的方法。 此規則不會針對委派類型報告違規，這必須遵循此模式。
 
 ## <a name="rule-description"></a>規則描述
  類型會將方法宣告為 virtual，讓繼承類型可以覆寫 virtual 方法的實作。 根據定義，您無法繼承自密封型別，而使密封型別上的虛擬方法毫無意義。
 
- Visual Basic 的 .NET 和C#編譯器不允許類型違反此規則。
+ Visual Basic .NET 和 c # 編譯器不允許類型違反此規則。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規，請將方法設為非虛擬，或讓類型成為可繼承。

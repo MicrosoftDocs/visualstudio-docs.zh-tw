@@ -1,18 +1,18 @@
 ---
 title: 逐步解說：偵錯存取模型的文字範本
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f592cfbd46e0f4fc3a64ecaabadf17a6754480c0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e33297bba899c1843b8601c031d7669531a1bd3f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593521"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546896"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>逐步解說：偵錯存取模型的文字範本
 當您修改或加入特定領域語言方案中的文字模板時，您可能會在引擎將範本轉換成原始程式碼時，或在編譯產生的程式碼時收到錯誤。 下列逐步解說示範您可以執行哪些動作來進行文字模板的調試。
@@ -40,9 +40,9 @@ ms.locfileid: "75593521"
 
 1. 建立解決方案，並在偵錯工具中開始執行它。 （在 [**建立**] 功能表上，按一下 [**重建方案**]，然後在 [**調試**] 功能表上，按一下 [**開始調試**]）。Visual Studio 的新實例會開啟調試專案。
 
-2. 將名為 `DebugTest.tt` 的文字檔新增至調試專案。
+2. 將名為的文字檔新增 `DebugTest.tt` 至調試專案。
 
-3. 請確定 DebugTest.tt 的 [**自訂工具**] 屬性已設定為 [`TextTemplatingFileGenerator`]。
+3. 請確定 DebugTest.tt 的 [**自訂工具**] 屬性已設為 `TextTemplatingFileGenerator` 。
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>從文字模板存取模型的偵錯工具指示詞
  您必須先呼叫產生的指示詞處理器，才可以從文字模板中的語句和運算式存取模型。 呼叫產生的指示詞處理器可讓您模型中的類別可供文字模板程式碼當做屬性使用。 如需詳細資訊，請參閱[從文字模板存取模型](../modeling/accessing-models-from-text-templates.md)。
@@ -93,11 +93,11 @@ ms.locfileid: "75593521"
 
      **名為 ' DebuggingTestLanguageDirectiveProcessor ' 的處理器不支援名為 ' modelRoot ' 的指示詞。轉換將不會執行。**
 
-     在此情況下，指示詞呼叫包含不正確的指示詞名稱。 您已指定 `modelRoot` 做為指示詞名稱，但 `DebuggingTestLanguage`正確的指示詞名稱。
+     在此情況下，指示詞呼叫包含不正確的指示詞名稱。 您已將指定為指示詞 `modelRoot` 名稱，但正確的指示詞名稱是 `DebuggingTestLanguage` 。
 
 3. 按兩下 [**錯誤清單**] 視窗中的錯誤，跳至程式碼。
 
-4. 若要修正程式碼，請將指示詞名稱變更為 `DebuggingTestLanguage`。
+4. 若要修正程式碼，請將指示詞名稱變更為 `DebuggingTestLanguage` 。
 
      變更會反白顯示。
 
@@ -157,13 +157,13 @@ ms.locfileid: "75593521"
 
      (C#)
 
-     **編譯轉換： VisualStudio. TextTemplating\<GUID >。GeneratedTextTransformation ' 不包含 ' Examplemodel.store.customer ' 的定義**
+     **編譯轉換： VisualStudio. TextTemplating \<GUID> 。GeneratedTextTransformation ' 不包含 ' Examplemodel.store.customer ' 的定義**
 
      （Visual Basic）
 
-     **正在編譯轉換： ' Examplemodel.store.customer ' 不是 ' VisualStudio. TextTemplating\<GUID > 的成員。GeneratedTextTransformation'.**
+     **正在編譯轉換： ' Examplemodel.store.customer ' 不是 ' VisualStudio. TextTemplating 的成員 \<GUID> 。GeneratedTextTransformation'.**
 
-     在此情況下，文字模板程式碼會包含不正確的屬性名稱。 您已指定 `ExampleModel` 做為屬性名稱，但 `LibraryModel`正確的屬性名稱。 您可以在提供的參數中找到正確的屬性名稱，如下列程式碼所示：
+     在此情況下，文字模板程式碼會包含不正確的屬性名稱。 您已將指定 `ExampleModel` 為屬性名稱，但正確的屬性名稱為 `LibraryModel` 。 您可以在提供的參數中找到正確的屬性名稱，如下列程式碼所示：
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
@@ -171,7 +171,7 @@ ms.locfileid: "75593521"
 
 3. 按兩下 [錯誤清單] 視窗中的錯誤，跳至程式碼。
 
-4. 若要修正程式碼，請將文字模板程式碼中的屬性名稱變更為 `LibraryModel`。
+4. 若要修正程式碼，請將 `LibraryModel` 文字模板程式碼中的屬性名稱變更為。
 
      所做的變更已醒目提示。
 

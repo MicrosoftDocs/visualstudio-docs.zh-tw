@@ -15,21 +15,21 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1f333478c952db74fa6a9482cdad91ce6a858301
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eb0e097c2f13fa9d9279a5f3e9761a53cb6e4b1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666004"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547741"
 ---
-# <a name="ca2106-secure-asserts"></a>CA2106：必須保護判斷提示
+# <a name="ca2106-secure-asserts"></a>CA2106:必須保護判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|SecureAsserts|
 |CheckId|CA2106|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -44,5 +44,5 @@ ms.locfileid: "72666004"
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  只有在仔細的安全性審查之後，才隱藏此規則的警告。
 
-## <a name="see-also"></a>請參閱
- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>[安全程式碼撰寫方針](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)
+## <a name="see-also"></a>另請參閱
+ <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [安全程式碼撰寫方針](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)

@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式刪除 Outlook 連絡人
+title: 如何：以程式設計方式刪除 Outlook 連絡人
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55ee5698ce1cb36a79a596124dedd681e6da4bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4412c86652d08fb1c415b4753bfb18a903a0b0d9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814621"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545934"
 ---
-# <a name="how-to-programmatically-delete-outlook-contacts"></a>HOW TO：以程式設計方式刪除 Outlook 連絡人
-  這個範例會刪除連絡人。 本範例假設 [連絡人]  資料夾中有名為 "Armando Pinto" 的連絡人。
+# <a name="how-to-programmatically-delete-outlook-contacts"></a>如何：以程式設計方式刪除 Outlook 連絡人
+  這個範例會刪除連絡人。 本範例假設 [連絡人] **** 資料夾中有名為 "Armando Pinto" 的連絡人。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

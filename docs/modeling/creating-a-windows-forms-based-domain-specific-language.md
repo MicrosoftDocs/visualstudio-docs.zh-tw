@@ -1,18 +1,18 @@
 ---
 title: 建立 Windows Form 架構之網域指定的語言
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f565184dcb9570ecc34b61f1f2d4d0e2ce2a4110
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 57507775a03bcfd0649f4efbf8a7771fefc8e20b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114888"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547312"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>建立以 Windows Forms 為基礎的網域特定語言
 
@@ -39,9 +39,9 @@ ms.locfileid: "76114888"
 
    1. 轉換所有範本。
 
-   2. 建立並執行範例（**Ctrl**+**F5**）。
+   2. 建立並執行範例（**Ctrl** + **F5**）。
 
-   3. 在 Visual Studio 的實驗實例中，開啟調試專案中的 `Sample` 檔案。
+   3. 在 Visual Studio 的實驗實例中，開啟 `Sample` 調試專案中的檔案。
 
         請注意，它會顯示在 Windows Forms 控制項中。
 
@@ -51,21 +51,21 @@ ms.locfileid: "76114888"
 
    在 Visual Studio 的主要實例中，請注意下列關於 DSL 解決方案的要點：
 
-- `DslDefinition.dsl` 不包含任何圖表元素。 這是因為您不會使用 DSL 圖表來查看此 DSL 的實例模型。 相反地，您會將 Windows Form 系結至模型，而表單上的元素會顯示模型。
+- `DslDefinition.dsl`不包含任何圖表元素。 這是因為您不會使用 DSL 圖表來查看此 DSL 的實例模型。 相反地，您會將 Windows Form 系結至模型，而表單上的元素會顯示模型。
 
-- 除了 `Dsl` 和 `DslPackage` 專案以外，方案包含第三個名為 `UI.`**UI**專案的專案，其中包含 Windows Forms 控制項的定義。 `DslPackage` 取決於 `UI`，`UI` 取決於 `Dsl`。
+- 除了 `Dsl` 和 `DslPackage` 專案以外，方案包含名為 [UI 專案] 的第三個專案， `UI.` **UI**其中包含 Windows Forms 控制項的定義。 `DslPackage`視 `UI` 而定，和 `UI` 相依于 `Dsl` 。
 
-- 在 `DslPackage` 專案中，`UI\DocView.cs` 包含的程式碼會顯示 `UI` 專案中定義的 Windows Forms 控制項。
+- 在 `DslPackage` 專案中， `UI\DocView.cs` 包含的程式碼會顯示專案中所定義的 Windows Forms 控制項 `UI` 。
 
-- `UI` 專案包含系結至 DSL 之表單控制項的工作範例。 不過，當您變更 DSL 定義時，它不會有作用。 `UI` 專案包含：
+- `UI`專案包含系結至 DSL 之表單控制項的工作範例。 不過，當您變更 DSL 定義時，它不會有作用。 `UI`專案包含：
 
-  - 名為 `ModelViewControl`的 Windows Forms 類別。
+  - 名為的 Windows Forms 類別 `ModelViewControl` 。
 
-  - 名為 `DataBinding.cs` 的檔案，其中包含 `ModelViewControl`的其他部分定義。 若要查看其內容，請在**方案總管**中，開啟檔案的快捷方式功能表，然後選擇 [ **View Code**]。
+  - 名為 `DataBinding.cs` 的檔案，其中包含的其他部分定義 `ModelViewControl` 。 若要查看其內容，請在**方案總管**中，開啟檔案的快捷方式功能表，然後選擇 [ **View Code**]。
 
 ### <a name="about-the-ui-project"></a>關於 UI 專案
 
-當您更新 DSL 定義檔以定義您自己的 DSL 時，您必須更新 `UI` 專案中的控制項，以顯示您的 DSL。 不同于 `Dsl` 和 `DslPackage` 專案，不會從 `DslDefinitionl.dsl`產生範例 `UI` 專案。 如有需要，您可以新增 tt 檔案來產生程式碼，雖然本逐步解說並未涵蓋這項功能。
+當您更新 DSL 定義檔以定義您自己的 DSL 時，您必須更新專案中的控制項， `UI` 以顯示您的 dsl。 不同于 `Dsl` 和 `DslPackage` 專案， `UI` 不會從產生範例專案 `DslDefinitionl.dsl` 。 如有需要，您可以新增 tt 檔案來產生程式碼，雖然本逐步解說並未涵蓋這項功能。
 
 ## <a name="update-the-dsl-definition"></a>更新 DSL 定義
 
@@ -77,16 +77,16 @@ ms.locfileid: "76114888"
 
 2. 刪除**ExampleElement**
 
-3. 將**examplemodel.store.customer**網域類別重新命名為 `Farm`。
+3. 將**examplemodel.store.customer**網域類別重新命名為 `Farm` 。
 
-     提供名為 `Size` 類型為**Int32**的其他網域屬性，以及**布林**類型的 `IsOrganic`。
+     提供另一個名稱為 `Size` **Int32**且 `IsOrganic` 類型為**Boolean**的網域屬性。
 
     > [!NOTE]
-    > 如果您刪除根域類別，然後建立新的根，就必須重設編輯器的根類別屬性。 在 [ **DSL Explorer**] 中，選取 [**編輯器**]。 然後在屬性視窗中，將 [**根類別**] 設定為 [`Farm`]。
+    > 如果您刪除根域類別，然後建立新的根，就必須重設編輯器的根類別屬性。 在 [ **DSL Explorer**] 中，選取 [**編輯器**]。 然後在屬性視窗中，將 [**根類別**] 設定為 `Farm` 。
 
 4. 使用**命名網域類別**工具來建立下列網域類別：
 
-    - `Field`-提供另一個名為 `Size`的網域屬性。
+    - `Field`-提供另一個名為的網域屬性 `Size` 。
 
     - `Animal`-在屬性視窗中，將**繼承修飾**詞設定為**Abstract**。
 
@@ -96,9 +96,9 @@ ms.locfileid: "76114888"
 
     - `Goat`
 
-6. 使用 [**繼承**] 工具可進行 `Goat`，`Sheep` 繼承自 `Animal`。
+6. 使用 [**繼承**] 工具來進行 `Goat` 和 `Sheep` 繼承 `Animal` 。
 
-7. 使用內嵌**工具，在 `Farm`** 底下嵌入 `Field` 和 `Animal`。
+7. 使用內嵌**工具，在上嵌入** `Field` 和 `Animal` `Farm` 。
 
 8. 您可能想要整理圖表。 若要減少重複元素的數目，請使用分葉元素的快捷方式功能表上的 [將**子樹帶入此處**] 命令。
 
@@ -117,13 +117,13 @@ ms.locfileid: "76114888"
 
 1. 在 [**資料**] 功能表上，選擇 [**顯示資料來源**]。
 
-     [資料來源] 視窗隨即開啟。
+     [資料來源]**** 視窗隨即開啟。
 
-     選擇 [**加入新的資料來源**]。 [資料來源組態精靈] 隨即開啟。
+     選擇 [**加入新的資料來源**]。 [**資料來源設定向導]** 隨即開啟。
 
-2. 選擇[物件 **]，[下一步]** 。
+2. 選擇**Object**[物件 **]，[下一步]**。
 
-     展開 [ **Dsl**]、[ **FarmApp**] 和 [選取**伺服器**陣列]，這是您模型的根類別。 選擇 [完成]。
+     展開 [ **Dsl**]、[ **FarmApp**] 和 [選取**伺服器**陣列]，這是您模型的根類別。 選擇 [完成]****。
 
      在方案總管中， **UI**專案現在包含**Properties\DataSources\Farm.datasource**
 
@@ -135,7 +135,7 @@ ms.locfileid: "76114888"
 
 1. 在**UI**專案中，刪除所有現有的 .cs 檔案。
 
-2. 將名為 `FarmControl` 的新**使用者控制項**檔案加入至**UI**專案。
+2. 將名為的新**使用者控制項**檔案加入 `FarmControl` 至**UI**專案。
 
 3. 在 [**資料來源**] 視窗的 [**伺服器**陣列] 下拉式功能表上，選擇 [**詳細資料**]。
 
@@ -147,22 +147,22 @@ ms.locfileid: "76114888"
 
     此時會出現一組控制項，每個屬性各有一個。 關聯性屬性不會產生控制項。
 
-5. 刪除**farmBindingNavigator**。 這也會在 `FarmControl` 設計工具中自動產生，但對此應用程式而言並不實用。
+5. 刪除**farmBindingNavigator**。 這也會在設計工具中自動產生 `FarmControl` ，但對此應用程式而言並不實用。
 
-6. 使用 [工具箱] 建立兩個**DataGridView**實例，並將它們命名為 `AnimalGridView` 和 `FieldGridView`。
+6. 使用 [工具箱] 建立兩個**DataGridView**實例，並將其命名為 `AnimalGridView` 和 `FieldGridView` 。
 
    > [!NOTE]
    > 另一個步驟是將 [動物] 和 [欄位] 專案從 [資料來源] 視窗拖曳到控制項上。 此動作會自動建立方格視圖和資料來源之間的資料格和系結。 不過，此系結在 Dsl 中無法正常運作。 因此，最好是手動建立資料格和系結。
 
 7. 如果 [工具箱] 不包含**ModelingBindingSource**工具，請將它加入。 在 [**資料**] 索引標籤的快捷方式功能表上，選擇 **[選擇專案**]。 在 [**選擇工具箱專案**] 對話方塊中，從 [ **.NET Framework** ] 索引標籤中選取 [ **ModelingBindingSource** ]。
 
-8. 使用 [工具箱] 建立兩個**ModelingBindingSource**實例，並將它們命名為 `AnimalBinding` 和 `FieldBinding`。
+8. 使用 [工具箱] 建立兩個**ModelingBindingSource**實例，並將其命名為 `AnimalBinding` 和 `FieldBinding` 。
 
 9. 將每個**ModelingBindingSource**的**DataSource**屬性設定為**farmBindingSource**。
 
      將 [ **DataMember** ] 屬性設定為 [**動物**] 或 [**欄位**]。
 
-10. 將 `AnimalGridView` 的**資料來源**屬性設定為 `AnimalBinding`，`FieldGridView` 為 `FieldBinding`。
+10. 將的**DataSource**屬性設 `AnimalGridView` 為 `AnimalBinding` ，並將的設定 `FieldGridView` 為 `FieldBinding` 。
 
 11. 調整伺服器陣列控制項的配置，以配合您的感受。
 
@@ -174,7 +174,7 @@ ms.locfileid: "76114888"
 
 - 它可確保當使用者選取資料列時，屬性視窗會顯示對應之模型專案的屬性，而不是資料格資料列。
 
-  ![DslWpf4 在資料來源和 views 之間](../modeling/media/dslwpf4.png) 連結架構。
+  ![DslWpf4 ](../modeling/media/dslwpf4.png) 資料來源與視圖之間的連結架構。
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>完成 DSL 的系結
 
@@ -214,13 +214,13 @@ ms.locfileid: "76114888"
 
 DSL 解決方案現在可以建立和執行，但您可能會想要稍後再新增進一步的改良功能。
 
-1. 建置並執行方案。
+1. 建置並執行解決方案。
 
 2. 在 Visual Studio 的實驗實例中，開啟**範例**檔案。
 
 3. 在**FarmApp Explorer**中，開啟**伺服器**陣列根節點上的快捷方式功能表，然後選擇 [**加入新 Goat**]。
 
-     `Goat1` 會出現在 [**動物**] 視圖中。
+     `Goat1`會出現在 [**動物**] 視圖中。
 
     > [!WARNING]
     > 您必須使用 [**伺服器**陣列] 節點上的快捷方式功能表，而不是 [**動物**] 節點。
@@ -237,11 +237,11 @@ DSL 解決方案現在可以建立和執行，但您可能會想要稍後再新�
 
 1. 在 FarmControl.cs 的設計檢視中，選取簡單欄位，例如 [名稱]、[大小] 或 [IsOrganic]。
 
-2. 在屬性視窗中 **，展開 [** 系結] 並開啟 **[（Advanced）** ]。
+2. 在屬性視窗中 **，展開 [** 系結] 並開啟 **[（Advanced）**]。
 
      在 [**格式化和高級**系結] 對話方塊的 [**資料來源更新模式**] 下，選擇 [ **OnPropertyChanged**]。
 
-3. 建置並執行方案。
+3. 建置並執行解決方案。
 
      確認當您變更欄位的內容時，伺服器陣列模型的對應屬性會立即變更。
 
@@ -249,7 +249,7 @@ DSL 解決方案現在可以建立和執行，但您可能會想要稍後再新�
 
 1. 在 FarmControl.cs 的設計檢視中，使用 [工具箱] 在表單上建立按鈕。
 
-    編輯按鈕的名稱和文字，例如，`New Sheep`。
+    編輯按鈕的名稱和文字，例如 `New Sheep` 。
 
 2. 開啟按鈕後方的程式碼（例如，按兩下它）。
 
@@ -294,7 +294,7 @@ DSL 解決方案現在可以建立和執行，但您可能會想要稍後再新�
 
 3. 為 Goats 和欄位新增類似的按鈕。
 
-4. 建置並執行方案。
+4. 建置並執行解決方案。
 
 5. 確認 [新增] 按鈕會加入專案。 新專案應該會出現在 FarmApp Explorer 和適當的資料方格視圖中。
 
@@ -319,9 +319,9 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 
 不過，此程式碼不會設定新專案的預設名稱。 它不會執行您可能已在 DSL 的專案**合併**指示詞中定義的任何自訂合併，而且也不會執行任何可能已定義的自訂合併程式碼。
 
-因此，建議您使用 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 來建立新的元素。 如需詳細資訊，請參閱[自訂元素的建立和移動](../modeling/customizing-element-creation-and-movement.md)。
+因此，我們建議您使用 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 來建立新的元素。 如需詳細資訊，請參閱[自訂元素的建立和移動](../modeling/customizing-element-creation-and-movement.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
 - [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

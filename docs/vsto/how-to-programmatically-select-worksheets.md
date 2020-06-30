@@ -1,7 +1,7 @@
 ---
-title: 作法：以程式設計方式選取工作表
+title: 如何：以程式設計方式選取工作表
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20ebc8fea14b3dc52c802543f97318ec7fae7529
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6134b23e7b398794529ee43a428ee8b8962ccf38
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255621"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547000"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>HOW TO：以程式設計方式選取工作表
+# <a name="how-to-programmatically-select-worksheets"></a>如何：以程式設計方式選取工作表
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> 方法會選取指定的物件，將使用者選取的項目移到新物件。 如果您要將焦點置於這個物件而不變更使用者的選取範圍，請使用 <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> 方法。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- 如果要選取 VSTO 增益集中的現有工作表，或者該工作表是在執行階段於文件層級自訂中所建立，則您必須使用 Excel 活頁簿的 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合存取該工作表，否則就要直接存取 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。
+ 如果您想要選取 VSTO 增益集中的現有工作表，或如果工作表是在檔層級自訂的執行時間建立的，則必須使用 Excel 活頁簿的 Excel 集合來存取它 <xref:Microsoft.Office.Interop.Excel.Sheets> ; 否則，您可以 <xref:Microsoft.Office.Tools.Excel.Worksheet> 直接存取主專案。
 
 ## <a name="use-the-worksheet-host-item"></a>使用工作表主專案
  在檔層級自訂中，將下列程式碼加入至*Sheet1 .vb*或*Sheet1.cs*。

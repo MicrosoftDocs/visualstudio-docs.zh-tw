@@ -1,7 +1,7 @@
 ---
 title: 如何：自訂內建索引標籤
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3550c3bd48a02d5daf4ef7156960e8a8fab3b93a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 5f73ec7a8555a5e5d569d4316ca619747550bf11
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985950"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547182"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>如何：自訂內建索引標籤
   您可以將群組和控制項加入至內建索引標籤。內建索引標籤是已在 Microsoft Office 應用程式功能區上的索引標籤。 例如，[**資料**] 索引標籤是 Excel 中的內建索引標籤。 當您建立自訂群組時，它會出現在索引標籤的最末端，但是您可以在索引標籤上任意移動群組。
@@ -56,7 +56,7 @@ ms.locfileid: "72985950"
 
 2. 在 [**屬性**] 視窗中，展開 [**位置**] 屬性。
 
-3. 將**positiontype**屬性設定為適當的值：
+3. 將**positiontype]** 屬性設定為適當的值：
 
     - **BeforeOfficeId**會將群組置於指定的內建組之前。
 
@@ -66,10 +66,10 @@ ms.locfileid: "72985950"
 
      如需控制項 Id 的清單，請參閱[office 2010 說明檔： office 流暢的使用者介面控制項識別碼](https://www.microsoft.com/download/details.aspx?id=6627)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [功能區總覽](../vsto/ribbon-overview.md)
 - [功能區設計工具](../vsto/ribbon-designer.md)
-- [功能區 XML](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [逐步解說：使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [逐步解說：使用功能區 XML 建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
 - [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)

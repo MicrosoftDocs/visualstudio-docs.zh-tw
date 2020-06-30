@@ -1,7 +1,7 @@
 ---
-title: 允許具有限制權限的 docs 後方執行的程式碼
+title: 允許程式碼在具有限制許可權的檔背後執行
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,39 +17,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 32e42954958fda71d54c3c0ac2685928644e7461
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 15cfb7ebf2f4f71e892820206f0dd1d006639992
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402251"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547507"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>HOW TO：允許程式碼的文件背後執行以限制權限
-  您可以使用 Microsoft Office 的資訊版權管理 (IRM) 功能的文件或活頁簿限制權限。 根據預設，受限制的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿背後的程式碼不允許執行。 您可以變更預設值，以便您的 managed 程式碼擴充功能可以存取物件模型中，而且您的解決方案會正常運作。
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>如何：允許程式碼在具有限制許可權的檔背後執行
+  您可以使用 Microsoft Office 的資訊 Rights Management （IRM）功能來限制檔或活頁簿的許可權。 根據預設，不允許執行受限制 Microsoft Office Word 檔或 Microsoft Office Excel 活頁簿的後置程式碼。 您可以變更預設值，讓您的 managed 程式碼擴充可以存取物件模型，而您的方案將會生效。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- 您必須是文件或活頁簿的作者，或具有完整控制存取權可以變更權限設定。
+ 您必須是檔或活頁簿的作者，或具有 [完全控制] 存取權限，才能變更許可權設定。
 
-## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>若要允許程式碼的文件背後執行以限制權限
+## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>允許程式碼在具有限制許可權的檔背後執行
 
-1. 在 Word 或 Excel 中開啟的文件或活頁簿。
+1. 在 Word 或 Excel 中開啟檔或活頁簿。
 
-2. 按一下 **檔案**索引標籤上，指向**準備**，指向**限制權限**，然後按一下**限制存取**。
+2. 按一下 [**檔案**] 索引標籤，指向 [**準備**]，指向 [**限制許可權**]，然後按一下 [**限制存取**]。
 
    > [!NOTE]
-   > 在第一次使用時，系統會提示您安裝 Windows 的 Rights Management 用戶端。 在安裝用戶端之後，您可能需要重複這些步驟。
+   > 第一次使用時，系統會提示您安裝 Windows Rights Management 用戶端。 安裝用戶端之後，您可能需要重複這些步驟。
 
-3. 在 **權限**對話方塊中，選取**限制此文件的權限**，然後按一下 **更多選項**。
+3. 在 [**許可權**] 對話方塊中，選取 [**限制此檔的許可權**]，然後按一下 [**其他選項**]。
 
-4. 底下**額外的權限的使用者**，選取**以程式設計方式存取內容**。
+4. 在 [**使用者的其他許可權**] 底下，選取 [以程式設計**方式存取內容**]。
 
-   Word 或 Excel，將允許以程式設計方式存取物件模型。
+   Word 或 Excel 將允許以程式設計方式存取物件模型。
 
 ## <a name="see-also"></a>另請參閱
-- [資訊版權管理和 managed 程式碼延伸模組概觀](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
-- [在文件層級方案中的文件保護](../vsto/document-protection-in-document-level-solutions.md)
-- [Office 文件上的密碼保護](../vsto/password-protection-on-office-documents.md)
+- [資訊版權管理和 managed 程式碼延伸模組總覽](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [檔層級方案中的檔案保護](../vsto/document-protection-in-document-level-solutions.md)
+- [Office 檔上的密碼保護](../vsto/password-protection-on-office-documents.md)
 - [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)
 - [保護 Office 方案](../vsto/securing-office-solutions.md)
 - [部署 Office 方案](../vsto/deploying-an-office-solution.md)

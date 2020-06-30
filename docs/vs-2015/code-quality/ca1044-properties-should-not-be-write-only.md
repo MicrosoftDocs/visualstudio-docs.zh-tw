@@ -15,21 +15,21 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: aa2d07337ec48e41a9d8ad82602a387159192f92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ca0fb61c0973553ee6d410bc8b2718d19aeb28c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668265"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546857"
 ---
-# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044：屬性不應為唯寫
+# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044:屬性不應該為唯寫的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|PropertiesShouldNotBeWriteOnly|
 |CheckId|CA1044|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -45,7 +45,7 @@ ms.locfileid: "72668265"
  強烈建議您不要隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 在下列範例中，`BadClassWithWriteOnlyProperty` 是具有僅限寫入屬性的類型。 `GoodClassWithReadWriteProperty` 包含已更正的程式碼。
+ 在下列範例中， `BadClassWithWriteOnlyProperty` 是具有寫入屬性的類型。 `GoodClassWithReadWriteProperty`包含已更正的程式碼。
 
  [!code-csharp[FxCop.Design.PropertiesNotWriteOnly#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.PropertiesNotWriteOnly/cs/FxCop.Design.PropertiesNotWriteOnly.cs#1)]
  [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.PropertiesNotWriteOnly/vb/PropertiesNotWriteOnly.vb#1)]

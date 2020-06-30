@@ -1,7 +1,7 @@
 ---
 title: 如何：將資料庫中的資料填入檔
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 907b3deeadd0a56f9e47a6e17a40579a0c9ffa64
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8470ec4acf686c016088c5f474539a1ab7ed85df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985877"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547195"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>如何：將資料庫中的資料填入檔
 
@@ -66,7 +66,7 @@ ms.locfileid: "72985877"
 
 如需如何將更新傳送至具類型資料集和資料庫的詳細資訊，請參閱[如何：使用主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [新增資料來源](../data-tools/add-new-data-sources.md)
@@ -74,4 +74,4 @@ ms.locfileid: "72985877"
 - [如何：以物件的資料填入檔](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [如何：使用主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [在 Office 方案中使用本機資料庫檔案總覽](../vsto/using-local-database-files-in-office-solutions-overview.md)
-- [BindingSource 元件概觀](/dotnet/framework/winforms/controls/bindingsource-component-overview)
+- [BindingSource 元件總覽](/dotnet/framework/winforms/controls/bindingsource-component-overview)

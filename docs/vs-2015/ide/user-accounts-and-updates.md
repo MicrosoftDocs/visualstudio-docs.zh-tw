@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 92bbfc3612a34d354dee6288d66f2cf96c1e107c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f3ed1bd914655109606c1472227fb73c10d5b7a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289387"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547611"
 ---
 # <a name="user-accounts-and-updates"></a>使用者帳戶和更新
 
@@ -27,7 +27,7 @@ Visual Studio 本身為連線的環境。 透過登入可存取所有與您使�
 
 ## <a name="in-this-section"></a>本節內容
 
-|||
+|Title|描述|
 |-|-|
 |[登入 Visual Studio](../ide/signing-in-to-visual-studio.md)|描述如何及為何要登入 Visual Studio。|
 |[Work with multiple user accounts](../ide/work-with-multiple-user-accounts.md)|描述如何將多個 Microsoft 帳戶和/或工作或學校帳戶相關聯，以存取您所有帳戶的資源和服務。|

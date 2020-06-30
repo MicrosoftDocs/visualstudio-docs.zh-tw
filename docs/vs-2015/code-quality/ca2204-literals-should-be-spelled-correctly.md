@@ -15,21 +15,21 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d3e94f308936f898e555b1ad38e6a9d50051a276
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ecf829251cbeab600cb95f8f0c0b0173cd7338d4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659544"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546272"
 ---
-# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204：常值必須使用正確的拼字
+# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204:常值必須使用正確的拼字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|LiteralsShouldBeSpelledCorrectly|
 |CheckId|CA2204|
-|Category|Microsoft。使用方式|
+|類別|Microsoft。使用方式|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -38,7 +38,7 @@ ms.locfileid: "72659544"
 ## <a name="rule-description"></a>規則描述
  當下列一或多個情況成立時，此規則會檢查當做值傳遞給參數或屬性的常值字串：
 
-- 參數或屬性的 <xref:System.ComponentModel.LocalizableAttribute> 屬性設定為 true。
+- <xref:System.ComponentModel.LocalizableAttribute>參數或屬性的屬性設定為 true。
 
 - 參數或屬性名稱包含 "Text"、"Message" 或 "Caption"。
 
@@ -55,6 +55,6 @@ ms.locfileid: "72659544"
  請勿隱藏此規則的警告。 拼寫正確的文字會減少新軟體程式庫所需的學習曲線。
 
 ## <a name="related-rules"></a>相關規則
- [CA1704：識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+ [CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
- [CA1703：資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703:資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)

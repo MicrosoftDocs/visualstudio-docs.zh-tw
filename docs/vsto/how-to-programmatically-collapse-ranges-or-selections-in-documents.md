@@ -1,7 +1,7 @@
 ---
-title: 以程式設計方式摺疊範圍或選取的文件
+title: 以程式設計方式折迭檔中的範圍或選取專案
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7394e8703f0437493536655e11b00ed302e59cff
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 1575a130a525c169553598fd15acfa8ba8fc397a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402231"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546116"
 ---
-# <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>作法：以程式設計方式摺疊範圍或選取的文件
-  如果您正在使用 <xref:Microsoft.Office.Interop.Word.Range> 或 <xref:Microsoft.Office.Interop.Word.Selection> 物件，您可能會想要先將選取範圍變更為插入點再插入文字，以免覆寫現有的文字。 同時<xref:Microsoft.Office.Interop.Word.Range>並<xref:Microsoft.Office.Interop.Word.Selection>物件具有摺疊方法，其使用<xref:Microsoft.Office.Interop.Word.WdCollapseDirection>列舉值：
+# <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>如何：以程式設計方式折迭檔中的範圍或選取專案
+  如果您正在使用 <xref:Microsoft.Office.Interop.Word.Range> 或 <xref:Microsoft.Office.Interop.Word.Selection> 物件，您可能會想要先將選取範圍變更為插入點再插入文字，以免覆寫現有的文字。 <xref:Microsoft.Office.Interop.Word.Range>和物件都 <xref:Microsoft.Office.Interop.Word.Selection> 具有折迭方法，它會使用 <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> 列舉值：
 
 - <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> 將選取範圍摺疊至選取範圍的開頭。 如果不指定列舉值，這就是預設值。
 
@@ -66,9 +66,9 @@ ms.locfileid: "66402231"
    [!code-vb[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#50)]
    [!code-csharp[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#50)]
 
-   您可能希望將新句子插入在段落標記之前，但實際情況並非如此，因為原始範圍包含了段落標記。 如需詳細資訊，請參閱[如何：以程式設計方式建立範圍時排除段落標記](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)。
+   您可能希望將新句子插入在段落標記之前，但實際情況並非如此，因為原始範圍包含了段落標記。 如需詳細資訊，請參閱[如何：以程式設計方式在建立範圍時排除段落標記](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)。
 
-## <a name="document-level-customization-example"></a>文件層級自訂範例
+## <a name="document-level-customization-example"></a>檔層級自訂範例
 
 ### <a name="to-collapse-a-range-in-a-document-level-customization"></a>摺疊文件層級自訂中的範圍
 
@@ -79,7 +79,7 @@ ms.locfileid: "66402231"
 
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例
 
-### <a name="to-collapse-a-range-in-a-vsto-add-in"></a>若要摺疊中的 VSTO 增益集的範圍
+### <a name="to-collapse-a-range-in-a-vsto-add-in"></a>在 VSTO 增益集中折迭範圍
 
 1. 下列範例顯示 VSTO 增益集的完整方法。 若要使用此程式碼，請從專案的 `ThisAddIn` 類別中執行它。
 
@@ -87,9 +87,9 @@ ms.locfileid: "66402231"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#45)]
 
 ## <a name="see-also"></a>另請參閱
-- [如何：以程式設計方式將文字插入 Word 文件](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [如何：以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [如何：以程式設計方式擷取範圍中的開頭和結尾字元](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [如何：以程式設計方式排除段落標記建立範圍時](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
-- [如何：以程式設計方式擴充文件中的範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [如何：以程式設計方式重設 Word 文件中的範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [如何：以程式設計方式將文字插入 Word 檔](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [如何：以程式設計方式在檔中定義及選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [如何：以程式設計方式取出範圍中的開頭和結尾字元](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [如何：以程式設計方式在建立範圍時排除段落標記](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
+- [如何：以程式設計方式在檔中擴充範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [如何：以程式設計方式重設 Word 檔中的範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)

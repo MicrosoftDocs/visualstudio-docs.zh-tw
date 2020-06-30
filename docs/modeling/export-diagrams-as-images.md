@@ -1,7 +1,7 @@
 ---
 title: 將圖表匯出為影像
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
@@ -11,16 +11,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b7839985871333bb120057efde92e58baebdec
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596615"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547598"
 ---
 # <a name="export-diagrams-as-images"></a>將圖表匯出為影像
 
-在 Visual Studio 中，您可以將模型圖表儲存為唯讀格式，讓您可以與不使用相同版本 Visual Studio 的專案關係人、使用者或專案小組成員共用。
+在 Visual Studio 中，您可以將模型圖表儲存成唯讀格式，如此就可與專案關係人、使用者或使用不同版本的 Visual Studio 專案小組成員共用這些圖表。
 
 若要查看哪些版本的 Visual Studio 支援這項功能，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -38,9 +38,9 @@ ms.locfileid: "75596615"
 
 2. 在 [**名稱**] 清單中，選取 [ **Microsoft XPS Document Writer**]，然後按一下 **[確定]**。
 
-3. 在 [**另存**新檔] 對話方塊中，將檔案儲存為**XPS 檔（\*.xps）** 檔案。
+3. 在 [**另存檔案為**] 對話方塊中，將檔案儲存為**XPS 檔（ \* .xps）** 檔案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [建立應用程式模型](../modeling/create-models-for-your-app.md)
 - [共用模型及匯出圖表](../modeling/share-models-and-exporting-diagrams.md)

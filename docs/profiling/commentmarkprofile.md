@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d45bab6b909fffa107158236d9050632f114c530
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2972f9d470bebe3a65b7d525aa2b358d68ad5f1c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772779"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546584"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` 函式會在 .*vsp* 檔中插入數字標記和文字字串。 針對要插入的標記和註解，包含 `CommentMarkProfile` 函式之執行緒的分析必須是 ON。
@@ -65,10 +65,10 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 
 ## <a name="function-information"></a>函式資訊
 
-|||
+|Item|值|
 |-|-|
-|**頭**|包含 VSPerf.h|
-|**圖書館**|使用 VSPerf.lib|
+|**標頭**|包含 VSPerf.h|
+|**程式庫**|使用 VSPerf.lib|
 |**Unicode**|實作為 `CommentMarkProfileW` (Unicode) 和 `CommentMarkProfileA` (ANSI)。|
 
 ## <a name="example"></a>範例
@@ -111,4 +111,4 @@ void ExerciseCommentMarkProfile()
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室探測器 API 參考（本機）](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio profiler API 參考（原生）](../profiling/visual-studio-profiler-api-reference-native.md)

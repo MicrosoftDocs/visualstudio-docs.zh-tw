@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式建立新的活頁簿
+title: 如何：以程式設計方式建立新的活頁簿
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 030bc801399ddcc73f145c0b45ca065c9a9ecc7a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6a23f4b089d580d482193d278f22e4990d343097
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251881"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545973"
 ---
-# <a name="how-to-programmatically-create-new-workbooks"></a>作法：以程式設計方式建立新的活頁簿
+# <a name="how-to-programmatically-create-new-workbooks"></a>如何：以程式設計方式建立新的活頁簿
   當您以程式設計方式建立活頁簿時，它就是原生的 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件，不是 <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]

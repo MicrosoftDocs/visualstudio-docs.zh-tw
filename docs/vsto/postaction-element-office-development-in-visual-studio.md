@@ -1,7 +1,7 @@
 ---
-title: '&lt;postAction&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
+title: '&lt;P n &gt; 元素（Visual Studio 中的 Office 開發）'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53cf47ef9a78ebb54c377e19b4f7fbad444bbfcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976524"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546935"
 ---
-# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt;元素 （在 Visual Studio 中的 Office 程式開發）
+# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;P n &gt; 元素（Visual Studio 中的 Office 開發）
   `postAction` 命名空間的 `vstav3` 項目包含 `entrypoint` 項目和所有 `postActionData` 項目，這些項目與安裝 Office 方案後執行的部署後動作相關。
 
 ## <a name="syntax"></a>語法
@@ -42,16 +42,16 @@ ms.locfileid: "62976524"
 
  `postAction` 具有下列項目。
 
-### <a name="entrypoint"></a>entrypoint
- 選擇性。 所扮演的角色`entryPoint`中的項目`vstav3`中所定義的命名空間[&#60;進入點&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)。
+### <a name="entrypoint"></a>entryPoint
+ 選擇性。 `entryPoint`命名空間中元素的角色 `vstav3` 是在[Visual Studio&#41;的&#60;e&#62; 元素 &#40;Office 開發](../vsto/entrypoints-element-office-development-in-visual-studio.md)中定義。
 
 ### <a name="postactiondata"></a>postActionData
- 選擇性。 所扮演的角色`postActionData`中的項目`vstav3`中所定義的命名空間[ &#60;postActionData&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)。
+ 選擇性。 `postActionData`命名空間中元素的角色 `vstav3` 是在[Visual Studio&#41;的&#60;postActionData&#62; 元素 &#40;Office 開發](../vsto/postactiondata-element-office-development-in-visual-studio.md)中定義。
 
 ## <a name="post-deployment-action-example"></a>部署後動作範例
 
 ### <a name="description"></a>描述
- 下列程式碼範例說明使用 `postAction` 所部署之 Office 解決方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
+ 下列程式碼範例說明使用 `postAction` 所部署之 Office 解決方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
 
