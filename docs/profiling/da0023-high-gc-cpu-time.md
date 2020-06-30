@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f83dd64d1f432e2f6628a0b1c5852be9fede305b
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 55b676a7b3d4bc105cdc99b0338dd101c1e68aa6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328417"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544660"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023：高記憶體回收 CPU 時間
 
-|||
+|Item|值|
 |-|-|
 |規則 ID|DA0023|
 |類別|.NET Framework 使用方式|

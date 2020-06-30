@@ -1,20 +1,20 @@
 ---
 title: How to：變更特定領域語言的命名空間
 ms.date: 10/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, namespace
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b64a61c02f44db0ce70b758331d0d70f7bb8014d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ff7c73694cb53f7fbea21514feeaab4abce3f29
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653774"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542671"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>How to：變更特定領域語言的命名空間
 
@@ -46,12 +46,12 @@ ms.locfileid: "72653774"
 
 10. 重設 Visual Studio 實驗實例。
 
-    1. 刪除 **\Users \\** _{您的名稱}_ **\AppData\Local\Microsoft\VisualStudio \\ \*Exp**。
+    1. 刪除**\Users \\ ** _{您的名稱}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp**。
 
-    2. 在 Windows **開始** 功能表上，選擇 **所有程式**， > **Microsoft Visual Studio 2010 SDK**  > **工具**  > **重設實驗實例**。
+    2. 在 Windows [**開始**] 功能表上，選擇 [**所有程式**]  >  **Microsoft Visual Studio 2010 SDK**  >  **工具**] [  >  **重設實驗實例**]。
 
 11. 在 [**建立**] 功能表上，選擇 [**重建方案**]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [特定領域語言工具詞彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

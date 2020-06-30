@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式傳送電子郵件
+title: 如何：以程式設計方式傳送電子郵件
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72d033add2ba8320b14eebd5af700ab225d34410
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c56527f18857ad3c4ac82060ffd5794b72ac017c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551763"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543256"
 ---
-# <a name="how-to-programmatically-send-email"></a>作法：以程式設計方式傳送電子郵件
+# <a name="how-to-programmatically-send-email"></a>如何：以程式設計方式傳送電子郵件
   這個範例會將電子郵件訊息傳送給在其電子郵件地址中有功能變數名稱**example.com**的連絡人。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "69551763"
 - 其電子郵件地址中有功能變數名稱**example.com**的連絡人。
 
 ## <a name="robust-programming"></a>穩固程式設計
- 請勿移除搜尋功能變數名稱**example.com**的篩選器程式碼。 如果您移除篩選, 解決方案會將電子郵件訊息傳送給您的所有連絡人。
+ 請勿移除搜尋功能變數名稱**example.com**的篩選器程式碼。 如果您移除篩選，解決方案會將電子郵件訊息傳送給您的所有連絡人。
 
 ## <a name="see-also"></a>另請參閱
 - [使用訊息項目](../vsto/working-with-mail-items.md)

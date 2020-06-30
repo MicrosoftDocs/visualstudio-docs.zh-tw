@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dfaeedc52e7d6b2888415200e7dccf258fa96d5c
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 06295c1b158fe25b481b2aa036f8448895c546f5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327959"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544699"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017：高比率的使用中記憶體分頁到磁碟
 
-|||
+|Item|值|
 |-|-|
 |規則 ID|DA0017|
 |類別|記憶體和分頁|

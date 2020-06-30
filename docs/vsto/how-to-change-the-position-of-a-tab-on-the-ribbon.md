@@ -1,7 +1,7 @@
 ---
 title: 如何：變更功能區上索引標籤的位置
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf943f9df4499b30e294e4d7e8bf48b25aa52eab
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8f821ea2a469fc06f80a7aaea96d07274d02a81d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985993"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544855"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>如何：變更功能區上索引標籤的位置
   您可以使用 [索引標籤**集合編輯器]** 來變更功能區上的自訂索引標籤順序。 您可以在功能區上的內建索引標籤之前或之後放置自訂索引標籤。 內建索引標籤是已在 Microsoft Office 應用程式功能區上的索引標籤。 例如，[**資料**] 索引標籤是 Excel 中的內建索引標籤。
@@ -26,7 +26,7 @@ ms.locfileid: "72985993"
 
 ### <a name="to-change-the-order-of-tabs-on-the-ribbon"></a>變更功能區上的索引標籤順序
 
-1. 在**方案總管**中選取功能區程式碼檔案（ *.vb*或 *.cs*檔案）。
+1. 在**方案總管**中選取功能區程式碼檔案（*.vb*或 *.cs*檔案）。
 
 2. 在 [ **View** ] 功能表上，按一下 [**設計師**]。
 
@@ -46,7 +46,7 @@ ms.locfileid: "72985993"
 
 3. 在 [**屬性**] 視窗中，展開 [**位置**] 屬性。
 
-4. 將**positiontype**屬性設定為適當的值：
+4. 將**positiontype]** 屬性設定為適當的值：
 
     - **BeforeOfficeId**會將群組置於指定的內建索引標籤之前。
 
@@ -56,9 +56,9 @@ ms.locfileid: "72985993"
 
      如需控制項 Id 的清單，請參閱[office 2010 說明檔： office 流暢的使用者介面控制項識別碼](https://www.microsoft.com/download/details.aspx?id=6627)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [功能區總覽](../vsto/ribbon-overview.md)
 - [功能區設計工具](../vsto/ribbon-designer.md)
-- [功能區 XML](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [逐步解說：使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [逐步解說：使用功能區 XML 建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

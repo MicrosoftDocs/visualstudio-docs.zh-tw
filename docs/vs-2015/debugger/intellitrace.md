@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a3a3e68874bb3295f6696bbdadb3c470a7f2a4ad
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: c379054506672f36368b6da99c40a0a75a25e0ac
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586618"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543919"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "82586618"
   
 ## <a name="what-do-you-want-to-do"></a>您想要做什麼事？  
   
-|||  
+|狀況|文章|  
 |-|-|  
 |**使用 IntelliTrace 偵錯我的應用程式：**<br /><br /> -顯示過去的事件。<br />-顯示過去事件的呼叫資訊。<br />-儲存我的 IntelliTrace 會話。<br />-控制 IntelliTrace 所收集的資料。|-   [逐步解說：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />-   [設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [歷程記錄調試](../debugger/historical-debugging.md)|  
 |**在 Test Manager 的測試工作階段期間收集 IntelliTrace 資料**|-   [在手動測試中收集更多診斷資料](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
@@ -55,11 +55,11 @@ ms.locfileid: "82586618"
   
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a>我可以使用 IntelliTrace 對哪些應用程式進行偵錯？  
   
-|||  
+|支援層級|應用程式類型|  
 |-|-|  
 |**支援**|-使用 .NET Framework 2.0 或更高版本的 Visual Basic 和 Visual c # 應用程式。<br />     您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br />     若要使用 IntelliTrace 來檢查 SharePoint 應用程式，請參閱[逐步解說：使用 intellitrace 來進行 Sharepoint 應用程式](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)的錯用。<br />     若要使用 IntelliTrace 來進行 Microsoft Azure 應用程式的 debug，請參閱[使用 intellitrace 和 Visual Studio 來對已發佈的雲端服務](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)進行程式|  
 |**有限支援**|-以實驗性為基礎的 F # 應用程式<br />-僅支援事件的 Windows Store 應用程式|  
-|**不支援**|-C + +、其他語言和腳本<br />-Windows 服務、Silverlight、Xbox 或[!INCLUDE[winmobile](../includes/winmobile-md.md)]應用程式|  
+|**不支援**|-C + +、其他語言和腳本<br />-Windows 服務、Silverlight、Xbox 或 [!INCLUDE[winmobile](../includes/winmobile-md.md)] 應用程式|  
   
 > [!NOTE]
 > 如果您要偵錯已在執行中的處理序，則不能使用 IntelliTrace。 您必須在處理序啟動時啟動 IntelliTrace。  

@@ -15,21 +15,21 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f81aec5973d1915ba646c20c3b84186443678754
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67a3588a857a0eea7d338217f975ed593dfdad52
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669093"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543698"
 ---
-# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716：識別項名稱不應該和關鍵字相符
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716:識別項名稱不應該和關鍵字相符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
-|Category|Microsoft. 命名|
+|類別|Microsoft. 命名|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -46,10 +46,10 @@ ms.locfileid: "72669093"
 
 - C++/CLI
 
-  @No__t_0 關鍵字會使用不區分大小寫比較，而其他語言則會使用區分大小寫比較。
+  關鍵字會使用不區分大小寫的比較 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ，而其他語言會使用區分大小寫比較。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  選取不會出現在關鍵字清單中的名稱。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果您確信識別碼不會混淆 API 的使用者，而且該程式庫可在 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 中的所有可用語言中使用，您可以隱藏此規則的警告。
+ 如果您確信該識別碼不會混淆 API 的使用者，而且該程式庫可用於中的所有可用語言，您可以隱藏此規則的警告 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 。

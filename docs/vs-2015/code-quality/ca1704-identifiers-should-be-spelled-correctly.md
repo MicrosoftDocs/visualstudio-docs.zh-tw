@@ -15,21 +15,21 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 56ac5e60964621859c77bf53dc4f6c14480b4a83
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5e078fc1bb7fe247d541e7695e98c2de76c2466
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669245"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544062"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704：識別項應該使用正確的拼字
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704:識別項應該使用正確的拼字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
 |CheckId|CA1704|
-|Category|Microsoft. 命名|
+|類別|Microsoft. 命名|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -44,14 +44,14 @@ ms.locfileid: "72669245"
 
 - 開頭和尾端的撇號會被移除。 例如，「寄件者」 token 化為「寄件者」。
 
-- 底線表示標記的結尾，並已移除。 例如，Hello_world token 化 to "Hello"，"world"。
+- 底線表示標記的結尾，並已移除。 例如，Hello_world token 化為 "Hello"、"world"。
 
-- 已移除內嵌的符號。 例如，& 的 token 化為「格式」。
+- 已移除內嵌的符號。 例如，&的 token 化為「格式」。
 
   根據預設，會使用拼寫檢查的英文（en）版本。 目前未提供任何其他語言字典。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請更正單字的拼寫，或將此單字加入名為 CustomDictionary 的自訂字典中。 將字典放在工具的安裝目錄、專案目錄或與使用者設定檔（%USERPROFILE%\Application Data \\ ...）下的工具相關聯的目錄中。若要瞭解如何在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中將自訂字典加入至專案，請參閱[如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ 若要修正此規則的違規情形，請更正單字的拼寫，或將此單字加入名為 CustomDictionary.xml 的自訂字典中。 將字典放在工具的安裝目錄、專案目錄，或與使用者設定檔（%USERPROFILE%\Application Data ...）下的工具相關聯的目錄中 \\ 。若要瞭解如何將自訂字典加入至中的專案 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，請參閱[如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 - 新增不應在字典/單字/已辨識路徑下造成違規的文字。
 
@@ -90,17 +90,17 @@ ms.locfileid: "72669245"
  只有在 word 故意拼錯，而且該單字適用于一組有限的程式庫時，才會隱藏此規則的警告。 拼寫正確的文字會減少新軟體程式庫所需的學習曲線。
 
 ## <a name="related-rules"></a>相關規則
- [CA2204：常值必須使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204:常值必須使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
- [CA1703：資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703:資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
- [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709:識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707：識別項名稱不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707:識別項名稱不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1726：建議使用慣用詞彙](../code-quality/ca1726-use-preferred-terms.md)
+ [CA1726:建議使用慣用詞彙](../code-quality/ca1726-use-preferred-terms.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

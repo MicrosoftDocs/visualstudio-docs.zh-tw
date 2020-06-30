@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b372e0f30c91a605be047e921bc2b7672a1cf468
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329441"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543386"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用量
 
@@ -61,7 +61,7 @@ ms.locfileid: "85329441"
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> [CPU 使用量] 資料行
 
-|||
+|名稱|描述|
 |-|-|
 |**CPU 總計 [單位, %]**|![總計 % 資料方程式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 在選取的時間範圍內，呼叫函式和該函式所呼叫函式使用的毫秒數及 CPU 百分比。 這與 [CPU 使用率] **** 時間軸圖表不同，其會將時間範圍內的 CPU 活動總計與可用的 CPU 總計進行比較。|
 |**自我 CPU [單位, %]**|![自我 % 方程式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 在選取的時間範圍內，呼叫函式使用的毫秒數及 CPU 百分比，不包含函式所呼叫的函式。|
@@ -80,7 +80,7 @@ ms.locfileid: "85329441"
 ![呼叫樹狀結構](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "呼叫樹狀圖結構")
 ::: moniker-end
 
-|||
+|映像|描述|
 |-|-|
 |![步驟 1](../profiling/media/procguid_1.png "ProcGuid_1")|[CPU 使用量] 呼叫樹狀結構中的最上層節點是一個虛擬節點。|
 |![步驟 2](../profiling/media/procguid_2.png "ProcGuid_2")|在大部分的應用程式中，已停用 [顯示外部程式碼]**** 選項時，第二層節點是一個 [外部程式碼]**** 節點。 節點包含系統和架構程式碼，程式碼會啟動和停止應用程式、繪製 UI、控制執行緒排程，並提供其他低階服務給應用程式。|

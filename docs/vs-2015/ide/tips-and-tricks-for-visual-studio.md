@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 432a0eddece867972e5c5159f734b4589c22e218
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299920"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542983"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 秘訣和訣竅
 
@@ -38,9 +38,9 @@ ms.locfileid: "74299920"
 
 - [應用程式生命週期管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-## <a name="BKMK_WindowMgmt"></a> 視窗管理
+## <a name="window-management"></a><a name="BKMK_WindowMgmt"></a> 視窗管理
 
-|||
+|Command|快速鍵|
 |-|-|
 |將浮動索引標籤井拖曳出來|多重選取的 Ctrl+按一下|
 |最大化浮動視窗|按兩下標題列|
@@ -49,9 +49,9 @@ ms.locfileid: "74299920"
 |顯示開啟檔案清單|Ctrl+Alt+向下鍵|
 |顯示所有浮動視窗|Ctrl+Shift+M|
 
-## <a name="BKMK_WindowShortcuts"></a> 視窗快速鍵
+## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a>視窗快捷方式
 
-|||
+|Command|快速鍵|
 |-|-|
 |移動/停駐浮動視窗|Win+向左鍵 / Win+向右鍵|
 |最大化/最小化視窗|Win+向上鍵 / Win+向下鍵|
@@ -59,9 +59,9 @@ ms.locfileid: "74299920"
 |開始新執行個體|Win+Shift+n|
 |切換視窗|Win+n|
 
-## <a name="BKMK_Search"></a> Visual Studio 搜尋
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Visual Studio 搜尋
 
-|||
+|Command|快速鍵|
 |-|-|
 |方案總管搜尋|Ctrl+;|
 |將焦點放在任何工具視窗的搜尋方塊|Alt+ `，當工具視窗有焦點時|
@@ -69,9 +69,9 @@ ms.locfileid: "74299920"
 |快速啟動範圍結果|-   @opt 選項<br />-   @cmd 命令<br />-   @mru 最近使用<br />-   @doc 開啟文件|
 |在工具選項中搜尋|Ctrl+E|
 
-## <a name="BKMK_EditorFind"></a> 編輯器尋找
+## <a name="editor-find"></a><a name="BKMK_EditorFind"></a>編輯器尋找
 
-|||
+|Command|快速鍵|
 |-|-|
 |快速尋找|Ctrl+F|
 |快速尋找下一個結果|Enter|
@@ -84,9 +84,9 @@ ms.locfileid: "74299920"
 |檔案中尋找|Ctrl+Shift+F|
 |檔案中取代|Ctrl+Shift+H|
 
-## <a name="BKMK_CodeEditor"></a> 程式碼編輯器
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>程式碼編輯器
 
-|||
+|Command|快速鍵|
 |-|-|
 |IntelliSense 建議模式|Ctrl+Alt+Space (切換)|
 |強制顯示 IntelliSense|Ctrl+J|
@@ -109,25 +109,25 @@ ms.locfileid: "74299920"
 |在多個查看結果之間巡覽|F8 和 Shift+F8|
 |在程式碼編輯器視窗和 [查看定義] 視窗之間切換|Shift+Esc|
 
-## <a name="BKMK_Toolbars"></a> 工具列
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>'
 
-|||
+|Command|快速鍵|
 |-|-|
 |加入按鈕|按一下工具列溢位按鈕|
 |尋找標準工具列中的下拉式方塊|Ctrl+D|
 |尋找文字方塊命令模式|輸入 “>”|
 |建立新別名|>alias NewAlias 命令|
 
-## <a name="BKMK_Debugging"></a> 偵錯
+## <a name="debugging"></a><a name="BKMK_Debugging"></a> 偵錯
 
-|||
+|Command|快速鍵|
 |-|-|
-|開始偵錯|F5|
-|停止偵錯|Shift+F5|
+|[偵錯]|F5|
+|[停止偵錯]|Shift+F5|
 |重新啟動偵錯|Ctrl+Shift+F5|
-|不進入函式|F10|
+|不進入函數|F10|
 |逐步執行|F11|
-|跳離函式|Shift+F11|
+|跳出|Shift+F11|
 |執行至游標處|Ctrl+F10|
 |設定 Next 陳述式|Ctrl+Shift+F10|
 |設定和切換中斷點|F9|
@@ -137,12 +137,12 @@ ms.locfileid: "74299920"
 |即時運算視窗清除緩衝區|>cls|
 |即時運算視窗列印值|?varname|
 
-## <a name="BKMK_ALM"></a> 應用程式生命週期管理
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>應用程式生命週期管理
 
 請參閱[鍵盤快速鍵：Visual Studio Online、TFS 入口網站和 Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 部落格](https://devblogs.microsoft.com/visualstudio/)
-- [Visual Studio 秘訣和訣竅部落格](https://blogs.msdn.microsoft.com/zainnab/)
-- [Channel 9 上的 Visual Studio 工具箱](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+- [Visual Studio 的 Blog](https://devblogs.microsoft.com/visualstudio/)
+- [Visual Studio Tips and Tricks Blog](https://blogs.msdn.microsoft.com/zainnab/) (Visual Studio 秘訣和訣竅部落格)
+- [Visual Studio Toolbox on Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox) (Channel 9 上的 Visual Studio 工具箱)

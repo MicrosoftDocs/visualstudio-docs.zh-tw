@@ -1,7 +1,7 @@
 ---
-title: HOW TO：不執行程式碼開啟 Office 方案
+title: 如何：在不執行程式碼的情況下開啟 Office 方案
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,39 +18,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441773"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543477"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>HOW TO：不執行程式碼開啟 Office 方案
-  即使使用者的 Office 應用程式中的安全性設定設為 「 高 」，就會執行使用 managed 程式碼擴充功能所建立的 Microsoft Office 方案。 這是因為.NET 組件程式碼安全性由 Microsoft.NET Framework 中，不是由 Microsoft Office。
+# <a name="how-to-open-office-solutions-without-running-code"></a>如何：在不執行程式碼的情況下開啟 Office 方案
+  即使終端使用者的 Office 應用程式中的安全性設定設為 [高]，使用 managed 程式碼擴充所建立的 Microsoft Office 方案仍會執行。 這是因為 .NET 組合語言程式碼安全性是由 Microsoft .NET Framework 所管理，而不是由 Microsoft Office。
 
- 不過，有一些您可能的想来開啟的文件，而不需執行的程式碼。 例如，文件開啟時執行程式碼可能修改的內容中，但您想要更新的文件的外觀之前的程式碼變更它的方式。 或要在其中的特定資訊的文件傳送給某個成員，並不想讓程式碼以執行，並可能修改的內容。
+ 不過，有時候您可能會想要開啟檔，而不需要執行程式碼。 例如，當檔開啟時執行的程式碼可能會改變內容，但是您想要更新檔在程式碼變更之前的外觀。 或者，您可能想要將含有特定資訊的檔傳送給其他人，而且您不想要讓程式碼執行，而且可能會更改內容。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- 有幾種方式開啟文件或活頁簿，其中包含 managed 程式碼擴充功能，而不需執行的組譯碼。
+ 有幾種方式可以開啟包含 managed 程式碼擴充的檔或活頁簿，而不需要執行元件程式碼。
 
-## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>若要使用 Shift 鍵，以略過組件
+## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>若要使用 Shift 鍵略過元件
 
-- 開啟文件和活頁簿**檔案**按住功能表**Shift**防止 Word 和 Excel 文件開啟時，引發初始化事件的索引鍵。
+- 在按住**Shift**鍵時，從 [檔案] 功能表開啟 [**檔**和活頁簿]，以防止 Word 和 Excel 在檔開啟時引發初始化事件。
 
     > [!NOTE]
-    > 如果您開啟的文件或活頁簿**快速入門**工作窗格中，按住**Shift**不略過程式碼。 此外，按住 shift 鍵無法防止事件引發之後已開啟的文件。
+    > 如果您從 [**消費者入門**工作窗格] 開啟檔或活頁簿，按住**Shift**並不會略過程式碼。 此外，按住 SHIFT 並不會防止在開啟檔後引發事件。
 
-     這個方法很有用，如果您想要開啟的文件，而不需要執行，而且第一次修改文件的程式碼進行變更。
+     如果您想要開啟檔進行變更，而不執行程式碼，並先改變檔，這個方法就很有用。
 
-## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>略過組件，重新命名或移除方法
+## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>藉由重新命名或移除元件來略過
 
-- 如果您有必要的權限的組件所在的電腦上時，您可以重新命名或移除組件，文件或活頁簿無法找到它。 這會導致每次開啟 Office 文件時引發錯誤。
+- 如果您在元件所在的電腦上有必要的許可權，您可以重新命名或移除該元件，讓檔或活頁簿找不到它。 這會導致每次開啟 Office 檔時引發錯誤。
 
-     如果方案由多人，這個方法會防止對其執行方案。 如果問題位於程式碼或參考的伺服器，而且您想要停止執行中的所有使用者，這可以是很有用。
+     如果有多人使用此解決方案，這個方法會讓解決方案不會針對所有使用者執行。 如果在程式碼或參照的伺服器中發現問題，而您想要停止所有使用者執行它，這會很有用。
 
 ## <a name="see-also"></a>另請參閱
 - [保護 Office 方案](../vsto/securing-office-solutions.md)
 - [部署 Office 方案](../vsto/deploying-an-office-solution.md)
 - [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)
-- [在 Office 方案中的應用程式和部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Office 方案中的應用程式和部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)

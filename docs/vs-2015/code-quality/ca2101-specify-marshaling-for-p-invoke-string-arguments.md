@@ -15,21 +15,21 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 57b7214058baf63ffa5e3ee2c9a982bf411b60e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae65e922d1b4946300155bbf148abac574a2ec2a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652189"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544374"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101：必須指定 P/Invoke 字串引數的封送處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|SpecifyMarshalingForPInvokeStringArguments|
 |CheckId|CA2101|
-|Category|Microsoft。全球化|
+|類別|Microsoft。全球化|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因

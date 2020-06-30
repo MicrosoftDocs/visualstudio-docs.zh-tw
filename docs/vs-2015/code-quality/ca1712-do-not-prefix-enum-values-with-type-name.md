@@ -15,21 +15,21 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8c79ed71290d54f97bb4ed143d32095b157e2e3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4773a34ab7112434813990b4d25cbeeb865f3a08
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669131"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543893"
 ---
-# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712：不要使用類型名稱做為列舉值的前置字元
+# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712:不要使用類型名稱作為列舉值的前置字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DoNotPrefixEnumValuesWithTypeName|
 |CheckId|CA1712|
-|Category|Microsoft. 命名|
+|類別|Microsoft. 命名|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -54,11 +54,11 @@ ms.locfileid: "72669131"
  [!code-vb[FxCop.Naming.EnumValues#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.EnumValues/vb/FxCop.Naming.EnumValues.vb#1)]
 
 ## <a name="related-rules"></a>相關規則
- [CA1711：識別項名稱不應該使用不正確的後置字元](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+ [CA1711:識別項名稱不應該使用不正確的後置字元](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
- [CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027:必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217:不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  <xref:System.Enum?displayProperty=fullName>

@@ -15,21 +15,21 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9574ff022e0d5407b2683e5ba7a6b2e0cde5201e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2e720c1c491e88b6d89fb4b1f0175e8bc8a56e27
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669228"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544049"
 ---
-# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703：資源字串應該拼寫正確
+# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703:資源字串應該使用正確的拼字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|ResourceStringsShouldBeSpelledCorrectly|
 |CheckId|CA1703|
-|Category|Microsoft. 命名|
+|類別|Microsoft. 命名|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -47,8 +47,8 @@ ms.locfileid: "72669228"
  請勿隱藏此規則的警告。 拼寫正確的文字會減少學習新軟體程式庫所需的時間。
 
 ## <a name="related-rules"></a>相關規則
- [CA1701：資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+ [CA1701:資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
- [CA1704：識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+ [CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
- [CA2204：常值必須使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204:常值必須使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

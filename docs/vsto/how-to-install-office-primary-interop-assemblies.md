@@ -1,7 +1,7 @@
 ---
-title: HOW TO：安裝 Office 主要 interop 元件
+title: 如何：安裝 Office 主要 interop 元件
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee6755a2d795d2018136785986a5a346ddc07dc6
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b6f90b568f98abe5026525a60723efb59f737235
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551801"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544777"
 ---
-# <a name="how-to-install-office-primary-interop-assemblies"></a>HOW TO：安裝 Office 主要 interop 元件
+# <a name="how-to-install-office-primary-interop-assemblies"></a>如何：安裝 Office 主要 interop 元件
   當您安裝 Office 時，請安裝 Microsoft Office 主要 Interop 組件 (PIA)。
 
 [!include[Add-ins note](includes/addinsnote.md)]
@@ -29,15 +29,15 @@ ms.locfileid: "69551801"
 
 1. 確定您有至少 2.0 版的 .NET Framework。
 
-2. 安裝 Microsoft Office, 並確定已針對您想要擴充的應用程式選取 [.Net 程式設計**支援**] 功能 (這項功能包含在預設安裝中)。
+2. 安裝 Microsoft Office，並確定已針對您想要擴充的應用程式選取 [.Net 程式設計**支援**] 功能（這項功能包含在預設安裝中）。
 
     > [!WARNING]
-    > 根據預設, 當您建立 PIA 時, 會將它內嵌在您的方案中, 如此您就不需要將 Pia 散發給使用者, 做為使用 VSTO 增益集或自訂的必要條件。
+    > 根據預設，當您建立 PIA 時，會將它內嵌在您的方案中，如此您就不需要將 Pia 散發給使用者，做為使用 VSTO 增益集或自訂的必要條件。
 
 ## <a name="see-also"></a>另請參閱
 - [Office 主要 interop 元件](../vsto/office-primary-interop-assemblies.md)
 - [如何：透過主要 interop 元件以 Office 應用程式為目標](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [如何：設定電腦以開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [如何：安裝 Visual Studio Tools for Office 執行時間可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
-- [Office 方案開發總覽&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [開始&#40;在 Visual Studio 中進行 Office 開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [在 Visual Studio&#41;中 &#40;Office 開發入門](../vsto/getting-started-office-development-in-visual-studio.md)

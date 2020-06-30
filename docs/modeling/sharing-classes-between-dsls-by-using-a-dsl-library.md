@@ -1,18 +1,18 @@
 ---
 title: 使用 DSL 程式庫共用 DSL 之間的類別
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bfadc1777dfb4ba0c8ea712cfd39becc47f54a1
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 38496141d6fcdd33f3bf5185c3f50b1bf961d832
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76111356"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542541"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 程式庫共用 DSL 之間的類別
 在 Visual Studio 視覺效果和模型化 SDK 中，您可以建立一個不完整的 DSL 定義，讓您可以將其匯入至另一個 DSL。 這可讓您將類似模型的常見部分納入考慮。
@@ -31,7 +31,7 @@ ms.locfileid: "76111356"
 
      若要定義匯入工具可以使用的關聯性，請建立兩個網域類別，並建立它們之間的關聯性。
 
-     請考慮將網域類別的**繼承修飾**詞設定為 `Abstract`。
+     請考慮將網域類別的**繼承修飾**詞設定為 `Abstract` 。
 
 3. 您可以加入您在 DSL Explorer 中定義的元素，例如連接產生器。
 
@@ -41,13 +41,13 @@ ms.locfileid: "76111356"
 
 6. 建置專案。
 
-7. 當您散發 DSL 供其他人使用時，您必須同時提供已編譯的元件（DLL）和檔案 `DslDefinition.dsl`。 您可以在下的資料夾中找到已編譯的元件 `Dsl\bin\*`
+7. 當您散發 DSL 供其他人使用時，您必須同時提供已編譯的元件（DLL）和檔案 `DslDefinition.dsl` 。 您可以在下的資料夾中找到已編譯的元件`Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>匯入 DSL 程式庫
 
 1. 在另一個 DSL 定義的 [ **Dsl Explorer**] 中，以滑鼠右鍵按一下 dsl 的根類別，然後按一下 [**新增 DslLibrary 匯入**]。
 
-2. 在 屬性視窗中，設定**文檔**庫的檔案路徑。 您可以使用相對或絕對路徑。
+2. 在 [屬性視窗中，設定**文檔**庫的檔案路徑。 您可以使用相對或絕對路徑。
 
     匯入的程式庫會在 [DSL Explorer] 中以唯讀模式顯示。
 
@@ -61,7 +61,7 @@ ms.locfileid: "76111356"
 
    DSL 程式庫可以匯入其他程式庫。 當您匯入程式庫時，其匯入也會自動顯示在 DSL Explorer 中。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
 

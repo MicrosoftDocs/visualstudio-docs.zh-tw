@@ -13,17 +13,17 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbe6da087d10d3373a1f5d7836d4fa5207801bc7
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 945e934ce16c9e08209f89d8d2d2dcdfe166a4c6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586746"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542814"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024：超過 GC CPU 時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||  
+|Item|值|  
 |-|-|  
 |規則 ID|DA0024|  
 |類別|.NET Framework 使用方式|  

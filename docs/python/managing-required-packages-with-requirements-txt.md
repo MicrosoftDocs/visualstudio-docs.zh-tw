@@ -2,7 +2,7 @@
 title: 使用 requirements.txt 檔案管理套件相依性
 description: requirements.txt 檔案會描述專案的相依性。 如果您收到包含 requirements.txt 檔案的專案，就可以輕鬆地在單一步驟中安裝那些相依性。
 ms.date: 03/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1853df63354801ebf0413d3c8707135cb9bb800
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9179ca2b77e7a6d3ae5b5dffded06524114a0f8d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62535699"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544114"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理必要套件
 
@@ -29,7 +29,7 @@ ms.locfileid: "62535699"
 
 - 如果想要在虛擬環境中安裝相依項目，請先建立並啟動該環境，然後使用 [從 requirements.txt 安裝]**** 命令。 如需建立虛擬環境的詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
-- 如果已在環境中安裝了所有必要的包，則可以在**解決方案資源管理器**中按右鍵該環境，然後選擇 **"生成需求.txt"** 以創建必要的檔。 如果該檔案已經存在，系統會提示您如何更新它：
+- 如果您已在環境中安裝所有必要的套件，您可以在**方案總管**中以滑鼠右鍵按一下該環境，然後選取 [**產生 requirements.txt** ] 以建立必要的檔案。 如果該檔案已經存在，系統會提示您如何更新它：
 
     ![更新 requirements.txt 選項](media/environments/environments-requirements-txt-replace.png)
 
@@ -39,7 +39,7 @@ ms.locfileid: "62535699"
 
 由於 *requirements.txt* 檔案的用意是要固定住環境的需求，因此所有安裝的套件都已寫明精確的版本。 使用精確的版本可確保您可以在另一部電腦上輕鬆重現您的環境。 即使安裝套件時已指定版本範圍，仍然會包含這些套件作為另一個套件的相依性，或隨附於 pip 以外的安裝程式。
 
-如果套件是 pip 無法安裝的套件，並且出現在 *requirements.txt* 檔案中，整個安裝就會失敗。 在此情況下，請手動編輯檔案以將此套件排除，或使用 [pip 的選項](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)來參考該套件的可安裝版本。 例如，您可能更喜歡使用 來[`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html)編譯依賴項並將`--find-links <path>`選項添加到*您的要求.*
+如果套件是 pip 無法安裝的套件，並且出現在 *requirements.txt* 檔案中，整個安裝就會失敗。 在此情況下，請手動編輯檔案以將此套件排除，或使用 [pip 的選項](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)來參考該套件的可安裝版本。 例如，您可能偏好使用 [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) 來編譯相依性，並將選項新增 `--find-links <path>` 至您的*requirements.txt*：
 
 ```output
 C:\Project>pip wheel azure
@@ -70,5 +70,5 @@ Cleaning up...
 
 - [在 Visual Studio 中管理 Python 環境](managing-python-environments-in-visual-studio.md)
 - [選取專案的解譯器](selecting-a-python-environment-for-a-project.md)
-- [搜索路徑](search-paths.md)
+- [搜尋路徑](search-paths.md)
 - [Python 環境視窗參考](python-environments-window-tab-reference.md)

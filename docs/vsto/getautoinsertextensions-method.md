@@ -1,7 +1,7 @@
 ---
 title: GetAutoInsertExtensions 方法
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb767ec7301a1d4e0f29003971b017339228fc9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5d88af6f24306b7b243359c9797a2cb7e7449bc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972274"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543503"
 ---
 # <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions 方法
-  取得要在偵錯期間會自動插入的 Office 應用程式的相關資訊。
+  取得要在偵測期間自動插入之 Office 應用程式的相關資訊。
 
  這個方法是保留供日後使用。
 
@@ -34,10 +34,10 @@ HRESULT GetAutoInsertExtensions(
 
 |參數|描述|
 |---------------|-----------------|
-|*psaExtensionNames*|適用於 Office 的應用程式擴充功能名稱。|
+|*psaExtensionNames*|適用于 Office 的應用程式的擴充功能名稱。|
 
 ## <a name="return-value"></a>傳回值
  HRESULT 值，表示此方法是否已順利完成。
 
 ## <a name="remarks"></a>備註
- 每個要插入的 Office 應用程式以 Office 應用程式擴充功能名稱，對應到了下的值傳回**HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**。 主機必須查閱登錄中的這些值，然後再自動插入擴充功能。
+ 要插入的每個 Office 應用程式都會以 Office 應用程式延伸模組名稱的形式傳回，其對應至**HKEY_CURRENT_USER \software\microsoft\office\wef\developer**下的值。 主機必須在登錄中查詢這些值，然後自動插入延伸模組。

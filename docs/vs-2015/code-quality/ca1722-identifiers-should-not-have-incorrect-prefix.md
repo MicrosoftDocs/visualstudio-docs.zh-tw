@@ -15,21 +15,21 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0f50c5aca934886f03a54692d98a6be3f8bb5562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7f4f932f8e2db9a558d7440d8965ce5924043b8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671584"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544478"
 ---
-# <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722：識別項不應使用不正確的前置字元
+# <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722:識別項名稱不應該使用不正確的前置字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectPrefix|
 |CheckId|CA1722|
-|Category|Microsoft. 命名|
+|類別|Microsoft. 命名|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -49,4 +49,4 @@ ms.locfileid: "72671584"
  請勿隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關規則
- [CA1715：識別項名稱應該使用正確的前置字元](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+ [CA1715:識別項名稱應該使用正確的前置字元](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

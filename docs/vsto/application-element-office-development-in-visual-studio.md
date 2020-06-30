@@ -1,8 +1,8 @@
 ---
-title: '&lt;應用程式&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
+title: '&lt;application &gt; 元素（Visual Studio 中的 Office 程式開發）'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80652f6752b87cf0413b0b3166b0cf3292231c25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3540df77b4498376dcde389730e17e7506647fb8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62942893"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543737"
 ---
-# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;應用程式&gt;元素 （在 Visual Studio 中的 Office 程式開發）
+# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;application &gt; 元素（Visual Studio 中的 Office 程式開發）
   `application` 命名空間的 `vstav3` 項目會包裝 Office 方案的描述。 文件層級自訂與 VSTO 增益集的子項目不同。
 
-## <a name="syntax-for-document-level-customizations"></a>文件層級自訂的語法
+## <a name="syntax-for-document-level-customizations"></a>檔層級自訂的語法
 
 ```xml
 <application>
@@ -36,7 +36,7 @@ ms.locfileid: "62942893"
 </application>
 ```
 
-## <a name="syntax-for-application-level-add-ins"></a>應用程式層級增益集的語法
+## <a name="syntax-for-application-level-add-ins"></a>應用層級增益集的語法
 
 ```xml
 <application>
@@ -61,9 +61,9 @@ ms.locfileid: "62942893"
  `application` 項目具有下列項目。
 
 ### <a name="customization"></a>自訂
- 所扮演的角色`customization`中的項目`vstov3`中所定義的命名空間[&#60;自訂&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/customization-element-office-development-in-visual-studio.md)。
+ `customization`命名空間中元素的角色 `vstov3` 定義于[&#60;自訂&#62; 元素中，&#40;Visual Studio&#41;中的 Office 開發](../vsto/customization-element-office-development-in-visual-studio.md)。
 
-## <a name="document-level-customization-example"></a>文件層級自訂範例
+## <a name="document-level-customization-example"></a>檔層級自訂範例
 
 ### <a name="description"></a>描述
  下列程式碼範例說明使用 `application` 部署之文件層級 Office 方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。

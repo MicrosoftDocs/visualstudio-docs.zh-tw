@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式將色彩套用至 Excel 範圍
+title: 如何：以程式設計方式將色彩套用至 Excel 範圍
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,38 +14,38 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 56ecbfcdaf22132f63df1ecf5eadba97dee426af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d4a99e2e71e6a87b304ceea45a3cd595f911ff1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817269"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543451"
 ---
-# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>HOW TO：以程式設計方式將色彩套用至 Excel 範圍
-  若要將色彩套用至資料格範圍內的文字，使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。
+# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>如何：以程式設計方式將色彩套用至 Excel 範圍
+  若要將色彩套用至資料格範圍內的文字，請使用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="use-a-namedrange-control"></a>使用 NamedRange 控制項
- 這個範例是用於文件層級自訂。
+ 這個範例適用于檔層級自訂。
 
-### <a name="to-apply-color-to-a-namedrange-control"></a>若要將色彩套用到 NamedRange 控制項
+### <a name="to-apply-color-to-a-namedrange-control"></a>將色彩套用至 NamedRange 控制項
 
-1. 建立<xref:Microsoft.Office.Tools.Excel.NamedRange>A1 儲存格的控制項。
+1. <xref:Microsoft.Office.Tools.Excel.NamedRange>在儲存格 A1 上建立控制項。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#65)]
      [!code-vb[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#65)]
 
-2. 設定中的文字色彩<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項。
+2. 設定控制項中文字的色彩 <xref:Microsoft.Office.Tools.Excel.NamedRange> 。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#66)]
      [!code-vb[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#66)]
 
 ## <a name="use-native-excel-ranges"></a>使用原生 Excel 範圍
 
-### <a name="to-apply-color-to-a-native-excel-range-object"></a>若要將色彩套用至原生的 Excel 範圍物件
+### <a name="to-apply-color-to-a-native-excel-range-object"></a>將色彩套用至原生 Excel 範圍物件
 
-1. 建立在儲存格 A1 的範圍，然後將 文字的色彩。
+1. 在儲存格 A1 建立範圍，然後設定文字的色彩。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]
@@ -54,6 +54,6 @@ ms.locfileid: "62817269"
 - [使用範圍](../vsto/working-with-ranges.md)
 - [NamedRange 控制項](../vsto/namedrange-control.md)
 - [如何：以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [如何：以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
-- [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
+- [如何：以程式設計方式在程式碼中參考工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

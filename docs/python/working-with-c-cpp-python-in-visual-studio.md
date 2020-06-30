@@ -2,7 +2,7 @@
 title: 撰寫適用於 Python 的 C++ 延伸模組
 description: 使用 Visual Studio、CPython 和 PyBind11 建立適用於 Python 的 C++ 延伸模組逐步解說，包括混合模式偵錯。
 ms.date: 11/19/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0871361d25131b493838bac12945a64a19a0f173
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62956930"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543724"
 ---
 # <a name="create-a-c-extension-for-python"></a>建立適用於 Python 的 C++ 延伸模組
 
@@ -50,7 +50,7 @@ ms.locfileid: "62956930"
 
 ## <a name="create-the-python-application"></a>建立 Python 應用程式
 
-1. 通過選擇 **"檔** > **新專案** > "，在視覺化工作室中創建新的 Python**專案**。 搜尋 Python、選取 [Python 應用程式]**** 範本、提供適合的名稱和位置，並選取 [確定]****。
+1. 藉**由選取 [** 檔案] [  >  **新增**  >  **專案**]，在 Visual Studio 中建立新的 Python 專案。 搜尋 Python、選取 [Python 應用程式]**** 範本、提供適合的名稱和位置，並選取 [確定]****。
 
 1. 使用 C++ 需要您使用 32 位元 Python 解譯器 (建議使用 Python 3.6 或更新版本)。 在 Visual Studio 的 [方案總管]**** 視窗中，展開專案節點，然後展開 [Python 環境]**** 節點。 如果您看到預設值是 32 位元環境 (粗體或標示為 [全域預設值]****)，請依照[針對專案選取 Python 環境](selecting-a-python-environment-for-a-project.md)上的指示進行。 如果您還未安裝 32 位元解譯器，請參閱[安裝 Python 解譯器](installing-python-interpreters.md)。
 
@@ -91,10 +91,10 @@ ms.locfileid: "62956930"
         test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d] (Python implementation)')
     ```
 
-1. 使用**調試** > **啟動****（Ctrl**+**F5）** 運行程式以查看結果。 您可以調整 `COUNT` 變數，以變更基準測試的執行花費時間。 基於本逐步解說的目的，請將計數設定為讓基準測試只花約兩秒的時間。
+1. 使用 [ **Debug**Start] 執行程式  >  **而不**進行偵測（**Ctrl** + **F5**）以查看結果。 您可以調整 `COUNT` 變數，以變更基準測試的執行花費時間。 基於本逐步解說的目的，請將計數設定為讓基準測試只花約兩秒的時間。
 
 > [!TIP]
-> 運行基準測試時，始終使用**Debug** > **不調試的調試啟動**，以避免在 Visual Studio 調試器中運行代碼時產生的開銷。
+> 執行基準測試時，請一律使用**Debug**  >  **Start 而不進行調試**，以避免在 Visual Studio 偵錯工具中執行程式碼時所產生的額外負荷。
 
 ## <a name="create-the-core-c-projects"></a>建立核心 C++ 專案
 
@@ -122,23 +122,23 @@ ms.locfileid: "62956930"
 
     | 索引標籤 | 屬性 | 值 |
     | --- | --- | --- |
-    | **一般** | **常規** > **目標名稱** | 依您希望來指定模組名稱，用 `from...import` 陳述式從 Python 中參考它。 為 Python 定義模組時，會在 C++ 中使用相同名稱。 如果想用專案名稱當作模組名稱，請保留預設值 **$(ProjectName)**。 |
-    | | **常規** > **目標擴展** | **.pyd** |
-    | | **專案預設** > **配置類型** | **動態程式庫 (.dll)** |
-    | **C/C++** > **一般** | **其他 Include 目錄** | 視情況為您的安裝新增 Python *include* 資料夾，例如 `c:\Python36\include`。  |
-    | **C/C++** > **預處理器** | **前置處理器定義** | **僅限 CPython**：將 `Py_LIMITED_API;` 新增至字串的開頭 (包括分號)。 此定義會限制您可以從 Python 呼叫的某些功能，並使程式碼更容易在不同版本的 Python 之間移植。 如果您使用 PyBind11，請勿新增這個定義，否則您將會看到建置錯誤。 |
-    | **C/C++** > **代碼生成** | **執行階段程式庫** | **多執行緒 DLL （/MD）** （請參閱下面的警告） |
-    | **連結器** > **常規** | **其他程式庫目錄** | 視您的安裝新增適當的 Python *libs* 資料夾並包含 *.lib* 檔案，例如 `c:\Python36\libs`。 (請務必指向包含 *.lib* 檔案的 *libs* 資料夾，而「不是」** 包含 *.py* 檔案的 *Lib* 資料夾。) |
+    | **一般** | **一般**  > **目標名稱** | 依您希望來指定模組名稱，用 `from...import` 陳述式從 Python 中參考它。 為 Python 定義模組時，會在 C++ 中使用相同名稱。 如果想用專案名稱當作模組名稱，請保留預設值 **$(ProjectName)**。 |
+    | | **一般**  > **目標副檔名** | **.pyd** |
+    | | **專案預設值**  > 設定**類型** | **動態程式庫 (.dll)** |
+    | **C/C + +**  > **一般** | **其他 Include 目錄** | 視情況為您的安裝新增 Python *include* 資料夾，例如 `c:\Python36\include`。  |
+    | **C/C + +**  > **預處理器** | **前置處理器定義** | **僅限 CPython**：將 `Py_LIMITED_API;` 新增至字串的開頭 (包括分號)。 此定義會限制您可以從 Python 呼叫的某些功能，並使程式碼更容易在不同版本的 Python 之間移植。 如果您使用 PyBind11，請勿新增這個定義，否則您將會看到建置錯誤。 |
+    | **C/C + +**  > 程式**代碼產生** | **執行階段程式庫** | **多執行緒 DLL （/md）** （請參閱下面的警告） |
+    | **連結器**  > **一般** | **其他程式庫目錄** | 視您的安裝新增適當的 Python *libs* 資料夾並包含 *.lib* 檔案，例如 `c:\Python36\libs`。 (請務必指向包含 *.lib* 檔案的 *libs* 資料夾，而「不是」** 包含 *.py* 檔案的 *Lib* 資料夾。) |
 
     > [!Tip]
-    > 如果在專案 [屬性] 中沒有看到 [C/C++] 索引標籤，這是因為專案不包含它識別為 C/C++ 原始程式檔的任何檔案。 如果您建立原始程式檔，而沒有 *.c* 或 *.cpp* 副檔名，便可能發生此情形。 例如，如果您之前意外輸入`module.coo`而不是`module.cpp`在新項對話方塊中輸入，則 Visual Studio 將創建檔，但不會將檔案類型設置為"C/C+ 代碼"，這就是啟動 C/C++ 屬性選項卡的內容。即使使用`.cpp`重命名檔，這種錯誤標識仍然存在。 要正確設置檔案類型，請按右鍵**解決方案資源管理器**中的檔，選擇**屬性**，然後將**檔案類型**設置為**C/C++ 代碼**。
+    > 如果在專案 [屬性] 中沒有看到 [C/C++] 索引標籤，這是因為專案不包含它識別為 C/C++ 原始程式檔的任何檔案。 如果您建立原始程式檔，而沒有 *.c* 或 *.cpp* 副檔名，便可能發生此情形。 例如，如果您不小心在 `module.coo` `module.cpp` 先前的 [新增專案] 對話方塊中輸入而不是，則 Visual Studio 會建立檔案，但不會將檔案類型設定為 [C/c + 程式碼]，這會啟動 [c/c + + 屬性] 索引標籤。即使您將檔案重新命名，這類禮貌語氣問題還是會維持不變 `.cpp` 。 若要正確設定檔案類型，請以滑鼠右鍵按一下**方案總管**中的檔案，選取 [**屬性**]，然後將 [**檔案類型**] 設定為 [ **C/c + + 程式碼**]。
 
     > [!Warning]
-    > 始終將**C/C++** > **代碼生成** > **運行時庫**選項設置為**多執行緒 DLL （/MD），** 即使對於調試配置也是如此，因為此設置是非調試 Python 二進位檔案所構建的內容。 使用 CPython，如果您碰巧設置了**多執行緒調試 DLL （/MDd）** 選項，則構建**調試**配置會產生錯誤**C1189：Py_LIMITED_API與Py_DEBUG、Py_TRACE_REFS和Py_REF_DEBUG不相容**。 此外，如果您移除 `Py_LIMITED_API` (其對 CPython 為必要項，但對 PyBind11 則不是) 以避免發生建置錯誤，Python 會在嘗試匯入模組時當機。 (當機會發生在 DLL 的 `PyModule_Create` 呼叫內，如稍後所述，輸出訊息為「Python 嚴重錯誤︰PyThreadState_Get︰沒有目前的執行緒」****。)
+    > 請一律將 [ **c/c + +** 程式  >  **代碼產生**  >  **運行**時間程式庫] 選項設定為**多執行緒 DLL （/md）**，即使是針對 debug 設定，因為這是用來建立非 debug Python 二進位檔的設定。 使用 CPython 時，如果您已設定**多執行緒調試 DLL （/MDd）** 選項，建立**Debug**設定會產生錯誤**C1189： Py_LIMITED_API 與 Py_DEBUG、Py_TRACE_REFS 和 Py_REF_DEBUG 不相容**。 此外，如果您移除 `Py_LIMITED_API` (其對 CPython 為必要項，但對 PyBind11 則不是) 以避免發生建置錯誤，Python 會在嘗試匯入模組時當機。 (當機會發生在 DLL 的 `PyModule_Create` 呼叫內，如稍後所述，輸出訊息為「Python 嚴重錯誤︰PyThreadState_Get︰沒有目前的執行緒」****。)
     >
-    > /MDd 選項用於生成 Python 調試二進位檔案（如*python_d.exe），* 但為擴展 DLL 選擇它仍會導致生成`Py_LIMITED_API`錯誤。
+    > /MDd 選項是用來建立 Python 偵錯工具二進位檔（例如*python_d.exe*），但針對擴充 DLL 選取它仍然會導致建立錯誤 `Py_LIMITED_API` 。
 
-1. 按右鍵C++專案，然後選擇 **"生成"** 以測試組態（**調試**和**發佈**）。 *.pyd* 檔案位於 **Debug** 和 **Release** 下的 **solution** 資料夾，而不是 C++ 專案資料夾本身。
+1. 以滑鼠右鍵按一下 c + + 專案，然後選取 [**組建**] 以測試您的設定（[ **Debug** ] 和 [ **Release**]）。 *.pyd* 檔案位於 **Debug** 和 **Release** 下的 **solution** 資料夾，而不是 C++ 專案資料夾本身。
 
 1. 將下列程式碼加入 C++ 專案的 *module.cpp* 檔案︰
 
@@ -206,7 +206,7 @@ ms.locfileid: "62956930"
     };
     ```
 
-1. 新增可定義模組的結構，因為您想要在 Python 程式碼中參照它，特別是使用 `from...import` 陳述式時。 （使此匹配配置**屬性** > **"常規** > **目標名稱**"下的專案屬性中的值。在下面的示例中，"超級快速代碼"模組名稱表示您可以在 Python`from superfastcode import fast_tanh`中使用，因為`fast_tanh`是在 中`superfastcode_methods`定義的。 （C++專案內部的檔案名（如*模組.cpp）* 無關緊要。
+1. 新增可定義模組的結構，因為您想要在 Python 程式碼中參照它，特別是使用 `from...import` 陳述式時。 （使其符合 [設定]**屬性**  >  下專案屬性中的值**一般**  > **目標名稱**）。在下列範例中，"superfastcode" 模組名稱表示您可以 `from superfastcode import fast_tanh` 在 Python 中使用，因為 `fast_tanh` 是在中定義 `superfastcode_methods` 。 （C + + 專案（如*模組 .cpp*）內部的檔案名是不重要。）
 
     ```cpp
     static PyModuleDef superfastcode_module = {
@@ -218,7 +218,7 @@ ms.locfileid: "62956930"
     };
     ```
 
-1. 添加`PyInit_<module-name>`Python 在載入模組時調用的方法（必須命名為 ，其中&lt;模組名稱&gt;與C++專案的 **"常規** > **目標名稱**"屬性（即，它與專案生成的 *.pyd*的檔案名匹配）。
+1. 新增 Python 在載入模組時呼叫的方法，其必須命名為 `PyInit_<module-name>` ，其中 &lt; 模組名稱 &gt; 完全符合 c + + 專案的 **[一般**  >  **目標名稱**] 屬性（亦即，它符合專案所建立之 *.pyd*的檔案名）。
 
     ```cpp
     PyMODINIT_FUNC PyInit_superfastcode() {
@@ -226,7 +226,7 @@ ms.locfileid: "62956930"
     }
     ```
 
-1. 將目標配置設置為 **"發佈**"，並再次生成C++專案以驗證代碼。 如果您遇到錯誤，請參閱下列[疑難排解](#troubleshooting)一節。
+1. 將目標設定設為 [**發行**]，然後再次建立 c + + 專案，以驗證您的程式碼。 如果您遇到錯誤，請參閱下列[疑難排解](#troubleshooting)一節。
 
 ### <a name="pybind11"></a>PyBind11
 
@@ -266,7 +266,7 @@ C++ 模組可能因為下列原因而無法編譯：
 
 - 找不到 *Python.h* (「E1696：無法開啟來源檔案 "Python.h"」****/或「C1083：無法開啟 include 檔案："Python.h"：沒有這種檔案或目錄」)****，請驗證專案屬性中 [C/C++]**** > [一般]**** > [其他 Include 目錄]**** 的路徑指向您 Python 安裝的 *include* 資料夾。 請參閱[建立 Core C++ 專案](#create-the-core-c-projects)下的步驟 6。
 
-- 找不到 Python 庫：驗證專案屬性中的**Linker** > **常規** > **附加庫目錄中**的路徑是否指向 Python 安裝的*libs*資料夾。 請參閱[建立 Core C++ 專案](#create-the-core-c-projects)下的步驟 6。
+- 找不到 Python 程式庫：請確認專案屬性中的**連結器**  >  **一般**  >  **其他程式庫目錄**中的路徑指向您的*libs* Python 安裝的 [圖庫] 資料夾。 請參閱[建立 Core C++ 專案](#create-the-core-c-projects)下的步驟 6。
 
 - 與目標架構相關的連結器錯誤：變更 C++ 目標的專案結構使符合您的 Python 安裝結構。 例如，如果您的 C++ 專案以 x64 為目標，但是您的 Python 安裝為 x86，請將 C++ 專案變更為以 x86 為目標。
 
@@ -278,7 +278,7 @@ C++ 模組可能因為下列原因而無法編譯：
 
 有兩種方式，可讓 Python 使用 DLL。
 
-如果 Python 專案和 C++ 專案都在相同的解決方案中，第一種方法就會起作用。 轉到**解決方案資源管理器**，按右鍵 Python 專案中的**參考**節點，然後選擇"**添加參考**"。 在出現的對話方塊中，依序選取 [專案]**** 索引標籤、[superfastcode]**** 和 [superfastcode2]**** 專案，然後按一下 [確定]****。
+如果 Python 專案和 C++ 專案都在相同的解決方案中，第一種方法就會起作用。 移至**方案總管**，以滑鼠右鍵按一下 Python 專案中的 [**參考**] 節點，然後選取 [**新增參考**]。 在出現的對話方塊中，依序選取 [專案]**** 索引標籤、[superfastcode]**** 和 [superfastcode2]**** 專案，然後按一下 [確定]****。
 
 ![將參考新增至 superfastcode 專案](media/cpp-add-reference.png)
 
@@ -354,7 +354,7 @@ C++ 模組可能因為下列原因而無法編譯：
     test(lambda d: [fast_tanh2(x) for x in d], '[fast_tanh2(x) for x in d] (PyBind11 C++ extension)')
     ```
 
-1. 運行 Python 程式 **（** > **調試啟動而不調試**或**Ctrl**+**F5），** 並觀察到C++常式的運行速度比 Python 實現快大約五到二十倍。 一般輸出會以下列形式呈現：
+1. 執行 python 程式（[**Debug**] [  >  **啟動但不**進行偵測] 或**Ctrl** + **F5**），並觀察 c + + 常式執行的速度比 Python 執行快大約五到20倍。 一般輸出會以下列形式呈現：
 
     ```output
     Running benchmarks with COUNT = 500000
@@ -365,9 +365,9 @@ C++ 模組可能因為下列原因而無法編譯：
     [fast_tanh2(x) for x in d] (PyBind11 C++ extension) took 0.204 seconds
     ```
 
-    如果禁用"**不調試啟動"** 命令，請按右鍵**解決方案資源管理器**中的 Python 專案，然後選擇"**設置為啟動專案**"。
+    如果停用 [**啟動但不調試**] 命令，請以滑鼠右鍵按一下**方案總管**中的 Python 專案，然後選取 [**設定為啟始專案**]。
 
-1. 您可以嘗試增加 `COUNT` 變數，讓差異更加明顯。 C++模組的**調試**生成的運行速度也慢于**發佈**版本，因為**調試**生成優化得較少，並且包含各種錯誤檢查。 您可以自行切換這些組態以進行比較。
+1. 您可以嘗試增加 `COUNT` 變數，讓差異更加明顯。 因為**debug**組建較不優化，而且包含各種錯誤檢查，所以 c + + 模組的**debug**組建也會比**發行**組建慢。 您可以自行切換這些組態以進行比較。
 
 > [!NOTE]
 > 在輸出中，您可以看到 PyBind11 延伸模組速度不如 CPython 延伸模組，雖然仍明顯比直接的 Python 實作快。 差異是由於 PyBind11 為了大幅簡化 C++ 介面所造成每次呼叫時的少量額外負荷。 這個每次呼叫時的差異實際上很微不足道：因為測試程式碼會呼叫延伸模組函式 500,000 次，所以您在這裡看到的結果大幅增強了該額外負荷！ C++ 函式通常會比此處使用的一般 `fast_tanh[2]` 方法多做許多工作，在此情況下，額外負荷並不重要。 不過，如果您實作可能每秒呼叫數千次的方法，使用 CPython 方法可能導致效能比 PyBind11 更佳。
@@ -379,17 +379,17 @@ Visual Studio 可支援同時偵錯 Python 和 C++ 程式碼。 本節將逐步�
 1. 在 [方案總管]**** 中以滑鼠右鍵按一下 Python 專案、依序選取 [屬性****]、[偵錯]**** 索引標籤，然後選取 [偵錯]**** > [啟用機器碼偵錯]**** 選項。
 
     > [!Tip]
-    > 啟用本機代碼調試時，當程式完成時，Python 輸出視窗可能會立即消失，而不會給您通常**的按任意鍵以繼續**暫停。 要強制暫停，請啟用本機`-i`代碼調試時，將選項添加到 **"調試**"選項卡上的 **"運行** > **解譯器參數"** 欄位。 此參數在代碼完成後將 Python 解譯器置於交互模式，此時它等待您按**Ctrl**+**Z** > **Enter**退出。 (或者，如果您不介意修改 Python 程式碼，可以在程式結尾新增 `import os` 和 `os.system("pause")` 陳述式。 此程式碼會複製原始暫停提示字元。)
+    > 當您啟用機器碼偵錯工具時，Python 輸出視窗可能會在程式完成時立即消失，而不會提供您平常的**按任意鍵繼續**暫停。 若要強制暫停，請在 `-i` 啟用機器碼偵錯工具時，將選項加入 [偵錯工具] 索引標籤上的 [**執行**  >  **解譯器引數**] 欄位。 **Debug** 這個引數會讓 Python 解譯器在程式碼完成之後進入互動模式，此時它會等待您按**Ctrl** + **Z**  >  **enter**結束。 (或者，如果您不介意修改 Python 程式碼，可以在程式結尾新增 `import os` 和 `os.system("pause")` 陳述式。 此程式碼會複製原始暫停提示字元。)
 
-1. 選擇 **"檔** > **保存**"以保存屬性更改。
+1. 選取**File**  >  [檔案] [**儲存**] 以儲存屬性變更。
 
-1. 將組建組態設置為在視覺化工作室工具列中**調試**。
+1. 在 [Visual Studio] 工具列中，將組建設定設為**Debug** 。
 
     ![將組建組態設為 [偵錯]](media/cpp-set-debug.png)
 
 1. 在偵錯工具中執行程式碼通常會花較長時間，因此您可以將 *.py* 檔案中的 `COUNT` 變數改為少 5 倍的值 (例如，將它從 `500000` 變更為 `100000`)。
 
-1. 在您的 C++ 程式碼中，於 `tanh_impl` 方法的第一行設定中斷點，然後啟動偵錯工具 (**F5** 或 [偵錯]**** > [開始偵錯]****)。 偵錯工具即會在呼叫該程式碼時停止。 如果未命中中斷點，請檢查配置是否設置為**調試**，以及是否保存了專案（啟動調試器時不會自動發生）。
+1. 在您的 C++ 程式碼中，於 `tanh_impl` 方法的第一行設定中斷點，然後啟動偵錯工具 (**F5** 或 [偵錯]**** > [開始偵錯]****)。 偵錯工具即會在呼叫該程式碼時停止。 如果未叫用中斷點，請檢查設定是否設為 [ **Debug** ]，並確定您已儲存專案（這不會在啟動偵錯工具時自動發生）。
 
     ![在 C++ 程式碼的中斷點處停止](media/cpp-debugging.png)
 
@@ -399,10 +399,10 @@ Visual Studio 可支援同時偵錯 Python 和 C++ 程式碼。 本節將逐步�
 
 有各種方式可以建立 Python 延伸模組，如下表所述。 CPython 及 PyBind11 的前兩個項目已在本文中討論。
 
-| 方法 | 年分 | 代表使用者 | 正面意見 | 反面意見 |
+| 方法 | 老式 | 代表使用者 | 正面意見 | 反面意見 |
 | --- | --- | --- | --- | --- |
 | 適用於 CPython 的 C/C++ 延伸模組 | 1991 | 標準程式庫 | [大量文件與教學課程](https://docs.python.org/3/c-api/)。 完全控制。 | 編譯、可攜性、參考管理。 高度 C 知識。 |
-| [PyBind11（](https://github.com/pybind/pybind11)推薦用於C++） | 2015 |  | 輕量型、僅限標頭的程式庫，適合建立現有 C++ 程式碼的 Python 繫結。 低相依性。 PyPy 相容性。 | 較新穎、較不成熟。 大量使用 C++11 功能。 支援編譯器的簡短清單 (包含 Visual Studio)。 |
+| [PyBind11](https://github.com/pybind/pybind11) （建議用於 c + +） | 2015 |  | 輕量型、僅限標頭的程式庫，適合建立現有 C++ 程式碼的 Python 繫結。 低相依性。 PyPy 相容性。 | 較新穎、較不成熟。 大量使用 C++11 功能。 支援編譯器的簡短清單 (包含 Visual Studio)。 |
 | Cython (建議用於 C) | 2007 | [gevent](https://www.gevent.org/)、[kivy](https://kivy.org/) | 類似 Python。 高度成熟。 高效能。 | 編譯、新的語法和新的工具鏈。 |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | 幾乎可搭配每種 C++ 編譯器使用。 | 大型且複雜的程式庫套件，包含許多舊型編譯器的因應措施。 |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 不需編譯、廣泛可用。 | 存取與變更 C 結構麻煩又容易出錯。 |

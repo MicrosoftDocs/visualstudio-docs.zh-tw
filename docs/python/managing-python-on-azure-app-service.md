@@ -2,7 +2,7 @@
 title: 設定 Azure App Service 上的 Python (Windows)
 description: 如何在 Azure App Service 上安裝 Python 解譯器和程式庫，並設定 Web 應用程式以便能正確地參考該解譯器。
 ms.date: 01/07/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 7ffe0de939eba8af38c132fc3de5c96a9499e3f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34fd56b37113467b7cbb2dfb8ac6fdba01b79cc6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62535955"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543750"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure App Service 上設定 Python 環境 (Windows)
 
@@ -94,7 +94,7 @@ Python 網站延伸模組會安裝在伺服器的 *d:\home* 下方，適當的 P
 
 如果您無法查看延伸模組的路徑，可以手動使用主控台來尋找：
 
-1. 在應用服務頁面上，選擇**開發工具** > **主控台**。
+1. 在 [App Service] 頁面上，選取 [**開發工具**]  >  **主控台**。
 1. 輸入 `ls ../home` 或 `dir ..\home` 命令，以查看最上層的延伸模組資料夾，例如 *Python361x64*。
 1. 輸入 `ls ../home/python361x64` 或 `dir ..\home\python361x64` 之類的命令，以驗證該資料夾中包含 *python.exe* 和其他解譯器檔案。
 
@@ -162,7 +162,7 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
 
 若要直接在伺服器環境中安裝套件，請使用下列方法之一：
 
-| 方法 | 使用量 |
+| 方法 | 使用方式 |
 | --- | --- |
 | [Azure App Service 的 Kudu 主控台](#azure-app-service-kudu-console) | 可透過互動方式安裝套件。 套件必須是純 Python 套件，或必須發行 Wheel。 |
 | [Kudu REST API](#kudu-rest-api) | 可用來自動化安裝套件。  套件必須是純 Python 套件，或必須發行 Wheel。 |
@@ -173,11 +173,11 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
 
 [Kudu console](https://github.com/projectkudu/kudu/wiki/Kudu-console) (Kudu 主控台) 可讓您透過直接且提高權限的命令列存取 App Service 伺服器和其檔案系統。 這既是一項重要的偵錯工具，也可讓 CLI 作業 (例如安裝套件) 順利進行。
 
-1. 通過選擇**開發工具** > **高級工具**，然後選擇 **"轉到**"，從 Azure 門戶上的"應用服務"頁面打開庫杜。 這個動作會瀏覽至與基底 App Service URL 相同的 URL，差別只在於插入了 `.scm`。 例如，如果您的基底 URL 是 `https://vspython-test.azurewebsites.net/`，則 Kudu 位於 `https://vspython-test.scm.azurewebsites.net/` (您可將其設為書籤)：
+1. 藉由選取 [**開發工具**] [  >  **高級工具**]，然後選取 [執行]， **Go**從 Azure 入口網站的 App Service 頁面開啟 Kudu。 這個動作會瀏覽至與基底 App Service URL 相同的 URL，差別只在於插入了 `.scm`。 例如，如果您的基底 URL 是 `https://vspython-test.azurewebsites.net/`，則 Kudu 位於 `https://vspython-test.scm.azurewebsites.net/` (您可將其設為書籤)：
 
     ![Azure App Service 的 Kudu 主控台](media/python-on-azure-console01.png)
 
-1. 選擇**調試主控台** > **CMD**以打開主控台，您可以在其中導航到 Python 安裝中，並查看哪些庫已經存在。
+1. 選取 [偵錯工具] [**主控台**]  >  [**CMD** ] 以開啟主控台，您可以在其中流覽至 Python 安裝，並查看現有的程式庫。
 
 1. 安裝單一套件：
 

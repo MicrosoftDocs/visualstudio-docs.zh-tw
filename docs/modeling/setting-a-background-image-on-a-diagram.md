@@ -1,18 +1,18 @@
 ---
 title: 設定圖表上的背景影像
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdf30636a6c7fee1463cbe554058f0802a5f6f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591953"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542580"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>設定圖表上的背景影像
 在 Visual Studio 視覺效果和模型 SDK 中，您可以使用自訂程式碼，為產生的設計工具設定背景影像。
@@ -35,7 +35,7 @@ ms.locfileid: "75591953"
 
 7. 在 [**資源**] 索引標籤上，按一下 [**這個專案不包含預設資源檔]。按一下這裡建立一個。**
 
-8. 將圖片從 **方案總管**拖曳至 資源 視窗，以將影像檔新增至資源檔。
+8. 將圖片從 [**方案總管**拖曳至 [資源] 視窗，以將影像檔新增至資源檔。
 
 9. 開啟 [檔案] 功能表，然後按一下選項以儲存專案屬性。
 
@@ -43,7 +43,7 @@ ms.locfileid: "75591953"
 
 11. 如果遺漏 Resources.Designer.cs，請按一下**方案總管**中的檔案 Resources。
 
-12. 在 [屬性] 視窗中，將 `Custom Tool` 屬性設定為 `ResXFileCodeGenerator`。
+12. 在 [屬性] **** 視窗中，將 `Custom Tool` 屬性設定為 `ResXFileCodeGenerator`。
 
 13. 在**方案總管**中，以滑鼠右鍵按一下 Dsl 專案，指向 [**加入**]，然後按一下 [**新增資料夾**]。
 
@@ -53,7 +53,7 @@ ms.locfileid: "75591953"
 
 16. 在 [**加入新專案**] 對話方塊的 [**範本**] 清單中，按一下 [程式**代碼**檔案]。
 
-17. 在 [**名稱**] 方塊中，輸入 `BackgroundImage.cs`，然後按一下 [**新增**]。
+17. 在 [**名稱**] 方塊中，輸入 `BackgroundImage.cs` ，然後按一下 [**新增**]。
 
 18. 將下列程式碼複製到 BackgroundImage.cs 檔，調整的命名空間、圖表類別名稱和影像檔資源名稱。
 
@@ -100,9 +100,9 @@ ms.locfileid: "75591953"
 
      如需使用程式碼自訂模型的詳細資訊，請參閱[在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [定義圖案和接點](../modeling/defining-shapes-and-connectors.md)
+- [定義圖案和連接器](../modeling/defining-shapes-and-connectors.md)
 - [自訂文字和影像欄位](../modeling/customizing-text-and-image-fields.md)
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

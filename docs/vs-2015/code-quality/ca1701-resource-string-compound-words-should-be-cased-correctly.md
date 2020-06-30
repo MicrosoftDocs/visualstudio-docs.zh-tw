@@ -15,21 +15,21 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7610852f6d9fbea2fbd2dd10d478ad2d1a0da899
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7c1c3b0fd6cf3a25d5db9e3039d4dc5d8364a18e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669263"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544101"
 ---
-# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701：資源字串複合字應該使用正確的大小寫
+# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701:資源字串複合字應該使用正確的大小寫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|ResourceStringCompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1701|
-|Category|Microsoft. 命名|
+|類別|Microsoft. 命名|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -49,11 +49,11 @@ ms.locfileid: "72669263"
  您也可以在拼寫檢查的自訂字典中加入複合字組。 自訂字典中的單字不會造成違規。 如需詳細資訊，請參閱[如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)。
 
 ## <a name="related-rules"></a>相關規則
- [CA1702：複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+ [CA1702:複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
- [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709:識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [大小寫慣例](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)[命名指導方針](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)

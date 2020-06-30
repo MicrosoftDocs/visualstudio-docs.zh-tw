@@ -15,21 +15,21 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a05b7098d75d368f893b2504f7663675611bc0ce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03918353b66c36698b5d17b332da052b6d95c87a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658728"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544387"
 ---
-# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108：必須檢查實值類型上的宣告式安全性
+# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108:必須檢閱實值類型上的宣告式安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -45,7 +45,7 @@ ms.locfileid: "72658728"
  如果任何呼叫者可以取得其預設狀態的實數值型別實例，而不會對安全性造成威脅，您可以隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示的程式庫包含違反此規則的實數值型別。 請注意，`StructureManager` 類型假設傳遞實數值型別之實例的呼叫端具有建立或存取實例的許可權。
+ 下列範例顯示的程式庫包含違反此規則的實數值型別。 請注意， `StructureManager` 類型假設傳遞實數值型別之實例的呼叫端具有建立或存取實例的許可權。
 
  [!code-csharp[FxCop.Security.DemandOnValueType#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.DemandOnValueType/cs/FxCop.Security.DemandOnValueType.cs#1)]
 
@@ -57,7 +57,7 @@ ms.locfileid: "72658728"
  此範例會產生下列輸出。
 
  **結構自訂構造函式：要求失敗。** 
-**新的值 SecuredTypeStructure 100 100** 
+**新值 SecuredTypeStructure 100 100** 
 **新值 SecuredTypeStructure 200 200**
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [連結要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)[資料與模型](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)化

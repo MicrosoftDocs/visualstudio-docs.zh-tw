@@ -15,28 +15,28 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a0d5546c6f6a2f5dbd0c6063f4a1dfd40ce1d7bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7429251a66ce2fe22a825a153cb90248faabb9fd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658729"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544361"
 ---
-# <a name="ca2111-pointers-should-not-be-visible"></a>CA2111：指標不應該為可見的
+# <a name="ca2111-pointers-should-not-be-visible"></a>CA2111:指標不應該為可見的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|PointersShouldNotBeVisible|
 |CheckId|CA2111|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
  公用或受保護的 <xref:System.IntPtr?displayProperty=fullName> 或 <xref:System.UIntPtr?displayProperty=fullName> 欄位不是唯讀的。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.IntPtr> 和 <xref:System.UIntPtr> 是用來存取非受控記憶體的指標類型。 如果指標不是私用、內部或唯讀，惡意程式碼可能會變更指標的值，可能會允許存取記憶體中的任意位置，或是造成應用程式或系統失敗。
+ <xref:System.IntPtr>和 <xref:System.UIntPtr> 是用來存取非受控記憶體的指標類型。 如果指標不是私用、內部或唯讀，惡意程式碼可能會變更指標的值，可能會允許存取記憶體中的任意位置，或是造成應用程式或系統失敗。
 
  如果您想要保護包含指標欄位之類型的存取權，請參閱[CA2112：受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
 
@@ -52,9 +52,9 @@ ms.locfileid: "72658729"
  [!code-csharp[FxCop.Security.PointersArePrivate#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PointersArePrivate/cs/FxCop.Security.PointersArePrivate.cs#1)]
 
 ## <a name="related-rules"></a>相關規則
- [CA2112：受保護類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112:受保護類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA1051：不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+ [CA1051:不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName>

@@ -16,28 +16,28 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 112065b2a8b9a88241ce62dda7b32a2f2c22fc75
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1dfd770efd4d690930155d2486b8ff1859065272
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672020"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543646"
 ---
-# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241：必須提供格式化方法的正確引數
+# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241:必須提供格式化方法的正確引數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|ProvideCorrectArgumentsToFormattingMethods|
 |CheckId|CA2241|
-|Category|Microsoft。使用方式|
+|類別|Microsoft。使用方式|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 傳遞至方法（例如 <xref:System.Console.WriteLine%2A>、<xref:System.Console.Write%2A> 或 <xref:System.String.Format%2A?displayProperty=fullName>）的 `format` 字串引數不包含對應至每個物件引數的格式專案，反之亦然。
+ `format`傳遞至方法的字串引數（例如 <xref:System.Console.WriteLine%2A> 、 <xref:System.Console.Write%2A> 或）不 <xref:System.String.Format%2A?displayProperty=fullName> 包含對應至每個物件引數的格式專案，反之亦然。
 
 ## <a name="rule-description"></a>規則描述
- @No__t_0、<xref:System.Console.Write%2A> 和 <xref:System.String.Format%2A> 等方法的引數是由格式字串後面接著數個 <xref:System.Object?displayProperty=fullName> 實例所組成。 格式字串是由 {index [，align] [：格式]} 形式的文字和內嵌格式專案所組成。 'index' 是以零起始的整數，會指出需要格式化的物件。 如果物件在格式字串中沒有對應的索引，則會忽略物件。 如果 ' index ' 指定的物件不存在，則會在執行時間擲回 <xref:System.FormatException?displayProperty=fullName>。
+ 方法的引數（例如 <xref:System.Console.WriteLine%2A> 、 <xref:System.Console.Write%2A> 和） <xref:System.String.Format%2A> 包含後面接著數個實例的格式字串 <xref:System.Object?displayProperty=fullName> 。 格式字串是由 {index [，align] [：格式]} 形式的文字和內嵌格式專案所組成。 'index' 是以零起始的整數，會指出需要格式化的物件。 如果物件在格式字串中沒有對應的索引，則會忽略物件。 如果 ' index ' 所指定的物件不存在， <xref:System.FormatException?displayProperty=fullName> 則會在執行時間擲回。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請提供每個物件引數的格式專案，並提供每個格式專案的物件引數。

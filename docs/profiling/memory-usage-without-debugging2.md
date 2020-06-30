@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62ac71a3aa707958bd0c7f107185d141e339b2b7
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332136"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543347"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>分析記憶體使用量 (不使用偵錯工具)
 
@@ -76,7 +76,7 @@ ms.locfileid: "85332136"
 
   ![快照檢視連結](../profiling/media/memuse__snapshotview_numbered.png "快照檢視連結")
 
-|||
+|映像|描述|
 |-|-|
 |![步驟 1](../profiling/media/procguid_1.png "ProcGuid_1")|在擷取快照時，記憶體中的總位元組數。<br /><br /> 選取這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的大小總計進行排序。|
 |![步驟 2](../profiling/media/procguid_2.png "ProcGuid_2")|在擷取快照時，記憶體中的物件總數。<br /><br /> 選取這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的計數進行排序。|
@@ -130,7 +130,7 @@ ms.locfileid: "85332136"
 
 快照詳細資料報表中的 [受控堆積]**** 樹狀結構有下列資料行：
 
-|||
+|名稱|描述|
 |-|-|
 |**物件類型**|類型或物件執行個體的名稱。|
 |**Count**|類型的物件執行個體數目。 一個執行個體的 [計數]**** 一律為 1。|
@@ -152,7 +152,7 @@ ms.locfileid: "85332136"
 
 快照詳細資料報表中的 [參考的類型]**** 樹狀結構有下列資料行。 [參考的物件]**** 樹狀結構沒有 [參考計數]**** 資料行。
 
-|||
+|名稱|描述|
 |-|-|
 |**物件類型**或**執行個體**|類型或執行個體的名稱。|
 |**參考計數**|針對類型，此為類型的物件執行個體數目。|
@@ -176,7 +176,7 @@ ms.locfileid: "85332136"
 
 快照差異報表中的 [受控堆積]**** 樹狀結構有下列資料行：
 
-|||
+|名稱|描述|
 |-|-|
 |**物件類型**|類型或物件執行個體的名稱。|
 |**Count**|主要快照中類型的執行個體數目。 實例的 [**計數**] 一律為1。|
@@ -203,7 +203,7 @@ ms.locfileid: "85332136"
 
 快照差異報表中的 [參考的類型]**** 樹狀結構有下列資料行。 [參考的物件]**** 樹狀結構有 [執行個體]****、[大小 (位元組)]****、[內含大小 (位元組)]**** 和 [模組]**** 資料行。
 
-|||
+|名稱|描述|
 |-|-|
 |**物件類型**或**執行個體**|類型或物件執行個體的名稱。|
 |**參考計數**|主要快照中類型的執行個體數目。|

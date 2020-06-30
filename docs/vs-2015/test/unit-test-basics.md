@@ -10,19 +10,19 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dff9b4bece79c692aa896af6e5d3f7d2048cde52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0657fdd846c201b4f9bff4910bdd9fc271c399c9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672068"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543776"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-藉由建立及執行單元測試，檢查您的程式碼是否如預期般執行。 這之所以稱為單元測試，是因為您將程式功能分解成離散的可測試行為，這些行為能做為個別的 *「單位」* (unit) 加以測試。 Visual Studio [測試總管] 提供富彈性又有效率的方式來執行單元測試，並可在 Visual Studio 中檢視結果。 Visual Studio 會安裝 Managed 程式碼和原生程式碼適用的 Microsoft 單元測試架構。 請使用 *「單元測試架構」* (unit testing framework) 來建立單元測試並加以執行，然後報告這些測試的結果。 當您進行變更來測試程式碼是否仍正常運作時，請重新執行單元測試。 當您使用 Visual Studio Enterprise 版時，可以在每次建置後自動執行測試。
+藉由建立及執行單元測試，檢查您的程式碼是否如預期般執行。 這之所以稱為單元測試，是因為您將程式功能分解成離散的可測試行為，這些行為能做為個別的 *「單位」*(unit) 加以測試。 Visual Studio [測試總管] 提供富彈性又有效率的方式來執行單元測試，並可在 Visual Studio 中檢視結果。 Visual Studio 會安裝 Managed 程式碼和原生程式碼適用的 Microsoft 單元測試架構。 使用*單元測試架構*來建立單元測試、加以執行，以及報告這些測試的結果。 當您進行變更來測試程式碼是否仍正常運作時，請重新執行單元測試。 當您使用 Visual Studio Enterprise 版時，可以在每次建置後自動執行測試。
 
- 當單元測試是軟體開發工作流程中不可或缺的一部分時，就能對您的程式碼品質發揮最大的作用。 一旦您撰寫函式或其他應用程式程式碼區塊，就會建立單元測試，以便驗證該程式碼的行為是否對應於輸入資料的標準、界限和不正確情況，並檢查程式碼所做的任何明確或隱含假設。 藉由 *「測試驅動式開發」* (test driven development)，您可在撰寫程式碼之前先建立單元測試，以便將單元測試做為設計文件和功能規格。
+ 當單元測試是軟體開發工作流程中不可或缺的一部分時，就能對您的程式碼品質發揮最大的作用。 一旦您撰寫函式或其他應用程式程式碼區塊，就會建立單元測試，以便驗證該程式碼的行為是否對應於輸入資料的標準、界限和不正確情況，並檢查程式碼所做的任何明確或隱含假設。 藉由 *「測試驅動式開發」*(test driven development)，您可在撰寫程式碼之前先建立單元測試，以便將單元測試做為設計文件和功能規格。
 
  您可以從您的程式碼快速產生測試專案和測試方法，或在您需要的時候以手動方式建立此測試。 當您使用 IntelliTest 來探索 .NET 程式碼時，可以產生測試資料和單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 了解如何 [產生程式碼的單元測試](https://msdn.microsoft.com/library/dn823749.aspx)。
 
@@ -40,9 +40,9 @@ ms.locfileid: "72672068"
 
 - [執行測試並加以檢視](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)
 
-## <a name="BKMK_Unit_testing_overview"></a> 單元測試概觀
+## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a>單元測試總覽
 
-### <a name="BKMK_Quick_starts"></a> 快速入門
+### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a>快速入門
  如需單元測試的簡介以便直接參考編碼，請參閱下列其中一個主題：
 
 - [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
@@ -51,10 +51,10 @@ ms.locfileid: "72672068"
 
 - [使用測試總管針對機器碼執行單元測試](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)
 
-## <a name="BKMK_The_MyBank_Solution_example"></a> MyBank 方案範例
+## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a>MyBank 解決方案範例
  在本主題中，我們會使用稱為 `MyBank` 的虛構應用程式開發來做為範例。 您不需要實際程式碼來照著本主題中的說明進行。 測試方法會以 C# 撰寫，並使用 Managed 程式碼適用的 Microsoft 單元測試架構來呈現，不過，這個概念可輕鬆地轉移到其他語言和架構。
 
- ![MyBank 解決方案](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")
+ ![MyBank 方案](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")
 
  我們第一次在 `MyBank` 應用程式的設計嘗試包括帳戶元件 (代表個別帳戶及其與銀行的交易)，和資料庫元件 (代表可彙總及管理個別帳戶的功能)。
 
@@ -92,22 +92,22 @@ public void Withdraw(double amount)
 
  現在我們已經有一些程式碼，該開始測試了。
 
-## <a name="BKMK_Creating_the_unit_test_projects"></a> 建立單元測試專案和測試方法
+## <a name="create-unit-test-projects-and-test-methods"></a><a name="BKMK_Creating_the_unit_test_projects"></a> 建立單元測試專案和測試方法
  從您的程式碼中產生單元測試專案和單元測試虛設常式通常較快。 或者您可以視您的需求而定，選擇以手動方式建立單元測試專案和測試。
 
  **產生單元測試專案和單元測試虛設常式**
 
-1. 從程式碼編輯器視窗中，自內容功能表以滑鼠右鍵按一下並選擇 [建立單元測試] 。
+1. 從程式碼編輯器視窗中，自內容功能表以滑鼠右鍵按一下並選擇 [建立單元測試] **** 。
 
-    ![從編輯器視窗中，查看內容功能表](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")
+    ![從編輯器視窗，檢視內容功能表](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")
 
 2. 按一下 [確定] 接受預設值來建立單元測試，或變更過去用來建立和命名單元測試專案和單元測試的值。 您可以選取預設加入此單元測試方法的程式碼。
 
-    ![以&#45;滑鼠右鍵按一下編輯器，然後選擇 [建立單元測試]](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
+    ![在編輯器中按一下滑鼠&#45;右鍵，然後選擇 [建立單元測試]](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
 
 3. 會針對此類別中的所有方法，在新的單元測試專案中建立單元測試虛設常式。
 
-    ![系統會建立單元測試](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")
+    ![隨即建立單元測試](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")
 
 4. 現在往前跳至了解如何 [將程式碼加入單元測試方法](#BKMK_Writing_your_tests) ，讓您的單元測試有意義，以及您可能會想加入的任何額外單元測試，藉此徹底測試程式碼。
 
@@ -117,11 +117,11 @@ public void Withdraw(double amount)
 
    **將單元測試專案加入方案：**
 
-5. 在 [檔案] 功能表上，選擇 [新增] ，然後選擇 [專案]\(鍵盤 Ctrl + Shift + N)。
+5. 在 [檔案] **** 功能表上，選擇 [新增] **** ，然後選擇 [專案] **** (鍵盤 Ctrl + Shift + N)。
 
-6. 在 [新增專案] 對話方塊中，展開 [已安裝] 節點，選擇您想要用於測試專案的語言，然後選擇 [測試]。
+6. 在 [新增專案] 對話方塊上，展開 [已安裝]**** 節點，並選擇您想要用於測試專案的語言，然後選擇 [測試]****。
 
-7. 若要使用其中一個 Microsoft 單元測試架構，請從專案範本清單中選擇 [單元測試專案] 。 否則，請選擇您所要使用單元測試架構的專案範本。 若要測試本例的 `Accounts` 專案，請將專案命名為 `AccountsTests`。
+7. 若要使用其中一個 Microsoft 單元測試架構，請從專案範本清單中選擇 [單元測試專案] **** 。 否則，請選擇您所要使用單元測試架構的專案範本。 若要測試本例的 `Accounts` 專案，請將專案命名為 `AccountsTests`。
 
    > [!WARNING]
    > 並非所有協力廠商和開放原始碼的單元測試架構都提供 Visual Studio 專案範本。 如需建立專案的相關資訊，請參閱架構文件。
@@ -132,26 +132,26 @@ public void Withdraw(double amount)
 
    1. 在 [方案總管] 中選取專案。
 
-   2. 在 [專案] 功能表上，選擇 [加入參考]。
+   2. 在 [**專案**] 功能表上，選擇 [**加入參考**]。
 
-   3. 在 [參考管理員] 對話方塊上，開啟 [方案] 節點，然後選擇 [專案]。 選取程式碼專案名稱，然後關閉對話方塊。
+   3. 在 [參考管理員] 對話方塊上，開啟 [方案]**** 節點，然後選擇 [專案]****。 選取程式碼專案名稱，然後關閉對話方塊。
 
-   每個單元測試專案包含的類別都可反映程式碼專案中的類別名稱。 在本例中，`AccountsTests` 專案可能包含下列類別：
+   每個單元測試專案包含的類別都可反映程式碼專案中的類別名稱。 在本例中， `AccountsTests` 專案可能包含下列類別：
 
 - `AccountInfoTests` 類別包含 `AccountInfo` 專案中 `BankAccount` 類別的單元測試方法。
 
 - `CheckingAccountTests` 類別包含 `CheckingAccount` 類別的單元測試方法。
 
-## <a name="BKMK_Writing_your_tests"></a> 撰寫您的測試
+## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a>撰寫您的測試
  您使用的單元測試架構和 Visual Studio IntelliSense 會引導您完成撰寫程式碼專案的單元測試程式碼。 若要在 [測試總管] 中執行，大部分的架構都會要求您加入特定屬性，以識別單元測試方法。 這些架構也會提供一個辨別測試方法是否通過或失敗的方式，通常是透過判斷提示陳述式或方法屬性。 其他屬性會識別在類別初始化和每個測試方法之前的選用設定方法，和識別在每個測試方法之後和終結類別之前的清除方法。
 
  AAA (排列、作用、判斷提示) 模式是為受測方法撰寫單元測試的常見方式。
 
-- 單元測試方法的 [排列] 區段會初始化物件，並為傳遞至受測方法的資料設定值。
+- 單元測試方法的 [排列] **** 區段會初始化物件，並為傳遞至受測方法的資料設定值。
 
-- [作用] 區段會叫用含有所排列參數的受測方法。
+- [作用] **** 區段會叫用含有所排列參數的受測方法。
 
-- [判斷提示] 區段會驗證受測方法的動作是否如預期。
+- [判斷提示] **** 區段會驗證受測方法的動作是否如預期。
 
   若要測試本例的 `CheckingAccount.Withdraw` 方法，我們可以撰寫兩個測試：一個是驗證方法的標準行為，另一個則是驗證提款金額超過餘額將會失敗。 在 `CheckingAccountTests` 類別中，我們會加入下列方法：
 
@@ -190,7 +190,7 @@ public void Withdraw_AmountMoreThanBalance_Throws()
 
 - [使用適用於 Managed 程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
 
-- [使用適用於 C++ 的 Microsoft 單元測試架構撰寫適用於 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
+- [使用適用于 c + + 的 Microsoft 單元測試架構撰寫適用于 C/c + + 的單元測試](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>設定單元測試逾時
  在個別的測試方法上設定逾時：
@@ -217,45 +217,45 @@ public void My_Test ()
 }
 ```
 
-## <a name="BKMK_Running_tests_in_Test_Explorer"></a> 在 [測試總管] 中執行測試
- 在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果沒有看到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試] ，接著選擇 [Windows]，然後選擇 [測試總管]。
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>在測試瀏覽器中執行測試
+ 在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果看不到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]****，並選擇 [Windows]****，然後選擇 [測試總管]****。
 
- ![單元測試瀏覽器](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![單元測試總管](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
- 隨著您執行、撰寫及重新執行測試，[測試總管] 的預設檢視便會顯示 [失敗的測試]、[通過的測試]、[略過的測試] 及 [未執行的測試]群組中的結果。 您可以選擇群組標題，以開啟顯示該群組中所有這些測試的檢視。
+ 隨著您執行、撰寫及重新執行測試，[測試總管] 的預設檢視便會顯示 [失敗的測試]****、[通過的測試]****、[略過的測試]**** 及 [未執行的測試]**** 群組中的結果。 您可以選擇群組標題，以開啟顯示該群組中所有這些測試的檢視。
 
  在搜尋方塊中找出全域層級中相符的文字或選取其中一個預先定義的篩選器，也能在任何檢視中篩選測試。 您可以隨時執行測試的任何選取範圍。 測試回合的結果會立即顯示在 [總管] 視窗上方的通過/失敗列中。 選取測試時，會顯示測試方法結果的詳細資料。
 
-### <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> 執行測試並加以檢視
+### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a>執行和觀看測試
  [測試總管] 工具列可協助您探索、組織和執行您有興趣的測試。
 
- ![從測試瀏覽器工具列執行測試](../test/media/ute-toolbar.png "UTE_ToolBar")
+ ![從 [測試總管] 的工具列執行測試](../test/media/ute-toolbar.png "UTE_ToolBar")
 
- 您可以選擇 [全部執行] 以執行所有測試，或選擇 [執行] 以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管] 視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從內容功能表中選擇 [開啟測試]\(鍵盤：F12) 以顯示所選測試的原始程式碼。
+ 您可以選擇 [全部執行] **** 以執行所有測試，或選擇 [執行] **** 以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管] 視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從操作功能表中選擇 [**開啟測試**] （鍵盤： F12）以顯示所選測試的原始程式碼。
 
  如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-小型") 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
-### <a name="BKMK_Running_tests_after_every_build"></a> 每次建置後執行測試
+### <a name="run-tests-after-every-build"></a><a name="BKMK_Running_tests_after_every_build"></a> 每次建置後執行測試
 
 > [!WARNING]
 > 只有 Visual Studio Enterprise 支援在每次建置之後執行單元測試。
 
-|||
+|映像|描述|
 |-|-|
-|![在組建之後執行](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|若要在每次本機組建之後執行單元測試，請選擇標準功能表上的 [測試] ，接著在 [測試總管] 工具列上選擇 [建置之後執行測試] 。|
+|![建置後執行](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|若要在每次本機組建之後執行單元測試，請選擇標準功能表上的 [測試]****，然後在 [測試總管] 工具列上選擇 [建置之後執行測試]****。|
 
-### <a name="BKMK_Filtering_and_grouping_the_test_list"></a> 篩選與群組測試清單
+### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a>篩選和分組測試清單
  若有大量測試，您可以在 [測試總管] 搜尋方塊中輸入文字以便依指定字串篩選清單。 您可以從篩選清單中選擇以進一步限制篩選事件。
 
- ![搜尋篩選準則分類](../test/media/ute-searchfilter.png "UTE_SearchFilter")
+ ![搜尋篩選條件分類](../test/media/ute-searchfilter.png "UTE_SearchFilter")
 
-|||
+|映像|描述|
 |-|-|
-|![測試瀏覽器群組按鈕](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|若要依分類將測試分組，請選擇 [群組依據] 按鈕。|
+|![[測試總管] 的 [群組] 按鈕](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|若要依分類將測試分組，請選擇 [群組依據] **** 按鈕。|
 
- 如需詳細資訊，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)。
+ 如需詳細資訊，請參閱[使用測試瀏覽器執行單元測試](../test/run-unit-tests-with-test-explorer.md)
 
-## <a name="qa"></a>問與答
+## <a name="qa"></a>問答集
  **問：如何偵錯單元測試？**
 
  **答：** 您可以使用 [測試總管] 來啟動測試的偵錯工作階段。 使用 Visual Studio 偵錯工具逐步執行程式碼可讓您順暢地在單元測試和受測專案之間來回進行。 啟動偵錯：
@@ -265,24 +265,24 @@ public void My_Test ()
    > [!NOTE]
    > 由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。
 
-2. 在 [測試總管] 中選取測試方法，然後從捷徑功能表中選擇 [偵錯所選測試] 。
+2. 在 [測試瀏覽器] 中選取測試方法，然後從快捷方式功能表中選擇 [偵測**選取的測試**]。
 
-   進一步了解 [偵錯單元測試](../debugger/debugging-in-visual-studio.md)的詳細資料。
+   進一步了解[偵錯單元測試](../debugger/debugging-in-visual-studio.md)的詳細資料。
 
    **問：如果我使用 TDD，要如何從我的測試產生程式碼？**
 
-   **答：** 您可以使用 IntelliSense 在您的專案程式碼中產生類別和方法。 在測試方法中撰寫可呼叫所要產生類別或方法的陳述式，然後開啟該呼叫下的 IntelliSense 功能表。 如果呼叫的是新類別的建構函式，請從功能表中選擇 [產生新的類型] ，然後遵循精靈以將類別插入程式碼專案中。 如果呼叫的是方法，請從 IntelliSense 功能表中選擇 [產生新的方法] 。
+   **答：** 您可以使用 IntelliSense 在您的專案程式碼中產生類別和方法。 在測試方法中撰寫可呼叫所要產生類別或方法的陳述式，然後開啟該呼叫下的 IntelliSense 功能表。 如果呼叫的是新類別的建構函式，請從功能表中選擇 [產生新的類型] **** ，然後遵循精靈以將類別插入程式碼專案中。 如果呼叫的是方法，請從 IntelliSense 功能表中選擇 [產生新的方法] **** 。
 
    ![[產生方法 Stub] Intellisense 功能表](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")
 
    **問：是否可以建立採用多個資料集做為輸入來執行測試的單元測試？**
 
-   **答：** 可以。 *「資料驅動型測試方法」* (data-driven test method) 可讓您使用單一單元測試方法測試某個範圍的值。 請使用此測試方法的 `DataSource` 屬性，該屬性會指定包含您要測試之變數值的資料來源和資料表。  在方法主體中，您可使用 `TestContext.DataRow[`*ColumnName*`]` 索引子將資料列值指派給變數。
+   **答：** 是。 *「資料驅動型測試方法」* (data-driven test method) 可讓您使用單一單元測試方法測試某個範圍的值。 請使用此測試方法的 `DataSource` 屬性，該屬性會指定包含您要測試之變數值的資料來源和資料表。  在方法主體中，您可以使用 `TestContext.DataRow[` *ColumnName*索引子將資料列值指派給變數 `]` 。
 
 > [!NOTE]
 > 這些程序只適用於透過 Managed 程式碼適用的 Microsoft 單元測試架構所撰寫的測試方法。 如果您使用不同的架構，請參閱架構文件的同等功能。
 
- 例如，假設我們將不需要的方法加入至名為 `CheckingAccount` 的 `AddIntegerHelper`類別。 `AddIntegerHelper` 會加入兩個整數。
+ 例如，假設我們將不需要的方法加入至名為 `CheckingAccount` 的 `AddIntegerHelper` 類別。 `AddIntegerHelper` 會加入兩個整數。
 
  若要為 `AddIntegerHelper` 方法建立資料驅動型測試，我們會先建立名為 `AccountsTest.accdb` 的 Access 資料庫和名為 `AddIntegerHelperData`的資料表。 `AddIntegerHelperData` 資料表會定義可指定加法之第一個和第二個運算元的資料行，和可指定預期結果的資料行。 我們在多個資料列中填入適當的值。
 
@@ -311,11 +311,11 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
  **問：是否可以檢視我的單元測試已測試了多少程式碼？**
 
- **答：** 可以。 您可以使用 Visual Studio 程式碼涵蓋範圍工具來判斷您的單元測試實際測試的程式碼數量。 原生和 Managed 語言，以及可由單元測試架構執行的所有單元測試架構都受支援。
+ **答：** 是。 您可以使用 Visual Studio 程式碼涵蓋範圍工具來判斷您的單元測試實際測試的程式碼數量。 原生和 Managed 語言，以及可由單元測試架構執行的所有單元測試架構都受支援。
 
  您可以在方案中的所選測試或所有測試上執行程式碼涵蓋範圍。 [程式碼涵蓋範圍結果] 視窗會顯示線條、函式、類別、命名空間及模組所運用的產品程式碼區塊的百分比。
 
- 若要在方案中執行測試方法的程式碼涵蓋範圍，請選擇 [Visual Studio] 功能表上的 [測試] ，然後選擇 [分析程式碼涵蓋範圍]。
+ 若要在方案中執行測試方法的程式碼涵蓋範圍，請選擇 [Visual Studio] 功能表上的 [測試] **** ，然後選擇 [分析程式碼涵蓋範圍] ****。
 
  涵蓋範圍結果會出現在 [程式碼涵蓋範圍結果] 視窗中。
 
@@ -325,7 +325,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
  **問：如何在我的程式碼中測試是否具有外部相依性的方法？**
 
- **答：** 可以。 如果您有 Visual Studio Enterprise，則 Microsoft Fakes 可用於您透過 Managed 程式碼適用的單元測試架構所撰寫的測試方法。
+ **答：** 是。 如果您有 Visual Studio Enterprise，則 Microsoft Fakes 可用於您透過 Managed 程式碼適用的單元測試架構所撰寫的測試方法。
 
  Microsoft Fakes 會使用兩種方式來建立外部相依性的替代類別：
 

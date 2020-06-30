@@ -15,23 +15,23 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 854e9a492f422957e64e1a4b6a00bc7c39b81c46
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f9dc15cec4012d2b63eb5f21c25bd709961c95c8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919243"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544075"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702：複合字應該使用正確的大小寫
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702:複合字應該使用正確的大小寫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如需 Visual Studio 的最新檔，請參閱[CA1702：複合字的大小寫應正確](/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly)。
 
-|||
+|Item|值|
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
-|分類|Microsoft. 命名|
+|類別|Microsoft. 命名|
 |中斷變更|中斷-在元件上引發。<br /><br /> 非中斷-在型別參數上引發時。|
 
 ## <a name="cause"></a>原因
@@ -49,11 +49,11 @@ ms.locfileid: "75919243"
  如果拼寫字典能夠辨識複合單字的兩個部分，而且其目的是要使用兩個字組，則可放心地隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關規則
- [CA1701：資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+ [CA1701:資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
- [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709:識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [命名方針](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)[大小寫慣例](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)

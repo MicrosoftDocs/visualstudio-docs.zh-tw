@@ -15,23 +15,23 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5a06e87f8d28ceb225e240d7702a47e00122feea
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: fe6b90ef971bd00392381f47860d85f34e10dc26
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919182"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544023"
 ---
-# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707：識別項不應包含底線
+# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707:識別項名稱不應該包含底線
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如需 Visual Studio 的最新檔，請參閱[CA1707：識別碼不應包含](/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores)底線。
 
-|||
+|Item|值|
 |-|-|
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
-|分類|Microsoft. 命名|
+|類別|Microsoft. 命名|
 |中斷變更|中斷-在元件上引發時<br /><br /> 不中斷-在類型參數上引發時|
 
 ## <a name="cause"></a>原因
@@ -49,6 +49,6 @@ ms.locfileid: "75919182"
  請勿隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關規則
- [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709:識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

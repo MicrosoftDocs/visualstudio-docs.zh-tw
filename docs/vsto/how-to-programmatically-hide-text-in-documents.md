@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式隱藏 文件中的文字
+title: 如何：以程式設計方式在檔中隱藏文字
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1da471ff1911cdda4a62ef9c150236b3a225342f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4dae19d196f830e5187fa395473c0a5482cb1d03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812764"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543308"
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>HOW TO：以程式設計方式隱藏 文件中的文字
+# <a name="how-to-programmatically-hide-text-in-documents"></a>如何：以程式設計方式在檔中隱藏文字
   您可以針對文字的特定範圍設定 <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> 的 <xref:Microsoft.Office.Interop.Word.Range.Font%2A> 屬性，以隱藏文件中的文字。
 
- 例如，您可以暫時隱藏內的文字<xref:Microsoft.Office.Tools.Word.Bookmark>（在文件層級自訂） 或<xref:Microsoft.Office.Interop.Word.Bookmark>（在 VSTO 增益集） 之前傳送至印表機的文件。
+ 例如，您可以在將 <xref:Microsoft.Office.Tools.Word.Bookmark> 檔傳送至印表機之前，暫時隱藏（在檔層級自訂中）或 <xref:Microsoft.Office.Interop.Word.Bookmark> （在 VSTO 增益集中）中的文字。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -52,11 +52,11 @@ ms.locfileid: "62812764"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]
 
 ## <a name="compile-the-code"></a>編譯程式碼
- 此程式碼範例假設文件包含<xref:Microsoft.Office.Tools.Word.Bookmark>控制項 （在文件層級自訂） 或<xref:Microsoft.Office.Interop.Word.Bookmark>控制項 （在 VSTO 增益集），名為`bookmark1`。
+ 這個程式碼範例假設檔包含 <xref:Microsoft.Office.Tools.Word.Bookmark> 名為的控制項（在檔層級自訂中）或 <xref:Microsoft.Office.Interop.Word.Bookmark> 控制項（在 VSTO 增益集中） `bookmark1` 。
 
 ## <a name="see-also"></a>另請參閱
-- [如何：以程式設計方式列印文件](../vsto/how-to-programmatically-print-documents.md)
-- [如何：以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [如何：以程式設計方式重設 Word 文件中的範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [如何：以程式設計方式更新書籤文字](../vsto/how-to-programmatically-update-bookmark-text.md)
+- [如何：以程式設計方式列印檔案](../vsto/how-to-programmatically-print-documents.md)
+- [如何：以程式設計方式在檔中定義及選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [如何：以程式設計方式重設 Word 檔中的範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [如何：以程式設計方式更新書簽文字](../vsto/how-to-programmatically-update-bookmark-text.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

@@ -15,21 +15,21 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9f28c1dadaef2dc88a3d728322dee1053ccdd69c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7f95b33e1391ca755a6c0df261fa2bd05bd3c7a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663083"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544309"
 ---
-# <a name="ca2121-static-constructors-should-be-private"></a>CA2121：靜態建構函式應為私用
+# <a name="ca2121-static-constructors-should-be-private"></a>CA2121:靜態建構函式應該為私用的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|StaticConstructorsShouldBePrivate|
 |CheckId|CA2121|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -38,7 +38,7 @@ ms.locfileid: "72663083"
 ## <a name="rule-description"></a>規則描述
  靜態的函式（也稱為類別的函式）是用來初始化型別。 系統會在建立類型的第一個執行個體或參考任何靜態成員之前呼叫靜態建構函式。 使用者無法控制呼叫靜態函式的時間。 如果靜態建構函式不是私用的，則可由系統以外的程式碼呼叫。 視建構函式中執行的作業而定，這會造成非預期的行為。
 
- C#和 Visual Basic .net 編譯器會強制執行此規則。
+ 此規則是由 c # 和 Visual Basic .NET 編譯器強制執行。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  違規通常是由下列其中一個動作所造成：

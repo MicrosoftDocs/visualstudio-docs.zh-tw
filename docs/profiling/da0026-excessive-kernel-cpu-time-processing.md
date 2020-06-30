@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 38452ce95b299be11e20150440c815127b66d061
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: cd3d96ccf3fc8463908ab5cf27b52e91fb1d05ef
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332405"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544621"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026：過多的核心 CPU 時間處理
 
-|||
+|Item|值|
 |-|-|
 |規則 ID|TODO|
 |類別|分析工具使用方式|

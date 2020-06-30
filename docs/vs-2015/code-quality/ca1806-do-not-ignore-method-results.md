@@ -15,21 +15,21 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f68ab71d9ce4fab1b0612f15d866c58e302a317e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 726cde42eb08ee5508481887fae2e9d2b059256c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671499"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543867"
 ---
-# <a name="ca1806-do-not-ignore-method-results"></a>CA1806：不要忽略方法的結果
+# <a name="ca1806-do-not-ignore-method-results"></a>CA1806:不要忽略方法的結果
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DoNotIgnoreMethodResults|
 |CheckId|CA1806|
-|Category|Microsoft。使用方式|
+|類別|Microsoft。使用方式|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
