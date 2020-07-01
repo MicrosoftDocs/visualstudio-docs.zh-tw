@@ -1,7 +1,7 @@
 ---
 title: 自訂屬性視窗
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cd7d4598040721d3c5b6acb7844f668c72ea09
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589691"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548274"
 ---
 # <a name="customize-the-properties-window"></a>自訂屬性視窗
 
@@ -26,13 +26,13 @@ ms.locfileid: "75589691"
 
 當您在 DSL 定義中設定屬性的名稱時，它的顯示名稱會自動設定為名稱的複本。 如果您寫了 Pascal 大小寫名稱，例如 "FuelGauge"，則顯示名稱會自動包含空格：「燃料測計」。 不過，您可以將 [顯示名稱] 明確設定為另一個值。
 
-**\[描述\]** 。 定義域屬性的描述會出現在兩個地方：
+**描述**。 定義域屬性的描述會出現在兩個地方：
 
 - 當使用者選取屬性時，位於 [屬性] 視窗的底部。 您可以使用它向使用者說明屬性所代表的內容。
 
 - 在產生的程式碼中。 如果您使用檔功能來解壓縮 API 檔，它會在 API 中顯示為此屬性的描述。
 
-**分類**。 分類是屬性視窗中的標題。
+**類別**。 分類是屬性視窗中的標題。
 
 ## <a name="expose-style-features"></a>公開樣式功能
 
@@ -40,7 +40,7 @@ ms.locfileid: "75589691"
 
 以滑鼠右鍵按一下 DSL 定義中的圖形類別，指向 [新增] [**公開**]，然後選擇功能。
 
-在圖形上，您可以公開**FillColor**、 **OutlineColor**、 **TextColor**、 **OutlineDashStyle**、 **OutlineThickness**和**FillGradientMode**屬性。 在 [連接器] 上，您可以`,`[ **TextColor**]、[ **DashStyle**] 和 [**粗細**] 屬性公開**色彩**。 在圖表上，您可以公開**FillColor**和**TextColor**屬性。
+在圖形上，您可以公開**FillColor**、 **OutlineColor**、 **TextColor**、 **OutlineDashStyle**、 **OutlineThickness**和**FillGradientMode**屬性。 在 [連接器] 上，您可以公開 [**色彩** `,` **TextColor**]、[ **DashStyle**] 和 [**粗細**] 屬性。 在圖表上，您可以公開**FillColor**和**TextColor**屬性。
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>轉送：顯示相關元素的屬性
 
@@ -52,7 +52,7 @@ ms.locfileid: "75589691"
 
 當使用者選取圖形或連接器，或 Explorer 中的元素時，屬性視窗中會顯示下列屬性：
 
-- 在模型專案的網域類別上定義的網域屬性，包括在基類中定義的屬性。 例外狀況是您已設定為可**流覽**`False`的網域屬性。
+- 在模型專案的網域類別上定義的網域屬性，包括在基類中定義的屬性。 例外狀況是您已設定為可**流覽**的網域屬性 `False` 。
 
 - 透過關聯性（其多重性為 0 ..1）連結的元素名稱。 即使您尚未定義關聯性的連接器對應，這也會提供一個方便的方法來查看選擇性的連結元素。
 
@@ -71,7 +71,7 @@ ms.locfileid: "75589691"
 
 #### <a name="forward-a-property-from-another-element"></a>從另一個元素轉送屬性
 
-1. 建立包含至少兩個類別（在此範例中稱為**Book**和**Author**）的 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 解決方案。 **書籍**與**作者**之間應該有任一類型的關聯性。
+1. 建立 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 包含至少兩個類別（在此範例中稱為**Book**和**Author**）的解決方案。 **書籍**與**作者**之間應該有任一類型的關聯性。
 
     來源角色的多重性（**本書**端的角色）應為 0 ..1 或 1 ..1，讓每一**本書**都有一個**作者**。
 
@@ -93,7 +93,7 @@ ms.locfileid: "75589691"
 
 7. 轉換所有範本、建立並執行 DSL。
 
-8. 在模型圖中，建立一本書和一個作者，然後使用參考關聯性來連結它們。 選取 book 專案，然後在 屬性視窗您應該會看到本書的屬性以外的 作者名稱。 變更連結的作者名稱，或將書籍連結至不同的作者，並觀察本書的作者名稱是否變更。
+8. 在模型圖中，建立一本書和一個作者，然後使用參考關聯性來連結它們。 選取 [book] 專案，然後在 [屬性視窗您應該會看到本書的屬性以外的 [作者名稱]。 變更連結的作者名稱，或將書籍連結至不同的作者，並觀察本書的作者名稱是否變更。
 
 ## <a name="custom-property-editors"></a>自訂屬性編輯器
 
@@ -130,9 +130,9 @@ ms.locfileid: "75589691"
 
 3. 以一般方式將網域屬性加入至網域類別。
 
-    在 屬性視窗中，從 **類型** 欄位的下拉式清單中選取 外部類型。
+    在 [屬性視窗中，從 [**類型**] 欄位的下拉式清單中選取 [外部類型]。
 
-   在這個階段，使用者可以查看屬性的值，但無法編輯它。 顯示的值是從 `ToString()` 函數取得。 您可以撰寫程式碼來設定屬性的值，例如在命令或規則中。
+   在這個階段，使用者可以查看屬性的值，但無法編輯它。 顯示的值是從函式取得 `ToString()` 。 您可以撰寫程式碼來設定屬性的值，例如在命令或規則中。
 
 ### <a name="set-a-property-editor"></a>設定屬性編輯器
 
@@ -146,15 +146,15 @@ ms.locfileid: "75589691"
 
 您可以使用屬性視窗中的**自訂屬性**專案，在屬性上設定屬性。
 
-`AnEditor` 的類型必須衍生自第二個參數中指定的類型。 第二個參數應該是 <xref:System.Drawing.Design.UITypeEditor> 或 <xref:System.ComponentModel.ComponentEditor>。 如需詳細資訊，請參閱<xref:System.ComponentModel.EditorAttribute>。
+的類型 `AnEditor` 必須衍生自第二個參數中指定的類型。 第二個參數應該是 <xref:System.Drawing.Design.UITypeEditor> 或 <xref:System.ComponentModel.ComponentEditor> 。 如需詳細資訊，請參閱 <xref:System.ComponentModel.EditorAttribute> 。
 
-您可以指定自己的編輯器或 .NET 編輯器，例如 <xref:System.Windows.Forms.Design.FileNameEditor> 或 <xref:System.Drawing.Design.ImageEditor>。 例如，使用下列程式來擁有屬性，讓使用者可以在其中輸入檔案名。
+您可以指定自己的編輯器或 .NET 編輯器，例如 <xref:System.Windows.Forms.Design.FileNameEditor> 或 <xref:System.Drawing.Design.ImageEditor> 。 例如，使用下列程式來擁有屬性，讓使用者可以在其中輸入檔案名。
 
 #### <a name="define-a-file-name-domain-property"></a>定義檔案名網域屬性
 
 1. 將網域屬性加入至 DSL 定義中的網域類別。
 
-2. 選取新的屬性。 在 屬性視窗的 **自訂屬性** 欄位中，輸入下列屬性。 若要輸入此屬性，請按一下省略號 **[...]** ，然後分別輸入屬性名稱和參數：
+2. 選取新的屬性。 在 [屬性視窗的 [**自訂屬性**] 欄位中，輸入下列屬性。 若要輸入此屬性，請按一下省略號 **[...]** ，然後分別輸入屬性名稱和參數：
 
     ```csharp
     [System.ComponentModel.Editor (
@@ -169,7 +169,7 @@ ms.locfileid: "75589691"
 
     1. 按 CTRL + F5 或 F5。 在調試方案中，開啟測試檔案。 建立網域類別的元素並加以選取。
 
-    2. 在 屬性視窗中，選取 網域 屬性。 [值] 欄位會顯示省略號 **[...]** 。
+    2. 在 [屬性視窗中，選取 [網域] 屬性。 [值] 欄位會顯示省略號 **[...]**。
 
     3. 按一下省略號。 [檔案] 對話方塊隨即出現。 選取檔案並關閉對話方塊。 [檔案路徑] 現在是 [網域] 屬性的值。
 
@@ -177,13 +177,13 @@ ms.locfileid: "75589691"
 
 您可以定義自己的編輯器。 您可以這樣做，讓使用者編輯您已定義的類型，或以特殊方式編輯標準類型。 例如，您可以允許使用者輸入代表公式的字串。
 
-您可以藉由撰寫衍生自 <xref:System.Drawing.Design.UITypeEditor>的類別來定義編輯器。 您的類別必須覆寫：
+您可以藉由撰寫衍生自的類別來定義編輯器 <xref:System.Drawing.Design.UITypeEditor> 。 您的類別必須覆寫：
 
-- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>，以與使用者互動並更新屬性值。
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>，用來與使用者互動並更新屬性值。
 
-- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>，指定您的編輯器是否會開啟對話方塊或提供下拉式功能表。
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>，指定您的編輯器是否要開啟對話方塊或提供下拉式功能表。
 
-您也可以提供屬性值的圖形化標記法，將會顯示在屬性方格中。 若要這麼做，請覆寫 `GetPaintValueSupported`，然後 `PaintValue`。  如需詳細資訊，請參閱<xref:System.Drawing.Design.UITypeEditor>。
+您也可以提供屬性值的圖形化標記法，將會顯示在屬性方格中。 若要這麼做，請覆寫 `GetPaintValueSupported` 和 `PaintValue` 。  如需詳細資訊，請參閱 <xref:System.Drawing.Design.UITypeEditor> 。
 
 > [!NOTE]
 > 在**Dsl**專案的不同程式碼檔案中新增程式碼。
@@ -210,7 +210,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
-如需詳細資訊，請參閱<xref:System.Drawing.Design.UITypeEditor>。
+如需詳細資訊，請參閱 <xref:System.Drawing.Design.UITypeEditor> 。
 
 ## <a name="provide-a-drop-down-list-of-values"></a>提供值的下拉式清單
 
@@ -319,6 +319,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)

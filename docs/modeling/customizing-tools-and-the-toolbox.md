@@ -1,7 +1,7 @@
 ---
 title: 自訂工具和工具箱
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -13,18 +13,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8e9fc3a9ecbadc47c3390d2d4a9b504a316658
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 685da1184706e106f3bdd2088b4d937e0aa7cc9f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589717"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548287"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 
 您必須針對要讓使用者加入至其模型的項目 (Element)，定義工具箱項目 (Item)。 工具有兩種類型：項目工具和連接工具。 在產生的設計工具中，使用者可以選取一個項目工具將圖形拖曳至圖表，也可以選取一個連接工具來繪製圖形之間的連結。 一般而言，項目工具可讓使用者將網域類別執行個體加入至其模型，而連接工具可讓使用者加入網域關聯性執行個體。
 
-## <a name="ToolboxDef"></a>工具箱的定義方式
+## <a name="how-the-toolbox-is-defined"></a><a name="ToolboxDef"></a>工具箱的定義方式
  在 [DSL 總管] 中，展開 [編輯器] 節點和下方節點。 一般而言，您會看到類似如下的階層架構：
 
 ```
@@ -63,13 +63,13 @@ Editor
 
      您通常會先建立連接線類別並將其對應至參考關聯性，再建立連接工具。
 
-2. 在 [DSL Explorer] 中 ，展開 [編輯器 **]** 節點和 [工具箱索引標籤] 節點。
+2. 在 [DSL Explorer] 中**Editor** ，展開 [編輯器 **]** 節點和 [工具箱索引標籤] 節點。
 
      以滑鼠右鍵按一下 [工具箱] 索引標籤節點，然後按一下 [**加入新**的專案工具] 或 [**加入新的連接工具**]。
 
 3. 將 [**工具箱圖示**] 屬性設定為參考16x16 點陣圖。
 
-     如果您想要定義新的圖示，請在 [ **Dsl\Resources** ] 資料夾的方案總管中建立點陣圖檔案。 檔案應具有下列屬性值：**組建動作** = **內容**;[**複製到輸出目錄**] = [不要**複製**]。
+     如果您想要定義新的圖示，請在 [ **Dsl\Resources** ] 資料夾的方案總管中建立點陣圖檔案。 檔案應具有下列屬性值：**組建動作**  =  **內容**;**複製到輸出目錄**  = **不要複製**。
 
 4. **針對 [元素] 工具：** 設定工具的 [**類別**] 屬性，以參考對應至圖形的實體網域類別。
 
@@ -77,9 +77,9 @@ Editor
 
 5. 若要測試 DSL，請按 F5 或 CTRL + F5，然後在 Visual Studio 的實驗實例中，開啟範例模型檔案。 新工具應顯示在工具箱上。 將工具拖曳至圖表上，驗證工具是否會建立新項目。
 
-     如果工具沒有出現，請停止實驗性 Visual Studio。 在 Windows [**開始**] 功能表中，執行 **[重設 Microsoft Visual Studio 2010 實驗實例**]。 在 [建置] 功能表上，按一下 [重建方案]。 然後再測試一次 DSL。
+     如果工具沒有出現，請停止實驗性 Visual Studio。 在 Windows [**開始**] 功能表中，執行 **[重設 Microsoft Visual Studio 2010 實驗實例**]。 在 [建置]**** 功能表上，按一下 [重建方案]****。 然後再測試一次 DSL。
 
-## <a name="customizing"></a>自訂元素工具
+## <a name="customizing-element-tools"></a><a name="customizing"></a>自訂元素工具
  根據預設，此工具會建立指定類別的單一執行個體，但是您可以透過下列兩個方式來改變：
 
 - 定義其他類別的 Element Merge 指示詞，讓這些類別接受這個類別的新執行個體，並讓這些類別在建立新項目時建立其他連結。 例如，您可以允許使用者將一個註解拖曳到另一個項目上，藉此建立兩者之間的參考連結。
@@ -90,7 +90,7 @@ Editor
 
 - 撰寫程式碼來自訂此工具，使其可以建立項目群組。 此工具是由您可以覆寫之 ToolboxHelper.cs 中的方法初始化。 如需詳細資訊，請參閱[從工具建立元素群組](#groups)。
 
-## <a name="groups"></a>從工具建立元素群組
+## <a name="creating-groups-of-elements-from-a-tool"></a><a name="groups"></a>從工具建立元素群組
  每個項目工具包含該工具應建立的項目原型。 根據預設，每個項目工具會建立一個項目，但也可能透過一個工具來建立一組相關的物件。 若要執行這項操作，您可以使用內含相關項目的 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 來初始化工具。
 
  下列範例取自內含電晶體類型的 DSL。 每個電晶體有三個具名端子。 電晶體的項目工具會儲存內含四個模型項目和三個關聯性連結的原型。 當使用者將工具拖曳至圖表上時，原型會具現化並連結至模型根。
@@ -139,7 +139,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 }  }    }
 ```
 
-## <a name="connections"></a>自訂連接工具
+## <a name="customizing-connection-tools"></a><a name="connections"></a>自訂連接工具
  您通常會在建立新的連接線類別時，建立項目工具。 或者，您可以允許由兩個端點類型來決定關聯性類型，藉此多載一個工具。 例如，您可以定義一個連接工具，該工具可建立人與人的關聯性，以及人與鄉鎮的關聯性。
 
  連接工具會叫用連接產生器。 使用連接產生器可指定使用者在產生的設計工具中連結項目的方式。 連接產生器指定可連結的項目，以及在項目之間建立的連結類型。
@@ -159,7 +159,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>使用多個 Link Connect 指示詞的連接產生器
  您可以將多個 Link Connect 指示詞加入至連接產生器。 這可協助您隱藏使用者對領域模型的一些複雜性，並讓 [**工具箱**] 變得過於雜亂。 您可以針對數個不同的網域關聯性，將多個 Link Connect 指示詞加入至一個連接產生器。 不過，您應該將執行類似功能的網域關聯性合併在一起。
 
- 在工作流程方案中，**流程**連接工具是用來繪製**流程**和**ObjectFlow**網域關聯性的實例。 **FlowBuilder**連接產生器除了先前所述的**流程**連結 connect 指示詞之外，還有兩個名為**ObjectFlow**的連結 connect 指示詞。 這些指示詞會指定**ObjectFlow**關聯性的實例可以在**ObjectInState**網域類別的實例之間繪製，或是從**ObjectInState**的**實例建立到**工作的實例，而不是在工作的兩個實例**之間，或是** **從工作的**實例到**ObjectInState**的實例。 不過，可能會在工作的兩個實例之間繪製**流程**關聯性的**實例。** 如果您編譯並執行工作流程方案，您可以看到從**ObjectInState**實例到工作實例的繪製**流程**會建立**ObjectFlow**的實例，但**在工作的**兩個實例之間繪製**流程**，**會建立** **流程**的實例。
+ 在工作流程方案中，**流程**連接工具是用來繪製**流程**和**ObjectFlow**網域關聯性的實例。 **FlowBuilder**連接產生器除了先前所述的**流程**連結 connect 指示詞之外，還有兩個名為**ObjectFlow**的連結 connect 指示詞。 這些指示詞會指定**ObjectFlow**關聯性的實例可以在**ObjectInState**網域類別的實例之間繪製，或是從**ObjectInState**的**實例建立到**工作的實例，而不是在工作的兩個實例**之間，或是****從工作的**實例到**ObjectInState**的實例。 不過，可能會在工作的兩個實例之間繪製**流程**關聯性的**實例。** 如果您編譯並執行工作流程方案，您可以看到從**ObjectInState**實例到工作實例的繪製**流程**會建立**ObjectFlow**的實例，但**在工作的**兩個實例之間繪製**流程**，**會建立****流程**的實例。
 
 ### <a name="custom-code-for-connection-builders"></a>連接產生器的自訂程式碼
  使用者介面中有四個核取方塊，用於定義連接產生器的不同自訂類型：
@@ -184,17 +184,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  在「元件圖表」範例中，會自訂「連接」網域關聯性的連接產生器，限制只能在通訊埠之間建立連接。 下圖顯示您只能建立 `OutPort` 項目到 `InPort` 項目的連接，不過您可以讓元件彼此巢狀其中。
 
- **從嵌套元件進入 OutPort 的連接**
+ **從巢狀元件連入 OutPort 的連接**
 
  ![連接產生器](../modeling/media/connectionbuilder_3.png)
 
  因此，您可能需要指定可從巢狀元件連接至 OutPort。 若要指定這類連線，您可以在 [ **DSL 詳細資料**] 視窗中，將**InPort**類型的 [**自訂接受**] 設定為 [來源角色]，並將 [ **OutPort**類型] 當做 [目標角色]。
 
- **DSL Explorer 中的 Link Connect 指示詞**
+ **[DSL 總管] 中的 Link Connect 指示詞**
 
  ![連接產生器影像](../modeling/media/connectionbuilder_4a.png)
 
- **DSL 詳細資料視窗中的 Link Connect 指示詞**
+ **[DSL 詳細資料] 視窗中的 Link Connect 指示詞**
 
  ![DSL 詳細資料視窗中的 Link connect 指示詞](../modeling/media/connectionbuilder_4b.png)
 
@@ -232,10 +232,10 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  您可以使用自訂程式碼來套用「硬式」條件約束，但您應該考慮使用者是否應該能夠暫時建立不正確連接。 如果應該，您可以修改條件約束，在使用者嘗試儲存變更之前都不會驗證連接。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [自訂項目的建立和移動](../modeling/customizing-element-creation-and-movement.md)
 - [自訂複製行為](../modeling/customizing-copy-behavior.md)
-- [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [如何：加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [線路圖表範例 DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

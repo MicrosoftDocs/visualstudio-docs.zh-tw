@@ -15,21 +15,21 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6109e0dc18f98d0b22dfb5c548bd12447b53e61d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f800a550717abfabdfb9296fc8f6de49d127d73
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662988"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548196"
 ---
-# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210：組件應包含有效的強式名稱
+# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210:組件應該具備有效的強式名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|AssembliesShouldHaveValidStrongNames|
 |CheckId|CA2210|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -61,17 +61,17 @@ ms.locfileid: "72662988"
 ## <a name="how-to-fix-violations"></a>如何修正違規
  **建立金鑰檔**
 
- 請使用下列其中一個程式：
+ 您可以使用下列其中一個程序：
 
-- 使用 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK 所提供的元件連結器工具（Al.exe）。
+- 使用 SDK 所提供的元件連結器工具（Al.exe） [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 。
 
-- 針對 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v1.0 或1.1 版，請使用 <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> 或 <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> 屬性。
+- 如果是 v1.0 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 或 v1.1，請使用 <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> 或 <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> 屬性。
 
-- 針對 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]，請使用 `/keyfile` 或 `/keycontainer` 編譯器選項[/KEYFILE （指定金鑰或金鑰組來簽署元件）](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06)或/KEYCONTAINER （在中C++[指定要簽署元件的金鑰容器）](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e)連結器選項）。
+- 針對 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] ，請使用 `/keyfile` 或 `/keycontainer` 編譯器選項[/KEYFILE （指定金鑰或金鑰組來簽署元件）](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06)或[/KEYCONTAINER （指定要簽署元件的金鑰容器）](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e)連結器選項（在 c + + 中））。
 
   **若要使用中的強式名稱簽署元件 Visual Studio**
 
-1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，開啟您的方案。
+1. 在中 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，開啟您的方案。
 
 2. 在**方案總管**中，以滑鼠右鍵按一下您的專案，然後按一下 [**屬性]。**
 
@@ -83,17 +83,17 @@ ms.locfileid: "72662988"
 
 5. 在 [**金鑰檔名稱**] 中，輸入強式名稱金鑰的名稱。
 
-6. 選擇是否要使用密碼來保護金鑰，然後按一下 **[確定]** 。
+6. 選擇是否要使用密碼來保護金鑰，然後按一下 **[確定]**。
 
 7. 在**方案總管**中，以滑鼠右鍵按一下您的專案，然後按一下 [**建立**]。
 
    **若要使用外部的強式名稱簽署元件 Visual Studio**
 
-- 使用 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK 所提供的強式名稱工具（Sn.exe）。 如需詳細資訊，請參閱 [Sn.exe (強式名稱工具)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)。
+- 使用 SDK 所提供的強式名稱工具（Sn.exe） [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 。 如需詳細資訊，請參閱[Sn.exe （強式名稱工具）](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  只有在不考慮與內容進行篡改的環境中使用元件時，才隱藏此規則的警告。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [如何：使用強式名稱來簽署元件](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe （強式名稱工具）](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
+ [如何：使用強式名稱簽署元件](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe （強式名稱工具）](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)

@@ -1,7 +1,7 @@
 ---
 title: 自訂模型總管
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.explorerbehavior
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96c12ac2063e6b3ac04e3c0e9b0c20c69ea91a35
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 625ba0d592d0dbdaa8cb910c366852fe32c5f220
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589704"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548365"
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
 您可以針對特定領域語言設計工具變更 explorer 的外觀和行為，如下所示：
@@ -33,14 +33,14 @@ ms.locfileid: "75589704"
  若要變更所產生之 explorer 的視窗標題，請在 [ **DSL explorer**] 中選取 [ **explorer 行為**]，然後在 [**屬性**] 視窗中，將 [**標題**] 屬性設定為您想要的標題。
 
 ## <a name="changing-the-tab-icon"></a>變更索引標籤圖示
- 若要變更 explorer 的索引標籤圖示，請在 .bmp 檔案中使用16x16 圖元的圖示。 將圖示檔放在 \DslPackage\Resources\ 資料夾中，然後將檔案名變更為**ModelExplorerToolWindowBitmaps。** 例如，您可以將 Visual Studio 安裝程式 .ico 圖示檔變更為 .bmp 格式，並將它重新命名為**DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**。 產生的設計工具會在您的瀏覽器的索引標籤上，當它與**方案總管**停駐在一起時，顯示此圖示。
+ 若要變更 explorer 的索引標籤圖示，請在 .bmp 檔案中使用16x16 圖元的圖示。 將圖示檔放在 \DslPackage\Resources\ 資料夾中，然後將檔案名變更為**ModelExplorerToolWindowBitmaps.bmp**。 例如，您可以將 Visual Studio 安裝程式 .ico 圖示檔變更為 .bmp 格式，並將它重新命名為**DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**。 產生的設計工具會在您的瀏覽器的索引標籤上，當它與**方案總管**停駐在一起時，顯示此圖示。
 
 ## <a name="setting-custom-icons-on-explorer-nodes"></a>設定 Explorer 節點上的自訂圖示
  您可以使用 [explorer] 節點設定自訂您的 explorer 中的節點。 下列程式顯示如何將圖示新增至節點。
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>將圖示加入至 explorer 節點
 
-1. 使用 [工作流程] 方案範本來建立 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 解決方案。
+1. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]使用 [工作流程] 方案範本來建立方案。
 
 2. 將包含16x16 圖元圖示的 .bmp 檔案放在解決方案的 [ **Dsl\Resources** ] 資料夾中。
 
@@ -111,6 +111,6 @@ ms.locfileid: "75589704"
 
      Explorer 應該只會顯示 [動作專案] 節點，而且不應該顯示 [**批註** **] 節點。**
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

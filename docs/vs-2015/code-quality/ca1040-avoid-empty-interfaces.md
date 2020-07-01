@@ -15,21 +15,21 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 50a36281edb144ddb949899fa24e0b5088080220
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0ef6dc666cbc3c26d58358c9b59264f93a7bf184
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668316"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548248"
 ---
-# <a name="ca1040-avoid-empty-interfaces"></a>CA1040：避免空的介面
+# <a name="ca1040-avoid-empty-interfaces"></a>CA1040:避免使用空的介面
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|AvoidEmptyInterfaces|
 |CheckId|CA1040|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
