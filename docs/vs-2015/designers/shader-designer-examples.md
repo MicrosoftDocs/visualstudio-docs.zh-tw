@@ -21,7 +21,7 @@ ms.locfileid: "85531557"
 
 文件中本節的文章包含示範如何使用著色器設計工具來建立各種圖形效果的範例。
 
-## <a name="related-topics"></a>相關主題
+## <a name="related-topics"></a>相關的主題
 
 |Title|描述|
 |-|-|

@@ -1,7 +1,7 @@
 ---
 title: 從文字範本存取模型
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, accessing models
 author: JoshuaPartlow
@@ -9,19 +9,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9ac9fb023797db98f3b83aa4da7b92e71f0e71e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590614"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531465"
 ---
 # <a name="access-models-from-text-templates"></a>從文字模板存取模型
 
 藉由使用文字模板，您可以建立以特定領域語言模型為基礎的報表檔案、原始程式碼檔案和其他文字檔。 如需文字模板的基本資訊，請參閱程式[代碼產生和 T4 文字模板](../modeling/code-generation-and-t4-text-templates.md)。 當您要對 DSL 進行偵錯工具時，文字模板會在實驗模式下工作，而且也會在您已部署 DSL 的電腦上工作。
 
 > [!NOTE]
-> 當您建立 DSL 方案時，會在調試專案中產生範例文字模板 **\*tt**檔案。 當您變更網域類別的名稱時，這些範本將無法再使用。 不過，它們包含您所需的基本指示詞，並提供可更新以符合 DSL 的範例。
+> 當您建立 DSL 方案時，會在調試專案中產生範例文字模板** \* tt**檔案。 當您變更網域類別的名稱時，這些範本將無法再使用。 不過，它們包含您所需的基本指示詞，並提供可更新以符合 DSL 的範例。
 
  若要從文字模板存取模型：
 
@@ -29,7 +29,7 @@ ms.locfileid: "75590614"
 
 - 針對您想要存取的 DSL 指定指示詞處理器。 這會載入您的 DSL 元件，讓您可以在文字模板的程式碼中使用其網域類別、屬性和關聯性。 它也會載入您指定的模型檔案。
 
-  當您從 [DSL 最小語言] 範本建立新的 Visual Studio 方案時，會在調試專案中建立類似下列範例的 `.tt` 檔案。
+  `.tt`當您從 [DSL 最小語言] 範本建立新的 Visual Studio 方案時，會在調試專案中建立類似下列範例的檔案。
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -55,13 +55,13 @@ Here is a list of elements in the model:
 
 - 範本可以使用您在 DSL 定義中定義的網域類別、屬性和關聯性。
 
-- 範本會載入您在 `requires` 屬性中指定的模型檔案。
+- 範本會載入您在屬性中指定的模型檔案 `requires` 。
 
-- 中的屬性（property） `this` 包含根項目。 您的程式碼可以從該處流覽至模型的其他元素。 屬性的名稱通常與 DSL 的根域類別相同。 在此範例中，它是 `this.ExampleModel`。
+- 中的屬性 `this` 包含根項目。 您的程式碼可以從該處流覽至模型的其他元素。 屬性的名稱通常與 DSL 的根域類別相同。 在此範例中為 `this.ExampleModel`。
 
-- 雖然撰寫程式碼片段的語言是C#，但是您可以產生任何種類的文字。 或者，您也可以藉由將屬性 `language="VB"` 新增至 `template` 指示詞，在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中撰寫程式碼。
+- 雖然撰寫程式碼片段的語言是 c #，但是您可以產生任何種類的文字。 或者，您也可以藉 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 由將屬性新增至指示詞，在中撰寫程式碼 `language="VB"` `template` 。
 
-- 若要對範本進行 debug，請將 `debug="true"` 新增至 `template` 指示詞。 如果發生例外狀況，此範本會在 Visual Studio 的另一個實例中開啟。 如果您想要在程式碼中的特定點中斷偵錯工具，請插入語句 `System.Diagnostics.Debugger.Break();`
+- 若要對範本進行調試，請將新增至指示詞 `debug="true"` `template` 。 如果發生例外狀況，此範本會在 Visual Studio 的另一個實例中開啟。 如果您想要在程式碼中的特定點中斷偵錯工具，請插入語句`System.Diagnostics.Debugger.Break();`
 
    如需詳細資訊，請參閱對[T4 文字模板進行調試](../modeling/debugging-a-t4-text-template.md)程式。
 
@@ -72,13 +72,13 @@ Here is a list of elements in the model:
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>
 ```
 
- 指示詞的名稱（在此範例中為 `MyLanguage`）是從您的 DSL 名稱衍生而來。 它會叫用在您的 DSL 中產生的指示詞*處理器*。 您可以在**Dsl\GeneratedCode\DirectiveProcessor.cs**中找到其原始程式碼。
+ 指示詞的名稱（ `MyLanguage` 在此範例中為）是從您的 DSL 名稱衍生而來。 它會叫用在您的 DSL 中產生的指示詞*處理器*。 您可以在**Dsl\GeneratedCode\DirectiveProcessor.cs**中找到其原始程式碼。
 
  DSL 指示詞處理器會執行兩個主要工作：
 
 - 它會有效地將元件和匯入指示詞插入參考您 DSL 的範本中。 這可讓您在範本程式碼中使用您的網域類別。
 
-- 它會載入您在 `requires` 參數中指定的檔案，並在 `this` 中設定參考已載入模型之根項目的屬性。
+- 它會載入您在參數中指定的檔案 `requires` ，並在中設定 `this` 參考所載入模型之根項目的屬性。
 
 ## <a name="validating-the-model-before-running-the-template"></a>執行範本之前驗證模型
  在執行範本之前，您可能會先驗證模型。
@@ -89,18 +89,18 @@ Here is a list of elements in the model:
 
  請注意：
 
-1. `filename` 和 `validation` 參數是以 ";" 分隔，而且不能有任何其他分隔符號或空格。
+1. `filename`和 `validation` 參數是以 ";" 分隔，而且不能有任何其他分隔符號或空格。
 
-2. 驗證分類清單會決定要執行的驗證方法。 多個類別應以 "&#124;" 分隔，而且不能有其他分隔符號或空格。
+2. 驗證分類清單會決定要執行的驗證方法。 多個類別應該以 "&#124;" 分隔，而且不能有任何其他分隔符號或空格。
 
    如果發現錯誤，則會在 [錯誤] 視窗中報告，且結果檔案會包含錯誤訊息。
 
-## <a name="Multiple"></a>從文字模板存取多個模型
+## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a>從文字模板存取多個模型
 
 > [!NOTE]
 > 這個方法可讓您讀取相同範本中的多個模型，但不支援 ModelBus 參考。 若要讀取由 ModelBus 參考所 interlinked 的模型，請參閱[在文字模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
- 如果您想要從相同的文字模板存取多個模型，則必須針對每個模型呼叫所產生的指示詞處理器一次。 您必須在 `requires` 參數中指定每一個模型的檔案名。 您必須在 `provides` 參數中指定要用於根域類別的名稱。 您必須為每個指示詞呼叫中的 `provides` 參數指定不同的值。 例如，假設您有三個稱為程式庫的模型檔案： xyz、School 和 Work. xyz。 若要從相同的文字模板存取它們，您必須撰寫與下列類似的三個指示詞呼叫。
+ 如果您想要從相同的文字模板存取多個模型，則必須針對每個模型呼叫所產生的指示詞處理器一次。 您必須在參數中指定每個模型的檔案名 `requires` 。 您必須在參數中指定要用於根域類別的名稱 `provides` 。 您必須針對每個指示詞呼叫中的參數指定不同的值 `provides` 。 例如，假設您有三個稱為程式庫的模型檔案： xyz、School 和 Work. xyz。 若要從相同的文字模板存取它們，您必須撰寫與下列類似的三個指示詞呼叫。
 
 ```
 <#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Library.xyz'" provides="ExampleModel=LibraryModel" #>
@@ -138,7 +138,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>動態載入模型
  如果您想要在執行時間決定要載入的模型，您可以在程式碼中以動態方式載入模型檔案，而不是使用 DSL 特定的指示詞。
 
- 不過，DSL 特定指示詞的其中一個功能是匯入 DSL 命名空間，讓範本程式碼可以使用該 DSL 中定義的網域類別。 因為您不使用指示詞，所以您必須為您可能載入的所有模型，加入 **\<元件 >** 和 **\<匯入 >** 指示詞。 如果您可能載入的不同模型都是相同 DSL 的所有實例，這就很簡單。
+ 不過，DSL 特定指示詞的其中一個功能是匯入 DSL 命名空間，讓範本程式碼可以使用該 DSL 中定義的網域類別。 因為您不使用指示詞，所以您必須 **\<assembly>** **\<import>** 為您可能載入的所有模型加入和指示詞。 如果您可能載入的不同模型都是相同 DSL 的所有實例，這就很簡單。
 
  若要載入檔案，最有效的方法是使用 Visual Studio ModelBus。 在典型的案例中，您的文字模板會使用 DSL 特定的指示詞，以一般方式載入第一個模型。 該模型會包含另一個模型的 ModelBus 參考。 您可以使用 ModelBus 來開啟參考的模型，並存取特定的元素。 如需詳細資訊，請參閱[在文字模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
@@ -172,7 +172,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>
 ```
 
- `LoopSplitter.tt` 會叫用 `LoopTemplate.t4`，然後將產生的檔案分割成其區段。 請注意，此範本不一定是模型化範本，因為它不會讀取模型。
+ `LoopSplitter.tt`叫用 `LoopTemplate.t4` ，然後將產生的檔案分割成其區段。 請注意，此範本不一定是模型化範本，因為它不會讀取模型。
 
 ```
 <#@ template hostspecific="true" language="C#" #>

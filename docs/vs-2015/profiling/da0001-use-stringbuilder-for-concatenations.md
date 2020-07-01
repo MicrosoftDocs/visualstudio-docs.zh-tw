@@ -14,23 +14,23 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a871f726dc13f91c1dfd57471c12ee5cbfeb245
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 5e2e52b0688f69fd154425887077c40fc3e6c265
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918870"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531400"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001：使用 StringBuilder 進行串連
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如需 Visual Studio 的最新檔，請參閱[DA0001：使用 StringBuilder 進行](/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations)串連。  
   
-|||  
+|Item|值|  
 |-|-|  
-|規則識別碼|DA0001|  
-|分類|.NET Framework 使用方式|  
-|分析方法|取樣<br /><br /> 檢測設備|  
+|規則 ID|DA0001|  
+|類別|.NET Framework 使用方式|  
+|分析方法|取樣<br /><br /> 測試設備|  
 |訊息|請考慮使用 StringBuilder 來進行字串串連|  
 |訊息類型|警告|  
   
