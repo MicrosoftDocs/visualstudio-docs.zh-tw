@@ -1,19 +1,19 @@
 ---
 title: 如何：建立基本材質著色器
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac74155b8de4669d959d9b14e9be20ada2ec51d9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 30925a9b1814bd636258696fef817be9903f8006
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589470"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769084"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>如何：建立基本材質著色器
 
@@ -48,11 +48,11 @@ ms.locfileid: "75589470"
 
 ![著色器圖形及其效果預覽](../designers/media/digit-texture-effect.png)
 
-某些圖形可對一些著色器提供更佳的預覽。 有關如何在"掃描器設計器"中預覽掃描器的詳細資訊，請參閱["掃描器設計器"](../designers/shader-designer.md)
+某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計](../designers/shader-designer.md)工具
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：將下型機應用於 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Image Editor](../designers/image-editor.md)
+- [如何：將著色器套用至3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [影像編輯器](../designers/image-editor.md)
 - [著色器設計工具](../designers/shader-designer.md)
 - [著色器設計工具節點](../designers/shader-designer-nodes.md)

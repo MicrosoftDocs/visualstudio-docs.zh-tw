@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eb574afbe1f9ac843868dabf5af88fdbc24599ef
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: df8b9c80b3d3b12cb556947a7ca77b3141fb853d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328169"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520637"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012：大量的反射
 
-|||
+|Item|值|
 |-|-|
 |規則 ID|DA0012|
 |類別|.NET Framework 使用方式|

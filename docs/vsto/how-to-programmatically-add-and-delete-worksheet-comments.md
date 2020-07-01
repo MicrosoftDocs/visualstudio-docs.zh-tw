@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式新增和刪除工作表註解
+title: 如何：以程式設計方式新增和刪除工作表批註
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7251efb4c7917b67b7b6e7642c78c1cd1041997
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc02a659c50a5b207f2f53d0a8781b0d23419301
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967692"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520077"
 ---
-# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>HOW TO：以程式設計方式新增和刪除工作表註解
+# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>如何：以程式設計方式新增和刪除工作表批註
   您可以透過程式設計方式，加入及刪除 Microsoft Office Excel 工作表中的註解。 註解只能加入單一儲存格，而不能加入多個儲存格範圍。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="add-and-delete-a-comment-in-a-document-level-project"></a>新增和刪除的文件層級專案中的註解
+## <a name="add-and-delete-a-comment-in-a-document-level-project"></a>在檔層級專案中加入及刪除批註
  下列範例假設名為 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的工作表上有名為 `dateComment` 的單一儲存格 `Sheet1`。
 
 ### <a name="to-add-a-new-comment-to-a-named-range"></a>將新註解加入具名範圍
@@ -43,7 +43,7 @@ ms.locfileid: "62967692"
      [!code-csharp[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#29)]
 
-## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>新增和刪除的 VSTO 增益集專案中的註解
+## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>在 VSTO 增益集專案中新增和刪除批註
  下列範例假設使用中工作表上有名為 <xref:Microsoft.Office.Interop.Excel.Range> 的單一儲存格 `dateComment` 。
 
 ### <a name="to-add-a-new-comment-to-an-excel-range"></a>將新註解加入 Excel 範圍
@@ -62,5 +62,5 @@ ms.locfileid: "62967692"
 
 ## <a name="see-also"></a>另請參閱
 - [使用工作表](../vsto/working-with-worksheets.md)
-- [如何：以程式設計方式顯示工作表註解](../vsto/how-to-programmatically-display-worksheet-comments.md)
+- [如何：以程式設計方式顯示工作表批註](../vsto/how-to-programmatically-display-worksheet-comments.md)
 - [NamedRange 控制項](../vsto/namedrange-control.md)

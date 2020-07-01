@@ -1,7 +1,7 @@
 ---
 title: 不使用專案或方案來開發程式碼
 ms.date: 06/22/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75aeb721ea5625523d29e20193ac406037abedc2
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 68665acfcc3ea00f118dc19cf155cb3e6f5d1b36
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284889"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769666"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 

@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e3b21745454a74d0251dad547ab45e845190f06d
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 58c94e5a24eab1c638397d7b1391596e503207fa
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328178"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520662"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011：CompareTo 高度耗費資源
 
-|||
+|Item|值|
 |-|-|
 |規則 ID|DA0011|
 |類別|.NET Framework 使用方式|

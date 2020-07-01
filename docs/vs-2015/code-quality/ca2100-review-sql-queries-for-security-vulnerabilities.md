@@ -16,36 +16,36 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e7258ec98937e7ea84773e788234e5a34772e9d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 797c071cdc74c36afeece304bfa4c708d7bf7147
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652202"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521208"
 ---
-# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100：必須檢視 SQL 查詢中是否有安全性弱點
+# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100:必須檢閱 SQL 查詢中是否有安全性弱點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
 |CheckId|CA2100|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 方法會使用從 string 引數建立到方法的字串，來設定 <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> 屬性。
+ 方法 <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> 會使用從字串引數建立到方法的字串，來設定屬性。
 
 ## <a name="rule-description"></a>規則描述
  這項規則假設字串引數包含使用者輸入。 從使用者輸入所建置的 SQL 命令字串很容易遭到 SQL 插入 (SQL Injection) 攻擊。 在 SQL 插入式攻擊中，惡意使用者會提供會改變查詢設計的輸入，以嘗試損毀或取得未經授權的基礎資料庫存取權。 典型的技術包括插入單引號或單引號，也就是 SQL 常值字串分隔符號;兩個虛線，表示 SQL 批註;和分號，表示會遵循新的命令。 如果使用者輸入必須是查詢的一部分，請使用下列其中一項（依有效性列出）來降低攻擊的風險。
 
-- 使用預存程式。
+- 使用預存程序。
 
 - 使用參數化命令字串。
 
 - 建立命令字串之前，請先驗證類型和內容的使用者輸入。
 
-  下列 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 類型會實 <xref:System.Data.IDbCommand.CommandText%2A> 屬性，或提供使用字串引數來設定屬性的函式。
+  下列型別會 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 執行 <xref:System.Data.IDbCommand.CommandText%2A> 屬性，或提供使用字串引數來設定屬性的函式。
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> 和 <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -57,7 +57,7 @@ ms.locfileid: "72652202"
 
 - <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> 和 <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
-  請注意，當使用類型的 ToString 方法明確或隱含地用來建立查詢字串時，會違反此規則。 下列為範例。
+  請注意，當使用類型的 ToString 方法明確或隱含地用來建立查詢字串時，會違反此規則。 以下是一個範例。
 
 ```
 int x = 10;
@@ -80,11 +80,11 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
  如果命令文字不包含任何使用者輸入，則可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反規則的方法 `UnsafeQuery`，以及使用參數化命令字串滿足規則的方法（`SaferQuery`）。
+ 下列範例顯示的方法 `UnsafeQuery` 違反規則，以及 `SaferQuery` 使用參數化命令字串來滿足規則的方法。
 
  [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cpp/FxCop.Security.ReviewSqlQueries.cpp#1)]
  [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cs/FxCop.Security.ReviewSqlQueries.cs#1)]
  [!code-vb[FxCop.Security.ReviewSqlQueries#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/vb/FxCop.Security.ReviewSqlQueries.vb#1)]
 
-## <a name="see-also"></a>請參閱
- [安全性概觀](https://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)
+## <a name="see-also"></a>另請參閱
+ [安全性總覽](https://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)

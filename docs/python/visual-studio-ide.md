@@ -2,7 +2,7 @@
 title: 適用於 Python 開發人員的 Visual Studio 概觀
 titleSuffix: ''
 ms.date: 03/13/2019
-ms.topic: conceptual
+ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,26 +11,26 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b97655efac3fc42f5e5790e32c97de169e61a6b5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73661924"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520584"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>歡迎使用 Visual Studio IDE | Python
 
 Visual Studio 整合式開發環境** 是支援 Python (和其他語言) 且創作功能豐富的啟動控制板，可供您編輯、偵錯及測試程式碼，然後發行應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有程式碼完成工具、互動式 REPL 環境及其他功能，讓軟體開發程序變得更為容易。
 
-[![帶有 Python 專案的視覺化工作室](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![使用 Python 專案 Visual Studio](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 此圖顯示 Visual Studio 有一個開啟的 Python 專案，以及數個您可能會用到的重要工具視窗：
 
-- [**解決方案資源管理器**](../ide/solutions-and-projects-in-visual-studio.md)（右上）允許您查看、導航和管理代碼檔。 **解決方案資源管理器**可以通過將檔分組到[解決方案和專案中](../get-started/tutorial-projects-solutions.md)來説明組織代碼。
+- [**方案總管**](../ide/solutions-and-projects-in-visual-studio.md)（右上方）可讓您查看、流覽和管理您的程式碼檔案。 **方案總管**可以藉由將檔案分組到[方案和專案](../get-started/tutorial-projects-solutions.md)中，協助組織您的程式碼。
   - 方案總管**** 旁的是 [Python 環境****](managing-python-environments-in-visual-studio.md)，您可以在此環境中管理安裝在電腦上的其他 Python 解譯器。
 
   ::: moniker range=">=vs-2019"
-  - 您也可以開啟並執行資料夾中的 Python 程式碼，不需建立 Visual Studio 專案和方案檔案。 有關詳細資訊，請參閱[快速入門：在資料夾中打開並運行 Python 代碼](quickstart-05-python-visual-studio-open-folder.md)。
+  - 您也可以開啟並執行資料夾中的 Python 程式碼，不需建立 Visual Studio 專案和方案檔案。 如需詳細資訊，請參閱[快速入門：在資料夾中開啟及執行 Python 程式碼](quickstart-05-python-visual-studio-open-folder.md)。
   ::: moniker-end
 
 - [編輯器視窗](../ide/writing-code-in-the-code-and-text-editor.md) (中間) 會顯示檔案內容，您大部分的時間可能都是花在這裡。 您可在這裡[編輯 Python 控制碼](editing-python-code-in-visual-studio.md)、瀏覽程式碼架構，以及在偵錯工作階段期間設定中斷點。 使用 Python 時，您也可按 Ctrl+Enter 在 [[互動式 REPL] 視窗](python-interactive-repl-in-visual-studio.md)中執行該程式碼。
@@ -44,7 +44,7 @@ Visual Studio 整合式開發環境** 是支援 Python (和其他語言) 且創�
 
 Visual Studio 適用於 Windows 及 Mac；但 Python 僅支援適用於 Windows 的 Visual Studio。
 
-Windows 上的視覺化工作室有三個版本：社區、專業和企業版。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
+Windows 上有三種版本的 Visual Studio：「社區」、「專業」和「企業」。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
 
 ## <a name="popular-productivity-features"></a>熱門的生產力功能
 
@@ -56,7 +56,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![Visual Studio IntelliSense 的成員完成](media/code-editing-completions-simple.png)
 
-- [Refactoring](refactoring-python-code.md)
+- [重構](refactoring-python-code.md)
 
    您可以右鍵按一下一段程式碼並選取 [快速控制項目及重構]****，Visual Studio 會提供您智慧型重新命名變數、將一或多行程式碼擷取至新方法，還有變更方法參數順序等作業。
 
@@ -106,7 +106,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [偵錯](debugging-python-in-visual-studio.md)
 
-    Visual Studio 為 Python 提供了全面的調試體驗，包括附加到正在運行的進程、在 **"監視"** 和 **"即時"** 視窗中評估運算式、檢查本地變數、中斷點、步進/出/過語句、**設置下一個語句**等。 您也可針對在 Linux 電腦上執行的遠端 Python 程式碼進行偵錯。
+    Visual Studio 提供 Python 的完整偵錯工具體驗，包括附加至執行中進程、在 [**監看式]** **和 [** 即時運算] 視窗中評估運算式、檢查區域變數、中斷點、逐步執行/輸出/執行語句、**設定下一個語句**等。 您也可針對在 Linux 電腦上執行的遠端 Python 程式碼進行偵錯。
 
     ![在 Visual Studio 中針對 Python 進行偵錯](media/remote-debugging-breakpoint-hit.png)
 
@@ -116,7 +116,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
     ![同時針對 Python 和 C++ 進行混合模式偵錯](media/mixed-mode-debugging.png)
 
-- [分析](profiling-python-code-in-visual-studio.md)
+- [程式碼剖析](profiling-python-code-in-visual-studio.md)
 
     當您使用 CPython 型解譯器時，可以在 Visual Studio 中評估 Python 程式碼的效能。
 
@@ -133,10 +133,10 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 透過遵循以下其中一個快速入門或教學課程，在 Visual Studio 中進一步探索 Python：
 
 > [!div class="nextstepaction"]
-> [快速入門：使用法蘭斯克創建 Web 應用](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [快速入門：使用 Flask 建立 web 應用程式](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
-> [在視覺工作室中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 > [!div class="nextstepaction"]
 > [開始使用 Visual Studio 中的 Django Web 架構](learn-django-in-visual-studio-step-01-project-and-solution.md)

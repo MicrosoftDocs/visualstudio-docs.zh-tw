@@ -1,19 +1,19 @@
 ---
 title: 如何：建立 3D 地形模型
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 12f19363d9024f8e7e2deb69a8038b8854eb50e4
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589418"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768966"
 ---
 # <a name="how-to-model-3d-terrain"></a>如何：建立 3D 地形模型
 
@@ -29,7 +29,7 @@ ms.locfileid: "75589418"
 
 開始之前，請確定已顯示 [屬性]**** 視窗和 [工具箱]****。
 
-1. 建立要使用的 3D 模型。 有關如何向專案添加模型的資訊，請參閱[模型編輯器](../designers/model-editor.md)中的"入門"部分。
+1. 建立要使用的 3D 模型。 如需如何將模型加入至專案的詳細資訊，請參閱[模型編輯器](../designers/model-editor.md)中的消費者入門一節。
 
 2. 將平面加入場景。 在 [工具箱]**** 的 [形狀]**** 下，選取 [平面]****，並將其移至設計介面。
 
@@ -53,7 +53,7 @@ ms.locfileid: "75589418"
 
 ![顯示地形模型的 3D 場景](../designers/media/digit-terrain-model.png)
 
-您可以使用此地形模型來演示["如何：創建基於幾何的漸變勢化器](../designers/how-to-create-a-geometry-based-gradient-shader.md)"中描述的漸變勢下的效果。
+您可以使用此地形模型來示範漸層著色器的效果，如[如何：建立以幾何為基礎](../designers/how-to-create-a-geometry-based-gradient-shader.md)的漸層著色器中所述。
 
 ## <a name="see-also"></a>另請參閱
 

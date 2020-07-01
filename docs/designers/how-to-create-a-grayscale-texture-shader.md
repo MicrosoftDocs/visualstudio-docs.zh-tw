@@ -1,19 +1,19 @@
 ---
 title: 如何：建立灰階材質著色器
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b74e956a74ff4c04dbc5a1c990fab708937d8f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a311456fd3f8eab12c24e26c32349f208e0a723
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76112622"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769073"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>如何：建立灰階紋理著色器
 
@@ -25,7 +25,7 @@ ms.locfileid: "76112622"
 
 開始之前，請確定已顯示 [屬性]**** 視窗和 [工具箱]****。
 
-1. 創建基本紋理網底器，如["如何：創建基本紋理網底器](../designers/how-to-create-a-basic-texture-shader.md)"中所述。
+1. 建立基本紋理著色器，如[如何：建立基本材質著色器](../designers/how-to-create-a-basic-texture-shader.md)中所述。
 
 2. 將 [材質範例]**** 節點的 [RGB]**** 端點和 [完稿色彩]**** 節點的 [RGB]**** 端點中斷連接。 在 [選取]**** 模式中，選擇 [材質範例]**** 節點的 [RGB]**** 端點，然後選擇 [中斷連結]****。 這樣會替下一個步驟加入的節點留出空間。
 
@@ -49,8 +49,8 @@ ms.locfileid: "76112622"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：將下型機應用於 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [如何：匯出掃描器](../designers/how-to-export-a-shader.md)
-- [Image Editor](../designers/image-editor.md)
+- [如何：將著色器套用至3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [如何：匯出著色器](../designers/how-to-export-a-shader.md)
+- [影像編輯器](../designers/image-editor.md)
 - [著色器設計工具](../designers/shader-designer.md)
 - [著色器設計工具節點](../designers/shader-designer-nodes.md)

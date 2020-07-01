@@ -15,38 +15,38 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 394fafb0c9185a5e11ba759a5b873236956cf25b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fdf3ff02c86a878e9c955d2b3b92879870700efa
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652204"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521143"
 ---
-# <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006：使用 SafeHandle 封裝原生資源
+# <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006:必須使用 SafeHandle 封裝原生資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|UseSafeHandleToEncapsulateNativeResources|
 |CheckId|CA2006|
-|Category|Microsoft 可靠性|
+|類別|Microsoft 可靠性|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
  Managed 程式碼會使用 <xref:System.IntPtr> 來存取原生資源。
 
 ## <a name="rule-description"></a>規則描述
- 在 managed 程式碼中使用 `IntPtr` 可能表示潛在的安全性和可靠性問題。 必須檢查 `IntPtr` 的所有用途，以判斷其位置是否需要使用 <xref:System.Runtime.InteropServices.SafeHandle> 或類似的技術。 如果 `IntPtr` 代表一些原生資源（例如記憶體、檔案控制代碼或通訊端），則會將 managed 程式碼視為擁有，就會發生問題。 如果受控碼擁有資源，它也必須釋放與它相關聯的原生資源，因為如果無法這樣做，可能會導致資源洩漏。
+ `IntPtr`在 managed 程式碼中使用，可能表示有潛在的安全性和可靠性問題。 所有的使用都 `IntPtr` 必須經過審查，以判斷 <xref:System.Runtime.InteropServices.SafeHandle> 其位置是否需要使用或類似的技術。 如果 `IntPtr` 代表一些原生資源（例如記憶體、檔案控制代碼或通訊端），則會將 managed 程式碼視為擁有，就會發生問題。 如果受控碼擁有資源，它也必須釋放與它相關聯的原生資源，因為如果無法這樣做，可能會導致資源洩漏。
 
- 在這種情況下，如果允許多執行緒存取 `IntPtr`，而且提供了釋放由 `IntPtr` 表示的資源，也會有安全性或可靠性問題。 這些問題牽涉到在資源發行上回收 `IntPtr` 值，同時使用資源的同時也是在另一個執行緒上進行。 這可能會造成競爭情況，其中一個執行緒可以讀取或寫入與錯誤資源相關聯的資料。 例如，如果您的型別將 OS 控制碼儲存為 `IntPtr`，並允許使用者同時呼叫使用該控制碼的**關閉**和任何其他方法，而不需要進行某種同步處理，則您的程式碼會有控制碼回收的問題。
+ 在這種情況下，如果允許多執行緒存取，也會存在安全性或可靠性問題， `IntPtr` 而且提供了釋放所表示之資源的方法 `IntPtr` 。 這些問題牽涉到 `IntPtr` 資源釋放上的值回收，同時使用資源的同時也是在另一個執行緒上進行。 這可能會造成競爭情況，其中一個執行緒可以讀取或寫入與錯誤資源相關聯的資料。 例如，如果您的型別將 OS 控制碼儲存為 `IntPtr` ，並允許使用者同時呼叫使用該控制碼的**關閉**和任何其他方法，而不需要進行某種同步處理，則您的程式碼會有控制碼回收的問題。
 
- 這種處理回收的問題可能會導致資料損毀，而且經常會造成安全性弱點。 `SafeHandle` 及其同輩類別 <xref:System.Runtime.InteropServices.CriticalHandle> 提供一個機制來封裝資源的原生控制碼，以便避免這樣的執行緒問題。 此外，您還可以使用 `SafeHandle` 及其同輩類別 `CriticalHandle` 來處理其他執行緒問題，例如，透過呼叫原生方法，仔細控制包含原生控制碼複本的 managed 物件的存留期。 在這種情況下，您通常可以移除 `GC.KeepAlive` 的呼叫。 當您使用 `SafeHandle` 和較低程度的 `CriticalHandle` 時，所產生的效能負擔見解，通常會透過謹慎的設計來降低。
+ 這種處理回收的問題可能會導致資料損毀，而且經常會造成安全性弱點。 `SafeHandle`及其同輩類別 <xref:System.Runtime.InteropServices.CriticalHandle> 提供一種機制，可將原生控制碼封裝至資源，以便避免這樣的執行緒問題。 此外，您可以使用 `SafeHandle` 及其同輩類別 `CriticalHandle` 來處理其他執行緒問題，例如，透過呼叫原生方法，謹慎控制包含原生控制碼複本的 managed 物件的存留期。 在這種情況下，您通常可以移除對的呼叫 `GC.KeepAlive` 。 當您使用和時，所產生的效能額外負荷見解， `SafeHandle` `CriticalHandle` 通常可以透過謹慎的設計來降低。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 將 `IntPtr` 使用量轉換成 `SafeHandle`，以安全地管理原生資源的存取權。 如需範例，請參閱 <xref:System.Runtime.InteropServices.SafeHandle> 參考主題。
+ 將使用方式轉換為 `IntPtr` `SafeHandle` ，以安全地管理原生資源的存取權。 如需範例，請參閱 <xref:System.Runtime.InteropServices.SafeHandle> 參考主題。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  您不應該隱藏這個警告。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  <xref:System.IDisposable>

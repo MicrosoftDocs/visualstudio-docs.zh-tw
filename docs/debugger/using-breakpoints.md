@@ -1,7 +1,7 @@
 ---
 title: 在偵錯工具中使用中斷點 |Microsoft Docs
 ms.custom: ''
-ms.date: 10/28/2019
+ms.date: 06/30/2020
 ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fab15d3390e73ad464a334ccbe64ff8d59db77f2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 57b2ea6a0c69387043057bc07957a757ed351f99
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348011"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769401"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中使用中斷點
 
@@ -50,7 +50,7 @@ ms.locfileid: "85348011"
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>在原始程式碼中設定中斷點
 
-您可以在任何可執行程式碼行上設定中斷點。 例如，在下列 c # 程式碼中，您可以在變數宣告、 `for` 迴圈或迴圈內的任何程式碼上設定中斷點 `for` 。 您無法在命名空間或類別宣告上，或在方法簽章上設定中斷點。
+您可以在任何可執行程式碼行上設定中斷點。 例如，在下列 c # 程式碼中，您可以在程式程式碼上設定中斷點，其中包含變數指派（ `int testInt = 1` ）、 `for` 迴圈或迴圈內的任何程式碼 `for` 。 您無法在方法簽章、命名空間或類別的宣告，或變數宣告中設定中斷點（如果沒有指派），而且沒有 getter/setter。
 
 若要在原始程式碼中設定中斷點，請按一下程式程式碼旁邊的最左邊界。 您也可以選取該行並按**F9**、選取 [**調試**程式] [  >  **切換中斷點**]，或按一下滑鼠右鍵並選取 [**中斷點**] [  >  **插入中斷點**]。 中斷點會在左邊界中顯示為紅點。
 
@@ -188,13 +188,13 @@ ms.locfileid: "85348011"
 
    - 請使用 '！ ' 符號來指定模組。
 
-     範例： `App1.dll!MethodA`
+     範例：`App1.dll!MethodA`
 
    - 在原生 c + + 中使用內容運算子。
 
      `{function, , [module]} [+<line offset from start of method>]`
 
-     範例： `{MethodA, , App1.dll}+2`
+     範例：`{MethodA, , App1.dll}+2`
 
 1. 在 [**語言**] 下拉式清單中，選擇函數的語言。
 

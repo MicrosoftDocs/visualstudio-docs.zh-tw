@@ -13,17 +13,17 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbf25301095ac5ff438514c37f61337e46342860
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7e04827dd8d8d393af8bc3448df75a7503c8eec3
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596160"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769788"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：簽署應用程式和部署資訊清單
 
@@ -71,7 +71,7 @@ ms.locfileid: "75596160"
 4. 輸入密碼以存取金鑰檔，然後選取 **Enter**。
 
 > [!NOTE]
-> *.pfx* 檔案不能包含憑證鏈結資訊。 如果是，則會出現以下導入錯誤：**找不到用於解密的證書和私密金鑰**。 要刪除憑證連結接資訊，可以使用*Certmgr.msc* [並禁用](/previous-versions/aa730868(v=vs.80))在匯出 *.pfx 檔時**包含所有證書**的選項。
+> *.pfx* 檔案不能包含憑證鏈結資訊。 如果存在，將會發生下列匯入錯誤：找**不到憑證和私密金鑰進行解密**。 若要移除憑證連結資訊，您可以使用*certmgr.msc* ，並停用在匯出 * .pfx 檔案時**包含所有憑證**[的選項](/previous-versions/aa730868(v=vs.80))。
 
 ## <a name="sign-using-a-test-certificate"></a>使用測試憑證簽署
 
@@ -113,7 +113,7 @@ ms.locfileid: "75596160"
 
 ## <a name="see-also"></a>另請參閱
 
-- [強命名程式集](/dotnet/framework/app-domains/strong-named-assemblies)
+- [強式名稱組件](/dotnet/framework/app-domains/strong-named-assemblies)
 - [如何：建立公開/私密金鑰組](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
 - [專案設計工具、簽署頁](../ide/reference/signing-page-project-designer.md)
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)

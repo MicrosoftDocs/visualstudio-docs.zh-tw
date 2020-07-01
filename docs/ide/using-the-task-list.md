@@ -1,7 +1,7 @@
 ---
 title: 使用工作清單
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - TaskListWindow
 - VS.TaskList
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: abd6d73c7b312cf00062307370ba2f7aebe6694e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594223"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768622"
 ---
 # <a name="use-the-task-list"></a>使用工作清單
 
@@ -36,7 +36,7 @@ ms.locfileid: "75594223"
 
 ![工作清單視窗](../ide/media/vs2015_task_list.png)
 
-若要變更清單的排序順序，請選取任一資料行的標頭。 要進一步優化搜尋結果，請按**Shift**並按一下第二列標題。 或者，在捷徑功能表上，選擇 [排序依據]****，然後選擇一個標頭。 要進一步優化搜尋結果，請按**Shift**並選擇第二個標題。
+若要變更清單的排序順序，請選取任一資料行的標頭。 若要進一步精簡搜尋結果，請按**Shift**鍵，然後按一下第二個數據行標頭。 或者，在捷徑功能表上，選擇 [排序依據]****，然後選擇一個標頭。 若要進一步精簡搜尋結果，請按**Shift**並選擇第二個標頭。
 
 若要顯示或隱藏資料行，請在捷徑功能表上，選擇 [顯示資料行]****。 選取要顯示或隱藏的資料行。
 
@@ -85,7 +85,7 @@ ms.locfileid: "75594223"
 
 4. 在 [ **優先權** ] 下拉式清單中，選擇新語彙基元的預設優先權。
 
-5. 選擇 **"添加**"。
+5. 選擇 [**新增**]。
 
 > [!TIP]
 > 輸入名稱後，[新增]**** 按鈕即變成啟用狀態。 您必須在按一下 [新增]**** 之前輸入名稱。
@@ -104,11 +104,11 @@ ms.locfileid: "75594223"
 
 ### <a name="create-a-shortcut"></a>建立捷徑
 
-若要建立捷徑，請將指標插入要放置捷徑的程式碼中。 選擇**編輯** > **書簽** > **添加工作清單快捷方式**或按**Ctrl**+**K**， **Ctrl**+**H**.
+若要建立捷徑，請將指標插入要放置捷徑的程式碼中。 選擇 [**編輯**  >  **書簽**] [  >  **新增工作清單快捷方式**] 或按**ctrl** + **K**、 **ctrl** + **H**。
 
 若要在程式碼中巡覽捷徑，請在清單中選擇捷徑，然後從捷徑功能表中選擇 [下一個工作] **** 或 [上一個工作] **** 。
 
 ## <a name="see-also"></a>另請參閱
 
-- [工作清單、環境、選項對話方塊](../ide/reference/task-list-environment-options-dialog-box.md)
+- [選項對話方塊、環境、工作清單](../ide/reference/task-list-environment-options-dialog-box.md)
 - [工作註解 (Visual Studio for Mac)](/visualstudio/mac/task-comments)

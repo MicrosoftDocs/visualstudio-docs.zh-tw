@@ -1,19 +1,19 @@
 ---
 title: 如何：建立基本色彩著色器
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 162632f0043d23fb111a9e455c1100f9506924a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0fe0fc31f3be758e16042de6133399b2df6b65c5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589509"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769161"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>如何：建立基本色彩著色器
 
@@ -46,7 +46,7 @@ ms.locfileid: "75589509"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：將下型機應用於 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [如何：匯出掃描器](../designers/how-to-export-a-shader.md)
+- [如何：將著色器套用至3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [如何：匯出著色器](../designers/how-to-export-a-shader.md)
 - [著色器設計工具](../designers/shader-designer.md)
 - [著色器設計工具節點](../designers/shader-designer-nodes.md)

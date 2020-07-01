@@ -11,4 +11,4 @@ ms.lasthandoff: 04/02/2020
 ms.locfileid: "80573150"
 ---
 > [!NOTE]
-> 有興趣開發跨多個平台擴展 Office 體驗的解決方案? 檢視新的[Office 外接程式模型](/office/dev/add-ins/)。 與 VSTO 載入項和解決方案相比,Office 載入項佔用空間小,您可以使用幾乎任何 Web 編程技術(如 HTML5、JavaScript、CSS3 和 XML)來建置它們。
+> 想要開發可跨多個平臺擴充 Office 經驗的解決方案嗎？ 請參閱新的[Office 增益集模型](/office/dev/add-ins/)。 相較于 VSTO 增益集和解決方案，Office 增益集的使用量很小，而且您可以使用幾乎任何 web 程式設計技術（例如 HTML5、JavaScript、CSS3 和 XML）來建立它們。

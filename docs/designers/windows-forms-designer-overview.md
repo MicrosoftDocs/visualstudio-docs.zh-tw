@@ -1,18 +1,18 @@
 ---
 title: 設計 Windows Forms 應用程式
 ms.date: 08/09/2019
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - Windows Forms Designer
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03619582a30893c161c44c880a0d9cf6c9766d0b
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589886"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768754"
 ---
 # <a name="windows-forms-designer-overview"></a>Windows Form 設計工具概觀
 
@@ -37,9 +37,9 @@ Visual Studio 中的 Windows Form 設計工具能針對建立以 Windows Forms �
 
 ## <a name="see-also"></a>另請參閱
 
-- [視窗表單概述](/dotnet/framework/winforms/windows-forms-overview)
-- [視窗表單控制項](/dotnet/framework/winforms/controls/)
-- [Windows 表單中的使用者輸入](/dotnet/framework/winforms/user-input-in-windows-forms)
+- [Windows Forms 總覽](/dotnet/framework/winforms/windows-forms-overview)
+- [Windows Forms 控制項](/dotnet/framework/winforms/controls/)
+- [Windows Forms 中的使用者輸入](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Windows Forms 中的資料繫結](/dotnet/framework/winforms/windows-forms-data-binding)
 - [增強 Windows Forms 應用程式](/dotnet/framework/winforms/advanced/)
 - <xref:System.Windows.Forms?displayProperty=fullName> API 參考

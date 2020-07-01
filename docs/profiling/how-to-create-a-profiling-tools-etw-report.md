@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 622015ecbc2730c5b0a8cdf7b2ba92c4f5963886
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 5fe610ea87c492e0bf562fe00145c3abaf76b8ef
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329819"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520623"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>如何：建立分析工具 ETW 報表
 「Windows 事件追蹤」(ETW) 報告會列出「[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具」的效能工作階段中記錄的 ETW 事件。 ETW 資料會收集在二進位 (.*etl*) 檔案中。 如需這份報告的詳細資訊，請參閱[Windows 事件追蹤（ETW）報告](../profiling/event-tracing-for-windows-etw-report.md)。
@@ -34,7 +34,7 @@ ms.locfileid: "85329819"
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**
 
-    |||
+    |Item|描述|
     |-|-|
     |*ToolsPath*|「分析工具」公用程式的路徑。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。|
     |*VSPFile*|程式碼剖析資料（。*vsp*或。*.vsps*）文字檔. 可接受完整和部分路徑。|

@@ -1,19 +1,19 @@
 ---
 title: 如何：建立基本材質
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b356d8596581b1c289d9b9aa13a3d5b362e39e58
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589447"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769098"
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：建立基本紋理
 
@@ -49,7 +49,7 @@ ms.locfileid: "75589447"
 
 4. 將前景色彩設為完全透明的黑色。 在 [屬性]**** 視窗的 [色彩]**** 屬性群組中，選取 [前景]****。 將色彩選擇器旁邊的 [R]****、[G]****、[B]**** 及 [A]**** 屬性值設定為 `0`。
 
-5. 在"影像編輯器"工具列上，選擇 **"填充**"工具，然後按住 **"移位"** 鍵並選擇圖像中的任何點。 使用**Shift**鍵會導致填充顏色的 Alpha 值替換圖像中的顏色;否則，Alpha 值用於將填充顏色與圖像中的顏色混合在一起。
+5. 在 [影像編輯器] 工具列上，選擇 [**填滿**] 工具，然後按住**Shift**鍵並選擇影像中的任何點。 使用**Shift**鍵會造成填滿色彩的 Alpha 值取代影像中的色彩;否則，Alpha 值會用來將填滿色彩與影像中的色彩混合在一起。
 
     > [!IMPORTANT]
     > 此步驟加上前一步驟中選取的色彩，可確保會備妥您即將繪製的「靶心」目標材質基底影像。 以透明黑色填滿影像，同時目標邊界為黑色時，目標周圍不會有鋸齒化成品。
@@ -64,7 +64,7 @@ ms.locfileid: "75589447"
 
 10. 確定已啟用消除鋸齒功能。 在 [屬性]**** 視窗的 [外觀]**** 屬性群組中，確定已設定 [消除鋸齒]**** 屬性。
 
-11. 使用 [橢圓形]**** 工具，繪製一個從像素座標 `(3, 3)` 到像素座標 `(508, 508)` 的圓形。 要更輕鬆地繪製圓，您可以在繪製時按住**Shift**鍵。
+11. 使用 [橢圓形]**** 工具，繪製一個從像素座標 `(3, 3)` 到像素座標 `(508, 508)` 的圓形。 若要更輕鬆地繪製圓形，您可以在繪製時按住**Shift**鍵。
 
     > [!NOTE]
     > 目前指標位置的像素座標會顯示在 Visual Studio 狀態列。
@@ -85,8 +85,8 @@ ms.locfileid: "75589447"
 
 ![完成後的「準星型」鏢靶紋理](../designers/media/gfx_image_demo_bullseye.png)
 
-下一步可以產生這個材質的 MIP 層級。 有關詳細資訊，請參閱[如何：創建和修改 MIP 級別](../designers/how-to-create-and-modify-mip-levels.md)。
+下一步可以產生這個材質的 MIP 層級。 如需相關資訊，請參閱[如何：建立和修改 MIP 層級](../designers/how-to-create-and-modify-mip-levels.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [Image Editor](../designers/image-editor.md)
+- [影像編輯器](../designers/image-editor.md)

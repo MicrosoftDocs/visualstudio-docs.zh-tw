@@ -1,7 +1,7 @@
 ---
 title: 如何：使用範圍陳述式程式碼片段 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 931ce20ee872a37b8ca7ccccc18714abc7a0e41f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bbbd283186ed31960b2f84bd862a762abae748de
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593755"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769769"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>如何：使用範圍陳述式程式碼片段
 
@@ -27,9 +27,9 @@ ms.locfileid: "75593755"
 
 1. 在**程式碼編輯器**中，選取要環繞的文字。
 
-1. **類型 Ctrl**+**K**， **Ctrl**+**S**.
+1. 輸入**ctrl** + **K**、 **ctrl** + **S**。
 
-1. 使用滑鼠從程式碼片段清單中選擇程式碼片段，或通過鍵入程式碼片段的名稱並按**Tab**或**Enter**。
+1. 使用滑鼠從程式碼片段清單中選取程式碼片段，或輸入程式碼片段的名稱，然後按**tab**或**enter**鍵。
 
 ## <a name="to-use-surround-with-code-snippets-through-the-edit-menu"></a>透過 [編輯] 功能表使用範圍陳述式程式碼片段
 
@@ -39,9 +39,9 @@ ms.locfileid: "75593755"
 
 1. 從 [編輯]**** 功能表，選取 [IntelliSense]****，然後選取 [範圍陳述式]**** 命令。
 
-1. 從程式碼片段插入器中選擇程式碼片段，然後按**Tab**或**Enter**。
+1. 從程式碼片段插入器中選取程式碼片段，然後按**tab**或**enter**。
 
-     或者，您可以鍵入程式碼片段的名稱，然後按**Tab**或**Enter**。
+     或者，您可以鍵入程式碼片段的名稱，然後按**tab**或**enter**。
 
 ## <a name="to-use-surround-with-code-snippets-through-the-context-menu"></a>透過操作功能表使用範圍陳述式程式碼片段
 
@@ -49,13 +49,13 @@ ms.locfileid: "75593755"
 
 1. 在**程式碼編輯器**中，選取要環繞的文字。
 
-1. 按右鍵所選文本，然後從內容功能表中選擇"**環繞帶"** 命令。
+1. 以滑鼠右鍵按一下選取的文字，然後從內容功能表中選取 [範圍語句 **] 命令。**
 
-1. 從程式碼片段插入器中選擇程式碼片段，然後按**Tab**或**Enter**。
+1. 從程式碼片段插入器中選取程式碼片段，然後按**tab**或**enter**。
 
-     或者，您可以鍵入程式碼片段的名稱，然後按**Tab**或**Enter**。
+     或者，您可以鍵入程式碼片段的名稱，然後按**tab**或**enter**。
 
 ## <a name="see-also"></a>另請參閱
 
-- [C# 程式碼片段](../ide/visual-csharp-code-snippets.md)
+- [C # 程式碼片段](../ide/visual-csharp-code-snippets.md)
 - [程式碼片段選擇器](../ide/reference/code-snippet-picker.md)

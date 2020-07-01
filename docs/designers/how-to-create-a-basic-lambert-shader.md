@@ -1,19 +1,19 @@
 ---
 title: 如何：建立基本 Lambert 著色器
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d78bc6e1b384f339d80e09fec81d42c1ab8ed103
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b6f9e5cf95b3766b6c6ceb93c740870a91cfc6af
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589496"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769196"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>如何：建立基本 Lambert 著色器
 
@@ -48,7 +48,7 @@ Lambert 光源模型結合環境與定向光源來為 3D 場景中的物件加�
 
 ![已套用至模型的 Lambert 光源。](../designers/media/digit-lambert-effect-result.png)
 
-有關如何將下型機應用於 3D 模型的詳細資訊，請參閱[如何：將掃描器應用於 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
+如需如何將著色器套用至3D 模型的詳細資訊，請參閱[如何：將著色器套用至3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -56,4 +56,4 @@ Lambert 光源模型結合環境與定向光源來為 3D 場景中的物件加�
 - [如何：匯出著色器](../designers/how-to-export-a-shader.md)
 - [如何：建立基本 Phong 著色器](../designers/how-to-create-a-basic-phong-shader.md)
 - [著色器設計工具](../designers/shader-designer.md)
-- [掃描器設計器節點](../designers/shader-designer-nodes.md)
+- [著色器設計工具節點](../designers/shader-designer-nodes.md)

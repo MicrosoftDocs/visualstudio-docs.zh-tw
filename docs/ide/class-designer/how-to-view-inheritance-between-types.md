@@ -1,7 +1,7 @@
 ---
 title: 如何：檢視類型之間的繼承 (類別設計工具)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.classdesigner.AssociationTypeNotFoundError
 helpviewer_keywords:
@@ -14,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47907493451841b631d561bfddb74676a460ff29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d5c35279421ad17e62afe707d62dbc879d03b384
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591771"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769899"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>如何：在類別設計工具中檢視類型之間的繼承
 
-您可以在 [類別設計工具]**** 中，尋找類別圖表上基底類型及其衍生類型之間的繼承關聯性 (如果存在的話)。 要在兩種類型之間創建繼承關係（如果不存在），請參閱[如何：在類型 之間創建繼承](how-to-create-inheritance-between-types.md)。
+您可以在 [類別設計工具]**** 中，尋找類別圖表上基底類型及其衍生類型之間的繼承關聯性 (如果存在的話)。 若要建立繼承關聯性，如果兩個類型之間不存在，請參閱[如何：建立類型之間的繼承](how-to-create-inheritance-between-types.md)。
 
 ## <a name="to-find-the-base-type"></a>尋找基底類型
 
@@ -48,4 +48,4 @@ ms.locfileid: "75591771"
 ## <a name="see-also"></a>另請參閱
 
 - [如何：建立類型之間的關聯](how-to-create-associations-between-types.md)
-- [查看類型和關係](designing-and-viewing-classes-and-types.md)
+- [檢視類型和關聯性](designing-and-viewing-classes-and-types.md)

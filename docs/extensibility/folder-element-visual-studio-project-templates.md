@@ -1,8 +1,8 @@
 ---
-title: 資料夾元素(可視化工作室專案範本) |微軟文件
+title: Folder 元素（Visual Studio 專案範本） |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
 helpviewer_keywords:
@@ -13,17 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb256b8be0dd9ce68f193750bf3ff5a383d5f073
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80711458"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769582"
 ---
-# <a name="folder-element-visual-studio-project-templates"></a>資料夾元素(視覺化工作室專案樣本)
-指定將新增到項目的資料夾。
+# <a name="folder-element-visual-studio-project-templates"></a>Folder 元素（Visual Studio 專案範本）
+指定將加入至專案的資料夾。
 
- \<樣本>\<範本內容>\<專案>\<資料夾>
+ \<VSTemplate> \<TemplateContent>
+ \<Project>
+ \<Folder>
 
 ## <a name="syntax"></a>語法
 
@@ -41,28 +43,28 @@ ms.locfileid: "80711458"
 
 |屬性|描述|
 |---------------|-----------------|
-|`Name`|必要屬性。<br /><br /> 項目資料夾的名稱。|
-|`TargetFolderName`|選擇性屬性。<br /><br /> 指定從範本建立專案時要為資料夾提供的名稱。 此屬性可用於使用參數替換創建資料夾名稱或使用無法直接在 *.zip*檔案中直接使用的國際字串命名資料夾。|
+|`Name`|必要屬性。<br /><br /> 專案資料夾的名稱。|
+|`TargetFolderName`|選擇性屬性。<br /><br /> 指定從範本建立專案時，要提供資料夾的名稱。 此屬性適用于使用參數取代來建立資料夾名稱，或以不能直接在 *.zip*檔案中使用的國際字串來命名資料夾。|
 
 ### <a name="child-elements"></a>子元素
 
 |元素|描述|
 |-------------|-----------------|
-|`Folder`|指定要新增到項目的資料夾。 `Folder`元素可以包含子`Folder`元素。|
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|指定要加入項目的檔案。|
+|`Folder`|指定要加入至專案的資料夾。 `Folder`元素可以包含子 `Folder` 元素。|
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|指定要加入至專案的檔案。|
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|描述|
 |-------------|-----------------|
-|[專案](../extensibility/project-element-visual-studio-templates.md)|[樣本內容](../extensibility/templatecontent-element-visual-studio-templates.md)的選擇子元素 。|
+|[專案](../extensibility/project-element-visual-studio-templates.md)|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)的選擇性子項目。|
 
 ## <a name="remarks"></a>備註
- `Folder`是`Project`的可選子項。
+ `Folder`是的選擇性子系 `Project` 。
 
- 可以使用以下任一方法將項目項目組織到樣本中的資料夾中:
+ 您可以使用下列任何方法，將專案專案組織成範本中的資料夾：
 
-- 將資料夾包含在範本 *.zip*檔中,並`ProjectItem`透過在元素中指定檔案路徑`Folder`(沒有元素)將它們添加到 *.vstemplate*檔案中的專案。 這是建議的方法。 例如：
+- 在範本 *.zip*檔案中包含資料夾，並藉由在元素中指定檔案的路徑 *.vstemplate* `ProjectItem` ，而不含任何元素，將它們加入至 .vstemplate 檔案中的專案 `Folder` 。 這是建議的方法。 例如：
 
      `...`
 
@@ -72,7 +74,7 @@ ms.locfileid: "80711458"
 
      `...`
 
-- 將資料夾包含在範本 *.zip*檔中,並將它們添加`Folder`到包含元素的 *.vstemplate*檔中的專案。 例如：
+- 在範本 *.zip*檔案中包含資料夾，並將其新增至 *.vstemplate*檔案中具有元素的專案 `Folder` 。 例如：
 
      `...`
 
@@ -86,7 +88,7 @@ ms.locfileid: "80711458"
 
      `...`
 
-- 不要在範本 *.zip*檔中包含資料夾,`TargetFileName``ProjectItem`而是使用 元素的屬性添加資料夾。 例如：
+- 請勿在範本 *.zip*檔案中包含資料夾，但使用專案的 `TargetFileName` 屬性來新增資料夾 `ProjectItem` 。 例如：
 
      `...`
 
@@ -97,7 +99,7 @@ ms.locfileid: "80711458"
      `...`
 
 ## <a name="example"></a>範例
- 下面的範例展示[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 應用程式的專案樣本的中繼資料。
+ 下列範例說明適用于 Windows 應用程式之專案範本的中繼資料 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -126,6 +128,6 @@ ms.locfileid: "80711458"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
-- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [建立專案和專案範本](../ide/creating-project-and-item-templates.md)
 - [ProjectItem 項目 (Visual Studio 項目範本)](../extensibility/projectitem-element-visual-studio-item-templates.md)

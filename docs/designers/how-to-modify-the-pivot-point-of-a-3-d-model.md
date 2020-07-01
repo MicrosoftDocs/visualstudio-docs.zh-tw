@@ -1,19 +1,19 @@
 ---
 title: 如何：修改 3D 模型的樞紐點
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 114beda700359eb5cdbfd4db12c18e442b8894f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c9f79f8f5a39a8721e433207f2fbb17fd85a1150
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589938"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768835"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>如何：修改 3D 模型的樞紐點
 
@@ -25,7 +25,7 @@ ms.locfileid: "75589938"
 
 請確定已顯示 [屬性]**** 視窗和 [工具箱]****。
 
-1. 從現有的 3D 模型開始，例如["如何創建基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)"中描述的模型。
+1. 從現有的3D 模型開始，例如[如何：建立基本3d 模型](../designers/how-to-create-a-basic-3-d-model.md)中所述。
 
 2. 進入樞紐分析模式。 在 [模型編輯器模式]**** 工具列上，選擇 [樞紐分析表模式]**** 按鈕以啟動樞紐分析表模式。 出現在 [樞紐分析表模式]**** 按鈕附近的方塊，指出 [模型編輯器] 現在處於樞紐分析表模式。 在樞紐分析表模式中，像是平移的作業會影響物件的樞紐分析點，而不是世界空間中的物件結構。
 
@@ -44,5 +44,5 @@ ms.locfileid: "75589938"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：創建基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)
+- [如何：建立基本3D 模型](../designers/how-to-create-a-basic-3-d-model.md)
 - [模型編輯器](../designers/model-editor.md)

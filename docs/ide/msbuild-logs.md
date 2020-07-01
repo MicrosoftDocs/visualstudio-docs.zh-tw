@@ -2,7 +2,7 @@
 title: 疑難排解及建立 MSBuild 問題的記錄檔
 ms.date: 06/27/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - msbuild logs"
 author: corob-msft
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 07b2c5e941d31ab1be853f9a89af94462329bdf2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ae91f7b9c90f0b06c449d26f67fe4fcc3434518e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278805"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768700"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>疑難排解及建立 MSBuild 問題的記錄檔
 
@@ -69,7 +69,7 @@ ms.locfileid: "77278805"
 
 ## <a name="incremental-build-is-building-more-than-it-should"></a>建置超過應有的累加組建
 
-如果 MSBuild 非必要地重建專案或專案項目，請建立詳細或二進位的組建記錄檔。 您可以在記錄檔中搜尋非必要建置或編譯的檔案。 輸出會與下列內容類似：
+如果 MSBuild 非必要地重建專案或專案項目，請建立詳細或二進位的組建記錄檔。 您可以在記錄檔中搜尋非必要建置或編譯的檔案。 輸出看起來會像這樣：
 
 ```output
   Task "CL"
@@ -116,8 +116,8 @@ Msbuild.binlog 檔案會建立在您執行 MSBuild 的目錄中。 您可以使�
 
 ## <a name="create-a-detailed-log"></a>建立詳細的記錄檔
 
-1. 從 Visual Studio 主功能表轉到**工具** > **選項** > **專案和解決方案** >**生成和運行**。
-1. 兩個下拉式方塊中的 [Msbuild project build verbosity] \(MSBuild 專案組建詳細資料\)**** 都設為 [詳細]****。 第一個控制 [輸出視窗]**** 中的建置詳細資料，第二個控制 \<專案名稱\>.log 檔案中的組建詳細資料，此記錄檔是在建置期間在每個專案的中繼目錄中建立的。
+1. 從 Visual Studio 主功能表中，移至 [**工具**] [選項] [  >  **Options**  >  **專案和方案**] [  > **建立並執行**]。
+1. 兩個下拉式方塊中的 [Msbuild project build verbosity] \(MSBuild 專案組建詳細資料\)**** 都設為 [詳細]****。 前一個控制項**輸出視窗**中的組建詳細資訊，第二個控制項會控制在 \<projectname\> 組建期間于每個專案的中繼目錄中建立的記錄檔中的組建詳細資訊。
 2. 在 Visual Studio 開發人員命令提示字元中，輸入下列任一命令，替換實際的路徑和組態值：
 
     ```cmd

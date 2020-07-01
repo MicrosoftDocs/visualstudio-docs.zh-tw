@@ -1,19 +1,19 @@
 ---
 title: 如何：建立基本 3D 模型
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce16e436172a7d369f2df8342f6b027b574056ab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dbd0b2a092e47eab053d4150fd2139fb0dbdf6ea
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589522"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769266"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>如何：建立基本 3D 模型
 
@@ -58,7 +58,7 @@ ms.locfileid: "75589522"
 
     ![進一步將立方體的其中一邊立體化。](../designers/media/gfx_model_demo_house_extend.png)
 
-7. 將模型分成三角形。 在模型編輯器工具列上，選擇**高級** > **工具** > **三角。**
+7. 將模型分成三角形。 在 [模型編輯器] 工具列上，選擇 [ **Advanced**  >  **Tools**  >  **分成三角形**]。
 
 8. 建立房屋的屋頂。 在 [模型編輯器] 工具列上，選擇 [選取邊緣]****，然後選取立方體來加以啟動，切換至邊緣選取模式。 按住 **Ctrl** 鍵，並選取如下所示的邊緣︰
 
@@ -70,10 +70,10 @@ ms.locfileid: "75589522"
 
    ![精簡化房屋完成後的模型](../designers/media/gfx_model_demo_house_final.png)
 
-   下一步可以將著色器套用至這個 3D 模型。 有關詳細資訊，請參閱[如何：將下用圖器應用於 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
+   下一步可以將著色器套用至這個 3D 模型。 如需相關資訊，請參閱[如何：將著色器套用至3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：模型 3D 地形](../designers/how-to-model-3-d-terrain.md)
+- [如何：建立3D 地形模型](../designers/how-to-model-3-d-terrain.md)
 - [模型編輯器](../designers/model-editor.md)
-- [沙德爾設計師](../designers/shader-designer.md)
+- [著色器設計工具](../designers/shader-designer.md)

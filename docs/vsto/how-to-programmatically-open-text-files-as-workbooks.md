@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式將文字檔開啟為活頁簿
+title: 如何：以程式設計方式將文字檔開啟為活頁簿
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a0f1b384aafb491183a750f17653ab55f2003e2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812452"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519823"
 ---
-# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>HOW TO：以程式設計方式將文字檔開啟為活頁簿
-  您可以開啟文字檔案，為活頁簿。 您必須傳遞您想要開啟的文字檔案的名稱。 您可以指定數個選擇性參數的詳細資訊，例如若要開始剖析，以及檔案中資料的資料行格式的資料列編號。
+# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>如何：以程式設計方式將文字檔開啟為活頁簿
+  您可以將文字檔開啟為活頁簿。 您必須傳入要開啟之文字檔的名稱。 您可以指定數個選擇性參數，例如要開始剖析的資料列編號，以及檔案中的資料行格式。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -33,9 +33,9 @@ ms.locfileid: "62812452"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要下列元件：
 
-- 以逗號分隔的文字檔案，名為`Test.txt`包含至少三行文字。
+- 名為的逗點分隔文字檔 `Test.txt` ，其中至少包含三行文字。
 
-- 文字檔`Test.txt`儲存在磁碟機 c。
+- `Test.txt`要儲存在 C 磁片磁碟機上的文字檔。
 
 ## <a name="see-also"></a>另請參閱
 - [使用活頁簿](../vsto/working-with-workbooks.md)

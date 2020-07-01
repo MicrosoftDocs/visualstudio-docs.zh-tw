@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式開啟 Visio 文件
+title: 如何：以程式設計方式開啟 Visio 檔
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b863040bcceb4e86aae7ed4efd83c2466eec12c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb21d201c282461cbe82005f56bed023bb022209
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812247"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519986"
 ---
-# <a name="how-to-programmatically-open-visio-documents"></a>HOW TO：以程式設計方式開啟 Visio 文件
-  有兩種方法來開啟現有的 Microsoft Office Visio 文件：開啟和 OpenEx。 OpenEx 方法等同於開放式的方法，不同之處在於它會提供在其中呼叫端可以指定如何在文件開啟時的引數。
+# <a name="how-to-programmatically-open-visio-documents"></a>如何：以程式設計方式開啟 Visio 檔
+  有兩種方法可以開啟現有的 Microsoft Office Visio 檔：開啟和 Microsoft.office.interop.visio.documents.open。 Microsoft.office.interop.visio.documents.open 方法與 Open 方法完全相同，不同之處在于它會提供引數，供呼叫者指定檔開啟的方式。
 
  如需此物件模型的詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) 方法和 [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) 方法的 VBA 參考文件。
 
-## <a name="open-a-visio-document"></a>開啟 Visio 文件
+## <a name="open-a-visio-document"></a>開啟 Visio 檔
 
 ### <a name="to-open-a-visio-document"></a>開啟 Visio 文件
 
@@ -34,7 +34,7 @@ ms.locfileid: "62812247"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#5)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#5)]
 
-## <a name="open-a-visio-document-with-specified-arguments"></a>使用指定的引數開啟 Visio 文件
+## <a name="open-a-visio-document-with-specified-arguments"></a>使用指定的引數開啟 Visio 檔
 
 ### <a name="to-open-a-visio-document-as-read-only-and-docked"></a>開啟 Visio 文件為唯讀並停駐
 
@@ -44,14 +44,14 @@ ms.locfileid: "62812247"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#6)]
 
 ## <a name="compile-the-code"></a>編譯程式碼
- 這個程式碼範例需要下列項目：
+ 這段程式碼範例需要下列項目：
 
-- 名為 Visio 文件`myDrawing.vsd`必須位於名為`Test`中*我的文件*資料夾 （適用於 Windows XP 及更早版本） 或*文件*（適用於 Windows Vista) 的資料夾。
+- 名為的 Visio 檔 `myDrawing.vsd` 必須位於 `Test` [*我的文件*] 資料夾（windows XP 及更早版本）或 [*檔*] 資料夾（windows Vista）中名為的目錄中。
 
 ## <a name="see-also"></a>另請參閱
-- [Visio 方案](../vsto/visio-solutions.md)
-- [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)
-- [如何：以程式設計方式建立新的 Visio 文件](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [如何：以程式設計方式關閉 Visio 文件](../vsto/how-to-programmatically-close-visio-documents.md)
-- [如何：以程式設計方式儲存 Visio 文件](../vsto/how-to-programmatically-save-visio-documents.md)
-- [如何：以程式設計方式列印 Visio 文件](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Visio 解決方案](../vsto/visio-solutions.md)
+- [Visio 物件模型總覽](../vsto/visio-object-model-overview.md)
+- [如何：以程式設計方式建立新的 Visio 檔](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [如何：以程式設計方式關閉 Visio 檔](../vsto/how-to-programmatically-close-visio-documents.md)
+- [如何：以程式設計方式儲存 Visio 檔](../vsto/how-to-programmatically-save-visio-documents.md)
+- [如何：以程式設計方式列印 Visio 檔](../vsto/how-to-programmatically-print-visio-documents.md)

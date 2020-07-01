@@ -2,7 +2,7 @@
 title: 重構 Python 程式碼
 description: Visual Studio 可藉由重新命名識別碼、擷取方法、新增匯入及移除未使用的匯入，輕鬆地重構 Python 程式碼。
 ms.date: 03/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: db1a551e20c597f98052471910bcb696c878675f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ea735dd5cc3da8d5509961dbc8b27eb6106fd2af
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62429818"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520558"
 ---
 # <a name="refactor-python-code"></a>重構 Python 程式碼
 
@@ -42,7 +42,7 @@ Visual Studio 提供數個可自動轉換和清除 Python 原始程式碼的命�
 ## <a name="extract-method"></a>擷取方法
 
 1. 選取要擷取到另一個方法的程式碼或運算式。
-2. 選擇 **"編輯** > **重構** > **提取"方法**功能表命令或鍵入**Ctrl**+**R** > **M**。
+2. 選取 [**編輯**  >  **重構**  >  **解壓縮方法**] 功能表命令，或輸入**Ctrl** + **R**  >  **M**。
 3. 在出現的對話方塊中，輸入新的方法名稱，指定將它擷取到何處，並選取所有結束變數。 未選取要結束的變數會轉變成方法引數︰
 
    ![[擷取方法] 對話方塊](media/code-refactor-extract-method-1.png)

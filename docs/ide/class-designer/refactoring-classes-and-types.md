@@ -1,7 +1,7 @@
 ---
 title: 在類別設計工具中將類別與類型重新命名和移動
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
 helpviewer_keywords:
@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e060f044af666f5a4357e527819286d3bd87267
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: baf0e9d9d0f4bb45ef965f64c256bd9360af112b
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590744"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768604"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>在類別設計工具中將類別與類型重構
 
@@ -39,11 +39,11 @@ ms.locfileid: "75590744"
 |----------| - |
 |**重構類別：** 您可以使用重構作業來將一個類別分割成部分類別，或是實作抽象基底類別。|-   [如何：將類別分割成部分類別](how-to-split-a-class-into-partial-classes.md)|
 |**使用介面：** 在類別設計工具中，您可以將介面連接至替介面方法提供程式碼的類別，以在類別圖表上實作介面。|-   [如何：實作介面](how-to-implement-an-interface.md)|
-|**重構類型、類型成員與參數：** 使用類別設計工具，即可重新命名類型、覆寫類型成員，或將其從某類型移至另一類型。 您也可以建立可為 Null 的類型。|-   [重命名類型和類型成員](#rename-types-and-type-members)<br />-   [將類型成員從一種類型移動到另一種類型](#move-type-members-from-one-type-to-another)<br />-   [如何：建立可為 Null 的類型](how-to-create-a-nullable-type.md)|
+|**重構類型、類型成員與參數：** 使用類別設計工具，即可重新命名類型、覆寫類型成員，或將其從某類型移至另一類型。 您也可以建立可為 Null 的類型。|-   [重新命名類型和類型成員](#rename-types-and-type-members)<br />-   [將類型成員從一個類型移到另一個](#move-type-members-from-one-type-to-another)<br />-   [如何：建立可為 Null 的類型](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>重新命名類型和類型成員
 
-在類設計器中，可以在類別圖表或 **"屬性"** 視窗中重命名類型或類型的成員。 在 **"類詳細資訊"** 視窗中，可以更改成員的名稱，但不能更改類型。 重新命名類型或類型成員會傳播至舊名稱曾出現的所有視窗和程式碼位置。
+在類別設計工具中，您可以在類別圖表上或在 [**屬性**] 視窗中重新命名類型或類型的成員。 在 [**類別細節**] 視窗中，您可以變更成員的名稱，而不是類型。 重新命名類型或類型成員會傳播至舊名稱曾出現的所有視窗和程式碼位置。
 
 ### <a name="rename-in-the-class-designer"></a>類別設計工具中的重新命名
 
@@ -57,20 +57,20 @@ ms.locfileid: "75590744"
 
 1. 若要顯示 [類別細節]**** 視窗，請用滑鼠右鍵按一下類型或類型成員，然後選取 [類別細節]****。
 
-     將顯示 **"類詳細資訊"** 視窗。
+     [**類別細節**] 視窗隨即出現。
 
 2. 在 [名稱] **** 欄中，變更類型成員的名稱
 
-3. 要將焦點移離儲存格，請按**Enter**鍵或按一下遠離儲存格。
+3. 若要將焦點從儲存格移開，請按**enter**鍵，或在儲存格以外的地方按一下。
 
     > [!NOTE]
-    > 在 **"類詳細資訊"** 視窗中，可以更改成員的名稱，但不能更改類型。
+    > 在 [**類別細節**] 視窗中，您可以變更成員的名稱，而不是類型。
 
 ### <a name="rename-in-the-properties-window"></a>屬性視窗中的重新命名
 
 1. 在類別圖表或 [類別細節]**** 視窗中，用滑鼠右鍵按一下類型或成員，然後選取 [屬性]****。
 
-     "**屬性"** 視窗將顯示並顯示類型或類型成員的屬性。
+     [**屬性**] 視窗隨即出現，並顯示類型或類型成員的屬性。
 
 2. 在 [名稱] **** 屬性中，變更類型或類型成員的名稱。
 

@@ -1,19 +1,19 @@
 ---
 title: 如何：建立基本 Phong 著色器
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3059048f44524b9a838a8dfefc948ec4018dd05
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 718607d74be1a74a799f8de9f4883e1df9fb7ef5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589483"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769189"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>如何：建立基本 Phong 著色器
 
@@ -46,7 +46,7 @@ Phong 光源模型擴充 Lambert 光源模型以納入反射強光，模擬表�
 
 ![著色器圖形及其效果預覽](../designers/media/digit-lighting-graph.png)
 
-某些圖形可對一些著色器提供更佳的預覽。 有關如何在"掃描器設計器"中預覽焊工的詳細資訊，請參閱["掃描器設計器"](../designers/shader-designer.md)中的預覽掃描器部分
+某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計](../designers/shader-designer.md)工具中的預覽著色器區段
 
 下圖顯示本文件中所述套用至 3D 模型的著色器。 將 **MaterialSpecular** 屬性設定為 (1.00, 0.50, 0.20, 0.00)，並將其 **MaterialSpecularPower** 屬性設定為 16。
 
@@ -61,8 +61,8 @@ Phong 光源模型擴充 Lambert 光源模型以納入反射強光，模擬表�
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：將下型機應用於 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [如何：匯出掃描器](../designers/how-to-export-a-shader.md)
-- [如何：創建一個基本的蘭伯特底帶器](../designers/how-to-create-a-basic-lambert-shader.md)
+- [如何：將著色器套用至3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [如何：匯出著色器](../designers/how-to-export-a-shader.md)
+- [如何：建立基本 Lambert 著色器](../designers/how-to-create-a-basic-lambert-shader.md)
 - [著色器設計工具](../designers/shader-designer.md)
 - [著色器設計工具節點](../designers/shader-designer-nodes.md)

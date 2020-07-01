@@ -1,19 +1,19 @@
 ---
 title: 如何：變更圖形診斷播放電腦 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a41caf3f866c4a21d0a44fc69932066b2b7d923
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4f057e2e4f9d39fd3c5d985b3f0d19751d508614
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735055"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769380"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：變更圖形診斷播放電腦
 您可以使用本機電腦或使用遠端電腦或裝置來播放圖形資訊。
@@ -25,11 +25,11 @@ ms.locfileid: "72735055"
 
 1. 在 [圖形記錄檔] 視窗中，選擇 [**播放電腦**] 連結。 [**遠端偵錯程式連接**] 對話方塊隨即出現。
 
-2. 在 [**手動**設定] 下的 [**位址**] 屬性中，輸入 `localhost`。
+2. 在 [**手動**設定] 下的 [**位址**] 屬性中，輸入 `localhost` 。
 
 3. 將 [**驗證模式]** 屬性設定為 [**無**]。
 
-4. 選擇 [選取] 按鈕。
+4. 選擇 [選取]**** 按鈕。
 
 #### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>使用遠端電腦播放圖形資訊
 
@@ -43,10 +43,10 @@ ms.locfileid: "72735055"
 
     - 若不進行驗證，請將 [**驗證模式]** 屬性設定為 [**無**]。
 
-4. 選擇 [選取] 按鈕。
+4. 選擇 [選取]**** 按鈕。
 
 > [!NOTE]
 > [**遠端偵錯程式連接**] 對話方塊也可能會顯示直接連接到您的開發電腦或位於相同子網上的遠端偵錯程式目標。 您可以使用其中一個遠端偵錯的目標，做為圖形診斷播放電腦，而不需要手動設定。 在 [**遠端偵錯程式連接**] 對話方塊中，選取您要的目標，然後選擇 [**選取**] 按鈕。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [圖形記錄文件](graphics-log-document.md)

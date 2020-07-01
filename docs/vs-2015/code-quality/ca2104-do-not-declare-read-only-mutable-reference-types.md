@@ -15,30 +15,30 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fd81f9ea250cd1592f755a2aa6cb3ca09280a533
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ff42cc2b8543fe8e1cf980a3574ae15922febf9b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666047"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521039"
 ---
-# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104：不要宣告唯讀的可變動參考類型
+# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104:不要宣告唯讀的可變動參考類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DoNotDeclareReadOnlyMutableReferenceTypes|
 |CheckId|CA2104|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
  外部可見類型包含了可變動參考類型的外部可見唯讀欄位。
 
 ## <a name="rule-description"></a>規則描述
- 可變動類型是可以修改執行個體資料的類型。 @No__t_0 類別是可變參考型別的範例。 它包含可以變更類別實例值的成員。 不可變參考型別的範例為 <xref:System.String?displayProperty=fullName> 類別。 在具現化之後，其值永遠不會變更。
+ 可變動類型是可以修改執行個體資料的類型。 <xref:System.Text.StringBuilder?displayProperty=fullName>類別是可變參考型別的範例。 它包含可以變更類別實例值的成員。 類別是不可變參考型別的範例 <xref:System.String?displayProperty=fullName> 。 在具現化之後，其值永遠不會變更。
 
- 參考型別欄位（中C++的指標） C#上的唯讀修飾詞（[readonly](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) in C++、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中的[readonly](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8)和[const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) ）可防止欄位被參考型別的不同實例所取代。 不過，修飾詞不會防止欄位的實例資料透過參考型別進行修改。
+ 參考型別字段（c # 中的 readonly）的唯讀修飾[詞（在](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4)c # 中為 readonly，在 c + + 中為[readonly](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) ） [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 會防止欄位被參考型別的不同實例所取代。 [const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) 不過，修飾詞不會防止欄位的實例資料透過參考型別進行修改。
 
  唯讀陣列欄位不受此規則的規範，而是會造成 CA2105 的違規[：陣列欄位不應為唯讀](../code-quality/ca2105-array-fields-should-not-be-read-only.md)規則。
 

@@ -10,63 +10,63 @@ helpviewer_keywords:
 - performance
 - low-memory
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8480eb57a08905c2a593adbab519ae793638888
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79431237"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769487"
 ---
 # <a name="automatic-feature-suspension"></a>自動功能暫停
 
-如果可用的系統記憶體降至 200 MB 或更少，Visual Studio 會在代碼編輯器中顯示以下消息：
+如果可用的系統記憶體低於 200 MB 或更少，Visual Studio 會在程式碼編輯器中顯示下列訊息：
 
-![警報文本暫停完整的解決方案分析](../code-quality/media/fsa_alert.png)
+![暫停完整解決方案分析的警示文字](../code-quality/media/fsa_alert.png)
 
-當 Visual Studio 檢測到記憶體不足時，它會自動掛起某些高級功能，以説明其保持穩定。 Visual Studio 繼續像以前那樣工作，但其性能下降。
+當 Visual Studio 偵測到記憶體不足的狀況時，它會自動暫停特定的「先進的功能」，協助它保持穩定。 Visual Studio 會繼續如之前一樣運作，但其效能已降低。
 
-在記憶體不足的情況下，將執行以下操作：
+在記憶體不足的情況下，會發生下列動作：
 
-- Visual C++ 和視覺化基本的即時代碼分析被縮小到最小範圍。
+- Visual c # 和 Visual Basic 的即時程式碼分析會縮減為最小範圍。
 
-- 禁用了 Visual C++ 和視覺化基本版的[垃圾回收](/dotnet/standard/garbage-collection/index)（GC） 低延遲模式。
+- Visual c # 和 Visual Basic 的[垃圾收集](/dotnet/standard/garbage-collection/index)（GC）低延遲模式已停用。
 
-- 視覺化工作室緩存被刷新。
+- Visual Studio 快取會排清。
 
-## <a name="improve-visual-studio-performance"></a>提高視覺工作室性能
+## <a name="improve-visual-studio-performance"></a>改善 Visual Studio 效能
 
-有關在處理大型解決方案或記憶體不足條件時如何提高 Visual Studio 性能的提示和技巧，請參閱[大型解決方案的性能注意事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)。
+如需如何在處理大型解決方案或記憶體不足的情況下改善 Visual Studio 效能的秘訣和訣竅，請參閱[大型解決方案的效能考慮](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)。
 
-## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>即時代碼分析減少到最小範圍
+## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>即時程式碼分析縮減為最小範圍
 
-預設情況下，對打開的文檔和專案執行即時代碼分析。 您可以自訂此分析範圍以簡化為當前文檔或增加到整個解決方案。 有關詳細資訊，請參閱[如何：為託管代碼配置即時代碼分析範圍](./configure-live-code-analysis-scope-managed-code.md)。 在記憶體不足的情況下，Visual Studio 強制將即時分析範圍縮減為當前文檔。 但是，您可以通過在資訊列中選擇"在資訊列中**重新啟用**"按鈕時重新啟用該按鈕或重新開機 Visual Studio 來重新啟用首選分析範圍。 "選項"對話方塊始終顯示當前即時代碼分析範圍設置。
+根據預設，即時程式碼分析會針對開啟的檔和專案執行。 您可以自訂此分析範圍，使其縮減為目前的檔或增加至整個解決方案。 如需詳細資訊，請參閱[如何：設定受控碼的即時程式碼分析範圍](./configure-live-code-analysis-scope-managed-code.md)。 在記憶體不足的情況下，Visual Studio 強制將即時分析範圍縮減為目前的檔。 不過，您可以在顯示的資訊列中選擇 [**重新啟用**] 按鈕，或重新開機 Visual Studio，以重新啟用慣用的分析範圍。 [選項] 對話方塊一律會顯示目前的即時程式碼分析範圍設定。
 
-## <a name="gc-low-latency-disabled"></a>禁用 GC 低延遲
+## <a name="gc-low-latency-disabled"></a>停用 GC 低延遲
 
-要重新啟用 GC 低延遲模式，請重新開機 Visual Studio。 預設情況下，視覺化工作室在鍵入時啟用 GC 低延遲模式，以確保鍵入不會阻止任何 GC 操作。 但是，如果記憶體不足導致 Visual Studio 顯示自動掛起警告，則該會話將禁用 GC 低延遲模式。 重新開機視覺化工作室可重新啟用預設 GC 行為。 如需詳細資訊，請參閱 <xref:System.Runtime.GCLatencyMode>。
+若要重新啟用 GC 低延遲模式，請重新開機 Visual Studio。 根據預設，每當您輸入時，Visual Studio 都會啟用 GC 低延遲模式，以確保您的輸入不會封鎖任何 GC 作業。 不過，如果記憶體不足的狀況導致 Visual Studio 顯示自動暫停警告，則會停用該會話的 GC 低延遲模式。 重新開機 Visual Studio 重新啟用預設的 GC 行為。 如需詳細資訊，請參閱 <xref:System.Runtime.GCLatencyMode> 。
 
-## <a name="visual-studio-caches-flushed"></a>視覺化工作室緩存已刷新
+## <a name="visual-studio-caches-flushed"></a>已排清 Visual Studio 快取
 
-如果繼續當前開發會話或重新開機 Visual Studio，則所有 Visual Studio 緩存將立即清空，但開始重新填充。 刷新的緩存包括以下功能的緩存：
+如果您繼續目前的開發會話或重新開機 Visual Studio，所有 Visual Studio 快取都會立即清空，但會開始重新擴展。 已排清的快取包含下列功能的快取：
 
 - 尋找所有參考
 
 - 巡覽至
 
-- 使用添加
+- 新增使用
 
-此外，還清除了用於內部視覺化工作室操作的緩存。
+此外，也會清除用於內部 Visual Studio 作業的快取。
 
 > [!NOTE]
-> 自動功能掛起警告僅按每個解決方案發生一次，而不是基於每個會話。 這意味著，如果您從 Visual Basic 切換到 Visual C++（反之亦然），並遇到另一個記憶體不足的情況，則可能會收到另一個自動功能掛起警告。
+> 自動功能暫止警告只會針對每個解決方案執行一次，而不會以每個會話為基礎。 這表示如果您從 Visual Basic 切換至 Visual c # （或相反），並遇到另一個記憶體不足的狀況，您可能會收到另一個自動功能擱置警告。
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：為託管代碼配置即時代碼分析範圍](./configure-live-code-analysis-scope-managed-code.md)
+- [如何：設定受控碼的即時程式碼分析範圍](./configure-live-code-analysis-scope-managed-code.md)
 - [Fundamentals of Garbage Collection (記憶體回收的基本概念)](/dotnet/standard/garbage-collection/fundamentals)
-- [大型解決方案的性能注意事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [大型解決方案的效能考慮](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

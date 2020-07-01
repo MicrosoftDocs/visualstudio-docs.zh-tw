@@ -1,7 +1,7 @@
 ---
 title: 影像庫
 ms.date: 11/04/2016
-ms.topic: sample
+ms.topic: conceptual
 helpviewer_keywords:
 - animation [Visual Studio]
 - graphics [Visual Studio], Image Library
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2599238e18415fb494d3d72fdf24305d7ba1b0b4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 88dc33f4dcc8edf0b7793a726a0b626360b9edb1
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75589899"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768666"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 影像庫
 
@@ -33,5 +33,5 @@ Visual Studio 映像庫包含出現在 Microsoft Visual Studio、Microsoft Windo
 
 ## <a name="see-also"></a>另請參閱
 
-- [安裝視覺化工作室](../install/install-visual-studio.md)
-- [圖像、點陣圖和中繼檔](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)
+- [安裝 Visual Studio](../install/install-visual-studio.md)
+- [影像、點陣圖和中繼檔](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

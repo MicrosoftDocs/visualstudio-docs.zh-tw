@@ -6,4 +6,4 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68144286"
 ---
-  **適用於：** 本主題資訊適用於文件\-Excel 和 Word 的層級專案。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../../vsto/features-available-by-office-application-and-project-type.md)。
+  **** 適用對象：\-本主題資訊適用於 Excel 及 Word 的文件層級專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../../vsto/features-available-by-office-application-and-project-type.md)。

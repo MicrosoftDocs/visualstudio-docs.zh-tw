@@ -3,17 +3,17 @@ title: 常數節點
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86fd5a9b2d179a27ec0cf34f5388b30ebb563ad4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6868a5dc7cbace1d061c43cd507d32c271436a26
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72637350"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769302"
 ---
 # <a name="constant-nodes"></a>常數節點
 
@@ -31,7 +31,7 @@ ms.locfileid: "72637350"
 |----------|-------------|----------------|
 |**觀景窗向量**|從目前像素擴充至世界空間之觀景窗的向量。<br /><br /> 您可以用這個來計算世界空間中的反射。<br /><br /> **輸出**<br /><br /> `Output`: `float3`<br /> 從目前像素到觀景窗的向量。|None|
 |**色彩常數**|色彩常數值。<br /><br /> **輸出**<br /><br /> `Output`: `float4`<br /> 色彩值。|**輸出**<br /> 色彩值。|
-|**不斷**|純量常數值。<br /><br /> **輸出**<br /><br /> `Output`: `float`<br /> 純量值。|**輸出**<br /> 純量值。|
+|**常數**|純量常數值。<br /><br /> **輸出**<br /><br /> `Output`: `float`<br /> 純量值。|**輸出**<br /> 純量值。|
 |**2D 常數**|兩分量向量常數。<br /><br /> **輸出**<br /><br /> `Output`: `float2`<br /> 向量值。|**輸出**<br /> 向量值。|
 |**3D 常數**|三分量向量常數。<br /><br /> **輸出**<br /><br /> `Output`: `float3`<br /> 向量值。|**輸出**<br /> 向量值。|
 |**4D 常數**|四分量向量常數。<br /><br /> **輸出**<br /><br /> `Output`: `float4`<br /> 色彩值。|**輸出**<br /> 向量值。|
@@ -44,4 +44,4 @@ ms.locfileid: "72637350"
 |**正切空間觀景窗向量**|從目前像素擴充至正切函數空間之觀景窗的向量。<br /><br /> 您可以用這個來計算正切函數空間中的反射。<br /><br /> **輸出**<br /><br /> `Output`: `float3`<br /> 從目前像素到觀景窗的向量。|None|
 |**正切空間光方向**|定義目前像素的正切函數空間中光源投射方向的向量。<br /><br /> 您可以用這個向量來計算正切函數空間中的光線和反射比重。<br /><br /> **輸出：**<br /><br /> `Output`: `float3`<br /> 從目前像素到光源的向量。|None|
 |**世界空間法線**|世界空間中目前像素的曲面法線。<br /><br /> 您可以用這個來計算世界空間中的光源比重和反射。<br /><br /> **輸出**<br /><br /> `Output`: `float3`<br /> 目前像素的曲面法線。|None|
-|**世界空間位置**|世界空間中目前像素的位置。<br /><br /> **輸出**<br /><br /> `Output`: `float4`<br /> 目前像素的位置。|None|
+|**世界空間位置**|世界空間中目前像素的位置。<br /><br /> **輸出**<br /><br /> `Output`: `float4`<br /> 目前像素的位置。|無|

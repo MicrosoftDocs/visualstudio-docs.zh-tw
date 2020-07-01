@@ -1,19 +1,19 @@
 ---
 title: 如何：建立以幾何為基礎的漸層著色器
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96326910a04294e30c410cc96bf9c600bfb3f17c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1e10fd5266ba39febe6261f41437c10c19b5c82f
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589446"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769102"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>如何：建立以幾何為基礎的漸層著色器
 
@@ -60,9 +60,9 @@ ms.locfileid: "75589446"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：將下型機應用於 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [如何：匯出掃描器](../designers/how-to-export-a-shader.md)
-- [如何：模型 3D 地形](../designers/how-to-model-3-d-terrain.md)
-- [如何：創建灰度紋理掃描器](../designers/how-to-create-a-grayscale-texture-shader.md)
+- [如何：將著色器套用至3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [如何：匯出著色器](../designers/how-to-export-a-shader.md)
+- [如何：建立3D 地形模型](../designers/how-to-model-3-d-terrain.md)
+- [如何：建立灰階材質著色器](../designers/how-to-create-a-grayscale-texture-shader.md)
 - [著色器設計工具](../designers/shader-designer.md)
 - [著色器設計工具節點](../designers/shader-designer-nodes.md)

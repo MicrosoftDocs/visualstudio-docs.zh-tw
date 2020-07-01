@@ -1,7 +1,7 @@
 ---
 title: Managed 參考（Visual Studio 中的 Office 開發）
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137031202075d1c646cc7415042dd8d6eab72b78
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 29e8a2206432555e58b47691233bd46c49791046
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985760"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519856"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Managed 參考（Visual Studio 中的 Office 開發）
-  本節包含命名空間的應用程式開發介面參考文件，和用在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](includes/net-v45-md.md)]之 Office 專案中的類型。 如需有關以 .NET Framework 3.5 為目標的 Office 專案所使用之命名空間和類型的 API 參考檔，請參閱 Visual Studio 檔中的下列參考章節： [Managed 參考（Visual Studio 中的 office 程式開發)](managed-reference-office-development-in-visual-studio.md).
+  本節包含命名空間的應用程式開發介面參考文件，和用在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](includes/net-v45-md.md)]之 Office 專案中的類型。 如需有關以 .NET Framework 3.5 為目標的 Office 專案所使用之命名空間和類型的 API 參考檔，請參閱 Visual Studio 檔中的下列參考章節： [Managed 參考（Visual Studio 中的 Office 程式開發）](managed-reference-office-development-in-visual-studio.md)。
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -70,8 +70,8 @@ ms.locfileid: "72985760"
 
  包含用於建置 Office 專案的 MSBuild 工作類別。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Office 執行時間的 Visual Studio 工具總覽](visual-studio-tools-for-office-runtime-overview.md)
-- [開始&#40;在 Visual Studio 中進行 Office 開發&#41;](getting-started-office-development-in-visual-studio.md)
+- [在 Visual Studio&#41;中 &#40;Office 開發入門](getting-started-office-development-in-visual-studio.md)
 - [Office 開發範例和逐步解說](office-development-samples-and-walkthroughs.md)
 - [設計和建立 Office 方案](designing-and-creating-office-solutions.md)

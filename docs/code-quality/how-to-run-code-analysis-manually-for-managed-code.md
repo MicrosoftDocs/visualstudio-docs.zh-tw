@@ -7,16 +7,16 @@ helpviewer_keywords:
 - run code analysis
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
 author: mavasani
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 584ddc9953b6f1522d12722fdd9a24d71e4e1538
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 874d95b65b99af4b5a6b00d45101236f62db3df1
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371829"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769367"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>如何：針對受控碼手動執行程式碼分析（需要 Visual Studio 2019 16.5 版或更新版本）
 根據預設，.NET Compiler Platform （"Roslyn"）程式碼分析器會在您進行即時分析時，以及在組建期間，分析您的 c # 或 Visual Basic 程式碼。 因此，您通常不需要手動觸發程式碼分析。 不過，在某些情況下，您可能會想要手動觸發程式碼分析：

@@ -1,7 +1,7 @@
 ---
 title: 如何在 IDE 中四處移動
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - environments [Visual Studio], navigation
 - documents [Visual Studio], navigating
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2febdedf5cf472132de936c37cad787df3d77518
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1052deb04a93d11349ef9beb2ff667893095902f
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590991"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769846"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>如何：在 Visual Studio IDE 中四處移動
 
@@ -43,9 +43,9 @@ ms.locfileid: "75590991"
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>依使用順序移動開啟的檔案
 
-- 要按最近接觸的文檔的順序啟動打開的文檔，請按**Ctrl（**+**-** 連字號）。
+- 若要依照最近接觸的順序啟動開啟的檔，請按**Ctrl** + **-** （連字號）。
 
-- 要以相反的順序啟動打開的文檔，請按**Ctrl**+**移位**+**-**（連字號）。
+- 若要以相反順序啟動開啟的檔，請按**Ctrl** + **Shift** + **-** （連字號）。
 
     > [!NOTE]
     > [向後巡覽]**** 和 [向前巡覽]**** 位於 [檢視]**** 功能表中。
@@ -63,7 +63,7 @@ ms.locfileid: "75590991"
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>切換至編輯器中的特定檔案
 
-- 按**Ctrl**+**選項卡**以顯示 IDE**導航器**。 按住**Ctrl**鍵並重複按**選項卡**，直到您選擇要切換到的檔。
+- 按**Ctrl** + **tab**以顯示 [ **IDE 導覽器**]。 按住**Ctrl**鍵並重複按**tab**鍵，直到您選取想要切換的檔案為止。
 
     > [!TIP]
     > 若要反轉瀏覽 [使用中的檔案]**** 清單的順序，請按住 **Ctrl**+**Shift** 鍵並按 **Tab**。
@@ -74,7 +74,7 @@ ms.locfileid: "75590991"
 
     \- 或 -
 
-- 在功能表列上，選擇 **"視窗** > **視窗**"。
+- 選擇功能表列上的 [**視窗視窗]**  >  ** **。
 
 - 在清單中，選取您想要檢視的檔案，然後選擇 [啟動]****。
 
@@ -87,7 +87,7 @@ ms.locfileid: "75590991"
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>切換至 IDE 中的特定工具視窗
 
-- 按**Alt**+**F7**以顯示**IDE 導航器**。 按住**Alt**鍵並重複按**F7，** 直到選擇要切換到的視窗。
+- 按**Alt** + **F7**以顯示 [ **IDE 導覽器**]。 按住**Alt**鍵並重複按**F7** ，直到您選取想要切換的視窗為止。
 
     > [!TIP]
     > 若要反轉瀏覽 [使用中工具視窗]**** 清單的順序，請按住 **Shift**+**Alt** 鍵並按 **F7**。
