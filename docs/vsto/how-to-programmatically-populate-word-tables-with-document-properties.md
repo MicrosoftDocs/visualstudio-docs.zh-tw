@@ -1,7 +1,7 @@
 ---
-title: 以程式設計方式填入 Word 表格文件屬性
+title: 以程式設計方式將文件屬性填入 Word 資料表
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e296a63c208bc1c3316f89b7b4003f16daf3c93e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 92d9b38c6a1e770749849966deec7f503f9eeb5d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177780"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537809"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>作法：以程式設計方式填入 Word 表格文件屬性
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>如何：以程式設計方式使用文件屬性填入 Word 資料表
   下列範例會在文件的頂端建立 Microsoft Office Word 表格，並用主文件的屬性填入這個表格。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="populate-tables-in-a-document-level-customization"></a>填入文件層級自訂中的資料表
+## <a name="populate-tables-in-a-document-level-customization"></a>在檔層級自訂中填入資料表
 
 ### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>建立表格並且用文件的屬性填入這個表格
 
@@ -59,7 +59,7 @@ ms.locfileid: "66177780"
    [!code-vb[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#89)]
    [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]
 
-## <a name="populate-tables-in-a-vsto-add-in"></a>在 VSTO 增益集中的資料表中填入
+## <a name="populate-tables-in-a-vsto-add-in"></a>在 VSTO 增益集中填入資料表
 
 ### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>建立表格並且用文件的屬性填入這個表格
 
@@ -94,7 +94,7 @@ ms.locfileid: "66177780"
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]
 
 ## <a name="see-also"></a>另請參閱
-- [如何：以程式設計方式建立 Word 表格](../vsto/how-to-programmatically-create-word-tables.md)
-- [如何：以程式設計方式加入文字和格式在 Word 表格的儲存格](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [如何：以程式設計方式將資料列和資料行加入至 Word 表格](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [如何：以程式設計方式建立 Word 資料表](../vsto/how-to-programmatically-create-word-tables.md)
+- [如何：以程式設計方式在 Word 表格的儲存格中加入文字和格式](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
+- [如何：以程式設計方式將資料列和資料行加入至 Word 資料表](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

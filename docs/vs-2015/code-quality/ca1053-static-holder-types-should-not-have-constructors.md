@@ -15,21 +15,21 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7de098d264dbdd6d7d9daea385de2e03d4e1ba35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 29cc322dd59dc0de66af8f92a46524d15b0022c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653815"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539577"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053：靜態預留位置類型不應包含建構函式
+# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053:靜態預留位置類型不應該包含建構函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -48,6 +48,6 @@ ms.locfileid: "72653815"
  請勿隱藏此規則的警告。 存在於此函式的情況，表示該類型不是靜態類型。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反此規則的類型。 請注意，原始程式碼中沒有預設的程式碼。 當此程式碼編譯成元件時， C#編譯器會插入預設的函式，這將會違反此規則。 若要修正此錯誤，請宣告私用的函式。
+ 下列範例顯示違反此規則的類型。 請注意，原始程式碼中沒有預設的程式碼。 當此程式碼編譯成元件時，c # 編譯器會插入預設的函式，這將會違反此規則。 若要修正此錯誤，請宣告私用的函式。
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticTypes/cs/FxCop.Design.StaticTypes.cs#1)]

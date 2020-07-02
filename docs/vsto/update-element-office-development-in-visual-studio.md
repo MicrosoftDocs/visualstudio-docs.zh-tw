@@ -1,7 +1,7 @@
 ---
-title: '&lt;更新&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
+title: '&lt;update &gt; 元素（Visual Studio 中的 Office 開發）'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 461fae79e3af346d64017166b6dae3ace67599e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967529"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537380"
 ---
-# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;更新&gt;元素 （在 Visual Studio 中的 Office 程式開發）
-  `update`項目指定的方案將會檢查更新的間隔。
+# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;update &gt; 元素（Visual Studio 中的 Office 開發）
+  `update`元素會指定方案檢查更新的間隔。
 
 ## <a name="syntax"></a>語法
 
@@ -43,24 +43,24 @@ ms.locfileid: "62967529"
 
 |屬性|描述|
 |---------------|-----------------|
-|`enabled`|必要項。 將 enabled 設定為下列值之一：<br /><br /> -   **true**檢查更新。<br />-   **false**以防止 檢查更新。|
+|`enabled`|必要。 將 [已啟用] 設定為下列其中一個值：<br /><br /> -   **true**表示檢查更新。<br />-   **false**以防止檢查更新。|
 
  `update` 項目具有下列子項目。
 
-### <a name="expiration"></a>到期
- `expiration` 項目是必要的，且位於 `vstav3` 命名空間。 這個元素指定的方案檢查更新的間隔。
+### <a name="expiration"></a>expiration
+ `expiration` 項目是必要的，且位於 `vstav3` 命名空間。 這個元素會指定方案檢查更新的間隔。
 
  `expiration` 項目具有下列屬性。
 
 |屬性|描述|
 |---------------|-----------------|
-|`maximumAge`| 必要項。 將此選項設定為整數。|
-|`unit`|必要項。 設定`unit`下列值之一：<br /><br /> -   **時數**<br />-   **days**<br />-   **週**|
+|`maximumAge`| 必要。 將此設為等於整數。|
+|`unit`|必要。 將設定 `unit` 為下列其中一個值：<br /><br /> -   **多少**<br />-   **之內**<br />-   **過後**|
 
 ## <a name="example-of-always-checking-for-updates"></a>一律檢查更新的範例
 
 ### <a name="description"></a>描述
- 下列程式碼範例說明`update`設在 Office 方案中的更新一定要檢查的項目。
+ 下列程式碼範例說明 `update` 設定為一律檢查 Office 方案中更新的元素。
 
 ### <a name="code"></a>程式碼
 
@@ -68,10 +68,10 @@ ms.locfileid: "62967529"
 <vstav3:update enabled="true" />
 ```
 
-## <a name="example-of-setting-a-default-update-interval"></a>設定預設的更新間隔的範例
+## <a name="example-of-setting-a-default-update-interval"></a>設定預設更新間隔的範例
 
 ### <a name="description"></a>描述
- 下列程式碼範例說明`update`Office 方案的應用程式資訊清單中的項目。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
+ 下列程式碼範例說明 `update` Office 方案的應用程式資訊清單中的元素。 這個程式碼範例是[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
 

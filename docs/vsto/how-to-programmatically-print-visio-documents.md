@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式列印 Visio 文件
+title: 如何：以程式設計方式列印 Visio 檔
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bf492c866a43a0098fbcad5660a19c57fc90a3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e31a55e49d42311b5ec5fff82769584cc55ce09
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955864"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537796"
 ---
-# <a name="how-to-programmatically-print-visio-documents"></a>HOW TO：以程式設計方式列印 Visio 文件
+# <a name="how-to-programmatically-print-visio-documents"></a>如何：以程式設計方式列印 Visio 檔
   您可以列印整份 Microsoft Office Visio 文件，或僅列印特定頁面。
 
  如需此列印方法的詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Document.Print](/office/vba/api/Visio.Document.Print) 方法和 [Microsoft.Office.Interop.Visio.Page.Print](/office/vba/api/Visio.Page.Print) 方法的 VBA 參考文件。
 
-## <a name="print-a-visio-document"></a>列印 Visio 文件
+## <a name="print-a-visio-document"></a>列印 Visio 檔
 
 ### <a name="to-print-a-complete-document"></a>列印整份文件
 
@@ -36,7 +36,7 @@ ms.locfileid: "62955864"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#8](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#8)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#8](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#8)]
 
-## <a name="print-a-page-of-a-visio-document"></a>列印 Visio 文件頁面
+## <a name="print-a-page-of-a-visio-document"></a>列印 Visio 檔的頁面
 
 ### <a name="to-print-a-page-of-a-document"></a>列印文件頁面
 
@@ -48,9 +48,9 @@ ms.locfileid: "62955864"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#9)]
 
 ## <a name="see-also"></a>另請參閱
-- [Visio 方案](../vsto/visio-solutions.md)
-- [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)
-- [如何：以程式設計方式建立新的 Visio 文件](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [如何：以程式設計方式開啟 Visio 文件](../vsto/how-to-programmatically-open-visio-documents.md)
-- [如何：以程式設計方式關閉 Visio 文件](../vsto/how-to-programmatically-close-visio-documents.md)
-- [如何：以程式設計方式儲存 Visio 文件](../vsto/how-to-programmatically-save-visio-documents.md)
+- [Visio 解決方案](../vsto/visio-solutions.md)
+- [Visio 物件模型總覽](../vsto/visio-object-model-overview.md)
+- [如何：以程式設計方式建立新的 Visio 檔](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [如何：以程式設計方式開啟 Visio 檔](../vsto/how-to-programmatically-open-visio-documents.md)
+- [如何：以程式設計方式關閉 Visio 檔](../vsto/how-to-programmatically-close-visio-documents.md)
+- [如何：以程式設計方式儲存 Visio 檔](../vsto/how-to-programmatically-save-visio-documents.md)

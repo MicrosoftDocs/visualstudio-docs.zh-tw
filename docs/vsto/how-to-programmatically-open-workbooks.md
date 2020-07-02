@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式開啟活頁簿
+title: 如何：以程式設計方式開啟活頁簿
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,29 +13,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: facf3cbeb6635324e74244983fcb33138ad64cfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10a849d8545565e450cd099b32a9e3e8f7f11b56
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812370"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537900"
 ---
-# <a name="how-to-programmatically-open-workbooks"></a>HOW TO：以程式設計方式開啟活頁簿
-  <xref:Microsoft.Office.Interop.Excel.Workbooks> Microsoft Office Excel 中的集合就可以使用 所有開啟的活頁簿，並開啟活頁簿。
+# <a name="how-to-programmatically-open-workbooks"></a>如何：以程式設計方式開啟活頁簿
+  <xref:Microsoft.Office.Interop.Excel.Workbooks>Microsoft Office Excel 中的集合可讓您使用所有開啟的活頁簿，並開啟活頁簿。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="to-open-an-existing-workbook"></a>若要開啟現有的活頁簿
 
-1. 使用<xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A>方法的<xref:Microsoft.Office.Interop.Excel.Workbooks>集合，將路徑傳遞給活頁簿。
+1. 使用 <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> 集合的方法 <xref:Microsoft.Office.Interop.Excel.Workbooks> ，並傳入活頁簿的路徑。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]
 
 ## <a name="compile-the-code"></a>編譯程式碼
- 這個程式碼範例需要下列項目：
+ 這段程式碼範例需要下列項目：
 
-- 名為活頁簿`YourWorkbook.xls`必須存在於名為`Test`上磁碟機 c。
+- 名為的活頁簿 `YourWorkbook.xls` 必須存在於 `Test` 磁片磁碟機 C 上名為的目錄中。
 
 ## <a name="see-also"></a>另請參閱
 - [使用活頁簿](../vsto/working-with-workbooks.md)
@@ -43,6 +43,6 @@ ms.locfileid: "62812370"
 - [如何：以程式設計方式建立新的活頁簿](../vsto/how-to-programmatically-create-new-workbooks.md)
 - [如何：以程式設計方式儲存活頁簿](../vsto/how-to-programmatically-save-workbooks.md)
 - [如何：以程式設計方式關閉活頁簿](../vsto/how-to-programmatically-close-workbooks.md)
-- [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)
-- [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)
+- [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)

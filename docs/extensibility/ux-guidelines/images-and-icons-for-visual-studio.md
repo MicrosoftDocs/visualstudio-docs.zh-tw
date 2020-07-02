@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72d0ce7435a067ef9aa16ccc5b2daa7602926bf
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7de4488a8304b21b578b2ad5ac2c29deafcf1b0a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184818"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537536"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>適用於 Visual Studio 的影像和圖示
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Visual Studio 中的影像使用
@@ -60,44 +60,38 @@ ms.locfileid: "84184818"
 #### <a name="concept-development"></a>概念開發
  Visual Studio 在其 UI 中具有各種不同的圖示類型。 在開發期間仔細考慮圖示類型。 請勿針對您的圖示元素使用不清楚或不常見的 UI 物件。 在這些情況下選擇符號，例如使用智慧標籤圖示。 請注意，左邊的 abstract 標記意義比右邊的不明確、以 UI 為基礎的版本更為明顯：
 
-|||
-|-|-|
 |**正確使用符號圖像**|**符號圖像的使用不正確**|
+|-|-|
 |![正確的智慧標籤圖示](../../extensibility/ux-guidelines/media/0404-01_smarttagcorrect.png "0404-01_SmartTagCorrect")|![不正確的智慧標籤圖示](../../extensibility/ux-guidelines/media/0404-02_smarttagincorrect.png "0404-02_SmartTagIncorrect")|
 
  在某些情況下，標準、容易辨識的 UI 元素會對圖示運作良好。 [新增] 視窗是其中一個範例：
 
-|||
-|-|-|
 |**更正圖示中的 UI 元素**|**圖示中的 UI 元素不正確**|
+|-|-|
 |![正確的加入視窗圖示](../../extensibility/ux-guidelines/media/0404-03_addwindowcorrect.png "0404-03_AddWindowCorrect")|![不正確的加入視窗圖示](../../extensibility/ux-guidelines/media/0404-04_addwindowincorrect.png "0404-04_AddWindowIncorrect")|
 
  請不要使用檔作為基底元素，除非它是圖示意義的必要專案。 在 [新增檔] （下方）沒有檔元素的情況下，會遺失意義，而 with Refresh 則不需要傳達意義。
 
-|||
-|-|-|
 |**正確使用檔圖示**|**檔圖示的使用不正確**|
+|-|-|
 |![正確的文件圖示](../../extensibility/ux-guidelines/media/0404-05_documenticoncorrect.png "0404-05_DocumentIconCorrect")|![不正確的文件圖示](../../extensibility/ux-guidelines/media/0404-06_documenticonincorrect.png "0404-06_DocumentIconIncorrect")|
 
  「顯示」的概念應該以最能說明所顯示內容的圖示來表示，例如使用「顯示所有檔案」範例。 如有必要，可以使用鏡頭比喻來表示 "view" 的概念，例如使用資源檢視範例。
 
-|||
-|-|-|
 |**出現**|**視圖**|
+|-|-|
 |![顯示圖示](../../extensibility/ux-guidelines/media/0404-07_show.png "0404-07_Show")|![檢視圖示](../../extensibility/ux-guidelines/media/0404-08_view.png "0404-08_View")|
 
  右邊的放大鏡圖示應僅代表搜尋、尋找和流覽。 具有加號或負號的左邊變體，應僅代表放大/縮小。
 
-|||
-|-|-|
 |**Search**|**貼近**|
+|-|-|
 |![搜尋圖示](../../extensibility/ux-guidelines/media/0404-09_search.png "0404-09_Search")|![[縮放] 圖示](../../extensibility/ux-guidelines/media/0404-10_zoom.png "0404-10_Zoom")|
 
  在樹狀檢視中，請勿同時使用資料夾圖示和修飾詞。 當可用時，只使用修飾詞。
 
-|||
-|-|-|
 |**正確的樹狀檢視圖示**|**不正確的樹狀檢視圖示**|
+|-|-|
 |![正確的樹狀檢視圖示 &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404-11_TreeViewCorrect1") ![正確的樹狀檢視圖示 &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404-12_TreeViewCorrect2")|![不正確的樹狀檢視圖示 &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404-13_TreeViewIncorrect1") ![不正確的樹狀檢視圖示 &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404-14_TreeViewIncorrect2")|
 
 ### <a name="style-details"></a>樣式詳細資料
@@ -127,23 +121,20 @@ ms.locfileid: "84184818"
 
  若要達到理想的對齊和平衡，請避免使用動作圖像來阻礙圖示的基底元素。 將圖像放在基底元素的左上角附近。 新增額外元素時，請考慮圖示的對齊和平衡。
 
-|||
-|-|-|
 |**正確的對齊和平衡**|**不正確的對齊和餘額**|
+|-|-|
 |![正確的圖示平衡和對齊方式](../../extensibility/ux-guidelines/media/0404-22_alignbalancecorrect.png "0404-22_AlignBalanceCorrect")|![不正確的圖示平衡和對齊方式](../../extensibility/ux-guidelines/media/0404-23_alignbalanceincorrect.png "0404-23_AlignBalanceIncorrect")|
 
  請確定共用元素且在集合中使用的圖示大小同位。 請注意，在不正確的配對中，圓形和箭號會大到不相符。
 
-|||
-|-|-|
 |**正確的大小同位**|**大小不正確**|
+|-|-|
 |![正確的圖示大小和同位](../../extensibility/ux-guidelines/media/0404-24_sizeparitycorrect.png "0404-24_SizeParityCorrect")|![不正確的圖示大小和同位](../../extensibility/ux-guidelines/media/0404-25_sizeparityincorrect.png "0404-25_SizeParityIncorrect")|
 
  使用一致的行和視覺權數。 使用並排比較，評估您所建立的圖示如何與其他圖示相比較。 絕對不要使用整個16x16 框架，請使用15x15 或更小的畫面。 負到正面（深色到淺色）比例應為50/50。
 
-|||
-|-|-|
 |**更正負到正的比率**|**負到正的比率不正確**|
+|-|-|
 |![正確的圖示視覺權數 &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404-26_VisualWeightCorrect1")<br /><br /> ![正確的圖示視覺權數 &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404-27_VisualWeightCorrect2")<br /><br /> ![正確的圖示視覺權數 &#40;3&#41;](../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404-28_VisualWeightCorrect3")|![不正確的圖示視覺加權](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "0404-29_VisualWeightIncorrect")|
 
  使用簡單、可比較的形狀和互補角度來建立您的元素，而不會犧牲元素完整性。 盡可能使用45°或90度的角度。
@@ -163,16 +154,14 @@ ms.locfileid: "84184818"
 
  只有在為物件新增必要的清晰度時，才使用光源。
 
-|||
-|-|-|
 |**正確的燈來源**|**不正確的燈來源**|
+|-|-|
 |![正確的圖示光源](../../extensibility/ux-guidelines/media/0404-34_lightsourcescorrect.png "0404-34_LightSourcesCorrect")|![不正確的圖示光源](../../extensibility/ux-guidelines/media/0404-35_lightsourcesincorrect.png "0404-35_LightSourcesIncorrect")|
 
  僅使用大綱來增強可讀性，或更有效地溝通比喻。 負正值（深色）餘額應為50/50。
 
-|||
-|-|-|
 |**使用大綱的正確用法**|**外框的使用不正確**|
+|-|-|
 |![正確的外框](../../extensibility/ux-guidelines/media/0404-36_outlinescorrect.png "0404-36_OutlinesCorrect")|![不正確的外框](../../extensibility/ux-guidelines/media/0404-37_outlinesincorrect.png "0404-37_OutlinesIncorrect")|
 
 #### <a name="icon-types"></a>圖示類型
@@ -258,7 +247,7 @@ ms.locfileid: "84184818"
 
 - 區分 IntelliSense 內的專案
 
-### <a name="accessibility"></a>協助工具選項
+### <a name="accessibility"></a>Accessibility
  Visual Studio 合規性方針要求所有簽入產品的圖示都必須通過色彩和對比的協助工具需求。 Visual language 調色板中的色彩已經過測試，並符合這些需求。
 
 #### <a name="color-inversion-for-dark-themes"></a>深色主題的色彩反轉
@@ -269,7 +258,7 @@ ms.locfileid: "84184818"
 ### <a name="base-palette"></a>基本調色板
  所有標準圖示都包含三種基本色彩。 圖示不包含漸層或陰影，有一或兩個3D 工具圖示的例外狀況。
 
-|使用方式|Name|值（淺色主題）|色樣|範例|
+|使用方式|名稱|值（淺色主題）|色樣|範例|
 |-----------|----------|---------------------------|------------|-------------|
 |背景/深色|VS BG|424242/66、66、66|![樣本 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![基礎調色盤範例](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |前景/淺色|VS FG|F0EFF1/240239241|![樣本 F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -282,7 +271,7 @@ ms.locfileid: "84184818"
 #### <a name="action-modifiers"></a>動作修飾詞
  下列四種色彩表示動作修飾詞所需的動作類型：
 
-|使用方式|Name|值（所有主題）|色樣|
+|使用方式|名稱|值（所有主題）|色樣|
 |-----------|----------|--------------------------|------------|
 |Positive|VS 動作綠色|388A34/56138、52|![樣本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Neutral|VS 動作紅色|A1260D/161、38、13|![樣本 A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -292,47 +281,47 @@ ms.locfileid: "84184818"
 ##### <a name="examples"></a>範例
  綠色用於正動作修飾詞，例如「新增」、「執行」、「播放」和「驗證」。
 
-|||||
+|執行|執行查詢|播放所有步驟|加入控制項|
 |-|-|-|-|
-|![執行圖示](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />執行|![執行查詢圖示](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405-04_ExecuteQuery")<br />執行查詢|![播放所有步驟圖示](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405-05_PlayAllSteps")<br />播放所有步驟|![加入控制項圖示](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405-06_AddControl")<br />加入控制項|
+|![執行圖示](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![執行查詢圖示](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405-04_ExecuteQuery")|![播放所有步驟圖示](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405-05_PlayAllSteps")|![加入控制項圖示](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405-06_AddControl")|
 
  紅色用於負動作修飾詞，例如 "Delete"、"Stop"、"Cancel" 和 "Close"。
 
-|||||
+|刪除關聯性|刪除欄|停止查詢|離線連接|
 |-|-|-|-|
-|![刪除關聯性圖示](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405-07_DeleteRelationship")<br />刪除關聯性|![刪除資料行圖示](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405-08_DeleteColumn")<br />刪除欄|![停止查詢圖示](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405-09_StopQuery")<br />停止查詢|![連接離線圖示](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405-10_ConnectionOffline")<br />離線連接|
+|![刪除關聯性圖示](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405-07_DeleteRelationship")|![刪除資料行圖示](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405-08_DeleteColumn")|![停止查詢圖示](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405-09_StopQuery")|![連接離線圖示](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405-10_ConnectionOffline")|
 
  藍色會套用至最常以箭號表示的中性動作修飾詞，例如「開啟」、「下一步」、「上一頁」、「匯入」和「匯出」。
 
-|||||
+|移至欄位|批次簽入|位址編輯器|關聯編輯器|
 |-|-|-|-|
-|![移至欄位圖示](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405-11_GoToField")<br />移至欄位|![批次檢查&#45;在圖示中](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405-12_BatchedCheckIn")<br />批次簽入|![地址編輯器圖示](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405-13_AddressEditor")<br />位址編輯器|![關聯編輯器圖示](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405-14_AssociationEditor")<br />關聯編輯器|
+|![移至欄位圖示](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405-11_GoToField")|![批次檢查&#45;在圖示中](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405-12_BatchedCheckIn")|![地址編輯器圖示](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405-13_AddressEditor")|![關聯編輯器圖示](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405-14_AssociationEditor")|
 
  深色金主要用於 "New" 修飾詞。
 
-|||||
+|新增專案|建立新圖形|新增單元測試|新增清單專案|
 |-|-|-|-|
-|![新增專案圖示](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405-15_NewProject")<br />新增專案|![建立新的圖形圖示](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405-16_CreateNewGraph")<br />建立新圖形|![新增單元測試圖示](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405-17_NewUnitTest")<br />新增單元測試|![新增清單項目圖示](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405-18_NewListItem")<br />新增清單專案|
+|![新增專案圖示](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405-15_NewProject")|![建立新的圖形圖示](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405-16_CreateNewGraph")|![新增單元測試圖示](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405-17_NewUnitTest")|![新增清單項目圖示](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405-18_NewListItem")|
 
 #### <a name="special-cases"></a>特殊案例
  在特殊情況下，彩色的動作修飾詞可以單獨使用，做為獨立的圖示。 用於圖示的色彩會反映與圖示相關聯的動作。 此用法僅限於一小部分的圖示，包括：
 
-||||||
+|執行|Stop|刪除|儲存|往回導覽|
 |-|-|-|-|-|
-|![執行圖示](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />執行|![停止圖示](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")<br />Stop|![刪除圖示](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")<br />刪除|![[儲存] 圖示](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")<br />儲存|![向後巡覽圖示](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")<br />往回導覽|
+|![執行圖示](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![停止圖示](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![刪除圖示](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![[儲存] 圖示](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![向後巡覽圖示](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
 
 ### <a name="code-hierarchy-palette"></a>程式碼階層調色板
 
 #### <a name="folder"></a>資料夾
 
-|使用方式|Name|值（所有主題）|色樣|範例|
+|使用方式|名稱|值（所有主題）|色樣|範例|
 |-----------|----------|--------------------------|------------|-------------|
 |資料夾|資料夾|DCB67A/220182122|![樣本 DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![資料夾色彩圖示](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio 語言
  Visual Studio 中所提供的每個通用語言或平臺都有相關聯的色彩。 這些色彩會用於基底圖示，或出現在複合圖示右上角的語言修飾詞上。
 
-|使用方式|Name|值（所有主題）|色樣|
+|使用方式|名稱|值（所有主題）|色樣|
 |-----------|----------|--------------------------|------------|
 |ASP、HTML、WPF|ASP HTML WPF 藍色|0095D7/0149215|![樣本 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|CPP 紫色|9B4F96/155、79150|![樣本 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -346,15 +335,18 @@ ms.locfileid: "84184818"
 
 ##### <a name="examples-of-icons-with-language-modifiers"></a>具有語言修飾詞的圖示範例
 
-|||||||
+|VB|C#|F#|JavaScript|Python|
 |-|-|-|-|-|-|
-|![Visual Basic 圖示](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405-25_VB")<br />VB|![C&#35; 圖示](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")<br />C#|![C&#43;&#43; 圖示](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F&#35; 圖示](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")<br />F#|![JavaScript 圖示](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")<br />JavaScript|![Python 圖示](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python")<br />Python|
+|![Visual Basic 圖示](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405-25_VB")|![C&#35; 圖示](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")|![C&#43;&#43; 圖示](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")|![F&#35; 圖示](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")|![JavaScript 圖示](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")|![Python 圖示](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python")|
+
+|HTML|WPF|ASP|CSS|TypeScript|
+|-|-|-|-|-|-|
 |![HTML 圖示](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![WPF 圖示](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP 圖示](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![CSS 圖示](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![TypeScript 圖示](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||
 
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense 圖示使用專有色板。 這些色彩是用來協助使用者快速分辨 IntelliSense 快顯清單中的不同專案。
 
-|使用方式|Name|值（所有主題）|色樣|
+|使用方式|名稱|值（所有主題）|色樣|
 |-----------|----------|--------------------------|------------|
 |Class、Event|VS 動作橙色|C27D1A/194125，26|![樣本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |擴充方法，方法，模組，委派|VS 動作紫色|652D90/101、45144|![樣本 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -364,15 +356,18 @@ ms.locfileid: "84184818"
 
 ##### <a name="examples-of-intellisense-icons"></a>IntelliSense 圖示的範例
 
-||||||
+|類別|私用事件|代理人|Friend 方法|欄位|
 |-|-|-|-|-|
-|![IntelliSense 類別圖示](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405-36_IntelliSenseClass")<br />類別|![IntelliSense 私用事件圖示](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")<br />私用事件|![IntelliSense 委派圖示](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405-38_IntelliSenseDelegate")<br />代理人|![IntelliSense 方法 Friend 圖示](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")<br />Friend 方法|![欄位圖示](../../extensibility/ux-guidelines/media/0405-40_field.png "0405-40_Field")<br />欄位|
-|![IntelliSense 受保護的列舉項目圖示](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405-41_IntelliSenseProtectedEnumItem")<br />受保護的列舉專案|![IntelliSense 物件圖示](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405-42_IntelliSenseObject")<br />Object|![IntelliSense 範本圖示](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405-43_IntelliSenseTemplate")<br />[範本]|![IntelliSense 例外狀況捷徑圖示](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405-44_IntelliSenseExceptionShortcut")<br />例外狀況快捷方式||
+|![IntelliSense 類別圖示](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405-36_IntelliSenseClass")|![IntelliSense 私用事件圖示](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")|![IntelliSense 委派圖示](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405-38_IntelliSenseDelegate")|![IntelliSense 方法 Friend 圖示](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")|![欄位圖示](../../extensibility/ux-guidelines/media/0405-40_field.png "0405-40_Field")|
+
+|受保護的列舉專案|Object|[範本]|例外狀況快捷方式|
+|-|-|-|-|
+|![IntelliSense 受保護的列舉項目圖示](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405-41_IntelliSenseProtectedEnumItem")|![IntelliSense 物件圖示](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405-42_IntelliSenseObject")|![IntelliSense 範本圖示](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405-43_IntelliSenseTemplate")|![IntelliSense 例外狀況捷徑圖示](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405-44_IntelliSenseExceptionShortcut")|
 
 ### <a name="notifications"></a>通知
  Visual Studio 中的通知是用來表示狀態。 通知選擇區會使用下列四種色彩，以及黑色或白色前景填滿選項，來定義具有下列狀態層級的通知。
 
-|使用方式|Name|值（所有主題）|色樣|
+|使用方式|名稱|值（所有主題）|色樣|
 |-----------|----------|--------------------------|------------|
 |狀態：中性|通知藍色（VS 藍色）|1BA1E2/27161226|![樣本 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |狀態：正面|通知綠色（VS 綠色）|339933/51153，51|![樣本 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
@@ -383,6 +378,6 @@ ms.locfileid: "84184818"
 
 #### <a name="examples-of-notification-icons"></a>通知圖示的範例
 
-|||||
+|警示|警告|完成|Stop|
 |-|-|-|-|
-|![警示圖示](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")<br />警示|![警告圖示](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")<br />警告|![完成圖示](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")<br />完成|![停止圖示](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")<br />Stop|
+|![警示圖示](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")|![警告圖示](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")|![完成圖示](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")|![停止圖示](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")|

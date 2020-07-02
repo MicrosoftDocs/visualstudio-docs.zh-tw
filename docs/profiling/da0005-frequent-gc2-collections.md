@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 946e35c2ee04787d2f36bacd9011567e571d100d
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 28969dd6f5adf1d0f32fe419a17f14ac4069a298
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330533"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539915"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005：常見的 GC2 集合
 
-|||
+|Item|值|
 |-|-|
 |RuleId|DA0005|
 |類別|.NET Framework 使用方式|

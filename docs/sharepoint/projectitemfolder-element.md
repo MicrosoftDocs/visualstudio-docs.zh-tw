@@ -1,5 +1,5 @@
 ---
-title: ProjectItemFolder 項目 |Microsoft Docs
+title: ProjectItemFolder 元素 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 124716f8c40a8adc0a0ae1a28cda21dcb5e00ddf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38f8f70cc6480554441809e33c4083735600fbbb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562698"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539811"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder 項目
   表示對應的資料夾。
@@ -39,8 +39,8 @@ ms.locfileid: "62562698"
 
 |屬性|描述|
 |---------------|-----------------|
-|**Target**|所需**xs： 字串**屬性。<br /><br /> 在 SharePoint 安裝中對應的資料夾對應，相對於部署根資料夾的資料夾路徑。 部署根資料夾由所指定之部署類型**型別**屬性。<br /><br /> 如需詳細資訊，請參閱描述**部署路徑**並**Deployment Root**屬性的 SharePoint 專案中的項目[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)。|
-|**Type**|所需**xs: string**屬性。<br /><br /> 對應資料夾的部署類型。 如需可能值的詳細資訊，請參閱的描述**部署類型**屬性中的 SharePoint 專案項目的[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)。|
+|**目標**|必要的**xs： string**屬性。<br /><br /> SharePoint 安裝中對應資料夾相對於部署根資料夾的資料夾路徑。 部署根資料夾取決於**type**屬性所指定的部署類型。<br /><br /> 如需詳細資訊，請參閱[開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 sharepoint 專案專案的**部署路徑**和**部署根**屬性的描述。|
+|**型別**|必要的**xs： string**屬性。<br /><br /> 對應資料夾的部署類型。 如需可能值的詳細資訊，請參閱[開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 sharepoint 專案專案之**部署類型**屬性的描述。|
 
 ### <a name="child-elements"></a>子元素
  無。
@@ -49,20 +49,20 @@ ms.locfileid: "62562698"
 
 |元素|描述|
 |-------------|-----------------|
-|[ProjectItem](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。 這個項目是必要的根項目 *.spdata*檔案。|
+|[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 專案專案。 這個元素是 *.spdata*檔案的必要根項目。|
 
 ## <a name="remarks"></a>備註
- 如需對應資料夾的詳細資訊，請參閱[如何： 新增與移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。
+ 如需對應資料夾的詳細資訊，請參閱[如何：新增和移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。
 
 ## <a name="element-information"></a>項目資訊
 
-|||
+|屬性|值|
 |-|-|
-|**命名空間**|http:\/\/schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
-|**結構描述名稱**|SharePoint 專案項目結構描述|
-|**驗證檔案**|ProjectItemModelSchema.xsd|
+|**Namespace**|HTTP： \/ \/ schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
+|**架構名稱**|SharePoint 專案專案架構|
+|**驗證檔案**|ProjectItemModelSchema .xsd|
 |**可以是空的**|否|
 
 ## <a name="see-also"></a>另請參閱
-- [SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [如何： 新增與移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)
+- [SharePoint 專案專案架構參考](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [如何：新增和移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)

@@ -15,21 +15,21 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c56de70daeabd05215f68024339d5855686d529b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0a4dcc53fac7dc9b7e189686a3b32e2fb4fd030
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653838"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539590"
 ---
-# <a name="ca1050-declare-types-in-namespaces"></a>CA1050：在命名空間中宣告類型
+# <a name="ca1050-declare-types-in-namespaces"></a>CA1050:類型必須在命名空間中宣告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -51,7 +51,7 @@ ms.locfileid: "72653838"
  [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.TypesLiveInNamespaces/vb/FxCop.Design.TypesLiveInNamespaces.vb#1)]
 
 ## <a name="example"></a>範例
- 下列應用程式會使用先前定義的程式庫。 請注意，當名稱 `Test` 不是由命名空間限定時，會建立在命名空間外宣告的類型。 另請注意，若要存取 `Goodspace` 中的 `Test` 類型，則需要命名空間名稱。
+ 下列應用程式會使用先前定義的程式庫。 請注意，當命名空間未限定名稱時，會建立在命名空間外部宣告的類型 `Test` 。 另請注意，若要存取 `Test` 中的類型 `Goodspace` ，則需要命名空間名稱。
 
  [!code-csharp[FxCop.Design.TestTypesLive#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/cs/FxCop.Design.TestTypesLive.cs#1)]
  [!code-vb[FxCop.Design.TestTypesLive#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/vb/FxCop.Design.TestTypesLive.vb#1)]

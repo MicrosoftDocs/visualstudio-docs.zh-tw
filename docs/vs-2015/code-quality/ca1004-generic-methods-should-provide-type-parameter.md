@@ -15,21 +15,21 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a7c64337af94f9e88944fd15480f4b7ce1e2cb08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e7a96c95313ffee82448e3485c90868c8103814a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655259"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539798"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004：泛型方法應該提供類型參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|GenericMethodsShouldProvideTypeParameter|
 |CheckId|CA1004|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -45,22 +45,22 @@ ms.locfileid: "72655259"
  請勿隱藏此規則的警告。 以易於瞭解和使用的語法提供泛型，可減少學習及增加新程式庫採用率所需的時間。
 
 ## <a name="example"></a>範例
- 下列範例顯示呼叫兩個泛型方法的語法。 會推斷 `InferredTypeArgument` 的型別引數，而且必須明確指定 `NotInferredTypeArgument` 的型別引數。
+ 下列範例顯示呼叫兩個泛型方法的語法。 會推斷的型別引數 `InferredTypeArgument` ，而且必須明確指定的型別引數 `NotInferredTypeArgument` 。
 
  [!code-csharp[FxCop.Design.Inference#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.Inference/cs/FxCop.Design.Inference.cs#1)]
  [!code-vb[FxCop.Design.Inference#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.Inference/vb/FxCop.Design.Inference.vb#1)]
 
 ## <a name="related-rules"></a>相關規則
- [CA1005：避免在泛型型別上包含過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+ [CA1005：避免在泛型類型上包含過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
- [CA1010：集合應該實作泛型介面](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+ [CA1010:集合應該實作泛型介面](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
- [CA1000：不要在泛型型別上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+ [CA1000：不要在泛型類型上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
  [CA1002：不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
- [CA1006：不要在成員簽章中巢狀化泛型類型](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+ [CA1006：不要在成員簽章中將泛型類型巢狀化](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1003：必須使用一般事件處理常式執行個體](../code-quality/ca1003-use-generic-event-handler-instances.md)
+ [CA1003：使用一般事件處理常式執行個體](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
+ [CA1007:建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
