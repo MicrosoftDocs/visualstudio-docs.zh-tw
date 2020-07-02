@@ -1,7 +1,7 @@
 ---
 title: 如何：使用類別設計工具建立類型
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -17,30 +17,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 98e489a37e5d75cbc17d17c32a1fa3b53f9993f8
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590172"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770220"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>如何：使用類別設計工具建立類型
 
 若要為 C# 和 Visual Basic 專案設計新的類型，請在類別圖上建立這些類型。 若要查看現有的類型，請參閱[如何：檢視現有類型](how-to-view-existing-types.md)。
 
-## <a name="create-a-new-type"></a><a name="CreateType"></a>創建新類型
+## <a name="create-a-new-type"></a><a name="CreateType"></a>建立新的類型
 
-1. 在 **"工具箱**"中，**在類設計器**下，將其中一個拖到類別圖表上：
+1. 在 [**工具箱**] 的 [**類別設計工具**] 底下，將其中一個拖曳至類別圖上：
 
     - [類別]**** 或 [抽象類別]****
 
-    - **Enum**
+    - **列舉**
 
     - **介面**
 
     - [結構]\****(VB) 或 [結構]\****(C#)
 
-    - **委派**
+    - **代理人**
 
     - [模組]\****(僅限 VB)
 
@@ -56,13 +56,12 @@ ms.locfileid: "75590172"
 
 4. 現在請加入其他項目以定義類型：
 
-    |||
+    |**對於**|**加入**|
     |-|-|
-    |**對於**|**新增**|
     |Class、Abstract Class、Structure 或 Struct|定義類別的方法、屬性、欄位、事件、建構函式 (方法)、解構函式 (方法) 和常數。|
     |列舉|構成列舉的欄位值|
     |介面|構成介面的方法、屬性和事件|
-    |委派|定義委派的參數|
+    |代理人|定義委派的參數|
     |模組|定義模組的方法、屬性、欄位、事件、建構函式 (方法) 和常數|
 
      請參閱[建立成員](creating-and-configuring-type-members.md#create-members)。
@@ -77,7 +76,7 @@ ms.locfileid: "75590172"
 
    自訂屬性會套用至類型。
 
-## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>將自訂屬性應用於類型成員
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>將自訂屬性套用至類型成員
 
 1. 在類別圖上的成員類型圖案中按一下成員名稱，或是在 [類別細節] 視窗的成員列上按一下成員名稱。
 

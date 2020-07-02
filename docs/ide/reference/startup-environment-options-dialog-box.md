@@ -5,19 +5,19 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Startup
 ms.assetid: 9d517203-3c62-4660-b7b4-ea7d032dcb1e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a6f227e6ab55696250d2769f5eef2e25597e081
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27803983fe0b387f98934adfa6be3abbbe23611c
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72645225"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770596"
 ---
-# <a name="options-dialog-box-environment--startup"></a>選項對話方塊：環境\>啟動
+# <a name="options-dialog-box-environment--startup"></a>選項對話方塊：環境 \> 啟動
 
 ::: moniker range="vs-2017"
 

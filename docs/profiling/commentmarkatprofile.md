@@ -12,15 +12,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 51028dce1d60c0d01c83cee509a1ed7321855437
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ee9eb5353109bcf5df6903e7e607a11b8bfd0536
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777838"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545609"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
-該方法`CommentMarkAtProfile`在 中插入時間戳記值、數位標記和注釋字串。*vsp*檔。 時間戳記值可以用來同步處理外部事件。 針對要插入的標記和註解，包含 CommentMarkAtProfile 函式之執行緒的分析必須是 ON。
+`CommentMarkAtProfile`方法會在中插入時間戳記值、數位標記和批註字串。*vsp*檔案。 時間戳記值可以用來同步處理外部事件。 針對要插入的標記和註解，包含 CommentMarkAtProfile 函式之執行緒的分析必須是 ON。
 
 ## <a name="syntax"></a>語法
 
@@ -68,10 +68,10 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 
 ## <a name="function-information"></a>函式資訊
 
-|||
+|Item|值|
 |-|-|
-|**頭**|包含 *VSPerf.h*|
-|**圖書館**|使用 *VSPerf.lib*|
+|**標頭**|包含 *VSPerf.h*|
+|**程式庫**|使用 *VSPerf.lib*|
 |**Unicode**|實作為 CommentMarkAtProfileW (Unicode) 和 CommentMarkAtProfileA (ANSI)。|
 
 ## <a name="example"></a>範例
@@ -116,4 +116,4 @@ void ExerciseCommentMarkAtProfile(void)
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室探測器 API 參考（本機）](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio Profiler API 參考（原生）](../profiling/visual-studio-profiler-api-reference-native.md)

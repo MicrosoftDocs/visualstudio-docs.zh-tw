@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式將樣式套用至活頁簿中的範圍
+title: 如何：以程式設計方式將樣式套用至活頁簿中的範圍
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f74b2d08a268bc79bcd7d2fd33513b5ccf5b1415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6f115468bccc2d805b019b9a0ef15cea3605f36
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817449"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546155"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>HOW TO：以程式設計方式將樣式套用至活頁簿中的範圍
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>如何：以程式設計方式將樣式套用至活頁簿中的範圍
   您可以將具名樣式套用至活頁簿中的區域。 Excel 提供多個預先定義的樣式。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- [儲存格格式]  對話方塊會顯示格式化儲存格可使用的所有選項，而且每個選項都可從程式碼取得。 若要在 Excel 中顯示這個對話方塊，請按一下 [格式]  功能表上的 [儲存格]  。
+ [儲存格格式] **** 對話方塊會顯示格式化儲存格可使用的所有選項，而且每個選項都可從程式碼取得。 若要在 Excel 中顯示這個對話方塊，請按一下 [格式] **** 功能表上的 [儲存格] **** 。
 
 ## <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>將樣式套用至文件層級自訂中的具名範圍
 
@@ -59,7 +59,7 @@ ms.locfileid: "62817449"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]
 
-## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>若要從在 VSTO 增益集中的具名範圍清除樣式
+## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>若要從 VSTO 增益集的命名範圍中清除樣式
 
 1. 將內文樣式套用至範圍。
 

@@ -1,7 +1,7 @@
 ---
 title: 如何：將類別圖表匯出為影像 (類別設計工具)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.classdesigner.exportdialog
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac469b913b03dec9389b3f44121c2e80d87d30b3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fdecb8834f296d24cbd53d6725b800612f9bcf57
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590133"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770146"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>如何：將類別圖表匯出為影像
 
@@ -25,7 +25,7 @@ ms.locfileid: "75590133"
 
 ## <a name="export-a-diagram"></a>匯出圖表
 
-1. 打開類圖 （*.cd*） 檔。
+1. 開啟您的類別圖表（*.cd*）檔案。
 
 2. 從 [類別圖表]**** 功能表或圖表介面捷徑功能表，選擇 [將圖表匯出為影像]****。
 

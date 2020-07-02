@@ -11,25 +11,25 @@ caps.latest.revision: 11
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 96910ffc53e6c48f930232c83d87570f1bc71e00
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fe9a84280b0124eed6bb0cfffae9c1ec2942bddf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608928"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547715"
 ---
-# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134：覆寫基底方法時，方法必須保持一致的透明度
+# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134:覆寫基底方法時，方法必須保持一致的透明度
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|MethodsMustOverrideWithConsistentTransparency|
 |CheckId|CA2134|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 當以 <xref:System.Security.SecurityCriticalAttribute> 標記的方法覆寫透明或以 <xref:System.Security.SecuritySafeCriticalAttribute> 標記的方法時，就會引發此規則。 當透明或以 <xref:System.Security.SecuritySafeCriticalAttribute> 標記的方法覆寫以 <xref:System.Security.SecurityCriticalAttribute> 標記的方法時，也會引發此規則。
+ 當以標記的方法 <xref:System.Security.SecurityCriticalAttribute> 覆寫透明或以標記的方法時，就會引發此規則 <xref:System.Security.SecuritySafeCriticalAttribute> 。 當透明或以標記的方法覆寫以標記的方法時，也會引發此規則 <xref:System.Security.SecuritySafeCriticalAttribute> <xref:System.Security.SecurityCriticalAttribute> 。
 
  覆寫虛擬方法或實作介面時會套用此規則。
 
@@ -42,12 +42,12 @@ ms.locfileid: "72608928"
  若要修正此規則的違規，請變更覆寫虛擬方法或執行介面的方法透明度，以符合虛擬或介面方法的透明度。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 違反這項規則將會導致使用層級2透明度之元件的執行時間 <xref:System.TypeLoadException>。
+ 請勿隱藏此規則的警告。 違反此規則會導致 <xref:System.TypeLoadException> 使用層級2透明度之元件的執行時間。
 
 ## <a name="examples"></a>範例
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2134.methodsmustoverridewithconsistenttransparency/cs/ca2134 - methodsmustoverridewithconsistenttransparency.cs#1)]
 
-## <a name="see-also"></a>請參閱
- [安全性透明的程式碼，層級2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)
+## <a name="see-also"></a>另請參閱
+ [安全性透明的程式碼，層級 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)

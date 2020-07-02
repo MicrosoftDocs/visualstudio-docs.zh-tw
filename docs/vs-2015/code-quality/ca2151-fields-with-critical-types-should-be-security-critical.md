@@ -9,25 +9,25 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e5dee78ef3c487541363e9e290e54a8f3d68cf3b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 48c3f55b60add1691fe31c764f31673bbf1ab47b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667432"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546350"
 ---
-# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151：具有關鍵類型的欄位應為安全性關鍵
+# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151:具有關鍵類型的欄位應為安全性關鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName||
 |CheckId|CA2151|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 已宣告安全性透明欄位或安全性關鍵欄位。 它的指定類型為安全性關鍵類型。 例如:
+ 已宣告安全性透明欄位或安全性關鍵欄位。 它的指定類型為安全性關鍵類型。 例如：
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]

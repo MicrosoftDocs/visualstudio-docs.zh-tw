@@ -15,31 +15,31 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d4260db808d9c50f78388cf6ba976f7ace52e6a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f6233136dcf7f1db5d622a02419d33e0eedacf5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669288"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545674"
 ---
-# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600：不要使用 Idle 處理序優先權
+# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600:不要使用 Idle 處理序優先順序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|Category|Microsoft 的行動性|
+|類別|Microsoft 的行動性|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 當進程設定為 `ProcessPriorityClass.Idle` 時，就會發生此規則。
+ 當進程設定為時，就會發生此規則 `ProcessPriorityClass.Idle` 。
 
 ## <a name="rule-description"></a>規則描述
- 請勿將處理序優先權設定為 Idle。 具有 `System.Diagnostics.ProcessPriorityClass.Idle` 的進程會在 CPU 閒置時佔用 CPU，因此會封鎖待命。
+ 請勿將處理序優先權設定為 Idle。 當處理常式會 `System.Diagnostics.ProcessPriorityClass.Idle` 閒置時，將會佔用 CPU，因此會封鎖待命。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 將進程設定為 `ProcessPriorityClass.BelowNormal`。
+ 將處理常式設定為 `ProcessPriorityClass.BelowNormal` 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  只有在需要閒置進程優先順序，而且可以安全地忽略行動性考慮時，才應該抑制此規則。

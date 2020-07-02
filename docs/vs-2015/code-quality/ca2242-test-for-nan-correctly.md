@@ -14,37 +14,37 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8433ac081a45e3dbab80ffcd6f96e6d1db914337
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0c832b7eb4a94506c5e15dfa5858bb9f6753912
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672013"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546259"
 ---
-# <a name="ca2242-test-for-nan-correctly"></a>CA2242：必須正確測試 NaN
+# <a name="ca2242-test-for-nan-correctly"></a>CA2242:必須正確測試 NaN
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|TestForNaNCorrectly|
 |CheckId|CA2242|
-|Category|Microsoft。使用方式|
+|類別|Microsoft。使用方式|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 運算式會針對 <xref:System.Single.NaN?displayProperty=fullName> 或 <xref:System.Double.NaN?displayProperty=fullName> 測試值。
+ 運算式會針對或測試值 <xref:System.Single.NaN?displayProperty=fullName> <xref:System.Double.NaN?displayProperty=fullName> 。
 
 ## <a name="rule-description"></a>規則描述
- 當算數運算未定義時，<xref:System.Double.NaN?displayProperty=fullName>，代表不是數位的結果。 測試值和 <xref:System.Double.NaN?displayProperty=fullName> 之間是否相等的任何運算式，一律會傳回 `false`。 測試值和 <xref:System.Double.NaN?displayProperty=fullName> 之間不相等的任何運算式，一律會傳回 `true`。
+ <xref:System.Double.NaN?displayProperty=fullName>表示非數位的，未定義算數運算時的結果。 測試值是否相等並一律傳回的任何運算式 <xref:System.Double.NaN?displayProperty=fullName> `false` 。 測試值是否不相等，且一律會傳回的任何運算式 <xref:System.Double.NaN?displayProperty=fullName> `true` 。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，並準確判斷某個值是否代表 <xref:System.Double.NaN?displayProperty=fullName>，請使用 <xref:System.Single.IsNaN%2A?displayProperty=fullName> 或 <xref:System.Double.IsNaN%2A?displayProperty=fullName> 來測試值。
+ 若要修正此規則的違規，並準確判斷某個值是否代表 <xref:System.Double.NaN?displayProperty=fullName> ，請使用 <xref:System.Single.IsNaN%2A?displayProperty=fullName> 或 <xref:System.Double.IsNaN%2A?displayProperty=fullName> 來測試值。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示兩個不正確地針對 <xref:System.Double.NaN?displayProperty=fullName> 測試值的運算式，以及正確使用 <xref:System.Double.IsNaN%2A?displayProperty=fullName> 來測試值的運算式。
+ 下列範例顯示兩個不正確測試值的運算式 <xref:System.Double.NaN?displayProperty=fullName> ，以及正確地用 <xref:System.Double.IsNaN%2A?displayProperty=fullName> 來測試值的運算式。
 
  [!code-csharp[FxCop.Usage.TestForNaN#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.TestForNaN/cs/FxCop.Usage.TestForNaN.cs#1)]
  [!code-vb[FxCop.Usage.TestForNaN#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.TestForNaN/vb/FxCop.Usage.TestForNaN.vb#1)]

@@ -1,7 +1,7 @@
 ---
-title: HOW TO：簽署 Office 方案
+title: 如何：簽署 Office 方案
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,39 +14,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971117"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545752"
 ---
-# <a name="how-to-sign-office-solutions"></a>HOW TO：簽署 Office 方案
-  如果您登入解決方案，您可以授與信任給方案做為辨識項使用的憑證。 您可以使用相同的憑證用於多個方案，並沒有額外的安全性原則更新，所有的解決方案將會信任。
+# <a name="how-to-sign-office-solutions"></a>如何：簽署 Office 方案
+  如果您簽署解決方案，可以使用憑證作為辨識項，將信任授與解決方案。 您可以針對多個解決方案使用相同的憑證，而且所有解決方案都將受到信任，而不會有其他安全性原則更新。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- 如果您以手動方式編輯應用程式和部署資訊清單使用資訊清單產生和編輯工具 (*mage.exe*並*mageui.exe*)，您可以使用它們之前，您必須重新簽署資訊清單。 如需詳細資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
+ 如果您使用資訊清單產生和編輯工具（*mage.exe*和*mageui.exe*）手動編輯應用程式和部署資訊清單，就必須重新簽署資訊清單，才能使用它們。 如需詳細資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
 
-## <a name="sign-by-using-a-certificate"></a>使用憑證來簽署
- 憑證是包含唯一的索引鍵和方案發行者的身分識別的檔案。 您可以向憑證授權單位購買憑證或建立您自己的憑證並加以簽署的憑證授權單位。
+## <a name="sign-by-using-a-certificate"></a>使用憑證簽署
+ 憑證是一個檔案，其中包含「解決方案發行者」的唯一金鑰和身分識別。 您可以向憑證授權單位單位購買憑證，或建立您自己的憑證，並讓憑證授權單位單位加以簽署。
 
- Visual Studio 會使用暫時憑證，來啟用偵錯 Office 方案。 您不應該在已部署的方案中使用的暫時憑證，做為辨識項。
+ Visual Studio 使用暫時憑證簽署 Office 方案，以啟用調試。 您不應該在已部署的解決方案中使用暫時憑證作為辨識項。
 
-### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>若要使用憑證來簽署 Office 方案
+### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>使用憑證簽署 Office 方案
 
-1. 在 **專案**功能表上，按一下_SolutionName_**屬性**。
+1. 在 [**專案**] 功能表上，按一下 [_解決方案名稱_**屬性**]。
 
-2. 按一下 [簽署]索引標籤。
+2. 按一下 [ **簽署** ] 索引標籤。
 
-3. 選取 **簽署 ClickOnce 資訊清單**。
+3. 選取 **[簽署 ClickOnce 資訊清單**]。
 
-4. 找出憑證，依序按一下**從存放區中選取**或是**從檔案選取**並瀏覽至憑證。
+4. 按一下 [**從存放區選取**]，或**選取 [從**檔案] 並流覽至憑證，以尋找憑證。
 
-5. 若要確認正在使用正確的憑證，請按一下**更多詳細資料**檢視憑證資訊。
+5. 若要確認使用的是正確的憑證，請按一下 [**更多詳細資料**] 以查看憑證資訊。
 
 ## <a name="see-also"></a>另請參閱
 
 - [保護 Office 方案](../vsto/securing-office-solutions.md)
 - [授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)
-- [專案設計工具、簽署頁面](../ide/reference/signing-page-project-designer.md)
+- [專案設計工具、簽署頁](../ide/reference/signing-page-project-designer.md)

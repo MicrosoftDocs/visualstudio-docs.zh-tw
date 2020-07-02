@@ -1,7 +1,7 @@
 ---
-title: 作法：調整書簽控制項的大小
+title: 如何：調整書簽控制項的大小
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99e5c789f65a1dff460bc22dd4a0c097e11c7e98
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6cc7b26bb767c233ed8699519261d4b5b708306b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252223"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545856"
 ---
-# <a name="how-to-resize-bookmark-controls"></a>HOW TO：調整書簽控制項的大小
+# <a name="how-to-resize-bookmark-controls"></a>如何：調整書簽控制項的大小
   您可以在將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入 Microsoft Office Word 文件時，設定控制項的大小； 也可以稍後再調整大小。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "71252223"
 
    如果要大幅變更書籤的大小或位置，則適合這種方法。
 
-  在文件層級的專案中，您可以於設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入專案中的文件。 在 VSTO 增益集專案中，您可以在執行階段將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入任何開啟的文件。 如需詳細資訊，請參閱[如何：將書簽控制項新增至 Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)檔。
+  在文件層級的專案中，您可以於設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入專案中的文件。 在 VSTO 增益集專案中，您可以於執行階段將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入任何開啟的文件。 如需詳細資訊，請參閱[如何：將書簽控制項新增至 Word 檔](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -47,7 +47,7 @@ ms.locfileid: "71252223"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>在文件層級專案中，於設計階段調整書籤大小
 
-1. 選取 [屬性] 視窗中的書籤。
+1. 選取 [屬性] **** 視窗中的書籤。
 
 2. 增加或減少 <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> 屬性的值。
 
@@ -83,9 +83,9 @@ ms.locfileid: "71252223"
 
 1. 選取要包含在新 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項的文字。
 
-2. 按一下 [插入] 功能表上的 [書籤]。
+2. 按一下 [插入] **** 功能表上的 [書籤] ****。
 
-3. 在 [書籤] 對話方塊中，輸入您要調整大小的書籤名稱，然後按一下 [加入]。
+3. 在 [書籤] **** 對話方塊中，輸入您要調整大小的書籤名稱，然後按一下 [加入] ****。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：將書簽控制項新增至 Word 檔](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

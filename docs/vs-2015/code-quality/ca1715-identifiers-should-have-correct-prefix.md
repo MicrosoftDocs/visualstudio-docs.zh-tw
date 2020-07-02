@@ -15,23 +15,23 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1e85929202d36be2e6dcc2b08b5b2a60e7656b27
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: fe362a58a047c8594d09bc6985c48d16f21d3b76
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919194"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545596"
 ---
-# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715：識別項名稱應該使用正確的前置字元
+# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715:識別項名稱應該使用正確的前置字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如需 Visual Studio 的最新檔，請參閱[CA1715：識別碼應該有正確的前置](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix)詞。
 
-|||
+|Item|值|
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|分類|Microsoft. 命名|
+|類別|Microsoft. 命名|
 |中斷變更|中斷-在介面上引發。<br /><br /> 不中斷-在泛型型別參數上引發時。|
 
 ## <a name="cause"></a>原因
@@ -85,4 +85,4 @@ ms.locfileid: "75919194"
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4.vb#1)]
 
 ## <a name="related-rules"></a>相關規則
- [CA1722：識別項名稱不應該使用不正確的前置字元](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+ [CA1722:識別項名稱不應該使用不正確的前置字元](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

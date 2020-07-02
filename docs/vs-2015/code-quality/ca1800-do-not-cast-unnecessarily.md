@@ -1,5 +1,5 @@
 ---
-title: CA1800:不要不必要地轉換 |Microsoft Docs
+title: CA1800：不要不必要地轉換 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,21 +15,21 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 466309cef8905faa9b659e2d3652975d815767fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 757d66ef719b3a1f39a9164dfd50ce1fcf8799db
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663097"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547793"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800:不要執行不必要的轉換
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DoNotCastUnnecessarily|
 |CheckId|CA1800|
-|分類|Microsoft。效能|
+|類別|Microsoft。效能|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -38,7 +38,7 @@ ms.locfileid: "72663097"
 ## <a name="rule-description"></a>規則描述
  重複轉型會降低效能，尤其是在精簡型態的反覆運算陳述式中執行轉型時。 對於明確的重複轉換作業，請將轉換的結果儲存在本機變數中，並使用區域變數，而不是重複的轉換作業。
 
- 如果在C#執行實際轉換之前，使用 `is` 運算子來測試轉換是否成功，請考慮改為測試 `as` 運算子的結果。 這會提供相同的功能，而不會有 `is` 運算子所執行的隱含轉換作業。
+ 如果使用 c # `is` 運算子來測試轉換是否會在執行實際轉換之前成功，請考慮改為測試運算子的結果 `as` 。 這會提供相同的功能，而不需要由運算子執行的隱含轉換作業 `is` 。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規，請修改方法執行，將轉換作業的數目降至最低。
@@ -47,15 +47,15 @@ ms.locfileid: "72663097"
  您可以放心地隱藏此規則的警告，或完全忽略此規則（如果效能不是問題）。
 
 ## <a name="example"></a>範例
- 下列範例顯示使用C# `is` 運算子來違反規則的方法。 第二種方法會藉由將 `is` 運算子取代為對 `as` 運算子之結果的測試來滿足規則，這會減少從二到一次反覆運算的轉換作業數目。
+ 下列範例顯示使用 c # 運算子來違反規則的方法 `is` 。 第二種方法會將運算子取代為 `is` 運算子結果的測試，以滿足規則 `as` ，這會減少從二到一次反覆運算的轉換作業數目。
 
  [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCastsAsIs/cs/FxCop.Performance.UnnecessaryCastsAsIs.cs#1)]
 
 ## <a name="example"></a>範例
- 下列範例顯示的方法 `start_Click`，其中包含多個重複的明確轉換（違反規則）和方法（`reset_Click`），其會將轉換儲存在本機變數中以滿足規則。
+ 下列範例顯示方法，其 `start_Click` 具有多個重複的明確轉換（違反規則）和方法（ `reset_Click` 可在本機變數中儲存轉換來滿足規則）。
 
  [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/cs/FxCop.Performance.UnnecessaryCasts.cs#1)]
  [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/vb/FxCop.Performance.UnnecessaryCasts.vb#1)]
 
 ## <a name="see-also"></a>另請參閱
- [依](https://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e)[情況](https://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)
+ [as](https://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e)依[情況](https://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)

@@ -1,5 +1,5 @@
 ---
-title: CA2147:透明方法不能使用安全性判斷提示 |Microsoft Docs
+title: CA2147：透明方法不能使用安全性判斷提示 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,48 +16,48 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7f2bd0042b6f9a8e46939ab34c86294218fb79f4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 45639afc9946aa43df121a5a1881174371413c25
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610166"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546376"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147:CA2147：透明方法不可以使用安全性判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|SecurityTransparentCodeShouldNotAssert|
 |CheckId|CA2147|
-|分類|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 標示為 <xref:System.Security.SecurityTransparentAttribute> 的程式碼未授與足夠的許可權來進行判斷提示。
+ 標示為的程式碼 <xref:System.Security.SecurityTransparentAttribute> 未授與足夠的許可權來進行判斷提示。
 
 ## <a name="rule-description"></a>規則描述
- 此規則會分析元件中的所有方法和類型，其為 100% 透明或混合透明/重大，並會將 <xref:System.Security.CodeAccessPermission.Assert%2A> 的任何宣告式或命令式用法標示為旗標。
+ 此規則會分析元件中的所有方法和類型，其為100% 透明或混合透明/重大，並會將的任何宣告式或命令式使用旗標 <xref:System.Security.CodeAccessPermission.Assert%2A> 。
 
- 在執行時間，從透明程式碼對 <xref:System.Security.CodeAccessPermission.Assert%2A> 的任何呼叫都會導致擲回 <xref:System.InvalidOperationException>。 這可能會發生在 100% 透明元件中，而且也會出現在混合的透明/關鍵元件中，其中方法或類型已宣告為透明，但包含宣告式或命令式判斷提示。
+ 在執行時間，從透明程式碼對的任何呼叫 <xref:System.Security.CodeAccessPermission.Assert%2A> 都會導致擲回 <xref:System.InvalidOperationException> 。 這可能會發生在100% 透明元件中，而且也會出現在混合的透明/關鍵元件中，其中方法或類型已宣告為透明，但包含宣告式或命令式判斷提示。
 
- @No__t_0 2.0 引進了名為「*透明度*」的功能。 個別方法、欄位、介面、類別和類型可以是透明或重要的。
+ [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]2.0 引進了名為「*透明度*」的功能。 個別方法、欄位、介面、類別和類型可以是透明或重要的。
 
- 透明程式碼不允許提升安全性許可權。 因此，授與或要求的任何許可權都會自動透過程式碼傳遞給呼叫者或主應用程式域。 提升的範例包括判斷提示、Linkdemand、SuppressUnmanagedCode 和 `unsafe` 程式碼。
+ 透明程式碼不允許提升安全性許可權。 因此，授與或要求的任何許可權都會自動透過程式碼傳遞給呼叫者或主應用程式域。 提升的範例包括判斷提示、Linkdemand、SuppressUnmanagedCode 和程式 `unsafe` 代碼。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要解決此問題，請將呼叫判斷提示的程式碼標記為 <xref:System.Security.SecurityCriticalAttribute>，或移除判斷提示。
+ 若要解決此問題，請將呼叫 Assert 的程式碼標記為 <xref:System.Security.SecurityCriticalAttribute> ，或移除判斷提示。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則中的訊息。
 
 ## <a name="example"></a>範例
- 當 `Assert` 方法擲回 <xref:System.InvalidOperationException> 時，如果 `SecurityTestClass` 是透明的，此程式碼將會失敗。
+ `SecurityTestClass`當方法擲回時，如果是透明的，此程式碼將會失敗 `Assert` <xref:System.InvalidOperationException> 。
 
  [!code-csharp[FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2147.transparentmethodsmustnotusesecurityasserts/cs/ca2147 - transparentmethodsmustnotusesecurityasserts.cs#1)]
 
 ## <a name="example"></a>範例
- 其中一個選項是程式碼審查下列範例中的 SecurityTransparentMethod 方法，如果方法被視為安全的提升許可權，mark SecurityTransparentMethod 具有安全關鍵，這需要詳細、完整且無錯誤的安全性您必須在方法上執行 audit，並在該方法的判斷提示底下發生任何呼叫：
+ 其中一個選項是程式碼審查下列範例中的 SecurityTransparentMethod 方法，而且如果方法被視為安全的提升許可權，mark SecurityTransparentMethod 加上安全關鍵，這就需要在方法上執行詳細、完整且無錯誤的安全性 audit，以及在該方法的任何呼叫中發生的任何釋出：
 
  [!code-csharp[FxCop.Security.SecurityTransparentCode2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SecurityTransparentCode2/cs/FxCop.Security.SecurityTransparentCode2.cs#1)]
 

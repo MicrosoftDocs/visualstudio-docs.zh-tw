@@ -1,7 +1,7 @@
 ---
-title: 透過主要 interop 組件的目標 Office 應用程式
+title: 透過主要 interop 元件以 Office 應用程式為目標
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6e92b3b4dd46885de7f30f5364d30f39b5c2bd7
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328883"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545765"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>作法：透過主要 interop 組件的目標 Office 應用程式
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>如何：透過主要 interop 元件以 Office 應用程式為目標
   當您建立新的 Office 專案時，Visual Studio 會自動將參考加入建置專案所需的 Microsoft Office 主要 Interop 組件 (PIA)。 在下列情節中，您必須將參考加入其他 PIA：
 
 - 您想使用專案中其他 Microsoft Office 應用程式的功能。 例如，您想將專案中的 Microsoft Office Excel 功能用於 Microsoft Office Word。
@@ -36,23 +36,23 @@ ms.locfileid: "67328883"
 
 ## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>加入主要 Interop 組件的參考
 
-1. 開啟您的 Office 專案，然後選取中的專案名稱**方案總管 中**。
+1. 開啟 Office 專案，然後在 [**方案總管**中選取專案名稱。
 
-2. 在 [專案]  功能表上，按一下 [新增參考]  。
+2. 在 [專案]**** 功能表上，按一下 [加入參考]****。
 
-3. 在  **Framework**索引標籤上，選取您想要在的 PIA**元件名稱**清單。 如需有關可用 Microsoft Office 主要 interop 組件的詳細資訊，請參閱[Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)。
+3. 在 [**架構**] 索引標籤的 [**元件名稱**] 清單中，選取您想要的 PIA。 如需可用 Microsoft Office 主要 interop 元件的詳細資訊，請參閱[Office 主要 interop 元件](../vsto/office-primary-interop-assemblies.md)。
 
-     如果專案的目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本中，**內嵌 Interop 類型**組件參考的屬性設定為**True**預設。 藉由使用這個項目，方案就不要求使用者電腦上須有 PIA。 如需詳細資訊，請參閱 <<c0> [ 設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)。
+     如果專案 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以或更新版本為目標，則預設會將元件參考的 [**內嵌 Interop 類型**] 屬性設為 [ **True** ]。 藉由使用這個項目，方案就不要求使用者電腦上須有 PIA。 如需詳細資訊，請參閱[設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)。
 
     > [!NOTE]
-    > 在 Office 專案中，一律加入 Office Pia 的參考 」 使用 **.NET**索引標籤**加入參考**對話方塊而非**COM**  索引標籤。如需詳細資訊，請參閱 < [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)。
+    > 在 Office 專案中，請一律使用 [**加入參考**] 對話方塊的 [ **.net** ] 索引標籤，而不是 [ **COM** ] 索引標籤，加入 office pia 的參考。如需詳細資訊，請參閱[Office 主要 interop 元件](../vsto/office-primary-interop-assemblies.md)。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定] 。
 
-     組件名稱會出現在**參考**的資料夾**方案總管 中**。
+     元件名稱會出現在**方案總管**的 [**參考**] 資料夾中。
 
 ## <a name="see-also"></a>另請參閱
-- [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)
+- [Office 主要 interop 元件](../vsto/office-primary-interop-assemblies.md)
 - [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)
 - [開發 Office 方案](../vsto/developing-office-solutions.md)
-- [如何：安裝 Office 主要 interop 組件](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [如何：安裝 Office 主要 interop 元件](../vsto/how-to-install-office-primary-interop-assemblies.md)

@@ -1,7 +1,7 @@
 ---
 title: 變更編輯器的字型和色彩
 ms.date: 06/01/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors, fonts
 - text, color
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d58270b11c810e357af00fbec249c9a659890fb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: fa56a7ab8b3147cc3e8fbb784211d9a34536189d
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283695"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770427"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>如何：在 Visual Studio 中變更編輯器的字型和色彩
 
@@ -49,7 +49,7 @@ ms.locfileid: "85283695"
     > [!TIP]
     > 按一下 [**使用預設值**]，以重設為預設設定。
 
-1. 按一下 [確定]。
+1. 按一下 [確定] 。
 
 ## <a name="next-steps"></a>後續步驟
 

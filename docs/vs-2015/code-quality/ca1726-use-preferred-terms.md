@@ -14,23 +14,23 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 639a42e26442e31f7bbbbb2245af0289c6a04fd8
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 96e0614bc5c08c83008af4e67a2aa865f08f74f3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918230"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547806"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726：建議使用慣用詞彙
+# <a name="ca1726-use-preferred-terms"></a>CA1726:建議使用慣用詞彙
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如需 Visual Studio 的最新檔，請參閱[ca1726 建議：使用慣用詞彙](/visualstudio/code-quality/ca1726-use-preferred-terms)。
 
-|||
+|Item|值|
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|分類|Microsoft. 命名|
+|類別|Microsoft. 命名|
 |中斷變更|中斷-在元件上引發時<br /><br /> 不中斷-在類型參數上引發時|
 
 ## <a name="cause"></a>原因
@@ -49,7 +49,7 @@ ms.locfileid: "75918230"
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` 或 `Flags`|沒有任何取代詞彙。 不要使用。|
+|`Flag` 或 `Flags`|沒有任何取代詞彙。 請勿使用。|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|

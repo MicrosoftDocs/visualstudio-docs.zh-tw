@@ -1,7 +1,7 @@
 ---
 title: 建立方案和專案
 ms.date: 02/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.openprojectfromweb
 - VS.ToolsOptionsPages.Projects.General
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 19a836847aa01038bdbb015612c4fb4a3964d9a9
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301815"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770548"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -46,14 +46,14 @@ ms.locfileid: "79301815"
 
 如果您有程式碼來源檔案的集合，您可以輕鬆地將其新增至專案。
 
-1. 在功能表上，**從現有代碼中選擇****"檔** > **新專案** > "。
+1. 在功能表上 **，選擇 [**  >  **New**  >  **從現有的程式碼**檔案新增專案]。
 
 1. 在 [從現有程式碼檔建立專案精靈]**** 的 [您要建立的專案類型為何?]**** 下拉式清單方塊中，選擇您想要的專案類型，然後選擇 [下一步]**** 按鈕。
 
 1. 在精靈中，瀏覽至檔案的位置，然後在 [名稱]**** 方塊中輸入新專案的名稱。 當您完成時，選擇 [完成]**** 按鈕。
 
 > [!NOTE]
-> 這個選項最適合用於相對簡單的檔案集合。 目前，僅支援C++、阿帕奇科爾多瓦、視覺化基礎和 C# 專案類型。
+> 這個選項最適合用於相對簡單的檔案集合。 目前僅支援 c + +、Apache Cordova、Visual Basic 和 c # 專案類型。
 
 ## <a name="add-files-to-a-solution"></a>將檔案新增至方案
 
@@ -65,7 +65,7 @@ ms.locfileid: "79301815"
 
 ::: moniker range="vs-2017"
 
-要指定 .NET 框架版本，請在 **"新專案**"對話方塊中選擇 **"框架**"下拉式功能表。
+若要指定 .NET Framework 版本，請選擇 [**新增專案**] 對話方塊中的 [ **Framework** ] 下拉式功能表。
 
 ![[新增專案] 對話方塊中的 [Framework] 下拉式清單](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "79301815"
 
 ::: moniker range=">=vs-2019"
 
-要指定 .NET 框架版本，請選擇 **"創建新專案**"頁上**的框架**下拉式功能表。
+若要指定 .NET Framework 版本，請選擇 [**建立新專案**] 頁面上的 [ **Framework** ] 下拉式功能表。
 
 ![[設定新專案] 中的 Framework 選取器](media/vs-2019/configure-new-project-framework.png)
 
@@ -88,7 +88,7 @@ ms.locfileid: "79301815"
 
 ### <a name="to-create-an-empty-solution"></a>建立空的方案
 
-1. 在功能表列上，選擇 **"檔** > **新專案** > **"。**
+1. 在功能表列上 **，選擇 [** 檔案] [新增] [  >  **New**  >  **專案**]。
 
 ::: moniker range="vs-2017"
 
@@ -122,7 +122,7 @@ ms.locfileid: "79301815"
 
 如果您建立 .NET 專案而不指定磁碟位置，它會是暫存專案。 暫存專案可讓您試驗 .NET 專案。 使用暫存專案時，隨時都可以選擇儲存或捨棄它。
 
-要創建臨時專案，請先轉到 **"工具** > **選項** > **專案和解決方案** > **常規**"，並在創建核取方塊時取消選中"**保存新專案**"。 然後像往常一樣開啟 [新增專案]**** 對話方塊。
+若要建立暫存專案，請先移至 [**工具**] [  >  **選項**  >  ] [**專案和方案**  >  ]**[一般**]，然後取消核取 [**建立新的專案時儲存**] 然後像往常一樣開啟 [新增專案]**** 對話方塊。
 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ ms.locfileid: "79301815"
 
 ## <a name="see-also"></a>另請參閱
 
-- [解決方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
+- [方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
 - [GitHub 上的 Microsoft 開放原始碼存放庫](https://github.com/Microsoft)
-- [開發人員代碼示例](https://code.msdn.microsoft.com/)
+- [開發人員程式碼範例](https://code.msdn.microsoft.com/)
 - [建立專案 (Visual Studio for Mac)](/visualstudio/mac/create-new-projects)

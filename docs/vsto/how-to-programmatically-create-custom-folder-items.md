@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式建立自訂資料夾項目
+title: 如何：以程式設計方式建立自訂資料夾專案
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,14 +12,14 @@ author: John-Hart
 ms.author: johnhart
 ms.workload:
 - office
-ms.openlocfilehash: f10bb578d2d83c6e3a07477078245f281e4e3820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 652768fa23902722a9b071a4ad12de4cbf774ab6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575061"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546025"
 ---
-# <a name="how-to-programmatically-create-custom-folder-items"></a>HOW TO：以程式設計方式建立自訂資料夾項目
+# <a name="how-to-programmatically-create-custom-folder-items"></a>如何：以程式設計方式建立自訂資料夾專案
   這個範例會在 Microsoft Office Outlook 中建立新的資料夾。 登入的使用者名稱會用於資料夾名稱。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -29,5 +29,5 @@ ms.locfileid: "62575061"
 
 ## <a name="see-also"></a>另請參閱
 - [使用資料夾](../vsto/working-with-folders.md)
-- [如何：以程式設計方式將項目新增至 Outlook 連絡人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+- [如何：以程式設計方式將專案新增至 Outlook 連絡人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
 - [如何：以程式設計方式建立約會](../vsto/how-to-programmatically-create-appointments.md)

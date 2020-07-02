@@ -1,7 +1,7 @@
 ---
-title: 以程式設計方式儲存附件，從 Outlook 電子郵件項目
+title: 以程式設計方式從 Outlook 電子郵件專案儲存附件
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7e0cff4761b26bac8265592b681d4e56f2ad92f
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 9fbe6099a8928397a7d885ac72c4f34da2da6af0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328956"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545882"
 ---
-# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>作法：以程式設計方式儲存附件，從 Outlook 電子郵件項目
+# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>如何：以程式設計方式從 Outlook 電子郵件專案儲存附件
 
 這個範例會在收件匣中收到郵件時，將電子郵件附件儲存至指定的資料夾。
 
 > [!IMPORTANT]
-> 這個範例才能運作，只有當您將新增名為的資料夾時，才**TestFileSave** C 目錄的根目錄。
+> 只有當您在 C 目錄的根目錄新增名為**TestFileSave**的資料夾時，此範例才能運作。
 
 [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "67328956"
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用郵件項目](../vsto/working-with-mail-items.md)
-- [如何：以程式設計方式依名稱擷取資料夾](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [使用訊息項目](../vsto/working-with-mail-items.md)
+- [如何：以程式設計方式依名稱取得資料夾](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [如何：以程式設計方式在收到電子郵件訊息時執行動作](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
-- [如何：以程式設計方式在特定資料夾中搜尋](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [如何：以程式設計方式在特定資料夾內搜尋](../vsto/how-to-programmatically-search-within-a-specific-folder.md)

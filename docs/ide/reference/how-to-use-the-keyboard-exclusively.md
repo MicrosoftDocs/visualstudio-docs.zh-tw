@@ -3,7 +3,7 @@ title: 在不使用滑鼠的情況下使用 Visual Studio
 titleSuffix: ''
 description: 了解如何只使用鍵盤在 Visual Studio 整合式開發環境 (IDE) 中輕鬆巡覽和撰寫程式碼。
 ms.date: 05/10/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Toolbox, shortcut keys
 - shortcut keys [Visual Studio]
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b1beb2ccb6b3e3e2b74ed7deaf2f31443ee2466
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a8c14f59b87be1e59b5d115ea84b555677cda32
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569019"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770230"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何完全只使用鍵盤
 
@@ -43,9 +43,9 @@ ms.locfileid: "75569019"
 
 在不使用滑鼠的情況下，將工具箱上的控制項新增到表單或設計工具：
 
-1. 在功能表列上，選擇 **"查看** > **工具箱**"。
+1. 在功能表列上，選擇 [**視圖**] [  >  **工具箱**]。
 
-2. 使用 **"向上的"Ctrl**+**箭頭**或 **"向下的"箭頭**+**Down arrow**鍵在 **"工具箱"** 選項卡中的各部分之間移動。
+2. 使用**ctrl** + **向上箭**號或**ctrl** + **向下**鍵，在 [**工具箱**] 索引標籤的區段之間移動。
 
 3. 使用**向上鍵**或**向下鍵**在區段中的控制項之間移動。
 
@@ -63,25 +63,25 @@ ms.locfileid: "75569019"
 
    - 針對核取方塊，請使用**空格鍵**來選取或取消選取。
 
-   - 對於下拉清單，使用 **"向下"箭頭**+**Down arrow**顯示專案，然後使用**向上箭號**和**向下箭頭**鍵更改所選項目。
+   - 若為下拉式清單，請使用**Alt** + **向下箭**號來顯示專案，然後使用**向上鍵**和**向下**鍵來變更選取的專案。
 
    - 針對按鈕，請選取 **Enter** 來叫用。
 
-   - 針對格線，使用方向鍵來巡覽。 對於網格中的下拉清單，使用 **"向下移位**+**"**+**箭頭**顯示專案，然後使用**向上箭號**和**向下箭頭**鍵更改所選項目。
+   - 針對格線，使用方向鍵來巡覽。 對於格線中的下拉式清單，使用**Shift** + **Alt** + **向下**鍵來顯示專案，然後使用**向上鍵**和**向下**鍵來變更選取的專案。
 
 ## <a name="navigate-between-windows-and-files"></a>在視窗和檔案之間巡覽
 
-- 要在編輯器或設計器中的檔中移動，請選擇**Ctrl**+**選項卡**鍵盤快速鍵以顯示已選擇**使用中的檔案的**IDE 導航器。 選擇**Enter**鍵以導航到突出顯示的檔。
+- 若要在編輯器或設計工具中的檔案之間移動，請選擇**Ctrl** + **Tab**鍵盤快速鍵，以**Active Files**顯示 [IDE 瀏覽器]，並選取 [使用中檔案]。 選擇**Enter**鍵以流覽至反白顯示的檔案。
 
-- 要在停靠的工具視窗之間移動，請選擇**Alt**+**F7**鍵盤快速鍵以顯示選擇了**活動工具視窗**的 IDE 導航器。 選擇 **"輸入**"鍵以導航到突出顯示的視窗。
+- 若要在停駐的工具視窗之間移動，請選擇**Alt** + **F7**鍵盤快速鍵以顯示 [IDE 瀏覽器]，並選取作用中的**工具視窗**。 選擇**Enter**鍵以流覽至反白顯示的視窗。
 
 ## <a name="move-and-dock-tool-windows"></a>移動和固定工具視窗
 
 1. 巡覽至您想要移動並給予焦點的工具視窗。
 
-2. 在 **"視窗"** 功能表上，選擇 **"可停靠"** 選項。
+2. 在 [**視窗]** 功能表上，選取 [可停駐]**選項。**
 
-3. 按**Alt**+**空格鍵**，然後選擇 **"移動**"。
+3. 按**Alt** + **空格鍵**，然後選擇 [**移動**]。
 
    固定的輔助方塊隨即出現。
 
@@ -99,7 +99,7 @@ ms.locfileid: "75569019"
 
 ## <a name="see-also"></a>另請參閱
 
-* [識別和自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+* [識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 * [協助工具祕訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
 * [預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 * [Microsoft 產品中的協助工具](https://www.microsoft.com/accessibility/)

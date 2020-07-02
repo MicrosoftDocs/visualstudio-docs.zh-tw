@@ -9,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f13df00059523ca87e720a999c596e203b20e49
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a17ce633515979ca7a3fd3ac5a7e1d8802996944
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593677"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770416"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 
@@ -29,7 +29,7 @@ ms.locfileid: "75593677"
 
 如需在 Visual Basic 和 C# 專案中簽署組件的資訊，請參閱[建立和使用強式名稱的組件](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies)。
 
-有關在C++專案中簽名程式集的資訊，請參閱[強命名程式集 （C++/CLI）。](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+如需在 c + + 專案中簽署元件的詳細資訊，請參閱[強式名稱元件（c + +/cli）](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)。
 
 > [!NOTE]
 > 強式名稱簽章無法保護組件免受反向工程的威脅。 若要防止反向工程，請參閱 [Dotfuscator Community](dotfuscator/index.md)。
@@ -73,5 +73,5 @@ ms.locfileid: "75593677"
 
 ## <a name="see-also"></a>另請參閱
 
-- [強命名程式集](/dotnet/framework/app-domains/strong-named-assemblies)
+- [強式名稱組件](/dotnet/framework/app-domains/strong-named-assemblies)
 - [強式名稱組件 (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

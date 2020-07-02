@@ -1,7 +1,7 @@
 ---
 title: 顯示程式碼行號
 ms.date: 03/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - line numbers, displaying
 - Code Editor, line numbers
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5392ad3efaee8a3c29e58bd2b75272e4206215a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff6e0c50ab41f3d18458c736e48b0a4360b8b286
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569136"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770361"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>如何：在編輯器中顯示行號
 
@@ -26,7 +26,7 @@ ms.locfileid: "75569136"
 
 ## <a name="display-line-numbers-in-code"></a>顯示程式碼行號
 
-1. 在功能表列上，選擇 **"工具** > **選項**"。 展開 [文字編輯器]**** 節點，然後選取您所使用的語言，或選取 [所有語言]**** 以開啟所有語言的行號。 (或在搜尋方塊中輸入**行號**，然後從結果中選擇 [開啟或關閉行號]****。)
+1. 在功能表列上，選擇 [**工具**] [  >  **選項**]。 展開 [文字編輯器]**** 節點，然後選取您所使用的語言，或選取 [所有語言]**** 以開啟所有語言的行號。 (或在搜尋方塊中輸入**行號**，然後從結果中選擇 [開啟或關閉行號]****。)
 
 2. 選取 [行號]**** 核取方塊。
 

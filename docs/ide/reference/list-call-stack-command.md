@@ -8,17 +8,17 @@ helpviewer_keywords:
 - list call stack command
 - Debug.ListCallStack command
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f62852550c161566832a7ab78d4058d1d14028f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34de768f41079311505ae7948502bb4356814ec7
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72748714"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770690"
 ---
 # <a name="list-call-stack-command"></a>列出呼叫堆疊命令
 顯示目前的呼叫堆疊。
@@ -110,9 +110,9 @@ kb 2
 
 ## <a name="see-also"></a>另請參閱
 
-- [列出反組譯碼命令](../../ide/reference/list-disassembly-command.md)
+- [列出反組解碼命令](../../ide/reference/list-disassembly-command.md)
 - [列出執行緒命令](../../ide/reference/list-threads-command.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

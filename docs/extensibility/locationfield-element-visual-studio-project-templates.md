@@ -1,8 +1,8 @@
 ---
-title: 位置欄位元素(可視化工作室專案範本) |微軟文件
+title: LocationField 元素（Visual Studio 專案範本） |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
 helpviewer_keywords:
@@ -13,17 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d993e84bec41486ef4dce6ad98c61f23ab2a46bd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702890"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770016"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>位置欄位元素(視覺化工作室專案樣本)
-指定新**項目**對話框中**的位置**文字框是為專案範本啟用、禁用還是隱藏。
+# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 元素（Visual Studio 專案範本）
+指定是否為專案範本啟用、停用或隱藏 [**新增專案**] 對話方塊中的 [**位置**] 文字方塊。
 
- \<VS範本>\<範本資料>\<位置欄位>
+ \<VSTemplate> \<TemplateData>
+ \<LocationField>
 
 ## <a name="syntax"></a>語法
 
@@ -44,25 +45,25 @@ ms.locfileid: "80702890"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 對樣本進行分類,並定義它在「**新專案**」中的顯示方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義它在**新專案**中的顯示方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 合法文字值為:
+ 有效的文字值為：
 
-- `Enabled`,它指定啟用 **"新專案"** 對話方**塊的位置**框。
+- `Enabled`，指定已啟用 [**新增專案**] 對話方塊的 [**位置**] 方塊。
 
-- `Disabled`,它指定禁用 **"新專案"** 對話方**塊的位置**框。
+- `Disabled`，指定 [**新增專案**] 對話方塊的 [**位置**] 方塊已停用。
 
-- `Hidden`指定新**項目**對話框的位置**框**為隱藏。
+- `Hidden`，指定隱藏 [**新增專案**] 對話方塊的 [**位置**] 方塊。
 
 ## <a name="remarks"></a>備註
- 預設值是 `Enabled`。
+ 預設值為 `Enabled`。
 
- "**新的項目**'對話框中的 **'位置**"文字框使用戶能夠更改儲存新項目的預設目錄。
+ [**新增專案**] 對話方塊中的 [**位置**] 文字方塊，可讓使用者變更儲存新專案的預設目錄。
 
- 僅當基礎項目系統支援`Location`該元素時,對話方塊才會遵守元素中指定的值。
+ `Location`只有當基礎專案系統支援此元素中指定的值時，這個對話方塊才會接受該值。
 
 ## <a name="example"></a>範例
  下列範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本的中繼資料。
@@ -93,5 +94,5 @@ ms.locfileid: "80702890"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
-- [建立項目與專案樣本](../ide/creating-project-and-item-templates.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [建立專案和專案範本](../ide/creating-project-and-item-templates.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list source command
 - ListSource command
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c211773f20ab4643b62c8c71fc6ae6581a91987
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 286cfa87de96b75e8b79d9ee3bc31e84d7761670
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72747895"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770623"
 ---
 # <a name="list-source-command"></a>列出原始碼命令
 顯示指定的原始程式碼程式行。

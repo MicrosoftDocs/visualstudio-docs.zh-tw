@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Debug.ListDisassembly command
 - list disassembly command
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaeab2e65088b8f1bfce3a6a12f8cd66c3245b75
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 91319a8d25aaec6bdd676ed6d709dffc47100195
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72747928"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770651"
 ---
 # <a name="list-disassembly-command"></a>列出反組譯碼命令
 開始偵錯處理序，並可讓您指定處理錯誤的方式。
@@ -71,4 +71,4 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [視覺化工作室命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

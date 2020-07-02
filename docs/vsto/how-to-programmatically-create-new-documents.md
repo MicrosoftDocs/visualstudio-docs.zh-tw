@@ -1,7 +1,7 @@
 ---
-title: 作法：以程式設計方式建立新檔
+title: 如何：以程式設計方式建立新檔
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71610d0bd2e957d932e31d83d06aca914bf8b585
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8e82c5ca62c407481b73de9394c584c3039a8f57
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251956"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545986"
 ---
-# <a name="how-to-programmatically-create-new-documents"></a>作法：以程式設計方式建立新檔
+# <a name="how-to-programmatically-create-new-documents"></a>如何：以程式設計方式建立新檔
   當您以程式設計方式建立文件時，新的文件就是原生的 <xref:Microsoft.Office.Interop.Word.Document> 物件。 這個物件沒有 <xref:Microsoft.Office.Tools.Word.Document> 主項目的其他事件和資料繫結功能。 如需詳細資訊，請參閱[主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "71251956"
      [!code-csharp[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#1)]
 
 ## <a name="use-custom-templates"></a>使用自訂範本
- 方法具有選擇性樣板引數，可根據一般範本以外的範本來建立新的檔。 <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> 您必須提供範本的檔案名稱和完整路徑。
+ <xref:Microsoft.Office.Interop.Word.Documents.Add%2A>方法具有選擇性樣板自*Template*變數，可根據一般範本以外的範本來建立新的檔。 您必須提供範本的檔案名稱和完整路徑。
 
 ### <a name="to-create-a-new-document-based-on-a-custom-template"></a>根據自訂範本建立新文件
 

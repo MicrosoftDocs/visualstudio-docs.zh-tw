@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式在預覽列印中顯示文件
+title: 如何：以程式設計方式在預覽列印中顯示檔
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8296d28e884c746e09b427914af02213bbbaa7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 036f8a45d5605b55b9743a22d598a13780641c97
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813032"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545908"
 ---
-# <a name="how-to-programmatically-display-documents-in-print-preview"></a>HOW TO：以程式設計方式在預覽列印中顯示文件
+# <a name="how-to-programmatically-display-documents-in-print-preview"></a>如何：以程式設計方式在預覽列印中顯示檔
   如果您的方案會產生報告，您可能想要在 [預覽列印] 模式中向使用者顯示報告。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="procedures-for-document-level-customizations"></a>文件層級自訂中的程序
+## <a name="procedures-for-document-level-customizations"></a>檔層級自訂的程式
 
 ### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>呼叫 PrintPreview 方法以在預覽列印中顯示文件
 
@@ -58,6 +58,6 @@ ms.locfileid: "62813032"
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
 
 ## <a name="see-also"></a>另請參閱
-- [如何：以程式設計方式列印文件](../vsto/how-to-programmatically-print-documents.md)
-- [如何：以程式設計方式開啟現有文件](../vsto/how-to-programmatically-open-existing-documents.md)
-- [如何：以程式設計方式建立新文件](../vsto/how-to-programmatically-create-new-documents.md)
+- [如何：以程式設計方式列印檔案](../vsto/how-to-programmatically-print-documents.md)
+- [如何：以程式設計方式開啟現有檔](../vsto/how-to-programmatically-open-existing-documents.md)
+- [如何：以程式設計方式建立新檔](../vsto/how-to-programmatically-create-new-documents.md)

@@ -16,23 +16,23 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0f5789b514d645fc670acf9307e4714c160c3b4c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c87836f99684c7e16c022e3e9f15bf546ba82d62
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918178"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547780"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801：必須檢閱未使用的參數
+# <a name="ca1801-review-unused-parameters"></a>CA1801:必須檢閱未使用的參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如需 Visual Studio 的最新檔，請參閱[ca1801 必須：審查未使用的參數](/visualstudio/code-quality/ca1801-review-unused-parameters)。
 
-|||
+|Item|值|
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|分類|Microsoft。使用方式|
+|類別|Microsoft。使用方式|
 |中斷變更|不中斷-如果在元件外部看不到成員，不論您所做的變更為何。<br /><br /> 不中斷-如果您變更成員，以在其主體內使用參數。<br /><br /> 中斷-如果您移除參數，而且它在元件外部是可見的。|
 
 ## <a name="cause"></a>原因
@@ -42,13 +42,13 @@ ms.locfileid: "75918178"
 
 - 當做事件處理常式使用的方法。
 
-- 使用 `abstract` （在 Visual Basic 中`MustOverride`）修飾詞宣告的方法。
+- 以 `abstract` （Visual Basic）修飾詞宣告的方法 `MustOverride` 。
 
-- 使用 `virtual` （在 Visual Basic 中`Overridable`）修飾詞宣告的方法。
+- 以 `virtual` （Visual Basic）修飾詞宣告的方法 `Overridable` 。
 
-- 使用 `override` （在 Visual Basic 中`Overrides`）修飾詞宣告的方法。
+- 以 `override` （Visual Basic）修飾詞宣告的方法 `Overrides` 。
 
-- 使用 `extern` （Visual Basic 中的`Declare` 語句）修飾詞宣告的方法。
+- 使用 `extern` （ `Declare` Visual Basic 中的語句）修飾詞宣告的方法。
 
 ## <a name="rule-description"></a>規則描述
  請參閱未在方法主體中使用之非虛擬方法中的參數，以確保不會有任何正確性存在於無法存取的情況。 未使用的參數會產生維護和效能成本。
@@ -67,8 +67,8 @@ ms.locfileid: "75918178"
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]
 
 ## <a name="related-rules"></a>相關規則
- [CA1811：避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812：避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812:避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1804：必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804:必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)

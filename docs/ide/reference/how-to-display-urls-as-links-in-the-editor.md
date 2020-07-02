@@ -1,7 +1,7 @@
 ---
 title: 如何：以連結方式顯示編輯器中的 URL
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - URLs, opening
 - Code Editor, displaying URLs
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aefabb480830f7fc649bc73d47a3b47594100616
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 80ad0fcc7409bd91f24ef197ef12ed64610a2e0b
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569084"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770352"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>如何：以連結方式顯示編輯器中的 URL
 
@@ -27,11 +27,11 @@ ms.locfileid: "75569084"
 
 - 當您將滑鼠停留在它們之上時，顯示**工具提示**。
 
-- 嘗試打開**Ctrl**+**按一下**連結時指示的網站。 網站預設會顯示於內部網頁瀏覽器中。
+- 當您按**Ctrl** + **按一下**連結時，嘗試開啟指定的網站。 網站預設會顯示於內部網頁瀏覽器中。
 
 ## <a name="display-urls-as-links"></a>將 URL 顯示為連結
 
-1. 在 **[工具]** 功能表上，按一下 **[選項]**。
+1. 在 **[工具]** 功能表上，按一下 **[選項]** 。
 
 2. 按一下 **[文字編輯器]**。
 

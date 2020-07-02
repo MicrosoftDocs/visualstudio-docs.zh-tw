@@ -1,5 +1,5 @@
 ---
-title: CA2140:透明程式碼不能參考安全性關鍵專案 |Microsoft Docs
+title: CA2140：透明程式碼不能參考安全性關鍵專案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -17,21 +17,21 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5c3e624e4210e59406fd1d5955cd37c2e83ed79a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6f11125f43fd06b0442d1c40cbd4da41e346fd1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602873"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546454"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140:透明程式碼不可以參考安全性關鍵項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|TransparentMethodsMustNotReferenceCriticalCode|
 |CheckId|CA2140|
-|分類|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -54,16 +54,16 @@ ms.locfileid: "72602873"
 - 傳回標記為安全性關鍵的類型
 
 ## <a name="rule-description"></a>規則描述
- 標記為 <xref:System.Security.SecurityCriticalAttribute> 屬性的程式碼專案是安全性關鍵。 透明方法不能使用安全性關鍵項目。 如果透明類型嘗試使用安全性關鍵類型，則會引發 <xref:System.TypeAccessException>、<xref:System.MethodAccessException> 或 <xref:System.FieldAccessException>。
+ 以屬性標示的程式碼專案 <xref:System.Security.SecurityCriticalAttribute> 是安全性關鍵。 透明方法不能使用安全性關鍵項目。 如果透明類型嘗試使用安全性關鍵類型 <xref:System.TypeAccessException> ， <xref:System.MethodAccessException> <xref:System.FieldAccessException> 則會引發、或。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請執行下列其中一項動作：
 
-- 將使用安全性關鍵程式碼的程式碼元素標記為 <xref:System.Security.SecurityCriticalAttribute> 屬性
+- 將使用安全性關鍵程式碼的程式碼專案標記為 <xref:System.Security.SecurityCriticalAttribute> 屬性
 
-     \-或-
+     \- 或 -
 
-- 從標記為安全性關鍵的程式碼專案中移除 <xref:System.Security.SecurityCriticalAttribute> 屬性，並改為使用 <xref:System.Security.SecuritySafeCriticalAttribute> 或 <xref:System.Security.SecurityTransparentAttribute> 屬性加以標記。
+- <xref:System.Security.SecurityCriticalAttribute>從標記為安全性關鍵的程式碼專案中移除屬性，並改為使用或屬性來加以標記 <xref:System.Security.SecuritySafeCriticalAttribute> <xref:System.Security.SecurityTransparentAttribute> 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。

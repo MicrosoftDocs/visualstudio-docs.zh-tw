@@ -1,7 +1,7 @@
 ---
 title: 如何：設定電腦以開發 Office 方案
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb29dc4151bc457eb60ce836986817bc1b0137c9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 3b13aa65e4dd5868a36e0dd833351b1d1751d8b0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985955"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546168"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>如何：設定電腦以開發 Office 方案
   若要設定開發電腦，讓您可以使用 Visual Studio 中的 Microsoft Office Developer Tools，請遵循本主題中的指示。 您必須擁有開發電腦上的系統管理權限，才能執行這些步驟。
@@ -31,10 +31,10 @@ ms.locfileid: "72985955"
 
      請確定您也針對所安裝的 Office 版本安裝 PIA。 PIA 預設會與 Office 一起安裝。 如果您修改 Office 安裝程式，請確定已針對您要設為目標的應用程式選取 [.Net 程式設計**支援**] 功能。
 
-3. 如果您有英文版的 Visual Studio，但使用非英文的 Windows 設定，您可以安裝 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 語言套件，查看與 Windows 相同語言的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 訊息。 非英文版的 Visual Studio 會自動安裝語言套件。 語言套件可從[Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=54246)取得。
+3. 如果您有英文版的 Visual Studio，但使用非英文的 Windows 設定，您可以安裝 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 語言套件，查看與 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] windows 相同語言的訊息。 非英文版的 Visual Studio 會自動安裝語言套件。 語言套件可從[Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=54246)取得。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [開始&#40;在 Visual Studio 中進行 Office 開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [在 Visual Studio&#41;中 &#40;Office 開發入門](../vsto/getting-started-office-development-in-visual-studio.md)
 - [如何：安裝 Visual Studio Tools for Office 執行時間可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 - [如何：安裝 Office 主要 interop 元件](../vsto/how-to-install-office-primary-interop-assemblies.md)

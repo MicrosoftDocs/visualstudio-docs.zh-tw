@@ -15,21 +15,21 @@ caps.latest.revision: 32
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f7b830e9d3a045bb54394a91d94e036613af7d1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5da2e2bf26bb1894987caa8b748181d952bd7c18
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607867"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547832"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502：避免過度複雜
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502:避免造成過度複雜的方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
-|Category|Microsoft。可維護性|
+|類別|Microsoft。可維護性|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -50,14 +50,14 @@ ms.locfileid: "72607867"
  若要修正此規則的違規情形，請重構方法，以降低其圈複雜度。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果無法輕易降低複雜性，而且方法很容易瞭解、測試和維護，就可以放心地隱藏此規則的警告。 特別的是，包含大型 `switch` （在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中 `Select`）語句的方法，是排除的候選項。 在開發週期中不穩定程式碼基底的風險，或在先前隨附的程式碼中引進執行時間行為的非預期變更，可能會超過重構程式碼的維護性優勢。
+ 如果無法輕易降低複雜性，而且方法很容易瞭解、測試和維護，就可以放心地隱藏此規則的警告。 特別的是，包含大型 `switch` （ `Select` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ）語句的方法是排除的候選項。 在開發週期中不穩定程式碼基底的風險，或在先前隨附的程式碼中引進執行時間行為的非預期變更，可能會超過重構程式碼的維護性優勢。
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>如何計算圈複雜度
  迴圈複雜度的計算方式是將1新增至下列內容：
 
-- 分支的數目（例如 `if`、`while` 和 `do`）
+- 分支的數目（例如 `if` 、 `while` 和 `do` ）
 
-- @No__t_1 中的 `case` 語句數目
+- 中的 `case` 語句數目`switch`
 
   下列範例顯示迴圈複雜度不同的方法。
 
@@ -90,7 +90,7 @@ ms.locfileid: "72607867"
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#4)]
 
 ## <a name="related-rules"></a>相關規則
- [CA1501：避免在物件間過度繼承](../code-quality/ca1501-avoid-excessive-inheritance.md)
+ [CA1501:避免在物件間過度繼承](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

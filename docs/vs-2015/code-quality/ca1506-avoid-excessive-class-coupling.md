@@ -15,21 +15,21 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e85ac61e404ac9bc1afb9459716c2395233c5080
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07f19cb9d4aa2ed118898a1816092479cbd16565
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607398"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545700"
 ---
-# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506：應避免使用結合過度的類別
+# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506:應避免使用結合過度的類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
-|Category|Microsoft。可維護性|
+|類別|Microsoft。可維護性|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -46,5 +46,5 @@ ms.locfileid: "72607398"
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  當類型或方法仍被視為可維護時，請排除這項警告，儘管其他類型的相依性很多。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  可[維護性警告](../code-quality/maintainability-warnings.md) [，測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
