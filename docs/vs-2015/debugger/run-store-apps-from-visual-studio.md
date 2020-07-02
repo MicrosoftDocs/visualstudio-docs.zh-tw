@@ -1,5 +1,5 @@
 ---
-title: 執行市集應用程式
+title: 執行存放區應用程式
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,23 +14,23 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d5dfe0d5e5e9af35334629bd2bcd27f414dac11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ac3e8ec68553159972e88538d8a4bc1ec49ce50
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154172"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540305"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>從 Visual Studio 執行市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 市集應用程式在多種裝置上執行，而且 Visual Studio 提供數種方式，讓您執行那些應用程式，並與之互動。 "F5" 體驗已獲增強，可在開發期間輕鬆地偵錯、分析和測試應用程式。
 
- ![開始偵錯，並選取目標](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")
+ ![開始偵錯並選取目標](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")
 
 ## <a name="in-this-section"></a>本節內容
 
-|||
+|Title|描述|
 |-|-|
 |[在本機電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)|在 Visual Studio 裝置上執行 Windows 市集應用程式。|
 |[在模擬器中執行 Windows 市集應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)|在模擬 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 功能 (例如觸控和方向) 的桌面視窗中，執行 Windows 市集應用程式。|

@@ -1,7 +1,7 @@
 ---
-title: HOW TO：以程式設計方式列出活頁簿中的所有工作表
+title: 如何：以程式設計方式列出活頁簿中的所有工作表
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2153091b2b2abae05bf6f6c7856d2fa6d43f8967
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 700aca059c6ef18f0c8e43aa127c99eaeee4fa2a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812415"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541449"
 ---
-# <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>HOW TO：以程式設計方式列出活頁簿中的所有工作表
+# <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>如何：以程式設計方式列出活頁簿中的所有工作表
   <xref:Microsoft.Office.Interop.Excel.Workbook> 類別會提供 <xref:Microsoft.Office.Interop.Excel.Worksheets> 物件。 這個物件在活頁簿中含有所有 <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件的集合。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -42,5 +42,5 @@ ms.locfileid: "62812415"
 ## <a name="see-also"></a>另請參閱
 - [使用工作表](../vsto/working-with-worksheets.md)
 - [如何：以程式設計方式在活頁簿中加入新的工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
-- [如何：以程式設計方式移動工作表在活頁簿內](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)
+- [如何：以程式設計方式在活頁簿內移動工作表](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)
 - [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)

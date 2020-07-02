@@ -1,18 +1,18 @@
 ---
 title: 建構模型方案
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57edf4253840294968238793bf9f3b24326a1e3f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cc4eba7dc4d185cbd8eb4f1b073fce8b0c9fb07e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591940"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545037"
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 
@@ -74,7 +74,7 @@ ms.locfileid: "75591940"
 
 1. 在每個圖層的方案中，加入架構模型專案。 在**方案總管**中，以滑鼠右鍵按一下方案節點，指向 [**加入**]，然後按一下 [**現有專案**]。 現在從每個方案都可以存取單一模型專案：架構專案及每個圖層的開發專案。
 
-2. 在共用模型中，為每個圖層建立封裝：在 **方案總管**中，選取模型專案。 在 [ **UML 模型瀏覽器**] 中，以滑鼠右鍵按一下模型根節點，指向 [**加入**]，然後按一下 [**封裝**]。
+2. 在共用模型中，為每個圖層建立封裝：在 [**方案總管**中，選取模型專案。 在 [ **UML 模型瀏覽器**] 中，以滑鼠右鍵按一下模型根節點，指向 [**加入**]，然後按一下 [**封裝**]。
 
    每個套件都會包含描述對應圖層需求和設計的圖表。
 
@@ -96,17 +96,17 @@ ms.locfileid: "75591940"
 
 2. 建立要用做未來專案起點的方案結構。
 
-3. 按一下 [檔案] 功能表上的 [匯出範本為 VSIX]。
+3. 按一下 [檔案] **** 功能表上的 [匯出範本為 VSIX] ****。
 
    [**匯出範本為 VSIX Wizard]** 隨即開啟。
 
 4. 遵循精靈中的指示，選取要包含在範本中的專案，提供範本的名稱和描述，並指定輸出位置。
 
-## <a name="watch-a-video"></a>請觀賞影片
+## <a name="watch-a-video"></a>觀看影片
 
 [組織和管理您的模型](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)
 - [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)

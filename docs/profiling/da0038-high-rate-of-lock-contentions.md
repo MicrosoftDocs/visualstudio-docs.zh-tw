@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bb810fcc284ba4905e50153e3778552ab178291
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 51247393b2f08f1b474a063c977b54ad39787ace
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332349"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544608"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：鎖定爭用的比率很高
 
-|||
+|Item|值|
 |-|-|
 |規則 ID|DA0038|
 |類別|.NET Framework 使用方式|

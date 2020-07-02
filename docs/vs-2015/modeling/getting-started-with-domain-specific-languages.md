@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c7e8ca0fa1558ce0a2d37d4e11a35ba10a27fd2d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 6fe720b380133d15f9bc60485896d4b7acbf2c4b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919085"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543191"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>開始使用網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,39 +24,39 @@ ms.locfileid: "75919085"
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>您可以使用特定領域語言來做什麼？
  網域指定的語言是一種標記法，通常是圖形化，專門設計用於特定用途。 相反地，UML 這類語言就是一般用途。 在 DSL 中，您可以定義模型專案和其關聯性的類型，以及它們在畫面上的呈現方式。
 
- 當您已設計 DSL 時，您可以將它散發為 Visual Studio 整合擴充功能（VSIX）封裝的一部分。 使用者可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中使用 DSL：
+ 當您已設計 DSL 時，您可以將它散發為 Visual Studio 整合擴充功能（VSIX）封裝的一部分。 使用者在中使用 DSL [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ：
 
- ![系列樹圖表、工具箱和 explorer](../modeling/media/familyt-instance.png "FamilyT_Instance")
+ ![家譜圖表、工具箱和總管](../modeling/media/familyt-instance.png "FamilyT_Instance")
 
  標記法只是 DSL 的一部分。 除了標記法，您的 VSIX 封裝還包含使用者可以套用的工具，以協助他們從其模型編輯和產生材質。
 
  Dsl 的其中一個主要應用程式是產生程式碼、設定檔和其他成品。 特別是在大型專案和產品線中，將會建立產品的數種變化，從 Dsl 產生許多變動層面可以提供較大的可靠性，以及對需求變更的快速回應。
 
- 本總覽的其餘部分是逐步解說，介紹在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中建立和使用特定領域語言的基本作業。
+ 本總覽的其餘部分是逐步解說，介紹在中建立和使用特定領域語言的基本作業 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>必要條件
  若要定義 DSL，您必須已安裝下列元件：
 
-|||
+|Products|下載連結|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
 |Visual Studio 的模型化 SDK|[下載 MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>建立 DSL 解決方案
- 若要建立新的特定領域語言，請使用 [網域指定的語言] 專案範本建立新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案。
+ 若要建立新的特定領域語言，您可以 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用 [網域指定的語言] 專案範本建立新的方案。
 
 #### <a name="to-create-a-dsl-solution"></a>建立 DSL 方案
 
-1. 在 [檔案] 功能表中，指向 [新增]，然後按一下 [專案]。
+1. 在 **[檔案]** 功能表上，指向 **[開新檔案]**，然後按一下 **[專案]**。
 
 2. 在 [**專案類型**] 底下，展開 [**其他專案類型**] 節點，**然後按一下 [** 擴充性]。
 
 3. 按一下 [**網域指定的語言設計**工具]。
 
-    ![建立 DSL 對話方塊](../modeling/media/create-dsldialog.png "Create_DSLDialog")
+    ![[建立 DSL] 對話方塊](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
-4. 在 [**名稱**] 方塊中，輸入**FamilyTree**。 按一下 [ **確定**]。
+4. 在 [**名稱**] 方塊中，輸入**FamilyTree**。 按一下 [確定] 。
 
     [**網域指定的語言嚮導]** 隨即開啟，並顯示範本 DSL 解決方案的清單。
 
@@ -70,9 +70,9 @@ ms.locfileid: "75919085"
 
    - 選擇與您電腦中的任何應用程式無關的延伸模組，或是在您要安裝 DSL 的任何電腦上。 例如， **.docx**和**htm**會是無法接受的副檔名。
 
-   - 如果您已輸入的副檔名正用來做為 DSL，精靈將會警告您。 請考慮使用不同的副檔名。 您也可以重設 Visual Studio SDK Experimental 執行個體以清除舊的實驗設計工具。 依序按一下 **開始**、**所有程式**、 **Microsoft Visual Studio 2010 SDK**、**工具**，然後**重設 Microsoft Visual Studio 2010 實驗實例**。
+   - 如果您已輸入的副檔名正用來做為 DSL，精靈將會警告您。 請考慮使用不同的副檔名。 您也可以重設 Visual Studio SDK Experimental 執行個體以清除舊的實驗設計工具。 依序按一下 [**開始**]、[**所有程式**]、 **Microsoft Visual Studio 2010 SDK**、**工具**]，然後**重設 Microsoft Visual Studio 2010 實驗實例**。
 
-7. 檢查其他頁面，然後按一下 **[完成]** 。
+7. 檢查其他頁面，然後按一下 **[完成]**。
 
     會產生包含兩個專案的方案。 其命名為 Dsl 和 DslPackage。 隨即會開啟名為 Dsldefinition.dsl 檔的圖表檔案。
 
@@ -92,9 +92,9 @@ ms.locfileid: "75919085"
 
 - **Dsl 專案**此專案包含可定義特定領域語言的程式碼。
 
-- **DslPackage 專案**此專案包含的程式碼可讓您在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中開啟和編輯 DSL 的實例。
+- **DslPackage 專案**此專案包含的程式碼可讓您在中開啟和編輯 DSL 的實例 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
 
-## <a name="Debugging"></a>執行 DSL
+## <a name="running-the-dsl"></a><a name="Debugging"></a>執行 DSL
  您可以在建立 DSL 解決方案後立即執行。 之後，您可以逐步修改 DSL 定義，在每次變更之後再次執行解決方案。
 
 #### <a name="to-experiment-with-the-dsl"></a>若要使用 DSL 進行實驗
@@ -106,13 +106,13 @@ ms.locfileid: "75919085"
 
 2. 按 F5 鍵，或在 [**調試**] 功能表上，按一下 [**開始調試**]。
 
-    DSL 會建立並安裝在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗實例中。
+    DSL 會建立並安裝在的實驗實例中 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
 
-    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。 實驗實例會從登錄的個別子樹中取得其設定，其中 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組會針對進行調試而註冊。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的一般實例無法存取已在該處註冊的延伸模組。
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。 實驗實例會從登錄的個別子樹中取得其設定，其中的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組會針對進行調試而進行註冊。 的一般實例 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 無法存取在該處註冊的延伸模組。
 
-3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗實例中，從**方案總管**開啟名為**Test**的模型檔案。
+3. 在的實驗實例中 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，從**方案總管**開啟名為**Test**的模型檔案。
 
-    \-或-
+    \- 或 -
 
     以滑鼠右鍵按一下 [調試] 專案，指向 [**加入**]，然後按一下 [**專案**]。 在 [**新增專案**] 對話方塊中，選取 DSL 的檔案類型。
 
@@ -128,7 +128,7 @@ ms.locfileid: "75919085"
 
 5. 按一下圖形的標籤來變更它們。
 
-   您的實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 如下列範例所示：
+   您 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗會如下列範例所示：
 
    ![](../modeling/media/dsl-min.png "DSL_min")
 
@@ -139,12 +139,12 @@ ms.locfileid: "75919085"
 
  當您編輯模型時，您可以將模型視為**瀏覽器**視圖中的樹狀結構。 當您將圖形加入至圖表時，模型元素也會出現在 explorer 中。 即使沒有圖表，也可以使用 explorer。
 
- 如果您在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的偵錯工具實例中看不到 Explorer，請在 [ **View** ] 功能表上指向 [**其他視窗**]，然後按一下 [ *\<您的語言 >* **Explorer**]。
+ 如果您在的「調試」實例中看不到 [Explorer] [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，請在 [ **View** ] 功能表上指向 [**其他視窗**]，然後按一下 [ *\<Your Language>* **Explorer**]。
 
 ### <a name="the-api-of-your-dsl"></a>DSL 的 API
  您的 DSL 會產生 API，可讓您讀取和更新屬於 DSL 實例的模型。 API 的其中一個應用程式是從模型產生文字檔。 如需詳細資訊，請參閱[使用 T4 文字模板產生設計階段程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
- 在調試方案中，開啟副檔名為 ". tt" 的範本檔案。 這些範例會示範如何從模型產生文字，並可讓您測試 DSL 的 API。 其中一個範例是以 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]的方式撰寫，另一個則 [!INCLUDE[csprcs](../includes/csprcs-md.md)]。
+ 在調試方案中，開啟副檔名為 ". tt" 的範本檔案。 這些範例會示範如何從模型產生文字，並可讓您測試 DSL 的 API。 其中一個範例是以撰寫，另一個則是在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 。
 
  在每個範本檔案下，都是它所產生的檔案。 在方案總管中展開範本檔案，然後開啟產生的檔案。
 
@@ -156,13 +156,13 @@ ms.locfileid: "75919085"
 
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>變更模型檔案之後重新產生文字檔
 
-1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗實例中，儲存模型檔案。
+1. 在的實驗實例中 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，儲存模型檔案。
 
 2. 請確定每個 tt 檔案中的檔案名參數都是指您用於實驗的模型檔案。 儲存 tt 檔案。
 
 3. 按一下**方案總管**工具列中的 [**轉換所有範本**]。
 
-    \-或-
+    \- 或 -
 
     以滑鼠右鍵按一下您要重新產生的範本，然後按一下 [**執行自訂工具**]。
 
@@ -174,7 +174,7 @@ ms.locfileid: "75919085"
  如需詳細資訊，請參閱[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)和[撰寫程式碼，以自訂域特定語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
 
 ## <a name="customizing-the-dsl"></a>自訂 DSL
- 當您想要修改 DSL 定義時，請關閉實驗性實例，並更新主要 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 實例中的定義。
+ 當您想要修改 DSL 定義時，請關閉實驗性實例，並更新主要實例中的定義 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
 
 > [!NOTE]
 > 修改 DSL 定義之後，您可能會遺失使用舊版所建立之測試模型中的資訊。  例如，偵錯工具包含名為 Sample 的檔案，其中包含一些圖形和連接器。 在您開始開發 DSL 定義之後，它們將不會顯示，而且當您儲存檔案時將會遺失。
@@ -190,7 +190,7 @@ ms.locfileid: "75919085"
 
 1. 在 Dsldefinition.dsl 檔圖中，將**examplemodel.store.customer**重新命名為**FamilyTreeModel**、 **ExampleElement**為**Person**、將**目標**設為**父代**，以及將**來源**設為**子**系。 您可以按一下每個標籤來變更它。
 
-     ![DSL 定義圖表&#45;系列樹狀結構模型](../modeling/media/familyt-person.png "FamilyT_Person")
+     ![DSL 定義圖表 &#45; 家族樹狀結構模型](../modeling/media/familyt-person.png "FamilyT_Person")
 
 2. 重新命名元素和連接器工具。
 
@@ -198,11 +198,11 @@ ms.locfileid: "75919085"
 
     2. 開啟屬性視窗並定位，讓您可以同時查看 [DSL Explorer] 和 [屬性]。
 
-    3. 在 [DSL Explorer] 中，展開 [**編輯器** **]、[工具箱]** 索引標籤、 *\<DSL >* ，然後按 [**工具**]
+    3. 在 [DSL Explorer] 中，展開 [**編輯器** **]、[工具箱]** 索引標籤、 *\<your DSL>* 和 [**工具**]
 
     4. 按一下 [ **ExampleElement**]。 這是用來建立元素的 [工具箱] 專案。
 
-    5. 在 屬性視窗中，將 **名稱** 屬性變更為**Person**。
+    5. 在 [屬性視窗中，將 [**名稱**] 屬性變更為**Person**。
 
          請注意， **Caption**屬性也會變更。
 
@@ -214,9 +214,9 @@ ms.locfileid: "75919085"
 
     2. 在方案總管的工具列中，按一下 [**轉換所有範本**]。
 
-    3. 請按 F5。 等到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗實例出現為止。
+    3. 按下 F5。 等到的實驗實例出現為止 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
 
-4. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗實例中的調試方案中，開啟測試模型檔案。 從 [工具箱] 將專案拖曳至其上。 請注意，[DSL Explorer] 中的工具標題和類型名稱已變更。
+4. 在實驗實例的調試方案中 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，開啟測試模型檔案。 從 [工具箱] 將專案拖曳至其上。 請注意，[DSL Explorer] 中的工具標題和類型名稱已變更。
 
 5. 儲存模型檔案。
 
@@ -247,9 +247,9 @@ ms.locfileid: "75919085"
 
    3. 新增兩個名稱為**BirthDecorator**和**DeathDecorator**的裝飾專案。
 
-   4. 選取每個新的裝飾專案，然後在 屬性視窗中設定 **位置** 欄位。 這會決定要在圖形上顯示網域屬性值的位置。 例如，設定**InnerBottomLeft**和**InnerBottomRight**。
+   4. 選取每個新的裝飾專案，然後在 [屬性視窗中設定 [**位置**] 欄位。 這會決定要在圖形上顯示網域屬性值的位置。 例如，設定**InnerBottomLeft**和**InnerBottomRight**。
 
-        ![區間圖形定義](../modeling/media/familyt-compartment.png "FamilyT_Compartment")
+        ![區間圖案定義](../modeling/media/familyt-compartment.png "FamilyT_Compartment")
 
 3. 將裝飾專案對應至屬性。
 
@@ -265,7 +265,7 @@ ms.locfileid: "75919085"
 
 6. 在 tt 檔案中，您可以加入程式碼來取得每個人的屬性。
 
-   ![系列樹圖表、工具箱和 explorer](../modeling/media/familyt-instance.png "FamilyT_Instance")
+   ![家譜圖表、工具箱和總管](../modeling/media/familyt-instance.png "FamilyT_Instance")
 
 ### <a name="define-new-classes"></a>定義新的類別
  您可以將網域類別和關聯性加入至模型。 例如，您可以建立新的類別來代表城鎮，並使用新的關聯性來表示居住在城鎮的人。
@@ -291,7 +291,7 @@ ms.locfileid: "75919085"
 
     1. 按一下 [**參考關聯**性] 工具，按一下 [人員]，然後按一下 [城鎮]。
 
-         ![DSL 定義片段：家族樹狀結構根目錄](../modeling/media/familyt-root.png "FamilyT_Root")
+         ![DSL 定義片段：家譜根部](../modeling/media/familyt-root.png "FamilyT_Root")
 
         > [!NOTE]
         > 參考關聯性代表從模型樹狀結構的某個部分到另一個部分的交互參考。
@@ -300,7 +300,7 @@ ms.locfileid: "75919085"
 
     1. 將 [ **Geometry] 圖形**從 [工具箱] 拖曳至圖表，然後將它重新命名，例如**TownShape**。
 
-    2. 在 屬性視窗中，設定新圖形的外觀欄位，例如 填滿色彩 和 幾何。
+    2. 在 [屬性視窗中，設定新圖形的外觀欄位，例如 [填滿色彩] 和 [幾何]。
 
     3. 新增裝飾專案以顯示城鎮的名稱，並將它重新命名為 NameDecorator。 設定其 Position 屬性。
 
@@ -316,13 +316,13 @@ ms.locfileid: "75919085"
 
     2. 使用 [**圖表專案對應**] 工具，將新的連接器連結到 Person 和城鎮之間的關聯性。
 
-         ![已加入圖形地圖的家族樹狀定義](../modeling/media/familyt-shapemap.png "FamilyT_ShapeMap")
+         ![已加入圖案對應的家譜定義](../modeling/media/familyt-shapemap.png "FamilyT_ShapeMap")
 
 6. 建立一個用於建立新城鎮的元素工具。
 
     1. 在**DSL Explorer**中，展開 [**編輯器** **] 和 [工具箱]** 索引標籤。
 
-    2. 以滑鼠右鍵按一下 *\<您的 DSL >* 然後按一下 [**新增專案工具**]。
+    2. 以滑鼠右鍵按一下 *\<your DSL>* ，然後按一下 [**加入新**的專案工具]。
 
     3. 設定新工具的 [**名稱**] 屬性，並將其 [**類別**] 屬性設為 [城鎮]。
 
@@ -330,7 +330,7 @@ ms.locfileid: "75919085"
 
 7. 建立連接器工具來建立城鎮與人員之間的連結。
 
-    1. 以滑鼠右鍵按一下 *\<您的 DSL >* 然後按一下 [新增**連接器工具**]。
+    1. 按一下滑鼠右鍵 *\<your DSL>* ，然後按一下 [**新增連接器工具**]。
 
     2. 設定新工具的 Name 屬性。
 
@@ -340,7 +340,7 @@ ms.locfileid: "75919085"
 
 8. 儲存 DSL 定義，按一下 [**轉換所有範本**]，然後按**F5**。
 
-9. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗實例中，開啟測試模型檔案。 使用新的工具來建立城鎮和城鎮和 person 之間的連結。 請注意，您只能在正確類型的元素之間建立連結。
+9. 在的實驗實例中 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，開啟測試模型檔案。 使用新的工具來建立城鎮和城鎮和 person 之間的連結。 請注意，您只能在正確類型的元素之間建立連結。
 
 10. 建立程式碼，以列出每個人居住的城市。 文字模板是您可以執行這類程式碼的其中一個地方。 例如，您可以修改偵錯工具中的現有 Sample.tt 檔，使其包含下列程式碼：
 
@@ -372,29 +372,29 @@ ms.locfileid: "75919085"
 ## <a name="validation-and-commands"></a>驗證和命令
  您可以藉由加入驗證條件約束，進一步開發此 DSL。 這些條件約束是您可以定義的方法，確保模型處於正確的狀態。 例如，您可以定義一個條件約束，以確保子系的出生日期晚于其父系。 如果 DSL 使用者嘗試儲存會中斷任何條件約束的模型，驗證功能就會顯示警告。 如需詳細資訊，請參閱[使用特定領域語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。
 
- 您也可以定義使用者可以叫用的功能表命令。 命令可以修改模型。 他們也可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和外部資源中與其他模型互動。 如需詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+ 您也可以定義使用者可以叫用的功能表命令。 命令可以修改模型。 它們也可以與外部資源的和中的其他模型互動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。 如需詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
 ## <a name="deploying-the-dsl"></a>部署 DSL
- 若要讓其他使用者能夠使用特定領域語言，您可以散發 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組（VSIX）。 當您建立 DSL 方案時，會建立此元件。
+ 若要讓其他使用者能夠使用網域指定的語言，您可以散發 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組（VSIX）。 當您建立 DSL 方案時，會建立此元件。
 
- 找出方案的 bin 資料夾中的 .vsix 檔案。 將它複製到您要安裝它的電腦上。 在該電腦上，按兩下 VSIX 檔案。 DSL 可以用於該電腦上的所有 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 實例。
+ 找出方案的 bin 資料夾中的 .vsix 檔案。 將它複製到您要安裝它的電腦上。 在該電腦上，按兩下 VSIX 檔案。 DSL 可以用於該電腦上的所有實例 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
 
- 您可以使用相同的程式在自己的電腦上安裝 DSL，這樣就不需要使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的實驗實例。
+ 您可以使用相同的程式在自己的電腦上安裝 DSL，這樣就不需要使用的實驗實例 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
 
  如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
 
-## <a name="Reset"></a>移除舊的實驗性 Dsl
- 如果您已建立不再需要的實驗性 Dsl，可以藉由重設 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 實驗實例，將它們從電腦中移除。
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a>移除舊的實驗性 Dsl
+ 如果您已建立不再需要的實驗性 Dsl，可以藉由重設實驗實例，將它們從電腦中移除 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
 
  這會從您的電腦移除所有實驗性 Dsl 和其他實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組。 這些是在偵錯工具模式中執行的延伸模組。
 
- 此程式不會移除已透過執行 VSIX 檔案完整安裝的 Dsl 或其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組。
+ 此程式不會移除透過 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 執行 VSIX 檔案已完整安裝的 dsl 或其他延伸模組。
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>若要重設 Visual Studio 實驗實例
 
-1. 依序按一下 **開始**、**所有程式**、 **Microsoft Visual Studio 2010 SDK**、**工具**，然後**重設 Microsoft Visual Studio 2010 實驗實例**。
+1. 依序按一下 [**開始**]、[**所有程式**]、 **Microsoft Visual Studio 2010 SDK**、**工具**]，然後**重設 Microsoft Visual Studio 2010 實驗實例**。
 
-2. 重建您仍想要使用的任何實驗性 Dsl 或其他實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組。
+2. 重建 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 您仍想要使用的任何實驗性 dsl 或其他實驗性延伸模組。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [瞭解模型、類別和關聯](../modeling/understanding-models-classes-and-relationships.md)性[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md) [Visualizaton 和模型化 SDK](https://www.microsoft.com/download/details.aspx?id=48148)

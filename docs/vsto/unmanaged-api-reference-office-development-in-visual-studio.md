@@ -1,7 +1,7 @@
 ---
-title: 非受控 API 參考 (Visual Studio 中的 Office 開發)
+title: 非受控 API 參考（Visual Studio 中的 Office 開發）
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00db78359154dbda600fb4b58103bc04e89d16b2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 4c1616d24ae9b2c072df4e5708eb98e86611a83d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551318"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540981"
 ---
-# <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>非受控 API 參考 (Visual Studio 中的 Office 開發)
+# <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>非受控 API 參考（Visual Studio 中的 Office 開發）
 
-從 2007 Microsoft Office 系統開始, Office 應用程式會使用[IManagedAddin 介面](../vsto/imanagedaddin-interface.md)介面呼叫隨附[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]的 VSTO 增益集載入器元件。 這個元件是用來協助載入 managed VSTO 增益集。您可以實作這個介面，來建立自己的 VSTO 增益集載入器元件。
+從 2007 Microsoft Office 系統開始，Office 應用程式會使用[IManagedAddin 介面](../vsto/imanagedaddin-interface.md)介面呼叫隨附的 VSTO 增益集載入器元件 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。 這個元件是用來協助載入 managed VSTO 增益集。您可以藉由執行此介面來建立自己的 VSTO 增益集載入器元件。
 
 [!include[Add-ins note](includes/addinsnote.md)]
 

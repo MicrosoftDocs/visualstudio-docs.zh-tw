@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 16c17c6f39980b115b34869fdc6b4912ca94ab0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73144695"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541709"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP App 的網路使用量
 Visual Studio 的 [網路]**** 診斷工具會收集使用 [Windows.Web.Http 應用程式開發介面](/uwp/api/windows.web.http)執行之網路作業的相關資料。 分析這份資料可協助您解決存取和驗證、不正確的快取使用，以及顯示和下載效能不佳等問題。
@@ -23,14 +23,14 @@ Visual Studio 的 [網路]**** 診斷工具會收集使用 [Windows.Web.Http 應
  [網路] 工具僅支援 UWP 應用程式。 目前不支援其他平台。
 
 > [!NOTE]
-> 有關網路工具的更完整說明，請參閱[介紹視覺化工作室的網路工具](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/)。
+> 如需更完整的網路工具描述，請參閱[Visual Studio 的網路工具簡介](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/)。
 
 ## <a name="collect-network-tool-data"></a>收集網路工具資料
  您應該針對 Visual Studio 電腦上開啟的 Visual Studio 專案執行 [網路]**** 工具。
 
 1. 在 Visual Studio 中開啟專案。
 
-2. 在功能表上，按一下 **"調試/性能探測器**"。 選擇 [網路]****，然後選擇 [啟動]****。
+2. 在功能表上，按一下 [ **Debug/Performance Profiler**]。 選擇 [網路]****，然後選擇 [啟動]****。
 
 3. 網路工具會開始收集您應用程式的 HTTP 流量。
 
@@ -53,10 +53,10 @@ Visual Studio 的 [網路]**** 診斷工具會收集使用 [Windows.Web.Http 應
 
  ![網路工具詳細資料窗格](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
-|||
+|名稱|描述|
 |-|-|
 |**標頭**|事件的要求標頭資訊。|
-|**內文**|要求和回應承載資料。|
+|**本文**|要求和回應承載資料。|
 |**參數**|查詢字串參數名稱和值。|
 |**Cookie**|回應和要求 Cookie 資料。|
 |**時間**|取得所選資源的各階段圖表。|
@@ -74,8 +74,8 @@ Visual Studio 的 [網路]**** 診斷工具會收集使用 [Windows.Web.Http 應
 
 ## <a name="see-also"></a>另請參閱
 
-- [運行具有或不帶調試器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
+- [使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [Visual Studio 部落格：Visual Studio 網路檢查簡介](https://devblogs.microsoft.com/visualstudio/)
-- [第 9 頻道 視頻：VS 診斷工具 - 新的網路探測器](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
+- [Channel 9 影片： VS 診斷工具-新的網路 Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

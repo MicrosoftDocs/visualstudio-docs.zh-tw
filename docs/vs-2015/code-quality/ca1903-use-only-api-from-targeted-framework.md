@@ -15,23 +15,23 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fa0d771d99ac8e7a4f4091db90a607cce970bc38
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 10649b4106a280089fd6b086167c7e92bff1300b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917820"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545245"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903：只使用來自目標架構的 API
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:只使用來自目標架構的 API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如需 Visual Studio 的最新檔，請參閱[CA1903：僅使用來自目標架構的 API](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework)。
 
-|||
+|Item|值|
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|分類|Microsoft 可攜性|
+|類別|Microsoft 可攜性|
 |中斷變更|中斷-針對外部可見成員或類型的簽章引發。<br /><br /> 非中斷-在方法的主體中引發時。|
 
 ## <a name="cause"></a>原因
@@ -42,7 +42,7 @@ ms.locfileid: "75917820"
 
  **目標 Framework 和 Service Pack 相依性**
 
-|||
+|Item|值|
 |-|-|
 |當目標 framework 為|在中引進的成員使用方式時引發|
 |.NET Framework 2.0|.NET Framework 2.0 SP1，.NET Framework 2.0 SP2|
@@ -68,5 +68,5 @@ ms.locfileid: "75917820"
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Portability.UseOnlyApiFromTargetedFramework2/CS/FxCop.Portability.UseOnlyApiFromTargetedFramework2.cs#1)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [以特定 .NET Framework 版本為目標的](../ide/targeting-a-specific-dotnet-framework-version.md)可[移植性警告](../code-quality/portability-warnings.md)

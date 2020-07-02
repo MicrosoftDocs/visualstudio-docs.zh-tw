@@ -2,7 +2,7 @@
 title: 定義 Python 專案的自訂功能表命令
 description: 您可以藉由編輯專案和目標檔案，將自訂命令新增至 Visual Studio 中的 Python 專案操作功能表，以叫用可執行程式、指令碼、模組、內嵌程式碼片段，以及 pip。
 ms.date: 11/12/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aee42648eb4a2de3611d20fc0ca83ff898ad1fa9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183076"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540864"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>定義 Python 專案的自訂命令
 
@@ -133,9 +133,9 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 
 | 屬性 | 必要 | 描述 |
 | --- | --- | --- |
-| 名稱 | Yes | Visual Studio 專案中的命令識別項。 您必須將此名稱新增至 `<PythonCommands>` 屬性群組，命令才會顯示在 [Python] 子功能表上。 |
-| 標籤 | Yes | [Python] 子功能表上顯示的 UI 顯示名稱。 |
-| 傳回 | Yes | 必須包含可將目標識別為命令的 `@(Commands)`。 |
+| 名稱 | 是 | Visual Studio 專案中的命令識別項。 您必須將此名稱新增至 `<PythonCommands>` 屬性群組，命令才會顯示在 [Python] 子功能表上。 |
+| 標籤 | 是 | [Python] 子功能表上顯示的 UI 顯示名稱。 |
+| 傳回 | 是 | 必須包含可將目標識別為命令的 `@(Commands)`。 |
 
 ### <a name="createpythoncommanditem-attributes"></a>CreatePythonCommandItem 屬性
 
@@ -143,13 +143,13 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 
 | 屬性 | 必要 | 描述 |
 | --- | --- | --- |
-| TargetType | Yes | 指定目標屬性的內容，以及其搭配 Arguments 屬性使用的方式：<ul><li>****：執行在 Target 中命名的可執行檔，附加 Arguments 中的值，使其看似直接在命令列上輸入。 此值只能包含程式名稱，而不能包含引數。</li><li>**script**：以 Target 中的檔案名稱執行 *python.exe*，後面接著 Arguments 中的值。</li><li>**module**：執行 `python -m`，後面依序接著 Target 中的模組名稱及 Arguments 中的值。</li><li>**code**：執行 Target 中包含的內嵌程式碼。 這會忽略 Arguments 值。</li><li>**pip**：以 Target 中的命令執行 `pip`，後面接著 Arguments，is ExecuteIn 設定為 "output"，但 PIP 會假設 `install` 命令並將 Target 用作套件名稱。</li></ul> |
-| 目標 | Yes | 要使用的檔案名稱、模組名稱、程式碼或 PIP 命令，端視 TargetType 而定。 |
-| 引數 | 選用 | 指定要指派至目標的引數字串 (如果有的話)。 請注意，當 TargetType 為 `script` 時，引數會指派至 Python 程序，而非 *python.exe*。 若為 `code` TargetType 請予以略過。 |
-| ExecuteIn | Yes | 指定要在其中執行命令的環境：<ul><li>**console**：(預設) 將 Target 與 Arguments 視作直接在命令列上輸入加以執行。 命令視窗會在 Target 執行時顯示，然後自動關閉。</li><li>**consolepause**：與 console 相同，但會在關閉視窗前等待按鍵動作。</li><li>**output**：執行 Target，並在 Visual Studio 的 [輸出]**** 視窗中顯示其結果。 若 TargetType 為 "pip"，Visual Studio 會將 Target 用作套件名稱並在後面加上 Arguments。</li><li>**repl**：在 [Python 互動式](python-interactive-repl-in-visual-studio.md)視窗中執行 Target；選擇性顯示名稱會用於視窗標題。</li><li>**none**：行為與 console 相同。</li></ul>|
-| WorkingDirectory | 選用 | 要在其中執行命令的資料夾。 |
-| ErrorRegex<br>WarningRegEx | 選用 | 僅在 ExecuteIn 為 `output` 時使用。 這兩個值均會指定規則運算式，Visual Studio 將用以剖析命令輸出，並在其 [錯誤清單]**** 視窗中顯示錯誤與警告。 若未指定，則命令並不會影響 [錯誤清單]**** 視窗。 如需有關 Visual Studio 要求的詳細資訊，請參閱[具名擷取群組](#named-capture-groups-for-regular-expressions)。 |
-| RequiredPackages | 選用 | 命令的套件需求清單，格式與 [*requirements.txt*](https://pip.pypa.io/en/stable/user_guide/#requirements-files) (pip.readthedocs.io) 相同。 例如 [執行 PyLint]**** 命令會指定 `pylint>=1.0.0`。 執行命令前，Visual Studio 會檢查清單中的所有套件皆已安裝。 Visual Studio 會使用 PIP 來安裝所有缺少的套件。 |
+| TargetType | 是 | 指定目標屬性的內容，以及其搭配 Arguments 屬性使用的方式：<ul><li>****：執行在 Target 中命名的可執行檔，附加 Arguments 中的值，使其看似直接在命令列上輸入。 此值只能包含程式名稱，而不能包含引數。</li><li>**script**：以 Target 中的檔案名稱執行 *python.exe*，後面接著 Arguments 中的值。</li><li>**module**：執行 `python -m`，後面依序接著 Target 中的模組名稱及 Arguments 中的值。</li><li>**code**：執行 Target 中包含的內嵌程式碼。 這會忽略 Arguments 值。</li><li>**pip**：以 Target 中的命令執行 `pip`，後面接著 Arguments，is ExecuteIn 設定為 "output"，但 PIP 會假設 `install` 命令並將 Target 用作套件名稱。</li></ul> |
+| 目標 | 是 | 要使用的檔案名稱、模組名稱、程式碼或 PIP 命令，端視 TargetType 而定。 |
+| 引數 | 選擇性 | 指定要指派至目標的引數字串 (如果有的話)。 請注意，當 TargetType 為 `script` 時，引數會指派至 Python 程序，而非 *python.exe*。 若為 `code` TargetType 請予以略過。 |
+| ExecuteIn | 是 | 指定要在其中執行命令的環境：<ul><li>**console**：(預設) 將 Target 與 Arguments 視作直接在命令列上輸入加以執行。 命令視窗會在 Target 執行時顯示，然後自動關閉。</li><li>**consolepause**：與 console 相同，但會在關閉視窗前等待按鍵動作。</li><li>**output**：執行 Target，並在 Visual Studio 的 [輸出]**** 視窗中顯示其結果。 若 TargetType 為 "pip"，Visual Studio 會將 Target 用作套件名稱並在後面加上 Arguments。</li><li>**repl**：在 [Python 互動式](python-interactive-repl-in-visual-studio.md)視窗中執行 Target；選擇性顯示名稱會用於視窗標題。</li><li>**none**：行為與 console 相同。</li></ul>|
+| WorkingDirectory | 選擇性 | 要在其中執行命令的資料夾。 |
+| ErrorRegex<br>WarningRegEx | 選擇性 | 僅在 ExecuteIn 為 `output` 時使用。 這兩個值均會指定規則運算式，Visual Studio 將用以剖析命令輸出，並在其 [錯誤清單]**** 視窗中顯示錯誤與警告。 若未指定，則命令並不會影響 [錯誤清單]**** 視窗。 如需有關 Visual Studio 要求的詳細資訊，請參閱[具名擷取群組](#named-capture-groups-for-regular-expressions)。 |
+| RequiredPackages | 選擇性 | 命令的套件需求清單，格式與 [*requirements.txt*](https://pip.pypa.io/en/stable/user_guide/#requirements-files) (pip.readthedocs.io) 相同。 例如 [執行 PyLint]**** 命令會指定 `pylint>=1.0.0`。 執行命令前，Visual Studio 會檢查清單中的所有套件皆已安裝。 Visual Studio 會使用 PIP 來安裝所有缺少的套件。 |
 | 環境 | 選用 | 可在執行命令前定義的環境變數字串。 每個變數會使用表單 \<NAME> = \<VALUE> ，並以分號分隔多個變數。 具有多個值的變數須以單引號或雙引號括住，例如 'NAME=VALUE1;VALUE2'。 |
 
 #### <a name="named-capture-groups-for-regular-expressions"></a>規則運算式的擷取群組
@@ -306,7 +306,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
   </Target>
 ```
 
-*From [fxthomas/Example. .pyproj .xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) （GitHub），與許可權搭配使用。*
+*From [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) （GitHub），與許可權搭配使用。*
 
 ### <a name="generate-windows-installer"></a>產生 Windows Installer
 
@@ -325,7 +325,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
   </Target>
 ```
 
-*From [fxthomas/Example. .pyproj .xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) （GitHub），與許可權搭配使用。*
+*From [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) （GitHub），與許可權搭配使用。*
 
 ### <a name="generate-wheel-package"></a>產生 wheel 套件
 
@@ -345,7 +345,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 </Target>
 ```
 
-*From [fxthomas/Example. .pyproj .xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) （GitHub），與許可權搭配使用。*
+*From [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) （GitHub），與許可權搭配使用。*
 
 ## <a name="troubleshooting"></a>疑難排解
 

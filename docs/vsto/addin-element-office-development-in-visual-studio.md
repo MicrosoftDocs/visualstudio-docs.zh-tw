@@ -1,8 +1,8 @@
 ---
-title: '&lt;增益集&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
+title: '&lt;.addin &gt; 元素（Visual Studio 中的 Office 程式開發）'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3ab7b0617f09b98c9e30c7f198ef0e2aaa301e33
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf922799301aef67ee70c480dd9e0823382cbd47
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931002"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543763"
 ---
-# <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;增益集&gt;元素 （在 Visual Studio 中的 Office 程式開發）
-  **Addin**項目`vstav3`命名空間包含的是 Microsoft Office VSTO 增益集和使用 Visual Studio 開發的文件層級自訂專屬的資訊。
+# <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;.addin &gt; 元素（Visual Studio 中的 Office 程式開發）
+  命名空間的 **.addin**元素 `vstav3` 包含 Microsoft Office VSTO 增益集和使用 Visual Studio 所開發之檔層級自訂的特定資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -50,28 +50,28 @@ ms.locfileid: "62931002"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和屬性
- **Addin**項目`vstav3`命名空間包含 Office 方案和 Microsoft Office 應用程式的相關資訊。 此項目必須位於下列命名空間中： `vstav3=urn:schemas-microsoft-com:vsta.v3`。 子項目也必須在這個命名空間中。
+ 命名空間的 **.addin**元素 `vstav3` 包含 Office 方案和 Microsoft Office 應用程式的相關資訊。 此項目必須位於下列命名空間： `vstav3=urn:schemas-microsoft-com:vsta.v3`。 子項目也必須在這個命名空間中。
 
  `addin` 項目沒有任何屬性。
 
  `addin` 項目具有下列子項目。
 
 ### <a name="entrypoints"></a>entryPoints
- 必要項。 **進入點**項目所述[&#60;進入點&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)。
+ 必要。 &#60;e&#62; 元素中會描述**e**元素[&#40;Visual Studio&#41;中的 Office 開發](../vsto/entrypoints-element-office-development-in-visual-studio.md)。
 
-### <a name="update"></a>更新
- 必要項。 **更新**項目所述[&#60;更新&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/update-element-office-development-in-visual-studio.md)。
+### <a name="update"></a>update
+ 必要。 **Update**元素會在[Visual Studio&#41;中 &#40;Office 開發&#60;更新&#62; 元素](../vsto/update-element-office-development-in-visual-studio.md)中加以描述。
 
 ### <a name="postactions"></a>postActions
- 選擇性。 **PostActions**項目所述[ &#60;postActions&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)。
+ 選擇性。 &#60;P s&#62; 元素中會描述**p s**元素[&#40;Visual Studio&#41;中的 Office 開發](../vsto/postactions-element-office-development-in-visual-studio.md)。
 
 ### <a name="application"></a>應用程式
- 必要項。 **應用程式**項目所述[&#60;應用程式&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/application-element-office-development-in-visual-studio.md)。
+ 必要。 **應用程式**元素會在[Visual Studio&#41;中&#60;應用程式&#62; 元素 &#40;Office 程式開發](../vsto/application-element-office-development-in-visual-studio.md)中加以描述。
 
-## <a name="document-level-customization-example"></a>文件層級自訂範例
+## <a name="document-level-customization-example"></a>檔層級自訂範例
 
 ### <a name="description"></a>描述
- 下列程式碼範例說明**addin**您可以使用部署之文件層級 Office 方案中的項目[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
+ 下列程式碼範例說明使用部署之檔層級 Office 方案中的 **.addin**元素 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 這個程式碼範例是[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
 
@@ -135,7 +135,7 @@ ms.locfileid: "62931002"
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例
 
 ### <a name="description"></a>描述
- 下列程式碼範例說明**addin**您可以使用部署應用程式層級 Office 方案中的項目[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
+ 下列程式碼範例說明使用部署之應用層級 Office 方案中的 **.addin**元素 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 這個程式碼範例是[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
 

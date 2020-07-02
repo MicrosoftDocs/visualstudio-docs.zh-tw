@@ -15,33 +15,33 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c4da0414c9923a8ed7bb01456f38000433641522
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 14c50ed94f05401cc5575af9f8b98472c35b261d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919226"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543997"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709：識別項名稱應該使用正確的大小寫
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709:識別項名稱應該使用正確的大小寫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如需 Visual Studio 的最新檔，請參閱[CA1709：識別碼的大小寫應正確](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)。
 
-|||
+|Item|值|
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|分類|Microsoft. 命名|
+|類別|Microsoft. 命名|
 |中斷變更|中斷-在元件、命名空間、類型、成員和參數上引發時。<br /><br /> 非中斷-在泛型型別參數上引發時。|
 
 ## <a name="cause"></a>原因
  識別碼的名稱不是正確的大小寫。
 
- \-或-
+ \- 或 -
 
  識別碼的名稱包含兩個字母的縮寫，而第二個字母則是小寫。
 
- \-或-
+ \- 或 -
 
  識別碼的名稱包含三個或多個大寫字母的縮略字。
 
@@ -65,4 +65,4 @@ ms.locfileid: "75919226"
  您也可以在程式碼分析自訂字典中加入特定詞彙、縮寫和縮略字。 在自訂字典中指定的詞彙不會造成此規則違規。 如需詳細資訊，請參閱[如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 ## <a name="related-rules"></a>相關規則
- [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

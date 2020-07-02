@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 445eaf5269ce59e6f6f8fa323020a80648567f54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.openlocfilehash: df93a87285bdf1172e75b63ed956c1aa978fc71e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193620"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545531"
 ---
 # <a name="channels-threads-view"></a>通道 (執行緒檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "68193620"
 ## <a name="thread-channels"></a>執行緒通道  
  執行緒通道以不同色彩為每種執行緒顯示執行緒的狀態。 當您暫停在通道名稱時，會顯示指定執行緒的開始函式。 並行視覺化檢視會偵測幾種執行緒。 下表顯示最常見的種類。  
   
-|||  
+|Thread|描述|  
 |-|-|  
 |主執行緒|啟動應用程式的執行緒。|  
 |背景工作執行緒|應用程式主執行緒所建立的執行緒。|  

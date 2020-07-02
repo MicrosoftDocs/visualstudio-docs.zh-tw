@@ -15,21 +15,21 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9032ac105477370477b13554afe4ee65bd7cd733
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c4ad2f4db9290430bb8a378bd264078370ca7b66
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609010"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543828"
 ---
-# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810：必須初始化參考類型內部的靜態欄位
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810:必須將參考類型內部的靜態欄位初始化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|InitializeReferenceTypeStaticFieldsInline|
 |CheckId|CA1810|
-|Category|Microsoft。效能|
+|類別|Microsoft。效能|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -38,9 +38,9 @@ ms.locfileid: "72609010"
 ## <a name="rule-description"></a>規則描述
  當類型宣告明確的靜態建構函式時，Just-In-Time (JIT) 編譯器會將檢查加入至類型的每個靜態方法和執行個體建構函式，確保之前已呼叫該靜態建構函式。 當存取任何靜態成員或建立類型的實例時，就會觸發靜態初始化。 不過，如果您宣告類型的變數，但不使用它，則不會觸發靜態初始化，如果初始化變更全域狀態，這可能會很重要。
 
- 當所有靜態資料都以內嵌方式初始化，且未宣告明確的靜態函式時，Microsoft 中繼語言（MSIL）編譯器會將 `beforefieldinit` 旗標和隱含靜態資料的程式（其初始化靜態資料）新增至 MSIL 類型清晰. 當 JIT 編譯程式遇到 `beforefieldinit` 旗標時，大部分的情況下都不會加入靜態的檢查函數檢查。 在存取任何靜態欄位之前，或在叫用靜態方法或實例的函式之前，一定會在一段時間後進行靜態初始化。 請注意，在宣告類型的變數之後，任何時間都可能發生靜態初始化。
+ 當所有靜態資料都以內嵌方式初始化，且未宣告明確的靜態函式時，Microsoft 中繼語言（MSIL）編譯器會將 `beforefieldinit` 旗標和隱含靜態資料型別（初始化靜態資料）新增至 MSIL 類型定義。 當 JIT 編譯程式遇到旗標時 `beforefieldinit` ，大部分的情況下都不會加入靜態的檢查函數檢查。 在存取任何靜態欄位之前，或在叫用靜態方法或實例的函式之前，一定會在一段時間後進行靜態初始化。 請注意，在宣告類型的變數之後，任何時間都可能發生靜態初始化。
 
- 靜態建構函式檢查會降低效能。 靜態的函式通常只會用來初始化靜態欄位，在此情況下，您必須確定靜態初始化會在第一次存取靜態欄位之前進行。 @No__t_0 行為適用于這些和大部分的其他類型。 只有當靜態初始化影響全域狀態，而且下列其中一項為真時，才不適合：
+ 靜態建構函式檢查會降低效能。 靜態的函式通常只會用來初始化靜態欄位，在此情況下，您必須確定靜態初始化會在第一次存取靜態欄位之前進行。 此 `beforefieldinit` 行為適用于這些和大部分的其他類型。 只有當靜態初始化影響全域狀態，而且下列其中一項為真時，才不適合：
 
 - 對全域狀態的影響很昂貴，如果未使用類型則不需要。
 
@@ -53,17 +53,18 @@ ms.locfileid: "72609010"
  如果效能不是問題，可以放心地隱藏此規則中的警告;或者，如果靜態初始化所造成的全域狀態變更很耗費資源，或必須保證在呼叫類型的靜態方法或建立類型的實例之前發生。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反規則的類型 `StaticConstructor`，以及會將靜態的函式取代為內嵌初始化以滿足規則的類型（`NoStaticConstructor`）。
+ 下列範例顯示違反規則的型別， `StaticConstructor` 以及一個型別， `NoStaticConstructor` 它會以內嵌初始化來取代靜態的函式以滿足規則。
 
  [!code-csharp[FxCop.Performance.RefTypeStaticCtor#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RefTypeStaticCtor/cs/FxCop.Performance.RefTypeStaticCtor.cs#1)]
  [!code-vb[FxCop.Performance.RefTypeStaticCtor#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.RefTypeStaticCtor/vb/FxCop.Performance.RefTypeStaticCtor.vb#1)]
 
- 請注意，在 `NoStaticConstructor` 類別的 MSIL 定義上加上 `beforefieldinit` 旗標。
+ 請注意，在 `beforefieldinit` 類別的 MSIL 定義上新增旗標 `NoStaticConstructor` 。
 
- **。 class public auto Ansi StaticConstructor 會** **擴充 [mscorlib.dll]** system.string 
+ **。 class public auto ansi StaticConstructor**會**延伸 [mscorlib.dll] system.object** 
  **{** 
- **}//class StaticConstructor 
- 的結尾** **。 class public auto ansi beforefieldinit NoStaticConstructor** **擴充 [mscorlib.dll] System.object** 
- **{** 1 **}//NoStaticConstructor 類別的結尾**
+ **}//class StaticConstructor 的結尾** 
+ **。 class public auto ansi beforefieldinit NoStaticConstructor**會**擴充 [mscorlib.dll]** system.string 
+ **{** 
+ **}//class NoStaticConstructor 的結尾**
 ## <a name="related-rules"></a>相關規則
- [CA2207：必須初始化實值型別的靜態欄位內嵌](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
+ [CA2207:必須將實值類型的靜態欄位內嵌初始化](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

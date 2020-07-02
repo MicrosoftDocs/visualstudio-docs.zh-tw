@@ -15,21 +15,21 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3968d81e8ee18b4b0a56bed50f7aa1f121e1c074
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f689dfd6c1d39bbd03d522a33ed8c5639a3da9f8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663246"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545479"
 ---
-# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011：建議將基底類型當做參數傳遞
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011:建議將基底類型當作參數傳遞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
 |CheckId|CA1011|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -46,18 +46,18 @@ ms.locfileid: "72663246"
 
 - 如果方法需要衍生類型所提供的特定功能
 
-   \-或-
+   \- 或 -
 
 - 若要強制只將衍生的型別或衍生的型別傳遞給方法。
 
   在這些情況下，因為編譯器和執行時間所提供的強型別檢查，所以程式碼會更健全。
 
 ## <a name="example"></a>範例
- 下列範例顯示只能搭配 <xref:System.IO.FileStream> 物件使用的方法 `ManipulateFileStream`，這會違反此規則。 第二個方法 `ManipulateAnyStream`，藉由使用 <xref:System.IO.Stream> 來取代 <xref:System.IO.FileStream> 參數，以滿足規則。
+ 下列範例顯示的方法，只能 `ManipulateFileStream` 與 <xref:System.IO.FileStream> 違反此規則的物件搭配使用。 第二個方法會 `ManipulateAnyStream` 使用來取代參數，以滿足規則 <xref:System.IO.FileStream> <xref:System.IO.Stream> 。
 
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cpp/FxCop.Design.ConsiderPassingBaseTypes.cpp#1)]
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cs/FxCop.Design.ConsiderPassingBaseTypes.cs#1)]
  [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/vb/FxCop.Design.ConsiderPassingBaseTypes.vb#1)]
 
 ## <a name="related-rules"></a>相關規則
- [CA1059：成員不應該公開特定的具象類型](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+ [CA1059:成員不應該公開特定的具象類型](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

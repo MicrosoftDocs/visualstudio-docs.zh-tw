@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bc22ec0c1ec618ed38c9860a110b1130c291ed1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: b6717f524f6a2d3f9f09290ac9bfbd8f02fc23fb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332272"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544543"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503：所分析之處理序的平均工作集 (以位元組為單位)
 
-|||
+|Item|值|
 |-|-|
 |規則 ID|DA0503|
 |類別|資源監視|

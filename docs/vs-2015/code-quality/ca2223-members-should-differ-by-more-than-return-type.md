@@ -15,21 +15,21 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fab269e8f583f8b55f52eb70a5a813450f8a184
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4c1071617572af44a73f98953fd435623190e0e3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658886"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540838"
 ---
-# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223：成員不應該只有在傳回型別上不同
+# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223:成員不應該只有在傳回類型上不同
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
-|Category|Microsoft。使用方式|
+|類別|Microsoft。使用方式|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -45,7 +45,7 @@ ms.locfileid: "72658886"
  請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例（在 Microsoft 中繼語言（MSIL）中）顯示違反此規則的類型。 請注意，您無法使用C#或 Visual Basic .net 來違反這項規則。
+ 下列範例（在 Microsoft 中繼語言（MSIL）中）顯示違反此規則的類型。 請注意，您無法使用 c # 或 Visual Basic .NET 來違反這項規則。
 
 ```
 

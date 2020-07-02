@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d9f0c9a3259186e1581a4673cdc18d1554e92b3c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cc887c6bcef9f8b7307d9d6aa570d6458d87f377
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778488"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541696"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 函式會將字串指派給指定的處理序或執行緒。
@@ -89,10 +89,10 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
 ## <a name="function-information"></a>函式資訊
 
-|||
+|Item|值|
 |-|-|
-|**頭**|包含 *VSPerf.h*|
-|**圖書館**|使用 *VSPerf.lib*|
+|**標頭**|包含 *VSPerf.h*|
+|**程式庫**|使用 *VSPerf.lib*|
 |**Unicode**|實作為 `NameProfileW` (Unicode) 和 `NameProfileA` (ANSI)。|
 
 ## <a name="example"></a>範例
@@ -134,4 +134,4 @@ void ExerciseNameProfile()
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室探測器 API 參考（本機）](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio profiler API 參考（原生）](../profiling/visual-studio-profiler-api-reference-native.md)

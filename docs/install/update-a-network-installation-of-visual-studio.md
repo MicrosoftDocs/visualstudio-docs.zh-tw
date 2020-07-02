@@ -1,7 +1,7 @@
 ---
 title: 更新網路型安裝
 description: 了解如何使用 --layout 命令來更新網路型 Visual Studio 安裝
-ms.date: 01/08/2020
+ms.date: 06/29/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 68acfcd4acc06ff2b370f3d77a30bd4ec21eb6d1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f54ee1191dd998d34e46a442debafc175ce98c8b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114971"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545427"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
 
@@ -29,23 +29,23 @@ ms.locfileid: "76114971"
 ## <a name="how-to-update-a-network-layout"></a>如何更新網路配置
 
 > [!IMPORTANT]
-> 這些說明假定您以前創建了網路安裝佈局。 有關如何執行此操作的詳細資訊，請參閱[創建視覺化工作室頁面的網路安裝](create-a-network-installation-of-visual-studio.md)。
+> 這些指示假設您先前已建立網路安裝版面配置。 如需有關如何執行這項操作的詳細資訊，請參閱[建立 Visual Studio 的網路安裝](create-a-network-installation-of-visual-studio.md)頁面。
 
 若要重新整理您的網路安裝共用，以便其包含最新的更新，請執行 `--layout` 命令，以累加方式下載更新的套件。
 
 ::: moniker range="vs-2017"
 
-**15.3 中的新增**：如果在[首次創建網路佈局](create-a-network-installation-of-visual-studio.md)時選擇了部分佈局，則這些設置將保存。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
+**15.3 的新**功能：如果您在[第一次建立網路](create-a-network-installation-of-visual-studio.md)配置時選取了部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-如果在[首次創建網路佈局](create-a-network-installation-of-visual-studio.md)時選擇了部分佈局，則這些設置將保存。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項
+如果您在[第一次建立網路](create-a-network-installation-of-visual-studio.md)配置時選取了部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項
 
 ::: moniker-end
 
-如果在檔共用上託管佈局，則應更新佈局的私有副本（例如，c：_VSLayout），然後在下載所有更新的內容後將其複製到檔共用（例如，\\伺服器\產品\VS）。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
+如果您在檔案共用上裝載配置，則應該更新配置的私用複本（例如，c:\VSLayout），然後在下載所有更新的內容之後，將它複製到您的檔案共用（例如 \\ server\products\VS）。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
 
 讓我們以一些範例來逐步解說如何在建立後更新配置：
 
@@ -67,24 +67,24 @@ ms.locfileid: "76114971"
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* 以下是如何新增額外的工作負載和當地語系化語言  （此命令添加*Azure 開發*工作負荷。 現在，託管桌面和 Azure 都包含在此佈局中。  所有這些工作負載也會包含英文和德文的語言資源。  而且，配置會更新為最新的可用版本。
+* 以下是如何新增額外的工作負載和當地語系化語言  （此命令會新增*Azure 開發*工作負載）。 現在，受管理的桌面和 Azure 都會包含在此配置中。  所有這些工作負載也會包含英文和德文的語言資源。  而且，配置會更新為最新的可用版本。
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
     > [!IMPORTANT]
-    > 即使您將所新增選擇性元件包含在[回應檔案](automated-installation-with-response-file.md)的「新增」區段中，更新作業也不會安裝這些元件。 這是因為新增作業不會在更新期間使用。
+    > 更新作業不會安裝新加入的選擇性元件。 如果您需要新增的選擇性元件，請移除回應檔案中的舊選用元件，並在的 `Layout.JSON` [response file](automated-installation-with-response-file.md) [新增] 區段中包含所需的元件 `Layout.JSON` 。 
     >
-    > **解決方法**：在升級後運行單獨的修改操作以安裝缺少的元件。
+    > 因應**措施：在升級之後執行個別**的修改作業，以安裝遺失的元件。
 
-* 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。 （此命令增加了*ASP.NET和 Web 開發*工作負載。 現在，託管桌面、Azure 和 ASP.NET& Web 開發工作負荷都包含在此佈局中。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
+* 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。 （此命令會新增*ASP.NET 和 網頁程式開發*工作負載）。 現在，受管理的桌面、Azure 和 ASP.NET & 的 Web 開發工作負載會包含在此版面配置中。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
-## <a name="deploy-an-update-to-client-machines"></a>將更新部署到用戶端電腦
+## <a name="deploy-an-update-to-client-machines"></a>將更新部署至用戶端電腦
 
 根據您網路環境的設定方式，更新可以由企業系統管理員部署或從用戶端電腦起始。
 
@@ -114,7 +114,7 @@ ms.locfileid: "76114971"
 > [!TIP]
 > 如需如何控制顯示更新通知給使用者的詳細資料，請參閱[控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)。
 
-## <a name="verify-a-layout"></a>驗證佈局
+## <a name="verify-a-layout"></a>驗證版面配置
 
 使用 `--verify`，對提供的離線快取執行驗證。 它會檢查套件檔案為遺失或無效。 在驗證結束時，會列印遺失檔案和無效檔案的清單。
 
@@ -125,14 +125,14 @@ vs_enterprise.exe --layout <layoutDir> --verify
 vs_enterprise.exe 可以在 layoutDir 內進行叫用。
 
 > [!NOTE]
-> `--verify` 選項所需的一些重要中繼資料檔案必須在配置離線快取中。 如果遺失這些中繼資料檔案，則無法執行 "--verify"，而且安裝程式會產生錯誤。 如果您遇到此錯誤，請將新的離線配置重新建立到不同的資料夾 (或相同的離線快取資料夾)。 若要這麼做，請執行您用來建立初始離線配置的相同配置命令。 例如： `vs_enterprise.exe --layout <layoutDir>` 。
+> `--verify` 選項所需的一些重要中繼資料檔案必須在配置離線快取中。 如果遺失這些中繼資料檔案，則無法執行 "--verify"，而且安裝程式會產生錯誤。 如果您遇到此錯誤，請將新的離線配置重新建立到不同的資料夾 (或相同的離線快取資料夾)。 若要這麼做，請執行您用來建立初始離線配置的相同配置命令。 例如 `vs_enterprise.exe --layout <layoutDir>`。
 
 Microsoft 會定期提供 Visual Studio 更新，因此，您建立的新配置可能不是與初始配置相同的版本。
 
 > [!NOTE]
 > 驗證僅適用於特定 Visual Studio 次要版本的最新版。 新的版本發行後，驗證即不再適用於同一個次要版本的較舊修補層級版本。
 
-## <a name="fix-a-layout"></a>修復佈局
+## <a name="fix-a-layout"></a>修正版面配置
 
 使用 `--fix` 執行與 `--verify` 相同的驗證，同時嘗試修正已識別的問題。 `--fix` 程序需要網際網路連線，因此請先確定您的電腦連線至網際網路，再叫用 `--fix`。
 
@@ -142,7 +142,7 @@ vs_enterprise.exe --layout <layoutDir> --fix
 
 vs_enterprise.exe 可以在 layoutDir 內進行叫用。
 
-## <a name="remove-older-versions-from-a-layout"></a>從佈局中刪除舊版本
+## <a name="remove-older-versions-from-a-layout"></a>從版面配置中移除較舊的版本
 
 在您執行離線快取的配置更新之後，配置快取資料夾可能有最新 Visual Studio 安裝不再需要的一些過時套件。 您可以使用 `--clean` 選項，從離線快取資料夾中移除過時套件。
 
@@ -168,7 +168,7 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 當您執行此命令時，安裝程式會分析您的離線快取資料夾，以尋找將移除的檔案清單。 您接著可能會檢閱要刪除的檔案，並確認刪除。
 
-## <a name="get-support-for-your-offline-installer"></a>獲取對離線安裝程式的支援
+## <a name="get-support-for-your-offline-installer"></a>取得離線安裝程式的支援
 
 如果您的離線安裝發生問題，我們會想要進行了解。 告訴我們的最簡單方式就是使用[回報問題](../ide/how-to-report-a-problem-with-visual-studio.md)工具。 使用此工具時，您可以將我們所需的遙測和記錄檔傳送給我們，來協助我們診斷及修正問題。
 
@@ -178,9 +178,9 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝視覺化工作室](install-visual-studio.md)
+* [安裝 Visual Studio](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [使用命令列參數安裝視覺化工作室](use-command-line-parameters-to-install-visual-studio.md)
+* [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [用於偵測及管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)
 * [控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
-* [視覺化工作室產品生命週期和服務](/visualstudio/releases/2019/servicing/)
+* [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)

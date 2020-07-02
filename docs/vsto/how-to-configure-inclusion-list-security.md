@@ -1,7 +1,7 @@
 ---
-title: HOW TO：設定內含清單的安全性
+title: 如何：設定包含清單安全性
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,60 +13,60 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ef4d25088e56f2223cb392dbc00c8454e1a291ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826375"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541631"
 ---
-# <a name="how-to-configure-inclusion-list-security"></a>HOW TO：設定內含清單的安全性
-  如果您有系統管理員權限，您可以設定[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示來控制使用者是否可以選擇安裝 Office 方案儲存內含清單信任決策。 關於內含清單的資訊，請參閱[使用內含清單信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。
+# <a name="how-to-configure-inclusion-list-security"></a>如何：設定包含清單安全性
+  如果您具有系統管理員許可權，您可以設定 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 信任提示，以控制使用者是否能透過將信任決策儲存至包含清單的方式來安裝 Office 方案。 如需包含清單的相關資訊，請參閱[使用內含清單信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- 對於每五個區域中的解決方案，您可以設定下列選項：
+ 針對每五個區域中的解決方案，您可以設定下列選項：
 
-- 啟用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示的索引鍵和內含清單。 您可以允許使用者授與信任給 Office 方案的任何憑證所簽署。
+- 啟用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 信任提示金鑰和包含清單。 您可以讓終端使用者將信任授與以任何憑證簽署的 Office 方案。
 
-- 限制[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示的索引鍵和內含清單。 您可以允許使用者安裝已簽署的 Office 方案使用可識別發行者上，但已經不受信任的憑證。
+- 限制 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 信任提示金鑰和包含清單。 您可以讓使用者安裝使用可識別發行者但尚未受信任的憑證簽署的 Office 方案。
 
-- 停用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示的索引鍵和內含清單。 您可以防止使用者安裝未簽署任何 Office 方案明確受信任的憑證。
+- 停用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 信任提示金鑰和包含清單。 您可以防止終端使用者安裝未使用明確信任的憑證簽署的任何 Office 方案。
 
-## <a name="enable-the-inclusion-list"></a>啟用內含清單
- 當您想讓使用者能安裝及執行任何來自該區域的 Office 方案的選項，請啟用區域的包含清單。
+## <a name="enable-the-inclusion-list"></a>啟用包含清單
+ 當您想要讓使用者看到安裝和執行來自該區域的任何 Office 解決方案的選項時，請啟用該區域的包含清單。
 
-### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>若要使用登錄編輯程式中啟用內含清單
+### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>使用登錄編輯程式啟用包含清單
 
-1. 開啟登錄編輯程式：
+1. 開啟 [登錄編輯程式]：
 
-    1. 按一下 [開始]，然後按一下 [執行]。
+    1. 按一下 **[開始]** ，然後按一下 **[執行]** 。
 
-    2. 在 **開放**方塊中，輸入**regedt32.exe**，然後按一下**確定**。
+    2. 在 [**開啟**] 方塊中，輸入**regedt32.exe**，然後按一下 **[確定]**。
 
 2. 尋找下列登錄機碼：
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
-     如果索引鍵不存在，請加以建立。
+     如果機碼不存在，請加以建立。
 
-3. 新增為下列子機碼**字串值**，如果它們尚不存在，與相關的值。
+3. 將下列子機碼新增為**字串值**（如果尚未存在的話）與相關聯的值。
 
-    |字串值的子機碼|值|
+    |字串值子機碼|值|
     |-------------------------|-----------|
-    |**Internet**|**AuthenticodeRequired**|
-    |**UntrustedSites**|**已停用**|
+    |**網際網路**|**AuthenticodeRequired**|
+    |**UntrustedSites**|**Disabled**|
     |**MyComputer**|**已啟用**|
     |**LocalIntranet**|**已啟用**|
     |**TrustedSites**|**已啟用**|
 
-     根據預設，**網際網路**具有值**AuthenticodeRequired**並**UntrustedSites**的值**已停用**。
+     根據預設， **Internet**的值為**AuthenticodeRequired** ，而**UntrustedSites**的值為**Disabled**。
 
-### <a name="to-enable-the-inclusion-list-programmatically"></a>以程式設計方式啟用內含清單
+### <a name="to-enable-the-inclusion-list-programmatically"></a>以程式設計方式啟用包含清單
 
-1. 建立 Visual Basic 或 Visual C# 主控台應用程式。
+1. 建立 Visual Basic 或 Visual c # 主控台應用程式。
 
-2. 開啟*Program.vb*或是*Program.cs*檔案進行編輯，並新增下列程式碼。
+2. 開啟*程式 .vb*或*Program.cs*檔案進行編輯，並加入下列程式碼。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -92,40 +92,40 @@ ms.locfileid: "62826375"
 
 3. 建置並執行應用程式。
 
-## <a name="restrict-the-inclusion-list"></a>限制內含清單
- 限制包含清單，使解決方案必須使用之前會提示使用者信任決策提供有已知識別的 Authenticode 憑證來簽署。
+## <a name="restrict-the-inclusion-list"></a>限制包含清單
+ 限制包含清單，以便在系統提示使用者提供信任決策之前，必須使用具有已知身分識別的 Authenticode 憑證來簽署解決方案。
 
-### <a name="to-restrict-the-inclusion-list"></a>若要限制內含清單
+### <a name="to-restrict-the-inclusion-list"></a>限制包含清單
 
-1. 開啟登錄編輯程式：
+1. 開啟 [登錄編輯程式]：
 
-    1. 按一下 [開始]，然後按一下 [執行]。
+    1. 按一下 **[開始]** ，然後按一下 **[執行]** 。
 
-    2. 在 **開放**方塊中，輸入**regedt32.exe**，然後按一下**確定**。
+    2. 在 [**開啟**] 方塊中，輸入**regedt32.exe**，然後按一下 **[確定]**。
 
 2. 尋找下列登錄機碼：
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
-     如果索引鍵不存在，請加以建立。
+     如果機碼不存在，請加以建立。
 
-3. 新增為下列子機碼**字串值**，如果它們尚不存在，與相關的值。
+3. 將下列子機碼新增為**字串值**（如果尚未存在的話）與相關聯的值。
 
-    |字串值的子機碼|值|
+    |字串值子機碼|值|
     |-------------------------|-----------|
-    |**UntrustedSites**|**已停用**|
-    |**Internet**|**AuthenticodeRequired**|
+    |**UntrustedSites**|**Disabled**|
+    |**網際網路**|**AuthenticodeRequired**|
     |**MyComputer**|**AuthenticodeRequired**|
     |**LocalIntranet**|**AuthenticodeRequired**|
     |**TrustedSites**|**AuthenticodeRequired**|
 
-     根據預設，**網際網路**具有值**AuthenticodeRequired**並**UntrustedSites**的值**已停用**。
+     根據預設， **Internet**的值為**AuthenticodeRequired** ，而**UntrustedSites**的值為**Disabled**。
 
-### <a name="to-restrict-the-inclusion-list-programmatically"></a>若要以程式設計的方式限制內含清單
+### <a name="to-restrict-the-inclusion-list-programmatically"></a>以程式設計方式限制包含清單
 
-1. 建立 Visual Basic 或 Visual C# 主控台應用程式。
+1. 建立 Visual Basic 或 Visual c # 主控台應用程式。
 
-2. 開啟*Program.vb*或是*Program.cs*檔案進行編輯，並新增下列程式碼。
+2. 開啟*程式 .vb*或*Program.cs*檔案進行編輯，並加入下列程式碼。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -151,36 +151,36 @@ ms.locfileid: "62826375"
 
 3. 建置並執行應用程式。
 
-## <a name="disable-the-inclusion-list"></a>停用內含清單
- 您可以停用包含清單，讓使用者只能安裝具有已知信任憑證的已簽署的解決方案。
+## <a name="disable-the-inclusion-list"></a>停用包含清單
+ 您可以停用包含清單，讓終端使用者只能安裝使用受信任的憑證和已知憑證簽署的解決方案。
 
-### <a name="to-disable-the-inclusion-list"></a>若要停用內含清單
+### <a name="to-disable-the-inclusion-list"></a>停用包含清單
 
-1. 開啟登錄編輯程式：
+1. 開啟 [登錄編輯程式]：
 
-    1. 按一下 [開始]，然後按一下 [執行]。
+    1. 按一下 **[開始]** ，然後按一下 **[執行]** 。
 
-    2. 在 **開放**方塊中，輸入**regedt32.exe**，然後按一下**確定**。
+    2. 在 [**開啟**] 方塊中，輸入**regedt32.exe**，然後按一下 **[確定]**。
 
-2. 如果這並不存在，請建立下列登錄機碼：
+2. 建立下列登錄機碼（如果尚未存在）：
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
-3. 新增為下列子機碼**字串值**，如果它們尚不存在，與相關的值。
+3. 將下列子機碼新增為**字串值**（如果尚未存在的話）與相關聯的值。
 
-    |字串值的子機碼|值|
+    |字串值子機碼|值|
     |-------------------------|-----------|
-    |**UntrustedSites**|**已停用**|
-    |**Internet**|**已停用**|
-    |**MyComputer**|**已停用**|
-    |**LocalIntranet**|**已停用**|
-    |**TrustedSites**|**已停用**|
+    |**UntrustedSites**|**Disabled**|
+    |**網際網路**|**Disabled**|
+    |**MyComputer**|**Disabled**|
+    |**LocalIntranet**|**Disabled**|
+    |**TrustedSites**|**Disabled**|
 
-### <a name="to-disable-the-inclusion-list-programmatically"></a>若要以程式設計方式停用內含清單
+### <a name="to-disable-the-inclusion-list-programmatically"></a>以程式設計方式停用包含清單
 
-1. 建立 Visual Basic 或 Visual C# 主控台應用程式。
+1. 建立 Visual Basic 或 Visual c # 主控台應用程式。
 
-2. 開啟*Program.vb*或是*Program.cs*檔案進行編輯，並新增下列程式碼。
+2. 開啟*程式 .vb*或*Program.cs*檔案進行編輯，並加入下列程式碼。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -208,5 +208,5 @@ ms.locfileid: "62826375"
 3. 建置並執行應用程式。
 
 ## <a name="see-also"></a>另請參閱
-- [使用內含清單信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
+- [使用包含清單信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [保護 Office 方案](../vsto/securing-office-solutions.md)

@@ -15,25 +15,25 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: efa328fdff9c357e0183fc2ca80e4d77d4f6782e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19077a63d5aa22bda3f968943703a82488e2745d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661109"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545284"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824：以 NeutralResourcesLanguageAttribute 標記組件
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:組件必須標記 NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
-|Category|Microsoft。效能|
+|類別|Microsoft。效能|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 元件包含以**ResX**為基礎的資源，但未套用 <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>。
+ 元件包含以**ResX**為基礎的資源，但未套用 <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> 至它。
 
 ## <a name="rule-description"></a>規則描述
  **NeutralResourcesLanguage**屬性會通知**ResourceManager** ，這是用來顯示元件中性文化特性之資源的語言。 當它查閱的資源與中性資來源語言相同時， **ResourceManager**會自動使用位於主要元件中的資源。 它會執行這項工作，而不是搜尋具有目前線程之目前使用者介面文化特性的附屬元件。 這可改善載入第一個資源的查詢效能，而且可以減少您的工作集。
@@ -51,7 +51,7 @@ ms.locfileid: "72661109"
 
 3. 在 [**元件資訊**] 對話方塊中，從 [**中性語言**] 下拉式清單中選取語言。
 
-4. 按一下 [確定]。
+4. 按一下 [確定] 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  允許隱藏此規則的警告。 不過，啟動效能可能會降低。

@@ -1,7 +1,7 @@
 ---
 title: 將新的資料列加入至 ListObject 控制項時驗證資料
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f65bbc374c1d0ec2a940ff98fcc6f04e5391b2db
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2b9ed8428f9dd0325678cb91a847609aed76f9b5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255674"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541163"
 ---
-# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>作法：將新的資料列加入至 ListObject 控制項時驗證資料
+# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>如何：在將新的資料列加入至 ListObject 控制項時驗證資料
   使用者可以將新的資料列加入繫結至資料的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。 您可以先驗證使用者的資料，再認可資料來源的變更。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "71255674"
      [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]
      [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]
 
-2. 建立新<xref:System.Data.DataTable>的，並`Startup`在`Sheet1`類別（檔層級專案）或`ThisAddIn`類別（在 VSTO 增益集專案中）的事件處理常式中加入範例資料行和資料。
+2. 建立新的 <xref:System.Data.DataTable> ，並在 `Startup` `Sheet1` 類別（檔層級專案）或 `ThisAddIn` 類別（在 VSTO 增益集專案中）的事件處理常式中加入範例資料行和資料。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]
      [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]
@@ -58,4 +58,4 @@ ms.locfileid: "71255674"
 - [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [ListObject 控制項](../vsto/listobject-control.md)
 - [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
-- [如何：將 ListObject 資料行對應至資料](../vsto/how-to-map-listobject-columns-to-data.md)
+- [如何：將 ListObject 的資料行對應至資料](../vsto/how-to-map-listobject-columns-to-data.md)

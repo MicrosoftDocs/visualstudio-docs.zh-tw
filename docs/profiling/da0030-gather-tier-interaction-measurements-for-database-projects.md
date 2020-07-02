@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e5cff8f76743119409366a0e52d71070d62a9b82
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 47ac30d4a1df36e72b8b12fa9aefb1b36aed6204
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332363"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544595"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：收集資料庫專案的階層互動度量
 
-|||
+|Item|值|
 |-|-|
 |規則 ID|DA0030|
 |類別|分析工具使用方式|

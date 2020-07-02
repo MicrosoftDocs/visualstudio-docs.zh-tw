@@ -1,5 +1,5 @@
 ---
-title: 偵錯 Windows 市集和 Windows 通用應用程式 |Microsoft Docs
+title: Windows Store 和 Windows 通用應用程式的偵錯工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,28 +14,28 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 979808584c788d8b4b30f327a535ae2dfb7479e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8423884393be19149a06b7d30749649e1cf57ff
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205664"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545557"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>對 Windows 市集及 Windows 通用應用程式進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 偵錯工具進行偵錯 Windows 市集應用程式提供完整的支援。  
+Visual Studio 偵錯工具會提供對 Windows Store 應用程式的完整支援。  
   
- 如需偵錯 Windows 通用應用程式的資訊，請參閱 < [Deploying，and Windows 通用平台應用程式偵錯](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx)。  
+ 如需有關檢查 Windows 通用應用程式的詳細資訊，請參閱[部署和偵測 Windows 通用平臺應用程式](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx)。  
   
- 若要偵錯 Windows Phone 應用程式，請參閱[偵錯應用程式，適用於 Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff402572\(v=vs.105\).aspx)。  
+ 若要 debug Windows Phone 應用程式，請參閱[Windows Phone 8 的偵錯工具](https://msdn.microsoft.com/library/windows/apps/ff402572\(v=vs.105\).aspx)。  
   
 ## <a name="in-this-section"></a>本節內容  
   
-|||  
+|Title|描述|  
 |-|-|  
 |[從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)|在本機電腦、應用程式模擬器或遠端裝置上執行市集應用程式。|  
-|[在 Visual Studio 中偵錯應用程式](../debugger/debug-store-apps-in-visual-studio.md)|使用 Visual Studio 偵錯工具，尋找並修正市集應用程式中的 Bug。|  
+|[Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|使用 Visual Studio 偵錯工具，尋找並修正市集應用程式中的 Bug。|  
 |[預先擷取 Windows 市集應用程式的內容](../debugger/prefetch-content-for-windows-store-apps.md)|分析 ContentPrefetcher 類別對 Windows 市集應用程式的影響。|  
   
 ## <a name="see-also"></a>另請參閱  

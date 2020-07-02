@@ -8,21 +8,21 @@ caps.latest.revision: 11
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b9c2c996c383c8834e44e16f382c14b695c83f26
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: afadf41fc753051047e858758bfe0677987d726d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668989"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545063"
 ---
-# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: 請勿使用弱式密碼編譯演算法
+# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350：請勿使用弱式密碼編譯演算法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DoNotUseWeakCryptographicAlgorithms|
 |CheckId|CA5350|
-|Category|Microsoft.Cryptography|
+|類別|Microsoft.Cryptography|
 |中斷變更|非中斷|
 
 > [!NOTE]
@@ -43,7 +43,7 @@ ms.locfileid: "72668989"
 
 - 若為 TripleDES 加密，請使用 <xref:System.Security.Cryptography.Aes> 加密。
 
-- 若為 SHA1 或 RIPEMD160 雜湊函式，請使用 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 系列 (例如 <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>)。
+- 若為 SHA1 或 RIPEMD160 雜湊函式，請使用 Sha-1 系列中的函[式](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx)（例如、 <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> 、 <xref:System.Security.Cryptography.SHA256> ）。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  當資料所需的保護層級不需要安全性保證時，隱藏此規則的警告。
@@ -60,7 +60,7 @@ var hashAlg = SHA1.Create();
 
 ```
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 
 ```
 using System.Security.Cryptography;
@@ -78,7 +78,7 @@ var hashAlg = RIPEMD160Managed.Create();
 
 ```
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 
 ```
 using System.Security.Cryptography;
@@ -98,7 +98,7 @@ using (TripleDES encAlg = TripleDES.Create())
 }
 ```
 
-### <a name="solution"></a>方案
+### <a name="solution"></a>解決方案
 
 ```
 using System.Security.Cryptography;

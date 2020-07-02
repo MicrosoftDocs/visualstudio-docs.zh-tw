@@ -15,21 +15,21 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9a4663fe3bc09b27bad9eeec05e325f07a3de6f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8e267b1e6203759efc91936a3b13059368a3862
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603059"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545388"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058：類型不應該擴充特定的基底類型
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058:類型不應該擴充特定基底類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -52,9 +52,9 @@ ms.locfileid: "72603059"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則描述
- 針對 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本1，建議從 <xref:System.ApplicationException> 衍生新的例外狀況。 建議已變更，而新的例外狀況應該衍生自 <xref:System> 命名空間中的 <xref:System.Exception?displayProperty=fullName> 或其中一個子類別。
+ 針對 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 第1版，建議從衍生新的例外狀況 <xref:System.ApplicationException> 。 建議已變更，而新的例外狀況應該衍生自 <xref:System.Exception?displayProperty=fullName> 或其命名空間中的其中一個子類別 <xref:System> 。
 
- 如果您想要建立基礎物件模型或資料來源的 XML 視圖，請勿建立 <xref:System.Xml.XmlDocument> 的子類別。
+ <xref:System.Xml.XmlDocument>如果您想要建立基礎物件模型或資料來源的 XML 視圖，請勿建立的子類別。
 
 ### <a name="non-generic-collections"></a>非泛型集合
  盡可能使用和（或）延伸泛型集合。 請勿擴充程式碼中的非泛型集合，除非您先前已寄出。
@@ -87,4 +87,4 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
  若要修正此規則的違規，請從不同的基底類型或泛型集合衍生類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則中有關 <xref:System.ApplicationException> 違規的警告。 請放心隱藏此規則中有關 <xref:System.Xml.XmlDocument> 違規的警告。 如果先前已發行程式碼，就可以放心地隱藏非泛型集合的相關警告。
+ 請勿隱藏此規則中有關的違規警告 <xref:System.ApplicationException> 。 您可以放心地隱藏此規則中有關違規的警告 <xref:System.Xml.XmlDocument> 。 如果先前已發行程式碼，就可以放心地隱藏非泛型集合的相關警告。

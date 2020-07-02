@@ -15,21 +15,21 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d1b4c0c5bcf22db6558f156fd1acd0be94026b08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e669d87ad5ecc53c1523db16ab77578c6a703a33
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661068"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545258"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901：P/Invoke 宣告應該是可移植的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
-|Category|Microsoft 可攜性|
+|類別|Microsoft 可攜性|
 |中斷變更|中斷-如果 P/Invoke 在元件外部是可見的。 不中斷-如果在元件外部看不到 P/Invoke。|
 
 ## <a name="cause"></a>原因
@@ -38,12 +38,12 @@ ms.locfileid: "72661068"
 ## <a name="rule-description"></a>規則描述
  下列其中一種情況違反此規則：
 
-- 當傳回值或參數應該輸入為 `IntPtr` 時，會輸入為固定大小的整數。
+- 當傳回值或參數的類型為時，會將其類型設定為固定大小的整數 `IntPtr` 。
 
-- 當傳回值或參數的類型為固定大小的整數時，會將其輸入為 `IntPtr`。
+- 當傳回值或參數的 `IntPtr` 類型應為固定大小的整數時，會將其類型設定為。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 您可以使用 `IntPtr` 或 `UIntPtr` 來表示控制碼，而不是 `Int32` 或 `UInt32` 來修正此違規。
+ 您可以使用 `IntPtr` 或 `UIntPtr` 來表示控制碼，而不是或，以修正此違規 `Int32` `UInt32` 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  您不應該隱藏這個警告。
@@ -60,7 +60,7 @@ internal class NativeMethods
 }
 ```
 
- 在此範例中，`nIconIndex` 參數會宣告為 `IntPtr`，在32位平臺上為4個位元組寬，64位平臺上為8個位元組寬。 在接下來的非受控宣告中，您可以看到 `nIconIndex` 在所有平臺上都是4位元組不帶正負號的整數。
+ 在此範例中， `nIconIndex` 參數會宣告為 `IntPtr` ，在32位平臺上為4個位元組寬，64位平臺上為8個位元組寬。 在接下來的非受控宣告中，您可以看到在 `nIconIndex` 所有平臺上都是4位元組不帶正負號的整數。
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -78,5 +78,5 @@ internal class NativeMethods{
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [可攜性警告](../code-quality/portability-warnings.md)

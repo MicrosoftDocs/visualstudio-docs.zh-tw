@@ -1,5 +1,5 @@
 ---
-title: CA2132:預設的函式至少必須與基底類型的預設函式一樣重要 |Microsoft Docs
+title: CA2132：預設的函式至少必須與基底類型的預設函式一樣重要 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -11,21 +11,21 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0ae271b116b372d4ae732d97ff3f9651ff9db426
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 401aa6f5ebec4dac99bedba6f12478c7c48d1dc5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643305"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540812"
 ---
 # <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132:預設建構函式至少必須和基底類型的預設建構函式一樣關鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DefaultConstructorsMustHaveConsistentTransparency|
 |CheckId|CA2132|
-|分類|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|中斷|
 
 > [!NOTE]
@@ -35,7 +35,7 @@ ms.locfileid: "72643305"
  衍生類別之預設函式的透明度屬性，與基類的透明度並不重要。
 
 ## <a name="rule-description"></a>規則描述
- 具有 <xref:System.Security.SecurityCriticalAttribute> 的類型和成員無法由 Silverlight 應用程式代碼使用。 重視安全性的類型以及成員，只能夠由 .NET Framework for Silverlight 類別庫中的受信任程式碼使用。 由於衍生類別中的公用或受保護建構所具有的透明度必須大於或等於其基底類別，因此應用程式中的類別不可衍生自標記為 SecurityCritical 的類別。
+ 具有的類型和成員 <xref:System.Security.SecurityCriticalAttribute> 無法由 Silverlight 應用程式代碼使用。 重視安全性的類型以及成員，只能夠由 .NET Framework for Silverlight 類別庫中的受信任程式碼使用。 由於衍生類別中的公用或受保護建構所具有的透明度必須大於或等於其基底類別，因此應用程式中的類別不可衍生自標記為 SecurityCritical 的類別。
 
  針對 CoreCLR 平臺程式碼，如果基底類型具有公用或受保護的非透明預設的函式，則衍生的類型必須遵守預設的函數繼承規則。 衍生類型也必須有預設的函式，且該函式必須至少是基底類型的關鍵預設函式。
 
@@ -43,7 +43,7 @@ ms.locfileid: "72643305"
  若要修正違規，請移除類型，或不要衍生自安全性非透明類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 應用程式代碼違反此規則會導致 CoreCLR 拒絕載入具有 <xref:System.TypeLoadException> 的類型。
+ 請勿隱藏此規則的警告。 應用程式代碼違反此規則會導致 CoreCLR 拒絕載入具有的型別 <xref:System.TypeLoadException> 。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Security.CA2132.DefaultConstructorsMustHaveConsistentTransparency#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2132.defaultconstructorsmusthaveconsistenttransparency/cs/ca2132 - defaultconstructorsmusthaveconsistenttransparency.cs#1)]

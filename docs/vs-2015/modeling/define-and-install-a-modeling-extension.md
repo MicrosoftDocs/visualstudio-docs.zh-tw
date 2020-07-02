@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c38150dd84ef8898b2aa894a614dfb79e289b593
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ef79d1be0b88ecdafa8691189bbc95291a6417ed
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850456"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544985"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>定義和安裝模型擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "75850456"
 
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>建立功能表命令、軌跡處理常式或驗證的類別庫專案
 
-1. 在 [檔案] 功能表上，依序選擇 [新增]和 [專案]。
+1. 在 [檔案]**** 功能表，選擇 [新增]****、[專案]****。
 
-2. 在 [已安裝的範本]下，選取 [Visual C#] 或 [Visual Basic]，然後選擇 [類別庫]。
+2. 在 [已安裝的範本] **** 下，選取 [Visual C#] **** 或 [Visual Basic] ****，然後選擇 [類別庫] ****。
 
 #### <a name="to-create-a-vsix-project"></a>建立 VSIX 專案
 
@@ -52,30 +52,30 @@ ms.locfileid: "75850456"
 
 2. 建立 VSIX 專案。
 
-    1. 在方案總管中，於方案的捷徑功能表中，依序選擇 [加入]和 [新增專案]。
+    1. 在方案總管 **** 中，於方案的捷徑功能表中，依序選擇 [加入] **** 和 [新增專案] ****。
 
-    2. 在 [已安裝的範本]下，依序展開 [Visual C#] 或 [Visual Basic]，然後選取 [擴充性]。 在中間欄中，選擇 [VSIX 專案]。
+    2. 在 [已安裝的範本] **** 下，展開 [Visual C#] **** 或 [Visual Basic] ****，然後選取 [擴充性] ****。 在中間的資料行中，選擇 [VSIX 專案] ****。
 
 3. 將 VSIX 專案設定為方案的啟始專案。
 
-    - 在方案總管中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案]。
+    - 在方案總管中，在 VSIX 專案的快捷方式功能表上，選擇 [**設定為啟始專案**]。
 
 4. 開啟 **source.extension.vsixmanifest**。 此檔案會在資訊清單編輯器中開啟。
 
-5. 在 [中繼資料] 索引標籤上，設定 VSIX 的名稱和描述欄位。
+5. 在 [中繼資料] **** 索引標籤上，設定 VSIX 的名稱和描述欄位。
 
-6. 在 [安裝目標] 索引標籤上，選擇 [新增] ，然後設定 Visual Studio 版本做為目標。
+6. 在 [安裝目標] **** 索引標籤上，選擇 [新增] **** ，然後設定 Visual Studio 版本做為目標。
 
-7. 在 [資產] 索引標籤上，將您的元件加入 Visual Studio 擴充功能。
+7. 在 [資產] **** 索引標籤上，將您的元件加入 Visual Studio 擴充功能。
 
-    1. 選擇 [新增]。
+    1. 選擇 [新增]****。
 
-    2. 針對使用程式碼的元件，在 [加入新資產] 對話方塊中設定這些欄位：
+    2. 針對使用程式碼的元件，在 [加入新資產] **** 對話方塊中設定這些欄位：
 
-        |||
+        |欄位|值|
         |-|-|
-        |**類型** =|**VisualStudio. [Microsoft.visualstudio.mefcomponent]**|
-        |**Source** =|**目前方案中的專案**|
+        |**型** =|**Microsoft.VisualStudio.MefComponent**|
+        |**來源** =|**目前方案中的專案**|
         |**Project** =|*您的類別庫專案*|
         |**內嵌在此資料夾中** =|*空*|
 
@@ -84,7 +84,7 @@ ms.locfileid: "75850456"
 ## <a name="developing-the-component"></a>開發元件
  對於功能表命令或軌跡處理常式等每個元件，您必須定義個別的處理常式。 您可以將數個處理常式放在相同的類別庫專案。 下表摘要說明不同類型的處理常式。
 
-|擴充功能類型|主題|每個元件的一般宣告方式|
+|延伸模組類型|主題|每個元件的一般宣告方式|
 |--------------------|-----------|----------------------------------------------|
 |功能表命令|[在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(ICommandExtension))]`<br /><br /> `public class MyCommand : ICommandExtension`<br /><br /> `{...`|
 |拖放或按兩下|[在模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(IGestureExtension))]`<br /><br /> `public class MyGesture : IGestureExtension`<br /><br /> `{...`|
@@ -97,48 +97,48 @@ ms.locfileid: "75850456"
 
 #### <a name="to-run-an-extension-during-its-development"></a>在開發期間執行擴充功能
 
-1. 在 [[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debug** ] 功能表中，選擇 [**開始調試**]。
+1. 在 [ [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **調試**] 功能表中，選擇 [**開始調試**]。
 
      專案組建和新的 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 執行個體隨即使用實驗模式開啟。
 
-    - 或者，您可以選擇 [啟動但不偵錯]。 這會減少啟動程式所需的時間。
+    - 或者，您可以選擇 [啟動但不偵錯] ****。 這會減少啟動程式所需的時間。
 
 2. 在 Visual Studio 的實驗執行個體中建立或開啟模型專案，以及建立或開啟圖表。
 
      您的擴充功能隨即載入和執行。
 
-3. 如果您使用 [啟動但不偵錯] ，但想要使用偵錯工具，請回到 Visual Studio 的主要執行個體。 在 [偵錯] 功能表上，按一下 [附加至處理序]。 在對話方塊中，選取具有程式名稱 **devenv**的 Visual Studio 實驗執行個體。
+3. 如果您使用 [啟動但不偵錯] **** ，但想要使用偵錯工具，請回到 Visual Studio 的主要執行個體。 在 [偵錯] **** 功能表上，按一下 [附加至處理序] ****。 在對話方塊中，選取具有程式名稱 **devenv**的 Visual Studio 實驗執行個體。
 
-## <a name="Installing"></a>安裝和卸載擴充功能
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>安裝和卸載擴充功能
  執行下列步驟，以在您自己的電腦或其他電腦上，於 Visual Studio 的主要執行個體中執行擴充功能。
 
 1. 在您的電腦中，尋找擴充功能專案所建置的 **.vsix** 檔案。
 
-    1. 在方案總管中，於專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾]。
+    1. 在方案總管 **** 中，於專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾] ****。
 
-    2. 找出 **\*\\** _yourproject。_ 的 bin\\
+    2. 找出**bin \\ \* \\ ** _yourproject。_**.vsix**的檔案
 
-2. 將 **.vsix** 檔案複製到要安裝擴充功能的目標電腦。 這可以是您自己的電腦或另一部電腦。
+2. 將 **.vsix** 檔案複製到要安裝擴充功能的目標電腦。 這可以是您自己的電腦或其他電腦。
 
-    - 目標電腦必須有您在 **source.extension.vsixmanifest** 的 [安裝目標]索引標籤中指定的其中一個 Visual Studio 版本。
+    - 目標電腦必須有您在 **source.extension.vsixmanifest** 的 [安裝目標] **** 索引標籤中指定的其中一個 Visual Studio 版本。
 
 3. 在目標電腦上，開啟 **.vsix** 檔案 (例如，按兩下該檔案)。
 
-     [Visual Studio 擴充功能安裝程式] 隨即開啟並安裝擴充功能。
+     [Visual Studio 擴充功能安裝程式]**** 會隨即開啟並安裝擴充功能。
 
 4. 啟動或重新啟動 Visual Studio。
 
 #### <a name="to-uninstall-an-extension"></a>解除安裝擴充功能
 
-1. 在 [工具] 功能表上，按一下 [擴充功能和更新]。
+1. 在 [工具] **** 功能表上，按一下 [擴充功能和更新] ****。
 
-2. 展開 [已安裝的擴充功能]。
+2. 展開 [已安裝的擴充功能] ****。
 
-3. 選取擴充功能，然後按一下 [解除安裝]。
+3. 選取擴充功能，然後按一下 [解除安裝] ****。
 
-   在很少見的情況下，錯誤的擴充功能會無法載入，並且在錯誤視窗中建立報表，但不會顯示在擴充管理員中。 在這種情況下，您可以從下列位置移除延伸模組，其中 *% LocalAppData%* 通常是*DriveName*： \Users\\*UserName*\AppData\Local：
+   在很少見的情況下，錯誤的擴充功能會無法載入，並且在錯誤視窗中建立報表，但不會顯示在擴充管理員中。 在此情況下，您可以從下列位置移除延伸模組，其中 *% LocalAppData%* 通常是*DriveName*： \Users \\ *UserName*\AppData\Local：
 
-   *% LocalAppData%* **\Microsoft\VisualStudio\\[version] \Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio \\ [version] \Extensions**
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [定義設定檔以擴充 uml](../modeling/define-a-profile-to-extend-uml.md) [定義自訂模型工具箱專案](../modeling/define-a-custom-modeling-toolbox-item.md)[定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

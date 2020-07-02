@@ -15,21 +15,21 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f59a1c88701cf132a46c66eb6550f03eb870d63d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e753083e9b4bda1e33553021ccb0027a2af2533
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669172"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544010"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711：識別項名稱不應該使用不正確的後置字元
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711:識別項名稱不應該使用不正確的後置字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
-|Category|Microsoft. 命名|
+|類別|Microsoft. 命名|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -40,22 +40,22 @@ ms.locfileid: "72669172"
 
  下表列出保留尾碼，以及與它們相關聯的基底類型和介面。
 
-|尾碼|基底類型/介面|
+|後置詞|基底類型/介面|
 |------------|--------------------------|
 |屬性|<xref:System.Attribute?displayProperty=fullName>|
 |集合|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
 |字典|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
 |EventHandler|事件處理常式委派|
-|例外|<xref:System.Exception?displayProperty=fullName>|
+|例外狀況|<xref:System.Exception?displayProperty=fullName>|
 |權限|<xref:System.Security.IPermission?displayProperty=fullName>|
-|Queue|<xref:System.Collections.Queue?displayProperty=fullName>|
-|堆疊|<xref:System.Collections.Stack?displayProperty=fullName>|
-|資料流|<xref:System.IO.Stream?displayProperty=fullName>|
+|佇列|<xref:System.Collections.Queue?displayProperty=fullName>|
+|Stack|<xref:System.Collections.Stack?displayProperty=fullName>|
+|STREAM|<xref:System.IO.Stream?displayProperty=fullName>|
 
  此外，**不**應使用下列尾碼：
 
-- Delegate - 委派
+- 代理人
 
 - 列舉
 
@@ -72,7 +72,7 @@ ms.locfileid: "72669172"
  除非後置字元在應用程式定義域中具有明確的意義，否則請不要隱藏這項規則的警告。
 
 ## <a name="related-rules"></a>相關規則
- [CA1710：識別項應該使用正確的後置字元](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+ [CA1710:識別項應該使用正確的後置字元](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [屬性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)[筆尖：事件和委派](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

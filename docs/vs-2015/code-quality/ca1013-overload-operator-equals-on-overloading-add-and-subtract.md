@@ -19,28 +19,28 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: dd1c144f04150e3965e2c0264b80147cbd9b8f19
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2304b78073b806dfc4aec9686f061d946b379ded
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663204"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545414"
 ---
-# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013：多載加號和減號運算子時必須一併多載等號比較運算子
+# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013:多載加號和減號運算子時必須一併多載等號比較運算子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
  公用或保護的類型會實作加法或減法運算，但不會實作等號比較運算子。
 
 ## <a name="rule-description"></a>規則描述
- 當類型的實例可以使用加法和減法之類的作業結合時，您幾乎都應該針對具有相同組成值的任何兩個實例，定義傳回 `true` 的相等。
+ 當類型的實例可以使用加法和減法之類的作業結合時，您幾乎都應該 `true` 針對具有相同組成值的任何兩個實例，定義傳回相等的。
 
  在等號比較運算子的多載執行中，不能使用預設的等號比較運算子。 這麼做會造成堆疊溢位。 若要執行等號比較運算子，請在您的執行中使用 Equals 方法。 請參閱下列範例。
 
@@ -65,7 +65,7 @@ return left.Equals(right);
  當等號比較運算子的預設執行提供類型的正確行為時，可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例會定義違反此規則的類型（`BadAddableType`）。 這個型別應該會執行等號比較運算子，讓具有相同域值的兩個實例都 `true` 進行相等的測試。 類型 `GoodAddableType` 會顯示已更正的執行。 請注意，此類型也會執行不等比較運算子，並覆寫 <xref:System.Object.Equals%2A> 以滿足其他規則。 完整的執行也會執行 <xref:System.Object.GetHashCode%2A>。
+ 下列範例 `BadAddableType` 會定義違反此規則的類型（）。 這個型別應該會執行等號比較運算子，讓具有相同域值的兩個實例都有 `true` 相等的測試。 類型會 `GoodAddableType` 顯示已更正的執行。 請注意，此類型也會執行不等比較運算子，並覆寫 <xref:System.Object.Equals%2A> 以滿足其他規則。 完整的執行也會執行 <xref:System.Object.GetHashCode%2A> 。
 
  [!code-csharp[FxCop.Design.AddAndSubtract#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AddAndSubtract/cs/FxCop.Design.AddAndSubtract.cs#1)]
 
@@ -76,8 +76,10 @@ return left.Equals(right);
 
  此範例會產生下列輸出。
 
- **錯誤類型： {2,2} {2,2} 相等嗎？沒有**
-**良好的類型： {3,3} {3,3} 相等嗎？是**
-**良好類型： {3,3} 0 是 = =？  是**1**不正確的類型： 3 4 相等嗎？沒有**5**良好的類型： 7 8 是 = =？  否**
-## <a name="see-also"></a>請參閱
+ **錯誤類型： {2,2} {2,2}相等嗎？沒有** 
+ **良好的類型： {3,3} {3,3} 是否相等？是** 
+ **良好類型： {3,3} {3,3} 是 = =？  是** 
+ **不正確的類型： {2,2} {9,9} 相等嗎？沒有** 
+ **良好的類型： {3,3} {9,9} = =？  否**
+## <a name="see-also"></a>另請參閱
  [等號比較運算子](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

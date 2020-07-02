@@ -15,25 +15,25 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 53c99e34bf253b0962d054685ce637c3849a2857
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa0b73b6608f0dfd5daa4b770b7d780e64704c99
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671601"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544426"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724：類型名稱不應該和命名空間相符
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724:類型名稱不應該和命名空間相符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
 |CheckId|CA1724|
-|Category|Microsoft. 命名|
+|類別|Microsoft. 命名|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 類型名稱符合不區分大小寫比較中的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 命名空間名稱。
+ 類型名稱符合不區分 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 大小寫比較中的命名空間名稱。
 
 ## <a name="rule-description"></a>規則描述
  類型名稱不得符合 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Class Library 中定義的命名空間名稱。 違反此規則會降低程式庫的可用性。

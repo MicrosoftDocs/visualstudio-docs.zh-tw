@@ -1,7 +1,7 @@
 ---
-title: 作法：使用內容控制項保護檔的元件
+title: 如何：使用內容控制項保護檔的元件
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 129962209d8cfa541a34bc1575a73382cd63d7c4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254671"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541345"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>作法：使用內容控制項保護檔的元件
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何：使用內容控制項保護檔的元件
   當您保護文件的某個部分時，使用者即無法變更或刪除文件中該部分的內容。 您可使用多種方法，透過內容控制項來保護 Microsoft Office Word 文件的下列部分：
 
 - 您可以保護內容控制項。
@@ -34,10 +34,10 @@ ms.locfileid: "71254671"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="EditDeleteControl"></a>保護內容控制項
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>保護內容控制項
  您可以透過文件層級專案，於設計階段或執行階段設定該控制項的屬性，以防止使用者編輯或刪除內容控制項。
 
- 此外，您也可以使用 VSTO 增益集專案，保護於執行階段加入文件的內容控制項。 如需詳細資訊，請參閱[如何：將內容控制項新增至 Word](../vsto/how-to-add-content-controls-to-word-documents.md)檔。
+ 此外，您也可以使用 VSTO 增益集專案，保護於執行階段加入文件的內容控制項。 如需詳細資訊，請參閱[如何：將內容控制項新增至 Word 檔](../vsto/how-to-add-content-controls-to-word-documents.md)。
 
 ### <a name="to-protect-a-content-control-at-design-time"></a>若要在設計階段保護內容控制項
 
@@ -49,11 +49,11 @@ ms.locfileid: "71254671"
 
     - 若要防止使用者刪除控制項，請將**LockContentControl**設定為**True**。
 
-3. 按一下 [確定]。
+3. 按一下 [確定] 。
 
 ### <a name="to-protect-a-content-control-at-run-time"></a>若要在執行階段保護內容控制項
 
-1. 將內容控制項的`LockContentControl`屬性設為 true，以防止使用者編輯控制項，並將屬性設定為 true，以防止使用者`LockContents`刪除控制項。
+1. 將 `LockContents` 內容控制項的屬性設為**true** ，以防止使用者編輯控制項，並將 `LockContentControl` 屬性設定為**true** ，以防止使用者刪除控制項。
 
      下列程式碼範例示範在文件層級專案中，使用兩個不同 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 物件的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> 和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> 屬性。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `AddProtectedContentControls` 事件處理常式呼叫 `ThisDocument_Startup` 方法。
 
@@ -79,10 +79,10 @@ ms.locfileid: "71254671"
 
 1. 在裝載於 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 設計工具的文件中，選取想要保護的區域。
 
-2. 按一下 [功能區] 上的 [開發人員] 索引標籤。
+2. 按一下 [功能區] 上的 [開發人員] **** 索引標籤。
 
     > [!NOTE]
-    > 如果 [開發人員] 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)上顯示 [開發人員] 索引標籤。
+    > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
 
 3. 在 [**控制項**] 群組中，按一下 [**群組**] 下拉按鈕，然後按一下 [**群組**]。
 

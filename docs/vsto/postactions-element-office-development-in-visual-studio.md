@@ -1,7 +1,7 @@
 ---
-title: '&lt;postActions&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
+title: '&lt;P s &gt; 元素（Visual Studio 中的 Office 開發）'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 548396e6393720824c93c07e55046ec2d91797a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfe9ae171f0f6fac1c2b5add5340de1c11f3da0f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62561459"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544413"
 ---
-# <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions&gt;元素 （在 Visual Studio 中的 Office 程式開發）
+# <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;P s &gt; 元素（Visual Studio 中的 Office 開發）
   `postActions` 命名空間的 `vstav3` 項目包含描述安裝 Office 方案後所執行之部署後動作的所有 `postAction` 項目。
 
 ## <a name="syntax"></a>語法
@@ -42,15 +42,15 @@ ms.locfileid: "62561459"
 
  `postActions` 項目沒有任何屬性。
 
- `postActions` 具有下列項目：
+ `postActions` 具有下列項目。
 
 ### <a name="postaction"></a>postAction
- 選擇性。 所扮演的角色`postAction`中的項目`vstav3`中所定義的命名空間[ &#60;postAction&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)。
+ 選擇性。 `postAction`命名空間中元素的角色 `vstav3` 是在[Visual Studio&#41;的&#60;p n&#62; 元素 &#40;Office 開發](../vsto/postaction-element-office-development-in-visual-studio.md)中定義。
 
 ## <a name="post-deployment-action-example"></a>部署後動作範例
 
 ### <a name="description"></a>描述
- 下列程式碼範例說明使用 `postActions` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
+ 下列程式碼範例說明使用 `postActions` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
 
