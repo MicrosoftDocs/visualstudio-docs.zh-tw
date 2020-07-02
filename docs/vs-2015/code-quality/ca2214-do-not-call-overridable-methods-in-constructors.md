@@ -15,21 +15,21 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 78702298bab484a95bb8108150415ec0b31ede7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad467e880b3281a75db2627108af0e0b2f90ea99
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662903"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534455"
 ---
-# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214：不要呼叫建構函式中的可覆寫方法
+# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214:不要呼叫建構函式中的可覆寫方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DoNotCallOverridableMethodsInConstructors|
 |CheckId|CA2214|
-|Category|Microsoft。使用方式|
+|類別|Microsoft。使用方式|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -45,7 +45,7 @@ ms.locfileid: "72662903"
  請勿隱藏此規則的警告。 應重新設計此函式，以排除對虛擬方法的呼叫。
 
 ## <a name="example"></a>範例
- 下列範例示範違反此規則的效果。 測試應用程式會建立 `DerivedType` 的實例，這會造成其基類（`BadlyConstructedType`）執行程式。 `BadlyConstructedType` 的函式不正確地呼叫虛擬方法 `DoSomething`。 如輸出所示，`DerivedType.DoSomething()` 會執行，並在 `DerivedType` 的程式執行之前完成。
+ 下列範例示範違反此規則的效果。 測試應用程式會建立的實例 `DerivedType` ，這會造成其基類（ `BadlyConstructedType` ）的執行程式。 `BadlyConstructedType`的函式不正確地呼叫虛擬方法 `DoSomething` 。 如輸出所示， `DerivedType.DoSomething()` 會執行，而且會在執行的函式之前進行 `DerivedType` 。
 
  [!code-csharp[FxCop.Usage.CtorVirtual#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/cs/FxCop.Usage.CtorVirtual.cs#1)]
  [!code-vb[FxCop.Usage.CtorVirtual#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/vb/FxCop.Usage.CtorVirtual.vb#1)]
@@ -53,5 +53,5 @@ ms.locfileid: "72662903"
  此範例會產生下列輸出。
 
  **呼叫基底 ctor。** 
-**衍生的 DoSomething 稱為-已初始化？沒有**
-**呼叫衍生的 ctor。**
+**衍生的 DoSomething 稱為-已初始化？沒有** 
+ **呼叫衍生的 ctor。**

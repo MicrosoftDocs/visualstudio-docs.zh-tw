@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 6983d3ac191b8eb85d38e1d40afa3244e97dbb17
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184246"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536782"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Visual Studio 的 Azure 中 IIS 上的遠端 Debug ASP.NET Core
 
@@ -42,7 +42,7 @@ ms.locfileid: "84184246"
 > [!WARNING]
 > 當您完成本教學課程中的步驟時，請務必刪除您所建立的 Azure 資源。 如此一來，您就可以避免產生不必要的費用。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 ::: moniker range=">=vs-2019"
 需要 Visual Studio 2019，才能遵循本文中所示的步驟。
@@ -96,7 +96,7 @@ ms.locfileid: "84184246"
 
     應該在 Visual Studio 中叫用中斷點。
 
-    完成了！ 本主題中的其餘步驟適用于 Azure VM 上的遠端偵錯程式。
+    就這麼簡單！ 本主題中的其餘步驟適用于 Azure VM 上的遠端偵錯程式。
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a>Azure VM 上的遠端偵錯程式 ASP.NET Core
 
@@ -175,8 +175,8 @@ ms.locfileid: "84184246"
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-    > [!NOTE]
-    > If you restart an Azure VM, the IP address may change.
+> [!NOTE]
+> 如果您重新開機 Azure VM，IP 位址可能會變更。
 
 應用程式部署成功之後，它應該會自動啟動。 如果應用程式不是從 Visual Studio 啟動，請在 IIS 中啟動應用程式，以確認它是否正確執行。 對於 ASP.NET Core，您也必須確定**DefaultAppPool**的 [應用程式集區] 欄位已設定為 [**沒有受控碼**]。
 
@@ -255,11 +255,11 @@ ms.locfileid: "84184246"
 
 6. 輸入您的進程名稱的第一個字母，以快速找到您的應用程式。
 
-    * 如果您是在 IIS 上使用同[進程裝載模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)，請選取正確的**w3wp.exe**處理常式。 從 .NET Core 3 開始，這是預設值。
+    * 如果您在 IIS 上使用同[進程裝載模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)，請選取正確的**w3wp.exe**進程。 從 .NET Core 3 開始，這是預設值。
 
-    * 否則，請選取 [ **dotnet** ] 處理常式。 （這是跨進程裝載模型）。
+    * 否則，請選取**dotnet.exe**進程。 （這是跨進程裝載模型）。
 
-    如果您有多個處理常式顯示*w3wp.exe*或*dotnet*，請檢查 [**使用者名稱**] 資料行。 在某些情況下，[**使用者名稱**] 欄會顯示您的應用程式集區名稱，例如**IIS APPPOOL\DefaultAppPool**。 如果您看到應用程式集區，但它並不是唯一的，請針對您想要進行 debug 的應用程式實例建立新的命名應用程式集區，然後在 [**使用者名稱**] 資料行中輕鬆找到它。
+    如果您有多個進程顯示*w3wp.exe*或*dotnet.exe*，請檢查 [**使用者名稱**] 資料行。 在某些情況下，[**使用者名稱**] 欄會顯示您的應用程式集區名稱，例如**IIS APPPOOL\DefaultAppPool**。 如果您看到應用程式集區，但它並不是唯一的，請針對您想要進行 debug 的應用程式實例建立新的命名應用程式集區，然後在 [**使用者名稱**] 資料行中輕鬆找到它。
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")

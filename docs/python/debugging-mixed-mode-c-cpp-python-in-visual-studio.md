@@ -2,7 +2,7 @@
 title: Python 混和模式偵錯
 description: 在 Visual Studio 中同時對 C++ 和 Python 進行偵錯，包括在環境之間逐步執行、檢視值和評估運算式。
 ms.date: 11/12/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc90d659a32c14f92e1eff058dd22d4a17d0b1cb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 953ff26a6094a9de9dcf974d5e4cb5a02aaa503f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75678996"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533558"
 ---
 # <a name="debug-python-and-c-together"></a>同時對 Python 和 C++ 進行偵錯
 
@@ -42,24 +42,24 @@ Visual Studio 有針對 Python 及原生 C/C++ 提供整合式的同時混合模
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>在 Python 專案中啟用混合模式偵錯
 
-1. 按右鍵**解決方案資源管理器**中的 Python 專案，選擇**屬性**，選擇 **"調試**"選項卡，然後選擇啟用**本機代碼調試**。 這個選項會啟用所有偵錯工作階段的混合模式。
+1. 以滑鼠右鍵按一下**方案總管**中的 Python 專案，選取 [**屬性**]，選取 [**調試**程式] 索引標籤，然後選取 [**啟用機器碼調試**程式]。 這個選項會啟用所有偵錯工作階段的混合模式。
 
     ![啟用原生程式碼偵錯](media/mixed-mode-debugging-enable-native.png)
 
     > [!Tip]
-    > 啟用本機代碼調試時，當程式完成時，Python 輸出視窗可能會立即消失，而不會給您通常**的按任意鍵以繼續**暫停。 要強制暫停，請啟用本機`-i`代碼調試時，將選項添加到 **"調試**"選項卡上的 **"運行** > **解譯器參數"** 欄位。 此參數在代碼完成後將 Python 解譯器置於交互模式，此時它等待您按**Ctrl**+**Z** > **Enter**退出。
+    > 當您啟用機器碼偵錯工具時，Python 輸出視窗可能會在程式完成時立即消失，而不會提供您平常的**按任意鍵繼續**暫停。 若要強制暫停，請在 `-i` 啟用機器碼偵錯工具時，將選項加入 [偵錯工具] 索引標籤上的 [**執行**  >  **解譯器引數**] 欄位。 **Debug** 這個引數會讓 Python 解譯器在程式碼完成之後進入互動模式，此時它會等待您按**Ctrl** + **Z**  >  **enter**結束。
 
-1. 將混合模式調試器附加到現有進程（**調試** > **附加到進程**）時，請使用 **"選擇**"按鈕打開 **"選擇代碼類型"** 對話方塊。 然後設定 [偵錯這些程式碼類型]**** 選項，並同時選取清單中的 [原生]**** 和 [Python]****：
+1. 將混合模式偵錯工具附加至現有的進程（[**Debug**] [  >  **附加至進程**]）時，請使用 [**選取**] 按鈕來開啟 [**選取程式碼類型**] 對話方塊。 然後設定 [偵錯這些程式碼類型]**** 選項，並同時選取清單中的 [原生]**** 和 [Python]****：
 
     ![選取原生和 Python 程式碼類型](media/mixed-mode-debugging-code-type.png)
 
-    代碼類型設置是永久性的，因此，如果要在以後附加到其他進程時禁用混合模式調試，請清除**Python**代碼類型。
+    程式碼類型設定是持續性的，因此，如果您稍後附加至其他進程時想停用混合模式的偵錯工具，請清除**Python**程式碼類型。
 
-    除了選取 (或不選取) [原生]**** 以外，您還可以選取其他程式碼類型。 例如，如果託管應用程式承載 CPython（CPython，而 CPython 又使用本機擴展模組），並且您希望調試所有三個擴展模組，則可以同時檢查**Python、****本機**和**託管**，以獲得統一的調試體驗，包括組合呼叫堆疊和所有三個運行時之間的步進。
+    除了選取 (或不選取) [原生]**** 以外，您還可以選取其他程式碼類型。 例如，如果受控應用程式裝載 CPython，而這又會使用原生延伸模組，而您想要完全進行這三項功能的檢查，您可以同時檢查**Python**、**原生**和**managed**以取得統一的調試經驗，包括合併的呼叫堆疊，以及在所有三個執行時間之間逐步執行。
 
 1. 當您首次在混合模式開始偵錯時，可能會看到 [需要 Python 符號]**** 對話方塊 (請參閱[混合模式偵錯的符號](debugging-symbols-for-mixed-mode-c-cpp-python.md))。 針對任何指定的 Python 環境，符號只需安裝一次。 如果您透過 Visual Studio 安裝程式 (Visual Studio 2017 和更新版本) 安裝 Python 支援，就會自動包含符號。
 
-1. 要使標準 Python 本身的原始程式碼在調試時可用，請訪問[https://www.python.org/downloads/source/](https://www.python.org/downloads/source/)，下載適合您的版本的存檔，並將其提取到資料夾中。 每當提示您時，請將 Visual Studio 指向該資料夾中的特定檔案。
+1. 若要讓標準 Python 本身的原始程式碼在進行偵錯工具時可供使用，請造訪 [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/) ，下載適用于您版本的封存，並將其解壓縮至資料夾。 每當提示您時，請將 Visual Studio 指向該資料夾中的特定檔案。
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>在 C/C++ 專案中啟用混合模式偵錯
 
@@ -71,7 +71,7 @@ Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
     ![在 C/C++ 專案中選取 [Python/原生偵錯工具]](media/mixed-mode-debugging-select-cpp-debugger.png)
 
 > [!Note]
-> 如果沒有選擇**Python/本機調試**的選項，則需要首先使用 VS 安裝程式安裝 Python**本機開發工具**。 您可以在 Python 開發工作負載下找到它作為一個選項。 有關詳細資訊，請參閱如何在[Windows 上的視覺化工作室中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
+> 如果您沒有選取**python/原生調試**程式的選項，您必須先使用 VS Installer 安裝**Python 原生開發工具**。 您可以在 [Python 開發] 工作負載下找到它作為選項。 如需其他資訊，請參閱[如何在 Windows 上的 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
 
 使用此方法時，請留意到您並無法對 *py.exe* 啟動器本身進行偵錯，因為它會繁衍出偵錯工具無法附加至的子 *python.exe* 處理序。 如果您想要搭配引數直接啟動 *python.exe*，請變更 [Python/原生偵錯工具]**** 屬性中的 [命令]**** 選項 (如上圖所示) 以指定 *python.exe* 的完整路徑，然後在 [命令引數]**** 中指定引數。
 
@@ -79,8 +79,8 @@ Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 針對所有舊版的 Visual Studio，只能在於 Visual Studio 中啟動 Python 專案時啟用直接混合模式偵錯，因為 C/C++ 專案只能使用原生偵錯工具。 不過，您可以分別附加偵錯工具：
 
-1. 在沒有調試的情況下啟動C++專案 **（** > **調試啟動而不調試**或**Ctrl**+**F5**）。
-1. 選擇**調試** > **附加到進程**。 在顯示的對話方塊中，選擇適當的過程，然後使用 **"選擇**"按鈕打開 **"選擇代碼類型"** 對話方塊，您可以在其中選擇**Python**：
+1. 啟動 c + + 專案但不進行調試（不進行調試的**Debug**  >  **啟動**或**Ctrl** + **F5**）。
+1. 選取 [**調試**程式] [  >  **附加至進程**]。 在出現的對話方塊中，選取適當的進程，然後使用 [**選取**] 按鈕來開啟 [**選取程式碼類型**] 對話方塊，您可以在其中選取 [ **Python**]：
 
     ![附加偵錯工具時，選取 Python 作為偵錯類型](media/mixed-mode-debugging-attach-type.png)
 
@@ -96,7 +96,7 @@ Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 ### <a name="combined-call-stack"></a>合併的呼叫堆疊
 
-**"呼叫堆疊**"視窗顯示本機幀和 Python 堆疊幀交錯，兩者之間標有過渡：
+[**呼叫堆疊**] 視窗會同時顯示原生和 Python 堆疊框架交錯，並在兩者之間標記轉換：
 
 ![合併的呼叫堆疊與混合模式偵錯](media/mixed-mode-debugging-call-stack.png)
 
@@ -106,11 +106,11 @@ Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 ### <a name="step-between-python-and-native-code"></a>在 Python 和機器碼之間逐步執行
 
-當使用 **"步進進入**"**（ F11**）**或"退出**" （**Shift**+**F11**） 命令時， 混合模式調試器正確處理代碼類型之間的更改。 例如，當 Python 呼叫某個在 C 中實作之類型的方法時，在該方法的呼叫中逐步執行時，會停在實作該方法的原生函式開頭。 同樣地，當原生程式碼呼叫一些 Python API 函式時，會叫用 Python 程式碼。 例如，在原先定義於 Python 中的某個函式值上逐步執行到 `PyObject_CallObject`，會停在 Python 函式的開頭。 對於透過 [ctypes](https://docs.python.org/3/library/ctypes.html) 從 Python 叫用的原生函式，也支援從 Python 逐步執行到原生函式。
+當您使用 [**逐步執行**] （**F11**）或 [**跳出**] （**Shift** + **F11**）命令時，混合模式偵錯工具會正確處理常式代碼類型之間的變更。 例如，當 Python 呼叫某個在 C 中實作之類型的方法時，在該方法的呼叫中逐步執行時，會停在實作該方法的原生函式開頭。 同樣地，當原生程式碼呼叫一些 Python API 函式時，會叫用 Python 程式碼。 例如，在原先定義於 Python 中的某個函式值上逐步執行到 `PyObject_CallObject`，會停在 Python 函式的開頭。 對於透過 [ctypes](https://docs.python.org/3/library/ctypes.html) 從 Python 叫用的原生函式，也支援從 Python 逐步執行到原生函式。
 
 ### <a name="pyobject-values-view-in-native-code"></a>原生程式碼中的 PyObject 值檢視
 
-當本機 （C 或 C++） 幀處於活動狀態時，其本地變數顯示在調試器**區域變數**視窗中。 在原生 Python 延伸模組中，其中有許多變數都是 `PyObject` 類型 (即 `_object` 的 typedef)，或是一些其他基本 Python 類型 (請參閱下方清單)。 在混合模式調試中，這些值顯示標記為 **[Python 視圖]** 的其他子節點。 展開時，此節點會顯示變數的 Python 表示法，您所看到的一切，會與參考相同物件的本機變數出現在 Python 框架時相同。 此節點的子系是可編輯的。
+當原生（C 或 c + +）框架為使用中時，其區域變數會顯示在偵錯工具的 [**區域變數**] 視窗中。 在原生 Python 延伸模組中，其中有許多變數都是 `PyObject` 類型 (即 `_object` 的 typedef)，或是一些其他基本 Python 類型 (請參閱下方清單)。 在混合模式的偵錯工具中，這些值會顯示標示為 **[Python view]** 的額外子節點。 展開時，此節點會顯示變數的 Python 表示法，您所看到的一切，會與參考相同物件的本機變數出現在 Python 框架時相同。 此節點的子系是可編輯的。
 
 ![[區域變數] 視窗中的 [Python 檢視]](media/mixed-mode-debugging-python-view.png)
 
@@ -118,7 +118,7 @@ Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 ![在 [區域變數] 視窗中啟用 [Python 檢視]](media/mixed-mode-debugging-enable-python-view.png)
 
-顯示 **[Python 視圖]** 節點的 C 類型（如果啟用）：
+顯示 **[Python view]** 節點的 C 類型（若已啟用）：
 
 - `PyObject`
 - `PyVarObject`
@@ -135,7 +135,7 @@ Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 - `PyStringObject`
 - `PyUnicodeObject`
 
-**[Python 視圖]** 不會自動顯示您自己創作的類型。 在為 Python 3.x 創作擴展時，這種缺乏通常不是問題，因為任何物件最終具有上述`ob_base`類型之一的欄位，從而導致 **[Python 視圖]** 出現。
+您自行撰寫的類型 **[Python 視圖]** 不會自動出現。 撰寫 Python 3.x 的延伸模組時，這種情況通常不會造成問題，因為任何物件最終都會有 `ob_base` 上述其中一個類型的欄位，這會導致 **[Python view]** 出現。
 
 不過，針對 Python 2.x，每個物件類型通常會將其標頭宣告為內嵌欄位的集合，而且自訂的撰寫類型和 C/C++ 程式碼中類型系統層級的 `PyObject` 之間沒有關聯。 若要啟用這種自訂類型的 [Python 檢視]**** 節點，請編輯 [Python 工具安裝目錄](installing-python-support-in-visual-studio.md#install-locations)中的 *PythonDkm.natvis* 檔案，然後直接在 C 結構或 C++ 類別的 XML 中新增另一個元素。
 
@@ -143,17 +143,17 @@ Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 ### <a name="native-values-view-in-python-code"></a>Python 程式碼中的原生值檢視
 
-與上一節類似，當 Python 幀處於活動狀態時，可以為 **"本機"** 視窗中的本機值啟用 **[C++ 視圖]。** 此功能預設為未啟用，請以滑鼠右鍵按一下 [區域變數]**** 視窗，然後切換 [Python]**** > [顯示 C++ 檢視節點]**** 功能表選項來開啟它。
+類似上一節，當 Python 框架為使用中時，您可以在 [**區域變數**] 視窗中為原生值啟用 **[c + + 視圖]** 。 此功能預設為未啟用，請以滑鼠右鍵按一下 [區域變數]**** 視窗，然後切換 [Python]**** > [顯示 C++ 檢視節點]**** 功能表選項來開啟它。
 
 ![在 [區域變數] 視窗中啟用 [C++ 檢視]](media/mixed-mode-debugging-enable-cpp-view.png)
 
-**[C++ 視圖]** 節點為值提供基礎 C/C++結構的表示形式，與您在本機幀中看到的結構相同。 比方說，它會顯示 Python 長整數的 `_longobject` (`PyLongObject` 是其 typedef) 執行個體，而且會嘗試推斷您自行撰寫之原生類別的類型。 此節點的子系是可編輯的。
+**[C + + view]** 節點提供值的基礎 C/c + + 結構標記法，與您在原生框架中看到的一樣。 比方說，它會顯示 Python 長整數的 `_longobject` (`PyLongObject` 是其 typedef) 執行個體，而且會嘗試推斷您自行撰寫之原生類別的類型。 此節點的子系是可編輯的。
 
 ![[區域變數] 視窗中的 [C++ 檢視]](media/mixed-mode-debugging-cpp-view.png)
 
-如果物件的子欄位的類型`PyObject`為 ，或者其他受支援的類型之一，則它有一個 **[Python 視圖]** 表示節點（如果啟用了這些表示形式），從而可以導航連結不直接公開到 Python 的物件圖形。
+如果物件的子欄位為類型 `PyObject` 或其他支援的類型之一，則它會有 **[Python view]** 標記法節點（如果已啟用那些標記法），讓您可以流覽物件圖形，其中的連結不會直接向 Python 公開。
 
-與 **[Python 視圖]** 節點（使用 Python 物件中繼資料來確定物件類型）不同，[C++**視圖]** 沒有類似的可靠機制。 一般而言，憑藉一個 Python 值 (也就是 `PyObject` 參考) 是無法可靠地判斷支援它的 C/C++ 結構。 混合模式偵錯工具會透過查看具有函式指標類型的物件類型 (例如其 `ob_type` 欄位參考的 `PyTypeObject`) 的各個欄位，以嘗試猜測該類型 。 如果這些函式指標之一參考的函式可以解析，而且該函式具有類型比 `PyObject*` 更明確的 `self` 參數，則會假設該類型為支援的類型。 例如，如果是下列函式中指定物件點的 `ob_type->tp_init`︰
+不同于 **[python view]** 節點使用 Python 物件中繼資料來判斷物件的類型， **[c + + view]** 沒有類似的可靠機制。 一般而言，憑藉一個 Python 值 (也就是 `PyObject` 參考) 是無法可靠地判斷支援它的 C/C++ 結構。 混合模式偵錯工具會透過查看具有函式指標類型的物件類型 (例如其 `ob_type` 欄位參考的 `PyTypeObject`) 的各個欄位，以嘗試猜測該類型 。 如果這些函式指標之一參考的函式可以解析，而且該函式具有類型比 `PyObject*` 更明確的 `self` 參數，則會假設該類型為支援的類型。 例如，如果是下列函式中指定物件點的 `ob_type->tp_init`︰
 
 ```c
 static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {
@@ -161,7 +161,7 @@ static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {
 }
 ```
 
-則偵錯工具可以正確地推論出物件的 C 類型是 `FobObject`。 如果無法從 `tp_init` 判斷更精確的類型，它會繼續嘗試其他欄位。 如果無法從這些欄位中推斷出類型 **，[C++視圖]** 節點將物件作為`PyObject`實例呈現。
+則偵錯工具可以正確地推論出物件的 C 類型是 `FobObject`。 如果無法從 `tp_init` 判斷更精確的類型，它會繼續嘗試其他欄位。 如果無法從這些欄位中的任何一個推斷類型， **[c + + view]** 節點就會將物件呈現為 `PyObject` 實例。
 
 為了始終能夠取得自訂撰寫類型最有用的表示法，註冊類型時最好註冊至少一個特殊函式，並使用強型別 `self` 參數。 大多數類型都能自然地滿足該需求；若非如此，`tp_init` 通常是針對此用途最方便使用的項目。 虛構的 `tp_init` 實作只能立即傳回零，它適用於為啟用偵錯工具類型推斷而存在的類型，如上面的程式碼範例所示。
 
@@ -169,16 +169,16 @@ static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {
 
 混合模式偵錯工具與[標準 Python 偵錯工具](debugging-python-in-visual-studio.md)的不同之處在於它導入一些額外功能，但缺少一些 Python 相關功能︰
 
-- 不支援的功能：條件中斷點、**調試互動式**視窗和跨平臺遠端偵錯。
-- **即時**視窗：可用，但其功能的子集有限，包括此處列出的所有限制。
+- 不支援的功能：條件式中斷點、 **Debug Interactive** window 和跨平臺遠端偵錯。
+- [即時**運算] 視窗**：可以使用，但僅有其功能的有限子集，包括此處所列的所有限制。
 - 支援的 Python 版本︰僅限 CPython 2.7 和 3.3 及更新版本。
 - Visual Studio Shell︰搭配使用 Python 和 Visual Studio Shell 時 (例如使用整合式安裝程式進行安裝時)，Visual Studio 無法開啟 C++ 專案，且針對 C++ 檔案的編輯體驗僅如同使用基本文字編輯器。 不過，Shell 搭配偵錯工具視窗中的原始程式碼、逐步執行到原生程式碼及 C++ 運算式評估，可完整支援 C/C++ 偵錯和混合模式偵錯。
-- 查看和展開物件：在 **"區域變數**"和 **"監視"** 調試器工具視窗中查看 Python 物件時，混合模式調試器僅顯示物件的結構。 它不會自動評估屬性，或顯示計算的屬性。 對於集合，它只會顯示內建集合類型的元素 (`tuple`、`list``dict``set`)。 自訂集合類型不會視覺化為集合，除非它們繼承自某些內建的集合類型。
+- 視圖和展開物件：在 [**區域變數** **] 和 [監看**式偵錯工具] 工具視窗中查看 Python 物件時，混合模式偵錯工具只會顯示物件的結構。 它不會自動評估屬性，或顯示計算的屬性。 對於集合，它只會顯示內建集合類型的元素 (`tuple`、`list``dict``set`)。 自訂集合類型不會視覺化為集合，除非它們繼承自某些內建的集合類型。
 - 運算式評估：請參閱下文。
 
 ### <a name="expression-evaluation"></a>運算式評估
 
-標準 Python 調試器允許在調試過程在代碼中的任何點暫停時在**Watch**和**立即**視窗中評估任意 Python 運算式，只要在 I/O 操作或其他類似系統調用中未阻止它。 在混合模式偵錯，任意的運算式只能在 Python 程式碼中停止時、中斷點之後，或逐步執行程式碼時進行評估。 只能在發生中斷點或逐步執行作業的執行緒上評估運算式。
+標準 Python 偵錯工具可讓您在程式碼中的任何時間點暫停已調試的進程時，在**監看****式和即時**運算視窗中評估任意 Python 運算式，只要它在 i/o 作業或其他類似的系統呼叫中不會被封鎖。 在混合模式偵錯，任意的運算式只能在 Python 程式碼中停止時、中斷點之後，或逐步執行程式碼時進行評估。 只能在發生中斷點或逐步執行作業的執行緒上評估運算式。
 
 在原生程式碼或在 Python 程式碼 (當上述條件不適用時) 中停止時 (例如，在跳離作業之後，或在不同的執行緒上)，運算式評估僅限於存取目前所選框架範圍中的區域和全域變數、存取其欄位，及為含有常值的內建集合類型編製索引。 例如，下列運算式可在任何內容中評估 (前提是所有識別項參考適當類型的現有變數和欄位)︰
 

@@ -1,72 +1,71 @@
 ---
-title: 從 資源資訊清單 |Microsoft Docs
+title: Manifest from Resources |Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4827402b63eadf517f031b04b7c7cf2fe8a4f56b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68192622"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537094"
 ---
 # <a name="manifest-from-resources"></a>來自資源的資訊清單
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-從 [資源] 工具的資訊清單是根據影像資源 （.png 或.xaml 檔案） 的清單，並產生.imagemanifest 檔案，讓這些映像來搭配 Visual Studio 映像服務的主控台應用程式。 此外，此工具可用來將影像新增至現有的.imagemanifest。 這項工具可用於新增高 DPI 和佈景主題的 Visual Studio 延伸模組的映像的支援。 產生的.imagemanifest 檔案應包含在和 Visual Studio 擴充功能 (.vsix) 的一部分部署。  
+Manifest from Resources 工具是一個主控台應用程式，它會接受影像資源（.png 或 .xaml 檔案）的清單，並產生 imagemanifest 檔案，讓這些影像可與 Visual Studio 映射服務搭配使用。 此外，此工具可以用來將影像新增至現有的 imagemanifest。 此工具適用于將影像的高 DPI 和主題支援新增至 Visual Studio 延伸模組。 產生的 imagemanifest 檔案應該包含在中，並部署為 Visual Studio 擴充功能（.vsix）的一部分。  
   
 ## <a name="how-to-use-the-tool"></a>如何使用工具  
  **語法**  
   
- ManifestFromResources /resources:\<Dir1 >;\<Img1 > /assembly:\<組件名稱 >\<選擇性引數 >  
+ ManifestFromResources/resources： \<Dir1> ; \<Img1> /assembly： \<AssemblyName>\<Optional Args>  
   
  **引數**  
   
-||||  
+|**交換器名稱**|**備註**|**Required 或 Optional**|  
 |-|-|-|  
-|**交換器名稱**|**備註**|**必要或選用**|  
-|/resources|以分號分隔的映像 」 或 「 目錄清單。 這份清單一律應包含會在資訊清單中的映像的完整清單。 如果只指定的部分清單，不包含的項目將會遺失。<br /><br /> 如果指定的資源檔的影像區域，工具會分割成個別的映像加入資訊清單中的每個 subimage 之前。<br /><br /> 如果影像是.png 檔案，我們建議您格式化這類名稱，使工具可以填入適當的屬性，映像：\<名稱 >。\<寬度 >。\<高度 >.png。|必要|  
-|/assembly|Managed 組件 （不包括副檔名） 或執行階段原生組件的路徑裝載 （相對於資訊清單的執行階段位置） 資源的名稱。|必要|  
-|/manifest|要提供給產生的.imagemanifest 檔案的名稱。 這也可以包含在不同的位置中建立檔案的絕對或相對路徑。 預設名稱比對組件名稱。<br /><br /> 預設：\<目前的目錄 >\\< 組件\>.imagemanifest|Optional|  
-|/guidName|要提供給所有產生的資訊清單中的映像的 GUID 符號的名稱。<br /><br /> 預設：AssetsGuid|選擇性|  
-|/rootPath|要去除之前建立受管理的資源 Uri 根路徑。 （這個旗標是協助工具，取得相對 URI 的路徑錯誤，導致無法載入資源的情況下）。<br /><br /> 預設：\<目前的目錄 >|Optional|  
-|/recursive|設定這個旗標會告訴工具以遞迴方式搜尋 /resources 引數中的任何目錄。 省略此旗標將會在頂層-層次專用搜尋的目錄中。|Optional|  
-|/isNative|當組件引數為原生組件的路徑，請設定此旗標。 當組件引數是 managed 組件的名稱，請省略這個旗標。 （請參閱附註 區段，如需有關此旗標的詳細資訊）。|選擇性|  
-|/newGuids|設定這個旗標會告訴工具建立的映像的 GUID 符號，而不是合併現有的資訊清單中的一個新的值。|Optional|  
-|/newIds|設定這個旗標會告訴工具，以建立新的 ID 符號值，而不是將現有的資訊清單中的值合併每個映像。|Optional|  
-|/noLogo|設定這個旗標，就會停止列印的產品和著作權資訊。|選擇性|  
-|/?|列印出說明資訊。|Optional|  
-|/help|列印出說明資訊。|Optional|  
+|/resources|以分號分隔的影像或目錄清單。 此清單應一律包含將會在資訊清單中的完整映射清單。 如果只指定部分清單，則不包含的專案將會遺失。<br /><br /> 如果指定的資源檔是一個影像區，則工具會先將它分割成不同的映射，然後再將每個 subimage 新增至資訊清單。<br /><br /> 如果影像是 .png 檔案，我們建議您將名稱格式化，如下所示，讓工具可以填入正確的影像屬性： \<Name> ... \<Width> \<Height>png.|必要|  
+|/assembly|Managed 元件的名稱（不包括副檔名），或裝載資源之原生元件的執行時間路徑（相對於資訊清單的執行時間位置）。|必要|  
+|/manifest|要提供給所產生之 imagemanifest 檔的名稱。 這也可以包含絕對或相對路徑，以在不同的位置建立檔案。 預設名稱會與元件名稱相符。<br /><br /> 預設值： \<Current Directory> \\<元件 \> . imagemanifest|選擇性|  
+|/guidName|要提供給所產生資訊清單中所有影像之 GUID 符號的名稱。<br /><br /> 預設值： AssetsGuid|選擇性|  
+|/rootPath|在建立受控資源 Uri 之前，需要先將其移除的根路徑。 （此旗標是用來協助工具取得相對 URI 路徑錯誤的情況，導致資源無法載入。）<br /><br /> 預設：\<Current Directory>|選擇性|  
+|/recursive|設定此旗標會告知工具以遞迴方式搜尋/resources 引數中的任何目錄。 省略此旗標將會產生最上層的目錄搜尋。|選擇性|  
+|/isNative|當 assembly 引數是原生元件的路徑時，請設定此旗標。 當 assembly 引數是 managed 元件的名稱時，請省略此旗標。 （如需此旗標的詳細資訊，請參閱附注一節）。|選擇性|  
+|/newGuids|設定此旗標會告知工具建立影像 GUID 符號的新值，而不是從現有的資訊清單中合併它。|選擇性|  
+|/newIds|設定此旗標會告知工具為每個影像建立新的識別碼符號值，而不是合併現有資訊清單中的值。|選擇性|  
+|/noLogo|設定此旗標會阻止產品和著作權資訊進行列印。|選擇性|  
+|/?|印出說明資訊。|選擇性|  
+|/help|印出說明資訊。|選用|  
   
  **範例**  
   
-- ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
+- ManifestFromResources/resources： D:\Images/assembly： My. Assembly. Name/isNative  
   
-- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources/resources:D:\Images\Image1.png;D： \Images\Image1.xaml/assembly： My. Assembly. Name/manifest： MyImageManifest. imagemanifest  
   
-- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
+- ManifestFromResources/resources:D:\Images\Image1.png;D： \Images\Image1.xaml/assembly： My. Assembly. Name/guidName： MyImages/newGuids/newIds  
   
-## <a name="notes"></a>附註  
+## <a name="notes"></a>注意  
   
-- 此工具僅支援.png 和.xaml 檔案。 將會忽略任何其他映像或檔案類型。 所有不受支援的類型，剖析的資源時，會產生警告。 如果不支援映像會找到此工具完成時剖析的資源，將會產生錯誤  
+- 此工具僅支援 .png 和 .xaml 檔案。 任何其他影像或檔案類型都會被忽略。 剖析資源時遇到的所有不支援的類型都會產生警告。 如果在工具完成剖析資源時找不到支援的映射，將會產生錯誤  
   
-- 藉由遵循建議的格式為.png 影像，此工具將會設定.png 大小/維度值的格式指定的大小，即使其不同於映像的實際大小。  
+- 此工具會遵循 .png 影像的建議格式，將 .png 的大小/維度值設定為格式指定的大小，即使它與影像的實際大小不同也一樣。  
   
-- .Png 映像，則可以省略的寬度/高度的格式，但此工具會讀取映像的實際寬度/高度，並使用這些映像的大小/維度值。  
+- .Png 影像可以省略寬度/高度格式，但此工具會讀取影像的實際寬度/高度，並將其用於影像的大小/維度值。  
   
-- 針對相同.imagemanifest 多次相同的影像區域上執行此工具將會導致重複的資訊清單項目，因為此工具會嘗試將影像區域分割成獨立映像，並將它們新增至現有的資訊清單。  
+- 在相同的影像區域上多次執行此工具。 imagemanifest 會產生重複的資訊清單專案，因為此工具會嘗試將影像區域分割成獨立映射，並將其新增至現有的資訊清單。  
   
-- 合併 （省略 /newGuids 或 /newIds），才應該執行工具所產生資訊清單。 自訂或透過其他方式所產生的資訊清單可能不正確地合併。  
+- 只應針對工具產生的資訊清單進行合併（省略/newGuids 或/newIds）。 已透過其他方式自訂或產生的資訊清單可能無法正確合併。  
   
-- 針對原生組件所產生資訊清單可能需要透過手動編輯產生進行比對的資源識別碼，從原生組件的.rc 檔的 ID 符號之後。  
+- 針對原生元件產生的資訊清單可能需要在產生之後手動編輯，使識別碼符號符合原生元件 .rc 檔中的資源識別碼。  
   
 ## <a name="sample-output"></a>範例輸出  
- **簡單的映像資訊清單**  
+ **簡單映射資訊清單**  
   
- 影像資訊清單會類似於此.xml 檔案：  
+ 映射資訊清單將類似于下列 .xml 檔案：  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -90,9 +89,9 @@ ms.locfileid: "68192622"
 </ImageManifest>  
 ```  
   
- **影像的影像區域的資訊清單**  
+ **影像帶狀的影像資訊清單**  
   
- 映像的程式資訊清單的影像區域將類似於此.xml 檔案：  
+ 影像帶狀的映射資訊清單會類似于此 .xml 檔案：  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -127,9 +126,9 @@ ms.locfileid: "68192622"
 </ImageManifest>  
 ```  
   
- **原生組件映像資源的映像資訊清單**  
+ **原生元件影像資源的映射資訊清單**  
   
- 原生映像的映像資訊清單會類似於此.xml 檔案：  
+ 原生映射的映射資訊清單將類似于下列 .xml 檔案：  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

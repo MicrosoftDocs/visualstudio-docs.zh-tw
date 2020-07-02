@@ -3,17 +3,17 @@ title: 警告 - 已對 [設定行為] 對話方塊進行變更，但是尚未套
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20889a2fcaf9f44cc21f90ed9b164d4457981764
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4eba7fb1274b36a6a6f2454f4642c1c78505719e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85281028"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535196"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告：已對 [設定行為] 對話方塊進行變更，但是尚未套用變更
 

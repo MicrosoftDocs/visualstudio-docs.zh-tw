@@ -16,27 +16,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975d2d1c1f66fe06f8fc3a9568f790fbe4c21e36
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: b372b1f6fcdab357e87ff91fa4df257e8da7d68d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460386"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536665"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>錯誤：目標電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦
 此錯誤表示當遠端偵錯程式服務嘗試連接到您要進行偵錯工具的電腦時，無法進行驗證的使用者帳戶。 當使用舊版的偵錯工具進行遠端處理，且遠端偵錯程式是以服務方式執行時，可能會發生此錯誤。
 
  下表顯示可以存取該電腦的帳戶：
 
-|||||
+|狀況|LocalSystem 帳戶|網域帳戶|在兩台電腦上都具有相同使用者名稱和密碼的本機帳戶|
 |-|-|-|-|
-||LocalSystem 帳戶|網域帳戶|在兩台電腦上都具有相同使用者名稱和密碼的本機帳戶|
 |兩台電腦都位於相同的網域|是|是|是|
 |網域上具有雙向信任的兩台電腦|否|否|是|
 |工作群組中的一或兩台電腦|否|否|是|
 |不同網域上的電腦|否|否|是|
 
- 其他情況：
+ 此外：
 
 - 您用來執行 Visual Studio 遠端偵錯工具服務的帳戶，必須是遠端機器上的系統管理者，這樣才能偵錯任何處理序。
 

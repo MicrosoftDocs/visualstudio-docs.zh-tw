@@ -1,5 +1,5 @@
 ---
-title: VSIX 顏色編譯器 |微軟文件
+title: VSIX 色彩編譯器 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
@@ -8,19 +8,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f414a56bb05a23b6efef19aa7c99292b8a40038a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 5059a15c483f648c2248321c7ba8271a634d0c69
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80703894"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536093"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 色彩編譯器
-Visual Studio 擴充顏色編譯器工具是一個主控台應用程式,它採用一個表示現有 Visual Studio 主題顏色的 .xml 檔,並將其隱藏到 .pkgdef 檔案中,以便這些顏色可以在 Visual Studio 中使用。 由於很容易比較 .xml 檔案之間的差異,此工具可用於管理原始程式碼管理中的自定義顏色。 還可以將其連接到生成環境,以便生成的輸出是有效的 .pkgdef 檔。
+Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，它會採用代表現有 Visual Studio 主題色彩的 .xml 檔案，並將其將為 .pkgdef 檔案，讓這些色彩可以用於 Visual Studio。 因為比較 .xml 檔案間的差異很容易，所以這項工具對於管理原始檔控制中的自訂色彩很有用。 它也可以連結到組建環境，讓組建的輸出是有效的 .pkgdef 檔案。
 
  **主題 XML 架構**
 
- 完整的主題 .xml 檔案如下所示:
+ 完整的主題 .xml 檔案看起來像這樣：
 
 ```xml
 <Themes>
@@ -42,7 +42,7 @@ Visual Studio 擴充顏色編譯器工具是一個主控台應用程式,它採�
 
  **佈景主題**
 
- \<主題>元素定義整個主題。 主題必須至少包含一個\<類別>元素。 主題元素的定義如下:
+ \<Theme>元素會定義整個主題。 主題必須包含至少一個 \<Category> 元素。 主題元素的定義如下：
 
 ```xml
 <Theme Name="name" GUID="guid">
@@ -50,25 +50,23 @@ Visual Studio 擴充顏色編譯器工具是一個主控台應用程式,它採�
 </Theme>
 ```
 
-|||
+|**屬性**|**[定義]**|
 |-|-|
-|**屬性**|**定義**|
-|名稱|[ 必需]主題名稱|
-|GUID|[ 必需]主題的 GUID(必須符合 GUID 格式)|
+|名稱|具備主題的名稱|
+|GUID|具備主題的 GUID （必須符合 GUID 格式）|
 
- 為 Visual Studio 創建自訂顏色時,需要為以下主題定義這些顏色。 如果特定主題不存在顏色,Visual Studio 會嘗試從「燈光」主題載入缺失的顏色。
+ 建立 Visual Studio 的自訂色彩時，必須為下列主題定義這些色彩。 如果特定主題沒有色彩存在，Visual Studio 會嘗試從淺色主題載入遺漏的色彩。
 
-|||
-|-|-|
 |**主題名稱**|**主題 GUID**|
-|淡|[de3dbbcd-f642-433c-8353-8f1df4370aba]|
+|-|-|
+|淺色|{de3dbbcd-f642-433c-8353-8f1df4370aba}|
 |深色|{1ded0138-47ce-435e-84ef-9ec1f439b749}|
-|藍色|[a4d6a176-b948-4b29-8c66-53c97a1ed7d0]|
-|高對比|[a4d6a176-b948-4b29-8c66-53c97a1ed7d0]|
+|藍色|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
+|高對比|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
 
- **類別目錄**
+ **類別**
 
- 類別\<>元素定义主题中的颜色集合。 類別名稱提供邏輯分組,並且應盡可能狹義地定義。 類別必須至少包含一個\<顏色>元素。 類別元素的定義如下:
+ \<Category>元素會定義主題中的色彩集合。 類別目錄名稱會提供邏輯群組，而且應該盡可能地定義為最窄。 分類必須包含至少一個 \<Color> 元素。 Category 元素的定義如下：
 
 ```xml
 <Category Name="name" GUID="guid">
@@ -76,15 +74,14 @@ Visual Studio 擴充顏色編譯器工具是一個主控台應用程式,它採�
  </Category>
 ```
 
-|||
+|**屬性**|**[定義]**|
 |-|-|
-|**屬性**|**定義**|
-|名稱|[ 必需]類別的名稱|
-|GUID|[ 必需]類別的 GUID(必須符合 GUID 格式)|
+|名稱|具備類別目錄的名稱|
+|GUID|具備類別的 GUID （必須符合 GUID 格式）|
 
- **Color**
+ **色彩**
 
- 顏色\<>元素定义 UI 的元件或狀態的顏色。 顏色的首選命名方案是 [UI 類型] [狀態]。 不要使用"顏色"一詞,因為它是多餘的。 顏色應清楚地指示要應用顏色的元素類型和情況或" 顏色不能為空,並且必須包含\<背景>和\<前景>元素的一個或兩個。 顏色元素的定義如下:
+ \<Color>元素會定義元件或 UI 狀態的色彩。 色彩慣用的命名配置為 [UI 類型] [狀態]。 請勿使用「色彩」一詞，因為它是多餘的。 色彩應該會清楚地指出要套用色彩的元素類型和狀況，或「狀態」。 色彩不得為空白，且必須包含一個或兩個專案 \<Background> \<Foreground> 。 色彩元素的定義如下：
 
 ```xml
 <Color Name="name">
@@ -93,31 +90,29 @@ Visual Studio 擴充顏色編譯器工具是一個主控台應用程式,它採�
  </Color>
 ```
 
-|||
+|**屬性**|**[定義]**|
 |-|-|
-|**屬性**|**定義**|
-|名稱|[ 必需]顏色的名稱|
+|名稱|具備色彩的名稱|
 
- **背景與/或前景**
+ **背景和/或前景**
 
- 背景\<\<>和 前景>元素為 UI 元素的背景或前景定義顏色的值和類型。 這些元素沒有子元素。
+ \<Background>和 \<Foreground> 元素會針對 UI 專案的背景或前景，定義色彩的值和類型。 這些元素沒有子系。
 
 ```xml
 <Background Type="type" Source="int" />
 <Foreground Type="type" Source="int" />
 ```
 
-|||
+|**屬性**|**[定義]**|
 |-|-|
-|**屬性**|**定義**|
-|類型|[ 必需]顏色的類型。 可以是下列其中一項：<br /><br /> *CT_INVALID:* 顏色無效或未設置。<br /><br /> *CT_RAW:* 原始 ARGB 值。<br /><br /> *CT_COLORINDEX:* 請勿使用。<br /><br /> *CT_SYSCOLOR:* 來自 SysColor 的 Windows 系統顏色。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX的視覺工作室顏色。<br /><br /> *CT_AUTOMATIC:* 自動顏色。<br /><br /> *CT_TRACK_FOREGROUND:* 請勿使用。<br /><br /> *CT_TRACK_BACKGROUND:* 請勿使用。|
-|來源|[ 必需]十六進位表示的顏色值|
+|類型|具備色彩的類型。 可以是下列其中一項：<br /><br /> *CT_INVALID：* 色彩無效或未設定。<br /><br /> *CT_RAW：* 原始 ARGB 值。<br /><br /> *CT_COLORINDEX：* 請勿使用。<br /><br /> *CT_SYSCOLOR：* 來自 SysColor 的 Windows 系統色彩。<br /><br /> *CT_VSCOLOR：*__VSSYSCOLOREX 的 Visual Studio 色彩。<br /><br /> *CT_AUTOMATIC：* 自動色彩。<br /><br /> *CT_TRACK_FOREGROUND：* 請勿使用。<br /><br /> *CT_TRACK_BACKGROUND：* 請勿使用。|
+|來源|具備以十六進位表示的色彩值|
 
- __VSCOLORTYPE枚舉支援的所有值都由 Type 屬性中的架構支援。 但是,我們建議您僅使用CT_RAW和CT_SYSCOLOR。
+ Type 屬性中的架構支援 __VSCOLORTYPE 列舉所支援的所有值。 不過，我們建議您只使用 CT_RAW 和 CT_SYSCOLOR。
 
- **一起**
+ **全部整合**
 
- 這是一個有效主題 .xml 檔案的簡單範例:
+ 這是有效的主題 .xml 檔案的簡單範例：
 
 ```xml
 <Themes>
@@ -131,36 +126,35 @@ Visual Studio 擴充顏色編譯器工具是一個主控台應用程式,它採�
 </Themes>
 ```
 
-## <a name="how-to-use-the-tool"></a>如何使用該工具
+## <a name="how-to-use-the-tool"></a>如何使用工具
  **語法**
 
- VsixColor編譯器\<XML檔> \<PkgDef\<檔案>可選 Args>
+ VsixColorCompiler \<XML file> \<PkgDef file>\<Optional Args>
 
  **引數**
 
-||||
+|**交換器名稱**|**備註**|**Required 或 Optional**|
 |-|-|-|
-|**切換名稱**|**注意**|**必要或選擇**|
-|未命名 (.xml 檔案)|這是第一個未命名的參數,是要轉換的 XML 檔的路徑。|必要|
-|未命名(.pkgdef 檔案)|這是第二個未命名的參數,是生成的 .pkgdef 檔的輸出路徑。<br /><br /> 預設值:XML\<檔名>.pkgdef|選用|
-|/noLogo|設置此標誌將停止列印產品和版權資訊。|選用|
-|/?|列印説明資訊。|選用|
-|/help|列印説明資訊。|選用|
+|未命名的（.xml 檔案）|這是第一個未命名的參數，而是要轉換之 XML 檔案的路徑。|必要|
+|未命名（. .pkgdef 檔案）|這是第二個未命名的參數，而是所產生 .pkgdef 檔案的輸出路徑。<br /><br /> 預設值： \<XML Filename> . .pkgdef|選擇性|
+|/noLogo|設定此旗標會阻止產品和著作權資訊進行列印。|選擇性|
+|/?|印出說明資訊。|選擇性|
+|/help|印出說明資訊。|選用|
 
  **範例**
 
-- VsixColor 編譯器 D:\xml_顏色.xml D:\pkgdef_colors.pkgdef
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
 
-- VsixColor 編譯器 D:\xml_顏色.xml/noLogo
+- VsixColorCompiler D:\xml\colors.xml/noLogo
 
 ## <a name="notes"></a>注意
 
-- 此工具要求安裝最新版本的 VC++ 運行時。
+- 此工具需要安裝最新版本的 VC + + 執行時間。
 
-- 僅支援單個檔。 不支援通過資料夾路徑進行批量轉換。
+- 僅支援單一檔案。 不支援透過資料夾路徑進行大量轉換。
 
 ## <a name="sample-output"></a>範例輸出
- 該工具產生的 .pkgdef 檔案會類似於以下鍵:
+ 此工具所產生的 .pkgdef 檔案會類似以下的機碼：
 
 ```
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\Environment]

@@ -31,20 +31,20 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 319e09d2438b23c217f7820fe4288758a595be56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 537223aab878aee2fb00e9417d0415f0a17d2dd5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662214"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534130"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-使用 [格式化] 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [格式] 屬性頁，請展開 [文字編輯器]、[XAML]、[格式] 節點。
+使用 [格式化]**** 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項]**** 對話方塊，請按一下 [工具]**** 功能表，然後按一下 [選項]****。 若要存取 [格式]**** 屬性頁，請展開 [文字編輯器]****、[XAML]****、[格式]**** 節點。
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱在 Visual Studio 中自訂開發設定 [Walkthrough: Calling Code in an VSTO Add-in from VBA](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+> 您看到的對話方塊與功能表命令，可能會因您所使用的設定或版本，而與說明中所述不同。 若要變更您的設定，請在 [工具]**** 功能表上選擇 [匯入和匯出設定]****。 如需詳細資訊，請參閱 [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
 ## <a name="auto-formatting-events"></a>自動格式化事件
 偵測到下列任一事件時，可能會進行自動格式化。
@@ -59,7 +59,7 @@ ms.locfileid: "72662214"
 
   您可以指定哪些事件會導致自動格式化。
 
-|||
+|名稱|描述|
 |-|-|
 |**結束標記或簡單標記完成時**|輸入結束標記或簡單標記完成時，會進行自動格式化。 簡單標記沒有屬性，例如 `<Button />`。|
 |**開始標記完成時**|完成鍵入開始標記時，會進行自動格式化。|
@@ -70,7 +70,7 @@ ms.locfileid: "72662214"
 
 設定此選項之後，只會影響使用設計工具所後續新增的屬性或在 XAML 檢視中手動新增的屬性。
 
-|||
+|名稱|描述|
 |-|-|
 |**雙引號 (")**|屬性值會括在雙引號中。<br /><br /> `<Button Name="button1">Hello</Button>`|
 |**單引號 (')**|屬性值會括在單引號中。<br /><br /> `<Button Name='button1'>Hello</Button>`|
@@ -78,15 +78,15 @@ ms.locfileid: "72662214"
 ## <a name="tag-wrapping"></a>標記換行
 您可以指定進行標記換行的行長度。 啟用標記換行時，使用設計工具所後續新增的任何 XAML 都會適當地換行。
 
-|||
+|名稱|描述|
 |-|-|
-|**將超過指定長度的標記換行**|指定是否在 [長度] 所指定的行長度處換行。|
+|**將超過指定長度的標記換行**|指定是否在 [長度]**** 所指定的行長度處換行。|
 |**長度**|一行可以包含的字元數。 必要時，有些 XAML 行可能會超過指定的行長度。|
 
 ## <a name="attribute-spacing"></a>屬性間距
 使用此設定可控制 XAML 文件中的屬性排列方式
 
-|||
+|名稱|描述|
 |-|-|
 |**保留屬性間的新行與空格**|自動格式化不會影響屬性間的新行與空格。<br /><br /> `<Button Height="23" Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
 |**在屬性之間插入單一空格**|屬性會佔用一行，並以一個空格分隔相鄰的屬性。 套用標記換行設定。<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|
@@ -105,7 +105,7 @@ ms.locfileid: "72662214"
 ## <a name="auto-insert"></a>自動插入
 使用此設定可控制標記和引號的自動產生時機。
 
-|||
+|名稱|描述|
 |-|-|
 |**結尾標記**|指定當您關閉具有大於字元 (>) 的開始標記時，是否自動產生項目的結尾標記。|
 |**屬性引號**|指定從陳述式完成下拉式清單中選取屬性值時，是否產生封閉式引號。|
@@ -115,18 +115,18 @@ ms.locfileid: "72662214"
 ## <a name="default-view"></a>預設檢視
 使用此設定可控制載入 XAML 文件時是否出現設計檢視。
 
-|||
+|名稱|描述|
 |-|-|
 |**一律以完整的 XAML 視圖開啟檔**|指定 XAML 檔是否只會出現在 XAML 視圖中，而不設計檢視。 適用于載入大型檔。|
 
 ## <a name="toolbox"></a>工具箱
 使用此設定可指定是否要在 [工具箱] 中顯示使用者控制項和自訂控制項。
 
-|||
+|名稱|描述|
 |-|-|
 |**自動填入工具箱項目**|指定目前方案中的使用者控制項和自訂控制項是否自動顯示在工具箱。|
 
-## <a name="see-also"></a>請參閱
-[WPF 中的 xaml](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
-[如何：變更 xaml 視圖設定](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)
-[xaml 和程式碼](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)逐步解說
+## <a name="see-also"></a>另請參閱
+WPF 中的[XAML](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
+[如何：變更 XAML 視圖設定](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) 
+[XAML 和程式碼](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)逐步解說

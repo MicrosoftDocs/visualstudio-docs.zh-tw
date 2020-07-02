@@ -15,28 +15,28 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 62a2adc6f01e5cb26a6af26d71a124f8b81e07fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09e932651576f9b6d595657ad024b8f2697ad016
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671969"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535742"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243：屬性字串常值必須正確剖析
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243:屬性字串常值必須正確剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
-|Category|Microsoft。使用方式|
+|類別|Microsoft。使用方式|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  屬性的字串常值參數無法正確剖析 URL、GUID 或版本。
 
 ## <a name="rule-description"></a>規則描述
- 因為屬性衍生自 <xref:System.Attribute?displayProperty=fullName>，而屬性是在編譯時期使用，所以只有常數值可以傳遞至其函式。 必須代表 Url、Guid 和版本的屬性參數無法輸入為 <xref:System.Uri?displayProperty=fullName>、<xref:System.Guid?displayProperty=fullName> 和 <xref:System.Version?displayProperty=fullName>，因為這些類型不能表示為常數。 相反地，它們必須以字串表示。
+ 因為屬性是衍生自 <xref:System.Attribute?displayProperty=fullName> ，而且屬性是在編譯時期使用，所以只有常數值可以傳遞至其函式。 必須代表 Url、Guid 和版本的屬性參數不可以輸入為 <xref:System.Uri?displayProperty=fullName> 、 <xref:System.Guid?displayProperty=fullName> 和 <xref:System.Version?displayProperty=fullName> ，因為這些類型不能表示為常數。 相反地，它們必須以字串表示。
 
  因為參數的類型是字串，所以可能會在編譯時期傳遞格式不正確的參數。
 
@@ -61,5 +61,5 @@ ms.locfileid: "72671969"
 
 - 包含 ' uri '、' urn ' 或 ' url ' 的參數無法剖析為 system.string。
 
-## <a name="see-also"></a>請參閱
- [CA1054：URI 參數不應該為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+## <a name="see-also"></a>另請參閱
+ [CA1054:URI 參數不應該為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

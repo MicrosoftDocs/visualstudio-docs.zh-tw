@@ -1,7 +1,7 @@
 ---
 title: 使用 T4 文字範本在設計階段產生程式碼
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06c6244f59482825ed435226f79437da9e2c0df0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8589be1bd1c1e9ad86a412d4f8bd2630c93a42ac
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589626"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535989"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 
@@ -41,11 +41,11 @@ ms.locfileid: "75589626"
 
 2. 將文字模板檔案新增至您的專案，並為其命名副檔名為**tt**的名稱。
 
-    若要這麼做，請在**方案總管**的專案快捷方式功能表上，選擇 [**加入** > **新專案**]。 在 [**加入新專案**] 對話方塊中，從中間窗格選取 [**文字模板**]。
+    若要這麼做，請在**方案總管**的專案快捷方式功能表上，選擇 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，從中間窗格選取 [**文字模板**]。
 
     請注意，檔案的 [**自訂工具**] 屬性是**TextTemplatingFileGenerator**。
 
-3. 開啟檔案。 它已包含下列指示詞：
+3. 開啟 檔案。 它已包含下列指示詞：
 
    ```
    <#@ template hostspecific="false" language="C#" #>
@@ -62,7 +62,7 @@ ms.locfileid: "75589626"
 
 5. 儲存檔案。
 
-    您可能會看到**安全性警告**訊息方塊，要求您確認是否要執行範本。 按一下 [ **確定**]。
+    您可能會看到**安全性警告**訊息方塊，要求您確認是否要執行範本。 按一下 [確定] 。
 
 6. 在**方案總管**中，展開範本檔案節點，您會發現副檔名為 **.txt**的檔案。 此檔案包含從範本產生的文字。
 
@@ -134,7 +134,7 @@ ms.locfileid: "75589626"
    範本會在中斷點執行並停止。 您可以檢查變數，並照常逐步執行程式碼。
 
 > [!TIP]
-> `debug="true"` 藉由在產生的程式碼中插入更多行號指示詞，讓產生的 Code Map 更精確地提供給文字模板。 如果您遺漏它，則中斷點可能會以錯誤的狀態停止執行作業。
+> `debug="true"`藉由在產生的程式碼中插入更多行號指示詞，讓產生的 Code Map 更精確地提供給文字模板。 如果您遺漏它，則中斷點可能會以錯誤的狀態停止執行作業。
 >
 > 但是，您可以將此子句留在範本指示詞中，即使未進行偵錯也是一樣。 這樣只會導致效能稍微降低。
 
@@ -219,7 +219,7 @@ ms.locfileid: "75589626"
 <#@ import namespace="System.IO" #>
 ```
 
-`assembly` 指示詞可讓您的範本程式碼使用指定的元件，其方式與 Visual Studio 專案的 [參考] 區段相同。 您不需要包括自動參考之 System.dll 的參考。 `import` 指示詞可讓您使用未使用其完整名稱的類型，方式與一般程式檔案中的 `using` 指示詞相同。
+指示詞可 `assembly` 讓您的範本程式碼使用指定的元件，其方式與 Visual Studio 專案的 [參考] 區段相同。 您不需要包括自動參考之 System.dll 的參考。 `import` 指示詞可讓您使用未使用其完整名稱的類型，方式與一般程式檔案中的 `using` 指示詞相同。
 
 例如，匯入**System.IO**之後，您可以撰寫：
 
@@ -272,7 +272,7 @@ ms.locfileid: "75589626"
 
 ### <a name="getting-data-from-visual-studio"></a>從 Visual Studio 取得資料
 
-若要使用 Visual Studio 中提供的服務，請設定 `hostSpecific` 屬性，並載入 `EnvDTE` 元件。 匯入 `Microsoft.VisualStudio.TextTemplating`，其中包含 `GetCOMService()` 擴充方法。  然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如：
+若要使用 Visual Studio 中提供的服務，請設定 `hostSpecific` 屬性並載入 `EnvDTE` 元件。 匯入 `Microsoft.VisualStudio.TextTemplating` ，其中包含 `GetCOMService()` 擴充方法。  然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如：
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -290,7 +290,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > 文字範本是在其專屬應用程式網域中執行，而服務是透過封送處理進行存取。 在此情況下，GetCOMService() 比 GetService() 還要可靠。
 
-## <a name="Regenerating"></a>自動重新產生程式碼
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>自動重新產生程式碼
 
 一般來說，Visual Studio 方案中的數個檔案會使用一個輸入模型來產生。 每個檔案都是透過其專屬範本所產生，但是範本都參考相同的模型。
 
@@ -299,7 +299,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 如果您已安裝 Visual Studio 模型 SDK，您可以在每次執行組建時，自動轉換所有範本。 若要這麼做，請在文字編輯器中編輯您的專案檔 (.csproj 或 .vbproj)，並在接近檔案結尾處，任何其他 `<import>` 陳述式的後面加入下列各行：
 
 > [!NOTE]
-> 當您安裝 Visual Studio 的特定功能時，會自動安裝文字模板轉換 SDK 和 Visual Studio 模型化 SDK。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
+> 當您安裝 Visual Studio 的特定功能時，會自動安裝文字模板轉換 SDK 和 Visual Studio 模型化 SDK。 如需詳細資訊，請參閱[此部落格文章](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
 ::: moniker range="vs-2017"
 
@@ -336,13 +336,13 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="Converting"></a>將現有的檔案轉換為範本
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>將現有的檔案轉換為範本
 
-範本的有用功能是它們看起來很像它們所產生的檔案和一些插入的程式碼。 這會建議建立範本的有用方法。 首先，建立一般檔案做為原型（例如 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 檔案），然後逐漸引進會改變所產生檔案的產生程式碼。
+範本的有用功能是它們看起來很像它們所產生的檔案和一些插入的程式碼。 這會建議建立範本的有用方法。 首先，建立一般檔案做為原型（例如檔案），然後 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 逐漸引進會改變所產生檔案的產生程式碼。
 
 ### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>將現有檔案轉換為設計階段範本
 
-1. 在您的 Visual Studio 專案中，新增您想要產生之類型的檔案，例如 `.cs`、`.vb`或 `.resx` 檔案。
+1. 在您的 Visual Studio 專案中，新增您想要產生之類型的檔案，例如 `.cs` 、或檔案 `.vb` `.resx` 。
 
 2. 測試新的檔案，確定其運作。
 
@@ -353,7 +353,7 @@ Warning("A warning message");
    | | |
    |-|-|
    | **自訂工具 =** | **TextTemplatingFileGenerator** |
-   | **組建動作 =** | **無** |
+   | **建置動作 =** | **None** |
 
 5. 在檔案開頭，插入下列各行：
 
@@ -388,6 +388,6 @@ Warning("A warning message");
 |以網域特定領域語言形式，轉換您的資料。|[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)|
 |撰寫指示詞處理器，以轉換您專屬的資料來源。|[自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [撰寫 T4 文字範本的方針](../modeling/guidelines-for-writing-t4-text-templates.md)

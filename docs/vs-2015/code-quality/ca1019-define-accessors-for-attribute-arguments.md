@@ -15,21 +15,21 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4e77f3a4eec7495e6b4abe13bec93d341f961463
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ec9be9dae502ec48570a85576f483518ed0d75d6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662006"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534949"
 ---
-# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019：必須定義屬性引數的存取子
+# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019:定義屬性引數的存取子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|值|
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|
 |CheckId|CA1019|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -74,7 +74,7 @@ ms.locfileid: "72662006"
  [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamedApplied/cs/FxCop.Design.AttributeAccessorsNamedApplied.cs#1)]
 
 ## <a name="related-rules"></a>相關規則
- [CA1813：避免使用非密封屬性](../code-quality/ca1813-avoid-unsealed-attributes.md)
+ [CA1813:避免使用非密封屬性](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [屬性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

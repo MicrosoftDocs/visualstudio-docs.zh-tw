@@ -2,7 +2,7 @@
 title: Python 專案的項目範本
 description: Python 專案項目範本的參考清單可在 Visual Studio 中透過 [加入] > [新項目] 對話方塊取得。
 ms.date: 12/06/2018
-ms.topic: tutorial
+ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 528606356c2d976de71ab2c0317a1a0236d2e63f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62430326"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533389"
 ---
 # <a name="python-item-templates"></a>Python 項目範本
 
-專案範本通過 **"專案** > **添加新專案"** 功能表命令或在**解決方案資源管理器**中的內容功能表上的"**添加新** > **項**"命令在 Python 專案中可用。
+專案範本可透過 [**專案**] [  >  **加入新專案**] 功能表命令，或內容功能表中的 [**加入**  >  **新專案**] 命令（位於**方案總管**），在 Python 專案中提供。
 
 ![[加入新項目] 對話方塊](media/project-item-templates.png)
 
@@ -31,11 +31,11 @@ ms.locfileid: "62430326"
 | --- | --- |
 | **空白 Python 檔案** | 副檔名為 *.py* 的空白檔案。 |
 | **Python 類別** | 包含單一空白 Python 類別定義的 *.py* 檔案。 |
-| **Python 包** | 包含*\_\_\_\_init .py*檔的資料夾。 |
+| **Python 套件** | 包含* \_ \_ \_ \_ .py*檔案的資料夾。 |
 | **Python 單元測試** | 根據 `unittest` 架構進行一個單元測試的 *.py* 檔案，還有呼叫 `unittest.main()` 以執行檔案中的測試。 |
 | **HTML 頁面** | 具有單一頁面結構的 *.html* 檔案，此結構包含 `<head>` 和 `<body>` 元素。 |
-| **JAVAscript** | 空白的 *.js* 檔案。 |
-| **樣式表** | 包含 `body` 的空白樣式的 *.css* 檔案。 |
+| **JavaScript** | 空白的 *.js* 檔案。 |
+| **樣式表單** | 包含 `body` 的空白樣式的 *.css* 檔案。 |
 | **文字檔** | 空白的 *.txt* 檔案。 |
 | **Django 1.9 應用程式**<br/>**Django 1.4 應用程式** | 具有應用程式名稱的資料夾，其中包含如 Django 1.9 的[在 Visual Studio 中學習 Django，步驟 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) 中所說明的 Django 應用程式核心檔案。 針對 Django 1.4，不會包含 *migrations* 資料夾、*admin.py* 檔案與 *apps.py* 檔案。 |
 | **IronPython WPF 視窗** | WPF 視窗包含兩個並存的檔案：使用空白的 `<Grid>` 元素定義 `<Window>` 的 *.xaml* 檔案，以及使用 `wpf` 程式庫來載入 XAML 檔案的相關聯 *.py* 檔案。 通常是在使用其中一個 IronPython 專案範本所建立的專案中使用。 請參閱[管理 Python 專案 - 專案範本](managing-python-projects-in-visual-studio.md#project-templates)。 |
@@ -50,4 +50,4 @@ ms.locfileid: "62430326"
 
 - [管理 Python 專案 - 專案範本](managing-python-projects-in-visual-studio.md#project-templates)
 - [Python Web 專案範本](python-web-application-project-templates.md)
-- [發佈到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

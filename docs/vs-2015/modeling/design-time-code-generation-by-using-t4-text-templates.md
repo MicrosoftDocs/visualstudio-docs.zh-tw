@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5e817bc76a76c3d0af0e3509ef14312ac1b98acf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efdbf1b96e1dc49f5b9c48cebe6cededc9ea7c6e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669807"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534143"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "72669807"
 > [!NOTE]
 > 「*模型*」（model）是一種資料來源，可描述應用程式的特定層面。 它可以是任何形式、任何類型的檔案或資料庫。 它不需要是任何特定形式 (如 UML 模型或「特定領域語言」模型)。 一般模型的格式是表格或 XML 檔案。
 
- 您可能已熟悉如何產生程式碼。 當您在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案的 **.resx**檔案中定義資源時，系統會自動產生一組類別和方法。 編輯資源檔案中的資源，會比編輯類別和方法更為簡單也較可靠。 運用文字範本，您可以使用相同的方式透過您專屬設計的原始檔產生程式碼。
+ 您可能已熟悉如何產生程式碼。 當您在方案的 **.resx**檔案中定義資源時 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，系統會自動產生一組類別和方法。 編輯資源檔案中的資源，會比編輯類別和方法更為簡單也較可靠。 運用文字範本，您可以使用相同的方式透過您專屬設計的原始檔產生程式碼。
 
  文字範本混合了您想要產生的文字以及產生文字變動部分的程式碼。 程式碼可讓您重複或有條件地省略所產生文字的某些部分。 所產生的文字本身可以是形成您應用程式一部分的程式碼。
 
@@ -52,7 +52,7 @@ ms.locfileid: "72669807"
 
      請注意，檔案的 [**自訂工具**] 屬性是**TextTemplatingFileGenerator**。
 
-3. 開啟檔案。 它已包含下列指示詞：
+3. 開啟 檔案。 它已包含下列指示詞：
 
     ```
     <#@ template hostspecific="false" language="C#" #>
@@ -61,7 +61,7 @@ ms.locfileid: "72669807"
 
      如果您已將該範本加入至 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案，則語言屬性會是 "`VB`"。
 
-4. 在檔案結尾加入一些文字。 例如:
+4. 在檔案結尾加入一些文字。 例如：
 
     ```
     Hello, world!
@@ -69,7 +69,7 @@ ms.locfileid: "72669807"
 
 5. 儲存檔案。
 
-     您可能會看到**安全性警告**訊息方塊，要求您確認是否要執行範本。 按一下 [確定]。
+     您可能會看到**安全性警告**訊息方塊，要求您確認是否要執行範本。 按一下 [確定] 。
 
 6. 在**方案總管**中，展開範本檔案節點，您會發現副檔名為 **.txt**的檔案。 此檔案包含從範本產生的文字。
 
@@ -130,7 +130,7 @@ ms.locfileid: "72669807"
 ## <a name="debugging-a-design-time-t4-text-template"></a>偵錯設計階段 T4 文字範本
  偵錯文字範本：
 
-- 將 `debug="true"` 插入至 `template` 指示詞。 例如:
+- 將 `debug="true"` 插入至 `template` 指示詞。 例如：
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -141,7 +141,7 @@ ms.locfileid: "72669807"
   範本將會執行並停止於中斷點。 您可以檢查變數，並照常逐步執行程式碼。
 
 > [!TIP]
-> `debug="true"` 會將更多行號指示詞插入至產生的程式碼，以讓產生的程式碼更精確地對應至文字範本。 如果您遺漏它，則中斷點可能會以錯誤的狀態停止執行作業。
+> `debug="true"`藉由在產生的程式碼中插入更多行號指示詞，讓產生的 Code Map 更精確地提供給文字模板。 如果您遺漏它，則中斷點可能會以錯誤的狀態停止執行作業。
 >
 > 但是，您可以將此子句留在範本指示詞中，即使未進行偵錯也是一樣。 這樣只會導致效能稍微降低。
 
@@ -276,8 +276,8 @@ ms.locfileid: "72669807"
 
  `this.Host` (在 VB 中，為 `Me.Host`) 的類型是 `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`。
 
-### <a name="getting-data-from-includevsprvsincludesvsprvs-mdmd"></a>從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 取得資料
- 若要使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中所提供的服務，請設定 `hostSpecific` 屬性，並載入 `EnvDTE` 組件。 然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如:
+### <a name="getting-data-from-vsprvs"></a>從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 取得資料
+ 若要使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中所提供的服務，請設定 `hostSpecific` 屬性，並載入 `EnvDTE` 組件。 然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如：
 
 ```scr
 <#@ template hostspecific="true" language="C#" #>
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > 文字範本是在其專屬應用程式網域中執行，而服務是透過封送處理進行存取。 在此情況下，GetCOMService() 比 GetService() 還要可靠。
 
-## <a name="Regenerating"></a>自動重新產生程式碼
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>自動重新產生程式碼
  通常，會使用一個輸入模型來產生 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的數個檔案。 每個檔案都是透過其專屬範本所產生，但是範本都參考相同的模型。
 
  如果來源模型變更，則您應該重新執行方案中的所有範本。 若要手動執行此動作，請選擇 [**建立**] 功能表上的 [**轉換所有範本**]。
@@ -320,8 +320,8 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="Converting"></a>將現有的檔案轉換為範本
- 範本的有用功能是它們看起來很像它們所產生的檔案和一些插入的程式碼。 這會建議建立範本的有用方法。 首先，建立一般檔案做為原型（例如 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 檔案），然後逐漸引進會改變所產生檔案的產生程式碼。
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>將現有的檔案轉換為範本
+ 範本的有用功能是它們看起來很像它們所產生的檔案和一些插入的程式碼。 這會建議建立範本的有用方法。 首先，建立一般檔案做為原型（例如檔案），然後 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 逐漸引進會改變所產生檔案的產生程式碼。
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>將現有檔案轉換為設計階段範本
 
@@ -333,10 +333,10 @@ Warning("A warning message");
 
 4. 確認下列**tt**檔案的屬性：
 
-    |||
+    |屬性|值|
     |-|-|
     |**自訂工具 =**|**TextTemplatingFileGenerator**|
-    |**組建動作 =**|**無**|
+    |**建置動作 =**|**None**|
 
 5. 在檔案開頭，插入下列各行：
 
@@ -370,5 +370,5 @@ Warning("A warning message");
 |以網域特定領域語言形式，轉換您的資料。|[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)|
 |撰寫指示詞處理器，以轉換您專屬的資料來源。|[自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [撰寫 T4 文字範本的方針](../modeling/guidelines-for-writing-t4-text-templates.md)

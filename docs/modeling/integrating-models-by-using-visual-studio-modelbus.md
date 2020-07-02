@@ -1,22 +1,22 @@
 ---
 title: 使用 Modelbus 整合模型
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b5a0ad18c7b1472e8c08ccc2902cade7714f2b9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: a222d5f69d19d2891b4aa20239c1874f55a056e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985272"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536938"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 整合模型
 
-Visual Studio ModelBus 提供一種方法，可讓您在模型和其他工具之間建立連結到模型。 例如，您可以連結特定領域語言（DSL）模型和 UML 模型。 您可以建立一組整合的 DSL。
+Visual Studio ModelBus 提供一種方法，可讓您在模型和其他工具之間建立連結到模型。 例如，您可以連結網域指定的語言 (DSL) 模型和 UML 模型。 您可以建立一組整合的 DSL。
 
 ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個參考可以儲存在模型外，例如儲存在另一個模型的項目中。 在此情況下，工具需要取得項目的存取權，模型匯流排基礎結構會載入適當的模型並傳回項目。 如有需要，您可以向使用者顯示模型。 如果無法從先前的位置存取檔案，ModelBus 會請使用者尋找檔案。 如果使用者找到檔案，ModelBus 會修正該檔案的所有參考。
 
@@ -25,22 +25,22 @@ ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個�
 
 如需其他資訊和範例程式碼，請參閱：
 
-- [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [如何：加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
 - [Visual Studio 的模型化 SDK](https://www.microsoft.com/download/details.aspx?id=48148)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="provide"></a>提供 DSL 的存取權
+## <a name="providing-access-to-a-dsl"></a><a name="provide"></a>提供 DSL 的存取權
  您必須定義用於 DSL 的 ModelBusAdapter，才能建立模型或其項目的 ModelBus 參考。 若要這麼做，最簡單的方法是使用 Visual Studio 模型匯流排擴充功能，將命令新增至 DSL 設計工具。
 
-### <a name="expose"></a>將 DSL 定義公開給模型匯流排
+### <a name="to-expose-a-dsl-definition-to-model-bus"></a><a name="expose"></a>將 DSL 定義公開給模型匯流排
 
 1. 開啟 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [**啟用 Modelbus**]。
 
 2. 在對話方塊中，選擇 [**我要將此 DSL 公開給 ModelBus**]。 如果您要將這個 DSL 公開給其模型，又要讓這個 DSL 使用其他 DSL 的參考，您可以選擇兩個選項。
 
-3. 按一下 [確定]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
+3. 按一下 [確定] 。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
 
 4. 如果您要從文字範本存取 DSL，您必須修改新專案中的 AdapterManager.tt。 如果您要從其他程式碼 (例如命令和事件處理常式) 存取 DSL，請略過這個步驟。 如需詳細資訊，請參閱[在文字模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
@@ -74,7 +74,7 @@ ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個�
 
 3. 針對您要建立模型匯流排參考的每個類別：
 
-    按一下 類別 節點，然後在 屬性視窗中，確認 **序列化識別碼** 已設定為 `true`。
+    按一下 [類別] 節點，然後在 [屬性視窗中，確認 [**序列化識別碼**] 已設定為 `true` 。
 
    或者，如果您想要使用專案名稱來識別元素，而不是 Guid，您可以覆寫所產生介面卡的各個部分。 覆寫配接器類別中的下列方法：
 
@@ -82,7 +82,7 @@ ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個�
 
 - 覆寫 `ResolveElementReference` 以從模型匯流排參考中找到正確項目。
 
-## <a name="editRef"></a>從另一個 DSL 存取 DSL
+## <a name="accessing-a-dsl-from-another-dsl"></a><a name="editRef"></a>從另一個 DSL 存取 DSL
 
 您可以在 DSL 的網域屬性中儲存模型匯流排參考，以及撰寫自訂程式碼來使用這些參考。 您也可以讓使用者選擇模型檔和模型內的某個項目，藉此建立模型匯流排參考。
 
@@ -94,23 +94,23 @@ ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個�
 
 2. 在對話方塊中，選取 [**我要啟用此模型以使用模型匯流排參考**]。
 
-3. 在使用 DSL 的 Dsl 專案中，將下列組件加入至專案參考。 您會在公開之 DSL 的 ModelBusAdapter\bin \\ * 目錄中找到這些元件（.dll 檔案）。
+3. 在使用 DSL 的 Dsl 專案中，將下列組件加入至專案參考。 您會在公開的 DSL 的 ModelBusAdapter\bin * 目錄中找到這些元件（.dll 檔案） \\ 。
 
-    - 公開的 DSL 元件，例如**FamilyTree. DSL .dll**
+    - 公開的 DSL 元件，例如**Fabrikam.FamilyTree.Dsl.dll**
 
-    - 公開的模型匯流排介面卡元件，例如**Fabrikam. FamilyTree. ModelBusAdapter .dll**
+    - 公開的模型匯流排介面卡元件，例如**Fabrikam.FamilyTree.ModelBusAdapter.dll**
 
 4. 將下列 .NET 組件加入至使用 DSL 專案的專案參考。
 
-    1. **VisualStudio. node.js .dll 的程式庫**
+    1. **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
-    2. **VisualStudio. d i l。**
+    2. **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
 
 ### <a name="to-store-a-model-bus-reference-in-a-domain-property"></a>在網域屬性中儲存模型匯流排參考
 
 1. 在使用 DSL 的 DSL 定義中，將網域屬性加入至網域類別並設定其名稱。
 
-2. 在 屬性視窗中，選取 網域 屬性，將 **類型** 設定為 `ModelBusReference`。
+2. 在 [屬性視窗中，選取 [網域] 屬性後，將 [**類型**] 設定為 `ModelBusReference` 。
 
    在這個階段中，程式碼可設定此屬性值，但此屬性在 [屬性] 視窗中是唯讀的。
 
@@ -126,7 +126,7 @@ ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個�
 
 4. 如果您選擇模型內某個項目的參考，您可以加入使用者可選取的類型清單，例如 Company.FamilyTree.Person。
 
-5. 按一下 **[確定]** ，然後按一下 [**方案總管**] 工具列中的 [**轉換所有範本**]。
+5. 按一下 **[確定]**，然後按一下 [**方案總管**] 工具列中的 [**轉換所有範本**]。
 
     > [!WARNING]
     > 如果您尚未選取有效的模型或實體，[確定] 按鈕即使可能顯示為已啟用，也不會有任何作用。
@@ -356,7 +356,7 @@ ModelBusReference elementReferenceRestored =
 
 ### <a name="serializing-relative-to-a-specified-file-path"></a>相對於指定的檔案路徑來進行序列化
 
-`ModelBusReference` 包含 `ReferenceContext`，這是一個字典，您可以在其中儲存資訊，例如應該序列化的相對檔案路徑。
+`ModelBusReference`包含 `ReferenceContext` ，這是一個字典，您可以在其中儲存資訊，例如應該序列化的相對檔案路徑。
 
 若要相對於路徑進行序列化：
 
@@ -386,9 +386,9 @@ ModelBusReference elementReferenceRestored =
 
  MBR 的還原序列化作業可分為兩個階段：
 
-- `ModelBusReferencePropertySerializer` 是處理 MBR 標頭的標準序列化程式。 它使用標準 DSL `SerializationContext` 屬性封包，該封包使用 `ReferenceContext` 索引鍵儲存在 `ModelBusReferencePropertySerializer.ModelBusLoadContextKey` 中。 特別要提的是，`SerializationContext` 應包含 `ModelBus` 的執行個體。
+- `ModelBusReferencePropertySerializer`是處理 MBR 標頭的標準序列化程式。 它使用標準 DSL `SerializationContext` 屬性封包，該封包使用 `ReferenceContext` 索引鍵儲存在 `ModelBusReferencePropertySerializer.ModelBusLoadContextKey` 中。 特別要提的是，`SerializationContext` 應包含 `ModelBus` 的執行個體。
 
-- 您的 ModelBus 配接器處理配接器特有的 MBR 部分。 它可以使用儲存在 MBR 之 ReferenceContext 中的其他資訊。 以檔案為基礎的簡單介面卡會使用 `FilePathLoadContextKey` 和 `FilePathSaveContextKey` 金鑰來保留根檔案路徑。
+- 您的 ModelBus 配接器處理配接器特有的 MBR 部分。 它可以使用儲存在 MBR 之 ReferenceContext 中的其他資訊。 以檔案為基礎的簡單介面卡會使用金鑰和來保留根檔案路徑 `FilePathLoadContextKey` `FilePathSaveContextKey` 。
 
      模型檔中的配接器參考只有在使用時才可還原序列化。
 
@@ -482,7 +482,7 @@ ModelBus 擴充功能在 DSL 方案中進行了下列變更。
 
 當您以滑鼠右鍵按一下 DSL 定義圖表，按一下 [**啟用 Modelbus**]，然後選取 [**啟用此 DSL 以使用 Modelbus**]：
 
-- 在 DSL 專案中，會將參考加入至**VisualStudio** ，然後再新增至 node.js .dll
+- 在 DSL 專案中，會將參考新增至**Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
 - 在 DSL 定義中，會加入外部類型參考：`Microsoft.VisualStudio.Modeling.Integration.ModelBusReference`。
 
@@ -510,12 +510,12 @@ ModelBus 擴充功能在 DSL 方案中進行了下列變更。
 
 - 新專案 `ModelBusAdapter` 會加入至方案。
 
-- `ModelBusAdapter` 的參考會加入至 `DslPackage` 專案。 `ModelBusAdapter` 會參考 `Dsl` 專案。
+- `ModelBusAdapter` 的參考會加入至 `DslPackage` 專案。 `ModelBusAdapter`具有專案的參考 `Dsl` 。
 
-- 在**DslPackage\source.extention.tt**中，會將 `|ModelBusAdapter|` 新增為 MEF 元件。
+- 在**DslPackage\source.extention.tt**中， `|ModelBusAdapter|` 會加入做為 MEF 元件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：在程式碼中開啟檔案的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
-- [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [如何：加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [使用文字範本中的 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
