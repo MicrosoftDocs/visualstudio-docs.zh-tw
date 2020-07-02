@@ -1,7 +1,7 @@
 ---
 title: 如何將 app.config 檔案新增至專案
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3eb813dc5d4389b002851a904d61219b0d5c316e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fe659979cadf4d9e5752f7bbe85150aae848de08
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593638"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770831"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>如何：將應用程式組態檔新增至 C# 專案
 
@@ -29,11 +29,11 @@ ms.locfileid: "75593638"
 
 ## <a name="to-add-an-application-configuration-file-to-a-c-project"></a>將應用程式組態檔加入 C# 專案
 
-1. 在功能表列上，選擇 **"專案** > **添加新專案**"。
+1. 在功能表列上，選擇 [**專案**] [  >  **加入新專案**]。
 
      [加入新項目] **** 對話方塊隨即出現。
 
-1. 展開**已安裝** > **的視覺化 C# 項**，然後選擇**應用程式佈建檔**範本。
+1. 展開 [**已安裝**  >  的**Visual c # 專案**]，然後選擇 [**應用程式佈建檔**] 範本。
 
 1. 在 [名稱]**** 文字方塊中，輸入名稱，然後選擇 [新增]**** 按鈕。
 
@@ -41,6 +41,6 @@ ms.locfileid: "75593638"
 
 ## <a name="see-also"></a>另請參閱
 
-- [管理應用程式設置 （.NET）](../ide/managing-application-settings-dotnet.md)
+- [管理應用程式設定 (.NET)](../ide/managing-application-settings-dotnet.md)
 - [組態檔結構描述 (.NET Framework)](/dotnet/framework/configure-apps/file-schema/index)
 - [設定應用程式 (.NET Framework)](/dotnet/framework/configure-apps/index)

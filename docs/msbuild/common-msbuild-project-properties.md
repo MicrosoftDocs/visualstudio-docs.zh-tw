@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238b963aceebd2bfdae38c2f4032955c1bd0c0c6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 62f372be9ffa6ae76503550616c6b3612aad6146
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288945"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770868"
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性
 
@@ -33,7 +33,7 @@ ms.locfileid: "85288945"
 
 ## <a name="list-of-common-properties-and-parameters"></a>通用屬性和參數的清單
 
-| 屬性或參數名稱 | 專案類型 | 說明 |
+| 屬性或參數名稱 | 專案類型 | 描述 |
 |------------------------------------| - | - |
 | AdditionalLibPaths | .NET | 指定其他資料夾，編譯器會在這些資料夾中尋找參考組件。 |
 | AddModules | .NET | 讓編譯器將所指定檔案的類型資訊全部提供給您正在編譯的專案。 這個屬性相當於 `/addModules` 編譯器參數。 |
@@ -44,14 +44,14 @@ ms.locfileid: "85288945"
 | AssemblySearchPaths | .NET | 在建置階段參考組件解析期間搜尋的位置清單。 路徑出現在這個清單中的順序是有意義的，因為較早列出的路徑優先於較晚列出的路徑。 |
 | AssemblyName | .NET | 專案建置之後，最後輸出組件的名稱。 |
 | BaseAddress | .NET | 指定主要輸出組件的基底位址。 這個屬性相當於 `/baseaddress` 編譯器參數。 |
-| BaseIntermediateOutputPath | 全部 | 在其中建立所有組態特有中繼輸出資料夾的最上層資料夾。 預設值是 `obj\`。 下列程式碼為範例：`<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>` |
+| BaseIntermediateOutputPath | 全部 | 在其中建立所有組態特有中繼輸出資料夾的最上層資料夾。 預設值為 `obj\`。 下列程式碼為範例：`<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>` |
 | BaseOutputPath | 全部 | 指定輸出檔的基底路徑。 如果已設定，MSBuild 會使用 `OutputPath = $(BaseOutputPath)\$(Configuration)\` 。 範例語法：`<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
 | BuildInParallel | 全部 | 布林值，指出使用多處理器 MSBuild 時，是否以平行方式建立或清除專案參考。 預設值為 `true`，表示系統有多個核心或處理器時，專案將會平行建置。 |
 | BuildProjectReferences | 全部 | 布林值，指出專案參考是否由 MSBuild 所建立。 如果您要 `false` 在 Visual Studio 的整合式開發環境（IDE）中建立專案，則會自動設定為， `true` 否則為。 可以在命令列上指定 `-p:BuildProjectReferences=false` 以避免檢查參考的專案是否為最新。 |
 | CleanFile | 全部 | 做為「清除快取」使用之檔案的名稱。 清除快取是所產生檔案的清單，這些檔案將要在清除作業期間刪除。 建置流程會將這個檔案放入中繼輸出路徑。<br /><br /> 這個屬性只會指定檔案名稱，不包含路徑資訊。 |
 | CodePage | .NET | 指定編譯過程中所有原始程式碼檔使用的字碼頁。 這個屬性相當於 `/codepage` 編譯器參數。 |
 | CompilerResponseFile | .NET | 可傳遞至編譯器工作的選擇性回應檔。 |
-| 設定 | 全部 | 您要建置的組態，它會是 "Debug" 或是 "Release"。 |
+| 組態 | 全部 | 您所建立的設定，通常是 `Debug` 或 `Release` ，但可在方案和專案層級進行設定。 |
 | CscToolPath | C# | C # 編譯器*csc.exe*的路徑。 |
 | CustomBeforeMicrosoftCommonTargets | 全部 | 專案檔或 targets 檔的名稱，該檔案會在一般 targets 匯入之前自動匯入。 |
 | DebugSymbols | 全部 | 布林值，指出建置是否要產生符號。<br /><br /> 在命令列上設定 **-p:DebugSymbols = false**時，會停用產生程式資料庫（*.pdb*）符號檔。 |
@@ -76,7 +76,7 @@ ms.locfileid: "85288945"
 | ModuleAssemblyName | .NET | 組件的名稱，編譯的模組將合併到該組件中。 這個屬性相當於 `/moduleassemblyname` 編譯器參數。 |
 | MSBuildProjectExtensionsPath | 全部 | 指定專案延伸模組的路徑位置。 根據預設，這會採用與 `BaseIntermediateOutputPath` 相同的值。 |
 | NoLogo | 全部 | 布林值，指出您是否要關閉編譯器標誌。 這個屬性相當於 `/nologo` 編譯器參數。 |
-| NoStdLib | .NET | 布林值，指出是否要避免參考標準程式庫 (*mscorlib.dll*)。 預設值是 `false`。 |
+| NoStdLib | .NET | 布林值，指出是否要避免參考標準程式庫 (*mscorlib.dll*)。 預設值為 `false`。 |
 | NoVBRuntimeReference | Visual Basic | 布林值，指出是否應該在專案中包含 Visual Basic 執行時間（*Microsoft.VisualBasic.dll*）做為參考。 |
 | NoWarn | .NET | 隱藏指定的警告。 您只需要指定警告識別項的數值部分。 若有多個警告，則會以分號分隔。 這個參數對應于 `/nowarn` 編譯器的 switch。 |
 | NoWin32Manifest | .NET | 布林值，指出使用者帳戶控制 (UAC) 資訊清單資訊是否將會內嵌於應用程式的可執行檔中。 僅適用于以 Windows Vista 為目標的 Visual Studio 專案。 在使用 ClickOnce 和免註冊 COM 所部署的專案中，會忽略這個元素。 `False` (預設值) 會指定將使用者帳戶控制 (UAC) 資訊清單資訊內嵌於應用程式的可執行檔中。 `True` 則會指定不內嵌 UAC 資訊清單資訊。<br /><br /> 此屬性僅適用于以 Windows Vista 為目標的 Visual Studio 專案。 在使用 ClickOnce 和免註冊 COM 所部署的專案中，會忽略這個屬性。<br /><br /> 只有當您不想 Visual Studio 在應用程式的可執行檔中內嵌任何資訊清單資訊時，才應該新增 NoWin32Manifest;此程式稱為「*虛擬化*」。 若要使用虛擬化，請連同 `<ApplicationManifest>` 一起設定 `<NoWin32Manifest>`，如下所示：<br /><br /> -若為 Visual Basic 專案，請移除 `<ApplicationManifest>` 節點。 （在 Visual Basic 專案中， `<NoWin32Manifest>` 當節點存在時，會忽略 `<ApplicationManifest>` ）。<br />-若為 c # 專案，請將設定為，並將設為 `<ApplicationManifest>` `False` `<NoWin32Manifest>` `True` 。 （在 c # 專案中， `<ApplicationManifest>` 覆寫 `<NoWin32Manifest>` ）。<br /> 這個屬性相當於vbc.exe的 `/nowin32manifest` 編譯器參數。 *vbc.exe* |
@@ -95,7 +95,7 @@ ms.locfileid: "85288945"
 | ProcessorArchitecture | .NET | 解析組件參考時使用的處理器架構。 有效值為 "msil"、"x86"、"amd64" 或 "ia64"。 |
 | ProduceOnlyReferenceAssembly | .NET | 布林值，指示編譯器只發出參考組件，而不發出已編譯的程式碼。 無法與 `ProduceReferenceAssembly` 搭配使用。  此屬性對應於 *vbc.exe* 和 *csc.exe* 編譯器的 `/refonly` 參數。 |
 | ProduceReferenceAssembly | .NET | 布林值，設定為 `true` 時會產生目前組件的[參考組件](/dotnet/standard/assembly/reference-assemblies)。 使用這項功能時，`Deterministic` 應該是 `true`。 此屬性對應於 *vbc.exe* 和 *csc.exe* 編譯器的 `/refout` 參數。 |
-| RemoveIntegerChecks | Visual Basic | 布林值，指出是否要停用整數溢位錯誤檢查。 預設值是 `false`。 此屬性相當於 *vbc.exe* 編譯器的 `/removeintchecks` 參數。 |
+| RemoveIntegerChecks | Visual Basic | 布林值，指出是否要停用整數溢位錯誤檢查。 預設值為 `false`。 此屬性相當於 *vbc.exe* 編譯器的 `/removeintchecks` 參數。 |
 | RootNamespace | 全部 | 命名內嵌資源時使用的根命名空間。 這個命名空間是內嵌資源資訊清單名稱的一部分。 |
 | Satellite_AlgorithmId | .NET | 建立附屬組件時要使用之 *AL.exe* 雜湊演算法的 ID。 |
 | Satellite_BaseAddress | .NET | 使用 `CreateSatelliteAssemblies` 目標建置文化特性特有的附屬組件時，要使用的基底位址。 |
@@ -136,4 +136,4 @@ ms.locfileid: "85288945"
 
 ## <a name="see-also"></a>另請參閱
 
-- [一般 MSBuild 專案專案](../msbuild/common-msbuild-project-items.md)
+- [一般 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)

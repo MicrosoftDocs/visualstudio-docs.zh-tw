@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec1ca7ba801f4e3e0a7777e0cae62e78412dae6
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 875608fbaa2e5c7532371fd95858fe87cdc81ca1
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331962"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815886"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>在 Visual Studio 中使用 XAML 熱重載來撰寫和偵測執行中的 XAML 程式碼
 
@@ -51,17 +51,17 @@ XAML 熱重載可讓您在應用程式執行時變更 XAML 程式碼，以協助
 |-|-|-|-|
 |在應用程式執行時將事件接線至控制項|不支援|不支援|請參閱錯誤：*確認事件失敗*。 請注意，在 WPF 中，您可以參考現有的事件處理常式。 在 UWP 應用程式中，不支援參考現有的事件處理常式。|
 |在資源字典中建立資源物件，例如在應用程式的頁面/視窗或*應用程式中。 xaml*|從 Visual Studio 2019 Update 2 開始支援|支援|範例：將加入 `SolidColorBrush` 至資源字典以當做使用 `StaticResource` 。</br>注意：使用 XAML 熱重載時，可以套用/使用靜態資源、樣式轉換器，以及寫入至資源字典的其他元素。 不支援建立資源。</br> 變更資源字典 `Source` 屬性。|
-|當應用程式正在執行時，將新的控制項、類別、視窗或其他檔案加入至您的專案|不支援|不支援|無|
-|管理 NuGet 套件（新增/移除/更新套件）|不支援|不支援|無|
+|當應用程式正在執行時，將新的控制項、類別、視窗或其他檔案加入至您的專案|不支援|不支援|None|
+|管理 NuGet 套件（新增/移除/更新套件）|不支援|不支援|None|
 |變更使用 {x:Bind} 標記延伸的資料系結|N/A|從 Visual Studio 2019 開始支援|這需要 Windows 10 版本1809（組建10.0.17763）。 Visual Studio 2017 或先前版本中不支援。|
-|不支援變更 X：Uid 指示詞|不適用|不支援|無|
+|不支援變更 X：Uid 指示詞|不適用|不支援|None|
 |多個進程 | 不支援 | 不支援 | 熱重載一次只能用於1個進程。 |
 
 ## <a name="error-messages"></a>錯誤訊息
 
 使用 XAML 熱重載時，您可能會遇到下列錯誤。
 
-|錯誤訊息|說明|
+|錯誤訊息|描述|
 |-|-|
 |確定事件失敗|錯誤表示您嘗試將事件連接到您的其中一個控制項，而您的應用程式在執行時並不支援。|
 |XAML 熱重載不支援這項變更，而且將不會在進行偵錯工具期間套用。|錯誤表示 XAML 熱重載不支援您嘗試的變更。 停止「調試」會話、進行變更，然後重新開機「調試」會話。 如果您發現不支援的案例，請使用[Visual Studio 開發人員社區](https://developercommunity.visualstudio.com/spaces/8/index.html)中新的「建議功能」選項。 |

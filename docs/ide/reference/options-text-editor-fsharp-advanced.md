@@ -4,21 +4,21 @@ ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.Advanced
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aacc2b6aa47f7a250b161187146accc51736b586
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64626a0ebd8850098bbbc056d523b6a3f034bf4e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72668937"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770950"
 ---
 # <a name="options-text-editor-f-advanced"></a>選項、文字編輯器、F#、進階
 
-使用 [進階]**** 選項頁面修改 F# 的一些文字編輯器設定。 要訪問此選項頁，請選擇 **"工具** > **選項**"，然後選擇**文字編輯器** > **F#** > **高級**。
+使用 [進階]**** 選項頁面修改 F# 的一些文字編輯器設定。 若要存取此選項頁面，請選擇 [**工具**] [  >  **選項**]，然後選擇 [**文字編輯器**] [  >  **F #**  >  **Advanced**]。
 
 ## <a name="block-structure-guides"></a>區塊結構輔助線
 
@@ -30,5 +30,5 @@ ms.locfileid: "72668937"
 
 ## <a name="see-also"></a>另請參閱
 
-- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
 - [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)

@@ -1,18 +1,18 @@
 ---
 title: XML 編輯器
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10741daffff2213e8ababde2395663e78241fdc4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 64f36255a03939c649a91b4a91d15958475be3b5
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592395"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815015"
 ---
 # <a name="xml-editor"></a>XML 編輯器
 
@@ -54,7 +54,7 @@ XML 編輯器包含下列功能：
 
 [XSLT 階層工具](../xml-tools/walkthrough-using-xslt-hierarchy.md)可讓您在包含的樣式表單和（或）內建範本規則中加入中斷點。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 編輯器選項-格式化](../ide/reference/options-text-editor-xml-formatting.md)
 - [XML 編輯器選項-其他](../ide/reference/options-text-editor-xml-miscellaneous.md)

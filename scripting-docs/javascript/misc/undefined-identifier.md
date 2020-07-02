@@ -3,7 +3,7 @@ title: 未定義的識別碼 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5009
 dev_langs:
@@ -14,12 +14,12 @@ ms.assetid: 8c8000d9-dd14-487e-922d-98430024a0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b55b6d695cded9b7effac664dfca6ca9904e9d84
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 3de7f224b6ff40f1606f9593704f799cd64d32da
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572549"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816055"
 ---
 # <a name="undefined-identifier"></a>未定義的識別項
 您嘗試使用 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 編譯器無法辨識的識別碼。 當您使用時，會傳回未定義的值：  
@@ -30,7 +30,7 @@ ms.locfileid: "72572549"
   
 - 不存在的物件屬性。  
   
-### <a name="to-correct-this-error"></a>若要改正這項錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 - 使用**var**語句宣告變數（如 `var` x;）。  
   

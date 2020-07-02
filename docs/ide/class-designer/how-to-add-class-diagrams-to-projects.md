@@ -1,7 +1,7 @@
 ---
 title: 如何：將類別圖表加入至專案 (類別設計工具)
 ms.date: 05/08/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a6c1e996d820724138b6bf38c6440193a4c26b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a54b01f718c2faab8d36cc8e44805707fd0cc35f
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588833"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771030"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>如何：將類別圖表新增到專案
 
@@ -42,11 +42,11 @@ ms.locfileid: "75588833"
 
 ## <a name="add-a-blank-class-diagram-to-a-project"></a>將空白類別圖表新增至專案
 
-1. 在**方案總管**中，以滑鼠右鍵按一下專案節點，然後選擇 [新增]**** > [新增項目]****。 或者，按**Ctrl**+**移位**+**A**。
+1. 在**方案總管**中，以滑鼠右鍵按一下專案節點，然後選擇 [新增]**** > [新增項目]****。 或者，按**Ctrl** + **Shift** + **A**。
 
-   [新增項目]**** 對話方塊隨即開啟。
+   [**加入新專案**] 對話方塊隨即開啟。
 
-2. 展開 **"常規"項** > **General**，然後從範本清單中選擇**類別圖表**。 若是 Visual C++ 專案，請在 [公用程式]**** 分類中尋找**類別圖表**範本。
+2. 展開 [**通用專案**]  >  **[一般**]，然後從範本清單中選取 [**類別圖表**]。 若是 Visual C++ 專案，請在 [公用程式]**** 分類中尋找**類別圖表**範本。
 
    > [!NOTE]
    > 若您沒有看到**類別圖表**範本，請[遵循這些步驟](#install-the-class-designer-component)安裝 Visual Studio 的**類別設計工具**元件。
@@ -64,11 +64,11 @@ ms.locfileid: "75588833"
 在 [類別檢視]**** 中，開啟命名空間或類型操作功能表，然後選擇 [檢視類別圖表]****。
 
 > [!TIP]
-> 如果**類視圖**未打開，則從 **"視圖"** 功能表打開**類視圖**。
+> 如果**類別檢視**未開啟，請從 [ **View** ] 功能表開啟**類別檢視**。
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>在類別圖表中顯示完整專案的內容
 
-在 **"解決方案資源管理器**"或"類視圖"中，按右鍵專案並選擇 **"視圖**"，然後選擇 **"查看類圖**"。
+在**方案總管**或類別檢視中，以滑鼠右鍵按一下專案，然後選擇 [**視圖**]，再選擇 [**視圖類別圖表**]。
 
 就會建立會自動填入內容的類別圖表。
 
@@ -78,5 +78,5 @@ ms.locfileid: "75588833"
 ## <a name="see-also"></a>另請參閱
 
 - [如何：使用類別設計工具建立類型](how-to-create-types.md)
-- [如何：查看現有類型](how-to-view-existing-types.md)
-- [設計和查看類和類型](designing-and-viewing-classes-and-types.md)
+- [如何：查看現有的類型](how-to-view-existing-types.md)
+- [設計和視圖類別和類型](designing-and-viewing-classes-and-types.md)

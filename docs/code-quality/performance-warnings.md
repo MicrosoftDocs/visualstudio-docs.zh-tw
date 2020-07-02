@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24436a76841ae663f733e7c76eeb16065ed1f57b
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: a3fc631a2a99dd6090893393ee20ecec23945713
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85382662"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814916"
 ---
 # <a name="performance-warnings"></a>效能警告
 效能警告支援高效能程式庫和應用程式。
@@ -33,6 +33,7 @@ ms.locfileid: "85382662"
 | [CA1801:必須檢閱未使用的參數](../code-quality/ca1801.md) | 方法簽章包括不用於方法主體中的參數； |
 | [CA1802:建議在適當時使用常值](../code-quality/ca1802.md) | 欄位會宣告為靜態和唯讀（在中為 Shared 和 ReadOnly [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ），並使用在編譯時期可的值進行初始化。 因為指派給目標欄位的值是在編譯時期可，所以請將宣告變更為 const （Const in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ）欄位，以便在編譯時期（而不是在執行時間）計算該值。 |
 | [CA1804:必須移除未使用的區域變數](../code-quality/ca1804.md) | 未使用的區域變數和不必要的設定，會增加組件的大小並降低效能。 |
+| [CA1805：不必要地初始化](../code-quality/ca1805.md) | 在執行此函式之前，.NET 執行時間會將參考型別的所有欄位初始化為其預設值。 在大部分情況下，將欄位明確初始化為其預設值是多餘的，這會增加維護成本，並可能降低效能（例如，增加元件大小）。 |
 | [CA1806:不要忽略方法的結果](../code-quality/ca1806.md) | 已建立但從未使用的新物件，或已呼叫建立並傳回新字串的方法，但從未使用過新字串，或元件物件模型（COM）或 P/Invoke 方法會傳回從未使用的 HRESULT 或錯誤碼。 |
 | [CA1809:避免在方法中包含過多區域變數](../code-quality/ca1809.md) | 常見的效能最佳化作法是在處理器暫存器中儲存值，而非記憶體，這稱為「註冊 (Enregistering) 值」。  若要增加所有區域變數都能註冊的機率，請將區域變數的數目限制為 64。 |
 | [CA1810:必須將參考類型內部的靜態欄位初始化](../code-quality/ca1810.md) | 當類型宣告明確的靜態建構函式時，Just-In-Time (JIT) 編譯器會將檢查加入至類型的每個靜態方法和執行個體建構函式，確保之前已呼叫該靜態建構函式。 靜態建構函式檢查會降低效能。 |
@@ -53,7 +54,7 @@ ms.locfileid: "85382662"
 | [CA1827：不要在可使用 Any 時使用 Count/LongCount](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A><xref:System.Linq.Enumerable.LongCount%2A>使用了或方法，其中 <xref:System.Linq.Enumerable.Any%2A> 方法會更有效率。 |
 | [CA1828：不要在可使用 AnyAsync 時使用 CountAsync/LongCountAsync](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A><xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A>使用了或方法，其中 <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> 方法會更有效率。 |
 | [CA1829：請使用 Length/Count 屬性，不要使用 Enumerable.Count 方法](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>LINQ 方法是在支援對等、更有效率或屬性的型別上使用 `Length` `Count` 。 |
-| [CA1830：偏好 StringBuilder 上的強型別附加和插入方法多載](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>和會 <xref:System.Text.StringBuilder.Insert%2A> 提供多載，供 system.string 以外的多種類型之用。  可能的話，偏好使用 ToString （）和以字串為基礎之多載的強型別多載。 |
+| [CA1830：建議在 StringBuilder 上使用強型別 Append 及 Insert 方法多載](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>和會 <xref:System.Text.StringBuilder.Insert%2A> 提供多載，供 system.string 以外的多種類型之用。  可能的話，偏好使用 ToString （）和以字串為基礎之多載的強型別多載。 |
 | [CA1831：在適用情況下，請使用 AsSpan 做為字串，不要使用範圍型的索引子](../code-quality/ca1831.md) | 在字串上使用範圍索引子，並隱含地將值指派給 ReadOnlySpan &lt; char &gt; 類型時， <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> 會使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生字串要求部分的複本。 |
 | [CA1832：請使用 AsSpan 或 AsMemory 來取得陣列的 ReadOnlySpan 或 ReadOnlyMemory 部分，不要使用範圍型的索引子](../code-quality/ca1832.md) | 在陣列上使用範圍索引子，並隱含地將值指派給 <xref:System.ReadOnlySpan%601> 或 <xref:System.ReadOnlyMemory%601> 類型時，將會 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生陣列所要求部分的複本。 |
 | [CA1833：請使用 AsSpan 或 AsMemory 取得陣列的 Span 或 Memory 部分，不要使用範圍型的索引子](../code-quality/ca1833.md) | 在陣列上使用範圍索引子，並隱含地將值指派給 <xref:System.Span%601> 或 <xref:System.Memory%601> 類型時，將會 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用方法，而不是 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ，這會產生陣列所要求部分的複本。 |

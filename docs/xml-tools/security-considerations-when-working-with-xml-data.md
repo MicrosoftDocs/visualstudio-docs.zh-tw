@@ -3,17 +3,17 @@ title: 使用 XML 資料時的安全性考量
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0eb38118f7e71bd8cab0cf3faf367c01700cae0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e18d2c2e47c3cc1f7e1b3be0112e49e2710e45c8
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604590"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815834"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>使用 XML 資料時的安全性考慮
 
@@ -41,6 +41,6 @@ XSLT 偵錯工具會使用 Visual Studio Managed 偵錯引擎、<xref:System.Xml
 
 - Managed 偵錯引擎會載入 XSLT 運算式評估工具。 Managed 偵錯引擎會假設所有的程式碼都是從使用者的本機電腦上執行。 相應地，<xref:System.Xml.Xsl.XslCompiledTransform> 類別會將 XSLT 檔案下載到使用者的本機電腦。 藉由使用限制的使用權限在新的應用程式定義域中執行所有的 XSLT 轉換，可降低執行權限提升的可能性。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [應用程式定義域](/dotnet/framework/app-domains/application-domains)
+- [應用程式域](/dotnet/framework/app-domains/application-domains)

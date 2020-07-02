@@ -1,19 +1,19 @@
 ---
 title: 在 XML 架構設計工具中使用內容模型視圖檢查節點
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5a7e6e311a4fbd02973edf94c6eb117f69d6cea
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 81bf6294aeac9a23168bf9cf9aaec26efbfc6c1f
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592707"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815977"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>如何：使用內容模型視圖檢查節點的內容模型
 
@@ -27,9 +27,9 @@ ms.locfileid: "75592707"
 
 3. 從[範例 xml 架構：採購單架構](../xml-tools/sample-xsd-file-purchase-order-schema.md)複製並貼上 xml 架構範例程式碼，以取代預設新增至新 XSD 檔案的程式碼。
 
-4. 以滑鼠右鍵按一下 [XML 編輯器] 中的 [`purchaseOrder`] 專案，然後選取 [**在 Xml explorer 中顯示**]，以選取 [架構] explorer 中的 [`purchaseOrder`] 元素
+4. 在 [ `purchaseOrder` xml 編輯器] 中以滑鼠右鍵按一下專案 `purchaseOrder` ，然後選取 [**在 Xml Explorer 中顯示**]，以選取 [架構瀏覽器] 中的元素。
 
-5. 以滑鼠右鍵按一下 XML Explorer 中的 `purchaseOrder`，然後選取 [**在內容模型視圖中顯示**]。
+5. 以滑鼠右鍵按一下 `purchaseOrder` XML Explorer 中的，然後選取 [**在內容模型視圖中顯示**]。
 
      內容模型檢視的設計介面上會顯示 `purchaseOrder` 項目。
 
@@ -41,4 +41,4 @@ ms.locfileid: "75592707"
 
 8. 按一下 XSD 工具列中的 [**顯示檔**] 按鈕，以切換檔。 您也可以以滑鼠右鍵按一下設計介面來切換文件。
 
-9. 以滑鼠右鍵按一下 [`purchaseOrder`] 節點，然後選取 [**產生範例 XML** ] 以查看 xml 實例檔。
+9. 以滑鼠右鍵按一下 `purchaseOrder` 節點，然後選取 [**產生範例 XML** ] 以查看 xml 實例檔。

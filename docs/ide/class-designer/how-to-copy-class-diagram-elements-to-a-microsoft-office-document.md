@@ -1,7 +1,7 @@
 ---
 title: 如何：將類別圖表項目複製到 Microsoft Office 文件 (類別設計工具)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - class diagrams, copying elements to Office documents
 - Office documents [Visual Studio]
@@ -11,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2d08b45d913270bdc43c01b0baf92abc3589927
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0fa6d97b5087659b9fc8120d9480a241517ca8ec
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592239"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770993"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>如何：將類別圖表元素複製到 Microsoft Office 文件
 
-您可以將形狀從 .NET 類別圖表 *（.cd*檔） 複製到其他文檔。 視您貼上的目標文件種類而定，您會取得圖形複本或其基礎程式碼。 若要從模組化專案中的 UML 類別圖表複製圖形，請參閱[將圖表匯出為影像](../../modeling/export-diagrams-as-images.md)。
+您可以將圖形從 .NET 類別圖表（*.cd*檔案）複製到其他檔。 視您貼上的目標文件種類而定，您會取得圖形複本或其基礎程式碼。 若要從模組化專案中的 UML 類別圖表複製圖形，請參閱[將圖表匯出為影像](../../modeling/export-diagrams-as-images.md)。
 
 ## <a name="copy-a-single-element"></a>複製單一元素
 
@@ -42,5 +42,5 @@ ms.locfileid: "75592239"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：列印類圖](how-to-print-class-diagrams.md)
-- [如何：將類圖匯出為圖像](how-to-export-class-diagrams-as-images.md)
+- [如何：列印類別圖表](how-to-print-class-diagrams.md)
+- [如何：將類別圖表匯出為影像](how-to-export-class-diagrams-as-images.md)

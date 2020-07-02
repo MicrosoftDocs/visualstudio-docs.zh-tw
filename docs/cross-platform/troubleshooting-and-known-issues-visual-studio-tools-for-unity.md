@@ -3,19 +3,19 @@ title: 疑難排解和已知問題 (VS Tools for Unity)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
 author: therealjohn
 ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0173c076a04c4c725565e63c41396b7c4d235952
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "66261120"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815054"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
 
@@ -25,7 +25,7 @@ ms.locfileid: "66261120"
 
 ### <a name="confirm-editor-attaching-is-enabled"></a>確認已啟用 [編輯器附加]
 
-在 Unity 功能表中，選擇 **"編輯>首選項**"，然後選擇"**外部工具**"選項卡。確認啟用**了"編輯器附加**"核取方塊。 如需詳細資訊，請參閱 [Unity 喜好設定文件](https://docs.unity3d.com/Manual/Preferences.html)。
+在 Unity 功能表中，選取 [**編輯] > 喜好**設定]，然後選取 [**外部工具**] 索引標籤。確認已啟用 [**編輯器附加**] 核取方塊。 如需詳細資訊，請參閱 [Unity 喜好設定文件](https://docs.unity3d.com/Manual/Preferences.html)。
 
 ### <a name="unable-to-attach"></a>無法附加
 
@@ -168,4 +168,4 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
     bt all
     ```
 
-最後，將執行緒轉儲發送到[vstusp@microsoft.com](mailto:vstusp@microsoft.com)，以及 Visual Studio 凍結時您正在執行的操作的說明。
+最後，將執行緒傾印傳送至 [vstusp@microsoft.com](mailto:vstusp@microsoft.com) ，並描述當 Visual Studio 變成凍結時所執行的作業。

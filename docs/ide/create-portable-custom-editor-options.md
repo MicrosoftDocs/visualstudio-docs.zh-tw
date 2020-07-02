@@ -1,18 +1,18 @@
 ---
 title: EditorConfig 設定
 ms.date: 08/01/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editorconfig [Visual Studio]
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d356b9817213aebe2d0c6923097a90aa037ba3fd
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 30c2ce8a10a6a1001f8fb7c21ba7db7db7243fe4
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183258"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770749"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 建立可攜式自訂編輯器設定
 

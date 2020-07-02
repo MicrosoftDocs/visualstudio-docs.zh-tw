@@ -1,19 +1,19 @@
 ---
 title: 工作流程設計工具：將新專案加入至工作流程專案
 ms.date: 06/25/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7bedc36af2e8fbe19fbb3cc85d82be09d8673de
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 53737eb421f4194b00354899e373441ff0a97227
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593950"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814612"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>如何：將新專案加入至工作流程專案
 
@@ -21,18 +21,18 @@ ms.locfileid: "75593950"
 
 下表列出您可以新增至工作流程專案的 Windows Workflow Foundation （WF）專案：
 
-| Name | 描述 |
+| 名稱 | 描述 |
 |-| - |
 | 活動 | 要由其他活動組成的活動。 選取這個專案會將相同的 XAML 檔案加入至專案，就像您在選取新專案的**活動程式庫**範本時所取得的一樣。 如需有關此程式的詳細資訊，請參閱[建立工作流程專案](creating-a-workflow-project.md)。 |
-| 活動設計者 | 可自訂活動之設計階段經驗的設計工具。 選取這個專案會將相同的檔案加入至專案，就像您在選取新專案的 [**活動設計**工具程式庫] 範本時所取得的一樣。 |
+| 活動設計工具 | 可自訂活動之設計階段經驗的設計工具。 選取這個專案會將相同的檔案加入至專案，就像您在選取新專案的 [**活動設計**工具程式庫] 範本時所取得的一樣。 |
 | 程式碼活動 | 包含寫入至程式碼之執行邏輯的活動。 已為您產生包含 <xref:System.Activities.CodeActivity.Execute%2A> 方法之覆寫的原始程式碼檔。 |
-| WCF Workflow Service | 使用工作流程活動建置的 [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] 服務。 選取這個專案會將相同的檔案加入至專案，就像您在選取新專案的**WCF 工作流程服務應用程式**範本時所取得的一樣。 如需此程式的詳細資訊，請參閱[如何：建立 WCF 工作流程服務應用程式](creating-a-workflow-project.md)。 |
+| WCF 工作流程服務 | 使用工作流程活動建置的 [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] 服務。 選取這個專案會將相同的檔案加入至專案，就像您在選取新專案的**WCF 工作流程服務應用程式**範本時所取得的一樣。 如需此程式的詳細資訊，請參閱[如何：建立 WCF 工作流程服務應用程式](creating-a-workflow-project.md)。 |
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>若要將新的項目加入至工作流程專案
 
-1. 在 [專案] 功能表中，選取 [新增新項目]。
+1. 在 [專案]**** 功能表上，選取 [新增項目]****。
 
-   [新增項目] 對話方塊隨即開啟。
+   [新增項目]**** 對話方塊隨即開啟。
 
 1. 在左側窗格中，選取 [**工作流程**] 分類，然後選取 [工作流程專案] 範本。
 
@@ -43,6 +43,6 @@ ms.locfileid: "75593950"
 
 1. 選取 [**新增**] 以將專案新增至專案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [建立工作流程專案](../workflow-designer/creating-a-workflow-project.md)

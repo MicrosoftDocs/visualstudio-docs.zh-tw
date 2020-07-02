@@ -1,9 +1,9 @@
 ---
-title: "'with' 在 ECMA 327 Compact Profile 中無法使用 |Microsoft Docs"
+title: ECMA 327 Compact Profile 中無法使用 ' with ' |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1036
 dev_langs:
@@ -14,16 +14,16 @@ ms.assetid: 4599f851-bf59-4b70-a5eb-9b779d2a7618
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17aa9d00bca0b7835309e123478b9621a9260d51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5a8858cb11a66d10ed7ca1896f9f2b589ba1a54
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000984"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815236"
 ---
 # <a name="with-not-available-in-the-ecma-327-compact-profile"></a>'with' 在 ECMA 327 Compact Profile 的設定檔中無法使用
-在 ECMA 327 Compact Profile (ErrWithNotInCP 中無法使用 ' with'  
+ECMA 327 Compact Profile 中無法使用 ' with ' （ErrWithNotInCP  
   
- 不允許您使用以精簡的設定檔中的關鍵字。  
+ 您不能在 Compact 設定檔中使用 with 關鍵字。  
   
- 如需有關關鍵字，請參閱[陳述式](../../javascript/reference/with-statement-javascript.md)。
+ 如需 with 關鍵字的詳細資訊，請參閱[With 語句](../../javascript/reference/with-statement-javascript.md)。

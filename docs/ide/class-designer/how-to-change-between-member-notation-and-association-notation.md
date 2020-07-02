@@ -1,7 +1,7 @@
 ---
 title: 在成員與關聯標記法之間變更 (類別設計工具)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - notation, member
 - association notation
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f706acfbaee7c6170f74bc655f9172ff6bdd3b4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d453dd2cd19f8a6c9c76ebcc48a762ba3142ea74
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592265"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771016"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>如何：在類別設計工具中變更為成員標記法或關聯標記法
 
@@ -46,5 +46,5 @@ ms.locfileid: "75592265"
 
 - [如何：建立類型之間的繼承](how-to-create-inheritance-between-types.md)
 - [如何：檢視類型之間的繼承](how-to-view-inheritance-between-types.md)
-- [查看類型和關係](designing-and-viewing-classes-and-types.md)
+- [檢視類型和關聯性](designing-and-viewing-classes-and-types.md)
 - [如何：將集合關聯視覺化](how-to-visualize-a-collection-association.md)

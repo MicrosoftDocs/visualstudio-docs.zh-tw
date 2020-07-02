@@ -1,19 +1,19 @@
 ---
 title: 工作流程設計工具-how to：將活動新增至工具箱
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3cde4f3a41a1a07f982f85c0c19e9f16b047068
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593924"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815821"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>HOW TO：將活動新增至工具箱
 
@@ -25,7 +25,7 @@ ms.locfileid: "75593924"
 
 2. 加入自訂邏輯至活動。
 
-3. 建置專案。 如果組建成功，[**工具箱**] 中會顯示名為「\<*專案名稱*>」的新類別，其中包含該類別的自訂活動。
+3. 建置專案。 如果組建成功，[**工具箱**] 中會顯示名為 "" 的新類別，其中 \<*project name*> 包含該類別的自訂活動。
 
     > [!NOTE]
     > 如果重設工具箱，自訂活動會移除，即使重新建置方案也一樣。 若要在重設自訂活動之後重新填入 [工具箱]，請重新開機 Visual Studio。
@@ -40,7 +40,7 @@ ms.locfileid: "75593924"
 
 1. 開啟一個方案，該方案應包含至少一個工作流程專案，以及一個自訂活動程式庫專案，或另一個定義自訂活動的工作流程專案。
 
-2. 建置這兩個專案。 如果組建成功，則會顯示 [**工具箱**] 中名為「\<*專案名稱*>」的新類別，其中包含該類別的自訂活動。
+2. 建置這兩個專案。 如果組建成功，[**工具箱**] 中會顯示名為 "" 的新類別，其中 \<*project name*> 包含該類別的自訂活動。
 
 ## <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>若要從組件將活動加入至工具箱
 
@@ -50,7 +50,7 @@ ms.locfileid: "75593924"
 
 3. 在 [**選擇工具箱專案**] 對話方塊中，選取 [系統] [**元件**] 索引標籤，然後按一下 **[流覽]** ，流覽至包含您要新增之自訂活動的元件。
 
-4. 選取元件，然後按一下 **[確定]** 。 自訂活動元件會加到元件清單中，而且會自動選取。
+4. 選取元件，然後按一下 **[確定]**。 自訂活動元件會加到元件清單中，而且會自動選取。
 
     1. 按一下 **[確定]** 關閉對話方塊。
 
@@ -58,6 +58,6 @@ ms.locfileid: "75593924"
 
 6. 自訂活動會出現在 [**工具箱**] 中，在加入專案之前的焦點類別之下。 例如，如果在加入 [工具箱] 專案之前，已在 [**工具箱**] 中選取 [**一般**] 分類，則活動會出現在 [**一般**] 類別之下。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用工作流程設計工具](developing-applications-with-the-workflow-designer.md)

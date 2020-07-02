@@ -1,7 +1,7 @@
 ---
 title: 建立新專案
 ms.date: 03/19/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.newproject
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77a6a33a1dde4d779a56c9ee559ecfd3b20dfbfb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f7cecf6a68296b3bffd07cca13fc3a3d0d5bc836
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585466"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770733"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>在 Visual Studio 中建立新專案
 
@@ -24,7 +24,7 @@ ms.locfileid: "75585466"
 
 ## <a name="open-the-new-project-dialog"></a>開啟 [新增專案] 對話方塊
 
-有多種方式可在 Visual Studio 2017 中建立新的專案。 在 [開始] 頁面，您可在 [搜尋專案範本]**** 方塊中鍵入專案範本的名稱，或選擇 [建立新專案]**** 連結以開啟 [新增專案]**** 對話方塊。 除了"開始"頁外，您還可以在功能表**欄上選擇****"檔** > **新專案** > "，或按一下工具列上的 **"新專案**"按鈕。
+有多種方式可在 Visual Studio 2017 中建立新的專案。 在 [開始] 頁面，您可在 [搜尋專案範本]**** 方塊中鍵入專案範本的名稱，或選擇 [建立新專案]**** 連結以開啟 [新增專案]**** 對話方塊。 除了 [起始頁] 之外，您也可以在功能表列上**選擇 [檔案] [**  >  **新增**  >  **專案**]，或是按一下工具列上的 [**新增專案**] 按鈕。
 
 ![[開始] 頁面和 [檔案] > [新增] > [專案]](./media/vside-newproject1.png)
 
@@ -101,4 +101,4 @@ ms.locfileid: "75585466"
 
 ## <a name="see-also"></a>另請參閱
 
-- [創建解決方案和專案](creating-solutions-and-projects.md)
+- [建立方案和專案](creating-solutions-and-projects.md)

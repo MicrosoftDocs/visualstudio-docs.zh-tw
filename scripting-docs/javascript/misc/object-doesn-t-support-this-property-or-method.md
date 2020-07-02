@@ -3,7 +3,7 @@ title: 物件不支援此屬性或方法 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT438
 dev_langs:
@@ -14,17 +14,17 @@ ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad324af24b7a5555803e8b897343030d8bf210bf
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 7a63b73e27de4e33aaa5c833c79f339da66954d3
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573738"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815730"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>物件不支援此屬性或方法
 您指定此物件沒有的屬性或方法。 並非所有物件都支援所有屬性和方法。  
   
-### <a name="to-correct-this-error"></a>若要改正這項錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 - 檢查屬性和方法，確保沒有輸入錯誤。  
   

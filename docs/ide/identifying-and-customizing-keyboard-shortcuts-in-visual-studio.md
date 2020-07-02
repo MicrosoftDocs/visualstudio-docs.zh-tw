@@ -1,7 +1,7 @@
 ---
 title: 識別及自訂鍵盤快速鍵
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Keyboard
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce87385314ec84c7c0ed9d30c806a6287bb91d9e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4b551e3f980e962733d2797924331e4cd6dbefa5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591329"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770853"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>識別及自訂 Visual Studio 中的鍵盤快速鍵
 
@@ -43,7 +43,7 @@ ms.locfileid: "75591329"
 
 ## <a name="identify-a-keyboard-shortcut"></a>識別鍵盤快速鍵
 
-1. 在功能表列上，選擇 **"工具** > **選項**"。
+1. 在功能表列上，選擇 [**工具**] [  >  **選項**]。
 
 2. 展開 [環境]****，然後選擇 [鍵盤]****。
 
@@ -63,7 +63,7 @@ ms.locfileid: "75591329"
 
 ## <a name="customize-a-keyboard-shortcut"></a>自訂鍵盤快速鍵
 
-1. 在功能表列上，選擇 **"工具** > **選項**"。
+1. 在功能表列上，選擇 [**工具**] [  >  **選項**]。
 
 2. 展開 [環境]****，然後選擇 [鍵盤]****。
 
@@ -105,7 +105,7 @@ ms.locfileid: "75591329"
 
 ### <a name="to-export-only-keyboard-shortcuts"></a>只匯出鍵盤快速鍵
 
-1. 在功能表列上，選擇 **"工具** > **導入和匯出設置**"。
+1. 在功能表列上，選擇 [**工具**] [匯  >  **入和匯出設定**]。
 
 2. 選擇 [匯出選取的環境設定]****，然後選擇 [下一步]****。
 
@@ -119,7 +119,7 @@ ms.locfileid: "75591329"
 
 ::: moniker range="vs-2017"
 
-預設情況下，您的快捷方式保存在 *%USERPROFILE%*文檔_Visual Studio 2017_Settings*資料夾中的檔中。 當您匯出設定時，檔案的名稱會反映日期，其副檔名為 *.vssettings*。
+根據預設，您的快捷方式會儲存在 *%USERPROFILE%\Documents\Visual Studio 2017 \ Settings*資料夾的檔案中。 當您匯出設定時，檔案的名稱會反映日期，其副檔名為 *.vssettings*。
 
 ::: moniker-end
 
@@ -131,7 +131,7 @@ ms.locfileid: "75591329"
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>只匯入鍵盤快速鍵
 
-1. 在功能表列上，選擇 **"工具** > **導入和匯出設置**"。
+1. 在功能表列上，選擇 [**工具**] [匯  >  **入和匯出設定**]。
 
 2. 選擇 [匯入選取的環境設定]**** 選項按鈕，然後選擇 [下一步]****。
 
@@ -139,7 +139,7 @@ ms.locfileid: "75591329"
 
 4. 在 [我的設定]**** 之下，選擇包含您要匯入之捷徑的檔案，或選擇 [瀏覽]**** 按鈕尋找正確的檔案。
 
-5. 選擇 [下一步]****。
+5. 選擇 [下一步]。
 
 6. 在 [您要匯入哪一個設定?]**** 下方，取消選取 [所有設定]**** 核取方塊，展開 [選項]****，然後展開 [環境]****。
 
@@ -149,4 +149,4 @@ ms.locfileid: "75591329"
 
 ## <a name="see-also"></a>另請參閱
 
-- [視覺工作室的協助工具](../ide/reference/accessibility-features-of-visual-studio.md)
+- [Visual Studio 的協助工具功能](../ide/reference/accessibility-features-of-visual-studio.md)

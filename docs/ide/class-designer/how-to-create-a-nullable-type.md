@@ -1,7 +1,7 @@
 ---
 title: 如何：建立可為 Null 的類型 (類別設計工具)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
@@ -14,18 +14,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ad371f987ab7ff0e50dc7d2fe4effeba5205e74e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592226"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770985"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>如何：在類別設計工具中建立可為 Null 的型別
 
 特定實值型別不一定具有 (或需要) 定義的值。 這種情況在資料庫中為常見做法，其中的部分欄位不會指派任何值。 比方說，您可能將 null 值指派給資料庫欄位，以表示該欄位尚未指派值。
 
-「可為 Null 的型別」** 是一種延伸的實值型別，其可接受該類型的一般範圍值，也可接受 null 值。 例如，您可將 -2147483648 到 2147483647 的任何值或 null 值指派給可為 Null 的 `Int32` (亦表示為Nullable\<Int32>)。 您可將 `True`、`False` 或 null 值 (完全沒有值) 指派給 Nullable\<bool>。
+「可為 Null 的型別」** 是一種延伸的實值型別，其可接受該類型的一般範圍值，也可接受 null 值。 例如，可為 null 的 `Int32` （也稱為 nullable \<Int32> ）可以指派任何從-2147483648 到2147483647的值，也可以將 null 值指派給它。 可以為 Nullable \<bool> 指派值 `True` 、 `False` 或 null （完全沒有值）。
 
 可為 Null 的型別是 <xref:System.Nullable%601> 結構的執行個體。 每個可為 Null 的型別，其執行個體皆有 `HasValue` 和 `Value` 這兩個公用唯讀屬性：
 
@@ -88,7 +88,7 @@ ms.locfileid: "75592226"
 ## <a name="see-also"></a>另請參閱
 
 - <xref:System.Nullable%601>
-- [可空類型](/dotnet/csharp/programming-guide/nullable-types/index)
+- [可為 null 的類型](/dotnet/csharp/programming-guide/nullable-types/index)
 - [使用可為 Null 的型別](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)
 - [如何：識別可為 Null 的型別](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
-- [空數值型別](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)
+- [可為 null 的實數值型別](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

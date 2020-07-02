@@ -1,7 +1,7 @@
 ---
 title: 將 XSLT 程式碼進行偵錯工具的方式
 ms.date: 03/05/2019
-ms.topic: conceptual
+ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f4a1ce60f04bcea6e21b52db9347a95292dab2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d8e3885aa895cec5ed080b7a8b4d22522d2e9edf
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592850"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815613"
 ---
 # <a name="debugging-xslt"></a>偵錯 XSLT
 
@@ -33,11 +33,11 @@ ms.locfileid: "75592850"
 
 1. 在 Visual Studio 中開啟樣式表單或 XML 檔案。
 
-1. 從 [ **XML** ] 功能表中選取 [**啟動 XSLT 調試**]，或按**Alt**+**F5**。
+1. 從 [ **XML** ] 功能表中選取 [**啟動 XSLT 調試**]，或按**Alt** + **F5**。
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>從使用 XSLT 的應用程式進行 Debug
 
-您可以在偵錯工具時逐步執行 XSLT。 當您在 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> 呼叫上按**F11**鍵時，偵錯工具可以逐步執行 XSLT 程式碼。
+您可以在偵錯工具時逐步執行 XSLT。 當您在呼叫上按**F11**時 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> ，偵錯工具可以逐步執行 XSLT 程式碼。
 
 > [!NOTE]
 > 不支援從 <xref:System.Xml.Xsl.XslTransform> 類別逐步執行 XSLT。 <xref:System.Xml.Xsl.XslCompiledTransform> 類別是在偵錯時，唯一支援逐步執行 XSLT 的 XSLT 處理器。
@@ -90,7 +90,7 @@ namespace ConsoleApplication
 
 [Xslt](../xml-tools/xslt-profiler.md)分析工具可讓開發人員建立詳細的 xslt 效能報告，以測量、評估和鎖定 XSLT 程式碼中與效能相關的問題。 如需詳細資訊，請參閱[XSLT profiler](../xml-tools/xslt-profiler.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [逐步解說： Debug XSLT 樣式表單](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
 - [第一次查看 Visual Studio 偵錯工具](../debugger/debugger-feature-tour.md)

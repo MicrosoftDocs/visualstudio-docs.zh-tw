@@ -5,21 +5,21 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8aa26144a7c0a2f7edad58ecfb26e3a7d402a994
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72666185"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770904"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>選項、文字編輯器、HTML (Web Form)、其他
 
-使用 [其他]**** 選項頁面設定 HTML 編輯器如何處理貼到頁面中之元素的喜好設定。 要訪問此頁面，在功能表列上，請選擇 **"工具** > **選項**"，然後展開**文字編輯器** > **HTML（Web 表單）** > **雜項**。
+使用 [其他]**** 選項頁面設定 HTML 編輯器如何處理貼到頁面中之元素的喜好設定。 若要存取此頁面，請在功能表列上選擇 [**工具**] [  >  **選項**]，然後展開 [**文字編輯器**] [  >  **HTML （Web form）**] [  >  **其他**]。
 
 ## <a name="miscellaneous-html-options"></a>其他 HTML 選項
 
@@ -29,8 +29,8 @@ ms.locfileid: "72666185"
 
 - **必須是 '<' 才能觸發標記完成視窗**
 
-   如果選取這個核取方塊，當您輸入小於字元 ("<") 時，標記完成視窗就會顯示。
+   如果選取此核取方塊，當您輸入小於字元（"<"）時，標記完成視窗就會出現。
 
 ## <a name="see-also"></a>另請參閱
 
-- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

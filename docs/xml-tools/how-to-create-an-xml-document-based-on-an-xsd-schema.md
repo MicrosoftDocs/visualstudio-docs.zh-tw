@@ -1,19 +1,19 @@
 ---
 title: HOW TO：根據 XSD 結構描述建立 XML 文件
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3139df600654513912abeae64c1ef2980493574d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 424b325b244499a18077cc1df0ff9164c41763d2
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592798"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815457"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何：根據 XSD 架構建立 XML 檔
 
@@ -31,11 +31,11 @@ ms.locfileid: "75592798"
 
 - `xs:key`、`xs:keyref` 和 `xs:unique` 識別條件約束。
 
-- `xs:pattern` facet。
+- `xs:pattern`facet.
 
 - `xs:QName` 型別的列舉型別 (Enumeration)。
 
-- `xs:ENTITY`、`xs:ENTITIES`和 `xs:NOTATION` 類型。
+- `xs:ENTITY`、 `xs:ENTITIES` 和 `xs:NOTATION` 類型。
 
 此外，請注意，只有當列舉型別出現在 `xs:base64Binary` 的結構描述時，系統才會產生該型別的內容。
 
@@ -43,7 +43,7 @@ ms.locfileid: "75592798"
 
 1. 請依照[如何：建立和編輯 XSD 架構](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)檔案中的步驟執行。
 
-2. 在 [ [XML 架構瀏覽器](../xml-tools/xml-schema-explorer.md)] 中，以滑鼠右鍵按一下 `PurchaseOrder` 的全域元素。 選取 [**產生範例 XML**]。
+2. 在 [ [XML 架構瀏覽器](../xml-tools/xml-schema-explorer.md)] 中，以滑鼠右鍵按一下 `PurchaseOrder` 全域元素。 選取 [**產生範例 XML**]。
 
      當您選取此選項時，PurchaseOrder。具有下列 xml 內容範例的*xml*檔案將會產生，並在 xml 編輯器中開啟：
 

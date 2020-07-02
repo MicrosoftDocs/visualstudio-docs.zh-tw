@@ -1,7 +1,7 @@
 ---
 title: 工作流程設計工具-如何：將批註新增至工作流程
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 2e8f53e162360c7a43df9f0aedda3ff6ef0e6dba
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 77fb43671a45d5d53d2fe23fa3e4e7a9a98c4373
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114413"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815496"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>HOW TO：將註解新增至工作流程設計工具中的工作流程
 

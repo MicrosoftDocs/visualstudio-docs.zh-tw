@@ -1,19 +1,19 @@
 ---
 title: 建立和編輯 XSD 結構描述檔案
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 976448709f7ecf9eaff0a563b867f12b3d9fa770
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 95f7b9d52f6eaf1aa95728b28268e6d4bcba8aed
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592759"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815405"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>如何：建立和編輯 XSD 架構檔案
 
@@ -21,7 +21,7 @@ ms.locfileid: "75592759"
 
 ## <a name="to-create-a-new-xml-schema-file"></a>建立新的 XML 結構描述檔
 
-1. 在 Visual Studio 中，開啟 **[檔案**] 功能表，然後選取 [**新增** ** > 檔案**]。 或者，使用**Ctrl**+**N**鍵盤快速鍵。
+1. 在 Visual Studio 中，開啟 **[檔案**] 功能表，然後選取 [**新增**檔案]  >  ** **。 或者，使用**Ctrl** + **N**鍵盤快速鍵。
 
 2. 在 [**新增**檔案] 對話方塊中，選取 [ **XML 架構**]，然後選取 [**開啟**]。
 

@@ -1,19 +1,19 @@
 ---
 title: 建立 XML 架構
 ms.date: 03/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 857b75f22d45cbabc22062fd14b385e8f6ea5f14
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 10ce1c6dc5bd24b391a8cde184a32684270662ef
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592772"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815444"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>如何：從 XML 檔建立 XML 架構
 
@@ -33,10 +33,10 @@ XML 編輯器可讓您從 XML 檔建立 XML 架構定義語言（XSD）架構。
 
 1. 在 Visual Studio 中開啟 XML 檔案。
 
-2. 在功能表列上，選擇 [ **XML** ] > [**建立架構**]。
+2. 在功能表列上，選擇 [ **XML**] [  >  **建立架構**]。
 
    系統會針對 XML 檔案中找到的每個命名空間，建立並開啟 XML 架構檔。 每個結構描述會當作暫時的其他檔案開啟。 結構描述可儲存至磁碟、加入至專案或捨棄。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 編輯器](../xml-tools/xml-editor.md)

@@ -1,19 +1,19 @@
 ---
 title: HOW TO：建立 XML 片段
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df3c2592036f085fcf89d80bcefb1a469b3c1e15
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2b86962221dcdeff59b1152baf7b7cddcc55293e
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592746"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815392"
 ---
 # <a name="how-to-create-xml-snippets"></a>如何：建立 XML 片段
 
@@ -23,7 +23,7 @@ XML 編輯器可以用來建立新的 XML 片段。 該編輯器包括名為 Sni
 
 若要建立新的 XML 程式碼片段，請建立新的 XML 檔案，並使用 [**插入程式碼片段**] 功能。
 
-1. **在 [檔案**] 功能表上 **，按一下 [** **新增**]，然後按一下 [檔案]。
+1. **在 [檔案**] 功能表上 **，按一下 [****新增**]，然後按一下 [檔案]。
 
 2. 按一下 [ **XML**檔案]，然後按一下 [**開啟**]。
 
@@ -33,7 +33,7 @@ XML 編輯器可以用來建立新的 XML 片段。 該編輯器包括名為 Sni
 
 5. 對新片段進行任何變更。
 
-6. 從 [**檔案**] 功能表中，選取 [**儲存 XMLFile**]。
+6. 從 [**檔案**] 功能表中，選取 [**儲存 XMLFile.xml**]。
 
      [**另存**新檔] 對話方塊隨即顯示。
 
@@ -56,9 +56,9 @@ XML 編輯器可以用來建立新的 XML 片段。 該編輯器包括名為 Sni
 </SnippetTypes>
 ```
 
-`Expansion` 類型會決定當您叫用 [**插入程式碼片段**] 命令時，程式碼片段是否出現。 `SurroundsWith` 類型會決定當您叫**用 [環繞于**] 命令時，是否顯示程式碼片段。
+`Expansion`類型會決定當您叫用 [**插入程式碼片段**] 命令時，程式碼片段是否出現。 `SurroundsWith`類型會決定當您叫**用 [環繞于**] 命令時，程式碼片段是否出現。
 
-### <a name="code-element"></a>程式碼元素
+### <a name="code-element"></a>程式碼項目
 
 `Code` 項目定義叫用片段時將插入的 XML 文字。
 
@@ -104,7 +104,7 @@ XML 編輯器可以用來建立新的 XML 片段。 該編輯器包括名為 Sni
 </Literal
 ```
 
-常值亦可參考函式。 XML 編輯器包含名為**LookupPrefix**的函式。 **LookupPrefix**函式會從 XML 檔中用來叫用此程式碼片段的位置查閱指定的命名空間 URI，並傳回為該命名空間定義的命名空間前置詞（如果有的話），並包含冒號（:)在該名稱中。 以下是使用**LookupPrefix**函數之 `Literal` 專案的範例。
+常值亦可參考函式。 XML 編輯器包含名為**LookupPrefix**的函式。 **LookupPrefix**函式會從 XML 檔中用來叫用此程式碼片段的位置查閱指定的命名空間 URI，並傳回為該命名空間定義的命名空間前置詞（如果有的話），並包含冒號（:)在該名稱中。 以下是 `Literal` 使用**LookupPrefix**函數的元素範例。
 
 ```xml
 <Literal Editable="false">
@@ -115,7 +115,7 @@ XML 編輯器可以用來建立新的 XML 片段。 該編輯器包括名為 Sni
 
 $prefix$ 變數即可在 XML 片段中的其他位置使用。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 程式碼片段](../xml-tools/xml-snippets.md)
 - [如何：使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)

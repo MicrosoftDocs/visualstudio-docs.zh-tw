@@ -3,7 +3,7 @@ title: 預期的正則運算式物件 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5016
 dev_langs:
@@ -14,19 +14,19 @@ ms.assetid: e226096c-c58f-4bcb-a71e-fa32ce474b67
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf9e2e99c6a539f450afcfe9eef1f5588d5b84f6
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: d9f5816c0bf3ad7c8dbf7d394952c631923d89cf
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573709"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814625"
 ---
 # <a name="regular-expression-object-expected"></a>必須是規則運算式物件
-您嘗試在 `RegExp`以外的類型物件上叫用**RegExp**或**RegExp. valueOf**方法。 這種調用類型的物件必須是 `RegExp`的類型。  
+您嘗試在以外類型的物件上叫用**RegExp**或**RegExp. valueOf**方法。 `RegExp` 這種調用類型的物件必須是類型 `RegExp` 。  
   
-### <a name="to-correct-this-error"></a>若要改正這項錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 只在 `RegExp`類型的物件上叫用**RegExp**或**RegExp. valueOf**方法。  
+- 只會在類型的物件上叫用**valueOf** **方法。** `RegExp`  
   
 ## <a name="see-also"></a>另請參閱  
  [正則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
