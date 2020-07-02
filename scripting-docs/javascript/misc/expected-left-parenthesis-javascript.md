@@ -1,9 +1,9 @@
 ---
-title: 預期 '(' (JavaScript) |Microsoft Docs
+title: 必須是 ' （' （JavaScript） |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1005
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: 712315e1-4c68-4f66-84c2-41b83c42d85a
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67f8beaed8ba94d30c04df866805bc0c8268a093
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adcabbe0b1d7ca7d0298202b5242049b86f8229a
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934869"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817095"
 ---
 # <a name="expected--javascript"></a>必須是 '(' (JavaScript)
-您嘗試將括在括號、 一組運算式，但未包含左括號。 某些運算式必須使用一組的開頭和結尾括號括住。 請注意，在下列範例中的括號內使用。  
+您嘗試將運算式括在一組括弧內，但未包含左括弧。 某些運算式必須括在一組左右括弧內。 請注意，在下列範例中使用括弧。  
   
 ```JavaScript  
 for (initialize; test; increment) {  
@@ -32,4 +32,4 @@ statement;
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 加入評估運算式的左括號。
+- 將左括弧加入評估運算式。

@@ -3,7 +3,7 @@ title: 預期的常數 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1031
 dev_langs:
@@ -14,17 +14,17 @@ ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bb822b6b6224748c51da2220461a232cab6134b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: efac49ccbf3c94c5b7d136ddd965b4a45a304adb
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573399"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816640"
 ---
 # <a name="expected-constant"></a>必須是常數
 您嘗試在條件式編譯測試語句中使用（非條件式編譯）變數。 條件式編譯測試語句必須評估為常數。  
   
-### <a name="to-correct-this-error"></a>若要改正這項錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 - 將變數取代為常值。  
   

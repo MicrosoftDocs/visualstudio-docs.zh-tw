@@ -3,7 +3,7 @@ title: 必須是 '] ' |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1007
 dev_langs:
@@ -14,17 +14,17 @@ ms.assetid: 8a437ace-c73e-4340-885c-70ccb4bb2ee4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 802c9aa7988c4f19ee74dac4345d5c7077cc466c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: a5ecc9f1129aff02c6c8e32e42f7e9babffab429
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576530"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817563"
 ---
 # <a name="expected-"></a>必須是 ']'
 您已對陣列元素進行參考，但未包含右括弧。 參考陣列元素的任何運算式都必須同時包含左右括弧。  
   
-### <a name="to-correct-this-error"></a>若要改正這項錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 - 在參考陣列元素的運算式中加入右括弧。  
   

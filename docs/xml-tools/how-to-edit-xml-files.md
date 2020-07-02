@@ -1,19 +1,19 @@
 ---
 title: HOW TO：編輯 XML 檔案
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 216718627936ac7f519c1a6a28a30886e8ae9c27
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1ce3e41b2fe9dfdb080e23fb4270454bbd57f7ef
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592733"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817199"
 ---
 # <a name="how-to-edit-xml-files"></a>如何：編輯 XML 檔案
 
@@ -36,7 +36,7 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
 
 ## <a name="add-an-existing-xml-file-to-a-project"></a>將現有的 XML 檔案加入至專案
 
-1. 從 [專案] 功能表上，選取 [新增現有項目]。
+1. 從 [專案]**** 功能表上，選取 [新增現有項目]****。
 
    [**加入現有專案**] 對話方塊隨即出現。
 
@@ -50,29 +50,29 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
 
 2. 選取 [ **xml**檔案] 以建立新的 xml 檔案;或者，選取 [ **xslt**檔案] 以建立新的 xslt 樣式表單。
 
-3. 按一下 [開啟]。
+3. 按一下 [開啟] 。
 
 ## <a name="create-an-empty-project-for-xml-files"></a>建立 XML 檔案的空白專案
 
 ::: moniker range="vs-2017"
 
-1. 從 [**檔案**] 功能表中，選取 [**新增**>**專案**]。
+1. 從 [檔案]**** 功能表選取 [新增]**[專案]** > ****。
 
-   [ **新增專案** ] 對話方塊隨即出現。
+   [新增專案]  對話方塊隨即出現。
 
 2. 選取您選擇的程式碼語言，然後選取 [**空白專案（.NET Framework）** ] 範本。
 
-3. 按一下 [ **確定**]。
+3. 按一下 [確定] 。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 從 [**檔案**] 功能表中，選取 [**新增**>**專案**]。
+1. 從 [檔案]**** 功能表選取 [新增]**[專案]** > ****。
 
 2. 在 [範本搜尋] 方塊中輸入**空的專案**，選取 [**空白專案（.NET Framework）** ] 範本，然後按 **[下一步]**。
 
-3. 按一下 [建立] 。
+3. 按一下 [建立]。
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
 
    XML 編輯器會尋找您加入此專案的架構，並在您于開啟此專案時編輯的任何 XML、架構或 XSLT 檔案中，使用它們來進行驗證和 IntelliSense。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 編輯器](../xml-tools/xml-editor.md)
 - [屬性視窗、XML 文件屬性](../xml-tools/xml-document-properties-properties-window.md)

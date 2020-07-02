@@ -1,19 +1,19 @@
 ---
 title: XML 架構：圖表視圖中的列印圖表 & 內容模型視圖
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1253e5470b176f04d715adc4caa10cec202a4c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e5aef4b2a7bc040a75a97bc66f26526053f4cada
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592619"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817121"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>如何：從圖表視圖和內容模型視圖列印圖表
 
@@ -29,8 +29,8 @@ ms.locfileid: "75592619"
 
 3. 使用 XPS 檢視器列印儲存在 XPS 檔中的影像。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [圖形檢視](../xml-tools/graph-view.md)
+- [圖表視圖](../xml-tools/graph-view.md)
 - [內容模型檢視](../xml-tools/content-model-view.md)
 - [XML 架構設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)

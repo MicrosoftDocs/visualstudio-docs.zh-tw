@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89006ab582a48f7f3be54b4eb459903b64af7daf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280229"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816691"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>快速入門：初步認識分析工具
+# <a name="first-look-at-profiling-tools"></a>初步認識分析工具
 
 Visual Studio 提供各種不同的分析工具，可協助您依據應用程式類型來診斷不同類型的效能問題。 在本文中，我們會快速查看最常見的程式碼剖析工具。
 
@@ -131,7 +131,7 @@ CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會
 
 此工具會在清單視圖中顯示每個查詢。 您可以查看查詢開始時間和持續時間等資訊。
 
-![配置](./media/db-gotosource.png "配置")
+![分配](./media/db-gotosource.png "配置")
 
 ::: moniker-end
 
@@ -198,15 +198,15 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 ::: moniker range=">=vs-2019"
 |效能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[「效能提示」](../profiling/perftips.md)|可以|是|是|
+|[效能提示](../profiling/perftips.md)|可以|是|是|
 |[CPU 使用量](../profiling/cpu-usage.md)|可以|是|是|
 |[記憶體使用量](../profiling/memory-usage.md)|可以|是|是|
 |[.NET 物件配置](../profiling/dotnet-alloc-tool.md)|是（僅限 .NET）|可以|是|
 |[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|可以|是|不可以|
 |[應用程式時間軸](../profiling/application-timeline.md)|可以|是|不可以|
-|[事件檢視器](../profiling/perftips.md)|可以|是|是|
-|[.NET 非同步](../profiling/perftips.md)|是（僅限 .NET）|可以|是|
-|[Database](../profiling/perftips.md)|是（僅限 .NET Core）|否|是（僅限 ASP.NET Core）|
+|[事件檢視器](../profiling/events-viewer.md)|可以|是|是|
+|[.NET Async](../profiling/analyze-async.md)|是（僅限 .NET）|可以|是|
+|[Database](../profiling/analyze-database.md)|是（僅限 .NET Core）|否|是（僅限 ASP.NET Core）|
 |[效能總管](../profiling/performance-explorer.md)|否|否|否|
 |[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|
 ::: moniker-end
@@ -218,7 +218,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |[記憶體使用量](../profiling/memory-usage.md)|可以|可以|是|
 |[GPU 使用量](/visualstudio/debugger/graphics/gpu-usage)|可以|是|否|
 |[應用程式時間軸](../profiling/application-timeline.md)|可以|是|否|
-|[「效能提示」](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|
+|[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|
 |[效能總管](../profiling/performance-explorer.md)|是|否|是|
 |[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|
 |[網路使用量](../profiling/network-usage.md)|否|是|否|

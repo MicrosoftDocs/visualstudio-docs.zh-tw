@@ -3,7 +3,7 @@ title: 必須是 ' = ' （JavaScript） |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1011
 dev_langs:
@@ -14,17 +14,17 @@ ms.assetid: a8ce6fbf-8663-4770-8fba-677d04c84825
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 518140ebbddcee917a03bad6ec776e4c84b248d1
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: acc91513cc7f230a150ca87eea5cddc4681e43d3
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573396"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816588"
 ---
 # <a name="expected--javascript"></a>必須是 '=' (JavaScript)
 您嘗試建立要搭配條件式編譯語句使用的變數，但未在變數與您要指派給它的值之間放置等號。  
   
-### <a name="to-correct-this-error"></a>若要改正這項錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 - 新增等號。 例如：  
   

@@ -1,7 +1,7 @@
 ---
 title: 工作流程設計工具-如何：使用變數設計工具
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ec5e6d16d17024b0b49f977b87ddacc275e5860
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f02aab6c5ecf545e0f754f1a88fa7e26a88f206d
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593170"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817407"
 ---
 # <a name="how-to-use-the-variable-designer"></a>HOW TO：使用變數設計工具
 
@@ -36,8 +36,8 @@ ms.locfileid: "75593170"
     > [!NOTE]
     > 若要刪除變數，請按一下變數加以選取，然後按下**delete**鍵。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用工作流程設計工具](developing-applications-with-the-workflow-designer.md)
 - [變數與引數](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)
-- [如何：使用引數設計工具](../workflow-designer/how-to-use-the-argument-designer.md)
+- [HOW TO：使用引數設計工具](../workflow-designer/how-to-use-the-argument-designer.md)

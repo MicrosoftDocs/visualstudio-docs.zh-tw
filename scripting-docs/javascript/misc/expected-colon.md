@@ -3,7 +3,7 @@ title: 必須是 '： ' |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1003
 dev_langs:
@@ -14,20 +14,20 @@ ms.assetid: cbb1bb65-59e4-47e0-834d-8f514cfda0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65c0a645a565400b870a435c6125416fc85a473c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: bcb5d395ac322b6fd1daed2bfd9da1fe76f57e3a
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573423"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816666"
 ---
 # <a name="expected-"></a>必須是 ':'
 您嘗試使用三元條件運算子建立運算式，但未在第二個和第三個運算元之間包含冒號。 三元（三個運算元）條件運算子需要第二個（true）和第三個（false）運算元之間的冒號。  
   
-### <a name="to-correct-this-error"></a>若要改正這項錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 - 在第二個和第三個運算元之間插入冒號。  
   
 ## <a name="see-also"></a>另請參閱  
- [條件（三元）運算子（？:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
+ [條件式（三元）運算子（？:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
  [運算子](../../javascript/operators-javascript.md)

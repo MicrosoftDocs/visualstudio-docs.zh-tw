@@ -1,20 +1,20 @@
 ---
 title: Windows Form 設計工具教學課程
 ms.date: 08/09/2019
-ms.topic: conceptual
+ms.topic: tutorial
 helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 07526637f2d8083f37f55aa3da36bb01479db087
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 11f8480a3a48c1fdee514deb51411e2623055f09
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589834"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816458"
 ---
-# <a name="walkthrough-get-started-with-windows-forms-designer"></a>演練：開始使用 Windows 表單設計器
+# <a name="tutorial-get-started-with-windows-forms-designer"></a>教學課程：開始使用 Windows Form 設計工具
 
 Windows Form 設計工具提供許多可用來建置 Windows Forms 應用程式的工具。 本文會說明如何使用由該設計工具所提供的各種工具來建置應用程式，包括執行下列工作：
 
@@ -69,7 +69,7 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
     `SplitContainer` 控制項會固定到 DemoCalculator 控制項的界限。
 
     > [!NOTE]
-    > 有數個控制項提供智慧標籤以協助設計。 有關詳細資訊，請參閱[演練：使用 Windows 表單控制項上的智慧標籤執行常見任務](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls)。
+    > 有數個控制項提供智慧標籤以協助設計。 如需詳細資訊，請參閱[逐步解說：在 Windows Forms 控制項上使用智慧標籤執行一般](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls)工作。
 
 5. 選取面板之間的垂直框線，然後將它向右拖曳，來使左側面板佔據大部分的空間。
 
@@ -91,7 +91,7 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
 12. 從 [工具箱]**** 中的 [容器]**** 節點，將 `TableLayoutPanel` 控制項拖曳到 `SplitContainer` 控制項的左側面板。
 
-    `TableLayoutPanel` 控制項會出現在設計工具介面上，並開啟其智慧標籤面板。 `TableLayoutPanel` 控制項會以格線方式排列其子控制項。 `TableLayoutPanel` 控制項將會保存 DemoCalculator 控制項的顯示和按鈕。 有關詳細資訊，請參閱[演練：使用表佈局面板排列控制項](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel)。
+    `TableLayoutPanel` 控制項會出現在設計工具介面上，並開啟其智慧標籤面板。 `TableLayoutPanel` 控制項會以格線方式排列其子控制項。 `TableLayoutPanel` 控制項將會保存 DemoCalculator 控制項的顯示和按鈕。 如需詳細資訊，請參閱[逐步解說：使用 TableLayoutPanel 排列控制項](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel)。
 
 13. 選取智慧標籤面板上的 [編輯資料列與資料行]****。
 
@@ -135,9 +135,9 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
 8. 在 [工具箱]**** 中，額外再按兩下 `Button` 圖示四次以填入 `TableLayoutPanel` 控制項的第二個資料列。
 
-9. 透過按住 **Shift** 鍵並選取全部五個 `Button` 控制項來全選它們。 按**Ctrl**+**C** `Button`將控制項複製到剪貼簿。
+9. 透過按住 **Shift** 鍵並選取全部五個 `Button` 控制項來全選它們。 按**Ctrl** + **C** ，將 `Button` 控制項複製到剪貼簿。
 
-10. 按**Ctrl**+**V**三次，將`Button`控制項的副本粘貼到控制項的剩餘行`TableLayoutPanel`中。
+10. 按**Ctrl** + **V**三次，將控制項的複本貼入 `Button` 控制項的其餘資料列 `TableLayoutPanel` 。
 
 11. 透過按住 **Shift** 鍵並選取全部 20 個 `Button` 控制項來全選它們。
 
@@ -157,7 +157,7 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
 當您的控制項或表單被填入數個控制項時，可以使用 [文件大綱] 視窗來以較輕鬆的方式瀏覽您的版面配置。
 
-1. 在功能表列上，選擇 **"查看** > **其他 Windows** > **文檔大綱**"。
+1. 在功能表列上，選擇 [**視圖**] [  >  **其他視窗**] [  >  **檔大綱**]。
 
    [文件大綱] 視窗會顯示 DemoCalculator 控制項及組成它之控制項的樹狀檢視。 如 `SplitContainer` 等的容器控制項會將其子控制項顯示為樹狀中的子節點。 您也可以使用 [文件大綱] 視窗重新命名現有的控制項。
 
@@ -209,7 +209,7 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
    - 將 nineButton 控制項文字屬性變更為 **9**
 
-   - 將除法按鈕控制項文字屬性更改為**/**（向前斜杠）
+   - 將 divisionButton 控制項 text 屬性變更為 **/** （正斜線）
 
    - 將 clearButton 控制項文字屬性變更為**清除**
 
@@ -219,7 +219,7 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
    - 將 sixButton 控制項文字屬性變更為 **6**
 
-   - 將乘法按鈕控制項文字屬性更改為**\***（星號）
+   - 將 multiplicationButton 控制項 text 屬性變更為 **\*** （星號）
 
    - 將 oneButton 控制項文字屬性變更為 **1**
 
@@ -227,17 +227,17 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
    - 將 threeButton 控制項文字屬性變更為 **3**
 
-   - 將減法按鈕控制文字屬性更改為**-**（連字號）
+   - 將 subtractionButton 控制項 text 屬性變更為 **-** （連字號）
 
-   - 將等於Button 控制項文字屬性更改為**=**（等於符號）
+   - 將 equalsButton 控制項 text 屬性變更為 **=** （等號）
 
    - 將 zeroButton 控制項文字屬性變更為 **0**
 
-   - 將更改簽名按鈕控制項文字屬性更改為**+/-**
+   - 將 changeSignButton 控制項 text 屬性變更為**+/-**
 
    - 將 decimalButton 控制項文字屬性變更為 **.** (句號)
 
-   - 將加法按鈕控制項文字屬性更改為**+**（加號）
+   - 將 additionButton 控制項 text 屬性變更為 **+** （加號）
 
 5. 在設計工具介面上，透過按住 **Shift** 鍵並選取全部的 `Button` 控制項來全選它們。
 
@@ -257,7 +257,7 @@ DemoCalculator 控制項上的按鈕具有事件處理常式，可用來實作�
 
 ## <a name="test-the-control"></a>測試控制項
 
-由於 DemoCalculator 控制項是繼承自 <xref:System.Windows.Forms.UserControl> 類別，您可以使用 **UserControl 測試容器**來測試它的行為。 有關詳細資訊，請參閱[如何：測試 UserControl 的運行時行為](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)。
+由於 DemoCalculator 控制項是繼承自 <xref:System.Windows.Forms.UserControl> 類別，您可以使用 **UserControl 測試容器**來測試它的行為。 如需詳細資訊，請參閱[如何：測試 UserControl 的執行時間行為](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)。
 
 1. 按 **F5** 以在 [UserControl 測試容器]**** 中建置並執行 DemoCalculator 控制項。
 
@@ -291,7 +291,7 @@ DemoCalculator 控制項可以用於其他複合控制項或是表單上。 下�
 
 2. 將 **DemoCalculator** 控制項從 [工具箱]**** 拖曳到您的表單上。 將控制項移至表單的左上角。 當控制項接近表單的框線時，畫面上將會出現「對齊線」**。 對齊線會指出表單的 `Padding` 屬性和控制項的 `Margin` 屬性之間的距離。 將控制項置於對齊線所指示的位置。
 
-   有關詳細資訊，請參閱[演練：使用對齊線排列控制項](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines)。
+   如需詳細資訊，請參閱[逐步解說：使用對齊線排列控制項](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines)。
 
 3. 從 [工具箱]**** 拖曳 `Button` 控制項，並將它置於表單上。
 
@@ -313,6 +313,6 @@ DemoCalculator 控制項可以用於其他複合控制項或是表單上。 下�
 
 ## <a name="see-also"></a>另請參閱
 
-- [視窗表單控制項](/dotnet/framework/winforms/controls/)
+- [Windows Forms 控制項](/dotnet/framework/winforms/controls/)
 - [適用於 Windows Forms 控制項的協助工具](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
 - [使用 ClickOnce 進行發佈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

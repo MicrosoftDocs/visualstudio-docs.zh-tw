@@ -1,19 +1,19 @@
 ---
 title: 逐步解說：使用 XSLT IntelliSense
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adeab012e78d5f49ca94d1d8135aaf491839c767
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a085627d598bfcc969c2e76d717a2f49a31922b2
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592434"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817277"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>逐步解說：使用 XSLT IntelliSense
 
@@ -45,7 +45,7 @@ ms.locfileid: "75592434"
     </xsl:stylesheet>
     ```
 
-2. 在 `<xsl:template name="msg23" match="msg23">` 之後插入游標，然後按**enter**。 接著開始輸入下列 `xsl:call-template` 項目：
+2. 在之後插入游標 `<xsl:template name="msg23" match="msg23">` ，然後按**enter**鍵。 接著開始輸入下列 `xsl:call-template` 項目：
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -54,7 +54,7 @@ ms.locfileid: "75592434"
 
      當您輸入時，範本名稱的清單會出現在 `name=""` 項目的 `xsl:call-template` 屬性中。
 
-3. 在 `<xsl:call-template name="localized-message">` 之後插入游標，然後按**enter**。 接著開始輸入下列 `xsl:with-param` 項目：
+3. 在之後插入游標 `<xsl:call-template name="localized-message">` ，然後按**enter**鍵。 接著開始輸入下列 `xsl:with-param` 項目：
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -111,7 +111,7 @@ ms.locfileid: "75592434"
     </xsl:stylesheet>
     ```
 
-2. 在 `<xsl:apply-templates select="phone" />` 之後插入游標，然後按**enter**。 接著開始輸入下列 `xsl: apply-templates` 項目：
+2. 在之後插入游標 `<xsl:apply-templates select="phone" />` ，然後按**enter**鍵。 接著開始輸入下列 `xsl: apply-templates` 項目：
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -152,7 +152,7 @@ ms.locfileid: "75592434"
     </xsl:stylesheet>
     ```
 
-2. 在 `<xsl:stylesheet version="1.0">` 之後插入游標，然後按**enter**。 接著開始輸入下列 `xsl:namespace-alias` 項目：
+2. 在之後插入游標 `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` ，然後按**enter**鍵。 接著開始輸入下列 `xsl:namespace-alias` 項目：
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>
@@ -160,6 +160,6 @@ ms.locfileid: "75592434"
 
      請注意前置詞清單如何出現在 `stylesheet-prefix` 項目的 `result-prefix` 和 `xsl:namespace-alias` 屬性中。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 編輯器 IntelliSense 功能](../xml-tools/xml-editor-intellisense-features.md)

@@ -3,7 +3,7 @@ title: 需要布林值 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5010
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91ff0ec8cbd6e5cedb5ec02a8c574ff137b1c6ad
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 4dbb7e55f6afe6d3edfe4e98749807732ffa05ac
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576051"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817667"
 ---
 # <a name="boolean-expected"></a>必須是布林
-您嘗試在 `Boolean` 以外的型別物件上叫用**valueOf**方法的**布林值。** 這種調用類型的物件必須是 `Boolean` 的類型。 例如:
+您嘗試在以外的類型物件上叫用**valueOf** **方法，但不是** `Boolean` 。 這種調用類型的物件必須是類型 `Boolean` 。 例如：
 
 ```JavaScript
 var o = new Object;
@@ -34,7 +34,7 @@ o.f();
 
 - 只會在**布林值**類型的物件上叫用**valueOf** **方法。**
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Boolean 物件](../../javascript/reference/boolean-object-javascript.md)
 - [資料類型](../../javascript/data-types-javascript.md)

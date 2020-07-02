@@ -3,7 +3,7 @@ title: 不正確取代子引數 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5035
 dev_langs:
@@ -15,17 +15,17 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ba76a2121dfb3853e38bacbdf49c985103c2a35
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 452af60c37e4a56996438cc2957e9b69ccee98ef
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573802"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816822"
 ---
 # <a name="invalid-replacer-argument"></a>無效的取代子引數
-嘗試使用不正確引數來叫用 `JSON.stringify`。 `replacer` 引數必須是函式或陣列。  
+嘗試使用不正確 `JSON.stringify` 引數叫用。 `replacer`引數必須是函式或陣列。  
   
-### <a name="to-correct-this-error"></a>若要改正這項錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 - 將 `replacer` 引數變更為函式或陣列。  
   
@@ -46,5 +46,5 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
   
 ## <a name="see-also"></a>另請參閱  
  [JSON 物件](../../javascript/reference/json-object-javascript.md)   
- [JSON. parse](../../javascript/reference/json-parse-function-javascript.md)函式   
+ [JSON. parse 函式](../../javascript/reference/json-parse-function-javascript.md)   
  [JavaScript 執行階段錯誤](../../javascript/reference/javascript-run-time-errors.md)

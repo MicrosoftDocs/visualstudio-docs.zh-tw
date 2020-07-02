@@ -1,19 +1,19 @@
 ---
 title: 從 XML 架構瀏覽器將節點加入工作區
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2049b8da1caa4e0af0afc52aec6e75f499d85b8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 751e291188e6357343936d61d56f07bd86f97eaf
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592811"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816393"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>如何：從 XML 架構瀏覽器將節點加入至工作區
 
@@ -26,17 +26,17 @@ ms.locfileid: "75592811"
 
 1. 請依照[如何：建立和編輯 XSD 架構](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)檔案中的步驟執行。
 
-2. 以滑鼠右鍵按一下 [XSD Explorer] 中的 [`PurchaseOrderType`] 節點。 選取 [**在圖表視圖中顯示]** 。
+2. 以滑鼠右鍵按一下 `PurchaseOrderType` XSD Explorer 中的節點。 選取 [**在圖表視圖中顯示]**。
 
      `purchaseOrderType` 節點會出現在圖表檢視的設計介面上。
 
 ## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>將節點拖放至檢視上
 
-1. 以滑鼠右鍵按一下圖形視圖中的 [`PurchaseOrderType`] 節點。 選取 [**在 XML 架構瀏覽器中顯示**]。
+1. 以滑鼠右鍵按一下 `PurchaseOrderType` 圖形視圖中的節點。 選取 [**在 XML 架構瀏覽器中顯示**]。
 
      節點會在**XML 架構瀏覽器**中反白顯示。
 
-2. 以滑鼠右鍵按一下**XML 架構瀏覽器**中的 [`PurchaseOrderType`] 節點，然後選取 [**顯示所有參考**]。
+2. 以滑鼠右鍵按一下 `PurchaseOrderType` **XML 架構瀏覽器**中的節點，然後選取 [**顯示所有參考**]。
 
      `purchaseOrder` 節點會反白顯示。
 
@@ -56,8 +56,8 @@ ms.locfileid: "75592811"
 
      ![XML 結構描述總管搜尋結果](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     [`purchaseOrder`] 節點和 [`PurchaseOrderType`] 節點會顯示在[圖形視圖](../xml-tools/graph-view.md)的設計介面上。 由於兩個節點是相關的 (`purchaseOrder` 項目屬於 `PurchaseOrderType` 型別)，因此兩個節點之間會畫上箭號。
+     在 `purchaseOrder` `PurchaseOrderType` [圖表視圖](../xml-tools/graph-view.md)的設計介面上，節點和節點會彼此旁顯示。 由於兩個節點是相關的 (`purchaseOrder` 項目屬於 `PurchaseOrderType` 型別)，因此兩個節點之間會畫上箭號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)

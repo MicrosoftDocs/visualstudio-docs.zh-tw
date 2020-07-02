@@ -1,19 +1,19 @@
 ---
 title: 工作流程設計工具-如何：使用階層連結流覽
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 291badb04c791305f655e187ff7853fc8c5087a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a432d7cfc40ad6116f570d0e7beb4bfc5b40493
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584565"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817459"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>HOW TO：使用階層連結巡覽
 
@@ -47,7 +47,7 @@ ms.locfileid: "75584565"
 2. 套用全部展開或全部折迭的狀態之後，您可以按一下出現的 [**還原**] 按鈕，返回查看先前套用至每個活動的狀態。
 
     > [!WARNING]
-    > 如果某個活動（例如 <xref:System.Activities.Statements.Flowchart>）已選擇不就地展開，則會停用 [**流程圖**] 設計工具上與 [全部**展開**] 和 [**全部**折迭] 按鈕相關聯的功能。 如需**流程圖**設計工具的詳細資訊，請參閱[流程圖](../workflow-designer/flowchart-activity-designer.md)主題。
+    > 如果活動（例如 <xref:System.Activities.Statements.Flowchart> ）已選擇不就地展開，則會停用 [**流程圖**] 設計工具上與 [全部**展開**] 和 [**全部**折迭] 按鈕相關聯的功能。 如需**流程圖**設計工具的詳細資訊，請參閱[流程圖](../workflow-designer/flowchart-activity-designer.md)主題。
 
     > [!WARNING]
     > [全部展開] 在 [ **Switch** ] 和 [ **TryCatch** ] 活動設計工具中也有特殊效果。 當您按一下 [**全部展開**] 時，就會顯示所有的切換案例和所有的 try/catch/finally 區塊。 按一下 [**還原**] 或 [**全部**折迭] 會將這些設計工具傳回預設狀態，您可以在其中按一下個別的案例/區塊來查看其內容。

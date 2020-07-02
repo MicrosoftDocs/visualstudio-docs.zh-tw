@@ -1,19 +1,19 @@
 ---
 title: HOW TO：從 XML 結構描述產生 XML 片段
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec320018cc64e774751c312ca4cdeb94a6d53a9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3c7dff8e1bb211343ccc44e0d1fd33d96c102283
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592681"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817173"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：從 XML 架構產生 XML 程式碼片段
 
@@ -56,17 +56,17 @@ XML 編輯器能夠從 XML 架構定義語言（XSD）架構產生 XML 程式碼
 
      編輯器中會開啟新的檔案。 檔案包含預設的 XML 宣告，`<?xml version="1.0" encoding="utf-8">`。
 
-3. 在 [檔案屬性] 視窗中，按一下 [**架構**] 欄位上的瀏覽按鈕（ **...** ）。
+3. 在 [檔案屬性] 視窗中，按一下 [**架構**] 欄位上的瀏覽按鈕（**...**）。
 
      [ **XSD 架構**] 對話方塊隨即顯示。
 
-4. 按一下 [加入]。
+4. 按一下 **[新增]** 。
 
      [**開啟 XSD 架構**] 對話方塊隨即顯示。
 
 5. 選取架構檔案，然後按一下 [**開啟**]。
 
-6. 按一下 [ **確定**]。
+6. 按一下 [確定] 。
 
      XML 架構現在與 XML 檔相關聯。
 
@@ -80,7 +80,7 @@ XML 編輯器能夠從 XML 架構定義語言（XSD）架構產生 XML 程式碼
 
      **!** 要加入檔案類型的 DOCTYPE。
 
-     **?** \- 加入處理指示。
+     **?** 以加入處理指示。
 
      新增根項目的**連絡人**。
 
@@ -88,7 +88,7 @@ XML 編輯器能夠從 XML 架構定義語言（XSD）架構產生 XML 程式碼
 
      編輯器會加入開始標記 `<Contact`，並將游標置於項目名稱之後。
 
-4. 按**tab**鍵以根據其架構資訊產生 `Contact` 元素的 XML 資料。
+4. 按**tab**鍵，根據專案的架構資訊產生元素的 XML 資料 `Contact` 。
 
 ## <a name="input"></a>輸入
 
@@ -139,9 +139,9 @@ XML 編輯器能夠從 XML 架構定義語言（XSD）架構產生 XML 程式碼
 </xs:schema>
 ```
 
-### <a name="output"></a>Output
+### <a name="output"></a>輸出
 
-下列是根據與 `Contact` 項目相關聯的結構描述資訊產生的 XML 資料。 標示為 `bold` 的專案會指定 XML 片段中可編輯的欄位。
+下列是根據與 `Contact` 項目相關聯的結構描述資訊產生的 XML 資料。 標示為的專案會 `bold` 指定 XML 片段中的可編輯欄位。
 
 ```xml
 <Contact>
@@ -154,7 +154,7 @@ XML 編輯器能夠從 XML 架構定義語言（XSD）架構產生 XML 程式碼
 </Contact>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 程式碼片段](../xml-tools/xml-snippets.md)
 - [如何：使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)

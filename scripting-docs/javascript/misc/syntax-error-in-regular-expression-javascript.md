@@ -3,7 +3,7 @@ title: 正則運算式中的語法錯誤（JavaScript） |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5017
 dev_langs:
@@ -14,17 +14,17 @@ ms.assetid: 7799ed69-c877-42a1-87cf-ad6739302c10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69970a810df7cf0ea186d74fc39ae23e6e44e7ab
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 192f9a5ca9928e4c325d67c340276ef12de14686
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573670"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816185"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>規則運算式中的語法錯誤 (JavaScript)
-搜尋字串的結構違反了 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 正則運算式的一或多個語法規則。  
+搜尋字串的結構違反了正則運算式的一或多個語法規則 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 。  
   
-### <a name="to-correct-this-error"></a>若要改正這項錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 - 請確定正則運算式搜尋字串的結構遵守 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 正則運算式語法。  
   

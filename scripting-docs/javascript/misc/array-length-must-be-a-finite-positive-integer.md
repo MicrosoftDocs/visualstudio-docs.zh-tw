@@ -3,7 +3,7 @@ title: 陣列長度必須是有限的正整數 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5029
 dev_langs:
@@ -14,19 +14,19 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69494f1485a97ff4f2c98cf2493e5d0bc5b8aa9f
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: fa8b9a85c0c7457cb06d36fd3cd849ce48484b46
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576084"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817082"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>陣列長度必須是有限的正整數
 您正以不是整數的引數呼叫**陣列**的函式（整數是由零加上正整數的集合所組成）。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 只有在建立新的 `Array` 物件時，才使用正整數。 如果您想要使用不是整數的單一元素來建立陣列，請在兩個步驟的進程中執行。 首先，建立具有一個元素的陣列，然後將值放在第一個元素（陣列 [0]）中。 以下是產生此錯誤的範例。  
+- 只有在建立新的物件時，才使用正整數 `Array` 。 如果您想要使用不是整數的單一元素來建立陣列，請在兩個步驟的進程中執行。 首先，建立具有一個元素的陣列，然後將值放在第一個元素（陣列 [0]）中。 以下是產生此錯誤的範例。  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  
@@ -41,5 +41,5 @@ ms.locfileid: "72576084"
   
      陣列的大小沒有上限，而不是最大整數值（大約4000000000）。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用陣列](../../javascript/advanced/using-arrays-javascript.md)

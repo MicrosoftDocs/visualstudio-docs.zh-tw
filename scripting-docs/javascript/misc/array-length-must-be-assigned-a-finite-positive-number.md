@@ -3,7 +3,7 @@ title: 陣列長度必須被指派有限的正數 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5030
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: c51c66a4-a543-4e95-b18d-2cfbcb3d1fdd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cff9c8c42199e106cca5f6f2808866e46a26afe2
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 30e02f4f90300e2c05076553419cda5f8c353ab0
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576072"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817680"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>陣列長度必須被指派為有限的正值
-設定現有**陣列**物件的**length**屬性時，您指定的陣列長度不是正數或零。 當您將值指派給負或不是數位（`NaN`） `Array` 物件的**length**屬性時，就會發生這個錯誤。 請注意，[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 會自動將小數位數轉換成整數。  
+設定現有**陣列**物件的**length**屬性時，您指定的陣列長度不是正數或零。 當您將值指派給**length** `Array` 負或不是數位（）之物件的 length 屬性時，就會發生這個錯誤 `NaN` 。 請注意， [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 會自動將小數位數轉換成整數。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
@@ -33,5 +33,5 @@ ms.locfileid: "72576072"
     my_array.length = 99;  
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用陣列](../../javascript/advanced/using-arrays-javascript.md)
