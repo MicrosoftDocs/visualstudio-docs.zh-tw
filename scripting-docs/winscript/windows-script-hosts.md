@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Windows Script Host, implementing hosts
 ms.assetid: 9d5f6471-b318-40f3-be01-d9cd0b1cdd47
@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8468f578ee44487acd2575e81e01d65969110437
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 51053dec1f8362aa9eef80e4867d2f92a06454cb
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568820"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835325"
 ---
 # <a name="windows-script-hosts"></a>Windows Script Host
 實作 Microsoft Windows Script Host 時，您可以安全地假設指令碼引擎只呼叫基底執行緒內容中的 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 介面，只要主機進行下列作業：  
@@ -40,5 +40,5 @@ ms.locfileid: "72568820"
 ## <a name="remarks"></a>備註  
  這些限制都不適用選擇實作無限制執行緒 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 介面和無限制執行緒物件模型的主機。 這類主機可以從任何執行緒使用 [IActiveScript](../winscript/reference/iactivescript.md) 介面，完全沒有限制。  
   
-## <a name="see-also"></a>請參閱  
- [Windows 指令碼介面](../winscript/windows-script-interfaces.md)
+## <a name="see-also"></a>另請參閱  
+ [Windows 指令碼的介面](../winscript/windows-script-interfaces.md)

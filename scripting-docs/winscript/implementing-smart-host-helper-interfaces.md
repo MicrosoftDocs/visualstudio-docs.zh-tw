@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Smart Host Helper Interfaces, implementing
 ms.assetid: b9c44246-4d4d-469e-91be-00c8f5796fa5
@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b387999d71690deaf5bea30a07439677065d63d
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: deac5827aa38039099f1d0f5e621d473db96743d
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574378"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835598"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>實作智慧主機協助程式介面
 [IDebugDocumentHelper 介面](../winscript/reference/idebugdocumenthelper-interface.md)介面可大幅簡化建立智慧主機以進行主動式偵錯的工作，因為它提供智慧裝載所需的許多介面的實作。  
@@ -72,7 +72,7 @@ ms.locfileid: "72574378"
   
 3. 使用文件的父代協助程式呼叫 [IDebugDocumentHelper::Attach](../winscript/reference/idebugdocumenthelper-attach.md) (如果文件是根文件，則為 NULL)，以定義樹狀結構中文件的位置，並向偵錯工具顯示它。  
   
-4. 呼叫 [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) 或 [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md)，以定義文件的文字 (在瀏覽器中，如果以累加方式下載文件，則可以多次呼叫這些項目)。  
+4. 呼叫 [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) 或 [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md)，以定義文件的文字  (在瀏覽器中，如果以累加方式下載文件，則可以多次呼叫這些項目)。  
   
 5. 呼叫 [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md) 以定義每個指令碼區塊和相關聯指令碼引擎的範圍。  
   
@@ -104,5 +104,5 @@ pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew
   
 - 提供檔案系統中文件的路徑名稱。 有些偵錯 UI 會使用這個選項允許使用者編輯和儲存文件變更。 呼叫 [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md)，以在儲存文件之後通知主機。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [動態指令碼偵錯概觀](../winscript/active-script-debugging-overview.md)
