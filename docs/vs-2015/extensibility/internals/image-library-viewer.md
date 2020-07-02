@@ -6,37 +6,37 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 97d634f97eb7a13cfa54b2c0d326b19f31fb7d9d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6f6423c569fd1909539de9460ab3dcde0bcf753c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685493"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532024"
 ---
 # <a name="image-library-viewer"></a>影像庫檢視器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單，讓使用者能夠操作這些 Visual Studio 會的方式相同。 使用者可以改變背景、 大小、 DPI、 高對比和其他設定。 此工具也會顯示每個映像資訊清單的載入資訊，並會顯示映像資訊清單中的每個映像的來源資訊。 這項工具可用於：  
+Visual Studio 的影像庫檢視器工具可以載入及搜尋影像資訊清單，讓使用者能夠以相同的方式操作，Visual Studio 會這麼做。 使用者可以改變背景、大小、DPI、高對比及其他設定。 此工具也會顯示每個映射資訊清單的載入資訊，並在映射資訊清單中顯示每個影像的來源資訊。 此工具適用于：  
   
 1. 診斷錯誤  
   
-2. 確保屬性已正確設定，在自訂映像資訊清單中  
+2. 確保在自訂映射資訊清單中正確設定屬性  
   
-3. 搜尋 Visual Studio 映像目錄中的映像，好讓 Visual Studio 擴充功能可以使用符合的 Visual Studio 樣式的映像  
+3. 搜尋 Visual Studio 映射目錄中的影像，讓 Visual Studio 延伸模組可以使用符合樣式的影像 Visual Studio  
   
-   ![影像庫檢視器 Hero](../../extensibility/internals/media/image-library-viewer-hero.png "影像庫檢視器主圖")  
+   ![影像庫檢視器主圖](../../extensibility/internals/media/image-library-viewer-hero.png "影像庫檢視器主圖")  
   
-   **影像 moniker**  
+   **影像標記**  
   
-   影像 moniker （或簡稱 moniker） 是可唯一識別影像資產或映像庫中的影像清單資產的 guid: id 配對。  
+   影像標記（簡稱為名字）是 GUID： ID 組，可唯一識別影像庫中的影像資產或影像清單資產。  
   
-   **影像資訊清單檔**  
+   **映射資訊清單檔案**  
   
-   映像資訊清單 (.imagemanifest) 檔案是 XML 檔案會定義一組影像資產，代表這些資產，以及實際的映像或代表每個資產的映像的 moniker。 映像資訊清單可以定義獨立映像或映像會列出舊版的 UI 支援。 此外，也可以變更何時及如何顯示這些資產設定資產上或個別的映像，之後每個資產上的屬性。  
+   影像資訊清單（. imagemanifest）檔案是定義一組影像資產的 XML 檔案、代表這些資產的名字，以及代表每個資產的真實影像或影像。 映射資訊清單可以定義獨立映射或舊版 UI 支援的影像清單。 此外，您可以在資產上，或在每個資產背後的個別影像上設定一些屬性，以變更這些資產的顯示時間和方式。  
   
-   **映像資訊清單結構描述**  
+   **映射資訊清單架構**  
   
-   完成映像資訊清單看起來像這樣：  
+   完整的映射資訊清單看起來像這樣：  
   
 ```xml  
 <ImageManifest>  
@@ -57,7 +57,7 @@ Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單
   
  **符號**  
   
- 當可讀性及維護的協助，映像資訊清單可用於屬性值的符號。 符號定義如下：  
+ 為方便閱讀和維護，映射資訊清單可以使用符號做為屬性值。 符號的定義如下：  
   
 ```xml  
 <Symbols>  
@@ -68,15 +68,14 @@ Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單
 </Symbols>  
 ```  
   
-|||  
+|**Subelement**|**[定義]**|  
 |-|-|  
-|**子元素**|**定義**|  
-|匯入|匯入使用目前的資訊清單中的指定資訊清單檔案的符號。|  
-|Guid|符號表示的 GUID，且必須符合 GUID 格式。|  
-|識別碼|符號代表的識別碼，且必須為非負整數。|  
-|String|符號代表任意字串值。|  
+|匯入|匯入指定資訊清單檔的符號，以用於目前的資訊清單。|  
+|Guid|符號代表 GUID，且必須符合 GUID 格式。|  
+|ID|符號代表識別碼，而且必須是非負整數。|  
+|String|符號代表任一字元串值。|  
   
- 符號會區分大小寫，且參考使用 $(symbol-name) 語法：  
+ 符號會區分大小寫，並使用 $ （符號-名稱）語法來參考：  
   
 ```xml  
 <Image Guid="$(ShellCommandGuid)" ID="$(cmdidSaveAll)" >  
@@ -84,24 +83,23 @@ Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單
 </Image>  
 ```  
   
- 所有的資訊清單已預先定義一些符號。 這些可用的 Uri 屬性中\<來源 > 或\<匯入 >，在本機電腦上的參考路徑的項目。  
+ 所有資訊清單都有預先定義的符號。 這些可以用在或元素的 Uri 屬性中 \<Source> \<Import> ，以參考本機電腦上的路徑。  
   
-|||  
-|-|-|  
 |**符號**|**描述**|  
-|CommonProgramFiles|%Commonprogramfiles%環境變數的值|  
-|LocalAppData|%Localappdata%環境變數的值|  
+|-|-|  
+|CommonProgramFiles|% CommonProgramFiles% 環境變數的值|  
+|LocalAppData|% LocalAppData% 環境變數的值|  
 |ManifestFolder|包含資訊清單檔案的資料夾|  
 |MyDocuments|目前使用者的 [我的文件] 資料夾的完整路徑|  
-|ProgramFiles|%Programfiles%環境變數的值|  
+|ProgramFiles|% ProgramFiles% 環境變數的值|  
 |系統|Windows\System32 資料夾|  
-|WinDir|%Windir%環境變數的值|  
+|WinDir|% WinDir% 環境變數的值|  
   
- **影像**  
+ **映像**  
   
- \<映像 > 項目定義的映像，您可以參考 moniker。 GUID 和 ID 結合在一起形成影像 moniker。 跨整個映像庫，影像 moniker 必須是唯一的。 如果多個映像具有指定的 moniker，在建置程式庫時所遇到的第一個是會保留。  
+ \<Image>元素會定義可由標記所參考的影像。 同時採用的 GUID 和識別碼會形成影像標記。 影像的標記在整個影像庫中必須是唯一的。 如果有一個以上的映射具有指定的名字，則在建立程式庫時所遇到的第一個影像就是保留的一個。  
   
- 它必須包含至少一個來源。 雖然中性大小來源會提供最佳的結果，跨各種大小，但是它們並非必要項。 如果此服務會要求中未定義大小的影像\<映像 > 項目並沒有中性大小來源，會選擇最佳的特定大小的來源服務，並將其調整為要求的大小。  
+ 它至少必須包含一個來源。 雖然大小中立的來源會提供各種大小的最佳結果，但並不是必要的。 如果要求服務的影像大小未定義于元素中， \<Image> 而且沒有任何大小中立的來源，則服務會選擇最佳的大小特定來源，並將其調整為所要求的大小。  
   
 ```xml  
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">  
@@ -109,17 +107,16 @@ Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單
       <!-- optional additional Source elements -->  
 </Image>  
 ```  
+    
+|**屬性**|**[定義]**|  
+|-|-|
+|Guid|具備影像標記的 GUID 部分|  
+|ID|具備影像標記的識別碼部分|  
+|AllowColorInversion|[選用，預設值為 true]指出影像在深色背景上使用時，是否可以以程式設計方式反轉其色彩。|  
   
-|||  
-|-|-|  
-|**屬性**|**定義**|  
-|Guid|[必要]影像 moniker GUID 部分|  
-|識別碼|[必要]影像 moniker 識別碼部分|  
-|AllowColorInversion|[選擇性的預設為 true]指出影像是否可以使用深色背景時以程式設計的方式已反轉其色彩。|  
+ **Source**  
   
- **來源**  
-  
- \<來源 > 項目會定義單一映像來源資產 （XAML 和 PNG）。  
+ \<Source>元素會定義單一影像來源資產（XAML 和 PNG）。  
   
 ```xml  
 <Source Uri="uri" Background="background">  
@@ -127,37 +124,34 @@ Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單
  </Source>  
 ```  
   
-|||  
+|**屬性**|**[定義]**|  
 |-|-|  
-|**屬性**|**定義**|  
-|URI|[必要]定義從何處可以載入映像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)使用應用程式: / / 授權單位<br /><br /> -絕對元件資源參考<br /><br /> -包含原生資源的檔案路徑|  
-|背景|[選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> - *Light*:淺色背景上可用的來源。<br /><br /> - *深色*:來源可以使用深色背景上。<br /><br /> - *高對比*:高對比模式中的任何背景上可用的來源。<br /><br /> - *HighContrastLight*:高對比模式中的淺色背景上可用的來源。<br /><br /> -*HighContrastDark*:在高對比模式中使用深色背景上可用的來源。<br /><br /> 如果**背景**省略屬性、 來源可以使用任何背景上。<br /><br /> 如果**背景**是*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果**背景**被省略或設為*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。|  
+|Uri|具備定義可從中載入影像之位置的 URI。 可以是下列其中一項：<br /><br /> -使用 application:///授權單位的[PACK URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)<br /><br /> -絕對元件資源參考<br /><br /> -包含原生資源之檔案的路徑|  
+|背景|選擇性表示要使用來源的背景類型。<br /><br /> 可以是下列其中一項：<br /><br /> - *Light*：來源可以在淺色背景上使用。<br /><br /> - *深色*：來源可以用於深色背景上。<br /><br /> - *Systeminformation.highcontrast*：來源可用於高對比模式中的任何背景。<br /><br /> - *HighContrastLight*：來源可以在高對比模式的淺背景上使用。<br /><br /> -*HighContrastDark*：來源可以在高對比模式的深色背景上使用。<br /><br /> 如果省略**background**屬性，則可以在任何背景使用來源。<br /><br /> 如果**背景**為*淺*、*暗*、 *HighContrastLight*或*HighContrastDark*，則來源的色彩永遠不會反轉。 如果 [**背景**] 省略或設為*systeminformation.highcontrast*，則來源色彩的反轉是由影像的**AllowColorInversion**屬性所控制。|  
   
- A\<來源 > 項目可以有一個下列的選擇性子項目：  
+ 專案 \<Source> 只能有下列其中一個選擇性子項目：  
   
-||||  
+|**元素**|**屬性（全部必要）**|**[定義]**|  
 |-|-|-|  
-|**目**|**屬性 （全部所需）**|**定義**|  
-|\<Size>|值|來源會使用指定的大小 （以裝置為單位） 的映像。 映像會正方形。|  
-|\<SizeRange>|MinSize, MaxSize|來源將使用的映像從 MinSize 至大小上限 （以裝置為單位） （含）。 映像會正方形。|  
-|\<維度 >|寬度高度|來源將使用指定的寬度和高度 （以裝置為單位） 的映像。|  
-|\<DimensionRange>|MinWidth 或 MinHeight<br /><br /> MaxWidth MaxHeight|來源將用於從最小寬度/高度的映像，以最大寬度/高度 （以裝置為單位） （含）。|  
+|\<Size>|值|來源將用於指定大小的影像（以裝置為單位）。 影像將會是正方形。|  
+|\<SizeRange>|MinSize、MaxSize|來源將用於從 MinSize 到大小上限（裝置單位）的影像。 影像將會是正方形。|  
+|\<Dimensions>|寬度，高度|來源將用於指定的寬度和高度（以裝置為單位）的影像。|  
+|\<DimensionRange>|MinWidth、MinHeight、<br /><br /> MaxWidth、MaxHeight|來源將用於從最小寬度/高度到所含的最大寬度/高度（以裝置單位）為單位的影像。|  
   
- A\<來源 > 項目也可以選擇性\<NativeResource > 子元素，定義\<來源 > 從原生組件，而不是 managed 組件載入的。  
+ 專案 \<Source> 也可以有選擇性的 \<NativeResource> 子項目，它會定義 \<Source> 從原生元件載入而非 managed 元件的。  
   
 ```xml  
 <NativeResource Type="type" ID="int" />  
 ```  
   
-|||  
+|**屬性**|**[定義]**|  
 |-|-|  
-|**屬性**|**定義**|  
-|類型|[必要]資源類型的原生、 XAML 或 PNG|  
-|識別碼|[必要]原生資源的整數識別碼部分|  
+|類型|具備原生資源的類型，XAML 或 PNG|  
+|ID|具備原生資源的整數識別碼部分|  
   
  **ImageList**  
   
- \<ImageList > 項目會定義可傳回單一區域中的映像的集合。 視需求為基礎，帶。  
+ \<ImageList>元素會定義可在單一帶狀中傳回的影像集合。 視需要依需求建立帶狀。  
   
 ```xml  
 <ImageList>  
@@ -166,67 +160,66 @@ Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單
  </ImageList>  
 ```  
   
-|||  
+|**屬性**|**[定義]**|  
 |-|-|  
-|**屬性**|**定義**|  
-|Guid|[必要]影像 moniker GUID 部分|  
-|識別碼|[必要]影像 moniker 識別碼部分|  
-|外部|[選擇性的預設為 false]指出是否影像 moniker 參考目前的資訊清單中的映像。|  
+|Guid|具備影像標記的 GUID 部分|  
+|ID|具備影像標記的識別碼部分|  
+|外部|[選用，預設值為 false]指出影像標記是否參考目前資訊清單中的影像。|  
   
- 參考目前的資訊清單中定義的映像沒有包含映像的 moniker。 如果映像庫中找不到包含映像，其位置中都將使用的空白預留位置映像。  
+ 所包含之影像的標記不需要參考在目前資訊清單中定義的影像。 如果在影像媒體櫃中找不到包含的影像，則會在其位置中使用空白的預留位置影像。  
   
 ## <a name="how-to-use-the-tool"></a>如何使用工具  
- **驗證的自訂映像資訊清單**  
+ **驗證自訂映射資訊清單**  
   
- 若要建立自訂的資訊清單，我們建議您使用 ManifestFromResources 工具，來自動產生資訊清單。 若要驗證的自訂資訊清單，請在啟動影像庫檢視器，然後選取 檔案 > 設定路徑... 若要開啟 [搜尋目錄] 對話方塊。 此工具會載入映像資訊清單中，使用搜尋目錄，但它也會使用它以尋找包含在資訊清單中的映像的.dll 檔因此請務必在這個對話方塊包含的資訊清單 」 和 「 DLL 的目錄。  
+ 若要建立自訂資訊清單，建議您使用 ManifestFromResources 工具來自動產生資訊清單。 若要驗證自訂資訊清單，請啟動 [映射庫檢視器]，然後選取 [檔案] > 設定路徑 .。。 以開啟 [搜尋目錄] 對話方塊。 此工具會使用搜尋目錄來載入影像資訊清單，但它也會使用它來尋找包含資訊清單中影像的 .dll 檔案，因此請務必在此對話方塊中同時包含資訊清單和 DLL 目錄。  
   
  ![影像庫檢視器搜尋](../../extensibility/internals/media/image-library-viewer-search.png "影像庫檢視器搜尋")  
   
- 按一下 **加入...** 若要選取新的搜尋目錄，若要搜尋的資訊清單和其相對應的 Dll。 此工具會記住這些搜尋目錄，他們可以開啟或關閉核取或取消核取 目錄。  
+ 按一下 [**新增 ...** ] 若要選取新的搜尋目錄，以搜尋資訊清單及其對應的 Dll。 此工具會記住這些搜尋目錄，而且可以藉由檢查或取消選取目錄來開啟或關閉它們。  
   
- 根據預設，此工具會嘗試尋找 Visual Studio 安裝目錄，並將這些目錄加入至搜尋目錄清單。 您可以手動新增找不到此工具的目錄。  
+ 根據預設，此工具會嘗試尋找 Visual Studio 安裝目錄，並將這些目錄新增至 [搜尋目錄] 清單。 您可以手動新增工具找不到的目錄。  
   
- 此工具的所有資訊清單會載入之後，可以用來切換**背景**色彩**DPI**，**高對比**，或**grayscaling**的映像，讓使用者可以視覺化方式檢查以確認它們會呈現正確的各種設定的影像資產。  
+ 載入所有資訊清單之後，就可以使用此工具來切換影像的**背景**色彩、 **DPI**、**高對比**或**grayscaling** ，讓使用者可以視覺化方式檢查影像資產，以確認其是否已針對各種設定正確轉譯。  
   
  ![影像庫檢視器背景](../../extensibility/internals/media/image-library-viewer-background.png "影像庫檢視器背景")  
   
- Light、 暗色調，或自訂值，可以設定的背景色彩。 選取 自訂色彩 會開啟色彩選擇 對話方塊，並將該自訂色彩新增至背景下拉式方塊，供日後辨識稍後底部。  
+ 背景色彩可以設定為 [淺色]、[深色] 或 [自訂值]。 選取 [自訂色彩] 將會開啟色彩選取對話方塊，並將該自訂色彩新增至 [背景] 下拉式方塊的底部，以便稍後輕鬆地重新叫用。  
   
  ![影像庫檢視器自訂色彩](../../extensibility/internals/media/image-library-viewer-custom-color.png "影像庫檢視器自訂色彩")  
   
- 選取影像 moniker 右邊的 [映像詳細資料] 窗格中顯示每個實際的映像，該 moniker 背後的資訊。 [] 窗格也可讓使用者名稱或原始 guid: id 值，請將複製的 moniker。  
+ 選取影像標記會在右側的 [影像詳細資料] 窗格中，顯示該標記背後每個實際影像的資訊。 此窗格也可讓使用者依名稱或原始 GUID： ID 值複製標記。  
   
- ![影像庫檢視器映像詳細資料](../../extensibility/internals/media/image-library-viewer-image-details.png "影像庫檢視器映像詳細資料")  
+ ![影像庫檢視器影像的詳細資料](../../extensibility/internals/media/image-library-viewer-image-details.png "影像庫檢視器影像的詳細資料")  
   
- 顯示每個映像來源的資訊包含何種背景以顯示上，是否配置其佈景主題，或支援高對比，是有效的何種大小或是否為中性大小，以及映像是否來自原生組件。  
+ 針對每個影像來源顯示的資訊包括要在哪種背景上顯示它、它是否可以有主題或支援高對比、其有效的大小，或其大小是否為中性，以及影像是否來自原生元件。  
   
  ![影像庫檢視器 Can 佈景主題](../../extensibility/internals/media/image-library-viewer-can-theme.png "影像庫檢視器 Can 佈景主題")  
   
- 當驗證的影像清單時，我們建議您部署資訊清單和映像在它們的實際位置的 DLL。 這會驗證任何相對的路徑會正常運作，以及映像庫能找到並載入資訊清單和映像 DLL。  
+ 驗證映射資訊清單時，我們建議您在其真實世界位置部署資訊清單和映射 DLL。 這會驗證任何相對路徑是否正常運作，以及影像庫是否可以尋找並載入資訊清單和映射 DLL。  
   
- **搜尋映像目錄 KnownMonikers**  
+ **搜尋影像目錄 KnownMonikers**  
   
- 若要使其更符合 Visual Studio 樣式，Visual Studio 擴充功能可以使用 Visual Studio 映像目錄而不是建立及使用它自己的映像。 這做的優點是不必維護這些映像，並保證映像將會有高 DPI 支援映像，因此看起來應該會在所有 Visual Studio 支援的 DPI 設定正確。  
+ 為了更符合 Visual Studio 樣式，Visual Studio 延伸模組可以使用 Visual Studio 映射目錄中的影像，而不是建立和使用其本身。 這可讓您不必維護這些映射，並保證映射會有高 DPI 的支援影像，因此它在 Visual Studio 支援的所有 DPI 設定中應該看起來是正確的。  
   
- 影像庫檢視器可讓資訊清單，以搜尋，讓使用者能夠尋找表示的影像資產的 moniker，並在程式碼中使用的 moniker。 若要搜尋映像，在搜尋方塊中輸入所需的搜尋字詞，然後按 Enter。 在底部的 [狀態] 列會顯示多少相符項目中找不到映像總計超出所有資訊清單。  
+ 影像庫檢視器允許搜尋資訊清單，讓使用者可以找到代表影像資產的標記，並在程式碼中使用該標記。 若要搜尋影像，請在搜尋方塊中輸入想要的搜尋字詞，然後按 Enter 鍵。 底部的狀態列會顯示在所有資訊清單的總影像中找到多少相符專案。  
   
- ![影像庫檢視器篩選](../../extensibility/internals/media/image-library-viewer-filter.png "影像庫檢視器篩選")  
+ ![影像庫檢視器篩選器](../../extensibility/internals/media/image-library-viewer-filter.png "影像庫檢視器篩選器")  
   
- 搜尋的現有資訊清單中的影像 moniker 時，我們建議您搜尋，並使用只有 Visual Studio 映像的目錄 moniker、 其他刻意可公開存取的 moniker 或您自己自訂的 moniker。 如果您使用非公用的 moniker，自訂的 UI 可能會損毀，或其映像中已經變更非預期的方式還是時變更或更新非公用的 moniker 和影像者除外。  
+ 在現有的資訊清單中搜尋影像標記時，我們建議您只搜尋並使用 Visual Studio 映射目錄的名字、其他刻意公開存取的名字，或您自己的自訂名字。 如果您使用非公用的名字標記，自訂 UI 可能會中斷，或其映射以非預期的方式變更，如果或未變更或更新那些非公用的名字和影像。  
   
- 此外，搜尋由 GUID 是可能的。 這種搜尋適合用來將單一的資訊清單，清單中向下篩選，或如果該資訊清單的資訊清單的單一子區段會包含多個 Guid。  
+ 此外，也可以依 GUID 搜尋。 這種類型的搜尋適用于將清單向下篩選到單一資訊清單，或如果資訊清單包含多個 Guid，則可用於資訊清單的單一子區段。  
   
  ![影像庫檢視器篩選 GUID](../../extensibility/internals/media/image-library-viewer-filter-guid.png "影像庫檢視器篩選 GUID")  
   
- 最後，依識別碼搜尋可能也是。  
+ 最後，也可以依識別碼搜尋。  
   
  ![影像庫檢視器篩選識別碼](../../extensibility/internals/media/image-library-viewer-filter-id.png "影像庫檢視器篩選識別碼")  
   
 ## <a name="notes"></a>注意  
   
-- 根據預設，此工具會在數個 Visual Studio 安裝目錄中的映像資訊清單中提取。 只有一種具有公開可取用的 moniker 是**Microsoft.VisualStudio.ImageCatalog**資訊清單。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (請勿**不**覆寫此自訂資訊清單中的 GUID) 類型：KnownMonikers  
+- 根據預設，此工具會提取 Visual Studio 安裝目錄中的數個映射資訊清單。 唯一具有可公開取用之名字標記的是**VisualStudio. ImageCatalog**資訊清單。 GUID： ae27a6b0-e345-4288-96df-5eaf394ee369 （請勿在自訂資訊清單中**覆寫此**GUID）類型： KnownMonikers  
   
-- 此工具會嘗試啟動時載入所有影像資訊清單，找到，因此它可能需要花費數秒鐘的時間來實際顯示應用程式。 載入資訊清單時，它可能也會變慢或無回應。  
+- 此工具會在啟動時嘗試載入它找到的所有影像資訊清單，因此可能需要幾秒鐘的時間，應用程式才會實際出現。 載入資訊清單時，它可能也會變慢或沒有回應。  
   
 ## <a name="sample-output"></a>範例輸出  
  此工具不會產生任何輸出。

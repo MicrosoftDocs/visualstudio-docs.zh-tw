@@ -2,7 +2,7 @@
 title: 測量 Python 程式碼的效能
 description: 在使用 CPython 型解譯器時，以 Visual Studio 分析工具來檢查 Python 程式碼的效能。
 ms.date: 11/12/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e31286a9b0ea3852ad1fe788d4ff6c4c66e7e4f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64cd7db0131843ab48410b6676551c8563b8ffbd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62784261"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531777"
 ---
 # <a name="profile-python-code"></a>分析 Python 程式碼
 
@@ -23,7 +23,7 @@ ms.locfileid: "62784261"
 
 ## <a name="profiling-for-cpython-based-interpreters"></a>CPython 型解譯器的分析
 
-分析通過**分析** > **啟動 Python 分析**功能表命令啟動，該命令將打開配置對話方塊：
+分析會透過 [**分析**] [  >  **啟動 Python 分析]** 功能表命令來啟動，這會開啟設定對話方塊：
 
 ![分析設定對話方塊](media/profiling-start.png)
 

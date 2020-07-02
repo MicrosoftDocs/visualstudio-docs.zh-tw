@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：建立自訂文字範本主機
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 3d578161d43de68d85f3b7704c9fd69fe4e268ea
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593534"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532219"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
 
@@ -29,13 +29,13 @@ ms.locfileid: "75593534"
 > [!WARNING]
 > 如果您要撰寫 Visual Studio 延伸模組或封裝，請考慮使用文字模板化服務，而不是建立您自己的主機。 如需詳細資訊，請參閱叫[用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
-這個逐步解說將說明下列工作：
+本逐步解說將說明下列工作：
 
 - 建立自訂文字範本主應用程式。
 
 - 測試自訂主應用程式。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>必要條件
 
 若要完成這個逐步解說，您必須具有下列各項：
 
@@ -51,9 +51,9 @@ ms.locfileid: "75593534"
 
 2. 加入下列組件的參考：
 
-   - **VisualStudio. TextTemplating.\*0**
+   - **VisualStudio. TextTemplating. \* 。0**
 
-   - **VisualStudio. TextTemplating. 10.0 和更新版本**
+   - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 (含) 以後版本**
 
 3. 以下列程式碼取代 Program.cs 或 Module1.vb 檔案中的程式碼：
 
@@ -714,11 +714,11 @@ ms.locfileid: "75593534"
    End Namespace
    ```
 
-4. 針對 [僅 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]]，開啟 [**專案**] 功能表，然後按一下 [ **CustomHost 屬性**]。 在 [**啟始物件**] 清單中，按一下 [ **CustomHost 程式**]。
+4. 若為 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ，請開啟 [**專案**] 功能表，然後按一下 [ **CustomHost 屬性**]。 在 [**啟始物件**] 清單中，按一下 [ **CustomHost 程式**]。
 
-5. 在 [檔案] 功能表上按一下 [全部儲存]。
+5. 按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。
 
-6. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
+6. 在 [建置]**** 功能表上，按一下 [建置方案]****。
 
 ## <a name="test-the-custom-host"></a>測試自訂主機
 
@@ -726,11 +726,11 @@ ms.locfileid: "75593534"
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>若要建立文字範本以測試自訂主應用程式
 
-1. 建立文字檔，並將它命名為 `TestTemplate.tt`。
+1. 建立文字檔，並將它命名為 `TestTemplate.tt` 。
 
      您可以使用任何文字編輯器 (例如 [記事本]) 來建立檔案。
 
-2. 將下列程式碼加入至此檔案中：
+2. 將下列程式碼新增至檔案：
 
     > [!NOTE]
     > 文字範本的程式語言與自訂主應用程式的語言不一定要相符。
@@ -777,7 +777,7 @@ ms.locfileid: "75593534"
 
 ### <a name="to-test-the-custom-host"></a>若要測試自訂主應用程式
 
-1. 開啟 [命令提示字元] 視窗。
+1. 開啟命令提示字元視窗。
 
 2. 輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。
 
@@ -786,7 +786,7 @@ ms.locfileid: "75593534"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > 除了輸入位址，您可以在**Windows Explorer**中流覽至 CustomHost 檔案，然後將檔案拖曳到 [命令提示字元] 視窗中。
+    > 您可以在**Windows Explorer**中流覽至檔案 CustomHost.exe，然後將檔案拖曳到 [命令提示字元] 視窗中，而不需要輸入位址。
 
 3. 輸入空格。
 
@@ -821,6 +821,6 @@ ms.locfileid: "75593534"
 
 在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱[逐步解說：將主機連接至產生的](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)指示詞處理器。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

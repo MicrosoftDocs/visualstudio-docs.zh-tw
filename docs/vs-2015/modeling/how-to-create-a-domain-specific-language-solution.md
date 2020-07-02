@@ -15,22 +15,22 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17171b79e06a273e9a9f4bb5032781963e8d818
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 227838334067d33c8a50c81d3a3c013c6baee356
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918828"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533077"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：建立網域指定的語言方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-特定領域語言（DSL）是使用特製化的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解決方案所建立。
+特定領域語言（DSL）是使用特殊解決方案所建立 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
 
-## <a name="prerequisites"></a>必要條件：
+## <a name="prerequisites"></a>必要條件
  開始進行此程式之前，您必須先安裝下列元件：
 
-|||
+|Products|下載連結|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
@@ -42,22 +42,22 @@ ms.locfileid: "75918828"
 
 1. 啟動 DSL Wizard。
 
-   1. 在 [檔案] 功能表中，指向 [新增]，然後按一下 [專案]。
+   1. 在 **[檔案]** 功能表上，指向 **[開新檔案]**，然後按一下 **[專案]**。
 
-   2. [ **新增專案** ] 對話方塊隨即出現。
+   2. [新增專案]  對話方塊隨即出現。
 
    3. 在 [**專案類型**] 底下，展開 [**其他專案類型**] 節點，**然後按一下 [** 擴充性]。
 
    4. 按一下 [**網域指定的語言設計**工具]。
 
-   5. 在 [**名稱**] 方塊中，輸入解決方案的名稱。 按一下 [ **確定**]。
+   5. 在 [**名稱**] 方塊中，輸入解決方案的名稱。 按一下 [確定] 。
 
        **定義域指定的語言設計工具 Wizard**隨即出現。
 
       > [!NOTE]
-      > 您輸入的名稱最好是有效的視覺C#識別碼，因為它可能會用來產生程式碼。
+      > 您輸入的名稱最好是有效的 Visual c # 識別碼，因為它可能會用來產生程式碼。
 
-      ![建立 DSL 對話方塊](../modeling/media/create-dsldialog.png "Create_DSLDialog")
+      ![[建立 DSL] 對話方塊](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
 2. 選擇 DSL 範本。
 
@@ -67,18 +67,18 @@ ms.locfileid: "75918828"
 
 3. 在 [**副檔名**] 頁面上輸入檔案名副檔名。 在您的電腦上，以及您要安裝 DSL 的任何電腦上，它應該是唯一的。 您應該會看到 [**沒有任何應用程式或 Visual Studio 編輯器使用此延伸**模組] 訊息。
 
-   - 如果您已在先前的實驗性 Dsl 中使用尚未完整安裝的副檔名，您可以使用 [**重設實驗實例**] 工具將其清除，這可在 [[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK] 功能表中找到。
+   - 如果您已在先前的實驗性 Dsl 中使用尚未完整安裝的副檔名，您可以使用 [**重設實驗實例**] 工具將其清除，其可在 [SDK] 功能表中找到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
 
-   - 如果您的電腦已完整安裝使用此副檔名的另一個 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組，請考慮將它卸載。 在 [**工具**] 功能表上，按一下 [**擴充管理員**]。
+   - 如果 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 您的電腦已完整安裝使用此副檔名的另一個延伸模組，請考慮將它卸載。 在 [**工具**] 功能表上，按一下 [**擴充管理員**]。
 
-4. 檢查並視需要調整 wizard 其餘頁面中的欄位。 當您對設定感到滿意時，請按一下 **[完成]** 。 如需設定的詳細資訊，請參閱[DSL 設計工具 Wizard 頁面](#settings)。
+4. 檢查並視需要調整 wizard 其餘頁面中的欄位。 當您對設定感到滿意時，請按一下 **[完成]**。 如需設定的詳細資訊，請參閱[DSL 設計工具 Wizard 頁面](#settings)。
 
     此 wizard 會建立一個方案，其中包含兩個名為**Dsl**和**DslPackage**的專案。
 
    > [!NOTE]
-   > 如果您看到一則訊息，提醒您不要從不受信任的來源執行文字模板，請按一下 **[確定]** 。 您可以設定此訊息，不要再次出現。
+   > 如果您看到一則訊息，提醒您不要從不受信任的來源執行文字模板，請按一下 **[確定]**。 您可以設定此訊息，不要再次出現。
 
-## <a name="settings"></a>DSL 設計工具 Wizard 頁面
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>DSL 設計工具 Wizard 頁面
  您可以讓數個欄位的預設值保持不變。 不過，請確定您已設定 [副檔名] 欄位。
 
 ### <a name="solution-settings-page"></a>解決方案設定頁面
@@ -86,7 +86,7 @@ ms.locfileid: "75918828"
 選擇類似您想要建立之 DSL 的範本。 不同的範本提供了方便的起點。 當您選取解決方案範本時，嚮導會顯示描述。 如需解決方案範本的詳細資訊，請參閱[選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。
 
  **您要將特定領域語言命名為什麼？**
-預設為解決方案名稱。 此值會產生程式碼。 它必須是有效的C#類別名稱。
+預設為解決方案名稱。 此值會產生程式碼。 它必須是有效的 c # 類別名稱。
 
 ### <a name="file-extension-page"></a>[副檔名] 頁面
  **模型檔案使用哪個延伸模組？**
@@ -100,13 +100,13 @@ ms.locfileid: "75918828"
 
 - 輸入不同的副檔名。
 
-     \-或-
+     \- 或 -
 
 - 重設 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 實驗實例。 這會取消註冊您先前建立的所有 Dsl。 在 [**開始**] 功能表上，依序按一下 [**所有程式**]、[ **Microsoft Visual Studio 2010 SDK**] 和 [**工具**]，然後**重設 Microsoft Visual Studio 2010 實驗實例**。 您可以重建任何其他您想要再次使用的 Dsl。
 
-     \-或-
+     \- 或 -
 
-- 如果您的電腦已完整安裝使用此副檔名的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組，請將它卸載。 在 [**工具**] 功能表上，按一下 [**擴充管理員**]。
+- 如果 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 您的電腦已完整安裝使用此副檔名的延伸模組，請將它卸載。 在 [**工具**] 功能表上，按一下 [**擴充管理員**]。
 
 ### <a name="product-settings-page"></a>[產品設定] 頁面
  **新的特定領域語言所屬的產品名稱是什麼？**
@@ -129,5 +129,5 @@ ms.locfileid: "75918828"
 
  如需強式命名的詳細資訊，請參閱[建立和使用強式名稱的元件](/dotnet/standard/assembly/create-use-strong-named)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [如何定義特定領域語言的](../modeling/how-to-define-a-domain-specific-language.md)[網域特定語言工具詞彙](/previous-versions/bb126564(v=vs.100))

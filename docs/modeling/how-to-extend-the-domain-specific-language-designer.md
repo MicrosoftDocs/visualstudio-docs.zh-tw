@@ -1,18 +1,18 @@
 ---
 title: 如何：擴充網域指定的語言設計工具
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa03e43276c7c995c5f494c5325dd79716dcf998
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605599"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532582"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：擴充網域指定的語言設計工具
 
@@ -68,7 +68,7 @@ ms.locfileid: "72605599"
 
 若要將擴充功能部署到主要 Visual Studio 和其他電腦，請遵循下列步驟：
 
-1. 在 bin 中的 VSIX 專案中尋找 VSIX 安裝檔案 \\ * \\ \* .vsix
+1. 在 \\ bin .vsix 的 vsix 專案中尋找 vsix 安裝檔案 * \\ \*
 
 2. 將此檔案複製到目的電腦，然後在 [Windows Explorer] （或 [檔案瀏覽器]）中按兩下該檔案。
 
@@ -84,7 +84,7 @@ ms.locfileid: "72605599"
 
 若要讓快捷方式功能表命令出現在 DSL 設計工具介面或 [DSL Explorer] 視窗中，請撰寫類似下列的類別。
 
-類別必須實 `ICommandExtension`，而且必須具有 `DslDefinitionModelCommandExtension` 屬性。
+類別必須執行 `ICommandExtension` ，而且必須具有屬性 `DslDefinitionModelCommandExtension` 。
 
 ```csharp
 using System.Collections.Generic;

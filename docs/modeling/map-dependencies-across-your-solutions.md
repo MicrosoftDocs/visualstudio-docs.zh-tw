@@ -1,7 +1,7 @@
 ---
 title: Code Map
 ms.date: 05/16/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.progression.codemap
 - vs.progression.standardgraphsdialog
@@ -16,12 +16,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6e4efbc0cf950781c84eadf974ea87943d9828c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 771a6ccf4749a3464204d3da75f4d403d1ab2dd5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594574"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532713"
 ---
 # <a name="map-dependencies-with-code-maps"></a>對應程式碼對應的相依性
 
@@ -36,22 +36,22 @@ ms.locfileid: "75594574"
 
 您可以針對這些語言的程式碼對應相依性：
 
-- 方案C#或元件（ *.dll*或 *.exe*）中的視覺效果或 Visual Basic
+- 方案或元件（*.dll*或 *.exe*）中的 Visual c # 或 Visual Basic
 
-- Visual C++專案中的原C++生或 managed C 或程式碼、標頭檔（ *.h*或 `#include`）或二進位檔
+- Visual C++ 專案、標頭檔（*.h*或 `#include` ）或二進位檔中的原生或 Managed c 或 c + + 程式碼
 
 - 由 .NET 模組製作的 Microsoft Dynamics AX X++ 專案和組件
 
 > [!NOTE]
-> 對於C#或 Visual Basic 以外的專案，啟動 Code Map 或將專案新增至現有的 Code Map 時，會有較少的選項。 例如，您無法以滑鼠右鍵按一下 C++ 專案中 [文字編輯器] 的物件並將它加入 Code Map。 不過，您可以從**方案總管**、**類別檢視**和**物件瀏覽器**拖放個別的程式碼元素或檔案。
+> 對於 c # 或 Visual Basic 以外的專案，啟動 Code Map 或將專案新增至現有的 Code Map 時，會有較少的選項。 例如，您無法以滑鼠右鍵按一下 C++ 專案中 [文字編輯器] 的物件並將它加入 Code Map。 不過，您可以從**方案總管**、**類別檢視**和**物件瀏覽器**拖放個別的程式碼元素或檔案。
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>安裝 Code Map 和即時相依性驗證
 
 若要在 Visual Studio 中建立 Code Map，請先安裝**Code map**和**Live Dependency 驗證**元件：
 
-1. 開啟**Visual Studio 安裝程式**。 您可以從 Windows 的 [開始] 功能表開啟它，或選取 [**工具**] > [**取得工具和功能**]，在 Visual Studio
+1. 開啟**Visual Studio 安裝程式**。 您可以從 Windows 的 [開始] 功能表開啟它，或選取 [**工具**] [  >  **取得工具和功能**]，在 Visual Studio
 
-1. 選取 [個別元件] 索引標籤。
+1. 選取 [個別元件]**** 索引標籤。
 
 1. 向下流覽至 [程式**代碼工具**] 區段，然後選取 [ **code Map** ] 和 [即時相依性**驗證**]。
 
@@ -67,7 +67,7 @@ ms.locfileid: "75594574"
 
 若要加入空的 Code Map：
 
-1. 在 [方案總管]中，開啟最上層方案節點的捷徑功能表。 選擇 [**加入** > **新專案**]。
+1. 在 [方案總管] **** 中，開啟最上層方案節點的捷徑功能表。 選擇 [**加入**  >  **新專案**]。
 
 2. 在 [**加入新專案**] 對話方塊的 [**已安裝**] 底下，選擇 [**一般**] 分類。
 
@@ -78,25 +78,25 @@ ms.locfileid: "75594574"
 
    您方案的 [**方案專案**] 資料夾中會出現空白對應。
 
-同樣地，您可以建立新的 Code Map 檔案，而不將其新增至您的方案，方法是選取 [**架構**] > **新的 Code map**或**file** > **新** **的 > 檔案**。
+同樣地，您可以藉由選取 [**架構**] [  >  **新增程式碼對應**] **File**或 [檔案] [  >  **新增**  >  **File**檔案]，建立新的 Code Map 檔案，而不將它加入
 
 ## <a name="generate-a-code-map-for-your-solution"></a>為您的解決方案產生 Code Map
 
 若要查看方案中的所有相依性：
 
-1. 在功能表列上，選擇 [**架構**] > [**產生方案的 Code Map**]。 如果您的程式碼在上一次建立之後未曾變更，您可以選取 [**架構**] > **產生方案的 code Map，而不需要建立**。
+1. 在功能表列上，選擇 [**架構**] [  >  **產生方案的 Code Map**]。 如果您的程式碼在上一次建立之後未曾變更，您可以選取 [**架構**] [  >  **產生方案的 code Map]，而不需要建立**。
 
    ![產生程式碼對應命令](../modeling/media/codemapsarchitecturemenu.png)
 
    會產生對應，以顯示最上層元件和兩者之間的匯總連結。 彙總連結愈廣，代表的相依性就愈高。
 
-2. 使用 Code Map 工具列上的 [圖例] 按鈕以顯示或隱藏專案類型圖示清單 (例如測試、Web 和 Phone 專案)，程式碼項目 (例如類別、方法和屬性)，和關聯性類型 (例如「繼承自」、「實作」，和「呼叫」)。
+2. 使用 Code Map 工具列上的 [圖例] **** 按鈕以顯示或隱藏專案類型圖示清單 (例如測試、Web 和 Phone 專案)，程式碼項目 (例如類別、方法和屬性)，和關聯性類型 (例如「繼承自」、「實作」，和「呼叫」)。
 
    ![組件的最上層相依性圖形](../modeling/media/dependencygraph_toplevelassemblies.png)
 
-   此範例方案包含方案資料夾 ([測試] 和 [元件])、測試專案、Web 專案和組件。 所有內含項目關聯性預設會顯示為 *「群組」* (group)，您可將其展開及摺疊。 [外部] 群組中含有在您的方案之外的任何項目，包括平台相依性。 外部組件只會顯示所使用的項目。 根據預設，系統基底類型在對應中會隱藏，以減少雜亂。
+   此範例方案包含方案資料夾 ([測試]**** 和 [元件] ****)、測試專案、Web 專案和組件。 所有內含項目關聯性預設會顯示為 *「群組」*(group)，您可將其展開及摺疊。 [外部] **** 群組中含有在您的方案之外的任何項目，包括平台相依性。 外部組件只會顯示所使用的項目。 根據預設，系統基底類型在對應中會隱藏，以減少雜亂。
 
-3. 若要向下切入到對應，請展開代表專案和組件的群組。 您可以藉由按下 **CTRL + A** 選取所有節點，然後從捷徑功能表選擇 [群組]、[展開] ，展開所有項目。
+3. 若要向下切入到對應，請展開代表專案和組件的群組。 您可以藉由按下 **CTRL + A** 選取所有節點，然後從捷徑功能表選擇 [群組] ****、[展開] **** ，展開所有項目。
 
    ![展開程式碼對應中的所有群組](../modeling/media/codemapsexpandallgroups.png)
 
@@ -104,22 +104,22 @@ ms.locfileid: "75594574"
 
    ![展開程式碼對應中的節點](../modeling/media/dependencygraph_containment.png)
 
-   或使用鍵盤選取項目，然後按下加號鍵 ( **+** )。 若要瀏覽更深層的程式碼，請為命名空間、類型和成員執行相同的作業。
+   或使用鍵盤，方法是選取專案，然後按下加號鍵（ **+** ）。 若要瀏覽更深層的程式碼，請為命名空間、類型和成員執行相同的作業。
 
    > [!TIP]
    > 如需使用滑鼠、鍵盤和觸控來處理 code map 的詳細資訊，請參閱[流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)。
 
-5. 若要簡化對應，並將焦點放在個別部分，請選擇 Code Map 工具列上的 [篩選] ，然後只選取您感興趣的節點和連結類型。 例如，您可以隱藏所有的方案資料夾和組件容器。
+5. 若要簡化對應，並將焦點放在個別部分，請選擇 Code Map 工具列上的 [篩選] **** ，然後只選取您感興趣的節點和連結類型。 例如，您可以隱藏所有的方案資料夾和組件容器。
 
    ![篩選容器以精簡對應](../modeling/media/codemapsfilterfoldersassemblies.png)
 
    您也可以隱藏或移除對應上的個別群組和項目來簡化對應，而不會影響基礎的方案程式碼。
 
-6. 若要查看項目之間的關聯性，請在對應中加以選取。 連結的色彩表示關聯性的類型，如 [圖例] 窗格中所示。
+6. 若要查看項目之間的關聯性，請在對應中加以選取。 連結的色彩表示關聯性的類型，如 [圖例] **** 窗格中所示。
 
    ![檢視方案之間的相依性](../modeling/media/codemapsmainintro.png)
 
-   在此範例中，紫色連結是呼叫、虛線的連結是參考，而淺藍色連結則是欄位存取。 綠色的連結可以是繼承，或者可以是 *「彙總連結」* (aggregate link)，表示多個關聯性類型 (或 *「分類」* (category))。
+   在此範例中，紫色連結是呼叫、虛線的連結是參考，而淺藍色連結則是欄位存取。 綠色的連結可以是繼承，或者可以是 *「彙總連結」* (aggregate link)，表示多個關聯性類型 (或 *「分類」*(category))。
 
    > [!TIP]
    > 如果看到綠色連結，可能不表示只有繼承關聯性。 也有可能是方法呼叫，但是繼承關聯性將其隱藏。 若要查看特定類型的連結，請使用 [**篩選**] 窗格中的核取方塊，隱藏您不感興趣的類型。
@@ -128,13 +128,13 @@ ms.locfileid: "75594574"
 
    ![顯示關聯性的類別目錄](../modeling/media/codemapsshowlinkcatgories.png)
 
-8. 若要檢查彙總連結代表的項目和相依性，請先選取連結，然後開啟其捷徑功能表。 選擇 [顯示參與連結] (或 [在新 Code Map 上顯示參與連結])。 這會展開在連結兩端的群組，並只顯示參與此連結的項目和相依性。
+8. 若要檢查彙總連結代表的項目和相依性，請先選取連結，然後開啟其捷徑功能表。 選擇 [顯示參與連結] **** (或 [在新 Code Map 上顯示參與連結] ****)。 這會展開在連結兩端的群組，並只顯示參與此連結的項目和相依性。
 
-9. 若要將焦點放在對應的特定部分，您可以繼續移除您不感興趣的專案。 例如，若要向下鑽研到類別和成員檢視，只要篩選 [篩選] 窗格中的所有命名空間節點。
+9. 若要將焦點放在對應的特定部分，您可以繼續移除您不感興趣的專案。 例如，若要向下鑽研到類別和成員檢視，只要篩選 [篩選] **** 窗格中的所有命名空間節點。
 
    ![向下鑽研類別及成員層級](../modeling/media/dependencygraph_expandedselectedgroups_2012.png)
 
-10. 專注於複雜方案對應的另一個方法是產生新的對應，其中包含來自現有對應的選取項目。 按住**Ctrl** ，同時選取您要專注于的專案，開啟快捷方式功能表，然後選擇 [**從選取範圍新增圖形]** 。
+10. 專注於複雜方案對應的另一個方法是產生新的對應，其中包含來自現有對應的選取項目。 按住**Ctrl** ，同時選取您要專注于的專案，開啟快捷方式功能表，然後選擇 [**從選取範圍新增圖形]**。
 
     ![在新的 Code Map 上顯示選取的項目](../modeling/media/codemapsshowonnewmap.png)
 
@@ -146,10 +146,10 @@ ms.locfileid: "75594574"
 
     ![選取項目以檢視其關聯性](../modeling/media/codemapsviewnewrelationships.png)
 
-也請參閱：
+另請參閱：
 
 - [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
 - 藉由執行[分析器](../modeling/find-potential-problems-using-code-map-analyzers.md)找出程式碼中的潛在問題
 
 ## <a name="view-specific-dependencies-in-a-code-map"></a>查看 Code Map 中的特定相依性
@@ -158,11 +158,11 @@ ms.locfileid: "75594574"
 
    ![顯示與 Code Map 之間的相依性](../modeling/media/codemapsspecificdependenciesintro.png)
 
-1. 在 **方案總管**中，選取您想要對應的專案、元件參考、資料夾、檔案、類型或成員。
+1. 在 [**方案總管**中，選取您想要對應的專案、元件參考、資料夾、檔案、類型或成員。
 
    ![選取您要對應的項目](../modeling/media/codemapsselectinsolutionexplorer.png)
 
-1. 在 [**方案總管**] 工具列上，選擇 [**在 Code Map 上顯示**] ![[從選取的節點建立新圖形] 按鈕](../modeling/media/createnewgraphfromselectedbutton.gif)。 或者，開啟一個或一組專案的快捷方式功能表，然後選擇 [**在 Code Map 上顯示**]。
+1. 在 [**方案總管**] 工具列上，選擇 [**在 Code Map 上顯示** ![ ] [從選取的節點建立新圖形] 按鈕 ](../modeling/media/createnewgraphfromselectedbutton.gif) 。 或者，開啟一個或一組專案的快捷方式功能表，然後選擇 [**在 Code Map 上顯示**]。
 
    您也可以將專案從 [**方案總管**]、[**類別檢視**] 或 [**物件瀏覽器**] 拖曳至[新](#add-a-code-map)的或現有的 Code Map。 若要包含專案的父階層，請在拖曳專案時按住**Ctrl**鍵，或使用 [Code Map] 工具列上的 [**包含父代**] 按鈕，指定預設動作。 您也可以從外部 Visual Studio （例如從**Windows Explorer**）拖曳元件檔。
 
@@ -177,28 +177,28 @@ ms.locfileid: "75594574"
 
    ![展開 Code Map 中的節點](../modeling/media/dependencygraph_containment.png)
 
-   若要展開所有專案，請使用**Ctrl**+**A**選取它們，然後開啟對應的快捷方式功能表，並選擇 [**群組** > **展開**]。 不過，如果展開所有群組會產生無法使用的對應或記憶體問題，則無法使用此選項。
+   若要展開所有專案，請使用**Ctrl** + **A**選取它們，然後開啟對應的快捷方式功能表並選擇 [**群組**  >  **展開**]。 不過，如果展開所有群組會產生無法使用的對應或記憶體問題，則無法使用此選項。
 
 5. 如有需要，請繼續展開您感興趣的專案，向下到類別和成員層級。
 
    ![將群組展開至類別與成員](../modeling/media/codemapsexpandtoclassandmember.png)
 
-   若要查看程式碼中的成員，但未顯示在地圖上，請按一下 [**重新擷取子**系] 圖示，![重新擷取在群組左上角的 [子系]](../modeling/media/dependencygraph_deletednodesicon.png) 圖示。
+   若要查看程式碼中的成員，但不會出現在對應上，請按一下群組左上角的 [**重新擷取子**系] 圖示 ![ 重新擷取子系圖示 ](../modeling/media/dependencygraph_deletednodesicon.png) 。
 
-6. 若要查看與對應上之項目相關的其他項目，請選取一個，在 Code Map 工具列上選擇 [顯示相關] ，然後選取要加入對應的相關項目類型。 或者，選取一個或多個專案，開啟快捷方式功能表，然後針對要加入對應的相關專案類型選擇 [**顯示**] 選項。 例如:
+6. 若要查看與對應上之項目相關的其他項目，請選取一個，在 Code Map 工具列上選擇 [顯示相關] **** ，然後選取要加入對應的相關項目類型。 或者，選取一個或多個專案，開啟快捷方式功能表，然後針對要加入對應的相關專案類型選擇 [**顯示**] 選項。 例如：
 
     對於 **組件**，選擇：
 
-    |||
+    |選項|描述|
     |-|-|
-    |**顯示這一項參考的組件**|加入這個組件參考的組件。 外部組件會出現在 [外部] 群組中。|
+    |**顯示這一項參考的組件**|加入這個組件參考的組件。 外部組件會出現在 [外部] **** 群組中。|
     |**顯示參考這一項的組件**|從參考這個組件的方案中加入組件。|
 
-    對於 **命名空間**，選擇 [顯示包含的組件]\(如果看不到的話)。
+    對於 **命名空間**，選擇 [顯示包含的組件] ****(如果看不到的話)。
 
     對於 **類別** 或 **介面**，選擇：
 
-    |||
+    |選項|描述|
     |-|-|
     |**顯示基底類型**|對於類別，加入基底類別和實作的介面。<br /><br /> 對於介面，加入基底介面。|
     |**顯示衍生類型**|對於類別，加入衍生類別。<br /><br /> 對於介面，加入衍生介面和實作類別或結構。|
@@ -211,7 +211,7 @@ ms.locfileid: "75594574"
 
      對於 **方法**，選擇：
 
-    |||
+    |選項|描述|
     |-|-|
     |**顯示這一項呼叫的方法**|加入這個方法呼叫的方法。|
     |**顯示這一項參考的欄位**|加入這個方法所參考的欄位。|
@@ -221,26 +221,26 @@ ms.locfileid: "75594574"
 
      對於 **欄位** 或 **屬性**，選擇：
 
-    |||
+    |選項|描述|
     |-|-|
     |**顯示包含的類型**|加入父類型。|
     |**顯示包含的類型、命名空間和組件**|加入父容器階層架構。|
 
     ![顯示此成員呼叫的方法](../modeling/media/codemapsshowrelatedmethods.png)
 
-7. 對應會顯示關聯性。 在此範例中，地圖會顯示 `Find` 方法所呼叫的方法，以及它們在方案或外部的位置。
+7. 對應會顯示關聯性。 在此範例中，地圖會顯示方法所呼叫的方法 `Find` ，以及它們在方案或外部的位置。
 
    ![顯示與 Code Map 之間的相依性](../modeling/media/codemapsspecificdependenciesintro.png)
 
-8. 若要簡化對應，並將焦點放在個別部分，請選擇 Code Map 工具列上的 [篩選] ，然後只選取您感興趣的節點和連結類型。 例如，關閉方案資料夾、組件和命名空間的顯示。
+8. 若要簡化對應，並將焦點放在個別部分，請選擇 Code Map 工具列上的 [篩選] **** ，然後只選取您感興趣的節點和連結類型。 例如，關閉方案資料夾、組件和命名空間的顯示。
 
    ![使用 [篩選] 窗格來簡化顯示](../modeling/media/almcodemapfilterpane.png)
 
 ## <a name="see-also"></a>另請參閱
 
-- [影片：瞭解使用 Visual Studio 2015 code map 的程式碼設計](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
+- [影片：使用 Visual Studio 2015 code map 瞭解程式碼中的設計](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)
-- [在偵錯時於呼叫堆疊上對應方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
+- [進行偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)
 - [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

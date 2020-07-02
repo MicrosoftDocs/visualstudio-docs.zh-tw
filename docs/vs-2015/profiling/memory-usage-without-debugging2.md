@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64f739039d17af7fbee9718da93e8610e2619a85
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586955"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532037"
 ---
 # <a name="memory-usage-without-debugging"></a>記憶體使用量 (不偵錯)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "82586955"
   
   在快照檢視的圖片中，有編號的項目是開啟 [記憶體使用量] 報表檢視的連結。  
   
-|||  
+|映像|描述|  
 |-|-|  
 |![步驟 1](../profiling/media/procguid-1.png "ProcGuid_1")|連結文字顯示在擷取快照時，記憶體中的總位元組數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的大小總計進行排序。|  
 |![步驟 2](../profiling/media/procguid-2.png "ProcGuid_2")|連結文字顯示擷取快照時記憶體中的總物件數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的計數進行排序。|  
@@ -135,7 +135,7 @@ ms.locfileid: "82586955"
   
  ![Managed 堆積樹狀](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
-|||  
+|名稱|描述|  
 |-|-|  
 |**物件類型**|類型或物件執行個體的名稱。|  
 |**Count**|類型的物件執行個體數目。 一個執行個體的數目一律為 1。|  
@@ -154,7 +154,7 @@ ms.locfileid: "82586955"
   
  ![執行個體的參考物件樹狀](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|名稱|描述|  
 |-|-|  
 |**物件類型 / 執行個體**|類型或物件執行個體的名稱。|  
 |**大小（位元組）**|對於類型，此為類型的所有執行個體大小，但排除類型中包含的物件大小。<br /><br /> 對於執行個體，此為物件的大小，但排除物件中包含的物件大小。|  
@@ -176,7 +176,7 @@ ms.locfileid: "82586955"
   
  請注意，圖片中已摺疊 [計數]****、[大小 (位元組)]**** 和 [內含大小 (位元組)]**** 欄。  
   
-|||  
+|名稱|描述|  
 |-|-|  
 |**物件類型**|類型或物件執行個體的名稱。|  
 |**Count**|主要快照中類型的執行個體數目。 實例的 [**計數**] 一律為1。|  
@@ -196,7 +196,7 @@ ms.locfileid: "82586955"
   
  ![執行個體的參考物件樹狀](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|名稱|描述|  
 |-|-|  
 |**物件類型 / 執行個體**|類型或物件執行個體的名稱。|  
 |**大小（位元組）**|對於執行個體，此為主要快照中的物件大小，但排除執行個體中包含的物件大小。<br /><br /> 對於類型，此為主要快照中，類型的執行個體大小總計，但排除執行個體中包含的物件大小。|  

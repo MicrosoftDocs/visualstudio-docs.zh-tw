@@ -1,30 +1,30 @@
 ---
 title: 如何：將網域指定的語言移轉至新的版本
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be4a8205935d131d880923e721e342ea904134d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f8bdaea1267d0bf69078aec5739291e72db8dfda
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747545"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532607"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：將網域指定的語言移轉至新的版本
-您可以遷移定義和使用特定領域語言的專案，以便從隨 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 散發的 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 版本中 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。
+您可以 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 從與一起散發的版本中，將定義和使用特定領域語言的專案遷移至 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 。
 
- @No__t_0 中提供了遷移工具。 此工具會轉換使用或定義 DSL 工具的 Visual Studio 專案和解決方案。
+ 會提供遷移工具做為的一部分 [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] 。 此工具會轉換使用或定義 DSL 工具的 Visual Studio 專案和解決方案。
 
  您必須明確地執行遷移工具：當您在 Visual Studio 中開啟方案時，它不會自動啟動。 您可以在此路徑找到工具和詳細的指引檔：
 
  **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>遷移 DSL 專案之前
- 遷移工具會修改 Visual Studio 專案檔（ **.csproj**）和方案檔（ **.sln**）。
+ 遷移工具會修改 Visual Studio 專案檔（**.csproj**）和方案檔（**.sln**）。
 
 #### <a name="to-prepare-projects-for-migration"></a>準備專案以進行遷移。
 
@@ -44,7 +44,7 @@ ms.locfileid: "72747545"
 
 2. 選擇包含您想要轉換之方案和專案的資料夾。
 
-   - 在工具頂端的方塊中輸入路徑，或按一下 **[流覽]** 。
+   - 在工具頂端的方塊中輸入路徑，或按一下 **[流覽]**。
 
      [遷移] 工具會顯示定義或使用 Dsl 的專案樹狀結構。 樹狀結構包含使用**VisualStudio**或**TextTemplating**元件的每個專案。
 
@@ -59,9 +59,9 @@ ms.locfileid: "72747545"
 
    1. 按一下 [**轉換**]。
 
-        轉換每個專案檔之前，會將_專案_ **.csproj**的複本_儲存為_**vs2008 .csproj**
+        轉換每個專案檔之前，會將_專案_**.csproj**的複本_儲存為_**vs2008 .csproj**
 
-        每個方案的**複本都會儲存為** **vs2008 .sln**
+        每個方案的_solution_**複本都會儲存為** _ _ **vs2008 .sln**
 
    2. 調查回報的任何失敗轉換。
 
@@ -69,7 +69,7 @@ ms.locfileid: "72747545"
 
 5. 轉換方案中包含已成功轉換專案的**所有範本**。
 
-   1. 開啟方案。
+   1. 開啟解決方案。
 
    2. 按一下方案總管標頭中的 [**轉換所有範本**] 按鈕。
 
@@ -84,6 +84,6 @@ ms.locfileid: "72747545"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [相關的 blog 文章](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
+- [相關部落格文章](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

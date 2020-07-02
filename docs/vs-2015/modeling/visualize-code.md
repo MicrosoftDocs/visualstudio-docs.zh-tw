@@ -13,12 +13,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ffd105032cda050ab16132b6a4c2d54488028b8
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 665dc76126eac964f405be06605c40b5b30cc9a5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586759"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532934"
 ---
 # <a name="visualize-code"></a>視覺化程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "82586759"
 
 ## <a name="what-do-you-want-to-do"></a>您想要做什麼事？
 
-|||
+|狀況|文章|
 |-|-|
 |**了解程式碼及其關聯性：**<br /><br /> 對應特定程式碼片段之間的關聯性。<br /><br /> 查看整個方案的程式碼中的關聯性概觀。<br /><br /> **注意**：在本版 Visual Studio 中，會以 *Code Map* 一詞取代 *「相依性圖形」*(Dependency Graph)。|-   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br />-   [使用 code map 來對應用程式進行 debug](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [使用 Code Map 分析器尋找潛在的問題](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [在進行調試時于呼叫堆疊上對應方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**了解類別結構：**<br /><br /> 從程式碼建立類別圖，將專案中的類別結構視覺化。|[如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
@@ -51,7 +51,7 @@ ms.locfileid: "82586759"
 |**類別**|**連結**|
 |------------------|---------------|
 |**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**網路**|[Visual Studio ALM + Team Foundation Server 部落格](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
+|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**技術文件和日誌**|[MSDN 架構論壇](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>另請參閱

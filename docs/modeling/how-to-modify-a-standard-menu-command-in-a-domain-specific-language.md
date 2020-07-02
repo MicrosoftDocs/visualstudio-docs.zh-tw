@@ -1,21 +1,21 @@
 ---
 title: 在 DSL 中修改標準功能表命令
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae2aa04eb415ee5c4b7aaa41ea4c6abb49333f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605256"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532492"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用網域指定的語言修改標準功能表命令
 
@@ -28,9 +28,9 @@ ms.locfileid: "72605256"
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>找出您可以修改的命令
 
-1. 在 `DslPackage` 專案中，開啟 `GeneratedCode\CommandSet.cs`。 此C#檔案可在方案總管中找到 `CommandSet.tt` 的子公司。
+1. 在 `DslPackage` 專案中，開啟 `GeneratedCode\CommandSet.cs`。 您可以在方案總管中找到這個 c # 檔案做為的子公司 `CommandSet.tt` 。
 
-2. 在此檔案中尋找名稱結尾為 "`CommandSet`" 的類別，例如 `Language1CommandSet` 和 `Language1ClipboardCommandSet`。
+2. 在此檔案中尋找名稱結尾為 " `CommandSet` " 的類別，例如 `Language1CommandSet` 和 `Language1ClipboardCommandSet` 。
 
 3. 在每個命令集類別中，輸入 "`override`"，後面接著一個空格。 IntelliSense 會顯示您可以覆寫的方法清單。 每個命令都有名稱開頭為 "`ProcessOnStatus`" 和 "`ProcessOnMenu`" 的一組方法。
 
@@ -53,9 +53,9 @@ ms.locfileid: "72605256"
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. 在**DslPackage**中，建立名為**Custom Code**的資料夾。 在此資料夾中，建立名為 `CommandSet.cs` 的新類別檔案。
+2. 在**DslPackage**中，建立名為**Custom Code**的資料夾。 在此資料夾中，建立名為的新類別檔案 `CommandSet.cs` 。
 
-3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如:
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：
 
     ```csharp
     using System;
@@ -70,7 +70,7 @@ ms.locfileid: "72605256"
 
 ## <a name="override-the-command-methods"></a>覆寫命令方法
 
-大部分的命令有兩個相關聯的方法：名稱類似 `ProcessOnStatus` .。。決定是否應該顯示和啟用命令。 這個方法會在使用者以滑鼠右鍵按一下圖表時呼叫，應該會快速執行並且不進行任何變更。 `ProcessOnMenu` .。。會在使用者按一下命令時呼叫，而且應該執行命令的功能。 您可能想覆寫其中一個或兩個方法。
+大部分的命令都有兩個相關聯的方法：名稱 `ProcessOnStatus` 類似的方法 .。。決定是否應該顯示和啟用命令。 這個方法會在使用者以滑鼠右鍵按一下圖表時呼叫，應該會快速執行並且不進行任何變更。 `ProcessOnMenu`...會在使用者按一下命令時呼叫，而且應該執行命令的功能。 您可能想覆寫其中一個或兩個方法。
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>變更命令何時顯示在功能表上
 
@@ -129,26 +129,26 @@ protected override void ProcessOnMenuDeleteCommand()
 
 下列程式碼片段在這些方法中通常很有用：
 
-- `this.CurrentSelection` 使用者以滑鼠右鍵按一下的圖形，一律會包含在此圖形和連接線清單中。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。
+- `this.CurrentSelection`. 使用者以滑鼠右鍵按一下的圖形，一律會包含在此圖形和連接線清單中。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。
 
-- 如果使用者按一下圖表的空白部分，`this.IsDiagramSelected()`  -  `true`。
+- `this.IsDiagramSelected()` - `true`如果使用者按一下圖表的空白部分。
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - 使用者未選取多個圖形
+- `this.IsSingleSelection()`-使用者未選取多個圖形
 
-- `this.SingleSelection` - 使用者以滑鼠右鍵按一下的圖形或圖表
+- `this.SingleSelection`-使用者以滑鼠右鍵按一下的圖形或圖表
 
-- `shape.ModelElement as MyLanguageElement` - 以圖形表示的模型項目。
+- `shape.ModelElement as MyLanguageElement`-以圖形表示的模型元素。
 
 如需如何從元素導覽至專案，以及如何建立物件和連結的詳細資訊，請參閱[在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [如何：在捷徑功能表中新增命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
-- [VSPackage 如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [如何：在捷徑功能表中加入命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [VSPackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)
 - [VMSDK-電路圖表範例。廣泛的 DSL 自訂](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

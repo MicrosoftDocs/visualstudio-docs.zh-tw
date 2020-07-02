@@ -1,18 +1,18 @@
 ---
 title: 如何：在程式碼中開啟檔案的模型
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fae71f748f1f64480c046ae157e1fbca0dd0bec9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594613"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532479"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程式碼中開啟檔案的模型
 
@@ -20,7 +20,7 @@ ms.locfileid: "75594613"
 
 從 Visual Studio 延伸模組中，您可以使用 ModelBus 來實現此目的。 ModelBus 提供標準的機制來參考模型中的模型或專案，以及用於尋找模型（如果已移動）。 如需詳細資訊，請參閱[使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
 
-## <a name="target-framework"></a>目標 Framework
+## <a name="target-framework"></a>目標架構
 
 將應用程式專案的**目標 framework**設定為 .NET Framework 4 或更新版本。
 
@@ -33,15 +33,15 @@ ms.locfileid: "75594613"
 > [!NOTE]
 > 目標 framework 不應 **.NET Framework 4 用戶端設定檔**。
 
-## <a name="references"></a>參考
+## <a name="references"></a>參考資料
 
 將這些參考新增至您的 Visual Studio 應用程式專案：
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - 如果您在 [**加入參考**] 對話方塊的 [ **.net** ] 索引標籤底下沒有看到此選項，請按一下 [**流覽**] 索引標籤，然後流覽至 [`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`]。
+  - 如果您在 [**加入參考**] 對話方塊的 [ **.net** ] 索引標籤底下沒有看到此選項，請按一下 [**流覽**] 索引標籤，然後流覽至 `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` 。
 
-- 您的 DSL 元件會在您的 DSL 專案的 bin 資料夾底下找到。 其名稱的格式通常為： *YourCompany*。*Yourproject。* `.Dsl.dll`。
+- 您的 DSL 元件會在您的 DSL 專案的 bin 資料夾底下找到。 其名稱的格式通常為： *YourCompany*。*Yourproject。* `.Dsl.dll` 。
 
 ## <a name="important-classes-in-the-dsl"></a>DSL 中的重要類別
 
@@ -49,11 +49,11 @@ ms.locfileid: "75594613"
 
 這些是您應該識別的類別：
 
-- *YourDslRootClass* -這是您 `DslDefinition.dsl`中的根類別名稱。
+- *YourDslRootClass* -這是中的根類別名稱 `DslDefinition.dsl` 。
 
-- *YourDslName* `SerializationHelper`-此類別定義于 DSL 專案的 `SerializationHelper.cs` 中。
+- *YourDslName* `SerializationHelper`-這個類別是在 `SerializationHelper.cs` 您的 DSL 專案中定義。
 
-- *YourDslName* `DomainModel`-此類別定義于 DSL 專案的 `DomainModel.cs` 中。
+- *YourDslName* `DomainModel`-這個類別是在 `DomainModel.cs` 您的 DSL 專案中定義。
 
 ## <a name="read-from-a-file"></a>從檔案讀取
 

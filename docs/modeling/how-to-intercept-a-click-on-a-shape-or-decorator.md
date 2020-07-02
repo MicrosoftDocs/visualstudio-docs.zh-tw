@@ -1,7 +1,7 @@
 ---
 title: 如何：攔截圖案或 Decorator 上的點選
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: JoshuaPartlow
@@ -9,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4923a858d9d46c477f50df2a08440a10e9309ef
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 58d447526d83fec406b6fc20a08edcec37de89ae
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114517"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532518"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：攔截圖案或 Decorator 上的點選
 下列程式示範如何攔截圖形或圖示裝飾專案的按一下。 您可以攔截點擊、按兩下、拖曳和其他手勢，然後讓元素回應。
 
 ## <a name="to-intercept-clicks-on-shapes"></a>若要攔截形狀的點擊點
- 在 Dsl 專案中，在與產生的程式碼檔案不同的程式碼檔案中，撰寫 shape 類別的部分類別定義。 覆寫 `OnDoubleClick()` 或其中一個名稱開頭為 `On...`的其他方法。 例如：
+ 在 Dsl 專案中，在與產生的程式碼檔案不同的程式碼檔案中，撰寫 shape 類別的部分類別定義。 覆寫 `OnDoubleClick()` 或其中一個名稱開頭為的其他方法 `On...` 。 例如：
 
 ```csharp
 public partial class MyShape // change
@@ -34,7 +34,7 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
-> 除非您想要將事件傳遞至包含的圖形或圖表，否則請將 `e.Handled` 設定為 `true`。
+> `e.Handled` `true` 除非您想要將事件傳遞至包含的圖形或圖表，否則設定為。
 
 ## <a name="to-intercept-clicks-on-decorators"></a>在裝飾專案上攔截按一下
  影像裝飾專案會在 ImageField 類別的實例上攜帶，其具有 OnDoubleClick 方法。 如果您撰寫 ImageField 子類別，就可以攔截按一下。 這些欄位是在 InitializeShapeFields 方法中設定。 因此，您必須變更該方法，以具現化您的子類別，而不是一般 ImageField。 InitializeShapeFields 方法位於 shape 類別的產生程式碼中。 如果您設定其 `Generates Double Derived` 屬性（如下列程式所述），則可以覆寫 shape 類別。
@@ -47,7 +47,7 @@ public partial class MyShape // change
 
 2. 選擇或建立具有圖示裝飾專案的圖形，並將其對應至網域類別。
 
-3. 在與 [`GeneratedCode`] 資料夾中的檔案不同的程式碼檔案中，建立 ImageField 的新子類別：
+3. 在與資料夾中的檔案不同的程式碼檔案中 `GeneratedCode` ，建立 ImageField 的新子類別：
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -112,7 +112,7 @@ public partial class MyShape // change
     }
     ```
 
-1. 建置並執行方案。
+1. 建置並執行解決方案。
 
 2. 按兩下圖形實例上的圖示。 您的測試訊息應該會出現。
 
@@ -129,11 +129,11 @@ public partial class MyShape // change
 
 4. 調整此程式碼中的網域類別和圖形名稱，以符合您自己的 DSL。
 
-   總而言之，程式碼的運作方式如下。 在此範例中，`ClassShape` 是區間圖形的名稱。
+   總而言之，程式碼的運作方式如下。 在此範例中， `ClassShape` 是區間圖形的名稱。
 
 - 一組滑鼠事件處理常式會在建立時附加到每個區間實例。
 
-- `ClassShape.MouseDown` 事件會儲存目前的專案。
+- `ClassShape.MouseDown`事件會儲存目前的專案。
 
 - 當滑鼠移出目前的專案時，會建立 MouseAction 的實例，這會設定游標並捕捉滑鼠，直到釋放它為止。
 
@@ -393,7 +393,7 @@ namespace Company.CompartmentDrag
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)
 - [Decorator 的屬性](../modeling/properties-of-decorators.md)
