@@ -511,6 +511,8 @@
                   href: ca1802.md
                 - name: 'CA1804:必須移除未使用的區域變數'
                   href: ca1804.md
+                - name: CA1805：請勿進行非必要的初始化
+                  href: ca1805.md
                 - name: 'CA1806:不要忽略方法的結果'
                   href: ca1806.md
                 - name: 'CA1809:避免在方法中包含過多區域變數'
@@ -603,6 +605,8 @@
                   href: ca2014.md
                 - name: CA2015：請勿針對衍生自 MemoryManager<T> 的類型定義完成項
                   href: ca2015.md
+                - name: CA2016：將 CancellationToken 參數傳遞給使用該參數的方法
+                  href: ca2016.md
             - name: 安全性警告
               items:
                 - name: 總覽
