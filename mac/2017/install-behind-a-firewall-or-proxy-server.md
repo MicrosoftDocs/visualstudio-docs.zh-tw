@@ -1,25 +1,24 @@
 ---
 title: 在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio for Mac
 description: 本文件會提供必須在防火牆中允許之主機的清單，來讓 Visual Studio for Mac (及其工作負載，包括 Xamarin) 能在公司環境中運作。
-ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 10/23/2018
-ms.openlocfilehash: 738c5277ca6a669a834635f5c626e0cbabd7a7ef
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d488d56bdecd2801ecd94a2551c3be0f9834d0d7
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984935"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938680"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio for Mac
 
 如果您或組織使用防火牆或 Proxy 伺服器等安全性措施，將會有您應該新增至「允許清單」的網域，以及應該開啟的連接埠和通訊協定，以確保您能在安裝及使用 Visual Studio for Mac 及 Azure 服務時取得最佳體驗。
 
-- [**為 Mac 安裝 Visual Studio**](#install-visual-studio-for-mac)： 這些表包括必須允許連接的域，以便您能夠訪問 Mac Visual Studio 的所有功能和工作負載。
+- [**安裝 Visual Studio for Mac**](#install-visual-studio-for-mac)：這些資料表包含必須允許連線的網域，讓您可以存取 Visual Studio for Mac 的所有功能和工作負載。
 
-- [**對 Mac 使用 Visual Studio**](#use-visual-studio-for-mac)： 這些表包含必須允許連接以便您有權訪問相關功能的域。
+- [**使用 Visual Studio for Mac**](#use-visual-studio-for-mac)：這些資料表包含必須允許連線的網域，以便您可以存取相關的功能。
 
 ## <a name="install-visual-studio-for-mac"></a>安裝 Visual Studio for Mac
 

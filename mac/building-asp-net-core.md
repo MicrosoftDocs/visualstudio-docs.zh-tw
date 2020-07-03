@@ -5,12 +5,13 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 5600fd2f0b6d83a3bd27350a4d4f0137ea44ced2
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: b0337f283fe5bb78f2f63e2f3da12eb9f2679450
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75398293"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939201"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中建置 ASP.NET Core 應用程式
 
@@ -33,13 +34,13 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
 本實驗適用於熟悉 C# 的開發人員，但不需要深度經驗。
 
-## <a name="task-1-creating-a-new-aspnet-core-application"></a>任務 1：創建新ASP.NET核心應用程式
+## <a name="task-1-creating-a-new-aspnet-core-application"></a>工作1：建立新的 ASP.NET Core 應用程式
 
-1. **啟動 Mac 的視覺工作室**。
+1. 啟動**Visual Studio for Mac**。
 
 2. 選取 [檔案] > [新增方案]****。
 
-3. 選取 [.NET Core] > [應用程式]**** 類別，然後選取 [ASP.NET Core Web 應用程式 (C#)]**** 範本。 按 [下一步]****。
+3. 選取 [.NET Core] > [應用程式]**** 類別，然後選取 [ASP.NET Core Web 應用程式 (C#)]**** 範本。 按 [下一步] 。
 
     ![](media/netcore-image1.png)
 
@@ -47,7 +48,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image2.png)
 
-## <a name="task-2-touring-the-solution"></a>任務 2：巡視解決方案
+## <a name="task-2-touring-the-solution"></a>工作2：旅行解決方案
 
 1. 預設範本將會產生具有名為 **CoreLab** 的單一 ASP.NET Core 專案的方案。 展開專案節點，以公開其內容。
 
@@ -61,7 +62,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image5.png)
 
-4. 該專案還具有一個 **"視圖"** 資料夾，其中包含映射到每個控制器的其他資料夾（以及**共用檢視的**一個資料夾）。 例如，**/Home/About** 路徑的檢視 CSHTML 檔案 (副檔名為 HTML) 是在 **Views/Home/About.cshtml** 中。 開啟該檔案。
+4. 此專案也有**Views**資料夾，其中包含對應至每個控制器的其他資料夾（以及**共用**視圖的一個）。 例如，**/Home/About** 路徑的檢視 CSHTML 檔案 (副檔名為 HTML) 是在 **Views/Home/About.cshtml** 中。 開啟該檔案。
 
     ![](media/netcore-image6.png)
 
@@ -73,11 +74,11 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image8.png)
 
-7. 另外還有各種組態檔可用來在執行階段管理專案、其專案和應用程式。 例如，預設應用程式[組態](/aspnet/core/fundamentals/configuration)會儲存在 **appsettings.json** 中。 嵌套在應用設置.json 檔下方是**應用設置。開發.json**檔。 在這裡，您可以基於每個環境覆蓋其中的某些/所有這些設置。 Mac 的 Visual Studio 將使用與 Windows 視覺化工作室相同的邏輯以這種方式嵌套檔，以便您更頻繁地訪問需要訪問的檔處於最前沿。 
+7. 另外還有各種組態檔可用來在執行階段管理專案、其專案和應用程式。 例如，預設應用程式[組態](/aspnet/core/fundamentals/configuration)會儲存在 **appsettings.json** 中。 在檔案上的 appsettings.js底下，是檔案**上的appsettings.Development.js** 。 在這裡，您可以根據每個環境來覆寫部分/所有這些設定。 Visual Studio for Mac 會使用與 Windows Visual Studio 相同的邏輯來以這種方式來對應檔案，因此您需要經常存取的檔案位於 forefront。 
 
     ![](media/netcore-build-nested.png)
 
-## <a name="task-3-understanding-how-the-application-is-hosted"></a>任務 3：瞭解應用程式的託管方式
+## <a name="task-3-understanding-how-the-application-is-hosted"></a>工作3：瞭解如何託管應用程式
 
 1. 從 [方案總管]**** 中，開啟 **Program.cs**。 這是將會執行您應用程式的啟動載入器。
 
@@ -111,7 +112,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image17.png)
 
-## <a name="task-4-running-and-debugging-the-application"></a>任務 4：運行和調試應用程式
+## <a name="task-4-running-and-debugging-the-application"></a>工作4：執行和偵錯工具
 
 1. 在 [方案總管]**** 中，以滑鼠右鍵按一下 [CoreLab]**** 專案節點，然後選取 [選項]****。
 
@@ -121,11 +122,11 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
 3. 核取 [在外部主控台上執行]**** 並取消核取 [暫停主控台輸出]****。 自我裝載應用程式的主控台通常不會可見，而會改為將結果記錄到 [輸出]**** 索引頁。 基於本實驗室的目的，我們也會在個別的視窗中顯示它，不過您在一般的開發期間並不需要那麼做。
 
-4. 按一下 [確定]****。
+4. 按一下 [確定] 。
 
     ![](media/netcore-image19.png)
 
-5. 按**F5**生成並運行應用程式。 或者，您可以選取 [執行] > [開始偵錯]****。
+5. 按**F5**以建立並執行應用程式。 或者，您可以選取 [執行] > [開始偵錯]****。
 
 6. Visual Studio for Mac 將會啟動兩個視窗。 第一個是主控台視窗，其能提供針對自我裝載伺服器應用程式的檢視。
 
@@ -171,7 +172,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
 18. 關閉測試瀏覽器視窗和應用程式主控台。 這同時也會停止偵錯。
 
-## <a name="task-5-application-startup-configuration"></a>任務 5：應用程式啟動配置
+## <a name="task-5-application-startup-configuration"></a>工作5：應用程式啟動設定
 
 1. 從 [方案總管]**** 開啟 **Startup.cs**。 在系統於背景還原 NuGet 套件，且 Roslyn 編譯器正在編譯專案相依性的完整面貌時，您一開始可能會看見一些紅色波浪線。
 
@@ -197,7 +198,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image35.png)
 
-## <a name="task-6-inserting-application-middleware"></a>任務 6：插入應用程式中介軟體
+## <a name="task-6-inserting-application-middleware"></a>工作6：插入應用程式中介軟體
 
 1. 找出 **Startup** 類別中的 **Configure** 方法。 這是設定所有中介軟體以將其插入至 HTTP 管線，並用來處理針對伺服器之所有要求的位置。 雖然此方法只會被呼叫一次，每個要求都可能會執行方法的內容 (例如 **UseStaticFiles**)。
 

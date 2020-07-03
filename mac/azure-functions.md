@@ -6,26 +6,27 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: dac6a1c53cea8982a75c7b12661c98f2feb37f83
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 600c4a21b6c9db8a6adb14e8fc96092f1782339f
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73189668"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938649"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 簡介
 
 Azure 函式是一種不必明確佈建或管理基礎結構，就能在雲端建立和執行事件驅動程式碼片段 (函式) 的方法。 如需 Azure Functions 的詳細資訊，請參閱 [Azure Functions 文件](/azure/azure-functions/)。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 Azure 函式工具隨附於 **Visual Studio for Mac 7.5** 和更新版本。
 
-要創建和部署函數，還需要 Azure 訂閱。 如果您沒有 Azure 帳戶，您可以立即免費註冊，並獲得 12 個月的免費熱門服務、200 美元的免費積分和 25+ 始終免費的服務 -> [https://azure.com/free](https://azure.com/free/dotnet)。
+若要建立和部署函式，您也需要 Azure 訂用帳戶。 如果您沒有 Azure 帳戶，您可以立即免費註冊，並收到12個月免費的熱門服務、$200 的免費點數，以及25個以上永遠免費的服務-> [https://azure.com/free](https://azure.com/free/dotnet) 。
 
 ## <a name="creating-your-first-azure-functions-project"></a>建立您的第一個 Azure Functions 專案
 
-1. 在 Mac 的視覺化工作室中，選擇 **"檔>新解決方案**"。
+1. 在 Visual Studio for Mac 中，選取 [檔案 **> 新增方案**]。
 2. 從 [新增專案] 對話方塊，選取 [雲端] > [一般]**** 下的 Azure Functions 範本，然後按一下 [下一步]****：
 
     ![顯示 Azure 函式選項的 [新增專案] 對話方塊](media/azure-functions-image1.png)
@@ -90,20 +91,20 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
 
     [可用函數範本](#available-function-templates)一節提供 Azure 函數範本的清單。
 
-您可以使用上述程序，對函式應用程式專案新增更多函式。 專案中的每個函式都可以有不同的觸發程序，但函式必須只有一個觸發程序。 有關詳細資訊，請參閱[Azure 函數觸發器和綁定概念](/azure/azure-functions/functions-triggers-bindings)。
+您可以使用上述程序，對函式應用程式專案新增更多函式。 專案中的每個函式都可以有不同的觸發程序，但函式必須只有一個觸發程序。 如需詳細資訊，請參閱[Azure Functions 觸發程式和](/azure/azure-functions/functions-triggers-bindings)系結概念。
 
 ## <a name="publish-to-azure"></a>發佈至 Azure
 
-1. 按右鍵專案名稱並選擇 **"發佈到>發佈到 Azure：**![發佈到 Azure 功能表選項](media/azure-functions-image5.png)
+1. 以滑鼠右鍵按一下專案名稱，然後選取 [**發佈] > [發行至**azure]： [ ![ 發行至 azure] 功能表選項](media/azure-functions-image5.png)
 2. 如果您已將 Azure 帳戶連線至 Visual  Studio for Mac，則會顯示可用的應用程式服務清單。 如果您尚未登入，則系統會提示您這麼做。
 3. 從 [Publish to Azure App Service] \(發行至 Azure App Service\)**** 對話方塊中，您可以選取現有應用程式服務，或按一下 [新增]**** 來建立新的應用程式服務。
 4. 在 [建立新的 App Service]**** 對話方塊中，輸入您的設定：![[發行至 Azure] 功能表選項](media/azure-functions-image7.png)
 
-    |設定  |描述  |
+    |設定  |說明  |
     |---------|---------|
-    |**應用服務名稱**|識別新函數應用程式的全域唯一名稱。|
-    |**訂閱**|要使用的 Azure 訂用帳戶。|
-    |**[資源組](/azure/azure-resource-manager/resource-group-overview)**|要在其中建立函式應用程式的資源群組名稱。 選擇**+** 創建新資源組。|
+    |**App Service 名稱**|識別新函數應用程式的全域唯一名稱。|
+    |**訂用帳戶**|要使用的 Azure 訂用帳戶。|
+    |**[資源群組](/azure/azure-resource-manager/resource-group-overview)**|要在其中建立函式應用程式的資源群組名稱。 選擇 **+** 建立新的資源群組。|
     |**[服務方案](/azure/azure-functions/functions-scale)**|選擇現有方案，或建立自訂方案。 選擇區域中接近您或接近您函數所存取之其他服務的位置。|
 
 5. 按 [下一步]**** 來建立儲存體帳戶。 Functions 執行階段需要 Azure 儲存體帳戶。 按一下 [自訂]**** 來建立一般用途儲存體帳戶，或使用現有儲存體帳戶：
@@ -112,7 +113,7 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
 
 6. 按一下 [建立]**** 以在 Azure 中使用這些設定建立函式應用程式和相關資源，並且部署函式專案程式碼。
 
-7. 系統可能會在發行期間使用對話方塊提示您，通知您「更新 Azure 上的函數版本」。 按一下 **"是**"：
+7. 系統可能會在發行期間使用對話方塊提示您，通知您「更新 Azure 上的函數版本」。 按一下 **[是]**：
 
     ![[發行至 Azure] 功能表選項](media/azure-functions-image12.png)
 
@@ -120,7 +121,7 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
 
 您在 local.settings.json 中所新增的所有設定，也必須新增至 Azure 中的函式應用程式。 當您發行專案時，不會自動上傳這些設定。
 
-要訪問應用設置，請轉到 中的[https://ms.portal.azure.com/](https://ms.portal.azure.com/)Azure 門戶。 在 [函數應用程式]**** 下，選取 [函數應用程式]****，並反白顯示您的函數名稱：
+若要存取您的應用程式設定，請移至位於的 Azure 入口網站 [https://ms.portal.azure.com/](https://ms.portal.azure.com/) 。 在 [函數應用程式]**** 下，選取 [函數應用程式]****，並反白顯示您的函數名稱：
 
 ![Azure 函數功能表](media/azure-functions-image9.png)
 

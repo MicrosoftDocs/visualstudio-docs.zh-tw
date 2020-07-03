@@ -6,12 +6,13 @@ ms.author: jogallow
 ms.date: 12/17/2019
 ms.technology: vs-ide-general
 ms.assetid: D2717D3A-9225-40A8-8155-7D0143B2CA60
-ms.openlocfilehash: 978e3676d587bcd54a8e9d0b8b81f5d6c52a92bc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.topic: how-to
+ms.openlocfilehash: ac7fcd9044aa6367f140ac4aa96e6aaf4a9f5885
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180271"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939145"
 ---
 # <a name="create-blazor-web-apps"></a>建立 Blazor web 應用程式
 
@@ -38,7 +39,7 @@ ASP.NET Core Blazor 支援兩種不同的裝載選項;Blazor 伺服器和 Blazor
 1. 選取 [.NET Core 3.1] 做為 [目標 framework]，然後選取 **[下一步]**。 
    ![設定新的 Blazor 伺服器應用程式對話方塊，並以選取的目標 Framework 顯示到 .NET Core 3。1](media/blazor-select-target-framework.png)
 
-1. 選擇專案的 [名稱]，並視需要新增 Git 支援。 選取 [Create] \(建立\)**** 以建立專案。
+1. 選擇專案的 [名稱]，並視需要新增 Git 支援。 選取 [Create] \(建立\) 以建立專案。
    ![BConfigure 您在輸入專案名稱時顯示的新 Blazor 伺服器應用程式對話方塊](media/blazor-name-project.png)
 
    Visual Studio for Mac 會在 [程式碼配置] 視窗中開啟您的專案。
@@ -78,7 +79,7 @@ Visual Studio for Mac 包括編輯 razor 檔案的支援-您在建立 Blazor 應
 
 ### <a name="app-settings"></a>應用程式設定
 
-*AppSettings*包含設定資料，例如連接字串。
+檔案*上的appSettings.js*包含設定資料，例如連接字串。
 
 如需設定的詳細資訊，請參閱[ASP.NET 中](/aspnet/core/fundamentals/configuration/index)的設定指南。
 

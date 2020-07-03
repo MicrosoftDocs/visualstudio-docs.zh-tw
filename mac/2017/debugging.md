@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: f62ebe21dcc5eb60927c0bc14617051aba3363e8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 5db0cd7a9c1fc21f5b109a3c103a06a35d348755
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985022"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938791"
 ---
 # <a name="debugging-with-xamarin"></a>以 Xamarin 偵錯
 
@@ -37,7 +38,7 @@ Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程�
 
 ![在邊界設定中斷點](media/debugging-image0.png)
 
-您可以通過訪問**中斷點鍵盤**來查看代碼中設置的所有中斷點：
+您可以前往 [**中斷點] 面板**，以查看程式碼中已設定的所有中斷點：
 
 ![中斷點的清單](media/debugging-image0a.png)
 
@@ -80,9 +81,9 @@ Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程�
 下面是四個按鈕：
 
 * **播放** - 這會開始執行程式碼，直到下一個中斷點。
-* **單一步驟**- 這將執行下一行代碼。 如果下一行是函式呼叫，不進入函式會執行該函式，並在函式「之後」** 的下一行程式碼停止。
+* 不**進入-這**會執行下一行程式碼。 如果下一行是函式呼叫，不進入函式會執行該函式，並在函式「之後」** 的下一行程式碼停止。
 * **逐步執行** - 這也會執行下一行程式碼。 如果下一行是函式呼叫，逐步執行會停止在函式的第一行，讓您繼續一行一行地進行函式的偵錯。 如果下一行不是函式，它的行為與「不進入函式」相同。
-* **步出**- 這將返回到調用當前函數的行。
+* **跳出**-這會回到呼叫目前函式的行。
 
 ## <a name="debugging-monos-class-libraries"></a>Mono 類別庫偵錯
 

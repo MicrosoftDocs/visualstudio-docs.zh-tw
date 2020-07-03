@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: c3572edc46d4f69a338ba655b32254126a7fce9c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 987a337941ba2a180045e64c5ba26dfd54284bec
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67692848"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938378"
 ---
 # <a name="managing-app-resources"></a>管理應用程式資源
 
@@ -20,13 +21,13 @@ ms.locfileid: "67692848"
 
 Xamarin.Forms 程式碼可在多個平台上執行；每個平台都有屬於自己的檔案系統，且每個檔案系統都會決定讀取和寫入檔案的方式。 在 Xamarin.Forms 中，您可以透過在每個平台上使用原生檔案 API，或是將檔案新增為內嵌資源，來管理應用程式資源。
 
-* [使用圖像](https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/)
+* [使用影像](https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/)
 * [處理檔案]( https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/files/)
 
 ## <a name="xamarinios"></a>Xamarin.iOS
 
 * [使用資源](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_resources/)
-* [使用圖像](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/)
+* [使用影像](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/)
 * [使用檔案系統](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_the_file_system/)
 
 ## <a name="xamarinandroid"></a>Xamarin.Android
@@ -35,7 +36,7 @@ Xamarin.Forms 程式碼可在多個平台上執行；每個平台都有屬於自
 
 ## <a name="xamarinmac"></a>Xamarin.Mac
 
-* [使用圖像](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
+* [使用影像](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
 
 ## <a name="see-also"></a>另請參閱
 

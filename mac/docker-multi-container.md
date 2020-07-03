@@ -4,12 +4,13 @@ description: 了解如何在 Visual Studio for Mac 中管理多個容器並在�
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 06/17/2019
-ms.openlocfilehash: 487945399252ca3627d625e3572637b5b2af2916
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: tutorial
+ms.openlocfilehash: 03adc2385c202710425fbc8e6b12c832526b5f90
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983948"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938952"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>使用 Docker Compose 建立多容器應用程式
 
@@ -23,10 +24,10 @@ ms.locfileid: "74983948"
 ## <a name="create-an-aspnet-core-web-application-and-add-docker-support"></a>建立 ASP.NET Core Web 應用程式並新增 Docker 支援
 
 1. 藉由移至 [檔案] > [新增解決方案]**** 來建立新解決方案。
-1. 在 **.NET 核心>應用**下選擇 Web ![**應用程式**範本：創建新ASP.NET應用程式](media/docker-quickstart-1.png)
-1. 選取目標 Framework。 在此示例中，我們將使用 .NET Core 2.2：![設置目標框架](media/docker-quickstart-2.png)
+1. 在 [ **.Net Core > 應用**程式] 下選擇 [ **Web 應用程式**] 範本： ![ 建立新的 ASP.NET 應用程式](media/docker-quickstart-1.png)
+1. 選取目標 Framework。 在此範例中，我們將使用 .NET Core 2.2： ![ 設定目標 framework](media/docker-quickstart-2.png)
 1. 輸入專案詳細資料，例如，[專案名稱] \(此範例中為 _DockerDemoFrontEnd_\) 和 [解決方案名稱] \(_DockerDemo_\)。 所建立的專案包含建置和執行 ASP.NET Core 網站所需的所有基本項目。
-1. 在解決方案墊中，按右鍵 DockerDemoFrontEnd 專案，然後選擇"**添加>添加 Docker 支援**：![添加 Docker 支援](media/docker-quickstart-3.png)
+1. 在 Solution Pad 中，以滑鼠右鍵按一下 DockerDemoFrontEnd 專案，然後選取 [**新增 > 新增 Docker 支援**： ![ 新增 docker 支援]。](media/docker-quickstart-3.png)
 
 Visual Studio for Mac 會將稱為 **docker-compose** 的專案自動新增到解決方案，並將 **Dockerfile** 新增到您的現有專案。
 

@@ -6,12 +6,13 @@ ms.author: johmil
 ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: a81eb9bbae905599cc5d953f27ac3a8d06441f8b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.topic: overview
+ms.openlocfilehash: 09a761a8269fa40c3fab49a34b3e43a7f0ec63cd
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183975"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939077"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>使用 Visual Studio for Mac 進行調試
 
@@ -89,7 +90,7 @@ Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程�
 
 ## <a name="change-which-statement-is-executed-next"></a>變更下一個執行的語句
 
-當偵錯工具暫停時，邊界中的箭號會顯示接下來會執行哪一行程式碼。 您可以按一下箭頭並將其拖曳至不同的程式程式碼，以變更要執行的語句。 您也可以在程式程式碼上按一下滑鼠右鍵，然後從內容功能表中選取 **[設定下一個語句]** ，來達到相同的目的。
+當偵錯工具暫停時，邊界上的箭號會指出接下來所要執行的程式碼行。 您可以按一下該箭號，將其拖曳至不同的程式碼行來變更所要執行的陳述式。 您也可以在程式程式碼上按一下滑鼠右鍵，然後從內容功能表中選取 **[設定下一個語句]** ，來達到相同的目的。
 
 ![拖放箭號以設定下一個語句](media/debugger-drag-setnextstatement.gif)
 

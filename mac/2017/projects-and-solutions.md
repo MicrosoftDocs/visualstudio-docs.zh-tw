@@ -1,20 +1,21 @@
 ---
-title: 專案與解決方案
+title: 專案和方案
 description: 本文件概述 Visual Studio for Mac 中的專案和方案。
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: d0cf61c94161e6d6bef6cd580e5fb342a177c1c4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 9ef6ecdb5dce8d337aa74232a0bffa8a63f87ea8
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983517"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939036"
 ---
-# <a name="projects-and-solutions"></a>專案與解決方案
+# <a name="projects-and-solutions"></a>專案和方案
 
-Mac 的 Visual Studio 提供了一個 _解決方案墊_ ，用於顯示整個開放解決方案的樹狀檢視。 **Solution** Pad 可讓您輕鬆存取個別專案中包含的原始程式碼、資源、使用者介面和組件參考。 根據預設，Solution Pad 會一次開啟一個方案。 每個方案都可以包含許多專案，而且每個專案都可以包含多個項目。
+Visual Studio for Mac 提供 _Solution Pad_   來顯示整個開啟方案的樹狀檢視。 **Solution** Pad 可讓您輕鬆存取個別專案中包含的原始程式碼、資源、使用者介面和組件參考。 根據預設，Solution Pad 會一次開啟一個方案。 每個方案都可以包含許多專案，而且每個專案都可以包含多個項目。
 
 ## <a name="using-projects-and-solutions"></a>使用專案和方案
 

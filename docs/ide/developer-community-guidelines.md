@@ -1,5 +1,5 @@
 ---
-title: 開發人員社區指導方針
+title: 開發人員社群指導方針
 description: 說明使用 Visual Studio 開發人員社區的指導方針。
 ms.date: 6/30/2020
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b29cc0b6af8fed9ee64a92b2d43e29062b498a
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 5189278f8efe42e6e7916562e7ce4f5d6a964061
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85837739"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938259"
 ---
-# <a name="developer-community-guidelines"></a>開發人員社區指導方針
+# <a name="developer-community-guidelines"></a>開發人員社群指導方針
 
 開發人員小組會追蹤 Visual Studio 的問題和功能建議。
 
@@ -91,7 +91,7 @@ ms.locfileid: "85837739"
 
 若要保持對話的清晰和透明化，請將討論範圍限制為英文，並保留與問題相關的事項。 明智給其他人，並一律嘗試不致和 professional。
 
-如需詳細資訊，請參閱[Microsoft 社區程式碼](https://answers.microsoft.com/page/codeofconduct)管理辦法。
+如需詳細資訊，請參閱[Microsoft 社區程式碼](https://answers.microsoft.com/en-us/page/codeofconduct)管理辦法。
 
 對討論禮儀的任何違規，可能會導致移除批註，最後禁用使用者。
 
@@ -99,6 +99,6 @@ ms.locfileid: "85837739"
 
 批註和回復是公開可見的，但任何附加的檔案只會私下與 Microsoft 共用。 這種可見度很有用，因為它可讓整個社區查看其他使用者所找到的問題和解決方案。 如果您擔心資料或身分識別的隱私權，您可以選擇。 深入瞭解[開發人員社區資料隱私權](https://docs.microsoft.com/visualstudio/ide/developer-community-privacy)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>下一步
 
 前往[Visual Studio 的開發人員社區](https://developercommunity.visualstudio.com/)，以報告問題、建議功能，或流覽現有的票證。 盡情享受！

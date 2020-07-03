@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
-ms.openlocfilehash: 94bb56fba0b90f29c291bc2c4b95976810dd21c6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 14f1b08464f1bc0f9e1db8a4e7ddbad23a84573e
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67692951"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938487"
 ---
 # <a name="adding-and-removing-project-items"></a>新增和移除專案項目
 
@@ -24,7 +25,7 @@ ms.locfileid: "67692951"
 
 ## <a name="adding-existing-files"></a>新增現有檔案
 
-您可以通過按右鍵"專案"節點並選擇 **"添加>添加檔..."** 將現有檔添加到專案中。或者，要添加整個資料夾，請選擇"**添加>添加現有資料夾..."** 這將顯示檔瀏覽器，允許您在系統中搜索要添加的所需專案。
+以滑鼠右鍵按一下專案節點，然後選取 [**新增] > [加入**檔案]，即可將現有的檔案加入至專案。或者，若要新增整個資料夾，請選取 [**新增] > [加入現有資料夾**]。這會顯示 [檔案瀏覽器]，讓您在系統中搜尋要新增的必要專案。
 
 ## <a name="removing-items"></a>移除項目
 

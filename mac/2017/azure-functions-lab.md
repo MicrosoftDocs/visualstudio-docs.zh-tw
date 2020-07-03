@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 43720947d36fec1ee64c81a48f7bc3eb7466d034
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: tutorial
+ms.openlocfilehash: 144580b0ebe0eb3615c5cf55c1bee03ff2a614fa
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983342"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938968"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教學課程：開始使用 Azure Functions
 
@@ -24,18 +25,18 @@ ms.locfileid: "74983342"
 > * 與 Web 和 Azure 儲存體資源進行整合
 > * 協調涉及多個 Azure 函式的工作流程
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 - Visual Studio for Mac 7.5 或更高版本。
-- Azure 訂閱（可從 中[https://azure.com/free](https://azure.com/free)免費獲取）。
+- Azure 訂用帳戶（免費提供 [https://azure.com/free](https://azure.com/free) ）。
 
 ## <a name="exercise-1-creating-an-azure-functions-project"></a>練習 1：建立 Azure Functions 專案
 
-1. **啟動 Mac 的視覺工作室**。
+1. 啟動**Visual Studio for Mac**。
 
 2. 選取 [檔案] > [新增方案]****。
 
-3. 從 [雲端] > [一般]**** 類別，選取 [Azure Functions]**** 範本。 您將使用 C# 建立 .NET 類別庫來裝載 Azure 函式。 按 [下一步]****。
+3. 從 [雲端] > [一般]**** 類別，選取 [Azure Functions]**** 範本。 您將使用 C# 建立 .NET 類別庫來裝載 Azure 函式。 按 [下一步] 。
 
     ![選取 [Azure Functions] 範本](media/azure-functions-lab-image1.png)
 
@@ -54,7 +55,7 @@ ms.locfileid: "74983342"
 
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>練習 2：建立 Azure 儲存體帳戶
 
-1. 登錄到 Azure 帳戶。 [https://portal.azure.com](https://portal.azure.com)
+1. 在登入您的 Azure 帳戶 [https://portal.azure.com](https://portal.azure.com) 。
 
 1. 在畫面左側的 [我的最愛]**** 區段下，選取 [儲存體帳戶]****：
 
@@ -68,7 +69,7 @@ ms.locfileid: "74983342"
 
     ![新儲存體帳戶的詳細資料](media/azure-functions-lab-image6.png)
 
-1. 按一下 **[建立]**。 建立儲存體帳戶可能需要幾分鐘的時間。 成功建立之後，您會收到通知。
+1. 按一下 [建立]。 建立儲存體帳戶可能需要幾分鐘的時間。 成功建立之後，您會收到通知。
 
     ![部署成功通知](media/azure-functions-lab-image7.png)
 
@@ -126,7 +127,7 @@ ms.locfileid: "74983342"
 
     ![醒目提示 FunctionName 屬性的新 Run 方法](media/azure-functions-lab-image13.png)
 
-1. 接下來，將此方法標示為 **public static** 方法，此為必要。 您還會注意到傳回值是**int**。除非使用方法屬性另行指定，否則 Azure 函數的任何非 void 傳回值將作為文本返回給用戶端。 根據預設，它會以 **XML** 傳回，但可變更為 **JSON** (您將在稍後的實驗室中執行)。
+1. 接下來，將此方法標示為 **public static** 方法，此為必要。 您也會注意到傳回值為**int**。除非另有使用方法屬性來指定，否則 Azure 函式的任何非 void 傳回值都會以文字形式傳給用戶端。 根據預設，它會以 **XML** 傳回，但可變更為 **JSON** (您將在稍後的實驗室中執行)。
 
     ![醒目提示初始設定方法的新 Run 方法](media/azure-functions-lab-image14.png)
 
@@ -162,7 +163,7 @@ ms.locfileid: "74983342"
 
 1. 使用稍早用來新增中斷點的相同方法來移除中斷點 (按一下邊界或選取該行，然後按 **F9** 鍵)。
 
-1. 按**F5**繼續運行。
+1. 按**F5**繼續執行。
 
 1. 在瀏覽器中，會呈現方法的 XML 結果。 如預期般，硬式編碼的加法運算會產生可能的總和。 請注意，如果您在 Safari 中只看到 "3"，請移至 [Safari] > [Preferences] \(喜好設定\) > [Advanced] \(進階\)****，然後勾選 [Show Develop menu in menu bar] \(在功能表列中顯示開發功能表\)**** 核取方塊並重新載入頁面。
 
@@ -298,7 +299,7 @@ ms.locfileid: "74983342"
 
     ![HTTP 函式的 URL](media/azure-functions-lab-image31.png)
 
-1. 返回瀏覽器視窗並導航到**http://localhost:7071/api/Adder/3/5**。
+1. 返回瀏覽器視窗，並流覽至 **http://localhost:7071/api/Adder/3/5** 。
 
 1. 此時，方法再次有效，可從路徑提取參數並產生總和。
 
@@ -347,7 +348,7 @@ ms.locfileid: "74983342"
 
 1. 按 **F5** 鍵建置並執行專案。
 
-1. 在瀏覽器選項卡中，導航到**http://localhost:7071/api/Process/4/6**。 這會將另一則訊息放入佇列，最後會導致將另一個資料列新增至資料表。
+1. 在 [瀏覽器] 索引標籤中，流覽至 **http://localhost:7071/api/Process/4/6** 。 這會將另一則訊息放入佇列，最後會導致將另一個資料列新增至資料表。
 
 1. 返回**終端機**並留意 **4 + 6** 的連入要求。
 
@@ -380,11 +381,11 @@ ms.locfileid: "74983342"
 
 1. 按 **F5** 鍵建置並執行專案。
 
-1. 在瀏覽器選項卡中，刷新 中的**http://localhost:7071/api/Process/4/6**URL。 因為此記錄的資料表資料列存在，所以應該會立即傳回且不會發生錯誤。 由於沒有 HTTP 輸出，您可以在終端機中查看輸出。
+1. 在 [瀏覽器] 索引標籤中，重新整理位於的 URL **http://localhost:7071/api/Process/4/6** 。 因為此記錄的資料表資料列存在，所以應該會立即傳回且不會發生錯誤。 由於沒有 HTTP 輸出，您可以在終端機中查看輸出。
 
     ![終端機輸出顯示資料表資料列已存在](media/azure-functions-lab-image33.png)
 
-1. 更新 URL 以反映尚未測試的組合，例如**http://localhost:7071/api/Process/5/7**。 注意終端機中的訊息，其指出找不到資料表資料列 (符合預期)。
+1. 更新 URL 以反映尚未測試的組合，例如 **http://localhost:7071/api/Process/5/7** 。 注意終端機中的訊息，其指出找不到資料表資料列 (符合預期)。
 
     ![終端機輸出顯示新的處理序](media/azure-functions-lab-image34.png)
 

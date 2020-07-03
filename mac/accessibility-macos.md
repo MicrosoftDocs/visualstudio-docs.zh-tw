@@ -1,39 +1,40 @@
 ---
 title: 使用 macOS 協助工具選項
-description: 使用 macOS 協助工具選項和功能，如高對比、鍵盤導航和 VoiceOver
+description: 使用 macOS 協助工具選項和功能，例如高對比、鍵盤導覽和 VoiceOver
 author: alanjclark
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 598FC25A-6DA3-44BB-B128-AD979E9F86EA
-ms.openlocfilehash: 095a65ab27bdcac6521eb771dcca1936b87409cd
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: b74a150e21e29ddbee51d02be6dda91740a060f1
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985082"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938466"
 ---
-# <a name="accessibility-features-of-macos"></a>macOS 的協助工具
+# <a name="accessibility-features-of-macos"></a>MacOS 的協助工具功能
 
-macOS 是一個可訪問的作業系統，具有許多功能來説明具有不同能力的使用者。 這些功能包括高對比模式、鍵盤導航和 VoiceOver（macOS 螢幕閱讀器）。
+macOS 是可存取的作業系統，有許多功能可協助使用者進行不同的能力。 這些功能包括高對比模式、鍵盤導覽和 VoiceOver （macOS 螢幕閱讀程式）。
 
-## <a name="enable-accessibility-features"></a>啟用協助工具
+## <a name="enable-accessibility-features"></a>啟用協助工具功能
 
-在 Mac 的 Visual Studio 中，預設情況下將關閉對輔助技術的支援。 要啟用協助工具支援，
+在 Visual Studio for Mac 中，輔助技術的支援預設為關閉。 若要啟用協助工具支援：
 
-1. 轉到**視覺化工作室（功能表）** > **首選項** > **其他**，然後選擇 **"協助工具**"。
+1. 移至**Visual Studio （功能表）**  >  **喜好**設定 [  >  **其他**]，然後選取 [**協助工具**]。
 
-1. 選擇"**啟用協助工具**"核取方塊。
+1. 選取 [**啟用協助工具**] 核取方塊。
 
-   ![可訪問首選項螢幕截圖，並選擇了啟用協助工具](media/accessibility-preferences.png)
+   ![協助工具喜好設定的螢幕擷取畫面，其中已選取 [啟用協助工具]](media/accessibility-preferences.png)
 
-1. 選擇 **"重新開機視覺工作室**"，支援 Apple 的輔助技術。
+1. 選取 [**重新開機 Visual Studio** ] 以啟用 Apple 輔助技術的支援。
 
-## <a name="increase-the-contrast-in-macos"></a>增加 macOS 中的對比度
+## <a name="increase-the-contrast-in-macos"></a>增加 macOS 的對比
 
-適用于 Mac 的 Visual Studio 支援增加 macOS 中的對比度，增加 UI 元素的對比度，並使輪廓更加清晰。 要啟用此功能：：
+Visual Studio for Mac 支援增加 macOS 的對比、增加 UI 元素的對比，以及讓大綱更明確。 若要啟用此動作：
 
-1. 打開**系統首選項**。
+1. 開啟 [**系統偏好**設定]。
 
-1. 轉到**協助工具**，然後選擇 **"顯示**"。
+1. 移至 [**協助工具**]，然後選取 [**顯示**]。
 
-1. 選擇"**增加對比度"** 核取方塊。
+1. 選取 [**增加對比**] 核取方塊。
