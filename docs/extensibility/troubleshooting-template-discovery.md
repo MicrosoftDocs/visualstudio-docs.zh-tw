@@ -1,75 +1,75 @@
 ---
-title: 在可視化工作室中排除範本發現 |微軟文件
+title: 針對 Visual Studio 中的範本探索進行疑難排解 |Microsoft Docs
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 078d06c797c3b228c1ea5b1d836dceb0394b3174
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: c5225c741206e6a43ff024a5f184404f1ac2bc63
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80698926"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904491"
 ---
-# <a name="troubleshooting-template-installation"></a>容錯排除樣本安裝
+# <a name="troubleshooting-template-installation"></a>疑難排解範本安裝
 
-如果在部署專案或專案範本時遇到問題,可以啟用診斷日誌記錄。
+如果您在部署專案或專案範本時遇到問題，您可以啟用診斷記錄。
 
 ::: moniker range="vs-2017"
 
-1. 在*公用 7_IDE_公用擴展資料夾中*為安裝創建 pkgdef 檔案。 例如 *,C:_程式檔 (x86)\微軟可視化工作室\2017_企業_通用7_IDE_通用擴展\啟用PkgDef_pkgdef*。
+1. 在*Common7\IDE\CommonExtensions*資料夾中建立 .pkgdef 檔案，以供安裝之用。 例如， *C:\Program Files （x86） \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 在*公用 7_IDE_公用擴展資料夾中*為安裝創建 pkgdef 檔案。 例如 *,C:_程式檔 (x86)\微軟可視化工作室\2019_企業_通用7_IDE_通用擴展\啟用PkgDef_pkgdef*。
+1. 在*Common7\IDE\CommonExtensions*資料夾中建立 .pkgdef 檔案，以供安裝之用。 例如， *C:\Program Files （x86） \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*。
 
 ::: moniker-end
 
-2. 將以下內容加入到 pkgdef 檔案:
+2. 將下列內容新增至 .pkgdef 檔案：
 
     ```
     [$RootKey$\VsTemplate]
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-3. 打開安裝並運行`devenv /updateConfiguration`的[開發人員命令提示。](/dotnet/framework/tools/developer-command-prompt-for-vs)
+3. 開啟安裝的[開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)，然後執行 `devenv /updateConfiguration` 。
 
 ::: moniker range="vs-2017"
 
-4. 打開可視化工作室並啟動"新專案"和"新專案"對話框,以初始化兩個範本樹。
+4. 開啟 Visual Studio 並啟動 [新增專案] 和 [新增專案] 對話方塊，以初始化兩個範本樹狀結構。
 
-   樣本紀錄現在以 **%LOCALAPPDATA%*Microsoft_VisualStudio_15.0_[實例id]\VsTemplate診斷清單.csv(** 實例id對應於可視化工作室實例的安裝 ID) 中顯示。 每個範本樹初始化都會將條目追加到此日誌。
+   範本記錄現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_ [instanceid] \VsTemplateDiagnosticsList.csv** （instanceid 對應至 Visual Studio 實例的安裝識別碼）。 每個範本樹狀結構初始化都會將專案附加到此記錄檔。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. 打開視覺化工作室並啟動 **「創建新專案和****新專案」** 對話方塊,以初始化兩個樣本樹。
+4. 開啟 Visual Studio 並啟動 [**建立新專案**] 和 [**新增專案**] 對話方塊，以初始化兩個範本樹狀結構。
 
-   樣本紀錄現在以 **%LOCALAPPDATA%*Microsoft_VisualStudio_16.0_[實例id]\VsTemplate診斷清單.csv(** 實例id對應於可視化工作室實例的安裝 ID) 中顯示。 每個範本樹初始化都會將條目追加到此日誌。
+   範本記錄現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_ [instanceid] \VsTemplateDiagnosticsList.csv** （instanceid 對應至 Visual Studio 實例的安裝識別碼）。 每個範本樹狀結構初始化都會將專案附加到此記錄檔。
 
 ::: moniker-end
 
-紀錄檔包含以下欄位:
+記錄檔包含下列資料行：
 
-- **FullPathtoTemplate**, 具有以下值:
+- **FullPathToTemplate**，其具有下列值：
 
-  - 1 表示基於清單的部署
+  - 1用於以資訊清單為基礎的部署
 
-  - 0 表示基於磁碟的部署
+  - 0用於以磁片為基礎的部署
 
-- **樣本檔案名稱**
+- **TemplateFileName**
 
-- 其他樣本屬性
+- 其他範本屬性
 
 > [!NOTE]
-> 要關閉紀錄記錄,請刪除 pkgdef 檔,或將的值`EnableTemplateDiscoveryLog`更改為`dword:00000000`,然後再次`devenv /updateConfiguration`執行。
+> 若要停用記錄，請移除 .pkgdef 檔案，或將的值變更 `EnableTemplateDiscoveryLog` 為 `dword:00000000` ，然後 `devenv /updateConfiguration` 再次執行。
 
 ## <a name="see-also"></a>另請參閱
 
-- [建立自訂項目與專案樣本](creating-custom-project-and-item-templates.md)
+- [建立自訂專案和專案範本](creating-custom-project-and-item-templates.md)

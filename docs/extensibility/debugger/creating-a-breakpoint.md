@@ -1,7 +1,7 @@
 ---
-title: 建立中斷點 :微軟文件
+title: 建立中斷點 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - breakpoints, creating
 - debugging [Debugging SDK], creating breakpoints
@@ -11,18 +11,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d252f1310c3e251c44525cd94c4d9a2943d8171d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 3f89b99f15374ef7e0bbc6964ee1ff521eeb469f
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739051"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903617"
 ---
-# <a name="create-a-breakpoint"></a>建立斷點
-下面描述了創建斷點的過程。
+# <a name="create-a-breakpoint"></a>建立中斷點
+以下說明建立中斷點的程式。
 
-## <a name="methods-in-breakpoint-creation"></a>斷點建立中的方法
- 載入繫結斷點所需的模組時,工作階段除錯管理員 (SDM) 呼叫以下方法:
+## <a name="methods-in-breakpoint-creation"></a>中斷點建立中的方法
+ 載入系結中斷點所需的模組時，會話 debug manager （SDM）會呼叫下列方法：
 
 1. [IDebugPendingBreakpoint2::Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)
 
@@ -31,11 +31,11 @@ ms.locfileid: "80739051"
 3. [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
 
     > [!NOTE]
-    > 僅當使用者從**斷點**視窗創建斷點時,才調用**CanBind。**
+    > 只有在使用者從 [**中斷點**] 視窗建立中斷點時，才會呼叫**CanBind** 。
 
 4. [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 
 5. [IDebugPendingBreakpoint2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)
 
 ## <a name="see-also"></a>另請參閱
-- [呼叫除錯器事件](../../extensibility/debugger/calling-debugger-events.md)
+- [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)

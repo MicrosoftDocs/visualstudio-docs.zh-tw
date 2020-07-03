@@ -1,7 +1,7 @@
 ---
-title: 加入選單加入子選單 |微軟文件
+title: 將子功能表加入至功能表 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - context menus
 - submenus, cascading
@@ -13,28 +13,28 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59c9364d03aab135f7c9b4bf91df21b949e78ee4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: cb143a611b1fb1f4278d28fdf9423a1f6613a68d
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740277"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904182"
 ---
-# <a name="add-a-submenu-to-a-menu"></a>加入選單加入子選單
-本演練基於在[「向可視化工作室功能表欄添加功能表](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)」中的演示為基礎,演示如何向**TestMenu 功能表**添加子功能表。
+# <a name="add-a-submenu-to-a-menu"></a>將子功能表新增至功能表
+本逐步解說是以示範如何在 [ **TestMenu** ] 功能表中新增子功能表的方式，建立在 [ [Visual Studio] 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)中的示範。
 
- 子功能表是另一個功能表中顯示的輔助功能表。 子功能表可以通過其名稱後面的箭頭進行標識。 單擊名稱會導致子功能表及其命令顯示。
+ 子功能表是出現在另一個功能表中的次要功能表。 子功能表可以透過其名稱後面的箭號來識別。 按一下名稱會顯示子功能表和其命令。
 
- 本演練在 Visual Studio 功能表欄的功能表中創建一個子功能表,並在子選單上放置一個新命令。 演練還實現了新命令。
+ 此逐步解說會在 [Visual Studio] 功能表列上的功能表中建立子功能表，並在子功能表上放入新的命令。 本逐步解說也會實行新的命令。
 
-## <a name="prerequisites"></a>Prerequisites
- 從 Visual Studio 2015 開始,您不會從下載中心安裝 Visual Studio SDK。 它作為可選功能包含在可視化工作室設置中。 以後還可以安裝 VS SDK。 有關詳細資訊,請參閱[安裝可視化工作室 SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+## <a name="prerequisites"></a>必要條件
+ 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
-## <a name="add-a-submenu-to-a-menu"></a>加入選單加入子選單
+## <a name="add-a-submenu-to-a-menu"></a>將子功能表新增至功能表
 
-1. 按照向[可視化工作室功能表欄添加功能表](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)中的步驟創建專案和功能表項。 這個演練中的步驟假定 VSIX 項目的`TopLevelMenu`名稱為 。
+1. 依照[將功能表加入至 [Visual Studio] 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)中的步驟來建立專案和功能表項目。 本逐步解說中的步驟假設 VSIX 專案的名稱為 `TopLevelMenu` 。
 
-2. 開啟*測試指令套件.vsct*. 在本節`<Symbols>`中,為`<IDSymbol>`子 功能表添加一個元素,為子菜單組添加一個元素,為命令添加一個`<GuidSymbol>`元素, 所有這些元素都在名為"guidTopLevelMenuCmdSet"的節點中。 這是包含頂級功能表`<IDSymbol>`元素的同一節點。
+2. 開啟*TestCommandPackage. .vsct*。 在 `<Symbols>` 區段中，新增 `<IDSymbol>` 子功能表的元素，一個用於子功能表群組，另一個用於命令，全都在 `<GuidSymbol>` 名為 "guidTopLevelMenuCmdSet" 的節點中。 這是包含 `<IDSymbol>` 最上層功能表元素的相同節點。
 
     ```xml
     <IDSymbol name="SubMenu" value="0x1100"/>
@@ -42,7 +42,7 @@ ms.locfileid: "80740277"
     <IDSymbol name="cmdidTestSubCommand" value="0x0105"/>
     ```
 
-3. 新增建立的子選單加入到節中`<Menus>`。
+3. 將新建立的子功能表加入至 `<Menus>` 區段。
 
     ```xml
     <Menu guid="guidTestCommandPackageCmdSet" id="SubMenu" priority="0x0100" type="Menu">
@@ -54,9 +54,9 @@ ms.locfileid: "80740277"
     </Menu>
     ```
 
-     父組的 GUID/ID 對指定在[「向可視化工作室功能表欄添加功能表](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)」中生成的功能表組,並且是頂級功能表的子級。
+     父系的 GUID/識別碼組會指定在[[將功能表加入至 Visual Studio] 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)中所產生的功能表群組，而且是最上層功能表的子系。
 
-4. 將步驟 2 中定義的功能表組`<Groups>`添加到 分區,使其成為子菜單的子功能表的子功能表。
+4. 將步驟2中定義的功能表群組新增至 `<Groups>` 區段，並將它設為子功能表的子系。
 
     ```xml
     <Group guid="guidTestCommandPackageCmdSet" id="SubMenuGroup" priority="0x0000">
@@ -64,7 +64,7 @@ ms.locfileid: "80740277"
     </Group>
     ```
 
-5. 向`<Buttons>`節添加`<Button>`新 元素,將步驟 2 中創建的命令定義為子功能表上的項。
+5. 將新專案新增 `<Button>` 至 `<Buttons>` 區段，以定義在步驟2中建立的命令做為子功能表上的專案。
 
     ```xml
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidTestSubCommand" priority="0x0000" type="Button">
@@ -79,17 +79,17 @@ ms.locfileid: "80740277"
 
 6. 建置方案並開始偵錯。 您應該會看到實驗實例。
 
-7. 點選 **「測試選單**」 以檢視名為 **「子選單」 的新子選單**。 按下 **「子功能表**」打開子功能表並查看新命令 **「測試子命令**」。 請注意,按一下 **「測試子命令**」不執行任何操作。
+7. 按一下 [ **TestMenu** ] 以查看名為 [**子功能表**] 的新子功能表。 按一下**子功能表**以開啟子功能表，並查看新的命令 [ **Test Sub] 命令**。 請注意，按一下 [**測試子命令**] 並不會執行任何操作。
 
 ## <a name="add-a-command"></a>新增命令
 
-1. 開啟*TestCommand.cs,* 並在現有命令 ID 之後新增以下命令 ID。
+1. 開啟*TestCommand.cs* ，並在現有的命令識別碼之後新增下列命令識別碼。
 
     ```csharp
     public const int cmdidTestSubCmd = 0x0105;
     ```
 
-2. 添加子命令。 查找命令構造函數。 在調用`AddCommand`方法后添加以下行。
+2. 新增子命令。 尋找命令的 [函式]。 在方法的呼叫之後新增下列幾行 `AddCommand` 。
 
     ```csharp
     CommandID subCommandID = new CommandID(CommandSet, cmdidTestSubCmd);
@@ -97,7 +97,7 @@ ms.locfileid: "80740277"
     commandService.AddCommand(subItem);
     ```
 
-    稍後將`SubItemCallback`定義命令處理程式。 建構函數現在應如下所示:
+    `SubItemCallback`稍後將會定義命令處理常式。 此函數現在看起來應該像這樣：
 
     ```csharp
     private TestCommand(Package package)
@@ -123,7 +123,7 @@ ms.locfileid: "80740277"
     }
     ```
 
-3. 加入 `SubItemCallback()`。 這是單擊子功能表中的新命令時調用的方法。
+3. 加入 `SubItemCallback()`。 這是當按一下子功能表中的新命令時，所呼叫的方法。
 
     ```csharp
     private void SubItemCallback(object sender, EventArgs e)
@@ -148,11 +148,11 @@ ms.locfileid: "80740277"
     }
     ```
 
-4. 建置此專案並開始偵錯。 應出現實驗實例。
+4. 建置此專案並開始偵錯。 應該會出現實驗實例。
 
-5. 在**測試選單「 功能表」,** 按下 **「子選單**」,然後單擊 **「測試子命令**」。 應顯示一個消息框並顯示文本「測試命令內部測試命令.子項目回調()」。
+5. 在 [ **TestMenu** ] 功能表上，按一下 [**子功能表**]，然後按一下 [**測試子命令**]。 應該會出現訊息方塊，並在 TestCommand 中顯示文字 "Test Command SubItemCallback （）"。
 
 ## <a name="see-also"></a>另請參閱
 
-- [向視覺工作室選單欄新增選單](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
-- [命令、選單和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+- [將功能表新增至 [Visual Studio] 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
+- [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

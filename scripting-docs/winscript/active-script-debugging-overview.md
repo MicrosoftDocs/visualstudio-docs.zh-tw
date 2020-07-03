@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Active Script Debugging overview
 ms.assetid: ce4ec768-d017-4dfa-a7e3-cced3a29e679
@@ -13,20 +13,20 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0181ee305c99a1d0af1d3e1e965c6ac8fe16f375
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572279"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835663"
 ---
 # <a name="active-script-debugging-overview"></a>動態指令碼偵錯概觀
 動態指令碼偵錯介面允許進行非語言相關、非主機相關偵錯，並支援各種開發環境。  
   
- ![腳本主機進程](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
+ ![Script Host 程序](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 圖 1  
   
- 非語言相關偵錯環境可以支援任何程式設計語言或混合使用程式設計語言，而不需要具有對其中任何語言的特定知識。 偵錯環境也支援跨語言逐步執行和中斷點 (本概觀主要著重於支援指令碼語言，例如 VBScript 和 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)])。  
+ 非語言相關偵錯環境可以支援任何程式設計語言或混合使用程式設計語言，而不需要具有對其中任何語言的特定知識。 偵錯環境也支援跨語言逐步執行和中斷點  (本概觀主要著重於支援指令碼語言，例如 VBScript 和 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)])。  
   
  非主機相關偵錯工具可以自動與任何動態指令碼主機 (例如 Internet Explorer 或自訂主機) 搭配使用。 主機會控制偵錯工具向使用者顯示的內容，其中包含文件樹狀結構的結構、內容，以及偵錯文件的語法著色。 這可讓已偵錯的原始程式碼顯示在主機文件的內容中。 例如，Internet Explorer 可以在 HTML 頁面中顯示指令碼。  
   
@@ -43,10 +43,10 @@ ms.locfileid: "72572279"
   
  **機器偵錯管理員** 一個元件，用來維護可偵錯應用程式處理序的登錄。  
   
- **處理序偵錯管理員**  
+ **進程偵錯工具管理員**  
  一個元件，維護特定應用程式的可偵錯文件樹狀結構、追蹤執行中執行緒等等。  
   
- **文件內容**  
+ **檔內容**  
  文件內容是代表主機文件原始程式碼中特定範圍的抽象概念。  
   
  **程式碼內容**  
@@ -291,5 +291,5 @@ ms.locfileid: "72572279"
   [ISimpleConnectionPoint 介面](../winscript/reference/isimpleconnectionpoint-interface.md)  
   針對指令碼引擎，提供一種簡單的方式來描述和列舉在特定連接點引發的事件。  
   
-## <a name="see-also"></a>請參閱  
- [動態指令碼偵錯工具介面](../winscript/reference/active-script-debugger-interfaces.md)
+## <a name="see-also"></a>另請參閱  
+ [動態指令碼偵錯工具的介面](../winscript/reference/active-script-debugger-interfaces.md)

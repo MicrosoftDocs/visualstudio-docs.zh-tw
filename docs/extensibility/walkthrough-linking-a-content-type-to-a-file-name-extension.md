@@ -1,7 +1,7 @@
 ---
-title: 演練:將內容類型連結到檔案名副檔名 |微軟文件
+title: 逐步解說：將內容類型連結至副檔名 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
@@ -10,24 +10,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 328be013b5d522938cd7450fc53d4866c632abb3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: b4e5ba3cd82090b5fad76d48c4600e0814bd91eb
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697072"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904682"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>演練:將內容類型連結到檔案名副檔名
-您可以使用編輯器託管擴展框架 (MEF) 延伸名定義自己的內容類型並將檔案名擴展名連結到該副檔名。 在某些情況下,檔名擴展名已由語言服務定義。 但是,要將其與 MEF 一起使用,您仍必須將其連結到內容類型。
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>逐步解說：將內容類型連結至副檔名
+您可以定義自己的內容類型，並使用編輯器 Managed Extensibility Framework （MEF）延伸模組來連結副檔名。 在某些情況下，語言服務已經定義了副檔名。 但是，若要將它與 MEF 搭配使用，您仍然必須將它連結至內容類型。
 
-## <a name="prerequisites"></a>Prerequisites
- 從 Visual Studio 2015 開始,您不會從下載中心安裝 Visual Studio SDK。 它作為可選功能包含在可視化工作室設置中。 以後還可以安裝 VS SDK。 有關詳細資訊,請參閱[安裝可視化工作室 SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+## <a name="prerequisites"></a>必要條件
+ 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-mef-project"></a>建立 MEF 專案
 
-1. 創建 C# VSIX 專案。 ( 在 **'新增項目'** 對話框中,選擇**視覺化 C# / 可擴充性**,然後選擇**VSIX 專案**。命名解決方案`ContentTypeTest`。
+1. 建立 c # VSIX 專案。 （在 [**新增專案**] 對話方塊中，選取 [ **Visual c #/** 擴充性]、[ **VSIX 專案**]）。將方案命名為 `ContentTypeTest` 。
 
-2. 在**source.延伸.vsixmanifest 檔案中**,轉到 **「資產**」選項卡,並將 **「類型」** 欄位設定為**Microsoft.VisualStudio.Mef 元件**,**將「源**」欄位設定為**目前解決方案中的專案**,並將**專案**欄位設定為專案名稱。
+2. 在**extension.vsixmanifest**檔案中，移至 [**資產**] 索引標籤，然後將 [**類型**] 欄位設定為 [ **[microsoft.visualstudio.mefcomponent]**]，將 [**來源**] 欄位設為 [**目前方案中的專案**]，並將 [**專案**] 欄位設定為專案的名稱。
 
 ## <a name="define-the-content-type"></a>定義內容類型
 
@@ -37,11 +37,11 @@ ms.locfileid: "80697072"
 
     1. System.ComponentModel.Composition
 
-    2. 微軟.VisualStudio.文本.邏輯
+    2. VisualStudio。邏輯
 
-    3. 微軟.VisualStudio.核心實用程式
+    3. VisualStudio. CoreUtility
 
-3. 添加以下`using`指令。
+3. 新增下列指示詞 `using` 。
 
     ```csharp
     using System.ComponentModel.Composition;
@@ -50,14 +50,14 @@ ms.locfileid: "80697072"
 
     ```
 
-4. 聲明包含定義的靜態類。
+4. 宣告包含定義的靜態類別。
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
     {. . .}
     ```
 
-5. 在此類中,匯出名為<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>「隱藏」並將其基本定義聲明為"文本"。
+5. 在此類別中，匯出 <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> 名為 "hid" 的，並將其基底定義宣告為 "text"。
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -69,9 +69,9 @@ ms.locfileid: "80697072"
     }
     ```
 
-## <a name="link-a-file-name-extension-to-a-content-type"></a>將檔案名副檔名連結到內容類型
+## <a name="link-a-file-name-extension-to-a-content-type"></a>將副檔名連結至內容類型
 
-- 要將此內容類型映射到檔案名副檔名,匯出<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>具有 副檔名 *.hid*和內容類型"hid" 的 。
+- 若要將此內容類型對應到副檔名，請匯出 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 副檔名為*hid*且內容類型為 "hid" 的。
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -88,13 +88,13 @@ ms.locfileid: "80697072"
     }
     ```
 
-## <a name="add-the-content-type-to-an-editor-export"></a>將內容型別加入編輯器匯出
+## <a name="add-the-content-type-to-an-editor-export"></a>將內容類型新增至編輯器匯出
 
-1. 建立編輯器擴展。 例如,您可以使用演練中描述的邊距字形擴展[:建立邊距字形](../extensibility/walkthrough-creating-a-margin-glyph.md)。
+1. 建立編輯器延伸模組。 例如，您可以使用[逐步解說：建立邊界](../extensibility/walkthrough-creating-a-margin-glyph.md)字元中所述的邊界字型延伸模組。
 
-2. 添加在此過程中定義的類。
+2. 新增您在此程式中定義的類別。
 
-3. 匯出擴充類時,向其添加<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>類型 為"隱藏"。
+3. 當您匯出擴充類別時，請將 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 類型為 "hid" 的加入其中。
 
     ```csharp
     [Export]
@@ -102,4 +102,4 @@ ms.locfileid: "80697072"
     ```
 
 ## <a name="see-also"></a>另請參閱
-- [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)
+- [語言服務和編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

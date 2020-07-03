@@ -5,18 +5,18 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 4c750627-6797-4857-9f5e-e5f54371f83c
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 141f3f0e60e797a4104c3e276775631f6e9196c5
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840027"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835403"
 ---
 # <a name="windows-script-interfaces"></a>Windows 指令碼的介面
 
@@ -36,7 +36,7 @@ Windows 指令碼文件分成下列各節：
 
 ## <a name="windows-script-background"></a>Windows 指令碼背景
 
-Windows 指令碼的介面分為兩類：Windows 指令碼主機與 Windows 指令碼引擎。 主機會建立指令碼引擎，並呼叫引擎來執行指令碼。 Windows 指令碼主機的範例包含：
+Windows 指令碼介面分成兩個類別：Windows 指令碼主機和 Windows 指令碼引擎。 主機會建立指令碼引擎，並呼叫引擎來執行指令碼。 Windows 指令碼主機的範例包含：
 
 - Microsoft Internet Explorer
 
@@ -64,7 +64,7 @@ Windows 指令碼設計可隔離只有製作環境才需要的介面項目；因
 
 1. 建立專案。 主機會載入專案或文件  (此步驟不是 Windows 指令碼特有的，但基於完整性而包含)。
 
-2. 建立 Windows 指令碼引擎。 主機會呼叫 `CoCreateInstance` 來建立新的 Windows 指令碼引擎，並指定要使用之特定指令碼引擎的類別識別碼 (CLSID)。 例如，Internet Explorer 的 HTML 瀏覽器可透過 HTML \<OBJECT> 標記的 CLSID= 屬性，收到指令碼引擎類別識別碼。
+2. 建立 Windows 指令碼引擎。 主機會呼叫 `CoCreateInstance` 來建立新的 Windows 指令碼引擎，並指定要使用之特定指令碼引擎的類別識別碼 (CLSID)。 例如，Internet Explorer 的 HTML 瀏覽器會透過 HTML 標籤的 CLSID = 屬性來接收腳本引擎的類別識別碼 \<OBJECT> 。
 
 3. 載入指令碼。 如果已持續保存指令碼內容，則主機會呼叫指令碼引擎的 `IPersist*::Load` 方法，以在其中餵入指令碼儲存體、資料流或屬性包。 否則，主機會使用 `IPersist*::InitNew` 或 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) 方法來建立 Null 指令碼。 將指令碼維護為文字的主機，可以使用 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)，以在呼叫 `IActiveScriptParse::InitNew` 之後，將指令碼的文字饋送至指令碼引擎。
 

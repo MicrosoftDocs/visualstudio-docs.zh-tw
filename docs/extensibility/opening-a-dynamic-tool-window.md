@@ -1,7 +1,7 @@
 ---
-title: 開啟動態工具視窗 |微軟文件
+title: 開啟動態工具視窗 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
@@ -10,31 +10,31 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff971f980b0a9b2fb0e22f56fb0ace752829c2c3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 9a06cea6d9de4271572457dc9fe6473b5c969b66
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702266"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903706"
 ---
 # <a name="open-a-dynamic-tool-window"></a>開啟動態工具視窗
-工具視窗通常從功能表上的命令或等效的鍵盤快捷鍵打開。 但是,有時您可能需要一個工具視窗,該視窗在應用特定 UI 上下文時打開,並在 UI 上下文不再應用時關閉。 這些型態的工具視窗是*動態*或*自動可見*。
+工具視窗通常是從功能表上的命令或對等的鍵盤快速鍵開啟。 不過，有時候您可能需要一個在特定 UI 內容套用時開啟的工具視窗，當 UI 內容不再適用時，就會關閉。 這些類型的工具視窗稱為「*動態*」或「*自動顯示*」。
 
 > [!NOTE]
-> 有關預先定義的 UI 中選文的清單<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>,請參閱 。
+> 如需預先定義的 UI 內容清單，請參閱 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> 。
 
- 如果要在啟動時打開動態工具視窗,並且創建可能失敗,則必須實現<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx>介面並測試方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx.QueryShowTool%2A>中的 失敗條件。 為了使 shell 知道在啟動時應打開的動態工具視窗,`SupportsDynamicToolOwner`必須將值(設置為 1)添加到包註冊中。 此值不是標準的<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>一部分,因此必須創建自定義屬性來添加它。 有關自訂屬性的詳細資訊,請參閱[使用自訂註冊屬性註冊擴展](../extensibility/registering-and-unregistering-vspackages.md#using-a-custom-registration-attribute-to-register-an-extension)。
+ 如果您想要在啟動時開啟動態工具視窗，而且可以建立失敗，您必須 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx> 在方法中執行介面並測試失敗狀況 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx.QueryShowTool%2A> 。 為了讓 shell 知道您有應該在啟動時開啟的動態工具視窗，您必須將 `SupportsDynamicToolOwner` 值（設為1）新增至您的套件註冊。 這個值不是標準的一部分 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> ，因此您必須建立自訂屬性來加入它。 如需自訂屬性的詳細資訊，請參閱[使用自訂註冊屬性來註冊延伸](../extensibility/registering-and-unregistering-vspackages.md#using-a-custom-registration-attribute-to-register-an-extension)模組。
 
- 用於<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>打開工具視窗。 根據需要創建工具視窗。
+ 使用 <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> 來開啟工具視窗。 工具視窗會視需要建立。
 
 > [!NOTE]
-> 用戶可以關閉動態工具視窗。 如果要創建功能表命令以便用戶可以重新打開工具視窗,則應在打開工具視窗的相同 UI 上下文中啟用選單命令,否則將禁用該命令。
+> 使用者可以關閉動態工具視窗。 如果您想要建立功能表命令，讓使用者可以重新開啟工具視窗，則應該在開啟工具視窗的相同 UI 內容中啟用功能表命令，否則會停用。
 
 ## <a name="to-open-a-dynamic-tool-window"></a>開啟動態工具視窗
 
-1. 創建名為**DynamicToolWindow 的**VSIX 專案,並添加名為*DynamicWindowPane.cs*的工具視窗項範本。 關於詳細資訊,請參閱[使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)。
+1. 建立名為**DynamicToolWindow**的 VSIX 專案，並加入名為*DynamicWindowPane.cs*的工具視窗專案範本。 如需詳細資訊，請參閱[使用工具視窗建立擴充](../extensibility/creating-an-extension-with-a-tool-window.md)功能。
 
-2. 在*DynamicWindowPanePackage.cs*檔中,尋找動態視窗窗格包聲明。 添加<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>和<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>屬性以註冊工具視窗。
+2. 在*DynamicWindowPanePackage.cs*檔案中，尋找 DynamicWindowPanePackage 宣告。 加入 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 和 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> 屬性以註冊工具視窗。
 
     ```vb
     [ProvideToolWindow(typeof(DynamicWindowPane)]
@@ -48,8 +48,8 @@ ms.locfileid: "80702266"
     {. . .}
     ```
 
-     上述屬性將名為 DynamicWindowPane 的工具視窗註冊為瞬態視窗,在 Visual Studio 關閉並重新打開時不會持久化。 動態視窗窗格在應用時<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string>打開,否則關閉。
+     上述屬性會將名為 DynamicWindowPane 的工具視窗註冊為暫時性視窗，而當 Visual Studio 關閉並重新開啟時，不會保存此視窗。 DynamicWindowPane 會在每次套用時開啟 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> ，否則會關閉。
 
-3. 建置此專案並開始偵錯。 應出現實驗實例。 不應看到工具視窗。
+3. 建置此專案並開始偵錯。 應該會出現實驗實例。 您不應該看到工具視窗。
 
-4. 在實驗實例中打開專案。 應顯示工具視窗。
+4. 在實驗實例中開啟專案。 工具視窗應該會隨即出現。

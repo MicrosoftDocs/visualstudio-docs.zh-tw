@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: 瞭解系統管理員如何使用大量新增功能或 Microsoft Azure Active Directory 群組，將授權指派給多個訂閱者
-ms.openlocfilehash: bc5f4a9bfc78dd3139202872bdf8d70a050f4039
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 459220c7fb2103da05f15607787390963863e622
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289127"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903285"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
@@ -67,7 +67,7 @@ ms.locfileid: "85289127"
    0. 返回 [node.js] 入口網站，然後選擇 [**新增**]。
    0. 選取 [**大量新增**]。
    0. 因為您已經儲存 Excel 檔案，所以您不需要下載範本。  按一下 **[流覽]**，找出您剛儲存的檔案，然後按一下 [**開啟**]。
-   0. 按一下 [確定]。
+   0. 按一下 [確定] 。
 
 
     上傳成功時，您會看到訂閱者清單和確認訊息。
@@ -132,9 +132,9 @@ ms.locfileid: "85289127"
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 - 只有一或兩個訂閱者要新增嗎？  參閱[新增單一使用者](assign-license.md)
 - 需要協助嗎？ 連絡人[Visual Studio 系統管理與](https://visualstudio.microsoft.com/support/support-overview-vs)訂用帳戶支援。

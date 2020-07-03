@@ -1,74 +1,74 @@
 ---
-title: 建立檢視修飾、命令和設定 |微軟文件
+title: 建立視圖裝飾、命令和設定 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aab9e0ede95eebe6f8f54cc3f01e7e7d5f98d1c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697651"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905038"
 ---
-# <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>演練:建立檢視裝飾、指令和設定(列參考線)
-您可以使用命令和檢視效果擴展 Visual Studio 文字/代碼編輯器。 本文介紹如何開始使用流行的擴展功能,列指南。 列參考線是在文字編輯器的檢視上繪製的視覺光線,可説明您將代碼管理到特定的列寬度。 具體來說,格式化的代碼對於包含在文檔、博客文章或 Bug 報告中的範例非常重要。
+# <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說：建立視圖裝飾、命令和設定（資料行輔助線）
+您可以使用命令和視圖效果來擴充 Visual Studio 的文字/程式碼編輯器。 本文說明如何開始使用熱門的擴充功能，也就是資料行指南。 資料行輔助線是在文字編輯器的視圖上繪製的淺線，可協助您將程式碼管理為特定的欄寬。 具體而言，格式化的程式碼對於您在檔、blog 文章或錯誤報表中所包含的範例而言，可能是很重要的。
 
 在本逐步解說中，您將：
 - 建立 VSIX 專案
-- 新增編輯器檢視修飾
-- 新增對儲存及取得設定的支援 (在何處繪製列參考線及其顏色)
-- 新增指令(新增/刪除列參考線,更改其顏色)
-- 將指令放在「編輯」選單和文字文件上下文選單上
-- 新增從視覺化工作室指令視窗呼叫指令
+- 新增編輯器視圖裝飾
+- 加入儲存和取得設定的支援（在何處繪製資料行輔助線及其色彩）
+- 新增命令（新增/移除資料行輔助線，變更其色彩）
+- 將命令放在 [編輯] 功能表和文字檔內容功能表上
+- 新增從 [Visual Studio 命令] 視窗叫用命令的支援
 
-  您可以使用此可視化工作室庫[擴展名](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)試用列指南功能的版本。
+  您可以使用此 Visual Studio 圖庫[延伸](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)模組來試用一版的「資料行指南」功能。
 
   > [!NOTE]
-  > 在本演練中,您將大量程式碼貼上到 Visual Studio 擴充樣本生成的幾個檔中。 但是,很快本演練將參考 GitHub 上已完成的解決方案以及其他擴展示例。 已完成的代碼略有不同,因為它具有真正的命令圖示,而不是使用泛型範本。
+  > 在此逐步解說中，您會將大量程式碼貼入 Visual Studio 延伸模組範本所產生的幾個檔案中。 但很快地，此逐步解說將會參考 GitHub 上已完成的解決方案與其他擴充功能範例。 完成的程式碼稍有不同，因為它有實際的命令圖示，而不是使用 generictemplate 圖示。
 
 ## <a name="get-started"></a>開始使用
-從 Visual Studio 2015 開始,您不會從下載中心安裝 Visual Studio SDK。 它作為可選功能包含在可視化工作室設置中。 以後還可以安裝 VS SDK。 有關詳細資訊,請參閱[安裝可視化工作室 SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="set-up-the-solution"></a>設定解決方案
-首先,創建 VSIX 專案,添加編輯器檢視修飾,然後添加一個命令(該命令添加 VSPackage 來擁有該命令)。 基本體系結構如下所示:
-- 您有一個文字檢視建立偵聽器`ColumnGuideAdornment`,用於創建每個檢視的物件。 此物件根據需要偵聽有關檢視更改或設置更改、更新或重繪列參考線的事件。
-- 有一個`GuidesSettingsManager`處理從 Visual Studio 設置儲存讀取和寫入。 設置管理員還有用於更新支援使用者命令的設置的操作(添加列、刪除列、更改顏色)。
-- 如果您有使用者命令,則需要使用 VSIP 包,但只是初始化命令實現對象的樣板代碼。
-- 有一個`ColumnGuideCommands`物件運行使用者命令,並掛接*在 .vsct*檔中聲明的命令的命令處理程式。
+首先，您會建立 VSIX 專案、新增編輯器視圖裝飾，然後新增命令（這會新增 VSPackage 以擁有命令）。 基本架構如下所示：
+- 您有一個文字視圖建立接聽程式，可建立 `ColumnGuideAdornment` 每個視圖的物件。 此物件會接聽視圖變更或設定變更的相關事件，並視需要更新或重繪資料行輔助線。
+- 有一個 `GuidesSettingsManager` 可處理從 Visual Studio 設定儲存體讀取和寫入的。 [設定管理員] 也有作業可更新支援使用者命令的設定（[新增資料行]、[移除資料行]、[變更色彩]）。
+- 如果您有使用者命令，就有必要的 VSIP 封裝，但它只是用來初始化命令執行物件的重複使用程式碼。
+- 有一個 `ColumnGuideCommands` 物件會執行使用者命令，並連結 *.vsct*檔案中所宣告之命令的命令處理常式。
 
-  **VSIX**. 使用**檔案&#124; New ...** 指令建立專案。 在左邊導覽窗格中選擇**C#** 下的 **'擴充性節點' 的選項**, 並在右邊窗格中選擇**VSIX 專案**。 輸入名稱 **「列指南**」並選擇 **「確定」** 以建立專案。
+  **VSIX**。 使用 [檔案 **&#124; 新增 ...** ] 命令來建立專案。 在左側導覽窗格中選擇 [ **c #** ] 下的 [擴充性 **] 節點，** 然後在右窗格中選擇 [ **VSIX 專案**]。 輸入名稱**ColumnGuides** ，然後選擇 **[確定]** 以建立專案。
 
-  **檢視修飾**。 按解決方案資源管理器中專案節點上的右指標按鈕。 選擇「**新增&#124;新項目 ...** 在左側導航窗格中選擇 **「可擴充性&#124;編輯器**」,並在右側窗格中選擇 **「編輯器視口裝飾**」。 輸入名稱 **「列指南」** 作為專案名稱,然後選擇 **「添加**」以添加它。
+  **View 修飾**。 在 [方案總管] 的專案節點上按右指標按鈕。 選擇 [**加入 &#124; 新專案 ...** ] 命令，以加入新的 view 裝飾專案。 選擇左側流覽窗格中的 [擴充性 **&#124; 編輯器**]，然後在右窗格中選擇 [編輯器] [**視口裝飾**]。 輸入名稱**ColumnGuideAdornment**做為專案名稱，然後選擇 [**新增**] 將它加入。
 
-  您可以看到此選項的樣本向專案新增了兩個檔案(以及引用,等等 **):ColumnGuideAdornment.cs**和**ColumnGuideAdornmentTextViewCreationListener.cs**。 範本在視圖上繪製紫色矩形。 在以下部分中,您將更改檢視創建偵聽器中的幾行,並替換**ColumnGuideAdornment.cs**的內容。
+  您可以看到這個專案範本已將兩個檔案新增至專案（以及參考等等）： **ColumnGuideAdornment.cs**和**ColumnGuideAdornmentTextViewCreationListener.cs**。 這些範本會在視圖上繪製紫色矩形。 在下一節中，您會在視圖建立接聽程式中變更幾行，並取代**ColumnGuideAdornment.cs**的內容。
 
-  **命令**. 在**解決方案資源管理員中**,按專案節點上的右指標按鈕。 選擇「**新增&#124;新項目 ...** 在左側導航窗格**中選擇"擴充性&#124; VSPackage",** 並在右側窗格中選擇 **「自定義命令**」。 輸入名稱**列指南命令**作為專案名稱,然後選擇 **「添加**」。 除了幾個引用,添加命令和包還新增了**ColumnGuideCommands.cs、ColumnGuideCommandsPackage.cs**和**ColumnGuideCommandsPackage.cs** **ColumnGuideCommandsPackage.vsct**。 在以下部分中,替換第一個和最後一個文件的內容,以定義和實現命令。
+  **命令**。 在**方案總管**中，按下專案節點上的右指標按鈕。 選擇 [**加入 &#124; 新專案 ...** ] 命令，以加入新的 view 裝飾專案。 選擇左側流覽窗格中的 [擴充性 **&#124; VSPackage** ]，然後選擇右窗格中的 [**自訂命令**]。 輸入名稱**ColumnGuideCommands**做為專案名稱，然後選擇 [**新增**]。 除了數個參考以外，加入命令和封裝也會新增**ColumnGuideCommands.cs**、 **ColumnGuideCommandsPackage.cs**和**ColumnGuideCommandsPackage .vsct**。 在下一節中，您會取代第一個和最後一個檔案的內容，以定義和執行命令。
 
-## <a name="set-up-the-text-view-creation-listener"></a>設定文字檢視建立偵聽器
-在編輯器中打開*ColumnGuideAdornmentTextViewCreationListener.cs。* 每當 Visual Studio 創建文字檢視時,此代碼都會實現處理程式。 根據視圖的特徵,有一些屬性可以控制調用處理程式。
+## <a name="set-up-the-text-view-creation-listener"></a>設定文本視圖建立接聽程式
+在編輯器中開啟*ColumnGuideAdornmentTextViewCreationListener.cs* 。 此程式碼會在每次 Visual Studio 建立文字流覽時，執行處理常式。 有一些屬性可控制呼叫處理常式的時機，視視圖的特性而定。
 
-代碼還必須聲明修飾層。 當編輯器更新檢視時,它會獲取視圖的修飾圖層,並從中獲取修飾元素。 您可以使用屬性聲明圖層相對於其他圖層的順序。 更換以下行:
+程式碼也必須宣告裝飾圖層。 當編輯器更新 views 時，它會取得視圖的裝飾圖層，以及取得裝飾元素的。 您可以使用屬性來宣告您的圖層相對於其他人的順序。 取代下列程式程式碼：
 
 ```csharp
 [Order(After = PredefinedAdornmentLayers.Caret)]
 ```
 
-用這兩行:
+這兩行：
 
 ```csharp
 [Order(Before = PredefinedAdornmentLayers.Text)]
 [TextViewRole(PredefinedTextViewRoles.Document)]
 ```
 
-替換的行位於聲明修飾圖層的一組屬性中。 您更改的第一列僅更改列參考線顯示的位置。 在檢視中繪製「之前」的文本意味著它們顯示在文本後面或下方。 第二行聲明,列指南修飾適用於符合文檔概念的文本實體,但您可以聲明修飾(例如,僅適用於可編輯文本)。 [語言服務和編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)中提供更多資訊
+您取代的那一行是在宣告裝飾圖層的屬性群組中。 第一行您只變更了資料行引導行出現的變更。 在視圖中繪製「之前」的文字，表示它們出現在文字後方或下方。 第二行會宣告資料行參考裝飾適用于符合您的檔概念的文字實體，但您可以宣告修飾，例如僅適用于可編輯的文字。 [語言服務和編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)中有更多的資訊
 
-## <a name="implement-the-settings-manager"></a>設定管理員
-將*GuidesSettingsManager.cs*的內容取代為以下代碼(如下所述):
+## <a name="implement-the-settings-manager"></a>執行設定管理員
+將*GuidesSettingsManager.cs*的內容取代為下列程式碼（如下所述）：
 
 ```csharp
 using Microsoft.VisualStudio.Settings;
@@ -319,32 +319,32 @@ namespace ColumnGuides
 
 ```
 
-大多數此代碼創建並分析設置格式:「RGB(>、int\<\<>、int\<>)int \<>、int \<>......"。  末尾的整數是需要列參考線的一個基於列的列。 列參考線擴展在單個設置值字串中捕獲其所有設置。
+此程式碼大多會建立並剖析設定格式： "RGB （ \<int> ， \<int> ， \<int> ） \<int> ， \<int> ，..."。  結尾的整數是您想要資料行參考的以一為基礎的資料行。 「資料行指南」延伸模組會以單一設定值字串來捕獲其所有設定。
 
-代碼的某些部分值得突出顯示。 以下代碼行獲取用於設置存儲的 Visual Studio 託管包裝器。 在大多數情況下,此摘要通過 Windows 註冊表,但此 API 獨立於儲存機制。
+程式碼有一些值得強調的部分。 下列程式程式碼會取得設定儲存體的 Visual Studio 受控包裝函式。 在大部分的情況下，這會對 Windows 登錄抽象化，但此 API 與儲存機制無關。
 
 ```csharp
 internal static SettingsManager VsManagedSettingsManager =
     new ShellSettingsManager(ServiceProvider.GlobalProvider);
 ```
 
-Visual Studio 設定儲存使用類別識別碼和設定識別子來唯一識別所有設定:
+Visual Studio 設定儲存體會使用類別識別碼和設定識別碼來唯一識別所有設定：
 
 ```csharp
 private const string _collectionSettingsName = "Text Editor";
 private const string _settingName = "Guides";
 ```
 
-您不必用作`"Text Editor"`類別名稱。 你可以選擇任何你喜歡的東西。
+您不需要使用做 `"Text Editor"` 為類別目錄名稱。 您可以挑選任何您喜歡的專案。
 
-前幾個函數是更改設置的入口點。 它們檢查高級約束,如允許的最大參考線數。  然後,他們呼叫`WriteSettings`,它組成一個設定字串並設定屬性`GuideLinesConfiguration`。 設置此屬性會將設置值保存到 Visual Studio 設置`SettingsChanged`存儲,並觸發事件`ColumnGuideAdornment`以更新所有 物件,每個物件都與文本視圖相關聯。
+前幾個函數是變更設定的進入點。 它們會檢查高階條件約束，例如允許的最大輔助板數目。  然後，它們會呼叫 `WriteSettings` ，以撰寫設定字串並設定屬性 `GuideLinesConfiguration` 。 設定這個屬性會將設定值儲存至 Visual Studio 設定存放區，並引發 `SettingsChanged` 事件來更新所有 `ColumnGuideAdornment` 物件，每個都與文字視圖相關聯。
 
-有幾個入口點函數,如`CanAddGuideline`,用於實現更改設置的命令。 當 Visual Studio 顯示選單時,它會查詢命令實現以查看該命令當前是否啟用、名稱是什麼,等等。  下面您將看到如何連接這些入口點以執行命令實現。 關於命令的詳細資訊,請參閱[延伸選單和指令](../extensibility/extending-menus-and-commands.md)。
+有幾個進入點函式，例如 `CanAddGuideline` ，用來執行可變更設定的命令。 當 Visual Studio 顯示功能表時，它會查詢命令執行，以查看命令目前是否已啟用、其名稱為何等等。  您會在下面看到如何連結命令執行的這些進入點。 如需命令的詳細資訊，請參閱[擴充功能表和命令](../extensibility/extending-menus-and-commands.md)。
 
-## <a name="implement-the-columnguideadornment-class"></a>實現列指南修飾類
-對於`ColumnGuideAdornment`每個可以具有修飾的文本視圖,將實例化該類。 此類偵聽有關檢視更改或設置更改的事件,以及根據需要更新或重繪列參考線的事件。
+## <a name="implement-the-columnguideadornment-class"></a>執行 ColumnGuideAdornment 類別
+`ColumnGuideAdornment`類別會針對每個可以有裝飾的文字視圖具現化。 這個類別會接聽有關變更或設定變更的事件，以及視需要更新或重繪資料行指南。
 
-將*ColumnGuideAdornment.cs*的內容取代為以下代碼(如下所述):
+將*ColumnGuideAdornment.cs*的內容取代為下列程式碼（如下所述）：
 
 ```csharp
 using System;
@@ -486,33 +486,33 @@ namespace ColumnGuides
 }
 ```
 
-此類的實例保留到關聯的<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>`Line`物件和在視圖上繪製的物件清單。
+這個類別的實例會保存到相關聯的 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> ，以及在此 `Line` 視圖上繪製的物件清單。
 
-建構函數(在`ColumnGuideAdornmentTextViewCreationListener`Visual Studio創建新檢視時調用)創建列指南`Line`物件。  建構函數`SettingsChanged`還添加事件(在`GuidesSettingsManager`中定義)和檢視事件`LayoutChanged`和`Closed`的處理程式。
+`ColumnGuideAdornmentTextViewCreationListener`當 Visual Studio 建立新的視圖時，從呼叫的函式會建立資料行輔助線 `Line` 物件。  此函式也會加入事件的處理常式 `SettingsChanged` （定義于中 `GuidesSettingsManager` ）和 view 事件 `LayoutChanged` 和 `Closed` 。
 
-由於`LayoutChanged`檢視中的多種更改(包括 Visual Studio 創建檢視時),事件將觸發。 處理程式`OnViewLayoutChanged`調`AddGuidelinesToAdornmentLayer`用 以執行。 中`OnViewLayoutChanged`的代碼確定是否需要根據更改(如字體大小更改、視圖排水溝、水平滾動等)更新行位置。 中的`UpdatePositions`代碼會導致引導行在字元之間或文本列之後繪製,該列位於文本行中指定的字元偏移量中。
+`LayoutChanged`事件會因為視圖中的幾種變更而引發，包括 Visual Studio 建立視圖的時間。 `OnViewLayoutChanged`要執行的處理常式呼叫 `AddGuidelinesToAdornmentLayer` 。 中的程式碼 `OnViewLayoutChanged` 會根據變更（例如，字型大小變更、視圖裝訂邊、水準滾動等等）來決定是否需要更新行位置。 中的程式碼 `UpdatePositions` 會讓引導行在字元之間繪製，或在文字行中指定的字元位移之後的文字欄之後。
 
-每當設定更改時`SettingsChanged`,函數只需使用任何新`Line`設置重新創建所有物件。 設置列位置後,代碼將從`Line``ColumnGuideAdornment`修飾圖層中刪除所有以前的物件並添加新物件。
+每當設定變更時，函式 `SettingsChanged` 就 `Line` 會使用新的設定來重新建立所有物件。 在設定行位置之後，程式碼會 `Line` 從裝飾層移除所有先前 `ColumnGuideAdornment` 的物件，並加入新的物件。
 
-## <a name="define-the-commands-menus-and-menu-placements"></a>定義命令、選單和選單位置
-聲明命令和功能表、在各種其他功能表上放置命令或功能表組以及掛接命令處理程式可能有很多。 這個演練重點介紹命令在此擴展中的工作方式,但有關更深入的資訊,請參閱[延伸選單和命令](../extensibility/extending-menus-and-commands.md)。
+## <a name="define-the-commands-menus-and-menu-placements"></a>定義命令、功能表和功能表放置
+宣告命令和功能表、將命令群組或功能表放在各種其他功能表上，以及連結命令處理常式，可能會有很多的事。 本逐步解說將重點放在此延伸模組中的命令使用方式，但如需更深入的資訊，請參閱[擴充功能表和命令](../extensibility/extending-menus-and-commands.md)。
 
 ### <a name="introduction-to-the-code"></a>程式碼簡介
-"列參考線"副檔名顯示聲明屬於一組命令(添加列、刪除列、更改行顏色),然後將該組放在編輯器上下文菜單的子菜單上。  "列參考線"副檔名還會將指令添加到**主編輯**功能表中,但使其不可見,下面是一個常見模式。
+[資料行輔助線] 延伸模組會顯示宣告一組隸屬于一起的命令（[加入資料行]、[移除欄]、[變更線條色彩]），然後將該群組放在編輯器內容功能表的子功能表上。  [資料行參考] 延伸模組也會將命令新增至主要 [**編輯**] 功能表，但會將它們保留為不可見，並討論為下面的常見模式
 
-命令實現有三個部分:ColumnGuideCommandsPackage.cs、列指南命令包.vsct 和ColumnGuideCommands.cs。 範本生成的代碼在 **「工具」** 選單上放置一個命令,該命令彈出一個對話框作為實現。 您可以查看如何在 *.vsct*和*ColumnGuideCommands.cs*檔中實現,因為它非常簡單。 替換下面這些檔案中的代碼。
+命令執行有三個部分： ColumnGuideCommandsPackage.cs、ColumnGuideCommandsPackage、.vsct 和 ColumnGuideCommands.cs。 範本所產生的程式碼會在 [**工具**] 功能表上放置一個命令，以將對話方塊當做實作為執行。 您可以查看 *.vsct*和*ColumnGuideCommands.cs*檔案中的實執行方式，因為它很簡單。 您可以取代下列檔案中的程式碼。
 
-包代碼包含 Visual Studio 發現擴展提供命令並找到將命令放置位置所需的樣板聲明。 當包初始化時,它會實例化命令實現類。 有關與指令相關的套件的詳細資訊,請參閱[延伸選單和指令](../extensibility/extending-menus-and-commands.md)。
+封裝程式碼包含 Visual Studio 所需的樣板宣告，以探索延伸模組是否提供命令並尋找要放置命令的位置。 當封裝初始化時，它會具現化命令實作為類別。 如需與命令相關之套件的詳細資訊，請參閱[擴充功能表和命令](../extensibility/extending-menus-and-commands.md)。
 
 ### <a name="a-common-commands-pattern"></a>通用命令模式
-列參考線擴展中的命令是可視化工作室中非常常見的模式的示例。 將相關命令放在組中,並將該組放在主菜單上,通常設置""`<CommandFlag>CommandWellOnly</CommandFlag>`使命令不可見。  在主選單(如**Edit)** 上放置命令會為它們提供漂亮的名稱(如**Edit.AddColumnGuide),** 這對於在**工具選項**中重新分配鍵綁定時查找命令非常有用。 當從**命令視窗**調用命令時,它對於完成也很有用。
+「資料行指南」延伸模組中的命令是 Visual Studio 中非常常見的模式範例。 您會將相關的命令放在群組中，然後將該群組放在主功能表上，通常會將該群組 `<CommandFlag>CommandWellOnly</CommandFlag>` 設為 ""，讓命令變成隱藏。  將命令放在主要功能表上（例如 [**編輯**]）會提供不錯的名稱（例如**AddColumnGuide**），這對於在 [**工具] 選項**中重新指派索引鍵系結時尋找命令很有用。 從**命令視窗**叫用命令時，也很適合用來完成此作業。
 
-然後,將命令組添加到上下文菜單或子功能表中,您希望使用者使用這些命令。 Visual Studio`CommandWellOnly`僅視為主功能表的不可見標誌。 將同一組命令放在上下文菜單或子功能表上時,這些命令是可見的。
+接著，您可以將命令群組新增至內容功能表或子功能表，您希望使用者使用這些命令。 Visual Studio `CommandWellOnly` 只會將視為主要功能表的隱藏旗標。 當您在內容功能表或子功能表上放置相同的命令群組時，會顯示命令。
 
-作為常見模式的一部分,"列參考線"擴展將創建第二個組,該組包含單個子功能表。 子功能表依次包含具有四列引導命令的第一組。 保存子功能表的第二個組是放置在各種上下文菜單上的可重用資產,該資產在這些上下文菜單上放置了一個子功能表。
+作為通用模式的一部分，資料行指南延伸模組會建立第二個群組，其中包含單一子功能表。 子功能表接著會包含具有四個數據行輔助命令的第一個群組。 保存子功能表的第二個群組是可重複使用的資產，您放置在各種內容功能表上，這會將子功能表放在這些內容功能表上。
 
-### <a name="the-vsct-file"></a>.vsct 檔案
-*.vsct*檔聲明命令及其去向以及圖示等。 將 *.vsct*檔案的內容取代為以下代碼(以下的語記):
+### <a name="the-vsct-file"></a>.Vsct 檔案
+*.Vsct*檔案會宣告命令及其所在位置，以及圖示等等。 將 *.vsct*檔案的內容取代為下列程式碼（如下所述）：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -748,22 +748,22 @@ namespace ColumnGuides
 
 ```
 
-**GUIDS**. 對於 Visual Studio 尋找指令處理程式並調用它們,您需要確保*在 ColumnGuideCommands Package.cs*檔中聲明的包 GUID(從專案樣本產生)與 *.vsct*檔中聲明的包 GUID(從上面複製)匹配。 如果重複使用此示例代碼,則應確保具有不同的 GUID,以便不與可能複製此代碼的任何其他人發生衝突。
+**Guid**。 若要讓 Visual Studio 尋找您的命令處理常式並加以叫用，您必須確定在*ColumnGuideCommandsPackage.cs*檔案中宣告的封裝 guid （從專案專案範本產生）符合 *.vsct*檔案中宣告的封裝 guid （從上面複製）。 如果您重複使用此範例程式碼，您應該確定您有不同的 GUID，這樣就不會與可能已複製此程式碼的其他人發生衝突。
 
-在*ColumnGuideCommandsPackage.cs*中尋找此行,並在引號之間複製 GUID:
+在*ColumnGuideCommandsPackage.cs*中尋找這一行，並從引號之間複製 GUID：
 
 ```csharp
 public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";
 ```
 
-然後,將 GUID 貼上到 *.vsct*檔`Symbols`中,以便在聲明中具有以下行:
+然後，在 *.vsct*檔案中貼上 GUID，讓您的宣告中有下列這一行 `Symbols` ：
 
 ```xml
 <GuidSymbol name="guidColumnGuideCommandsPkg"
             value="{ef726849-5447-4f73-8de5-01b9e930f7cd}" />
 ```
 
-命令集的 GUID 和位圖影像檔對於擴展也是唯一的:
+命令集的 Guid 和點陣圖影像檔案的 Guid 也應該是唯一的：
 
 ```xml
 <GuidSymbol name="guidColumnGuidesCommandSet"
@@ -771,36 +771,36 @@ public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";
 <GuidSymbol name="guidImages" value="{2C99F852-587C-43AF-AA2D-F605DE2E46EF}">
 ```
 
-但是,在本演練中,您不需要更改命令集和位圖圖像 GUID 即可使代碼正常工作。 命令集 GUID 需要匹配*ColumnGuideCommands.cs*檔中的聲明,但您也替換該文件的內容;因此,GUID 將匹配。
+但是，您不需要變更此逐步解說中的命令集和點陣圖影像 Guid，即可讓程式碼發揮作用。 命令集 GUID 必須符合*ColumnGuideCommands.cs*檔案中的宣告，但您也要取代該檔案的內容。因此，Guid 會相符。
 
-*.vsct*檔中的其他 GUID 標識將列指南命令添加到的預先存在的功能表,因此它們永遠不會更改。
+*.Vsct*檔案中的其他 guid 可識別加入資料行指南命令的既有功能表，因此永遠不會變更。
 
-**檔案部份**。 *.vsct*有三個外部部分:命令、位置和符號。 命令部分定義圖示的命令組、功能表、按鈕或功能表項以及位圖。 放置部分聲明組在功能表上或將其他放置位置轉到預先存在的菜單的位置。 符號部分聲明*在 .vsct*檔的其他位置使用的標識碼,這使得 *.vsct*代碼比隨處都有 GUID 和十六進位數位更具可讀性。
+檔案**區段**。 *.Vsct*有三個外部區段：命令、放置和符號。 [命令] 區段會定義命令群組、功能表、按鈕或功能表項目，以及圖示的點陣圖。 [放置] 區段會宣告群組在功能表上的位置，或其他放置於既有的功能表上。 [符號] 區段會宣告 *.vsct*檔案中其他位置所使用的識別碼，使 *.vsct*程式碼比在所有位置具有 guid 和十六進位數位更容易閱讀。
 
-**指令部份,群組定義**。 命令部分首先定義命令組。 命令組是您在功能表中看到的命令,這些命令帶有分隔組的輕微灰色線條。 組還可以填充整個子功能表,如本示例所示,在這種情況下,您看不到灰色分隔線。 *.vsct*檔聲明兩個組`GuidesMenuItemsGroup`, 一個組是`IDM_VS_MENU_EDIT`父級 的(主 編輯`GuidesContextMenuGroup`功能表`IDM_VS_CTXT_CODEWIN`)和 父級組 (代碼編輯器的上下文選單)。**Edit**
+**命令區段，群組定義**。 [命令] 區段會先定義命令群組。 命令群組是您在功能表中看到的命令，其中有稍微灰色的線條分隔群組。 群組也可以填滿整個子功能表（如下列範例所示），而且在此情況下，您看不到灰色分隔線條。 *.Vsct*檔案會宣告兩個群組， `GuidesMenuItemsGroup` 也就是 `IDM_VS_MENU_EDIT` （主要**編輯**功能表）的父代，以及 `GuidesContextMenuGroup` 父代（程式 `IDM_VS_CTXT_CODEWIN` 代碼編輯器的內容功能表）的。
 
-第二組宣告具有`0x0600`優先權:
+第二個群組宣告具有 `0x0600` 優先順序：
 
 ```xml
 <Group guid="guidColumnGuidesCommandSet" id="GuidesContextMenuGroup"
              priority="0x0600">
 ```
 
-其想法是將列參考線子功能表放在向其添加子功能表組的任何上下文菜單的末尾。 但是,您不應假定您最了解,並且使用`0xFFFF`的優先順序強制子菜單始終為最後。 您必須嘗試該數位,以查看子菜單位於放置該功能表的上下文菜單上的位置。 在這種情況下,`0x0600`足夠高,可以盡可能將其放在菜單的末尾,但它為其他人留出空間來設計其擴展,使其低於列參考線擴展名(如果需要)。
+其概念是將 [資料行輔助線] 子功能表放在您加入子功能表群組的任何內容功能表的結尾。 但是，您不應該假設您不知道最佳，而是使用的優先順序來強制子功能表一律是最後一個 `0xFFFF` 。 您必須試驗該數位，才能看到子功能表位於您放置它的內容功能表上。 在這種情況下， `0x0600` 夠大，可以將它放在功能表的尾端，就像您看到的一樣，但如果需要的話，還可以讓其他人將其延伸模組設計成低於「資料行指南」擴充功能。
 
-**命令部份,選單定義**。 接下來,命令部分定義子選單,該子`GuidesSubMenu`選單為 父`GuidesContextMenuGroup`選單 。 是`GuidesContextMenuGroup`添加到所有相關上下文菜單的組。 在放置部分中,代碼將組在此子功能表上放置帶有四列指南命令的組。
+**命令區段，功能表定義**。 接下來，命令區段會定義子功能表 `GuidesSubMenu` ，其父代為 `GuidesContextMenuGroup` 。 `GuidesContextMenuGroup`是您新增至所有相關內容功能表的群組。 在 [放置] 區段中，此程式碼會將具有四個數據行輔助命令的群組放在此子功能表上。
 
-**命令部份,按鈕定義**。 然後,命令部分定義功能表項或作為四列參考線命令的按鈕。 `CommandWellOnly`,上面討論,意味著命令是不可見的,當放置在主菜單上。 選單項目按鈕聲明的兩個(新增指南和刪除指南)也有一個`AllowParams`標誌:
+**命令區段，按鈕定義**。 然後，[命令] 區段會定義四個數據行的 [輔助線] 命令的功能表項目或按鈕。 `CommandWellOnly`（如上所述），表示放置在主功能表上的命令不可見。 功能表項目的兩個按鈕宣告（[加入參考] 和 [移除指南]）也有一個 `AllowParams` 旗標：
 
 ```xml
 <CommandFlag>AllowParams</CommandFlag>
 ```
 
-此標誌啟用在 Visual Studio 呼叫命令處理程式時接收參數的命令,以及具有主選單位置的命令。  如果使用者從命令視窗運行該命令,則參數將傳遞給事件參數中的命令處理程式。
+這個旗標會啟用，並具有主功能表位置，也就是當 Visual Studio 叫用命令處理常式時，用來接收引數的命令。  如果使用者從命令視窗執行命令，則引數會傳遞至事件引數中的命令處理常式。
 
-**命令部份,點陣圖定義**。 最後,命令部分聲明用於命令的點陣圖或圖示。 本節是一個簡單的聲明,用於標識專案資源並列出已使用的圖示的一個基於一個索引。 *.vsct*檔的符號部分聲明用作索引的標識符的值。 本演練使用添加到專案的自定義命令項範本提供的位圖條。
+**命令區段，點陣圖定義**。 最後，[命令] 區段會宣告用於命令的點陣圖或圖示。 本節是一個簡單的宣告，可識別專案資源並列出已使用圖示的以一為基礎的索引。 *.Vsct*檔案的 [符號] 區段會宣告用來做為索引的識別碼值。 本逐步解說會使用已加入至專案的自訂命令專案範本所提供的點陣圖區。
 
-**放置部份**. 命令節後是放置部分。 第一個代碼將上面討論的第一組新增到出現指令的子選單中,該組將四列引導命令保留到:
+**放置區段**。 [命令] 區段之後是 [放置] 區段。 第一種是程式碼將上述第一個討論的群組，其中包含四個數據行的指南命令，放在命令出現的子功能表中：
 
 ```xml
 <CommandPlacement guid="guidColumnGuidesCommandSet" id="GuidesMenuItemsGroup"
@@ -809,14 +809,14 @@ public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";
 </CommandPlacement>
 ```
 
-所有其他位置將`GuidesContextMenuGroup`(`GuidesSubMenu`包含 ) 添加到其他編輯器上下文功能表。 當代碼聲明`GuidesContextMenuGroup`時 ,它被父級聲明到代碼編輯器的上下文菜單。 這就是為什麼您看不到代碼編輯器上下文菜單的位置。
+所有其他位置都會將 `GuidesContextMenuGroup` （其包含 `GuidesSubMenu` ）新增至其他編輯器內容功能表。 當程式碼宣告時 `GuidesContextMenuGroup` ，它是程式碼編輯器操作功能表的父代。 這就是為什麼您看不到 [程式碼編輯器] 內容功能表的位置。
 
-**符號部份**. 如上所述,符號部分聲明*在 .vsct*檔的其他位置使用的標識符,這使得 *.vsct*代碼比隨處都有 GUID 和十六進位數位更具可讀性。 本節的要點是包 GUID 必須同意包類中的聲明。 而且,命令集 GUID 必須同意命令實現類中的聲明。
+**符號區段**。 如上所述，[符號] 區段會宣告 *.vsct*檔案中其他位置所使用的識別碼，使 *.vsct*程式碼更容易閱讀，而不是在任何地方具有 guid 和十六進位數位。 本節中的重點是封裝 GUID 必須同意 package 類別中的宣告。 此外，命令集 GUID 必須與命令執行類別中的宣告一致。
 
-## <a name="implement-the-commands"></a>執行指令
-*ColumnGuideCommands.cs*文件實現命令並掛接處理程式。 當 Visual Studio 載入包並初始化包時,包`Initialize`反過來會調用命令實現類。 命令初始化只需實例化類,建構函數將連接所有命令處理程式。
+## <a name="implement-the-commands"></a>執行命令
+*ColumnGuideCommands.cs*檔案會執行命令，並連結處理常式。 當 Visual Studio 載入封裝並將它初始化時，封裝會接著呼叫 `Initialize` 命令執行類別。 命令初始化只會具現化類別，而此函式會連結所有的命令處理常式。
 
-將*ColumnGuideCommands.cs*檔案的內容取代為以下代碼(以下的語記):
+將*ColumnGuideCommands.cs*檔案的內容取代為下列程式碼（如下所述）：
 
 ```csharp
 using System;
@@ -1157,11 +1157,11 @@ namespace ColumnGuides
 
 ```
 
-**修復參考**。 此時缺少引用。 按解決方案資源管理員中的「參考」節點上的右指標按鈕。 選擇"**添加..."** 命令。 "**新增參考對話**框的右上角有一個搜尋框。 輸入"編輯器"(沒有雙引號)。 選擇**Microsoft.VisualStudio.編輯器**項(您必須選中項目左側的複選框,而不僅僅是選擇該專案),然後選擇 **「確定」** 以添加引用。
+**修正參考**。 此時您就遺失了參考。 在方案總管中的 [參考] 節點上按右指標按鈕。 選擇 [**新增 ...** ] 命令。 [**加入參考**] 對話方塊的右上角有 [搜尋] 方塊。 輸入 "editor" （不含雙引號）。 選擇 [ **VisualStudio** ] 專案（您必須核取專案左側的方塊，而不只是選取專案），然後選擇 **[確定]** 以加入參考。
 
-**初始化**。  當包類初始化時,它將調用`Initialize`命令實現類。 初始`ColumnGuideCommands`化實例化類,並將類實例和包引用保存在類成員中。
+**初始化**。  當封裝類別初始化時，它會呼叫 `Initialize` 命令執行類別上的。 初始化會具現 `ColumnGuideCommands` 化類別，並將類別實例和封裝參考儲存在類別成員中。
 
-讓我們看一下來自類建構函數的命令處理程式掛接:
+讓我們從類別的「檢查點」查看其中一個命令處理常式攔截：
 
 ```csharp
 _addGuidelineCommand =
@@ -1172,17 +1172,17 @@ _addGuidelineCommand =
 
 ```
 
-建立一`OleMenuCommand`個 。 可視化工作室使用微軟 Office 命令系統。 實例化時的關鍵參數`OleMenuCommand`是實現命令`AddColumnGuideExecuted`( ) 的函數,當 Visual Studio 顯示具有命令 (`AddColumnGuideBeforeQueryStatus`) 和命令 ID 的選單時要調用的函數。 Visual Studio 在選單上顯示命令之前調用查詢狀態函數,以便該命令可以使自身不可見或灰顯,用於功能表的特定顯示(例如,如果沒有選擇,則禁用**Copy)、** 更改其圖示,甚至更改其名稱(例如,從"添加內容到刪除內容")等。 命令 ID 必須與 *.vsct*檔中聲明的命令 ID 匹配。 命令集和列參考線添加命令的字串必須在 *.vsct*檔和*ColumnGuideCommands.cs*之間匹配。
+您會建立 `OleMenuCommand` 。 Visual Studio 會使用 Microsoft Office 命令系統。 具現化時的主要引數是可執行命令的函式 `OleMenuCommand` （ `AddColumnGuideExecuted` ）、當 Visual Studio 顯示具有命令的功能表（）時所要呼叫的函式 `AddColumnGuideBeforeQueryStatus` ，以及命令識別碼。 Visual studio 會先呼叫查詢狀態函式，才會在功能表上顯示命令，讓該命令在特定的功能表顯示中，使其本身不可見或呈現灰色（例如，停用 [**複製**] （如果沒有選取））、變更其圖示，或甚至變更其名稱（例如，從 [新增專案] 移除某個專案）等等。 命令 ID 必須符合 *.vsct*檔案中所宣告的命令識別碼。 命令集的字串和資料行指南 add 命令必須符合 *.vsct*檔案和*ColumnGuideCommands.cs*。
 
-以下行為使用者透過命令視窗呼叫命令時提供説明(如下所述):
+以下這一行提供使用者透過命令視窗叫用命令時的協助（說明如下）：
 
 ```csharp
 _addGuidelineCommand.ParametersDescription = "<column>";
 ```
 
- **查詢狀態**。 查詢狀態功能`AddColumnGuideBeforeQueryStatus``RemoveColumnGuideBeforeQueryStatus`並 檢查某些設置(如參考線的最大數量或最大列),或者如果有要刪除的列參考線。 如果條件合適,它們將啟用命令。  查詢狀態函數需要高效,因為它們在每次 Visual Studio 顯示功能表和功能表上的每個命令時都會運行。
+ **查詢狀態**。 查詢狀態函數 `AddColumnGuideBeforeQueryStatus` 和 `RemoveColumnGuideBeforeQueryStatus` 會檢查某些設定（例如，最大的 [輔助線] 或 [最大值] 資料行數目），或是否有資料行指南可供移除。 如果條件正確，它們就會啟用命令。  查詢狀態函式必須有效率，因為它們會在每次 Visual Studio 顯示功能表和功能表上的每個命令時執行。
 
- **新增欄線指南執行函數**。 添加指南的有趣部分是找出當前編輯器視圖和精心的位置。  首先,此函數調用`GetApplicableColumn`,它檢查命令處理程式的事件參數中是否有使用者提供的參數,如果沒有,則函數檢查編輯器的視圖:
+ **AddColumnGuideExecuted**函式。 加入指南的有趣部分是找出目前的編輯器視圖和插入號位置。  首先，此函式 `GetApplicableColumn` 會呼叫，它會檢查命令處理常式的事件引數中是否有使用者提供的引數，如果沒有，函式會檢查編輯器的 view：
 
 ```csharp
 private int GetApplicableColumn(EventArgs e)
@@ -1201,7 +1201,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-`GetCurrentEditorColumn`必須挖掘一點才能查看<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>代碼。  如果遍通`GetActiveTextView``GetActiveView`了`GetTextViewFromVsTextView`, 可以看到如何執行此操作。 以下代碼是抽象的相關代碼,從目前選擇開始,然後取得所選內容的幀,然後將幀的 DocView<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>作為, 然後從<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>IVTextView 獲取, 然後取得檢視主機,最後是 IWpfTextView:
+`GetCurrentEditorColumn`必須深入瞭解程式 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> 代碼的觀點。  如果您透過 `GetActiveTextView` 、和追蹤， `GetActiveView` `GetTextViewFromVsTextView` 您可以瞭解如何執行此動作。 下列程式碼是從目前的選取範圍開始，然後取得選取範圍的框架，再取得框架的 DocView 做為 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> ，然後從 IVsTextView 取得，然後 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> 取得視圖主控制項，最後是 IWpfTextView：
 
 ```csharp
    IVsMonitorSelection selection =
@@ -1257,7 +1257,7 @@ ErrorHandler.ThrowOnFailure(selection.GetCurrentElementValue(
 
 ```
 
-取得 IWpfTextView 後,即可取得該選護符所在的列:
+一旦有了 IWpfTextView，您就可以取得插入號所在的資料行：
 
 ```csharp
 private static int GetCaretColumn(IWpfTextView textView)
@@ -1272,19 +1272,19 @@ private static int GetCaretColumn(IWpfTextView textView)
 
 ```
 
-當用戶按下的當前列時,程式碼只需調用設置管理員來添加或刪除列。 設置管理器觸發所有`ColumnGuideAdornment`物件偵聽的事件。 觸發事件時,這些物件使用新的列指南設置更新其關聯的文本視圖。
+當使用者按下目前的資料行時，程式碼就會在設定管理員上呼叫，以加入或移除資料行。 設定管理員會引發所有物件都會接聽的事件 `ColumnGuideAdornment` 。 當事件引發時，這些物件會以新的資料行指南設定來更新其相關聯的文字視圖。
 
-## <a name="invoke-command-from-the-command-window"></a>從命令視窗呼叫指令
-該列參考線示例使用戶能夠從命令視窗調用兩個命令作為擴展形式。 如果使用 **「查看 &#124;其他窗口&#124;命令視窗」命令**,則可以看到命令視窗。 您可以透過輸入編輯「編輯」與命令視窗進行互動,並且在命令名稱完成並提供參數 120 時,您有以下結果:
+## <a name="invoke-command-from-the-command-window"></a>從命令視窗叫用命令
+「資料行指南」範例可讓使用者以擴充性的形式，從 [命令] 視窗叫用兩個命令。 如果您使用 [ **View &#124; 其他 Windows &#124; 命令視窗]** 命令，您可以看到 [命令視窗]。 您可以輸入 "edit."，並使用命令名稱完成和提供引數120來與命令視窗互動，您會得到下列結果：
 
 ```csharp
 > Edit.AddColumnGuide 120
 >
 ```
 
-啟用此行為的範例部分位於 *.vsct*檔`ColumnGuideCommands`聲明、 連接命令處理程式時的類構造函數以及檢查事件參數的命令處理程式實現中。
+啟用此行為的範例部分位於 *.vsct*檔案宣告、連結 `ColumnGuideCommands` 命令處理常式時的類別函式，以及檢查事件引數的命令處理常式。
 
-您在`<CommandFlag>CommandWellOnly</CommandFlag>`*.vsct*檔中看到""""""""""""""""""""**編輯**主菜單中的位置",即使這些命令未顯示在 **"編輯"** 功能表 UI 中。 將它們放在主**編輯**功能表上,可以給他們起像**Edit.AddColumnGuide**這樣的名稱。 儲存四個指令的指令群組聲明將群組直接放置在 **「編輯」** 選單上:
+`<CommandFlag>CommandWellOnly</CommandFlag>`即使命令未顯示在 [**編輯**] 功能表 UI 中，您還是會看到 *.vsct*檔案中的 "" 以及放置在 [**編輯**] 主功能表中。 將它們放在主要的 [**編輯**] 功能表上，可提供其名稱，例如**AddColumnGuide**。 包含四個命令的命令群組宣告會將群組直接放在 [**編輯**] 功能表上：
 
 ```xml
 <Group guid="guidColumnGuidesCommandSet" id="GuidesMenuItemsGroup"
@@ -1294,7 +1294,7 @@ private static int GetCaretColumn(IWpfTextView textView)
 
 ```
 
-按鈕部份稍後宣告指令`CommandWellOnly`,使其在主選單上不可見,並聲明它們`AllowParams`與 :
+[按鈕] 區段稍後會宣告命令， `CommandWellOnly` 讓它們不會出現在主功能表上，並使用進行宣告 `AllowParams` ：
 
 ```xml
 <Button guid="guidColumnGuidesCommandSet" id="cmdidAddColumnGuide"
@@ -1306,14 +1306,14 @@ private static int GetCaretColumn(IWpfTextView textView)
 
 ```
 
-您看到命令處理程式在類別建構函式`ColumnGuideCommands`中 掛接碼提供允許參數的說明:
+您看到命令處理常式連結類別函式中的程式碼 `ColumnGuideCommands` 提供了允許參數的描述：
 
 ```csharp
 _addGuidelineCommand.ParametersDescription = "<column>";
 
 ```
 
-在檢查目前`GetApplicableColumn`欄`OleMenuCmdEventArgs`的 編輯器檢視之前,您看到函數檢查值:
+在 `GetApplicableColumn` `OleMenuCmdEventArgs` 檢查目前資料行的編輯器視圖之前，您看到函式會檢查值：
 
 ```csharp
 private int GetApplicableColumn(EventArgs e)
@@ -1329,20 +1329,20 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-## <a name="try-your-extension"></a>嘗試延伸
-現在,您可以按**F5**執行列參考線擴展。 開啟文字檔案並使用編輯器的上下文選單添加引導行、刪除它們並更改其顏色。 按下文字(不是通過行末尾的空白)以添加列指南,或者編輯器將其添加到行的最後一列。 如果使用命令視窗並使用參數調用命令,則可以在任何地方添加列參考線。
+## <a name="try-your-extension"></a>試用您的擴充功能
+您現在可以按**F5**執行您的資料行輔助線延伸模組。 開啟文字檔，並使用編輯器的內容功能表來加入輔助線、將其移除，以及變更其色彩。 按一下文字（不是在行尾傳遞的空白字元）以加入資料行指南，或編輯器將它加入至該行的最後一個資料行。 如果您使用 [命令] 視窗，並使用引數叫用命令，則可以在任何位置加入資料行輔助線。
 
-如果要嘗試不同的命令放置、更改名稱、更改圖示等,並且 Visual Studio 在功能表中顯示最新代碼時遇到任何問題,則可以重置正在調試的實驗配置單元。 啟動**Windows 開始功能表**並鍵入「重置」。 尋找並執行此指令,**重設下一個視覺化工作室實驗實體**。 此命令清理所有擴展元件的實驗註冊表配置單元。 它不會清除元件中的設定,因此當您關閉 Visual Studio 的實驗單元時,任何參考線都仍然存在,當您的代碼在下次啟動時讀取設置儲存時。
+如果您想要嘗試不同的命令位置、變更名稱、變更圖示等等，而且您有 Visual Studio 在功能表中顯示最新程式碼的任何問題，您可以重設要在其中進行偵錯工具的實驗 hive。 顯示 Windows [**開始] 功能表**並輸入「重設」。 尋找並執行命令，**並重設下一個 Visual Studio 實驗實例**。 此命令會清除所有延伸模組元件的實驗登錄 hive。 它不會清除元件中的設定，因此當您關閉 Visual Studio 的實驗 hive 時，當您的程式碼在下一次啟動時讀取設定存放區時，仍會有任何指南。
 
-## <a name="finished-code-project"></a>已完成的代碼項目
-很快將有一個GitHub專案的視覺工作室擴展性示例,完成的專案將在那裡。 本文將更新,以便發生此情況時指向該點。 已完成的範例專案可能具有不同的 guid,並且對於命令圖示將有不同的位圖條帶。
+## <a name="finished-code-project"></a>完成的程式碼專案
+很快就會有 Visual Studio 擴充性範例的 GitHub 專案，而完成的專案會在該處。 這篇文章將會更新，以便在發生這種情況時指向該處。 完成的範例專案可能會有不同的 guid，而且會有不同的點陣圖帶狀供命令圖示使用。
 
-您可以使用此可視化工作室庫[擴展名](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)試用列指南功能的版本。
+您可以使用此 Visual Studio 圖庫[延伸](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)模組來試用一版的「資料行指南」功能。
 
 ## <a name="see-also"></a>另請參閱
-- [編輯器內部](../extensibility/inside-the-editor.md)
-- [延伸編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)
-- [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)
-- [延伸選單與指令](../extensibility/extending-menus-and-commands.md)
-- [加入選單加入子選單](../extensibility/adding-a-submenu-to-a-menu.md)
-- [使用編輯器項目建立延伸](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [在編輯器中](../extensibility/inside-the-editor.md)
+- [擴充編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)
+- [語言服務和編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)
+- [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)
+- [將子功能表新增至功能表](../extensibility/adding-a-submenu-to-a-menu.md)
+- [使用編輯器專案範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)

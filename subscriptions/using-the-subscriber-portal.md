@@ -5,20 +5,20 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
-ms.topic: conceptual
+ms.topic: overview
 description: 了解 Visual Studio 訂用帳戶入口網站上提供給您的完整權益
-ms.openlocfilehash: 5403880dc5a2ac62cd23800cea5acacd2766bc6f
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: b2ace2416950336e7c4a872e378684d8160e2897
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232191"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902876"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>使用訂閱者入口網站 - my.visualstudio.com
 
-Visual Studio 訂閱門戶[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)是您的一體式資源，用於利用通過 Visual Studio 訂閱提供的擁有權益。
+Visual Studio 訂用帳戶入口網站 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 是您的多個資源，可充分利用您的 Visual Studio 訂閱所提供的完整權益。
 
-若要使用入口網站，您必須以和訂閱相關聯的身分識別登入。  這可能是您的 Microsoft 帳戶 （MSA） 或組織（如您的雇主或學校）提供給您的電子郵件地址。  了解[登入](signing-in.md)。
+若要使用入口網站，您必須以和訂閱相關聯的身分識別登入。  這可能是您的 Microsoft 帳戶（MSA）或組織提供給您的電子郵件地址，例如您的雇主或學校。  了解[登入](signing-in.md)。
 
 入口網站一共整理為六個頁面。  每個頁面都能讓您存取包含在您訂閱中各種不同的產品或服務。  六個頁面為 [權益]、[下載]、[產品金鑰]、[訂閱]、[支援] 及 [Marketplace]。
 
@@ -42,22 +42,22 @@ Visual Studio 訂閱門戶[https://my.visualstudio.com](https://my.visualstudio.
 ## <a name="product-keys"></a>[產品金鑰](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
 造訪 [產品金鑰] 頁面以取得安裝及啟動產品的金鑰，以及查看您已取得的金鑰。  您甚至可以匯出所有金鑰的清單，以另外妥善保存。
 
-## <a name="subscriptions"></a>[訂閱](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
+## <a name="subscriptions"></a>[訂用帳戶](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 [訂閱] 頁面可讓您查看自己所擁有的訂閱、在訂閱之間切換、更新訂閱，以及啟動新的訂閱。 您也可以將使用 Microsoft 帳戶存取的訂用帳戶，和已經與現有 Visual Studio IDE、Azure DevOps 或 Azure 資源相關聯的替代帳戶建立關聯。
 
 ## <a name="support"></a>支援
 
 除了可在 [權益] 頁面上的 [支援] 類別中找到的個別權益之外，[支援] 頁面也可讓您存取特定資源，以協助您充分運用 Visual Studio 訂閱。 存取[支援資源](https://visualstudio.microsoft.com/subscriptions/support/)以解決技術性問題，或是與訂閱銷售、帳戶及帳單相關聯的問題。
 
-## <a name="marketplace"></a>[Marketplace](https://marketplace.visualstudio.com/)
+## <a name="marketplace"></a>[Marketplace](https://marketplace.visualstudio.com/) \(英文\)
 
 是否需要更新 Visual Studio 雲端訂閱？  想要下載適用於 Visual Studio 產品系列的最新擴充功能？  Marketplace 可協助使用者尋找延伸模組、工具與服務，以進一步改進 Azure DevOps、Azure DevOps Server 與 Visual Studio Code。 您甚至可以成為發行者，並將自己的擴充功能發行到 Marketplace 上。
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
-登錄門戶[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)並查看您的權益。  您也可以深入了解如何使用 [Microsoft 帳戶](sign-in-msa.md) (MSA)、[公司或學校帳戶](sign-in-work.md)，甚至是 [GitHub 帳戶](sign-in-github.md)登入入口網站。 
+## <a name="next-steps"></a>接下來的步驟
+登入入口網站 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) ，並查看您的權益。  您也可以深入了解如何使用 [Microsoft 帳戶](sign-in-msa.md) (MSA)、[公司或學校帳戶](sign-in-work.md)，甚至是 [GitHub 帳戶](sign-in-github.md)登入入口網站。 

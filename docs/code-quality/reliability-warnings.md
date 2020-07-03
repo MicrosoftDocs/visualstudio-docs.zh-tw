@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3449723394f603b4b726fa8ebf2258e2c8f4c46c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 095631abc5678a27a4e79611433ff446337b956c
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283381"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835611"
 ---
 # <a name="reliability-warnings"></a>可靠性警告
 
@@ -36,7 +36,8 @@ ms.locfileid: "85283381"
 |[CA2007:不直接等候工作](../code-quality/ca2007.md)|非同步方法會[awaits](/dotnet/csharp/language-reference/keywords/await)直接等候 <xref:System.Threading.Tasks.Task> 。|
 |[CA2009：請勿對 ImmutableCollection 值呼叫 TolmmutableCollection](../code-quality/ca2009.md)|`ToImmutable`不必要地在命名空間的不可變集合上呼叫方法 <xref:System.Collections.Immutable> 。|
 |[CA2011：請勿在屬性 setter 中指派屬性](../code-quality/ca2011.md) | 屬性在其本身的[set 存取](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)子中不小心指派了值。 |
-|[CA2012：正確使用 ValueTasks](../code-quality/ca2012.md) | 從成員調用傳回的 ValueTasks 是要直接等待。  嘗試多次使用 ValueTask，或在已知完成前直接存取一個結果，可能會導致例外狀況或損毀。  忽略這類 ValueTask 可能表示功能錯誤，而且可能會降低效能。 |
-|[CA2013：不要使用具有實數值型別的 ReferenceEquals](../code-quality/ca2013.md) | 使用比較值時 <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> ，如果 objA 和 objB 是實值型別，則會在將它們傳遞至方法之前先將它們裝箱 <xref:System.Object.ReferenceEquals%2A> 。 這表示即使 objA 和 objB 都代表實數值型別的相同實例，但此方法仍會傳回 <xref:System.Object.ReferenceEquals%2A> false。 |
+|[CA2012：必須正確使用 ValueTasks](../code-quality/ca2012.md) | 從成員調用傳回的 ValueTasks 是要直接等待。  嘗試多次使用 ValueTask，或在已知完成前直接存取一個結果，可能會導致例外狀況或損毀。  忽略這類 ValueTask 可能表示功能錯誤，而且可能會降低效能。 |
+|[CA2013：請勿使用具有值類型的 ReferenceEquals](../code-quality/ca2013.md) | 使用比較值時 <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> ，如果 objA 和 objB 是實值型別，則會在將它們傳遞至方法之前先將它們裝箱 <xref:System.Object.ReferenceEquals%2A> 。 這表示即使 objA 和 objB 都代表實數值型別的相同實例，但此方法仍會傳回 <xref:System.Object.ReferenceEquals%2A> false。 |
 |[CA2014：不要在迴圈中使用 stackalloc。](../code-quality/ca2014.md) | Stackalloc 所配置的堆疊空間只會在目前方法的調用結尾處釋放。  在迴圈中使用它，可能會導致無限制的堆疊成長和最終的堆疊溢位狀況。 |
 |[CA2015：請勿針對衍生自 MemoryManager T 的類型定義完成項 &lt;&gt;](../code-quality/ca2015.md) | 將完成項加入至衍生自的類型 <xref:System.Buffers.MemoryManager%601> 時，可能會允許記憶體在仍由使用時釋放 <xref:System.Span%601> 。 |
+|[CA2016：將 CancellationToken 參數轉送至接受一個的方法](ca2016.md) | 將 `CancellationToken` 參數轉送至接受其中一個的方法，以確保作業取消通知會適當地傳播，或 `CancellationToken.None` 明確地傳入以表示刻意不會傳播權杖。 |

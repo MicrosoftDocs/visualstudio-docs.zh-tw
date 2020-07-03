@@ -1,7 +1,7 @@
 ---
 title: 將最近使用的清單新增至子功能表 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - MRU lists
 - menus, creating MRU list
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5624fe4a4f3c9ba774313e862f9e84a6f6d70862
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183271"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904207"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>將最近使用的清單新增至子功能表
 本逐步解說是以在[功能表中新增子](../extensibility/adding-a-submenu-to-a-menu.md)功能表的示範為基礎，並說明如何將動態清單新增至子功能表。 動態清單會形成建立最近使用的（MRU）清單的基礎。
@@ -30,7 +30,7 @@ ms.locfileid: "84183271"
 
 如需有關功能表和 *.vsct*檔的詳細資訊，請參閱[命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱[VISUAL STUDIO SDK](../extensibility/visual-studio-sdk.md)。
 
 ## <a name="create-an-extension"></a>建立延伸模組

@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: 瞭解如何在 Microsoft Store 中購買 Visual Studio 訂用帳戶，並在 Visual Studio 訂用帳戶入口網站中加以啟用。
-ms.openlocfilehash: f8102a10f049c04695ba1d5415febd9cee3d7130
-ms.sourcegitcommit: 960bab34e126c9ca449560a76a839a8f8c3263fb
+ms.openlocfilehash: 217c19ea0f8c4a793fc11a84eaa8f276960af3da
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82072490"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903094"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio 訂閱可透過 Microsoft Store 取得
 Visual Studio 訂用帳戶可透過各種不同的通道取得，包括[大量授權](https://www.microsoft.com/licensing/default)、雲端解決方案提供者、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)和 Microsoft Store。  本文將透過[Microsoft Store](https://www.microsoft.com/store/collections/visualstudio)探索購買和啟用訂閱。  
@@ -34,7 +34,7 @@ Visual Studio 訂用帳戶可透過各種不同的通道取得，包括[大量�
 透過 Microsoft Store 購買 Visual Studio 訂用帳戶之後，您可以從購買後收到的付款「確認頁面」或「確認電子郵件」開始啟用程式。
 
 1. 在確認電子郵件或確認購買頁面中，按一下 [按一下這裡登入]****。
-2. 系統會將您重新[https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs)導向至。
+2. 系統會將您重新導向至 [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs) 。
 3. 輸入要求 Visual Studio 訂用帳戶存取權的電子郵件地址，然後按一下 [繼續]****。
 4. 根據您所使用的帳戶類型，您可能會被重新導向至兩個不同登入頁面的其中之一：
     - 使用個人「Microsoft 帳戶」(MSA) 的訂閱者會看到 [Microsoft 帳戶密碼] 頁面。
@@ -53,7 +53,7 @@ Visual Studio 訂用帳戶可透過各種不同的通道取得，包括[大量�
 - [Azure 文件](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 啟用訂用帳戶之後，請造訪[權益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)頁面，以查看您的訂用帳戶中包含的所有工具、服務、訓練和支援權益。  我們建議您設定這些優點以開始使用：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
