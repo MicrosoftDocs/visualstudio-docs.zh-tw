@@ -6,14 +6,15 @@ ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 8825BBAD-65C0-480F-9868-A01E64F28250
-ms.openlocfilehash: 2ff0703171f5854baed2dd9be3767571a930bcb7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: troubleshooting
+ms.openlocfilehash: c631bae40d06a000e2e90c26ae5a9862c1e09aaa
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983491"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950576"
 ---
-# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>故障排除：更新程式檢索資訊時出錯
+# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>疑難排解：更新程式在擷取資訊時發生錯誤
 
 在極少數情況下，當您嘗試[更新 Visual Studio for Mac](update.md) 時，您可能會看到顯示錯誤訊息 [擷取更新資訊時發生錯誤]。 如果發生此錯誤，請嘗試下列步驟來修正：
 

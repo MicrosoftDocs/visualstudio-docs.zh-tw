@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: ad0be8546b88fbd01f54faf7eb00f71ddd6aa632
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: f8452094f0059a1ffa4421d1ccd02ee244559c72
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "76892151"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950341"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
 
@@ -34,7 +35,7 @@ ms.locfileid: "76892151"
 
 此解除安裝指令碼包含您將在文章中發現的大部分命令。 指令碼中有三個主要省略項目，並且因可能的外部相依性而未包含。 若要移除這種情況，請跳到以下相關小節，然後手動移除它們：
 
-- **[卸載單聲道](#uninstall-mono-sdk-mdk)**
+- **[卸載 Mono](#uninstall-mono-sdk-mdk)**
 - **[卸載 Android AVD](#uninstall-android-avd)**
 - **[解除安裝 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)**
 

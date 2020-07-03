@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: f9925954083c7fe64ad29c7cfed618a84d7a6386
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 50aa6077bafb2d4791555d449f06f6c81595a2f5
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984857"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950563"
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 
@@ -20,7 +21,7 @@ Visual Studio for Mac 提供兩種方式來新增專案的其他參考：
 
 它們是：
 
-* 參考
+* 參考資料
 * NuGets (透過 [套件] 資料夾新增)
 
 此外，Web 參考和原生參考也可以新增至任何專案。

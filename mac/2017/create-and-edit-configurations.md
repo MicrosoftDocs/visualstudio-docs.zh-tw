@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
-ms.openlocfilehash: 09591cb4feee4e9dc673f925bf3917eb3d07319b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 5fafb47be3c3a5b99a2ae7d07277d0977db93fa0
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983581"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950086"
 ---
 # <a name="creating-and-editing-build-configurations"></a>建立和編輯組建組態
 

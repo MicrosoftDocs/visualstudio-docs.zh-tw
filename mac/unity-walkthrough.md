@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 05/20/2019
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
-ms.openlocfilehash: c25df777a9af10859c70741a78c880a57c6f5b8e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: da9c8b3470fee406b577b136b6c55d76c9346e44
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984803"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950658"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中使用 Unity 開始建置遊戲
 
@@ -24,24 +25,24 @@ Visual Studio for Mac Tools for Unity 是免費的延伸模組，隨 Visual Stud
 > [!div class="checklist"]
 > * 深入了解使用 Visual Studio for Mac 進行 Unity 開發
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
-- Mac 視覺工作室[https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac)（ ）
-- Unity 5.6.1 個人版或[https://store.unity.com](https://store.unity.com/)更高版本（，需要運行unity.com帳戶）
+- Visual Studio for Mac （ [https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac) ）
+- Unity 5.6.1 Personal Edition 或更高版本（ [https://store.unity.com](https://store.unity.com/) 需要 unity.com 帳戶才能執行）
 
 ## <a name="intended-audience"></a>目標對象
 
 本實驗適用於熟悉 C# 的開發人員，但不需要深度經驗。
 
-## <a name="task-1-creating-a-basic-unity-project"></a>任務 1：創建基本統一專案
+## <a name="task-1-creating-a-basic-unity-project"></a>工作1：建立基本 Unity 專案
 
 1. 啟動 **Unity**。 如果系統要求，請登入。
 
-2. 按一下 **[新增]**。
+2. 按一下 **[新增]** 。
 
     ![Unity 中的 [New] \(新增\) 按鈕](media/unity-image1.png)
 
-3. 將專案名稱**** 設定為 **"UnityLab"**，然後選取 [3D]****。 按一下 [建立專案]****。
+3. 將專案名稱**** 設定為 **"UnityLab"**，然後選取 [3D]****。 按一下 [建立專案]。
 
     ![建立新的專案畫面](media/unity-image2.png)
 
@@ -79,7 +80,7 @@ Visual Studio for Mac Tools for Unity 是免費的延伸模組，隨 Visual Stud
 
 13. 關閉 [Finder]**** 視窗並返回 **Unity**。
 
-14. **"資產**"資料夾包含您的所有資產-藝術、代碼、音訊等。它現在是空的，但您將每個檔帶到您的專案中都轉到此處。 這始終是 **Unity 編輯器**中最上層的資料夾。 但一律透過 Unity 介面 (或 Visual Studio for Mac) 新增和移除檔案，而不是直接透過檔案系統。
+14. [**資產**] 資料夾包含您所有的資產-美工圖案、程式碼、音訊等等。它現在是空的，但您帶入專案的每一個單一檔案都會進入這裡。 這始終是 **Unity 編輯器**中最上層的資料夾。 但一律透過 Unity 介面 (或 Visual Studio for Mac) 新增和移除檔案，而不是直接透過檔案系統。
 
     ![Unity 中的 [Assets] 資料夾](media/unity-image10.png)
 
@@ -125,11 +126,11 @@ Visual Studio for Mac Tools for Unity 是免費的延伸模組，隨 Visual Stud
 
 25. 選取 [File] \(檔案\) > [Save Scenes]**** \(儲存場景\) 以儲存目前場景。 將它命名為 **"MyScene"**。
 
-## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>任務 2：使用 Mac 工具的視覺化工作室實現團結
+## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>工作2：使用適用于 Unity 的 Visual Studio for Mac 工具
 
 1. 編輯 C# 程式碼的最佳方法是使用 Visual Studio for Mac。 您可以將 Unity 設定為使用 Visual Studio for Mac 作為其預設處理常式。 選取 [Unity] > [Preferences]**** \(喜好設定\)。
 
-2. 選擇"**外部工具**"選項卡。從**外部腳本編輯器**下拉清單，選擇 **"流覽**"並選擇**應用程式/視覺化工作室.** 或者，如果已經有 [Visual Studio]**** 選項，請直接選取該選項。
+2. 選取 [**外部工具**] 索引標籤。從 [**外部腳本編輯器**] 下拉式清單中，選取 **[流覽]** ，然後選取 [**應用程式/Visual Studio**]。 或者，如果已經有 [Visual Studio]**** 選項，請直接選取該選項。
 
     ![喜好設定中的 [外部工具] 索引標籤](media/unity-image21.png)
 
@@ -189,7 +190,7 @@ Visual Studio for Mac Tools for Unity 是免費的延伸模組，隨 Visual Stud
 
 9. 將變更儲存至 **Visual Studio for Mac** 中的敵人指令碼。
 
-## <a name="task-3-debugging-the-unity-project"></a>任務 3：調試 Unity 專案
+## <a name="task-3-debugging-the-unity-project"></a>工作3：對 Unity 專案進行調試
 
 1. 在 **Start** 方法的第一行程式碼上設定中斷點。 您可以按一下目標行的編輯器邊界，或將游標放在該行上，然後按 **F9**。
 
@@ -247,7 +248,7 @@ Visual Studio for Mac Tools for Unity 是免費的延伸模組，隨 Visual Stud
 
     ![在 Visual Studio for Mac 中停止偵錯工作階段](media/unity-image37.png)
 
-## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>任務 4：探索 Mac 視覺工作室中的統一功能
+## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>工作4：探索 Visual Studio for Mac 中的 Unity 功能
 
 1. Visual Studio for Mac 可在程式碼編輯器中快速存取 Unity 文件。 將游標放在 **Update** 方法內 **Vector3** 符號上的某處，然後按 **⌘ Command + '**。
 
@@ -283,4 +284,4 @@ Visual Studio for Mac Tools for Unity 是免費的延伸模組，隨 Visual Stud
 
 ## <a name="summary"></a>摘要
 
-在此實驗室中，您已了解如何開始使用 Unity 與 Visual Studio for Mac 建立遊戲。 有關[https://unity3d.com/learn](https://unity3d.com/learn)Unity 的更多，請參閱。
+在此實驗室中，您已了解如何開始使用 Unity 與 Visual Studio for Mac 建立遊戲。 [https://unity3d.com/learn](https://unity3d.com/learn)若要深入瞭解 Unity，請參閱。

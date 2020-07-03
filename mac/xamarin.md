@@ -5,12 +5,13 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: e40d9640ca2e62148e4ad166845d8f59854367ff
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73714475"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950665"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 行動裝置應用程式開發
 
@@ -18,11 +19,11 @@ ms.locfileid: "73714475"
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 
-XAML XAML 熱重載入 Xamarin.Forms 內置於 8.3 版及更高版本的 Mac 視覺工作室中。 每次保存檔時，啟用此功能的更改都會立即反映在正在運行的應用中。
+適用于 Xamarin 的 XAML 熱重載。表單內建于8.3 版和更新版本中的 Visual Studio for Mac。 啟用這項功能後，每次您儲存檔案時，變更都會立即反映在執行中的應用程式中。
 
-XAML 熱重載入可以通過選中在 Visual Studio >**首選項>專案> Xamarin 熱重載入**啟用**Xamarin 熱重載入**核取方塊。
+若要啟用 XAML 熱重載，可以在**Visual Studio > 喜好設定 > 專案 > Xamarin 熱重載**] 上，勾選 [**啟用 Xamarin 熱重載**] 核取方塊。
 
-有關熱重新載入的詳細資訊，請參閱文檔中的[XAML 熱重裝。Forms 指南](/xamarin/xamarin-forms/xaml/hot-reload)。
+如需有關熱重載的詳細資訊，請參閱檔中的適用于[Xamarin 的 XAML 熱重載指南](/xamarin/xamarin-forms/xaml/hot-reload)。
 
 ## <a name="android"></a>Android
 

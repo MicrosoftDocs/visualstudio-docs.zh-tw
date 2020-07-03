@@ -5,12 +5,13 @@ author: therealjohn
 ms.author: johmil
 ms.date: 05/13/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 7e9dc8728a3115368f1772287362b2a9f21a4309
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.topic: how-to
+ms.openlocfilehash: 9d6fd5ffefcd6696fa67302a8d59fd46e498a472
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173314"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950607"
 ---
 # <a name="set-up-a-git-repository"></a>設定 Git 存放庫
 

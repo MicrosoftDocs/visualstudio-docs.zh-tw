@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 664f2431de7702219ced2ae2af4bd908e814a689
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 4bfa6bdfbb4b27a849b4807c99ae9dc8b9bd6764
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985192"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950392"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>登入 Visual Studio for Mac
 
@@ -24,7 +25,7 @@ ms.locfileid: "74985192"
 
 若要登入 Visual Studio for Mac，請執行下列步驟：
 
-1. 按一下"歡迎"頁上的 **"登錄**"連結以顯示"帳戶"對話方塊，然後按"**登錄"** 按鈕：
+1. 按一下 [歡迎使用] 頁面上的 [登**入**] 連結，以顯示 [帳戶] 對話方塊，然後按 [登**入**] 按鈕：
 
     ![Visual Studio for Mac 中的帳戶對話方塊](media/signing-in-image12.png)
 

@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: 7133ffd01d8f384efa91d95bc8ea05aa75b7dd0d
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: ae67bdd9a9dac8daed268105d830064fa6ef4cae
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985224"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950422"
 ---
 # <a name="set-up-a-subversion-repository"></a>設定 Subversion 存放庫
 

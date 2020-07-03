@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: 4d676f6109c97ae883473a35721f9207e72a6da4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: d90a2a92e2902633e5667e71c5692faa8fa161e1
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68872366"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950067"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>開啟 Visual Studio for Mac 的多個方案或執行個體
 
@@ -29,7 +30,7 @@ ms.locfileid: "68872366"
 
 若要連同第一個解決方案開啟第二個方案，請使用下列步驟：
 
-1. 打開第一個解決方案後，選擇 **"打開檔** > **Open**"。
+1. 在您的第一個解決方案已開啟的情況下 **，選取 [**  >  **開啟**檔案]。
 2. 瀏覽檔案系統，以尋找現有的解決方案。
 3. 選取 **.sln** 檔案，然後選取 [選項]****：
 
@@ -43,7 +44,7 @@ ms.locfileid: "68872366"
 
 或者，如果您最近開啟了方案，則可以使用下列步驟：
 
-1. 轉到**檔** > **最近的解決方案**。
+1. 前往 [ **File**檔案] [  >  **最近使用的解決方案**]。
 
     ![[最近使用的方案] 功能表的螢幕擷取畫面](media/open-multiple-solutions-image2.png)
 

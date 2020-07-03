@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: e6dbe3b04a39a1ffd9a6e1b8f241b497ba8a6563
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 1d381bbfd0e83008b962968816c77f540e6a52f5
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984843"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950456"
 ---
 # <a name="set-up-a-git-repository"></a>設定 Git 存放庫
 
@@ -141,7 +142,7 @@ Visual Studio for Mac 現在會將變更推送至您的遠端 GitHub 存放庫�
 
     ![顯示的 GitHub URL](media/version-control-git14.png)
 
-4. 替換"**連接到存儲庫**"選項卡中的**URL**條目欄位中的所有文本。這將填充此選項卡中的大部分其他欄位，如步驟#2中的圖像所示。
+4. 取代 [**連接到存放庫**] 索引標籤中 [ **URL** ] 專案欄位的所有文字。這會為您填入此索引標籤中的大部分其他欄位，如步驟 #2 中的影像所示。
 
 5. 輸入您想要複製存放庫的目標目錄，然後按 [簽出]****。
 
