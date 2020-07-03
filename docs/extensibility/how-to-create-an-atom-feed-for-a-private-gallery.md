@@ -1,7 +1,7 @@
 ---
-title: 如何:為專用庫創建 Atom 源 |微軟文件
+title: 如何：建立私用資源庫的 Atom 摘要 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
@@ -11,30 +11,30 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72fbf2d3973ffd84de1cf6f33788c43511c3ce4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 269161e831fdb176dbfea844e951597efb467312
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80711003"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905855"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何:為專用函式庫建立 Atom 源
-您可以建立 Atom (RSS) 來源到包含延伸的 Intranet 位置,並將來源為專用函式庫加入**到擴充與更新**。 有關詳細資訊,請參閱[私人畫廊](../extensibility/private-galleries.md)。
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何：建立私用資源庫的 Atom 摘要
+您可以建立 Atom （RSS）摘要到包含延伸模組的內部網路位置，並將摘要新增至 [**擴充功能和更新**] 做為私用資源庫。 如需詳細資訊，請參閱私用資源[庫](../extensibility/private-galleries.md)。
 
-## <a name="create-an-atom-feed"></a>建立原子來源
- 要將 Atom 源建立為專用庫,請首先將擴展名 *(.vsix*檔)收集到資料夾中。 如果需要,可以將它們組織到子資料夾中。 您還需要以下資源:
+## <a name="create-an-atom-feed"></a>建立 Atom 摘要
+ 若要建立 Atom 摘要做為私用資源庫，您必須先將延伸模組（*.vsix*檔案）收集到資料夾中。 如有需要，您可以將它們組織成子資料夾。 您也將需要下列資源：
 
-- 使擴展作為專用庫可用的*atom.xml*檔。 有關如何將*Atom.xml*檔案連接到**延伸和更新**的資訊,請參閱[專用函式庫](../extensibility/private-galleries.md)。
+- 可讓擴充功能當做私用資源庫使用的*atom.xml*檔案。 如需有關如何將*atom.xml*檔案連接到**擴充功能和更新**的詳細資訊，請參閱私用資源[庫](../extensibility/private-galleries.md)。
 
-- 包含從副檔名中提取的任何影像檔的資料夾(例如,螢幕截圖)。 *Atom.xml*檔包含指向這些圖像的相對連結,以便它們在**擴展和更新**中可用。
+- 資料夾，其中包含從擴充功能（例如螢幕擷取畫面）解壓縮的任何影像檔案。 *atom.xml*檔案包含這些映射的相對連結，以便在 [**擴充功能和更新**] 中提供。
 
-  例如,假設您已將以下兩個擴展收集到一個資料夾中:
+  例如，假設您已將下列兩個延伸模組收集到資料夾中：
 
-- *Template_Wizard_239.vsix*,這是一個空的 VSIX 專案範本。
+- *Template_Wizard_239 .vsix*，這是空的 vsix 專案範本。
 
-- *選擇高亮顯示.vsix*, 這是一個突出顯示選定單詞的所有實例的工具。
+- *SelectionHighlight*，這是用來反白顯示所選單字之所有實例的工具。
 
-  *atom.xml*檔案的內容類似於以下範例:
+  *atom.xml*檔案的內容會如下列範例所示：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -70,7 +70,7 @@ ms.locfileid: "80711003"
 </feed>
 ```
 
- 請注意,兩個鏈接標記是指生成的圖像資料夾中的屏幕截圖。
+ 請注意，這兩個連結標記會參考所產生之影像資料夾中的螢幕擷取畫面。
 
 ## <a name="see-also"></a>另請參閱
-- [私人畫廊](../extensibility/private-galleries.md)
+- [私用資源庫](../extensibility/private-galleries.md)

@@ -1,88 +1,88 @@
 ---
-title: VISUAL Studio 訂閱中的 CODE 雜誌權益 |微軟文檔
+title: Visual Studio 訂閱的程式碼雜誌權益 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/25/2020
-ms.topic: conceptual
-description: 瞭解 Visual Studio 訂閱中包含的 CODE 雜誌權益。
-ms.openlocfilehash: f3b8c7c10cc8995e05b0e0da7da5e85226e131a3
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.topic: how-to
+description: 瞭解 Visual Studio 訂用帳戶中所包含的程式碼雜誌權益。
+ms.openlocfilehash: 30b97c42c3ead60859aed593a3ffbad6ed721227
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80274007"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906071"
 ---
-# <a name="code-magazine-included-in-visual-studio-subscriptions"></a>VISUAL 工作室訂閱中包含的 CODE 雜誌
+# <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中包含的程式碼雜誌
 
-CODE 雜誌是一本領先的獨立軟體發展雜誌，涵蓋所有平臺的開發技術。  選定的 Visual Studio 訂閱有資格獲得該雜誌印刷版或數位版的一年訂閱。
+CODE 雜誌是領先的獨立軟體發展人員雜誌，涵蓋所有平臺上的開發技術。  選取的 Visual Studio 訂用帳戶有資格接收一年期的一年度訂閱，以列印或數位版本的雜誌。
 
 ## <a name="activation-steps"></a>啟用步驟
-設置 CODE 雜誌訂閱的過程非常簡單。  請遵循下列步驟進行：
+設定您的 CODE 雜誌訂閱的程式很簡單。  請遵循下列步驟進行：
 
-1. 訪問[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-2. 在門戶的專業發展或教育部分找到 CODE 雜誌磁貼，然後按一下 **"獲取代碼**"。
+1. 流覽[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+2. 在入口網站的 [專業開發] 或 [教育] 區段中找出 [程式碼雜誌] 磚，然後按一下 [**取得程式碼**]。
    > [!div class="mx-imgBorder"]
-   > ![代碼雜誌磁貼](_img/vs-code-magazine/vs-code-magazine-tile.png "CODE 雜誌磁貼")
-3. 您將看到一條消息，指出您的代碼已被檢索。  按一下 [啟用]**** 繼續。  （如果您尚未準備好啟動，可以。  您可以隨時返回磁貼以啟動。  檢索代碼後，"獲取代碼"連結將改為"啟動"。
+   > ![程式碼雜誌磚](_img/vs-code-magazine/vs-code-magazine-tile.png "程式碼雜誌磚")
+3. 您會看到一則訊息，指出您的程式碼已被抓取。  按一下 [啟用]**** 繼續。  （如果您還沒準備好啟用，沒關係。  您可以隨時返回磚來啟動。  在您取得程式碼之後，[取得程式碼] 連結會讀取 [啟動]。）
    > [!div class="mx-imgBorder"]
-   > ![已檢索的 CODE 雜誌代碼](_img/vs-code-magazine/vs-code-magazine-success.png "已成功檢索代碼")
-4. 您將被重定向到 CODE 雜誌登錄頁。 選擇您所在的國家/地區，選擇您希望如何接收雜誌。 
+   > ![已抓取程式碼雜誌代碼](_img/vs-code-magazine/vs-code-magazine-success.png "已成功取出程式碼")
+4. 系統會將您重新導向至程式碼雜誌登陸頁面。 選取您的國家/地區，並選擇您想要接收雜誌的方式。 
    > [!NOTE]
-   > 視覺化工作室開發人員基礎成員只能訪問數位訂閱。 
-5. 根據您的選擇，您將看到一張說明，顯示訂閱價格以及已應用的優惠券金額。
+   > Visual Studio Dev Essentials 成員只能存取數位訂用帳戶。 
+5. 根據您的選擇，您會看到一個便箋，其中會顯示您的訂用帳戶價格，以及已套用的優惠券金額。
    > [!NOTE]
-   > 對於列印訂閱：
-   > - 美國以外的訂戶可能會收取運費。 
-   > - 請留出數周時間交付您的第一個印刷版。
+   > 針對列印訂閱：
+   > - 美國以外的訂閱者可能會產生運送費用。 
+   > - 請提供幾周的時間，讓您能夠傳遞第一個列印的版本。
       > [!div class="mx-imgBorder"]
-      > ![CODE 雜誌訂閱詳細資訊](_img/vs-code-magazine/vs-code-magazine-details.png "訂閱詳細資訊和價格")
-6. 接下來，您需要提供訂閱者資訊和傳遞位址。  （即使數位訂閱也需要交付位址，因為它支援履行、優惠選擇和數位訪問流程。
-7. 如果您居住在美國境外，並選擇接收印刷雜誌訂閱，系統可能會要求您提供帳單位址和付款資訊，以支付運費。 
-8. 您可以通過按一下核取方塊來加入宣告 CODE HTML 通訊。
+      > ![程式碼雜誌訂用帳戶詳細資料](_img/vs-code-magazine/vs-code-magazine-details.png "訂用帳戶詳細資料和價格")
+6. 接下來，您必須提供您的訂閱者資訊和傳遞位址。  （即使是數位訂用帳戶，也需要傳遞位址，因為它支援履行、供應專案選取和數位存取程式）。
+7. 如果您居住在美國以外的地區，並選擇接收印刷的雜誌訂用帳戶，系統可能會要求您提供帳單位址和付款資訊，以涵蓋出貨的成本。 
+8. 您可以按一下核取方塊，選擇撰寫 HTML 電子報的程式碼。
    > [!div class="mx-imgBorder"]
-   > ![CODE 雜誌訂閱者資訊](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "訂閱者資訊和遞送位址")
-9. 按一下 **"訂購"** 以完成訂閱。  
-完成訂閱訂單後，您將看到一個確認頁面，其中包括可用於查看已收到哪些問題的連結： https://codemag.com/my/fulfillment。 
+   > ![程式碼雜誌訂閱者資訊](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "訂閱者資訊與遞送位址")
+9. 按一下 [**下單**] 來完成您的訂用帳戶。  
+完成訂用帳戶訂單後，您會看到確認頁面，其中包含您可以用來查看已收到之問題的連結： https://codemag.com/my/fulfillment 。 
 
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     聲道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  否          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise   | Vl| 可用       |  否          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | VL| 可用       |  否          |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                            |  否          |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                      | 可用                                                            |  否          |
+| 含 GitHub Enterprise 的 Visual Studio Professional | VL                                      | 可用                                                            |  否          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  否          |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  否          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
-<sup>1</sup>  *包括： 不轉售 （NFR）， 視覺工作室行業合作夥伴 （VSIP）， FTE， BizSpark， 想像溢價. 不包括：微軟合作夥伴網路 （MPN），最有價值的專業人士 （MVP），區域總監 （RD），MCT 軟體&服務開發人員，MCT 軟體&服務，想像一下。*
+<sup>1</sup>  *包括：禁止轉售（NFR）、Visual Studio 產業夥伴（VSIP）、FTE、BizSpark、想像 Premium。 排除： Microsoft 合作夥伴網路（MPN）、最有價值專家（MVP）、區域主管（RD）、MCT Software & 服務開發人員、MCT 軟體 & 服務，請想像。*
 
 > [!NOTE]
-> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新客戶前往[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)探索購買 Visual Studio 的不同選項。
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶前往以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索 Visual Studio 購買的不同選項。
 
-不確定您使用哪一個訂用帳戶？  連接到以查看[https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)分配給您的電子郵件地址的所有訂閱。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
+不確定您使用哪一個訂用帳戶？  連接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
-### <a name="q-if-the-subscription-is-free-why-am-i-being-asked-for-a-credit-card"></a>問：如果訂閱是免費的，為什麼要要求您使用信用卡？  
-答：在國際上免費發送印刷品是費不費的。  選擇CODE雜誌印刷版並居住在美國境外的訂閱者將收取運費。 為了避免運費，請選擇雜誌的數位版本。 
+### <a name="q-if-the-subscription-is-free-why-am-i-being-asked-for-a-credit-card"></a>問：如果訂用帳戶是免費的，為什麼會要求您提供信用卡？  
+答：您可以在國際上傳送免費的列印複本，以節省成本。  選擇列印版程式碼雜誌並位於美國以外地區的訂閱者，將會收取運送費用。 若要避免運送費用，請選擇雜誌的數位版本。 
 
-### <a name="q-why-do-i-need-to-provide-a-delivery-address-for-a-digital-subscription"></a>問：為什麼我需要為數字訂閱提供傳遞位址？
-答：CODE 雜誌收集您的位址，無論訂閱是用於列印訂閱還是數位訂閱，以支援履行、選擇和數位訪問過程。  有關 CODE 雜誌對您的資料有何處理的詳細資訊，請參閱他們的[隱私政策](https://www.codemag.com/Home/Privacy)。
+### <a name="q-why-do-i-need-to-provide-a-delivery-address-for-a-digital-subscription"></a>問：為什麼我需要提供數位訂閱的傳遞位址？
+答：程式碼雜誌會收集您的位址，不論訂用帳戶是用於列印或數位訂用帳戶，以支援履行、供應專案選擇和數位存取程式。  如需有關哪些代碼雜誌與您的資料有關的詳細資訊，請參閱其[隱私權原則](https://www.codemag.com/Home/Privacy)。
 
 ## <a name="support-resources"></a>支援資源
-- 對您的 CODE 雜誌訂閱有疑問？  通過電子郵件或電話聯繫[CODE 雜誌](https://www.codemag.com/contact)，或提交線上支援請求。
-- 有關視覺工作室訂閱的銷售、訂閱、帳戶和計費説明，請聯繫視覺化工作室[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 您的程式碼雜誌訂閱有任何疑問嗎？  透過電子郵件或電話聯絡程式[代碼雜誌](https://www.codemag.com/contact)，或提交線上支援要求。
+- 如需 Visual Studio 訂閱的銷售、訂閱、帳戶和計費的協助，請聯絡 Visual Studio[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
-查看訂閱中包含的其他好處。 訪問[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+## <a name="next-steps"></a>接下來的步驟
+查看您的訂用帳戶中所含的其他絕佳權益。 請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 。
 
-如果尚未啟動訂閱附帶的 Azure DevTest 個人信用權益，請訪問[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)並按一下"工具"類別中的 Azure 磁貼以設置 Azure 訂閱並兌換 Azure DevTest 個人信用額度。
+如果您尚未啟用訂用帳戶隨附的 Azure DevTest 個人信用額度權益，請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並按一下 [工具] 類別中的 [azure] 磚，以設定您的 azure 訂用帳戶，並兌換您的 Azure DevTest 個別信用額度。

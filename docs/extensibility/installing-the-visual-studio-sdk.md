@@ -1,40 +1,40 @@
 ---
-title: 安裝視覺化工作室 SDK |微軟文件
+title: 安裝 Visual Studio SDK |Microsoft Docs
 ms.date: 07/12/2018
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f391708abbd8a9b66f2dfd5aaa6559cb075910d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 31df92b011336320d759461ed16ce2a3c8f61017
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80710351"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905540"
 ---
 # <a name="install-the-visual-studio-sdk"></a>安裝 Visual Studio IDE
 
-可視化工作室 SDK(軟體開發工具組)是可視化工作室設置中的可選功能。 以後還可以安裝 VS SDK。
+Visual Studio SDK （軟體發展工具組）是 Visual Studio 安裝程式中的選用功能。 您稍後也可以安裝 VS SDK。
 
-## <a name="install-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>安裝視覺化工作室 SDK 作為視覺化工作室安裝的一部分
+## <a name="install-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>安裝 Visual Studio SDK 作為 Visual Studio 安裝的一部分
 
-要將 VS SDK 包含在可視化工作室安裝中,請在 **「其他工具集**」下安裝**Visual Studio 擴展開發**工作負載。 此工作負載將安裝可視化工作室 SDK 和必要的先決條件。 您可以通過從 **「摘要」** 檢視中選擇或取消選擇元件來進一步調整安裝。
+若要在您的 Visual Studio 安裝中包含 VS SDK，請在**其他工具**組下安裝**Visual Studio 延伸模組開發**工作負載。 此工作負載會安裝 Visual Studio SDK 和必要的必要條件。 您可以從 [**摘要**] 視圖中選取或取消選取 [元件]，以進一步調整安裝。
 
-## <a name="install-the-visual-studio-sdk-after-installing-visual-studio"></a>安裝視覺工作室後安裝可視化工作室 SDK
+## <a name="install-the-visual-studio-sdk-after-installing-visual-studio"></a>安裝之後，請安裝 Visual Studio SDK Visual Studio
 
-要在完成 Visual Studio 安裝後安裝 Visual Studio SDK,請重新運行 Visual Studio 安裝程式並選擇**Visual Studio 擴展開發**工作負載。
+若要在完成您的 Visual Studio 安裝之後安裝 Visual Studio SDK，請重新執行 Visual Studio 安裝程式，然後選取 [ **Visual Studio 延伸模組開發**] 工作負載。
 
-## <a name="install-the-visual-studio-sdk-from-a-solution"></a>從解決方案安裝視覺化工作室 SDK
+## <a name="install-the-visual-studio-sdk-from-a-solution"></a>從解決方案安裝 Visual Studio SDK
 
-如果在未首先安裝 VS SDK 的情況下開啟具有擴充性項目的解決方案,系統將提示**安裝缺少功能對話框**以安裝 Visual Studio**擴充開發**工作負荷:
+如果您在未先安裝 VS SDK 的情況下，使用擴充性專案開啟方案，系統會提示您安裝 [**缺少功能**] 對話方塊，以安裝**Visual Studio 延伸模組開發**工作負載：
 
-![安裝延伸開發](../extensibility/media/install-extension-development.png "安裝延伸開發")
+![安裝延伸模組開發](../extensibility/media/install-extension-development.png "安裝延伸模組開發")
 
-## <a name="install-the-visual-studio-sdk-from-the-command-line"></a>從命令列安裝視覺化工作室 SDK
+## <a name="install-the-visual-studio-sdk-from-the-command-line"></a>從命令列安裝 Visual Studio SDK
 
-與任何 Visual Studio 工作負載或元件一樣,您還可以從命令行安裝**Visual Studio 擴展開發**工作負載(ID:Microsoft.VisualStudio.工作負荷.VisualStudio 擴展)。 有關適當的命令列交換機的詳細資訊以及有關確定工作負載或元件標識符的一般說明,請參閱[使用命令列參數安裝 Visual Studio。](../install/use-command-line-parameters-to-install-visual-studio.md)
+如同任何 Visual Studio 工作負載或元件，您也可以從命令列安裝**Visual Studio 延伸模組開發**工作負載（識別碼： VisualStudio）。 如需適當命令列參數的詳細資訊，以及決定工作負載或元件識別碼的一般指示，請參閱[使用命令列參數來安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) 。
 
-請注意,您必須使用與已安裝版本的 Visual Studio 相匹配的可視化工作室安裝程式。 例如,如果電腦上安裝了 Visual Studio 企業版,則必須運行可視化工作室企業安裝程式 *(vs_enterprise.exe*)。
+請注意，您必須使用符合已安裝之 Visual Studio 版本的 Visual Studio 安裝程式。 例如，如果您已在電腦上安裝 Visual Studio Enterprise，則必須執行 Visual Studio Enterprise 安裝程式（*vs_enterprise.exe*）。

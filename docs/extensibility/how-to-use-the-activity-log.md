@@ -1,7 +1,7 @@
 ---
-title: 如何:使用活動日誌 |微軟文件
+title: 如何：使用活動記錄 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
@@ -11,22 +11,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64986be303370cf8c9048612ff3d44e82e96805a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80710586"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905577"
 ---
-# <a name="how-to-use-the-activity-log"></a>如何:使用活動紀錄
-VS包可以將消息寫入活動日誌。 此功能對於在零售環境中調試 VSPackages 特別有用。
+# <a name="how-to-use-the-activity-log"></a>如何：使用活動記錄
+Vspackage 可以將訊息寫入至活動記錄。 這項功能特別適用于在零售環境中進行 Vspackage 的偵錯工具。
 
 > [!TIP]
-> 活動日誌始終處於打開狀態。 Visual Studio 保留最近 100 個條目的前 10 個條目的滾動緩衝區以及前 10 個條目,這些條目具有常規配置資訊。
+> 活動記錄一律會開啟。 Visual Studio 會保留最後100專案的輪流緩衝區，以及具有一般設定資訊的前10個專案。
 
-## <a name="to-write-an-entry-to-the-activity-log"></a>將項目寫入活動紀錄
+## <a name="to-write-an-entry-to-the-activity-log"></a>若要將專案寫入活動記錄
 
-1. 在<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法或任何其他方法中插入此代碼,但 VSPackage 建構函數除外:
+1. 在 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 方法或任何其他方法（VSPackage 的函式除外）中插入此程式碼：
 
     ```csharp
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -38,19 +38,19 @@ VS包可以將消息寫入活動日誌。 此功能對於在零售環境中調�
         "Called for: {0}", this.ToString()));
     ```
 
-     此代碼獲取<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>服務並將其轉換為<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>使用當前文化上下文將資訊條目寫入活動日誌。
+     這段程式碼 <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> 會取得服務，並將它轉換成 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> 介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>使用目前的文化內容，將資訊專案寫入活動記錄中。
 
-2. 載入 VSPackage 時(通常在呼叫命令或打開視窗時),文本將寫入活動日誌。
+2. 載入 VSPackage 時（通常是在叫用命令或開啟視窗時），會將文字寫入至活動記錄檔。
 
 ## <a name="to-examine-the-activity-log"></a>檢查活動記錄
 
-1. 使用[/Log](../ide/reference/log-devenv-exe.md)命令列開關運行 Visual Studio,在工作階段期間將 ActivityLog.xml 寫入磁碟。
+1. 使用[/log](../ide/reference/log-devenv-exe.md)命令列參數執行 Visual Studio，以在會話期間將 ActivityLog.xml 寫入磁片。
 
-2. 關閉 Visual Studio 後,在可視化工作室數據的子資料夾中尋找活動日誌:
+2. 關閉 Visual Studio 之後，請在子資料夾中尋找 Visual Studio 資料的活動記錄檔：
 
-   <em> *%AppData%</em>[微軟]VisualStudio\\\<版本>_活動日誌.xml*。
+   <em> *% AppData%</em>\Microsoft\VisualStudio \\ \<version>\ActivityLog.xml*。
 
-3. 使用任何文字編輯器開啟活動日誌。 下面是一個典型的條目:
+3. 使用任何文字編輯器開啟活動記錄檔。 以下是典型的專案：
 
    ```
    Called for: Company.MyApp.MyAppPackage ...
@@ -58,13 +58,13 @@ VS包可以將消息寫入活動日誌。 此功能對於在零售環境中調�
 
 ## <a name="robust-programming"></a>穩固程式設計
 
-由於活動日誌是服務,因此在 VSPackage 構造函數中,活動日誌不可用。
+由於活動記錄是一項服務，因此無法在 VSPackage 的函式中使用活動記錄。
 
-您應該在寫入活動日誌之前獲取活動日誌。 不要緩存或保存活動日誌以供將來使用。
+在寫入活動記錄之前，您應該先取得它。 不要快取或儲存活動記錄以供未來使用。
 
 ## <a name="see-also"></a>另請參閱
 
-- [/日誌 (devenv.exe)](../ide/reference/log-devenv-exe.md)
+- [/Log （devenv.exe）](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>
 - [針對 VSPackage 進行疑難排解](../extensibility/troubleshooting-vspackages.md)

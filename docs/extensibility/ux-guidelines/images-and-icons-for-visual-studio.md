@@ -1,19 +1,19 @@
 ---
 title: Visual Studio 的影像和圖示 |Microsoft Docs
 ms.date: 04/26/2017
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7de4488a8304b21b578b2ad5ac2c29deafcf1b0a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537536"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906118"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>適用於 Visual Studio 的影像和圖示
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Visual Studio 中的影像使用

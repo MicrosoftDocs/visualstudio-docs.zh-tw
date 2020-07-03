@@ -1,7 +1,7 @@
 ---
-title: 為 Windows 安裝程式部署準備擴展 |微軟文件
+title: 準備 Windows Installer 部署的擴充功能 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - vsix msi
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
@@ -10,50 +10,50 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8636dfbbad06192e5edbb61a9a784f64b8f3f14f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 74cfdcaf5b9f9babe9eefed59f1ea62478434e66
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702020"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906149"
 ---
-# <a name="prepare-extensions-for-windows-installer-deployment"></a>在 Windows 安裝程式部署準備擴充
-不能使用 Windows 安裝程式套件 (MSI) 部署 VSIX 套件。 但是,您可以提取用於 MSI 部署的 VSIX 包的內容。 本文件展示如何準備預設輸出為 VSIX 套件的專案,以便包含在安裝程式專案中。
+# <a name="prepare-extensions-for-windows-installer-deployment"></a>準備 Windows Installer 部署的擴充功能
+您無法使用 Windows Installer 封裝（MSI）來部署 VSIX 封裝。 不過，您可以將適用于 MSI 部署的 VSIX 封裝內容解壓縮。 本檔說明如何準備專案，其預設輸出是包含在安裝專案中的 VSIX 封裝。
 
-## <a name="prepare-an-extension-project-for-windows-installer-deployment"></a>在 Windows 安裝程式部署準備擴充項目
- 在添加到安裝程式專案之前,對新的擴展專案執行這些步驟。
+## <a name="prepare-an-extension-project-for-windows-installer-deployment"></a>準備 Windows Installer 部署的擴充功能專案
+ 請先在新的擴充功能專案上執行這些步驟，再將加入至安裝專案。
 
-### <a name="to-prepare-an-extension-project-for-windows-installer-deployment"></a>在 Windows 安裝程式部署準備擴充項目
+### <a name="to-prepare-an-extension-project-for-windows-installer-deployment"></a>準備 Windows Installer 部署的擴充功能專案
 
-1. 創建 VSPackage、MEF 元件、編輯器修飾或其他包含 VSIX 清單的擴充性項目類型。
+1. 建立包含 VSIX 資訊清單的 VSPackage、MEF 元件、編輯器裝飾或其他擴充性專案類型。
 
-2. 開啟代碼編輯器中的 VSIX 清單。
+2. 在程式碼編輯器中開啟 VSIX 資訊清單。
 
-3. 將`InstalledByMsi`VSIX 清單的元素`true`設定為 。 有關 VSIX 清單的詳細資訊,請參閱[VSIX 擴充架構 2.0 參考](../extensibility/vsix-extension-schema-2-0-reference.md)。
+3. 將 `InstalledByMsi` VSIX 資訊清單的元素設定為 `true` 。 如需 VSIX 資訊清單的詳細資訊，請參閱[vsix 延伸模組架構2.0 參考](../extensibility/vsix-extension-schema-2-0-reference.md)。
 
-     這可以防止 VSIX 安裝程式嘗試安裝元件。
+     這會導致 VSIX 安裝程式無法嘗試安裝元件。
 
-4. 右鍵單擊**解決方案資源管理器**中的專案,然後單擊 **"屬性**"。
+4. 以滑鼠右鍵按一下**方案總管**中的專案，然後按一下 [**屬性**]。
 
-5. 選擇**VSIX**選項卡。
+5. 選取 [ **VSIX** ] 索引標籤。
 
-6. 選中標記為將**VSIX 內容複製到以下位置**的框,然後鍵入安裝程式專案將拾取檔的路徑。
+6. 核取標示為 **[將 VSIX 內容複寫到下列位置**] 的方塊，然後輸入安裝專案將從中挑選檔案的路徑。
 
-## <a name="extract-files-from-an-existing-vsix-package"></a>從現有 VSIX 套件中提取檔案
- 執行這些步驟,在沒有源檔時,將現有 VSIX 包的內容添加到安裝程式專案中。
+## <a name="extract-files-from-an-existing-vsix-package"></a>從現有的 VSIX 封裝解壓縮檔案
+ 當您沒有原始程式檔時，請執行下列步驟，將現有 VSIX 封裝的內容加入至安裝專案。
 
-### <a name="to-extract-files-from-an-existing-vsix-package"></a>從現有 VSIX 套件中提取檔案
+### <a name="to-extract-files-from-an-existing-vsix-package"></a>從現有的 VSIX 封裝解壓縮檔案
 
-1. 重新命名 *。包含*從*檔案名.vsix*到*filename.zip*的副檔名的 VSIX 檔。
+1. 重新命名 *。VSIX*檔案，其中包含從*檔案名 .vsix*到*filename.zip*的副檔名。
 
-2. 將 *.zip*檔案的內容複製到目錄中。
+2. 將 *.zip*檔案的內容複寫到目錄中。
 
-3. 從目錄中移除 *[Content_types]xml*檔。
+3. 刪除目錄中的 *[Content_types] .xml*檔案。
 
-4. 編輯 VSIX 清單,如上一過程所示。
+4. 編輯 VSIX 資訊清單，如前一個程式所示。
 
-5. 將其餘檔添加到安裝程式專案中。
+5. 將其餘檔案加入至您的安裝專案。
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室安裝程式部署](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)
-- [演練:建立自訂操作](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))
+- [Visual Studio 安裝程式部署](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)
+- [逐步解說：建立自訂動作](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

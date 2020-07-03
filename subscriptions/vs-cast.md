@@ -5,23 +5,23 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 03/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CAST Highlight 權益
-ms.openlocfilehash: f3f21a29e8ad710471eddadfbd5c98677db3098e
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 565dd9326447757cd2af23e83dfcf7f2d4553054
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80274020"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906066"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 CAST Highlight 權益
-在移轉至雲端時，開發人員需要掌握其軟體的重要見解。 借助 CAST 突出顯示，Visual Studio 訂閱者可以快速掃描其應用程式原始程式碼，以確定其應用程式的雲就緒性，以便遷移到 Azure，並在遷移期間和之後監視其應用的進度。
+在移轉至雲端時，開發人員需要掌握其軟體的重要見解。 透過 CAST 醒目提示，Visual Studio 訂閱者可以快速掃描其應用程式的原始程式碼，以識別其應用程式的雲端就緒程度以遷移至 Azure，並在遷移期間和之後監視其應用程式的進度。
 
-- Visual Studio 企業版訂閱者可以免費獲得為期三個月的 CAST 高光訂閱，允許使用者評估最多 5 個應用。
-- Visual Studio 專業訂閱者可以獲得類似的訂閱，允許評估一個應用程式三個月。
+- Visual Studio Enterprise 訂閱者可以取得三個月免費的完整功能，可讓使用者評估最多五個應用程式。
+- Visual Studio Professional 訂閱者可以取得類似的訂用帳戶，允許在三個月內評估一個應用程式。
 
 ## <a name="activation-steps"></a>啟用步驟
-1. 登錄到[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在 [工具] 類別中，尋找 CAST Highlight 權益磚，然後按一下 [取得程式碼]****。
 
@@ -42,34 +42,34 @@ ms.locfileid: "80274020"
 
 0. CAST 小組會評估您的要求，並連絡您以完善處理您的帳戶建立。
 
-0. 您也會收到來自 CAST 的下列電子郵件，以確認收到您的要求。  （此示例顯示企業訂閱者收到的電子郵件。
+0. 您也會收到來自 CAST 的下列電子郵件，以確認收到您的要求。  （此範例會顯示企業訂閱者所收到的電子郵件）。
 
    > *感謝您要求啟用 CAST Highlight 的 30 天存取權 - 這是 Microsoft Visual Studio Enterprise 客戶的專屬優惠！*
    >
-   > *我們目前正在審查您的啟動請求和訪問 CAST 突出顯示。你不到48小時就會收到我的回信。*
+   > *我們目前正在檢查您的啟用和存取轉型醒目提示的要求。您會在48小時內收到我的回復。*
    >
-   > *最佳，*
-   > *葛列格*
+   > *最佳、* 
+   > *Greg*
 
 要求核准之後，您會收到第二封電子郵件，其中確認已成功建立您的帳戶，並要求您按一下啟用連結以完成啟用程序。
 
-   > *我們已成功驗證並驗證了您訪問 CAST 突出顯示的請求。歡迎上船！*
+   > *我們已成功驗證並驗證您的要求，以存取 CAST 醒目提示。歡迎使用啟程吧！*
    >
-   > *完成啟動需要最後一步。您會收到noreply@casthighlight.com來自帶有啟動連結的電子郵件。如果您沒有看到該電子郵件，請選中您的垃圾郵件框。*
+   > *您的最後一個步驟是完成啟用。您將從收到 noreply@casthighlight.com 包含啟用連結的電子郵件。如果您沒有看到電子郵件，請檢查您的垃圾郵件箱。*
    >
    > *請按一下電子郵件中提供的啟用連結，並完成啟用程序。*
    >
-   > *啟動後，您將對 CAST 高光平臺進行 30 天的訪問，並最多可登上 5 個應用程式。請注意，這是僅適用于 Microsoft 視覺工作室企業客戶的專屬優惠。*
+   > *啟用後，您將有30天的轉型反白顯示平臺存取權，且最多可以上架5個應用程式。請注意，這是僅供 Microsoft Visual Studio Enterprise 客戶使用的專屬供應專案。*
    >
-   > *我會保持聯繫，以確保一切順利為你。同時，下面是一些有用的內容，説明您入門：*
+   > *我會進行觸控，確保所有專案都能順暢地移動。在此同時，這裡有一些實用的內容可説明您開始使用：*
    >
    > - [CAST Highlight - CloudReadiness 示範](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
    > - [快速入門指南 (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
    > - 影片教學課程 - [配置您的投資組合](https://www.youtube.com/watch?v=MDm8ln4vuGE)
    > - 影片教學課程 - [應用程式上架](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
    >
-   > *最佳，*
-   > *葛列格*
+   > *最佳、* 
+   > *Greg*
 
    > [!NOTE]
    > 請務必按一下所收到電子郵件中的啟用連結。  否則，您將無法存取 CAST Highlight 訂用帳戶。 如果您在收件匣中沒看到這封電子郵件，請務必檢查垃圾郵件資料夾。
@@ -77,37 +77,37 @@ ms.locfileid: "80274020"
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     聲道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 評估 5 個應用，為期 3 個月|  否。  僅提供給新訂閱者使用          |
-| 含 GitHub Enterprise 的 Visual Studio Enterprise  | Vl | 評估 5 個應用，為期 3 個月|  否。  僅提供給新訂閱者使用          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 評估 1 個應用，為期三個月                                                             |  否。  僅提供給新訂閱者使用                  |
-| 含 GitHub Enterprise 的 Visual Studio Professional | Vl                                       | 評估 1 個應用，為期三個月                                                            |  否。  僅提供給新訂閱者使用                  |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 評估5個應用程式三個月|  否。  僅提供給新訂閱者使用          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise  | VL | 評估5個應用程式三個月|  否。  僅提供給新訂閱者使用          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 評估1個應用程式三個月                                                             |  否。  僅提供給新訂閱者使用                  |
+| 含 GitHub Enterprise 的 Visual Studio Professional | VL                                       | 評估1個應用程式三個月                                                            |  否。  僅提供給新訂閱者使用                  |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A           |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
-<sup>1</sup>  *包括： 不轉售 （NFR）， FTE， 最有價值的專業人士 （MVP）， 區域總監 （RD）， 微軟合作夥伴網路 （MPN）， 視覺工作室行業合作夥伴 （VSIP）， 微軟認證培訓師， BizSpark， 想像*
+<sup>1</sup>  *包括：禁止轉售（NFR）、FTE、最有價值專家（MVP）、區域主管（RD）、Microsoft 合作夥伴網路（MPN）、Visual Studio 產業夥伴（VSIP）、Microsoft 認證訓練人員、BizSpark、想像*
 
 > [!NOTE]
-> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新客戶前往[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)探索購買 Visual Studio 的不同選項。
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶前往以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索 Visual Studio 購買的不同選項。
 
-不確定您使用哪一個訂用帳戶？  連接到以查看[https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)分配給您的電子郵件地址的所有訂閱。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
+不確定您使用哪一個訂用帳戶？  連接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="support-resources"></a>支援資源
 - 需要 CAST Highlight 的使用說明嗎？  請參閱這些資源：
   - [提交支援要求](https://casthighlight.com/support/)
   - [快速入門指南 (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
-- 有關視覺工作室訂閱的銷售、訂閱、帳戶和計費説明，請聯繫視覺化工作室[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 如需 Visual Studio 訂閱的銷售、訂閱、帳戶和計費的協助，請聯絡 Visual Studio[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
-如果尚未啟動訂閱附帶的 Azure DevTest 個人信用權益，請訪問[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)並按一下"工具"類別中的 Azure 磁貼以設置 Azure 訂閱並兌換 Azure DevTest 個人信用額度。
+## <a name="next-steps"></a>接下來的步驟
+如果您尚未啟用訂用帳戶隨附的 Azure DevTest 個人信用額度權益，請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並按一下 [工具] 類別中的 [azure] 磚，以設定您的 azure 訂用帳戶，並兌換您的 Azure DevTest 個別信用額度。
 
 此外，別忘了參考 Greg 在電子郵件中提到的示範、使用者指南和教學課程影片。

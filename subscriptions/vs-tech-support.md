@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 03/26/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支援權益。
-ms.openlocfilehash: cad820977df6351f665944a878b6dcebd1c12a38
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f195c0f2a165dae1d17697fb351ee6f576864a37
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289426"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906092"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用並使用 Visual Studio 訂用帳戶中的技術支援權益
 如果產品仍在[支援生命週期](https://support.microsoft.com/lifecycle/search)的主要支援階段中，Visual Studio 訂用帳戶技術支援權益可為其解決**非生產環境**中的協助修正問題。 自權益啟用的 1 年內，Visual Studio Enterprise 標準和年度雲端訂用帳戶可接收四個事件，而 Visual Studio Professional 標準和年度雲端訂用帳戶可接收兩個事件。 您必須在訂用帳戶為最新狀態時啟用權益。
@@ -83,7 +83,7 @@ Visual Studio IDE 和 Azure DevOps Server 等開發人員工具將透過 Visual 
    > [!div class="mx-imgBorder"]
    > ![技術支援權益事件提交 - 新增合約](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
-4. 輸入您的**存取識別碼**和**合約識別碼**。  按一下 [新增] 。
+4. 輸入您的**存取識別碼**和**合約識別碼**。  按一下 **[新增]** 。
 
    > [!div class="mx-imgBorder"]
    > ![技術支援權益事件提交 - 新增合約識別碼](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
@@ -130,10 +130,10 @@ Visual Studio IDE 和 Azure DevOps Server 等開發人員工具將透過 Visual 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 檔](https://docs.microsoft.com/azure/)
+- [Azure 文件](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

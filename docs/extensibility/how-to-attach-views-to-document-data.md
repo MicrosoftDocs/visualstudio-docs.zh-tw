@@ -1,7 +1,7 @@
 ---
-title: 如何:將檢視附加到文件數據 |微軟文件
+title: 如何：將視圖附加至檔資料 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - attach views to document data
 ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
@@ -10,38 +10,38 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d8bd586a9d67996389f3cb6a2b0f13f0afec3bd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: d5437e3a5d4fb0d6d33d570eb4d8923245cb287b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80711081"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905889"
 ---
-# <a name="how-to-attach-views-to-document-data"></a>如何:將檢視附加到文件資料
-如果您有新的文檔檢視,則可以將其附加到現有文檔資料物件。
+# <a name="how-to-attach-views-to-document-data"></a>如何：將視圖附加至檔資料
+如果您有新的檔視圖，您可以將它附加到現有的檔資料物件。
 
-## <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>確定是否可以將檢視附加到現有文件資料物件
+## <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>判斷您是否可以將視圖附加至現有的檔資料物件
 
 1. 實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>。
 
-2. 在實現`IVsEditorFactory::CreateEditorInstance`中`QueryInterface`,當 IDE`CreateEditorInstance`調用您的 實現時調用現有文檔數據物件。
+2. 在您的執行中 `IVsEditorFactory::CreateEditorInstance` ， `QueryInterface` 當 IDE 呼叫您的執行時，在現有的檔資料物件上呼叫 `CreateEditorInstance` 。
 
-    呼叫`QueryInterface`讓您能夠檢查現有文件資料物件,該物件在`punkDocDataExisting`參數中 指定。
+    呼叫可 `QueryInterface` 讓您檢查在參數中指定的現有檔資料物件 `punkDocDataExisting` 。
 
-    但是,您必須查詢的確切介面取決於打開文檔的編輯器,如步驟 4 中所述。
+    不過，您必須查詢的確切介面取決於開啟檔的編輯器，如步驟4中所述。
 
-3. 如果在現有文件數據物件上找不到適當的介面,則向編輯器返回錯誤代碼,指示文檔數據物件與編輯器不相容。
+3. 如果您在現有的檔資料物件上找不到適當的介面，則會將錯誤碼傳回您的編輯器，指出檔資料物件與您的編輯器不相容。
 
-    在 IDE<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>的 實現中,一個訊息框會通知您文檔在另一個編輯器中處於打開狀態,並詢問您是否要關閉它。
+    在 IDE 的執行中 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> ，訊息方塊會通知您檔已在另一個編輯器中開啟，並詢問您是否要將它關閉。
 
-4. 如果關閉此文件,則 Visual Studio 會第二次調用編輯器工廠。 在此呼叫中,`DocDataExisting`參數等於 NULL。 然後,編輯器工廠實現可以在您自己的編輯器中打開文檔數據物件。
+4. 如果您關閉此檔，則 Visual Studio 會第二次呼叫您的編輯器 factory。 在此呼叫中， `DocDataExisting` 參數等於 Null。 然後，您的編輯器工廠就可以在您自己的編輯器中開啟檔資料物件。
 
    > [!NOTE]
-   > 要確定是否可以使用現有文檔數據物件,還可以通過強制將指標強制轉換到私有實現的實際[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]類來使用介面實現的私有知識。 例如,所有標準編輯器實現`IVsPersistFileFormat`從繼承<xref:Microsoft.VisualStudio.OLE.Interop.IPersist>。 因此,您可以調用`QueryInterface`<xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>,如果現有文檔資料物件的類 ID 與實現的類 ID 匹配,則可以使用文檔數據物件。
+   > 若要判斷您是否可以使用現有的檔資料物件，您也可以將指標轉型為私用實值的實體類別，藉此使用介面實作用的私用知識 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 。 例如，所有標準編輯器都會執行 `IVsPersistFileFormat` ，其繼承自 <xref:Microsoft.VisualStudio.OLE.Interop.IPersist> 。 因此，您可以呼叫 `QueryInterface` <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A> ，如果現有檔資料物件上的類別 id 符合您的實作為類別 id，則您可以使用檔資料物件。
 
 ## <a name="robust-programming"></a>穩固程式設計
- 當 Visual Studio<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>調用方法 的實現時,`punkDocDataExisting`它會傳遞指向 參數中現有文檔數據物件的指標(如果存在)。 檢查傳`punkDocDataExisting`回的文件資料物件,以確定文件資料物件是否適合您的編輯器,本主題中的步驟 4 中的註釋中所述。 如果合適,則編輯器工廠應提供[支援多個文檔視圖](../extensibility/supporting-multiple-document-views.md)中概述的數據的第二個檢視。 如果沒有,則它應該顯示相應的錯誤消息。
+ 當 Visual Studio 呼叫方法的執行時 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> ，它會傳回參數中現有檔資料物件的指標 `punkDocDataExisting` （如果有的話）。 檢查中傳回的檔資料物件 `punkDocDataExisting` ，以判斷檔資料物件是否適用于您的編輯器，如本主題中程式的步驟4中的附注所述。 如果適合，則您的編輯器 factory 應該提供資料的第二個視圖，如[支援多個檔視圖](../extensibility/supporting-multiple-document-views.md)中所述。 如果不是，則應該顯示適當的錯誤訊息。
 
 ## <a name="see-also"></a>另請參閱
-- [支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)
-- [自訂編輯器中的文件資料與文件檢視](../extensibility/document-data-and-document-view-in-custom-editors.md)
+- [支援多個檔視圖](../extensibility/supporting-multiple-document-views.md)
+- [自訂編輯器中的檔資料和檔視圖](../extensibility/document-data-and-document-view-in-custom-editors.md)
