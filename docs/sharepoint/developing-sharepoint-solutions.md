@@ -1,7 +1,7 @@
 ---
 title: 開發 SharePoint 方案 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
 - VS.SharePointTools.Project.ProjectItemProperties
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7670f05fbeced78a0c77a8ffc053cf6b607708f
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
-ms.translationtype: MT
+ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586892"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016797"
 ---
 # <a name="develop-sharepoint-solutions"></a>開發 SharePoint 方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供數個 SharePoint 專案類型範本，以用來建立 SharePoint 網站和網站元素。 如需可用專案類型的清單，請參閱[SharePoint 專案和專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是 SharePoint 專案的元素和屬性描述。
@@ -35,7 +34,7 @@ ms.locfileid: "82586892"
 ### <a name="special-nodes"></a>特殊節點
  每個 SharePoint 專案皆包含兩個節點，您無法重新命名、刪除、剪下、複製或從專案拖曳這兩個節點。 以下為這兩個節點：
 
-- 特性
+- 功能
 - 套件
 
   即使專案沒有定義任何功能或套件，這兩個節點仍會出現在所有 SharePoint 專案中。
@@ -95,13 +94,13 @@ ms.locfileid: "82586892"
 |屬性名稱|描述|
 |-------------------|-----------------|
 |建置動作|指定檔案與組建和部署處理序相關聯的方式。 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|
-|複製到輸出目錄|指定是否要將原始程式檔複製到輸出目錄。 可以是下列值之一：<br /><br /> -   *不要複製*<br />-   *一律複製*<br />-   *較新時複製*<br /><br /> 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|
+|複製到輸出目錄|指定是否要將原始程式檔複製到輸出目錄。 可以是下列其中一個值：<br /><br /> -   *不要複製*<br />-   *一律複製*<br />-   *較新時複製*<br /><br /> 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|
 |自訂工具|指定工具的名稱 (如果有的話)，以在設計階段轉換檔案，並將轉換的輸出放入另一個檔案。 例如，資料集 (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) 檔案具有預設的自訂工具。 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|
 |自訂工具命名空間|會將自訂工具的輸出複製到其中的命名空間。 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|
 |部署位置|檔案在 SharePoint 伺服器中的完整路徑。 這個路徑是由部署根和部署路徑的子屬性構成。|
-|部署路徑|SharePoint 伺服器檔案上檔案的相對路徑，例如 Workflow1.xaml\\。 將 *Deployment Path* 值串連至 *Deployment Root* 值的結尾，即可建立檔案的完整路徑。<br /><br /> 針對 [*部署類型*] 屬性選取*RootFile*的值，會將 [*部署根*] 屬性\\變更為 [SharePointRoot>，並\< \\ \<產生 SharePointRoot> \workflow1 的完整路徑。 如需詳細資訊，請參閱[封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。|
-|Deployment Root|字串。 在 SharePoint 伺服器部署檔案的根資料夾。 例如，SharePointRoot \<> \template\features\\\<的功能， \\>。<br /><br /> *Deployment Root* 屬性值是依據 *Deployment Type* 設定而定。|
-|部署類型|檔案的部署類型會決定其 *Deployment Root* 值。 可以是下列值之一：<br /><br /> NoDeployment： * \<沒有值>*<br /><br /> ElementManifest： * \<SharePointRoot> \template\features\\\<功能功能>*\\<br /><br /> ElementFile： * \<SharePointRoot> \template\features\\\<功能功能>\\*<br /><br /> TemplateFile： * \<SharePointRoot> \template\\*<br /><br /> RootFile： * \<SharePointRoot>\\*<br /><br /> GlobalResource： * \<SharePointRoot> \resources\\*<br /><br /> ClassResource： * \<ClassResourcePath>\\*<br /><br /> 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>。|
+|部署路徑|SharePoint 伺服器檔案上檔案的相對路徑，例如 Workflow1.xaml \\ 。 將 *Deployment Path* 值串連至 *Deployment Root* 值的結尾，即可建立檔案的完整路徑。<br /><br /> 針對 [*部署類型*] 屬性選取*RootFile*的值，會將 [*部署根*] 屬性變更為 \<SharePointRoot> \\ ，因而產生 \Workflow1 的完整路徑 \<SharePointRoot> \\ 。 如需詳細資訊，請參閱[封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。|
+|Deployment Root|字串。 在 SharePoint 伺服器部署檔案的根資料夾。 例如， \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ 。<br /><br /> *Deployment Root* 屬性值是依據 *Deployment Type* 設定而定。|
+|部署類型|檔案的部署類型會決定其 *Deployment Root* 值。 可以是下列其中一個值：<br /><br /> NoDeployment*\<no value>*<br /><br /> ElementManifest： * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> ElementFile： * \<SharePointRoot> \\ \<FeatureName> \Template\Features \\ *<br /><br /> TemplateFile： * \<SharePointRoot> \Template \\ *<br /><br /> RootFile*\<SharePointRoot>\\*<br /><br /> GlobalResource： * \<SharePointRoot> \Resources \\ *<br /><br /> ClassResource*\<ClassResourcePath>\\*<br /><br /> 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.SharePoint.DeploymentType> 。|
 |檔案名稱|項目檔案的檔案或資料夾名稱。|
 |完整路徑|項目檔案的位置。 (唯讀)。|
 

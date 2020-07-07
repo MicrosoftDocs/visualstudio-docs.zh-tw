@@ -1,7 +1,7 @@
 ---
 title: 使用專案範本建立網站資料行專案專案（第1部分）
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 843d56482a82c2a8210de50455753c9703698503
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
-ms.translationtype: MT
+ms.openlocfilehash: fea425da8a6e49643997151c6273fbbffc7033db
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557839"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016503"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本建立網站資料行專案專案（第1部分）
   SharePoint 專案是一個或多個 SharePoint 專案專案的容器。 您可以藉由建立您自己的 SharePoint 專案專案類型，然後將它們與專案範本產生關聯，在 Visual Studio 中擴充 SharePoint 專案系統。 在此逐步解說中，您將定義用來建立網站資料行的專案專案類型，然後您會建立專案範本，以用來建立包含網站資料行專案專案的新專案。
@@ -31,7 +30,7 @@ ms.locfileid: "77557839"
 
 - 建立專案專案的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 專案範本。
 
-- 建立 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 擴充功能（VSIX）封裝，以部署專案範本和擴充元件。
+- 建立 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 擴充功能（VSIX）封裝以部署專案範本和延伸模組元件。
 
 - 正在對專案專案進行調試和測試。
 
@@ -40,10 +39,10 @@ ms.locfileid: "77557839"
 > [!NOTE]
 > 如需一系列範例工作流程，請參閱[SharePoint 工作流程範例](/sharepoint/dev/general-development/sharepoint-workflow-samples)。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  您需要在開發電腦上有下列元件，才能完成此逐步解說：
 
-- 支援的 Microsoft Windows、SharePoint 和 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]版本。
+- 支援的 Microsoft Windows 版本、SharePoint 和 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
 - [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本逐步解說會使用 SDK 中的**Vsix 專案**範本來建立 vsix 封裝，以部署專案專案。 如需詳細資訊，請參閱[Visual Studio 中的擴充 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
 
@@ -68,11 +67,11 @@ ms.locfileid: "77557839"
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+2. 在功能表列上 **，選擇 [** 檔案] [新增] [  >  **New**  >  **專案**]。
 
 3. 在 [**新增專案**] 對話方塊的頂端，確定已在 .NET Framework 版本清單中選擇 [ **.NET Framework 4.5** ]。
 
-4. 展開 [ **Visual Basic** ] 或 [**視覺效果C#**  ] 節點，然後選擇 [擴充性 **] 節點。**
+4. 展開 [ **Visual Basic** ] 或 [ **Visual c #** ] 節點，然後選擇 [擴充性 **] 節點。**
 
     > [!NOTE]
     > 只有在您安裝 Visual Studio SDK 時，才能使用擴充**性節點。** 如需詳細資訊，請參閱本主題稍早的必要條件一節。
@@ -81,7 +80,7 @@ ms.locfileid: "77557839"
 
 6. 在 [**名稱**] 方塊中，輸入**SiteColumnProjectItem**，然後選擇 [**確定]** 按鈕。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將**SiteColumnProjectItem**專案新增至**方案總管**。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將**SiteColumnProjectItem**專案加入**方案總管**。
 
 #### <a name="to-create-the-project-template-project"></a>若要建立專案範本專案
 
@@ -89,13 +88,13 @@ ms.locfileid: "77557839"
 
 2. 在 [**新增專案**] 對話方塊的頂端，確定已在 .NET Framework 版本清單中選擇 [ **.NET Framework 4.5** ]。
 
-3. 展開 [**視覺C#效果**] 或 [ **Visual Basic** ] 節點，然後選擇 [擴充性 **] 節點。**
+3. 展開 [ **Visual c #** ] 或 [ **Visual Basic** ] 節點，然後選擇 [擴充性 **] 節點。**
 
-4. 在專案範本清單中，選擇 [  **C#專案範本**] 或 [ **Visual Basic 專案範本**] 範本。
+4. 在專案範本清單中，選擇 [ **c #] 專案範本**或**Visual Basic 專案範本**] 範本。
 
 5. 在 [**名稱**] 方塊中，輸入**SiteColumnProjectTemplate**，然後選擇 [**確定]** 按鈕。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將**SiteColumnProjectTemplate**專案新增至方案。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將**SiteColumnProjectTemplate**專案新增至方案。
 
 6. 從專案中刪除 Class1 程式碼檔案。
 
@@ -107,7 +106,7 @@ ms.locfileid: "77557839"
 
     - *Resources. Designer .vb*
 
-    - *Resources .resx*
+    - *Resources.resx*
 
     - *設定. 設計工具 .vb*
 
@@ -119,11 +118,11 @@ ms.locfileid: "77557839"
 
 2. 在 [**新增專案**] 對話方塊的頂端，確定已在 .NET Framework 版本清單中選擇 [ **.NET Framework 4.5** ]。
 
-3. 展開 [**視覺C#效果**] 或 [ **Visual Basic** ] 節點，選擇 [ **Windows** ] 節點，然後選擇 [**類別庫**] 範本。
+3. 展開 [ **Visual c #** ] 或 [ **Visual Basic** ] 節點，選擇 [ **Windows** ] 節點，然後選擇 [**類別庫**] 範本。
 
 4. 在 [**名稱**] 方塊中，輸入**ProjectItemTypeDefinition** ，然後選擇 [**確定]** 按鈕。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將**ProjectItemTypeDefinition**專案新增至方案，並開啟預設的 Class1 程式碼檔案。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將**ProjectItemTypeDefinition**專案新增至方案，並開啟預設的 Class1 程式碼檔案。
 
 5. 從專案中刪除 Class1 程式碼檔案。
 
@@ -134,14 +133,14 @@ ms.locfileid: "77557839"
 
 1. 在 ProjectItemTypeDefinition 專案中，加入名為**SiteColumnProjectItemTypeProvider**的程式碼檔案。
 
-2. 在功能表列上，選擇 [專案] >  [加入參考]。
+2. 在功能表列上，選擇 [**專案**] [  >  **加入參考**]。
 
 3. 在 [**參考管理員-ProjectItemTypeDefinition** ] 對話方塊中，展開 [**元件**] 節點，選擇 [**架構**] 節點，然後選取 [system.workflow.componentmodel.activity] 核取方塊。
 
 4. 選擇 [**擴充**功能] 節點，選取 [VisualStudio] 元件旁的核取方塊，然後選擇 [**確定]** 按鈕。
 
 ## <a name="define-the-new-sharepoint-project-item-type"></a>定義新的 SharePoint 專案專案類型
- 建立可執行 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 介面的類別，以定義新專案專案類型的行為。 每當您想要定義新類型的專案專案時，就會執行此介面。
+ 建立可執行介面的類別， <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 以定義新專案專案類型的行為。 每當您想要定義新類型的專案專案時，就會執行此介面。
 
 #### <a name="to-define-the-new-sharepoint-project-item-type"></a>若要定義新的 SharePoint 專案專案類型
 
@@ -157,7 +156,7 @@ ms.locfileid: "77557839"
 
 #### <a name="to-create-the-files-for-the-project-template"></a>若要建立專案範本的檔案
 
-1. 使用系統管理認證啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的第二個實例。
+1. 使用系統管理認證啟動的第二個實例 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
 2. 建立名為**BaseSharePointProject**的 SharePoint 2010 專案。
 
@@ -166,11 +165,11 @@ ms.locfileid: "77557839"
 
 3. 將空白元素專案新增至專案，然後將專案命名為**Field1**。
 
-4. 儲存專案，然後關閉 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]的第二個實例。
+4. 儲存專案，然後關閉的第二個實例 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-5. 在開啟 SiteColumnProjectItem 方案的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 實例中，于**方案總管**中開啟**SiteColumnProjectTemplate**專案節點的快捷方式功能表，選擇 [**新增**]，然後選擇 [**現有專案**]。
+5. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 已開啟 SiteColumnProjectItem 方案的實例中，于**方案總管**中，開啟**SiteColumnProjectTemplate**專案節點的快捷方式功能表，選擇 [**加入**]，然後選擇 [**現有專案**]。
 
-6. 在 [**加入現有專案**] 對話方塊中，開啟副檔名清單，然後選擇 [所有檔案] **（\*.\*）** 。
+6. 在 [**加入現有專案**] 對話方塊中，開啟副檔名清單，然後選擇 [所有檔案 **（ \* . \* ）**]。
 
 7. 在包含 BaseSharePointProject 專案的目錄中，選取 [金鑰 .snk 檔案]，然後選擇 [**新增**] 按鈕。
 
@@ -205,7 +204,7 @@ ms.locfileid: "77557839"
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">
     ```
 
-4. 以下列 XML 取代此元素。
+4. 將此元素取代為下列 XML。
 
     ```xml
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">
@@ -213,7 +212,7 @@ ms.locfileid: "77557839"
     </VSTemplate>
     ```
 
-     當您建立專案時，`OutputSubPath` 專案會在路徑下指定其他資料夾，以在其中建立專案範本。 此處指定的資料夾會確保只有當客戶開啟 [**新增專案**] 對話方塊、展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點時，才能使用此專案範本。
+     `OutputSubPath`專案會指定當您建立專案時，用來建立專案範本之路徑中的其他資料夾。 此處指定的資料夾會確保只有當客戶開啟 [**新增專案**] 對話方塊、展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點時，才能使用此專案範本。
 
 5. 儲存並關閉檔案。
 
@@ -224,7 +223,7 @@ ms.locfileid: "77557839"
 
 - *AssemblyInfo.cs*或*AssemblyInfo .vb*
 
-- *元素 .xml*
+- *Elements.xml*
 
 - *SharePointProjectItem. .spdata*
 
@@ -250,13 +249,13 @@ ms.locfileid: "77557839"
     using System.Security;
     ```
 
-     當 SharePoint 專案的**沙箱化方案**屬性設定為**True**時，Visual Studio 會將 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> 新增至 AssemblyInfo 程式碼檔案。 不過，專案範本中的 AssemblyInfo 程式碼檔案預設不會匯入 <xref:System.Security> 命名空間。 您必須**使用**或**Imports**語句來加入此，以避免編譯錯誤。
+     當 SharePoint 專案的**沙箱化方案**屬性設定為**True**時，Visual Studio 會將新增 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> 至 AssemblyInfo 程式碼檔案。 不過，專案範本中的 AssemblyInfo 程式碼檔案預設不會匯入 <xref:System.Security> 命名空間。 您必須**使用**或**Imports**語句來加入此，以避免編譯錯誤。
 
 2. 儲存並關閉檔案。
 
-#### <a name="to-edit-the-elementsxml-file"></a>編輯元素 .xml 檔案
+#### <a name="to-edit-the-elementsxml-file"></a>若要編輯 Elements.xml 檔案
 
-1. 在 SiteColumnProjectTemplate 專案中，將*元素 .xml*檔案的內容取代為下列 xml。
+1. 在 SiteColumnProjectTemplate 專案中，將*Elements.xml*檔案的內容取代為下列 XML。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -270,7 +269,7 @@ ms.locfileid: "77557839"
     </Elements>
     ```
 
-     新的 XML 會加入一個 `Field` 專案，定義網站資料行的名稱、其基底類型，以及要在其中列出資源庫中網站資料行的群組。 如需這個檔案內容的詳細資訊，請參閱[欄位定義架構](/previous-versions/office/developer/sharepoint-2010/ms196289(v=office.14))。
+     新的 XML 會加入 `Field` 元素，以定義網站資料行的名稱、其基底類型，以及要在其中列出圖庫中網站資料行的群組。 如需這個檔案內容的詳細資訊，請參閱[欄位定義架構](/previous-versions/office/developer/sharepoint-2010/ms196289(v=office.14))。
 
 2. 儲存並關閉檔案。
 
@@ -290,9 +289,9 @@ ms.locfileid: "77557839"
 
     新的 XML 會對檔案進行下列變更：
 
-   - 將 `ProjectItem` 元素的 `Type` 屬性，變更為傳遞至專案專案定義（您稍早在本逐步解說中建立的 `SiteColumnProjectItemTypeProvider` 類別）之 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> 的相同字串。
+   - 將 `Type` 元素的屬性變更 `ProjectItem` 為傳遞至 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> 專案專案定義（ `SiteColumnProjectItemTypeProvider` 您稍早在本逐步解說中建立的類別）的相同字串。
 
-   - 從 `ProjectItem` 元素移除 `SupportedTrustLevels` 和 `SupportedDeploymentScopes` 屬性。 這些屬性值是不必要的，因為信任層級和部署範圍是在 ProjectItemTypeDefinition 專案的 `SiteColumnProjectItemTypeProvider` 類別中指定。
+   - `SupportedTrustLevels` `SupportedDeploymentScopes` 從元素移除和屬性 `ProjectItem` 。 這些屬性值是不必要的，因為信任層級和部署範圍是在 `SiteColumnProjectItemTypeProvider` ProjectItemTypeDefinition 專案的類別中指定。
 
      如需有關 *.spdata*檔內容的詳細資訊，請參閱[SharePoint 專案專案架構參考](../sharepoint/sharepoint-project-item-schema-reference.md)。
 
@@ -316,9 +315,9 @@ ms.locfileid: "77557839"
 
     新的 XML 會對檔案進行下列變更：
 
-   - 將 `feature` 元素的 `Id` 和 `featureId` 屬性值變更為 `$guid4$`。
+   - 將 `Id` 元素的和屬性值變更 `featureId` `feature` 為 `$guid4$` 。
 
-   - 將 `projectItemReference` 元素的 `itemId` 屬性值變更為 `$guid2$`。
+   - 將元素的屬性值變更 `itemId` `projectItemReference` 為 `$guid2$` 。
 
      如需有關*功能*檔案的詳細資訊，請參閱[建立 SharePoint 專案專案的專案範本和專案範本](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
 
@@ -341,9 +340,9 @@ ms.locfileid: "77557839"
 
     新的 XML 會對檔案進行下列變更：
 
-   - 將 `package` 元素的 `Id` 和 `solutionId` 屬性值變更為 `$guid3$`。
+   - 將 `Id` 元素的和屬性值變更 `solutionId` `package` 為 `$guid3$` 。
 
-   - 將 `featureReference` 元素的 `itemId` 屬性值變更為 `$guid4$`。
+   - 將元素的屬性值變更 `itemId` `featureReference` 為 `$guid4$` 。
 
      如需有關*封裝*檔案的詳細資訊，請參閱[建立 SharePoint 專案專案的專案範本和專案範本](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
 
@@ -353,7 +352,7 @@ ms.locfileid: "77557839"
 
 1. 在 SiteColumnProjectTemplate 專案中，將 SiteColumnProjectTemplate 的內容取代為下列其中一個 XML 區段。
 
-   - 如果您要建立視覺C#專案範本，請使用下列 XML。
+   - 如果您要建立 Visual c # 專案範本，請使用下列 XML。
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
@@ -427,11 +426,11 @@ ms.locfileid: "77557839"
 
     新的 XML 會對檔案進行下列變更：
 
-   - 將 `Name` 專案設定為 [值**網站**] 資料行。 （這個名稱會出現在 [**新增專案**] 對話方塊中）。
+   - 將 `Name` 元素設定為 [值**網站**] 資料行。 （這個名稱會出現在 [**新增專案**] 對話方塊中）。
 
-   - 針對每個專案實例中包含的每個 filethat 加入 `ProjectItem` 元素。
+   - `ProjectItem`針對每個專案實例中包含的每個 filethat 加入元素。
 
-   - 使用命名空間 `http://schemas.microsoft.com/developer/vstemplate/2005`。 此方案中的其他專案檔會使用 `http://schemas.microsoft.com/developer/msbuild/2003` 命名空間。 因此，將會產生 XML 架構警告訊息，但在本逐步解說中，您可以忽略它們。
+   - 使用命名空間 `http://schemas.microsoft.com/developer/vstemplate/2005` 。 此方案中的其他專案檔會使用 `http://schemas.microsoft.com/developer/msbuild/2003` 命名空間。 因此，將會產生 XML 架構警告訊息，但在本逐步解說中，您可以忽略它們。
 
      如需 *.vstemplate*檔案內容的詳細資訊，請參閱[Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)。
 
@@ -441,7 +440,7 @@ ms.locfileid: "77557839"
 
 1. 在 SiteColumnProjectTemplate 專案中，將*ProjectTemplate*檔案或*ProjectTemplate*的內容取代為下列其中一個 XML 區段。
 
-    - 如果您要建立視覺C#專案範本，請使用下列 XML。
+    - 如果您要建立 Visual c # 專案範本，請使用下列 XML。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -624,11 +623,11 @@ ms.locfileid: "77557839"
 
     - 使用 `TargetFrameworkVersion` 元素來指定 .NET Framework 3.5，而不是4.5。
 
-    - 加入 `SignAssembly` 和 `AssemblyOriginatorKeyFile` 元素，以簽署專案輸出。
+    - 加入 `SignAssembly` 和 `AssemblyOriginatorKeyFile` 元素以簽署專案輸出。
 
-    - 加入 SharePoint 專案所使用之元件參考的 `Reference` 元素。
+    - 加入 `Reference` SharePoint 專案所使用之元件參考的元素。
 
-    - 為專案中的每個預設檔案加入元素，例如*元素 .xml*和*SharePointProjectItem. .spdata*。
+    - 為專案中的每個預設檔案加入元素，例如*Elements.xml*和*SharePointProjectItem. .spdata*。
 
 2. 儲存並關閉檔案。
 
@@ -654,7 +653,7 @@ ms.locfileid: "77557839"
 6. 在 [**類型**] 清單中，選擇 [ **VisualStudio ProjectTemplate**]。
 
     > [!NOTE]
-    > 這個值會對應至 extension.vsixmanifest 檔案中的 `ProjectTemplate` 元素。 這個元素會識別包含專案範本之 VSIX 封裝中的子資料夾。 如需詳細資訊，請參閱[ProjectTemplate 元素（VSX 架構）](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))。
+    > 這個值會對應至 `ProjectTemplate` extension.vsixmanifest 檔案中的元素。 這個元素會識別包含專案範本之 VSIX 封裝中的子資料夾。 如需詳細資訊，請參閱[ProjectTemplate 元素（VSX 架構）](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))。
 
 7. 在 [**來源**] 清單中，選擇 [**目前方案] 中的專案**。
 
@@ -664,16 +663,16 @@ ms.locfileid: "77557839"
 
      [**加入新資產**] 對話方塊隨即開啟。
 
-10. 在 [**類型**] 清單中，選擇 [ **VisualStudio [microsoft.visualstudio.mefcomponent]** ]。
+10. 在 [**類型**] 清單中，選擇 [ **VisualStudio [microsoft.visualstudio.mefcomponent]**]。
 
     > [!NOTE]
-    > 這個值會對應至 extension.vsixmanifest 檔案中的 `MefComponent` 元素。 這個元素會指定 VSIX 封裝中的擴充元件名稱。 如需詳細資訊，請參閱[[Microsoft.visualstudio.mefcomponent] 元素（VSX 架構）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 這個值會對應至 `MefComponent` extension.vsixmanifest 檔案中的元素。 這個元素會指定 VSIX 封裝中的擴充元件名稱。 如需詳細資訊，請參閱[[Microsoft.visualstudio.mefcomponent] 元素（VSX 架構）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
 11. 在 [**來源**] 清單中，選擇 [**目前方案] 中的專案**。
 
 12. 在 [**專案**] 清單中，選擇 [ **ProjectItemTypeDefinition**]，然後選擇 [**確定]** 按鈕。
 
-13. 在功能表列上，選擇 [**組建**] [ > ] [**組建方案**]，然後確認專案編譯無誤。
+13. 在功能表列上，選擇 [**組建**] [組建] [  >  **方案**]，然後確認專案編譯無誤。
 
 ## <a name="test-the-project-template"></a>測試專案範本
  您現在已準備好測試專案範本。 首先，在 Visual Studio 的實驗實例中，開始對 SiteColumnProjectItem 方案進行調試。 然後，在 Visual Studio 的實驗實例中測試**網站資料行**專案。 最後，建立並執行 SharePoint 專案，以確認 [網站] 欄是否如預期般運作。
@@ -682,15 +681,15 @@ ms.locfileid: "77557839"
 
 1. 使用系統管理認證重新開機 Visual Studio，然後開啟 SiteColumnProjectItem 解決方案。
 
-2. 在 SiteColumnProjectItemTypeProvider 程式碼檔案中，將中斷點新增至 `InitializeType` 方法中的第一行程式碼，然後選擇**F5**鍵開始進行偵錯工具。
+2. 在 SiteColumnProjectItemTypeProvider 程式碼檔案中，將中斷點新增至方法中的第一行程式碼 `InitializeType` ，然後選擇**F5**鍵開始進行偵錯工具。
 
      Visual Studio 會將擴充功能安裝至%UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\Site Column\1.0，並啟動 Visual Studio 的實驗實例。 您將在 Visual Studio 的這個實例中測試專案專案。
 
 #### <a name="to-test-the-project-in-visual-studio"></a>若要在 Visual Studio 中測試專案
 
-1. 在 Visual Studio 的實驗實例中，于功能表列**上選擇 [** 檔案] [檔案] [ > **新增** > **專案**]。
+1. 在 Visual Studio 的實驗實例中 **，選擇功能表**欄上的 [檔案] [新增] [  >  **New**  >  **專案**]。
 
-2. 展開 [**視覺C#效果**] 或 [ **Visual Basic** ] 節點（視您的專案範本支援的語言而定），展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
+2. 展開 [ **Visual c #** ] 或 [ **Visual Basic** ] 節點（視您的專案範本支援的語言而定），展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
 3. 在專案範本清單中，選擇 [網站] 資料**行**範本。
 
@@ -698,11 +697,11 @@ ms.locfileid: "77557839"
 
      在**方案總管**中，會出現新的專案，其中包含名為**Field1**的專案專案。
 
-5. 確認 Visual Studio 另一個實例中的程式碼會在您稍早于 `InitializeType` 方法中設定的中斷點上停止，然後選擇**F5**鍵繼續進行專案的偵錯工具。
+5. 確認另 Visual Studio 一個實例中的程式碼在您稍早于方法中設定的中斷點上停止 `InitializeType` ，然後選擇**F5**鍵繼續進行專案的 debug。
 
 6. 在**方案總管**中，選擇 [ **Field1** ] 節點，然後選擇**F4**鍵。
 
-     [屬性] 視窗隨即開啟。
+     [屬性]**** 視窗隨即開啟。
 
 7. 在 [屬性] 清單中，確認已顯示 [屬性**範例] 屬性**。
 
@@ -737,9 +736,9 @@ ms.locfileid: "77557839"
 
 #### <a name="to-clean-up-the-development-computer"></a>清理開發電腦
 
-1. 在 Visual Studio 的實驗實例中，選擇功能表列上的 [**工具**] > [**擴充功能和更新**]。
+1. 在 Visual Studio 的實驗實例中，選擇功能表列上的 [**工具**] [  >  **擴充功能和更新**]。
 
-     [擴充功能和更新] 對話方塊隨即開啟。
+     [擴充功能和更新]**** 對話方塊隨即開啟。
 
 2. 在擴充功能清單中，選擇 [**網站**] 資料行延伸模組，然後選擇 [**卸載**] 按鈕。
 
@@ -750,7 +749,7 @@ ms.locfileid: "77557839"
 5. 關閉 Visual Studio 的兩個實例（實驗實例和 SiteColumnProjectItem 方案開啟所在的 Visual Studio 實例）。
 
 ## <a name="next-steps"></a>後續步驟
- 完成本逐步解說之後，您可以將 wizard 加入專案範本。 當使用者建立網站資料行專案時，此 wizard 會要求使用者提供用於進行偵測的網站 URL，以及是否要將新的方案設定為沙箱，而 wizard 會使用此資訊來設定新的專案。 此 wizard 也會收集資料行的相關資訊（例如，要在 [網站] 資料行庫中列出資料行的基底類型和群組），並將這項資訊新增至新專案中的*Elements .xml*檔案。 如需詳細資訊，請參閱[逐步解說：使用專案範本建立網站資料行專案專案（第2部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
+ 完成本逐步解說之後，您可以將 wizard 加入專案範本。 當使用者建立網站資料行專案時，此 wizard 會要求使用者提供用於進行偵測的網站 URL，以及是否要將新的方案設定為沙箱，而 wizard 會使用此資訊來設定新的專案。 此 wizard 也會收集資料行的相關資訊（例如，要在 [網站] 資料行庫中列出資料行的基底類型和群組），並將這項資訊加入至新專案中的*Elements.xml*檔案。 如需詳細資訊，請參閱[逐步解說：使用專案範本建立網站資料行專案專案（第2部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
 
 ## <a name="see-also"></a>另請參閱
 

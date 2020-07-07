@@ -1,7 +1,7 @@
 ---
-title: 建立 SharePoint 方案套件，使用 MSBuild 工作
+title: 使用 MSBuild 工作建立 SharePoint 方案套件
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,31 +12,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 432daff22616950e0a97164190a94082bf2db354
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: c59a38e1153a57c1bd886121eeac244075045a42
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401489"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017015"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>作法：使用 MSBuild 工作建立 SharePoint 方案套件
-  您可以建置、 清理及驗證 SharePoint 套件 ( *.wsp*) 在開發電腦上使用命令列的 MSBuild 工作。 您也可以使用這些命令，來自動化建置程序使用 Team Foundation Server 組建電腦上。
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>如何：使用 MSBuild 工作建立 SharePoint 方案套件
+  您可以在開發電腦上使用命令列 MSBuild 工作來建立、清理和驗證 SharePoint 封裝（*.wsp*）。 您也可以使用這些命令，在組建電腦上使用 Team Foundation Server，將組建程式自動化。
 
-## <a name="build-a-sharepoint-package"></a>建置 SharePoint 封裝
+## <a name="build-a-sharepoint-package"></a>建立 SharePoint 封裝
 
-#### <a name="to-build-a-sharepoint-package"></a>若要建置 SharePoint 套件
+#### <a name="to-build-a-sharepoint-package"></a>若要建立 SharePoint 封裝
 
-1. 在 Windows 上**開始**功能表上，選擇**所有程式** > **附屬應用程式** > **命令提示字元**。
+1. 在 Windows [**開始**] 功能表上，選擇 [**所有程式**] [附屬專案]  >  **Accessories**  >  **命令提示**字元。
 
-2. 切換至您的 SharePoint 專案所在的目錄。
+2. 切換至 SharePoint 專案所在的目錄。
 
-3. 輸入下列命令來建立專案的套件。 取代*ProjectFileName*專案的名稱。
+3. 輸入下列命令來建立專案的封裝。 以專案的名稱取代*ProjectFileName* 。
 
     ```cmd
     msbuild /t:Package ProjectFileName
     ```
 
-     例如，您可以執行下列命令來封裝 SharePoint 專案，稱為 ListDefinition1 的其中一個。
+     例如，您可以執行下列其中一個命令來封裝名為 ListDefinition1 的 SharePoint 專案。
 
     ```cmd
     msbuild /t:Package ListDefinition1.vbproj
@@ -45,55 +44,55 @@ ms.locfileid: "66401489"
 
 ## <a name="clean-a-sharepoint-package"></a>清除 SharePoint 封裝
 
-#### <a name="to-clean-a-sharepoint-package"></a>清除 SharePoint 封裝
+#### <a name="to-clean-a-sharepoint-package"></a>若要清除 SharePoint 封裝
 
 1. 開啟 [命令提示字元] 視窗。
 
-2. 切換至您的 SharePoint 專案所在的目錄。
+2. 切換至 SharePoint 專案所在的目錄。
 
-3. 輸入下列命令以清除專案的套件。 取代*ProjectFileName*專案的名稱。
+3. 輸入下列命令以清除專案的封裝。 以專案的名稱取代*ProjectFileName* 。
 
     ```cmd
     msbuild /t:CleanPackage ProjectFileName
     ```
 
-     例如，您可以執行下列命令來清除呼叫 ListDefinition1 SharePoint 專案的其中一個。
+     例如，您可以執行下列其中一個命令，以清除名為 ListDefinition1 的 SharePoint 專案。
 
     ```cmd
     msbuild /t:CleanPackage ListDefinition1.vbproj
     msbuild /t:CleanPackage ListDefinition1.csproj
     ```
 
-## <a name="validate-a-sharepoint-package"></a>驗證 SharePoint 套件
+## <a name="validate-a-sharepoint-package"></a>驗證 SharePoint 封裝
 
-#### <a name="to-validate-a-sharepoint-package"></a>若要驗證 SharePoint 套件
+#### <a name="to-validate-a-sharepoint-package"></a>若要驗證 SharePoint 封裝
 
 1. 開啟 [命令提示字元] 視窗。
 
-2. 切換至您的 SharePoint 專案所在的目錄。
+2. 切換至 SharePoint 專案所在的目錄。
 
-3. 輸入下列命令來驗證專案的套件。 取代*ProjectFileName*專案的名稱。
+3. 輸入下列命令以驗證專案的封裝。 以專案的名稱取代*ProjectFileName* 。
 
     ```cmd
     msbuild /t:ValidatePackage ProjectFileName
     ```
 
-     例如，您可以執行下列命令來驗證呼叫 ListDefinition1 SharePoint 專案的其中一個。
+     例如，您可以執行下列其中一個命令來驗證名為 ListDefinition1 的 SharePoint 專案。
 
     ```cmd
     msbuild /t:ValidatePackage ListDefinition1.vbproj
     msbuild /t:ValidatePackage ListDefinition1.csproj
     ```
 
-## <a name="set-properties-in-a-sharepoint-package"></a>在 SharePoint 封裝中設定屬性
+## <a name="set-properties-in-a-sharepoint-package"></a>設定 SharePoint 封裝中的屬性
 
-#### <a name="to-set-a-property-in-a-sharepoint-package"></a>在 SharePoint 封裝中設定屬性
+#### <a name="to-set-a-property-in-a-sharepoint-package"></a>若要設定 SharePoint 封裝中的屬性
 
 1. 開啟 [命令提示字元] 視窗。
 
-2. 切換至您的 SharePoint 專案所在的目錄。
+2. 切換至 SharePoint 專案所在的目錄。
 
-3. 輸入下列命令來設定專案的套件中的屬性。 取代*PropertyName*與您想要設定的屬性。
+3. 輸入下列命令，在專案的封裝中設定屬性。 將*PropertyName*取代為您要設定的屬性。
 
     ```cmd
     msbuild /property:PropertyName=Value
@@ -108,4 +107,4 @@ ms.locfileid: "66401489"
 ## <a name="see-also"></a>另請參閱
 - [建立 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)
 - [如何：自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)
-- [如何：新增和移除 SharePoint 功能的項目](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
+- [如何：在 SharePoint 功能中加入和移除專案](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

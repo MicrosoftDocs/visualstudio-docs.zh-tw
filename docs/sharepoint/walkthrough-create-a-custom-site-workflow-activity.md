@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：建立自訂網站工作流程活動 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,111 +16,110 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f717345689de9be640e03e9c7d81726a57d494b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008291"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016526"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>逐步解說：建立自訂網站工作流程活動
-  本逐步解說示範如何建立站台層級工作流程使用自訂活動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 （網站層級的工作流程套用至整個網站，而不只是在站台上的清單）。自訂活動建立備份的公告清單中，並再將 [公告] 清單的內容複製到其中。
+  本逐步解說示範如何使用來建立網站層級工作流程的自訂活動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 （網站層級工作流程適用于整個網站，而不只是網站上的清單）。自訂活動會建立備份公告清單，然後將公告清單的內容複寫到其中。
 
  本逐步解說將示範下列工作：
 
-- 建立站台層級工作流程。
+- 建立網站層級的工作流程。
 
 - 建立自訂工作流程活動。
 
 - 建立和刪除 SharePoint 清單。
 
-- 從一份清單的項目複製到另一個。
+- 將專案從一個清單複製到另一個。
 
-- 在 [快速啟動] 列上顯示的清單。
+- 在快速啟動列上顯示清單。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>必要條件
- 您需要下列元件才能完成此逐步解說：
+ 您需要下列元件才能完成這個逐步解說：
 
-- 支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
+- 支援的 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 和 SharePoint 版本。
 
 - Visual Studio。
 
-## <a name="create-a-site-workflow-custom-activity-project"></a>建立站台工作流程自訂活動專案
- 首先，建立專案來保存，並測試自訂工作流程活動。
+## <a name="create-a-site-workflow-custom-activity-project"></a>建立網站工作流程自訂活動專案
+ 首先，建立專案來保存和測試自訂工作流程活動。
 
-#### <a name="to-create-a-site-workflow-custom-activity-project"></a>若要建立站台工作流程自訂活動專案
+#### <a name="to-create-a-site-workflow-custom-activity-project"></a>建立網站工作流程自訂活動專案
 
-1. 在功能表列上選擇 [**檔案** > **新增** > **專案**顯示**新專案**] 對話方塊。
+1. 在功能表列上 **，選擇 [** 檔案] [  >  **新增**  >  **專案**] 以顯示 [**新增專案**] 對話方塊。
 
-2. 依序展開**SharePoint**節點之下**Visual C#** 或**Visual Basic**，然後選擇**2010年**節點。
+2. 展開 [ **Visual c #** ] 或 [ **Visual Basic**] 底下的 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
-3. 在 **範本**窗格中，選擇**SharePoint 2010 專案**範本。
+3. 在 [**範本**] 窗格中，選擇 [ **SharePoint 2010 專案**] 範本。
 
-4. 在 [**名稱**方塊中，輸入**AnnouncementBackup**，然後選擇 **[確定]** ] 按鈕。
+4. 在 [**名稱**] 方塊中，輸入**AnnouncementBackup**，然後選擇 [**確定]** 按鈕。
 
-     **SharePoint 自訂精靈**隨即出現。
+     [ **SharePoint 自訂嚮導]** 隨即出現。
 
-5. 在上**指定偵錯的網站和安全性層級**頁面上，選擇**部署為伺服陣列方案**選項按鈕，然後選擇**完成**按鈕以接受信任層級和預設站台。
+5. 在 [**指定網站和安全性層級進行偵錯工具**] 頁面上，選擇 [**部署為數組方案**] 選項按鈕，然後選擇 [**完成]** 按鈕以接受信任層級和預設網站。
 
-     此步驟會設定為陣列方案，唯一可用的選項，工作流程專案方案的信任層級。
+     此步驟會將解決方案的信任層級設定為伺服器陣列方案，這是工作流程專案的唯一可用選項。
 
-6. 在 **方案總管**，選擇專案節點，然後在功能表列上選擇 **專案** > **加入新項目**。
+6. 在**方案總管**中，選擇專案節點，然後在功能表列上選擇 [**專案**] [新增] [  >  **新專案**]。
 
-7. 之下**Visual C#** 或**Visual Basic**，展開**SharePoint**  節點，然後選擇**2010年**節點。
+7. 在 [ **Visual c #** ] 或 [ **Visual Basic**] 底下，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
-8. 在**範本** 窗格中，選擇**循序工作流程 （僅限陣列方案）** 範本，然後選擇**新增** 按鈕。
+8. 在 [**範本**] 窗格中，選擇 [**順序工作流程（僅限陣列方案）** ] 範本，然後選擇 [**新增**] 按鈕。
 
-     **SharePoint 自訂精靈**隨即出現。
+     [ **SharePoint 自訂嚮導]** 隨即出現。
 
-9. 在 **指定偵錯的工作流程名稱**頁面上，接受預設名稱 (AnnouncementBackup-Workflow1)。 將工作流程範本類型變更為**站台工作流程**，然後選擇**下一步**  按鈕。
+9. 在 [**指定要進行偵錯工具的工作流程名稱**] 頁面上，接受預設名稱（AnnouncementBackup-workflow1.xaml）。 將 [工作流程] 範本類型變更為 [**網站工作流程**]，然後選擇 [**下一步]** 按鈕。
 
-10. 選擇**完成** 按鈕，接受其餘的預設設定。
+10. 選擇 [**完成]** 按鈕以接受其餘的預設設定。
 
-## <a name="add-a-custom-workflow-activity-class"></a>加入自訂工作流程活動類別
- 接下來，將類別加入專案，以包含自訂工作流程活動的程式碼。
+## <a name="add-a-custom-workflow-activity-class"></a>新增自訂工作流程活動類別
+ 接下來，將類別新增至專案，以包含自訂工作流程活動的程式碼。
 
 #### <a name="to-add-a-custom-workflow-activity-class"></a>若要加入自訂工作流程活動類別
 
-1. 在功能表列上選擇 [**專案** > **加入新項目**以顯示**加入新項目**] 對話方塊。
+1. 在功能表列上，選擇 [**專案**] [  >  **加入新專案**] 以顯示 [**加入新專案**] 對話方塊。
 
-2. 中**已安裝的範本**樹狀檢視中，選擇**程式碼**節點，然後選擇**類別**專案項目範本清單中的範本。 使用預設名稱 Class1。 選擇 [ **加入** ] 按鈕。
+2. 在 [**已安裝的範本**] 樹狀檢視中，選擇 [程式**代碼**] 節點，然後選擇專案專案範本清單中的 [**類別**] 範本。 使用預設名稱 Class1。 選擇 [新增] 按鈕。
 
-3. 您可以將所有類別 1 中的程式碼取代為下列：
+3. 將 Class1 中的所有程式碼取代為下列內容：
 
      [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
      [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]
 
-4. 儲存專案，，然後在功能表列上，選擇**建置** > **建置方案**。
+4. 儲存專案，然後在功能表列上選擇 [**組建**  >  **組建方案**]。
 
-     Class1 會顯示為中的自訂動作**工具箱**上**AnnouncementBackup 元件** 索引標籤。
+     在 [ **AnnouncementBackup 元件**] 索引標籤上，Class1 會顯示為 [**工具箱**] 中的自訂動作。
 
 ## <a name="add-the-custom-activity-to-the-site-workflow"></a>將自訂活動新增至網站工作流程
  接下來，將活動新增至工作流程，以包含自訂程式碼。
 
 #### <a name="to-add-a-custom-activity-to-the-site-workflow"></a>若要將自訂活動新增至網站工作流程
 
-1. 在 [設計] 檢視中的工作流程設計工具中開啟 Workflow1。
+1. 在設計檢視中，于工作流程設計工具中開啟 Workflow1.xaml。
 
-2. 拖曳從 Class1**工具箱**，使其出現在`onWorkflowActivated1`活動或 Class1，開啟捷徑功能表選擇 **複製**，開啟下的那一行的捷徑功能表`onWorkflowActivated1`活動，然後選擇**貼上**。
+2. 從 [**工具箱**] 拖曳 [class1]，使其出現在活動底下， `onWorkflowActivated1` 或開啟 [class1] 的快捷方式功能表，選擇 [**複製**]，開啟活動底下行的快捷方式功能表 `onWorkflowActivated1` ，然後選擇 [**貼**上]。
 
 3. 儲存專案。
 
-## <a name="test-the-site-workflow-custom-activity"></a>測試站台工作流程自訂活動
- 接下來，執行專案，並啟動網站工作流程。 自訂活動會建立備份的公告清單，並從目前的公告清單的內容複製到其中。 程式碼也會檢查是否建立之前已存在備份清單。 如果備份清單已經存在，則會將它刪除。 程式碼也會新增至新的清單，在 SharePoint 網站的 [快速啟動] 列上的連結。
+## <a name="test-the-site-workflow-custom-activity"></a>測試網站工作流程自訂活動
+ 接下來，執行專案並啟動網站工作流程。 自訂活動會建立備份公告清單，並將目前公告清單中的內容複寫到其中。 此程式碼也會檢查備份清單是否已存在，然後再建立一個。 如果備份清單已經存在，就會刪除它。 此程式碼也會在 SharePoint 網站的 [快速啟動] 列上加入新清單的連結。
 
-#### <a name="to-test-the-site-workflow-custom-activity"></a>若要測試的站台工作流程自訂活動
+#### <a name="to-test-the-site-workflow-custom-activity"></a>測試網站工作流程自訂活動
 
-1. 選擇**F5**執行專案，並將它部署到 SharePoint 的索引鍵。
+1. 選擇**F5**鍵以執行專案，並將其部署至 SharePoint。
 
-2. 在 [快速啟動] 列中，選擇**列出**連結可以顯示所有的 SharePoint 網站中可用的清單。 請注意有只有一個名為的公告清單**宣布**。
+2. 在 [快速啟動] 列上，選擇 [**清單**] 連結以顯示 SharePoint 網站中所有可用的清單。 請注意，有一個名為 [**公告**] 的公告清單。
 
-3. 在 SharePoint 網頁的頂端，選擇**站台工作流程**連結。
+3. 在 SharePoint 網頁頂端，選擇 [**網站工作流程**] 連結。
 
-4. 在 開始新的工作流程區段中，選擇**AnnouncementBackup-Workflow1**連結。 這會啟動網站工作流程，並執行自訂動作中的程式碼。
+4. 在 [開始新的工作流程] 區段下，選擇 [ **AnnouncementBackup-workflow1.xaml** ] 連結。 這會啟動網站工作流程，並在自訂動作中執行程式碼。
 
-5. 在 [快速啟動] 列中，選擇**宣布備份**連結。 請注意，宣告中所包含的所有**宣布**清單已複製到這個新的清單。
+5. 在 [快速啟動] 列上，選擇 [**公告] 備份**連結。 請注意，**公告**清單中包含的所有公告都已複製到這個新清單。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)

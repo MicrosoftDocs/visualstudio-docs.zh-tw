@@ -1,7 +1,7 @@
 ---
 title: 如何：建立實體之間的關聯 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
@@ -21,12 +21,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cba9d712e2bcfa90ae37d47e3c518697f10b6add
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981838"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016939"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>如何：建立實體之間的關聯
   您可以藉由建立關聯，在商務資料連線（BDC）模型中定義實體之間的關係。 Visual Studio 會產生方法，以提供模型的取用者與每個關聯的相關資訊。 這些方法可以由 SharePoint Web 組件、清單或自訂應用程式加以使用，以便在使用者介面 (UI) 中顯示資料關聯性。
@@ -45,11 +44,11 @@ ms.locfileid: "72981838"
 
     1. 在 [**識別碼對應**] 資料表的 [**來源**識別碼] 資料行中，選擇 [**欄位**] 資料行中所顯示之每個相符類型描述元旁的識別碼。
 
-         例如，在 [**來源識別碼**] 資料行中，選取 [`ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` 型別描述項] 和 [`ReadItem.salesOrder.SalesOrder.ContactID` 型別描述元] 旁邊的 [`ContactID`]。
+         例如，在 [**來源識別碼**] 資料行中，選取 `ContactID` `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` 類型描述元和類型描述元旁的 `ReadItem.salesOrder.SalesOrder.ContactID` 。
 
 4. 如果您想要建立外部無索引鍵關聯，請清除 [**是外鍵關聯**] 核取方塊。
 
-5. 選擇 [ **確定** ] 按鈕。
+5. 選擇 [確定] **** 按鈕。
 
 6. 在 BDC 設計工具上，代表關聯的線條會出現在來源實體與目的地實體之間。
 
@@ -61,7 +60,7 @@ ms.locfileid: "72981838"
 
      如需關聯導覽器方法的範例，請參閱[建立實體之間的關聯](../sharepoint/creating-an-association-between-entities.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [建立實體之間的關聯](../sharepoint/creating-an-association-between-entities.md)
 - [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [如何：加入 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)

@@ -1,7 +1,7 @@
 ---
-title: HOW TO：新增自訂屬性 |Microsoft Docs
+title: 如何：加入自訂屬性 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.BDC.Property_Editor
 dev_langs:
@@ -17,34 +17,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: caf2d0e63db724c8eb3c1e72c79a109548af8f9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556841"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017083"
 ---
-# <a name="how-to-add-a-custom-property"></a>HOW TO：新增自訂屬性
-  您可以將自訂屬性加入模型利用**屬性編輯器**。 您可以存取這些屬性來擷取資訊，例如連接字串和其他資料在執行階段的程式碼中。
+# <a name="how-to-add-a-custom-property"></a>如何：加入自訂屬性
+  您可以使用**屬性編輯器**，將自訂屬性加入至模型。 您可以在程式碼中存取這些屬性，以在執行時間捕獲連接字串和其他資料等資訊。
 
-### <a name="to-add-a-custom-property"></a>若要新增自訂屬性
+### <a name="to-add-a-custom-property"></a>若要加入自訂屬性
 
-1. 在  **BDC 總管**，選擇您要套用自訂屬性的模型項目表示的節點。
+1. 在 [ **BDC Explorer**] 中，選擇代表您要套用自訂屬性之模型專案的節點。
 
-2. 在功能表列上選擇 [**檢視** > **屬性] 視窗**。
+2. 在功能表列上，選擇 [**視圖**  >  **屬性視窗]**。
 
-3. 在 [**屬性**] 視窗中，選擇**自訂屬性**屬性，然後選擇省略符號按鈕 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP。NET Mobile 設計工具橢圓形"))。
+3. 在 [**屬性**] 視窗中，選擇 [**自訂屬性**] 屬性，然後選擇省略號按鈕（![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")）。
 
-     **屬性編輯器** 對話方塊隨即出現。
+     [**屬性編輯器**] 對話方塊隨即出現。
 
-4. 在文字方塊中**名稱** 欄中，指定屬性的名稱。
+4. 在 [**名稱**] 資料行的文字方塊中，指定屬性的名稱。
 
-5. 針對**型別**欄位的自訂屬性中，選擇適當的資料類型。
+5. 針對自訂屬性的 [**類型**] 欄位，選擇適當的資料類型。
 
-6. 針對**值**欄位的自訂屬性，指定的值，然後選擇**確定** 按鈕。
+6. 針對 [自訂] 屬性的 [**值**] 欄位，指定一個值，然後選擇 [**確定]** 按鈕。
 
 ## <a name="see-also"></a>另請參閱
-- [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [將商務資料整合到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [將商務資料整合至 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

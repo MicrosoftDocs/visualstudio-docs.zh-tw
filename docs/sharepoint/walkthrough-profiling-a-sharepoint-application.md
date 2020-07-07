@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：分析 SharePoint 應用程式 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
-ms.translationtype: MT
+ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77277645"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017106"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>逐步解說：分析 SharePoint 應用程式
   本逐步解說將示範如何使用 Visual Studio 中的程式碼剖析工具最佳化 SharePoint 應用程式的效能。 範例應用程式是 SharePoint 功能事件接收器，內含的閒置迴圈會降低功能事件接收器的效能。 Visual Studio 分析工具可讓您找出並排除專案中成本最高（執行緩慢）的部分，也稱為「最忙碌*路徑*」。
@@ -37,21 +36,21 @@ ms.locfileid: "77277645"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成這個逐步解說：
 
 - 支援的 Microsoft Windows 和 SharePoint 版本。
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]第 1 課：建立 Windows Azure 儲存體物件{2}。
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-sharepoint-project"></a>建立 SharePoint 專案
  首先，建立 SharePoint 專案。
 
 ### <a name="to-create-a-sharepoint-project"></a>若要建立 SharePoint 專案
 
-1. 在功能表列上 **，選擇 [** 檔案] > [**新增** > **專案**]，以顯示 [**新增專案**] 對話方塊。
+1. 在功能表列上 **，選擇 [** 檔案] [  >  **新增**  >  **專案**] 以顯示 [**新增專案**] 對話方塊。
 
-2. 展開 [**視覺效果C#**  ] 或 [ **Visual Basic**] 底下的 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
+2. 展開 [ **Visual c #** ] 或 [ **Visual Basic**] 底下的 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
 3. 在 [範本] 窗格中，選擇 [ **SharePoint 2010 專案**] 範本。
 
@@ -65,7 +64,7 @@ ms.locfileid: "77277645"
 
     目前您只能分析陣列方案。 如需沙箱化方案與伺服器陣列方案的詳細資訊，請參閱[沙箱化方案考慮](../sharepoint/sandboxed-solution-considerations.md)。
 
-7. 選擇 [完成] 按鈕。 專案會出現在**方案總管**中。
+7. 選擇 [完成]**** 按鈕。 專案會出現在**方案總管**中。
 
 ## <a name="add-a-feature-and-feature-event-receiver"></a>新增功能和功能事件接收器
  接下來，在專案中加入功能與功能的事件接收器。 這個事件接收器會包含要分析的程式碼。
@@ -151,7 +150,7 @@ ms.locfileid: "77277645"
     }
     ```
 
-5. 在 `FeatureActivated`程式底下新增下列程式。
+5. 在程式底下新增下列程式 `FeatureActivated` 。
 
     ```vb
 
@@ -193,7 +192,7 @@ ms.locfileid: "77277645"
 
 ### <a name="to-configure-and-deploy-the-sharepoint-application"></a>若要設定和部署 SharePoint 應用程式
 
-1. 在 [**分析**] 功能表上，選擇 [**啟動效能嚮導]** 。
+1. 在 [**分析**] 功能表上，選擇 [**啟動效能嚮導]**。
 
 2. 在 [第一頁] 的 [**效能] 嚮導**中，將分析的方法保留為**CPU 取樣**，然後選擇 [**下一步]** 按鈕。
 
@@ -237,17 +236,17 @@ ms.locfileid: "77277645"
 
 ### <a name="to-view-and-interpret-the-profile-results"></a>若要查看並解讀設定檔結果
 
-1. 在取樣分析報告的 [**執行最多個別工作**的函式] 區段中，請注意，`TimeCounter` 位於清單頂端附近。
+1. 在範例分析報告的 [**執行最多個別工作**的函式] 區段中，請注意 `TimeCounter` 位於清單頂端附近。
 
      這個位置指出 `TimeCounter` 是其中一個擁有最多樣本數目的函式，表示它是應用程式中最大的效能瓶頸之一。 不過，這種情形並不意外，因為它是為了方便示範而刻意設計成這樣。
 
-2. 在 [**執行最多個別工作**的函式] 區段中，選擇 [`ProcessRequest`] 連結，以顯示 `ProcessRequest` 函數的成本分佈。
+2. 在 [**執行最多個別工作**的函式] 區段中，選擇 [] `ProcessRequest` 連結以顯示函數的成本分佈 `ProcessRequest` 。
 
-     在 `ProcessRequest`的 [**呼叫**的函式] 區段中，請注意**FeatureActiviated**函式會列為最昂貴的呼叫函式。
+     在的 [**呼叫**的函式] 區段中 `ProcessRequest` ，請注意**FeatureActiviated**函數會列為最耗費資源的函式。
 
 3. 在 [**被呼叫**的函式] 區段中，選擇 [ **FeatureActivated** ] 按鈕。
 
-     在**FeatureActivated**的 [**呼叫**的函式] 區段中，`TimeCounter` 函式會列為最昂貴的呼叫函式。 在 [函式程式**代碼視圖**] 窗格中，反白顯示的程式碼（`TimeCounter`）是作用點，表示需要更正的位置。
+     在**FeatureActivated**的 [**呼叫**的函式] 區段中，函式 `TimeCounter` 會列為最耗費資源的函數。 在 [函式程式**代碼視圖**] 窗格中，反白顯示的程式碼（ `TimeCounter` ）是作用點，表示需要更正的位置。
 
 4. 關閉樣本分析報告。
 
@@ -273,6 +272,6 @@ ms.locfileid: "77277645"
      現在功能啟動的速度應該加快許多，因為已消除呼叫閒置迴圈。 樣本分析報告應該會反映這種情況。
 
 ## <a name="see-also"></a>另請參閱
-- [效能工作階段概觀](../profiling/performance-session-overview.md)
+- [效能會話總覽](../profiling/performance-session-overview.md)
 - [效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)
-- [使用 Visual Studio Profiler 尋找應用程式瓶頸](https://msdn.microsoft.com/magazine/cc337887.aspx)
+- [Find Application Bottlenecks with Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx) (使用 Visual Studio 分析工具尋找應用程式瓶頸)

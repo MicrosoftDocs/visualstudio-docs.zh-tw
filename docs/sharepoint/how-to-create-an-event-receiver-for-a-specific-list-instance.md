@@ -1,7 +1,7 @@
 ---
-title: HOW TO：建立事件接收器的特定清單執行個體 |Microsoft Docs
+title: 如何：為特定的清單實例建立事件接收器 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,43 +13,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54c384742afba3d5af7f08ee62a9ec56c7f1438c
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408542"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016963"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>HOW TO：建立事件接收器的特定清單執行個體
-  清單定義的任何執行個體中發生的事件回應的清單執行個體事件接收器。 雖然事件接收者範本不會啟用特定的清單執行個體的目標，您可以修改事件接收器來回應特定的清單執行個體中的事件清單定義範圍內。
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：為特定的清單實例建立事件接收器
+  清單實例事件接收器會回應出現在清單定義的任何實例中的事件。 雖然事件接收器範本不會啟用特定清單實例的目標，但是您可以修改範圍為清單定義的事件接收器，以回應特定清單實例中的事件。
 
- 中要鎖定特定的清單執行個體*Elements.xml*的事件接收器中，取代`ListTemplateId`使用`ListUrl`及新增清單執行個體的 URL。
+ 若要以特定清單實例為目標，請在事件接收器的*Elements.xml*中， `ListTemplateId` 將取代為， `ListUrl` 並加入清單實例的 URL。
 
-## <a name="create-a-list-instance-event-receiver"></a>建立清單執行個體事件接收器
- 下列步驟示範如何修改為只回應中的自訂宣告清單執行個體所發生事件的清單項目事件接收器。
+## <a name="create-a-list-instance-event-receiver"></a>建立清單實例事件接收器
+ 下列步驟顯示如何修改清單專案事件接收器，只回應發生在自訂宣告清單實例中的事件。
 
-#### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>若要修改事件接收器來回應特定的清單執行個體
+#### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>修改事件接收器以回應特定的清單實例
 
 1. 在瀏覽器中開啟 SharePoint 網站。
 
-2. 在 [導覽] 窗格中，**列出**連結。
+2. 在流覽窗格中，**列出**連結。
 
-3. 在 **所有網站內容**頁面上，選擇**建立**連結。
+3. 在 [**所有網站內容**] 頁面中，選擇 [**建立**] 連結。
 
-4. 在**建立**對話方塊方塊中，選擇**宣布**類型，將公告命名**TestAnnouncements**，然後選擇 [**建立**] 按鈕。
+4. 在 [**建立**] 對話方塊中，選擇 [**公告**] 類型，將公告命名為**TestAnnouncements**，然後選擇 [**建立**] 按鈕。
 
-5. 在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，建立事件接收器專案。
+5. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，建立事件接收器專案。
 
-6. 在 **何種類型的事件接收器？** 清單中，選擇**清單項目事件**。
+6. 在 [**您要何種類型的事件接收器？** ] 清單中，選擇 [**清單專案事件**]。
 
     > [!NOTE]
-    > 您也可以選取任何其他類型的清單定義，例如，範圍的事件接收器**列出的電子郵件事件**或是**清單工作流程事件**。
+    > 您也可以選取範圍為清單定義的任何其他類型事件接收器，例如，**列出電子郵件事件**或**列出工作流程事件**。
 
-7. 在 **何種項目應該做為事件來源？** 清單中，選擇**公告**。
+7. 在 [**哪個專案應該是事件來源？** ] 清單中，選擇 [**公告**]。
 
-8. 在 [**處理下列事件**清單中，選取**正在加入項目**核取方塊，，然後選擇**完成**] 按鈕。
+8. 在 [**處理下列事件**] 清單中，選取 [**要加入的專案**] 核取方塊，然後選擇 [**完成]** 按鈕。
 
-9. 在 **方案總管**下 EventReceiver1，, 開啟*Elements.xml*。
+9. 在**方案總管**的 [EventReceiver1] 下，開啟*Elements.xml*。
 
      事件接收器目前是使用下列程式碼行參考 [公告] 清單定義：
 
@@ -63,27 +62,27 @@ ms.locfileid: "63408542"
     <Receivers ListUrl="Lists/TestAnnouncements">
     ```
 
-     這會指示回應只發生在新的事件的事件接收器**TestAnnouncements**您剛才建立的宣告清單。 您可以變更`ListURL`參考任何清單執行個體，在 SharePoint 伺服器上的屬性。
+     這會指示事件接收器只回應您剛建立的新**TestAnnouncements**公告清單中所發生的事件。 您可以變更 `ListURL` 屬性，以參考 SharePoint 伺服器上的任何清單實例。
 
-10. 開啟事件接收器程式碼檔案，並將中斷點放在 ItemAdding 方法。
+10. 開啟事件接收器的程式碼檔案，並在 ItemAdding 方法中放置中斷點。
 
-11. 選擇**F5**鍵，建置並執行方案。
+11. 選擇**F5**鍵以建立並執行方案。
 
-12. 在 SharePoint 中，選擇**TestAnnouncements**瀏覽窗格中的連結。
+12. 在 SharePoint 中，選擇流覽窗格中的 [ **TestAnnouncements** ] 連結。
 
-13. 選擇**加入新公告**連結。
+13. 選擇 [**加入新公告**] 連結。
 
-14. 以了解宣告中，輸入標題，然後選擇**儲存** 按鈕。
+14. 輸入通知的 [標題]，然後選擇 [**儲存**] 按鈕。
 
-     請注意新的項目新增至自訂的公告清單時叫用中斷點。
+     請注意，當新專案新增至 [自訂宣告] 清單時，就會叫用中斷點。
 
 15. 選擇**F5**鍵繼續。
 
-16. 在 [導覽] 窗格中，選擇**列出**連結，然後再選擇**公告**連結。
+16. 在流覽窗格中，選擇 [**清單**] 連結，然後選擇 [**公告**] 連結。
 
 17. 加入新的公告。
 
-     請注意，事件接收器將不會在新的公告因為接收者已設定為只回應中的自訂的公告清單執行個體中，事件才會觸發**TestAnnouncements**。
+     請注意，事件接收器不會在新的公告上觸發，因為接收者已設定為只回應自訂公告清單實例（ **TestAnnouncements**）中的事件。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)

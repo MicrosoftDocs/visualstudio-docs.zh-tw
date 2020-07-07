@@ -1,7 +1,7 @@
 ---
 title: 如何：將篩選描述元加入至 Finder 方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9dd853142d970cd14de20f4782accb3ce3e17eb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986242"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016739"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：將篩選描述元加入至 Finder 方法
   篩選描述元可讓模型的取用者在執行之前，將值傳遞給方法。 如需詳細資訊，請參閱[設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -33,7 +32,7 @@ ms.locfileid: "72986242"
 
 2. 在 [**方法詳細資料**] 視窗中，選擇參數的類型描述元。
 
-3. 在功能表列上，選擇 視圖 ** > 屬性視窗**。
+3. 在功能表列上，選擇 [**視圖**  >  **屬性視窗]**。
 
 4. 在 [**屬性**] 視窗中，將 [**類型名稱**] 屬性設定為適用于篩選準則的資料類型。
 
@@ -45,7 +44,7 @@ ms.locfileid: "72986242"
 
      新的篩選描述項會出現在 [**篩選器描述**項] 節點底下。
 
-7. 在功能表列上，選擇 視圖 ** > 屬性視窗**。
+7. 在功能表列上，選擇 [**視圖**  >  **屬性視窗]**。
 
 8. 在 [**屬性**] 視窗中，選擇 [**類型**] 屬性。
 
@@ -62,12 +61,12 @@ ms.locfileid: "72986242"
      下列範例會傳回具有指定之訂單日期的銷售訂單。
 
     > [!NOTE]
-    > 將 [`ServerName`] 欄位的值取代為您的伺服器名稱。
+    > 將欄位的值取代 `ServerName` 為您的伺服器名稱。
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：加入 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)
 - [如何：加入特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [如何：將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)

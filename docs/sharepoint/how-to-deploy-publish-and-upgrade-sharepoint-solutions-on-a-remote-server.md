@@ -1,7 +1,7 @@
 ---
-title: 部署、 發行時，與遠端升級 SharePoint 方案
+title: 部署、發佈、& 從遠端升級 SharePoint 方案
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,67 +15,66 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: f05f42f8aed35696b962e71a5fce86c2956b3661
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401434"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016811"
 ---
-# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>作法：部署、 發行和升級遠端伺服器上的 SharePoint 方案
-  除了本機系統中部署 SharePoint 方案，您可以在遠端站台或本機 SharePoint 網站發行沙箱化 SharePoint 方案。 遠端發行的程序副本 *.wsp*檔案至 SharePoint 伺服器，安裝方案，並接著可讓您啟用此解決方案。 對它進行變更之後，您也可以升級遠端 SharePoint 方案安裝。
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何：在遠端伺服器上部署、發行和升級 SharePoint 方案
+  除了將 SharePoint 方案部署到本機系統以外，您還可以將沙箱化 SharePoint 方案發行到遠端網站或本機 SharePoint 網站。 遠端發佈程式會將 *.wsp*檔案複製到 SharePoint 伺服器、安裝方案，然後讓您啟用方案。 您也可以在進行變更之後，升級遠端 SharePoint 方案安裝。
 
-## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>若要將沙箱化 SharePoint 方案發行至遠端 SharePoint 伺服器
+## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>將沙箱化 SharePoint 方案發行至遠端 SharePoint 伺服器
 
-1. 在 **方案總管**，開啟您想要發佈，然後選擇 沙箱化 SharePoint 專案的捷徑功能表**發佈**。
+1. 在**方案總管**中，開啟您要發行之沙箱化 SharePoint 專案的快捷方式功能表，然後選擇 [**發行**]。
 
-2. 在 **發佈**對話方塊方塊中，選擇**發行至 SharePoint 網站**選項按鈕，然後再輸入 URL online 發行網站，例如： `https://mytestsite.sharepoint.microsoftonline.com`。
+2. 在 [**發行**] 對話方塊中，選擇 [**發行至 SharePoint 網站**] 選項按鈕，然後輸入線上發佈網站的 URL，例如： `https://mytestsite.sharepoint.microsoftonline.com` 。
 
-3. 選擇**瀏覽器中開啟 [解決方案資源庫] 頁面，在發行後**選項按鈕，檢視中的解決方案清單**解決方案資源庫**發行後的頁面。
+3. 選擇 [**發佈之後，在瀏覽器中開啟方案庫**] 選項按鈕，以在發行後查看 [**方案庫**] 頁面中的方案清單。
 
-4. 選擇**發佈** 按鈕。
+4. 選擇 [**發行**] 按鈕。
 
-5. 如果需要使用者驗證，登入遠端伺服器。
+5. 如果需要使用者驗證，請登入遠端伺服器。
 
-     發行進度出現在 Visual Studio**輸出**視窗。 當處理程序完成時，方案 ( *.wsp*) 檔案會安裝遠端 SharePoint 伺服器上。 不過，它仍舊需要啟動才可以在 SharePoint 中使用。
+     發行進度會出現在 Visual Studio 的 [**輸出**] 視窗中。 當程式完成時，會在遠端 SharePoint 伺服器上安裝方案（*.wsp*）檔案。 不過，它仍然必須先啟用，才能在 SharePoint 中使用。
 
-6. 在 **解決方案資源庫**頁面上選取的 SharePoint 應用程式，然後在功能區中，選擇  **Activate**  按鈕。
+6. 在 [**方案庫**] 頁面上，選取 SharePoint 應用程式，然後在功能區上選擇 [**啟動**] 按鈕。
 
-7. 在**啟用的解決方案** 對話方塊中，於功能區中，選擇**Activate**按鈕一次。
+7. 在 [**啟用方案**] 對話方塊的功能區上，再次選擇 [**啟動**] 按鈕。
 
-     **狀態**上的資料行**解決方案資源庫**頁面會指出應用程式使用中。
+     [**方案庫**] 頁面上的 [**狀態**] 資料行會指出應用程式正在使用中。
 
-## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>若要升級遠端 SharePoint 伺服器上的沙箱化 SharePoint 方案
- 如果遠端伺服器上已沙箱化 SharePoint 方案，下列程序可讓您在變更中的應用程式之後將它升級[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
+## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>升級遠端 SharePoint 伺服器上的沙箱化 SharePoint 方案
+ 如果沙箱化 SharePoint 方案已經在遠端伺服器上發行，下列程式可讓您在對中的應用程式進行變更之後，將它升級 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-1. 重新命名在 SharePoint 封裝[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 若要這樣做，請在**方案總管 中**開啟封裝。 它會出現在**套件總管**。
+1. 在中重新命名 SharePoint 封裝 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 若要這麼做，請在**方案總管**開啟封裝。 它會出現在 [**封裝瀏覽器**] 中。
 
-2. 在 **套件總管**，請在**名稱**方塊中，將封裝名稱變更為唯一的名稱。
+2. 在 [ **Package Explorer**] 的 [**名稱**] 方塊中，將封裝名稱變更為唯一的名稱。
 
 3. 儲存專案。
 
-4. 在 **方案總管**，開啟專案的捷徑功能表，然後選擇**發佈**。
+4. 在**方案總管**中，開啟專案的快捷方式功能表，然後選擇 [**發行**]。
 
-5. 在 **發佈**對話方塊方塊中，選擇**發行至 SharePoint 網站**選項按鈕，並接著，如果解決方案中的儲存位置的遠端伺服器的 URL，輸入。
+5. 在 [**發行**] 對話方塊中，選擇 [**發行至 SharePoint 網站**] 選項按鈕，然後如果遺漏儲存解決方案的遠端伺服器 URL，請輸入它。
 
-6. 選擇**瀏覽器中開啟 [解決方案資源庫] 頁面，在發行後**選項按鈕，檢視中的解決方案清單**解決方案資源庫**發行後的頁面。
+6. 選擇 [**發佈之後，在瀏覽器中開啟方案庫**] 選項按鈕，以在發行後查看 [**方案庫**] 頁面中的方案清單。
 
-7. 選擇**發佈** 按鈕。
+7. 選擇 [**發行**] 按鈕。
 
-8. 如果需要使用者驗證，登入遠端伺服器。
+8. 如果需要使用者驗證，請登入遠端伺服器。
 
-     如果您登入遠端伺服器最近，可能不需要驗證。
+     如果您最近登入遠端伺服器，可能就不需要進行驗證。
 
-     如果具有相同名稱的應用程式的舊版仍然存在 SharePoint 伺服器上，您會收到錯誤，在 SharePoint 伺服器上已經存在具有相同名稱的封裝。 您必須將封裝重新命名為發行前的唯一名稱。
+     如果 SharePoint 伺服器上仍有相同名稱的繼承應用程式，您會收到一則錯誤，指出 SharePoint 伺服器上已有相同名稱的套件。 發行之前，您必須先將封裝重新命名為唯一名稱。
 
-9. 在 SharePoint 中，選擇新的應用程式，然後在功能區中，選擇**升級** 按鈕。
+9. 選擇 SharePoint 中的新應用程式，然後在功能區上選擇 [**升級**] 按鈕。
 
-10. 在 [**升級方案**] 對話方塊中，於功能區中，選擇**升級**按鈕一次。 **狀態**上的資料行**解決方案資源庫**頁面上現在應該指出應用程式是使用中。
+10. 在 [**升級方案**] 對話方塊的功能區上，再次選擇 [**升級**] 按鈕。 [**方案庫**] 頁面上的 [**狀態**] 欄位現在應該會指出應用程式為使用中狀態。
 
-     停用舊版本的解決方案，解決方案的新版本升級舊的解決方案，從保留的資料並在 SharePoint 中啟動新的方案。
+     舊版的解決方案會停用，新版本的解決方案會使用從舊解決方案維護的資料進行升級，而新的方案則會在 SharePoint 中啟用。
 
 ## <a name="see-also"></a>另請參閱
-- [如何：部署並發佈至本機 SharePoint 網站的 SharePoint 方案](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
+- [如何：將 SharePoint 方案部署和發行至本機 SharePoint 網站](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
 - [建立 SharePoint 方案套件](../sharepoint/creating-sharepoint-solution-packages.md)
 - [如何：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
-- [如何：新增和移除功能和項目加入封裝時，使用封裝設計工具](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
+- [如何：使用封裝設計工具在封裝中加入和移除功能和專案](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)

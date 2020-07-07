@@ -1,7 +1,7 @@
 ---
 title: 建立顯示適用于 SharePoint 之 OData 的 Silverlight web 元件
 ms.date: 02/22/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.SPE.SilverlightWebPart
 dev_langs:
@@ -12,36 +12,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd2e42f48a6881b533a2f098e47ac92511b85aa3
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984830"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017169"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>逐步解說：建立可顯示 SharePoint 之 OData 的 Silverlight web 元件
   SharePoint 2010 會透過 OData 來公開其清單資料。 在 SharePoint 中，OData 服務是由 RESTful 服務 ListData 所執行。 本逐步解說示範如何建立主控 Silverlight 應用程式的 SharePoint web 元件。 Silverlight 應用程式會使用 ListData 來顯示 SharePoint 公告清單資訊。 如需詳細資訊，請參閱[SharePoint FOUNDATION REST 介面](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14))和[開放式資料通訊協定](https://www.odata.org/)。
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
- 您需要下列元件才能完成此逐步解說：
+## <a name="prerequisites"></a>必要條件
+ 您需要下列元件才能完成這個逐步解說：
 
 - 支援的 Microsoft Windows 和 SharePoint 版本。
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-silverlight-application-and-silverlight-web-part"></a>建立 Silverlight 應用程式和 Silverlight web 元件
  首先，在 Visual Studio 中建立 Silverlight 應用程式。 Silverlight 應用程式會使用 ListData 服務，從 SharePoint 公告清單中抓取資料。
 
 > [!NOTE]
-> 4\.0 之前的 Silverlight 版本都不支援參考 SharePoint 清單資料所需的介面。
+> 4.0 之前的 Silverlight 版本都不支援參考 SharePoint 清單資料所需的介面。
 
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>建立 Silverlight 應用程式和 Silverlight web 元件
 
-1. 在功能表列上 **，選擇 [** 檔案]  >  [**新增** > **專案**]，以顯示 [**新增專案**] 對話方塊。
+1. 在功能表列上 **，選擇 [** 檔案] [  >  **新增**  >  **專案**] 以顯示 [**新增專案**] 對話方塊。
 
-2. 展開 [**視覺效果C#**  ] 或 [ **Visual Basic**] 底下的 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
+2. 展開 [ **Visual c #** ] 或 [ **Visual Basic**] 底下的 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
 3. 在 [範本] 窗格中，選擇 [ **SharePoint 2010 Silverlight Web 元件**] 範本。
 
@@ -57,9 +56,9 @@ ms.locfileid: "72984830"
 
 7. 在 [**指定 Silverlight 設定資訊**] 頁面的 [**您要如何關聯 silverlight Web 元件**] 區段中，選擇 [**建立新的 Silverlight 專案並與 Web 元件建立關聯**] 選項按鈕。
 
-8. 將 [**名稱**] 變更為**SLApplication**，將 [**語言**] 設定為**Visual Basic**或**視覺效果C#** ，然後將 [ **silverlight 版本**] 設定為**silverlight 4.0**。
+8. 將**名稱**變更為**SLApplication**，將**Language**設為**Visual Basic**或**Visual c #**，然後將**silverlight 版本**設定為**silverlight 4.0**。
 
-9. 選擇 [**完成]** 按鈕。 專案會顯示在**方案總管**中。
+9. 選擇 [完成]**** 按鈕。 專案會顯示在**方案總管**中。
 
      解決方案包含兩個專案： Silverlight 應用程式和 Silverlight web 元件。 Silverlight 應用程式會從 SharePoint 抓取和顯示清單資料，而 Silverlight web 元件則會主控 Silverlight 應用程式，讓您能夠在 SharePoint 中進行查看。
 
@@ -81,9 +80,9 @@ ms.locfileid: "72984830"
 
 4. 選擇 [**確定]** 按鈕，將服務參考新增至專案，並使用預設的服務名稱 ServiceReference1。
 
-5. 在功能表列上選擇 [建置] > [建置解決方案]。
+5. 在功能表列上，選擇 [**組建**] [組建  >  **方案**]。
 
-6. 根據 SharePoint 服務，將新的資料來源加入至專案。 若要這麼做，請在功能表列上選擇  **View**   > **其他 Windows**  > **資料來源**。
+6. 根據 SharePoint 服務，將新的資料來源加入至專案。 若要這樣做，請在功能表列上選擇 [**查看**  >  **其他 Windows**  >  **資料來源**]。
 
      [**資料來源**] 視窗會顯示所有可用的 SharePoint 清單資料，例如 [工作]、[公告] 和 [行事曆]。
 
@@ -93,7 +92,7 @@ ms.locfileid: "72984830"
 
 8. 調整格線控制項大小，使其符合 Silverlight 頁面。
 
-9. 在 MainPage 的 xaml Visual Basic 程式碼檔（*MainPage.xaml.cs* for C# Visual 或*MainPage* ）中，加入下列命名空間參考。
+9. 在 MainPage xaml 程式碼檔（適用于 Visual c # 的*MainPage.xaml.cs*或 Visual Basic 的*MainPage* ）中，新增下列命名空間參考。
 
     ```vb
     ' Add the following three Imports statements.
@@ -123,7 +122,7 @@ ms.locfileid: "72984830"
     DataServiceCollection<AnnouncementsItem> announcements = new DataServiceCollection<AnnouncementsItem>();
     ```
 
-11. 將 `UserControl_Loaded` 程式取代為下列程式。
+11. 將程式取代為 `UserControl_Loaded` 下列程式。
 
     ```vb
     Private Sub UserControl_Loaded_1(sender As Object, e As RoutedEventArgs)
@@ -230,6 +229,6 @@ ms.locfileid: "72984830"
     > [!NOTE]
     > 在跨網域存取 Silverlight 中的資料時，Silverlight 會防範可用來入侵 web 應用程式的安全性弱點。 如果您在存取 Silverlight 中的遠端資料時遇到問題，請參閱[讓服務可跨網域界限使用](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95))。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [建立 SharePoint 的 web 元件](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [部署、發行和升級 SharePoint 方案套件](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)

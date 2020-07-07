@@ -1,7 +1,7 @@
 ---
 title: 如何：定義方法實例 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e21900e87278ad500ee8497d1dd0c49350695d1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 170982a5d4abe33ca8cd705a979acc0737185a9c
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981802"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016833"
 ---
 # <a name="how-to-define-a-method-instance"></a>如何：定義方法實例
   針對模型中的每個方法，您必須至少定義一個方法實例。
 
- 使用 [ **BDC 方法詳細資料**] 視窗加入方法實例。 當您加入方法實例時，Visual Studio 會將 `<MethodInstance>` 元素加入至專案中模型檔案的 XML。 如需 `<MethodInstance>` 元素之屬性的詳細資訊，請參閱[MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))。
+ 使用 [ **BDC 方法詳細資料**] 視窗加入方法實例。 當您加入方法實例時，Visual Studio 會將 `<MethodInstance>` 元素加入至專案中模型檔案的 XML。 如需元素屬性的詳細資訊 `<MethodInstance>` ，請參閱[MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))。
 
 ### <a name="to-define-a-method-instance"></a>若要定義方法實例
 
@@ -35,11 +34,11 @@ ms.locfileid: "72981802"
 
      新的方法實例會出現在 [**實例**] 節點底下。
 
-3. 在功能表列上，選擇 視圖 ** > 屬性視窗**。
+3. 在功能表列上，選擇 [**視圖**  >  **屬性視窗]**。
 
 4. 在 [**屬性**] 視窗中，設定方法實例的屬性。 如需每個屬性的詳細資訊，請參閱[MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)
 - [如何：將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [如何：將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)

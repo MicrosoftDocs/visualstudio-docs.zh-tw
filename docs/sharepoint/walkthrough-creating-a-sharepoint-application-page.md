@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：建立 SharePoint 應用程式頁面 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0eaf7bda4ac4ed67dae79b8dd83bb59ba6985343
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985020"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016495"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>逐步解說：建立 SharePoint 應用程式頁面
 
@@ -26,7 +25,7 @@ ms.locfileid: "72985020"
 
 本逐步解說會示範如何建立應用程式頁面，然後使用本機 SharePoint 網站來加以調試。 此頁面會顯示每個使用者在伺服器陣列的所有網站中建立或修改的所有專案。
 
-這個逐步解說將說明下列工作：
+本逐步解說將說明下列工作：
 
 - 建立 SharePoint 專案。
 - 將應用程式頁面加入至 SharePoint 專案。
@@ -35,7 +34,7 @@ ms.locfileid: "72985020"
 - 測試應用程式頁面。
 
 > [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[個人化 VISUAL STUDIO IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -45,7 +44,7 @@ ms.locfileid: "72985020"
 
 首先，建立**空白的 SharePoint 專案**。 稍後，您將會在此專案中加入**應用程式頁面**專案。
 
-1. 啟動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
+1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
 2. 開啟 [**新增專案**] 對話方塊，展開您要使用之語言下的 [ **Office/SharePoint** ] 節點，然後選擇 [ **SharePoint 方案**] 節點。
 
@@ -61,19 +60,19 @@ ms.locfileid: "72985020"
 
 1. 在**方案總管**中，選擇 [ **MySharePointProject** ] 專案。
 
-2. 在功能表列中，選擇 [專案] > [加入新項目]。
+2. 在功能表列上，選擇 [**專案**] [  >  **加入新專案**]。
 
 3. 在 [**加入新專案**] 對話方塊中，選擇 [**應用程式] 頁面（[僅限陣列方案**] 範本。
 
 4. 將頁面命名為**SearchItems**，然後選擇 [**新增**] 按鈕。
 
-     Visual Web Developer 設計工具會在 [**來源**] 視圖中顯示應用程式頁面，您可以在其中看到頁面的 HTML 元素。 設計工具會顯示數個 <xref:System.Web.UI.WebControls.Content> 控制項的標記。 每個控制項都會對應到預設應用程式主版頁面中定義的 <xref:System.Web.UI.WebControls.ContentPlaceHolder> 控制項。
+     Visual Web Developer 設計工具會在 [**來源**] 視圖中顯示應用程式頁面，您可以在其中看到頁面的 HTML 元素。 設計工具會顯示數個控制項的標記 <xref:System.Web.UI.WebControls.Content> 。 每個控制項都會對應到 <xref:System.Web.UI.WebControls.ContentPlaceHolder> 預設應用程式主版頁面中定義的控制項。
 
 ## <a name="design-the-layout-of-the-application-page"></a>設計應用程式頁面的版面配置
 
 應用程式頁面專案可讓您使用設計工具，將 ASP.NET 控制項加入至應用程式頁面。 這個設計工具是在 Visual Web Developer 中使用的設計工具。 將標籤、選項按鈕清單和資料表加入至設計工具的**來源**視圖，然後設定屬性，就像設計任何標準 ASP.NET 網頁一樣。
 
-1. 在功能表列上，選擇 [檢視] > [工具箱]。
+1. 在功能表列上，選擇 [**視圖**] [  >  **工具箱**]。
 
 2. 在 [**工具箱**] 的 [標準] 節點中，執行下列其中一個步驟：
 
@@ -83,9 +82,9 @@ ms.locfileid: "72985020"
 
 3. 重複上一個步驟，將**DropDownList**專案和**資料表**專案加入至**PlaceHolderMain**內容控制項。
 
-4. 在設計工具上，將 [標籤] 控制項的 [`Text`] 屬性值變更為 [**顯示所有專案**]。
+4. 在設計工具上，將 `Text` [標籤] 控制項的屬性值變更為 [**顯示所有專案**]。
 
-5. 在設計工具上，將 `<asp:DropDownList>` 元素取代為下列 XML。
+5. 在設計工具上， `<asp:DropDownList>` 以下列 XML 取代元素。
 
     ```xml
     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true"
@@ -97,13 +96,13 @@ ms.locfileid: "72985020"
 
 ## <a name="handle-the-events-of-controls-on-the-page"></a>處理頁面上控制項的事件
 
-處理應用程式頁面中的控制項，就像任何 ASP.NET 網頁一樣。 在這個程式中，您將處理下拉式清單的 `SelectedIndexChanged` 事件。
+處理應用程式頁面中的控制項，就像任何 ASP.NET 網頁一樣。 在這個程式中，您將處理 `SelectedIndexChanged` 下拉式清單的事件。
 
 1. 在 [ **View** ] 功能表上，選擇 [程式**代碼**]。
 
      應用程式頁面程式碼檔案隨即在程式碼編輯器中開啟。
 
-2. 將下列方法加入 `SearchItems` 類別中。 這個程式碼會藉由呼叫稍後將在本逐步解說中建立的方法，來處理 <xref:System.Web.UI.WebControls.DropDownList> 的 <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> 事件。
+2. 將下列方法新增至 `SearchItems` 類別。 這個 <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> <xref:System.Web.UI.WebControls.DropDownList> 程式碼會呼叫您稍後將在本逐步解說中建立的方法來處理的事件。
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -113,12 +112,12 @@ ms.locfileid: "72985020"
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. 將下列方法加入 `SearchItems` 類別中。 這個方法會逐一查看伺服器陣列上的所有網站，並搜尋目前使用者所建立或修改的專案。
+4. 將下列方法新增至 `SearchItems` 類別。 這個方法會逐一查看伺服器陣列上的所有網站，並搜尋目前使用者所建立或修改的專案。
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. 將下列方法加入 `SearchItems` 類別中。 這個方法會顯示資料表中目前使用者所建立或修改的專案。
+5. 將下列方法新增至 `SearchItems` 類別。 這個方法會顯示資料表中目前使用者所建立或修改的專案。
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
@@ -153,5 +152,5 @@ ms.locfileid: "72985020"
 
 ## <a name="see-also"></a>另請參閱
 
-如何：
-[應用程式 _Layouts 頁面類型](/previous-versions/office/aa979604(v=office.14))[建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)
+[如何：建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md) 
+[應用程式 _Layouts 頁面類型](/previous-versions/office/aa979604(v=office.14))
