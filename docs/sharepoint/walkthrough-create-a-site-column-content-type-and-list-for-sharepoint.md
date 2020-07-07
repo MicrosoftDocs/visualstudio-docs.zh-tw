@@ -1,7 +1,7 @@
 ---
 title: 建立 SharePoint 的網站資料行、內容類型和清單
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -19,12 +19,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cc6782e4a83f259eb17632addec36c7804b27858
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
-ms.translationtype: MT
+ms.openlocfilehash: 9ce76c72bad138a5c6c40afe717aadafec02c677
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879345"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015276"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>逐步解說：建立 SharePoint 的網站資料行、內容類型和清單
   下列程式示範如何建立自訂 SharePoint 網站資料行（或*欄位*），以及使用網站資料行的內容類型。 它也會顯示如何建立使用新內容類型的清單。
@@ -41,33 +40,33 @@ ms.locfileid: "74879345"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要條件：
- 您需要下列元件才能完成此逐步解說：
+## <a name="prerequisites"></a>必要條件
+ 您需要下列元件才能完成這個逐步解說：
 
 - 支援的 Windows 和 SharePoint 版本。
 
 - [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>建立自訂網站資料行
- 這個範例會建立一個清單，用於管理醫院中的病人。 首先，您必須在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中建立 SharePoint 專案，並在其中新增網站欄，如下所示。
+ 這個範例會建立一個清單，用於管理醫院中的病人。 首先，您必須在中建立 SharePoint 專案， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 並在其中新增網站欄，如下所示。
 
-#### <a name="to-create-the-project"></a>建立專案
+#### <a name="to-create-the-project"></a>若要建立專案
 
-1. 在 **[[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 檔案**] 功能表上，選擇 [**新增** > **專案**]。
+1. 在 [檔案] [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **File**功能表上，選擇 [**新增**  >  **專案**]。
 ::: moniker range="=vs-2017"
-2. 在 [**新增專案**] 對話方塊中，于 **[ C#視覺效果**] 或 [ **Visual Basic**] 底下，展開 [ **Office/SharePoint** ] 節點，然後選取 [ **SharePoint 方案**]。
+2. 在 [**新增專案**] 對話方塊的 [ **Visual c #** ] 或 [ **Visual Basic**] 底下，展開 [ **Office/SharePoint** ] 節點，然後選取 [ **SharePoint 方案**]。
 
 3. 在 [**範本**] 窗格中，針對您已安裝的特定 sharepoint 版本選擇**sharepoint 空白專案**。 例如，如果您有 SharePoint 2016 安裝，請選取 [ **sharepoint 2016-空白專案**] 範本。  
 
 4. 將專案的名稱**變更為 [** 實務]，然後選擇 [**確定]** 按鈕。
 
-5. 在 [**指定網站和安全性層級進行偵錯工具**] 對話方塊中，輸入您要加入新的自訂欄位專案之本機 SharePoint 網站的 URL，或使用預設位置（`http://<`*SystemName*`>/)`。
+5. 在 [**指定網站和安全性層級進行偵錯工具**] 對話方塊中，輸入您要加入新自訂欄位專案之本機 SharePoint 網站的 URL，或使用預設位置（ `http://<` *SystemName* `>/)` 。
 
 6. 在 [**此 SharePoint 方案的信任層級為何？** ] 區段中，使用預設值 [**部署為沙箱化方案**]。
 
      如需沙箱和伺服器陣列方案的詳細資訊，請參閱[沙箱化方案考慮](../sharepoint/sandboxed-solution-considerations.md)。
 
-7. 選擇 [完成] 按鈕。 專案現在會列在**方案總管**中。
+7. 選擇 [完成]**** 按鈕。 專案現在會列在**方案總管**中。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 2.  在 [**建立新專案**] 對話方塊中，選取您已安裝之特定 sharepoint 版本的**sharepoint 空白專案**。 例如，如果您有 SharePoint 2016 安裝，請選取 [ **sharepoint 2016-空白專案**] 範本。
@@ -75,22 +74,22 @@ ms.locfileid: "74879345"
 
 3. 將專案的名稱**變更為 [** 實務]，然後選擇 [**建立**] 按鈕。
 
-4. 在 [**指定網站和安全性層級進行偵錯工具**] 對話方塊中，輸入您要加入新的自訂欄位專案之本機 SharePoint 網站的 URL，或使用預設位置（`http://<`*SystemName*`>/)`。
+4. 在 [**指定網站和安全性層級進行偵錯工具**] 對話方塊中，輸入您要加入新自訂欄位專案之本機 SharePoint 網站的 URL，或使用預設位置（ `http://<` *SystemName* `>/)` 。
 
 5. 在 [**此 SharePoint 方案的信任層級為何？** ] 區段中，使用預設值 [**部署為沙箱化方案**]。
 
      如需沙箱和伺服器陣列方案的詳細資訊，請參閱[沙箱化方案考慮](../sharepoint/sandboxed-solution-considerations.md)。
 
-6. 選擇 [完成] 按鈕。 專案現在會列在**方案總管**中。
+6. 選擇 [完成]**** 按鈕。 專案現在會列在**方案總管**中。
 ::: moniker-end
 
 #### <a name="to-add-site-columns"></a>若要新增網站資料行
 
-1. 加入新的網站資料行。 若要這麼做，請在**方案總管**中，以滑鼠**按右鍵 [實務**] 專案，然後選擇 [**加入** > **新專案**]。
+1. 加入新的網站資料行。 若要這麼做，請在**方案總管**中，以滑鼠右鍵按一下 [實務 **] 專案，然後選擇 [** **加入**  >  **新專案**]。
 
 2. 在 [**加入新專案**] 對話方塊中，選擇 [**網站資料行**]，將名稱變更為**PatientName**，然後選擇 [**加入**] 按鈕。
 
-3. 在 [網站] 資料行的 [ *Elements* ] 檔案中，將 [**類型**] 設定保留為 [**文字**]，將 [**群組**] 設定變更為 [實習**網站] 欄**。 完成時，網站資料行的*Elements .xml*檔案看起來應該類似下列範例。
+3. 在 [網站] 資料行的*Elements.xml*檔案中，將 [**類型**] 設定保留為 [**文字**]，將 [**群組**] 設定變更為 [實習**網站] 欄**。 完成時，網站資料行的*Elements.xml*檔案看起來應該如下列範例所示。
 
     ```xml
     <Field
@@ -116,9 +115,9 @@ ms.locfileid: "74879345"
 
 1. 將內容類型新增至專案。 若要這麼做，請在**方案總管**中，選擇 [專案] 節點
 
-2. 在功能表列中，選擇 [專案] > [加入新項目]。
+2. 在功能表列上，選擇 [**專案**] [  >  **加入新專案**]。
 
-3. 在 [**視覺C#效果**] 或 [ **Visual Basic**] 底下，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
+3. 在 [ **Visual c #** ] 或 [ **Visual Basic**] 底下，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
 4. 在 [**範本**] 窗格中，選擇 [**內容類型**] 範本，將名稱變更為 [**患者資訊**]，然後選擇 [**新增**] 按鈕。
 
@@ -141,7 +140,7 @@ ms.locfileid: "74879345"
 
 10. 將 [**組名**] 變更為 [實習**內容類型**]，並將其他設定保留為預設值。
 
-11. 在功能表列上 **，選擇 [** 檔案] > [**全部儲存**]，然後關閉 [內容類型設計工具]。
+11. 在功能表列上 **，選擇 [檔案] [**  >  **全部儲存**]，然後關閉 [內容類型設計工具]。
 
 ## <a name="create-a-list"></a>建立清單
  現在，請建立使用新內容類型和網站資料行的清單。
@@ -150,13 +149,13 @@ ms.locfileid: "74879345"
 
 1. 將清單加入至專案。 若要這麼做，請在**方案總管**中，選擇專案節點。
 
-2. 在功能表列中，選擇 [專案] > [加入新項目]。
+2. 在功能表列上，選擇 [**專案**] [  >  **加入新專案**]。
 
-3. 在 [**視覺C#效果**] 或 [ **Visual Basic**] 底下，展開 [ **SharePoint** ] 節點。
+3. 在 [ **Visual c #** ] 或 [ **Visual Basic**] 底下，展開 [ **SharePoint** ] 節點。
 
 4. 在 [**範本**] 窗格中，選擇 [**清單**] 範本，將名稱變更為 [**病人**]，然後選擇 [**新增**] 按鈕。
 
-5. 保留 [**根據預設設定自訂清單**] **（自訂清單）** ，然後選擇 [**完成]** 按鈕。
+5. 保留 [**根據預設設定自訂清單**] **（自訂清單）**，然後選擇 [**完成]** 按鈕。
 
 6. 在 [清單設計工具] 中，選擇 [**內容類型**] 按鈕以顯示 [**內容類型設定**] 對話方塊。
 
@@ -222,7 +221,7 @@ ms.locfileid: "74879345"
 
 #### <a name="to-test-the-application"></a>若要測試應用程式
 
-1. 在功能表列上，依序選擇 [檔案] > [全部儲存]。
+1. 在功能表列上 **，選擇 [** 檔案] [  >  **全部儲存**]。
 
 2. 選擇**F5**鍵以執行應用程式。
 
@@ -230,7 +229,7 @@ ms.locfileid: "74879345"
 
 3. 在快速導覽列上，選擇 [**病人**] 連結以顯示 [**病人**] 清單。
 
-     清單中的資料行名稱應符合您在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]的 [ **Views** ] 索引標籤中輸入的名稱。
+     清單中的資料行名稱應該與您在的 [ **Views** ] 索引標籤上輸入的名稱相符 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
 4. 選擇 [**加入新專案**] 連結以建立患者資訊卡。
 
@@ -238,7 +237,7 @@ ms.locfileid: "74879345"
 
      新的記錄會出現在清單中。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [建立 SharePoint 的網站資料行、內容類型和清單](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)
 - [如何：建立自訂欄位類型](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))

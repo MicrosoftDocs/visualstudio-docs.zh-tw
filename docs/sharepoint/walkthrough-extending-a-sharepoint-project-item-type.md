@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：擴充 SharePoint 專案專案類型 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69ec79a613a2bcc50c47ea4d6b66516f75f1fbd6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983800"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015671"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>逐步解說：擴充 SharePoint 專案專案類型
   您可以使用「**商務資料連線模型**」專案專案，在 SharePoint 中建立商務資料連線（BDC）服務的模型。 根據預設，當您使用此專案專案建立模型時，不會對使用者顯示模型中的資料。 您也必須在 SharePoint 中建立外部清單，讓使用者能夠查看資料。
@@ -28,7 +27,7 @@ ms.locfileid: "72983800"
 
 - 建立執行兩個主要工作的 Visual Studio 擴充功能：
 
-  - 它會產生外部清單，以顯示 BDC 模型中的資料。 延伸模組會使用 SharePoint 專案系統的物件模型，產生定義清單的專案 *.xml*檔案。 它也會將檔案新增至專案，使其與 BDC 模型一起部署。
+  - 它會產生外部清單，以顯示 BDC 模型中的資料。 延伸模組會使用 SharePoint 專案系統的物件模型，產生定義清單的*Elements.xml*檔案。 它也會將檔案新增至專案，使其與 BDC 模型一起部署。
 
   - 它會將快捷方式功能表項目加入至**方案總管**中的**商務資料連線模型**專案專案。 開發人員可以按一下這個功能表項目，產生 BDC 模型的外部清單。
 
@@ -36,7 +35,7 @@ ms.locfileid: "72983800"
 
 - 測試延伸模組。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  您需要在開發電腦上有下列元件，才能完成此逐步解說：
 
 - 支援的 Microsoft Windows、SharePoint 和 Visual Studio 版本。
@@ -45,7 +44,7 @@ ms.locfileid: "72983800"
 
   下列概念的知識很有説明，但並非必要，無法完成逐步解說：
 
-- [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]中的 BDC 服務。 如需詳細資訊，請參閱[BDC 架構](/previous-versions/office/developer/sharepoint-2010/ee558876(v=office.14))。
+- 中的 BDC 服務 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 。 如需詳細資訊，請參閱[BDC 架構](/previous-versions/office/developer/sharepoint-2010/ee558876(v=office.14))。
 
 - BDC 模型的 XML 架構。 如需詳細資訊，請參閱[BDC 模型基礎結構](/previous-versions/office/developer/sharepoint-2010/ee556378(v=office.14))。
 
@@ -62,9 +61,9 @@ ms.locfileid: "72983800"
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+2. 在功能表列上 **，選擇 [** 檔案] [新增] [  >  **New**  >  **專案**]。
 
-3. 在 [**新增專案**] 對話方塊中，展開 **[ C#視覺效果**] 或 [ **Visual Basic** ] 節點，然後選擇 [擴充性 **] 節點。**
+3. 在 [**新增專案**] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ] 節點，然後選擇 [擴充性 **] 節點。**
 
     > [!NOTE]
     > 只有在您安裝 Visual Studio SDK 時，才能使用擴充**性節點。** 如需詳細資訊，請參閱本主題稍早的必要條件一節。
@@ -77,7 +76,7 @@ ms.locfileid: "72983800"
 
 6. 在 [**名稱**] 方塊中，輸入**GenerateExternalDataLists**，然後選擇 [**確定]** 按鈕。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將**GenerateExternalDataLists**專案新增至**方案總管**。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將**GenerateExternalDataLists**專案加入**方案總管**。
 
 7. 如果 extension.vsixmanifest 檔案未自動開啟，請在 GenerateExternalDataLists 專案中開啟其快捷方式功能表，然後選擇 [**開啟**]。
 
@@ -87,7 +86,7 @@ ms.locfileid: "72983800"
 
 1. 在**方案總管**中，開啟 [ **GenerateExternalDataLists**方案] 節點的快捷方式功能表，選擇 [**加入**]，然後選擇 [**新增專案**]。
 
-2. 在 [**加入新的專案**] 對話方塊中，展開 [  **C#視覺效果**] 或 [ **Visual Basic** ] 節點，然後選擇 [ **Windows** ] 節點。
+2. 在 [**加入新的專案**] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ] 節點，然後選擇 [ **Windows** ] 節點。
 
 3. 在對話方塊頂端的清單中，選擇 [ **.NET Framework 4.5**]。
 
@@ -95,7 +94,7 @@ ms.locfileid: "72983800"
 
 5. 在 [**名稱**] 方塊中，輸入**BdcProjectItemExtension**，然後選擇 [**確定]** 按鈕。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將**BdcProjectItemExtension**專案新增至方案，並開啟預設的 Class1 程式碼檔案。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將**BdcProjectItemExtension**專案新增至方案，並開啟預設的 Class1 程式碼檔案。
 
 6. 從專案中刪除 Class1 程式碼檔案。
 
@@ -110,7 +109,7 @@ ms.locfileid: "72983800"
 
     - GenerateExternalDataLists
 
-2. 選擇 [BdcProjectItemExtension] 專案，然後在功能表列上選擇 [**專案**] > [**加入參考**]。
+2. 選擇 [BdcProjectItemExtension] 專案，然後在功能表列上選擇 [**專案**] [  >  **加入參考**]。
 
 3. 在 [**元件**] 節點底下，選擇 [**架構**] 節點，然後選取下列每個元件的核取方塊：
 
@@ -122,7 +121,7 @@ ms.locfileid: "72983800"
 
     - VisualStudio. SharePoint
 
-5. 選擇 [ **確定** ] 按鈕。
+5. 選擇 [確定] **** 按鈕。
 
 ## <a name="define-the-project-item-extension"></a>定義專案專案延伸模組
  建立類別，以定義**商務資料連線模型**專案專案的延伸模組。 為了定義擴充功能，類別會實作為 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> 介面。 每當您想要擴充現有的專案專案類型時，就會執行此介面。
@@ -138,7 +137,7 @@ ms.locfileid: "72983800"
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]
 
 ## <a name="create-the-external-data-lists"></a>建立外部資料欄表
- 加入 `GenerateExternalDataListsExtension` 類別的部分定義，以針對 BDC 模型中的每個實體建立外部資料清單。 若要建立外部資料清單，此程式碼會先剖析 BDC 模型檔案中的 XML 資料，以讀取 BDC 模型中的實體資料。 然後，它會根據 BDC 模型建立清單實例，並將此清單實例加入至專案。
+ `GenerateExternalDataListsExtension`針對 BDC 模型中的每個實體，加入類別的部分定義來建立外部資料清單。 若要建立外部資料清單，此程式碼會先剖析 BDC 模型檔案中的 XML 資料，以讀取 BDC 模型中的實體資料。 然後，它會根據 BDC 模型建立清單實例，並將此清單實例加入至專案。
 
 #### <a name="to-create-the-external-data-lists"></a>若要建立外部資料清單
 
@@ -147,12 +146,12 @@ ms.locfileid: "72983800"
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.vb#2)]
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.cs#2)]
 
-## <a name="checkpoint"></a>檢查點
+## <a name="checkpoint"></a>Checkpoint
  在本逐步解說的這個階段中，專案專案延伸模組的所有程式碼現在都在專案中。 建立解決方案，以確保專案編譯無誤。
 
 #### <a name="to-build-the-solution"></a>若要建置方案
 
-1. 在功能表列上選擇 [建置] > [建置解決方案]。
+1. 在功能表列上，選擇 [**組建**] [組建  >  **方案**]。
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-item-extension"></a>建立 VSIX 封裝以部署專案專案延伸模組
  若要部署擴充功能，請使用方案中的 VSIX 專案來建立 VSIX 封裝。 首先，藉由修改包含在 VSIX 專案中的 extension.vsixmanifest 檔案來設定 VSIX 封裝。 然後，藉由建立方案來建立 VSIX 封裝。
@@ -173,16 +172,16 @@ ms.locfileid: "72983800"
 
      [**加入新資產**] 對話方塊隨即出現。
 
-6. 在 [**類型**] 清單中，選擇 [ **VisualStudio [microsoft.visualstudio.mefcomponent]** ]。
+6. 在 [**類型**] 清單中，選擇 [ **VisualStudio [microsoft.visualstudio.mefcomponent]**]。
 
     > [!NOTE]
-    > 這個值會對應至 extension.vsixmanifest 檔案中的 `MefComponent` 元素。 這個元素會指定 VSIX 封裝中的擴充元件名稱。 如需詳細資訊，請參閱[[Microsoft.visualstudio.mefcomponent] 元素（VSX 架構）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 這個值會對應至 `MefComponent` extension.vsixmanifest 檔案中的元素。 這個元素會指定 VSIX 封裝中的擴充元件名稱。 如需詳細資訊，請參閱[[Microsoft.visualstudio.mefcomponent] 元素（VSX 架構）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
 7. 在 [**來源**] 清單中，選擇 [**目前方案] 中的專案**。
 
 8. 在 [**專案**] 清單中，選擇 [ **BdcProjectItemExtension**]，然後選擇 [**確定]** 按鈕。
 
-9. 在功能表列上選擇 [建置] > [建置解決方案]。
+9. 在功能表列上，選擇 [**組建**] [組建  >  **方案**]。
 
 10. 請確定專案會編譯和組建，而不會發生錯誤。
 
@@ -197,21 +196,21 @@ ms.locfileid: "72983800"
 
 1. 如有需要，請使用系統管理認證重新開機 Visual Studio，然後開啟 GenerateExternalDataLists 解決方案。
 
-2. 在 BdcProjectItemExtension 專案中，開啟 ProjectItemExtension 程式碼檔案，然後在 `Initialize` 方法的程式程式碼中加入中斷點。
+2. 在 BdcProjectItemExtension 專案中，開啟 ProjectItemExtension 程式碼檔案，然後在方法的程式程式碼中新增中斷點 `Initialize` 。
 
-3. 開啟 GenerateExternalDataLists 程式碼檔案，然後將中斷點新增至 `GenerateExternalDataLists_Execute` 方法中的第一行程式碼。
+3. 開啟 GenerateExternalDataLists 程式碼檔案，然後在方法的第一行程式碼中加入中斷點 `GenerateExternalDataLists_Execute` 。
 
-4. 選擇**F5**鍵或在功能表列上選擇 [ **Debug** ] > [**開始進行調試**程式]，開始進行偵錯工具。
+4. 選擇**F5**鍵或在功能表列上選擇 [ **Debug**] [  >  **開始調試**程式]，開始進行偵錯工具。
 
      Visual Studio 會將擴充功能安裝到%UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\External 資料清單 Generator\1.0，並啟動 Visual Studio 的實驗實例。 您將在 Visual Studio 的這個實例中測試專案專案。
 
 #### <a name="to-test-the-extension"></a>測試延伸模組
 
-1. 在 Visual Studio 的實驗實例中，于功能表列**上選擇 [** 檔案] [檔案] [ > **新增** > **專案**]。
+1. 在 Visual Studio 的實驗實例中 **，選擇功能表**欄上的 [檔案] [新增] [  >  **New**  >  **專案**]。
 
-2. 在 [**新增專案**] 對話方塊中，展開 [**範本**] 節點，展開 [**視覺C#效果**] 節點，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010**]。
+2. 在 [**新增專案**] 對話方塊中，展開 [**範本**] 節點，展開 [ **Visual c #** ] 節點，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010**]。
 
-3. 在對話方塊頂端的清單中，確認已選取 [ **.NET Framework 3.5** ]。 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 的專案需要此版本的 .NET Framework。
+3. 在對話方塊頂端的清單中，確認已選取 [ **.NET Framework 3.5** ]。 的專案 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 需要此版本的 .NET Framework。
 
 4. 在專案範本清單中，選擇 [ **SharePoint 2010 專案**]。
 
@@ -227,11 +226,11 @@ ms.locfileid: "72983800"
 
 10. 在 [**名稱**] 方塊中，輸入**TestBDCModel**，然後選擇 [**新增**] 按鈕。
 
-11. 確認 Visual Studio 的另一個實例中的程式碼會在您于 ProjectItemExtension 程式碼檔的 `Initialize` 方法中設定的中斷點停止。
+11. 確認 Visual Studio 的另一個實例中的程式碼會在您于 ProjectItemExtension 程式碼檔的方法中設定的中斷點停止 `Initialize` 。
 
-12. 在 已停止的實例 Visual Studio 中，選擇**F5**鍵，或在功能表列上選擇  **Debug** ， > **繼續** 以繼續進行專案的 debug。
+12. 在 [已停止的實例 Visual Studio] 中，選擇**F5**鍵，或在功能表列上，選擇 [ **Debug**  >  **continue** ] 繼續進行專案的 debug。
 
-13. 在 Visual Studio 的實驗實例中，選擇**F5**鍵，或在功能表列上選擇 [ **Debug** ] > [**開始調試**]，以建立、部署和執行**TestBDCModel**專案。
+13. 在 Visual Studio 的實驗實例中，選擇**F5**鍵，或在功能表列上選擇 [ **Debug**] [  >  **開始調試**] 來建立、部署和執行**TestBDCModel**專案。
 
      Web 瀏覽器會開啟至指定要進行偵錯工具之 SharePoint 網站的預設頁面。
 
@@ -241,11 +240,11 @@ ms.locfileid: "72983800"
 
 16. 在已開啟 TestBDCModel 專案的 Visual Studio 實例中，于**方案總管**中開啟 [ **TestBDCModel** ] 節點的快捷方式功能表，然後選擇 [**產生外部資料清單**]。
 
-17. 確認 Visual Studio 的另一個實例中的程式碼會在您于 `GenerateExternalDataLists_Execute` 方法中設定的中斷點上停止。 選擇**F5**鍵，或在功能表列上選擇  **Debug**  > **繼續** 以繼續進行專案的 debug。
+17. 確認 Visual Studio 的另一個實例中的程式碼會在您于方法中設定的中斷點上停止 `GenerateExternalDataLists_Execute` 。 選擇**F5**鍵，或在功能表列上選擇 [ **Debug**  >  **continue** ] 繼續進行專案的 debug。
 
 18. 的實驗實例 Visual Studio 會將名為**Entity1DataList**的清單實例新增至 TestBDCModel 專案，而實例也會為清單實例產生名為**1 功能 2>** 的功能。
 
-19. 選擇**F5**鍵，或在功能表列上選擇 [ **Debug** ] > [**開始調試**]，以建立、部署和執行 TestBDCModel 專案。
+19. 選擇**F5**鍵，或在功能表列上選擇 [ **Debug**] [  >  **開始調試**]，以建立、部署和執行 TestBDCModel 專案。
 
      Web 瀏覽器會開啟至用來進行偵錯工具之 SharePoint 網站的預設頁面。
 
@@ -274,15 +273,15 @@ ms.locfileid: "72983800"
 
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>若要從 SharePoint 網站移除 BDC 模型
 
-1. 在 Visual Studio 的實驗實例中，選擇功能表列上的 [**組建** > **撤銷**]。
+1. 在 Visual Studio 的實驗實例中，選擇功能表列上的 [**建立**] [  >  **收回**]。
 
      Visual Studio 從 SharePoint 網站移除 BDC 模型。
 
 #### <a name="to-remove-the-project-item-extension-from-visual-studio"></a>若要從 Visual Studio 中移除專案專案延伸模組
 
-1. 在 Visual Studio 的實驗實例中，選擇功能表列上的 [**工具**] > [**擴充功能和更新**]。
+1. 在 Visual Studio 的實驗實例中，選擇功能表列上的 [**工具**] [  >  **擴充功能和更新**]。
 
-     [擴充功能和更新] 對話方塊隨即開啟。
+     [擴充功能和更新]**** 對話方塊隨即開啟。
 
 2. 在擴充功能清單中，選擇 [**外部資料欄表**產生器]，然後選擇 [**卸載**] 按鈕。
 
@@ -292,7 +291,7 @@ ms.locfileid: "72983800"
 
 5. 關閉 Visual Studio 的兩個實例（實驗實例和 GenerateExternalDataLists 方案開啟所在的實例）。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)
 - [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)

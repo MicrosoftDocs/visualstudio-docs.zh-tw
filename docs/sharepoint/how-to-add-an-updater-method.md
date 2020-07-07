@@ -1,7 +1,7 @@
 ---
-title: HOW TO：新增更新者方法 |Microsoft Docs
+title: 如何：加入更新程式方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,60 +17,59 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8204b13aa0405d01590e4aeb0fe43a92b41c226f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c76373c710908a8ae7edc49c4e26ff7e94336a6d
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431265"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014979"
 ---
-# <a name="how-to-add-an-updater-method"></a>HOW TO：新增更新者方法
-  您可以讓使用者藉由更新 SharePoint 外部清單中的商務資料*Updater*方法。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
+# <a name="how-to-add-an-updater-method"></a>如何：新增更新程式方法
+  您可以藉由*建立更新程式方法，* 讓使用者更新 SharePoint 外部清單中的商務資料。 如需詳細資訊，請參閱[設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
-### <a name="to-create-an-updater-method"></a>若要建立 Updater 方法
+### <a name="to-create-an-updater-method"></a>若要建立更新程式方法
 
-1. 在 BDC 設計工具中，選擇 [實體]。
+1. 在 BDC 設計工具上，選擇實體。
 
-2. 在功能表列上選擇 **檢視** > **其他 Windows** > **BDC 方法詳細資料**。
+2. 在功能表列上，選擇 [**視圖**] [  >  **其他視窗**] [  >  **BDC 方法詳細資料**]。
 
-    [BDC 方法詳細資料] 視窗隨即開啟。 如需有關此視窗的詳細資訊，請參閱[BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)。
+    [BDC 方法詳細資料] 視窗隨即開啟。 如需此視窗的詳細資訊，請參閱[BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)。
 
-3. 在 **將方法加入**清單中，選擇**建立 Updater 方法**。
+3. 在 [**加入方法**] 清單中，選擇 [**建立更新程式方法**]。
 
-    Visual Studio 會將下列項目加入至模型。 這些項目會出現在 [BDC 方法詳細資料] 視窗中。
+    Visual Studio 會將下列元素加入至模型。 這些元素會出現在 [BDC 方法詳細資料] 視窗中。
 
-   - 方法，稱為**更新**。
+   - 名為**Update**的方法。
 
-   - 方法的輸入的參數。
+   - 方法的輸入參數。
 
-   - 參數型別描述項。 根據預設，Visual Studio 會使用您所定義的實體型別描述元的搜尋工具方法 (例如：請連絡）。
+   - 參數的類型描述元。 根據預設，Visual Studio 會使用您為搜尋工具方法定義的實體類型描述元（例如： Contact）。
 
-   - 方法執行個體方法。
+   - 方法的方法實例。
 
-     如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
-
-   > [!NOTE]
-   > 如果實體類型的識別項表示不會自動產生的資料庫資料表中的欄位，設定**預先更新者欄位**屬性設 **，則為 True**。
-
-4. 在 **方案總管**，開啟實體時，所產生的服務程式碼檔案的捷徑功能表，然後選擇**檢視程式碼**。
-
-    實體服務程式碼檔案中開啟**程式碼編輯器**。 如需有關該檔案的詳細資訊，請參閱[建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
-
-5. 加入程式碼來更新資料的 Update 方法。 下列範例會更新為 SQL Server 的 AdventureWorks 範例資料庫中的連絡人資訊。
+     如需詳細資訊，請參閱[設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
    > [!NOTE]
-   > 值取代`ServerName`欄位與您伺服器的名稱。
+   > 如果實體類型的識別碼代表不是自動產生之資料庫資料表中的欄位，請將 [**預先更新者欄位**] 屬性設定為**True**。
+
+4. 在**方案總管**中，開啟針對實體所產生之服務程式代碼檔案的快捷方式功能表，然後選擇 [ **View code**]。
+
+    實體服務程式代碼檔案會在程式**代碼編輯器**中開啟。 如需該檔案的詳細資訊，請參閱[建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
+
+5. 將程式碼新增至 Update 方法以更新資料。 下列範例會更新 AdventureWorks 範例資料庫中的連絡人資訊，以進行 SQL Server。
+
+   > [!NOTE]
+   > 將欄位的值取代 `ServerName` 為您的伺服器名稱。
 
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]
 
 ## <a name="see-also"></a>另請參閱
-- [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [如何：新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)
-- [如何：新增特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [如何：新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)
-- [如何：新增更新者方法](../sharepoint/how-to-add-an-updater-method.md)
+- [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [如何：加入 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)
+- [如何：加入特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [如何：加入建立者方法](../sharepoint/how-to-add-a-creator-method.md)
+- [如何：新增更新程式方法](../sharepoint/how-to-add-an-updater-method.md)
 - [如何：新增刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)
-- [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)
-- [如何：新增參數至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [如何：定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)
+- [BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)
+- [如何：將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [如何：定義方法實例](../sharepoint/how-to-define-a-method-instance.md)

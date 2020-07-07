@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：將專案部署工作清單定義 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0b7f1b0668af8218017c5cc96712384ed5f275c
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
-ms.translationtype: MT
+ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661879"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015767"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>逐步解說：部署專案工作清單定義
 
@@ -25,7 +24,7 @@ ms.locfileid: "73661879"
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 - 支援的 Microsoft Windows 和 SharePoint 版本。
 
@@ -43,7 +42,7 @@ ms.locfileid: "73661879"
 
 3. 指定用於進行偵錯工具的本機 SharePoint 網站，選擇 [**部署為數組方案**] 選項按鈕，然後選擇 [**完成]** 按鈕。
 
-4. 開啟專案的快捷方式功能表，然後選擇 [**加入** > **新專案**]。
+4. 開啟專案的快捷方式功能表，然後選擇 [**加入**  >  **新專案**]。
 
 5. 在 [**範本**] 窗格中，選擇 [**清單**] 範本，然後選擇 [**新增**] 按鈕。
 
@@ -73,7 +72,7 @@ ms.locfileid: "73661879"
 
      新的事件接收器節點會加入至專案，其中包含名為**ProjectTaskListEventReceiver**的程式碼檔案。
 
-6. 將程式碼新增至**ProjectTaskListEventReceiver**程式碼檔案中的 `ItemAdded` 方法。 每次加入新的工作時，就會將預設的到期日和描述新增至工作。 預設到期日為2009年7月1日。
+6. 將程式碼新增至 `ItemAdded` **ProjectTaskListEventReceiver**程式碼檔案中的方法。 每次加入新的工作時，就會將預設的到期日和描述新增至工作。 預設到期日為2009年7月1日。
 
      [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
      [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
@@ -136,13 +135,13 @@ ms.locfileid: "73661879"
 
 ### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>將專案工作清單部署至本機系統
 
-在 [Visual Studio] 功能表列上，選擇 [**組建** > **部署方案**]。
+在 [Visual Studio] 功能表列上，選擇 [**建立**] [  >  **部署方案**]。
 
-Visual Studio 回收 IIS 應用程式集區、撤銷任何現有的方案版本、將方案套件（ *.wsp*）檔案複製到 SharePoint，然後啟動其功能。 您現在可以在 SharePoint 中使用此方案。 如需部署設定步驟的詳細資訊，請參閱[如何：編輯 SharePoint 部署](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)設定。
+Visual Studio 回收 IIS 應用程式集區、撤銷任何現有的方案版本、將方案套件（*.wsp*）檔案複製到 SharePoint，然後啟動其功能。 您現在可以在 SharePoint 中使用此方案。 如需部署設定步驟的詳細資訊，請參閱[如何：編輯 SharePoint 部署](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)設定。
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>將專案工作清單部署到遠端系統
 
-1. 在 [Visual Studio] 功能表列上，選擇 [**組建** > **發行**]。
+1. 在 [Visual Studio] 功能表列上，選擇 [**組建**  >  **發行**]。
 
 2. 在 [**發行**] 對話方塊中，選擇 [**發行至檔案系統**] 選項按鈕。
 
@@ -154,13 +153,13 @@ Visual Studio 回收 IIS 應用程式集區、撤銷任何現有的方案版本�
 
 4. 將 *.wsp*檔案複製到遠端 SharePoint 系統。
 
-5. 使用 PowerShell `Add-SPUserSolution` 命令，將套件安裝在遠端 SharePoint 安裝上。 （如果是伺服器陣列方案，請使用 `Add-SPSolution` 命令）。
+5. 使用 PowerShell `Add-SPUserSolution` 命令，在遠端 SharePoint 安裝上安裝套件。 （針對伺服器陣列解決方案，請使用 `Add-SPSolution` 命令）。
 
-     例如，`Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`。
+     例如： `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp` 。
 
-6. 使用 PowerShell `Install-SPUserSolution` 命令來部署解決方案。 （如果是伺服器陣列方案，請使用 `Install-SPSolution` 命令）。
+6. 使用 PowerShell `Install-SPUserSolution` 命令來部署解決方案。 （針對伺服器陣列解決方案，請使用 `Install-SPSolution` 命令）。
 
-     例如，`Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`。
+     例如： `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName` 。
 
      如需遠端部署的詳細資訊，請參閱在 SharePoint 2010 中[使用解決方案](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14))，以及使用[PowerShell 新增和部署解決方案](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx)。
 
@@ -174,5 +173,5 @@ Visual Studio 回收 IIS 應用程式集區、撤銷任何現有的方案版本�
 
 - [適用于 SharePoint Server 2010 的 Windows PowerShell](/powershell/module/sharepoint-server)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

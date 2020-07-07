@@ -1,7 +1,7 @@
 ---
 title: 如何：將控制項標記為安全控制項 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 232fef4908a6168d550d510a0d753fe8e39db02b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982733"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016262"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>如何：將控制項標記為安全控制項
-  基於安全性的關係，SharePoint 會區分保護不受腳本插入和 Web 控制項的 Web 控制項。 不受信任的使用者可以存取受保護的控制項或*安全控制項*。 當您將元件加入封裝時，可以在 SharePoint 專案專案的 [安全控制項專案] 屬性中，將控制項標示**為 [安全**]。 如需詳細資訊，請參閱
+  基於安全性的關係，SharePoint 會區分保護不受腳本插入和 Web 控制項的 Web 控制項。 不受信任的使用者可以存取受保護的控制項或*安全控制項*。 當您將元件加入封裝時，可以在 SharePoint 專案專案的 [安全控制項專案] 屬性中，將控制項標示**為 [安全**]。 如需相關資訊，請參閱
 
-- web.config 檔案[設定會變更](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12))網頁元件元件，並將[其註冊為安全控制項](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))。
+- [web.config 檔案設定變更](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12))和[註冊 Web 元件元件，做為安全的控制項](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))。
 
 > [!IMPORTANT]
 > 這些程式僅供說明之用。 只有在您確定控制項安全時，才會將它們標示為安全。
@@ -47,11 +46,11 @@ ms.locfileid: "72982733"
 
      此步驟會將按鈕控制項識別為不安全的控制項。
 
-6. 選擇清單中的第二個安全控制項項目。 將其 **安全** 屬性的值保留為  **true** ，並將其 **類型名稱** 屬性**設定為**  **TextBox1** ，並將其 安全 **針對腳本**
+6. 選擇清單中的第二個安全控制項項目。 將其 [**安全**] 屬性的值保留為 [ **true** ]，並將其 [**類型名稱**] 屬性**設定為 [** **TextBox1** ]，並將其 [安全] [**針對腳本**
 
      文字方塊控制項現在會標示為可安全地進行腳本插入的控制項。
 
-7. 選擇 [確定] 按鈕以關閉對話方塊。
+7. 選擇 [確定]**** 按鈕以關閉對話方塊。
 
 ## <a name="marking-safe-controls-in-the-package-designer"></a>在封裝設計工具中標記安全控制項
 
@@ -63,7 +62,7 @@ ms.locfileid: "72982733"
 
      請記下控制項的命名空間，因為稍後會用到它。
 
-3. 在功能表列上，選擇 [**組建**] > [建立**方案**] 來建立專案。
+3. 在功能表列上，選擇 [**組建**] [組建] [  >  **方案**] 來建立專案。
 
 4. 建立另一個 SharePoint 方案。
 
@@ -90,7 +89,7 @@ ms.locfileid: "72982733"
     |命名空間|控制項的完整命名空間，例如**BdcModelProject1. visualwebpartproject1.visualwebpart1.visualwebpart1**。|
     |類型名稱|Button1|
     |組件名稱|強式元件名稱，例如： ClientExtensions、Version = 14.0.0.0、Culture = 中性，PublicKeyToken = 71e9bce111e9429c。|
-    |進入|清除 [**安全**] 核取方塊。|
+    |Safe|清除 [**安全**] 核取方塊。|
     |針對腳本安全|將 [不**受腳本**保護] 核取方塊保持為清除。|
 
     > [!NOTE]
@@ -107,11 +106,11 @@ ms.locfileid: "72982733"
     |命名空間|控制項的完整命名空間，例如**BdcModelProject1. visualwebpartproject1.visualwebpart1.visualwebpart1**。|
     |類型名稱|TextBox1|
     |組件名稱|強式元件名稱，例如： ClientExtensions、Version = 14.0.0.0、Culture = 中性，PublicKeyToken = 71e9bce111e9429c。|
-    |進入|選取 [**安全**] 核取方塊。|
+    |Safe|選取 [**安全**] 核取方塊。|
     |針對腳本安全|選取 [**安全] [針對腳本**] 核取方塊。|
 
 16. 選擇**Tab**鍵，然後選擇 [**確定**] 按鈕以關閉對話方塊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [提供專案專案中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

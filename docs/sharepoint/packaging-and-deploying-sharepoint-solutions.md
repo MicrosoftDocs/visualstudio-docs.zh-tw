@@ -1,7 +1,7 @@
 ---
 title: 封裝和部署 SharePoint 方案 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45815e03d887f4d22f2559acf741f612cab34c49
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986211"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015599"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>封裝和部署 SharePoint 方案
   一般來說，SharePoint 方案會使用方案套件（.wsp）檔案部署到 SharePoint 伺服器。 您可以使用 Visual Studio 將 SharePoint 專案專案組織成功能，並建立封裝來部署 SharePoint 功能。
 
- 本主題提供下列資訊：
+ 此主題提供下列資訊：
 
 - [建立功能和套件](#create-features-and-packages)
 
@@ -37,7 +36,7 @@ ms.locfileid: "72986211"
 ## <a name="create-features-and-packages"></a>建立功能和套件
  您可以使用 Visual Studio 將相關的 SharePoint 專案組成一個*功能*。 例如，連絡人清單定義的功能可能包含清單實例和清單定義。 您可以將這兩個元素結合成單一功能，以供部署之用。 如需功能的詳細資訊，請參閱[建立區塊：功能](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14))。
 
- 接下來，您可以建立 SharePoint 方案套件（ *.wsp*），將多個功能、網站定義、元件和其他檔案組合成單一封裝，將檔案儲存成 SharePoint 所需的格式，以將檔案部署至伺服器。 如需詳細資訊，請參閱[建立區塊：解決方案](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14))。
+ 接下來，您可以建立 SharePoint 方案套件（*.wsp*），將多個功能、網站定義、元件和其他檔案組合成單一封裝，將檔案儲存成 SharePoint 所需的格式，以將檔案部署至伺服器。 如需詳細資訊，請參閱[建立區塊：解決方案](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14))。
 
 ## <a name="feature-and-packaging-tool-support"></a>功能與封裝工具支援
  您可以使用 Visual Studio 中的 SharePoint 開發工具，快速地將 SharePoint 檔案組織成功能和方案套件，以方便部署。 您可以使用下列工具來設定功能和方案套件。
@@ -80,7 +79,7 @@ ms.locfileid: "72986211"
 
   如需封裝瀏覽器的詳細資訊，請參閱[如何：使用封裝瀏覽器新增和移除封裝的功能和專案](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。
 
-### <a name="solution-explorer"></a>底下提供說明，包括方案總管
+### <a name="solution-explorer"></a>方案總管
  您可以使用方案總管來流覽和開啟 SharePoint 專案的檔案。 使用方案總管中的內容功能表來新增功能、功能事件接收器和功能資源。 此外，您可以開啟功能設計工具和封裝設計工具來設定部署的功能和套件。
 
 ## <a name="deploy-sharepoint-solutions"></a>部署 SharePoint 方案
@@ -95,12 +94,12 @@ ms.locfileid: "72986211"
 
  例如，若要將 *.xml*檔案加入至 SharePoint 專案，請執行下列其中一個動作：
 
-- 將 SharePoint 「版面配置」對應資料夾新增至您的專案。 這會在中建立**方案總管**名為**版面**配置的資料夾，其中包含專案的子資料夾。 將 *.xml*檔案新增至新的子資料夾。 根據預設，檔案會部署至底下的 SharePoint 檔案系統 *。\TEMPLATE\LAYOUTS\\\<資料夾名稱 >* 。 如需如何新增對應資料夾的詳細資訊，請參閱[如何：新增和移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。
+- 將 SharePoint 「版面配置」對應資料夾新增至您的專案。 這會在中建立**方案總管**名為**版面**配置的資料夾，其中包含專案的子資料夾。 將 *.xml*檔案新增至新的子資料夾。 根據預設，檔案會部署至底下的 SharePoint 檔案系統 *。\\\TEMPLATE\LAYOUTS \<Folder Name> *。 如需如何新增對應資料夾的詳細資訊，請參閱[如何：新增和移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。
 
 - 將 *.xml*檔案加入至 SharePoint 專案專案的資料夾，然後將 *.xml*檔案的 [**部署類型**] 屬性從**NoDeployment**變更為其他設定，例如**RootFile**或**ElementFile**。 適當的**部署類型**設定取決於檔案和專案。 如需**部署類型**屬性設定的詳細資訊，請參閱[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)。
 
   如果加入的檔案不適用於方案中的任何特定專案，您可以將空的 SharePoint 專案加入方案中，然後在其中新增其他檔案。 將檔案部署至 SharePoint 的另一個替代方案是將模組新增至專案，然後將檔案新增至模組。 如需詳細資訊，請參閱[使用模組來包含方案中的](../sharepoint/using-modules-to-include-files-in-the-solution.md)檔案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)
 - [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)

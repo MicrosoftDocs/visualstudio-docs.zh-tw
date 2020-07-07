@@ -1,7 +1,7 @@
 ---
 title: 將商務資料整合到 SharePoint 中 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -19,20 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 06d9e8059db8daa1c27b8c1d5fecc50940b7facb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: b4bbfb681a0dac0825bf7af4f1f27ab1c1b50053
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986395"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016312"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>將商務資料整合至 SharePoint
-  您可以將商務資料整合到 SharePoint 中。 商務資料可能來自後端伺服器應用程式，例如 [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)]、Siebel 和 SAP，或 Web 服務。 使用者可以使用外部清單或 SharePoint 中的商務資料 Web 組件，來查看、新增、更新或刪除商務資料。  使用者也可以在 Microsoft Office 應用程式（例如 Microsoft Outlook）中離線存取這項資料。 如需詳細資訊，請參閱[可在何處顯示外部資料](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14))。
+  您可以將商務資料整合到 SharePoint 中。 商務資料可能來自後端伺服器應用程式，例如 [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)] Siebel 和 SAP，或 Web 服務。 使用者可以使用外部清單或 SharePoint 中的商務資料 Web 組件，來查看、新增、更新或刪除商務資料。  使用者也可以在 Microsoft Office 應用程式（例如 Microsoft Outlook）中離線存取這項資料。 如需詳細資訊，請參閱[可在何處顯示外部資料](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14))。
 
  若要將資料整合到 SharePoint 中，請建立商務資料連線（BDC）服務的模型。 BDC 服務是 SharePoint 中的應用程式，它會將資料的相關資訊儲存在商務應用程式中。 如需詳細資訊，請參閱[商務資料連線（BDC）服務](/previous-versions/office/developer/sharepoint-2010/ee556407(v=office.14))。
 
 ## <a name="models-in-visual-studio"></a>Visual Studio 中的模型
- Visual Studio 中的模型可讓您撰寫自訂程式碼，以從後端資料來源中取出和更新資料。 您也可以匯總來自多個資料來源的資料。 例如，您可以顯示客戶清單，其中包含來自 [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)] 資料庫和 Web 服務的資料。
+ Visual Studio 中的模型可讓您撰寫自訂程式碼，以從後端資料來源中取出和更新資料。 您也可以匯總來自多個資料來源的資料。 例如，您可以顯示一份客戶清單，其中包含來自 [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)] 資料庫和 Web 服務的資料。
 
  您也可以匯入已部署至 SharePoint 的模型。 匯入模型之後，您可以加入自訂程式碼，或直接使用 Visual Studio 來封裝模型，並將其部署至多個 SharePoint 伺服器陣列。 如需詳細資訊，請參閱[建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
 
@@ -45,13 +44,13 @@ ms.locfileid: "72986395"
  實體會描述欄位的集合。 例如，實體可以代表資料庫中的資料表。 實體會在 SharePoint 中顯示為外部內容類型。 如需外部內容類型的詳細資訊，請參閱[什麼是外部內容類型？](/previous-versions/office/developer/sharepoint-2010/ee556391(v=office.14))
 
 ### <a name="methods"></a>方法
- 方法可讓外部內容類型的取用者在實體的欄位上執行動作。 例如，更新程式方法可能會讓使用者變更客戶的位址和出生日期，其中 `Address` 和 `BirthDate` 是 `Customer` 實體的欄位。
+ 方法可讓外部內容類型的取用者在實體的欄位上執行動作。 例如，更新程式方法可能會讓使用者變更客戶的位址和出生日期，其中 `Address` 和 `BirthDate` 是實體的欄位 `Customer` 。
 
  Visual Studio 會為模型中的每個實體產生服務程式代碼檔案。 當您將方法加入至模型時，Visual Studio 會在服務程式代碼檔案中產生對應的方法。 將程式碼新增至每個方法，以執行適當的工作。 例如，如果您將建立者方法加入至模型，Visual Studio 會在您的服務程式代碼檔案中產生建立者方法。 當使用者按一下以模型為基礎之清單中的 [**新增專案**] 按鈕時，BDC 服務會呼叫這個方法。 因此，請將程式碼加入至將新資料加入至資料來源的建立者方法。 如需詳細資訊，請參閱[設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|Title|描述|
 |-----------|-----------------|
 |[建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)|說明如何建立新的模型，或匯入您從 SharePoint 匯出的模型。|
 |[設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)|說明如何使用 Visual Studio 設計工具來設計模型的元素。|

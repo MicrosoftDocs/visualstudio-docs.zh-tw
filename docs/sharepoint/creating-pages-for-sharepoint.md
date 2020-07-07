@@ -1,7 +1,7 @@
 ---
 title: 建立 SharePoint 的頁面 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297ebf0e7c2ed1273dd5a8ac973ce497c4c64781
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986346"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015161"
 ---
 # <a name="create-pages-for-sharepoint"></a>建立 SharePoint 的頁面
   您可以建立 SharePoint 網站的應用程式頁面、網站頁面、主版頁面和頁面配置。
@@ -39,7 +38,7 @@ ms.locfileid: "72986346"
 |應用程式頁面|如果您想要頁面包含自訂程式碼，或想要在多個網站之間共用網頁，請建立應用程式頁面。 否則，網站頁面可能是最佳選擇。|
 |網站頁面|如果您想要執行下列任何一項工作，請建立網站頁面：<br /><br /> -將頁面新增至 SharePoint 文件庫。<br />-啟用頁面來裝載功能，例如動態 Web 組件和 Web 元件區域。<br />-讓使用者能夠使用 SharePoint Designer 來自訂頁面。<br /><br /> 如果您想要讓頁面包含自訂程式碼，請勿建立網站頁面。 雖然您可以將自訂程式碼加入至網站頁面，但當使用者使用 SharePoint Designer 自訂頁面時，程式碼就會停止執行。|
 |主版頁面|如果您想要定義網站頁面和應用程式頁面的通用結構，請建立主版頁面。|
-|頁面配置|頁面配置是 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 特有的，可讓您進一步定義網站頁面和應用程式頁面的通用結構。|
+|頁面配置|頁面配置是特有的 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] ，可讓您進一步定義網站頁面和應用程式頁面的通用結構。|
 
  如需每種頁面類型的總覽，請參閱[建立區塊：頁面和使用者介面](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14))，以及[頁面配置和主版頁面](/previous-versions/office/developer/sharepoint-2010/ms543497(v=office.14))。
 
@@ -62,7 +61,7 @@ ms.locfileid: "72986346"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|Title|描述|
 |-----------|-----------------|
 |[建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)|描述如何加入應用程式頁面：與 SharePoint 主版頁面合併的 *.aspx*內容。|
 |[如何：建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)|說明如何建立在 SharePoint 網站上執行的 ASP.NET 網頁。|

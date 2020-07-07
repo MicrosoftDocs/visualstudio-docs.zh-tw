@@ -1,7 +1,7 @@
 ---
 title: 建立 SharePoint 方案 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97f5243b775f19d77bc8d5a5c1d29fddadd9f1c7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
-ms.translationtype: MT
+ms.openlocfilehash: 2a7aaa8a5e5c8e6079c04b05d887138d294116dd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541774"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016251"
 ---
 # <a name="create-sharepoint-solutions"></a>建立 SharePoint 方案
   除了在 SharePoint Designer 中建立 SharePoint 應用程式之外，您也可以在 Visual Studio 中建立 SharePoint 應用程式。 Visual Studio 提供進階偵錯工具、IntelliSense、陳述式完成和專案範本等功能，可加速開發 SharePoint。 Visual Studio 也利用進階 .NET Framework 工具和語言。 您可以使用 Visual Basic 或 Visual C# 開發 SharePoint 專案，並且可以使用 JavaScript 開發 SharePoint 專案的應用程式。

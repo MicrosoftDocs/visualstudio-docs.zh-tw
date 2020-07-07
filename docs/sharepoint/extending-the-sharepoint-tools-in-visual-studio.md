@@ -1,7 +1,7 @@
 ---
 title: 擴充 Visual Studio 中的 SharePoint 工具 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -14,46 +14,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d70d9b5bac260dc0731d06ebb11780114f0edf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 7dc0cc0d0af73d032d870629877b62c94e6b347b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967418"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016033"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>擴充 Visual Studio 中的 SharePoint 工具
-  Visual Studio 中的 SharePoint 工具符合許多應用程式開發案例的需求。 不過，您可能會發現情況下，它們並不提供您或其他開發人員需要的功能。 在這些情況下，您可以擴充 SharePoint 工具來建立您所需要的功能。
+  Visual Studio 中的 SharePoint 工具符合許多應用程式開發案例的需求。 不過，您可能會發現這些案例並未提供您或其他開發人員所需的功能。 在這些情況下，您可以擴充 SharePoint 工具來建立所需的功能。
 
 ## <a name="how-to-extend-the-sharepoint-tools"></a>如何擴充 SharePoint 工具
- 您可以擴充 SharePoint 專案系統和**SharePoint 連線**中的節點**伺服器總管**視窗。
+ 您可以在 [**伺服器總管**] 視窗中擴充 sharepoint 專案系統和 [ **sharepoint 連接**] 節點。
 
 ### <a name="extend-the-sharepoint-project-system"></a>擴充 SharePoint 專案系統
- Visual Studio 包含一組專案範本和項目範本可供您建立 SharePoint 方案。 比方說，有事件接收器、 清單定義、 工作流程和 Web 組件範本。 不過，您也可以定義您自己的 SharePoint 專案項目，用於建立 SharePoint 的元件，例如欄位或自訂動作的類型。 您也可以建立已安裝在 Visual Studio 中的 SharePoint 專案項目類型的延伸模組，而且您可以建立 SharePoint 專案延伸模組。
+ Visual Studio 包含一組可供您用來建立 SharePoint 方案的專案範本和專案範本。 例如，有事件接收器、清單定義、工作流程和 Web 組件的範本。 不過，您也可以定義自己的 SharePoint 專案專案類型，以建立 SharePoint 元件，例如欄位或自訂動作。 您也可以為已安裝在 Visual Studio 中的 SharePoint 專案專案類型建立擴充功能，也可以建立 SharePoint 專案的擴充功能。
 
- 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。
+ 如需詳細資訊，請參閱[擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。
 
-### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>擴充 SharePoint 連線節點，在 伺服器總管
- 在 Visual Studio 中，您可以使用**SharePoint 連線**中的節點**伺服器總管**視窗來檢視在階層樹狀結構檢視中的許多元件的其中一個或多個本機 SharePoint 網站。 您也可以擴充**SharePoint 連線**節點，以下列方式：
+### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>在伺服器總管中擴充 [SharePoint 連接] 節點
+ 在 Visual Studio 中，您可以使用 [**伺服器總管**] 視窗中的 [ **SharePoint 連接**] 節點，以階層式樹狀檢視來查看一個或多個本機 SharePoint 網站的許多元件。 您也可以透過下列方式擴充 [ **SharePoint 連接**] 節點：
 
-- 藉由新增您自己的節點。 這非常有用，如果您想要顯示的預設未顯示的 SharePoint 網站的元件。
+- 新增您自己的節點。 如果您想要顯示預設不會顯示的 SharePoint 網站元件，這會很有用。
 
-- 藉由擴充現有的節點。 例如，您可以將新的子節點加入現有的節點，或您可以將加入節點的捷徑功能表項目，並為開發人員按一下功能表項目時所執行的工作。
+- 藉由擴充現有的節點。 例如，您可以將新的子節點加入至現有的節點，也可以將快捷方式功能表項目加入至節點，並在開發人員按一下功能表項目時執行工作。
 
-  如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
+  如需詳細資訊，請參閱[伺服器總管中的擴充 SharePoint 連接節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
 
-## <a name="development-computer-requirements"></a>開發電腦的需求
- 若要建立 SharePoint 工具擴充功能，您的開發電腦必須符合在 Visual Studio 中建立 SharePoint 方案的相同需求。
+## <a name="development-computer-requirements"></a>開發電腦需求
+ 若要建立 SharePoint 工具的擴充功能，您的開發電腦必須符合在 Visual Studio 中建立 SharePoint 方案的相同需求。
 
- 我們也建議您安裝[!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 SDK 包含專案範本和工具，您可以用來擴充 Visual Studio。 特別是，SDK 包含專案範本可用來輕鬆地建立 Visual Studio 擴充功能 (VSIX) 封裝。 VSIX 套件是部署在 Visual Studio 中的 Visual Studio 擴充功能的慣用的方式。 使用 VSIX 封裝，必須部署所有的 SharePoint 工具擴充功能。 所有的這份文件中的逐步解說假設您有[!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]安裝。
+ 我們也建議您安裝 [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 。 SDK 包含可讓您用來擴充 Visual Studio 的專案範本和工具。 特別是，SDK 包含一個專案範本，您可以用來輕鬆地建立 Visual Studio 擴充功能（VSIX）封裝。 VSIX 封裝是在 Visual Studio 中部署 Visual Studio 延伸模組的慣用方式。 所有的 SharePoint 工具延伸模組都必須使用 VSIX 封裝來部署。 本檔中的所有逐步解說假設您已 [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 安裝。
 
- 若要安裝 Visual Studio SDK，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。 如需有關 Visual Studio 擴充功能的詳細資訊，請參閱 <<c0> [ 開始開發 Visual Studio 擴充功能](../extensibility/starting-to-develop-visual-studio-extensions.md)。
+ 若要安裝 Visual Studio SDK，請參閱[安裝 VISUAL STUDIO sdk](../extensibility/installing-the-visual-studio-sdk.md)。 如需 Visual Studio 延伸模組的詳細資訊，請參閱[開始開發 Visual Studio 延伸](../extensibility/starting-to-develop-visual-studio-extensions.md)模組。
 
 ## <a name="see-also"></a>另請參閱
 
-- [概觀的程式設計模型的 SharePoint 工具擴充功能](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [SharePoint 工具擴充功能的程式設計模型總覽](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 - [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)
-- [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [SharePoint 工具擴充功能的程式設計概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
-- [參考&#40;SharePoint 工具擴充性&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
-- [偵錯在 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
-- [部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [在伺服器總管中擴充 [SharePoint 連接] 節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [SharePoint 工具延伸模組的程式設計概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
+- [&#40;SharePoint 工具擴充性的參考&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
+- [Visual Studio 中 SharePoint 工具的偵錯工具延伸模組](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [在 Visual Studio 中部署 SharePoint 工具的擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

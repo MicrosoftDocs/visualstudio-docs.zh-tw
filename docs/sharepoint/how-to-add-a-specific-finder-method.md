@@ -1,7 +1,7 @@
 ---
 title: 如何：加入特定的 Finder 方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732921b021d7887faf31dd3f602f5400c1d06a59
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985254"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014819"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>如何：加入特定的 Finder 方法
   您可以藉由建立特定的搜尋*工具*方法來傳回單一實體實例。 當使用者選擇商務資料 web 元件或外部清單中的實體時，商務資料連線（BDC）服務會執行特定的搜尋工具方法。 如需詳細資訊，請參閱[設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -33,7 +32,7 @@ ms.locfileid: "72985254"
 
     如需如何在 Visual Studio 中將實體加入至**BDC 設計**工具的詳細資訊，請參閱[如何：將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。
 
-2. 在功能表列上，選擇 [ **View** > **其他視窗**]、[ **BDC 方法詳細資料**]。
+2. 在功能表列上，選擇 [**視圖**] [  >  **其他視窗**]、[ **BDC 方法詳細資料**]。
 
     [ **BDC 方法詳細資料**] 視窗隨即開啟。 如需該視窗的詳細資訊，請參閱[BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)。
 
@@ -71,7 +70,7 @@ ms.locfileid: "72985254"
 
     實體服務程式代碼檔案會在程式碼編輯器中開啟。 如需實體服務程式代碼檔案的詳細資訊，請參閱[建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
 
-9. 將程式碼加入至特定的搜尋工具方法。 這個程式碼會執行下列工作：
+9. 將程式碼加入至特定的搜尋工具方法。 此程式碼會執行下列工作：
 
    - 從資料來源抓取記錄。
 
@@ -80,12 +79,12 @@ ms.locfileid: "72985254"
      下列範例會從 SQL Server 的 AdventureWorks 範例資料庫中傳回連絡人。
 
      > [!NOTE]
-     > 將 [`ServerName`] 欄位的值取代為您的伺服器名稱。
+     > 將欄位的值取代 `ServerName` 為您的伺服器名稱。
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [如何：加入 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)
 - [如何：加入建立者方法](../sharepoint/how-to-add-a-creator-method.md)

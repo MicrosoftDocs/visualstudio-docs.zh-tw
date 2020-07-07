@@ -1,7 +1,7 @@
 ---
-title: HOW TO：擴充 SharePoint 節點在 伺服器總管 |Microsoft Docs
+title: 如何：在伺服器總管中擴充 SharePoint 節點 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,76 +13,75 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c5e617b57437033f4194d96647ebff9d1c4e2c2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: ea556d18641b96ea6a38ef5abf6efe4c93a44cdf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813993"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015029"
 ---
-# <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>HOW TO：擴充 SharePoint 節點在 伺服器總管
-  您可以擴充節點底下**SharePoint 連線**中的節點**伺服器總管**。 當您想要將新的子節點、 快顯功能表項目或屬性新增至現有的節點時，這非常有用。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
+# <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>如何：在伺服器總管中擴充 SharePoint 節點
+  您可以在**伺服器總管**的 [ **SharePoint 連接**] 節點底下擴充節點。 當您想要將新的子節點、快捷方式功能表項目或屬性加入至現有的節點時，這會很有用。 如需詳細資訊，請參閱[伺服器總管中的擴充 SharePoint 連接節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
 
-### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>若要擴充 SharePoint 節點在 伺服器總管
+### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>若要在伺服器總管中擴充 SharePoint 節點
 
 1. 建立類別庫 (Class Library) 專案。
 
 2. 加入下列組件的參考：
 
-    - Microsoft.VisualStudio.SharePoint
+    - VisualStudio. SharePoint
 
-    - Microsoft.VisualStudio.SharePoint.Explorer.Extensions
+    - VisualStudio. SharePoint. Explorer 副檔名
 
     - System.ComponentModel.Composition
 
 3. 建立實作 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 介面的類別。
 
-4. 將 <xref:System.ComponentModel.Composition.ExportAttribute> 屬性加入該類別。 這個屬性可讓 Visual Studio 來探索及載入您<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>實作。 傳遞<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>屬性建構函式的型別。
+4. 將 <xref:System.ComponentModel.Composition.ExportAttribute> 屬性加入該類別。 這個屬性可讓 Visual Studio 探索及載入您的 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 執行。 將 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 類型傳遞給屬性的函式。
 
-5. 將 <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> 屬性加入該類別。 這個屬性會指定您想要擴充的節點類型的字串識別碼。
+5. 將 <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> 屬性加入該類別。 這個屬性會指定您要擴充之節點類型的字串識別碼。
 
-     若要指定 Visual Studio 所提供的內建的節點類型，請將其中一個下列的列舉值傳遞至屬性建構函式：
+     若要指定 Visual Studio 所提供的內建節點類型，請將下列其中一個列舉值傳遞給屬性的函式：
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>：使用這些值來指定網站連線節點 （節點顯示網站 Url），站台節點或在其他所有父節點**伺服器總管**。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>：使用這些值來指定網站連線節點（顯示網站 Url 的節點）、網站節點，或**伺服器總管**中的所有其他父節點。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>：您可以使用這些值來指定其中一個內建節點代表 SharePoint 網站，例如代表清單、 欄位或內容類型的節點上的個別元件。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>：使用這些值來指定其中一個內建節點，代表 SharePoint 網站上的個別元件，例如代表清單、欄位或內容類型的節點。
 
-6. 在您實作<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A>方法，使用成員*nodeType*參數來將功能加入至節點。 這個參數是<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType>可用來存取事件中所定義的物件<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents>介面。 例如，您可以處理下列事件：
+6. 在方法的執行中 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> ，使用*nodeType*參數的成員將功能加入至節點。 這個參數是 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> 物件，可讓您存取介面中定義的事件 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> 。 例如，您可以處理下列事件：
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>：處理這個事件，以將新的子節點新增至節點。 如需詳細資訊，請參閱[如何：伺服器總管 中新增自訂 SharePoint 節點](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>：處理這個事件，將新的子節點加入至節點。 如需詳細資訊，請參閱[如何：將自訂 SharePoint 節點加入至伺服器總管](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeMenuItemsRequested>：處理這個事件來將自訂的捷徑功能表項目新增至節點。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeMenuItemsRequested>：處理這個事件，將自訂快捷方式功能表項目加入至節點。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodePropertiesRequested>：處理這個事件來將自訂屬性新增至節點。 屬性會出現在**屬性**視窗中選取節點時。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodePropertiesRequested>：處理這個事件，將自訂屬性加入至節點。 選取節點時，屬性會出現在 [**屬性**] 視窗中。
 
 ## <a name="example"></a>範例
- 下列程式碼範例示範如何建立兩種不同的節點延伸模組：
+ 下列程式碼範例示範如何建立兩種不同類型的節點延伸：
 
-- 延伸模組，將操作功能表項目加入至 SharePoint 網站節點。 當您按一下的功能表項目時，它會顯示已按下的節點名稱。
+- 將內容功能表項目加入至 SharePoint 網站節點的延伸模組。 當您按一下功能表項目時，它會顯示已按下的節點名稱。
 
-- 擴充功能，新增一個名為的自訂屬性**ContosoExampleProperty**到每個節點都代表一個名為欄位**主體**。
+- 一個延伸模組，會將名為**ContosoExampleProperty**的自訂屬性新增至代表名為**Body**之欄位的每個節點。
 
   [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
   [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]
 
-  此延伸模組會將可編輯的字串屬性加入至節點。 您也可以建立自訂的屬性，顯示從 SharePoint 伺服器的唯讀資料。 如需示範如何執行這項操作的範例，請參閱[逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
+  此延伸模組會將可編輯的字串屬性加入至節點。 您也可以建立自訂屬性，以顯示來自 SharePoint 伺服器的唯讀資料。 如需示範如何執行此動作的範例，請參閱[逐步解說：擴充伺服器總管以顯示 web 元件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
 
 ## <a name="compile-the-code"></a>編譯程式碼
- 這個範例需要參考下列組件：
+ 這個範例需要參考下列元件：
 
-- Microsoft.VisualStudio.SharePoint
+- VisualStudio. SharePoint
 
-- Microsoft.VisualStudio.SharePoint.Explorer.Extensions
+- VisualStudio. SharePoint. Explorer 副檔名
 
 - System.ComponentModel.Composition
 
 - System.Windows.Forms
 
-## <a name="deploy-the-extension"></a>部署擴充功能
- 若要部署**伺服器總管**延伸模組，建立[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要將副檔名的檔案。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
+## <a name="deploy-the-extension"></a>部署延伸模組
+ 若要部署**伺服器總管**延伸模組，請 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 為元件建立擴充功能（VSIX）封裝，以及您想要與延伸模組一起散發的任何其他檔案。 如需詳細資訊，請參閱[在 Visual Studio 中部署 SharePoint 工具的擴充](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)功能。
 
 ## <a name="see-also"></a>另請參閱
-- [如何：伺服器總管 中新增自訂 SharePoint 節點](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)
-- [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
-- [將自訂的資料產生關聯的 SharePoint 工具擴充功能](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
+- [如何：將自訂 SharePoint 節點加入至伺服器總管](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)
+- [在伺服器總管中擴充 [SharePoint 連接] 節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [逐步解說：擴充伺服器總管以顯示 web 元件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [將自訂資料與 SharePoint 工具擴充功能產生關聯](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)

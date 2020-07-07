@@ -1,7 +1,7 @@
 ---
-title: HOW TO：將屬性加入至 SharePoint 專案項目擴充功能 |Microsoft Docs
+title: 如何：將屬性加入至 SharePoint 專案專案延伸模組 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,62 +14,61 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20a7abaa8c132b3cd1679ab95ed8154b8ca86502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 337536d2219ce8494f96769bc79f10967883e61a
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967223"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015985"
 ---
-# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>HOW TO：將屬性加入至 SharePoint 專案項目擴充功能
-  您可以使用專案項目擴充功能，將屬性加入至任何已安裝 Visual Studio 中的 SharePoint 專案項目。 屬性會出現在**屬性**視窗中選取的專案項目時**方案總管 中**。
+# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>如何：將屬性加入至 SharePoint 專案專案延伸模組
+  您可以使用專案專案延伸模組，將屬性加入至 Visual Studio 中已安裝的任何 SharePoint 專案專案。 當**方案總管**中選取專案專案時，屬性就會出現在 [**屬性**] 視窗中。
 
- 下列步驟假設您已建立的專案項目延伸模組。 如需詳細資訊，請參閱[如何：建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。
+ 下列步驟假設您已建立專案專案延伸模組。 如需詳細資訊，請參閱[如何：建立 SharePoint 專案專案延伸](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)模組。
 
-### <a name="to-add-a-property-to-a-project-item-extension"></a>若要將屬性加入至專案項目擴充功能
+### <a name="to-add-a-property-to-a-project-item-extension"></a>若要將屬性加入至專案專案延伸模組
 
-1. 定義具有公用的屬性，表示您要新增至專案項目類型的屬性的類別。 如果您想要將多個屬性新增至專案項目類型，您可以在相同類別中，或在不同的類別中定義的所有屬性。
+1. 定義具有公用屬性的類別，代表您要加入至專案專案類型的屬性。 如果您想要將多個屬性加入至專案專案類型，您可以在相同類別或不同類別中定義所有屬性。
 
-2. 在 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>方法您<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>實作、 控制代碼<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested>事件*projectItemType*參數。
+2. 在 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> 您的執行方法中 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> ，處理 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> *projectItemType*參數的事件。
 
-3. 中的事件處理常式<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested>事件，將您的內容類別的執行個體<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A>事件引數參數的集合。
+3. 在事件的事件處理常式中 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> ，將屬性類別的實例新增至 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> 事件引數參數的集合。
 
 ## <a name="example"></a>範例
- 下列程式碼範例示範如何加入名為**屬性範例**至事件接收器的專案項目。
+ 下列程式碼範例示範如何將名為**Example 屬性**的屬性加入至事件接收器專案專案。
 
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#8](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionproperty.cs#8)]
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#8](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionproperty.vb#8)]
 
 ### <a name="understand-the-code"></a>了解程式碼
- 若要確保相同的執行個體`CustomProperties`類別每次使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested>事件發生時，程式碼範例將屬性的物件加入<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>屬性就會發生此事件的專案項目的第一個時間。 此事件一次發生時，程式碼會擷取此物件。 如需使用詳細資訊<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>屬性的資料相關聯專案項目，請參閱[相關聯的自訂資料與 SharePoint 工具擴充功能](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。
+ 為確保 `CustomProperties` 每次發生事件時都使用相同的類別實例 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> ，程式碼範例 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 會在第一次發生此事件時，將 properties 物件加入至專案專案的屬性。 每當這個事件再次發生時，程式碼就會抓取這個物件。 如需使用 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 屬性將資料與專案專案產生關聯的詳細資訊，請參閱[將自訂資料與 SharePoint 工具擴充](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)功能產生關聯。
 
- 若要保存為屬性值的變更**設定**存取子`ExampleProperty`儲存新的值，以<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>屬性<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>屬性相關聯的物件。 如需使用詳細資訊<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>屬性，以保存資料與專案項目，請參閱[將資料儲存於 SharePoint 專案系統擴充](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
+ 若要保存屬性值的變更，的**set**存取子 `ExampleProperty` 會將新的值儲存至與 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> 屬性相關聯之物件的屬性。 如需使用屬性來保存專案專案之資料的詳細資訊 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> ，請參閱在[SharePoint 專案系統的延伸模組中儲存資料](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
 
 ### <a name="specify-the-behavior-of-custom-properties"></a>指定自訂屬性的行為
- 您可以定義自訂屬性如何顯示和行為**屬性**藉由套用屬性 視窗<xref:System.ComponentModel>屬性定義的命名空間。 下列屬性可用於許多案例：
+ 您可以藉由將命名空間中的屬性套用至屬性定義，定義自訂屬性在 [**屬性**] 視窗中的顯示方式和行為 <xref:System.ComponentModel> 。 下列屬性在許多情況下很有用：
 
-- <xref:System.ComponentModel.DisplayNameAttribute>：指定出現在屬性名稱**屬性**視窗。
+- <xref:System.ComponentModel.DisplayNameAttribute>：指定出現在 [**屬性**] 視窗中的屬性名稱。
 
-- <xref:System.ComponentModel.DescriptionAttribute>：指定描述字串出現在底部**屬性**時選取屬性 視窗。
+- <xref:System.ComponentModel.DescriptionAttribute>：指定當選取屬性時，出現在 [**屬性**] 視窗底部的描述字串。
 
 - <xref:System.ComponentModel.DefaultValueAttribute>：指定屬性的預設值。
 
-- <xref:System.ComponentModel.TypeConverterAttribute>：指定會顯示在字串之間的自訂轉換**屬性**視窗而非字串屬性值。
+- <xref:System.ComponentModel.TypeConverterAttribute>：指定在 [**屬性**] 視窗中顯示的字串與非字串屬性值之間的自訂轉換。
 
-- <xref:System.ComponentModel.EditorAttribute>：指定自訂編輯器，以便用來修改屬性。
+- <xref:System.ComponentModel.EditorAttribute>：指定要用來修改屬性的自訂編輯器。
 
 ## <a name="compile-the-code"></a>編譯程式碼
- 這些範例需要參考下列組件的類別庫專案：
+ 這些範例需要具有下列元件參考的類別庫專案：
 
-- Microsoft.VisualStudio.SharePoint
+- VisualStudio. SharePoint
 
 - System.ComponentModel.Composition
 
-## <a name="deploy-the-extension"></a>部署擴充功能
- 若要部署的延伸模組，建立[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要將副檔名的檔案。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
+## <a name="deploy-the-extension"></a>部署延伸模組
+ 若要部署擴充功能，請 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 為元件建立擴充功能（VSIX）封裝，以及您想要與延伸模組一起散發的任何其他檔案。 如需詳細資訊，請參閱[在 Visual Studio 中部署 SharePoint 工具的擴充](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)功能。
 
 ## <a name="see-also"></a>另請參閱
-- [如何：建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
-- [如何：將捷徑功能表項目新增至 SharePoint 專案項目擴充功能](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
-- [擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)
-- [逐步解說：擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+- [如何：建立 SharePoint 專案專案延伸模組](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
+- [如何：將快捷方式功能表項目加入至 SharePoint 專案專案延伸模組](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
+- [擴充 SharePoint 專案專案](../sharepoint/extending-sharepoint-project-items.md)
+- [逐步解說：擴充 SharePoint 專案專案類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)

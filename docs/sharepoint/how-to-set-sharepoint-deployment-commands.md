@@ -1,7 +1,7 @@
 ---
-title: HOW TO：設定 SharePoint 部署命令 |Microsoft Docs
+title: 如何：設定 SharePoint 部署命令 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,35 +12,34 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7664dfcfe11d7ab7dc6ab03045533bbd9e69fb9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: c2329efef64e7d8605f8483ff7dce3107cd702fa
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812906"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015508"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>HOW TO：設定 SharePoint 部署命令
-  您可以自訂部署程序，藉由設定預先部署和部署後命令。 當您偵錯 SharePoint 方案，從 Visual Studio 時，這些命令會執行之前和之後的其他部署動作。
+# <a name="how-to-set-sharepoint-deployment-commands"></a>如何：設定 SharePoint 部署命令
+  您可以藉由設定預先部署和部署後命令來自訂部署流程。 這些命令會在您從 Visual Studio 進行 SharePoint 方案的調試時，于其他部署動作之前和之後執行。
 
-### <a name="to-add-a-pre-deployment-command"></a>若要將預先部署命令
+### <a name="to-add-a-pre-deployment-command"></a>若要新增預先部署命令
 
-1. 在功能表列上選擇 **專案** > **\<*ProjectName*> 屬性**。
+1. 在功能表列上，選擇 [**專案**  >  ** \<*ProjectName*> 屬性**]。
 
-2. 選擇**SharePoint**  索引標籤。
+2. 選擇 [ **SharePoint** ] 索引標籤。
 
-3. 在 **預先部署命令列**文字中，輸入 MS-DOS 或 MSBuild 命令，以自訂此步驟。
+3. 在 [**預先部署命令列**] 文字方塊中，輸入 MS-DOS 或 MSBuild 命令以自訂此步驟。
 
-     例如，若要完成部署之前，請列出目錄內容，請輸入**dir**。
+     例如，若要在部署完成之前列出目錄內容，請輸入**dir**。
 
-### <a name="to-add-a-post-deployment-command"></a>若要加入部署後命令
+### <a name="to-add-a-post-deployment-command"></a>新增部署後命令
 
-1. 在功能表列上選擇 **專案** > **\<*ProjectName*> 屬性**。
+1. 在功能表列上，選擇 [**專案**  >  ** \<*ProjectName*> 屬性**]。
 
-2. 選擇**SharePoint**  索引標籤。
+2. 選擇 [ **SharePoint** ] 索引標籤。
 
-3. 在 **部署後命令列**文字中，輸入 MS-DOS 或 MSBuild 命令，以自訂此步驟。
+3. 在 [**部署後命令列**] 文字方塊中，輸入 MS-DOS 或 MSBuild 命令以自訂此步驟。
 
-     例如，若要完成部署之後，請列出目錄內容，請輸入**dir**。 若要使用 MSBuild 變數，複製 [build] 目錄中的組件，請輸入**複製 $ （targetpath) c:\DeploymentDirectory**。
+     例如，若要在部署完成後列出目錄內容，請輸入**dir**。 若要使用 MSBuild 變數從組建目錄複寫元件，請輸入**copy $ （TargetPath） c:\DeploymentDirectory**。
 
 ## <a name="see-also"></a>另請參閱
 - [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

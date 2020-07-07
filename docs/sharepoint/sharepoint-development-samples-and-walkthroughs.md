@@ -1,7 +1,7 @@
 ---
-title: SharePoint 程式開發範例和逐步解說 |Microsoft Docs
+title: SharePoint 開發範例和逐步解說 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -13,24 +13,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2c8894c5e2573c61ff54e38fa41ea0ed1cd3f77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 39f4d52b8a94409abeffb7cc9ce2329e463cf8bd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976250"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015806"
 ---
-# <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 程式開發範例和逐步解說
-  本章節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和用來建置 SharePoint 解決方案的技術。
+# <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 開發範例和逐步解說
+  本節包含範例應用程式、範例程式碼和逐步解說，其中說明用來建立 SharePoint 方案的語法、結構和技術。
 
- 範例程式碼是針對說明之用，因此不應用於已部署的解決方案，而不需要修改。 特別是，安全性必須納入大於的考量。
+ 範例程式碼僅供教學之用，不應在未修改的情況下用於已部署的解決方案。 特別是，必須將安全性納入考慮。
 
 ## <a name="in-this-section"></a>本節內容
 
 |主題|描述|
 |-----------|-----------------|
-|[SharePoint 程式開發範例](../sharepoint/sharepoint-development-samples.md)|描述範例應用程式，示範如何使用 Visual Studio 中的 SharePoint 開發工具。|
-|[SharePoint 開發的逐步解說](../sharepoint/sharepoint-development-walkthroughs.md)|列出逐步指南，提供 Visual Studio 中 SharePoint 開發工具的簡介。|
+|[SharePoint 開發範例](../sharepoint/sharepoint-development-samples.md)|描述示範如何在 Visual Studio 中使用 SharePoint 開發工具的範例應用程式。|
+|[SharePoint 開發逐步解說](../sharepoint/sharepoint-development-walkthroughs.md)|列出逐步指南，提供 Visual Studio 中 SharePoint 開發工具的簡介。|
 
 ## <a name="see-also"></a>另請參閱
 - [建立 SharePoint 方案](../sharepoint/create-sharepoint-solutions.md)

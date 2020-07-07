@@ -1,7 +1,7 @@
 ---
 title: 如何：加入和移除其他元件 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdcc1c478bead4df89622a7311b074965cdc0226
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 07b9016a4e246d3ed5a2697d924f556517a8226f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985227"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014834"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>如何：新增和移除其他元件
   如果 SharePoint 封裝相依于功能或資料的其他元件，您可以將元件加入至方案套件（.wsp）。 如此一來，SharePoint 伺服器就能確保自訂群組件會與封裝一起安裝。
@@ -41,7 +40,7 @@ ms.locfileid: "72985227"
 
 4. 選擇省略號（![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")），然後選擇您要加入的元件。 基於可攜性的目的，建議使用所選取元件的相對路徑。
 
-5. 針對**部署目標**，選擇 [ **GlobalAssemblyCache** ] 選項按鈕，將元件部署至全域組件快取，或選擇 [ **WebApplication** ] 選項按鈕，將元件部署至 [WebApplication] 資料夾的執行 SharePoint 的伺服器。
+5. 針對**部署目標**，選擇 [ **GlobalAssemblyCache** ] 選項按鈕，將元件部署至全域組件快取，或選擇 [ **WebApplication** ] 選項按鈕，將元件部署到執行 SharePoint 之伺服器上的 WebApplication 資料夾。
 
 #### <a name="to-add-an-assembly-from-project-output"></a>若要從專案輸出加入元件
 
@@ -57,7 +56,7 @@ ms.locfileid: "72985227"
 
 4. 在 [**來源專案**] 清單中，選擇您想要新增的來源專案。
 
-5. 針對**部署目標**，選擇 [ **GlobalAssemblyCache** ] 選項按鈕，將元件部署至全域組件快取，或選擇 [ **WebApplication** ] 選項按鈕，將元件部署至 [WebApplication] 資料夾的執行 SharePoint 的伺服器。
+5. 針對**部署目標**，選擇 [ **GlobalAssemblyCache** ] 選項按鈕，將元件部署至全域組件快取，或選擇 [ **WebApplication** ] 選項按鈕，將元件部署到執行 SharePoint 之伺服器上的 WebApplication 資料夾。
 
 #### <a name="to-add-a-safe-control"></a>若要加入安全控制項
 
@@ -108,7 +107,7 @@ ms.locfileid: "72985227"
 
 3. 選擇 [刪除] 鍵。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [建立 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)
 - [如何：自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [如何：在 SharePoint 功能中加入和移除專案](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

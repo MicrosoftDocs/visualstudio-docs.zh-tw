@@ -1,7 +1,7 @@
 ---
-title: HOW TO：新增或移除 SharePoint 連線 |Microsoft Docs
+title: 如何：加入或移除 SharePoint 連接 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,34 +14,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c094ad703727903e7109d6a748b8383e4cad7d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cec1389294c8baf169db055acb87619114d7d19b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435490"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014572"
 ---
-# <a name="how-to-add-or-remove-sharepoint-connections"></a>HOW TO：新增或移除 SharePoint 連線
-  伺服器總管 可讓您瀏覽 SharePoint 網站，以及資料連接。 不過，您可以瀏覽 SharePoint 網站的內容之前您必須將它加入**SharePoint 連線**節點。
+# <a name="how-to-add-or-remove-sharepoint-connections"></a>如何：加入或移除 SharePoint 連接
+  伺服器總管可讓您流覽 SharePoint 網站以及資料連線。 不過，在您可以流覽 SharePoint 網站的內容之前，您必須先將它加入 [ **Sharepoint 連接**] 節點。
 
-### <a name="to-add-a-sharepoint-site-to-the-sharepoint-connections-node"></a>若要將 SharePoint 網站新增至 SharePoint 連線節點
+### <a name="to-add-a-sharepoint-site-to-the-sharepoint-connections-node"></a>將 SharePoint 網站加入 SharePoint 連接節點
 
-1. 在功能表列上選擇 **檢視**，**伺服器總管**。
+1. 在功能表列上，選擇 [ **View**]、[**伺服器總管**]。
 
-2. 在 **伺服器總管**，選擇**SharePoint 連線** 節點，然後在功能表列上選擇 **工具** > **加入 SharePoint連接**。
+2. 在**伺服器總管**中，選擇 [ **SharePoint 連接**] 節點，然後在功能表列上選擇 [**工具**] [  >  **加入 SharePoint 連接**]。
 
-3. 在 **新增 SharePoint 連線**方塊中，輸入[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]SharePoint 網站 (比方說， http://testserver/sites/unittests)。
+3. 在 [**加入 Sharepoint 連接**] 方塊中，輸入 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] SharePoint 網站的（例如） http://testserver/sites/unittests) 。
 
-### <a name="to-delete-a-sharepoint-site-from-the-sharepoint-connections-node"></a>若要從 SharePoint 連線節點刪除 SharePoint 網站
+### <a name="to-delete-a-sharepoint-site-from-the-sharepoint-connections-node"></a>若要從 SharePoint 連接節點刪除 SharePoint 網站
 
-1. 在功能表列上選擇 **檢視**，**伺服器總管**以開啟**伺服器總管**。
+1. 在功能表列上，選擇 [**視圖**]，**伺服器總管**開啟**伺服器總管**。
 
-2. 依序展開**SharePoint 連線**節點，以顯示您想要刪除從 SharePoint 網站**伺服器總管**。
+2. 展開 [ **Sharepoint 連接**] 節點，以顯示您想要從**伺服器總管**刪除的 SharePoint 網站。
 
-3. 選擇的站台，，然後在功能表列上，選擇**編輯** > **刪除**。
+3. 選擇網站，然後在功能表列上選擇 [編輯] [ **Edit**  >  **刪除**]。
 
     > [!NOTE]
-    > 此步驟並不會刪除基礎的網站。它會刪除從連接**伺服器總管**。
+    > 此步驟不會刪除基礎網站;它只會刪除**伺服器總管**的連接。
 
 ## <a name="see-also"></a>另請參閱
-- [瀏覽 SharePoint 連線，使用 伺服器總管](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
+- [使用伺服器總管流覽 SharePoint 連接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

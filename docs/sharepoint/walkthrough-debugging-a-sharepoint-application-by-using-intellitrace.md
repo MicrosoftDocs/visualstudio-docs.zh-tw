@@ -1,7 +1,7 @@
 ---
 title: 使用 IntelliTrace 進行 SharePoint 應用程式的 Debug
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,12 +16,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe1130880db42e920e656d5efef1ea6a5af4d2d0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984138"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015758"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>逐步解說：使用 IntelliTrace 來對 SharePoint 應用程式進行 Debug
 
@@ -31,7 +30,7 @@ ms.locfileid: "72984138"
 
  **適用物件：** 本主題中的資訊適用于在 Visual Studio 中建立的 SharePoint 2010 和 SharePoint 2013 解決方案。
 
- 這個逐步解說將說明下列工作：
+ 本逐步解說將說明下列工作：
 
 - [建立功能接收器](#create-a-feature-receiver)
 
@@ -41,13 +40,13 @@ ms.locfileid: "72984138"
 
 - [使用 Microsoft Monitoring Agent 收集 IntelliTrace 資料](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
-- [偵錯工具和修正 SharePoint 方案](#debug-and-fix-the-sharepoint-solution)
+- [偵錯和修正 SharePoint 方案](#debug-and-fix-the-sharepoint-solution)
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
-您需要下列元件才能完成此逐步解說：
+您需要下列元件才能完成這個逐步解說：
 
 - 支援的 Windows 和 SharePoint 版本。
 
@@ -73,9 +72,9 @@ ms.locfileid: "72984138"
 
 ## <a name="add-code-to-the-feature-receiver"></a>將程式碼加入至功能接收器
 
-接下來，將程式碼新增至功能接收器中的兩個方法： `FeatureActivated` 和 `FeatureDeactivating`。 每當 SharePoint 中的功能分別啟用或停用時，這些方法就會觸發。
+接下來，將程式碼新增至功能接收器中的兩個方法： `FeatureActivated` 和 `FeatureDeactivating` 。 每當 SharePoint 中的功能分別啟用或停用時，這些方法就會觸發。
 
-1. 在 `Feature1EventReceiver` 類別的頂端，新增下列程式碼，以宣告指定 SharePoint 網站和子網站的變數：
+1. 在類別的頂端 `Feature1EventReceiver` ，新增下列程式碼，以宣告指定 SharePoint 網站和子網站的變數：
 
     ```vb
     ' SharePoint site and subsite.
@@ -295,7 +294,7 @@ ms.locfileid: "72984138"
 
 3. 在 PowerShell 視窗中，執行[stop-webapplicationmonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20))命令來建立 .itrace 檔案、停止監視，然後重新開機您的 SharePoint 方案。
 
-     **停止-stop-webapplicationmonitoring**  *"\<SharePointSite >\\< SharePointAppName\>"*
+     **停止-stop-webapplicationmonitoring***" \<SharePointSite> \\<SharePointAppName \> "*  
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>偵錯工具和修正 SharePoint 方案
 
@@ -329,7 +328,7 @@ ms.locfileid: "72984138"
 
      程式碼現在會正確執行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [驗證和 debug SharePoint 程式碼](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)

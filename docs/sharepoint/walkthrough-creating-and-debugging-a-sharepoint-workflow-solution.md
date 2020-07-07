@@ -1,7 +1,7 @@
 ---
 title: 建立 & 的 debug SharePoint 工作流程方案
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
@@ -16,19 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e51f346501b680b8183f8552aad48ffff84a71dd
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
-ms.translationtype: MT
+ms.openlocfilehash: 65af3cbfc799a90d640579f8eed0e051fd5888f0
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983722"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014626"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>逐步解說：建立和調試 SharePoint 工作流程方案
   本逐步解說示範如何建立基本的順序工作流程範本。 工作流程會檢查共用文件庫的屬性，以判斷是否已審核檔。 如果檔已經過審核，工作流程就會完成。
 
- 這個逐步解說將說明下列工作：
+ 本逐步解說將說明下列工作：
 
-- 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中建立 SharePoint 清單定義的順序工作流程專案。
+- 在中建立 SharePoint 清單定義的順序工作流程專案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
 - 建立工作流程活動。
 
@@ -37,27 +36,27 @@ ms.locfileid: "73983722"
 > [!NOTE]
 > 雖然本逐步解說使用的是連續的工作流程專案，但狀態機器工作流程專案的程式是相同的。
 >
-> 此外，您的電腦可能會針對下列指示中的某些 Visual Studio 使用者介面元素，顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 此外，您的電腦可能會針對下列指示中的某些 Visual Studio 使用者介面元素，顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[個人化 VISUAL STUDIO IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="prerequisites"></a>Prerequisites
- 您需要下列元件才能完成此逐步解說：
+## <a name="prerequisites"></a>必要條件
+ 您需要下列元件才能完成這個逐步解說：
 
 - 支援的 Microsoft Windows 和 SharePoint 版本。
 
 - Visual Studio。
 
 ## <a name="add-properties-to-the-sharepoint-shared-documents-library"></a>將屬性加入至 SharePoint 共用文件庫
- 為了追蹤**共用文件**庫中檔的審核狀態，我們將在 SharePoint 網站上建立共用檔的三個新屬性： `Status`、`Assignee`和 `Review Comments`。 我們會在**共用文件**庫中定義這些屬性。
+ 為了追蹤**共用文件**庫中檔的審核狀態，我們將在 SharePoint 網站上建立共用檔的三個新屬性： `Status` 、 `Assignee` 和 `Review Comments` 。 我們會在**共用文件**庫中定義這些屬性。
 
 #### <a name="to-add-properties-to-the-sharepoint-shared-documents-library"></a>將屬性加入至 SharePoint 共用文件庫
 
-1. 在網頁瀏覽器中開啟 SharePoint 網站，例如 HTTP://\<系統名稱 >/SitePages/Home.aspx。
+1. 在網頁瀏覽器中開啟 SharePoint 網站，例如 HTTP:// \<system name> /SitePages/Home.aspx。
 
 2. 在 [快速啟動] 列上，選擇 [ **SharedDocuments**]。
 
 3. 選擇 [文檔**庫工具**] 功能區上的 [連結**庫**]，然後選擇功能區上的 [**建立資料行**] 按鈕來建立新的資料行
 
-4. 將資料行命名為 [**檔狀態**]，將其 [類型] 設定為 **[選擇] （可選擇的功能表）** ，指定下列三個選項，然後選擇 [**確定]** 按鈕：
+4. 將資料行命名為 [**檔狀態**]，將其 [類型] 設定為 **[選擇] （可選擇的功能表）**，指定下列三個選項，然後選擇 [**確定]** 按鈕：
 
     - **需要審查**
 
@@ -89,9 +88,9 @@ ms.locfileid: "73983722"
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在功能表列上 **，選擇 [** 檔案]  >  [**新增** > **專案**]，以顯示 [**新增專案**] 對話方塊。
+2. 在功能表列上 **，選擇 [** 檔案] [  >  **新增**  >  **專案**] 以顯示 [**新增專案**] 對話方塊。
 
-3. 展開 [**視覺效果C#**  ] 或 [ **Visual Basic**] 底下的 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
+3. 展開 [ **Visual c #** ] 或 [ **Visual Basic**] 底下的 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
 4. 在 [**範本**] 窗格中，選擇 [ **SharePoint 2010 專案**] 範本。
 
@@ -103,9 +102,9 @@ ms.locfileid: "73983722"
 
      此步驟會將解決方案的信任層級設定為伺服器陣列方案，這是工作流程專案的唯一可用選項。 如需詳細資訊，請參閱[沙箱化方案考慮](../sharepoint/sandboxed-solution-considerations.md)。
 
-7. 在**方案總管**中，選擇專案節點，然後在功能表列上，選擇 [**專案** > **加入新專案**]。
+7. 在**方案總管**中，選擇專案節點，然後在功能表列上選擇 [**專案**] [新增] [  >  **新專案**]。
 
-8. 在 [**視覺C#效果**] 或 [ **Visual Basic**] 底下，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
+8. 在 [ **Visual c #** ] 或 [ **Visual Basic**] 底下，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
 9. 在 [**範本**] 窗格中，選擇 [**順序工作流程（僅限陣列方案）** ] 範本，然後選擇 [**新增**] 按鈕。
 
@@ -165,14 +164,14 @@ ms.locfileid: "73983722"
     |屬性|值|
     |--------------|-----------|
     |**CorrelationToken**|**workflowToken**|
-    |**調用**|**onWorkflowItemChanged**|
+    |**Invoked**|**onWorkflowItemChanged**|
 
 ## <a name="handle-activity-events"></a>處理活動事件
  最後，檢查每個活動的檔狀態。 如果檔已經過審核，則工作流程已完成。
 
 #### <a name="to-handle-activity-events"></a>若要處理活動事件
 
-1. 在*Workflow1.cs*或*workflow1.xaml*中，將下欄欄位新增至 `Workflow1` 類別的頂端。 活動中會使用此欄位來判斷工作流程是否已完成。
+1. 在*Workflow1.cs*或*workflow1.xaml*中，將下欄欄位新增至類別的頂端 `Workflow1` 。 活動中會使用此欄位來判斷工作流程是否已完成。
 
     ```vb
     Dim workflowPending As Boolean = True
@@ -182,7 +181,7 @@ ms.locfileid: "73983722"
     Boolean workflowPending = true;
     ```
 
-2. 將下列方法加入 `Workflow1` 類別。 這個方法會檢查 [檔] 清單中 [`Document Status`] 屬性的值，以判斷是否已審核檔。 如果 `Document Status` 屬性設定為 `Review Complete`，則 `checkStatus` 方法會將 `workflowPending` 欄位設定為**false** ，表示工作流程已準備好完成。
+2. 將下列方法新增至 `Workflow1` 類別。 這個方法會檢查 `Document Status` [檔] 清單中屬性的值，以判斷是否已審核檔。 如果 `Document Status` 屬性設定為，則 `Review Complete` `checkStatus` 方法會將欄位設定 `workflowPending` 為**false** ，表示工作流程已準備好完成。
 
     ```vb
     Private Sub checkStatus()
@@ -200,7 +199,7 @@ ms.locfileid: "73983722"
     }
     ```
 
-3. 將下列程式碼新增至 `onWorkflowActivated` 和 `onWorkflowItemChanged` 方法，以呼叫 `checkStatus` 方法。 當工作流程啟動時，`onWorkflowActivated` 方法會呼叫 `checkStatus` 方法，以判斷檔是否已經過檢查。 如果尚未經過審核，工作流程就會繼續進行。 儲存檔時，`onWorkflowItemChanged` 方法會再次呼叫 `checkStatus` 方法，以判斷是否已審核檔。 當 [`workflowPending`] 欄位設定為 [ **true**] 時，工作流程會繼續執行。
+3. 將下列程式碼新增至 `onWorkflowActivated` 和 `onWorkflowItemChanged` 方法，以呼叫 `checkStatus` 方法。 當工作流程啟動時， `onWorkflowActivated` 方法會呼叫 `checkStatus` 方法來判斷檔是否已經過審核。 如果尚未經過審核，工作流程就會繼續進行。 儲存檔時， `onWorkflowItemChanged` 方法會再次呼叫方法， `checkStatus` 以判斷是否已審核檔。 當 `workflowPending` 欄位設定為**true**時，工作流程會繼續執行。
 
     ```vb
     Private Sub onWorkflowActivated(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ExternalDataEventArgs)
@@ -226,7 +225,7 @@ ms.locfileid: "73983722"
     }
     ```
 
-4. 將下列程式碼新增至 `isWorkflowPending` 方法，以檢查 `workflowPending` 屬性的狀態。 每次儲存檔時， **whileActivity1**活動都會呼叫 `isWorkflowPending` 方法。 這個方法會檢查 <xref:System.Workflow.Activities.ConditionalEventArgs> 物件的 <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> 屬性，以判斷**WhileActivity1**活動是否應該繼續或完成。 如果屬性設定為**true**，則活動會繼續。 否則，活動會完成，且工作流程會完成。
+4. 將下列程式碼新增至 `isWorkflowPending` 方法，以檢查屬性的狀態 `workflowPending` 。 每次儲存檔時， **whileActivity1**活動都會呼叫 `isWorkflowPending` 方法。 這個方法會檢查 <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> 物件的屬性 <xref:System.Workflow.Activities.ConditionalEventArgs> ，以判斷**WhileActivity1**活動是否應該繼續或完成。 如果屬性設定為**true**，則活動會繼續。 否則，活動會完成，且工作流程會完成。
 
     ```vb
     Private Sub isWorkflowPending(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ConditionalEventArgs)
@@ -244,7 +243,7 @@ ms.locfileid: "73983722"
 5. 儲存專案。
 
 ## <a name="test-the-sharepoint-workflow-template"></a>測試 SharePoint 工作流程範本
- 當您啟動偵錯工具時，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將工作流程範本部署到 SharePoint 伺服器，並將工作流程與**共用文件**清單產生關聯。 若要測試工作流程，請從**共用文件**清單中的檔啟動工作流程的實例。
+ 當您啟動偵錯工具時，會將 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 工作流程範本部署到 SharePoint 伺服器，並將工作流程與**共用文件**清單產生關聯。 若要測試工作流程，請從**共用文件**清單中的檔啟動工作流程的實例。
 
 #### <a name="to-test-the-sharepoint-workflow-template"></a>測試 SharePoint 工作流程範本
 
@@ -262,7 +261,7 @@ ms.locfileid: "73983722"
 
      這會將選取的檔上傳至 [**共用文件**] 清單並啟動工作流程。
 
-6. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中，確認偵錯工具會在 `onWorkflowActivated` 方法旁的中斷點停止。
+6. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，確認偵錯工具在方法旁的中斷點停止 `onWorkflowActivated` 。
 
 7. 選擇**F5**鍵以繼續執行。
 
@@ -287,7 +286,7 @@ ms.locfileid: "73983722"
 
 - 若要深入瞭解 Windows Workflow Foundation 活動，請參閱[System.web 命名空間](/dotnet/api/system.windows.media.color)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [建立 SharePoint 工作流程方案](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [SharePoint 專案與專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)

@@ -1,7 +1,7 @@
 ---
 title: 如何：使用資源檔來指定當地語系化名稱、屬性和許可權 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,12 +19,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa2fec260921d66328b2c16075d44b38686c08de
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: a87cc8a3eb8f98ea19a87e93c37aae5303151ecf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982560"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015404"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>如何：使用資源檔來指定當地語系化名稱、屬性和許可權
   藉由使用資源檔，您可以提供當地語系化的名稱和定義屬性，或是對商務資料連接 (BDC) 模型中定義的物件套用權限。 若要指定這項資訊，您可以將**商務資料連線資源**專案加入至包含**商務資料連線模型**專案的專案。 然後編輯資源檔的 XML，藉此指定名稱、屬性和權限。
@@ -33,7 +32,7 @@ ms.locfileid: "72982560"
 
 1. 在**方案總管**中，展開 SharePoint 專案的資料夾，然後選擇包含 BDC 模型的資料夾。
 
-2. 在功能表列中，選擇 [專案] > [加入新項目]。
+2. 在功能表列上，選擇 [**專案**] [  >  **加入新專案**]。
 
 3. 展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
@@ -47,7 +46,7 @@ ms.locfileid: "72982560"
 
      如需如何定義這些元素的詳細資訊，請參閱[模型和資源檔](/previous-versions/office/developer/sharepoint-2010/aa674515(v=office.14))。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：將現有的 BDC 模型檔案加入至 SharePoint 專案](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [如何：建立 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)
