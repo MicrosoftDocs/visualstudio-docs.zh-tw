@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daa1148a47919c12fa423bd90f6d63c030cf743c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
+ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770523"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092306"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用查看定義 (Alt+F12) 來檢視及編輯程式碼
 
@@ -74,7 +74,7 @@ ms.locfileid: "85770523"
 |-------------------|:-----------------------:|
 |開啟定義視窗。|**Alt** +**F12**|
 |關閉定義視窗|**Esc**|
-|將定義視窗升級到一般文件索引標籤|**Shift** +**Alt** +**首頁**|
+|將定義視窗升級到一般文件索引標籤|**Ctrl** +**Alt** +**首頁**|
 |在定義視窗之間巡覽|**Ctrl** +**Alt** + Alt **-** 和**Ctrl** + **Alt**+**=**|
 |在多個結果之間巡覽|**F8** 和 **Shift**+**F8**|
 |在程式碼編輯器視窗和定義視窗之間切換|**Shift** +**Esc 鍵**|

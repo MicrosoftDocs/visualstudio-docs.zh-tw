@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5189278f8efe42e6e7916562e7ce4f5d6a964061
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
+ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938259"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86137562"
 ---
 # <a name="developer-community-guidelines"></a>開發人員社群指導方針
 
@@ -65,6 +65,17 @@ ms.locfileid: "85938259"
 
 當有負面的成本效益餘額時，我們會關閉一些 bug。 例如，如果修正很複雜，it 風險會對許多使用者進行回歸，修正可能不合理。 當我們關閉這類錯誤時，我們會說明為何要這麼做。
 
+### <a name="other-product"></a>其他產品
+
+有時候回報問題的原因是另一項產品，而不是 Visual Studio。 它可以是另一個相關的應用程式或擴充功能。 
+
+發生這種情況時，我們會關閉問題，並要求您將它與其他產品開啟。 以下是一些用來提出這些問題的常見位置：
+
+* [SQL Server](https://feedback.azure.com/forums/908035-sql-server)
+* [Visual Studio 訂用帳戶支援](https://feedback.azure.com/forums/908035-sql-server)
+* [Office](https://support.office.com/article/how-do-i-give-feedback-on-microsoft-office-2b102d44-b43f-4dd2-9ff4-23cf144cfb11)
+* [Windows](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)
+
 #### <a name="additional-information"></a>其他資訊
 
 - [如何增加修正效能問題的機率](https://docs.microsoft.com/visualstudio/ide/how-to-increase-chances-of-performance-issue-being-fixed)
@@ -99,6 +110,6 @@ ms.locfileid: "85938259"
 
 批註和回復是公開可見的，但任何附加的檔案只會私下與 Microsoft 共用。 這種可見度很有用，因為它可讓整個社區查看其他使用者所找到的問題和解決方案。 如果您擔心資料或身分識別的隱私權，您可以選擇。 深入瞭解[開發人員社區資料隱私權](https://docs.microsoft.com/visualstudio/ide/developer-community-privacy)。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 前往[Visual Studio 的開發人員社區](https://developercommunity.visualstudio.com/)，以報告問題、建議功能，或流覽現有的票證。 盡情享受！
