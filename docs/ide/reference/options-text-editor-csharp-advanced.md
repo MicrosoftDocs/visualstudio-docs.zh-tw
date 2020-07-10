@@ -10,31 +10,31 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0e04a011612cdebebd244fc061981b713b858a7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
+ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431484"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86181062"
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 
-使用 [進階]**** 選項頁面來修改 C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 要訪問此選項頁，請選擇 **"工具** > **選項**"，然後選擇**文字編輯器** > **C#** > **高級**。
+使用 [進階]**** 選項頁面來修改 C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 若要存取此選項頁面，請選擇 [**工具**] [  >  **選項**]，然後選擇 [**文字編輯器**  >  **c #**  >  **Advanced**]。
 
 > [!NOTE]
 > 並非所有選項都會列在此處。
 
 ## <a name="analysis"></a>分析
 
-- 即時代碼分析或背景分析範圍
+- 即時程式碼分析或背景分析範圍
 
-   配置託管代碼的背景分析範圍。 有關詳細資訊，請參閱[如何：為託管代碼配置即時代碼分析範圍](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
+   設定 managed 程式碼的背景分析範圍。 如需詳細資訊，請參閱[如何：設定受控碼的即時程式碼分析範圍](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
 
 ## <a name="using-directives"></a>using 指示詞
 
 - 排序 using 時先放置 'System' 指示詞
 
-   選中後，按右鍵功能表中的 **"刪除和排序使用"** 命令對`using`指令進行排序，並將"系統"命名空間放在清單頂部。
+   選取時，滑鼠右鍵功能表中的 [**移除並排序 using** ] 命令會排序指示詞 `using` ，並將 ' System ' 命名空間放在清單頂端。
 
    排序之前：
 
@@ -87,7 +87,14 @@ ms.locfileid: "79431484"
    using System.Linq;
    ```
 
-- 建議使用 .NET 框架程式集中的類型
+::: moniker range=">=vs-2019"                                              
+- 針對 .NET Framework 元件中的類型建議 using
+::: moniker-end
+                                         
+::: moniker range="vs-2017"                                                
+- 為參考組件中的類型建議 Using
+::: moniker-end                                                            
+
 - 為 NuGet 套件中的類型建議 Using
 
    選取這些選項後，[快速動作](../quick-actions.md)可用來安裝 NuGet 套件，並為未參考的類型新增 `using` 指示詞。
@@ -118,7 +125,7 @@ ms.locfileid: "79431484"
 
 ## <a name="block-structure-guides"></a>區塊結構輔助線
 
-選擇這些核取方塊以在代碼中的捲曲括弧 （**{}**） 之間顯示虛線垂直線。 然後，您可以輕鬆查看宣告層級和程式碼層級建構的個別程式碼區塊。
+選取這些核取方塊，在 **{}** 您的程式碼中 () 的大括弧之間顯示虛線垂直線條。 然後，您可以輕鬆查看宣告層級和程式碼層級建構的個別程式碼區塊。
 
 ## <a name="editor-help"></a>編輯器說明
 
@@ -129,7 +136,7 @@ ms.locfileid: "79431484"
 ## <a name="see-also"></a>另請參閱
 
 - [如何：在文件產生中插入 XML 註解](../../ide/reference/generate-xml-documentation-comments.md)
-- [XML 文檔注釋（C# 程式設計指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
+- [XML 檔批註 (c # 程式設計指南) ](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [使用 XML 註解記錄您的程式碼 (C# 指南)](/dotnet/csharp/codedoc)
-- [設置特定于語言的編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)
+- [設定語言專用編輯器的選項](../../ide/reference/setting-language-specific-editor-options.md)
 - [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
