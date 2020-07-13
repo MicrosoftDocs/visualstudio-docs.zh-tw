@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b776599b484bef2b02c50528e838b9be82aa035
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289036"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211559"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令列選項
 
@@ -26,13 +26,13 @@ ms.locfileid: "85289036"
 >
 > 若要在 ARM 架構電腦上執行自動化測試，您必須使用 *VSTest.Console.exe*。
 
-開啟[開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)以使用命令列工具，或者您可以在 *% Program Files （x86）% \ Microsoft Visual Studio \\<版本 \> \\<版本 \> \common7\ide\CommonExtensions \\<Platform 中找到此工具 |Microsoft>*。
+開啟[開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)以使用命令列工具，或者您可以在 *% Program Files (x86) % \ Microsoft Visual Studio \\<版本 \> \\<edition \> \common7\ide\CommonExtensions \\<Platform 中找到此工具。Microsoft>*。
 
 ## <a name="general-command-line-options"></a>一般命令列選項
 
 下表列出 *VSTest.Console.exe* 的所有選項，以及選項的簡短描述。 在命令列鍵入 `VSTest.Console/?` 也能看到類似的摘要。
 
-| 選項 | 說明 |
+| 選項 | 描述 |
 |---|---|
 |**[*test file names*]**|從指定的檔案執行測試。 以空格分隔多個測試檔案名稱。<br />範例：`mytestproject.dll`、`mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*file name*]**|使用像資料收集器之類的其他設定執行測試。<br />範例： `/Settings:Local.RunSettings`|
@@ -46,13 +46,13 @@ ms.locfileid: "85289036"
 |**/Framework: [*framework version*]**|要用於測試執行的目標 .NET 版本。<br />範例值為 `Framework35`、`Framework40`、`Framework45`、`FrameworkUap10`、`.NETCoreApp,Version=v1.1`。<br />TargetFrameworkAttribute 是用來從您的元件自動偵測這個選項，而 `Framework40` 當屬性不存在時，預設值為。 如果您從 .NET Core 元件中移除[TargetFrameworkAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute) ，則必須明確指定此選項。<br />如果將目標 framework 指定為**Framework35**，則測試會在 CLR 4.0 「相容性模式」中執行。<br />範例： `/Framework:framework40`|
 |**/TestCaseFilter:[*expression*]**|執行符合指定之運算式的測試。<br /><Expression\> 的格式為 <property\>=<value\>[\|<Expression\>]。<br />範例： `/TestCaseFilter:"Priority=1"`<br />範例： `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** 命令列選項無法與 **/Tests** 命令列選項搭配使用。 <br />如需建立和使用運算式的資訊，請參閱 [ 篩選](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)。|
 |**/?**|顯示使用資訊。|
-|**/Logger:[*uri/friendlyname*]**|指定測試結果的記錄器。 請多次指定參數，以啟用多個記錄器。<br />範例：若要將結果記錄到 Visual Studio 測試結果檔案（.TRX），請使用<br />**/Logger： .trx**<br />**[;LogFileName = \<Defaults to unique file name> ]**|
+|**/Logger:[*uri/friendlyname*]**|指定測試結果的記錄器。 請多次指定參數，以啟用多個記錄器。<br />範例：若要將結果記錄到 Visual Studio 的測試結果檔案 (.TRX) ，請使用<br />**/Logger： .trx**<br />**[;LogFileName = \<Defaults to unique file name> ]**|
 |**/ListTests:[*file name*]**|列出從指定之測試容器探索到的測試。|
 |**/ListDiscoverers**|列出已安裝的測試探索程式。|
 |**/ListExecutors**|列出已安裝的測試執行程式。|
 |**/ListLoggers**|列出已安裝的測試記錄器。|
 |**/ListSettingsProviders**|列出已安裝的測試設定提供者。|
-|**/Blame**|在執行測試時追蹤測試，如果測試主機處理序損毀，則會以其執行順序發出測試名稱，最多包含損毀時執行的特定測試。 此輸出可讓您更輕鬆地找出有問題的測試，並進一步診斷。 [詳細資訊](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md)。|
+|**/Blame**|在歸責模式下執行測試。 此選項有助於隔離導致測試主控制項損毀的問題測試。 當偵測到損毀時，它會在中建立一個序列檔案 `TestResults/<Guid>/<Guid>_Sequence.xml` ，以捕捉損毀前執行的測試順序。 如需詳細資訊，請參閱[推諉資料收集器](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md)。|
 |**/Diag:[*file name*]**|將診斷追蹤記錄寫入至指定的檔案。|
 |**/ResultsDirectory:[*path*]**|如果測試結果目錄不存在，則會在指定的路徑中建立該目錄。<br />範例： `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*parentProcessId*]**|父處理序的處理序識別碼，該父處理序負責啟動目前處理序。|
@@ -64,24 +64,44 @@ ms.locfileid: "85289036"
 
 ## <a name="examples"></a>範例
 
-執行 *VSTest.Console.exe* 的語法如下：
+執行*vstest.console.exe*的語法為：
 
-`Vstest.console.exe [TestFileNames] [Options]`
+`vstest.console.exe [TestFileNames] [Options]`
 
-下列命令會針對測試程式庫 **myTestProject.dll** 執行 *VSTest.Console.exe*：
+下列命令會針對測試程式庫*myTestProject.dll*執行*vstest.console.exe* ：
 
 ```cmd
 vstest.console.exe myTestProject.dll
 ```
 
-下列命令會搭配多個測試檔案執行 *VSTest.Console.exe*。 以空格分隔測試檔案名稱：
+下列命令會使用多個測試檔案執行*vstest.console.exe* 。 以空格分隔測試檔案名稱：
 
 ```cmd
-Vstest.console.exe myTestFile.dll myOtherTestFile.dll
+vstest.console.exe myTestFile.dll myOtherTestFile.dll
 ```
 
-下列命令會搭配數個選項執行 *VSTest.Console.exe*。 它會以隔離的處理序執行 *myTestFile.dll* 檔案中的測試，並使用 *Local.RunSettings* 檔案中指定的設定。 此外，它只會執行標記為 "Priority=1" 的測試，並將結果記錄到 *.trx* 檔案中。
+下列命令會以數個選項執行*vstest.console.exe* 。 它會以隔離的處理序執行 *myTestFile.dll* 檔案中的測試，並使用 *Local.RunSettings* 檔案中指定的設定。 此外，它只會執行標記為 "Priority=1" 的測試，並將結果記錄到 *.trx* 檔案中。
 
 ```cmd
-vstest.console.exe  myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+vstest.console.exe myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+```
+
+下列命令會使用*vstest.console.exe* `/blame` 測試程式庫*myTestProject.dll*的選項來執行vstest.console.exe：
+
+```cmd
+vstest.console.exe myTestFile.dll /blame
+```
+
+如果發生測試主機損毀，就會產生*sequence.xml*檔案。 檔案會在其執行順序中包含測試的完整名稱，包括當機時所執行的特定測試。
+
+如果沒有測試主機損毀，將不會產生*sequence.xml*檔案。
+
+產生的*sequence.xml*檔案範例： 
+
+```xml
+<?xml version="1.0"?>
+<TestSequence>
+  <Test Name="TestProject.UnitTest1.TestMethodB" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+  <Test Name="TestProject.UnitTest1.TestMethodA" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+</TestSequence>
 ```

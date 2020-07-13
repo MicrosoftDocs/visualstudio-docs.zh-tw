@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: 每月或每年租 Visual Studio Professional 或 Visual Studio Enterprise，沒有長期合約。
-ms.openlocfilehash: 936216702113fbba2ec7251363418ab6182ade4a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906027"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211623"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 購買 [Visual Studio Professional 和 Visual Studio Enterprise 訂用帳戶](https://visualstudio.microsoft.com/subscriptions/)。 這些稱為「雲端訂用帳戶」****。
@@ -40,7 +40,7 @@ ms.locfileid: "85906027"
 
 4. 選取要購買的訂用帳戶數目。
     > [!div class="mx-imgBorder"]
-    > ![選取訂用帳戶數目](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
+    > ![選取訂用帳戶數目](_img/buy-vs-subscriptions/buy-vs-sub-users.png "選擇要購買的訂閱數目")
 
     如果您不想將訂用帳戶指派給自己，請清除**將這個訂用帳戶指派給我**。
 
@@ -62,12 +62,18 @@ ms.locfileid: "85906027"
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a> 取消您已購買的雲端訂用帳戶更新
 
-* 變更所購買的訂用帳戶數目：
+若要取消訂閱，您只需要將合約的訂用帳戶數目設定為零 (0) 。  請遵循下列步驟來減少訂閱數目：
+1. 登入<https://manage.visualstudio.com>
+1. 如果您有多個合約，請從下拉式清單中選擇所需的合約。
+1. 按一下左上方的 [**總覽**] 圖示，以顯示訂閱的相關資訊。  
+> [!div class="mx-imgBorder"]
+> ![顯示訂用帳戶總覽](_img/buy-vs-subscriptions/overview-button.png "按一下 [總覽] 按鈕以顯示訂用帳戶詳細資料")
+
+4. 找出您想要取消之訂用帳戶的專案，然後按一下 [**變更數量**]。
+1. 將 [數量] 設定為零 (0) 。 您的訂用帳戶將會維持在其排定的帳單日期之前，但不會在達到計費日期時續約。   
 
 > [!div class="mx-imgBorder"]
-> ![變更訂用帳戶](_img/buy-vs-subscriptions/manage-subscriptions.png)
-
-* 若要取消這些訂用帳戶，請將訂用帳戶數目減少為零 (0)。 它們不會在下個計費週期的開頭更新 (每月雲端訂用帳戶的次月一號；年度雲端訂用帳戶的 12 個月後)。
+> ![變更訂閱](_img/buy-vs-subscriptions/manage-subscriptions.png "按一下 [變更數量] 以取消訂閱")
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
@@ -123,10 +129,10 @@ ms.locfileid: "85906027"
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 購買雲端訂閱
 - [每月 Visual Studio Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
 - [每月 Visual Studio Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)

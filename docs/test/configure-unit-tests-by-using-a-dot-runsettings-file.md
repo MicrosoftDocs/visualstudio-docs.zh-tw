@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e03400cf916319f963457af5740139bc88fc5105
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288763"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211599"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings*檔案設定單元測試
 
@@ -67,7 +67,7 @@ ms.locfileid: "85288763"
     </Project>
     ```
 
-- 將名為 ". .runsettings" 的回合設定檔放在解決方案的根目錄。
+- 將名為 *. .runsettings*的回合設定檔放在解決方案的根目錄。
 
   如果已啟用回合設定檔的自動偵測，則此檔案中的設定會套用到所有測試執行。 您可以從兩個位置開啟 .runsettings 檔案的自動偵測功能：
   
@@ -205,6 +205,11 @@ ms.locfileid: "85288763"
           </MediaRecorder>
         </Configuration>
       </DataCollector>
+
+      <!-- Configuration for blame data collector -->
+      <DataCollector friendlyName="blame" enabled="True">
+      </DataCollector>
+
     </DataCollectors>
   </DataCollectionRunSettings>
 
@@ -233,6 +238,7 @@ ms.locfileid: "85288763"
           <LogFileName>foo.html</LogFileName>
         </Configuration>
       </Logger>
+      <Logger friendlyName="blame" enabled="True" />
     </Loggers>
   </LoggerRunSettings>
 
@@ -311,6 +317,16 @@ ms.locfileid: "85288763"
 
 若要自訂任何其他類型的診斷資料配接器，請使用[測試設定檔](../test/collect-diagnostic-information-using-test-settings.md)。
 
+
+### <a name="blame-data-collector"></a>推諉資料收集器
+
+```xml
+<DataCollector friendlyName="blame" enabled="True">
+</DataCollector>
+```
+
+此選項可協助您找出導致測試主機損毀的問題測試。 執行收集器會在*TestResults*中建立 (*Sequence.xml*) 的輸出檔案，此檔案會在損毀之前捕捉測試的執行順序。 
+
 ### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
@@ -356,7 +372,7 @@ public void HomePageTest()
   </LoggerRunSettings>
 ```
 
-`LoggerRunSettings`區段定義要用於測試回合的一或多個記錄器。 最常見的記錄器是主控台、.trx 和 html。 
+`LoggerRunSettings`區段會定義要用於測試回合的一或多個記錄器。 最常見的記錄器是主控台、.trx 和 html。 
 
 ### <a name="mstest-run-settings"></a>MSTest 回合設定
 
@@ -374,10 +390,10 @@ public void HomePageTest()
 
 這些是執行具有 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 屬性之測試方法的測試配接器專屬的設定。
 
-|設定|預設|值|
+|組態|預設|值|
 |-|-|-|
 |**ForcedLegacyMode**|false|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
-|**IgnoreTestImpact**|false|測試影響功能會將受最新變更影響的測試排定在 MSTest 中執行時，或從 Microsoft Test Manager （在 Visual Studio 2017 中已被取代）。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|
+|**IgnoreTestImpact**|false|測試影響功能會將受最新變更影響的測試排定在 MSTest 中執行時，或從 Microsoft Test Manager (在 Visual Studio 2017) 中被取代。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|
 |**SettingsFile**||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以[從設定功能表](#ide)指定測試設定檔。<br /><br />如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true**]。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|測試回合完成後，會關閉 MSTest。 所有在測試過程中啟動的處理序也都會終止。 如果您要讓測試執行程式保持運作，請將此值設定為 **true**。 例如，您可以使用此設定讓瀏覽器在不同的自動程式碼 UI 測試之間保持執行。|
 |**DeploymentEnabled**|true|如果您將此值設定為 **false**，就不會將您在測試方法中指定的部署項目複製到部署目錄中。|
@@ -386,6 +402,33 @@ public void HomePageTest()
 |**MapInconclusiveToFailed**|false|如果測試完成，但狀態結果不明，則通常對應至 [測試總管]**** 中的已略過狀態。 如果您要讓結果不明的測試顯示為 [失敗]，請將此值設定為 **true**。|
 |**InProcMode**|false|如果您要在 MSTest 配接器的相同處理序中執行測試，請將此值設定為 **true**。 這個設定提供較小效能。 但如果測試因例外狀況而結束，則不會執行其餘測試。|
 |**AssemblyResolution**|false|您可以在求解及執行單元測試時，指定其他組件的路徑。 例如，您可以針對與測試組件位於不同目錄的相依性組件，使用這些路徑。 若要指定路徑，請使用**目錄路徑**項目。 路徑可以包括環境變數。<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+
+## <a name="specify-environment-variables-in-the-runsettings-file"></a>在 *.runsettings*檔案中指定環境變數
+
+您可以在 *.runsettings*檔案中設定環境變數，該檔案可以直接與測試主機互動。 必須在 *.runsettings*檔案中指定環境變數，才能支援需要設定環境變數（例如*DOTNET_ROOT*）的重要專案。 這些變數是在產生測試主機進程時設定的，而且可以在主機中使用。
+
+### <a name="example"></a>範例
+
+下列程式碼是傳遞環境變數的 *.runsettings*檔案：
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File name extension must be .runsettings -->
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <!-- List of environment variables we want to set-->
+      <DOTNET_ROOT>C:\ProgramFiles\dotnet</DOTNET_ROOT>
+      <SDK_PATH>C:\Codebase\Sdk</SDK_PATH>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>
+```
+
+**RunConfiguration**節點應包含**EnvironmentVariables**節點。 環境變數可以指定為元素名稱和其值。
+
+> [!NOTE]
+> 因為這些環境變數應該一律在測試主機啟動時設定，所以測試應該一律在個別的進程中執行。 為此，會在有環境變數時設定 */InIsolation*旗標，以便一律叫用測試主機。
 
 ## <a name="see-also"></a>另請參閱
 
