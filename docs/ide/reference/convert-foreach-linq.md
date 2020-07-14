@@ -1,22 +1,21 @@
-﻿---
+---
 title: 將 Foreach 迴圈轉換為 LINQ
 descritpion: Convert any foreach loop that uses an IEnumerable to a LINQ query or a LINQ call form (also known as a LINQ method).
-ms.date: 03/10/2020
+ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
-- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 12c03830ccd37e0970e3c74bc78cdd9c8a8732b7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 390e66fa01d49f217140c3c030bcc54fd349e402
+ms.sourcegitcommit: 8b1314ceab58e0d562cdbb1367fa738fdca7bf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094224"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86285390"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>將 Foreach 迴圈轉換為 LINQ
 
@@ -24,13 +23,11 @@ ms.locfileid: "79094224"
 
 - C#
 
-- Visual Basic
+**功能：** 可讓您輕鬆地將使用 IEnumerable 的*foreach*迴圈轉換成 linq 查詢或 linq 呼叫表單 (也稱為 linq 方法) 。
 
-**內容：** 允許您輕鬆地將使用 IE55 的*foreach*迴圈轉換為 LINQ 查詢或 LINQ 調用表單（也稱為 LINQ 方法）。
+時機 **：** 您有一個使用 IEnumerable 的 foreach 迴圈，而您想要讓該迴圈以 LINQ 查詢的形式讀取。
 
-**何時：** 您有一個使用 IE500 的 foreach 迴圈，並且希望該迴圈作為 LINQ 查詢讀取。
-
-**原因：** 您更喜歡使用 LINQ 語法，而不是 foreach 迴圈。 [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) 會在 C# 中將查詢設為第一類語言建構。 LINQ 可以減少檔案中的程式碼數量，讓程式碼更容易閱讀，並允許不同資料來源具有類似的查詢運算式模式。
+**原因：** 您偏好使用 LINQ 語法，而不是 foreach 迴圈。 [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) 會在 C# 中將查詢設為第一類語言建構。 LINQ 可以減少檔案中的程式碼數量，讓程式碼更容易閱讀，並允許不同資料來源具有類似的查詢運算式模式。
 
 > [!NOTE]
 > LINQ 語法的效率通常比 Foreach 迴圈低。 當您使用 LINQ 來提高程式碼的可讀性時，最好注意可能出現的任何效能影響。
@@ -41,11 +38,11 @@ ms.locfileid: "79094224"
 
     ![使用 IEnumerable 範例的 Foreach](media/convert-foreach-to-LINQ.png)
 
-2. 按**Ctrl**+**。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
 
    ![轉換為 LINQ 功能表範例](media/convert-foreach-to-LINQ-codefix.png)
 
-3. 選擇 **"轉換為 LINQ"** 或 **"轉換為 Linq"（呼叫表單）。**
+3. 選取 [**轉換為 linq** ] 或 [**轉換成 linq (呼叫表單) **。
 
    ![LINQ 查詢結果範例](media/convert-foreach-to-LINQ-result.png)
 
@@ -79,8 +76,8 @@ public class Class1
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [Refactoring](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)
 - [[預覽變更] 視窗](../../ide/preview-changes.md)
 - [.NET 開發人員的祕訣](../csharp-developer-productivity.md)
