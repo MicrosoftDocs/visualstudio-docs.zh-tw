@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee018b42fc23b0a520b510235117cb74729fd4b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 319afb810ba755d0201d3edaebcb06a493b59047
+ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094519"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86301443"
 ---
 # <a name="signfile-task"></a>SignFile 工作
 
@@ -41,7 +41,7 @@ ms.locfileid: "79094519"
 |參數|描述|
 |---------------|-----------------|
 |`CertificateThumbprint`|必要的 `String` 參數。<br /><br /> 指定簽署要使用的憑證。 此憑證必須位於目前使用者的個人存放區。|
-|`SigningTarget`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要使用憑證簽署的檔案。|
+|`SigningTarget`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要使用憑證簽署的檔案，類型為 .exe 或 .dll。|
 |`TimestampUrl`|選擇性的 `String` 參數。<br /><br /> 指定時間戳記伺服器的 URL。|
 |`TargetFrameworkVersion`|對目標使用的 .NET Framework 版本。|
 
@@ -75,5 +75,5 @@ ms.locfileid: "79094519"
 
 ## <a name="see-also"></a>另請參閱
 
-- [任務引用](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)
