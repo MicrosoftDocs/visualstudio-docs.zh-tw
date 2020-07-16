@@ -730,6 +730,20 @@
                   href: ca2328.md
                 - name: 'CA2329:請勿使用不安全的組態來還原序列化 JsonSerializer'
                   href: ca2329.md
+                - name: CA2350：請確認 DataTable.ReadXml() 的輸入是受信任的
+                  href: ca2350.md
+                - name: CA2351：請確認 DataSet.ReadXml() 的輸入是受信任的
+                  href: ca2351.md
+                - name: CA2352：可序列化類型中的不安全 DataSet 或 DataTable 可能容易受到遠端程式碼執行攻擊
+                  href: ca2352.md
+                - name: CA2353：可序列化類型中的不安全 DataSet 或 DataTable
+                  href: ca2353.md
+                - name: CA2354：還原序列化物件圖中的不安全 DataSet 或 DataTable 可能容易受到遠端程式碼執行攻擊
+                  href: ca2354.md
+                - name: CA2355：還原序列化物件圖中的不安全 DataSet 或 DataTable
+                  href: ca2355.md
+                - name: CA2356：Web 還原序列化物件圖中的不安全 DataSet 或 DataTable 類型
+                  href: ca2356.md
                 - name: 'CA2330:在還原序列化時，請確認 JsonSerializer 有安全的組態'
                   href: ca2330.md
                 - name: CA3001：檢閱程式碼是否有 SQL 插入式攻擊弱點

@@ -42,6 +42,8 @@
       items:
         - name: 使用測試總管執行單元測試
           href: run-unit-tests-with-test-explorer.md
+        - name: 使用測試總管進行偵錯單元測試
+          href: debug-unit-tests-with-test-explorer.md
         - name: 測試清單編輯器常見問題集
           href: test-explorer-faq.md
     - name: 從命令列執行測試
@@ -103,7 +105,7 @@
       items:
         - name: 對 C++ UWP DLL 進行單元測試
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-        - name: '對 UWP 應用程式中的 Visual C# 程式碼進行單元測試'
+        - name: 對 UWP 應用程式中的 Visual C# 程式碼進行單元測試
           href: unit-testing-visual-csharp-code-in-a-store-app.md
         - name: 逐步解說：建立並執行 UWP App 的單元測試
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
