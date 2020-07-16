@@ -1,18 +1,18 @@
 ---
 title: 安裝協力廠商單元測試架構
-ms.date: 04/01/2019
+ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: fb9a08d0d3119724e8db631841aca35c6c6e9fe5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286969"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387183"
 ---
 # <a name="install-unit-test-frameworks"></a>安裝單元測試架構
 
@@ -20,7 +20,12 @@ Visual Studio 測試總管可以從任何已針對其開發配接器介面的單
 
 Visual Studio 方案可包含多個單元測試專案，這些專案使用不同的架構並提供不同的語言版本。
 
+::: moniker range=">=vs-2019"
+針對 .NET， [MSTest、NUnit 和 xUnit](getting-started-with-unit-testing.md)是預設會安裝 Visual Studio 所提供的測試架構。
+::: moniker-end
+::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) 是 Visual Studio 提供的預設安裝測試架構。
+::: moniker-end
 
 ## <a name="acquire-frameworks"></a>取得架構
 

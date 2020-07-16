@@ -1,7 +1,7 @@
 ---
-title: 使用 [測試總管] 執行單元測試並進行偵錯
-description: 了解如何在 Visual Studio 中使用 [測試總管] 執行測試。 本主題涵蓋如何在建置後啟用自動測試回合、檢視測試結果、群組和篩選測試清單、建立播放清單、偵錯測試，以及使用測試捷徑。
-ms.date: 07/29/2019
+title: 使用測試總管執行單元測試
+description: 了解如何在 Visual Studio 中使用 [測試總管] 執行測試。 本主題涵蓋如何在組建、查看測試結果、群組和篩選測試清單、建立播放清單，以及使用測試快捷方式之後，啟用自動測試回合。
+ms.date: 07/14/2020
 ms.topic: how-to
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -10,24 +10,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35bd6f26b56ea7c3a1d578e5721504a91f60b74c
-ms.sourcegitcommit: 46547f0bf3fc1a81e1a906762106dec5855e6e4a
+ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86156834"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386637"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
-使用 [測試總管] 從 Visual Studio 或協力廠商單元測試專案中執行單元測試。 您也可以使用 [測試總管] 將測試分組成分類、篩選測試清單，以及建立、儲存和執行測試播放清單。 您可以偵錯測試和分析測試效能和程式碼涵蓋範圍。
+使用 [測試總管] 從 Visual Studio 或協力廠商單元測試專案中執行單元測試。 您也可以使用 [測試總管] 將測試分組成分類、篩選測試清單，以及建立、儲存和執行測試播放清單。 您也可以分析程式碼涵蓋範圍和[偵錯工具單元測試](../test/debug-unit-tests-with-test-explorer.md)。
+
+[**測試瀏覽器**] 可以從方案中的多個測試專案，以及屬於生產程式碼專案的測試類別來執行測試。 測試專案可以使用不同的單元測試架構。 當進行測試的程式碼是為 .NET 撰寫時，測試專案可以用任何同樣以 .NET 為目標的語言撰寫，而不管目標程式碼的語言為何。 原生 C/C++ 程式碼專案必須使用 C++ 單元測試架構進行測試。
+
+## <a name="build-your-test-project"></a>建立您的測試專案
+
+如果您的 Visual Studio 方案尚未設定測試專案，您必須先建立並建立測試專案。
+
+- [開始使用單元測試（.NET）](../test/getting-started-with-unit-testing.md)
+- [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
 
 Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft 單元測試架構。 不過，測試總管也可以執行任何已實作測試總管配接器的單元測試架構。 如需安裝協力廠商單元測試架構的詳細資訊，請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)。
 
-[**測試瀏覽器**] 可以從方案中的多個測試專案，以及屬於生產程式碼專案的測試類別來執行測試。 測試專案可以使用不同的單元測試架構。 當進行測試的程式碼是為 .NET 撰寫時，測試專案可以用任何同樣以 .NET 為目標的語言撰寫，而不管目標程式碼的語言為何。 原生 C/C++ 程式碼專案必須使用 C++ 單元測試架構進行測試。 如需詳細資訊，請參閱[撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)。
-
 ## <a name="run-tests-in-test-explorer"></a>在 [測試總管] 中執行測試
 
-當您[建立測試專案](../test/getting-started-with-unit-testing.md)時，測試會顯示在 [測試瀏覽器] 中。 如果看不到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]****，並選擇 [Windows]****，然後選擇 [測試總管]****。
+在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果看不到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]****，並選擇 [Windows]****，然後選擇 [測試總管]****。
 
 ::: moniker range="vs-2017"
 ![單元測試總管](../test/media/ute_failedpassednotrunsummary.png)
@@ -81,7 +88,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="run-tests-after-every-build"></a>每次建置後執行測試
 ::: moniker range="vs-2017"
-|按鈕|說明|
+|Button|描述|
 |-|-|
 |![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機建置之後執行單元測試，請在標準功能表中選擇 [測試]****，然後選擇 [測試總管]**** 工具列上的 [建置之後執行測試]****。|
 
@@ -123,7 +130,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="view-the-source-code-of-a-test-method"></a>檢視測試方法的原始程式碼
 
-若要在 Visual Studio 編輯器中顯示測試方法的原始程式碼，請選取測試，然後選擇右鍵功能表上的 [**開啟測試**] (鍵盤： **F12**) 。
+若要在 [Visual Studio 編輯器] 中顯示測試方法的原始程式碼，請選取該測試，然後選擇右鍵功能表上的 [**開啟測試**] （鍵盤： **F12**）。
 
 ## <a name="group-and-filter-the-test-list"></a>群組和篩選測試清單
 
@@ -175,7 +182,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：
 
-|特徵|說明|
+|特徵|描述|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|擁有者分類是由單元測試架構所定義，會要求您提供擁有者的字串值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|優先權分類是由單元測試架構所定義，會要求您提供優先權的整數值。|
@@ -304,23 +311,6 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 例如，`FullName:"MyClass" - FullName:"PerfTest"` 傳回名稱包含 "MyClass" 的所有測試，但排除名稱中也包含 "PerfTest" 的測試。
 
-## <a name="debug-and-analyze-unit-tests"></a>偵錯和分析單元測試
-
-您可以使用 [測試總管] 來啟動測試的偵錯工作階段。 使用 Visual Studio 偵錯工具逐步執行程式碼可讓您順暢地在單元測試和受測專案之間來回進行。 啟動偵錯：
-
-1. 在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。
-
-    > [!NOTE]
-    > 由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。
-
-2. 在 [測試總管] 中，選取測試方法，然後選擇右鍵功能表上的 [偵錯選取的測試]****。
-
-   如需偵錯工具的詳細資訊，請參閱[在 Visual Studio 中偵錯](../debugger/debugger-feature-tour.md)。
-
-### <a name="diagnose-test-method-performance-issues"></a>診斷測試方法效能問題
-
-若要診斷測試方法為何花費太多時間，請在 [測試總管] 中選取該方法，然後在右鍵功能表上選擇 [設定檔已選取測試]****。 請參閱[檢測分析報告](../profiling/understanding-instrumentation-data-values.md?view=vs-2017)。
-
 ### <a name="analyze-unit-test-code-coverage"></a>分析單元測試程式碼涵蓋範圍
 
 您可以使用 Visual Studio Enterprise 版中提供的 Visual Studio 程式碼涵蓋範圍工具，來判斷您的單元測試實際測試的產品程式碼數量。 您可以在方案中的所選測試或所有測試上執行程式碼涵蓋範圍。
@@ -351,7 +341,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ## <a name="test-shortcuts"></a>測試快速鍵
 
-測試可以從 [測試瀏覽器] 執行，方法是在測試的程式碼編輯器中按一下滑鼠右鍵，然後選取 [**執行測試**]，或使用 Visual Studio 中的預設 [[測試瀏覽器] 快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)。 部分快速鍵是以內容為基礎。 這表示它們會根據您的游標在程式碼編輯器中的位置來執行或偵錯測試。 如果游標在測試方法內，則該測試方法便會執行。 如果游標是在類別層級，則該類別中的所有測試便會執行。 對於命名空間層級也是如此。
+測試可以從 [測試瀏覽器] 執行，方法是在測試的程式碼編輯器中按一下滑鼠右鍵，然後選取 [**執行測試**]，或使用 Visual Studio 中的預設 [[測試瀏覽器] 快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)。 部分快速鍵是以內容為基礎。 這表示它們會根據游標位於程式碼編輯器中的位置執行或[調試](../test/debug-unit-tests-with-test-explorer.md)程式。 如果游標在測試方法內，則該測試方法便會執行。 如果游標是在類別層級，則該類別中的所有測試便會執行。 對於命名空間層級也是如此。
 
 |常見命令| 鍵盤快速鍵|
 |-|------------------------|
@@ -366,5 +356,6 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ## <a name="see-also"></a>另請參閱
 
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)
+- [使用測試瀏覽器進行單元測試的調試](../test/debug-unit-tests-with-test-explorer.md)
 - [以 64 位元處理序的形式執行單元測試](../test/run-a-unit-test-as-a-64-bit-process.md)
 - [測試清單編輯器常見問題集](test-explorer-faq.md)

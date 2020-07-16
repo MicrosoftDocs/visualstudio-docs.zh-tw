@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c985d6699c75a78900366204c8bd5275f4c051d
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 15a1d497b5b4217cd7a404cb591c20bb1196b04b
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769934"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387313"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>如何回報 Visual Studio 或 Visual Studio 安裝程式的問題
 
@@ -69,7 +69,7 @@ ms.locfileid: "85769934"
 
 1. 選擇 [錄製]**** 索引標籤。
 
-1. 在 [錄製您的動作]**** 下，若您能在目前的 Visual Studio 執行個體重現問題，請加以選取。 如果您無法，例如，如果 Visual Studio 沒有回應，請選取 **\<Create a new instance>** 以將動作記錄在 Visual Studio 的新實例中。
+1. 在 [錄製您的動作]**** 下，若您能在目前的 Visual Studio 執行個體重現問題，請加以選取。 如果您無法，例如，如果 Visual Studio 停止回應，請選取 **\<Create a new instance>** 以將動作記錄在 Visual Studio 的新實例中。
 
 1. 選取 [開始錄製]****。 授與權限來執行工具。
 

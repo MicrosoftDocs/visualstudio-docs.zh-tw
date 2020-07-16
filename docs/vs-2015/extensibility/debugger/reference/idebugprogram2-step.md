@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Step | Microsoft Docs
+title: IDebugProgram2：： Step |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0473cf7061cb18dad569910af5214742ba774a87
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dd9d314865eb2051b67d7c127a6c5cc2395b1863
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445775"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387222"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-會執行的步驟。  
+執行步驟。  
   
 > [!NOTE]
-> 這個方法已淘汰。 使用[步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法改為。  
+> 此方法已被取代。 請改用[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,24 +47,24 @@ int Step( 
   
 #### <a name="parameters"></a>參數  
  `pThread`  
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示正在逐步執行的執行緒。  
+ 在[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表正在進行分級的執行緒。  
   
  `sk`  
- [in]值，以從[STEPKIND](../../../extensibility/debugger/reference/stepkind.md)列舉，指定步驟的類型。  
+ 在[STEPKIND](../../../extensibility/debugger/reference/stepkind.md)列舉中的值，指定步驟的類型。  
   
  `step`  
- [in]值，以從[STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)列舉，指定步驟的單位 （例如，藉由陳述式或指令）。  
+ 在[STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)列舉中的值，指定步驟的單位（例如，依語句或指令）。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 如果沒有任何執行緒同步處理或執行緒之間的通訊，當特定執行緒逐步執行時，就應該會執行中的其他執行緒。  
+ 如果執行緒之間有任何執行緒同步處理或通訊，則程式中的其他執行緒應該在特定執行緒為逐步執行時執行。  
   
 > [!WARNING]
-> 不會傳送停止事件或即時 （同步） 事件[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫; 否則為偵錯工具可能會停止回應。  
+> 在處理這個呼叫時，請勿傳送停止事件或立即（同步）事件給[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md);否則偵錯工具可能會停止回應。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

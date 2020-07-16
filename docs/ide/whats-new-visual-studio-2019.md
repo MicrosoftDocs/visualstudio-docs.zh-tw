@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b5058e0f1fabbf834a1adfb20d4f3a9a11094f5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 28c8e647943b6e99946c2a9123ee17e2be8cc5c2
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283589"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387040"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -220,7 +220,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 * 如果您想要提出改善 Visual Studio 的建議，可以使用[建議功能](suggest-a-feature.md)工具。
 
-* 如果您遇到停止回應、當機或其他效能問題，則可以使用[回報問題](how-to-report-a-problem-with-visual-studio.md)工具，輕鬆地與我們分享重現步驟和支援檔案。
+* 如果您遇到 Visual Studio 停止回應、當機或其他效能問題的問題，您可以使用 [回報[問題](how-to-report-a-problem-with-visual-studio.md)] 工具，輕鬆地與我們分享重現步驟和支援檔案。
 
 ## <a name="see-also"></a>另請參閱
 

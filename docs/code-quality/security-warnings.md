@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8fbeb9b1631e9cefa132f50a13dc5cf4db58c9d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 9e7a21a010cf98da3d7adb9627105c2847b7571e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283368"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386351"
 ---
 # <a name="security-warnings"></a>安全性警告
 
@@ -28,7 +28,7 @@ ms.locfileid: "85283368"
 
 ## <a name="in-this-section"></a>本節內容
 
-|規則|說明|
+|規則|描述|
 |----------|-----------------|
 |[CA2100:必須檢閱 SQL 查詢中是否有安全性弱點](../code-quality/ca2100.md)|方法會使用透過字串引數所建置的字串，將 System.Data.IDbCommand.CommandText 屬性設定為方法。 這項規則假設字串引數包含使用者輸入。 從使用者輸入所建置的 SQL 命令字串很容易遭到 SQL 插入攻擊。|
 |[CA2102:必須使用一般處理常式攔截非 CLSCompliant 例外狀況](../code-quality/ca2102.md)|組件中不是以 RuntimeCompatibilityAttribute 標記或是以 RuntimeCompatibility(WrapNonExceptionThrows = false) 標記的成員包含處理 System.Exception 的 catch 區塊，同時不包含緊接其後的一般 catch 區塊。|
@@ -89,6 +89,13 @@ ms.locfileid: "85283368"
 |[CA2328:確定 JsonSerializerSettings 安全](../code-quality/ca2328.md)|還原序列化不受信任的資料時，不安全的還原序列化程式會受到攻擊。 攻擊者可以修改序列化資料，使其包含非預期的類型，以插入具有惡意副作用的物件。|
 |[CA2329:請勿使用不安全的組態來還原序列化 JsonSerializer](../code-quality/ca2329.md)|還原序列化不受信任的資料時，不安全的還原序列化程式會受到攻擊。 攻擊者可以修改序列化資料，使其包含非預期的類型，以插入具有惡意副作用的物件。|
 |[CA2330:在還原序列化時，請確認 JsonSerializer 有安全的組態](../code-quality/ca2330.md)|還原序列化不受信任的資料時，不安全的還原序列化程式會受到攻擊。 攻擊者可以修改序列化資料，使其包含非預期的類型，以插入具有惡意副作用的物件。|
+|[CA2350：請確定 DataTable. ReadXml （）的輸入是受信任的](ca2350.md)|當還原序列化為 <xref:System.Data.DataTable> 不受信任的輸入時，攻擊者可以製作惡意的輸入來執行阻絕服務攻擊。 可能有未知的遠端程式碼執行弱點。|
+|[CA2351：確定資料集. ReadXml （）的輸入是受信任的](ca2351.md)|當還原序列化為 <xref:System.Data.DataSet> 不受信任的輸入時，攻擊者可以製作惡意的輸入來執行阻絕服務攻擊。 可能有未知的遠端程式碼執行弱點。|
+|[CA2352： serializable 類型中的 Unsafe 資料集或 DataTable 可能容易遭受遠端程式碼執行攻擊](ca2352.md)|以標記的類別或結構 <xref:System.SerializableAttribute> 包含 <xref:System.Data.DataSet> 或 <xref:System.Data.DataTable> 欄位或屬性，而且沒有 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 。|
+|[CA2353： serializable 類型中的 Unsafe 資料集或 DataTable](ca2353.md)|標記為 XML 序列化屬性或資料合約屬性的類別或結構包含 <xref:System.Data.DataSet> 或 <xref:System.Data.DataTable> 欄位或屬性。|
+|[CA2354：已還原序列化物件圖形中的 Unsafe DataSet 或 DataTable 可能容易遭受遠端程式碼執行攻擊](ca2354.md)|使用序列化進行還原序列化 <xref:System.Runtime.Serialization.IFormatter?displayProperty=nameWithType> ，而轉換類型的物件圖形可以包含 <xref:System.Data.DataSet> 或 <xref:System.Data.DataTable> 。|
+|[CA2355：已還原序列化物件圖形中的 Unsafe 資料集或 DataTable](ca2355.md)|當轉換或指定類型的物件圖形可以包含或時進行還原序列化 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 。|
+|[CA2356： web 已還原序列化物件圖形中的 Unsafe 資料集或 DataTable](ca2356.md)|具有或的方法 <xref:System.Web.Services.WebMethodAttribute?displayProperty=nameWithType> <xref:System.ServiceModel.OperationContractAttribute?displayProperty=nameWithType> 具有可以參考或的參數 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 。|
 |[CA3001：檢閱程式碼是否有 SQL 插入式攻擊弱點](../code-quality/ca3001.md)|使用不受信任的輸入和 SQL 命令時，請留意 SQL 插入式攻擊。 SQL 插入式攻擊可能會執行惡意的 SQL 命令，因而危及應用程式的安全性和完整性。|
 |[CA3002：檢閱程式碼是否有 XSS 弱點](../code-quality/ca3002.md)|使用來自 web 要求的未受信任輸入時，請留意跨網站腳本（XSS）攻擊。 XSS 攻擊會將不受信任的輸入插入原始 HTML 輸出中，讓攻擊者能夠執行惡意腳本或惡意修改網頁中的內容。|
 |[CA3003：檢閱程式碼是否有檔案路徑插入式攻擊弱點](../code-quality/ca3003.md)|當您使用來自 web 要求的未受信任輸入時，請留意在指定檔案路徑時使用使用者控制的輸入。|
@@ -107,7 +114,7 @@ ms.locfileid: "85283368"
 |[CA3147:使用 ValidateAntiForgeryToken 標示動詞處理常式](../code-quality/ca3147.md)|在設計 ASP.NET MVC 控制器時，請注意跨網站偽造要求攻擊。 跨網站要求偽造攻擊可能會將來自已驗證使用者的惡意要求傳送至您的 ASP.NET MVC 控制器。|
 |[CA5122 P-INVOKE P/Invoke 宣告不應該是安全關鍵](../code-quality/ca5122.md)|在執行安全性敏感作業時，會將方法標記為 SecuritySafeCritical，但透明程式碼也能安全地使用。 透明程式碼不可直接透過 P/Invoke 呼叫機器碼。 因此，即使將 P/Invoke 標示為安全性安全關鍵，透明程式碼仍然不能呼叫它，而且會導致安全性分析錯誤。|
 |[CA5359：請勿停用憑證驗證](../code-quality/ca5359.md)|憑證可以協助驗證服務器的身分識別。 用戶端應該驗證伺服器憑證，以確保要求會傳送到預期的伺服器。 如果 Servicepointmanager.servercertificatevalidationcallback 一律 `true` 會傳回，任何憑證都會通過驗證。|
-|[CA5360：不要在還原序列化中呼叫危險的方法](../code-quality/ca5360.md)|不安全的還原序列化是當未受信任的資料被用來濫用應用程式的邏輯、導致阻絕服務（DoS）攻擊，或甚至是在還原序列化時執行任意程式碼時，就會發生的弱點。 當應用程式還原序列化其控制之下的不受信任資料時，惡意使用者經常可以濫用這些還原序列化功能。 具體而言，在還原序列化的過程中叫用危險的方法。 成功的不安全還原序列化攻擊可能會讓攻擊者執行攻擊，例如 DoS 攻擊、驗證略過，以及遠端程式碼執行。|
+|[CA5360：請勿在還原序列化時呼叫危險的方法](../code-quality/ca5360.md)|不安全的還原序列化是當未受信任的資料被用來濫用應用程式的邏輯、導致阻絕服務（DoS）攻擊，或甚至是在還原序列化時執行任意程式碼時，就會發生的弱點。 當應用程式還原序列化其控制之下的不受信任資料時，惡意使用者經常可以濫用這些還原序列化功能。 具體而言，在還原序列化的過程中叫用危險的方法。 成功的不安全還原序列化攻擊可能會讓攻擊者執行攻擊，例如 DoS 攻擊、驗證略過，以及遠端程式碼執行。|
 |[CA5361:請勿為安全通道停用強式密碼編譯](../code-quality/ca5361.md)|設定 `Switch.System.Net.DontEnableSchUseStrongCrypto` 以 `true` 削弱傳出傳輸層安全性（TLS）連線中使用的密碼編譯。 較弱的密碼編譯可能會危害您的應用程式與伺服器之間的通訊機密性，讓攻擊者更容易竊聽敏感性資料。|
 |[CA5362：還原序列化物件圖中的可能參考循環](../code-quality/ca5362.md)|如果還原序列化不受信任的資料，則處理已還原序列化之物件圖形的任何程式碼都必須處理參考迴圈，而不會進入無限迴圈。 這同時包含屬於還原序列化回呼一部分的程式碼，以及在還原序列化完成後處理物件圖形的程式碼。 否則，攻擊者可能會使用包含參考週期的惡意資料來執行拒絕服務攻擊。|
 |[CA5363：請勿停用要求驗證](../code-quality/ca5363.md)|要求驗證是 ASP.NET 中的一項功能，可檢查 HTTP 要求，並判斷它們是否包含可能會導致插入式攻擊的潛在危險內容，包括跨網站腳本。|
@@ -122,9 +129,9 @@ ms.locfileid: "85283368"
 |[CA5372：請為 XPathDocument 使用 XmlReader](../code-quality/ca5372.md)|從不受信任的資料處理 XML 可能會載入危險的外部參考，這可以透過使用具有安全解析程式的 XmlReader 或停用 DTD 處理來加以限制。|
 |[CA5373：不使用已過時的金鑰衍生函式](../code-quality/ca5373.md)|此規則會偵測弱式金鑰衍生方法和的調用 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> `Rfc2898DeriveBytes.CryptDeriveKey` 。 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName>使用弱式演算法 PBKDF1。|
 |[CA5374：請勿使用 XslTransform](../code-quality/ca5374.md)|此規則會檢查 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> 是否在程式碼中具現化。 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType>現在已過時，不應使用。|
-|[CA5375：不要使用帳戶共用存取簽章](../code-quality/ca5375.md)|帳戶 SAS 可以針對不允許服務 SAS 的 blob 容器、資料表、佇列和檔案共用，委派讀取、寫入和刪除作業的存取權。 不過，它不支援容器層級原則，而且對授與的許可權較不具彈性和控制權。 一旦惡意使用者取得，您的儲存體帳戶就會很容易遭到入侵。|
-|[CA5376：使用 SharedAccessProtocol HttpsOnly](../code-quality/ca5376.md)|SAS 是機密資料，無法在 HTTP 上以純文字傳輸。|
-|[CA5377：使用容器層級存取原則](../code-quality/ca5377.md)|容器層級存取原則可以隨時修改或撤銷。 它可提供更大的彈性，並控制授與的許可權。|
+|[CA5375：請勿使用帳戶共用存取簽章](../code-quality/ca5375.md)|帳戶 SAS 可以針對不允許服務 SAS 的 blob 容器、資料表、佇列和檔案共用，委派讀取、寫入和刪除作業的存取權。 不過，它不支援容器層級原則，而且對授與的許可權較不具彈性和控制權。 一旦惡意使用者取得，您的儲存體帳戶就會很容易遭到入侵。|
+|[CA5376：請使用 SharedAccessProtocol HttpsOnly](../code-quality/ca5376.md)|SAS 是機密資料，無法在 HTTP 上以純文字傳輸。|
+|[CA5377：請使用容器層級存取原則](../code-quality/ca5377.md)|容器層級存取原則可以隨時修改或撤銷。 它可提供更大的彈性，並控制授與的許可權。|
 |[CA5378:請勿停用 ServicePointManagerSecurityProtocols](../code-quality/ca5378.md)|設定 `Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols` 以 `true` 限制使用 TLS 1.0 的 Windows Communication FRAMEWORK （WCF）傳輸層安全性（tls）連線。 該 TLS 版本將會被取代。|
 |[CA5379：請勿使用弱式金鑰衍生函數 (Key Derivation Function) 演算法](../code-quality/ca5379.md)|<xref:System.Security.Cryptography.Rfc2898DeriveBytes>類別預設為使用 <xref:System.Security.Cryptography.HashAlgorithmName.SHA1> 演算法。 您應該指定雜湊演算法，以便在具有 <xref:System.Security.Cryptography.HashAlgorithmName.SHA256> 或更高版本的函式的某些多載中使用。 請注意， <xref:System.Security.Cryptography.Rfc2898DeriveBytes.HashAlgorithm> 屬性只有 `get` 存取子，而且沒有修飾詞 `overriden` 。|
 |[CA5380：不新增憑證至根存放區](../code-quality/ca5380.md)|此規則會偵測將憑證新增至「信任的根憑證授權單位」憑證存放區的程式碼。 根據預設，「信任的根憑證授權單位」憑證存放區是以一組已符合「Microsoft 根憑證計畫」需求的公用 Ca 來設定。|
@@ -138,9 +145,9 @@ ms.locfileid: "85283368"
 |[CA5388：使用弱式金鑰衍生函數 (Key Derivation Function) 時，請確保反覆項目數足夠](../code-quality/ca5388.md)|此規則會檢查是否使用產生的密碼編譯金鑰 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 具有小於100000的反復專案計數。 較高的反復專案計數有助於減輕嘗試猜測產生的密碼編譯金鑰的字典攻擊。|
 |[CA5389：不將封存項目路徑新增至目標檔案系統路徑](../code-quality/ca5389.md)|檔案路徑可以是相對的，而且可能會導致檔案系統存取預期的檔案系統目標路徑，使惡意的設定變更和遠端程式碼執行都透過「程式設計」和「等候」技術。|
 |[CA5390：請勿使用硬式編碼加密金鑰](../code-quality/ca5390.md)|若要讓對稱演算法成功，只有傳送者和接收者才必須知道秘密金鑰。 當金鑰是硬式編碼時，很容易就會發現。 即使使用已編譯的二進位檔，惡意使用者也很容易將它解壓縮。 一旦私密金鑰遭到入侵，就可以直接解密加密文字，而不會再受到保護。|
-|[CA5391：在 ASP.NET Core MVC 控制器中使用 antiforgery 權杖](../code-quality/ca5391.md)|處理 `POST` 、 `PUT` 、 `PATCH` 或要求， `DELETE` 而不需驗證 antiforgery token，可能會容易遭受跨網站偽造要求攻擊。 跨網站要求偽造攻擊可能會將來自已驗證使用者的惡意要求傳送至您的 ASP.NET Core MVC 控制器。|
-|[CA5392：使用 P/Invoke 的 DefaultDllImportSearchPaths 屬性](../code-quality/ca5392.md)|根據預設，使用探查的 P/Invoke 函式會 <xref:System.Runtime.InteropServices.DllImportAttribute> 有一些目錄，包括要載入之程式庫的目前工作目錄。 這可能是某些應用程式的安全性問題，因而導致 DLL 劫持。|
-|[CA5393：不要使用 unsafe DllImportSearchPath 值](../code-quality/ca5393.md)|預設的 DLL 搜尋目錄和元件目錄中可能有惡意的 DLL。 或者，視執行應用程式的位置而定，應用程式的目錄中可能會有惡意的 DLL。|
+|[CA5391：請在 ASP.NET Core MVC 控制器中使用防偽權杖](../code-quality/ca5391.md)|處理 `POST` 、 `PUT` 、 `PATCH` 或要求， `DELETE` 而不需驗證 antiforgery token，可能會容易遭受跨網站偽造要求攻擊。 跨網站要求偽造攻擊可能會將來自已驗證使用者的惡意要求傳送至您的 ASP.NET Core MVC 控制器。|
+|[CA5392：請對 P/Invokes 使用 DefaultDllImportSearchPaths 屬性](../code-quality/ca5392.md)|根據預設，使用探查的 P/Invoke 函式會 <xref:System.Runtime.InteropServices.DllImportAttribute> 有一些目錄，包括要載入之程式庫的目前工作目錄。 這可能是某些應用程式的安全性問題，因而導致 DLL 劫持。|
+|[CA5393：請勿使用不安全的 DllImportSearchPath 值](../code-quality/ca5393.md)|預設的 DLL 搜尋目錄和元件目錄中可能有惡意的 DLL。 或者，視執行應用程式的位置而定，應用程式的目錄中可能會有惡意的 DLL。|
 |[CA5394：請勿使用不安全的隨機性](../code-quality/ca5394.md)|使用密碼編譯弱式虛擬亂數產生器可能會讓攻擊者預測產生的安全性敏感值。|
 |[CA5395：遺漏動作方法的 HttpVerb 屬性](../code-quality/ca5395.md)|建立、編輯、刪除或以其他方式修改資料的所有動作方法，都必須以 antiforgery 屬性來保護，而不受跨網站要求偽造攻擊。 執行「取得」作業應該是沒有副作用的安全作業，而且不會修改保存的資料。|
 |[CA5396：將 HttpCookie 的 HttpOnly 設為 true](../code-quality/ca5396.md)|做為深層防禦措施，請確定安全性敏感的 HTTP cookie 已標示為 HttpOnly。 這表示 web 瀏覽器應該不允許腳本存取 cookie。 插入的惡意腳本是竊取 cookie 的常見方式。|

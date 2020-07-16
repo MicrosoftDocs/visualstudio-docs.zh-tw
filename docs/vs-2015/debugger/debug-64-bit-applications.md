@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56e5b76b000fd269d76d535e635ba86e72912bad
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c0eaa719bb3eeca2eb3dfe558184699ccca42819
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916009"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387196"
 ---
 # <a name="debug-64-bit-applications"></a>偵錯 64 位元應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,11 +55,11 @@ ms.locfileid: "75916009"
   
 - 電腦上所安裝的網路安全性軟體造成網路堆疊不可靠，因此已丟棄通過 localhost 的封包。 請嘗試停用所有網路安全性軟體，看看這樣做是否可以解決問題。 如果是，請將軟體干擾 localhost 流量的情形回報給您的網路安全性軟體廠商。  
   
-- 您在使用 Visual Studio 時遇到停止回應或效能問題。 如果此問題經常發生，您可以收集 Visual Studio 的傾印 (devenv.exe) 和背景工作處理序 (msvsmon.exe)，然後傳送給 Microsoft。 
+- 您遇到 Visual Studio 停止回應或其他效能問題的問題。 如果此問題經常發生，您可以收集 Visual Studio 的傾印 (devenv.exe) 和背景工作處理序 (msvsmon.exe)，然後傳送給 Microsoft。 
   
-## <a name="see-also"></a>請參閱  
- [64 位元應用程式](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [為 64 位元設定程式](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
- [Visual Studio IDE 64 位元支援](../ide/visual-studio-ide-64-bit-support.md)   
+## <a name="see-also"></a>另請參閱  
+ [64位應用程式](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [正在設定64位的程式](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [Visual Studio IDE 64 位支援](../ide/visual-studio-ide-64-bit-support.md)   
  [使用傾印檔案](../debugger/using-dump-files.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [遠端偵錯](../debugger/remote-debugging.md)

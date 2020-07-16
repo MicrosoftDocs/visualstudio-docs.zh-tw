@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905782"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387274"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>如何：讓擴充功能與 Visual Studio 2019/2017 和 Visual Studio 2015 相容
 
@@ -213,5 +213,4 @@ Visual Studio 2019 或2017 | VSSDK. BuildTool
 ![尋找 VSIX](media/finding-a-VSIX-example.png)
 
 > [!NOTE]
-> 如果您的專案在**開啟**檔案的訊息停止回應，請強制關閉 Visual Studio、流覽至您的專案目錄、顯示隱藏的資料夾，然後刪除*vs*資料夾。
- 
+> 如果您的專案停止回應**開啟**檔案的訊息，請強制關閉 Visual Studio、流覽至您的專案目錄、顯示隱藏的資料夾，然後刪除*vs*資料夾。

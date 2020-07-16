@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540864"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386981"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>定義 Python 專案的自訂命令
 
@@ -145,11 +145,11 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 | --- | --- | --- |
 | TargetType | 是 | 指定目標屬性的內容，以及其搭配 Arguments 屬性使用的方式：<ul><li>****：執行在 Target 中命名的可執行檔，附加 Arguments 中的值，使其看似直接在命令列上輸入。 此值只能包含程式名稱，而不能包含引數。</li><li>**script**：以 Target 中的檔案名稱執行 *python.exe*，後面接著 Arguments 中的值。</li><li>**module**：執行 `python -m`，後面依序接著 Target 中的模組名稱及 Arguments 中的值。</li><li>**code**：執行 Target 中包含的內嵌程式碼。 這會忽略 Arguments 值。</li><li>**pip**：以 Target 中的命令執行 `pip`，後面接著 Arguments，is ExecuteIn 設定為 "output"，但 PIP 會假設 `install` 命令並將 Target 用作套件名稱。</li></ul> |
 | 目標 | 是 | 要使用的檔案名稱、模組名稱、程式碼或 PIP 命令，端視 TargetType 而定。 |
-| 引數 | 選擇性 | 指定要指派至目標的引數字串 (如果有的話)。 請注意，當 TargetType 為 `script` 時，引數會指派至 Python 程序，而非 *python.exe*。 若為 `code` TargetType 請予以略過。 |
+| 引數 | 選用 | 指定要指派至目標的引數字串 (如果有的話)。 請注意，當 TargetType 為 `script` 時，引數會指派至 Python 程序，而非 *python.exe*。 若為 `code` TargetType 請予以略過。 |
 | ExecuteIn | 是 | 指定要在其中執行命令的環境：<ul><li>**console**：(預設) 將 Target 與 Arguments 視作直接在命令列上輸入加以執行。 命令視窗會在 Target 執行時顯示，然後自動關閉。</li><li>**consolepause**：與 console 相同，但會在關閉視窗前等待按鍵動作。</li><li>**output**：執行 Target，並在 Visual Studio 的 [輸出]**** 視窗中顯示其結果。 若 TargetType 為 "pip"，Visual Studio 會將 Target 用作套件名稱並在後面加上 Arguments。</li><li>**repl**：在 [Python 互動式](python-interactive-repl-in-visual-studio.md)視窗中執行 Target；選擇性顯示名稱會用於視窗標題。</li><li>**none**：行為與 console 相同。</li></ul>|
-| WorkingDirectory | 選擇性 | 要在其中執行命令的資料夾。 |
-| ErrorRegex<br>WarningRegEx | 選擇性 | 僅在 ExecuteIn 為 `output` 時使用。 這兩個值均會指定規則運算式，Visual Studio 將用以剖析命令輸出，並在其 [錯誤清單]**** 視窗中顯示錯誤與警告。 若未指定，則命令並不會影響 [錯誤清單]**** 視窗。 如需有關 Visual Studio 要求的詳細資訊，請參閱[具名擷取群組](#named-capture-groups-for-regular-expressions)。 |
-| RequiredPackages | 選擇性 | 命令的套件需求清單，格式與 [*requirements.txt*](https://pip.pypa.io/en/stable/user_guide/#requirements-files) (pip.readthedocs.io) 相同。 例如 [執行 PyLint]**** 命令會指定 `pylint>=1.0.0`。 執行命令前，Visual Studio 會檢查清單中的所有套件皆已安裝。 Visual Studio 會使用 PIP 來安裝所有缺少的套件。 |
+| WorkingDirectory | 選用 | 要在其中執行命令的資料夾。 |
+| ErrorRegex<br>WarningRegEx | 選用 | 僅在 ExecuteIn 為 `output` 時使用。 這兩個值均會指定規則運算式，Visual Studio 將用以剖析命令輸出，並在其 [錯誤清單]**** 視窗中顯示錯誤與警告。 若未指定，則命令並不會影響 [錯誤清單]**** 視窗。 如需有關 Visual Studio 要求的詳細資訊，請參閱[具名擷取群組](#named-capture-groups-for-regular-expressions)。 |
+| RequiredPackages | 選用 | 命令的套件需求清單，格式與 [*requirements.txt*](https://pip.pypa.io/en/stable/user_guide/#requirements-files) (pip.readthedocs.io) 相同。 例如 [執行 PyLint]**** 命令會指定 `pylint>=1.0.0`。 執行命令前，Visual Studio 會檢查清單中的所有套件皆已安裝。 Visual Studio 會使用 PIP 來安裝所有缺少的套件。 |
 | 環境 | 選用 | 可在執行命令前定義的環境變數字串。 每個變數會使用表單 \<NAME> = \<VALUE> ，並以分號分隔多個變數。 具有多個值的變數須以單引號或雙引號括住，例如 'NAME=VALUE1;VALUE2'。 |
 
 #### <a name="named-capture-groups-for-regular-expressions"></a>規則運算式的擷取群組
@@ -384,7 +384,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 
 若您參考未定義的屬性，則屬性值可能為空白。 例如，若您使用語彙基元 `$(StartupFile)`，但專案中並未定義任何啟動檔案，則語彙基元會解析至空白的字串。 在此情況下，建議您定義預設值。 例如，若您未另外在專案屬性中指定伺服器啟動檔案，則在 Bottle、Flask 及 Django 專案範本中定義的 [執行伺服器]**** 與 [執行偵錯伺服器]**** 命令將預設為 *manage.py*。
 
-### <a name="visual-studio-hangs-and-crashes-when-running-the-command"></a>Visual Studio 在執行命令時停止回應或損毀
+### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>執行命令時，Visual Studio 停止回應並當機
 
 您可能嘗試以 `ExecuteIn="output"` 執行主控台命令，Visual Studio 在嘗試剖析輸出時可能會損毀。 請改用 `ExecuteIn="console"`。 (請參閱[問題 3682](https://github.com/Microsoft/PTVS/issues/3681)。)
 

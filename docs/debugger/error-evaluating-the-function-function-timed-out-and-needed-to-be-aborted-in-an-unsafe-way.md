@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f687672de4bc3511fa0c9198f7ad4145b26dcd11
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 76a655e2994e1eaa1c5ac65e7b8782ec5b9d6f72
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460794"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386715"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>錯誤：評估函式 &#39;函式&#39; 超時，而且需要以不安全的方式中止
 
 完整郵件內文：評估函式 ' function ' 超時，而且需要以不安全的方式中止。 這可能會損毀目標進程。
 
-為了讓您更輕鬆地檢查 .NET 物件的狀態，偵錯工具會自動強制已調試的進程執行額外的程式碼（通常是屬性 getter 方法和 ToString 函數）。 在大部分的情況下，這些函式會快速完成，讓您更輕鬆地進行調試。 不過，偵錯工具不會在沙箱中執行應用程式。 如此一來，呼叫原生函式停止回應的屬性 getter 或 ToString 方法可能會導致長時間的超時，而無法復原。 如果您遇到這個錯誤訊息，就會發生這種情況。
+為了讓您更輕鬆地檢查 .NET 物件的狀態，偵錯工具會自動強制已調試的進程執行額外的程式碼（通常是屬性 getter 方法和 ToString 函數）。 在大部分的情況下，這些函式會快速完成，讓您更輕鬆地進行調試。 不過，偵錯工具不會在沙箱中執行應用程式。 如此一來，呼叫原生函式（停止回應）的屬性 getter 或 ToString 方法可能會導致長時間的超時，而無法復原。 如果您遇到這個錯誤訊息，就會發生這種情況。
 
 這個問題的其中一個常見原因是，當偵錯工具評估屬性時，它只允許已檢查的執行緒執行。 因此，如果屬性正在等候其他執行緒在已調試的應用程式內執行，而且它正在等待 .NET 執行時間無法中斷的情況，就會發生這個問題。
 

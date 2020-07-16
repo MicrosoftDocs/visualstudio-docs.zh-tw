@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2fdbd2e7f47e75b4d80d07f6af3a6f998dfd72d6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 094305e901624e13df147030899981f8fedb80d1
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541150"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387027"
 ---
 # <a name="debug-your-python-code"></a>偵錯您的 Python 程式碼
 
@@ -161,7 +161,7 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 [互動式偵錯]**** 視窗支援[標準 REPL 命令](python-interactive-repl-in-visual-studio.md#meta-commands)以外的特殊中繼命令：
 
-| Command | 引數 | 描述 |
+| 命令 | 引數 | 描述 |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | 從目前的陳述式開始執行程式。 |
 | `$down`, `$d` | 在堆疊追蹤中將目前的框架下移一層。 |
@@ -253,7 +253,7 @@ Visual Studio 2017 15.8 版及更新版本使用以 ptvsd 4.1+ 版為基礎的�
 
     ![[輸出] 視窗中的偵錯工具記錄輸出](media/debugger-logging-output.png)
 
-1. 如果 Visual Studio 停止回應，或是您無法存取 [輸出]**** 視窗，請重新啟動 Visual Studio、開啟命令視窗，並輸入下列命令：
+1. 如果 Visual Studio 停止回應，或您無法存取 [**輸出**] 視窗，請重新開機 Visual Studio，開啟命令視窗，然後輸入下列命令：
 
     ```ps
     DebugAdapterHost.Logging /On

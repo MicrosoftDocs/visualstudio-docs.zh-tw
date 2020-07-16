@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca7feade173db9ccf8c86daaeb1399ef3e10a08b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 6cc84f690962cd83f45245758f88f7fd8261e500
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350767"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386247"
 ---
 # <a name="debug-64-bit-applications"></a>偵錯 64 位元應用程式
 您可以對本機電腦或遠端電腦上執行的 64 位元應用程式進行偵錯。
@@ -50,7 +50,7 @@ ms.locfileid: "85350767"
 
 - 電腦上所安裝的網路安全性軟體造成網路堆疊不可靠，因此已丟棄通過 localhost 的封包。 請嘗試停用所有網路安全性軟體，看看這樣做是否可以解決問題。 如果是，請將軟體干擾 localhost 流量的情形回報給您的網路安全性軟體廠商。
 
-- 您在使用 Visual Studio 時遇到停止回應或效能問題。 如果此問題經常發生，您可以收集 Visual Studio 的傾印 (devenv.exe) 和背景工作處理序 (msvsmon.exe)，然後傳送給 Microsoft。 如需回報問題的資訊，請參閱 [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)。
+- 您遇到 Visual Studio 變得沒有回應或其他效能問題的問題。 如果此問題經常發生，您可以收集 Visual Studio 的傾印 (devenv.exe) 和背景工作處理序 (msvsmon.exe)，然後傳送給 Microsoft。 如需回報問題的資訊，請參閱 [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)。
 
 ## <a name="see-also"></a>另請參閱
 

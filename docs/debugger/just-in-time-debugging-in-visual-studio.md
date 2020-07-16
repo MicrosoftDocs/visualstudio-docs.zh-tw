@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 3155c2cdc9ea3dc5208a52e5fe37f697a4ad5ef6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903861"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386117"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>停用 Just-In-Time 偵錯工具
 
@@ -32,14 +32,14 @@ ms.locfileid: "74903861"
 
 - 如果您正嘗試執行 web 應用程式，請停用腳本的偵錯工具：
 
-  在 Windows **控制台** 中 > **網路和網際網路** > **網際網路選項**，選取**停用腳本調試（Internet Explorer）**  和**停用腳本調試（其他）** 。 確切的步驟和設定取決於您的 Windows 版本與瀏覽器。
+  在 [Windows**控制台**] 的 [  >  **網路和網際網路**  >  **網際網路選項**] 中，選取 [**停用腳本調試（Internet Explorer）** ] 和 **[停用腳本調試（其他）**]。 確切的步驟和設定取決於您的 Windows 版本與瀏覽器。
 
   ![JIT 網際網路選項](../debugger/media/jitinternetoptions.png "JIT 網際網路選項")
 
 - 如果您是在 IIS 中裝載 ASP.NET web 應用程式，請停用伺服器端的偵錯工具：
 
   1. 在 [IIS 管理員**功能] 視圖**的 [ **ASP.NET** ] 區段下，按兩下 [ **.net 編譯**]，或選取它，然後選取 [**動作**] 窗格中的 [**開啟功能**]。
-  1. 在 [**行為** > **Debug**] 底下，選取 [ **False**]。 較舊版本的 IIS 中的步驟不同。
+  1. 在 [**行為**  >  **Debug**] 底下，選取 [ **False**]。 較舊版本的 IIS 中的步驟不同。
 
 停用即時偵測之後，應用程式可能可以處理錯誤並正常執行。
 

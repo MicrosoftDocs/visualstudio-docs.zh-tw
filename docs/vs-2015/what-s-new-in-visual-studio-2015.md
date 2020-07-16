@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 758e2bbf69c7b48a1027819377839cbdce9204fe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 5bdfae6235e7efb833eca0b87631af9204b4a678
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919260"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387105"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 的新功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ ms.locfileid: "75919260"
 ## <a name="a-new-setup-experience"></a>新的安裝經驗
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]
 
- Visual Studio 2015 安裝經驗已經元件化，因此，您只需要安裝所需的組件。 對於包含 .NET 或 Web 開發的許多常見案例而言，這可加速安裝。 如果您執行其他類型的開發 (例如跨平台行動開發)，或使用 C++ 或 F# 工作，請選擇 [自訂] 安裝，然後選擇您需要的元件和選擇性協力廠商 SDK。 您之後也可以安裝任何自訂元件。 例如，如果您選擇 [基本] 安裝，然後嘗試建立新的 C++ 專案時，則系統會提示您下載 C++ 開發工具。
+ Visual Studio 2015 安裝經驗已經元件化，因此，您只需要安裝所需的組件。 對於包含 .NET 或 Web 開發的許多常見案例而言，這可加速安裝。 如果您執行其他類型的開發 (例如跨平台行動開發)，或使用 C++ 或 F# 工作，請選擇 [自訂] **** 安裝，然後選擇您需要的元件和選擇性協力廠商 SDK。 您之後也可以安裝任何自訂元件。 例如，如果您選擇 [基本] 安裝，然後嘗試建立新的 C++ 專案時，則系統會提示您下載 C++ 開發工具。
 
- ![Visual Studio 2015 安裝程式對話方塊](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
+ ![Visual Studio 2015 的 [安裝] 對話方塊](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>跨多個帳戶登入
  Visual Studio 2015 的新登入功能設計，可以大大地簡化您存取線上資源的流程，即使使用多個 Visual Studio 帳戶，也一樣地有效率。 當您登入 Visual Studio 之後，您會自動登入您電腦上所有的 Visual Studio 2015 執行個體及 Blend 執行個體。 登入會自動為您開始漫遊您的設定。 在 Visual Studio 2015 中，所有功能會共用您的帳戶，因此，只要您持有有效的權杖，便能從 **Team Explorer**存取您的 Visual Studio Team Services 帳戶，以及使用您的 Microsoft Azure 訂用帳戶，從 [伺服器總管] 存取資源及網站。 您也可以在 Application Insights 專案的 [新增專案] 對話方塊中，檢視您的 Azure 資源；還可在新增加的 [**加入已連接服務**]  對話方塊中，檢視 Azure Mobile、Azure 儲存體、 [Microsoft Office 365](https://msdn.microsoft.com/office/aa905340.aspx) 和 [Saleforce.com 開發人員](https://developer.salesforce.com/) 帳戶。
@@ -61,7 +61,7 @@ ms.locfileid: "75919260"
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>跨平台應用程式及原生 C++ 的程式庫
  C++ 是跨大部分行動裝置的原生可用語言。 您可以使用它來撰寫可針對多個行動平台目標建置的跨平台共用程式碼程式庫。 您甚至可以使用 C++ 建立整個行動應用程式。 Visual C++ 可提供工具來編輯、建置和部署跨平台程式碼，並對其進行偵錯。 除了 Windows 應用程式的範本之外，您還可以使用適用於 Android Native Activity 應用程式、iOS 應用程式或多種平台的共用程式碼程式庫專案 (包括 Xamarin 混合式應用程式)。 需要區分平台的 IntelliSense 可讓您探索各種 API，進而產生適用於目標平台為 Android、iOS 或 Windows 的正確程式碼。 您可以設定您的 x86 或 ARM 原生平台組建，並將您的程式碼部署到 iOS 模擬器、連接網路之 Mac 上的 iOS 裝置、直接附加的 Android 裝置，或是使用高效能 Microsoft Visual Studio Emulator for Android 進行測試。 您可以在 Visual Studio 偵錯工具中設定中斷點、監看變數、檢視堆疊，以及逐步執行 C++ 程式碼。 除了需要區分平台的程式碼之外，您還可以跨多個應用程式平台共用所有的程式碼，而且只需要在 Visual Studio 中建立一個方案，就能建置所有的應用程式。
 
- 若要開始使用跨平臺C++，請參閱以[視覺效果C++建立跨平臺行動應用程式](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
+ 若要開始使用跨平臺 c + +，請參閱[使用 Visual C++ 建立跨平臺行動應用程式](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 
 ### <a name="universal-windows-apps-for-any-windows-10-device"></a>適用於任何 Windows 10 裝置的通用 Windows 應用程式
  透過通用 Windows 平台和單一 Windows 核心，您可以在從手機到桌上型電腦的任何 Windows 10 裝置上執行相同的應用程式。 您可以使用 Visual Studio 2015 和通用 Windows 應用程式開發工具，來建立這些通用 Windows 應用程式。
@@ -73,7 +73,7 @@ ms.locfileid: "75919260"
  使用 C#、Visual Basic、C++ 或 JavaScript 建立這些 [通用 Windows 應用程式](https://msdn.microsoft.com/library/dn975273.aspx)。
 
 ### <a name="web"></a>Web
- ASP.NET 5 是 MVC、WebAPI 及 SignalR 的重大更新，可以在 Windows、Mac 及 Linux 上執行。  ASP.NET 5 是全新的設計，提供您可組合的簡式 .NET 堆疊，讓您建置現代化的雲端應用程式。 Visual Studio 2015 工具與常用 Web 開發工具 (例如 Bower 和 Grunt) 更緊密整合。 若要開始使用，請參閱  [.NET Web 開發及工具部落格](https://devblogs.microsoft.com/aspnet/)上的多篇部落格文章。
+ ASP.NET 5 是 MVC、WebAPI 和 SignalR 的重大更新，可以在 Windows、Mac 和 Linux 上執行。  ASP.NET 5 是全新的設計，提供您可組合的簡式 .NET 堆疊，讓您建置現代化的雲端應用程式。 Visual Studio 2015 工具與常用 Web 開發工具 (例如 Bower 和 Grunt) 更緊密整合。 若要開始使用，請參閱  [.NET Web 開發及工具部落格](https://devblogs.microsoft.com/aspnet/)上的多篇部落格文章。
 
 ### <a name="classic-desktop-and-windows-store"></a>傳統桌面和 Windows 市集
  Visual Studio 2015 仍會繼續支援傳統桌上型電腦及 Windows 市集的開發工作。 隨著 Windows 進化，Visual Studio 也跟著進化。  在 Visual Studio 2015 中，.NET 及 C++ 的程式庫及語言均有大幅改進，而且所有 Windows 版本皆適用這些改良功能。
@@ -92,7 +92,7 @@ ms.locfileid: "75919260"
 #### <a name="c"></a>C++
  Visual C++ 在 C++11/14 的語言相容性上有顯著的改善；支援跨平台行動裝置的開發；支援可繼續函式及 Await (目前規劃在 C++17 時進行標準化)；改良 C 執行階段程式庫 (CRT) 及 C++ 標準程式庫 (STL) 實作並修復其 Bug；MFC 中的可調整大小對話方塊；新增編譯器最佳化；提升建置效能；在程式碼編譯器中新增診斷功能及生產力工具。
 
- 如需詳細資訊，請參閱[visual C++的新功能](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)和[視覺C++效果的 Blog](https://devblogs.microsoft.com/cppblog/)。
+ 如需詳細資訊，請參閱[Visual C++ 的新功能](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)和[Visual C++ 的 Blog](https://devblogs.microsoft.com/cppblog/)。
 
 ## <a name="device-preview-menu-bar"></a>裝置預覽功能表列
  在通用 Windows 平台專案中，裝置預覽功能表列可讓您查看如何以各種螢幕大小呈現以 XAML 為基礎的 UI。
@@ -111,11 +111,11 @@ ms.locfileid: "75919260"
 
 3. Office 365 (郵件、連絡人、行事曆、檔案、使用者及群組)
 
-4. 銷售力
+4. Salesforce
 
    我們將持續加入新服務，您也可以按一下精靈中的 [尋找新服務連結] 探索這些服務。
 
-   ![新增已連線的服務對話方塊](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")
+   ![[加入已連接服務] 對話方塊](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")
 
 ## <a name="design-your-ui"></a>設計您的 UI
  設計 XAML 使用者介面的 Blend 體驗已大幅改進。 Blend 已完全重新設計，提供更直覺的 UI、含 IntelliSense 等更強大的 XAML 編輯功能，以及與 Visual Studio 更佳的整合。 如需詳細資訊，請參閱[在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](./designers/designing-xaml-in-visual-studio.md)。
@@ -139,7 +139,7 @@ ms.locfileid: "75919260"
 
 下列新的或改進的工具可對程式碼執行不同類型的診斷和分析：
 
-### <a name="perftips"></a>「效能提示」
+### <a name="perftips"></a>效能提示
  效能提示顯示偵錯期間方法的執行時間，可讓您快速發現瓶頸，而不需要叫用分析工具。 若要開始，請參閱 [效能提示：使用 Visual Studio 偵錯，效能資訊快速檢視](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)。
 
 ### <a name="error-list"></a>錯誤清單
@@ -151,30 +151,30 @@ ms.locfileid: "75919260"
 ## <a name="live-code-analysis-light-bulbs"></a>即時程式碼分析 (燈泡)
  C# 和 Visual Basic 的新 Roslyn 編譯器不只能加快編譯時間，也可支援全新的案例，例如程式碼即時分析，其可直接在程式碼編輯器中，隨著您的輸入提供豐富並可自訂的意見及建議。 在 Visual Studio 2015 中，燈泡顯示在左邊界 (使用鍵盤時) 或工具提示中 (滑鼠停留在錯誤上方時)。 燈泡可在編譯器 (可能使用自訂規則集) 偵測到程式碼中的問題時，即時發出通知，也可提供如何修正問題的建議。 當您看到燈泡時，請按一下以取得可採取動作的建議。
 
- ![Visual Studio Code 編輯器中的 Light 燈泡](./ide/media/vs2015-lightbulbs.png "VS2015_LightBulbs")
+ ![Visual Studio Code 編譯器中的燈泡](./ide/media/vs2015-lightbulbs.png "VS2015_LightBulbs")
 
 ## <a name="enjoy-these-additional-ide-improvements"></a>享受下列其他 IDE 改進
 
 ### <a name="synchronized-settings-roaming-settings"></a>同步設定 (漫遊設定)
- Visual Studio 2013 針對一些最常見的組態設定 (例如文字編輯器、按鍵繫結關係、主題和字型和色彩、啟動，以及環境別名)，引進同步設定。  Visual Studio 2015 透過同步處理更多您的設定，以及同步處理不同 Visual Studio 系列應用程式 (例如 Professional、Enterprise、Express SKU 和 Blend) 的設定，改進這項體驗。 當您使用與 Visual Studio 2013 所用相同的帳戶第一次登入 Visual Studio 2015 時，您會看到從 Visual Studio 2013 套用的同步設定。 您可以在 [快速啟動] 中鍵入 "sync"，或巡覽至 [工具] > [選項] > [環境] > [同步設定] 來存取您的設定。
+ Visual Studio 2013 針對一些最常見的組態設定 (例如文字編輯器、按鍵繫結關係、主題和字型和色彩、啟動，以及環境別名)，引進同步設定。  Visual Studio 2015 透過同步處理更多您的設定，以及同步處理不同 Visual Studio 系列應用程式 (例如 Professional、Enterprise、Express SKU 和 Blend) 的設定，改進這項體驗。 當您使用與 Visual Studio 2013 所用相同的帳戶第一次登入 Visual Studio 2015 時，您會看到從 Visual Studio 2013 套用的同步設定。 您可以在 [快速啟動]**** 中鍵入 "sync"，或巡覽至 [工具] > [選項] > [環境] > [同步設定]**** 來存取您的設定。
 
 ### <a name="automatic-extension-updates"></a>自動更新擴充功能
  現在，如果您已安裝的 Visual Studio 擴充功能在 Visual Studio 組件庫上有新版本時，即可自動更新。 如需如何自訂擴充功能自動更新的詳細資訊，請參閱 [尋找及使用 Visual Studio 擴充功能](./ide/finding-and-using-visual-studio-extensions.md) 。
 
 ### <a name="title-case-menus"></a>字首大寫的功能表
- 我們重視您的意見反應。 Visual Studio 功能表再一次預設為字首大寫。 若您偏好全部大寫的樣式，可以在啟動時或使用 [工具] > [選項] > [一般] 屬性頁面中加以設定：
+ 我們重視您的意見反應。 Visual Studio 功能表再一次預設為字首大寫。 若您偏好全部大寫的樣式，可以在啟動時或使用 [工具] > [選項] > [一般]**** 屬性頁面中加以設定：
 
- ![Visual Studio 2015 標題案例主功能表命令](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
+ ![Visual Studio 2015 標題大寫主功能表命令](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
 
 ### <a name="high-resolution-images-and-touch-support"></a>高解析度影像和觸控支援
  Visual Studio IDE 現在可在像素更密集的顯示畫面上 (在功能表、操作功能表、工具視窗命令列等區域中，以及方案總管的一些專案中)，提供真正高解析度的影像。 在 Visual Studio 程式碼編輯器視窗的觸控螢幕方面，您現在可以使用觸碰並按住、捏合、點選等手勢來縮放、捲動、選取文字及叫用操作功能表。
 
- ![編輯器中的觸控支援](./ide/media/vs2015-touchsupport.png "VS2015_TouchSupport")
+ ![編輯器的觸控支援](./ide/media/vs2015-touchsupport.png "VS2015_TouchSupport")
 
 ### <a name="custom-layouts"></a>自訂配置
  您可以建立存放區並漫遊自訂視窗配置。 例如，您可以為桌上型電腦定義一種偏好配置，再為筆記型電腦或小型螢幕裝置定義另外一種偏好配置。 或者，您也可以針對 UI 專案偏好使用某個配置，並針對資料庫專案偏好使用另一個配置。 按鍵組合可讓您快速切換配置。 當您登入時，可在任何 Visual Studio 執行個體上使用這些配置。 如需詳細資訊，請參閱 [建立自訂視窗配置](./misc/create-custom-window-layouts.md)。
 
- ![Visual Studio 自訂的版面配置功能表項目](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
+ ![Visual Studio 的 [自訂配置] 功能表項目](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
 
 ### <a name="notification-hub"></a>通知中樞
  通知中區的使用者介面已經過簡化，方便您快速掃描。 已加入其他種類的通知，包括效能問題、轉譯問題和當機，而且您現在可以告訴 Visual Studio 停止顯示通知。 如需詳細資訊，請參閱 [Visual Studio 通知](./ide/visual-studio-notifications.md)。
@@ -190,7 +190,7 @@ ms.locfileid: "75919260"
 
 - 查看顯示變更您程式碼之人員的圖表。 這可協助您找出小組變更的模式，並評估其影響。
 
-   ![CodeLens：請參閱程式碼變更歷程記錄作為圖形](./ide/media/codelens.png "CodeLens")
+   ![CodeLens：以圖形方式檢視程式碼變更記錄](./ide/media/codelens.png "CodeLens")
 
 - 輕鬆地查看上次變更程式碼的時間。
 
@@ -205,7 +205,7 @@ ms.locfileid: "75919260"
 
  在此版本中，我們將命令分組成與選取、編輯和管理群組相關的區段，並變更群組內容的配置，以更容易使用程式碼項目和連結的捷徑功能表。 另請注意，測試專案的顯示樣式會與其他專案不同，並且我們已將對應上的項目圖示更新為更適當的版本。
 
- ![在新的 Code Map 上顯示選取的專案](./ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
+ ![在新的 Code Map 上顯示選取的項目](./ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
 
  其他改進還包括：
 
@@ -237,12 +237,12 @@ ms.locfileid: "75919260"
 
 - **UML 圖表**。 您已無法再從程式碼建立 UML 類別圖和循序圖。 但您還是可以使用新的 UML 元素來建立這些圖表。
 
-- **架構總管**。 您已無法再使用架構總管來建立圖表。 但您還是可以使用方案總管。
+- **架構瀏覽器**。 您已無法再使用架構總管來建立圖表。 但您還是可以使用方案總管。
 
 ## <a name="visual-studio-extensibility-tools"></a>Visual Studio 擴充性工具
  現在，您可以更輕鬆地安裝 Visual Studio 擴充性工具 (VS SDK 和範本)，因為這些工具已在安裝期間隨附為選用的元件。  擴充性工具可讓開發人員撰寫擴充功能，以自訂功能並將其加入 Visual Studio。 如需 Visual Studio 擴充性的詳細資訊，請參閱 [Visual Studio SDK](./extensibility/visual-studio-sdk.md)。
 
- 如果您想要在自訂安裝中包含擴充性工具，可在 [功能 / 通用工具 / Visual Studio 擴充性工具]下方找到。  您也可以開啟 [新增專案] 對話方塊，並選取 [Visual C# / 擴充性] 項目底下方的 [安裝 Visual Studio 擴充性工具]，以在稍後安裝擴充性工具。
+ 如果您想要在自訂安裝中包含擴充性工具，可在 [功能 / 通用工具 / Visual Studio 擴充性工具] **** 下方找到。  您也可以開啟 [新增專案] **** 對話方塊，並選取 [Visual C# / 擴充性] **** 項目底下方的 [安裝 Visual Studio 擴充性工具] ****，以在稍後安裝擴充性工具。
 
 ## <a name="please-give-feedback"></a>請提供您的寶貴意見
  為什麼要傳送意見反應給 Visual Studio 小組？ 我們極為重視客戶的意見反應。 我們其實會檢視得自意見反應系統的每一項意見反應。 您的意見反應是我們進步的動力。
@@ -250,27 +250,27 @@ ms.locfileid: "75919260"
 ### <a name="send-a-smile"></a>傳送笑臉
  當我們符合或超出您的要求時，請告訴我們您所喜歡的功能，讓我們更加了解您的需要。 當我們在設計及實作新功能時，我們會參考資料，了解您所喜歡的功能來協助我們制定設計的決策。 因此，您如有喜歡 Visual Studio 的任何功能，請與我們分享。 方法很簡單，直接在 IDE 中就能完成這項動作。
 
- 只要按一下標題列上的黃色笑臉，讓我們知道您所喜歡的功能，然後按一下 [傳送笑臉] 按鈕就可以了。
+ 只要按一下標題列上的黃色笑臉，讓我們知道您所喜歡的功能，然後按一下 [傳送笑臉] **** 按鈕就可以了。
 
- 您現在已完成整個作業！ 我們會將您的意見反應分送給相關團隊鼓舞他們的士氣，讓他們有更多的能量構思更能符合您需要的功能。
+ 這樣就大功告成了！ 我們會將您的意見反應分送給相關團隊鼓舞他們的士氣，讓他們有更多的能量構思更能符合您需要的功能。
 
 ### <a name="send-a-frown"></a>傳送苦臉
- 了解產品需要改進的項目，有助於我們管理我們的待處理項目，並將注意力優先集中在對客戶而言最重要的項目上。 您如有不喜歡的功能，可以直接在 IDE 中使用 [傳送苦臉] 功能告訴我們。 方法也同樣十分簡單：
+ 了解產品需要改進的項目，有助於我們管理我們的待處理項目，並將注意力優先集中在對客戶而言最重要的項目上。 您如有不喜歡的功能，可以直接在 IDE 中使用 [傳送苦臉] **** 功能告訴我們。 方法也同樣十分簡單：
 
- 只要按一下標題列上的黃色笑臉，然後再按一下 [傳送苦臉]就可以了。 請告訴我們您不喜歡的原因，然後按一下 [傳送苦臉] 按鈕。 如需詳細資訊，請參閱 [Talk to Us](./ide/talk-to-us.md)。
+ 只要按一下標題列上的黃色笑臉，然後再按一下 [傳送苦臉] **** 就可以了。 請告訴我們您不喜歡的原因，然後按一下 [傳送苦臉] 按鈕。 如需詳細資訊，請參閱 [Talk to Us](./ide/talk-to-us.md)。
 
-### <a name="report-crashes-hangs-and-performance-issues"></a>回報當機、無回應及效能問題
- 有些時候，傳送苦臉中的簡短文字並無法盡述您為什麼不喜歡某項功能。 當您有無回應、當機或效能問題時，您可以使用傳送苦臉後所顯示的對話方塊，列下重現步驟、當機傾印或追蹤檔案。
+### <a name="report-crashes-unresponsive-and-performance-issues"></a>報告當機、沒有回應和效能問題
+ 有些時候，傳送苦臉中的簡短文字並無法盡述您為什麼不喜歡某項功能。 對於 Visual Studio 停止回應、當機或發生另一個效能問題的時間，您可以使用傳送苦臉後顯示的對話方塊，輕鬆地共用重現步驟、損毀傾印和追蹤檔案。
 
- 首先，請依照前述步驟傳送苦臉。 接著在隨後顯示的對話方塊上，您可以使用任何預設標籤，或是建立您自己的標籤來標記您的意見反應。 使用標籤可以協助我們將您的意見反應分立到正確的功能團隊。 從 [選擇類別] 下拉式清單中，選取可代表您回報之問題的選項，然後遵循所示步驟重現問題。 此外也會提供如何使用 Visual Studio 提供意見反應的詳細步驟。 如需詳細資訊，請參閱[Visual Studio 傳送笑臉指示](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。
+ 首先，請依照前述步驟傳送苦臉。 接著在隨後顯示的對話方塊上，您可以使用任何預設標籤，或是建立您自己的標籤來標記您的意見反應。 使用標籤可以協助我們將您的意見反應分立到正確的功能團隊。 從 [選擇類別] **** 下拉式清單中，選取可代表您回報之問題的選項，然後遵循所示步驟重現問題。 此外也會提供如何使用 Visual Studio 提供意見反應的詳細步驟。 如需詳細資訊，請參閱[Visual Studio 傳送笑臉指示](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [使用 Apache Cordova 建置跨平台應用程式](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [使用 Visual C++ 建置跨平台行動裝置應用程式](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [使用 IntelliTest 為程式碼產生單元測試](./test/generate-unit-tests-for-your-code-with-intellitest.md)
-* [使用多個使用者帳戶](./ide/work-with-multiple-user-accounts.md)
+* [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)
 * [建立自訂視窗配置](./misc/create-custom-window-layouts.md)
 * [執行燈泡提示的快速動作](./ide/perform-quick-actions-with-light-bulbs.md)
-* [Visual Studio 2017 的新功能](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+* [2017 Visual Studio 的新功能](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Continue | Microsoft Docs
+title: IDebugProcess3：： Continue |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8e7167a5425566936c196960d5014fcf5d7c8709
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 92a36bb7e89d8afaa6d76f7d7b3772bd1714ffa7
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405850"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386234"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-會繼續執行此程序，從停止的狀態。 會保留任何先前的執行狀態 （例如在步驟），並在處理序啟動重新執行。  
+從停止狀態繼續執行此進程。 任何先前的執行狀態（例如步驟）都會保留下來，而且進程會再次開始執行。  
   
 > [!NOTE]
-> 應該使用這個方法，而不是[繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。  
+> 應該使用這個方法，而不是[Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,17 +43,17 @@ int Continue(
   
 #### <a name="parameters"></a>參數  
  `pThread`  
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表要繼續執行的執行緒。  
+ 在代表要繼續之執行緒的[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`，否則會傳回錯誤碼。  
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 在此程序，不論多少處理序正在進行偵錯，或哪個處理序產生 「 停止 」 事件上呼叫這個方法。 實作必須保留先前的執行狀態 （例如在步驟），並繼續執行，就好像它永遠不會具有停止之前完成其前一次執行。 也就是如果中的執行緒這項程序所執行工作不進入函式的作業和已停止，因為其他處理序已停止，然後`Continue`呼叫，則會指定執行緒必須完成原先不進入函式的作業。  
+ 這個方法會在這個進程上呼叫，不論正在調試多少進程，或是哪個進程產生了停止事件。 執行必須保留先前的執行狀態（例如步驟），並繼續執行，就好像在完成先前的執行之前從未停止過。 也就是說，如果此處理程式中的執行緒正在執行「逐步執行」作業，而且因為某個其他進程停止而停止，然後 `Continue` 呼叫，則指定的執行緒必須完成原始的「逐步執行」作業。  
   
- **警告**不會傳送停止事件或即時 （同步） 事件，以[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫; 否則為偵錯工具可能會停止回應。  
+ **警告**在處理這個呼叫時，請勿傳送停止事件或立即（同步）事件給[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md);否則偵錯工具可能會停止回應。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

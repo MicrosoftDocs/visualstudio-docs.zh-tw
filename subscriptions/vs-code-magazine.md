@@ -7,12 +7,12 @@ ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/25/2020
 ms.topic: how-to
 description: 瞭解 Visual Studio 訂用帳戶中所包含的程式碼雜誌權益。
-ms.openlocfilehash: 30b97c42c3ead60859aed593a3ffbad6ed721227
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906071"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387170"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中包含的程式碼雜誌
 
@@ -28,7 +28,7 @@ CODE 雜誌是領先的獨立軟體發展人員雜誌，涵蓋所有平臺上的
 3. 您會看到一則訊息，指出您的程式碼已被抓取。  按一下 [啟用]**** 繼續。  （如果您還沒準備好啟用，沒關係。  您可以隨時返回磚來啟動。  在您取得程式碼之後，[取得程式碼] 連結會讀取 [啟動]。）
    > [!div class="mx-imgBorder"]
    > ![已抓取程式碼雜誌代碼](_img/vs-code-magazine/vs-code-magazine-success.png "已成功取出程式碼")
-4. 系統會將您重新導向至程式碼雜誌登陸頁面。 選取您的國家/地區，並選擇您想要接收雜誌的方式。 
+4. 系統會將您重新導向至程式碼雜誌登陸頁面。 選取您的國家/地區，然後選擇您想要接收雜誌的方式。 
    > [!NOTE]
    > Visual Studio Dev Essentials 成員只能存取數位訂用帳戶。 
 5. 根據您的選擇，您會看到一個便箋，其中會顯示您的訂用帳戶價格，以及已套用的優惠券金額。
@@ -79,10 +79,10 @@ CODE 雜誌是領先的獨立軟體發展人員雜誌，涵蓋所有平臺上的
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 查看您的訂用帳戶中所含的其他絕佳權益。 請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 。
 
 如果您尚未啟用訂用帳戶隨附的 Azure DevTest 個人信用額度權益，請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並按一下 [工具] 類別中的 [azure] 磚，以設定您的 azure 訂用帳戶，並兌換您的 Azure DevTest 個別信用額度。

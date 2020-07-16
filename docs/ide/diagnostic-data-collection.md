@@ -7,12 +7,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72652466"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387248"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio 所收集的系統產生記錄檔
 
@@ -20,11 +20,11 @@ Visual Studio 會透過 [Visual Studio 客戶經驗改進計畫](visual-studio-e
 
 ## <a name="types-of-collected-data"></a>收集的資料類型
 
-Visual Studio 會收集系統針對損毀、無回應、UI 無回應，和高 CPU 或記憶體使用量而產生的記錄檔。 我們也會收集在產品安裝或使用期間遇到之錯誤的相關資訊。 收集的資料會根據錯誤而異，而且可能包括堆疊追蹤、記憶體傾印，以及例外狀況資訊：
+Visual Studio 會收集系統產生的記錄檔，以取得損毀、UI 無回應，以及高 CPU 或記憶體使用量。 我們也會收集在產品安裝或使用期間遇到之錯誤的相關資訊。 收集的資料會根據錯誤而異，而且可能包括堆疊追蹤、記憶體傾印，以及例外狀況資訊：
 
 - 針對高 CPU 使用量和無回應，會收集相關 Visual Studio 執行緒的堆疊追蹤。
 
-- 針對部分執行緒的堆疊追蹤不足以判斷問題根本原因的情況，例如當機、無回應或高記憶體使用量，我們會收集記憶體「傾印」**。 傾印代表在發生錯誤時的處理序狀態。
+- 在某些執行緒的堆疊追蹤不足以判斷問題根本原因的情況下，例如當機、無回應或高記憶體使用量時，我們會收集記憶體*轉儲*。 傾印代表在發生錯誤時的處理序狀態。
 
 - 針對非預期的錯誤情況，例如，嘗試寫入至磁碟上的檔案時發生例外狀況，我們會收集例外狀況的相關資訊。 資訊包括例外狀況的名稱、發生例外狀況之執行緒的堆疊追蹤、與例外狀況建立關聯的訊息，以及與特定例外狀況相關的其他資訊。
 
@@ -52,7 +52,7 @@ Visual Studio 會收集系統針對損毀、無回應、UI 無回應，和高 CP
 
 ### <a name="error-classification"></a>錯誤分類
 
-根據記錄檔，錯誤會分類並計算，以排列調查的優先順序。 例如，我們可能會發現在產品版本 \<x> 的 "System.IO.FileStream.Init" 已發生 500 次 "System.IO.\__Error.WinIOError"，而且在該版本中有最高的發生率。
+根據記錄檔，錯誤會分類並計算，以排列調查的優先順序。 例如，我們可能會發現「System.IO。 \_WinIOError "at" System.IO.FileStream.Init "在產品版本中發生500次 \<x> ，而且在該版本中有最高的發生率。 _Error
 
 ### <a name="work-items-for-tracking"></a>追蹤用的工作項目
 

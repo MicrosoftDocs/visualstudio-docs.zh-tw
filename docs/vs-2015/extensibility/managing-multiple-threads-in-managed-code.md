@@ -1,5 +1,5 @@
 ---
-title: 管理多個執行緒在 Managed 程式碼 |Microsoft Docs
+title: 在 Managed 程式碼中管理多個執行緒 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,26 +8,26 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4e7198623283fa3ef9c82d6a39a1f7c1db6c760c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 296ef23bc512a86917920b3c3d5fbb5ec203a21e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433039"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387014"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>在受控碼中管理多個執行緒
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如果您有受管理的 VSPackage 擴充功能呼叫非同步方法或在 Visual Studio UI 執行緒以外之執行緒執行的作業，您應該遵循以下的指導方針。 您可以讓 UI 執行緒有回應，因為它不需要等候工作完成的另一個執行緒上。 您可以讓您的程式碼更有效率，因為您不需要額外的執行緒所佔用的堆疊空間，並可以先讓更可靠且更輕鬆地偵錯，因為您避免死結和懸置。  
+如果您的 managed VSPackage 延伸模組會呼叫非同步方法，或具有在 Visual Studio UI 執行緒以外的執行緒上執行的作業，您應該遵循下面所提供的指導方針。 您可以讓 UI 執行緒保持回應，因為它不需要等候另一個執行緒上的工作完成。 您可以讓程式碼更有效率，因為您沒有佔用堆疊空間的額外線程，而且您可以讓它更可靠且更容易進行調試，因為您可以避免鎖死和無回應。  
   
- 一般情況下，您可以從 UI 執行緒切換至不同的執行緒，或反之亦然。 方法傳回時，目前的執行緒就會是從其中所初次呼叫的執行緒。  
+ 一般來說，您可以從 UI 執行緒切換到不同的執行緒，反之亦然。 當此方法傳回時，目前的執行緒就是原本呼叫它的執行緒。  
   
 > [!IMPORTANT]
-> 下列指導方針使用中的 Api<xref:Microsoft.VisualStudio.Threading>命名空間，特別是，<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>類別。 此命名空間中的 Api 是中的新[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]。 您可以取得的執行個體<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>從<xref:Microsoft.VisualStudio.Shell.ThreadHelper>屬性`ThreadHelper.JoinableTaskFactory`。  
+> 下列指導方針會使用命名空間中的 Api <xref:Microsoft.VisualStudio.Threading> ，特別是 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> 類別。 這個命名空間中的 Api 是的新功能 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 。 您可以從屬性取得的實例 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> <xref:Microsoft.VisualStudio.Shell.ThreadHelper> `ThreadHelper.JoinableTaskFactory` 。  
   
-## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>從 UI 執行緒切換到背景執行緒  
+## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>從 UI 執行緒切換至背景執行緒  
   
-1. 如果您是在 UI 執行緒上，而且您想要在背景執行緒上的非同步工作，請使用 Task.Run():  
+1. 如果您是在 UI 執行緒上，而您想要在背景執行緒上執行非同步工作，請使用 [執行] （）：  
   
     ```csharp  
     await Task.Run(async delegate{  
@@ -37,7 +37,7 @@ ms.locfileid: "63433039"
   
     ```  
   
-2. 如果您是在 UI 執行緒上，而且您想要以同步方式封鎖，您會在背景執行緒，使用在執行工作時<xref:System.Threading.Tasks.TaskScheduler>屬性`TaskScheduler.Default`內<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
+2. 如果您在 UI 執行緒上，而且想要在背景執行緒上執行工作時同步封鎖，請在 <xref:System.Threading.Tasks.TaskScheduler> 內部使用屬性 `TaskScheduler.Default` <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A> ：  
   
     ```csharp  
     // using Microsoft.VisualStudio.Threading;  
@@ -51,16 +51,16 @@ ms.locfileid: "63433039"
   
 ## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>從背景執行緒切換至 UI 執行緒  
   
-1. 如果您是在背景執行緒上，而且您想要使用的 UI 執行緒上進行一些動作<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
+1. 如果您是在背景執行緒上，而您想要在 UI 執行緒上執行某些動作，請使用 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> ：  
   
     ```csharp  
     // Switch to main thread  
     await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();  
     ```  
   
-     您可以使用<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>，切換至 UI 執行緒的方法。 這個方法會將訊息張貼至 UI 執行緒與目前的非同步方法中，接續，而且也與執行緒的架構，來設定正確的優先順序，並避免死結的其餘部分通訊。  
+     您可以使用 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> 方法來切換至 UI 執行緒。 這個方法會使用目前非同步方法的接續，將訊息張貼至 UI 執行緒，也會與執行緒架構的其餘部分通訊，以設定正確的優先順序並避免鎖死。  
   
-     如果您的背景執行緒方法不是非同步，而且無法進行非同步，您仍然可以使用`await`語法，來包裝您的工作切換至 UI 執行緒<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>，如這個範例所示：  
+     如果您的背景執行緒方法不是非同步，而且您無法將它設為非同步，您仍然可以使用此語法，藉 `await` 由包裝您的工作來切換至 UI 執行緒 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A> ，如下列範例所示：  
   
     ```csharp  
     ThreadHelper.JoinableTaskFactory.Run(async delegate {  

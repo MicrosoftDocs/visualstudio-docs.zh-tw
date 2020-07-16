@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0173c076a04c4c725565e63c41396b7c4d235952
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 7858846585467de3b5b820902938d6019b0d09ff
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85815054"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386260"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
 
@@ -50,9 +50,9 @@ ms.locfileid: "85815054"
  devenv /setup
 ```
 
-## <a name="visual-studio-hangs"></a>Visual Studio 停止回應
+## <a name="visual-studio-stops-responding"></a>Visual Studio 停止回應
 
-剖析、FMOD、UMP (通用媒體播放程式)、ZFBrowser 或 Embedded Browser 這類 Unity 外掛程式會使用原生執行緒。 但當外掛程式最後將原生執行緒附加到執行階段時則會發生問題，因為這會導致作業系統的呼叫受到封鎖。 這表示 Unity 無法為偵錯工具中斷該執行緒 (或網域重新載入)，因此會停止回應。
+剖析、FMOD、UMP (通用媒體播放程式)、ZFBrowser 或 Embedded Browser 這類 Unity 外掛程式會使用原生執行緒。 但當外掛程式最後將原生執行緒附加到執行階段時則會發生問題，因為這會導致作業系統的呼叫受到封鎖。 這表示 Unity 無法中斷偵錯工具（或網域重載）的執行緒，也無法停止回應。
 
 針對 FMOD，有下列因應措施：您可以傳遞 `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` 初始化[旗標](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags)以停用非同步處理，並在主執行緒上執行所有處理。
 

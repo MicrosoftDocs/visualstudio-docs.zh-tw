@@ -7,12 +7,12 @@ ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 04/17/2020
 ms.topic: how-to
 description: 了解包含為所選取 Visual Studio 訂用帳戶中所含 LinkedIn Premium 訂用帳戶一部分的 LinkedIn Learning 權益。
-ms.openlocfilehash: f3ce676232742f712a926dbeb70e8fd2505ff18a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 580b565ad2eeecc0c5923963243ee63c1069b86f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904415"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387131"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 LinkedIn Learning 權益
 
@@ -36,7 +36,7 @@ ms.locfileid: "85904415"
 
 5. 輸入您的個人資訊，選擇使用者名稱和密碼，然後按一下 [立即加入]****。
 
-6. 指定您的國家/地區和郵遞區號，然後按一下 [Next] (下一步)****。
+6. 指定您的國家/地區和郵遞區號，然後按 **[下一步]**。
 
 7. 接下來，您將提供關於自己的一些資訊作為個人資料。  指出您是否為學生，並提供最近的工作職稱、公司和產業。
 
@@ -91,7 +91,7 @@ ms.locfileid: "85904415"
 答：否，LinkedIn Learning 供應項目僅提供給新訂閱者使用。
 
 ## <a name="support-resources"></a>支援資源
-- 需要有關 LinkedIn Learning 的說明？  請參閱這些資源：
+- 需要有關 LinkedIn Learning 的說明？  請參閱下列資源：
   - 有關[使用 LinkedIn Learning](https://www.linkedin.com/help/learning) 的說明。
   - 有關 [LinkedIn](https://www.linkedin.com/help/linkedin) 一般問題 (例如建立帳戶與設定檔，以及管理您的網路) 的說明。
 - 如需 Visual Studio 訂閱的銷售、訂閱、帳戶和計費的協助，請聯絡 Visual Studio[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
@@ -100,10 +100,10 @@ ms.locfileid: "85904415"
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 查看您的訂用帳戶中所含的其他絕佳權益。 請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 。
 
 如果您尚未啟用訂用帳戶隨附的 Azure DevTest 個人信用額度權益，請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並按一下 [工具] 類別中的 [azure] 磚，以設定您的 azure 訂用帳戶，並兌換您的 Azure DevTest 個別信用額度。

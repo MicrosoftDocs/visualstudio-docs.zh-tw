@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::執行 |微軟文件
+title: IDebugProcess3：： Execute |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 444eadcce38adbd8ecd8655e8e0dc3f36f446848
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: baa607e62732cdf0e04413e07966658bb6a0b8f4
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80723677"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386507"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
-繼續從已停止狀態運行此過程。 清除任何以前的執行狀態(如步驟),進程將再次開始執行。
+從停止狀態繼續執行此進程。 任何先前的執行狀態（例如步驟）都會清除，而且進程會再次開始執行。
 
 > [!NOTE]
-> 此方法應改為[執行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)。
+> 應該使用這個方法，而不是[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)。
 
 ## <a name="syntax"></a>語法
 
@@ -44,16 +44,16 @@ int Execute(
 
 ## <a name="parameters"></a>參數
 `pThread`\
-[在]表示要執行的線程的[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件。
+在代表要執行之執行緒的[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
 
 ## <a name="remarks"></a>備註
- 當使用者從其他進程線程中的停止狀態開始執行時,此過程將調用此方法。 當使用者從 IDE 中的 **「調試」** 選單中選擇 **「開始」** 命令時,也會調用此方法。 此方法的實現可能非常簡單,例如在進程中的當前線程上調用[Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)方法。
+ 當使用者在某個其他進程的執行緒中從停止狀態開始執行時，會在這個進程上呼叫這個方法。 當使用者從 IDE 中的 [**調試**] 功能表選取 [**啟動**] 命令時，也會呼叫這個方法。 這個方法的執行方式就像是在進程中的目前線程上呼叫[Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)方法一樣簡單。
 
 > [!WARNING]
-> 在處理此調用時,不要向[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)發送停止事件或立即(同步)事件;否則調試器可能會掛起。
+> 在處理這個呼叫時，請勿傳送停止事件或立即（同步）事件給[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md);否則偵錯工具可能會停止回應。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

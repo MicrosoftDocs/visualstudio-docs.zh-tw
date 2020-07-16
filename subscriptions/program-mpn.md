@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 有關提供哪些訂用帳戶、套用哪些規則，以及 MPN 中提供多少訂用帳戶的詳細資料。
-ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: da7f4cccab1354d0ab563868f3a874539f63c7c6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183050"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387144"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳戶
 
@@ -44,7 +44,7 @@ ms.locfileid: "84183050"
 
 | 只有銀級專長認證之合作夥伴的最大權益                   | 擁有至少一項金級專長認證之合作夥伴的最大權益               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| 每個國家/地區 25 個 Visual Studio Enterprise 訂用帳戶，全球 75 個          | 每個國家/地區 50 個 Visual Studio Enterprise 訂用帳戶，全球 150 個         |
+| 每個國家/地區 25 Visual Studio Enterprise 訂用帳戶;75全球          | 50 Visual Studio Enterprise 每個國家/地區的訂閱;150全球         |
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>購買行動套件的合作夥伴訂用帳戶
 
@@ -80,7 +80,7 @@ MPN 規則規定，所有視為方案權益提供的軟體僅能供內部使用�
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟

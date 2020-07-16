@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 09340940796e20f679c3c9bbad3d55880b25ab7a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ce11689cc8cba45473a918668a07ddcc6cdc2ee3
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283472"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387157"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
@@ -89,11 +89,11 @@ ms.locfileid: "85283472"
 
 為確保您可以在使用防火牆或 proxy 伺服器後方的 Visual Studio 或 Azure 服務時存取您想要的所有專案，以下是您應該新增至允許清單的 Url，以及您可能想要開啟的埠和通訊協定。
 
-| 服務或案例 | DNS 端點 | 通訊協定<br/>/Port | 說明 |
+| 服務或案例 | DNS 端點 | 通訊協定<br/>/Port | 描述 |
 | - | - | -: | - | - |
 | URL<br>resolution | go.microsoft.com<br><br>aka.ms | | 用來縮短 URL，其將會進一步解析為較長的 URL |
 | 起始頁 | vsstartpage.blob.core.windows.net | 443 | 用來顯示起始頁上的「開發人員新聞」(僅限 Visual Studio 2017) |
-| 目標<br> 通知 <br>Service | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | 用來將通知全域清單篩選為僅適用於特定電腦/使用方式情節類型的清單 |
+| 目標<br> 通知 <br>服務 | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | 用來將通知全域清單篩選為僅適用於特定電腦/使用方式情節類型的清單 |
 | 分機 <br>更新檢查 | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | 443 | 用來於已安裝的擴充功能有可用更新時提供通知 <br><br> 以登入位置的形式使用 |
 | AI 專案 <br>整合 | az861674.vo.msecnd.net | 443<br> | 用來設定新專案以將使用方式資料傳送至您已註冊的 Application Insights 帳戶 |
 | Code Lens | codelensprodscus1su0.app<br>codelens.visualstudio.com | 443 | 用來在編輯器中提供有關檔案上次更新的時間、變更的時間軸、與變更相關聯的工作項目、建立者等相關資訊 |
@@ -109,10 +109,10 @@ ms.locfileid: "85283472"
 | Web Linter | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | HTTP/80 | |
 | Cookiecutter<br>總管範本<br>探索 <br><br>Cookiecutter <br>總管專案<br> 建立 | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | HTTPs/443<br> | 用來從我們建議的摘要和 GitHub 存放庫探索線上範本 <br><br>用來從需要單次隨選安裝來自 Python 套件索引 (PyPI) 之 Cookiecutter Python 套件的 Cookiecutter 範本建立專案 |
 | Python 套件 <br>探索<br><br>Python 套件 <br>管理<br><br>新增 <br>Python <br> project <br>範本 | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | HTTPs/443 | 提供搜尋 pip 套件的能力<br><br>用來在遺失 pip 的情況下自動安裝它 <br><br>用來將下列新的 Python 專案範本解析成 Cookiecutter 範本 URL：<br> - 分類器專案<br>- 叢集專案 <br> - 迴歸專案 <br> - 使用 PyKinect 的 PyGame <br> - Pyvot 專案 |
-| Office Web <br>Add-In - 增益集 <br> 資訊清單 <br>驗證 <br>Service | verificationservice.osi.office.net | HTTPs/443 | 用來驗證針對 Office Web 增益集的資訊清單 |
+| Office Web <br>Add-In - 增益集 <br> 資訊清單 <br>驗證 <br>服務 | verificationservice.osi.office.net | HTTPs/443 | 用來驗證針對 Office Web 增益集的資訊清單 |
 | SharePoint 和 <br>Office 增益集 | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | HTTPs/443 | 用來將 SharePoint 和 Office 增益集發行並測試到 SharePoint Online 和 Office 365 |
-| 工作流程管理員 <br>測試服務<br> Host | | HTTP/12292 | 自動針對搭配工作流程測試 SharePoint 增益集所建立的防火牆規則 |
-| 自動收集的 <br>可靠性統計資料 <br>及其他 <br>客戶經驗 <br>改進計畫 (CEIP)<br> (針對 Azure SDK 及 <br>SQL 工具) <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | HTTPs/443 | 用來將可靠性統計資料 (當機/停止回應資料) 從使用者傳送至 Microsoft。 若已啟用 [Windows 錯誤報告]，系統仍然會上傳實際的當機/停止回應傾印，此設定只會抑制統計資訊 <br>用來向 Visual Studio 顯示針對 Azure 工具 SDK 擴充功能的匿名使用模式，以及 SQL 工具的使用模式 |
+| 工作流程管理員 <br>測試服務<br> 主機 | | HTTP/12292 | 自動針對搭配工作流程測試 SharePoint 增益集所建立的防火牆規則 |
+| 自動收集的 <br>可靠性統計資料 <br>及其他 <br>客戶經驗 <br>改進計畫 (CEIP)<br> (針對 Azure SDK 及 <br>SQL 工具) <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | HTTPs/443 | 用來將可靠性統計資料（損毀/沒有回應的資料）從使用者傳送給 Microsoft。 如果已啟用 Windows 錯誤報告，仍然會上傳實際的損毀/沒有回應的傾印;只會隱藏統計資訊; <br>用來向 Visual Studio 顯示針對 Azure 工具 SDK 擴充功能的匿名使用模式，以及 SQL 工具的使用模式 |
 | Visual Studio <br> 客戶經驗 <br>改進計畫 (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | HTTPs/443 | 用來收集匿名使用模式及錯誤記錄檔 <br><br>用來追蹤 UI 凍結問題 |
 | 建立及<br>管理 <br>Azure 資源 | management.azure.com <br>management.core.windows.net | HTTPs/443 | 用來建立 Azure 網站或其他資源，以支援 Web 應用程式、Azure Functions 或 WebJobs 的發行 |
 | 已更新的 Web 發行工具 <br>檢查及副檔名 <br>Mahout | marketplace.visualstudio.com | HTTPs/443 | 用來檢查已更新發行工具的可用性。 若停用，可能不會顯示 Web 發行的潛在建議擴充功能 |

@@ -9,17 +9,17 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecef4536ec11d2319007602b195c96a9df7d3719
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: a9af78dc373734905c703a3b9ee5c9462af3e116
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298069"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386676"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>如何：從 Visual Studio 試用版升級
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以評估 Visual Studio 發行前版本 14 天，而不需註冊產品。 自您以 Microsoft 帳戶登入註冊之後，直到到期日之前，發行前版本授權仍為有效。
+您可以評估 Visual Studio 發行前版本 14 天，而不需註冊產品。 當您使用 Microsoft 帳戶登入註冊之後，發行前授權會在到期日之前有效。
 
  您可以評估 Visual Studio Professional 和企業版的發行版本 30 天，從您安裝該產品之時間開始計算。 [登入 Visual Studio](../ide/signing-in-to-visual-studio.md) 會增加 60 天的評估期間，一共為 90 天。 如果您未在 30 天之內註冊試用版的 Visual Studio，則試用會在安裝後 30 天到期。
 
@@ -32,13 +32,13 @@ ms.locfileid: "74298069"
 
 ### <a name="to-upgrade-from-a-trial-edition-of-visual-studio-professional-or-enterprise"></a>從 Visual Studio Professional 或企業版的試用版升級
 
-1. 在 [以系統管理員身分執行]  模式下啟動 Visual Studio。
+1. 在 [以系統管理員身分執行]**** 模式下啟動 Visual Studio。
 
-2. 在功能表列上，選擇 [說明]  、[註冊產品]  。
+2. 在功能表列上，選擇 [說明] ****、[註冊產品] ****。
 
-3. 選擇 [變更我的產品授權]  連結。
+3. 選擇 [變更我的產品授權]**** 連結。
 
-4. 輸入有效的產品金鑰，然後選擇 [套用]  按鈕。
+4. 輸入有效的產品金鑰，然後選擇 [套用]**** 按鈕。
 
     > [!NOTE]
     > 需要網際網路存取才能註冊及解除鎖定任何版本的 Visual Studio。 不過，註冊 Visual Studio 後，網際網路連線便是選擇性的。
