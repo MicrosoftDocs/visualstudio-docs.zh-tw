@@ -8,14 +8,15 @@ metadata:
   author: ghogen
   ms.author: ghogen
   ms.topic: landing-page
+  ms.technology: vs-data-tools
   ms.workload:
   - data-storage
-  ms.openlocfilehash: c9b80dcd2d1d8bb81c0dd8e06aa0f4749ff93eb5
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: f1b1f4e5ed0b62e42e478be1fc306506c91643eb
+  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "78263075"
+  ms.lasthandoff: 07/15/2020
+  ms.locfileid: "86405405"
 landingContent:
 - title: .NET
   linkLists:

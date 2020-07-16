@@ -5,16 +5,17 @@ metadata:
   title: Visual Studio 偵錯
   description: 了解如何使用 Visual Studio 針對應用程式與程式碼進行偵錯。
   ms.topic: landing-page
+  ms.technology: vs-ide-debug
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: 7bb755fc13215b7087a0023a8e2a19442415092b
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: f1d2a1577f01dcca9763a775a28f27691928bb43
+  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "77579271"
+  ms.lasthandoff: 07/15/2020
+  ms.locfileid: "86405418"
 landingContent:
 - title: 關於偵錯
   linkLists:
@@ -30,7 +31,7 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: 適用於徹底初學者偵錯
+    - text: 適合完全初學者的偵錯
       url: debugging-absolute-beginners.md
     - text: 了解如何對 C# 偵錯
       url: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json

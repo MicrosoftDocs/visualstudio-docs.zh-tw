@@ -5,16 +5,17 @@ metadata:
   title: Visual Studio 中的 JavaScript 和 TypeScript
   description: 了解如何使用 Visual Studio 來建立 JavaScript 和 TypeScript 應用程式。
   ms.topic: landing-page
+  ms.technology: vs-javascript
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 9f81043622a48bbda93e52216a3ce2a6cd9a01b2
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 01b4232b4933197f06bb77793fb638281e5b5748
+  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "75678944"
+  ms.lasthandoff: 07/15/2020
+  ms.locfileid: "86405368"
 landingContent:
 - title: 開始使用
   linkLists:
