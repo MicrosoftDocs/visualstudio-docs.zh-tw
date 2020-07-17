@@ -1,6 +1,6 @@
 - name: JavaScript 和 TypeScript
   href: index.yml
-- name: 總覽
+- name: 概觀
   items:
     - name: Visual Studio 2019 中的 JavaScript 2019
       href: javascript-in-vs-2019.md

@@ -1,6 +1,6 @@
 - name: Visual Studio 中的 Python
   href: index.yml
-- name: 概觀
+- name: 總覽
   items:
     - name: Python 支援的概觀
       href: overview-of-python-tools-for-visual-studio.md
@@ -85,9 +85,9 @@
           href: python-django-web-application-project-template.md
         - name: Azure 雲端服務範本
           href: python-azure-cloud-service-project-template.md
-    - name: 適用於 Python 的 Azure SDK
+    - name: Azure SDK for Python
       href: /python/azure/?view=azure-python
-- name: 操作指南
+- name: 作法指南
   items:
     - name: 管理 Python 環境
       items:
@@ -137,15 +137,15 @@
           href: debugging-mixed-mode-c-cpp-python-in-visual-studio.md
         - name: 適用於混合模式偵錯的符號
           href: debugging-symbols-for-mixed-mode-c-cpp-python.md
-    - name: 分析
+    - name: 程式碼剖析
       href: profiling-python-code-in-visual-studio.md
     - name: 單元測試
       href: unit-testing-python-in-visual-studio.md
     - name: 使用 Cookiecutter 延伸模組
       href: using-python-cookiecutter-templates.md
-- name: 參考
+- name: 參考資料
   items:
     - name: 項目範本
       href: python-item-templates.md
-    - name: 選項。
+    - name: 選項
       href: python-support-options-and-settings-in-visual-studio.md

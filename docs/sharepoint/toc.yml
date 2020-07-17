@@ -32,13 +32,13 @@
               href: creating-sharepoint-workflow-solutions.md
             - name: 工作流程中的表單支援
               href: form-support-in-workflows.md
-            - name: 逐步解說：建立並偵錯 SharePoint 工作流程方案
+            - name: 逐步解說：建立 SharePoint 工作流程解決方案及進行偵錯
               href: walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md
-            - name: 逐步解說：使用關聯與初始化表單建立工作流程
+            - name: 逐步解說：使用關聯與初始表單建立工作流程
               href: walkthrough-creating-a-workflow-with-association-and-initiation-forms.md
             - name: 逐步解說：將應用程式頁面新增到工作流程
               href: walkthrough-add-an-application-page-to-a-workflow.md
-            - name: 逐步解說：建立自訂站台工作流程活動
+            - name: 逐步解說：建立自訂網站工作流程活動
               href: walkthrough-create-a-custom-site-workflow-activity.md
             - name: 逐步解說：將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio
               href: walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md
@@ -60,9 +60,9 @@
               href: how-to-create-a-sharepoint-web-part.md
             - name: 使用設計工具建立 SharePoint Web 組件
               href: how-to-create-a-sharepoint-web-part-by-using-a-designer.md
-            - name: 逐步解說：建立 SharePoint 的 Web 組件
+            - name: 逐步解說：建立 SharePoint 的網頁組件
               href: walkthrough-creating-a-web-part-for-sharepoint.md
-            - name: 逐步解說：使用設計工具建立 SharePoint 的 Web 組件
+            - name: 逐步解說：使用設計工具建立 SharePoint 的網頁組件
               href: walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md
             - name: 逐步解說：建立可顯示 SharePoint 之 OData 的 Silverlight Web 組件
               href: walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md
@@ -192,13 +192,13 @@
           items:
             - name: 驗證及偵錯 SharePoint 程式碼
               href: verifying-and-debugging-sharepoint-code.md
-            - name: 逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式
+            - name: 逐步解說：使用 IntelliTrace 針對 SharePoint 應用程式進行偵錯
               href: walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md
         - name: 剖析 SharePoint 應用程式的效能
           items:
             - name: 剖析 SharePoint 應用程式的效能
               href: profiling-the-performance-of-sharepoint-applications.md
-            - name: 逐步解說：剖析 SharePoint 應用程式
+            - name: 逐步解說：分析 SharePoint 應用程式
               href: walkthrough-profiling-a-sharepoint-application.md
         - name: 沙箱化方案與伺服器陣列方案之間的差異
           href: differences-between-sandboxed-and-farm-solutions.md
@@ -296,7 +296,7 @@
                   href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md
                 - name: 逐步解說：使用專案範本建立網站欄專案項目 (第 1 部分)
                   href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md
-                - name: 逐步解說：使用專案範本建立網站資料行專案項目 (第 2 部分)
+                - name: 逐步解說：使用專案範本建立網站欄專案項目 (第 2 部分)
                   href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md
             - name: 擴充 SharePoint 專案項目
               items:
@@ -320,7 +320,7 @@
                   href: how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md
                 - name: 將屬性新增至 SharePoint 專案
                   href: how-to-add-a-property-to-sharepoint-projects.md
-                - name: 逐步解說：建立 SharePoint 專案擴充功能
+                - name: 逐步解說：建立 SharePoint 專案延伸模組
                   href: walkthrough-creating-a-sharepoint-project-extension.md
             - name: 擴充 SharePoint 封裝和部署
               items:
@@ -378,9 +378,9 @@
           href: debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md
         - name: 部署 Visual Studio 中 SharePoint 工具的擴充功能
           href: deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md
-        - name: 參考
+        - name: 參考資料
           items:
-            - name: 參考
+            - name: 參考資料
               href: reference-sharepoint-tools-extensibility.md
             - name: SharePoint 專案項目結構描述參考
               items:
@@ -408,5 +408,5 @@
                   href: safecontrol-element.md
                 - name: SafeControls 項目
                   href: safecontrols-element.md
-            - name: API 參考
+            - name: 應用程式開發介面參考
               href: api-reference-sharepoint-tools-extensibility.md

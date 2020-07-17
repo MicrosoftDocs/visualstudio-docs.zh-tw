@@ -1,6 +1,6 @@
-- name: 'C# 教學課程'
+- name: C# 教學課程
   href: index.yml
-- name: 概觀
+- name: 總覽
   items:
     - name: Visual Studio 概觀
       href: visual-studio-ide.md
@@ -13,7 +13,7 @@
 - name: 建立應用程式
   expanded: true
   items:
-    - name: '建立您的第一個 C# 應用程式'
+    - name: 建立您的第一個 C# 應用程式
       href: tutorial-console.md
     - name: 建立 Web 應用程式
       href: tutorial-aspnet-core.md
@@ -50,7 +50,7 @@
       href: ../csharp/tutorial-debugger.md
     - name: 單元測試
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-    - name: 部署專案
+    - name: 部署您的專案
       href: ../../deployment/index.yml
     - name: 存取資料
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
