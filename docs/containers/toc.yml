@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: 概觀
+    - name: 總覽
       href: overview.md
     - name: 快速入門
       expanded: true
@@ -11,15 +11,13 @@
           href: container-tools.md
         - name: 容器中的 React.js 單頁應用程式
           href: container-tools-react.md
-        - name: 使用 Azure Dev Spaces 進行 Kubernetes 開發 >>
-          href: /azure/dev-spaces/quickstart-netcore-visualstudio
+        - name: Kubernetes 開發
+          href: local-process-kubernetes.md
     - name: 教學課程
       expanded: true
       items:
         - name: 具有 Docker Compose 的多容器應用程式
           href: tutorial-multicontainer.md
-        - name: Visual Studio 中的 Kubernetes
-          href: tutorial-kubernetes-tools.md
     - name: 如何
       items:
         - name: 對本機 Docker 容器中的應用程式偵錯
@@ -40,7 +38,7 @@
           href: container-build.md
     - name: 疑難排解
       href: troubleshooting-docker-errors.md
-    - name: 參考
+    - name: 參考資料
       items:
         - name: 適用於容器專案的 MSBuild 屬性
           href: container-msbuild-properties.md
@@ -48,3 +46,11 @@
           href: docker-compose-properties.md
         - name: 啟動設定
           href: container-launch-settings.md
+- name: 使用 Kubernetes 進行開發
+  items:
+    - name: Visual Studio 中的 Kubernetes
+      href: tutorial-kubernetes-tools.md
+    - name: 將 Kubernetes 與本機處理序搭配使用 (預覽)
+      href: local-process-kubernetes.md
+    - name: 本機處理序與 Kubernetes 搭配使用的方式 (預覽)
+      href: overview-local-process-kubernetes.md

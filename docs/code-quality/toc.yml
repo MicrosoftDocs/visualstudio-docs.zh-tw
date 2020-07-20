@@ -563,6 +563,8 @@
                   href: ca1833.md
                 - name: CA1835：請優先使用 Stream ReadAsync/WriteAsync 方法的記憶體多載
                   href: ca1835.md
+                - name: CA1836：建議使用 IsEmpty，而不要使用 Count (如果有的話)
+                  href: ca1836.md
             - name: 可攜性警告
               items:
                 - name: 總覽

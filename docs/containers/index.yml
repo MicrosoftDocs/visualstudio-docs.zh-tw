@@ -2,7 +2,7 @@
 title: Visual Studio 中的容器工具
 metadata:
   title: Docker 容器開發工具文件
-  description: 了解如何建置及管理以容器為基礎的應用程式和服務。 取得文件、程式碼範例、教學課程等資訊。
+  description: 了解如何建置及管理以容器為基礎的應用程式和服務。 取得文件、程式碼範例、教學課程等。
   author: ghogen
   manager: jillfra
   ms.prod: visual-studio-windows
@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
-  ms.openlocfilehash: 611e723edbf1abf46d6b4466e3f8f163058ada47
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 43583c3e147c7c036e28670c153c9520e02ef232
+  ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "75400720"
+  ms.lasthandoff: 07/17/2020
+  ms.locfileid: "86454198"
 landingContent:
 - title: 容器工具
   linkLists:
@@ -57,11 +57,11 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 如何：設定組建和偵錯環境
+    - text: 作法：設定組建和偵錯環境
       url: container-build.md
-    - text: 如何：檢視及診斷容器
+    - text: 作法：檢視及診斷容器
       url: view-and-diagnose-containers.md
-    - text: 如何：針對容器開發工具進行疑難排解
+    - text: 作法：針對容器開發工具進行疑難排解
       url: troubleshooting-docker-errors.md
 - title: 容器工具設定
   linkLists:
@@ -75,3 +75,17 @@ landingContent:
       url: docker-compose-properties.md
     - text: 設定容器工具
       url: container-tools-configure.md
+- title: Kubernetes 開發
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 適用於 Kubernetes 的 Visual Studio Tools
+      url: tutorial-kubernetes-tools.md
+  - linkListType: quickstart
+    links:
+    - text: 將 Visual Studio 和 Kubernetes 與本機處理序搭配使用
+      url: local-process-kubernetes.md
+  - linkListType: overview
+    links:
+    - text: 本機處理序與 Kubernetes 搭配使用的方式
+      url: overview-local-process-kubernetes.md
