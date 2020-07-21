@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 63a9929ea4e70a085f41e0f3dd2f8a71c1eb487e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 641119c278f5bd489eb45b4e97ad2c89c4529c59
+ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386182"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86476026"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -29,10 +29,10 @@ ms.locfileid: "86386182"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.7.0 | Preview 4 | 2020年7月14日 | 16.7.30310.162 |
-| 16.6.4 | 版本 | 2020年7月14日 | 16.6.30309.148 |
-| 16.4.11 | 版本 | 2020年7月14日 | 16.4.30308.118 |
-| 16.0.16 | 版本 | 2020年7月14日 | 16.0.28803.791 |
+| 16.7.0 | Preview 4 | 2020 年 7 月 14 日 | 16.7.30310.162 |
+| 16.6.4 | 版本 | 2020 年 7 月 14 日 | 16.6.30309.148 |
+| 16.4.11 | 版本 | 2020 年 7 月 14 日 | 16.4.30308.118 |
+| 16.0.16 | 版本 | 2020 年 7 月 14 日 | 16.0.28803.791 |
 | 16.6.3 | 版本 | 2020 年 6 月 30 日 | 16.6.30225.117 |
 | 16.7.0 | 預覽3。1 | 2020年6月25日 | 16.7.30223.230 |
 | 16.7.0 | Preview 3 | 2020 年 6 月 23 日 | 16.7.30218.91 |
@@ -161,7 +161,7 @@ ms.locfileid: "86386182"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.25 | 版本 | 2020年7月14日 | 15.9.28307.1216 |
+| 15.9.25 | 版本 | 2020 年 7 月 14 日 | 15.9.28307.1216 |
 | 15.9.24 | 版本 | 2020 年 6 月 9 日 | 15.9.28307.1177 |
 | 15.9.23 | 版本 | 2020 年 5 月 12 日 | 15.9.28307.1146 |
 | 15.9.22 | 版本 | 2020 年 4 月 14 日 | 15.9.28307.1093 |
@@ -339,7 +339,8 @@ ms.locfileid: "86386182"
 
 ## <a name="see-also"></a>另請參閱
 
-* [Visual Studio 發行節奏](/visualstudio/productinfo/release-rhythm/)
+* [Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap)
+* [Visual Studio 發行節奏](/visualstudio/productinfo/release-rhythm)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [用於偵測及管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)

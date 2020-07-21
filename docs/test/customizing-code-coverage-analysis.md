@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ce63e6ff368b090f096642c7f664c1adf45a0857
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
+ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880308"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475987"
 ---
 # <a name="customize-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 
@@ -34,13 +34,13 @@ ms.locfileid: "80880308"
 
 ::: moniker range="vs-2017"
 
-3. 若要選取回合設定檔，請在 [測試]**** 功能表上，選擇 [測試設定]**** > [選取測試設定檔]****。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
+3. 若要選取回合設定檔，請在 [測試]**** 功能表上，選擇 [測試設定]**** > [選取測試設定檔]****。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line)。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. 若要選取回合設定檔案，請在 [**測試**] 功能表上選擇 [**選取設定檔**]。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
+3. 若要選取回合設定檔案，請在 [**測試**] 功能表上選擇 [**選取設定檔**]。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line)。
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ ms.locfileid: "80880308"
 | XML 元素 | 符合專案 |
 | - | - |
 | ModulePath | 符合元件名稱或檔案路徑所指定的元件。 |
-| CompanyName | 符合**Company**屬性的元件。 |
+| 公司名稱 | 符合**Company**屬性的元件。 |
 | PublicKeyToken | 依據公開金鑰標記比對已簽署的元件。 |
 | 來源 | 依據專案定義所在之來源檔案的路徑名稱比對元素。 |
 | 屬性 | 符合具有指定之屬性的元素。 指定屬性的完整名稱，例如 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`。<br/><br/>如果您排除 <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 屬性，則會從程式碼涵蓋範圍分析中排除使用語言功能 (例如 `async`、`await`、`yield return`) 和自動實作屬性的程式碼。 若要排除真正產生的程式碼，只要排除 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性即可。 |
@@ -116,7 +116,7 @@ ms.locfileid: "80880308"
 
 ### <a name="regular-expressions"></a>規則運算式
 
-包含和排除節點使用與萬用字元不同的規則運算式。 所有相符項目皆不區分大小寫。 部份範例如下：
+包含和排除節點使用與萬用字元不同的規則運算式。 所有相符項目皆不區分大小寫。 部分範例如下：
 
 - **.\*** 符合任何字元的字串
 
