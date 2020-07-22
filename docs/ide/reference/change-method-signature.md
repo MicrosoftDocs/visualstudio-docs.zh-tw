@@ -1,7 +1,7 @@
 ---
 title: 變更方法簽章
 description: 新增、移除或變更方法參數的順序。 以滑鼠右鍵按一下方法、選取 [快速動作與重構]，然後選取 [變更簽章]。
-ms.date: 06/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2d91406b65950515afb3659c0d5918841465b2fc
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283866"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869564"
 ---
 # <a name="change-a-method-signature-refactoring"></a>變更方法特徵標記重構
 
@@ -61,12 +61,12 @@ ms.locfileid: "85283866"
 
    ![[變更簽章] 對話方塊](media/change-signature.png)
 
-   | 按鈕 | 說明
+   | 按鈕 | 描述
    | ------ | ---
    | **向上/向下** | 將選取的參數在清單中向上和向下移動
-   | **新增** | 新增參數至清單
+   | **加入** | 新增參數至清單
    | **移除** | 將選取的參數從清單中移除
-   | **Restore** | 將所選的已刪除參數還原到清單中
+   | **還原** | 將所選的已刪除參數還原到清單中
 
    > [!TIP]
    > 使用 [**預覽參考變更**] 核取方塊，以在認可之前[查看結果](../../ide/preview-changes.md)。
@@ -75,18 +75,9 @@ ms.locfileid: "85283866"
 
     ![新增參數對話方塊-C#](media/add-parameter-dialog.png)
 
-5. 當您完成新增參數後，請按 [**確定]** 按鈕以預覽變更。
+5. 當您完成新增參數後，請按 **[確定]** 以預覽變更。
 
     ![[變更簽章] 對話方塊](media/change-signature.png)
-
-6. 按 **[確定]** 以查看變更。
-   - C#：
-
-      ![變更特徵標記結果 - C#](media/changesignature-result-cs.png)
-
-   - Visual Basic：
-
-      ![變更特徵標記結果 - Visual Basic](media/changesignature-result-vb.png)
 
 ## <a name="see-also"></a>另請參閱
 

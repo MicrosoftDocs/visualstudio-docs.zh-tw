@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0918ee1fc0676f37445f14b078c48c365144644c
-ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
+ms.openlocfilehash: 1a840d4aca1a6eda3f549278e36a1d64725cd8ad
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86476013"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869616"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings*檔案設定單元測試
 
@@ -238,9 +238,7 @@ ms.locfileid: "86476013"
 </DataCollector>
 ```
 
-## <a name="testrunparameters-element"></a>TestRunParameters 元素
-
-測試回合參數提供一種方法，可定義在執行時間可供測試使用的變數和值。 
+### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
 <TestRunParameters>
@@ -249,17 +247,20 @@ ms.locfileid: "86476013"
 </TestRunParameters>
 ```
 
-在您的測試程式碼中，使用屬性來存取參數 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> ：
+測試回合參數提供一種方法，可定義在執行時間可供測試使用的變數和值。 使用 MSTest <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> 屬性（或 NUnit [TestCoNtext](https://docs.nunit.org/articles/nunit/writing-tests/TestContext.html)）存取參數：
 
 ```csharp
-[TestMethod]
+private string _appUrl;
+public TestContext TestContext { get; set; }
+
+[TestMethod] // [Test] for NUnit
 public void HomePageTest()
 {
-    string appURL = TestContext.Properties["webAppUrl"];
+    string _appURL = TestContext.Properties["webAppUrl"];
 }
 ```
 
-若要使用測試回合參數，請在您的測試類別中新增私用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 欄位和公用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 屬性。
+若要使用測試回合參數，請將公用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 屬性加入至測試類別。
 
 ## <a name="loggerrunsettings-element"></a>LoggerRunSettings 元素
 
@@ -303,7 +304,7 @@ public void HomePageTest()
 </MSTest>
 ```
 
-|設定|預設|值|
+|組態|預設|值|
 |-|-|-|
 |**ForcedLegacyMode**|false|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
 |**IgnoreTestImpact**|false|測試影響功能會將受最新變更影響的測試排定在 MSTest 中執行時，或從 Microsoft Test Manager （在 Visual Studio 2017 中已被取代）。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|

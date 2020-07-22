@@ -1,6 +1,6 @@
 ---
 title: VSTest.Console.exe 命令列選項
-ms.date: 07/12/2018
+ms.date: 07/17/2020
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211559"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869590"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令列選項
 
@@ -26,7 +26,7 @@ ms.locfileid: "86211559"
 >
 > 若要在 ARM 架構電腦上執行自動化測試，您必須使用 *VSTest.Console.exe*。
 
-開啟[開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)以使用命令列工具，或者您可以在 *% Program Files (x86) % \ Microsoft Visual Studio \\<版本 \> \\<edition \> \common7\ide\CommonExtensions \\<Platform 中找到此工具。Microsoft>*。
+開啟[開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)以使用命令列工具，或者您可以在 *% Program Files （x86）% \ Microsoft Visual Studio \\<版本 \> \\<版本 \> \common7\ide\CommonExtensions \\<Platform 中找到此工具 |Microsoft>*。
 
 ## <a name="general-command-line-options"></a>一般命令列選項
 
@@ -35,7 +35,7 @@ ms.locfileid: "86211559"
 | 選項 | 描述 |
 |---|---|
 |**[*test file names*]**|從指定的檔案執行測試。 以空格分隔多個測試檔案名稱。<br />範例：`mytestproject.dll`、`mytestproject.dll myothertestproject.exe`|
-|**/Settings:[*file name*]**|使用像資料收集器之類的其他設定執行測試。<br />範例： `/Settings:Local.RunSettings`|
+|**/Settings:[*file name*]**|使用像資料收集器之類的其他設定執行測試。 如需詳細資訊，請參閱[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)<br />範例： `/Settings:local.runsettings`|
 |**/Tests:[*test name*]**|執行測試，其名稱包含所提供的值。 若要提供多個值，請使用逗號來區隔。<br />範例： `/Tests:TestMethod1,testMethod2`<br />**/Tests** 命令列選項無法與 **/TestCaseFilter** 命令列選項搭配使用。|
 |**/Parallel**|指定以平行方式執行測試。 根據預設，最多可以使用電腦上所有可用的核心。 您可以設定要在設定檔中使用的核心數。|
 |**/Enablecodecoverage**|在測試回合中啟用資料診斷配接器 CodeCoverage。<br />如果沒有使用設定檔來指定，則使用預設設定。|
@@ -46,7 +46,7 @@ ms.locfileid: "86211559"
 |**/Framework: [*framework version*]**|要用於測試執行的目標 .NET 版本。<br />範例值為 `Framework35`、`Framework40`、`Framework45`、`FrameworkUap10`、`.NETCoreApp,Version=v1.1`。<br />TargetFrameworkAttribute 是用來從您的元件自動偵測這個選項，而 `Framework40` 當屬性不存在時，預設值為。 如果您從 .NET Core 元件中移除[TargetFrameworkAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute) ，則必須明確指定此選項。<br />如果將目標 framework 指定為**Framework35**，則測試會在 CLR 4.0 「相容性模式」中執行。<br />範例： `/Framework:framework40`|
 |**/TestCaseFilter:[*expression*]**|執行符合指定之運算式的測試。<br /><Expression\> 的格式為 <property\>=<value\>[\|<Expression\>]。<br />範例： `/TestCaseFilter:"Priority=1"`<br />範例： `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** 命令列選項無法與 **/Tests** 命令列選項搭配使用。 <br />如需建立和使用運算式的資訊，請參閱 [ 篩選](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)。|
 |**/?**|顯示使用資訊。|
-|**/Logger:[*uri/friendlyname*]**|指定測試結果的記錄器。 請多次指定參數，以啟用多個記錄器。<br />範例：若要將結果記錄到 Visual Studio 的測試結果檔案 (.TRX) ，請使用<br />**/Logger： .trx**<br />**[;LogFileName = \<Defaults to unique file name> ]**|
+|**/Logger:[*uri/friendlyname*]**|指定測試結果的記錄器。 請多次指定參數，以啟用多個記錄器。<br />範例：若要將結果記錄到 Visual Studio 測試結果檔案（.TRX），請使用<br />**/Logger： .trx**<br />**[;LogFileName = \<Defaults to unique file name> ]**|
 |**/ListTests:[*file name*]**|列出從指定之測試容器探索到的測試。|
 |**/ListDiscoverers**|列出已安裝的測試探索程式。|
 |**/ListExecutors**|列出已安裝的測試執行程式。|
