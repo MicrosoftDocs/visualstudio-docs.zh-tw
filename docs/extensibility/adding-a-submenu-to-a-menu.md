@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb143a611b1fb1f4278d28fdf9423a1f6613a68d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 5887dba1ed1c583653b93792174524f8dfb84609
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904182"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972318"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>將子功能表新增至功能表
 本逐步解說是以示範如何在 [ **TestMenu** ] 功能表中新增子功能表的方式，建立在 [ [Visual Studio] 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)中的示範。
@@ -27,7 +27,7 @@ ms.locfileid: "85904182"
 
  此逐步解說會在 [Visual Studio] 功能表列上的功能表中建立子功能表，並在子功能表上放入新的命令。 本逐步解說也會實行新的命令。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="add-a-submenu-to-a-menu"></a>將子功能表新增至功能表
@@ -128,7 +128,8 @@ ms.locfileid: "85904182"
     ```csharp
     private void SubItemCallback(object sender, EventArgs e)
     {
-        IVsUIShell uiShell = (IVsUIShell)this.ServiceProvider.GetServiceAsync(typeof(SVsUIShell));
+        ThreadHelper.ThrowIfNotOnUIThread();
+        IVsUIShell uiShell = this.package.GetService<SVsUIShell, IVsUIShell>();
         Guid clsid = Guid.Empty;
         int result;
         uiShell.ShowMessageBox(

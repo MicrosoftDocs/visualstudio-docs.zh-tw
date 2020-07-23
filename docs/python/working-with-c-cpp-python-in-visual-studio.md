@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0871361d25131b493838bac12945a64a19a0f173
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543724"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972357"
 ---
 # <a name="create-a-c-extension-for-python"></a>建立適用於 Python 的 C++ 延伸模組
 
@@ -36,7 +36,7 @@ ms.locfileid: "85543724"
 
 您可於 [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub) 找到此逐步解說的完整範例。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - Visual Studio 2017 或更新版本含有使用預設選項安裝的**使用 C++ 的桌面開發**和 **Python 開發**工作負載。
 - 在 **Python 開發**工作負載中，也選取 **Python 原生開發工具**右邊的方塊。 這個選項會設定本文所述的大部分組態。 (這個選項也會自動包含 C++ 工作負載。)
@@ -183,7 +183,7 @@ ms.locfileid: "85543724"
     #include <Python.h>
     ```
 
-1. 修改 `tanh_impl` 方法以接受並傳回 Python 類型 (即 `PyOjbect*`)︰
+1. 修改 `tanh_impl` 方法以接受並傳回 Python 類型 (即 `PyObject*`)︰
 
     ```cpp
     PyObject* tanh_impl(PyObject *, PyObject* o) {

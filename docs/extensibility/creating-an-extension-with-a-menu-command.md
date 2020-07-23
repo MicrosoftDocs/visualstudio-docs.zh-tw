@@ -13,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f9e9963e05b0991beaea7da4027f4db3df4e4eb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903924"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972331"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>使用功能表命令建立擴充功能
 
 本逐步解說示範如何使用啟動 [記事本] 的功能表命令來建立擴充功能。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
@@ -32,7 +32,17 @@ ms.locfileid: "85903924"
 
 1. 建立名為**FirstMenuCommand**的 VSIX 專案。 藉由搜尋「vsix」，您可以在 [**新增專案**] 對話方塊中尋找 VSIX 專案範本。
 
+::: moniker range="vs-2017"
+
 2. 當專案開啟時，新增名為**FirstCommand**的自訂命令專案範本。 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**新增專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  **Extensibility**然後選取 [**自訂命令**]。 在視窗底部的 [**名稱**] 欄位中，將命令檔名稱變更為*FirstCommand.cs*。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. 當專案開啟時，新增名為**FirstCommand**的自訂命令專案範本。 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  **Extensibility**然後選取 [**命令**]。 在視窗底部的 [**名稱**] 欄位中，將命令檔名稱變更為*FirstCommand.cs*。
+
+::: moniker-end
 
 3. 建置此專案並開始偵錯。
 
@@ -50,7 +60,7 @@ ms.locfileid: "85903924"
 
 ::: moniker-end
 
-現在，移至實驗實例中的 [**工具**] 功能表。 您應該會看到**Invoke FirstCommand**命令。 此時，此命令會顯示一個訊息方塊，指出**FirstCommandPackage 內部的 FirstMenuCommand. FirstCommand. MenuItemCallback （）**。 我們將在下一節看到如何從這個命令實際啟動「記事本」。
+現在，移至實驗實例中的 [**工具**] 功能表。 您應該會看到**Invoke FirstCommand**命令。 此時，此命令會顯示一個訊息方塊，指出**FirstCommand 內部的 FirstMenuCommand. FirstCommand. MenuItemCallback （）**。 我們將在下一節看到如何從這個命令實際啟動「記事本」。
 
 ## <a name="change-the-menu-command-handler"></a>變更功能表命令處理常式
 
@@ -77,11 +87,13 @@ ms.locfileid: "85903924"
     }
     ```
 
-3. 移除 `MenuItemCallback` 方法並新增 `StartNotepad` 方法，這只會啟動 [記事本]：
+3. 移除 `Execute` 方法並新增 `StartNotepad` 方法，這只會啟動 [記事本]：
 
     ```csharp
     private void StartNotepad(object sender, EventArgs e)
     {
+        ThreadHelper.ThrowIfNotOnUIThread();
+
         Process proc = new Process();
         proc.StartInfo.FileName = "notepad.exe";
         proc.Start();
@@ -102,7 +114,7 @@ ms.locfileid: "85903924"
 
 2. 從命令列執行下列命令：
 
-    ```xml
+    ```cmd
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=<version> /RootSuffix=Exp && PAUSE
 
     ```
@@ -113,13 +125,13 @@ ms.locfileid: "85903924"
 
 您可以在*FirstMenuCommand* bin 目錄中找到此延伸模組的 *.vsix*檔案。 具體來說，假設您已建立發行設定，它將會位於：
 
-*\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand .vsix*
+*\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\FirstMenuCommand.vsix*
 
 若要安裝此延伸模組，您的 friend 必須關閉 Visual Studio 的所有開啟的實例，然後按兩下 *.vsix*檔案，這會顯示**vsix 安裝程式**。 這些檔案會複製到 *%LocalAppData%\Microsoft\VisualStudio \<version> \Extensions*目錄。
 
 當您的朋友再次顯示 Visual Studio 時，他們會在 [**工具**] [  >  **擴充功能和更新**] 中找到 FirstMenuCommand 延伸模組。 他們也可以移至 [**擴充功能和更新**] 以卸載或停用延伸模組。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 本逐步解說只示範了您可以使用 Visual Studio 延伸模組的一小部分。 以下是您可以使用 Visual Studio 延伸模組的其他（相當簡單）專案的簡短清單：
 

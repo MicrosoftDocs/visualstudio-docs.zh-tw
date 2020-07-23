@@ -1,6 +1,6 @@
 ---
 title: F1 說明的預設頁面
-ms.date: 02/28/2018
+ms.date: 07/20/2020
 ms.topic: troubleshooting
 robots: noindex,nofollow
 f1_keywords:
@@ -9,12 +9,12 @@ f1_keywords:
 manager: jillfra
 author: TerryGLee
 ms.author: tglee
-ms.openlocfilehash: 48c93cf8abeb573a3a75e6825a8400355c133f2b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3fabd640b503c480662239dac4920aa9875d62c9
+ms.sourcegitcommit: 239a8ed2c4474769297b42b5ce1f7c8694d62856
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597005"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86944564"
 ---
 # <a name="f1-help"></a>F1 說明
 
@@ -22,11 +22,12 @@ ms.locfileid: "75597005"
 
 ## <a name="cursor-position"></a>資料指標位置
 
-如果您在尋找鍵盤或 API 名稱的 F1 說明，在按下 **F1** 之前，請務必確認游標位在文字內或在文字的開頭。 如果仍然無效，請從[實用連結](#useful-links)清單中進行選取，或在 https://docs.microsoft.com 上執行搜尋。
+如果您要尋找有關關鍵字或 API 名稱的 F1 說明，請務必將游標放在文字的內部或右方，然後再按下**F1**鍵。 如果仍然無法解決問題，請從下列[有用的連結](#useful-links)清單中選取，或在上進行搜尋 https://docs.microsoft.com 。
 
 ## <a name="useful-links"></a>實用的連結
 
 - 在 [.NET API 瀏覽器](/dotnet/api/)上尋找參考文件。
+- 流覽[Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)] 頁面上的知識庫文章清單。
 - 如需 C# 的說明，請參閱 [C# 指南](/dotnet/csharp/index)。
 - 如需 Visual Basic 的說明，請參閱 [Visual Basic 指南](/dotnet/visual-basic/)。
 - 如需 F# 的說明，請參閱 [F# 指南](/dotnet/fsharp/)。
