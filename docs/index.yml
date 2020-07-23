@@ -14,12 +14,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: 11c6b0a98cb9cbbb0cbf9731bddd4c30547973c8
-  ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+  ms.openlocfilehash: 889c9d2c00b172891bca72259c981b582178a2e8
+  ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/29/2020
-  ms.locfileid: "84183245"
+  ms.lasthandoff: 07/23/2020
+  ms.locfileid: "86972279"
 productDirectory:
   items:
   - title: Visual Studio
@@ -58,11 +58,11 @@ productDirectory:
   - title: Visual Studio Codespaces
     imageSrc: ./media/vs-ide-2019.svg
     links:
-    - url: https://docs.microsoft.com/visualstudio/online/
+    - url: https://docs.microsoft.com/visualstudio/codespaces/
       text: 文件
-    - url: https://code.visualstudio.com/docs/remote/vsonline
+    - url: https://code.visualstudio.com/docs/remote/codespaces
       text: 使用 Visual Studio Code
-    - url: https://visualstudio.microsoft.com/services/visual-studio-online/
+    - url: https://visualstudio.microsoft.com/services/visual-studio-codespaces/
       text: 產品頁面
   - title: Visual Studio 應用程式中心
     imageSrc: ./media/vs-mobile-center.svg
