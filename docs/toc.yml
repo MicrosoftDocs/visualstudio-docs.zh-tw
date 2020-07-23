@@ -82,6 +82,8 @@
               href: install/update-a-network-installation-of-visual-studio.md
             - name: 在維護基底上時更新 Visual Studio
               href: install/update-servicing-baseline.md
+            - name: 使用最小離線版面配置來更新 Visual Studio
+              href: install/update-minimal-layout.md
             - name: 控制 Visual Studio 部署的更新
               href: install/controlling-updates-to-visual-studio-deployments.md
             - name: 管理套件承載變更
@@ -92,11 +94,11 @@
           items:
             - name: Visual Studio 訂用帳戶：系統管理員概觀
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: 參考資料
+        - name: 參考
           items:
             - name: Visual Studio 工作負載與元件識別碼
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: Workload and component IDs
                   href: install/workload-and-component-ids.md
                 - name: Visual Studio 企業版
@@ -359,7 +361,7 @@
                   href: ide/reference/introduce-local-variable.md
             - name: 重構程式碼
               items:
-                - name: 總覽
+                - name: 概觀
                   displayName: refactoring
                   href: ide/refactoring-in-visual-studio.md
                 - name: 為所有參數新增 Null 檢查
@@ -501,7 +503,7 @@
               href: ide/create-portable-custom-editor-options.md
             - name: .NET 編碼慣例
               items:
-                - name: 總覽
+                - name: 概觀
                   href: ide/editorconfig-code-style-settings-reference.md
                 - name: 語言慣例
                   href: ide/editorconfig-language-conventions.md
@@ -621,7 +623,7 @@
               href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
             - name: 停用 Windows Form 設計工具的 DPI 感知
               href: designers/disable-dpi-awareness.md
-            - name: 參考資料
+            - name: 參考
               items:
                 - name: System.Windows.Forms API >>
                   href: /dotnet/api/system.windows.forms
@@ -810,16 +812,16 @@
         - name: 設計國際化應用程式
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-- name: 組建
+- name: Build
   items:
-    - name: 總覽
+    - name: 概觀
       displayName: Compile build
       href: ide/compiling-and-building-in-visual-studio.md
     - name: 逐步解說：建置應用程式
       href: ide/walkthrough-building-an-application.md
     - name: 建置與清除專案和方案
       items:
-        - name: 總覽
+        - name: 概觀
           displayName: Build clean
           href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
         - name: 變更組建輸出目錄
@@ -930,7 +932,7 @@
           href: ide/how-to-unlock-visual-studio.md
     - name: 調整 Visual Studio 的效能
       items:
-        - name: 將效能最佳化
+        - name: 效能最佳化
           href: ide/optimize-visual-studio-performance.md
         - name: 啟動時間
           href: ide/optimize-visual-studio-startup-time.md
@@ -960,7 +962,7 @@
           href: ide/default-keyboard-shortcuts-in-visual-studio.md
     - name: Visual Studio 命令
       items:
-        - name: 參考資料
+        - name: 參考
           displayName: Visual Studio commands
           href: ide/reference/visual-studio-commands.md
         - name: 命令別名
@@ -1182,7 +1184,7 @@
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: 進行 Lint 檢查
                       href: ide/reference/options-text-editor-javascript-linting.md
-                    - name: 專案
+                    - name: 隨附此逐步解說的專案
                       href: ide/reference/options-text-editor-javascript-project.md
                 - name: U-SQL
                   items:
@@ -1214,7 +1216,7 @@
           href: ide/reference/output-window.md
         - name: 專案屬性
           items:
-            - name: 參考資料
+            - name: 參考
               displayName: Project properties
               href: ide/reference/project-properties-reference.md
             - name: 應用程式頁面，專案設計工具 (UWP)
@@ -1296,7 +1298,7 @@
               href: ide/reference/toolbox-html-tab.md
     - name: Devenv 命令列參數
       items:
-        - name: 參考資料
+        - name: 參考
           displayName: devenv command-line switches
           href: ide/reference/devenv-command-line-switches.md
         - name: '-? (devenv.exe)'
@@ -1439,7 +1441,7 @@
           href: /visualstudio/productinfo/vs-servicing-vs/
     - name: 客戶經驗改進計畫
       items:
-        - name: 總覽
+        - name: 概觀
           displayName: Customer Experience Improvement Program
           href: ide/visual-studio-experience-improvement-program.md
         - name: 由系統產生的記錄檔
@@ -1448,7 +1450,7 @@
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
 - name: 傳送意見反應
   items:
-    - name: 總覽
+    - name: 概觀
       href: ide/feedback-options.md
     - name: 回報問題
       items:
