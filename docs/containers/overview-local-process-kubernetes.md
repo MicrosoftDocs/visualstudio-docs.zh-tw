@@ -6,12 +6,12 @@ ms.topic: conceptual
 description: 描述搭配 Kubernetes 使用本機進程，將您的開發電腦連接到您的 Kubernetes 叢集的進程
 keywords: 使用 Kubernetes、Docker、Kubernetes、Azure、容器的本機進程
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: adde9d8ecab93bdb6f0aebbd74730ef60bd80cf6
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: 93bfc509eb21545cde812b8d6d71bb9a93a109e8
+ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454305"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87133968"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>本機處理序與 Kubernetes 搭配使用的方式
 
@@ -40,6 +40,44 @@ ms.locfileid: "86454305"
 
 建立與叢集的連線之後，您可以在電腦上以原生方式執行和偵錯工具代碼，而不需要容器化，而且程式碼可以直接與叢集的其餘部分互動。 遠端代理程式接收的任何網路流量都會重新導向至連線期間指定的本機埠，讓您的原生執行程式碼可以接受並處理該流量。 您的叢集環境變數、磁片區和密碼可供在開發電腦上執行的程式碼使用。 此外，由於透過 Kubernetes 的本機程式，將主機檔案專案和埠轉送新增至您的開發人員電腦，因此您的程式碼可以使用叢集的服務名稱，將網路流量傳送至叢集上執行的服務，並將流量轉送到叢集中正在執行的服務。 您的開發電腦與叢集之間的流量會在您連線的整個時間進行路由。
 
+## <a name="using-routing-capabilities-for-developing-in-isolation"></a>使用路由功能以隔離方式進行開發
+
+根據預設，Kubernetes 的本機進程會將服務的所有流量重新導向至您的開發電腦。 您也可以選擇使用路由功能，只將來自子域的服務要求重新導向至您的開發電腦。 這些路由功能可讓您搭配 Kubernetes 使用本機進程，以隔離方式進行開發，並避免中斷叢集中的其他流量。
+
+下列動畫顯示兩位開發人員在同一個叢集上獨立運作：
+
+![說明隔離的動畫 GIF](media/local-process-kubernetes/lpk-graphic-isolated.gif)
+
+當您啟用隔離工作時，使用 Kubernetes 的本機進程除了連接到您的 Kubernetes 叢集之外，還會執行下列動作：
+
+* 確認 Kubernetes 叢集未啟用 Azure Dev Spaces。
+* 在同一個命名空間的叢集中複寫您選擇的服務，並新增*routing.visualstudio.io/route-from=SERVICE_NAME*標籤和*routing.visualstudio.io/route-on-header=kubernetes-route-as： GENERATED_NAME*注釋。
+* 在 Kubernetes 叢集上的相同命名空間中設定和啟動路由管理員。 當您在命名空間中設定路由時，路由管理員會使用標籤選取器來尋找*routing.visualstudio.io/route-from=SERVICE_NAME*標籤和*routing.visualstudio.io/route-on-header=kubernetes-route-as： GENERATED_NAME*注釋。
+
+如果使用 Kubernetes 的本機處理常式偵測到您的 Kubernetes 叢集上已啟用 Azure Dev Spaces，系統會提示您停用 Azure Dev Spaces，然後才可以搭配 Kubernetes 使用本機進程。
+
+當路由管理員啟動時，會執行下列動作：
+* 使用子域的*GENERATED_NAME* ，重複命名空間中找到的所有會輸入。 
+* 為每個與具有*GENERATED_NAME*子域的重複會輸入相關聯的服務建立 envoy pod。
+* 針對您正在隔離的服務，建立額外的 envoy pod。 這可讓具有子域的要求路由傳送至您的開發電腦。
+* 設定每個 envoy pod 的路由規則，以處理具有子域之服務的路由。
+
+在叢集上收到具有*GENERATED_NAME*子域的要求時，會將*kubernetes-route as = GENERATED_NAME*標頭新增至要求的。 Envoy pod 會處理對叢集中適當服務提出要求的路由。 如果將要求路由傳送至以隔離方式處理的服務，遠端代理程式會將該要求重新導向至您的開發電腦。
+
+在叢集上收到不含*GENERATED_NAME*子域的要求時，不會將任何標頭加入至要求。 Envoy pod 會處理對叢集中適當服務提出要求的路由。 如果將要求路由傳送至要被取代的服務，該要求會改為路由傳送至原始服務，而非遠端代理程式。
+
+> [!IMPORTANT]
+> 當提出其他要求時，叢集上的每個服務都必須轉送*kubernetes-route as = GENERATED_NAME*標頭。 例如，當*serviceA*收到要求時，它會在傳迴響應之前向*serviceB*提出要求。 在此範例中， *serviceA*需要將其要求中的*kubernetes-route as = GENERATED_NAME*標頭轉送至*serviceB*。 某些語言（例如[ASP.NET][asp-net-header]）可能會有處理標頭傳播的方法。
+
+當您從叢集中斷連線時，根據預設，使用 Kubernetes 的本機進程將會移除所有 envoy pod 和重複的服務。 
+
+> 下路由管理員部署和服務將會在您的命名空間中繼續執行。 若要移除部署和服務，請針對您的命名空間執行下列命令。
+>
+> ```azurecli
+> kubectl delete deployment routingmanager-deployment -n NAMESPACE
+> kubectl delete service routingmanager-service -n NAMESPACE
+> ```
+
 ## <a name="diagnostics-and-logging"></a>診斷和記錄
 
 使用本機進程搭配 Kubernetes 來連線到您的叢集時，叢集的診斷記錄會記錄到開發電腦的[臨時目錄][azds-tmp-dir]中。
@@ -52,11 +90,17 @@ ms.locfileid: "86454305"
 * 服務必須由單一 pod 支援，才能連接到該服務。 您無法連接到具有多個 pod 的服務，例如具有複本的服務。
 * Pod 在該 pod 中只能有一個執行的單一容器，可讓 Kubernetes 的本機進程成功連接。 具有 Kubernetes 的本機進程無法連接到具有其他容器之 pod 的服務，例如服務網格所插入的側車容器。
 * 具有 Kubernetes 的本機進程需要較高的許可權，才能在您的開發電腦上執行，以編輯您的主機檔案。
+* 具有 Kubernetes 的本機進程無法在已啟用 Azure Dev Spaces 的叢集上使用。
+
+### <a name="local-process-with-kubernetes-and-clusters-with-azure-dev-spaces-enabled"></a>Azure Dev Spaces 啟用 Kubernetes 和叢集的本機進程
+
+您無法在已啟用 Azure Dev Spaces 的叢集上搭配 Kubernetes 使用本機進程。 如果您想要在啟用 Azure Dev Spaces 的叢集上搭配 Kubernetes 使用本機進程，您必須先停用 Azure Dev Spaces，才能連接到叢集。
 
 ## <a name="next-steps"></a>後續步驟
 
 若要開始搭配 Kubernetes 使用本機進程來連接到您的本機開發電腦，請參閱搭配[Kubernetes 使用本機進程](local-process-kubernetes.md)。
 
+[asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest

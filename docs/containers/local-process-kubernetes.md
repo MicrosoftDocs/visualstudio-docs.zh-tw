@@ -1,17 +1,17 @@
 ---
-title: 將 Visual Studio 和 Kubernetes 與本機處理序搭配使用 (預覽)
+title: 搭配 Visual Studio 使用本機進程與 Kubernetes （預覽）
 ms.technology: vs-azure
 ms.date: 06/02/2020
 ms.topic: conceptual
 description: 瞭解如何搭配使用 Kubernetes 與具有 Visual Studio 的本機進程，將您的開發電腦連線到 Kubernetes 叢集
 keywords: Kubernetes、Azure Dev Spaces、Dev Spaces、Docker、Kubernetes、Azure、容器的本機進程
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: b057670f60554a066356ad34525f0276d8dc826c
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: fd2e456f1ffdaaea90c0594b73d5367e51c8f655
+ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454297"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87133992"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>搭配 Kubernetes 使用本機進程（預覽）
 
@@ -30,7 +30,7 @@ ms.locfileid: "86454297"
 
 本指南使用[自行車分享範例應用程式][bike-sharing-github]，示範如何將您的開發電腦連接到 Kubernetes 叢集。 如果您已經在 Kubernetes 叢集上執行自己的應用程式，您仍然可以遵循下列步驟，並使用您自己的服務名稱。
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 * Azure 訂用帳戶。 如果您沒有 Azure 訂用帳戶，您可以建立[免費帳戶](https://azure.microsoft.com/free)。
 * [已安裝 Azure CLI][azure-cli]。
