@@ -1,6 +1,6 @@
 ---
 title: 針對錯誤進行疑難排解的資源
-ms.date: 07/17/2020
+ms.date: 07/23/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -93,12 +93,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a7b4dea467c0ed233b2db917e231a5a4d787f09
-ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
+ms.openlocfilehash: f18ef8a0bf8ffc6b7478f307b6c2a37247bef034
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459277"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234727"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於針對整合式開發環境錯誤進行疑難排解的資源
 
@@ -109,7 +109,7 @@ ms.locfileid: "86459277"
 
 ## <a name="knowledge-base-articles"></a>知識庫文章
 
-您可以搜尋線上知識庫 (KB) 中有關產品問題的文章。 並非所有問題都有對應的 KB 文章，但一般會記錄大量客戶遇到的錯誤。 您可以在 [Microsoft 支援服務](https://support.microsoft.com)網站存取 KB 文章。 您也可以在 [ [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)] 頁面上，查看 VISUAL STUDIO 的知識庫文章集合。
+您可以搜尋線上知識庫 (KB) 中有關產品問題的文章。 並非所有問題都有對應的 KB 文章，但一般會記錄大量客戶遇到的錯誤。 您可以在 [ [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)] 頁面上，查看 VISUAL STUDIO 的知識庫文章。
 
 ## <a name="developer-forums"></a>開發人員論壇
 
@@ -121,7 +121,8 @@ ms.locfileid: "86459277"
 
 如果您在嘗試其他資源之後仍有疑問，則可以前往 [Microsoft 支援服務](https://support.microsoft.com/en-us)網站，連絡 Microsoft 支援服務。 如需區域中可用產品支援的詳細資訊，請參閱[Visual Studio 意見反應選項](../../ide/feedback-options.md)頁面。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [對網路相關錯誤或 Proxy 錯誤進行疑難排解](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
+* [疑難排解（適用于 Windows 的 Visual Studio）](/troubleshoot/visualstudio/welcome-visual-studio/)
 * [疑難排解 (Visual Studio for Mac)](/visualstudio/mac/troubleshooting)

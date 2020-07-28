@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2141d2fd7d046f61ba6febecc427066d7a09ba18
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904484"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235026"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 以下是您在 VSPackage 時可能會遇到的常見問題，以及解決問題的秘訣。
@@ -124,4 +124,5 @@ ms.locfileid: "85904484"
    請確定 InprocServer32 專案具有 VSPackage dll 的正確路徑。
 
 ## <a name="see-also"></a>另請參閱
-- [VSPackage](../extensibility/internals/vspackages.md)
+- [VSPackages](../extensibility/internals/vspackages.md)
+- [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)

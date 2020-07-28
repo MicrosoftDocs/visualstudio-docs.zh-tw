@@ -2,7 +2,7 @@
 title: 登入 Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 03/10/2020
+ms.date: 07/24/2020
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: ornellaalt
@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4d6bf69050348cbe078cfdf7ae2d419f1dd13745
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285292"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235195"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
@@ -38,7 +38,7 @@ ms.locfileid: "85285292"
 以下是您在登入後預期及可執行事項的完整清單：
 - **延長 Visual Studio 試用期** - 您可以額外使用 90 天的 Visual Studio Professional 或 Visual Studio Enterprise，而不受限於 30 天的試用期。 如需詳細資訊，請參閱[延長試用版或更新授權](../ide/how-to-unlock-visual-studio.md)。
 
-- **解除鎖定 Visual Studio Community 版本** - 如果 Community 版本的安裝提示您提供授權，請登入 IDE 來自行解除鎖定。
+- **繼續使用 Visual Studio Community edition** -如果您的社區版本安裝提示您提供授權，請登入 IDE 以繼續**免費**使用 Visual Studio Community。 
 
 - **使用與 Visual Studio 訂用帳戶或 Azure DevOps 組織建立關聯的帳戶，就可以解除鎖定 Visual Studio**。 如需詳細指示，請參閱[延長試用版或更新授權](../ide/how-to-unlock-visual-studio.md)。
 

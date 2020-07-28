@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 679a6e753e61ecb1af9097692a741c35e531c7cc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85545739"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234974"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>針對 Office 方案部署進行疑難排解
   本主題包含如何解決部署 Office 解決方案常見問題的相關資訊。
@@ -129,3 +129,4 @@ ms.locfileid: "85545739"
 
 - [針對 ClickOnce 部署進行疑難排解](../deployment/troubleshooting-clickonce-deployments.md)
 - [部署 Office 方案](../vsto/deploying-an-office-solution.md)
+- [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)

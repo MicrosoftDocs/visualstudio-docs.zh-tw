@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66a98a822cd9aac6d93b4964e2e8bdadc98972e5
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: fac7f18244aaa32667514766ad6d393408997e51
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85381895"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235156"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>針對 ClickOnce 部署的特定錯誤進行疑難排解
 本文列出當您部署應用程式時可能會發生的下列常見錯誤 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，並提供解決每個問題的步驟。
@@ -122,7 +122,7 @@ ms.locfileid: "85381895"
 ## <a name="additional-errors"></a>其他錯誤
  下表顯示當使用者安裝應用程式時，用戶端電腦的使用者可能會收到的一些常見錯誤訊息 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 每個錯誤訊息都會列在錯誤最可能原因的描述旁邊。
 
-| 錯誤訊息 | 描述 |
+| 錯誤訊息 | 說明 |
 | - | - |
 | 無法啟動應用程式。 請聯絡應用程式發行者。<br /><br /> 無法啟動應用程式。 請洽詢應用程式廠商以尋求協助。 | 這些是在無法啟動應用程式時所發生的一般錯誤訊息，而且找不到其他特定原因。 通常，這表示應用程式有某種程度的損毀，或 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 存放區已損毀。 |
 | 無法繼續。 應用程式的格式不正確。 請洽詢應用程式發行者以取得協助。<br /><br /> 應用程式驗證失敗。 無法繼續。<br /><br /> 無法取出應用程式檔。 部署中的檔案已損毀。 | 部署中的其中一個資訊清單檔案語法不正確，或包含無法與對應檔案協調的雜湊。 此錯誤也可能表示內嵌在元件中的資訊清單已損毀。 重新建立您的部署並重新編譯應用程式，或在資訊清單中手動尋找並修正錯誤。 |
@@ -139,3 +139,4 @@ ms.locfileid: "85381895"
 ## <a name="see-also"></a>另請參閱
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [針對 ClickOnce 部署進行疑難排解](../deployment/troubleshooting-clickonce-deployments.md)
+- [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)

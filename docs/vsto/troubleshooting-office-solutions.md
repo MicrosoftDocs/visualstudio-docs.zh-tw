@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7bc8db3478f6856b5d3b511e53656c65d762446c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 82fbb41bb1bf0d7ba3da046eb7d22eb8606a7529
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537212"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234714"
 ---
 # <a name="troubleshoot-office-solutions"></a>Office 方案疑難排解
   本節所包含的秘訣，可解決使用 Visual Studio 中的 Office 開發工具建立方案時可能遇到的常見問題。
@@ -57,3 +57,7 @@ ms.locfileid: "85537212"
 - [Office 程式設計的一般工作](../vsto/common-tasks-in-office-programming.md)
 
  列出有關 Office 方案程式設計的常見問題集，並提供可協助解決常見問題的主題連結。
+
+## <a name="see-also"></a>另請參閱
+
+- [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)

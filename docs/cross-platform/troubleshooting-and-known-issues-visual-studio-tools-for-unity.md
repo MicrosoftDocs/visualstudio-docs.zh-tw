@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 7858846585467de3b5b820902938d6019b0d09ff
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 41ef89bbb7b3595c24de5a482eed805e75eb2cdb
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386260"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235078"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
 
@@ -169,3 +169,7 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
     ```
 
 最後，將執行緒傾印傳送至 [vstusp@microsoft.com](mailto:vstusp@microsoft.com) ，並描述當 Visual Studio 變成凍結時所執行的作業。
+
+## <a name="see-also"></a>另請參閱
+
+- [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)

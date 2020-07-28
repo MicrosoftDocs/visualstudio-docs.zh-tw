@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: 了解如何在管理入口網站中設定語言、連絡人、訂用帳戶層級及其他喜好設定
-ms.openlocfilehash: b719e60771ef8cca9b956626ca6e9e3dd91edce5
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e34b9cf1ed32abc81b9c2ebb3ef7c370818c9089
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183492"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234610"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>在管理入口網站中設定您合約的喜好設定
 超級管理員可以在系統管理入口網站（管理入口網站）中設定特定的喜好設定，以供每個合約全域套用。  這些喜好設定會在新增訂閱者時，自動填入系統管理員的訂用帳戶詳細資料，而且只能由超級管理員進行全域修改。  
@@ -24,13 +24,13 @@ ms.locfileid: "84183492"
 1. 使用具有超級管理員權限的識別碼登入管理入口網站。
 2. 按一下 [管理系統管理員]**** 索引標籤。
    > [!div class="mx-imgBorder"]
-   > ![管理員喜好設定按鈕](_img/admin-prefs/admin-prefs-button.png)
+   > ![管理員喜好設定按鈕](_img/admin-prefs/admin-prefs-button.png "按一下 [管理系統管理員]，然後按 [合約喜好設定] 顯示喜好設定")
 
 3. 按一下 [Agreement Preferences] \(合約喜好設定\)****。
 這會在右側開啟一個面板，並顯示您可用的喜好設定。 
 
    > [!div class="mx-imgBorder"]
-   > ![管理員喜好設定飛出視窗對話方塊](_img/admin-prefs/admin-prefs-flyout.png)
+   > ![管理員喜好設定飛出視窗對話方塊](_img/admin-prefs/admin-prefs-flyout.png "設定您的喜好設定，然後按一下 [儲存]")
 
 ## <a name="set-your-preferences"></a>設定您的喜好設定
 讓我們探索每個可用的喜好設定及其效果。 
@@ -75,7 +75,7 @@ ms.locfileid: "84183492"
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Visual Studio 文件](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
@@ -86,6 +86,3 @@ ms.locfileid: "84183492"
 - [指派多個訂用帳戶](assign-license-bulk.md)
 - [編輯訂用帳戶](edit-license.md)
 - [判斷最大使用量](maximum-usage.md)
-
-
-

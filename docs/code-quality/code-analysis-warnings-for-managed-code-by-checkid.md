@@ -100,6 +100,7 @@ f1_keywords:
 - CA1413
 - CA1414
 - CA1415
+- CA1417
 - CA1500
 - CA1501
 - CA1502
@@ -291,12 +292,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ecf66c26838b6e276188eea1c6fa04d3f5d1799
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: b216252ca33495a065c1dbcc6e091a2e5244de78
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454185"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235091"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>CheckId 受控碼的程式碼分析警告
 
@@ -397,6 +398,7 @@ ms.locfileid: "86454185"
 | CA1413 | [CA1413:避免在 COM 可見實值類型中使用非公用欄位](../code-quality/ca1413.md) | COM 可見實值類型的非公用執行個體欄位對 COM 用戶端而言是可見的。 請檢閱不應該公開之資訊的欄位內容，或是會造成未預期的設計或安全性結果的欄位內容。 |
 | CA1414 | [CA1414：使用 MarshalAs 標記布林值 P/Invoke 引數](../code-quality/ca1414.md) | 布林資料類型在 Unmanaged 程式碼中有多種表示。 |
 | CA1415 | [CA1415：正確宣告 P/Invoke](../code-quality/ca1415.md) | 此規則會尋找以 [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] 函式為目標 (具有指向 OVERLAPPED 結構參數的指標) 的作業系統叫用方法宣告，而且相對應的 Managed 參數不是指向 System.Threading.NativeOverlapped 結構的指標。 |
+| CA1417 | [CA1417：不要 `OutAttribute` 在 P/invoke 的字串參數上使用](../code-quality/ca1417.md) | 如果字串是暫存字串，以傳值方式傳遞的字串參數 `OutAttribute` 可能會使執行時間不穩定。 |
 | CA1500 | [CA1500:變數名稱不應該與欄位名稱相符](../code-quality/ca1500.md) | 執行個體方法宣告參數或區域變數，而其名稱符合宣告類型的執行個體欄位，因此導致錯誤。 |
 | CA1501 | [CA1501:避免在物件間過度繼承](../code-quality/ca1501.md) | 類型在其繼承階層架構 (Inheritance Hierarchy) 中超過四個層級的深度。 太深的巢狀類型階層架構可能會難以依循、了解和維護。 |
 | CA1502 | [CA1502:避免造成過度複雜的方法](../code-quality/ca1502.md) | 這個規則會測量整個方法中線性獨立路徑的數目，此數目是由條件分支的數目與複雜度決定。 |

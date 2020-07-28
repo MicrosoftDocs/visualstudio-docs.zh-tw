@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: ae91f7b9c90f0b06c449d26f67fe4fcc3434518e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 24df9f7c44ea2dbb9e9899abf68823683422da71
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85768700"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235065"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>疑難排解及建立 MSBuild 問題的記錄檔
 
@@ -44,7 +44,7 @@ ms.locfileid: "85768700"
 - PropertyGroups 和 Imports
 - ItemDefinitionGroups
 - ItemGroups
-- 目標
+- Targets
 
 因此，假設順序如下：
 
@@ -131,3 +131,7 @@ Msbuild.binlog 檔案會建立在您執行 MSBuild 的目錄中。 您可以使�
     ```
 
     Msbuild.log 檔案會建立在您執行 msbuild 的目錄中。
+
+## <a name="see-also"></a>另請參閱
+
+- [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)
