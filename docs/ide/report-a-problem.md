@@ -1,5 +1,5 @@
 ---
-title: 報告問題:狀態和常見問題解答
+title: 回報問題：狀態和常見問題
 description: 提供 [回報問題] 工具的概觀，並包括問題狀態和定義
 ms.date: 11/15/2018
 ms.custom: seodec18
@@ -9,14 +9,14 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6172be3995596807562c1dc7956a1ca8952e5ad4
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 95623d72e70e572ca7605c34e2e25e7186c284e1
+ms.sourcegitcommit: 4a77403b6bd33c5a6e66a3eefd42c81c39fb67ca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276471"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87330956"
 ---
-# <a name="report-a-problem-states-and-faq"></a>報告問題:狀態和常見問題解答
+# <a name="report-a-problem-states-and-faq"></a>回報問題：狀態和常見問題
 
 [回報問題] 工具可讓 Visual Studio 開發人員社群提交問題。 您的每個問題報表都會變成我們核心工程系統的工作項目，讓您能夠直接與產品小組交流，以協助我們識別及解決有影響的問題。 與豐富診斷資訊一起提交的意見反應，對於改善 Visual Studio 產品系列至關重要。 我們非常感謝您撥冗回報問題。
 
@@ -95,12 +95,6 @@ ms.locfileid: "81276471"
 ![問題回報在開發人員社群上的 [已關閉 - 其他產品] 狀態](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
 
 [已關閉 - 其他產品]**** 表示我們已判定您的問題適用於另一個產品。 如需外部產品及任何相關連結，請參閱 Microsoft 的評論。
-
-- - -
-
-![問題回報在開發人員社群上的 [已關閉 - 不予修正] 狀態](../ide/media/ProblemStates/ClosedWontFix.jpg)
-
-[已關閉 - 不予修正]**** 表示由於缺乏產品方向調整或社群影響等因素，我們並未處理此問題。 為求更清楚明瞭，請參閱 Microsoft 的評論。  雖然我們無法解決此特定問題，但可保證您的所有意見都極具價值並有助於改善 Visual Studio。
 
 - - -
 
