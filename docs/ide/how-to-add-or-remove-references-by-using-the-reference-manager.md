@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
+ms.sourcegitcommit: 9179c33a78c2ac690ce908d7c73eef50b6e367f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284722"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87390258"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用參考管理員新增或移除參考
 
@@ -47,6 +47,9 @@ ms.locfileid: "85284722"
 - **Windows**，其中包含 [核心]**** 和 [延伸模組]**** 子群組。 您可以使用 [物件瀏覽器]**** 探索 Windows SDK 或延伸模組 SDK 中的參考。
 
 - **瀏覽**，其中包含 [最近]**** 子群組
+ 
+    > [!NOTE]
+    > 如果您正在開發 c + + 專案，您可能不會在 [參考管理員] 對話方塊中看到 **[流覽]** 。
 
 ## <a name="add-a-reference"></a>加入參考
 

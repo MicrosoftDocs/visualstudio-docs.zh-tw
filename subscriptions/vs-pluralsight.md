@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 04/20/2020
 ms.topic: how-to
 description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsight 訓練課程訂用帳戶。
-ms.openlocfilehash: e3b8c75249a9246ae15384457957ddea34ea5f2e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
+ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902816"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87375894"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -32,7 +32,7 @@ ms.locfileid: "85902816"
    >
    > **「請注意：如果您先前透過 Visual Studio 訂閱啟用其他 Pluralsight 供應項目，此代碼可能無法讓您建立新的 Pluralsight 帳戶。」**
 
-2. 您會收到已順利擷取優待券代碼的通知。  按一下 [啟動]****。
+2. 您會收到已順利擷取優待券代碼的通知。  按一下 [啟用]。
 
 3. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。
    - 在表單中提供要求的連絡資訊
@@ -82,13 +82,7 @@ ms.locfileid: "85902816"
 答：並非所有的 Visual Studio Enterprise 訂用帳戶都包含 Pluralsight 權益。  請檢查[資格資料表](#eligibility)，以查看您的訂用帳戶是否符合資格。
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>問：我是否可以存取任何自訂的學習播放清單或頻道？
-答：是，Visual Studio 訂閱者可存取專家頻道，作為 Pluralsight 訓練權益的一部分。 這些頻道是由 Microsoft 專家特別策劃，以利使用者學習 .Net、Azure、DevOps 及行動性領域的知識。 透過 Visual Studio 訂用帳戶入口網站啟用您的 Pluralsight 權益 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) ，以在 Pluralsight 登陸頁面上存取這些頻道–
-
-• Scott Hanselmann （.Net，Azure）-[https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
-
-• Donovan 棕色（DevOps）-[https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
-
-• James Montemagno （行動性）-[https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
+A：是。 身為 Visual Studio 訂閱者，您可以存取精選角色、學習路徑和自訂頻道（播放清單），作為 Pluralsight 訓練權益的一部分。 精選內容已由 Microsoft 和 Pluralsight 特別策劃，並適用于學習重要領域。 透過您的 Visual Studio 訂用帳戶入口網站啟用您的 Pluralsight 權益， <https://my.visualstudio.com/benefits> 以在 Pluralsight 首頁上存取此內容及其他內容。
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>問：當我的 Pluralsight 訂用帳戶到期時會發生什麼事？
 答：在免費的 Pluralsight 訂用帳戶結束時，您可以選擇直接從 Pluralsight 購買訂用帳戶。  請連絡 [Pluralsight](https://www.pluralsight.com) 以了解完整詳細資料。
@@ -99,12 +93,12 @@ ms.locfileid: "85902816"
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Visual Studio 文件](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 一旦您的帳戶建立完成，即準備好開始訓練課程。  流覽 [https://www.pluralsight.com](https://www.pluralsight.com) 並按一下頁面右上角的 [**登入**] 以開始新的課程，或回到已在進行中的課程。
 
 啟用您的[Azure DevTest 個別點數](vs-azure.md)，以利用您自己的開發沙箱。 
