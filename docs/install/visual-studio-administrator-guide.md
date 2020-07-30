@@ -2,7 +2,7 @@
 title: Visual Studio 系統管理員指南
 titleSuffix: ''
 description: 深入了解如何在企業環境中部署 Visual Studio。
-ms.date: 03/09/2020
+ms.date: 07/29/2020
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 70eb53c2e2a1625f167844d1e774915fdb1304ac
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: db1e57097b492a8847be6d96719054a6b917e4bd
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85419259"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425403"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 系統管理員指南
 
@@ -40,13 +40,17 @@ ms.locfileid: "85419259"
 
 * 決定您的服務需求。
 
-  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 如需詳細資訊，請參閱[Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)頁面的「***企業和專業客戶的支援選項***」一節，以及[如何：在服務基準頁面上更新 Visual Studio](update-servicing-baseline.md) 。
+  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 如需詳細資訊，請參閱[Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)頁面的「***企業和專業客戶的支援選項***」一節，以及[在「服務基準](update-servicing-baseline.md)」頁面上的「更新 Visual Studio。
 
   如果您打算套用服務更新和累積的功能更新，您可以選擇最新版本。
 
 * 決定更新模型。
 
   您希望個別用戶端電腦在何處取得更新？ 具體來說，請決定要從網際網路或從全公司的本機共用取得更新。 接著，如果您選擇使用本機的共用，請決定要由個別使用者更新自己的用戶端，或由系統管理員以程式設計方式更新用戶端。
+
+  您可以使用最新的產品更新來更新 Visual Studio 的網路安裝配置，以便將其做為最新 Visual Studio 更新的安裝點，同時維護已部署至用戶端工作站的安裝。 如需詳細資訊，請參閱[更新 Visual Studio 的網路型安裝](../install/update-a-network-installation-of-visual-studio.md)。
+
+  對於未連線到網際網路的電腦，建立最基本的配置是更新離線 Visual Studio 實例的最簡單且最快速的方式。 如需詳細資訊，請參閱[使用最少的離線版面配置來更新 Visual Studio](update-minimal-layout.md)。
 
 * 決定您公司需要的[工作負載和元件](workload-and-component-ids.md?view=vs-2019)。
 
@@ -62,13 +66,17 @@ ms.locfileid: "85419259"
 
 * 決定您的服務需求。
 
-  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 如需詳細資訊，請參閱[Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)頁面的***舊版 Visual Studio 的支援***一節，以及[如何：在服務基準頁面上更新 Visual Studio](update-servicing-baseline.md) 。
+  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 如需詳細資訊，請參閱[Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)頁面的***舊版 Visual Studio 的支援***一節，以及在[服務基準頁面上的更新 Visual Studio](update-servicing-baseline.md) 。
 
   如果您打算套用服務更新和累積的功能更新，您可以選擇最新版本。
 
 * 決定更新模型。
 
   您希望個別用戶端電腦在何處取得更新？ 具體來說，請決定要從網際網路或從全公司的本機共用取得更新。 接著，如果您選擇使用本機的共用，請決定要由個別使用者更新自己的用戶端，或由系統管理員以程式設計方式更新用戶端。
+
+  您可以使用最新的產品更新來更新 Visual Studio 的網路安裝配置，以便將其做為最新 Visual Studio 更新的安裝點，同時維護已部署至用戶端工作站的安裝。 如需詳細資訊，請參閱[更新 Visual Studio 的網路型安裝](../install/update-a-network-installation-of-visual-studio.md)。
+
+  對於未連線到網際網路的電腦，建立最基本的配置是更新離線 Visual Studio 實例的最簡單且最快速的方式。 如需詳細資訊，請參閱[使用最少的離線版面配置來更新 Visual Studio](update-minimal-layout.md)。
 
 * 決定您公司需要的[工作負載和元件](workload-and-component-ids.md?view=vs-2017)。
 

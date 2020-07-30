@@ -2,17 +2,17 @@
 title: 下載 Visual Studio 訂用帳戶中的軟體標題 | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
-ms.date: 03/07/2020
+ms.date: 07/29/2020
 ms.topic: conceptual
 description: 了解如何尋找及下載 Visual Studio 訂用帳戶中的 Microsoft 軟體標題
-ms.openlocfilehash: 5b21a87f0dc84189381f63274343f5fd7a384c5c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: bf2afafc99993b2b3717f0264fee89b747eab58a
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180229"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434288"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>下載 Visual Studio 訂用帳戶中的軟體標題
 根據您擁有的 Visual Studio 訂用帳戶，有各種不同的 Microsoft 軟體標題可供您使用。  本文將概述如何尋找及下載充分運用訂用帳戶所需的軟體。 
@@ -27,11 +27,11 @@ ms.locfileid: "84180229"
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>如何在訂閱者入口網站尋找下載？
 當您瀏覽[下載](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs)頁面時，您會看到依產品類型分組陳列的熱門下載。  您可以選取顯示的其中一項熱門下載，或使用頁面頂端的搜尋列搜尋任何產品。
 > [!div class="mx-imgBorder"]
-> ![訂閱者下載頁面](_img/subscriber-downloads/subscriber-downloads-resized.png)
+> ![訂閱者下載頁面](_img/subscriber-downloads/subscriber-downloads-resized.png "當您按一下 [下載] 分頁時，會顯示最受歡迎的下載。")
 
 例如，如果您從 [開發人員工具] 清單中選擇 **Visual Studio 2019**，就會看到可用的 Visual Studio 2019 下載清單。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2019 下載](_img/subscriber-downloads/vs2019-product-list.png)
+> ![Visual Studio 2019 下載](_img/subscriber-downloads/vs2019-product-list.png "當您選取產品時，會顯示可用版本清單。")
 
 您可以使用所提供的下拉式功能表，輕鬆地選取您的架構、語言和檔案類型。 選擇您慣用的選項，然後按一下 [下載]**** 開始下載產品。
 
@@ -41,19 +41,19 @@ ms.locfileid: "84180229"
 ### <a name="displaying-download-details"></a>顯示下載詳細資料
 按一下產品名稱或 [資訊]**** 連結即會顯示該下載的詳細資料，並可存取產品的版本資訊。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2019 下載詳細資料](_img/subscriber-downloads/vs2019-info.png)
+> ![Visual Studio 2019 下載詳細資料](_img/subscriber-downloads/vs2019-info.png "[資訊] 索引標籤會顯示下載的相關資訊，並提供版本資訊的存取權。")
 
 在詳細資料窗格中，您也可以按一下 [金鑰]**** 索引標籤來查看產品金鑰的狀態。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2019 產品金鑰](_img/subscriber-downloads/vs2019-keys.png)
+> ![Visual Studio 2019 產品金鑰](_img/subscriber-downloads/vs2019-keys.png "[金鑰] 索引標籤會顯示您剩餘的金鑰數，並可讓您索取可用的金鑰。")
 
 ### <a name="obtaining-product-keys"></a>取得產品金鑰
 若要取得用於下載的產品金鑰，您可以按一下標示為 [Get Key (取得金鑰)]**** 的藍色金鑰；如果您已在檢視詳細資料窗格，請在 [金鑰]**** 索引標籤上按一下 [Claim key (索取金鑰)]****。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2019 索取產品金鑰](_img/subscriber-downloads/vs2019-claim-keys.png)
+> ![Visual Studio 2019 索取產品金鑰](_img/subscriber-downloads/vs2019-claim-keys.png "按一下 [宣告金鑰] 以索取剩餘的金鑰。")
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+- [Visual Studio 文件](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
@@ -67,7 +67,3 @@ ms.locfileid: "84180229"
 - [Azure DevTest 個人點數](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Visual Studio IDE](vs-ide-benefit.md)
-
-
-
-

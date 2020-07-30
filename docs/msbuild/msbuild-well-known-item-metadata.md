@@ -16,16 +16,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e9320525d770344f131d9e3f04b357de43b5e73
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c810e166ef6f04befdbf7a5d18fe20bb65b8a299
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633092"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425377"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 已知的項目中繼資料
 
-下表說明在建立期間指派給每個項目的中繼資料。 每個範例都使用了下列項目宣告，以在專案中包含 *C:\MyProject\Source\Program.cs* 檔案。
+專案中繼資料是附加至專案的值。 當建立專案時，MSBuild 會將部分指派給專案，但您也可以定義所需的任何中繼資料。 某些使用者定義的中繼資料值對 MSBuild、特定工作或 Sdk （例如 .NET SDK）有意義。
+
+本文中的第一個表格說明在建立時指派給每個專案的中繼資料。 下表顯示一些選擇性中繼資料，其中有 MSBuild 的意義，您可以定義它來控制組建行為。 每個範例都使用了下列項目宣告，以在專案中包含 *C:\MyProject\Source\Program.cs* 檔案。
 
 ```xml
 <ItemGroup>
@@ -36,19 +38,20 @@ ms.locfileid: "77633092"
 |項目中繼資料|描述|
 |-------------------|-----------------|
 |%(FullPath)|包含項目的完整路徑。 例如：<br /><br /> *C:\MyProject\Source\Program.cs*|
-|%(RootDir)|包含項目的根目錄。 例如：<br /><br /> *C：\\*|
+|%(RootDir)|包含項目的根目錄。 例如：<br /><br /> *C\\*|
 |%(Filename)|包含項目的檔案名稱 (不含副檔名)。 例如：<br /><br /> *程式*|
 |%(Extension)|包含項目的副檔名。 例如：<br /><br /> *.cs*|
-|%(RelativeDir)|包含 `Include` 屬性中指定的路徑，直到最後一個反斜線 (\\) 為止。 例如：<br /><br /> *源\\*<br /><br /> 如果`Include`屬性是完整路徑，則`%(RelativeDir)`從根目錄`%(RootDir)`開始。  例如： <br /><br /> *C：[我的專案]來源\\*|
+|%(RelativeDir)|包含 `Include` 屬性中指定的路徑，直到最後一個反斜線 (\\) 為止。 例如：<br /><br /> *來源\\*<br /><br /> 如果 `Include` 屬性是完整路徑，則 `%(RelativeDir)` 從根目錄開始 `%(RootDir)` 。  例如： <br /><br /> *C:\MyProject\Source\\*|
 |%(Directory)|包含項目的目錄 (不含根目錄)。 例如：<br /><br /> *MyProject\\Source\\*|
-|%(RecursiveDir)|如果 `Include` 屬性包含萬用字元 \*\*，此中繼資料會指定取代萬用字元的部分路徑。 有關萬用字元的詳細資訊，請參閱[操作資料：選擇要生成的檔](../msbuild/how-to-select-the-files-to-build.md)。<br /><br /> 如果資料夾*C：\MySolution_MyProject_Source\\*包含*檔Program.cs*，並且專案檔案包含此專案：<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> 則 `%(MyItem.RecursiveDir)` 的值會是 *MySolution\MyProject\Source\\*。|
-|%(Identity)|`Include`屬性中指定的項。 例如：<br /><br /> *Source\Program.cs*|
+|%(RecursiveDir)|如果 `Include` 屬性包含萬用字元 \*\*，此中繼資料會指定取代萬用字元的部分路徑。 如需萬用字元的詳細資訊，請參閱[如何：選取要建立的](../msbuild/how-to-select-the-files-to-build.md)檔案。<br /><br /> 如果資料夾*C:\MySolution\MyProject\Source \\ *包含*Program.cs*檔案，而且專案檔包含此專案：<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> 則 `%(MyItem.RecursiveDir)` 的值會是 *MySolution\MyProject\Source\\*。|
+|%(Identity)|屬性中指定的專案 `Include` 。 例如：<br /><br /> *Source\Program.cs*|
 |%(ModifiedTime)|包含上次修改項目時間的時間戳記。 例如：<br /><br /> `2004-07-01 00:21:31.5073316`|
 |%(CreatedTime)|包含項目建立時間的時間戳記。 例如：<br /><br /> `2004-06-25 09:26:45.8237425`|
 |%(AccessedTime)|包含上次存取項目時間的時間戳記。<br /><br /> `2004-08-14 16:52:36.3168743`|
 
 ## <a name="see-also"></a>另請參閱
 
+- [一般 MSBuild 專案中繼資料](common-msbuild-item-metadata.md)
 - [項目](../msbuild/msbuild-items.md)
-- [配料](../msbuild/msbuild-batching.md)
+- [批次處理](../msbuild/msbuild-batching.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
