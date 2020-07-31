@@ -40,8 +40,10 @@
       href: install/uninstall-visual-studio.md
     - name: Visual Studio 系統管理員指南
       items:
-        - name: 總覽
+        - name: 概觀
           href: install/visual-studio-administrator-guide.md
+        - name: Visual Studio 企業版指南
+          href: install/visual-studio-enterprise-guide.md
         - name: 使用命令列
           items:
             - name: 使用命令列參數來安裝 Visual Studio
