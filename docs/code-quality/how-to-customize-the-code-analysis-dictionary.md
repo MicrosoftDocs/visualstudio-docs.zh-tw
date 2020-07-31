@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01c3ad83cea8dc1a28a817677be102c87ebc8f87
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371868"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453644"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自訂程式碼分析字典
 
@@ -266,12 +266,12 @@ ms.locfileid: "85371868"
 
 1. 在**方案總管**中，請使用下列其中一個程式：
 
-2. 若要將字典加入至單一專案，請以滑鼠右鍵按一下專案名稱，然後按一下 [**加入現有專案**]。 在 [**加入現有專案**] 對話方塊中指定檔案。
+    - 若要將字典加入至單一專案，請以滑鼠右鍵按一下專案名稱，然後按一下 [**加入現有專案**]。 在 [**加入現有專案**] 對話方塊中指定檔案。
+  
+    - 若要加入兩個或多個專案之間共用的字典，請在 [**加入現有專案**] 對話方塊中找出要共用的檔案，按一下 [**加入**] 按鈕上的向下箭號，然後按一下 [**加入為連結**]。
 
-3. 若要加入兩個或多個專案之間共用的字典，請在 [**加入現有專案**] 對話方塊中找出要共用的檔案，按一下 [**加入**] 按鈕上的向下箭號，然後按一下 [**加入為連結**]。
+2. 在**方案總管**中，以滑鼠右鍵按一下**CustomDictionary.xml**的檔案名，然後按一下 [**屬性**]。
 
-4. 在**方案總管**中，以滑鼠右鍵按一下**CustomDictionary.xml**的檔案名，然後按一下 [**屬性**]。
+3. 從 [**建立動作**] 清單中，選取 [ **CodeAnalysisDictionary**]。
 
-5. 從 [**建立動作**] 清單中，選取 [ **CodeAnalysisDictionary**]。
-
-6. 從 [**複製到輸出目錄**] 清單中，選取 [**不要複製**]。
+4. 從 [**複製到輸出目錄**] 清單中，選取 [**不要複製**]。

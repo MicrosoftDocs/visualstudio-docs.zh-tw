@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0f4fff1b13f8e3827d685ee16ccea55e78f733a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289088"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453759"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
 在這個 Visual Studio 程式碼編輯器簡介中，我們將探討 Visual Studio 讓撰寫、巡覽和了解程式碼更加輕鬆的一些方式。
 
 > [!TIP]
-> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面免費進行安裝。 根據您執行的應用程式開發類型，您可能需要安裝 Visual Studio 隨附的 **Node.js 開發工作負載**。
+> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面免費進行安裝。 根據您執行的應用程式開發類型，您可能需要安裝 Visual Studio 隨附的 **Node.js 開發工作負載**。 如需取得 TypeScript 語言服務的詳細資訊，請參閱[typescript 支援](../javascript/javascript-in-vs-2019.md#typescript-support)。
 
 本文假設您已熟悉 JavaScript 開發。 如果您不熟悉，建議您先瀏覽教學課程 (例如[建立 Node.js 和 Express 應用程式](../javascript/tutorial-nodejs.md))。
 
@@ -65,6 +65,8 @@ IntelliSense 是您撰寫程式碼時的重要資源。 它可以顯示類型可
 ![檢視錯誤清單](../javascript/media/write-code-error-list.png)
 
 您可以在 `"data"` 前面新增逗號 (`,`) 來修正此程式碼。
+
+如需 linting 的詳細資訊，請參閱[linting](https://github.com/microsoft/JSTSdocs/blob/master/articles/editor/linting.md)。
 
 ## <a name="comment-out-code"></a>註解化程式碼
 
@@ -116,7 +118,7 @@ for (var i = 0; i < length; i++) {
 
 您可以藉由選擇 [**編輯**] [IntelliSense] [  >  **IntelliSense**  >  **插入程式碼片段**]，然後選擇您的語言資料夾，來查看您語言的可用程式碼片段。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼片段](../ide/code-snippets.md)
 - [巡覽程式碼](../ide/navigating-code.md)

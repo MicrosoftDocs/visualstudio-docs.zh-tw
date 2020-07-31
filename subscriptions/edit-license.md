@@ -2,17 +2,17 @@
 title: 在系統管理入口網站編輯訂用帳戶 | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 03/03/2020
+ms.date: 07/30/2020
 ms.topic: how-to
 description: 了解系統管理員如何編輯訂用帳戶指派。
-ms.openlocfilehash: 32d430ac4afe88541fd839827652ec7613ba03b1
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902928"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453734"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>編輯 Visual Studio 訂用帳戶指派
 身為訂用帳戶管理員，您可以變更指派給您組織內個人的訂用帳戶。  本文章討論您可以進行的變更類型，並提供必要的步驟。
@@ -25,7 +25,7 @@ ms.locfileid: "85902928"
 
 若要編輯訂閱者，請選取滑鼠停留在訂閱者電子郵件地址上時，旁邊出現的省略符號 (…)。 隨即顯示下拉式清單。  選取 [**編輯**] 以修改訂閱者的詳細資料。 
 > [!div class="mx-imgBorder"]
-> ![選取要編輯的訂閱者](_img/edit-license/select-subscriber.png)
+> ![選取要編輯的訂閱者](_img/edit-license/select-subscriber.png "按一下省略號，然後選擇 [編輯]。")
 
 您可以更新訂閱者的名字、姓氏、訂閱等級、電子郵件地址、國家/地區、語言、下載和參考欄位。 編輯訂閱者的資訊，然後按一下 [**儲存**]。
 
@@ -45,25 +45,23 @@ ms.locfileid: "85902928"
 
 2. 大量編輯使用 Excel 範本編輯訂閱者資訊。 在 [大量編輯] 方塊中，按一下 [Export this Excel (匯出此 Excel)]**** 下載目前的訂閱者清單，包括其所有資訊。
    > [!div class="mx-imgBorder"]
-   > ![編輯授權 - 匯出大量編輯清單](_img/edit-license/edit-license-bulk-edit-export.png)
+   > ![編輯授權 - 匯出大量編輯清單](_img/edit-license/edit-license-bulk-edit-export.png "按一下 [匯出此 excel] 以建立目前訂閱的清單。")
 
 3. 接下來，將檔案儲存在本機，以便輕鬆找到它，進行任何必要變更後再上傳。 若要確保成功上傳，請勿編輯 [大量編輯] 檔案中**的訂用帳戶層級或訂**用帳戶 GUID，因為這樣會導致上傳失敗。
 
 4. 返回 Visual Studio 訂用帳戶管理入口網站的 [大量編輯] 對話方塊中，按一下 [瀏覽]****。 選取您儲存的 Excel 檔案，然後按一下 [確定]****。 您會在螢幕上看到上傳進度。
    > [!div class="mx-imgBorder"]
-   > ![編輯授權 - 大量編輯檔案上傳](_img/edit-license/edit-license-bulk-file-upload1.png)
+   > ![編輯授權 - 大量編輯檔案上傳](_img/edit-license/edit-license-bulk-file-upload1.png "流覽至已完成 Excel 檔案的位置，選取該檔案，然後按一下 [確定]。")
 
 5. 上傳檔案後，您會看到通知，讓您知道作業已順利完成。 此時，您的編輯會反映在訂閱者資訊中。
 
-## <a name="see-also"></a>另請參閱
-- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
+## <a name="see-also"></a>請參閱
+- [Visual Studio 文件](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 - 需要指派特定的訂用帳戶識別碼嗎？ 請參閱指派訂用帳戶識別碼。 
 - 如需協助以尋找特定的訂閱，請參閱[搜尋訂閱](search-license.md)。
 - 需要建立您所有訂閱項目的清單嗎？  參閱[匯出訂用帳戶](exporting-subscriptions.md)。
-
-

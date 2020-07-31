@@ -6,28 +6,28 @@ manager: lank
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
 ms.date: 03/03/2020
 ms.topic: conceptual
-description: 了解系統管理員如何解決過度分派訂閱的問題
-ms.openlocfilehash: a4cdab7d4e6e5925bab3d4dc7c800dc33ef6d713
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+description: 瞭解系統管理員如何解決過度配置的訂閱
+ms.openlocfilehash: b518dc9300862e7c39af0489734734668097ef9f
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232443"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453721"
 ---
-# <a name="overallocated-subscriptions"></a>超額配置的訂用帳戶
-有時，在新增訂閱者之後訂單也有所變更，而可能導致已指派的訂閱數超過公司所擁有的授權數。 這稱為「過度分派」。  
+# <a name="over-allocated-subscriptions"></a>過度配置的訂閱
+有時，在新增訂閱者之後訂單也有所變更，而可能導致已指派的訂閱數超過公司所擁有的授權數。 這稱為「過度配置」。  
 
-要查看子腳本分配，請按一下左側的頂部圖示以打開分配窗格。  
+若要查看您的訂用帳戶配置，請按一下左側的上方圖示，以開啟 [配置] 窗格。  
 
 > [!NOTE]
-> Open License 方案不允許過度分派。  此外，其他程式在入口網站中可能會以不同的方式顯示此資訊。
+> Open License 程式中不允許過度配置。  此外，其他程式在入口網站中可能會以不同的方式顯示此資訊。
 >
 > [!div class="mx-imgBorder"]
-> ![過度領取的訂閱通知](_img/over-claimed/over-claimed-alert.png)
+> ![過度領取的訂閱通知](_img/over-claimed/over-claimed-alert.png "[過度配置] 的數目會列在 [總覽] 中，並以圖表上每個訂用帳戶類型的雜湊橫條表示。")
 
-請注意，顯示幕使用雜湊條指示分配過度的訂閱。  所有訂閱類型的超額分配數包含在頂部的"概述"部分中，每個訂閱級別還顯示其自己的分配狀態。  
+請注意，顯示會使用雜湊的橫條來指出過度配置的訂閱。  所有訂用帳戶類型的過度配置數目會包含在頂端的 [總覽] 區段中，而且每個訂用帳戶層級也會顯示自己的配置狀態。  
 
-## <a name="resolve-overallocated-subscriptions"></a>解決過度分派的訂閱
+## <a name="resolve-over-allocated-subscriptions"></a>解決過度配置的訂閱
 有幾個方式可以解決過度分派：
 - 聯絡您的轉銷商以購買額外的訂閱。
 - 等到您的年度校正期間，然後在該時間點針對過度分派的訂閱支付費用。 
@@ -41,12 +41,12 @@ ms.locfileid: "80232443"
 >
 > 客戶必須負責確保指派的每個 GitHub 訂用帳戶都對應一個含 GitHub 的 Visual Studio 訂用帳戶 (在管理入口網站中指派)，以保持符合這個訂用帳戶的授權需求。
 
-## <a name="see-also"></a>另請參閱
-- [視覺化工作室文檔](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文檔](https://docs.microsoft.com/azure/devops/)
+## <a name="see-also"></a>請參閱
+- [Visual Studio 文件](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文檔](https://docs.microsoft.com/microsoft-365/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
 - 深入了解如何管理[含 GitHub Enterprise 的 Visual Studio 訂用帳戶](assign-github.md)。
-- 有關視覺工作室訂閱的銷售、訂閱、帳戶和計費説明，請聯繫視覺化工作室[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 如需 Visual Studio 訂閱的銷售、訂閱、帳戶和計費的協助，請聯絡 Visual Studio[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。

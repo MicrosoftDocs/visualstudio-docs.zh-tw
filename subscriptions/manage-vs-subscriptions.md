@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
-ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444867"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453687"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
@@ -26,14 +26,14 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 
 使用中的訂閱會醒目顯示在「權益」頁面的藍色橫幅中， 以及頁面右上方。
 > [!div class="mx-imgBorder"]
-> ![使用中的訂閱](_img/manage-vs-subscriptions/current-subscription-cropped.png)
+> ![現用的訂閱](_img/manage-vs-subscriptions/current-subscription-cropped.png "您目前的訂用帳戶會顯示在頁面頂端和 [訂閱] 下拉式清單中。")
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>若要在訂閱之間切換，您可以：
 
 - 按一下右上方的下拉式清單，然後從清單中選擇訂閱
 - 按一下 [訂閱] 索引標籤，然後按一下想要的訂閱
   > [!div class="mx-imgBorder"]
-  > ![切換訂閱](_img/manage-vs-subscriptions/change-subscription-resized.png)
+  > ![切換訂閱](_img/manage-vs-subscriptions/change-subscription-resized.png "按一下 [訂閱] 索引標籤，以查看您所有訂用帳戶的詳細資訊，並在其間切換。")
 
 ### <a name="if-your-subscription-is-not-visible"></a>如果未顯示您的訂閱...
 
@@ -78,7 +78,7 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 如果您想要接收關於您的訂閱和權益的定期更新 (包括 Visual Studio 訂閱電子報)，請[更新您的喜好設定](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)，方法是選取您 Visual Studio 設定檔中的 [Visual Studio 訂閱] 核取方塊。 您隨時可以變更這些設定和取消訂閱。 
 
    > [!div class="mx-imgBorder"]
-   > ![設定喜好設定](_img/manage-vs-subscriptions/change-prefs.png)
+   > ![設定喜好設定](_img/manage-vs-subscriptions/change-prefs.png "按一下 [Visual Studio 訂閱者案電子郵件] 核取方塊以接收更新。")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>將訂用帳戶連結至現有的 Azure DevOps Services 或 Azure 訂用帳戶
 如果您是使用個人 Microsoft 帳戶 (MSA) 登入訂用帳戶，且其中一個訂用帳戶使用由 Azure 管理的公司或學校帳戶，並包含 Azure DevOps Services 或 Microsoft Azure，那麼您可以將這兩個訂用帳戶連結起來。 這個連結稱為「其他帳戶」，可讓您繼續使用 MSA 登入您的訂用帳戶，同時存取與您學校或公司帳戶建立關聯的現有 Azure、Azure DevOps Services 或 IDE 資源。
@@ -99,13 +99,13 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>問：如果我未更新訂閱，Microsoft 會保留我的資料多久？
 答：根據購買管道，Microsoft 維護客戶資料的時間長度不一。
 
-| 通路                                                | 持續時間 (天數) |
+| 管道                                                | 持續時間 (天數) |
 |--------------------------------------------------------|-----------------|
 |    零售 (例如透過 Microsoft Store)               |    360          |
 |    大量授權服務中心 (VLSC)              |    180          |
 |    Microsoft 產品和服務合約 (MPSA)    |    180          |
 |    Visual Studio 雲端訂閱                   |    180          |
-|    程式(例如 MCT、MPN、想像)          |    180          |
+|    程式（例如 MCT、MPN、想像）          |    180          |
 |    禁止轉售 (例如 MVP、MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
@@ -113,16 +113,16 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 > - 如果您選擇關閉 Microsoft 帳戶或 Azure AD，則會立即匿名您的個人資料。
 > - 如果您有使用中的訂閱，則不會完全移除您的個人資料。
 
-## <a name="see-also"></a>另請參閱
-- [視覺化工作室文件](https://docs.microsoft.com/visualstudio/)
-- [Azure 開發人員文件](https://docs.microsoft.com/azure/devops/)
+## <a name="see-also"></a>請參閱
+- [Visual Studio 文件](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 文件](https://docs.microsoft.com/azure/)
-- [微軟 365 文件](https://docs.microsoft.com/microsoft-365/)
+- [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
-您是否管理組織的訂閱?  瞭解有關管理可視化工作室訂閱的更多詳細資訊:
-- [配置單一訂閱](assign-license.md)
-- [配置多個訂閱](assign-license-bulk.md)
+您是否管理組織的訂用帳戶？  深入瞭解如何管理 Visual Studio 訂閱：
+- [指派個別訂閱](assign-license.md)
+- [指派多個訂用帳戶](assign-license-bulk.md)
 - [編輯訂用帳戶](edit-license.md)
 - [刪除訂用帳戶](delete-license.md)
-- [確定最大使用量](maximum-usage.md)
+- [判斷最大使用量](maximum-usage.md)
