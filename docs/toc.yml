@@ -1,7 +1,7 @@
 - name: Visual Studio IDE 文件
   href: ide/index.yml
   pdf_name: Visual Studio documentation
-- name: 總覽
+- name: 概觀
   expanded: true
   items:
     - name: Visual Studio 概觀
@@ -402,8 +402,8 @@
                   href: ide/reference/extract-local-function.md
                 - name: 內嵌暫存變數
                   href: ide/reference/inline-temporary-variable.md
-                - name: 針對未匯入的類型完成 IntelliSense
-                  href: ide/reference/intellisense-completion-unimported-types.md
+                - name: IntelliSense 完成未匯入的類型及擴充方法
+                  href: ide/reference/intellisense-completion-unimported-types-extension-methods.md
                 - name: 轉換條件運算式和邏輯運算
                   href: ide/reference/invert-conditional-logical.md
                 - name: 反轉 if 陳述式
@@ -812,7 +812,7 @@
         - name: 設計國際化應用程式
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-- name: Build
+- name: 組建
   items:
     - name: 概觀
       displayName: Compile build
@@ -940,7 +940,7 @@
           href: ide/filtered-solutions.md
         - name: 秘訣和訣竅
           href: ide/visual-studio-performance-tips-and-tricks.md
-- name: 協助工具選項
+- name: Accessibility
   items:
     - name: 管理協助工具功能
       href: ide/reference/accessibility-features-of-visual-studio.md
@@ -1060,7 +1060,7 @@
           href: ide/reference/immediate-window.md
         - name: 其他檔案
           href: ide/reference/miscellaneous-files.md
-        - name: 選項
+        - name: 選項。
           items:
             - name: 選項對話方塊
               href: ide/reference/options-dialog-box-visual-studio.md
@@ -1379,7 +1379,7 @@
                   href: help-viewer/logical-operators-search-expressions.md
         - name: 自訂說明檢視器
           href: help-viewer/customize.md
-        - name: 協助工具選項
+        - name: Accessibility
           href: help-viewer/accessibility-features.md
         - name: 快速鍵
           href: help-viewer/shortcut-keys.md

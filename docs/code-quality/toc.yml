@@ -415,6 +415,8 @@
                   href: ca1414.md
                 - name: 'CA1415:P-Invokes 必須正確宣告。'
                   href: ca1415.md
+                - name: CA1417：請勿對 P/Invokes 的字串參數使用 OutAttribute
+                  href: ca1417.md
             - name: 維護性警告
               items:
                 - name: 總覽

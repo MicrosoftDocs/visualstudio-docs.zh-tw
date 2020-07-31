@@ -449,6 +449,8 @@
           href: msbuild-well-known-item-metadata.md
         - name: MSBuild 回應檔
           href: msbuild-response-files.md
+        - name: MSBuild 中的解決方案篩選
+          href: solution-filters.md
         - name: WPF 參考
           items:
             - name: 總覽
