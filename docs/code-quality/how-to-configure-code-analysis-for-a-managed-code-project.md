@@ -5,6 +5,11 @@ ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
 - vs.codeanalysis.propertypages.solution
+- vs.codeanalysis.propertypages.asp
+dev_langs:
+- CSharp
+- VB
+- FSharp
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
@@ -13,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8c922f0fc952cede53b9961e2e772e71a19cbb9
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 985f14446f17d1a4df3cfd14e156f21b7a7ce0de
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371946"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507855"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>如何：設定 managed 程式碼的舊版分析
 
@@ -92,6 +97,6 @@ ms.locfileid: "85371946"
 
 5. 選取專案的 [**規則集**] 欄位，然後選取您想要套用之規則集的名稱。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼分析規則集參考](../code-quality/rule-set-reference.md)
