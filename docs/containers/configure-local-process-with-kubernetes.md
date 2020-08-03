@@ -1,0 +1,129 @@
+---
+title: 針對具有 Kubernetes 的本機進程，使用 KubernetesLocalProcessConfig yaml 進行其他設定
+services: azure-dev-spaces
+ms.date: 07/28/2020
+ms.topic: conceptual
+description: 說明使用 KubernetesLocalProcessConfig 的 Kubernetes 本機進程的其他設定選項。 yaml
+keywords: 具有 Kubernetes、Azure Dev Spaces、Dev Spaces、Docker、Kubernetes、Azure、AKS、Azure Kubernetes Service、容器的本機進程
+monikerRange: '>=vs-2019'
+author: ghogen
+ms.author: ghogen
+manager: jillfra
+ms.openlocfilehash: 234eacedbc08007ede6bb5745a1a289aa838cccb
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87508298"
+---
+# <a name="configure-local-process-with-kubernetes"></a>使用 Kubernetes 設定本機進程
+
+此檔案可 `KubernetesLocalProcessConfig.yaml` 讓您將環境變數和掛接的檔案複寫至 AKS 叢集中的 pod。 您可以在檔案中指定下列動作 `KubernetesLocalProcessConfig.yaml` ：
+
+* 下載磁片區，並將該磁片區的路徑設定為環境變數。
+* 在您的叢集上執行服務，以供在開發電腦上執行的進程使用。
+* 建立具有常數值的環境變數。
+
+預設檔案 `KubernetesLocalProcessConfig.yaml` 不會自動建立，因此您必須在專案的根目錄手動建立檔案。
+
+## <a name="download-a-volume"></a>下載磁片區
+
+在 [ *env*] 底下，為您想要下載的每個磁片區指定*名稱*和*值*。 *名稱*是將在您的開發電腦上使用的環境變數。 *值*是磁片區的名稱，以及在您的開發電腦上的路徑。 *Value*的值採用 *$ （volumeMounts： VOLUME_NAME）/PATH/TO/FILES*的格式。
+
+例如：
+
+```yaml
+version: 0.1
+env:
+  - name: ALLOW_LIST_PATH
+    value: $(volumeMounts:allow-list)/allow-list
+```
+
+上述範例會從容器下載*允許清單*磁片區，並將該位置加上環境變數*ALLOW_LIST_PATH*的路徑。 預設行為是將檔下載至您在開發電腦上的臨時目錄底下指定的路徑。 在上述範例中， *ALLOW_LIST_PATH*設定為 `/TEMPORARY_DIR/allow-list` 。 
+
+> [!NOTE]
+> 下載磁片區將會下載該磁片區的整個內容，而不論您設定的路徑為何。 路徑只會用來設定要在開發電腦上使用的環境變數。 將 */allow-list*或 */path/to/files*新增至權杖結尾並不會實際影響磁片區的保存位置。 當您的應用程式需要對該磁片區內的特定檔案進行參考時，環境變數就很方便。
+
+您也可以選擇指定一個位置，以在開發電腦上下載磁片區掛接，而不是使用臨時目錄。 在 [ *volumeMounts*] 底下，指定每個特定位置的*名稱*和*localPath* 。 *名稱*是您想要比對的磁片區名稱，而*localPath*是您開發電腦上的絕對路徑。 例如：
+
+```yaml
+version: 0.1
+volumeMounts:
+  - name: default-token-*
+    localPath: /var/run/secrets/kubernetes.io/serviceaccount
+env:
+  - name: KUBERNETES_IN_CLUSTER_CONFIG_OVERRIDE
+    value: $(volumeMounts:default-token-*)
+```
+
+上述範例會使用*env*中的專案來下載符合*預設權杖的 \* *磁片區（例如，*預設-token-1111*或*預設-token-1234-5678-90abcdef*）。 在多個磁片區相符的情況下，會使用第一個相符的磁片區。 所有檔案都會 `/var/run/secrets/kubernetes.io/serviceaccount` 使用*volumeMounts*中的專案，下載到您開發電腦上的。 *KUBERNETES_IN_CLUSTER_CONFIG_OVERRIDE*環境變數設定為 `/var/run/secrets/kubernetes.io/serviceaccount` 。
+
+## <a name="make-a-service-available"></a>讓服務可供使用
+
+在 [ *env*] 底下，為您想要在開發電腦上提供的每項服務指定*名稱*和*值*。 *名稱*是將在您的開發電腦上使用的環境變數。 *值*是叢集的服務名稱和路徑。 *Value*的值採用 *$ （services： SERVICE_NAME）/path*格式。
+
+例如：
+
+```yaml
+version: 0.1
+env:
+  - name: MYAPP1_SERVICE_HOST
+    value: $(services:myapp1)/api/v1/
+```
+
+上述範例會將*myapp1*服務提供給您的開發電腦使用，而*MYAPP1_SERVICE_HOST*環境變數會設定為*myapp1*服務的本機 IP 位址，其 `/api/v1` 路徑為（也就是 `127.1.1.4/api/v1` ）。 *Myapp1*服務可使用環境變數、 *myapp1*或*myapp1*來存取。
+
+> [!NOTE]
+> 無論您設定的路徑為何，在開發電腦上提供服務都會讓整個服務可供使用。 路徑只會用來設定要在開發電腦上使用的環境變數。
+您也可以使用 *$ （services： SERVICE_NAME，從特定的 Kubernetes 命名空間提供服務。NAMESPACE_NAME）*。 例如：
+
+```yaml
+version: 0.1
+env:
+  - name: MYAPP2_SERVICE_HOST
+    value: $(services:myapp2.mynamespace)
+```
+
+上述範例會從您的開發電腦上提供的*mynamespace*命名空間*myapp2* ，並將*MYAPP2_SERVICE_HOST*環境變數設定為*MYNAMESPACE*命名空間中*myapp2*的本機 IP 位址。
+
+## <a name="create-an-environment-variable-with-a-constant-value"></a>建立具有常數值的環境變數
+
+在 [ *env*] 底下，為您想要在開發電腦上建立的每個環境變數指定*名稱*和*值*。 *名稱*是要在您的開發電腦上使用的環境變數，而*值*則是值。 例如：
+
+```yaml
+version: 0.1
+env:
+  - name: DEBUG_MODE
+    value: "true"
+```
+
+上述範例會建立名為*DEBUG_MODE*的環境變數，並將值*設為 true*。
+
+## <a name="example-kuberneteslocalprocessconfigyaml"></a>範例 KubernetesLocalProcessConfig. yaml
+
+以下是完整檔案的範例 `KubernetesLocalProcessConfig.yaml` ：
+
+```yaml
+version: 0.1
+volumeMounts:
+  - name: default-token-*
+    localPath: /var/run/secrets/kubernetes.io/serviceaccount
+env:
+  - name: KUBERNETES_IN_CLUSTER_CONFIG_OVERRIDE
+    value: $(volumeMounts:default-token-*)
+  - name: ALLOW_LIST_PATH
+    value: $(volumeMounts:allow-list)/allow-list
+  - name: MYAPP1_SERVICE_HOST
+    value: $(services:myapp1)/api/v1/
+  - name: MYAPP2_SERVICE_HOST
+    value: $(services:myapp2.mynamespace)
+  - name: DEBUG_MODE 
+    value: "true"
+```
+
+## <a name="next-steps"></a>後續步驟
+
+若要開始搭配 Kubernetes 使用本機程式，以連接到您的本機開發電腦到您的叢集，請參閱搭配[使用本機進程與 Kubernetes 與 Visual Studio Code][local-process-kubernetes-vs-code] ，並搭配[使用本機進程與 Kubernetes 與 Visual Studio][local-process-kubernetes-vs]。
+
+[local-process-kubernetes-vs-code]: https://code.visualstudio.com/docs/containers/local-process-kubernetes
+[local-process-kubernetes-vs]: local-process-kubernetes.md

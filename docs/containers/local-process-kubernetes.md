@@ -2,16 +2,19 @@
 title: 搭配 Visual Studio 使用本機進程與 Kubernetes （預覽）
 ms.technology: vs-azure
 ms.date: 06/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: 瞭解如何搭配使用 Kubernetes 與具有 Visual Studio 的本機進程，將您的開發電腦連線到 Kubernetes 叢集
 keywords: Kubernetes、Azure Dev Spaces、Dev Spaces、Docker、Kubernetes、Azure、容器的本機進程
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: fd2e456f1ffdaaea90c0594b73d5367e51c8f655
-ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
+ms.author: ghogen
+author: ghogen
+manager: jillfra
+ms.openlocfilehash: 29a3c8563660507a2378a58595ba5ea64788b417
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87133992"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507894"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>搭配 Kubernetes 使用本機進程（預覽）
 
@@ -30,7 +33,7 @@ ms.locfileid: "87133992"
 
 本指南使用[自行車分享範例應用程式][bike-sharing-github]，示範如何將您的開發電腦連接到 Kubernetes 叢集。 如果您已經在 Kubernetes 叢集上執行自己的應用程式，您仍然可以遵循下列步驟，並使用您自己的服務名稱。
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>Prerequisites
 
 * Azure 訂用帳戶。 如果您沒有 Azure 訂用帳戶，您可以建立[免費帳戶](https://azure.microsoft.com/free)。
 * [已安裝 Azure CLI][azure-cli]。
@@ -41,7 +44,7 @@ ms.locfileid: "87133992"
 
 ## <a name="create-a-kubernetes-cluster"></a>建立 Kubernetes 叢集
 
-在[支援的區域][supported-regions]中建立 AKS 叢集。 下列命令會建立名為 MyResourceGroup 的資源群組與名為 MyAKS 的 AKS 叢集。
+在[支援的區域][supported-regions]中建立 AKS 叢集。 下列命令會建立名為 MyResourceGroup  的資源群組與名為 MyAKS  的 AKS 叢集。
 
 ```azurecli-interactive
 az group create \
@@ -96,7 +99,7 @@ az aks get-credentials --resource-group MyResourceGroup --name MyAKS
 
 按一下 [本機進程] 旁的 [開始] 按鈕 *，並 Kubernetes*。 在 [*使用 Kubernetes 的本機進程*] 對話方塊中：
 
-* 選取您的訂閱。
+* 選取您的訂用帳戶。
 * 選取叢集的 [ *MyAKS* ]。
 * 針對您的命名空間選取 [*開發*]。
 * 選取 [ *reservationengine* ] 以讓服務重新導向。
@@ -137,6 +140,10 @@ Kubernetes 叢集中的所有流量都會重新導向至您的開發電腦上執
 >
 > 如果 Visual Studio 突然結束叢集的連線或終止，則您要重新導向的服務可能不會還原為其原始狀態，而是使用 Kubernetes 與本機進程連接。 若要修正此問題，請參閱[疑難排解指南][troubleshooting]。
 
+## <a name="additional-configuration"></a>其他設定
+
+具有 Kubernetes 的本機進程可以處理路由流量和複寫環境變數，而不需要任何額外的設定。 如果您需要下載掛接至 Kubernetes 叢集中容器的任何檔案（例如 ConfigMap 檔案），您可以建立， `KubernetesLocalProcessConfig.yaml` 將這些檔案下載至您的開發電腦。 如需詳細資訊，請參閱[使用 KubernetesLocalProcessConfig. yaml 進行其他設定搭配 Kubernetes 的本機進程][kubernetesLocalProcessConfig-yaml]。
+
 ## <a name="using-logging-and-diagnostics"></a>使用記錄和診斷
 
 您可以在 `Azure Dev Spaces` [開發電腦的*TEMP*目錄][azds-tmp-dir]中，找到目錄中的診斷記錄。
@@ -170,3 +177,4 @@ Kubernetes 叢集中的所有流量都會重新導向至您的開發電腦上執
 [troubleshooting]: /azure/dev-spaces/troubleshooting#fail-to-restore-original-configuration-of-deployment-on-cluster
 [visual-studio]: https://www.visualstudio.com/vs/
 [lpk-extension]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.mindaro
+[kubernetesLocalProcessConfig-yaml]: configure-local-process-with-kubernetes.md
