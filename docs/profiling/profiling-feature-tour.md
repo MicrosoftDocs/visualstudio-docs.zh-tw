@@ -3,7 +3,11 @@ title: 利用分析工具測量效能
 description: 查看 Visual Studio 中可用的各種診斷工具。
 ms.custom: mvc
 ms.date: 06/03/2020
-ms.topic: quickstart
+ms.topic: overview
+f1_keywords:
+- vs.diagnosticshub.overview
+dev_langs:
+- CSharp
 helpviewer_keywords:
 - diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
@@ -12,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816691"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507985"
 ---
 # <a name="first-look-at-profiling-tools"></a>初步認識分析工具
 
@@ -131,7 +135,7 @@ CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會
 
 此工具會在清單視圖中顯示每個查詢。 您可以查看查詢開始時間和持續時間等資訊。
 
-![分配](./media/db-gotosource.png "配置")
+![配置](./media/db-gotosource.png "配置")
 
 ::: moniker-end
 
@@ -168,7 +172,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>分析網路使用量 (UWP)
 
-在 UWP 應用程式中，您可以使用 `Windows.Web.Http` API 來分析執行的網路作業。這項工具有助您解決存取及驗證問題、不正確的快取使用，以及不良的顯示和下載效能等問題。 若要使用此工具，請選擇 [效能分析工具] 中的 [網路]****，然後選擇 [開始]****。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集]**** 以產生報表。
+在 UWP 應用程式中，您可以使用 API 來分析執行的網路作業 `Windows.Web.Http` 。 此工具可協助您解決存取和驗證問題、不正確的快取使用，以及不佳的顯示和下載效能等問題。 若要使用此工具，請選擇 [效能分析工具] 中的 [網路]****，然後選擇 [開始]****。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集]**** 以產生報表。
 
 ![網路流量分析工具](../profiling/media/prof-tour-network-usage.png "診斷網路使用量")
 
@@ -227,5 +231,5 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 ::: moniker-end
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 偵錯](../debugger/debugger-feature-tour.md)

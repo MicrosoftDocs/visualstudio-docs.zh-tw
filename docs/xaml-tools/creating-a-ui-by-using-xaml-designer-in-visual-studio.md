@@ -8,25 +8,26 @@ f1_keywords:
 - VS.XamlEditor
 - VS.DocumentOutline
 - Blend.Start.Dev12
+ms.devlang: CSharp
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 31a31e413ecd39b7d15f8ea3cd0417c2493463ca
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649617"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507959"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>使用 XAML 設計工具建立 UI
 
-Visual Studio 中的 XAML 設計器和可視化工作室的混合版提供了一個可視介面,可説明您設計基於 XAML 的應用,如 WPF 和 UWP。 您可以藉由從 [工具箱] 視窗 (在 Blend for Visual Studio 的 [資產] 視窗中) 拖曳控制項，並在 [屬性] 視窗中設定屬性，為您的應用程式建立使用者介面。 您也可以在 [XAML] 檢視中直接編輯 XAML。
+Visual Studio 和 Blend for Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以 XAML 為基礎的應用程式，例如 WPF 和 UWP。 您可以藉由從 [工具箱] 視窗 (在 Blend for Visual Studio 的 [資產] 視窗中) 拖曳控制項，並在 [屬性] 視窗中設定屬性，為您的應用程式建立使用者介面。 您也可以在 [XAML] 檢視中直接編輯 XAML。
 
 如果是進階使用者，您甚至可以[自訂 XAML 設計工具](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md)。
 
 > [!NOTE]
-> Xamarin.Forms 不支援 XAML 設計器。 要查看 Xamarin.Forms XAML UIs 並在應用運行時對其進行編輯,請使用 XAML 熱重載入 Xamarin.Forms。 有關詳細資訊,請參閱[XaML 熱重載入 Xamarin.窗體(預覽)](/xamarin/xamarin-forms/xaml/hot-reload/)頁面。
+> Xamarin 不支援 XAML 設計工具。 若要在應用程式執行時查看 Xamarin 的 XAML Ui 並加以編輯，請使用適用于 Xamarin 的 XAML 熱重載。 如需詳細資訊，請參閱適用于[Xamarin 的 XAML 熱重載（預覽）](/xamarin/xamarin-forms/xaml/hot-reload/)頁面。
 
 ## <a name="xaml-designer-workspace"></a>XML 設計工具工作區
 
@@ -64,7 +65,7 @@ Grid 滑軌可用來管理 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中�
 
 **邊界**
 
-邊界代表控制項邊緣與其容器邊緣之間的固定間距。 通過使用 **「屬性**」視窗中的 **「佈局**」下的[邊距](xref:Windows.UI.Xaml.FrameworkElement.Margin)屬性,可以設置控制項的邊距。
+邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [**屬性**] 視窗中 [**版面**配置] 底下的[Margin](xref:Windows.UI.Xaml.FrameworkElement.Margin)屬性設定控制項的邊界。
 
 **邊界裝飾項**
 
@@ -80,7 +81,7 @@ Grid 滑軌可用來管理 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中�
 
 這個工具列提供下列命令：
 
-**Zoom**
+**縮放**
 
 縮放可讓您調整設計介面的大小。 您可以從 12.5% 放大到 800%，或選取 [符合選取項目]**** 和 [全部調整]**** 等選項。
 
@@ -90,7 +91,7 @@ Grid 滑軌可用來管理 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中�
 
 **開啟/關閉貼齊至格線**
 
-如果啟用**捕捉到網格線**,則元素在將其拖動到畫板上時,往往會與最接近的水準和垂直網格線對齊。
+如果已啟用 [**貼齊至格線**]，當您將專案拖曳至畫板時，元素通常會對齊最接近的水準和垂直格線。
 
 **切換畫板背景**
 
@@ -116,26 +117,26 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 - 檢視畫板上所有項目的階層式結構。
 
-- 選擇元素以便修改它們。 例如,可以在層次結構中移動它們或在"屬性"視窗中設置其屬性。 如需詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。
+- 選取元素，讓您可以修改它們。 例如，您可以在階層中四處移動，或在屬性視窗中設定其屬性。 如需詳細資訊，請參閱[使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)。
 
 - 為控制項項目建立及修改樣板。
 
 - [建立動畫](animate-objects-in-xaml-designer.md) (僅適用於 Blend for Visual Studio)。
 
-要查看視覺化工作室中的「文件大綱」視窗,請在選單欄上選擇 **「查看** > **其他 Windows** > **文件大綱**」。
-要查看"視覺工作室的混合物件"和"時間軸"視窗,請在菜單欄上選擇 **「查看** > **文檔大綱**」。
+若要在 Visual Studio 中查看 [檔大綱] 視窗，請在功能表列上選取 [**查看**  >  **其他視窗**  >  **檔大綱**]。
+若要在 Blend for Visual Studio 中查看 [物件與時間軸] 視窗，請在功能表列上選取 [**視圖**  >  **檔大綱**]。
 
 ![Visual Studio 的 [文件大綱] 視窗](media/document-outline-window.png)
 
-[文件大綱]/[物件與時間軸] 視窗的主要檢視會以樹狀結構顯示文件的階層。 您可以利用文件大綱的階層本質，以各種不同詳細層級檢查文件，以及單獨或依群組鎖定和隱藏元素。 以下選項在「文件大綱/物件和時間軸」視窗中可用:
+[文件大綱]/[物件與時間軸] 視窗的主要檢視會以樹狀結構顯示文件的階層。 您可以利用文件大綱的階層本質，以各種不同詳細層級檢查文件，以及單獨或依群組鎖定和隱藏元素。 [檔大綱]/[物件與時間軸] 視窗中提供下列選項：
 
 **顯示/隱藏**
 
-顯示或隱藏畫板元素。 出現時，會顯示為眼睛符號。 您還可以按**Ctrl**+**H**隱藏元素, 並**Shift**+**Ctrl**+**H**顯示它。
+顯示或隱藏畫板元素。 出現時，會顯示為眼睛符號。 您也可以按**ctrl** + **H**來隱藏元素，並按**Shift** + **ctrl** + **h**加以顯示。
 
 **鎖定/解除鎖定**
 
-將畫板元素鎖定或解除鎖定。 無法修改鎖定的項目。 鎖定時，會顯示為掛鎖符號。 您還可以按**Ctrl**+**L**鎖定元素, 並**Shift**+**Ctrl**+**L**將其解鎖。
+將畫板元素鎖定或解除鎖定。 無法修改鎖定的項目。 鎖定時，會顯示為掛鎖符號。 您也可以按**ctrl** + **L**來鎖定元素，並按**Shift** + **ctrl** + **l**來解除鎖定。
 
 **將範圍傳回 pageRoot**
 
@@ -143,7 +144,7 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 ## <a name="properties-window"></a>屬性視窗
 
-[屬性]**** 視窗可讓您設定控制項的屬性值。 看起來如下：
+[屬性]**** 視窗可讓您設定控制項的屬性值。 其看起來會像下面這樣：
 
 ![屬性視窗](media/xaml-designer-properties-window.png)
 
@@ -161,7 +162,7 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 如需有關使用屬性及處理事件的詳細資訊，請參閱[控制項和模式的簡介](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 XAML 設計工具中的項目](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [如何建立和套用資源](../xaml-tools/how-to-create-and-apply-a-resource.md)

@@ -2,6 +2,12 @@
 title: 計算程式碼度量
 ms.date: 11/02/2018
 ms.topic: conceptual
+f1_keywords:
+- vs.codeanalysis.codemetrics.toolwindow
+dev_langs:
+- CSharp
+- VB
+- FSharp
 helpviewer_keywords:
 - code metrics [Visual Studio]
 author: mikejo5000
@@ -9,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b1a9d109b833d17783beb39c5f34cf6b9ed3274
-ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
+ms.openlocfilehash: 841b73bbb0c1f226e4a31a812bf8745bda1f118c
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85292889"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507868"
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 

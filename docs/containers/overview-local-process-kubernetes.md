@@ -6,12 +6,15 @@ ms.topic: conceptual
 description: 描述搭配 Kubernetes 使用本機進程，將您的開發電腦連接到您的 Kubernetes 叢集的進程
 keywords: 使用 Kubernetes、Docker、Kubernetes、Azure、容器的本機進程
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 93bfc509eb21545cde812b8d6d71bb9a93a109e8
-ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
+manager: jillfra
+author: ghogen
+ms.author: ghogen
+ms.openlocfilehash: f8808da9a2bfd49fb0ee7d661b7e57c776036c1c
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87133968"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507881"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>本機處理序與 Kubernetes 搭配使用的方式
 
@@ -20,6 +23,9 @@ ms.locfileid: "87133968"
 透過 Kubernetes 的本機程式可避免在您的開發電腦與叢集之間直接建立連線，而必須建立程式碼並將其部署到您的叢集。 在進行偵錯工具時，將您的開發電腦連接到叢集，可讓您在完整應用程式的內容中快速測試和開發服務，而不需要建立任何 Docker 或 Kubernetes 設定。
 
 具有 Kubernetes 的本機進程會重新導向已連線的 Kubernetes 叢集與您的開發電腦之間的流量。 此流量重新導向可讓您的開發電腦上執行的程式碼與 Kubernetes 叢集中執行的服務進行通訊，就好像它們位於相同的 Kubernetes 叢集中一樣。 使用 Kubernetes 的本機進程也會提供一種方法，將環境變數和掛接的磁片區複寫至您的開發電腦中 Kubernetes 叢集中的 pod。 在您的開發電腦上提供環境變數和裝載的磁片區存取，可讓您快速處理常式代碼，而不需要手動複寫這些相依性。
+
+> [!WARNING]
+> Kubernetes 的本機進程僅供開發和測試案例使用。 不適合或不支援搭配使用中的生產叢集或即時服務。
 
 ## <a name="using-local-process-with-kubernetes"></a>搭配 Kubernetes 使用本機進程
 
@@ -39,6 +45,12 @@ ms.locfileid: "87133968"
 * 開始在您的開發電腦上執行和偵錯工具代碼。 如有必要，使用 Kubernetes 的本機進程將會停止目前正在使用這些埠的服務或處理常式，以在您的開發電腦上釋放所需的埠。
 
 建立與叢集的連線之後，您可以在電腦上以原生方式執行和偵錯工具代碼，而不需要容器化，而且程式碼可以直接與叢集的其餘部分互動。 遠端代理程式接收的任何網路流量都會重新導向至連線期間指定的本機埠，讓您的原生執行程式碼可以接受並處理該流量。 您的叢集環境變數、磁片區和密碼可供在開發電腦上執行的程式碼使用。 此外，由於透過 Kubernetes 的本機程式，將主機檔案專案和埠轉送新增至您的開發人員電腦，因此您的程式碼可以使用叢集的服務名稱，將網路流量傳送至叢集上執行的服務，並將流量轉送到叢集中正在執行的服務。 您的開發電腦與叢集之間的流量會在您連線的整個時間進行路由。
+
+此外，使用 Kubernetes 的本機進程可讓您透過檔案，將環境變數和掛接的檔案複寫至您的叢集中的 pod `KubernetesLocalProcessConfig.yaml` 。 您也可以使用這個檔案來建立新的環境變數和磁片區裝載。
+
+## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>使用 KubernetesLocalProcessConfig. yaml 的其他設定
+
+此檔案可 `KubernetesLocalProcessConfig.yaml` 讓您將環境變數和掛接的檔案複寫到叢集中的 pod。 如需其他設定選項的詳細資訊，請參閱[使用 Kubernetes 設定本機進程][using-config-yaml]。
 
 ## <a name="using-routing-capabilities-for-developing-in-isolation"></a>使用路由功能以隔離方式進行開發
 
@@ -108,3 +120,4 @@ ms.locfileid: "87133968"
 [kubectl-port-forward]: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#port-forward
 [visual-studio]: https://visualstudio.microsoft.com/downloads/
 [lpk-extension]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.mindaro
+[using-config-yaml]: configure-local-process-with-kubernetes.md
