@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: 總覽
+    - name: 概觀
       href: overview.md
     - name: 快速入門
       expanded: true
@@ -11,8 +11,6 @@
           href: container-tools.md
         - name: 容器中的 React.js 單頁應用程式
           href: container-tools-react.md
-        - name: Kubernetes 開發
-          href: local-process-kubernetes.md
     - name: 教學課程
       expanded: true
       items:
@@ -54,3 +52,5 @@
       href: local-process-kubernetes.md
     - name: 本機處理序與 Kubernetes 搭配使用的方式 (預覽)
       href: overview-local-process-kubernetes.md
+    - name: 使用 Kubernetes 設定本機處理序
+      href: configure-local-process-with-kubernetes.md

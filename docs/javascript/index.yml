@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 01b4232b4933197f06bb77793fb638281e5b5748
-  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
+  ms.openlocfilehash: bb5bb2bc31527acc497e429030516cdfdb8ccd2e
+  ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/15/2020
-  ms.locfileid: "86405368"
+  ms.lasthandoff: 07/31/2020
+  ms.locfileid: "87453712"
 landingContent:
 - title: 開始使用
   linkLists:
@@ -49,6 +49,10 @@ landingContent:
     links:
     - text: 撰寫和編輯程式碼
       url: write-and-edit-code.md
+    - text: 使用 tsc 編譯 TypeScript 程式碼
+      url: compile-typescript-code-npm.md
+    - text: 使用 NuGet 編譯 TypeScript 程式碼
+      url: compile-typescript-code-nuget.md
     - text: 管理 npm 套件
       url: npm-package-management.md
     - text: 使用 Node.js 互動式 REPL
