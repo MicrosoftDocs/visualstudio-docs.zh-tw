@@ -6,7 +6,7 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 05/19/2020
+ms.date: 08/05/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 476180e2d49246088d85f1d162761ae180532eac
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: c0e0f14dc980cf2097531587bf715164b31edfc3
+ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183143"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805837"
 ---
 # <a name="visual-studio-build-tools-component-directory"></a>Visual Studio Build Tools 元件目錄
 

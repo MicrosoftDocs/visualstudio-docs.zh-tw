@@ -6,7 +6,7 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 05/19/2020
+ms.date: 08/05/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: ba9f9c38c9d5a9376f3e779a830521bfc75aa8ec
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 79649be5d8636c2e7b579ff7aeac27560c2f55cd
+ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183169"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805664"
 ---
 # <a name="visual-studio-team-explorer-component-directory"></a>Visual Studio Team Explorer 元件目錄
 

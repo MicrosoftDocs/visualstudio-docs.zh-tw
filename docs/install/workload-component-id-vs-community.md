@@ -6,7 +6,7 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 05/19/2020
+ms.date: 08/05/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 1e86b76f2034ea593606703ad1bd6c04f1938854
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: d5c45567ce5e354f15f93740e31c8efd29eb20ee
+ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184365"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805811"
 ---
 # <a name="visual-studio-community-component-directory"></a>Visual Studio Community 元件目錄
 

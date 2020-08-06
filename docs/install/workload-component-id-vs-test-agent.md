@@ -6,7 +6,7 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 05/19/2020
+ms.date: 08/05/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a02467d388217a61d911542a111154e3f90d0b44
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: afce5c9587a5b1a54e688197b0d8010920693d2d
+ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184301"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805668"
 ---
 # <a name="visual-studio-test-agent-component-directory"></a>Visual Studio Test Agent 元件目錄
 

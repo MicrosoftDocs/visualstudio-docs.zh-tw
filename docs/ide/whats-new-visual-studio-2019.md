@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 05/20/2020
+ms.date: 08/05/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c8e647943b6e99946c2a9123ee17e2be8cc5c2
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 333bb9ca24579758112199c13d5a4af3f60d6058
+ms.sourcegitcommit: d21f1a028628d0221b567ba496690b3b68cfded7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387040"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87818582"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
-**已針對[16.6 版本](/visualstudio/releases/2019/release-notes/)更新**
+**已針對[16.7 版本](/visualstudio/releases/2019/release-notes/)更新**
 
 >[!div class="button"]
 >[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -86,7 +86,7 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 ### <a name="code-cleanup"></a>程式碼清除
 
-新的程式碼清除命令會與新文件健康狀態指標搭配。 您可以使用這個新的命令來找出警告與建議，並透過按一下按鈕進行修正。
+新的程式碼清除命令會與新文件健康狀態指標搭配。 您可以使用這個新的命令，透過單一動作來識別並修正警告和建議 (或按一下按鈕) 。
 
 清除作業會設定程式碼格式，並套用由[目前的設定](code-styles-and-code-cleanup.md)和 [.editorconfig 檔案](create-portable-custom-editor-options.md)所建議的任何程式碼修正。
 
@@ -178,7 +178,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
    ![在 Visual Studio 2019 中顯示偵錯搜尋視窗的動畫](media/vs-2019/debug-window-search.gif)
 
-在 [監看式]、[區域變數] 和 [自動變數] 視窗的顯示方式，您也能加以格式化。  在任一視窗中的其中一個項目上按兩下，並新增逗號 (",") 來存取可用格式指定名稱的下拉式清單，其中每一個都包含其預期效果的描述。
+在 [監看式]、[區域變數] 和 [自動變數] 視窗的顯示方式，您也能加以格式化。 按兩下) 任一視窗中的其中一個專案，然後新增逗號 ( "，" ) 以存取可能的格式規範的下拉式清單，以選取 (，其中每個都包含其預期效果的描述。
 
    ![Visual Studio 2019 中的新 [監看式] 視窗和格式值功能](media/search-watch-window.png)
 
@@ -212,7 +212,21 @@ Visual Studio 2019 預設會安裝這項服務。
 
 我們對 Visual Studio 2019 的更新通常附帶可大幅改善您開發體驗的新功能。 若要深入瞭解我們最新的創新，請參閱[Visual Studio 的 Blog](https://devblogs.microsoft.com/visualstudio/)。 如需我們在預覽版中發行之內容的記錄，請參閱[預覽版本](/visualstudio/releases/2019/release-notes-preview/)資訊。 如需我們接下來要發行之內容的清單，請參閱[Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap)。
 
-想深入了解 Visual Studio 2019 中還包含哪些內容嗎？ 請參閱 [Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap/)。
+同時，這裡有一些新功能目前已在運作中。
+
+- **Visual Studio Codespaces (Preview 的 Visual Studio 2019 支援) **
+
+  前所未有的是，開發人員在工作和家裡以使用多個專案。 新功能、bug 修正、PR 審查、 &amp; 原型全都爭用時間，而且需要常數內容切換。 [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/)可提供協助。 您可以完全在雲端中進行開發，並在幾秒鐘內為每個專案建立專屬的自訂環境。 有了 Visual Studio 2019，您就可以連線到您的 codespace，並如同在本機般地工作。
+
+  如需詳細資訊，請參閱[什麼是 Visual Studio Codespaces](/visualstudio/codespaces/overview/what-is-vsonline/)頁面。
+
+- **已改善 Visual Studio 2019 (Preview 中的 Git 體驗) **
+
+   我們會繼續逐一查看改頭換面 Git 體驗，以在使用 GitHub、Azure Repos 和其他遠端主機服務上的程式碼時提升您的生產力。 您可以使用單一動作 (在 Visual Studio 2019 內初始化和推送，或按一下 [) ]。 您也可以建立新的分支、管理目前的分支，以及解決合併衝突。
+
+   如需詳細資訊，請參閱 Visual Studio blog 文章中的最[新 Git 體驗更新](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)。
+
+如需預覽版本和下載連結的詳細資訊， &mdash; &mdash; 請參閱**[Visual Studio 預覽](https://visualstudio.microsoft.com/vs/preview/)** 頁面。
 
 ## <a name="give-us-feedback"></a>提供意見反應
 

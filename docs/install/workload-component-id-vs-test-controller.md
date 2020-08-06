@@ -6,7 +6,7 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 05/19/2020
+ms.date: 08/05/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 894fe12254ef0ffbbb1b05670b42965bbb5e6156
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: a4b040246e88bb39de9e6560f2d5c6cc0d487b1c
+ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183118"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805643"
 ---
 # <a name="visual-studio-test-controller-component-directory"></a>Visual Studio Test Controller 元件目錄
 
