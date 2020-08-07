@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
-ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
+ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
+ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137562"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87972469"
 ---
 # <a name="developer-community-guidelines"></a>開發人員社群指導方針
 
@@ -41,7 +41,7 @@ ms.locfileid: "86137562"
 - 您可以提供的資訊越多，我們就越容易重現並修正您的問題。
 - 針對每個問題包含下列步驟。
 
-  - 可重現的步驟（1 .。。2 ... 3 ...）以及您的期望與經驗。
+  - 可重現的步驟 (1 .。。2 ... 3 ... ) 和您預期的結果與您的經驗。
   - 影像、動畫或影片的連結。 影像和動畫會說明重現步驟，但_不_會取代它們。
   - 在適當的情況下，我們可以輕鬆地向下提取問題的程式碼片段，或程式碼存放庫的連結，以重新建立問題。
 
@@ -89,12 +89,15 @@ ms.locfileid: "86137562"
 
 在我們的決策制定程式中，我們會查看下列有關功能建議的特性：
 
+- 它符合我們的一般產品方向嗎？
 - 我們可以承受建立和維護嗎？
 - 它會與我們的整體[藍圖](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap)策略一致嗎？
 - 它是否具有如投票和留言所指示的社區支援？
 - 即使有較低的社區支援，我們是否愛用？
 
 當我們無法回答上述任何問題時，我們會將它關閉。 但通常建議會保持開啟_狀態，以_收集更多的社區意見反應。
+
+如果建議不符合我們的整體產品方向，我們會將其關閉為*超出範圍*。 例如，在 Visual Studio 系列產品的其他成員中，我們可能會有類似的投資。 或者，建議的功能可能只與少數人相關，讓延伸模組更適合提供。
 
 藉由參考[建議狀態和常見問題](https://docs.microsoft.com/visualstudio/ide/report-a-problem)來追蹤功能建議的進度。
 
