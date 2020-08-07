@@ -1,7 +1,7 @@
 {
   "build_entry_point": "docs",
   "docsets_to_publish": [
-   {
+    {
       "docset_name": "Docker",
       "build_source_folder": "docker",
       "build_output_subfolder": "Docker",
@@ -38,6 +38,20 @@
         "ContextObject": "Toc",
         "APIConnector": "Content"
       },
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "gamedev",
+      "build_source_folder": "visualstudio/gamedev",
+      "build_output_subfolder": "gamedev",
+      "locale": "zh-tw",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
       "template_folder": "_themes"
     },
     {
@@ -90,25 +104,11 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
-    },
-    {
-      "docset_name": "vs-gamedev",
-      "build_source_folder": "visualstudio/gamedev",
-      "build_output_subfolder": "vs-gamedev",
-      "locale": "zh-tw",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
   "sync_notification_subscribers": [
-    "ceicnotifications@microsoft.com"
+    "ghogen@microsoft.com"
   ],
   "branches_to_filter": [
     "master",
@@ -119,19 +119,11 @@
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
+  "need_pr_comments": true,
   "contribution_branch_mappings": {
     "live-sxs": "live"
   },
   "dependent_repositories": [
-    {
-      "path_to_root": "_repo.en-us",
-      "url": "https://github.com/MicrosoftDocs/visualstudio-docs-pr",
-      "branch": "live",
-      "branch_mapping": {
-        "live": "live",
-        "master": "master"
-      }
-    },
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft.zh-tw",
@@ -143,14 +135,19 @@
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "master",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/MicrosoftDocs/visualstudio-docs-pr",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
     }
   ],
   "branch_target_mapping": {
     "live": [
-      "Publish",
-      "Pdf"
-    ],
-    "live-sxs": [
       "Publish",
       "Pdf"
     ]
