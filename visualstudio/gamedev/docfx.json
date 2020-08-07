@@ -41,7 +41,8 @@
     "globalMetadata": {
       "breadcrumb_path": "/visualstudio/gamedev/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "disable_contribution_on_translation_quality": ["MTE95", "MTE75","MT","Blank"],
     },
     "fileMetadata": {},
     "template": [],
