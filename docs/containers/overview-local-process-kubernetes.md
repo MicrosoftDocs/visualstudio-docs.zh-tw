@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: f8808da9a2bfd49fb0ee7d661b7e57c776036c1c
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: 5b6c07d5987c52d818a35babd16681652ddf5830
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507881"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913267"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>本機處理序與 Kubernetes 搭配使用的方式
 
@@ -47,6 +47,9 @@ ms.locfileid: "87507881"
 建立與叢集的連線之後，您可以在電腦上以原生方式執行和偵錯工具代碼，而不需要容器化，而且程式碼可以直接與叢集的其餘部分互動。 遠端代理程式接收的任何網路流量都會重新導向至連線期間指定的本機埠，讓您的原生執行程式碼可以接受並處理該流量。 您的叢集環境變數、磁片區和密碼可供在開發電腦上執行的程式碼使用。 此外，由於透過 Kubernetes 的本機程式，將主機檔案專案和埠轉送新增至您的開發人員電腦，因此您的程式碼可以使用叢集的服務名稱，將網路流量傳送至叢集上執行的服務，並將流量轉送到叢集中正在執行的服務。 您的開發電腦與叢集之間的流量會在您連線的整個時間進行路由。
 
 此外，使用 Kubernetes 的本機進程可讓您透過檔案，將環境變數和掛接的檔案複寫至您的叢集中的 pod `KubernetesLocalProcessConfig.yaml` 。 您也可以使用這個檔案來建立新的環境變數和磁片區裝載。
+
+> [!NOTE]
+> 在連線到叢集的期間 (加上15分鐘的) ，Kubernetes 的本機程式會執行名為*EndpointManager*的進程，並在您的本機電腦上具有系統管理員許可權。
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>使用 KubernetesLocalProcessConfig. yaml 的其他設定
 
@@ -92,7 +95,7 @@ ms.locfileid: "87507881"
 
 ## <a name="diagnostics-and-logging"></a>診斷和記錄
 
-使用本機進程搭配 Kubernetes 來連線到您的叢集時，叢集的診斷記錄會記錄到開發電腦的[臨時目錄][azds-tmp-dir]中。
+使用本機進程搭配 Kubernetes 來連線到您的叢集時，叢集的診斷記錄會記錄到您的開發電腦在*本機進程中具有 Kubernetes*資料夾的*暫存*目錄。
 
 ## <a name="limitations"></a>限制
 

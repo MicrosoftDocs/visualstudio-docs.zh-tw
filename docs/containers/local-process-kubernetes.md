@@ -1,5 +1,5 @@
 ---
-title: 搭配 Visual Studio 使用本機進程與 Kubernetes （預覽）
+title: '透過 Visual Studio (Preview 使用本機進程搭配 Kubernetes) '
 ms.technology: vs-azure
 ms.date: 06/02/2020
 ms.topic: how-to
@@ -9,14 +9,14 @@ monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jillfra
-ms.openlocfilehash: 29a3c8563660507a2378a58595ba5ea64788b417
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: 191fd1df377bd15d78c329b88d20f1fed8669663
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507894"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913278"
 ---
-# <a name="use-local-process-with-kubernetes-preview"></a>搭配 Kubernetes 使用本機進程（預覽）
+# <a name="use-local-process-with-kubernetes-preview"></a>使用本機進程搭配 Kubernetes (預覽) 
 
 使用 Kubernetes 的本機程式可讓您在開發電腦上執行和偵錯工具代碼，同時繼續與您的應用程式或服務的其餘部分連線到您的 Kubernetes 叢集。 例如，如果您有一個大型的微服務架構，其中包含許多互相相依的服務與資料庫，則在開發電腦上複寫這些相依性可能會很棘手。 此外，在內部迴圈開發期間，針對每個程式碼變更建立程式碼並將其部署到您的 Kubernetes 叢集，可能會很慢、耗時，而且很容易與偵錯工具搭配使用。
 
@@ -33,7 +33,7 @@ ms.locfileid: "87507894"
 
 本指南使用[自行車分享範例應用程式][bike-sharing-github]，示範如何將您的開發電腦連接到 Kubernetes 叢集。 如果您已經在 Kubernetes 叢集上執行自己的應用程式，您仍然可以遵循下列步驟，並使用您自己的服務名稱。
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 * Azure 訂用帳戶。 如果您沒有 Azure 訂用帳戶，您可以建立[免費帳戶](https://azure.microsoft.com/free)。
 * [已安裝 Azure CLI][azure-cli]。
@@ -131,7 +131,7 @@ Kubernetes 叢集中的所有流量都會重新導向至您的開發電腦上執
 
 開啟[BikesHelper.cs][bikeshelper-cs-breakpoint] ，然後按一下第26行的某處，將游標放在該處。 藉由叫用*F9*或依序按一下 [ *Debug* ] 和 [*切換中斷點*] 來設定中斷點。
 
-藉由開啟公用 URL，流覽至範例應用程式。 選取 [ *Aurelia Briggs （customer）* ] 作為使用者，然後選取要出租的自行車。 按一下 [*出租自行車*]。 回到 Visual Studio，觀察第26行已反白顯示。 您設定的中斷點已在第26行暫停服務。 若要讓服務繼續，請按 F5，或依序按一下 [偵錯] 和 [繼續]。 返回您的瀏覽器，並確認頁面顯示您已出租自行車。
+藉由開啟公用 URL，流覽至範例應用程式。 選取 [ *Aurelia Briggs] ([客戶) * ] 做為使用者，然後選取要出租的自行車。 按一下 [*出租自行車*]。 回到 Visual Studio，觀察第26行已反白顯示。 您設定的中斷點已在第26行暫停服務。 若要讓服務繼續，請按 F5，或依序按一下 [偵錯] 和 [繼續]。 返回您的瀏覽器，並確認頁面顯示您已出租自行車。
 
 將游標放在第26行，然後叫用 `BikesHelper.cs` *F9*，即可移除中斷點。
 
@@ -146,7 +146,7 @@ Kubernetes 叢集中的所有流量都會重新導向至您的開發電腦上執
 
 ## <a name="using-logging-and-diagnostics"></a>使用記錄和診斷
 
-您可以在 `Azure Dev Spaces` [開發電腦的*TEMP*目錄][azds-tmp-dir]中，找到目錄中的診斷記錄。
+您可以在 `Local Process with Kubernetes` 開發電腦的*TEMP*目錄中，找到目錄中的診斷記錄。 
 
 ## <a name="remove-the-sample-application-from-your-cluster"></a>從您的叢集中移除範例應用程式
 
@@ -164,7 +164,6 @@ Kubernetes 叢集中的所有流量都會重新導向至您的開發電腦上執
 > [本機處理序與 Kubernetes 搭配使用的方式](overview-local-process-kubernetes.md)
 
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
-[azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
 [azds-vs-code]: https://marketplace.visualstudio.com/items?itemName=azuredevspaces.azds
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-lates
 [azure-cloud-shell]: /azure/cloud-shell/w.md

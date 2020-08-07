@@ -8,20 +8,20 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 02a672321a11889d88a8af3305e64a66fe779080
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7778019e73119a4b8b1a5842bb7a8c04ef017143
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283186"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913297"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>開始使用 Visual Studio Kubernetes 工具
 
-Visual Studio Kubernetes 工具可協助簡化以 Kubernetes 為目標的容器化應用程式開發。 Visual Studio 可以自動建立支援 Kubernetes 部署所需的設定即程式碼檔案，例如 Dockerfile 和 Helm 圖表。 您可以使用 Azure Dev Spaces 在 live Azure Kubernetes Service （AKS）叢集中進行程式碼的驗證，或從 Visual Studio 內部直接發行至 AKS 叢集。
+Visual Studio Kubernetes 工具可協助簡化以 Kubernetes 為目標的容器化應用程式開發。 Visual Studio 可以自動建立支援 Kubernetes 部署所需的設定即程式碼檔案，例如 Dockerfile 和 Helm 圖表。 您可以在即時 Azure Kubernetes Service 中，使用 Azure Dev Spaces 來對程式碼進行 (AKS) 叢集的驗證，或從 Visual Studio 內部直接發行至 AKS 叢集。
 
 本教學課程涵蓋如何使用 Visual Studio 將 Kubernetes 支援新增至專案，併發布至 AKS。 如果您主要想要使用[Azure Dev Spaces](/azure/dev-spaces/)來對 AKS 中執行的專案進行偵錯工具和測試，您可以改為跳至[Azure Dev Spaces 教學](/azure/dev-spaces/get-started-netcore-visualstudio)課程。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要利用這種新功能，您需要：
 
@@ -32,9 +32,9 @@ Visual Studio Kubernetes 工具可協助簡化以 Kubernetes 為目標的容器�
 ::: moniker range="vs-2019"
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)，其中包含 *ASP.NET 和 Web 部署*工作負載。
 ::: moniker-end
-- [Docker Desktop](https://store.docker.com/editions/community/docker-ce-desktop-windows)安裝在您的開發工作站上（也就是您執行 Visual Studio 的位置），如果您想要建立 Docker 映射、在本機上對 docker 容器進行偵錯工具，或發佈至 AKS。 （使用 Azure Dev Spaces 在 AKS 中建立和偵測 Docker 容器並*不*需要 docker）。
+- [Docker Desktop](https://store.docker.com/editions/community/docker-ce-desktop-windows)安裝在您的開發工作站 (也就是，如果您想要建立 Docker 映射、在本機執行偵錯工具，或發佈至 AKS，您就可以在其中執行 Visual Studio) 。 使用 Azure Dev Spaces 在 AKS 中建立和偵測 Docker 容器時，*不*需要 (Docker。 ) 
 ::: moniker range="vs-2017"
-- 如果您想要從 Visual Studio 發行至 AKS （*不*需要使用 AZURE DEV SPACES 在 AKS 中進行偵錯工具）：
+- 如果您想要從 Visual Studio 發行至 AKS， (*不*需要使用 Azure Dev Spaces) 在 AKS 中進行偵錯工具：
 
     1. [AKS 發行工具](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)可供個別下載。
 
@@ -123,15 +123,15 @@ Visual Studio Kubernetes 工具可協助簡化以 Kubernetes 為目標的容器�
 
 - *azds. yaml*。 這包含 Azure Dev Spaces 的設定，可在 Azure Kubernetes Service 中提供快速、反復的偵錯工具體驗。 如需詳細資訊，請參閱[Azure Dev Spaces 檔](/azure/dev-spaces/azure-dev-spaces)。
 
-::: moniker range="vs-2017"
+:::moniker range="vs-2017"
 
-## <a name="publish-to-azure-kubernetes-service-aks"></a>發行至 Azure Kubernetes Service （AKS）
+## <a name="publish-to-azure-kubernetes-service-aks"></a>發行至 Azure Kubernetes Service (AKS) 
 
 所有這些檔案都備妥之後，您就可以使用 Visual Studio IDE 來撰寫和偵錯工具程式碼，就像往常一樣。 您也可以使用[Azure Dev Spaces](/azure/dev-spaces/)來快速地執行和偵錯工具代碼，在 AKS 叢集中執行。 如需詳細資訊，請參閱[Azure Dev Spaces 教學](/azure/dev-spaces/get-started-netcore-visualstudio)課程
 
 當您的程式碼以您想要的方式執行時，您可以直接從 Visual Studio 發行至 AKS 叢集。
 
-若要這樣做，您必須先仔細檢查是否已安裝所有內容，如發佈至 AKS 專案底下的[必要條件](#prerequisites)一節中所述，並執行連結中提供的所有命令列步驟。 然後，設定發行設定檔，將您的容器映射發佈至 Azure Container Registry （ACR）。 然後，AKS 可以從 ACR 提取您的容器映射，並將它部署到叢集。
+若要這樣做，您必須先仔細檢查是否已安裝所有內容，如發佈至 AKS 專案底下的[必要條件](#prerequisites)一節中所述，並執行連結中提供的所有命令列步驟。 然後，設定發佈設定檔，以將您的容器映射發佈至 Azure Container Registry (ACR) 。 然後，AKS 可以從 ACR 提取您的容器映射，並將它部署到叢集。
 
 1. 在**方案總管**中，以滑鼠右鍵按一下您的*專案*，然後選擇 [**發行**]。
 
@@ -145,7 +145,7 @@ Visual Studio Kubernetes 工具可協助簡化以 Kubernetes 為目標的容器�
 
    ![[發行至 Azure AKS] 功能表項目的螢幕擷取畫面](media/tutorial-kubernetes-tools/k8s-tools-publish-solution.png)
 
-4. 選擇您的訂用帳戶和 AKS 叢集，以及您剛才建立的 ACR 發行設定檔。 然後按一下 [確定] 。
+4. 選擇您的訂用帳戶和 AKS 叢集，以及您剛才建立的 ACR 發行設定檔。 然後按一下 [確定]。
 
    ![[發佈至 AKS] 畫面的螢幕擷取畫面](media/tutorial-kubernetes-tools/k8s-tools-publish-to-aks.png)
 
@@ -166,6 +166,16 @@ Visual Studio Kubernetes 工具可協助簡化以 Kubernetes 為目標的容器�
 ::: moniker-end
 
 恭喜！ 您現在可以針對所有的 Kubernetes 應用程式開發，使用完整的 Visual Studio 功能。
+
+## <a name="remove-kubernetes-support"></a>移除 Kubernetes 支援
+
+1. 在**方案總管**的 [**屬性**] 下，開啟 [ *launchSettings.js開啟*]。
+
+1. 刪除**Kubernetes 中**的區段容器。
+
+1. 如果您要切換回 Docker 撰寫，請在**方案總管**中選取該專案，按一下滑鼠右鍵，然後選擇 [**設定為啟始專案**]。
+
+1.  (選擇性) 您也可以刪除本文前面所述的其他成品，例如**圖表**資料夾和*azds。 yaml*。
 
 ## <a name="next-steps"></a>後續步驟
 
