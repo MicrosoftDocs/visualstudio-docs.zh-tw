@@ -108,7 +108,7 @@
   ],
   "notification_subscribers": [],
   "sync_notification_subscribers": [
-    "ghogen@microsoft.com"
+    "ceicnotifications@microsoft.com"
   ],
   "branches_to_filter": [
     "master",
@@ -148,6 +148,10 @@
   ],
   "branch_target_mapping": {
     "live": [
+      "Publish",
+      "Pdf"
+    ],
+    "live-sxs": [
       "Publish",
       "Pdf"
     ]
