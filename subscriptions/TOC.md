@@ -16,6 +16,7 @@
 ### [使用 Microsoft 帳戶登入](sign-in-msa.md)
 ### [使用公司/學校帳戶登入](sign-in-work.md)
 ### [使用 GitHub 登入](sign-in-github.md)
+### [連線的身分識別](use-connected-identities.md)
 ### [替代識別](vs-alternate-identity.md)
 ### [登入問題](sign-in-issues.md)
 ### [訂閱者資料的匿名](anonymization.md)
