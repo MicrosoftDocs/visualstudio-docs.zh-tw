@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276484"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114202"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>提出 Visual Studio 功能建議
 
-除了 [Visual Studio Developer Community](https://developercommunity.visualstudio.com) (Visual Studio 開發人員社群) 目前回報問題的功能之外，我們也推出了建議功能的新體驗。 這是一種新的方式,您可以直接參與 Visual Studio 的工程工作流程。
+除了 [Visual Studio Developer Community](https://developercommunity.visualstudio.com) (Visual Studio 開發人員社群) 目前回報問題的功能之外，我們也推出了建議功能的新體驗。 這是一種新方式，可讓您直接與 Visual Studio 的工程工作流程互動。
 
 ![開發人員社群上的 [Suggest a Feature] \(建議功能\) 按鈕](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -35,7 +35,7 @@ User Voice 網站已經成為唯讀狀態。 您可以在需要時回頭查看�
 
 我們已從 User Voice 論壇將數個初步想法移轉至開發人員社群。 我們選擇要移轉哪些想法的方式，是根據該意見反應對社群所產生的影響，以及我們的產品藍圖的優先順序。 如果您認為我們忽略了某個您期望看見的建議，歡迎您將它新增至開發人員社群。
 
-## <a name="votes"></a>(0 人投票)
+## <a name="votes"></a>投票
 
 開發人員社群中的投票系統與 User Voice 不同。 為了維持開發人員社群投票計數的完整性，並避免不公正的投票結果，我們會在每個功能建議旁邊以標記的形式清楚地顯示 User Voice 投票計數。 現在，如果您在改良後的開發人員社群中重複為某個建議投票，您的新投票計數將會有別於 User Voice 投票計數個別顯示。
 
@@ -83,9 +83,16 @@ User Voice 網站已經成為唯讀狀態。 您可以在需要時回頭查看�
 
 ![適用於開發人員社群上建議的 [Closed - Not Enough Info] \(已關閉 - 資訊不足\) 狀態](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
-**閉關 - 資訊不足**表明,經過幾次嘗試后,我們沒有收到足夠的資訊來完全理解您的功能建議。 我們必須關閉新功能建議，因為我們目前無法進一步採取任何動作。
+[**已關閉-沒有足夠的資訊**] 表示在數次嘗試之後，我們尚未收到足夠的資訊來完整瞭解您的功能建議。 我們必須關閉新功能建議，因為我們目前無法進一步採取任何動作。
 
 已找到我們所需的資訊？ 當您已準備好提供額外的資訊時，便可以要求重新啟用該票證。
+
+- - -
+
+![已關閉範圍狀態以取得開發人員社區的建議](../ide/media/SuggestStates/closed-out-of-scope.png)
+
+**範圍已關閉**如果建議不符合我們的整體產品方向，我們會將其關閉為*超出範圍*。 例如，在 Visual Studio 系列產品的其他成員中，我們可能會有類似的投資。 或者，建議的功能可能只與少數人相關，讓延伸模組更適合提供。
+
 
 - - -
 
@@ -103,7 +110,7 @@ User Voice 網站已經成為唯讀狀態。 您可以在需要時回頭查看�
 
 ## <a name="faq"></a>常見問題集
 
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>為什麼我無法在開發人員社區中看到我的使用者語音想法?
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>為什麼我看不到開發人員社區中的使用者語音想法？
 
 針對來自舊版 User Voice 論壇中的新功能建議，我們會根據其對廣大社群所產生的影響，以及我們的產品藍圖優先順序，來選擇是否要移轉到開發人員社群。 如果您認為我們未能移轉您的建議，請以新建議的形式將它新增至開發人員社群。
 

@@ -748,6 +748,10 @@
                   href: ca2355.md
                 - name: CA2356：Web 還原序列化物件圖中的不安全 DataSet 或 DataTable 類型
                   href: ca2356.md
+                - name: CA2361：確認不會搭配不受信任的資料使用包含 DataSet.ReadXml() 的自動產生類別
+                  href: ca2361.md
+                - name: CA2362：自動產生之可序列化型別中不安全的 DataSet 或 DataTable，容易受到遠端程式碼執行攻擊
+                  href: ca2362.md
                 - name: 'CA2330:在還原序列化時，請確認 JsonSerializer 有安全的組態'
                   href: ca2330.md
                 - name: CA3001：檢閱程式碼是否有 SQL 插入式攻擊弱點

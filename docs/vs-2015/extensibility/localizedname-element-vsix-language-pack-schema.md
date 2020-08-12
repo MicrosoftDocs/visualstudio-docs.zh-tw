@@ -1,5 +1,5 @@
 ---
-title: LocalizedName 元素（VSIX 語言套件架構） |Microsoft Docs
+title: " (VSIX 語言套件架構) 的 LocalizedName 元素 |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,14 +8,14 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 58e491290122a9d525ff8129333ac0f52ac5f778
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 64d8430dbcf563ca232d1b8d850678925770219f
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77477030"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114167"
 ---
-# <a name="localizedname-element-vsix-language-pack-schema"></a>LocalizedName 元素（VSIX 語言套件架構）
+# <a name="localizedname-element-vsix-language-pack-schema"></a>LocalizedName 元素 (VSIX 語言套件結構描述)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 必要。 要安裝之延伸模組的當地語系化名稱。  
@@ -26,20 +26,20 @@ ms.locfileid: "77477030"
 <Name>Localized name of the extension</Name>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和元素  
- 下列章節說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|None||  
+|無||  
   
 ### <a name="child-elements"></a>子元素  
   
 |元素|描述|  
 |-------------|-----------------|  
-|None||  
+|無||  
   
 ### <a name="parent-elements"></a>父項目  
   
@@ -51,13 +51,39 @@ ms.locfileid: "77477030"
  必要。 語言套件的名稱（以目的語言）。  
   
 ## <a name="element-information"></a>項目資訊  
-  
-|                 |                                                           |
-|-----------------|-----------------------------------------------------------|
-|    命名空間    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
-|   結構描述名稱   |                 VSIX 語言套件架構                 |
-| 驗證檔 |                VSIXLanguagePackSchema .xsd                 |
-|  可以是空的   |                      不適用                       |
+
+:::row:::
+    :::column:::
+        命名空間
+    :::column-end:::
+    :::column:::
+        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        結構描述名稱
+    :::column-end:::
+    :::column:::
+        VSIX 語言套件架構
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        驗證檔
+    :::column-end:::
+    :::column:::
+        VSIXLanguagePackSchema .xsd
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        可以是空的
+    :::column-end:::
+    :::column:::
+        不適用
+    :::column-end:::
+:::row-end:::
   
 ## <a name="see-also"></a>另請參閱  
  [VSX 語言套件架構參考](../extensibility/vsx-language-pack-schema-reference.md)   

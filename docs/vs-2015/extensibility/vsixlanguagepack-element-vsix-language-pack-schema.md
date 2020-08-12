@@ -1,5 +1,5 @@
 ---
-title: VSIXLanguagePack 元素（VSIX 語言套件架構） |Microsoft Docs
+title: " (VSIX 語言套件架構) 的 VSIXLanguagePack 元素 |Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,14 +8,14 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e2e1df362fddeab5be98ff90460a8a1a7d4b7876
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: cd3ed1477d1c4d345e5fc6f6496d12044d4af244
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557998"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114197"
 ---
-# <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>VSIXLanguagePack 元素（VSIX 語言套件架構）
+# <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>VSIXLanguagePack 元素 (VSIX 語言套件結構描述)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 必要。 提供 VSIX 語言套件的根項目。 VSIX 語言套件提供 VSIX 封裝的當地語系化安裝資訊。  
@@ -31,8 +31,8 @@ ms.locfileid: "77557998"
 </VSIXLanguagePack>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和元素  
- 下列各節描述屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
@@ -59,16 +59,42 @@ ms.locfileid: "77557998"
   
 |元素|描述|  
 |-------------|-----------------|  
-|None||  
+|無||  
   
 ## <a name="element-information"></a>項目資訊  
-  
-|                 |                                                           |
-|-----------------|-----------------------------------------------------------|
-|    命名空間    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
-|   結構描述名稱   |                 VSIX 語言套件架構                 |
-| 驗證檔 |                VSIXLanguagePackSchema .xsd                 |
-|  可以是空的   |                            否                             |
+
+:::row:::
+    :::column:::
+        命名空間
+    :::column-end:::
+    :::column:::
+        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        結構描述名稱
+    :::column-end:::
+    :::column:::
+        VSIX 語言套件架構
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        驗證檔
+    :::column-end:::
+    :::column:::
+        VSIXLanguagePackSchema .xsd
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        可以是空的
+    :::column-end:::
+    :::column:::
+        否
+    :::column-end:::
+:::row-end:::
   
 ## <a name="see-also"></a>另請參閱  
  [VSX 語言套件架構參考](../extensibility/vsx-language-pack-schema-reference.md)[當地語系化 Vsix 封裝](../extensibility/localizing-vsix-packages.md) [Vsix 延伸模組架構1.0 參考](/previous-versions/dd393700(v=vs.110))
