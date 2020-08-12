@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8016eef7b6e0da9b9fc88695db845cba7f608ff3
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 488f8790ec25532fb611f18e8b24e7e7dba2e2f4
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574090"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144543"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 捕獲成員的屬性。  
@@ -42,7 +42,7 @@ HRESULT GetMemberProperties(
  辨識成員。 使用 `GetDispID` 或 `GetNextDispID` 來取得分派識別碼。  
   
  `grfdexFetch`  
- 決定要取得的屬性。 這可以是 `pgrfdex` 和/或下列值組合下所列值的組合：  
+ 決定要取得的屬性。 這可以是列在 `pgrfdex` 和/或下列值組合底下的值的組合：  
   
 |值|意義|  
 |-----------|-------------|  
@@ -52,7 +52,7 @@ HRESULT GetMemberProperties(
 |grfdexPropAll|結合 grfdexPropCanAll、grfdexPropCannotAll 和 grfdexPropExtraAll。|  
   
  `pgrfdex`  
- 接收要求屬性的 `DWORD` 位址。 這可以是下列值的組合：  
+ `DWORD`接收要求屬性之的位址。 這可以是下列值的組合：  
   
 |值|意義|  
 |-----------|-------------|  
@@ -72,9 +72,9 @@ HRESULT GetMemberProperties(
 |fdexPropCannotSourceEvents|成員無法引發事件。|  
   
 ## <a name="return-value"></a>傳回值  
- 傳回下列其中一個值：  
+ 傳回下列其中一值：  
   
-|||  
+|值|意義|
 |-|-|  
 |`S_OK`|成功。|  
 |`DISP_E_UNKNOWNNAME`|未知的名稱。|  

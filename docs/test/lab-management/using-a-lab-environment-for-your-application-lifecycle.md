@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2f4733bd52e44409ec9c2cc9a1e8828864712ceb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286826"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144684"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用實驗室環境進行開發
 
@@ -34,9 +34,14 @@ ms.locfileid: "85286826"
 |![雲端實驗室環境](../media/topology_cloud.png)| 此實驗室環境提供與_伺服器拓樸_類似的功能和特性，但移除在本機環境中執行實體或虛擬機器的需求，這樣可減少安裝時間、簡化維護工作，並將成本降至最低。 在 Microsoft Azure 這樣的雲端環境中，設定多個網站和虛擬機器，加上自訂的網路，快速且容易。|
 |![用戶端實驗室環境](../media/topology_clientserver.png)| 此實驗室環境具有「用戶端伺服器拓撲」**，這種拓撲經常用來測試有伺服器和用戶端元件的應用程式。 在用戶端/伺服器拓撲中，用來測試應用程式的所有用戶端和伺服器電腦都在您的實驗室環境中。 當您使用此拓撲時，可以從影響測試的每台電腦收集測試資料。|
 
-| | |
-|---|---|
-| ![影片的電影攝影機圖示](../../install/media/video-icon.png) | [觀看影片](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) \(英文\) 了解如何管理實驗室環境以供測試之用。 |
+:::row:::
+    :::column:::
+        ![影片的電影攝影機圖示](../../install/media/video-icon.png)
+    :::column-end:::
+    :::column:::
+        [觀看影片](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) \(英文\) 了解如何管理實驗室環境以供測試之用。
+    :::column-end:::
+:::row-end:::
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>使用雲端搭配 Azure Pipelines 或 Team Foundation Server 的建置和發行
 
@@ -139,7 +144,7 @@ Lab Management 會在您環境中的每部電腦上自動安裝測試代理程�
 * [建立和使用網路隔離的環境](https://msdn.microsoft.com/library/ee518924.aspx)
 ::: moniker-end
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [安裝和設定測試代理程式](../../test/lab-management/install-configure-test-agents.md)
 * [Visual Studio Lab Management 指南](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)

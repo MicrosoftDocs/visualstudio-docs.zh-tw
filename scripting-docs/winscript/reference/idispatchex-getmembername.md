@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f68b0157e8e352b34885ae94d14026a51c4a6e97
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 8dbfb82e986ed6d1738bcc0cffeec35e5ba4515c
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574101"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144606"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 抓取成員的名稱。  
@@ -41,12 +41,12 @@ HRESULT GetMemberName(
  辨識成員。 使用 `GetDispID` 或 `GetNextDispID` 來取得分派識別碼。  
   
  `pbstrName`  
- 接收成員名稱之 `BSTR` 的位址。 呼叫應用程式會負責釋放此值。  
+ `BSTR`接收成員名稱之的位址。 呼叫應用程式會負責釋放此值。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回下列其中一個值：  
+ 傳回下列其中一值：  
   
-|||  
+|值|意義|
 |-|-|  
 |`S_OK`|成功。|  
 |`DISP_E_UNKNOWNNAME`|未知的名稱。|  

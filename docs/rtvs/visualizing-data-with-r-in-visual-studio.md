@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62811053"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144697"
 ---
 # <a name="create-visual-data-plots-with-r"></a>以 R 建立視覺化資料繪圖
 
@@ -21,9 +21,14 @@ ms.locfileid: "62811053"
 
 ![繪製英雄影像](media/plotting-hero-image.png)
 
-|   |   |
-|---|---|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看關於使用 R 進行繪製的影片 (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) (2 分 02 秒)。 |
+:::row:::
+    :::column:::
+        ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")
+    :::column-end:::
+    :::column:::
+        [觀看關於使用 R 進行繪製的影片 (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) (2 分 02 秒)。
+    :::column-end:::
+:::row-end:::
 
 ## <a name="the-plot-window"></a>繪圖視窗
 
@@ -43,9 +48,9 @@ ms.locfileid: "62811053"
 
 ## <a name="plot-window-commands"></a>繪圖視窗命令
 
-繪圖視窗的工具列包含適用的命令，其中大多數命令也可通過**R Tools** > **繪圖**功能表提供。
+繪圖視窗的工具列包含適用的命令，其中大部分也都可透過 [ **R 工具**] [  >  **繪圖**] 功能表取得。
 
-| 按鈕 | Command | 描述 |
+| 按鈕 | 命令 | 說明 |
 | --- | --- | --- |
 | ![新增繪圖視窗按鈕](media/plotting-toolbar-01-new-plot-window.png) | 新增繪圖視窗 | 建立有專屬歷程記錄的個別繪圖視窗。 請參閱[多個繪圖視窗](#multiple-plot-windows)。 |
 | ![啟動繪圖視窗按鈕](media/plotting-toolbar-02-activate-plot-window.png) | 啟動繪圖視窗 | 將目前的繪圖視窗設為使用中視窗，以便後續的 `plot` 命令呈現在該視窗中。 請參閱[多個繪圖視窗](#multiple-plot-windows)。 請參閱[多個繪圖視窗](#multiple-plot-windows)。 |
@@ -62,17 +67,17 @@ ms.locfileid: "62811053"
 
 因為資料科學家通常會使用來自許多不同資料集的許多繪圖，所以 RTVS 可讓您建立所要數目的獨立繪圖視窗。 不過，您可以接著在 Visual Studio 框架內部或該框架外部，依您想要的方式排列這些視窗。 (如需停駐和調整視窗大小的一般資訊，請參閱[在 Visual Studio 中自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)。)
 
-您可以使用工具列按鈕或**R 工具** > **繪製** > **新繪圖視窗創建新的繪圖視窗**。 新的繪圖視窗變成「使用中」** 視窗，也就是呈現新繪圖的位置。 若要變更使用中視窗，請切換到該視窗，然後選取 [啟動繪圖視窗]**** 工具列按鈕或 [R 工具]**** > [繪圖]**** > [啟動繪圖視窗]****。
+您可以使用工具列按鈕或 [ **R 工具**] [  >  **繪圖**  >  **] [新增繪圖視窗]** 來建立新的繪圖視窗。 新的繪圖視窗變成「使用中」** 視窗，也就是呈現新繪圖的位置。 若要變更使用中視窗，請切換到該視窗，然後選取 [啟動繪圖視窗]**** 工具列按鈕或 [R 工具]**** > [繪圖]**** > [啟動繪圖視窗]****。
 
 繪圖也是獨立物件，這表示您可以在繪圖視窗間複製或移動它們，方法是使用滑鼠拖放，或使用滑鼠右鍵操作功能表和 [編輯]**** 功能表的 [複製]****、[剪下]**** 和 [貼上]**** 命令。
 
-拖放的預設行為是複製;移動時拖放，同時按住**Shift**鍵。
+拖放的預設行為是 copy;若要移動，請按住**Shift**鍵同時拖放。
 
 ## <a name="plot-history"></a>繪圖歷程記錄
 
-繪圖命令會保留在每個視窗的繪圖歷程記錄中，確保留存工作階段中的所有繪圖作業。 要導航歷史記錄，請使用繪圖視窗工具列上的箭頭按鈕，或**Ctrl**+**Alt**+**F11**和**Ctrl**+**Alt**+**F12**。 您還可以使用工具列按鈕或**R Tools** > **繪圖**功能表命令從視窗刪除單個繪圖或清除所有繪圖。
+繪圖命令會保留在每個視窗的繪圖歷程記錄中，確保留存工作階段中的所有繪圖作業。 若要導覽歷程記錄，請使用 [繪圖視窗] 工具列上的箭號按鈕，或按**ctrl** + **alt** + **F11**和**ctrl** + **alt** + **F12**。 您也可以使用工具列按鈕或 [ **R 工具**] [  >  **繪圖**] 功能表命令，從視窗中移除單一繪圖或清除所有繪圖。
 
-要查看整個繪圖集合，請使用工具列按鈕或**R Tools** > **繪圖** > **歷史記錄視窗打開繪圖歷史記錄視窗**。
+若要查看整個繪圖集合，請使用工具列按鈕或 [ **R 工具**] [繪圖歷程  >  **Plots**  >  **記錄] 視窗**開啟 [繪圖歷程記錄] 視窗。
 歷程記錄會提供您一份在該視窗中顯示的繪圖縮圖清單，並依不同的繪圖視窗 (或裝置) 分組。 使用工具列上的縮放按鈕可變更縮圖的大小。
 
 ![繪圖歷程記錄視窗](media/plotting-plot-history-window.png)

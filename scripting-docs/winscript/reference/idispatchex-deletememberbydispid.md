@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38ead33fb51caff1103ca9abe6bc01f3e0aa6aa3
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0c3dbb040e39fd15b77e42b2eaa9fb2cdda0b1b2
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576643"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144632"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
 依 DISPID 刪除成員。  
@@ -40,17 +40,17 @@ HRESULT DeleteMemberByDispID(
  成員識別碼。 使用 `GetDispID` 或 `GetNextDispID` 來取得分派識別碼。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回下列其中一個值：  
+ 傳回下列其中一值：  
   
-|||  
+|值|意義|
 |-|-|  
 |`S_OK`|成功。|  
 |`S_FALSE`|成員存在，但無法刪除。|  
   
 ## <a name="remarks"></a>備註  
- 如果刪除成員，DISPID 必須保持有效以進行 `GetNextDispID`。  
+ 如果刪除成員，DISPID 就必須保持有效的 `GetNextDispID` 。  
   
- 如果刪除具有指定名稱的成員，並在稍後重新建立具有相同名稱的成員，則 DISPID 應相同。 （只有大小寫不同的成員名稱是否為「相同」，與物件相依）。  
+ 如果刪除具有指定名稱的成員，並在稍後重新建立具有相同名稱的成員，則 DISPID 應相同。  (只有大小寫不同的成員名稱是否為「相同」，與物件相依。 )   
   
 ## <a name="example"></a>範例  
   

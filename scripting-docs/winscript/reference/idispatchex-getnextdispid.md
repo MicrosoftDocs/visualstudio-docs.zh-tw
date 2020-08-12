@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNextDispID | Microsoft Docs
+title: IDispatchEx：： GetNextDispID |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d964a8744f1f0a28704dd0a1d5e0fd2e67aab1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8811e828a6701769badf45ca7c37f9c53529150f
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997351"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144425"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 
@@ -41,29 +41,29 @@ HRESULT GetNextDispID(
 ## <a name="parameters"></a>參數
 
 `grfdex`\
-決定要列舉的一組項目。 這可以是下列值的組合：
+決定要列舉的專案集合。 這可以是下列值的組合：
 
 |值|意義|
 |-----------|-------------|
-|fdexEnumDefault|要求物件列舉的預設項目。 物件可以列舉任何一組的項目。|
-|fdexEnumAll|要求物件列舉的所有項目。 物件可以列舉任何一組的項目。|
+|fdexEnumDefault|要求物件列舉預設元素。 允許物件列舉任何一組元素。|
+|fdexEnumAll|要求物件列舉所有元素。 允許物件列舉任何一組元素。|
 
 `id`\
-識別目前的成員。 GetNextDispID 擷取後此列舉型別中的項目。 若要取得這個識別項，會使用 GetDispID 或 GetNextDispID 之前呼叫。 若要取得第一個項目的第一個識別項使用 DISPID_STARTENUM 值。
+識別目前的成員。 GetNextDispID 會抓取列舉中的專案。 會使用 GetDispID 或先前的 GetNextDispID 呼叫來取得此識別碼。 會使用 DISPID_STARTENUM 值來取得第一個專案的第一個識別碼。
 
 `pid`\
-列舉中接收的下一個項目識別項的 DISPID 變數的位址。
+DISPID 變數的位址，可接收列舉中下一個專案的識別碼。
 
-如果成員已遭刪除`DeleteMemberByName`或是`DeleteMemberByDispID`，則`DISPID`要保持有效`GetNextDispID`。
+如果或刪除了成員 `DeleteMemberByName` `DeleteMemberByDispID` ，則 `DISPID` 必須保持對的有效 `GetNextDispID` 。
 
 ## <a name="return-value"></a>傳回值
 
-會傳回下列值之一：
+傳回下列其中一值：
 
-|||
+|值|意義|
 |-|-|
 |`S_OK`|成功。|
-|`S_FALSE`|是列舉型別。|
+|`S_FALSE`|列舉已完成。|
 
 ## <a name="example"></a>範例
 
