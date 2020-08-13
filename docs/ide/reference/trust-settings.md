@@ -1,7 +1,7 @@
 ---
 title: 檔案和資料夾的信任設定
 description: 學習如何變更檔案和資料夾的信任設定，以保持 Visual Studio 的安全。
-author: abuchholtzau
+author: 2percentsilk
 ms.author: allisb
 ms.date: 09/05/2018
 ms.topic: reference
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 011673bca7be569b5b350dc264148d5a7890d39c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 492a94962d255a9d18dcabdababf7fa6a540ada1
+ms.sourcegitcommit: 935e1388281df0f04147802606b5cb7f513d45ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62789620"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88197392"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>設定檔案和資料夾的信任設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "62789620"
 
 若要變更信任設定，請遵循下列步驟：
 
-1. 打開**工具** > **選項** > **信任設置**，並在右側窗格中選擇"**配置信任設置"** 連結。
+1. 開啟 [**工具**  >  ] [**選項**  >  ] [**信任設定**]，然後選取右窗格中的 [**設定信任設定**] 連結。
 
 2. 選擇您想用於檔案和資料夾的檢查層級。 您可以讓每一項的檢查各不相同。 可用選項包括：
 
@@ -47,7 +47,7 @@ ms.locfileid: "62789620"
 
 若要新增信任路徑，請遵循下列步驟：
 
-1. 打開**工具** > **選項** > **信任設置**，並在右側窗格中選擇"**配置信任設置"** 連結。
+1. 開啟 [**工具**  >  ] [**選項**  >  ] [**信任設定**]，然後選取右窗格中的 [**設定信任設定**] 連結。
 
 2. 按一下 [信任設定]**** 對話方塊中的 [新增]****，然後選取 [檔案]**** 或 [資料夾]****。
 
@@ -61,7 +61,7 @@ ms.locfileid: "62789620"
 
 若要移除信任路徑，請遵循下列步驟：
 
-1. 打開**工具** > **選項** > **信任設置**，並在右側窗格中選擇"**配置信任設置"** 連結。
+1. 開啟 [**工具**  >  ] [**選項**  >  ] [**信任設定**]，然後選取右窗格中的 [**設定信任設定**] 連結。
 
 2. 在 [信任路徑]**** 清單中選取您想要移除的路徑，然後按一下 [移除]****。
 
