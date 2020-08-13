@@ -983,3 +983,9 @@
                   href: ca2248.md
             - name: 自動功能暫停
               href: automatic-feature-suspension.md
+            - name: 發佈警告
+              items:
+                - name: 概觀
+                  displayName: publish warnings
+                - name: IL3000：以單一檔案形式發佈時，避免使用存取組件檔案路徑
+                  href: il3000.md
