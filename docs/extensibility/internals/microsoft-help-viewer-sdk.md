@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114254"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168732"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -445,24 +445,24 @@ Branding.xml 檔案包含專案清單，這些專案會在主題包含時，用�
 
 **Branding.xml**
 
-| 功能 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | 功能： | **CollapsibleArea** |
 | 使用︰ | 展開折迭內容控制項文字 |
-| **項目** | **ReplTest1** |
+| **Element** | **ReplTest1** |
 | ExpandText | 展開 |
 | CollapseText | 摺疊 |
 | 功能： | **CodeSnippet** |
 | 使用︰ | 程式碼片段控制項文字。  注意：具有「非中斷」空間的程式碼片段內容將會變更為「空間」。 |
-| **項目** | **ReplTest1** |
+| **Element** | **ReplTest1** |
 | CopyToClipboard | 複製至剪貼簿 |
 | ViewColorizedText | View 以色彩標示 |
 | CombinedVBTabDisplayLanguage | Visual Basic (範例)  |
 | VBDeclaration | 宣告 |
-| VBUsage | 使用方式 |
+| VBUsage | 使用量 |
 | 功能： | **意見反應、頁尾和標誌** |
 | 使用︰ | 提供意見反應控制項給客戶，以透過電子郵件提供有關目前主題的意見反應。  內容的著作權文字。  標誌定義。 |
-| **項目** | ** (可以修改這些字串的值，以符合內容採用者的需求。 ) ** |
+| **Element** | ** (可以修改這些字串的值，以符合內容採用者的需求。 ) ** |
 | 詳情 | © 2013 Microsoft Corporation。 著作權所有，並保留一切權利。 |
 | SendFeedback | \<a href="{0}" {1}>將 \</a> 關於本主題的意見反應傳送給 Microsoft。 |
 | No-results-found-feedbacklink | |
@@ -471,7 +471,7 @@ Branding.xml 檔案包含專案清單，這些專案會在主題包含時，用�
 | LogoFileNameHC | vs_logo_wh.gif |
 | 功能： | **免責聲明** |
 | 使用︰ | 機器轉譯內容的一組案例特定免責聲明。 |
-| **項目** | **ReplTest1** |
+| **Element** | **ReplTest1** |
 | MT_Editable | 本文為機器翻譯。 如果您有網際網路連線，請選取 [線上流覽這個主題]，以同時使用原始英文內容的可編輯模式來觀看此頁面。 |
 | MT_NonEditable | 本文為機器翻譯。 如果您有網際網路連線，請選取 [線上流覽這個主題]，以同時使用原始英文內容的可編輯模式來觀看此頁面。 |
 | MT_QualityEditable | 這篇文章是以手動方式轉譯。 如果您有網際網路連線，請選取 [線上流覽這個主題]，以同時使用原始英文內容的可編輯模式來觀看此頁面。 |
@@ -480,14 +480,14 @@ Branding.xml 檔案包含專案清單，這些專案會在主題包含時，用�
 | MT_BetaRecycledContents | 這篇文章是針對初稿發行而手動翻譯的。 如果您有網際網路連線，請選取 [線上流覽這個主題]，以同時使用原始英文內容的可編輯模式來觀看此頁面。 |
 | 功能： | **LinkTable** |
 | 使用︰ | 線上主題連結的支援 |
-| **項目** | **ReplTest1** |
+| **Element** | **ReplTest1** |
 | LinkTableTitle | 連結資料表 |
 | TopicEnuLinkText | 請參閱本主題的英文版，該版本 \</a> 可在您的電腦上取得。 |
 | TopicOnlineLinkText | 線上觀看本主題 \<a href="{0}" {1}>\</a> |
 | OnlineText | 線上 |
 | 功能： | **Video 音訊控制項** |
 | 使用︰ | 顯示影片內容的元素和文字 |
-| **項目** | **ReplTest1** |
+| **Element** | **ReplTest1** |
 | MultiMediaNotSupported | 必須安裝 Internet Explorer 9 或更新版本，才能支援 {0} 內容。 |
 | VideoText | 顯示影片 |
 | AudioText | 串流音訊 |
@@ -495,25 +495,25 @@ Branding.xml 檔案包含專案清單，這些專案會在主題包含時，用�
 | OnlineAudioLinkText | \<p>若要接聽與本主題相關的音訊，請按一下 {0} \<a href="{1}"> {2} 這裡 \</a> 。\</p> |
 | 功能： | **內容未安裝控制** |
 | 使用︰ | 文字元素 (字串) 用於轉譯 contentnotinstalled.htm |
-| **項目** | **ReplTest1** |
+| **Element** | **ReplTest1** |
 | ContentNotInstalledTitle | 在您的電腦上找不到任何內容。 |
 | ContentNotInstalledDownloadContentText | \<p>若要將內容下載到您的電腦，請 \<a href="{0}" {1}> 按一下 [管理] 索引標籤 \</a> 。\</p> |
 | ContentNotInstalledText | \<p>您的電腦上未安裝任何內容。 請參閱系統管理員以取得本機說明內容安裝。\</p> |
 | 功能： | **找不到主題控制項** |
 | 使用︰ | 文字元素 (字串) 用於轉譯 topicnotfound.htm |
-| **項目** | **ReplTest1** |
+| **Element** | **ReplTest1** |
 | TopicNotFoundTitle | 在您的電腦上找不到要求的主題。 |
 | TopicNotFoundViewOnlineText | \<p>在您的電腦上找不到您要求的主題，但是您可以在 \<a href="{0}" {1}> 線上查看該主題 \</a> 。\</p> |
 | TopicNotFoundDownloadContentText | \<p>如需類似主題的連結，請參閱流覽窗格，或 \<a href="{0}" {1}> 按一下 [管理] 索引標籤， \</a> 將內容下載到您的電腦。\</p> |
 | TopicNotFoundText | \<p>在您的電腦上找不到您要求的主題。\</p> |
 | 功能： | **主題損毀控制項** |
 | 使用︰ | 文字元素 (字串) 用於轉譯 topiccorrupted.htm |
-| **項目** | **ReplTest1** |
+| **Element** | **ReplTest1** |
 | TopicCorruptedTitle | 無法顯示要求的主題。 |
 | TopicCorruptedViewOnlineText | \<p>說明檢視器無法顯示要求的主題。 主題的內容或基礎系統相依性中可能發生錯誤。\</p> |
 | 功能： | **首頁控制項** |
 | 使用︰ | 支援顯示 [說明檢視器] 最上層節點內容的文字。 |
-| **項目** | **ReplTest1** |
+| **Element** | **ReplTest1** |
 | HomePageTitle | 說明檢視器首頁 |
 | HomePageIntroduction | \<p>歡迎使用 Microsoft Help Viewer，這是使用 Microsoft 工具、產品、技術和服務之每個人的基本資訊來源。 說明檢視器可讓您存取 how-to 和參考資訊、範例程式碼、技術文章等等。 若要尋找您所需的內容，請流覽目錄、使用全文檢索搜尋，或使用關鍵字索引流覽內容。\</p> |
 | HomePageContentInstallText | \<p>\<br />使用 [ \<a href="{0}" {1}> 管理內容] 索引標籤 \</a> 來執行下列動作： \<ul> \<li> 將內容新增至您的電腦。 \</li> \<li>檢查本機內容的更新。 \</li> \<li>從您的電腦移除內容。\</li>\</ul>\</p> |

@@ -8,12 +8,13 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+monikerRange: '>=vs-2019'
+ms.openlocfilehash: cd17726d5ba09dcb901fd529e6bdfd97dee52f31
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536886"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168623"
 ---
 # <a name="deploy-to-docker-hub"></a>發佈至 Docker Hub
 
@@ -29,15 +30,19 @@ Docker Hub 為您的映射存放庫提供便利的主機服務。 您可以輕�
 
 1. 以滑鼠右鍵按一下專案節點，然後選擇 [**發佈 ...**]。顯示部署選項的畫面隨即出現。
 
-   ![部署選項的螢幕擷取畫面](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![部署選項的螢幕擷取畫面](media/container-tools/vs-2019/docker-container-registry.png)
 
-1. 在 [**挑選發佈目標**] 下，選擇 [ **Container Registry**]，然後選擇 [ **Docker Hub**]。 [ **Docker Hub** ] 對話方塊隨即出現。
+1. 選擇 [ **Docker Container Registry**]，然後選擇 [ **docker Hub**]。
+
+   ![[發佈] 對話方塊的螢幕擷取畫面-選擇 [Docker Hub]](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+
+1. 輸入您的 Docker 認證。
 
    ![[Docker Hub] 對話方塊的螢幕擷取畫面](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
-1. 如果您要連線到您自己的存放庫（而不是組織的一部分），請保留核取 [**發佈至個人存放庫**] 核取方塊。 如果存放庫是由組織所擁有，請清除此核取方塊，然後輸入組織名稱。 針對您的 Docker 帳戶，輸入有權存取您所連接之儲存機制的 Docker 使用者名稱和密碼，然後選取 [**儲存**]。  
+1. 如果您要連線到您自己的存放庫， (不是組織) 的一部分，請將 [**發行至個人存放庫**] 核取方塊保持核取狀態。 如果存放庫是由組織所擁有，請清除此核取方塊，然後輸入組織名稱。 針對您的 Docker 帳戶，輸入有權存取您所連接之儲存機制的 Docker 使用者名稱和密碼，然後選取 [**儲存**]。  
 
-   Visual Studio 嘗試將您的映射部署至 Docker Hub。  如果成功，[**發佈**] 畫面隨即出現，並顯示存放庫影像的 URL、影像標記、存放庫和組建設定（例如，**發行**）。
+   Visual Studio 嘗試將您的映射部署至 Docker Hub。  如果成功，[**發佈**] 畫面會顯示存放庫影像的 URL、影像標籤、存放庫和組建設定 (例如 [**發行**) ]。
 
    ![[發佈] 畫面的螢幕擷取畫面](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
 
@@ -47,9 +52,9 @@ Docker Hub 為您的映射存放庫提供便利的主機服務。 您可以輕�
 
 遵循[部署至 Azure Container Registry](hosting-web-apps-in-docker.md)中的步驟，發佈至[Azure Container Registry](/azure/container-registry/) 。
 
-使用[Azure Pipelines](/azure/devops/pipelines/?view=azure-devops)設定持續整合與傳遞（CI/CD）。
+使用[Azure Pipelines](/azure/devops/pipelines/?view=azure-devops)來設定持續整合和傳遞 (CI/CD) 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [部署至 Azure App Service](deploy-app-service.md) 
 [Visual Studio 容器工具](/visualstudio/containers/)。

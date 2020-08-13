@@ -1,5 +1,5 @@
 ---
-title: 使用最少的離線版面配置來更新 Visual Studio
+title: 使用最小離線版面配置來更新 Visual Studio
 description: 瞭解如何使用最少的離線版面配置來更新 Visual Studio。
 ms.date: 07/21/2020
 ms.custom: seodec18
@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 849cad46463ffb52e2f4f2a930f05daf66f7d737
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869879"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168745"
 ---
-# <a name="update-visual-studio-using-a-minimal-offline-layout"></a>使用最少的離線版面配置來更新 Visual Studio
+# <a name="update-visual-studio-using-a-minimal-offline-layout"></a>使用最小離線版面配置來更新 Visual Studio
 
 對於未連線到網際網路的電腦，建立最基本的配置是更新離線 Visual Studio 實例的最簡單且最快速的方式。
 
-「最小配置」工具會產生專為您小組的需求量身打造的版面配置。 企業系統管理員可以使用此工具，針對 Visual Studio 2017 和2019的大部分版本建立更新版面配置。 不同于完整的 Visual Studio 版面配置，最小的配置只包含更新的封裝，因此產生和部署的速度一律較小且更快速。 您可以只指定所需的語言、工作負載和元件，以進一步將更新配置的大小降至最低。
+「最小配置」工具會產生專為您小組的需求量身打造的版面配置。 企業系統管理員可以使用此工具，針對 Visual Studio 2017 和2019的大部分版本，建立 (s) 的更新配置。 不同于完整的 Visual Studio 版面配置，最小的配置只包含更新的封裝，因此產生和部署的速度一律較小且更快速。 您可以只指定所需的語言、工作負載和元件，以進一步將更新配置的大小降至最低。
 
 ## <a name="how-to-generate-a-minimal-layout"></a>如何產生最小版面配置
 
@@ -33,7 +33,7 @@ ms.locfileid: "86869879"
 > 若要進一步瞭解 Visual Studio 生命週期，請參閱[Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing)頁面。
 >
 
-此工具會建立 Visual Studio 2017 （15.9）和更新版本的更新配置。 版面配置可以部署到網路/離線電腦，以更新 Visual Studio 實例。 [建立一般版面](update-a-network-installation-of-visual-studio.md)配置時，會下載該特定版本的所有套件。 在 Visual Studio 實例上進行修復、卸載及其他標準作業時，需要建立一般配置。 最小版面配置只會下載更新的套件，因此較小且更容易複製到離線電腦。
+此工具會建立 Visual Studio 2017 (15.9) 和更新版本的更新配置。 版面配置可以部署到網路/離線電腦，以更新 Visual Studio 實例。 [建立一般版面](update-a-network-installation-of-visual-studio.md)配置時，會下載該特定版本的所有套件。 在 Visual Studio 實例上進行修復、卸載及其他標準作業時，需要建立一般配置。 最小版面配置只會下載更新的套件，因此較小且更容易複製到離線電腦。
 
 ### <a name="installing-the-minimal-layout-tool"></a>安裝最基本的版面組態工具
  
@@ -56,17 +56,18 @@ ms.locfileid: "86869879"
 #### <a name="commands"></a>命令
 * **預覽**：使用此命令可預覽要下載的套件數目，以及用來建立此版面配置的總空間。 
 * **產生**：使用此命令來產生更新 Visual Studio 的最小版面配置。
-* **重新**產生：使用此命令來重新產生使用現有最小版面配置回應檔案的配置。 每個最小版面配置都會產生 `MinimalLayout.json` 回應檔，其中包含原始的最小版面配置輸入參數。 您可以使用**重新**產生命令和 `MinimalLayout.json` 回應檔來重新產生最小版面配置。 如果您想要根據前一個最小版面配置的回應檔案來建立新 Visual Studio 更新的最小配置，這會很有用。 
-   - 針對此命令， `MinimalLayout.json` 需要來自已產生配置的檔案路徑。 
+* **重新**產生：使用此命令來重新產生使用現有最小版面配置回應檔案的配置。 每個最小版面配置都會產生 `MinimalLayout.json` 回應檔，其中包含原始的最小版面配置輸入參數。 您可以使用**重新**產生命令和 `MinimalLayout.json` 回應檔來重新產生最小版面配置。 如果您想要根據前一個最小版面配置的回應檔案來建立新 Visual Studio 更新的最小配置，這會很有用。
 
-        ```cmd
-        MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
-        ```
+   針對此命令， `MinimalLayout.json` 需要來自已產生配置的檔案路徑。 
+
+    ```cmd
+    MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
+    ```
 
 * **Verify**：使用此命令來判斷版面配置資料夾是否已損毀。
 * **修正**：使用此命令修正損毀的版面配置資料夾，包括從版面配置資料夾取代任何遺漏的封裝。
 
-#### <a name="options"></a>選項 
+#### <a name="options"></a>選項。 
 
 |選項。    |描述    |必要/選用 |範例 |
 |:----------|:-----------|:------------|:--------------|
@@ -76,9 +77,9 @@ ms.locfileid: "86869879"
 |--語言    |指定要包含在最低離線版面配置中的語言。 可以指定多個值，並以空格分隔。    |必要    |--語言 en-us fr-FR |
 |--productId &lt; 識別碼&gt;    |將產生最小離線版面配置的產品識別碼。 <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|必要|--productId VisualStudio. Product. Enterprise |
 |--filePath    |從已建立的版面配置，在檔案上 MinimalLayout.js檔案的檔案路徑。 此選項只會與重新產生命令搭配使用。     |重新產生命令所需    |--filePath C:\VSLayout\minimalLayout.js開啟 <br><br> **請注意，重新產生命令只接受--filePath 做為選項。** |
-|--新增 &lt; 一或多個工作負載或元件識別碼&gt;    |指定一或多個要新增的工作負載或元件識別碼。 您可以使用--includeRecommended 和/或，全域新增其他元件 <br> --includeOptional。 可以指定多個工作負載或元件識別碼，並以空格分隔。    |選擇性    |--新增 VisualStudio ManagedDesktop VisualStudio. NetWeb 元件. GitHub. VisualStudio |
-|--includeRecommended    |包含所安裝任何工作負載的建議元件，但不包含選擇性元件。    |選擇性    |針對特定的工作負載： <br> --新增 VisualStudio 工作負載。 ManagedDesktop; includeRecommended <br><br> 適用于所有工作負載：--includeRecommended |
-|--includeOptional |包含已安裝之任何工作負載的選擇性元件，包括建議的元件。    |選擇性    |針對特定的工作負載： <br>--新增 VisualStudio 工作負載。 ManagedDesktop; includeOptional <br><br> 適用于所有工作負載：--includeOptional |
+|--新增 &lt; 一或多個工作負載或元件識別碼&gt;    |指定一或多個要新增的工作負載或元件識別碼。 您可以使用--includeRecommended 和/或，全域新增其他元件 <br> --includeOptional。 可以指定多個工作負載或元件識別碼，並以空格分隔。    |選用    |--新增 VisualStudio ManagedDesktop VisualStudio. NetWeb 元件. GitHub. VisualStudio |
+|--includeRecommended    |包含所安裝任何工作負載的建議元件，但不包含選擇性元件。    |選用    |針對特定的工作負載： <br> --新增 VisualStudio 工作負載。 ManagedDesktop; includeRecommended <br><br> 適用于所有工作負載：--includeRecommended |
+|--includeOptional |包含已安裝之任何工作負載的選擇性元件，包括建議的元件。    |選用    |針對特定的工作負載： <br>--新增 VisualStudio 工作負載。 ManagedDesktop; includeOptional <br><br> 適用于所有工作負載：--includeOptional |
 
 ### <a name="generating-a-minimal-layout"></a>產生最小版面配置
 
@@ -177,7 +178,7 @@ ms.locfileid: "86869879"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [安裝 Visual Studio](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
