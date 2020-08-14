@@ -92,6 +92,10 @@
       href: data-visualizations.md
     - name: 使用來源連結對 NuGet 套件進行偵錯
       href: source-link.md
+- name: 測試
+  items:
+    - name: 總覽
+      href: testing.md
 - name: 編譯和建置
   items:
     - name: 總覽
