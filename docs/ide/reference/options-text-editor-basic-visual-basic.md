@@ -1,6 +1,6 @@
 ---
 title: 選項、文字編輯器、基本 (VB)、進階
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -13,32 +13,32 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431471"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214650"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>選項、文字編輯器、基本 (Visual Basic)、進階
 位於 [選項]**** ([工具]**** 功能表) 對話方塊上 [文字編輯器]**** 資料夾的 [基本]**** 資料夾中的 [VB 專用]**** 屬性頁面包含下列屬性：
 
 ## <a name="analysis"></a>分析
 
-- 即時代碼分析或背景分析範圍
+- 即時程式碼分析或背景分析範圍
 
-   配置託管代碼的背景分析範圍。 有關詳細資訊，請參閱[如何：為託管代碼配置即時代碼分析範圍](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
+   設定 managed 程式碼的背景分析範圍。 如需詳細資訊，請參閱 [如何：設定受控碼的即時程式碼分析範圍](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
 
 ## <a name="using-directives"></a>using 指示詞
 
 - 排序 using 時先放置 'System' 指示詞
 
-   選中後，按右鍵功能表中的 **"刪除和排序使用"** 命令對`using`指令進行排序，並將"系統"命名空間放在清單頂部。
+   選取時，滑鼠右鍵功能表中的 [ **移除並排序 using** ] 命令會排序指示詞 `using` ，並將 ' System ' 命名空間放在清單頂端。
 
 - 使用指示詞群組來進行分隔
 
@@ -55,7 +55,7 @@ ms.locfileid: "79431471"
 
  **啟用參考和關鍵字的反白顯示**
 
-文字編輯器可以反白顯示符號的所有執行個體或子句中的所有關鍵字，例如 `If..Then`、`While...End While` 或 `Try...Catch...Finally`。 您可以通過按 **"Ctrl** + **向下移位** + **"箭頭**或 **"向上移動** + **"** + **箭頭**在突出顯示的引用或關鍵字之間導航。
+文字編輯器可以反白顯示符號的所有執行個體或子句中的所有關鍵字，例如 `If..Then`、`While...End While` 或 `Try...Catch...Finally`。 您可以按**ctrl**  +  **shift**  +  **向下**鍵或**ctrl**  +  **shift**  +  **向上鍵**，在反白顯示的參考或關鍵字之間流覽。
 
 ## <a name="outlining"></a>大綱
 
@@ -79,6 +79,13 @@ ms.locfileid: "79431471"
 
 ## <a name="editor-help"></a>編輯器說明
 
+::: moniker range=">=vs-2019"
+**內嵌參數名稱提示**    
+選取此選項時，會在函式呼叫中的每個引數之前，插入常值、轉換常值和物件具現化的參數名稱提示。  
+
+![Visual Basic 的內嵌參數名稱提示](media/inline-parameter-name-hints-visualbasic.png)
+::: moniker-end
+
 **程式碼美化排列 (重新格式化)** 文字編輯器會適當地重新格式化您的程式碼。 選取此選項後，程式碼編輯器將會：
 
 - 將您的程式碼對齊正確的定位點位置
@@ -97,7 +104,7 @@ ms.locfileid: "79431471"
 
 **自動插入 End 建構**
 
-鍵入時，例如，過程聲明的第一行，`Sub Main`並按**Enter**，文字編輯器將添加匹配`End Sub`行。 同樣地，如果新增 [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) 迴圈，則文字編輯器會新增對稱的 `Next` 陳述式。 選取此選項後，程式碼編輯器會自動新增 End 建構。
+當您輸入（例如程式宣告的第一行）， `Sub Main` 然後按 **enter**鍵時，文字編輯器會加入相符的 `End Sub` 行。 同樣地，如果新增 [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) 迴圈，則文字編輯器會新增對稱的 `Next` 陳述式。 選取此選項後，程式碼編輯器會自動新增 End 建構。
 
 **自動插入 Interface 及 MustOverride 成員**
 
@@ -107,7 +114,7 @@ ms.locfileid: "79431471"
 
 文字編輯器可以提供一般錯誤的解決方案建議，並讓您選取要套用到程式碼的適當修正措施。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [常規、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
 - [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)

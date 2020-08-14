@@ -1,21 +1,21 @@
 ---
 title: 進階、C#、文字編輯器、選項
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
-ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
+ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86181062"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214663"
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 
@@ -28,13 +28,13 @@ ms.locfileid: "86181062"
 
 - 即時程式碼分析或背景分析範圍
 
-   設定 managed 程式碼的背景分析範圍。 如需詳細資訊，請參閱[如何：設定受控碼的即時程式碼分析範圍](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
+   設定 managed 程式碼的背景分析範圍。 如需詳細資訊，請參閱 [如何：設定受控碼的即時程式碼分析範圍](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
 
 ## <a name="using-directives"></a>using 指示詞
 
 - 排序 using 時先放置 'System' 指示詞
 
-   選取時，滑鼠右鍵功能表中的 [**移除並排序 using** ] 命令會排序指示詞 `using` ，並將 ' System ' 命名空間放在清單頂端。
+   選取時，滑鼠右鍵功能表中的 [ **移除並排序 using** ] 命令會排序指示詞 `using` ，並將 ' System ' 命名空間放在清單頂端。
 
    排序之前：
 
@@ -128,12 +128,18 @@ ms.locfileid: "86181062"
 選取這些核取方塊，在 **{}** 您的程式碼中 () 的大括弧之間顯示虛線垂直線條。 然後，您可以輕鬆查看宣告層級和程式碼層級建構的個別程式碼區塊。
 
 ## <a name="editor-help"></a>編輯器說明
-
+::: moniker range=">=vs-2019"
+- 內嵌參數名稱提示 
+    
+    選取此選項時，會在函式呼叫中的每個引數之前，插入常值、轉換常值和物件具現化的參數名稱提示。  
+    
+    ![CSharp 的內嵌參數名稱提示](media/inline-parameter-name-hints-csharp.png)
+::: moniker-end
 - 產生 /// 的 XML 文件註解
 
    選取此選項時，會在您鍵入 `///` 註解簡介後插入 XML 文件註解的 XML 元素。 如需有關 XML 文件的詳細資訊，請參閱 [XML 文件註解 (C# 程式設計指南)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：在文件產生中插入 XML 註解](../../ide/reference/generate-xml-documentation-comments.md)
 - [XML 檔批註 (c # 程式設計指南) ](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
