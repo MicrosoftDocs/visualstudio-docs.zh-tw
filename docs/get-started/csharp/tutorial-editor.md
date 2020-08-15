@@ -12,14 +12,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72a74c967849703feeb427d89891a023326ca6b7
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 8122f42fb5d2ec4c31ec553407b644e59e9f4418
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234961"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248283"
 ---
-# <a name="learn-to-use-the-code-editor-with-c"></a>瞭解如何搭配 C 使用程式碼編輯器#
+# <a name="learn-to-use-the-code-editor-with-c"></a>瞭解如何搭配 C 使用程式碼編輯器\#
 
 在這段10分鐘的 Visual Studio 程式碼編輯器中，我們會將程式碼新增至檔案，以查看 Visual Studio 讓撰寫、流覽和瞭解 c # 程式碼更輕鬆的一些方式。
 
@@ -70,7 +70,7 @@ ms.locfileid: "87234961"
 
 Visual Studio 提供實用的「程式碼片段」**，讓您可以用來快速且輕鬆地產生常用的程式碼區塊。 [程式碼片段](../../ide/code-snippets.md)適用於不同的程式設計語言 (包括 C#、Visual Basic 和 C++)。 請在檔案中新增 C# `void Main` 程式碼片段。
 
-1. 將游標放在檔案中最後一個右大括弧 **}** 的正上方，然後輸入字元 `svm` （ `static void Main` &mdash; 如果您不知道這代表什麼，就不會擔心太多）。
+1. 將游標放在檔案中最後一個右大括弧 **}** 的正上方，然後輸入 `svm` (的字元， `static void Main` &mdash; 如果您不知道這是什麼意思) ，就不會擔心太多。
 
    快顯對話方塊出現，內有 `svm` 程式碼片段的相關資訊。
 
@@ -128,11 +128,11 @@ Visual Studio 提供實用的「程式碼片段」**，讓您可以用來快速�
 
 ![大綱摺疊按鈕](../media/tutorial-collapse.png)
 
-程式碼區塊只會摺疊到第一行，並且後面接著省略符號 (`...`)。 若要再次展開程式碼區塊，請按一下現在具有加號的相同灰色方塊，或再次按**ctrl** + **m**、 **ctrl** + **m** 。 這項功能稱為[大綱](../../ide/outlining.md)，在折迭較長的方法或整個類別時特別有用。
+程式碼區塊只會摺疊到第一行，並且後面接著省略符號 (`...`)。 若要再次展開程式碼區塊，請按一下現在具有加號的相同灰色方塊，或再次按**ctrl** + **m**、 **ctrl** + **m** 。 這項功能稱為 [大綱](../../ide/outlining.md) ，在折迭較長的方法或整個類別時特別有用。
 
 ## <a name="view-symbol-definitions"></a>檢視符號定義
 
-Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中一種方式是流覽至包含定義的檔案，例如選擇 [**移至定義**]，或在參考符號的任何位置按下**F12** 。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看 `string` 類型的定義。
+Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中一種方式是流覽至包含定義的檔案，例如選擇 [ **移至定義** ]，或在參考符號的任何位置按下 **F12** 。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看 `string` 類型的定義。
 
 1. 以滑鼠右鍵按一下任何出現的 `string`，然後從內容功能表選擇 [查看定義]****。 或者，按**Alt** + **F12**。
 

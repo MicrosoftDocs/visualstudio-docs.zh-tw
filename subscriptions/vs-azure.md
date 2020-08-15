@@ -7,32 +7,32 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: 瞭解如何啟用 Visual Studio 訂用帳戶中所含的 Azure DevTest 個人點數權益。
-ms.openlocfilehash: 3c529b746d647f0f26306e89c56c73171ba50c1d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902919"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247333"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
-身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  有了[每月 Azure DevTest 的個別點數](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，azure 就是您用於開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
+身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  有了 [每月 Azure DevTest 的個別點數](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，azure 就是您用於開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
 
 ## <a name="activation-steps"></a>啟用步驟
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [權益] 頁面的 [工具] 區段中找到 Azure 磚，並按一下權益磚底部的 [啟用]**** 連結。
+2. 在 [權益] 頁面上的 [工具] 區段中找出 [Azure] 磚，然後選取權益磚底部的 [ **啟用** ] 連結。
    > [!div class="mx-imgBorder"]
    > ![Azure 磚](_img/vs-azure/vs-azure-tile.png)
 
-3. 如果您沒有現有的 Azure 訂用帳戶，系統會要求您填入所需的資訊，以建立您的 Azure 訂用帳戶。  第一個步驟是提供您的個人資訊，然後按 **[下一步]**。
+3. 如果您沒有現有的 Azure 訂用帳戶，系統會要求您填入所需的資訊，以建立您的 Azure 訂用帳戶。  第一個步驟是提供您的個人資訊，然後選取 **[下一步]**。
    > [!div class="mx-imgBorder"]
    > ![Azure 註冊](_img/vs-azure/vs-azure-about-you.png)
 
-4. 接下來，您必須使用簡單的驗證碼來驗證您的身分識別。 提供您的電話號碼，並選擇是否要以文字或電話接收程式碼。  輸入您收到的程式碼，然後按一下 [**驗證代碼**]。   
+4. 接下來，您必須使用簡單的驗證碼來驗證您的身分識別。 提供您的電話號碼，並選擇是否要以文字或電話接收程式碼。  輸入您收到的程式碼，然後選取 [ **驗證代碼**]。   
    > [!div class="mx-imgBorder"]
    > ![Azure 準備就緒](_img/vs-azure/vs-azure-identity.png)
 
-5. 在最後一個步驟中，按一下核取方塊以接受條款，然後按一下 [**註冊**]。  就是這麼簡單！
+5. 在最後一個步驟中，選取 [接受條款] 核取方塊，然後選取 [ **註冊**]。  就是這麼簡單！
    > [!div class="mx-imgBorder"]
    > ![Azure 準備就緒](_img/vs-azure/vs-azure-agreement.png)
 
@@ -40,7 +40,7 @@ ms.locfileid: "85902919"
    > [!div class="mx-imgBorder"]
    > ![Azure 儀表板](_img/vs-azure/vs-azure-quick-start.png) 
 
-0. 將[Azure 入口網站](https://portal.azure.com)加入書簽，以便日後輕鬆存取。
+0. 將 [Azure 入口網站](https://portal.azure.com) 加入書簽，以便日後輕鬆存取。
 
 ## <a name="maintain-a-subscription-to-use-monthly-credits"></a>維護訂用帳戶以使用每月信用額度
 如果您的 Visual Studio 訂用帳戶已過期或已移除，所有訂用帳戶權益（包括每月 Azure 開發/測試個別點數）都將無法再使用。 若要繼續使用 Azure 的每月信用額度，您必須更新訂用帳戶、購買新的訂用帳戶，或將 Azure 權益轉移至包含 Azure 開發/測試個人點數的有效訂用帳戶。  
@@ -48,13 +48,13 @@ ms.locfileid: "85902919"
 > [!IMPORTANT]
 > 您必須在目前的 Azure 訂用帳戶停用之前將資源轉移至另一個 Azure 訂用帳戶，否則將無法存取您的資料。  
 
-有數種方式可以繼續使用 Azure 的每月信用額度。  若要儲存您的 Azure 資源，您必須將[資源傳輸](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)至另一個 Azure 訂用帳戶，而不論您在下方選擇的動作為何。 
+有數種方式可以繼續使用 Azure 的每月信用額度。  若要儲存您的 Azure 資源，您必須將 [資源傳輸](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) 至另一個 Azure 訂用帳戶，而不論您在下方選擇的動作為何。 
 
 - **如果您直接購買 Visual Studio 訂**用帳戶，請透過 Microsoft Store 購買新的訂用帳戶或續訂您的訂用帳戶。  
     - [Visual Studio 企業版](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **如果您組織中的某人購買貴組織的訂用**帳戶，請[洽詢您的 Visual Studio 訂閱管理員](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin)，並要求提供您所需的每月信用額度的訂閱。  
+- **如果您組織中的某人購買貴組織的訂用**帳戶，請 [洽詢您的 Visual Studio 訂閱管理員](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin) ，並要求提供您所需的每月信用額度的訂閱。  
 - 如果您在與另一個 Microsoft 帳戶相關聯的相同訂用帳戶層級上**有另一個**作用中的 Visual Studio 訂用帳戶，您可以在 Visual Studio 訂用帳戶[入口網站](https://my.visualstudio.com/subscriptions)中[新增其他帳戶](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile)，以將 Azure 權益轉移至另一個有效的 Visual Studio 訂用  
 
 請使用下方的資格表來判斷每個訂用帳戶類型包含多少信用額度。  
@@ -62,12 +62,12 @@ ms.locfileid: "85902919"
 
 ## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>將您的 Azure 訂用帳戶轉換為隨用隨付
 
-如果您不再需要 Visual Studio 訂用帳戶或信用額度，但想要繼續使用您的 Azure 資源，請將[您的資源轉移](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)至另一個 azure 訂用帳戶，或將您的 azure 訂用帳戶轉換為隨用隨付定價，方法是[移除您的消費限制](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal)。 
+如果您不再需要 Visual Studio 訂用帳戶或信用額度，但想要繼續使用您的 Azure 資源，請將 [您的資源轉移](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) 至另一個 azure 訂用帳戶，或將您的 azure 訂用帳戶轉換為隨用隨付定價，方法是 [移除您的消費限制](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal)。 
 
 如果您未採取其中一項動作，您的 Azure 訂用帳戶將會在收到電子郵件通知後的30天內停用並刪除。  
 
 ## <a name="have-a-question"></a>有任何疑問嗎?
-如果您有關于傳輸資源、移除消費限制或其他 Azure 主題的問題，您可以在 Azure 入口網站中[提交 Azure 支援要求](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)。 
+如果您有關于傳輸資源、移除消費限制或其他 Azure 主題的問題，您可以在 Azure 入口網站中 [提交 Azure 支援要求](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) 。 
 
 ## <a name="eligibility"></a>資格
 |                 訂用帳戶等級/方案                 |           優點           |                         可續約？                          |
@@ -104,25 +104,25 @@ ms.locfileid: "85902919"
 2. 將您的支援合約連結到您的 Azure 訂用帳戶。
 3. 提交支援事件。
 
-如需完整的詳細資料，請流覽[技術支援](vs-tech-support.md)檔。
+如需完整的詳細資料，請流覽 [技術支援](vs-tech-support.md) 檔。
 
 ### <a name="q-who-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>問：誰擁有我使用我的 Azure DevTest 個別點數所建立的智慧財產？
 答：在該公司提供的資源上建立的智慧財產，就是提供資源之公司的智慧財產。 因此，如果您透過雇主收到您的 Visual Studio 訂用帳戶，則會套用其智慧財產原則。 
 
 ## <a name="support-resources"></a>支援資源
-- 需要使用 Azure 的說明嗎？  請參閱這些資源：
-  - 技術支援：[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+- 需要使用 Azure 的說明嗎？  請參閱下列資源：
+  - 技術支援： [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Azure 秘訣 & 訣竅](https://microsoft.github.io/AzureTipsAndTricks/ "Azure 秘訣 & 訣竅") 
-- 如需 Visual Studio 訂閱的銷售、訂閱、帳戶和計費的協助，請聯絡 Visual Studio[訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 如需 Visual Studio 訂閱的銷售、訂閱、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 如需有關 Microsoft 工具與服務的詳細資訊，請參閱下列文件：
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)

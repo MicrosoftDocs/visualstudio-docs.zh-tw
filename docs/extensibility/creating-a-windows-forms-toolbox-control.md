@@ -12,32 +12,32 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7c4d14f2970f9d77e78fd90dd58efcdac100e4c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: cb0f0e66d623f53c641126f1e07edaa476d831ae
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903956"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248601"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
 
-包含在 Visual Studio 擴充性工具（VS SDK）中的 Windows Forms 工具箱控制項專案範本，可讓您建立在安裝擴充功能時自動新增的 [**工具箱**] 控制項。 本逐步解說示範如何使用範本來建立簡單的計數器控制項，讓您可以散發給其他使用者。
+Visual Studio 擴充性工具 (VS SDK) 中所包含的 Windows Forms 工具箱控制項專案範本，可讓您建立在安裝擴充功能時自動新增的 [ **工具箱** ] 控制項。 本逐步解說示範如何使用範本來建立簡單的計數器控制項，讓您可以散發給其他使用者。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
-從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選擇性功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-the-toolbox-control"></a>建立工具箱控制項
 
-[Windows Forms 工具箱控制項] 範本會建立未定義的使用者控制項，並提供將控制項加入 [**工具箱**] 所需的所有功能。
+[Windows Forms 工具箱控制項] 範本會建立未定義的使用者控制項，並提供將控制項加入 [ **工具箱**] 所需的所有功能。
 
 ### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>使用 Windows Forms 工具箱控制項建立擴充功能
 
-1. 建立名為的 VSIX 專案 `MyWinFormsControl` 。 藉由搜尋「vsix」，您可以在 [**新增專案**] 對話方塊中尋找 VSIX 專案範本。
+1. 建立名為的 VSIX 專案 `MyWinFormsControl` 。 藉由搜尋「vsix」，您可以在 [ **新增專案** ] 對話方塊中尋找 VSIX 專案範本。
 
-2. 當專案開啟時，加入名為的**Windows Forms 工具箱控制項**專案範本 `Counter` 。 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  **Extensibility**然後選取 [ **Windows Forms 工具箱控制項**]
+2. 當專案開啟時，加入名為的 **Windows Forms 工具箱控制項** 專案範本 `Counter` 。 在 [**方案總管**中，選取並按住 (，或以滑鼠右鍵) 按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  **Extensibility**然後選取 [ **Windows Forms 工具箱控制項**]
 
-3. 這會加入使用者控制項、將 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> 控制項放在 [**工具箱**] 中，並在 VSIX 資訊清單中新增 VisualStudio 的 [ **ToolboxControl**資產] 專案，以供部署。
+3. 這會加入使用者控制項、將 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> 控制項放在 [ **工具箱**] 中，並在 VSIX 資訊清單中新增 VisualStudio 的 [ **ToolboxControl** 資產] 專案，以供部署。
 
 ### <a name="build-a-user-interface-for-the-control"></a>建立控制項的使用者介面
 
@@ -45,21 +45,21 @@ ms.locfileid: "85903956"
 
 #### <a name="to-build-the-user-interface"></a>建置使用者介面
 
-1. 在**方案總管**中，按兩下*Counter.cs* ，以在設計工具中開啟它。
+1. 在 **方案總管**中，按兩下或按兩下 [ *Counter.cs* ]，在設計工具中開啟它。
 
 2. 移除 [**按一下這裡！** ] 當您加入 Windows Forms 工具箱控制項專案範本時，預設會包含此按鈕。
 
-3. 將控制項從 [**工具箱**] 拖曳 `Label` `Button` 到設計介面上，然後將它放在其下方的控制項。
+3. 將控制項從 [ **工具箱**] 拖曳 `Label` `Button` 到設計介面上，然後將它放在其下方的控制項。
 
 4. 將整體使用者控制項的大小調整為150、50圖元，然後將按鈕控制項的大小調整為50，20圖元。
 
-5. 在 [**屬性**] 視窗中，為設計介面上的控制項設定下列值。
+5. 在 [ **屬性** ] 視窗中，為設計介面上的控制項設定下列值。
 
     |控制|屬性|值|
     |-------------|--------------|-----------|
-    |`Label1`|**文字**|""|
+    |`Label1`|**Text**|""|
     |`Button1`|**名稱**|btnReset|
-    |`Button1`|**文字**|重設|
+    |`Button1`|**Text**|重設|
 
 ### <a name="code-the-user-control"></a>撰寫使用者控制項的程式碼
 
@@ -67,7 +67,7 @@ ms.locfileid: "85903956"
 
 #### <a name="to-code-the-user-control"></a>撰寫使用者控制項的程式碼
 
-1. 按兩下表單，在程式碼視窗中開啟其載入事件處理常式。
+1. 按兩下或按兩下表單，在程式碼視窗中開啟其載入事件處理常式。
 
 2. 在事件處理常式方法的上方，控制項類別中建立一個整數來儲存計數器值，以及一個用來儲存顯示文字的字串，如下列範例所示。
 
@@ -95,7 +95,7 @@ ms.locfileid: "85903956"
 
     ```
 
-    呼叫端可以存取這些屬性，以取得並設定計數器的顯示文字，以及顯示或隱藏 [**重設**] 按鈕。 呼叫端可以取得唯讀屬性的目前值 `Value` ，但無法直接設定此值。
+    呼叫端可以存取這些屬性，以取得並設定計數器的顯示文字，以及顯示或隱藏 [ **重設** ] 按鈕。 呼叫端可以取得唯讀屬性的目前值 `Value` ，但無法直接設定此值。
 
 4. 將下列程式碼放在 `Load` 控制項的事件中。
 
@@ -108,7 +108,7 @@ ms.locfileid: "85903956"
 
     ```
 
-    在事件中設定**標籤**文字 <xref:System.Windows.Forms.UserControl.Load> ，可讓目標屬性在套用其值之前載入。 在此函式中設定**標籤**文字會導致空的**標籤**。
+    在事件中設定 **標籤** 文字 <xref:System.Windows.Forms.UserControl.Load> ，可讓目標屬性在套用其值之前載入。 在此函式中設定 **標籤** 文字會導致空的 **標籤**。
 
 5. 建立下列公用方法以遞增計數器。
 
@@ -130,7 +130,7 @@ ms.locfileid: "85903956"
 
     呼叫端可以將處理常式新增至這個事件，以回應計數器值的變更。
 
-7. 返回 [設計檢視]，然後按兩下 [**重設**] 按鈕以產生 `btnReset_Click` 事件處理常式，然後將它填入，如下列範例所示。
+7. 返回 [設計檢視]，然後按兩下或按兩下 [ **重設** ] 按鈕，以產生 `btnReset_Click` 事件處理常式。 然後，在中填入，如下列範例所示。
 
     ```csharp
     private void btnReset_Click(object sender, EventArgs e)
@@ -152,35 +152,35 @@ ms.locfileid: "85903956"
 
 ### <a name="test-the-control"></a>測試控制項
 
- 若要測試 [**工具箱**] 控制項，請先在開發環境中測試，然後在編譯的應用程式中進行測試。
+ 若要測試 [ **工具箱** ] 控制項，請先在開發環境中測試，然後在編譯的應用程式中進行測試。
 
 #### <a name="to-test-the-control"></a>測試控制項
 
-1. 按**F5** **開始進行調試**。
+1. 按 **F5** **開始進行調試**。
 
     此命令會建立專案，並開啟已安裝控制項之 Visual Studio 的第二個實驗實例。
 
-2. 在 Visual Studio 的實驗實例中，建立**Windows Forms 應用程式**專案。
+2. 在 Visual Studio 的實驗實例中，建立 **Windows Forms 應用程式** 專案。
 
-3. 在**方案總管**中，按兩下 [ *Form1.cs* ]，在設計工具中開啟它（如果尚未開啟）。
+3. 在 **方案總管**中，按兩下或按兩下 [ *Form1.cs* ]，在設計工具中開啟它（如果尚未開啟）。
 
-4. 在 [**工具箱**] 中， `Counter` 控制項應該會顯示在 [**一般**] 區段中。
+4. 在 [ **工具箱**] 中， `Counter` 控制項應該會顯示在 [ **一般** ] 區段中。
 
 5. 將 `Counter` 控制項拖曳至表單，然後選取它。 `Value`、 `Message` 和 `ShowReset` 屬性會顯示在 [**屬性**] 視窗中，以及繼承自的屬性 <xref:System.Windows.Forms.UserControl> 。
 
-6. 將 `Message` 屬性設為 `Count:`。
+6. 將 `Message` 屬性設定為 `Count:`。
 
 7. 將 <xref:System.Windows.Forms.Button> 控制項拖曳至表單，然後將按鈕的 [名稱] 和 [text] 屬性設定為 `Test` 。
 
-8. 按兩下 [] 按鈕，以在程式碼視圖中開啟*Form1.cs* ，並建立 click 處理常式。
+8. 按兩下或按兩下按鈕，以在程式碼視圖中開啟 *Form1.cs* ，並建立 click 處理常式。
 
 9. 在 click 處理常式中，呼叫 `counter1.Increment()` 。
 
-10. 在函式函式中，于呼叫之後， `InitializeComponent` 輸入， `counter1``.``Incremented +=` 然後按兩次**tab**鍵。
+10. 在函式函式中，于呼叫之後， `InitializeComponent` 輸入， `counter1``.``Incremented +=` 然後按兩次 **tab** 鍵。
 
     Visual Studio 會產生事件的表單層級處理常式 `counter1.Incremented` 。
 
-11. 反白顯示 `Throw` 事件處理常式中的語句，輸入 `mbox` ，然後按兩次**tab**鍵，從 .mbox 程式碼片段產生訊息方塊。
+11. 反白顯示 `Throw` 事件處理常式中的語句，輸入 `mbox` ，然後按兩次 **tab** 鍵，從 .mbox 程式碼片段產生訊息方塊。
 
 12. 在下一行中，新增下列 `if` / `else` 區塊以設定 [**重設**] 按鈕的可見度。
 
@@ -195,25 +195,25 @@ ms.locfileid: "85903956"
 
     **計數：0**
 
-14. 按一下 [ **測試**]。
+14. 選取 [測試]。
 
     計數器會遞增並 Visual Studio 顯示訊息方塊。
 
 15. 關閉訊息方塊。
 
-    [**重設**] 按鈕會消失。
+    [ **重設** ] 按鈕會消失。
 
-16. 按一下 [**測試**]，直到計數器每次到達**5**個關閉訊息方塊為止。
+16. 選取 [ **測試** ]，直到計數器每次到達 **5** 個關閉訊息方塊為止。
 
-    [**重設**] 按鈕隨即重新出現。
+    [ **重設** ] 按鈕隨即重新出現。
 
-17. 按一下 [重設]。
+17. 選取 [重設]****。
 
-    計數器會重設為**0**。
+    計數器會重設為 **0**。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
-當您建立 [**工具箱**] 控制項時，Visual Studio 會在專案的 [\bin\debug\] 資料夾中建立名為*專案名稱. .vsix*的檔案。 您可以將 *.vsix*檔案上傳到網路或網站，藉以部署控制項。 當使用者開啟 *.vsix*檔案時，會安裝控制項並將其新增至使用者電腦上的 [Visual Studio**工具箱**] 中。 或者，您也可以將 *.vsix*檔案上傳到[Visual Studio Marketplace](https://marketplace.visualstudio.com/) ，讓使用者可以在 [**工具**  >  ] [擴充功能**和更新**] 對話方塊中流覽來尋找它。
+當您建立 [ **工具箱** ] 控制項時，Visual Studio 會在專案的 [\bin\debug\] 資料夾中建立名為 *專案名稱. .vsix* 的檔案。 您可以將 *.vsix* 檔案上傳到網路或網站，藉以部署控制項。 當使用者開啟 *.vsix* 檔案時，會安裝控制項並將其新增至使用者電腦上的 [Visual Studio **工具箱** ] 中。 或者，您也可以將 *.vsix*檔案上傳到[Visual Studio Marketplace](https://marketplace.visualstudio.com/) ，讓使用者可以在 [**工具**  >  ] [擴充功能**和更新**] 對話方塊中流覽來尋找它。
 
 ## <a name="see-also"></a>另請參閱
 

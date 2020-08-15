@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱
-ms.openlocfilehash: d38da1784eb543519f1a36ba7342f0b13ab2b1ac
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6ce2208e6d1028e1e697b216d41cdd825dfc0d33
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289348"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247317"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱
 如果您已透過 MPSA 方案購買「Visual Studio 訂閱」，必須先了解幾個事項，才能成為 Visual Studio 訂閱系統管理員並將訂閱指派給您的使用者。 如果您已具備系統管理員身分，則可以直接前往 Visual Studio 訂閱[系統管理入口網站](https://manage.visualstudio.com/)。
@@ -39,16 +39,16 @@ MPSA 客戶現在可以在稱為[商務中心](https://businessaccount.microsoft
 
 在您符合上述準則之後，即可依照下面的步驟繼續將「購買帳戶」與租用戶建立關聯。
 1. 登入[商務中心](https://businessaccount.microsoft.com/Customer)。
-2. 按一下 [帳戶]**** 索引標籤，然後選擇 [建立網域關聯]****。
+2. 選取 [ **帳戶** ] 索引標籤，然後選擇 [ **建立網域關聯**]。
 3. 選取您的 [購買帳戶]**** (如果您有多個)。
 4. 選取您的**租用戶** (亦即 contoso.onmicrosoft.com)。
-5. 按一下 [建立網域關聯]****。
+5. 選取 [ **建立網域關聯**]。
 
 建立關聯時，所有符合準則的使用者通常在幾分鐘內就會佈建成 Visual Studio 訂閱系統管理員。 不過，有時可能會花費長達 24 小時的時間。 您的租用戶佈建完成之後，您將能夠存取「Visual Studio 訂閱系統管理入口網站」。 若此時間超過24小時，請使用下列步驟來聯繫 MPSA 支援人員：
-1. 連接到<https://www.microsoft.com/licensing/mpsa/default>
-2. 按一下頁面頂端的 [**更多**] 功能表。 
-3. 選擇**支援**
-4. 選擇**授權支援**
+1. 連接到 <https://www.microsoft.com/licensing/mpsa/default>
+2. 選取頁面頂端的 [ **更多** ] 功能表。 
+3. 選擇 **支援**
+4. 選擇 **授權支援**
 5. 選取最符合您需求的 [支援] 選項。 
 
 > [!NOTE]
