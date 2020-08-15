@@ -1,6 +1,6 @@
 ---
 title: 選項對話方塊、環境、自動回復
-ms.date: 11/04/2016
+ms.date: 08/14/2020
 ms.topic: reference
 f1_keywords:
 - VS.DialogAutoRestore
@@ -17,24 +17,39 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81493379cf847251124d2ab4fd0a978abd96af8f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f35424089b293b858c609d19f59459693373eb4d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585661"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250297"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>選項對話方塊、環境、自動回復
 
 使用 [選項]**** 對話方塊的這個頁面，即可指定是否自動備份檔案。 如果 Visual Studio 意外關閉，您也可以指定是否要還原已修改的檔案。
 
-選取 [工具]**** 功能表及 [選項]****，然後選取 [環境]**** > [自動回復]****，即可存取此對話方塊。 如果此頁面未出現在清單中，請在 [選項]**** 對話方塊中選取 [顯示所有設定]****。
+若要存取此對話方塊，請前往 [**工具**] [選項] [  >  **Options**  >  **環境**] [  >  **自動**]。
 
-**每 [n] 分鐘保存一次自動復原資訊**
+:::image type="content" source="media/autorecover-options.png" alt-text="[選項] 對話方塊中 [自動回復] 區段的螢幕擷取畫面":::
 
-使用此選項，可自訂在編輯器中自動儲存檔案的頻率。 針對先前儲存的檔案，檔案的複本會儲存在 %USERPROFILE%\Documents\Visual Studio\\[版本]\Backup Files\\[專案名稱]** 中。 若為新檔案，而且您尚未儲存，就會使用隨機產生的檔案名稱自動儲存檔案。
+**每隔 [n] 分鐘儲存自動回復資訊**
 
-**將自動復原資訊保留 [n] 天**
+::: moniker range="vs-2019"
+
+使用此選項，可自訂在編輯器中自動儲存檔案的頻率。 針對先前儲存的檔案，Visual Studio 2019 16.2 版和更新版本會將檔案的複本儲存在 ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [專案名稱]*** 中。 如果檔案是新檔案，而且尚未儲存，請 Visual Studio 使用隨機產生的檔案名來 autosaves 它。
+
+> [!NOTE]
+> 如果您使用 Visual Studio 2019 16.1 版或更早版本，檔案位置是 *%USERPROFILE%\Documents\Visual Studio [version] \Backup Files \\ [專案名稱]*。 如需詳細資訊，請參閱 [Visual Studio 2019 版本資訊歷程記錄](/visualstudio/releases/2019/release-notes-history/) 頁面。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+使用此選項，可自訂在編輯器中自動儲存檔案的頻率。 針對先前儲存的檔案，Visual Studio 2017 會將檔案的複本儲存在 *%USERPROFILE%\Documents\Visual Studio [版本] \Backup 檔案 \\ [專案名稱]* 中。 如果檔案是新檔案，而且尚未儲存，請 Visual Studio 使用隨機產生的檔案名來 autosaves 它。
+
+::: moniker-end
+
+**保留 [n] 天的自動回復資訊**
 
 使用此選項，可指定 Visual Studio 保留針對自動回復所建立的檔案多久的時間。
 

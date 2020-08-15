@@ -1,8 +1,8 @@
 ---
-title: 第 5 步：將ASP.NET核心應用部署到 Azure
+title: 步驟5：將您的 ASP.NET Core 應用程式部署至 Azure
 description: 透過此影片和逐步指示，將您的 ASP.NET Core Web 應用程式部署至 Azure。
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 08/14/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
@@ -16,14 +16,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 55dd48ed2c319984fcc96e806c97a7ae24ce7170
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580026"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248687"
 ---
-# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>第 5 步：將ASP.NET核心應用部署到 Azure
+# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>步驟5：將您的 ASP.NET Core 應用程式部署至 Azure
 
 請遵循這些步驟來將您的 ASP.NET Core 應用程式和其資料庫部署至 Azure。
 
@@ -35,19 +35,45 @@ _觀看此影片並跟著操作，以將您的第一個 ASP.NET Core 應用程�
 
 在 Visual Studio 2019 中開啟您的 ASP.NET Core 應用程式。 此應用程式應該已經設定 EF Core 並搭配使用 Web API，如同在[此教學課程的步驟 4](tutorial-aspnet-core-ef-step-04.md) 中所設定。
 
-## <a name="publish-to-azure-app-service"></a>發佈到 Azure App Service
+## <a name="publish-to-azure-app-service"></a>發佈至 Azure App Service
 
-在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]****。 保留 [App Service]**** 和 [建立新的]**** 的預設設定，然後按一下 [發佈]**** 按鈕。 如果您還沒有 Azure 帳戶，請按一下 [建立您的免費 Azure 帳戶]**** 並完成簡短的註冊程序。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]****。 在 [ **發佈** 嚮導] 中，選擇 [ **Azure** ] 做為目標。
 
-新增 SQL Server。 指定系統管理員使用者名稱和密碼。
+   ![Azure App Service 1 的螢幕擷取畫面](media/vs-2019/app-service-screen-1.png)
 
-![Visual Studio 2019 建立 Azure SQL Server](media/vs-2019/vs2019-azure-sql-server.png)
+1. 針對特定目標，選擇 [ **Azure App Service (Windows) **]。
 
-新增 Application Insights。
+   ![Azure App Service 2 的螢幕擷取畫面](media/vs-2019/app-service-screen-2.png)
 
-按一下"**創建**"按鈕以繼續。
+1. 選擇 [ **建立新的 Azure App Service**。 如果您還沒有 Azure 帳戶，請按一下 [建立您的免費 Azure 帳戶]**** 並完成簡短的註冊程序。
 
-![Visual Studio 2019 建立新的 Azure App Service](media/vs-2019/vs2019-azure-create-new-app-service.png)
+   ![Azure App Service 3 的螢幕擷取畫面](media/vs-2019/app-service-screen-3.png)
+
+1. 指定名稱和資源群組，或接受預設值，然後選擇 [ **建立**]。 資源群組只是在 Azure 中組織相關資源的一種方式，例如與儲存體帳戶、金鑰保存庫和資料庫搭配使用的服務。
+
+   ![Azure App Service 4 的螢幕擷取畫面](media/vs-2019/app-service-screen-4.png)
+
+1. 選擇 [完成]****。 資源會在 Azure 中建立、部署應用程式，而 [ **發佈** ] 索引標籤會填入您剛建立的內容的相關資訊。 [ **發行** ] 索引標籤提供一次使用相同設定來發佈的按鈕、顯示設定詳細資料，或讓您新增服務（例如資料庫）。
+
+現在，新增 Azure SQL Server 資料庫。
+
+1. 在 [ **發佈** ] 索引標籤的 [ **服務**相依性] 底下，選擇 [ **SQL Server 資料庫**] 旁的 [ **設定**]。
+
+1. 在下一個畫面上，選擇 [ **Azure SQL Database**]。
+
+   ![Azure SQL Database 畫面的螢幕擷取畫面](media/vs-2019/app-service-azure-sql-db.png)
+
+1. 在 [ **設定 SQL Database** ] 畫面上，選擇 [ **建立 SQL Database**]。
+
+   ![[設定 SQL Database] 畫面的螢幕擷取畫面](media/vs-2019/app-service-azure-sql-db-2.png)
+
+1. 在 [ **Azure SQL Database：建立新** 的畫面] 上，建立新的資料庫伺服器。
+
+   ![螢幕擷取畫面 Azure SQL Database：新建](media/vs-2019/app-service-azure-sql-db-3.png)
+
+1. 在 [ **SQL Server：建立新** 畫面] 上，選擇 [名稱]、[位置]，並指定系統管理員使用者名稱和密碼。
+
+   ![Visual Studio 2019 建立 Azure SQL Server](media/vs-2019/app-service-azure-sql-db-overlayed.png)
 
 ## <a name="exploring-the-azure-portal-and-your-hosted-app"></a>探索 Azure 入口網站和您的託管應用程式
 
@@ -57,7 +83,7 @@ _觀看此影片並跟著操作，以將您的第一個 ASP.NET Core 應用程�
 
 ### <a name="scalability"></a>延展性
 
-您可以檢查用於向上和擴展應用的選項。向上擴展是指增加給託管應用的每個實例的資源。 相應放大是指增加裝載您應用程式之執行個體的數目。 您可以為應用程式設定自動調整，這樣系統會增加裝載您應用程式之執行個體的數量，以回應負載增加，然後會在負載減少時減少執行個體。
+您可以檢查選項，將應用程式相應增加和相應放大。相應增加指的是將指定給裝載應用程式的每個實例的資源提高。 相應放大是指增加裝載您應用程式之執行個體的數目。 您可以為應用程式設定自動調整，這樣系統會增加裝載您應用程式之執行個體的數量，以回應負載增加，然後會在負載減少時減少執行個體。
 
 ### <a name="security-and-compliance"></a>安全性與合規性
 
