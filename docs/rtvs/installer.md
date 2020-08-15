@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 15b8a91c0b29b71b85ee5f82dc3b8d662c80549e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a30ec1a60b7bc19710e3184c7cd32e252acc9921
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62581160"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248480"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>歡迎使用 Visual Studio R 工具
 
@@ -23,11 +23,11 @@ ms.locfileid: "62581160"
 
 ## <a name="resources"></a>資源
 
-- [文件](index.md)
+- [文件集](index.md)
 - [如何安裝 Visual Studio R 工具](installing-r-tools-for-visual-studio.md)
-- [Submit and browse bugs and feature requests on GitHib](https://github.com/Microsoft/RTVS/issues) (在 GitHib 上提交並瀏覽錯誤和功能要求)
+- [提交和流覽 GitHub 上的錯誤和功能要求](https://github.com/Microsoft/RTVS/issues)
 - [Explore and contribute to the source code](https://github.com/Microsoft/RTVS/blob/master/LICENSE) (探索和參與程式原始碼)
-- 要發送回饋而不使用 GitHub（這是首選），請使用視覺化工作室中的**R 工具>回饋**功能表。
+- 若要傳送意見反應，而不使用偏好) 的 GitHub (，請使用 Visual Studio 中的 [ **R 工具] > [意見** 反應] 功能表。
 
 ## <a name="microsoft-r-distributions"></a>Microsoft R 散發套件
 

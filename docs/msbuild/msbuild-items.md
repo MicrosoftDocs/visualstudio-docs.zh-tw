@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4689985d159bd832bc3cadfb54eb17fae2ae71a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183661"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247582"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 
@@ -35,7 +35,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 </ItemGroup>
 ```
 
- 專案*file2.cs*不會取代專案*file1.cs*;相反地，檔案名會附加至專案類型的值清單 `Compile` 。
+ 專案 *file2.cs* 不會取代專案 *file1.cs*;相反地，檔案名會附加至專案類型的值清單 `Compile` 。
 
  下列 XML 會在一個 `Include` 屬性中宣告這兩個檔案，來建立相同的項目類型。 請注意，檔案名稱是以分號分隔的。
 
@@ -45,7 +45,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 </ItemGroup>
 ```
 
-`Include`屬性是與專案檔的資料夾（$ （MSBuildProjectPath）相對應的路徑，即使專案是在匯入的檔案（例如 *.targets*檔案）中也一樣。
+`Include`屬性（attribute）是相對於專案檔的資料夾（$ (MSBuildProjectPath) ）所解讀的路徑，即使專案是在匯入的檔案（例如 *.targets*檔案）中也一樣。
 
 ## <a name="create-items-during-execution"></a>執行期間建立項目
 
@@ -59,9 +59,9 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 
 ## <a name="reference-items-in-a-project-file"></a>參考專案檔中的項目
 
- 若要在整個專案檔中參考項目類型，您可以使用語法 @(\<ItemType>)。 例如，您應該使用 `@(Compile)`，來參考前一個範例中的項目類型。 使用下列語法，您可以藉由指定項目類型做為工作的參數，來將項目傳遞給該工作。 如需詳細資訊，請參閱[如何：選取要建立的](../msbuild/how-to-select-the-files-to-build.md)檔案。
+ 若要在整個專案檔中參考項目類型，您可以使用語法 @(\<ItemType>)。 例如，您應該使用 `@(Compile)`，來參考前一個範例中的項目類型。 使用下列語法，您可以藉由指定項目類型做為工作的參數，來將項目傳遞給該工作。 如需詳細資訊，請參閱 [如何：選取要建立的](../msbuild/how-to-select-the-files-to-build.md)檔案。
 
- 根據預設，項目類型的項目在展開時會以分號 (;) 分隔。 您可以使用語法 @ （ \<ItemType> ，' \<separator> '）來指定預設值以外的分隔符號。 如需詳細資訊，請參閱[如何：顯示以逗號分隔的專案清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)。
+ 根據預設，項目類型的項目在展開時會以分號 (;) 分隔。 您可以使用語法 @ (\<ItemType> ，' \<separator> ' ) 來指定預設值以外的分隔符號。 如需詳細資訊，請參閱 [如何：顯示以逗號分隔的專案清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)。
 
 ## <a name="use-wildcards-to-specify-items"></a>使用萬用字元指定項目
 
@@ -85,7 +85,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 
 如果您想要在沒有萬用字元展開的項目中包含常值 `*` 或 `?` 字元，您必須[逸出萬用字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)。
 
-如需萬用字元的詳細資訊，請參閱[如何：選取要建立的](../msbuild/how-to-select-the-files-to-build.md)檔案。
+如需萬用字元的詳細資訊，請參閱 [如何：選取要建立的](../msbuild/how-to-select-the-files-to-build.md)檔案。
 
 ## <a name="use-the-exclude-attribute"></a>使用 Exclude 屬性
 
@@ -97,14 +97,14 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 </ItemGroup>
 ```
 
- `Exclude` 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 `Include` 屬性所加入的項目 (Item)。 下列範例不會排除檔案*Form1.cs*，這是在前一個 item 專案中加入的檔案。
+ `Exclude` 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 `Include` 屬性所加入的項目 (Item)。 下列範例不會排除檔案 *Form1.cs*，這是在前一個 item 專案中加入的檔案。
 
 ```xml
 <Compile Include="*.cs" />
 <Compile Include="*.res" Exclude="Form1.cs">
 ```
 
- 如需詳細資訊，請參閱[如何：從組建中排除](../msbuild/how-to-exclude-files-from-the-build.md)檔案。
+ 如需詳細資訊，請參閱 [如何：從組建中排除](../msbuild/how-to-exclude-files-from-the-build.md)檔案。
 
 ## <a name="item-metadata"></a>項目中繼資料
 
@@ -112,7 +112,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 
  中繼資料是一個索引鍵值組的集合，可在專案檔中宣告為 Item 項目的子項目。 子項目的名稱是中繼資料的名稱，而子項目的值是中繼資料的值。
 
- 中繼資料會與包含它的 Item 項目相關聯。 例如，下列 XML `Culture` 會將具有值的中繼資料加入 `Fr` 至至 csfile 專案類型的*one.cs*和*two.cs*專案。
+ 中繼資料會與包含它的 Item 項目相關聯。 例如，下列 XML `Culture` 會將具有值的中繼資料加入 `Fr` 至至 csfile 專案類型的 *one.cs* 和 *two.cs* 專案。
 
 ```xml
 <ItemGroup>
@@ -126,7 +126,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 
 ### <a name="reference-item-metadata-in-a-project-file"></a><a name="BKMK_ReferencingItemMetadata"></a> 在專案檔中參考項目中繼資料
 
- 您可以使用語法 %(\<ItemMetadataName>)，在整個專案檔中參考項目中繼資料。 如果發生模稜兩可的情況，您可以使用項目類型的名稱來限定參考。 例如，您可以指定% （ \<ItemType.ItemMetaDataName> ）。下列範例會使用顯示中繼資料來批次處理訊息工作。 如需如何使用項目中繼資料進行批次處理的詳細資訊，請參閱[工作批次處理中的項目中繼資料](../msbuild/item-metadata-in-task-batching.md)。
+ 您可以使用語法 %(\<ItemMetadataName>)，在整個專案檔中參考項目中繼資料。 如果發生模稜兩可的情況，您可以使用項目類型的名稱來限定參考。 例如，您可以指定% (\<ItemType.ItemMetaDataName>) 。下列範例會使用顯示中繼資料來批次處理訊息工作。 如需如何使用項目中繼資料進行批次處理的詳細資訊，請參閱[工作批次處理中的項目中繼資料](../msbuild/item-metadata-in-task-batching.md)。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -144,9 +144,9 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 </Project>
 ```
 
-### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a>已知的專案中繼資料
+### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a> 已知的專案中繼資料
 
- 將項目加入至項目類型時，即會為該項目指派一些已知的中繼資料。 例如，所有專案都具有已知的中繼資料% \<Filename> （），其值為專案的檔案名（不含副檔名）。 如需詳細資訊，請參閱[已知的專案中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。
+ 將項目加入至項目類型時，即會為該項目指派一些已知的中繼資料。 例如，所有專案都具有已知的中繼資料% (\<Filename>) ，其值為不含副檔名) 之專案 (的檔案名。 如需詳細資訊，請參閱 [已知的專案中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。
 
 ### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a> 使用中繼資料轉換項目類型
 
@@ -169,7 +169,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 
 ## <a name="item-definitions"></a>項目定義
 
- 從 .NET Framework 3.5 開始，您可以使用 [ItemDefinitionGroup 項目](../msbuild/itemdefinitiongroup-element-msbuild.md) (Element)，來將預設的中繼資料加入至任何項目類型。 如同已知的中繼資料，預設的中繼資料會與您指定之項目類型的所有項目相關聯。 您可以在項目定義中明確覆寫預設的中繼資料。 例如，下列 XML 會提供 `Compile` 專案*one.cs* ，並*Three.cs* `BuildDay` 值為 "Monday" 的中繼資料。 此程式碼會為*two.cs*專案提供 two.cs `BuildDay` 值為 "週二" 的中繼資料。
+ 從 .NET Framework 3.5 開始，您可以使用 [ItemDefinitionGroup 項目](../msbuild/itemdefinitiongroup-element-msbuild.md) (Element)，來將預設的中繼資料加入至任何項目類型。 如同已知的中繼資料，預設的中繼資料會與您指定之項目類型的所有項目相關聯。 您可以在項目定義中明確覆寫預設的中繼資料。 例如，下列 XML 會提供 `Compile` 專案 *one.cs* ，並 *Three.cs* `BuildDay` 值為 "Monday" 的中繼資料。 此程式碼會為*two.cs*專案提供 two.cs `BuildDay` 值為 "週二" 的中繼資料。
 
 ```xml
 <ItemDefinitionGroup>
@@ -191,11 +191,11 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 
  從 .NET Framework 3.5 開始，`Target` 項目可能會包含 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 項目，其中可能包含 Item 項目。 如果已針對 `ItemGroup` (位於 `Target`) 中的項目指定本節中的屬性，則它們是有效的。
 
-### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a>移除屬性
+### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a> 移除屬性
 
- `Remove` 屬性會移除項目類型中的特定項目 (檔案)。 此屬性是在 .NET Framework 3.5 中引進（僅限在目標內）。 從 MSBuild 15.0 開始支援內部和外部目標。
+ `Remove` 屬性會移除項目類型中的特定項目 (檔案)。 此屬性是在目標 .NET Framework 3.5 (中引進，僅) 。 從 MSBuild 15.0 開始支援內部和外部目標。
 
- 下列範例會從 Compile 專案類型移除每個 *.config*檔案。
+ 下列範例會從 Compile 專案類型移除每個 *.config* 檔案。
 
 ```xml
 <Target>
@@ -205,7 +205,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 </Target>
 ```
 
-### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a>KeepMetadata 屬性
+### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a> KeepMetadata 屬性
 
  如果在目標內產生項目 (Item)，則 Item 項目 (Element) 可以包含 `KeepMetadata` 屬性。 如果指定了這個屬性，只會將以分號分隔之名稱清單中指定的中繼資料從來源項目傳輸到目標項目。 若此屬性的值為空值，就相當於未指定它。 `KeepMetadata` 屬性是在 .NET Framework 4.5 中引入的。
 
@@ -248,7 +248,7 @@ Output:
 -->
 ```
 
-### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a>RemoveMetadata 屬性
+### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a> RemoveMetadata 屬性
 
  如果在目標內產生項目 (Item)，則 Item 項目 (Element) 可以包含 `RemoveMetadata` 屬性。 如果指定了此屬性，則會將所有中繼資料從來源項目傳輸到目標項目，但名稱位於以分號分隔之名稱清單內的中繼資料除外。 若此屬性的值為空值，就相當於未指定它。 `RemoveMetadata` 屬性是在 .NET Framework 4.5 中引入的。
 
@@ -298,7 +298,7 @@ Output:
 -->
 ```
 
-### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a>KeepDuplicates 屬性
+### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a> KeepDuplicates 屬性
 
  如果在目標內產生項目 (Item)，則 Item 項目 (Element) 可以包含 `KeepDuplicates` 屬性。 `KeepDuplicates` 為 `Boolean` 屬性，會指定項目如果與現有項目完全重複，是否應加入目標群組。
 
@@ -338,9 +338,9 @@ Output:
 -->
 ```
 
-##  <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>更新目標外部 ItemGroup 中專案的中繼資料
+## <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>更新目標外部 ItemGroup 中專案的中繼資料
 
-目標外部的專案可以透過屬性更新其現有中繼資料 `Update` 。 目標下的專案**無法**使用這個屬性。
+目標外部的專案可以透過屬性更新其現有中繼資料 `Update` 。 目標下的專案 **無法** 使用這個屬性。
 
 ```xml
 <Project>
@@ -497,11 +497,11 @@ Item1: notebook
 ```
 
 備註：
-- 不合格的中繼資料（% （M））系結至正在更新的專案類型（ `Item1` 在上述範例中為）。 限定的中繼資料（）會在 `%(Item2.Color)` 從更新運算式中捕捉到的相符專案類型的集合內進行系結。
+- 不合格的中繼資料 (% (M) # A3 會系結至 `Item1` 上述範例) 中 (更新的專案類型。 限定的中繼資料 () 系結至 `%(Item2.Color)` 更新運算式中的一組已捕獲相符專案類型內。
 - 如果專案在多個參考的專案內和之間有多個相符的次數：
-  - 會從每個參考的專案類型中取得最後一次出現的專案（因此每個專案類型都有一個已捕獲的專案
+  - 每個參考專案類型最後一次出現 (，因此每個專案類型) 一個已捕獲的專案。
   - 這符合目標下工作專案批次處理的行為。
-- 其中一個可以放置%() 參考：
+- 其中一個可以放入% ( # A1 參考：
   - 中繼資料
   - 中繼資料條件
 - 中繼資料名稱比對不區分大小寫。
@@ -596,7 +596,7 @@ Item1: notebook
 ## <a name="see-also"></a>另請參閱
 
 - [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)
-- [一般 MSBuild 專案專案](../msbuild/common-msbuild-project-items.md)
+- [一般 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)

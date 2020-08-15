@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: 每月或每年租 Visual Studio Professional 或 Visual Studio Enterprise，沒有長期合約。
-ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 5f289c5eb51ccaf95c88bc7e2d66a4be5e904e03
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211623"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248338"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 購買 [Visual Studio Professional 和 Visual Studio Enterprise 訂用帳戶](https://visualstudio.microsoft.com/subscriptions/)。 這些稱為「雲端訂用帳戶」****。
@@ -22,11 +22,11 @@ ms.locfileid: "86211623"
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶前往以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索 Visual Studio 購買的不同選項。 您仍可購買新的每月雲端訂用帳戶。
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 若要為您的購買計費，您將需要一個 [Azure 訂用帳戶](https://azure.microsoft.com/pricing/purchase-options/)。 您可以在 Visual Studio Marketplace 中第一次購買之前或第一次購買期間[註冊](https://portal.azure.com)。
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>誰可以購買 Visual Studio 雲端訂閱？
-具有 Azure 訂用帳戶之[擁有](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)者、[服務管理員或共同管理員](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-subscription-administrator)存取權的任何人都可以購買雲端訂閱。
+具有 Azure 訂用帳戶之 [擁有](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)者、 [服務管理員或共同管理員](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-subscription-administrator) 存取權的任何人都可以購買雲端訂閱。
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>如何購買雲端訂用帳戶
 
@@ -52,7 +52,7 @@ ms.locfileid: "86211623"
 > [!div class="mx-imgBorder"]
 > ![前往 Visual Studio 訂閱者入口網站](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
 
-如果您購買了多個訂用帳戶，請繼續作業，在 [Visual Studio 訂用帳戶系統管理入口網站](https://manage.visualstudio.com)中將訂用帳戶指派給其他人。  如果這是您第一次購買時，您可能需要[將新](add-monthly-subs.md)的訂用帳戶新增至系統管理入口網站。
+如果您購買了多個訂用帳戶，請繼續作業，在 [Visual Studio 訂用帳戶系統管理入口網站](https://manage.visualstudio.com)中將訂用帳戶指派給其他人。  如果這是您第一次購買時，您可能需要 [將新](add-monthly-subs.md) 的訂用帳戶新增至系統管理入口網站。
 
 > [!div class="mx-imgBorder"]
 > ![將訂用帳戶指派給其他人](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)
@@ -63,17 +63,17 @@ ms.locfileid: "86211623"
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a> 取消您已購買的雲端訂用帳戶更新
 
 若要取消訂閱，您只需要將合約的訂用帳戶數目設定為零 (0) 。  請遵循下列步驟來減少訂閱數目：
-1. 登入<https://manage.visualstudio.com>
+1. 登入 <https://manage.visualstudio.com>
 1. 如果您有多個合約，請從下拉式清單中選擇所需的合約。
-1. 按一下左上方的 [**總覽**] 圖示，以顯示訂閱的相關資訊。  
+1. 選取左上方的 **[總覽** ] 圖示，以顯示您的訂用帳戶的相關資訊。  
 > [!div class="mx-imgBorder"]
-> ![顯示訂用帳戶總覽](_img/buy-vs-subscriptions/overview-button.png "按一下 [總覽] 按鈕以顯示訂用帳戶詳細資料")
+> ![顯示訂用帳戶總覽](_img/buy-vs-subscriptions/overview-button.png "選取 [總覽] 按鈕以顯示訂用帳戶詳細資料")
 
-4. 找出您想要取消之訂用帳戶的專案，然後按一下 [**變更數量**]。
+4. 找出您想要取消之訂用帳戶的專案，然後選取 [ **變更數量**]。
 1. 將 [數量] 設定為零 (0) 。 您的訂用帳戶將會維持在其排定的帳單日期之前，但不會在達到計費日期時續約。   
 
 > [!div class="mx-imgBorder"]
-> ![變更訂閱](_img/buy-vs-subscriptions/manage-subscriptions.png "按一下 [變更數量] 以取消訂閱")
+> ![變更訂閱](_img/buy-vs-subscriptions/manage-subscriptions.png "選取 [變更數量] 以取消訂閱")
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 

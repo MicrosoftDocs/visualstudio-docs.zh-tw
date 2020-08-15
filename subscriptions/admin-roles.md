@@ -7,12 +7,12 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 04/07/2020
 ms.topic: conceptual
 description: 了解超級管理員和系統管理員角色，以及如何指派系統管理員。
-ms.openlocfilehash: d77ad470395d1ae341a3bc0835d18a4023b9760c
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: bf10b95d44a960fea50bff6b2fba7b9a8dc98a26
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234623"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248449"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Visual Studio 訂用帳戶合約的超級管理員和系統管理員
 
@@ -27,26 +27,26 @@ ms.locfileid: "87234623"
 ## <a name="assigning-administrators"></a>指派系統管理員
 指派新的系統管理員：
 1. 使用指派為用於購買訂用帳戶的合約上超級管理員電子郵件地址登入 https://manage.visualstudio.com。
-2. 按一下標示為 [管理系統管理員]**** 的索引標籤。
-3. 按一下 [新增]  。
+2. 選取標示為 [ **管理系統管理員**] 的索引標籤。
+3. 選取 [新增]  。
    > [!div class="mx-imgBorder"]
-   > ![新增系統管理員](_img/admin-roles/add-admins.png "按一下 [管理系統管理員] 分頁，然後按一下 [新增] 指派新的系統管理員。")
+   > ![新增系統管理員](_img/admin-roles/add-admins.png "選取 [管理系統管理員] 分頁，然後選取 [新增] 以指派新的系統管理員。")
 4. 使用新系統管理員的資訊來完成表單。  
    > [!div class="mx-imgBorder"]
-   > ![新增系統管理員表單](_img/admin-roles/add-form.png "輸入新系統管理員的登入資訊，並選擇是否要將其設為超級管理員。 然後按一下 [新增]。")
+   > ![新增系統管理員表單](_img/admin-roles/add-form.png "輸入新系統管理員的登入資訊，並選擇是否要將其設為超級管理員。 然後選取 [新增]。")
 
    > [!NOTE]
    > 如果您想要讓此系統管理員能夠指派其他系統管理員，請記得核取 [超級管理員]**** 方塊。
 
-5. 當您按一下 [新增]**** 指派新的系統管理員之後，他們會收到一封電子郵件，邀請他們登入入口網站。  
+5. 在 **您選取 [新增]** 指派新的系統管理員之後，他們會收到電子郵件，邀請他們登入入口網站。  
 
 ## <a name="resources"></a>資源
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 文件](https://docs.microsoft.com/visualstudio/)
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 

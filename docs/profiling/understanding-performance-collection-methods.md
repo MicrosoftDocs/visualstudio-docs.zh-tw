@@ -12,19 +12,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a37d58d1bd18ef19f610602ec8f2238816405e4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ecbabae86b762c9143dba6be5aa0e4683a92b0dd
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285747"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250771"
 ---
 # <a name="understand-performance-collection-methods"></a>了解效能收集方法
 
 Visual Studio 程式碼剖析工具提供五種收集效能資料的方法。 本文說明不同的方法，並建議使用特定方法收集資料的案例可能是適當的。
 
 > [!NOTE]
-> Windows 8 和 Windows Server 2012 中增強的安全性功能需要在 Visual Studio profiler 收集這些平臺資料的方式上有重大變更。 UWP App 也需要新的收集技術。 請參閱[windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
+> Windows 8 和 Windows Server 2012 中增強的安全性功能需要在 Visual Studio profiler 收集這些平臺資料的方式上有重大變更。 UWP App 也需要新的收集技術。 請參閱 [windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
 
 |方法|描述|
 |------------|-----------------|
@@ -43,11 +43,11 @@ Visual Studio 程式碼剖析工具提供五種收集效能資料的方法。 �
 取樣是 Visual Studio 程式碼剖析工具的預設方法。 這適用于下列工作：
 
 - 應用程式效能的初始探勘
-- 調查牽涉到微處理器（CPU）使用率的效能問題
+- 調查牽涉到微處理器 (CPU 使用率的效能問題) 
 
 取樣分析方法會依設定的間隔來中斷電腦 CPU，並收集函式呼叫堆疊。 執行之函式的專屬樣本計數會遞增。 「內含計數」會針對呼叫堆疊上的所有呼叫函式遞增。 取樣報表會針對已分析的模組、函式、源程式碼及指示，呈現這些計數的總計。
 
-根據預設，分析工具會將取樣間隔設定為 CPU 週期。 您可以將 [間隔類型] 變更為另一個 CPU 效能計數器，或設定間隔的計數器事件數目。 您也可以收集階層互動分析（TIP）資料。 此資料會提供透過 ADO.NET 對 SQL Server 資料庫進行查詢的相關資訊。
+根據預設，分析工具會將取樣間隔設定為 CPU 週期。 您可以將 [間隔類型] 變更為另一個 CPU 效能計數器，或設定間隔的計數器事件數目。 您也可以 (TIP) 資料收集階層互動分析。 此資料會提供透過 ADO.NET 對 SQL Server 資料庫進行查詢的相關資訊。
 
 [使用取樣收集效能統計資料](../profiling/collecting-performance-statistics-by-using-sampling.md)
 
@@ -86,21 +86,21 @@ Visual Studio 程式碼剖析工具提供五種收集效能資料的方法。 �
 
 並行分析會收集多執行緒應用程式的相關資訊。 資源爭用分析會在每次競爭執行緒等候共用資源的存取權時，收集詳細的呼叫堆疊資訊。 並行視覺化也會收集有關多執行緒應用程式如何互動的一般資訊：
 
-  - 直接.
-  - 硬體。
-  - 作業系統。
-  - 主機電腦上的其他進程。
+- 直接.
+- 硬體。
+- 作業系統。
+- 主機電腦上的其他進程。
 
 資源爭用報表會顯示爭用總數。 他們也會回報模組、函式、源程式碼和指示等候資源的總時間。 時間軸圖形會顯示其發生的爭用。
 
 並行視覺化會顯示圖形資訊，協助您找出：
 
-  - 效能瓶頸。
-  - CPU 使用量過低。
-  - 執行緒爭用。
-  - 執行緒遷移。
-  - 同步處理延遲。
-  - 重迭的 i/o 區域。
+- 效能瓶頸。
+- CPU 使用量過低。
+- 執行緒爭用。
+- 執行緒遷移。
+- 同步處理延遲。
+- 重迭的 i/o 區域。
 
   可能的話，圖形輸出會從呼叫堆疊和原始程式碼連結到資料。 並行視覺化資料只能針對命令列應用程式和 Windows 應用程式收集。
 

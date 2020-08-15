@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fa59197e584c6c8062c13354178f883b60b36442
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62957227"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250559"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步驟 4：使用完整的 Flask Web 專案範本
 
@@ -35,17 +35,17 @@ ms.locfileid: "62957227"
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>步驟 4-1：從範本建立專案
 
-1. 在 Visual Studio 中，轉到**解決方案資源管理器**，按右鍵本教程中較早創建的**學習法帕斯克**解決方案，然後選擇"**添加新** > **專案**"。 （或者，如果要使用新解決方案 **，請選擇"****檔** > **新專案** > "。
+1. 在 Visual Studio 中，移至**方案總管**，在本教學課程稍早建立的**LearningFlask**方案上按一下滑鼠右鍵，**然後選取 [**  >  **新增專案**]。  (或者，如果您想要使用新的方案 **，請改為選取 [** 檔案] [  >  **新增**  >  **專案**]。 ) 
 
-1. 在新專案對話方塊中，搜索並選擇**Flask Web 專案**範本，調用專案"FlaskWeb"，然後選擇 **"確定**"。
+1. 在 [新增專案] 對話方塊中，搜尋並選取 [ **Flask Web 專案** ] 範本，並呼叫 "FlaskWeb" 專案，然後選取 **[確定]**。
 
 1. 由於該範本再次包含 *requirements.txt* 檔案，因此 Visual Studio 會詢問要在何處安裝這些相依性。 選擇 [安裝至虛擬環境]**** 選項，然後在 [新增虛擬環境]**** 對話方塊中，選取 [建立]**** 並接受預設值。
 
-1. 一旦 Visual Studio 完成虛擬環境的設置，通過將"**解決方案資源管理器**"中的該專案按右鍵並選擇 **"設置為啟動專案**"，將**FlaskWeb**專案設置為 Visual Studio 解決方案的預設值。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
+1. 一旦 Visual Studio 完成虛擬環境的設定，請將 **FlaskWeb** 專案設定為 Visual Studio 方案的預設值，方法是以滑鼠右鍵按一下 **方案總管** 中的該專案，然後選取 [ **設定為啟始專案**]。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 
     ![將 FlaskWeb 專案顯示為啟始專案的 [方案總管]](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. 選擇**調試** > **啟動調試**（**F5**） 或使用工具列上的**Web 服務器**按鈕運行伺服器：
+1. 選取 [**調試**  >  **開始調試** (**F5**) 或使用工具列上的 [ **Web 服務器**] 按鈕來執行伺服器：
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/flask/run-web-server-toolbar-button.png)
 
@@ -69,7 +69,7 @@ ms.locfileid: "62957227"
   - *runserver.py*：可在開發伺服器上執行應用程式的指令碼。
   - *requirements.txt*：包含 Flask 0.x 的相依性。
 - *FlaskWeb* 資料夾包含所有應用程式檔案：
-  - init.py將應用代碼標記為 Python 模組，創建 Flask 物件，並導入應用的視圖。 * \_ \_ \_ *
+  - init.py 會將應用程式程式碼標示為 Python 模組、建立 Flask 物件，以及匯入應用程式的視圖。 * \_ \_ \_ \_ *
   - *views.py* 包含用以轉譯頁面的程式碼。
   - *static* 資料夾包含名為 *content* (CSS 檔案)、*fonts* (字型檔案) 及 *scripts* (JavaScript 檔案) 的子資料夾。
   - *templates* 資料夾針對每個擴充 *layout.html* 的特定頁面，包含 *layout.html* 基底範本，以及 *about.html*、*contact.html* 和 *index.html*。
@@ -164,7 +164,7 @@ def about():
 
 為了啟用 Jade，專案範本會先在 *requirements.txt* 中包含 pyjade 套件。
 
-應用的*\_\_\_\_init .py*檔包含一行
+應用程式的* \_ \_ \_ \_ .py*檔案包含一行
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
@@ -235,5 +235,5 @@ block content
 ## <a name="go-deeper"></a>深入了解
 
 - [撰寫您的第一個 Flask 應用程式，第 4 部分 - 表單和一般檢視](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) \(英文\) (docs.djangoproject.com)
-- [GitHib 上的 Jade (文件)](https://github.com/liuliqiang/pyjade) \(英文\) (github.com)
+- [GitHub 上的 Jade (檔) ](https://github.com/liuliqiang/pyjade) (github.com) 
 - GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask) \(英文\)

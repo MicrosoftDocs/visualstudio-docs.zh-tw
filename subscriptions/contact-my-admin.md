@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: how-to
 description: 了解如何連絡您的訂用帳戶管理員以協助解決問題。
-ms.openlocfilehash: 1ee5b5091c9321a76117f7d7e1c232973f3c2dd5
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.openlocfilehash: d3469fa5c8ba69cf5a4d4dab6d5c4b6be070f4d8
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87434260"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247428"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>取得訂用帳戶管理員的協助
 如果您的 Visual Studio 訂用帳戶是由公司或學校提供給您，則其可能是由訂用帳戶管理員 (或「管理員」) 指派給您。  管理員可以指派或移除訂用帳戶、變更登入電子郵件地址、判斷您是否能夠下載軟體，以及執行與訂用帳戶相關的其他功能。
@@ -21,24 +21,24 @@ ms.locfileid: "87434260"
 
 ## <a name="how-to-contact-your-admin"></a>如何連絡您的管理員
 1. 登入訂閱者入口網站，網址為 <https://my.visualstudio.com>
-2. 按一下 [訂閱]**** 索引標籤。 
-3. 按一下右上方的 [Contact my Admin] \(連絡我的管理員\)**** 按鈕。 
+2. 選取 **[訂閱]** 索引標籤。 
+3. 選取右上方的 [ **聯絡我** 的系統管理員] 按鈕。 
    > [!div class="mx-imgBorder"]
-   > ![連絡我的管理員](_img/contact-my-admin/contact-my-admin-button.png "按一下 [連絡人我的系統管理員] 按鈕，輸入您的訊息，然後按一下 [傳送]。")
+   > ![連絡我的管理員](_img/contact-my-admin/contact-my-admin-button.png "選取 [連絡人我的系統管理員] 按鈕，輸入您的訊息，然後選取 [傳送]。")
 4. 輸入給管理員的訊息。
-5. 如果您想要收到傳送給管理員的訊息複本，請按一下 [Send me a copy] \(傳送複本給我\)**** 核取方塊。 
-6. 最後，按一下 [傳送]****。
+5. 如果您想要收到傳送給系統管理員的訊息複本，請選擇 [ **傳送複本給我** ] 核取方塊。 
+6. 最後，選取 [ **傳送**]。
 
 > [!NOTE]
-> **超級管理員：** 若要設定傳送「連絡人我的系統管理員」要求的電子郵件地址，請在 [[協定喜好](admin-prefs.md#contact-email-address)設定] 中指定該位址。
+> **超級管理員：**  若要設定傳送「連絡人我的系統管理員」要求的電子郵件地址，請在 [ [協定喜好](admin-prefs.md#contact-email-address)設定] 中指定該位址。
 
 ## <a name="resources"></a>資源
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 文件](https://docs.microsoft.com/visualstudio/)
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟

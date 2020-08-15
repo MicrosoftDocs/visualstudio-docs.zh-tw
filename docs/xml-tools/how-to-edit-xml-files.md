@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ce3e41b2fe9dfdb080e23fb4270454bbd57f7ef
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85817199"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249512"
 ---
 # <a name="how-to-edit-xml-files"></a>如何：編輯 XML 檔案
 
@@ -22,15 +22,15 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
 > [!NOTE]
 > HTML 編輯器可處理 XHTML 文件。
 
-若要編輯 XML 檔案，請按兩下您想要編輯的檔案。
+若要編輯 XML 檔案，請開啟您要編輯的檔案。
 
 ## <a name="add-a-new-xml-file-to-a-project"></a>將新的 XML 檔案加入至專案
 
-1. 從 [**專案**] 功能表中，選取 [**加入新專案**]。
+1. 從 [ **專案** ] 功能表中，選取 [ **加入新專案**]。
 
 2. 從 [**範本**] 窗格中選取 [ **XML**檔案]。
 
-3. 在 [**名稱**] 欄位中輸入檔案名，然後按 [**新增**]。
+3. 在 [ **名稱** ] 欄位中輸入檔案名，然後按 [ **新增**]。
 
    XML 檔案會加入至專案，並在 XML 編輯器中開啟。 檔案包含預設的 XML 宣告，`<?xml version="1.0" encoding="utf-8" ?>`。
 
@@ -38,19 +38,19 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
 
 1. 從 [專案]**** 功能表上，選取 [新增現有項目]****。
 
-   [**加入現有專案**] 對話方塊隨即出現。
+   [ **加入現有專案** ] 對話方塊隨即出現。
 
-2. 選取 XML 檔案，然後按 [**新增**]。
+2. 選取 XML 檔案，然後按 [ **新增**]。
 
 ## <a name="create-a-new-xml-or-xslt-file"></a>建立新的 XML 或 XSLT 檔案
 
-1. 從 [**檔案**] 功能表中，選取 [**新增**]。
+1. 從 [ **檔案** ] 功能表中，選取 [ **新增**]。
 
    [ **新增檔案** ] 對話方塊隨即出現。
 
-2. 選取 [ **xml**檔案] 以建立新的 xml 檔案;或者，選取 [ **xslt**檔案] 以建立新的 xslt 樣式表單。
+2. 選取 [ **xml** 檔案] 以建立新的 xml 檔案;或者，選取 [ **xslt** 檔案] 以建立新的 xslt 樣式表單。
 
-3. 按一下 [開啟] 。
+3. 選取 [開啟]  。
 
 ## <a name="create-an-empty-project-for-xml-files"></a>建立 XML 檔案的空白專案
 
@@ -60,9 +60,9 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
 
    [新增專案]  對話方塊隨即出現。
 
-2. 選取您選擇的程式碼語言，然後選取 [**空白專案（.NET Framework）** ] 範本。
+2. 選取您選擇的程式碼語言，然後選取 [ **空的專案] ( .NET Framework) ** ] 範本。
 
-3. 按一下 [確定] 。
+3. 選取 [確定]。
 
 ::: moniker-end
 
@@ -70,9 +70,9 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
 
 1. 從 [檔案]**** 功能表選取 [新增]**[專案]** > ****。
 
-2. 在 [範本搜尋] 方塊中輸入**空的專案**，選取 [**空白專案（.NET Framework）** ] 範本，然後按 **[下一步]**。
+2. 在 [範本搜尋] 方塊中輸入 **空的專案** ，選取 **空的專案 ( .NET Framework) ** 範本]，然後選取 **[下一步]**。
 
-3. 按一下 [建立]。
+3. 選取 [建立]。
 
 ::: moniker-end
 

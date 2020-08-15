@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
-ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: da78c4f9212341636d85453ad19dde549ddb0e20
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453687"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248430"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
@@ -30,10 +30,10 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>若要在訂閱之間切換，您可以：
 
-- 按一下右上方的下拉式清單，然後從清單中選擇訂閱
-- 按一下 [訂閱] 索引標籤，然後按一下想要的訂閱
+- 選取右上方的下拉式清單，然後從清單中選擇訂用帳戶
+- 選取 [訂閱] 索引標籤，然後選取所需的訂用帳戶
   > [!div class="mx-imgBorder"]
-  > ![切換訂閱](_img/manage-vs-subscriptions/change-subscription-resized.png "按一下 [訂閱] 索引標籤，以查看您所有訂用帳戶的詳細資訊，並在其間切換。")
+  > ![切換訂閱](_img/manage-vs-subscriptions/change-subscription-resized.png "選取 [訂用帳戶] 索引標籤，以查看您所有訂用帳戶的詳細資訊，並在其間切換。")
 
 ### <a name="if-your-subscription-is-not-visible"></a>如果未顯示您的訂閱...
 
@@ -68,17 +68,17 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 
 您可以輕鬆地變更設定檔中的連絡人資訊與喜好設定。
 
-1. 在訂閱者入口網站右上角，按一下您的名稱。
-2. 按一下 [編輯設定檔]**** 按鈕。
+1. 在訂閱者入口網站的右上角選取您的名稱。
+2. 選取 [ **編輯設定檔** ] 按鈕。
 3. 在 [關於]**** 索引標籤中，您可以變更名稱、電子郵件、國家/地區、設定檔圖片和連絡人喜好設定。 在 [喜好設定]**** 索引標籤中，您可以選取慣用的語言、日期和時間模式、時區以及使用者介面主題。
-4. 完成變更時，請按一下 [儲存]****。
-5. 按一下瀏覽器的 [返回]**** 按鈕，返回「權益」頁面。
+4. 當您完成變更時，請選取 [ **儲存**]。
+5. 選取瀏覽器的 [ **上一頁** ] 按鈕以返回 [權益] 頁面。
 
 ### <a name="setting-communications-preferences"></a>設定通訊喜好設定
 如果您想要接收關於您的訂閱和權益的定期更新 (包括 Visual Studio 訂閱電子報)，請[更新您的喜好設定](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)，方法是選取您 Visual Studio 設定檔中的 [Visual Studio 訂閱] 核取方塊。 您隨時可以變更這些設定和取消訂閱。 
 
    > [!div class="mx-imgBorder"]
-   > ![設定喜好設定](_img/manage-vs-subscriptions/change-prefs.png "按一下 [Visual Studio 訂閱者案電子郵件] 核取方塊以接收更新。")
+   > ![設定喜好設定](_img/manage-vs-subscriptions/change-prefs.png "選取 [Visual Studio 訂閱者案電子郵件] 核取方塊以接收更新。")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>將訂用帳戶連結至現有的 Azure DevOps Services 或 Azure 訂用帳戶
 如果您是使用個人 Microsoft 帳戶 (MSA) 登入訂用帳戶，且其中一個訂用帳戶使用由 Azure 管理的公司或學校帳戶，並包含 Azure DevOps Services 或 Microsoft Azure，那麼您可以將這兩個訂用帳戶連結起來。 這個連結稱為「其他帳戶」，可讓您繼續使用 MSA 登入您的訂用帳戶，同時存取與您學校或公司帳戶建立關聯的現有 Azure、Azure DevOps Services 或 IDE 資源。
@@ -88,24 +88,24 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 若要新增其他帳戶：
 
 1. 使用您的 Microsoft 帳戶 (MSA) 登入[訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
-2. 按一下 [訂閱]**** 索引標籤。
+2. 選取 **[訂閱]** 索引標籤。
 3. 在 [相關連結]**** 中，選擇 [新增其他帳戶]****。
-4. 輸入您的公司帳戶/學校帳戶電子郵件地址，然後按一下 [新增]****。
+4. 輸入您的工作/學校帳戶電子郵件地址，然後選取 [ **新增**]。
 
-新增其他帳戶之後，您可以按一下 [訂閱]**** 索引標籤，然後選擇 [相關連結]**** 區段中的適當選項，隨時更新帳戶或將其移除。
+新增其他帳戶之後，您可以隨時透過選取 [ **訂閱** ] 索引標籤，然後在 [ **相關連結** ] 區段中選擇適當的選項，來更新或移除帳戶。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>問：如果我未更新訂閱，Microsoft 會保留我的資料多久？
 答：根據購買管道，Microsoft 維護客戶資料的時間長度不一。
 
-| 管道                                                | 持續時間 (天數) |
+| 通路                                                | 持續時間 (天數) |
 |--------------------------------------------------------|-----------------|
 |    零售 (例如透過 Microsoft Store)               |    360          |
 |    大量授權服務中心 (VLSC)              |    180          |
 |    Microsoft 產品和服務合約 (MPSA)    |    180          |
 |    Visual Studio 雲端訂閱                   |    180          |
-|    程式（例如 MCT、MPN、想像）          |    180          |
+|    程式 (例如 MCT、MPN、想像)           |    180          |
 |    禁止轉售 (例如 MVP、MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
@@ -113,10 +113,10 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 > - 如果您選擇關閉 Microsoft 帳戶或 Azure AD，則會立即匿名您的個人資料。
 > - 如果您有使用中的訂閱，則不會完全移除您的個人資料。
 
-## <a name="see-also"></a>請參閱
-- [Visual Studio 文件](https://docs.microsoft.com/visualstudio/)
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟

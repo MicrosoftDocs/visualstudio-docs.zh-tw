@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 32766fdf69136f3882186bbcad08aaf83d2e573e
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: a8f3e183bd72e9894eae55a5ed7c4f9322d44953
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85815742"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250099"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
 
@@ -66,13 +66,11 @@ Unity 安裝所隨附的 Visual Studio 版本可能不是最新的。 如果系�
 
 1. 按一下安裝程式視窗右下角的 [修改]**** (若已安裝) 或 [安裝]**** (針對新安裝)。
 
-
 #### <a name="check-for-updates-to-visual-studio"></a>檢查 Visual Studio 的更新
 
 建議您檢查 Visual Studio 內的更新，以確保您可以存取最新的工具和功能。 這不會中斷您的 Unity 專案。
 
 - [更新 Visual Studio 2017](../install/update-visual-studio.md)
-
 
 ## <a name="configure-unity-for-use-with-visual-studio"></a>設定 Unity 以搭配 Visual Studio 使用
 
@@ -98,7 +96,6 @@ Unity 安裝所隨附的 Visual Studio 版本可能不是最新的。 如果系�
    ![選取 [Visual Studio]](media/vs-2019/vstu-unity-external-tools.png)
    :::moniker-end
 
-
 4. 若已選取 [瀏覽]****，請瀏覽到您 Visual Studio 安裝目錄中的 **Common7/IDE** 目錄，然後選取 [devenv.exe]****。 然後按一下 [開啟] ****。
 
    :::moniker range="vs-2017"
@@ -123,7 +120,6 @@ Unity 安裝所隨附的 Visual Studio 版本可能不是最新的。 如果系�
 > [!NOTE]
 > Visual Studio Tools for Unity 需要 Unity 5.2 與更新的版本，以及支援延伸模組的 Visual Studio 版本，例如 Visual Studio Community、Professional、Premium 或 Enterprise。 若要確認 Unity 安裝中已啟用 Visual Studio Tools for Unity，請從 [說明]**** 功能表中選取 [About Unity] \(關於 Unity\)****，並在對話方塊左下角尋找「已啟用 Microsoft Visual Studio Tools for Unity」文字。
 > ![ Unity](media/vs-2019/vstu-about-unity.png)
-
 
 ## <a name="next-steps"></a>後續步驟
 

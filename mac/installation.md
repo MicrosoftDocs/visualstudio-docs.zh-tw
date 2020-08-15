@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 4e38084d4dc1e5095581846d0810ad44b742bcdf
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 632ba9aa12eb1fa6550d0f9567e686366cfbcb00
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938959"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250554"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安裝 Visual Studio 2019 for Mac
 
@@ -38,7 +38,7 @@ ms.locfileid: "85938959"
 
     [![按一下大箭號以開始安裝](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
-3. 您可能會看到要從網際網路下載應用程式的相關警告。 按一下 [開啟] 。
+3. 您可能會看到要從網際網路下載應用程式的相關警告。 按一下 **[開啟]** 。
 4. 等候安裝程式檢查您的系統：
 
     [![安裝程式會檢查您的系統是否有已安裝的元件](media/install-checking-sml.png)](media/install-checking.png#lightbox)
@@ -53,18 +53,16 @@ ms.locfileid: "85938959"
 
    如果您不想要安裝所有平台，請使用以下指南以協助您決定要安裝的平台：
 
-
-|應用程式類型  |目標  |選取項目  |備註  |
-|---------|---------|---------|---------|
-|**使用 Xamarin 的應用程式**| Xamarin.Forms|選取**Android**和**iOS**平臺 |您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/) |
-||僅限 iOS|選取**iOS**平臺|您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/)|
-||僅 Android|選取**Android**平臺|請注意，您也應該選取相關的相依性|
-||僅限 Mac|選取**macOS （Cocoa）** 平臺|您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/)|
-|**.NET Core 應用程式**|         |選取 [ **.Net Core**平臺]。|         |
-|**ASP.NET Core Web 應用程式**|         |選取 [ **.Net Core**平臺]。|         |
-|**Azure Functions**|         |選取 [ **.Net Core**平臺]。|         |
-|**跨平台 Unity 遊戲開發**|         |除了 Visual Studio for Mac 以外，不需要安裝任何其他平臺。| 如需安裝 Unity 延伸模組的詳細資訊，請參閱 [Unity 安裝指南](/visualstudio/mac/setup-vsmac-tools-unity)。|
-
+   |應用程式類型  |目標  |選取  |備忘稿  |
+   |---------|---------|---------|---------|
+   |**使用 Xamarin 的應用程式**| Xamarin.Forms|選取 **Android** 和 **iOS** 平臺 |您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/) |
+   ||僅限 iOS|選取 **iOS** 平臺|您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/)|
+   ||僅 Android|選取 **Android** 平臺|請注意，您也應該選取相關的相依性|
+   ||僅限 Mac|選取 **macOS (Cocoa) ** 平臺|您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/)|
+   |**.NET Core 應用程式**|         |選取 [ **.Net Core** 平臺]。|         |
+   |**ASP.NET Core Web 應用程式**|         |選取 [ **.Net Core** 平臺]。|         |
+   |**Azure Functions**|         |選取 [ **.Net Core** 平臺]。|         |
+   |**跨平台 Unity 遊戲開發**|         |除了 Visual Studio for Mac 以外，不需要安裝任何其他平臺。| 如需安裝 Unity 延伸模組的詳細資訊，請參閱 [Unity 安裝指南](/visualstudio/mac/setup-vsmac-tools-unity)。|
 
 7. 選取完成之後，請按 [安裝]**** 按鈕。
 8. 安裝程式會顯示下載和安裝 Visual Studio for Mac 的進度，並顯示選取的工作負載。 系統會提示您輸入密碼，以授與安裝所需的許可權。：
@@ -92,7 +90,7 @@ ms.locfileid: "85938959"
 
 - [Visual Studio 端點](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 安裝 Visual Studio for Mac 可讓您開始撰寫應用程式的程式碼。 以下指示提供您下一步撰寫及部署專案的逐步指示。
 

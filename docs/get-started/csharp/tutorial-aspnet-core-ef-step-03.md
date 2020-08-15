@@ -1,5 +1,5 @@
 ---
-title: 第 3 步：使用ASP.NET核心應用中的資料
+title: 步驟3：使用 ASP.NET Core 應用程式中的資料
 description: 使用此影片教學課程和逐步指示，開始在您的 ASP.NET Core Web 應用程式中使用 Entity Framework Core 處理資料。
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -16,14 +16,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: cef0db7e5615d08fb5b22c38604a24124c853ebd
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580061"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250801"
 ---
-# <a name="step-3-work-with-data-using-entity-framework"></a>第 3 步：使用實體框架處理資料
+# <a name="step-3-work-with-data-using-entity-framework"></a>步驟3：使用 Entity Framework 處理資料
 
 遵循這些步驟，以在您的 ASP.NET Core Web 應用程式中，開始使用 Entity Framework Core 來處理資料。
 
@@ -54,7 +54,7 @@ public class Game
 
 現在，我們已經準備好建立此頁面，我們將用它來管理遊戲庫。 這聽起來可能令人怯步，但其實非常簡單。 首先，我們需要決定此功能要位於應用程式中的何處。 開啟 Web 專案中的 [Pages] 資料夾，並在那裡新增資料夾。 將它稱為「Games」**。
 
-現在右鍵點擊遊戲，並**Add** > 選擇**添加新的腳手架專案**。 選擇 [使用 Entity Framework (CRUD) 的 Razor 頁面]**** 選項。 CRUD 代表「建立 (Create)、讀取 (Read)、更新 (Update)、刪除 (Delete)」，而此範本會為每個這些作業都建立頁面 (包括「列出全部」和「檢視一個項目的詳細資訊」頁面)。
+現在以滑鼠右鍵按一下 [遊戲]，然後選擇 [**加入**  >  **新的 scaffold 專案**]。 選擇 [使用 Entity Framework (CRUD) 的 Razor 頁面]**** 選項。 CRUD 代表「建立 (Create)、讀取 (Read)、更新 (Update)、刪除 (Delete)」，而此範本會為每個這些作業都建立頁面 (包括「列出全部」和「檢視一個項目的詳細資訊」頁面)。
 
 ![Visual Studio 2019 ASP.NET Core [新增 Scaffolded] 頁面](media/vs-2019/vs2019-add-scaffold.png)
 
@@ -92,7 +92,7 @@ public static void Main(string[] args)
 
         try
         {
-            var context = services.GetRequiredService<AppDbContext>();
+            var context = services.GetRequiredService<Data.AppDbContext>();
             context.Database.EnsureCreated();
         }
         catch (Exception ex)
@@ -117,7 +117,7 @@ using WebApplication1.Models;
 
 大部分的程式碼只是用於錯誤處理，以及在應用程式執行之前提供對 EF Core `AppDbContext` 的存取。 重要的一行是顯示為 `context.Database.EnsureCreated()`，如果資料庫不存在，它就會建立資料庫。 應用程式現在已可執行。
 
-## <a name="test-it-out"></a>測試一下
+## <a name="test-it-out"></a>立即測試
 
 執行應用程式，並在網址列中瀏覽至 `/Games`。 您會看到空白清單頁面。 按一下 [Create New]**** \(建立新的\) 來將 `Game` 新增至集合。 填寫表單，然後按一下 [Create]**** \(建立\)。 您應該會在清單檢視中看到它。 按一下 [Details]**** \(詳細資料\) 來查看單一資料列詳細資料。
 
@@ -131,9 +131,9 @@ using WebApplication1.Models;
 
 在下一個影片中，您將學習如何將 Web API 支援新增至您的應用程式。
 
-[第 4 步：從ASP.NET核心應用中公開 Web API](tutorial-aspnet-core-ef-step-04.md)
+[步驟4：從您的 ASP.NET Core 應用程式公開 Web API](tutorial-aspnet-core-ef-step-04.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [ASP.NET核心中帶有實體框架核心的剃刀頁面](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
+- [在 ASP.NET Core 中使用 Entity Framework Core 的 Razor Pages](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
 - [ASP.NET Core Razor 頁面與 EF Core](/aspnet/core/data/?view=aspnetcore-2.1)

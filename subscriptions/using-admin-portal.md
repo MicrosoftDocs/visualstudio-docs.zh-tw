@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: overview
 description: 了解如何開始使用訂閱系統管理入口網站管理組織的 Visual Studio 訂閱。
-ms.openlocfilehash: 94ce9e8ceec46403ef816c39115a5418f1ee9e03
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902938"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249861"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 訂閱系統管理員入口網站的總覽
 
@@ -20,7 +20,7 @@ Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
-## <a name="important-considerations"></a>重要考量︰
+## <a name="important-considerations"></a>重要考量
 在您使用 Visual Studio 訂閱管理入口網站時，請牢記下列事項：
 - **Visual Studio 訂用帳戶依使用者授權。** 每位訂閱者可以基於開發和測試用途在任意數量的電腦上使用軟體。
 - 根據貴組織購買的 Visual Studio 訂用帳戶，**僅為每位訂閱者指派一個訂用帳戶層級**。 如果您的訂閱者獲派超過一個以上的訂閱等級，請編輯他們的設定，讓他們只擁有一個等級。
@@ -42,7 +42,7 @@ Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管
 
 在頁面的左上方，有數個圖示可供您選擇以顯示訂用帳戶指派總覽、合約詳細資料和使用量上限報表。
 
-若要查看您組織中針對每個合約購買、指派和仍然可用的訂用帳戶授權數目的其他資訊，請按一下上方圖示以啟用滑出面板。
+若要查看您組織中針對每個合約購買、指派和仍然可用之訂用帳戶授權數目的其他資訊，請選取上方圖示以啟用滑出面板。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 訂用帳戶管理入口網站訂閱者頁面](_img/using-admin-portal/subscribers-page.png)
 
@@ -60,10 +60,10 @@ Visual Studio 訂閱管理入口網站可讓您使用工具，在單一位置管
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
-- [Azure 文件](https://docs.microsoft.com/azure/)
+- [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 深入了解系統管理員的責任：
 - [系統管理員責任概觀](admin-responsibilities.md)
 - [清查生產前環境](admin-inventory.md)
