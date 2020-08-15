@@ -1,7 +1,0 @@
-# [Windows 指令碼介面](windows-script-interfaces.md)
-# [Windows Script Host](windows-script-hosts.md)
-# [Windows 指令碼引擎](windows-script-engines.md)
-# [動態指令碼偵錯概觀](active-script-debugging-overview.md)
-## [實作智慧主機協助程式介面](implementing-smart-host-helper-interfaces.md)
-# [動態指令碼分析概觀](active-script-profiling-overview.md)
-# [Windows 指令碼介面參考](reference/TOC.md)
