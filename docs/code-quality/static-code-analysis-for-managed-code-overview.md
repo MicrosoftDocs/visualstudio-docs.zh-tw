@@ -1,5 +1,5 @@
 ---
-title: 受控碼的程式碼分析
+title: Managed 程式碼的舊版分析
 ms.date: 06/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,35 +10,35 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4eac88d56399b7f8552962afa50b52c8431232b9
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 18c4ebf61e7136d908ad1e444616b0af7ac59a48
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974928"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238370"
 ---
-# <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio 中受控碼的程式碼分析總覽
+# <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Visual Studio 中 managed 程式碼的舊版分析總覽
 
-Visual Studio 可以透過兩種方式來執行 managed 程式碼的程式碼分析：使用[舊版分析](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)（也稱為 managed 元件的 FxCop 靜態分析），以及更現代化的 .NET Compiler Platform 程式[代碼分析器](../code-quality/roslyn-analyzers-overview.md)。 本主題涵蓋舊版分析。 若要深入瞭解以 .NET Compiler Platform 為基礎的程式碼分析，請參閱[.NET Compiler Platform 為基礎之分析器的總覽](../code-quality/roslyn-analyzers-overview.md)。
+Visual Studio 可以透過兩種方式來執行 managed 程式碼的程式碼分析：使用 [舊版分析](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)（也稱為 managed 元件的 FxCop 靜態分析），以及更現代化的 .NET Compiler Platform 程式 [代碼分析器](../code-quality/roslyn-analyzers-overview.md)。 本主題涵蓋舊版分析。 若要深入瞭解以 .NET Compiler Platform 為基礎的程式碼分析，請參閱 [.NET Compiler Platform 為基礎之分析器的總覽](../code-quality/roslyn-analyzers-overview.md)。
 
-適用于 managed 程式碼的程式碼分析會分析受管理的元件，並報告元件的相關資訊，例如違反[.Net 設計指導方針](/dotnet/standard/design-guidelines/)中所設定的程式設計和設計規則。
+適用于 managed 程式碼的程式碼分析會分析受管理的元件，並報告元件的相關資訊，例如違反 [.Net 設計指導方針](/dotnet/standard/design-guidelines/)中所設定的程式設計和設計規則。
 
 分析工具會將分析期間所做的檢查顯示為警告訊息。 警告訊息會識別任何相關的程式設計和設計問題，並且在可能的時候，提供如何修正問題的資訊。
 
 > [!NOTE]
-> Visual Studio 中的 .NET Core 和 .NET Standard 專案不支援舊版分析（靜態程式碼分析）。 如果您在 .NET Core 或 .NET Standard 專案上執行程式碼分析做為 msbuild 的一部分，您會看到類似錯誤的錯誤 **： CA0055：無法識別 \<.dll > 的平臺**。 若要分析 .NET Core 或 .NET Standard 專案中的程式碼，請改用程式[代碼分析器](../code-quality/roslyn-analyzers-overview.md)。
+> Visual Studio 中的 .NET Core 和 .NET Standard 專案不支援舊版分析 (靜態程式碼分析) 。 如果您在 .NET Core 或 .NET Standard 專案上執行程式碼分析做為 msbuild 的一部分，您會看到類似錯誤的錯誤 **： CA0055：無法識別的 \<your.dll> 平臺**。 若要分析 .NET Core 或 .NET Standard 專案中的程式碼，請改用程式 [代碼分析器](../code-quality/roslyn-analyzers-overview.md) 。
 
-## <a name="ide-integrated-development-environment-integration"></a>IDE （整合式開發環境）整合
+## <a name="ide-integrated-development-environment-integration"></a>IDE (整合式開發環境) 整合
 
 您可以手動或自動在您的專案上執行程式碼分析。
 
-若要在每次建立專案時執行程式碼分析，請選取專案的 [程式**代碼分析**] 屬性頁上的選項。 如需詳細資訊，請參閱[如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
+若要在每次建立專案時執行程式碼分析，請選取專案的 [程式 **代碼分析** ] 屬性頁上的選項。 如需詳細資訊，請參閱 [如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
 
-若要在專案上手動執行程式碼分析，請從功能表列選擇 [**分析**] > **執行程式碼分析** > **在 \<專案 > 上執行程式碼分析**。
+若要在專案上手動執行程式碼分析，請從功能表列中選擇 [**分析**] [  >  **執行程式碼分析**] [  >  **執行程式碼分析 \<project> **]。
 
 ## <a name="rule-sets"></a>規則集
 
-受控碼的程式碼分析規則會分組成[「規則集」](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。 您可以使用其中一個 Microsoft standard 規則集，也可以[建立自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)來滿足特定需求。
+受控碼的程式碼分析規則會分組成「規則集」[](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。 您可以使用其中一個 Microsoft standard 規則集，也可以 [建立自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md) 來滿足特定需求。
 
 ## <a name="suppress-warnings"></a>隱藏警告
 
@@ -54,12 +54,12 @@ Public class MyClass
 }
 ```
 
-如需詳細資訊，請參閱[隱藏警告](../code-quality/in-source-suppression-overview.md)。
+如需詳細資訊，請參閱 [隱藏警告](../code-quality/in-source-suppression-overview.md)。
 
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> 如果您將專案遷移至 Visual Studio 2017，可能會突然遇到大量的程式碼分析警告。 如果您還沒準備好修正警告，可以選擇 [**分析**] > **執行程式碼分析，並隱藏**作用中的問題，藉以隱藏所有警示。
+> 如果您將專案遷移至 Visual Studio 2017，可能會突然遇到大量的程式碼分析警告。 如果您還未準備好修正警告，可以選擇 [分析] [執行程式**Analyze**  >  **代碼分析]，並隱藏**[作用中問題]，來隱藏所有警示。
 >
 > ![執行程式碼分析並隱藏 Visual Studio 中的問題](media/suppress-active-issues.png)
 
@@ -68,7 +68,7 @@ Public class MyClass
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> 如果您將專案遷移至 Visual Studio 2019，可能會突然遇到大量的程式碼分析警告。 如果您還沒準備好修正警告，可以選擇 [**分析**] > [**建立] 和 [隱藏**作用中的問題] 來隱藏所有警示。
+> 如果您將專案遷移至 Visual Studio 2019，可能會突然遇到大量的程式碼分析警告。 如果您未準備好修正警告，您可以選擇 [分析] [組建] **Analyze**  >  **，並隱藏**[作用中問題]，以隱藏所有警示。
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ Public class MyClass
 
 - 程式碼分析會當做最新組建的一部分來執行。
 
-您可以指定簽入原則，達成上述要求。 如需詳細資訊，請參閱[使用專案簽入原則強化程式碼品質](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)。
+您可以指定簽入原則，達成上述要求。 如需詳細資訊，請參閱 [使用專案簽入原則強化程式碼品質](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)。
 
 ## <a name="team-build-integration"></a>Team build 整合
 

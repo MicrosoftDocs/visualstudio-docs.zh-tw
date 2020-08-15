@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9031b0107babf3d31b6e3b70bb7952cd83467d7d
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302809"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238786"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 專案
 
@@ -31,7 +31,7 @@ Visual Studio 提供各種 Python 專案範本，可讓您快速設定一些應�
 
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> Visual Studio 2019 支援開啟包含 Python 程式碼的資料夾，並執行該程式碼，不需要建立 Visual Studio 專案和方案檔案。 有關詳細資訊，請參閱[快速入門：在資料夾中打開並運行 Python 代碼](quickstart-05-python-visual-studio-open-folder.md)。 但是使用專案檔有一些優點，如本節所述。
+> Visual Studio 2019 支援開啟包含 Python 程式碼的資料夾，並執行該程式碼，不需要建立 Visual Studio 專案和方案檔案。 如需詳細資訊，請參閱 [快速入門：在資料夾中開啟及執行 Python 程式碼](quickstart-05-python-visual-studio-open-folder.md)。 但是使用專案檔有一些優點，如本節所述。
 ::: moniker-end
 
 > [!Tip]
@@ -39,20 +39,18 @@ Visual Studio 提供各種 Python 專案範本，可讓您快速設定一些應�
 >
 > 如[從現有的檔案建立專案](#create-project-from-existing-files)中所述，從現有的程式碼建立 Visual Studio 專案相當簡單。
 
-|   |   |
-|---|---|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [深度潛水：將原始程式碼控制與 Python 專案](https://youtu.be/Aq8eqApnugM)（youtube.com，8 米 55s）一起使用。 |
+![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")[深入探討：使用原始檔控制搭配 Python 專案](https://youtu.be/Aq8eqApnugM) (youtube.com、8m 分55秒) 。
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>新增檔案、指派啟動檔案及設定環境
 
-當您開發應用程式時，通常需要將不同類型的新檔案新增至專案中。 添加此類檔是通過按右鍵專案並選擇 **"添加** > 要使用的檔**的現有專案**"或 **"添加新** > **項**"來完成的，該項會彈出包含各種項範本的對話方塊。 如[項目範本](python-item-templates.md)參考上所述，選項包含空白 Python 檔案、Python 類別、單元測試，以及各種與 Web 應用程式相關的檔案。 您可以使用測試專案來探索這些選項，以了解您的 Visual Studio 版本中提供了哪些選項。
+當您開發應用程式時，通常需要將不同類型的新檔案新增至專案中。 藉由以滑鼠右鍵按一下專案，**然後選取**  >  [新增] [**現有專案**] 以流覽要新增的檔案，或 [**加入**新專案] 來加入這類檔案，就會顯示  >  **New Item**含有各種專案範本的對話方塊。 如[項目範本](python-item-templates.md)參考上所述，選項包含空白 Python 檔案、Python 類別、單元測試，以及各種與 Web 應用程式相關的檔案。 您可以使用測試專案來探索這些選項，以了解您的 Visual Studio 版本中提供了哪些選項。
 
-每個 Python 專案都有一個指派的啟動檔案，在 [方案總管]**** 中是以粗體顯示。 開機檔案是在開始調試 **（F5**或**調試** > **開始調試）** 或在**互動式**視窗中運行專案（在 Python 互動式中**移動**+**Alt**+**F5**或**調試** > **執行專案**）時運行的檔。 若要變更它，以滑鼠右鍵按一下新檔案，然後選取 [設定為啟動項目]**** (或者，在較舊的 Visual Studio 版本中選取 [設定為啟動檔案]****)。
+每個 Python 專案都有一個指派的啟動檔案，在 [方案總管]**** 中是以粗體顯示。 啟動檔案是當您開始 (**F5**或**Debug**開始偵錯工具時執行的檔案，  >  **Start Debugging**) 或當您在**互動式**視窗中執行專案時， (**Shift** + **Alt** + **F5**或**Debug**  >  **在 Python 互動式) 中執行**Debug for project。 若要變更它，以滑鼠右鍵按一下新檔案，然後選取 [設定為啟動項目]**** (或者，在較舊的 Visual Studio 版本中選取 [設定為啟動檔案]****)。
 
 > [!Tip]
 > 如果您從專案中移除選取的啟動檔案，且未選取新的啟動檔案，則在您嘗試執行該專案時，Visual Studio 就無法知道要啟動哪一個 Python 檔案。 在此情況下，Visual Studio 2017 15.6 版及更新版本會顯示錯誤；較舊的版本則會在 Python 解譯器執行的情況下開啟輸出視窗，或是您會看見該輸出視窗出現並立即消失。 如果您遇到這些行為，請確認您已指派啟動檔案。
 >
-> 若您因任何原因要讓輸出視窗保持開啟，請以滑鼠右鍵按一下專案，選取 [屬性]****，選取 [偵錯]**** 索引標籤，然後將 `-i` 加入 [解譯器引數]**** 欄位。 此參數會導致解譯器在程式完成後進入互動式模式，從而使視窗保持打開狀態，直到進入**Ctrl**+**Z** > **Enter**退出。
+> 若您因任何原因要讓輸出視窗保持開啟，請以滑鼠右鍵按一下專案，選取 [屬性]****，選取 [偵錯]**** 索引標籤，然後將 `-i` 加入 [解譯器引數]**** 欄位。 這個引數會導致解譯器在程式完成之後進入互動模式，藉此讓視窗保持開啟，直到您輸入**Ctrl** + **Z**  >  **enter**結束為止。
 
 ::: moniker range="vs-2017"
 新專案一律會與預設的全域 Python 環境關聯。 若要將專案與不同的環境 (包括虛擬環境) 建立關聯，請在專案中的 [Python 環境]**** 節點上按一下滑鼠右鍵，選取 [新增/移除 Python 環境]****，然後選取您想要的環境。
@@ -71,7 +69,7 @@ Visual Studio 提供各種 Python 專案範本，可讓您快速設定一些應�
 
 ## <a name="project-templates"></a>專案範本
 
-Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開始或是從現有的程式碼，都可以。 要使用範本，請選擇 **"檔** > **新專案** > **"功能表**命令或按右鍵**解決方案資源管理器**中的解決方案，然後選擇"**添加新** > **專案**"，這兩個對話方塊都位於下面的 **"新專案**"對話方塊中。 要查看特定于 Python 的範本，請在"Python"上搜索或選擇 **"已安裝** > **的 Python"** 節點：
+Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開始或是從現有的程式碼，都可以。 若要使用範本，請選取 **[檔案**] [  >  **新增**  >  **專案**] 功能表命令，或以滑鼠右鍵按一下**方案總管**中的方案，然後選取 [**加入**  >  **新專案**]，這兩項都會顯示下面的 [**新增專案**] 對話方塊。 若要查看 Python 特定的範本，請搜尋 "Python" 或選取**已安裝**的  >  **Python**節點：
 
 ![含有 Python 範本的 [新增專案] 對話方塊](media/projects-new-project-dialog.png)
 
@@ -81,7 +79,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 | --- | --- |
 | [**從現有 Python 程式碼**](#create-project-from-existing-files) | 從資料夾結構中的現有 Python 程式碼建立 Visual Studio 專案。  |
 | **Python 應用程式** | 具有單一空白原始程式檔的新 Python 應用程式基本專案結構。 根據預設，專案會在預設全域環境的主控台解譯器中執行，您可以透過[指派不同的環境](selecting-a-python-environment-for-a-project.md)來變更此環境。 |
-| [**Azure 雲服務**](python-azure-cloud-service-project-template.md) | 以 Python 撰寫的 Azure 雲端服務專案。 |
+| [**Azure 雲端服務**](python-azure-cloud-service-project-template.md) | 以 Python 撰寫的 Azure 雲端服務專案。 |
 | [**Web 專案**](python-web-application-project-templates.md) | 針對以各種不同的架構 (包括 Bottle、Django 和 Flask) 為基礎的 Web 應用程式專案。 |
 | **IronPython 應用程式** | 與「Python 應用程式」範本類似，但預設使用 IronPython，可藉由 .NET 語言啟用 .NET 互通性及混合模式偵錯。 |
 | **IronPython WPF 應用程式** | 一種針對應用程式的使用者介面使用 IronPython 搭配 Windows Presentation Foundation XAML 檔案的專案結構。 Visual Studio 會提供 XAML UI 設計工具、程式碼後置可以用 Python 來撰寫，應用程式則會在不顯示主控台的情況下執行。 |
@@ -106,7 +104,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 
 連結的檔案就是已導入專案中但通常位於應用程式專案資料夾外的檔案。 它們在 [方案總管]**** 中會顯示為帶有重疊捷徑圖示的一般檔案：![連結的檔案圖示](media/projects-linked-file-icon.png)
 
-連結的檔案是在 *.pyproj* 檔案中使用 `<Compile Include="...">` 元素來指定的。 如果連結檔使用目錄結構外部的相對路徑，則為隱式檔;如果連結檔在**解決方案資源管理器**中使用路徑，則為隱式檔：
+連結的檔案是在 *.pyproj* 檔案中使用 `<Compile Include="...">` 元素來指定的。 如果連結的檔案使用目錄結構以外的相對路徑，則為隱含的，如果它們使用 **方案總管**中的路徑，則為明確的：
 
 ```xml
 <Compile Include="..\test2.py">
@@ -123,9 +121,9 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 
 ### <a name="work-with-linked-files"></a>使用連結的檔案
 
-要將現有專案添加為連結，請按右鍵要添加檔的專案中的資料夾，然後選擇"**添加** > **現有專案**"。 在顯示的對話方塊中，選取檔案，然後從 [新增]**** 按鈕上的下拉式清單中選擇 [新增作為連結]****。 在沒有任何衝突檔案的情況下，此命令會在選取的資料夾中建立連結。 不過，如果已經有相同名稱的檔案存在，或專案中已經有該檔案的連結存在，就不會新增連結。
+若要加入現有的專案做為連結，請以滑鼠右鍵按一下您要加入檔案之專案中的資料夾，然後選取 [**加入**  >  **現有專案**]。 在顯示的對話方塊中，選取檔案，然後從 [新增]**** 按鈕上的下拉式清單中選擇 [新增作為連結]****。 在沒有任何衝突檔案的情況下，此命令會在選取的資料夾中建立連結。 不過，如果已經有相同名稱的檔案存在，或專案中已經有該檔案的連結存在，就不會新增連結。
 
-如果您嘗試連結到已經存在於專案資料夾中的檔案，則系統會將它新增為一般檔案，而不是連結。 要將檔轉換為連結，請選擇"**檔** > **保存"以**將檔保存到專案層次結構之外的位置;Visual Studio 會自動將其轉換為連結。 同樣，通過使用**檔** > **保存作為**將檔保存在專案層次結構中的某處，可以重新轉換連結。
+如果您嘗試連結到已經存在於專案資料夾中的檔案，則系統會將它新增為一般檔案，而不是連結。 若要將檔案轉換成連結，請**選取**[檔案] [另存新檔]，將檔案  >  **Save As**儲存到專案階層外的位置;Visual Studio 會自動將它轉換成連結。 同樣地，您**可以使用 [** 檔案] [另存新檔]，將檔案  >  **Save As**儲存在專案階層內的某個位置，藉以轉換回連結。
 
 如果您在 [方案總管]**** 中移動某個連結的檔案，則會移動該連結，但實際的檔案不受影響。 同樣地，刪除某個連結將會移除該連結，但不會影響檔案。
 
@@ -143,7 +141,7 @@ Visual Studio 專案支援新增對專案和延伸模組的參考，這些參考
 
 對 *.pyd* 檔案的參考可以為產生的模組啟用 IntelliSense。 Visual Studio 會將 *.pyd* 檔案載入到 Python 解譯器，並自我檢查其類型和函式。 它也會嘗試剖析文件字串來找出提供簽章說明的函式。
 
-在任何時候，只要更新磁碟上的延伸模組，Visual Studio 就會在背景中重新分析該模組。 此操作對運行時行為沒有影響，但在分析完成之前，某些完成不可用。
+在任何時候，只要更新磁碟上的延伸模組，Visual Studio 就會在背景中重新分析該模組。 此動作不會影響執行時間行為，但在分析完成之前，無法使用部分完成。
 
 您可能也需要新增包含該模組之資料夾的[搜尋路徑](search-paths.md)。
 
@@ -169,6 +167,6 @@ from System.Windows.Forms import *
 您可以新增對 WebPI 產品項目的參考以供部署到 Microsoft Azure 雲端服務，然後在該處透過 WebPI 摘要來安裝額外的元件。 根據預設，顯示的摘要為 Python 特定，並且包含 Django、CPython 及其他核心元件。 您也可以選取自己的摘要，如以下所示。 當發佈到 Microsoft Azure 時，安裝作業將會安裝所有參考的產品。
 
 > [!IMPORTANT]
-> WebPI 專案不在 Visual Studio 2017 或 Visual Studio 2019 中提供。
+> 在 Visual Studio 2017 或 Visual Studio 2019 中無法使用 WebPI 專案。
 
 ![WebPI 參考](media/projects-webPI-components.png)

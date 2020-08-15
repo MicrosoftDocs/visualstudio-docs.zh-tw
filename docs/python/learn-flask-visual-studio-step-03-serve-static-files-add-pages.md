@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 69fd704976ee941cb053d75040a3d3ec7871a380
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72985176"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238738"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，然後使用範本繼承
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>步驟3：提供靜態檔案、新增頁面，以及搭配 Flask 應用程式使用範本繼承
 
 **上一個步驟：[使用檢視與頁面範本來建立 Flask 應用程式](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -56,9 +56,9 @@ ms.locfileid: "72985176"
 
 ### <a name="use-a-static-file-in-a-template"></a>在範本中使用靜態檔案
 
-1. 在**解決方案資源管理器**中，按右鍵 Visual Studio 專案中的**HelloFlask**資料夾，選擇 **"** > **添加新資料夾**"，然後命名該資料夾`static`。
+1. 在**方案總管**中，以滑鼠右鍵按一下 [Visual Studio] 專案中的 [ **HelloFlask** ] 資料夾，選取 [**加入**  >  **新資料夾**]，然後將資料夾命名為 `static` 。
 
-1. 以滑鼠右鍵按一下 **static** 資料夾，並選取 [新增]**** > [新增項目]****。 在顯示的對話方塊中，選擇 **"樣式表"** 範本，命名檔`site.css`，然後選擇 **"確定**"。 **site.css** 檔案會出現在專案中，並在編輯器中開啟。 您的資料夾結構應該與下列影像類似：
+1. 以滑鼠右鍵按一下 **static** 資料夾，並選取 [新增]**** > [新增項目]****。 在出現的對話方塊中，選取 [ **樣式** 表單] 範本，將檔案命名為 `site.css` ，然後選取 **[確定]**。 **site.css** 檔案會出現在專案中，並在編輯器中開啟。 您的資料夾結構應該與下列影像類似：
 
     ![方案總管中所顯示的靜態檔案結構](media/flask/step03-static-file-structure.png)
 
@@ -119,7 +119,7 @@ Flask 提供一個稱為 `serve_static_file` 的函式，您可以從程式碼�
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>問題：如何處理 API 中的 URL 變數和查詢參數？
 
-答案：請參閱步驟 1-4 中[的答案，瞭解問題：Flask 如何使用可變 URL 路由和查詢參數？](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+回答：請參閱步驟1-4 中問題的答案 [： Flask 如何與變數 URL 路由和查詢參數搭配運作？](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>步驟 3-3：將頁面加入應用程式
 
@@ -168,7 +168,7 @@ Flask 提供一個稱為 `serve_static_file` 的函式，您可以從程式碼�
     <div><a href="about">About</a></div>
     ```
 
-1. 使用 **"檔** > **保存所有"** 功能表命令保存所有檔，或僅按**Ctrl**+**Shift**+**S**。 (技術上來說並不需要此步驟，因為在 Visual Studio 中執行專案會自動儲存檔案。 不過，知道有這個命令也很好！)
+1. 使用 **[檔案**] [  >  **全部儲存**] 功能表命令來儲存所有檔案，或直接按**Ctrl** + **Shift** + **S**。 (技術上來說並不需要此步驟，因為在 Visual Studio 中執行專案會自動儲存檔案。 不過，知道有這個命令也很好！)
 
 1. 執行專案以觀察結果並檢查頁面之間的瀏覽。 完成時，請停止應用程式。
 
@@ -188,7 +188,7 @@ Flask 的範本化系統 (預設為 Jinja) 提供兩種方法，可跨多個範�
 
 在這兩種情況下，`<template_path>` 是相對於應用程式的 *templates* 資料夾 (也允許 `../` 或 `./`)。
 
-基本範本使用`{% block <block_name> %}`和`{% endblock %}`標記來表示*塊*。 若之後參考範本再對同一個區塊名稱使用標籤，其區塊內容將會覆寫基底範本的區塊內容。
+基底範本描寫*blocks*會使用 `{% block <block_name> %}` 和 `{% endblock %}` 標記來封鎖。 若之後參考範本再對同一個區塊名稱使用標籤，其區塊內容將會覆寫基底範本的區塊內容。
 
 下列步驟將示範繼承：
 

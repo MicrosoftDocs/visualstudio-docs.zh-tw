@@ -1,5 +1,5 @@
 ---
-title: Visual Studio IDE 導覽
+title: 快速入門： Visual Studio IDE 導覽
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 490d3edddd35ad5d72733824e3af41888839e946
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 08ec25312068d5c69cdb0df9b7c293ae0575f608
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75596966"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238851"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio IDE 初探
 
@@ -35,11 +35,11 @@ ms.locfileid: "75596966"
 
 ## <a name="start-page"></a>起始頁
 
-開啟 Visual Studio 之後，首先看到的畫面很可能是**起始頁**。 **"開始頁**"設計為"中心"，可説明您更快地找到所需的命令和專案檔案。 [最近使用的]**** 區段會顯示您最近使用的專案和資料夾。 在 [新增專案]**** 底下，您可以按一下連結來開啟 [新增專案]**** 對話方塊；或者，在 [開啟]**** 底下，您可以開啟現有的程式碼專案或資料夾。 右側是最新的開發人員新聞摘要。
+開啟 Visual Studio 之後，首先看到的畫面很可能是**起始頁**。 **起始頁**是設計為「中樞」，可協助您更快找到所需的命令和專案檔。 [最近使用的]**** 區段會顯示您最近使用的專案和資料夾。 在 [新增專案]**** 底下，您可以按一下連結來開啟 [新增專案]**** 對話方塊；或者，在 [開啟]**** 底下，您可以開啟現有的程式碼專案或資料夾。 右側是最新的開發人員新聞摘要。
 
 ![Visual Studio 中的起始頁](media/start-page.png)
 
-如果關閉 **"開始頁"** 並希望再次看到它，則可以從 **"檔"** 功能表重新打開它。
+如果您關閉 [ **起始頁** ] 並想要再次看到它，可以 **從 [檔案** ] 功能表重新開啟它。
 
 ![Visual Studio 的 [檔案] 功能表](media/quickstart-IDE-file-menu-large.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "75596966"
 
 ::: moniker range=">=vs-2019"
 
-1. 在啟動視窗中，選擇 **"創建新專案**"。
+1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
    隨即開啟一個對話方塊，表示要**建立新專案**。 在這裡，您可以搜尋、篩選和選取專案範本。 它也會顯示一份最近使用的專案範本清單。
 
@@ -93,13 +93,13 @@ ms.locfileid: "75596966"
 
 ::: moniker-end
 
-   系統隨即建立專案，並在 [編輯器]**** 視窗中開啟名為 *Program.cs* 的檔案。 編輯器**顯示**檔的內容，並在 Visual Studio 中完成大部分編碼工作。
+   系統隨即建立專案，並在 [編輯器]**** 視窗中開啟名為 *Program.cs* 的檔案。 [ **編輯器** ] 會顯示檔案的內容，您可以在 Visual Studio 中執行大部分的編碼工作。
 
    ![Visual Studio 中的編輯器](media/editor.png)
 
 ## <a name="solution-explorer"></a>方案總管
 
-[方案總管]**** 一般位在 Visual Studio 右側，並示範以圖形呈現專案、方案或程式碼資料夾中的檔案和資料夾階層。 您可以流覽層次結構並導航到**解決方案資源管理器**中的檔。
+[方案總管]**** 一般位在 Visual Studio 右側，並示範以圖形呈現專案、方案或程式碼資料夾中的檔案和資料夾階層。 您可以流覽階層，並流覽至 **方案總管**中的檔案。
 
 ![Visual Studio 中的 [方案總管]](media/quickstart-IDE-solution-explorer.png)
 
@@ -123,15 +123,15 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 
 選擇 [檢視]**** 功能表，然後選擇 [錯誤清單]****，以開啟 [錯誤清單]**** 視窗。
 
-"**錯誤清單**"顯示有關代碼目前狀態的錯誤、警告和消息。 如果您的檔案中或專案中的任何位置有任何錯誤 (例如遺漏大括弧或分號)，則會在此處列出。
+**錯誤清單**會顯示有關您程式碼目前狀態的錯誤、警告和訊息。 如果您的檔案中或專案中的任何位置有任何錯誤 (例如遺漏大括弧或分號)，則會在此處列出。
 
 ![Visual Studio 中的錯誤清單](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>[輸出] 視窗
+## <a name="output-window"></a>輸出視窗
 
 [輸出]**** 視窗會顯示建置專案的輸出訊息以及來自原始檔控制提供者的輸出訊息。
 
-請建置專案以查看一些建置輸出。 在 **"生成"** 功能表中，選擇 **"生成解決方案**"。 **輸出**視窗會自動獲取焦點並顯示成功的生成消息。
+請建置專案以查看一些建置輸出。 從 [ **建立** ] 功能表中，選擇 [ **組建方案**]。 [ **輸出** ] 視窗會自動取得焦點並顯示成功的組建訊息。
 
 ![Visual Studio 中的輸出視窗](media/build-output-minimal.png)
 
@@ -141,7 +141,7 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 
 ::: moniker range="vs-2017"
 
-1. 在 IDE 右上角尋找 [快速啟動]**** 搜尋方塊。 （或者，按**Ctrl**+**Q**訪問它。
+1. 在 IDE 右上角尋找 [快速啟動]**** 搜尋方塊。  (或者，請按**Ctrl** + **Q**加以存取。 ) 
 
 2. 在搜尋方塊中，輸入**詳細資訊**。 從顯示的結果中，選擇 [選項]**** 類別下的 [專案和方案] --> [建置並執行]****。
 
@@ -153,7 +153,7 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 
 ::: moniker range=">=vs-2019"
 
-1. 按**Ctrl**+**Q**啟動 IDE 上部中的搜索框。
+1. 按**Ctrl** + **Q** ，啟動 IDE 上半部的 [搜尋] 方塊。
 
 2. 在搜尋方塊中，輸入**詳細資訊**。 從顯示的結果中，選擇 [變更 MSBuild 詳細資訊]****。
 
@@ -167,7 +167,7 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 
 4. 以滑鼠右鍵按一下 [方案總管]**** 中的 [ConsoleApp1]**** 專案，然後選擇操作功能表中的 [重建]****，以再次建置專案。
 
-   這一次，"**輸出"** 視窗顯示來自生成過程的更多詳細日誌記錄，包括哪些檔被覆制到何處。
+   此時，[ **輸出** ] 視窗會顯示來自組建程式的更多詳細資訊記錄，包括哪些檔案已複製到何處。
 
    ![Visual Studio 中的詳細資訊組建輸出](media/build-output-verbose.png)
 

@@ -1,5 +1,5 @@
 ---
-title: 更新使用選項按鈕的工作表中的圖表
+title: 使用選項按鈕更新工作表中的圖表
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,130 +14,130 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 86e289ad8a316f7026d6fda46bb3e424164437fb
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329005"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238812"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>逐步解說：使用選項按鈕更新工作表中的圖表
-  本逐步解說會示範使用 Microsoft Office Excel 工作表上的選項按鈕，以讓使用者快速切換選項之間的基本概念。 在此情況下，選項會變更圖表的樣式。
+  本逐步解說示範在 Microsoft Office Excel 工作表上使用選項按鈕的基本概念，讓使用者能夠在選項之間快速切換。 在此情況下，選項會變更圖表的樣式。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- 若要查看完整的範例結果，請參閱 Excel 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。
+ 若要以完整範例的形式查看結果，請參閱 [Office 開發範例和](../vsto/office-development-samples-and-walkthroughs.md)逐步解說中的 Excel 控制項範例。
 
- 這個逐步解說將說明下列工作：
+ 本逐步解說將說明下列工作：
 
-- 您可以將選項按鈕群組加入工作表。
+- 將一組選項按鈕加入至工作表。
 
 - 當選取選項時變更圖表樣式。
 
 > [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [個人化 VISUAL STUDIO IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
- 您需要下列元件才能完成此逐步解說：
+ 您需要下列元件才能完成這個逐步解說：
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
-## <a name="add-a-chart-to-a-worksheet"></a>將圖表加入至工作表
- 您可以建立自訂現有的活頁簿的 Excel 活頁簿專案。 在本逐步解說中，您會將圖表加入至活頁簿，然後再使用新的 Excel 方案中的 此活頁簿。 本逐步解說中的資料來源是名為的工作表**圖表資料**。
+## <a name="add-a-chart-to-a-worksheet"></a>將圖表新增至工作表
+ 您可以建立自訂現有活頁簿的 Excel 活頁簿專案。 在此逐步解說中，您會將圖表加入至活頁簿，然後在新的 Excel 方案中使用此活頁簿。 本逐步解說中的資料來源是一個名為 [圖表] 的 [ **資料**] 工作表。
 
-### <a name="to-add-the-data"></a>加入的資料
+### <a name="to-add-the-data"></a>若要加入資料
 
 1. 開啟 Microsoft Excel。
 
-2. 以滑鼠右鍵按一下**Sheet3**索引標籤，然後再按一下**重新命名**快顯功能表。
+2. 以滑鼠右鍵按一下 [ **Sheet3** ] 索引標籤，然後按一下快捷方式功能表上的 [ **重新命名** ]。
 
-3. 重新命名工作表以**圖表資料**。
+3. 將工作表重新命名為 **圖表的資料**。
 
-4. 新增下列資料以**圖表資料**使用 A4 的儲存格的左上角和 E8 右下角。
+4. 將下列資料新增至 [圖表] 的 **資料** ，其中的 [儲存格 A4] 是左上角，並 E8 右下角。
 
-   ||Q1|Q2|Q3|Q4|
+   |區域/季|Q1|Q2|Q3|Q4|
    |-|--------|--------|--------|--------|
-   |西部|500|550|550|600|
-   |東部|600|625|675|700|
-   |中北部|450|470|490|510|
-   |南部|800|750|775|790|
+   |West|500|550|550|600|
+   |東|600|625|675|700|
+   |北|450|470|490|510|
+   |南|800|750|775|790|
 
-   接下來，將圖表加入要顯示資料的第一個工作表。
+   接下來，將圖表加入至第一個工作表以顯示資料。
 
 ### <a name="to-add-a-chart-in-excel"></a>若要在 Excel 中加入圖表
 
-1. 在上**插入**索引標籤**圖表**群組中，按一下**資料行**，然後按一下**所有圖表類型**。
+1. 在 [ **插入** ] 索引標籤的 [ **圖表** ] 群組中，按一下 [資料 **行**]，然後按一下 [ **所有圖表類型**]。
 
-2. 在 [**插入圖表**] 對話方塊中，按一下**確定**。
+2. 在 [ **插入圖表** ] 對話方塊中，按一下 **[確定]**。
 
-3. 在 **設計**索引標籤中，於**資料**群組中，按一下**選取資料**。
+3. 在 [ **設計** ] 索引標籤的 [ **資料** ] 群組中，按一下 [ **選取資料**]。
 
-4. 在 **選取資料來源**對話方塊中，按一下**Chartdata 範圍**方塊，然後清除任何預設選取項目。
+4. 在 [ **選取資料來源** ] 對話方塊中，按一下 [ **Chartdata 範圍** ] 方塊，並清除任何預設選項。
 
-5. 在 **圖表資料**工作表中，選取包含數字，其中包括 A4 左上角到 E8 右下角中的資料格區塊。
+5. 在圖表工作表的 [ **資料** ] 中，選取包含數位的儲存格區塊，其中包含在右下角 E8 的左上角的 A4。
 
-6. 在 [**選取資料來源**] 對話方塊中，按一下**確定**。
+6. 在 [ **選取資料來源** ] 對話方塊中，按一下 **[確定]**。
 
-7. 調整圖表的位置，以便配合儲存格的右上角**E2**。
+7. 重新置放圖表，讓右上角與儲存格 **E2**對齊。
 
-8. 將檔案儲存到 C 磁碟機並將它命名**ExcelChart.xlsx**。
+8. 將檔案儲存至 C 磁片磁碟機，並將它命名為 **ExcelChart.xlsx**。
 
 9. 結束 Excel。
 
 ## <a name="create-a-new-project"></a>建立新專案
- 在此步驟中，您將建立的 Excel 活頁簿專案，根據**ExcelChart**活頁簿。
+ 在此步驟中，您將根據 **ExcelChart** 活頁簿建立 Excel 活頁簿專案。
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 建立 Excel 活頁簿專案同名**我的 Excel 圖表**。 在精靈中，選取**複製現有文件**。
+1. 建立名為 **My Excel Chart**的 Excel 活頁簿專案。 在嚮導中，選取 [ **複製現有檔**]。
 
-     如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-2. 按一下 **瀏覽**按鈕並瀏覽至您稍早在本逐步解說中建立的活頁簿。
+2. 按一下 [ **流覽]** 按鈕，然後流覽至您稍早在本逐步解說中建立的活頁簿。
 
-3. 按一下 [確定]  。
+3. 按一下 [確定]。
 
-     Visual Studio 設計工具中開啟新的 Excel 活頁簿，並將**我的 Excel 圖表**專案加入**方案總管 中**。
+     Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 **我的 Excel 圖表** 專案加入 **方案總管**。
 
-## <a name="set-properties-of-the-chart"></a>設定屬性的圖表
- 當您建立新的 Excel 活頁簿專案，會使用現有的活頁簿時，主控制項會自動建立所有具名的範圍、 list 物件和活頁簿中的圖表。 您可以變更的名稱<xref:Microsoft.Office.Tools.Excel.Chart>使用的控制項**屬性**視窗。
+## <a name="set-properties-of-the-chart"></a>設定圖表的屬性
+ 當您建立使用現有活頁簿的新 Excel 活頁簿專案時，會自動為活頁簿中的所有已命名範圍、清單物件和圖表建立主控制項。 您可以 <xref:Microsoft.Office.Tools.Excel.Chart> 使用 [ **屬性** ] 視窗來變更控制項的名稱。
 
-### <a name="to-change-the-name-of-the-chart-control"></a>若要變更圖表控制項的名稱
+### <a name="to-change-the-name-of-the-chart-control"></a>若要變更 Chart 控制項的名稱
 
-1. 選取 <xref:Microsoft.Office.Tools.Excel.Chart>控制項設計工具中，並變更下列屬性中的**屬性**視窗。
+1. <xref:Microsoft.Office.Tools.Excel.Chart>在設計工具中選取控制項，然後在 [**屬性**] 視窗中變更下列屬性。
 
     |屬性|值|
     |--------------|-----------|
     |**名稱**|**dataChart**|
     |**HasLegend**|**false**|
 
-## <a name="add-controls"></a>加入控制項
- 此工作表會使用選項按鈕，讓使用者快速變更圖表樣式的方式。 不過，必須是獨佔的選項按鈕 — 選取一個按鈕時，可以同時選取 沒有其他群組中的按鈕。 此行為不會根據預設，當您將數個選項按鈕新增至工作表。
+## <a name="add-controls"></a>新增控制項
+ 此工作表使用選項按鈕，讓使用者能夠快速變更圖表樣式。 不過，選項按鈕必須是獨佔的，當選取一個按鈕時，就不能同時選取群組中的其他按鈕。 當您將數個選項按鈕加入工作表時，預設不會發生這種行為。
 
- 加入此行為是將使用者控制項上的，選項按鈕的一種方法撰寫使用者控制項，背後的程式碼，然後將使用者控制項加入工作表。
+ 加入此行為的其中一種方式是將使用者控制項的選項按鈕分組，並在使用者控制項後方撰寫程式碼，然後將使用者控制項加入工作表中。
 
 ### <a name="to-add-a-user-control"></a>若要加入使用者控制項
 
-1. 選取 [**我的 Excel 圖表**專案中**方案總管] 中**。
+1. 在**方案總管**中選取 [**我的 Excel 圖表**] 專案。
 
-2. 在 [專案]  功能表中，按一下 [加入新項目]  。
+2. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
 
-3. 在**加入新項目** 對話方塊中，按一下**使用者控制項**，將控制項**ChartOptions，** 然後按一下**新增**。
+3. 在 [ **加入新專案** ] 對話方塊中，按一下 [ **使用者控制項**]，將控制項命名為 **ChartOptions，** 然後按一下 [ **新增**]。
 
-### <a name="to-add-radio-buttons-to-the-user-control"></a>若要加入至使用者控制項的選項按鈕
+### <a name="to-add-radio-buttons-to-the-user-control"></a>若要將選項按鈕加入至使用者控制項
 
-1. 如果設計工具中看不到 [使用者控制項，請按兩下**ChartOptions**中**方案總管] 中**。
+1. 如果在設計工具中看不到使用者控制項，請按兩下**方案總管**中的 [ **ChartOptions** ]。
 
-2. 從**通用控制項**索引標籤**工具箱**，拖曳**圓鈕**控制項至使用者控制項，並變更下列屬性。
+2. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤中，將**選項按鈕**控制項拖曳至使用者控制項，並變更下列屬性。
 
    | 屬性 | 值 |
    |----------|------------------|
    | **名稱** | **columnChart** |
    | **Text** | **直條圖** |
 
-3. 將第二個按鈕加入至使用者控制項，並變更下列屬性。
+3. 將第二個選項按鈕加入至使用者控制項，並變更下列屬性。
 
    | 屬性 | 值 |
    |----------|---------------|
@@ -151,28 +151,28 @@ ms.locfileid: "67329005"
    | **名稱** | **lineChart** |
    | **Text** | **折線圖** |
 
-5. 第四個按鈕加入使用者控制項，並變更下列屬性。
+5. 將第四個選項按鈕加入至使用者控制項，並變更下列屬性。
 
    |屬性|值|
    |--------------|-----------|
    |**名稱**|**areaBlockChart**|
    |**Text**|**區塊圖**|
 
-   接下來，撰寫程式碼來更新圖表，按一下選項按鈕時。
+   接下來，撰寫程式碼，以在按一下選項按鈕時更新圖表。
 
-## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>選取選項按鈕時，變更圖表樣式
- 現在您可以加入程式碼來變更圖表樣式。 若要這樣做，建立使用者控制項上的公用事件、 加入屬性以設定選取項目類型，以及建立事件處理常式`CheckedChanged`選項按鈕的每個事件。
+## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>在選取選項按鈕時變更圖表樣式
+ 現在您可以加入程式碼來變更圖表樣式。 若要這麼做，請在使用者控制項上建立公用事件、加入屬性來設定選取類型，以及為 `CheckedChanged` 每個選項按鈕的事件建立事件處理常式。
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>在使用者控制項上建立事件和屬性
 
-1. 在 **方案總管**，以滑鼠右鍵按一下 使用者控制項，然後按一下 **檢視程式碼**。
+1. 在 **方案總管**中，以滑鼠右鍵按一下使用者控制項，然後按一下 [ **查看程式碼**]。
 
-2. 將程式碼加入`ChartOptions`類別來建立`SelectionChanged`事件和`Selection`屬性。
+2. 將程式碼加入至 `ChartOptions` 類別，以建立 `SelectionChanged` 事件和 `Selection` 屬性。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#13)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#13)]
 
-### <a name="to-handle-the-checkedchanged-event-of-the-radio-buttons"></a>若要處理的選項按鈕 CheckedChanged 事件
+### <a name="to-handle-the-checkedchanged-event-of-the-radio-buttons"></a>若要處理選項按鈕的 CheckedChanged 事件
 
 1. 在 `CheckedChanged` 選項按鈕的 `areaBlockChart` 事件處理常式中設定圖表類型，然後再引發事件。
 
@@ -194,60 +194,60 @@ ms.locfileid: "67329005"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]
 
-5. 在 C# 中，您必須為選項按鈕加入事件處理常式。 您可以將程式碼加入至 `ChartOptions` 建構函式，放在 `InitializeComponent` 的呼叫下方。 如需有關如何建立事件處理常式的資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。
+5. 在 C# 中，您必須為選項按鈕加入事件處理常式。 您可以將程式碼加入至 `ChartOptions` 建構函式，放在 `InitializeComponent` 的呼叫下方。 如需如何建立事件處理常式的詳細資訊，請參閱 [如何：在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]
 
-## <a name="add-the-user-control-to-the-worksheet"></a>將使用者控制項加入工作表
- 當您建置方案時，新的使用者控制項會自動新增至**工具箱**。 然後，您可以將控制項從**工具箱**加入工作表。
+## <a name="add-the-user-control-to-the-worksheet"></a>將使用者控制項新增至工作表
+ 當您建立方案時，會自動將新的使用者控制項加入 [ **工具箱**] 中。 然後，您可以將控制項從 [ **工具箱** ] 拖曳至工作表。
 
 ### <a name="to-add-the-user-control-your-worksheet"></a>若要將使用者控制項加入工作表
 
-1. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
+1. 在 [建置] 功能表上，按一下 [建置方案]。
 
-     **ChartOptions**使用者控制項加入至**工具箱**。
+     **ChartOptions**使用者控制項會加入 [**工具箱**] 中。
 
-2. 在 [**方案總管] 中**，以滑鼠右鍵按一下**Sheet1.vb**或**Sheet1.cs**，然後按一下**檢視表設計工具**。
+2. 在 **方案總管**中，以滑鼠右鍵按一下 [ **Sheet1 .vb** ] 或 [ **Sheet1.cs**]，然後按一下 [ **視圖設計**工具]。
 
-3. 拖曳**ChartOptions**控制從**工具箱**至工作表。
+3. 將 [ **ChartOptions** ] 控制項從 [ **工具箱** ] 拖曳至工作表。
 
-     新的控制項，名為`my_Excel_Chart_ChartOptions1`加入至專案。
+     系統會將名為的新控制項 `my_Excel_Chart_ChartOptions1` 加入至您的專案。
 
-4. 變更控制項的名稱**ChartOptions1**。
+4. 將控制項的 [名稱] 變更為 **ChartOptions1**。
 
 ## <a name="change-the-chart-type"></a>變更圖表類型
- 若要變更圖表類型，建立事件處理常式，以設定使用者控制項中選取的選項根據樣式。
+ 若要變更圖表類型，請建立事件處理常式，根據使用者控制項中選取的選項來設定樣式。
 
-### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-worksheet"></a>若要變更的工作表中顯示的圖表類型
+### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-worksheet"></a>若要變更工作表中顯示的圖表類型
 
 1. 將下列事件處理常式加入至 `Sheet1` 類別。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]
 
-2. 在 C# 中，您必須將使用者控制項的事件處理常式<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>事件，如下所示。 如需有關如何建立事件處理常式的資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。
+2. 在 c # 中，您必須將使用者控制項的事件處理常式新增至事件，如下 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 所示。 如需如何建立事件處理常式的詳細資訊，請參閱 [如何：在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]
 
 ## <a name="test-the-application"></a>測試應用程式
- 您現在可以測試您的活頁簿，以確認當您選取的選項按鈕時，圖表會正確套用樣式。
+ 您現在可以測試您的活頁簿，以確認當您選取選項按鈕時，圖表的樣式是否正確。
 
 ### <a name="to-test-your-workbook"></a>測試您的活頁簿
 
-1. 按下**F5**執行您的專案。
+1. 按 **F5** 執行您的專案。
 
 2. 選取不同的選項按鈕。
 
 3. 確認圖表樣式的變更與所選的項目相符。
 
 ## <a name="next-steps"></a>後續步驟
- 本逐步解說會示範在工作表上使用選項按鈕和圖表樣式的基本概念。 接著可以執行下列一些工作：
+ 本逐步解說顯示在工作表上使用選項按鈕和圖表樣式的基本概念。 接著可以執行下列一些工作：
 
-- 部署專案。 如需詳細資訊，請參閱 <<c0> [ 部署 Office 方案](../vsto/deploying-an-office-solution.md)。
+- 部署專案。 如需詳細資訊，請參閱 [部署 Office 方案](../vsto/deploying-an-office-solution.md)。
 
-- 使用按鈕填入文字方塊。 如需詳細資訊，請參閱[逐步解說：使用按鈕在工作表中的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)。
+- 使用按鈕填入文字方塊。 如需詳細資訊，請參閱 [逐步解說：使用按鈕在工作表的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)。
 
-- 變更格式化工作表上使用核取方塊。 如需詳細資訊，請參閱[逐步解說：變更工作表使用核取方塊控制項的格式化](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。
+- 使用核取方塊變更工作表的格式。 如需詳細資訊，請參閱 [逐步解說：使用 CheckBox 控制項來變更工作表格式](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)

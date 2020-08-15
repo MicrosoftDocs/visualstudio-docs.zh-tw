@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d80a8d2ab334495daac4d82fe5c8faa2ad04683d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544244"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238240"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>在特定領域語言定義中新增追蹤屬性
 
@@ -24,9 +24,9 @@ ms.locfileid: "85544244"
 
 *追蹤定義域*屬性是使用者可以更新的屬性，但其預設值是使用其他定義域屬性或專案的值來計算。
 
-例如，在特定領域語言工具（DSL 工具）中，網域類別的 [顯示名稱] 屬性具有使用網域類別的名稱來計算的預設值，但使用者可以在設計階段變更值，或將它重設為計算值。
+例如，在特定領域語言工具 (DSL 工具) 中，網域類別的 [顯示名稱] 屬性具有使用網域類別的名稱來計算的預設值，但使用者可以在設計階段變更值，或將它重設為計算值。
 
-在此逐步解說中，您會根據模型的 [預設命名空間] 屬性，建立具有命名空間追蹤屬性的特定領域語言（DSL）。 如需追蹤屬性的詳細資訊，請參閱[定義追蹤屬性](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。
+在此逐步解說中，您會根據模型的 [預設命名空間] 屬性，建立具有命名空間追蹤屬性 (DSL) 的特定領域語言。 如需追蹤屬性的詳細資訊，請參閱 [定義追蹤屬性](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。
 
 - DSL 工具支援追蹤屬性描述項。 不過，DSL 設計工具無法用來將追蹤屬性新增至語言。 因此，您必須加入自訂程式碼來定義和執行追蹤屬性。
 
@@ -36,17 +36,17 @@ ms.locfileid: "85544244"
 
 - 當在使用者狀態更新時，追蹤屬性的值會保留使用者上次設定屬性的值。
 
-- 在 [**屬性**] 視窗中，只有當屬性位於 [已更新的使用者] 狀態時，才會啟用 [追蹤] 屬性的 [**重設**] 命令。 **Reset**命令會將追蹤屬性狀態設定為追蹤。
+- 在 [ **屬性** ] 視窗中，只有當屬性位於 [已更新的使用者] 狀態時，才會啟用 [追蹤] 屬性的 [ **重設** ] 命令。 **Reset**命令會將追蹤屬性狀態設定為追蹤。
 
-- 在 [**屬性**] 視窗中，當追蹤屬性處於追蹤狀態時，其值會以一般字型顯示。
+- 在 [ **屬性** ] 視窗中，當追蹤屬性處於追蹤狀態時，其值會以一般字型顯示。
 
-- 在 [**屬性**] 視窗中，當追蹤屬性位於 [已更新的使用者] 狀態時，其值會以粗體字顯示。
+- 在 [ **屬性** ] 視窗中，當追蹤屬性位於 [已更新的使用者] 狀態時，其值會以粗體字顯示。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 開始進行本逐步解說之前，您必須先安裝下列元件：
 
-| | |
+| 元件 | 連結 |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
@@ -54,9 +54,9 @@ ms.locfileid: "85544244"
 
 ## <a name="create-the-project"></a>建立專案
 
-1. 建立特定領域語言設計工具專案。 請命名為 `TrackingPropertyDSL`。
+1. 建立特定領域語言設計工具專案。 將它命名為 `TrackingPropertyDSL`
 
-2. 在 [**網域指定的語言設計工具]** 中，設定下列選項：
+2. 在 [ **網域指定的語言設計工具]** 中，設定下列選項：
 
     1. 選取 [ **MinimalLanguage** ] 範本。
 
@@ -89,53 +89,53 @@ ms.locfileid: "85544244"
 
 ### <a name="to-add-the-domain-properties"></a>新增網域屬性
 
-1. 在 DSL 設計工具中，以滑鼠右鍵按一下 [ **examplemodel.store.customer** ] 網域類別，指向 [**新增**]，然後按一下 [ **DomainProperty**]。
+1. 在 DSL 設計工具中，以滑鼠右鍵按一下 [ **examplemodel.store.customer** ] 網域類別，指向 [ **新增**]，然後按一下 [ **DomainProperty**]。
 
     1. 將新屬性命名為 `DefaultNamespace` 。
 
-    2. 在新屬性的 [**屬性**] 視窗中，將 [**預設值**] 設定為 `DefaultNamespace` ，並將 [**類型**] 設定為 [**字串**]。
+    2. 在新屬性的 [ **屬性** ] 視窗中，將 [ **預設值** ] 設定為 `DefaultNamespace` ，並將 [ **類型** ] 設定為 [ **字串**]。
 
-2. 在**examplemodel.store.customer**網域類別中，新增名為的網域屬性 `CustomElements` 。
+2. 在 **examplemodel.store.customer** 網域類別中，新增名為的網域屬性 `CustomElements` 。
 
-     在新屬性的 [**屬性**] 視窗中，將 [**類型**] 設定為 [**計算**]。
+     在新屬性的 [ **屬性** ] 視窗中，將 [ **類型** ] 設定為 [ **計算**]。
 
-3. 在**ExampleElement**網域類別中，新增名為的網域屬性 `Namespace` 。
+3. 在 **ExampleElement** 網域類別中，新增名為的網域屬性 `Namespace` 。
 
-     在新屬性的 [**屬性**] 視窗中，將 [**可流覽**] 設定為 [ **False**]，並將 [**類型**] 設定為**CustomStorage**。
+     在新屬性的 [ **屬性** ] 視窗中，將 [ **可流覽** ] 設定為 [ **False**]，並將 [ **類型** ] 設定為 **CustomStorage**。
 
-4. 在**ExampleElement**網域類別中，新增名為的網域屬性 `IsNamespaceTracking` 。
+4. 在 **ExampleElement** 網域類別中，新增名為的網域屬性 `IsNamespaceTracking` 。
 
      在新屬性的 [**屬性**] 視窗中，將 [**可流覽**] 設定為 [ **False**]、將 [**預設值**] 設定為 `true` ，並將 [**類型**] 設定為**布林**
 
 ### <a name="to-update-the-diagram-elements-and-dsl-details"></a>更新圖表元素和 DSL 詳細資料
 
-1. 在 [DSL 設計工具] 中，以滑鼠右鍵按一下 [ **ExampleShape** geometry] 圖形，指向 [**加入**]，然後按一下 [**文字**裝飾專案]。
+1. 在 [DSL 設計工具] 中，以滑鼠右鍵按一下 [ **ExampleShape** geometry] 圖形，指向 [ **加入**]，然後按一下 [ **文字**裝飾專案]。
 
     1. 為新的文字裝飾專案命名 `NamespaceDecorator` 。
 
-    2. 在文字裝飾專案的 [**屬性**] 視窗中，將 [**位置**] 設定為**InnerBottomLeft**。
+    2. 在文字裝飾專案的 [ **屬性** ] 視窗中，將 [ **位置** ] 設定為 **InnerBottomLeft**。
 
-2. 在 [DSL 設計工具] 中，選取將**ExampleElement**類別連接至 [ **ExampleShape** ] 圖形的線條。
+2. 在 [DSL 設計工具] 中，選取將 **ExampleElement** 類別連接至 [ **ExampleShape** ] 圖形的線條。
 
-    1. 在 [ **DSL 詳細資料**] 視窗中，選取 [裝飾專案**對應**] 索引標籤。
+    1. 在 [ **DSL 詳細資料** ] 視窗中，選取 [裝飾專案 **對應** ] 索引標籤。
 
-    2. 在 [**裝飾專案**] 清單中，選取 [ **NamespaceDecorator**]，選取其核取方塊，然後在 [**顯示內容**] 清單中，選取 [**命名空間**]。
+    2. 在 [ **裝飾專案** ] 清單中，選取 [ **NamespaceDecorator**]，選取其核取方塊，然後在 [ **顯示內容** ] 清單中，選取 [ **命名空間**]。
 
-3. 在 [ **DSL Explorer**] 中，展開 [**網域類別**] 資料夾，以滑鼠右鍵按一下 [ **ExampleElement** ] 節點，然後按一下 [**加入新的定義欄位型別描述**元]。
+3. 在 [ **DSL Explorer**] 中，展開 [ **網域類別** ] 資料夾，以滑鼠右鍵按一下 [ **ExampleElement** ] 節點，然後按一下 [ **加入新的定義欄位型別描述**元]。
 
-    1. 展開 [ **ExampleElement** ] 節點，然後選取 [**自訂類型描述項（網欄位型別描述項）** ] 節點。
+    1. 展開 [ **ExampleElement** ] 節點，然後選取 [ **自訂類型描述元] ([網欄位型別描述元) ** ] 節點。
 
-    2. 在網欄位型別描述元的 [**屬性**] 視窗中，將 [**自訂編碼**] 設定為**True**。
+    2. 在網欄位型別描述元的 [ **屬性** ] 視窗中，將 [ **自訂編碼** ] 設定為 **True**。
 
-4. 在 [ **DSL Explorer**] 中，選取 [ **Xml 序列化行為**] 節點。
+4. 在 [ **DSL Explorer**] 中，選取 [ **Xml 序列化行為** ] 節點。
 
-    1. 在 [**屬性**] 視窗中，將 [**自訂 Post 載入**] 設定為 [ **True**]。
+    1. 在 [ **屬性** ] 視窗中，將 [ **自訂 Post 載入** ] 設定為 [ **True**]。
 
 ## <a name="transform-templates"></a>轉換範本
 
 現在您已定義 DSL 的網域類別和屬性，您可以確認 DSL 定義可以正確轉換，以重新產生專案的程式碼。
 
-1. 在 [**方案總管**] 工具列上，按一下 [**轉換所有範本**]。
+1. 在 [ **方案總管** ] 工具列上，按一下 [ **轉換所有範本**]。
 
 2. 系統會重新產生解決方案的程式碼，並儲存 Dsldefinition.dsl 檔。 如需定義檔之 XML 格式的詳細資訊，請參閱[dsldefinition.dsl 檔。](../modeling/the-dsldefinition-dsl-file.md)
 
@@ -145,17 +145,17 @@ ms.locfileid: "85544244"
 
 您必須提供程式碼來維護追蹤屬性的值和狀態。 為了協助您區分自訂程式碼與產生的程式碼，以及避免檔案命名衝突，請將自訂程式碼檔案放在不同的子資料夾中。
 
-1. 在**方案總管**中，以滑鼠右鍵按一下**DSL**專案，指向 [**加入**]，然後按一下 [**新增資料夾**]。 將新資料夾命名為 `CustomCode` 。
+1. 在 **方案總管**中，以滑鼠右鍵按一下 **DSL** 專案，指向 [ **加入**]，然後按一下 [ **新增資料夾**]。 將新資料夾命名為 `CustomCode` 。
 
-2. 以滑鼠右鍵按一下新的 [ **CustomCode** ] 資料夾，指向 [**加入**]，然後按一下 [**新增專案**]。
+2. 以滑鼠右鍵按一下新的 [ **CustomCode** ] 資料夾，指向 [ **加入**]，然後按一下 [ **新增專案**]。
 
-3. 選取 [程式**代碼**檔案] 範本，將 [**名稱**] 設定為 `NamespaceTrackingProperty.cs` ，然後按一下 **[確定]**。
+3. 選取 [程式 **代碼** 檔案] 範本，將 [ **名稱** ] 設定為 `NamespaceTrackingProperty.cs` ，然後按一下 **[確定]**。
 
      隨即會建立並開啟 NamespaceTrackingProperty.cs 檔案以供編輯。
 
 4. 在資料夾中，建立下列程式碼檔案： `ExampleModel.cs,``HelperClasses.cs` 、 `Serialization.cs` 和 `TypeDescriptor.cs` 。
 
-5. 在**DslPackage**專案中，同時建立 `CustomCode` 資料夾，並將它新增至程式 `Package.cs` 代碼檔案。
+5. 在 **DslPackage** 專案中，同時建立 `CustomCode` 資料夾，並將它新增至程式 `Package.cs` 代碼檔案。
 
 ## <a name="add-helper-classes-to-support-tracking-properties"></a>新增 Helper 類別以支援追蹤屬性
 
@@ -243,7 +243,7 @@ ms.locfileid: "85544244"
 > [!NOTE]
 > DSL 工具針對呼叫的自訂類型描述元產生的程式 `ExampleModel` 代碼 `GetCustomProperties` ; 不過，dsl 工具不會產生可執行方法的程式碼。
 
-定義這個方法會建立命名空間追蹤屬性的追蹤屬性描述元。 此外，提供追蹤屬性的屬性，可讓 [**屬性**] 視窗正確地顯示內容。
+定義這個方法會建立命名空間追蹤屬性的追蹤屬性描述元。 此外，提供追蹤屬性的屬性，可讓 [ **屬性** ] 視窗正確地顯示內容。
 
 ### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>若要修改 Examplemodel.store.customer 網域類別的類型描述元
 
@@ -718,41 +718,41 @@ ms.locfileid: "85544244"
 
 1. 在 [建置]**** 功能表上，按一下 [重建方案]****。
 
-2. 在 [**調試**] 功能表上，按一下 [**開始調試**]。
+2. 在 **[偵錯]** 功能表上，按一下 **[開始偵錯]** 。
 
-    的實驗性組建 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 會開啟「**調試**程式」方案，其中包含空的測試檔案。
+    的實驗性組建 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 會開啟「 **調試** 程式」方案，其中包含空的測試檔案。
 
-3. 在**方案總管**中，按兩下 trackingPropertyDsl 檔案，在設計工具中開啟該檔案，然後按一下設計介面。
+3. 在 **方案總管**中，按兩下 trackingPropertyDsl 檔案，在設計工具中開啟該檔案，然後按一下設計介面。
 
-    請注意，在圖表的 [**屬性**] 視窗中，[**預設命名空間**] 屬性為 [ **DefaultNamespace**]，而 [**自訂元素**] 屬性為**0/0**。
+    請注意，在圖表的 [ **屬性** ] 視窗中，[ **預設命名空間** ] 屬性為 [ **DefaultNamespace**]，而 [ **自訂元素** ] 屬性為 **0/0**。
 
-4. 將 [ **ExampleElement** ] 元素從 [**工具箱**] 拖曳至圖表介面。
+4. 將 [ **ExampleElement** ] 元素從 [ **工具箱** ] 拖曳至圖表介面。
 
-5. 在專案的 [**屬性**] 視窗中，選取 [**元素命名空間**] 屬性，並將值從**DefaultNamespace**變更為**OtherNamespace**。
+5. 在專案的 [ **屬性** ] 視窗中，選取 [ **元素命名空間** ] 屬性，並將值從 **DefaultNamespace** 變更為 **OtherNamespace**。
 
-    請注意，**元素命名空間**的值現在會以粗體顯示。
+    請注意， **元素命名空間** 的值現在會以粗體顯示。
 
-6. 在 [**屬性**] 視窗中，以滑鼠右鍵按一下 [**元素命名空間**]，然後按一下 [**重設**]。
+6. 在 [ **屬性** ] 視窗中，以滑鼠右鍵按一下 [ **元素命名空間**]，然後按一下 [ **重設**]。
 
-    屬性的值會變更為**DefaultNamespace**，而此值會以一般字型顯示。
+    屬性的值會變更為 **DefaultNamespace**，而此值會以一般字型顯示。
 
-    再次以滑鼠右鍵按一下 [**元素命名空間**]。 現在已停用**重設**命令，因為屬性目前處於追蹤狀態。
+    再次以滑鼠右鍵按一下 [ **元素命名空間** ]。 現在已停用 **重設** 命令，因為屬性目前處於追蹤狀態。
 
-7. 將另一個**ExampleElement**從 [**工具箱**] 拖曳至圖表介面，並將其**元素命名空間**變更為 [ **OtherNamespace**]。
+7. 將另一個 **ExampleElement** 從 [ **工具箱** ] 拖曳至圖表介面，並將其 **元素命名空間** 變更為 [ **OtherNamespace**]。
 
 8. 按一下設計介面。
 
-    在圖表的 [**屬性**] 視窗中，**自訂元素**的值現在是**1/2**。
+    在圖表的 [ **屬性** ] 視窗中， **自訂元素** 的值現在是 **1/2**。
 
-9. 將圖表的**預設命名空間**從**DefaultNamespace**變更為**NewNamespace**。
+9. 將圖表的 **預設命名空間** 從 **DefaultNamespace** 變更為 **NewNamespace**。
 
-     第一個專案的**命名空間**會追蹤**預設命名空間**屬性，而第二個元素的**命名空間**會保留其使用者更新的**OtherNamespace**值。
+     第一個專案的 **命名空間** 會追蹤 **預設命名空間** 屬性，而第二個元素的 **命名空間** 會保留其使用者更新的 **OtherNamespace**值。
 
 10. 儲存方案，然後關閉實驗性組建。
 
 ## <a name="next-steps"></a>後續步驟
 
-如果您打算使用一個以上的追蹤屬性，或在多個 DSL 中執行追蹤屬性，您可以建立文字模板來產生支援每個追蹤屬性的通用程式碼。 如需文字模板的詳細資訊，請參閱程式[代碼產生和 T4 文字模板](../modeling/code-generation-and-t4-text-templates.md)。
+如果您打算使用一個以上的追蹤屬性，或在多個 DSL 中執行追蹤屬性，您可以建立文字模板來產生支援每個追蹤屬性的通用程式碼。 如需文字模板的詳細資訊，請參閱程式 [代碼產生和 T4 文字模板](../modeling/code-generation-and-t4-text-templates.md)。
 
 ## <a name="see-also"></a>另請參閱
 

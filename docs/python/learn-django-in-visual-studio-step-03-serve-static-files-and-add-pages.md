@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc87c4690978d33f6fdc8e0f5bc937cb16e6e915
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 748f941d5a8f257b3765b06651ff3244793e0123
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85279805"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238526"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，然後使用範本繼承
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>步驟3：提供靜態檔案、新增頁面，以及搭配 Django 應用程式使用範本繼承
 
 **上一個步驟：[使用檢視與頁面範本來建立 Django 應用程式](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
@@ -65,7 +65,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 1. 在 [方案總管]**** 中，以滑鼠右鍵按一下 Visual Studio 專案的 **HelloDjangoApp** 資料夾，選取 [新增]**** > [新增資料夾]****，並將資料夾命名為 `static`。
 
-1. 以滑鼠右鍵按一下 **static** 資料夾，並選取 [新增]**** > [新增項目]****。 在出現的對話方塊中，選取 [**樣式**表單] 範本，將檔案命名為 `site.css` ，然後選取 **[確定]**。 **site.css** 檔案會出現在專案中，並在編輯器中開啟。 您的資料夾結構應該與下列影像類似：
+1. 以滑鼠右鍵按一下 **static** 資料夾，並選取 [新增]**** > [新增項目]****。 在出現的對話方塊中，選取 [ **樣式** 表單] 範本，將檔案命名為 `site.css` ，然後選取 **[確定]**。 **site.css** 檔案會出現在專案中，並在編輯器中開啟。 您的資料夾結構應該與下列影像類似：
 
     ![方案總管中所顯示的靜態檔案結構](media/django/step03-static-file-structure.png)
 
@@ -180,7 +180,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 1. 執行專案以觀察結果並檢查頁面之間的瀏覽。 完成時，關閉伺服器。
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>問題：我嘗試使用 "index" (索引) 於首頁連結，但無法運作。 為什麼？
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>問題：我嘗試使用 "index" (索引) 於首頁連結，但無法運作。 原因為何？
 
 答：雖然在 *views.py* 中的檢視函式的名稱是 `index`，但是 Django 專案中 *urls.py* 檔案的 URL 路由模式並不包含符合 "index" (索引) 字串的規則運算式。 若要符合該字串，您必須為 `^index$` 模式新增另一個項目。
 

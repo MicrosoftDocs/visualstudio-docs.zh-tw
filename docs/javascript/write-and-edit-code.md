@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453759"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238176"
 ---
-# <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
+# <a name="learn-to-use-the-code-editor-for-javascript"></a>瞭解如何使用 JavaScript 的程式碼編輯器
 
 在這個 Visual Studio 程式碼編輯器簡介中，我們將探討 Visual Studio 讓撰寫、巡覽和了解程式碼更加輕鬆的一些方式。
 
 > [!TIP]
-> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面免費進行安裝。 根據您執行的應用程式開發類型，您可能需要安裝 Visual Studio 隨附的 **Node.js 開發工作負載**。 如需取得 TypeScript 語言服務的詳細資訊，請參閱[typescript 支援](../javascript/javascript-in-vs-2019.md#typescript-support)。
+> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面免費進行安裝。 根據您執行的應用程式開發類型，您可能需要安裝 Visual Studio 隨附的 **Node.js 開發工作負載**。 如需取得 TypeScript 語言服務的詳細資訊，請參閱 [typescript 支援](../javascript/javascript-in-vs-2019.md#typescript-support)。
 
 本文假設您已熟悉 JavaScript 開發。 如果您不熟悉，建議您先瀏覽教學課程 (例如[建立 Node.js 和 Express 應用程式](../javascript/tutorial-nodejs.md))。
 
@@ -30,7 +30,7 @@ ms.locfileid: "87453759"
 
 您可以使用 IDE 將新檔案新增至您的專案。
 
-1. 當您的專案在 Visual Studio 中開啟時，以滑鼠右鍵按一下方案總管（右窗格）中的資料夾或專案節點，然後選擇 [**加入**  >  **新專案**]。
+1. 當您的專案在 Visual Studio 中開啟時，以滑鼠右鍵按一下方案總管 (右窗格) 中的資料夾或專案節點，然後選擇 [**加入**  >  **新專案**]。
 
 1. 在 [新增檔案]**** 對話方塊的 [一般]**** 類別下，選擇您要新增的檔案類型 (例如 [JavaScript 檔案]****)，然後選擇 [開啟]****。
 
@@ -66,7 +66,7 @@ IntelliSense 是您撰寫程式碼時的重要資源。 它可以顯示類型可
 
 您可以在 `"data"` 前面新增逗號 (`,`) 來修正此程式碼。
 
-如需 linting 的詳細資訊，請參閱[linting](https://github.com/microsoft/JSTSdocs/blob/master/articles/editor/linting.md)。
+如需 linting 的詳細資訊，請參閱 [linting](https://github.com/microsoft/JSTSdocs/blob/master/articles/editor/linting.md)。
 
 ## <a name="comment-out-code"></a>註解化程式碼
 
@@ -86,7 +86,7 @@ JavaScript 註解字元 `//` 會新增至每個選取行的開頭，為程式碼
 
 ## <a name="view-definitions"></a>檢視定義
 
-Visual Studio 編輯器可讓您輕鬆檢查類型、函數等的定義。其中一種方式是流覽至包含定義的檔案，例如，在參考程式設計項目的任何位置選擇 [**移至定義**]。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看下列範例中 `render` 方法的定義。
+Visual Studio 編輯器可讓您輕鬆檢查類型、函數等的定義。其中一種方式是流覽至包含定義的檔案，例如，在參考程式設計項目的任何位置選擇 [ **移至定義** ]。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看下列範例中 `render` 方法的定義。
 
 以滑鼠右鍵按一下 `render`，然後從操作功能表選擇 [查看定義]****。 或者，按**Alt** + **F12**。
 
@@ -118,7 +118,7 @@ for (var i = 0; i < length; i++) {
 
 您可以藉由選擇 [**編輯**] [IntelliSense] [  >  **IntelliSense**  >  **插入程式碼片段**]，然後選擇您的語言資料夾，來查看您語言的可用程式碼片段。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [程式碼片段](../ide/code-snippets.md)
 - [巡覽程式碼](../ide/navigating-code.md)

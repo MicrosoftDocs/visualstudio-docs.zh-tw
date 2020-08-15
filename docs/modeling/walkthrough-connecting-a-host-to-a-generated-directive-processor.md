@@ -13,21 +13,21 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c782b84f39419272c271f41d217442cc9e001b3f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535859"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88237993"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連線至產生的指示詞處理器
 
-您可以撰寫自己的主控制項來處理文字模板。 基本的自訂主機會在[逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)中示範。 您可以擴充該主機來新增函式，例如產生多個輸出檔案。
+您可以撰寫自己的主控制項來處理文字模板。 基本的自訂主機會在 [逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)中示範。 您可以擴充該主機來新增函式，例如產生多個輸出檔案。
 
-在此逐步解說中，您會展開自訂主機，使其支援呼叫指示詞處理器的文字模板。 當您定義特定領域語言時，它會為領域模型產生指示詞*處理器*。 指示詞處理器可讓使用者更輕鬆地撰寫可存取模型的範本，而不需要在範本中撰寫元件和匯入指示詞。
+在此逐步解說中，您會展開自訂主機，使其支援呼叫指示詞處理器的文字模板。 當您定義特定領域語言時，它會為領域模型產生指示詞 *處理器* 。 指示詞處理器可讓使用者更輕鬆地撰寫可存取模型的範本，而不需要在範本中撰寫元件和匯入指示詞。
 
 > [!NOTE]
-> 本逐步解說是以[逐步解說：建立自訂文字模板主機為](../modeling/walkthrough-creating-a-custom-text-template-host.md)基礎。 請先執行該逐步解說。
+> 本逐步解說是以 [逐步解說：建立自訂文字模板主機為](../modeling/walkthrough-creating-a-custom-text-template-host.md)基礎。 請先執行該逐步解說。
 
 本逐步解說包含下列工作：
 
@@ -37,11 +37,11 @@ ms.locfileid: "85535859"
 
 - 使用產生的指示詞處理器來測試自訂主機。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要定義 DSL，您必須已安裝下列元件：
 
-| | |
+| 元件 | 連結 |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
@@ -49,7 +49,7 @@ ms.locfileid: "85535859"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-此外，您必須在[逐步解說：建立自訂文字模板主](../modeling/walkthrough-creating-a-custom-text-template-host.md)控制項中建立自訂文字模板轉換。
+此外，您必須在 [逐步解說：建立自訂文字模板主](../modeling/walkthrough-creating-a-custom-text-template-host.md)控制項中建立自訂文字模板轉換。
 
 ## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>使用特定領域語言工具來產生指示詞處理器
 
@@ -65,18 +65,18 @@ ms.locfileid: "85535859"
 
    - 公司名稱： Fabrikam
 
-   如需有關建立特定領域語言方案的詳細資訊，請參閱[如何：建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+   如需有關建立特定領域語言方案的詳細資訊，請參閱 [如何：建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
-2. 在 [建置]**** 功能表上，按一下 [建置方案]****。
+2. 在 [建置] 功能表上，按一下 [建置方案]。
 
    > [!IMPORTANT]
    > 此步驟會產生指示詞處理器，並在登錄中新增其金鑰。
 
-3. 在 [**調試**] 功能表上，按一下 [**開始調試**]。
+3. 在 **[偵錯]** 功能表上，按一下 **[開始偵錯]** 。
 
     Visual Studio 的第二個實例隨即開啟。
 
-4. 在實驗性組建的**方案總管**中，按兩下檔案**範例. min**。
+4. 在實驗性組建的 **方案總管**中，按兩下檔案 **範例. min**。
 
     檔案隨即在設計工具中開啟。 請注意，此模型有兩個元素： ExampleElement1 和 ExampleElement2，以及它們之間的連結。
 
@@ -86,13 +86,13 @@ ms.locfileid: "85535859"
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>將自訂文字模板主機連接至指示詞處理器
 
-在您產生指示詞處理器之後，您可以連接指示詞處理器和您在[逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)中所建立的自訂文字模板主機。
+在您產生指示詞處理器之後，您可以連接指示詞處理器和您在 [逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)中所建立的自訂文字模板主機。
 
 1. 開啟 CustomHost 方案。
 
-2. 在 [專案]**** 功能表上，按一下 [加入參考]****。
+2. 在 [專案] 功能表上，按一下 [加入參考]。
 
-     [**加入參考**] 對話方塊隨即開啟，並顯示 [ **.net** ] 索引標籤。
+     [ **加入參考** ] 對話方塊隨即開啟，並顯示 [ **.net** ] 索引標籤。
 
 3. 加入下列參考：
 
@@ -230,7 +230,7 @@ ms.locfileid: "85535859"
 
 7. 按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。
 
-8. 在 [建置]**** 功能表上，按一下 [建置方案]****。
+8. 在 [建置] 功能表上，按一下 [建置方案]。
 
 ## <a name="test-the-custom-host-with-the-directive-processor"></a>使用指示詞處理器測試自訂主機
 
@@ -327,7 +327,7 @@ ms.locfileid: "85535859"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > 除了輸入位址，您可以在**Windows Explorer**中流覽至檔案 CustomHost.exe，然後將檔案拖曳到 [命令提示字元] 視窗中。
+    > 除了輸入位址，您可以在 **Windows Explorer**中流覽至檔案 CustomHost.exe，然後將檔案拖曳到 [命令提示字元] 視窗中。
 
 3. 輸入空格。
 
@@ -338,11 +338,11 @@ ms.locfileid: "85535859"
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > 除了輸入位址，您可以在**Windows Explorer**中流覽至檔案 TestTemplateWithDP.txt，然後將檔案拖曳到 [命令提示字元] 視窗中。
+    > 除了輸入位址，您可以在 **Windows Explorer**中流覽至檔案 TestTemplateWithDP.txt，然後將檔案拖曳到 [命令提示字元] 視窗中。
 
      自訂主應用程式會執行並啟動文字模板轉換進程。
 
-5. 在**Windows Explorer**中，流覽至包含檔案的資料夾 TestTemplateWithDP.txt。
+5. 在 **Windows Explorer**中，流覽至包含檔案的資料夾 TestTemplateWithDP.txt。
 
      資料夾也包含 TestTemplateWithDP1.txt 的檔案。
 

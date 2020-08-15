@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 1d381bbfd0e83008b962968816c77f540e6a52f5
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: c226e1a8160d0eb1321d244b26177119ec3a5846
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950456"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238552"
 ---
 # <a name="set-up-a-git-repository"></a>設定 Git 存放庫
 
@@ -55,7 +55,7 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
 3. 選擇 [已註冊的存放庫]**** 索引標籤，然後按 [新增]**** 按鈕：
 
-    ![](media/version-control-git5.png)
+    ![[選取儲存機制] 對話方塊的 [已註冊的存放庫] 索引標籤具有 [新增]、[移除] 和 [編輯] 按鈕，以及 [模組名稱] 和 [](media/version-control-git5.png)
 
 4. 輸入您想要顯示在本機的存放庫名稱，並貼入步驟 3 中的 URL。 [存放庫組態] 對話方塊應該與下列類似。 按 [確定]：
 

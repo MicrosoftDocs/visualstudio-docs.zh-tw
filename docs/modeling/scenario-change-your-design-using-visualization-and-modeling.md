@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c0e971a2a38013ae75287467404e3321e3c4d37
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544192"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238890"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 
@@ -75,11 +75,11 @@ Lucerne 則維持一個相當大型且複雜的系統集合，其中有些系統
 
 - [在經過更新的程式碼中進行測試、驗證及檢查](#TestValidateCheckInCode)
 
-## <a name="roles-of-architecture-and-modeling-diagrams-in-software-development"></a><a name="ModelingDiagramsTools"></a>軟體發展中架構與模型圖表的角色
+## <a name="roles-of-architecture-and-modeling-diagrams-in-software-development"></a><a name="ModelingDiagramsTools"></a> 軟體發展中架構與模型圖表的角色
 
 下表描述在軟體開發週期多個及多種階段中，這些工具可以扮演的角色：
 
-||**使用者需求模型化**|**商務程序模型化**|**系統架構與設計**|**程式碼視覺化與探索**|**驗證**|
+|工具/角色|使用者需求模型化|商務程序模型化|系統架構和設計|程式碼視覺化與探索|驗證|
 |------|-|-|-|-|-|
 |領域特定語言 (DSL) 圖表|是|是|是|||
 |相依性圖表，圖層驗證|||是|是|是|
@@ -110,7 +110,7 @@ Lucerne 則維持一個相當大型且複雜的系統集合，其中有些系統
 - [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> 某些版本的 Visual Studio 支援相依性驗證和唯讀版本的 code map，以進行視覺化和模型化。 若要查看哪些版本的 Visual Studio 支援這項功能，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+> 某些版本的 Visual Studio 支援相依性驗證和唯讀版本的 code map，以進行視覺化和模型化。 若要查看哪些版本的 Visual Studio 支援這項功能，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>瞭解和傳達系統的相關資訊
 
@@ -159,7 +159,7 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
  **展開的命名空間 Code Map，包含可見的跨群組連結**
 
- 開發人員檢查程式碼以找出受影響的類別及方法。 若要在每次變更時查看所產生的影響，請在每次變更後重新產生 Code Map。 請參閱將程式[代碼視覺化](../modeling/visualize-code.md)。
+ 開發人員檢查程式碼以找出受影響的類別及方法。 若要在每次變更時查看所產生的影響，請在每次變更後重新產生 Code Map。 請參閱將程式 [代碼視覺化](../modeling/visualize-code.md)。
 
  若要描述對系統其他部分 (例如元件或互動) 所造成的變更，小組可能會在白板上繪製這些項目。 他們也可能會在 Visual Studio 中繪製下列圖表，如此雙方小組皆可擷取、管理及了解詳細資料。
 
@@ -167,12 +167,12 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 |-|-|
 |*以程式碼為基礎的類別圖表*<br /><br /> 請參閱[如何：將類別圖表新增至專案 (類別設計工具)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|程式碼中的現有類別。|
 
-### <a name="keep-code-consistent-with-the-design"></a><a name="ValidatingCode"></a>讓程式碼與設計保持一致
+### <a name="keep-code-consistent-with-the-design"></a><a name="ValidatingCode"></a> 讓程式碼與設計保持一致
  Dinner Now 必須確定已更新的程式碼與設計保持一致。 他們會建立描述系統中功能層的相依性圖表、指定它們之間允許的相依性，以及將方案成品關聯至這些圖層。
 
 |**圖表**|**描述**|
 |-|-|
-|*相依性圖表*<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表：參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表：方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 相依性圖表會將 Visual Studio 方案中的成品組織並對應到稱為「*圖層*」的抽象群組。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 相依性圖表適用于描述系統的預定設計，並根據該設計來驗證不斷演變的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要查看現有的相依性，請以滑鼠右鍵按一下相依性圖表介面，然後按一下 [產生相依性 **]**。 若要指定預定的相依性，請繪製新相依性。|
+|*相依性圖表*<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表：參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表：方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 相依性圖表會將 Visual Studio 方案中的成品組織並對應到稱為「 *圖層*」的抽象群組。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 相依性圖表適用于描述系統的預定設計，並根據該設計來驗證不斷演變的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要查看現有的相依性，請以滑鼠右鍵按一下相依性圖表介面，然後按一下 [產生相依性 **]**。 若要指定預定的相依性，請繪製新相依性。|
 
 例如，下列相依性圖表描述圖層之間的相依性，以及與每個圖層相關聯的成品數目：
 
@@ -206,7 +206,7 @@ Visual Studio 模型圖表已經與 Team Foundation Server 整合，以便您可
 
 當工作進行時，小組會更新工作項目以反映實際花在工作上的時間。 他們也會使用下列 Team Foundation Server 功能來監視及報告工作狀態：
 
-- 每日*向下燒錄報表*，以顯示是否會在預期的時間內完成規劃的工作。 他們會從 Team Foundation Server 產生其他類似的報表來追蹤 Bug 進度。
+- 每日 *向下燒錄報表* ，以顯示是否會在預期的時間內完成規劃的工作。 他們會從 Team Foundation Server 產生其他類似的報表來追蹤 Bug 進度。
 
 - *「反覆項目工作表」* (Iteration Worksheet)，此工作表使用 Microsoft Excel 協助小組監視及平衡小組成員間的工作量。 此工作表連結到 Team Foundation Server，並在定期進度會議中提供討論重點。
 
@@ -216,11 +216,11 @@ Visual Studio 模型圖表已經與 Team Foundation Server 整合，以便您可
 
 - [關於 Agile 工具和 Agile 專案管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
 
-- [圖表、儀表板和小工具（Azure DevOps Services）](/azure/devops/report/dashboards/overview?view=vsts)
+- [圖表、儀表板和小工具 (Azure DevOps Services) ](/azure/devops/report/dashboards/overview?view=vsts)
 
 - [使用 Project 建立您的待處理項目和工作](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
-### <a name="test-validate-and-check-in-code"></a><a name="TestValidateCheckInCode"></a>測試、驗證和簽入程式碼
+### <a name="test-validate-and-check-in-code"></a><a name="TestValidateCheckInCode"></a> 測試、驗證和簽入程式碼
 
 當小組完成每項工作時，他們會將程式碼簽入原始檔控制，並從 Team Foundation Server 收到提醒（如果他們忘了）。 在 Team Foundation Server 接受其簽入之前，小組會執行單元測試和相依性驗證，以根據測試案例和設計來驗證程式代碼。 它們會使用 Team Foundation Server 來定期執行組建、自動化單元測試和相依性驗證。 此行為有助於確定程式碼符合下列準則：
 
@@ -262,7 +262,7 @@ Lucerne 及 Dinner Now 必須整合其付款系統。 下列各節將示範 Visu
 
 - [建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)
 
-### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a>將現有程式碼視覺化： Code Map
+### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a> 將現有程式碼視覺化： Code Map
 
 Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 *「節點」* (Node) 來代表，關聯性則是以 *「連結」*(Link) 來代表。 Code Map 可協助您執行下列種類的工作：
 
@@ -314,7 +314,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 - 為了協助您探索地圖，請重新整理配置，以便其符合您要執行的工作種類。
 
-     例如，若要將程式碼的圖層視覺化，請選取樹狀配置。 請參閱[流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)。
+     例如，若要將程式碼的圖層視覺化，請選取樹狀配置。 請參閱 [流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)。
 
 #### <a name="summary-strengths-of-code-maps"></a>摘要：Code Map 的優勢
  Code Map 可協助您：
@@ -388,9 +388,9 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 #### <a name="summary-strengths-of-class-diagrams"></a>摘要：類別圖表的優勢
  類別圖表可協助您定義下列項目：
 
-- 討論使用者需求及參與系統的實體時可使用的常用詞彙。 請參閱[模型使用者需求](../modeling/model-user-requirements.md)。
+- 討論使用者需求及參與系統的實體時可使用的常用詞彙。 請參閱 [模型使用者需求](../modeling/model-user-requirements.md)。
 
-- 系統組成部分 (例如元件) 使用的類型，不論其實作為何。 請參閱[模型應用程式的架構](../modeling/model-your-app-s-architecture.md)。
+- 系統組成部分 (例如元件) 使用的類型，不論其實作為何。 請參閱 [模型應用程式的架構](../modeling/model-your-app-s-architecture.md)。
 
 - 類型之間的關聯性 (例如相依性)。 例如，您可以顯示某個類型可以與另一個類型的多個執行個體相關聯。
 
@@ -401,8 +401,8 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 |相依性圖表|定義與類別相關的系統邏輯架構。<br /><br /> 使用相依性驗證，確保程式碼與設計保持一致。<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表：參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表：方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|
 |Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要識別類別、其關聯性及方法，請建立會顯示這些項目的 Code Map。<br /><br /> 請參閱：<br /><br /> - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)|
 
-### <a name="describe-the-logical-architecture-dependency-diagrams"></a><a name="DescribeLayers"></a>描述邏輯架構：相依性圖表
- 相依性圖表會藉由將您方案中的成品組織成抽象群組或*圖層*，來描述系統的邏輯架構。 成品可以是多個項目，例如命名空間、專案、類別、方法等等。 圖層代表及描述成品在系統中執行的角色或工作。 您也可以在組建中加入圖層驗證並簽入作業，以確定程式碼與設計維持一致。
+### <a name="describe-the-logical-architecture-dependency-diagrams"></a><a name="DescribeLayers"></a> 描述邏輯架構：相依性圖表
+ 相依性圖表會藉由將您方案中的成品組織成抽象群組或 *圖層*，來描述系統的邏輯架構。 成品可以是多個項目，例如命名空間、專案、類別、方法等等。 圖層代表及描述成品在系統中執行的角色或工作。 您也可以在組建中加入圖層驗證並簽入作業，以確定程式碼與設計維持一致。
 
  為了讓程式碼與設計保持一致，現在晚餐和 Lucerne 使用下列相依性圖表來驗證其程式碼是否已發展：
 
@@ -444,7 +444,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
   - 如果圖層包含已連結到成品的其他圖層，即使此容器圖層上的數字未包含那些成品，容器圖層也會連結到那些成品。
 
-    若要查看連結到圖層的成品，請以滑鼠右鍵按一下相依性，然後按一下 [**視圖連結**] 以開啟 [**分層 Explorer**]。
+    若要查看連結到圖層的成品，請以滑鼠右鍵按一下相依性，然後按一下 [ **視圖連結** ] 以開啟 [ **分層 Explorer**]。
 
 - *「相依性」* (Dependency) 表示某個圖層可以使用另一個圖層中的功能，但反過來則不行。 *「雙向相依性」* (Bidirectional Dependency) 表示某個圖層可以使用另一個圖層中的功能，反之亦然。
 
@@ -476,7 +476,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 ## <a name="external-resources"></a>外部資源
 
-|**類別**|**連結**|
+|**類別目錄**|**連結**|
 |-|-|
 |**論壇**|- [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 953ff26a6094a9de9dcf974d5e4cb5a02aaa503f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 0b55a0bbeee7c5a8c38a0df61db0a1b17ae5e033
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533558"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238656"
 ---
 # <a name="debug-python-and-c-together"></a>同時對 Python 和 C++ 進行偵錯
 
@@ -36,26 +36,25 @@ Visual Studio 有針對 Python 及原生 C/C++ 提供整合式的同時混合模
 
 ![Visual Studio 中的 Python 混合模式偵錯](media/mixed-mode-debugging.png)
 
-|   |   |
-|---|---|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | 如需使用 Visual Studio 建置、測試原生 C 模組並進行偵錯的簡介，請參閱 [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (深入探討︰建立原生模組) (youtube.com，9 分 09 秒)。 本影片適用於 Visual Studio 2015 和 Visual Studio 2017。 |
+![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") 如需使用 Visual Studio 來建立、測試和偵測原生 C 模組的簡介，請參閱 [深入探討：建立原生模組](https://youtu.be/D9RlT06a1EI) (youtube.com、9m 分09秒) 。 本影片適用於 Visual Studio 2015 和 Visual Studio 2017。
+
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>在 Python 專案中啟用混合模式偵錯
 
-1. 以滑鼠右鍵按一下**方案總管**中的 Python 專案，選取 [**屬性**]，選取 [**調試**程式] 索引標籤，然後選取 [**啟用機器碼調試**程式]。 這個選項會啟用所有偵錯工作階段的混合模式。
+1. 以滑鼠右鍵按一下 **方案總管**中的 Python 專案，選取 [ **屬性**]，選取 [ **調試** 程式] 索引標籤，然後選取 [ **啟用機器碼調試**程式]。 這個選項會啟用所有偵錯工作階段的混合模式。
 
     ![啟用原生程式碼偵錯](media/mixed-mode-debugging-enable-native.png)
 
     > [!Tip]
-    > 當您啟用機器碼偵錯工具時，Python 輸出視窗可能會在程式完成時立即消失，而不會提供您平常的**按任意鍵繼續**暫停。 若要強制暫停，請在 `-i` 啟用機器碼偵錯工具時，將選項加入 [偵錯工具] 索引標籤上的 [**執行**  >  **解譯器引數**] 欄位。 **Debug** 這個引數會讓 Python 解譯器在程式碼完成之後進入互動模式，此時它會等待您按**Ctrl** + **Z**  >  **enter**結束。
+    > 當您啟用機器碼偵錯工具時，Python 輸出視窗可能會在程式完成時立即消失，而不會提供您平常的 **按任意鍵繼續** 暫停。 若要強制暫停，請在 `-i` 啟用機器碼偵錯工具時，將選項加入 [偵錯工具] 索引標籤上的 [**執行**  >  **解譯器引數**] 欄位。 **Debug** 這個引數會讓 Python 解譯器在程式碼完成之後進入互動模式，此時它會等待您按**Ctrl** + **Z**  >  **enter**結束。
 
-1. 將混合模式偵錯工具附加至現有的進程（[**Debug**] [  >  **附加至進程**]）時，請使用 [**選取**] 按鈕來開啟 [**選取程式碼類型**] 對話方塊。 然後設定 [偵錯這些程式碼類型]**** 選項，並同時選取清單中的 [原生]**** 和 [Python]****：
+1. 將混合模式偵錯工具附加至現有的進程時 (**Debug**  >  **附加至進程**) ，請使用 [**選取**] 按鈕來開啟 [**選取程式碼類型**] 對話方塊。 然後設定 [偵錯這些程式碼類型]**** 選項，並同時選取清單中的 [原生]**** 和 [Python]****：
 
     ![選取原生和 Python 程式碼類型](media/mixed-mode-debugging-code-type.png)
 
-    程式碼類型設定是持續性的，因此，如果您稍後附加至其他進程時想停用混合模式的偵錯工具，請清除**Python**程式碼類型。
+    程式碼類型設定是持續性的，因此，如果您稍後附加至其他進程時想停用混合模式的偵錯工具，請清除 **Python** 程式碼類型。
 
-    除了選取 (或不選取) [原生]**** 以外，您還可以選取其他程式碼類型。 例如，如果受控應用程式裝載 CPython，而這又會使用原生延伸模組，而您想要完全進行這三項功能的檢查，您可以同時檢查**Python**、**原生**和**managed**以取得統一的調試經驗，包括合併的呼叫堆疊，以及在所有三個執行時間之間逐步執行。
+    除了選取 (或不選取) [原生]**** 以外，您還可以選取其他程式碼類型。 例如，如果受控應用程式裝載 CPython，而這又會使用原生延伸模組，而您想要完全進行這三項功能的檢查，您可以同時檢查 **Python**、 **原生**和 **managed** 以取得統一的調試經驗，包括合併的呼叫堆疊，以及在所有三個執行時間之間逐步執行。
 
 1. 當您首次在混合模式開始偵錯時，可能會看到 [需要 Python 符號]**** 對話方塊 (請參閱[混合模式偵錯的符號](debugging-symbols-for-mixed-mode-c-cpp-python.md))。 針對任何指定的 Python 環境，符號只需安裝一次。 如果您透過 Visual Studio 安裝程式 (Visual Studio 2017 和更新版本) 安裝 Python 支援，就會自動包含符號。
 
@@ -71,7 +70,7 @@ Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
     ![在 C/C++ 專案中選取 [Python/原生偵錯工具]](media/mixed-mode-debugging-select-cpp-debugger.png)
 
 > [!Note]
-> 如果您沒有選取**python/原生調試**程式的選項，您必須先使用 VS Installer 安裝**Python 原生開發工具**。 您可以在 [Python 開發] 工作負載下找到它作為選項。 如需其他資訊，請參閱[如何在 Windows 上的 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
+> 如果您沒有選取 **python/原生調試** 程式的選項，您必須先使用 VS Installer 安裝 **Python 原生開發工具** 。 您可以在 [Python 開發] 工作負載下找到它作為選項。 如需其他資訊，請參閱 [如何在 Windows 上的 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
 
 使用此方法時，請留意到您並無法對 *py.exe* 啟動器本身進行偵錯，因為它會繁衍出偵錯工具無法附加至的子 *python.exe* 處理序。 如果您想要搭配引數直接啟動 *python.exe*，請變更 [Python/原生偵錯工具]**** 屬性中的 [命令]**** 選項 (如上圖所示) 以指定 *python.exe* 的完整路徑，然後在 [命令引數]**** 中指定引數。
 
@@ -79,8 +78,8 @@ Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 針對所有舊版的 Visual Studio，只能在於 Visual Studio 中啟動 Python 專案時啟用直接混合模式偵錯，因為 C/C++ 專案只能使用原生偵錯工具。 不過，您可以分別附加偵錯工具：
 
-1. 啟動 c + + 專案但不進行調試（不進行調試的**Debug**  >  **啟動**或**Ctrl** + **F5**）。
-1. 選取 [**調試**程式] [  >  **附加至進程**]。 在出現的對話方塊中，選取適當的進程，然後使用 [**選取**] 按鈕來開啟 [**選取程式碼類型**] 對話方塊，您可以在其中選取 [ **Python**]：
+1. 啟動 c + + 專案但不進行調試 (**Debug**  >  **start，不進行任何**偵測或**Ctrl** + **F5**) 。
+1. 選取 [**調試**程式] [  >  **附加至進程**]。 在出現的對話方塊中，選取適當的進程，然後使用 [ **選取** ] 按鈕來開啟 [ **選取程式碼類型** ] 對話方塊，您可以在其中選取 [ **Python**]：
 
     ![附加偵錯工具時，選取 Python 作為偵錯類型](media/mixed-mode-debugging-attach-type.png)
 
@@ -96,7 +95,7 @@ Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 ### <a name="combined-call-stack"></a>合併的呼叫堆疊
 
-[**呼叫堆疊**] 視窗會同時顯示原生和 Python 堆疊框架交錯，並在兩者之間標記轉換：
+[ **呼叫堆疊** ] 視窗會同時顯示原生和 Python 堆疊框架交錯，並在兩者之間標記轉換：
 
 ![合併的呼叫堆疊與混合模式偵錯](media/mixed-mode-debugging-call-stack.png)
 
@@ -106,11 +105,11 @@ Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 ### <a name="step-between-python-and-native-code"></a>在 Python 和機器碼之間逐步執行
 
-當您使用 [**逐步執行**] （**F11**）或 [**跳出**] （**Shift** + **F11**）命令時，混合模式偵錯工具會正確處理常式代碼類型之間的變更。 例如，當 Python 呼叫某個在 C 中實作之類型的方法時，在該方法的呼叫中逐步執行時，會停在實作該方法的原生函式開頭。 同樣地，當原生程式碼呼叫一些 Python API 函式時，會叫用 Python 程式碼。 例如，在原先定義於 Python 中的某個函式值上逐步執行到 `PyObject_CallObject`，會停在 Python 函式的開頭。 對於透過 [ctypes](https://docs.python.org/3/library/ctypes.html) 從 Python 叫用的原生函式，也支援從 Python 逐步執行到原生函式。
+當您使用 [**逐步執行** (**F11** ]) 或 [**跳出**] (**Shift** + **F11**) 命令時，混合模式偵錯工具會正確處理常式代碼類型之間的變更。 例如，當 Python 呼叫某個在 C 中實作之類型的方法時，在該方法的呼叫中逐步執行時，會停在實作該方法的原生函式開頭。 同樣地，當原生程式碼呼叫一些 Python API 函式時，會叫用 Python 程式碼。 例如，在原先定義於 Python 中的某個函式值上逐步執行到 `PyObject_CallObject`，會停在 Python 函式的開頭。 對於透過 [ctypes](https://docs.python.org/3/library/ctypes.html) 從 Python 叫用的原生函式，也支援從 Python 逐步執行到原生函式。
 
 ### <a name="pyobject-values-view-in-native-code"></a>原生程式碼中的 PyObject 值檢視
 
-當原生（C 或 c + +）框架為使用中時，其區域變數會顯示在偵錯工具的 [**區域變數**] 視窗中。 在原生 Python 延伸模組中，其中有許多變數都是 `PyObject` 類型 (即 `_object` 的 typedef)，或是一些其他基本 Python 類型 (請參閱下方清單)。 在混合模式的偵錯工具中，這些值會顯示標示為 **[Python view]** 的額外子節點。 展開時，此節點會顯示變數的 Python 表示法，您所看到的一切，會與參考相同物件的本機變數出現在 Python 框架時相同。 此節點的子系是可編輯的。
+當原生 (C 或 c + +) 框架為使用中時，其區域變數會顯示在偵錯工具的 [ **區域變數** ] 視窗中。 在原生 Python 延伸模組中，其中有許多變數都是 `PyObject` 類型 (即 `_object` 的 typedef)，或是一些其他基本 Python 類型 (請參閱下方清單)。 在混合模式的偵錯工具中，這些值會顯示標示為 **[Python view]** 的額外子節點。 展開時，此節點會顯示變數的 Python 表示法，您所看到的一切，會與參考相同物件的本機變數出現在 Python 框架時相同。 此節點的子系是可編輯的。
 
 ![[區域變數] 視窗中的 [Python 檢視]](media/mixed-mode-debugging-python-view.png)
 
@@ -118,7 +117,7 @@ Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 ![在 [區域變數] 視窗中啟用 [Python 檢視]](media/mixed-mode-debugging-enable-python-view.png)
 
-顯示 **[Python view]** 節點的 C 類型（若已啟用）：
+C 類型，會在啟用) 時， (顯示 **[Python 視圖]** 節點：
 
 - `PyObject`
 - `PyVarObject`
@@ -151,7 +150,7 @@ Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 ![[區域變數] 視窗中的 [C++ 檢視]](media/mixed-mode-debugging-cpp-view.png)
 
-如果物件的子欄位為類型 `PyObject` 或其他支援的類型之一，則它會有 **[Python view]** 標記法節點（如果已啟用那些標記法），讓您可以流覽物件圖形，其中的連結不會直接向 Python 公開。
+如果物件的子欄位為類型 `PyObject` 或其他支援的類型之一，則它會有 **[Python view]** 標記法節點 (如果這些標記法已啟用) ，就可以流覽物件圖形，其中的連結不會直接向 Python 公開。
 
 不同于 **[python view]** 節點使用 Python 物件中繼資料來判斷物件的類型， **[c + + view]** 沒有類似的可靠機制。 一般而言，憑藉一個 Python 值 (也就是 `PyObject` 參考) 是無法可靠地判斷支援它的 C/C++ 結構。 混合模式偵錯工具會透過查看具有函式指標類型的物件類型 (例如其 `ob_type` 欄位參考的 `PyTypeObject`) 的各個欄位，以嘗試猜測該類型 。 如果這些函式指標之一參考的函式可以解析，而且該函式具有類型比 `PyObject*` 更明確的 `self` 參數，則會假設該類型為支援的類型。 例如，如果是下列函式中指定物件點的 `ob_type->tp_init`︰
 
@@ -173,7 +172,7 @@ static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {
 - [即時**運算] 視窗**：可以使用，但僅有其功能的有限子集，包括此處所列的所有限制。
 - 支援的 Python 版本︰僅限 CPython 2.7 和 3.3 及更新版本。
 - Visual Studio Shell︰搭配使用 Python 和 Visual Studio Shell 時 (例如使用整合式安裝程式進行安裝時)，Visual Studio 無法開啟 C++ 專案，且針對 C++ 檔案的編輯體驗僅如同使用基本文字編輯器。 不過，Shell 搭配偵錯工具視窗中的原始程式碼、逐步執行到原生程式碼及 C++ 運算式評估，可完整支援 C/C++ 偵錯和混合模式偵錯。
-- 視圖和展開物件：在 [**區域變數** **] 和 [監看**式偵錯工具] 工具視窗中查看 Python 物件時，混合模式偵錯工具只會顯示物件的結構。 它不會自動評估屬性，或顯示計算的屬性。 對於集合，它只會顯示內建集合類型的元素 (`tuple`、`list``dict``set`)。 自訂集合類型不會視覺化為集合，除非它們繼承自某些內建的集合類型。
+- 視圖和展開物件：在 [ **區域變數** **] 和 [監看** 式偵錯工具] 工具視窗中查看 Python 物件時，混合模式偵錯工具只會顯示物件的結構。 它不會自動評估屬性，或顯示計算的屬性。 對於集合，它只會顯示內建集合類型的元素 (`tuple`、`list``dict``set`)。 自訂集合類型不會視覺化為集合，除非它們繼承自某些內建的集合類型。
 - 運算式評估：請參閱下文。
 
 ### <a name="expression-evaluation"></a>運算式評估
