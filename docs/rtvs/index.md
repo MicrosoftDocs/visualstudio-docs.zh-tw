@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 1132a7a0363e2d508d6eff1026192aad3407fca4
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 89aa8b9d1b1f288e19252b8a111666f5b4e3e087
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "73189248"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238708"
 ---
 # <a name="work-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
@@ -45,14 +45,12 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 
 另請參閱[常見問題集](faq.md)。
 
-|   |   |
-|---|---|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看影片 (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) 以概覽 Visual Studio R 工具 (12 分 36 秒)。 另請觀看[其他 R 工具影片](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio)。 |
+![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")[觀看影片 (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) 以概覽 Visual Studio R 工具 (12 分 36 秒)。 另請觀看[其他 R 工具影片](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio)。
 
 ## <a name="send-us-your-feedback"></a>將您的意見反應傳送給我們！
 
-1. **GitHub 問題**：連絡 RTVS 小組的最佳方式，就是[在 GitHub 上提問](https://github.com/Microsoft/RTVS/issues)，或是使用 [R 工具]   >  [意見反應]  功能表。
+1. **GitHub Issues**：連絡 RTVS 小組的最佳方式，就是[在 GitHub 上提問](https://github.com/Microsoft/RTVS/issues)，或是使用 [R 工具]**** >  [意見反應]**** 功能表。
 
-1. **傳送笑臉/苦臉**：[R 工具]   >  [意見反應]  功能表是快速傳送意見反應，以及附加 RTVS 記錄檔，協助診斷問題最快的方式。 (若您想要個別傳送記錄檔，其位於 *%temp%/RTVSlogs.zip* 之中)。若透過 [說明]   >  [意見反應]   >  [設定]  功能表命令或在是安裝期間選擇退出 Visual Studio 遙測，將會停用記錄。
+1. **傳送笑臉/苦臉**：[R 工具]**** >  [意見反應]**** 功能表是快速傳送意見反應，以及附加 RTVS 記錄檔，協助診斷問題最快的方式  (若您想要個別傳送記錄檔，其位於 *%temp%/RTVSlogs.zip* 之中)。若透過 [說明] >  [意見反應] >  [設定] 功能表命令或在是安裝期間選擇退出 Visual Studio 遙測，將會停用記錄。
 
 1. **電子郵件**：您可以透過 *rtvsuserfeedback (at) microsoft.com*，將意見反應直接傳送給小組。

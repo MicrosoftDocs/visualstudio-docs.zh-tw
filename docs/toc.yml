@@ -103,7 +103,7 @@
                 - name: 概觀
                   displayName: Workload and component IDs
                   href: install/workload-and-component-ids.md
-                - name: Visual Studio 企業版
+                - name: Visual Studio Enterprise
                   href: install/workload-component-id-vs-enterprise.md
                 - name: Visual Studio Professional
                   href: install/workload-component-id-vs-professional.md
@@ -390,6 +390,8 @@
                   href: ide/reference/convert-if-statement-to-switch-statement-or-switch-expression.md
                 - name: 將 LINQ 查詢轉換成 foreach 陳述式
                   href: ide/reference/convert-linq-to-foreach.md
+                - name: 將 typeof 轉換為 nameof
+                  href: ide/reference/convert-typeof-to-nameof.md
                 - name: 將 switch 陳述式轉換為 switch 運算式
                   href: ide/reference/convert-switch-statement-to-switch-expression.md
                 - name: DateTime 與 TimeSpan 完成
@@ -430,6 +432,8 @@
                   href: ide/reference/rename.md
                 - name: 簡化條件運算式
                   href: ide/reference/simplify-conditional-expression.md
+                - name: 簡化 LINQ 運算式
+                  href: ide/reference/simplify-linq-expression.md
                 - name: 簡化字串插補
                   href: ide/reference/simplify-string-interpolation.md
                 - name: 為 using 排序
@@ -633,7 +637,7 @@
               items:
                 - name: 教學課程 1：建立圖片檢視器 (C#)
                   items:
-                    - name: 總覽
+                    - name: 概觀
                       displayName: Tutorial 1 Picture viewer
                       href: ide/tutorial-1-create-a-picture-viewer.md
                     - name: 步驟 1：建立 Windows Forms 應用程式專案
@@ -660,7 +664,7 @@
                       href: ide/step-11-run-your-program-and-try-other-features.md
                 - name: 教學課程 2：建立計時數學測驗 (C#)
                   items:
-                    - name: 總覽
+                    - name: 概觀
                       displayName: Tutorial 2 Timed math quiz
                       href: ide/tutorial-2-create-a-timed-math-quiz.md
                     - name: 步驟 1：建立專案並將標籤新增至表單
@@ -681,7 +685,7 @@
                       href: ide/step-8-customize-the-quiz.md
                 - name: 教學課程 3：建立配對遊戲 (C#)
                   items:
-                    - name: 總覽
+                    - name: 概觀
                       displayName: Tutorial 3 Matching game
                       href: ide/tutorial-3-create-a-matching-game.md
                     - name: 步驟 1：建立專案並將資料表新增至表單
@@ -750,7 +754,7 @@
                   href: designers/shader-designer.md
                 - name: 著色器設計工具節點
                   items:
-                    - name: 總覽
+                    - name: 概觀
                       displayName: Shader designer nodes
                       href: designers/shader-designer-nodes.md
                     - name: 常數節點
@@ -814,7 +818,7 @@
         - name: 設計國際化應用程式
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-- name: 組建
+- name: Build
   items:
     - name: 概觀
       displayName: Compile build
@@ -942,7 +946,7 @@
           href: ide/filtered-solutions.md
         - name: 秘訣和訣竅
           href: ide/visual-studio-performance-tips-and-tricks.md
-- name: Accessibility
+- name: 協助工具選項
   items:
     - name: 管理協助工具功能
       href: ide/reference/accessibility-features-of-visual-studio.md
@@ -952,7 +956,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Microsoft 的協助工具產品和服務
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 參考資料
+- name: 參考
   items:
     - name: 鍵盤快速鍵
       items:
@@ -1289,7 +1293,7 @@
           href: ide/reference/team-explorer-reference.md
         - name: 工具箱
           items:
-            - name: 參考資料
+            - name: 參考
               displayName: Toolbox
               href: ide/reference/toolbox.md
             - name: 元件索引標籤、工具箱
@@ -1361,7 +1365,7 @@
       href: ide/use-bidirectional-languages.md
     - name: Microsoft Help Viewer
       items:
-        - name: 總覽
+        - name: 概觀
           displayName: Help Viewer
           href: help-viewer/overview.md
         - name: 安裝與管理本機內容
@@ -1381,7 +1385,7 @@
                   href: help-viewer/logical-operators-search-expressions.md
         - name: 自訂說明檢視器
           href: help-viewer/customize.md
-        - name: Accessibility
+        - name: 協助工具選項
           href: help-viewer/accessibility-features.md
         - name: 快速鍵
           href: help-viewer/shortcut-keys.md
@@ -1389,7 +1393,7 @@
       href: designers/the-visual-studio-image-library.md
     - name: Dotfuscator Community
       items:
-        - name: 總覽
+        - name: 概觀
           displayName: Dotfuscator Community
           href: ide/dotfuscator/index.md
         - name: Dotfuscator 的功能

@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 56007fcb3b951f9b313a25092e89c234d52eb15e
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285840"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507995"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>從命令列測量應用程式的效能
 
@@ -33,7 +33,7 @@ ms.locfileid: "85285840"
 
 * 熟悉命令列工具
 
-* 若要在未安裝 Visual Studio 的情況下，在遠端電腦上收集效能資訊，請在遠端電腦上安裝[Visual Studio 的效能工具](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)。 此工具的版本必須符合您的 Visual Studio 版本。
+* 若要在未安裝 Visual Studio 的遠端電腦上收集效能資訊，請在遠端電腦上安裝 [Visual Studio 的效能工具](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) 。 工具的版本必須符合您的 Visual Studio 版本。
 
 ## <a name="collect-performance-data"></a>收集效能資料
 
@@ -41,9 +41,9 @@ ms.locfileid: "85285840"
 
 1. 啟動 [記事本]，然後開啟 [工作管理員] 以取得其處理序識別碼 (PID)。 在 [工作管理員] 的 [詳細資料]**** 索引標籤中，尋找此 PID。
 
-1. 開啟命令提示字元，並變更為包含收集代理程式可執行檔的目錄，通常位於這裡。
+1. 開啟命令提示字元，並使用收集代理程式可執行檔變更至目錄，通常是 Visual Studio Enterprise) 的 (。
 
-   ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\```
+   ```<Visual Studio installation folder>\2019\Enterprise\Team Tools\DiagnosticsHub\Collector\```
 
 1. 鍵入下列命令，開始 *VSDiagnostics.exe*。
 
@@ -53,9 +53,15 @@ ms.locfileid: "85285840"
 
    必須包含的引數如下：
 
-   * \<*id*>識別收集會話。 識別碼必須是介於 1-255 之間的數字。
-   * \<*pid*>，您想要分析之進程的 PID，在此案例中是您在步驟1中找到的 PID
-   * \<*configFile*>，這是您想要啟動之集合代理程式的設定檔。 如需詳細資訊，請參閱[代理程式的組態檔](#config_file)。
+   * \<*id*> 識別收集會話。 識別碼必須是介於 1-255 之間的數字。
+   * \<*pid*>，您想要分析之進程的 PID，在此案例中，您在步驟1中找到的 PID。
+   * \<*configFile*>：您想要啟動之收集代理程式的設定檔。 如需詳細資訊，請參閱[代理程式的組態檔](#config_file)。
+
+   例如，您可以將下列命令用於 CPUUsageBase 代理程式，如先前所述來取代 *pid* 。
+
+   ```cmd
+   VSDiagnostics.exe start 1 /attach:<pid> /loadConfig:AgentConfigs\CPUUsageLow.json
+   ```
 
 1. 調整 [記事本] 的大小，或在其中鍵入某些項目，以確保收集到一些可用的分析資訊。
 
@@ -65,7 +71,9 @@ ms.locfileid: "85285840"
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. 移至上一個命令的檔案輸出，並在 Visual Studio 中開啟以檢查收集到的資訊。
+1. 找出前一個命令的*diagsession*檔輸出，然後在 Visual Studio (檔案開啟) **中開啟它**，  >  **Open**以檢查收集到的資訊。
+
+   若要分析結果，請參閱對應效能工具的檔。 例如，這可能是 [ [CPU 使用量](../profiling/cpu-usage.md)]、[ [.net 物件配置] 工具](../profiling/dotnet-alloc-tool.md)或 [ [資料庫](../profiling/analyze-database.md) ] 工具。
 
 ## <a name="agent-configuration-files"></a><a name="config_file"></a> 代理程式組態檔
 
@@ -75,7 +83,7 @@ ms.locfileid: "85285840"
 
 ```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
-請參閱下列連結，以下載並查看代理程式設定檔：
+請參閱下列連結以下載和查看代理程式設定檔：
 
 - https://aka.ms/vs/diaghub/agentconfig/cpubase
 - https://aka.ms/vs/diaghub/agentconfig/cpuhigh
@@ -85,8 +93,8 @@ ms.locfileid: "85285840"
 - https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
 - https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
 
-CpuUsage 設定（基底/高/低）對應至針對[CPU 使用量](../profiling/cpu-usage.md)分析工具所收集的資料。
-DotNetObjectAlloc 設定（基底/低）對應至針對[.Net 物件組態工具](../profiling/dotnet-alloc-tool.md)所收集的資料。
+CpuUsage 設定 (基底/高/低) 對應至針對 [CPU 使用量](../profiling/cpu-usage.md) 分析工具所收集的資料。
+DotNetObjectAlloc 設定 (Base/Low) 對應至針對 [.Net 物件組態工具](../profiling/dotnet-alloc-tool.md)所收集的資料。
 
 組態的基底/高/低是指取樣率。 例如，低表示 100 個範例/秒，而高表示 4000 個範例/秒。
 
