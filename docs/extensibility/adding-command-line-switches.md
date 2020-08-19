@@ -1,7 +1,7 @@
 ---
-title: 新增命令列開關 |微軟文件
+title: 新增命令列參數 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - command-line switches, adding
 - command-line switches, retrieving
@@ -13,49 +13,48 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f2df3a704c34d97c9d5acfa72249fe492b7f812
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740173"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903476"
 ---
-# <a name="add-command-line-switches"></a>新增命令列交換器
-您可以在執行*devenv.exe*時添加應用於 VSPackage 的命令行開關。 用於<xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>聲明交換機的名稱及其屬性。 在此示例中,MySwitch 開關被添加到名為**AddCommandSwitchPackage**的 VSPackage 子類,該子類沒有參數,並且自動載入 VSPackage。
+# <a name="add-command-line-switches"></a>新增命令列參數
+您可以在執行 *devenv.exe* 時，新增適用于 VSPackage 的命令列參數。 用 <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> 來宣告參數的名稱和其屬性。 在此範例中，會針對名為 **AddCommandSwitchPackage** 的 VSPackage 子類別加入 MySwitch 參數，但不含任何引數，且會自動載入 VSPackage。
 
 ```csharp
 [ProvideAppCommandLine("MySwitch", typeof(AddCommandSwitchPackage), Arguments = "0", DemandLoad = 1)]
 ```
 
- 命名參數顯示在以下說明中。
+ 具名引數會顯示在下列描述中。
 
-||||
-|-|-|-|-|
-| 參數 | 描述|
-| 引數 | 交換機的參數數。 可以是"*",也可以是參數清單。 |
-| 需求負載 | 如果設置為 1,則自動載入 VS 包,否則設置為 0。 |
-| 說明字串 | 要用**devenv /?** 顯示的字串的説明字串或資源 ID。 |
-| 名稱 | 開關。 |
-| 包裝吉德 | 封裝的 GUID。 |
+|名稱|描述|
+|-|-|
+| 引數 | 切換的引數數目。 可以是 "*" 或引數清單。 |
+| DemandLoad | 如果此設定為1，則自動載入 VSPackage，否則設定為0。 |
+| HelpString | 要以 **devenv/？** 顯示之字串的說明字串或資源識別碼。 |
+| 名稱 | 參數。 |
+| PackageGuid | 封裝的 GUID。 |
 
- 參數的第一個值通常是 0 或 1。 特殊值"*"可用於指示命令行的整個其餘部分是參數。 這對於使用者必須傳遞調試器命令字串的調試方案非常有用。
+ 引數的第一個值通常是0或1。 您可以使用 ' * ' 的特殊值，表示命令列的整個其餘部分都是引數。 當使用者必須傳入偵錯工具命令字串時，這會很有用。
 
- DemandLoad 值`true`為 (1)`false`或 (0)表示應自動載入 VS 包。
+ DemandLoad 值可能是 `true` (1) 或 `false` (0) 表示應該自動載入 VSPackage。
 
- HelpString 值是顯示在**devenv /?** 幫助顯示。 此值應以"#nnn"的形式,其中 nnn 是整數。 資源檔中的字串值應以新的行字元結尾。
+ HelpString 值是出現在**devenv/？** 中的字串資源識別碼。 說明顯示。 此值的格式應該是 "#nnn"，其中 nnn 是整數。 資源檔中的字串值應該以換行字元結尾。
 
- Name 值是交換機的名稱。
+ 名稱值是參數的名稱。
 
- 包吉德值是實現此交換機的包的 GUID。 IDE 使用此 GUID 在命令列交換機適用的註冊表中尋找 VSPackage。
+ PackageGuid 值是用來執行此參數之封裝的 GUID。 IDE 會使用此 GUID，在命令列參數套用的登錄中尋找 VSPackage。
 
-## <a name="retrieve-command-line-switches"></a>檢索命令列交換器
- 載入包後,可以通過完成以下步驟來檢索命令行開關。
+## <a name="retrieve-command-line-switches"></a>取出命令列參數
+ 載入封裝時，您可以完成下列步驟來取得命令列參數。
 
-1. 在 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>的`QueryService`實作<xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine>中,<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>呼叫以獲取介面。
+1. 在 VSPackage 的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 執行中，呼叫 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> 以取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> 介面。
 
-2. 調用<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A>以檢索用戶輸入的命令行交換機。
+2. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> 以取得使用者所輸入的命令列參數。
 
-   以下代碼展示如何查找使用者是否輸入了 MySwitch 命令列交換機:
+   下列程式碼示範如何找出使用者是否已輸入 MySwitch 命令列參數：
 
 ```csharp
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));
@@ -66,11 +65,11 @@ string optionValue = "";
 cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 ```
 
- 您有責任在每次載入包時檢查命令列交換機。
+ 您必須負責在每次載入封裝時檢查命令列參數。
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)
-- [建立PkgDef實用程式](../extensibility/internals/createpkgdef-utility.md)
-- [.Pkgdef 檔案](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [CreatePkgDef 公用程式](../extensibility/internals/createpkgdef-utility.md)
+- [..Pkgdef 檔案](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
