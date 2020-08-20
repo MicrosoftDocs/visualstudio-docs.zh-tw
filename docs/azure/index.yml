@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 7d993a357094f52bc633da7e6fd22540a613c338
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 0ad3a0135b8e5ca955d9dad2301933133bbd05e7
+  ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "76022298"
+  ms.lasthandoff: 08/20/2020
+  ms.locfileid: "88639324"
 landingContent:
 - title: 部署到 Azure App Service
   linkLists:
@@ -71,20 +71,20 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Azure 儲存體
-      url: vs-azure-tools-connected-services-storage.md
-    - text: Azure 金鑰保存庫
-      url: /azure/key-vault/vs-key-vault-add-connected-service
     - text: Azure Active Directory
       url: /azure/active-directory/develop/vs-active-directory-add-connected-service
-    - text: 認知服務 - 文字分析
-      url: /azure/cognitive-services/text-analytics/vs-text-connected-service
-    - text: 認知服務 - Bing 新聞搜尋
-      url: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
-    - text: 認知服務 - 臉部 API
-      url: /azure/cognitive-services/face/vs-face-connected-service
-    - text: 認知服務 - 電腦視覺
-      url: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service
+    - text: Azure Cache for Redis
+      url: azure-cache-for-redis-add-connected-service.md
+    - text: Azure CosmosDB
+      url: azure-cosmosdb-add-connected-service.md
+    - text: Azure 金鑰保存庫
+      url: /azure/key-vault/vs-key-vault-add-connected-service
+    - text: Azure SignalR
+      url: azure-signalr-add-connected-service.md
+    - text: Azure SQL Database
+      url: azure-sql-database-add-connected-service.md
+    - text: Azure 儲存體
+      url: vs-azure-tools-connected-services-storage.md
 - title: Azure 雲端服務
   linkLists:
   - linkListType: how-to-guide
@@ -113,7 +113,7 @@ landingContent:
     links:
     - text: Azure 資源群組
       url: /azure/azure-resource-manager/vs-azure-tools-resource-groups-deployment-projects-create-deploy
-    - text: 資料湖分析
+    - text: Data Lake Analytics
       url: /azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
     - text: 串流分析
       url: /azure/stream-analytics/stream-analytics-quick-create-vs
