@@ -1,5 +1,5 @@
 ---
-title: 如何使用深色主題及變更 Visual Studio 中的文字色彩
+title: 如何使用深色主題及變更編輯器中的文字色彩
 description: 瞭解如何將預設的 Visual Studio 色彩主題設定為深色模式，並在文字編輯器中變更字型色彩。
 ms.date: 08/20/2020
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec0015f6abd434884d039407209d741febd41121
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 3b0e7b11fae63b9a2233b7391805760d3fdd7d27
+ms.sourcegitcommit: cf5b5437f0b43c6d52c479e1a2c443338bd27cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711712"
+ms.locfileid: "88724922"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-text-editor"></a>如何：個人化 Visual Studio IDE 和文字編輯器
 
@@ -68,7 +68,7 @@ Visual Studio 使用者介面的預設色彩佈景主題為 [藍色]****。 讓�
 
 ::: moniker-end
 
-## <a name="change-text-color"></a>變更文字色彩
+## <a name="change-text-colors-in-the-editor"></a>變更編輯器中的文字色彩
 
 現在我們將自訂編輯器的部分文字色彩。 首先，讓我們建立新的 XML 檔案來查看預設色彩。
 
