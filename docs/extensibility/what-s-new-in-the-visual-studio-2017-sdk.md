@@ -1,5 +1,5 @@
 ---
-title: 視覺工作室 2017 SDK 中的&#39;新增功能 |微軟文件
+title: '&apos;Visual Studio 2017 SDK 的新功能 |Microsoft Docs'
 ms.date: 10/31/2017
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
@@ -8,42 +8,42 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88330aa68f2a3752431fd2fbe6c5c1c649acbb8b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 6fb5b81341f8184d713755b3b934fbae4c8031b1
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697201"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711595"
 ---
-# <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>視覺工作室 2017 SDK 中的&#39;新增功能
+# <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Visual Studio 2017 SDK 的新功能&#39;
 
-Visual Studio SDK 具有以下 Visual Studio 2017 的新功能和更新功能。
+Visual Studio SDK 具有 Visual Studio 2017 的下列新功能和更新功能。
 
 ## <a name="vsix-v3-format"></a>VSIX v3 格式
 
-為了支援 Visual Studio 2017 的新輕型安裝,VSIX 擴展清單格式已更新為版本 3 (VSIX v3)。
+為了支援 Visual Studio 2017 的新輕量安裝，VSIX 擴充功能資訊清單格式已更新為第3版 (VSIX v3) 。
 
-新格式支援:
+新的格式支援：
 
-* 顯式聲明由 VSIX 安裝程式檢測到和安裝的先決條件。
-* 擴展安裝上的 Ngen 程式集。
-* 在通常的擴展根目錄之外安裝資源。
+* 明確宣告要由 VSIXInstaller 偵測並安裝的必要條件。
+* 擴充功能安裝上的 Ngen 元件。
+* 在一般的擴充功能根目錄之外安裝資產。
 
-要瞭解這些更改,請參閱以下主題:
+若要瞭解這些變更，請參閱下列主題：
 
-* [2017 年可視化工作室擴充性的更改](breaking-changes-2017.md)
+* [Visual Studio 2017 的擴充性變更](breaking-changes-2017.md)
 * [VSIX v3 中的 Ngen 支援](ngen-support.md)
 * [在延伸模組資料夾之外進行安裝](set-install-root.md)
-* [Visual Studio 2017 擴充性常見問題](faq-2017.md)
+* [Visual Studio 2017 擴充性的常見問題](faq-2017.md)
 
-## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>將擴充性項目移到 Visual Studio 2017
+## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>將擴充性專案遷移至 Visual Studio 2017
 
-要瞭解如何將擴充性專案及其 VSIX 清單更新到 Visual Studio 2017,請參閱[如何:將擴充性專案遷移到 Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。
+若要瞭解如何將您的擴充性專案及其 VSIX 資訊清單更新為 Visual Studio 2017，請參閱如何：將擴充性 [專案遷移至 Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。
 
-## <a name="custom-project-and-item-templates"></a>自訂項目與專案樣本
+## <a name="custom-project-and-item-templates"></a>自訂專案和專案範本
 
-從 Visual Studio 2017 開始,將不再執行自定義專案和專案範本的掃描。 相反,擴展必須提供描述這些範本的安裝位置的範本清單檔。 您可以使用 Visual Studio 2017 更新 VSIX 擴展。 如果使用 MSI 部署副檔名,則必須手動生成範本清單檔。 有關詳細資訊,請參閱為[Visual Studio 2017 升級自訂項目和專案範本](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)。 範本清單架構記錄在[可視化工作室範本清單架構引用](../extensibility/visual-studio-template-manifest-schema-reference.md)中。
+從 Visual Studio 2017 開始，將不會再執行自訂專案和專案範本的掃描。 相反地，此延伸模組必須提供描述這些範本之安裝位置的範本資訊清單檔。 您可以使用 Visual Studio 2017 來更新 VSIX 擴充功能。 如果您使用 MSI 部署擴充功能，您必須手動產生範本資訊清單檔案。 如需詳細資訊，請參閱 [升級 Visual Studio 2017 的自訂專案和專案範本](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)。 範本資訊清單架構記載于 [Visual Studio 範本資訊清單架構參考](../extensibility/visual-studio-template-manifest-schema-reference.md)中。
 
-## <a name="updated-extension-performance-guidelines"></a>更新延伸效能指南
+## <a name="updated-extension-performance-guidelines"></a>更新的延伸模組效能指導方針
 
-在[「管理 VSPackages」](managing-vspackages.md)下,有一個新的[「如何:診斷擴展性能](how-to-diagnose-extension-performance.md)文章」,以示範如何檢測和分析擴展對 Visual Studio 啟動和解決方案載入時間的影響。
+有一項新的 how to：在 [[管理 vspackage](managing-vspackages.md) ] 底下[診斷延伸模組效能](how-to-diagnose-extension-performance.md)文章，以示範如何偵測和分析擴充功能對 Visual Studio 啟動和解決方案載入時間的影響。

@@ -1,22 +1,24 @@
 ---
-title: 設定色彩佈景主題和字型
-ms.date: 03/23/2020
-ms.topic: quickstart
+title: 如何使用深色主題及變更 Visual Studio 中的文字色彩
+description: 瞭解如何將預設的 Visual Studio 色彩主題設定為深色模式，並在文字編輯器中變更字型色彩。
+ms.date: 08/20/2020
+ms.topic: how-to
+ms.custom: contperfq1
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0b7b4e439f33e4e2eed8609d7e85e098068aea
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: ec0015f6abd434884d039407209d741febd41121
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233157"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711712"
 ---
-# <a name="personalize-the-visual-studio-ide-and-editor"></a>個人化 Visual Studio 整合式開發環境 (IDE) 及編輯器
+# <a name="how-to-personalize-the-visual-studio-ide-and-text-editor"></a>如何：個人化 Visual Studio IDE 和文字編輯器
 
-在這段 5-10 分鐘的教學課程中，我們會選取深色佈景主題，來自訂 Visual Studio 色彩佈景主題。 我們還會為文字編輯器中的兩種不同文字自訂色彩。
+在此操作說明文章中，我們會選取深色主題來自訂 Visual Studio 色彩主題。 我們還會為文字編輯器中的兩種不同文字自訂色彩。
 
 ::: moniker range="vs-2017"
 
@@ -30,13 +32,13 @@ ms.locfileid: "80233157"
 
 ::: moniker-end
 
-## <a name="set-the-color-theme"></a>設定色彩佈景主題
+## <a name="set-the-color-theme-for-the-ide"></a>設定 IDE 的色彩主題
 
 Visual Studio 使用者介面的預設色彩佈景主題為 [藍色]****。 讓我們將它變更為 [深色]****。
 
 1. 在功能表列上 (即 [檔案]**** 和 [編輯]**** 這類功能表列)，選擇 [工具]**** > [選項]****。
 
-1. 在 **"環境** > **常規"** 選項頁上，將 **"顏色主題**選擇"更改為 **"深色**"，然後選擇 **"確定**"。
+1. 在 [**環境**  >  **一般**選項] 頁面上，將**色彩主題**選取範圍變更為 [**深色**]，然後選擇 **[確定]**。
 
    整個 Visual Studio 開發環境 (IDE) 色彩佈景主題變更為 [深色]****。
 
@@ -55,14 +57,14 @@ Visual Studio 使用者介面的預設色彩佈景主題為 [藍色]****。 讓�
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) \(英文\) 安裝 **Visual Studio 色彩佈景主題編輯器**，以安裝額外的預先定義佈景主題。 安裝此工具後，其他顏色主題將顯示在 **"顏色主題**"下拉清單中。
+> 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) \(英文\) 安裝 **Visual Studio 色彩佈景主題編輯器**，以安裝額外的預先定義佈景主題。 安裝此工具之後，其他色彩主題會出現在 [ **色彩主題** ] 下拉式清單中。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> 您可以通過從[視覺工作室市場](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner)安裝**視覺工作室色彩主題設計器**來創建自己的主題。
+> 您可以從[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner)安裝**Visual Studio 色彩主題設計**工具，以建立您自己的主題。
 
 ::: moniker-end
 
@@ -70,7 +72,7 @@ Visual Studio 使用者介面的預設色彩佈景主題為 [藍色]****。 讓�
 
 現在我們將自訂編輯器的部分文字色彩。 首先，讓我們建立新的 XML 檔案來查看預設色彩。
 
-1. 從功能表列中，選擇 **"檔** > **新** > **檔**"。
+1. 從功能表**欄選擇 [** 檔案新檔案]  >  **New**  >  ** **。
 
 1. 在 [新增檔案]**** 對話方塊中的 [一般]**** 類別下，選擇 [XML 檔案]****，然後選擇 [開啟]****。
 
@@ -126,7 +128,8 @@ Visual Studio 使用者介面的預設色彩佈景主題為 [藍色]****。 讓�
 
 我們已探索在 Visual Studio 中自訂色彩的幾種方式。 希望您繼續探索 [選項]**** 對話方塊中的其他自訂選項，以真正打造屬於您自己的 Visual Studio。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
+- [在 Visual Studio 中變更字型、色彩和高對比選項](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 - [自訂編輯器](../ide/how-to-change-text-case-in-the-editor.md)
-- [視覺工作室 IDE 概述](../get-started/visual-studio-ide.md)
+- [Visual Studio IDE 總覽](../get-started/visual-studio-ide.md)
