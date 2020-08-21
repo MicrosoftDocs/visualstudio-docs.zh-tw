@@ -7,7 +7,7 @@
     - name: 原始程式碼分析
       expanded: true
       items:
-        - name: 總覽
+        - name: 概觀
           displayName: 'roslyn analyzers, source analysis'
           href: roslyn-analyzers-overview.md
         - name: 安裝原始程式碼分析器
@@ -989,5 +989,7 @@
               items:
                 - name: 概觀
                   displayName: publish warnings
-                - name: IL3000：以單一檔案形式發佈時，避免使用存取組件檔案路徑
+                - name: IL3000：以單一檔案形式發佈時，避免存取組件檔路徑
                   href: il3000.md
+                - name: IL3001：以單一檔案形式發佈時，避免存取組件檔路徑
+                  href: il3001.md

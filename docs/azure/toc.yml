@@ -17,12 +17,22 @@
 - name: 連線到 Azure 服務
   expanded: false
   items:
-    - name: 新增 Azure 儲存體
-      href: vs-azure-tools-connected-services-storage.md
-    - name: 新增 Azure Key Vault
-      href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: 新增 Azure Active Directory (AD)
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: 新增 Azure 應用程式見解
+      href: azure-app-insights-add-connected-service.md
+    - name: 新增 Azure Cache for Redis
+      href: azure-cache-for-redis-add-connected-service.md
+    - name: 新增 Azure CosmosDB
+      href: azure-cosmosdb-add-connected-service.md
+    - name: 新增 Azure Key Vault
+      href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: 新增 Azure SignalR
+      href: azure-signalr-add-connected-service.md
+    - name: 新增 Azure SQL Database
+      href: azure-sql-database-add-connected-service.md
+    - name: 新增 Azure 儲存體
+      href: vs-azure-tools-connected-services-storage.md
 - name: Azure 雲端服務部署
   expanded: false
   items:

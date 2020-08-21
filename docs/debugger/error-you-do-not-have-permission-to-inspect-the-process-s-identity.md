@@ -1,5 +1,5 @@
 ---
-title: 錯誤-您沒有檢查進程&#39;s 身分識別的許可權 |Microsoft Docs
+title: 錯誤-您沒有檢查進程身分識別的許可權 &apos; |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8bd1bc11d42d8aed0b816a667fe5adcc139a42c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: e91745b8910a9e87ccd4a22fe09c6764a2ab4c6a
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85459918"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706525"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>錯誤：您沒有檢查進程&#39;s 身分識別的許可權
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>錯誤：您沒有許可權可檢查進程&#39;s 的身分識別
 您沒有檢查此處理序識別的權限。 這很可能是因為系統組態所造成。
 
  偵錯工具無法檢查處理序識別，而這是進行偵錯的必要資訊。 最可能的原因是已停用終端機服務 (Terminal Service)。 預設狀況下會啟用終端機服務。 請依照下列步驟重新啟用終端機服務。
@@ -40,9 +40,9 @@ ms.locfileid: "85459918"
 
 6. 在 [服務]**** 清單中，以滑鼠右鍵按一下 [終端機服務]****，然後選擇 [屬性]****。
 
-7. 在 [**終端機服務屬性**] 視窗中，移至 [**一般**] 索引標籤，將 [**啟動類型**] 設定為 [**手動**
+7. 在 [**終端機服務屬性**] 視窗中，移至 [一般] 索引標籤，並將**啟動類型**設定為 **[** **手動**]
 
-8. 按一下 [確定]****。
+8. 按一下 [確定]。
 
 9. 重新啟動電腦。
 
@@ -52,7 +52,7 @@ ms.locfileid: "85459918"
 
 1. 按一下 [開始]****，然後以滑鼠右鍵按一下 [我的電腦]****。
 
-2. 選擇 [內容]。
+2. 選擇 [內容]  。
 
      [系統屬性]**** 視窗隨即顯示。
 
@@ -60,7 +60,7 @@ ms.locfileid: "85459918"
 
 4. 在 [遠端桌面]**** 下，選取 [允許使用者遠端連線到這部電腦]****。
 
-5. 按一下 [確定]****。
+5. 按一下 [確定]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)

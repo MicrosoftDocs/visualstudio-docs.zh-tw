@@ -1,5 +1,5 @@
 ---
-title: 錯誤-因為系統上已啟用內核偵錯工具，所以無法&#39;t 進行偵測 |Microsoft Docs
+title: 錯誤- &apos; 因為系統上已啟用內核偵錯工具，所以無法進行偵錯工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c27ef642697a8514a0809095b980d8c38a47d8
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 5c94d605459720722b0e1360ab3a56539667d51e
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460861"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706629"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：因為系統上已啟用內核偵錯工具，所以無法&#39;t 進行偵測
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：因為系統上已啟用內核偵錯工具，所以無法進行&#39;t 的偵錯工具
 當您對 Managed 程式碼進行偵錯時，可能會收到下列錯誤訊息：
 
 ```cmd
@@ -36,7 +36,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 - 使用 CLR 2.0、3.0 或 3.5 版的應用程式。
 
-## <a name="solution"></a>解決方法
+## <a name="solution"></a>解決方案
 
 #### <a name="to-fix-this-problem"></a>若要修復這個問題
 
@@ -98,6 +98,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
      `gn`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)
