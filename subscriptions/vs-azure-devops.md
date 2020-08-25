@@ -57,7 +57,7 @@ ms.locfileid: "88801070"
 - 是否有關於 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 產品或服務的問題？  造訪 [Visual Studio 支援服務](https://visualstudio.microsoft.com/support/)。
 - [Azure DevOps 檔](/azure/devops/)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/)
 - [Azure 檔](https://docs.microsoft.com/azure/)
