@@ -17,26 +17,26 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d900c0f51b14450f38caf06738739daef2549235
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f6d069bfa462b8aa75fc9247c08b3662c4a445fd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580096"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801798"
 ---
-# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>教程：使用視覺化工作室 2019 使用實體框架創建您的第一個ASP.NET核心應用程式
+# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>教學課程：使用 Entity Framework 搭配 Visual Studio 2019 來建立您的第一個 ASP.NET Core 應用程式
 
 在本教學課程中，您將建立可使用資料的 ASP.NET Core Web 應用程式，並將它部署至 Azure。 本教學課程包含下列步驟：
 
-- [第 1 步：安裝視覺化工作室 2019](#step-1-install-visual-studio-2019)
-- [第 2 步：創建第一個ASP.NET核心 Web 應用](tutorial-aspnet-core-ef-step-02.md)
-- [第 3 步：使用實體框架處理資料](tutorial-aspnet-core-ef-step-03.md)
-- [第 4 步：從 ASP.NET核心應用公開 Web API](tutorial-aspnet-core-ef-step-04.md)
-- [第 5 步：將ASP.NET核心應用部署到 Azure](tutorial-aspnet-core-ef-step-05.md)
+- [步驟1：安裝 Visual Studio 2019](#step-1-install-visual-studio-2019)
+- [步驟2：建立您的第一個 ASP.NET Core web 應用程式](tutorial-aspnet-core-ef-step-02.md)
+- [步驟3：使用 Entity Framework 處理資料](tutorial-aspnet-core-ef-step-03.md)
+- [步驟4：從您的 ASP.NET Core 應用程式公開 web API](tutorial-aspnet-core-ef-step-04.md)
+- [步驟5：將您的 ASP.NET Core 應用程式部署至 Azure](tutorial-aspnet-core-ef-step-05.md)
 
-## <a name="step-1-install-visual-studio-2019"></a>第 1 步：安裝視覺化工作室 2019
+## <a name="step-1-install-visual-studio-2019"></a>步驟1：安裝 Visual Studio 2019
 
-透過此影片教學課程和逐步指示，了解如何安裝 Visual Studio 2019。 如果您已經安裝了 Visual Studio，請跳到[步驟 2：創建第一ASP.NET核心 Web 應用](tutorial-aspnet-core-ef-step-02.md)。
+透過此影片教學課程和逐步指示，了解如何安裝 Visual Studio 2019。 如果您已經安裝 Visual Studio，請直接跳到 [步驟2：建立您的第一個 ASP.NET Core web 應用程式](tutorial-aspnet-core-ef-step-02.md)。
 
 _觀看此影片並跟著操作，以安裝 Visual Studio 並建立您的第一個 ASP.NET Core 應用程式。_
 
@@ -85,10 +85,10 @@ Visual Studio 可以用於許多不同種類的開發，且工作負載讓您輕
 
 - 無驗證。
 - 個別使用者帳戶。 這些都儲存在本機或以 Azure 為基礎的資料庫。
-- 公司或學校帳戶公司或學校帳戶。 此選項使用 Active Directory、Azure AD 或 Office 365 來驗證。
+- 公司或學校帳戶公司或學校帳戶。 此選項會使用 Active Directory、Azure AD 或 Microsoft 365 進行驗證。
 - Windows 驗證。 適合內部網路應用程式。
 
-選擇沒有身份驗證的標準 Web 應用程式範本，然後按一下"**創建**"。
+選取不含驗證的標準 Web 應用程式範本，然後按一下 [ **建立**]。
 
 ![Visual Studio 2019 選擇 ASP.NET Core 專案選項](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -96,8 +96,8 @@ Visual Studio 可以用於許多不同種類的開發，且工作負載讓您輕
 
 在下一個影片中，您將會深入了解您的第一個 ASP.NET Core 專案。
 
-[教程：創建第一個ASP.NET核心 Web 應用](tutorial-aspnet-core-ef-step-02.md)
+[教學課程：建立您的第一個 ASP.NET Core Web 應用程式](tutorial-aspnet-core-ef-step-02.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [教程：從 C# 和 ASP.NET 核心開始](tutorial-aspnet-core.md)更詳細的教程，無需視頻演練
+- [教學課程：開始使用 c # 和 ASP.NET Core](tutorial-aspnet-core.md) 無影片逐步解說的更詳細教學課程

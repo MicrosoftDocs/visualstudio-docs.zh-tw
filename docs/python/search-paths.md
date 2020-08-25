@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a23afff970405bf7ae1bbd1c8aad326eb133780
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 10430c6eba57c97dd46a706d0ec2f532cd08d4f3
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520376"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801161"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜尋路徑
 
@@ -25,11 +25,11 @@ ms.locfileid: "85520376"
 1. 包含您正在執行之 Python 程式碼的資料夾。
 1. 適用的環境變數所定義的「模組搜尋路徑」。 (請參閱核心 Python 文件中的[模組搜尋路徑 (英文)](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) 和[環境變數 (英文)](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH))。
 
-不過，即使針對整個系統設定了搜尋路徑環境變數，Visual Studio 也會將它忽略。 事實上，它會被忽略，*因為*它是針對整個系統設定的，因此會引發一些無法自動回答的問題：所參考的模組是否適用于 python 2.7 或 python 3.6 +？ 它們是否將覆寫標準程式庫程式庫模組？ 開發人員是否知道此行為，或它是否是惡意的劫持嘗試？
+不過，即使針對整個系統設定了搜尋路徑環境變數，Visual Studio 也會將它忽略。 事實上，它會被忽略， *因為* 它是針對整個系統設定的，因此會引發無法自動回答的特定問題：所參考的模組是否適用于 python 2.7 或 Python 3.6 +？ 它們是否將覆寫標準程式庫程式庫模組？ 開發人員是否知道此行為，或它是否是惡意的劫持嘗試？
 
 因此，Visual Studio 提供一個可在環境和專案中直接指定搜尋路徑的方法。 您在 Visual Studio 中執行或偵錯的程式碼，會從 `PYTHONPATH` (和其他對等的變數) 值來接收搜尋路徑。 透過新增搜尋路徑，Visual Studio 便會檢查那些位置中的程式庫，並視需要為它們建置 IntelliSense 資料庫 (Visual Studio 2017 15.5 版及較早版本；視程式庫的數目而定，建構資料庫可能需要一些時間)。
 
-若要新增搜尋路徑，請前往 [方案總管]****、展開您的專案節點、以滑鼠右鍵按一下 [搜尋路徑]****、選取 [將資料夾新增至搜尋路徑]****：
+若要新增搜尋路徑，請移至 **方案總管**，展開專案節點，以滑鼠右鍵按一下 [ **搜尋路徑**]，然後選取 [ **將資料夾新增至搜尋路徑**]：
 
 ::: moniker range="vs-2017"
 ![[方案總管] 中，搜尋路徑上的 [將資料夾新增至搜尋路徑] 命令](media/search-paths-command.png)

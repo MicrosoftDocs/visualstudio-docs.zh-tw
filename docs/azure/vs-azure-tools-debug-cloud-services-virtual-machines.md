@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 06344d536f0bb6db5f13329ece2c5202205bcefb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 68b64b3097d2b26d30593ac63de5e531d6cc7736
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280709"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800485"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>在 Visual Studio 中進行 Azure 雲端服務或虛擬機器的偵錯
 
@@ -25,11 +25,11 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
 使用 Azure 計算模擬器在本機電腦上偵錯您的雲端服務可以節省時間和金錢。 透過在部署服務之前於本機偵錯服務，您可以改善可靠性和效能，而不需支付運算時間。 不過，某些錯誤可能只有當您在 Azure 中執行雲端服務本身時才會發生。 如果在發佈您的服務時啟用遠端偵錯，接著將偵錯工具附加至角色執行個體，則可以偵錯這些錯誤。
 
-模擬器會模擬 Azure 運算服務，並在您的本機環境中執行，使得您可以在部署雲端服務之前對其測試和偵錯。 模擬器會處理您的角色執行個體的生命週期，並可讓您存取模擬的資源，例如本機儲存體。 當您從 Visual Studio 偵錯或執行您的服務時，它會自動啟動模擬器做為背景應用程式，然後將服務部署至模擬器。 當服務在本機環境中執行時，您可以使用模擬器來檢視服矛。 您可以執行完整版或精簡版的模擬器。 （從 Azure 2.3 開始，此模擬器的 express 版本是預設值）。請參閱[使用模擬器 Express 在本機執行雲端服務並對其進行偵錯工具](vs-azure-tools-emulator-express-debug-run.md)。
+模擬器會模擬 Azure 運算服務，並在您的本機環境中執行，使得您可以在部署雲端服務之前對其測試和偵錯。 模擬器會處理您的角色執行個體的生命週期，並可讓您存取模擬的資源，例如本機儲存體。 當您從 Visual Studio 偵錯或執行您的服務時，它會自動啟動模擬器做為背景應用程式，然後將服務部署至模擬器。 當服務在本機環境中執行時，您可以使用模擬器來檢視服矛。 您可以執行完整版或精簡版的模擬器。  (從 Azure 2.3 開始，此模擬器的 express 版本是預設值。 ) 請參閱 [使用模擬器 express 在本機執行和偵測雲端服務](vs-azure-tools-emulator-express-debug-run.md)。
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>在您的本機電腦上偵錯您的雲端服務
 
-1. 在功能表列上選擇 [偵錯]****、[開始偵錯]**** 以執行 Azure 雲端服務專案。 或者，您可以按 F5。 您會看到正在啟動計算模擬器的訊息。 當模擬器啟動時，系統匣圖示可加以確認。
+1. 在功能表列上，選取 [ **Debug**  >  **開始調試**程式] 以執行您的 Azure 雲端服務專案。 或者，您可以按 F5。 您會看到正在啟動計算模擬器的訊息。 當模擬器啟動時，系統匣圖示可加以確認。
 
     ![系統匣中的 Azure 模擬器](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
@@ -37,7 +37,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
     UI 的左方窗格會顯示目前已部署至計算模擬器的服務，以及每個服務正在執行的角色執行個體。 您可以選擇將在右窗格中顯示生命週期、記錄和診斷資訊的服務或角色。 如果您將焦點放在包含視窗的上邊界時，它會展開以填滿右方窗格。
 
-3. 選取 [偵錯]**** 功能表中的命令，並在您的程式碼中設定中斷點，來逐步執行應用程式。 在偵錯工具中逐步執行應用程式時，窗格會隨著應用程式的目前狀態而更新。 當您停止偵錯時，應用程式部署會遭到刪除。 如果您的應用程式包含 Web 角色，而且您已設定 [啟動] 動作屬性來啟動 Web 瀏覽器，Visual Studio 會在瀏覽器中啟動您的 Web 應用程式。 如果您變更服務組態中角色的執行個體數目，您必須停止雲端服務，然後重新啟動偵錯，以便對此角色的新執行個體進行偵錯。
+3. 選擇 [ **調試** 程式] 功能表上的命令，並在您的程式碼中設定中斷點，以逐步執行應用程式。 在偵錯工具中逐步執行應用程式時，窗格會隨著應用程式的目前狀態而更新。 當您停止偵錯時，應用程式部署會遭到刪除。 如果您的應用程式包含 Web 角色，而且您已設定 [啟動] 動作屬性來啟動 Web 瀏覽器，Visual Studio 會在瀏覽器中啟動您的 Web 應用程式。 如果您變更服務組態中角色的執行個體數目，您必須停止雲端服務，然後重新啟動偵錯，以便對此角色的新執行個體進行偵錯。
 
     > [!NOTE]
     > 停止執行或偵錯您的服務時，不會停止本機計算模擬器和儲存體模擬器。 您必須從通知區域明確停止它們。
@@ -79,7 +79,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
     ![選取程式碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. 若要識別附加偵錯工具的處理序，請開啟 [處理序] 對話方塊，在功能表列上依序選擇 [偵錯] > [Windows]、[處理序]。 (鍵盤：Ctrl+Alt+Z) 若要中斷特定處理序的連結，請開啟其捷徑功能表，然後選取 [中斷處理序連結]****。 或者，在「伺服器總管」中找出執行個體節點、尋找處理序、開啟其捷徑功能表，然後選取 [中斷處理序連結] ****。
+4. 若要識別附加偵錯工具的進程，請在功能表列上選取 [ **Debug**  >  **Windows**  >  **進程**]，然後開啟 [**進程**] 對話方塊。 (鍵盤：Ctrl+Alt+Z) 若要中斷特定處理序的連結，請開啟其捷徑功能表，然後選取 [中斷處理序連結]****。 或者，在「伺服器總管」中找出執行個體節點、尋找處理序、開啟其捷徑功能表，然後選取 [中斷處理序連結] ****。
 
     ![偵錯處理序](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -120,7 +120,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
 3. 遠端偵錯擴充功能安裝完成後，開啟虛擬機器的操作功能表，然後選取 [附加偵錯工具...] ****
 
-    Azure 會取得虛擬機器上處理序的清單，並將清單顯示在 [附加至處理序] 對話方塊。
+    Azure 會取得虛擬機器上的處理序清單並顯示於 [**附加至處理序**] 對話方塊中。
 
     ![附加偵錯工具命令](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
@@ -128,7 +128,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 
     ![選取程式碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. 選取您想要在虛擬機器上偵錯的處理序，然後選取 [附加] ****。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱[在 Visual Studio 中偵錯一或多個處理序](https://msdn.microsoft.com/library/jj919165.aspx)和 [Azure 角色架構](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/)。
+5. 選擇您想要在虛擬機器上進行偵錯工具的進程，然後選取 [ **附加**]。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱[在 Visual Studio 中偵錯一或多個處理序](https://msdn.microsoft.com/library/jj919165.aspx)和 [Azure 角色架構](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/)。
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>建立 Web 專案和虛擬機器進行偵錯
 
@@ -140,7 +140,7 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
 
 1. 在 Visual Studio 中，建立新的 ASP.NET Web 應用程式。
 
-2. 在 [新增 ASP.NET 專案] 對話方塊中，於 [Azure] 區段的下拉式清單方塊中選擇 [虛擬機器] **** 。 讓 [**建立遠端資源**] 核取方塊保持選取狀態。 選取 [確定] **** 以繼續操作。
+2. 在 [新增 ASP.NET 專案] 對話方塊中，于 [Azure] 區段的下拉式清單方塊中選取 [ **虛擬機器** ]。 讓 [**建立遠端資源**] 核取方塊保持選取狀態。 選取 [確定] **** 以繼續操作。
 
     [**在 Azure 上建立虛擬機器**] 對話方塊隨即出現。
 
@@ -149,13 +149,13 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
     > [!NOTE]
     > 如果您還沒登入，將會要求您登入 Azure 帳戶。
 
-3. 選取虛擬機器的各種設定，然後選取 [確定] ****。 如需詳細資訊，請參閱 [虛擬機器](/azure/virtual-machines/) 。
+3. 選擇虛擬機器的各種設定，然後選取 **[確定]**。 如需詳細資訊，請參閱 [虛擬機器](/azure/virtual-machines/) 。
 
     您輸入的 DNS 名稱會成為虛擬機器的名稱。
 
     ![在 Azure 上建立虛擬機器對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746724.png)
 
-    Azure 會建立虛擬機器，然後佈建及設定端點，例如遠端桌面和 Web Deploy
+    Azure 會建立虛擬機器，然後布建及設定端點，例如遠端桌面和 Web Deploy。
 
 4. 虛擬機器完全設定好之後，請在伺服器總管中選取虛擬機器的節點。
 
@@ -175,7 +175,7 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
 
 8. 專案發佈之後，在「伺服器總管」中的虛擬機器操作功能表上，選取 [附加偵錯工具...] ****
 
-    Azure 會取得虛擬機器上處理序的清單，並將清單顯示在 [附加至處理序] 對話方塊。
+    Azure 會取得虛擬機器上的處理序清單並顯示於 [**附加至處理序**] 對話方塊中。
 
     ![附加偵錯工具命令](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
@@ -183,10 +183,10 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
 
     ![選取程式碼類型對話方塊](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-10. 選取您想要在虛擬機器上偵錯的處理序，然後選取 [附加] ****。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱 [在 Visual Studio 中偵錯一或多個處理序](https://msdn.microsoft.com/library/jj919165.aspx) 。
+10. 選擇您想要在虛擬機器上進行偵錯工具的進程，然後選取 [ **附加**]。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱 [在 Visual Studio 中偵錯一或多個處理序](https://msdn.microsoft.com/library/jj919165.aspx) 。
 
 ## <a name="next-steps"></a>後續步驟
 
-* 使用**IntelliTrace**從發行伺服器收集呼叫和事件的記錄檔。 請參閱 [使用 IntelliTrace 和 Visual Studio 偵錯發佈的雲端服務](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)。
+* 使用 **IntelliTrace** 從發行伺服器收集呼叫和事件的記錄檔。 請參閱 [使用 IntelliTrace 和 Visual Studio 偵錯發佈的雲端服務](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)。
 
 * 不論角色是在開發環境中或在 Azure 中執行，請使用 **Azure 診斷** 來記錄在角色內執行的程式碼的詳細資訊。 請參閱 [使用 Azure 診斷收集記錄資料](/azure/cloud-services/cloud-services-dotnet-diagnostics)。

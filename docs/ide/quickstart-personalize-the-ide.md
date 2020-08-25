@@ -1,6 +1,6 @@
 ---
-title: 如何使用深色主題及變更編輯器中的文字色彩
-description: 瞭解如何將預設的 Visual Studio 色彩主題設定為深色模式，並在文字編輯器中變更字型色彩。
+title: 設定 Visual Studio 深色主題並變更文字色彩
+description: 瞭解如何將預設的 Visual Studio 色彩主題變更為深色模式，並在程式碼編輯器中變更字型色彩。
 ms.date: 08/20/2020
 ms.topic: how-to
 ms.custom: contperfq1
@@ -9,16 +9,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b0e7b11fae63b9a2233b7391805760d3fdd7d27
-ms.sourcegitcommit: cf5b5437f0b43c6d52c479e1a2c443338bd27cda
+ms.openlocfilehash: d58bf3a00d3db208abfad23a67bd115914f14a15
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88724922"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801395"
 ---
-# <a name="how-to-personalize-the-visual-studio-ide-and-text-editor"></a>如何：個人化 Visual Studio IDE 和文字編輯器
+# <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>如何：將 Visual Studio IDE 和編輯器個人化
 
-在此操作說明文章中，我們會選取深色主題來自訂 Visual Studio 色彩主題。 我們還會為文字編輯器中的兩種不同文字自訂色彩。
+在此操作說明文章中，我們將從預設的藍色主題，將 Visual Studio 色彩主題自訂為深色主題。 然後，我們會在程式碼編輯器中自訂兩個不同類型之文字的色彩。
 
 ::: moniker range="vs-2017"
 
@@ -126,10 +126,10 @@ Visual Studio 使用者介面的預設色彩佈景主題為 [藍色]****。 讓�
 
    ![使用新字型色彩的 XML 檔案](media/quickstart-personalize-xml-file-new-colors.png)
 
-我們已探索在 Visual Studio 中自訂色彩的幾種方式。 希望您繼續探索 [選項]**** 對話方塊中的其他自訂選項，以真正打造屬於您自己的 Visual Studio。
+我們已探索在 Visual Studio 中自訂色彩的幾種方式。 我們希望您將探索 [ [**選項**](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) ] 對話方塊中的其他自訂選項，以真正 Visual Studio 您自己的選項。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [在 Visual Studio 中變更字型、色彩和高對比選項](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-- [自訂編輯器](../ide/how-to-change-text-case-in-the-editor.md)
-- [Visual Studio IDE 總覽](../get-started/visual-studio-ide.md)
+- [如何：在 Visual Studio 中變更字型、色彩和主題](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [如何：變更編輯器中的文字大小寫](../ide/how-to-change-text-case-in-the-editor.md)
+- [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)

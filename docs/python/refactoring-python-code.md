@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ea735dd5cc3da8d5509961dbc8b27eb6106fd2af
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: be93ac7b8bc0659da522abcf6000d97ec05d46b9
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520558"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801330"
 ---
 # <a name="refactor-python-code"></a>重構 Python 程式碼
 
@@ -42,7 +42,7 @@ Visual Studio 提供數個可自動轉換和清除 Python 原始程式碼的命�
 ## <a name="extract-method"></a>擷取方法
 
 1. 選取要擷取到另一個方法的程式碼或運算式。
-2. 選取 [**編輯**  >  **重構**  >  **解壓縮方法**] 功能表命令，或輸入**Ctrl** + **R**  >  **M**。
+2. 選取 [**編輯**  >  **重構**  >  **解壓縮方法**] 功能表命令或輸入**Ctrl** + **R**  >  **M**。
 3. 在出現的對話方塊中，輸入新的方法名稱，指定將它擷取到何處，並選取所有結束變數。 未選取要結束的變數會轉變成方法引數︰
 
    ![[擷取方法] 對話方塊](media/code-refactor-extract-method-1.png)
@@ -71,7 +71,7 @@ Visual Studio 會嘗試篩選出未實際定義於模組中的成員，例如已
 
 撰寫程式碼時，對於完全未使用的模組，很容易得到 `import` 陳述式。 由於 Visual Studio 會分析您的程式碼，因此可以查看範圍內是否使用了匯入的名稱 (陳述式即出現在該範圍下方)，以自動判斷 `import` 陳述式是否有必要。
 
-以滑鼠右鍵按一下編輯器中的任意處並選取 [移除匯入]****，這樣會提供選項讓您從 [所有範圍]**** 或僅從 [目前的範圍]**** 移除：
+使用滑鼠右鍵按一下編輯器中的任何位置，然後選取 [ **移除匯入**]，這可讓您從 **所有範圍** 或只移除 **目前的範圍**中移除選項：
 
 ![[移除匯入] 功能表](media/code-refactor-remove-imports-1.png)
 

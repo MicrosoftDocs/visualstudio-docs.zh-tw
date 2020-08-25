@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638582"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800199"
 ---
 # <a name="installation"></a>安裝
 
@@ -27,17 +27,16 @@ Visual Studio Tools for AI 可以安裝在 Windows 64 位元作業系統上。
 
 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) 或從 Visual Studio 內下載這些工具：
 
-1. 選擇**工具** > **延伸與更新**。
+1. 選取 [**工具**  >  **擴充功能和更新**]。
 
    ![Visual Studio 中的 [擴充功能和更新] 功能表](media/installation/extensions.png)
 
 2. 在 [擴充功能和更新]**** 對話方塊中，選取左側的 [線上]****。
 3. 在右上角的 [搜尋] 方塊中，鍵入或輸入 "tools for ai"。
 4. 從結果中選取 [Visual Studio Tools for AI]****。
-5. 按一下 [下載]  。
+5. 選取 [下載]。
 
 ## <a name="prepare-your-local-machine"></a>準備本機電腦
-
 在本機電腦上為深度學習模型定型之前，請確定您已安裝適用的先決條件。 這包括確定您的 NVIDIA GPU (如果有的話) 有最新的驅動程式與程式庫。 此外，請確定您已安裝 Python 和 Python 程式庫 (例如 NumPy、SciPy)，以及您打算在專案中使用的適當深度學習架構，例如 Microsoft Cognitive Toolkit (CNTK)、TensorFlow、Caffe2、MXNet、Keras、Theano、PyTorch 與 Chainer。
 
 > [!NOTE]

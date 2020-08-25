@@ -1,5 +1,5 @@
 ---
-title: 開發最佳作法： Office 中的 COM、VSTO、& 的 VBA 增益集
+title: 開發最佳作法： Office 中的 COM、VSTO、& VBA 增益集
 ms.date: 07/25/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,57 +11,57 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918632"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801499"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office 中 COM、VSTO 及 VBA 增益集的開發最佳作法
-  如果您要開發適用于 Office 的 COM、VSTO 或 VBA 增益集，請遵循本文中所述的開發最佳作法。   這將有助於確保：
+  如果您正在開發適用于 Office 的 COM、VSTO 或 VBA 增益集，請遵循本文中所述的開發最佳做法。   這將有助於確保：
 
-- 跨不同版本和 Office 部署的增益集的相容性。
-- 為您的使用者和 IT 系統管理員降低增益集部署的複雜性。
-- 增益集不會發生非預期的安裝或執行階段錯誤。
+- 跨不同版本與 Office 部署的增益集相容性。
+- 降低使用者和 IT 系統管理員增益集部署的複雜度。
+- 增益集的非預期安裝或執行時間失敗不會發生。
 
->注意：不支援使用[桌面橋接器](/windows/uwp/porting/desktop-to-uwp-root)來準備適用于 Windows STORE 的 COM、VSTO 或 VBA 增益集。 COM、VSTO 及 VBA 增益集無法散發于 Windows Store 或 Office Store。
+>注意：不支援使用 [傳統型橋接器](/windows/uwp/porting/desktop-to-uwp-root) 來準備您的 COM、VSTO 或適用于 Windows STORE 的 VBA 增益集。 COM、VSTO 及 VBA 增益集無法在 Windows Store 或 Office Store 中散發。
 
 ## <a name="do-not-check-for-office-during-installation"></a>在安裝期間不檢查 Office
- 建議您不要讓增益集偵測到在增益集安裝過程中是否已安裝 Office。 如果未安裝 Office，您可以安裝增益集，而且使用者將能夠在安裝 Office 之後存取它。
+ 我們不建議您讓增益集偵測到增益集安裝程式期間是否已安裝 Office。 如果未安裝 Office，您可以安裝增益集，使用者將能夠在安裝 Office 之後存取該增益集。
 
-## <a name="use-embedded-interop-types-nopia"></a>使用內嵌的 Interop 類型（NoPIA）
-如果您的方案使用 .NET 4.0 或更新版本，請使用內嵌的 interop 類型（NoPIA），而不是根據 Office 主要 Interop 元件（PIA）可轉散發套件。 使用類型內嵌可減少解決方案的安裝大小，並確保未來的相容性。 Office 2010 是隨附 PIA 可轉散發套件的最後一個 Office 版本。 如需詳細資訊，請參閱[逐步解說：從 Microsoft Office 元件內嵌類型資訊](https://msdn.microsoft.com/library/ee317478.aspx)和[類型等價和內嵌 interop 類型](/windows/uwp/porting/desktop-to-uwp-root)。
+## <a name="use-embedded-interop-types-nopia"></a>使用內嵌的 Interop 類型 (NoPIA) 
+如果您的方案使用 .NET 4.0 或更新版本，請使用內嵌的 interop 類型 (NoPIA) 而不是根據 Office 主要 Interop 元件 (PIA) 可轉散發套件。 使用型別內嵌可減少解決方案的安裝大小，並確保未來的相容性。 Office 2010 是發行 PIA 可轉散發套件的最後一個版本。 如需詳細資訊，請參閱 [逐步解說：從 Microsoft Office 元件內嵌型別資訊](https://msdn.microsoft.com/library/ee317478.aspx) 和 [類型等價和內嵌 interop 類型](/windows/uwp/porting/desktop-to-uwp-root)。
 
-如果您的解決方案使用舊版的 .NET，建議您將方案更新為使用 .NET 4.0 或更新版本。 使用 .NET 4.0 或更新版本可減少較新版本 Windows 的執行時間必要條件。
+如果您的方案使用舊版的 .NET，建議您將方案更新為使用 .NET 4.0 或更新版本。 使用 .NET 4.0 或更新版本可減少較新版 Windows 的執行時間必要條件。
 
-## <a name="avoid-depending-on-specific-office-versions"></a>避免視特定 Office 版本而定
-如果您的解決方案使用的功能僅適用于較新版本的 Office，請在執行時間確認功能是否存在（如果可能的話）（例如，使用例外狀況處理或藉由檢查版本）。 使用物件模型中支援的 Api，例如[Application. Version 屬性](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>)，驗證最小版本，而不是特定版本。 我們不建議您依賴 Office 二進位中繼資料、安裝路徑或登錄機碼，因為這些可能會在安裝、環境和版本之間變更。
+## <a name="avoid-depending-on-specific-office-versions"></a>避免因特定 Office 版本而異
+如果您的方案使用的功能只適用于較新版本的 Office，請在運行 (時間) 功能層級，確認功能 (存在，例如，使用例外狀況處理或檢查版本) 。 使用物件模型中支援的 Api （例如， [應用程式版本屬性](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>)），驗證最低版本（而不是特定版本）。 我們不建議您依賴 Office 二進位中繼資料、安裝路徑或登錄機碼，因為這些可能會在安裝、環境和版本之間變更。
 
-## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>同時啟用32位和64位的 Office 使用方式
-除非您的解決方案相依于僅適用于特定位的程式庫，否則您的預設組建目標應該同時支援32位（x86）和64位（x64）。 64位版本的 Office 會隨著採用而增加，尤其是在大型資料環境中。 同時支援32位和64位，可讓您的使用者更輕鬆地在32位和64位版本的 Office 之間轉換。
+## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>啟用32位和64位辦公室的使用方式
+除非您的方案相依于僅適用于特定位數的程式庫，否則您的預設組建目標應該支援32位 (x86) 和64位 (x64) 。 64位版本的 Office 在採用時逐漸增加，尤其是在大型資料環境中。 同時支援32位和64位，可讓使用者更輕鬆地在32位和64位版本的 Office 之間轉換。
 
-撰寫 VBA 程式碼時，請使用64位安全的 declare 語句，並適當地轉換變數。 此外，請確定可以在執行32位或64位版本 Office 的使用者之間共用檔，方法是為每個位提供程式碼。 如需詳細資訊，請參閱[適用于應用程式的64位 Visual Basic 總覽](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview)。
+撰寫 VBA 程式碼時，請使用64位安全的 declare 語句，並適當地轉換變數。 此外，您可以提供每個位的程式碼，以確保可在執行32位或64位版本 Office 的使用者之間共用檔。 如需詳細資訊，請參閱 [應用程式的64位 Visual Basic 總覽](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview)。
 
-## <a name="support-restricted-environments"></a>支援受限制的環境
-您的解決方案不應要求使用者帳戶許可權提升或系統管理員許可權。 此外，此解決方案不應該相依于設定或改變：
+## <a name="support-restricted-environments"></a>支援受限的環境
+您的解決方案不應要求使用者帳戶提升許可權或系統管理員許可權。 此外，此解決方案不應依賴設定或改變：
 
 - 目前的工作目錄。
 - DLL 載入目錄。
-- PATH 變數。
+- 路徑變數。
 
 ## <a name="change-the-save-location-of-shared-data-and-settings"></a>變更共用資料和設定的儲存位置
-如果方案是由增益集和 Office 外部的進程所組成，請勿使用使用者的 [應用程式資料] 資料夾或登錄來交換增益集與外部進程之間的資料或設定。 相反地，請考慮使用使用者的暫存資料夾、documents 資料夾或您方案的安裝目錄。
+如果解決方案包含增益集和 Office 外部的進程，請勿使用使用者的應用程式資料檔案夾或登錄來交換增益集與外部進程之間的資料或設定。 相反地，請考慮使用使用者的 [暫存資料夾]、[檔] 資料夾，或您解決方案的安裝目錄。
 
 ## <a name="increment-the-version-number-with-each-update"></a>每次更新時遞增版本號碼
-在您的方案中設定二進位檔的版本號碼，並隨著每次更新而遞增。 這可讓使用者更輕鬆地識別版本之間的變更，以及評估相容性。
+在您的方案中設定二進位檔的版本號碼，並使用每個更新來遞增。 這可讓使用者更輕鬆地識別版本之間的變更，並評估相容性。
 
-## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>提供最新 Office 版本的支援聲明
-客戶會要求 Isv 針對在 Office 中執行的 COM、VSTO 及 VBA 增益集提供支援聲明。 列出您的明確支援聲明可協助使用 Office 365 ProPlus 準備就緒工具的客戶瞭解您的支援。
+## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>為最新版本的 Office 提供支援聲明
+客戶要求 Isv 針對在 Office 中執行的 COM、VSTO 及 VBA 增益集提供支援聲明。 列出您的明確支援聲明，可協助客戶使用 Microsoft 365 應用程式，以取得企業就緒性工具以瞭解您的支援。
 
-若要提供 Office 用戶端應用程式（例如 Word 或 Excel）的支援聲明，請先確認您的增益集是在目前的 Office 版本中執行，然後在您的增益集于未來的版本中時，認可以提供更新。 當 Microsoft 發行新組建或 Office 更新時，您不需要測試增益集。 Microsoft 很少會變更 Office 中的 COM、VSTO 和 VBA 擴充性平臺，而且這些變更將會妥善記載。
+若要提供 Office 用戶端應用程式的支援語句 (例如 Word 或 Excel) ，請先確認您的增益集是否在目前的 Office 版本中執行，然後在您的增益集于未來版本中中斷時，認可以提供更新。 當 Microsoft 發行新的組建或 Office 更新時，您不需要測試您的增益集。 Microsoft 很少會變更 Office 中的 COM、VSTO 和 VBA 擴充性平臺，而且這些變更將妥善記載。
 
->重要事項： Microsoft 會針對就緒性報告和 ISV 連絡人資訊，維護一份支援的增益集清單。 若要列出您的增益集，請參閱[/configmgr/desktop-analytics/ready-for-windows](/configmgr/desktop-analytics/ready-for-windows)。
+>重要事項： Microsoft 會維護支援的增益集清單，以及 ISV 連絡人資訊。 若要取得您的增益集清單，請參閱 [/configmgr/desktop-analytics/ready-for-windows](/configmgr/desktop-analytics/ready-for-windows)。
 
-## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>使用進程監視器來協助偵測安裝或載入問題
-如果您的增益集在安裝或載入期間發生相容性問題，它們可能與檔案或登錄存取的問題有關。 使用[進程監視器](/sysinternals/downloads/procmon)或類似的偵錯工具，針對工作環境記錄和比較行為，以協助識別問題。
+## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>使用進程監視器協助偵測安裝或載入問題
+如果增益集在安裝或載入期間發生相容性問題，這些問題可能與檔案或登錄存取的問題有關。 使用 [進程監視器](/sysinternals/downloads/procmon) 或類似的偵錯工具，針對工作環境記錄和比較行為，以協助找出問題。

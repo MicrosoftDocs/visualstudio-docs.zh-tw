@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: df9d345e8557f10d764dce6e56c7491d2c026747
-ms.sourcegitcommit: 0d3d157949b539c78bc101a3c3b456bbcb5af7de
+ms.openlocfilehash: 22f6f80a7e4c8c8c3f91fa436361ff37405893bd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88286649"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800966"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>在 Visual Studio 中安裝 FxCop 分析器
 
@@ -28,7 +28,7 @@ Microsoft 建立了一組稱為 [CodeAnalysis](https://www.nuget.org/packages/Mi
 
 在 Visual Studio 2019 16.3 版和更新版本中，您可以直接從專案的 [程式碼分析] 屬性頁面安裝 [CodeAnalysis 將 microsoft.codeanalysis.fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet 套件：
 
-1. 在 **方案總管**的專案節點上按一下滑鼠右鍵，選取 [ **屬性**]，然後選取 [程式 **代碼分析** ] 索引標籤。
+1. 以滑鼠右鍵按一下 (，或在 **方案總管**的專案節點上選取並按住) ，選取 [ **屬性**]，然後移至 [程式 **代碼分析** ] 索引標籤。
 
    ![從 Visual Studio 中的 [屬性] 頁面安裝 FxCop 分析器套件](media/install-fxcop-properties-page.png)
 
@@ -59,7 +59,7 @@ Microsoft 建立了一組稱為 [CodeAnalysis](https://www.nuget.org/packages/Mi
 
 ### <a name="custom-installation"></a>自訂安裝
 
-若為自訂安裝，例如若要指定不同版本的封裝，請在專案的 [程式碼分析] 屬性頁面上選取省略號 ( ... ) 按鈕。 此按鈕會以 "CodeAnalysis. 將 microsoft.codeanalysis.fxcopanalyzers" 開啟 NuGet 套件管理員作為搜尋字串。
+例如，若要為自訂安裝指定套件的不同版本，請選取專案的程式碼分析屬性頁面上的省略號 ( ... ) 按鈕。 此按鈕會以 "CodeAnalysis. 將 microsoft.codeanalysis.fxcopanalyzers" 開啟 NuGet 套件管理員作為搜尋字串。
 
 ![從 Visual Studio 中的 [屬性] 頁面安裝自訂 FxCop 分析器套件](media/install-fxcop-properties-page-ellipsis.png)
 

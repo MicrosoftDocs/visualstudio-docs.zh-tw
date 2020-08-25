@@ -1,32 +1,29 @@
 ---
-title: F1 說明的預設頁面
-description: F1 說明要求 Visual Studio 的預設頁面
+title: 文字編輯器的預設 F1 說明頁面
+description: F1 說明要求 Visual Studio 文字編輯器的預設頁面
 ms.date: 08/20/2020
 ms.topic: troubleshooting
 ms.custom: contperfq1
 robots: noindex,nofollow
 f1_keywords:
-- vs.ambient
+- vs.texteditor
 manager: jillfra
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 0ab7f2d9fac02cf370e7b3803adc7fd3016d22ad
+ms.openlocfilehash: 726d0daed76212e9bda498a5afca0c84cd84281e
 ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800446"
+ms.locfileid: "88802253"
 ---
-# <a name="f1-help"></a>F1 說明
+# <a name="f1-help-for-the-text-editor"></a>文字編輯器的 F1 說明
 
 我們似乎找不到您要找的內容，對此我們深感抱歉。 您可以透過此頁面底部的按鈕來提供意見反應，或嘗試下列其中一個建議，以協助我們進行改善。
 
-## <a name="search-for-help"></a>搜尋說明
+## <a name="cursor-position"></a>資料指標位置
 
-如果您要尋找視窗、關鍵字或 API 名稱的 F1 說明：
-
-- 嘗試在[docs.microsoft.com](https://docs.microsoft.com)上搜尋
-- 嘗試使用搜尋引擎進行搜尋。
+如果您要尋找關鍵字或 API 名稱的 F1 說明，請務必將游標放在文字的內部或正好的位置，然後再按下 **F1**。 如果無法修正問題，請嘗試下列其中一項建議。
 
 ## <a name="find-help-on-a-keyword-or-api"></a>尋找關鍵字或 API 的說明
 
@@ -37,13 +34,23 @@ ms.locfileid: "88800446"
 - 如需 F# 的說明，請參閱 [F# 指南](/dotnet/fsharp/)。
 - 如需 TypeScript 說明，請參閱 [typescript 檔](https://www.typescriptlang.org/docs)。
 
+## <a name="search-for-help-on-a-keyword-or-api-name"></a>搜尋關鍵字或 API 名稱的說明
+
+如果您要尋找關鍵字或 API 名稱的 F1 說明：
+- 嘗試在[docs.microsoft.com](https://docs.microsoft.com)上搜尋
+- 嘗試使用搜尋引擎進行搜尋。
+- 在 [.NET API 瀏覽器](/dotnet/api/)上尋找參考文件。
+
+## <a name="find-the-source-code-for-an-api"></a>尋找 API 的原始程式碼
+
+如果您的專案中有提供原始程式碼，請將游標放在程式碼編輯器中的 API 內，開啟以滑鼠右鍵按一下的內容功能表，然後選取 [ **移至定義**]。 如需詳細資訊，請參閱 [檢視類型和成員定義](../../ide/go-to-and-peek-definition.md)。
+
 ## <a name="re-map-or-disable-the-f1-help-key"></a>重新對應或停用 F1 說明鍵
 
 如果您想要變更 F1 的按鍵對應，請參閱 [變更 f1 說明鍵](../not-in-toc/change-f1-help-key.md)。
 
 ## <a name="useful-links"></a>實用的連結
 
-- 在 [.NET API 瀏覽器](/dotnet/api/)上尋找參考文件。
 - 如需 Visual Studio 文字編輯器的說明，請參閱[使用程式碼編輯器](../../ide/writing-code-in-the-code-and-text-editor.md)。
 - 流覽 [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/) 頁面上的知識庫文章清單。
 - 如需 Visual Studio 的資訊，請參閱 [Visual Studio 概觀](../../get-started/visual-studio-ide.md)。

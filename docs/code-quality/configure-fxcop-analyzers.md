@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fbd30859c5ee3dbbea80c6d88d68c0211da62c88
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: a131b7d69eec61f9b9106f7a4274b3882c51f0ff
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706577"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800732"
 ---
 # <a name="configure-net-code-quality-analyzers"></a>設定 .NET 程式碼品質分析器
 
 針對特定的 .NET 程式碼品質分析器 (其規則識別碼以) 開頭的程式碼 `CA` ，您可以透過 [可](fxcop-analyzer-options.md)設定的選項，來精簡應套用程式碼基底的哪些部分。 每個選項都是藉由將機碼/值組新增至 [EditorConfig](https://editorconfig.org) 檔案來指定。 設定檔案、專案、解決方案或整個存放庫都有特定的設定檔。
 
 > [!TIP]
-> 在**方案總管**中的專案上按一下滑鼠右鍵，然後選取 [**加入**  >  **新專案**]，將 editorconfig 檔案加入至專案。 在 [ **加入新專案** ] 視窗的 [搜尋] 方塊中，輸入 **editorconfig** 。 選取 **editorconfig 檔案 (預設) ** 範本，然後選擇 [ **新增**]。
+> 以滑鼠右鍵按一下**方案總管**中的專案，然後選取 [**加入**  >  **新專案**]，將 editorconfig 檔案加入至專案。 在 [ **加入新專案** ] 視窗的 [搜尋] 方塊中，輸入 **editorconfig** 。 選取 **editorconfig 檔案 (預設) ** 範本，然後選擇 [ **新增**]。
 >
 > ![在 Visual Studio 中將 editorconfig 檔案新增至專案](media/add-editorconfig-file.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "88706577"
 
 若要啟用設定，請在對應的目錄中新增具有選項的*editorconfig 檔案。* 這個檔案也可以包含以 EditorConfig 為基礎的診斷嚴重性設定專案。 詳細資訊請看[這裡](use-roslyn-analyzers.md#rule-severity)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [.NET 程式碼品質分析器的規則範圍選項](fxcop-analyzer-options.md)
 - [分析器設定](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)

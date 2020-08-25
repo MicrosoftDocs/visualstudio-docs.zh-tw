@@ -1,24 +1,25 @@
 ---
-title: 在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio for Mac
+title: 透過防火牆或 proxy 伺服器安裝和使用 Visual Studio for Mac
+titleSuffix: ''
 description: 本文件會提供必須在防火牆中允許之主機的清單，來讓 Visual Studio for Mac (及其工作負載，包括 Xamarin) 能在公司環境中運作。
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
-ms.openlocfilehash: 817fce7958ce2b3e4bc3684e639197da8f69e40d
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 25a4597c8d523b63e7ceb0cf8b5eff71af58071a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938989"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800407"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio for Mac
 
 如果您或組織使用防火牆或 Proxy 伺服器等安全性措施，將會有您應該新增至「允許清單」的網域，以及應該開啟的連接埠和通訊協定，以確保您能在安裝及使用 Visual Studio for Mac 及 Azure 服務時取得最佳體驗。
 
-- [**安裝 Visual Studio for Mac**](#install-visual-studio-for-mac)：這些資料表包含必須允許連線的網域，讓您可以存取 Visual Studio for Mac 的所有功能和工作負載。
+- [**安裝 Visual Studio for Mac**](#install-visual-studio-for-mac)：這些表格包含必須允許連線的網域，讓您能夠存取 Visual Studio for Mac 的所有功能和工作負載。
 
-- [**使用 Visual Studio for Mac**](#use-visual-studio-for-mac)：這些資料表包含必須允許連線的網域，以便您可以存取相關的功能。
+- [**使用 Visual Studio for Mac**](#use-visual-studio-for-mac)：這些表格包含必須允許連線的網域，讓您可以存取相關的功能。
 
 ## <a name="install-visual-studio-for-mac"></a>安裝 Visual Studio for Mac
 
@@ -55,7 +56,7 @@ ms.locfileid: "85938989"
 
 ### <a name="general"></a>一般
 
-| 網域 | 連接埠|目的|
+| Domain | 連接埠|目的|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Microsoft URL 解析 |
 | vsstartpage.blob.core.windows.net| 80/443| 起始頁資料|
@@ -66,7 +67,7 @@ ms.locfileid: "85938989"
 
 ### <a name="identity"></a>身分識別
 
-| 網域 | 連接埠|目的|
+| Domain | 連接埠|目的|
 | ----------------------|------------------|------------------|
 | login.microsoftonline.com | 80/443| 身分識別提供者|
 | secure.aadcdn.microsoftonline-p.com | 80/443|身分識別提供者|
@@ -75,7 +76,7 @@ ms.locfileid: "85938989"
 
 ### <a name="nuget"></a>NuGet
 
-| 網域 | 連接埠|目的|
+| Domain | 連接埠|目的|
 | ----------------------|------------------|------------------|
 | api.nuget.org | 80/443|NuGet API|
 | secure.aadcdn.microsoftonline-p.com |80/443| 身分識別提供者|

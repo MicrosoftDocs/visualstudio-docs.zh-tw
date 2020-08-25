@@ -9,19 +9,19 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: 4a1b7bcc8b95b30ea3737dc2561c5abb280e2b5c
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88639407"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800511"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>使用 Visual Studio 的已連接服務加入 Azure 儲存體
 
 使用 Visual Studio，您可以使用 **已連線的服務** 功能，將下列任何一項連接到 Azure 儲存體：
 
 - .NET Framework 主控台應用程式
-- ASP.NET MVC ( .NET Framework)  
+- ASP.NET MVC ( .NET Framework) 
 - ASP.NET Core
 - .NET Core (包括主控台應用程式、WPF、Windows Forms、類別庫) 
 - .NET Core 背景工作角色
@@ -34,7 +34,7 @@ ms.locfileid: "88639407"
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 若是 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中已連線的服務](/visualstudio/mac/connected-services)。
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 - 已安裝 Azure 工作負載的 Visual Studio。
 - 其中一個支援類型的專案

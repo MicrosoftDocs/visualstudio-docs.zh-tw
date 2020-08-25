@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "63000424"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801174"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio R 工具使用者入門
 
@@ -22,8 +22,8 @@ ms.locfileid: "63000424"
 ## <a name="create-an-r-project"></a>建立 R 專案
 
 1. 開啟 Visual Studio。
-1. 選擇**檔** > **新專案** > **（** **Ctrl**+**移位**+**N**）
-1. 從**範本** > **R**下選擇"R 專案"，為專案指定名稱和位置，然後選擇 **"確定**"：
+1. 選擇 **[** 檔案  >  **新增**  >  **專案**] (**Ctrl** + **Shift** + **N**) 
+1. 從**範本**R 下選取 [r 專案]  >  ** **，為專案提供名稱和位置，然後選取 **[確定]**：
 
    ![Visual Studio R (在 VS2017 中為 RTVS) 的 [新增專案] 對話方塊](media/getting-started-01-new-project.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "63000424"
     - 左下方是 [R 互動]**** 視窗，您可以在其中以互動方式開發及測試程式碼。
 
 > [!Note]
-> 您可以使用 [R 互動]**** 視窗而不開啟任何專案，甚至是在載入不同的專案類型時。 只需隨時選擇**R 工具** > **Windows** > **R 交互**。
+> 您可以使用 [R 互動]**** 視窗而不開啟任何專案，甚至是在載入不同的專案類型時。 只要隨時選取 [ **R 工具**  >  **Windows**  >  **R 互動**] 即可。
 
 ## <a name="explore-the-interactive-window-and-intellisense"></a>瀏覽 Interactive 視窗和 IntelliSense
 
@@ -84,14 +84,14 @@ ms.locfileid: "63000424"
     plot(density(pop), main = "Population Density", xlab = "X", ylab = "")
     ```
 
-1. 要快速查看結果，請選擇所有代碼 **（Ctrl**+**A），** 然後按**Ctrl**+**Enter**或按右鍵並選擇"**在互動式中執行**"。 所有選取的程式碼會在互動式視窗中執行，就彷彿您直接鍵入一樣，並在繪圖視窗中顯示結果︰
+1. 若要快速查看結果，請選取所有程式碼 (**Ctrl** + **A**) ，然後按下**ctrl** + **enter**或按一下滑鼠右鍵，然後選取 [**以互動方式執行**]。 所有選取的程式碼會在互動式視窗中執行，就彷彿您直接鍵入一樣，並在繪圖視窗中顯示結果︰
 
     ![在 Visual Studio 中顯示繪圖](media/getting-started-08-plot1.png)
 
-1. 對於一行，只需隨時按**Ctrl**+**Enter**在互動式視窗中運行該行。
+1. 只要按下 Ctrl 鍵，就**Ctrl** + **Enter**可以在互動式視窗中執行該行。
 
 > [!Tip]
-> 瞭解進行編輯和按**Ctrl**+**Enter**的模式（或使用**Ctrl**+**A**選擇所有內容，然後按**Ctrl**+**Enter）** 快速運行代碼。 這樣做會比使用滑鼠進行相同的作業更有效率。
+> 瞭解進行編輯的模式，然後按下**ctrl** + **鍵** (或使用 ctrl ** **A 選取所有專案 + **A** ，然後按下**ctrl**鍵 + **Enter**) ，以快速執行程式碼。 這樣做會比使用滑鼠進行相同的作業更有效率。
 >
 > 此外，您可以將繪圖視窗從 Visual Studio 框架拖曳出來，放在顯示畫面上您想要的其他任何地方。 您可以輕鬆地將繪圖視窗調整成您想要的尺寸，然後將它儲存成影像或 PDF 檔案。
 
@@ -103,7 +103,7 @@ ms.locfileid: "63000424"
     lines(density(samp.means))
     ```
 
-1. 再次按**Ctrl**+**A**和**Ctrl**+**Enter**以運行代碼，生成以下結果：
+1. 按下**ctrl**鍵， + **A**然後按**Ctrl** + **enter**鍵以執行程式碼，產生下列結果：
 
     ![Visual Studio 中的更新雙重繪圖](media/getting-started-09-plot2.png)
 
@@ -125,7 +125,7 @@ ms.locfileid: "63000424"
     lines(density(samp.means))
     ```
 
-1. **Ctrl**+**A**和**Ctrl**+再次**進入**以查看結果：
+1. **Ctrl** +**A**和**Ctrl +** + **Enter** ，以查看結果：
 
     ![Visual Studio 中的更新雙重繪圖，比例正確](media/getting-started-10-plot3.png)
 
@@ -135,9 +135,9 @@ ms.locfileid: "63000424"
 
 Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項強固的基礎上，並新增創新的 UI，例如[變數總管](variable-explorer.md)。 在這裡，我們只是初探一下偵錯。
 
-1. 首先，請使用**R Tools** > **會話** > **重置**功能表命令重置當前工作區以清除到目前為止所做的一切。 根據預設，您在互動式視窗中所做的一切都會累算到目前工作階段，然後也會由偵錯工具使用。 藉由重設工作階段，您可以確保偵錯工作階段開始時沒有任何預先存在的資料。 不過 [重設]**** 並不會影響您的 *script.R* 來源檔案，因為它是在工作區之外管理和儲存。
+1. 若要開始，請重設目前的工作區，以使用**R 工具**  >  **會話**  >  **重設**功能表命令來清除您到目前為止所做的一切。 根據預設，您在互動式視窗中所做的一切都會累算到目前工作階段，然後也會由偵錯工具使用。 藉由重設工作階段，您可以確保偵錯工作階段開始時沒有任何預先存在的資料。 不過 [重設]**** 並不會影響您的 *script.R* 來源檔案，因為它是在工作區之外管理和儲存。
 
-1. 使用上一節中所建立的 *script.R* 檔案，在開頭為 `pop <-` 的行上設定中斷點，方法是將插入號放在該行上然後按 **F9** 鍵，或選取 [偵錯]**** > [切換中斷點]**** 功能表命令。 或者，只要按一下出現紅色中斷點的那一行的左邊界 (或裝訂邊)︰
+1. 使用上一節中所建立的 *script.R* 檔案，在開頭為 `pop <-` 的行上設定中斷點，方法是將插入號放在該行上然後按 **F9** 鍵，或選取 [偵錯]**** > [切換中斷點]**** 功能表命令。 或者，您也可按一下左邊界 (，或在顯示紅色中斷點點的那一行的裝訂邊) ：
 
     ![在編輯器中設定中斷點](media/getting-started-11-debug1.png)
 
@@ -149,7 +149,7 @@ Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項
 
     ![Visual Studio 中的 [偵錯] 工具列](media/getting-started-13-debug3.png)
 
-1. 在中斷點停止時，您可以檢查變數的值。 在 Visual Studio 中找到 [自動變數]**** 視窗，在底部選取名為 [區域變數]**** 的索引標籤。 [區域變數]**** 視窗會顯示程式目前位置的區域變數。 如果您停在稍早設定的中斷點上，則會看到尚未定義 `pop` 變數。 現在使用**調試** > **步驟過超**命令 （**F10**），您將看到 的值`pop`顯示：
+1. 在中斷點停止時，您可以檢查變數的值。 在 Visual Studio 中找到 [自動變數]**** 視窗，在底部選取名為 [區域變數]**** 的索引標籤。 [區域變數]**** 視窗會顯示程式目前位置的區域變數。 如果您停在稍早設定的中斷點上，則會看到尚未定義 `pop` 變數。 現在使用**Debug**  >  **Step Over**命令 (**F10**) ，您會看到顯示的值 `pop` ：
 
     ![Visual Studio 中的 [區域變數] 視窗](media/getting-started-14-debug4.png)
 

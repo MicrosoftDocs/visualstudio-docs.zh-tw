@@ -7,16 +7,16 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: abca888cda2d309951d6b8921cfd2078972ce195
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027600"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800225"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 
-如果您有多個 Microsoft 帳戶及 (或) 工作或學校的帳戶，可以將它們全部加入 Visual Studio，這樣就可以存取所有帳戶的資源，而無須各別登入每個帳戶。 Azure、Application Insights、Azure DevOps 和 Office 365 服務都支援簡化的登入體驗。
+如果您有多個 Microsoft 帳戶及 (或) 工作或學校的帳戶，可以將它們全部加入 Visual Studio，這樣就可以存取所有帳戶的資源，而無須各別登入每個帳戶。 Azure、Application Insights、Azure DevOps 和 Microsoft 365 服務全都支援簡化的登入體驗。
 
 在同一部電腦上新增多個帳戶之後，如果您於另一部電腦上登入 Visual Studio，該組帳戶會隨您漫遊。
 
@@ -33,7 +33,7 @@ ms.locfileid: "77027600"
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>在伺服器總管中存取您的 Azure 帳戶
 
-要打開伺服器資源管理器，請選擇 **"查看** > **伺服器資源管理器**"（或者，如果您使用的是"常規"[環境設置](../ide/environment-settings.md)，請按**Ctrl**+**Alt**+**S**）。 展開 [Azure]**** 節點，會看到其包含可用於 Azure 帳戶中的資源，該帳戶與您用以登入 Visual Studio 的帳戶建立關聯。 看起來類似下圖：
+若要開啟伺服器總管，請選擇 [ **View**  >  **伺服器總管**] (或者，如果您使用的是 [一般][環境設定](../ide/environment-settings.md)，請按下**Ctrl** + **Alt** + **S**) 。 展開 [Azure]**** 節點，會看到其包含可用於 Azure 帳戶中的資源，該帳戶與您用以登入 Visual Studio 的帳戶建立關聯。 看起來類似下圖：
 
 ![展開 Azure 節點的伺服器總管](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
@@ -53,7 +53,7 @@ ms.locfileid: "77027600"
 
 ### <a name="access-azure-active-directory-in-a-web-project"></a>在 Web 專案中存取 Azure Active Directory
 
-Azure Active Directory (AAD) 可支援在 ASP.NET MVC Web 應用程式中進行終端使用者單一登入，或是在 Web API 服務中進行 AD 驗證。 網域驗證與個別使用者帳戶驗證不同。 對 Active Directory 網域具有存取權的使用者，可以使用其現有 AAD 帳戶連線至您的 Web 應用程式。 Office 365 應用程式也可以使用網域驗證。
+Azure Active Directory (AAD) 可支援在 ASP.NET MVC Web 應用程式中進行終端使用者單一登入，或是在 Web API 服務中進行 AD 驗證。 網域驗證與個別使用者帳戶驗證不同。 對 Active Directory 網域具有存取權的使用者，可以使用其現有 AAD 帳戶連線至您的 Web 應用程式。 Microsoft 365 apps 也可以使用網域驗證。
 
 ::: moniker range="vs-2017"
 
@@ -75,7 +75,7 @@ Azure Active Directory (AAD) 可支援在 ASP.NET MVC Web 應用程式中進行�
 
 ### <a name="access-your-azure-devops-organization"></a>存取您的 Azure DevOps 組織
 
-從主功能表中，選擇 **"團隊** > **管理連接**"以打開 **"Team 總管 - 連接**"視窗。 選擇 **"管理連接** > **連接到專案**"。 在 [連線至專案]**** 對話方塊中選取清單中的專案 (或選取 [新增 TFS 伺服器]**** 並輸入您的伺服器 URL)。 如果您選取了 URL，則不必重新輸入認證即可登入。
+從主功能表中，選擇 [**小組**  >  **管理連接**] 以開啟 [ **Team Explorer-連接**] 視窗。 選擇 [**管理連接**  >  **連接到專案]**。 在 [連線至專案]**** 對話方塊中選取清單中的專案 (或選取 [新增 TFS 伺服器]**** 並輸入您的伺服器 URL)。 如果您選取了 URL，則不必重新輸入認證即可登入。
 
 如需詳細資訊，請參閱[連線至 Team Explorer 中的專案](connect-team-project.md)。
 
@@ -83,13 +83,13 @@ Azure Active Directory (AAD) 可支援在 ASP.NET MVC Web 應用程式中進行�
 
 若要在 Visual studio 中新增額外帳戶：
 
-1. 選擇 **"檔** > **帳戶設置**"。
+1. 選擇 **[** 檔案  >  **帳戶設定**]。
 
 1. 在 [所有帳戶]**** 下方，選擇 [新增帳戶]****。
 
 1. 在 [登入您的帳戶]**** 頁面上選取帳戶，或選擇 [使用其他帳戶]****。 遵循提示輸入新帳戶認證。
 
-(選擇性) 現在您可以前往 [伺服器總管]**** 並查看與您剛才新增之帳戶建立關聯的 Azure 服務。 在 [伺服器總管]**** 中，以滑鼠右鍵按一下 [Azure]**** 節點，然後選擇 [管理和篩選訂用帳戶]****。 按一下目前帳戶旁的下拉式箭號，選擇新的帳戶，然後選擇您想要在 [伺服器總管]**** 中顯示的訂用帳戶。 您應該會看到與指定之訂閱建立關聯的所有服務。 即使您目前並未使用第二個帳戶登入 Visual Studio，但仍登入了該帳戶的服務與資源。 **專案** > **添加連接服務和****團隊** > **連接到團隊基礎伺服器**也是如此。
+(選擇性) 現在您可以前往 [伺服器總管]**** 並查看與您剛才新增之帳戶建立關聯的 Azure 服務。 在 [伺服器總管]**** 中，以滑鼠右鍵按一下 [Azure]**** 節點，然後選擇 [管理和篩選訂用帳戶]****。 按一下目前帳戶旁的下拉式箭號，選擇新的帳戶，然後選擇您想要在 [伺服器總管]**** 中顯示的訂用帳戶。 您應該會看到與指定之訂閱建立關聯的所有服務。 即使您目前並未使用第二個帳戶登入 Visual Studio，但仍登入了該帳戶的服務與資源。 **Project**  >  **Add Connected Service**和**Team**  >  **Connect Team Foundation Server**也是如此。
 
 ### <a name="add-an-account-using-device-code-flow"></a>使用裝置程式碼流程新增帳戶
 
@@ -99,7 +99,7 @@ Azure Active Directory (AAD) 可支援在 ASP.NET MVC Web 應用程式中進行�
 
 1. 在 [工具]**** > [選項]**** > [環境]**** 下方開啟 [[帳戶]****](reference/accounts-environment-options-dialog-box.md) 頁面，然後選取 [新增或重新驗證帳戶時啟用裝置程式碼流程]****。 選擇 [確定]**** 關閉選項頁面。
 
-1. 選擇 **"檔** > **帳戶設置"** 以打開帳戶管理頁。
+1. 選擇 **[** 檔案  >  **帳戶設定**] 以開啟 [帳戶管理] 頁面。
 
 1. 在 [所有帳戶]**** 下方，選擇 [新增帳戶]****。
 
@@ -107,7 +107,7 @@ Azure Active Directory (AAD) 可支援在 ASP.NET MVC Web 應用程式中進行�
 
    ![裝置程式碼流程 URL 和程式碼](media/work-with-multiple-user-accounts/device-login-code.png)
 
-1. 按**Ctrl**+**C**複製對話方塊的文本，然後選擇 **"確定"** 以關閉對話方塊。 將您複製的文字貼到文字編輯器 (例如 [記事本])。 這可讓您在下一個步驟中輕鬆複製程式碼。
+1. 按**Ctrl** + **C**複製對話方塊的文字，然後選擇 **[確定**] 關閉對話方塊。 將您複製的文字貼到文字編輯器 (例如 [記事本])。 這可讓您在下一個步驟中輕鬆複製程式碼。
 
 1. 巡覽至您希望用於登入 Visual Studio 之電腦或網頁瀏覽器上的裝置登入 URL，然後將複製的程式碼貼上或輸入於顯示為**程式碼**的方塊。
 

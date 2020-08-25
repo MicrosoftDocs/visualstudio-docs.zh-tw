@@ -11,23 +11,23 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62431066"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801668"
 ---
-# <a name="quickstart-open-and-run-python-code-in-a-folder"></a>快速入門：在資料夾中打開並運行 Python 代碼
+# <a name="quickstart-open-and-run-python-code-in-a-folder"></a>快速入門：開啟並執行資料夾中的 Python 程式碼
 
 [在 Visual Studio 2019 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，就可以很容易地在 Visual Studio 2019 中執行現有的 Python 程式碼，不需要建立 Visual Studio 專案。
 
 > [!Note]
-> Visual Studio 2017 及舊版會要求您建立 Visual Studio 專案以執行 Python 程式碼，使用內建專案範本即可輕鬆執行。 請參閱[快速入門：從現有代碼創建 Python 專案](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+> Visual Studio 2017 及舊版會要求您建立 Visual Studio 專案以執行 Python 程式碼，使用內建專案範本即可輕鬆執行。 請參閱 [快速入門：從現有程式碼建立 Python 專案](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 
 1. 您可以在此逐步解說中，使用包含所需 Python 程式碼的任何資料夾。 若要依照這裡的範例進行，請使用命令 `git clone https://github.com/gregmalcolm/python_koans` 將 gregmalcolm/python_koans GitHub 存放庫複製到您的電腦的適當資料夾中。
 
-1. 啟動 Visual Studio 2019，並在 [開始] 視窗中，選取 [開始使用]**** 資料行底部的 [開啟]****。 或者，如果您已經運行了 Visual Studio，請選擇 **"檔** > **打開** > **資料夾**"命令。
+1. 啟動 Visual Studio 2019，並在 [開始] 視窗中，選取 [開始使用]**** 資料行底部的 [開啟]****。 或者，如果您已經有 Visual Studio 正在執行，請改**為選取**[  >  **開啟**  >  **資料夾**] 命令。
 
     ![Visual Studio 啟動畫面](media/quickstart-open-folder/01-open-local-folder.png)
 
@@ -50,7 +50,7 @@ ms.locfileid: "62431066"
     > [!Important]
     > 如果啟動項目不在所開啟資料夾的根目錄中，您也必須依照[設定工作目錄](#set-a-working-directory)一節中所述，在啟動組態 JSON 檔案中加入一行。
 
-1. 通過按**Ctrl**+**F5**或選擇**不調試的****調試** > 啟動來運行代碼。 您也可以選取以播放按鈕方式顯示啟動項目的工具列按鈕，這會在 Visual Studio 偵錯工具中執行程式碼。 在所有情況下，Visual Studio 都會偵測您的啟動項目是 Python 檔案，所以會自動在預設的 Python 環境中執行程式碼。 (該環境會顯示在工具列上啟動項目的右邊。)
+1. 按下**Ctrl** + **F5**或選取 [不使用**偵錯工具**來  >  **啟動**]，以執行程式碼。 您也可以選取以播放按鈕方式顯示啟動項目的工具列按鈕，這會在 Visual Studio 偵錯工具中執行程式碼。 在所有情況下，Visual Studio 都會偵測您的啟動項目是 Python 檔案，所以會自動在預設的 Python 環境中執行程式碼。 (該環境會顯示在工具列上啟動項目的右邊。)
 
     ![啟動偵錯工具工具列按鈕](media/quickstart-open-folder/07-start-debug-toolbar.png)
 
@@ -60,7 +60,7 @@ ms.locfileid: "62431066"
 
 1. 若要在其他環境中執行程式碼，請從工具列上的下拉式清單控制項選取環境，然後再度啟動啟動項目。
 
-1. 要關閉 Visual Studio 中的資料夾，**File** > 請選擇"**檔關閉資料夾**"功能表命令。
+1. 若要關閉 Visual Studio 中的資料夾，請**選取 [檔案**  >  **關閉資料夾**] 功能表命令。
 
 ## <a name="set-a-working-directory"></a>設定工作目錄
 
@@ -77,7 +77,7 @@ ms.locfileid: "62431066"
     ![Python 檔案的 [偵錯並啟動設定] 命令](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
-    > 如果您沒有看到 [預設]**** 選項，請務必在選取 [偵錯並啟動設定]**** 命令時，以滑鼠右鍵按一下 Python *.py* 檔案。 Visual Studio 會使用檔案類型判斷要顯示哪些偵錯工具選項。
+    > 如果您沒有看到 [**預設值**] 選擇，請在選取 [ **Debug and 啟動設定**] 命令時，確定您已選擇 *.py*檔案。 Visual Studio 會使用檔案類型來決定要顯示的偵錯工具選項。
 
 1. Visual Studio 會開啟位於隱藏的 *.vs* 資料夾中，名為 *launch.vs.json* 的檔案。 此檔案會描述專案的偵錯內容。 若要指定工作目錄，請 `"workingDirectory"` 的值，如 python-koans 範例的 `"workingDirectory": "python3"` 所示：
 
@@ -111,6 +111,6 @@ ms.locfileid: "62431066"
 
 ## <a name="see-also"></a>另請參閱
 
-- [快速入門：從現有代碼創建 Python 專案](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
-- [快速入門：從存儲庫創建 Python 專案](quickstart-03-python-in-visual-studio-project-from-repository.md)
+- [快速入門：從現有程式碼建立 Python 專案](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+- [快速入門：從存放庫建立 Python 專案](quickstart-03-python-in-visual-studio-project-from-repository.md)
 - [手動識別現有的 Python 解譯器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

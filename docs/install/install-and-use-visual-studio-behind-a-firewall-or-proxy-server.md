@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 05f2984f135ef363d1a5acfb55f4705404f4ea7d
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 5692589192ee4377194f6c42c25d391636f5f42a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87375855"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800238"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
 如果您或組織使用防火牆或 Proxy 伺服器等安全性措施，建議您將部分網域 URL 新增至「允許清單」，並開啟某些連接埠和通訊協定，以在安裝及使用 Visual Studio 及 Azure 服務時取得最佳體驗。
 
-* **[安裝 Visual Studio](#install-visual-studio)**：這些資料表包含要新增至允許清單的網域 url，讓您可以存取所需的所有元件和工作負載。
+* **[安裝 Visual Studio](#install-visual-studio)**：這些表格包含要新增至允許清單的網域 url，讓您可以存取所需的所有元件和工作負載。
 
-* **[使用 Visual Studio 和 Azure 服務](#use-visual-studio-and-azure-services)**：此資料表包含要新增至允許清單的網域 url，以及要開啟的埠和通訊協定，讓您可以存取您想要的所有功能和服務。
+* **[使用 Visual Studio 和 Azure 服務](#use-visual-studio-and-azure-services)**：此表格包含要新增至允許清單的網域 url，以及要開啟的埠和通訊協定，讓您可以存取您想要的所有功能和服務。
 
 > [!NOTE]
 > 本文針對 Windows 上的 Visual Studio 撰寫，但特定資訊也適用於在防火牆或 Proxy 伺服器後方[安裝 Visual Studio for Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)。
@@ -43,7 +43,7 @@ ms.locfileid: "87375855"
 
 #### <a name="microsoft-domains"></a>Microsoft 網域
 
-| Domain | 目的 |
+| 網域 | 目的 |
 | - | - |
 | go.microsoft.com | 安裝 URL 解析 |
 | aka.ms | 安裝 URL 解析 |
@@ -87,18 +87,18 @@ ms.locfileid: "87375855"
 
 ### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>應新增至允許清單的 URL，以及應開啟的連接埠和通訊協定
 
-為確保您可以在使用防火牆或 proxy 伺服器後方的 Visual Studio 或 Azure 服務時存取您想要的所有專案，以下是您應該新增至允許清單的 Url，以及您可能想要開啟的埠和通訊協定。
+當您使用 Visual Studio 或防火牆或 proxy 伺服器後方的 Azure 服務時，若要確保您可以存取您想要的所有專案，以下是您應新增至允許清單的 Url，以及您可能想要開啟的埠和通訊協定。
 
 | 服務或案例 | DNS 端點 | 通訊協定<br/>/Port | 描述 |
 | - | - | -: | - | - |
 | URL<br>resolution | go.microsoft.com<br><br>aka.ms | | 用來縮短 URL，其將會進一步解析為較長的 URL |
 | 起始頁 | vsstartpage.blob.core.windows.net | 443 | 用來顯示起始頁上的「開發人員新聞」(僅限 Visual Studio 2017) |
 | 目標<br> 通知 <br>服務 | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | 用來將通知全域清單篩選為僅適用於特定電腦/使用方式情節類型的清單 |
-| 分機 <br>更新檢查 | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | 443 | 用來於已安裝的擴充功能有可用更新時提供通知 <br><br> 以登入位置的形式使用 |
+| 延伸模組 <br>更新檢查 | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | 443 | 用來於已安裝的擴充功能有可用更新時提供通知 <br><br> 以登入位置的形式使用 |
 | AI 專案 <br>整合 | az861674.vo.msecnd.net | 443<br> | 用來設定新專案以將使用方式資料傳送至您已註冊的 Application Insights 帳戶 |
 | Code Lens | codelensprodscus1su0.app<br>codelens.visualstudio.com | 443 | 用來在編輯器中提供有關檔案上次更新的時間、變更的時間軸、與變更相關聯的工作項目、建立者等相關資訊 |
 | 實驗 <br>功能啟用 | visualstudio-devdiv-c2s.msedge.net | 80 | 用來啟用實驗性的新功能或功能變更 |
-| 身分識別「徽章」 <br>(使用者名稱和顯示圖片)<br>和 <br>漫遊設定 | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | 用來在 IDE 中顯示使用者的名稱和顯示圖片 <br><br> 用來確保設定變更會從一部電腦漫遊至另一部電腦 |
+| 身分識別「徽章」 <br>(使用者名稱和顯示圖片)<br>及 <br>漫遊設定 | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | 用來在 IDE 中顯示使用者的名稱和顯示圖片 <br><br> 用來確保設定變更會從一部電腦漫遊至另一部電腦 |
 | 遠端設定 | az700632.vo.msecnd.net | 443 | 用來關閉已知會在 Visual Studio 中造成問題的擴充功能 |
 | Windows 工具 | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | HTTPs/443 | 用於 Windows 應用程式市集案例 |
 | JSON 結構描述 <br>探索 <br><br>JSON 結構描述 <br>定義<br><br>JSON 結構描述 <br>下一節＜ <br>Azure 資源 | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | HTTP/80<br>HTTPs/443<br><br>HTTP/80<br><br>HTTPs/443 | 用來探索及下載使用者於編輯 JSON 文件時可能會用到的 JSON 結構描述 <br><br>用來取得針對 JSON 的中繼驗證結構描述<br><br>用來取得針對 Azure Resource Manager 部署範本的最新結構描述 |
@@ -110,37 +110,37 @@ ms.locfileid: "87375855"
 | Cookiecutter<br>總管範本<br>探索 <br><br>Cookiecutter <br>總管專案<br> 建立 | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | HTTPs/443<br> | 用來從我們建議的摘要和 GitHub 存放庫探索線上範本 <br><br>用來從需要單次隨選安裝來自 Python 套件索引 (PyPI) 之 Cookiecutter Python 套件的 Cookiecutter 範本建立專案 |
 | Python 套件 <br>探索<br><br>Python 套件 <br>管理<br><br>新增 <br>Python <br> project <br>範本 | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | HTTPs/443 | 提供搜尋 pip 套件的能力<br><br>用來在遺失 pip 的情況下自動安裝它 <br><br>用來將下列新的 Python 專案範本解析成 Cookiecutter 範本 URL：<br> - 分類器專案<br>- 叢集專案 <br> - 迴歸專案 <br> - 使用 PyKinect 的 PyGame <br> - Pyvot 專案 |
 | Office Web <br>Add-In - 增益集 <br> file:/// <br>驗證 <br>服務 | verificationservice.osi.office.net | HTTPs/443 | 用來驗證針對 Office Web 增益集的資訊清單 |
-| SharePoint 和 <br>Office 增益集 | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | HTTPs/443 | 用來將 SharePoint 和 Office 增益集發行並測試到 SharePoint Online 和 Office 365 |
-| 工作流程管理員 <br>測試服務<br> 主機 | | HTTP/12292 | 自動針對搭配工作流程測試 SharePoint 增益集所建立的防火牆規則 |
-| 自動收集的 <br>可靠性統計資料 <br>及其他 <br>客戶經驗 <br>改進計畫 (CEIP)<br> (針對 Azure SDK 及 <br>SQL 工具) <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | HTTPs/443 | 用來將可靠性統計資料（損毀/沒有回應的資料）從使用者傳送給 Microsoft。 如果已啟用 Windows 錯誤報告，仍然會上傳實際的損毀/沒有回應的傾印;只會隱藏統計資訊; <br>用來向 Visual Studio 顯示針對 Azure 工具 SDK 擴充功能的匿名使用模式，以及 SQL 工具的使用模式 |
+| SharePoint 和 <br>Office 增益集 | sharepoint.com<br> microsoft.com/microsoft-365<br> microsoftonline.com <br> outlook.com | HTTPs/443 | 用來將 SharePoint 和 Office 增益集發行和測試至 SharePoint Online 和 Microsoft 365 |
+| 工作流程管理員 <br>測試服務<br> Host | | HTTP/12292 | 自動針對搭配工作流程測試 SharePoint 增益集所建立的防火牆規則 |
+| 自動收集的 <br>可靠性統計資料 <br>及其他 <br>客戶經驗 <br>改進計畫 (CEIP)<br> (針對 Azure SDK 及 <br>SQL 工具) <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | HTTPs/443 | 用來將 (損毀/沒有回應的資料) 從使用者傳送至 Microsoft 的可靠性統計資料。 如果已啟用 Windows 錯誤報告，仍會上傳實際損毀/沒有回應的傾印;只會隱藏統計資訊; <br>用來向 Visual Studio 顯示針對 Azure 工具 SDK 擴充功能的匿名使用模式，以及 SQL 工具的使用模式 |
 | Visual Studio <br> 客戶經驗 <br>改進計畫 (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | HTTPs/443 | 用來收集匿名使用模式及錯誤記錄檔 <br><br>用來追蹤 UI 凍結問題 |
 | 建立及<br>管理 <br>Azure 資源 | management.azure.com <br>management.core.windows.net | HTTPs/443 | 用來建立 Azure 網站或其他資源，以支援 Web 應用程式、Azure Functions 或 WebJobs 的發行 |
 | 已更新的 Web 發行工具 <br>檢查及副檔名 <br>Mahout | marketplace.visualstudio.com | HTTPs/443 | 用來檢查已更新發行工具的可用性。 若停用，可能不會顯示 Web 發行的潛在建議擴充功能 |
 | 已更新的 Azure 資源 <br>建立端點資訊 | \*.blob.core.windows.net | HTTPs/443 | 用來更新用於針對特定 Azure 服務建立 Azure 資源的端點。 若停用，將會改用最後所下載的端點位置或內建端點位置 |
 | 遠端偵錯和 <br>遠端分析 <br>Azure 網站 | &#42;.cloudapp.net <br> &#42;.azurewebsites.net | 4022 | 用來將遠端偵錯工具附加至 Azure 網站。 若停用，將無法把遠端偵錯工具附加至 Azure 網站 |
-| Active Directory <br>圖形 | graph.windows.net | HTTPs/443 | 用來佈建新的 Azure Active Directory 應用程式。 同時也由 Office 365 MSGraph 已連線服務提供者使用 |
+| Active Directory <br>圖形 | graph.windows.net | HTTPs/443 | 用來佈建新的 Azure Active Directory 應用程式。 也由 Microsoft 365 MSGraph 連線服務提供者使用 |
 | Azure Functions <br>CLI 更新 <br>勾選 | functionscdn.azureedge.net | HTTPs/443 | 用來檢查 Azure Functions CLI 的更新版本。 若停用，將會改用 CLI 的快取複本 (或是由 Azure Functions 元件所攜帶的複本) |
 | Cordova | npmjs.org<br>gradle.org | HTTP/80 &<br/>HTTPs/443 | HTTP 是用於建置期間的 Gradle 下載，HTTPS 則是用來將 Cordova 外掛程式包含在專案中 |
-| Cloud Explorer | 1. &#60;clusterendpoint&#62; <br>Service Fabric <br>2. &#60;管理端點&#62;<br>一般 Cloud Exp <br>3. &#60;圖形端點&#62;<br>一般 Cloud Exp<br>4. &#60;儲存體帳戶端點&#62;<br>儲存體節點 <br>5. &#60;Azure 入口網站 URL&#62;<br>一般 Cloud Exp <br>6. &#60;金鑰保存庫端點&#62; <br>Azure Resource Manager VM 節點<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric 遠端偵錯和 ETW 追蹤 | <br>1. HTTPs/19080<br>2. HTTPs/443<br>3. HTTPs/443<br>4. HTTPs/443<br>5. HTTPs/443<br>6. HTTPs/443<br>7. tcp/dynamic | 1. 範例： test12.eastus.cloudapp.com<br>2. 抓取訂閱並抓取/管理 Azure 資源<br>3. 抓取 Azure Stack 訂閱<br>4. 管理存放裝置資源（範例： mystorageaccount.blob.core.windows.net）<br>5. [在入口網站中開啟] 快顯功能表選項（在 Azure 入口網站中開啟資源）<br>6. 建立並使用金鑰保存庫進行 VM 的偵錯工具（例如： myvault.vault.azure.net） <br><br>7. 根據叢集中的節點數目和可用的埠，動態配置埠區塊。 <br><br>連接埠區塊將會嘗試取得節點數目的三倍數目 (最少 10 個連接埠)。<br><br>針對串流追蹤，會嘗試從 810 取得連接埠區塊。 若該連接埠區塊已被使用，則會嘗試取得下一個區塊，依此類推。 (若負載平衡器是空的，則最有可能會使用來自 810 的連接埠) <br><br>和偵錯類似，系統會保留四組連接埠區塊： <br>- connectorPort：30398、 <br>- forwarderPort：31398、 <br>- forwarderPortx86：31399、<br>- fileUploadPort：32398<br> |
-| 雲端服務 | 1. RDP<br><br>2. core.windows.net <br><br>3.  management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;使用者的雲端服務&#62;.cloudapp.net <br> &#60;使用者的 VM&#62;.&#60;區域&#62;.azure.com | 1. rdp/3389 <br><br> 2. HTTPs/443 <br><br> 3. HTTPs/443 <br><br> 4. HTTPs/443 <br><br> 5. HTTPs/443 <br><br>6. tcp <br>a）30398 <br>b）30400 <br>c）31398 <br>d）31400 <br>e）32398 <br>f）32400 | 1. 雲端服務 VM 的遠端桌面 <br><br> 2. 私人診斷設定的儲存體帳戶元件 <br><br> 3. Azure 入口網站 <br><br> 4. 伺服器總管 Azure 儲存體 &#42; 是名為儲存體帳戶的客戶  <br><br> 5. 開啟入口網站的連結 &#47; 下載訂用帳戶憑證 &#47; 發佈設定檔案 <br><br>6. a) 針對雲端服務及 VM 進行遠端偵錯的連接器本機連接埠<br> 6. b) 針對雲端服務及 VM 進行遠端偵錯的連接器公用連接埠 <br> 6. c) 針對雲端服務及 VM 進行遠端偵錯的轉寄站本機連接埠 <br> 6. d) 針對雲端服務及 VM 進行遠端偵錯的轉寄站公用連接埠  <br> 6. e) 針對雲端服務及 VM 進行遠端偵錯的檔案上傳程式本機連接埠 <br> 6. f) 針對雲端服務及 VM 進行遠端偵錯的檔案上傳程式公開連接埠 |
-| Service Fabric | 1. <br>待.Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | HTTPs/443 | 1. 檔 <br><br> 2. 建立叢集功能 <br><br>3. &#42; 是 Azure 金鑰保存庫名稱（範例：-test11220180112110108.vault.azure.net  <br><br>  4. &#42; 是動態的（例如： vsspsextprodch1su1.vsspsext.visualstudio.com） |
-| 快照集 <br>偵錯工具 | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42; azurewebsites.net <br> 4. &#42;. scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. 遠端服務/伺服器 IP 位址/FQDN | 1. HTTPs/443 <br>2. HTTPs/443  <br>3. HTTP/80 <br>4. HTTPs/443 <br>5. HTTPs/443 <br>6. Concord/<br> 4022（Visual Studio 版本相依） | 1. 查詢應用程式服務 SKU 大小的 json 檔案 <br>2. 各種 Azure RM 呼叫 <br>3. 透過的網站準備呼叫  <br>4. 客戶的目標 App Service Kudu 端點 <br>5. 在 nuget.org 中發行的查詢網站延伸模組版本 <br>6.[遠端偵錯](../debugger/remote-debugging.md) |
+| Cloud Explorer | 1. &#60;clusterendpoint&#62; <br>Service Fabric <br>2. &#60;管理端點&#62;<br>一般 Cloud Exp <br>3. &#60;圖形端點&#62;<br>一般 Cloud Exp<br>4. &#60;儲存體帳戶端點&#62;<br>儲存體節點 <br>5. &#60;Azure 入口網站 URL&#62;<br>一般 Cloud Exp <br>6. &#60;金鑰保存庫端點&#62; <br>Azure Resource Manager VM 節點<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric 遠端偵錯和 ETW 追蹤 | <br>1. HTTPs/19080<br>2. HTTPs/443<br>3. HTTPs/443<br>4. HTTPs/443<br>5. HTTPs/443<br>6. HTTPs/443<br>7. tcp/動態 | 1. 範例： test12.eastus.cloudapp.com<br>2. 抓取訂用帳戶及抓取/管理 Azure 資源<br>3. 捕獲 Azure Stack 訂用帳戶<br>4. 管理儲存體資源 (範例： mystorageaccount.blob.core.windows.net) <br>5. 「在入口網站中開啟」內容功能表選項 (在 Azure 入口網站中開啟資源) <br>6. 建立和使用金鑰保存庫進行 VM 的偵錯工具 (範例： myvault.vault.azure.net)  <br><br>7. 根據叢集中的節點數目和可用的埠，動態配置埠區塊。 <br><br>連接埠區塊將會嘗試取得節點數目的三倍數目 (最少 10 個連接埠)。<br><br>針對串流追蹤，會嘗試從 810 取得連接埠區塊。 若該連接埠區塊已被使用，則會嘗試取得下一個區塊，依此類推。 (若負載平衡器是空的，則最有可能會使用來自 810 的連接埠) <br><br>和偵錯類似，系統會保留四組連接埠區塊： <br>- connectorPort：30398、 <br>- forwarderPort：31398、 <br>- forwarderPortx86：31399、<br>- fileUploadPort：32398<br> |
+| 雲端服務 | 1. RDP<br><br>2. core.windows.net <br><br>3.  management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;使用者的雲端服務&#62;.cloudapp.net <br> &#60;使用者的 VM&#62;.&#60;區域&#62;.azure.com | 1. rdp/3389 <br><br> 2. HTTPs/443 <br><br> 3. HTTPs/443 <br><br> 4. HTTPs/443 <br><br> 5. HTTPs/443 <br><br>6. tcp <br>a) 30398 <br>b) 30400 <br>c) 31398 <br>d) 31400 <br>e) 32398 <br>f) 32400 | 1. 雲端服務 VM 的遠端桌面 <br><br> 2. 私用診斷設定的儲存體帳戶元件 <br><br> 3. Azure 入口網站 <br><br> 4. 伺服器總管 Azure 儲存體 &#42; 是名為「儲存體帳戶」的客戶  <br><br> 5. 開啟入口網站的連結 &#47; 下載訂用帳戶憑證 &#47; 發佈設定檔案 <br><br>6. a) 針對雲端服務及 VM 進行遠端偵錯的連接器本機連接埠<br> 6. b) 針對雲端服務及 VM 進行遠端偵錯的連接器公用連接埠 <br> 6. c) 針對雲端服務及 VM 進行遠端偵錯的轉寄站本機連接埠 <br> 6. d) 針對雲端服務及 VM 進行遠端偵錯的轉寄站公用連接埠  <br> 6. e) 針對雲端服務及 VM 進行遠端偵錯的檔案上傳程式本機連接埠 <br> 6. f) 針對雲端服務及 VM 進行遠端偵錯的檔案上傳程式公開連接埠 |
+| Service Fabric | 1. <br>文檔。Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | HTTPs/443 | 1. 檔 <br><br> 2. 建立叢集功能 <br><br>3. &#42; 是 Azure key vault 名稱 (範例：-test11220180112110108.vault.azure.net  <br><br>  4. &#42; 動態 (範例： vsspsextprodch1su1.vsspsext.visualstudio.com)  |
+| 快照式 <br>偵錯工具 | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42; azurewebsites.net <br> 4. &#42;. scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. 遠端服務/伺服器的 IP 位址/FQDN | 1. HTTPs/443 <br>2. HTTPs/443  <br>3. HTTP/80 <br>4. HTTPs/443 <br>5. HTTPs/443 <br>6. Concord/<br> 4022 (Visual Studio 版本相依)  | 1. app service SKU 大小的查詢 json 檔案 <br>2. 各種 Azure RM 呼叫 <br>3. 透過的網站暖待命電話  <br>4. 客戶的目標 App Service Kudu 端點 <br>5. 查詢 nuget.org 中發佈的網站延伸模組版本 <br>6. [遠端偵錯](../debugger/remote-debugging.md) |
 | Azure 串流分析 <br><br>HDInsight | Management.azure.com | HTTPs/443 | 用來檢視、提交、執行及管理 ASA 作業 <br><br> 用來瀏覽 HDI 叢集，以及對 HDI 作業進行提交、診斷及偵錯 |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | HTTPs/443 | 用來對作業進行編譯、提交、檢視、診斷及偵錯；用來瀏覽 ADLS 檔案；用來上傳及下載檔案 |
-| 封裝服務 | [account].visualstudio.com <br/> [帳戶].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | HTTPs/443 | \* \* \* 只有某些組建工作案例（例如： Nuget 工具安裝程式、Node 工具安裝程式），或如果您想要搭配摘要使用公用上游，才需要 npmjs.org、. nuget.org 和 nodejs.org。 封裝服務的核心功能則需要使用其他三個網域。 |
+| 封裝服務 | [account].visualstudio.com <br/> [帳戶].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | HTTPs/443 | \*Npmjs.org、 \* . nuget.org 和 \* . nodejs.org 只需要用於某些組建工作案例 (例如： Nuget 工具安裝程式、Node tool 安裝程式) 或您想要搭配摘要使用 public 上游。 封裝服務的核心功能則需要使用其他三個網域。 |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | 用來與 Azure DevOps Services 連線 |
-| Azure 服務匯流排 | \*.servicebus.windows.net | ampq/5671 和5672、 </br> sbmp/9350-9354、 </br> HTTP/80、 </br> HTTPs/443 | 用來建立佇列、主題和訂用帳戶。 </br> 也可用來傳送/接收服務匯流排佇列和主題的訊息。 |
+| Azure 服務匯流排 | \*.servicebus.windows.net | ampq/5671 和5672， </br> sbmp/9350-9354、 </br> HTTP/80、 </br> HTTPs/443 | 用來建立佇列、主題和訂閱。 </br> 也可用來傳送/接收服務匯流排佇列和主題的訊息。 |
 | Azure Cosmos DB | \*. documents.azure.com | HTTPs/443 | 用來呼叫核心檔資料庫 Api。 |
-| 開發人員社群 | sendvsfeedback2.azurewebsites.net/api | HTTPs/443 | 用來呼叫開發人員社區意見反應工具 Api （我的問題、搜尋、投票、批註、提交、上傳、繼續） |
+| 開發人員社群 | sendvsfeedback2.azurewebsites.net/api | HTTPs/443 | 用來呼叫開發人員社群意見反應工具 Api (我的問題、搜尋、投票、留言、提交、上傳、繼續)  |
 | Intellicode | \*. intellicode.vsengsaas.visualstudio.com | HTTPs/443 | 用來呼叫 Intellicode Api |
 | Live Share | \*. liveshare.vsengsaas.visualstudio.com| HTTPs/443 | 用來呼叫 Live Share Api |
 | Visual Studio Codespaces | \*. online.visualstudio.com | HTTPs/443 | 用來呼叫 Visual Studio Codespaces Api |
-| JavaScript 自動型別取得 | registry.npmjs.org | HTTPs/443 | 用來安裝 TypeScript 類型定義，以提供適用于熱門 JavaScript 程式庫的 Intellisense |
+| JavaScript 自動類型取得 | registry.npmjs.org | HTTPs/443 | 用來安裝 TypeScript 型別定義，以提供適用于熱門 JavaScript 程式庫的 Intellisense |
 | Visual Studio 訂閱授權服務 | app.vssps.visualstudio.com/apis/<br/>授權/ClientRights | HTTPs/443 | 線上啟用的授權 |
-| 偵錯工具 | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore. msvsmon. \* 。位址<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | HTTPs/443 | 1. <br>用於在 Unix/macOS 上透過 SSH 下載 .NET Core 的偵錯工具位 <br><br>2. <br>用於下載遠端 Windows Docker 容器的偵錯工具位<br><br> 3. 用於 .NET framework 來源逐步執行 <br><br> 4. <br>（如果使用者選擇入）用來下載已發佈至 nuget.org 符號伺服器的符號。<br><br> 5. （如果使用者選擇輸入）用於下載 MS 符號和二進位檔，可能也需要用來在傾印中對受控碼進行偵錯工具 |
+| 偵錯工具 | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore \* 。Zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | HTTPs/443 | 1. <br>用於在 Unix/macOS 上透過 SSH 下載 .NET Core 的偵錯工具位 <br><br>2. <br>用於下載遠端 Windows Docker 容器的偵錯工具位<br><br> 3. 用於 .NET framework 來源逐步執行 <br><br> 4. <br> (如果使用者加入宣告) 用來下載已發佈至 nuget.org 符號伺服器的符號。<br><br> 5. (如果使用者加入宣告) 用來下載 MS 符號和二進位檔，則在傾印中偵測 managed 程式碼時也可能需要用到 |
 | Visual Studio Codespaces| \*. online.visualstudio.com | HTTPs/443 | 用來呼叫 Visual Studio Codespaces Api |
-| Xamarin Android 應用程式發佈 | \*. googleapis.com <br/> play.google.com <br/>accounts.google.com | HTTPs/443 | 用來與 Google Play 商店服務互動，直接從 Visual Studio 發佈/上傳 Xamarin Android 應用程式。 |
-| Azure Container Registry | *. azurecr.io | HTTPs/443 | 存取裝載于 Azure 上的容器登錄，以進行 CICD 管線的設定 |
+| Xamarin Android 應用程式發佈 | \*. googleapis.com <br/> play.google.com <br/>accounts.google.com | HTTPs/443 | 用來與 Google Play 商店服務互動，以直接從 Visual Studio 發佈/上傳 Xamarin Android 應用程式。 |
+| Azure Container Registry | *. azurecr.io | HTTPs/443 | 存取裝載在 Azure 上的容器登錄，以設定 CICD 管線 |
 | | | | |
 
 ## <a name="troubleshoot-network-related-errors"></a>對網路相關錯誤進行疑難排解
@@ -149,7 +149,7 @@ ms.locfileid: "87375855"
 
 ## <a name="get-support"></a>取得支援
 
-針對安裝相關的問題，我們提供[**安裝聊天**](https://visualstudio.microsoft.com/vs/support/#talktous)（僅限英文）支援選項。
+我們只會針對安裝相關的問題，提供 [**安裝聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (英文) 支援選項。
 
 以下是一些支援選項：
 

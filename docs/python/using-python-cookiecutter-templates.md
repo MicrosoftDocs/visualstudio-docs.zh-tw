@@ -10,20 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 026953ff52f4aa5c34dd4656432fed8ef2a48580
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535144"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801577"
 ---
 # <a name="use-the-cookiecutter-extension"></a>使用 Cookiecutter 延伸模組
 
 [Cookiecutter (英文)](https://cookiecutter.readthedocs.io/en/latest/) 提供尋找範本、輸入範本選項和建立專案及檔案的圖形化使用者介面。 它隨附於 Visual Studio 2017 和更新版本，並可在舊版的 Visual Studio 中另行安裝。
 
-Cookiecutter 需要 Python 3.3 或更新版本 (32 位元或 64 位元) 或 Anaconda 3 4.2 或更新版本 (32 位元或 64 位元)。 如果沒有適合的 Python 解譯器，Visual Studio 會顯示警告。 如果您在 Visual Studio 執行時安裝 Python 解譯器，請按一下 [Cookiecutter] 工具列上的 [**首頁**] 按鈕，以偵測新安裝的解譯器。 (請參閱 [Python 環境](managing-python-environments-in-visual-studio.md)以取得環境的一般資訊)。
+Cookiecutter 需要 Python 3.3 或更新版本 (32 位元或 64 位元) 或 Anaconda 3 4.2 或更新版本 (32 位元或 64 位元)。 如果沒有適合的 Python 解譯器，Visual Studio 會顯示警告。 如果您在 Visual Studio 正在執行時安裝 Python 解譯器，請選取 [Cookiecutter] 工具列上的 [ **首頁** ] 按鈕，以偵測新安裝的解譯器。 (請參閱 [Python 環境](managing-python-environments-in-visual-studio.md)以取得環境的一般資訊)。
 
-安裝之後，請選取 [ **View**  >  **Cookiecutter Explorer** ] 以開啟其視窗：
+安裝之後，選取 [ **View**  >  **Cookiecutter Explorer** ] 開啟其視窗：
 
 ![Cookiecutter 主視窗](media/cookiecutter-overview.png)
 
@@ -38,7 +38,7 @@ Cookiecutter 首頁會顯示可選擇的範本清單，並分為下列群組︰
 | 群組 | 描述 |
 | --- | --- |
 | **已安裝** | 已安裝到本機電腦的範本。 使用線上範本時，其存放庫會自動複製到 *~/.cookiecutters* 的子資料夾。 您可以透過按下 **Delete** 來刪除選取的已安裝範本。 |
-| **建議** | 從建議的摘要載入的範本。 預設摘要是由 Microsoft 組織。 如需自訂摘要的詳細資訊，請參閱下列 [Cookiecutter 選項](#cookiecutter-options)。 |
+| **建議需求** | 從建議的摘要載入的範本。 預設摘要是由 Microsoft 組織。 如需自訂摘要的詳細資訊，請參閱下列 [Cookiecutter 選項](#cookiecutter-options)。 |
 | **GitHub** | Cookiecutter 關鍵字的 GitHub 搜尋結果。 從 GitHub 傳回的結果會經過重新編頁，如果還有其他結果，[載入更多 (Load More)]**** 會出現在清單的結尾。 |
 | **自訂** | 在搜尋方塊中輸入自訂位置時，它會顯示在此群組。 您可以輸入 GitHub 存放庫的完整路徑，或輸入本機磁碟上的資料夾完整路徑。 |
 
@@ -75,7 +75,7 @@ Cookiecutter 首頁會顯示可選擇的範本清單，並分為下列群組︰
 
 ## <a name="cookiecutter-options"></a>Cookiecutter 選項
 
-Cookiecutter 選項可透過 [**工具**] [  >  **選項**  >  **Cookiecutter**] 取得：
+Cookiecutter 選項可透過 [**工具**  >  **選項**]  >  **Cookiecutter**取得：
 
 ![Cookiecutter 選項](media/cookiecutter-tools-options.png)
 
@@ -95,12 +95,12 @@ Cookiecutter 選項可透過 [**工具**] [  >  **選項**  >  **Cookiecutter**]
 
 透過在 Visual Studio 特定 (且由 Cookiecutter CLI 忽略) 的 *cookiecutter.json* 檔案中指定額外的中繼資料，可針對此轉譯做改善。 所有屬性都是選擇性的︰
 
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 | --- | --- |
 | 標籤 | 指定變數的編輯器上方顯示的內容，取代變數的名稱。 |
 | 描述 | 指定編輯控制項上顯示的工具提示，取代該變數的預設值。 |
-| URL | 將標籤變更成超連結，並含有一個顯示 URL 的工具提示。 按一下超連結，會以使用者的預設瀏覽器開啟該 URL。 |
-| 選取器 | 可自訂變數的編輯器。 目前支援下列選取器︰<ul><li>`string`︰標準文字方塊，字串的預設值。</li><li>`list`︰標準下拉式方塊，清單的預設值。</li><li>`yesno`︰可在 `y` 和 `n` 之間選擇的下拉式方塊，適用於字串。</li><li>`odbcConnection`：顯示 [ **...** ] 按鈕的文字方塊，會顯示資料庫連接對話方塊。</li></ul> |
+| URL | 將標籤變更成超連結，並含有一個顯示 URL 的工具提示。 選取超連結，就會將使用者的預設瀏覽器開啟至該 URL。 |
+| 選取器 | 可自訂變數的編輯器。 目前支援下列選取器︰<ul><li>`string`︰標準文字方塊，字串的預設值。</li><li>`list`︰標準下拉式方塊，清單的預設值。</li><li>`yesno`︰可在 `y` 和 `n` 之間選擇的下拉式方塊，適用於字串。</li><li>`odbcConnection`：包含 **[...] 按鈕的** 文字方塊，會顯示資料庫連接對話方塊。</li></ul> |
 
 範例：
 
@@ -156,7 +156,7 @@ Cookiecutter 有一個稱為 *Post-Generate Hook* (產生後置掛勾) 的功能
 ]
 ```
 
-命令是依名稱指定，而且應使用非當地語系化 (英文) 名稱在 Visual Studio 的當地語系化安裝上操作。 您可以在 [Visual Studio**命令**] 視窗中測試和探索命令名稱。
+命令是依名稱指定，而且應使用非當地語系化 (英文) 名稱在 Visual Studio 的當地語系化安裝上操作。 您可以在 Visual Studio **命令** 視窗中測試和探索命令名稱。
 
 如果您想傳遞單一引數，請將其指定為字串，如上一個範例所示。
 
@@ -187,7 +187,7 @@ Cookiecutter 有一個稱為 *Post-Generate Hook* (產生後置掛勾) 的功能
 
 引數可以參考其他 Cookiecutter 變數。 在上述範例中，內部的 `_output_folder_path` 變數用以組成所產生檔案的絕對路徑。
 
-請注意，只有在加入檔案到現有專案時，`Python.InstallProjectRequirements` 命令才有效。 此限制的存在，是因為命令是由 [方案總管]**** 中的 Python 專案處理，而在 [方案總管]**** - [資料夾檢視]**** 中沒有可接收訊息的專案。 我們希望在未來的版本中移除此限制（並在一般情況中提供更好的**資料夾檢視**支援）。
+請注意，只有在加入檔案到現有專案時，`Python.InstallProjectRequirements` 命令才有效。 此限制的存在，是因為命令是由 [方案總管]**** 中的 Python 專案處理，而在 [方案總管]**** - [資料夾檢視]**** 中沒有可接收訊息的專案。 我們希望移除未來版本 (的限制，並在一般) 中提供更好的 **資料夾檢視** 支援。
 
 ## <a name="troubleshooting"></a>疑難排解
 
@@ -212,7 +212,7 @@ Cookiecutter 有一個稱為 *Post-Generate Hook* (產生後置掛勾) 的功能
 
 載入失敗：
 
-- **chrisdev/wagtail-cookiecutter-foundation-cookiecutter-foundation** （在*cookiecutter.js*中使用布林值類型）
+- **chrisdev/wagtail-cookiecutter-foundation-cookiecutter-foundation** (在 *cookiecutter.js上* 使用布林類型) 
 - **quintoandar/cookiecutter-android** (沒有範本資料夾)
 
 執行失敗：

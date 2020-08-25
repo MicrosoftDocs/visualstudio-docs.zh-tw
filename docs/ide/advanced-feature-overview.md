@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0785686c9292e346c698c6f2b233cfe20edf796a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78235195"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800758"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -70,11 +70,11 @@ Visual Studio 的 [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with
 
 Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適用於 Web 的應用程式。 您可以使用 ASP.NET、Node.js、Python、JavaScript 及 TypeScript 來建立 Web 應用程式。 Visual Studio 了解 Angular、jQuery、Express 等 Web 架構。 ASP.NET Core 和 .NET Core 可在 Windows、Mac 及 Linux 作業系統上執行。 [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core) 是 MVC、WebAPI 及 SignalR 的重大更新，可以在 Windows、Mac 及 Linux 上執行。  ASP.NET Core 是全新的設計，提供您可組合的簡式 .NET 堆疊，讓您建置現代化的雲端架構 Web 應用程式和服務。
 
-有關詳細資訊，請參閱現代[Web 工具](https://visualstudio.microsoft.com/vs/modern-web-tooling/)。
+如需詳細資訊，請參閱 [新式 web 工具](https://visualstudio.microsoft.com/vs/modern-web-tooling/)。
 
 ## <a name="build-cross-platform-apps-and-games"></a>建置跨平台應用程式和遊戲
 
-您可以使用 Visual Studio 為 macOS、Linux 和 Windows 以及 Android、iOS 和其他[行動裝置](https://visualstudio.microsoft.com/vs/mobile-app-development/)構建應用和遊戲。
+您可以使用 Visual Studio 來建立適用于 macOS、Linux 和 Windows 的應用程式和遊戲，以及 Android、iOS 和其他行動 [裝置](https://visualstudio.microsoft.com/vs/mobile-app-development/)。
 
 - 建置在 Windows、macOS 和 Linux 上執行的 [.NET Core](/dotnet/core/) 應用程式。
 
@@ -90,7 +90,7 @@ Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適�
 
 ## <a name="connect-to-databases"></a>連線至資料庫
 
-[伺服器總管]**** 可協助您在本機、從遠端瀏覽和管理 Azure、Salesforce.com、Office 365 及網站上的 SQL Server 執行個體和資產。 要在主功能表上打開**伺服器資源管理器**，請選擇 **"查看** > **伺服器資源管理器**"。 如需使用 [伺服器總管] 的詳細資訊，請參閱[新增連線](../data-tools/add-new-connections.md)。
+**伺服器總管** 可協助您在本機、遠端和 Azure、Salesforce.com、Microsoft 365 及網站上，流覽及管理 SQL Server 實例和資產。 若要開啟**伺服器總管**，請在主功能表上選擇 [ **View**  >  **伺服器總管**]。 如需使用 [伺服器總管] 的詳細資訊，請參閱[新增連線](../data-tools/add-new-connections.md)。
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) 是一個適用於 SQL Server、Azure SQL Database 及 Azure SQL 資料倉儲的強大開發環境。 它可讓您建置、偵錯、維護及重構資料庫。 您可以使用資料庫專案，或直接使用內部或外部所連接的資料庫執行個體。
 
@@ -139,5 +139,5 @@ Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
-- [視覺工作室 2017 的新增功能](../ide/whats-new-visual-studio-2017.md)
+- [Visual Studio 2017 的新功能](../ide/whats-new-visual-studio-2017.md)
 - [Visual Studio 2019 的新功能](../ide/whats-new-visual-studio-2019.md)

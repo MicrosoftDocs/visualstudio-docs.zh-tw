@@ -1,6 +1,6 @@
 ---
-title: 如何變更字型色彩、文字大小和高對比選項
-description: 瞭解如何在 Visual Studio 中變更字型色彩和文字大小，以及如何針對協助工具考慮選取對比選項。
+title: 變更協助工具的主題、字型、文字和對比
+description: 瞭解如何變更 Visual Studio 色彩主題、字型色彩、文字大小和額外的色彩，以方便使用和協助工具的考慮。
 ms.date: 08/20/2020
 ms.topic: how-to
 ms.custom: contperfq1
@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 280873a2f855aa4c0d7e9951e141ca5492357b5a
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711686"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801434"
 ---
-# <a name="how-to-change-fonts-colors-and-high-contrast-options-in-visual-studio"></a>如何：在 Visual Studio 中變更字型、色彩和高對比選項
+# <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>如何：在 Visual Studio 中變更字型、色彩和主題
 
-您可以透過許多方式來變更 Visual Studio 中的字型和色彩。 例如，您可以將預設的藍色色彩主題變更為深色主題 (也稱為「深色模式」 ) 。 而且，您可以將預設字型和文字大小變更為不同的字型和大小。 如果最符合您的需求，您也可以選取高對比主題。
+您可以透過許多方式來變更 Visual Studio 中的字型和色彩。 例如，您可以將預設的藍色色彩主題變更為深色主題 (也稱為「深色模式」 ) 。 如果最符合您的需求，您也可以選取 [其他對比度] 主題。 此外，您可以在 IDE 和程式碼編輯器中變更預設字型和文字大小。
 
 ## <a name="change-the-color-theme"></a>變更色彩佈景主題
 
@@ -122,7 +122,8 @@ ms.locfileid: "88711686"
 
 若要深入瞭解您可以變更字型和色彩配置的所有使用者介面 (UI) 元素，請參閱 [字型 [和色彩]、[環境]、[選項] 對話方塊](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 頁面。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [變更程式碼編輯器的字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [如何：在 Visual Studio 中變更編輯器的字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Visual Studio 程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
+- [將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)

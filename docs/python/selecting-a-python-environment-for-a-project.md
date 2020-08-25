@@ -10,23 +10,23 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8bcb349f8ff99d1567bf94b83a96be6b2824c208
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 11808eeabee4d45d1d3d3b1b5cd5d6636249e7cb
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520467"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801200"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>如何選取要用於專案的 Python 環境
 
 Python 專案中所有程式碼都會在特定環境的內容中執行，例如全域 Python 環境、Anaconda 環境、虛擬環境或 Conda 環境。 Visual Studio 也會使用該環境來進行偵錯、匯入和成員完成、語法檢查，以及任何其他需要 Python 版本特定語言服務和一組已安裝套件的工作。
 
-Visual Studio 中的所有新 Python 專案一開始都會設定為使用預設全域環境，這會出現在**方案總管**的 [ **Python 環境**] 節點底下：
+Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設全域環境，該環境會出現在**方案總管**的 [ **Python 環境**] 節點底下：
 
 ![顯示在 [方案總管] 中的全域預設 Python 環境](media/environments/environments-project.png)
 
 ::: moniker range="vs-2017"
-若要變更專案的環境，請以滑鼠右鍵按一下 [ **Python 環境**] 節點，然後選取 [**新增/移除 Python 環境**]。 在含有全域、虛擬和 Conda 環境的顯示清單中，選取您想要出現在 [Python 環境]**** 節點底下的所有項目：
+若要變更專案的環境，請以滑鼠右鍵按一下 [ **Python 環境** ] 節點，然後選取 [ **新增/移除 python 環境**]。 在含有全域、虛擬和 Conda 環境的顯示清單中，選取您想要出現在 [Python 環境]**** 節點底下的所有項目：
 
 ![[Add/Remove Python Environments (新增/移除 Python 環境)] 對話方塊](media/environments/environments-add-remove.png)
 
@@ -46,7 +46,7 @@ Visual Studio 中的所有新 Python 專案一開始都會設定為使用預設�
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-若要變更專案的環境，以滑鼠右鍵按一下 [Python 環境]**** 節點並選取 [新增環境]****，或從 Python 工具列的 [環境] 下拉式清單中選取 [新增環境]****。
+若要變更專案的環境，請以滑鼠右鍵按一下 [ **Python 環境** ] 節點，然後選取 [ **新增環境**]。 您也可以從 Python 工具列的 [環境] 下拉式清單中選取 [ **新增環境** ]。
 
 一旦位於 [新增環境]**** 對話方塊之後，選取 [現有環境]**** 索引標籤，然後從 [環境]**** 下拉式清單中選取新環境：
 
@@ -61,7 +61,7 @@ Visual Studio 中的所有新 Python 專案一開始都會設定為使用預設�
 
 虛擬環境是特定的 Python 解譯器與特定的一組程式庫的唯一組合，有別於其他的全域和 Conda 環境。 每個專案都有專屬的虛擬環境，並在專案資料夾中進行維護。 該資料夾包含環境的已安裝程式庫以及 *pyvenv.cfg* 檔案，其指定位於檔案系統上其他位置的環境「基底解譯器」** 路徑。 (也就是說，虛擬環境不包含解譯器複本，只包含它的連結)。
 
-使用虛擬環境的其中一個優點是，即使經過一段時間的專案開發，虛擬環境仍會反映專案的確切相依性。 （另一方面，共用的全域環境包含任意數目的程式庫，不論您是否在專案中使用它們）。然後，您可以輕鬆地從虛擬環境建立*requirements.txt*檔案，然後用來在其他開發或實際執行的電腦上重新安裝這些相依性。 如需詳細資訊，請參閱[使用 requirements.txt 管理必要套件](managing-required-packages-with-requirements-txt.md)。
+使用虛擬環境的其中一個優點是，即使經過一段時間的專案開發，虛擬環境仍會反映專案的確切相依性。 另一方面， (共用的全域環境包含任何數量的程式庫，無論您是否在專案中使用這些程式庫 ) 。您接著可以輕鬆地從虛擬環境建立 *requirements.txt* 的檔案，然後用來在其他開發或生產電腦上重新安裝這些相依性。 如需詳細資訊，請參閱[使用 requirements.txt 管理必要套件](managing-required-packages-with-requirements-txt.md)。
 
 當您在 Visual Studio 中開啟的專案包含 *requirements.txt* 檔案時，Visual Studio 會自動提供可讓您重新建立虛擬環境的選項。 在未安裝 Visual Studio 的電腦上，您可以使用 `pip install -r requirements.txt` 還原套件。
 
@@ -78,7 +78,7 @@ Visual Studio 中的所有新 Python 專案一開始都會設定為使用預設�
 
 您可以依照下列方式，直接在 Visual Studio 中建立新的虛擬環境：
 
-1. 以滑鼠右鍵按一下**方案總管**中的 [ **Python 環境**]，然後選取 [**新增虛擬環境**]，這會顯示下列對話方塊：
+1. 在**方案總管**中，以滑鼠右鍵按一下 [ **Python 環境**]，然後選取 [**新增虛擬環境**]，這會顯示下列對話方塊：
 
     ![建立虛擬環境](media/environments/environments-add-virtual-1.png)
 
@@ -86,7 +86,7 @@ Visual Studio 中的所有新 Python 專案一開始都會設定為使用預設�
 
 1. 選取一個環境作為基底解譯器，然後選取 [建立]****。 Visual Studio 在設定環境並下載任何必要套件時，會顯示進度列。 完成時，虛擬環境會出現在所包含專案的 [Python 環境]**** 視窗中。
 
-1. 根據預設不會啟用虛擬環境。 若要為專案啟用虛擬環境，請以滑鼠右鍵按一下虛擬環境並選取 [啟用環境]****。
+1. 根據預設不會啟用虛擬環境。 若要啟用專案的虛擬環境，請以滑鼠右鍵按一下該環境，然後選取 [ **啟用環境**]。
 
 > [!Note]
 > 如果位置路徑識別的是現有虛擬環境，Visual Studio 會自動偵測基底解譯器 (使用環境的 *lib* 目錄中的 *orig-prefix.txt* 檔案) 並將 [建立]**** 按鈕變更為 [新增]****。
@@ -95,7 +95,7 @@ Visual Studio 中的所有新 Python 專案一開始都會設定為使用預設�
 >
 > ![使用 requirements.txt 來建立虛擬環境](media/environments/environments-requirements-txt.png)
 >
-> 無論如何，結果都與您使用 [**新增現有虛擬環境**] 命令相同。
+> 無論何種方式，結果都會與您使用 [ **新增現有虛擬環境** ] 命令相同。
 
 ### <a name="activate-an-existing-virtual-environment"></a>啟用現有的虛擬環境
 
@@ -103,9 +103,9 @@ Visual Studio 中的所有新 Python 專案一開始都會設定為使用預設�
 
 1. 以滑鼠右鍵按一下**方案總管**中的 [ **Python 環境**]，然後選取 [**新增現有的虛擬環境**]。
 
-1. 在出現的 [**流覽**] 對話方塊中，流覽至包含虛擬環境的資料夾並加以選取，然後選取 **[確定]**。 如果 Visual Studio 在該環境中偵測到 *requirements.txt* 檔案，便會詢問是否要安裝那些套件。
+1. 在出現的 [ **流覽** ] 對話方塊中，流覽至包含虛擬環境的資料夾並加以選取，然後選取 **[確定]**。 如果 Visual Studio 在該環境中偵測到 *requirements.txt* 檔案，便會詢問是否要安裝那些套件。
 
-1. 幾分鐘之後，虛擬環境會出現在**方案總管**的 [ **Python 環境**] 節點底下。 根據預設不會啟用虛擬環境，因此請以滑鼠右鍵按一下虛擬環境並選取 [啟用環境]****。
+1. 幾分鐘後，虛擬環境會出現在**方案總管**的 [ **Python 環境**] 節點底下。 根據預設不會啟用虛擬環境，因此請以滑鼠右鍵按一下虛擬環境並選取 [啟用環境]****。
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -136,14 +136,14 @@ Visual Studio 中的所有新 Python 專案一開始都會設定為使用預設�
 
 1. 在 [方案總管]**** 中以滑鼠右鍵按一下 [Python 環境]****，然後選取 [新增環境]****。
 
-1. 在出現的 [**流覽**] 對話方塊中，流覽至包含虛擬環境的資料夾並加以選取，然後選取 **[確定]**。 如果 Visual Studio 在該環境中偵測到 *requirements.txt* 檔案，便會詢問是否要安裝那些套件。
+1. 在出現的 [ **流覽** ] 對話方塊中，流覽至包含虛擬環境的資料夾並加以選取，然後選取 **[確定]**。 如果 Visual Studio 在該環境中偵測到 *requirements.txt* 檔案，便會詢問是否要安裝那些套件。
 
-1. 幾分鐘之後，虛擬環境會出現在**方案總管**的 [ **Python 環境**] 節點底下。 根據預設不會啟用虛擬環境，因此請以滑鼠右鍵按一下虛擬環境並選取 [啟用環境]****。
+1. 幾分鐘後，虛擬環境會出現在**方案總管**的 [ **Python 環境**] 節點底下。 根據預設不會啟用虛擬環境，因此請以滑鼠右鍵按一下虛擬環境並選取 [啟用環境]****。
 ::: moniker-end
 
 ### <a name="remove-a-virtual-environment"></a>移除虛擬環境
 
-1. 在**方案總管**中，以滑鼠右鍵按一下虛擬環境，然後選取 [**移除**]。
+1. 在 **方案總管**中，以滑鼠右鍵按一下虛擬環境，然後選取 [ **移除**]。
 
 1. Visual Studio 會詢問是否要移除或刪除虛擬環境。 選取 [移除]**** 會使專案無法使用環境，但環境仍保留在檔案系統上。 選取 [刪除]**** 則會將環境從專案中移除，並從檔案系統中刪除它。 基底解譯器不會受到影響。
 
@@ -169,7 +169,7 @@ Conda 套件管理員通常會使用 `https://repo.continuum.io/pkgs/` 作為預
 另請注意，Visual Studio 目前不支援使用 `conda` 將套件安裝到 Conda 環境中。 請改為從命令列使用 `conda`。
 
 > [!Tip]
-> 當封裝在* \* .pyd*檔案中包含原生元件的原始程式碼時，會發生 pip 無法安裝套件的常見情況。 如果未安裝所需的 Visual Studio 版本，pip 就無法編譯這些元件。 此情況中顯示的錯誤訊息是「錯誤: 找不到 vcvarsall.bat」****。 `easy_install`通常能夠下載預先編譯的二進位檔，而您可以從下載適用于舊版 Python 的編譯器 [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) 。 如需詳細資訊，請參閱 Python 工具小組部落格中的[如何處理「找不到 vcvarsallbat」的困擾 (英文)](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/)。
+> 當封裝在* \* >.pyd*檔案中包含原生元件的原始程式碼時，會發生 pip 無法安裝套件的常見情況。 如果未安裝所需的 Visual Studio 版本，pip 就無法編譯這些元件。 此情況中顯示的錯誤訊息是「錯誤: 找不到 vcvarsall.bat」****。 `easy_install` 通常能夠下載預先編譯的二進位檔，您也可以從下載適用于舊版 Python 的編譯器 [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) 。 如需詳細資訊，請參閱 Python 工具小組部落格中的[如何處理「找不到 vcvarsallbat」的困擾 (英文)](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/)。
 
 ## <a name="see-also"></a>另請參閱
 

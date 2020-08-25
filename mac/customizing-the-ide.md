@@ -1,23 +1,23 @@
 ---
 title: 自訂 IDE
-description: Visual Studio for Mac 可以使用各種方式加以自訂，讓使用者能夠在符合其效率與審美需求的環境中開發應用程式。 本文探討了適用于 Mac 的 Visual Studio 可根據您的需求進行的各種調整方式。
-author: alanjclark
+description: Visual Studio for Mac 可以使用各種方式加以自訂，讓使用者能夠在符合其效率與審美需求的環境中開發應用程式。 本文將探討 Visual Studio for Mac 可調整以符合您需求的各種方式。
+author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: d35cd7ebc5534cd49f18db794b5fdeb5f62f4758
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 98adf6aa252f4151af8a5504efd3856aef0afc8d
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79303264"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801772"
 ---
 # <a name="customizing-the-ide"></a>自訂 IDE
 
-可以自訂適用于 Mac 的 Visual Studio，允許使用者在滿足效率和美觀性需求的環境中開發應用。 本文章探討 Visual Studio for Mac 可調整以符合您需求的各種方式。
+Visual Studio for Mac 可以自訂，讓使用者能夠在符合其需求的環境中開發應用程式，以達到效率和美學。 本文章探討 Visual Studio for Mac 可調整以符合您需求的各種方式。
 
-## <a name="dark-theme"></a>暗色調佈景主題
+## <a name="dark-theme"></a>深色佈景主題
 
 ![暗色調佈景主題檢視](media/customizing-the-ide-image7a.png)
 
@@ -25,7 +25,7 @@ ms.locfileid: "79303264"
 
 ![暗色調佈景主題選取](media/customizing-the-ide-image7b.png)
 
-## <a name="localization"></a>當地語系化
+## <a name="localization"></a>Localization
 
 Visual Studio for Mac 以下列 14 種語言進行當地語系化，使它可供更多開發人員存取：
 
@@ -58,11 +58,11 @@ Visual Studio for Mac 以下列 14 種語言進行當地語系化，使它可供
 
 ![標準標題選項](media/customizing-the-ide-image8a.png)
 
-填入的 [名稱]**** 和 [電子郵件]**** 欄位將在透過 Visual Studio for Mac 中的版本控制進行的任何認可中使用。 如果您尚未填充這些欄位，則當您嘗試使用版本控制時，Mac 的 Visual Studio 將提示您這樣做。
+填入的 [名稱]**** 和 [電子郵件]**** 欄位將在透過 Visual Studio for Mac 中的版本控制進行的任何認可中使用。 如果您尚未填入這些欄位，Visual Studio for Mac 會在您嘗試使用版本控制時提示您這樣做。
 
-## <a name="key-bindings"></a>按鍵繫結關係
+## <a name="key-bindings"></a>按鍵繫結
 
-金鑰綁定或鍵盤快速鍵允許您調整開發環境，以便在整個 Mac Visual Studio 中更高效地移動。 它提供許多熱門 IDE 的常見按鍵繫結，例如 Visual Studio (在 Windows 上)、ReSharper、Visual Studio Code 和 Xcode。
+按鍵系結或鍵盤快速鍵可讓您調整您的開發環境，讓您可以在 Visual Studio for Mac 之間更有效率地移動。 它提供許多熱門 IDE 的常見按鍵繫結，例如 Visual Studio (在 Windows 上)、ReSharper、Visual Studio Code 和 Xcode。
 
 您可以瀏覽至 [Visual Studio] > [喜好設定] > [環境] > [按鍵繫結]**** 來設定按鍵繫結，如下圖所示：
 
@@ -70,9 +70,9 @@ Visual Studio for Mac 以下列 14 種語言進行當地語系化，使它可供
 
 從這裡您可以搜尋按鍵繫結組合、檢視衝突的繫結、新增繫結和編輯現有的繫結。
 
-這些綁定也可以在 Mac 視覺化工作室的初始設置期間，通過**鍵盤選擇**螢幕設置：
+您也可以在 Visual Studio for Mac 的初始安裝期間，透過 **鍵盤選取** 畫面來設定這些系結：
 
-![設置金鑰綁定，首先運行](media/ide-tour-2019-keyboard-shortcut.png)
+![設定金鑰系結，第一次執行](media/ide-tour-2019-keyboard-shortcut.png)
 
 ## <a name="workspace-layout"></a>工作區版面配置
 
@@ -112,7 +112,7 @@ Visual Studio for Mac 提供包含其他資訊、工具和瀏覽輔助工具的�
 
 一定有一個使用中的版面配置，您在版面配置中所做的任何變更 (例如新增或重新定位板) 只會變更使用中的版面配置。 關閉 Visual Studio for Mac 之後，將不會儲存您所做的變更。
 
-不過，可以使用 [檢視] > [儲存目前版面配置]**** 功能表項目來建立新的版面配置。 此命令會將當前佈局添加到功能表中，以便您可以隨時選擇它：
+不過，可以使用 [檢視] > [儲存目前版面配置]**** 功能表項目來建立新的版面配置。 此命令會將您目前的版面配置新增至功能表，讓您可以隨時選取它：
 
 ![儲存目前的版面配置](media/customizing-the-ide-image6a.png)
 
@@ -120,7 +120,7 @@ Visual Studio for Mac 提供包含其他資訊、工具和瀏覽輔助工具的�
 
 Visual Studio for Mac 可讓您並排開啟文字編輯器，或以卸離的浮動視窗顯示編輯器。
 
-可通過"查看功能表項目"啟用雙列模式，> **2 列選擇"視圖>編輯器列**"，或者通過將編輯器選項卡拖動到編輯器區域的一個邊緣：
+您可以透過 [View] 功能表項目，藉由選取 [ **view > Editor columns] > 2**個數據行，或將編輯器索引標籤拖曳到編輯器區域的其中一個邊緣，以啟用兩個數據行模式：
 
 ![二欄的並行模式](media/customizing-the-ide-sbs.png)
 

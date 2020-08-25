@@ -7,23 +7,23 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱
-ms.openlocfilehash: 6ce2208e6d1028e1e697b216d41cdd825dfc0d33
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 90bfb27fcb80910f6add41c30d4c03ece1520ef4
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247317"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801460"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱
 如果您已透過 MPSA 方案購買「Visual Studio 訂閱」，必須先了解幾個事項，才能成為 Visual Studio 訂閱系統管理員並將訂閱指派給您的使用者。 如果您已具備系統管理員身分，則可以直接前往 Visual Studio 訂閱[系統管理入口網站](https://manage.visualstudio.com/)。
 
-MPSA 客戶現在可以在稱為[商務中心](https://businessaccount.microsoft.com/Customer)的新入口網站管理透過 MPSA 購買的資產，此中心支援一些與大量授權服務中心 (VLSC) 類似的功能。 其中包括觀看您的授權摘要、訂單、下載、金鑰、使用者等。不過，MPSA 中 Visual Studio 訂用帳戶的運作方式很像雲端服務。 「商務中心」同樣使用「工作帳戶」來登入，而不是使用 Microsoft 帳戶 (MSA)。 如果組織使用 Office 365 或 Azure Active Directory 之類的雲端服務，而且您的電子郵件已是這兩項服務中任何一項的成員，則此電子郵件已經是「工作帳戶」。 這將可讓您使用現有密碼向「商務中心」註冊。 如果組織未使用雲端服務，而且您的電子郵件也不是「工作帳戶」，您可以使用它向「商務中心」註冊。
+MPSA 客戶現在可以在稱為[商務中心](https://businessaccount.microsoft.com/Customer)的新入口網站管理透過 MPSA 購買的資產，此中心支援一些與大量授權服務中心 (VLSC) 類似的功能。 這些包括查看您的授權摘要、訂單、下載、金鑰、使用者等等。不過，MPSA 中的 Visual Studio 訂用帳戶與雲端服務的運作方式很類似。 「商務中心」同樣使用「工作帳戶」來登入，而不是使用 Microsoft 帳戶 (MSA)。 如果您的組織使用 Microsoft 365 或 Azure Active Directory 之類的雲端服務，而您的電子郵件是這兩項服務之一的一部分，則該帳戶已經是公司帳戶。 這將可讓您使用現有密碼向「商務中心」註冊。 如果組織未使用雲端服務，而且您的電子郵件也不是「工作帳戶」，您可以使用它向「商務中心」註冊。
 
 此外，在您成為 Visual Studio 訂閱系統管理員之後，將會在 Visual Studio 訂閱[系統管理入口網站](https://manage.visualstudio.com/)將訂閱指派給訂閱者。 在 MPSA 中，必須將 Visual Studio 訂閱佈建至它們個別的系統管理入口網站，亦即「Visual Studio 訂閱管理入口網站」。 若要這樣做，您必須將「購買帳戶」與租用戶 (亦即 contoso.onmicrosoft.com) 建立關聯。
 
 請注意，有兩種類型的租用戶 (受控租用戶和非受控租用戶)。 受控租用戶係指已由組織內的系統管理員管理的租用戶。
 
-非受控租用戶則是指未被指派任何系統管理員，因此無法用於 Office 365 這類線上服務的租用戶。 使用非「工作帳戶」的電子郵件向「商務中心」進行註冊時，也會建立非受控租用戶。 如果向「商務中心」進行註冊時，系統要求您建立密碼，即表示您的電子郵件不是「工作帳戶」，而所建立的即是非受控租用戶。
+未受管理的租使用者是指沒有任何系統管理員的租使用者，且不適用於 Microsoft 365 之類的線上服務。 使用非「工作帳戶」的電子郵件向「商務中心」進行註冊時，也會建立非受控租用戶。 如果向「商務中心」進行註冊時，系統要求您建立密碼，即表示您的電子郵件不是「工作帳戶」，而所建立的即是非受控租用戶。
 
 以下是在完成租用戶關聯程序之前，成為「Visual Studio 訂閱」系統管理員所需的幾個需求和步驟。
 
@@ -39,17 +39,17 @@ MPSA 客戶現在可以在稱為[商務中心](https://businessaccount.microsoft
 
 在您符合上述準則之後，即可依照下面的步驟繼續將「購買帳戶」與租用戶建立關聯。
 1. 登入[商務中心](https://businessaccount.microsoft.com/Customer)。
-2. 選取 [ **帳戶** ] 索引標籤，然後選擇 [ **建立網域關聯**]。
+2. 選取 [ **帳戶** ] 索引標籤，然後選擇 [ **關聯網域**]。
 3. 選取您的 [購買帳戶]**** (如果您有多個)。
 4. 選取您的**租用戶** (亦即 contoso.onmicrosoft.com)。
-5. 選取 [ **建立網域關聯**]。
+5. 選取 [ **關聯網域**]。
 
-建立關聯時，所有符合準則的使用者通常在幾分鐘內就會佈建成 Visual Studio 訂閱系統管理員。 不過，有時可能會花費長達 24 小時的時間。 您的租用戶佈建完成之後，您將能夠存取「Visual Studio 訂閱系統管理入口網站」。 若此時間超過24小時，請使用下列步驟來聯繫 MPSA 支援人員：
+建立關聯時，所有符合準則的使用者通常在幾分鐘內就會佈建成 Visual Studio 訂閱系統管理員。 不過，有時可能會花費長達 24 小時的時間。 您的租用戶佈建完成之後，您將能夠存取「Visual Studio 訂閱系統管理入口網站」。 如果這花費的時間超過24小時，請使用下列步驟來 MPSA 支援人員：
 1. 連接到 <https://www.microsoft.com/licensing/mpsa/default>
 2. 選取頁面頂端的 [ **更多** ] 功能表。 
 3. 選擇 **支援**
 4. 選擇 **授權支援**
-5. 選取最符合您需求的 [支援] 選項。 
+5. 選取最符合您需求的支援選項。 
 
 > [!NOTE]
 > 如果在建立關聯之後，有符合步驟 2 和 5 的新使用者，您必須連絡 MPSA 支援服務。 MPSA 支援服務將會提供協助來佈建新的「Visual Studio 訂閱」系統管理員。
@@ -69,8 +69,8 @@ MPSA 客戶現在可以在稱為[商務中心](https://businessaccount.microsoft
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>後續步驟
-深入瞭解如何管理 Visual Studio 訂閱。
-- [指派個別訂閱](assign-license.md)
+深入瞭解如何管理 Visual Studio 的訂閱。
+- [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)
 - [編輯訂用帳戶](edit-license.md)
 - [刪除訂用帳戶](delete-license.md)

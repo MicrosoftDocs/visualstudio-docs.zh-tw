@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 11f8480a3a48c1fdee514deb51411e2623055f09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 831e0216bcecff2e9ac6551184ddbfda56a4b525
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816458"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801291"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>教學課程：開始使用 Windows Form 設計工具
 
@@ -43,7 +43,7 @@ Windows Form 設計工具提供許多可用來建置 Windows Forms 應用程式�
 
    ::: moniker-end
 
-2. 若要將檔案重新命名，在 [方案總管]**** 中，以滑鼠右鍵選取 **UserControl1.vb** 或 **UserControl1.cs**，選取 [重新命名]****，然後將檔案名稱變更為 DemoCalculator.vb 或 DemoCalculator.cs。 當系統詢問您是否要重新命名程式碼元素 "UserControl1" 的所有參考時，請選取 [是]****。
+2. 若要重新命名檔案，請在 **方案總管**中，以滑鼠右鍵按一下 [ **UserControl1** ] 或 [ **UserControl1.cs**]，選取 [ **重新命名**]，然後將檔案名變更為 DemoCalculator .vb 或 DemoCalculator.cs。 當系統詢問您是否要重新命名程式碼元素 "UserControl1" 的所有參考時，請選取 [是]****。
 
 Windows Form 設計工具會顯示 DemoCalculator 控制項的設計工具介面。 在此檢視中，您可以從 [工具箱] 中選取控制項和元件，並將它們置於設計工具介面上，以圖形方式設計控制項的外觀。 如需自訂控制項的詳細資訊，請參閱[各種自訂控制項](/dotnet/framework/winforms/controls/varieties-of-custom-controls)。
 
@@ -69,7 +69,7 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
     `SplitContainer` 控制項會固定到 DemoCalculator 控制項的界限。
 
     > [!NOTE]
-    > 有數個控制項提供智慧標籤以協助設計。 如需詳細資訊，請參閱[逐步解說：在 Windows Forms 控制項上使用智慧標籤執行一般](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls)工作。
+    > 有數個控制項提供智慧標籤以協助設計。 如需詳細資訊，請參閱 [逐步解說：使用 Windows Forms 控制項上的智慧標籤執行一般](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls)工作。
 
 5. 選取面板之間的垂直框線，然後將它向右拖曳，來使左側面板佔據大部分的空間。
 
@@ -91,7 +91,7 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
 12. 從 [工具箱]**** 中的 [容器]**** 節點，將 `TableLayoutPanel` 控制項拖曳到 `SplitContainer` 控制項的左側面板。
 
-    `TableLayoutPanel` 控制項會出現在設計工具介面上，並開啟其智慧標籤面板。 `TableLayoutPanel` 控制項會以格線方式排列其子控制項。 `TableLayoutPanel` 控制項將會保存 DemoCalculator 控制項的顯示和按鈕。 如需詳細資訊，請參閱[逐步解說：使用 TableLayoutPanel 排列控制項](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel)。
+    `TableLayoutPanel` 控制項會出現在設計工具介面上，並開啟其智慧標籤面板。 `TableLayoutPanel` 控制項會以格線方式排列其子控制項。 `TableLayoutPanel` 控制項將會保存 DemoCalculator 控制項的顯示和按鈕。 如需詳細資訊，請參閱 [逐步解說：使用 TableLayoutPanel 排列控制項](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel)。
 
 13. 選取智慧標籤面板上的 [編輯資料列與資料行]****。
 
@@ -111,7 +111,7 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
 在設定控制項的版面配置之後，您現在便可以將按鈕和顯示填入 DemoCalculator 控制項中。
 
-1. 在 [工具箱]**** 中，按兩下 `TextBox` 控制項圖示。
+1. 在 [ **工具箱**] 中選取 `TextBox` 控制項圖示。
 
    系統會將 `TextBox` 控制項置於 `TableLayoutPanel` 控制項的第一個資料格中。
 
@@ -129,15 +129,15 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
 6. 選取 `TableLayoutPanel` 控制項。
 
-7. 在 [工具箱]**** 中，按兩下 `Button` 圖示。
+7. 在 [ **工具箱**] 中選取 `Button` 圖示。
 
    系統會將 `Button` 控制項置於 `TableLayoutPanel` 控制項的下一個開放資料格中。
 
-8. 在 [工具箱]**** 中，額外再按兩下 `Button` 圖示四次以填入 `TableLayoutPanel` 控制項的第二個資料列。
+8. 在 [ **工具箱**] 中，選取 [ `Button` 圖示] 四次，以填入控制項的第二個數據列 `TableLayoutPanel` 。
 
-9. 透過按住 **Shift** 鍵並選取全部五個 `Button` 控制項來全選它們。 按**Ctrl** + **C** ，將 `Button` 控制項複製到剪貼簿。
+9. 透過按住 **Shift** 鍵並選取全部五個 `Button` 控制項來全選它們。 按**Ctrl** + **C**將控制項複製 `Button` 到剪貼簿。
 
-10. 按**Ctrl** + **V**三次，將控制項的複本貼入 `Button` 控制項的其餘資料列 `TableLayoutPanel` 。
+10. 按**Ctrl** + **V**三次，將控制項的複本貼 `Button` 到控制項的其餘資料列 `TableLayoutPanel` 。
 
 11. 透過按住 **Shift** 鍵並選取全部 20 個 `Button` 控制項來全選它們。
 
@@ -157,11 +157,11 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
 當您的控制項或表單被填入數個控制項時，可以使用 [文件大綱] 視窗來以較輕鬆的方式瀏覽您的版面配置。
 
-1. 在功能表列上，選擇 [**視圖**] [  >  **其他視窗**] [  >  **檔大綱**]。
+1. 在功能表列上，選擇 [**查看**  >  **其他 Windows**  >  **檔大綱**]。
 
    [文件大綱] 視窗會顯示 DemoCalculator 控制項及組成它之控制項的樹狀檢視。 如 `SplitContainer` 等的容器控制項會將其子控制項顯示為樹狀中的子節點。 您也可以使用 [文件大綱] 視窗重新命名現有的控制項。
 
-2. 在 [文件大綱]**** 視窗中，以滑鼠右鍵選取 **button1**，然後選取 [重新命名]****。 將其名稱變更為 sevenButton。
+2. 在 [ **檔大綱** ] 視窗中，以滑鼠右鍵按一下 [ **button1**]，然後選取 [ **重新命名**]。 將其名稱變更為 sevenButton。
 
 3. 使用 [文件大綱]**** 視窗，依照下列清單將 `Button` 控制項由設計工具產生的名稱變更為生產環境名稱：
 
@@ -209,7 +209,7 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
    - 將 nineButton 控制項文字屬性變更為 **9**
 
-   - 將 divisionButton 控制項 text 屬性變更為 **/** （正斜線）
+   - 將 divisionButton 控制項文字屬性變更為 **/** (正斜線) 
 
    - 將 clearButton 控制項文字屬性變更為**清除**
 
@@ -219,7 +219,7 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
    - 將 sixButton 控制項文字屬性變更為 **6**
 
-   - 將 multiplicationButton 控制項 text 屬性變更為 **\*** （星號）
+   - 將 multiplicationButton 控制項文字屬性變更為 **\*** (星號) 
 
    - 將 oneButton 控制項文字屬性變更為 **1**
 
@@ -227,17 +227,17 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
    - 將 threeButton 控制項文字屬性變更為 **3**
 
-   - 將 subtractionButton 控制項 text 屬性變更為 **-** （連字號）
+   - 將 subtractionButton 控制項文字屬性變更為 **-** (連字號) 
 
-   - 將 equalsButton 控制項 text 屬性變更為 **=** （等號）
+   - 將 equalsButton 控制項文字屬性變更為 **=** (等號) 
 
    - 將 zeroButton 控制項文字屬性變更為 **0**
 
-   - 將 changeSignButton 控制項 text 屬性變更為**+/-**
+   - 將 changeSignButton 控制項文字屬性變更為 **+/-**
 
    - 將 decimalButton 控制項文字屬性變更為 **.** (句號)
 
-   - 將 additionButton 控制項 text 屬性變更為 **+** （加號）
+   - 將 additionButton 控制項文字屬性變更為 **+** (加號) 
 
 5. 在設計工具介面上，透過按住 **Shift** 鍵並選取全部的 `Button` 控制項來全選它們。
 
@@ -247,17 +247,17 @@ DemoCalculator 控制項包含數個 Windows Forms 控制項。 在此程序中�
 
 ## <a name="implement-event-handlers"></a>實作事件處理常式
 
-DemoCalculator 控制項上的按鈕具有事件處理常式，可用來實作大部分的計算機邏輯。 Windows Form 設計工具可讓您只需按兩下便能實作所有按鈕之所有事件處理常式的虛設常式。
+DemoCalculator 控制項上的按鈕具有事件處理常式，可用來實作大部分的計算機邏輯。 Windows Form 設計工具可讓您針對具有一個選取專案的所有按鈕，執行所有事件處理常式的存根。
 
 1. 在設計工具介面上，透過按住 **Shift** 鍵並選取全部的 `Button` 控制項來全選它們。
 
-2. 按兩下其中一個 `Button` 控制項。
+2. 選取其中一個 `Button` 控制項。
 
    [程式碼編輯器] 將會開啟並顯示由設計工具所產生的事件處理常式。
 
 ## <a name="test-the-control"></a>測試控制項
 
-由於 DemoCalculator 控制項是繼承自 <xref:System.Windows.Forms.UserControl> 類別，您可以使用 **UserControl 測試容器**來測試它的行為。 如需詳細資訊，請參閱[如何：測試 UserControl 的執行時間行為](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)。
+由於 DemoCalculator 控制項是繼承自 <xref:System.Windows.Forms.UserControl> 類別，您可以使用 **UserControl 測試容器**來測試它的行為。 如需詳細資訊，請參閱 [如何：測試 UserControl 的執行時間行為](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)。
 
 1. 按 **F5** 以在 [UserControl 測試容器]**** 中建置並執行 DemoCalculator 控制項。
 
@@ -277,7 +277,7 @@ DemoCalculator 控制項可以用於其他複合控制項或是表單上。 下�
 
 2. 在 [方案總管]**** 中，以滑鼠右鍵按一下 **DemoCalculatorTest** 專案，然後選取 [新增參考]**** 以開啟 [新增參考]**** 對話方塊。
 
-3. 選取 [專案]**** 索引標籤，然後按兩下 DemoCalculatorLib 專案以新增測試專案的參考。
+3. 移至 [ **專案** ] 索引標籤，然後選取 [DemoCalculatorLib] 專案，以將參考加入至測試專案。
 
 4. 在 [方案總管]**** 中，以滑鼠右鍵按一下 **DemoCalculatorTest**，然後選取 [設定為啟始專案]****。
 
@@ -291,13 +291,13 @@ DemoCalculator 控制項可以用於其他複合控制項或是表單上。 下�
 
 2. 將 **DemoCalculator** 控制項從 [工具箱]**** 拖曳到您的表單上。 將控制項移至表單的左上角。 當控制項接近表單的框線時，畫面上將會出現「對齊線」**。 對齊線會指出表單的 `Padding` 屬性和控制項的 `Margin` 屬性之間的距離。 將控制項置於對齊線所指示的位置。
 
-   如需詳細資訊，請參閱[逐步解說：使用對齊線排列控制項](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines)。
+   如需詳細資訊，請參閱 [逐步解說：使用對齊線排列控制項](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines)。
 
 3. 從 [工具箱]**** 拖曳 `Button` 控制項，並將它置於表單上。
 
 4. 在 DemoCalculator 控制項內四處移動 `Button` 控制項，並觀察對齊線的顯示位置。 您可以使用此功能來精確且輕鬆地對齊您的控制項。 當您完成時，請刪除 `Button` 控制項。
 
-5. 以滑鼠右鍵選取 DemoCalculator 控制項，然後選取 [屬性]****。
+5. 以滑鼠右鍵按一下 [DemoCalculator] 控制項，然後選取 [ **屬性**]。
 
 6. 將 `Dock` 屬性的值變更為 `Fill`。
 

@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b97655efac3fc42f5e5790e32c97de169e61a6b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 943c0567e3726d014f7dae01915916864e09ed9b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520584"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801642"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>歡迎使用 Visual Studio IDE | Python
 
@@ -26,14 +26,14 @@ Visual Studio 整合式開發環境** 是支援 Python (和其他語言) 且創�
 
 此圖顯示 Visual Studio 有一個開啟的 Python 專案，以及數個您可能會用到的重要工具視窗：
 
-- [**方案總管**](../ide/solutions-and-projects-in-visual-studio.md)（右上方）可讓您查看、流覽和管理您的程式碼檔案。 **方案總管**可以藉由將檔案分組到[方案和專案](../get-started/tutorial-projects-solutions.md)中，協助組織您的程式碼。
+- [**方案總管**](../ide/solutions-and-projects-in-visual-studio.md) (右上方) 可讓您查看、流覽和管理程式碼檔案。 **方案總管** 可以將檔案分組到 [方案和專案](../get-started/tutorial-projects-solutions.md)中，以協助組織程式碼。
   - 方案總管**** 旁的是 [Python 環境****](managing-python-environments-in-visual-studio.md)，您可以在此環境中管理安裝在電腦上的其他 Python 解譯器。
 
   ::: moniker range=">=vs-2019"
-  - 您也可以開啟並執行資料夾中的 Python 程式碼，不需建立 Visual Studio 專案和方案檔案。 如需詳細資訊，請參閱[快速入門：在資料夾中開啟及執行 Python 程式碼](quickstart-05-python-visual-studio-open-folder.md)。
+  - 您也可以開啟並執行資料夾中的 Python 程式碼，不需建立 Visual Studio 專案和方案檔案。 如需詳細資訊，請參閱 [快速入門：在資料夾中開啟及執行 Python 程式碼](quickstart-05-python-visual-studio-open-folder.md)。
   ::: moniker-end
 
-- [編輯器視窗](../ide/writing-code-in-the-code-and-text-editor.md) (中間) 會顯示檔案內容，您大部分的時間可能都是花在這裡。 您可在這裡[編輯 Python 控制碼](editing-python-code-in-visual-studio.md)、瀏覽程式碼架構，以及在偵錯工作階段期間設定中斷點。 使用 Python 時，您也可按 Ctrl+Enter 在 [[互動式 REPL] 視窗](python-interactive-repl-in-visual-studio.md)中執行該程式碼。
+- 「編輯器視窗」(中間) 會顯示檔案內容，您大部分的時間可能都是花在這裡。 您可在這裡[編輯 Python 控制碼](editing-python-code-in-visual-studio.md)、瀏覽程式碼架構，以及在偵錯工作階段期間設定中斷點。 使用 Python 時，您也可按 Ctrl+Enter 在 [[互動式 REPL] 視窗](python-interactive-repl-in-visual-studio.md)中執行該程式碼。
 
 - [[輸出] 視窗](../ide/reference/output-window.md) (中下) 是 Visual Studio 傳送通知的位置，例如偵錯和錯誤訊息、警告、發佈狀態訊息等。 每個訊息來源都有自己的索引標籤。
   - [[Python 互動式 REPL] 視窗](python-interactive-repl-in-visual-studio.md) 與輸出視窗位於同一個區域。
@@ -44,7 +44,7 @@ Visual Studio 整合式開發環境** 是支援 Python (和其他語言) 且創�
 
 Visual Studio 適用於 Windows 及 Mac；但 Python 僅支援適用於 Windows 的 Visual Studio。
 
-Windows 上有三種版本的 Visual Studio：「社區」、「專業」和「企業」。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
+Windows 上有三個版本的 Visual Studio：「社區」、「專業」和「企業」。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
 
 ## <a name="popular-productivity-features"></a>熱門的生產力功能
 
@@ -95,8 +95,8 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 ::: moniker-end
 
 - [使用 Visual Studio 共同作業](/visualstudio/liveshare/)
-  
-    Visual Studio Live Share 可讓您即時與其他人以共同作業方式編輯和偵錯，不論您使用的程式設計語言或建置的應用程式類型為何。 
+
+    Visual Studio Live Share 可讓您即時與其他人以共同作業方式編輯和偵錯，不論您使用的程式設計語言或建置的應用程式類型為何。
 
 - [Python 互動式 REPL](python-interactive-repl-in-visual-studio.md)
 
@@ -106,7 +106,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [偵錯](debugging-python-in-visual-studio.md)
 
-    Visual Studio 提供 Python 的完整偵錯工具體驗，包括附加至執行中進程、在 [**監看式]** **和 [** 即時運算] 視窗中評估運算式、檢查區域變數、中斷點、逐步執行/輸出/執行語句、**設定下一個語句**等。 您也可針對在 Linux 電腦上執行的遠端 Python 程式碼進行偵錯。
+    Visual Studio 為 Python 提供完整的偵錯工具體驗，包括附加至執行中進程、在 **監看** 式和即時 **運算視窗中** 評估運算式、檢查區域變數、中斷點、逐步執行/跳過/跳過語句、 **設定下一個語句**等。 您也可針對在 Linux 電腦上執行的遠端 Python 程式碼進行偵錯。
 
     ![在 Visual Studio 中針對 Python 進行偵錯](media/remote-debugging-breakpoint-hit.png)
 

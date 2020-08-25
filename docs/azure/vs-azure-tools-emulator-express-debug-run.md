@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: d70f2038881cd422b9c5a1015c4f88a49f2a3c9a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0a6bbf5c846007cb1fa8d8cad91aa252f3d06a72
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280579"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800368"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>使用 Emulator Express 在本機電腦上執行 Azure 雲端服務及對其進行偵錯
 使用 Emulator Express，您可以測試及偵錯雲端服務，而不需以系統管理員身分執行 Visual Studio。 視您的雲端服務的需求而定，您可以進行專案設定以使用 Emulator Express 或完整模擬器。 如需完整模擬器的詳細資訊，請參閱 [在計算模擬器中執行 Azure 應用程式](/azure/storage/common/storage-use-emulator)。
@@ -23,7 +23,7 @@ ms.locfileid: "85280579"
 
 1. 在 Visual Studio 中建立或開啟 Azure 雲端服務專案。
 
-1. 在 [方案總管]**** 中，以滑鼠右鍵按一下專案，然後從操作功能表中選取 [屬性]****。
+1. 在方案總管中，以滑鼠右鍵按一下專案，然後從內容功能表中選取 [ **屬性**]。
 
 1. 在專案屬性頁面中，選取 [Web]**** 索引標籤。
 
