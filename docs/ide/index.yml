@@ -11,12 +11,12 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 09/24/2019
-  ms.openlocfilehash: 0db1718cbb1a43a2ebacafbdaac0ba0667b28dda
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: fe306d007c836ce6ac2e87361d0a6592197cf7cc
+  ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74316428"
+  ms.lasthandoff: 08/21/2020
+  ms.locfileid: "88711738"
 landingContent:
 - title: 開始使用
   linkLists:
@@ -78,3 +78,5 @@ landingContent:
       url: ../ide/whats-new-visual-studio-2019.md
     - text: Visual Studio 2017 的新功能
       url: ../ide/whats-new-visual-studio-2017.md
+    - text: Visual Studio 文件中的新功能
+      url: ../ide/whats-new-visual-studio-docs.md

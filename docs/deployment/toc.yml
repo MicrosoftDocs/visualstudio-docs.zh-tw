@@ -302,3 +302,7 @@
               href: customerrorreporting-element-clickonce-deployment.md
         - name: ClickOnce Unmanaged API 參考
           href: clickonce-unmanaged-api-reference.md
+    - name: Visual Studio 安裝程式專案參考
+      items:
+        - name: Visual Studio 安裝程式專案延伸模組與 .NET Core 3.1
+          href: installer-projects-net-core.md

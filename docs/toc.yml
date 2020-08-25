@@ -902,7 +902,7 @@
     - name: 自訂 IDE
       displayName: Personalize
       href: ide/personalizing-the-visual-studio-ide.md
-    - name: 快速入門：個人化佈景主題與文字色彩
+    - name: 個人化色彩佈景主題與文字
       href: ide/quickstart-personalize-the-ide.md
     - name: 環境設定
       displayName: profiles
@@ -1190,7 +1190,7 @@
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: 進行 Lint 檢查
                       href: ide/reference/options-text-editor-javascript-linting.md
-                    - name: 隨附此逐步解說的專案
+                    - name: 專案
                       href: ide/reference/options-text-editor-javascript-project.md
                 - name: U-SQL
                   items:
@@ -1409,6 +1409,8 @@
       href: ide/whats-new-visual-studio-2017.md
     - name: Visual Studio 2019 的新功能
       href: ide/whats-new-visual-studio-2019.md
+    - name: Visual Studio 文件中的新功能
+      href: ide/whats-new-visual-studio-docs.md
     - name: 版本資訊與系統需求
       items:
         - name: 發行節奏
