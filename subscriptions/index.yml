@@ -10,12 +10,12 @@ metadata:
   ms.author: lank
   manager: lank
   ms.date: 12/04/2019
-  ms.openlocfilehash: bde855a1550f304df07c22262d7cb07094b5bc9e
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 98e3a19b2e06ee08b8e88dfb6ba15c8c8a5e027c
+  ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74883830"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88801733"
 highlightedContent:
   items:
   - title: Visual Studio 訂閱的新功能
@@ -97,7 +97,7 @@ additionalContent:
         url: ~/vs-visual-studio-app-center.md
       - text: Azure DevOps Server 及 CAL
         url: ~/vs-vsts.md
-      - text: Office 365 開發人員訂閱
+      - text: Microsoft 365 開發人員訂閱
         url: ~/vs-office-dev.md
       - text: Windows 開發人員帳戶
         url: ~/vs-windows-dev.md

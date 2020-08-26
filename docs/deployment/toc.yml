@@ -1,13 +1,13 @@
 - name: 部署文件
   href: index.yml
-- name: 總覽
-  items:
-    - name: 部署概觀
-      href: deploying-applications-services-and-components-resources.md
-- name: 快速入門
+- name: 概觀
   items:
     - name: 部署簡介
       href: deploying-applications-services-and-components.md
+    - name: 部署到資料夾、IIS 或 Azure
+      href: deploying-applications-services-and-components-resources.md
+- name: 快速入門
+  items:
     - name: 部署到 Azure App Service
       href: quickstart-deploy-to-azure.md
     - name: 部署到適用於 Linux 的 App Service
