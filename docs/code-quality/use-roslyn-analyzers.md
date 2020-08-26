@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: edb9cb30be9d62a533e6d011cbb8d0436ef898b1
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801603"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893420"
 ---
 # <a name="use-code-analyzers"></a>使用程式碼分析器
 
@@ -28,11 +28,11 @@ ms.locfileid: "88801603"
 
 ![方案總管中的分析器節點](media/analyzers-expanded-in-solution-explorer.png)
 
-您可以在 [ **屬性** ] 視窗中，查看診斷的屬性，包括其描述和預設嚴重性。 若要查看屬性，請以滑鼠右鍵按一下 (或選取並保存規則上的) 並選取 [**屬性**]，或選取規則，然後選取 [ **Alt** + **Enter**]。
+您可以在 [ **屬性** ] 視窗中，查看診斷的屬性，包括其描述和預設嚴重性。 若要查看屬性，請以滑鼠右鍵按一下規則，然後選取 [**屬性**]，或選取規則，然後按下**Alt** + **enter**。
 
 ![屬性視窗中的診斷屬性](media/analyzer-diagnostic-properties.png)
 
-若要查看診斷的線上檔，請以滑鼠右鍵按一下 (或選取並按住) 診斷，然後選取 [ **View Help**]。
+若要查看診斷的線上檔，請以滑鼠右鍵按一下診斷，然後選取 [ **View Help**]。
 
 **方案總管**中每個診斷旁邊的圖示，會對應至您在編輯器中開啟它時，在規則集中看到的圖示：
 
@@ -66,7 +66,7 @@ ms.locfileid: "88801603"
 | 警告 | `warning` | 違規在錯誤清單和命令列組建輸出中會顯示為 *警告* ，但不會造成組建失敗。 | 有問題的程式碼會以綠色波浪線加上底線，並在捲軸中以小綠色方塊標記。 |
 | 資訊 | `suggestion` | 違規會以 *訊息* 形式出現在錯誤清單中，而不是在命令列組建輸出中。 | 有問題的程式碼會以灰色波浪線加上底線，並在捲軸中以小灰色方塊標記。 |
 | Hidden | `silent` | 使用者看不到。 | 使用者看不到。 不過，診斷會回報給 IDE 診斷引擎。 |
-| None | `none` | 已完全隱藏。 | 已完全隱藏。 |
+| 無 | `none` | 已完全隱藏。 | 已完全隱藏。 |
 | 預設 | `default` | 對應于規則的預設嚴重性。 若要判斷規則的預設值為何，請查看屬性視窗。 | 對應于規則的預設嚴重性。 |
 
 下列程式碼編輯器的螢幕擷取畫面顯示三種與不同嚴重性的不同違規。 請注意右邊捲軸的波浪色彩和小彩色方形。
@@ -225,7 +225,7 @@ Visual Studio 提供一個便利的方式，從 [ [快速動作](../ide/quick-ac
 
 Visual Studio 也提供方便的方式，從 [錯誤清單] 內容功能表設定規則的嚴重性。
 
-1. 發生違規之後，以滑鼠右鍵按一下 (或選取並按住) 錯誤清單中的診斷專案。
+1. 違規發生之後，以滑鼠右鍵按一下 [錯誤清單] 中的診斷專案。
 
 2. 從內容功能表中，選取 [ **設定嚴重性**]。
 
@@ -242,12 +242,12 @@ Visual Studio 也提供方便的方式，從 [錯誤清單] 內容功能表設�
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>從方案總管設定規則嚴重性
 
-1. 在方案總管中，選取 [**參考**  >  **分析器** (或**Dependencies**  >  適用于 .net Core 專案的相依性**分析器**]) 。
+1. 在方案總管中，展開 [**參考**  >  **分析器** **]** (或 [  >  .net Core 專案的相依性**分析器**]) 。
 
 2. 展開包含您要為其設定嚴重性之規則的元件。
 
 ::: moniker range=">=vs-2019"
-3. 以滑鼠右鍵按一下 (或選取並按住) 規則，然後選取 [ **設定嚴重性**]。 在內容功能表中，選擇其中一個嚴重性選項。
+3. 以滑鼠右鍵按一下規則，然後選取 [ **設定嚴重性**]。 在內容功能表中，選擇其中一個嚴重性選項。
 
    Visual Studio 將專案新增至 EditorConfig 檔案，以將規則設定為要求的層級。 如果您的專案使用規則集檔案，而不是 EditorConfig 檔案，則會將嚴重性專案加入至規則集檔案。
 
@@ -256,7 +256,7 @@ Visual Studio 也提供方便的方式，從 [錯誤清單] 內容功能表設�
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-3. 以滑鼠右鍵按一下 (或選取並按住) 規則，然後選取 [ **設定規則集嚴重性**]。 在內容功能表中，選擇其中一個嚴重性選項。
+3. 以滑鼠右鍵按一下規則，然後選取 [ **設定規則集嚴重性**]。 在內容功能表中，選擇其中一個嚴重性選項。
 
    規則的嚴重性會儲存在使用中的規則集檔案中。
 ::: moniker-end
@@ -267,7 +267,7 @@ Visual Studio 也提供方便的方式，從 [錯誤清單] 內容功能表設�
 
 1. 以下列其中一種方式開啟主動規則集檔案：
 
-- 在**方案總管**中，按兩下檔案，以滑鼠右鍵按一下 (或選取並按住) **參考**  >  **分析器**] 節點，然後選取 [開啟使用中**規則集**]。
+- 在**方案總管**中，按兩下檔案，以滑鼠右鍵按一下 [**參考**  >  **分析器**] 節點，然後選取 [開啟使用中**規則集**]。
 - 在專案的 [程式 **代碼分析** ] 屬性頁上，選取 [ **開啟** ]。
 
   如果這是您第一次編輯規則集，Visual Studio 建立預設規則集檔案的複本，並將其命名為* \<projectname> 規則*集，並將它新增至您的專案。 此自訂規則集也會成為專案的作用中規則集。
@@ -336,13 +336,13 @@ Visual Studio 也提供方便的方式，從 [錯誤清單] 內容功能表設�
 
 - 從程式 **代碼編輯器**
 
-  將游標放在具有違規的程式程式碼中，然後選取 [ **Ctrl** + **Period (]。 ) **開啟 [**快速動作**] 功能表。 選取 [**隱藏**  >  **來源/在隱藏**專案檔中的 CAXXXX]。
+  將游標放在具有違規的程式程式碼中，然後按下**Ctrl** + **句號 (。 ) **開啟 [**快速動作**] 功能表。 選取 [**隱藏**  >  **來源/在隱藏**專案檔中的 CAXXXX]。
 
   ![從 [快速動作] 功能表隱藏診斷](media/suppress-diagnostic-from-editor.png)
 
 - 從 **錯誤清單**
 
-  選擇您要隱藏的規則，然後以滑鼠右鍵按一下 (或選取並按住) ，然後在**Suppress**[  >  **來源/隱藏隱藏**專案檔] 中選取 [隱藏]。
+  選取您要隱藏的規則，然後以滑鼠右鍵按一下並選取 [ **Suppress**  >  **在來源/隱藏隱藏**專案檔中隱藏]。
 
   - 如果您 **在 [來源] 中**隱藏，[ **預覽變更** ] 對話方塊隨即開啟，並顯示已新增至原始程式碼的 c # [#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) 或 Visual Basic [#Disable 警告](/dotnet/visual-basic/language-reference/directives/directives) 指示詞的預覽。
 
@@ -392,7 +392,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的程式碼分析器總覽](../code-quality/roslyn-analyzers-overview.md)
 - [提交程式碼分析器 bug](https://github.com/dotnet/roslyn-analyzers/issues)

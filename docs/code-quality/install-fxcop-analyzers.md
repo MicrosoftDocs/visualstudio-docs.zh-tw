@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22f6f80a7e4c8c8c3f91fa436361ff37405893bd
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d789299212ec7420f40135dd655056f16b6e4f35
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800966"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893342"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>在 Visual Studio 中安裝 FxCop 分析器
 
@@ -28,11 +28,11 @@ Microsoft 建立了一組稱為 [CodeAnalysis](https://www.nuget.org/packages/Mi
 
 在 Visual Studio 2019 16.3 版和更新版本中，您可以直接從專案的 [程式碼分析] 屬性頁面安裝 [CodeAnalysis 將 microsoft.codeanalysis.fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet 套件：
 
-1. 以滑鼠右鍵按一下 (，或在 **方案總管**的專案節點上選取並按住) ，選取 [ **屬性**]，然後移至 [程式 **代碼分析** ] 索引標籤。
+1. 在 **方案總管**的專案節點上按一下滑鼠右鍵，選取 [ **屬性**]，然後選取 [程式 **代碼分析** ] 索引標籤。
 
    ![從 Visual Studio 中的 [屬性] 頁面安裝 FxCop 分析器套件](media/install-fxcop-properties-page.png)
 
-2. 選取 [安裝]  。
+2. 選取 [安裝]。
 
    Visual Studio 會安裝最新版的 CodeAnalysis. 將 microsoft.codeanalysis.fxcopanalyzers 套件。 元件會出現在**Solution Explorer** [**參考**  >  **分析器**] 方案總管下。
 
@@ -72,7 +72,7 @@ Microsoft 建立了一組稱為 [CodeAnalysis](https://www.nuget.org/packages/Mi
 
 | Visual Studio 版本 | FxCop 分析器套件版本 |
 | - | - |
-| Visual Studio 2019 (所有版本)  | [最新](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) | 
+| Visual Studio 2019 (所有版本)  | [最新](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017 15.9 版 | [2.9.10](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.10) |
 | Visual Studio 2017 15.5 版至15。8 | [2.6.4](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.4) |
 | Visual Studio 2017 15.3 版至15。4 | [2.3.0-Beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
@@ -153,7 +153,7 @@ Microsoft 建立了一組稱為 [CodeAnalysis](https://www.nuget.org/packages/Mi
 
 ::: moniker-end
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的程式碼分析器總覽](../code-quality/roslyn-analyzers-overview.md)
 - [在 Visual Studio 中使用程式碼分析器](../code-quality/use-roslyn-analyzers.md)

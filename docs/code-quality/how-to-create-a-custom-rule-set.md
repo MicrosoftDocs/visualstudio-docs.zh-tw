@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 643ee48f798c90851d5ff323685070f9d7268f04
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801031"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893264"
 ---
 # <a name="customize-a-rule-set"></a>自訂規則集
 
@@ -26,9 +26,9 @@ ms.locfileid: "88801031"
 
 若要建立自訂規則集，您可以在 [ **規則集編輯器**] 中開啟內建的規則集。 從該處，您可以新增或移除特定規則，也可以變更違反規則時所發生的動作 &mdash; ，例如顯示警告或錯誤。
 
-1. 在 **方案總管**中，選取並按住 (或以滑鼠右鍵按一下專案) ，然後選取 [ **屬性**]。
+1. 在 **方案總管**中，以滑鼠右鍵按一下專案，然後選取 [ **屬性**]。
 
-2. 在 [ **屬性** ] 頁面上，移至 [程式 **代碼分析** ] 索引標籤。
+2. 在 [ **屬性** ] 頁面上，選取 [程式 **代碼分析** ] 索引標籤。
 
 ::: moniker range="vs-2017"
 
@@ -57,11 +57,11 @@ ms.locfileid: "88801031"
 
 您可以從 [ **新增** 檔案] 對話方塊建立新的規則集檔案：
 
-1. 選取 **[** 檔案新增檔案]  >  **New**  >  ** **，或選取**Ctrl** + **N**。
+1. 選取 **[** 檔案新增檔案]  >  **New**  >  ** **，或按**Ctrl** + **N**。
 
 2. 在 [ **新增** 檔案] 對話方塊中，選取左側的 **[一般** ] 類別，然後選取 [程式 **代碼分析規則集**]。
 
-3. 選取 [開啟]  。
+3. 選取 [開啟]。
 
    新的 *. 規則* 集檔案會在規則集編輯器中開啟。
 
@@ -70,9 +70,9 @@ ms.locfileid: "88801031"
 > [!NOTE]
 > 下列程式不適用於沒有 [程式 **代碼分析** ] 屬性索引標籤的 .net Core 專案。
 
-1. 在 **方案總管**中，選取並按住 (或以滑鼠右鍵按一下專案) ，然後選取 [ **屬性**]。
+1. 在 **方案總管**中，以滑鼠右鍵按一下專案，然後選取 [ **屬性**]。
 
-2. 在 [ **屬性** ] 頁面上，移至 [程式 **代碼分析** ] 索引標籤。
+2. 在 [ **屬性** ] 頁面上，選取 [程式 **代碼分析** ] 索引標籤。
 
 ::: moniker range="vs-2017"
 
@@ -145,7 +145,7 @@ ms.locfileid: "88801031"
 > [!div class="nextstepaction"]
 > [修改規則集編輯器中的規則](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [程式碼分析規則集參考](../code-quality/rule-set-reference.md)

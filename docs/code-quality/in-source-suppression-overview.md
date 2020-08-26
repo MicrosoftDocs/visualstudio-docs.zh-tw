@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800849"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893368"
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 
@@ -50,7 +50,7 @@ ms.locfileid: "88800849"
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 屬性
 
-當您從內容中選取 [ **隱藏** ] 或以滑鼠右鍵按一下 (，或在 [ **錯誤清單**] 中選取並按住程式碼分析警告的) 功能表時， <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 會在您的程式碼或專案的全域隱藏專案檔中加入屬性。
+當您從 [**錯誤清單**] 中的程式碼分析警告的內容或右鍵功能表中選取 [**隱藏**] 時， <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 會在您的程式碼或專案的全域隱藏專案檔中加入屬性。
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性具有下列格式：
 
@@ -195,7 +195,7 @@ dotnet_diagnostic.CS1591.severity = none
 > [!NOTE]
 > 當程式碼分析套用 `GeneratedCodeAttribute` 至整個元件或單一參數時，會忽略程式碼分析。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

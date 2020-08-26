@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab0bbed64f9f85b8b508c3fe14fda4ec59d45f10
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 145525dc12070d98dae83d592ae86a675bb605d2
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800953"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893407"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>How to：產生程式碼度量資料
 
@@ -72,7 +72,7 @@ ms.locfileid: "88800953"
 
 ## <a name="calculate-code-metrics-menu-command"></a>計算程式碼度量功能表命令
 
-前往 [**分析**  >  **計算程式碼度量**] 功能表，為 IDE 中的一個或所有開啟的專案產生程式碼度量。
+使用 [**分析**  >  **計算程式碼度量**] 功能表，為 IDE 中的一個或所有開啟的專案產生程式碼度量。
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>產生整個解決方案的程式碼度量結果
 
@@ -80,7 +80,7 @@ ms.locfileid: "88800953"
 
 - 從功能表列中，選取 [**分析**  >  **計算**  >  **方案的程式**代碼度量]。
 
-- 在 **方案總管**中，選取並按住 (或以滑鼠右鍵按一下 [) 方案]，然後選取 [ **計算程式碼度量**]。
+- 在 **方案總管**中，以滑鼠右鍵按一下方案，然後選取 [ **計算程式碼度量**]。
 
 - 在 [程式 **代碼計量結果** ] 視窗中，選取 [ **計算方案的程式碼度量** ] 按鈕。
 
@@ -88,7 +88,7 @@ ms.locfileid: "88800953"
 
 ### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>產生一或多個專案的程式碼度量結果
 
-1. 在 **方案總管**中，選擇一個或多個專案。
+1. 在 **方案總管**中，選取一或多個專案。
 
 1. 從功能表列中，選取 [**分析**  >  **計算**  >  **所選取專案的程式**代碼度量])  (。
 
@@ -336,7 +336,7 @@ Visual Studio 2015 包含的命令列程式碼度量工具也稱為 *Metrics.exe
 
 其他的度量（例如和）會 `CyclomaticComplexity` `MaintainabilityIndex` 使用與舊版 *Metrics.exe*相同的公式，但新的工具會計算 `IOperations` (邏輯來源指令的數目，) 而非中繼語言 (IL) 指令。 這些數位將與 Visual Studio IDE 和舊版 *Metrics.exe*所產生的數位稍有不同。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用程式碼度量結果視窗](../code-quality/working-with-code-metrics-data.md)
 - [程式碼度量值](../code-quality/code-metrics-values.md)

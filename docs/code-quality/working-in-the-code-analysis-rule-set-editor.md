@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796818d376df477df84f845b5b0a17ace60bd1f2
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801538"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893303"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用程式碼分析規則集編輯器
 
@@ -29,7 +29,7 @@ ms.locfileid: "88801538"
 |錯誤|在 **錯誤清單** 中以及在組建階段產生錯誤。|
 |資訊|產生 **錯誤清單**中的訊息。|
 |Hidden|使用者看不到違規。 不過，IDE 會收到違規的通知。|
-|None|規則會被隱藏。 行為與規則已從規則集中移除的行為相同。|
+|無|規則會被隱藏。 行為與規則已從規則集中移除的行為相同。|
 
 編輯器會在樹狀結構中顯示規則，此樹狀結構會依據您指定的規則集欄位將規則分組。 若要從規則集新增或移除規則，請執行下列一或多個步驟：
 
@@ -38,7 +38,7 @@ ms.locfileid: "88801538"
    > [!TIP]
    > 您可以在 [ **群組依據** ] 下拉式清單中變更規則的分組方式。
 
-- 在群組的 [ **動作** ] 欄位中，指定要套用至群組中所有規則的動作。
+- 按一下群組的 [ **動作** ] 欄位，指定要套用至群組中所有規則的動作。
 
 - 選取或清除個別規則的核取方塊。 當您選取規則的核取方塊時，規則會設定為 **警告** 動作。
 
@@ -85,6 +85,6 @@ ms.locfileid: "88801538"
 
 - 若要依欄位值篩選規則集，請選取您要篩選之欄位的資料行標頭上的 [篩選] 按鈕。 選取您要顯示之值的核取方塊，並清除您要隱藏之值的核取方塊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)
