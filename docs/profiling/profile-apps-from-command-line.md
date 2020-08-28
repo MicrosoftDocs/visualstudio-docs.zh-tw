@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 56007fcb3b951f9b313a25092e89c234d52eb15e
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: 6de4291d08b3a6b6897b3ae41562f70fad5372b1
+ms.sourcegitcommit: 5823b184bf47fbedaca40e32ca0b3f640a643cd0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88507995"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "89053425"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>從命令列測量應用程式的效能
 
@@ -27,7 +27,7 @@ ms.locfileid: "88507995"
 
 本文所述範例會收集 Microsoft [記事本] 的效能資訊，但您可以使用相同的方法來分析任何處理序。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 * Visual Studio 2019 或更新版本
 
@@ -92,6 +92,7 @@ ms.locfileid: "88507995"
 - https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
 - https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
 - https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
+- https://aka.ms/vs/diaghub/agentconfig/dotnetcountersbase
 
 CpuUsage 設定 (基底/高/低) 對應至針對 [CPU 使用量](../profiling/cpu-usage.md) 分析工具所收集的資料。
 DotNetObjectAlloc 設定 (Base/Low) 對應至針對 [.Net 物件組態工具](../profiling/dotnet-alloc-tool.md)所收集的資料。
