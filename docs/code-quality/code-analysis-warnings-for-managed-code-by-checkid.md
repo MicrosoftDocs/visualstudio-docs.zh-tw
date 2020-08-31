@@ -295,12 +295,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 485d3a066ec7d6044082367c36136db8bea03362
-ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
+ms.openlocfilehash: 61c15689e92132d4e3e089823bc94fc90852d4ed
+ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89091482"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176061"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Managed 程式碼的程式碼分析警告（依 CheckId）
 
@@ -577,6 +577,7 @@ ms.locfileid: "89091482"
 | CA2245 | [CA2245：請勿將屬性指派給屬性自身](../code-quality/ca2245.md) | 屬性意外指派給本身。 |
 | CA2246 | [CA2246：請勿在相同的陳述式中指派符號及其成員](../code-quality/ca2246.md) | 不建議在相同的語句中指派符號及其成員，也就是欄位或屬性。 如果成員存取的目的是要在指派之前使用符號的舊值，或是在此語句中指派新值，則不會很清楚。 |
 | CA2247 | [CA2247：傳遞至 >taskcompletionsource 函式的引數應該是 TaskCreationOptions 列舉，而不是 System.threading.tasks.taskcontinuationoptions> 列舉。](../code-quality/ca2247.md) | >taskcompletionsource 具有可使用 TaskCreationOptions 來控制基礎工作的函式，以及採用儲存在工作中之物件狀態的函式。  不小心傳遞 System.threading.tasks.taskcontinuationoptions> 而非 TaskCreationOptions，會導致呼叫將選項視為狀態。 |
+| CA2249 | [CA2249： CA2249：請考慮使用 String。 Contains 而不是 String. IndexOf](../code-quality/ca2249.md) | `string.IndexOf`使用結果來檢查子字串是否存在/不存在之位置的呼叫，可以取代為 `string.Contains` 。 |
 | CA5122 | [CA5122 P-INVOKE P/Invoke 宣告不可為安全關鍵](../code-quality/ca5122.md) | 在執行安全性敏感作業時，會將方法標記為 SecuritySafeCritical，但透明程式碼也能安全地使用。 透明程式碼不可直接透過 P/Invoke 呼叫機器碼。 因此，即使將 P/Invoke 標示為安全性安全關鍵，透明程式碼仍然不能呼叫它，而且會導致安全性分析錯誤。 |
 | CA5359 | [CA5359 不停用憑證驗證](../code-quality/ca5359.md) | 憑證可協助驗證服務器的身分識別。 用戶端應該驗證伺服器憑證，以確保會將要求傳送給預定的伺服器。 如果 ServerCertificateValidationCallback 一律 `true` 會傳回，任何憑證都會通過驗證。 |
 | CA5360 | [CA5360 不會在還原序列化中呼叫危險的方法](../code-quality/ca5360.md) | 不安全的還原序列化是在未受信任的資料用來濫用應用程式邏輯、對拒絕服務 (DoS) 攻擊，或甚至在還原序列化時執行任意程式碼時，就會發生的弱點。 當應用程式將受信任的資料還原序列化時，惡意使用者通常可能會濫用這些還原序列化功能。 具體而言，在還原序列化的過程中叫用危險的方法。 成功的不安全還原序列化攻擊可能會讓攻擊者執行攻擊，例如 DoS 攻擊、驗證略過，以及遠端程式碼執行。 |
