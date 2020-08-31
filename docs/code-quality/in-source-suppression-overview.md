@@ -1,12 +1,12 @@
 ---
-title: 隱藏程式碼分析警告
-ms.date: 12/01/2018
+title: 隱藏程式碼分析違規
+ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893368"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091434"
 ---
-# <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
+# <a name="suppress-code-analysis-violations"></a>隱藏程式碼分析違規
 
 指出警告不適用時，通常會很有用。 這表示小組成員已審核程式碼，而且可以隱藏警告。  (ISS 的原始檔隱藏) 使用 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性來抑制警告。 屬性可放置於接近產生警告的程式碼區段。 您可以 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 在原始程式檔中輸入屬性，將其加入至原始程式檔，也可以使用 [ **錯誤清單** ] 中警告的快捷方式功能表自動新增。
 
@@ -195,7 +195,7 @@ dotnet_diagnostic.CS1591.severity = none
 > [!NOTE]
 > 當程式碼分析套用 `GeneratedCodeAttribute` 至整個元件或單一參數時，會忽略程式碼分析。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

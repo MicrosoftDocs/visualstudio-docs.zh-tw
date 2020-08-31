@@ -1,6 +1,6 @@
 ---
-title: 依據 CheckId 列出 Managed 程式碼的程式碼分析警告
-ms.date: 04/18/2019
+title: 程式碼品質規則總覽
+ms.date: 08/27/2020
 ms.topic: reference
 f1_keywords:
 - CA1000
@@ -290,17 +290,17 @@ f1_keywords:
 - IL3000
 - IL3001
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: daaf6854b56b31419408691c27af245c4001ea42
-ms.sourcegitcommit: 328ab0d8e5770f1067e37dcc266c2b50ea07783c
+ms.openlocfilehash: 485d3a066ec7d6044082367c36136db8bea03362
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88612873"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091482"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Managed 程式碼的程式碼分析警告（依 CheckId）
 
