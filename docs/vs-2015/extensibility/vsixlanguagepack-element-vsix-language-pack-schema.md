@@ -1,5 +1,5 @@
 ---
-title: " (VSIX 語言套件架構) 的 VSIXLanguagePack 元素 |Microsoft Docs"
+title: VSIXLanguagePack 元素 (VSIX 語言套件架構) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,12 +8,12 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd3ed1477d1c4d345e5fc6f6496d12044d4af244
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: e2e1df362fddeab5be98ff90460a8a1a7d4b7876
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114197"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284329"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>VSIXLanguagePack 元素 (VSIX 語言套件結構描述)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "88114197"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`xmlns`|定義 VSIX 語言套件架構的 XML 命名空間。|  
   
@@ -44,57 +44,31 @@ ms.locfileid: "88114197"
   
 |值|描述|  
 |-----------|-----------------|  
-|`http://schemas.microsoft.com/developer/vsx-schema-lp/2010`|必要。 檔案的位置，可定義語言套件的架構。|  
+|`http://schemas.microsoft.com/developer/vsx-schema-lp/2010`|必要。 檔案的位置，該檔案定義語言套件的架構。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
 |[LocalizedName 元素](../extensibility/localizedname-element-vsix-language-pack-schema.md)|必要。 要安裝之延伸模組的當地語系化名稱。|  
 |[LocalizedDescription 元素](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)|必要。 要安裝之延伸模組的當地語系化描述。|  
-|[MoreInfoURL 元素](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|選擇性。 延伸模組的當地語系化資訊連結。|  
-|[License 元素](../extensibility/license-element-vsix-language-pack-schema.md)|選擇性。 延伸模組的當地語系化版本授權檔案的路徑。|  
+|[MoreInfoURL 元素](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|選擇性。 有關延伸模組之當地語系化資訊的連結。|  
+|[License 元素](../extensibility/license-element-vsix-language-pack-schema.md)|選擇性。 延伸模組之授權檔案的當地語系化版本路徑。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
 |無||  
   
 ## <a name="element-information"></a>項目資訊  
-
-:::row:::
-    :::column:::
-        命名空間
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        結構描述名稱
-    :::column-end:::
-    :::column:::
-        VSIX 語言套件架構
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        驗證檔
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema .xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        可以是空的
-    :::column-end:::
-    :::column:::
-        否
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    命名空間    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   結構描述名稱   |                 VSIX 語言套件架構                 |
+| 驗證檔 |                VSIXLanguagePackSchema .xsd                 |
+|  可以是空的   |                            否                             |
   
 ## <a name="see-also"></a>另請參閱  
- [VSX 語言套件架構參考](../extensibility/vsx-language-pack-schema-reference.md)[當地語系化 Vsix 封裝](../extensibility/localizing-vsix-packages.md) [Vsix 延伸模組架構1.0 參考](/previous-versions/dd393700(v=vs.110))
+ [VSX 語言套件架構參考](../extensibility/vsx-language-pack-schema-reference.md)[當地語系化 Vsix 封裝](../extensibility/localizing-vsix-packages.md) [vsix 延伸架構1.0 參考](/previous-versions/dd393700(v=vs.110))

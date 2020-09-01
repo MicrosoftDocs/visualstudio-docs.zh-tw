@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Project Designer, Compile page
 - Compile page in Project Designer
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d7a97068b70a76dfe343de5fa68db77d2ce9781
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76111302"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284313"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>專案設計工具、編譯頁 (Visual Basic)
 
@@ -41,7 +41,7 @@ ms.locfileid: "76111302"
 > [!NOTE]
 > 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此，不會顯示 [組態]**** 和 [平台]**** 清單。
 
-**組態**
+**設定**
 
 指定要顯示或修改的組態設定。 設定是 [偵錯]**** (預設值)、[發行]**** 或 [所有組態]****。 如需詳細資訊，請參閱[了解建置組態](../../ide/understanding-build-configurations.md)與[如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "76111302"
 
 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 不論您指定的 [輸出路徑]**** 為何，[偵錯]**** 功能表 (F5) 中的 [建置]**** 命令都會將組建放在偵錯位置。 不過，[建置]**** 功能表中的 [建置]**** 命令卻會將其放在您指定的位置。
 
-**選項顯式**
+**Option explicit**
 
 指定是否允許變數隱含宣告。 選取 [On]**** 表示必須明確宣告變數。 如果變數未在使用前宣告，這會導致編譯器報告錯誤。 選取 [Off]**** 則表示允許隱含宣告變數。
 
@@ -71,7 +71,7 @@ ms.locfileid: "76111302"
 
 將 [Option Explicit]**** 設定為 `Off` 通常不是好的做法。 一或多個位置中的變數名稱可能有拼字錯誤，這會在程式執行時造成非預期的結果。
 
-**選項嚴格**
+**Option strict**
 
 指定是否強制執行嚴格的類型語意。 當 [Option Strict]**** 為 [On]**** 時，下列情況將造成編譯時期錯誤：
 
@@ -105,7 +105,7 @@ ms.locfileid: "76111302"
 
 當您將 [Option Strict]**** 設定為 [On]**** 時，這三個警告組態設定都會設定為 [錯誤]****。 當您將 [Option Strict]**** 設定為 [Off]**** 時，所有三個設定都會設定為 [無]****。
 
-您可以將每個警告組態個別變更為 [無]****、[警告]**** 或 [錯誤]****。 如果所有三個警告配置設置都設置為 **"錯誤**"，`On``Option strict`則將顯示在框中。 如果所有三個都設置為 **"無"，**`Off`則將顯示在此框中。 若為這些設定的其他任何組合，則會出現 [(自訂)]****。
+您可以將每個警告組態個別變更為 [無]****、[警告]**** 或 [錯誤]****。 如果三個警告設定都設為 [ **錯誤**]， `On` 則會出現在方塊中 `Option strict` 。 如果三個都設定為 [ **無**]， `Off` 就會出現在此方塊中。 若為這些設定的其他任何組合，則會出現 [(自訂)]****。
 
 **選項比較**
 
@@ -155,7 +155,7 @@ ms.locfileid: "76111302"
 
 **停用所有警告**
 
-指定是否允許編譯器發出通知，如本文件稍早的 [狀況與告知]**** 表中的描述。 依預設，不會勾選此核取方塊。 選取此核取方塊，可指示編譯器不要發出警告或錯誤。
+指定是否允許編譯器發出通知，如本文件稍早的 [狀況與告知]**** 表中的描述。 根據預設，會清除此核取方塊。 選取此核取方塊，可指示編譯器不要發出警告或錯誤。
 
 此設定對應於 [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) 編譯器選項。
 
@@ -189,6 +189,6 @@ ms.locfileid: "76111302"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：指定建置事件（可視基本）](../../ide/how-to-specify-build-events-visual-basic.md)
+- [如何：指定組建事件 (Visual Basic) ](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Visual Basic 命令列編譯器](/dotnet/visual-basic/reference/command-line-compiler/index)
 - [如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)
