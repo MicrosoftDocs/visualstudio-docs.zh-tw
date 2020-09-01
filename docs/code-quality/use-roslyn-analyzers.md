@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893420"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219773"
 ---
 # <a name="use-code-analyzers"></a>使用程式碼分析器
 
@@ -102,6 +102,9 @@ ms.locfileid: "88893420"
 - 設定所有分析器規則的規則嚴重性：
 
 `dotnet_analyzer_diagnostic.severity = <severity>`
+
+> [!NOTE]
+> 一次設定多個分析器規則的專案只適用于 *預設啟用*的規則。 分析器封裝中預設標示為停用的分析器規則必須透過明確的 `dotnet_diagnostic.<rule ID>.severity = <severity>` 專案啟用。
 
 如果您有多個適用于特定規則識別碼的專案，以下是選擇適用專案的優先順序：
 
@@ -392,7 +395,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的程式碼分析器總覽](../code-quality/roslyn-analyzers-overview.md)
 - [提交程式碼分析器 bug](https://github.com/dotnet/roslyn-analyzers/issues)
