@@ -1,2 +1,34 @@
-- name: 索引
-  href: index.md
+- name: Docker
+  expanded: true
+  items:
+    - name: 適用於 VS Code 使用者的 Docker 簡介
+      expanded: true
+      items:
+        - name: 開始使用
+          href: tutorials/docker-tutorial.md
+        - name: 第 1 部份：應用程式
+          href: tutorials/your-application.md
+        - name: 第 2 部分：更新應用程式
+          href: tutorials/update-your-app.md
+        - name: 第 3 部分：分享您的應用程式
+          href: tutorials/share-your-app.md
+        - name: 第 4 部分：保存您的資料庫
+          href: tutorials/persist-your-data.md
+        - name: 第 5 部分：使用繫結裝載
+          href: tutorials/use-bind-mounts.md
+        - name: 第 6 部分：多容器應用程式
+          href: tutorials/multi-container-apps.md
+        - name: 第 7 部分：使用 Docker Compose
+          href: tutorials/use-docker-compose.md
+        - name: 第 8 部分：映像建置最佳做法
+          href: tutorials/image-building-best-practices.md
+        - name: 第 9 部分：部署至雲端
+          href: tutorials/deploy-to-cloud.md
+        - name: 接下來要做什麼？
+          href: tutorials/whats-next.md
+        - name: 來源
+          items:
+            - name: 範例
+              href: 'https://github.com/docker/awesome-compose'
+            - name: Docker ACI 整合
+              href: 'https://github.com/docker/aci-integration-beta/'

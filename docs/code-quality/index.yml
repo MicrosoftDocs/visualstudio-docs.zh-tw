@@ -10,12 +10,12 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: 2bafba53a131ca440b7d1e9cb68d18ac0ac833dd
-  ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+  ms.openlocfilehash: 94dcd1cf66ed1893a8cdfd069314d689cb1e9329
+  ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/27/2020
-  ms.locfileid: "85462092"
+  ms.lasthandoff: 08/29/2020
+  ms.locfileid: "89091394"
 landingContent:
 - title: 分析 C 和 C++ 程式碼
   linkLists:
@@ -27,7 +27,7 @@ landingContent:
     links:
     - text: C++ 程式碼分析警告
       url: code-analysis-for-c-cpp-warnings.md
-- title: 分析受控碼品質
+- title: .NET 程式碼品質分析
   linkLists:
   - linkListType: overview
     links:
@@ -41,17 +41,17 @@ landingContent:
       url: analyzers-faq.md
   - linkListType: how-to-guide
     links:
-    - text: 安裝 FxCop 分析器
+    - text: 設定程式碼品質分析
       url: install-fxcop-analyzers.md
   - linkListType: reference
     links:
-    - text: 受控碼分析警告
+    - text: .NET 程式碼品質規則
       url: code-analysis-for-managed-code-warnings.md
-- title: 分析受控程式碼樣式
+- title: .NET 程式碼樣式分析
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 分析程式碼樣式
+    - text: 設定程式碼樣式分析
       url: ../ide/create-portable-custom-editor-options.md
 - title: 受控程式碼複雜度
   linkLists:
