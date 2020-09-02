@@ -21,15 +21,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ac7ca0e59a479aff3386486d2ceaf061038db68
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536574"
 ---
-# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 功能（c #、Visual Basic、c + +）
+# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 功能 (c #、Visual Basic、c + +) 
 
-您可以使用 IntelliTrace 記錄您應用程式的事件和方法呼叫，以讓您檢查它在執行之不同時間點的狀態 (呼叫堆疊和區域變數值)。 只要以平常的方式開始偵錯工具，預設會開啟 IntelliTrace，而您可以在 [**事件**] 索引標籤下的 [新增**診斷工具**] 視窗中，看到 intellitrace 正在錄製的資訊。請選取事件，然後按一下 [**啟動歷程記錄**]，查看針對此事件記錄的呼叫堆疊和區域變數。
+您可以使用 IntelliTrace 記錄您應用程式的事件和方法呼叫，以讓您檢查它在執行之不同時間點的狀態 (呼叫堆疊和區域變數值)。 只要像往常一樣開始偵錯工具，預設會開啟 IntelliTrace，而您可以在 [**事件**] 索引標籤下的 [新的**診斷工具**] 視窗中看到 intellitrace 正在記錄的資訊。選取事件，然後按一下 [**啟用歷程記錄調試**程式]，以查看針對此事件記錄的呼叫堆疊和區域變數。
 
 如需逐步說明，請參閱[逐步解說：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)。
 
@@ -40,23 +40,23 @@ Visual Studio Enterprise 版本 (而非 Visual Studio Professional 或 Community
 > [!NOTE]
 > [IntelliTrace]**** 選項頁面上所有設定的範圍是整個 Visual Studio，而不是個別專案或方案。 這些設定的變更會套用至所有 Visual Studio 執行個體、所有偵錯工作階段，以及所有專案或方案。
 
-## <a name="choose-the-events-that-intellitrace-records-c-visual-basic"></a><a name="ChooseEvents"></a>選擇 IntelliTrace 記錄的事件（c #、Visual Basic）
+## <a name="choose-the-events-that-intellitrace-records-c-visual-basic"></a><a name="ChooseEvents"></a> 選擇 IntelliTrace 記錄 (c # Visual Basic 的事件) 
 
 您可以開啟或關閉特定 IntelliTrace 事件的記錄。
 
-如果您正在偵錯，請停止偵錯。 移至 [工具] [ **> 選項] [> intellitrace] > [Intellitrace 事件**]。 選擇您要 IntelliTrace 記錄的事件。
+如果您正在偵錯，請停止偵錯。 移至 [ **工具 > 選項 > intellitrace > Intellitrace 事件**。 選擇您要 IntelliTrace 記錄的事件。
 
-## <a name="collect-snapshots-c-visual-basic-c"></a><a name="Snapshots"></a>收集快照集（c #、Visual Basic、c + +）
+## <a name="collect-snapshots-c-visual-basic-c"></a><a name="Snapshots"></a> (c #、Visual Basic、c + + 收集快照集) 
 
-預設不會啟用此功能，但 IntelliTrace 可以在每個中斷點和偵錯工具步驟事件中，捕獲您應用程式的快照集，而且您可以在歷程記錄的偵錯工具中查看這些快照集。 快照集可讓您查看完整的應用程式狀態。 若要啟用快照集的捕捉，請移至 [**工具] [> 選項] [> intellitrace > 一般**]，然後選取 [ **intellitrace 快照（managed 和原生）**]。 如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)。
+依預設不會啟用此功能，但 IntelliTrace 可以在每個中斷點和偵錯工具步驟事件中，捕獲您應用程式的快照集，而且您可以在歷程記錄的偵錯工具中查看這些快照集。 快照集可讓您查看完整的應用程式狀態。 若要啟用快照集的捕獲，請移至 **[工具 > 選項 > IntelliTrace > 一般**]，然後選取 [ **intellitrace 快照] (managed 和原生) **。 如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)。
 
-快照集可在 Visual Studio Enterprise 2017 15.5 版和更新版本中取得，而且需要 Windows 10 年度更新版或更高版本。  針對 .NET Core 和 ASP.NET Core 應用程式，需要 Visual Studio Enterprise 2017 15.7 版。 若是以 Windows 為目標的原生應用程式，則需要 Visual Studio Enterprise 2017 15.9 版 Preview 2。
+快照集適用于 Visual Studio Enterprise 2017 15.5 版和更新版本，且需要 Windows 10 年度更新版或更高版本。  若為 .NET Core 和 ASP.NET Core 應用程式，則需要 Visual Studio Enterprise 2017 15.7 版。 若是以 Windows 為目標的原生應用程式，則需要 Visual Studio Enterprise 2017 15.9 版 Preview 2。
 
-## <a name="collect-intellitrace-events-and-call-information-c-visual-basic"></a><a name="GoingFurther"></a>收集 IntelliTrace 事件和呼叫資訊（c #、Visual Basic）
+## <a name="collect-intellitrace-events-and-call-information-c-visual-basic"></a><a name="GoingFurther"></a> 收集 IntelliTrace 事件和呼叫資訊 (c #、Visual Basic) 
 
-這預設不會予以啟用，但 IntelliTrace 可以記錄方法呼叫和事件。 若要啟用方法呼叫的收集，請移至 **[工具] [> 選項] [> intellitrace > 一般**]，然後選取 [ **intellitrace 事件和呼叫資訊] （僅限 managed）**。
+這預設不會予以啟用，但 IntelliTrace 可以記錄方法呼叫和事件。 若要啟用方法呼叫的收集，請移至 **[工具 > 選項 > IntelliTrace > 一般**]，然後選取 [ **intellitrace 事件] 和 [呼叫資訊] (僅限 managed) **。
 
-呼叫資訊目前不適用於 .NET Core 和 ASP.NET Core 應用程式。
+目前無法使用 .NET Core 和 ASP.NET Core 應用程式的呼叫資訊。
 
 這可讓您查看呼叫堆疊記錄，並在程式碼中逐步返回及逐步前進。 IntelliTrace 會記錄資料 (例如方法名稱、方法進入點與結束點，以及特定參數值與傳回值)。
 
@@ -71,7 +71,7 @@ Visual Studio Enterprise 版本 (而非 Visual Studio Professional 或 Community
 
 巡覽邊可讓您以歷程偵錯模式向前及向後移動方法呼叫和事件。 如需歷程偵錯的詳細資訊，請參閱[歷程偵錯](../debugger/historical-debugging.md)。 它有一些命令：
 
-|Command|描述|
+|命令|描述|
 |-|-|
 |**在此設定偵錯工具內容**|將偵錯內容設定為它所在的呼叫時間範圍。<br /><br /> 這個圖示只會出現在目前呼叫堆疊上。|
 |**返回呼叫位置**|將游標和偵錯內容向後移至呼叫目前函式的位置。<br /><br /> 如果您使用 [即時偵錯] 模式，此命令會開啟 [歷程偵錯]。 如果您導覽回到原始執行中斷，則會關閉 [歷程偵錯] 並開啟 [即時偵錯]。|
@@ -92,7 +92,7 @@ IntelliTrace 預設會記錄您方案所使用之所有模組的資訊。 您可
 
 嘗試將模組數目保持為最小值。 因為要收集的資料比較少，所以效能會更好。 因為通過的資料較少，所以 UI 中的雜訊也會較少。
 
-## <a name="save-intellitrace-data-to-file-c-visual-basic-c"></a><a name="SaveSession"></a>將 IntelliTrace 資料儲存至檔案（c #、Visual Basic、c + +）
+## <a name="save-intellitrace-data-to-file-c-visual-basic-c"></a><a name="SaveSession"></a> 將 IntelliTrace 資料儲存至 file (c #、Visual Basic、c + +) 
 
 如果您正在進行偵錯，而且應用程式處於中斷狀態，則可以移至 [偵錯] > [IntelliTrace] > [儲存 IntelliTrace 工作階段]**** 來儲存 IntelliTrace 已收集的資料。 已停用此功能表項目，因此，如果應用程式仍在執行，或您已停止偵錯，則無法儲存 IntelliTrace 已收集的資料。
 
@@ -107,9 +107,9 @@ IntelliTrace 預設會記錄您方案所使用之所有模組的資訊。 您可
 
 [Visual Studio Enterprise 2015 中的 IntelliTrace (英文)](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
 
-[在 Visual Studio 2015 中使用 IntelliTrace 進行即時調試的逐步解說（文字編輯器）](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
+[在 Visual Studio 2015 (文字編輯器中使用 IntelliTrace 進行即時偵錯工具的逐步解說) ](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
 
-[在 Visual Studio 2015 （社交俱樂部）中使用 IntelliTrace 進行即時調試的逐步解說](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
+[在 Visual Studio 2015 (社交俱樂部) 中使用 IntelliTrace 進行即時偵錯工具的逐步解說 ](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
 
 [Visual Studio Enterprise 2015 中的 IntelliTrace 現在支援 attach！](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
 
@@ -117,9 +117,9 @@ IntelliTrace 預設會記錄您方案所使用之所有模組的資訊。 您可
 
 [編輯 IntelliTrace 收集計畫](https://devblogs.microsoft.com/devops/editing-the-intellitrace-collection-plan)
 
-[使用 IntelliTrace 自訂 TraceSource 和調試](https://devblogs.microsoft.com/devops/custom-tracesource-and-debugging-using-intellitrace/)
+[使用 IntelliTrace 的自訂 TraceSource 和調試](https://devblogs.microsoft.com/devops/custom-tracesource-and-debugging-using-intellitrace/)
 
-[在 Active Directory 帳戶底下執行的 IntelliTrace 獨立收集器和應用程式集區](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
+[IntelliTrace 獨立收集器和在 Active Directory 帳戶下執行的應用程式集區](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
 
 ## <a name="forums"></a>論壇
 

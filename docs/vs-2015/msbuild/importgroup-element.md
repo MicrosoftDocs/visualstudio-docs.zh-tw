@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1b6fb90cd12dc59edc760b081e7108c52c815a72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192255"
 ---
 # <a name="importgroup-element"></a>ImportGroup 元素
@@ -42,23 +42,23 @@ ms.locfileid: "68192255"
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述屬性、子項目和父項目。  
+ 下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[Import](../msbuild/import-element-msbuild.md)|將某個專案檔的內容匯入至另一個專案檔。|  
+|[匯入](../msbuild/import-element-msbuild.md)|將某個專案檔的內容匯入至另一個專案檔。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔案的必要根項目。|  
   
@@ -78,5 +78,5 @@ ms.locfileid: "68192255"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
+ [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)   
  [項目](../msbuild/msbuild-items.md)

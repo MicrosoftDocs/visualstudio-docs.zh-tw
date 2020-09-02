@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyeside::InitSourceData供應商 |微軟文件
+title: IPropertyProxyEESide：： InitSourceDataProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f14f24836beb1d69a15149a56a2817ebf14eff55
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714915"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
-初始化此物件的源數據並返回包含初始數據的物件。
+初始化這個物件的來源資料，並傳回包含初始資料的物件。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int InitSourceDataProvider(
 
 ## <a name="parameters"></a>參數
 `dataOut`\
-[出]傳回[IEEData 儲存](../../../extensibility/debugger/reference/ieedatastorage.md)物件
+擴展傳回 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 物件
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 此方法執行一切必要的初始化物件,以便它可以返回物件數據的[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)介面。 這允許查看物件的數據,如果允許,則由類型可視化器更改。
+ 這個方法會執行初始化物件時所需的任何動作，讓它可以傳回物件資料上的 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 介面。 這可讓您查看物件的資料，並在允許的情況下，由型別視覺化程式變更。
 
 ## <a name="see-also"></a>另請參閱
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

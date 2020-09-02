@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLinesByRVA |Microsoft Docs
+title: IDiaSymbol：： findInlineeLinesByRVA |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1de9a2803ae82eccbcb96bda5b49df0cfb94444d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149938"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取列舉型別，可讓用戶端來逐一查看位於內嵌的直接或間接指定相對的虛擬位址 (RVA) 內這個符號的所有函式的行號資訊。  
+抓取列舉，此列舉可讓用戶端在指定的相對虛擬位址 (RVA) 內，直接或間接地逐一查看在此符號中內嵌或間接內嵌的所有函式的行號資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,16 +33,16 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD          
   
 #### <a name="parameters"></a>參數  
  `rva`  
- [in]RVA 為指定的位址。  
+ 在將位址指定為 RVA。  
   
  `length`  
- [in]指定位址範圍中涵蓋此查詢使用的位元組數目。  
+ 在指定要包含在此查詢中的位址範圍（以位元組數為單位）。  
   
  `ppResult`  
- [out]保存`IDiaEnumLineNumbers`物件，其中包含所擷取的行號的清單。  
+ 擴展保存 `IDiaEnumLineNumbers` 物件，其中包含所抓取行號的清單。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

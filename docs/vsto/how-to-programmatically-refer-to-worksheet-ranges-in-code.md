@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 93673fcc270ce2f1ac43804cb1d794281f28c702
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547390"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>如何：以程式設計方式在程式碼中參考工作表範圍
@@ -28,9 +28,9 @@ ms.locfileid: "85547390"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="use-a-namedrange-control"></a>使用 NamedRange 控制項
- 下列範例會將加入 <xref:Microsoft.Office.Tools.Excel.NamedRange> 至工作表，然後將文字加入至範圍中的資料格。
+ 下列範例會將加入 <xref:Microsoft.Office.Tools.Excel.NamedRange> 至工作表，然後將文字加入至範圍中的儲存格。
 
-### <a name="to-refer-to-a-namedrange-control"></a>若要參考 NamedRange 控制項
+### <a name="to-refer-to-a-namedrange-control"></a>參考 NamedRange 控制項
 
 1. 將字串指派給 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 控制項的屬性 <xref:Microsoft.Office.Tools.Excel.NamedRange> 。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。
 
@@ -38,9 +38,9 @@ ms.locfileid: "85547390"
      [!code-vb[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#46)]
 
 ## <a name="use-native-excel-ranges"></a>使用原生 Excel 範圍
- 下列範例會將原生 Excel 範圍加入工作表，然後將文字加入至範圍中的資料格。
+ 下列範例會將原生 Excel 範圍加入至工作表，然後將文字加入至範圍中的儲存格。
 
-### <a name="to-refer-to-a-native-range-object"></a>若要參考原生範圍物件
+### <a name="to-refer-to-a-native-range-object"></a>參考原生範圍物件
 
 1. 將字串指派給 <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> 範圍的屬性。
 
@@ -49,7 +49,7 @@ ms.locfileid: "85547390"
 
 ## <a name="see-also"></a>另請參閱
 - [使用範圍](../vsto/working-with-ranges.md)
-- [如何：以程式設計方式在工作表中檢查拼寫](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [如何：以程式設計方式檢查工作表中的拼寫](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [如何：以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [如何：以程式設計方式自動以累加方式變更資料填滿範圍](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
 - [如何：以程式設計方式在工作表範圍中搜尋文字](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)

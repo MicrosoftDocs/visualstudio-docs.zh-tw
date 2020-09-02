@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d89c0dcad23a91ec6057311b9afde7d6d4702772
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656759"
 ---
 # <a name="error-messages-in-workflow-designer"></a>工作流程設計工具的錯誤訊息
@@ -36,7 +36,7 @@ ms.locfileid: "72656759"
 
    無效的運算式與不滿足驗證條件限制並不會造成工作流程建置失敗。 工作流程會成功建置，但是在執行階段擲回 <xref:System.Activities.InvalidWorkflowException>。 如果 XAML 中有錯誤，建置就會失敗。
 
-   在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內，載入工作流程時，**錯誤清單**中會顯示其錯誤。 若要流覽至屬於錯誤來源的活動，請按兩下 **錯誤清單**中的錯誤。
+   在中 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，載入工作流程時，其錯誤會顯示在 [ **錯誤清單**] 中。 若要流覽至錯誤來源的活動，請按兩下 [ **錯誤清單**] 中的錯誤。
 
 ### <a name="expression-errors"></a>運算式錯誤
  如果有無效的運算式，則會在運算式旁出現內含白色驚嘆號的紅色圓圈來標註。 將游標移至這個圖示上方，隨即出現描述錯誤來源的工具提示。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內，請按一下運算式來檢視在錯誤來源底下的行。 將游標移至這行文字上方，隨即出現描述錯誤來源的工具提示。

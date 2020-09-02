@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 361aa5083f0d3abafc42ddbacf9bee4e464a3336
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464811"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
-在指定的堆疊框架中，搜尋位於或接近指定位址的傳回位址。
+在指定的堆疊框架中搜尋指定位址或附近的傳回位址。
 
 ## <a name="syntax"></a>語法
 
@@ -35,7 +35,7 @@ HRESULT searchForReturnAddressStart ( 
 #### <a name="parameters"></a>參數
  `frame`
 
-在[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件，表示目前的堆疊框架。
+在 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 物件，表示目前的堆疊框架。
 
  `startAddress`
 
@@ -43,10 +43,10 @@ HRESULT searchForReturnAddressStart ( 
 
  `returnAddress`
 
-脫銷將最接近的函式傳回位址傳回至 `startAddress` 。
+擴展傳回最接近的函數傳回位址 `startAddress` 。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

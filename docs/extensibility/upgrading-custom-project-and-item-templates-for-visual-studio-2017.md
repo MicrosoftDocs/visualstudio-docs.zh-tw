@@ -1,5 +1,5 @@
 ---
-title: 升級 Visual Studio 2017 的自訂項目和專案範本
+title: 升級 Visual Studio 2017 的自訂專案和專案範本
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,63 +11,63 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 5f807e142b376d05e5a44600e8f6b24ddb3593be
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698851"
 ---
-# <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升級視覺化工作室 2017 的自訂項目和專案範本
+# <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升級自訂 Visual Studio 的專案與項目範本2017
 
-從 Visual Studio 2017 開始,Visual Studio 會發現由 .vsix 或 .msi 以不同於早期版本的 Visual Studio 安裝的專案和專案範本。 如果您擁有使用自定義專案或專案範本的擴展,則需要更新擴展。 本文介紹了您必須做什麼。
+從 Visual Studio 2017 開始，Visual Studio 會探索由 .vsix 或 .msi 以不同方式安裝在舊版 Visual Studio 的專案和專案範本。 如果您擁有使用自訂專案或專案範本的擴充功能，則必須更新您的延伸模組。 本文說明您必須做的事。
 
-此更改僅影響 Visual Studio 2017。 它不會影響早期版本的 Visual Studio。
+此變更只會影響 Visual Studio 2017。 它不會影響舊版 Visual Studio。
 
-如果要建立項目或專案樣本作為 VSIX 延伸的一部分,請參閱[建立自訂項目和專案樣本](../extensibility/creating-custom-project-and-item-templates.md)。
+如果您想要建立專案或專案範本作為 VSIX 擴充功能的一部分，請參閱 [建立自訂專案和專案範本](../extensibility/creating-custom-project-and-item-templates.md)。
 
-## <a name="template-scanning"></a>樣本掃描
+## <a name="template-scanning"></a>範本掃描
 
-在 Visual Studio 的早期版本中 **,devenv /安裝程式**或**devenv /installvstemplate**掃描本地磁碟以查找專案和專案範本。 從 Visual Studio 2017 開始,掃描僅針對使用者級位置執行。 預設使用者級位置是 **%USERPROFILE%%\\\文件\><可视化工作室版本 \Templates\\**。 如果嚮導中選擇了 **「自動將範本導入 Visual Studio」** 選項,則此位置用於由**專案** > **匯出範本..."** 命令生成的範本。
+在舊版 Visual Studio 中， **devenv/setup** 或 **devenv/installvstemplates** 掃描本機磁片以尋找專案和專案範本。 從 Visual Studio 2017 開始，掃描只會針對使用者層級位置執行。 預設的使用者層級位置是 **%USERPROFILE%\Documents \\<Visual Studio 版本 \> \Templates \\ **。 **Project**  >  如果已在 wizard 中選取 [**自動將範本匯入 Visual Studio** ] 選項，則會使用這個位置作為 [專案**匯出範本**] 命令所產生的範本。
 
-對於其他(非使用者)位置,必須包含一個清單(.vstman)檔,該檔指定範本的位置和其他特徵。 .vstman 檔與用於範本的 .vstemplate 檔案一起生成。 如果使用 .vsix 安裝擴展,則可以通過在 Visual Studio 2017 中重新編譯擴展來實現此目的。 但是,如果您使用 .msi,則需要手動進行更改。 有關進行這些更改需要執行哪些操作的清單,請參閱使用 安裝的**擴展的升級。MSI**稍後在本頁。
+針對其他 (非使用者) 位置，您必須包含指定範本位置和其他特性的資訊清單 (. vstman) 檔。 Vstman 檔案會連同用於範本的 .vstemplate 檔案一起產生。 如果您使用 .vsix 安裝您的延伸模組，您可以在 Visual Studio 2017 中重新編譯延伸模組來完成這項操作。 但是，如果您使用 .msi，則需要手動進行變更。 如需進行這些變更所需執行的動作清單，請參閱  **隨安裝的擴充功能更新。** 此頁面稍後的 MSI。
 
-## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>如何使用項目或專案樣本更新 VSIX 延伸
+## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>如何使用專案或專案範本更新 VSIX 擴充功能
 
-1. 在 Visual Studio 2017 中打開解決方案。 系統將要求您升級代碼。 按一下 [確定]  。
+1. 在 Visual Studio 2017 中開啟方案。 系統會要求您升級程式碼。 按一下 [確定]  。
 
-2. 升級完成後,您可能需要更改安裝目標的版本。 在 VSIX 專案中,開啟來源.擴展.vsixmanifest 檔案並選擇「**安裝目標**」選項卡。如果**版本範圍「** 欄位為 **[14.0],** 請按下 **「編輯」** 並將其更改為包括 Visual Studio 2017。 例如,您可以將其設置為 **{14.0,15.0}** 以將擴展安裝到 Visual Studio 2015 或 Visual Studio 2017,或者將其設置為 **[15.0]** 以將其安裝到 Visual Studio 2017。
+2. 升級完成之後，您可能需要變更安裝目標的版本。 在 VSIX 專案中，開啟 extension.vsixmanifest 檔案，然後選取 [ **安裝目標** ] 索引標籤。如果 [ **版本範圍** ] 欄位是 **[14.0]**，請按一下 [ **編輯** ]，並將其變更為包含 Visual Studio 2017。 例如，您可以將它設定為 **[14.0，15.0]** 以將延伸模組安裝到 Visual Studio 2015 或 Visual Studio 2017，或 **[15.0]** 將它安裝到只 Visual Studio 2017。
 
-3. 重新編譯代碼。
+3. 重新編譯程式碼。
 
 4. 關閉 Visual Studio。
 
 5. 安裝 VSIX。
 
-6. 您可以透過執行以下操作來測試更新:
+6. 您可以執行下列動作來測試更新：
 
-    1. 檔案掃描變更由以下註冊表項啟動:
+    1. 檔案掃描變更會由下列登錄機碼啟用：
 
-         **reg 新增 hklm_software_microsoft_visualstudio_15.0_VSTemplate /v 禁用範本掃描 /t REG_DWORD /d 1 /reg:32**
+         **reg add hklm\software\microsoft\visualstudio\15.0\VSTemplate/v DisableTemplateScanning/t REG_DWORD/d 1/reg：32**
 
-    2. 添加金鑰後,執行**devenv /installvstemplate。**
+    2. 新增金鑰之後，請執行 **devenv/installvstemplates**。
 
-    3. 重新打開視覺工作室。 您應該在預期位置找到範本。
+    3. 重新開啟 Visual Studio。 您應該會在預期的位置找到您的範本。
 
     > [!NOTE]
-    > 當註冊表項存在時,Visual Studio 擴充性專案範本不可用。 您必須刪除註冊表項(並重新執行**devenv /installvstemplate)** 才能使用它們。
+    > 當登錄機碼存在時，就無法使用 Visual Studio 擴充性專案範本。 您必須刪除登錄機碼 (然後重新執行 **devenv/installvstemplates**) ，才能使用它們。
 
-## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>部署項目與項目樣本的其他建議
+## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>部署專案和專案範本的其他建議
 
-- 避免使用壓縮範本檔。 壓縮範本檔需要取消壓縮才能檢索資源和內容,因此它們使用成本更高。 相反,應將專案和專案範本部署為其目錄下的單個檔,以加快範本初始化。 對於 VSIX 擴展,SDK 生成任務將在創建 VSIX 檔時自動解壓縮任何壓縮範本。
+- 避免使用壓縮的範本檔案。 壓縮的範本檔案需要解壓縮才能取得資源和內容，因此將會越大使用。 相反地，您應該將專案和專案範本以個別檔案的形式部署至自己的目錄，以加快範本初始化的速度。 針對 VSIX 擴充功能，SDK 組建工作會在建立 VSIX 檔案時自動解壓縮任何壓縮的範本。
 
-- 避免對範本名稱、說明、圖示或預覽使用包/資源 ID 條目,以避免在範本發現期間載入不必要的資源程式集。 相反,您可以使用當地語系化的清單為每個區域設置創建範本項目,該區域設置使用當地語系化的名稱或屬性。
+- 請避免使用套件/資源識別碼專案作為範本名稱、描述、圖示或預覽，以避免在範本探索期間載入不必要的資源元件。 相反地，您可以使用當地語系化的資訊清單來建立每個地區設定的範本專案，而該專案會使用當地語系化的名稱或屬性。
 
-- 如果將範本作為檔項包含,則清單生成可能不會為您提供預期的結果。 在這種情況下,您必須向 VSIX 專案添加手動生成的清單。
+- 如果您以檔案專案的形式包含範本，則資訊清單產生可能無法提供預期的結果。 在這種情況下，您必須將手動產生的資訊清單新增至 VSIX 專案。
 
-## <a name="file-changes-in-project-and-item-templates"></a>專案與專案樣本的檔案變更
-我們顯示 Visual Studio 2015 和 Visual Studio 2017 版本的範本檔之間的差異點,以便您可以正確創建新檔。
+## <a name="file-changes-in-project-and-item-templates"></a>專案和專案範本中的檔案變更
+我們會顯示 Visual Studio 2015 與 Visual Studio 2017 版本的範本檔案之間的差異點，讓您可以正確地建立新的檔案。
 
- 下面是 Visual Studio 2015 建立的預設專案 .vstemplate 檔案:
+ 以下是 Visual Studio 2015 所建立的預設專案 .vstemplate 檔案：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -94,7 +94,7 @@ ms.locfileid: "80698851"
 
 ```
 
- 下面是由重建 VSIX 項目產生的 .vstman 檔案(您可以在 VSIX 專案的清單目錄中找到它):
+ 以下是 vstman 檔案 (您可以在 VSIX 專案的資訊清單目錄) （因為重建 VSIX 專案所產生）中找到它：
 
 ```xml
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
@@ -120,9 +120,9 @@ ms.locfileid: "80698851"
 
 ```
 
- [範本資料](../extensibility/templatedata-element-visual-studio-templates.md)元素提供的資訊保持不變。 VSTemplate 容器>元素指向關聯範本的 .vstemplate**\<** 檔案。
+ [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)元素所提供的資訊維持不變。 **\<VSTemplateContainer>** 元素指向關聯範本的 .vstemplate 檔案。
 
- 下面是 Visual Studio 2015 建立的預設項 .vstemplate 檔案:
+ 以下是 Visual Studio 2015 所建立的預設專案 .vstemplate 檔案：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -149,7 +149,7 @@ ms.locfileid: "80698851"
 
 ```
 
- 下面是由重建 VSIX 項目產生的 .vstman 檔案(您可以在 VSIX 專案的清單目錄中找到它):
+ 以下是 vstman 檔案 (您可以在 VSIX 專案的資訊清單目錄) （因為重建 VSIX 專案所產生）中找到它：
 
 ```xml
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
@@ -172,23 +172,23 @@ ms.locfileid: "80698851"
 </VSTemplateManifest>
 ```
 
- 範本資料>元素提供的資訊保持不變。 ** \< ** VSTemplate 容器>元素指向關聯範本的 .vstemplate 檔案**\<**
+ 元素所提供的資訊會保持不變 **\<TemplateData>** 。 **\<VSTemplateContainer>** 元素指向關聯範本的 .vstemplate 檔案。
 
- 有關 .vstman 檔案的不同元素的詳細資訊,請參閱[可視化工作室範本清單架構參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
+ 如需 vstman 檔案的不同元素的詳細資訊，請參閱 [Visual Studio 範本資訊清單架構參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
 
-## <a name="upgrades-for-extensions-installed-with-an-msi"></a>使用安裝的擴展的升級。微星
+## <a name="upgrades-for-extensions-installed-with-an-msi"></a>升級與一起安裝的擴充功能。微星
 
-某些基於 MSI 的延伸將樣本部署到常見的樣本位置,例如以下目錄:
+某些以 MSI 為基礎的擴充功能會將範本部署至一般範本位置，例如下列目錄：
 
-- **\<可視化工作室安裝目錄>_通用7_IDE<\\專案範本/專案範本\>**
+- **\<Visual Studio installation directory>\Common7\IDE \\<>\templates\projecttemplates\csharp\helloworld\/ItemTemplates\>**
 
-- **\<可視化工作室安裝目錄>_Common7_IDE_擴展\\\>\\<扩展名称<项目/專案範本\>**
+- **\<Visual Studio installation directory>\Common7\IDE\Extensions \\<ExtensionName \> \\<Project/ItemTemplates\>**
 
-如果擴展執行基於 MSI 的部署,則需要手動生成範本清單,並確保範本包含在擴展設置中。 比較上面列出的 .vstman 範例與[視覺化工作室樣本清單架構參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
+如果您的延伸模組會執行以 MSI 為基礎的部署，您需要手動產生範本資訊清單，並確定它包含在延伸模組設定中。 比較上面所列的 vstman 範例和 [Visual Studio 範本資訊清單架構參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
 
-為專案和專案範本創建單獨的清單,它們應指向上面指定的根範本目錄。 每個擴展和區域設置創建一個清單。
+為專案和專案範本建立個別的資訊清單，它們應該指向上述所指定的根範本目錄。 為每個延伸模組和地區設定建立一個資訊清單。
 
 ## <a name="see-also"></a>另請參閱
 
-- [容錯排除範本發現](troubleshooting-template-discovery.md)
-- [建立自訂項目與專案樣本](creating-custom-project-and-item-templates.md)
+- [針對範本探索進行疑難排解](troubleshooting-template-discovery.md)
+- [建立自訂專案和專案範本](creating-custom-project-and-item-templates.md)

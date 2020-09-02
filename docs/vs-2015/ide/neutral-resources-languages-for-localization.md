@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85e0be0172f27732f8efeb882cbcde5b9c6aef3d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670381"
 ---
 # <a name="neutral-resources-languages-for-localization"></a>當地語系化的中性資源語言
@@ -42,4 +42,4 @@ ms.locfileid: "72670381"
 ```
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.Resources.ResourceManager>[的國際應用程式簡介，這是以 .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) [階層式組織的資源為](../ide/hierarchical-organization-of-resources-for-localization.md)基礎，可當地語系化[應用](../ide/localizing-applications.md)程式[，將應用程式全球化和當地語系化](../ide/globalizing-and-localizing-applications.md)
+ <xref:System.Resources.ResourceManager>[根據 .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) [階層式組織資源的階層式組織簡介當地語系化](../ide/hierarchical-organization-of-resources-for-localization.md)[應用程式](../ide/localizing-applications.md)[全球化和當地語系化應用](../ide/globalizing-and-localizing-applications.md)程式

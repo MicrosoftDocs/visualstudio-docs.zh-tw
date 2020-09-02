@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a02e86864065d2c626de2f6e7fea7528554f1391
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547377"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>如何：以程式設計方式執行 Excel 計算
@@ -28,7 +28,7 @@ ms.locfileid: "85547377"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="run-calculations-in-a-namedrange-control"></a>在 NamedRange 控制項中執行計算
- 下列範例會 <xref:Microsoft.Office.Tools.Excel.NamedRange> 在儲存格 A1 建立，然後計算儲存格。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。
+ 下列範例會 <xref:Microsoft.Office.Tools.Excel.NamedRange> 在儲存格 A1 上建立，然後計算儲存格。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。
 
 ### <a name="to-run-calculations-in-a-namedrange-control"></a>在 NamedRange 控制項中執行計算
 
@@ -44,7 +44,7 @@ ms.locfileid: "85547377"
 
 ## <a name="run-calculations-in-a-native-excel-range"></a>在原生 Excel 範圍中執行計算
 
-### <a name="to-run-calculations-in-a-native-excel-range"></a>若要在原生 Excel 範圍中執行計算
+### <a name="to-run-calculations-in-a-native-excel-range"></a>在原生 Excel 範圍中執行計算
 
 1. 建立已命名的範圍。
 

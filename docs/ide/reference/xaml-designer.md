@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 45c7a5ba87c006332b601b93143cbf8acfda16b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547299"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 設計工具選項頁面
@@ -34,7 +34,7 @@ ms.locfileid: "85547299"
 
 使用此設定可控制載入 XAML 文件時是否出現設計檢視。
 
-|名稱|描述|
+|Name|說明|
 |-|-|
 |**來源視圖**|指定是否只有 XAML 原始碼會出現在 XAML 檢視。 載入大型文件時，這非常有用。|
 |**設計檢視**|指定是否只有視覺化 XAML 設計工具會出現在 XAML 檢視。|
@@ -44,25 +44,25 @@ ms.locfileid: "85547299"
 
 使用此設定可控制編輯 XAML 文件時，何時以及如何顯示 XAML 設計工具。 這些設定只適用於 [預設文件檢視]**** 設為 [分割檢視]**** 時。
 
-|名稱|描述|
+|Name|說明|
 |-|-|
 |**Vertical**|XAML 原始碼出現在 XAML 檢視的左邊，另一邊則出現 XAML 設計工具。|
-|**橫座標**|XAML 設計工具會顯示在 XAML 檢視的頂端，XAML 原始碼出現在它下方。|
+|**水準**|XAML 設計工具會顯示在 XAML 檢視的頂端，XAML 原始碼出現在它下方。|
 |**預設值**|XAML 文件會使用文件專案之目標平台的建議分割方向。 對於大部分的平台，這相當於 [水平]****。|
 
 ## <a name="zoom-by-using"></a>縮放方式
 
 使用此設定可決定編輯 XAML 文件時，縮放的運作方式。
 
-|名稱|描述|
+|Name|說明|
 |-|-|
 |**滑鼠滾輪**|捲動滑鼠滾輪來放大 XAML 設計工具。|
-|**CTRL + 滑鼠滾輪**|按住**Ctrl**鍵同時滾動滑鼠滾輪，以放大 XAML 設計工具。|
-|**Alt + 滑鼠滾輪**|按住**Alt**鍵同時滾動滑鼠滾輪，以放大 XAML 設計工具。|
+|**CTRL + 滑鼠滾輪**|在滾動滑鼠滾輪時按 **Ctrl** 鍵來放大 XAML 設計工具。|
+|**Alt + 滑鼠滾輪**|在滾動滑鼠滾輪時按下 **Alt** 鍵來放大 XAML 設計工具。|
 
 這些設定會決定編輯 XAML 文件時的設計工具行為。
 
-|名稱|描述|
+|Name|說明|
 |-|-|
 |**建立時自動命名互動元素**|指定當您將互動元素新增至設計工具時，是否要提供新互動元素的預設名稱。|
 |**自動在建立元素時插入配置屬性**|指定當您將新項目新增至設計工具時，是否要提供新項目的配置屬性。 配置屬性就是會影響控制項配置的屬性，例如 Margin 和 VerticalAlignment。 下列 XAML 顯示選取此選項與不選取此選項時建立按鈕的方式：<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
@@ -73,9 +73,9 @@ ms.locfileid: "85547299"
 
 使用這些選項可決定使用 Blend 編輯 XAML 檔案時的設定。
 
-|名稱|描述|
+|Name|說明|
 |-|-|
-|**縮放方式**|藉由滾動滑鼠滾輪，或在滾動滑鼠滾輪時按**Ctrl**或**Alt**鍵來放大 XAML 設計工具。|
+|**縮放方式**|藉由滾動滑鼠滾輪，或在滾動滑鼠滾輪時按 **Ctrl** 或 **Alt** 鍵來放大 XAML 設計工具。|
 |**類型單位**|指定設計工具上的度量單位是根據點數還是像素。 因為通用 Windows 應用程式不支援點，所以如果選取 [點]****，單位會自動轉換為像素。|
 
 ## <a name="artboard-blend-only"></a>畫板 (僅 Blend)
@@ -84,7 +84,7 @@ ms.locfileid: "85547299"
 
 ### <a name="snapping"></a>貼齊
 
-|名稱|描述|
+|Name|說明|
 |-|-|
 |**顯示貼齊格線**|選取此選項時，設計工具中會顯示格線，幫助您對齊控制項。 選取 [貼齊格線]**** 選項時，新增到設計工具的控制項會貼齊這些格線。|
 |**貼齊格線**|在設計工具新增或移動控制項時，它們會貼齊格線。|
@@ -101,7 +101,7 @@ ms.locfileid: "85547299"
 
 使用這些設定可決定使用 Blend 在 XAML 設計工具中編輯 XAML 檔案時，是否呈現效果。
 
-|名稱|描述|
+|Name|說明|
 |-|-|
 |**呈現效果**|指定使用 Blend 在 XAML 設計工具中編輯 XAML 檔案時，是否呈現效果。|
 |**縮放臨界值**|指定當選取 [呈現效果]**** 核取方塊時，效果呈現所使用的縮放百分比。 如果放大超過此設定，效果將不再呈現於 XAML 設計工具中。|
@@ -109,4 +109,4 @@ ms.locfileid: "85547299"
 ## <a name="see-also"></a>另請參閱
 
 - [WPF 中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)
-- [逐步解說：我的第一個 WPF 桌面應用程式](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+- [逐步解說：我的第一個 WPF 傳統型應用程式](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
