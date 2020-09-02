@@ -1,5 +1,5 @@
 ---
-title: 屬性 Window Fields and Interfaces |Microsoft Docs
+title: 屬性視窗欄位和介面 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,39 +11,39 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b58314d64536ecf33cc5589609ee5524a9352629
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65700828"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-若要判斷哪些資訊會顯示在選取的模型**屬性**視窗根據在 IDE 中具有焦點的視窗。 每個視窗中，然後選取視窗內的物件可以有其推送至全域範圍內容的選取項目內容物件。 該視窗具有焦點時，環境會更新全域選取範圍內容視窗框架的值。 當焦點變更時，因此會選取範圍內容。  
+用來決定要在 [ **屬性** ] 視窗中顯示哪些資訊的模型是根據焦點在 IDE 中的視窗。 在選取的視窗內，每個視窗和物件都可以將其選取內容物件推送至全域選取內容。 當視窗具有焦點時，環境會以視窗框架中的值來更新全域選取內容。 當焦點變更時，就會進行選取內容。  
   
-## <a name="tracking-selection-in-the-ide"></a>追蹤在 IDE 中的選取範圍  
- 視窗框架或 IDE 中，所擁有的網站有一個稱為服務<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>。 下列步驟示範如何變更在 [選取項目，使用者將焦點變更為另一個開啟的視窗，或選取不同的專案項目中所造成**方案總管] 中**，實作變更中顯示的內容**屬性**視窗。  
+## <a name="tracking-selection-in-the-ide"></a>在 IDE 中追蹤選取專案  
+ IDE 所擁有的視窗框架或網站有一個稱為的服務 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 。 下列步驟顯示如何將焦點變更為另一個開啟的視窗，或在 **方案總管**中選取不同的專案專案，以變更 [ **屬性** ] 視窗中顯示的內容。  
   
-1. VSPackage 是 value 中選取的視窗呼叫所建立的物件<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>能夠<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>叫用<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>。  
+1. 由您的 VSPackage 所建立的物件，該物件位於所選視窗呼叫中，並 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> 具有 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> invoke <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 。  
   
-2. 選取容器，所選取的視窗中，提供建立它自己<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>物件。 當選取範圍的 VSPackage 會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>通知任何接聽程式，在環境中，包括**屬性**視窗中，變更。 它也提供新的選取範圍相關的階層] 和 [項目資訊的存取權。  
+2. 選取的視窗所提供的選取專案容器會建立自己的 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 物件。 當選取範圍變更時，VSPackage 會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> 以在環境中通知任何接聽程式，包括 **屬性** 視窗在內的變更。 它也可讓您存取與新選項相關的階層和專案資訊。  
   
-3. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>並將其傳遞中選取的階層項目`VSHPROPID_BrowseObject`參數會填入<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>物件。  
+3. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> 並傳遞給它。參數中選取的階層專案會 `VSHPROPID_BrowseObject` 填入 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 物件。  
   
-4. 物件衍生自[IDispatch 介面](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)會傳回<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>要求的項目，且環境會包裝到<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>（請參閱下一個步驟）。 如果呼叫失敗，環境會第二個呼叫`IVsHierarchy::GetProperty`，並選取容器<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>的階層項目或項目提供。  
+4. 針對要求的專案，會傳回衍生自 [IDispatch 介面](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) 的物件 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> ，且環境會將它包裝成 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (查看下列步驟) 。 如果呼叫失敗，則環境會進行第二個呼叫 `IVsHierarchy::GetProperty` ，並將階層 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 專案或專案提供的選取容器傳遞給它。  
   
-    VSPackage 不會建立的專案<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>因為環境提供視窗 VSPackage 實作它 (例如**方案總管 中**) 建構<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>代替它。  
+    您的專案 VSPackage 不會建立， <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 因為環境提供的視窗 VSPackage 會執行它 (例如， **方案總管**) <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 代表它的結構。  
   
-5. 環境叫用的方法<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>若要取得根據物件`IDispatch`介面，以填入**屬性**視窗。  
+5. 環境會叫用的方法 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> ，以根據 `IDispatch` 要在 [ **屬性** ] 視窗中填入的介面來取得物件。  
   
-   中的值時**屬性** 視窗變更時，實作 Vspackage`IVsTrackSelectionEx::OnElementValueChangeEx`和`IVsTrackSelectionEx::OnSelectionChangeEx`來報告變更的項目值。 環境再叫用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>或是<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>保持中顯示的資訊**屬性**視窗同步處理的屬性值。 如需詳細資訊，請參閱 <<c0> [ 更新 [屬性] 視窗中的屬性值](../../misc/updating-property-values-in-the-properties-window.md)。  
+   當 [ **屬性** ] 視窗中的值變更時，vspackage 會執行 `IVsTrackSelectionEx::OnElementValueChangeEx` ，並將 `IVsTrackSelectionEx::OnSelectionChangeEx` 變更回報給元素值。 然後環境會叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> 用或，讓 [ **屬性** ] 視窗中顯示的資訊與屬性值同步。 如需詳細資訊，請參閱在 [屬性視窗中更新屬性值](../../misc/updating-property-values-in-the-properties-window.md)。  
   
-   除了選取不同的專案項目**方案總管 中**顯示該項目的相關的屬性，您也可以選擇從使用下拉式清單上可用的表單或文件視窗內的不同物件**屬性**視窗。 如需詳細資訊，請參閱 <<c0> [ 屬性視窗的物件清單](../../extensibility/internals/properties-window-object-list.md)。  
+   除了在 **方案總管** 中選取不同的專案專案，以顯示與該專案相關的屬性之外，您也可以使用 [ **屬性** ] 視窗上提供的下拉式清單，從表單或文件視窗中選擇不同的物件。 如需詳細資訊，請參閱 [屬性視窗物件清單](../../extensibility/internals/properties-window-object-list.md)。  
   
-   您可以變更資訊會顯示在的方式**屬性**成類別目錄，從依字母順序排列的視窗方格，如果有的話，則您也可以上適當的按鈕，即可開啟所選物件的屬性頁**屬性**視窗。 如需詳細資訊，請參閱 <<c0> [ 屬性視窗的按鈕](../../extensibility/internals/properties-window-buttons.md)並[屬性頁](../../extensibility/internals/property-pages.md)。  
+   您可以將 [ **屬性** ] 視窗方格中的資訊顯示方式從字母順序變更為類別，如果有的話，您也可以按一下 [ **屬性** ] 視窗上的適當按鈕，開啟所選物件的屬性頁。 如需詳細資訊，請參閱 [屬性視窗按鈕](../../extensibility/internals/properties-window-buttons.md) 和 [屬性頁](../../extensibility/internals/property-pages.md)。  
   
-   最後，底部**屬性** 視窗也包含在選取的欄位的說明**屬性**視窗方格。 如需詳細資訊，請參閱 <<c0> [ 從 [屬性] 視窗取得欄位描述](../../misc/getting-field-descriptions-from-the-properties-window.md)。  
+   最後，[ **屬性** ] 視窗的底部也包含 [ **屬性** ] 視窗方格中所選取之欄位的描述。 如需詳細資訊，請參閱 [從屬性視窗取得欄位描述](../../misc/getting-field-descriptions-from-the-properties-window.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充屬性](../../extensibility/internals/extending-properties.md)

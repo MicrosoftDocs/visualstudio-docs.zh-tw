@@ -1,5 +1,5 @@
 ---
-title: 如何：以程式設計方式在工作表中分組資料列
+title: 如何：以程式設計方式將工作表中的資料列分組
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -21,23 +21,23 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 759ba8c6e0796b25a87e8bf0b08795aed5bade05
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537874"
 ---
-# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>如何：以程式設計方式在工作表中分組資料列
-  您可以將一或多個完整的資料列群組在一起。 若要在工作表中建立群組，請使用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件。
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>如何：以程式設計方式將工作表中的資料列分組
+  您可以將一或多個整個資料列分組。 若要在工作表中建立群組，請使用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="use-a-namedrange-control"></a>使用 NamedRange 控制項
- 如果您 <xref:Microsoft.Office.Tools.Excel.NamedRange> 在設計階段將控制項加入檔層級專案，您可以使用控制項以程式設計方式建立群組。 下列範例假設 <xref:Microsoft.Office.Tools.Excel.NamedRange> 相同的工作表上有三個控制項： `data2001` 、 `data2002` 和 `dataAll` 。 每個命名範圍都會參考工作表中的整個資料列。
+ 如果您 <xref:Microsoft.Office.Tools.Excel.NamedRange> 在設計階段將控制項加入檔層級專案中，您可以使用控制項以程式設計方式建立群組。 下列範例假設 <xref:Microsoft.Office.Tools.Excel.NamedRange> 相同的工作表上有三個控制項： `data2001` 、 `data2002` 和 `dataAll` 。 每個命名範圍都會參考工作表中的整個資料列。
 
-### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>若要在工作表上建立 NamedRange 控制項群組
+### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>在工作表上建立 NamedRange 控制項的群組
 
-1. 藉由呼叫每個範圍的方法，將三個已命名的範圍組成群組 <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> 。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。
+1. 藉由呼叫每個範圍的方法，將三個命名範圍組成群組 <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> 。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
@@ -48,9 +48,9 @@ ms.locfileid: "85537874"
 ## <a name="use-native-excel-ranges"></a>使用原生 Excel 範圍
  此程式碼假設您在 `data2001` `data2002` 工作表上有三個名為、和的 Excel 範圍 `dataAll` 。
 
-### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>在工作表中建立 Excel 範圍的群組
+### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>若要在工作表中建立一組 Excel 範圍
 
-1. 藉由呼叫每個範圍的方法，將三個已命名的範圍組成群組 <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> 。 下列範例假設 <xref:Microsoft.Office.Interop.Excel.Range> `data2001` 相同的 `data2002` 工作表上有三個名為、和的控制項 `dataAll` 。 每個命名範圍都會參考工作表中的整個資料列。
+1. 藉由呼叫每個範圍的方法，將三個命名範圍組成群組 <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> 。 下列範例假設在 <xref:Microsoft.Office.Interop.Excel.Range> `data2001` `data2002` `dataAll` 相同的工作表上有三個名為、和的控制項。 每個命名範圍都會參考工作表中的整個資料列。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]

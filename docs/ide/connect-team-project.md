@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 31fab067ec9844b36c287b80ed481a68861b222e
-ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
+ms.openlocfilehash: bddb3afb602416159c75a5be9923fce14c089fc2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86092319"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "86181049"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>在 Team Explorer 中連線到專案
 
@@ -19,7 +19,7 @@ ms.locfileid: "86092319"
 ![Visual Studio 中的 Team Explorer [首頁]](media/team-explorer/team-explorer.png)
 
 > [!TIP]
-> 如果您開啟 Visual Studio 而且**Team Explorer**未出現，請從功能表列選擇 [ **View**  >  **Team Explorer** ]，或按**ctrl** + **&#92;**、 **ctrl** + **M**來開啟它。
+> 如果您開啟 Visual Studio 但**Team Explorer**未出現，請從功能表列選擇 [ **View**  >  **Team Explorer** ]，或按**ctrl** + **&#92;**、 **ctrl** + **M**來開啟它。
 
 ## <a name="connect-to-a-project-or-repository"></a>連線到專案或存放庫
 
@@ -38,11 +38,11 @@ ms.locfileid: "86092319"
    ![在 Team Explorer 中連線到專案](media/team-explorer/connect-project.png)
 
 > [!TIP]
-> 如果您需要建立新的專案或將使用者新增至專案，請參閱[建立專案 (Azure DevOps)](/azure/devops/organizations/projects/create-project) 和[將使用者新增至專案或小組 (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project)。
+> 如果您想要從存放庫開啟專案，請參閱 [從存放庫開啟專案](../get-started/tutorial-open-project-from-repo.md)。 如果您想要建立新的專案，或將使用者加入至專案，請參閱 [建立專案 (Azure DevOps) ](/azure/devops/organizations/projects/create-project) 並 [將使用者新增至專案或小組 (Azure DevOps) ](/azure/devops/organizations/security/add-users-team-project)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [教學課程：從存放庫開啟專案](../get-started/tutorial-open-project-from-repo.md)
 - [Team Explorer 參考](reference/team-explorer-reference.md)
 - [連線到專案 (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)
-- [針對連接到專案的問題進行疑難排解](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)
+- [針對連接到專案進行疑難排解](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)

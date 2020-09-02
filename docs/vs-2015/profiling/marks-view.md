@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77cf26d9746336a614b36d7dcd443b841afa06f7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699755"
 ---
 # <a name="marks-view"></a>標記檢視
@@ -30,7 +30,7 @@ ms.locfileid: "65699755"
   
  此檢視也會顯示來自自動產生之標記的 Windows 計數器資料。 如需詳細資訊，請參閱[如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)。  
   
- 若要在兩個標記之間建立篩選，請選取標記，按一下滑鼠右鍵，然後按一下 [依標記加入篩選條件] 或 [依時間戳記加入篩選條件]。  
+ 若要在兩個標記之間建立篩選，請選取標記，按一下滑鼠右鍵，然後按一下 [依標記加入篩選條件]**** 或 [依時間戳記加入篩選條件]****。  
   
  下表提供 [標記] 檢視中可用資料行的定義。  
   
@@ -40,15 +40,15 @@ ms.locfileid: "65699755"
  **標記名稱**  
  事件的名稱。  
   
- **時間戳記**  
+ **Timestamp**  
  從剖析開始的時間到事件記錄完成的時間。  
   
  Windows 效能計數器資料  
  收集 Windows 效能計數器資料時，值會顯示在含有計數器名稱的資料行中。  
   
 ## <a name="see-also"></a>另請參閱  
- [效能報告概觀](../profiling/performance-report-overview.md)   
- [< PAVE_OVER > 如何：設定程式碼剖析標記](https://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
- [< PAVE_OVER > 如何：在 Profiler 資料檔案中插入標記](https://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
+ [效能報告總覽](../profiling/performance-report-overview.md)   
+ [<PAVE_OVER> 如何：設定程式碼剖析標記](https://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
+ [<PAVE_OVER> 如何：在分析工具資料檔案中插入標記](https://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
  [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)   
  [&#91;NIB&#93; 資料收集控制項視窗](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

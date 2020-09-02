@@ -1,5 +1,5 @@
 ---
-title: 字型和色彩概觀 |Microsoft Docs
+title: 字型和色彩總覽 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,73 +12,73 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204355"
 ---
 # <a name="font-and-color-overview"></a>字型和色彩概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題討論中的文字字型和色彩設定[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式的開發環境 (IDE)。 它也會介紹的概念類別和顯示項目，並說明如何在 Vspackage 和核心編輯器使用文字屬性。  
+本主題討論 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (IDE) 整合式開發環境中的文字字型和色彩設定。 它也會介紹類別和顯示專案的概念，並說明 Vspackage 和核心編輯器如何使用文字屬性。  
   
-## <a name="the-fonts-and-colors-property-page"></a>字型和色彩屬性頁面  
- 您可以管理屬性中顯示的文字[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]經由整合式的開發環境 (IDE)**字型和色彩**屬性頁。 若要尋找**字型和色彩**] 屬性頁面上**工具**功能表上，按一下 [**選項**。 依序展開**環境**，然後按一下**字型和色彩**。  
+## <a name="the-fonts-and-colors-property-page"></a>[字型和色彩] 屬性頁  
+ 您可以 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 透過 [字型 **和色彩** ] 屬性頁，在整合式開發環境中管理所顯示文字的屬性 (IDE) 。 若要尋找 [字型 **和色彩** ] 屬性頁，請按一下 [ **工具** ] 功能表上的 [ **選項**]。 展開 [環境]****，再按一下 [字型和色彩]****。  
   
-## <a name="categories-and-display-items"></a>類別和顯示項目  
- 字型和色彩區分成**分類**並**顯示項目**。  
+## <a name="categories-and-display-items"></a>類別和顯示專案  
+ 字型和色彩會組織成 **類別** 和 **顯示專案**。  
   
-- A**分類**是邏輯或功能的容器數目**顯示項目**。  
+- **類別**是許多**顯示專案**的邏輯或功能容器。  
   
-   一份**分類**處於**顯示設定**下拉式清單方塊**字型和色彩**屬性頁。  
+   **類別**清單位於 [字型**和色彩**] 屬性頁的 [**顯示設定**] 下拉式清單方塊中。  
   
-- A**顯示項目**是妥善定義的文字實體，例如註解、 字串或控制結構，會以色彩標示時顯示。  
+- **顯示專案**是定義完善的文字實體，例如批註、字串或顯示時要以色彩標示的控制項結構。  
   
-  每個**顯示項目**內都唯一定義**分類**包含它。 因此，有一個以上**分類**可以有**顯示項目**具有相同名稱。  
+  每個 **顯示專案** 都是在包含它的 **類別** 中唯一定義。 因此，一個以上的 **類別目錄** 可以有相同名稱的 **顯示專案** 。  
   
-## <a name="vspackage-control-of-fonts-and-colors"></a>VSPackage 控制字型和色彩  
- [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]可讓 Vspackage 來：  
+## <a name="vspackage-control-of-fonts-and-colors"></a>VSPackage 控制項的字型和色彩  
+ [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]允許 vspackage：  
   
-- 定義字型和色彩**分類**。  
+- 定義字型和色彩 **類別**。  
   
-- 指定的字型和色彩來呈現**顯示的項目**。  
+- 指定用來顯示 **顯示專案**的字型和色彩。  
   
-- 互動**字型和色彩**屬性頁。  
+- 與 [字型 **和色彩** ] 屬性頁互動。  
   
-- 彙總的多個**分類**分組。  
+- 將多個 **類別** 匯總成群組。  
   
-- 保留預設設定中的變更。  
+- 保存預設設定中的變更。  
   
-  有兩種方式進行互動中的字型和色彩選取[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]。  
+  有兩種方式可以與中的字型和色彩選項互動 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 。  
   
-- 其中一種方式指*語法著色*。 它由自訂現有的 VSPackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]實作語言服務，並建立來源編輯器的編輯器。  
+- 其中一種方式稱為 *語法著色*。 它是由自訂現有 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 編輯器來執行語言服務和建立來源編輯器的 VSPackage 所使用。  
   
-   只有一個**分類**支援這項機制，也就是，則**文字編輯器**。  
+   只有一個 **類別** 支援這項機制，也就是 **文字編輯器**。  
   
-- 較通用的替代方式支援所有其他**分類**和原始檔編輯器時顯示文字以外的使用者介面元件。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>。  
+- 在顯示文字時，更一般的替代方案支援來源編輯器以外的其他所有 **類別** 和使用者介面元件。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>。  
   
 ## <a name="core-editor-text-settings"></a>核心編輯器文字設定  
- 語言服務物件的核心編輯器的字型和色彩設定所控管**文字 EditorCategory**中找到**顯示設定**下拉式清單方塊的**字型和色彩**屬性頁。  
+ 語言服務物件之核心編輯器的字型和色彩設定，是由 [字型**和色彩**] 屬性頁的 [**顯示設定**] 下拉式清單方塊中找到的**文字 EditorCategory**所控管。  
   
- 當使用編輯器，您應該使用特殊的字型和色彩控制機制，語言服務提供給控制項，並擴充**文字編輯器**設定。 此機制稱為*語法著色*，並提供：  
+ 使用編輯器時，您應該使用語言服務提供的特殊字型和色彩控制機制來控制及擴充 **文字編輯器** 設定。 此機制稱為 *語法著色* ，並提供：  
   
-- 簡化的技術來管理的字型和色彩的顯示項目。  
+- 管理顯示專案字型和色彩的簡化技術。  
   
-   如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 與 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>。  
+   如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 和 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>。  
   
-- 定義完善且經過最佳化的顏色標示的機制。  
+- 定義完善且優化的顏色標示機制。  
   
-   如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>。  
+   如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>。  
   
-- 能夠同時使用內建的顯示項目，從**文字 EditorCategory**和延伸。  
+- 這兩種功能都可以使用內建的 **文字 EditorCategory** 顯示專案並加以擴充。  
   
-   如需詳細資訊，請參閱[如何：使用內建可設定色彩的項目](../extensibility/internals/how-to-use-built-in-colorable-items.md)並[自訂色彩的項目](../extensibility/internals/custom-colorable-items.md)。  
+   如需詳細資訊，請參閱 [如何：使用內建的可設定色彩專案](../extensibility/internals/how-to-use-built-in-colorable-items.md) 和 [自訂可設定色彩專案](../extensibility/internals/custom-colorable-items.md)。  
   
-- 自動的持續性的目前狀態的兩個內建和自訂顯示的項目**文字編輯器**類別目錄。  
+- 自動將內建和自訂顯示專案的目前狀態與 **文字編輯器** 分類保持在一起。  
   
-  如需有關語法著色，請參閱[舊版語言服務中的語法著色](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)。  
+  如需語法著色的詳細資訊，請參閱 [舊版語言服務中的語法著色](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [在編輯器中的舊版介面](../extensibility/legacy-interfaces-in-the-editor.md)   
+ [編輯器中的舊版介面](../extensibility/legacy-interfaces-in-the-editor.md)   
  [舊版語言服務中的語法著色](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

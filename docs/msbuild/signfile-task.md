@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 319afb810ba755d0201d3edaebcb06a493b59047
-ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86301443"
 ---
 # <a name="signfile-task"></a>SignFile 工作
@@ -41,7 +41,7 @@ ms.locfileid: "86301443"
 |參數|描述|
 |---------------|-----------------|
 |`CertificateThumbprint`|必要的 `String` 參數。<br /><br /> 指定簽署要使用的憑證。 此憑證必須位於目前使用者的個人存放區。|
-|`SigningTarget`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要使用憑證簽署的檔案，類型為 .exe 或 .dll。|
+|`SigningTarget`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要使用憑證簽署的檔案，其類型為 .exe 或 .dll。|
 |`TimestampUrl`|選擇性的 `String` 參數。<br /><br /> 指定時間戳記伺服器的 URL。|
 |`TargetFrameworkVersion`|對目標使用的 .NET Framework 版本。|
 

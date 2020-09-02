@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fff3ded8607f7faf534e6e61a27bd4d3e38d9e38
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247561"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>在 Visual Studio 中匯入發行設定，即可將應用程式發行至 IIS
@@ -31,10 +31,10 @@ ms.locfileid: "88247561"
 > * 將發行設定檔案匯入 Visual Studio
 > * 將應用程式部署至 IIS
 
-發行設定檔案 (* \* . .publishsettings*) 不同于 Visual Studio 中建立的發行設定檔 (* \* . .pubxml*) 。 發行設定檔案是由 IIS 或 Azure App Service 所建立，或者可以手動方式建立，並可匯入至 Visual Studio 中。
+發行設定檔案 (* \* .Publishsettings*) 與 (的發行設定檔不同* \* 。 .Pubxml*) 在 Visual Studio 中建立。 發行設定檔案是由 IIS 或 Azure App Service 所建立，或者可以手動方式建立，並可匯入至 Visual Studio 中。
 
 > [!NOTE]
-> 如果您只需要將 Visual Studio 發行設定檔 (\* .pubxml 檔案) 從 Visual Studio 的某個安裝複製到另一個，您可以在 managed 專案類型的 [ * \\<專案名稱 \> \Properties\PublishProfiles* ] 資料夾中找到發行設定檔* \<profilename\> .pubxml*。 針對網站，請查看 *\App_Data* 資料夾底下的內容。 發行設定檔是 MSBuild XML 檔案。
+> 如果您只需要將 Visual Studio 發行配置)  (檔 \* 從一個 Visual Studio 安裝複製到另一個，您可以在 [managed 專案類型] 的 [ * \\<專案名稱 \> \Properties\PublishProfiles* ] 資料夾中找到發行設定檔* \<profilename\> .pubxml*。 針對網站，請查看 *\App_Data* 資料夾底下的內容。 發行設定檔是 MSBuild XML 檔案。
 
 ## <a name="prerequisites"></a>先決條件
 
@@ -42,35 +42,35 @@ ms.locfileid: "88247561"
 
 * 您必須安裝 Visual Studio 2019 及 **ASP.NET 與網頁程式開發**工作負載。
 
-    如果您尚未安裝 Visual Studio，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)]   頁面，免費進行安裝。
+    如果您尚未安裝 Visual Studio，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)   頁面，免費進行安裝。
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * 您必須安裝 Visual Studio 2017 以及 **ASP.NET 和 Web 開發**工作負載。
 
-    如果您尚未安裝 Visual Studio，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)]   頁面，免費進行安裝。
+    如果您尚未安裝 Visual Studio，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)   頁面，免費進行安裝。
 ::: moniker-end
 
-* 在您的伺服器上，您必須執行 Windows Server 2012、Windows Server 2016 或 Windows Server 2019，而且必須正確安裝[IIS Web 服務器角色](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)， (產生發行設定檔案 (* \* 。 .publishsettings*) # A3。 另外還必須在伺服器上安裝 ASP.NET 4.5 或 ASP.NET Core。 若要設定 ASP.NET 4.5，請參閱[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。 若要設定 ASP.NET Core，請參閱[在使用 IIS 的 Windows 上裝載 ASP.NET Core](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 針對 ASP.NET Core，請務必將應用程式集區設定為 **不使用受控碼**，如文章中所述。
+* 在您的伺服器上，您必須執行 Windows Server 2012、Windows Server 2016 或 Windows Server 2019，而且必須正確安裝[IIS 網頁伺服器角色](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (才能產生發佈設定檔案 (* \* . .publishsettings*) # A3。 另外還必須在伺服器上安裝 ASP.NET 4.5 或 ASP.NET Core。 若要設定 ASP.NET 4.5，請參閱[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。 若要設定 ASP.NET Core，請參閱[在使用 IIS 的 Windows 上裝載 ASP.NET Core](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 針對 ASP.NET Core，請務必將應用程式集區設定為 **不使用 Managed 程式碼**，如本文中所述。
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>在 Visual Studio 中建立新的 ASP.NET 專案
 
 1. 在執行 Visual Studio 的電腦上，建立新的專案。
 
-    選擇正確的範本。 在此範例中，請選擇 [ **ASP.NET Web 應用程式 (] .NET Framework) ** (或 [僅限 c #) ASP.NET Core **Web 應用程式**]，然後選取 **[確定]**。
+    選擇正確的範本。 在此範例中，請選擇 [ **ASP.NET Web 應用程式 (] .NET Framework) ** 或 ([僅限 c #) **Web 應用程式**]，然後選取 **[確定]**。
 
     如果您沒有看到指定的專案範本，請移至 [**新增專案**] 對話方塊左窗格中的 [**開啟 Visual Studio 安裝程式**] 連結。 Visual Studio 安裝程式即會啟動。 安裝 **ASP.NET 和 網頁程式開發** 工作負載。
 
     您選擇的專案範本 (ASP.NET 或 ASP.NET Core) 必須與 Web 伺服器上所安裝的 ASP.NET 版本相對應。
 
-1. 選擇 [ **MVC** ( .NET Framework) ] 或 [Web 應用程式] ([.net Core) 的 **模型視圖控制器 (**) ]，並確定未選取 [ **驗證** ]，然後選取 **[確定]**。
+1. 選擇 [ **MVC** ( .NET Framework) ] 或 [ **Web 應用程式] (模型-視圖-控制器) ** (適用于 .net Core) ，並確定 **未** 選取 [驗證]，然後選取 **[確定]**。
 
-1. 輸入類似 **MyWebApp** 的名稱，然後選取 **[確定]**。
+1. 輸入名稱，例如 **MyWebApp** ，然後選取 **[確定]**。
 
     Visual Studio 會建立專案。
 
-1. 選擇 [**組建**  >  **組建方案**] 來建立專案。
+1. 選擇 [**組建**  >  **組建方案**] 以建立專案。
 
 ## <a name="install-and-configure-web-deploy-on-windows-server"></a>在 Windows Server 上安裝並設定 Web Deploy
 

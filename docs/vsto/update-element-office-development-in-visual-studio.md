@@ -1,5 +1,5 @@
 ---
-title: '&lt;update &gt; 元素（Visual Studio 中的 Office 開發）'
+title: '&lt;&gt;Visual Studio) 中 (Office 開發的 update 元素'
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537380"
 ---
-# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;update &gt; 元素（Visual Studio 中的 Office 開發）
+# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio) 中 (Office 開發的 update 元素
   `update`元素會指定方案檢查更新的間隔。
 
 ## <a name="syntax"></a>語法
@@ -43,7 +43,7 @@ ms.locfileid: "85537380"
 
 |屬性|描述|
 |---------------|-----------------|
-|`enabled`|必要。 將 [已啟用] 設定為下列其中一個值：<br /><br /> -   **true**表示檢查更新。<br />-   **false**以防止檢查更新。|
+|`enabled`|必要。 將 [啟用] 設定為下列其中一個值：<br /><br /> -   **true** 表示檢查是否有更新。<br />-   **false** 以防止檢查更新。|
 
  `update` 項目具有下列子項目。
 
@@ -55,12 +55,12 @@ ms.locfileid: "85537380"
 |屬性|描述|
 |---------------|-----------------|
 |`maximumAge`| 必要。 將此設為等於整數。|
-|`unit`|必要。 將設定 `unit` 為下列其中一個值：<br /><br /> -   **多少**<br />-   **之內**<br />-   **過後**|
+|`unit`|必要。 設定 `unit` 為下列其中一個值：<br /><br /> -   **小時**<br />-   **天**<br />-   **星期**|
 
 ## <a name="example-of-always-checking-for-updates"></a>一律檢查更新的範例
 
-### <a name="description"></a>描述
- 下列程式碼範例說明 `update` 設定為一律檢查 Office 方案中更新的元素。
+### <a name="description"></a>說明
+ 下列程式碼範例將說明 `update` 設定為一律檢查 Office 方案中更新的元素。
 
 ### <a name="code"></a>程式碼
 
@@ -70,8 +70,8 @@ ms.locfileid: "85537380"
 
 ## <a name="example-of-setting-a-default-update-interval"></a>設定預設更新間隔的範例
 
-### <a name="description"></a>描述
- 下列程式碼範例說明 `update` Office 方案的應用程式資訊清單中的元素。 這個程式碼範例是[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中提供之較大範例的一部分。
+### <a name="description"></a>說明
+ 下列程式碼範例說明 `update` Office 方案的應用程式資訊清單中的元素。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
 

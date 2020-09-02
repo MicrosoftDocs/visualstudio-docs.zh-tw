@@ -1,5 +1,5 @@
 ---
-title: 自定義參數元素(可視化工作室範本) |微軟文件
+title: " (Visual Studio 範本的 CustomParameters 元素) |Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f524996c226f001c68ddc7ac9aa8cb3b99857fc5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739417"
 ---
-# <a name="customparameters-element-visual-studio-templates"></a>自訂參數元素(視覺化工作室範本)
-對嚮導進行參數替換時要傳遞給範本嚮導的自定義參數進行分組。
+# <a name="customparameters-element-visual-studio-templates"></a> (Visual Studio 範本的 CustomParameters 元素) 
+當 wizard 進行參數取代時，將要傳遞給範本嚮導的自訂參數分組。
 
 ## <a name="syntax"></a>語法
 
@@ -40,20 +40,20 @@ ms.locfileid: "80739417"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
-|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 包含自定義參數名稱和值,用於從範本創建專案或項時使用。 `CustomParameter` 元素中可能有零個或多個 `CustomParameters` 元素。|
+|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 包含從範本建立專案或專案時所要使用的自訂參數名稱和值。 `CustomParameter` 元素中可能有零個或多個 `CustomParameters` 元素。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|指定範本的內容。|
 
 ## <a name="remarks"></a>備註
 
 ## <a name="example"></a>範例
- 下面的範例展示如何在範本中使用多個自定義參數。 從您有以下自訂參數的樣本建立項目或項目`$color1$`, 樣本檔中的所有實體會`$color2$`取代為`Red`與`Blue`。
+ 下列範例顯示如何在範本中使用數個自訂參數。 從具有下列自訂參數的範本建立專案或專案時，範本檔案中和的所有實例 `$color1$` `$color2$` 都會 `Red` 分別以和取代 `Blue` 。
 
 ```
 <CustomParameters>
@@ -63,6 +63,6 @@ ms.locfileid: "80739417"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [自訂參數元素(視覺化工作室範本)](../extensibility/customparameter-element-visual-studio-templates.md)
+- [ (Visual Studio 範本的 CustomParameter 元素) ](../extensibility/customparameter-element-visual-studio-templates.md)
 - [範本參數](../ide/template-parameters.md)
-- [視覺化工作室範本架構參考](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)

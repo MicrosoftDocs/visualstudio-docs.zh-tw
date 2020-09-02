@@ -1,5 +1,5 @@
 ---
-title: CA2224：多載運算子 equals 的覆寫 equals |Microsoft Docs
+title: CA2224：在多載運算子上覆寫 equals 等於 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 39272790b6ef366c64d45e0aea238606d0b62bf4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538632"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224:多載等號比較運算子時必須一併覆寫 Equals
@@ -30,27 +30,27 @@ ms.locfileid: "85538632"
 |-|-|
 |TypeName|OverrideEqualsOnOverloadingOperatorEquals|
 |CheckId|CA2224|
-|類別|Microsoft。使用方式|
+|類別|Microsoft. 使用量|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 公用類型會執行等號比較運算子，但不會覆寫 <xref:System.Object.Equals%2A?displayProperty=fullName> 。
+ Public 型別會執行等號比較運算子，但不會覆寫 <xref:System.Object.Equals%2A?displayProperty=fullName> 。
 
 ## <a name="rule-description"></a>規則描述
- 等號比較運算子的目的是以語法方便的方式來存取方法的功能 <xref:System.Object.Equals%2A> 。 如果您執行等號比較運算子，其邏輯必須與相同 <xref:System.Object.Equals%2A> 。
+ 等號比較運算子的目的是要以語法方便的方式存取方法的功能 <xref:System.Object.Equals%2A> 。 如果您執行等號比較運算子，其邏輯必須與相同 <xref:System.Object.Equals%2A> 。
 
- 如果您的程式碼違反此規則，c # 編譯器會發出警告。
+ 如果您的程式碼違反此規則，則 c # 編譯器會發出警告。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規，您應該移除等號比較運算子的執行，或覆寫 <xref:System.Object.Equals%2A> 並讓兩個方法傳回相同的值。 如果等號比較運算子不會造成不一致的行為，您可以藉由提供 <xref:System.Object.Equals%2A> 會呼叫基類中方法的執行來修正違規 <xref:System.Object.Equals%2A> 。
+ 若要修正此規則的違規，您應該移除等號比較運算子的執行，或覆寫 <xref:System.Object.Equals%2A> 並讓兩個方法傳回相同的值。 如果等號比較運算子未引入不一致的行為，您可以藉由提供在 <xref:System.Object.Equals%2A> 基類中呼叫方法的實作為來修正違規 <xref:System.Object.Equals%2A> 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果等號比較運算子傳回的值與繼承的執行相同，就可以安全地隱藏此規則的警告 <xref:System.Object.Equals%2A> 。 範例區段包含的類型，可以安全地隱藏此規則的警告。
+ 如果相等運算子傳回的值與繼承的執行相同，就可以安全地隱藏此規則的警告 <xref:System.Object.Equals%2A> 。 範例區段包含的類型可以安全地隱藏此規則的警告。
 
 ## <a name="examples-of-inconsistent-equality-definitions"></a>不一致的相等定義範例
 
-### <a name="description"></a>描述
- 下列範例顯示具有不一致之相等定義的類型。 `BadPoint`藉由提供等號比較運算子的自訂執行來變更相等的意義，但不會覆寫， <xref:System.Object.Equals%2A> 因此其行為完全相同。
+### <a name="description"></a>說明
+ 下列範例顯示的類型具有不一致的相等定義。 `BadPoint` 藉由提供相等運算子的自訂實作為來變更相等的意義，但不會覆寫， <xref:System.Object.Equals%2A> 使其行為相同。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorEqualsRequiresEquals/cs/FxCop.Usage.OperatorEqualsRequiresEquals.cs#1)]
@@ -62,14 +62,14 @@ ms.locfileid: "85538632"
 
  此範例會產生下列輸出。
 
- **a = （[0] 1，1）和 b = （[1] 2，2）相等嗎？否** 
+ **a = ( [0] 1，1) ，b = ( [1] 2，2) 相等？否** 
  **a = = b？沒有** 
  **a1 和 a 相等嗎？是** 
  **a1 = = a？是** 
- **b，bcopy 相等嗎？否** 
+ **b，bcopy 是相等的嗎？否** 
  **b = = bcopy？是**
 ## <a name="example"></a>範例
- 下列範例顯示技術上違反此規則的類型，但不會有不一致的行為。
+ 下列範例顯示技術上違反此規則的類型，但不會以不一致的方式運作。
 
  [!code-csharp[FxCop.Usage.ValueTypeEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ValueTypeEquals/cs/FxCop.Usage.ValueTypeEquals.cs#1)]
 
@@ -80,16 +80,16 @@ ms.locfileid: "85538632"
 
  此範例會產生下列輸出。
 
- **a = （1，1）和 b = （2，2）相等嗎？否** 
+ **a = (1，1) ，b = (2，2) 相等？否** 
  **a = = b？沒有** 
  **a1 和 a 相等嗎？是** 
  **a1 = = a？是** 
- **b，bcopy 相等嗎？是** 
- **b = = bcopy？是**
+ **b，bcopy 是相等的嗎？是** 
+ **b = = bcopy 嗎？是**
 ## <a name="class-example"></a>類別範例
 
-### <a name="description"></a>描述
- 下列範例顯示違反此規則的類別（參考型別）。
+### <a name="description"></a>說明
+ 下列範例顯示違反此規則 (參考型別) 的類別。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Usage.OverrideEqualsClassViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsClassViolation/cs/FxCop.Usage.OverrideEqualsClassViolation.cs#1)]
@@ -101,8 +101,8 @@ ms.locfileid: "85538632"
 
 ## <a name="structure-example"></a>結構範例
 
-### <a name="description"></a>描述
- 下列範例顯示違反此規則的結構（實值型別）。
+### <a name="description"></a>說明
+ 下列範例顯示違反此規則的結構 (數值型別) 。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Usage.OverrideEqualsStructViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsStructViolation/cs/FxCop.Usage.OverrideEqualsStructViolation.cs#1)]

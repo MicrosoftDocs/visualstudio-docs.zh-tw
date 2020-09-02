@@ -11,17 +11,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386981"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>定義 Python 專案的自訂命令
 
 在使用 Python 專案的過程中，您可能發現常常需要切換到命令視窗來執行特定指令碼或模組、PIP 命令或其他任意工具。 若要改善工作流程，您可以在 Python 專案操作功能表的 [Python]**** 子功能表新增自訂命令。 這些命令可以在主控台視窗或 Visual Studio 的 [輸出]**** 視窗中執行。 您也可以使用規則運算式來指示 Visual Studio 如何從命令的輸出剖析錯誤與警告。
 
-根據預設，該功能表只包含一個 [**執行 PyLint** ] 命令：
+依預設，該功能表只會包含單一 **Run PyLint** 命令：
 
 ![專案操作功能表上的 Python 子功能表預設外觀](media/custom-commands-default-menu.png)
 
@@ -36,13 +36,13 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 > [!Tip]
 > 每當您在文字編輯器中對專案檔進行變更，都必須在 Visual Studio 中重新載入該專案以套用這些變更。 例如，新增自訂命令定義後，您必須重新載入專案，這些專案才會顯示在專案的操作功能表上。
 >
-> 您或許已經知道 Visual Studio 有提供能夠直接編輯專案檔的方法。 首先，以滑鼠右鍵按一下專案檔並選取 **[卸載專案**]，然後再按一下滑鼠右鍵並選取 [**編輯 \<project-name> ** ]，在 [Visual Studio 編輯器] 中開啟專案。 在進行編輯並加以儲存後，再一次以滑鼠右鍵按一下專案，並選取 [重新載入專案]****，此時系統也會提示您確認是否要關閉編輯器中的專案檔。
+> 您或許已經知道 Visual Studio 有提供能夠直接編輯專案檔的方法。 先以滑鼠右鍵按一下專案檔並選取 **[卸載專案**]，然後再按一下滑鼠右鍵並選取 [**編輯 \<project-name> ** ]，即可在 Visual Studio 編輯器中開啟專案。 在進行編輯並加以儲存後，再一次以滑鼠右鍵按一下專案，並選取 [重新載入專案]****，此時系統也會提示您確認是否要關閉編輯器中的專案檔。
 >
-> 在開發自訂命令時，這些點選作業可能會變得相當繁瑣。 若要提高工作流程的效率，請同時在 Visual Studio 與其他編輯器中開啟 *.pyproj* 檔案 (例如另一個 Visual Studio 執行個體、Visual Studio Code 或 [筆記本] 等)。 當您在編輯器中儲存變更並切換至 [Visual Studio] 時，Visual Studio 會偵測到變更，並詢問是否要重載專案（已**在 \<name> 環境外部修改專案**）。 選取 [重新載入]**** 即可一舉立即套用您的所有變更。
+> 在開發自訂命令時，這些點選作業可能會變得相當繁瑣。 若要提高工作流程的效率，請同時在 Visual Studio 與其他編輯器中開啟 *.pyproj* 檔案 (例如另一個 Visual Studio 執行個體、Visual Studio Code 或 [筆記本] 等)。 當您在編輯器中儲存變更並切換至 Visual Studio 時，Visual Studio 會偵測變更，並詢問是否要重載專案 (**專案 \<name> 是否已在環境外部修改。**) 。 選取 [重新載入]**** 即可一舉立即套用您的所有變更。
 
 ## <a name="walkthrough-add-a-command-to-a-project-file"></a>逐步解說：將命令新增至專案檔
 
-為了讓您更熟悉自訂命令，本節將透過使用 *python.exe* 直接執行專案啟動檔案的簡單範例為您進行逐步解說 （這類命令實際上等同于使用**Debug**  > **啟動但不進行調試**。）
+為了讓您更熟悉自訂命令，本節將透過使用 *python.exe* 直接執行專案啟動檔案的簡單範例為您進行逐步解說  (這類命令的效果，與在不**Debug**進行偵錯工具的  >  **情況下**使用 Debug Start 相同。 ) 
 
 1. 使用 [Python 應用程式]**** 範本建立名為 "Python-CustomCommands" 的新專案。 (若仍對程序不熟悉，請參閱[快速入門：從範本建立 Python 專案](quickstart-02-python-in-visual-studio-project-from-template.md)的說明。)
 
@@ -127,13 +127,13 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
   </Target>
 ```
 
-若要參考專案屬性或屬性值中的環境變數，請在 `$()` 語彙基元中使用名稱，例如 `$(StartupFile)` 與 `$(MSBuildProjectDirectory)`。 如需詳細資訊，請參閱[MSBuild 屬性](../msbuild/msbuild-properties.md)。
+若要參考專案屬性或屬性值中的環境變數，請在 `$()` 語彙基元中使用名稱，例如 `$(StartupFile)` 與 `$(MSBuildProjectDirectory)`。 如需詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。
 
 ### <a name="target-attributes"></a>目標屬性
 
 | 屬性 | 必要 | 描述 |
 | --- | --- | --- |
-| 名稱 | 是 | Visual Studio 專案中的命令識別項。 您必須將此名稱新增至 `<PythonCommands>` 屬性群組，命令才會顯示在 [Python] 子功能表上。 |
+| Name | 是 | Visual Studio 專案中的命令識別項。 您必須將此名稱新增至 `<PythonCommands>` 屬性群組，命令才會顯示在 [Python] 子功能表上。 |
 | 標籤 | 是 | [Python] 子功能表上顯示的 UI 顯示名稱。 |
 | 傳回 | 是 | 必須包含可將目標識別為命令的 `@(Commands)`。 |
 
@@ -145,12 +145,12 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 | --- | --- | --- |
 | TargetType | 是 | 指定目標屬性的內容，以及其搭配 Arguments 屬性使用的方式：<ul><li>****：執行在 Target 中命名的可執行檔，附加 Arguments 中的值，使其看似直接在命令列上輸入。 此值只能包含程式名稱，而不能包含引數。</li><li>**script**：以 Target 中的檔案名稱執行 *python.exe*，後面接著 Arguments 中的值。</li><li>**module**：執行 `python -m`，後面依序接著 Target 中的模組名稱及 Arguments 中的值。</li><li>**code**：執行 Target 中包含的內嵌程式碼。 這會忽略 Arguments 值。</li><li>**pip**：以 Target 中的命令執行 `pip`，後面接著 Arguments，is ExecuteIn 設定為 "output"，但 PIP 會假設 `install` 命令並將 Target 用作套件名稱。</li></ul> |
 | 目標 | 是 | 要使用的檔案名稱、模組名稱、程式碼或 PIP 命令，端視 TargetType 而定。 |
-| 引數 | 選用 | 指定要指派至目標的引數字串 (如果有的話)。 請注意，當 TargetType 為 `script` 時，引數會指派至 Python 程序，而非 *python.exe*。 若為 `code` TargetType 請予以略過。 |
+| 引數 | 選擇性 | 指定要指派至目標的引數字串 (如果有的話)。 請注意，當 TargetType 為 `script` 時，引數會指派至 Python 程序，而非 *python.exe*。 若為 `code` TargetType 請予以略過。 |
 | ExecuteIn | 是 | 指定要在其中執行命令的環境：<ul><li>**console**：(預設) 將 Target 與 Arguments 視作直接在命令列上輸入加以執行。 命令視窗會在 Target 執行時顯示，然後自動關閉。</li><li>**consolepause**：與 console 相同，但會在關閉視窗前等待按鍵動作。</li><li>**output**：執行 Target，並在 Visual Studio 的 [輸出]**** 視窗中顯示其結果。 若 TargetType 為 "pip"，Visual Studio 會將 Target 用作套件名稱並在後面加上 Arguments。</li><li>**repl**：在 [Python 互動式](python-interactive-repl-in-visual-studio.md)視窗中執行 Target；選擇性顯示名稱會用於視窗標題。</li><li>**none**：行為與 console 相同。</li></ul>|
-| WorkingDirectory | 選用 | 要在其中執行命令的資料夾。 |
-| ErrorRegex<br>WarningRegEx | 選用 | 僅在 ExecuteIn 為 `output` 時使用。 這兩個值均會指定規則運算式，Visual Studio 將用以剖析命令輸出，並在其 [錯誤清單]**** 視窗中顯示錯誤與警告。 若未指定，則命令並不會影響 [錯誤清單]**** 視窗。 如需有關 Visual Studio 要求的詳細資訊，請參閱[具名擷取群組](#named-capture-groups-for-regular-expressions)。 |
-| RequiredPackages | 選用 | 命令的套件需求清單，格式與 [*requirements.txt*](https://pip.pypa.io/en/stable/user_guide/#requirements-files) (pip.readthedocs.io) 相同。 例如 [執行 PyLint]**** 命令會指定 `pylint>=1.0.0`。 執行命令前，Visual Studio 會檢查清單中的所有套件皆已安裝。 Visual Studio 會使用 PIP 來安裝所有缺少的套件。 |
-| 環境 | 選用 | 可在執行命令前定義的環境變數字串。 每個變數會使用表單 \<NAME> = \<VALUE> ，並以分號分隔多個變數。 具有多個值的變數須以單引號或雙引號括住，例如 'NAME=VALUE1;VALUE2'。 |
+| WorkingDirectory | 選擇性 | 要在其中執行命令的資料夾。 |
+| ErrorRegex<br>WarningRegEx | 選擇性 | 僅在 ExecuteIn 為 `output` 時使用。 這兩個值均會指定規則運算式，Visual Studio 將用以剖析命令輸出，並在其 [錯誤清單]**** 視窗中顯示錯誤與警告。 若未指定，則命令並不會影響 [錯誤清單]**** 視窗。 如需有關 Visual Studio 要求的詳細資訊，請參閱[具名擷取群組](#named-capture-groups-for-regular-expressions)。 |
+| RequiredPackages | 選擇性 | 命令的套件需求清單，格式與 [*requirements.txt*](https://pip.pypa.io/en/stable/user_guide/#requirements-files) (pip.readthedocs.io) 相同。 例如 [執行 PyLint]**** 命令會指定 `pylint>=1.0.0`。 執行命令前，Visual Studio 會檢查清單中的所有套件皆已安裝。 Visual Studio 會使用 PIP 來安裝所有缺少的套件。 |
+| 環境 | 選用 | 可在執行命令前定義的環境變數字串。 每個變數都會使用 \<NAME> = \<VALUE> 具有以分號分隔之多個變數的表單。 具有多個值的變數須以單引號或雙引號括住，例如 'NAME=VALUE1;VALUE2'。 |
 
 #### <a name="named-capture-groups-for-regular-expressions"></a>規則運算式的擷取群組
 
@@ -306,7 +306,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
   </Target>
 ```
 
-*From [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) （GitHub），與許可權搭配使用。*
+*從 [>fxthomas example.pyproj.xml/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) ，與許可權一起使用。*
 
 ### <a name="generate-windows-installer"></a>產生 Windows Installer
 
@@ -325,7 +325,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
   </Target>
 ```
 
-*From [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) （GitHub），與許可權搭配使用。*
+*從 [>fxthomas example.pyproj.xml/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) ，與許可權一起使用。*
 
 ### <a name="generate-wheel-package"></a>產生 wheel 套件
 
@@ -345,7 +345,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 </Target>
 ```
 
-*From [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) （GitHub），與許可權搭配使用。*
+*從 [>fxthomas example.pyproj.xml/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) ，與許可權一起使用。*
 
 ## <a name="troubleshooting"></a>疑難排解
 
@@ -355,7 +355,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 
 ### <a name="console-window-closes-immediately-after-command-is-run"></a>主控台視窗會在執行命令後立即關閉
 
-使用 `ExecuteIn="consolepause"` 取代 `ExecuteIn="console"`。
+使用 `ExecuteIn="consolepause"`，而不是 `ExecuteIn="console"`。
 
 ### <a name="command-does-not-appear-on-the-menu"></a>命令未顯示在功能表上
 
@@ -384,7 +384,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 
 若您參考未定義的屬性，則屬性值可能為空白。 例如，若您使用語彙基元 `$(StartupFile)`，但專案中並未定義任何啟動檔案，則語彙基元會解析至空白的字串。 在此情況下，建議您定義預設值。 例如，若您未另外在專案屬性中指定伺服器啟動檔案，則在 Bottle、Flask 及 Django 專案範本中定義的 [執行伺服器]**** 與 [執行偵錯伺服器]**** 命令將預設為 *manage.py*。
 
-### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>執行命令時，Visual Studio 停止回應並當機
+### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>執行命令時，Visual Studio 停止回應並損毀
 
 您可能嘗試以 `ExecuteIn="output"` 執行主控台命令，Visual Studio 在嘗試剖析輸出時可能會損毀。 請改用 `ExecuteIn="console"`。 (請參閱[問題 3682](https://github.com/Microsoft/PTVS/issues/3681)。)
 

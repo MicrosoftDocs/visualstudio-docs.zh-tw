@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: db9267fe9f06569dadea240e5d78c8b35c84b8c4
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386546"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>如何回報 Visual Studio 2015 的問題
@@ -53,7 +53,7 @@ Microsoft 尊重您的隱私權。 如需我們如何處理您所傳送之資料
 
 1. 追蹤和堆積傾印檔案有助於我們診斷問題。   我們非常感激您願意使用 [回報問題] 工具記錄重現問題的步驟，並將資料傳送給 Microsoft。
 
-2. 按一下 [記錄重現問題的動作] **** 旁邊的 &gt; 形箭號。 如果您的問題造成 Visual Studio 停止回應或當機，請開啟另一個 Visual Studio 實例，並從清單視圖中選取它。
+2. 按一下 [記錄重現問題的動作] **** 旁邊的 &gt; 形箭號。 如果您的問題造成 Visual Studio 停止回應或損毀，請開啟 Visual Studio 的另一個實例，然後從清單視圖中加以選取。
 
 3. 按一下 [開始錄製] **** 並執行重現問題的步驟。 完成之後，請按一下浮動視窗中的 [停止錄製] **** 按鈕。
 
@@ -71,4 +71,4 @@ Microsoft 尊重您的隱私權。 如需我們如何處理您所傳送之資料
 
 ## <a name="see-also"></a>另請參閱
 
-- [告訴我們](../ide/talk-to-us.md)
+- [與我們交談](../ide/talk-to-us.md)

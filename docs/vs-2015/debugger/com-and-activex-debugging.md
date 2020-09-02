@@ -1,5 +1,5 @@
 ---
-title: COM 和 ActiveX 進行偵錯 |Microsoft Docs
+title: COM 和 ActiveX 調試 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b4d74a6a1c4f03951d93eaf2aa5e556762b9021
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702311"
 ---
 # <a name="com-and-activex-debugging"></a>偵錯 COM 和 ActiveX
@@ -38,7 +38,7 @@ ms.locfileid: "65702311"
  [COM 伺服器和容器偵錯](../debugger/com-server-and-container-debugging.md)  
  內容提出偵錯 COM 應用程式時的特殊考量。 涉及的問題包含：在同一方案中使用兩個專案偵錯 COM 伺服器和容器 (Container)、跨處理序 (Process) 界限追蹤呼叫、設定回呼函式 (Callback Function) 的中斷點，以及逐步跨和進入容器和伺服器等的問題。  
   
- [如何：針對 ActiveX 控制項進行偵錯](../debugger/how-to-debug-an-activex-control.md)  
+ [如何：對 ActiveX 控制項進行偵錯工具](../debugger/how-to-debug-an-activex-control.md)  
  包括偵錯 ActiveX 控制項的資訊。 其中包括：指定偵錯工作階段的容器以查看您 ActiveX 控制項中的程式碼如何執行、偵錯資料繫結的 ActiveX 控制項、模擬特定的容器，以及逐步執行容器的程式碼。  
   
  [COM 偵錯工具](../debugger/com-debugging-tools.md)  

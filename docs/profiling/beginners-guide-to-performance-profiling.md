@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537367"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>透過分析 CPU 使用量測量應用程式效能
 
-您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 本文說明如何使用診斷工具的 [ **CPU 使用量**] 索引標籤，來取得應用程式的效能資料。
+您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 本文說明如何使用診斷工具的 [ **CPU 使用量** ] 索引標籤，來取得應用程式的效能資料。
 
 當偵錯工具暫停時，[CPU 使用量]**** 工具會收集在應用程式中執行的函式的詳細資訊。 此工具列出正在執行工作的函式，並提供讓您用來專注於取樣工作階段特定區段的時間軸圖形。
 
@@ -35,7 +35,7 @@ ms.locfileid: "85537367"
 > [!Important]
 > 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
 
-在本文中，我們將討論一般偵錯工作流程中的 CPU 使用量分析。 您也可以在未附加偵錯工具或以執行中的應用程式為目標的情況下分析 CPU 使用量。 如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 您也可以使用另一個分析工具[效能提示](../profiling/perftips.md)來逐步執行程式碼，並識別特定函式或程式碼區塊需要多少時間才能完成。
+在本文中，我們將討論一般偵錯工作流程中的 CPU 使用量分析。 您也可以在不附加偵錯工具的情況下分析 CPU 使用量，或是以執行中的應用程式為目標。 如需詳細資訊，請參閱 [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 您也可以使用另一個程式碼剖析工具 [效能提示](../profiling/perftips.md)來逐步執行程式碼，並識別特定函式或程式碼區塊完成的時間長度。
 
 您可以在 Windows 7 及更新版本使用不具偵錯工具的分析工具。 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具]**** 視窗)。
 
@@ -53,27 +53,27 @@ ms.locfileid: "85537367"
 
     藉由設定兩個中斷點，您可以將資料收集的範圍限制在您想分析的程式碼部分。
 
-3. [**診斷工具**] 視窗會自動出現，除非您將它關閉。 若要再次顯示視窗，請按一下 [**調試**程式] [視窗] [  >  **Windows**  >  **顯示診斷工具**]。
+3. 除非您已關閉 **診斷工具** 視窗，否則它會自動顯示。 若要再次顯示視窗，請按一下 [ **Debug**  >  **Windows**  >  **Show 診斷工具**]。
 
-4. 您可以透過工具列上的 [Select Tools (選取工具)]**** 設定來選擇是否要查看 [CPU Usage (CPU 使用量)]****、[Memory Usage (記憶體使用量)](../profiling/Memory-Usage.md) 或 (或兩者)。 如果您正在執行 Visual Studio Enterprise，您也可以在 [工具] [ **Tools**  >  **選項**] [  >  **intellitrace**] 中啟用或停用 intellitrace。
+4. 您可以透過工具列上的 [Select Tools (選取工具)]**** 設定來選擇是否要查看 [CPU Usage (CPU 使用量)]****、[Memory Usage (記憶體使用量)](../profiling/Memory-Usage.md) 或 (或兩者)。 如果您正在執行 Visual Studio Enterprise，也可以在 [**工具**  >  **選項**]  >  **intellitrace**中啟用或停用 intellitrace。
 
      ![顯示診斷工具](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
 
      我們主要是要查看 CPU 使用率，因此，請務必啟用 [CPU 使用量]**** (預設為啟用)。
 
-5. 按一下 **[調試**  >  **開始調試**] （或工具列上的 [**開始**] 或**F5**）。
+5. 按一下 [ **Debug**  >  **開始**錯 (] 或 [**啟動**] 工具列上的 [啟動]，或按**F5**) 。
 
      當應用程式完成載入時，會出現 [Diagnostics Tools (診斷工具)] 的 [Summary (摘要)] 檢視。 如果您需要開啟視窗，請按一下 [ **Debug**  >  **Windows**  >  **Show 診斷工具**]。
 
-     ![診斷工具摘要索引標籤](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
+     ![診斷工具摘要索引標籤](../profiling/media/diag-tools-summary-tab.png ">diagtoolssummarytab")
 
-     如需事件的詳細資訊，請參閱[搜尋和篩選診斷工具視窗的 [事件]](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)索引標籤。
+     如需事件的詳細資訊，請參閱 [診斷工具視窗的 [搜尋和篩選事件]](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)索引標籤。
 
 6. 執行會叫用您的第一個中斷點的案例。
 
 7. 當偵錯工具暫停時，啟用 CPU 使用量資料的收集，然後開啟 [CPU Usage (CPU 使用量)]**** 索引標籤。
 
-     ![診斷工具可啟用 CPU 分析](../profiling/media/diag-tools-enable-cpu-profiling.png "DiagToolsEnableCPUProfiling")
+     ![診斷工具啟用 CPU 分析](../profiling/media/diag-tools-enable-cpu-profiling.png ">diagtoolsenablecpuprofiling")
 
      當您選擇 [記錄 CPU 分析]**** 時，Visual Studio 就會開始錄製您的函式以及它們所需的執行時間。 只有在應用程式於中斷點停止時，您才能檢視收集的資料。
 
@@ -91,12 +91,12 @@ ms.locfileid: "85537367"
 
 9. 如果您想要選取程式碼更特定的區域進行分析，請在 CPU 時間軸中選取區域 (必須是顯示分析資料的區域)。
 
-     ![診斷工具選取時間區段](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
+     ![選取時間區段的診斷工具](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
 
      此時，您可以開始分析資料。
 
      > [!TIP]
-     >  嘗試識別效能問題時，請採取多項測量。 效能自然會因執行而異，而且程式碼路徑通常會因為單次初始化工作（例如載入 Dll、JIT 編譯方法，以及初始化快取）而執行的第一次執行速度變慢。 藉由採取多項測量，您可以更瞭解所顯示度量的範圍和中位數，whichs 可讓您第一次進行比較，而不是程式碼區域的穩定狀態效能。
+     >  嘗試找出效能問題時，請採取多項度量。 效能自然會因執行時而異，而且程式碼路徑通常會在第一次執行時變慢，例如載入 Dll、JIT 編譯方法，以及初始化快取。 藉由採取多項度量，您可以更瞭解所顯示度量的範圍和中位數，whichs 可讓您比較第一次與程式碼區域的穩定狀態效能。
 
 ## <a name="step-2-analyze-cpu-usage-data"></a>步驟 2：分析 CPU 使用量資料
 
@@ -113,7 +113,7 @@ ms.locfileid: "85537367"
 
     當您按兩下函式時，[Caller/Callee (呼叫者/被呼叫者)]**** 檢視會在左窗格中開啟。
 
-    ![診斷工具的呼叫端/被呼叫端檢視](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
+    ![診斷工具的呼叫端/被呼叫端檢視](../profiling/media/diag-tools-caller-callee.png ">diagtoolscallercallee")
 
     在此檢視中，選取的函式會出現在標題和 [目前的函式]**** 方塊中 (在此範例中為 GetNumber)。 呼叫目前函式的函式顯示在左邊的 [正在呼叫函式]**** 下方，而目前函式所呼叫的任何函式會顯示在右邊的 [呼叫的函式]**** 方塊。 (您可以選取任一個方塊來變更目前的函式。)
 
@@ -128,13 +128,13 @@ ms.locfileid: "85537367"
     圖中的每個編號區域與程序中的步驟相關。
 
     ::: moniker range=">=vs-2019"
-    ![診斷工具呼叫樹狀結構](../profiling/media/vs-2019/diag-tools-call-tree.png "DiagToolsCallTree")
+    ![診斷工具的呼叫樹狀結構](../profiling/media/vs-2019/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
     ::: moniker range="vs-2017"
-    ![診斷工具呼叫樹狀結構](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
+    ![診斷工具的呼叫樹狀結構](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
 
-    |映像|描述|
+    |Image|說明|
     |-|-|
     |![步驟 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|CPU 使用量呼叫樹狀圖中的最上層節點是虛擬節點|
     |![步驟 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|在大部分的應用程式中，停用 [顯示外部程式碼] [](#view-external-code) 選項時，第二層節點是一個含有系統和 Framework 程式碼的 [外部程式碼] **** 節點，而系統和 Framework 程式碼會啟動和停止應用程式、繪製 UI、控制執行緒排程，以及提供應用程式的其他低階服務。|
@@ -152,7 +152,7 @@ ms.locfileid: "85537367"
     ::: moniker range=">=vs-2019"
     若要在呼叫樹狀圖檢視中查看 CPU 使用百分比最高的函式呼叫，請按一下 [展開最忙碌路徑]****。
 
-    ![診斷工具最忙碌路徑](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
+    ![診斷工具的最忙碌路徑](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
     ::: moniker-end
 
     > [!NOTE]
@@ -171,7 +171,7 @@ ms.locfileid: "85537367"
 使用搜尋方塊尋找您所尋找的節點，然後使用水平捲軸檢視資料。
 
 > [!TIP]
-> 如果您分析呼叫 Windows 函式的外部程式碼，您應該要確定您有最新的 .*pdb* 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確認您擁有所需檔案的詳細資訊，請參閱[在偵錯工具中指定符號（.pdb）和來源](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)檔案。
+> 如果您分析呼叫 Windows 函式的外部程式碼，您應該要確定您有最新的 .*pdb* 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確認您擁有所需檔案的詳細資訊，請參閱 [在偵錯工具中指定符號 ( .pdb) 和原始程式](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)檔。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -12,17 +12,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f52f80cad4ce7678a832a7b76a75d8f2fd4460e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778215"
 ---
 # <a name="summary-view---instrumentation-data"></a>摘要檢視 - 檢測資料
-[摘要] 檢視顯示有關程式碼剖析執行時效能耗費最多資源的函式資訊。 有關詳細資訊（包括通知連結和報表清單的說明），請參閱[摘要視圖](../profiling/summary-view.md)。
+[摘要] 檢視顯示有關程式碼剖析執行時效能耗費最多資源的函式資訊。 如需詳細資訊，包括通知連結和報表清單的描述，請參閱 [摘要視圖](../profiling/summary-view.md)。
 
 ## <a name="timeline-graph"></a>時間軸圖形
- [摘要] 檢視的時間軸圖形會顯示已進行程式碼剖析的應用程式在程式碼剖析期間的處理器 (CPU) 使用率。 您可以使用時間軸圖形，將檢視篩選為選取的時間範圍。 有關詳細資訊，請參閱[如何：從摘要時間表篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。
+ [摘要] 檢視的時間軸圖形會顯示已進行程式碼剖析的應用程式在程式碼剖析期間的處理器 (CPU) 使用率。 您可以使用時間軸圖形，將檢視篩選為選取的時間範圍。 如需詳細資訊，請參閱 [如何：從摘要時間軸篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。
 
 ## <a name="hot-path"></a>最忙碌路徑
  [最忙碌路徑]**** 顯示耗用最多時間的執行路徑。 您可以按一下函式來顯示該函式的 [函式詳細資料] 檢視。 若要顯示該函式的其他檢視，以滑鼠右鍵按一下函式，然後按一下清單中的檢視。
@@ -31,7 +31,7 @@ ms.locfileid: "74778215"
 
 |資料行|描述|
 |------------|-----------------|
-|**名稱**|函數的名稱。|
+|**名稱**|函式的名稱。|
 |**功能內含耗用 (Elapsed Inclusive) 時間 %**|在程式碼剖析執行時，該函式花費在執行其函式主體和其所呼叫函式中程式碼的所有時間百分比。|
 |**功能專屬耗用 (Elapsed Exclusive) 時間 %**|在程式碼剖析執行時，該函式花費在執行其函式主體中程式碼的所有時間百分比。 不包括該函式所呼叫函式中所花費的時間。|
 
@@ -42,9 +42,9 @@ ms.locfileid: "74778215"
 
 |資料行|描述|
 |------------|-----------------|
-|**名稱**|函數的名稱。|
+|**名稱**|函式的名稱。|
 |**專有時間 %**|在程式碼剖析執行時，該函式花費在執行其函式主體中程式碼的所有時間百分比。 不包括該函式所呼叫函式中所花費的時間。|
 
 ## <a name="see-also"></a>另請參閱
-- [摘要視圖 - 採樣資料](../profiling/summary-view-sampling-data.md)
-- [摘要視圖 - .NET 記憶體資料](../profiling/summary-view-dotnet-memory-data.md)
+- [摘要視圖-取樣資料](../profiling/summary-view-sampling-data.md)
+- [摘要視圖-.NET 記憶體資料](../profiling/summary-view-dotnet-memory-data.md)

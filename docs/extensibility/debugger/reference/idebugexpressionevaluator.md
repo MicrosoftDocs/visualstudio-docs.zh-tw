@@ -1,5 +1,5 @@
 ---
-title: IDebug運算式評估器 |微軟文件
+title: IDebugExpressionEvaluator |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7e8dd910e4edc110abb40dde14b4cb85ff54a70a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729381"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中,這種實現表達式賦值器的方式被棄用。 有關實現 CLR 表示式賦值器的資訊,請參閱[CLR 表示式賦值器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[託管運算式賦值器範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱 [CLR 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
-此介面表示表達式賦值器。
+此介面代表運算式評估工具。
 
 ## <a name="syntax"></a>語法
 
@@ -31,37 +31,37 @@ ms.locfileid: "80729381"
 IDebugExpressionEvaluator : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實施者說明
-表達式賦值器必須實現此介面。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+運算式評估工具必須執行這個介面。
 
-## <a name="notes-for-callers"></a>通話備註
-要獲取此介面,請使用賦值器的類 ID (CLSID) 通過`CoCreateInstance`方法實例化運算式賦值器。 請參閱示例。
+## <a name="notes-for-callers"></a>呼叫者注意事項
+若要取得這個介面，請 `CoCreateInstance` 使用評估工具 (CLSID) 的類別識別碼，透過方法具現化運算式評估工具。 請參閱範例。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示的方法`IDebugExpressionEvaluator`。
+下表顯示的方法 `IDebugExpressionEvaluator` 。
 
 |方法|描述|
 |------------|-----------------|
-|[剖析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|將運算式字串轉換為解析的運算式。|
-|[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|獲取方法的局部變數、參數和其他屬性。|
-|[GetMethodLocationProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodlocationproperty.md)|將方法位置和偏移轉換為記憶體位址。|
-|[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|確定使用哪種語言來創建可列印的結果。|
-|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|設置註冊表根。 用於並行調試。|
+|[剖析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|將運算式字串轉換為剖析的運算式。|
+|[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|取得方法的區域變數、引數和其他屬性。|
+|[GetMethodLocationProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodlocationproperty.md)|將方法位置和位移轉換成記憶體位址。|
+|[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|決定要用來建立可列印結果的語言。|
+|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|設定登錄根目錄。 用於並存的偵錯工具。|
 
 ## <a name="remarks"></a>備註
-在典型情況下,調試引擎 (DE) 實例化運算式賦值器 (EE) 作為調用[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)的結果。 由於 DE 知道要使用的 EE 的語言和供應商,因此 DE 從註冊表中獲取 EE 的 CLSID([用於除錯功能的 SDK 説明器](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md),`GetEEMetric`可幫助進行此檢索)。
+在一般情況下，debug engine (DE) 會將運算式評估工具具現化 (EE) ，因為 [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)呼叫的結果。 因為 DE 知道它想要使用的 EE 語言和廠商，所以會從登錄取得 EE 的 CLSID ([SDK helper For 偵錯工具，以](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `GetEEMetric` 協助進行此抓取) 。
 
-實例化 EE 後,DE 調用[Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)來解析表示式並將其存儲在[IDebugParsed 運算式](../../../extensibility/debugger/reference/idebugparsedexpression.md)物件中。 稍後,對[評估同步](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)的調用將計算表達式。
+當 EE 具現化之後，DE 會呼叫 [parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) 來剖析運算式，並將它儲存在 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) 物件中。 之後，呼叫 [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 會評估運算式。
 
 ## <a name="requirements"></a>需求
-標題: ee.h
+標頭： ee. h
 
-命名空間:微軟.VisualStudio.調試器.互通
+命名空間： VisualStudio
 
-程式集:微軟.VisualStudio.除錯器.Interop.dll
+元件： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>範例
-此示例演示如何實例化在原始碼中給定符號提供程式和位址的運算式賦值器。 本示例使用用於除錯庫`GetEEMetric`的[SDK 幫助器](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)的函數 dbgmetric.lib。
+這個範例示範如何在指定符號提供者和原始程式碼中的位址時，將運算式評估工具具現化。 此範例使用 `GetEEMetric` [SDK Helper for 偵錯工具](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) dbgmetric 的函式。
 
 ```cpp
 IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolProvider,

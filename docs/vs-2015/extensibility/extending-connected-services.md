@@ -9,13 +9,13 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1961b3f67f07f5d3015e7891786b6b213c8e8852
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204574"
 ---
 # <a name="extending-connected-services"></a>擴充已連線的服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 已連接服務 SDK 可讓服務提供者，建立應用程式開發人員可以輕鬆加入其專案而不需要離開 Visual Studio IDE 的 Visual Studio 擴充功能。
+Visual Studio 已連線的服務 SDK 可讓服務提供者建立 Visual Studio 擴充功能，讓應用程式開發人員可以輕鬆地將其新增至專案，而不需要離開 Visual Studio IDE。

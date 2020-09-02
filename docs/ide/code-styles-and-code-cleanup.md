@@ -11,11 +11,11 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301857"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312583"
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "79301857"
 
 ::: moniker range=">=vs-2019"
 
-您可以手動填入您的 EditorConfig 檔案，或是根據您在 Visual Studio 中 [選項]**** 對話方塊中所選擇的程式碼樣式設定來自動產生該檔案。 此選項頁可在**工具** > **選項** > **文字編輯器**> [**C#** 或**基本**] >**代碼樣式** > **一般**。 按一下 [從設定產生 .editorconfig 檔案]**** 來根據此 [選項]**** 頁面上的設定自動產生程式碼樣式 *.editorconfig* 檔案。
+您可以手動填入您的 EditorConfig 檔案，或是根據您在 Visual Studio 中 [選項]**** 對話方塊中所選擇的程式碼樣式設定來自動產生該檔案。 您可以在 [**工具**  >  **選項**  >  **文字編輯器**]、[**c #** 或**基本**] > 程式**代碼樣式**的  >  **一般**> 使用此選項頁面。 按一下 [從設定產生 .editorconfig 檔案]**** 來根據此 [選項]**** 頁面上的設定自動產生程式碼樣式 *.editorconfig* 檔案。
 
 ![在 Visual Studio 2019 中從設定產生 editorconfig 檔案](media/vs-2019/generate-editorconfig-file-small.png)
 
@@ -58,7 +58,7 @@ ms.locfileid: "79301857"
 
 ### <a name="preference-and-severity"></a>喜好設定和嚴重性
 
-對於此頁面上的各個程式碼樣式，您可以使用每一行的下拉式清單來設定 [喜好設定]**** 和 [嚴重性]**** 的值。 [嚴重性] 可設定為 [僅重構]****、[建議]****、[警告]**** 或 [錯誤]****。 如果您想要針對程式碼樣式啟用[快速動作](../ide/quick-actions.md)，請務必將 [嚴重性]**** 設定設為 [僅重構]**** 以外的值。 使用非首選樣式時![，將顯示](media/light-bulb-dropdown.png)**"快速操作**燈泡![燈泡"、"錯誤](media/error-bulb.png)燈泡錯誤燈泡"![或螺絲](media/screwdriver.png)刀螺絲刀圖示，您可以在 **"快速操作"** 清單中選擇一個選項，以自動將代碼重寫為首選樣式。
+對於此頁面上的各個程式碼樣式，您可以使用每一行的下拉式清單來設定 [喜好設定]**** 和 [嚴重性]**** 的值。 [嚴重性] 可設定為 [僅重構]****、[建議]****、[警告]**** 或 [錯誤]****。 如果您想要針對程式碼樣式啟用[快速動作](../ide/quick-actions.md)，請務必將 [嚴重性]**** 設定設為 [僅重構]**** 以外的值。 **Quick Actions** ![ ](media/light-bulb-dropdown.png) ![ 當使用非慣用樣式時，會出現快速動作燈泡燈泡、錯誤燈泡錯誤燈泡 ](media/error-bulb.png) 或螺絲起子 ![ 螺絲起子 ](media/screwdriver.png) 圖示，而且您可以在 [**快速動作**] 清單中選擇一個選項，以自動將程式碼重寫為慣用的樣式。
 
 ## <a name="apply-code-styles"></a>套用程式碼樣式
 
@@ -74,7 +74,7 @@ ms.locfileid: "79301857"
 ![Visual Studio 2017 中格式化文件的程式碼樣式設定](media/format-document-settings-experiment.png)
 
 > [!TIP]
-> 配置嚴重性為 **"無"** 的規則不參與代碼清理，但可以通過 **"快速操作和重構**"功能表單獨應用。
+> 設定為 [ **無** ] 的規則不會參與程式碼清除，但可透過 [ **快速動作] 和 [重構** ] 功能表個別套用。
 
 當您第一次觸發 [格式化文件]**** 命令時，黃色的資訊列會提示您設定程式碼清除設定。
 
@@ -82,18 +82,18 @@ ms.locfileid: "79301857"
 
 ::: moniker range=">=vs-2019"
 
-對於 C# 代碼檔，Visual Studio 2019 在編輯器底部有一個**代碼清理**按鈕（鍵盤 **：Ctrl**+**K、Ctrl** ** ** + **E），** 用於從編輯器設定檔或**代碼樣式**選項頁應用代碼樣式。 若專案中存在 *.editorconfig* 檔案，則會優先使用這些設定。
+針對 c # 程式碼檔案，Visual Studio 2019 的編輯器底部有一個 [程式**代碼清除**] 按鈕 (鍵盤： **ctrl** + **K**、 **ctrl** + **E**) 從 EditorConfig 檔或 [程式**代碼樣式**選項] 頁面套用程式碼樣式。 若專案中存在 *.editorconfig* 檔案，則會優先使用這些設定。
 
 ![在 Visual Studio 2019 中執行程式碼清除](media/execute-code-cleanup.png)
 
 > [!TIP]
-> 配置嚴重性為 **"無"** 的規則不參與代碼清理，但可以通過 **"快速操作和重構**"功能表單獨應用。
+> 設定為 [ **無** ] 的規則不會參與程式碼清除，但可透過 [ **快速動作] 和 [重構** ] 功能表個別套用。
 
 首先，在 [設定程式碼清除]**** 對話方塊中設定您想要套用的程式碼樣式 (從兩個設定檔中擇一進行設定)。 若要開啟此對話方塊，請按一下程式碼清除掃帚圖示旁邊的擴張箭頭，然後選擇 [設定程式碼清除]****。
 
 ![在 Visual Studio 2019 中設定程式碼清除](media/configure-code-cleanup.png)
 
-配置代碼清理後，可以按一下掃把圖示或按**Ctrl**+**K** **、Ctrl**+**E**運行代碼清理。 您也可以跨整個專案或解決方案執行程式碼清除。 以滑鼠右鍵按一下 [方案總管]**** 中的專案或解決方案名稱，選取 [分析與程式碼清除]****，然後選取 [執行程式碼清除]****。
+設定程式碼清除之後，您可以按一下 [掃帚] 圖示，或按**ctrl** + **K**、 **ctrl** + **E**以執行程式碼清除。 您也可以跨整個專案或解決方案執行程式碼清除。 以滑鼠右鍵按一下 [方案總管]**** 中的專案或解決方案名稱，選取 [分析與程式碼清除]****，然後選取 [執行程式碼清除]****。
 
 ![跨整個專案或解決方案執行程式碼清除](media/run-code-cleanup-project-solution.png)
 
@@ -103,6 +103,6 @@ ms.locfileid: "79301857"
 
 ## <a name="see-also"></a>另請參閱
 
-- [快速操作](../ide/quick-actions.md)
-- [.NET 編碼約定設置，用於編輯器配置](../ide/editorconfig-code-style-settings-reference.md)
+- [快速動作](../ide/quick-actions.md)
+- [EditorConfig 的 .NET 編碼慣例設定](../ide/editorconfig-code-style-settings-reference.md)
 - [編輯器行為 (Visual Studio for Mac)](/visualstudio/mac/editor-behavior)

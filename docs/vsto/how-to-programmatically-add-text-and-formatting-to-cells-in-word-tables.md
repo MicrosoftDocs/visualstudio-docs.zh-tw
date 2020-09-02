@@ -1,5 +1,5 @@
 ---
-title: 以程式設計方式將文字 & 格式加入 Word 資料表單元格
+title: 以程式設計方式將文字 & 格式新增至 Word 表格儲存格
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: acd43c82c6dae32ef6595b2f63c06fe61f3c6168
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538043"
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>如何：以程式設計方式在 Word 表格的儲存格中加入文字和格式
@@ -42,6 +42,6 @@ ms.locfileid: "85538043"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#97](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#97)]
 
 ## <a name="see-also"></a>另請參閱
-- [如何：以程式設計方式建立 Word 資料表](../vsto/how-to-programmatically-create-word-tables.md)
+- [如何：以程式設計方式建立 Word 表格](../vsto/how-to-programmatically-create-word-tables.md)
 - [如何：以程式設計方式將資料列和資料行加入至 Word 資料表](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
-- [如何：以程式設計方式使用文件屬性填入 Word 資料表](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
+- [如何：以程式設計方式將文件屬性填入 Word 表格](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)

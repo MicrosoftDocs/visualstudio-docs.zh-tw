@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538316"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>如何：將 ListObject 控制項加入至工作表
@@ -35,10 +35,10 @@ ms.locfileid: "85538316"
 
 - [在 VSTO 增益集專案中，于執行時間加入 ListObject 控制項](#runtimeaddin)
 
-  如需控制項的詳細資訊 <xref:Microsoft.Office.Tools.Excel.ListObject> ，請參閱[ListObject 控制項](../vsto/listobject-control.md)。
+  如需控制項的詳細資訊 <xref:Microsoft.Office.Tools.Excel.ListObject> ，請參閱 [ListObject 控制項](../vsto/listobject-control.md)。
 
-## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a>在設計階段加入 ListObject 控制項
- 有數種方式可 <xref:Microsoft.Office.Tools.Excel.ListObject> 在檔層級專案中，于設計階段將控制項加入工作表：在 Excel 中、從 [Visual Studio] [**工具箱**]，以及從 [**資料來源**] 視窗。
+## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a> 在設計階段加入 ListObject 控制項
+ 有幾種方式可 <xref:Microsoft.Office.Tools.Excel.ListObject> 在檔層級專案中，于設計階段將控制項加入工作表：在 Excel 中、從 [Visual Studio **工具箱**]，以及從 [ **資料來源** ] 視窗。
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -60,14 +60,14 @@ ms.locfileid: "85538316"
 
 #### <a name="to-use-the-data-sources-window"></a>使用資料來源視窗
 
-1. 開啟 [資料來源] **** 視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱[新增連接](../data-tools/add-new-connections.md)。
+1. 開啟 [資料來源] **** 視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱 [加入新的連接](../data-tools/add-new-connections.md)。
 
 2. 將資料表從 [資料來源] **** 視窗拖曳至您的工作表。
 
-     資料繫結 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項隨即加入工作表。 如需詳細資訊，請參閱資料系結[和 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)。
+     資料繫結 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項隨即加入工作表。 如需詳細資訊，請參閱資料系結 [和 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)。
 
-## <a name="add-listobject-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>在檔層級專案中，于執行時間加入 ListObject 控制項
- 您可以在執行階段，以動態方式加入 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。 如此可讓您建立主控制項，以回應事件。 當工作表關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱[在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)。
+## <a name="add-listobject-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> 在檔層級專案中，于執行時間加入 ListObject 控制項
+ 您可以在執行階段，以動態方式加入 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。 如此可讓您建立主控制項，以回應事件。 當工作表關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>以程式設計方式將 ListObject 控制項加入工作表
 
@@ -76,8 +76,8 @@ ms.locfileid: "85538316"
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
 
-## <a name="add-listobject-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>在 VSTO 增益集專案中，于執行時間加入 ListObject 控制項
- 您可以利用程式設計方式，在 VSTO 增益集專案中，將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入任何開啟中的工作表。 當工作表儲存並關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱[在 VSTO 增益集的執行時間中擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
+## <a name="add-listobject-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> 在 VSTO 增益集專案中，于執行時間加入 ListObject 控制項
+ 您可以利用程式設計方式，在 VSTO 增益集專案中，將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入任何開啟中的工作表。 當工作表儲存並關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 [在 VSTO 增益集中，于執行時間擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>以程式設計方式將 ListObject 控制項加入工作表
 

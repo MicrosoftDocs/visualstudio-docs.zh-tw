@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538109"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>如何：以程式設計方式將批註新增至檔中的文字
-  Document 類別的 comment 屬性會在 Microsoft Office Word 檔中的文字範圍加入批註。
+  Document 類別的 [批註] 屬性會將批註加入 Microsoft Office Word 檔中的文字範圍。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

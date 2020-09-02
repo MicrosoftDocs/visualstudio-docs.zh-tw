@@ -1,5 +1,5 @@
 ---
-title: 非同步任務方法產生器.objectidfor除錯器屬性 |微軟文件
+title: AsyncTaskMethodBuilder. >.objectidfordebugger 屬性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7776fb53c4e1290f4b8dbef89a1e195462168b0e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739387"
 ---
-# <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>非同步工作方法產生器.objectidfor除錯器屬性
-獲取可用於唯一標識調試器此生成器的物件。
+# <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>AsyncTaskMethodBuilder. >.objectidfordebugger 屬性
+取得可用來唯一識別此產生器至偵錯工具的物件。
 
- **命名空間:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **命名空間：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **程式集**:mscorlib(在 mscorlib.dll 中)
+ **元件：** mscorlib.dll) 中的 mscorlib (
 
- 由於您無法從 .NET 框架訪問此內部成員,因此在通用中間語言 (CIL) 中提供了以下語法。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
 
 ## <a name="syntax"></a>語法
 
@@ -34,4 +34,4 @@ private object ObjectIdForDebugger
 
 ## <a name="see-also"></a>另請參閱
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
-- [.NET 框架的並行擴展內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET Framework 的平行延伸模組內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

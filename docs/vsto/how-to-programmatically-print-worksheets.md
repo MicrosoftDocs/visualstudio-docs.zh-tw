@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b0affdd34ad1cb302beacdc1abc9d02275878afd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537887"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>如何：以程式設計方式列印工作表
@@ -66,7 +66,7 @@ ms.locfileid: "85537887"
 ## <a name="see-also"></a>另請參閱
 
 - [使用工作表](../vsto/working-with-worksheets.md)
-- [如何：以程式設計方式在工作表中檢查拼寫](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [如何：以程式設計方式檢查工作表中的拼寫](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [工作表主專案](../vsto/worksheet-host-item.md)
 - [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

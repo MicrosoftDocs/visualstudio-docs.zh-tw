@@ -1,5 +1,5 @@
 ---
-title: 原始程式碼管理外掛程式 API 功能 |微軟文件
+title: 原始檔控制外掛程式 API 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,79 +11,79 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ce685729dda8750d772e244398b736cff4951b72
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699914"
 ---
 # <a name="source-control-plug-in-api-functions"></a>原始檔控制外掛程式 API 函式
-原始程式碼管理外掛程式 API 提供以下功能,必須由原始程式碼管理外掛程式根據此 API 實現。 此參考中詳細介紹了每個函數的簽名以及與位標誌和其他參數關聯的語義。
+原始檔控制外掛程式 API 提供下列函式，這些函式必須由原始檔控制外掛程式根據此 API 來執行。 這項參考會詳細說明每個函式的簽章，以及與位旗標和其他參數相關聯的語法。
 
-## <a name="initialization-and-housekeeping-functions"></a>初始化和家政功能
+## <a name="initialization-and-housekeeping-functions"></a>初始化和維護功能
 
 |函式|描述|
 |--------------|-----------------|
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|關閉專案。|
-|[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|提示用戶為給定命令提供高級選項。|
-|[SccGetVersion](../extensibility/sccgetversion-function.md)|返回原始程式碼管理外掛程式的版本。|
-|[SccInitialize](../extensibility/sccinitialize-function.md)|初始化原始碼管理外掛程式。 對於外掛程式的每個實例,調用一次。|
-|[SccOpenProject](../extensibility/sccopenproject-function.md)|打開專案。|
-|[SccSetOption](../extensibility/sccsetoption-function.md)|用於設置各種選項的通用函數。 每個選項都從`SCC_OPT_xxx`並有自己的定義值集開始。|
-|[SccUninitialize](../extensibility/sccuninitialize-function.md)|當需要拔下原始程式碼管理外掛程式時調用一次。|
+|[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|提示使用者提供指定命令的 advanced 選項。|
+|[SccGetVersion](../extensibility/sccgetversion-function.md)|傳回原始檔控制外掛程式的版本。|
+|[SccInitialize](../extensibility/sccinitialize-function.md)|初始化原始檔控制外掛程式。 它會針對外掛程式的每個實例呼叫一次。|
+|[SccOpenProject](../extensibility/sccopenproject-function.md)|開啟專案。|
+|[SccSetOption](../extensibility/sccsetoption-function.md)|用來設定各種不同選項的泛型函數。 每個選項的開頭都 `SCC_OPT_xxx` 是，而且有自己的定義值集合。|
+|[SccUninitialize](../extensibility/sccuninitialize-function.md)|當原始檔控制外掛程式需要插即用時呼叫一次。|
 
-## <a name="core-source-control-functions"></a>核心源碼管理功能
-
-|函式|描述|
-|--------------|-----------------|
-|[SccAdd](../extensibility/sccadd-function.md)|將完全限定的路徑名稱指定的檔案陣組添加到原始程式碼管理系統。|
-|[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|允許使用者流覽原始程式碼管理系統中已有的文件,然後將這些文件作為當前專案的一部分。|
-|[SccCheckin](../extensibility/scccheckin-function.md)|簽入文件陣列。|
-|[SccCheckout](../extensibility/scccheckout-function.md)|簽出文件陣列。|
-|[SccDiff](../extensibility/sccdiff-function.md)|顯示由完全限定的路徑名稱指定的本地使用者檔與原始程式碼管理下的版本之間的差異。|
-|[SccGet](../extensibility/sccget-function.md)|檢索一組檔的唯讀複本。|
-|[SccGetEvents](../extensibility/sccgetevents-function.md)|檢查呼叫方詢問的檔案的狀態(通過`SccQueryInfo`)。|
-|[SccGetProjPath](../extensibility/sccgetprojpath-function.md)|使原始程式碼管理外掛程式提示使用者輸入對外掛程式有意義的專案路徑。|
-|[SccHistory](../extensibility/scchistory-function.md)|顯示完全限定的本地檔名陣列紀錄。|
-|[SccPopulateList](../extensibility/sccpopulatelist-function.md)|檢查檔案清單的目前狀態。 此外,當檔與`pfnPopulate`的條件`nCommand`不匹配時,使用函數通知調用方。|
-|[SccProperties](../extensibility/sccproperties-function.md)|顯示完全限定檔的屬性。|
-|[SccQueryInfo](../extensibility/sccqueryinfo-function.md)|檢查完全限定檔的清單,以尋找其當前狀態。|
-|[SccRemove](../extensibility/sccremove-function.md)|從原始碼管理系統中移除完全限定檔的陣列。|
-|[SccRename](../extensibility/sccrename-function.md)|將給定檔重新命名為原始碼管理系統中的新名稱。|
-|[SccRunScc](../extensibility/sccrunscc-function.md)|訪問原始程式碼管理系統的全部功能。|
-|[SccUncheckout](../extensibility/sccuncheckout-function.md)|撤銷檔案的簽出。|
-
-## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>支援額外功能的功能 (原始碼管理外掛程式 API 的版本 1.2)
- 這組函數定義了原始程式碼管理外掛程式 API 版本 1.2 中包含的其他功能。 它們提供對更高級原始程式碼管理特性和功能的訪問。
+## <a name="core-source-control-functions"></a>核心原始檔控制功能
 
 |函式|描述|
 |--------------|-----------------|
-|[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|啟動批處理操作。|
-|[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|在現有父專案下創建具有給定名稱的子專案。|
-|[SccDirDiff](../extensibility/sccdirdiff-function.md)|顯示由完全限定的路徑名稱指定的本地使用者目錄和原始程式碼管理資料庫位置之間的差異。|
-|[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)|檢查完全限定的目錄的清單,以檢查其當前狀態。|
-|[SccEndBatch](../extensibility/sccendbatch-function.md)|結束批處理操作。|
-|[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)|返回給定專案的父路徑(項目必須存在)。|
-|[SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md)|檢查是否允許對文件進行多次簽出。|
-|[SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md)|檢查外掛程式是否會創建 MSSCCPRJ。SCC 檔。|
+|[SccAdd](../extensibility/sccadd-function.md)|將完整路徑名稱所指定的檔案陣列加入至原始檔控制系統。|
+|[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|允許使用者流覽已在原始檔控制系統中的檔案，然後將這些檔案設為目前專案的一部分。|
+|[SccCheckin](../extensibility/scccheckin-function.md)|簽入檔案的陣列。|
+|[SccCheckout](../extensibility/scccheckout-function.md)|簽出檔案的陣列。|
+|[SccDiff](../extensibility/sccdiff-function.md)|顯示以完整路徑名稱和原始檔控制下的版本指定的本機使用者檔案之間的差異。|
+|[SccGet](../extensibility/sccget-function.md)|抓取一組檔案的唯讀複本。|
+|[SccGetEvents](../extensibility/sccgetevents-function.md)|透過) 檢查呼叫者要求 (的檔案狀態 `SccQueryInfo` 。|
+|[SccGetProjPath](../extensibility/sccgetprojpath-function.md)|導致原始檔控制外掛程式提示使用者輸入對外掛程式有意義的專案路徑。|
+|[SccHistory](../extensibility/scchistory-function.md)|顯示完整本機檔案名陣列的歷程記錄。|
+|[SccPopulateList](../extensibility/sccpopulatelist-function.md)|檢查檔案清單中的目前狀態。 此外，當檔案不 `pfnPopulate` 符合的準則時，也會使用函式來通知呼叫端 `nCommand` 。|
+|[SccProperties](../extensibility/sccproperties-function.md)|顯示完整檔案的屬性。|
+|[SccQueryInfo](../extensibility/sccqueryinfo-function.md)|檢查目前狀態的完整檔案清單。|
+|[SccRemove](../extensibility/sccremove-function.md)|從原始檔控制系統移除完整檔案的陣列。|
+|[SccRename](../extensibility/sccrename-function.md)|將指定的檔案重新命名為原始檔控制系統中的新名稱。|
+|[SccRunScc](../extensibility/sccrunscc-function.md)|存取原始檔控制系統的各種功能。|
+|[SccUncheckout](../extensibility/sccuncheckout-function.md)|復原檔陣列的簽出。|
 
-## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>支援進階功能的功能 (原始碼管理外掛程式 API 的版本 1.3)
- 這組函數定義了原始程式碼管理外掛程式 API 版本 1.3 中包含的其他功能。 它們提供對更高級原始程式碼管理特性和功能的訪問。
+## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>支援其他功能的函式 (版本1.2 的原始檔控制外掛程式 API) 
+ 這組函式會定義原始檔控制外掛程式 API 1.2 版中包含的其他功能。 它們可讓您存取更先進的原始檔控制功能。
 
 |函式|描述|
 |--------------|-----------------|
-|[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|將檔案清單從原始程式碼管理到當前專案。|
-|[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|在沒有使用者介面的情況下從原始程式碼管理中檢索檔案清單。|
-|[SccEnumChangedFiles](../extensibility/sccenumchangedfiles-function.md)|檢索源代碼管理中與本地檔案不同的檔案的清單。|
-|[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)|檢索指定原始程式碼管理外掛程式支援的擴充功能的標誌。|
-|[SccGetUserOption](../extensibility/sccgetuseroption-function.md)|檢索特定於用戶的選項。|
-|[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|檢查受原始碼管理的項目或專案中的目錄和檔案的清單。 找到的每個目錄和檔名都傳遞給回調函數。|
-|[SccQueryChanges](../extensibility/sccquerychanges-function.md)|檢查對檔案清單所做的名稱更改。 每個檔名都傳遞給具有更改狀態的回調函數。|
+|[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|啟動批次作業。|
+|[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|在現有的父專案下建立具有指定名稱的子專案。|
+|[SccDirDiff](../extensibility/sccdirdiff-function.md)|顯示完整路徑名稱和原始檔控制資料庫位置所指定的本機使用者目錄之間的差異。|
+|[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)|檢查完整目錄清單中的目前狀態。|
+|[SccEndBatch](../extensibility/sccendbatch-function.md)|結束批次作業。|
+|[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)|傳回指定專案的父路徑 (專案必須存在) 。|
+|[SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md)|檢查是否允許在檔案上進行多次簽出。|
+|[SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md)|檢查外掛程式是否會建立 MSSCCPRJ.SCC。SCC 檔。|
+
+## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>支援 Advanced 功能的函式 (1.3 版的原始檔控制外掛程式 API) 
+ 這組函式會定義原始檔控制外掛程式 API 1.3 版中包含的其他功能。 它們可讓您存取更先進的原始檔控制功能。
+
+|函式|描述|
+|--------------|-----------------|
+|[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|將檔案清單從原始檔控制加入至目前的專案。|
+|[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|從沒有使用者介面的原始檔控制中取出檔案清單。|
+|[SccEnumChangedFiles](../extensibility/sccenumchangedfiles-function.md)|抓取原始檔控制中不同于本機檔案的檔案清單。|
+|[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)|抓取旗標，這些旗標會指定原始檔控制外掛程式所支援的擴充功能。|
+|[SccGetUserOption](../extensibility/sccgetuseroption-function.md)|抓取使用者特定的選項。|
+|[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|檢查位於原始檔控制下的專案或專案中的目錄和檔案清單。 每個找到的目錄和檔案名都會傳遞至回呼函式。|
+|[SccQueryChanges](../extensibility/sccquerychanges-function.md)|檢查對檔案清單所做的名稱變更。 每個檔案名都會傳遞至具有其變更狀態的回撥函數。|
 
 ## <a name="requirements"></a>需求
- 標題: scc.h
+ 標頭： scc。h
 
- (在環境 SDK 中提供常見資料夾,預設情況下 *[驅動器]*[程式檔]VSIP 8.0\EnvSDK_common_inc;也隨 MSSCCI 示例在 VSIP 資料夾中提供 *[驅動器]*[程式檔]VSIP 8.0_MSSCCI)。
+ 依預設，環境 SDK common include 資料夾中提供的 (*[磁片磁碟機]* \Program Files\VSIP 8.0 \ EnvSDK\common\inc;此外，也會在具有 MSSCCI 範例的 VSIP 資料夾中提供 *[磁片磁碟機]* \Program Files\VSIP 8.0 \ MSSCCI) 。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)

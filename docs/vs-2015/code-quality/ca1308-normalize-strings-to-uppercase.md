@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c068fcda7d03ae91435c040d2110d632668d832a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538732"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308:必須將字串標準化為大寫字母
@@ -30,19 +30,19 @@ ms.locfileid: "85538732"
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
 |類別|Microsoft。全球化|
-|中斷變更|不中斷|
+|中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  作業會將字串標準化為小寫。
 
 ## <a name="rule-description"></a>規則描述
- 字串應該標準化為大寫字母。 一小組字元，當它們轉換成小寫時，就無法進行來回行程。 若要進行來回行程，請將一個地區設定的字元轉換成另一個地區設定，以不同的方式表示字元資料，然後正確地從轉換後的字元中取出原始字元。
+ 字串應該標準化為大寫字母。 當一組較小的字元轉換成小寫時，無法進行來回行程。 若要進行來回行程，表示將字元從某個地區設定轉換成另一個地區設定，以不同的方式呈現字元資料，然後正確地從轉換後的字元取得原始字元。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 將字串轉換成小寫的作業，以便將字串改成大寫。 例如，將 `String.ToLower(CultureInfo.InvariantCulture)` 變更為 `String.ToUpper(CultureInfo.InvariantCulture)`。
+ 將字串轉換成小寫的作業，以便將字串轉換成大寫。 例如，將 `String.ToLower(CultureInfo.InvariantCulture)` 變更為 `String.ToUpper(CultureInfo.InvariantCulture)`。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 當您不是根據結果來進行安全性決策時（例如，當您在 UI 中顯示時），可以放心地隱藏警告訊息。
+ 當您未根據 (結果進行安全性決策時（例如，當您在 UI) 中顯示時），就可以安全地隱藏警告訊息。
 
 ## <a name="see-also"></a>另請參閱
  [全球化警告](../code-quality/globalization-warnings.md)

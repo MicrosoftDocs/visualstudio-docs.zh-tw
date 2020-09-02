@@ -1,5 +1,5 @@
 ---
-title: HOW TO：擷取在線上 ClickOnce 應用程式中的查詢字串資訊 |Microsoft Docs
+title: 如何：在線上 ClickOnce 應用程式中取得查詢字串資訊 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,13 +17,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 588ff95f90c6d85526dfe931e8f0b8ab439d9b94
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697585"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>HOW TO：在線上 ClickOnce 應用程式中擷取查詢字串資訊
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 *「查詢字串」* (query string) 是開頭為句號 (?) 之 URL 的部分，內含 *name=value*格式的任意資訊。 假設您有裝載於 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 且名為 `WindowsApp1` 的 `servername`應用程式，而且想要在啟動應用程式時傳入變數 `username` 的值。 URL 可能如下所示：  
@@ -42,7 +42,7 @@ ms.locfileid: "65697585"
 > [!NOTE]
 > 當您決定啟用這項功能之前，請參閱本主題後面的＜安全性＞一節。  
   
- 如需有關如何建立資訊[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署使用 Mage.exe 或 MageUI.exe 中，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+ 如需有關如何 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 使用 Mage.exe 或 MageUI.exe 建立部署的詳細資訊，請參閱 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
 > [!NOTE]
 > 從 .NET Framework 3.5 SP1 開始，可以將命令列引數傳遞至離線 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。 如果您要提供應用程式的引數，則可以將參數傳入副檔名為 .APPREF-MS 的捷徑檔案。  
@@ -64,17 +64,17 @@ ms.locfileid: "65697585"
     MageUI  
     ```  
   
-2. 從 [檔案]  功能表中，選取 [開啟] ，然後開啟您 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的部署資訊清單，這是 `.application` 擴充功能中的檔案結尾。  
+2. 從 [檔案] **** 功能表中，選取 [開啟] ****，然後開啟您 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的部署資訊清單，這是 `.application` 擴充功能中的檔案結尾。  
   
-3. 選取左導覽視窗中的 [部署選項]  面板，然後選取 [允許傳遞 URL 參數至應用程式]  核取方塊。  
+3. 選取左導覽視窗中的 [部署選項] **** 面板，然後選取 [允許傳遞 URL 參數至應用程式] **** 核取方塊。  
   
-4. 從 [檔案]  功能表中，選取 [儲存] 。  
+4. 從 [檔案] **** 功能表中，選取 [儲存] ****。  
   
 > [!NOTE]
-> 或者，您可以在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]中啟用查詢字串傳遞。 選取 [允許傳遞 URL 參數至應用程式]  核取方塊，藉由開啟 [專案屬性] 、選取 [發行]  索引標籤、按一下 [選項]  按鈕，然後選取 [資訊清單] 即可找到此核取方塊。  
+> 或者，您可以在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]中啟用查詢字串傳遞。 選取 [允許傳遞 URL 參數至應用程式] **** 核取方塊，藉由開啟 [專案屬性] ****、選取 [發行] **** 索引標籤、按一下 [選項] **** 按鈕，然後選取 [資訊清單] **** 即可找到此核取方塊。  
   
 ## <a name="robust-programming"></a>穩固程式設計  
- 當您使用查詢字串參數時，必須仔細考慮要如何安裝和啟用應用程式。 如果您的應用程式設定成從 Web 或網路共用安裝在使用者的電腦上，則使用者可能只會透過 URL 啟用應用程式一次。 之後，使用者通常會使用 [開始]  功能表中的捷徑來啟用您的應用程式。 因此，保證您的應用程式只會在其存留期間接收到查詢字串引數一次。 如果您選擇將這些引數儲存在使用者的電腦上供日後使用，則必須負責以安全的方式儲存它們。  
+ 當您使用查詢字串參數時，必須仔細考慮要如何安裝和啟用應用程式。 如果您的應用程式設定成從 Web 或網路共用安裝在使用者的電腦上，則使用者可能只會透過 URL 啟用應用程式一次。 之後，使用者通常會使用 [開始] **** 功能表中的捷徑來啟用您的應用程式。 因此，保證您的應用程式只會在其存留期間接收到查詢字串引數一次。 如果您選擇將這些引數儲存在使用者的電腦上供日後使用，則必須負責以安全的方式儲存它們。  
   
  如果您的應用程式只能在線上時使用，則一律會透過 URL 予以啟用。 不過，如果查詢字串參數遺失或損毀，則即使在此情況下，您的應用程式還是必須寫入才能正常運作。  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebug運算式評估器::設定局部性 |微軟文件
+title: IDebugExpressionEvaluator：： SetLocale |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 57ddee6e1796159c505b67982f25d1ba09684561
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729466"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
-此方法設置用於創建可列印結果的語言。
+這個方法會設定用來建立可列印結果的語言。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int SetLocale(
 
 ## <a name="parameters"></a>參數
 `wLangID`\
-[在]語言標識碼。
+在語言識別項。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 在載入表示式賦值器 (EE) 時,可以多次調用此方法,因此 EE 必須能夠動態切換語言。 EE 使用此區域設置以適當的語言傳回錯誤訊息和字串。
+ 載入運算式評估工具 (EE) 時，可以多次呼叫這個方法，讓 EE 必須能夠即時切換語言。 EE 會使用此地區設定來傳回適當語言的錯誤訊息和字串。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

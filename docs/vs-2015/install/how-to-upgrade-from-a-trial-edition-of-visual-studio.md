@@ -10,16 +10,16 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a9af78dc373734905c703a3b9ee5c9462af3e116
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386676"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>如何：從 Visual Studio 試用版升級
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以評估 Visual Studio 發行前版本 14 天，而不需註冊產品。 當您使用 Microsoft 帳戶登入註冊之後，發行前授權會在到期日之前有效。
+您可以評估 Visual Studio 發行前版本 14 天，而不需註冊產品。 當您使用 Microsoft 帳戶登入註冊之後，發行前版本授權會在到期日之前有效。
 
  您可以評估 Visual Studio Professional 和企業版的發行版本 30 天，從您安裝該產品之時間開始計算。 [登入 Visual Studio](../ide/signing-in-to-visual-studio.md) 會增加 60 天的評估期間，一共為 90 天。 如果您未在 30 天之內註冊試用版的 Visual Studio，則試用會在安裝後 30 天到期。
 

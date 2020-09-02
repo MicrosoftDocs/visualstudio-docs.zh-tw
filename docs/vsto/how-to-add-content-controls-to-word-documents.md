@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538381"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>如何：將內容控制項新增至 Word 檔
@@ -44,18 +44,18 @@ ms.locfileid: "85538381"
 
 - [在檔層級專案中，于執行時間加入內容控制項](#runtimedoclevel)
 
-- [在 VSTO 增益集專案中，于執行時間加入內容控制項](#runtimeaddin)
+- [在 VSTO 增益集專案中的執行時間加入內容控制項](#runtimeaddin)
 
-  如需內容控制項的相關資訊，請參閱[內容控制項](../vsto/content-controls.md)。
+  如需內容控制項的相關資訊，請參閱 [內容控制項](../vsto/content-controls.md)。
 
-## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a>在設計階段加入內容控制項
+## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a> 在設計階段加入內容控制項
  在文件層級專案中，有數個方式可於設計階段將內容控制項加入文件：
 
 - 從 [工具箱] **** 的 [Word 控制項] **** 索引標籤加入內容控制項。
 
 - 使用與在 Word 中加入原生內容控制項相同的方式，將內容控制項加入文件。
 
-- 從 [資料來源] **** 視窗將內容控制項拖曳至文件。 若您要於控制項建立的同時將控制項繫結至資料，這麼做非常實用。 如需詳細資訊，請參閱[如何：使用物件的資料填入檔](../vsto/how-to-populate-documents-with-data-from-objects.md)和[如何：將資料庫中的資料填入檔](../vsto/how-to-populate-documents-with-data-from-a-database.md)。
+- 從 [資料來源] **** 視窗將內容控制項拖曳至文件。 若您要於控制項建立的同時將控制項繫結至資料，這麼做非常實用。 如需詳細資訊，請參閱 [如何：在檔中填入物件的資料](../vsto/how-to-populate-documents-with-data-from-objects.md) 和 [如何：使用資料庫的資料填入檔](../vsto/how-to-populate-documents-with-data-from-a-database.md)。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -71,7 +71,7 @@ ms.locfileid: "85538381"
 
          或
 
-    - 按一下 [**工具箱**] 中的內容控制項，然後按下**enter**鍵。
+    - 按一下 [ **工具箱** ] 中的內容控制項，然後按下 **enter** 鍵。
 
          或
 
@@ -81,7 +81,7 @@ ms.locfileid: "85538381"
 > 您無法使用 [工具箱] <xref:Microsoft.Office.Tools.Word.GroupContentControl>**加入**。 您只能在 Word 中或在執行階段時加入 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 。
 
 > [!NOTE]
-> Visual Studio 並未提供 [工具箱] 的核取方塊內容控制項。 若要將核取方塊內容控制項加入至文件，您必須以程式設計方式建立 <xref:Microsoft.Office.Tools.Word.ContentControl> 物件。 如需詳細資訊，請參閱[內容控制項](../vsto/content-controls.md)。
+> Visual Studio 並未提供 [工具箱] 的核取方塊內容控制項。 若要將核取方塊內容控制項加入至文件，您必須以程式設計方式建立 <xref:Microsoft.Office.Tools.Word.ContentControl> 物件。 如需詳細資訊，請參閱 [內容控制項](../vsto/content-controls.md)。
 
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>若要在 Word 中將內容控制項加入至文件
 
@@ -90,11 +90,11 @@ ms.locfileid: "85538381"
 2. 按一下 [功能區] 上的 [開發人員] **** 索引標籤。
 
     > [!NOTE]
-    > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
+    > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
 
 3. 按一下 [控制項] **** 群組中代表所要加入內容控制項的圖示。
 
-## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>在檔層級專案中，于執行時間加入內容控制項
+## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> 在檔層級專案中，于執行時間加入內容控制項
  您可以在專案中使用 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 類別之 `ThisDocument` 屬性的方法，在執行階段以程式設計的方式將內容控制項加入文件。 每個方法都有三個多載，可供您以下列方式加入內容控制項：
 
 - 在目前選取位置加入控制項。
@@ -103,14 +103,14 @@ ms.locfileid: "85538381"
 
 - 加入以文件中的原生內容控制項為基礎的控制項。
 
-  關閉文件時，動態建立的內容控制項不會持續保存在文件中。 不過，原生內容控制項會保留在文件中。 下次文件開啟時，您可以重新建立以原生內容控制項為基礎的內容控制項。 如需詳細資訊，請參閱[在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)。
+  關閉文件時，動態建立的內容控制項不會持續保存在文件中。 不過，原生內容控制項會保留在文件中。 下次文件開啟時，您可以重新建立以原生內容控制項為基礎的內容控制項。 如需詳細資訊，請參閱 [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 > [!NOTE]
-> 若要將核取方塊內容控制項加入至 Word 2010 專案中的文件，您必須建立 <xref:Microsoft.Office.Tools.Word.ContentControl> 物件。 如需詳細資訊，請參閱[內容控制項](../vsto/content-controls.md)。
+> 若要將核取方塊內容控制項加入至 Word 2010 專案中的文件，您必須建立 <xref:Microsoft.Office.Tools.Word.ContentControl> 物件。 如需詳細資訊，請參閱 [內容控制項](../vsto/content-controls.md)。
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>若要在目前選取位置加入內容控制項
 
-1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 具有名稱的方法 `Add` \<*control class*> （其中*控制項類別*是您想要加入的內容控制項類別名稱，例如 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ），而且具有新控制項名稱的單一參數。
+1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 名稱 (的方法 `Add` \<*control class*> ，其中*control 類別*是您想要新增的內容控制項類別名稱，例如 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>) ，而且具有新控制項名稱的單一參數。
 
      下列程式碼範例會使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法，將新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 加入文件的開頭。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `AddRichTextControlAtSelection` 事件處理常式呼叫 `ThisDocument_Startup` 方法。
 
@@ -119,7 +119,7 @@ ms.locfileid: "85538381"
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>若要在指定的範圍加入內容控制項
 
-1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 具有名稱的方法 `Add` \<*control class*> （其中*控制項類別*是您想要加入的內容控制項類別名稱，例如 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ），且其中具有 <xref:Microsoft.Office.Interop.Word.Range> 參數。
+1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 名稱 (的方法， `Add` \<*control class*> 其中*control 類別*是您想要加入的內容控制項類別名稱，例如 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>) ，而且具有 <xref:Microsoft.Office.Interop.Word.Range> 參數。
 
      下列程式碼範例會使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法，將新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 加入文件的開頭。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `AddRichTextControlAtRange` 事件處理常式呼叫 `ThisDocument_Startup` 方法。
 
@@ -128,14 +128,14 @@ ms.locfileid: "85538381"
 
 ### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>若要加入以原生內容控制項為基礎的內容控制項
 
-1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 具有名稱的方法 `Add` \<*control class*> （其中*控制項類別*是您想要加入的內容控制項類別名稱，例如 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ），且其中具有 `Microsoft.Office.Interop.Word.ContentControl` 參數。
+1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 名稱 (的方法， `Add` \<*control class*> 其中*control 類別*是您想要加入的內容控制項類別名稱，例如 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>) ，而且具有 `Microsoft.Office.Interop.Word.ContentControl` 參數。
 
      下列程式碼範例會針對文件中的每個原生 Rich Text 控制項，使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法建立新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `CreateRichTextControlsFromNativeControls` 事件處理常式呼叫 `ThisDocument_Startup` 方法。
 
      [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]
 
-## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>在 VSTO 增益集專案中，于執行時間加入內容控制項
+## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> 在 VSTO 增益集專案中的執行時間加入內容控制項
  您可以使用 VSTO 增益集，透過程式設計的方式，在執行階段將內容控制項加入至任何開啟的文件。 若要這麼做，請產生以開啟文件為基礎的 <xref:Microsoft.Office.Tools.Word.Document> 主項目，然後使用這個主項目之 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 屬性的方法。 每個方法都有三個多載，可供您以下列方式加入內容控制項：
 
 - 在目前選取位置加入控制項。
@@ -144,16 +144,16 @@ ms.locfileid: "85538381"
 
 - 加入以文件中的原生內容控制項為基礎的控制項。
 
-  關閉文件時，動態建立的內容控制項不會持續保存在文件中。 不過，原生內容控制項會保留在文件中。 下次文件開啟時，您可以重新建立以原生內容控制項為基礎的內容控制項。 如需詳細資訊，請參閱[在 Office 檔中保存動態控制項](../vsto/persisting-dynamic-controls-in-office-documents.md)。
+  關閉文件時，動態建立的內容控制項不會持續保存在文件中。 不過，原生內容控制項會保留在文件中。 下次文件開啟時，您可以重新建立以原生內容控制項為基礎的內容控制項。 如需詳細資訊，請參閱 [在 Office 檔中保存動態控制項](../vsto/persisting-dynamic-controls-in-office-documents.md)。
 
-  如需在 VSTO 增益集專案中產生主專案的詳細資訊，請參閱[在 Vsto 增益集的執行時間中擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
+  如需在 VSTO 增益集專案中產生主專案的詳細資訊，請參閱 [在 Vsto 增益集中，于執行時間擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
 > [!NOTE]
-> 若要將核取方塊內容控制項加入文件，您必須建立 <xref:Microsoft.Office.Tools.Word.ContentControl> 物件。 如需詳細資訊，請參閱[內容控制項](../vsto/content-controls.md)。
+> 若要將核取方塊內容控制項加入文件，您必須建立 <xref:Microsoft.Office.Tools.Word.ContentControl> 物件。 如需詳細資訊，請參閱 [內容控制項](../vsto/content-controls.md)。
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>若要在目前選取位置加入內容控制項
 
-1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 具有名稱的方法 `Add` \<*control class*> （其中*控制項類別*是您想要加入的內容控制項類別名稱，例如 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ），而且具有新控制項名稱的單一參數。
+1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 名稱 (的方法 `Add` \<*control class*> ，其中*control 類別*是您想要新增的內容控制項類別名稱，例如 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>) ，而且具有新控制項名稱的單一參數。
 
      下列程式碼範例會使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法，將新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 加入使用中文件的開頭。 若要執行這個程式碼，請將程式碼加入專案的 `ThisAddIn` 類別中，並從 `AddRichTextControlAtSelection` 事件處理常式呼叫 `ThisAddIn_Startup` 方法。
 
@@ -162,7 +162,7 @@ ms.locfileid: "85538381"
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>若要在指定的範圍加入內容控制項
 
-1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 具有名稱的方法 `Add` \<*control class*> （其中*控制項類別*是您想要加入的內容控制項類別名稱，例如 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ），且其中具有 <xref:Microsoft.Office.Interop.Word.Range> 參數。
+1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 名稱 (的方法， `Add` \<*control class*> 其中*control 類別*是您想要加入的內容控制項類別名稱，例如 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>) ，而且具有 <xref:Microsoft.Office.Interop.Word.Range> 參數。
 
      下列程式碼範例會使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法，將新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 加入使用中文件的開頭。 若要執行這個程式碼，請將程式碼加入專案的 `ThisAddIn` 類別中，並從 `AddRichTextControlAtRange` 事件處理常式呼叫 `ThisAddIn_Startup` 方法。
 
@@ -171,7 +171,7 @@ ms.locfileid: "85538381"
 
 #### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>若要加入以原生內容控制項為基礎的內容控制項
 
-1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 具有名稱的方法 `Add` \<*control class*> （其中*控制項類別*是您想要加入的內容控制項類別名稱，例如 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ），且其中具有 `Microsoft.Office.Interop.Word.ContentControl` 參數。
+1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 名稱 (的方法， `Add` \<*control class*> 其中*control 類別*是您想要加入的內容控制項類別名稱，例如 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>) ，而且具有 `Microsoft.Office.Interop.Word.ContentControl` 參數。
 
      下列範例程式碼會使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法，在文件開啟之後，對文件中每一個原生 Rich Text 控制項建立新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。 若要使用這個程式碼，請將程式碼加入專案中的 `ThisAddIn` 類別。
 
@@ -185,7 +185,7 @@ ms.locfileid: "85538381"
 ## <a name="see-also"></a>另請參閱
 - [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)
 - [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)
-- [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [在執行時間將控制項新增至 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)
 - [程式檔層級自訂](../vsto/programming-document-level-customizations.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebug運算式評估器2::設置路徑 |微軟文件
+title: IDebugExpressionEvaluator2：： SetCorPath |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bea93c3f10a946353c52231d0ac3802f0b2ec8e9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729271"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
-設置除錯器中載入的通用語言執行時 (CLR) 的路徑。
+設定在偵錯工具中載入之 common language runtime (CLR) 的路徑。
 
 ## <a name="syntax"></a>語法
 
@@ -40,13 +40,13 @@ int SetCorPath(
 
 ## <a name="parameters"></a>參數
 `pcstrCorPath`\
-[在]在除錯器中載入的 CLR 的路徑。
+在在偵錯工具中載入之 CLR 的路徑。
 
 ## <a name="return-value"></a>傳回值
- 如果成功,返回`S_OK`;否則,返回錯誤代碼。
+ 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
- 下面的範例展示如何為公開[IDebugExpression評估器2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)介面的**運算式計算機包**物件實現此方法。
+ 下列範例示範如何針對公開[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)介面的**ExpressionEvaluatorPackage**物件，執行這個方法。
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::SetCorPath(LPCOLESTR pcstrCorPath)

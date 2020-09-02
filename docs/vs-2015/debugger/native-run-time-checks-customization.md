@@ -1,5 +1,5 @@
 ---
-title: 原生執行階段會檢查自訂 |Microsoft Docs
+title: 自訂原生執行時間檢查 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,26 +27,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 434f2425b1eeefd82b954e47a8ced55491a7ec11
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697812"
 ---
 # <a name="native-run-time-checks-customization"></a>自訂原生執行階段檢查
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您編譯 **/RTC** （執行階段檢查），或使用`runtime_checks`pragma，C 執行階段程式庫提供原生執行階段檢查。 有時候，您可能想要自訂執行階段檢查：  
+當您使用 **/rtc** 進行編譯時 (執行時間檢查) 或使用 `runtime_checks` Pragma 時，C 執行時間程式庫會提供原生執行時間檢查。 有時候，您可能想要自訂執行階段檢查：  
   
 - 若要將執行階段檢查訊息傳送至非預設的檔案或目的端。  
   
 - 若要指定使用協力廠商偵錯工具所出現的執行階段訊息之輸出目的端。  
   
-- 若要報告由 C 語言執行階段程式庫發行版本編譯的程式之執行階段檢查訊息 程式庫的發行版本在報告執行階段錯誤時並不使用 `_CrtDbgReportW`。 而是為每一個執行階段錯誤顯示一個 [判斷提示] 對話方塊。  
+- 若要報告由 C 語言執行階段程式庫發行版本編譯的程式之執行階段檢查訊息 程式庫的發行版本在報告執行階段錯誤時並不使用 `_CrtDbgReportW`。 而是為每一個執行階段錯誤顯示一個 [判斷提示]**** 對話方塊。  
   
   若要自訂執行階段錯誤檢查，您可以：  
   
-- 撰寫執行階段錯誤報告函式。 如需詳細資訊，請參閱[如何：撰寫執行階段錯誤報告函式](../debugger/how-to-write-a-run-time-error-reporting-function.md)。  
+- 撰寫執行階段錯誤報告函式。 如需詳細資訊，請參閱 [如何：撰寫運行時錯誤報表函式](../debugger/how-to-write-a-run-time-error-reporting-function.md)。  
   
 - 自訂錯誤訊息目的端  
   
@@ -58,9 +58,9 @@ ms.locfileid: "65697812"
  如果使用自訂報告函式，您便可以使用 `_RTC_SetErrorType` 為一種錯誤結合一個報告類型。  
   
 ## <a name="query-for-information-about-run-time-checks"></a>查詢執行階段檢查的相關資訊  
- `_RTC_NumErrors` 會傳回由執行階段錯誤檢查偵測到的錯誤類型數目。 若要取得每個錯誤的簡短說明，您可以從 0 迴圈至 `_RTC_NumErrors` 傳回值，並將重複值傳給每一個迴圈上的 `_RTC_GetErrDesc`。 如需詳細資訊，請參閱 < [_RTC_NumErrors](https://msdn.microsoft.com/library/7e82adae-38e2-4f8b-bc0b-37bda8109fd1)並[_RTC_GetErrDesc](https://msdn.microsoft.com/library/7994ec2b-5488-4fd4-806d-a166c9a9f927)。  
+ `_RTC_NumErrors` 會傳回由執行階段錯誤檢查偵測到的錯誤類型數目。 若要取得每個錯誤的簡短說明，您可以從 0 迴圈至 `_RTC_NumErrors` 傳回值，並將重複值傳給每一個迴圈上的 `_RTC_GetErrDesc`。 如需詳細資訊，請參閱 [_RTC_NumErrors](https://msdn.microsoft.com/library/7e82adae-38e2-4f8b-bc0b-37bda8109fd1) 和 [_RTC_GetErrDesc](https://msdn.microsoft.com/library/7994ec2b-5488-4fd4-806d-a166c9a9f927)。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)   
+ [如何：使用原生執行時間檢查](../debugger/how-to-use-native-run-time-checks.md)   
  [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
  [_CrtDbgReport、_CrtDbgReportW](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc)

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 672d472d4e592782f7ae06920c518b154fba6cba
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329875"
 ---
 # <a name="wincounter"></a>WinCounter
@@ -42,7 +42,7 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="exclusive-options"></a>專屬選項
  **AutoMark** 選項只能與 **WinCounter** 選項搭配使用。
 
- **AutoMark：** `Milliseconds`指定 Windows 效能計數器資料收集之間的毫秒數。
+ **AutoMark：** `Milliseconds` 指定 Windows 效能計數器資料收集之間的毫秒數。
 
 ## <a name="example"></a>範例
  在下列範例中，指定兩個 Windows 效能計數器依 1000 毫秒的間隔進行收集。

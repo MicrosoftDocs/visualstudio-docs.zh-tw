@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 434cfc541da3c670d8d444b9a4259b33476a17d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670514"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>如何：視覺化集合關聯 (類別設計工具)
@@ -34,9 +34,9 @@ ms.locfileid: "72670514"
 
 2. 在類別圖表中，展開類別以便顯示屬性和欄位。
 
-3. 在類別中，以滑鼠右鍵按一下欄位或屬性上，然後選擇 [顯示為集合關聯]。
+3. 在類別中，以滑鼠右鍵按一下欄位或屬性上，然後選擇 [顯示為集合關聯]****。
 
      屬性或欄位會顯示為連結所收集類型的關聯線。
 
-## <a name="see-also"></a>請參閱
- [如何：建立類型之間的關聯（類別設計工具）](../ide/how-to-create-associations-between-types-class-designer.md) [設計類別和類型（類別設計工具）](../ide/designing-classes-and-types-class-designer.md) [查看類型和關聯性（類別設計工具）](../ide/viewing-types-and-relationships-class-designer.md)
+## <a name="see-also"></a>另請參閱
+ [如何：建立類型之間的關聯 (類別設計工具) ](../ide/how-to-create-associations-between-types-class-designer.md) [設計類別和類型 (類別設計工具](../ide/designing-classes-and-types-class-designer.md)) [檢視類型和關聯性 (](../ide/viewing-types-and-relationships-class-designer.md)類別設計工具) 

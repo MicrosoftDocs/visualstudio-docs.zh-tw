@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01c2470be57616dcb026c3f5f29e3b2ab2a11a4e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465388"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
@@ -38,18 +38,18 @@ HRESULT symbolById (
 
 `ppSymbol`
 
-脫銷傳回代表所抓取符號的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。
+擴展傳回代表已抓取符號的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件。
 
 ## <a name="return-value"></a>傳回值
-如果成功，會傳回，否則會傳回 `S_OK` 錯誤碼。
+如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-指定的識別碼是 DIA SDK 在內部使用的唯一值，讓所有符號都是唯一的。
+指定的識別碼是唯一的值，由 DIA SDK 在內部使用，讓所有符號都是唯一的。
 
-例如，您可以使用這個方法來抓取代表另一個符號類型的符號（請參閱範例）。
+例如，您可以使用這個方法來取得代表另一個符號類型的符號 (請參閱範例) 。
 
 ## <a name="example"></a>範例
-這個範例會抓取代表另一個符號之類型的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 。 這個範例會示範如何 `symbolById` 在會話中使用方法。 較簡單的方法是呼叫[IDiaSymbol：： get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)方法，直接取得類型符號。
+此範例會抓取代表另一個符號類型的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 。 此範例顯示如何 `symbolById` 在會話中使用方法。 更簡單的方法是呼叫 [IDiaSymbol：： get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) 方法來直接取出型別符號。
 
 ```C++
 IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)

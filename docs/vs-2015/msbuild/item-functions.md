@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192905"
 ---
 # <a name="item-functions"></a>Item 函式
@@ -54,7 +54,7 @@ ms.locfileid: "68192905"
 ## <a name="intrinsic-item-functions"></a>內建項目函式  
  下表列出項目可用的內建函式。  
   
-|功能|範例|說明|  
+|函式|範例|描述|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|傳回項目計數。|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|傳回每個項目之 `Path.DirectoryName` 的對等項目。|  

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e975986a03e7005835653dc98931fc9a44681e28
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65700488"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency 命名空間 (並行視覺化檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Concurrency` 命名空間提供可讓您存取並行執行階段 (C++ 的並行程式設計架構) 的類別和函式。 如需詳細資訊，請參閱[並行執行階段](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)。  
+`Concurrency` 命名空間提供可讓您存取並行執行階段 (C++ 的並行程式設計架構) 的類別和函式。 如需詳細資訊，請參閱 [Concurrency Runtime](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,9 +35,9 @@ namespace Concurrency;
   
 ### <a name="namespaces"></a>命名空間  
   
-|名稱|描述|  
+|Name|描述|  
 |----------|-----------------|  
-|[diagnostic 命名空間](../profiling/diagnostic-namespace.md)|`diagnostics` 命名空間提供的功能可用來發出並行視覺化檢視標記。|  
+|[診斷命名空間](../profiling/diagnostic-namespace.md)|`diagnostics` 命名空間提供的功能可用來發出並行視覺化檢視標記。|  
   
 ## <a name="requirements"></a>需求  
  **標頭：** cvmarkersobj.h  

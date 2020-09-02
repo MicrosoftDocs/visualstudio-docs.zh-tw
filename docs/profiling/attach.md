@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 482b3e80bce796910860cb7eab1e5a0066854238
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329870"
 ---
 # <a name="attach"></a>連結
@@ -38,18 +38,18 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Crosssession** 在登入工作階段以外的工作階段中，啟用分析應用程式。 如果指定 **Start** 選項和 **Crosssession** 選項，則為必要項目。
 
- **開始：** `Method`初始化命令列 profiler 會話，並設定指定的分析方法。
+ **開始：** `Method` 初始化命令列分析工具會話，並設定指定的分析方法。
 
  **TargetCLR** 指定要在分析工作階段中載入多個版本時分析的 .NET Framework Common Language Runtime (CLR) 版本。 預設會分析第一個載入的版本。
 
  **GlobalOn GlobalOff** 繼續 (**GlobalOn**) 或暫停 (**GlobalOff**) 分析，但未結束分析工作階段。
 
- **ProcessOn：** `PID`**ProcessOff：** `PID`針對指定的進程繼續（**ProcessOn**）或暫停（**ProcessOff**）程式碼剖析。
+ **ProcessOn：** `PID`**ProcessOff：** `PID`繼續 (**ProcessOn**) 或暫停指定進程的 (**ProcessOff**) 程式碼剖析。
 
 ## <a name="interval-options"></a>間隔選項
  下列其中一個取樣間隔選項可以指定於 Attach 命令列上。 預設取樣間隔為 10,000,000 個處理器時脈週期。
 
- **Timer**[**：** `Cycles` ]**PF**[**：** `Events` ]**Sys**[<strong>：</strong>Events]**計數器**[**：** `Name` ， `Reload` ， `FriendlyName` ] 指定取樣間隔的數目和類型。
+ **Timer**[**：** `Cycles` ]**PF**[**：** `Events` ]**Sys**[<strong>：</strong>Events]**Counter**[**：** `Name` ， `Reload` ， `FriendlyName` ] 指定取樣間隔的數目和類型。
 
 - **Timer** - 每 `Cycles` 個處理器時脈週期取樣一次。 如果未指定 `Cycles`，會使用 10,000,000 個週期。
 
